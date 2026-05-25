@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg: #05030b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  color: white;
+  font-family: var(--font-display), system-ui, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -3;
+  background:
+    radial-gradient(circle at 12% 12%, rgba(255, 43, 214, 0.25), transparent 28%),
+    radial-gradient(circle at 88% 18%, rgba(67, 247, 255, 0.22), transparent 24%),
+    radial-gradient(circle at 50% 90%, rgba(141, 255, 74, 0.18), transparent 30%),
+    linear-gradient(135deg, #05030b 0%, #120824 50%, #02070b 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at center, black, transparent 75%);
+}
+
+::selection {
+  background: #43f7ff;
+  color: #05030b;
+}
+
+.starfield {
+  position: absolute;
+  inset: 0;
+  opacity: 0.7;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,0.8) 0 1px, transparent 1.4px),
+    radial-gradient(circle, rgba(67,247,255,0.8) 0 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255,43,214,0.8) 0 1px, transparent 1.5px);
+  background-position: 0 0, 30px 60px, 90px 20px;
+  background-size: 120px 120px, 180px 180px, 240px 240px;
+  animation: drift 28s linear infinite;
+}
+
+.scanline {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 20;
+  background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.04), transparent);
+  background-size: 100% 8px;
+  mix-blend-mode: overlay;
+  opacity: 0.25;
+}
+
+.portal-ring {
+  background: conic-gradient(from 180deg, #ff2bd6, #43f7ff, #8dff4a, #ff9b3d, #7c3cff, #ff2bd6);
+  filter: blur(0.2px);
+}
+
+@keyframes drift {
+  from { transform: translate3d(0, 0, 0); }
+  to { transform: translate3d(-120px, -120px, 0); }
+}
+
+@keyframes slowSpin {
+  to { transform: rotate(360deg); }
+}
+
+@media (min-width: 768px) {
+  .node-orbit {
+    position: absolute;
+    left: var(--node-left);
+    top: var(--node-top);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.001ms !important;
+  }
+}
