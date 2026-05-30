@@ -4,6 +4,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useState, type CSSProperties } from "react";
 import { portals } from "@/data/portals";
+import { PortalConnections } from "./PortalConnections";
 
 const orbitPositions = [
   { left: "50%", top: "8%" },
@@ -19,6 +20,7 @@ const orbitPositions = [
 export function PortalMap() {
   const [activeSlug, setActiveSlug] = useState(portals[0].slug);
   const active = portals.find((portal) => portal.slug === activeSlug) ?? portals[0];
+  const activeIndex = portals.findIndex((p) => p.slug === activeSlug);
   const reduceMotion = useReducedMotion();
 
   return (
@@ -29,6 +31,9 @@ export function PortalMap() {
           <div className="starfield" aria-hidden />
           <div className="absolute left-1/2 top-[295px] hidden h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-signal/20 md:block" />
           <div className="absolute left-1/2 top-[295px] hidden h-[610px] w-[610px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-plasma/15 md:block" />
+
+          {/* Connection lines */}
+          <PortalConnections activeIndex={activeIndex} />
 
           <motion.button
             type="button"
@@ -105,12 +110,4 @@ export function PortalMap() {
             <Link href={`/${active.slug}`} className="rounded-full px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-void transition hover:scale-105" style={{ background: active.color }}>
               {active.cta}
             </Link>
-            <a href="#signal" className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/75 transition hover:border-white/40 hover:text-white">
-              scan signal
-            </a>
-          </div>
-        </motion.aside>
-      </div>
-    </section>
-  );
-}
+            <a href="#signal" className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/75 transi

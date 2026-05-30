@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { ParticleField } from "@/components/ParticleField";
+import { NoiseOverlay } from "@/components/NoiseOverlay";
+import { CustomCursor } from "@/components/CustomCursor";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -26,7 +29,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${mono.variable}`}>{children}</body>
+      <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
+        {children}
+        <ParticleField />
+        <NoiseOverlay />
+        <CustomCursor />
+      </body>
     </html>
   );
 }

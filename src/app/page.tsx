@@ -4,6 +4,8 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { PortalMap } from "@/components/PortalMap";
 import { MobileNav } from "@/components/MobileNav";
+import { TextScramble } from "@/components/TextScramble";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export default function Home() {
   const reduceMotion = useReducedMotion();
@@ -44,10 +46,14 @@ export default function Home() {
       >
         <div className="mx-auto max-w-4xl">
           <p className="font-mono text-xs uppercase tracking-[0.5em] text-signal/80">enter the signal</p>
-          <h1 className="mt-5 font-display text-6xl font-black uppercase leading-[0.86] tracking-[-0.08em] sm:text-8xl lg:text-[9.5rem]">
-            Creative
-            <span className="block bg-gradient-to-r from-plasma via-signal to-venom bg-clip-text text-transparent">Command Hub</span>
-          </h1>
+          <div className="mt-5">
+            <TextScramble
+              text="Creative Command Hub"
+              as="h1"
+              className="font-display text-6xl font-black uppercase leading-[0.86] tracking-[-0.08em] sm:text-8xl lg:text-[9.5rem] glow-text"
+              delay={400}
+            />
+          </div>
           <p className="mx-auto mt-7 max-w-2xl text-base font-semibold leading-7 text-white/70 sm:text-xl">
             Music, machines, agents, experiments. A portal map by xsy for everything loud, strange, useful, and still forming.
           </p>
@@ -70,33 +76,29 @@ export default function Home() {
 
       {/* Signal Section */}
       <section id="signal" className="relative mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
-        <motion.div
-          initial={reduceMotion ? false : { opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-          className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/25 p-6 backdrop-blur sm:p-10"
-        >
-          <p className="font-mono text-xs uppercase tracking-[0.45em] text-signal/80">x1c7 signal</p>
-          <h2 className="mt-4 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">Scan signal</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/65">
-            The hub is forming. New portals activate as experiments reach critical mass. Check back or tune into the frequency.
-          </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-venom" />
-              Systems forming
-            </div>
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-plasma" style={{ animationDelay: "0.5s" }} />
-              Signal active
-            </div>
-            <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
-              <span className="h-2 w-2 animate-pulse rounded-full bg-ember" style={{ animationDelay: "1s" }} />
-              Agents standing by
+        <ScrollReveal>
+          <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-black/25 p-6 backdrop-blur sm:p-10">
+            <p className="font-mono text-xs uppercase tracking-[0.45em] text-signal/80">x1c7 signal</p>
+            <h2 className="mt-4 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">Scan signal</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/65">
+              The hub is forming. New portals activate as experiments reach critical mass. Check back or tune into the frequency.
+            </p>
+            <div className="mt-8 flex flex-wrap justify-center gap-4">
+              <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-venom" />
+                Systems forming
+              </div>
+              <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-plasma" style={{ animationDelay: "0.5s" }} />
+                Signal active
+              </div>
+              <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">
+                <span className="h-2 w-2 animate-pulse rounded-full bg-ember" style={{ animationDelay: "1s" }} />
+                Agents standing by
+              </div>
             </div>
           </div>
-        </motion.div>
+        </ScrollReveal>
       </section>
 
       {/* Footer */}

@@ -124,3 +124,53 @@ body::after {
     transition-duration: 0.001ms !important;
   }
 }
+
+/* Smooth page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+}
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 400ms ease-out, transform 400ms ease-out;
+}
+.page-transition-exit {
+  opacity: 1;
+  transform: scale(1);
+}
+.page-transition-exit-active {
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 300ms ease-in, transform 300ms ease-in;
+}
+
+/* Glow pulse keyframe for portal connections */
+@keyframes connectionPulse {
+  0%, 100% { stroke-opacity: 0.15; }
+  50% { stroke-opacity: 0.6; }
+}
+
+/* Subtle float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glow text effect */
+.glow-text {
+  text-shadow: 0 0 40px rgba(67, 247, 255, 0.4), 0 0 80px rgba(67, 247, 255, 0.2);
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+}
