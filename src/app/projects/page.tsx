@@ -6,6 +6,7 @@ import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { GitHubRepos } from "@/components/GitHubRepos";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */
@@ -629,6 +630,9 @@ export default function ProjectsPage() {
             </div>
           </motion.div>
         </ScrollReveal>
+
+        {/* GitHub Repos — live data */}
+        <GitHubRepos />
 
         {/* Bottom navigation */}
         <ScrollReveal delay={0.3} className="mb-8">

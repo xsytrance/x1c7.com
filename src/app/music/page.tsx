@@ -10,6 +10,7 @@ import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { SignalEngine } from "@/audio/SignalEngine";
 import { useAudioAnalyzer } from "@/hooks/useAudioAnalyzer";
 import { MagneticCard } from "@/components/MagneticCard";
+import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
 import { tracks, featuredTracks, musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
 
@@ -107,10 +108,31 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
               </button>
               <AnimatePresence>
                 {showEmbed && (
-                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} className="mt-3 overflow-hidden rounded-xl">
-                    <iframe width="100%" height="166" scrolling="no" frameBorder="no" allow="autoplay"
+                  <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: "auto", opacity: 1 }} exit={{ height: 0, opacity: 0 }} transition={{ duration: 0.3 }} className="mt-3 space-y-2 overflow-hidden rounded-xl">
+                    {/* Lazy-loaded iframe — only mounts when expanded */}
+                    <iframe
+                      width="100%"
+                      height="166"
+                      scrolling="no"
+                      frameBorder="no"
+                      allow="autoplay"
+                      loading="lazy"
                       src={`https://w.soundcloud.com/player/?url=${encodeURIComponent(track.soundcloudUrl!)}&color=${track.color.replace("#", "%23")}&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false`}
-                      className="rounded-xl" title={`${track.title} on SoundCloud`} />
+                      className="rounded-xl"
+                      title={`${track.title} on SoundCloud`}
+                    />
+                    {/* SoundCloud attribution */}
+                    <p className="text-right font-mono text-[9px] uppercase tracking-wider text-white/20">
+                      Powered by{" "}
+                      <a
+                        href="https://soundcloud.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[#ff5500]/60 transition hover:text-[#ff5500]"
+                      >
+                        SoundCloud
+                      </a>
+                    </p>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -353,6 +375,47 @@ export default function Page() {
             <TrackCard key={track.id} track={track} index={i} isCurrent={currentTrack?.id === track.id} isPlaying={isPlaying} onPlay={() => playTrack(track)} />
           ))}
         </div>
+      </section>
+
+      {/* ===== LIVE FROM SOUNDCLOUD ===== */}
+      <section className="relative z-10 mx-auto mt-20 max-w-6xl px-4 sm:px-6 lg:px-8">
+        <ScrollReveal delay={0.1}>
+          <div className="mb-8 flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-[0.4em] text-plasma/80">
+                Live Feed
+              </p>
+              <h2 className="mt-2 font-display text-3xl font-black uppercase tracking-tight text-white sm:text-4xl">
+                Live from{" "}
+                <a
+                  href="https://soundcloud.com/xsytrance"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-plasma transition hover:underline hover:underline-offset-4"
+                >
+                  SoundCloud
+                </a>
+              </h2>
+            </div>
+            <a
+              href="https://soundcloud.com/xsytrance"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-full border border-plasma/30 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-plasma transition hover:bg-plasma/10"
+            >
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c-.009-.06-.052-.1-.084-.1zm-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c.014.057.045.094.09.094s.089-.037.099-.094l.195-1.308-.21-1.332c-.01-.057-.054-.094-.063-.094zm1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.104.106.104.061 0 .12-.044.12-.104l.24-2.474-.255-2.547c0-.06-.045-.104-.106-.104zm.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.138l.24-2.544-.255-2.64c-.015-.075-.06-.135-.151-.135zm.93-.069c0-.09-.075-.156-.165-.156-.09 0-.165.066-.18.156l-.18 2.7.195 2.52c.015.09.09.168.18.168.09 0 .165-.078.165-.168l.21-2.52-.225-2.7zm.93-.006c-.09 0-.165.066-.18.162l-.165 2.718.18 2.494c.016.09.09.162.18.162.089 0 .164-.072.164-.162l.195-2.494-.195-2.718c0-.096-.075-.162-.179-.162zm.915-.27c-.105 0-.18.09-.195.18l-.165 2.988.18 2.424c.015.105.09.18.18.18.104 0 .18-.09.195-.18l.195-2.424-.195-2.988c-.015-.105-.09-.18-.195-.18zm.96-.309c-.105 0-.18.09-.195.195l-.15 3.297.165 2.37c.015.105.09.195.195.195.105 0 .18-.09.195-.195l.18-2.37-.18-3.297c-.015-.12-.09-.195-.21-.195zm.99-.24c-.12 0-.21.105-.225.21l-.135 3.537.15 2.34c.016.119.105.21.225.21.119 0 .21-.105.225-.21l.165-2.34-.165-3.537c-.015-.12-.105-.21-.24-.21zm1.02-.225c-.135 0-.24.12-.255.24l-.12 3.762.135 2.31c.016.135.12.24.255.24.135 0 .24-.12.255-.24l.15-2.31-.15-3.762c-.015-.135-.12-.24-.27-.24zm.99-.03c-.135 0-.255.135-.27.27l-.105 3.792.12 2.28c.015.15.135.27.27.27.149 0 .27-.135.27-.27l.135-2.28-.135-3.792c0-.15-.12-.27-.285-.27zm1.02-.09c-.15 0-.27.15-.285.3l-.09 3.882.105 2.25c.015.15.15.285.285.285.165 0 .285-.15.3-.285l.12-2.25-.12-3.882c-.015-.165-.135-.3-.315-.3zm.99-.12c-.165 0-.3.165-.315.33l-.075 4.002.09 2.22c.015.165.165.315.33.315.165 0 .315-.165.33-.33l.105-2.205-.105-4.002c-.015-.18-.165-.33-.345-.33zm1.005-.18c-.18 0-.33.18-.345.36l-.045 4.182.06 2.175c.015.18.18.345.36.345.18 0 .345-.18.36-.36l.075-2.16-.075-4.182c-.015-.195-.18-.36-.375-.36zm2.01-2.13c-.21 0-.375.18-.39.39l-.015 1.26-.015 2.97.045 2.205c.015.21.195.39.405.39.225 0 .405-.195.405-.42l.015-2.175-.015-4.23c-.015-.225-.195-.39-.435-.39zm1.005.21c-.24 0-.42.225-.42.465l-.015 4.02.03 2.145c.015.24.225.435.45.435.255 0 .45-.225.45-.465l.015-2.115-.015-4.02c0-.255-.225-.465-.495-.465zm.99.24c-.27 0-.48.255-.48.525l-.015 3.78.045 2.1c0 .27.24.495.495.495.27 0 .495-.255.495-.54l-.015-2.055-.015-3.78c0-.285-.24-.525-.51-.525zm1.005.27c-.3 0-.525.285-.525.585l-.015 3.51.075 2.055c0 .3.27.54.555.54.3 0 .54-.285.54-.6l-.03-1.995-.03-3.51c0-.315-.27-.585-.57-.585zm.99.27c-.33 0-.585.315-.585.645l-.015 3.24.09 2.01c.015.33.3.6.615.6.345 0 .6-.315.6-.66l-.045-1.95-.045-3.24c0-.345-.3-.645-.615-.645z" />
+              </svg>
+              @xsytrance
+            </a>
+          </div>
+          <SoundCloudEmbed url="https://soundcloud.com/xsytrance" />
+        </ScrollReveal>
       </section>
 
       {/* ===== PLAYER BAR ===== */}

@@ -174,3 +174,12 @@ body::after {
   transform: translateY(-4px);
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
 }
+
+/* SoundCloud oEmbed responsive iframe override.
+   The oEmbed HTML from SoundCloud includes a fixed-width iframe.
+   These rules make it fluid and responsive. */
+.soundcloud-oembed iframe {
+  width: 100% !important;
+  display: block;
+  border: none;
+}
