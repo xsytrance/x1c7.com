@@ -12,10 +12,12 @@ export type Track = {
   soundcloudUrl?: string;  // SoundCloud embed URL
   featured?: boolean;
 };
+const R2_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
 
 export const tracks: Track[] = [
   {
     id: "first-transmission",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/first-transmission.mp3",
     title: "First Transmission",
     artist: "xsy",
     duration: "3:42",
@@ -28,6 +30,7 @@ export const tracks: Track[] = [
   },
   {
     id: "neon-dreams",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/neon-dreams.mp3",
     title: "Neon Dreams",
     artist: "xsy",
     duration: "4:15",
@@ -39,6 +42,7 @@ export const tracks: Track[] = [
   },
   {
     id: "void-walker",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/void-walker.mp3",
     title: "Void Walker",
     artist: "xsy",
     duration: "5:01",
@@ -50,6 +54,7 @@ export const tracks: Track[] = [
   },
   {
     id: "signal-acquired",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/signal-acquired.mp3",
     title: "Signal Acquired",
     artist: "xsy",
     duration: "3:28",
@@ -61,6 +66,7 @@ export const tracks: Track[] = [
   },
   {
     id: "pulse-protocol",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/pulse-protocol.mp3",
     title: "Pulse Protocol",
     artist: "xsy",
     duration: "3:56",
@@ -72,6 +78,7 @@ export const tracks: Track[] = [
   },
   {
     id: "ghost-frequency",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/ghost-frequency.mp3",
     title: "Ghost Frequency",
     artist: "xsy",
     duration: "4:44",
@@ -83,6 +90,7 @@ export const tracks: Track[] = [
   },
   {
     id: "midnight-core",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/midnight-core.mp3",
     title: "Midnight Core",
     artist: "xsy",
     duration: "3:33",
@@ -94,6 +102,7 @@ export const tracks: Track[] = [
   },
   {
     id: "entropy-rise",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/entropy-rise.mp3",
     title: "Entropy Rise",
     artist: "xsy",
     duration: "4:08",
@@ -105,6 +114,7 @@ export const tracks: Track[] = [
   },
   {
     id: "quantum-echo",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/quantum-echo.mp3",
     title: "Quantum Echo",
     artist: "xsy",
     duration: "3:17",
@@ -116,6 +126,7 @@ export const tracks: Track[] = [
   },
   {
     id: "system-override",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/system-override.mp3",
     title: "System Override",
     artist: "xsy",
     duration: "4:22",
@@ -127,6 +138,7 @@ export const tracks: Track[] = [
   },
   {
     id: "starfield-lullaby",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/starfield-lullaby.mp3",
     title: "Starfield Lullaby",
     artist: "xsy",
     duration: "5:12",
@@ -138,6 +150,7 @@ export const tracks: Track[] = [
   },
   {
     id: "final-broadcast",
+    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/final-broadcast.mp3",
     title: "Final Broadcast",
     artist: "xsy",
     duration: "6:01",
