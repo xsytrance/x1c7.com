@@ -1,31 +1,148 @@
 "use client";
 
-import { useReducedMotion } from "framer-motion";
+import { useEffect, useRef, useCallback } from "react";
 
-interface AudioVisualizerProps {
-  barCount?: number;
+interface VisualizerProps {
+  analyser: AnalyserNode | null;
   color?: string;
   className?: string;
+  mode?: "bars" | "wave" | "radial";
 }
 
-export function AudioVisualizer({ barCount = 7, color = "#ff2bd6", className = "" }: AudioVisualizerProps) {
-  const reduceMotion = useReducedMotion();
+function hexToRgb(hex: string): [number, number, number] {
+  const r = parseInt(hex.slice(1, 3), 16);
+  const g = parseInt(hex.slice(3, 5), 16);
+  const b = parseInt(hex.slice(5, 7), 16);
+  return [r, g, b];
+}
+
+function ampColor(val: number, color: string): [number, number, number] {
+  const [r, g, b] = hexToRgb(color);
+  return [
+    Math.round(r * val + 20 * (1 - val)),
+    Math.round(g * val + 40 * (1 - val)),
+    Math.round(b * val + 60 * (1 - val)),
+  ];
+}
+
+export function AudioVisualizer({ analyser, color = "#ff2bd6", className = "", mode = "bars" }: VisualizerProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const animRef = useRef<number>(0);
+
+  const draw = useCallback(() => {
+    if (!analyser || !canvasRef.current) return;
+
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    if (!ctx) return;
+
+    const dpr = Math.min(window.devicePixelRatio, 2);
+    const w = canvas.offsetWidth;
+    const h = canvas.offsetHeight;
+    canvas.width = w * dpr;
+    canvas.height = h * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+    analyser.fftSize = 512;
+    const freqData = new Uint8Array(analyser.frequencyBinCount);
+    const timeData = new Uint8Array(analyser.fftSize);
+    analyser.getByteFrequencyData(freqData);
+    analyser.getByteTimeDomainData(timeData);
+
+    ctx.clearRect(0, 0, w, h);
+
+    if (mode === "bars") {
+      const count = 64;
+      const gap = 2;
+      const barW = (w - gap * (count - 1)) / count;
+
+      for (let i = 0; i < count; i++) {
+        const dataI = Math.floor((i / count) * freqData.length * 0.75);
+        const val = freqData[dataI] / 255;
+        const barH = Math.max(2, val * h * 0.92);
+        const x = i * (barW + gap);
+        const [r, g, b] = ampColor(val, color);
+
+        const grad = ctx.createLinearGradient(x, h - barH, x, h);
+        grad.addColorStop(0, `rgba(${r},${g},${b},1.0)`);
+        grad.addColorStop(0.6, `rgba(${r},${g},${b},0.7)`);
+        grad.addColorStop(1, `rgba(${r},${g},${b},0.2)`);
+        ctx.fillStyle = grad;
+        ctx.fillRect(x, h - barH, barW, barH);
+
+        // Peak highlight
+        ctx.shadowColor = `rgb(${r},${g},${b})`;
+        ctx.shadowBlur = 6;
+        ctx.fillStyle = `rgba(${r},${g},${b},0.95)`;
+        ctx.fillRect(x, h - barH, barW, 2);
+        ctx.shadowBlur = 0;
+      }
+    } else if (mode === "wave") {
+      const sliceW = w / timeData.length;
+      ctx.lineWidth = 2;
+      ctx.lineCap = "round";
+      ctx.lineJoin = "round";
+
+      const [r, g, b] = hexToRgb(color);
+      const grad = ctx.createLinearGradient(0, 0, w, 0);
+      grad.addColorStop(0, `rgba(${r},${g},${b},0.9)`);
+      grad.addColorStop(0.5, `rgba(${Math.round(r*0.8)},${Math.round(g*1.2)},${Math.round(b*1.1)},0.9)`);
+      grad.addColorStop(1, `rgba(${Math.round(r*1.2)},${Math.round(g*0.8)},${b},0.9)`);
+      ctx.strokeStyle = grad;
+      ctx.shadowColor = `rgba(${r},${g},${b},0.4)`;
+      ctx.shadowBlur = 10;
+
+      ctx.beginPath();
+      for (let i = 0; i < timeData.length; i++) {
+        const y = (timeData[i] / 128) * (h / 2);
+        i === 0 ? ctx.moveTo(0, y) : ctx.lineTo(i * sliceW, y);
+      }
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+    } else if (mode === "radial") {
+      const cx = w / 2;
+      const cy = h / 2;
+      const radius = Math.min(w, h) * 0.26;
+      const count = 96;
+
+      for (let i = 0; i < count; i++) {
+        const dataI = Math.floor((i / count) * freqData.length * 0.8);
+        const val = freqData[dataI] / 255;
+        const angle = (i / count) * Math.PI * 2 - Math.PI / 2;
+        const barLen = val * radius * 0.9;
+        const x1 = cx + Math.cos(angle) * radius;
+        const y1 = cy + Math.sin(angle) * radius;
+        const x2 = cx + Math.cos(angle) * (radius + barLen);
+        const y2 = cy + Math.sin(angle) * (radius + barLen);
+        const [r, g, b] = ampColor(val, color);
+
+        ctx.strokeStyle = `rgba(${r},${g},${b},${0.5 + val * 0.5})`;
+        ctx.lineWidth = 2;
+        ctx.shadowColor = `rgb(${r},${g},${b})`;
+        ctx.shadowBlur = val * 10;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+      ctx.shadowBlur = 0;
+    }
+
+    animRef.current = requestAnimationFrame(draw);
+  }, [analyser, color, mode]);
+
+  useEffect(() => {
+    if (!analyser) return;
+    animRef.current = requestAnimationFrame(draw);
+    return () => cancelAnimationFrame(animRef.current);
+  }, [analyser, draw]);
 
   return (
-    <div className={`flex items-end gap-[3px] ${className}`} aria-hidden="true">
-      {Array.from({ length: barCount }).map((_, i) => (
-        <div
-          key={i}
-          className="w-[3px] rounded-full"
-          style={{
-            background: color,
-            height: "24px",
-            opacity: 0.8,
-            animation: reduceMotion ? "none" : `visualizerBounce ${0.8 + i * 0.15}s ease-in-out infinite alternate`,
-            animationDelay: `${i * 0.1}s`,
-          }}
-        />
-      ))}
-    </div>
+    <canvas
+      ref={canvasRef}
+      className={className}
+      style={{ width: "100%", height: "100%" }}
+      aria-hidden="true"
+    />
   );
 }

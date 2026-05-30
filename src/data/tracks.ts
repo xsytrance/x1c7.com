@@ -3,11 +3,13 @@ export type Track = {
   title: string;
   artist: string;
   duration: string;
+  durationSeconds: number;
   art: string;
   genre: string;
   mood?: string;
   color: string;
-  soundcloudUrl?: string;
+  audioUrl?: string;       // Local audio file URL for custom player
+  soundcloudUrl?: string;  // SoundCloud embed URL
   featured?: boolean;
 };
 
@@ -17,6 +19,7 @@ export const tracks: Track[] = [
     title: "First Transmission",
     artist: "xsy",
     duration: "3:42",
+    durationSeconds: 222,
     art: "/album-art/first-transmission.jpg",
     genre: "Electronic",
     mood: "Discovery",
@@ -28,6 +31,7 @@ export const tracks: Track[] = [
     title: "Neon Dreams",
     artist: "xsy",
     duration: "4:15",
+    durationSeconds: 255,
     art: "/album-art/neon-dreams.jpg",
     genre: "Synthwave",
     mood: "Night Drive",
@@ -38,6 +42,7 @@ export const tracks: Track[] = [
     title: "Void Walker",
     artist: "xsy",
     duration: "5:01",
+    durationSeconds: 301,
     art: "/album-art/void-walker.jpg",
     genre: "Ambient",
     mood: "Deep Space",
@@ -48,6 +53,7 @@ export const tracks: Track[] = [
     title: "Signal Acquired",
     artist: "xsy",
     duration: "3:28",
+    durationSeconds: 208,
     art: "/album-art/signal-acquired.jpg",
     genre: "Electronic",
     mood: "Tension",
@@ -58,6 +64,7 @@ export const tracks: Track[] = [
     title: "Pulse Protocol",
     artist: "xsy",
     duration: "3:56",
+    durationSeconds: 236,
     art: "/album-art/pulse-protocol.jpg",
     genre: "Techno",
     mood: "Urgent",
@@ -68,6 +75,7 @@ export const tracks: Track[] = [
     title: "Ghost Frequency",
     artist: "xsy",
     duration: "4:44",
+    durationSeconds: 284,
     art: "/album-art/ghost-frequency.jpg",
     genre: "Ambient",
     mood: "Haunting",
@@ -78,6 +86,7 @@ export const tracks: Track[] = [
     title: "Midnight Core",
     artist: "xsy",
     duration: "3:33",
+    durationSeconds: 213,
     art: "/album-art/midnight-core.jpg",
     genre: "Electronic",
     mood: "After Hours",
@@ -88,6 +97,7 @@ export const tracks: Track[] = [
     title: "Entropy Rise",
     artist: "xsy",
     duration: "4:08",
+    durationSeconds: 248,
     art: "/album-art/entropy-rise.jpg",
     genre: "Industrial",
     mood: "Chaos",
@@ -98,6 +108,7 @@ export const tracks: Track[] = [
     title: "Quantum Echo",
     artist: "xsy",
     duration: "3:17",
+    durationSeconds: 197,
     art: "/album-art/quantum-echo.jpg",
     genre: "Synthwave",
     mood: "Nostalgic",
@@ -108,6 +119,7 @@ export const tracks: Track[] = [
     title: "System Override",
     artist: "xsy",
     duration: "4:22",
+    durationSeconds: 262,
     art: "/album-art/system-override.jpg",
     genre: "Techno",
     mood: "Rebellion",
@@ -118,6 +130,7 @@ export const tracks: Track[] = [
     title: "Starfield Lullaby",
     artist: "xsy",
     duration: "5:12",
+    durationSeconds: 312,
     art: "/album-art/starfield-lullaby.jpg",
     genre: "Ambient",
     mood: "Dreaming",
@@ -128,6 +141,7 @@ export const tracks: Track[] = [
     title: "Final Broadcast",
     artist: "xsy",
     duration: "6:01",
+    durationSeconds: 361,
     art: "/album-art/final-broadcast.jpg",
     genre: "Electronic",
     mood: "Epic",
@@ -139,16 +153,6 @@ export const tracks: Track[] = [
 export const featuredTracks = tracks.filter((t) => t.featured);
 
 export const musicSources = [
-  {
-    name: "SoundCloud",
-    description: "The archive. Beats, experiments, and works in progress.",
-    url: "https://soundcloud.com",
-    color: "#ff9b3d",
-  },
-  {
-    name: "Suno",
-    description: "AI-generated transmissions. Songs born from prompts.",
-    url: "https://suno.ai",
-    color: "#ff2bd6",
-  },
+  { name: "SoundCloud", description: "The archive. Beats, experiments, and works in progress.", url: "https://soundcloud.com", color: "#ff9b3d" },
+  { name: "Suno", description: "AI-generated transmissions. Songs born from prompts.", url: "https://suno.ai", color: "#ff2bd6" },
 ];
