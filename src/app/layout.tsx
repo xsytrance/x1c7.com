@@ -8,6 +8,7 @@ import { BootSequenceWrapper } from "@/components/BootSequenceWrapper";
 import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { KeyboardHelp } from "@/components/KeyboardHelp";
 import { PerformanceGate } from "@/components/PerformanceGate";
+import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -34,10 +35,19 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
-        <BootSequenceWrapper>
-          {children}
-        </BootSequenceWrapper>
+        <MusicPlayerProvider>
+          <BootSequenceWrapper>
+            {children}
+          </BootSequenceWrapper>
+        </MusicPlayerProvider>
         <KeyboardShortcuts />
         <KeyboardHelp />
         <PerformanceGate>
           <ParticleField />
+        </PerformanceGate>
+        <NoiseOverlay />
+        <CustomCursor />
+      </body>
+    </html>
+  );
+}
