@@ -30,8 +30,7 @@ export interface ImageAsset {
 // ── Base URL — swap this when your R2 bucket is ready ────────────────────
 // Replace with your actual R2 public URL, e.g.:
 // const R2_BASE = "https://images.x1c7.com";
-// const R2_BASE = "https://pub-XXXX.r2.dev";
-const R2_BASE = ""; // Will be prepended to relative paths. Leave empty to use local paths.
+const R2_BASE = "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev";
 
 function r2(path: string): string {
   if (R2_BASE) return `${R2_BASE}${path}`;
