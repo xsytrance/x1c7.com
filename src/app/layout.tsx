@@ -8,6 +8,7 @@ import { BootSequenceWrapper } from "@/components/BootSequenceWrapper";
 import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { KeyboardHelp } from "@/components/KeyboardHelp";
 import { PerformanceGate } from "@/components/PerformanceGate";
+import { EasterEggs } from "@/components/EasterEggs";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -42,6 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <PerformanceGate>
           <ParticleField />
         </PerformanceGate>
+        <EasterEggs />
         <NoiseOverlay />
         <CustomCursor />
       </body>

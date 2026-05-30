@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { MagneticCard } from "@/components/MagneticCard";
 
 /* ──────────────────────────────────────────────
    Gallery data — 8 art frames with generative
@@ -285,7 +286,7 @@ function GalleryFrame({
 }) {
   return (
     <ScrollReveal delay={index * 0.06} distance={20}>
-      <div className="group cursor-pointer">
+      <MagneticCard className="group cursor-pointer" strength={0.08}>
         {/* Art frame */}
         <div
           className={`relative ${frame.aspect} overflow-hidden rounded-2xl border border-white/10 transition-all duration-300 ease-out group-hover:scale-[1.03] group-hover:border-opacity-60`}
@@ -340,7 +341,7 @@ function GalleryFrame({
             forming
           </span>
         </div>
-      </div>
+      </MagneticCard>
     </ScrollReveal>
   );
 }
@@ -393,7 +394,7 @@ export default function ArtPage() {
 
         {/* ── Gallery Wall ── */}
         <section className="pb-16">
-          <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 lg:grid-cols-4 lg:gap-5">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 lg:gap-5">
             {ART_FRAMES.map((frame, i) => (
               <GalleryFrame key={frame.title} frame={frame} index={i} />
             ))}

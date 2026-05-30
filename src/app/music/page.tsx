@@ -9,6 +9,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { SignalEngine } from "@/audio/SignalEngine";
 import { useAudioAnalyzer } from "@/hooks/useAudioAnalyzer";
+import { MagneticCard } from "@/components/MagneticCard";
 import { tracks, featuredTracks, musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
 
@@ -23,15 +24,15 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
   const hasSoundcloud = !!track.soundcloudUrl;
 
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ delay: index * 0.06, duration: 0.5 }}
-      className={`group relative overflow-hidden rounded-[2rem] border bg-white/[0.04] backdrop-blur transition-all duration-300 hover:border-white/25 ${
-        isCurrent ? "border-white/30" : "border-white/10"
-      }`}
-    >
+    <MagneticCard className={`group relative overflow-hidden rounded-[2rem] border bg-white/[0.04] backdrop-blur transition-all duration-300 hover:border-white/25 ${
+      isCurrent ? "border-white/30" : "border-white/10"
+    }`} strength={0.06}>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ delay: index * 0.06, duration: 0.5 }}
+      >
       {/* Album art */}
       <div className="relative aspect-square overflow-hidden">
         <div
@@ -121,7 +122,8 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
           )}
         </div>
       </div>
-    </motion.div>
+      </motion.div>
+    </MagneticCard>
   );
 }
 
@@ -360,5 +362,4 @@ export default function Page() {
         )}
       </AnimatePresence>
     </main>
-  );
-}
+  )

@@ -508,7 +508,7 @@ export default function ProjectsPage() {
             {/* Terminal body */}
             <div
               ref={terminalRef}
-              className="max-h-[60vh] overflow-y-auto rounded-2xl border border-[#7c3cff]/20 bg-black/60 p-3 sm:p-5"
+              className="max-h-[70vh] overflow-y-auto rounded-2xl border border-[#7c3cff]/20 bg-black/60 p-4 sm:p-5"
               onClick={() => inputRef.current?.focus()}
             >
               {/* Boot sequence */}

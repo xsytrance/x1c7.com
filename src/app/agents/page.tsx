@@ -5,6 +5,7 @@ import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { StatusChip } from "@/components/StatusChip";
+import { MagneticCard } from "@/components/MagneticCard";
 import Link from "next/link";
 
 interface Agent {
@@ -276,12 +277,13 @@ export default function AgentsPage() {
 
 function AgentCard({ agent }: { agent: Agent }) {
   return (
-    <div
-      className="card-lift relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur"
-      style={{
-        transition: "transform 0.3s ease, box-shadow 0.3s ease",
-      }}
-    >
+    <MagneticCard className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur" strength={0.1}>
+      <div
+        className="card-lift h-full"
+        style={{
+          transition: "transform 0.3s ease, box-shadow 0.3s ease",
+        }}
+      >
       {/* accent glow */}
       <div
         className="absolute -right-12 -top-12 h-32 w-32 rounded-full blur-3xl"
@@ -318,6 +320,7 @@ function AgentCard({ agent }: { agent: Agent }) {
         }}
         aria-hidden
       />
-    </div>
+      </div>
+    </MagneticCard>
   );
 }

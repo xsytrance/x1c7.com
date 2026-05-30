@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { StaggerContainer } from "@/components/StaggerContainer";
 
 /* ─── fake mission log data ─── */
 const MISSION_LOG = [
@@ -301,7 +302,7 @@ export default function Page() {
         </header>
 
         {/* dashboard grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <StaggerContainer className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" staggerDelay={0.06}>
           <LiveClock />
           <ActiveOps />
           <AgentStatus />
@@ -309,7 +310,7 @@ export default function Page() {
           <MissionLog />
           <SystemStatus />
           <QuickActions />
-        </div>
+        </StaggerContainer>
 
         {/* bottom navigation */}
         <ScrollReveal delay={0.4}>
