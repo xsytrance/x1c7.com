@@ -8,83 +8,18 @@ import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { MagneticCard } from "@/components/MagneticCard";
-import { Lightbox, type ArtPiece } from "@/components/Lightbox";
+import { Lightbox } from "@/components/Lightbox";
+import { artImages, type ImageAsset } from "@/data/images";
 
-/* ──────────────────────────────────────────────
-   Typed art data — 6 real AI-generated pieces
-   ────────────────────────────────────────────── */
-
-const ART_PIECES: ArtPiece[] = [
-  {
-    id: "art-01",
-    title: "Neon City",
-    category: "Worlds",
-    src: "/art/art-01.jpg",
-    description:
-      "A rain-soaked cyberpunk metropolis bathed in neon pink and cyan. Flying vehicles cut between towering skyscrapers while street-level life pulses beneath the glow.",
-    accent: "#ff2bd6",
-  },
-  {
-    id: "art-02",
-    title: "Digital Portrait",
-    category: "Characters",
-    src: "/art/art-02.jpg",
-    description:
-      "An abstract digital portrait of a mysterious hooded figure, geometric patterns fragmenting across the face like a shattered digital identity.",
-    accent: "#7c3cff",
-  },
-  {
-    id: "art-03",
-    title: "Star Island",
-    category: "Worlds",
-    src: "/art/art-03.jpg",
-    description:
-      "A surreal floating island drifting through a star-filled cosmos, bioluminescent flora pouring waterfalls of light into the infinite void below.",
-    accent: "#43f7ff",
-  },
-  {
-    id: "art-04",
-    title: "Glitch Eye",
-    category: "Abstract",
-    src: "/art/art-04.jpg",
-    description:
-      "A close-up of an otherworldly cybernetic eye, digital glitch artifacts and neon circuit patterns weaving through the iris like living code.",
-    accent: "#ff2bd6",
-  },
-  {
-    id: "art-05",
-    title: "Energy Forms",
-    category: "Abstract",
-    src: "/art/art-05.jpg",
-    description:
-      "Abstract geometric crystalline shapes suspended in darkness, trailing neon green and orange energy paths that map invisible forces.",
-    accent: "#8dff4a",
-  },
-  {
-    id: "art-06",
-    title: "The Traveler",
-    category: "Characters",
-    src: "/art/art-06.jpg",
-    description:
-      "A mysterious hooded figure stands silhouetted in a doorway of blinding light, neon rim outlining the edges of a unknown traveler between worlds.",
-    accent: "#ff9b3d",
-  },
-];
+// Gallery data pulled from centralized image registry (src/data/images.ts)
+// Swap R2_BASE in images.ts to switch from local placeholders to live R2 URLs.
+const ART_PIECES: ImageAsset[] = artImages;
 
 const CATEGORIES = ["All", "Characters", "Abstract", "Worlds"] as const;
 
 /* ──────────────────────────────────────────────
    Aspect ratios for masonry feel
    ────────────────────────────────────────────── */
-
-const ASPECTS = [
-  "aspect-[3/4]",
-  "aspect-[4/5]",
-  "aspect-[3/4]",
-  "aspect-[4/5]",
-  "aspect-[3/4]",
-  "aspect-[4/5]",
-];
 
 /* ──────────────────────────────────────────────
    Gallery card
@@ -95,11 +30,11 @@ function GalleryCard({
   index,
   onOpen,
 }: {
-  piece: ArtPiece;
+  piece: ImageAsset;
   index: number;
   onOpen: () => void;
 }) {
-  const aspect = ASPECTS[index % ASPECTS.length];
+  const aspect = piece.aspect ? `aspect-[${piece.aspect}]` : "aspect-[3/4]";
 
   return (
     <ScrollReveal delay={index * 0.08} distance={24}>
