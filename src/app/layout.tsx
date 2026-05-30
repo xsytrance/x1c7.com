@@ -9,6 +9,7 @@ import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { KeyboardHelp } from "@/components/KeyboardHelp";
 import { PerformanceGate } from "@/components/PerformanceGate";
 import { EasterEggs } from "@/components/EasterEggs";
+import { Footer } from "@/components/Footer";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -37,6 +38,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
         <BootSequenceWrapper>
           {children}
+          <Footer />
         </BootSequenceWrapper>
         <KeyboardShortcuts />
         <KeyboardHelp />

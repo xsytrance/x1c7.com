@@ -1,10 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { useState, useMemo } from "react";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
-import { ScrollReveal } from "@/components/ScrollReveal";
 
 /* ------------------------------------------------------------------ */
 /*  DATA                                                               */
@@ -53,6 +52,27 @@ const ENTRIES: JournalEntry[] = [
     content:
       "Tried a new color palette. Looked like a clown threw up. Back to the void. The dark theme is the theme.",
   },
+  {
+    date: "2026.05.31",
+    tags: ["launch", "phase-3"],
+    title: "Atmospheric layer online",
+    content:
+      "Particles, scramble text, custom cursor, noise overlay, vignette. The site feels alive now. Every page has its own personality.",
+  },
+  {
+    date: "2026.06.01",
+    tags: ["music", "systems"],
+    title: "Custom music player built",
+    content:
+      "Extracted audio code from the vAIb repo. SignalEngine generates procedural atmosphere per track. The visualizer pulls real frequency data.",
+  },
+  {
+    date: "2026.06.03",
+    tags: ["experiments", "design"],
+    title: "Easter eggs planted",
+    content:
+      "Type 'signal' anywhere for a flash. Seven rapid logo clicks triggers a secret. Page-specific codes on classified, music, and projects.",
+  },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -63,6 +83,7 @@ const TAG_COLORS: Record<string, string> = {
   launch: "#8dff4a",
   "phase-1": "#43f7ff",
   "phase-2": "#43f7ff",
+  "phase-3": "#43f7ff",
   music: "#ff2bd6",
   suno: "#ff9b3d",
   agents: "#7c3cff",
@@ -73,49 +94,106 @@ const TAG_COLORS: Record<string, string> = {
 };
 
 /* ------------------------------------------------------------------ */
-/*  DECORATIVE SCRIBBLES                                               */
+/*  ENTRY CARD                                                         */
 /* ------------------------------------------------------------------ */
 
-interface Scribble {
-  text: string;
-  rotate: string;
-  top?: string;
-  bottom?: string;
-  left?: string;
-  right?: string;
-  underline?: boolean;
+function EntryCard({ entry, index, activeTag, onTagClick }: {
+  entry: JournalEntry;
+  index: number;
+  activeTag: string | null;
+  onTagClick: (tag: string) => void;
+}) {
+  const rotation = index % 2 === 0 ? "rotate-[-0.5deg]" : "rotate-[0.5deg]";
+
+  return (
+    <motion.article
+      layout
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -15, scale: 0.98 }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      className={`relative rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur transition hover:border-white/15 hover:bg-white/[0.06] sm:p-8 ${rotation}`}
+    >
+      {/* Date + tags */}
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <span className="font-mono text-xs" style={{ color: "#f5ff6b", opacity: 0.6 }}>
+          {entry.date}
+        </span>
+        <span className="text-white/10">|</span>
+        <div className="flex flex-wrap gap-2">
+          {entry.tags.map((tag) => {
+            const isActive = activeTag === tag;
+            const color = TAG_COLORS[tag] || "#ffffff";
+            return (
+              <button
+                key={tag}
+                onClick={() => onTagClick(tag)}
+                className="rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider transition"
+                style={{
+                  backgroundColor: isActive ? `${color}35` : `${color}18`,
+                  color: isActive ? color : `${color}cc`,
+                  border: `1px solid ${isActive ? `${color}66` : `${color}30`}`,
+                  transform: isActive ? "scale(1.05)" : "scale(1)",
+                }}
+              >
+                {isActive ? "● " : ""}{tag}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Title */}
+      <h2 className="font-display text-lg font-bold uppercase tracking-tight text-white/90 sm:text-xl">
+        {entry.title}
+      </h2>
+
+      {/* Content */}
+      <p className="mt-3 text-sm leading-7 text-white/65 sm:leading-8">
+        {entry.content}
+      </p>
+
+      {/* Separator */}
+      <div className="mt-5 border-t border-dashed border-white/10" />
+
+      {/* Corner mark */}
+      <span className="absolute bottom-3 right-4 font-mono text-[9px] text-white/10">
+        #{index + 1}
+      </span>
+    </motion.article>
+  );
 }
 
-const SCRIBBLES: Scribble[] = [
-  { text: "todo: add more notes", rotate: "-15deg", top: "-12px", left: "60%", underline: true },
-  { text: "remember this", rotate: "8deg", top: "-8px", right: "10%", underline: true },
-  { text: "check agents", rotate: "-6deg", top: "-10px", left: "15%" },
-  { text: "fix: visualizer", rotate: "12deg", top: "-6px", right: "25%", underline: true },
-  { text: "?", rotate: "-20deg", top: "-4px", left: "45%" },
-];
-
 /* ------------------------------------------------------------------ */
-/*  COMPONENT                                                          */
+/*  MAIN PAGE                                                          */
 /* ------------------------------------------------------------------ */
 
 export default function NotesPage() {
-  const [loadedCount, setLoadedCount] = useState(3);
+  const [activeTag, setActiveTag] = useState<string | null>(null);
   const reduceMotion = useReducedMotion();
 
-  const visibleEntries = ENTRIES.slice(0, loadedCount);
-  const hasMore = loadedCount < ENTRIES.length;
+  /* All unique tags */
+  const allTags = useMemo(() => {
+    const set = new Set<string>();
+    ENTRIES.forEach((e) => e.tags.forEach((t) => set.add(t)));
+    return Array.from(set);
+  }, []);
 
-  const handleLoadMore = () => {
-    setLoadedCount((c) => Math.min(c + 2, ENTRIES.length));
+  /* Filtered entries */
+  const filteredEntries = useMemo(() => {
+    if (!activeTag) return ENTRIES;
+    return ENTRIES.filter((e) => e.tags.includes(activeTag));
+  }, [activeTag]);
+
+  const handleTagClick = (tag: string) => {
+    setActiveTag((current) => (current === tag ? null : tag));
   };
 
   return (
     <main className="relative min-h-screen overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
-      {/* Atmospheric layers */}
       <div className="starfield" aria-hidden />
       <div className="scanline" aria-hidden />
 
-      {/* Accent glow behind header */}
       <div
         className="pointer-events-none absolute left-1/2 top-0 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full opacity-30 blur-3xl"
         style={{ backgroundColor: "#f5ff6b" }}
@@ -123,17 +201,14 @@ export default function NotesPage() {
       />
 
       <div className="relative mx-auto max-w-2xl">
-        {/* ---------- Navigation ---------- */}
+        {/* Nav */}
         <nav className="mb-10">
           <BackToHub />
         </nav>
 
-        {/* ---------- Header ---------- */}
-        <header className="mb-14">
-          <p
-            className="font-mono text-xs uppercase tracking-[0.45em]"
-            style={{ color: "#f5ff6b", opacity: 0.8 }}
-          >
+        {/* Header */}
+        <header className="mb-10">
+          <p className="font-mono text-xs uppercase tracking-[0.45em]" style={{ color: "#f5ff6b", opacity: 0.8 }}>
             x1c7 portal
           </p>
 
@@ -141,159 +216,128 @@ export default function NotesPage() {
             text="Field Notes"
             as="h1"
             className="mt-4 font-display text-5xl font-black uppercase tracking-[-0.06em] sm:text-6xl"
-            style={{ color: "#f5ff6b" }}
+            style={{ color: "#f5ff6b" } as React.CSSProperties}
             delay={100}
           />
 
           <p className="mt-4 max-w-lg text-sm leading-7 text-white/55 sm:text-base sm:leading-8">
             Thoughts, progress logs, experiments, lessons learned.
           </p>
-
-          {/* Decorative scribble under header */}
-          <span
-            className="mt-2 inline-block font-mono text-[10px] text-white/20"
-            style={{ transform: "rotate(-3deg)" }}
-          >
-            scribbled in the margins &rarr;
-          </span>
         </header>
 
-        {/* ---------- Journal Entries ---------- */}
-        <section className="relative space-y-10">
-          {visibleEntries.map((entry, i) => {
-            const isOdd = i % 2 === 0; // 0-indexed: even index = first item = odd position
-            const rotation = isOdd ? "rotate-[-0.5deg]" : "rotate-[0.5deg]";
-            const scribble = SCRIBBLES[i % SCRIBBLES.length];
-
-            return (
-              <ScrollReveal key={entry.date} delay={i * 0.08}>
-                {/* Handwritten annotation between entries */}
-                {scribble && (
-                  <div
-                    className="pointer-events-none relative z-10 mb-1 select-none"
-                    style={{
-                      top: scribble.top,
-                      bottom: scribble.bottom,
-                      left: scribble.left,
-                      right: scribble.right,
-                      position: scribble.top || scribble.bottom ? "relative" : undefined,
-                    }}
-                  >
-                    <span
-                      className={`absolute font-mono text-[10px] text-white/20 ${scribble.underline ? "underline decoration-white/10 underline-offset-2" : ""}`}
-                      style={{
-                        transform: `rotate(${scribble.rotate})`,
-                        left: scribble.left,
-                        right: scribble.right,
-                      }}
-                    >
-                      {scribble.text}
-                    </span>
-                  </div>
-                )}
-
-                {/* Entry card */}
-                <article
-                  className={`relative rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur transition hover:border-white/15 hover:bg-white/[0.06] sm:p-8 ${rotation}`}
+        {/* Tag Filter Bar */}
+        <motion.div
+          initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="mb-10"
+        >
+          <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.35em] text-white/35">
+            Filter by tag
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {/* All */}
+            <button
+              onClick={() => setActiveTag(null)}
+              className="rounded-full px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-wider transition"
+              style={{
+                backgroundColor: activeTag === null ? "#ffffff18" : "transparent",
+                color: activeTag === null ? "#ffffff" : "#ffffff55",
+                border: `1px solid ${activeTag === null ? "#ffffff40" : "#ffffff15"}`,
+              }}
+            >
+              All ({ENTRIES.length})
+            </button>
+            {/* Individual tags */}
+            {allTags.map((tag) => {
+              const color = TAG_COLORS[tag] || "#ffffff";
+              const count = ENTRIES.filter((e) => e.tags.includes(tag)).length;
+              const isActive = activeTag === tag;
+              return (
+                <button
+                  key={tag}
+                  onClick={() => handleTagClick(tag)}
+                  className="rounded-full px-3.5 py-1.5 font-mono text-[10px] uppercase tracking-wider transition"
+                  style={{
+                    backgroundColor: isActive ? `${color}22` : "transparent",
+                    color: isActive ? color : `${color}99`,
+                    border: `1px solid ${isActive ? `${color}55` : `${color}25`}`,
+                  }}
                 >
-                  {/* Date badge */}
-                  <div className="mb-4 flex flex-wrap items-center gap-3">
-                    <span className="font-mono text-xs" style={{ color: "#f5ff6b", opacity: 0.6 }}>
-                      {entry.date}
-                    </span>
-                    <span className="text-white/10">|</span>
+                  {tag} ({count})
+                </button>
+              );
+            })}
+          </div>
 
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2">
-                      {entry.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="rounded-full px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider"
-                          style={{
-                            backgroundColor: `${TAG_COLORS[tag] || "#ffffff"}18`,
-                            color: TAG_COLORS[tag] || "#ffffff",
-                            border: `1px solid ${TAG_COLORS[tag] || "#ffffff"}30`,
-                          }}
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Title */}
-                  <h2 className="font-display text-lg font-bold uppercase tracking-tight text-white/90 sm:text-xl">
-                    {entry.title}
-                  </h2>
-
-                  {/* Content */}
-                  <p className="mt-3 text-sm leading-7 text-white/65 sm:leading-8">
-                    {entry.content}
-                  </p>
-
-                  {/* Bottom separator — hand-drawn feel */}
-                  <div className="mt-5 border-t border-dashed border-white/10" />
-
-                  {/* Decorative corner mark */}
-                  <span className="absolute bottom-3 right-4 font-mono text-[9px] text-white/10">
-                    #{i + 1}
-                  </span>
-                </article>
-              </ScrollReveal>
-            );
-          })}
-
-          {/* ---------- Load More ---------- */}
-          {hasMore && (
-            <div className="flex justify-center pt-4">
-              <motion.button
-                onClick={handleLoadMore}
-                className="group relative rounded-full border border-white/15 bg-white/[0.04] px-8 py-3 font-mono text-xs uppercase tracking-[0.2em] text-white/60 backdrop-blur transition hover:border-[#f5ff6b]/40 hover:text-[#f5ff6b]"
-                whileHover={reduceMotion ? {} : { scale: 1.05 }}
-                whileTap={reduceMotion ? {} : { scale: 0.97 }}
+          {/* Active filter indicator */}
+          <AnimatePresence>
+            {activeTag && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: "auto" }}
+                exit={{ opacity: 0, height: 0 }}
+                className="mt-3 overflow-hidden"
               >
-                Load more
-                <span className="ml-2 inline-block transition-transform group-hover:translate-y-0.5">
-                  &#x2193;
-                </span>
-              </motion.button>
-            </div>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-white/30">
+                  Showing {filteredEntries.length} of {ENTRIES.length} entries
+                  <button
+                    onClick={() => setActiveTag(null)}
+                    className="ml-3 text-signal/60 underline decoration-signal/20 underline-offset-2 transition hover:text-signal"
+                  >
+                    Clear filter
+                  </button>
+                </p>
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        {/* Entries */}
+        <motion.section layout className="relative space-y-8">
+          <AnimatePresence mode="popLayout">
+            {filteredEntries.map((entry, i) => (
+              <EntryCard
+                key={entry.date}
+                entry={entry}
+                index={i}
+                activeTag={activeTag}
+                onTagClick={handleTagClick}
+              />
+            ))}
+          </AnimatePresence>
+
+          {/* Empty state */}
+          {filteredEntries.length === 0 && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="py-16 text-center"
+            >
+              <p className="font-mono text-xs uppercase tracking-[0.3em] text-white/30">
+                No entries match &ldquo;{activeTag}&rdquo;
+              </p>
+              <button
+                onClick={() => setActiveTag(null)}
+                className="mt-4 rounded-full border border-white/15 px-5 py-2 font-mono text-xs uppercase tracking-[0.2em] text-white/50 transition hover:border-signal hover:text-signal"
+              >
+                Show all
+              </button>
+            </motion.div>
           )}
 
-          {/* End-of-journal scribble */}
-          {!hasMore && (
-            <div className="flex justify-center pt-6">
+          {/* End marker */}
+          {filteredEntries.length > 0 && (
+            <motion.div layout className="flex justify-center pt-6">
               <span
                 className="font-mono text-[10px] text-white/20 underline decoration-white/10 underline-offset-2"
                 style={{ transform: "rotate(-4deg)" }}
               >
                 end of current entries — more soon
               </span>
-            </div>
+            </motion.div>
           )}
-        </section>
-
-        {/* ---------- Bottom Navigation ---------- */}
-        <footer className="mt-16 flex flex-wrap items-center justify-center gap-4 border-t border-white/5 pt-8">
-          <a
-            href="/"
-            className="rounded-full border border-white/10 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-white/40 transition hover:border-[#f5ff6b]/30 hover:text-[#f5ff6b]"
-          >
-            Hub
-          </a>
-          <a
-            href="/classified"
-            className="rounded-full border border-white/10 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-white/40 transition hover:border-plasma/30 hover:text-plasma"
-          >
-            Classified
-          </a>
-          <a
-            href="/soundscape"
-            className="rounded-full border border-white/10 px-5 py-2.5 font-mono text-xs uppercase tracking-[0.15em] text-white/40 transition hover:border-signal/30 hover:text-signal"
-          >
-            Soundscape
-          </a>
-        </footer>
+        </motion.section>
       </div>
     </main>
   );
