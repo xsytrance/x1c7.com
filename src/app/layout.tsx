@@ -4,6 +4,7 @@ import "./globals.css";
 import { ParticleField } from "@/components/ParticleField";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
 import { CustomCursor } from "@/components/CustomCursor";
+import { BootSequenceWrapper } from "@/components/BootSequenceWrapper";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -30,7 +31,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
-        {children}
+        <BootSequenceWrapper>
+          {children}
+        </BootSequenceWrapper>
         <ParticleField />
         <NoiseOverlay />
         <CustomCursor />

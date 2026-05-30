@@ -4,6 +4,8 @@ import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
 import { TerminalLock } from "@/components/TerminalLock";
 import { BackToHub } from "@/components/BackToHub";
+import { TextScramble } from "@/components/TextScramble";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export default function Page() {
   const reduceMotion = useReducedMotion();
@@ -12,6 +14,17 @@ export default function Page() {
     <main className="relative min-h-screen overflow-hidden">
       <div className="scanline" aria-hidden />
       <div className="starfield" aria-hidden />
+
+      {/* CRT flicker overlay */}
+      <div
+        className="pointer-events-none fixed inset-0 z-[18] opacity-[0.03]"
+        style={{
+          background: "linear-gradient(rgba(255,0,0,0.1) 1px, transparent 1px)",
+          backgroundSize: "100% 4px",
+          animation: "drift 0.1s linear infinite",
+        }}
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 px-4 pb-6 pt-6 sm:px-6 lg:px-8">
         <BackToHub />
@@ -26,7 +39,14 @@ export default function Page() {
             transition={{ duration: 0.6, delay: 0.1 }}
           >
             <p className="font-mono text-xs uppercase tracking-[0.45em] text-red-400/60">x1c7 secure channel</p>
-            <h1 className="mt-5 font-display text-5xl font-black uppercase tracking-[-0.06em] sm:text-7xl">Classified</h1>
+            <div className="mt-5">
+              <TextScramble
+                text="Classified"
+                as="h1"
+                className="font-display text-5xl font-black uppercase tracking-[-0.06em] glow-text sm:text-7xl"
+                delay={300}
+              />
+            </div>
             <p className="mx-auto mt-6 max-w-xl text-lg font-semibold leading-8 text-white/75">
               Access denied-ish. Nothing sensitive. Just a locked portal.
             </p>
@@ -36,14 +56,9 @@ export default function Page() {
           </motion.div>
 
           {/* Terminal */}
-          <motion.div
-            initial={reduceMotion ? false : { opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-10 flex justify-center"
-          >
+          <ScrollReveal delay={0.2} className="mt-10 flex justify-center">
             <TerminalLock />
-          </motion.div>
+          </ScrollReveal>
 
           {/* Hint */}
           <motion.p
