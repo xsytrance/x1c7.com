@@ -8,7 +8,7 @@ Creative command hub for music, AI, projects, agents, and experiments.
 - React + TypeScript
 - Tailwind CSS
 - Framer Motion
-- Vercel-ready static/public frontend
+- Vercel
 
 ## Local setup
 
@@ -26,42 +26,83 @@ npm run lint
 npm run build
 ```
 
-## Deploy notes for Vercel
+## Deploy to Vercel
 
-1. Import this GitHub repo into Vercel.
-2. Framework preset: **Next.js**.
-3. Build command: `npm run build`.
-4. Output settings: leave default.
-5. Add domain `x1c7.com` in Vercel project settings.
-6. In Cloudflare DNS, point the apex/root domain according to Vercel's instructions. Keep Cloudflare as DNS/security layer.
+1. Import `xsytrance/x1c7.com` into Vercel
+2. Framework preset: **Next.js**
+3. Build command: `npm run build`
+4. Add domain `x1c7.com` in Vercel settings
+5. In Cloudflare DNS, point apex/root to Vercel
 
-No environment variables are required.
+No environment variables required.
 
 ## Routes
 
-- `/` — Living portal map homepage (hero + portal map + signal section + footer)
-- `/music` — Music transmission receiver (Suno, SoundCloud, PulseBox, visualizer)
-- `/projects` — Project constellation placeholder (Phase 2D planned)
-- `/classified` — Interactive terminal easter egg (fake lock, konami code)
-- `/art`, `/war-room`, `/level-ready`, `/agents`, `/notes` — Placeholder portals
+| Route | Description |
+|-------|-------------|
+| `/` | Portal map homepage with interactive node constellation |
+| `/music` | Music transmission deck (Suno, SoundCloud, PulseBox) |
+| `/projects` | Terminal file browser with fake commands |
+| `/classified` | Interactive fake terminal with konami easter egg |
+| `/art` | Gallery wall with generative CSS art frames |
+| `/war-room` | Tactical dashboard with live clock and radar |
+| `/level-ready` | Gamified service tiers (Setup / Automate / Scale) |
+| `/agents` | Agent roster with character cards and silhouettes |
+| `/notes` | Field journal with tilted notebook entries |
 
-## Content Model
+## Keyboard Shortcuts
 
-- `src/data/portals.ts` — Portal definitions (used by PortalMap)
-- `src/data/tracks.ts` — Track and music source definitions (used by /music)
+| Key | Action |
+|-----|--------|
+| `1`–`9` | Jump to portal |
+| `↑↓←→` | Navigate portal map |
+| `Enter` | Open selected portal |
+| `?` | Show keyboard help |
+| `Esc` | Close overlay |
+
+Press `?` on any page to see the full shortcut map.
+
+## Shared Atmospheric Layer
+
+Every page includes:
+- **ParticleField** — Canvas 2D particle constellation, mouse-reactive
+- **NoiseOverlay** — Subtle analog grain texture
+- **CustomCursor** — Glowing cyan dot (desktop only)
+- **Scanline** — Horizontal scanline overlay
+- **Starfield** — Drifting dot background
+- **Vignette** — Subtle edge darkening
+- **BootSequence** — First-visit terminal boot (skippable)
 
 ## Component Inventory
 
-- `PortalMap.tsx` — Interactive orbiting portal node map (homepage)
-- `MobileNav.tsx` — Hamburger menu for mobile
-- `BackToHub.tsx` — xsy-branded back navigation
-- `StatusChip.tsx` — live/forming/locked badge
-- `SignalPanel.tsx` — Glass card with accent glow
-- `AudioVisualizer.tsx` — CSS animated equalizer bars
-- `TerminalLock.tsx` — Interactive fake terminal (typed text, konami easter egg)
+| Component | Purpose |
+|-----------|---------|
+| `PortalMap` | Interactive orbiting portal node map |
+| `MobileNav` | Hamburger menu for mobile |
+| `BackToHub` | xsy-branded back navigation |
+| `StatusChip` | live/forming/locked badge |
+| `SignalPanel` | Glass card with accent glow |
+| `AudioVisualizer` | CSS animated equalizer bars |
+| `TerminalLock` | Fake terminal with konami easter egg |
+| `ParticleField` | Canvas 2D particle constellation |
+| `TextScramble` | Glyph decode effect for titles |
+| `CustomCursor` | Glowing dot with hover expansion |
+| `NoiseOverlay` | Analog grain texture |
+| `PortalConnections` | SVG lines linking CORE to portals |
+| `ScrollReveal` | Scroll-triggered fade-in |
+| `BootSequence` | First-visit boot animation |
+| `Vignette` | Edge darkening overlay |
+| `KeyboardShortcuts` | Global keyboard shortcut handler |
+| `KeyboardHelp` | Shortcut help overlay |
+| `PerformanceGate` | Conditional rendering for low-end devices |
+
+## Data Files
+
+- `src/data/portals.ts` — Portal definitions
+- `src/data/tracks.ts` — Music tracks and sources
 
 ## Security
 
-- Do not commit `.env`, `.env*.local`, `.vercel`, tokens, PATs, or credentials.
-- This site exposes no private internal URLs and does not require API keys.
-- The /classified page is purely cosmetic — no real auth, no sensitive data.
+- No private URLs or API keys committed
+- `/classified` is cosmetic — no real auth or sensitive data
+- No backend, database, or auth system

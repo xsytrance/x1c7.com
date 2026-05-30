@@ -5,6 +5,9 @@ import { ParticleField } from "@/components/ParticleField";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
 import { CustomCursor } from "@/components/CustomCursor";
 import { BootSequenceWrapper } from "@/components/BootSequenceWrapper";
+import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
+import { KeyboardHelp } from "@/components/KeyboardHelp";
+import { PerformanceGate } from "@/components/PerformanceGate";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -34,10 +37,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <BootSequenceWrapper>
           {children}
         </BootSequenceWrapper>
-        <ParticleField />
-        <NoiseOverlay />
-        <CustomCursor />
-      </body>
-    </html>
-  );
-}
+        <KeyboardShortcuts />
+        <KeyboardHelp />
+        <PerformanceGate>
+          <ParticleField />

@@ -123,6 +123,12 @@ export default function Home() {
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
               Built by xsy &middot; {new Date().getFullYear()}
             </p>
+            <button
+              onClick={() => window.dispatchEvent(new CustomEvent("x1c7-toggle-help"))}
+              className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/20 transition hover:text-signal/60"
+            >
+              Press ? for controls
+            </button>
           </div>
         </div>
       </footer>
