@@ -277,50 +277,55 @@ export default function AgentsPage() {
 
 function AgentCard({ agent }: { agent: Agent }) {
   return (
-    <MagneticCard className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur" strength={0.1}>
-      <div
-        className="card-lift h-full"
-        style={{
-          transition: "transform 0.3s ease, box-shadow 0.3s ease",
-        }}
-      >
-      {/* accent glow */}
-      <div
-        className="absolute -right-12 -top-12 h-32 w-32 rounded-full blur-3xl"
-        style={{ background: agent.color, opacity: 0.15 }}
-        aria-hidden
-      />
+    <Link href={`/agents/${agent.codename.toLowerCase()}`} className="group block">
+      <MagneticCard className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur transition-colors group-hover:border-white/20" strength={0.1}>
+        <div className="card-lift h-full">
+          {/* accent glow */}
+          <div
+            className="absolute -right-12 -top-12 h-32 w-32 rounded-full blur-3xl transition-opacity group-hover:opacity-100"
+            style={{ background: agent.color, opacity: 0.15 }}
+            aria-hidden
+          />
 
-      {/* silhouette */}
-      <div className="relative mb-5 flex h-24 items-center justify-center rounded-2xl bg-black/20">
-        {agent.silhouette}
-      </div>
+          {/* silhouette */}
+          <div className="relative mb-5 flex h-24 items-center justify-center rounded-2xl bg-black/20 transition-colors group-hover:bg-black/30">
+            {agent.silhouette}
+          </div>
 
-      {/* codename */}
-      <h2 className="relative text-2xl font-black uppercase tracking-[-0.04em] text-white">
-        {agent.codename}
-      </h2>
+          {/* codename */}
+          <h2 className="relative text-2xl font-black uppercase tracking-[-0.04em] text-white transition-colors group-hover:text-white">
+            {agent.codename}
+          </h2>
 
-      {/* role */}
-      <p className="relative mt-1 text-sm font-medium uppercase tracking-[0.15em] text-white/50">
-        {agent.role}
-      </p>
+          {/* role */}
+          <p className="relative mt-1 text-sm font-medium uppercase tracking-[0.15em] text-white/50">
+            {agent.role}
+          </p>
 
-      {/* status */}
-      <div className="relative mt-4">
-        <StatusChip status={agent.status} />
-      </div>
+          {/* status */}
+          <div className="relative mt-4">
+            <StatusChip status={agent.status} />
+          </div>
 
-      {/* bottom accent line */}
-      <div
-        className="absolute bottom-0 left-6 right-6 h-[2px] rounded-full"
-        style={{
-          background: `linear-gradient(90deg, transparent, ${agent.color}, transparent)`,
-          opacity: 0.4,
-        }}
-        aria-hidden
-      />
-      </div>
-    </MagneticCard>
+          {/* view profile link */}
+          <div className="relative mt-4 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-wider opacity-0 transition group-hover:opacity-100" style={{ color: `${agent.color}aa` }}>
+            <span>View Profile</span>
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          {/* bottom accent line */}
+          <div
+            className="absolute bottom-0 left-6 right-6 h-[2px] rounded-full transition-opacity group-hover:opacity-70"
+            style={{
+              background: `linear-gradient(90deg, transparent, ${agent.color}, transparent)`,
+              opacity: 0.4,
+            }}
+            aria-hidden
+          />
+        </div>
+      </MagneticCard>
+    </Link>
   );
 }

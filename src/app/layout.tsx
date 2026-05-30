@@ -9,6 +9,7 @@ import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { KeyboardHelp } from "@/components/KeyboardHelp";
 import { PerformanceGate } from "@/components/PerformanceGate";
 import { EasterEggs } from "@/components/EasterEggs";
+import { KonamiCode } from "@/components/KonamiCode";
 import { Footer } from "@/components/Footer";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
@@ -46,6 +47,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <ParticleField />
         </PerformanceGate>
         <EasterEggs />
+        <KonamiCode />
         <NoiseOverlay />
         <CustomCursor />
       </body>

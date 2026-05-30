@@ -48,6 +48,7 @@ const PORTAL_LINKS = [
   { slug: "notes", label: "Field Notes" },
   { slug: "agents", label: "Agents" },
   { slug: "classified", label: "Classified" },
+  { slug: "contact", label: "Contact" },
 ];
 
 export function Footer() {
