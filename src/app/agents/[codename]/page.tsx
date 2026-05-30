@@ -2,6 +2,7 @@
 
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { getAgent, getAllAgents } from "@/data/agents";
 import { BackToHub } from "@/components/BackToHub";
@@ -175,14 +176,30 @@ export default function AgentDetailPage() {
             </span>
           </div>
 
-          {/* Name + glyph */}
+          {/* Name + portrait (or glyph fallback) */}
           <div className="flex items-end gap-4">
-            <span
-              className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl border text-3xl font-black sm:h-20 sm:w-20 sm:text-4xl"
-              style={{ borderColor: `${agent.color}33`, background: `${agent.color}15`, color: agent.color }}
-            >
-              {agent.glyph}
-            </span>
+            {agent.image ? (
+              <div
+                className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border sm:h-20 sm:w-20"
+                style={{ borderColor: `${agent.color}33` }}
+              >
+                <Image
+                  src={agent.image}
+                  alt={agent.codename}
+                  fill
+                  className="object-cover"
+                  sizes="80px"
+                  priority
+                />
+              </div>
+            ) : (
+              <span
+                className="grid h-16 w-16 shrink-0 place-items-center rounded-2xl border text-3xl font-black sm:h-20 sm:w-20 sm:text-4xl"
+                style={{ borderColor: `${agent.color}33`, background: `${agent.color}15`, color: agent.color }}
+              >
+                {agent.glyph}
+              </span>
+            )}
             <div>
               <TextScramble
                 text={agent.codename}

@@ -7,6 +7,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { StatusChip } from "@/components/StatusChip";
 import { MagneticCard } from "@/components/MagneticCard";
 import Link from "next/link";
+import Image from "next/image";
 
 interface Agent {
   codename: string;
@@ -14,6 +15,7 @@ interface Agent {
   status: "live" | "forming" | "locked";
   color: string;
   silhouette: React.ReactNode;
+  image?: string;
 }
 
 /* ── unique CSS geometric silhouettes ─────────────────────────────── */
@@ -167,6 +169,7 @@ const agents: Agent[] = [
     status: "live",
     color: "#43f7ff",
     silhouette: <UltronSilhouette />,
+    image: "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev/AI%20Agent%20Profile%20Pictures/xsysupersort-aka-ultron.png",
   },
   {
     codename: "DAZZLER",
@@ -287,9 +290,19 @@ function AgentCard({ agent }: { agent: Agent }) {
             aria-hidden
           />
 
-          {/* silhouette */}
-          <div className="relative mb-5 flex h-24 items-center justify-center rounded-2xl bg-black/20 transition-colors group-hover:bg-black/30">
-            {agent.silhouette}
+          {/* portrait or silhouette */}
+          <div className="relative mb-5 flex h-24 items-center justify-center overflow-hidden rounded-2xl bg-black/20 transition-colors group-hover:bg-black/30">
+            {agent.image ? (
+              <Image
+                src={agent.image}
+                alt={agent.codename}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            ) : (
+              agent.silhouette
+            )}
           </div>
 
           {/* codename */}
@@ -324,8 +337,4 @@ function AgentCard({ agent }: { agent: Agent }) {
             }}
             aria-hidden
           />
-        </div>
-      </MagneticCard>
-    </Link>
-  );
-}
+      
