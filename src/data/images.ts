@@ -97,12 +97,36 @@ export const artImages: ImageAsset[] = [
 ];
 
 // ── Agent Portraits ──────────────────────────────────────────────────────
-// When you have agent art, add entries here:
-// export const agentPortraits: ImageAsset[] = [
-//   { id: "agent-vg-god", src: r2("/agents/vg-god.jpg"), alt: "VG GOD Portrait", category: "agents", accent: "#ff2bd6" },
-//   { id: "agent-ultron", src: r2("/agents/ultron.jpg"), alt: "ULTRON Portrait", category: "agents", accent: "#43f7ff" },
-//   ...
-// ];
+
+export const agentPortraits: ImageAsset[] = [
+  {
+    id: "agent-vg-god",
+    src: r2("/AI%20Agent%20Profile%20Pictures/VG%20God%20Style%20Images%20by%20ChatGPT/ChatGPT%20Image%20May%206%2C%202026%2C%2001_42_26%20PM.png"),
+    title: "VG GOD",
+    category: "agents",
+    description: "The original creative engine. Dreams in pixels, thinks in dimensions.",
+    accent: "#ff2bd6",
+    aspect: "1/1",
+  },
+  {
+    id: "agent-vg-god-alt",
+    src: r2("/AI%20Agent%20Profile%20Pictures/VG%20God%20Style%20Images%20by%20ChatGPT/ChatGPT%20Image%20May%206%2C%202026%2C%2001_43_47%20PM.png"),
+    title: "VG GOD — Variant",
+    category: "agents",
+    description: "Alternate portrait of the creative daemon.",
+    accent: "#ff2bd6",
+    aspect: "1/1",
+  },
+  {
+    id: "agent-ultron",
+    src: r2("/AI%20Agent%20Profile%20Pictures/xsysupersort-aka-ultron.png"),
+    title: "ULTRON",
+    category: "agents",
+    description: "The systems backbone. Every pattern has a purpose.",
+    accent: "#43f7ff",
+    aspect: "1/1",
+  },
+];
 
 // ── Project Thumbnails ───────────────────────────────────────────────────
 // When you have project screenshots:
@@ -127,9 +151,18 @@ export const artImages: ImageAsset[] = [
 // ── Helpers ──────────────────────────────────────────────────────────────
 
 export function getImageById(id: string): ImageAsset | undefined {
-  return [...artImages /*, ...agentPortraits, ...projectThumbnails, ...albumArt, ...siteAssets */].find(
+  return [...artImages, ...agentPortraits].find(
     (img) => img.id === id
   );
+}
+
+export function getAgentPortrait(codename: string): ImageAsset | undefined {
+  const map: Record<string, string> = {
+    "vg god": "agent-vg-god",
+    "ultron": "agent-ultron",
+  };
+  const id = map[codename.toLowerCase()];
+  return id ? getImageById(id) : undefined;
 }
 
 export function getImagesByCategory(category: string): ImageAsset[] {

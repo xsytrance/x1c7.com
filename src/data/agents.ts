@@ -23,6 +23,7 @@ export interface AgentData {
   status: "live" | "forming" | "locked";
   color: string;
   colorRgb: string;
+  image?: string; // R2 portrait URL (optional — falls back to glyph)
   description: string;
   lore: string[];
   stats: AgentStat[];
@@ -43,6 +44,7 @@ export const agentsData: AgentData[] = [
     status: "live",
     color: "#ff2bd6",
     colorRgb: "255, 43, 214",
+    image: "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev/AI%20Agent%20Profile%20Pictures/VG%20God%20Style%20Images%20by%20ChatGPT/ChatGPT%20Image%20May%206%2C%202026%2C%2001_42_26%20PM.png",
     description:
       "The original creative engine. VG GOD handles all visual output — from character designs to world landscapes to abstract experiments that defy categorization.",
     lore: [
@@ -93,6 +95,7 @@ export const agentsData: AgentData[] = [
     status: "live",
     color: "#43f7ff",
     colorRgb: "67, 247, 255",
+    image: "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev/AI%20Agent%20Profile%20Pictures/xsysupersort-aka-ultron.png",
     description:
       "The systems backbone. ULTRON manages data pipelines, monitors infrastructure, detects anomalies, and maintains operational awareness across all x1c7 systems.",
     lore: [
@@ -342,8 +345,3 @@ export function getAgent(codename: string): AgentData | undefined {
   return agentsData.find(
     (a) => a.codename.toLowerCase() === codename.toLowerCase()
   );
-}
-
-export function getAllAgents(): AgentData[] {
-  return agentsData;
-}
