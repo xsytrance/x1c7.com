@@ -8,160 +8,59 @@ export type Track = {
   genre: string;
   mood?: string;
   color: string;
-  audioUrl?: string;       // Local audio file URL for custom player
-  soundcloudUrl?: string;  // SoundCloud embed URL
+  audioUrl: string;
   featured?: boolean;
 };
+
 const R2_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
 
-export const tracks: Track[] = [
-  {
-    id: "first-transmission",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/first-transmission.mp3",
-    title: "First Transmission",
-    artist: "xsy",
-    duration: "3:42",
-    durationSeconds: 222,
-    art: "/album-art/first-transmission.jpg",
-    genre: "Electronic",
-    mood: "Discovery",
-    color: "#ff2bd6",
-    featured: true,
-  },
-  {
-    id: "neon-dreams",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/neon-dreams.mp3",
-    title: "Neon Dreams",
-    artist: "xsy",
-    duration: "4:15",
-    durationSeconds: 255,
-    art: "/album-art/neon-dreams.jpg",
-    genre: "Synthwave",
-    mood: "Night Drive",
-    color: "#43f7ff",
-  },
-  {
-    id: "void-walker",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/void-walker.mp3",
-    title: "Void Walker",
-    artist: "xsy",
-    duration: "5:01",
-    durationSeconds: 301,
-    art: "/album-art/void-walker.jpg",
-    genre: "Ambient",
-    mood: "Deep Space",
-    color: "#ff9b3d",
-  },
-  {
-    id: "signal-acquired",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/signal-acquired.mp3",
-    title: "Signal Acquired",
-    artist: "xsy",
-    duration: "3:28",
-    durationSeconds: 208,
-    art: "/album-art/signal-acquired.jpg",
-    genre: "Electronic",
-    mood: "Tension",
-    color: "#8dff4a",
-  },
-  {
-    id: "pulse-protocol",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/pulse-protocol.mp3",
-    title: "Pulse Protocol",
-    artist: "xsy",
-    duration: "3:56",
-    durationSeconds: 236,
-    art: "/album-art/pulse-protocol.jpg",
-    genre: "Techno",
-    mood: "Urgent",
-    color: "#7c3cff",
-  },
-  {
-    id: "ghost-frequency",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/ghost-frequency.mp3",
-    title: "Ghost Frequency",
-    artist: "xsy",
-    duration: "4:44",
-    durationSeconds: 284,
-    art: "/album-art/ghost-frequency.jpg",
-    genre: "Ambient",
-    mood: "Haunting",
-    color: "#00ffa8",
-  },
-  {
-    id: "midnight-core",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/midnight-core.mp3",
-    title: "Midnight Core",
-    artist: "xsy",
-    duration: "3:33",
-    durationSeconds: 213,
-    art: "/album-art/midnight-core.jpg",
-    genre: "Electronic",
-    mood: "After Hours",
-    color: "#ff2bd6",
-  },
-  {
-    id: "entropy-rise",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/entropy-rise.mp3",
-    title: "Entropy Rise",
-    artist: "xsy",
-    duration: "4:08",
-    durationSeconds: 248,
-    art: "/album-art/entropy-rise.jpg",
-    genre: "Industrial",
-    mood: "Chaos",
-    color: "#ff9b3d",
-  },
-  {
-    id: "quantum-echo",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/quantum-echo.mp3",
-    title: "Quantum Echo",
-    artist: "xsy",
-    duration: "3:17",
-    durationSeconds: 197,
-    art: "/album-art/quantum-echo.jpg",
-    genre: "Synthwave",
-    mood: "Nostalgic",
-    color: "#43f7ff",
-  },
-  {
-    id: "system-override",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/system-override.mp3",
-    title: "System Override",
-    artist: "xsy",
-    duration: "4:22",
-    durationSeconds: 262,
-    art: "/album-art/system-override.jpg",
-    genre: "Techno",
-    mood: "Rebellion",
-    color: "#8dff4a",
-  },
-  {
-    id: "starfield-lullaby",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/starfield-lullaby.mp3",
-    title: "Starfield Lullaby",
-    artist: "xsy",
-    duration: "5:12",
-    durationSeconds: 312,
-    art: "/album-art/starfield-lullaby.jpg",
-    genre: "Ambient",
-    mood: "Dreaming",
-    color: "#7c3cff",
-  },
-  {
-    id: "final-broadcast",
-    audioUrl: "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/final-broadcast.mp3",
-    title: "Final Broadcast",
-    artist: "xsy",
-    duration: "6:01",
-    durationSeconds: 361,
-    art: "/album-art/final-broadcast.jpg",
-    genre: "Electronic",
-    mood: "Epic",
-    color: "#ff2bd6",
-    featured: true,
-  },
+const COLORS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8", "#ff2bd6", "#43f7ff"];
+const GENRES = ["Electronic", "Synthwave", "Ambient", "Techno", "Industrial", "Pop", "House", "Dance", "Electronic"];
+const MOODS = ["Euphoric", "Defiant", "Dreamy", "Intense", "Confident", "Energetic", "Nostalgic", "Raw", "Intimate"];
+
+function slugify(title: string): string {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
+
+function parseTitleFromUrl(url: string): string {
+  // Extract filename from URL
+  const filename = decodeURIComponent(url.split("/").pop() || "");
+  // Remove .mp3 and "xsytrance - " prefix
+  return filename.replace(/\.mp3$/i, "").replace(/^xsytrance\s*-\s*/i, "").trim();
+}
+
+const rawUrls = [
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Different%20This%20Summer.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Don't%20Quit%20Right%20Now.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Won%E2%80%99t%20Be%20Your%20Fire%20(Japanese%20Mix).mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Won%E2%80%99t%20Be%20Your%20Fire.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I'm%20That%20Somebody.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Mi%20Gente.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20My%20Soul%20Lives%20In%20Seoul.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Paper%20That%20Cut%20You.mp3",
+  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Still%20Me_%20Still%20You.mp3",
 ];
+
+export const tracks: Track[] = rawUrls.map((url, i) => {
+  const title = parseTitleFromUrl(url);
+  const id = slugify(title);
+  return {
+    id,
+    title,
+    artist: "xsytrance",
+    duration: "0:00",
+    durationSeconds: 0,
+    art: `/album-art/${id}.jpg`,
+    genre: GENRES[i % GENRES.length],
+    mood: MOODS[i % MOODS.length],
+    color: COLORS[i % COLORS.length],
+    audioUrl: url,
+    featured: i === 0, // First track is featured
+  };
+});
 
 export const featuredTracks = tracks.filter((t) => t.featured);
 
