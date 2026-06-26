@@ -9,6 +9,7 @@ export type Track = {
   mood?: string;
   color: string;
   audioUrl: string;
+  soundcloudUrl?: string;
   featured?: boolean;
 };
 

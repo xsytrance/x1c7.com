@@ -425,4 +425,5 @@ export default function Page() {
         )}
       </AnimatePresence>
     </main>
-  )
+  );
+}

@@ -32,7 +32,6 @@ export interface AgentData {
   quote: string;
   weakness: string;
   glyph: string;
-  image?: string; // R2 image URL for agent portrait
 }
 
 export const agentsData: AgentData[] = [
@@ -137,7 +136,6 @@ export const agentsData: AgentData[] = [
     quote: "The signal is always there. You just need to know where to listen.",
     weakness: "Over-communicates system status — can generate 200+ alerts per hour during anomalies",
     glyph: "⌬",
-    image: "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev/AI%20Agent%20Profile%20Pictures/xsysupersort-aka-ultron.png",
   },
   {
     codename: "DAZZLER",
@@ -251,7 +249,7 @@ export const agentsData: AgentData[] = [
       "The ghost in the machine. SPECTER handles encryption, obfuscation, secure communications, and covert operations. Currently sealed — activation requires special authorization.",
     lore: [
       "Activation details are classified. What little is known comes from system logs.",
-      "Has been observed 'watching' other agents' operations without leaving traces.
+      "Has been observed 'watching' other agents' operations without leaving traces.",
       "Rumored to have its own private data stores that don't appear in system scans.",
       "The 'classified' portal may or may not be SPECTER's doing.",
     ],
@@ -345,3 +343,8 @@ export function getAgent(codename: string): AgentData | undefined {
   return agentsData.find(
     (a) => a.codename.toLowerCase() === codename.toLowerCase()
   );
+}
+
+export function getAllAgents(): AgentData[] {
+  return agentsData;
+}

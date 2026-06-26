@@ -272,7 +272,7 @@ function FileEntry({
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
-            exit={reduceMotion ? false : { opacity: 0, height: 0 }}
+            exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
             transition={{ duration: 0.2 }}
             className="overflow-hidden"
           >
@@ -291,7 +291,7 @@ function FileEntry({
           <motion.div
             initial={reduceMotion ? false : { opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
-            exit={reduceMotion ? false : { opacity: 0, height: 0 }}
+            exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >

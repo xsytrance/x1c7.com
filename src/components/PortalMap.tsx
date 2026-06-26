@@ -110,4 +110,12 @@ export function PortalMap() {
             <Link href={`/${active.slug}`} className="rounded-full px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-void transition hover:scale-105" style={{ background: active.color }}>
               {active.cta}
             </Link>
-            <a href="#signal" className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/75 transi
+            <a href="#signal" className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/75 transition hover:border-white/45 hover:text-white">
+              Read signal
+            </a>
+          </div>
+        </motion.aside>
+      </div>
+    </section>
+  );
+}
