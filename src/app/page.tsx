@@ -55,7 +55,7 @@ export default function Home() {
             />
           </div>
           <p className="mx-auto mt-7 max-w-2xl text-base font-semibold leading-7 text-white/70 sm:text-xl">
-            Music, machines, agents, experiments. A portal map by xsy for everything loud, strange, useful, and still forming.
+            AI art, AI music, code, agents, and ideas. A portal map by xsy for everything loud, strange, useful, and still forming.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="#map" className="rounded-full bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-void transition hover:scale-105 hover:bg-signal">Choose a portal</a>

@@ -7,9 +7,11 @@ import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { GitHubRepos } from "@/components/GitHubRepos";
+import { ProjectGrid } from "@/components/ProjectGrid";
+import { featuredProjects, categoryMeta } from "@/data/projects";
 
 /* ------------------------------------------------------------------ */
-/*  DATA                                                               */
+/*  DATA — terminal `ls` shows the real featured builds                */
 /* ------------------------------------------------------------------ */
 
 interface Project {
@@ -20,56 +22,13 @@ interface Project {
   detail: string;
 }
 
-const PROJECTS: Project[] = [
-  {
-    name: "vAIb out!",
-    description: "AI expression experiment",
-    status: "forming",
-    color: "#ff2bd6",
-    detail:
-      "An experiment in AI-driven creative expression. Teaching machines to feel the funk and channel it into visual output. Still wiring the neurons.",
-  },
-  {
-    name: "Entangled",
-    description: "Connected chaos",
-    status: "forming",
-    color: "#43f7ff",
-    detail:
-      "Everything is connected. Entangled is a web of interlinked ideas, data streams, and creative impulses colliding in controlled chaos.",
-  },
-  {
-    name: "Aurex",
-    description: "Golden ratio experiments",
-    status: "forming",
-    color: "#ff9b3d",
-    detail:
-      "Exploring the divine proportion through generative art, interactive geometry, and the mathematical beauty underlying reality.",
-  },
-  {
-    name: "XsyVerse",
-    description: "Universe of characters",
-    status: "forming",
-    color: "#7c3cff",
-    detail:
-      "A sprawling universe of characters, each with their own lore, relationships, and stories branching across dimensions.",
-  },
-  {
-    name: "BakeBrain",
-    description: "Bake your own intelligence",
-    status: "forming",
-    color: "#8dff4a",
-    detail:
-      "Roll your own. BakeBrain lets you knead, shape, and bake custom AI models from scratch — no factory required.",
-  },
-  {
-    name: "x1c7",
-    description: "This website",
-    status: "live",
-    color: "#43f7ff",
-    detail:
-      "The portal hub you are currently navigating. A Next.js cyber-mystic experience built with Tailwind, Framer Motion, and too much caffeine.",
-  },
-];
+const PROJECTS: Project[] = featuredProjects.map((p) => ({
+  name: p.name,
+  description: p.tagline,
+  status: p.status === "forming" ? "forming" : "live",
+  color: categoryMeta[p.category].color,
+  detail: p.detail,
+}));
 
 const COMMANDS = [
   "ls -la",
@@ -479,8 +438,8 @@ export default function ProjectsPage() {
               delay={100}
             />
             <p className="mx-auto mt-4 max-w-xl text-sm font-semibold leading-7 text-white/60 sm:text-base">
-              Apps, tools, coding experiments: vAIb out!, Entangled, Aurex,
-              dashboards, toys, and builds crawling out of the basement.
+              Apps, agents, fantasy consoles, save-state engines, AI music
+              tools, and research — every build crawling out of the basement.
             </p>
           </div>
         </ScrollReveal>
@@ -629,6 +588,11 @@ export default function ProjectsPage() {
               )}
             </div>
           </motion.div>
+        </ScrollReveal>
+
+        {/* Full project showcase — curated, filterable */}
+        <ScrollReveal delay={0.15}>
+          <ProjectGrid />
         </ScrollReveal>
 
         {/* GitHub Repos — live data */}
