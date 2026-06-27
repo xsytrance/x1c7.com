@@ -72,7 +72,9 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
           <span className="rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider" style={{ background: `${track.color}22`, color: track.color, border: `1px solid ${track.color}33` }}>
             {track.genre}
           </span>
-          <span className="font-mono text-[10px] uppercase tracking-wider text-white/50">{track.duration}</span>
+          {track.duration && track.duration !== "0:00" && (
+            <span className="font-mono text-[10px] uppercase tracking-wider text-white/50">{track.duration}</span>
+          )}
         </div>
       </div>
 
@@ -202,6 +204,7 @@ export default function Page() {
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
   const [vizMode, setVizMode] = useState<VizMode>("bars");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rafRef = useRef<number>(0);
@@ -216,12 +219,17 @@ export default function Page() {
     initAudio(audio);
 
     const onTime = () => { if (audioRef.current) setProgress(audioRef.current.currentTime); };
+    const onLoaded = () => { if (audioRef.current) setDuration(audioRef.current.duration || 0); };
     const onEnded = () => { setIsPlaying(false); handleNext(); };
     audio.addEventListener("timeupdate", onTime);
+    audio.addEventListener("loadedmetadata", onLoaded);
+    audio.addEventListener("durationchange", onLoaded);
     audio.addEventListener("ended", onEnded);
 
     return () => {
       audio.removeEventListener("timeupdate", onTime);
+      audio.removeEventListener("loadedmetadata", onLoaded);
+      audio.removeEventListener("durationchange", onLoaded);
       audio.removeEventListener("ended", onEnded);
       audio.pause();
     };
@@ -242,6 +250,8 @@ export default function Page() {
     if (!isSame) {
       audio.src = track.audioUrl;
       setCurrentTrack(track);
+      setProgress(0);
+      setDuration(0);
       SignalEngine.tuneIn(track);
     }
 
@@ -327,7 +337,7 @@ export default function Page() {
             <div className="p-8 sm:p-12">
               <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/30">Featured Transmission</p>
               <h2 className="mt-4 font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl">{heroTrack.title}</h2>
-              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.duration} · {heroTrack.mood}</p>
+              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.genre} · {heroTrack.mood}</p>
               <p className="mt-6 max-w-md text-base leading-8 text-white/60">
                 The first signal from xsy. A transmission from the edge of the creative void,
                 where machines dream in sound and humans shape the noise into meaning.
@@ -421,7 +431,7 @@ export default function Page() {
       {/* ===== PLAYER BAR ===== */}
       <AnimatePresence>
         {currentTrack && currentTrack.audioUrl && (
-          <PlayerBar track={currentTrack} isPlaying={isPlaying} progress={progress} duration={currentTrack.durationSeconds} onToggle={togglePlay} onSeek={handleSeek} onNext={handleNext} onPrev={handlePrev} />
+          <PlayerBar track={currentTrack} isPlaying={isPlaying} progress={progress} duration={duration} onToggle={togglePlay} onSeek={handleSeek} onNext={handleNext} onPrev={handlePrev} />
         )}
       </AnimatePresence>
     </main>
