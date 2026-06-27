@@ -38,7 +38,7 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
       <div className="relative aspect-square overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
-          style={{ backgroundImage: `url(${track.art})` }}
+          style={{ backgroundImage: track.cover ? `url(${track.cover}), url(${track.art})` : `url(${track.art})` }}
         />
         <div
           className="absolute inset-0"
@@ -170,7 +170,7 @@ function PlayerBar({ track, isPlaying, progress, duration, onToggle, onSeek, onN
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
         {/* Art */}
         <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-white/10">
-          <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url(${track.art})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: track.cover ? `url(${track.cover}), url(${track.art})` : `url(${track.art})` }} />
           <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${track.color}44, ${track.color}11)` }} />
         </div>
         {/* Info */}
@@ -331,7 +331,7 @@ export default function Page() {
           {/* Featured track info */}
           <div className="grid items-center lg:grid-cols-[1fr_1.5fr]">
             <div className="relative aspect-square overflow-hidden">
-              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroTrack.art})` }} />
+              <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: heroTrack.cover ? `url(${heroTrack.cover}), url(${heroTrack.art})` : `url(${heroTrack.art})` }} />
               <div className="absolute inset-0" style={{ background: `radial-gradient(circle at 50% 50%, ${heroTrack.color}33, transparent 70%)` }} />
             </div>
             <div className="p-8 sm:p-12">

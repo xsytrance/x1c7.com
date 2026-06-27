@@ -34,7 +34,16 @@ function GalleryCard({
   index: number;
   onOpen: () => void;
 }) {
-  const aspect = piece.aspect ? `aspect-[${piece.aspect}]` : "aspect-[3/4]";
+  const aspect =
+    piece.aspect === "1/1"
+      ? "aspect-square"
+      : piece.aspect === "4/5"
+        ? "aspect-[4/5]"
+        : piece.aspect === "4/3"
+          ? "aspect-[4/3]"
+          : piece.aspect === "16/9"
+            ? "aspect-[16/9]"
+            : "aspect-[3/4]";
 
   return (
     <ScrollReveal delay={index * 0.08} distance={24}>

@@ -94,6 +94,36 @@ export const artImages: ImageAsset[] = [
     accent: "#f5ff6b",
     aspect: "4/5",
   },
+
+  // ── Cover Art (lives at the art-bucket root, named after the tracks) ──────
+  ...(
+    [
+      ["23respuestas", "23 Respuestas", "#ff2bd6"],
+      ["cairostilldancing", "Cairo Still Dancing", "#43f7ff"],
+      ["ceasefireinthestatic", "Ceasefire In The Static", "#8dff4a"],
+      ["cocktailsandcode", "Cocktails And Code", "#ff9b3d"],
+      ["differentthissummer", "Different This Summer", "#7c3cff"],
+      ["iwontbeyourfire-japanese", "I Won't Be Your Fire (Japanese)", "#f5ff6b"],
+      ["iwontbeyourfire", "I Won't Be Your Fire", "#00ffa8"],
+      ["levelready", "Level Ready", "#ff2bd6"],
+      ["migente", "Mi Gente", "#43f7ff"],
+      ["moveover", "Move Over", "#8dff4a"],
+      ["mysoullivesinseoul", "My Soul Lives In Seoul", "#ff9b3d"],
+      ["paperthatcutyou", "Paper That Cut You", "#7c3cff"],
+      ["stillmestillyou", "Still Me, Still You", "#f5ff6b"],
+      ["voidintogold-forgedabovegold", "Void Into Gold (Forged Above Gold)", "#00ffa8"],
+      ["voidintogold", "Void Into Gold", "#ff2bd6"],
+      ["whistleontheriver", "Whistle On The River", "#43f7ff"],
+    ] as const
+  ).map(([file, title, accent]): ImageAsset => ({
+    id: `cover-${file}`,
+    src: r2(`/${file}.png`),
+    title,
+    category: "Covers",
+    description: "AI cover art from the x1c7 transmissions.",
+    accent,
+    aspect: "1/1",
+  })),
 ];
 
 // ── Agent Portraits ──────────────────────────────────────────────────────
