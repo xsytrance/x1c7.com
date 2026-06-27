@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
   projects,
@@ -59,11 +60,8 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.a
+    <motion.div
       layout
-      href={project.repo}
-      target="_blank"
-      rel="noopener noreferrer"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       initial={reduceMotion ? false : { opacity: 0, y: 18 }}
@@ -71,9 +69,10 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       exit={reduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
       transition={{ delay: Math.min(index * 0.04, 0.4), duration: 0.4, ease: "easeOut" }}
       whileHover={reduceMotion ? undefined : { y: -6 }}
-      className="group relative block overflow-hidden rounded-[1.4rem] border border-white/10 bg-white/[0.04] p-5 backdrop-blur transition-colors"
+      className="group relative overflow-hidden rounded-[1.4rem] border border-white/10 bg-white/[0.04] backdrop-blur transition-colors"
       style={{ borderColor: hovered ? `${accent}55` : undefined }}
     >
+      <Link href={`/projects/${project.id}`} className="block p-5">
       {/* accent glow */}
       <div
         className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full blur-3xl transition-opacity duration-300"
@@ -116,24 +115,25 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         <StatusPill status={project.status} color={accent} />
         <span className="flex-1" />
         {project.homepage && (
-          <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35 transition group-hover:text-white/70">
-            live ↗
+          <span className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35">
+            live
           </span>
         )}
         <span
           className="font-mono text-[9px] uppercase tracking-[0.2em] text-white/35 transition group-hover:text-white/70"
         >
-          repo →
+          inspect →
         </span>
       </div>
+      </Link>
 
       {/* bottom accent line */}
       <span
-        className="absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-[2px] origin-left scale-x-0 transition-transform duration-300 group-hover:scale-x-100"
         style={{ background: `linear-gradient(90deg, transparent, ${accent}, transparent)` }}
         aria-hidden
       />
-    </motion.a>
+    </motion.div>
   );
 }
 

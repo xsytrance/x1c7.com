@@ -489,3 +489,13 @@ export function projectsByCategory(category: ProjectCategory): Project[] {
 export function categoryColor(category: ProjectCategory): string {
   return categoryMeta[category].color;
 }
+
+export function getProject(id: string): Project | undefined {
+  return projects.find((p) => p.id === id);
+}
+
+export function relatedProjects(project: Project, limit = 3): Project[] {
+  return projects
+    .filter((p) => p.category === project.category && p.id !== project.id)
+    .slice(0, limit);
+}
