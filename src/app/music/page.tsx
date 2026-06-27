@@ -8,7 +8,6 @@ import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { SignalEngine } from "@/audio/SignalEngine";
-import { useAudioAnalyzer } from "@/hooks/useAudioAnalyzer";
 import { MagneticCard } from "@/components/MagneticCard";
 import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
 import { tracks, featuredTracks, musicSources } from "@/data/tracks";
@@ -209,14 +208,14 @@ export default function Page() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const rafRef = useRef<number>(0);
 
-  const { analyser, initAudio } = useAudioAnalyzer();
-
-  // Create audio element
+  // Create audio element. We intentionally do NOT route playback through the
+  // Web Audio API: the tracks are cross-origin (R2) and createMediaElementSource
+  // would output silence without CORS. Direct playback always has sound; the
+  // visualizer runs on a synthetic feed instead.
   useEffect(() => {
     const audio = new Audio();
     audio.preload = "metadata";
     audioRef.current = audio;
-    initAudio(audio);
 
     const onTime = () => { if (audioRef.current) setProgress(audioRef.current.currentTime); };
     const onLoaded = () => { if (audioRef.current) setDuration(audioRef.current.duration || 0); };
@@ -233,7 +232,8 @@ export default function Page() {
       audio.removeEventListener("ended", onEnded);
       audio.pause();
     };
-  }, [initAudio]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const playTrack = useCallback((track: Track) => {
     const audio = audioRef.current;
@@ -292,9 +292,6 @@ export default function Page() {
       <div className="scanline" aria-hidden />
       <div className="starfield" aria-hidden />
 
-      {/* Hidden audio element */}
-      <audio ref={audioRef} className="hidden" />
-
       <div className="relative z-10 px-4 pb-6 pt-6 sm:px-6 lg:px-8">
         <BackToHub />
       </div>
@@ -314,9 +311,9 @@ export default function Page() {
       <section className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.04] backdrop-blur">
           {/* Visualizer area */}
-          {analyser && isPlaying && (
+          {isPlaying && (
             <div className="relative h-48 sm:h-64">
-              <AudioVisualizer analyser={analyser} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
+              <AudioVisualizer analyser={null} active={isPlaying} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
               {/* Mode switcher */}
               <div className="absolute bottom-3 left-3 flex gap-1">
                 {(["bars", "wave", "radial"] as VizMode[]).map(m => (
