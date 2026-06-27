@@ -6,6 +6,7 @@ import { PortalMap } from "@/components/PortalMap";
 import { MobileNav } from "@/components/MobileNav";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { HomeShowcase } from "@/components/HomeShowcase";
 
 export default function Home() {
   const reduceMotion = useReducedMotion();
@@ -76,6 +77,9 @@ export default function Home() {
         <PortalMap />
       </motion.div>
 
+      {/* Showcase: stats, featured builds, latest track */}
+      <HomeShowcase />
+
       {/* Signal Section */}
       <section id="signal" className="relative mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <ScrollReveal>
@@ -83,7 +87,7 @@ export default function Home() {
             <p className="font-mono text-xs uppercase tracking-[0.45em] text-signal/80">x1c7 signal</p>
             <h2 className="mt-4 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">Scan signal</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/65">
-              The hub is forming. New portals activate as experiments reach critical mass. Check back or tune into the frequency.
+              The signal is live. Portals keep activating as new experiments reach critical mass — fresh builds, tracks, and protocols drop here first.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">

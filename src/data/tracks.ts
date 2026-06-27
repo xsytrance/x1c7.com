@@ -33,6 +33,26 @@ function parseTitleFromUrl(url: string): string {
   return filename.replace(/\.mp3$/i, "").replace(/^xsytrance\s*-\s*/i, "").trim();
 }
 
+// Self-contained SVG gradient cover (no external asset, no 404s).
+// Swap a track's `art` for a real R2 image URL when album art is ready.
+function gradientArt(color: string): string {
+  const svg =
+    `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'>` +
+    `<defs>` +
+    `<linearGradient id='l' x1='0' y1='0' x2='1' y2='1'>` +
+    `<stop offset='0%' stop-color='${color}' stop-opacity='0.28'/>` +
+    `<stop offset='100%' stop-color='#05030b'/></linearGradient>` +
+    `<radialGradient id='g' cx='30%' cy='28%' r='75%'>` +
+    `<stop offset='0%' stop-color='${color}' stop-opacity='0.6'/>` +
+    `<stop offset='70%' stop-color='${color}' stop-opacity='0'/></radialGradient>` +
+    `</defs>` +
+    `<rect width='600' height='600' fill='#05030b'/>` +
+    `<rect width='600' height='600' fill='url(#l)'/>` +
+    `<rect width='600' height='600' fill='url(#g)'/>` +
+    `</svg>`;
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+}
+
 const rawUrls = [
   "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Different%20This%20Summer.mp3",
   "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Don't%20Quit%20Right%20Now.mp3",
@@ -48,16 +68,17 @@ const rawUrls = [
 export const tracks: Track[] = rawUrls.map((url, i) => {
   const title = parseTitleFromUrl(url);
   const id = slugify(title);
+  const color = COLORS[i % COLORS.length];
   return {
     id,
     title,
     artist: "xsytrance",
     duration: "0:00",
     durationSeconds: 0,
-    art: `/album-art/${id}.jpg`,
+    art: gradientArt(color),
     genre: GENRES[i % GENRES.length],
     mood: MOODS[i % MOODS.length],
-    color: COLORS[i % COLORS.length],
+    color,
     audioUrl: url,
     featured: i === 0, // First track is featured
   };
