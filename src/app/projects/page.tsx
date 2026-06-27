@@ -608,6 +608,12 @@ export default function ProjectsPage() {
               Back to hub
             </Link>
             <Link
+              href="/guides"
+              className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition hover:border-[#43f7ff] hover:text-white"
+            >
+              Field manual
+            </Link>
+            <Link
               href="/classified"
               className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition hover:border-[#ff2bd6] hover:text-white"
             >

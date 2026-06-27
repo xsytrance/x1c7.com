@@ -29,8 +29,10 @@ export default function Home() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-5 font-mono text-xs uppercase tracking-[0.25em] text-white/55 sm:flex">
           <a className="transition hover:text-signal" href="#map">Map</a>
+          <Link className="transition hover:text-signal" href="/projects">Projects</Link>
+          <Link className="transition hover:text-venom" href="/guides">Manual</Link>
           <a className="transition hover:text-plasma" href="#signal">Signal</a>
-          <Link className="transition hover:text-venom" href="/classified">Locked</Link>
+          <Link className="transition hover:text-ember" href="/classified">Locked</Link>
         </nav>
 
         {/* Mobile nav */}
