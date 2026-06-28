@@ -219,32 +219,90 @@ export default function Page() {
   const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [vizMode, setVizMode] = useState<VizMode>("bars");
+  const [analyser, setAnalyser] = useState<AnalyserNode | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const ctxRef = useRef<AudioContext | null>(null);
+  const fellBackRef = useRef(false);
+  const handleNextRef = useRef<() => void>(() => {});
   const rafRef = useRef<number>(0);
 
-  // Create audio element. We intentionally do NOT route playback through the
-  // Web Audio API: the tracks are cross-origin (R2) and createMediaElementSource
-  // would output silence without CORS. Direct playback always has sound; the
-  // visualizer runs on a synthetic feed instead.
+  // Audio setup. We try the real Web Audio analyser (needs CORS on the R2
+  // bucket so the cross-origin media can be analysed). If the media fails to
+  // load under crossOrigin (CORS not enabled), we transparently fall back to a
+  // plain element with direct playback + the synthetic visualizer — so sound
+  // works either way.
   useEffect(() => {
+    const onTime = () => { const a = audioRef.current; if (a) setProgress(a.currentTime); };
+    const onLoaded = () => { const a = audioRef.current; if (a) setDuration(a.duration || 0); };
+    const onEnded = () => { setIsPlaying(false); handleNextRef.current(); };
+
+    const attach = (a: HTMLAudioElement) => {
+      a.addEventListener("timeupdate", onTime);
+      a.addEventListener("loadedmetadata", onLoaded);
+      a.addEventListener("durationchange", onLoaded);
+      a.addEventListener("ended", onEnded);
+    };
+    const detach = (a: HTMLAudioElement) => {
+      a.removeEventListener("timeupdate", onTime);
+      a.removeEventListener("loadedmetadata", onLoaded);
+      a.removeEventListener("durationchange", onLoaded);
+      a.removeEventListener("ended", onEnded);
+    };
+
+    // Primary element: CORS + real analyser.
     const audio = new Audio();
     audio.preload = "metadata";
+    audio.crossOrigin = "anonymous";
     audioRef.current = audio;
+    attach(audio);
 
-    const onTime = () => { if (audioRef.current) setProgress(audioRef.current.currentTime); };
-    const onLoaded = () => { if (audioRef.current) setDuration(audioRef.current.duration || 0); };
-    const onEnded = () => { setIsPlaying(false); handleNext(); };
-    audio.addEventListener("timeupdate", onTime);
-    audio.addEventListener("loadedmetadata", onLoaded);
-    audio.addEventListener("durationchange", onLoaded);
-    audio.addEventListener("ended", onEnded);
+    try {
+      const AC = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      if (AC) {
+        const ctx = new AC();
+        ctxRef.current = ctx;
+        const source = ctx.createMediaElementSource(audio);
+        const an = ctx.createAnalyser();
+        an.fftSize = 512;
+        an.smoothingTimeConstant = 0.85;
+        source.connect(an);
+        an.connect(ctx.destination);
+        setAnalyser(an);
+      }
+    } catch {
+      /* analyser unavailable — synthetic visualizer will be used */
+    }
+
+    // If the cross-origin media can't load (CORS not enabled), swap to a plain
+    // element and play directly (no analyser — synthetic visualizer).
+    const onError = () => {
+      if (fellBackRef.current) return;
+      fellBackRef.current = true;
+      const src = audio.src;
+      const wasPlaying = !audio.paused;
+      detach(audio);
+      audio.removeEventListener("error", onError);
+      try { audio.pause(); } catch { /* noop */ }
+      try { ctxRef.current?.close(); } catch { /* noop */ }
+      ctxRef.current = null;
+      setAnalyser(null);
+
+      const plain = new Audio();
+      plain.preload = "metadata";
+      audioRef.current = plain;
+      attach(plain);
+      if (src) {
+        plain.src = src;
+        if (wasPlaying) plain.play().catch(() => {});
+      }
+    };
+    audio.addEventListener("error", onError);
 
     return () => {
-      audio.removeEventListener("timeupdate", onTime);
-      audio.removeEventListener("loadedmetadata", onLoaded);
-      audio.removeEventListener("durationchange", onLoaded);
-      audio.removeEventListener("ended", onEnded);
-      audio.pause();
+      const a = audioRef.current;
+      if (a) { detach(a); try { a.pause(); } catch { /* noop */ } }
+      audio.removeEventListener("error", onError);
+      try { ctxRef.current?.close(); } catch { /* noop */ }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -269,6 +327,7 @@ export default function Page() {
       SignalEngine.tuneIn(track);
     }
 
+    ctxRef.current?.resume().catch(() => {});
     audio.play().catch(() => {});
     setIsPlaying(true);
   }, [currentTrack]);
@@ -277,7 +336,7 @@ export default function Page() {
     const audio = audioRef.current;
     if (!audio || !currentTrack?.audioUrl) return;
     if (isPlaying) { audio.pause(); setIsPlaying(false); SignalEngine.mute(); }
-    else { audio.play().catch(() => {}); setIsPlaying(true); SignalEngine.tuneIn(currentTrack); }
+    else { ctxRef.current?.resume().catch(() => {}); audio.play().catch(() => {}); setIsPlaying(true); SignalEngine.tuneIn(currentTrack); }
   }, [currentTrack, isPlaying]);
 
   const handleNext = useCallback(() => {
@@ -287,11 +346,15 @@ export default function Page() {
     if (next) playTrack(next);
   }, [currentTrack, playTrack]);
 
+  // Keep the "ended" handler pointing at the latest handleNext (the audio
+  // listeners are bound once on mount).
+  handleNextRef.current = handleNext;
+
   const handlePrev = useCallback(() => {
     if (!currentTrack) return;
     const idx = tracks.findIndex(t => t.id === currentTrack.id);
-    const prev = tracks[(idx - 1 + tracks.length) % tracks.length];
-    if (prev) playTrack(prev);
+    const prevTrack = tracks[(idx - 1 + tracks.length) % tracks.length];
+    if (prevTrack) playTrack(prevTrack);
   }, [currentTrack, playTrack]);
 
   const handleSeek = useCallback((time: number) => {
@@ -327,7 +390,7 @@ export default function Page() {
           {/* Visualizer area */}
           {isPlaying && (
             <div className="relative h-48 sm:h-64">
-              <AudioVisualizer analyser={null} active={isPlaying} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
+              <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
               {/* Mode switcher */}
               <div className="absolute bottom-3 left-3 flex gap-1">
                 {(["bars", "wave", "radial"] as VizMode[]).map(m => (
