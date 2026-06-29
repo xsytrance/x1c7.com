@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
-import { type Track } from "@/data/tracks";
+import { tracks, type Track } from "@/data/tracks";
 
 interface TrackCardProps {
   track: Track;
@@ -11,7 +11,7 @@ interface TrackCardProps {
 }
 
 export function TrackCard({ track, index, size = "medium" }: TrackCardProps) {
-  const { currentTrack, isPlaying, playTrack, tracks } = useMusicPlayer();
+  const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
   const isCurrent = currentTrack?.id === track.id;
   const hasAudio = !!track.audioUrl;
 
@@ -29,7 +29,7 @@ export function TrackCard({ track, index, size = "medium" }: TrackCardProps) {
       className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.04] backdrop-blur transition-all duration-300 hover:border-white/25 ${
         isLarge ? "col-span-full sm:col-span-2" : ""
       } ${isCurrent ? "ring-1" : ""}`}
-      style={isCurrent ? { ringColor: `${track.color}44` } : {}}
+      style={isCurrent ? { boxShadow: `0 0 0 1px ${track.color}44` } : {}}
     >
       {/* Album art area */}
       <div className={`relative overflow-hidden ${isLarge ? "aspect-[2/1]" : "aspect-square"}`}>

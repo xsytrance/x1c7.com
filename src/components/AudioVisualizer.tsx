@@ -4,6 +4,8 @@ import { useEffect, useRef, useCallback } from "react";
 
 interface VisualizerProps {
   analyser: AnalyserNode | null;
+  /** When true (and no real analyser), draw a synthetic animated spectrum. */
+  active?: boolean;
   color?: string;
   className?: string;
   mode?: "bars" | "wave" | "radial";
@@ -25,12 +27,12 @@ function ampColor(val: number, color: string): [number, number, number] {
   ];
 }
 
-export function AudioVisualizer({ analyser, color = "#ff2bd6", className = "", mode = "bars" }: VisualizerProps) {
+export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", className = "", mode = "bars" }: VisualizerProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
 
   const draw = useCallback(() => {
-    if (!analyser || !canvasRef.current) return;
+    if (!canvasRef.current) return;
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -43,11 +45,37 @@ export function AudioVisualizer({ analyser, color = "#ff2bd6", className = "", m
     canvas.height = h * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    analyser.fftSize = 512;
-    const freqData = new Uint8Array(analyser.frequencyBinCount);
-    const timeData = new Uint8Array(analyser.fftSize);
-    analyser.getByteFrequencyData(freqData);
-    analyser.getByteTimeDomainData(timeData);
+    let freqData: Uint8Array<ArrayBuffer>;
+    let timeData: Uint8Array<ArrayBuffer>;
+
+    if (analyser) {
+      // Real frequency data (requires a same-origin / CORS-cleared source).
+      analyser.fftSize = 512;
+      freqData = new Uint8Array(analyser.frequencyBinCount);
+      timeData = new Uint8Array(analyser.fftSize);
+      analyser.getByteFrequencyData(freqData);
+      analyser.getByteTimeDomainData(timeData);
+    } else {
+      // Synthetic spectrum — keeps the visualizer alive when the audio source
+      // is cross-origin (can't be analysed) but still playing.
+      const binCount = 256;
+      const fftSize = 512;
+      freqData = new Uint8Array(binCount);
+      timeData = new Uint8Array(fftSize);
+      const t = performance.now() / 1000;
+      for (let i = 0; i < binCount; i++) {
+        const f = i / binCount;
+        const env = Math.pow(1 - f, 1.7); // bass-heavy falloff
+        const pulse = 0.5 + 0.5 * Math.sin(t * 4 + f * 9);
+        const wob = 0.5 + 0.5 * Math.sin(t * 2.3 + i * 0.27);
+        const kick = 0.5 + 0.5 * Math.sin(t * 6.2);
+        freqData[i] = Math.min(255, env * 255 * (0.3 + 0.7 * pulse * wob) * (0.7 + 0.3 * kick));
+      }
+      for (let i = 0; i < fftSize; i++) {
+        const x = i / fftSize;
+        timeData[i] = 128 + Math.sin(x * Math.PI * 8 + t * 6) * 46 * (0.4 + 0.6 * Math.sin(t * 1.7));
+      }
+    }
 
     ctx.clearRect(0, 0, w, h);
 
@@ -132,10 +160,10 @@ export function AudioVisualizer({ analyser, color = "#ff2bd6", className = "", m
   }, [analyser, color, mode]);
 
   useEffect(() => {
-    if (!analyser) return;
+    if (!analyser && !active) return;
     animRef.current = requestAnimationFrame(draw);
     return () => cancelAnimationFrame(animRef.current);
-  }, [analyser, draw]);
+  }, [analyser, active, draw]);
 
   return (
     <canvas

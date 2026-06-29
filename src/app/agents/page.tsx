@@ -337,4 +337,8 @@ function AgentCard({ agent }: { agent: Agent }) {
             }}
             aria-hidden
           />
-      
+        </div>
+      </MagneticCard>
+    </Link>
+  );
+}

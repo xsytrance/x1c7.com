@@ -6,6 +6,7 @@ import { PortalMap } from "@/components/PortalMap";
 import { MobileNav } from "@/components/MobileNav";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { HomeShowcase } from "@/components/HomeShowcase";
 
 export default function Home() {
   const reduceMotion = useReducedMotion();
@@ -29,8 +30,10 @@ export default function Home() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-5 font-mono text-xs uppercase tracking-[0.25em] text-white/55 sm:flex">
           <a className="transition hover:text-signal" href="#map">Map</a>
+          <Link className="transition hover:text-signal" href="/projects">Projects</Link>
+          <Link className="transition hover:text-venom" href="/guides">Manual</Link>
           <a className="transition hover:text-plasma" href="#signal">Signal</a>
-          <Link className="transition hover:text-venom" href="/classified">Locked</Link>
+          <Link className="transition hover:text-ember" href="/classified">Locked</Link>
         </nav>
 
         {/* Mobile nav */}
@@ -55,7 +58,7 @@ export default function Home() {
             />
           </div>
           <p className="mx-auto mt-7 max-w-2xl text-base font-semibold leading-7 text-white/70 sm:text-xl">
-            Music, machines, agents, experiments. A portal map by xsy for everything loud, strange, useful, and still forming.
+            AI art, AI music, code, agents, and ideas. A portal map by xsy for everything loud, strange, useful, and still forming.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="#map" className="rounded-full bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-void transition hover:scale-105 hover:bg-signal">Choose a portal</a>
@@ -74,6 +77,9 @@ export default function Home() {
         <PortalMap />
       </motion.div>
 
+      {/* Showcase: stats, featured builds, latest track */}
+      <HomeShowcase />
+
       {/* Signal Section */}
       <section id="signal" className="relative mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
         <ScrollReveal>
@@ -81,7 +87,7 @@ export default function Home() {
             <p className="font-mono text-xs uppercase tracking-[0.45em] text-signal/80">x1c7 signal</p>
             <h2 className="mt-4 font-display text-3xl font-black uppercase tracking-tight sm:text-5xl">Scan signal</h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-white/65">
-              The hub is forming. New portals activate as experiments reach critical mass. Check back or tune into the frequency.
+              The signal is live. Portals keep activating as new experiments reach critical mass — fresh builds, tracks, and protocols drop here first.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs font-mono uppercase tracking-wider text-white/50">

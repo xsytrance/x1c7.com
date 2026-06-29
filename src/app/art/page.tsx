@@ -15,7 +15,8 @@ import { artImages, type ImageAsset } from "@/data/images";
 // Swap R2_BASE in images.ts to switch from local placeholders to live R2 URLs.
 const ART_PIECES: ImageAsset[] = artImages;
 
-const CATEGORIES = ["All", "Characters", "Abstract", "Worlds"] as const;
+// Derive filter chips from the actual gallery data so they always stay in sync.
+const CATEGORIES = ["All", ...Array.from(new Set(ART_PIECES.map((p) => p.category)))];
 
 /* ──────────────────────────────────────────────
    Aspect ratios for masonry feel
@@ -34,7 +35,16 @@ function GalleryCard({
   index: number;
   onOpen: () => void;
 }) {
-  const aspect = piece.aspect ? `aspect-[${piece.aspect}]` : "aspect-[3/4]";
+  const aspect =
+    piece.aspect === "1/1"
+      ? "aspect-square"
+      : piece.aspect === "4/5"
+        ? "aspect-[4/5]"
+        : piece.aspect === "4/3"
+          ? "aspect-[4/3]"
+          : piece.aspect === "16/9"
+            ? "aspect-[16/9]"
+            : "aspect-[3/4]";
 
   return (
     <ScrollReveal delay={index * 0.08} distance={24}>

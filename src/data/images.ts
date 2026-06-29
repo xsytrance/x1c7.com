@@ -39,62 +39,58 @@ function r2(path: string): string {
 
 // ── Art Gallery ──────────────────────────────────────────────────────────
 
-export const artImages: ImageAsset[] = [
-  {
-    id: "art-01",
-    src: r2("/art/art-01.jpg"),
-    title: "Neon City",
-    category: "Worlds",
-    description: "A rain-soaked cyberpunk metropolis bathed in neon pink and cyan.",
-    accent: "#ff2bd6",
-    aspect: "3/4",
-  },
-  {
-    id: "art-02",
-    src: r2("/art/art-02.jpg"),
-    title: "Digital Portrait",
-    category: "Characters",
-    description: "An abstract digital portrait with glowing geometric patterns overlaying the face.",
-    accent: "#7c3cff",
-    aspect: "4/5",
-  },
-  {
-    id: "art-03",
-    src: r2("/art/art-03.jpg"),
-    title: "Star Island",
-    category: "Worlds",
-    description: "A surreal floating island drifting through a star-filled cosmos.",
-    accent: "#43f7ff",
-    aspect: "3/4",
-  },
-  {
-    id: "art-04",
-    src: r2("/art/art-04.jpg"),
-    title: "Glitch Eye",
-    category: "Abstract",
-    description: "A close-up of an otherworldly cybernetic eye with digital glitch artifacts.",
-    accent: "#ff2bd6",
-    aspect: "4/5",
-  },
-  {
-    id: "art-05",
-    src: r2("/art/art-05.jpg"),
-    title: "Energy Forms",
-    category: "Abstract",
-    description: "Abstract crystalline shapes trailing neon energy paths.",
-    accent: "#ff9b3d",
-    aspect: "3/4",
-  },
-  {
-    id: "art-06",
-    src: r2("/art/art-06.jpg"),
-    title: "Light Doorway",
-    category: "Characters",
-    description: "A mysterious hooded figure standing in a doorway of light.",
-    accent: "#f5ff6b",
-    aspect: "4/5",
-  },
+// Real AI cover art — lives in the art bucket under album-art/Art/ (verified).
+// [filename (exact key, no extension), display title]
+const COVER_ART: [string, string][] = [
+  ["Asia Got My Heart", "Asia Got My Heart"],
+  ["Between The Stations", "Between The Stations"],
+  ["Brooms In The Boiler Room", "Brooms In The Boiler Room"],
+  ["Cold Sugar", "Cold Sugar"],
+  ["Embers Between Wars", "Embers Between Wars"],
+  ["Even If You're Not My Fire", "Even If You're Not My Fire"],
+  ["FeverBreak", "Feverbreak"],
+  ["Going Crazy Hiligaynon", "Going Crazy (Hiligaynon)"],
+  ["Gold No Dey Rust", "Gold No Dey Rust"],
+  ["Grind It Slow", "Grind It Slow"],
+  ["Heaven and Hell", "Heaven & Hell"],
+  ["Honey and Venom", "Honey & Venom"],
+  ["I Dont Quit Now", "I Don't Quit Now"],
+  ["I Said No", "I Said No!"],
+  ["Im That Somebody", "I'm That Somebody"],
+  ["In Love With The Party", "In Love With The Party"],
+  ["Jayodeed Going Crazy Rooklyn Mix", "Going Crazy (Rooklyn Mix)"],
+  ["Kick Drum From New York", "Kick Drum From New York"],
+  ["Lagos Heard Me First", "Lagos Heard Me First"],
+  ["Light It Myself", "Light It Myself"],
+  ["Light The Fire Myself", "Light The Fire Myself"],
+  ["Low Lights Tokyo", "Low Lights Tokyo"],
+  ["Manila After Dark", "Manila After Dark"],
+  ["Music Is My Drug Original", "Music Is My Drug"],
+  ["Music Is My Drug Rooklyn Mix", "Music Is My Drug (Rooklyn Mix)"],
+  ["One Tap Away Original", "One Tap Away"],
+  ["One Tap Away Remix", "One Tap Away (Remix)"],
+  ["Saigon After Dark", "Saigon After Dark"],
+  ["Say It With Your Eyes", "Say It With Your Eyes"],
+  ["The Big Top Has WiFi Now", "The Big Top Has WiFi Now"],
+  ["Whistle On The River", "Whistle On The River"],
+  ["ai interlude", "AI Interlude"],
+  ["fast enough", "Fast Enough"],
+  ["first day whole month walk it out", "First Day, Whole Month"],
+  ["ora de la presion forged above gold", "Oro De La Presión (Forged Above Gold)"],
+  ["ora de la presion", "Oro De La Presión"],
 ];
+
+const ART_ACCENTS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
+
+export const artImages: ImageAsset[] = COVER_ART.map(([file, title], i) => ({
+  id: `cover-${i}`,
+  src: r2(`/album-art/Art/${encodeURIComponent(file)}.png`),
+  title,
+  category: "Covers",
+  description: "AI cover art from the x1c7 transmissions.",
+  accent: ART_ACCENTS[i % ART_ACCENTS.length],
+  aspect: "1/1",
+}));
 
 // ── Agent Portraits ──────────────────────────────────────────────────────
 

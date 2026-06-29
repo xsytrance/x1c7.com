@@ -8,7 +8,6 @@ import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { SignalEngine } from "@/audio/SignalEngine";
-import { useAudioAnalyzer } from "@/hooks/useAudioAnalyzer";
 import { MagneticCard } from "@/components/MagneticCard";
 import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
 import { tracks, featuredTracks, musicSources } from "@/data/tracks";
@@ -37,9 +36,19 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
       {/* Album art */}
       <div className="relative aspect-square overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+          className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${track.art})` }}
         />
+        {track.cover && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={track.cover}
+            alt={`${track.title} cover`}
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+          />
+        )}
         <div
           className="absolute inset-0"
           style={{ background: `radial-gradient(circle at 50% 50%, ${track.color}33, transparent 70%), linear-gradient(to bottom, transparent 50%, rgba(5,3,11,0.8) 100%)` }}
@@ -72,7 +81,9 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
           <span className="rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider" style={{ background: `${track.color}22`, color: track.color, border: `1px solid ${track.color}33` }}>
             {track.genre}
           </span>
-          <span className="font-mono text-[10px] uppercase tracking-wider text-white/50">{track.duration}</span>
+          {track.duration && track.duration !== "0:00" && (
+            <span className="font-mono text-[10px] uppercase tracking-wider text-white/50">{track.duration}</span>
+          )}
         </div>
       </div>
 
@@ -168,7 +179,11 @@ function PlayerBar({ track, isPlaying, progress, duration, onToggle, onSeek, onN
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
         {/* Art */}
         <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-white/10">
-          <div className="absolute inset-0 bg-cover" style={{ backgroundImage: `url(${track.art})` }} />
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${track.art})` }} />
+          {track.cover && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={track.cover} alt="" className="absolute inset-0 h-full w-full object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+          )}
           <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${track.color}44, ${track.color}11)` }} />
         </div>
         {/* Info */}
@@ -202,30 +217,95 @@ export default function Page() {
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [duration, setDuration] = useState(0);
   const [vizMode, setVizMode] = useState<VizMode>("bars");
+  const [analyser, setAnalyser] = useState<AnalyserNode | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const ctxRef = useRef<AudioContext | null>(null);
+  const fellBackRef = useRef(false);
+  const handleNextRef = useRef<() => void>(() => {});
   const rafRef = useRef<number>(0);
 
-  const { analyser, initAudio } = useAudioAnalyzer();
-
-  // Create audio element
+  // Audio setup. We try the real Web Audio analyser (needs CORS on the R2
+  // bucket so the cross-origin media can be analysed). If the media fails to
+  // load under crossOrigin (CORS not enabled), we transparently fall back to a
+  // plain element with direct playback + the synthetic visualizer — so sound
+  // works either way.
   useEffect(() => {
+    const onTime = () => { const a = audioRef.current; if (a) setProgress(a.currentTime); };
+    const onLoaded = () => { const a = audioRef.current; if (a) setDuration(a.duration || 0); };
+    const onEnded = () => { setIsPlaying(false); handleNextRef.current(); };
+
+    const attach = (a: HTMLAudioElement) => {
+      a.addEventListener("timeupdate", onTime);
+      a.addEventListener("loadedmetadata", onLoaded);
+      a.addEventListener("durationchange", onLoaded);
+      a.addEventListener("ended", onEnded);
+    };
+    const detach = (a: HTMLAudioElement) => {
+      a.removeEventListener("timeupdate", onTime);
+      a.removeEventListener("loadedmetadata", onLoaded);
+      a.removeEventListener("durationchange", onLoaded);
+      a.removeEventListener("ended", onEnded);
+    };
+
+    // Primary element: CORS + real analyser.
     const audio = new Audio();
     audio.preload = "metadata";
+    audio.crossOrigin = "anonymous";
     audioRef.current = audio;
-    initAudio(audio);
+    attach(audio);
 
-    const onTime = () => { if (audioRef.current) setProgress(audioRef.current.currentTime); };
-    const onEnded = () => { setIsPlaying(false); handleNext(); };
-    audio.addEventListener("timeupdate", onTime);
-    audio.addEventListener("ended", onEnded);
+    try {
+      const AC = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+      if (AC) {
+        const ctx = new AC();
+        ctxRef.current = ctx;
+        const source = ctx.createMediaElementSource(audio);
+        const an = ctx.createAnalyser();
+        an.fftSize = 512;
+        an.smoothingTimeConstant = 0.85;
+        source.connect(an);
+        an.connect(ctx.destination);
+        setAnalyser(an);
+      }
+    } catch {
+      /* analyser unavailable — synthetic visualizer will be used */
+    }
+
+    // If the cross-origin media can't load (CORS not enabled), swap to a plain
+    // element and play directly (no analyser — synthetic visualizer).
+    const onError = () => {
+      if (fellBackRef.current) return;
+      fellBackRef.current = true;
+      const src = audio.src;
+      const wasPlaying = !audio.paused;
+      detach(audio);
+      audio.removeEventListener("error", onError);
+      try { audio.pause(); } catch { /* noop */ }
+      try { ctxRef.current?.close(); } catch { /* noop */ }
+      ctxRef.current = null;
+      setAnalyser(null);
+
+      const plain = new Audio();
+      plain.preload = "metadata";
+      audioRef.current = plain;
+      attach(plain);
+      if (src) {
+        plain.src = src;
+        if (wasPlaying) plain.play().catch(() => {});
+      }
+    };
+    audio.addEventListener("error", onError);
 
     return () => {
-      audio.removeEventListener("timeupdate", onTime);
-      audio.removeEventListener("ended", onEnded);
-      audio.pause();
+      const a = audioRef.current;
+      if (a) { detach(a); try { a.pause(); } catch { /* noop */ } }
+      audio.removeEventListener("error", onError);
+      try { ctxRef.current?.close(); } catch { /* noop */ }
     };
-  }, [initAudio]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const playTrack = useCallback((track: Track) => {
     const audio = audioRef.current;
@@ -242,9 +322,12 @@ export default function Page() {
     if (!isSame) {
       audio.src = track.audioUrl;
       setCurrentTrack(track);
+      setProgress(0);
+      setDuration(0);
       SignalEngine.tuneIn(track);
     }
 
+    ctxRef.current?.resume().catch(() => {});
     audio.play().catch(() => {});
     setIsPlaying(true);
   }, [currentTrack]);
@@ -253,7 +336,7 @@ export default function Page() {
     const audio = audioRef.current;
     if (!audio || !currentTrack?.audioUrl) return;
     if (isPlaying) { audio.pause(); setIsPlaying(false); SignalEngine.mute(); }
-    else { audio.play().catch(() => {}); setIsPlaying(true); SignalEngine.tuneIn(currentTrack); }
+    else { ctxRef.current?.resume().catch(() => {}); audio.play().catch(() => {}); setIsPlaying(true); SignalEngine.tuneIn(currentTrack); }
   }, [currentTrack, isPlaying]);
 
   const handleNext = useCallback(() => {
@@ -263,11 +346,15 @@ export default function Page() {
     if (next) playTrack(next);
   }, [currentTrack, playTrack]);
 
+  // Keep the "ended" handler pointing at the latest handleNext (the audio
+  // listeners are bound once on mount).
+  handleNextRef.current = handleNext;
+
   const handlePrev = useCallback(() => {
     if (!currentTrack) return;
     const idx = tracks.findIndex(t => t.id === currentTrack.id);
-    const prev = tracks[(idx - 1 + tracks.length) % tracks.length];
-    if (prev) playTrack(prev);
+    const prevTrack = tracks[(idx - 1 + tracks.length) % tracks.length];
+    if (prevTrack) playTrack(prevTrack);
   }, [currentTrack, playTrack]);
 
   const handleSeek = useCallback((time: number) => {
@@ -281,9 +368,6 @@ export default function Page() {
     <main className="relative min-h-screen overflow-hidden pb-32">
       <div className="scanline" aria-hidden />
       <div className="starfield" aria-hidden />
-
-      {/* Hidden audio element */}
-      <audio ref={audioRef} className="hidden" />
 
       <div className="relative z-10 px-4 pb-6 pt-6 sm:px-6 lg:px-8">
         <BackToHub />
@@ -304,9 +388,9 @@ export default function Page() {
       <section className="relative z-10 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.04] backdrop-blur">
           {/* Visualizer area */}
-          {analyser && isPlaying && (
+          {isPlaying && (
             <div className="relative h-48 sm:h-64">
-              <AudioVisualizer analyser={analyser} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
+              <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2bd6"} mode={vizMode} className="absolute inset-0" />
               {/* Mode switcher */}
               <div className="absolute bottom-3 left-3 flex gap-1">
                 {(["bars", "wave", "radial"] as VizMode[]).map(m => (
@@ -322,12 +406,16 @@ export default function Page() {
           <div className="grid items-center lg:grid-cols-[1fr_1.5fr]">
             <div className="relative aspect-square overflow-hidden">
               <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroTrack.art})` }} />
+              {heroTrack.cover && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={heroTrack.cover} alt={`${heroTrack.title} cover`} className="absolute inset-0 h-full w-full object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
+              )}
               <div className="absolute inset-0" style={{ background: `radial-gradient(circle at 50% 50%, ${heroTrack.color}33, transparent 70%)` }} />
             </div>
             <div className="p-8 sm:p-12">
               <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/30">Featured Transmission</p>
               <h2 className="mt-4 font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl">{heroTrack.title}</h2>
-              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.duration} · {heroTrack.mood}</p>
+              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.genre} · {heroTrack.mood}</p>
               <p className="mt-6 max-w-md text-base leading-8 text-white/60">
                 The first signal from xsy. A transmission from the edge of the creative void,
                 where machines dream in sound and humans shape the noise into meaning.
@@ -421,8 +509,9 @@ export default function Page() {
       {/* ===== PLAYER BAR ===== */}
       <AnimatePresence>
         {currentTrack && currentTrack.audioUrl && (
-          <PlayerBar track={currentTrack} isPlaying={isPlaying} progress={progress} duration={currentTrack.durationSeconds} onToggle={togglePlay} onSeek={handleSeek} onNext={handleNext} onPrev={handlePrev} />
+          <PlayerBar track={currentTrack} isPlaying={isPlaying} progress={progress} duration={duration} onToggle={togglePlay} onSeek={handleSeek} onNext={handleNext} onPrev={handlePrev} />
         )}
       </AnimatePresence>
     </main>
-  )
+  );
+}

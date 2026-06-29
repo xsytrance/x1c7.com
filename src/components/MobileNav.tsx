@@ -42,7 +42,7 @@ export function MobileNav() {
           <motion.nav
             initial={reduceMotion ? false : { opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={reduceMotion ? false : { opacity: 0, y: -12 }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
             className="fixed inset-x-0 top-[72px] z-40 mx-4 overflow-hidden rounded-2xl border border-white/10 bg-void/95 shadow-2xl backdrop-blur-xl sm:hidden"
           >

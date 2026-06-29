@@ -10,6 +10,7 @@ import { KeyboardHelp } from "@/components/KeyboardHelp";
 import { PerformanceGate } from "@/components/PerformanceGate";
 import { EasterEggs } from "@/components/EasterEggs";
 import { KonamiCode } from "@/components/KonamiCode";
+import { UISoundLayer } from "@/components/UISoundLayer";
 import { Footer } from "@/components/Footer";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <KonamiCode />
         <NoiseOverlay />
         <CustomCursor />
+        <UISoundLayer />
       </body>
     </html>
   );
