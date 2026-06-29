@@ -15,7 +15,8 @@ import { artImages, type ImageAsset } from "@/data/images";
 // Swap R2_BASE in images.ts to switch from local placeholders to live R2 URLs.
 const ART_PIECES: ImageAsset[] = artImages;
 
-const CATEGORIES = ["All", "Characters", "Abstract", "Worlds"] as const;
+// Derive filter chips from the actual gallery data so they always stay in sync.
+const CATEGORIES = ["All", ...Array.from(new Set(ART_PIECES.map((p) => p.category)))];
 
 /* ──────────────────────────────────────────────
    Aspect ratios for masonry feel
