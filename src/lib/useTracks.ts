@@ -21,6 +21,7 @@ export function trackFromRow(r: TrackRow): Track {
     audioUrl: r.audio_url,
     featured: !!r.featured,
     theme: (r.theme as Track["theme"]) || undefined,
+    lyrics: r.lyrics || undefined,
   };
 }
 

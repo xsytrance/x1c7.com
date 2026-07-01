@@ -15,6 +15,7 @@ export type Track = {
   cover?: string; // real cover-art URL (R2); falls back to gradient `art`
   featured?: boolean;
   theme?: ThemeOverride; // manual per-song site-theme override (from tracks.theme)
+  lyrics?: string; // plain or LRC-timestamped lyrics
 };
 
 // ── Buckets ──────────────────────────────────────────────────────────────
