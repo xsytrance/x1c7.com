@@ -34,3 +34,16 @@ export function activeSection(sections: PlanetSection[], time: number): PlanetSe
   }
   return cur;
 }
+
+// ── The "director": emotion → visual motion treatment ──────────────────────
+export type SectionMotion = "still" | "drift" | "pulse" | "surge" | "shatter";
+
+/** Choose how words should move for a section, from its emotion + intensity. */
+export function sectionMotion(s: PlanetSection): SectionMotion {
+  const e = (s.emotion || "").toLowerCase();
+  if (/rage|anger|defian|desper|despair|explos|furious|intens|chaos/.test(e) || s.intensity >= 0.7) return "shatter";
+  if (s.intensity >= 0.55) return "surge";
+  if (s.intensity >= 0.38) return "pulse";
+  if (s.intensity >= 0.22) return "drift";
+  return "still";
+}

@@ -131,6 +131,13 @@ body.cinematic-on { overflow: hidden; }
 /* non-synced lyrics: readable static stanzas */
 .cine-line--plain { color: rgba(255, 255, 255, 0.82); font-size: clamp(1.5rem, 4vw, 2.75rem); }
 
+/* Charged word — the brain flagged it as emotionally loaded: bigger, accent-lit. */
+.kinetic-word--charged {
+  color: var(--theme-accent);
+  font-size: clamp(3.6rem, 19vw, 17rem);
+  filter: drop-shadow(0 0 calc(var(--beat) * 60px + var(--emo) * 55px + 14px) var(--theme-accent));
+}
+
 .scanline {
   position: fixed;
   inset: 0;
