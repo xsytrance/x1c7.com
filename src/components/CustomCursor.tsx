@@ -1,93 +1,78 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export function CustomCursor() {
-  const cursorRef = useRef<HTMLDivElement>(null);
-  const trailRef = useRef<HTMLDivElement>(null);
-  const [hovering, setHovering] = useState(false);
-  const pos = useRef({ x: 0, y: 0 });
-  const target = useRef({ x: 0, y: 0 });
-  const rafRef = useRef<number>(0);
+  const dotRef = useRef<HTMLDivElement>(null);
+  const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Hide on touch devices
     const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
     if (isTouch) return;
 
-    const handleMove = (e: MouseEvent) => {
-      target.current = { x: e.clientX, y: e.clientY };
-    };
+    // Positions kept in plain objects — no React state, so no re-renders.
+    const pointer = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const ring = { x: pointer.x, y: pointer.y };
+    let raf = 0;
 
-    const handleOver = (e: MouseEvent) => {
-      const el = e.target as HTMLElement;
-      if (
-        el.tagName === "A" ||
-        el.tagName === "BUTTON" ||
-        el.closest("a") ||
-        el.closest("button") ||
-        el.classList.contains("cursor-pointer")
-      ) {
-        setHovering(true);
+    const onMove = (e: PointerEvent) => {
+      pointer.x = e.clientX;
+      pointer.y = e.clientY;
+      // The dot tracks the pointer 1:1 — instant, no perceived lag.
+      if (dotRef.current) {
+        dotRef.current.style.transform = `translate(${pointer.x}px, ${pointer.y}px) translate(-50%, -50%)`;
       }
     };
 
-    const handleOut = () => setHovering(false);
+    const onOver = (e: PointerEvent) => {
+      const el = e.target as Element | null;
+      const interactive = !!el?.closest?.(
+        "a[href], button, [role='button'], input, textarea, select, .cursor-pointer, [data-sfx]"
+      );
+      ringRef.current?.classList.toggle("cursor-ring--hover", interactive);
+    };
 
+    // Only the ring is eased (a smooth trailing halo) — cheap, and the actual
+    // pointer indicator (the dot) is never delayed.
     const animate = () => {
-      pos.current.x += (target.current.x - pos.current.x) * 0.15;
-      pos.current.y += (target.current.y - pos.current.y) * 0.15;
-
-      if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate(${pos.current.x}px, ${pos.current.y}px) translate(-50%, -50%)`;
+      ring.x += (pointer.x - ring.x) * 0.22;
+      ring.y += (pointer.y - ring.y) * 0.22;
+      if (ringRef.current) {
+        ringRef.current.style.transform = `translate(${ring.x}px, ${ring.y}px) translate(-50%, -50%)`;
       }
-      if (trailRef.current) {
-        trailRef.current.style.transform = `translate(${target.current.x}px, ${target.current.y}px) translate(-50%, -50%)`;
-      }
-      rafRef.current = requestAnimationFrame(animate);
+      raf = requestAnimationFrame(animate);
     };
 
-    window.addEventListener("mousemove", handleMove, { passive: true });
-    document.addEventListener("mouseover", handleOver);
-    document.addEventListener("mouseout", handleOut);
-    rafRef.current = requestAnimationFrame(animate);
+    window.addEventListener("pointermove", onMove, { passive: true });
+    document.addEventListener("pointerover", onOver, { passive: true });
+    raf = requestAnimationFrame(animate);
 
     return () => {
-      window.removeEventListener("mousemove", handleMove);
-      document.removeEventListener("mouseover", handleOver);
-      document.removeEventListener("mouseout", handleOut);
-      cancelAnimationFrame(rafRef.current);
+      window.removeEventListener("pointermove", onMove);
+      document.removeEventListener("pointerover", onOver);
+      cancelAnimationFrame(raf);
     };
   }, []);
 
-  // Don't render on touch devices (detected via CSS + JS)
-  if (typeof window !== "undefined" && ("ontouchstart" in window || navigator.maxTouchPoints > 0)) {
-    return null;
-  }
-
   return (
     <>
-      {/* Trail */}
+      {/* Trailing ring */}
       <div
-        ref={trailRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9998] hidden h-8 w-8 rounded-full border border-signal/20 transition-transform duration-100 lg:block"
-        style={{ willChange: "transform" }}
+        ref={ringRef}
+        className="cursor-ring pointer-events-none fixed left-0 top-0 z-[9998] hidden h-8 w-8 rounded-full border border-signal/30 lg:block"
+        style={{ willChange: "transform", transition: "width .18s ease, height .18s ease, border-color .18s ease" }}
+        aria-hidden
       />
-      {/* Main cursor dot */}
+      {/* Pointer dot */}
       <div
-        ref={cursorRef}
-        className={`pointer-events-none fixed left-0 top-0 z-[9999] hidden rounded-full transition-[width,height,background-color,box-shadow] duration-200 lg:block ${
-          hovering
-            ? "h-10 w-10 bg-signal/20 shadow-[0_0_20px_rgba(67,247,255,0.3)]"
-            : "h-3 w-3 bg-signal shadow-[0_0_10px_rgba(67,247,255,0.6)]"
-        }`}
+        ref={dotRef}
+        className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-2.5 w-2.5 rounded-full bg-signal shadow-[0_0_10px_rgba(67,247,255,0.6)] lg:block"
         style={{ willChange: "transform" }}
+        aria-hidden
       />
-      {/* Hide default cursor on desktop */}
       <style>{`
-        @media (hover: hover) and (pointer: fine) {
-          * { cursor: none !important; }
-        }
+        @media (hover: hover) and (pointer: fine) { * { cursor: none !important; } }
+        .cursor-ring--hover { width: 2.75rem; height: 2.75rem; border-color: rgba(67,247,255,0.6); }
       `}</style>
     </>
   );

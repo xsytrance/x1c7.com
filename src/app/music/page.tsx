@@ -10,8 +10,9 @@ import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { SignalEngine } from "@/audio/SignalEngine";
 import { MagneticCard } from "@/components/MagneticCard";
 import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
-import { tracks, featuredTracks, musicSources } from "@/data/tracks";
+import { musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
+import { useTracks } from "@/lib/useTracks";
 
 type VizMode = "bars" | "wave" | "radial";
 
@@ -214,6 +215,7 @@ function PlayerBar({ track, isPlaying, progress, duration, onToggle, onSeek, onN
 
 /* ========== MAIN PAGE ========== */
 export default function Page() {
+  const { tracks } = useTracks();
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -344,7 +346,7 @@ export default function Page() {
     const idx = tracks.findIndex(t => t.id === currentTrack.id);
     const next = tracks[(idx + 1) % tracks.length];
     if (next) playTrack(next);
-  }, [currentTrack, playTrack]);
+  }, [currentTrack, playTrack, tracks]);
 
   // Keep the "ended" handler pointing at the latest handleNext (the audio
   // listeners are bound once on mount).
@@ -355,13 +357,13 @@ export default function Page() {
     const idx = tracks.findIndex(t => t.id === currentTrack.id);
     const prevTrack = tracks[(idx - 1 + tracks.length) % tracks.length];
     if (prevTrack) playTrack(prevTrack);
-  }, [currentTrack, playTrack]);
+  }, [currentTrack, playTrack, tracks]);
 
   const handleSeek = useCallback((time: number) => {
     if (audioRef.current) { audioRef.current.currentTime = time; setProgress(time); }
   }, []);
 
-  const heroTrack = featuredTracks[0] || tracks[0];
+  const heroTrack = tracks.find((t) => t.featured) || tracks[0];
   const gridTracks = tracks.filter(t => t.id !== heroTrack.id);
 
   return (
