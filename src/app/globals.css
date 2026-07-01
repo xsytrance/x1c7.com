@@ -155,6 +155,20 @@ body.cinematic-on { overflow: hidden; }
   }
 }
 
+/* ===== Mobile GPU relief =====
+   backdrop-filter (used on ~40 track cards + panels) and blend-mode/noise
+   overlays are the top cause of phone renderer OOM ("Aw, Snap"). Neutralize the
+   heaviest compositing on small screens — panels degrade to solid translucent
+   backgrounds, which read fine on the dark UI. */
+@media (max-width: 900px) {
+  /* Only the standard property — autoprefixer adds -webkit-; writing both by hand
+     let the minifier merge+drop the standard one (which is what Android uses). */
+  html [class*="backdrop-blur"] {
+    backdrop-filter: none !important;
+    background-color: rgba(12, 8, 22, 0.72) !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.001ms !important;
