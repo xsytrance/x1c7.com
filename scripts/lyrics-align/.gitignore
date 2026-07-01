@@ -1,0 +1,6 @@
+venv/
+*.mp3
+*.wav
+tracks.json
+results.json
+__pycache__/
