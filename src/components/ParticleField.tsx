@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { themeStore } from "@/lib/themeStore";
 
 interface Particle {
   x: number;
@@ -8,11 +9,9 @@ interface Particle {
   vx: number;
   vy: number;
   radius: number;
-  color: string;
+  tier: 0 | 1 | 2; // index into the live [primary, secondary, accent] palette
   alpha: number;
 }
-
-const COLORS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b"];
 
 export function ParticleField() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -49,7 +48,7 @@ export function ParticleField() {
       vx: (Math.random() - 0.5) * (prefersReducedMotion ? 0.1 : 0.4),
       vy: (Math.random() - 0.5) * (prefersReducedMotion ? 0.1 : 0.4),
       radius: Math.random() * 1.5 + 0.5,
-      color: COLORS[Math.floor(Math.random() * COLORS.length)],
+      tier: Math.floor(Math.random() * 3) as 0 | 1 | 2,
       alpha: Math.random() * 0.5 + 0.2,
     }));
 
@@ -66,9 +65,13 @@ export function ParticleField() {
       ctx.clearRect(0, 0, w, h);
       const particles = particlesRef.current;
       const mouse = mouseRef.current;
+      const { theme, beat } = themeStore.get();
+      const palette = [theme.primary, theme.secondary, theme.accent] as const;
+      const beatScale = 1 + beat * 0.9; // radius swells on the beat
 
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
+        const color = palette[p.tier];
 
         // Mouse interaction
         const dx = mouse.x - p.x;
@@ -96,9 +99,9 @@ export function ParticleField() {
 
         // Draw particle
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
-        ctx.fillStyle = p.color;
-        ctx.globalAlpha = p.alpha;
+        ctx.arc(p.x, p.y, p.radius * beatScale, 0, Math.PI * 2);
+        ctx.fillStyle = color;
+        ctx.globalAlpha = Math.min(1, p.alpha * (1 + beat * 0.5));
         ctx.fill();
 
         // Draw connections
@@ -111,7 +114,7 @@ export function ParticleField() {
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p2.x, p2.y);
-            ctx.strokeStyle = p.color;
+            ctx.strokeStyle = color;
             ctx.globalAlpha = (1 - cdist / connectDistance) * 0.15;
             ctx.lineWidth = 0.5;
             ctx.stroke();

@@ -12,6 +12,9 @@ import { EasterEggs } from "@/components/EasterEggs";
 import { KonamiCode } from "@/components/KonamiCode";
 import { UISoundLayer } from "@/components/UISoundLayer";
 import { Footer } from "@/components/Footer";
+import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
+import { MusicPlayerBar } from "@/components/MusicPlayerBar";
+import { ThemeEngine } from "@/components/NowPlayingTheme";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -38,20 +41,24 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
-        <BootSequenceWrapper>
-          {children}
-          <Footer />
-        </BootSequenceWrapper>
-        <KeyboardShortcuts />
-        <KeyboardHelp />
-        <PerformanceGate>
-          <ParticleField />
-        </PerformanceGate>
-        <EasterEggs />
-        <KonamiCode />
-        <NoiseOverlay />
-        <CustomCursor />
-        <UISoundLayer />
+        <MusicPlayerProvider>
+          <ThemeEngine />
+          <BootSequenceWrapper>
+            {children}
+            <Footer />
+          </BootSequenceWrapper>
+          <KeyboardShortcuts />
+          <KeyboardHelp />
+          <PerformanceGate>
+            <ParticleField />
+          </PerformanceGate>
+          <EasterEggs />
+          <KonamiCode />
+          <NoiseOverlay />
+          <CustomCursor />
+          <UISoundLayer />
+          <MusicPlayerBar />
+        </MusicPlayerProvider>
       </body>
     </html>
   );

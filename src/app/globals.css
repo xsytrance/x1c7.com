@@ -2,9 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Registered so the now-playing theme can *animate* between palettes — a plain
+   custom property can't be transitioned, a typed @property color can. */
+@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #ff2bd6; }
+@property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #43f7ff; }
+@property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #8dff4a; }
+@property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #05030b; }
+
 :root {
   color-scheme: dark;
   --bg: #05030b;
+  /* Now-playing theme (driven by ThemeEngine; defaults = house palette). */
+  --theme-primary: #ff2bd6;
+  --theme-secondary: #43f7ff;
+  --theme-accent: #8dff4a;
+  --theme-bg: #05030b;
+  --theme-intensity: 0.6;
+  --beat: 0;
+  transition: --theme-primary 700ms ease, --theme-secondary 700ms ease,
+    --theme-accent 700ms ease, --theme-bg 700ms ease;
 }
 
 * {
@@ -30,10 +46,10 @@ body::before {
   inset: 0;
   z-index: -3;
   background:
-    radial-gradient(circle at 12% 12%, rgba(255, 43, 214, 0.25), transparent 28%),
-    radial-gradient(circle at 88% 18%, rgba(67, 247, 255, 0.22), transparent 24%),
-    radial-gradient(circle at 50% 90%, rgba(141, 255, 74, 0.18), transparent 30%),
-    linear-gradient(135deg, #05030b 0%, #120824 50%, #02070b 100%);
+    radial-gradient(circle at 12% 12%, color-mix(in srgb, var(--theme-primary) 25%, transparent), transparent 28%),
+    radial-gradient(circle at 88% 18%, color-mix(in srgb, var(--theme-secondary) 22%, transparent), transparent 24%),
+    radial-gradient(circle at 50% 90%, color-mix(in srgb, var(--theme-accent) 18%, transparent), transparent 30%),
+    linear-gradient(135deg, var(--theme-bg) 0%, color-mix(in srgb, var(--theme-bg) 80%, var(--theme-primary)) 50%, var(--theme-bg) 100%);
 }
 
 body::after {
