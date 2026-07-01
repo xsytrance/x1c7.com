@@ -6,14 +6,13 @@ export function PerformanceGate({ children }: { children: React.ReactNode }) {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Check for low-end device indicators
+    // Particles run everywhere (ParticleField uses a lighter profile on phones).
+    // Only truly low-end devices or an explicit reduced-motion preference skip them.
     const isLowEnd =
-      navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency <= 4;
-    const isMobile = window.innerWidth < 768;
+      navigator.hardwareConcurrency !== undefined && navigator.hardwareConcurrency <= 2;
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // Skip particles on low-end mobile
-    if ((isLowEnd && isMobile) || prefersReduced) {
+    if (isLowEnd || prefersReduced) {
       setShow(false);
       return;
     }

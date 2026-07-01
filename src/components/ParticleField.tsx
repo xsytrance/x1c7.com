@@ -29,20 +29,27 @@ export function ParticleField() {
     // Check reduced motion
     const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+    // Lighter profile on phones (capped DPR + fewer particles) so they stay smooth
+    // and low-memory without the desktop density.
+    const isMobile = window.matchMedia("(max-width: 900px)").matches || navigator.maxTouchPoints > 0;
+    const dpr = isMobile ? 1 : Math.min(window.devicePixelRatio, 2);
+
     let w = window.innerWidth;
     let h = window.innerHeight;
 
     const resize = () => {
       w = window.innerWidth;
       h = window.innerHeight;
-      canvas.width = w * window.devicePixelRatio;
-      canvas.height = h * window.devicePixelRatio;
-      ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
     resize();
 
     // Initialize particles
-    const count = Math.min(80, Math.floor((w * h) / 15000));
+    const count = isMobile
+      ? Math.min(34, Math.floor((w * h) / 26000))
+      : Math.min(80, Math.floor((w * h) / 15000));
     particlesRef.current = Array.from({ length: count }, () => ({
       x: Math.random() * w,
       y: Math.random() * h,
