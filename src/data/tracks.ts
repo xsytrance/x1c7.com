@@ -1,3 +1,5 @@
+import type { ThemeOverride } from "@/lib/theme";
+
 export type Track = {
   id: string;
   title: string;
@@ -12,6 +14,7 @@ export type Track = {
   soundcloudUrl?: string;
   cover?: string; // real cover-art URL (R2); falls back to gradient `art`
   featured?: boolean;
+  theme?: ThemeOverride; // manual per-song site-theme override (from tracks.theme)
 };
 
 // ── Buckets ──────────────────────────────────────────────────────────────

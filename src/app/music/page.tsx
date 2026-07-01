@@ -1,18 +1,18 @@
 "use client";
 
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
-import { SignalEngine } from "@/audio/SignalEngine";
 import { MagneticCard } from "@/components/MagneticCard";
 import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
 import { musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
 import { useTracks } from "@/lib/useTracks";
+import { useMusicPlayer } from "@/components/MusicPlayerContext";
 
 type VizMode = "bars" | "wave" | "radial";
 
@@ -161,207 +161,15 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
   );
 }
 
-/* ========== PLAYER BAR ========== */
-function PlayerBar({ track, isPlaying, progress, duration, onToggle, onSeek, onNext, onPrev }: {
-  track: Track; isPlaying: boolean; progress: number; duration: number;
-  onToggle: () => void; onSeek: (t: number) => void; onNext: () => void; onPrev: () => void;
-}) {
-  const pct = duration > 0 ? (progress / duration) * 100 : 0;
-  const format = (s: number) => { const m = Math.floor(s / 60); const sec = Math.floor(s % 60); return `${m}:${sec.toString().padStart(2, "0")}`; };
-
-  return (
-    <motion.div initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }} transition={{ duration: 0.4 }} className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-void/95 backdrop-blur-xl">
-      {/* Progress */}
-      <div className="group relative h-1.5 cursor-pointer" onClick={(e) => { const r = e.currentTarget.getBoundingClientRect(); onSeek(((e.clientX - r.left) / r.width) * duration); }}>
-        <div className="absolute inset-0 bg-white/10" />
-        <div className="absolute inset-y-0 left-0 transition-all" style={{ width: `${pct}%`, background: `linear-gradient(to right, ${track.color}, ${track.color}88)` }} />
-        <div className="absolute top-1/2 h-3 w-3 -translate-y-1/2 rounded-full opacity-0 transition group-hover:opacity-100" style={{ left: `${pct}%`, marginLeft: -6, background: track.color }} />
-      </div>
-      <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-3">
-        {/* Art */}
-        <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-xl border border-white/10">
-          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${track.art})` }} />
-          {track.cover && (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={track.cover} alt="" className="absolute inset-0 h-full w-full object-cover" onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
-          )}
-          <div className="absolute inset-0" style={{ background: `linear-gradient(135deg, ${track.color}44, ${track.color}11)` }} />
-        </div>
-        {/* Info */}
-        <div className="min-w-0 flex-1">
-          <p className="truncate font-display text-sm font-bold text-white">{track.title}</p>
-          <p className="truncate font-mono text-[10px] uppercase tracking-wider text-white/40">{track.artist} · {format(progress)} / {format(duration)}</p>
-        </div>
-        {/* Controls */}
-        <div className="flex items-center gap-1">
-          <button onClick={onPrev} className="hidden rounded-full p-2 text-white/40 transition hover:text-white sm:block" aria-label="Previous">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z" /></svg>
-          </button>
-          <button onClick={onToggle} className="grid h-10 w-10 place-items-center rounded-full transition hover:scale-105" style={{ background: track.color }} aria-label={isPlaying ? "Pause" : "Play"}>
-            {isPlaying ? (
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
-            ) : (
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>
-            )}
-          </button>
-          <button onClick={onNext} className="hidden rounded-full p-2 text-white/40 transition hover:text-white sm:block" aria-label="Next">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z" /></svg>
-          </button>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 /* ========== MAIN PAGE ========== */
 export default function Page() {
   const { tracks } = useTracks();
-  const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const [duration, setDuration] = useState(0);
+  const { currentTrack, isPlaying, analyser, playTrack: playFromCtx } = useMusicPlayer();
   const [vizMode, setVizMode] = useState<VizMode>("bars");
-  const [analyser, setAnalyser] = useState<AnalyserNode | null>(null);
-  const audioRef = useRef<HTMLAudioElement | null>(null);
-  const ctxRef = useRef<AudioContext | null>(null);
-  const fellBackRef = useRef(false);
-  const handleNextRef = useRef<() => void>(() => {});
-  const rafRef = useRef<number>(0);
 
-  // Audio setup. We try the real Web Audio analyser (needs CORS on the R2
-  // bucket so the cross-origin media can be analysed). If the media fails to
-  // load under crossOrigin (CORS not enabled), we transparently fall back to a
-  // plain element with direct playback + the synthetic visualizer — so sound
-  // works either way.
-  useEffect(() => {
-    const onTime = () => { const a = audioRef.current; if (a) setProgress(a.currentTime); };
-    const onLoaded = () => { const a = audioRef.current; if (a) setDuration(a.duration || 0); };
-    const onEnded = () => { setIsPlaying(false); handleNextRef.current(); };
-
-    const attach = (a: HTMLAudioElement) => {
-      a.addEventListener("timeupdate", onTime);
-      a.addEventListener("loadedmetadata", onLoaded);
-      a.addEventListener("durationchange", onLoaded);
-      a.addEventListener("ended", onEnded);
-    };
-    const detach = (a: HTMLAudioElement) => {
-      a.removeEventListener("timeupdate", onTime);
-      a.removeEventListener("loadedmetadata", onLoaded);
-      a.removeEventListener("durationchange", onLoaded);
-      a.removeEventListener("ended", onEnded);
-    };
-
-    // Primary element: CORS + real analyser.
-    const audio = new Audio();
-    audio.preload = "metadata";
-    audio.crossOrigin = "anonymous";
-    audioRef.current = audio;
-    attach(audio);
-
-    try {
-      const AC = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-      if (AC) {
-        const ctx = new AC();
-        ctxRef.current = ctx;
-        const source = ctx.createMediaElementSource(audio);
-        const an = ctx.createAnalyser();
-        an.fftSize = 512;
-        an.smoothingTimeConstant = 0.85;
-        source.connect(an);
-        an.connect(ctx.destination);
-        setAnalyser(an);
-      }
-    } catch {
-      /* analyser unavailable — synthetic visualizer will be used */
-    }
-
-    // If the cross-origin media can't load (CORS not enabled), swap to a plain
-    // element and play directly (no analyser — synthetic visualizer).
-    const onError = () => {
-      if (fellBackRef.current) return;
-      fellBackRef.current = true;
-      const src = audio.src;
-      const wasPlaying = !audio.paused;
-      detach(audio);
-      audio.removeEventListener("error", onError);
-      try { audio.pause(); } catch { /* noop */ }
-      try { ctxRef.current?.close(); } catch { /* noop */ }
-      ctxRef.current = null;
-      setAnalyser(null);
-
-      const plain = new Audio();
-      plain.preload = "metadata";
-      audioRef.current = plain;
-      attach(plain);
-      if (src) {
-        plain.src = src;
-        if (wasPlaying) plain.play().catch(() => {});
-      }
-    };
-    audio.addEventListener("error", onError);
-
-    return () => {
-      const a = audioRef.current;
-      if (a) { detach(a); try { a.pause(); } catch { /* noop */ } }
-      audio.removeEventListener("error", onError);
-      try { ctxRef.current?.close(); } catch { /* noop */ }
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const playTrack = useCallback((track: Track) => {
-    const audio = audioRef.current;
-    if (!audio) return;
-
-    if (!track.audioUrl) {
-      setCurrentTrack(track);
-      setIsPlaying(false);
-      return;
-    }
-
-    const isSame = currentTrack?.id === track.id;
-
-    if (!isSame) {
-      audio.src = track.audioUrl;
-      setCurrentTrack(track);
-      setProgress(0);
-      setDuration(0);
-      SignalEngine.tuneIn(track);
-    }
-
-    ctxRef.current?.resume().catch(() => {});
-    audio.play().catch(() => {});
-    setIsPlaying(true);
-  }, [currentTrack]);
-
-  const togglePlay = useCallback(() => {
-    const audio = audioRef.current;
-    if (!audio || !currentTrack?.audioUrl) return;
-    if (isPlaying) { audio.pause(); setIsPlaying(false); SignalEngine.mute(); }
-    else { ctxRef.current?.resume().catch(() => {}); audio.play().catch(() => {}); setIsPlaying(true); SignalEngine.tuneIn(currentTrack); }
-  }, [currentTrack, isPlaying]);
-
-  const handleNext = useCallback(() => {
-    if (!currentTrack) return;
-    const idx = tracks.findIndex(t => t.id === currentTrack.id);
-    const next = tracks[(idx + 1) % tracks.length];
-    if (next) playTrack(next);
-  }, [currentTrack, playTrack, tracks]);
-
-  // Keep the "ended" handler pointing at the latest handleNext (the audio
-  // listeners are bound once on mount).
-  handleNextRef.current = handleNext;
-
-  const handlePrev = useCallback(() => {
-    if (!currentTrack) return;
-    const idx = tracks.findIndex(t => t.id === currentTrack.id);
-    const prevTrack = tracks[(idx - 1 + tracks.length) % tracks.length];
-    if (prevTrack) playTrack(prevTrack);
-  }, [currentTrack, playTrack, tracks]);
-
-  const handleSeek = useCallback((time: number) => {
-    if (audioRef.current) { audioRef.current.currentTime = time; setProgress(time); }
-  }, []);
+  // Play always seeds the global queue with the full library so the persistent
+  // player bar's next/prev traverse every transmission.
+  const playTrack = (track: Track) => playFromCtx(track, tracks);
 
   const heroTrack = tracks.find((t) => t.featured) || tracks[0];
   const gridTracks = tracks.filter(t => t.id !== heroTrack.id);
@@ -508,12 +316,7 @@ export default function Page() {
         </ScrollReveal>
       </section>
 
-      {/* ===== PLAYER BAR ===== */}
-      <AnimatePresence>
-        {currentTrack && currentTrack.audioUrl && (
-          <PlayerBar track={currentTrack} isPlaying={isPlaying} progress={progress} duration={duration} onToggle={togglePlay} onSeek={handleSeek} onNext={handleNext} onPrev={handlePrev} />
-        )}
-      </AnimatePresence>
+      {/* Persistent player bar is mounted globally in the root layout. */}
     </main>
   );
 }

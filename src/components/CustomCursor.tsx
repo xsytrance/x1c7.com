@@ -59,20 +59,20 @@ export function CustomCursor() {
       {/* Trailing ring */}
       <div
         ref={ringRef}
-        className="cursor-ring pointer-events-none fixed left-0 top-0 z-[9998] hidden h-8 w-8 rounded-full border border-signal/30 lg:block"
-        style={{ willChange: "transform", transition: "width .18s ease, height .18s ease, border-color .18s ease" }}
+        className="cursor-ring pointer-events-none fixed left-0 top-0 z-[9998] hidden h-8 w-8 rounded-full border lg:block"
+        style={{ willChange: "transform", borderColor: "color-mix(in srgb, var(--theme-accent) 40%, transparent)", transition: "width .18s ease, height .18s ease, border-color .18s ease" }}
         aria-hidden
       />
       {/* Pointer dot */}
       <div
         ref={dotRef}
-        className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-2.5 w-2.5 rounded-full bg-signal shadow-[0_0_10px_rgba(67,247,255,0.6)] lg:block"
-        style={{ willChange: "transform" }}
+        className="pointer-events-none fixed left-0 top-0 z-[9999] hidden h-2.5 w-2.5 rounded-full lg:block"
+        style={{ willChange: "transform", background: "var(--theme-primary)", boxShadow: "0 0 10px color-mix(in srgb, var(--theme-primary) 60%, transparent)" }}
         aria-hidden
       />
       <style>{`
         @media (hover: hover) and (pointer: fine) { * { cursor: none !important; } }
-        .cursor-ring--hover { width: 2.75rem; height: 2.75rem; border-color: rgba(67,247,255,0.6); }
+        .cursor-ring--hover { width: 2.75rem; height: 2.75rem; border-color: color-mix(in srgb, var(--theme-accent) 70%, transparent) !important; }
       `}</style>
     </>
   );

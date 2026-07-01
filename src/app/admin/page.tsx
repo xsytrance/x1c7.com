@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import type { Session } from "@supabase/supabase-js";
 import { supabase, type TrackRow } from "@/lib/supabase";
+import type { ThemeOverride } from "@/lib/theme";
 
 const GENRE_OPTIONS = ["Electronic", "Synthwave", "Ambient", "Techno", "Industrial", "Pop", "House", "Dance", "Trap", "Drum & Bass", "Reggaeton", "Afrobeat", "Latin", "Lo-Fi", "Cinematic", "Hip-Hop", "R&B", "Rock"];
 const MOOD_OPTIONS = ["Euphoric", "Defiant", "Dreamy", "Intense", "Confident", "Energetic", "Nostalgic", "Raw", "Intimate", "Dark", "Playful", "Triumphant", "Melancholic"];
@@ -68,6 +69,22 @@ export default function AdminPage() {
   // ---- editing ----
   function edit<K extends keyof TrackRow>(id: string, key: K, value: TrackRow[K]) {
     setRows((rs) => rs.map((r) => (r.id === id ? { ...r, [key]: value } : r)));
+    setDirty((d) => new Set(d).add(id));
+  }
+
+  // Patch a track's site-theme override (tracks.theme jsonb). Empty fields are
+  // removed; an empty object collapses to null so the song reverts to
+  // auto-extraction / its seed color.
+  function setTheme(id: string, patch: Partial<ThemeOverride>) {
+    setRows((rs) => rs.map((r) => {
+      if (r.id !== id) return r;
+      const next: Record<string, unknown> = { ...(r.theme || {}) };
+      for (const [k, v] of Object.entries(patch)) {
+        if (v === "" || v === undefined || v === null) delete next[k];
+        else next[k] = v;
+      }
+      return { ...r, theme: Object.keys(next).length ? next : null };
+    }));
     setDirty((d) => new Set(d).add(id));
   }
 
@@ -192,6 +209,8 @@ export default function AdminPage() {
                 <button onClick={() => move(r.id, 1)} className="rounded border border-white/10 px-2 py-0.5 font-mono text-[10px] text-white/40 hover:text-white">↓</button>
               </div>
             </div>
+
+            <ThemeFields r={r} setTheme={setTheme} />
           </div>
         ))}
       </div>
@@ -200,6 +219,58 @@ export default function AdminPage() {
 }
 
 const inp = "w-full rounded border border-white/15 bg-black/40 px-2 py-1.5 font-mono text-xs text-white outline-none focus:border-signal";
+
+const THEME_SWATCHES: { key: keyof ThemeOverride; label: string }[] = [
+  { key: "primary", label: "Primary" },
+  { key: "secondary", label: "Secondary" },
+  { key: "accent", label: "Accent" },
+  { key: "bg", label: "Background" },
+];
+
+// Per-song site-theme override. Left blank, a song auto-extracts its palette
+// from the cover (needs CORS on the art bucket) or derives from its color.
+function ThemeFields({ r, setTheme }: { r: TrackRow; setTheme: (id: string, patch: Partial<ThemeOverride>) => void }) {
+  const theme = (r.theme || {}) as ThemeOverride;
+  const has = Object.keys(theme).length > 0;
+  const intensity = typeof theme.intensity === "number" ? theme.intensity : 0.6;
+
+  return (
+    <details className="mt-3 rounded-lg border border-white/10 bg-black/20">
+      <summary className="cursor-pointer select-none px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/45 hover:text-white/70">
+        Site theme (morph) {has && <span className="text-signal">· pinned</span>}
+      </summary>
+      <div className="flex flex-wrap items-end gap-4 border-t border-white/10 px-3 py-3">
+        {THEME_SWATCHES.map(({ key, label }) => {
+          const val = (theme[key] as string | undefined) || "";
+          return (
+            <label key={key} className="block">
+              <span className="mb-1 block font-mono text-[9px] uppercase tracking-wider text-white/35">{label}</span>
+              <div className="flex items-center gap-1.5">
+                <input type="color" value={val || (key === "bg" ? "#05030b" : "#43f7ff")}
+                  onChange={(e) => setTheme(r.id, { [key]: e.target.value })}
+                  className="h-7 w-8 rounded border border-white/15 bg-transparent" />
+                <input value={val} placeholder="auto" onChange={(e) => setTheme(r.id, { [key]: e.target.value })}
+                  className="w-20 rounded border border-white/15 bg-black/40 px-1.5 py-1 font-mono text-[10px] text-white outline-none focus:border-signal" />
+              </div>
+            </label>
+          );
+        })}
+        <label className="block">
+          <span className="mb-1 block font-mono text-[9px] uppercase tracking-wider text-white/35">Morph intensity · {intensity.toFixed(2)}</span>
+          <input type="range" min="0" max="1" step="0.05" value={intensity}
+            onChange={(e) => setTheme(r.id, { intensity: parseFloat(e.target.value) })}
+            className="w-32" style={{ accentColor: r.color || "#43f7ff" }} />
+        </label>
+        {has && (
+          <button onClick={() => setTheme(r.id, { primary: "", secondary: "", accent: "", bg: "", intensity: undefined })}
+            className="rounded border border-white/15 px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-white/50 hover:text-white">
+            Clear → auto
+          </button>
+        )}
+      </div>
+    </details>
+  );
+}
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
