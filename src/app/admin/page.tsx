@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { Session } from "@supabase/supabase-js";
 import { supabase, type TrackRow } from "@/lib/supabase";
 import type { ThemeOverride } from "@/lib/theme";
+import { LyricsSyncEditor } from "@/components/LyricsSyncEditor";
 
 const GENRE_OPTIONS = ["Electronic", "Synthwave", "Ambient", "Techno", "Industrial", "Pop", "House", "Dance", "Trap", "Drum & Bass", "Reggaeton", "Afrobeat", "Latin", "Lo-Fi", "Cinematic", "Hip-Hop", "R&B", "Rock"];
 const MOOD_OPTIONS = ["Euphoric", "Defiant", "Dreamy", "Intense", "Confident", "Energetic", "Nostalgic", "Raw", "Intimate", "Dark", "Playful", "Triumphant", "Melancholic"];
@@ -211,7 +212,7 @@ export default function AdminPage() {
             </div>
 
             <ThemeFields r={r} setTheme={setTheme} />
-            <LyricsFields value={r.lyrics || ""} onChange={(v) => edit(r.id, "lyrics", v || null)} />
+            <LyricsFields value={r.lyrics || ""} audioUrl={r.audio_url} title={r.title} onChange={(v) => edit(r.id, "lyrics", v || null)} />
           </div>
         ))}
       </div>
@@ -275,9 +276,11 @@ function ThemeFields({ r, setTheme }: { r: TrackRow; setTheme: (id: string, patc
 
 // Per-song lyrics. Plain text renders as static stanzas on /music; paste
 // LRC-style [mm:ss.xx] timestamps to unlock the time-synced cinematic view.
-function LyricsFields({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+function LyricsFields({ value, audioUrl, title, onChange }: { value: string; audioUrl: string; title: string; onChange: (v: string) => void }) {
+  const [syncing, setSyncing] = useState(false);
   const synced = /\[\d{1,2}:\d{2}(?:[.:]\d{1,3})?\]/.test(value);
   const lineCount = value.split("\n").filter((l) => l.trim()).length;
+  const canSync = lineCount > 0 && !!audioUrl;
   return (
     <details className="mt-3 rounded-lg border border-white/10 bg-black/20">
       <summary className="cursor-pointer select-none px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/45 hover:text-white/70">
@@ -291,10 +294,30 @@ function LyricsFields({ value, onChange }: { value: string; onChange: (v: string
           placeholder={"One line per row.\nOptional: prefix a line with [00:12.50] for time-synced cinematic lyrics."}
           className="w-full resize-y rounded border border-white/15 bg-black/40 px-2 py-1.5 font-mono text-xs leading-6 text-white outline-none focus:border-signal"
         />
-        <p className="mt-1.5 font-mono text-[9px] uppercase tracking-wider text-white/30">
-          Plain text = static lyrics · add <span className="text-white/50">[mm:ss.xx]</span> timestamps = cinematic karaoke sync
-        </p>
+        <div className="mt-1.5 flex flex-wrap items-center justify-between gap-2">
+          <p className="font-mono text-[9px] uppercase tracking-wider text-white/30">
+            Plain text = static lyrics · add <span className="text-white/50">[mm:ss.xx]</span> timestamps = cinematic karaoke sync
+          </p>
+          <button
+            type="button"
+            onClick={() => setSyncing(true)}
+            disabled={!canSync}
+            title={canSync ? "Time-stamp lines to the track" : "Needs lyrics + an audio URL"}
+            className="rounded border border-plasma/40 px-2.5 py-1 font-mono text-[10px] uppercase tracking-wider text-plasma transition enabled:hover:bg-plasma/10 disabled:opacity-30"
+          >
+            ⏱ Sync to track
+          </button>
+        </div>
       </div>
+      {syncing && (
+        <LyricsSyncEditor
+          title={title}
+          audioUrl={audioUrl}
+          value={value}
+          onSave={(lrc) => onChange(lrc)}
+          onClose={() => setSyncing(false)}
+        />
+      )}
     </details>
   );
 }

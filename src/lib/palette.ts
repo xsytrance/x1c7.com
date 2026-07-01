@@ -8,11 +8,6 @@ import type { ThemeOverride } from "./theme";
 const cache = new Map<string, ThemeOverride | null>();
 const inflight = new Map<string, Promise<ThemeOverride | null>>();
 
-function rgbToHex(r: number, g: number, b: number): string {
-  const c = (v: number) => v.toString(16).padStart(2, "0");
-  return `#${c(r)}${c(g)}${c(b)}`;
-}
-
 function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
   r /= 255; g /= 255; b /= 255;
   const max = Math.max(r, g, b), min = Math.min(r, g, b);
@@ -27,6 +22,35 @@ function rgbToHsl(r: number, g: number, b: number): [number, number, number] {
     h /= 6;
   }
   return [h * 360, s, l];
+}
+
+function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+  h = (((h % 360) + 360) % 360) / 360;
+  const hue2rgb = (p: number, q: number, t: number) => {
+    if (t < 0) t += 1; if (t > 1) t -= 1;
+    if (t < 1 / 6) return p + (q - p) * 6 * t;
+    if (t < 1 / 2) return q;
+    if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+    return p;
+  };
+  let r: number, g: number, b: number;
+  if (s === 0) { r = g = b = l; }
+  else {
+    const q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+    const p = 2 * l - q;
+    r = hue2rgb(p, q, h + 1 / 3); g = hue2rgb(p, q, h); b = hue2rgb(p, q, h - 1 / 3);
+  }
+  return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+}
+
+// Push a swatch toward neon: keep the hue, floor the saturation, and pull the
+// lightness into a punchy mid-range so muddy/dark covers still yield vivid
+// accents that read on the black UI. `min` lets accents sit slightly brighter.
+function vivid(r: number, g: number, b: number, minL = 0.5): string {
+  const [h, s, l] = rgbToHsl(r, g, b);
+  const [vr, vg, vb] = hslToRgb(h, Math.max(0.62, s), Math.max(minL, Math.min(0.66, l < 0.5 ? l + 0.22 : l)));
+  const c = (v: number) => v.toString(16).padStart(2, "0");
+  return `#${c(vr)}${c(vg)}${c(vb)}`;
 }
 
 interface Bucket { r: number; g: number; b: number; h: number; s: number; l: number; weight: number; }
@@ -67,9 +91,9 @@ function samplePalette(data: Uint8ClampedArray): ThemeOverride | null {
   while (picks.length < 3) picks.push(picks[picks.length - 1] || buckets[0]);
 
   return {
-    primary: rgbToHex(picks[0].r, picks[0].g, picks[0].b),
-    secondary: rgbToHex(picks[1].r, picks[1].g, picks[1].b),
-    accent: rgbToHex(picks[2].r, picks[2].g, picks[2].b),
+    primary: vivid(picks[0].r, picks[0].g, picks[0].b, 0.52),
+    secondary: vivid(picks[1].r, picks[1].g, picks[1].b, 0.5),
+    accent: vivid(picks[2].r, picks[2].g, picks[2].b, 0.58),
   };
 }
 
