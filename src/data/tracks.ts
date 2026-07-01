@@ -95,9 +95,21 @@ function commonPrefix(a: string, b: string): number {
   return i;
 }
 
-// Best-effort match a track title to a cover. Exact normalized match wins;
-// otherwise the longest common prefix (>= 6 chars), nearest length, is used.
+// Explicit cover pins for titles the fuzzy matcher gets wrong or misses
+// (e.g. "N" vs "and", accents, or ambiguous Original/Remix variants).
+const COVER_OVERRIDES: Record<string, { folder: string; name: string }> = {
+  "Honey N Venom (Rude Wine Riddim)": { folder: "album-art/Art", name: "Honey and Venom" },
+  "Oro De La Presión": { folder: "album-art/Art", name: "ora de la presion" },
+  "One Tap Away": { folder: "album-art/Art", name: "One Tap Away Original" },
+};
+
+// Best-effort match a track title to a cover. Explicit overrides win; then an
+// exact normalized match; then the longest common prefix (>= 6), nearest length.
 function coverFor(title: string): string | undefined {
+  const override = COVER_OVERRIDES[title];
+  if (override) {
+    return `${ART_BASE}/${encKey(override.folder)}/${encodeURIComponent(override.name)}.png`;
+  }
   const t = normalizeName(title);
   let best: { folder: string; name: string } | null = null;
   let bestScore = -1;
