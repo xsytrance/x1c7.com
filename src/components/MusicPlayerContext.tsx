@@ -24,6 +24,8 @@ interface PlayerContext extends PlayerState {
   prev: () => void;
   seek: (time: number) => void;
   setVolume: (v: number) => void;
+  /** Imperative playhead read — for rAF-driven UIs that must not re-render per frame. */
+  getCurrentTime: () => number;
 }
 
 const Context = createContext<PlayerContext | null>(null);
@@ -232,6 +234,8 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     if (audioRef.current) { audioRef.current.currentTime = time; setProgress(time); }
   }, []);
 
+  const getCurrentTime = useCallback(() => audioRef.current?.currentTime ?? 0, []);
+
   const setVolume = useCallback((v: number) => {
     setVolumeState(v);
     if (audioRef.current) audioRef.current.volume = v;
@@ -255,6 +259,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
         prev,
         seek,
         setVolume,
+        getCurrentTime,
       }}
     >
       {children}

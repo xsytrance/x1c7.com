@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { themeStore } from "@/lib/themeStore";
+import { uiStore } from "@/lib/uiStore";
 
 interface Particle {
   x: number;
@@ -62,6 +63,9 @@ export function ParticleField() {
     const mouseRadius = 150;
 
     const animate = () => {
+      // Idle while the cinematic lyrics view is taking over — frees the mobile
+      // renderer (the whole page is occluded anyway).
+      if (uiStore.isCinematic()) { rafRef.current = requestAnimationFrame(animate); return; }
       ctx.clearRect(0, 0, w, h);
       const particles = particlesRef.current;
       const mouse = mouseRef.current;
