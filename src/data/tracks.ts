@@ -38,7 +38,7 @@ function slugify(title: string): string {
 
 // Self-contained SVG gradient cover (no external asset, no 404s).
 // Used as a fallback layer under the real cover so any missing image self-heals.
-function gradientArt(color: string): string {
+export function gradientArt(color: string): string {
   const svg =
     `<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'>` +
     `<defs>` +
