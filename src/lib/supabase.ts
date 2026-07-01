@@ -21,4 +21,6 @@ export interface TrackRow {
   featured: boolean;
   hidden: boolean;
   theme: Record<string, unknown> | null;
+  lyrics: string | null;
+  lyrics_synced: unknown | null;
 }

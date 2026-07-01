@@ -211,6 +211,7 @@ export default function AdminPage() {
             </div>
 
             <ThemeFields r={r} setTheme={setTheme} />
+            <LyricsFields value={r.lyrics || ""} onChange={(v) => edit(r.id, "lyrics", v || null)} />
           </div>
         ))}
       </div>
@@ -267,6 +268,32 @@ function ThemeFields({ r, setTheme }: { r: TrackRow; setTheme: (id: string, patc
             Clear → auto
           </button>
         )}
+      </div>
+    </details>
+  );
+}
+
+// Per-song lyrics. Plain text renders as static stanzas on /music; paste
+// LRC-style [mm:ss.xx] timestamps to unlock the time-synced cinematic view.
+function LyricsFields({ value, onChange }: { value: string; onChange: (v: string) => void }) {
+  const synced = /\[\d{1,2}:\d{2}(?:[.:]\d{1,3})?\]/.test(value);
+  const lineCount = value.split("\n").filter((l) => l.trim()).length;
+  return (
+    <details className="mt-3 rounded-lg border border-white/10 bg-black/20">
+      <summary className="cursor-pointer select-none px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/45 hover:text-white/70">
+        Lyrics {lineCount > 0 && <span className="text-signal">· {lineCount} lines{synced ? " · synced" : ""}</span>}
+      </summary>
+      <div className="border-t border-white/10 px-3 py-3">
+        <textarea
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          rows={6}
+          placeholder={"One line per row.\nOptional: prefix a line with [00:12.50] for time-synced cinematic lyrics."}
+          className="w-full resize-y rounded border border-white/15 bg-black/40 px-2 py-1.5 font-mono text-xs leading-6 text-white outline-none focus:border-signal"
+        />
+        <p className="mt-1.5 font-mono text-[9px] uppercase tracking-wider text-white/30">
+          Plain text = static lyrics · add <span className="text-white/50">[mm:ss.xx]</span> timestamps = cinematic karaoke sync
+        </p>
       </div>
     </details>
   );

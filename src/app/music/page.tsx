@@ -13,6 +13,7 @@ import { musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
+import { CinematicLyrics } from "@/components/CinematicLyrics";
 
 type VizMode = "bars" | "wave" | "radial";
 
@@ -315,6 +316,9 @@ export default function Page() {
           <SoundCloudEmbed url="https://soundcloud.com/xsytrance" />
         </ScrollReveal>
       </section>
+
+      {/* ===== NOW-PLAYING LYRICS (inline + cinematic) ===== */}
+      <CinematicLyrics />
 
       {/* Persistent player bar is mounted globally in the root layout. */}
     </main>
