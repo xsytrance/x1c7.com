@@ -1,4 +1,5 @@
 import type { ThemeOverride } from "@/lib/theme";
+import type { LyricsSynced } from "@/lib/lyrics";
 
 export type Track = {
   id: string;
@@ -16,6 +17,7 @@ export type Track = {
   featured?: boolean;
   theme?: ThemeOverride; // manual per-song site-theme override (from tracks.theme)
   lyrics?: string; // plain or LRC-timestamped lyrics
+  lyricsSynced?: LyricsSynced; // per-word timings (lyric engine core)
 };
 
 // ── Buckets ──────────────────────────────────────────────────────────────

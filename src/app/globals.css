@@ -81,6 +81,31 @@ body::after {
   animation: drift 28s linear infinite;
 }
 
+/* Lyric engine — Kinetic template */
+.kinetic-stage {
+  transform: scale(calc(1 + var(--beat) * 0.09));
+  transition: transform 0.06s linear;
+}
+.kinetic-word {
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 0.95;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 16vw, 14rem);
+  color: var(--theme-primary);
+  filter: drop-shadow(0 0 calc(var(--beat) * 55px + 10px) var(--theme-primary));
+  will-change: transform, opacity;
+}
+.kinetic-hint {
+  font-family: var(--font-mono), monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: clamp(0.7rem, 1.6vw, 1rem);
+  color: color-mix(in srgb, var(--theme-secondary) 55%, white 10%);
+  opacity: 0.5;
+}
+
 /* Cinematic lyrics takeover */
 body.cinematic-on { overflow: hidden; }
 .cine-line {

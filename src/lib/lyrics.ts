@@ -50,3 +50,18 @@ export function activeIndex(lines: ParsedLine[], time: number): number {
 export function headerLabel(text: string): string {
   return text.trim().replace(/^\[|\]$/g, "");
 }
+
+// ── Word-level timing (the lyric engine's core data) ───────────────────────
+export interface SyncedWord { t: number; w: string }
+export interface LyricsSynced { words?: SyncedWord[] }
+
+/** Index of the currently-sung word for a given playback time; -1 before the first. */
+export function activeWordIndex(words: SyncedWord[], time: number): number {
+  let lo = 0, hi = words.length - 1, idx = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (words[mid].t <= time) { idx = mid; lo = mid + 1; }
+    else hi = mid - 1;
+  }
+  return idx;
+}
