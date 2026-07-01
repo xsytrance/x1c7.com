@@ -83,7 +83,8 @@ body::after {
 
 /* Lyric engine — Kinetic template */
 .kinetic-stage {
-  transform: scale(calc(1 + var(--beat) * 0.09));
+  --emo: 0; /* current section emotional intensity (0..1), set by the engine */
+  transform: scale(calc(1 + var(--beat) * 0.08 + var(--emo) * 0.04));
   transition: transform 0.06s linear;
 }
 .kinetic-word {
@@ -94,7 +95,8 @@ body::after {
   text-transform: uppercase;
   font-size: clamp(3rem, 16vw, 14rem);
   color: var(--theme-primary);
-  filter: drop-shadow(0 0 calc(var(--beat) * 55px + 10px) var(--theme-primary));
+  /* glow rides both the beat and the song's emotional intensity at this moment */
+  filter: drop-shadow(0 0 calc(var(--beat) * 46px + var(--emo) * 40px + 8px) var(--theme-primary));
   will-change: transform, opacity;
 }
 .kinetic-hint {

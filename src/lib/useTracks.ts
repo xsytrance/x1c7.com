@@ -23,6 +23,7 @@ export function trackFromRow(r: TrackRow): Track {
     theme: (r.theme as Track["theme"]) || undefined,
     lyrics: r.lyrics || undefined,
     lyricsSynced: (r.lyrics_synced as Track["lyricsSynced"]) || undefined,
+    planet: (r.planet as Track["planet"]) || undefined,
   };
 }
 
