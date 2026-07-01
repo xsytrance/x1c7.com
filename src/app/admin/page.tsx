@@ -13,9 +13,8 @@ type Status = { kind: "idle" | "ok" | "err" | "busy"; msg?: string };
 export default function AdminPage() {
   const [session, setSession] = useState<Session | null>(null);
   const [isAdmin, setIsAdmin] = useState<boolean | null>(null);
-  const [step, setStep] = useState<"email" | "code">("email");
   const [email, setEmail] = useState("");
-  const [code, setCode] = useState("");
+  const [password, setPassword] = useState("");
   const [authMsg, setAuthMsg] = useState("");
   const [rows, setRows] = useState<TrackRow[]>([]);
   const [dirty, setDirty] = useState<Set<string>>(new Set());
@@ -48,23 +47,22 @@ export default function AdminPage() {
   }, [session, isAdmin, loadRows]);
 
   // ---- auth actions ----
-  async function sendCode(e: React.FormEvent) {
+  async function signIn(e: React.FormEvent) {
     e.preventDefault();
-    setAuthMsg("Sending code…");
-    const { error } = await supabase.auth.signInWithOtp({ email: email.trim(), options: { shouldCreateUser: true } });
-    if (error) setAuthMsg(error.message);
-    else { setStep("code"); setAuthMsg("Check your email for a 6-digit code."); }
-  }
-  async function verifyCode(e: React.FormEvent) {
-    e.preventDefault();
-    setAuthMsg("Verifying…");
-    const { error } = await supabase.auth.verifyOtp({ email: email.trim(), token: code.trim(), type: "email" });
+    setAuthMsg("Signing in…");
+    const { error } = await supabase.auth.signInWithPassword({ email: email.trim(), password });
     if (error) setAuthMsg(error.message);
     else setAuthMsg("");
   }
   async function signOut() {
     await supabase.auth.signOut();
-    setStep("email"); setCode(""); setRows([]);
+    setPassword(""); setRows([]);
+  }
+  async function changePassword() {
+    const next = window.prompt("New password (min 6 chars):");
+    if (!next) return;
+    const { error } = await supabase.auth.updateUser({ password: next });
+    setStatus(error ? { kind: "err", msg: error.message } : { kind: "ok", msg: "Password updated" });
   }
 
   // ---- editing ----
@@ -99,21 +97,14 @@ export default function AdminPage() {
       <Shell>
         <div className="mx-auto max-w-sm rounded-2xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur">
           <h1 className="font-display text-2xl font-black uppercase tracking-tight text-white">x1c7 · admin</h1>
-          <p className="mt-2 font-mono text-xs text-white/50">Sign in with your email to edit the hub.</p>
-          {step === "email" ? (
-            <form onSubmit={sendCode} className="mt-5 space-y-3">
-              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@email.com"
-                className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2.5 font-mono text-sm text-white outline-none focus:border-signal" />
-              <button className="w-full rounded-lg bg-signal py-2.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-void transition hover:brightness-110">Send code</button>
-            </form>
-          ) : (
-            <form onSubmit={verifyCode} className="mt-5 space-y-3">
-              <input inputMode="numeric" required value={code} onChange={(e) => setCode(e.target.value)} placeholder="6-digit code"
-                className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2.5 text-center font-mono text-lg tracking-[0.4em] text-white outline-none focus:border-signal" />
-              <button className="w-full rounded-lg bg-signal py-2.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-void transition hover:brightness-110">Verify</button>
-              <button type="button" onClick={() => setStep("email")} className="w-full font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white/70">← use a different email</button>
-            </form>
-          )}
+          <p className="mt-2 font-mono text-xs text-white/50">Sign in to edit the hub.</p>
+          <form onSubmit={signIn} className="mt-5 space-y-3">
+            <input type="email" required autoComplete="username" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@email.com"
+              className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2.5 font-mono text-sm text-white outline-none focus:border-signal" />
+            <input type="password" required autoComplete="current-password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="password"
+              className="w-full rounded-lg border border-white/15 bg-black/40 px-3 py-2.5 font-mono text-sm text-white outline-none focus:border-signal" />
+            <button className="w-full rounded-lg bg-signal py-2.5 font-mono text-xs font-bold uppercase tracking-[0.2em] text-void transition hover:brightness-110">Sign in</button>
+          </form>
           {authMsg && <p className="mt-4 font-mono text-[11px] text-signal/80">{authMsg}</p>}
         </div>
       </Shell>
@@ -153,6 +144,7 @@ export default function AdminPage() {
         <button onClick={saveAll} disabled={dirty.size === 0}
           className="rounded-lg bg-venom px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider text-void transition enabled:hover:brightness-110 disabled:opacity-40">Save all</button>
         <Link href="/music" className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 hover:text-white">View site</Link>
+        <button onClick={changePassword} className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white">Password</button>
         <button onClick={signOut} className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white">Sign out</button>
       </div>
 
