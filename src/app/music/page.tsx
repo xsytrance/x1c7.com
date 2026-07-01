@@ -249,6 +249,10 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ===== NOW-PLAYING LYRICS (inline + cinematic) — surfaces right under the
+             hero when the current track has lyrics, so it's not buried below the grid. */}
+      <CinematicLyrics />
+
       {/* ===== STATS ===== */}
       <section className="relative z-10 mx-auto mt-8 max-w-6xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal delay={0.1}>
@@ -316,9 +320,6 @@ export default function Page() {
           <SoundCloudEmbed url="https://soundcloud.com/xsytrance" />
         </ScrollReveal>
       </section>
-
-      {/* ===== NOW-PLAYING LYRICS (inline + cinematic) ===== */}
-      <CinematicLyrics />
 
       {/* Persistent player bar is mounted globally in the root layout. */}
     </main>
