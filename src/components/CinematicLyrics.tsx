@@ -5,6 +5,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeLineIndex } from "@/lib/lyrics";
 
+// A whole-line bracket marker like [Chorus - Female Lead] or [Male] — a section
+// or speaker label, not a sung line. Rendered small/dim, never karaoke-active.
+const isHeader = (line: string) => /^\[.*\]$/.test(line.trim());
+const headerLabel = (line: string) => line.trim().replace(/^\[|\]$/g, "");
+
 /**
  * Now-playing lyrics. Renders an inline panel plus a fullscreen "cinematic"
  * overlay that morphs to the track theme and pulses on the beat. When the
@@ -24,7 +29,7 @@ export function CinematicLyrics() {
     const times: (number | null)[] = [];
     let si = 0;
     for (const line of parsed.lines) {
-      if (line.trim() && si < parsed.synced.length) { times.push(parsed.synced[si].t); si++; }
+      if (line.trim() && !isHeader(line) && si < parsed.synced.length) { times.push(parsed.synced[si].t); si++; }
       else times.push(null);
     }
     return times;
@@ -63,8 +68,13 @@ export function CinematicLyrics() {
         </div>
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur sm:p-8">
           {parsed.lines.map((line, i) => {
-            const isActive = synced && lineTimes?.[i] != null && lineTimes[i] === activeT;
             if (!line.trim()) return <div key={i} className="h-4" />;
+            if (isHeader(line)) return (
+              <p key={i} className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 first:pt-0">
+                {headerLabel(line)}
+              </p>
+            );
+            const isActive = synced && lineTimes?.[i] != null && lineTimes[i] === activeT;
             return (
               <p
                 key={i}
@@ -144,6 +154,11 @@ function CinematicScroller({ lines, lineTimes, activeT, synced }: {
     <div className="h-full overflow-y-auto px-6 py-[40vh] text-center sm:px-10">
       {lines.map((line, i) => {
         if (!line.trim()) return <div key={i} className="h-8" />;
+        if (isHeader(line)) return (
+          <p key={i} className="mx-auto py-4 font-mono text-xs uppercase tracking-[0.4em] text-white/25">
+            {headerLabel(line)}
+          </p>
+        );
         const isActive = synced && lineTimes?.[i] != null && lineTimes[i] === activeT;
         return (
           <motion.p

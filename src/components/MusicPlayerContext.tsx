@@ -171,7 +171,9 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
       audio.src = track.audioUrl;
       setProgress(0);
       setDuration(0);
-      SignalEngine.tuneIn(track);
+      // Ambient bed is best-effort — a Web-Audio failure must never abort
+      // track selection (e.g. no audio device / headless).
+      try { SignalEngine.tuneIn(track); } catch { /* noop */ }
     }
     audio.volume = volumeRef.current;
     setCurrentTrack(track);
@@ -186,20 +188,20 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     if (isPlaying) {
       audio.pause();
       setIsPlaying(false);
-      SignalEngine.mute();
+      try { SignalEngine.mute(); } catch { /* noop */ }
     } else {
       if (!audio.src) { audio.src = currentTrack.audioUrl; audio.volume = volumeRef.current; }
       ctxRef.current?.resume().catch(() => {});
       audio.play().catch(() => {});
       setIsPlaying(true);
-      SignalEngine.tuneIn(currentTrack);
+      try { SignalEngine.tuneIn(currentTrack); } catch { /* noop */ }
     }
   }, [currentTrack, isPlaying]);
 
   const pause = useCallback(() => {
     audioRef.current?.pause();
     setIsPlaying(false);
-    SignalEngine.mute();
+    try { SignalEngine.mute(); } catch { /* noop */ }
   }, []);
 
   const next = useCallback(() => {
