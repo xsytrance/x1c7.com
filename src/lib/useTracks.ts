@@ -22,6 +22,7 @@ export function trackFromRow(r: TrackRow): Track {
     featured: !!r.featured,
     theme: (r.theme as Track["theme"]) || undefined,
     lyrics: r.lyrics || undefined,
+    lyricsSynced: (r.lyrics_synced as Track["lyricsSynced"]) || undefined,
   };
 }
 
