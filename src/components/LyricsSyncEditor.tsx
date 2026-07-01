@@ -91,12 +91,16 @@ export function LyricsSyncEditor({ title, audioUrl, value, onSave, onClose }: {
     <div className="fixed inset-0 z-[300] flex flex-col bg-void/95 backdrop-blur-xl">
       <div className="flex flex-wrap items-center gap-3 border-b border-white/10 px-4 py-3 sm:px-6">
         <h2 className="font-display text-sm font-black uppercase tracking-tight text-white">Sync · {title}</h2>
-        <span className="font-mono text-[10px] uppercase tracking-wider text-white/40">{doneCount}/{syncableIdx.length} lines</span>
+        <span className="font-mono text-[10px] uppercase tracking-wider text-white/40">
+          {doneCount}/{syncableIdx.length} lines{allSynced ? " ✓" : ""}
+        </span>
         <div className="ml-auto flex items-center gap-2">
           <button onClick={reset} className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/50 hover:text-white">Reset</button>
-          <button onClick={() => { onSave(buildLrc()); onClose(); }} disabled={!allSynced}
+          {/* Partial saves are safe — the player only karaoke-highlights timed lines. */}
+          <button onClick={() => { onSave(buildLrc()); onClose(); }} disabled={doneCount === 0}
+            title={allSynced ? "Apply timestamps to all lines" : "Save progress — you can resume later"}
             className="rounded-lg bg-signal px-4 py-1.5 font-mono text-[10px] font-bold uppercase tracking-wider text-void transition enabled:hover:brightness-110 disabled:opacity-40">
-            Apply LRC
+            {allSynced ? "Apply LRC" : "Save progress"}
           </button>
           <button onClick={onClose} className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/50 hover:text-white">Close · Esc</button>
         </div>

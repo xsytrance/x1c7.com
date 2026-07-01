@@ -3,39 +3,23 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
-import { parseLyrics, activeLineIndex } from "@/lib/lyrics";
-
-// A whole-line bracket marker like [Chorus - Female Lead] or [Male] — a section
-// or speaker label, not a sung line. Rendered small/dim, never karaoke-active.
-const isHeader = (line: string) => /^\[.*\]$/.test(line.trim());
-const headerLabel = (line: string) => line.trim().replace(/^\[|\]$/g, "");
+import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 
 /**
  * Now-playing lyrics. Renders an inline panel plus a fullscreen "cinematic"
- * overlay that morphs to the track theme and pulses on the beat. When the
- * lyrics carry LRC timestamps the active line auto-highlights + scrolls to
- * center (karaoke); otherwise the lines show as static stanzas.
+ * overlay that morphs to the track theme and pulses on the beat. Lines that
+ * carry LRC timestamps auto-highlight + scroll to center as they play (karaoke);
+ * untimed lines show as static stanzas. Partial timing is fine — only timed
+ * lines participate in the karaoke highlight.
  */
 export function CinematicLyrics() {
   const { currentTrack, progress } = useMusicPlayer();
   const [cinematic, setCinematic] = useState(false);
 
   const parsed = useMemo(() => parseLyrics(currentTrack?.lyrics), [currentTrack?.lyrics]);
-  const hasLyrics = parsed.lines.some((l) => l.trim().length > 0);
-
-  // Map each display line to its synced time (if any) so we can highlight it.
-  const lineTimes = useMemo(() => {
-    if (!parsed.synced) return null;
-    const times: (number | null)[] = [];
-    let si = 0;
-    for (const line of parsed.lines) {
-      if (line.trim() && !isHeader(line) && si < parsed.synced.length) { times.push(parsed.synced[si].t); si++; }
-      else times.push(null);
-    }
-    return times;
-  }, [parsed]);
-
-  const activeT = parsed.synced ? parsed.synced[activeLineIndex(parsed.synced, progress)]?.t : undefined;
+  const hasLyrics = parsed.lines.some((l) => l.text.trim().length > 0);
+  const synced = parsed.synced;
+  const activeIdx = synced ? activeIndex(parsed.lines, progress) : -1;
 
   // Close cinematic on Escape.
   useEffect(() => {
@@ -46,8 +30,6 @@ export function CinematicLyrics() {
   }, [cinematic]);
 
   if (!currentTrack || !hasLyrics) return null;
-
-  const synced = !!parsed.synced;
 
   return (
     <>
@@ -68,20 +50,20 @@ export function CinematicLyrics() {
         </div>
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur sm:p-8">
           {parsed.lines.map((line, i) => {
-            if (!line.trim()) return <div key={i} className="h-4" />;
-            if (isHeader(line)) return (
+            if (!line.text.trim()) return <div key={i} className="h-4" />;
+            if (line.header) return (
               <p key={i} className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 first:pt-0">
-                {headerLabel(line)}
+                {headerLabel(line.text)}
               </p>
             );
-            const isActive = synced && lineTimes?.[i] != null && lineTimes[i] === activeT;
+            const isActive = synced && i === activeIdx;
             return (
               <p
                 key={i}
                 className="py-1 text-lg leading-8 transition-colors duration-300 sm:text-xl"
                 style={{ color: isActive ? "var(--theme-primary)" : synced ? "rgba(255,255,255,0.35)" : "rgba(255,255,255,0.75)" }}
               >
-                {line}
+                {line.text}
               </p>
             );
           })}
@@ -120,12 +102,7 @@ export function CinematicLyrics() {
             </div>
 
             <div className="relative flex-1 overflow-hidden">
-              <CinematicScroller
-                lines={parsed.lines}
-                lineTimes={lineTimes}
-                activeT={activeT}
-                synced={synced}
-              />
+              <CinematicScroller lines={parsed.lines} activeIdx={activeIdx} synced={synced} />
               {/* top/bottom fades */}
               <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05030b] to-transparent" />
               <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#05030b] to-transparent" />
@@ -137,10 +114,9 @@ export function CinematicLyrics() {
   );
 }
 
-function CinematicScroller({ lines, lineTimes, activeT, synced }: {
-  lines: string[];
-  lineTimes: (number | null)[] | null;
-  activeT: number | undefined;
+function CinematicScroller({ lines, activeIdx, synced }: {
+  lines: ParsedLine[];
+  activeIdx: number;
   synced: boolean;
 }) {
   const activeRef = useRef<HTMLParagraphElement | null>(null);
@@ -148,18 +124,18 @@ function CinematicScroller({ lines, lineTimes, activeT, synced }: {
   // Karaoke auto-scroll: keep the active line centered.
   useEffect(() => {
     if (synced) activeRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
-  }, [activeT, synced]);
+  }, [activeIdx, synced]);
 
   return (
     <div className="h-full overflow-y-auto px-6 py-[40vh] text-center sm:px-10">
       {lines.map((line, i) => {
-        if (!line.trim()) return <div key={i} className="h-8" />;
-        if (isHeader(line)) return (
+        if (!line.text.trim()) return <div key={i} className="h-8" />;
+        if (line.header) return (
           <p key={i} className="mx-auto py-4 font-mono text-xs uppercase tracking-[0.4em] text-white/25">
-            {headerLabel(line)}
+            {headerLabel(line.text)}
           </p>
         );
-        const isActive = synced && lineTimes?.[i] != null && lineTimes[i] === activeT;
+        const isActive = synced && i === activeIdx;
         return (
           <motion.p
             key={i}
@@ -175,7 +151,7 @@ function CinematicScroller({ lines, lineTimes, activeT, synced }: {
               scale: isActive ? "calc(1 + var(--beat) * 0.06)" : "1",
             }}
           >
-            {line}
+            {line.text}
           </motion.p>
         );
       })}
