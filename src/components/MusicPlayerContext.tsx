@@ -1,13 +1,12 @@
 "use client";
 
-import { createContext, useContext, useState, useRef, useCallback, useEffect } from "react";
+import { createContext, useContext, useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { type Track } from "@/data/tracks";
 import { SignalEngine } from "@/audio/SignalEngine";
 
 interface PlayerState {
   currentTrack: Track | null;
   isPlaying: boolean;
-  progress: number;
   duration: number;
   volume: number;
   queue: Track[];
@@ -39,7 +38,6 @@ export function useMusicPlayer() {
 export function MusicPlayerProvider({ children }: { children: React.ReactNode }) {
   const [currentTrack, setCurrentTrack] = useState<Track | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
   const [duration, setDuration] = useState(0);
   const [volume, setVolumeState] = useState(0.8);
   const [queue, setQueue] = useState<Track[]>([]);
@@ -48,7 +46,6 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
-  const rafRef = useRef<number>(0);
   const fellBackRef = useRef(false);
   const volumeRef = useRef(volume);
   // Latest queue/index for the "ended" handler, which is bound once on mount.
@@ -62,18 +59,18 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
   // (CORS missing), we transparently fall back to a plain element with direct
   // playback (no analyser — the synthetic visualizer takes over).
   useEffect(() => {
-    const onTime = () => { const a = audioRef.current; if (a) setProgress(a.currentTime); };
+    // No per-frame progress state here — that would re-render every context
+    // consumer (incl. the whole /music page) 60fps. MusicPlayerBar reads the
+    // playhead itself via getCurrentTime().
     const onLoaded = () => { const a = audioRef.current; if (a) setDuration(a.duration || 0); };
     const onEnded = () => { setIsPlaying(false); advanceRef.current(); };
 
     const attach = (a: HTMLAudioElement) => {
-      a.addEventListener("timeupdate", onTime);
       a.addEventListener("loadedmetadata", onLoaded);
       a.addEventListener("durationchange", onLoaded);
       a.addEventListener("ended", onEnded);
     };
     const detach = (a: HTMLAudioElement) => {
-      a.removeEventListener("timeupdate", onTime);
       a.removeEventListener("loadedmetadata", onLoaded);
       a.removeEventListener("durationchange", onLoaded);
       a.removeEventListener("ended", onEnded);
@@ -135,18 +132,6 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     };
   }, []);
 
-  // Drive progress off rAF for a smoother playhead than timeupdate alone.
-  useEffect(() => {
-    if (!isPlaying) return;
-    const update = () => {
-      const a = audioRef.current;
-      if (a) setProgress(a.currentTime);
-      rafRef.current = requestAnimationFrame(update);
-    };
-    rafRef.current = requestAnimationFrame(update);
-    return () => cancelAnimationFrame(rafRef.current);
-  }, [isPlaying]);
-
   const playTrack = useCallback((track: Track, newQueue?: Track[]) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -171,7 +156,6 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     const isSame = audio.src === track.audioUrl;
     if (!isSame) {
       audio.src = track.audioUrl;
-      setProgress(0);
       setDuration(0);
       // Ambient bed is best-effort — a Web-Audio failure must never abort
       // track selection (e.g. no audio device / headless).
@@ -231,7 +215,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
   });
 
   const seek = useCallback((time: number) => {
-    if (audioRef.current) { audioRef.current.currentTime = time; setProgress(time); }
+    if (audioRef.current) audioRef.current.currentTime = time;
   }, []);
 
   const getCurrentTime = useCallback(() => audioRef.current?.currentTime ?? 0, []);
@@ -241,28 +225,17 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     if (audioRef.current) audioRef.current.volume = v;
   }, []);
 
-  return (
-    <Context.Provider
-      value={{
-        currentTrack,
-        isPlaying,
-        progress,
-        duration,
-        volume,
-        queue,
-        currentIndex,
-        analyser,
-        playTrack,
-        togglePlay,
-        pause,
-        next,
-        prev,
-        seek,
-        setVolume,
-        getCurrentTime,
-      }}
-    >
-      {children}
-    </Context.Provider>
+  // Memoized so the value identity only changes on real state changes — never
+  // per animation frame — which keeps every consumer (the whole /music page
+  // included) from re-rendering 60fps.
+  const value = useMemo(
+    () => ({
+      currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
+      playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime,
+    }),
+    [currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
+     playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime],
   );
+
+  return <Context.Provider value={value}>{children}</Context.Provider>;
 }

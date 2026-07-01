@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 
@@ -11,8 +12,20 @@ function formatTime(s: number) {
 }
 
 export function MusicPlayerBar() {
-  const { currentTrack, isPlaying, progress, duration, volume, togglePlay, next, prev, seek, setVolume } =
+  const { currentTrack, isPlaying, duration, volume, togglePlay, next, prev, seek, setVolume, getCurrentTime } =
     useMusicPlayer();
+
+  // Local playhead — the bar reads currentTime on its own rAF so the playhead
+  // stays smooth without re-rendering the rest of the app every frame.
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    setProgress(getCurrentTime());
+    if (!isPlaying) return;
+    let raf = 0;
+    const tick = () => { setProgress(getCurrentTime()); raf = requestAnimationFrame(tick); };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [isPlaying, getCurrentTime, currentTrack]);
 
   if (!currentTrack) return null;
 
