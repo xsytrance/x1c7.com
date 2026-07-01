@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useCallback } from "react";
+import { uiStore } from "@/lib/uiStore";
 
 interface VisualizerProps {
   analyser: AnalyserNode | null;
@@ -33,6 +34,9 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
 
   const draw = useCallback(() => {
     if (!canvasRef.current) return;
+
+    // Idle while the cinematic lyrics takeover is up (this canvas is occluded).
+    if (uiStore.isCinematic()) { animRef.current = requestAnimationFrame(draw); return; }
 
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");

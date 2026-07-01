@@ -81,6 +81,29 @@ body::after {
   animation: drift 28s linear infinite;
 }
 
+/* Cinematic lyrics takeover */
+body.cinematic-on { overflow: hidden; }
+.cine-line {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 0.6rem 0;
+  font-family: var(--font-display), system-ui, sans-serif;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  font-size: clamp(1.25rem, 3.2vw, 2.25rem);
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.3s ease, font-size 0.45s ease, transform 0.45s ease, filter 0.3s ease;
+  will-change: transform, font-size;
+}
+.cine-line.is-active {
+  color: var(--theme-primary);
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  filter: drop-shadow(0 0 calc(var(--beat) * 30px + 6px) var(--theme-primary));
+  transform: scale(calc(1 + var(--beat) * 0.05));
+}
+/* non-synced lyrics: readable static stanzas */
+.cine-line--plain { color: rgba(255, 255, 255, 0.82); font-size: clamp(1.5rem, 4vw, 2.75rem); }
+
 .scanline {
   position: fixed;
   inset: 0;

@@ -1,46 +1,49 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
+import { uiStore } from "@/lib/uiStore";
 
 /**
- * Now-playing lyrics. Renders an inline panel plus a fullscreen "cinematic"
- * overlay that morphs to the track theme and pulses on the beat. Lines that
- * carry LRC timestamps auto-highlight + scroll to center as they play (karaoke);
- * untimed lines show as static stanzas. Partial timing is fine — only timed
- * lines participate in the karaoke highlight.
+ * Now-playing lyrics. A static inline preview on the page, plus a fullscreen
+ * "cinematic" takeover that AUTO-OPENS when a track with lyrics starts playing —
+ * front and center. The takeover is opaque (so the heavy /music page behind it is
+ * occluded + culled) and pauses the particle field, which keeps mobile renderers
+ * alive. The karaoke highlight is driven by rAF + refs (no per-frame re-render).
  */
 export function CinematicLyrics() {
-  const { currentTrack, progress } = useMusicPlayer();
-  const [cinematic, setCinematic] = useState(false);
+  const { currentTrack, isPlaying } = useMusicPlayer();
+  const [open, setOpen] = useState(false);
+  const [dismissedId, setDismissedId] = useState<string | null>(null);
 
   const parsed = useMemo(() => parseLyrics(currentTrack?.lyrics), [currentTrack?.lyrics]);
   const hasLyrics = parsed.lines.some((l) => l.text.trim().length > 0);
-  const synced = parsed.synced;
-  const activeIdx = synced ? activeIndex(parsed.lines, progress) : -1;
 
-  // Close cinematic on Escape.
+  // New track → forget any prior dismissal so it can take over again.
+  useEffect(() => { setDismissedId(null); }, [currentTrack?.id]);
+
+  // Auto-take-over: when a lyrics track plays and the user hasn't closed it, open.
   useEffect(() => {
-    if (!cinematic) return;
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setCinematic(false); };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, [cinematic]);
+    if (isPlaying && hasLyrics && currentTrack && dismissedId !== currentTrack.id) setOpen(true);
+  }, [isPlaying, hasLyrics, currentTrack, dismissedId]);
 
   if (!currentTrack || !hasLyrics) return null;
 
+  const closeTakeover = () => { setOpen(false); setDismissedId(currentTrack.id); };
+
   return (
     <>
-      {/* Inline panel */}
+      {/* Static inline preview (cheap — renders once; live highlight lives in the takeover) */}
       <section className="relative z-10 mx-auto mt-16 max-w-3xl px-4 sm:px-6 lg:px-8">
         <div className="mb-4 flex items-center justify-between">
           <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/40">
-            Lyrics {synced && <span className="text-plasma/70">· synced</span>}
+            Lyrics {parsed.synced && <span className="text-plasma/70">· synced</span>}
           </p>
           <button
-            onClick={() => setCinematic(true)}
+            onClick={() => setOpen(true)}
             className="flex items-center gap-2 rounded-full border px-4 py-2 font-mono text-[10px] uppercase tracking-wider transition hover:scale-[1.03]"
             style={{ borderColor: "color-mix(in srgb, var(--theme-primary) 40%, transparent)", color: "var(--theme-primary)" }}
           >
@@ -52,109 +55,121 @@ export function CinematicLyrics() {
           {parsed.lines.map((line, i) => {
             if (!line.text.trim()) return <div key={i} className="h-4" />;
             if (line.header) return (
-              <p key={i} className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 first:pt-0">
-                {headerLabel(line.text)}
-              </p>
+              <p key={i} className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 first:pt-0">{headerLabel(line.text)}</p>
             );
-            const isActive = synced && i === activeIdx;
-            return (
-              <p
-                key={i}
-                className="py-1 text-lg leading-8 transition-colors duration-300 sm:text-xl"
-                style={{ color: isActive ? "var(--theme-primary)" : synced ? "rgba(255,255,255,0.35)" : "rgba(255,255,255,0.75)" }}
-              >
-                {line.text}
-              </p>
-            );
+            return <p key={i} className="py-1 text-lg leading-8 text-white/70 sm:text-xl">{line.text}</p>;
           })}
         </div>
       </section>
 
-      {/* Fullscreen cinematic overlay */}
-      <AnimatePresence>
-        {cinematic && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.4 }}
-            className="fixed inset-0 z-[200] flex flex-col"
-            style={{
-              background:
-                "radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--theme-primary) 22%, transparent), transparent 60%)," +
-                "radial-gradient(circle at 50% 90%, color-mix(in srgb, var(--theme-secondary) 18%, transparent), transparent 55%)," +
-                "linear-gradient(160deg, var(--theme-bg), #05030b)",
-            }}
-          >
-            <div className="flex items-center justify-between px-6 py-5 sm:px-10">
-              <div className="min-w-0">
-                <p className="truncate font-display text-lg font-black uppercase tracking-tight text-white">{currentTrack.title}</p>
-                <p className="truncate font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>
-                  {currentTrack.artist}{synced ? " · synced" : ""}
-                </p>
-              </div>
-              <button
-                onClick={() => setCinematic(false)}
-                className="rounded-full border border-white/20 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
-              >
-                Close · Esc
-              </button>
-            </div>
-
-            <div className="relative flex-1 overflow-hidden">
-              <CinematicScroller lines={parsed.lines} activeIdx={activeIdx} synced={synced} />
-              {/* top/bottom fades */}
-              <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05030b] to-transparent" />
-              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#05030b] to-transparent" />
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <CinematicTakeover open={open} track={currentTrack} lines={parsed.lines} synced={parsed.synced} onClose={closeTakeover} />
     </>
   );
 }
 
-function CinematicScroller({ lines, activeIdx, synced }: {
+function CinematicTakeover({ open, track, lines, synced, onClose }: {
+  open: boolean;
+  track: { title: string; artist: string };
   lines: ParsedLine[];
-  activeIdx: number;
   synced: boolean;
+  onClose: () => void;
 }) {
-  const activeRef = useRef<HTMLParagraphElement | null>(null);
+  const { isPlaying, togglePlay, getCurrentTime } = useMusicPlayer();
+  const [mounted, setMounted] = useState(false);
+  const lineRefs = useRef<(HTMLParagraphElement | null)[]>([]);
+  const lastActive = useRef(-1);
 
-  // Karaoke auto-scroll: keep the active line centered.
+  useEffect(() => setMounted(true), []);
+
+  // While open: flag the shared UI store (pauses particles) + lock scroll.
   useEffect(() => {
-    if (synced) activeRef.current?.scrollIntoView({ block: "center", behavior: "smooth" });
-  }, [activeIdx, synced]);
+    if (!open) return;
+    uiStore.setCinematic(true);
+    document.body.classList.add("cinematic-on");
+    return () => { uiStore.setCinematic(false); document.body.classList.remove("cinematic-on"); };
+  }, [open]);
 
-  return (
-    <div className="h-full overflow-y-auto px-6 py-[40vh] text-center sm:px-10">
-      {lines.map((line, i) => {
-        if (!line.text.trim()) return <div key={i} className="h-8" />;
-        if (line.header) return (
-          <p key={i} className="mx-auto py-4 font-mono text-xs uppercase tracking-[0.4em] text-white/25">
-            {headerLabel(line.text)}
-          </p>
-        );
-        const isActive = synced && i === activeIdx;
-        return (
-          <motion.p
-            key={i}
-            ref={isActive ? activeRef : undefined}
-            initial={synced ? false : { opacity: 0, y: 16 }}
-            animate={synced ? {} : { opacity: 1, y: 0 }}
-            transition={{ delay: synced ? 0 : Math.min(i * 0.04, 1.2), duration: 0.5 }}
-            className="mx-auto max-w-4xl py-3 font-display font-black tracking-tight transition-all duration-500"
-            style={{
-              fontSize: isActive ? "clamp(2rem,6vw,4.5rem)" : "clamp(1.25rem,3vw,2.25rem)",
-              color: isActive ? "var(--theme-primary)" : synced ? "rgba(255,255,255,0.28)" : "rgba(255,255,255,0.82)",
-              filter: isActive ? "drop-shadow(0 0 calc(var(--beat) * 34px + 6px) var(--theme-primary))" : "none",
-              scale: isActive ? "calc(1 + var(--beat) * 0.06)" : "1",
-            }}
-          >
-            {line.text}
-          </motion.p>
-        );
-      })}
-    </div>
+  // Esc closes.
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open, onClose]);
+
+  // Karaoke highlight — rAF + refs, no React re-render of the list.
+  useEffect(() => {
+    if (!open || !synced) return;
+    lastActive.current = -1;
+    let raf = 0;
+    const tick = () => {
+      const idx = activeIndex(lines, getCurrentTime());
+      if (idx !== lastActive.current) {
+        lineRefs.current[lastActive.current]?.classList.remove("is-active");
+        const cur = lineRefs.current[idx];
+        if (cur) { cur.classList.add("is-active"); cur.scrollIntoView({ block: "center", behavior: "smooth" }); }
+        lastActive.current = idx;
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [open, synced, lines, getCurrentTime]);
+
+  if (!mounted) return null;
+
+  return createPortal(
+    <AnimatePresence>
+      {open && (
+        <motion.div
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}
+          className="fixed inset-0 z-[300] flex flex-col"
+          style={{
+            backgroundColor: "#05030b",
+            backgroundImage:
+              "radial-gradient(circle at 50% 28%, color-mix(in srgb, var(--theme-primary) 24%, transparent), transparent 60%)," +
+              "radial-gradient(circle at 50% 92%, color-mix(in srgb, var(--theme-secondary) 18%, transparent), transparent 55%)," +
+              "linear-gradient(160deg, var(--theme-bg), #05030b)",
+          }}
+        >
+          <div className="flex items-center justify-between px-5 py-4 sm:px-10">
+            <div className="min-w-0">
+              <p className="truncate font-display text-base font-black uppercase tracking-tight text-white sm:text-lg">{track.title}</p>
+              <p className="truncate font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>
+                {track.artist}{synced ? " · synced" : ""}
+              </p>
+            </div>
+            <div className="flex items-center gap-2">
+              <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
+                className="grid h-10 w-10 place-items-center rounded-full text-void transition hover:scale-105" style={{ background: "var(--theme-primary)" }}>
+                {isPlaying
+                  ? <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
+                  : <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>}
+              </button>
+              <button onClick={onClose} className="rounded-full border border-white/20 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white">Close · Esc</button>
+            </div>
+          </div>
+
+          <div className="relative flex-1 overflow-hidden">
+            <div className="h-full overflow-y-auto px-5 py-[42vh] text-center sm:px-10">
+              {lines.map((line, i) => {
+                if (!line.text.trim()) return <div key={i} className="h-6" />;
+                if (line.header) return (
+                  <p key={i} className="mx-auto py-3 font-mono text-[11px] uppercase tracking-[0.4em] text-white/25">{headerLabel(line.text)}</p>
+                );
+                return (
+                  <p key={i} ref={(el) => { lineRefs.current[i] = el; }} className={synced ? "cine-line" : "cine-line cine-line--plain"}>
+                    {line.text}
+                  </p>
+                );
+              })}
+            </div>
+            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05030b] to-transparent" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#05030b] to-transparent" />
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>,
+    document.body,
   );
 }
