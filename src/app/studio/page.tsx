@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { activeWordIndex, type SyncedWord } from "@/lib/lyrics";
+import { activeSection, type PlanetSection } from "@/lib/planet";
 import type { Track } from "@/data/tracks";
 
 const TEMPLATES = [
@@ -30,6 +31,7 @@ export default function StudioPage() {
 
   const selected = tracks.find((t) => t.id === selectedId);
   const words = currentTrack?.lyricsSynced?.words;
+  const analysis = currentTrack?.planet?.analysis;
   const live = !!currentTrack && !!words?.length;
 
   return (
@@ -63,10 +65,18 @@ export default function StudioPage() {
         <Link href="/music" className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 hover:text-white">Exit</Link>
       </header>
 
+      {/* Planet readout — the song's analyzed identity */}
+      {analysis && (
+        <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-1 px-4 pb-1 sm:px-6">
+          <span className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>🪐 {analysis.overallMood}</span>
+          <span className="font-mono text-[10px] uppercase tracking-wider text-white/35">{analysis.themes.slice(0, 4).join(" · ")}</span>
+        </div>
+      )}
+
       {/* Stage */}
       <div className="relative z-10 flex flex-1 items-center justify-center overflow-hidden px-4 pb-28">
         {live ? (
-          <KineticStage words={words!} />
+          <KineticStage words={words!} sections={analysis?.sections} />
         ) : (
           <div className="text-center">
             {selected && hasWords(selected) ? (
@@ -94,31 +104,49 @@ export default function StudioPage() {
 
 const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
 
-function KineticStage({ words }: { words: SyncedWord[] }) {
+function KineticStage({ words, sections }: { words: SyncedWord[]; sections?: PlanetSection[] }) {
   const { getCurrentTime } = useMusicPlayer();
   const [idx, setIdx] = useState(-1);
-  const lastRef = useRef(-1);
+  const [section, setSection] = useState<PlanetSection | null>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const lastWord = useRef(-1);
+  const lastSec = useRef<string>("");
 
-  // rAF → only re-render when the active WORD changes (a few times/sec), not per
-  // frame; the beat pulse is pure CSS (var(--beat)).
+  // One rAF drives both the active word (re-render on change) and the current
+  // emotional section (updates the --emo CSS var + label).
   useEffect(() => {
     let raf = 0;
     const tick = () => {
-      const i = activeWordIndex(words, getCurrentTime());
-      if (i !== lastRef.current) { lastRef.current = i; setIdx(i); }
+      const t = getCurrentTime();
+      const i = activeWordIndex(words, t);
+      if (i !== lastWord.current) { lastWord.current = i; setIdx(i); }
+      if (sections?.length) {
+        const s = activeSection(sections, t);
+        const key = s ? `${s.name}${s.start}` : "";
+        if (key !== lastSec.current) {
+          lastSec.current = key;
+          setSection(s);
+          stageRef.current?.style.setProperty("--emo", String(s?.intensity ?? 0));
+        }
+      }
       raf = requestAnimationFrame(tick);
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, getCurrentTime]);
+  }, [words, sections, getCurrentTime]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
     .map((x) => clean(x.w)).join(" ");
 
   return (
-    <div className="kinetic-stage flex w-full flex-col items-center justify-center gap-8 text-center">
-      <div className="relative flex min-h-[38vh] items-center justify-center">
+    <div ref={stageRef} className="kinetic-stage flex w-full flex-col items-center justify-center gap-6 text-center">
+      {section && (
+        <p className="font-mono text-[11px] uppercase tracking-[0.45em]" style={{ color: section.colorHint }}>
+          {section.emotion}
+        </p>
+      )}
+      <div className="relative flex min-h-[34vh] items-center justify-center">
         <AnimatePresence>
           {word && (
             <motion.div

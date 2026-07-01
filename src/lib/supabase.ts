@@ -23,4 +23,5 @@ export interface TrackRow {
   theme: Record<string, unknown> | null;
   lyrics: string | null;
   lyrics_synced: unknown | null;
+  planet: unknown | null;
 }

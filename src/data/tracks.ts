@@ -1,5 +1,6 @@
 import type { ThemeOverride } from "@/lib/theme";
 import type { LyricsSynced } from "@/lib/lyrics";
+import type { Planet } from "@/lib/planet";
 
 export type Track = {
   id: string;
@@ -18,6 +19,7 @@ export type Track = {
   theme?: ThemeOverride; // manual per-song site-theme override (from tracks.theme)
   lyrics?: string; // plain or LRC-timestamped lyrics
   lyricsSynced?: LyricsSynced; // per-word timings (lyric engine core)
+  planet?: Planet; // LLM song analysis (emotion arc, palette, imagery prompts)
 };
 
 // ── Buckets ──────────────────────────────────────────────────────────────
