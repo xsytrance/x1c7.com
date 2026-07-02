@@ -5,7 +5,7 @@
 // backdrops, live color grading, beat halo, and the scrubbable emotional arc.
 // Shared by the /music cinematic takeover and the /studio playground.
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
@@ -114,7 +114,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   /** Viewing style (pass 3+): dynamic stagecraft, clean focus, or phrase mode. */
   mode?: StageMode;
 }) {
-  const { getCurrentTime } = useMusicPlayer();
+  const { getCurrentTime, setMuffle } = useMusicPlayer();
   const rawWords = track.lyricsSynced!.words!;
   // Aligner mis-anchor guard: before a pause, the aligner pins the NEXT sung
   // word to the start of the silence — so it appears on stage seconds early
@@ -173,11 +173,25 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // choreographer LLM picked the effect per planet. (Stale indices go inert
   // on their own when the song moves to the next word.)
   const [touchBurn, setTouchBurn] = useState(-1);
+  // Hold-to-charge: press and hold a word to charge it up — release for a
+  // supersized burst (shockwave + stronger haptic).
+  const [charging, setCharging] = useState(false);
+  const chargeAt = useRef(0);
   const interactions = track.planet?.interactions;
   const tapFx = interactions?.tapEffect ?? "dissolve";
   // Choreographed wipe moments (also from the planet's interaction data).
   const [wipe, setWipe] = useState<{ layer: string; prompt: string } | null>(null);
   const wipeKey = useRef(-1);
+  // The veil covers the SOUND too: music muffles when a wipe moment starts
+  // and clears as the listener wipes (progress from the canvas). Always
+  // restored on moment end/unmount.
+  useEffect(() => {
+    setMuffle(wipe ? 0.85 : 0);
+    return () => setMuffle(0);
+  }, [wipe, setMuffle]);
+  const onWipeProgress = useCallback((cleared: number) => {
+    setMuffle(Math.max(0, 0.85 * (1 - cleared * 1.4)));
+  }, [setMuffle]);
   // Choreographed blow moments + the gust they trigger.
   const [blow, setBlow] = useState<{ prompt: string } | null>(null);
   const blowKey = useRef(-1);
@@ -236,6 +250,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       if (energy > 55 && now > cooldownUntil) {
         cooldownUntil = now + 2500;
         energy = 0;
+        navigator.vibrate?.(70);
         setQuake((q) => q + 1);
       }
     };
@@ -516,9 +531,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             {word && (
               <motion.div
                 key={idx}
-                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}`}
+                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`}
                 style={dyn ? { left: `${dyn.x}vw`, top: `${dyn.y}vh`, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
-                onPointerDown={pass >= 3 ? () => setTouchBurn(idx) : undefined}
+                onPointerDown={pass >= 3 ? () => { chargeAt.current = Date.now(); setCharging(true); } : undefined}
+                onPointerUp={pass >= 3 ? () => {
+                  const heldMs = Date.now() - chargeAt.current;
+                  setCharging(false);
+                  if (heldMs >= 650) { setWave((w) => w + 1); navigator.vibrate?.([15, 40, 20]); }
+                  else navigator.vibrate?.(25);
+                  setTouchBurn(idx);
+                } : undefined}
+                onPointerLeave={pass >= 3 ? () => setCharging(false) : undefined}
                 {...(m as MotionProps)}
               >
                 {/* ghost echo — line-final and charged words leave an afterimage */}
@@ -617,8 +640,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Pressure gauge — the emotional intensity as a living instrument */}
       {pass >= 3 && mode !== "focus" && <PressureGauge section={section} />}
 
-      {/* Choreographed wipe moment — wipe the song's veil away */}
-      {pass >= 3 && <WipeLayer moment={wipe} />}
+      {/* Choreographed wipe moment — wipe the song's veil away (sound too) */}
+      {pass >= 3 && <WipeLayer moment={wipe} onProgress={onWipeProgress} />}
 
       {/* Choreographed blow moment — blow into the mic on cue */}
       {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
@@ -1233,7 +1256,7 @@ const WIPE_COLORS: Record<string, [string, string]> = {
   ash: ["#241f1c", "#443a33"], frost: ["#cfe6f5", "#9cc4e4"], steam: ["#d8d8d8", "#b9b9b9"],
   fog: ["#a8b2bc", "#87929e"], static: ["#101010", "#2e2e2e"],
 };
-function WipeLayer({ moment }: { moment: { layer: string; prompt: string } | null }) {
+function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     if (!moment) return;
@@ -1253,10 +1276,14 @@ function WipeLayer({ moment }: { moment: { layer: string; prompt: string } | nul
       ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, moment.layer === "static" ? 3 : 2, moment.layer === "static" ? 3 : 2);
     }
     ctx.globalAlpha = 1;
+    let clearedPx = 0;
+    let strokes = 0;
     const erase = (e: PointerEvent) => {
       if (e.pointerType === "mouse" && e.buttons === 0) return;
       ctx.globalCompositeOperation = "destination-out";
       const R = Math.max(56, window.innerWidth * 0.055);
+      clearedPx += Math.PI * R * R * 0.35; // overlap-discounted estimate
+      if (++strokes % 6 === 0) onProgress?.(Math.min(1, clearedPx / (c.width * c.height)));
       const g = ctx.createRadialGradient(e.clientX, e.clientY, R * 0.15, e.clientX, e.clientY, R);
       g.addColorStop(0, "rgba(0,0,0,1)"); g.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = g;
@@ -1266,7 +1293,7 @@ function WipeLayer({ moment }: { moment: { layer: string; prompt: string } | nul
     window.addEventListener("pointermove", erase);
     window.addEventListener("pointerdown", erase);
     return () => { window.removeEventListener("pointermove", erase); window.removeEventListener("pointerdown", erase); };
-  }, [moment]);
+  }, [moment, onProgress]);
   return (
     <AnimatePresence>
       {moment && (
