@@ -82,7 +82,7 @@ export default function StudioPage() {
       {/* Stage */}
       <div className="relative z-10 flex flex-1 items-center justify-center overflow-hidden px-4 pb-28">
         {live ? (
-          <KineticStage words={words!} sections={analysis?.sections} keywords={keywordSet} />
+          <KineticStage words={words!} sections={analysis?.sections} keywords={keywordSet} art={currentTrack?.planet?.assets?.keywords} />
         ) : (
           <div className="text-center">
             {selected && hasWords(selected) ? (
@@ -131,10 +131,11 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-function KineticStage({ words, sections, keywords }: { words: SyncedWord[]; sections?: PlanetSection[]; keywords: Set<string> }) {
+function KineticStage({ words, sections, keywords, art }: { words: SyncedWord[]; sections?: PlanetSection[]; keywords: Set<string>; art?: Record<string, string> }) {
   const { getCurrentTime } = useMusicPlayer();
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
+  const [bgArt, setBgArt] = useState<string | null>(null);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
@@ -146,7 +147,15 @@ function KineticStage({ words, sections, keywords }: { words: SyncedWord[]; sect
     const tick = () => {
       const t = getCurrentTime();
       const i = activeWordIndex(words, t);
-      if (i !== lastWord.current) { lastWord.current = i; setIdx(i); }
+      if (i !== lastWord.current) {
+        lastWord.current = i; setIdx(i);
+        // Generated song art: when a keyword with art lands, it becomes the
+        // backdrop and lingers until the next one takes over.
+        if (art && i >= 0) {
+          const w = clean(words[i].w).toLowerCase();
+          if (art[w]) setBgArt(art[w]);
+        }
+      }
       if (sections?.length) {
         const s = activeSection(sections, t);
         const key = s ? `${s.name}${s.start}` : "";
@@ -176,6 +185,30 @@ function KineticStage({ words, sections, keywords }: { words: SyncedWord[]; sect
 
   return (
     <div ref={stageRef} className="kinetic-stage flex w-full flex-col items-center justify-center gap-6 text-center">
+      {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
+      <AnimatePresence>
+        {bgArt && (
+          <motion.div
+            key={bgArt}
+            className="pointer-events-none fixed inset-0 -z-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.42 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.6, ease: "easeInOut" }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <motion.img
+              src={bgArt}
+              alt=""
+              className="h-full w-full object-cover"
+              initial={{ scale: 1.06 }}
+              animate={{ scale: 1.16 }}
+              transition={{ duration: 24, ease: "linear" }}
+            />
+            <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 30%, rgba(5,3,11,0.88) 100%)" }} />
+          </motion.div>
+        )}
+      </AnimatePresence>
       {section && (
         <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
           {section.emotion} <span className="text-white/25">· {treatment}</span>

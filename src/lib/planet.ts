@@ -20,8 +20,13 @@ export interface PlanetAnalysis {
   sections: PlanetSection[];
   keywords: PlanetKeyword[];
 }
+export interface PlanetAssets {
+  /** keyword word -> generated image URL (Phase 4: ComfyUI song art). */
+  keywords?: Record<string, string>;
+}
 export interface Planet {
   analysis: PlanetAnalysis;
+  assets?: PlanetAssets;
   generatedAt: string | null;
 }
 
