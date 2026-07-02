@@ -65,6 +65,7 @@ async function analyze(t) {
     "All colors must be #RRGGBB hex. intensity is 0..1 (calm..intense). Use the EXACT section names provided. " +
     "imageryPrompt: a vivid, concrete text-to-image prompt (no artist names) capturing that word's feeling for this song.";
   const user = `Title: ${t.title}\nArtist: ${t.artist}\nGenre: ${t.genre} · Mood: ${t.mood}\n` +
+    (t.style ? `Producer's style prompt (authoritative for sound + vibe): ${t.style}\n` : "") +
     `Section names (use these exactly): ${JSON.stringify(sectionNames)}\n\nLYRICS:\n${plain}\n\n` +
     `Return JSON: summary (1-2 sentence interpretation of what the song is about), overallMood, themes (3-6), ` +
     `palette (4 hex colors capturing the vibe), sections (one per section name above, with emotion + intensity + colorHint hex), ` +

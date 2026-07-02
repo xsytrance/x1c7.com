@@ -59,7 +59,11 @@ const songId = args.song || "song";
 mkdirSync(args.out, { recursive: true });
 
 // House style: consistent, cinematic, no text — prompts stay song-specific.
-const style = `cinematic still, moody atmospheric lighting, film grain, shallow depth of field, dark ambient, evocative of "${a.overallMood}" mood, no text, no watermark`;
+// planet.styleHint (derived from the artist's style prompt) overrides the default
+// moody look so each song's art matches its own world.
+const style = planet.styleHint
+  ? `${planet.styleHint}, cinematic, evocative of "${a.overallMood}" mood, no text, no watermark`
+  : `cinematic still, moody atmospheric lighting, film grain, shallow depth of field, dark ambient, evocative of "${a.overallMood}" mood, no text, no watermark`;
 const negative = "text, watermark, logo, caption, letters, low quality, deformed, oversaturated, cartoon";
 
 const jobs = (a.keywords || []).slice(0, MAX);
