@@ -150,6 +150,39 @@ body.cinematic-on { overflow: hidden; }
   filter: drop-shadow(0 0 calc(var(--beat) * 60px + var(--emo) * 55px + 14px) var(--theme-accent));
 }
 
+/* Line-final word — it closes the line and owns the stage: bigger, deeper glow. */
+.kinetic-word--final {
+  font-size: clamp(3.4rem, 18vw, 16rem);
+  filter: drop-shadow(0 0 30px color-mix(in srgb, var(--theme-accent) 45%, transparent));
+}
+
+/* Held note — the inner span breathes with the live bass while framer swells it. */
+.kinetic-breathe { display: inline-block; }
+.kinetic-word--held .kinetic-breathe {
+  transform: scale(calc(1 + var(--beat) * 0.13));
+  transition: transform 90ms ease-out;
+}
+.kinetic-word--held {
+  filter: drop-shadow(0 0 calc(20px + var(--beat) * 34px) color-mix(in srgb, var(--theme-primary) 60%, transparent));
+}
+
+/* Ambient dust — slow emotion-tinted particles drifting up the stage. */
+.kinetic-dust {
+  position: absolute;
+  bottom: -6%;
+  border-radius: 9999px;
+  background: color-mix(in srgb, var(--theme-accent) 70%, white);
+  opacity: 0;
+  pointer-events: none;
+  animation: kinetic-dust-rise 10s linear infinite;
+}
+@keyframes kinetic-dust-rise {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  12% { opacity: 0.34; }
+  70% { opacity: 0.22; }
+  100% { transform: translateY(-46vh) translateX(2vw); opacity: 0; }
+}
+
 .scanline {
   position: fixed;
   inset: 0;
