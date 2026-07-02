@@ -544,6 +544,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Choreographed blow moment — blow into the mic on cue */}
       {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
 
+      {/* Mic primer — ask ONCE at show start (never mid-song) when this
+          song has a breath moment coming. */}
+      {pass >= 3 && !blow && (
+        <MicPrimer active={!!interactions?.moments?.some((mm) => mm.type === "blow")} />
+      )}
+
       {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
       <AnimatePresence>
         {gust > 0 && (
@@ -1034,18 +1040,66 @@ function WordBloom({ word }: { word: string }) {
   );
 }
 
+/* ========== MIC PRIMER ==========
+   Songs with blow moments ask for the mic ONCE, right at the start of the
+   show — never mid-song. Once granted (this session or any earlier one),
+   the moment itself auto-arms with no interruption at all. */
+async function micPermissionGranted(): Promise<boolean> {
+  try {
+    const st = await navigator.permissions.query({ name: "microphone" as PermissionName });
+    return st.state === "granted";
+  } catch { return false; }
+}
+function MicPrimer({ active }: { active: boolean }) {
+  // "unknown" until checked; primer shows only when permission isn't granted yet.
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    if (!active) { setShow(false); return; }
+    let on = true;
+    micPermissionGranted().then((ok) => { if (on) setShow(!ok); });
+    return () => { on = false; };
+  }, [active]);
+  const prime = async () => {
+    try {
+      const s = await navigator.mediaDevices.getUserMedia({ audio: true });
+      s.getTracks().forEach((t) => t.stop()); // permission secured; mic off again immediately
+    } catch { /* declined — the moment will fall back to tap */ }
+    setShow(false);
+  };
+  return (
+    <AnimatePresence>
+      {show && (
+        <motion.button
+          onClick={prime}
+          className="fixed left-1/2 top-24 z-[35] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/80 backdrop-blur"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -8 }}
+          transition={{ delay: 1.2, duration: 0.8 }}
+        >
+          🌬️ this song has a breath moment — tap to enable the mic
+        </motion.button>
+      )}
+    </AnimatePresence>
+  );
+}
+
 /* ========== BLOW MOMENT ==========
    A WarioWare-style beat: at a choreographed point the show asks the
    listener to BLOW into the mic (blow out the candle, scatter the ash).
-   Mic starts only on tap (permission + privacy), detection = sustained
-   broadband low-frequency energy, and everything stops when the moment
-   ends. If the mic is denied, tapping the prompt works instead. */
+   If permission was granted up-front (MicPrimer), it AUTO-ARMS — zero
+   mid-song interruption. Detection = sustained broadband low-frequency
+   energy; everything stops when the moment ends. Mic unavailable? Tap. */
 function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onGust: () => void }) {
   const [state, setState] = useState<"idle" | "listening" | "done" | "denied">("idle");
   const cleanupRef = useRef<() => void>(() => {});
+  const startRef = useRef<() => void>(() => {});
   useEffect(() => {
-    if (!moment) { cleanupRef.current(); setState("idle"); }
-    return () => cleanupRef.current();
+    if (!moment) { cleanupRef.current(); setState("idle"); return () => cleanupRef.current(); }
+    // Auto-arm when permission already exists — no tap, no interruption.
+    let on = true;
+    micPermissionGranted().then((ok) => { if (on && ok) startRef.current(); });
+    return () => { on = false; cleanupRef.current(); };
   }, [moment]);
   const start = async () => {
     try {
@@ -1071,6 +1125,7 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
       loop();
     } catch { setState("denied"); }
   };
+  startRef.current = start;
   return (
     <AnimatePresence>
       {moment && state !== "done" && (
