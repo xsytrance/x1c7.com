@@ -25,6 +25,8 @@ interface PlayerContext extends PlayerState {
   setVolume: (v: number) => void;
   /** Imperative playhead read — for rAF-driven UIs that must not re-render per frame. */
   getCurrentTime: () => number;
+  /** Muffle the music (0 = clear, 1 = underwater) — wipe moments drive this. */
+  setMuffle: (amount: number) => void;
 }
 
 const Context = createContext<PlayerContext | null>(null);
@@ -46,6 +48,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
+  const muffleRef = useRef<BiquadFilterNode | null>(null);
   const fellBackRef = useRef(false);
   const volumeRef = useRef(volume);
   // Latest queue/index for the "ended" handler, which is bound once on mount.
@@ -92,7 +95,15 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
         const an = ac.createAnalyser();
         an.fftSize = 512;
         an.smoothingTimeConstant = 0.85;
-        source.connect(an);
+        // Muffle filter: a lowpass the lyric engine can drive (wipe moments
+        // cover the SOUND too — the listener wipes the music clear).
+        const lp = ac.createBiquadFilter();
+        lp.type = "lowpass";
+        lp.frequency.value = 20000; // wide open by default
+        lp.Q.value = 0.5;
+        muffleRef.current = lp;
+        source.connect(lp);
+        lp.connect(an);
         an.connect(ac.destination);
         setAnalyser(an);
       }
@@ -220,6 +231,21 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
 
   const getCurrentTime = useCallback(() => audioRef.current?.currentTime ?? 0, []);
 
+  /** Muffle the music (0 = clear, 1 = deep underwater). Used by wipe
+   * moments: the veil covers the sound; wiping restores it. Ramped so it
+   * never clicks; a no-op when the WebAudio chain is unavailable (CORS). */
+  const setMuffle = useCallback((amount: number) => {
+    const lp = muffleRef.current;
+    const ac = ctxRef.current;
+    if (!lp || !ac) return;
+    const x = Math.max(0, Math.min(1, amount));
+    const freq = 300 + (1 - x) * (1 - x) * 19700; // 0 -> 20kHz, 1 -> 300Hz
+    try {
+      lp.frequency.cancelScheduledValues(ac.currentTime);
+      lp.frequency.setTargetAtTime(freq, ac.currentTime, 0.18);
+    } catch { /* noop */ }
+  }, []);
+
   const setVolume = useCallback((v: number) => {
     setVolumeState(v);
     if (audioRef.current) audioRef.current.volume = v;
@@ -231,10 +257,10 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
   const value = useMemo(
     () => ({
       currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
-      playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime,
+      playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle,
     }),
     [currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
-     playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime],
+     playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle],
   );
 
   return <Context.Provider value={value}>{children}</Context.Provider>;

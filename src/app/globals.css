@@ -336,3 +336,12 @@ body.cinematic-on { overflow: hidden; }
   display: block;
   border: none;
 }
+
+/* Hold-to-charge — the pressed word builds power until release. */
+.kinetic-charging {
+  animation: kinetic-charge 0.9s ease-in forwards;
+}
+@keyframes kinetic-charge {
+  0% { filter: drop-shadow(0 0 8px var(--theme-accent)); }
+  100% { transform: scale(1.14); filter: drop-shadow(0 0 46px var(--theme-accent)) drop-shadow(0 0 90px var(--theme-primary)); }
+}
