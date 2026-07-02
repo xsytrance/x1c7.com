@@ -209,7 +209,9 @@ export const tracks: Track[] = sources
       mood: MOODS[i % MOODS.length],
       color,
       audioUrl: s.audioUrl,
-      featured: s.title === "Mi Gente",
+      // Match the live DB's featured track so the hero doesn't flash a
+      // different cover while Supabase data loads.
+      featured: slugify(s.title) === "i-won-t-be-your-fire",
     };
   });
 
