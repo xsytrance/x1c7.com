@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { resolveTheme, DEFAULT_THEME, type Theme } from "@/lib/theme";
 import { extractPalette } from "@/lib/palette";
+import { beatClock } from "@/lib/beatClock";
 import { themeStore } from "@/lib/themeStore";
 
 // Writes the resolved theme onto :root as CSS custom properties. The color vars
@@ -68,6 +69,8 @@ export function ThemeEngine() {
     let raf = 0;
     let beat = 0;
     let freq: Uint8Array<ArrayBuffer> | null = null;
+    let energyAvg = 0;
+    let lastOnset = 0;
     const root = document.documentElement;
 
     const tick = () => {
@@ -81,6 +84,15 @@ export function ThemeEngine() {
           const n = Math.min(8, freq.length); // low bins ≈ bass
           for (let i = 0; i < n; i++) sum += freq[i];
           target = (sum / n / 255) * intensityRef.current;
+          // Beat ONSET detection for the tap game: a bass spike well above
+          // the running average, with a refractory window.
+          const raw = sum / n / 255;
+          energyAvg = energyAvg * 0.97 + raw * 0.03;
+          const now = performance.now();
+          if (raw > Math.max(0.22, energyAvg * 1.45) && now - lastOnset > 280) {
+            lastOnset = now;
+            beatClock.record(now);
+          }
         } else {
           target = (0.35 + 0.25 * Math.sin(performance.now() / 240)) * intensityRef.current;
         }
