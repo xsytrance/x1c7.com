@@ -12,3 +12,7 @@ fire-extra/
 dts-kw/
 dts-sec/
 dts-analysis.json
+cs-kw/
+cs-sec/
+cs-analysis.json
+cs-planet-full.json
