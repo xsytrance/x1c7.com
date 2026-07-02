@@ -184,6 +184,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
             className="pointer-events-none fixed inset-0 z-10 flex flex-col items-center justify-center gap-6 px-8 text-center"
           >
             <p className="font-display text-4xl font-black uppercase tracking-tight glow-text sm:text-6xl" style={{ color: "var(--theme-primary)" }}>{track.title}</p>
+            {track.planet?.respondsTo && (
+              <p className="font-mono text-xs uppercase tracking-[0.35em]" style={{ color: "var(--theme-accent)" }}>
+                an answer to {track.planet.respondsTo}
+              </p>
+            )}
             {analysis?.summary && <p className="max-w-2xl text-base leading-7 text-white/60 sm:text-lg">{analysis.summary}</p>}
           </motion.div>
         )}

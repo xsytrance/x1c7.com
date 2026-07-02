@@ -56,6 +56,11 @@ export default function StudioPage() {
         <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-1 px-4 pb-1 sm:px-6">
           <span className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>🪐 {analysis.overallMood}</span>
           <span className="font-mono text-[10px] uppercase tracking-wider text-white/35">{analysis.themes.slice(0, 4).join(" · ")}</span>
+          {currentTrack?.planet?.respondsTo && (
+            <span className="rounded-full border border-white/15 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider" style={{ color: "var(--theme-accent)" }}>
+              ↩ answers {currentTrack.planet.respondsTo}
+            </span>
+          )}
         </div>
       )}
 

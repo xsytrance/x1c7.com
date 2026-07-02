@@ -29,6 +29,8 @@ export interface PlanetAssets {
 export interface Planet {
   analysis: PlanetAnalysis;
   assets?: PlanetAssets;
+  /** "Artist — 'Song'" when this track is a response/answer record. */
+  respondsTo?: string;
   generatedAt: string | null;
 }
 

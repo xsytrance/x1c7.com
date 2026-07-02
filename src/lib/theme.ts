@@ -90,6 +90,18 @@ function hslToHex(h: number, s: number, l: number): string {
 export function deriveTheme(seed: string): Theme {
   const rgb = hexToRgb(seed) || hexToRgb(DEFAULT_THEME.primary)!;
   const [h, s0, l0] = rgbToHsl(...rgb);
+  // Near-greyscale seeds are INTENTIONAL (e.g. a black-and-white film world):
+  // preserve the monochrome instead of vividizing it into a random hue.
+  if (s0 < 0.08) {
+    const l = Math.max(0.55, Math.min(0.85, l0 || 0.7));
+    return {
+      primary: hslToHex(0, 0, l),
+      secondary: hslToHex(0, 0, Math.max(0.35, l - 0.25)),
+      accent: hslToHex(0, 0, Math.min(0.95, l + 0.12)),
+      bg: hslToHex(0, 0, 0.04),
+      intensity: DEFAULT_THEME.intensity,
+    };
+  }
   const s = Math.max(0.55, s0);
   const l = Math.max(0.5, Math.min(0.62, l0 || 0.55));
   return {
