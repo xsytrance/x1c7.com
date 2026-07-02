@@ -16,6 +16,9 @@ import type { Track } from "@/data/tracks";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
 
+// Words that BURN: ignite, char, and crumble into drifting ash.
+const FIRE_WORDS = new Set(["fire", "burn", "burns", "burning", "burned", "flame", "flames", "match", "matches", "ember", "embers", "ash", "ashes", "smoke", "ignite", "lit", "blaze"]);
+
 /** True when a track has everything the engine needs to perform. */
 export function canPerform(t: Track | null | undefined): boolean {
   return !!t && (t.lyricsSynced?.words?.length ?? 0) > 0;
@@ -117,7 +120,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
   // Shape-morph: lexicon words morph when they have air; charged words fall back
   // to a glyph chosen from their EMOTION, so the brain's picks always land big.
   const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
-  const glyph = shown && airtime >= 0.6
+  // Fire words with enough air BURN instead of morphing.
+  const burns = airtime >= 0.75 && FIRE_WORDS.has(lower);
+  const glyph = !burns && shown && airtime >= 0.6
     ? (glyphFor(shown) ?? (charged ? glyphForEmotion(keywordEmotion[lower]) : null))
     : null;
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -186,7 +191,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
                 className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
                 {...(m as MotionProps)}
               >
-                {glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
+                {burns ? <WordBurn word={shown} airtime={airtime} /> : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
               </motion.div>
             )}
           </AnimatePresence>
@@ -252,6 +257,68 @@ const MORPH_TIMING: Record<SectionMotion, { hold: number; morph: number; ease: s
   surge:   { hold: 0.36, morph: 0.55, ease: "easeOut" },
   shatter: { hold: 0.3,  morph: 0.38, ease: "backOut" },
 };
+
+/* ========== BURN ==========
+   Fire words ignite: letters flash white-hot, char, and crumble into ash that
+   drifts away — while embers rise off the word. Deterministic per-index
+   pseudo-randomness (no Math.random) keeps renders stable; em units scale the
+   physics with the giant type. The burn is paced to the word's airtime. */
+function WordBurn({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(1.5, Math.max(0.8, airtime * 0.92)); // finish just before the next word
+  const r = (i: number, m: number) => ((i * 73 + 41) % 89) / 89 * m; // 0..m, stable per index
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ color: "#ffffff", opacity: 1, y: "0em", x: "0em", rotate: 0 }}
+          animate={{
+            color: ["#ffffff", "#ffd28a", "#ff6a00", "#7a3410", "#4a4a4a"],
+            textShadow: [
+              "0 0 0.5em #ffdca8, 0 0 1em #ff6a00",
+              "0 0 0.4em #ffb35c, 0 0 0.9em #ff5400",
+              "0 0 0.25em #ff5400",
+              "0 0 0.08em #7a3410",
+              "0 0 0em transparent",
+            ],
+            opacity: [1, 1, 1, 0.85, 0],
+            y: ["0em", "0em", `-${0.02 + r(i, 0.03)}em`, `${0.1 + r(i + 3, 0.12)}em`, `${0.32 + r(i + 5, 0.3)}em`],
+            x: ["0em", "0em", "0em", `${(i % 2 ? 1 : -1) * r(i + 7, 0.08)}em`, `${(i % 2 ? 1 : -1) * (0.08 + r(i + 9, 0.18))}em`],
+            rotate: [0, 0, 0, (i % 2 ? 1 : -1) * r(i + 11, 9), (i % 2 ? 1 : -1) * (8 + r(i + 13, 14))],
+            filter: ["blur(0px)", "blur(0px)", "blur(0px)", "blur(1px)", "blur(3px)"],
+          }}
+          transition={{ duration: dur, times: [0, 0.28, 0.45, 0.75, 1], delay: 0.15 + i * (dur * 0.04), ease: "easeIn" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+      {/* rising embers */}
+      {Array.from({ length: 14 }).map((_, i) => (
+        <motion.span
+          key={`e${i}`}
+          className="pointer-events-none absolute rounded-full"
+          style={{
+            left: `${6 + ((i * 61) % 88)}%`,
+            top: `${45 + ((i * 37) % 25)}%`,
+            width: "0.045em",
+            height: "0.045em",
+            background: i % 3 === 0 ? "#ffd28a" : i % 3 === 1 ? "#ff8a3c" : "var(--theme-accent)",
+            boxShadow: "0 0 0.12em #ff6a00",
+          }}
+          initial={{ opacity: 0, y: "0em" }}
+          animate={{
+            opacity: [0, 1, 1, 0],
+            y: ["0em", `-${0.35 + r(i, 0.5)}em`, `-${0.9 + r(i + 2, 0.9)}em`],
+            x: ["0em", `${(i % 2 ? 1 : -1) * r(i + 4, 0.18)}em`, `${(i % 2 ? 1 : -1) * r(i + 6, 0.4)}em`],
+          }}
+          transition={{ duration: dur * 1.05, delay: 0.2 + (i % 7) * (dur * 0.07), ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
 
 function WordMorph({ word, glyph, treatment }: { word: string; glyph: Glyph; treatment: SectionMotion }) {
   const t = MORPH_TIMING[treatment];
