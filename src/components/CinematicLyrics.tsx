@@ -38,30 +38,27 @@ export function CinematicLyrics() {
 
   return (
     <>
-      {/* Static inline preview (cheap — renders once; live highlight lives in the takeover) */}
-      <section className="relative z-10 mx-auto mt-16 max-w-3xl px-4 sm:px-6 lg:px-8">
-        <div className="mb-4 flex items-center justify-between">
-          <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/40">
-            Lyrics {parsed.synced && <span className="text-plasma/70">· synced</span>}
-          </p>
-          <button
-            onClick={() => setOpen(true)}
-            className="flex items-center gap-2 rounded-full border px-4 py-2 font-mono text-[10px] uppercase tracking-wider transition hover:scale-[1.03]"
-            style={{ borderColor: "color-mix(in srgb, var(--theme-primary) 40%, transparent)", color: "var(--theme-primary)" }}
-          >
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M4 4h6V2H2v8h2V4zm16 0v6h2V2h-8v2h6zM4 20v-6H2v8h8v-2H4zm16 0h-6v2h8v-8h-2v6z" /></svg>
-            Cinematic
-          </button>
-        </div>
-        <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 backdrop-blur sm:p-8">
-          {parsed.lines.map((line, i) => {
-            if (!line.text.trim()) return <div key={i} className="h-4" />;
-            if (line.header) return (
-              <p key={i} className="pb-1 pt-5 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30 first:pt-0">{headerLabel(line.text)}</p>
-            );
-            return <p key={i} className="py-1 text-lg leading-8 text-white/70 sm:text-xl">{line.text}</p>;
-          })}
-        </div>
+      {/* Compact re-open bar — NO lyric wall on the page (owner feedback:
+          closing the show shouldn't force scrolling past all the lyrics). */}
+      <section className="relative z-10 mx-auto mt-10 max-w-3xl px-4 sm:px-6 lg:px-8">
+        <button
+          onClick={() => setOpen(true)}
+          className="flex w-full items-center justify-between rounded-2xl border px-5 py-3.5 transition hover:scale-[1.01]"
+          style={{ borderColor: "color-mix(in srgb, var(--theme-primary) 35%, transparent)", background: "color-mix(in srgb, var(--theme-primary) 8%, transparent)" }}
+        >
+          <span className="flex items-center gap-3">
+            <span className="grid h-8 w-8 place-items-center rounded-full text-void" style={{ background: "var(--theme-primary)" }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>
+            </span>
+            <span className="text-left">
+              <span className="block font-mono text-xs uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>Lyric show</span>
+              <span className="block font-mono text-[9px] uppercase tracking-wider text-white/35">
+                {parsed.synced ? "word-synced · full engine" : "lyrics"}
+              </span>
+            </span>
+          </span>
+          <span className="font-mono text-[10px] uppercase tracking-wider text-white/50">Open ⛶</span>
+        </button>
       </section>
 
       <CinematicTakeover open={open} track={currentTrack} lines={parsed.lines} synced={parsed.synced} onClose={closeTakeover} />
@@ -78,6 +75,8 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
 }) {
   const { isPlaying, togglePlay, getCurrentTime } = useMusicPlayer();
   const [mounted, setMounted] = useState(false);
+  // Satellites: which pass of the show is playing (newest = main show).
+  const [pass, setPass] = useState(2);
   const lineRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const lastActive = useRef(-1);
   // Full engine when the song is a planet (word timings); line karaoke otherwise.
@@ -144,13 +143,27 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               </p>
             </div>
             <div className="flex items-center gap-2">
+              {/* Satellite switcher — cycle through the preserved passes of the show */}
+              {performs && (
+                <button
+                  onClick={() => setPass((p) => (p === 2 ? 1 : 2))}
+                  title="Satellites — every pass of the show, preserved. Tap to switch."
+                  className="rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
+                >
+                  🌙 Pass {pass}{pass === 2 ? "" : " · satellite"}
+                </button>
+              )}
               <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
                 className="grid h-10 w-10 place-items-center rounded-full text-void transition hover:scale-105" style={{ background: "var(--theme-primary)" }}>
                 {isPlaying
                   ? <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
                   : <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>}
               </button>
-              <button onClick={onClose} className="rounded-full border border-white/20 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white">Close · Esc</button>
+              {/* Minimize — drop back to the page; the music keeps playing */}
+              <button onClick={onClose} aria-label="Minimize — music keeps playing" title="Minimize (Esc) — music keeps playing"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
+              </button>
             </div>
           </div>
 
@@ -159,7 +172,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               /* THE SHOW — full lyric engine: word blow-ups, shape-morphs,
                  generated-art backdrops, emotion grading, arc timeline. */
               <div className="h-full px-4 pb-16">
-                <KineticStage track={track} timelineBottomClass="bottom-5" />
+                <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} />
               </div>
             ) : (
               <>

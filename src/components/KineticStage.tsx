@@ -64,7 +64,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   pass?: number;
 }) {
   const { getCurrentTime } = useMusicPlayer();
-  const words = track.lyricsSynced!.words!;
+  const rawWords = track.lyricsSynced!.words!;
+  // Aligner mis-anchor guard: a verse's FIRST word sometimes gets pinned to
+  // the start of the preceding instrumental gap, making it appear on stage
+  // many seconds before it's sung. Any word with implausibly long airtime
+  // (>5s — longer than any real held note here) is re-anchored to just
+  // before the next word.
+  const words = useMemo(() => {
+    const out = rawWords.map((w) => ({ ...w }));
+    for (let i = 0; i < out.length - 1; i++) {
+      if (out[i + 1].t - out[i].t > 5) out[i] = { ...out[i], t: out[i + 1].t - 0.4 };
+    }
+    return out;
+  }, [rawWords]);
   const analysis = track.planet?.analysis;
   const sections = analysis?.sections;
   const art = track.planet?.assets?.keywords;
@@ -158,11 +170,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Held: a long sung note. The word itself performs the hold — it swells over
   // the note's duration and breathes with the live bass (--beat) underneath.
   const held = pass >= 2 && idx >= 0 && airtime >= 1.3 && !burns;
-  // Pass 1 kept the upcoming-words hint; owner feedback: next line must not
-  // appear before it's sung. Pass 2 removes it entirely.
-  const upcoming = pass === 1
-    ? (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4)).map((x) => clean(x.w)).join(" ")
-    : "";
+  // Small out-of-the-way preview of what's coming — the owner likes it.
+  // (The BIG word appearing early was the mis-anchor bug, fixed above.)
+  const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
+    .map((x) => clean(x.w)).join(" ");
 
   return (
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
