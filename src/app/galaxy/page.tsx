@@ -6,7 +6,7 @@
 // lyric show takes over right here. Songs without word data drift by as
 // asteroids, waiting to become worlds.
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTracks } from "@/lib/useTracks";
@@ -17,14 +17,35 @@ import type { Track } from "@/data/tracks";
 
 /* eslint-disable @next/next/no-img-element */
 
-// Golden-angle spiral: planets wind outward from the galactic core.
-function place(i: number, total: number) {
-  const angle = i * 2.39996; // golden angle in radians
-  const r = 12 + (i / Math.max(1, total - 1)) * 34; // % from center
-  return {
-    left: 50 + r * Math.cos(angle) * 0.92,
-    top: 50 + r * Math.sin(angle) * 0.78,
-  };
+// Golden-angle spiral + relaxation: planets wind outward from the core,
+// then push apart until none overlap.
+function placeAll(total: number) {
+  const pts = Array.from({ length: total }, (_, i) => {
+    const angle = i * 2.39996;
+    const r = 12 + (i / Math.max(1, total - 1)) * 34;
+    return { left: 50 + r * Math.cos(angle) * 0.92, top: 50 + r * Math.sin(angle) * 0.78 };
+  });
+  const MIN = 13.5; // % separation
+  for (let iter = 0; iter < 40; iter++) {
+    let moved = false;
+    for (let a = 0; a < pts.length; a++) for (let b = a + 1; b < pts.length; b++) {
+      const dx = pts[b].left - pts[a].left, dy = (pts[b].top - pts[a].top) * 1.25;
+      const d = Math.hypot(dx, dy) || 0.001;
+      if (d < MIN) {
+        const push = (MIN - d) / 2;
+        const ux = dx / d, uy = dy / d;
+        pts[a].left -= ux * push; pts[a].top -= (uy * push) / 1.25;
+        pts[b].left += ux * push; pts[b].top += (uy * push) / 1.25;
+        moved = true;
+      }
+    }
+    if (!moved) break;
+  }
+  for (const pt of pts) {
+    pt.left = Math.min(92, Math.max(8, pt.left));
+    pt.top = Math.min(88, Math.max(14, pt.top));
+  }
+  return pts;
 }
 
 export default function GalaxyPage() {
@@ -34,6 +55,28 @@ export default function GalaxyPage() {
 
   const planets = useMemo(() => tracks.filter(canPerform), [tracks]);
   const asteroids = useMemo(() => tracks.filter((t) => !canPerform(t)), [tracks]);
+  const positions = useMemo(() => placeAll(planets.length), [planets.length]);
+  // Drag-to-pan: the universe is bigger than the screen.
+  const panRef = useRef<HTMLDivElement>(null);
+  const pan = useRef({ x: 0, y: 0, dragging: false, lx: 0, ly: 0 });
+  const onPanDown = (e: React.PointerEvent) => {
+    if ((e.target as HTMLElement).closest("button")) return;
+    pan.current.dragging = true; pan.current.lx = e.clientX; pan.current.ly = e.clientY;
+  };
+  useEffect(() => {
+    const move = (e: PointerEvent) => {
+      const pn = pan.current;
+      if (!pn.dragging) return;
+      pn.x = Math.max(-window.innerWidth * 0.3, Math.min(window.innerWidth * 0.3, pn.x + e.clientX - pn.lx));
+      pn.y = Math.max(-window.innerHeight * 0.3, Math.min(window.innerHeight * 0.3, pn.y + e.clientY - pn.ly));
+      pn.lx = e.clientX; pn.ly = e.clientY;
+      if (panRef.current) panRef.current.style.translate = `${pn.x}px ${pn.y}px`;
+    };
+    const up = () => { pan.current.dragging = false; };
+    window.addEventListener("pointermove", move);
+    window.addEventListener("pointerup", up);
+    return () => { window.removeEventListener("pointermove", move); window.removeEventListener("pointerup", up); };
+  }, []);
 
   // Deep link: /galaxy?track=<id> opens that planet's landing card —
   // a shareable address for every world.
@@ -95,11 +138,13 @@ export default function GalaxyPage() {
         />
       ))}
 
-      {/* planets */}
+      {/* planets (pannable universe) */}
+      <div ref={panRef} className="absolute inset-0" onPointerDown={onPanDown} style={{ touchAction: "none" }}>
       {planets.map((t, i) => {
-        const pos = place(i, planets.length);
+        const pos = positions[i];
         const active = currentTrack?.id === t.id;
-        const size = 8.5 + ((t.planet?.analysis?.sections?.length ?? 8) / 27) * 5; // vmin, by emotional richness
+        const small = typeof window !== "undefined" && window.innerWidth < 640;
+        const size = (small ? 13 : 8.5) + ((t.planet?.analysis?.sections?.length ?? 8) / 27) * (small ? 7 : 5); // vmin
         return (
           <motion.button
             key={t.id}
@@ -129,6 +174,7 @@ export default function GalaxyPage() {
           </motion.button>
         );
       })}
+      </div>
 
       {/* planet card — land on it */}
       <AnimatePresence>
