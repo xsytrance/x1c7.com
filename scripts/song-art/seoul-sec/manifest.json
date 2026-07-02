@@ -1,0 +1,90 @@
+{
+  "songId": "my-soul-lives-in-seoul",
+  "model": "sdxl_turbo_1.0_fp16.safetensors",
+  "images": [
+    {
+      "word": "Nostalgic",
+      "emotion": "Nostalgic",
+      "prompt": "abstract atmospheric scene expressing 'Nostalgic' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "nostalgic.png"
+    },
+    {
+      "word": "Wistful",
+      "emotion": "Wistful",
+      "prompt": "abstract atmospheric scene expressing 'Wistful' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "wistful.png"
+    },
+    {
+      "word": "Amused",
+      "emotion": "Amused",
+      "prompt": "abstract atmospheric scene expressing 'Amused' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "amused.png"
+    },
+    {
+      "word": "Worried",
+      "emotion": "Worried",
+      "prompt": "abstract atmospheric scene expressing 'Worried' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "worried.png"
+    },
+    {
+      "word": "Hopeful",
+      "emotion": "Hopeful",
+      "prompt": "abstract atmospheric scene expressing 'Hopeful' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "hopeful.png"
+    },
+    {
+      "word": "Joyful",
+      "emotion": "Joyful",
+      "prompt": "abstract atmospheric scene expressing 'Joyful' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "joyful.png"
+    },
+    {
+      "word": "Euphoric",
+      "emotion": "Euphoric",
+      "prompt": "abstract atmospheric scene expressing 'Euphoric' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "euphoric.png"
+    },
+    {
+      "word": "Playful",
+      "emotion": "Playful",
+      "prompt": "abstract atmospheric scene expressing 'Playful' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "playful.png"
+    },
+    {
+      "word": "Tender",
+      "emotion": "Tender",
+      "prompt": "abstract atmospheric scene expressing 'Tender' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "tender.png"
+    },
+    {
+      "word": "Ecstatic",
+      "emotion": "Ecstatic",
+      "prompt": "abstract atmospheric scene expressing 'Ecstatic' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "ecstatic.png"
+    },
+    {
+      "word": "Funny",
+      "emotion": "Funny",
+      "prompt": "abstract atmospheric scene expressing 'Funny' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "funny.png"
+    },
+    {
+      "word": "Spunky",
+      "emotion": "Spunky",
+      "prompt": "abstract atmospheric scene expressing 'Spunky' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "spunky.png"
+    },
+    {
+      "word": "Desirous",
+      "emotion": "Desirous",
+      "prompt": "abstract atmospheric scene expressing 'Desirous' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "desirous.png"
+    },
+    {
+      "word": "Yearning",
+      "emotion": "Yearning",
+      "prompt": "abstract atmospheric scene expressing 'Yearning' in a long-distance love story lived through phone screens between Seoul and abroad — night city lights, glowing screens, airplanes, rain on glass, warm neon",
+      "file": "yearning.png"
+    }
+  ]
+}
