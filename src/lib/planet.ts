@@ -23,6 +23,8 @@ export interface PlanetAnalysis {
 export interface PlanetAssets {
   /** keyword word -> generated image URL (Phase 4: ComfyUI song art). */
   keywords?: Record<string, string>;
+  /** emotion (lowercase) -> generated backdrop URL — continuous mood art. */
+  sections?: Record<string, string>;
 }
 export interface Planet {
   analysis: PlanetAnalysis;

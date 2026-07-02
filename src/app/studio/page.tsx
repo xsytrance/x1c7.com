@@ -25,11 +25,15 @@ export default function StudioPage() {
   const [template, setTemplate] = useState("kinetic");
 
   // Default the picker to a word-timed song (the ones the engine can drive).
+  // A ?track=<id> deep link wins — the planet's shareable address.
   const timed = useMemo(() => tracks.filter(hasWords), [tracks]);
   const [selectedId, setSelectedId] = useState<string>("");
   useEffect(() => {
-    if (!selectedId && timed.length) setSelectedId(timed[0].id);
-  }, [selectedId, timed]);
+    if (selectedId) return;
+    const linked = new URLSearchParams(window.location.search).get("track");
+    if (linked && tracks.some((t) => t.id === linked)) setSelectedId(linked);
+    else if (timed.length) setSelectedId(timed[0].id);
+  }, [selectedId, timed, tracks]);
 
   const selected = tracks.find((t) => t.id === selectedId);
   const words = currentTrack?.lyricsSynced?.words;
@@ -82,7 +86,15 @@ export default function StudioPage() {
       {/* Stage */}
       <div className="relative z-10 flex flex-1 items-center justify-center overflow-hidden px-4 pb-28">
         {live ? (
-          <KineticStage words={words!} sections={analysis?.sections} keywords={keywordSet} art={currentTrack?.planet?.assets?.keywords} />
+          <KineticStage
+            words={words!}
+            sections={analysis?.sections}
+            keywords={keywordSet}
+            art={currentTrack?.planet?.assets?.keywords}
+            sectionArt={currentTrack?.planet?.assets?.sections}
+            title={currentTrack!.title}
+            summary={analysis?.summary}
+          />
         ) : (
           <div className="text-center">
             {selected && hasWords(selected) ? (
@@ -131,14 +143,20 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-function KineticStage({ words, sections, keywords, art }: { words: SyncedWord[]; sections?: PlanetSection[]; keywords: Set<string>; art?: Record<string, string> }) {
+function KineticStage({ words, sections, keywords, art, sectionArt, title, summary }: {
+  words: SyncedWord[]; sections?: PlanetSection[]; keywords: Set<string>;
+  art?: Record<string, string>; sectionArt?: Record<string, string>;
+  title: string; summary?: string;
+}) {
   const { getCurrentTime } = useMusicPlayer();
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
+  const [showTitle, setShowTitle] = useState(true);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
+  const titleRef = useRef(true);
 
   // One rAF drives the active word (re-render on change) and the current section:
   // on a new section we color-grade the scene + set the emotional-intensity var.
@@ -149,20 +167,29 @@ function KineticStage({ words, sections, keywords, art }: { words: SyncedWord[];
       const i = activeWordIndex(words, t);
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
-        // Generated song art: when a keyword with art lands, it becomes the
-        // backdrop and lingers until the next one takes over.
+        // Keyword art: when a charged word with a painting lands, it takes the
+        // backdrop over the section mood art until the scene changes again.
         if (art && i >= 0) {
           const w = clean(words[i].w).toLowerCase();
           if (art[w]) setBgArt(art[w]);
         }
       }
+      // Title card: only before the first sung word.
+      const titled = words.length > 0 && t < words[0].t - 0.2;
+      if (titled !== titleRef.current) { titleRef.current = titled; setShowTitle(titled); }
       if (sections?.length) {
         const s = activeSection(sections, t);
         const key = s ? `${s.name}${s.start}` : "";
         if (key !== lastSec.current) {
           lastSec.current = key;
           setSection(s);
-          if (s) { gradeTo(s); stageRef.current?.style.setProperty("--emo", String(s.intensity)); }
+          if (s) {
+            gradeTo(s);
+            stageRef.current?.style.setProperty("--emo", String(s.intensity));
+            // Section mood art becomes the base backdrop for this scene.
+            const mood = sectionArt?.[s.emotion.toLowerCase()];
+            if (mood) setBgArt(mood);
+          }
         }
       }
       raf = requestAnimationFrame(tick);
@@ -184,7 +211,10 @@ function KineticStage({ words, sections, keywords, art }: { words: SyncedWord[];
     .map((x) => clean(x.w)).join(" ");
 
   return (
-    <div ref={stageRef} className="kinetic-stage flex w-full flex-col items-center justify-center gap-6 text-center">
+    // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
+    // timeline) must live here, since the beat-scaled .kinetic-stage would
+    // otherwise become their containing block and misplace them.
+    <div className="relative flex h-full w-full flex-col items-center justify-center">
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (
@@ -209,25 +239,89 @@ function KineticStage({ words, sections, keywords, art }: { words: SyncedWord[];
           </motion.div>
         )}
       </AnimatePresence>
-      {section && (
-        <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
-          {section.emotion} <span className="text-white/25">· {treatment}</span>
-        </p>
-      )}
-      <div className="relative flex min-h-[34vh] items-center justify-center">
-        <AnimatePresence>
-          {word && (
-            <motion.div
-              key={idx}
-              className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
-              {...(m as MotionProps)}
-            >
-              {glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
-            </motion.div>
-          )}
-        </AnimatePresence>
+
+      {/* Title card — the brain's interpretation opens the show */}
+      <AnimatePresence>
+        {showTitle && (
+          <motion.div
+            key="title"
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -14, transition: { duration: 0.8 } }}
+            transition={{ duration: 1.4, ease: "easeOut" }}
+            className="pointer-events-none fixed inset-0 z-10 flex flex-col items-center justify-center gap-6 px-8 text-center"
+          >
+            <p className="font-display text-4xl font-black uppercase tracking-tight glow-text sm:text-6xl" style={{ color: "var(--theme-primary)" }}>{title}</p>
+            {summary && <p className="max-w-2xl text-base leading-7 text-white/60 sm:text-lg">{summary}</p>}
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div ref={stageRef} className="kinetic-stage flex w-full flex-col items-center justify-center gap-6 text-center">
+        {section && (
+          <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
+            {section.emotion} <span className="text-white/25">· {treatment}</span>
+          </p>
+        )}
+        <div className="relative flex min-h-[34vh] items-center justify-center">
+          <AnimatePresence>
+            {word && (
+              <motion.div
+                key={idx}
+                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
+                {...(m as MotionProps)}
+              >
+                {glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </div>
+        {upcoming && <p className="kinetic-hint">{upcoming}</p>}
       </div>
-      {upcoming && <p className="kinetic-hint">{upcoming}</p>}
+
+      {sections && sections.length > 0 && <ArcTimeline sections={sections} />}
+    </div>
+  );
+}
+
+/* ========== EMOTIONAL ARC TIMELINE ==========
+   The planet made tangible: the song's emotion sections as a scrubbable strip.
+   Click anywhere to jump; the playhead is driven imperatively (no re-renders). */
+function ArcTimeline({ sections }: { sections: PlanetSection[] }) {
+  const { duration, seek, getCurrentTime } = useMusicPlayer();
+  const markerRef = useRef<HTMLDivElement>(null);
+  const total = duration || (sections[sections.length - 1].start + 20);
+
+  useEffect(() => {
+    let raf = 0;
+    const tick = () => {
+      if (markerRef.current) markerRef.current.style.left = `${Math.min(100, (getCurrentTime() / total) * 100)}%`;
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [getCurrentTime, total]);
+
+  return (
+    <div className="fixed inset-x-0 bottom-[86px] z-10 px-4 sm:px-8">
+      <div
+        className="group relative mx-auto h-2.5 max-w-4xl cursor-pointer overflow-visible rounded-full"
+        onClick={(e) => { const r = e.currentTarget.getBoundingClientRect(); seek(((e.clientX - r.left) / r.width) * total); }}
+        title="Emotional arc — click to travel"
+      >
+        <div className="flex h-full w-full overflow-hidden rounded-full opacity-80 transition-all group-hover:h-full group-hover:opacity-100">
+          {sections.map((s, i) => {
+            const end = sections[i + 1]?.start ?? total;
+            const w = Math.max(0, ((end - s.start) / total) * 100);
+            return (
+              <div key={`${s.name}${s.start}`} style={{ width: `${w}%`, background: s.colorHint, opacity: 0.45 + s.intensity * 0.55 }}
+                className="h-full transition-opacity" title={`${s.emotion} · ${s.name}`} />
+            );
+          })}
+        </div>
+        <div ref={markerRef} className="absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full border-2 border-white/80"
+          style={{ background: "var(--theme-primary)", boxShadow: "0 0 12px var(--theme-primary)" }} />
+      </div>
     </div>
   );
 }
