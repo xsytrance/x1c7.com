@@ -2,6 +2,9 @@ out/
 out-sections/
 seoul-kw/
 seoul-sec/
+cc-kw/
+cc-sec/
 planet.json
 sections-planet.json
 seoul-planet-full.json
+cc-planet-full.json
