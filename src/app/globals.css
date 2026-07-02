@@ -345,3 +345,64 @@ body.cinematic-on { overflow: hidden; }
   0% { filter: drop-shadow(0 0 8px var(--theme-accent)); }
   100% { transform: scale(1.14); filter: drop-shadow(0 0 46px var(--theme-accent)) drop-shadow(0 0 90px var(--theme-primary)); }
 }
+
+/* ── The Galaxy ─────────────────────────────────────────────────────────── */
+.galaxy-star {
+  position: absolute;
+  border-radius: 9999px;
+  background: #fff;
+  opacity: 0.25;
+  animation: galaxy-twinkle 5s ease-in-out infinite;
+}
+@keyframes galaxy-twinkle {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.55; }
+}
+.galaxy-planet {
+  animation: galaxy-bob 7s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes galaxy-bob {
+  0%, 100% { margin-top: 0; }
+  50% { margin-top: -1.2vmin; }
+}
+.galaxy-pulse {
+  animation: galaxy-pulse-anim 1.2s ease-in-out infinite;
+}
+@keyframes galaxy-pulse-anim {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.08); opacity: 0.85; }
+}
+.galaxy-moon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.75);
+  animation: galaxy-orbit linear infinite;
+  pointer-events: none;
+}
+.galaxy-moon--far {
+  width: 3.5px;
+  height: 3.5px;
+  background: rgba(255, 255, 255, 0.45);
+}
+@keyframes galaxy-orbit {
+  from { transform: rotate(0deg) translateX(calc(50% + 4.2vmin)) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(calc(50% + 4.2vmin)) rotate(-360deg); }
+}
+.galaxy-asteroid {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 40% 60% 55% 45%;
+  background: rgba(255, 255, 255, 0.16);
+  animation: galaxy-drift linear infinite;
+  pointer-events: none;
+}
+@keyframes galaxy-drift {
+  from { transform: translate(0, 0) rotate(0deg); }
+  to { transform: translate(4vw, -3vh) rotate(180deg); }
+}
