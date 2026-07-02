@@ -8,6 +8,7 @@ import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { activeWordIndex, type SyncedWord } from "@/lib/lyrics";
 import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
+import { glyphFor, type Glyph } from "@/lib/shapes";
 import type { Track } from "@/data/tracks";
 
 const TEMPLATES = [
@@ -166,6 +167,10 @@ function KineticStage({ words, sections, keywords }: { words: SyncedWord[]; sect
   const charged = !!word && keywords.has(shown.toLowerCase());
   const treatment: SectionMotion = section ? sectionMotion(section) : "pulse";
   const m = MOTION[treatment];
+  // Shape-morph: only when the word maps to a glyph AND has enough airtime
+  // (next word far enough away) for the morph to read.
+  const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
+  const glyph = shown && airtime >= 0.85 ? glyphFor(shown) : null;
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
     .map((x) => clean(x.w)).join(" ");
 
@@ -184,12 +189,61 @@ function KineticStage({ words, sections, keywords }: { words: SyncedWord[]; sect
               className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
               {...(m as MotionProps)}
             >
-              {shown}
+              {glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
             </motion.div>
           )}
         </AnimatePresence>
       </div>
       {upcoming && <p className="kinetic-hint">{upcoming}</p>}
     </div>
+  );
+}
+
+/* ========== SHAPE-MORPH ==========
+   The word lands, then dissolves into its glyph — which draws itself on and
+   glows. The morph's character follows the section's emotion: shatter = hard
+   snap, still/drift = slow dissolve. */
+const MORPH_TIMING: Record<SectionMotion, { hold: number; morph: number; ease: string }> = {
+  still:   { hold: 0.55, morph: 1.1, ease: "easeInOut" },
+  drift:   { hold: 0.5,  morph: 0.9, ease: "easeInOut" },
+  pulse:   { hold: 0.42, morph: 0.7, ease: "easeOut" },
+  surge:   { hold: 0.36, morph: 0.55, ease: "easeOut" },
+  shatter: { hold: 0.3,  morph: 0.38, ease: "backOut" },
+};
+
+function WordMorph({ word, glyph, treatment }: { word: string; glyph: Glyph; treatment: SectionMotion }) {
+  const t = MORPH_TIMING[treatment];
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      {/* the word: lands, then gives itself to the shape */}
+      <motion.span
+        initial={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: [1, 1, 0], scale: [1, 1, treatment === "shatter" ? 1.5 : 0.72] }}
+        transition={{ duration: t.hold + t.morph * 0.6, times: [0, t.hold / (t.hold + t.morph * 0.6), 1], ease: "easeIn" }}
+      >
+        {word}
+      </motion.span>
+      {/* the glyph: draws itself on, inheriting the word's glow */}
+      <motion.svg
+        viewBox="0 0 100 100"
+        className="absolute"
+        style={{ width: "1.2em", height: "1.2em" }}
+        initial={{ opacity: 0, scale: 0.5, rotate: treatment === "shatter" ? -8 : 0 }}
+        animate={{ opacity: 1, scale: 1, rotate: 0 }}
+        transition={{ delay: t.hold, duration: t.morph, ease: t.ease === "backOut" ? [0.34, 1.56, 0.64, 1] : "easeInOut" }}
+        aria-label={glyph.id}
+      >
+        <motion.path
+          d={glyph.path}
+          fillRule={glyph.fillRule}
+          stroke="var(--theme-accent)"
+          strokeWidth={3}
+          fill="var(--theme-primary)"
+          initial={{ pathLength: 0, fillOpacity: 0 }}
+          animate={{ pathLength: 1, fillOpacity: 0.9 }}
+          transition={{ delay: t.hold, duration: t.morph, ease: "easeInOut", fillOpacity: { delay: t.hold + t.morph * 0.5, duration: t.morph * 0.6 } }}
+        />
+      </motion.svg>
+    </span>
   );
 }
