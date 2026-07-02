@@ -14,6 +14,8 @@ import type { Track } from "@/data/tracks";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { CinematicLyrics } from "@/components/CinematicLyrics";
+import { canPerform } from "@/components/KineticStage";
+import { useMemo } from "react";
 
 type VizMode = "bars" | "wave" | "radial";
 
@@ -55,6 +57,12 @@ function TrackCard({ track, index, isCurrent, isPlaying, onPlay }: {
           className="absolute inset-0"
           style={{ background: `radial-gradient(circle at 50% 50%, ${track.color}33, transparent 70%), linear-gradient(to bottom, transparent 50%, rgba(5,3,11,0.8) 100%)` }}
         />
+        {/* Planet badge — this song is a full synced show */}
+        {canPerform(track) && (
+          <div className="absolute left-4 top-4 rounded-full border border-white/25 bg-black/55 px-2.5 py-1 font-mono text-[9px] uppercase tracking-wider text-white backdrop-blur">
+            🪐 full show
+          </div>
+        )}
         {/* Playing indicator */}
         {isCurrent && isPlaying && (
           <div className="absolute right-4 top-4 flex gap-1">
@@ -173,7 +181,29 @@ export default function Page() {
   const playTrack = (track: Track) => playFromCtx(track, tracks);
 
   const heroTrack = tracks.find((t) => t.featured) || tracks[0];
-  const gridTracks = tracks.filter(t => t.id !== heroTrack.id);
+
+  // ── Library browsing: search + genre/vibe filters, planets always first ──
+  const [query, setQuery] = useState("");
+  const [genre, setGenre] = useState<string | null>(null);
+  const [mood, setMood] = useState<string | null>(null);
+
+  const genres = useMemo(() => [...new Set(tracks.map((t) => t.genre).filter(Boolean))].sort(), [tracks]);
+  const moods = useMemo(() => [...new Set(tracks.map((t) => t.mood).filter((m): m is string => !!m))].sort(), [tracks]);
+
+  const gridTracks = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    const list = tracks
+      .filter((t) => t.id !== heroTrack.id)
+      .filter((t) => !genre || t.genre === genre)
+      .filter((t) => !mood || t.mood === mood)
+      .filter((t) => !q || t.title.toLowerCase().includes(q) || t.genre.toLowerCase().includes(q) || (t.mood || "").toLowerCase().includes(q));
+    // Complete planets (full synced shows) always float to the top —
+    // automatically, so new ones rise as they're finished.
+    return [...list.filter(canPerform), ...list.filter((t) => !canPerform(t))];
+  }, [tracks, heroTrack.id, query, genre, mood]);
+
+  const planetCount = useMemo(() => tracks.filter(canPerform).length, [tracks]);
+  const filtering = !!(query.trim() || genre || mood);
 
   return (
     <main className="relative min-h-screen overflow-hidden pb-32">
@@ -270,14 +300,70 @@ export default function Page() {
         </ScrollReveal>
       </section>
 
-      {/* ===== TRACK GRID ===== */}
+      {/* ===== TRACK GRID + BROWSE ===== */}
       <section className="relative z-10 mx-auto mt-16 max-w-6xl px-4 sm:px-6 lg:px-8">
-        <ScrollReveal><p className="mb-8 font-mono text-xs uppercase tracking-[0.4em] text-white/40">All Transmissions</p></ScrollReveal>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {gridTracks.map((track, i) => (
-            <TrackCard key={track.id} track={track} index={i} isCurrent={currentTrack?.id === track.id} isPlaying={isPlaying} onPlay={() => playTrack(track)} />
+        <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
+          <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/40">All Transmissions</p>
+          <p className="font-mono text-[10px] uppercase tracking-wider text-white/30">
+            🪐 {planetCount} full shows · {gridTracks.length} shown
+          </p>
+        </div>
+
+        {/* Search */}
+        <input
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search title, genre, vibe…"
+          className="mb-4 w-full rounded-full border border-white/15 bg-black/40 px-5 py-3 font-mono text-sm text-white outline-none backdrop-blur transition focus:border-[color:var(--theme-primary)] sm:max-w-md"
+        />
+
+        {/* Genre chips */}
+        <div className="mb-2 flex flex-wrap items-center gap-1.5">
+          <span className="mr-1 font-mono text-[9px] uppercase tracking-[0.3em] text-white/30">Genre</span>
+          <button onClick={() => setGenre(null)}
+            className={`rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition ${!genre ? "bg-white/20 text-white" : "bg-white/5 text-white/40 hover:bg-white/10"}`}>
+            All
+          </button>
+          {genres.map((g) => (
+            <button key={g} onClick={() => setGenre(genre === g ? null : g)}
+              className={`rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition ${genre === g ? "bg-white/20 text-white" : "bg-white/5 text-white/40 hover:bg-white/10"}`}>
+              {g}
+            </button>
           ))}
         </div>
+
+        {/* Vibe chips */}
+        <div className="mb-8 flex flex-wrap items-center gap-1.5">
+          <span className="mr-1 font-mono text-[9px] uppercase tracking-[0.3em] text-white/30">Vibe</span>
+          <button onClick={() => setMood(null)}
+            className={`rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition ${!mood ? "bg-white/20 text-white" : "bg-white/5 text-white/40 hover:bg-white/10"}`}>
+            All
+          </button>
+          {moods.map((m) => (
+            <button key={m} onClick={() => setMood(mood === m ? null : m)}
+              className={`rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider transition ${mood === m ? "bg-white/20 text-white" : "bg-white/5 text-white/40 hover:bg-white/10"}`}>
+              {m}
+            </button>
+          ))}
+        </div>
+
+        {gridTracks.length === 0 ? (
+          <div className="rounded-[2rem] border border-dashed border-white/10 py-16 text-center">
+            <p className="font-mono text-xs uppercase tracking-wider text-white/35">No transmissions match — clear a filter?</p>
+            {filtering && (
+              <button onClick={() => { setQuery(""); setGenre(null); setMood(null); }}
+                className="mt-4 rounded-full border border-white/20 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/60 hover:text-white">
+                Reset filters
+              </button>
+            )}
+          </div>
+        ) : (
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {gridTracks.map((track, i) => (
+              <TrackCard key={track.id} track={track} index={i} isCurrent={currentTrack?.id === track.id} isPlaying={isPlaying} onPlay={() => playTrack(track)} />
+            ))}
+          </div>
+        )}
       </section>
 
       {/* ===== LIVE FROM SOUNDCLOUD ===== */}
