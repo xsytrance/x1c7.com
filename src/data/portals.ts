@@ -23,6 +23,17 @@ export const portals: Portal[] = [
     status: "forming",
   },
   {
+    slug: "galaxy",
+    title: "The Galaxy",
+    signal: "Every song is a planet.",
+    description: "The catalog as a universe — living lyric worlds you can land on, touch, shake, and blow through.",
+    details: ["15 interactive planets", "LLM-choreographed touch moments", "Word-synced kinetic shows"],
+    cta: "Enter orbit",
+    color: "#8b7bff",
+    glyph: "🪐",
+    status: "live",
+  },
+  {
     slug: "level-ready",
     title: "Level Ready",
     signal: "AI help for real life.",

@@ -6,7 +6,7 @@
 // lyric show takes over right here. Songs without word data drift by as
 // asteroids, waiting to become worlds.
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTracks } from "@/lib/useTracks";
@@ -34,6 +34,15 @@ export default function GalaxyPage() {
 
   const planets = useMemo(() => tracks.filter(canPerform), [tracks]);
   const asteroids = useMemo(() => tracks.filter((t) => !canPerform(t)), [tracks]);
+
+  // Deep link: /galaxy?track=<id> opens that planet's landing card —
+  // a shareable address for every world.
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get("track");
+    if (!id) return;
+    const t = planets.find((p) => p.id === id);
+    if (t) setFocus(t);
+  }, [planets]);
 
   return (
     <main className="relative h-[100dvh] overflow-hidden bg-[#030208]">
