@@ -87,15 +87,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 }) {
   const { getCurrentTime } = useMusicPlayer();
   const rawWords = track.lyricsSynced!.words!;
-  // Aligner mis-anchor guard: a verse's FIRST word sometimes gets pinned to
-  // the start of the preceding instrumental gap, making it appear on stage
-  // many seconds before it's sung. Any word with implausibly long airtime
-  // (>5s — longer than any real held note here) is re-anchored to just
-  // before the next word.
+  // Aligner mis-anchor guard: before a pause, the aligner pins the NEXT sung
+  // word to the start of the silence — so it appears on stage seconds early
+  // and "sits there waiting" (owner's words). Real held notes in this catalog
+  // run ~1.3–2.2s, so any mid-song word with airtime >2.5s is treated as
+  // mis-anchored and re-timed to just before its successor. (The final word
+  // of the song has no successor and is left alone.)
+  const MAX_HOLD = 2.5;
   const words = useMemo(() => {
     const out = rawWords.map((w) => ({ ...w }));
     for (let i = 0; i < out.length - 1; i++) {
-      if (out[i + 1].t - out[i].t > 5) out[i] = { ...out[i], t: out[i + 1].t - 0.4 };
+      if (out[i + 1].t - out[i].t > MAX_HOLD) out[i] = { ...out[i], t: out[i + 1].t - 0.45 };
     }
     return out;
   }, [rawWords]);
@@ -133,7 +135,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     let raf = 0;
     const tick = () => {
       const t = getCurrentTime();
-      const i = activeWordIndex(words, t);
+      let i = activeWordIndex(words, t);
+      // Dwell cap: during a long instrumental pause the last sung word (which
+      // now owns the whole gap after re-anchoring) bows out instead of
+      // sitting on stage — the show breathes, then the next word arrives on cue.
+      if (i >= 0 && i < words.length - 1) {
+        const air = words[i + 1].t - words[i].t;
+        if (air > 3.4 && t - words[i].t > 3.2) i = -1;
+      }
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
         // Keyword art: when a charged word with a painting lands, it takes the
