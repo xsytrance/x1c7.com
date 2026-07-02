@@ -8,7 +8,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
-import { activeWordIndex, type SyncedWord } from "@/lib/lyrics";
+import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
@@ -55,10 +55,13 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 2 }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
+  /** Show version. Each pass is preserved as a "satellite" of the planet;
+   * the newest pass is the main show. Pass 1 = the original kinetic cut. */
+  pass?: number;
 }) {
   const { getCurrentTime } = useMusicPlayer();
   const words = track.lyricsSynced!.words!;
@@ -72,11 +75,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
     for (const k of analysis?.keywords ?? []) m[k.word.toLowerCase()] = k.emotion;
     return m;
   }, [analysis]);
+  // Line boundaries from the LRC: a word is LINE-FINAL when the next word's
+  // timestamp starts a new lyric line. Line endings get extra stage presence.
+  const lineStarts = useMemo(() => {
+    const s = new Set<number>();
+    for (const l of parseLyrics(track.lyrics).lines) if (!l.header && l.t != null) s.add(Math.round(l.t * 100));
+    return s;
+  }, [track.lyrics]);
 
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
   const [showTitle, setShowTitle] = useState(true);
+  const [wave, setWave] = useState(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
@@ -112,6 +123,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
             stageRef.current?.style.setProperty("--emo", String(s.intensity));
             const mood = sectionArt?.[s.emotion.toLowerCase()];
             if (mood) setBgArt(mood);
+            // Pass 2: big scene changes send a shockwave through the stage.
+            if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
           }
         }
       }
@@ -119,7 +132,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -139,8 +152,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
   const glyph = !burns && !glitches && !fizzes && !types && shown && airtime >= 0.6
     ? (glyphFor(shown) ?? (charged ? glyphForEmotion(keywordEmotion[lower]) : null))
     : null;
-  const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
-    .map((x) => clean(x.w)).join(" ");
+  // Line-final: the word that CLOSES a lyric line — it owns the stage a beat
+  // longer, so it gets extra size, glow, and the backdrop leans in.
+  const final = idx >= 0 && (words[idx + 1] ? lineStarts.has(Math.round(words[idx + 1].t * 100)) : true);
+  // Held: a long sung note. The word itself performs the hold — it swells over
+  // the note's duration and breathes with the live bass (--beat) underneath.
+  const held = pass >= 2 && idx >= 0 && airtime >= 1.3 && !burns;
+  // Pass 1 kept the upcoming-words hint; owner feedback: next line must not
+  // appear before it's sung. Pass 2 removes it entirely.
+  const upcoming = pass === 1
+    ? (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4)).map((x) => clean(x.w)).join(" ")
+    : "";
 
   return (
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
@@ -154,15 +176,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
             key={bgArt}
             className="pointer-events-none fixed inset-0 -z-10"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 0.6 }}
+            animate={{ opacity: held ? 0.85 : 0.6 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 1.6, ease: "easeInOut" }}
+            transition={{ duration: held ? 0.7 : 1.6, ease: "easeInOut" }}
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <motion.img
               src={bgArt}
               alt=""
               className="h-full w-full object-cover"
+              style={{ filter: held ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
               initial={{ scale: 1.06 }}
               animate={{ scale: 1.16 }}
               transition={{ duration: 24, ease: "linear" }}
@@ -203,18 +226,74 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
         <div className="relative flex min-h-[34vh] items-center justify-center">
           {/* beat halo — the stage breathes with the music even between words */}
           <div className="kinetic-halo" aria-hidden />
+          {/* ambient dust — slow emotion-tinted particles drifting up the stage */}
+          {pass >= 2 && Array.from({ length: 12 }).map((_, i) => (
+            <span key={`d${i}`} className="kinetic-dust" aria-hidden style={{
+              left: `${(i * 83 + 7) % 96}%`,
+              animationDelay: `${(i * 1.7) % 9}s`,
+              animationDuration: `${9 + (i * 2.3) % 7}s`,
+              width: `${3 + (i % 3) * 2}px`,
+              height: `${3 + (i % 3) * 2}px`,
+            }} />
+          ))}
+          {/* section shockwave — big scene changes ripple outward */}
+          <AnimatePresence>
+            {pass >= 2 && wave > 0 && (
+              <motion.span
+                key={`w${wave}`}
+                className="pointer-events-none absolute rounded-full"
+                style={{ width: "34vmin", height: "34vmin", border: "2px solid var(--theme-accent)" }}
+                initial={{ opacity: 0.55, scale: 0.25 }}
+                animate={{ opacity: 0, scale: 3.4 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.1, ease: "easeOut" }}
+                aria-hidden
+              />
+            )}
+          </AnimatePresence>
           <AnimatePresence>
             {word && (
               <motion.div
                 key={idx}
-                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
+                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}`}
                 {...(m as MotionProps)}
               >
-                {burns ? <WordBurn word={shown} airtime={airtime} />
-                  : glitches ? <WordGlitch word={shown} airtime={airtime} />
-                  : fizzes ? <WordFizz word={shown} airtime={airtime} />
-                  : types ? <WordType word={shown} airtime={airtime} />
-                  : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
+                {/* ghost echo — line-final and charged words leave an afterimage */}
+                {pass >= 2 && (final || charged) && !burns && (
+                  <motion.span
+                    className="pointer-events-none absolute inset-0 flex items-center justify-center"
+                    initial={{ opacity: 0.35, scale: 1 }}
+                    animate={{ opacity: 0, scale: 1.9 }}
+                    transition={{ duration: 0.9, ease: "easeOut" }}
+                    aria-hidden
+                  >
+                    {shown}
+                  </motion.span>
+                )}
+                <span className="kinetic-breathe">
+                  {held ? (
+                    // The held note performs: the word swells for the length of
+                    // the note while the beat makes it breathe (CSS --beat scale).
+                    <motion.span
+                      className="inline-block"
+                      initial={{ scale: 1, letterSpacing: "0em" }}
+                      animate={{ scale: 1.24, letterSpacing: "0.045em" }}
+                      transition={{ duration: Math.min(airtime * 0.92, 4.5), ease: "easeOut" }}
+                    >
+                      {glitches ? <WordGlitch word={shown} airtime={airtime} />
+                        : fizzes ? <WordFizz word={shown} airtime={airtime} />
+                        : types ? <WordType word={shown} airtime={airtime} />
+                        : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
+                    </motion.span>
+                  ) : (
+                    burns ? <WordBurn word={shown} airtime={airtime} />
+                      : glitches ? <WordGlitch word={shown} airtime={airtime} />
+                      : fizzes ? <WordFizz word={shown} airtime={airtime} />
+                      : types ? <WordType word={shown} airtime={airtime} />
+                      : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
+                      : pass >= 2 && charged ? <CascadeWord word={shown} /> : shown
+                  )}
+                </span>
               </motion.div>
             )}
           </AnimatePresence>
@@ -438,6 +517,28 @@ function WordType({ word, airtime }: { word: string; airtime: number }) {
         transition={{ duration: Math.max(0.9, airtime * 0.9), times: [0, 0.45, 0.55, 0.65, 0.78, 0.88, 1] }}
         aria-hidden
       />
+    </span>
+  );
+}
+
+/* ========== CASCADE ==========
+   Charged words (the brain's emotional picks) build letter by letter — each
+   character pops up in sequence so the word assembles itself on the beat. */
+function CascadeWord({ word }: { word: string }) {
+  const letters = [...word];
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ opacity: 0, y: "0.32em", rotate: i % 2 ? 5 : -5, scale: 0.7 }}
+          animate={{ opacity: 1, y: "0em", rotate: 0, scale: 1 }}
+          transition={{ delay: i * 0.045, type: "spring", stiffness: 480, damping: 22 }}
+        >
+          {ch}
+        </motion.span>
+      ))}
     </span>
   );
 }
