@@ -182,11 +182,86 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [blow, setBlow] = useState<{ prompt: string } | null>(null);
   const blowKey = useRef(-1);
   const [gust, setGust] = useState(0);
+  // Shake-to-scatter: a real phone shake rattles the stage and the current
+  // word reacts in the song's own tap language.
+  const [quake, setQuake] = useState(0);
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
   const titleRef = useRef(true);
+
+  // ── Motion senses (pass 3+) ────────────────────────────────────────────
+  // Tilt parallax: the backdrop painting and anchor drift opposite the
+  // device tilt (or mouse on desktop) — the world gains depth. Written as
+  // CSS vars straight onto the root (zero React re-renders).
+  useEffect(() => {
+    if (pass < 3) return;
+    const root = rootRef.current;
+    if (!root) return;
+    const set = (x: number, y: number) => {
+      root.style.setProperty("--par-x", `${x.toFixed(1)}px`);
+      root.style.setProperty("--par-y", `${y.toFixed(1)}px`);
+    };
+    const onTilt = (e: DeviceOrientationEvent) => {
+      if (e.gamma == null || e.beta == null) return;
+      set(Math.max(-14, Math.min(14, -e.gamma * 0.6)), Math.max(-10, Math.min(10, -(e.beta - 40) * 0.35)));
+    };
+    const onMouse = (e: MouseEvent) => {
+      set((0.5 - e.clientX / window.innerWidth) * 22, (0.5 - e.clientY / window.innerHeight) * 14);
+    };
+    window.addEventListener("deviceorientation", onTilt);
+    window.addEventListener("mousemove", onMouse);
+    // iOS: motion sensors need a permission request from a user gesture —
+    // piggyback on the first tap anywhere in the show.
+    const askMotion = () => {
+      type MotionCtor = { requestPermission?: () => Promise<string> };
+      const dm = DeviceMotionEvent as unknown as MotionCtor;
+      const dov = DeviceOrientationEvent as unknown as MotionCtor;
+      dm.requestPermission?.().catch(() => {});
+      dov.requestPermission?.().catch(() => {});
+      window.removeEventListener("pointerdown", askMotion);
+    };
+    window.addEventListener("pointerdown", askMotion);
+    // Shake detection: spikes in acceleration delta, with a cooldown.
+    let lx = 0, ly = 0, lz = 0, energy = 0, cooldownUntil = 0;
+    const onShake = (e: DeviceMotionEvent) => {
+      const g = e.accelerationIncludingGravity;
+      if (!g || g.x == null || g.y == null || g.z == null) return;
+      const d = Math.abs(g.x - lx) + Math.abs(g.y - ly) + Math.abs(g.z - lz);
+      lx = g.x; ly = g.y; lz = g.z;
+      energy = energy * 0.9 + d;
+      const now = Date.now();
+      if (energy > 55 && now > cooldownUntil) {
+        cooldownUntil = now + 2500;
+        energy = 0;
+        setQuake((q) => q + 1);
+      }
+    };
+    window.addEventListener("devicemotion", onShake);
+    return () => {
+      window.removeEventListener("deviceorientation", onTilt);
+      window.removeEventListener("mousemove", onMouse);
+      window.removeEventListener("devicemotion", onShake);
+      window.removeEventListener("pointerdown", askMotion);
+    };
+  }, [pass]);
+  // A shake scatters the current word in the song's own tap language.
+  useEffect(() => {
+    if (quake > 0 && lastWord.current >= 0) setTouchBurn(lastWord.current);
+  }, [quake]);
+  // …and physically rattles the stage (CSS animation, retriggered per shake).
+  useEffect(() => {
+    if (!quake) return;
+    const el = stageRef.current;
+    if (!el) return;
+    el.classList.remove("kinetic-quake");
+    void el.offsetWidth; // reflow so the animation restarts
+    el.classList.add("kinetic-quake");
+    const to = setTimeout(() => el.classList.remove("kinetic-quake"), 650);
+    return () => clearTimeout(to);
+  }, [quake]);
 
   // One rAF drives the active word (re-render on change) and the current section:
   // on a new section we color-grade the scene + set the emotional-intensity var.
@@ -315,7 +390,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
     // timeline) must live here, since the beat-scaled .kinetic-stage would
     // otherwise become their containing block and misplace them.
-    <div className="relative flex h-full w-full flex-col items-center justify-center">
+    <div ref={rootRef} className="relative flex h-full w-full flex-col items-center justify-center">
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (
@@ -327,17 +402,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             exit={{ opacity: 0 }}
             transition={{ duration: held ? 0.7 : 1.6, ease: "easeInOut" }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <motion.img
-              src={bgArt}
-              alt=""
-              className="h-full w-full object-cover"
-              style={{ filter: held ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
-              initial={{ scale: 1.06 }}
-              animate={{ scale: 1.16 }}
-              transition={{ duration: 24, ease: "linear" }}
-            />
-            <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 42%, rgba(5,3,11,0.72) 100%)" }} />
+            {/* parallax shell — rides the device tilt / mouse via CSS vars */}
+            <div className="h-full w-full" style={{ transform: "translate3d(var(--par-x, 0px), var(--par-y, 0px), 0) scale(1.05)", willChange: "transform" }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <motion.img
+                src={bgArt}
+                alt=""
+                className="h-full w-full object-cover"
+                style={{ filter: held ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
+                initial={{ scale: 1.06 }}
+                animate={{ scale: 1.16 }}
+                transition={{ duration: 24, ease: "linear" }}
+              />
+              <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 42%, rgba(5,3,11,0.72) 100%)" }} />
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -516,6 +594,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           <motion.div
             key={`a${anchor.key}`}
             className="pointer-events-none fixed inset-0 z-[6] flex items-center justify-center overflow-hidden"
+            style={{ transform: "translate3d(calc(var(--par-x, 0px) * 1.7), calc(var(--par-y, 0px) * 1.7), 0)", willChange: "transform" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 1.1 } }}
