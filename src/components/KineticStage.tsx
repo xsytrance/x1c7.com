@@ -169,9 +169,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Anchor word: a charged word that arrives HUGE and lingers translucently
   // over the following words for a few seconds.
   const [anchor, setAnchor] = useState<{ word: string; key: number; fromX: string; rot: number } | null>(null);
-  // Interactivity: tap a word to set it on fire. (Stale indices go inert on
-  // their own when the song moves to the next word.)
+  // Interactivity: tap a word and it reacts in THIS SONG'S language — the
+  // choreographer LLM picked the effect per planet. (Stale indices go inert
+  // on their own when the song moves to the next word.)
   const [touchBurn, setTouchBurn] = useState(-1);
+  const interactions = track.planet?.interactions;
+  const tapFx = interactions?.tapEffect ?? "dissolve";
+  // Choreographed wipe moments (also from the planet's interaction data).
+  const [wipe, setWipe] = useState<{ layer: string; prompt: string } | null>(null);
+  const wipeKey = useRef(-1);
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
@@ -220,6 +226,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       // Anchor expiry — it hangs around for ~7s, then dissolves.
       if (anchorAt.current && t - anchorAt.current > 7) { anchorAt.current = 0; setAnchor(null); }
+      // Choreographed wipe windows: enter/leave the moment.
+      if (pass >= 3 && interactions?.moments?.length) {
+        const mo = interactions.moments.find((mm) => mm.type === "wipe" && t >= mm.t && t < mm.end);
+        const key = mo ? mo.t : -1;
+        if (key !== wipeKey.current) {
+          wipeKey.current = key;
+          setWipe(mo ? { layer: mo.layer, prompt: mo.prompt } : null);
+        }
+      }
       // Title card: only before the first sung word.
       const titled = words.length > 0 && t < words[0].t - 0.2;
       if (titled !== titleRef.current) { titleRef.current = titled; setShowTitle(titled); }
@@ -243,7 +258,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, interactions]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -443,7 +458,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                       : types ? <WordType word={shown} airtime={airtime} />
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
                       : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
-                    if (burns || touchBurn === idx) return <WordBurn word={shown} airtime={touchBurn === idx ? Math.max(airtime, 1.2) : airtime} />;
+                    // Tap reaction — in the song's own language (per-planet choreography).
+                    if (touchBurn === idx) {
+                      if (tapFx === "burn") return <WordBurn word={shown} airtime={Math.max(airtime, 1.2)} />;
+                      if (tapFx === "shatter") return <WordShatter word={shown} />;
+                      if (tapFx === "bloom") return <WordBloom word={shown} />;
+                      return <WordDissolve word={shown} />;
+                    }
+                    if (burns) return <WordBurn word={shown} airtime={airtime} />;
                     // Dynamic stagecraft: each word rushes in from its own direction.
                     if (dyn && !slams) inner = (
                       <motion.span
@@ -505,6 +527,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
       {/* Pressure gauge — the emotional intensity as a living instrument */}
       {pass >= 3 && mode !== "focus" && <PressureGauge section={section} />}
+
+      {/* Choreographed wipe moment — wipe the song's veil away */}
+      {pass >= 3 && <WipeLayer moment={wipe} />}
 
       {sections && sections.length > 0 && <ArcTimeline sections={sections} bottomClass={timelineBottomClass} />}
     </div>
@@ -869,6 +894,159 @@ function WordWhisper({ word, airtime }: { word: string; airtime: number }) {
     >
       {word}
     </motion.span>
+  );
+}
+
+/* ========== TAP EFFECTS ==========
+   What tapping a word does is chosen PER SONG by the choreographer LLM —
+   fire worlds burn (WordBurn above), breakup worlds shatter, dreamy worlds
+   dissolve, love worlds bloom. */
+function WordShatter({ word }: { word: string }) {
+  const letters = [...word];
+  const r = (i: number, m: number) => ((i * 61 + 17) % 83) / 83 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ x: "0em", y: "0em", rotate: 0, opacity: 1 }}
+          animate={{
+            x: `${(i % 2 ? 1 : -1) * (0.15 + r(i, 0.5))}em`,
+            y: `${0.2 + r(i + 3, 0.7)}em`,
+            rotate: (i % 2 ? 1 : -1) * (20 + r(i + 5, 50)),
+            opacity: 0,
+            color: "#ffffff",
+            textShadow: "0 0 0.3em var(--theme-accent)",
+          }}
+          transition={{ duration: 0.75, delay: r(i + 7, 0.08), ease: [0.2, 0.6, 0.4, 1] }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+function WordDissolve({ word }: { word: string }) {
+  const letters = [...word];
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ opacity: 1, y: "0em", filter: "blur(0px)" }}
+          animate={{ opacity: 0, y: "-0.45em", filter: "blur(7px)", letterSpacing: "0.1em" }}
+          transition={{ duration: 1.1, delay: i * 0.05, ease: "easeOut" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+function WordBloom({ word }: { word: string }) {
+  const r = (i: number, m: number) => ((i * 47 + 13) % 71) / 71 * m;
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span
+        className="inline-block"
+        animate={{ color: "#ffb7d5", scale: [1, 1.08, 1.02], textShadow: "0 0 0.5em rgba(255,150,200,0.8)" }}
+        transition={{ duration: 0.9, ease: "easeOut" }}
+      >
+        {word}
+      </motion.span>
+      {Array.from({ length: 10 }).map((_, i) => (
+        <motion.span
+          key={i}
+          className="pointer-events-none absolute"
+          style={{
+            left: `${10 + ((i * 71) % 80)}%`, top: "45%",
+            width: "0.09em", height: "0.13em", borderRadius: "60% 40% 55% 45%",
+            background: i % 2 ? "#ffb7d5" : "color-mix(in srgb, var(--theme-accent) 70%, white)",
+          }}
+          initial={{ opacity: 0, y: "0em", scale: 0.4, rotate: 0 }}
+          animate={{
+            opacity: [0, 1, 1, 0],
+            y: [`0em`, `-${0.4 + r(i, 0.5)}em`, `${0.3 + r(i + 2, 0.5)}em`],
+            x: [`0em`, `${(i % 2 ? 1 : -1) * r(i + 4, 0.35)}em`],
+            rotate: (i % 2 ? 1 : -1) * (60 + r(i + 6, 120)),
+            scale: 1,
+          }}
+          transition={{ duration: 1.5, delay: r(i + 8, 0.25), ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========== WIPE LAYER ==========
+   A choreographed moment: a themed veil (ash, frost, steam, fog, static)
+   covers the stage and the listener wipes it away with a finger. */
+const WIPE_COLORS: Record<string, [string, string]> = {
+  ash: ["#241f1c", "#443a33"], frost: ["#cfe6f5", "#9cc4e4"], steam: ["#d8d8d8", "#b9b9b9"],
+  fog: ["#a8b2bc", "#87929e"], static: ["#101010", "#2e2e2e"],
+};
+function WipeLayer({ moment }: { moment: { layer: string; prompt: string } | null }) {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  useEffect(() => {
+    if (!moment) return;
+    const c = canvasRef.current;
+    if (!c) return;
+    const ctx = c.getContext("2d");
+    if (!ctx) return;
+    c.width = window.innerWidth; c.height = window.innerHeight;
+    const [c0, c1] = WIPE_COLORS[moment.layer] ?? WIPE_COLORS.fog;
+    ctx.globalAlpha = 0.9;
+    const grad = ctx.createLinearGradient(0, 0, 0, c.height);
+    grad.addColorStop(0, c0); grad.addColorStop(1, c1);
+    ctx.fillStyle = grad; ctx.fillRect(0, 0, c.width, c.height);
+    for (let i = 0; i < 1600; i++) {
+      ctx.globalAlpha = 0.04 + (i % 7) * 0.02;
+      ctx.fillStyle = i % 2 ? "#ffffff" : "#000000";
+      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, moment.layer === "static" ? 3 : 2, moment.layer === "static" ? 3 : 2);
+    }
+    ctx.globalAlpha = 1;
+    const erase = (e: PointerEvent) => {
+      if (e.pointerType === "mouse" && e.buttons === 0) return;
+      ctx.globalCompositeOperation = "destination-out";
+      const R = Math.max(56, window.innerWidth * 0.055);
+      const g = ctx.createRadialGradient(e.clientX, e.clientY, R * 0.15, e.clientX, e.clientY, R);
+      g.addColorStop(0, "rgba(0,0,0,1)"); g.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = g;
+      ctx.beginPath(); ctx.arc(e.clientX, e.clientY, R, 0, 7); ctx.fill();
+      ctx.globalCompositeOperation = "source-over";
+    };
+    window.addEventListener("pointermove", erase);
+    window.addEventListener("pointerdown", erase);
+    return () => { window.removeEventListener("pointermove", erase); window.removeEventListener("pointerdown", erase); };
+  }, [moment]);
+  return (
+    <AnimatePresence>
+      {moment && (
+        <motion.div
+          key={`${moment.layer}${moment.prompt}`}
+          className="fixed inset-x-0 top-0 bottom-[118px] z-[30]"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0, transition: { duration: 1.4 } }}
+          transition={{ duration: 1.2 }}
+        >
+          <canvas ref={canvasRef} className="h-full w-full touch-none" />
+          <motion.p
+            className="pointer-events-none absolute left-1/2 top-14 -translate-x-1/2 whitespace-nowrap font-mono text-xs uppercase tracking-[0.4em] text-white"
+            style={{ textShadow: "0 1px 10px rgba(0,0,0,0.9)" }}
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: [0, 1, 1, 0.7, 1], y: 0 }}
+            transition={{ duration: 2.2, delay: 0.6 }}
+          >
+            ✋ {moment.prompt}
+          </motion.p>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 
