@@ -37,10 +37,16 @@ export function useTracks() {
 
   useEffect(() => {
     let cancelled = false;
-    supabase
-      .from("tracks")
-      .select("*")
-      .eq("hidden", false)
+    // Private planets (personal YouTube imports: hidden rows whose audio lives
+    // in gitignored /private/) only exist on this machine — show them only
+    // when the site itself is running locally.
+    const local = typeof window !== "undefined" &&
+      /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+    const base = supabase.from("tracks").select("*");
+    const query = local
+      ? base.or("hidden.eq.false,audio_url.like./private/*")
+      : base.eq("hidden", false);
+    query
       .order("sort_order", { ascending: true })
       .then(({ data, error }) => {
         if (cancelled || error || !data || data.length === 0) return;
