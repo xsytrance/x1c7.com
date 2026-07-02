@@ -304,9 +304,14 @@ export default function Page() {
       <section className="relative z-10 mx-auto mt-16 max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="mb-6 flex flex-wrap items-end justify-between gap-3">
           <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/40">All Transmissions</p>
-          <p className="font-mono text-[10px] uppercase tracking-wider text-white/30">
-            🪐 {planetCount} full shows · {gridTracks.length} shown
-          </p>
+          <div className="flex items-center gap-3">
+            <p className="font-mono text-[10px] uppercase tracking-wider text-white/30">
+              🪐 {planetCount} full shows · {gridTracks.length} shown
+            </p>
+            <Link href="/galaxy" className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:scale-105 hover:text-white">
+              🌌 Galaxy
+            </Link>
+          </div>
         </div>
 
         {/* Search */}
