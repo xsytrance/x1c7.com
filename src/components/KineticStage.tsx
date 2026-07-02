@@ -5,7 +5,7 @@
 // backdrops, live color grading, beat halo, and the scrubbable emotional arc.
 // Shared by the /music cinematic takeover and the /studio playground.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
@@ -90,9 +90,11 @@ const EXIT_T = { duration: 0.22, ease: "easeIn" };
 const MOTION: Record<SectionMotion, Record<string, object>> = {
   still:   { initial: { opacity: 0, scale: 0.94 },        animate: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 1.04, transition: EXIT_T },  transition: { duration: 0.9, ease: "easeOut" } },
   drift:   { initial: { opacity: 0, y: 46, scale: 0.92 }, animate: { opacity: 1, y: 0, scale: 1 }, exit: { opacity: 0, y: -34, transition: EXIT_T }, transition: { duration: 0.75, ease: "easeOut" } },
-  pulse:   { initial: { opacity: 0, scale: 0.58 },        animate: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 1.35, transition: EXIT_T },  transition: { type: "spring", stiffness: 330, damping: 21 } },
-  surge:   { initial: { opacity: 0, scale: 0.4, y: 22 },  animate: { opacity: 1, scale: 1, y: 0 }, exit: { opacity: 0, scale: 1.6, transition: EXIT_T }, transition: { type: "spring", stiffness: 430, damping: 16, mass: 0.7 } },
-  shatter: { initial: { opacity: 0, scale: 1.7, rotate: -3 }, animate: { opacity: 1, scale: 1, rotate: 0 }, exit: { opacity: 0, scale: 0.7, rotate: 2, transition: EXIT_T }, transition: { type: "spring", stiffness: 780, damping: 19, mass: 0.6 } },
+  // Entrance/exit scales stay ≤ ~1.2: words are clamped to the viewport at
+  // scale 1, so bigger multipliers poke fitted words off the screen edge.
+  pulse:   { initial: { opacity: 0, scale: 0.58 },        animate: { opacity: 1, scale: 1 }, exit: { opacity: 0, scale: 1.15, transition: EXIT_T },  transition: { type: "spring", stiffness: 330, damping: 21 } },
+  surge:   { initial: { opacity: 0, scale: 0.4, y: 22 },  animate: { opacity: 1, scale: 1, y: 0 }, exit: { opacity: 0, scale: 1.2, transition: EXIT_T }, transition: { type: "spring", stiffness: 430, damping: 16, mass: 0.7 } },
+  shatter: { initial: { opacity: 0, scale: 1.22, rotate: -3 }, animate: { opacity: 1, scale: 1, rotate: 0 }, exit: { opacity: 0, scale: 0.7, rotate: 2, transition: EXIT_T }, transition: { type: "spring", stiffness: 780, damping: 19, mass: 0.6 } },
 };
 
 // Smoothly grade the whole scene to a section's color (via the @property theme vars).
@@ -174,13 +176,30 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // choreographer LLM picked the effect per planet. (Stale indices go inert
   // on their own when the song moves to the next word.)
   const [touchBurn, setTouchBurn] = useState(-1);
+  // Pile layer colors — 3 distinct hues from the song's own palette (the live
+  // word owns the primary), so every layer of the stack reads separately.
+  const layerColors = useMemo(() => {
+    const pal = track.planet?.analysis?.palette as unknown;
+    const arr: string[] = Array.isArray(pal)
+      ? (pal as string[])
+      : pal && typeof pal === "object"
+        ? Object.values(pal as Record<string, string>)
+        : [];
+    const a = arr[1] || "var(--theme-secondary)";
+    const b = arr[2] || "var(--theme-accent)";
+    return [a, b, `color-mix(in srgb, ${b} 45%, white)`];
+  }, [track.planet]);
   // Hold-to-charge: press and hold a word to charge it up — release for a
   // supersized burst (shockwave + stronger haptic).
   const [charging, setCharging] = useState(false);
   const chargeAt = useRef(0);
   // ── THE PILE: recent words stay on stage as grabbable, throwable toys ──
-  const [residue, setResidue] = useState<{ key: number; word: string; charged: boolean; x: number; y: number; rot: number; size: number; mono: boolean; bornAt: number }[]>([]);
-  const lastRendered = useRef<{ key: number; word: string; charged: boolean; x: number; y: number; rot: number; size: number; mono: boolean; bornAt: number } | null>(null);
+  // Positions are captured in px (measured) when the live word retires, so a
+  // residue stays EXACTLY where its word actually stood. Max 3 layers, each
+  // wearing a different palette color so the stack reads clearly.
+  const [residue, setResidue] = useState<{ key: number; word: string; cx: number; cy: number; fs: number; rot: number; mono: boolean; layer: number; bornAt: number; dying?: boolean }[]>([]);
+  const lastRendered = useRef<{ key: number; word: string; rot: number; mono: boolean } | null>(null);
+  const layerSeq = useRef(0);
   const resCheck = useRef(0);
   // Physics: positions/velocities in refs, written straight to the DOM via
   // the CSS `translate` property (never touches framer's transform channel).
@@ -382,11 +401,32 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
-        // The outgoing word joins the pile (max 4 residues + the live word).
+        // The outgoing word joins the pile (max 3 residues + the live word).
+        // Its true on-stage position + font size are measured off the DOM so
+        // the residue takes over without a pixel of drift.
         if (pass >= 3 && mode !== "phrase" && lastRendered.current && lastRendered.current.key !== i) {
-          const r = { ...lastRendered.current, bornAt: performance.now() };
+          const lr = lastRendered.current;
           lastRendered.current = null;
-          setResidue((old) => [...old.filter((o) => o.key !== r.key), r].slice(-4));
+          const el = wordEls.current.get(lr.key);
+          if (el && el.offsetParent) {
+            const r: (typeof residue)[number] = {
+              ...lr,
+              cx: el.offsetLeft + el.offsetWidth / 2,
+              cy: el.offsetTop + el.offsetHeight / 2,
+              fs: parseFloat(getComputedStyle(el).fontSize),
+              layer: layerSeq.current++ % 3,
+              bornAt: performance.now(),
+            };
+            // Beyond 3 layers, the oldest fades out (marked dying, removed
+            // when its fade completes) — never an instant pop.
+            setResidue((old) => {
+              const next = [...old.filter((o) => o.key !== r.key), r];
+              const active = next.filter((x) => !x.dying);
+              if (active.length <= 3) return next;
+              const drop = new Set(active.slice(0, active.length - 3).map((x) => x.key));
+              return next.map((x) => (drop.has(x.key) ? { ...x, dying: true } : x));
+            });
+          }
         }
         // Keyword art: when a charged word with a painting lands, it takes the
         // backdrop over the section mood art until the scene changes again.
@@ -426,17 +466,28 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const el = wordEls.current.get(k);
         if (el) el.style.translate = `${pv.x}px ${pv.y}px`;
       });
-      // Pile expiry: fade after ~8s unless held or still flying.
+      // Pile expiry: after ~8s a residue starts dying (fades, then removes
+      // itself on animation complete) unless held or still flying. The 12s
+      // hard-remove is a safety net in case a fade callback never lands.
       if (nowP - resCheck.current > 800) {
         resCheck.current = nowP;
         setResidue((old) => {
           if (!old.length) return old;
-          const keep = old.filter((r) => {
-            const pv = phys.current.get(r.key);
-            const busy = pv && (pv.grab || Math.abs(pv.vx) + Math.abs(pv.vy) > 20);
-            return busy || nowP - r.bornAt < 8000;
-          });
-          return keep.length === old.length ? old : keep;
+          let changed = false;
+          const next = old
+            .filter((r) => {
+              const gone = nowP - r.bornAt > 12000;
+              if (gone) changed = true;
+              return !gone;
+            })
+            .map((r) => {
+              if (r.dying) return r;
+              const pv = phys.current.get(r.key);
+              const busy = pv && (pv.grab || Math.abs(pv.vx) + Math.abs(pv.vy) > 20);
+              if (!busy && nowP - r.bornAt > 8000) { changed = true; return { ...r, dying: true }; }
+              return r;
+            });
+          return changed ? next : old;
         });
       }
       // Choreographed wipe windows: enter/leave the moment.
@@ -521,40 +572,80 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
     .map((x) => clean(x.w)).join(" ");
   // Dynamic stagecraft for this word: off-center position, tilt, size tier,
-  // occasional mono type, and an entrance direction of its own —
-  // FIT-FIRST: the word's estimated width clamps both its size and offset so
-  // nothing crops by accident. ~20% of would-be overflows are allowed to
-  // deliberately HIT THE WALL instead (and react in the song's language).
+  // occasional mono type, and an entrance direction of its own. Words are
+  // CENTER-anchored (left/top mark the word's center; negative margins,
+  // measured below, pull it back by half its true size) — the old left-edge
+  // anchor made every word grow rightward and clip off the right side.
   const dynRaw = dynamic && idx >= 0
     ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
     : null;
   let dyn = dynRaw;
-  let wallHit = false;
+  let estW = 0, estH = 0;
   if (dynRaw && shown) {
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
-    let size = dynRaw.size;
-    let estW = shown.length * basePx * size * 0.62;
-    if (estW > vwPx * 0.92) { size *= (vwPx * 0.92) / estW; estW = vwPx * 0.92; }
-    const maxOff = Math.max(0, ((vwPx - estW) / 2 / vwPx) * 100 - 2); // vw units
-    let x = dynRaw.x;
-    if (Math.abs(x) > maxOff) {
-      wallHit = idx % 5 === 0; // the 20% spectacle
-      x = Math.sign(x) * maxOff;
-    }
-    dyn = { ...dynRaw, x, size, dir: Math.abs(x) > 5 ? 2 + (dynRaw.dir % 2) : dynRaw.dir };
+    estH = basePx * dynRaw.size;
+    estW = Math.min(shown.length * basePx * dynRaw.size * 0.62, vwPx * 0.95);
+    // Words headed for the edges enter vertically — no offscreen sweeps.
+    dyn = { ...dynRaw, dir: Math.abs(dynRaw.x) > 6 ? 2 + (dynRaw.dir % 2) : dynRaw.dir };
   }
-  // A wall-hit word slams in clamped at the edge, then reacts in the song's
-  // own tap language (burn/shatter/dissolve/bloom) a beat later.
-  const wallHitIdx = wallHit ? idx : -1;
-  useEffect(() => {
-    if (wallHitIdx < 0) return;
-    const to = setTimeout(() => { setTouchBurn(wallHitIdx); navigator.vibrate?.(20); }, 430);
-    return () => clearTimeout(to);
-  }, [wallHitIdx]);
+  // FIT-FIRST, now MEASURED: before the browser paints, read the word's real
+  // laid-out size (offset* — immune to entrance transforms), shrink the font
+  // if it can't fit at all, and clamp its center into the safe band so nothing
+  // ever crops. ~20% of would-be overflows deliberately park AT the wall and
+  // react in the song's own tap language a beat later.
+  useLayoutEffect(() => {
+    if (!dynamic || idx < 0) return;
+    const el = wordEls.current.get(idx);
+    const box = el?.offsetParent as HTMLElement | null;
+    if (!el || !box) return;
+    let parked = false;
+    const fit = () => {
+      const vw = window.innerWidth, vh = window.innerHeight;
+      const pad = Math.max(10, vw * 0.03);
+      if (el.offsetWidth > vw - pad * 2) {
+        const fs = parseFloat(getComputedStyle(el).fontSize);
+        el.style.fontSize = `${Math.max(20, fs * ((vw - pad * 2) / el.offsetWidth))}px`;
+      }
+      const b = box.getBoundingClientRect();
+      const w = el.offsetWidth, h = el.offsetHeight;
+      const cx = b.left + el.offsetLeft + w / 2;
+      const maxOff = Math.max(0, (vw - w) / 2 - pad);
+      const want = cx - vw / 2;
+      const off = Math.max(-maxOff, Math.min(maxOff, want));
+      el.style.marginLeft = `${(parseFloat(el.style.marginLeft) || 0) + (vw / 2 + off - cx)}px`;
+      // Vertical: keep the word between the chips (top) and the timeline (bottom).
+      const cy = b.top + el.offsetTop + h / 2;
+      const bandT = 84, bandB = vh - 150;
+      const cyT = h >= bandB - bandT ? (bandT + bandB) / 2 : Math.max(bandT + h / 2, Math.min(bandB - h / 2, cy));
+      el.style.marginTop = `${(parseFloat(el.style.marginTop) || 0) + (cyT - cy)}px`;
+      parked = parked || Math.abs(want) > maxOff + 1;
+    };
+    fit();
+    // Held notes swell their letter-spacing over seconds — re-clamp whenever
+    // the word's layout size changes. (Margins don't retrigger the observer.)
+    const ro = new ResizeObserver(fit);
+    ro.observe(el);
+    let to: ReturnType<typeof setTimeout> | undefined;
+    if (parked && idx % 5 === 0) {
+      to = setTimeout(() => { setTouchBurn(idx); navigator.vibrate?.(20); }, 430);
+    }
+    return () => { ro.disconnect(); if (to) clearTimeout(to); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idx, dynamic]);
+  // Residues center themselves the same way: measured negative margins.
+  useLayoutEffect(() => {
+    for (const r of residue) {
+      const el = wordEls.current.get(r.key);
+      if (el) {
+        el.style.marginLeft = `${-el.offsetWidth / 2}px`;
+        el.style.marginTop = `${-el.offsetHeight / 2}px`;
+      }
+    }
+  }, [residue]);
   // Remember the rendered word so it can join the pile when the next arrives.
   if (idx >= 0 && !phrase && shown) {
-    lastRendered.current = { key: idx, word: shown, charged, x: dyn?.x ?? 0, y: dyn?.y ?? 0, rot: dyn?.rot ?? 0, size: dyn?.size ?? 1, mono: !!dyn?.mono, bornAt: 0 };
+    lastRendered.current = { key: idx, word: shown, rot: dyn?.rot ?? 0, mono: !!dyn?.mono };
   }
   const lineIdx = phrase && idx >= 0 ? lineRanges.findIndex((r) => idx >= r.s && idx <= r.e) : -1;
 
@@ -685,30 +776,38 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             </AnimatePresence>
           ) : (
           <>
-          {/* THE PILE — recent words linger, grabbable and throwable */}
-          <AnimatePresence>
-            {residue.map((r) => (
-              <motion.div
-                key={`res${r.key}`}
-                ref={(el) => { if (el) { wordEls.current.set(r.key, el); const pv = phys.current.get(r.key); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } else wordEls.current.delete(r.key); }}
-                className={`kinetic-word absolute cursor-grab select-none${r.charged ? " kinetic-word--charged" : ""}${r.mono ? " !font-mono" : ""}`}
-                style={{ left: `${r.x}vw`, top: `${r.y}vh`, transform: `rotate(${r.rot}deg)`, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${r.size * 0.78})`, zIndex: 1 }}
-                initial={{ opacity: 0.8 }}
-                animate={{ opacity: 0.34 }}
-                exit={{ opacity: 0, transition: { duration: 0.8 } }}
-                transition={{ duration: 1.4 }}
-                onPointerDown={grabStart(r.key)}
-              >
-                {r.word}
-              </motion.div>
-            ))}
-          </AnimatePresence>
+          {/* THE PILE — recent words linger, grabbable and throwable. Lifecycle
+              is state-driven (dying → fade → self-remove): AnimatePresence
+              exits were silently never completing here, leaking ghosts. */}
+          {residue.map((r) => (
+            <motion.div
+              key={`res${r.key}`}
+              ref={(el) => { if (el) { wordEls.current.set(r.key, el); const pv = phys.current.get(r.key); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } else wordEls.current.delete(r.key); }}
+              className={`kinetic-word absolute cursor-grab select-none${r.mono ? " !font-mono" : ""}`}
+              style={{
+                left: r.cx, top: r.cy,
+                transform: `rotate(${r.rot}deg)`,
+                fontSize: r.fs * 0.78,
+                color: layerColors[r.layer],
+                // static glow (no beat vars) — cheap on mobile, tinted per layer
+                filter: "drop-shadow(0 0 10px currentColor)",
+                zIndex: 1,
+              }}
+              initial={{ opacity: 0.85 }}
+              animate={{ opacity: r.dying ? 0 : 0.4 }}
+              transition={{ duration: r.dying ? 0.7 : 1.2 }}
+              onAnimationComplete={r.dying ? () => setResidue((old) => old.filter((x) => x.key !== r.key)) : undefined}
+              onPointerDown={grabStart(r.key)}
+            >
+              {r.word}
+            </motion.div>
+          ))}
           <AnimatePresence>
             {word && (
               <motion.div
                 key={idx}
                 className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`}
-                style={dyn ? { left: `${dyn.x}vw`, top: `${dyn.y}vh`, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
+                style={dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
                 ref={(el) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } }}
                 onPointerDown={pass >= 3 ? (e) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined}
                 onPointerUp={pass >= 3 ? () => {
