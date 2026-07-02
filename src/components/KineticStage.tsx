@@ -19,7 +19,7 @@ export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'
 // ── Signature word effects ─────────────────────────────────────────────────
 // Global lexicons: any song triggers them, so every planet gets the drama that
 // fits its own vocabulary. Priority: burn > glitch > fizz > type-on > glyph.
-const FIRE_WORDS = new Set(["fire", "burn", "burns", "burning", "burned", "flame", "flames", "match", "matches", "ember", "embers", "ash", "ashes", "smoke", "ignite", "lit", "blaze"]);
+const FIRE_WORDS = new Set(["fire", "burn", "burns", "burning", "burned", "flame", "flames", "match", "matches", "ember", "embers", "ash", "ashes", "smoke", "ignite", "lit", "blaze", "spark", "sparks"]);
 // tech/connection words flicker like a dropping video call
 const GLITCH_WORDS = new Set(["signal", "wifi", "wi-fi", "phone", "phones", "screen", "screens", "camera", "call", "calls", "video", "battery", "message", "messages", "static", "glitch", "froze", "frozen", "online", "offline", "notification", "emoji", "screenshot"]);
 // drink words fizz like carbonation
