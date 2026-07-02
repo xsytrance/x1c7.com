@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 import { uiStore } from "@/lib/uiStore";
-import { KineticStage, canPerform } from "./KineticStage";
+import { KineticStage, canPerform, MODES, type StageMode } from "./KineticStage";
 import type { Track } from "@/data/tracks";
 
 /**
@@ -76,7 +76,18 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   const { isPlaying, togglePlay, getCurrentTime } = useMusicPlayer();
   const [mounted, setMounted] = useState(false);
   // Satellites: which pass of the show is playing (newest = main show).
-  const [pass, setPass] = useState(2);
+  const [pass, setPass] = useState(3);
+  // Viewing style, remembered across sessions.
+  const [mode, setMode] = useState<StageMode>("dynamic");
+  useEffect(() => {
+    const saved = localStorage.getItem("x1c7-lyric-style") as StageMode | null;
+    if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
+  }, []);
+  const cycleMode = () => {
+    const order: StageMode[] = ["dynamic", "focus", "phrase"];
+    const next = order[(order.indexOf(mode) + 1) % order.length];
+    setMode(next); localStorage.setItem("x1c7-lyric-style", next);
+  };
   const lineRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const lastActive = useRef(-1);
   // Full engine when the song is a planet (word timings); line karaoke otherwise.
@@ -144,13 +155,22 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             </div>
             <div className="flex items-center gap-2">
               {/* Satellite switcher — cycle through the preserved passes of the show */}
+              {performs && pass >= 3 && (
+                <button
+                  onClick={cycleMode}
+                  title="Viewing style — Dynamic stagecraft, clean Focus, or readable Phrase. Tap to cycle."
+                  className="rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
+                >
+                  {MODES.find((m) => m.id === mode)?.label}
+                </button>
+              )}
               {performs && (
                 <button
-                  onClick={() => setPass((p) => (p === 2 ? 1 : 2))}
+                  onClick={() => setPass((p) => (p > 1 ? p - 1 : 3))}
                   title="Satellites — every pass of the show, preserved. Tap to switch."
                   className="rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
                 >
-                  🌙 Pass {pass}{pass === 2 ? "" : " · satellite"}
+                  🌙 Pass {pass}{pass === 3 ? "" : " · satellite"}
                 </button>
               )}
               <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
@@ -172,7 +192,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               /* THE SHOW — full lyric engine: word blow-ups, shape-morphs,
                  generated-art backdrops, emotion grading, arc timeline. */
               <div className="h-full px-4 pb-16">
-                <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} />
+                <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} mode={mode} />
               </div>
             ) : (
               <>
