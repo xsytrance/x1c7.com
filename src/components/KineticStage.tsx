@@ -16,8 +16,18 @@ import type { Track } from "@/data/tracks";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
 
-// Words that BURN: ignite, char, and crumble into drifting ash.
+// ── Signature word effects ─────────────────────────────────────────────────
+// Global lexicons: any song triggers them, so every planet gets the drama that
+// fits its own vocabulary. Priority: burn > glitch > fizz > type-on > glyph.
 const FIRE_WORDS = new Set(["fire", "burn", "burns", "burning", "burned", "flame", "flames", "match", "matches", "ember", "embers", "ash", "ashes", "smoke", "ignite", "lit", "blaze"]);
+// tech/connection words flicker like a dropping video call
+const GLITCH_WORDS = new Set(["signal", "wifi", "wi-fi", "phone", "phones", "screen", "screens", "camera", "call", "calls", "video", "battery", "message", "messages", "static", "glitch", "froze", "frozen", "online", "offline", "notification", "emoji", "screenshot"]);
+// drink words fizz like carbonation
+const FIZZ_WORDS = new Set(["cocktails", "cocktail", "drink", "drinks", "glass", "ice", "sip", "champagne", "bubbles", "wine", "toast"]);
+// code words type themselves out
+const TYPE_WORDS = new Set(["code", "coding", "type", "typing", "typed", "tab", "tabs", "debug", "commit", "prompt", "build", "builds", "program", "software", "logic", "automate", "keys", "keyboard", "laptop"]);
+// normalize for lookup: lowercase, strip possessive ('s / ’s)
+const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 
 /** True when a track has everything the engine needs to perform. */
 export function canPerform(t: Track | null | undefined): boolean {
@@ -120,9 +130,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
   // Shape-morph: lexicon words morph when they have air; charged words fall back
   // to a glyph chosen from their EMOTION, so the brain's picks always land big.
   const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
-  // Fire words with enough air BURN instead of morphing.
-  const burns = airtime >= 0.75 && FIRE_WORDS.has(lower);
-  const glyph = !burns && shown && airtime >= 0.6
+  // Signature effects, by priority. Each gated on the word having enough air.
+  const ek = effectKey(shown);
+  const burns = airtime >= 0.75 && FIRE_WORDS.has(ek);
+  const glitches = !burns && airtime >= 0.3 && GLITCH_WORDS.has(ek);
+  const fizzes = !burns && !glitches && airtime >= 0.55 && FIZZ_WORDS.has(ek);
+  const types = !burns && !glitches && !fizzes && airtime >= 0.45 && TYPE_WORDS.has(ek);
+  const glyph = !burns && !glitches && !fizzes && !types && shown && airtime >= 0.6
     ? (glyphFor(shown) ?? (charged ? glyphForEmotion(keywordEmotion[lower]) : null))
     : null;
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -191,7 +205,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]" }: {
                 className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}`}
                 {...(m as MotionProps)}
               >
-                {burns ? <WordBurn word={shown} airtime={airtime} /> : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
+                {burns ? <WordBurn word={shown} airtime={airtime} />
+                  : glitches ? <WordGlitch word={shown} airtime={airtime} />
+                  : fizzes ? <WordFizz word={shown} airtime={airtime} />
+                  : types ? <WordType word={shown} airtime={airtime} />
+                  : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
               </motion.div>
             )}
           </AnimatePresence>
@@ -316,6 +334,105 @@ function WordBurn({ word, airtime }: { word: string; airtime: number }) {
           transition={{ duration: dur * 1.05, delay: 0.2 + (i % 7) * (dur * 0.07), ease: "easeOut" }}
         />
       ))}
+    </span>
+  );
+}
+
+/* ========== GLITCH ==========
+   Connection words flicker like a dropping video call: RGB channel split,
+   x-jitter, a brief "freeze" blur, then a clean snap. Fast by design. */
+function WordGlitch({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(0.55, Math.max(0.35, airtime * 0.8));
+  return (
+    <motion.span
+      className="inline-block"
+      initial={{ x: 0 }}
+      animate={{
+        x: ["0em", "-0.04em", "0.05em", "-0.02em", "0.015em", "0em"],
+        skewX: [0, -6, 5, -2, 0, 0],
+        opacity: [1, 0.55, 1, 0.7, 1, 1],
+        filter: ["blur(0px)", "blur(0px)", "blur(2px)", "blur(0px)", "blur(0px)", "blur(0px)"],
+        textShadow: [
+          "0.06em 0 0 rgba(67,247,255,0.9), -0.06em 0 0 rgba(255,43,214,0.9)",
+          "-0.09em 0 0 rgba(67,247,255,0.9), 0.09em 0 0 rgba(255,43,214,0.9)",
+          "0.045em 0.03em 0 rgba(67,247,255,0.9), -0.045em -0.03em 0 rgba(255,43,214,0.9)",
+          "-0.02em 0 0 rgba(67,247,255,0.8), 0.02em 0 0 rgba(255,43,214,0.8)",
+          "0.01em 0 0 rgba(67,247,255,0.4), -0.01em 0 0 rgba(255,43,214,0.4)",
+          "0 0 0 transparent",
+        ],
+      }}
+      transition={{ duration: dur, times: [0, 0.2, 0.4, 0.6, 0.8, 1], ease: "linear" }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ========== FIZZ ==========
+   Drink words sparkle like carbonation: the word bobs gently while bubbles
+   rise through and past it, popping at the top. */
+function WordFizz({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.6, Math.max(0.9, airtime));
+  const r = (i: number, m: number) => ((i * 53 + 29) % 97) / 97 * m;
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span
+        className="inline-block"
+        animate={{ y: ["0em", "-0.03em", "0em", "-0.02em", "0em"] }}
+        transition={{ duration: dur, ease: "easeInOut" }}
+      >
+        {word}
+      </motion.span>
+      {Array.from({ length: 12 }).map((_, i) => (
+        <motion.span
+          key={i}
+          className="pointer-events-none absolute rounded-full border"
+          style={{
+            left: `${8 + ((i * 67) % 86)}%`,
+            bottom: "8%",
+            width: `${0.035 + r(i, 0.05)}em`,
+            height: `${0.035 + r(i, 0.05)}em`,
+            borderColor: "color-mix(in srgb, var(--theme-accent) 80%, white)",
+            background: "color-mix(in srgb, var(--theme-accent) 18%, transparent)",
+          }}
+          initial={{ opacity: 0, y: "0em" }}
+          animate={{
+            opacity: [0, 0.9, 0.9, 0],
+            y: ["0em", `-${0.5 + r(i + 3, 0.5)}em`, `-${1.0 + r(i + 5, 0.7)}em`],
+            x: ["0em", `${(i % 2 ? 1 : -1) * r(i + 7, 0.1)}em`, `${(i % 2 ? -1 : 1) * r(i + 9, 0.12)}em`],
+            scale: [0.6, 1, 1.15],
+          }}
+          transition={{ duration: dur, delay: (i % 6) * (dur * 0.08), ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========== TYPE-ON ==========
+   Code words type themselves out with a blinking cursor block. */
+function WordType({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const per = Math.min(0.09, Math.max(0.035, (airtime * 0.55) / letters.length));
+  return (
+    <span className="inline-flex items-baseline">
+      {letters.map((ch, i) => (
+        <motion.span key={i} className="inline-block"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.08 + i * per, duration: 0.02 }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+      <motion.span
+        className="ml-[0.06em] inline-block w-[0.45em] self-stretch"
+        style={{ background: "var(--theme-accent)" }}
+        initial={{ opacity: 1 }}
+        animate={{ opacity: [1, 1, 0, 1, 0, 1, 0] }}
+        transition={{ duration: Math.max(0.9, airtime * 0.9), times: [0, 0.45, 0.55, 0.65, 0.78, 0.88, 1] }}
+        aria-hidden
+      />
     </span>
   );
 }
