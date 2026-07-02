@@ -3,3 +3,4 @@ tracks.json
 *.raw.json
 planet.min.json
 build_input.mjs
+interactions.json

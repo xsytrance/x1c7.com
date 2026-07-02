@@ -26,11 +26,19 @@ export interface PlanetAssets {
   /** emotion (lowercase) -> generated backdrop URL — continuous mood art. */
   sections?: Record<string, string>;
 }
+/** LLM-choreographed touch interactions — different per song, always in the
+ * song's own language (fire burns, heartbreak shatters, love blooms). */
+export interface PlanetInteractions {
+  tapEffect?: "burn" | "shatter" | "dissolve" | "bloom";
+  moments?: { t: number; end: number; type: string; layer: string; prompt: string }[];
+}
+
 export interface Planet {
   analysis: PlanetAnalysis;
   assets?: PlanetAssets;
   /** "Artist — 'Song'" when this track is a response/answer record. */
   respondsTo?: string;
+  interactions?: PlanetInteractions;
   generatedAt: string | null;
 }
 
