@@ -26,8 +26,30 @@ const GLITCH_WORDS = new Set(["signal", "wifi", "wi-fi", "phone", "phones", "scr
 const FIZZ_WORDS = new Set(["cocktails", "cocktail", "drink", "drinks", "glass", "ice", "sip", "champagne", "bubbles", "wine", "toast"]);
 // code words type themselves out
 const TYPE_WORDS = new Set(["code", "coding", "type", "typing", "typed", "tab", "tabs", "debug", "commit", "prompt", "build", "builds", "program", "software", "logic", "automate", "keys", "keyboard", "laptop"]);
+// impact words SLAM down and shake the stage
+const SLAM_WORDS = new Set(["boom", "drop", "drops", "crash", "break", "breaks", "broke", "shake", "shakes", "slam", "hit", "hits", "knock", "knocks", "bang", "drum", "drums", "kick", "punch", "stomp", "hammer"]);
+// water words undulate like a rolling swell
+const WAVE_WORDS = new Set(["ocean", "wave", "waves", "river", "tide", "tides", "water", "sea", "olas", "mar", "océano", "río"]);
+// light words buzz on like a neon sign igniting
+const NEON_WORDS = new Set(["light", "lights", "neon", "glow", "glows", "glowing", "shine", "shines", "shining", "bright", "luz", "luces", "brilla"]);
+// heartbeat words pump lub-dub with the pulse
+const PULSE_WORDS = new Set(["heartbeat", "heartbeats", "pulse", "beat", "beats", "corazón", "latido", "latidos"]);
+// hushed words arrive small, breathy, and blurred
+const WHISPER_WORDS = new Set(["whisper", "whispers", "whispering", "whispered", "quiet", "silence", "silencio", "hush", "secret", "secrets", "softly", "callar"]);
 // normalize for lookup: lowercase, strip possessive ('s / ’s)
 const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
+
+// ── Shared art library ──────────────────────────────────────────────────────
+// Cross-song paintings for the words the whole catalog keeps singing.
+// Used as a backdrop fallback when a planet has no painting of its own for a
+// charged or line-final word. Neutral palette; the song's grade tints it.
+const SHARED_BASE = "/planets/_shared";
+const SHARED_WORDS = ["night", "love", "world", "time", "heart", "soul", "voice", "dream", "home", "moon", "rain", "city", "sky", "stars", "eyes", "dance", "alone"];
+const SHARED_ALIAS: Record<string, string> = { dreams: "dream", nights: "night", hearts: "heart", skies: "sky", star: "stars", cities: "city", corazón: "heart", noche: "night", luna: "moon", cielo: "sky", mundo: "world", alma: "soul", ciudad: "city", ojos: "eyes", lluvia: "rain", sola: "alone", solo: "alone", bailar: "dance", baila: "dance", amor: "love" };
+function sharedArtFor(word: string): string | null {
+  const w = SHARED_ALIAS[word] ?? word;
+  return SHARED_WORDS.includes(w) ? `${SHARED_BASE}/${w}.webp` : null;
+}
 
 /** True when a track has everything the engine needs to perform. */
 export function canPerform(t: Track | null | undefined): boolean {
@@ -116,9 +138,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         lastWord.current = i; setIdx(i);
         // Keyword art: when a charged word with a painting lands, it takes the
         // backdrop over the section mood art until the scene changes again.
-        if (art && i >= 0) {
+        // Planet-specific art wins; the SHARED library covers cross-song words
+        // — but only at emphasis moments (charged or line-final), so common
+        // words don't churn the backdrop mid-line.
+        if (i >= 0) {
           const w = clean(words[i].w).toLowerCase();
-          if (art[w]) setBgArt(art[w]);
+          const own = art?.[w];
+          if (own) setBgArt(own);
+          else if (pass >= 2) {
+            const next = words[i + 1];
+            const emphasis = (next ? lineStarts.has(Math.round(next.t * 100)) : true) || w in keywordEmotion;
+            const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
+            if (sh) setBgArt(sh);
+          }
         }
       }
       // Title card: only before the first sung word.
@@ -144,7 +176,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, lineStarts, keywordEmotion]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -159,9 +191,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const ek = effectKey(shown);
   const burns = airtime >= 0.75 && FIRE_WORDS.has(ek);
   const glitches = !burns && airtime >= 0.3 && GLITCH_WORDS.has(ek);
-  const fizzes = !burns && !glitches && airtime >= 0.55 && FIZZ_WORDS.has(ek);
-  const types = !burns && !glitches && !fizzes && airtime >= 0.45 && TYPE_WORDS.has(ek);
-  const glyph = !burns && !glitches && !fizzes && !types && shown && airtime >= 0.6
+  const slams = !burns && !glitches && pass >= 2 && airtime >= 0.35 && SLAM_WORDS.has(ek);
+  const wavy = !burns && !glitches && !slams && pass >= 2 && airtime >= 0.6 && WAVE_WORDS.has(ek);
+  const neon = !burns && !glitches && !slams && !wavy && pass >= 2 && airtime >= 0.5 && NEON_WORDS.has(ek);
+  const pulses = !burns && !glitches && !slams && !wavy && !neon && pass >= 2 && airtime >= 0.6 && PULSE_WORDS.has(ek);
+  const whispers = !burns && !glitches && !slams && !wavy && !neon && !pulses && pass >= 2 && airtime >= 0.4 && WHISPER_WORDS.has(ek);
+  const priorEffect = burns || glitches || slams || wavy || neon || pulses || whispers;
+  const fizzes = !priorEffect && airtime >= 0.55 && FIZZ_WORDS.has(ek);
+  const types = !priorEffect && !fizzes && airtime >= 0.45 && TYPE_WORDS.has(ek);
+  const glyph = !priorEffect && !fizzes && !types && shown && airtime >= 0.6
     ? (glyphFor(shown) ?? (charged ? glyphForEmotion(keywordEmotion[lower]) : null))
     : null;
   // Line-final: the word that CLOSES a lyric line — it owns the stage a beat
@@ -282,28 +320,33 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                   </motion.span>
                 )}
                 <span className="kinetic-breathe">
-                  {held ? (
-                    // The held note performs: the word swells for the length of
-                    // the note while the beat makes it breathe (CSS --beat scale).
-                    <motion.span
-                      className="inline-block"
-                      initial={{ scale: 1, letterSpacing: "0em" }}
-                      animate={{ scale: 1.24, letterSpacing: "0.045em" }}
-                      transition={{ duration: Math.min(airtime * 0.92, 4.5), ease: "easeOut" }}
-                    >
-                      {glitches ? <WordGlitch word={shown} airtime={airtime} />
-                        : fizzes ? <WordFizz word={shown} airtime={airtime} />
-                        : types ? <WordType word={shown} airtime={airtime} />
-                        : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} /> : shown}
-                    </motion.span>
-                  ) : (
-                    burns ? <WordBurn word={shown} airtime={airtime} />
-                      : glitches ? <WordGlitch word={shown} airtime={airtime} />
+                  {(() => {
+                    // The word's inner treatment, shared by held + normal paths.
+                    const inner = glitches ? <WordGlitch word={shown} airtime={airtime} />
+                      : slams ? <WordSlam word={shown} />
+                      : wavy ? <WordWave word={shown} airtime={airtime} />
+                      : neon ? <WordNeon word={shown} airtime={airtime} />
+                      : pulses ? <WordPulse word={shown} airtime={airtime} />
+                      : whispers ? <WordWhisper word={shown} airtime={airtime} />
                       : fizzes ? <WordFizz word={shown} airtime={airtime} />
                       : types ? <WordType word={shown} airtime={airtime} />
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
-                      : pass >= 2 && charged ? <CascadeWord word={shown} /> : shown
-                  )}
+                      : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
+                    if (burns) return <WordBurn word={shown} airtime={airtime} />;
+                    if (held) return (
+                      // The held note performs: the word swells for the length of
+                      // the note while the beat makes it breathe (CSS --beat scale).
+                      <motion.span
+                        className="inline-block"
+                        initial={{ scale: 1, letterSpacing: "0em" }}
+                        animate={{ scale: 1.24, letterSpacing: "0.045em" }}
+                        transition={{ duration: Math.min(airtime * 0.92, 4.5), ease: "easeOut" }}
+                      >
+                        {inner}
+                      </motion.span>
+                    );
+                    return inner;
+                  })()}
                 </span>
               </motion.div>
             )}
@@ -529,6 +572,126 @@ function WordType({ word, airtime }: { word: string; airtime: number }) {
         aria-hidden
       />
     </span>
+  );
+}
+
+/* ========== SLAM ==========
+   Impact words drop from above, hit hard, and rattle the letters — with a
+   flash of light on impact. Fast and violent by design. */
+function WordSlam({ word }: { word: string }) {
+  return (
+    <motion.span
+      className="inline-block"
+      initial={{ y: "-0.55em", scale: 1.45, opacity: 0 }}
+      animate={{
+        y: ["-0.55em", "0em", "-0.035em", "0em", "-0.015em", "0em"],
+        scale: [1.45, 1, 1.04, 1, 1.01, 1],
+        opacity: [0, 1, 1, 1, 1, 1],
+        x: ["0em", "0em", "-0.02em", "0.018em", "-0.008em", "0em"],
+        textShadow: [
+          "0 0 0em transparent",
+          "0 0 0.55em #ffffff, 0 0 1em var(--theme-accent)",
+          "0 0 0.3em var(--theme-accent)",
+          "0 0 0.18em var(--theme-accent)",
+          "0 0 0.1em var(--theme-accent)",
+          "0 0 0.06em transparent",
+        ],
+      }}
+      transition={{ duration: 0.55, times: [0, 0.22, 0.4, 0.58, 0.78, 1], ease: "easeOut" }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ========== WAVE ==========
+   Water words roll: each letter rides a travelling swell, offset in phase. */
+function WordWave({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(2.2, Math.max(1.0, airtime));
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          animate={{ y: ["0em", "-0.09em", "0em", "0.05em", "0em"], rotate: [0, -3, 0, 2, 0] }}
+          transition={{ duration: dur * 0.7, delay: i * 0.06, repeat: airtime > 1.6 ? 1 : 0, ease: "easeInOut" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== NEON ==========
+   Light words buzz on like a neon sign: stuttering ignition, then a steady
+   saturated glow that hums for the rest of the word's airtime. */
+function WordNeon({ word, airtime }: { word: string; airtime: number }) {
+  return (
+    <motion.span
+      className="inline-block"
+      initial={{ opacity: 0.2 }}
+      animate={{
+        opacity: [0.2, 1, 0.35, 1, 0.5, 1, 1],
+        textShadow: [
+          "0 0 0em transparent",
+          "0 0 0.4em var(--theme-accent), 0 0 0.9em var(--theme-accent)",
+          "0 0 0.08em var(--theme-accent)",
+          "0 0 0.45em var(--theme-accent), 0 0 1em var(--theme-accent)",
+          "0 0 0.12em var(--theme-accent)",
+          "0 0 0.5em var(--theme-accent), 0 0 1.1em var(--theme-accent), 0 0 1.8em var(--theme-primary)",
+          "0 0 0.45em var(--theme-accent), 0 0 1em var(--theme-accent), 0 0 1.6em var(--theme-primary)",
+        ],
+      }}
+      transition={{ duration: Math.min(1.1, Math.max(0.6, airtime * 0.7)), times: [0, 0.12, 0.2, 0.34, 0.42, 0.6, 1], ease: "linear" }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ========== PULSE ==========
+   Heartbeat words pump lub-dub — two quick beats, rest, repeat for the
+   word's airtime, glowing warmer on each systole. */
+function WordPulse({ word, airtime }: { word: string; airtime: number }) {
+  const beats = Math.max(1, Math.min(3, Math.floor(airtime / 0.9)));
+  return (
+    <motion.span
+      className="inline-block"
+      animate={{
+        scale: [1, 1.14, 1, 1.1, 1, 1],
+        textShadow: [
+          "0 0 0.1em transparent",
+          "0 0 0.5em var(--theme-accent)",
+          "0 0 0.15em transparent",
+          "0 0 0.4em var(--theme-accent)",
+          "0 0 0.1em transparent",
+          "0 0 0.05em transparent",
+        ],
+      }}
+      transition={{ duration: 0.9, times: [0, 0.14, 0.28, 0.42, 0.56, 1], repeat: beats - 1, ease: "easeOut" }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ========== WHISPER ==========
+   Hushed words arrive small, soft, and breathy — wide-tracked, blurred at
+   the edges, never fully solid. */
+function WordWhisper({ word, airtime }: { word: string; airtime: number }) {
+  return (
+    <motion.span
+      className="inline-block"
+      style={{ fontWeight: 400 }}
+      initial={{ opacity: 0, scale: 0.62, letterSpacing: "0.3em", filter: "blur(6px)" }}
+      animate={{ opacity: 0.78, scale: 0.72, letterSpacing: "0.22em", filter: "blur(1.2px)" }}
+      transition={{ duration: Math.min(1.2, Math.max(0.5, airtime * 0.6)), ease: "easeOut" }}
+    >
+      {word}
+    </motion.span>
   );
 }
 
