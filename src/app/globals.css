@@ -131,6 +131,18 @@ body.cinematic-on { overflow: hidden; }
 /* non-synced lyrics: readable static stanzas */
 .cine-line--plain { color: rgba(255, 255, 255, 0.82); font-size: clamp(1.5rem, 4vw, 2.75rem); }
 
+/* Beat halo — a soft bloom behind the word that breathes with the music. */
+.kinetic-halo {
+  position: absolute;
+  border-radius: 9999px;
+  width: calc(34vmin + var(--beat) * 26vmin);
+  height: calc(34vmin + var(--beat) * 26vmin);
+  background: radial-gradient(circle, color-mix(in srgb, var(--theme-primary) 30%, transparent), transparent 68%);
+  opacity: calc(0.35 + var(--beat) * 0.65);
+  filter: blur(4px);
+  pointer-events: none;
+}
+
 /* Charged word — the brain flagged it as emotionally loaded: bigger, accent-lit. */
 .kinetic-word--charged {
   color: var(--theme-accent);

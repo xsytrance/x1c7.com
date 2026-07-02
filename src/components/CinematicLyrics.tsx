@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 import { uiStore } from "@/lib/uiStore";
+import { KineticStage, canPerform } from "./KineticStage";
+import type { Track } from "@/data/tracks";
 
 /**
  * Now-playing lyrics. A static inline preview on the page, plus a fullscreen
@@ -69,7 +71,7 @@ export function CinematicLyrics() {
 
 function CinematicTakeover({ open, track, lines, synced, onClose }: {
   open: boolean;
-  track: { title: string; artist: string };
+  track: Track;
   lines: ParsedLine[];
   synced: boolean;
   onClose: () => void;
@@ -78,6 +80,8 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   const [mounted, setMounted] = useState(false);
   const lineRefs = useRef<(HTMLParagraphElement | null)[]>([]);
   const lastActive = useRef(-1);
+  // Full engine when the song is a planet (word timings); line karaoke otherwise.
+  const performs = canPerform(track);
 
   useEffect(() => setMounted(true), []);
 
@@ -97,9 +101,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
     return () => window.removeEventListener("keydown", onKey);
   }, [open, onClose]);
 
-  // Karaoke highlight — rAF + refs, no React re-render of the list.
+  // Karaoke highlight (line-mode fallback only) — rAF + refs, no per-frame re-render.
   useEffect(() => {
-    if (!open || !synced) return;
+    if (!open || !synced || performs) return;
     lastActive.current = -1;
     let raf = 0;
     const tick = () => {
@@ -151,21 +155,31 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
           </div>
 
           <div className="relative flex-1 overflow-hidden">
-            <div className="h-full overflow-y-auto px-5 py-[42vh] text-center sm:px-10">
-              {lines.map((line, i) => {
-                if (!line.text.trim()) return <div key={i} className="h-6" />;
-                if (line.header) return (
-                  <p key={i} className="mx-auto py-3 font-mono text-[11px] uppercase tracking-[0.4em] text-white/25">{headerLabel(line.text)}</p>
-                );
-                return (
-                  <p key={i} ref={(el) => { lineRefs.current[i] = el; }} className={synced ? "cine-line" : "cine-line cine-line--plain"}>
-                    {line.text}
-                  </p>
-                );
-              })}
-            </div>
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05030b] to-transparent" />
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#05030b] to-transparent" />
+            {performs ? (
+              /* THE SHOW — full lyric engine: word blow-ups, shape-morphs,
+                 generated-art backdrops, emotion grading, arc timeline. */
+              <div className="h-full px-4 pb-16">
+                <KineticStage track={track} timelineBottomClass="bottom-5" />
+              </div>
+            ) : (
+              <>
+                <div className="h-full overflow-y-auto px-5 py-[42vh] text-center sm:px-10">
+                  {lines.map((line, i) => {
+                    if (!line.text.trim()) return <div key={i} className="h-6" />;
+                    if (line.header) return (
+                      <p key={i} className="mx-auto py-3 font-mono text-[11px] uppercase tracking-[0.4em] text-white/25">{headerLabel(line.text)}</p>
+                    );
+                    return (
+                      <p key={i} ref={(el) => { lineRefs.current[i] = el; }} className={synced ? "cine-line" : "cine-line cine-line--plain"}>
+                        {line.text}
+                      </p>
+                    );
+                  })}
+                </div>
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#05030b] to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#05030b] to-transparent" />
+              </>
+            )}
           </div>
         </motion.div>
       )}
