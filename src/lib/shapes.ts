@@ -75,3 +75,19 @@ export function glyphFor(word: string): Glyph | null {
   const id = LEXICON[word.toLowerCase()];
   return id ? GLYPHS[id] : null;
 }
+
+/** Fallback: pick a glyph from an EMOTION (for the planet's charged keywords
+ * whose literal word isn't in the lexicon — e.g. "growth"→Ambition→sun). */
+export function glyphForEmotion(emotion: string | undefined): Glyph | null {
+  if (!emotion) return null;
+  const e = emotion.toLowerCase();
+  if (/love|devotion|tender|adorat|romance|intimacy/.test(e)) return GLYPHS.heart;
+  if (/pain|hurt|broken|grief|loss|wound|heartbreak/.test(e)) return GLYPHS.broken;
+  if (/anger|rage|conflict|resent|defian|intens/.test(e)) return GLYPHS.bolt;
+  if (/hope|joy|triumph|euphori|ecsta|sun|happy|excite|determin|ambition|empower|success/.test(e)) return GLYPHS.sun;
+  if (/sad|melanch|tear|sorrow|cry|yearn|longing/.test(e)) return GLYPHS.droplet;
+  if (/fear|dark|myster|night|lonel|isolat/.test(e)) return GLYPHS.moon;
+  if (/death|despair|hopeless/.test(e)) return GLYPHS.skull;
+  if (/passion|desire|burn|fire|relax/.test(e)) return GLYPHS.flame;
+  return null;
+}
