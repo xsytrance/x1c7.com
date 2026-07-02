@@ -107,7 +107,7 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "dynamic" }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase" }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
