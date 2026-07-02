@@ -4,19 +4,26 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
-import { KineticStage, canPerform } from "@/components/KineticStage";
+import { KineticStage, canPerform, MODES, type StageMode } from "@/components/KineticStage";
 
 // Every show pass is preserved as a "satellite" (moon) orbiting the planet.
 // The newest pass is the main show; older passes stay selectable forever.
 const PASSES = [
-  { id: 2, label: "Pass 2 · main show" },
+  { id: 3, label: "Pass 3 · main show" },
+  { id: 2, label: "Pass 2 · satellite" },
   { id: 1, label: "Pass 1 · satellite" },
 ];
 
 export default function StudioPage() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
-  const [pass, setPass] = useState(2);
+  const [pass, setPass] = useState(3);
+  const [mode, setMode] = useState<StageMode>("dynamic");
+  useEffect(() => {
+    const saved = localStorage.getItem("x1c7-lyric-style") as StageMode | null;
+    if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
+  }, []);
+  const pickMode = (m: StageMode) => { setMode(m); localStorage.setItem("x1c7-lyric-style", m); };
 
   // Default the picker to a word-timed song (the ones the engine can drive).
   // A ?track=<id> deep link wins — the planet's shareable address.
@@ -62,6 +69,14 @@ export default function StudioPage() {
           {PASSES.map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
         </select>
 
+        {pass >= 3 && (
+          <select value={mode} onChange={(e) => pickMode(e.target.value as StageMode)}
+            className="rounded-lg border border-white/15 bg-black/50 px-3 py-1.5 font-mono text-xs text-white outline-none focus:border-signal"
+            title="Viewing style — Dynamic stagecraft, clean Focus, or readable Phrase">
+            {MODES.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
+          </select>
+        )}
+
         <Link href="/music" className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 hover:text-white">Exit</Link>
       </header>
 
@@ -81,7 +96,7 @@ export default function StudioPage() {
       {/* Stage */}
       <div className="relative z-10 flex flex-1 items-center justify-center overflow-hidden px-4 pb-28">
         {live ? (
-          <KineticStage track={currentTrack!} pass={pass} />
+          <KineticStage track={currentTrack!} pass={pass} mode={mode} />
         ) : (
           <div className="text-center">
             {selected && canPerform(selected) ? (

@@ -166,6 +166,13 @@ body.cinematic-on { overflow: hidden; }
   filter: drop-shadow(0 0 calc(20px + var(--beat) * 34px) color-mix(in srgb, var(--theme-primary) 60%, transparent));
 }
 
+/* Phrase mode — the whole line on stage, readable, igniting word by word. */
+.phrase-word {
+  font-size: clamp(1.7rem, 5.2vw, 4.2rem);
+  line-height: 1.15;
+  will-change: transform, opacity;
+}
+
 /* Ambient dust — slow emotion-tinted particles drifting up the stage. */
 .kinetic-dust {
   position: absolute;

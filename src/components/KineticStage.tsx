@@ -56,6 +56,33 @@ export function canPerform(t: Track | null | undefined): boolean {
   return !!t && (t.lyricsSynced?.words?.length ?? 0) > 0;
 }
 
+/** Viewing styles (pass 3+). Dynamic = full stagecraft; Focus = the clean
+ * centered show; Phrase = the whole line on screen, igniting word by word. */
+export type StageMode = "dynamic" | "focus" | "phrase";
+export const MODES: { id: StageMode; label: string }[] = [
+  { id: "dynamic", label: "✦ Dynamic" },
+  { id: "focus", label: "◎ Focus" },
+  { id: "phrase", label: "☰ Phrase" },
+];
+
+// Function words render small in dynamic mode so content words own the stage.
+const STOP_WORDS = new Set(["the", "a", "an", "and", "or", "but", "of", "in", "on", "at", "to", "for", "is", "are", "was", "were", "it", "its", "my", "your", "his", "her", "our", "their", "me", "him", "them", "that", "this", "so", "do", "did", "with", "by", "as", "if", "then", "than", "el", "la", "los", "las", "de", "en", "que", "un", "una", "y", "pa’", "mi", "tu", "se", "lo", "le"]);
+
+// Deterministic per-word stagecraft: position, tilt, size tier, font, and
+// entrance direction — seeded by word index so renders are stable.
+const ENTER_DIRS = [{ x: "-16vw", y: "0vh" }, { x: "16vw", y: "0vh" }, { x: "0vw", y: "-14vh" }, { x: "0vw", y: "12vh" }];
+function stagecraft(idx: number, f: { charged: boolean; final: boolean; mono: boolean; stop: boolean }) {
+  const s = (k: number, m: number) => ((idx * 2654435761 + k * 9973) >>> 0) % m;
+  return {
+    x: f.charged ? 0 : s(1, 25) - 12,                     // vw off-center
+    y: f.charged ? 0 : s(2, 15) - 7,                      // vh off-center
+    rot: f.charged ? 0 : s(3, 11) - 5,                    // deg tilt
+    size: f.charged ? 1.32 : f.final ? 1.15 : f.stop ? 0.58 : 0.88 + s(4, 4) * 0.08,
+    mono: f.mono || (!f.charged && !f.final && s(5, 9) === 0),
+    dir: s(6, 4),
+  };
+}
+
 // The "director": each emotion gets its own entrance so words MOVE to the feeling.
 // A snappy exit shared by all treatments so consecutive words never overlap/smear.
 const EXIT_T = { duration: 0.22, ease: "easeIn" };
@@ -77,13 +104,15 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 2 }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "dynamic" }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
   /** Show version. Each pass is preserved as a "satellite" of the planet;
    * the newest pass is the main show. Pass 1 = the original kinetic cut. */
   pass?: number;
+  /** Viewing style (pass 3+): dynamic stagecraft, clean focus, or phrase mode. */
+  mode?: StageMode;
 }) {
   const { getCurrentTime } = useMusicPlayer();
   const rawWords = track.lyricsSynced!.words!;
@@ -119,11 +148,31 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     return s;
   }, [track.lyrics]);
 
+  const dynamic = pass >= 3 && mode === "dynamic";
+  const phrase = pass >= 3 && mode === "phrase";
+  // Line ranges (for phrase mode): consecutive word-index spans per lyric line.
+  const lineRanges = useMemo(() => {
+    const ranges: { s: number; e: number }[] = [];
+    let s = 0;
+    for (let i = 1; i < words.length; i++) {
+      if (lineStarts.has(Math.round(words[i].t * 100))) { ranges.push({ s, e: i - 1 }); s = i; }
+    }
+    if (words.length) ranges.push({ s, e: words.length - 1 });
+    return ranges;
+  }, [words, lineStarts]);
+
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
   const [showTitle, setShowTitle] = useState(true);
   const [wave, setWave] = useState(0);
+  // Anchor word: a charged word that arrives HUGE and lingers translucently
+  // over the following words for a few seconds.
+  const [anchor, setAnchor] = useState<{ word: string; key: number; fromX: string; rot: number } | null>(null);
+  // Interactivity: tap a word to set it on fire. (Stale indices go inert on
+  // their own when the song moves to the next word.)
+  const [touchBurn, setTouchBurn] = useState(-1);
+  const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
@@ -160,8 +209,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
             if (sh) setBgArt(sh);
           }
+          // Anchor: charged words with any presence take over the sky.
+          if (pass >= 3 && mode === "dynamic" && w in keywordEmotion) {
+            const shownW = clean(words[i].w);
+            const sd = ((i * 2654435761) >>> 0);
+            anchorAt.current = t;
+            setAnchor({ word: shownW, key: i, fromX: sd % 2 ? "42vw" : "-42vw", rot: (sd % 17) - 8 });
+          }
         }
       }
+      // Anchor expiry — it hangs around for ~7s, then dissolves.
+      if (anchorAt.current && t - anchorAt.current > 7) { anchorAt.current = 0; setAnchor(null); }
       // Title card: only before the first sung word.
       const titled = words.length > 0 && t < words[0].t - 0.2;
       if (titled !== titleRef.current) { titleRef.current = titled; setShowTitle(titled); }
@@ -185,7 +243,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, lineStarts, keywordEmotion]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -221,6 +279,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // (The BIG word appearing early was the mis-anchor bug, fixed above.)
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
     .map((x) => clean(x.w)).join(" ");
+  // Dynamic stagecraft for this word: off-center position, tilt, size tier,
+  // occasional mono type, and an entrance direction of its own.
+  const dyn = dynamic && idx >= 0
+    ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
+    : null;
+  const lineIdx = phrase && idx >= 0 ? lineRanges.findIndex((r) => idx >= r.s && idx <= r.e) : -1;
 
   return (
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
@@ -309,11 +373,49 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               />
             )}
           </AnimatePresence>
+          {phrase ? (
+            /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
+            <AnimatePresence mode="wait">
+              {idx >= 0 && lineIdx >= 0 && (
+                <motion.div
+                  key={lineIdx}
+                  className="flex max-w-[86vw] flex-wrap items-baseline justify-center gap-x-[1.4vw] gap-y-2 text-center"
+                  initial={{ opacity: 0, y: 26 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -18, transition: { duration: 0.25 } }}
+                  transition={{ duration: 0.4 }}
+                >
+                  {words.slice(lineRanges[lineIdx].s, lineRanges[lineIdx].e + 1).map((w, j) => {
+                    const gi = lineRanges[lineIdx].s + j;
+                    const sung = gi <= idx;
+                    const active = gi === idx;
+                    return (
+                      <motion.span
+                        key={gi}
+                        className="phrase-word font-display font-black uppercase"
+                        animate={{
+                          opacity: sung ? 1 : 0.26,
+                          scale: active ? 1.22 : 1,
+                          color: active ? "var(--theme-accent)" : sung ? "var(--theme-primary)" : "rgba(255,255,255,0.8)",
+                        }}
+                        transition={{ duration: 0.22 }}
+                        style={active ? { filter: "drop-shadow(0 0 18px var(--theme-accent))" } : undefined}
+                      >
+                        {clean(w.w)}
+                      </motion.span>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          ) : (
           <AnimatePresence>
             {word && (
               <motion.div
                 key={idx}
-                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}`}
+                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}`}
+                style={dyn ? { left: `${dyn.x}vw`, top: `${dyn.y}vh`, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
+                onPointerDown={pass >= 3 ? () => setTouchBurn(idx) : undefined}
                 {...(m as MotionProps)}
               >
                 {/* ghost echo — line-final and charged words leave an afterimage */}
@@ -331,7 +433,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 <span className="kinetic-breathe">
                   {(() => {
                     // The word's inner treatment, shared by held + normal paths.
-                    const inner = glitches ? <WordGlitch word={shown} airtime={airtime} />
+                    let inner = glitches ? <WordGlitch word={shown} airtime={airtime} />
                       : slams ? <WordSlam word={shown} />
                       : wavy ? <WordWave word={shown} airtime={airtime} />
                       : neon ? <WordNeon word={shown} airtime={airtime} />
@@ -341,7 +443,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                       : types ? <WordType word={shown} airtime={airtime} />
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
                       : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
-                    if (burns) return <WordBurn word={shown} airtime={airtime} />;
+                    if (burns || touchBurn === idx) return <WordBurn word={shown} airtime={touchBurn === idx ? Math.max(airtime, 1.2) : airtime} />;
+                    // Dynamic stagecraft: each word rushes in from its own direction.
+                    if (dyn && !slams) inner = (
+                      <motion.span
+                        className="inline-block"
+                        initial={{ x: ENTER_DIRS[dyn.dir].x, y: ENTER_DIRS[dyn.dir].y, opacity: 0 }}
+                        animate={{ x: "0vw", y: "0vh", opacity: 1 }}
+                        transition={{ type: "spring", stiffness: 300, damping: 26 }}
+                      >
+                        {inner}
+                      </motion.span>
+                    );
                     if (held) return (
                       // The held note performs: the word swells for the length of
                       // the note while the beat makes it breathe (CSS --beat scale).
@@ -360,11 +473,66 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               </motion.div>
             )}
           </AnimatePresence>
+          )}
         </div>
         {upcoming && <p className="kinetic-hint">{upcoming}</p>}
       </div>
 
+      {/* Anchor word — a charged word looms huge and translucent OVER the show */}
+      <AnimatePresence>
+        {dynamic && anchor && (
+          <motion.div
+            key={`a${anchor.key}`}
+            className="pointer-events-none fixed inset-0 z-[6] flex items-center justify-center overflow-hidden"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { duration: 1.1 } }}
+          >
+            <motion.span
+              className="pointer-events-auto cursor-pointer select-none whitespace-nowrap font-display font-black uppercase"
+              style={{ fontSize: "clamp(8rem, 30vw, 34rem)", color: "var(--theme-accent)", filter: "blur(1.5px)", letterSpacing: "-0.02em" }}
+              initial={{ opacity: 0, scale: 2.3, x: anchor.fromX, rotate: anchor.rot * 2 }}
+              animate={{ opacity: 0.15, scale: 1.72, x: "0vw", rotate: anchor.rot }}
+              whileTap={{ opacity: 0.45, scale: 1.95 }}
+              onPointerDown={() => { anchorAt.current = 0; setAnchor(null); }}
+              transition={{ duration: 1.15, ease: "easeOut" }}
+            >
+              {anchor.word}
+            </motion.span>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Pressure gauge — the emotional intensity as a living instrument */}
+      {pass >= 3 && mode !== "focus" && <PressureGauge section={section} />}
+
       {sections && sections.length > 0 && <ArcTimeline sections={sections} bottomClass={timelineBottomClass} />}
+    </div>
+  );
+}
+
+/* ========== PRESSURE GAUGE ==========
+   The song's emotional intensity as a living instrument: a vertical column
+   filled to the section's intensity, its needle quivering with the live bass
+   (--beat), labeled with the emotion. Watch it plunge on breakdowns. */
+function PressureGauge({ section }: { section: PlanetSection | null }) {
+  const level = (section?.intensity ?? 0.25) * 100;
+  return (
+    <div className="pointer-events-none fixed right-3 top-1/2 z-10 hidden -translate-y-1/2 flex-col items-center gap-2 sm:flex">
+      <span className="font-mono text-[8px] uppercase tracking-[0.3em] text-white/30">pressure</span>
+      <div className="relative h-[38vh] w-1.5 overflow-visible rounded-full bg-white/10">
+        <div
+          className="absolute bottom-0 w-full rounded-full transition-[height] duration-700 ease-out"
+          style={{ height: `${level}%`, background: "linear-gradient(to top, var(--theme-primary), var(--theme-accent))", boxShadow: "0 0 10px var(--theme-primary)" }}
+        />
+        <div
+          className="absolute -left-1 h-[3px] w-3.5 rounded-full bg-white"
+          style={{ bottom: `calc(${level}% + var(--beat) * 7%)`, boxShadow: "0 0 8px var(--theme-accent)", transition: "bottom 90ms ease-out" }}
+        />
+      </div>
+      <span className="font-mono text-[9px] uppercase tracking-widest transition-colors duration-700" style={{ writingMode: "vertical-rl", color: "var(--theme-accent)" }}>
+        {section ? `${section.emotion} · ${Math.round(section.intensity * 100)}` : "—"}
+      </span>
     </div>
   );
 }
