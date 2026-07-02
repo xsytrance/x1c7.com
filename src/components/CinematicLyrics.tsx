@@ -78,7 +78,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   // Satellites: which pass of the show is playing (newest = main show).
   const [pass, setPass] = useState(3);
   // Viewing style, remembered across sessions.
-  const [mode, setMode] = useState<StageMode>("dynamic");
+  const [mode, setMode] = useState<StageMode>("phrase");
   useEffect(() => {
     const saved = localStorage.getItem("x1c7-lyric-style") as StageMode | null;
     if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
