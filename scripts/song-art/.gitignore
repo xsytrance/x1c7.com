@@ -61,3 +61,10 @@ whistle-analysis.json
 whistle-fixed.json
 quit-planet-full.json
 wr-planet-full.json
+gap-*/
+gap-*.json
+missing-sections.json
+shared-lib/
+shared-planet.json
+shared-retry/
+shared-retry.json
