@@ -35,3 +35,4 @@ next-env.d.ts
 # private planets — personal YouTube imports, never committed or deployed
 /public/private/
 /scripts/import-youtube/wd/
+/scripts/import-youtube/jobs/

@@ -52,6 +52,11 @@ export default function GalaxyPage() {
   const { tracks } = useTracks();
   const { playTrack, currentTrack, isPlaying } = useMusicPlayer();
   const [focus, setFocus] = useState<Track | null>(null);
+  // The Foundry (YouTube → private planet) only exists on the owner's machine.
+  const [isLocal, setIsLocal] = useState(false);
+  useEffect(() => {
+    setIsLocal(/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname));
+  }, []);
 
   const planets = useMemo(() => tracks.filter(canPerform), [tracks]);
   const asteroids = useMemo(() => tracks.filter((t) => !canPerform(t)), [tracks]);
@@ -118,9 +123,16 @@ export default function GalaxyPage() {
             {planets.length} planets · {asteroids.length} asteroids waiting to become worlds
           </p>
         </div>
-        <Link href="/music" className="rounded-full border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
-          ← Music
-        </Link>
+        <div className="flex items-center gap-2">
+          {isLocal && (
+            <Link href="/importer" title="The Foundry — forge private planets from YouTube" className="rounded-full border border-amber-300/30 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-amber-200/80 transition hover:text-amber-100">
+              + Forge
+            </Link>
+          )}
+          <Link href="/music" className="rounded-full border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+            ← Music
+          </Link>
+        </div>
       </header>
 
       {/* asteroids — the not-yet-planets drifting in the deep background */}
