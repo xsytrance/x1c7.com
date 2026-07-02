@@ -6,16 +6,15 @@ import { useState, type CSSProperties } from "react";
 import { portals } from "@/data/portals";
 import { PortalConnections } from "./PortalConnections";
 
-const orbitPositions = [
-  { left: "50%", top: "8%" },
-  { left: "78%", top: "23%" },
-  { left: "82%", top: "56%" },
-  { left: "64%", top: "78%" },
-  { left: "36%", top: "78%" },
-  { left: "18%", top: "56%" },
-  { left: "22%", top: "23%" },
-  { left: "50%", top: "91%" },
-];
+// Orbit slots computed for however many portals exist — a fixed list broke
+// the homepage prerender the moment a 9th portal was added.
+const orbitPositions = portals.map((_, i) => {
+  const a = (i / portals.length) * Math.PI * 2; // start at top, clockwise
+  return {
+    left: `${(50 + 32 * Math.sin(a)).toFixed(1)}%`,
+    top: `${(49.5 - 41.5 * Math.cos(a)).toFixed(1)}%`,
+  };
+});
 
 export function PortalMap() {
   const [activeSlug, setActiveSlug] = useState(portals[0].slug);
