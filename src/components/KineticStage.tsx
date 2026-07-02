@@ -178,6 +178,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Choreographed wipe moments (also from the planet's interaction data).
   const [wipe, setWipe] = useState<{ layer: string; prompt: string } | null>(null);
   const wipeKey = useRef(-1);
+  // Choreographed blow moments + the gust they trigger.
+  const [blow, setBlow] = useState<{ prompt: string } | null>(null);
+  const blowKey = useRef(-1);
+  const [gust, setGust] = useState(0);
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
@@ -233,6 +237,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (key !== wipeKey.current) {
           wipeKey.current = key;
           setWipe(mo ? { layer: mo.layer, prompt: mo.prompt } : null);
+        }
+        const bo = interactions.moments.find((mm) => mm.type === "blow" && t >= mm.t && t < mm.end);
+        const bkey = bo ? bo.t : -1;
+        if (bkey !== blowKey.current) {
+          blowKey.current = bkey;
+          setBlow(bo ? { prompt: bo.prompt } : null);
         }
       }
       // Title card: only before the first sung word.
@@ -530,6 +540,48 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
       {/* Choreographed wipe moment — wipe the song's veil away */}
       {pass >= 3 && <WipeLayer moment={wipe} />}
+
+      {/* Choreographed blow moment — blow into the mic on cue */}
+      {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
+
+      {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
+      <AnimatePresence>
+        {gust > 0 && (
+          <motion.div
+            key={`g${gust}`}
+            className="pointer-events-none fixed inset-0 z-[34] overflow-hidden"
+            initial={{ opacity: 1 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onAnimationComplete={() => setTimeout(() => setGust(0), 2400)}
+          >
+            {Array.from({ length: 26 }).map((_, i) => (
+              <motion.span
+                key={i}
+                className="absolute h-[2px] rounded-full bg-white/70"
+                style={{ top: `${(i * 89) % 100}%`, width: `${40 + (i * 37) % 120}px`, boxShadow: "0 0 8px var(--theme-accent)" }}
+                initial={{ left: "-12%", opacity: 0 }}
+                animate={{ left: "112%", opacity: [0, 0.9, 0] }}
+                transition={{ duration: 0.7 + ((i * 13) % 10) / 18, delay: ((i * 7) % 12) / 30, ease: "easeIn" }}
+              />
+            ))}
+            <motion.div
+              className="absolute inset-0 bg-black"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 0.72, 0.55, 0] }}
+              transition={{ duration: 2.6, times: [0, 0.25, 0.6, 1], ease: "easeInOut" }}
+            />
+            <motion.p
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-sm uppercase tracking-[0.5em] text-white/70"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: [0, 1, 0], scale: 1.05 }}
+              transition={{ duration: 2.4, times: [0, 0.3, 1] }}
+            >
+              ✨
+            </motion.p>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {sections && sections.length > 0 && <ArcTimeline sections={sections} bottomClass={timelineBottomClass} />}
     </div>
@@ -979,6 +1031,64 @@ function WordBloom({ word }: { word: string }) {
         />
       ))}
     </span>
+  );
+}
+
+/* ========== BLOW MOMENT ==========
+   A WarioWare-style beat: at a choreographed point the show asks the
+   listener to BLOW into the mic (blow out the candle, scatter the ash).
+   Mic starts only on tap (permission + privacy), detection = sustained
+   broadband low-frequency energy, and everything stops when the moment
+   ends. If the mic is denied, tapping the prompt works instead. */
+function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onGust: () => void }) {
+  const [state, setState] = useState<"idle" | "listening" | "done" | "denied">("idle");
+  const cleanupRef = useRef<() => void>(() => {});
+  useEffect(() => {
+    if (!moment) { cleanupRef.current(); setState("idle"); }
+    return () => cleanupRef.current();
+  }, [moment]);
+  const start = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false } });
+      const ctx = new AudioContext();
+      const an = ctx.createAnalyser();
+      an.fftSize = 1024;
+      ctx.createMediaStreamSource(stream).connect(an);
+      const buf = new Uint8Array(an.frequencyBinCount);
+      let hot = 0; let raf = 0;
+      const cleanup = () => { cancelAnimationFrame(raf); stream.getTracks().forEach((t) => t.stop()); ctx.close().catch(() => {}); };
+      cleanupRef.current = cleanup;
+      setState("listening");
+      const loop = () => {
+        an.getByteFrequencyData(buf);
+        let low = 0;
+        for (let i = 1; i < 40; i++) low += buf[i];
+        low /= 40 * 255;
+        hot = low > 0.5 ? hot + 1 : Math.max(0, hot - 1);
+        if (hot > 10) { setState("done"); onGust(); cleanup(); return; }
+        raf = requestAnimationFrame(loop);
+      };
+      loop();
+    } catch { setState("denied"); }
+  };
+  return (
+    <AnimatePresence>
+      {moment && state !== "done" && (
+        <motion.button
+          key={moment.prompt}
+          onClick={state === "listening" ? undefined : state === "denied" ? onGust : start}
+          className="fixed left-1/2 top-24 z-[35] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/25 bg-black/55 px-5 py-3 font-mono text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: [0, 1, 1, 0.75, 1], y: 0, scale: state === "listening" ? [1, 1.06, 1] : 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: state === "listening" ? 1.1 : 1.8, repeat: state === "listening" ? Infinity : 0 }}
+        >
+          {state === "idle" && <>🌬️ {moment.prompt} — tap to ready the mic</>}
+          {state === "listening" && <>🌬️ BLOW NOW — {moment.prompt}</>}
+          {state === "denied" && <>🌬️ {moment.prompt} — tap!</>}
+        </motion.button>
+      )}
+    </AnimatePresence>
   );
 }
 
