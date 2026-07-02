@@ -195,6 +195,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Choreographed blow moments + the gust they trigger.
   const [blow, setBlow] = useState<{ prompt: string } | null>(null);
   const blowKey = useRef(-1);
+  // Choreographed shake moments: a window where shaking the phone pays off big.
+  const [shakeMo, setShakeMo] = useState<{ prompt: string } | null>(null);
+  const shakeMoKey = useRef(-1);
+  const shakeDone = useRef(false);
   const [gust, setGust] = useState(0);
   // Shake-to-scatter: a real phone shake rattles the stage and the current
   // word reacts in the song's own tap language.
@@ -262,10 +266,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       window.removeEventListener("pointerdown", askMotion);
     };
   }, [pass]);
-  // A shake scatters the current word in the song's own tap language.
+  // A shake scatters the current word in the song's own tap language —
+  // and during a choreographed shake moment it pays off BIG (full gust).
   useEffect(() => {
-    if (quake > 0 && lastWord.current >= 0) setTouchBurn(lastWord.current);
-  }, [quake]);
+    if (quake === 0) return;
+    if (lastWord.current >= 0) setTouchBurn(lastWord.current);
+    if (shakeMo && !shakeDone.current) {
+      shakeDone.current = true;
+      setGust((g) => g + 1);
+      setWave((w) => w + 1);
+      navigator.vibrate?.([30, 60, 30, 60]);
+      setShakeMo(null);
+    }
+  }, [quake, shakeMo]);
   // …and physically rattles the stage (CSS animation, retriggered per shake).
   useEffect(() => {
     if (!quake) return;
@@ -333,6 +346,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (bkey !== blowKey.current) {
           blowKey.current = bkey;
           setBlow(bo ? { prompt: bo.prompt } : null);
+        }
+        const so = interactions.moments.find((mm) => mm.type === "shake" && t >= mm.t && t < mm.end);
+        const skey = so ? so.t : -1;
+        if (skey !== shakeMoKey.current) {
+          shakeMoKey.current = skey;
+          shakeDone.current = false;
+          setShakeMo(so ? { prompt: so.prompt } : null);
         }
       }
       // Title card: only before the first sung word.
@@ -645,6 +665,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
       {/* Choreographed blow moment — blow into the mic on cue */}
       {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
+
+      {/* Choreographed shake moment — shake the phone on cue (tap = fallback) */}
+      <AnimatePresence>
+        {pass >= 3 && shakeMo && (
+          <motion.button
+            key={shakeMo.prompt}
+            onClick={() => setQuake((q) => q + 1)}
+            className="fixed left-1/2 top-24 z-[35] -translate-x-1/2 whitespace-nowrap rounded-full border border-white/25 bg-black/55 px-5 py-3 font-mono text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0, rotate: [0, -2.5, 2.5, -1.5, 1.5, 0] }}
+            exit={{ opacity: 0 }}
+            transition={{ rotate: { duration: 0.7, repeat: Infinity, repeatDelay: 0.5 } }}
+          >
+            📳 {shakeMo.prompt}
+          </motion.button>
+        )}
+      </AnimatePresence>
 
       {/* Mic primer — ask ONCE at show start (never mid-song) when this
           song has a breath moment coming. */}
