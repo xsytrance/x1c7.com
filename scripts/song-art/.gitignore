@@ -1,2 +1,7 @@
 out/
+out-sections/
+seoul-kw/
+seoul-sec/
 planet.json
+sections-planet.json
+seoul-planet-full.json
