@@ -75,10 +75,12 @@ export class OnsetTracker {
   }
 }
 
-/** The cut window containing t (only the long, dramatic ones), or null. */
-export function activeCut(data: StemData, t: number, minLen = 1.6): [number, number] | null {
+/** The cut window containing t, or null. Only DRAMATIC holes count: long
+ * enough to read as a beat-cut (≥1.6s), short enough to be a moment and not
+ * a quiet section or drum-less intro (≤7s) — a 20s bridge isn't a blackout. */
+export function activeCut(data: StemData, t: number, minLen = 1.6, maxLen = 7): [number, number] | null {
   for (const [a, b] of data.cuts) {
-    if (b - a >= minLen && t >= a && t < b) return [a, b];
+    if (b - a >= minLen && b - a <= maxLen && t >= a && t < b) return [a, b];
     if (a > t) break;
   }
   return null;

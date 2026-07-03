@@ -124,7 +124,8 @@ def main():
         low = f.lower()
         if not low.endswith((".mp3", ".wav", ".flac")): continue
         for key, pat in [("lead", "lead voc"), ("back", "backing voc"), ("drums", "drum"),
-                         ("bass", "bass"), ("perc", "perc"), ("synth", "synth"), ("other", "other")]:
+                         ("bass", "bass"), ("perc", "perc"), ("synth", "synth"), ("other", "other"),
+                         ("guitar", "guitar"), ("keys", "keyboard")]:
             if pat in low: names[key] = os.path.join(args.stems, f)
     log("stems:", {k: os.path.basename(v) for k, v in names.items()})
 
@@ -173,7 +174,8 @@ def main():
             for a, b in silence_windows(dp) if b + lag > 1 and a + lag < dur - 1]
     # drum returns = each cut's end + the very first drum entrance
     returns = [c[1] for c in cuts]
-    synth_env = np.maximum(np.array(env.get("synth", [0])), np.array(env.get("other", [0]))).tolist()
+    melodic = [env[k] for k in ("synth", "other", "guitar", "keys") if k in env]
+    synth_env = np.max([np.array(e) for e in melodic], axis=0).tolist() if melodic else [0]
     risers = find_risers(synth_env, returns)
     log(f"  cuts {cuts}")
     log(f"  risers {risers}")
@@ -183,7 +185,7 @@ def main():
         "align": {"lag": round(lag, 3), "score": round(score, 2)},
         "beats": beats, "kicks": kicks, "snares": snares, "hats": hats,
         "cuts": cuts, "risers": risers,
-        "env": {k: env[k] for k in ("lead", "back", "drums", "bass", "synth", "other") if k in env},
+        "env": {k: env[k] for k in ("lead", "back", "drums", "bass", "synth", "other", "guitar", "keys") if k in env},
     }
     with open(args.out, "w") as f:
         json.dump(out, f, separators=(",", ":"))
