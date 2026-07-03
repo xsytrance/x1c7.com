@@ -228,10 +228,16 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                 >
                   <div className="flex items-center justify-between px-4 py-3">
                     <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/50">Playlist · {queue.length}</p>
-                    <Link href="/galaxy" onClick={onClose}
-                      className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
-                      🌌 Galaxy view
-                    </Link>
+                    <span className="flex items-center gap-1.5">
+                      <Link href={`/vr?track=${track.id}`} onClick={onClose}
+                        className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+                        🥽 VR
+                      </Link>
+                      <Link href="/galaxy" onClick={onClose}
+                        className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+                        🌌 Galaxy
+                      </Link>
+                    </span>
                   </div>
                   <div className="flex-1 overflow-y-auto pb-6">
                     {queue.map((t) => {
