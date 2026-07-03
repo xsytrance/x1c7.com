@@ -9,6 +9,7 @@ import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import { supabase } from "@/lib/supabase";
+import { isPrivateHost } from "@/lib/privateHost";
 
 type Result = { id: string; title: string; channel: string; duration: number | null; thumb: string; url: string };
 type Stage = { key: string; label: string };
@@ -36,7 +37,7 @@ export default function ImporterPage() {
   jobsRef.current = jobs;
 
   useEffect(() => {
-    setLocal(/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname));
+    setLocal(isPrivateHost(window.location.hostname));
     supabase.auth.getSession().then(({ data }) => setSession(data.session));
     const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => setSession(s));
     return () => sub.subscription.unsubscribe();

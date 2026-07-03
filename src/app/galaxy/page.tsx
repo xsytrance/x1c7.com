@@ -10,6 +10,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTracks } from "@/lib/useTracks";
+import { isPrivateHost } from "@/lib/privateHost";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { CinematicLyrics } from "@/components/CinematicLyrics";
 import { canPerform } from "@/components/KineticStage";
@@ -55,7 +56,7 @@ export default function GalaxyPage() {
   // The Foundry (YouTube → private planet) only exists on the owner's machine.
   const [isLocal, setIsLocal] = useState(false);
   useEffect(() => {
-    setIsLocal(/^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname));
+    setIsLocal(isPrivateHost(window.location.hostname));
   }, []);
 
   const planets = useMemo(() => tracks.filter(canPerform), [tracks]);
