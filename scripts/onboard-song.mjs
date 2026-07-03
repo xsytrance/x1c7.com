@@ -72,14 +72,30 @@ const duration = Math.round(Number(execFileSync("ffprobe", ["-v", "error",
 log(`  "${TITLE}" — ${duration}s → id "${id}"`);
 
 // ── 2. TRANSCRIBE ───────────────────────────────────────────────────────────
+// Best source wins: --vocal-stem (Suno's isolated lead vocal — cleaner than
+// any separation we could do) > full mix. Stem timing is re-clocked onto the
+// release via --stem-lag (seconds to ADD, from analyze_stems.py's align.lag).
 const tPath = join(wd, "transcript.json");
+const vocalStem = args["vocal-stem"] && args["vocal-stem"] !== true ? resolve(args["vocal-stem"]) : null;
+const stemLag = Number(args["stem-lag"] ?? 0) || 0;
 if (!existsSync(tPath)) {
-  log("▶ transcribing vocals (Whisper large-v3" + (args["no-demucs"] ? "" : " + demucs") + ") …");
-  const py = [join(HERE, "import-youtube/transcribe.py"), "--audio", mp3, "--out", tPath];
+  const src = vocalStem ?? mp3;
+  log(`▶ transcribing vocals (Whisper large-v3, ${vocalStem ? "lead-vocal stem" : args["no-demucs"] ? "full mix" : "demucs"}) …`);
+  const py = [join(HERE, "import-youtube/transcribe.py"), "--audio", src, "--out", tPath];
   if (args.lang && args.lang !== true) py.push("--language", args.lang);
-  if (args["no-demucs"]) py.push("--no-demucs");
+  if (vocalStem || args["no-demucs"]) py.push("--no-demucs");
   const r = spawnSync(join(VENV, "bin/python"), py, { stdio: ["ignore", 2, 2] });
   if (r.status !== 0) throw new Error("transcription failed");
+  if (vocalStem && stemLag) {
+    const tr = JSON.parse(readFileSync(tPath, "utf8"));
+    for (const s of tr.segments) {
+      s.start = Math.max(0, Math.round((s.start + stemLag) * 1000) / 1000);
+      if (s.end != null) s.end = Math.round((s.end + stemLag) * 1000) / 1000;
+      for (const w of s.words ?? []) w.t = Math.max(0, Math.round((w.t + stemLag) * 1000) / 1000);
+    }
+    writeFileSync(tPath, JSON.stringify(tr, null, 2));
+    log(`  re-clocked by ${stemLag > 0 ? "+" : ""}${stemLag}s onto the release`);
+  }
 }
 const transcript = JSON.parse(readFileSync(tPath, "utf8"));
 const segs = transcript.segments.filter((s) => s.text.trim());
