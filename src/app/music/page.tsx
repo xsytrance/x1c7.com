@@ -9,6 +9,7 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
 import { MagneticCard } from "@/components/MagneticCard";
 import { SoundCloudEmbed } from "@/components/SoundCloudEmbed";
+import { GalaxyButton } from "@/components/GalaxyButton";
 import { musicSources } from "@/data/tracks";
 import type { Track } from "@/data/tracks";
 import { useTracks } from "@/lib/useTracks";
@@ -282,6 +283,11 @@ export default function Page() {
       {/* ===== NOW-PLAYING LYRICS (inline + cinematic) — surfaces right under the
              hero when the current track has lyrics, so it's not buried below the grid. */}
       <CinematicLyrics />
+
+      {/* ===== THE GALAXY — the big front door ===== */}
+      <section className="relative z-10 mx-auto mt-8 max-w-6xl px-4 sm:px-6 lg:px-8">
+        <GalaxyButton />
+      </section>
 
       {/* ===== STATS ===== */}
       <section className="relative z-10 mx-auto mt-8 max-w-6xl px-4 sm:px-6 lg:px-8">
