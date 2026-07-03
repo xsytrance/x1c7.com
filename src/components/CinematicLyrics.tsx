@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import { createPortal } from "react-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
@@ -73,8 +74,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   synced: boolean;
   onClose: () => void;
 }) {
-  const { isPlaying, togglePlay, getCurrentTime } = useMusicPlayer();
+  const { isPlaying, togglePlay, getCurrentTime, next, prev, queue, playTrack } = useMusicPlayer();
   const [mounted, setMounted] = useState(false);
+  // The playlist drawer — the whole queue, one tap from any show.
+  const [drawer, setDrawer] = useState(false);
   // Satellites: which pass of the show is playing (newest = main show).
   const [pass, setPass] = useState(3);
   // Viewing style, remembered across sessions.
@@ -103,13 +106,18 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
     return () => { uiStore.setCinematic(false); document.body.classList.remove("cinematic-on"); };
   }, [open]);
 
-  // Esc closes.
+  // Keys: Esc closes (drawer first), ←/→ hop songs, space play/pause.
   useEffect(() => {
     if (!open) return;
-    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") onClose(); };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") { if (drawer) setDrawer(false); else onClose(); }
+      else if (e.key === "ArrowRight") next();
+      else if (e.key === "ArrowLeft") prev();
+      else if (e.key === " " && !(e.target as HTMLElement)?.closest("input,textarea")) { e.preventDefault(); togglePlay(); }
+    };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open, onClose]);
+  }, [open, onClose, drawer, next, prev, togglePlay]);
 
   // Karaoke highlight (line-mode fallback only) — rAF + refs, no per-frame re-render.
   useEffect(() => {
@@ -168,16 +176,30 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                 <button
                   onClick={() => setPass((p) => (p > 1 ? p - 1 : 3))}
                   title="Satellites — every pass of the show, preserved. Tap to switch."
-                  className="rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
+                  className="hidden rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white sm:block"
                 >
                   🌙 Pass {pass}{pass === 3 ? "" : " · satellite"}
                 </button>
               )}
+              {/* Song hop — previous / play / next (also ← → keys) */}
+              <button onClick={prev} aria-label="Previous song" title="Previous song (←)"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" /></svg>
+              </button>
               <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
                 className="grid h-10 w-10 place-items-center rounded-full text-void transition hover:scale-105" style={{ background: "var(--theme-primary)" }}>
                 {isPlaying
                   ? <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
                   : <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>}
+              </button>
+              <button onClick={next} aria-label="Next song" title="Next song (→)"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z" /></svg>
+              </button>
+              {/* The playlist — every world in the queue, one tap away */}
+              <button onClick={() => setDrawer((d) => !d)} aria-label="Playlist" title="Playlist"
+                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M4 6h16M4 12h10M4 18h7" /><circle cx="18" cy="16" r="2.6" /><path d="M20.6 16V9.5l-3 1" /></svg>
               </button>
               {/* Minimize — drop back to the page; the music keeps playing */}
               <button onClick={onClose} aria-label="Minimize — music keeps playing" title="Minimize (Esc) — music keeps playing"
@@ -186,6 +208,63 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               </button>
             </div>
           </div>
+
+          {/* PLAYLIST DRAWER — the queue as a constellation list. Planets
+              (word-synced worlds) glow; tap any row to fly there. */}
+          <AnimatePresence>
+            {drawer && (
+              <>
+                <motion.div
+                  key="scrim"
+                  className="absolute inset-0 z-[5] bg-black/45"
+                  initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                  onClick={() => setDrawer(false)}
+                />
+                <motion.aside
+                  key="drawer"
+                  className="absolute bottom-0 right-0 top-[64px] z-[6] flex w-[min(88vw,360px)] flex-col border-l border-white/10 bg-[#0a0714]/95 backdrop-blur-xl"
+                  initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
+                  transition={{ type: "spring", stiffness: 380, damping: 36 }}
+                >
+                  <div className="flex items-center justify-between px-4 py-3">
+                    <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/50">Playlist · {queue.length}</p>
+                    <Link href="/galaxy" onClick={onClose}
+                      className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+                      🌌 Galaxy view
+                    </Link>
+                  </div>
+                  <div className="flex-1 overflow-y-auto pb-6">
+                    {queue.map((t) => {
+                      const active = t.id === track.id;
+                      const planet = canPerform(t);
+                      return (
+                        <button
+                          key={t.id}
+                          onClick={() => { playTrack(t); setDrawer(false); }}
+                          className={`flex w-full items-center gap-3 px-4 py-2.5 text-left transition hover:bg-white/5 ${active ? "bg-white/10" : ""}`}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={t.cover || t.art} alt="" className="h-10 w-10 shrink-0 rounded-lg object-cover"
+                            style={active ? { boxShadow: "0 0 12px var(--theme-primary)" } : undefined} loading="lazy" />
+                          <span className="min-w-0 flex-1">
+                            <span className={`block truncate font-display text-sm font-bold ${active ? "text-white" : "text-white/75"}`}>{t.title}</span>
+                            <span className="block truncate font-mono text-[9px] uppercase tracking-wider text-white/35">
+                              {planet ? "🪐 planet · full show" : t.genre || "asteroid"}
+                            </span>
+                          </span>
+                          {active && (
+                            <span className="shrink-0 font-mono text-[9px] uppercase tracking-wider" style={{ color: "var(--theme-primary)" }}>
+                              {isPlaying ? "▶ now" : "paused"}
+                            </span>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </motion.aside>
+              </>
+            )}
+          </AnimatePresence>
 
           <div className="relative flex-1 overflow-hidden">
             {performs ? (
