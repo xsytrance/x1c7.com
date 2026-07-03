@@ -84,7 +84,13 @@ body::after {
 /* Lyric engine — Kinetic template */
 .kinetic-stage {
   --emo: 0; /* current section emotional intensity (0..1), set by the engine */
-  transform: scale(calc(1 + var(--beat) * 0.08 + var(--emo) * 0.04));
+  /* --bass / --kick are the STEM senses (0..1, written per-frame when the
+     planet ships stems.json): the 808 curve bends the whole stage, kicks
+     thump it. Both default to 0 so stem-less planets are unchanged. */
+  transform:
+    scale(calc(1 + var(--beat) * 0.08 + var(--emo) * 0.04 + var(--kick, 0) * 0.035))
+    skewX(calc(var(--bass, 0) * -2.4deg))
+    scaleY(calc(1 + var(--bass, 0) * 0.045));
   transition: transform 0.06s linear;
 }
 .kinetic-word {
@@ -95,8 +101,9 @@ body::after {
   text-transform: uppercase;
   font-size: clamp(3rem, 16vw, 14rem);
   color: var(--theme-primary);
-  /* glow rides both the beat and the song's emotional intensity at this moment */
-  filter: drop-shadow(0 0 calc(var(--beat) * 46px + var(--emo) * 40px + 8px) var(--theme-primary));
+  /* glow rides the beat, the emotional intensity, and (with stems) the
+     singer's LIVE vocal energy */
+  filter: drop-shadow(0 0 calc(var(--beat) * 46px + var(--emo) * 40px + var(--voice, 0) * 26px + 8px) var(--theme-primary));
   will-change: transform, opacity;
 }
 .kinetic-hint {
@@ -131,16 +138,28 @@ body.cinematic-on { overflow: hidden; }
 /* non-synced lyrics: readable static stanzas */
 .cine-line--plain { color: rgba(255, 255, 255, 0.82); font-size: clamp(1.5rem, 4vw, 2.75rem); }
 
-/* Beat halo — a soft bloom behind the word that breathes with the music. */
+/* Beat halo — a soft bloom behind the word that breathes with the music
+   (and THUMPS on real kicks when the planet has stems). */
 .kinetic-halo {
   position: absolute;
   border-radius: 9999px;
-  width: calc(34vmin + var(--beat) * 26vmin);
-  height: calc(34vmin + var(--beat) * 26vmin);
+  width: calc(34vmin + var(--beat) * 26vmin + var(--kick, 0) * 14vmin);
+  height: calc(34vmin + var(--beat) * 26vmin + var(--kick, 0) * 14vmin);
   background: radial-gradient(circle, color-mix(in srgb, var(--theme-primary) 30%, transparent), transparent 68%);
   opacity: calc(0.35 + var(--beat) * 0.65);
   filter: blur(4px);
   pointer-events: none;
+}
+
+/* Beat-cut blackout — drums gone: the stage holds its breath in silhouette.
+   Words go ghost-white and desaturated until the drums slam back. */
+.stem-cut .kinetic-stage {
+  filter: grayscale(0.85) brightness(1.35) contrast(1.1);
+  transition: filter 0.25s ease;
+}
+.stem-cut .kinetic-word {
+  color: rgba(255, 255, 255, 0.92);
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.55));
 }
 
 /* Charged word — the brain flagged it as emotionally loaded: bigger, accent-lit. */
