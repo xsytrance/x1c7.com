@@ -13,6 +13,7 @@ import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } 
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
+import { KineticParticles, particleModeFor, type ParticleHandle } from "./KineticParticles";
 import type { Track } from "@/data/tracks";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
@@ -69,18 +70,27 @@ export const MODES: { id: StageMode; label: string }[] = [
 // Function words render small in dynamic mode so content words own the stage.
 const STOP_WORDS = new Set(["the", "a", "an", "and", "or", "but", "of", "in", "on", "at", "to", "for", "is", "are", "was", "were", "it", "its", "my", "your", "his", "her", "our", "their", "me", "him", "them", "that", "this", "so", "do", "did", "with", "by", "as", "if", "then", "than", "el", "la", "los", "las", "de", "en", "que", "un", "una", "y", "pa’", "mi", "tu", "se", "lo", "le"]);
 
-// Deterministic per-word stagecraft: position, tilt, size tier, font, and
-// entrance direction — seeded by word index so renders are stable.
-const ENTER_DIRS = [{ x: "-16vw", y: "0vh" }, { x: "16vw", y: "0vh" }, { x: "0vw", y: "-14vh" }, { x: "0vw", y: "12vh" }];
+// ── The placement mathematics ──────────────────────────────────────────────
+// Position: the R2 low-discrepancy sequence (built on the plastic constant).
+// Word i lands at (frac(.5+i·a1), frac(.5+i·a2)) mapped over the FULL stage —
+// consecutive points are guaranteed ≥ ~17vw/22vh apart, so back-to-back words
+// mathematically cannot stack, while coverage stays perfectly even over time.
+// Direction: the golden angle (137.508°). Word i enters from angle i·137.508°,
+// and within a word letter j adds j·137.508° more — an irrational slice of the
+// circle, so no two entrances (word-to-word OR letter-to-letter) ever repeat.
+const PLASTIC = 1.32471795724474602596;
+const R2X = 1 / PLASTIC, R2Y = 1 / (PLASTIC * PLASTIC);
+const GOLDEN = 137.50776405003785;
 function stagecraft(idx: number, f: { charged: boolean; final: boolean; mono: boolean; stop: boolean }) {
   const s = (k: number, m: number) => ((idx * 2654435761 + k * 9973) >>> 0) % m;
+  const fx = (0.5 + idx * R2X) % 1, fy = (0.5 + idx * R2Y) % 1;
   return {
-    x: f.charged ? 0 : s(1, 25) - 12,                     // vw off-center
-    y: f.charged ? 0 : s(2, 15) - 7,                      // vh off-center
+    x: f.charged ? 0 : (fx * 2 - 1) * 32,                 // vw off-center — full width
+    y: f.charged ? 0 : (fy * 2 - 1) * 26,                 // vh off-center — full height
     rot: f.charged ? 0 : s(3, 11) - 5,                    // deg tilt
-    size: f.charged ? 1.32 : f.final ? 1.15 : f.stop ? 0.58 : 0.88 + s(4, 4) * 0.08,
+    size: f.charged ? 1.42 : f.final ? 1.22 : f.stop ? 0.6 : 0.92 + s(4, 4) * 0.09,
     mono: f.mono || (!f.charged && !f.final && s(5, 9) === 0),
-    dir: s(6, 4),
+    ang: idx * GOLDEN,                                    // entrance direction (deg)
   };
 }
 
@@ -169,9 +179,45 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [bgArt, setBgArt] = useState<string | null>(null);
   const [showTitle, setShowTitle] = useState(true);
   const [wave, setWave] = useState(0);
-  // Anchor word: a charged word that arrives HUGE and lingers translucently
-  // over the following words for a few seconds.
-  const [anchor, setAnchor] = useState<{ word: string; key: number; fromX: string; rot: number } | null>(null);
+  // Art doubling: every painting has a twin (-2.webp). Each time the same
+  // image is called back on stage it alternates twins, so the backdrop never
+  // replays — assets.alt maps base URL → variant, shared art derives it.
+  const altArt = track.planet?.assets?.alt;
+  const artPlays = useRef(new Map<string, number>());
+  const pickArt = useCallback((url: string) => {
+    const n = (artPlays.current.get(url) ?? 0) + 1;
+    artPlays.current.set(url, n);
+    if (n % 2 === 0) {
+      const v = altArt?.[url] ?? (url.startsWith(SHARED_BASE) ? url.replace(/\.webp$/, "-2.webp") : null);
+      if (v) return v;
+    }
+    return url;
+  }, [altArt]);
+  // The weather layer — song-matched particles between backdrop and words.
+  const particles = useRef<ParticleHandle>(null);
+  const particleMode = useMemo(() => {
+    const a = track.planet?.analysis;
+    return particleModeFor([
+      a?.overallMood, ...(a?.themes ?? []), ...(a?.keywords?.map((k) => k.word) ?? []),
+      track.mood, track.genre, track.title,
+    ].filter(Boolean).join(" "));
+  }, [track]);
+  const palette = useMemo(() => {
+    const pal = track.planet?.analysis?.palette;
+    return Array.isArray(pal) && pal.length ? pal : [track.color];
+  }, [track]);
+  // Pulse rings: landing ripples for charged/final words + beat-synced rings.
+  const [pulseRings, setPulseRings] = useState<{ id: number; big: boolean }[]>([]);
+  const pulseId = useRef(0);
+  const spawnRing = useCallback((big: boolean) => {
+    const id = ++pulseId.current;
+    setPulseRings((r) => [...r.slice(-3), { id, big }]);
+  }, []);
+  const lastBeatSeen = useRef(0);
+  const beatN = useRef(0);
+  // Anchor word: a charged or line-closing word that arrives HUGE and lingers
+  // translucently behind the following words. mode: 0 slide, 1 zoom, 2 rise.
+  const [anchor, setAnchor] = useState<{ word: string; key: number; fromX: string; rot: number; mode: number } | null>(null);
   // Interactivity: tap a word and it reacts in THIS SONG'S language — the
   // choreographer LLM picked the effect per planet. (Stale indices go inert
   // on their own when the song moves to the next word.)
@@ -222,13 +268,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     setBeatOverride(next);
     if (beatOn) setStreak(0);
   };
-  // Score a stage tap against the live beat clock. Off-beat taps reset the
-  // streak; NOT tapping never does. No clock (no analyser) = never punish.
+  // Stage taps: double-tap = FIREWORK (particle burst + shockwave at the tap
+  // point), and every tap is scored against the live beat clock when the beat
+  // game is on. Off-beat taps reset the streak; NOT tapping never does.
+  const lastStageTap = useRef(0);
   const scoreTap = (e: React.PointerEvent) => {
-    if (pass < 3 || !beatOn) return;
+    if (pass < 3) return;
     const t = e.target as HTMLElement;
     if (t.closest("button") || t.closest("[title*='Emotional']")) return;
-    const off = beatClock.offBy(performance.now());
+    const nowT = performance.now();
+    if (nowT - lastStageTap.current < 340) {
+      lastStageTap.current = 0;
+      particles.current?.burst(e.clientX, e.clientY, 80);
+      setWave((w) => w + 1);
+      navigator.vibrate?.([10, 30, 10]);
+    } else lastStageTap.current = nowT;
+    if (!beatOn) return;
+    const off = beatClock.offBy(nowT);
     if (off === Infinity) return;
     const win = Math.max(90, beatClock.interval * 0.15);
     const hit = off <= win;
@@ -236,12 +292,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       navigator.vibrate?.(12);
       setStreak((sv) => {
         const ns = sv + 1;
-        if (ns === 8 || ns === 16 || ns === 32 || ns === 64) { setWave((w) => w + 1); navigator.vibrate?.([20, 40, 20]); }
+        if (ns === 8 || ns === 16 || ns === 32 || ns === 64) {
+          // Milestone: shockwave + a particle storm from the heart of the stage.
+          setWave((w) => w + 1);
+          particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 40 + ns * 2);
+          navigator.vibrate?.([20, 40, 20]);
+        }
         return ns;
       });
     } else setStreak(0);
     const id = ++rippleId.current;
     setRipples((r) => [...r.slice(-5), { id, x: e.clientX, y: e.clientY, hit }]);
+  };
+  // Swipe comet: dragging a finger across open stage combs a glowing trail
+  // through the weather layer (word drags are handled by their own physics).
+  const stageMove = (e: React.PointerEvent) => {
+    if (pass < 3 || !e.buttons || dragRef.current) return;
+    particles.current?.trail(e.clientX, e.clientY, e.movementX, e.movementY);
   };
   // Grab & fling: any pile word follows the finger; release throws it.
   const grabStart = (key: number) => (e: React.PointerEvent) => {
@@ -273,6 +340,41 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   }, [pass]);
   const interactions = track.planet?.interactions;
   const tapFx = interactions?.tapEffect ?? "dissolve";
+  // MORE moments: beyond the LLM-choreographed ones, the engine reads the song
+  // itself — the longest instrumental gap becomes a wipe, the biggest intensity
+  // jump gets a blow (arrive the drop on a breath), the wildest section a shake.
+  // Synthesized moments never collide with choreographed ones (±8s buffer).
+  const wipeVeil = ({ embers: "ash", rain: "fog", snow: "frost", bubbles: "steam", sparks: "static", dust: "fog" } as const)[particleMode];
+  const allMoments = useMemo(() => {
+    const out = [...(interactions?.moments ?? [])];
+    const free = (t: number, end: number) => !out.some((m) => t < m.end + 8 && end > m.t - 8) && t > 12;
+    // wipe: the longest sung-word gap (an instrumental break) ≥ 7s
+    let gap = { len: 0, t: 0 };
+    for (let i = 0; i < words.length - 1; i++) {
+      const l = words[i + 1].t - words[i].t;
+      if (l > gap.len) gap = { len: l, t: words[i].t + 1.4 };
+    }
+    if (gap.len >= 7 && free(gap.t, gap.t + Math.min(gap.len - 2.5, 10))) {
+      out.push({ t: gap.t, end: gap.t + Math.min(gap.len - 2.5, 10), type: "wipe", layer: wipeVeil, prompt: `wipe the ${wipeVeil} away` });
+    }
+    if (sections?.length) {
+      // blow: the sharpest intensity RISE — blow the drop in, just before it hits
+      let rise = { d: 0, at: 0 };
+      for (let i = 0; i < sections.length - 1; i++) {
+        const d = sections[i + 1].intensity - sections[i].intensity;
+        if (d > rise.d) rise = { d, at: sections[i + 1].start };
+      }
+      if (rise.d >= 0.25 && rise.at > 18 && free(rise.at - 6, rise.at - 0.5)) {
+        out.push({ t: rise.at - 6, end: rise.at - 0.5, type: "blow", layer: "", prompt: "blow the drop in" });
+      }
+      // shake: the most intense section of the song
+      const peak = [...sections].sort((a, b) => b.intensity - a.intensity)[0];
+      if (peak && peak.intensity >= 0.72 && free(peak.start + 1, peak.start + 7)) {
+        out.push({ t: peak.start + 1, end: peak.start + 7, type: "shake", layer: "", prompt: "shake it loose" });
+      }
+    }
+    return out.sort((a, b) => a.t - b.t);
+  }, [interactions, sections, words, wipeVeil]);
   // Choreographed wipe moments (also from the planet's interaction data).
   const [wipe, setWipe] = useState<{ layer: string; prompt: string } | null>(null);
   const wipeKey = useRef(-1);
@@ -360,10 +462,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       window.removeEventListener("pointerdown", askMotion);
     };
   }, [pass]);
+  // A gust (blow moment payoff) sweeps the weather layer sideways too.
+  useEffect(() => {
+    if (gust > 0) particles.current?.gust(gust % 2 ? 1 : -1);
+  }, [gust]);
   // A shake scatters the current word in the song's own tap language —
   // and during a choreographed shake moment it pays off BIG (full gust).
   useEffect(() => {
     if (quake === 0) return;
+    particles.current?.quake();
     if (lastWord.current >= 0) setTouchBurn(lastWord.current);
     if (shakeMo && !shakeDone.current) {
       shakeDone.current = true;
@@ -436,19 +543,30 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (i >= 0) {
           const w = clean(words[i].w).toLowerCase();
           const own = art?.[w];
-          if (own) setBgArt(own);
+          const isFinal = words[i + 1] ? lineStarts.has(Math.round(words[i + 1].t * 100)) : true;
+          const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
+          if (own) setBgArt(pickArt(own));
           else if (pass >= 2) {
-            const next = words[i + 1];
-            const emphasis = (next ? lineStarts.has(Math.round(next.t * 100)) : true) || w in keywordEmotion;
+            const emphasis = isFinal || w in keywordEmotion;
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
-            if (sh) setBgArt(sh);
+            if (sh) setBgArt(pickArt(sh));
           }
-          // Anchor: charged words with any presence take over the sky.
-          if (pass >= 3 && mode === "dynamic" && w in keywordEmotion) {
-            const shownW = clean(words[i].w);
-            const sd = ((i * 2654435761) >>> 0);
-            anchorAt.current = t;
-            setAnchor({ word: shownW, key: i, fromX: sd % 2 ? "42vw" : "-42vw", rot: (sd % 17) - 8 });
+          // Anchor: charged words always take over the sky; line-closing words
+          // with presence join them (rate-limited so anchors breathe).
+          if (pass >= 3 && mode === "dynamic") {
+            const charged = w in keywordEmotion;
+            const worthy = isFinal && air >= 0.75 && clean(words[i].w).length >= 4 && t - anchorAt.current > 3.5;
+            if (charged || worthy) {
+              const shownW = clean(words[i].w);
+              const sd = ((i * 2654435761) >>> 0);
+              anchorAt.current = t;
+              setAnchor({ word: shownW, key: i, fromX: sd % 2 ? "42vw" : "-42vw", rot: (sd % 17) - 8, mode: sd % 3 });
+            }
+          }
+          // Landing ripple: emphasis words hit the stage with a ring (all modes).
+          if (pass >= 3) {
+            if (w in keywordEmotion) spawnRing(true);
+            else if (isFinal && air >= 0.6) spawnRing(false);
           }
         }
       }
@@ -490,21 +608,26 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           return changed ? next : old;
         });
       }
-      // Choreographed wipe windows: enter/leave the moment.
-      if (pass >= 3 && interactions?.moments?.length) {
-        const mo = interactions.moments.find((mm) => mm.type === "wipe" && t >= mm.t && t < mm.end);
+      // Beat rings: every second detected beat sends a circle through the stage.
+      if (pass >= 3 && beatClock.ready && beatClock.lastBeatAt !== lastBeatSeen.current) {
+        lastBeatSeen.current = beatClock.lastBeatAt;
+        if (++beatN.current % 2 === 0) spawnRing(false);
+      }
+      // Choreographed + synthesized moment windows: enter/leave the moment.
+      if (pass >= 3 && allMoments.length) {
+        const mo = allMoments.find((mm) => mm.type === "wipe" && t >= mm.t && t < mm.end);
         const key = mo ? mo.t : -1;
         if (key !== wipeKey.current) {
           wipeKey.current = key;
           setWipe(mo ? { layer: mo.layer, prompt: mo.prompt } : null);
         }
-        const bo = interactions.moments.find((mm) => mm.type === "blow" && t >= mm.t && t < mm.end);
+        const bo = allMoments.find((mm) => mm.type === "blow" && t >= mm.t && t < mm.end);
         const bkey = bo ? bo.t : -1;
         if (bkey !== blowKey.current) {
           blowKey.current = bkey;
           setBlow(bo ? { prompt: bo.prompt } : null);
         }
-        const so = interactions.moments.find((mm) => mm.type === "shake" && t >= mm.t && t < mm.end);
+        const so = allMoments.find((mm) => mm.type === "shake" && t >= mm.t && t < mm.end);
         const skey = so ? so.t : -1;
         if (skey !== shakeMoKey.current) {
           shakeMoKey.current = skey;
@@ -525,7 +648,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             gradeTo(s);
             stageRef.current?.style.setProperty("--emo", String(s.intensity));
             const mood = sectionArt?.[s.emotion.toLowerCase()];
-            if (mood) setBgArt(mood);
+            if (mood) setBgArt(pickArt(mood));
             // Pass 2: big scene changes send a shockwave through the stage.
             if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
           }
@@ -535,7 +658,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, interactions]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -579,15 +702,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const dynRaw = dynamic && idx >= 0
     ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
     : null;
-  let dyn = dynRaw;
+  const dyn = dynRaw;
   let estW = 0, estH = 0;
   if (dynRaw && shown) {
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
     estH = basePx * dynRaw.size;
     estW = Math.min(shown.length * basePx * dynRaw.size * 0.62, vwPx * 0.95);
-    // Words headed for the edges enter vertically — no offscreen sweeps.
-    dyn = { ...dynRaw, dir: Math.abs(dynRaw.x) > 6 ? 2 + (dynRaw.dir % 2) : dynRaw.dir };
   }
   // FIT-FIRST, now MEASURED: before the browser paints, read the word's real
   // laid-out size (offset* — immune to entrance transforms), shrink the font
@@ -653,7 +774,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
     // timeline) must live here, since the beat-scaled .kinetic-stage would
     // otherwise become their containing block and misplace them.
-    <div ref={rootRef} className="relative flex h-full w-full flex-col items-center justify-center" onPointerDown={scoreTap}>
+    <div ref={rootRef} className="relative flex h-full w-full flex-col items-center justify-center" onPointerDown={scoreTap} onPointerMove={stageMove}>
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (
@@ -683,6 +804,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         )}
       </AnimatePresence>
 
+      {/* The weather layer — song-matched particles riding between the
+          backdrop painting and the words. Embers for fire worlds, rain for
+          water, sparks for digital, snow, bubbles, dust — density follows the
+          section's emotional intensity, and it answers every gesture. */}
+      {pass >= 3 && (
+        <KineticParticles
+          ref={particles}
+          mode={particleMode}
+          intensity={section?.intensity ?? 0.35}
+          palette={palette}
+          scale={phrase ? 0.55 : 1}
+        />
+      )}
+
       {/* Title card — the brain's interpretation opens the show */}
       <AnimatePresence>
         {showTitle && (
@@ -705,7 +840,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         )}
       </AnimatePresence>
 
-      <div ref={stageRef} className="kinetic-stage flex w-full flex-col items-center justify-center gap-6 text-center">
+      <div ref={stageRef} className="kinetic-stage z-[3] flex w-full flex-col items-center justify-center gap-6 text-center">
         {section && (
           <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
             {section.emotion}
@@ -714,8 +849,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         <div className="relative flex min-h-[34vh] items-center justify-center">
           {/* beat halo — the stage breathes with the music even between words */}
           <div className="kinetic-halo" aria-hidden />
-          {/* ambient dust — slow emotion-tinted particles drifting up the stage */}
-          {pass >= 2 && Array.from({ length: 12 }).map((_, i) => (
+          {/* ambient dust — the pass-2 satellite's CSS particles (pass 3+ has
+              the full canvas weather layer instead) */}
+          {pass === 2 && Array.from({ length: 12 }).map((_, i) => (
             <span key={`d${i}`} className="kinetic-dust" aria-hidden style={{
               left: `${(i * 83 + 7) % 96}%`,
               animationDelay: `${(i * 1.7) % 9}s`,
@@ -724,21 +860,42 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               height: `${3 + (i % 3) * 2}px`,
             }} />
           ))}
-          {/* section shockwave — big scene changes ripple outward */}
+          {/* section shockwave — big scene changes ripple outward as a
+              staggered TRIPLE ring, accent/primary/white */}
           <AnimatePresence>
-            {pass >= 2 && wave > 0 && (
+            {pass >= 2 && wave > 0 && [0, 1, 2].map((ri) => (
               <motion.span
-                key={`w${wave}`}
+                key={`w${wave}-${ri}`}
                 className="pointer-events-none absolute rounded-full"
-                style={{ width: "34vmin", height: "34vmin", border: "2px solid var(--theme-accent)" }}
-                initial={{ opacity: 0.55, scale: 0.25 }}
-                animate={{ opacity: 0, scale: 3.4 }}
+                style={{
+                  width: "34vmin", height: "34vmin",
+                  border: `2px solid ${ri === 0 ? "var(--theme-accent)" : ri === 1 ? "var(--theme-primary)" : "rgba(255,255,255,0.7)"}`,
+                }}
+                initial={{ opacity: 0.55 - ri * 0.14, scale: 0.25 }}
+                animate={{ opacity: 0, scale: 3.4 - ri * 0.55 }}
                 exit={{ opacity: 0 }}
-                transition={{ duration: 1.1, ease: "easeOut" }}
+                transition={{ duration: 1.1, delay: ri * 0.14, ease: "easeOut" }}
                 aria-hidden
               />
-            )}
+            ))}
           </AnimatePresence>
+          {/* pulse rings — charged/line-final landings and the live beat
+              breathe circles through the stage (self-removing) */}
+          {pulseRings.map((r) => (
+            <motion.span
+              key={`p${r.id}`}
+              className="pointer-events-none absolute rounded-full"
+              style={{
+                width: r.big ? "26vmin" : "15vmin", height: r.big ? "26vmin" : "15vmin",
+                border: r.big ? "2px solid var(--theme-accent)" : "1.5px solid color-mix(in srgb, var(--theme-primary) 65%, transparent)",
+              }}
+              initial={{ opacity: r.big ? 0.5 : 0.28, scale: 0.3 }}
+              animate={{ opacity: 0, scale: r.big ? 2.7 : 1.9 }}
+              transition={{ duration: r.big ? 0.95 : 0.75, ease: "easeOut" }}
+              onAnimationComplete={() => setPulseRings((rs) => rs.filter((x) => x.id !== r.id))}
+              aria-hidden
+            />
+          ))}
           {phrase ? (
             /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
             <AnimatePresence mode="wait">
@@ -810,12 +967,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 style={dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
                 ref={(el) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } }}
                 onPointerDown={pass >= 3 ? (e) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined}
-                onPointerUp={pass >= 3 ? () => {
+                onPointerUp={pass >= 3 ? (e) => {
                   const heldMs = Date.now() - chargeAt.current;
                   setCharging(false);
                   if (dragMoved.current) return; // it was a throw, not a tap
-                  if (heldMs >= 650) { setWave((w) => w + 1); navigator.vibrate?.([15, 40, 20]); }
-                  else navigator.vibrate?.(25);
+                  if (heldMs >= 650) {
+                    setWave((w) => w + 1);
+                    particles.current?.burst(e.clientX, e.clientY, 60);
+                    navigator.vibrate?.([15, 40, 20]);
+                  } else {
+                    particles.current?.burst(e.clientX, e.clientY, 22);
+                    navigator.vibrate?.(25);
+                  }
                   setTouchBurn(idx);
                 } : undefined}
                 onPointerLeave={pass >= 3 ? () => setCharging(false) : undefined}
@@ -836,6 +999,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 <span className="kinetic-breathe">
                   {(() => {
                     // The word's inner treatment, shared by held + normal paths.
+                    // Dynamic plain words ASSEMBLE: every letter flies in from
+                    // its own golden-angle direction — no two ever match.
+                    const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !glyph;
                     let inner = glitches ? <WordGlitch word={shown} airtime={airtime} />
                       : slams ? <WordSlam word={shown} />
                       : wavy ? <WordWave word={shown} airtime={airtime} />
@@ -845,6 +1011,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                       : fizzes ? <WordFizz word={shown} airtime={airtime} />
                       : types ? <WordType word={shown} airtime={airtime} />
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
+                      : assembles ? <WordAssemble word={shown} baseAngle={idx * GOLDEN} charged={charged} />
                       : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
                     // Tap reaction — in the song's own language (per-planet choreography).
                     if (touchBurn === idx) {
@@ -854,17 +1021,22 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                       return <WordDissolve word={shown} />;
                     }
                     if (burns) return <WordBurn word={shown} airtime={airtime} />;
-                    // Dynamic stagecraft: each word rushes in from its own direction.
-                    if (dyn && !slams) inner = (
-                      <motion.span
-                        className="inline-block"
-                        initial={{ x: ENTER_DIRS[dyn.dir].x, y: ENTER_DIRS[dyn.dir].y, opacity: 0 }}
-                        animate={{ x: "0vw", y: "0vh", opacity: 1 }}
-                        transition={{ type: "spring", stiffness: 300, damping: 26 }}
-                      >
-                        {inner}
-                      </motion.span>
-                    );
+                    // Effect words still rush in whole, from the golden-angle
+                    // direction that belongs to this word alone. (Assembled
+                    // words already fly per-letter; slams drop from above.)
+                    if (dyn && !slams && !assembles) {
+                      const a = (dyn.ang * Math.PI) / 180;
+                      inner = (
+                        <motion.span
+                          className="inline-block"
+                          initial={{ x: `${(Math.cos(a) * 24).toFixed(1)}vw`, y: `${(Math.sin(a) * 20).toFixed(1)}vh`, opacity: 0 }}
+                          animate={{ x: "0vw", y: "0vh", opacity: 1 }}
+                          transition={{ type: "spring", stiffness: 300, damping: 26 }}
+                        >
+                          {inner}
+                        </motion.span>
+                      );
+                    }
                     if (held) return (
                       // The held note performs: the word swells for the length of
                       // the note while the beat makes it breathe (CSS --beat scale).
@@ -903,11 +1075,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             <motion.span
               className="pointer-events-auto cursor-pointer select-none whitespace-nowrap font-display font-black uppercase"
               style={{ fontSize: "clamp(8rem, 30vw, 34rem)", color: "var(--theme-accent)", filter: "blur(1.5px)", letterSpacing: "-0.02em" }}
-              initial={{ opacity: 0, scale: 2.3, x: anchor.fromX, rotate: anchor.rot * 2 }}
-              animate={{ opacity: 0.15, scale: 1.72, x: "0vw", rotate: anchor.rot }}
+              // Three arrivals, chosen per word: 0 = slide across, 1 = zoom
+              // through from way out front, 2 = rise up from below the floor.
+              initial={anchor.mode === 1
+                ? { opacity: 0, scale: 4.8, x: "0vw", y: "0vh", rotate: 0 }
+                : anchor.mode === 2
+                  ? { opacity: 0, scale: 2.1, x: "0vw", y: "52vh", rotate: anchor.rot }
+                  : { opacity: 0, scale: 2.3, x: anchor.fromX, y: "0vh", rotate: anchor.rot * 2 }}
+              animate={{ opacity: 0.15, scale: 1.72, x: "0vw", y: "0vh", rotate: anchor.rot }}
               whileTap={{ opacity: 0.45, scale: 1.95 }}
               onPointerDown={() => { anchorAt.current = 0; setAnchor(null); }}
-              transition={{ duration: 1.15, ease: "easeOut" }}
+              transition={{ duration: anchor.mode === 1 ? 1.35 : 1.15, ease: "easeOut" }}
             >
               {anchor.word}
             </motion.span>
@@ -967,7 +1145,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Mic primer — ask ONCE at show start (never mid-song) when this
           song has a breath moment coming. */}
       {pass >= 3 && !blow && (
-        <MicPrimer active={!!interactions?.moments?.some((mm) => mm.type === "blow")} />
+        <MicPrimer active={allMoments.some((mm) => mm.type === "blow")} />
       )}
 
       {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
@@ -1636,6 +1814,40 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
         </motion.div>
       )}
     </AnimatePresence>
+  );
+}
+
+/* ========== ASSEMBLE ==========
+   The default dynamic entrance. Letter j of word i flies in from angle
+   (i + j)·137.508° — the golden angle, an irrational slice of the circle —
+   so within a word AND across consecutive words, no two letters ever share
+   an approach vector. The formula guarantees it; no randomness needed. */
+function WordAssemble({ word, baseAngle, charged }: { word: string; baseAngle: number; charged: boolean }) {
+  const letters = [...word];
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, j) => {
+        const a = ((baseAngle + j * 137.50776405003785) * Math.PI) / 180;
+        const d = (charged ? 1.7 : 1.15) + ((j * 37) % 23) / 23; // em flight distance
+        return (
+          <motion.span
+            key={j}
+            className="inline-block"
+            initial={{
+              x: `${(Math.cos(a) * d).toFixed(2)}em`,
+              y: `${(Math.sin(a) * d * 0.8).toFixed(2)}em`,
+              opacity: 0,
+              rotate: (j % 2 ? 1 : -1) * (8 + ((j * 13) % 14)),
+              scale: charged ? 1.6 : 0.75,
+            }}
+            animate={{ x: "0em", y: "0em", opacity: 1, rotate: 0, scale: 1 }}
+            transition={{ type: "spring", stiffness: 380, damping: 26, delay: j * 0.022 }}
+          >
+            {ch}
+          </motion.span>
+        );
+      })}
+    </span>
   );
 }
 

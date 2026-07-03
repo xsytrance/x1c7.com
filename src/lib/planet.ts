@@ -25,6 +25,9 @@ export interface PlanetAssets {
   keywords?: Record<string, string>;
   /** emotion (lowercase) -> generated backdrop URL — continuous mood art. */
   sections?: Record<string, string>;
+  /** base image URL -> its twin variant (-2.webp): the art-doubling pass.
+   * The engine alternates twins each time an image returns to stage. */
+  alt?: Record<string, string>;
 }
 /** LLM-choreographed touch interactions — different per song, always in the
  * song's own language (fire burns, heartbreak shatters, love blooms). */

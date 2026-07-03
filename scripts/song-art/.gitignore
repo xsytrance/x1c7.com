@@ -68,3 +68,5 @@ shared-lib/
 shared-planet.json
 shared-retry/
 shared-retry.json
+variants/
+variants-map.json
