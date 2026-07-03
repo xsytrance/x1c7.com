@@ -175,6 +175,42 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     return ranges;
   }, [words, lineStarts]);
 
+  // ── STUTTER RUNS ── when the vocal repeats one word over and over
+  // ("push-push-push", "me me me", "on-on-on"), the engine catches the run so
+  // the stage can pile the word up until it fills the screen (swipe to clear).
+  // A run = >=3 consecutive same tokens, each within 1.4s of the last.
+  const stutterRuns = useMemo(() => {
+    const runs: { id: number; word: string; times: number[]; start: number; end: number; spots: { x: number; y: number; rot: number; s: number }[] }[] = [];
+    let i = 0;
+    while (i < words.length) {
+      const w = clean(words[i].w).toLowerCase();
+      let j = i + 1;
+      while (j < words.length && clean(words[j].w).toLowerCase() === w && words[j].t - words[j - 1].t <= 1.4) j++;
+      const times = words.slice(i, j).map((x) => x.t);
+      if (w.length >= 1 && times.length >= 3) {
+        // Precompute scattered screen spots (a jittered grid, shuffled) so the
+        // pile fills evenly. Deterministic per run — no per-frame randomness.
+        const N = Math.min(26, times.length * 3 + 4);
+        const cols = 6, spots: { x: number; y: number; rot: number; s: number }[] = [];
+        for (let k = 0; k < N; k++) {
+          const seed = ((i + 1) * 2654435761 + k * 40503) >>> 0;
+          const cell = (seed >>> 3) % (cols * 5);
+          const cx = (cell % cols) / (cols - 1); // 0..1
+          const cy = Math.floor(cell / cols) / 4; // 0..1
+          spots.push({
+            x: 8 + cx * 84 + (((seed >>> 7) % 100) / 100 - 0.5) * 12,
+            y: 14 + cy * 66 + (((seed >>> 11) % 100) / 100 - 0.5) * 12,
+            rot: (((seed >>> 13) % 34) - 17),
+            s: 0.85 + ((seed >>> 17) % 100) / 100 * 1.15,
+          });
+        }
+        runs.push({ id: i, word: clean(words[i].w), times, start: times[0], end: times[times.length - 1], spots });
+      }
+      i = j > i + 1 ? j : i + 1;
+    }
+    return runs;
+  }, [words]);
+
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
@@ -285,6 +321,26 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const phys = useRef(new Map<number, { x: number; y: number; vx: number; vy: number; grab: boolean }>());
   const dragRef = useRef<{ key: number; lx: number; ly: number; lt: number } | null>(null);
   const dragMoved = useRef(false);
+
+  // ── WORD PILEUP ── repeated-word chips that stack up and fill the screen on
+  // a stutter run, cleared by swiping a finger across them.
+  const [pile, setPile] = useState<{ id: number; word: string; x: number; y: number; rot: number; s: number; fx: number; fy: number; fr: number }[]>([]);
+  const pileId = useRef(0);
+  const pileRun = useRef(-1);   // id of the run currently piling
+  const pileEmit = useRef(0);   // chips emitted so far this run
+  const swipeLast = useRef<{ x: number; y: number; t: number } | null>(null);
+  useEffect(() => { setPile([]); pileRun.current = -1; pileEmit.current = 0; }, [track.id]);
+  // Swipe across the pile to knock the chips away — any chip within the finger's
+  // reach is removed and flings out (its fling vector was set when it landed).
+  const pileSwipe = useCallback((e: React.PointerEvent) => {
+    if (!pile.length) return;
+    swipeLast.current = { x: e.clientX, y: e.clientY, t: performance.now() };
+    const R = window.innerWidth * 0.15;
+    setPile((old) => old.filter((p) => {
+      const px = (p.x / 100) * window.innerWidth, py = (p.y / 100) * window.innerHeight;
+      return Math.hypot(px - e.clientX, py - e.clientY) > R;
+    }));
+  }, [pile.length]);
   // ── BEAT GAME: tap the stage on the beat, build a streak ──
   const beatDefault = mode !== "phrase"; // phrase mode: off by default, available
   const [beatOverride, setBeatOverride] = useState<string | null>(null);
@@ -604,6 +660,27 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       // Anchor expiry — it hangs around for ~7s, then dissolves.
       if (anchorAt.current && t - anchorAt.current > 7) { anchorAt.current = 0; setAnchor(null); }
+      // Pileup: while a stutter run plays, stack a chip for each repeat (×3 so
+      // it fills fast). Clears ~2.6s after the last repeat, or on swipe.
+      if (pass >= 3) {
+        const run = stutterRuns.find((r) => t >= r.start - 0.06 && t <= r.end + 2.6);
+        if (run) {
+          if (pileRun.current !== run.id) { pileRun.current = run.id; pileEmit.current = 0; }
+          const target = Math.min(run.spots.length, run.times.filter((tt) => tt <= t + 0.03).length * 3);
+          if (pileEmit.current < target) {
+            const add: (typeof pile) = [];
+            while (pileEmit.current < target) {
+              const sp = run.spots[pileEmit.current++];
+              // fling vector points outward from centre, so swiped/cleared chips scatter off-screen.
+              add.push({ id: pileId.current++, word: run.word, x: sp.x, y: sp.y, rot: sp.rot, s: sp.s, fx: (sp.x - 50) * 14, fy: (sp.y - 45) * 14, fr: sp.rot * 2 });
+            }
+            setPile((old) => (old.length >= 34 ? old : [...old, ...add].slice(-34)));
+          }
+        } else if (pileRun.current !== -1) {
+          pileRun.current = -1;
+          setPile([]);
+        }
+      }
       // Fling physics: integrate free-flying pile words, bounce off edges.
       const nowP = performance.now();
       phys.current.forEach((pv, k) => {
@@ -745,7 +822,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -926,6 +1003,45 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           >
             {shown}
           </span>
+        </div>
+      )}
+
+      {/* Word pileup — on a stutter run the repeated word stacks up until it
+          fills the screen; a finger swiped across the pile knocks the chips
+          away. The full-screen catcher only exists while the pile does. */}
+      {pass >= 3 && pile.length > 0 && (
+        <div
+          className="fixed inset-0 z-[7] overflow-hidden"
+          style={{ touchAction: "none" }}
+          onPointerDown={pileSwipe}
+          onPointerMove={(e) => { if (e.buttons || e.pointerType === "touch") pileSwipe(e); }}
+        >
+          <AnimatePresence>
+            {pile.map((p, k) => (
+              <motion.span
+                key={p.id}
+                custom={p}
+                aria-hidden
+                className="pointer-events-none absolute font-display font-black uppercase select-none"
+                style={{
+                  left: `${p.x}%`, top: `${p.y}%`,
+                  color: k % 2 ? "var(--theme-secondary)" : "var(--theme-primary)",
+                  fontSize: `clamp(1.6rem, ${(3 + p.s * 4).toFixed(1)}vw, 9rem)`,
+                  textShadow: "0 0 26px currentColor",
+                  willChange: "transform, opacity",
+                }}
+                initial={{ opacity: 0, scale: 0.15, rotate: p.rot, x: "-50%", y: "-50%" }}
+                animate="in"
+                exit="out"
+                variants={{
+                  in: { opacity: 0.94, scale: p.s, rotate: p.rot, x: "-50%", y: "-50%", transition: { type: "spring", stiffness: 340, damping: 17 } },
+                  out: (c: typeof p) => ({ opacity: 0, scale: p.s * 0.85, rotate: c.rot + c.fr, x: `calc(-50% + ${c.fx}px)`, y: `calc(-50% + ${c.fy}px)`, transition: { duration: 0.55, ease: "easeOut" } }),
+                }}
+              >
+                {p.word}
+              </motion.span>
+            ))}
+          </AnimatePresence>
         </div>
       )}
 
