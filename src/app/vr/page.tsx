@@ -58,7 +58,13 @@ function VRPageInner() {
         <div className="pointer-events-auto ml-auto flex items-center gap-2">
           <select
             value={selectedId}
-            onChange={(e) => setChosenId(e.target.value)}
+            onChange={(e) => {
+              setChosenId(e.target.value);
+              // picking a planet IS the launch — the change event is a user
+              // gesture, so audio may start right here
+              const picked = planets.find((t) => t.id === e.target.value);
+              if (picked) playTrack(picked, tracks);
+            }}
             className="max-w-[44vw] rounded-lg border border-white/15 bg-black/50 px-3 py-1.5 font-mono text-xs text-white outline-none"
           >
             {planets.map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}
@@ -92,7 +98,7 @@ function VRPageInner() {
 
       {!live && (
         <div className="absolute inset-0 grid place-items-center">
-          <p className="font-mono text-xs uppercase tracking-[0.35em] text-white/40">pick a planet and press Launch</p>
+          <p className="font-mono text-xs uppercase tracking-[0.35em] text-white/40">pick a planet to launch it</p>
         </div>
       )}
     </main>
