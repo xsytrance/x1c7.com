@@ -32,12 +32,18 @@ export type ParticleHandle = {
   gust: (dir?: number) => void;
   /** Shake: jolt every particle with random velocity. */
   quake: () => void;
+  /** Sparkle n random particles for a moment (hi-hat glints). */
+  glint: (n?: number) => void;
+  /** Pull everything toward the center (riser charge-up). 0..1 strength. */
+  implode: (strength: number) => void;
+  /** Freeze/unfreeze ambient motion (beat-cut blackouts). */
+  freeze: (on: boolean) => void;
 };
 
 type P = {
   x: number; y: number; vx: number; vy: number;
   r: number; a: number; hue: string; life: number; maxLife: number;
-  wobble: number; extra?: boolean;
+  wobble: number; extra?: boolean; glint?: number;
 };
 
 const WARM = ["#ffd28a", "#ff8a3c", "#ff5400", "#ffb35c"];
@@ -58,6 +64,8 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const parts = useRef<P[]>([]);
   const wind = useRef(0);
+  const pull = useRef(0);
+  const frozen = useRef(false);
   const emo = useRef(intensity);
   emo.current = intensity;
   const modeRef = useRef(mode);
@@ -90,6 +98,15 @@ export const KineticParticles = forwardRef<ParticleHandle, {
     quake() {
       for (const p of parts.current) { p.vx += (Math.random() - 0.5) * 500; p.vy += (Math.random() - 0.5) * 500; }
     },
+    glint(n = 10) {
+      const arr = parts.current;
+      for (let i = 0; i < n && arr.length; i++) {
+        const p = arr[(Math.random() * arr.length) | 0];
+        p.glint = 1;
+      }
+    },
+    implode(strength) { pull.current = Math.max(pull.current, Math.min(1, strength)); },
+    freeze(on) { frozen.current = on; },
   }), []);
 
   useEffect(() => {
@@ -133,22 +150,31 @@ export const KineticParticles = forwardRef<ParticleHandle, {
       wind.current *= Math.pow(0.25, dt);
 
       ctx.clearRect(0, 0, w, h);
-      const speed = 0.75 + emo.current * 0.7 + beatKick * 0.25;
+      pull.current *= Math.pow(0.5, dt);
+      const speed = (frozen.current ? 0.06 : 1) * (0.75 + emo.current * 0.7 + beatKick * 0.25);
       for (let i = arr.length - 1; i >= 0; i--) {
         const p = arr[i];
-        p.life += dt;
+        p.life += dt * (frozen.current ? 0.15 : 1);
         if (p.life > p.maxLife || p.y < -30 || p.y > h + 30 || p.x < -40 || p.x > w + 40) {
           if (p.extra || ambient > target) { arr.splice(i, 1); continue; }
           Object.assign(p, spawn(m, palRef.current, Math.random() * w, edgeY(m, h), { fresh: true }));
         }
         p.wobble += dt * (1.3 + (p.r % 1));
         const sway = Math.sin(p.wobble) * (m === "snow" ? 28 : m === "bubbles" ? 22 : 10);
+        // riser implosion: everything spirals toward the heart of the stage
+        if (pull.current > 0.02) {
+          const dx = w / 2 - p.x, dy = h / 2 - p.y;
+          const d = Math.max(60, Math.hypot(dx, dy));
+          p.vx += (dx / d) * pull.current * 900 * dt;
+          p.vy += (dy / d) * pull.current * 900 * dt;
+        }
         p.x += (p.vx * speed + sway + wind.current) * dt;
         p.y += p.vy * speed * dt;
         // extras decelerate back toward ambient motion
         if (p.extra) { p.vx *= Math.pow(0.3, dt); p.vy = p.vy * Math.pow(0.3, dt) + baseVy(m) * (1 - Math.pow(0.3, dt)); }
+        if (p.glint) p.glint = Math.max(0, p.glint - dt * 5);
         const fade = Math.min(1, Math.min(p.life * 3, (p.maxLife - p.life) * 2));
-        const alpha = p.a * fade * (0.75 + beatKick * 0.5);
+        const alpha = p.a * fade * (0.75 + beatKick * 0.5) * (1 + (p.glint ?? 0) * 1.6);
         if (alpha <= 0.01) continue;
         ctx.globalAlpha = Math.min(1, alpha);
         ctx.fillStyle = p.hue;

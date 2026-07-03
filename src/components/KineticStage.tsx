@@ -14,6 +14,7 @@ import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
 import { KineticParticles, particleModeFor, type ParticleHandle } from "./KineticParticles";
+import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
 import type { Track } from "@/data/tracks";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
@@ -206,6 +207,37 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const pal = track.planet?.analysis?.palette;
     return Array.isArray(pal) && pal.length ? pal : [track.color];
   }, [track]);
+  // ── STEM SENSES ── measured hearing from the planet's stems.json (if any).
+  // Kicks thump the halo, snares ring, hats glint the weather, the bass bends
+  // the type, the singer's real energy sizes each word, drum-cuts freeze the
+  // world to silhouette, and risers charge a supernova that detonates on the
+  // drop. Playback stays one mp3 — the stems were analyzed offline.
+  const [stems, setStems] = useState<StemData | null>(null);
+  const stemTrk = useRef<{ kick: OnsetTracker; snare: OnsetTracker; hat: OnsetTracker; beat: OnsetTracker } | null>(null);
+  const kickPulse = useRef(0);
+  const lastStemT = useRef(0);
+  const [cutMode, setCutMode] = useState(false);
+  const cutRef = useRef<[number, number] | null>(null);
+  const riserRef = useRef<{ t: number; end: number } | null>(null);
+  const [nova, setNova] = useState(0);
+  useEffect(() => {
+    setStems(null);
+    stemTrk.current = null;
+    setCutMode(false);
+    if (pass < 3) return;
+    const url = (track.planet?.assets as { stems?: string } | undefined)?.stems;
+    if (!url) return;
+    let on = true;
+    loadStems(url).then((d) => {
+      if (!on || !d) return;
+      setStems(d);
+      stemTrk.current = {
+        kick: new OnsetTracker(d.kicks), snare: new OnsetTracker(d.snares),
+        hat: new OnsetTracker(d.hats), beat: new OnsetTracker(d.beats),
+      };
+    });
+    return () => { on = false; };
+  }, [track.id, track.planet, pass]);
   // Pulse rings: landing ripples for charged/final words + beat-synced rings.
   const [pulseRings, setPulseRings] = useState<{ id: number; big: boolean }[]>([]);
   const pulseId = useRef(0);
@@ -635,6 +667,61 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           setShakeMo(so ? { prompt: so.prompt } : null);
         }
       }
+      // ── STEM SENSES per-frame ── the measured song drives the stage live.
+      if (stems && stemTrk.current) {
+        const trk = stemTrk.current;
+        const root = rootRef.current;
+        // Beat grid → the beat game's clock locks to the real grid.
+        if (trk.beat.consume(t) > 0) beatClock.record(performance.now());
+        // Kicks thump (decaying --kick var), snares ring, hats glint.
+        const dt2 = Math.max(0, Math.min(0.1, t - lastStemT.current));
+        lastStemT.current = t;
+        kickPulse.current = Math.max(0, kickPulse.current - dt2 * 5);
+        if (trk.kick.consume(t) > 0) { kickPulse.current = 1; }
+        if (trk.snare.consume(t) > 0 && !document.hidden) spawnRing(false);
+        const hatN = trk.hat.consume(t);
+        if (hatN > 0) particles.current?.glint(6 + hatN * 4);
+        if (root) {
+          root.style.setProperty("--kick", kickPulse.current.toFixed(3));
+          // The 808 curve bends the whole stage; the singer's live energy
+          // feeds the word glow; backing vocals summon the ghost chorus.
+          root.style.setProperty("--bass", envAt(stems, "bass", t).toFixed(3));
+          root.style.setProperty("--voice", envAt(stems, "lead", t).toFixed(3));
+          root.style.setProperty("--choir", envAt(stems, "back", t).toFixed(3));
+        }
+        // Beat-cut blackout: drums vanish → the world freezes to silhouette;
+        // drums return → slam back with a shockwave.
+        const cut = t >= 1 ? activeCut(stems, t) : null;
+        if (!!cut !== !!cutRef.current) {
+          cutRef.current = cut;
+          setCutMode(!!cut);
+          particles.current?.freeze(!!cut);
+          if (!cut) {
+            setWave((w) => w + 1);
+            particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 70);
+            navigator.vibrate?.([20, 30, 40]);
+          }
+        }
+        // Riser → implosion charge → SUPERNOVA exactly on the drop.
+        const riser = activeRiser(stems, t);
+        if (riser && !riserRef.current) riserRef.current = riser;
+        if (riserRef.current) {
+          const r = riserRef.current;
+          const p = Math.max(0, Math.min(1, (t - r.t) / Math.max(0.5, r.end - r.t)));
+          root?.style.setProperty("--charge", (t < r.end ? p : 0).toFixed(3));
+          if (t < r.end) particles.current?.implode(0.25 + p * 0.75);
+          if (t >= r.end || t < r.t - 0.5) {
+            riserRef.current = null;
+            root?.style.setProperty("--charge", "0");
+            if (t >= r.end && t < r.end + 1.5) {
+              setNova((n) => n + 1);
+              setWave((w) => w + 1);
+              particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 150);
+              navigator.vibrate?.([30, 40, 80]);
+            }
+          }
+        }
+      }
       // Title card: only before the first sung word.
       const titled = words.length > 0 && t < words[0].t - 0.2;
       if (titled !== titleRef.current) { titleRef.current = titled; setShowTitle(titled); }
@@ -658,7 +745,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -703,12 +790,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
     : null;
   const dyn = dynRaw;
+  // Measured delivery: the singer's REAL energy on this word (lead-vocal
+  // envelope from the stems) scales how big it lands. Belted words tower;
+  // murmured ones stay close. 1 when the planet has no stems.
+  const delivery = stems && idx >= 0
+    ? 0.82 + envAt(stems, "lead", words[idx].t + 0.18) * 0.42
+    : 1;
   let estW = 0, estH = 0;
   if (dynRaw && shown) {
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
-    estH = basePx * dynRaw.size;
-    estW = Math.min(shown.length * basePx * dynRaw.size * 0.62, vwPx * 0.95);
+    estH = basePx * dynRaw.size * delivery;
+    estW = Math.min(shown.length * basePx * dynRaw.size * delivery * 0.62, vwPx * 0.95);
   }
   // FIT-FIRST, now MEASURED: before the browser paints, read the word's real
   // laid-out size (offset* — immune to entrance transforms), shrink the font
@@ -774,7 +867,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // Outer layer is NOT transformed — fixed/absolute layers (backdrop, title,
     // timeline) must live here, since the beat-scaled .kinetic-stage would
     // otherwise become their containing block and misplace them.
-    <div ref={rootRef} className="relative flex h-full w-full flex-col items-center justify-center" onPointerDown={scoreTap} onPointerMove={stageMove}>
+    <div ref={rootRef} className={`relative flex h-full w-full flex-col items-center justify-center${cutMode ? " stem-cut" : ""}`} onPointerDown={scoreTap} onPointerMove={stageMove}>
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (
@@ -817,6 +910,68 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           scale={phrase ? 0.55 : 1}
         />
       )}
+
+      {/* Ghost chorus — when the backing vocals swell, the current word's
+          echo materializes huge and translucent behind the stage. Opacity is
+          the LIVE backing-vocal envelope (CSS var, zero re-renders). */}
+      {stems && shown && !phrase && (
+        <div
+          className="pointer-events-none fixed inset-0 z-[2] flex items-center justify-center overflow-hidden"
+          style={{ opacity: "clamp(0, calc((var(--choir, 0) - 0.28) * 1.1), 0.42)" }}
+          aria-hidden
+        >
+          <span
+            className="whitespace-nowrap font-display font-black uppercase"
+            style={{ fontSize: "clamp(6rem, 24vw, 26rem)", color: "var(--theme-secondary)", filter: "blur(6px)", letterSpacing: "0.04em" }}
+          >
+            {shown}
+          </span>
+        </div>
+      )}
+
+      {/* Riser charge — the walls close in as the drop approaches (--charge
+          is written per-frame from the stem riser window) */}
+      {stems && (
+        <div
+          className="pointer-events-none fixed inset-0 z-[4]"
+          style={{
+            opacity: "var(--charge, 0)",
+            background: "radial-gradient(circle at 50% 50%, transparent calc(62% - var(--charge, 0) * 34%), rgba(2,1,6,0.93) 100%)",
+          }}
+          aria-hidden
+        />
+      )}
+
+      {/* Beat-cut blackout — the drums vanished; the world holds its breath */}
+      <AnimatePresence>
+        {cutMode && (
+          <motion.div
+            key="cut"
+            className="pointer-events-none fixed inset-0 z-[4] bg-black"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.62 }}
+            exit={{ opacity: 0, transition: { duration: 0.12 } }}
+            transition={{ duration: 0.28 }}
+            aria-hidden
+          />
+        )}
+      </AnimatePresence>
+
+      {/* SUPERNOVA — the riser detonates exactly on the drop */}
+      <AnimatePresence>
+        {nova > 0 && (
+          <motion.div
+            key={`nova${nova}`}
+            className="pointer-events-none fixed inset-0 z-[40]"
+            style={{ background: "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.95), color-mix(in srgb, var(--theme-accent) 55%, transparent) 45%, transparent 75%)" }}
+            initial={{ opacity: 1, scale: 0.6 }}
+            animate={{ opacity: 0, scale: 1.6 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.1, ease: "easeOut" }}
+            aria-hidden
+          />
+        )}
+      </AnimatePresence>
 
       {/* Title card — the brain's interpretation opens the show */}
       <AnimatePresence>
@@ -964,7 +1119,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               <motion.div
                 key={idx}
                 className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`}
-                style={dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size})` } : undefined}
+                style={dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size * delivery})` } : undefined}
                 ref={(el) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } }}
                 onPointerDown={pass >= 3 ? (e) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined}
                 onPointerUp={pass >= 3 ? (e) => {
