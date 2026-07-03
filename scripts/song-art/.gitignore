@@ -74,5 +74,6 @@ veneno-y-miel-kw/
 veneno-y-miel-sec/
 *-kw*/
 *-sec/
+*-topup-*/
 *.json
 !missing-sections.json

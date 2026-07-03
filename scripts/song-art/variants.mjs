@@ -138,7 +138,8 @@ async function generate(prompt, negative, seed) {
   }
   throw new Error("timeout");
 }
-const NEGATIVE = "text, watermark, logo, caption, letters, low quality, deformed, oversaturated, cartoon";
+const negExtra = typeof args.negative === "string" ? `, ${args.negative}` : "";
+const NEGATIVE = `text, watermark, logo, caption, letters, low quality, deformed, oversaturated, cartoon${negExtra}`;
 
 // ── 5. Run ──────────────────────────────────────────────────────────────────
 const only = typeof args.only === "string" ? args.only : null;

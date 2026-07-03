@@ -64,7 +64,10 @@ mkdirSync(args.out, { recursive: true });
 const style = planet.styleHint
   ? `${planet.styleHint}, cinematic, evocative of "${a.overallMood}" mood, no text, no watermark`
   : `cinematic still, moody atmospheric lighting, film grain, shallow depth of field, dark ambient, evocative of "${a.overallMood}" mood, no text, no watermark`;
-const negative = "text, watermark, logo, caption, letters, low quality, deformed, oversaturated, cartoon";
+// Extra negative terms per song (e.g. "face, portrait, eye contact" to keep
+// people anonymous) append to the house negative via --negative.
+const negExtra = args.negative && args.negative !== true ? `, ${args.negative}` : "";
+const negative = `text, watermark, logo, caption, letters, low quality, deformed, oversaturated, cartoon${negExtra}`;
 
 const jobs = (a.keywords || []).slice(0, MAX);
 log(`generating ${jobs.length} images (cap ${MAX}) via ${CKPT} @ ${W}x${H}`);

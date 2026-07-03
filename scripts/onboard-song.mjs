@@ -39,6 +39,9 @@ const VENV = args.venv || process.env.WHISPER_VENV || `${process.env.HOME}/whisp
 const MODEL = args.model || "qwen2.5:14b";
 const ARTIST = args.artist || "xsytrance";
 const STYLE = args.style && args.style !== true ? args.style : null;
+// Extra negative-prompt terms for THIS song's art (e.g. "face, portrait, eyes"
+// to keep depicted people anonymous). Threaded into generate.mjs + variants.mjs.
+const NEG = args.negative && args.negative !== true ? args.negative : null;
 const log = (...a) => console.error(...a);
 const toLrc = (sec) => {
   const mm = Math.floor(sec / 60), ss = Math.floor(sec % 60), cs = Math.round((sec % 1) * 100) % 100;
@@ -243,7 +246,8 @@ if (!args["skip-art"]) {
   const runGen = (planetJson, outDir) => {
     writeFileSync(planetJson.path, JSON.stringify(planetJson.data));
     const g = spawnSync("node", [join(artRoot, "generate.mjs"),
-      "--planet", planetJson.path, "--out", outDir, "--song", id, "--host", comfy, "--max", "16"],
+      "--planet", planetJson.path, "--out", outDir, "--song", id, "--host", comfy, "--max", "16",
+      ...(NEG ? ["--negative", NEG] : [])],
       { stdio: ["ignore", 2, 2] });
     if (g.status !== 0) throw new Error("generate.mjs failed for " + outDir);
     return JSON.parse(readFileSync(join(outDir, "manifest.json"), "utf8"));
@@ -283,7 +287,8 @@ if (!args["skip-art"]) {
   }, null, 2));
 
   log("▶ twins (variants.mjs) …");
-  const v = spawnSync("node", [join(artRoot, "variants.mjs"), "--only", id, "--host", comfy], { stdio: ["ignore", 2, 2] });
+  const v = spawnSync("node", [join(artRoot, "variants.mjs"), "--only", id, "--host", comfy,
+    ...(NEG ? ["--negative", NEG] : [])], { stdio: ["ignore", 2, 2] });
   if (v.status !== 0) log("  variants failed — twins can be re-run later");
   planet.assets.alt = {};
   for (const f of readdirSync(pubDir)) {
