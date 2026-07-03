@@ -1,0 +1,48 @@
+{
+  "songId": "amor-de-verdad",
+  "model": "sdxl_turbo_1.0_fp16.safetensors",
+  "images": [
+    {
+      "word": "temblé",
+      "emotion": "nervousness",
+      "prompt": "a person shivering slightly in the dark, holding a glowing phone",
+      "file": "tembl_.png"
+    },
+    {
+      "word": "amor de verdad",
+      "emotion": "yearning for truth",
+      "prompt": "two people embracing under dawn's first light through thin curtains",
+      "file": "amor_de_verdad.png"
+    },
+    {
+      "word": "té",
+      "emotion": "comfort and intimacy",
+      "prompt": "a steaming cup of tea on a bedside table at sunrise",
+      "file": "t_.png"
+    },
+    {
+      "word": "aguas",
+      "emotion": "transience",
+      "prompt": "water droplets sliding down a window pane in the morning rain",
+      "file": "aguas.png"
+    },
+    {
+      "word": "gasolina",
+      "emotion": "longevity and commitment",
+      "prompt": "an empty gas tank glowing faintly under streetlights",
+      "file": "gasolina.png"
+    },
+    {
+      "word": "quedate",
+      "emotion": "hope for staying together",
+      "prompt": "two hands clasped tightly over a cup of tea, steam rising between them",
+      "file": "quedate.png"
+    },
+    {
+      "word": "sol",
+      "emotion": "new beginnings and hope",
+      "prompt": "sunlight streaming through gauzy curtains in the early morning",
+      "file": "sol.png"
+    }
+  ]
+}
