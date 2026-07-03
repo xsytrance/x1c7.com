@@ -7,6 +7,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HomeShowcase } from "@/components/HomeShowcase";
+import { GalaxyButton } from "@/components/GalaxyButton";
 
 export default function Home() {
   const reduceMotion = useReducedMotion();
@@ -63,6 +64,10 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="#map" className="rounded-full bg-white px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-void transition hover:scale-105 hover:bg-signal">Choose a portal</a>
             <a href="#signal" className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition hover:border-white/45 hover:text-white">Read the signal</a>
+          </div>
+          {/* The big front door to the music universe */}
+          <div className="mx-auto mt-8 max-w-3xl">
+            <GalaxyButton compact />
           </div>
         </div>
       </motion.section>
