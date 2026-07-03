@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase, type TrackRow } from "./supabase";
+import { isPrivateHost } from "./privateHost";
 import { tracks as staticTracks, gradientArt, type Track } from "@/data/tracks";
 
 // Map a Supabase row into the app's Track shape (adds the gradient fallback art).
@@ -41,7 +42,7 @@ export function useTracks() {
     // in gitignored /private/) only exist on this machine — show them only
     // when the site itself is running locally.
     const local = typeof window !== "undefined" &&
-      /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname);
+      isPrivateHost(window.location.hostname);
     const base = supabase.from("tracks").select("*");
     const query = local
       ? base.or("hidden.eq.false,audio_url.like./private/*")
