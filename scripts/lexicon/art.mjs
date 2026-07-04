@@ -14,7 +14,7 @@
 //   node scripts/lexicon/art.mjs --dry
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, existsSync, unlinkSync } from "node:fs";
 import { join } from "node:path";
 import { execFileSync } from "node:child_process";
 import sharp from "sharp";
@@ -111,6 +111,7 @@ for (const e of entries) {
         const tmp = join(TMP, `lex-${e.word}-${i}-${k + 1}.webp`);
         await sharp(buf).webp({ quality: 82 }).toFile(tmp);
         r2put(tmp, key);
+        try { unlinkSync(tmp); } catch { /* temp cleanup best-effort */ }
         s.images.push(`${PUB}/${key}`);
         changed = true; done++; budget--;
         log(`  [${done}] ${e.word} s${i} → ${key}`);

@@ -80,6 +80,9 @@ node scripts/engine/sync-to-kinetica.mjs --apply
 How the two stay in sync (shared engine + one-file adapter seam):
 [`docs/ENGINE-SYNC.md`](docs/ENGINE-SYNC.md).
 
+Running the living system — R2 layout, the nightly grow-and-publish pipeline, and the
+handful of commands you'll ever need: [`docs/OPERATIONS.md`](docs/OPERATIONS.md).
+
 ## Keyboard Shortcuts
 
 | Key | Action |

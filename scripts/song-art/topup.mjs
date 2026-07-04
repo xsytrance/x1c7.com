@@ -20,7 +20,7 @@
 //   node scripts/song-art/topup.mjs --target 100 --limit 120
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { mkdirSync, writeFileSync, readFileSync, readdirSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, readdirSync, existsSync, unlinkSync } from "node:fs";
 import { join, basename } from "node:path";
 import { execFileSync } from "node:child_process";
 import sharp from "sharp";
@@ -157,6 +157,7 @@ for (const slug of targets) {
       const tmp = join(TMP, `${j.key}-${n}.webp`);
       await sharp(buf).webp({ quality: 82 }).toFile(tmp);
       r2put(tmp, `planets/${slug}/gallery/${j.key}-${n}.webp`);
+      try { unlinkSync(tmp); } catch { /* temp cleanup best-effort */ }
       (gallery[j.key] ??= []).push(rel);
       changed = true; totalDone++; budget--;
       log(`  [${totalDone}] ${rel}`);
