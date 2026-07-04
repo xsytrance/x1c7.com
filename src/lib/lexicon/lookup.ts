@@ -81,12 +81,15 @@ function nearest(lex: Lexicon, k: string): WordEntry | null {
 export function aggregateLegos(lex: Lexicon, words: string[]): WordLegos {
   const out = emptyLegos();
   const seen = new Set<string>();
+  // Defensive: this reads the LIVE hosted shelf, which can drift ahead of the
+  // client and carry a half-generated sense. A missing legos array must never
+  // throw here — this runs inside a render-path useMemo.
   for (const w of words) {
     const e = resolveWord(lex, w);
     if (!e) continue;
-    for (const s of e.senses) {
+    for (const s of e.senses ?? []) {
       for (const kind of LEGO_KINDS) {
-        for (const m of s.legos[kind]) {
+        for (const m of s.legos?.[kind] ?? []) {
           const tag = kind + ":" + m;
           if (!seen.has(tag)) { seen.add(tag); out[kind].push(m); }
         }

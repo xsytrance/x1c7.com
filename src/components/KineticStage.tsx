@@ -15,7 +15,7 @@ import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
 import { KineticParticles, particleModeFor, type ParticleHandle, type ParticleMode } from "./KineticParticles";
 import { SurfaceEffects } from "./SurfaceEffects";
-import { veilForWeather, surfaceFor, VEIL_SPECS, type VeilKind, type SurfaceMode } from "@/lib/effects/registry";
+import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, type SurfaceMode } from "@/lib/effects/registry";
 import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
 import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
@@ -304,7 +304,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (!lex) return null;
     const words = [...(track.planet?.analysis?.keywords?.map((k) => k.word) ?? []), ...(track.title?.split(/\s+/) ?? [])];
     const agg = aggregateLegos(lex, words);
-    return (agg.surface[0] as SurfaceMode) ?? null;
+    // Only trust a surface the client's registry actually knows how to render —
+    // the hosted shelf may name a mode this build doesn't have yet.
+    return (agg.surface.find((m) => m in SURFACE_SPECS) as SurfaceMode) ?? null;
   }, [lex, track]);
   const effectiveSurface = surfaceMode ?? lexSurface;
   // ── STEM SENSES ── measured hearing from the planet's stems.json (if any).
@@ -392,13 +394,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const pileId = useRef(0);
   const pileRun = useRef(-1);   // id of the run currently piling
   const pileEmit = useRef(0);   // chips emitted so far this run
-  const swipeLast = useRef<{ x: number; y: number; t: number } | null>(null);
   useEffect(() => { setPile([]); pileRun.current = -1; pileEmit.current = 0; }, [track.id]);
   // Swipe across the pile to knock the chips away — any chip within the finger's
   // reach is removed and flings out (its fling vector was set when it landed).
   const pileSwipe = useCallback((e: React.PointerEvent) => {
     if (!pile.length) return;
-    swipeLast.current = { x: e.clientX, y: e.clientY, t: performance.now() };
     const R = window.innerWidth * 0.15;
     setPile((old) => old.filter((p) => {
       const px = (p.x / 100) * window.innerWidth, py = (p.y / 100) * window.innerHeight;
@@ -729,7 +729,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       if (pass >= 3) {
         const run = stutterRuns.find((r) => t >= r.start - 0.06 && t <= r.end + 2.6);
         if (run) {
-          if (pileRun.current !== run.id) { pileRun.current = run.id; pileEmit.current = 0; }
+          if (pileRun.current !== run.id) { if (pileRun.current !== -1) setPile([]); pileRun.current = run.id; pileEmit.current = 0; }
           const target = Math.min(run.spots.length, run.times.filter((tt) => tt <= t + 0.03).length * 3);
           if (pileEmit.current < target) {
             const add: (typeof pile) = [];
