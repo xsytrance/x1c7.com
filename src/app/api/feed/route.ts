@@ -1,19 +1,20 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken, SESSION_COOKIE } from "@/lib/auth";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
+import { isOwnerRequest } from "@/lib/ownerGate";
 import { getGuided, addReference, removeReference, removeImage, clearGuided } from "@/lib/feed/store";
 
 export const runtime = "nodejs";
 
 // ═══════════════════════════════════════════════════════════════════════════
-// /api/feed — the feed studio API. Owner-gated by the session cookie (set via
-// /api/auth). Management writes R2 directly (aws4fetch). GENERATE enqueues a job
-// in feed_jobs; the home worker (GPU) processes it.
+// /api/feed — the feed studio API. Owner-gated by the tailnet (isOwnerRequest):
+// only reachable from the prime box, never from public Vercel. The proxy gates
+// this too — this is defense-in-depth. Management writes R2 directly (aws4fetch).
+// GENERATE enqueues a job in feed_jobs; the home worker (GPU) processes it.
 //   GET  ?slug=…                → { guided, jobs }
 //   POST { slug, action, … }    → addRef | removeRef | removeImage | clear | generate
 // ═══════════════════════════════════════════════════════════════════════════
-async function owner(req: NextRequest) {
-  return verifyToken(process.env.SESSION_SECRET || "", req.cookies.get(SESSION_COOKIE)?.value);
+function owner(req: NextRequest) {
+  return isOwnerRequest(req.headers.get("host"));
 }
 function dataUrl(image: string): { buf: Buffer; ext: string } | null {
   const m = /^data:image\/([\w.+-]+);base64,(.+)$/.exec(image);
@@ -28,14 +29,14 @@ async function jobsFor(slug: string) {
 }
 
 export async function GET(req: NextRequest) {
-  if (!(await owner(req))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!owner(req)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   const slug = req.nextUrl.searchParams.get("slug");
   if (!slug) return NextResponse.json({ error: "slug required" }, { status: 400 });
   return NextResponse.json({ ok: true, guided: await getGuided(slug), jobs: await jobsFor(slug) });
 }
 
 export async function POST(req: NextRequest) {
-  if (!(await owner(req))) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!owner(req)) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
   let b: { slug?: string; action?: string; image?: string; id?: string; prompt?: string; n?: number; denoise?: number; refIds?: string[] };
   try { b = await req.json(); } catch { return NextResponse.json({ error: "bad JSON" }, { status: 400 }); }
   const slug = b.slug;

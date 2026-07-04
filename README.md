@@ -52,6 +52,29 @@ No environment variables required.
 | `/galaxy` | The catalog as a universe — every song a planet |
 | `/lexicon` | The word-database browser — every word a sub-planet of effect "legos" |
 | `/vr` | WebXR lyric world (Quest 3) |
+| `/studio`, `/studio/feed` | **Owner-only** — the lyric-engine playground + Feed the Planet. Tailnet-only (see below). |
+
+## Studio (owner-only, over Tailscale)
+
+The `/studio` pages and the `/api/feed` API are the owner's private door. There's
+**no password** — access _is_ the tailnet. The gate (`src/lib/ownerGate.ts` +
+`src/proxy.ts`) allows these routes only when the request is **not on Vercel** and
+the Host is localhost / a Tailscale MagicDNS name / the tailnet CGNAT range. On the
+public Vercel site they vanish: `/studio` redirects home, `/api/feed` 404s.
+
+So the public site stays on Vercel (nothing to configure — the gate keeps studio
+hidden there), and you run the studio from your tailnet box (`prime`):
+
+```bash
+npm run build && npm start            # serves on http://localhost:3000 (prime box)
+tailscale serve --bg 3000             # expose ONLY inside your tailnet
+# now reachable from any tailnet device at https://prime.<your-tailnet>.ts.net/studio
+```
+
+`tailscale serve` enforces tailnet-only at the network edge (nothing public ever
+reaches the port); the app-level gate is defense-in-depth. The feed studio needs
+R2 + Supabase env vars on the prime box (`.env`); the public Vercel site needs none.
+The old password vars (`SESSION_SECRET`, `SETUP_CODE`) are no longer used.
 
 ## Lyric engine: effects & the Lexicon
 

@@ -1,10 +1,11 @@
 "use client";
 
 // ═══════════════════════════════════════════════════════════════════════════
-// FEED THE PLANET — the owner's feed studio, now on the LIVE site behind the
-// password gate (middleware). Build a reference library, pick which to feed, and
-// queue a generation; your home worker (GPU) processes it and the guided art
-// appears here. Album art = event horizon; auto gallery = satellite.
+// FEED THE PLANET — the owner's feed studio. Served only from the prime box on
+// the tailnet (the public Vercel site never exposes it — see src/proxy.ts). No
+// password: access IS the tailnet. Build a reference library, pick which to
+// feed, and queue a generation; your home worker (GPU) processes it and the
+// guided art appears here. Album art = event horizon; auto gallery = satellite.
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { useEffect, useMemo, useRef, useState } from "react";
@@ -83,13 +84,11 @@ export default function FeedPage() {
   const addRefs = async (files: FileList) => { for (const f of Array.from(files)) { const d = await downscale(f); await post({ action: "addRef", image: d }, `adding ${f.name}…`, "✦ reference added"); } };
   const generate = () => post({ action: "generate", refIds: [...selRefs], prompt, n, denoise }, "queuing…", "✦ queued — your machine will generate it shortly", true).then((j) => { if (j?.queued) setPrompt(""); });
   const toggleRef = (id: string) => setSelRefs((s) => { const x = new Set(s); x.has(id) ? x.delete(id) : x.add(id); return x; });
-  const logout = async () => { await fetch("/api/auth", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ action: "logout" }) }); window.location.href = "/studio/login"; };
 
   const selCount = selRefs.size;
   return (
     <main className="relative min-h-screen bg-void px-4 py-10 sm:px-8">
       <BackToHub />
-      <button onClick={logout} className="absolute right-5 top-5 z-20 font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white">log out</button>
       <header className="mx-auto mt-6 max-w-6xl text-center">
         <h1 className="font-display text-4xl font-black uppercase tracking-tight text-white sm:text-6xl glow-text" style={{ color: "var(--theme-primary)" }}>Feed the Planet</h1>
         <p className="mx-auto mt-3 max-w-2xl text-white/55">

@@ -1,20 +1,18 @@
 import { NextRequest, NextResponse } from "next/server";
-import { verifyToken, SESSION_COOKIE } from "@/lib/auth";
+import { isOwnerRequest } from "@/lib/ownerGate";
 
-// Owner gate: everything under /studio requires a valid session cookie, except
-// the login page itself. Works from any device — the password replaces the old
-// localhost/Tailscale check.
-export default async function proxy(req: NextRequest) {
+// Owner gate: the studio and its feed API are the owner's private door. They are
+// served only from the prime box inside the tailnet (see isOwnerRequest); the
+// public Vercel deployment never exposes them. No password — access IS the
+// tailnet. Public visitors are quietly sent home; the API answers 404.
+export default function proxy(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  if (pathname.startsWith("/studio/login")) return NextResponse.next();
+  if (isOwnerRequest(req.headers.get("host"))) return NextResponse.next();
 
-  const ok = await verifyToken(process.env.SESSION_SECRET || "", req.cookies.get(SESSION_COOKIE)?.value);
-  if (ok) return NextResponse.next();
-
-  const url = req.nextUrl.clone();
-  url.pathname = "/studio/login";
-  url.searchParams.set("from", pathname);
-  return NextResponse.redirect(url);
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.json({ error: "not found" }, { status: 404 });
+  }
+  return NextResponse.redirect(new URL("/", req.url));
 }
 
-export const config = { matcher: ["/studio/:path*"] };
+export const config = { matcher: ["/studio/:path*", "/api/feed/:path*"] };
