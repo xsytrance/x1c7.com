@@ -43,3 +43,4 @@ scripts/song-art/topup/
 scripts/song-art/*-topup-*/
 scripts/song-art/.topup-tmp/
 scripts/song-art/topup-run.log
+scripts/lexicon/art-run.log

@@ -30,8 +30,12 @@ fi
 #    a publish+wire step (x1c7-art R2) ships it once creds are in place.
 if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; then
   node scripts/song-art/topup.mjs --target 100 --limit 4000 \
-    && echo "$(date -Iseconds) · ✦ art top-up batch done" \
-    || echo "$(date -Iseconds) · ✗ art top-up failed"
+    && echo "$(date -Iseconds) · ✦ song art top-up done" \
+    || echo "$(date -Iseconds) · ✗ song art top-up failed"
+  # Lexicon community art — real pixels per word-sense (fills images:[], republishes shelf).
+  node scripts/lexicon/art.mjs --per-sense 2 --limit 4000 \
+    && echo "$(date -Iseconds) · ✦ lexicon art done" \
+    || echo "$(date -Iseconds) · ✗ lexicon art failed"
 else
   echo "$(date -Iseconds) · · ComfyUI not up — skipping art top-up"
 fi
