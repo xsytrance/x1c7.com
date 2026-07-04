@@ -13,6 +13,7 @@
     "@react-three/fiber": "^9.6.1",
     "@react-three/xr": "^6.6.30",
     "@supabase/supabase-js": "^2.110.0",
+    "aws4fetch": "^1.0.20",
     "framer-motion": "^11.18.2",
     "next": "^16.2.6",
     "react": "^19.2.7",

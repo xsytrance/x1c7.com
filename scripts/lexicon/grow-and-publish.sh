@@ -36,6 +36,10 @@ if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; the
   node scripts/lexicon/art.mjs --per-sense 2 --limit 4000 \
     && echo "$(date -Iseconds) · ✦ lexicon art done" \
     || echo "$(date -Iseconds) · ✗ lexicon art failed"
+  # Gravitational feed — drain any queued feed jobs (safety net for the watcher).
+  node scripts/feed-worker.mjs \
+    && echo "$(date -Iseconds) · ✦ feed queue drained" \
+    || echo "$(date -Iseconds) · ✗ feed worker failed"
 else
   echo "$(date -Iseconds) · · ComfyUI not up — skipping art top-up"
 fi
