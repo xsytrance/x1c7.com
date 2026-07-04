@@ -29,7 +29,7 @@ fi
 #    Batched so it's a few minutes of GPU, not a marathon. Output is gitignored;
 #    a publish+wire step (x1c7-art R2) ships it once creds are in place.
 if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; then
-  node scripts/song-art/topup.mjs --target 100 --limit 120 \
+  node scripts/song-art/topup.mjs --target 100 --limit 4000 \
     && echo "$(date -Iseconds) · ✦ art top-up batch done" \
     || echo "$(date -Iseconds) · ✗ art top-up failed"
 else
