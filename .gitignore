@@ -38,3 +38,4 @@ next-env.d.ts
 /scripts/import-youtube/jobs/
 /scripts/onboard-jobs/
 /assets/
+scripts/lexicon/cron.log
