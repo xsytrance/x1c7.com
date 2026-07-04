@@ -22,14 +22,10 @@ export type Track = {
   planet?: Planet; // LLM song analysis (emotion arc, palette, imagery prompts)
 };
 
-// ── Buckets ──────────────────────────────────────────────────────────────
+// ── Bucket ───────────────────────────────────────────────────────────────
+// One bucket, one clean layout after the storage reorg:
+//   music/    all songs        covers/   album art        planets/  planet art
 const MUSIC_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
-const ART_BASE = "https://pub-e9f979edfc5542a1b6d5c37e32537565.r2.dev";
-
-// Encode a key path one segment at a time (keeps the slashes).
-function encKey(path: string): string {
-  return path.split("/").map(encodeURIComponent).join("/");
-}
 
 const COLORS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
 const GENRES = ["Electronic", "Synthwave", "Ambient", "Techno", "Industrial", "Pop", "House", "Dance"];
@@ -116,7 +112,7 @@ const COVER_OVERRIDES: Record<string, { folder: string; name: string }> = {
 function coverFor(title: string): string | undefined {
   const override = COVER_OVERRIDES[title];
   if (override) {
-    return `${ART_BASE}/${encKey(override.folder)}/${encodeURIComponent(override.name)}.png`;
+    return `${MUSIC_BASE}/covers/${encodeURIComponent(override.name)}.png`;
   }
   const t = normalizeName(title);
   let best: { folder: string; name: string } | null = null;
@@ -135,34 +131,27 @@ function coverFor(title: string): string | undefined {
     }
   }
   if (!best || bestScore < 0) return undefined;
-  return `${ART_BASE}/${encKey(best.folder)}/${encodeURIComponent(best.name)}.png`;
+  return `${MUSIC_BASE}/covers/${encodeURIComponent(best.name)}.png`;
 }
 
 // ── Audio sources ────────────────────────────────────────────────────────
-// New, organized library under MP3/ (clean names).
+// Organized library under music/ (clean names). The storage reorg folded the
+// old legacy bucket-root files in here too, so there's one consistent home.
 const MP3_FILES = [
   "1st of the Month (Walk It Out)", "AI Interlude", "Amor De Verdad",
   "Another Year Looks Good on You [Happy Birthday Song]", "Between The Stations",
   "Brooms in the Boiler Room", "Cairo Still Dancing", "Ceasefire in the Static (Data Storm Version)",
-  "Drink Drink [Don't Save Me]", "Fast Enough", "Feverbreak", "Going Crazy (Hiligaynon Fusion Mix)",
+  "Drink Drink [Don’t Save Me]", "Fast Enough", "Feverbreak", "Going Crazy (Hiligaynon Fusion Mix)",
   "Heaven & Hell (Honey & Venom Remix)", "Honey N Venom (Rude Wine Riddim)", "I Don't Quit Right Now",
   "I Said No!", "In Love With The Party", "Light It Myself (불은 내가)", "Low Lights Tokyo _ 君がいないNight",
   "Membrane Still Insane", "Mi Gente", "Move Over (Minimal Groove Mix)", "Music Is My Drug (Rooklyn Mix)",
   "Music Is My Drug", "One More Breath [Back To Myself]", "One Tap Away (Riverboat Bad Boys Remix)",
   "One Tap Away", "Oro De La Presión", "Push It On Me", "Say It With Your Eyes", "Still Me_ Still You",
   "Void Into Gold (Forged Above Gold Mix)", "Void Into Gold", "Whistle on the River",
-  "Who's That Snake (Funky Slow-Jam Mix)", "xsytrance presents Jayodeed - Going Crazy (Rooklyn Mix)",
-];
-
-// Older songs that only exist at the bucket root (with the legacy prefix and
-// curly apostrophes). Kept verbatim — these URLs are already known-good.
-const LEGACY_URLS = [
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Different%20This%20Summer.mp3",
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Won%E2%80%99t%20Be%20Your%20Fire%20(Japanese%20Mix).mp3",
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I%20Won%E2%80%99t%20Be%20Your%20Fire.mp3",
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20I'm%20That%20Somebody.mp3",
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20My%20Soul%20Lives%20In%20Seoul.mp3",
-  "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/xsytrance%20-%20Paper%20That%20Cut%20You.mp3",
+  "Who’s That Snake (Funky Slow-Jam Mix)", "xsytrance presents Jayodeed - Going Crazy (Rooklyn Mix)",
+  // Folded in from the legacy bucket root during the storage reorg (now music/).
+  "Different This Summer", "I Won’t Be Your Fire (Japanese Mix)", "I Won’t Be Your Fire",
+  "I'm That Somebody", "My Soul Lives In Seoul", "Paper That Cut You",
 ];
 
 function cleanTitle(raw: string): string {
@@ -175,16 +164,10 @@ function cleanTitle(raw: string): string {
 
 type Source = { title: string; audioUrl: string };
 
-const sources: Source[] = [
-  ...MP3_FILES.map((file) => ({
-    title: cleanTitle(file),
-    audioUrl: `${MUSIC_BASE}/MP3/${encodeURIComponent(file)}.mp3`,
-  })),
-  ...LEGACY_URLS.map((url) => ({
-    title: cleanTitle(decodeURIComponent(url.split("/").pop() || "")),
-    audioUrl: url,
-  })),
-];
+const sources: Source[] = MP3_FILES.map((file) => ({
+  title: cleanTitle(file),
+  audioUrl: `${MUSIC_BASE}/music/${encodeURIComponent(file)}.mp3`,
+}));
 
 // De-dupe by normalized title (MP3/ versions win over legacy duplicates).
 const seen = new Set<string>();
