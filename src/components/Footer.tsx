@@ -77,6 +77,14 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm leading-6 text-white/50">
               Music, machines, agents, experiments. A portal map by xsy for everything loud, strange, useful, and still forming.
             </p>
+            <a
+              href="https://xsytrance.github.io/kinetica/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-5 inline-flex items-center gap-2 rounded-full border border-signal/40 px-4 py-2 font-mono text-[11px] uppercase tracking-wider text-signal/90 transition hover:border-signal hover:text-signal"
+            >
+              🎬 Kinetica — make a lyric video from your Suno stems ↗
+            </a>
           </motion.div>
 
           {/* Portal links */}
