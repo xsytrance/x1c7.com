@@ -131,6 +131,19 @@ export default function LexiconPage() {
   const [lex, setLex] = useState<Lexicon>(BUNDLED);
   useEffect(() => { loadLexicon().then(setLex).catch(() => {}); }, []);
 
+  // Deep-link: open ?word= on load (shareable); reflect selection in the URL.
+  useEffect(() => {
+    const w = new URLSearchParams(window.location.search).get("word");
+    if (w && lex.entries[w]) setSelected((cur) => cur ?? w);
+  }, [lex]);
+  const open = (w: string | null) => {
+    setSelected(w);
+    const url = new URL(window.location.href);
+    if (w) url.searchParams.set("word", w); else url.searchParams.delete("word");
+    window.history.replaceState(null, "", url.toString());
+  };
+  const wander = () => { const ks = Object.keys(lex.entries); if (ks.length) open(ks[(Math.random() * ks.length) | 0]); };
+
   const entries = useMemo(() => Object.values(lex.entries).sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word)), [lex]);
   const filtered = useMemo(() => {
     const t = q.trim().toLowerCase();
@@ -166,13 +179,15 @@ export default function LexiconPage() {
         </div>
       </header>
 
-      <div className="mx-auto mt-8 max-w-md">
+      <div className="mx-auto mt-8 flex max-w-md items-center gap-2">
         <input
           value={q}
           onChange={(e) => setQ(e.target.value)}
           placeholder="search a word or a feeling…"
           className="w-full rounded-full border border-white/15 bg-white/[0.03] px-5 py-3 text-center font-mono text-sm text-white placeholder:text-white/30 focus:border-white/40 focus:outline-none"
         />
+        <button onClick={wander} title="Wander to a random word"
+          className="shrink-0 rounded-full border border-white/15 bg-white/[0.03] px-4 py-3 text-sm transition hover:border-white/40 hover:bg-white/10">🎲</button>
       </div>
 
       <div className="mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
@@ -184,7 +199,7 @@ export default function LexiconPage() {
           return (
             <button
               key={e.word}
-              onClick={() => setSelected(e.word)}
+              onClick={() => open(e.word)}
               className="group relative flex aspect-square flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 p-3 text-center transition hover:scale-[1.03] hover:border-white/25"
               style={{ background: `radial-gradient(circle at 50% 32%, color-mix(in srgb, ${c} 34%, transparent), transparent 68%), #0a0714` }}
             >
@@ -211,7 +226,7 @@ export default function LexiconPage() {
       )}
 
       <AnimatePresence>
-        {sel && <WordPanel entry={sel} onClose={() => setSelected(null)} />}
+        {sel && <WordPanel entry={sel} onClose={() => open(null)} />}
       </AnimatePresence>
     </main>
   );
