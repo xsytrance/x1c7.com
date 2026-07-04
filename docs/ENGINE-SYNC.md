@@ -114,12 +114,21 @@ The word-database (`src/data/lexicon.json`) is grown in x1c7 by
 `scripts/lexicon/{harvest,dream}.mjs` (the workshop tools — **not** synced). Today the
 built shelf travels to Kinetica as a bundled file via the sync.
 
-The next step is the **hosted** shelf: `src/lib/lexicon/lookup.ts` has a
-`HOSTED_LEXICON_URL` knob. Set it to where the Lexicon is published and **every app —
-x1c7 and Kinetica — fetches the latest at runtime**, with the bundled copy as an
-automatic offline fallback. That single knob turns the shelf into the shared,
-ever-growing, community asset (the gift to Suno): grow it once in x1c7, and every
-Kinetica install gets it without a re-release.
+**It's now hosted (live).** `src/lib/lexicon/lookup.ts`'s `HOSTED_LEXICON_URL` points at
+the shelf on Cloudflare R2, so **every app — x1c7 and Kinetica — fetches the latest at
+runtime**, with the bundled copy as an automatic offline fallback. Grow it once in
+x1c7, publish, and every install gets it **without a redeploy**.
+
+The publish step is one command (S3 creds live in a gitignored `.env`):
+
+```bash
+node scripts/lexicon/dream.mjs --limit 999 && node scripts/lexicon/publish.mjs
+```
+
+`publish.mjs` uploads `src/data/lexicon.json` to R2 via rclone. Put it on a cron next
+to the dream loop and the shelf grows and republishes itself — the "grows while you
+sleep, for everyone" vision, done. (The R2 `pub-*.r2.dev` URL already serves open CORS,
+so cross-origin fetch from both apps just works.)
 
 ---
 

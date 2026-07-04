@@ -21,7 +21,7 @@ let loading: Promise<Lexicon> | null = null;
 // with this build. Any network failure falls back to the bundle, so it never
 // breaks offline. This is the one knob that turns the shelf into a shared,
 // live, community asset. Keep it in sync across repos via the engine sync.
-const HOSTED_LEXICON_URL = "";
+const HOSTED_LEXICON_URL = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon.json";
 
 /** The build-time copy — its own async chunk, kept out of the main bundle. */
 async function bundledLexicon(): Promise<Lexicon> {
