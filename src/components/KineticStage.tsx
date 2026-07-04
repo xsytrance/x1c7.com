@@ -234,6 +234,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const galleryRef = useRef(gallery);
   galleryRef.current = gallery;
   const galleryTurn = useRef(new Map<string, number>());
+  // The GRAVITATIONAL FEED: images the owner fed this planet (guided.json on R2)
+  // become its guiding star — they drive the backdrop, with the album art as the
+  // event horizon (the anchor) and the auto gallery as the secondary satellite.
+  // Absent = the engine behaves exactly as before.
+  const [guided, setGuided] = useState<string[] | null>(null);
+  const guidedRef = useRef(guided);
+  guidedRef.current = guided;
+  const guidedTurn = useRef(0);
+  // Album art = the event horizon. Read defensively — the shared engine can't
+  // assume the host's Track carries a cover (Kinetica's doesn't).
+  const eventHorizon = (track as { cover?: string }).cover;
   const [showTitle, setShowTitle] = useState(true);
   const [wave, setWave] = useState(0);
   // Art doubling: every painting has a twin (-2.webp). Each time the same
@@ -253,18 +264,34 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Load the song's hosted art gallery (grown by the top-up pipeline). Graceful:
   // 404 / offline → null → the engine falls back to single keyword art.
   useEffect(() => {
-    setGallery(null);
-    galleryTurn.current.clear();
+    setGallery(null); setGuided(null);
+    galleryTurn.current.clear(); guidedTurn.current = 0;
     if (pass < 3 || !PLANET_BASE) return;
     let on = true;
     fetch(`${PLANET_BASE}/planets/${track.id}/gallery.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (on) setGallery((d?.art as Record<string, string[]>) ?? null); })
       .catch(() => {});
+    fetch(`${PLANET_BASE}/planets/${track.id}/guided.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!on) return;
+        const imgs = (d?.images as string[]) ?? [];
+        // Anchor the guided star to the album-art event horizon.
+        setGuided(imgs.length ? (eventHorizon ? [eventHorizon, ...imgs] : imgs) : null);
+      })
+      .catch(() => {});
     return () => { on = false; };
-  }, [track.id, pass]);
+  }, [track.id, eventHorizon, pass]);
   // Rotate through [base, ...gallery variants] for a word so backdrops vary.
   const pooledArt = useCallback((w: string, base: string | null): string | null => {
+    // Guided (fed) art is the star — it drives the backdrop; the word's own art
+    // punctuates it every 3rd change (or whenever there's no word art).
+    const star = guidedRef.current;
+    if (star?.length) {
+      const t = guidedTurn.current++;
+      if (!base || t % 3 !== 0) return star[t % star.length];
+    }
     const extra = galleryRef.current?.[w];
     if (!extra?.length) return base;
     const pool = base ? [base, ...extra] : extra;
