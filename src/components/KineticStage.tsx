@@ -14,6 +14,10 @@ import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
 import { KineticParticles, particleModeFor, type ParticleHandle } from "./KineticParticles";
+import { SurfaceEffects } from "./SurfaceEffects";
+import { veilForWeather, surfaceFor, VEIL_SPECS, type VeilKind, type SurfaceMode } from "@/lib/effects/registry";
+import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
+import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
 import type { Track } from "@/data/tracks";
 
@@ -207,6 +211,27 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const pal = track.planet?.analysis?.palette;
     return Array.isArray(pal) && pal.length ? pal : [track.color];
   }, [track]);
+  // The surface layer — mud/rust/cracks/vines creeping in, if the song's
+  // vocabulary calls for one (null = clean glass, most songs).
+  const surfaceMode = useMemo(() => {
+    const a = track.planet?.analysis;
+    return surfaceFor([
+      a?.overallMood, ...(a?.themes ?? []), ...(a?.keywords?.map((k) => k.word) ?? []),
+      track.mood, track.title,
+    ].filter(Boolean).join(" "));
+  }, [track]);
+  // Lexicon-first: consult the pre-generated word shelf too. When the song's own
+  // regex finds no surface, the Lexicon's aggregated legos still might — proof of
+  // the "no LLM at render time" path. Loads lazily; degrades to null.
+  const [lex, setLex] = useState<Lexicon | null>(null);
+  useEffect(() => { let on = true; loadLexicon().then((l) => on && setLex(l)).catch(() => {}); return () => { on = false; }; }, []);
+  const lexSurface = useMemo<SurfaceMode | null>(() => {
+    if (!lex) return null;
+    const words = [...(track.planet?.analysis?.keywords?.map((k) => k.word) ?? []), ...(track.title?.split(/\s+/) ?? [])];
+    const agg = aggregateLegos(lex, words);
+    return (agg.surface[0] as SurfaceMode) ?? null;
+  }, [lex, track]);
+  const effectiveSurface = surfaceMode ?? lexSurface;
   // ── STEM SENSES ── measured hearing from the planet's stems.json (if any).
   // Kicks thump the halo, snares ring, hats glint the weather, the bass bends
   // the type, the singer's real energy sizes each word, drum-cuts freeze the
@@ -376,7 +401,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // itself — the longest instrumental gap becomes a wipe, the biggest intensity
   // jump gets a blow (arrive the drop on a breath), the wildest section a shake.
   // Synthesized moments never collide with choreographed ones (±8s buffer).
-  const wipeVeil = ({ embers: "ash", rain: "fog", snow: "frost", bubbles: "steam", sparks: "static", dust: "fog" } as const)[particleMode];
+  const wipeVeil = veilForWeather(particleMode);
   const allMoments = useMemo(() => {
     const out = [...(interactions?.moments ?? [])];
     const free = (t: number, end: number) => !out.some((m) => t < m.end + 8 && end > m.t - 8) && t > 12;
@@ -909,6 +934,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           palette={palette}
           scale={phrase ? 0.55 : 1}
         />
+      )}
+
+      {/* The surface layer — mud/rust/cracks/vines clinging to the glass and
+          creeping in from the edges. Only for songs whose world calls for it. */}
+      {pass >= 3 && effectiveSurface && (
+        <SurfaceEffects mode={effectiveSurface} intensity={section?.intensity ?? 0.35} scale={phrase ? 0.5 : 1} />
       )}
 
       {/* Ghost chorus — when the backing vocals swell, the current word's
@@ -1885,15 +1916,20 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
         <motion.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onGust : start}
-          className="fixed left-1/2 top-24 z-[35] w-max max-w-[92vw] -translate-x-1/2 rounded-2xl border border-white/25 bg-black/55 px-5 py-3 text-center font-mono text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: [0, 1, 1, 0.75, 1], y: 0, scale: state === "listening" ? [1, 1.06, 1] : 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: state === "listening" ? 1.1 : 1.8, repeat: state === "listening" ? Infinity : 0 }}
+          className="stage-warn-pill fixed left-1/2 top-[15vh] z-[38] flex w-max max-w-[92vw] -translate-x-1/2 flex-col items-center gap-1.5 rounded-[2rem] px-8 py-5 text-center"
+          initial={{ opacity: 0, y: -18, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300, damping: 22 }}
         >
-          {state === "idle" && <>🌬️ {moment.prompt} — tap to ready the mic</>}
-          {state === "listening" && <>🌬️ BLOW NOW — {moment.prompt}</>}
-          {state === "denied" && <>🌬️ {moment.prompt} — tap!</>}
+          <span className="stage-warn text-3xl sm:text-5xl">
+            {state === "listening" ? "🌬️ BLOW NOW!" : "🌬️ BLOW!"}
+          </span>
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/80 sm:text-sm">
+            {state === "idle" && <>{moment.prompt} — tap to ready the mic</>}
+            {state === "listening" && <>{moment.prompt}</>}
+            {state === "denied" && <>{moment.prompt} — tap!</>}
+          </span>
         </motion.button>
       )}
     </AnimatePresence>
@@ -1901,12 +1937,9 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
 }
 
 /* ========== WIPE LAYER ==========
-   A choreographed moment: a themed veil (ash, frost, steam, fog, static)
-   covers the stage and the listener wipes it away with a finger. */
-const WIPE_COLORS: Record<string, [string, string]> = {
-  ash: ["#241f1c", "#443a33"], frost: ["#cfe6f5", "#9cc4e4"], steam: ["#d8d8d8", "#b9b9b9"],
-  fog: ["#a8b2bc", "#87929e"], static: ["#101010", "#2e2e2e"],
-};
+   A choreographed moment: a themed veil (fog, ash, frost, steam, static, mud,
+   dust, smoke — all defined as legos in the effect registry) covers the stage
+   and the listener wipes it away with a finger. */
 function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
@@ -1916,7 +1949,9 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
     const ctx = c.getContext("2d");
     if (!ctx) return;
     c.width = window.innerWidth; c.height = window.innerHeight;
-    const [c0, c1] = WIPE_COLORS[moment.layer] ?? WIPE_COLORS.fog;
+    const spec = VEIL_SPECS[moment.layer as VeilKind] ?? VEIL_SPECS.fog;
+    const [c0, c1] = spec.colors;
+    const grainPx = spec.grain === "static" ? 3 : spec.grain === "blobs" ? 4 : 2;
     ctx.globalAlpha = 0.9;
     const grad = ctx.createLinearGradient(0, 0, 0, c.height);
     grad.addColorStop(0, c0); grad.addColorStop(1, c1);
@@ -1924,7 +1959,7 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
     for (let i = 0; i < 1600; i++) {
       ctx.globalAlpha = 0.04 + (i % 7) * 0.02;
       ctx.fillStyle = i % 2 ? "#ffffff" : "#000000";
-      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, moment.layer === "static" ? 3 : 2, moment.layer === "static" ? 3 : 2);
+      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, grainPx, grainPx);
     }
     ctx.globalAlpha = 1;
     let clearedPx = 0;
@@ -1950,22 +1985,23 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
       {moment && (
         <motion.div
           key={`${moment.layer}${moment.prompt}`}
-          className="fixed inset-x-0 top-0 bottom-[118px] z-[30]"
+          className="fixed inset-0 z-[30]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 1.4 } }}
           transition={{ duration: 1.2 }}
         >
+          {/* Full-screen veil — no more untouched strip at the bottom. */}
           <canvas ref={canvasRef} className="h-full w-full touch-none" />
-          <motion.p
-            className="pointer-events-none absolute left-1/2 top-14 -translate-x-1/2 whitespace-nowrap font-mono text-xs uppercase tracking-[0.4em] text-white"
-            style={{ textShadow: "0 1px 10px rgba(0,0,0,0.9)" }}
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: [0, 1, 1, 0.7, 1], y: 0 }}
-            transition={{ duration: 2.2, delay: 0.6 }}
+          <motion.div
+            className="pointer-events-none absolute inset-x-0 top-[16vh] flex flex-col items-center gap-1.5 px-6"
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
-            ✋ {moment.prompt}
-          </motion.p>
+            <span className="stage-warn text-3xl sm:text-5xl">✋ {moment.prompt}</span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75 sm:text-sm">swipe across the screen to clear it</span>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

@@ -49,6 +49,26 @@ No environment variables required.
 | `/level-ready` | Gamified service tiers (Setup / Automate / Scale) |
 | `/agents` | Agent roster with character cards and silhouettes |
 | `/notes` | Field journal with tilted notebook entries |
+| `/galaxy` | The catalog as a universe — every song a planet |
+| `/lexicon` | The word-database browser — every word a sub-planet of effect "legos" |
+| `/vr` | WebXR lyric world (Quest 3) |
+
+## Lyric engine: effects & the Lexicon
+
+The lyric show's atmosphere (weather, veils, surface grime) is built from reusable
+**effect "legos"** organized by _physics class_, catalogued in `src/lib/effects/registry.ts`.
+Separately, every word from every song is harvested into a shared, growing **Lexicon**
+(`src/data/lexicon.json`) — a shelf of vibes, palettes, imagery, and effects that will
+eventually let a lyric video be built without an LLM.
+
+Grow the shelf:
+
+```bash
+node scripts/lexicon/harvest.mjs     # seed/merge words from analyzed songs
+node scripts/lexicon/dream.mjs       # the "dream loop" — fill legos on a priority queue
+```
+
+Full write-up: [`docs/EFFECTS-AND-LEXICON.md`](docs/EFFECTS-AND-LEXICON.md).
 
 ## Keyboard Shortcuts
 

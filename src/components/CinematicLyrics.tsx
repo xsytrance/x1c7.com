@@ -237,6 +237,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                         className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
                         🌌 Galaxy
                       </Link>
+                      <Link href="/lexicon" onClick={onClose}
+                        className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+                        📖 Lexicon
+                      </Link>
                     </span>
                   </div>
                   <div className="flex-1 overflow-y-auto pb-6">

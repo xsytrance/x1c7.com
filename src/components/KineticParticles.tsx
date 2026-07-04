@@ -10,16 +10,23 @@
 import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
 import { beatClock } from "@/lib/beatClock";
 
-export type ParticleMode = "embers" | "rain" | "snow" | "dust" | "bubbles" | "sparks";
+export type ParticleMode =
+  | "embers" | "rain" | "snow" | "dust" | "bubbles" | "sparks"
+  | "ash" | "petals" | "pollen";
 
-/** Pick a song's weather from its planet vocabulary. */
+/** Pick a song's weather from its planet vocabulary. Ash (falling, grey, spent)
+ * is checked BEFORE embers (rising, hot) so "ashes of regret" reads cold, not
+ * on-fire. Order = priority; first match wins. */
 export function particleModeFor(text: string): ParticleMode {
   const t = text.toLowerCase();
-  if (/fire|burn|flame|ember|ash|match|blaze|spark(?!le)/.test(t)) return "embers";
-  if (/rain|storm|river|ocean|water|sea|tide|lluvia|mar\b/.test(t)) return "rain";
-  if (/snow|winter|frost|cold|ice|nieve/.test(t)) return "snow";
+  if (/\b(ash|ashes|cinder|cinders|smoulder|smolder|charred|burnt|soot|embers? fall)\b/.test(t)) return "ash";
+  if (/fire|burn|flame|ember|match|blaze|spark(?!le)/.test(t)) return "embers";
+  if (/rain|storm|river|ocean|water|sea\b|tide|lluvia|mar\b|drown|flood|tear(s|drop)?/.test(t)) return "rain";
+  if (/snow|winter|frost|cold|ice|nieve|freeze|frozen|blizzard/.test(t)) return "snow";
   if (/glitch|static|signal|wi-?fi|data|code|server|digital|circuit|neon/.test(t)) return "sparks";
-  if (/champagne|cocktail|drink|bubble|party|fizz|celebra/.test(t)) return "bubbles";
+  if (/champagne|cocktail|drink|bubble|party|fizz|celebra|toast|club|dance floor/.test(t)) return "bubbles";
+  if (/rose|petal|bloom|blossom|flower|garden|romance|amor|valentine/.test(t)) return "petals";
+  if (/pollen|meadow|field|dandelion|wheat|honey|golden|sunlit|hazy|summer/.test(t)) return "pollen";
   return "dust";
 }
 
@@ -47,9 +54,13 @@ type P = {
 };
 
 const WARM = ["#ffd28a", "#ff8a3c", "#ff5400", "#ffb35c"];
+const ASH = ["#cbc6be", "#9a938a", "#6f6a63", "#d8b48a"]; // greys + one faint spent ember
+const PETAL = ["#ffb7c5", "#ff8fab", "#ffd1dc", "#e75480"];
+const GOLD = ["#ffe08a", "#ffd35c", "#fff0b8", "#f7c948"];
 
 const DENSITY: Record<ParticleMode, number> = {
   embers: 60, rain: 110, snow: 70, dust: 45, bubbles: 40, sparks: 55,
+  ash: 55, petals: 34, pollen: 42,
 };
 
 export const KineticParticles = forwardRef<ParticleHandle, {
@@ -160,7 +171,7 @@ export const KineticParticles = forwardRef<ParticleHandle, {
           Object.assign(p, spawn(m, palRef.current, Math.random() * w, edgeY(m, h), { fresh: true }));
         }
         p.wobble += dt * (1.3 + (p.r % 1));
-        const sway = Math.sin(p.wobble) * (m === "snow" ? 28 : m === "bubbles" ? 22 : 10);
+        const sway = Math.sin(p.wobble) * (m === "petals" ? 36 : m === "snow" ? 28 : m === "bubbles" ? 22 : m === "ash" ? 20 : m === "pollen" ? 16 : 10);
         // riser implosion: everything spirals toward the heart of the stage
         if (pull.current > 0.02) {
           const dx = w / 2 - p.x, dy = h / 2 - p.y;
@@ -223,12 +234,15 @@ function baseVy(m: ParticleMode): number {
     case "dust": return -14;
     case "bubbles": return -70;
     case "sparks": return 0;
+    case "ash": return 40;
+    case "petals": return 34;
+    case "pollen": return -6;
   }
 }
 
 function edgeY(m: ParticleMode, h: number): number {
   // fresh ambient particles enter from the edge they travel away from
-  if (m === "rain" || m === "snow") return -20 + Math.random() * -60;
+  if (m === "rain" || m === "snow" || m === "ash" || m === "petals") return -20 + Math.random() * -60;
   if (m === "embers" || m === "bubbles") return h + 10 + Math.random() * 40;
   return Math.random() * h;
 }
@@ -255,5 +269,14 @@ function spawn(m: ParticleMode, palette: string[] | undefined, x: number, y: num
       return { ...base, r: 2 + Math.random() * 5, a: 0.3 + Math.random() * 0.35, vx: o.vx ?? (Math.random() - 0.5) * 24, vy: o.vy ?? -(45 + Math.random() * 60) };
     case "sparks":
       return { ...base, r: 0.9 + Math.random() * 1.4, a: 0.4 + Math.random() * 0.5, vx: o.vx ?? (Math.random() - 0.5) * 160, vy: o.vy ?? (Math.random() - 0.5) * 90, maxLife: o.life ?? (0.8 + Math.random() * 2.2) };
+    case "ash":
+      // spent, cooling flakes: grey, slow, drifting DOWN (occasionally a warm one)
+      return { ...base, hue: pick(ASH), r: 1 + Math.random() * 2.4, a: 0.3 + Math.random() * 0.4, vx: o.vx ?? (Math.random() - 0.5) * 24, vy: o.vy ?? (28 + Math.random() * 46), maxLife: o.life ?? (6 + Math.random() * 6) };
+    case "petals":
+      // rose petals: big, soft, tumbling down with wide sway
+      return { ...base, hue: pick(PETAL), r: 3 + Math.random() * 3.5, a: 0.5 + Math.random() * 0.4, vx: o.vx ?? (Math.random() - 0.5) * 30, vy: o.vy ?? (24 + Math.random() * 40) };
+    case "pollen":
+      // golden motes suspended in warm air — near-still, faint upward drift
+      return { ...base, hue: pick(GOLD), r: 0.8 + Math.random() * 1.6, a: 0.3 + Math.random() * 0.3, vx: o.vx ?? (Math.random() - 0.5) * 14, vy: o.vy ?? -(4 + Math.random() * 12) };
   }
 }
