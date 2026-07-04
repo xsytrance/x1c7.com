@@ -85,19 +85,19 @@ function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }
           {entry.senses.map((s, i) => (
             <div key={i} className="rounded-2xl border border-white/8 bg-white/[0.02] p-4">
               <div className="mb-3 flex items-center gap-3">
-                <span className="font-mono text-xs uppercase tracking-[0.3em]" style={{ color: s.palette[0] || "var(--theme-primary)" }}>{s.emotion}</span>
+                <span className="font-mono text-xs uppercase tracking-[0.3em]" style={{ color: s.palette?.[0] || "var(--theme-primary)" }}>{s.emotion}</span>
                 <span className="flex gap-1">
-                  {s.palette.slice(0, 5).map((c, j) => (
+                  {(s.palette ?? []).slice(0, 5).map((c, j) => (
                     <span key={j} className="h-3.5 w-3.5 rounded-full ring-1 ring-white/10" style={{ background: c }} title={c} />
                   ))}
                 </span>
               </div>
               <div className="space-y-1.5">
-                <LegoRow kind="weather" modes={s.legos.weather} />
-                <LegoRow kind="surface" modes={s.legos.surface} />
-                <LegoRow kind="veils" modes={s.legos.veils} />
-                <LegoRow kind="text" modes={s.legos.text} />
-                <LegoRow kind="light" modes={s.legos.light} />
+                <LegoRow kind="weather" modes={s.legos?.weather ?? []} />
+                <LegoRow kind="surface" modes={s.legos?.surface ?? []} />
+                <LegoRow kind="veils" modes={s.legos?.veils ?? []} />
+                <LegoRow kind="text" modes={s.legos?.text ?? []} />
+                <LegoRow kind="light" modes={s.legos?.light ?? []} />
               </div>
               {s.images && s.images.length > 0 && (
                 <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
@@ -107,7 +107,7 @@ function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }
                   ))}
                 </div>
               )}
-              {s.imageryPrompts[0] && (
+              {s.imageryPrompts?.[0] && (
                 <p className="mt-3 border-l-2 border-white/10 pl-3 text-sm italic leading-6 text-white/45">“{s.imageryPrompts[0]}”</p>
               )}
             </div>
@@ -148,11 +148,11 @@ export default function LexiconPage() {
   const filtered = useMemo(() => {
     const t = q.trim().toLowerCase();
     if (!t) return entries;
-    return entries.filter((e) => e.word.includes(t) || e.senses.some((s) => s.emotion.toLowerCase().includes(t)));
+    return entries.filter((e) => e.word.includes(t) || e.senses.some((s) => (s.emotion ?? "").toLowerCase().includes(t)));
   }, [entries, q]);
 
   const legoCount = useMemo(() =>
-    entries.reduce((n, e) => n + e.senses.reduce((m, s) => m + Object.values(s.legos).reduce((k, a) => k + a.length, 0), 0), 0), [entries]);
+    entries.reduce((n, e) => n + e.senses.reduce((m, s) => m + Object.values(s.legos ?? {}).reduce((k, a) => k + (a?.length ?? 0), 0), 0), 0), [entries]);
   const imageCount = useMemo(() =>
     entries.reduce((n, e) => n + e.senses.reduce((m, s) => m + (s.images?.length || 0), 0), 0), [entries]);
 
@@ -192,8 +192,8 @@ export default function LexiconPage() {
 
       <div className="mx-auto mt-8 grid max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {filtered.map((e) => {
-          const c = e.senses[0]?.palette[0] || "var(--theme-primary)";
-          const allModes = e.senses.flatMap((s) => [...s.legos.weather, ...s.legos.text]);
+          const c = e.senses[0]?.palette?.[0] || "var(--theme-primary)";
+          const allModes = e.senses.flatMap((s) => [...(s.legos?.weather ?? []), ...(s.legos?.text ?? [])]);
           const preview = Array.from(new Set(allModes)).slice(0, 4);
           const thumb = e.senses.map((s) => s.images?.[0]).find(Boolean);
           return (
