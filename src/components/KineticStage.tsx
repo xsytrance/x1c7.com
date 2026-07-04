@@ -276,7 +276,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => {
         if (!on) return;
-        const imgs = (d?.images as string[]) ?? [];
+        // images entries may be plain URLs (old) or {url} objects (new).
+        const raw = (d?.images ?? []) as (string | { url?: string })[];
+        const imgs = raw.map((x) => (typeof x === "string" ? x : x?.url)).filter(Boolean) as string[];
         // Anchor the guided star to the album-art event horizon.
         setGuided(imgs.length ? (eventHorizon ? [eventHorizon, ...imgs] : imgs) : null);
       })
