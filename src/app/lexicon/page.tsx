@@ -5,18 +5,22 @@
 // little sub-planet: tap it and its senses bloom open — the vibes, palettes,
 // imagery, and effect "legos" it can wear, plus which songs it came from.
 //
-// This is the shelf. The dream loop (scripts/lexicon/dream.mjs) keeps stocking
-// it while nobody's looking; one day a creator picks from here instead of
-// calling an LLM. It's read straight from the generated src/data/lexicon.json.
+// This is the shelf. The nightly pipeline keeps stocking it — words, legos, and
+// real generated ART per word — while nobody's looking; one day a creator picks
+// from here instead of calling an LLM. Renders the bundled shelf instantly, then
+// upgrades to the LIVE hosted one on R2 so it always shows the latest.
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import type { Lexicon, WordEntry } from "@/lib/lexicon/types";
+import { loadLexicon } from "@/lib/lexicon/lookup";
 import lexiconData from "@/data/lexicon.json";
 
-const LEX = lexiconData as unknown as Lexicon;
+/* eslint-disable @next/next/no-img-element */
+
+const BUNDLED = lexiconData as unknown as Lexicon;
 
 // A glyph for every lego, so the shelf reads at a glance.
 const GLYPH: Record<string, string> = {
@@ -95,6 +99,14 @@ function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }
                 <LegoRow kind="text" modes={s.legos.text} />
                 <LegoRow kind="light" modes={s.legos.light} />
               </div>
+              {s.images && s.images.length > 0 && (
+                <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+                  {s.images.map((u, j) => (
+                    <img key={j} src={u} alt="" loading="lazy"
+                      className="h-24 w-32 shrink-0 rounded-lg object-cover ring-1 ring-white/10" />
+                  ))}
+                </div>
+              )}
               {s.imageryPrompts[0] && (
                 <p className="mt-3 border-l-2 border-white/10 pl-3 text-sm italic leading-6 text-white/45">“{s.imageryPrompts[0]}”</p>
               )}
@@ -113,8 +125,13 @@ function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }
 export default function LexiconPage() {
   const [q, setQ] = useState("");
   const [selected, setSelected] = useState<string | null>(null);
+  // Start with the bundled shelf (instant), then upgrade to the LIVE hosted one
+  // on R2 — so the browser always shows the latest words + generated art as the
+  // nightly pipeline grows it, no redeploy.
+  const [lex, setLex] = useState<Lexicon>(BUNDLED);
+  useEffect(() => { loadLexicon().then(setLex).catch(() => {}); }, []);
 
-  const entries = useMemo(() => Object.values(LEX.entries).sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word)), []);
+  const entries = useMemo(() => Object.values(lex.entries).sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word)), [lex]);
   const filtered = useMemo(() => {
     const t = q.trim().toLowerCase();
     if (!t) return entries;
@@ -123,15 +140,17 @@ export default function LexiconPage() {
 
   const legoCount = useMemo(() =>
     entries.reduce((n, e) => n + e.senses.reduce((m, s) => m + Object.values(s.legos).reduce((k, a) => k + a.length, 0), 0), 0), [entries]);
+  const imageCount = useMemo(() =>
+    entries.reduce((n, e) => n + e.senses.reduce((m, s) => m + (s.images?.length || 0), 0), 0), [entries]);
 
-  const sel = selected ? LEX.entries[selected] : null;
+  const sel = selected ? lex.entries[selected] : null;
 
   return (
     <main className="relative min-h-screen bg-void px-4 py-10 sm:px-8">
       <BackToHub />
 
       <header className="mx-auto mt-6 max-w-5xl text-center">
-        <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-white/40">Galaxy · {LEX.galaxy}</p>
+        <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-white/40">Galaxy · {lex.galaxy}</p>
         <h1 className="mt-3 font-display text-5xl font-black uppercase tracking-tight text-white sm:text-7xl glow-text" style={{ color: "var(--theme-primary)" }}>
           The Lexicon
         </h1>
@@ -141,9 +160,9 @@ export default function LexiconPage() {
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-wider text-white/45">
           <span><b className="text-white/80">{entries.length}</b> words</span>
-          <span><b className="text-white/80">{LEX.stats?.senses ?? 0}</b> senses</span>
+          <span><b className="text-white/80">{lex.stats?.senses ?? 0}</b> senses</span>
           <span><b className="text-white/80">{legoCount}</b> legos</span>
-          <span><b className="text-white/80">{LEX.stats?.images ?? 0}</b> images</span>
+          <span><b className="text-white/80">{imageCount}</b> images</span>
         </div>
       </header>
 
@@ -161,6 +180,7 @@ export default function LexiconPage() {
           const c = e.senses[0]?.palette[0] || "var(--theme-primary)";
           const allModes = e.senses.flatMap((s) => [...s.legos.weather, ...s.legos.text]);
           const preview = Array.from(new Set(allModes)).slice(0, 4);
+          const thumb = e.senses.map((s) => s.images?.[0]).find(Boolean);
           return (
             <button
               key={e.word}
@@ -168,13 +188,18 @@ export default function LexiconPage() {
               className="group relative flex aspect-square flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/10 p-3 text-center transition hover:scale-[1.03] hover:border-white/25"
               style={{ background: `radial-gradient(circle at 50% 32%, color-mix(in srgb, ${c} 34%, transparent), transparent 68%), #0a0714` }}
             >
-              <span className="font-display text-lg font-black uppercase tracking-tight text-white sm:text-xl">{e.word}</span>
-              <span className="mt-1 font-mono text-[8px] uppercase tracking-[0.2em] text-white/40">{e.senses.length} sense{e.senses.length > 1 ? "s" : ""}</span>
-              <span className="mt-2 flex gap-0.5 text-sm opacity-80 transition group-hover:opacity-100">
+              {thumb && (
+                <img src={thumb} alt="" loading="lazy"
+                  className="absolute inset-0 h-full w-full object-cover opacity-45 transition duration-500 group-hover:opacity-65 group-hover:scale-105" />
+              )}
+              <span className="pointer-events-none absolute inset-0" style={{ background: "linear-gradient(to top, rgba(10,7,20,0.92), rgba(10,7,20,0.35) 55%, rgba(10,7,20,0.15))" }} />
+              <span className="relative font-display text-lg font-black uppercase tracking-tight text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)] sm:text-xl">{e.word}</span>
+              <span className="relative mt-1 font-mono text-[8px] uppercase tracking-[0.2em] text-white/55">{e.senses.length} sense{e.senses.length > 1 ? "s" : ""}</span>
+              <span className="relative mt-2 flex gap-0.5 text-sm opacity-85 transition group-hover:opacity-100">
                 {preview.map((m, j) => <span key={j} aria-hidden>{glyph(m)}</span>)}
               </span>
               {e.freq > 1 && (
-                <span className="absolute right-2 top-2 rounded-full bg-white/10 px-1.5 py-0.5 font-mono text-[8px] text-white/60">×{e.freq}</span>
+                <span className="absolute right-2 top-2 z-10 rounded-full bg-black/40 px-1.5 py-0.5 font-mono text-[8px] text-white/70 backdrop-blur-sm">×{e.freq}</span>
               )}
             </button>
           );

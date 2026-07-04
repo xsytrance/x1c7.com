@@ -18,7 +18,10 @@
             "A vibrant circus tent with a big top illuminated by colorful lights and filled with the sounds of laughter and music — extreme close-up, shallow depth of field",
             "circus, excitement mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/circus/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/circus/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -64,7 +67,10 @@
             "An old server room with rows of blinking green lights, empty except for one person sitting alone at a desk — extreme close-up, shallow depth of field",
             "server, isolation mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/server/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/server/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -118,7 +124,10 @@
             "A digital avatar speaking in a soft, slightly distorted voice from behind a screen, its eyes glowing faintly — extreme close-up, shallow depth of field",
             "ai, uncanny mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ai/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ai/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -162,7 +171,10 @@
             "An expressive ringmaster wearing a velvet top hat and leading the show with dramatic flair — extreme close-up, shallow depth of field",
             "ringmaster, authority mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ringmaster/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ringmaster/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -206,7 +218,10 @@
             "A swirling mass of digital clouds, each one containing secrets and possibilities — extreme close-up, shallow depth of field",
             "clouds, mystery mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -250,7 +265,10 @@
             "A series of interlocking gears and levers that control the movements of a vast machine — extreme close-up, shallow depth of field",
             "protocol, control mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/protocol/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/protocol/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -294,7 +312,10 @@
             "An old-fashioned computer terminal with a glowing screen displaying binary code, reminiscent of early internet days — extreme close-up, shallow depth of field",
             "bit, nostalgia mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bit/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bit/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -342,7 +363,10 @@
             "A programmer typing on a keyboard with the glow of their laptop reflecting off a glass of cocktail — extreme close-up, shallow depth of field",
             "code, determination mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -393,7 +417,10 @@
             "Summer night at a rooftop bar, overlooking the city lights while sipping a cool drink — extreme close-up, shallow depth of field",
             "cocktails, relaxation mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cocktails/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cocktails/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -443,7 +470,10 @@
             "A person lying on a beach chair under a starry sky, with a laptop open and glowing — extreme close-up, shallow depth of field",
             "dreams, hope mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -477,7 +507,10 @@
             "A person lying in bed with stars and distant planets floating above them — extreme close-up, shallow depth of field",
             "dreams, imaginative mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -524,7 +557,10 @@
             "Abstract digital representation of a future cityscape blending with natural elements like palm trees — extreme close-up, shallow depth of field",
             "future, excitement mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -573,7 +609,10 @@
             "A person climbing a ladder made of code blocks, reaching towards the sky — extreme close-up, shallow depth of field",
             "growth, ambition mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/growth/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/growth/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -618,7 +657,10 @@
             "Sunset over a beach, with waves crashing and cocktails in hand — extreme close-up, shallow depth of field",
             "summer, joy mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -656,7 +698,10 @@
             "Beach-goers enjoying the warm sun and cool drinks on a sandy beach — extreme close-up, shallow depth of field",
             "summer, optimism mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -707,7 +752,10 @@
             "A person standing atop a mountain peak under a clear blue sky, holding a trophy made of code — extreme close-up, shallow depth of field",
             "success, triumph mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/success/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/success/s0-2.webp"
+          ],
           "palette": [
             "#FFC300",
             "#00B4D8",
@@ -756,7 +804,10 @@
             "A dark room with a single candle flickering in the corner — extreme close-up, shallow depth of field",
             "silence, peaceful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -803,7 +854,10 @@
             "A cluttered desktop covered in open windows and notifications — extreme close-up, shallow depth of field",
             "noise, chaotic mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/noise/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/noise/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -849,7 +903,10 @@
             "Dark clouds rolling over a cityscape, lightning flashing through skyscrapers — extreme close-up, shallow depth of field",
             "storm, fearful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -898,7 +955,10 @@
             "An orderly stack of books neatly lined up on a shelf — extreme close-up, shallow depth of field",
             "order, hopeful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/order/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/order/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -944,7 +1004,10 @@
             "A jumbled mess of wires and cables tangled together — extreme close-up, shallow depth of field",
             "chaos, frustrated mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -990,7 +1053,10 @@
             "A ceasefire flag being raised amidst ruins — extreme close-up, shallow depth of field",
             "ceasefire, relieved mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -1036,7 +1102,10 @@
             "A lone figure walking through a storm towards the horizon — extreme close-up, shallow depth of field",
             "walking, determined mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#435EAB",
@@ -1080,7 +1149,10 @@
             "A person stepping out of their comfort zone into a bright, sunny day — extreme close-up, shallow depth of field",
             "different, transformation mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1124,7 +1196,10 @@
             "A construction site with workers building a futuristic skyscraper under blue skies — extreme close-up, shallow depth of field",
             "build, determination mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1155,7 +1230,10 @@
             "Stacks of coins growing steadily in height, each coin representing a text message sent and received — extreme close-up, shallow depth of field",
             "build, determined mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s1-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -1200,7 +1278,10 @@
             "Someone lying in bed, looking up at the night sky filled with stars and shooting stars — extreme close-up, shallow depth of field",
             "dream, hope mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1249,7 +1330,10 @@
             "A person holding a lantern that illuminates a dark forest path — extreme close-up, shallow depth of field",
             "light, inspiration mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1298,7 +1382,10 @@
             "Someone standing by a clock, looking impatiently at the passing seconds — extreme close-up, shallow depth of field",
             "waiting, frustration mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1342,7 +1429,10 @@
             "An athlete pushing themselves to run faster on a track — extreme close-up, shallow depth of field",
             "motivation, empowerment mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#87CEEB",
@@ -1386,7 +1476,10 @@
             "A neon-lit cityscape with a couple racing hand-in-hand through the streets — extreme close-up, shallow depth of field",
             "somebody, hope mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1421,7 +1514,10 @@
             "A neon sign flashing 'Hook-Up' with arrows pointing towards a door — extreme close-up, shallow depth of field",
             "somebody, playful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s1-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -1466,7 +1562,10 @@
             "A video game character speeding up to break the speed limit on a digital racetrack — extreme close-up, shallow depth of field",
             "fast, adrenaline mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1513,7 +1612,10 @@
             "A futuristic mission control room with glowing screens and countdown timers — extreme close-up, shallow depth of field",
             "mission, determination mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mission/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mission/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1559,7 +1661,10 @@
             "Two silhouettes running side-by-side in silhouette against a sunrise horizon — extreme close-up, shallow depth of field",
             "keep, challenge mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1603,7 +1708,10 @@
             "An upward spiral of interconnected rings, each representing a new level or achievement — extreme close-up, shallow depth of field",
             "level, progression mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1647,7 +1755,10 @@
             "A couple collecting golden power-ups on a moonlit beach under a radiant full moon — extreme close-up, shallow depth of field",
             "golden, romance mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/golden/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/golden/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1695,7 +1806,10 @@
             "Two figures leaping high into an endless starry night, reaching out to touch the stars — extreme close-up, shallow depth of field",
             "sky, ambition mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#6495ED",
@@ -1741,7 +1855,10 @@
             "A confident male rapper standing tall on a crowded dance floor at night — extreme close-up, shallow depth of field",
             "ganga, confidence mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ganga/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ganga/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -1785,7 +1902,10 @@
             "Frosty breath in the cold air, a small group of friends huddled together for warmth — extreme close-up, shallow depth of field",
             "frio, resilience mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frio/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frio/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -1833,7 +1953,10 @@
             "Blood droplets on a dark street, symbolizing deep bonds and loyalty — extreme close-up, shallow depth of field",
             "sangre, connection mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -1881,7 +2004,10 @@
             "A vibrant, pulsating neon light in the city at night, reflecting energy and life — extreme close-up, shallow depth of field",
             "vibra, vitality mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -1929,7 +2055,10 @@
             "A scarred hand holding a heart glowing with warmth and resilience — extreme close-up, shallow depth of field",
             "cicatrices, strength mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -1973,7 +2102,10 @@
             "People of all ages and backgrounds linking hands in a circle, forming an unbreakable chain — extreme close-up, shallow depth of field",
             "conexion, unity mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/conexion/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/conexion/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -2017,7 +2149,10 @@
             "A vibrant street scene at night with colorful lights, murals, and people dancing — extreme close-up, shallow depth of field",
             "barrio, pride mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-2.webp"
+          ],
           "palette": [
             "#1A2966",
             "#F7CAC9",
@@ -2063,7 +2198,10 @@
             "A dimly lit room with shadows creeping across the walls as a lone figure sits in the corner — extreme close-up, shallow depth of field",
             "night, anxious mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2111,7 +2249,10 @@
             "A disembodied voice whispering through static, slowly becoming clearer and more menacing — extreme close-up, shallow depth of field",
             "voice, haunting mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2144,7 +2285,10 @@
             "A gentle, warm light shining from an old-fashioned telephone booth with soft music playing inside — extreme close-up, shallow depth of field",
             "voice, comforted mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -2193,7 +2337,10 @@
             "A hand reaching out to touch a mirror but recoiling at the sight of their own reflection — extreme close-up, shallow depth of field",
             "lie, betrayed mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lie/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lie/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2237,7 +2384,10 @@
             "Sharp paper edges slicing through skin, leaving behind thin red lines and stinging pain — extreme close-up, shallow depth of field",
             "cut, tormented mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2281,7 +2431,10 @@
             "A person standing in a dark alley looking around nervously as shadows seem to move of their own accord — extreme close-up, shallow depth of field",
             "paranoia, terrified mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoia/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoia/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2327,7 +2480,10 @@
             "An audio engineer meticulously cutting and rearranging sound clips, creating something both new and unsettling — extreme close-up, shallow depth of field",
             "remix, creative yet destructive mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/remix/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/remix/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2371,7 +2527,10 @@
             "A person's reflection in a puddle, staring back with an expression of fear and suspicion — extreme close-up, shallow depth of field",
             "watching, haunting mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/watching/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/watching/s0-2.webp"
+          ],
           "palette": [
             "#2E3192",
             "#870606",
@@ -2417,7 +2576,10 @@
             "A clenched fist raised against a stormy sky — extreme close-up, shallow depth of field",
             "quit, defiant mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quit/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quit/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2465,7 +2627,10 @@
             "Someone lifting a heavy weight above their head — extreme close-up, shallow depth of field",
             "pressure, resilient mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2509,7 +2674,10 @@
             "An athlete sprinting uphill, sweat pouring down their face — extreme close-up, shallow depth of field",
             "pushing, determined mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pushing/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pushing/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2555,7 +2723,10 @@
             "Sculpted arms straining under the weight of a barbell — extreme close-up, shallow depth of field",
             "arms, tense mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/arms/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/arms/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2599,7 +2770,10 @@
             "A runner gasping for breath at the end of a race — extreme close-up, shallow depth of field",
             "lungs, exhausted mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lungs/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lungs/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2647,7 +2821,10 @@
             "A heart symbol pulsing with red light, beating fast and strong — extreme close-up, shallow depth of field",
             "heart, intense mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2681,7 +2858,10 @@
             "Two hearts intertwined, beating as one — extreme close-up, shallow depth of field",
             "heart, devotion mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s1-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -2712,7 +2892,10 @@
             "A glowing heart made from intertwined strings of text messages floating in space — extreme close-up, shallow depth of field",
             "heart, intimate mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -2758,7 +2941,10 @@
             "A person standing atop a mountain with their arms raised in triumph — extreme close-up, shallow depth of field",
             "crown, victorious mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-2.webp"
+          ],
           "palette": [
             "#341F2C",
             "#7A6058",
@@ -2802,7 +2988,10 @@
             "a woman standing alone at night looking out the window, her expression distant and melancholic — extreme close-up, shallow depth of field",
             "extrano, sorrowful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extrano/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extrano/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -2852,7 +3041,10 @@
             "a person breaking a chain with their bare hands, symbolizing emotional liberation — extreme close-up, shallow depth of field",
             "romperme, resilient mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/romperme/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/romperme/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -2896,7 +3088,10 @@
             "a door slamming shut, the handle turning but not opening — extreme close-up, shallow depth of field",
             "vuelve, defiant mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vuelve/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vuelve/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -2942,7 +3137,10 @@
             "an open wound covered in bandages with a single tear rolling down beside it — extreme close-up, shallow depth of field",
             "herida, pained mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -2988,7 +3186,10 @@
             "a woman standing tall, fists clenched, facing an invisible opponent — extreme close-up, shallow depth of field",
             "defiende, empowered mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/defiende/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/defiende/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -3032,7 +3233,10 @@
             "an open hand releasing a bird into the sky, symbolizing freedom from past constraints — extreme close-up, shallow depth of field",
             "suelto, relieved mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suelto/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suelto/s0-2.webp"
+          ],
           "palette": [
             "#2E315A",
             "#9B87C0",
@@ -3076,7 +3280,10 @@
             "A bustling cityscape at dusk with neon lights reflecting off rain-soaked streets — extreme close-up, shallow depth of field",
             "seoul, longing mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -3124,7 +3331,10 @@
             "The sound of a phone buzzing on a nightstand, with the screen glowing softly in the dark — extreme close-up, shallow depth of field",
             "phone, hopeful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -3173,7 +3383,10 @@
             "The world map covered in hearts, connecting every continent together — extreme close-up, shallow depth of field",
             "worldwide, universal mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -3217,7 +3430,10 @@
             "A traveler crossing a border bridge into another country with their luggage and passport — extreme close-up, shallow depth of field",
             "border, determined mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/border/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/border/s0-2.webp"
+          ],
           "palette": [
             "#F5DEB3",
             "#FF69B4",
@@ -3261,7 +3477,10 @@
             "A man confidently walking towards a woman in dim lighting — extreme close-up, shallow depth of field",
             "steady, confident mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s0-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -3305,7 +3524,10 @@
             "Hands clutching tightly, fingers interwoven with tension — extreme close-up, shallow depth of field",
             "fold, intense mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fold/s0-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -3349,7 +3571,10 @@
           "imageryPrompts": [
             "nobody, cautious mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nobody/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nobody/s0-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -3393,7 +3618,10 @@
             "A couple swaying to music in the dark, hips moving together — extreme close-up, shallow depth of field",
             "rhythm, seductive mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s0-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -3439,7 +3667,10 @@
             "An anchor firmly planted on a sandy ocean floor — extreme close-up, shallow depth of field",
             "solid, trustworthy mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s0-2.webp"
+          ],
           "palette": [
             "#4567b7",
             "#f2e3a8",
@@ -3485,7 +3716,10 @@
             "A warm glow surrounding a silhouette of a person smiling at their phone — extreme close-up, shallow depth of field",
             "smile, affirmative mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -3531,7 +3765,10 @@
             "A figure pausing mid-motion, looking down at their phone with thoughtful eyes — extreme close-up, shallow depth of field",
             "pause, reflective mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pause/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pause/s0-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -3575,7 +3812,10 @@
             "Soft moonlight casting shadows on the face of someone sleeping peacefully while clutching a phone — extreme close-up, shallow depth of field",
             "dreaming, hopeful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreaming/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreaming/s0-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -3621,7 +3861,10 @@
             "Two hands reaching across an ocean to grasp each other's fingers through the screen of a phone — extreme close-up, shallow depth of field",
             "hold, tender mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hold/s0-2.webp"
+          ],
           "palette": [
             "#964B00",
             "#5D8AA8",
@@ -3670,7 +3913,10 @@
             "A person carrying heavy burdens under a dimly lit sky — extreme close-up, shallow depth of field",
             "living, sorrowful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/living/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/living/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3716,7 +3962,10 @@
             "Sunlight breaking through dark clouds, warming the earth — extreme close-up, shallow depth of field",
             "strings, hopeful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strings/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strings/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3763,7 +4012,10 @@
             "Deep, rhythmic waves rolling into shore at sunset — extreme close-up, shallow depth of field",
             "bassline, uplifting mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3811,7 +4063,10 @@
             "A quiet beach at night with glowing bottles and a small fire — extreme close-up, shallow depth of field",
             "beach, relaxed mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beach/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beach/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3862,7 +4117,10 @@
             "A person standing on a balance beam, arms outstretched, eyes closed — extreme close-up, shallow depth of field",
             "balance, grateful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/balance/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/balance/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3906,7 +4164,10 @@
             "Healing herbs wrapped in linen bundles under the moonlight — extreme close-up, shallow depth of field",
             "healing, reverent mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/healing/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/healing/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3950,7 +4211,10 @@
             "Golden rays of light breaking through storm clouds — extreme close-up, shallow depth of field",
             "gold, triumphant mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-2.webp"
+          ],
           "palette": [
             "#FFD700",
             "#8B4513",
@@ -3985,7 +4249,10 @@
             "A pocket watch with intricate gears, shining brightly against the dark background of an old steamboat, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "gold, covetous mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4034,7 +4301,10 @@
             "A sharp whistle blowing in a foggy river dock at night, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "whistle, menacing mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4083,7 +4353,10 @@
             "A steamboat with smoke billowing out, navigating through choppy waters under the moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "trouble, dangerous mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trouble/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trouble/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4133,7 +4406,10 @@
             "Two criminals in black-and-white 1920s attire, grinning menacingly while holding gold coins and walking down a dimly lit dock, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "boys, aggressive mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boys/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boys/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4180,7 +4456,10 @@
             "The sound and visual effect of a foghorn echoing in the misty night over a river, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "foghorn, harrowing mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/foghorn/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/foghorn/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4229,7 +4508,10 @@
             "A dimly lit wooden dock with shadowy figures moving quietly under moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "dock, suspenseful mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dock/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dock/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
@@ -4276,7 +4558,10 @@
             "An old steamboat chugging along the river, surrounded by swirling mist and darkness, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
             "riverboat, voyage mood, cinematic, volumetric light, film grain"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-2.webp"
+          ],
           "palette": [
             "#d9d9d9",
             "#8c8c8c",
