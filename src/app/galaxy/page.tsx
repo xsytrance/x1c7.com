@@ -130,6 +130,14 @@ export default function GalaxyPage() {
               + Forge
             </Link>
           )}
+          {isLocal && (
+            <Link href="/studio/feed" title="Feed the Planet — guide a planet's art with your own images" className="rounded-full border border-fuchsia-300/30 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-fuchsia-200/80 transition hover:text-fuchsia-100">
+              ⭑ Feed
+            </Link>
+          )}
+          <Link href="/lexicon" title="The Lexicon — every word a sub-planet of art + effects" className="rounded-full border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
+            📖 Lexicon
+          </Link>
           <Link href="/music" className="rounded-full border border-white/15 px-4 py-2 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
             ← Music
           </Link>

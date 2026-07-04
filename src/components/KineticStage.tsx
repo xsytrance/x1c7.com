@@ -7,15 +7,19 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
-import { useMusicPlayer } from "./MusicPlayerContext";
+import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
-import { KineticParticles, particleModeFor, type ParticleHandle } from "./KineticParticles";
+import { KineticParticles, particleModeFor, type ParticleHandle, type ParticleMode } from "./KineticParticles";
+import { SurfaceEffects } from "./SurfaceEffects";
+import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, type SurfaceMode } from "@/lib/effects/registry";
+import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
+import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
-import type { Track } from "@/data/tracks";
+import type { Track } from "@/lib/engineHost";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
 
@@ -46,10 +50,16 @@ const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 // Cross-song paintings for the words the whole catalog keeps singing.
 // Used as a backdrop fallback when a planet has no painting of its own for a
 // charged or line-final word. Neutral palette; the song's grade tints it.
-const SHARED_BASE = "/planets/_shared";
+const SHARED_BASE = `${PLANET_BASE}/planets/_shared`;
+// Planet art asset URLs are stored relative ("/planets/<slug>/<w>.webp"); the
+// storage reorg moved the files to R2, so prefix the host's PLANET_BASE at
+// render. Already-absolute URLs (R2 shared art, Kinetica blobs) pass through.
+const planetUrl = (u: string) => (u.startsWith("/planets/") ? PLANET_BASE + u : u);
 const SHARED_WORDS = ["night", "love", "world", "time", "heart", "soul", "voice", "dream", "home", "moon", "rain", "city", "sky", "stars", "eyes", "dance", "alone"];
 const SHARED_ALIAS: Record<string, string> = { dreams: "dream", nights: "night", hearts: "heart", skies: "sky", star: "stars", cities: "city", corazón: "heart", noche: "night", luna: "moon", cielo: "sky", mundo: "world", alma: "soul", ciudad: "city", ojos: "eyes", lluvia: "rain", sola: "alone", solo: "alone", bailar: "dance", baila: "dance", amor: "love" };
 function sharedArtFor(word: string): string | null {
+  // Gated on the host: x1c7 ships the shared art library, Kinetica doesn't.
+  if (!HAS_SHARED_ART) return null;
   const w = SHARED_ALIAS[word] ?? word;
   return SHARED_WORDS.includes(w) ? `${SHARED_BASE}/${w}.webp` : null;
 }
@@ -118,10 +128,12 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase" }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
+  /** Pin the weather layer to a specific mode (undefined = auto from the song). */
+  forceParticle?: ParticleMode;
   /** Show version. Each pass is preserved as a "satellite" of the planet;
    * the newest pass is the main show. Pass 1 = the original kinetic cut. */
   pass?: number;
@@ -175,9 +187,64 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     return ranges;
   }, [words, lineStarts]);
 
+  // ── STUTTER RUNS ── when the vocal repeats one word over and over
+  // ("push-push-push", "me me me", "on-on-on"), the engine catches the run so
+  // the stage can pile the word up until it fills the screen (swipe to clear).
+  // A run = >=3 consecutive same tokens, each within 1.4s of the last.
+  const stutterRuns = useMemo(() => {
+    const runs: { id: number; word: string; times: number[]; start: number; end: number; spots: { x: number; y: number; rot: number; s: number }[] }[] = [];
+    let i = 0;
+    while (i < words.length) {
+      const w = clean(words[i].w).toLowerCase();
+      let j = i + 1;
+      while (j < words.length && clean(words[j].w).toLowerCase() === w && words[j].t - words[j - 1].t <= 1.4) j++;
+      const times = words.slice(i, j).map((x) => x.t);
+      if (w.length >= 1 && times.length >= 3) {
+        // Precompute scattered screen spots (a jittered grid, shuffled) so the
+        // pile fills evenly. Deterministic per run — no per-frame randomness.
+        const N = Math.min(26, times.length * 3 + 4);
+        const cols = 6, spots: { x: number; y: number; rot: number; s: number }[] = [];
+        for (let k = 0; k < N; k++) {
+          const seed = ((i + 1) * 2654435761 + k * 40503) >>> 0;
+          const cell = (seed >>> 3) % (cols * 5);
+          const cx = (cell % cols) / (cols - 1); // 0..1
+          const cy = Math.floor(cell / cols) / 4; // 0..1
+          spots.push({
+            x: 8 + cx * 84 + (((seed >>> 7) % 100) / 100 - 0.5) * 12,
+            y: 14 + cy * 66 + (((seed >>> 11) % 100) / 100 - 0.5) * 12,
+            rot: (((seed >>> 13) % 34) - 17),
+            s: 0.85 + ((seed >>> 17) % 100) / 100 * 1.15,
+          });
+        }
+        runs.push({ id: i, word: clean(words[i].w), times, start: times[0], end: times[times.length - 1], spots });
+      }
+      i = j > i + 1 ? j : i + 1;
+    }
+    return runs;
+  }, [words]);
+
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
+  // Art gallery: extra paintings per word, grown nightly by the top-up pipeline
+  // and hosted on R2 as planets/<slug>/gallery.json. The engine cycles through
+  // them so a word never shows the same backdrop twice. Absent/empty = the
+  // engine behaves exactly as before (single keyword art + its twin).
+  const [gallery, setGallery] = useState<Record<string, string[]> | null>(null);
+  const galleryRef = useRef(gallery);
+  galleryRef.current = gallery;
+  const galleryTurn = useRef(new Map<string, number>());
+  // The GRAVITATIONAL FEED: images the owner fed this planet (guided.json on R2)
+  // become its guiding star — they drive the backdrop, with the album art as the
+  // event horizon (the anchor) and the auto gallery as the secondary satellite.
+  // Absent = the engine behaves exactly as before.
+  const [guided, setGuided] = useState<string[] | null>(null);
+  const guidedRef = useRef(guided);
+  guidedRef.current = guided;
+  const guidedTurn = useRef(0);
+  // Album art = the event horizon. Read defensively — the shared engine can't
+  // assume the host's Track carries a cover (Kinetica's doesn't).
+  const eventHorizon = (track as { cover?: string }).cover;
   const [showTitle, setShowTitle] = useState(true);
   const [wave, setWave] = useState(0);
   // Art doubling: every painting has a twin (-2.webp). Each time the same
@@ -190,23 +257,87 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     artPlays.current.set(url, n);
     if (n % 2 === 0) {
       const v = altArt?.[url] ?? (url.startsWith(SHARED_BASE) ? url.replace(/\.webp$/, "-2.webp") : null);
-      if (v) return v;
+      if (v) return planetUrl(v);
     }
-    return url;
+    return planetUrl(url);
   }, [altArt]);
+  // Load the song's hosted art gallery (grown by the top-up pipeline). Graceful:
+  // 404 / offline → null → the engine falls back to single keyword art.
+  useEffect(() => {
+    setGallery(null); setGuided(null);
+    galleryTurn.current.clear(); guidedTurn.current = 0;
+    if (pass < 3 || !PLANET_BASE) return;
+    let on = true;
+    fetch(`${PLANET_BASE}/planets/${track.id}/gallery.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (on) setGallery((d?.art as Record<string, string[]>) ?? null); })
+      .catch(() => {});
+    fetch(`${PLANET_BASE}/planets/${track.id}/guided.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!on) return;
+        // images entries may be plain URLs (old) or {url} objects (new).
+        const raw = (d?.images ?? []) as (string | { url?: string })[];
+        const imgs = raw.map((x) => (typeof x === "string" ? x : x?.url)).filter(Boolean) as string[];
+        // Anchor the guided star to the album-art event horizon.
+        setGuided(imgs.length ? (eventHorizon ? [eventHorizon, ...imgs] : imgs) : null);
+      })
+      .catch(() => {});
+    return () => { on = false; };
+  }, [track.id, eventHorizon, pass]);
+  // Rotate through [base, ...gallery variants] for a word so backdrops vary.
+  const pooledArt = useCallback((w: string, base: string | null): string | null => {
+    // Guided (fed) art is the star — it drives the backdrop; the word's own art
+    // punctuates it every 3rd change (or whenever there's no word art).
+    const star = guidedRef.current;
+    if (star?.length) {
+      const t = guidedTurn.current++;
+      if (!base || t % 3 !== 0) return star[t % star.length];
+    }
+    const extra = galleryRef.current?.[w];
+    if (!extra?.length) return base;
+    const pool = base ? [base, ...extra] : extra;
+    const n = galleryTurn.current.get(w) ?? 0;
+    galleryTurn.current.set(w, n + 1);
+    return pool[n % pool.length];
+  }, []);
   // The weather layer — song-matched particles between backdrop and words.
   const particles = useRef<ParticleHandle>(null);
   const particleMode = useMemo(() => {
+    if (forceParticle) return forceParticle;
     const a = track.planet?.analysis;
     return particleModeFor([
       a?.overallMood, ...(a?.themes ?? []), ...(a?.keywords?.map((k) => k.word) ?? []),
       track.mood, track.genre, track.title,
     ].filter(Boolean).join(" "));
-  }, [track]);
+  }, [track, forceParticle]);
   const palette = useMemo(() => {
     const pal = track.planet?.analysis?.palette;
     return Array.isArray(pal) && pal.length ? pal : [track.color];
   }, [track]);
+  // The surface layer — mud/rust/cracks/vines creeping in, if the song's
+  // vocabulary calls for one (null = clean glass, most songs).
+  const surfaceMode = useMemo(() => {
+    const a = track.planet?.analysis;
+    return surfaceFor([
+      a?.overallMood, ...(a?.themes ?? []), ...(a?.keywords?.map((k) => k.word) ?? []),
+      track.mood, track.title,
+    ].filter(Boolean).join(" "));
+  }, [track]);
+  // Lexicon-first: consult the pre-generated word shelf too. When the song's own
+  // regex finds no surface, the Lexicon's aggregated legos still might — proof of
+  // the "no LLM at render time" path. Loads lazily; degrades to null.
+  const [lex, setLex] = useState<Lexicon | null>(null);
+  useEffect(() => { let on = true; loadLexicon().then((l) => on && setLex(l)).catch(() => {}); return () => { on = false; }; }, []);
+  const lexSurface = useMemo<SurfaceMode | null>(() => {
+    if (!lex) return null;
+    const words = [...(track.planet?.analysis?.keywords?.map((k) => k.word) ?? []), ...(track.title?.split(/\s+/) ?? [])];
+    const agg = aggregateLegos(lex, words);
+    // Only trust a surface the client's registry actually knows how to render —
+    // the hosted shelf may name a mode this build doesn't have yet.
+    return (agg.surface.find((m) => m in SURFACE_SPECS) as SurfaceMode) ?? null;
+  }, [lex, track]);
+  const effectiveSurface = surfaceMode ?? lexSurface;
   // ── STEM SENSES ── measured hearing from the planet's stems.json (if any).
   // Kicks thump the halo, snares ring, hats glint the weather, the bass bends
   // the type, the singer's real energy sizes each word, drum-cuts freeze the
@@ -285,6 +416,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const phys = useRef(new Map<number, { x: number; y: number; vx: number; vy: number; grab: boolean }>());
   const dragRef = useRef<{ key: number; lx: number; ly: number; lt: number } | null>(null);
   const dragMoved = useRef(false);
+
+  // ── WORD PILEUP ── repeated-word chips that stack up and fill the screen on
+  // a stutter run, cleared by swiping a finger across them.
+  const [pile, setPile] = useState<{ id: number; word: string; x: number; y: number; rot: number; s: number; fx: number; fy: number; fr: number }[]>([]);
+  const pileId = useRef(0);
+  const pileRun = useRef(-1);   // id of the run currently piling
+  const pileEmit = useRef(0);   // chips emitted so far this run
+  useEffect(() => { setPile([]); pileRun.current = -1; pileEmit.current = 0; }, [track.id]);
+  // Swipe across the pile to knock the chips away — any chip within the finger's
+  // reach is removed and flings out (its fling vector was set when it landed).
+  const pileSwipe = useCallback((e: React.PointerEvent) => {
+    if (!pile.length) return;
+    const R = window.innerWidth * 0.15;
+    setPile((old) => old.filter((p) => {
+      const px = (p.x / 100) * window.innerWidth, py = (p.y / 100) * window.innerHeight;
+      return Math.hypot(px - e.clientX, py - e.clientY) > R;
+    }));
+  }, [pile.length]);
   // ── BEAT GAME: tap the stage on the beat, build a streak ──
   const beatDefault = mode !== "phrase"; // phrase mode: off by default, available
   const [beatOverride, setBeatOverride] = useState<string | null>(null);
@@ -376,7 +525,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // itself — the longest instrumental gap becomes a wipe, the biggest intensity
   // jump gets a blow (arrive the drop on a breath), the wildest section a shake.
   // Synthesized moments never collide with choreographed ones (±8s buffer).
-  const wipeVeil = ({ embers: "ash", rain: "fog", snow: "frost", bubbles: "steam", sparks: "static", dust: "fog" } as const)[particleMode];
+  const wipeVeil = veilForWeather(particleMode);
   const allMoments = useMemo(() => {
     const out = [...(interactions?.moments ?? [])];
     const free = (t: number, end: number) => !out.some((m) => t < m.end + 8 && end > m.t - 8) && t > 12;
@@ -574,7 +723,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // words don't churn the backdrop mid-line.
         if (i >= 0) {
           const w = clean(words[i].w).toLowerCase();
-          const own = art?.[w];
+          const own = pooledArt(w, art?.[w] ?? null);
           const isFinal = words[i + 1] ? lineStarts.has(Math.round(words[i + 1].t * 100)) : true;
           const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
           if (own) setBgArt(pickArt(own));
@@ -604,6 +753,27 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       // Anchor expiry — it hangs around for ~7s, then dissolves.
       if (anchorAt.current && t - anchorAt.current > 7) { anchorAt.current = 0; setAnchor(null); }
+      // Pileup: while a stutter run plays, stack a chip for each repeat (×3 so
+      // it fills fast). Clears ~2.6s after the last repeat, or on swipe.
+      if (pass >= 3) {
+        const run = stutterRuns.find((r) => t >= r.start - 0.06 && t <= r.end + 2.6);
+        if (run) {
+          if (pileRun.current !== run.id) { if (pileRun.current !== -1) setPile([]); pileRun.current = run.id; pileEmit.current = 0; }
+          const target = Math.min(run.spots.length, run.times.filter((tt) => tt <= t + 0.03).length * 3);
+          if (pileEmit.current < target) {
+            const add: (typeof pile) = [];
+            while (pileEmit.current < target) {
+              const sp = run.spots[pileEmit.current++];
+              // fling vector points outward from centre, so swiped/cleared chips scatter off-screen.
+              add.push({ id: pileId.current++, word: run.word, x: sp.x, y: sp.y, rot: sp.rot, s: sp.s, fx: (sp.x - 50) * 14, fy: (sp.y - 45) * 14, fr: sp.rot * 2 });
+            }
+            setPile((old) => (old.length >= 34 ? old : [...old, ...add].slice(-34)));
+          }
+        } else if (pileRun.current !== -1) {
+          pileRun.current = -1;
+          setPile([]);
+        }
+      }
       // Fling physics: integrate free-flying pile words, bounce off edges.
       const nowP = performance.now();
       phys.current.forEach((pv, k) => {
@@ -745,7 +915,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -911,6 +1081,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         />
       )}
 
+      {/* The surface layer — mud/rust/cracks/vines clinging to the glass and
+          creeping in from the edges. Only for songs whose world calls for it. */}
+      {pass >= 3 && effectiveSurface && (
+        <SurfaceEffects mode={effectiveSurface} intensity={section?.intensity ?? 0.35} scale={phrase ? 0.5 : 1} />
+      )}
+
       {/* Ghost chorus — when the backing vocals swell, the current word's
           echo materializes huge and translucent behind the stage. Opacity is
           the LIVE backing-vocal envelope (CSS var, zero re-renders). */}
@@ -926,6 +1102,45 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           >
             {shown}
           </span>
+        </div>
+      )}
+
+      {/* Word pileup — on a stutter run the repeated word stacks up until it
+          fills the screen; a finger swiped across the pile knocks the chips
+          away. The full-screen catcher only exists while the pile does. */}
+      {pass >= 3 && pile.length > 0 && (
+        <div
+          className="fixed inset-0 z-[7] overflow-hidden"
+          style={{ touchAction: "none" }}
+          onPointerDown={pileSwipe}
+          onPointerMove={(e) => { if (e.buttons || e.pointerType === "touch") pileSwipe(e); }}
+        >
+          <AnimatePresence>
+            {pile.map((p, k) => (
+              <motion.span
+                key={p.id}
+                custom={p}
+                aria-hidden
+                className="pointer-events-none absolute font-display font-black uppercase select-none"
+                style={{
+                  left: `${p.x}%`, top: `${p.y}%`,
+                  color: k % 2 ? "var(--theme-secondary)" : "var(--theme-primary)",
+                  fontSize: `clamp(1.6rem, ${(3 + p.s * 4).toFixed(1)}vw, 9rem)`,
+                  textShadow: "0 0 26px currentColor",
+                  willChange: "transform, opacity",
+                }}
+                initial={{ opacity: 0, scale: 0.15, rotate: p.rot, x: "-50%", y: "-50%" }}
+                animate="in"
+                exit="out"
+                variants={{
+                  in: { opacity: 0.94, scale: p.s, rotate: p.rot, x: "-50%", y: "-50%", transition: { type: "spring", stiffness: 340, damping: 17 } },
+                  out: (c: typeof p) => ({ opacity: 0, scale: p.s * 0.85, rotate: c.rot + c.fr, x: `calc(-50% + ${c.fx}px)`, y: `calc(-50% + ${c.fy}px)`, transition: { duration: 0.55, ease: "easeOut" } }),
+                }}
+              >
+                {p.word}
+              </motion.span>
+            ))}
+          </AnimatePresence>
         </div>
       )}
 
@@ -1885,15 +2100,20 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
         <motion.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onGust : start}
-          className="fixed left-1/2 top-24 z-[35] w-max max-w-[92vw] -translate-x-1/2 rounded-2xl border border-white/25 bg-black/55 px-5 py-3 text-center font-mono text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: [0, 1, 1, 0.75, 1], y: 0, scale: state === "listening" ? [1, 1.06, 1] : 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: state === "listening" ? 1.1 : 1.8, repeat: state === "listening" ? Infinity : 0 }}
+          className="stage-warn-pill fixed left-1/2 top-[15vh] z-[38] flex w-max max-w-[92vw] -translate-x-1/2 flex-col items-center gap-1.5 rounded-[2rem] px-8 py-5 text-center"
+          initial={{ opacity: 0, y: -18, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300, damping: 22 }}
         >
-          {state === "idle" && <>🌬️ {moment.prompt} — tap to ready the mic</>}
-          {state === "listening" && <>🌬️ BLOW NOW — {moment.prompt}</>}
-          {state === "denied" && <>🌬️ {moment.prompt} — tap!</>}
+          <span className="stage-warn text-3xl sm:text-5xl">
+            {state === "listening" ? "🌬️ BLOW NOW!" : "🌬️ BLOW!"}
+          </span>
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/80 sm:text-sm">
+            {state === "idle" && <>{moment.prompt} — tap to ready the mic</>}
+            {state === "listening" && <>{moment.prompt}</>}
+            {state === "denied" && <>{moment.prompt} — tap!</>}
+          </span>
         </motion.button>
       )}
     </AnimatePresence>
@@ -1901,12 +2121,9 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
 }
 
 /* ========== WIPE LAYER ==========
-   A choreographed moment: a themed veil (ash, frost, steam, fog, static)
-   covers the stage and the listener wipes it away with a finger. */
-const WIPE_COLORS: Record<string, [string, string]> = {
-  ash: ["#241f1c", "#443a33"], frost: ["#cfe6f5", "#9cc4e4"], steam: ["#d8d8d8", "#b9b9b9"],
-  fog: ["#a8b2bc", "#87929e"], static: ["#101010", "#2e2e2e"],
-};
+   A choreographed moment: a themed veil (fog, ash, frost, steam, static, mud,
+   dust, smoke — all defined as legos in the effect registry) covers the stage
+   and the listener wipes it away with a finger. */
 function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
@@ -1916,7 +2133,9 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
     const ctx = c.getContext("2d");
     if (!ctx) return;
     c.width = window.innerWidth; c.height = window.innerHeight;
-    const [c0, c1] = WIPE_COLORS[moment.layer] ?? WIPE_COLORS.fog;
+    const spec = VEIL_SPECS[moment.layer as VeilKind] ?? VEIL_SPECS.fog;
+    const [c0, c1] = spec.colors;
+    const grainPx = spec.grain === "static" ? 3 : spec.grain === "blobs" ? 4 : 2;
     ctx.globalAlpha = 0.9;
     const grad = ctx.createLinearGradient(0, 0, 0, c.height);
     grad.addColorStop(0, c0); grad.addColorStop(1, c1);
@@ -1924,7 +2143,7 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
     for (let i = 0; i < 1600; i++) {
       ctx.globalAlpha = 0.04 + (i % 7) * 0.02;
       ctx.fillStyle = i % 2 ? "#ffffff" : "#000000";
-      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, moment.layer === "static" ? 3 : 2, moment.layer === "static" ? 3 : 2);
+      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, grainPx, grainPx);
     }
     ctx.globalAlpha = 1;
     let clearedPx = 0;
@@ -1950,22 +2169,23 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
       {moment && (
         <motion.div
           key={`${moment.layer}${moment.prompt}`}
-          className="fixed inset-x-0 top-0 bottom-[118px] z-[30]"
+          className="fixed inset-0 z-[30]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 1.4 } }}
           transition={{ duration: 1.2 }}
         >
+          {/* Full-screen veil — no more untouched strip at the bottom. */}
           <canvas ref={canvasRef} className="h-full w-full touch-none" />
-          <motion.p
-            className="pointer-events-none absolute left-1/2 top-14 -translate-x-1/2 whitespace-nowrap font-mono text-xs uppercase tracking-[0.4em] text-white"
-            style={{ textShadow: "0 1px 10px rgba(0,0,0,0.9)" }}
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: [0, 1, 1, 0.7, 1], y: 0 }}
-            transition={{ duration: 2.2, delay: 0.6 }}
+          <motion.div
+            className="pointer-events-none absolute inset-x-0 top-[16vh] flex flex-col items-center gap-1.5 px-6"
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
           >
-            ✋ {moment.prompt}
-          </motion.p>
+            <span className="stage-warn text-3xl sm:text-5xl">✋ {moment.prompt}</span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75 sm:text-sm">swipe across the screen to clear it</span>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

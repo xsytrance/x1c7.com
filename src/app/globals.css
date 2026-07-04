@@ -115,6 +115,42 @@ body::after {
   opacity: 0.5;
 }
 
+/* ========== STAGE WARNINGS — big, unmissable interactive cues ==========
+   The "blow into the mic" / "wipe the screen" prompts used to be quiet mono
+   text. Now they flash: a pulsing headline in a glowing pill so nobody misses
+   their cue. Two decoupled animations (headline scale/glow + pill halo) so the
+   framer enter/exit transform never fights the CSS flash. */
+.stage-warn {
+  font-family: var(--font-display), var(--font-mono), sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.02;
+  text-align: center;
+  color: #fff;
+  animation: stage-warn-flash 0.9s ease-in-out infinite;
+  text-shadow: 0 0 18px var(--theme-primary), 0 2px 30px rgba(0, 0, 0, 0.85);
+}
+@keyframes stage-warn-flash {
+  0%, 100% { transform: scale(1); opacity: 0.9; text-shadow: 0 0 16px var(--theme-primary), 0 2px 26px rgba(0, 0, 0, 0.85); }
+  50% { transform: scale(1.09); opacity: 1; text-shadow: 0 0 44px var(--theme-primary), 0 0 74px var(--theme-accent), 0 2px 30px rgba(0, 0, 0, 0.9); }
+}
+.stage-warn-pill {
+  border: 2px solid color-mix(in srgb, var(--theme-primary) 80%, white);
+  background: color-mix(in srgb, var(--theme-primary) 15%, rgba(5, 3, 11, 0.5));
+  box-shadow: 0 0 30px color-mix(in srgb, var(--theme-primary) 45%, transparent), inset 0 0 24px color-mix(in srgb, var(--theme-primary) 20%, transparent);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: stage-warn-pulse 0.9s ease-in-out infinite;
+}
+@keyframes stage-warn-pulse {
+  0%, 100% { box-shadow: 0 0 22px color-mix(in srgb, var(--theme-primary) 35%, transparent), inset 0 0 18px color-mix(in srgb, var(--theme-primary) 16%, transparent); border-color: color-mix(in srgb, var(--theme-primary) 60%, white); }
+  50% { box-shadow: 0 0 64px color-mix(in srgb, var(--theme-primary) 72%, transparent), inset 0 0 30px color-mix(in srgb, var(--theme-primary) 30%, transparent); border-color: #fff; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-warn, .stage-warn-pill { animation: none; }
+}
+
 /* Cinematic lyrics takeover */
 body.cinematic-on { overflow: hidden; }
 .cine-line {

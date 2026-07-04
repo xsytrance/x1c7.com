@@ -1,0 +1,4605 @@
+{
+  "version": 1,
+  "galaxy": "xsytrance-canon",
+  "generatedAt": "2026-07-04T15:13:04.847Z",
+  "entries": {
+    "circus": {
+      "word": "circus",
+      "forms": [
+        "circus"
+      ],
+      "senses": [
+        {
+          "gloss": "Excitement",
+          "pos": "other",
+          "emotion": "Excitement",
+          "imageryPrompts": [
+            "A vibrant circus tent with a big top illuminated by colorful lights and filled with the sounds of laughter and music",
+            "A vibrant circus tent with a big top illuminated by colorful lights and filled with the sounds of laughter and music — extreme close-up, shallow depth of field",
+            "circus, excitement mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/circus/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/circus/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "server": {
+      "word": "server",
+      "forms": [
+        "server"
+      ],
+      "senses": [
+        {
+          "gloss": "Isolation",
+          "pos": "other",
+          "emotion": "Isolation",
+          "imageryPrompts": [
+            "An old server room with rows of blinking green lights, empty except for one person sitting alone at a desk",
+            "An old server room with rows of blinking green lights, empty except for one person sitting alone at a desk — extreme close-up, shallow depth of field",
+            "server, isolation mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/server/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/server/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "dust",
+              "snow"
+            ],
+            "surface": [
+              "moss"
+            ],
+            "veils": [
+              "static",
+              "dust",
+              "frost"
+            ],
+            "text": [
+              "freeze"
+            ],
+            "light": [
+              "godrays",
+              "flicker",
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "ai": {
+      "word": "ai",
+      "forms": [
+        "AI"
+      ],
+      "senses": [
+        {
+          "gloss": "Uncanny",
+          "pos": "other",
+          "emotion": "Uncanny",
+          "imageryPrompts": [
+            "A digital avatar speaking in a soft, slightly distorted voice from behind a screen, its eyes glowing faintly",
+            "A digital avatar speaking in a soft, slightly distorted voice from behind a screen, its eyes glowing faintly — extreme close-up, shallow depth of field",
+            "ai, uncanny mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ai/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ai/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "ringmaster": {
+      "word": "ringmaster",
+      "forms": [
+        "ringmaster"
+      ],
+      "senses": [
+        {
+          "gloss": "Authority",
+          "pos": "other",
+          "emotion": "Authority",
+          "imageryPrompts": [
+            "An expressive ringmaster wearing a velvet top hat and leading the show with dramatic flair",
+            "An expressive ringmaster wearing a velvet top hat and leading the show with dramatic flair — extreme close-up, shallow depth of field",
+            "ringmaster, authority mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ringmaster/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ringmaster/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "clouds": {
+      "word": "clouds",
+      "forms": [
+        "clouds"
+      ],
+      "senses": [
+        {
+          "gloss": "Mystery",
+          "pos": "other",
+          "emotion": "Mystery",
+          "imageryPrompts": [
+            "A swirling mass of digital clouds, each one containing secrets and possibilities",
+            "A swirling mass of digital clouds, each one containing secrets and possibilities — extreme close-up, shallow depth of field",
+            "clouds, mystery mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "protocol": {
+      "word": "protocol",
+      "forms": [
+        "protocol"
+      ],
+      "senses": [
+        {
+          "gloss": "Control",
+          "pos": "other",
+          "emotion": "Control",
+          "imageryPrompts": [
+            "A series of interlocking gears and levers that control the movements of a vast machine",
+            "A series of interlocking gears and levers that control the movements of a vast machine — extreme close-up, shallow depth of field",
+            "protocol, control mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/protocol/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/protocol/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "bit": {
+      "word": "bit",
+      "forms": [
+        "bit"
+      ],
+      "senses": [
+        {
+          "gloss": "Nostalgia",
+          "pos": "other",
+          "emotion": "Nostalgia",
+          "imageryPrompts": [
+            "An old-fashioned computer terminal with a glowing screen displaying binary code, reminiscent of early internet days",
+            "An old-fashioned computer terminal with a glowing screen displaying binary code, reminiscent of early internet days — extreme close-up, shallow depth of field",
+            "bit, nostalgia mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bit/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bit/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#2E8B57",
+            "#F08080"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "static",
+              "dust"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "bt"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "code": {
+      "word": "code",
+      "forms": [
+        "code"
+      ],
+      "senses": [
+        {
+          "gloss": "Determination",
+          "pos": "other",
+          "emotion": "Determination",
+          "imageryPrompts": [
+            "A programmer typing on a keyboard with the glow of their laptop reflecting off a glass of cocktail",
+            "A programmer typing on a keyboard with the glow of their laptop reflecting off a glass of cocktail — extreme close-up, shallow depth of field",
+            "code, determination mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "sparks"
+            ],
+            "surface": [
+              "cracks"
+            ],
+            "veils": [
+              "steam",
+              "static"
+            ],
+            "text": [
+              "shatter",
+              "glitch"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cc"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "cocktails": {
+      "word": "cocktails",
+      "forms": [
+        "cocktails"
+      ],
+      "senses": [
+        {
+          "gloss": "Relaxation",
+          "pos": "other",
+          "emotion": "Relaxation",
+          "imageryPrompts": [
+            "Summer night at a rooftop bar, overlooking the city lights while sipping a cool drink",
+            "Summer night at a rooftop bar, overlooking the city lights while sipping a cool drink — extreme close-up, shallow depth of field",
+            "cocktails, relaxation mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cocktails/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cocktails/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "pollen",
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "steam",
+              "dust"
+            ],
+            "text": [
+              "melt",
+              "dissolve"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cc"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "dreams": {
+      "word": "dreams",
+      "forms": [
+        "dreams"
+      ],
+      "senses": [
+        {
+          "gloss": "Hope",
+          "pos": "other",
+          "emotion": "Hope",
+          "imageryPrompts": [
+            "A person lying on a beach chair under a starry sky, with a laptop open and glowing",
+            "A person lying on a beach chair under a starry sky, with a laptop open and glowing — extreme close-up, shallow depth of field",
+            "dreams, hope mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays",
+              "flare"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Imaginative",
+          "pos": "other",
+          "emotion": "Imaginative",
+          "imageryPrompts": [
+            "A person lying in bed with stars and distant planets floating above them",
+            "A person lying in bed with stars and distant planets floating above them — extreme close-up, shallow depth of field",
+            "dreams, imaginative mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "cc",
+        "seoul"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "future": {
+      "word": "future",
+      "forms": [
+        "future"
+      ],
+      "senses": [
+        {
+          "gloss": "Excitement",
+          "pos": "other",
+          "emotion": "Excitement",
+          "imageryPrompts": [
+            "Abstract digital representation of a future cityscape blending with natural elements like palm trees",
+            "Abstract digital representation of a future cityscape blending with natural elements like palm trees — extreme close-up, shallow depth of field",
+            "future, excitement mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "static",
+              "dust"
+            ],
+            "text": [
+              "glitch",
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cc"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "growth": {
+      "word": "growth",
+      "forms": [
+        "growth"
+      ],
+      "senses": [
+        {
+          "gloss": "Ambition",
+          "pos": "other",
+          "emotion": "Ambition",
+          "imageryPrompts": [
+            "A person climbing a ladder made of code blocks, reaching towards the sky",
+            "A person climbing a ladder made of code blocks, reaching towards the sky — extreme close-up, shallow depth of field",
+            "growth, ambition mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/growth/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/growth/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "bloom",
+              "glitch"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cc"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "summer": {
+      "word": "summer",
+      "forms": [
+        "summer"
+      ],
+      "senses": [
+        {
+          "gloss": "Joy",
+          "pos": "other",
+          "emotion": "Joy",
+          "imageryPrompts": [
+            "Sunset over a beach, with waves crashing and cocktails in hand",
+            "Sunset over a beach, with waves crashing and cocktails in hand — extreme close-up, shallow depth of field",
+            "summer, joy mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "bubbles",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "steam",
+              "dust"
+            ],
+            "text": [
+              "bloom",
+              "melt"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Optimism",
+          "pos": "other",
+          "emotion": "Optimism",
+          "imageryPrompts": [
+            "Beach-goers enjoying the warm sun and cool drinks on a sandy beach",
+            "Beach-goers enjoying the warm sun and cool drinks on a sandy beach — extreme close-up, shallow depth of field",
+            "summer, optimism mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "pollen"
+            ],
+            "surface": [
+              "sand"
+            ],
+            "veils": [
+              "steam",
+              "dust"
+            ],
+            "text": [
+              "melt"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "cc",
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "success": {
+      "word": "success",
+      "forms": [
+        "success"
+      ],
+      "senses": [
+        {
+          "gloss": "Triumph",
+          "pos": "other",
+          "emotion": "Triumph",
+          "imageryPrompts": [
+            "A person standing atop a mountain peak under a clear blue sky, holding a trophy made of code",
+            "A person standing atop a mountain peak under a clear blue sky, holding a trophy made of code — extreme close-up, shallow depth of field",
+            "success, triumph mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/success/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/success/s0-2.webp"
+          ],
+          "palette": [
+            "#FFC300",
+            "#00B4D8",
+            "#FFFFFF",
+            "#E67E22"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "static",
+              "dust"
+            ],
+            "text": [
+              "glitch",
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cc"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "silence": {
+      "word": "silence",
+      "forms": [
+        "silence"
+      ],
+      "senses": [
+        {
+          "gloss": "peaceful",
+          "pos": "other",
+          "emotion": "peaceful",
+          "imageryPrompts": [
+            "A dark room with a single candle flickering in the corner",
+            "A dark room with a single candle flickering in the corner — extreme close-up, shallow depth of field",
+            "silence, peaceful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout",
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "noise": {
+      "word": "noise",
+      "forms": [
+        "noise"
+      ],
+      "senses": [
+        {
+          "gloss": "chaotic",
+          "pos": "other",
+          "emotion": "chaotic",
+          "imageryPrompts": [
+            "A cluttered desktop covered in open windows and notifications",
+            "A cluttered desktop covered in open windows and notifications — extreme close-up, shallow depth of field",
+            "noise, chaotic mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/noise/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/noise/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "condensation"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "storm": {
+      "word": "storm",
+      "forms": [
+        "storm"
+      ],
+      "senses": [
+        {
+          "gloss": "fearful",
+          "pos": "other",
+          "emotion": "fearful",
+          "imageryPrompts": [
+            "Dark clouds rolling over a cityscape, lightning flashing through skyscrapers",
+            "Dark clouds rolling over a cityscape, lightning flashing through skyscrapers — extreme close-up, shallow depth of field",
+            "storm, fearful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": [
+              "blackout",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "order": {
+      "word": "order",
+      "forms": [
+        "order"
+      ],
+      "senses": [
+        {
+          "gloss": "hopeful",
+          "pos": "other",
+          "emotion": "hopeful",
+          "imageryPrompts": [
+            "An orderly stack of books neatly lined up on a shelf",
+            "An orderly stack of books neatly lined up on a shelf — extreme close-up, shallow depth of field",
+            "order, hopeful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/order/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/order/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "chaos": {
+      "word": "chaos",
+      "forms": [
+        "chaos"
+      ],
+      "senses": [
+        {
+          "gloss": "frustrated",
+          "pos": "other",
+          "emotion": "frustrated",
+          "imageryPrompts": [
+            "A jumbled mess of wires and cables tangled together",
+            "A jumbled mess of wires and cables tangled together — extreme close-up, shallow depth of field",
+            "chaos, frustrated mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "vines"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "ceasefire": {
+      "word": "ceasefire",
+      "forms": [
+        "ceasefire"
+      ],
+      "senses": [
+        {
+          "gloss": "relieved",
+          "pos": "other",
+          "emotion": "relieved",
+          "imageryPrompts": [
+            "A ceasefire flag being raised amidst ruins",
+            "A ceasefire flag being raised amidst ruins — extreme close-up, shallow depth of field",
+            "ceasefire, relieved mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "ash"
+            ],
+            "surface": [
+              "rust"
+            ],
+            "veils": [
+              "ash"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "walking": {
+      "word": "walking",
+      "forms": [
+        "walking"
+      ],
+      "senses": [
+        {
+          "gloss": "determined",
+          "pos": "other",
+          "emotion": "determined",
+          "imageryPrompts": [
+            "A lone figure walking through a storm towards the horizon",
+            "A lone figure walking through a storm towards the horizon — extreme close-up, shallow depth of field",
+            "walking, determined mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#435EAB",
+            "#7C4DFF",
+            "#F8BB00"
+          ],
+          "legos": {
+            "weather": [
+              "rain"
+            ],
+            "surface": [],
+            "veils": [
+              "fog"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "cs"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "different": {
+      "word": "different",
+      "forms": [
+        "different"
+      ],
+      "senses": [
+        {
+          "gloss": "Transformation",
+          "pos": "other",
+          "emotion": "Transformation",
+          "imageryPrompts": [
+            "A person stepping out of their comfort zone into a bright, sunny day",
+            "A person stepping out of their comfort zone into a bright, sunny day — extreme close-up, shallow depth of field",
+            "different, transformation mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "build": {
+      "word": "build",
+      "forms": [
+        "build"
+      ],
+      "senses": [
+        {
+          "gloss": "Determination",
+          "pos": "other",
+          "emotion": "Determination",
+          "imageryPrompts": [
+            "A construction site with workers building a futuristic skyscraper under blue skies",
+            "A construction site with workers building a futuristic skyscraper under blue skies — extreme close-up, shallow depth of field",
+            "build, determination mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Determined",
+          "pos": "other",
+          "emotion": "Determined",
+          "imageryPrompts": [
+            "Stacks of coins growing steadily in height, each coin representing a text message sent and received",
+            "Stacks of coins growing steadily in height, each coin representing a text message sent and received — extreme close-up, shallow depth of field",
+            "build, determined mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s1-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "dts",
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "dream": {
+      "word": "dream",
+      "forms": [
+        "dream"
+      ],
+      "senses": [
+        {
+          "gloss": "Hope",
+          "pos": "other",
+          "emotion": "Hope",
+          "imageryPrompts": [
+            "Someone lying in bed, looking up at the night sky filled with stars and shooting stars",
+            "Someone lying in bed, looking up at the night sky filled with stars and shooting stars — extreme close-up, shallow depth of field",
+            "dream, hope mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "steam",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays",
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "light": {
+      "word": "light",
+      "forms": [
+        "light"
+      ],
+      "senses": [
+        {
+          "gloss": "Inspiration",
+          "pos": "other",
+          "emotion": "Inspiration",
+          "imageryPrompts": [
+            "A person holding a lantern that illuminates a dark forest path",
+            "A person holding a lantern that illuminates a dark forest path — extreme close-up, shallow depth of field",
+            "light, inspiration mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "moss"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "godrays",
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "waiting": {
+      "word": "waiting",
+      "forms": [
+        "waiting"
+      ],
+      "senses": [
+        {
+          "gloss": "Frustration",
+          "pos": "other",
+          "emotion": "Frustration",
+          "imageryPrompts": [
+            "Someone standing by a clock, looking impatiently at the passing seconds",
+            "Someone standing by a clock, looking impatiently at the passing seconds — extreme close-up, shallow depth of field",
+            "waiting, frustration mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "motivation": {
+      "word": "motivation",
+      "forms": [
+        "motivation"
+      ],
+      "senses": [
+        {
+          "gloss": "Empowerment",
+          "pos": "other",
+          "emotion": "Empowerment",
+          "imageryPrompts": [
+            "An athlete pushing themselves to run faster on a track",
+            "An athlete pushing themselves to run faster on a track — extreme close-up, shallow depth of field",
+            "motivation, empowerment mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#87CEEB",
+            "#FFFFE0",
+            "#B2DFDB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "dts"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "somebody": {
+      "word": "somebody",
+      "forms": [
+        "somebody"
+      ],
+      "senses": [
+        {
+          "gloss": "Hope",
+          "pos": "other",
+          "emotion": "Hope",
+          "imageryPrompts": [
+            "A neon-lit cityscape with a couple racing hand-in-hand through the streets",
+            "A neon-lit cityscape with a couple racing hand-in-hand through the streets — extreme close-up, shallow depth of field",
+            "somebody, hope mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "static",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Playful",
+          "pos": "other",
+          "emotion": "Playful",
+          "imageryPrompts": [
+            "A neon sign flashing 'Hook-Up' with arrows pointing towards a door",
+            "A neon sign flashing 'Hook-Up' with arrows pointing towards a door — extreme close-up, shallow depth of field",
+            "somebody, playful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s1-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "fast",
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "fast": {
+      "word": "fast",
+      "forms": [
+        "fast"
+      ],
+      "senses": [
+        {
+          "gloss": "Adrenaline",
+          "pos": "other",
+          "emotion": "Adrenaline",
+          "imageryPrompts": [
+            "A video game character speeding up to break the speed limit on a digital racetrack",
+            "A video game character speeding up to break the speed limit on a digital racetrack — extreme close-up, shallow depth of field",
+            "fast, adrenaline mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [
+              "cracks"
+            ],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "shatter",
+              "glitch"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "mission": {
+      "word": "mission",
+      "forms": [
+        "mission"
+      ],
+      "senses": [
+        {
+          "gloss": "Determination",
+          "pos": "other",
+          "emotion": "Determination",
+          "imageryPrompts": [
+            "A futuristic mission control room with glowing screens and countdown timers",
+            "A futuristic mission control room with glowing screens and countdown timers — extreme close-up, shallow depth of field",
+            "mission, determination mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mission/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mission/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [
+              "sand"
+            ],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "keep": {
+      "word": "keep",
+      "forms": [
+        "keep"
+      ],
+      "senses": [
+        {
+          "gloss": "Challenge",
+          "pos": "other",
+          "emotion": "Challenge",
+          "imageryPrompts": [
+            "Two silhouettes running side-by-side in silhouette against a sunrise horizon",
+            "Two silhouettes running side-by-side in silhouette against a sunrise horizon — extreme close-up, shallow depth of field",
+            "keep, challenge mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "level": {
+      "word": "level",
+      "forms": [
+        "level"
+      ],
+      "senses": [
+        {
+          "gloss": "Progression",
+          "pos": "other",
+          "emotion": "Progression",
+          "imageryPrompts": [
+            "An upward spiral of interconnected rings, each representing a new level or achievement",
+            "An upward spiral of interconnected rings, each representing a new level or achievement — extreme close-up, shallow depth of field",
+            "level, progression mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "golden": {
+      "word": "golden",
+      "forms": [
+        "golden"
+      ],
+      "senses": [
+        {
+          "gloss": "Romance",
+          "pos": "other",
+          "emotion": "Romance",
+          "imageryPrompts": [
+            "A couple collecting golden power-ups on a moonlit beach under a radiant full moon",
+            "A couple collecting golden power-ups on a moonlit beach under a radiant full moon — extreme close-up, shallow depth of field",
+            "golden, romance mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/golden/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/golden/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "petals",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "sky": {
+      "word": "sky",
+      "forms": [
+        "sky"
+      ],
+      "senses": [
+        {
+          "gloss": "Ambition",
+          "pos": "other",
+          "emotion": "Ambition",
+          "imageryPrompts": [
+            "Two figures leaping high into an endless starry night, reaching out to touch the stars",
+            "Two figures leaping high into an endless starry night, reaching out to touch the stars — extreme close-up, shallow depth of field",
+            "sky, ambition mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#6495ED",
+            "#FFF8DC",
+            "#2F4F4F"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles"
+            ],
+            "surface": [],
+            "veils": [
+              "steam"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "fast"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "ganga": {
+      "word": "ganga",
+      "forms": [
+        "ganga"
+      ],
+      "senses": [
+        {
+          "gloss": "Confidence",
+          "pos": "other",
+          "emotion": "Confidence",
+          "imageryPrompts": [
+            "A confident male rapper standing tall on a crowded dance floor at night",
+            "A confident male rapper standing tall on a crowded dance floor at night — extreme close-up, shallow depth of field",
+            "ganga, confidence mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ganga/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ganga/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles"
+            ],
+            "surface": [],
+            "veils": [
+              "steam"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "frio": {
+      "word": "frio",
+      "forms": [
+        "frío"
+      ],
+      "senses": [
+        {
+          "gloss": "Resilience",
+          "pos": "other",
+          "emotion": "Resilience",
+          "imageryPrompts": [
+            "Frosty breath in the cold air, a small group of friends huddled together for warmth",
+            "Frosty breath in the cold air, a small group of friends huddled together for warmth — extreme close-up, shallow depth of field",
+            "frio, resilience mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frio/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frio/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "snow",
+              "pollen"
+            ],
+            "surface": [
+              "condensation"
+            ],
+            "veils": [
+              "frost",
+              "dust"
+            ],
+            "text": [
+              "freeze"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "sangre": {
+      "word": "sangre",
+      "forms": [
+        "sangre"
+      ],
+      "senses": [
+        {
+          "gloss": "Connection",
+          "pos": "other",
+          "emotion": "Connection",
+          "imageryPrompts": [
+            "Blood droplets on a dark street, symbolizing deep bonds and loyalty",
+            "Blood droplets on a dark street, symbolizing deep bonds and loyalty — extreme close-up, shallow depth of field",
+            "sangre, connection mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "blood"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "vibra": {
+      "word": "vibra",
+      "forms": [
+        "vibra"
+      ],
+      "senses": [
+        {
+          "gloss": "Vitality",
+          "pos": "other",
+          "emotion": "Vitality",
+          "imageryPrompts": [
+            "A vibrant, pulsating neon light in the city at night, reflecting energy and life",
+            "A vibrant, pulsating neon light in the city at night, reflecting energy and life — extreme close-up, shallow depth of field",
+            "vibra, vitality mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "steam",
+              "static"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "cicatrices": {
+      "word": "cicatrices",
+      "forms": [
+        "cicatrices"
+      ],
+      "senses": [
+        {
+          "gloss": "Strength",
+          "pos": "other",
+          "emotion": "Strength",
+          "imageryPrompts": [
+            "A scarred hand holding a heart glowing with warmth and resilience",
+            "A scarred hand holding a heart glowing with warmth and resilience — extreme close-up, shallow depth of field",
+            "cicatrices, strength mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "conexion": {
+      "word": "conexion",
+      "forms": [
+        "conexión"
+      ],
+      "senses": [
+        {
+          "gloss": "Unity",
+          "pos": "other",
+          "emotion": "Unity",
+          "imageryPrompts": [
+            "People of all ages and backgrounds linking hands in a circle, forming an unbreakable chain",
+            "People of all ages and backgrounds linking hands in a circle, forming an unbreakable chain — extreme close-up, shallow depth of field",
+            "conexion, unity mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/conexion/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/conexion/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "barrio": {
+      "word": "barrio",
+      "forms": [
+        "barrio"
+      ],
+      "senses": [
+        {
+          "gloss": "Pride",
+          "pos": "other",
+          "emotion": "Pride",
+          "imageryPrompts": [
+            "A vibrant street scene at night with colorful lights, murals, and people dancing",
+            "A vibrant street scene at night with colorful lights, murals, and people dancing — extreme close-up, shallow depth of field",
+            "barrio, pride mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-2.webp"
+          ],
+          "palette": [
+            "#1A2966",
+            "#F7CAC9",
+            "#FFD369",
+            "#4568DC"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles"
+            ],
+            "surface": [],
+            "veils": [
+              "steam"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "gente"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "night": {
+      "word": "night",
+      "forms": [
+        "night"
+      ],
+      "senses": [
+        {
+          "gloss": "Anxious",
+          "pos": "other",
+          "emotion": "Anxious",
+          "imageryPrompts": [
+            "A dimly lit room with shadows creeping across the walls as a lone figure sits in the corner",
+            "A dimly lit room with shadows creeping across the walls as a lone figure sits in the corner — extreme close-up, shallow depth of field",
+            "night, anxious mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "steam",
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "voice": {
+      "word": "voice",
+      "forms": [
+        "voice"
+      ],
+      "senses": [
+        {
+          "gloss": "Haunting",
+          "pos": "other",
+          "emotion": "Haunting",
+          "imageryPrompts": [
+            "A disembodied voice whispering through static, slowly becoming clearer and more menacing",
+            "A disembodied voice whispering through static, slowly becoming clearer and more menacing — extreme close-up, shallow depth of field",
+            "voice, haunting mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Comforted",
+          "pos": "other",
+          "emotion": "Comforted",
+          "imageryPrompts": [
+            "A gentle, warm light shining from an old-fashioned telephone booth with soft music playing inside",
+            "A gentle, warm light shining from an old-fashioned telephone booth with soft music playing inside — extreme close-up, shallow depth of field",
+            "voice, comforted mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "pollen",
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "godrays",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "paper",
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "lie": {
+      "word": "lie",
+      "forms": [
+        "lie"
+      ],
+      "senses": [
+        {
+          "gloss": "Betrayed",
+          "pos": "other",
+          "emotion": "Betrayed",
+          "imageryPrompts": [
+            "A hand reaching out to touch a mirror but recoiling at the sight of their own reflection",
+            "A hand reaching out to touch a mirror but recoiling at the sight of their own reflection — extreme close-up, shallow depth of field",
+            "lie, betrayed mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lie/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lie/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "cut": {
+      "word": "cut",
+      "forms": [
+        "cut"
+      ],
+      "senses": [
+        {
+          "gloss": "Tormented",
+          "pos": "other",
+          "emotion": "Tormented",
+          "imageryPrompts": [
+            "Sharp paper edges slicing through skin, leaving behind thin red lines and stinging pain",
+            "Sharp paper edges slicing through skin, leaving behind thin red lines and stinging pain — extreme close-up, shallow depth of field",
+            "cut, tormented mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "paranoia": {
+      "word": "paranoia",
+      "forms": [
+        "paranoia"
+      ],
+      "senses": [
+        {
+          "gloss": "Terrified",
+          "pos": "other",
+          "emotion": "Terrified",
+          "imageryPrompts": [
+            "A person standing in a dark alley looking around nervously as shadows seem to move of their own accord",
+            "A person standing in a dark alley looking around nervously as shadows seem to move of their own accord — extreme close-up, shallow depth of field",
+            "paranoia, terrified mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoia/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoia/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "remix": {
+      "word": "remix",
+      "forms": [
+        "remix"
+      ],
+      "senses": [
+        {
+          "gloss": "Creative yet destructive",
+          "pos": "other",
+          "emotion": "Creative yet destructive",
+          "imageryPrompts": [
+            "An audio engineer meticulously cutting and rearranging sound clips, creating something both new and unsettling",
+            "An audio engineer meticulously cutting and rearranging sound clips, creating something both new and unsettling — extreme close-up, shallow depth of field",
+            "remix, creative yet destructive mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/remix/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/remix/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "watching": {
+      "word": "watching",
+      "forms": [
+        "watching"
+      ],
+      "senses": [
+        {
+          "gloss": "Haunting",
+          "pos": "other",
+          "emotion": "Haunting",
+          "imageryPrompts": [
+            "A person's reflection in a puddle, staring back with an expression of fear and suspicion",
+            "A person's reflection in a puddle, staring back with an expression of fear and suspicion — extreme close-up, shallow depth of field",
+            "watching, haunting mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/watching/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/watching/s0-2.webp"
+          ],
+          "palette": [
+            "#2E3192",
+            "#870606",
+            "#4F5DFF",
+            "#BDBDBD"
+          ],
+          "legos": {
+            "weather": [
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "static"
+            ],
+            "text": [
+              "glitch"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "paper"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "quit": {
+      "word": "quit",
+      "forms": [
+        "quit"
+      ],
+      "senses": [
+        {
+          "gloss": "Defiant",
+          "pos": "other",
+          "emotion": "Defiant",
+          "imageryPrompts": [
+            "A clenched fist raised against a stormy sky",
+            "A clenched fist raised against a stormy sky — extreme close-up, shallow depth of field",
+            "quit, defiant mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quit/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quit/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "embers"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "ash"
+            ],
+            "text": [
+              "burn"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "pressure": {
+      "word": "pressure",
+      "forms": [
+        "pressure"
+      ],
+      "senses": [
+        {
+          "gloss": "Resilient",
+          "pos": "other",
+          "emotion": "Resilient",
+          "imageryPrompts": [
+            "Someone lifting a heavy weight above their head",
+            "Someone lifting a heavy weight above their head — extreme close-up, shallow depth of field",
+            "pressure, resilient mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "pushing": {
+      "word": "pushing",
+      "forms": [
+        "pushing"
+      ],
+      "senses": [
+        {
+          "gloss": "Determined",
+          "pos": "other",
+          "emotion": "Determined",
+          "imageryPrompts": [
+            "An athlete sprinting uphill, sweat pouring down their face",
+            "An athlete sprinting uphill, sweat pouring down their face — extreme close-up, shallow depth of field",
+            "pushing, determined mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pushing/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pushing/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "condensation"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "melt"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "arms": {
+      "word": "arms",
+      "forms": [
+        "arms"
+      ],
+      "senses": [
+        {
+          "gloss": "Tense",
+          "pos": "other",
+          "emotion": "Tense",
+          "imageryPrompts": [
+            "Sculpted arms straining under the weight of a barbell",
+            "Sculpted arms straining under the weight of a barbell — extreme close-up, shallow depth of field",
+            "arms, tense mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/arms/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/arms/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "lungs": {
+      "word": "lungs",
+      "forms": [
+        "lungs"
+      ],
+      "senses": [
+        {
+          "gloss": "Exhausted",
+          "pos": "other",
+          "emotion": "Exhausted",
+          "imageryPrompts": [
+            "A runner gasping for breath at the end of a race",
+            "A runner gasping for breath at the end of a race — extreme close-up, shallow depth of field",
+            "lungs, exhausted mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lungs/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lungs/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [
+              "condensation"
+            ],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "heart": {
+      "word": "heart",
+      "forms": [
+        "heart"
+      ],
+      "senses": [
+        {
+          "gloss": "Intense",
+          "pos": "other",
+          "emotion": "Intense",
+          "imageryPrompts": [
+            "A heart symbol pulsing with red light, beating fast and strong",
+            "A heart symbol pulsing with red light, beating fast and strong — extreme close-up, shallow depth of field",
+            "heart, intense mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "embers"
+            ],
+            "surface": [],
+            "veils": [
+              "ash"
+            ],
+            "text": [
+              "burn"
+            ],
+            "light": [
+              "godrays",
+              "flicker"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Devotion",
+          "pos": "other",
+          "emotion": "Devotion",
+          "imageryPrompts": [
+            "Two hearts intertwined, beating as one",
+            "Two hearts intertwined, beating as one — extreme close-up, shallow depth of field",
+            "heart, devotion mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s1-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Intimate",
+          "pos": "other",
+          "emotion": "Intimate",
+          "imageryPrompts": [
+            "A glowing heart made from intertwined strings of text messages floating in space",
+            "A glowing heart made from intertwined strings of text messages floating in space — extreme close-up, shallow depth of field",
+            "heart, intimate mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 3,
+      "sources": [
+        "quit",
+        "seoul",
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "crown": {
+      "word": "crown",
+      "forms": [
+        "crown"
+      ],
+      "senses": [
+        {
+          "gloss": "Victorious",
+          "pos": "other",
+          "emotion": "Victorious",
+          "imageryPrompts": [
+            "A person standing atop a mountain with their arms raised in triumph",
+            "A person standing atop a mountain with their arms raised in triumph — extreme close-up, shallow depth of field",
+            "crown, victorious mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-2.webp"
+          ],
+          "palette": [
+            "#341F2C",
+            "#7A6058",
+            "#EDB9AF",
+            "#E7ABAD"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "quit"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "extrano": {
+      "word": "extrano",
+      "forms": [
+        "extraño"
+      ],
+      "senses": [
+        {
+          "gloss": "Sorrowful",
+          "pos": "other",
+          "emotion": "Sorrowful",
+          "imageryPrompts": [
+            "a woman standing alone at night looking out the window, her expression distant and melancholic",
+            "a woman standing alone at night looking out the window, her expression distant and melancholic — extreme close-up, shallow depth of field",
+            "extrano, sorrowful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extrano/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extrano/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "bubbles",
+              "ash"
+            ],
+            "surface": [
+              "condensation"
+            ],
+            "veils": [
+              "steam",
+              "ash"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "romperme": {
+      "word": "romperme",
+      "forms": [
+        "romperme"
+      ],
+      "senses": [
+        {
+          "gloss": "Resilient",
+          "pos": "other",
+          "emotion": "Resilient",
+          "imageryPrompts": [
+            "a person breaking a chain with their bare hands, symbolizing emotional liberation",
+            "a person breaking a chain with their bare hands, symbolizing emotional liberation — extreme close-up, shallow depth of field",
+            "romperme, resilient mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/romperme/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/romperme/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "vuelve": {
+      "word": "vuelve",
+      "forms": [
+        "vuelve"
+      ],
+      "senses": [
+        {
+          "gloss": "Defiant",
+          "pos": "other",
+          "emotion": "Defiant",
+          "imageryPrompts": [
+            "a door slamming shut, the handle turning but not opening",
+            "a door slamming shut, the handle turning but not opening — extreme close-up, shallow depth of field",
+            "vuelve, defiant mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vuelve/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vuelve/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "embers"
+            ],
+            "surface": [],
+            "veils": [
+              "ash"
+            ],
+            "text": [
+              "burn"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "herida": {
+      "word": "herida",
+      "forms": [
+        "herida"
+      ],
+      "senses": [
+        {
+          "gloss": "Pained",
+          "pos": "other",
+          "emotion": "Pained",
+          "imageryPrompts": [
+            "an open wound covered in bandages with a single tear rolling down beside it",
+            "an open wound covered in bandages with a single tear rolling down beside it — extreme close-up, shallow depth of field",
+            "herida, pained mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "rain"
+            ],
+            "surface": [
+              "blood"
+            ],
+            "veils": [
+              "fog"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "defiende": {
+      "word": "defiende",
+      "forms": [
+        "defiende"
+      ],
+      "senses": [
+        {
+          "gloss": "Empowered",
+          "pos": "other",
+          "emotion": "Empowered",
+          "imageryPrompts": [
+            "a woman standing tall, fists clenched, facing an invisible opponent",
+            "a woman standing tall, fists clenched, facing an invisible opponent — extreme close-up, shallow depth of field",
+            "defiende, empowered mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/defiende/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/defiende/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "suelto": {
+      "word": "suelto",
+      "forms": [
+        "suelto"
+      ],
+      "senses": [
+        {
+          "gloss": "Relieved",
+          "pos": "other",
+          "emotion": "Relieved",
+          "imageryPrompts": [
+            "an open hand releasing a bird into the sky, symbolizing freedom from past constraints",
+            "an open hand releasing a bird into the sky, symbolizing freedom from past constraints — extreme close-up, shallow depth of field",
+            "suelto, relieved mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suelto/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suelto/s0-2.webp"
+          ],
+          "palette": [
+            "#2E315A",
+            "#9B87C0",
+            "#F7DC6F",
+            "#D4AF37"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "resp"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "seoul": {
+      "word": "seoul",
+      "forms": [
+        "Seoul"
+      ],
+      "senses": [
+        {
+          "gloss": "Longing",
+          "pos": "other",
+          "emotion": "Longing",
+          "imageryPrompts": [
+            "A bustling cityscape at dusk with neon lights reflecting off rain-soaked streets",
+            "A bustling cityscape at dusk with neon lights reflecting off rain-soaked streets — extreme close-up, shallow depth of field",
+            "seoul, longing mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "sparks"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "static"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "seoul"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "phone": {
+      "word": "phone",
+      "forms": [
+        "phone"
+      ],
+      "senses": [
+        {
+          "gloss": "Hopeful",
+          "pos": "other",
+          "emotion": "Hopeful",
+          "imageryPrompts": [
+            "The sound of a phone buzzing on a nightstand, with the screen glowing softly in the dark",
+            "The sound of a phone buzzing on a nightstand, with the screen glowing softly in the dark — extreme close-up, shallow depth of field",
+            "phone, hopeful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "sparks",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "static",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "blackout",
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "seoul"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "worldwide": {
+      "word": "worldwide",
+      "forms": [
+        "worldwide"
+      ],
+      "senses": [
+        {
+          "gloss": "Universal",
+          "pos": "other",
+          "emotion": "Universal",
+          "imageryPrompts": [
+            "The world map covered in hearts, connecting every continent together",
+            "The world map covered in hearts, connecting every continent together — extreme close-up, shallow depth of field",
+            "worldwide, universal mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "seoul"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "border": {
+      "word": "border",
+      "forms": [
+        "border"
+      ],
+      "senses": [
+        {
+          "gloss": "Determined",
+          "pos": "other",
+          "emotion": "Determined",
+          "imageryPrompts": [
+            "A traveler crossing a border bridge into another country with their luggage and passport",
+            "A traveler crossing a border bridge into another country with their luggage and passport — extreme close-up, shallow depth of field",
+            "border, determined mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/border/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/border/s0-2.webp"
+          ],
+          "palette": [
+            "#F5DEB3",
+            "#FF69B4",
+            "#1E90FF",
+            "#FFFF00"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "seoul"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "steady": {
+      "word": "steady",
+      "forms": [
+        "steady"
+      ],
+      "senses": [
+        {
+          "gloss": "Confident",
+          "pos": "other",
+          "emotion": "Confident",
+          "imageryPrompts": [
+            "A man confidently walking towards a woman in dim lighting",
+            "A man confidently walking towards a woman in dim lighting — extreme close-up, shallow depth of field",
+            "steady, confident mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s0-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "fold": {
+      "word": "fold",
+      "forms": [
+        "fold"
+      ],
+      "senses": [
+        {
+          "gloss": "Intense",
+          "pos": "other",
+          "emotion": "Intense",
+          "imageryPrompts": [
+            "Hands clutching tightly, fingers interwoven with tension",
+            "Hands clutching tightly, fingers interwoven with tension — extreme close-up, shallow depth of field",
+            "fold, intense mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fold/s0-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "embers"
+            ],
+            "surface": [],
+            "veils": [
+              "ash"
+            ],
+            "text": [
+              "burn"
+            ],
+            "light": [
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "nobody": {
+      "word": "nobody",
+      "forms": [
+        "nobody"
+      ],
+      "senses": [
+        {
+          "gloss": "Cautious",
+          "pos": "other",
+          "emotion": "Cautious",
+          "imageryPrompts": [
+            "nobody, cautious mood, cinematic, volumetric light"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nobody/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nobody/s0-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "rhythm": {
+      "word": "rhythm",
+      "forms": [
+        "rhythm"
+      ],
+      "senses": [
+        {
+          "gloss": "Seductive",
+          "pos": "other",
+          "emotion": "Seductive",
+          "imageryPrompts": [
+            "A couple swaying to music in the dark, hips moving together",
+            "A couple swaying to music in the dark, hips moving together — extreme close-up, shallow depth of field",
+            "rhythm, seductive mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s0-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "solid": {
+      "word": "solid",
+      "forms": [
+        "solid"
+      ],
+      "senses": [
+        {
+          "gloss": "Trustworthy",
+          "pos": "other",
+          "emotion": "Trustworthy",
+          "imageryPrompts": [
+            "An anchor firmly planted on a sandy ocean floor",
+            "An anchor firmly planted on a sandy ocean floor — extreme close-up, shallow depth of field",
+            "solid, trustworthy mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s0-2.webp"
+          ],
+          "palette": [
+            "#4567b7",
+            "#f2e3a8",
+            "#9f70a1",
+            "#ffffff"
+          ],
+          "legos": {
+            "weather": [
+              "rain"
+            ],
+            "surface": [
+              "sand"
+            ],
+            "veils": [
+              "fog"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "smb"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "smile": {
+      "word": "smile",
+      "forms": [
+        "smile"
+      ],
+      "senses": [
+        {
+          "gloss": "Affirmative",
+          "pos": "other",
+          "emotion": "Affirmative",
+          "imageryPrompts": [
+            "A warm glow surrounding a silhouette of a person smiling at their phone",
+            "A warm glow surrounding a silhouette of a person smiling at their phone — extreme close-up, shallow depth of field",
+            "smile, affirmative mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "pause": {
+      "word": "pause",
+      "forms": [
+        "pause"
+      ],
+      "senses": [
+        {
+          "gloss": "Reflective",
+          "pos": "other",
+          "emotion": "Reflective",
+          "imageryPrompts": [
+            "A figure pausing mid-motion, looking down at their phone with thoughtful eyes",
+            "A figure pausing mid-motion, looking down at their phone with thoughtful eyes — extreme close-up, shallow depth of field",
+            "pause, reflective mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pause/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pause/s0-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "dreaming": {
+      "word": "dreaming",
+      "forms": [
+        "dreaming"
+      ],
+      "senses": [
+        {
+          "gloss": "Hopeful",
+          "pos": "other",
+          "emotion": "Hopeful",
+          "imageryPrompts": [
+            "Soft moonlight casting shadows on the face of someone sleeping peacefully while clutching a phone",
+            "Soft moonlight casting shadows on the face of someone sleeping peacefully while clutching a phone — extreme close-up, shallow depth of field",
+            "dreaming, hopeful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreaming/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreaming/s0-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "hold": {
+      "word": "hold",
+      "forms": [
+        "hold"
+      ],
+      "senses": [
+        {
+          "gloss": "Tender",
+          "pos": "other",
+          "emotion": "Tender",
+          "imageryPrompts": [
+            "Two hands reaching across an ocean to grasp each other's fingers through the screen of a phone",
+            "Two hands reaching across an ocean to grasp each other's fingers through the screen of a phone — extreme close-up, shallow depth of field",
+            "hold, tender mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hold/s0-2.webp"
+          ],
+          "palette": [
+            "#964B00",
+            "#5D8AA8",
+            "#FFA726",
+            "#F3E5AB"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "sparks",
+              "petals"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "static"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "flare"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "still"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "living": {
+      "word": "living",
+      "forms": [
+        "living"
+      ],
+      "senses": [
+        {
+          "gloss": "Sorrowful",
+          "pos": "other",
+          "emotion": "Sorrowful",
+          "imageryPrompts": [
+            "A person carrying heavy burdens under a dimly lit sky",
+            "A person carrying heavy burdens under a dimly lit sky — extreme close-up, shallow depth of field",
+            "living, sorrowful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/living/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/living/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "ash"
+            ],
+            "surface": [],
+            "veils": [
+              "ash"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "strings": {
+      "word": "strings",
+      "forms": [
+        "strings"
+      ],
+      "senses": [
+        {
+          "gloss": "Hopeful",
+          "pos": "other",
+          "emotion": "Hopeful",
+          "imageryPrompts": [
+            "Sunlight breaking through dark clouds, warming the earth",
+            "Sunlight breaking through dark clouds, warming the earth — extreme close-up, shallow depth of field",
+            "strings, hopeful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strings/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strings/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "blackout",
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "bassline": {
+      "word": "bassline",
+      "forms": [
+        "bassline"
+      ],
+      "senses": [
+        {
+          "gloss": "Uplifting",
+          "pos": "other",
+          "emotion": "Uplifting",
+          "imageryPrompts": [
+            "Deep, rhythmic waves rolling into shore at sunset",
+            "Deep, rhythmic waves rolling into shore at sunset — extreme close-up, shallow depth of field",
+            "bassline, uplifting mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "beach": {
+      "word": "beach",
+      "forms": [
+        "beach"
+      ],
+      "senses": [
+        {
+          "gloss": "Relaxed",
+          "pos": "other",
+          "emotion": "Relaxed",
+          "imageryPrompts": [
+            "A quiet beach at night with glowing bottles and a small fire",
+            "A quiet beach at night with glowing bottles and a small fire — extreme close-up, shallow depth of field",
+            "beach, relaxed mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beach/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beach/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "embers",
+              "bubbles",
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "ash",
+              "steam",
+              "dust"
+            ],
+            "text": [
+              "burn",
+              "dissolve"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "balance": {
+      "word": "balance",
+      "forms": [
+        "balance"
+      ],
+      "senses": [
+        {
+          "gloss": "Grateful",
+          "pos": "other",
+          "emotion": "Grateful",
+          "imageryPrompts": [
+            "A person standing on a balance beam, arms outstretched, eyes closed",
+            "A person standing on a balance beam, arms outstretched, eyes closed — extreme close-up, shallow depth of field",
+            "balance, grateful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/balance/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/balance/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "healing": {
+      "word": "healing",
+      "forms": [
+        "healing"
+      ],
+      "senses": [
+        {
+          "gloss": "Reverent",
+          "pos": "other",
+          "emotion": "Reverent",
+          "imageryPrompts": [
+            "Healing herbs wrapped in linen bundles under the moonlight",
+            "Healing herbs wrapped in linen bundles under the moonlight — extreme close-up, shallow depth of field",
+            "healing, reverent mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/healing/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/healing/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": []
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "vg"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "gold": {
+      "word": "gold",
+      "forms": [
+        "gold"
+      ],
+      "senses": [
+        {
+          "gloss": "Triumphant",
+          "pos": "other",
+          "emotion": "Triumphant",
+          "imageryPrompts": [
+            "Golden rays of light breaking through storm clouds",
+            "Golden rays of light breaking through storm clouds — extreme close-up, shallow depth of field",
+            "gold, triumphant mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-2.webp"
+          ],
+          "palette": [
+            "#FFD700",
+            "#8B4513",
+            "#2E8B57",
+            "#FFFFFF"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "pollen"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "dust"
+            ],
+            "text": [
+              "bloom"
+            ],
+            "light": [
+              "godrays"
+            ]
+          },
+          "score": 1
+        },
+        {
+          "gloss": "Covetous",
+          "pos": "other",
+          "emotion": "Covetous",
+          "imageryPrompts": [
+            "A pocket watch with intricate gears, shining brightly against the dark background of an old steamboat, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "A pocket watch with intricate gears, shining brightly against the dark background of an old steamboat, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "gold, covetous mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker",
+              "blackout"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 2,
+      "sources": [
+        "vg",
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "whistle": {
+      "word": "whistle",
+      "forms": [
+        "whistle"
+      ],
+      "senses": [
+        {
+          "gloss": "Menacing",
+          "pos": "other",
+          "emotion": "Menacing",
+          "imageryPrompts": [
+            "A sharp whistle blowing in a foggy river dock at night, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "A sharp whistle blowing in a foggy river dock at night, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "whistle, menacing mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "bubbles"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "steam"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "trouble": {
+      "word": "trouble",
+      "forms": [
+        "trouble"
+      ],
+      "senses": [
+        {
+          "gloss": "Dangerous",
+          "pos": "other",
+          "emotion": "Dangerous",
+          "imageryPrompts": [
+            "A steamboat with smoke billowing out, navigating through choppy waters under the moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "A steamboat with smoke billowing out, navigating through choppy waters under the moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "trouble, dangerous mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trouble/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trouble/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "ash",
+              "rain",
+              "embers"
+            ],
+            "surface": [],
+            "veils": [
+              "ash",
+              "fog"
+            ],
+            "text": [
+              "burn"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "boys": {
+      "word": "boys",
+      "forms": [
+        "boys"
+      ],
+      "senses": [
+        {
+          "gloss": "Aggressive",
+          "pos": "other",
+          "emotion": "Aggressive",
+          "imageryPrompts": [
+            "Two criminals in black-and-white 1920s attire, grinning menacingly while holding gold coins and walking down a dimly lit dock, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "Two criminals in black-and-white 1920s attire, grinning menacingly while holding gold coins and walking down a dimly lit dock, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "boys, aggressive mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boys/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boys/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "foghorn": {
+      "word": "foghorn",
+      "forms": [
+        "foghorn"
+      ],
+      "senses": [
+        {
+          "gloss": "Harrowing",
+          "pos": "other",
+          "emotion": "Harrowing",
+          "imageryPrompts": [
+            "The sound and visual effect of a foghorn echoing in the misty night over a river, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "The sound and visual effect of a foghorn echoing in the misty night over a river, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "foghorn, harrowing mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/foghorn/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/foghorn/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "bubbles"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "steam"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "dock": {
+      "word": "dock",
+      "forms": [
+        "dock"
+      ],
+      "senses": [
+        {
+          "gloss": "Suspenseful",
+          "pos": "other",
+          "emotion": "Suspenseful",
+          "imageryPrompts": [
+            "A dimly lit wooden dock with shadowy figures moving quietly under moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "A dimly lit wooden dock with shadowy figures moving quietly under moonlight, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "dock, suspenseful mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dock/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dock/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    },
+    "riverboat": {
+      "word": "riverboat",
+      "forms": [
+        "riverboat"
+      ],
+      "senses": [
+        {
+          "gloss": "Voyage",
+          "pos": "other",
+          "emotion": "Voyage",
+          "imageryPrompts": [
+            "An old steamboat chugging along the river, surrounded by swirling mist and darkness, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace",
+            "An old steamboat chugging along the river, surrounded by swirling mist and darkness, 1928 black-and-white silent film still, heavy film grain, scratches and projector flicker, rubber-hose cartoon era, everything strictly monochrome EXCEPT gold valuables (gold coins, gold watch, gold teeth) which glow in rich gold color as the only color in frame, eerie twisted vintage cartoon menace — extreme close-up, shallow depth of field",
+            "riverboat, voyage mood, cinematic, volumetric light, film grain"
+          ],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-2.webp"
+          ],
+          "palette": [
+            "#d9d9d9",
+            "#8c8c8c",
+            "#FFD700",
+            "#1a1a1a"
+          ],
+          "legos": {
+            "weather": [
+              "rain",
+              "dust"
+            ],
+            "surface": [],
+            "veils": [
+              "fog",
+              "dust"
+            ],
+            "text": [
+              "dissolve"
+            ],
+            "light": [
+              "flare",
+              "flicker"
+            ]
+          },
+          "score": 1
+        }
+      ],
+      "freq": 1,
+      "sources": [
+        "wr"
+      ],
+      "updatedAt": "2026-07-04T15:13:04.847Z"
+    }
+  },
+  "stats": {
+    "words": 87,
+    "senses": 95,
+    "images": 0,
+    "filled": 87
+  }
+}

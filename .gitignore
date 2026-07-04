@@ -38,3 +38,9 @@ next-env.d.ts
 /scripts/import-youtube/jobs/
 /scripts/onboard-jobs/
 /assets/
+scripts/lexicon/cron.log
+scripts/song-art/topup/
+scripts/song-art/*-topup-*/
+scripts/song-art/.topup-tmp/
+scripts/song-art/topup-run.log
+scripts/lexicon/art-run.log
