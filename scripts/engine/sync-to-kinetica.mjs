@@ -74,6 +74,9 @@ export type { Track } from "@/lib/types";
 
 /** Kinetica has no shared cross-song art library; song art comes from the planet. */
 export const HAS_SHARED_ART = false;
+
+/** Kinetica's art is local/generated (blob URLs), not under /planets/ — no prefix. */
+export const PLANET_BASE = "";
 `;
 
 // Imports that must NOT appear in a synced engine file (would break Kinetica).

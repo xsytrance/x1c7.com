@@ -20,3 +20,8 @@ export type { Track } from "@/data/tracks";
 
 /** x1c7 ships a cross-song shared art library at /planets/_shared. */
 export const HAS_SHARED_ART = true;
+
+/** Base for planet art. x1c7 serves it from R2 (the storage reorg moved it off
+ *  the repo); relative "/planets/..." asset URLs get this prefixed at render.
+ *  Kinetica leaves this "" — its art is local/generated, not under /planets/. */
+export const PLANET_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";

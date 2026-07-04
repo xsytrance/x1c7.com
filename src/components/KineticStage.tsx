@@ -7,7 +7,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
-import { useMusicPlayer, HAS_SHARED_ART } from "@/lib/engineHost";
+import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
@@ -50,7 +50,11 @@ const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 // Cross-song paintings for the words the whole catalog keeps singing.
 // Used as a backdrop fallback when a planet has no painting of its own for a
 // charged or line-final word. Neutral palette; the song's grade tints it.
-const SHARED_BASE = "/planets/_shared";
+const SHARED_BASE = `${PLANET_BASE}/planets/_shared`;
+// Planet art asset URLs are stored relative ("/planets/<slug>/<w>.webp"); the
+// storage reorg moved the files to R2, so prefix the host's PLANET_BASE at
+// render. Already-absolute URLs (R2 shared art, Kinetica blobs) pass through.
+const planetUrl = (u: string) => (u.startsWith("/planets/") ? PLANET_BASE + u : u);
 const SHARED_WORDS = ["night", "love", "world", "time", "heart", "soul", "voice", "dream", "home", "moon", "rain", "city", "sky", "stars", "eyes", "dance", "alone"];
 const SHARED_ALIAS: Record<string, string> = { dreams: "dream", nights: "night", hearts: "heart", skies: "sky", star: "stars", cities: "city", corazón: "heart", noche: "night", luna: "moon", cielo: "sky", mundo: "world", alma: "soul", ciudad: "city", ojos: "eyes", lluvia: "rain", sola: "alone", solo: "alone", bailar: "dance", baila: "dance", amor: "love" };
 function sharedArtFor(word: string): string | null {
@@ -234,9 +238,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     artPlays.current.set(url, n);
     if (n % 2 === 0) {
       const v = altArt?.[url] ?? (url.startsWith(SHARED_BASE) ? url.replace(/\.webp$/, "-2.webp") : null);
-      if (v) return v;
+      if (v) return planetUrl(v);
     }
-    return url;
+    return planetUrl(url);
   }, [altArt]);
   // The weather layer — song-matched particles between backdrop and words.
   const particles = useRef<ParticleHandle>(null);
