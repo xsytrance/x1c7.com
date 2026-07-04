@@ -39,3 +39,5 @@ next-env.d.ts
 /scripts/onboard-jobs/
 /assets/
 scripts/lexicon/cron.log
+scripts/song-art/topup/
+scripts/song-art/*-topup-*/
