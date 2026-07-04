@@ -15,12 +15,33 @@ import { emptyLegos } from "./types";
 let cache: Lexicon | null = null;
 let loading: Promise<Lexicon> | null = null;
 
-/** Load (and memoize) the Lexicon as a separate async chunk. */
+// The hosted, ever-growing shelf. Set this to the URL where the Lexicon is
+// published (the "I'll host it, gift it to Suno" plan) and EVERY app — x1c7 and
+// Kinetica alike — fetches the latest at runtime. Empty = use the copy bundled
+// with this build. Any network failure falls back to the bundle, so it never
+// breaks offline. This is the one knob that turns the shelf into a shared,
+// live, community asset. Keep it in sync across repos via the engine sync.
+const HOSTED_LEXICON_URL = "";
+
+/** The build-time copy — its own async chunk, kept out of the main bundle. */
+async function bundledLexicon(): Promise<Lexicon> {
+  const m = await import("@/data/lexicon.json");
+  return m.default as unknown as Lexicon;
+}
+
+/** Load (and memoize) the Lexicon: hosted shelf first, bundled copy as fallback. */
 export async function loadLexicon(): Promise<Lexicon> {
   if (cache) return cache;
   if (!loading) {
-    loading = import("@/data/lexicon.json")
-      .then((m) => (cache = m.default as unknown as Lexicon));
+    loading = (async () => {
+      if (HOSTED_LEXICON_URL) {
+        try {
+          const res = await fetch(HOSTED_LEXICON_URL, { cache: "force-cache" });
+          if (res.ok) return (cache = (await res.json()) as Lexicon);
+        } catch { /* offline / blocked — fall back to the bundled shelf */ }
+      }
+      return (cache = await bundledLexicon());
+    })();
   }
   return loading;
 }

@@ -28,6 +28,8 @@ export interface PlanetAssets {
   /** base image URL -> its twin variant (-2.webp): the art-doubling pass.
    * The engine alternates twins each time an image returns to stage. */
   alt?: Record<string, string>;
+  /** URL (object URL in-browser) of the measured stems.json — the stem senses. */
+  stems?: string;
 }
 /** LLM-choreographed touch interactions — different per song, always in the
  * song's own language (fire burns, heartbreak shatters, love blooms). */

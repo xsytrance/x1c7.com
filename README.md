@@ -70,6 +70,16 @@ node scripts/lexicon/dream.mjs       # the "dream loop" — fill legos on a prio
 
 Full write-up: [`docs/EFFECTS-AND-LEXICON.md`](docs/EFFECTS-AND-LEXICON.md).
 
+The same engine ships to **Kinetica** (the standalone app gifted to the Suno community).
+x1c7 is the workshop; you release the engine to Kinetica with one command:
+
+```bash
+node scripts/engine/sync-to-kinetica.mjs --apply
+```
+
+How the two stay in sync (shared engine + one-file adapter seam):
+[`docs/ENGINE-SYNC.md`](docs/ENGINE-SYNC.md).
+
 ## Keyboard Shortcuts
 
 | Key | Action |
