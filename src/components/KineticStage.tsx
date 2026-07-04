@@ -226,6 +226,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
+  // Art gallery: extra paintings per word, grown nightly by the top-up pipeline
+  // and hosted on R2 as planets/<slug>/gallery.json. The engine cycles through
+  // them so a word never shows the same backdrop twice. Absent/empty = the
+  // engine behaves exactly as before (single keyword art + its twin).
+  const [gallery, setGallery] = useState<Record<string, string[]> | null>(null);
+  const galleryRef = useRef(gallery);
+  galleryRef.current = gallery;
+  const galleryTurn = useRef(new Map<string, number>());
   const [showTitle, setShowTitle] = useState(true);
   const [wave, setWave] = useState(0);
   // Art doubling: every painting has a twin (-2.webp). Each time the same
@@ -242,6 +250,28 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     }
     return planetUrl(url);
   }, [altArt]);
+  // Load the song's hosted art gallery (grown by the top-up pipeline). Graceful:
+  // 404 / offline → null → the engine falls back to single keyword art.
+  useEffect(() => {
+    setGallery(null);
+    galleryTurn.current.clear();
+    if (pass < 3 || !PLANET_BASE) return;
+    let on = true;
+    fetch(`${PLANET_BASE}/planets/${track.id}/gallery.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => { if (on) setGallery((d?.art as Record<string, string[]>) ?? null); })
+      .catch(() => {});
+    return () => { on = false; };
+  }, [track.id, pass]);
+  // Rotate through [base, ...gallery variants] for a word so backdrops vary.
+  const pooledArt = useCallback((w: string, base: string | null): string | null => {
+    const extra = galleryRef.current?.[w];
+    if (!extra?.length) return base;
+    const pool = base ? [base, ...extra] : extra;
+    const n = galleryTurn.current.get(w) ?? 0;
+    galleryTurn.current.set(w, n + 1);
+    return pool[n % pool.length];
+  }, []);
   // The weather layer — song-matched particles between backdrop and words.
   const particles = useRef<ParticleHandle>(null);
   const particleMode = useMemo(() => {
@@ -664,7 +694,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // words don't churn the backdrop mid-line.
         if (i >= 0) {
           const w = clean(words[i].w).toLowerCase();
-          const own = art?.[w];
+          const own = pooledArt(w, art?.[w] ?? null);
           const isFinal = words[i + 1] ? lineStarts.has(Math.round(words[i + 1].t * 100)) : true;
           const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
           if (own) setBgArt(pickArt(own));

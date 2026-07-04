@@ -41,3 +41,4 @@ next-env.d.ts
 scripts/lexicon/cron.log
 scripts/song-art/topup/
 scripts/song-art/*-topup-*/
+scripts/song-art/.topup-tmp/
