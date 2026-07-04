@@ -76,6 +76,18 @@ export default function FeedPage() {
     setBusy(false);
   };
 
+  const clearGuided = async () => {
+    if (!slug || busy || !window.confirm("Clear this planet's guided collection? It falls back to its auto gallery.")) return;
+    setBusy(true); setMsg("clearing…");
+    try {
+      const r = await fetch("/api/feed", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug, clear: true }) });
+      const j = await r.json();
+      if (r.ok) { setGuided({ images: [], feeds: [] }); setMsg("✦ cleared — back to the auto gallery"); }
+      else setMsg("✗ " + (j.error || "failed"));
+    } catch (e) { setMsg("✗ " + String(e)); }
+    setBusy(false);
+  };
+
   if (allowed === null) return <main className="min-h-screen bg-void" />;
   if (allowed === false) {
     return (
@@ -155,9 +167,14 @@ export default function FeedPage() {
 
           {/* right: the guided star collection */}
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6">
-            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-              Guided star · {guided?.images.length ?? "…"} image{guided?.images.length === 1 ? "" : "s"}
-            </p>
+            <div className="flex items-center justify-between">
+              <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+                Guided star · {guided?.images.length ?? "…"} image{guided?.images.length === 1 ? "" : "s"}
+              </p>
+              {guided && guided.images.length > 0 && (
+                <button onClick={clearGuided} disabled={busy} className="font-mono text-[10px] uppercase tracking-wider text-white/40 transition hover:text-red-300 disabled:opacity-40">clear</button>
+              )}
+            </div>
             {guided === null ? (
               <p className="mt-4 font-mono text-xs text-white/30">loading…</p>
             ) : guided.images.length === 0 ? (

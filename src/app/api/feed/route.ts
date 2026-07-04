@@ -22,12 +22,24 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "The feed is owner-only." }, { status: 403 });
   }
 
-  let body: { slug?: string; image?: string; prompt?: string; n?: number; denoise?: number };
+  let body: { slug?: string; image?: string; prompt?: string; n?: number; denoise?: number; clear?: boolean };
   try { body = await req.json(); } catch { return NextResponse.json({ error: "bad JSON" }, { status: 400 }); }
   const { slug, image, prompt } = body;
   const n = Math.min(12, Math.max(1, Number(body.n) || 4));
   const denoise = Math.min(0.95, Math.max(0.2, Number(body.denoise) || 0.62));
-  if (!slug || !image || !prompt) return NextResponse.json({ error: "slug, image, prompt required" }, { status: 400 });
+  if (!slug) return NextResponse.json({ error: "slug required" }, { status: 400 });
+
+  // Clear/reset a planet's guided collection (falls back to its auto gallery).
+  if (body.clear) {
+    try {
+      await execFileP("node", ["scripts/song-art/feed.mjs", "--slug", slug, "--clear"], { cwd: process.cwd(), timeout: 30_000 });
+    } catch (e) {
+      return NextResponse.json({ error: "clear failed", detail: String((e as Error).message).slice(0, 300) }, { status: 500 });
+    }
+    return NextResponse.json({ ok: true, guided: { slug, images: [], feeds: [] } });
+  }
+
+  if (!image || !prompt) return NextResponse.json({ error: "image and prompt required" }, { status: 400 });
 
   const m = /^data:(image\/[\w.+-]+);base64,(.+)$/.exec(image);
   if (!m) return NextResponse.json({ error: "image must be a base64 data URL" }, { status: 400 });

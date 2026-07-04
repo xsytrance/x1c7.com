@@ -35,8 +35,11 @@ const ROOT = new URL("../..", import.meta.url).pathname;
 const TMP = join(ROOT, "scripts/song-art/.topup-tmp");
 const log = (...a) => console.error(...a);
 
-if (!SLUG || !IMAGE || !PROMPT) { console.error("usage: --slug <slug> --image <path> --prompt \"<text>\" [--n 4] [--denoise 0.62]"); process.exit(1); }
-if (!existsSync(IMAGE)) { console.error("✗ image not found:", IMAGE); process.exit(1); }
+if (!SLUG) { console.error("usage: --slug <slug> --image <path> --prompt \"<text>\" [--n 4] [--denoise 0.62]  |  --slug <slug> --clear"); process.exit(1); }
+if (!args.clear) {
+  if (!IMAGE || !PROMPT) { console.error("usage: --slug <slug> --image <path> --prompt \"<text>\" [--n 4] [--denoise 0.62]"); process.exit(1); }
+  if (!existsSync(IMAGE)) { console.error("✗ image not found:", IMAGE); process.exit(1); }
+}
 
 // ── R2 ────────────────────────────────────────────────────────────────────────
 function loadEnv(f) { const o = {}; if (!existsSync(f)) return o; for (const l of readFileSync(f, "utf8").split(/\r?\n/)) { const m = l.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/); if (m) o[m[1]] = m[2].replace(/^["']|["']$/g, ""); } return o; }
@@ -90,6 +93,13 @@ async function generate(image, prompt, seed) {
 
 // ── Run ──────────────────────────────────────────────────────────────────────
 mkdirSync(TMP, { recursive: true });
+if (args.clear) {
+  const gjson = join(TMP, "guided.json");
+  writeFileSync(gjson, JSON.stringify({ slug: SLUG, images: [], feeds: [] }, null, 2));
+  r2put(gjson, `planets/${SLUG}/guided.json`); try { unlinkSync(gjson); } catch { /* best effort */ }
+  log(`✦ cleared guided collection for ${SLUG} — the show falls back to its auto gallery.`);
+  process.exit(0);
+}
 const g = await remoteGuided();
 const ts = args.ts ? String(args.ts) : String(g.images.length + 1).padStart(3, "0");
 log(`feeding "${SLUG}" — image ${basename(IMAGE)} · "${PROMPT}" · ${N} guided (denoise ${DENOISE})`);
