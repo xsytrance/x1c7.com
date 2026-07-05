@@ -576,6 +576,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [shakeMo, setShakeMo] = useState<{ prompt: string } | null>(null);
   const shakeMoKey = useRef(-1);
   const shakeDone = useRef(false);
+  // Choreographed SCREAM moments: shout into the mic (e.g. "GOOOLD" on the
+  // chorus) and detonate a gold supernova. Broadband mic loudness, high bar.
+  const [scream, setScream] = useState<{ prompt: string } | null>(null);
+  const screamKey = useRef(-1);
   const [gust, setGust] = useState(0);
   // Shake-to-scatter: a real phone shake rattles the stage and the current
   // word reacts in the song's own tap language.
@@ -835,6 +839,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           shakeMoKey.current = skey;
           shakeDone.current = false;
           setShakeMo(so ? { prompt: so.prompt } : null);
+        }
+        const cro = allMoments.find((mm) => mm.type === "scream" && t >= mm.t && t < mm.end);
+        const crkey = cro ? cro.t : -1;
+        if (crkey !== screamKey.current) {
+          screamKey.current = crkey;
+          setScream(cro ? { prompt: cro.prompt } : null);
         }
       }
       // ── STEM SENSES per-frame ── the measured song drives the stage live.
@@ -1495,6 +1505,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Choreographed blow moment — blow into the mic on cue */}
       {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
 
+      {/* Choreographed SCREAM moment — shout "GOOOLD" into the mic → gold nova */}
+      {pass >= 3 && (
+        <ScreamMoment
+          moment={scream}
+          onScream={() => {
+            setNova((n) => n + 1);
+            setWave((w) => w + 1);
+            spawnRing(true);
+            navigator.vibrate?.([30, 40, 120]);
+          }}
+        />
+      )}
+
       {/* Choreographed shake moment — shake the phone on cue (tap = fallback) */}
       <AnimatePresence>
         {pass >= 3 && shakeMo && (
@@ -1513,9 +1536,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       </AnimatePresence>
 
       {/* Mic primer — ask ONCE at show start (never mid-song) when this
-          song has a breath moment coming. */}
-      {pass >= 3 && !blow && (
-        <MicPrimer active={allMoments.some((mm) => mm.type === "blow")} />
+          song has a breath OR scream moment coming. */}
+      {pass >= 3 && !blow && !scream && (
+        <MicPrimer active={allMoments.some((mm) => mm.type === "blow" || mm.type === "scream")} />
       )}
 
       {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
@@ -2120,10 +2143,79 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
   );
 }
 
+/* ========== SCREAM MOMENT ==========
+   The mirror of BlowMoment. At a choreographed point (the chorus) the show
+   asks the listener to SCREAM into the mic — shout "GOOOLD" — and a gold
+   supernova detonates on the payoff. Detection = sustained BROADBAND loudness
+   (a real shout lights the whole spectrum), deliberately a higher bar than
+   blow's low-frequency breath so the two never cross-trigger. Auto-arms when
+   the mic is already granted; falls back to a tap if the mic is unavailable. */
+function ScreamMoment({ moment, onScream }: { moment: { prompt: string } | null; onScream: () => void }) {
+  const [state, setState] = useState<"idle" | "listening" | "done" | "denied">("idle");
+  const cleanupRef = useRef<() => void>(() => {});
+  const startRef = useRef<() => void>(() => {});
+  useEffect(() => {
+    if (!moment) { cleanupRef.current(); setState("idle"); return () => cleanupRef.current(); }
+    let on = true;
+    micPermissionGranted().then((ok) => { if (on && ok) startRef.current(); });
+    return () => { on = false; cleanupRef.current(); };
+  }, [moment]);
+  const start = async () => {
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+      const ctx = new AudioContext();
+      const an = ctx.createAnalyser();
+      an.fftSize = 1024;
+      ctx.createMediaStreamSource(stream).connect(an);
+      const buf = new Uint8Array(an.frequencyBinCount);
+      let hot = 0; let raf = 0;
+      const cleanup = () => { cancelAnimationFrame(raf); stream.getTracks().forEach((t) => t.stop()); ctx.close().catch(() => {}); };
+      cleanupRef.current = cleanup;
+      setState("listening");
+      const loop = () => {
+        an.getByteFrequencyData(buf);
+        // Broadband energy (skip the lowest breath bins so a blow can't win it).
+        let band = 0;
+        for (let i = 8; i < 300; i++) band += buf[i];
+        band /= (300 - 8) * 255;
+        hot = band > 0.4 ? hot + 1 : Math.max(0, hot - 2);
+        if (hot > 8) { setState("done"); onScream(); cleanup(); return; }
+        raf = requestAnimationFrame(loop);
+      };
+      loop();
+    } catch { setState("denied"); }
+  };
+  startRef.current = start;
+  return (
+    <AnimatePresence>
+      {moment && state !== "done" && (
+        <motion.button
+          key={moment.prompt}
+          onClick={state === "listening" ? undefined : state === "denied" ? onScream : start}
+          className="stage-warn-pill fixed left-1/2 top-[15vh] z-[38] flex w-max max-w-[92vw] -translate-x-1/2 flex-col items-center gap-1.5 rounded-[2rem] px-8 py-5 text-center"
+          initial={{ opacity: 0, y: -18, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: state === "listening" ? [1, 1.06, 1] : 1 }}
+          exit={{ opacity: 0, scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300, damping: 22, scale: state === "listening" ? { duration: 0.6, repeat: Infinity } : undefined }}
+        >
+          <span className="stage-warn text-4xl sm:text-6xl" style={{ color: "var(--theme-primary)" }}>
+            {state === "listening" ? "🔥 GOOOLD!" : "🎤 SCREAM!"}
+          </span>
+          <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/80 sm:text-sm">
+            {state === "idle" && <>{moment.prompt} — tap to ready the mic</>}
+            {state === "listening" && <>{moment.prompt}</>}
+            {state === "denied" && <>{moment.prompt} — tap!</>}
+          </span>
+        </motion.button>
+      )}
+    </AnimatePresence>
+  );
+}
+
 /* ========== WIPE LAYER ==========
    A choreographed moment: a themed veil (fog, ash, frost, steam, static, mud,
-   dust, smoke — all defined as legos in the effect registry) covers the stage
-   and the listener wipes it away with a finger. */
+   dust, smoke, void — all defined as legos in the effect registry) covers the
+   stage and the listener wipes it away with a finger. */
 function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {

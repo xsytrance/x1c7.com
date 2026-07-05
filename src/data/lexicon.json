@@ -1,7 +1,7 @@
 {
   "version": 1,
   "galaxy": "xsytrance-canon",
-  "generatedAt": "2026-07-04T15:13:04.847Z",
+  "generatedAt": "2026-07-05T05:00:01.344Z",
   "entries": {
     "circus": {
       "word": "circus",
@@ -43,10 +43,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -100,10 +100,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -147,10 +147,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -194,10 +194,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -241,10 +241,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -288,10 +288,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -339,10 +339,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "bt"
       ],
@@ -393,10 +393,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cc"
       ],
@@ -446,10 +446,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cc"
       ],
@@ -496,7 +496,7 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Imaginative",
@@ -532,10 +532,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "cc",
         "seoul"
@@ -585,10 +585,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cc"
       ],
@@ -633,10 +633,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cc"
       ],
@@ -687,7 +687,7 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Optimism",
@@ -727,10 +727,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "cc",
         "dts"
@@ -780,10 +780,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cc"
       ],
@@ -830,10 +830,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -879,10 +879,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -931,10 +931,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -980,10 +980,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -1029,10 +1029,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -1078,10 +1078,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -1125,10 +1125,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "cs"
       ],
@@ -1172,10 +1172,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "dts"
       ],
@@ -1219,7 +1219,7 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Determined",
@@ -1253,10 +1253,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "dts",
         "still"
@@ -1306,10 +1306,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "dts"
       ],
@@ -1358,10 +1358,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "dts"
       ],
@@ -1405,10 +1405,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "dts"
       ],
@@ -1452,10 +1452,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "dts"
       ],
@@ -1503,7 +1503,7 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Playful",
@@ -1537,10 +1537,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "fast",
         "smb"
@@ -1588,10 +1588,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1637,10 +1637,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1684,10 +1684,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1731,10 +1731,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1782,10 +1782,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1831,10 +1831,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "fast"
       ],
@@ -1878,10 +1878,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -1929,10 +1929,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -1980,10 +1980,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -2031,10 +2031,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -2078,10 +2078,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -2125,10 +2125,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -2174,10 +2174,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "gente"
       ],
@@ -2225,10 +2225,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2274,7 +2274,7 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Comforted",
@@ -2312,10 +2312,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "paper",
         "still"
@@ -2360,10 +2360,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2407,10 +2407,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2456,10 +2456,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2503,10 +2503,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2552,10 +2552,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "paper"
       ],
@@ -2603,10 +2603,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -2650,10 +2650,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -2699,10 +2699,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -2746,10 +2746,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -2797,10 +2797,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -2847,7 +2847,7 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Devotion",
@@ -2881,7 +2881,7 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Intimate",
@@ -2915,10 +2915,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 3,
+      "freq": 6,
       "sources": [
         "quit",
         "seoul",
@@ -2964,10 +2964,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "quit"
       ],
@@ -3017,10 +3017,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3064,10 +3064,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3113,10 +3113,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3162,10 +3162,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3209,10 +3209,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3256,10 +3256,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "resp"
       ],
@@ -3307,10 +3307,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "seoul"
       ],
@@ -3359,10 +3359,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "seoul"
       ],
@@ -3406,10 +3406,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "seoul"
       ],
@@ -3453,10 +3453,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "seoul"
       ],
@@ -3500,10 +3500,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "smb"
       ],
@@ -3549,10 +3549,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "smb"
       ],
@@ -3594,10 +3594,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "smb"
       ],
@@ -3643,10 +3643,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "smb"
       ],
@@ -3692,10 +3692,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "smb"
       ],
@@ -3741,10 +3741,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "still"
       ],
@@ -3788,10 +3788,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "still"
       ],
@@ -3837,10 +3837,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "still"
       ],
@@ -3889,10 +3889,10 @@
               "flare"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "still"
       ],
@@ -3938,10 +3938,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -3988,10 +3988,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -4039,10 +4039,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -4093,10 +4093,10 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -4140,10 +4140,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -4187,10 +4187,10 @@
             ],
             "light": []
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "vg"
       ],
@@ -4238,7 +4238,7 @@
               "godrays"
             ]
           },
-          "score": 1
+          "score": 2
         },
         {
           "gloss": "Covetous",
@@ -4276,10 +4276,10 @@
               "blackout"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 2,
+      "freq": 4,
       "sources": [
         "vg",
         "wr"
@@ -4329,10 +4329,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4382,10 +4382,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4432,10 +4432,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4484,10 +4484,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4534,10 +4534,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4586,10 +4586,10 @@
               "flicker"
             ]
           },
-          "score": 1
+          "score": 2
         }
       ],
-      "freq": 1,
+      "freq": 2,
       "sources": [
         "wr"
       ],
@@ -4599,7 +4599,7 @@
   "stats": {
     "words": 87,
     "senses": 95,
-    "images": 0,
+    "images": 190,
     "filled": 87
   }
 }

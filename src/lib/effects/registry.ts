@@ -28,7 +28,7 @@ export type SurfaceMode =
   | "mud" | "rust" | "cracks" | "condensation" | "vines" | "moss" | "blood" | "sand";
 
 export type VeilKind =
-  | "fog" | "ash" | "frost" | "steam" | "static" | "mud" | "dust" | "smoke";
+  | "fog" | "ash" | "frost" | "steam" | "static" | "mud" | "dust" | "smoke" | "void";
 
 export type TextEffect =
   | "burn" | "shatter" | "dissolve" | "bloom" | "glitch" | "freeze" | "melt" | "carve";
@@ -74,6 +74,9 @@ export const VEIL_SPECS: Record<VeilKind, VeilSpec> = {
   mud: { colors: ["#3a2b1e", "#5c4326"], grain: "blobs" },
   dust: { colors: ["#7a6f5c", "#a89877"], grain: "dots" },
   smoke: { colors: ["#2a2a2e", "#4a4a52"], grain: "blobs" },
+  // The void: near-black with a faint molten under-glow. Wipe it away and the
+  // gold backdrop beneath is revealed — "del vacío hasta el oro".
+  void: { colors: ["#050403", "#140d05"], grain: "dots" },
 };
 const VOLUMETRIC: EffectLego[] = (Object.keys(VEIL_SPECS) as VeilKind[]).map((k) => ({
   id: `veil.${k}`, class: "volumetric" as const, mode: k,
