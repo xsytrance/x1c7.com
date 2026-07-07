@@ -87,8 +87,13 @@ body::after {
   /* --bass / --kick are the STEM senses (0..1, written per-frame when the
      planet ships stems.json): the 808 curve bends the whole stage, kicks
      thump it. Both default to 0 so stem-less planets are unchanged. */
+  /* PHASE 5 cinematic camera: --cam-* (default identity) dolly the whole stage.
+     Driven per-frame by the engine only at pass >= 5, so earlier phases are
+     unchanged. Composes with the beat/emo/bass scale below. */
   transform:
-    scale(calc(1 + var(--beat) * 0.08 + var(--emo) * 0.04 + var(--kick, 0) * 0.035))
+    translate3d(var(--cam-x, 0px), var(--cam-y, 0px), 0)
+    rotate(var(--cam-rot, 0deg))
+    scale(calc((1 + var(--beat) * 0.08 + var(--emo) * 0.04 + var(--kick, 0) * 0.035) * var(--cam-scale, 1)))
     skewX(calc(var(--bass, 0) * -2.4deg))
     scaleY(calc(1 + var(--bass, 0) * 0.045));
   transition: transform 0.06s linear;

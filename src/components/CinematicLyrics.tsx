@@ -79,9 +79,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   // The playlist drawer — the whole queue, one tap from any show.
   const [drawer, setDrawer] = useState(false);
   // Satellites: which pass of the show is playing (newest = main show).
-  // Phase 4 (the Kinetica upgrade — new effects, auto-triggers, per-word
-  // overrides) is the current top; passes 1-3 are the preserved earlier looks.
-  const MAX_PASS = 4;
+  // Phase 5 (the cinematic camera) is the current top; passes 1-4 are the
+  // preserved earlier looks — 4 = Kinetica effects, 3 = full stagecraft, etc.
+  const MAX_PASS = 5;
   const [pass, setPass] = useState(MAX_PASS);
   // Viewing style, remembered across sessions.
   const [mode, setMode] = useState<StageMode>("phrase");

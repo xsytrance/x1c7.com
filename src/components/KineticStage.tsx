@@ -433,6 +433,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const stemTrk = useRef<{ kick: OnsetTracker; snare: OnsetTracker; hat: OnsetTracker; beat: OnsetTracker } | null>(null);
   const kickPulse = useRef(0);
   const lastStemT = useRef(0);
+  // PHASE 5 cinematic camera: the current section's energy drives the dolly push.
+  const camPush = useRef(0.35);
   const [cutMode, setCutMode] = useState(false);
   const cutRef = useRef<[number, number] | null>(null);
   const riserRef = useRef<{ t: number; end: number } | null>(null);
@@ -691,6 +693,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const rootRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
+  // PHASE 5: when an earlier phase is selected, snap the cinematic camera back
+  // to identity (the pass >= 5 tick stops writing --cam, so clear it here).
+  useEffect(() => {
+    if (pass >= 5) return;
+    const r = rootRef.current;
+    r?.style.setProperty("--cam-scale", "1");
+    r?.style.setProperty("--cam-x", "0px");
+    r?.style.setProperty("--cam-y", "0px");
+    r?.style.setProperty("--cam-rot", "0deg");
+  }, [pass]);
   const titleRef = useRef(true);
 
   // ── Motion senses (pass 3+) ────────────────────────────────────────────
@@ -1022,6 +1034,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           setSection(s);
           if (s) {
             gradeTo(s);
+            camPush.current = s.intensity;
             stageRef.current?.style.setProperty("--emo", String(s.intensity));
             const mood = sectionArt?.[s.emotion.toLowerCase()];
             if (mood) setBgArt(pickArt(mood));
@@ -1029,6 +1042,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
           }
         }
+      }
+      // ── PHASE 5: the cinematic camera ── a slow directed dolly. It pushes in
+      // with the section's energy, breathes on the kick, and drifts forever on
+      // two out-of-phase sines so the frame never sits still. Gated to pass >= 5;
+      // a reset effect returns it to identity when an earlier phase is selected.
+      const camRoot = rootRef.current;
+      if (camRoot && pass >= 5) {
+        const push = camPush.current;                                  // 0..1 section energy
+        const beat = liteRef.current ? 0 : kickPulse.current;          // live kick breath
+        const scale = 1 + push * 0.05 + beat * 0.012;                  // ~1.00 .. 1.07
+        const camX = Math.sin(t * 0.11) * (6 + push * 12);             // px, slow drift
+        const camY = Math.cos(t * 0.083) * (4 + push * 7);
+        const rot = Math.sin(t * 0.067) * 0.4;                         // deg, barely-there tilt
+        camRoot.style.setProperty("--cam-scale", scale.toFixed(4));
+        camRoot.style.setProperty("--cam-x", `${camX.toFixed(1)}px`);
+        camRoot.style.setProperty("--cam-y", `${camY.toFixed(1)}px`);
+        camRoot.style.setProperty("--cam-rot", `${rot.toFixed(3)}deg`);
       }
       raf = requestAnimationFrame(tick);
     };
@@ -1186,7 +1216,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             transition={{ duration: held ? 0.7 : 1.6, ease: "easeInOut" }}
           >
             {/* parallax shell — rides the device tilt / mouse via CSS vars */}
-            <div className="h-full w-full" style={{ transform: "translate3d(var(--par-x, 0px), var(--par-y, 0px), 0) scale(1.05)", willChange: "transform" }}>
+            <div className="h-full w-full" style={{ transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))", willChange: "transform" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <motion.img
                 src={bgArt}
