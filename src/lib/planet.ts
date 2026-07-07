@@ -1,5 +1,7 @@
 // The song "planet" — LLM analysis that gives the lyric engine meaning to render.
 
+import type { TextEffect } from "@/lib/effects/registry";
+
 export interface PlanetSection {
   name: string;
   emotion: string;
@@ -38,12 +40,46 @@ export interface PlanetInteractions {
   moments?: { t: number; end: number; type: string; layer: string; prompt: string }[];
 }
 
+/** Preset/vibe biasing + per-word overrides for the word-level text effects.
+ *  Written by a vibe preset (kinetica) or the per-word override UI; read by the
+ *  stage's effect resolver. Both are optional — absent = the engine's own picks. */
+export interface PlanetEffects {
+  /** lowercased word -> a forced text effect. Highest priority; also the only
+   *  way to summon freeze/melt/carve (they have no automatic word trigger). */
+  overrides?: Record<string, TextEffect>;
+  /** a preset's allowed palette: if set, a naturally-matched effect NOT in this
+   *  list is suppressed (the word renders plain), keeping a vibe coherent. */
+  allow?: TextEffect[];
+}
+
+/** Resolve a word's text effect through the preset/override seam. Precedence:
+ *  an explicit per-word override wins (checked against each candidate key, and
+ *  the only way to summon freeze/melt/carve); otherwise the stage's natural pick
+ *  stands unless a preset `allow` list rules it out (then the word renders plain).
+ *  Pure + dependency-free so both the stage and tests can share one contract. */
+export function resolveWordEffect(
+  natural: TextEffect | null,
+  cfg: PlanetEffects | undefined,
+  keys: string[],
+): TextEffect | null {
+  if (cfg?.overrides) {
+    for (const k of keys) {
+      const o = cfg.overrides[k];
+      if (o) return o;
+    }
+  }
+  if (natural && cfg?.allow && !cfg.allow.includes(natural)) return null;
+  return natural;
+}
+
 export interface Planet {
   analysis: PlanetAnalysis;
   assets?: PlanetAssets;
   /** "Artist — 'Song'" when this track is a response/answer record. */
   respondsTo?: string;
   interactions?: PlanetInteractions;
+  /** Preset/override biasing of the word text effects (optional). */
+  effects?: PlanetEffects;
   generatedAt: string | null;
 }
 

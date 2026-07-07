@@ -9,7 +9,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, typ
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
-import { activeSection, sectionMotion, type PlanetSection, type SectionMotion } from "@/lib/planet";
+import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
@@ -166,7 +166,7 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   carve: (w, a) => <WordCarve word={w} airtime={a} />,
 };
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
@@ -180,6 +180,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   /** Diagnostics only: override the playhead clock (seconds). Lets the perf
    * harness drive the show deterministically with no audio. */
   clock?: () => number;
+  /** Live preset/vibe effect biasing. Takes precedence over track.planet.effects
+   * — lets the UI bias effects per render without cloning (and re-loading) the
+   * whole track on every preset switch. */
+  effects?: PlanetEffects;
 }) {
   const { getCurrentTime: playerTime, setMuffle } = useMusicPlayer();
   const getCurrentTime = clock ?? playerTime;
@@ -570,6 +574,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   }, [pass]);
   const interactions = track.planet?.interactions;
   const tapFx = interactions?.tapEffect ?? "dissolve";
+  // Preset/vibe effect biasing + per-word overrides (both optional). A live
+  // `effects` prop (preset UI) wins over the planet's persisted config; when
+  // neither is set the stage's own word-matching drives everything.
+  const effectsCfg = effects ?? track.planet?.effects;
   // MORE moments: beyond the LLM-choreographed ones, the engine reads the song
   // itself — the longest instrumental gap becomes a wipe, the biggest intensity
   // jump gets a blow (arrive the drop on a breath), the wildest section a shake.
@@ -1452,18 +1460,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     // Dynamic plain words ASSEMBLE: every letter flies in from
                     // its own golden-angle direction — no two ever match.
                     const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !glyph;
-                    // The matched signature treatment resolves to a single registry
-                    // TextEffect id, then renders through the shared WORD_FX map.
-                    const sigFx: TextEffect | null = glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
+                    // The stage's own natural pick for this word, in priority order;
+                    // it resolves to one registry TextEffect id rendered via WORD_FX.
+                    const naturalSig: TextEffect | null = burns ? "burn"
+                      : glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
                       : neon ? "neon" : pulses ? "pulse" : whispers ? "whisper"
                       : fizzes ? "fizz" : types ? "type" : null;
+                    // Bias seam (pure, shared with tests): per-word override wins,
+                    // else the natural pick unless the preset `allow` list rules it out.
+                    const resolvedFx = resolveWordEffect(naturalSig, effectsCfg, [ek, lower]);
+                    const sigFx = resolvedFx && resolvedFx !== "burn" ? resolvedFx : null;
                     let inner: ReactNode = sigFx ? WORD_FX[sigFx](shown, airtime)
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
                       : assembles ? <WordAssemble word={shown} baseAngle={idx * GOLDEN} charged={charged} />
                       : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
                     // Tap reaction — in the song's own language (per-planet choreography).
                     if (touchBurn === idx) return WORD_FX[tapFx](shown, tapFx === "burn" ? Math.max(airtime, 1.2) : airtime);
-                    if (burns) return WORD_FX.burn(shown, airtime);
+                    if (resolvedFx === "burn") return WORD_FX.burn(shown, airtime);
                     // Effect words still rush in whole, from the golden-angle
                     // direction that belongs to this word alone. (Assembled
                     // words already fly per-letter; slams drop from above.)

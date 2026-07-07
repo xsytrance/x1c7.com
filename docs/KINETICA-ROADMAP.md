@@ -1,10 +1,12 @@
 # Kinetica — Free Version Roadmap (Phase 2+)
 
-> **Status:** Phase 2.1 ✅ **complete & verified** (2026-07-07) — `freeze/melt/carve`
-> built (registry↔stage drift fully closed; `WORD_FX` now covers every `TextEffect`),
-> The Met + NASA keyless photo sources added, and a "never blank" fallback chain wired
-> through `KEYLESS_SOURCES`. Phase 2.0 (Foundation) done before it. See
-> [`BUILD-LOG.md`](./BUILD-LOG.md). **Next: Phase 2.2 (vibe/preset effect-biasing + per-word overrides).**
+> **Status:** Phase 2.2 **in progress** (2026-07-07) — the **effect-bias seam** is done:
+> `PlanetEffects` + a pure `resolveWordEffect` (override > preset `allow` > natural;
+> overrides are the only way to summon freeze/melt/carve), consumed by the stage via a
+> live `effects` prop, and wired into kinetica presets (each preset now carries an
+> allowed effect palette). Contract verified (12/12). **Still open in 2.2:** preset
+> expansion + custom vibe builder + cover-art auto-theme. Per-word override **UI** = 2.3
+> (engine hook now in place). Phases 2.0/2.1 done before. See [`BUILD-LOG.md`](./BUILD-LOG.md).
 
 ## Context
 
