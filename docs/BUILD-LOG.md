@@ -7,6 +7,45 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Lexicon dream loop: registry-driven tables + shelf re-dream
+
+**Goal:** the dream loop's hand-copied tag tables had drifted **16 text effects
+behind** `registry.ts` (they only knew the original 8) — every word it filled
+could never wear the signature treatments or tranches 2–3. Kill that bug class
+and refresh the shelf.
+
+**Changes (`scripts/lexicon/dream.mjs` + data + docs):**
+1. **Registry-driven tables** — the lego vocabularies are now **extracted from
+   `registry.ts`'s literal effect rows at run time** (regex over the uniform row
+   shape), so adding an effect row is enough for the dream loop to pick it up.
+   A drift guard exits loudly if extraction ever goes blind. `EXTRA_*` tables
+   preserve the loop's shelf-only enrichments (e.g. richer SURFACE vocab — the
+   registry's surface rows only carry their own name as a tag).
+2. **Bug found by the new coverage histogram, fixed:** with signature effects
+   dreamable, full-prompt matching put `neon` on **all 95 senses** — the
+   generated imagery suffix "…volumetric light, film grain" hits neon's `light`
+   tag. TEXT now matches the sense **core** (word + gloss + emotion) like
+   SURFACE always did: scene dressing must not pick word treatments. neon 95→1.
+3. **Coverage histogram** every run — senses-per-text-effect, zeros included,
+   so under-use is visible instead of silently absent.
+4. **Emotion rules for the new effects** — nostalgia/wistful/longing →
+   chromatic; hurt/pain/betrayal → bleed.
+5. **Shelf re-dreamed** (`--force`, all 87 words / 95 senses): +211 legos.
+   Spot-checks read right: "dreams"→chromatic, "code"→glitch/type,
+   "silence"→dissolve/whisper, "lie"→redact+bleed, and the Spanish words
+   sangre/herida wear bleed. carve/slam/wave/pulse/fall/echo/liquid have no
+   wearers yet — correctly reported, they fill as songs bring vocabulary.
+6. **npm scripts** — `lexicon:harvest/dream/redream/publish/grow` so the
+   pipeline is discoverable from package.json.
+
+**Verified:** `next build` green (lexicon.json is a bundled chunk); dream run
+output + spot-checks above. Publish to R2 not run from here (creds live on the
+owner box); the nightly `grow-and-publish.sh` cron ships the refreshed shelf on
+its next run — and with registry-driven tables it inherits every future effect
+tranche automatically.
+
+---
+
 ## 2026-07-07 — Pillar 1 tranche 3: redact / chromatic / liquid / bleed
 
 **Goal:** keep widening the engine's text-effect palette (roadmap Pillar 1,

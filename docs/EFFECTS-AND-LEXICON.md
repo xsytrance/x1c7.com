@@ -282,15 +282,29 @@ Key properties:
 
 - **A queue, not a firehose** — `--limit N` words per run (default 40), resumable.
 - **Honest** — it **logs what it skipped**, so "covered everything" never lies.
+- **Registry-driven tables (2026-07-07)** — the tag vocabularies are **extracted
+  from `registry.ts`'s effect rows at run time**, so a new effect lands in the
+  dream loop automatically. (The old hand-copied tables had drifted 16 text
+  effects behind the registry.) A parser drift-guard fails loudly if the row
+  format ever changes, and `EXTRA_*` tables layer shelf-only vocabulary on top.
+- **Meaning, not scene-dressing, for word-attached legos** — TEXT matches the
+  sense **core** (word + gloss + emotion) like SURFACE does, not the full
+  imagery-prompt text. (Full-text matching put `neon` on **every** sense in the
+  shelf — the generated prompt suffix "…volumetric light, film grain" hits
+  neon's `light` tag.)
+- **Coverage histogram** — every run prints how many senses can wear each text
+  effect, including the ones at zero, so under-used effects are visible instead
+  of silently absent (that's how the drift went unnoticed).
 - **Token/stem matching, not substring** — so `"crashing"` never matches the `ash`
   tag and `"voice"` never matches `ice`. (This was a real bug; it's fixed.)
 - **Emotion guarantees** — `EMOTION_RULES` ensure even an abstract word gets a fitting
-  treatment (e.g. _regret_ → ash + dissolve + blackout), never an empty sense.
+  treatment (e.g. _regret_ → ash + dissolve + blackout, _nostalgia_ → chromatic,
+  _hurt_ → bleed), never an empty sense.
 
 ```bash
-node scripts/lexicon/dream.mjs              # fill the next 40 unfilled words
-node scripts/lexicon/dream.mjs --limit 999  # do the whole frontier
-node scripts/lexicon/dream.mjs --force      # re-dream already-filled words
+npm run lexicon:dream     # fill the next 40 unfilled words
+npm run lexicon:redream   # re-dream the whole shelf (--force --limit 999)
+npm run lexicon:grow      # the full nightly pipeline (harvest → dream → publish)
 ```
 
 **Grow it on autopilot:** put `dream.mjs` on a cron or a `/loop` and the shelf keeps

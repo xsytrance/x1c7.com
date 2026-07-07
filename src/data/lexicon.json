@@ -1,7 +1,7 @@
 {
   "version": 1,
   "galaxy": "xsytrance-canon",
-  "generatedAt": "2026-07-05T05:00:01.344Z",
+  "generatedAt": "2026-07-07T22:36:57.029Z",
   "entries": {
     "circus": {
       "word": "circus",
@@ -50,7 +50,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "server": {
       "word": "server",
@@ -81,7 +81,8 @@
             "weather": [
               "sparks",
               "dust",
-              "snow"
+              "snow",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -105,7 +106,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "ai": {
       "word": "ai",
@@ -134,16 +135,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "glitch"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -152,7 +157,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "ringmaster": {
       "word": "ringmaster",
@@ -181,7 +186,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -190,7 +196,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -199,7 +207,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "clouds": {
       "word": "clouds",
@@ -228,16 +236,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "glitch"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -246,7 +258,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "protocol": {
       "word": "protocol",
@@ -275,7 +287,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -284,7 +297,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -293,7 +308,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "bit": {
       "word": "bit",
@@ -323,7 +338,8 @@
           "legos": {
             "weather": [
               "sparks",
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -331,10 +347,13 @@
               "dust"
             ],
             "text": [
-              "glitch"
+              "glitch",
+              "chromatic"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays",
+              "flare"
             ]
           },
           "score": 2
@@ -344,7 +363,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "code": {
       "word": "code",
@@ -374,19 +393,23 @@
           "legos": {
             "weather": [
               "bubbles",
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "steam",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "shatter",
-              "glitch"
+              "glitch",
+              "type"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -396,7 +419,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "cocktails": {
       "word": "cocktails",
@@ -436,7 +459,8 @@
             ],
             "text": [
               "melt",
-              "dissolve"
+              "dissolve",
+              "fizz"
             ],
             "light": [
               "godrays"
@@ -449,7 +473,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "dreams": {
       "word": "dreams",
@@ -485,7 +509,9 @@
               "dust"
             ],
             "text": [
-              "bloom"
+              "bloom",
+              "rise",
+              "chromatic"
             ],
             "light": [
               "godrays",
@@ -515,17 +541,20 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "chromatic"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -536,7 +565,7 @@
         "cc",
         "seoul"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "future": {
       "word": "future",
@@ -588,7 +617,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "growth": {
       "word": "growth",
@@ -617,17 +646,21 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "bloom",
               "glitch"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -636,7 +669,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "summer": {
       "word": "summer",
@@ -729,7 +762,7 @@
         "cc",
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "success": {
       "word": "success",
@@ -781,7 +814,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "silence": {
       "word": "silence",
@@ -810,14 +843,16 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "whisper"
             ],
             "light": [
               "blackout",
@@ -831,7 +866,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "noise": {
       "word": "noise",
@@ -860,7 +895,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -869,7 +905,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -878,7 +916,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "storm": {
       "word": "storm",
@@ -908,19 +946,22 @@
           "legos": {
             "weather": [
               "rain",
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "glitch"
             ],
             "light": [
               "blackout",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -930,7 +971,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "order": {
       "word": "order",
@@ -979,7 +1020,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "chaos": {
       "word": "chaos",
@@ -1008,7 +1049,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1017,7 +1059,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1026,7 +1070,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "ceasefire": {
       "word": "ceasefire",
@@ -1055,16 +1099,20 @@
           ],
           "legos": {
             "weather": [
-              "ash"
+              "ash",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1073,7 +1121,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "walking": {
       "word": "walking",
@@ -1102,16 +1150,20 @@
           ],
           "legos": {
             "weather": [
-              "rain"
+              "rain",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "fog"
+              "fog",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1120,7 +1172,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "different": {
       "word": "different",
@@ -1149,7 +1201,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1158,7 +1211,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1167,7 +1222,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "build": {
       "word": "build",
@@ -1196,16 +1251,20 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "type"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         },
@@ -1230,16 +1289,20 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "type"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1249,7 +1312,7 @@
         "dts",
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "dream": {
       "word": "dream",
@@ -1287,7 +1350,9 @@
               "dust"
             ],
             "text": [
-              "bloom"
+              "bloom",
+              "rise",
+              "chromatic"
             ],
             "light": [
               "godrays",
@@ -1301,7 +1366,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "light": {
       "word": "light",
@@ -1330,14 +1395,16 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "neon"
             ],
             "light": [
               "godrays",
@@ -1351,7 +1418,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "waiting": {
       "word": "waiting",
@@ -1380,7 +1447,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1389,7 +1457,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1398,7 +1468,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "motivation": {
       "word": "motivation",
@@ -1427,7 +1497,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1436,7 +1507,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1445,7 +1518,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "somebody": {
       "word": "somebody",
@@ -1483,7 +1556,8 @@
               "dust"
             ],
             "text": [
-              "bloom"
+              "bloom",
+              "rise"
             ],
             "light": [
               "godrays"
@@ -1512,16 +1586,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1531,7 +1609,7 @@
         "fast",
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "fast": {
       "word": "fast",
@@ -1560,17 +1638,21 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "shatter",
               "glitch"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1579,7 +1661,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "mission": {
       "word": "mission",
@@ -1608,16 +1690,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1626,7 +1712,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "keep": {
       "word": "keep",
@@ -1655,7 +1741,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1664,7 +1751,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1673,7 +1762,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "level": {
       "word": "level",
@@ -1702,7 +1791,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -1711,7 +1801,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1720,7 +1812,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "golden": {
       "word": "golden",
@@ -1758,10 +1850,12 @@
               "dust"
             ],
             "text": [
-              "bloom"
+              "bloom",
+              "shimmer"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -1771,7 +1865,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "sky": {
       "word": "sky",
@@ -1800,17 +1894,20 @@
           ],
           "legos": {
             "weather": [
-              "bubbles"
+              "bubbles",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "steam"
+              "steam",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -1820,7 +1917,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "ganga": {
       "word": "ganga",
@@ -1849,16 +1946,20 @@
           ],
           "legos": {
             "weather": [
-              "bubbles"
+              "bubbles",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "steam"
+              "steam",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1867,7 +1968,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "frio": {
       "word": "frio",
@@ -1907,7 +2008,9 @@
             "text": [
               "freeze"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -1916,7 +2019,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "sangre": {
       "word": "sangre",
@@ -1945,17 +2048,20 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "bleed"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -1965,7 +2071,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "vibra": {
       "word": "vibra",
@@ -1995,12 +2101,14 @@
           "legos": {
             "weather": [
               "bubbles",
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "steam",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "dissolve"
@@ -2016,7 +2124,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "cicatrices": {
       "word": "cicatrices",
@@ -2054,7 +2162,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2063,7 +2173,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "conexion": {
       "word": "conexion",
@@ -2092,7 +2202,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2101,7 +2212,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2110,7 +2223,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "barrio": {
       "word": "barrio",
@@ -2139,11 +2252,13 @@
           ],
           "legos": {
             "weather": [
-              "bubbles"
+              "bubbles",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "steam"
+              "steam",
+              "dust"
             ],
             "text": [
               "dissolve"
@@ -2159,7 +2274,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "night": {
       "word": "night",
@@ -2189,18 +2304,22 @@
           "legos": {
             "weather": [
               "bubbles",
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "steam",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
-              "glitch"
+              "glitch",
+              "tremor"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -2210,7 +2329,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "voice": {
       "word": "voice",
@@ -2239,17 +2358,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "glitch"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -2298,7 +2420,7 @@
         "paper",
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "lie": {
       "word": "lie",
@@ -2327,16 +2449,24 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen",
+              "ash"
             ],
             "surface": [],
             "veils": [
-              "dust"
+              "dust",
+              "ash"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "redact",
+              "bleed"
             ],
-            "light": []
+            "light": [
+              "godrays",
+              "flicker"
+            ]
           },
           "score": 2
         }
@@ -2345,7 +2475,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "cut": {
       "word": "cut",
@@ -2374,16 +2504,23 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen",
+              "ash"
             ],
             "surface": [],
             "veils": [
-              "dust"
+              "dust",
+              "ash"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "bleed"
             ],
-            "light": []
+            "light": [
+              "godrays",
+              "flicker"
+            ]
           },
           "score": 2
         }
@@ -2392,7 +2529,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "paranoia": {
       "word": "paranoia",
@@ -2421,7 +2558,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2431,7 +2569,8 @@
               "dissolve"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -2441,7 +2580,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "remix": {
       "word": "remix",
@@ -2470,7 +2609,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2479,7 +2619,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2488,7 +2630,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "watching": {
       "word": "watching",
@@ -2517,17 +2659,20 @@
           ],
           "legos": {
             "weather": [
-              "sparks"
+              "sparks",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "glitch"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -2537,7 +2682,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "quit": {
       "word": "quit",
@@ -2567,18 +2712,21 @@
           "legos": {
             "weather": [
               "rain",
-              "embers"
+              "embers",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "burn"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -2588,7 +2736,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "pressure": {
       "word": "pressure",
@@ -2617,7 +2765,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2626,7 +2775,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2635,7 +2786,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "pushing": {
       "word": "pushing",
@@ -2664,7 +2815,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2673,7 +2825,9 @@
             "text": [
               "melt"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2682,7 +2836,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "arms": {
       "word": "arms",
@@ -2711,7 +2865,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2720,7 +2875,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2729,7 +2886,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "lungs": {
       "word": "lungs",
@@ -2758,7 +2915,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2768,7 +2926,8 @@
               "dissolve"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -2778,7 +2937,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "heart": {
       "word": "heart",
@@ -2807,11 +2966,13 @@
           ],
           "legos": {
             "weather": [
-              "embers"
+              "embers",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "burn"
@@ -2844,7 +3005,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2853,7 +3015,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         },
@@ -2878,7 +3042,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -2887,7 +3052,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2898,7 +3065,7 @@
         "seoul",
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "crown": {
       "word": "crown",
@@ -2927,16 +3094,20 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "shimmer"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -2945,7 +3116,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "extrano": {
       "word": "extrano",
@@ -2975,18 +3146,21 @@
           "legos": {
             "weather": [
               "bubbles",
-              "ash"
+              "ash",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "steam",
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -2996,7 +3170,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "romperme": {
       "word": "romperme",
@@ -3025,7 +3199,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3034,7 +3209,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3043,7 +3220,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "vuelve": {
       "word": "vuelve",
@@ -3072,17 +3249,20 @@
           ],
           "legos": {
             "weather": [
-              "embers"
+              "embers",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "burn"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -3092,7 +3272,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "herida": {
       "word": "herida",
@@ -3121,16 +3301,24 @@
           ],
           "legos": {
             "weather": [
-              "rain"
+              "rain",
+              "pollen",
+              "ash"
             ],
             "surface": [],
             "veils": [
-              "fog"
+              "fog",
+              "dust",
+              "ash"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "bleed"
             ],
-            "light": []
+            "light": [
+              "godrays",
+              "flicker"
+            ]
           },
           "score": 2
         }
@@ -3139,7 +3327,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "defiende": {
       "word": "defiende",
@@ -3168,7 +3356,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3177,7 +3366,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3186,7 +3377,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "suelto": {
       "word": "suelto",
@@ -3215,7 +3406,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3224,7 +3416,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3233,7 +3427,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "seoul": {
       "word": "seoul",
@@ -3263,18 +3457,23 @@
           "legos": {
             "weather": [
               "rain",
-              "sparks"
+              "sparks",
+              "pollen",
+              "dust"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "chromatic"
             ],
             "light": [
-              "godrays"
+              "godrays",
+              "flare"
             ]
           },
           "score": 2
@@ -3284,7 +3483,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "phone": {
       "word": "phone",
@@ -3336,7 +3535,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "worldwide": {
       "word": "worldwide",
@@ -3365,7 +3564,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3374,7 +3574,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3383,7 +3585,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "border": {
       "word": "border",
@@ -3412,7 +3614,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3421,7 +3624,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3430,7 +3635,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "steady": {
       "word": "steady",
@@ -3459,7 +3664,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3468,7 +3674,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3477,7 +3685,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "fold": {
       "word": "fold",
@@ -3506,17 +3714,20 @@
           ],
           "legos": {
             "weather": [
-              "embers"
+              "embers",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "burn"
             ],
             "light": [
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -3526,7 +3737,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "nobody": {
       "word": "nobody",
@@ -3539,7 +3750,9 @@
           "pos": "other",
           "emotion": "Cautious",
           "imageryPrompts": [
-            "nobody, cautious mood, cinematic, volumetric light"
+            "nobody, cautious mood, cinematic, volumetric light",
+            "nobody, cautious mood, cinematic, volumetric light — extreme close-up, shallow depth of field",
+            "nobody, cautious mood, cinematic, volumetric light, film grain"
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nobody/s0-1.webp",
@@ -3562,7 +3775,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3571,7 +3786,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "rhythm": {
       "word": "rhythm",
@@ -3600,7 +3815,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3610,7 +3826,8 @@
               "dissolve"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -3620,7 +3837,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "solid": {
       "word": "solid",
@@ -3649,16 +3866,20 @@
           ],
           "legos": {
             "weather": [
-              "rain"
+              "rain",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "fog"
+              "fog",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3667,7 +3888,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "smile": {
       "word": "smile",
@@ -3706,7 +3927,8 @@
               "dissolve"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -3716,7 +3938,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "pause": {
       "word": "pause",
@@ -3745,7 +3967,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3754,7 +3977,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -3763,7 +3988,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "dreaming": {
       "word": "dreaming",
@@ -3812,7 +4037,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "hold": {
       "word": "hold",
@@ -3843,18 +4068,21 @@
             "weather": [
               "rain",
               "sparks",
-              "petals"
+              "petals",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "static"
+              "static",
+              "dust"
             ],
             "text": [
               "bloom"
             ],
             "light": [
-              "flare"
+              "flare",
+              "godrays"
             ]
           },
           "score": 2
@@ -3864,7 +4092,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "living": {
       "word": "living",
@@ -3893,17 +4121,20 @@
           ],
           "legos": {
             "weather": [
-              "ash"
+              "ash",
+              "pollen"
             ],
             "surface": [],
             "veils": [
-              "ash"
+              "ash",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
             "light": [
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -3913,7 +4144,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "strings": {
       "word": "strings",
@@ -3963,7 +4194,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "bassline": {
       "word": "bassline",
@@ -4014,7 +4245,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "beach": {
       "word": "beach",
@@ -4045,7 +4276,8 @@
             "weather": [
               "embers",
               "bubbles",
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4068,7 +4300,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "balance": {
       "word": "balance",
@@ -4097,7 +4329,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4106,7 +4339,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -4115,7 +4350,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "healing": {
       "word": "healing",
@@ -4144,7 +4379,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4153,7 +4389,9 @@
             "text": [
               "dissolve"
             ],
-            "light": []
+            "light": [
+              "godrays"
+            ]
           },
           "score": 2
         }
@@ -4162,7 +4400,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "gold": {
       "word": "gold",
@@ -4200,7 +4438,8 @@
               "dust"
             ],
             "text": [
-              "bloom"
+              "bloom",
+              "shimmer"
             ],
             "light": [
               "godrays"
@@ -4229,19 +4468,22 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "dust"
             ],
             "text": [
-              "dissolve"
+              "dissolve",
+              "shimmer"
             ],
             "light": [
               "flare",
               "flicker",
-              "blackout"
+              "blackout",
+              "godrays"
             ]
           },
           "score": 2
@@ -4252,7 +4494,7 @@
         "vg",
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "whistle": {
       "word": "whistle",
@@ -4282,19 +4524,22 @@
           "legos": {
             "weather": [
               "rain",
-              "bubbles"
+              "bubbles",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "steam"
+              "steam",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4304,7 +4549,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "trouble": {
       "word": "trouble",
@@ -4335,19 +4580,22 @@
             "weather": [
               "ash",
               "rain",
-              "embers"
+              "embers",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "ash",
-              "fog"
+              "fog",
+              "dust"
             ],
             "text": [
               "burn"
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4357,7 +4605,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "boys": {
       "word": "boys",
@@ -4386,7 +4634,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4397,7 +4646,8 @@
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4407,7 +4657,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "foghorn": {
       "word": "foghorn",
@@ -4437,19 +4687,22 @@
           "legos": {
             "weather": [
               "rain",
-              "bubbles"
+              "bubbles",
+              "pollen"
             ],
             "surface": [],
             "veils": [
               "fog",
-              "steam"
+              "steam",
+              "dust"
             ],
             "text": [
               "dissolve"
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4459,7 +4712,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "dock": {
       "word": "dock",
@@ -4488,7 +4741,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4499,7 +4753,8 @@
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4509,7 +4764,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     },
     "riverboat": {
       "word": "riverboat",
@@ -4539,7 +4794,8 @@
           "legos": {
             "weather": [
               "rain",
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -4551,7 +4807,8 @@
             ],
             "light": [
               "flare",
-              "flicker"
+              "flicker",
+              "godrays"
             ]
           },
           "score": 2
@@ -4561,7 +4818,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-04T15:13:04.847Z"
+      "updatedAt": "2026-07-07T22:36:57.029Z"
     }
   },
   "stats": {

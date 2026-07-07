@@ -32,20 +32,46 @@ const FORCE = args.includes("--force");
 const li = args.indexOf("--limit");
 const LIMIT = li >= 0 ? parseInt(args[li + 1], 10) || 40 : 40;
 
-// ── The lego vocabularies — which words summon which effect. Kept in step with
-//    src/lib/effects/registry.ts (the runtime source of truth). ──────────────
-const WEATHER_TAGS = {
-  ash: ["ash", "ashes", "cinder", "smoulder", "charred", "burnt", "soot", "regret", "ruin", "aftermath", "smoke"],
-  embers: ["fire", "burn", "flame", "ember", "blaze", "match", "heat", "spark"],
-  rain: ["rain", "storm", "river", "ocean", "water", "sea", "tide", "drown", "flood", "tear", "cry", "wave"],
-  snow: ["snow", "winter", "frost", "cold", "ice", "freeze", "frozen", "blizzard", "numb"],
-  bubbles: ["champagne", "cocktail", "drink", "bubble", "party", "fizz", "celebrate", "toast", "club", "night"],
-  sparks: ["glitch", "static", "signal", "wifi", "data", "code", "server", "digital", "circuit", "neon", "screen", "tech"],
-  petals: ["rose", "petal", "bloom", "blossom", "flower", "garden", "romance", "amor", "love", "valentine", "kiss"],
-  pollen: ["pollen", "meadow", "field", "dandelion", "wheat", "honey", "golden", "sunlit", "hazy", "summer", "warm"],
-  dust: ["dust", "desert", "old", "faded", "memory", "empty", "road", "wander"],
+// ── The lego vocabularies — which words summon which effect. ────────────────
+// The registry (src/lib/effects/registry.ts) is the runtime source of truth,
+// and its literal EffectLego rows are EXTRACTED from source at run time — so a
+// new effect row lands in the dream loop automatically. (The old hand-copied
+// tables drifted 16 text effects behind the registry; this kills that class of
+// bug.) EXTRA_* below layers the dream loop's own enrichments on top: shelf-
+// only vocabulary that would be too loose for the live stage matchers.
+const REGISTRY = path.join(ROOT, "src", "lib", "effects", "registry.ts");
+function registryTags() {
+  const src = fs.readFileSync(REGISTRY, "utf8");
+  const rows = [...src.matchAll(
+    /\{\s*id:\s*"[\w.]+",\s*class:\s*"(airborne|textbound|light|surface)"[^}]*?mode:\s*"([\w-]+)"[^}]*?tags:\s*\[([^\]]*)\]/g,
+  )];
+  const out = { airborne: {}, textbound: {}, light: {}, surface: {} };
+  for (const [, cls, mode, tagSrc] of rows) {
+    const tags = [...tagSrc.matchAll(/"([^"]+)"/g)].map((m) => m[1]);
+    out[cls][mode] = [...new Set([...(out[cls][mode] || []), ...tags])];
+  }
+  return out;
+}
+const mergeTags = (base, extra) => {
+  const out = {};
+  for (const k of new Set([...Object.keys(base), ...Object.keys(extra)]))
+    out[k] = [...new Set([...(base[k] || []), ...(extra[k] || [])])];
+  return out;
 };
-const SURFACE_TAGS = {
+
+const EXTRA_WEATHER_TAGS = {
+  ash: ["smoke"],
+  embers: ["spark"],
+  rain: ["tear", "cry", "wave"],
+  bubbles: ["night"],
+  sparks: ["screen", "tech"],
+  petals: ["kiss"],
+  pollen: ["warm"],
+  dust: ["road", "wander"],
+};
+// SURFACE rows in the registry are generated from SURFACE_SPECS with only their
+// own name as a tag, so the dream loop's richer vocabulary is the real matcher.
+const EXTRA_SURFACE_TAGS = {
   mud: ["mud", "swamp", "dirt", "mire", "bog", "sink", "stuck", "filth"],
   rust: ["rust", "decay", "rot", "corrode", "abandon", "ruin", "neglect", "metal"],
   cracks: ["crack", "fracture", "break", "split", "shatter", "broken", "fault", "glass"],
@@ -55,22 +81,30 @@ const SURFACE_TAGS = {
   blood: ["blood", "wound", "bleed", "scar", "hurt", "kill", "vein"],
   sand: ["sand", "dune", "drought", "dry", "erode", "hourglass", "time"],
 };
-const TEXT_TAGS = {
-  burn: ["burn", "fire", "rage", "ember", "flame", "desire"],
-  shatter: ["shatter", "break", "glass", "heartbreak", "goodbye", "apart"],
-  dissolve: ["fade", "forget", "ghost", "gone", "vanish", "erase", "regret"],
-  bloom: ["bloom", "love", "hope", "joy", "grow", "flower"],
-  glitch: ["glitch", "error", "signal", "digital", "static", "code"],
-  freeze: ["cold", "freeze", "frost", "numb", "ice"],
-  melt: ["melt", "heat", "sweat", "drip", "summer"],
-  carve: ["stone", "carve", "forever", "name", "monument"],
+const EXTRA_TEXT_TAGS = {
+  burn: ["rage"],
+  shatter: ["apart"],
+  dissolve: ["vanish", "erase", "regret"],
+  glitch: ["error"],
 };
-const LIGHT_TAGS = {
-  godrays: ["light", "dawn", "hope", "heaven", "sun", "rise"],
-  flare: ["shine", "star", "flash", "camera", "spotlight", "glow"],
-  flicker: ["flicker", "doubt", "fear", "haunt", "old", "ghost"],
-  blackout: ["dark", "void", "silence", "death", "end", "empty"],
+const EXTRA_LIGHT_TAGS = {
+  godrays: ["rise"],
+  flare: ["glow"],
+  flicker: ["ghost"],
+  blackout: ["empty"],
 };
+
+const REG = registryTags();
+// Parser drift guard — if the registry's row format changes and extraction goes
+// blind, fail LOUDLY instead of silently dreaming with empty tables.
+if (!Object.keys(REG.textbound).length || !Object.keys(REG.airborne).length || !Object.keys(REG.light).length) {
+  console.error("✗ could not extract effect rows from registry.ts — the row format drifted from this parser");
+  process.exit(1);
+}
+const WEATHER_TAGS = mergeTags(REG.airborne, EXTRA_WEATHER_TAGS);
+const SURFACE_TAGS = mergeTags(REG.surface, EXTRA_SURFACE_TAGS);
+const TEXT_TAGS = mergeTags(REG.textbound, EXTRA_TEXT_TAGS);
+const LIGHT_TAGS = mergeTags(REG.light, EXTRA_LIGHT_TAGS);
 const WEATHER_VEIL = { embers: "ash", ash: "ash", rain: "fog", snow: "frost", dust: "dust", bubbles: "steam", sparks: "static", petals: "fog", pollen: "dust" };
 
 // Emotion → guaranteed legos, so even an abstract word gets a fitting treatment.
@@ -81,6 +115,8 @@ const EMOTION_RULES = [
   [/hope|joy|euphor|excite|uplift|triumph|freedom/, { weather: "pollen", text: "bloom", light: "godrays" }],
   [/cold|numb|distant|empty|isolat/, { weather: "snow", text: "freeze", light: "blackout" }],
   [/fear|anxious|dread|haunt|paranoi/, { weather: "sparks", text: "glitch", light: "flicker" }],
+  [/nostalg|wistful|longing|yearn|remini|bittersweet/, { weather: "dust", text: "chromatic", light: "flare" }],
+  [/hurt|pain|wound|betray|anguish|torment/, { weather: "ash", text: "bleed", light: "flicker" }],
   [/calm|peace|relax|serene|dream/, { weather: "dust", text: "dissolve", light: "godrays" }],
 ];
 
@@ -120,7 +156,11 @@ function dreamSense(word, sense) {
 
   matchTags(has, WEATHER_TAGS, legos.weather);
   matchTags(hasCore, SURFACE_TAGS, legos.surface);
-  matchTags(has, TEXT_TAGS, legos.text);
+  // TEXT is word-attached, so like SURFACE it matches the word's MEANING only.
+  // Matching the full prompt text put neon on every sense in the shelf — the
+  // generated prompt suffix "…volumetric light, film grain" hits neon's
+  // "light" tag. Scene dressing must not pick word treatments.
+  matchTags(hasCore, TEXT_TAGS, legos.text);
   matchTags(has, LIGHT_TAGS, legos.light);
 
   // Emotion guarantees — never leave a sense empty.
@@ -187,8 +227,17 @@ function main() {
   lex.generatedAt = now;
 
   fs.writeFileSync(LEX, JSON.stringify(lex, null, 2));
+  console.log(`✦ registry loaded: ${Object.keys(REG.textbound).length} text · ${Object.keys(REG.airborne).length} weather · ${Object.keys(REG.light).length} light effects`);
   console.log(`✦ dreamt ${dreamt} words (+${newLegos} legos)`);
   console.log(`✦ lexicon now ${f}/${all.length} words filled · ${senses} senses`);
+  // Shelf coverage — how many senses can wear each text effect. Effects at zero
+  // aren't a bug (no harvested word matches their tags yet), but they should be
+  // VISIBLE, not silently absent — that's how the old drift went unnoticed.
+  const wear = {};
+  for (const e of all) for (const s of e.senses) for (const t of s.legos?.text ?? []) wear[t] = (wear[t] || 0) + 1;
+  console.log("✦ text-effect coverage: " + Object.entries(wear).sort((a, b) => b[1] - a[1]).map(([k, v]) => `${k}:${v}`).join(" "));
+  const never = Object.keys(TEXT_TAGS).filter((t) => !wear[t]);
+  if (never.length) console.log(`  not yet worn by any sense: ${never.join(", ")} — the shelf grows as songs bring their vocabulary`);
   if (skipped > 0) console.log(`  ${skipped} more on the frontier — run again to keep growing`);
   else console.log(`  frontier clear — every word has legos ✨`);
 }
