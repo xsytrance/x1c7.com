@@ -8,6 +8,7 @@ import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 import { uiStore } from "@/lib/uiStore";
 import { KineticStage, canPerform, MODES, type StageMode } from "./KineticStage";
+import { LabStage, LAB_MODES, type LabMode } from "./LabStage";
 import type { Track } from "@/data/tracks";
 
 /**
@@ -83,6 +84,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   // preserved earlier looks — 4 = Kinetica effects, 3 = full stagecraft, etc.
   const MAX_PASS = 5;
   const [pass, setPass] = useState(MAX_PASS);
+  // THE REACTOR — experimental Labs modes. When set, they take over the stage.
+  const [labMode, setLabMode] = useState<LabMode | null>(null);
+  const [reactorOpen, setReactorOpen] = useState(false);
   // Viewing style, remembered across sessions.
   const [mode, setMode] = useState<StageMode>("phrase");
   useEffect(() => {
@@ -185,6 +189,16 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                   </button>
                 </div>
               )}
+              {/* THE REACTOR — experimental Labs modes */}
+              {performs && (
+                <button onClick={() => setReactorOpen((v) => !v)} title="The Reactor — experimental modes"
+                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full border text-sm transition hover:scale-105 sm:h-10 sm:w-10"
+                  style={labMode || reactorOpen
+                    ? { borderColor: "var(--theme-primary)", color: "var(--theme-primary)", boxShadow: "0 0 12px color-mix(in srgb, var(--theme-primary) 45%, transparent)" }
+                    : { borderColor: "rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.7)" }}>
+                  ⚛
+                </button>
+              )}
               {/* Transport */}
               <button onClick={prev} aria-label="Previous song" title="Previous song (←)"
                 className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
@@ -217,6 +231,36 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               reads as one cohesive "player screen". Decorative, never blocks. */}
           <div className="pointer-events-none absolute inset-0 z-[55]" aria-hidden
             style={{ boxShadow: "inset 0 0 0 1.5px color-mix(in srgb, var(--theme-primary) 14%, rgba(255,255,255,0.06)), inset 0 0 70px rgba(0,0,0,0.4)" }} />
+
+          {/* THE REACTOR — experimental mode picker */}
+          <AnimatePresence>
+            {reactorOpen && (
+              <motion.div
+                className="absolute right-3 top-16 z-[70] w-72 rounded-2xl border border-white/12 bg-[#0b0810]/95 p-3 backdrop-blur-md"
+                initial={{ opacity: 0, y: -8, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -8, scale: 0.97 }}
+              >
+                <div className="flex items-center justify-between">
+                  <h3 className="font-display text-sm font-black uppercase tracking-wide" style={{ color: "var(--theme-primary)" }}>⚛ The Reactor</h3>
+                  <button onClick={() => setReactorOpen(false)} className="font-mono text-xs text-white/50 hover:text-white">✕</button>
+                </div>
+                <p className="mt-0.5 font-mono text-[10px] leading-snug text-white/40">Experimental modes. More cores coming online.</p>
+                <div className="mt-2 grid grid-cols-1 gap-1.5">
+                  <button onClick={() => { setLabMode(null); setReactorOpen(false); }}
+                    className={`rounded-lg border px-3 py-2 text-left font-mono text-[11px] transition ${!labMode ? "border-white/40 text-white" : "border-white/12 text-white/60 hover:text-white"}`}>
+                    ◐ Normal show <span className="text-white/30">— the standard stage</span>
+                  </button>
+                  {LAB_MODES.map((lm) => (
+                    <button key={lm.id} onClick={() => { setLabMode(lm.id); setReactorOpen(false); }}
+                      className={`rounded-lg border px-3 py-2 text-left font-mono text-[11px] transition ${labMode === lm.id ? "border-[var(--theme-primary)] text-white" : "border-white/12 text-white/70 hover:text-white"}`}
+                      style={labMode === lm.id ? { background: "color-mix(in srgb, var(--theme-primary) 16%, transparent)" } : undefined}>
+                      {lm.label} <span className="text-white/35">— {lm.blurb}</span>
+                    </button>
+                  ))}
+                  <p className="mt-1 px-1 font-mono text-[9px] uppercase tracking-widest text-white/25">soon · downpour · thread · orbit · crawl · bubbles · matrix · pinball · +more</p>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
           {/* PLAYLIST DRAWER — the queue as a constellation list. Planets
               (word-synced worlds) glow; tap any row to fly there. */}
@@ -290,7 +334,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               /* THE SHOW — full lyric engine: word blow-ups, shape-morphs,
                  generated-art backdrops, emotion grading, arc timeline. */
               <div className="h-full px-4 pb-16">
-                <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} mode={mode} />
+                {labMode
+                  ? <LabStage track={track} mode={labMode} />
+                  : <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} mode={mode} />}
               </div>
             ) : (
               <>
