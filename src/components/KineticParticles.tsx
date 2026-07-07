@@ -12,7 +12,17 @@ import { beatClock } from "@/lib/beatClock";
 
 export type ParticleMode =
   | "embers" | "rain" | "snow" | "dust" | "bubbles" | "sparks"
-  | "ash" | "petals" | "pollen";
+  | "ash" | "petals" | "pollen"
+  // Pick-only weather (no automatic song match — surfaced in the Director's
+  // weather picker so a vibe can choose them deliberately).
+  | "fireflies" | "confetti" | "leaves" | "stars";
+
+/** Every weather mode, in picker order — the single list the Director's weather
+ *  dropdown and vibe builder render (so they can't drift from the union). */
+export const ALL_PARTICLE_MODES: ParticleMode[] = [
+  "dust", "embers", "ash", "rain", "snow", "bubbles", "sparks", "petals", "pollen",
+  "fireflies", "confetti", "leaves", "stars",
+];
 
 /** Pick a song's weather from its planet vocabulary. Ash (falling, grey, spent)
  * is checked BEFORE embers (rising, hot) so "ashes of regret" reads cold, not
@@ -57,10 +67,15 @@ const WARM = ["#ffd28a", "#ff8a3c", "#ff5400", "#ffb35c"];
 const ASH = ["#cbc6be", "#9a938a", "#6f6a63", "#d8b48a"]; // greys + one faint spent ember
 const PETAL = ["#ffb7c5", "#ff8fab", "#ffd1dc", "#e75480"];
 const GOLD = ["#ffe08a", "#ffd35c", "#fff0b8", "#f7c948"];
+const FIREFLY = ["#eaff8a", "#c8ff6a", "#a8ffcf", "#fff6a8"]; // warm glow-green/yellow
+const CONFETTI = ["#ff4d6d", "#4dd2ff", "#ffd84d", "#8aff6a", "#c86aff", "#ff8a3c"];
+const LEAF = ["#c9822f", "#a85a2c", "#e0a54a", "#7a3b18", "#d4741f"]; // autumn
+const STAR = ["#ffffff", "#dfeaff", "#bcd4ff", "#fff4d6"];
 
 const DENSITY: Record<ParticleMode, number> = {
   embers: 60, rain: 110, snow: 70, dust: 45, bubbles: 40, sparks: 55,
   ash: 55, petals: 34, pollen: 42,
+  fireflies: 34, confetti: 60, leaves: 30, stars: 55,
 };
 
 export const KineticParticles = forwardRef<ParticleHandle, {
@@ -187,7 +202,7 @@ export const KineticParticles = forwardRef<ParticleHandle, {
           Object.assign(p, spawn(m, palRef.current, Math.random() * w, edgeY(m, h), { fresh: true }));
         }
         p.wobble += dt * (1.3 + (p.r % 1));
-        const sway = Math.sin(p.wobble) * (m === "petals" ? 36 : m === "snow" ? 28 : m === "bubbles" ? 22 : m === "ash" ? 20 : m === "pollen" ? 16 : 10);
+        const sway = Math.sin(p.wobble) * (m === "petals" || m === "leaves" ? 36 : m === "confetti" ? 32 : m === "snow" ? 28 : m === "bubbles" ? 22 : m === "ash" ? 20 : m === "fireflies" ? 18 : m === "pollen" ? 16 : 10);
         // riser implosion: everything spirals toward the heart of the stage
         if (pull.current > 0.02) {
           const dx = w / 2 - p.x, dy = h / 2 - p.y;
@@ -258,14 +273,18 @@ function baseVy(m: ParticleMode): number {
     case "ash": return 40;
     case "petals": return 34;
     case "pollen": return -6;
+    case "fireflies": return -4;
+    case "confetti": return 55;
+    case "leaves": return 32;
+    case "stars": return -2;
   }
 }
 
 function edgeY(m: ParticleMode, h: number): number {
   // fresh ambient particles enter from the edge they travel away from
-  if (m === "rain" || m === "snow" || m === "ash" || m === "petals") return -20 + Math.random() * -60;
+  if (m === "rain" || m === "snow" || m === "ash" || m === "petals" || m === "confetti" || m === "leaves") return -20 + Math.random() * -60;
   if (m === "embers" || m === "bubbles") return h + 10 + Math.random() * 40;
-  return Math.random() * h;
+  return Math.random() * h; // fireflies / stars / dust / pollen / sparks: anywhere
 }
 
 function spawn(m: ParticleMode, palette: string[] | undefined, x: number, y: number,
@@ -299,5 +318,17 @@ function spawn(m: ParticleMode, palette: string[] | undefined, x: number, y: num
     case "pollen":
       // golden motes suspended in warm air — near-still, faint upward drift
       return { ...base, hue: pick(GOLD), r: 0.8 + Math.random() * 1.6, a: 0.3 + Math.random() * 0.3, vx: o.vx ?? (Math.random() - 0.5) * 14, vy: o.vy ?? -(4 + Math.random() * 12) };
+    case "fireflies":
+      // glowing motes that blink in and out — short life = twinkle, wide wander
+      return { ...base, hue: pick(FIREFLY), r: 1 + Math.random() * 1.8, a: 0.45 + Math.random() * 0.45, vx: o.vx ?? (Math.random() - 0.5) * 22, vy: o.vy ?? -(2 + Math.random() * 10), maxLife: o.life ?? (1.6 + Math.random() * 2.6) };
+    case "confetti":
+      // small colorful bits tumbling down, party energy
+      return { ...base, hue: pick(CONFETTI), r: 1.8 + Math.random() * 2.4, a: 0.55 + Math.random() * 0.4, vx: o.vx ?? (Math.random() - 0.5) * 40, vy: o.vy ?? (40 + Math.random() * 70) };
+    case "leaves":
+      // autumn leaves: big, soft, tumbling down with wide sway
+      return { ...base, hue: pick(LEAF), r: 2.6 + Math.random() * 3, a: 0.5 + Math.random() * 0.4, vx: o.vx ?? (Math.random() - 0.5) * 34, vy: o.vy ?? (20 + Math.random() * 38) };
+    case "stars":
+      // a night sky that twinkles — near-still points, short life to blink
+      return { ...base, hue: pick(STAR), r: 0.8 + Math.random() * 1.7, a: 0.5 + Math.random() * 0.45, vx: o.vx ?? (Math.random() - 0.5) * 8, vy: o.vy ?? -(1 + Math.random() * 6), maxLife: o.life ?? (1.4 + Math.random() * 2.4) };
   }
 }

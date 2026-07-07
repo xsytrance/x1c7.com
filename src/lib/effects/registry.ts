@@ -174,6 +174,7 @@ export const weatherFor = particleModeFor;
 const WEATHER_VEIL: Record<ParticleMode, VeilKind> = {
   embers: "ash", ash: "ash", rain: "fog", snow: "frost", dust: "dust",
   bubbles: "steam", sparks: "static", petals: "fog", pollen: "dust",
+  fireflies: "dust", confetti: "steam", leaves: "dust", stars: "fog",
 };
 export function veilForWeather(mode: ParticleMode): VeilKind {
   return WEATHER_VEIL[mode] ?? "fog";
