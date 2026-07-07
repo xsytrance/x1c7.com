@@ -13,7 +13,8 @@ import type { Track } from "@/data/tracks";
 
 export type LabMode =
   | "graffiti" | "fireworks" | "whackaword" | "handwriting" | "downpour" | "bubbles" | "orbit"
-  | "spellcast" | "aquarium" | "marionette" | "tarot" | "constellation";
+  | "spellcast" | "aquarium" | "marionette" | "tarot" | "constellation"
+  | "splitflap" | "terminal" | "sizzle" | "kaleidoscope" | "ouija";
 export const LAB_MODES: { id: LabMode; label: string; blurb: string }[] = [
   { id: "graffiti", label: "🎨 Graffiti", blurb: "spray-paint the wall" },
   { id: "fireworks", label: "🎆 Fireworks", blurb: "launch & burst" },
@@ -27,6 +28,11 @@ export const LAB_MODES: { id: LabMode; label: string; blurb: string }[] = [
   { id: "marionette", label: "🎭 Marionette", blurb: "dangling on strings" },
   { id: "tarot", label: "🃏 Tarot", blurb: "each word, a card drawn" },
   { id: "constellation", label: "✨ Constellation", blurb: "written in the stars" },
+  { id: "splitflap", label: "🛫 Split-Flap", blurb: "departure-board letters" },
+  { id: "terminal", label: "🖥️ Terminal", blurb: "green-phosphor teletype" },
+  { id: "sizzle", label: "🍳 Sizzle", blurb: "words hit the pan" },
+  { id: "kaleidoscope", label: "🪞 Kaleidoscope", blurb: "mirrored & spinning" },
+  { id: "ouija", label: "🕯️ Séance", blurb: "the planchette spells it out" },
 ];
 
 const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
@@ -71,6 +77,11 @@ export function LabStage({ track, mode, clock }: { track: Track; mode: LabMode; 
       {mode === "marionette" && <Marionette word={word} idx={idx} />}
       {mode === "tarot" && <Tarot word={word} idx={idx} />}
       {mode === "constellation" && <Constellation word={word} idx={idx} />}
+      {mode === "splitflap" && <SplitFlap word={word} idx={idx} />}
+      {mode === "terminal" && <Terminal word={word} idx={idx} />}
+      {mode === "sizzle" && <Sizzle word={word} idx={idx} />}
+      {mode === "kaleidoscope" && <Kaleidoscope word={word} idx={idx} />}
+      {mode === "ouija" && <Ouija word={word} idx={idx} />}
     </div>
   );
 }
@@ -538,6 +549,264 @@ function Constellation({ word, idx }: { word: string; idx: number }) {
                 {letters[i]}
               </motion.span>
             ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/* ========== SPLIT-FLAP — an airport departure board spells the song ========== */
+const FLAP_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'·";
+function FlapChar({ ch, order, size }: { ch: string; order: number; size: "big" | "small" }) {
+  const target = ch.toUpperCase();
+  const [cur, setCur] = useState("·");
+  useEffect(() => {
+    // Later letters spin longer, so the row settles left-to-right like a real board.
+    let i = 0;
+    const spins = 3 + order * 2 + (hash(target.charCodeAt(0) + order) % 3);
+    const iv = setInterval(() => {
+      i++;
+      if (i >= spins) { setCur(target); clearInterval(iv); }
+      else setCur(FLAP_CHARS[hash(i * 31 + order * 7 + target.charCodeAt(0)) % FLAP_CHARS.length]);
+    }, 55);
+    return () => clearInterval(iv);
+  }, [target, order]);
+  const big = size === "big";
+  return (
+    <span className={`relative inline-flex items-center justify-center overflow-hidden rounded-[3px] bg-[#14181d] font-mono font-bold ${big ? "h-[1.45em] w-[1em]" : "h-[1.4em] w-[0.95em]"}`}
+      style={{ color: "#ffb63d", boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08), 0 2px 4px rgba(0,0,0,0.5)", perspective: 200 }}>
+      <motion.span key={cur} initial={{ rotateX: -75, opacity: 0.4 }} animate={{ rotateX: 0, opacity: 1 }} transition={{ duration: 0.08 }}>
+        {cur}
+      </motion.span>
+      {/* the flap seam */}
+      <span className="pointer-events-none absolute left-0 top-1/2 h-px w-full bg-black/60" />
+    </span>
+  );
+}
+function SplitFlap({ word, idx }: { word: string; idx: number }) {
+  const [rows, setRows] = useState<{ id: number; word: string }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    setRows((old) => [...old.filter((r) => r.id !== idx), { id: idx, word }].slice(-6));
+  }, [idx, word]);
+  return (
+    <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 px-4">
+      <div className="mb-2 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.4em] text-white/50">
+        Departures
+        <motion.span className="inline-block h-1.5 w-1.5 rounded-full bg-[#ffb63d]" animate={{ opacity: [1, 0.2, 1] }} transition={{ duration: 1.2, repeat: Infinity }} />
+      </div>
+      {/* settled rows — the board remembers where the song has been */}
+      {rows.slice(0, -1).map((r, i) => (
+        <motion.div key={r.id} className="flex gap-[3px]" style={{ fontSize: "clamp(0.8rem, 2.6vw, 1.3rem)" }}
+          initial={{ opacity: 0 }} animate={{ opacity: 0.25 + (i / Math.max(1, rows.length - 1)) * 0.35 }}>
+          {[...r.word].map((ch, k) => <FlapChar key={`${r.id}-${k}`} ch={ch} order={k} size="small" />)}
+        </motion.div>
+      ))}
+      {/* the live row, clacking into place */}
+      {rows.length > 0 && (
+        <div className="flex gap-1" style={{ fontSize: "clamp(1.8rem, 8vw, 4.5rem)" }}>
+          {[...rows[rows.length - 1].word].map((ch, k) => (
+            <FlapChar key={`${rows[rows.length - 1].id}-${k}`} ch={ch} order={k} size="big" />
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ========== TERMINAL — the song tails in on a green-phosphor CRT ========== */
+function Terminal({ word, idx }: { word: string; idx: number }) {
+  const [lines, setLines] = useState<{ id: number; word: string }[]>([]);
+  const [typed, setTyped] = useState(0);
+  const prev = useRef<{ id: number; word: string } | null>(null);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    if (prev.current && prev.current.id !== idx) setLines((l) => [...l.slice(-7), prev.current!]);
+    prev.current = { id: idx, word };
+    setTyped(0);
+    const iv = setInterval(() => {
+      setTyped((n) => {
+        if (n >= word.length) { clearInterval(iv); return n; }
+        return n + 1;
+      });
+    }, 42);
+    return () => clearInterval(iv);
+  }, [idx, word]);
+  const green = "#3dff8e";
+  return (
+    <div className="absolute inset-0 font-mono" style={{ background: "radial-gradient(ellipse at center, rgba(20,45,28,0.35), rgba(0,0,0,0.25) 80%)" }}>
+      <div className="absolute inset-x-0 bottom-0 flex flex-col gap-1 p-6 pb-20 sm:p-10 sm:pb-24">
+        <div className="mb-2 text-[11px] text-white/35">x1c7@reactor:~$ tail -f song.lrc</div>
+        {lines.map((l, i) => (
+          <div key={l.id} className="lowercase" style={{ color: green, opacity: 0.15 + (i / Math.max(1, lines.length)) * 0.4, fontSize: "clamp(0.9rem, 3vw, 1.5rem)", textShadow: `0 0 6px ${green}` }}>
+            &gt; {l.word}
+          </div>
+        ))}
+        {idx >= 0 && word && (
+          <div className="lowercase" style={{ color: green, fontSize: "clamp(1.6rem, 6.5vw, 3.4rem)", textShadow: `0 0 12px ${green}, 0 0 30px color-mix(in srgb, ${green} 45%, transparent)` }}>
+            &gt; {word.slice(0, typed)}
+            <motion.span className="ml-1 inline-block h-[0.95em] w-[0.55em] translate-y-[0.12em]" style={{ background: green }}
+              animate={{ opacity: [1, 1, 0, 0] }} transition={{ duration: 0.9, repeat: Infinity, times: [0, 0.5, 0.5, 1] }} />
+          </div>
+        )}
+      </div>
+      {/* CRT scanlines + a slow flicker */}
+      <motion.div className="pointer-events-none absolute inset-0"
+        style={{ background: "repeating-linear-gradient(to bottom, transparent 0 2px, rgba(0,0,0,0.22) 2px 4px)" }}
+        animate={{ opacity: [0.85, 1, 0.9, 1] }} transition={{ duration: 0.9, repeat: Infinity }} />
+    </div>
+  );
+}
+
+/* ========== SIZZLE — words drop into the pan and cook (keep cooking!) ========== */
+function Sizzle({ word, idx }: { word: string; idx: number }) {
+  const [dishes, setDishes] = useState<{ id: number; word: string; hue: string }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    setDishes((old) => [...old.slice(-1), { id: idx, word, hue: HUES[hash(idx) % HUES.length] }]);
+  }, [idx, word]);
+  return (
+    <div className="absolute inset-0">
+      {/* flames licking under the pan */}
+      {Array.from({ length: 5 }).map((_, i) => (
+        <motion.span key={`f${i}`} className="absolute bottom-[16%] w-4 rounded-t-full"
+          style={{ left: `${41 + i * 4.5}%`, height: 26, background: "linear-gradient(to top, #ff6a3c, #ffd84a, transparent)", filter: "blur(2px)", transformOrigin: "bottom" }}
+          animate={{ scaleY: [0.6, 1.25, 0.8, 1.1, 0.6], opacity: [0.7, 1, 0.8, 1, 0.7] }}
+          transition={{ duration: 0.7 + i * 0.13, repeat: Infinity, ease: "easeInOut" }} />
+      ))}
+      {/* the pan */}
+      <div className="absolute bottom-[18%] left-1/2 -translate-x-1/2">
+        <div className="h-7 w-[58vmin] max-w-[440px] rounded-[100%] border-t-4 border-[#3a3f47] bg-[#1a1d22]"
+          style={{ boxShadow: "inset 0 8px 14px rgba(0,0,0,0.7), 0 4px 10px rgba(0,0,0,0.5)" }} />
+        <div className="absolute -right-[24vmin] top-1 hidden h-2.5 w-[20vmin] max-w-[150px] rounded-full bg-[#2a2e34] sm:block" />
+      </div>
+      <AnimatePresence>
+        {dishes.map((d, i) => {
+          const live = i === dishes.length - 1;
+          return (
+            <motion.div key={d.id} className="absolute left-1/2 bottom-[24%] select-none whitespace-nowrap font-display font-black uppercase"
+              style={{ fontSize: "clamp(1.8rem, 8vw, 4.5rem)", color: d.hue, textShadow: `0 0 14px ${d.hue}` }}
+              initial={{ y: "-70vh", x: "-50%", opacity: 1, scaleY: 1 }}
+              animate={live
+                ? { y: 0, x: ["-50%", "-51%", "-49%", "-50.5%", "-49.5%", "-50%"], scaleY: [1, 1, 0.72, 1.06, 1], filter: ["brightness(1.35)", "brightness(1)", "brightness(0.8) sepia(0.55)"] }
+                : { y: 0, x: "-50%" }}
+              exit={{ y: "-55vh", rotate: 50, opacity: 0, transition: { duration: 0.55, ease: "easeIn" } }}
+              transition={{ y: { type: "spring", stiffness: 130, damping: 15 }, scaleY: { duration: 0.5, delay: 0.32 }, x: { duration: 0.9, delay: 0.4 }, filter: { duration: 2.6, delay: 0.35 } }}
+            >
+              {d.word}
+              {/* steam + spatter while it cooks */}
+              {live && Array.from({ length: 6 }).map((_, k) => (
+                <motion.span key={k} className="absolute rounded-full" aria-hidden
+                  style={{ left: `${12 + k * 15}%`, bottom: "70%", width: 5 + (k % 3) * 3, height: 5 + (k % 3) * 3, background: "rgba(255,255,255,0.5)", filter: "blur(2px)" }}
+                  initial={{ y: 0, opacity: 0 }} animate={{ y: -70 - (k % 3) * 30, opacity: [0, 0.7, 0] }}
+                  transition={{ duration: 1.5, delay: 0.45 + k * 0.22, repeat: Infinity, repeatDelay: 0.4 }} />
+              ))}
+            </motion.div>
+          );
+        })}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/* ========== KALEIDOSCOPE — the word mirrored through a slow-turning lens ===== */
+function Kaleidoscope({ word, idx }: { word: string; idx: number }) {
+  const SEGS = 8;
+  const hue = HUES[hash(Math.max(0, idx)) % HUES.length];
+  return (
+    <div className="absolute inset-0 flex items-center justify-center">
+      <motion.div className="absolute h-2 w-2 rounded-full" style={{ background: hue, boxShadow: `0 0 30px 10px ${hue}` }}
+        animate={{ scale: [1, 1.6, 1] }} transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }} />
+      <motion.div className="absolute left-1/2 top-1/2" animate={{ rotate: 360 }} transition={{ duration: 36, repeat: Infinity, ease: "linear" }}>
+        <AnimatePresence mode="popLayout">
+          {word && Array.from({ length: SEGS }).map((_, i) => (
+            <motion.div key={`${idx}-${i}`} className="absolute" style={{ transform: `rotate(${(i * 360) / SEGS}deg)` }}>
+              <motion.span className="block select-none whitespace-nowrap font-display font-black uppercase"
+                style={{ color: hue, fontSize: "clamp(1.2rem, 4.5vw, 2.8rem)", textShadow: `0 0 14px ${hue}`,
+                  transform: `translateY(-26vmin) translateX(-50%) ${i % 2 ? "scaleX(-1)" : ""}` }}
+                initial={{ opacity: 0, filter: "blur(10px)" }} animate={{ opacity: i % 2 ? 0.55 : 0.95, filter: "blur(0px)" }}
+                exit={{ opacity: 0, filter: "blur(8px)", transition: { duration: 0.3 } }}
+                transition={{ duration: 0.4, delay: i * 0.04 }}>
+                {word}
+              </motion.span>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      </motion.div>
+      {/* the lens rim */}
+      <div className="absolute h-[64vmin] w-[64vmin] rounded-full border border-white/10"
+        style={{ boxShadow: `inset 0 0 60px color-mix(in srgb, ${hue} 12%, transparent)` }} />
+    </div>
+  );
+}
+
+/* ========== SÉANCE — a planchette glides the board, spelling each word ======= */
+const OUIJA_LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+function ouijaPos(ch: string) {
+  const i = OUIJA_LETTERS.indexOf(ch);
+  if (i < 0) return null;
+  const row = i < 13 ? 0 : 1;
+  const j = row === 0 ? i : i - 13;
+  const t = j / 12;
+  // Two gentle arcs, like the classic board.
+  return { x: 11 + t * 78, y: (row === 0 ? 34 : 52) - Math.sin(t * Math.PI) * 7 };
+}
+function Ouija({ word, idx }: { word: string; idx: number }) {
+  const seq = [...word.toUpperCase()].map(ouijaPos).filter((p): p is { x: number; y: number } => p !== null);
+  const dur = 0.4 + seq.length * 0.38;
+  const step = seq.length > 1 ? dur / seq.length : dur;
+  return (
+    <div className="absolute inset-0">
+      {/* candlelight breathing over the board */}
+      <motion.div className="pointer-events-none absolute inset-0"
+        style={{ background: "radial-gradient(ellipse at 50% 45%, rgba(255,170,80,0.14), transparent 65%)" }}
+        animate={{ opacity: [0.6, 1, 0.75, 1, 0.6] }} transition={{ duration: 3.2, repeat: Infinity, ease: "easeInOut" }} />
+      <div className="absolute left-[8%] top-[16%] font-serif text-sm uppercase tracking-[0.3em] text-white/35 sm:text-base">Yes</div>
+      <div className="absolute right-[8%] top-[16%] font-serif text-sm uppercase tracking-[0.3em] text-white/35 sm:text-base">No</div>
+      {/* the letter arcs */}
+      {[...OUIJA_LETTERS].map((ch) => {
+        const p = ouijaPos(ch)!;
+        return (
+          <span key={ch} className="absolute -translate-x-1/2 -translate-y-1/2 select-none font-serif"
+            style={{ left: `${p.x}%`, top: `${p.y}%`, color: "rgba(255,235,205,0.4)", fontSize: "clamp(1rem, 3.4vw, 2rem)" }}>
+            {ch}
+          </span>
+        );
+      })}
+      <div className="absolute bottom-[22%] left-1/2 -translate-x-1/2 font-serif text-xs uppercase tracking-[0.5em] text-white/25 sm:text-sm">Good Bye</div>
+      {/* per-letter flare as the planchette passes over */}
+      {word && seq.map((p, k) => (
+        <motion.span key={`${idx}-h${k}`} className="absolute -translate-x-1/2 -translate-y-1/2 select-none font-serif"
+          style={{ left: `${p.x}%`, top: `${p.y}%`, color: "#ffdca8", fontSize: "clamp(1.3rem, 4.2vw, 2.6rem)", textShadow: "0 0 16px #ffb85c, 0 0 34px rgba(255,150,60,0.5)" }}
+          initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: [0, 1, 0], scale: [0.8, 1.35, 1] }}
+          transition={{ duration: Math.max(0.5, step * 1.4), delay: k * step }}>
+          {[...word.toUpperCase()].filter((c) => OUIJA_LETTERS.includes(c))[k]}
+        </motion.span>
+      ))}
+      {/* the planchette — a drifting lens that seeks each letter */}
+      {word && seq.length > 0 && (
+        <motion.div key={idx} className="absolute z-10 -translate-x-1/2 -translate-y-1/2"
+          initial={{ left: `${seq[0].x}%`, top: `${seq[0].y}%`, opacity: 0 }}
+          animate={{
+            left: seq.map((p) => `${p.x}%`), top: seq.map((p) => `${p.y}%`), opacity: 1,
+            ...(seq.length === 1 ? { left: `${seq[0].x}%`, top: `${seq[0].y}%` } : {}),
+          }}
+          transition={{ duration: dur, ease: "easeInOut", opacity: { duration: 0.3 } }}
+        >
+          <div className="h-14 w-14 rounded-full border-2 sm:h-16 sm:w-16"
+            style={{ borderColor: "rgba(255,200,130,0.85)", background: "radial-gradient(circle, rgba(255,190,110,0.12), transparent 70%)", boxShadow: "0 0 24px rgba(255,170,80,0.45), inset 0 0 14px rgba(255,170,80,0.3)" }} />
+          <div className="absolute left-1/2 top-full h-4 w-px -translate-x-1/2 bg-[rgba(255,200,130,0.5)]" />
+        </motion.div>
+      )}
+      {/* the message so far, whispered at the bottom */}
+      <AnimatePresence mode="popLayout">
+        {word && (
+          <motion.div key={idx} className="absolute bottom-[10%] left-1/2 -translate-x-1/2 select-none whitespace-nowrap font-serif uppercase tracking-[0.25em]"
+            style={{ color: "#ffe9c9", fontSize: "clamp(1.4rem, 5.5vw, 3.2rem)", textShadow: "0 0 20px rgba(255,170,80,0.6)" }}
+            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.4 } }}
+            transition={{ duration: 0.6, delay: Math.min(dur * 0.7, 1.2) }}>
+            {word}
           </motion.div>
         )}
       </AnimatePresence>
