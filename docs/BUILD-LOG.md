@@ -7,6 +7,39 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Variety push: more effects/weather + per-song "look" generator
+
+**Goal (owner: "blow people's minds — enough variety that not everyone's results
+look the same"):** widen the palette and make each song open distinct.
+
+**Changes:**
+1. **5 new text effects** (engine): shimmer (gold-leaf sweep), rise, fall, echo,
+   tremor — Word* components + `TextEffect` union + `TEXTBOUND` + `WORD_FX`.
+   Override-summonable only (no auto trigger → x1c7 auto-behavior unchanged).
+   New `ALL_TEXT_EFFECTS` export = the one ordered list the FX panel / vibe
+   builder render (20 effects; pickers can't drift from the union).
+2. **4 new weather modes** (engine): fireflies, confetti, leaves, stars — each a
+   `DENSITY`/`baseVy`/`spawn`/palette/sway case; `WEATHER_VEIL` extended;
+   `ALL_PARTICLE_MODES` export (13 modes). **Pick-only** — no `particleModeFor`
+   matcher, so x1c7's auto weather is unchanged.
+3. **Per-song "look" generator** (kinetica `lib/songLook.ts`, shell-only): a
+   deterministic FNV-1a hash of title+lyrics → a distinctive opening vibe +
+   weather + cinematic deck intensity, and `seedWordEffects` pins effects to
+   ~1-in-3 of the song's distinctive words from the vibe's palette. Strong mood
+   words steer (fire→inferno, cold→frostbite, love→dreamcore, sea→vapor); else the
+   seed rotates all 14 vibes. **🎲 Surprise** re-rolls the current song. Applied as
+   the Show's opening state; fully overridable in the Director.
+
+**Verified:** x1c7 `tsc` clean; engine sync applied, **0 drift**; kinetica `build`
+green. Variety test: **60 generic songs → all 14 vibes + 10 weather picks**,
+deterministic, mood-steering correct. **Bug caught by a 500-song stress test:** the
+FNV seed is unsigned 32-bit, so bit-slicing needs `>>>` not `>>` — a signed shift on
+a seed > 2³¹ went negative → negative modulo → undefined preset/particle/effect.
+Fixed; re-verified all-clean. Owner browser-validated the earlier deck/effects work
+("amazing"). See [[kinetica-live-test-2026-07-07]].
+
+---
+
 ## 2026-07-07 — Phase 2.3: per-word override UI + director's deck
 
 **Goal:** turn the engine seams into hands-on control — pin effects to individual
