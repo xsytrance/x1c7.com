@@ -1,7 +1,7 @@
 {
   "version": 1,
   "galaxy": "xsytrance-canon",
-  "generatedAt": "2026-07-07T22:36:57.029Z",
+  "generatedAt": "2026-07-07T22:53:22.436Z",
   "entries": {
     "circus": {
       "word": "circus",
@@ -50,7 +50,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "server": {
       "word": "server",
@@ -106,7 +106,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "ai": {
       "word": "ai",
@@ -157,7 +157,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "ringmaster": {
       "word": "ringmaster",
@@ -207,7 +207,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "clouds": {
       "word": "clouds",
@@ -258,7 +258,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "protocol": {
       "word": "protocol",
@@ -308,7 +308,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "bit": {
       "word": "bit",
@@ -363,7 +363,7 @@
       "sources": [
         "bt"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "code": {
       "word": "code",
@@ -419,7 +419,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "cocktails": {
       "word": "cocktails",
@@ -473,7 +473,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "dreams": {
       "word": "dreams",
@@ -565,7 +565,7 @@
         "cc",
         "seoul"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "future": {
       "word": "future",
@@ -617,7 +617,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "growth": {
       "word": "growth",
@@ -669,7 +669,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "summer": {
       "word": "summer",
@@ -762,7 +762,7 @@
         "cc",
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "success": {
       "word": "success",
@@ -814,7 +814,7 @@
       "sources": [
         "cc"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "silence": {
       "word": "silence",
@@ -866,7 +866,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "noise": {
       "word": "noise",
@@ -916,7 +916,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "storm": {
       "word": "storm",
@@ -971,7 +971,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "order": {
       "word": "order",
@@ -1020,7 +1020,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "chaos": {
       "word": "chaos",
@@ -1070,7 +1070,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "ceasefire": {
       "word": "ceasefire",
@@ -1121,7 +1121,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "walking": {
       "word": "walking",
@@ -1172,7 +1172,7 @@
       "sources": [
         "cs"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "different": {
       "word": "different",
@@ -1222,7 +1222,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "build": {
       "word": "build",
@@ -1312,7 +1312,7 @@
         "dts",
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "dream": {
       "word": "dream",
@@ -1366,7 +1366,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "light": {
       "word": "light",
@@ -1418,7 +1418,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "waiting": {
       "word": "waiting",
@@ -1468,7 +1468,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "motivation": {
       "word": "motivation",
@@ -1518,7 +1518,7 @@
       "sources": [
         "dts"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "somebody": {
       "word": "somebody",
@@ -1609,7 +1609,7 @@
         "fast",
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "fast": {
       "word": "fast",
@@ -1661,7 +1661,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "mission": {
       "word": "mission",
@@ -1712,7 +1712,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "keep": {
       "word": "keep",
@@ -1762,7 +1762,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "level": {
       "word": "level",
@@ -1812,7 +1812,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "golden": {
       "word": "golden",
@@ -1865,7 +1865,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "sky": {
       "word": "sky",
@@ -1917,7 +1917,7 @@
       "sources": [
         "fast"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "ganga": {
       "word": "ganga",
@@ -1968,7 +1968,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "frio": {
       "word": "frio",
@@ -2019,7 +2019,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "sangre": {
       "word": "sangre",
@@ -2071,7 +2071,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "vibra": {
       "word": "vibra",
@@ -2124,7 +2124,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "cicatrices": {
       "word": "cicatrices",
@@ -2173,7 +2173,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "conexion": {
       "word": "conexion",
@@ -2223,7 +2223,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "barrio": {
       "word": "barrio",
@@ -2274,7 +2274,7 @@
       "sources": [
         "gente"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "night": {
       "word": "night",
@@ -2329,7 +2329,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "voice": {
       "word": "voice",
@@ -2420,7 +2420,7 @@
         "paper",
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "lie": {
       "word": "lie",
@@ -2475,7 +2475,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "cut": {
       "word": "cut",
@@ -2529,7 +2529,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "paranoia": {
       "word": "paranoia",
@@ -2580,7 +2580,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "remix": {
       "word": "remix",
@@ -2630,7 +2630,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "watching": {
       "word": "watching",
@@ -2682,7 +2682,7 @@
       "sources": [
         "paper"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "quit": {
       "word": "quit",
@@ -2736,7 +2736,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "pressure": {
       "word": "pressure",
@@ -2786,7 +2786,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "pushing": {
       "word": "pushing",
@@ -2836,7 +2836,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "arms": {
       "word": "arms",
@@ -2886,7 +2886,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "lungs": {
       "word": "lungs",
@@ -2937,7 +2937,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "heart": {
       "word": "heart",
@@ -3065,7 +3065,7 @@
         "seoul",
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "crown": {
       "word": "crown",
@@ -3116,7 +3116,7 @@
       "sources": [
         "quit"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "extrano": {
       "word": "extrano",
@@ -3170,7 +3170,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "romperme": {
       "word": "romperme",
@@ -3220,7 +3220,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "vuelve": {
       "word": "vuelve",
@@ -3272,7 +3272,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "herida": {
       "word": "herida",
@@ -3327,7 +3327,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "defiende": {
       "word": "defiende",
@@ -3377,7 +3377,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "suelto": {
       "word": "suelto",
@@ -3427,7 +3427,7 @@
       "sources": [
         "resp"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "seoul": {
       "word": "seoul",
@@ -3483,7 +3483,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "phone": {
       "word": "phone",
@@ -3535,7 +3535,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "worldwide": {
       "word": "worldwide",
@@ -3585,7 +3585,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "border": {
       "word": "border",
@@ -3635,7 +3635,7 @@
       "sources": [
         "seoul"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "steady": {
       "word": "steady",
@@ -3685,7 +3685,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "fold": {
       "word": "fold",
@@ -3737,7 +3737,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "nobody": {
       "word": "nobody",
@@ -3766,7 +3766,8 @@
           ],
           "legos": {
             "weather": [
-              "dust"
+              "dust",
+              "pollen"
             ],
             "surface": [],
             "veils": [
@@ -3786,7 +3787,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "rhythm": {
       "word": "rhythm",
@@ -3837,7 +3838,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "solid": {
       "word": "solid",
@@ -3888,7 +3889,7 @@
       "sources": [
         "smb"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "smile": {
       "word": "smile",
@@ -3938,7 +3939,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "pause": {
       "word": "pause",
@@ -3988,7 +3989,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "dreaming": {
       "word": "dreaming",
@@ -4037,7 +4038,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "hold": {
       "word": "hold",
@@ -4092,7 +4093,7 @@
       "sources": [
         "still"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "living": {
       "word": "living",
@@ -4144,7 +4145,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "strings": {
       "word": "strings",
@@ -4194,7 +4195,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "bassline": {
       "word": "bassline",
@@ -4245,7 +4246,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "beach": {
       "word": "beach",
@@ -4300,7 +4301,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "balance": {
       "word": "balance",
@@ -4350,7 +4351,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "healing": {
       "word": "healing",
@@ -4400,7 +4401,7 @@
       "sources": [
         "vg"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "gold": {
       "word": "gold",
@@ -4494,7 +4495,7 @@
         "vg",
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "whistle": {
       "word": "whistle",
@@ -4549,7 +4550,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "trouble": {
       "word": "trouble",
@@ -4605,7 +4606,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "boys": {
       "word": "boys",
@@ -4657,7 +4658,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "foghorn": {
       "word": "foghorn",
@@ -4712,7 +4713,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "dock": {
       "word": "dock",
@@ -4764,7 +4765,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     },
     "riverboat": {
       "word": "riverboat",
@@ -4818,7 +4819,7 @@
       "sources": [
         "wr"
       ],
-      "updatedAt": "2026-07-07T22:36:57.029Z"
+      "updatedAt": "2026-07-07T22:53:22.436Z"
     }
   },
   "stats": {

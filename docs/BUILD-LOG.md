@@ -7,6 +7,42 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Pillar 1 COMPLETE (handwrite + tvoff) · lint green again
+
+**Goal:** finish the roadmap's effects pillar and make `npm run lint`
+(`--max-warnings=0`) enforceable again — it had been red since before Phase 2.0.
+
+**Changes:**
+1. **✍️ Handwrite** (engine) — vow words write themselves on in script: a
+   cursive-stack span revealed left-to-right by a clip-path, with a glowing
+   pen-point riding the ink edge. Duration scales with word length. Vocab:
+   write/letter/vow/promise/sign/ink/pen/poem/diary/journal.
+2. **📺 TV-off** (engine) — final words switch off like an old CRT: flash on
+   from a scanline, hold, collapse to a bright line, then a phosphor dot that
+   dies. Vocab: end/goodbye/farewell/dead/death/die/dying + adiós ("gone" stays
+   dissolve's, "silence" stays whisper's). **That closes Pillar 1** — every
+   effect the roadmap named is shipped; only the stretch SVG stroke-font
+   handwrite variant remains an idea.
+   The registry-driven dream loop picked BOTH up with **zero script edits** —
+   the de-drift work paying for itself one commit later.
+3. **Lint green** (`eslint.config.mjs` + 4 real fixes):
+   - react-hooks v7's four **React-Compiler-preview rules** (set-state-in-
+     effect, refs, purity, immutability) are now off, with reasoning in the
+     config: they flag the engine's intentional "playhead → append to trail"
+     idiom 50+ times. rules-of-hooks + exhaustive-deps stay enforced.
+   - Real fixes: `pooledArt` added to the stage rAF effect deps (stable
+     useCallback), `performs` added to the karaoke-fallback effect deps (was a
+     genuine staleness bug — the rAF loop wouldn't stop if `performs` flipped
+     while open), `PRELOAD_RANGE` hoisted to module scope in Lightbox, and
+     `useTypedText`'s `onComplete` moved to a latest-ref (inline lambdas in
+     deps would restart the typing animation every parent render).
+   - `--fix` swept the unused eslint-disable directives.
+
+**Verified:** `npm run lint` exits 0 (first time in the Phase 2 era) · `tsc`
+clean · `next build` green · collision script still reports no dead vocabulary.
+
+---
+
 ## 2026-07-07 — Lexicon dream loop: registry-driven tables + shelf re-dream
 
 **Goal:** the dream loop's hand-copied tag tables had drifted **16 text effects

@@ -4,6 +4,9 @@ import { useEffect, useCallback, useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
+/* offsets (relative to the active piece) whose images get preloaded */
+const PRELOAD_RANGE = [-1, 0, 1];
+
 export interface ArtPiece {
   id: string;
   title: string;
@@ -32,12 +35,11 @@ export function Lightbox({
   const activePiece = pieces[activeIndex];
 
   /* preload adjacent images */
-  const preloadRange = [-1, 0, 1];
   const [preloaded, setPreloaded] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     if (!isOpen) return;
-    const toLoad = preloadRange
+    const toLoad = PRELOAD_RANGE
       .map((o) => {
         const idx = activeIndex + o;
         if (idx >= 0 && idx < pieces.length) return pieces[idx].src;

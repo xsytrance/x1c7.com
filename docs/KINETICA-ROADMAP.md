@@ -98,8 +98,8 @@ in `registry.ts` + optional lexicon glyph. First close the drift, then add new o
 - ✅ **Gravity fall** — letters detach and drop. Tags: fall/collapse/gravity/down/sink. *(shipped as `fall`, tranche 2)*
 - ✅ **Gold-leaf shimmer** — luxe sweep across glyphs. Tags: gold/crown/rich/shine/luxury (pairs with Inferno/gold vibe). *(shipped as `shimmer`, tranche 2)*
 - ✅ **Bleed** — red ink weeps from the word. Tags: blood/bleed/wound/hurt/scar. *(tranche 3)*
-- **Handwrite** — script stroke draws on (SVG stroke-dashoffset). Tags: write/letter/vow/promise/sign.
-- **TV-off** — collapses to a white line then a dot. Tags: end/gone/dead/silence/off.
+- ✅ **Handwrite** — script writes on left-to-right behind a glowing pen-point (clip-path reveal in a cursive stack; the SVG stroke-font version stays a stretch idea). Tags: write/letter/vow/promise/sign. *(tranche 4)*
+- ✅ **TV-off** — flashes on from a scanline, holds, collapses to a bright line then a dying dot. Tags: end/goodbye/dead/death. *(tranche 4; "gone" stays dissolve's, "silence" stays whisper's — Pillar 1 COMPLETE)*
 
 Ship 3–4 per tranche; all respect perf-lite (CSS transforms/opacity, no per-frame blur on mobile).
 

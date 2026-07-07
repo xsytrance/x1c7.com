@@ -143,7 +143,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [open, synced, lines, getCurrentTime]);
+  }, [open, synced, performs, lines, getCurrentTime]);
 
   if (!mounted) return null;
 
