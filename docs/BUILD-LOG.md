@@ -7,6 +7,85 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — THE REACTOR: experimental lyric cores (17 and counting)
+
+**Goal:** a Labs wing on the now-playing stage — a place to try wild lyric
+renderers with **zero risk to the main show**, and a nursery for modes that
+should graduate to `/vr` later (orbit, constellation, kaleidoscope…).
+
+**Architecture (`src/components/LabStage.tsx`):**
+- Each mode is a **self-contained "core"**: one component taking the synced
+  word list + live playhead, sharing only a `useWordIndex` rAF hook, a `clean`
+  word scrubber, a seeded `hash`, and a neon `HUES` palette. No engine imports —
+  KineticStage is untouched, so a broken experiment can't hurt the real stage.
+- A labeled, glowing **⚛ Reactor** pill (spinning atom + tooltip) in the player
+  opens the picker; picking a core takes over the stage; "◐ Normal show"
+  returns to KineticStage. Adding a core = one renderer + one `LAB_MODES` row
+  (the picker renders from the list, so it can't drift from the union).
+
+**The 17 cores, by wing:**
+- *Playful/physical:* 🎨 Graffiti (spray tags, splatter + drips), 🎆 Fireworks
+  (words burst into letter-sparks), 🔨 Whack-a-Word (tap to score, +1 bursts +
+  haptics), 🌧️ Downpour (rain that stacks into a drift), 🫧 Bubbles (tap to
+  pop), 🍳 Sizzle (words squash into a pan over live flames, brown in a
+  sepia/brightness ramp, steam, get flipped out).
+- *Atmospheric:* ✍️ Handwriting (drying-ink journal), 🪐 Orbit (words circle a
+  star), 🐠 Aquarium (words swim, ambient bubbles), ✨ Constellation (letters
+  drawn as connected stars), 🪞 Kaleidoscope (8 mirrored segments on a
+  slow-turning lens).
+- *Theatrical/occult:* 🔮 Spellcast (counter-rotating rune rings), 🎭 Marionette
+  (words dangle on strings, swing, fall), 🃏 Tarot (every word a card flipped
+  into a spread), 🕯️ Séance (a glowing planchette glides a full ouija board —
+  letter arcs, YES/NO, GOOD BYE — spelling each word, flaring letters it passes).
+- *Machine:* 🛫 Split-Flap (departure board; letters clack through the alphabet
+  and settle left-to-right, prior words dim into rows above), 🖥️ Terminal
+  (green-phosphor CRT tailing `song.lrc`: typed cursor, scanlines, flicker).
+
+**Fixes from live feedback:** Downpour originally dropped words at random x —
+now lands in the **shortest column**, stacks in rows, and washes the drift away
+when full. Handwriting erased each word as the next landed — now previous words
+stay as fading ink (a journal trail).
+
+**Verified:** `tsc --noEmit` clean; `next build` green. eslint's
+`set-state-in-effect` hits in this file predate the Reactor (same accumulate-
+on-word pattern all cores use; candidate cleanup alongside MicPrimer/ScreamMoment).
+
+---
+
+## 2026-07-07 — Live stage push: Phase 4/5 gating, cinematic camera, Focus modes
+
+**Goal (live session with the owner):** make this round's engine work a visible,
+preserved *phase* of the show, then fix what real eyes caught.
+
+**Changes:**
+1. **Pass 4 fence** (`KineticStage`): the effect-bias seam + the new auto-trigger
+   effects engage only at `pass >= 4`; passes 1–3 render exactly as before.
+   `CinematicLyrics` MAX_PASS 3→4, 🌙 switcher cycles + labels "Phase N".
+2. **Auto-trigger vocabulary** for the newer effects: COLD/HEAT/STONE/GOLD/RISE/
+   FALL/ECHO/TREMOR word-sets behind an `extraFx` selector at **lowest** priority
+   (signature effects and per-word overrides still win). ~6% trigger rate measured
+   on a real English lyric; Spanish falls back cleanly.
+3. **Phase 5: cinematic camera** — a per-frame virtual dolly (`--cam-scale/x/y/rot`
+   CSS vars composed into the words layer + backdrop): pushes in with section
+   energy, breathes on the kick, drifts on two out-of-phase sines. Gated `pass >= 5`;
+   earlier passes snap `--cam` to identity. After live review it was imperceptible —
+   values cranked to a real dolly (~1.16 push-in, 18–46px drift), and perf-lite's
+   `transform: none` was replaced with a translate-only camera so phones dolly too.
+4. **Focus & Focus+ modes**: Focus is now ONE clean centered word (residue layers
+   only fire in Dynamic); Focus+ exits each word with a seeded effect (ash, dust,
+   blow, fly, burn). New `focus+` StageMode in the cycle.
+5. **Polish + regressions** from the same session: wipe veil reads as real fog
+   (luminous rim + pale underlay, auto-clears at 25% or 5s); MicPrimer is a proper
+   opening card (blow + scream, Enable-mic/skip, z-45); player chrome lifted to a
+   z-60 glassy title bar so stage layers can't cover the controls; moment-card
+   mobile centering fixed via `transformTemplate` (framer's inline transform was
+   clobbering the Tailwind centering); 🌙 pass switcher no longer hidden on phones.
+
+**Verified:** `tsc` clean per commit; owner-validated live on desktop + mobile
+(the camera and fog fixes came directly from that review).
+
+---
+
 ## 2026-07-07 — Variety push: more effects/weather + per-song "look" generator
 
 **Goal (owner: "blow people's minds — enough variety that not everyone's results
