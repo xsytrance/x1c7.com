@@ -35,7 +35,18 @@ export type TextEffect =
   // Rendered "signature" word treatments the stage matches to a live vocabulary.
   // These share the same manifest so a vibe/preset or a per-word override can pick
   // any of them (see WORD_FX in KineticStage — the single id→component render map).
-  | "slam" | "wave" | "neon" | "pulse" | "whisper" | "fizz" | "type";
+  | "slam" | "wave" | "neon" | "pulse" | "whisper" | "fizz" | "type"
+  // Override-summonable treatments (no automatic word trigger yet): the FX panel
+  // and vibe builder can pin any of these to a word.
+  | "shimmer" | "rise" | "fall" | "echo" | "tremor";
+
+/** Every TextEffect id, in a stable display order — the single list the FX panel
+ *  and vibe builder render (so their pickers can never drift from the union). */
+export const ALL_TEXT_EFFECTS: TextEffect[] = [
+  "burn", "shatter", "dissolve", "bloom", "glitch", "freeze", "melt", "carve",
+  "slam", "wave", "neon", "pulse", "whisper", "fizz", "type",
+  "shimmer", "rise", "fall", "echo", "tremor",
+];
 
 export interface EffectLego {
   id: string;
@@ -130,6 +141,11 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.whisper", class: "textbound", mode: "whisper", blurb: "The word breathes in soft and low.", tags: ["whisper", "quiet", "silence", "silencio", "hush", "secret", "softly"] },
   { id: "text.fizz", class: "textbound", mode: "fizz", blurb: "The word sparkles like a drink.", tags: ["cocktail", "drink", "glass", "ice", "sip", "champagne", "bubbles", "wine", "toast"] },
   { id: "text.type", class: "textbound", mode: "type", blurb: "The word types itself out in mono.", tags: ["code", "type", "tab", "debug", "commit", "prompt", "build", "program", "software", "keyboard", "laptop"] },
+  { id: "text.shimmer", class: "textbound", mode: "shimmer", blurb: "A gold-leaf light sweeps across the word.", tags: ["gold", "golden", "crown", "rich", "luxury", "diamond", "jewel", "shine", "glitter", "treasure", "royal"] },
+  { id: "text.rise", class: "textbound", mode: "rise", blurb: "The word floats up and lifts free.", tags: ["rise", "soar", "fly", "lift", "float", "higher", "ascend", "heaven", "wings", "hope"] },
+  { id: "text.fall", class: "textbound", mode: "fall", blurb: "The word sinks and drops away.", tags: ["fall", "sink", "plunge", "tumble", "collapse", "descend", "gravity", "down", "drown"] },
+  { id: "text.echo", class: "textbound", mode: "echo", blurb: "The word repeats in fading ghosts.", tags: ["echo", "repeat", "again", "memory", "remember", "distant", "reverb", "haunt"] },
+  { id: "text.tremor", class: "textbound", mode: "tremor", blurb: "The word trembles with nerves.", tags: ["tremble", "shiver", "fear", "afraid", "nervous", "anxious", "panic", "quake", "quiver", "shudder"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────

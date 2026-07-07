@@ -164,6 +164,11 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   freeze: (w, a) => <WordFreeze word={w} airtime={a} />,
   melt: (w, a) => <WordMelt word={w} airtime={a} />,
   carve: (w, a) => <WordCarve word={w} airtime={a} />,
+  shimmer: (w, a) => <WordShimmer word={w} airtime={a} />,
+  rise: (w, a) => <WordRise word={w} airtime={a} />,
+  fall: (w, a) => <WordFall word={w} airtime={a} />,
+  echo: (w, a) => <WordEcho word={w} airtime={a} />,
+  tremor: (w, a) => <WordTremor word={w} airtime={a} />,
 };
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck }: {
@@ -2289,6 +2294,124 @@ function WordCarve({ word, airtime }: { word: string; airtime: number }) {
         />
       ))}
     </span>
+  );
+}
+
+/* ========== SHIMMER ==========
+   Luxe words catch the light: a gold-leaf gradient fills the letters and a bright
+   highlight sweeps across them left-to-right, twice. */
+function WordShimmer({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.2, Math.max(1.1, airtime));
+  return (
+    <motion.span
+      className="inline-block bg-clip-text"
+      style={{
+        color: "transparent",
+        backgroundImage: "linear-gradient(100deg, #b8860b 0%, #ffe9a8 42%, #fffbe6 50%, #ffe9a8 58%, #b8860b 100%)",
+        backgroundSize: "300% 100%",
+        WebkitBackgroundClip: "text",
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      } as any}
+      initial={{ backgroundPositionX: "120%" }}
+      animate={{ backgroundPositionX: ["120%", "-20%", "120%", "50%"], textShadow: ["0 0 0.2em rgba(255,220,140,0.0)", "0 0 0.35em rgba(255,220,140,0.55)", "0 0 0.2em rgba(255,220,140,0.2)", "0 0 0.25em rgba(255,220,140,0.35)"] }}
+      transition={{ duration: dur, times: [0, 0.4, 0.8, 1], ease: "easeInOut" }}
+    >
+      {word}
+    </motion.span>
+  );
+}
+
+/* ========== RISE ==========
+   Uplift words float up and lift free — each letter drifts in from below on its
+   own delay, then keeps rising a touch, weightless. */
+function WordRise({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(1.8, Math.max(1.0, airtime));
+  const r = (i: number, m: number) => ((i * 57 + 19) % 71) / 71 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ y: `${0.5 + r(i, 0.2)}em`, opacity: 0, filter: "blur(2px)" }}
+          animate={{ y: [`${0.5 + r(i, 0.2)}em`, "0em", `-${0.06 + r(i, 0.05)}em`], opacity: [0, 1, 1], filter: ["blur(2px)", "blur(0px)", "blur(0px)"] }}
+          transition={{ duration: dur, times: [0, 0.55, 1], delay: i * 0.045, ease: "easeOut" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== FALL ==========
+   Gravity words sink: they arrive from just above, land, then sag and drop away
+   heavily as they fade — letters staggered so the word crumbles downward. */
+function WordFall({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(1.9, Math.max(1.0, airtime));
+  const r = (i: number, m: number) => ((i * 63 + 29) % 83) / 83 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block"
+          initial={{ y: `-${0.28 + r(i, 0.12)}em`, opacity: 0 }}
+          animate={{ y: [`-${0.28 + r(i, 0.12)}em`, "0em", "0em", `${0.55 + r(i, 0.4)}em`], opacity: [0, 1, 1, 0], filter: ["blur(1px)", "blur(0px)", "blur(0px)", "blur(2px)"] }}
+          transition={{ duration: dur, times: [0, 0.28, 0.62, 1], delay: 0.05 + i * 0.05, ease: "easeIn" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== ECHO ==========
+   Reverb words repeat: the word holds while two ghost copies fan outward and
+   fade, like a call bouncing off distance. */
+function WordEcho({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.0, Math.max(1.0, airtime));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span className="inline-block" initial={{ opacity: 0.9 }} animate={{ opacity: 1 }}>{word}</motion.span>
+      {[1, 2].map((n) => (
+        <motion.span
+          key={n}
+          className="pointer-events-none absolute inset-0 flex items-center justify-center"
+          style={{ color: "var(--theme-accent)" }}
+          initial={{ opacity: 0.4, scale: 1, x: "0em" }}
+          animate={{ opacity: 0, scale: 1 + n * 0.14, x: `${n * 0.18}em`, filter: `blur(${n}px)` }}
+          transition={{ duration: dur, delay: n * 0.18, ease: "easeOut", repeat: airtime > 1.7 ? 1 : 0, repeatDelay: 0.1 }}
+          aria-hidden
+        >
+          {word}
+        </motion.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== TREMOR ==========
+   Anxious words tremble: a fast, small, jittery shake that never quite settles,
+   with a faint blur on the hardest shudders. */
+function WordTremor({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.4, Math.max(0.7, airtime * 0.9));
+  return (
+    <motion.span
+      className="inline-block"
+      animate={{
+        x: ["0em", "0.02em", "-0.025em", "0.018em", "-0.02em", "0.012em", "-0.015em", "0em"],
+        y: ["0em", "-0.015em", "0.02em", "-0.01em", "0.015em", "-0.008em", "0.01em", "0em"],
+        rotate: [0, 0.8, -1, 0.6, -0.8, 0.4, -0.5, 0],
+        filter: ["blur(0px)", "blur(0.4px)", "blur(0px)", "blur(0.3px)", "blur(0px)", "blur(0.2px)", "blur(0px)", "blur(0px)"],
+      }}
+      transition={{ duration: dur, times: [0, 0.14, 0.28, 0.42, 0.56, 0.7, 0.85, 1], ease: "linear", repeat: airtime > 1.4 ? 1 : 0 }}
+    >
+      {word}
+    </motion.span>
   );
 }
 
