@@ -48,6 +48,13 @@ const WHISPER_WORDS = new Set(["whisper", "whispers", "whispering", "whispered",
 // normalize for lookup: lowercase, strip possessive ('s / ’s)
 const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 
+// framer-motion writes an inline `transform` when it animates ANY transform
+// (y/scale/rotate), which REPLACES a Tailwind `-translate-x-1/2` centering class
+// wholesale — so centered moment cards drift off to the right. These keep the
+// centering by prepending it to motion's generated transform (transformTemplate).
+const centerX = (_: unknown, generated: string) => `translateX(-50%) ${generated}`;
+const centerXY = (_: unknown, generated: string) => `translate(-50%, -50%) ${generated}`;
+
 // The word a SCREAM moment asks the listener to shout, per song. Explicit when
 // the moment carries it in `layer` (unused by scream otherwise — e.g. "I WON'T");
 // else the last ALL-CAPS word in the prompt ("SCREAM: GOOOLD!" → GOOOLD); else a
@@ -1640,6 +1647,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           <motion.button
             key={shakeMo.prompt}
             onClick={() => setQuake((q) => q + 1)}
+            transformTemplate={centerX}
             className="fixed left-1/2 top-24 z-[35] w-max max-w-[92vw] -translate-x-1/2 rounded-2xl border border-white/25 bg-black/55 px-5 py-3 text-center font-mono text-xs uppercase tracking-[0.3em] text-white backdrop-blur"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0, rotate: [0, -2.5, 2.5, -1.5, 1.5, 0] }}
@@ -1685,6 +1693,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               transition={{ duration: 2.6, times: [0, 0.25, 0.6, 1], ease: "easeInOut" }}
             />
             <motion.p
+              transformTemplate={centerXY}
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-sm uppercase tracking-[0.5em] text-white/70"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: [0, 1, 0], scale: 1.05 }}
@@ -2446,6 +2455,7 @@ function MicPrimer({ active }: { active: boolean }) {
       {show && (
         <motion.button
           onClick={prime}
+          transformTemplate={centerX}
           className="fixed left-1/2 top-24 z-[35] w-max max-w-[92vw] -translate-x-1/2 rounded-2xl border border-white/20 bg-black/55 px-4 py-2.5 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-white/80 backdrop-blur"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -2507,6 +2517,7 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
         <motion.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onGust : start}
+          transformTemplate={centerX}
           className="stage-warn-pill fixed left-1/2 top-[15vh] z-[38] flex w-max max-w-[92vw] -translate-x-1/2 flex-col items-center gap-1.5 rounded-[2rem] px-8 py-5 text-center"
           initial={{ opacity: 0, y: -18, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -2576,6 +2587,7 @@ function ScreamMoment({ moment, onScream }: { moment: { prompt: string; shout: s
         <motion.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onScream : start}
+          transformTemplate={centerX}
           className="stage-warn-pill fixed left-1/2 top-[15vh] z-[38] flex w-max max-w-[92vw] -translate-x-1/2 flex-col items-center gap-1.5 rounded-[2rem] px-8 py-5 text-center"
           initial={{ opacity: 0, y: -18, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: state === "listening" ? [1, 1.06, 1] : 1 }}
@@ -2636,6 +2648,14 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
       ctx.fillRect(gx, gy, grainPx, grainPx);
     }
     ctx.globalAlpha = 1;
+    // A faint luminous rim at the veil's inner edge — so there's always something
+    // visible to wipe even when the veil color is dark (ash/void/smoke) against a
+    // dark scene, where the veil alone would read as "no fog at all".
+    const rim = ctx.createRadialGradient(cx, cy, clearR * 0.9, cx, cy, clearR * 1.5);
+    rim.addColorStop(0, "rgba(255,255,255,0)");
+    rim.addColorStop(0.45, "rgba(255,255,255,0.12)");
+    rim.addColorStop(1, "rgba(255,255,255,0)");
+    ctx.fillStyle = rim; ctx.fillRect(0, 0, w, h);
     // 33% is measured against the VEILED area (screen minus the clear core).
     const veiledArea = Math.max(w * h * 0.25, w * h - Math.PI * clearR * clearR);
     let clearedPx = 0, strokes = 0, released = false, lastErase = 0;

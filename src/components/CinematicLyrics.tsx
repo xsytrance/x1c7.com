@@ -176,9 +176,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                 <button
                   onClick={() => setPass((p) => (p > 1 ? p - 1 : 3))}
                   title="Satellites — every pass of the show, preserved. Tap to switch."
-                  className="hidden rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white sm:block"
+                  className="shrink-0 rounded-full border border-white/20 px-2.5 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white sm:px-3"
                 >
-                  🌙 Pass {pass}{pass === 3 ? "" : " · satellite"}
+                  🌙 <span className="hidden sm:inline">Pass </span>{pass}<span className="hidden sm:inline">{pass === 3 ? "" : " · satellite"}</span>
                 </button>
               )}
               {/* Song hop — previous / play / next (also ← → keys) */}
