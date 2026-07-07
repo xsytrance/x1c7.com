@@ -45,6 +45,16 @@ const NEON_WORDS = new Set(["light", "lights", "neon", "glow", "glows", "glowing
 const PULSE_WORDS = new Set(["heartbeat", "heartbeats", "pulse", "beat", "beats", "corazón", "latido", "latidos"]);
 // hushed words arrive small, breathy, and blurred
 const WHISPER_WORDS = new Set(["whisper", "whispers", "whispering", "whispered", "quiet", "silence", "silencio", "hush", "secret", "secrets", "softly", "callar"]);
+// ── Auto-triggers for the newer treatments (lower priority than everything above,
+//    so shared words keep their existing effect; a per-word override still wins). ──
+const COLD_WORDS = new Set(["cold", "colder", "freeze", "freezing", "frost", "numb", "shiver", "shivers", "chill", "chills", "winter", "icy", "frostbite"]);           // → freeze
+const HEAT_WORDS = new Set(["melt", "melts", "melting", "heat", "heats", "sweat", "sweats", "drip", "drips", "dripping", "humid", "molten", "summer"]);                  // → melt
+const STONE_WORDS = new Set(["stone", "stones", "carve", "carved", "marble", "monument", "statue", "granite", "engrave", "engraved", "eternal", "forever", "chiseled", "permanent"]); // → carve
+const GOLD_WORDS = new Set(["gold", "golden", "crown", "crowns", "rich", "riches", "luxury", "luxe", "diamond", "diamonds", "jewel", "jewels", "glitter", "treasure", "royal", "shimmer", "sparkle"]);  // → shimmer
+const RISE_WORDS = new Set(["rise", "rises", "rising", "soar", "soars", "soaring", "fly", "flies", "flying", "lift", "lifts", "lifted", "float", "floats", "floating", "higher", "ascend", "heaven", "wings", "uplift"]);  // → rise
+const FALL_WORDS = new Set(["fall", "falls", "falling", "fell", "sink", "sinks", "sinking", "sank", "plunge", "tumble", "collapse", "descend", "gravity", "drown", "drowning"]);  // → fall
+const ECHO_WORDS = new Set(["echo", "echoes", "echoing", "echoed", "repeat", "repeats", "again", "distant", "reverb", "resound", "lingers", "lingering"]);               // → echo
+const TREMOR_WORDS = new Set(["tremble", "trembles", "trembling", "tremor", "fear", "afraid", "scared", "nervous", "anxious", "panic", "quake", "quakes", "earthquake", "rattle", "rattles", "quiver", "quivers", "shudder", "terror"]);  // → tremor
 // normalize for lookup: lowercase, strip possessive ('s / ’s)
 const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 
@@ -1044,7 +1054,22 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const priorEffect = burns || glitches || slams || wavy || neon || pulses || whispers;
   const fizzes = !priorEffect && airtime >= 0.55 && FIZZ_WORDS.has(ek);
   const types = !priorEffect && !fizzes && airtime >= 0.45 && TYPE_WORDS.has(ek);
-  const glyph = !priorEffect && !fizzes && !types && shown && airtime >= 0.6
+  // Newer treatments auto-fire on their own vocabulary, at the lowest priority —
+  // only when no signature effect above claimed the word (a per-word override
+  // still trumps this in resolveWordEffect). Gives freeze/melt/carve/shimmer/
+  // rise/fall/echo/tremor a life beyond the FX panel.
+  const extraFx: TextEffect | null = (!priorEffect && !fizzes && !types && airtime >= 0.5)
+    ? (COLD_WORDS.has(ek) ? "freeze"
+      : HEAT_WORDS.has(ek) ? "melt"
+      : STONE_WORDS.has(ek) ? "carve"
+      : GOLD_WORDS.has(ek) ? "shimmer"
+      : RISE_WORDS.has(ek) ? "rise"
+      : FALL_WORDS.has(ek) ? "fall"
+      : ECHO_WORDS.has(ek) ? "echo"
+      : TREMOR_WORDS.has(ek) ? "tremor"
+      : null)
+    : null;
+  const glyph = !priorEffect && !fizzes && !types && !extraFx && shown && airtime >= 0.6
     ? (glyphFor(shown) ?? (charged ? glyphForEmotion(keywordEmotion[lower]) : null))
     : null;
   // Line-final: the word that CLOSES a lyric line — it owns the stage a beat
@@ -1499,13 +1524,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     // The word's inner treatment, shared by held + normal paths.
                     // Dynamic plain words ASSEMBLE: every letter flies in from
                     // its own golden-angle direction — no two ever match.
-                    const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !glyph;
+                    const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !extraFx && !glyph;
                     // The stage's own natural pick for this word, in priority order;
                     // it resolves to one registry TextEffect id rendered via WORD_FX.
                     const naturalSig: TextEffect | null = burns ? "burn"
                       : glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
                       : neon ? "neon" : pulses ? "pulse" : whispers ? "whisper"
-                      : fizzes ? "fizz" : types ? "type" : null;
+                      : fizzes ? "fizz" : types ? "type" : extraFx;
                     // Bias seam (pure, shared with tests): per-word override wins,
                     // else the natural pick unless the preset `allow` list rules it out.
                     const resolvedFx = resolveWordEffect(naturalSig, effectsCfg, [ek, lower]);
