@@ -7,6 +7,51 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Phase 2.1: close the effect drift + never-blank photo net
+
+**Goal:** finish what Phase 2.0 set up — build the three text effects the registry
+named but never rendered, and widen the free photo net so a planet is never blank.
+
+**Changes:**
+1. **`freeze` / `melt` / `carve` `Word*` components built** (engine, x1c7
+   `src/components/KineticStage.tsx`) in the house idiom (motion.span, `em` units,
+   stable per-index pseudo-random, `--theme-accent`):
+   - `WordFreeze` — frost-blue tint sweeps in, a small shiver, then locks under a
+     crystalline rime; frost specks bloom at the edges. Blur is one-shot on entry
+     (never held — perf-lite).
+   - `WordMelt` — each letter sags on its own delay, stretches (`scaleY`) and bleeds
+     warm, then drips off the baseline; a few drops fall clear.
+   - `WordCarve` — chisel-hit jolt on arrival, a grey dust puff, then the letters
+     settle engraved (inset/emboss shadow). Slow, heavy, final.
+   - `WORD_FX` is now `Record<TextEffect, …>` (the `Exclude<…,"freeze"|"melt"|"carve">`
+     is gone) — **every** registry `TextEffect` id renders through exactly one
+     component. The `RenderableFx` alias was dropped; its one use site (`sigFx`) now
+     types as `TextEffect | null`. Drift between registry and stage is fully closed.
+2. **Two keyless photo sources added** (product shell, kinetica `src/images/sources.ts`):
+   - **The Met** — Open Access (CC0) fine art, no key. Two-step API (search →
+     objectIDs → per-object fetch, capped to 8), filtered to `isPublicDomain &&
+     primaryImageSmall`. Verified: 6–8 PD hits in the first 8 across ocean/love/fire/night.
+   - **NASA Image Library** — public-domain space imagery, no key (images-api.nasa.gov
+     needs none). Search href (any `~thumb|small|medium|large` rendition) is upgraded
+     to `~orig` for the backdrop — verified 10/10 `~orig` HEAD 200.
+   - New `KEYLESS_SOURCES` export (openverse, wikimedia, artic, met, nasa).
+3. **"Never blank" fallback chain** (kinetica `src/images/populate.ts`): each keyword's
+   search now tries the chosen source, then falls through `KEYLESS_SOURCES` until one
+   returns a landscape pick — only the chosen source uses the user's key. A dead
+   primary key still surfaces on word 1 if even the net can't cover it; otherwise the
+   run completes and `PopulateResult.warning` notes the fallback (shown in `ArtStep`).
+
+**Verified:**
+- x1c7: `tsc --noEmit` clean; engine sync `--apply` (1 file: KineticStage) → kinetica
+  `npm run build` passes.
+- kinetica: `tsc -b` + `npm run build` pass. Met/NASA endpoints live-smoke-tested
+  (URLs, field mappings, `~orig` existence, PD yield) before committing.
+
+**Next (Phase 2.2):** vibe/preset effect-biasing (now that WORD_FX is a clean id→component
+map) and per-word overrides; then 2.3 director's deck, 2.4 vertical/export, 2.5 DSP sections.
+
+---
+
 ## 2026-07-07 — Phase 2.0: Foundation (sync + registry reconciliation)
 
 **Goal:** kick off the Kinetica free-version capability push by getting both repos

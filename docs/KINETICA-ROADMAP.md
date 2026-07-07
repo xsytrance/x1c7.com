@@ -1,8 +1,10 @@
 # Kinetica — Free Version Roadmap (Phase 2+)
 
-> **Status:** Phase 2.0 (Foundation) ✅ **complete & verified** (2026-07-07) — engine
-> synced to kinetica, effect registry reconciled, `palette.ts`/`perf.ts`/`PerfHUD.tsx`
-> added to the sync manifest. See [`BUILD-LOG.md`](./BUILD-LOG.md). **Next: Phase 2.1.**
+> **Status:** Phase 2.1 ✅ **complete & verified** (2026-07-07) — `freeze/melt/carve`
+> built (registry↔stage drift fully closed; `WORD_FX` now covers every `TextEffect`),
+> The Met + NASA keyless photo sources added, and a "never blank" fallback chain wired
+> through `KEYLESS_SOURCES`. Phase 2.0 (Foundation) done before it. See
+> [`BUILD-LOG.md`](./BUILD-LOG.md). **Next: Phase 2.2 (vibe/preset effect-biasing + per-word overrides).**
 
 ## Context
 

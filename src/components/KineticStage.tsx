@@ -146,8 +146,9 @@ function gradeTo(section: PlanetSection) {
 // TextEffect id. One map = one source of truth: a per-word override or a vibe/
 // preset can swap any id for another without touching the selector below.
 // (freeze/melt/carve are named in the registry but land as components in 2.1.)
-type RenderableFx = Exclude<TextEffect, "freeze" | "melt" | "carve">;
-const WORD_FX: Record<RenderableFx, (word: string, airtime: number) => ReactNode> = {
+// Every TextEffect id renders through exactly one component here — no Exclude,
+// no drift. freeze/melt/carve close the last gap between the registry and the stage.
+const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> = {
   burn: (w, a) => <WordBurn word={w} airtime={a} />,
   glitch: (w, a) => <WordGlitch word={w} airtime={a} />,
   slam: (w) => <WordSlam word={w} />,
@@ -160,6 +161,9 @@ const WORD_FX: Record<RenderableFx, (word: string, airtime: number) => ReactNode
   shatter: (w) => <WordShatter word={w} />,
   dissolve: (w) => <WordDissolve word={w} />,
   bloom: (w) => <WordBloom word={w} />,
+  freeze: (w, a) => <WordFreeze word={w} airtime={a} />,
+  melt: (w, a) => <WordMelt word={w} airtime={a} />,
+  carve: (w, a) => <WordCarve word={w} airtime={a} />,
 };
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock }: {
@@ -1450,7 +1454,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !glyph;
                     // The matched signature treatment resolves to a single registry
                     // TextEffect id, then renders through the shared WORD_FX map.
-                    const sigFx: RenderableFx | null = glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
+                    const sigFx: TextEffect | null = glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
                       : neon ? "neon" : pulses ? "pulse" : whispers ? "whisper"
                       : fizzes ? "fizz" : types ? "type" : null;
                     let inner: ReactNode = sigFx ? WORD_FX[sigFx](shown, airtime)
@@ -2094,6 +2098,153 @@ function WordBloom({ word }: { word: string }) {
             scale: 1,
           }}
           transition={{ duration: 1.5, delay: r(i + 8, 0.25), ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========== FREEZE ==========
+   Cold words ice over: a frost-blue tint sweeps in, the letters give one small
+   shiver, then lock rigid under a crystalline rime. A few frost specks bloom at
+   the edges. Blur is animated once on the way in (short, one-shot) — never held. */
+function WordFreeze({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.6, Math.max(0.8, airtime * 0.9));
+  const r = (i: number, m: number) => ((i * 59 + 23) % 79) / 79 * m;
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span
+        className="inline-block"
+        initial={{ color: "#ffffff", x: "0em" }}
+        animate={{
+          color: ["#ffffff", "#dbeeff", "#bfe2f7", "#a9d6f2"],
+          x: ["0em", "-0.02em", "0.02em", "-0.01em", "0em"],
+          textShadow: [
+            "0 0 0em transparent",
+            "0 0 0.25em #bfe2f7, 0 0 0.05em #ffffff",
+            "0 0 0.4em #9cc4e4, 0 0 0.08em #ffffff",
+            "0 0 0.45em #9cc4e4, 0 0 0.1em #eaf6ff",
+          ],
+          filter: ["blur(0.6px)", "blur(0px)", "blur(0px)", "blur(0px)"],
+        }}
+        transition={{ duration: dur, times: [0, 0.35, 0.7, 1], ease: "easeOut" }}
+      >
+        {word}
+      </motion.span>
+      {Array.from({ length: 8 }).map((_, i) => (
+        <motion.span
+          key={i}
+          className="pointer-events-none absolute rounded-full"
+          style={{
+            left: `${10 + ((i * 71) % 80)}%`,
+            top: `${20 + ((i * 43) % 60)}%`,
+            width: `${0.03 + r(i, 0.03)}em`,
+            height: `${0.03 + r(i, 0.03)}em`,
+            background: "#eaf6ff",
+            boxShadow: "0 0 0.1em #bfe2f7",
+          }}
+          initial={{ opacity: 0, scale: 0.3 }}
+          animate={{ opacity: [0, 0.9, 0.7], scale: [0.3, 1, 1] }}
+          transition={{ duration: dur, delay: 0.2 + (i % 5) * (dur * 0.09), ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========== MELT ==========
+   Heat words run: each letter sags on its own delay, stretching downward as its
+   color bleeds warm, then drips off the baseline. A couple of drops fall clear. */
+function WordMelt({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(1.8, Math.max(1.0, airtime * 0.95));
+  const r = (i: number, m: number) => ((i * 67 + 31) % 89) / 89 * m;
+  return (
+    <span className="relative inline-flex">
+      {letters.map((ch, i) => (
+        <motion.span
+          key={i}
+          className="inline-block origin-top"
+          initial={{ y: "0em", scaleY: 1, color: "#ffffff", opacity: 1 }}
+          animate={{
+            y: ["0em", "0.04em", `${0.14 + r(i, 0.12)}em`, `${0.4 + r(i + 3, 0.3)}em`],
+            scaleY: [1, 1.12, 1.5, 2.1],
+            color: ["#ffffff", "#ffe0b0", "#ffb060", "#c86a2a"],
+            opacity: [1, 1, 0.9, 0],
+            filter: ["blur(0px)", "blur(0px)", "blur(0.6px)", "blur(2px)"],
+          }}
+          transition={{ duration: dur, times: [0, 0.3, 0.65, 1], delay: r(i + 5, 0.18), ease: "easeIn" }}
+        >
+          {ch}
+        </motion.span>
+      ))}
+      {Array.from({ length: 5 }).map((_, i) => (
+        <motion.span
+          key={`d${i}`}
+          className="pointer-events-none absolute rounded-full"
+          style={{
+            left: `${18 + ((i * 59) % 64)}%`,
+            top: "60%",
+            width: `${0.04 + r(i, 0.03)}em`,
+            height: `${0.06 + r(i, 0.05)}em`,
+            background: "#ffb060",
+            boxShadow: "0 0 0.08em #ff8a3c",
+          }}
+          initial={{ opacity: 0, y: "0em", scaleY: 1 }}
+          animate={{ opacity: [0, 0.9, 0], y: ["0em", `${0.5 + r(i + 2, 0.5)}em`], scaleY: [1, 1.6, 1] }}
+          transition={{ duration: dur, delay: dur * 0.4 + (i % 4) * (dur * 0.1), ease: "easeIn" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+/* ========== CARVE ==========
+   Permanent words are struck into stone: a chisel-hit jolt on arrival, a puff of
+   grey dust, then the letters settle engraved — an inset shadow that reads as
+   depth cut into the frame. Slow, heavy, final. */
+function WordCarve({ word, airtime }: { word: string; airtime: number }) {
+  const r = (i: number, m: number) => ((i * 53 + 19) % 73) / 73 * m;
+  const settled = Math.min(1.4, Math.max(0.7, airtime * 0.8));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span
+        className="inline-block"
+        initial={{ scale: 1.12, y: "-0.03em", color: "#ffffff" }}
+        animate={{
+          scale: [1.12, 0.985, 1, 1],
+          y: ["-0.03em", "0.015em", "0em", "0em"],
+          x: ["0.02em", "-0.015em", "0.006em", "0em"],
+          color: ["#ffffff", "#e6e2da", "#d8d2c6", "#cfc8ba"],
+          textShadow: [
+            "0 0 0.4em #ffffff",
+            "0.015em 0.015em 0 rgba(0,0,0,0.55), -0.01em -0.01em 0 rgba(255,255,255,0.35)",
+            "0.02em 0.02em 0.01em rgba(0,0,0,0.6), -0.012em -0.012em 0 rgba(255,255,255,0.4)",
+            "0.02em 0.02em 0.01em rgba(0,0,0,0.6), -0.012em -0.012em 0 rgba(255,255,255,0.4)",
+          ],
+        }}
+        transition={{ duration: settled, times: [0, 0.18, 0.4, 1], ease: "easeOut" }}
+      >
+        {word}
+      </motion.span>
+      {Array.from({ length: 10 }).map((_, i) => (
+        <motion.span
+          key={i}
+          className="pointer-events-none absolute rounded-full"
+          style={{
+            left: `${20 + ((i * 61) % 60)}%`,
+            top: "52%",
+            width: `${0.03 + r(i, 0.035)}em`,
+            height: `${0.03 + r(i, 0.035)}em`,
+            background: i % 2 ? "#b8b0a2" : "#8f887c",
+          }}
+          initial={{ opacity: 0, y: "0em", x: "0em" }}
+          animate={{
+            opacity: [0, 0.85, 0],
+            y: ["0em", `${0.2 + r(i + 2, 0.4)}em`, `${0.5 + r(i + 4, 0.5)}em`],
+            x: ["0em", `${(i % 2 ? 1 : -1) * (0.1 + r(i + 6, 0.3))}em`],
+          }}
+          transition={{ duration: settled * 0.9, delay: 0.06 + (i % 6) * 0.02, ease: "easeOut" }}
         />
       ))}
     </span>
