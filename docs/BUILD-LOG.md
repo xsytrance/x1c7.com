@@ -7,6 +7,161 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Lexicon dream loop: registry-driven tables + shelf re-dream
+
+**Goal:** the dream loop's hand-copied tag tables had drifted **16 text effects
+behind** `registry.ts` (they only knew the original 8) — every word it filled
+could never wear the signature treatments or tranches 2–3. Kill that bug class
+and refresh the shelf.
+
+**Changes (`scripts/lexicon/dream.mjs` + data + docs):**
+1. **Registry-driven tables** — the lego vocabularies are now **extracted from
+   `registry.ts`'s literal effect rows at run time** (regex over the uniform row
+   shape), so adding an effect row is enough for the dream loop to pick it up.
+   A drift guard exits loudly if extraction ever goes blind. `EXTRA_*` tables
+   preserve the loop's shelf-only enrichments (e.g. richer SURFACE vocab — the
+   registry's surface rows only carry their own name as a tag).
+2. **Bug found by the new coverage histogram, fixed:** with signature effects
+   dreamable, full-prompt matching put `neon` on **all 95 senses** — the
+   generated imagery suffix "…volumetric light, film grain" hits neon's `light`
+   tag. TEXT now matches the sense **core** (word + gloss + emotion) like
+   SURFACE always did: scene dressing must not pick word treatments. neon 95→1.
+3. **Coverage histogram** every run — senses-per-text-effect, zeros included,
+   so under-use is visible instead of silently absent.
+4. **Emotion rules for the new effects** — nostalgia/wistful/longing →
+   chromatic; hurt/pain/betrayal → bleed.
+5. **Shelf re-dreamed** (`--force`, all 87 words / 95 senses): +211 legos.
+   Spot-checks read right: "dreams"→chromatic, "code"→glitch/type,
+   "silence"→dissolve/whisper, "lie"→redact+bleed, and the Spanish words
+   sangre/herida wear bleed. carve/slam/wave/pulse/fall/echo/liquid have no
+   wearers yet — correctly reported, they fill as songs bring vocabulary.
+6. **npm scripts** — `lexicon:harvest/dream/redream/publish/grow` so the
+   pipeline is discoverable from package.json.
+
+**Verified:** `next build` green (lexicon.json is a bundled chunk); dream run
+output + spot-checks above. Publish to R2 not run from here (creds live on the
+owner box); the nightly `grow-and-publish.sh` cron ships the refreshed shelf on
+its next run — and with registry-driven tables it inherits every future effect
+tranche automatically.
+
+---
+
+## 2026-07-07 — Pillar 1 tranche 3: redact / chromatic / liquid / bleed
+
+**Goal:** keep widening the engine's text-effect palette (roadmap Pillar 1,
+"ship 3–4 per tranche") — secrecy, analog memory, water, and blood.
+
+**Changes (engine — registry + KineticStage, same shape as tranche 2):**
+1. **🕶 Redact** — the word lands readable, then a black bar slams across it
+   left-to-right and it stays struck out. Vocab: lie/liar/hidden/classified/
+   censored/forbidden/undercover… ("secret" stays whisper's — no stealing).
+2. **📼 Chromatic** — red/cyan ghosts pull apart and jitter like worn tape,
+   then lock back into register (`mix-blend-mode: screen`, transforms only).
+   Vocab: dream/nostalgia/analog/vhs/rewind/retro/polaroid/flashback/haze…
+3. **💧 Liquid** — the word stands as a 30%-opacity vessel and fills bottom-up
+   with a sea gradient via `clip-path inset` keyframes that overshoot and slosh.
+   Vocab: tears/cry/weep/flood/spill/pour/overflow/lágrimas…
+4. **🩸 Bleed** — a deep-red copy soaks through (base word keeps the theme
+   color) while three thin drips run down from under the letters. Vocab:
+   blood/bleed/wound/scar/vein/bruise/hurt/pain/ache/sangre…
+
+Wiring: `TextEffect` union + `ALL_TEXT_EFFECTS` + `TEXTBOUND` rows +
+`TEXT_MATCHERS` (appended, so first-match priority holds) in the registry;
+`WORD_FX` entries + four word-sets + the `extraFx` chain (appended after
+tremor) in KineticStage. Auto-trigger stays gated `pass >= 4`; per-word
+overrides still trump via `resolveWordEffect`. All perf-lite-safe: transforms,
+opacity, clip-path — no per-frame blur.
+
+**Verified:** `tsc --noEmit` clean; `next build` green; eslint back to the
+HEAD baseline (a copied stale `eslint-disable` was dropped — React types
+already cover `WebkitBackgroundClip`). A collision script confirmed **no dead
+vocabulary** — no word in the new sets is claimed by a higher-priority set.
+Live-lyric trigger-rate measurement wasn't possible in this container (lyrics
+live in Supabase; no creds here) — worth a spot-check on real songs next
+session. Kinetica sync not run from here (separate repo); the engine files are
+manifest-covered, so the next `sync-to-kinetica.mjs --apply` carries them over.
+
+---
+
+## 2026-07-07 — THE REACTOR: experimental lyric cores (17 and counting)
+
+**Goal:** a Labs wing on the now-playing stage — a place to try wild lyric
+renderers with **zero risk to the main show**, and a nursery for modes that
+should graduate to `/vr` later (orbit, constellation, kaleidoscope…).
+
+**Architecture (`src/components/LabStage.tsx`):**
+- Each mode is a **self-contained "core"**: one component taking the synced
+  word list + live playhead, sharing only a `useWordIndex` rAF hook, a `clean`
+  word scrubber, a seeded `hash`, and a neon `HUES` palette. No engine imports —
+  KineticStage is untouched, so a broken experiment can't hurt the real stage.
+- A labeled, glowing **⚛ Reactor** pill (spinning atom + tooltip) in the player
+  opens the picker; picking a core takes over the stage; "◐ Normal show"
+  returns to KineticStage. Adding a core = one renderer + one `LAB_MODES` row
+  (the picker renders from the list, so it can't drift from the union).
+
+**The 17 cores, by wing:**
+- *Playful/physical:* 🎨 Graffiti (spray tags, splatter + drips), 🎆 Fireworks
+  (words burst into letter-sparks), 🔨 Whack-a-Word (tap to score, +1 bursts +
+  haptics), 🌧️ Downpour (rain that stacks into a drift), 🫧 Bubbles (tap to
+  pop), 🍳 Sizzle (words squash into a pan over live flames, brown in a
+  sepia/brightness ramp, steam, get flipped out).
+- *Atmospheric:* ✍️ Handwriting (drying-ink journal), 🪐 Orbit (words circle a
+  star), 🐠 Aquarium (words swim, ambient bubbles), ✨ Constellation (letters
+  drawn as connected stars), 🪞 Kaleidoscope (8 mirrored segments on a
+  slow-turning lens).
+- *Theatrical/occult:* 🔮 Spellcast (counter-rotating rune rings), 🎭 Marionette
+  (words dangle on strings, swing, fall), 🃏 Tarot (every word a card flipped
+  into a spread), 🕯️ Séance (a glowing planchette glides a full ouija board —
+  letter arcs, YES/NO, GOOD BYE — spelling each word, flaring letters it passes).
+- *Machine:* 🛫 Split-Flap (departure board; letters clack through the alphabet
+  and settle left-to-right, prior words dim into rows above), 🖥️ Terminal
+  (green-phosphor CRT tailing `song.lrc`: typed cursor, scanlines, flicker).
+
+**Fixes from live feedback:** Downpour originally dropped words at random x —
+now lands in the **shortest column**, stacks in rows, and washes the drift away
+when full. Handwriting erased each word as the next landed — now previous words
+stay as fading ink (a journal trail).
+
+**Verified:** `tsc --noEmit` clean; `next build` green. eslint's
+`set-state-in-effect` hits in this file predate the Reactor (same accumulate-
+on-word pattern all cores use; candidate cleanup alongside MicPrimer/ScreamMoment).
+
+---
+
+## 2026-07-07 — Live stage push: Phase 4/5 gating, cinematic camera, Focus modes
+
+**Goal (live session with the owner):** make this round's engine work a visible,
+preserved *phase* of the show, then fix what real eyes caught.
+
+**Changes:**
+1. **Pass 4 fence** (`KineticStage`): the effect-bias seam + the new auto-trigger
+   effects engage only at `pass >= 4`; passes 1–3 render exactly as before.
+   `CinematicLyrics` MAX_PASS 3→4, 🌙 switcher cycles + labels "Phase N".
+2. **Auto-trigger vocabulary** for the newer effects: COLD/HEAT/STONE/GOLD/RISE/
+   FALL/ECHO/TREMOR word-sets behind an `extraFx` selector at **lowest** priority
+   (signature effects and per-word overrides still win). ~6% trigger rate measured
+   on a real English lyric; Spanish falls back cleanly.
+3. **Phase 5: cinematic camera** — a per-frame virtual dolly (`--cam-scale/x/y/rot`
+   CSS vars composed into the words layer + backdrop): pushes in with section
+   energy, breathes on the kick, drifts on two out-of-phase sines. Gated `pass >= 5`;
+   earlier passes snap `--cam` to identity. After live review it was imperceptible —
+   values cranked to a real dolly (~1.16 push-in, 18–46px drift), and perf-lite's
+   `transform: none` was replaced with a translate-only camera so phones dolly too.
+4. **Focus & Focus+ modes**: Focus is now ONE clean centered word (residue layers
+   only fire in Dynamic); Focus+ exits each word with a seeded effect (ash, dust,
+   blow, fly, burn). New `focus+` StageMode in the cycle.
+5. **Polish + regressions** from the same session: wipe veil reads as real fog
+   (luminous rim + pale underlay, auto-clears at 25% or 5s); MicPrimer is a proper
+   opening card (blow + scream, Enable-mic/skip, z-45); player chrome lifted to a
+   z-60 glassy title bar so stage layers can't cover the controls; moment-card
+   mobile centering fixed via `transformTemplate` (framer's inline transform was
+   clobbering the Tailwind centering); 🌙 pass switcher no longer hidden on phones.
+
+**Verified:** `tsc` clean per commit; owner-validated live on desktop + mobile
+(the camera and fog fixes came directly from that review).
+
+---
+
 ## 2026-07-07 — Variety push: more effects/weather + per-song "look" generator
 
 **Goal (owner: "blow people's minds — enough variety that not everyone's results

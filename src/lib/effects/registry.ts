@@ -38,7 +38,9 @@ export type TextEffect =
   | "slam" | "wave" | "neon" | "pulse" | "whisper" | "fizz" | "type"
   // Override-summonable treatments (no automatic word trigger yet): the FX panel
   // and vibe builder can pin any of these to a word.
-  | "shimmer" | "rise" | "fall" | "echo" | "tremor";
+  | "shimmer" | "rise" | "fall" | "echo" | "tremor"
+  // Tranche 3 (Pillar 1): secrecy, analog memory, water, and blood.
+  | "redact" | "chromatic" | "liquid" | "bleed";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -46,6 +48,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "burn", "shatter", "dissolve", "bloom", "glitch", "freeze", "melt", "carve",
   "slam", "wave", "neon", "pulse", "whisper", "fizz", "type",
   "shimmer", "rise", "fall", "echo", "tremor",
+  "redact", "chromatic", "liquid", "bleed",
 ];
 
 export interface EffectLego {
@@ -146,6 +149,10 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.fall", class: "textbound", mode: "fall", blurb: "The word sinks and drops away.", tags: ["fall", "sink", "plunge", "tumble", "collapse", "descend", "gravity", "down", "drown"] },
   { id: "text.echo", class: "textbound", mode: "echo", blurb: "The word repeats in fading ghosts.", tags: ["echo", "repeat", "again", "memory", "remember", "distant", "reverb", "haunt"] },
   { id: "text.tremor", class: "textbound", mode: "tremor", blurb: "The word trembles with nerves.", tags: ["tremble", "shiver", "fear", "afraid", "nervous", "anxious", "panic", "quake", "quiver", "shudder"] },
+  { id: "text.redact", class: "textbound", mode: "redact", blurb: "The word is shown, then struck out — classified.", tags: ["lie", "liar", "hidden", "classified", "censored", "redacted", "confidential", "forbidden", "conceal", "undercover"] },
+  { id: "text.chromatic", class: "textbound", mode: "chromatic", blurb: "RGB ghosts tear apart and lock back in — analog memory.", tags: ["dream", "nostalgia", "analog", "vhs", "rewind", "retro", "vintage", "polaroid", "cassette", "flashback"] },
+  { id: "text.liquid", class: "textbound", mode: "liquid", blurb: "Water rises inside the letterforms.", tags: ["tears", "cry", "weep", "flood", "soak", "spill", "pour", "overflow", "lágrimas"] },
+  { id: "text.bleed", class: "textbound", mode: "bleed", blurb: "Red ink weeps down from the word.", tags: ["blood", "bleed", "wound", "scar", "vein", "bruise", "hurt", "pain", "ache", "sangre"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────
@@ -214,6 +221,11 @@ const TEXT_MATCHERS: [RegExp, TextEffect][] = [
   [/\b(whisper|quiet|hush|softly)\b/, "whisper"],
   [/\b(cocktail|champagne|bubbles|sip|toast)\b/, "fizz"],
   [/\b(code|debug|commit|keyboard|laptop)\b/, "type"],
+  // Tranche 3 — appended so everything above keeps first-match priority.
+  [/\b(lie|lies|liar|hidden|classified|censored|redacted|confidential)\b/, "redact"],
+  [/\b(dream|dreams|nostalgia|analog|vhs|rewind|retro|vintage|polaroid|cassette)\b/, "chromatic"],
+  [/\b(tears|cry|crying|weep|flood|spill|pour|overflow)\b/, "liquid"],
+  [/\b(blood|bleed|bleeding|wound|scar|vein|bruise|ache)\b/, "bleed"],
 ];
 /** A word-level text treatment, if the vocabulary calls for one. */
 export function textEffectFor(text: string): TextEffect | null {

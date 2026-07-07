@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --max-warnings=0"
+    "lint": "eslint . --max-warnings=0",
+    "lexicon:harvest": "node scripts/lexicon/harvest.mjs",
+    "lexicon:dream": "node scripts/lexicon/dream.mjs",
+    "lexicon:redream": "node scripts/lexicon/dream.mjs --force --limit 999",
+    "lexicon:publish": "node scripts/lexicon/publish.mjs",
+    "lexicon:grow": "bash scripts/lexicon/grow-and-publish.sh"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
