@@ -189,15 +189,23 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                   </button>
                 </div>
               )}
-              {/* THE REACTOR — experimental Labs modes */}
+              {/* THE REACTOR — experimental Labs modes (labeled + glowing so it's
+                  obvious; native tooltip on hover explains it). */}
               {performs && (
-                <button onClick={() => setReactorOpen((v) => !v)} title="The Reactor — experimental modes"
-                  className="grid h-9 w-9 shrink-0 place-items-center rounded-full border text-sm transition hover:scale-105 sm:h-10 sm:w-10"
-                  style={labMode || reactorOpen
-                    ? { borderColor: "var(--theme-primary)", color: "var(--theme-primary)", boxShadow: "0 0 12px color-mix(in srgb, var(--theme-primary) 45%, transparent)" }
-                    : { borderColor: "rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.7)" }}>
-                  ⚛
-                </button>
+                <div className="group relative shrink-0">
+                  <button onClick={() => setReactorOpen((v) => !v)} aria-label="The Reactor — experimental modes"
+                    className="flex items-center gap-1.5 rounded-full border px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider transition hover:scale-[1.03]"
+                    style={labMode || reactorOpen
+                      ? { borderColor: "var(--theme-primary)", color: "var(--theme-primary)", background: "color-mix(in srgb, var(--theme-primary) 14%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--theme-primary) 50%, transparent)" }
+                      : { borderColor: "color-mix(in srgb, var(--theme-primary) 40%, transparent)", color: "var(--theme-primary)" }}>
+                    <motion.span animate={{ rotate: 360 }} transition={{ duration: 6, repeat: Infinity, ease: "linear" }} className="text-sm leading-none">⚛</motion.span>
+                    <span className="hidden sm:inline">{labMode ? "Reactor ✦" : "Reactor"}</span>
+                  </button>
+                  {/* custom hover tooltip (desktop) */}
+                  <span className="pointer-events-none absolute right-0 top-full z-[80] mt-2 hidden w-56 rounded-lg border border-white/12 bg-black/85 px-3 py-2 text-right font-mono text-[10px] leading-snug text-white/75 opacity-0 backdrop-blur transition group-hover:opacity-100 sm:block">
+                    ⚛ <b className="text-white">The Reactor</b> — wild experimental modes: graffiti, fireworks, orbit, bubbles &amp; more.
+                  </span>
+                </div>
               )}
               {/* Transport */}
               <button onClick={prev} aria-label="Previous song" title="Previous song (←)"
