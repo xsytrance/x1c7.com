@@ -2513,17 +2513,21 @@ function MicPrimer({ active }: { active: boolean }) {
   return (
     <AnimatePresence>
       {show && (
-        <motion.button
-          onClick={prime}
+        <motion.div
           transformTemplate={centerX}
-          className="fixed left-1/2 top-24 z-[35] w-max max-w-[92vw] -translate-x-1/2 rounded-2xl border border-white/20 bg-black/55 px-4 py-2.5 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-white/80 backdrop-blur"
-          initial={{ opacity: 0, y: -10 }}
+          className="fixed left-1/2 top-20 z-[45] w-max max-w-[90vw] -translate-x-1/2 rounded-2xl border border-white/15 bg-black/70 px-6 py-4 text-center backdrop-blur-md"
+          initial={{ opacity: 0, y: -14 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -8 }}
-          transition={{ delay: 1.2, duration: 0.8 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ delay: 0.8, duration: 0.7 }}
         >
-          🌬️ this song has a breath moment — tap to enable the mic
-        </motion.button>
+          <p className="font-display text-sm font-black uppercase tracking-wide text-white sm:text-base">🎙️ This song has mic moments</p>
+          <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.25em] text-white/60">blow &amp; shout along — enable your mic</p>
+          <button onClick={prime} className="mt-3 rounded-full px-6 py-2 font-display text-xs font-bold uppercase tracking-wider text-black transition hover:brightness-110" style={{ background: "var(--theme-primary)" }}>
+            Enable mic
+          </button>
+          <button onClick={() => setShow(false)} className="mt-2 block w-full font-mono text-[9px] uppercase tracking-widest text-white/40 hover:text-white/70">skip</button>
+        </motion.div>
       )}
     </AnimatePresence>
   );
@@ -2687,38 +2691,39 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
     const spec = VEIL_SPECS[moment.layer as VeilKind] ?? VEIL_SPECS.fog;
     const [c0, c1] = spec.colors;
     const grainPx = (spec.grain === "static" ? 3 : spec.grain === "blobs" ? 4 : 2) + (lite ? 1 : 0);
-    // Partial coverage: an edge vignette with a clear core. The veil is dense at
-    // the frame and fully transparent over the center ~40% where the words live.
+    // Screen-filling fog, visible EVERYWHERE (lighter over the center so the
+    // words still read, denser toward the edges). A pale underlay guarantees it
+    // shows even when the veil's own color is dark (ash/void/smoke) on a dark
+    // scene — the old clear-core veil read as "no fog at all".
     const cx = w / 2, cy = h * 0.46;
-    const clearR = Math.min(w, h) * 0.42;         // clear stage core
-    const edgeR = Math.hypot(w, h) * 0.58;        // reaches the corners
-    const base = ctx.createRadialGradient(cx, cy, clearR, cx, cy, edgeR);
-    base.addColorStop(0, hexAlpha(c0, 0));
-    base.addColorStop(0.55, hexAlpha(c0, 0.72));
-    base.addColorStop(1, hexAlpha(c1, 0.92));
+    const coreR = Math.min(w, h) * 0.14;          // small soft eye at center
+    const edgeR = Math.hypot(w, h) * 0.62;        // reaches the corners
+    const under = ctx.createRadialGradient(cx, cy, coreR, cx, cy, edgeR);
+    under.addColorStop(0, "rgba(206,212,222,0.24)");
+    under.addColorStop(1, "rgba(206,212,222,0.42)");
+    ctx.fillStyle = under; ctx.fillRect(0, 0, w, h);
+    const base = ctx.createRadialGradient(cx, cy, coreR, cx, cy, edgeR);
+    base.addColorStop(0, hexAlpha(c0, 0.30));
+    base.addColorStop(0.55, hexAlpha(c0, 0.62));
+    base.addColorStop(1, hexAlpha(c1, 0.85));
     ctx.fillStyle = base; ctx.fillRect(0, 0, w, h);
-    // Grain only in the veiled ring (skip the clear core) — fewer rects, and the
-    // paint happens under opacity 0 so it never shows as a hitch.
-    const grains = lite ? 300 : 1100;
+    // Grain across the whole veil (paints under opacity 0, so no arrival hitch).
+    const grains = lite ? 320 : 1200;
     for (let i = 0; i < grains; i++) {
       const gx = (i * 977) % w, gy = (i * 613) % h;
-      if (Math.hypot(gx - cx, gy - cy) < clearR) continue;
       ctx.globalAlpha = 0.04 + (i % 7) * 0.02;
       ctx.fillStyle = i % 2 ? "#ffffff" : "#000000";
       ctx.fillRect(gx, gy, grainPx, grainPx);
     }
     ctx.globalAlpha = 1;
-    // A faint luminous rim at the veil's inner edge — so there's always something
-    // visible to wipe even when the veil color is dark (ash/void/smoke) against a
-    // dark scene, where the veil alone would read as "no fog at all".
-    const rim = ctx.createRadialGradient(cx, cy, clearR * 0.9, cx, cy, clearR * 1.5);
-    rim.addColorStop(0, "rgba(255,255,255,0)");
-    rim.addColorStop(0.45, "rgba(255,255,255,0.12)");
-    rim.addColorStop(1, "rgba(255,255,255,0)");
-    ctx.fillStyle = rim; ctx.fillRect(0, 0, w, h);
-    // 33% is measured against the VEILED area (screen minus the clear core).
-    const veiledArea = Math.max(w * h * 0.25, w * h - Math.PI * clearR * clearR);
+    // Progress is measured against the whole (now screen-filling) veil.
+    const veiledArea = w * h;
     let clearedPx = 0, strokes = 0, released = false, lastErase = 0;
+    // Auto-clear the whole veil after 5s even if untouched — whichever comes
+    // first, 25% wiped (below) or this timer, frees the sound and dissolves it.
+    const autoClear = setTimeout(() => {
+      if (!released) { released = true; onProgress?.(1); onReleased?.(); }
+    }, 5000);
     const erase = (e: PointerEvent) => {
       if (released) return;
       if (e.pointerType === "mouse" && e.buttons === 0) return;
@@ -2741,12 +2746,12 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
         ctx.beginPath(); ctx.arc(e.clientX, e.clientY, R, 0, 7); ctx.fill();
       }
       ctx.globalCompositeOperation = "source-over";
-      // A third cleared: free the sound and let the rest dissolve on its own.
-      if (!released && cleared >= 0.33) { released = true; onProgress?.(1); onReleased?.(); }
+      // A quarter cleared: free the sound and let the rest dissolve on its own.
+      if (!released && cleared >= 0.25) { released = true; onProgress?.(1); onReleased?.(); }
     };
     window.addEventListener("pointermove", erase);
     window.addEventListener("pointerdown", erase);
-    return () => { window.removeEventListener("pointermove", erase); window.removeEventListener("pointerdown", erase); };
+    return () => { clearTimeout(autoClear); window.removeEventListener("pointermove", erase); window.removeEventListener("pointerdown", erase); };
   }, [moment, onProgress, onReleased, lite]);
   return (
     <AnimatePresence>

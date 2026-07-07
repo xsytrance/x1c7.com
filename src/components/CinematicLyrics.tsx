@@ -157,60 +157,66 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               "linear-gradient(160deg, var(--theme-bg), #05030b)",
           }}
         >
-          <div className="flex items-center justify-between px-5 py-4 sm:px-10">
+          {/* Player chrome — a glassy title bar lifted above the stage (z-[60] >
+              the stage's z-40 layers) so its controls are never blocked. */}
+          <div className="relative z-[60] flex items-center justify-between gap-2 border-b border-white/10 bg-black/40 px-3 py-2.5 backdrop-blur-md sm:px-8 sm:py-3">
             <div className="min-w-0">
               <p className="truncate font-display text-base font-black uppercase tracking-tight text-white sm:text-lg">{track.title}</p>
               <p className="truncate font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>
                 {track.artist}{synced ? " · synced" : ""}
               </p>
             </div>
-            <div className="flex items-center gap-2">
-              {/* Satellite switcher — cycle through the preserved passes of the show */}
-              {performs && pass >= 3 && (
-                <button
-                  onClick={cycleMode}
-                  title="Viewing style — Dynamic stagecraft, clean Focus, or readable Phrase. Tap to cycle."
-                  className="rounded-full border border-white/20 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white"
-                >
-                  {MODES.find((m) => m.id === mode)?.label}
-                </button>
-              )}
+            <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+              {/* View controls — phase + mode as one prominent segmented control
+                  (the owner's most-used knobs; enlarged, accented, always on top). */}
               {performs && (
-                <button
-                  onClick={() => setPass((p) => (p > 1 ? p - 1 : MAX_PASS))}
-                  title="Phases — every major upgrade of the show, preserved. Tap to switch."
-                  className="shrink-0 rounded-full border border-white/20 px-2.5 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white sm:px-3"
-                >
-                  🌙 <span className="hidden sm:inline">Phase </span>{pass}<span className="hidden sm:inline">{pass === MAX_PASS ? "" : " · satellite"}</span>
-                </button>
+                <div className="flex items-center gap-1 rounded-2xl border border-white/15 bg-white/[0.06] p-1">
+                  {pass >= 3 && (
+                    <button onClick={cycleMode} title="Viewing style — Dynamic / Focus / Phrase. Tap to cycle."
+                      className="rounded-xl px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider text-white/75 transition hover:bg-white/10 hover:text-white">
+                      {MODES.find((m) => m.id === mode)?.label}
+                    </button>
+                  )}
+                  <button onClick={() => setPass((p) => (p > 1 ? p - 1 : MAX_PASS))}
+                    title="Phase — every major upgrade of the show, preserved. Tap to switch."
+                    className="rounded-xl px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider text-white transition"
+                    style={{ background: "color-mix(in srgb, var(--theme-primary) 22%, transparent)", boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
+                    🌙 Phase {pass}
+                  </button>
+                </div>
               )}
-              {/* Song hop — previous / play / next (also ← → keys) */}
+              {/* Transport */}
               <button onClick={prev} aria-label="Previous song" title="Previous song (←)"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" /></svg>
               </button>
               <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
-                className="grid h-10 w-10 place-items-center rounded-full text-void transition hover:scale-105" style={{ background: "var(--theme-primary)" }}>
+                className="grid h-9 w-9 place-items-center rounded-full text-void transition hover:scale-105 sm:h-10 sm:w-10" style={{ background: "var(--theme-primary)" }}>
                 {isPlaying
                   ? <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><rect x="6" y="4" width="4" height="16" rx="1" /><rect x="14" y="4" width="4" height="16" rx="1" /></svg>
                   : <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>}
               </button>
               <button onClick={next} aria-label="Next song" title="Next song (→)"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z" /></svg>
               </button>
-              {/* The playlist — every world in the queue, one tap away */}
+              {/* The playlist — secondary; hidden on the tightest phones. */}
               <button onClick={() => setDrawer((d) => !d)} aria-label="Playlist" title="Playlist"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                className="hidden h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:grid sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round"><path d="M4 6h16M4 12h10M4 18h7" /><circle cx="18" cy="16" r="2.6" /><path d="M20.6 16V9.5l-3 1" /></svg>
               </button>
               {/* Minimize — drop back to the page; the music keeps playing */}
               <button onClick={onClose} aria-label="Minimize — music keeps playing" title="Minimize (Esc) — music keeps playing"
-                className="grid h-10 w-10 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white">
+                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
               </button>
             </div>
           </div>
+
+          {/* Window bezel — a faint inset frame + vignette so the whole show
+              reads as one cohesive "player screen". Decorative, never blocks. */}
+          <div className="pointer-events-none absolute inset-0 z-[55]" aria-hidden
+            style={{ boxShadow: "inset 0 0 0 1.5px color-mix(in srgb, var(--theme-primary) 14%, rgba(255,255,255,0.06)), inset 0 0 70px rgba(0,0,0,0.4)" }} />
 
           {/* PLAYLIST DRAWER — the queue as a constellation list. Planets
               (word-synced worlds) glow; tap any row to fly there. */}
