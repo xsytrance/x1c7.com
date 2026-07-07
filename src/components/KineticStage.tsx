@@ -1050,11 +1050,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       const camRoot = rootRef.current;
       if (camRoot && pass >= 5) {
         const push = camPush.current;                                  // 0..1 section energy
-        const beat = liteRef.current ? 0 : kickPulse.current;          // live kick breath
-        const scale = 1 + push * 0.05 + beat * 0.012;                  // ~1.00 .. 1.07
-        const camX = Math.sin(t * 0.11) * (6 + push * 12);             // px, slow drift
-        const camY = Math.cos(t * 0.083) * (4 + push * 7);
-        const rot = Math.sin(t * 0.067) * 0.4;                         // deg, barely-there tilt
+        const beat = liteRef.current ? 0 : kickPulse.current;          // live kick punch
+        const scale = 1 + push * 0.13 + beat * 0.03;                   // ~1.00 .. 1.16 push-in
+        const camX = Math.sin(t * 0.10) * (18 + push * 28);            // px, big slow drift
+        const camY = Math.cos(t * 0.074) * (12 + push * 18);
+        const rot = Math.sin(t * 0.055) * 0.8;                         // deg, gentle tilt
         camRoot.style.setProperty("--cam-scale", scale.toFixed(4));
         camRoot.style.setProperty("--cam-x", `${camX.toFixed(1)}px`);
         camRoot.style.setProperty("--cam-y", `${camY.toFixed(1)}px`);

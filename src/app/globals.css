@@ -407,7 +407,9 @@ body.perf-lite .kinetic-word {
    consumers — the audio-reactive micro-motion is the first thing to trade for a
    smooth phone. Color grading, particles, and word entrances all still play. */
 body.perf-lite .kinetic-stage {
-  transform: none;
+  /* PHASE 5: keep the cinematic camera on phones, but translate-only — no
+     beat-scale / filter re-raster (the exact costs perf-lite exists to drop). */
+  transform: translate3d(var(--cam-x, 0px), var(--cam-y, 0px), 0);
   transition: none;
 }
 body.perf-lite .kinetic-word--held .kinetic-breathe {
