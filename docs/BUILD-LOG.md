@@ -7,6 +7,38 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Phase 2.4 SHIPPED: vertical/social frames (kinetica) + engine fix
+
+**Goal:** the roadmap's ★ "biggest single win" — a 9:16/1:1 canvas so Suno
+creators can post to TikTok/Reels/Shorts — plus the flagged live-browser
+validation of the aspect-box approach.
+
+**Changes (kinetica `Show.tsx` + `useRecorder.ts`; engine fix here):**
+1. **Frame control** in the Director's deck (Wide / 9:16 / 1:1), "V" key
+   cycles, choice remembered in localStorage. Implementation is the roadmap's
+   own sketch, confirmed working: wrap the stage in a **transformed box** — a
+   transform makes the ancestor the containing block for `fixed` descendants,
+   so every engine layer (words, weather, veils, meters, grade) letterboxes to
+   the frame with **zero engine changes**. Chrome stays outside the frame.
+2. **Cropped recording** — Region Capture (`CropTarget`/`cropTo`, Chromium):
+   recording a framed show exports a **real 9:16/1:1 video**, not a
+   letterboxed tab. Falls back silently to full capture elsewhere; the deck
+   hints "pick This Tab".
+3. **Engine bug caught during live validation** (fixed HERE, synced over):
+   `SurfaceEffects` now clamps `intensity` to 0..1 and `dt` to ≥ 0. A
+   section's live intensity dipping negative made `reach`/`maxR`/`grow`
+   negative → a negative `createRadialGradient` radius → `IndexSizeError`
+   thrown inside the rAF (reproduced + traced on the kinetica demo with an
+   instrumented canvas).
+
+**Verified:** Playwright + Chromium on the demo song — wide unchanged, 9:16
+and 1:1 letterbox with clean clipping at the frame edge, deck controls work,
+zero page errors after the clamp. Both repos `tsc` + build green; engine
+byte-identical after sync. **Follow-up:** portrait-orientation photo search
+for vertical shows (Pillar 2), export fps/resolution options.
+
+---
+
 ## 2026-07-07 — Pillar 1 COMPLETE (handwrite + tvoff) · lint green again
 
 **Goal:** finish the roadmap's effects pillar and make `npm run lint`

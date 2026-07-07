@@ -15,11 +15,14 @@
 > re-cloning the planet + a browser to shape the UX). **Beat fine-tune skipped** — the
 > beatClock is live-detected from bass onsets, so a manual BPM/offset would fight the design.
 >
-> **Phase 2.4 (vertical + export) — flagged decision:** the engine renders fullscreen via
-> `fixed inset-0` layers, so a 9:16/1:1 frame needs those layers containerized. Cleanest path
-> = wrap the show in a transform-contained aspect box (makes `fixed` descendants relative to
-> the wrapper, **no engine change**) — but it's a visual/layout change to validate live in a
-> browser before shipping. Phases 2.0/2.1/2.2 done. See [`BUILD-LOG.md`](./BUILD-LOG.md).
+> **Phase 2.4 (vertical) ✅ SHIPPED (2026-07-07):** the transform-contained aspect box
+> worked exactly as sketched — validated live (Playwright/Chromium on the demo): every
+> `fixed inset-0` engine layer letterboxes to the 9:16/1:1 frame, **no engine change**.
+> Frame control in the deck + "V" key; recording **crops to the frame** via Region
+> Capture so exports are real vertical/square video. Pillar 1 (text effects) is also
+> **complete** — all named effects shipped across 4 tranches. **Remaining 2.4 stretch:**
+> portrait-orientation photo search, export fps/resolution options.
+> Phases 2.0/2.1/2.2 done. See [`BUILD-LOG.md`](./BUILD-LOG.md).
 
 ## Context
 

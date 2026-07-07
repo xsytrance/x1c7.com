@@ -33,8 +33,11 @@ export function SurfaceEffects({ mode, intensity, scale = 1 }: {
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const patches = useRef<Patch[]>([]);
-  const emo = useRef(intensity);
-  emo.current = intensity;
+  // Clamp to the documented 0..1 — a section's live intensity can dip outside
+  // it, and a negative value here becomes a negative gradient radius (a thrown
+  // IndexSizeError in the rAF, caught live on the kinetica demo).
+  const emo = useRef(Math.max(0, Math.min(1, intensity)));
+  emo.current = Math.max(0, Math.min(1, intensity));
   const modeRef = useRef(mode);
 
   // Mode switch: let the old growth recede, then regrow in the new material.
@@ -95,7 +98,7 @@ export function SurfaceEffects({ mode, intensity, scale = 1 }: {
     let raf = 0, last = performance.now();
     const tick = (now: number) => {
       raf = requestAnimationFrame(tick);
-      const dt = Math.min(0.05, (now - last) / 1000);
+      const dt = Math.max(0, Math.min(0.05, (now - last) / 1000));
       last = now;
       if (document.hidden) return;
       const s = spec();
