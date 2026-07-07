@@ -11,15 +11,22 @@ import { useMusicPlayer } from "./MusicPlayerContext";
 import { activeWordIndex, type SyncedWord } from "@/lib/lyrics";
 import type { Track } from "@/data/tracks";
 
-export type LabMode = "graffiti" | "fireworks" | "whackaword" | "handwriting" | "downpour" | "bubbles" | "orbit";
+export type LabMode =
+  | "graffiti" | "fireworks" | "whackaword" | "handwriting" | "downpour" | "bubbles" | "orbit"
+  | "spellcast" | "aquarium" | "marionette" | "tarot" | "constellation";
 export const LAB_MODES: { id: LabMode; label: string; blurb: string }[] = [
   { id: "graffiti", label: "🎨 Graffiti", blurb: "spray-paint the wall" },
   { id: "fireworks", label: "🎆 Fireworks", blurb: "launch & burst" },
   { id: "whackaword", label: "🔨 Whack-a-Word", blurb: "pop them for points" },
-  { id: "handwriting", label: "✍️ Handwriting", blurb: "written by hand" },
+  { id: "handwriting", label: "✍️ Handwriting", blurb: "the song writes itself" },
   { id: "downpour", label: "🌧️ Downpour", blurb: "rain & pile up" },
   { id: "bubbles", label: "🫧 Bubbles", blurb: "float & pop" },
   { id: "orbit", label: "🪐 Orbit", blurb: "words as a solar system" },
+  { id: "spellcast", label: "🔮 Spellcast", blurb: "summoned in a rune circle" },
+  { id: "aquarium", label: "🐠 Aquarium", blurb: "words swim by" },
+  { id: "marionette", label: "🎭 Marionette", blurb: "dangling on strings" },
+  { id: "tarot", label: "🃏 Tarot", blurb: "each word, a card drawn" },
+  { id: "constellation", label: "✨ Constellation", blurb: "written in the stars" },
 ];
 
 const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
@@ -59,6 +66,11 @@ export function LabStage({ track, mode, clock }: { track: Track; mode: LabMode; 
       {mode === "downpour" && <Downpour word={word} idx={idx} />}
       {mode === "bubbles" && <Bubbles word={word} idx={idx} />}
       {mode === "orbit" && <Orbit word={word} idx={idx} />}
+      {mode === "spellcast" && <Spellcast word={word} idx={idx} />}
+      {mode === "aquarium" && <Aquarium word={word} idx={idx} />}
+      {mode === "marionette" && <Marionette word={word} idx={idx} />}
+      {mode === "tarot" && <Tarot word={word} idx={idx} />}
+      {mode === "constellation" && <Constellation word={word} idx={idx} />}
     </div>
   );
 }
@@ -218,51 +230,73 @@ function WhackAWord({ words, idx }: { words: SyncedWord[]; idx: number }) {
   );
 }
 
-/* ========== HANDWRITING — each word drawn left-to-right in cursive ========== */
+/* ========== HANDWRITING — the song writes itself onto the page ========== */
 function Handwriting({ word, idx }: { word: string; idx: number }) {
-  const dur = Math.min(1.1, Math.max(0.5, word.length * 0.09));
+  // Recent words stay ON the page as faded ink (a written journal), instead of
+  // vanishing the instant the next word lands.
+  const [trail, setTrail] = useState<{ id: number; word: string }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    setTrail((old) => [...old.filter((t) => t.id !== idx), { id: idx, word }].slice(-7));
+  }, [idx, word]);
+  const dur = Math.min(1.0, Math.max(0.45, word.length * 0.08));
+  const script = { fontFamily: '"Segoe Script", "Brush Script MT", "Snell Roundhand", cursive' } as const;
   return (
-    <div className="absolute inset-0 flex items-center justify-center">
-      <AnimatePresence mode="wait">
-        {word && (
-          <motion.div key={idx} className="relative" initial={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.35 } }}>
-            <motion.span className="block select-none whitespace-nowrap"
-              style={{ fontFamily: '"Segoe Script", "Brush Script MT", "Snell Roundhand", cursive', color: "var(--theme-primary)", fontSize: "clamp(3rem, 13vw, 9rem)", textShadow: "0 0 18px color-mix(in srgb, var(--theme-primary) 60%, transparent)" }}
-              initial={{ clipPath: "inset(0 100% 0 0)" }} animate={{ clipPath: "inset(0 -4% 0 0)" }} transition={{ duration: dur, ease: "linear" }}>
-              {word}
-            </motion.span>
-            {/* the pen nib rides the writing edge */}
-            <motion.span className="absolute top-1/2 h-2 w-2 rounded-full bg-white" style={{ boxShadow: "0 0 10px #fff" }}
-              initial={{ left: "0%", opacity: 0 }} animate={{ left: "100%", opacity: [0, 1, 1, 0] }} transition={{ duration: dur, ease: "linear" }} />
-          </motion.div>
+    <div className="absolute inset-0 flex flex-col items-center justify-center gap-1 px-6">
+      {/* the ink trail — previous words, written and drying */}
+      <div className="flex max-w-full flex-wrap items-baseline justify-center gap-x-4">
+        {trail.slice(0, -1).map((t, i) => (
+          <motion.span key={t.id} className="select-none whitespace-nowrap"
+            style={{ ...script, color: "var(--theme-primary)", fontSize: "clamp(1.4rem, 5vw, 3rem)" }}
+            initial={{ opacity: 0.9 }} animate={{ opacity: 0.22 + (i / Math.max(1, trail.length - 1)) * 0.4 }} transition={{ duration: 1.4 }}>
+            {t.word}
+          </motion.span>
+        ))}
+      </div>
+      {/* the live word, being written */}
+      <div className="relative h-[clamp(4rem,16vw,11rem)]">
+        {trail.length > 0 && (
+          <motion.span key={trail[trail.length - 1].id} className="block select-none whitespace-nowrap"
+            style={{ ...script, color: "var(--theme-primary)", fontSize: "clamp(3rem, 13vw, 9rem)", textShadow: "0 0 18px color-mix(in srgb, var(--theme-primary) 60%, transparent)" }}
+            initial={{ clipPath: "inset(0 100% -20% 0)" }} animate={{ clipPath: "inset(0 -4% -20% 0)" }} transition={{ duration: dur, ease: "linear" }}>
+            {trail[trail.length - 1].word}
+          </motion.span>
         )}
-      </AnimatePresence>
+      </div>
     </div>
   );
 }
 
-/* ========== DOWNPOUR — words rain from the top and pile at the bottom ========== */
+/* ========== DOWNPOUR — words rain down and STACK per column, like a drift ===== */
 function Downpour({ word, idx }: { word: string; idx: number }) {
-  const [drops, setDrops] = useState<{ id: number; word: string; x: number; hue: string; rot: number }[]>([]);
+  const COLS = 5;
+  const [drops, setDrops] = useState<{ id: number; word: string; col: number; row: number; hue: string; rot: number }[]>([]);
+  const heights = useRef<number[]>(Array(COLS).fill(0));
   useEffect(() => {
     if (!word || idx < 0) return;
     const h = hash(idx);
-    setDrops((old) => [...old, { id: idx, word, x: 6 + (h % 84), hue: HUES[h % HUES.length], rot: (h % 24) - 12 }].slice(-18));
+    // Land in the SHORTEST column (with a seeded tiebreak) so the pile grows evenly.
+    const min = Math.min(...heights.current);
+    const candidates = heights.current.map((v, c) => ({ v, c })).filter((x) => x.v === min);
+    const col = candidates[h % candidates.length].c;
+    const row = heights.current[col]++;
+    // Pile full? Wash the whole drift away and start fresh.
+    if (row > 6) { heights.current = Array(COLS).fill(0); setDrops([]); return; }
+    setDrops((old) => [...old.slice(-30), { id: idx, word, col, row, hue: HUES[h % HUES.length], rot: (h % 14) - 7 }]);
   }, [idx, word]);
   return (
     <>
-      {drops.map((d, i) => {
-        const rest = 88 - ((drops.length - 1 - i) % 6) * 3; // rows so they pile, not perfectly overlap
-        return (
-          <motion.div key={d.id} className="absolute select-none font-display font-black uppercase" style={{ left: `${d.x}%`, color: d.hue, fontSize: "clamp(1.3rem, 5vw, 3rem)", textShadow: `0 0 8px ${d.hue}` }}
-            initial={{ top: "-10%", opacity: 0, rotate: 0 }}
-            animate={{ top: `${rest}%`, opacity: i < drops.length - 13 ? 0.35 : 1, rotate: d.rot }}
-            transition={{ type: "spring", stiffness: 55, damping: 11, mass: 1.3 }}
-          >
-            {d.word}
-          </motion.div>
-        );
-      })}
+      {drops.map((d) => (
+        <motion.div key={d.id} className="absolute -translate-x-1/2 select-none whitespace-nowrap font-display font-black uppercase"
+          style={{ left: `${10 + d.col * 20}%`, color: d.hue, fontSize: "clamp(1.2rem, 4.5vw, 2.6rem)", textShadow: `0 0 8px ${d.hue}` }}
+          initial={{ top: "-10%", opacity: 0, rotate: 0 }}
+          animate={{ top: `${90 - d.row * 6.5}%`, opacity: 1, rotate: d.rot }}
+          exit={{ top: "115%", opacity: 0 }}
+          transition={{ type: "spring", stiffness: 60, damping: 12, mass: 1.2 }}
+        >
+          {d.word}
+        </motion.div>
+      ))}
     </>
   );
 }
@@ -317,6 +351,196 @@ function Orbit({ word, idx }: { word: string; idx: number }) {
           </span>
         </motion.div>
       ))}
+    </div>
+  );
+}
+
+/* ========== SPELLCAST — each word summoned inside a spinning rune circle ===== */
+function Spellcast({ word, idx }: { word: string; idx: number }) {
+  const RUNES = "ᚠᚢᚦᚨᚱᚲᚷᚹᚺᚾᛁᛃᛇᛈᛉᛊᛏᛒᛖᛗᛚᛜᛞᛟ";
+  const ring = Array.from({ length: 16 }, (_, i) => RUNES[(hash(idx + i) % RUNES.length)]);
+  return (
+    <div className="absolute inset-0 flex items-center justify-center">
+      {/* the sigil — two counter-rotating rune rings */}
+      <motion.div className="absolute h-[52vmin] w-[52vmin] rounded-full border border-dashed"
+        style={{ borderColor: "color-mix(in srgb, var(--theme-accent) 50%, transparent)" }}
+        animate={{ rotate: 360 }} transition={{ duration: 20, repeat: Infinity, ease: "linear" }}>
+        {ring.map((r, i) => {
+          const a = (i / ring.length) * 360;
+          return (
+            <span key={i} className="absolute left-1/2 top-1/2 font-bold"
+              style={{ color: "var(--theme-accent)", fontSize: "clamp(0.8rem,2.4vw,1.4rem)", opacity: 0.8,
+                transform: `rotate(${a}deg) translateY(-26vmin) rotate(${-a}deg)` }}>
+              {r}
+            </span>
+          );
+        })}
+      </motion.div>
+      <motion.div className="absolute h-[38vmin] w-[38vmin] rounded-full border"
+        style={{ borderColor: "color-mix(in srgb, var(--theme-primary) 35%, transparent)", boxShadow: "0 0 40px color-mix(in srgb, var(--theme-primary) 25%, transparent) inset" }}
+        animate={{ rotate: -360 }} transition={{ duration: 14, repeat: Infinity, ease: "linear" }} />
+      {/* the word materializes from arcane glow */}
+      <AnimatePresence mode="popLayout">
+        {word && (
+          <motion.span key={idx} className="relative select-none whitespace-nowrap px-4 text-center font-display font-black uppercase"
+            style={{ color: "var(--theme-primary)", fontSize: "clamp(2.4rem, 10vw, 7rem)", textShadow: "0 0 30px var(--theme-primary), 0 0 70px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}
+            initial={{ opacity: 0, scale: 1.6, filter: "blur(14px)" }}
+            animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
+            exit={{ opacity: 0, scale: 0.7, filter: "blur(10px)", transition: { duration: 0.3 } }}
+            transition={{ duration: 0.45, ease: "easeOut" }}
+          >
+            {word}
+          </motion.span>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/* ========== AQUARIUM — words swim across like fish, bobbing, with bubbles ===== */
+function Aquarium({ word, idx }: { word: string; idx: number }) {
+  const [fish, setFish] = useState<{ id: number; word: string; y: number; dir: 1 | -1; dur: number; hue: string; size: number }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    const h = hash(idx);
+    setFish((old) => [...old.slice(-8), { id: idx, word, y: 12 + (h % 68), dir: h % 2 ? 1 : -1, dur: 9 + (h % 8), hue: HUES[h % HUES.length], size: 1 + ((h >> 5) % 40) / 60 }]);
+  }, [idx, word]);
+  return (
+    <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 0%, color-mix(in srgb, #123a5c 30%, transparent) 100%)" }}>
+      {fish.map((f) => (
+        <motion.div key={f.id} className="absolute flex items-center gap-1 whitespace-nowrap font-display font-bold uppercase"
+          style={{ top: `${f.y}%`, color: f.hue, fontSize: `calc(clamp(1.2rem, 4.5vw, 2.6rem) * ${f.size})`, textShadow: `0 0 10px ${f.hue}`, scaleX: f.dir === 1 ? 1 : -1 }}
+          initial={{ left: f.dir === 1 ? "-30%" : "105%" }}
+          animate={{ left: f.dir === 1 ? "105%" : "-30%", y: [0, -14, 8, -6, 0] }}
+          transition={{ left: { duration: f.dur, ease: "linear" }, y: { duration: 3.4, repeat: Infinity, ease: "easeInOut" } }}
+        >
+          <span style={{ transform: f.dir === 1 ? undefined : "scaleX(-1)" }}>{f.word}</span>
+          <span className="text-[0.6em] opacity-80">◃</span>
+        </motion.div>
+      ))}
+      {/* ambient bubbles */}
+      {Array.from({ length: 8 }).map((_, i) => (
+        <motion.span key={i} className="absolute rounded-full border border-white/25"
+          style={{ left: `${8 + i * 12}%`, width: 6 + (i % 3) * 4, height: 6 + (i % 3) * 4 }}
+          initial={{ bottom: "-5%" }} animate={{ bottom: "105%" }}
+          transition={{ duration: 8 + i, repeat: Infinity, ease: "linear", delay: i * 1.3 }} />
+      ))}
+    </div>
+  );
+}
+
+/* ========== MARIONETTE — words drop in dangling on strings, swinging ========== */
+function Marionette({ word, idx }: { word: string; idx: number }) {
+  const [puppets, setPuppets] = useState<{ id: number; word: string; x: number; hue: string; swing: number }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    const h = hash(idx);
+    setPuppets((old) => [...old.slice(-4), { id: idx, word, x: 18 + (h % 64), hue: HUES[h % HUES.length], swing: 6 + (h % 8) }]);
+  }, [idx, word]);
+  return (
+    <AnimatePresence>
+      {puppets.map((p, i) => {
+        const old = i < puppets.length - 1;
+        return (
+          <motion.div key={p.id} className="absolute top-0 origin-top" style={{ left: `${p.x}%` }}
+            initial={{ y: "-40vh", rotate: 0, opacity: 1 }}
+            animate={{ y: 0, rotate: [p.swing, -p.swing * 0.7, p.swing * 0.45, -p.swing * 0.25, 0], opacity: old ? 0.35 : 1 }}
+            exit={{ y: "60vh", opacity: 0, transition: { duration: 0.6, ease: "easeIn" } }}
+            transition={{ y: { type: "spring", stiffness: 70, damping: 13 }, rotate: { duration: 3.2, ease: "easeInOut" } }}
+          >
+            {/* strings */}
+            <div className="mx-auto flex w-max gap-8">
+              <span className="block h-[30vh] w-px bg-white/30" />
+              <span className="block h-[30vh] w-px bg-white/30" />
+            </div>
+            {/* crossbar + the dangling word */}
+            <div className="-mt-px flex flex-col items-center">
+              <span className="mb-1 block h-1 w-16 rounded bg-white/40" />
+              <span className="select-none whitespace-nowrap font-display font-black uppercase"
+                style={{ color: p.hue, fontSize: "clamp(1.8rem, 7vw, 4.5rem)", textShadow: `0 0 12px ${p.hue}` }}>
+                {p.word}
+              </span>
+            </div>
+          </motion.div>
+        );
+      })}
+    </AnimatePresence>
+  );
+}
+
+/* ========== TAROT — every word drawn as a card, flipped face-up ========== */
+function Tarot({ word, idx }: { word: string; idx: number }) {
+  const [cards, setCards] = useState<{ id: number; word: string; x: number; rot: number; hue: string }[]>([]);
+  useEffect(() => {
+    if (!word || idx < 0) return;
+    const h = hash(idx);
+    setCards((old) => [...old.slice(-4), { id: idx, word, x: 14 + (h % 66), rot: ((h >> 3) % 16) - 8, hue: HUES[h % HUES.length] }]);
+  }, [idx, word]);
+  return (
+    <div className="absolute inset-0" style={{ perspective: 1100 }}>
+      <AnimatePresence>
+        {cards.map((c, i) => {
+          const live = i === cards.length - 1;
+          return (
+            <motion.div key={c.id} className="absolute flex h-56 w-36 flex-col items-center justify-center rounded-xl border-2 p-2 text-center sm:h-72 sm:w-44"
+              style={{ left: `${c.x}%`, top: live ? "26%" : "58%", borderColor: c.hue, background: "linear-gradient(155deg, #171226, #0a0714)", boxShadow: `0 0 24px color-mix(in srgb, ${c.hue} 35%, transparent)`, transformStyle: "preserve-3d" }}
+              initial={{ rotateY: 180, opacity: 0, y: 30, rotate: c.rot }}
+              animate={{ rotateY: 0, opacity: live ? 1 : 0.45, y: 0, rotate: c.rot, scale: live ? 1 : 0.62 }}
+              exit={{ opacity: 0, y: 40, transition: { duration: 0.4 } }}
+              transition={{ rotateY: { duration: 0.55, ease: "easeOut" }, scale: { duration: 0.5 } }}
+            >
+              <span className="font-mono text-[9px] uppercase tracking-[0.3em]" style={{ color: c.hue }}>✦ arcana ✦</span>
+              <span className="my-2 select-none break-words font-display text-xl font-black uppercase leading-tight text-white sm:text-2xl">{c.word}</span>
+              <span className="font-mono text-[9px] uppercase tracking-[0.3em] text-white/40">{["the fool","the star","the moon","the tower","the sun","the world"][hash(c.id) % 6]}</span>
+              <span className="pointer-events-none absolute inset-2 rounded-lg border border-white/10" />
+            </motion.div>
+          );
+        })}
+      </AnimatePresence>
+    </div>
+  );
+}
+
+/* ========== CONSTELLATION — each word drawn in the night sky, star by star ===== */
+function Constellation({ word, idx }: { word: string; idx: number }) {
+  const letters = [...word];
+  // Seeded star positions per letter — a zig-zag path so the lines read as a figure.
+  const pts = letters.map((_, i) => {
+    const h = hash(idx * 31 + i);
+    return { x: 12 + (i / Math.max(1, letters.length - 1)) * 70 + ((h % 12) - 6), y: 28 + ((h >> 4) % 34) };
+  });
+  return (
+    <div className="absolute inset-0">
+      {/* ambient starfield */}
+      {Array.from({ length: 26 }).map((_, i) => (
+        <motion.span key={`bg${i}`} className="absolute rounded-full bg-white"
+          style={{ left: `${(hash(i * 7) % 96) + 2}%`, top: `${(hash(i * 13) % 90) + 4}%`, width: 2, height: 2 }}
+          animate={{ opacity: [0.15, 0.7, 0.15] }} transition={{ duration: 2 + (i % 4), repeat: Infinity, delay: i * 0.2 }} />
+      ))}
+      <AnimatePresence mode="popLayout">
+        {word && (
+          <motion.div key={idx} className="absolute inset-0" initial={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: 0.5 } }}>
+            {/* connecting lines */}
+            <svg className="absolute inset-0 h-full w-full">
+              {pts.slice(1).map((p, i) => (
+                <motion.line key={i} x1={`${pts[i].x}%`} y1={`${pts[i].y}%`} x2={`${p.x}%`} y2={`${p.y}%`}
+                  stroke="color-mix(in srgb, var(--theme-accent) 60%, white)" strokeWidth="1"
+                  initial={{ pathLength: 0, opacity: 0 }} animate={{ pathLength: 1, opacity: 0.6 }}
+                  transition={{ duration: 0.25, delay: 0.15 + i * 0.09 }} />
+              ))}
+            </svg>
+            {/* the letter-stars */}
+            {pts.map((p, i) => (
+              <motion.span key={i} className="absolute -translate-x-1/2 -translate-y-1/2 select-none font-display font-bold uppercase"
+                style={{ left: `${p.x}%`, top: `${p.y}%`, color: "white", fontSize: "clamp(1.1rem, 4vw, 2.4rem)", textShadow: "0 0 12px var(--theme-accent), 0 0 26px color-mix(in srgb, var(--theme-accent) 60%, transparent)" }}
+                initial={{ opacity: 0, scale: 0.2 }} animate={{ opacity: 1, scale: [0.2, 1.4, 1] }}
+                transition={{ duration: 0.3, delay: i * 0.09 }}>
+                {letters[i]}
+              </motion.span>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
