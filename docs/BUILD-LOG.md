@@ -7,6 +7,39 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Phase 2.3: per-word override UI + director's deck
+
+**Goal:** turn the engine seams into hands-on control — pin effects to individual
+words, and give a single deck for vibe + weather + intensity (declutter the show bar).
+
+**Changes:**
+1. **Per-word effect override UI** (kinetica `ui/WordFxPanel.tsx` + `Show.tsx`): a "✦ FX"
+   panel lists the song's unique words; pin any of the 15 text effects to a word and it
+   fires every time the word appears, over the vibe's pick. Overrides are keyed by
+   `clean(word).toLowerCase()` — the exact `lower` key `resolveWordEffect` checks (so no
+   drift); assigned words float to the top of a filterable list; clear-all included.
+   Local state seeded from `planet.effects.overrides`, merged into the `effects` prop.
+2. **Director's-deck intensity knobs** (engine: `KineticParticles.tsx` + `KineticStage.tsx`):
+   a new **optional, fully-gated** `deck` prop — `{ density, glow, grain, vignette }`.
+   Absent = the x1c7 show is byte-for-byte unchanged. `density` multiplies the particle
+   population (via a ref so slider drags don't rebuild the rAF loop); `glow` is a static
+   accent drop-shadow on the words (skipped on lite); `grain`/`vignette` are static
+   full-frame overlays mounted only when non-zero. Perf-lite aware throughout.
+3. **Director's deck panel** (kinetica `Show.tsx`): the crowded top bar (preset · +Vibe ·
+   Cover · FX) collapses into one **⚙ Director** panel holding the vibe dropdown +
+   New/Edit, cover-theme, a **live weather picker** (particle override on top of the
+   preset), the four intensity sliders, and a Per-word-FX launcher.
+
+**Verified:** x1c7 `tsc` clean; engine sync (KineticStage + KineticParticles) applied,
+**0 drift**; kinetica `npm run build` green; `resolveWordEffect` contract still 12/12. The
+per-word key matching is covered by the "override checks 2nd key" contract case. *(Live
+browser pass of the sliders/overrides not run here — recommended manual check.)*
+
+**Still open in 2.3:** section editor, backdrop curation (port x1c7 studio/feed), beat
+fine-tune, keyboard shortcuts / interaction legend. Then **2.4** (vertical + export).
+
+---
+
 ## 2026-07-07 — Phase 2.2 (part 2): preset expansion, custom vibes, cover-theme, surface
 
 **Goal:** cash in the effect-bias seam — grow the vibe set, let users author their
