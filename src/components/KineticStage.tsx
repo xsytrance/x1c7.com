@@ -609,8 +609,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const tapFx = interactions?.tapEffect ?? "dissolve";
   // Preset/vibe effect biasing + per-word overrides (both optional). A live
   // `effects` prop (preset UI) wins over the planet's persisted config; when
-  // neither is set the stage's own word-matching drives everything.
-  const effectsCfg = effects ?? track.planet?.effects;
+  // neither is set the stage's own word-matching drives everything. PHASE 4:
+  // the effect-bias seam (per-word overrides + preset allow/surface) is part of
+  // the Kinetica upgrade, so it only engages at pass >= 4 — passes 1-3 render
+  // with the engine's own natural picks, as they did before.
+  const effectsCfg = pass >= 4 ? (effects ?? track.planet?.effects) : undefined;
   // MORE moments: beyond the LLM-choreographed ones, the engine reads the song
   // itself — the longest instrumental gap becomes a wipe, the biggest intensity
   // jump gets a blow (arrive the drop on a breath), the wildest section a shake.
@@ -1057,8 +1060,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Newer treatments auto-fire on their own vocabulary, at the lowest priority —
   // only when no signature effect above claimed the word (a per-word override
   // still trumps this in resolveWordEffect). Gives freeze/melt/carve/shimmer/
-  // rise/fall/echo/tremor a life beyond the FX panel.
-  const extraFx: TextEffect | null = (!priorEffect && !fizzes && !types && airtime >= 0.5)
+  // rise/fall/echo/tremor a life beyond the FX panel. PHASE 4: this whole
+  // family is the "Kinetica upgrade" pass, so it's gated behind pass >= 4 —
+  // passes 1-3 stay exactly as they were before it.
+  const extraFx: TextEffect | null = (pass >= 4 && !priorEffect && !fizzes && !types && airtime >= 0.5)
     ? (COLD_WORDS.has(ek) ? "freeze"
       : HEAT_WORDS.has(ek) ? "melt"
       : STONE_WORDS.has(ek) ? "carve"

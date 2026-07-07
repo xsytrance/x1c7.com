@@ -79,7 +79,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   // The playlist drawer — the whole queue, one tap from any show.
   const [drawer, setDrawer] = useState(false);
   // Satellites: which pass of the show is playing (newest = main show).
-  const [pass, setPass] = useState(3);
+  // Phase 4 (the Kinetica upgrade — new effects, auto-triggers, per-word
+  // overrides) is the current top; passes 1-3 are the preserved earlier looks.
+  const MAX_PASS = 4;
+  const [pass, setPass] = useState(MAX_PASS);
   // Viewing style, remembered across sessions.
   const [mode, setMode] = useState<StageMode>("phrase");
   useEffect(() => {
@@ -174,11 +177,11 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               )}
               {performs && (
                 <button
-                  onClick={() => setPass((p) => (p > 1 ? p - 1 : 3))}
-                  title="Satellites — every pass of the show, preserved. Tap to switch."
+                  onClick={() => setPass((p) => (p > 1 ? p - 1 : MAX_PASS))}
+                  title="Phases — every major upgrade of the show, preserved. Tap to switch."
                   className="shrink-0 rounded-full border border-white/20 px-2.5 py-2 font-mono text-[10px] uppercase tracking-wider text-white/70 transition hover:text-white sm:px-3"
                 >
-                  🌙 <span className="hidden sm:inline">Pass </span>{pass}<span className="hidden sm:inline">{pass === 3 ? "" : " · satellite"}</span>
+                  🌙 <span className="hidden sm:inline">Phase </span>{pass}<span className="hidden sm:inline">{pass === MAX_PASS ? "" : " · satellite"}</span>
                 </button>
               )}
               {/* Song hop — previous / play / next (also ← → keys) */}

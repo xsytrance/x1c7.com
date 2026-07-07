@@ -135,7 +135,7 @@ export default function PerfHarness() {
 
   return (
     <div className="fixed inset-0 bg-black">
-      {track && <KineticStage track={track} pass={3} mode={mode} forceParticle={weather} clock={() => tRef.current} />}
+      {track && <KineticStage track={track} pass={Number(params.get("pass")) || 4} mode={mode} forceParticle={weather} clock={() => tRef.current} />}
     </div>
   );
 }
