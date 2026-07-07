@@ -90,7 +90,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
     if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
   }, []);
   const cycleMode = () => {
-    const order: StageMode[] = ["dynamic", "focus", "phrase"];
+    const order: StageMode[] = ["dynamic", "focus+", "focus", "phrase"];
     const next = order[(order.indexOf(mode) + 1) % order.length];
     setMode(next); localStorage.setItem("x1c7-lyric-style", next);
   };

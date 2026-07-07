@@ -101,11 +101,30 @@ export function canPerform(t: Track | null | undefined): boolean {
 
 /** Viewing styles (pass 3+). Dynamic = full stagecraft; Focus = the clean
  * centered show; Phrase = the whole line on screen, igniting word by word. */
-export type StageMode = "dynamic" | "focus" | "phrase";
+export type StageMode = "dynamic" | "focus" | "focus+" | "phrase";
 export const MODES: { id: StageMode; label: string }[] = [
   { id: "dynamic", label: "✦ Dynamic" },
+  { id: "focus+", label: "◉ Focus+" },
   { id: "focus", label: "◎ Focus" },
   { id: "phrase", label: "☰ Phrase" },
+];
+
+// Focus / Focus+ keep each word plain and readable — one word at a time, clean
+// entrance, no residue stacking. Plain Focus fades out; Focus+ exits with an
+// effect (ash rises, dust falls, blow sideways, fly off, burn away).
+const FOCUS_IN = {
+  initial: { opacity: 0, y: 12, filter: "blur(5px)" },
+  animate: { opacity: 1, y: 0, filter: "blur(0px)" },
+  transition: { duration: 0.3, ease: "easeOut" },
+} as const;
+const FOCUS_EXIT_PLAIN = { opacity: 0, filter: "blur(3px)", transition: { duration: 0.18 } };
+const FOCUS_EXITS = [
+  { opacity: 0, y: "-0.75em", scale: 1.12, filter: "blur(9px)", transition: { duration: 0.6, ease: "easeOut" } },   // ash — rises + dissolves
+  { opacity: 0, y: "0.8em", filter: "blur(7px)", transition: { duration: 0.6, ease: "easeIn" } },                    // dust/snow — drifts down
+  { opacity: 0, x: "1.5em", rotate: 16, filter: "blur(7px)", transition: { duration: 0.5, ease: "easeIn" } },        // blows right
+  { opacity: 0, x: "-1.5em", rotate: -16, filter: "blur(7px)", transition: { duration: 0.5, ease: "easeIn" } },      // blows left
+  { opacity: 0, y: "-1.1em", x: "0.5em", scale: 0.55, rotate: 12, transition: { duration: 0.46, ease: "easeIn" } },  // flies up-away
+  { opacity: 0, color: "#ff6a00", scale: 0.8, filter: "blur(4px)", transition: { duration: 0.52, ease: "easeIn" } }, // burns away (warm + shrink)
 ];
 
 // Function words render small in dynamic mode so content words own the stage.
@@ -258,6 +277,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
   const dynamic = pass >= 3 && mode === "dynamic";
   const phrase = pass >= 3 && mode === "phrase";
+  const focusMode = pass >= 3 && (mode === "focus" || mode === "focus+"); // one clean word at a time
+  const focusFx = pass >= 3 && mode === "focus+";                          // …with an effect on the way out
   // Line ranges (for phrase mode): consecutive word-index spans per lyric line.
   const lineRanges = useMemo(() => {
     const ranges: { s: number; e: number }[] = [];
@@ -810,7 +831,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // The outgoing word joins the pile (max 3 residues + the live word).
         // Its true on-stage position + font size are measured off the DOM so
         // the residue takes over without a pixel of drift.
-        if (pass >= 3 && mode !== "phrase" && lastRendered.current && lastRendered.current.key !== i) {
+        if (pass >= 3 && mode === "dynamic" && lastRendered.current && lastRendered.current.key !== i) {
           const lr = lastRendered.current;
           lastRendered.current = null;
           const el = wordEls.current.get(lr.key);
@@ -1071,7 +1092,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const lower = shown.toLowerCase();
   const charged = !!word && lower in keywordEmotion;
   const treatment: SectionMotion = section ? sectionMotion(section) : "pulse";
-  const m = MOTION[treatment];
+  // Focus modes override the section's motion with a calm entrance + a clean
+  // (Focus) or effect (Focus+, seeded per word) exit. Others ride the section.
+  const m = focusMode
+    ? { ...FOCUS_IN, exit: focusFx ? FOCUS_EXITS[((idx * 2654435761) >>> 0) % FOCUS_EXITS.length] : FOCUS_EXIT_PLAIN }
+    : MOTION[treatment];
   // Shape-morph: lexicon words morph when they have air; charged words fall back
   // to a glyph chosen from their EMOTION, so the brain's picks always land big.
   const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
@@ -1542,8 +1567,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 onPointerLeave={pass >= 3 ? () => setCharging(false) : undefined}
                 {...(m as MotionProps)}
               >
-                {/* ghost echo — line-final and charged words leave an afterimage */}
-                {pass >= 2 && (final || charged) && !burns && (
+                {/* ghost echo — line-final and charged words leave an afterimage (not in focus) */}
+                {pass >= 2 && (final || charged) && !burns && !focusMode && (
                   <motion.span
                     className="pointer-events-none absolute inset-0 flex items-center justify-center"
                     initial={{ opacity: 0.35, scale: 1 }}
@@ -1556,6 +1581,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 )}
                 <span className="kinetic-breathe">
                   {(() => {
+                    // Focus / Focus+ render every word PLAIN and readable — no
+                    // inner treatment (the effect lives on the exit, not the word).
+                    // A live tap still reacts (touchBurn) even in focus.
+                    if (focusMode && touchBurn !== idx) return <>{shown}</>;
                     // The word's inner treatment, shared by held + normal paths.
                     // Dynamic plain words ASSEMBLE: every letter flies in from
                     // its own golden-angle direction — no two ever match.
