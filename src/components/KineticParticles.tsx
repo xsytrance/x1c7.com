@@ -71,8 +71,14 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   palette?: string[];
   /** Density multiplier (phrase mode runs lighter). */
   scale?: number;
-}>(function KineticParticles({ mode, intensity, palette, scale = 1 }, ref) {
+  /** Phone/low-power profile: dpr-1 canvas, ~0.6 density, single-arc dots. */
+  lite?: boolean;
+  /** Skip drawing entirely (e.g. while a full-screen veil hides the weather). */
+  paused?: boolean;
+}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false }, ref) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const pausedRef = useRef(paused);
+  pausedRef.current = paused;
   const parts = useRef<P[]>([]);
   const wind = useRef(0);
   const pull = useRef(0);
@@ -135,7 +141,9 @@ export const KineticParticles = forwardRef<ParticleHandle, {
     if (!ctx) return;
     let w = 0, h = 0, dpr = 1;
     const resize = () => {
-      dpr = Math.min(2, window.devicePixelRatio || 1);
+      // Phones: pin DPR to 1. A 3× phone at the old cap of 2 filled+cleared 4×
+      // the pixels every frame — the single biggest canvas cost on mobile.
+      dpr = lite ? 1 : Math.min(2, window.devicePixelRatio || 1);
       w = window.innerWidth; h = window.innerHeight;
       c.width = w * dpr; c.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
@@ -149,9 +157,12 @@ export const KineticParticles = forwardRef<ParticleHandle, {
       const dt = Math.min(0.05, (now - last) / 1000);
       last = now;
       if (document.hidden) return;
+      // Hidden under a full-screen veil (fog moment): skip the redraw. The
+      // canvas keeps its last frame — invisible anyway — and resumes cleanly.
+      if (pausedRef.current) return;
       const m = modeRef.current;
-      // target population follows the emotional intensity
-      const target = Math.round(DENSITY[m] * scale * (0.45 + emo.current * 0.85) * Math.min(1, w / 900));
+      // target population follows the emotional intensity (thinned on phones)
+      const target = Math.round(DENSITY[m] * scale * (lite ? 0.6 : 1) * (0.45 + emo.current * 0.85) * Math.min(1, w / 900));
       const arr = parts.current;
       const ambient = arr.reduce((n, p) => n + (p.extra ? 0 : 1), 0);
       for (let i = ambient; i < target; i++) arr.push(spawn(m, palRef.current, Math.random() * w, edgeY(m, h), { fresh: true }));
@@ -203,6 +214,11 @@ export const KineticParticles = forwardRef<ParticleHandle, {
           ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, 7); ctx.stroke();
           ctx.globalAlpha = Math.min(1, alpha * 0.35);
           ctx.beginPath(); ctx.arc(p.x - p.r * 0.3, p.y - p.r * 0.3, p.r * 0.3, 0, 7); ctx.fill();
+        } else if (lite) {
+          // Phones: a single slightly-larger core — half the draw calls, and no
+          // per-particle halo fill (the biggest per-frame canvas cost).
+          ctx.globalAlpha = Math.min(1, alpha);
+          ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 1.35, 0, 7); ctx.fill();
         } else {
           // soft dot: halo + core (cheaper than shadowBlur)
           ctx.globalAlpha = Math.min(1, alpha * 0.35);
@@ -215,7 +231,7 @@ export const KineticParticles = forwardRef<ParticleHandle, {
     };
     raf = requestAnimationFrame(tick);
     return () => { cancelAnimationFrame(raf); window.removeEventListener("resize", resize); };
-  }, [scale]);
+  }, [scale, lite]);
 
   return (
     <canvas

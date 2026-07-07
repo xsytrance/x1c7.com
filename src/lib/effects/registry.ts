@@ -31,7 +31,11 @@ export type VeilKind =
   | "fog" | "ash" | "frost" | "steam" | "static" | "mud" | "dust" | "smoke" | "void";
 
 export type TextEffect =
-  | "burn" | "shatter" | "dissolve" | "bloom" | "glitch" | "freeze" | "melt" | "carve";
+  | "burn" | "shatter" | "dissolve" | "bloom" | "glitch" | "freeze" | "melt" | "carve"
+  // Rendered "signature" word treatments the stage matches to a live vocabulary.
+  // These share the same manifest so a vibe/preset or a per-word override can pick
+  // any of them (see WORD_FX in KineticStage — the single id→component render map).
+  | "slam" | "wave" | "neon" | "pulse" | "whisper" | "fizz" | "type";
 
 export interface EffectLego {
   id: string;
@@ -118,6 +122,14 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.freeze", class: "textbound", mode: "freeze", blurb: "The word ices over and stills.", tags: ["cold", "freeze", "frost", "numb", "winter"] },
   { id: "text.melt", class: "textbound", mode: "melt", blurb: "The word drips and runs.", tags: ["melt", "heat", "summer", "sweat", "drip"] },
   { id: "text.carve", class: "textbound", mode: "carve", blurb: "The word is struck into stone.", tags: ["stone", "carve", "forever", "monument", "name"] },
+  // ── Signature treatments (rendered by dedicated Word* components) ──
+  { id: "text.slam", class: "textbound", mode: "slam", blurb: "The word drops in and hits like a kick.", tags: ["boom", "drop", "crash", "break", "slam", "hit", "bang", "drum", "kick", "punch", "stomp", "hammer"] },
+  { id: "text.wave", class: "textbound", mode: "wave", blurb: "The word rolls like water.", tags: ["ocean", "wave", "river", "tide", "water", "sea", "olas", "mar"] },
+  { id: "text.neon", class: "textbound", mode: "neon", blurb: "The word buzzes on like a neon sign.", tags: ["light", "neon", "glow", "shine", "bright", "luz", "brilla"] },
+  { id: "text.pulse", class: "textbound", mode: "pulse", blurb: "The word beats with the heart.", tags: ["heartbeat", "pulse", "beat", "corazón", "latido"] },
+  { id: "text.whisper", class: "textbound", mode: "whisper", blurb: "The word breathes in soft and low.", tags: ["whisper", "quiet", "silence", "silencio", "hush", "secret", "softly"] },
+  { id: "text.fizz", class: "textbound", mode: "fizz", blurb: "The word sparkles like a drink.", tags: ["cocktail", "drink", "glass", "ice", "sip", "champagne", "bubbles", "wine", "toast"] },
+  { id: "text.type", class: "textbound", mode: "type", blurb: "The word types itself out in mono.", tags: ["code", "type", "tab", "debug", "commit", "prompt", "build", "program", "software", "keyboard", "laptop"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────
@@ -177,6 +189,14 @@ const TEXT_MATCHERS: [RegExp, TextEffect][] = [
   [/\b(cold|freeze|frost|numb|ice)\b/, "freeze"],
   [/\b(melt|heat|sweat|drip|summer)\b/, "melt"],
   [/\b(stone|carve|forever|name|monument)\b/, "carve"],
+  // Signature treatments — appended so the matchers above keep first-match priority.
+  [/\b(boom|slam|crash|bang|stomp|hammer|kick|punch)\b/, "slam"],
+  [/\b(ocean|wave|river|tide|sea|olas|mar)\b/, "wave"],
+  [/\b(neon|glow|shine|bright|luz|brilla)\b/, "neon"],
+  [/\b(heartbeat|pulse|corazón|latido)\b/, "pulse"],
+  [/\b(whisper|quiet|hush|softly)\b/, "whisper"],
+  [/\b(cocktail|champagne|bubbles|sip|toast)\b/, "fizz"],
+  [/\b(code|debug|commit|keyboard|laptop)\b/, "type"],
 ];
 /** A word-level text treatment, if the vocabulary calls for one. */
 export function textEffectFor(text: string): TextEffect | null {

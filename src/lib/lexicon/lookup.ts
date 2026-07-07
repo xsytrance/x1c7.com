@@ -36,7 +36,15 @@ export async function loadLexicon(): Promise<Lexicon> {
     loading = (async () => {
       if (HOSTED_LEXICON_URL) {
         try {
-          const res = await fetch(HOSTED_LEXICON_URL, { cache: "force-cache" });
+          // `no-cache` = revalidate the shelf on every load (conditional GET;
+          // R2 serves an ETag/Last-Modified, so an unchanged shelf is a cheap
+          // 304 that reuses the cached body). NOT `force-cache`: this is a
+          // mutable, ever-growing asset, and force-cache would pin each browser
+          // to the first copy it ever downloaded — clients would never see an
+          // update (e.g. a fixed word tag) until their HTTP cache was evicted.
+          // A network failure still throws → we fall back to the bundled shelf,
+          // so this stays offline-safe.
+          const res = await fetch(HOSTED_LEXICON_URL, { cache: "no-cache" });
           if (res.ok) return (cache = (await res.json()) as Lexicon);
         } catch { /* offline / blocked — fall back to the bundled shelf */ }
       }

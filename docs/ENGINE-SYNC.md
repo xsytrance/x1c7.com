@@ -38,7 +38,10 @@ clean:
 src/components/KineticStage.tsx      → kinetica src/engine/KineticStage.tsx
 src/components/KineticParticles.tsx  → kinetica src/engine/KineticParticles.tsx
 src/components/SurfaceEffects.tsx    → kinetica src/engine/SurfaceEffects.tsx
+src/components/PerfHUD.tsx            → kinetica src/engine/PerfHUD.tsx
 src/lib/effects/registry.ts          (same path)
+src/lib/perf.ts                      (same path — perf-lite profile)
+src/lib/palette.ts                   (same path — cover-art → palette)
 src/lib/planet.ts  lyrics.ts  shapes.ts  theme.ts  stemSense.ts  beatClock.ts
 src/lib/lexicon/types.ts  lookup.ts
 src/data/lexicon.json                (the pre-grown shelf, until it's hosted)

@@ -43,6 +43,14 @@ Two shifts fix that and set up something much bigger:
 - **Effects become legos.** A declarative **registry** is the single manifest of
   every effect, grouped by **physics class** (they don't all move the same way).
   Adding a lego = adding a row.
+  - **Phase 2.0 update:** the `TextEffect` union in `registry.ts` is now the
+    _complete_ manifest of rendered word treatments — it gained
+    `slam/wave/neon/pulse/whisper/fizz/type` alongside
+    `burn/shatter/dissolve/bloom/glitch/freeze/melt/carve`. In `KineticStage`, a
+    single **`WORD_FX` map** (id → component) is the one place word effects render,
+    so a per-word override or a vibe/preset can swap any effect by its id.
+    (`freeze/melt/carve` are named but land as components in Phase 2.1 — the map
+    types them via `Exclude<TextEffect, "freeze"|"melt"|"carve">` until then.)
 - **Words become a database.** Every word a song uses is harvested into a shared
   **Lexicon**, where it accumulates senses, palettes, imagery prompts, and — via the
   **dream loop** — a full set of effect legos. Grown far enough, creators pick from

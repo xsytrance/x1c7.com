@@ -104,12 +104,22 @@ function matchTags(has, table, out) {
 }
 
 function dreamSense(word, sense) {
-  const text = [word, sense.gloss, sense.emotion, ...(sense.imageryPrompts || [])].join(" ").toLowerCase();
+  // The semantic CORE of the sense — what the word actually means.
+  const core = [word, sense.gloss, sense.emotion].join(" ").toLowerCase();
+  // The full text also folds in imagery prompts — fine for atmospheric picks,
+  // but those prompts are scene dressing ("a lantern in a dark FOREST path")
+  // full of incidental nouns.
+  const text = [core, ...(sense.imageryPrompts || [])].join(" ").toLowerCase();
   const has = makeHas(text);
+  // SURFACE is the exception: it's a texture that creeps over the WHOLE frame,
+  // so a false positive is loud (a breakup song draped in green moss because its
+  // imagery merely mentioned a forest). Tag it from the word's meaning ONLY, not
+  // from incidental scene-dressing in the prompts.
+  const hasCore = makeHas(core);
   const legos = sense.legos || (sense.legos = { weather: [], surface: [], veils: [], text: [], light: [] });
 
   matchTags(has, WEATHER_TAGS, legos.weather);
-  matchTags(has, SURFACE_TAGS, legos.surface);
+  matchTags(hasCore, SURFACE_TAGS, legos.surface);
   matchTags(has, TEXT_TAGS, legos.text);
   matchTags(has, LIGHT_TAGS, legos.light);
 

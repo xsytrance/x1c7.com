@@ -147,6 +147,18 @@ body::after {
   0%, 100% { box-shadow: 0 0 22px color-mix(in srgb, var(--theme-primary) 35%, transparent), inset 0 0 18px color-mix(in srgb, var(--theme-primary) 16%, transparent); border-color: color-mix(in srgb, var(--theme-primary) 60%, white); }
   50% { box-shadow: 0 0 64px color-mix(in srgb, var(--theme-primary) 72%, transparent), inset 0 0 30px color-mix(in srgb, var(--theme-primary) 30%, transparent); border-color: #fff; }
 }
+/* Static prompt (phones): the same headline WITHOUT the per-frame text-shadow
+   flash — that animation was measurable style/paint churn during the veil. */
+.stage-warn-static {
+  font-family: var(--font-display), var(--font-mono), sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.02;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 22px var(--theme-primary), 0 2px 28px rgba(0, 0, 0, 0.85);
+}
 @media (prefers-reduced-motion: reduce) {
   .stage-warn, .stage-warn-pill { animation: none; }
 }
@@ -322,6 +334,92 @@ body.cinematic-on { overflow: hidden; }
     backdrop-filter: none !important;
     background-color: rgba(12, 8, 22, 0.72) !important;
   }
+}
+
+/* Dynamic-mode letter assembly — each letter flies in from its own direction.
+   Compositor-driven (transform + opacity only), so it costs the main thread
+   nothing: the start vector/rotation/scale arrive as CSS vars from JS. */
+.assemble-letter {
+  display: inline-block;
+  animation: assemble-in 0.62s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+}
+@keyframes assemble-in {
+  from {
+    transform: translate(var(--ax, 0), var(--ay, 0)) rotate(var(--arot, 0deg)) scale(var(--asc, 1));
+    opacity: 0;
+  }
+  to { transform: none; opacity: 1; }
+}
+
+/* The looming anchor word's soft blur. Kept in CSS (not inline) so perf-lite
+   can drop it — the anchor animates scale on entrance, and a scaling blurred
+   layer re-rasterizes every frame on a phone GPU. */
+.kinetic-anchor { filter: blur(1.5px); }
+
+/* ===== Full-show PERF LITE (phones) =====
+   The single most expensive thing the show does on a phone is animate a BLUR
+   RADIUS: the giant word's glow (--beat/--emo/--voice) and the halo's size
+   change every frame, forcing the biggest layers on screen to re-rasterize
+   60×/s. Desktop GPUs shrug; phones melt. Under `.perf-lite` we FREEZE those
+   radii to a constant — the glow still reads, but the layer rasterizes once per
+   word and is only cheaply composited thereafter. Everything else (the beat
+   transforms, color grade, particles) rides along untouched. Set by
+   src/lib/perf.ts on mobile/low-power devices. */
+/* The anchor's scale entrance stays, but without the blur it composites clean
+   instead of re-rasterizing every frame. */
+body.perf-lite .kinetic-anchor {
+  filter: none;
+}
+body.perf-lite .kinetic-word {
+  filter: drop-shadow(0 0 14px var(--theme-primary));
+}
+body.perf-lite .kinetic-word--charged {
+  filter: drop-shadow(0 0 22px var(--theme-accent));
+}
+body.perf-lite .kinetic-word--final {
+  filter: drop-shadow(0 0 20px color-mix(in srgb, var(--theme-accent) 45%, transparent));
+}
+body.perf-lite .kinetic-word--held {
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--theme-primary) 60%, transparent));
+}
+body.perf-lite .cine-line.is-active {
+  filter: drop-shadow(0 0 12px var(--theme-primary));
+}
+/* Halo: keep the bloom, freeze its size (opacity still breathes — cheap). */
+body.perf-lite .kinetic-halo {
+  width: 46vmin;
+  height: 46vmin;
+}
+/* The will-change hint on a huge blurred word costs memory we don't need once
+   the blur is constant. */
+body.perf-lite .kinetic-word {
+  will-change: transform;
+}
+/* The heaviest sustained cost on a phone is STYLE RECALC: NowPlayingTheme
+   rewrites --beat/--emo/--kick/--bass every frame, and every rule that reads
+   them in a calc() (the stage's breathing transform, the held-word breathe, the
+   halo opacity) re-computes for its whole subtree 60×/s. On lite we freeze those
+   consumers — the audio-reactive micro-motion is the first thing to trade for a
+   smooth phone. Color grading, particles, and word entrances all still play. */
+body.perf-lite .kinetic-stage {
+  transform: none;
+  transition: none;
+}
+body.perf-lite .kinetic-word--held .kinetic-breathe {
+  transform: none;
+  transition: none;
+}
+body.perf-lite .kinetic-halo {
+  opacity: 0.5;
+}
+/* Mic-moment prompts (BLOW / SCREAM) flash their text-shadow and pulse a
+   box-shadow every frame — pure paint churn on a phone, and a stem'd song like
+   "Oro De La Presión" fires several. Freeze to the static glow: the prompt
+   still reads and glows, it just stops strobing. (WipeLayer already swaps its
+   text to the static variant; this covers the mic-moment pills it doesn't.) */
+body.perf-lite .stage-warn,
+body.perf-lite .stage-warn-pill {
+  animation: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -83,9 +83,7 @@
               "dust",
               "snow"
             ],
-            "surface": [
-              "moss"
-            ],
+            "surface": [],
             "veils": [
               "static",
               "dust",
@@ -378,9 +376,7 @@
               "bubbles",
               "sparks"
             ],
-            "surface": [
-              "cracks"
-            ],
+            "surface": [],
             "veils": [
               "steam",
               "static"
@@ -713,9 +709,7 @@
               "bubbles",
               "pollen"
             ],
-            "surface": [
-              "sand"
-            ],
+            "surface": [],
             "veils": [
               "steam",
               "dust"
@@ -868,9 +862,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "condensation"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -1018,9 +1010,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "vines"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -1067,9 +1057,7 @@
             "weather": [
               "ash"
             ],
-            "surface": [
-              "rust"
-            ],
+            "surface": [],
             "veils": [
               "ash"
             ],
@@ -1344,9 +1332,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "moss"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -1576,9 +1562,7 @@
             "weather": [
               "sparks"
             ],
-            "surface": [
-              "cracks"
-            ],
+            "surface": [],
             "veils": [
               "static"
             ],
@@ -1626,9 +1610,7 @@
             "weather": [
               "sparks"
             ],
-            "surface": [
-              "sand"
-            ],
+            "surface": [],
             "veils": [
               "static"
             ],
@@ -1917,9 +1899,7 @@
               "snow",
               "pollen"
             ],
-            "surface": [
-              "condensation"
-            ],
+            "surface": [],
             "veils": [
               "frost",
               "dust"
@@ -1967,9 +1947,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "blood"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -2688,9 +2666,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "condensation"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -2784,9 +2760,7 @@
             "weather": [
               "dust"
             ],
-            "surface": [
-              "condensation"
-            ],
+            "surface": [],
             "veils": [
               "dust"
             ],
@@ -3003,9 +2977,7 @@
               "bubbles",
               "ash"
             ],
-            "surface": [
-              "condensation"
-            ],
+            "surface": [],
             "veils": [
               "steam",
               "ash"
@@ -3151,9 +3123,7 @@
             "weather": [
               "rain"
             ],
-            "surface": [
-              "blood"
-            ],
+            "surface": [],
             "veils": [
               "fog"
             ],
@@ -3681,9 +3651,7 @@
             "weather": [
               "rain"
             ],
-            "surface": [
-              "sand"
-            ],
+            "surface": [],
             "veils": [
               "fog"
             ],

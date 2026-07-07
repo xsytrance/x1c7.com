@@ -5,7 +5,7 @@
 // backdrops, live color grading, beat halo, and the scrubbable emotional arc.
 // Shared by the /music cinematic takeover and the /studio playground.
 
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { motion, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
@@ -15,10 +15,12 @@ import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
 import { KineticParticles, particleModeFor, type ParticleHandle, type ParticleMode } from "./KineticParticles";
 import { SurfaceEffects } from "./SurfaceEffects";
-import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, type SurfaceMode } from "@/lib/effects/registry";
+import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, type SurfaceMode, type TextEffect } from "@/lib/effects/registry";
 import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
 import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
+import { usePerfLite } from "@/lib/perf";
+import { PerfHUD } from "./PerfHUD";
 import type { Track } from "@/lib/engineHost";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
@@ -45,6 +47,17 @@ const PULSE_WORDS = new Set(["heartbeat", "heartbeats", "pulse", "beat", "beats"
 const WHISPER_WORDS = new Set(["whisper", "whispers", "whispering", "whispered", "quiet", "silence", "silencio", "hush", "secret", "secrets", "softly", "callar"]);
 // normalize for lookup: lowercase, strip possessive ('s / ’s)
 const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
+
+// The word a SCREAM moment asks the listener to shout, per song. Explicit when
+// the moment carries it in `layer` (unused by scream otherwise — e.g. "I WON'T");
+// else the last ALL-CAPS word in the prompt ("SCREAM: GOOOLD!" → GOOOLD); else a
+// generic fallback. Cosmetic only — detection is broadband loudness, any shout.
+function screamShout(m: { layer?: string; prompt?: string }): string {
+  const explicit = (m.layer || "").trim();
+  if (explicit) return explicit.toUpperCase();
+  const caps = (m.prompt || "").match(/[\p{Lu}][\p{Lu}'’]{2,}/gu);
+  return (caps?.length ? caps[caps.length - 1] : "SCREAM").replace(/[^\p{L}'’]/gu, "");
+}
 
 // ── Shared art library ──────────────────────────────────────────────────────
 // Cross-song paintings for the words the whole catalog keeps singing.
@@ -128,7 +141,28 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle }: {
+// ── The single word-effect render map ───────────────────────────────────────
+// Every rendered word treatment resolves through here, keyed by its registry
+// TextEffect id. One map = one source of truth: a per-word override or a vibe/
+// preset can swap any id for another without touching the selector below.
+// (freeze/melt/carve are named in the registry but land as components in 2.1.)
+type RenderableFx = Exclude<TextEffect, "freeze" | "melt" | "carve">;
+const WORD_FX: Record<RenderableFx, (word: string, airtime: number) => ReactNode> = {
+  burn: (w, a) => <WordBurn word={w} airtime={a} />,
+  glitch: (w, a) => <WordGlitch word={w} airtime={a} />,
+  slam: (w) => <WordSlam word={w} />,
+  wave: (w, a) => <WordWave word={w} airtime={a} />,
+  neon: (w, a) => <WordNeon word={w} airtime={a} />,
+  pulse: (w, a) => <WordPulse word={w} airtime={a} />,
+  whisper: (w, a) => <WordWhisper word={w} airtime={a} />,
+  fizz: (w, a) => <WordFizz word={w} airtime={a} />,
+  type: (w, a) => <WordType word={w} airtime={a} />,
+  shatter: (w) => <WordShatter word={w} />,
+  dissolve: (w) => <WordDissolve word={w} />,
+  bloom: (w) => <WordBloom word={w} />,
+};
+
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
@@ -139,8 +173,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   pass?: number;
   /** Viewing style (pass 3+): dynamic stagecraft, clean focus, or phrase mode. */
   mode?: StageMode;
+  /** Diagnostics only: override the playhead clock (seconds). Lets the perf
+   * harness drive the show deterministically with no audio. */
+  clock?: () => number;
 }) {
-  const { getCurrentTime, setMuffle } = useMusicPlayer();
+  const { getCurrentTime: playerTime, setMuffle } = useMusicPlayer();
+  const getCurrentTime = clock ?? playerTime;
+  // Phone/low-power profile — freezes animated blurs (via body.perf-lite) and
+  // drops the heaviest secondary layers. See src/lib/perf.ts.
+  const lite = usePerfLite();
+  // Mirror into a ref so the per-frame rAF tick reads the CURRENT value without
+  // being torn down and rebuilt when the profile resolves after mount.
+  const liteRef = useRef(lite);
+  useEffect(() => { liteRef.current = lite; }, [lite]);
   const rawWords = track.lyricsSynced!.words!;
   // Aligner mis-anchor guard: before a pause, the aligner pins the NEXT sung
   // word to the start of the silence — so it appears on stage seconds early
@@ -559,15 +604,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Choreographed wipe moments (also from the planet's interaction data).
   const [wipe, setWipe] = useState<{ layer: string; prompt: string } | null>(null);
   const wipeKey = useRef(-1);
-  // The veil covers the SOUND too: music muffles when a wipe moment starts
-  // and clears as the listener wipes (progress from the canvas). Always
-  // restored on moment end/unmount.
+  // Once a veil is wiped to release, its moment is "consumed" so the per-frame
+  // loop (still inside the moment's time window) doesn't bring the fog back.
+  const consumedWipe = useRef(-1);
+  // The veil covers the SOUND too: a partial muffle when it rolls in, fully
+  // restored by the time the listener has wiped ~a third away. Always cleared
+  // on moment end/unmount.
   useEffect(() => {
-    setMuffle(wipe ? 0.85 : 0);
+    setMuffle(wipe ? 0.7 : 0);
     return () => setMuffle(0);
   }, [wipe, setMuffle]);
   const onWipeProgress = useCallback((cleared: number) => {
-    setMuffle(Math.max(0, 0.85 * (1 - cleared * 1.4)));
+    // Sound is fully back by 33% cleared (the release point).
+    setMuffle(Math.max(0, 0.7 * (1 - cleared / 0.33)));
+  }, [setMuffle]);
+  const onWipeReleased = useCallback(() => {
+    consumedWipe.current = wipeKey.current;
+    setMuffle(0);
+    setWipe(null); // AnimatePresence exit dissolves the rest of the veil
   }, [setMuffle]);
   // Choreographed blow moments + the gust they trigger.
   const [blow, setBlow] = useState<{ prompt: string } | null>(null);
@@ -578,7 +632,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const shakeDone = useRef(false);
   // Choreographed SCREAM moments: shout into the mic (e.g. "GOOOLD" on the
   // chorus) and detonate a gold supernova. Broadband mic loudness, high bar.
-  const [scream, setScream] = useState<{ prompt: string } | null>(null);
+  const [scream, setScream] = useState<{ prompt: string; shout: string } | null>(null);
   const screamKey = useRef(-1);
   const [gust, setGust] = useState(0);
   // Shake-to-scatter: a real phone shake rattles the stage and the current
@@ -825,7 +879,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const key = mo ? mo.t : -1;
         if (key !== wipeKey.current) {
           wipeKey.current = key;
-          setWipe(mo ? { layer: mo.layer, prompt: mo.prompt } : null);
+          // Don't re-raise a veil the listener already wiped away this window.
+          setWipe(mo && consumedWipe.current !== key ? { layer: mo.layer, prompt: mo.prompt } : null);
         }
         const bo = allMoments.find((mm) => mm.type === "blow" && t >= mm.t && t < mm.end);
         const bkey = bo ? bo.t : -1;
@@ -844,7 +899,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const crkey = cro ? cro.t : -1;
         if (crkey !== screamKey.current) {
           screamKey.current = crkey;
-          setScream(cro ? { prompt: cro.prompt } : null);
+          setScream(cro ? { prompt: cro.prompt, shout: screamShout(cro) } : null);
         }
       }
       // ── STEM SENSES per-frame ── the measured song drives the stage live.
@@ -861,10 +916,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (trk.snare.consume(t) > 0 && !document.hidden) spawnRing(false);
         const hatN = trk.hat.consume(t);
         if (hatN > 0) particles.current?.glint(6 + hatN * 4);
-        if (root) {
+        // These four drive audio-reactive micro-motion (stage bend, word glow,
+        // ghost chorus, halo). On LITE every one of their consumers is already
+        // frozen to a constant (perf-lite) or unrendered (the ghost layer is
+        // !lite-gated) — but writing a custom property on :root still forces a
+        // style recalc of every element whose cascade *references* it, ~160ms/s
+        // of pure waste at 60fps. So on lite we simply don't write them: zero
+        // visual change, the single biggest style cost on a stem'd planet gone.
+        // (--charge stays — its riser vignette DOES render on lite.)
+        if (root && !liteRef.current) {
           root.style.setProperty("--kick", kickPulse.current.toFixed(3));
-          // The 808 curve bends the whole stage; the singer's live energy
-          // feeds the word glow; backing vocals summon the ghost chorus.
           root.style.setProperty("--bass", envAt(stems, "bass", t).toFixed(3));
           root.style.setProperty("--voice", envAt(stems, "lead", t).toFixed(3));
           root.style.setProperty("--choir", envAt(stems, "back", t).toFixed(3));
@@ -1088,19 +1149,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           intensity={section?.intensity ?? 0.35}
           palette={palette}
           scale={phrase ? 0.55 : 1}
+          lite={lite}
         />
       )}
 
       {/* The surface layer — mud/rust/cracks/vines clinging to the glass and
-          creeping in from the edges. Only for songs whose world calls for it. */}
-      {pass >= 3 && effectiveSurface && (
+          creeping in from the edges. Only for songs whose world calls for it.
+          A second full-screen canvas that reallocates ~200 radial gradients per
+          frame — dropped on phones, where it's the difference the eye won't
+          miss but the GPU will. */}
+      {pass >= 3 && effectiveSurface && !lite && (
         <SurfaceEffects mode={effectiveSurface} intensity={section?.intensity ?? 0.35} scale={phrase ? 0.5 : 1} />
       )}
 
       {/* Ghost chorus — when the backing vocals swell, the current word's
           echo materializes huge and translucent behind the stage. Opacity is
-          the LIVE backing-vocal envelope (CSS var, zero re-renders). */}
-      {stems && shown && !phrase && (
+          the LIVE backing-vocal envelope (CSS var, zero re-renders). A 24vw
+          blur(6px) layer recomposited every frame — skipped on phones. */}
+      {stems && shown && !phrase && !lite && (
         <div
           className="pointer-events-none fixed inset-0 z-[2] flex items-center justify-center overflow-hidden"
           style={{ opacity: "clamp(0, calc((var(--choir, 0) - 0.28) * 1.1), 0.42)" }}
@@ -1382,25 +1448,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     // Dynamic plain words ASSEMBLE: every letter flies in from
                     // its own golden-angle direction — no two ever match.
                     const assembles = dynamic && !glitches && !slams && !wavy && !neon && !pulses && !whispers && !fizzes && !types && !glyph;
-                    let inner = glitches ? <WordGlitch word={shown} airtime={airtime} />
-                      : slams ? <WordSlam word={shown} />
-                      : wavy ? <WordWave word={shown} airtime={airtime} />
-                      : neon ? <WordNeon word={shown} airtime={airtime} />
-                      : pulses ? <WordPulse word={shown} airtime={airtime} />
-                      : whispers ? <WordWhisper word={shown} airtime={airtime} />
-                      : fizzes ? <WordFizz word={shown} airtime={airtime} />
-                      : types ? <WordType word={shown} airtime={airtime} />
+                    // The matched signature treatment resolves to a single registry
+                    // TextEffect id, then renders through the shared WORD_FX map.
+                    const sigFx: RenderableFx | null = glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
+                      : neon ? "neon" : pulses ? "pulse" : whispers ? "whisper"
+                      : fizzes ? "fizz" : types ? "type" : null;
+                    let inner: ReactNode = sigFx ? WORD_FX[sigFx](shown, airtime)
                       : glyph ? <WordMorph word={shown} glyph={glyph} treatment={treatment} />
                       : assembles ? <WordAssemble word={shown} baseAngle={idx * GOLDEN} charged={charged} />
                       : pass >= 2 && charged ? <CascadeWord word={shown} /> : <>{shown}</>;
                     // Tap reaction — in the song's own language (per-planet choreography).
-                    if (touchBurn === idx) {
-                      if (tapFx === "burn") return <WordBurn word={shown} airtime={Math.max(airtime, 1.2)} />;
-                      if (tapFx === "shatter") return <WordShatter word={shown} />;
-                      if (tapFx === "bloom") return <WordBloom word={shown} />;
-                      return <WordDissolve word={shown} />;
-                    }
-                    if (burns) return <WordBurn word={shown} airtime={airtime} />;
+                    if (touchBurn === idx) return WORD_FX[tapFx](shown, tapFx === "burn" ? Math.max(airtime, 1.2) : airtime);
+                    if (burns) return WORD_FX.burn(shown, airtime);
                     // Effect words still rush in whole, from the golden-angle
                     // direction that belongs to this word alone. (Assembled
                     // words already fly per-letter; slams drop from above.)
@@ -1453,8 +1512,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             exit={{ opacity: 0, transition: { duration: 1.1 } }}
           >
             <motion.span
-              className="pointer-events-auto cursor-pointer select-none whitespace-nowrap font-display font-black uppercase"
-              style={{ fontSize: "clamp(8rem, 30vw, 34rem)", color: "var(--theme-accent)", filter: "blur(1.5px)", letterSpacing: "-0.02em" }}
+              // `kinetic-anchor` carries the soft blur via CSS so perf-lite can
+              // drop it: this layer ANIMATES scale on entrance, and scaling a
+              // blurred layer forces a full re-raster every frame — the single
+              // heaviest per-charged-word cost on a phone GPU. Lite freezes the
+              // blur (crisp edges, same looming motion); desktop keeps it.
+              className="kinetic-anchor pointer-events-auto cursor-pointer select-none whitespace-nowrap font-display font-black uppercase"
+              style={{ fontSize: "clamp(8rem, 30vw, 34rem)", color: "var(--theme-accent)", letterSpacing: "-0.02em" }}
               // Three arrivals, chosen per word: 0 = slide across, 1 = zoom
               // through from way out front, 2 = rise up from below the floor.
               initial={anchor.mode === 1
@@ -1500,12 +1564,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {pass >= 3 && mode !== "focus" && <PressureGauge section={section} />}
 
       {/* Choreographed wipe moment — wipe the song's veil away (sound too) */}
-      {pass >= 3 && <WipeLayer moment={wipe} onProgress={onWipeProgress} />}
+      {pass >= 3 && <WipeLayer moment={wipe} onProgress={onWipeProgress} onReleased={onWipeReleased} lite={lite} />}
 
       {/* Choreographed blow moment — blow into the mic on cue */}
       {pass >= 3 && <BlowMoment moment={blow} onGust={() => setGust((g) => g + 1)} />}
 
-      {/* Choreographed SCREAM moment — shout "GOOOLD" into the mic → gold nova */}
+      {/* Choreographed SCREAM moment — shout the song's word into the mic → nova.
+          The payoff also erupts the weather (embers on a fire song): more fire. */}
       {pass >= 3 && (
         <ScreamMoment
           moment={scream}
@@ -1513,6 +1578,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             setNova((n) => n + 1);
             setWave((w) => w + 1);
             spawnRing(true);
+            particles.current?.burst(window.innerWidth / 2, window.innerHeight * 0.46, 150);
             navigator.vibrate?.([30, 40, 120]);
           }}
         />
@@ -1581,6 +1647,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       </AnimatePresence>
 
       {sections && sections.length > 0 && <ArcTimeline sections={sections} bottomClass={timelineBottomClass} />}
+
+      {/* Frame-rate meter for measuring on a real device (?fps=1). Hidden otherwise. */}
+      <PerfHUD />
     </div>
   );
 }
@@ -2150,7 +2219,7 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
    (a real shout lights the whole spectrum), deliberately a higher bar than
    blow's low-frequency breath so the two never cross-trigger. Auto-arms when
    the mic is already granted; falls back to a tap if the mic is unavailable. */
-function ScreamMoment({ moment, onScream }: { moment: { prompt: string } | null; onScream: () => void }) {
+function ScreamMoment({ moment, onScream }: { moment: { prompt: string; shout: string } | null; onScream: () => void }) {
   const [state, setState] = useState<"idle" | "listening" | "done" | "denied">("idle");
   const cleanupRef = useRef<() => void>(() => {});
   const startRef = useRef<() => void>(() => {});
@@ -2199,7 +2268,7 @@ function ScreamMoment({ moment, onScream }: { moment: { prompt: string } | null;
           transition={{ type: "spring", stiffness: 300, damping: 22, scale: state === "listening" ? { duration: 0.6, repeat: Infinity } : undefined }}
         >
           <span className="stage-warn text-4xl sm:text-6xl" style={{ color: "var(--theme-primary)" }}>
-            {state === "listening" ? "🔥 GOOOLD!" : "🎤 SCREAM!"}
+            {state === "listening" ? `🔥 ${moment.shout}!` : "🎤 SCREAM!"}
           </span>
           <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/80 sm:text-sm">
             {state === "idle" && <>{moment.prompt} — tap to ready the mic</>}
@@ -2214,9 +2283,12 @@ function ScreamMoment({ moment, onScream }: { moment: { prompt: string } | null;
 
 /* ========== WIPE LAYER ==========
    A choreographed moment: a themed veil (fog, ash, frost, steam, static, mud,
-   dust, smoke, void — all defined as legos in the effect registry) covers the
-   stage and the listener wipes it away with a finger. */
-function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void }) {
+   dust, smoke, void) creeps IN from the edges — NOT a full-screen slab. It
+   rolls in gradually (framer opacity+creep, so the one-time grain paint lands
+   while invisible → no arrival hitch), leaves the center stage clear so the
+   words stay readable, and once the listener wipes ~a third of it away the
+   sound snaps back and the rest dissolves on its own. */
+function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: { layer: string; prompt: string } | null; onProgress?: (cleared: number) => void; onReleased?: () => void; lite?: boolean }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     if (!moment) return;
@@ -2224,64 +2296,97 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
     if (!c) return;
     const ctx = c.getContext("2d");
     if (!ctx) return;
-    c.width = window.innerWidth; c.height = window.innerHeight;
+    const w = (c.width = window.innerWidth), h = (c.height = window.innerHeight);
     const spec = VEIL_SPECS[moment.layer as VeilKind] ?? VEIL_SPECS.fog;
     const [c0, c1] = spec.colors;
-    const grainPx = spec.grain === "static" ? 3 : spec.grain === "blobs" ? 4 : 2;
-    ctx.globalAlpha = 0.9;
-    const grad = ctx.createLinearGradient(0, 0, 0, c.height);
-    grad.addColorStop(0, c0); grad.addColorStop(1, c1);
-    ctx.fillStyle = grad; ctx.fillRect(0, 0, c.width, c.height);
-    for (let i = 0; i < 1600; i++) {
+    const grainPx = (spec.grain === "static" ? 3 : spec.grain === "blobs" ? 4 : 2) + (lite ? 1 : 0);
+    // Partial coverage: an edge vignette with a clear core. The veil is dense at
+    // the frame and fully transparent over the center ~40% where the words live.
+    const cx = w / 2, cy = h * 0.46;
+    const clearR = Math.min(w, h) * 0.42;         // clear stage core
+    const edgeR = Math.hypot(w, h) * 0.58;        // reaches the corners
+    const base = ctx.createRadialGradient(cx, cy, clearR, cx, cy, edgeR);
+    base.addColorStop(0, hexAlpha(c0, 0));
+    base.addColorStop(0.55, hexAlpha(c0, 0.72));
+    base.addColorStop(1, hexAlpha(c1, 0.92));
+    ctx.fillStyle = base; ctx.fillRect(0, 0, w, h);
+    // Grain only in the veiled ring (skip the clear core) — fewer rects, and the
+    // paint happens under opacity 0 so it never shows as a hitch.
+    const grains = lite ? 300 : 1100;
+    for (let i = 0; i < grains; i++) {
+      const gx = (i * 977) % w, gy = (i * 613) % h;
+      if (Math.hypot(gx - cx, gy - cy) < clearR) continue;
       ctx.globalAlpha = 0.04 + (i % 7) * 0.02;
       ctx.fillStyle = i % 2 ? "#ffffff" : "#000000";
-      ctx.fillRect((i * 977) % c.width, (i * 613) % c.height, grainPx, grainPx);
+      ctx.fillRect(gx, gy, grainPx, grainPx);
     }
     ctx.globalAlpha = 1;
-    let clearedPx = 0;
-    let strokes = 0;
+    // 33% is measured against the VEILED area (screen minus the clear core).
+    const veiledArea = Math.max(w * h * 0.25, w * h - Math.PI * clearR * clearR);
+    let clearedPx = 0, strokes = 0, released = false, lastErase = 0;
     const erase = (e: PointerEvent) => {
+      if (released) return;
       if (e.pointerType === "mouse" && e.buttons === 0) return;
+      const now = e.timeStamp || performance.now();
+      if (lite && now - lastErase < 16) return;     // throttle to ~1 erase/frame
+      lastErase = now;
       ctx.globalCompositeOperation = "destination-out";
       const R = Math.max(56, window.innerWidth * 0.055);
-      clearedPx += Math.PI * R * R * 0.35; // overlap-discounted estimate
-      if (++strokes % 6 === 0) onProgress?.(Math.min(1, clearedPx / (c.width * c.height)));
-      const g = ctx.createRadialGradient(e.clientX, e.clientY, R * 0.15, e.clientX, e.clientY, R);
-      g.addColorStop(0, "rgba(0,0,0,1)"); g.addColorStop(1, "rgba(0,0,0,0)");
-      ctx.fillStyle = g;
-      ctx.beginPath(); ctx.arc(e.clientX, e.clientY, R, 0, 7); ctx.fill();
+      clearedPx += Math.PI * R * R * 0.35;          // overlap-discounted estimate
+      const cleared = Math.min(1, clearedPx / veiledArea);
+      if (++strokes % 4 === 0) onProgress?.(cleared);
+      if (lite) {
+        ctx.globalAlpha = 0.85; ctx.fillStyle = "#000";
+        ctx.beginPath(); ctx.arc(e.clientX, e.clientY, R, 0, 7); ctx.fill();
+        ctx.globalAlpha = 1;
+      } else {
+        const g = ctx.createRadialGradient(e.clientX, e.clientY, R * 0.15, e.clientX, e.clientY, R);
+        g.addColorStop(0, "rgba(0,0,0,1)"); g.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.arc(e.clientX, e.clientY, R, 0, 7); ctx.fill();
+      }
       ctx.globalCompositeOperation = "source-over";
+      // A third cleared: free the sound and let the rest dissolve on its own.
+      if (!released && cleared >= 0.33) { released = true; onProgress?.(1); onReleased?.(); }
     };
     window.addEventListener("pointermove", erase);
     window.addEventListener("pointerdown", erase);
     return () => { window.removeEventListener("pointermove", erase); window.removeEventListener("pointerdown", erase); };
-  }, [moment, onProgress]);
+  }, [moment, onProgress, onReleased, lite]);
   return (
     <AnimatePresence>
       {moment && (
         <motion.div
           key={`${moment.layer}${moment.prompt}`}
           className="fixed inset-0 z-[30]"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 1.4 } }}
-          transition={{ duration: 1.2 }}
+          // Gradual roll-in (creep + fade) and a slow dissolve on exit. The
+          // grain is painted at opacity ~0, so the fog "comes" smoothly.
+          initial={{ opacity: 0, scale: 1.12 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, transition: { duration: 1.6, ease: "easeInOut" } }}
+          transition={{ duration: 2.6, ease: "easeOut" }}
+          style={{ transformOrigin: "50% 46%" }}
         >
-          {/* Full-screen veil — no more untouched strip at the bottom. */}
           <canvas ref={canvasRef} className="h-full w-full touch-none" />
           <motion.div
-            className="pointer-events-none absolute inset-x-0 top-[16vh] flex flex-col items-center gap-1.5 px-6"
+            className="pointer-events-none absolute inset-x-0 top-[10vh] flex flex-col items-center gap-1.5 px-6"
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
           >
-            <span className="stage-warn text-3xl sm:text-5xl">✋ {moment.prompt}</span>
-            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75 sm:text-sm">swipe across the screen to clear it</span>
+            <span className={`text-3xl sm:text-5xl${lite ? " stage-warn-static" : " stage-warn"}`}>✋ {moment.prompt}</span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75 sm:text-sm">swipe a third of it away</span>
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
+}
+
+// #rrggbb → rgba() with alpha (veil spec colors are 6-digit hex).
+function hexAlpha(hex: string, a: number): string {
+  const n = parseInt(hex.slice(1), 16);
+  return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
 }
 
 /* ========== ASSEMBLE ==========
@@ -2291,27 +2396,32 @@ function WipeLayer({ moment, onProgress }: { moment: { layer: string; prompt: st
    an approach vector. The formula guarantees it; no randomness needed. */
 function WordAssemble({ word, baseAngle, charged }: { word: string; baseAngle: number; charged: boolean }) {
   const letters = [...word];
+  // Each letter flies in from its own golden-angle direction. This used to be a
+  // per-letter Framer spring (one JS animation per letter, ticked on the main
+  // thread every frame) — the biggest main-thread cost dynamic mode adds. Now
+  // it's a single compositor-driven CSS keyframe (`assemble-in`): the start
+  // vector/rotation/scale ride in as CSS vars, the browser animates transform +
+  // opacity off the main thread. Identical motion, near-zero script/style cost.
   return (
     <span className="inline-flex">
       {letters.map((ch, j) => {
         const a = ((baseAngle + j * 137.50776405003785) * Math.PI) / 180;
         const d = (charged ? 1.7 : 1.15) + ((j * 37) % 23) / 23; // em flight distance
         return (
-          <motion.span
+          <span
             key={j}
-            className="inline-block"
-            initial={{
-              x: `${(Math.cos(a) * d).toFixed(2)}em`,
-              y: `${(Math.sin(a) * d * 0.8).toFixed(2)}em`,
-              opacity: 0,
-              rotate: (j % 2 ? 1 : -1) * (8 + ((j * 13) % 14)),
-              scale: charged ? 1.6 : 0.75,
+            className="assemble-letter"
+            style={{
+              // start-of-flight transform, consumed by the @keyframes
+              ["--ax" as string]: `${(Math.cos(a) * d).toFixed(2)}em`,
+              ["--ay" as string]: `${(Math.sin(a) * d * 0.8).toFixed(2)}em`,
+              ["--arot" as string]: `${(j % 2 ? 1 : -1) * (8 + ((j * 13) % 14))}deg`,
+              ["--asc" as string]: charged ? 1.6 : 0.75,
+              animationDelay: `${(j * 0.022).toFixed(3)}s`,
             }}
-            animate={{ x: "0em", y: "0em", opacity: 1, rotate: 0, scale: 1 }}
-            transition={{ type: "spring", stiffness: 380, damping: 26, delay: j * 0.022 }}
           >
             {ch}
-          </motion.span>
+          </span>
         );
       })}
     </span>

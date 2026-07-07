@@ -41,11 +41,16 @@ const FILES = [
   ["src/components/KineticStage.tsx", "src/engine/KineticStage.tsx"],
   ["src/components/KineticParticles.tsx", "src/engine/KineticParticles.tsx"],
   ["src/components/SurfaceEffects.tsx", "src/engine/SurfaceEffects.tsx"],
+  ["src/components/PerfHUD.tsx", "src/engine/PerfHUD.tsx"],
+  ["src/lib/perf.ts", "src/lib/perf.ts"],
   ["src/lib/effects/registry.ts", "src/lib/effects/registry.ts"],
   ["src/lib/planet.ts", "src/lib/planet.ts"],
   ["src/lib/lyrics.ts", "src/lib/lyrics.ts"],
   ["src/lib/shapes.ts", "src/lib/shapes.ts"],
   ["src/lib/theme.ts", "src/lib/theme.ts"],
+  // Cover-art → palette extraction, so both apps can auto-theme from a dropped
+  // cover image. Only imports ./theme (also synced); no app coupling.
+  ["src/lib/palette.ts", "src/lib/palette.ts"],
   ["src/lib/stemSense.ts", "src/lib/stemSense.ts"],
   ["src/lib/beatClock.ts", "src/lib/beatClock.ts"],
   ["src/lib/lexicon/types.ts", "src/lib/lexicon/types.ts"],
