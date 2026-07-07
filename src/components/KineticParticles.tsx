@@ -75,7 +75,10 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   lite?: boolean;
   /** Skip drawing entirely (e.g. while a full-screen veil hides the weather). */
   paused?: boolean;
-}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false }, ref) {
+  /** Director knob: extra population multiplier on top of intensity/scale (default 1).
+   *  Driven through a ref so dragging the slider doesn't rebuild the rAF loop. */
+  density?: number;
+}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false, density = 1 }, ref) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pausedRef = useRef(paused);
   pausedRef.current = paused;
@@ -85,6 +88,8 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   const frozen = useRef(false);
   const emo = useRef(intensity);
   emo.current = intensity;
+  const densRef = useRef(density);
+  densRef.current = density;
   const modeRef = useRef(mode);
   const palRef = useRef(palette);
   palRef.current = palette;
@@ -162,7 +167,7 @@ export const KineticParticles = forwardRef<ParticleHandle, {
       if (pausedRef.current) return;
       const m = modeRef.current;
       // target population follows the emotional intensity (thinned on phones)
-      const target = Math.round(DENSITY[m] * scale * (lite ? 0.6 : 1) * (0.45 + emo.current * 0.85) * Math.min(1, w / 900));
+      const target = Math.round(DENSITY[m] * scale * densRef.current * (lite ? 0.6 : 1) * (0.45 + emo.current * 0.85) * Math.min(1, w / 900));
       const arr = parts.current;
       const ambient = arr.reduce((n, p) => n + (p.extra ? 0 : 1), 0);
       for (let i = ambient; i < target; i++) arr.push(spawn(m, palRef.current, Math.random() * w, edgeY(m, h), { fresh: true }));

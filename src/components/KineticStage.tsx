@@ -166,7 +166,7 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   carve: (w, a) => <WordCarve word={w} airtime={a} />,
 };
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
@@ -184,6 +184,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    * — lets the UI bias effects per render without cloning (and re-loading) the
    * whole track on every preset switch. */
   effects?: PlanetEffects;
+  /** Director's-deck intensity knobs (all optional, all perf-lite aware). Absent
+   * = the stage's own defaults, so the x1c7 show is unaffected.
+   *   density  — particle population multiplier (1 = normal)
+   *   glow     — extra bloom on the words (0..1 → up to ~0.6em accent drop-shadow)
+   *   grain    — film-grain overlay opacity (0..1)
+   *   vignette — edge-darkening overlay opacity (0..1) */
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number };
 }) {
   const { getCurrentTime: playerTime, setMuffle } = useMusicPlayer();
   const getCurrentTime = clock ?? playerTime;
@@ -1166,6 +1173,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           palette={palette}
           scale={phrase ? 0.55 : 1}
           lite={lite}
+          density={deck?.density}
         />
       )}
 
@@ -1302,7 +1310,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         )}
       </AnimatePresence>
 
-      <div ref={stageRef} className="kinetic-stage z-[3] flex w-full flex-col items-center justify-center gap-6 text-center">
+      {/* Director's-deck frame grades (grain / vignette) — static overlays, so
+          they carry no per-frame cost. Only mounted when the knob is non-zero. */}
+      {deck?.grain ? (
+        <div className="pointer-events-none fixed inset-0 z-[8]" aria-hidden style={{
+          opacity: Math.min(1, deck.grain) * 0.5, mixBlendMode: "overlay",
+          backgroundImage: "repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,255,255,0.06) 3px)",
+        }} />
+      ) : null}
+      {deck?.vignette ? (
+        <div className="pointer-events-none fixed inset-0 z-[8]" aria-hidden style={{
+          opacity: Math.min(1, deck.vignette),
+          background: "radial-gradient(ellipse at center, transparent 46%, rgba(0,0,0,0.85) 100%)",
+        }} />
+      ) : null}
+
+      <div ref={stageRef} className="kinetic-stage z-[3] flex w-full flex-col items-center justify-center gap-6 text-center"
+        style={deck?.glow && !lite ? { filter: `drop-shadow(0 0 ${(Math.min(1, deck.glow) * 0.6).toFixed(3)}em var(--theme-accent))` } : undefined}>
         {section && (
           <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
             {section.emotion}
