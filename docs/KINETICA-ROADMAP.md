@@ -1,12 +1,13 @@
 # Kinetica — Free Version Roadmap (Phase 2+)
 
-> **Status:** Phase 2.2 **in progress** (2026-07-07) — the **effect-bias seam** is done:
-> `PlanetEffects` + a pure `resolveWordEffect` (override > preset `allow` > natural;
-> overrides are the only way to summon freeze/melt/carve), consumed by the stage via a
-> live `effects` prop, and wired into kinetica presets (each preset now carries an
-> allowed effect palette). Contract verified (12/12). **Still open in 2.2:** preset
-> expansion + custom vibe builder + cover-art auto-theme. Per-word override **UI** = 2.3
-> (engine hook now in place). Phases 2.0/2.1 done before. See [`BUILD-LOG.md`](./BUILD-LOG.md).
+> **Status:** Phase 2.2 ✅ **functionally complete** (2026-07-07) — effect-bias seam
+> (`PlanetEffects` + pure `resolveWordEffect`, override > `allow` > natural), preset
+> **surface** biasing, **15 vibes** (6→15), a **custom vibe builder** (localStorage +
+> export/import), and **cover-art auto-theme** (`extractPalette`). Grain/vignette rides
+> the `fx-*` grade classes. Contract verified 12/12; both repos build; 0 engine drift.
+> **Deferred stretch:** motion-intensity biasing + heuristic "describe your vibe".
+> **Next: Phase 2.3** (per-word override UI — engine hook ready — + director's deck +
+> backdrop curation). Phases 2.0/2.1 done before. See [`BUILD-LOG.md`](./BUILD-LOG.md).
 
 ## Context
 

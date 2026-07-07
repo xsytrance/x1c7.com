@@ -7,6 +7,40 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Phase 2.2 (part 2): preset expansion, custom vibes, cover-theme, surface
+
+**Goal:** cash in the effect-bias seam — grow the vibe set, let users author their
+own, seed a theme from cover art, and extend preset control past color to surface.
+
+**Changes (kinetica shell, except the surface seam which is engine):**
+1. **Preset expansion** (`presets.ts` + `index.css`): 6 → 15 vibes — Noir, Golden Hour,
+   Frostbite, Synthwave, Forest, Blood Moon, Cyberpunk, Dreamcore, Mono +1. Each carries
+   palette + font + particle + allowed effect palette + surface + a matching `fx-*`
+   color-grade (some with vignette/scanline `::after` overlays = the "grain" knob).
+2. **Custom vibe builder** (`customPresets.ts` + `VibeBuilder.tsx` + `Show.tsx`): author a
+   vibe — palette (4 color pickers + live swatch), font, particle, grade, surface, and an
+   effect-palette toggle grid — saved to localStorage (upsert by id; export/import
+   helpers). Custom vibes share the exact `Preset` shape, so they flow through every seam
+   identically to built-ins; the Show dropdown lists them under "Your vibes" with ＋/✎.
+3. **Cover-art auto-theme** (`Show.tsx`): a 🎨 Cover upload runs the engine's
+   `extractPalette` on the dropped image (blob URL, revoked after) → seeds the auto
+   palette (per-channel fallback; clearable).
+4. **Preset surface biasing** (engine: `planet.ts` + `KineticStage.tsx`): `PlanetEffects.
+   surface` (`SurfaceMode | "none"`) forces a surface growth or clean glass; undefined
+   keeps the lyric-derived pick. Presets set it (Inferno→rust, Forest→vines, Blood
+   Moon→blood, Noir→cracks, Golden→sand, …); the builder exposes a Surface picker.
+
+**Verified:** kinetica `npm run build` green at every step; x1c7 `tsc` clean; engine sync
+(planet.ts + KineticStage) applied, **0 drift** (16 files identical); the pure
+`resolveWordEffect` contract test still 12/12. *(Visual pass across the 15 presets in a
+browser not run here — recommended manual check.)*
+
+**Phase 2.2 = functionally complete.** Deferred stretch: **motion-intensity** biasing
+(needs restructuring the `MOTION` config — higher risk) and the heuristic **"describe your
+vibe"** phrase→preset matcher.
+
+---
+
 ## 2026-07-07 — Phase 2.2 (part 1): the effect-bias seam + preset effect palettes
 
 **Goal:** make text-effect selection *biasable* by a vibe/preset and *overridable*
