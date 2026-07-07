@@ -84,20 +84,20 @@ never animate blur radius per-frame on mobile; gate heavy effects behind the lit
 Each = a `Word*` component in `KineticStage.tsx` + a `TextEffect` row + tag matchers
 in `registry.ts` + optional lexicon glyph. First close the drift, then add new ones.
 
-**Close the drift (already named, no component yet):**
-- **Freeze** — glyphs ice over, frost creeps, then hold. Tags: cold/freeze/frost/ice/numb/winter.
-- **Melt** — glyphs drip and run downward. Tags: melt/heat/summer/sweat/wax/drip.
-- **Carve** — struck into stone, chisel flash + dust puff. Tags: stone/carve/forever/name/monument/eternal.
+**Close the drift (already named, no component yet):** ✅ shipped (tranche 1, 2026-07-07)
+- ✅ **Freeze** — glyphs ice over, frost creeps, then hold. Tags: cold/freeze/frost/ice/numb/winter.
+- ✅ **Melt** — glyphs drip and run downward. Tags: melt/heat/summer/sweat/wax/drip.
+- ✅ **Carve** — struck into stone, chisel flash + dust puff. Tags: stone/carve/forever/name/monument/eternal.
 
 **New effects:**
-- **Echo / Ghost** — trailing fading copies (delay/reverb feel). Tags: echo/memory/haunt/again/repeat.
-- **Shake / Rattle** — continuous violent jitter (distinct from Slam's single impact). Tags: shake/tremble/quake/panic/anxious.
-- **Redact** — letters type in, then a black bar slams over "secret" words. Tags: secret/classified/lie/hidden/censored.
-- **Chromatic split** — RGB aberration / VHS tear. Tags: dream/vhs/analog/nostalgia/static.
-- **Liquid fill** — water rises inside the letterforms. Tags: drown/flood/ocean/tears (distinct from Wave's horizontal distortion).
-- **Gravity fall** — letters detach and drop. Tags: fall/collapse/gravity/down/sink.
-- **Gold-leaf shimmer** — luxe sweep across glyphs. Tags: gold/crown/rich/shine/luxury (pairs with Inferno/gold vibe).
-- **Bleed** — red ink weeps from the word. Tags: blood/bleed/wound/hurt/scar.
+- ✅ **Echo / Ghost** — trailing fading copies (delay/reverb feel). Tags: echo/memory/haunt/again/repeat. *(shipped as `echo`, tranche 2)*
+- ✅ **Shake / Rattle** — continuous violent jitter (distinct from Slam's single impact). Tags: shake/tremble/quake/panic/anxious. *(shipped as `tremor`, tranche 2)*
+- ✅ **Redact** — the word lands readable, then a black bar slams over it. Tags: lie/hidden/classified/censored. *(tranche 3; "secret" stays whisper's)*
+- ✅ **Chromatic split** — RGB aberration / VHS tear. Tags: dream/vhs/analog/nostalgia. *(shipped as `chromatic`, tranche 3; "static" stays glitch's)*
+- ✅ **Liquid fill** — water rises inside the letterforms. Tags: tears/flood/spill/pour. *(shipped as `liquid`, tranche 3; drown stays fall's, ocean stays wave's)*
+- ✅ **Gravity fall** — letters detach and drop. Tags: fall/collapse/gravity/down/sink. *(shipped as `fall`, tranche 2)*
+- ✅ **Gold-leaf shimmer** — luxe sweep across glyphs. Tags: gold/crown/rich/shine/luxury (pairs with Inferno/gold vibe). *(shipped as `shimmer`, tranche 2)*
+- ✅ **Bleed** — red ink weeps from the word. Tags: blood/bleed/wound/hurt/scar. *(tranche 3)*
 - **Handwrite** — script stroke draws on (SVG stroke-dashoffset). Tags: write/letter/vow/promise/sign.
 - **TV-off** — collapses to a white line then a dot. Tags: end/gone/dead/silence/off.
 

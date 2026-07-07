@@ -7,6 +7,43 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Pillar 1 tranche 3: redact / chromatic / liquid / bleed
+
+**Goal:** keep widening the engine's text-effect palette (roadmap Pillar 1,
+"ship 3–4 per tranche") — secrecy, analog memory, water, and blood.
+
+**Changes (engine — registry + KineticStage, same shape as tranche 2):**
+1. **🕶 Redact** — the word lands readable, then a black bar slams across it
+   left-to-right and it stays struck out. Vocab: lie/liar/hidden/classified/
+   censored/forbidden/undercover… ("secret" stays whisper's — no stealing).
+2. **📼 Chromatic** — red/cyan ghosts pull apart and jitter like worn tape,
+   then lock back into register (`mix-blend-mode: screen`, transforms only).
+   Vocab: dream/nostalgia/analog/vhs/rewind/retro/polaroid/flashback/haze…
+3. **💧 Liquid** — the word stands as a 30%-opacity vessel and fills bottom-up
+   with a sea gradient via `clip-path inset` keyframes that overshoot and slosh.
+   Vocab: tears/cry/weep/flood/spill/pour/overflow/lágrimas…
+4. **🩸 Bleed** — a deep-red copy soaks through (base word keeps the theme
+   color) while three thin drips run down from under the letters. Vocab:
+   blood/bleed/wound/scar/vein/bruise/hurt/pain/ache/sangre…
+
+Wiring: `TextEffect` union + `ALL_TEXT_EFFECTS` + `TEXTBOUND` rows +
+`TEXT_MATCHERS` (appended, so first-match priority holds) in the registry;
+`WORD_FX` entries + four word-sets + the `extraFx` chain (appended after
+tremor) in KineticStage. Auto-trigger stays gated `pass >= 4`; per-word
+overrides still trump via `resolveWordEffect`. All perf-lite-safe: transforms,
+opacity, clip-path — no per-frame blur.
+
+**Verified:** `tsc --noEmit` clean; `next build` green; eslint back to the
+HEAD baseline (a copied stale `eslint-disable` was dropped — React types
+already cover `WebkitBackgroundClip`). A collision script confirmed **no dead
+vocabulary** — no word in the new sets is claimed by a higher-priority set.
+Live-lyric trigger-rate measurement wasn't possible in this container (lyrics
+live in Supabase; no creds here) — worth a spot-check on real songs next
+session. Kinetica sync not run from here (separate repo); the engine files are
+manifest-covered, so the next `sync-to-kinetica.mjs --apply` carries them over.
+
+---
+
 ## 2026-07-07 — THE REACTOR: experimental lyric cores (17 and counting)
 
 **Goal:** a Labs wing on the now-playing stage — a place to try wild lyric
