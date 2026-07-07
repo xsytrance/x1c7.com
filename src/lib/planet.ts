@@ -1,6 +1,6 @@
 // The song "planet" — LLM analysis that gives the lyric engine meaning to render.
 
-import type { TextEffect } from "@/lib/effects/registry";
+import type { TextEffect, SurfaceMode } from "@/lib/effects/registry";
 
 export interface PlanetSection {
   name: string;
@@ -50,6 +50,9 @@ export interface PlanetEffects {
   /** a preset's allowed palette: if set, a naturally-matched effect NOT in this
    *  list is suppressed (the word renders plain), keeping a vibe coherent. */
   allow?: TextEffect[];
+  /** force the stage's surface growth (mud/rust/vines/…), or "none" to keep the
+   *  glass clean — a preset knob. undefined = the stage's own lyric-derived pick. */
+  surface?: SurfaceMode | "none";
 }
 
 /** Resolve a word's text effect through the preset/override seam. Precedence:

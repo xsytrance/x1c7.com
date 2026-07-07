@@ -390,7 +390,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // the hosted shelf may name a mode this build doesn't have yet.
     return (agg.surface.find((m) => m in SURFACE_SPECS) as SurfaceMode) ?? null;
   }, [lex, track]);
-  const effectiveSurface = surfaceMode ?? lexSurface;
+  // A preset/vibe can force a surface (or "none"); else the lyric-derived pick.
+  const cfgSurface = (effects ?? track.planet?.effects)?.surface;
+  const effectiveSurface = cfgSurface !== undefined
+    ? (cfgSurface === "none" ? null : cfgSurface)
+    : (surfaceMode ?? lexSurface);
   // ── STEM SENSES ── measured hearing from the planet's stems.json (if any).
   // Kicks thump the halo, snares ring, hats glint the weather, the bass bends
   // the type, the singer's real energy sizes each word, drum-cuts freeze the
