@@ -29,14 +29,23 @@ words, and give a single deck for vibe + weather + intensity (declutter the show
    Cover · FX) collapses into one **⚙ Director** panel holding the vibe dropdown +
    New/Edit, cover-theme, a **live weather picker** (particle override on top of the
    preset), the four intensity sliders, and a Per-word-FX launcher.
+4. **Interaction legend** (kinetica `Show.tsx`): a "?" overlay surfaces the engine's
+   already-supported gestures (tap word · drag word · swipe comet · blow/shout moments).
+5. **Backdrop curation** (kinetica `images/populate.ts` + `ui/BackdropCurator.tsx` +
+   `ArtStep.tsx`): free-photo backdrops are curated, not auto-picked. `searchCandidates`
+   returns several landscape-first candidates per keyword (keyless-net fallback only when a
+   source is empty); the curator shows a per-keyword strip — click to choose, ✕ to drop
+   (clean stage), editable query + ⟳ to re-search; `curationResult` builds the keyword→url
+   map + credits from the chosen photos. AI-art path unchanged.
 
 **Verified:** x1c7 `tsc` clean; engine sync (KineticStage + KineticParticles) applied,
-**0 drift**; kinetica `npm run build` green; `resolveWordEffect` contract still 12/12. The
-per-word key matching is covered by the "override checks 2nd key" contract case. *(Live
-browser pass of the sliders/overrides not run here — recommended manual check.)*
+**0 drift**; kinetica `npm run build` green at every step; `resolveWordEffect` contract still
+12/12; live-checked a source returns 8 candidates/keyword for the strip. The per-word key
+matching is covered by the "override checks 2nd key" contract case. *(Live browser pass of
+the deck/curator UIs not run here — recommended manual check.)*
 
-**Still open in 2.3:** section editor, backdrop curation (port x1c7 studio/feed), beat
-fine-tune, keyboard shortcuts / interaction legend. Then **2.4** (vertical + export).
+**Still open in 2.3:** section editor, beat fine-tune, keyboard shortcuts. Then **2.4**
+(vertical + export).
 
 ---
 

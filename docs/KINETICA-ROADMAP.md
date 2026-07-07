@@ -7,11 +7,19 @@
 > the `fx-*` grade classes. Contract verified 12/12; both repos build; 0 engine drift.
 > **Deferred stretch:** motion-intensity biasing + heuristic "describe your vibe".
 >
-> **Phase 2.3 in progress** — **per-word effect override UI** (the ✦ FX panel) and the
-> **⚙ Director's deck** (consolidated vibe/cover + live weather picker + Density/Glow/
-> Grain/Vignette sliders via a gated engine `deck` prop) are done. **Still open in 2.3:**
-> section editor, backdrop curation, beat fine-tune, keyboard shortcuts. Then **2.4**
-> (vertical + export). Phases 2.0/2.1/2.2 done before. See [`BUILD-LOG.md`](./BUILD-LOG.md).
+> **Phase 2.3 in progress** — done: **per-word FX override** panel, the **⚙ Director's
+> deck** (vibe/cover + live weather + Density/Glow/Grain/Vignette via a gated engine `deck`
+> prop), **interaction legend**, **backdrop curation** (candidate strip per keyword:
+> pick/drop/edit-query/re-search), and **keyboard shortcuts**. **Remaining 2.3:** a **section
+> editor** (live emotional-arc authoring — needs an engine `sections` override prop to avoid
+> re-cloning the planet + a browser to shape the UX). **Beat fine-tune skipped** — the
+> beatClock is live-detected from bass onsets, so a manual BPM/offset would fight the design.
+>
+> **Phase 2.4 (vertical + export) — flagged decision:** the engine renders fullscreen via
+> `fixed inset-0` layers, so a 9:16/1:1 frame needs those layers containerized. Cleanest path
+> = wrap the show in a transform-contained aspect box (makes `fixed` descendants relative to
+> the wrapper, **no engine change**) — but it's a visual/layout change to validate live in a
+> browser before shipping. Phases 2.0/2.1/2.2 done. See [`BUILD-LOG.md`](./BUILD-LOG.md).
 
 ## Context
 
