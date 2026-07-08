@@ -5,6 +5,9 @@
 // choreography written by the song itself. Playback stays one mp3 — this is
 // data, not audio.
 
+/** Every instrument bucket the analyzer recognizes in a Suno stem zip. */
+export type StemName = "lead" | "back" | "drums" | "perc" | "bass" | "synth" | "guitar" | "keys" | "other";
+
 export interface StemRiser { t: number; end: number }
 export interface StemData {
   v: number;
@@ -21,7 +24,7 @@ export interface StemData {
   /** energy ramps that terminate at a drum return — ride them into the drop. */
   risers: StemRiser[];
   /** per-stem loudness envelopes, 0-99 at envHz frames/sec. */
-  env: Partial<Record<"lead" | "back" | "drums" | "bass" | "synth" | "other", number[]>>;
+  env: Partial<Record<StemName, number[]>>;
 }
 
 export async function loadStems(url: string): Promise<StemData | null> {

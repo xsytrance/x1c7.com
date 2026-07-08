@@ -1,6 +1,7 @@
 // The song "planet" — LLM analysis that gives the lyric engine meaning to render.
 
 import type { TextEffect, SurfaceMode } from "@/lib/effects/registry";
+import type { StemName } from "@/lib/stemSense";
 
 export interface PlanetSection {
   name: string;
@@ -32,6 +33,12 @@ export interface PlanetAssets {
   alt?: Record<string, string>;
   /** URL (object URL in-browser) of the measured stems.json — the stem senses. */
   stems?: string;
+  /** Per-stem audio URLs (web-transcoded Suno stems) — the live stem mixer.
+   * Present = the listener can pull the song apart instrument by instrument. */
+  stemAudio?: Partial<Record<StemName, string>>;
+  /** Seconds to ADD to stem-audio time to land on the release clock
+   * (= stems.json align.lag, measured by analyze_stems.py). */
+  stemLag?: number;
 }
 /** LLM-choreographed touch interactions — different per song, always in the
  * song's own language (fire burns, heartbreak shatters, love blooms). */

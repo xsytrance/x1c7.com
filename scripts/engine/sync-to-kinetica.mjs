@@ -52,6 +52,9 @@ const FILES = [
   // cover image. Only imports ./theme (also synced); no app coupling.
   ["src/lib/palette.ts", "src/lib/palette.ts"],
   ["src/lib/stemSense.ts", "src/lib/stemSense.ts"],
+  // The live stem-mix store (KineticStage reads visualGain per frame). Pure
+  // module store + react hook; the audio engine that drives it stays per-app.
+  ["src/lib/stemMix.ts", "src/lib/stemMix.ts"],
   ["src/lib/beatClock.ts", "src/lib/beatClock.ts"],
   ["src/lib/lexicon/types.ts", "src/lib/lexicon/types.ts"],
   ["src/lib/lexicon/lookup.ts", "src/lib/lexicon/lookup.ts"],
