@@ -19,6 +19,7 @@ import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, t
 import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
 import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
+import { stemMixStore } from "@/lib/stemMix";
 import { usePerfLite } from "@/lib/perf";
 import { PerfHUD } from "./PerfHUD";
 import type { Track } from "@/lib/engineHost";
@@ -999,16 +1000,21 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       if (stems && stemTrk.current) {
         const trk = stemTrk.current;
         const root = rootRef.current;
+        // The live mix (stem bus): a muted instrument takes its visuals with
+        // it — kill the drums and the kick-thumps, rings and beat-cuts die
+        // too. All 1 while the mastered mp3 plays (every instrument present).
+        const vg = (s: Parameters<typeof stemMixStore.visualGain>[0]) => stemMixStore.visualGain(s);
+        const drumsG = vg("drums");
         // Beat grid → the beat game's clock locks to the real grid.
         if (trk.beat.consume(t) > 0) beatClock.record(performance.now());
         // Kicks thump (decaying --kick var), snares ring, hats glint.
         const dt2 = Math.max(0, Math.min(0.1, t - lastStemT.current));
         lastStemT.current = t;
         kickPulse.current = Math.max(0, kickPulse.current - dt2 * 5);
-        if (trk.kick.consume(t) > 0) { kickPulse.current = 1; }
-        if (trk.snare.consume(t) > 0 && !document.hidden) spawnRing(false);
+        if (trk.kick.consume(t) > 0 && drumsG > 0.35) { kickPulse.current = drumsG; }
+        if (trk.snare.consume(t) > 0 && drumsG > 0.35 && !document.hidden) spawnRing(false);
         const hatN = trk.hat.consume(t);
-        if (hatN > 0) particles.current?.glint(6 + hatN * 4);
+        if (hatN > 0 && Math.max(drumsG, vg("perc")) > 0.35) particles.current?.glint(6 + hatN * 4);
         // These four drive audio-reactive micro-motion (stage bend, word glow,
         // ghost chorus, halo). On LITE every one of their consumers is already
         // frozen to a constant (perf-lite) or unrendered (the ghost layer is
@@ -1019,13 +1025,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // (--charge stays — its riser vignette DOES render on lite.)
         if (root && !liteRef.current) {
           root.style.setProperty("--kick", kickPulse.current.toFixed(3));
-          root.style.setProperty("--bass", envAt(stems, "bass", t).toFixed(3));
-          root.style.setProperty("--voice", envAt(stems, "lead", t).toFixed(3));
-          root.style.setProperty("--choir", envAt(stems, "back", t).toFixed(3));
+          root.style.setProperty("--bass", (envAt(stems, "bass", t) * vg("bass")).toFixed(3));
+          root.style.setProperty("--voice", (envAt(stems, "lead", t) * vg("lead")).toFixed(3));
+          root.style.setProperty("--choir", (envAt(stems, "back", t) * vg("back")).toFixed(3));
         }
         // Beat-cut blackout: drums vanish → the world freezes to silhouette;
-        // drums return → slam back with a shockwave.
-        const cut = t >= 1 ? activeCut(stems, t) : null;
+        // drums return → slam back with a shockwave. (Meaningless while the
+        // listener has the drums muted — the drums are ALWAYS gone then.)
+        const cut = t >= 1 && drumsG > 0.35 ? activeCut(stems, t) : null;
         if (!!cut !== !!cutRef.current) {
           cutRef.current = cut;
           setCutMode(!!cut);
@@ -1036,8 +1043,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             navigator.vibrate?.([20, 30, 40]);
           }
         }
-        // Riser → implosion charge → SUPERNOVA exactly on the drop.
-        const riser = activeRiser(stems, t);
+        // Riser → implosion charge → SUPERNOVA exactly on the drop. The ramp
+        // lives in the melodic bed — muted bed, no charge, no detonation.
+        const bedG = Math.max(vg("synth"), vg("other"), vg("guitar"), vg("keys"));
+        const riser = bedG > 0.3 ? activeRiser(stems, t) : null;
         if (riser && !riserRef.current) riserRef.current = riser;
         if (riserRef.current) {
           const r = riserRef.current;

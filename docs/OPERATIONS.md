@@ -62,6 +62,10 @@ node scripts/lexicon/harvest.mjs && node scripts/lexicon/dream.mjs && node scrip
 node scripts/song-art/topup.mjs --target 100 --limit 4000     # song backdrops
 node scripts/lexicon/art.mjs --per-sense 2 --limit 4000        # word art
 
+# Ship a song's separated Suno stems to the live mixer (transcode → R2 → SQL):
+node scripts/stem-analysis/publish-stems.mjs --stems <suno-stem-dir> --slug <track-id> \
+  --stems-json <stems.json>          # see docs/STEM-MIXER.md
+
 # Release the shared engine to Kinetica:
 node scripts/engine/sync-to-kinetica.mjs --apply
 

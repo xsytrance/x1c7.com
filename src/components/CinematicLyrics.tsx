@@ -9,6 +9,9 @@ import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/ly
 import { uiStore } from "@/lib/uiStore";
 import { KineticStage, canPerform, MODES, type StageMode } from "./KineticStage";
 import { LabStage, LAB_MODES, type LabMode } from "./LabStage";
+import { StemMixer } from "./StemMixer";
+import { StemLens } from "./StemLens";
+import { useStemMix } from "@/lib/stemMix";
 import type { Track } from "@/data/tracks";
 
 /**
@@ -87,6 +90,13 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   // THE REACTOR — experimental Labs modes. When set, they take over the stage.
   const [labMode, setLabMode] = useState<LabMode | null>(null);
   const [reactorOpen, setReactorOpen] = useState(false);
+  // THE STEMS — the live mixer over the separated Suno stems, + the Lens.
+  const [mixerOpen, setMixerOpen] = useState(false);
+  const [lensArmed, setLensArmed] = useState(false);
+  const stemMix = useStemMix();
+  const hasStems = stemMix.available.length > 0;
+  // New song → drop the lens; its zones (and the stems) belong to the old one.
+  useEffect(() => { setLensArmed(false); }, [track.id]);
   // Viewing style, remembered across sessions.
   const [mode, setMode] = useState<StageMode>("phrase");
   useEffect(() => {
@@ -117,14 +127,14 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") { if (drawer) setDrawer(false); else onClose(); }
+      if (e.key === "Escape") { if (lensArmed) setLensArmed(false); else if (drawer) setDrawer(false); else onClose(); }
       else if (e.key === "ArrowRight") next();
       else if (e.key === "ArrowLeft") prev();
       else if (e.key === " " && !(e.target as HTMLElement)?.closest("input,textarea")) { e.preventDefault(); togglePlay(); }
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [open, onClose, drawer, next, prev, togglePlay]);
+  }, [open, onClose, drawer, lensArmed, next, prev, togglePlay]);
 
   // Karaoke highlight (line-mode fallback only) — rAF + refs, no per-frame re-render.
   useEffect(() => {
@@ -187,6 +197,23 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                     style={{ background: "color-mix(in srgb, var(--theme-primary) 22%, transparent)", boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
                     🌙 Phase {pass}
                   </button>
+                </div>
+              )}
+              {/* THE STEMS — live mixer over the separated Suno stems. Only
+                  songs that ship stem audio grow the fader. */}
+              {performs && hasStems && (
+                <div className="group relative shrink-0">
+                  <button onClick={() => setMixerOpen((v) => !v)} aria-label="Stems — the live instrument mixer"
+                    className="flex items-center gap-1.5 rounded-full border px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider transition hover:scale-[1.03]"
+                    style={stemMix.active || mixerOpen || lensArmed
+                      ? { borderColor: "var(--theme-secondary)", color: "var(--theme-secondary)", background: "color-mix(in srgb, var(--theme-secondary) 14%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--theme-secondary) 50%, transparent)" }
+                      : { borderColor: "color-mix(in srgb, var(--theme-secondary) 40%, transparent)", color: "var(--theme-secondary)" }}>
+                    <span className="text-sm leading-none">🎚</span>
+                    <span className="hidden sm:inline">{stemMix.active ? "Stems ✦" : "Stems"}</span>
+                  </button>
+                  <span className="pointer-events-none absolute right-0 top-full z-[80] mt-2 hidden w-56 rounded-lg border border-white/12 bg-black/85 px-3 py-2 text-right font-mono text-[10px] leading-snug text-white/75 opacity-0 backdrop-blur transition group-hover:opacity-100 sm:block">
+                    🎚 <b className="text-white">Stems</b> — the song&apos;s real separated instruments. Solo, mute, remix, x-ray.
+                  </span>
                 </div>
               )}
               {/* THE REACTOR — experimental Labs modes (labeled + glowing so it's
@@ -270,6 +297,17 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             )}
           </AnimatePresence>
 
+          {/* THE STEM MIXER — presets + per-instrument chips + the Lens */}
+          <AnimatePresence>
+            {mixerOpen && hasStems && (
+              <StemMixer
+                onClose={() => setMixerOpen(false)}
+                lensArmed={lensArmed}
+                onToggleLens={() => { setLensArmed((v) => !v); setMixerOpen(false); }}
+              />
+            )}
+          </AnimatePresence>
+
           {/* PLAYLIST DRAWER — the queue as a constellation list. Planets
               (word-synced worlds) glow; tap any row to fly there. */}
           <AnimatePresence>
@@ -345,6 +383,8 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                 {labMode
                   ? <LabStage track={track} mode={labMode} />
                   : <KineticStage track={track} timelineBottomClass="bottom-5" pass={pass} mode={mode} />}
+                {/* THE LENS — x-ray listening over the stage (armed via the mixer) */}
+                {lensArmed && hasStems && <StemLens onDisarm={() => setLensArmed(false)} />}
               </div>
             ) : (
               <>

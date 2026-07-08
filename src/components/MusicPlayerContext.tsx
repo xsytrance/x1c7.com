@@ -3,6 +3,9 @@
 import { createContext, useContext, useState, useRef, useCallback, useEffect, useMemo } from "react";
 import { type Track } from "@/data/tracks";
 import { SignalEngine } from "@/audio/SignalEngine";
+import { StemEngine } from "@/audio/StemEngine";
+import { stemMixStore, STEM_ORDER } from "@/lib/stemMix";
+import type { StemName } from "@/lib/stemSense";
 
 interface PlayerState {
   currentTrack: Track | null;
@@ -27,6 +30,17 @@ interface PlayerContext extends PlayerState {
   getCurrentTime: () => number;
   /** Muffle the music (0 = clear, 1 = underwater) — wipe moments drive this. */
   setMuffle: (amount: number) => void;
+  /** The stem bus — live playback of the separated Suno stems. engage()
+   * crossfades mp3 → stems (lazy-loads the audio); disengage() returns to the
+   * mastered mp3. The mix itself (gains/solo) lives in stemMixStore. */
+  stemBus: { engage: () => void; disengage: () => void; supported: () => boolean };
+}
+
+/** Which stems a track ships mixable audio for. */
+function stemNamesFor(track: Track | null): StemName[] {
+  const urls = track?.planet?.assets?.stemAudio;
+  if (!urls) return [];
+  return STEM_ORDER.filter((s) => !!urls[s]);
 }
 
 const Context = createContext<PlayerContext | null>(null);
@@ -49,6 +63,12 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
   const muffleRef = useRef<BiquadFilterNode | null>(null);
+  // Crossfade seam for the stem bus: mp3 source → mixGain → muffle. The stem
+  // engine fades this to 0 while the stems sound (the mp3 keeps playing
+  // silently — it stays the master clock).
+  const mixGainRef = useRef<GainNode | null>(null);
+  const stemEngineRef = useRef<StemEngine | null>(null);
+  const trackRef = useRef<Track | null>(null);
   const fellBackRef = useRef(false);
   const volumeRef = useRef(volume);
   // Latest queue/index for the "ended" handler, which is bound once on mount.
@@ -102,7 +122,10 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
         lp.frequency.value = 20000; // wide open by default
         lp.Q.value = 0.5;
         muffleRef.current = lp;
-        source.connect(lp);
+        const mix = ac.createGain();
+        mixGainRef.current = mix;
+        source.connect(mix);
+        mix.connect(lp);
         lp.connect(an);
         an.connect(ac.destination);
         setAnalyser(an);
@@ -119,8 +142,13 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
       detach(audio);
       audio.removeEventListener("error", onError);
       try { audio.pause(); } catch { /* noop */ }
+      // Stems ride the Web Audio graph — no graph, no stem bus.
+      stemEngineRef.current?.dispose();
+      stemEngineRef.current = null;
+      stemMixStore.reset([]);
       try { ctxRef.current?.close(); } catch { /* noop */ }
       ctxRef.current = null;
+      mixGainRef.current = null;
       setAnalyser(null);
 
       const plain = new Audio();
@@ -139,6 +167,8 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
       const a = audioRef.current;
       if (a) { detach(a); try { a.pause(); } catch { /* noop */ } }
       audio.removeEventListener("error", onError);
+      stemEngineRef.current?.dispose();
+      stemEngineRef.current = null;
       try { ctxRef.current?.close(); } catch { /* noop */ }
     };
   }, []);
@@ -166,6 +196,11 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
 
     const isSame = audio.src === track.audioUrl;
     if (!isSame) {
+      // New song → the old stem bus is meaningless. Tear it down and declare
+      // the new track's mixable stems (empty = mixer hidden).
+      stemEngineRef.current?.dispose();
+      stemEngineRef.current = null;
+      stemMixStore.reset(ctxRef.current ? stemNamesFor(track) : []);
       audio.src = track.audioUrl;
       setDuration(0);
       // Ambient bed is best-effort — a Web-Audio failure must never abort
@@ -223,6 +258,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     indexRef.current = currentIndex;
     volumeRef.current = volume;
     advanceRef.current = next;
+    trackRef.current = currentTrack;
   });
 
   const seek = useCallback((time: number) => {
@@ -251,16 +287,36 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     if (audioRef.current) audioRef.current.volume = v;
   }, []);
 
+  // The stem bus — stable identity; the engine is created lazily on the first
+  // engage (that's when the stem audio starts downloading, not before).
+  const stemBus = useMemo(() => ({
+    supported: () => !!ctxRef.current && stemNamesFor(trackRef.current).length > 0,
+    engage: () => {
+      const track = trackRef.current;
+      const ctx = ctxRef.current, out = muffleRef.current, mix = mixGainRef.current, master = audioRef.current;
+      const urls = track?.planet?.assets?.stemAudio;
+      if (!ctx || !out || !mix || !master || !urls || stemNamesFor(track).length === 0) return;
+      if (!stemEngineRef.current) {
+        stemEngineRef.current = new StemEngine({
+          ctx, output: out, mixGain: mix, master, urls,
+          lag: track?.planet?.assets?.stemLag ?? 0,
+        });
+      }
+      stemEngineRef.current.engage();
+    },
+    disengage: () => stemEngineRef.current?.disengage(),
+  }), []);
+
   // Memoized so the value identity only changes on real state changes — never
   // per animation frame — which keeps every consumer (the whole /music page
   // included) from re-rendering 60fps.
   const value = useMemo(
     () => ({
       currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
-      playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle,
+      playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle, stemBus,
     }),
     [currentTrack, isPlaying, duration, volume, queue, currentIndex, analyser,
-     playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle],
+     playTrack, togglePlay, pause, next, prev, seek, setVolume, getCurrentTime, setMuffle, stemBus],
   );
 
   return <Context.Provider value={value}>{children}</Context.Provider>;
