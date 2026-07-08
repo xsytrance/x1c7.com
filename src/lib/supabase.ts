@@ -24,4 +24,6 @@ export interface TrackRow {
   lyrics: string | null;
   lyrics_synced: unknown | null;
   planet: unknown | null;
+  /** Unlaunched planet edits from the Planet Studio app; promoted to `planet` by GO LIVE. */
+  planet_draft: unknown | null;
 }

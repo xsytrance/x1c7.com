@@ -7,9 +7,9 @@
 // the 808 breathes the whole scene. Runs flat with orbit controls; the
 // Enter VR button (Quest browser) makes it immersive.
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Component, type ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import * as THREE from "three";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Text, Stars, Sparkles, OrbitControls } from "@react-three/drei";
 import { XR, createXRStore } from "@react-three/xr";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
@@ -69,6 +69,11 @@ function Show({ track }: { track: Track }) {
   const lightRef = useRef<THREE.PointLight>(null);
   const groupRef = useRef<THREE.Group>(null);
   const fogRef = useRef<THREE.FogExp2 | null>(null);
+
+  // The fog is created imperatively in the frame loop — clear it off the
+  // shared scene on unmount or it survives into the next show.
+  const scene = useThree((s) => s.scene);
+  useEffect(() => () => { scene.fog = null; fogRef.current = null; }, [scene]);
 
   useFrame(({ scene }) => {
     const t = getCurrentTime();
@@ -210,12 +215,16 @@ function ArtPanel({ url, fadeIn }: { url: string; fadeIn: boolean }) {
   const [tex, setTex] = useState<THREE.Texture | null>(null);
   useEffect(() => {
     let on = true;
+    let loaded: THREE.Texture | null = null;
     new THREE.TextureLoader().load(url, (t) => {
-      if (!on) return;
+      if (!on) { t.dispose(); return; }
       t.colorSpace = THREE.SRGBColorSpace;
+      loaded = t;
       setTex(t);
     });
-    return () => { on = false; };
+    // R3F only auto-disposes objects it created — imperatively-loaded textures
+    // must be freed by hand or GPU memory grows with every painting.
+    return () => { on = false; loaded?.dispose(); };
   }, [url]);
   useFrame((_, dt) => {
     const m = mat.current;
@@ -263,8 +272,28 @@ export function EnterVR() {
   );
 }
 
+/** A useFrame/loader throw inside the Canvas otherwise takes down the whole
+ * route — catch it and show a quiet fallback instead. */
+class StageBoundary extends Component<{ children: ReactNode }, { failed: boolean }> {
+  state = { failed: false };
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+  render() {
+    if (this.state.failed) {
+      return (
+        <div className="absolute inset-0 flex items-center justify-center text-sm uppercase tracking-[0.2em] text-white/50">
+          the stage went dark — reload to re-enter
+        </div>
+      );
+    }
+    return this.props.children;
+  }
+}
+
 export function VRStage({ track }: { track: Track }) {
   return (
+    <StageBoundary>
     <Canvas
       camera={{ position: [0, 1.6, 0.1], fov: 70 }}
       gl={{ antialias: true, powerPreference: "high-performance" }}
@@ -276,5 +305,6 @@ export function VRStage({ track }: { track: Track }) {
       </XR>
       <OrbitControls target={[0, 1.6, -3]} enablePan={false} maxDistance={10} />
     </Canvas>
+    </StageBoundary>
   );
 }

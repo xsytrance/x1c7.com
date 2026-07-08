@@ -69,6 +69,10 @@ export function ParticleField() {
     const connectDistance = 120;
     const mouseRadius = 150;
 
+    // Palette rebuilt only when the theme object actually changes, not per frame.
+    let cachedTheme: ReturnType<typeof themeStore.get>["theme"] | null = null;
+    let palette: readonly [string, string, string] = ["#fff", "#fff", "#fff"];
+
     const animate = () => {
       // Idle while the cinematic lyrics view is taking over — frees the mobile
       // renderer (the whole page is occluded anyway).
@@ -77,7 +81,10 @@ export function ParticleField() {
       const particles = particlesRef.current;
       const mouse = mouseRef.current;
       const { theme, beat } = themeStore.get();
-      const palette = [theme.primary, theme.secondary, theme.accent] as const;
+      if (theme !== cachedTheme) {
+        cachedTheme = theme;
+        palette = [theme.primary, theme.secondary, theme.accent];
+      }
       const beatScale = 1 + beat * 0.9; // radius swells on the beat
 
       for (let i = 0; i < particles.length; i++) {

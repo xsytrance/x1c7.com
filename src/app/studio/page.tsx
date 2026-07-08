@@ -1,10 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { KineticStage, canPerform, MODES, type StageMode } from "@/components/KineticStage";
+import { supabase } from "@/lib/supabase";
+import { isPrivateHost } from "@/lib/privateHost";
+import type { Track } from "@/data/tracks";
 
 // Every show pass is preserved as a "satellite" (moon) orbiting the planet.
 // The newest pass is the main show; older passes stay selectable forever.
@@ -19,9 +22,27 @@ export default function StudioPage() {
   const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
   const [pass, setPass] = useState(3);
   const [mode, setMode] = useState<StageMode>("phrase");
+  // Embed params — the Planet Studio app's WebView drives the stage with
+  // ?track&draft=1&embed=1&autoplay=1&pass&mode. All additive; a plain visit
+  // behaves exactly as before.
+  const [embed, setEmbed] = useState(false);
+  const [wantDraft, setWantDraft] = useState(false);
+  const [wantAutoplay, setWantAutoplay] = useState(false);
+  const [draftPlanet, setDraftPlanet] = useState<Track["planet"] | null>(null);
+  const [draftReady, setDraftReady] = useState(false);
+  const autoLaunched = useRef(false);
   useEffect(() => {
     const saved = localStorage.getItem("x1c7-lyric-style") as StageMode | null;
     if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
+    const q = new URLSearchParams(window.location.search);
+    setEmbed(q.get("embed") === "1");
+    setWantAutoplay(q.get("autoplay") === "1");
+    // Drafts are an owner-only concept — never overlay them on a public host.
+    setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
+    const p = Number(q.get("pass"));
+    if ([1, 2, 3].includes(p)) setPass(p);
+    const m = q.get("mode") as StageMode | null;
+    if (m && MODES.some((x) => x.id === m)) setMode(m);
   }, []);
   const pickMode = (m: StageMode) => { setMode(m); localStorage.setItem("x1c7-lyric-style", m); };
 
@@ -37,6 +58,33 @@ export default function StudioPage() {
   }, [selectedId, timed, tracks]);
 
   const selected = tracks.find((t) => t.id === selectedId);
+
+  // ?draft=1 → fetch the unlaunched planet_draft and overlay it on launch.
+  useEffect(() => {
+    if (!wantDraft || !selectedId) { setDraftReady(!wantDraft); return; }
+    let on = true;
+    setDraftReady(false);
+    supabase.from("tracks").select("planet_draft").eq("id", selectedId).then(({ data }) => {
+      if (!on) return;
+      setDraftPlanet(((data?.[0] as { planet_draft?: Track["planet"] } | undefined)?.planet_draft) ?? null);
+      setDraftReady(true);
+    });
+    return () => { on = false; };
+  }, [wantDraft, selectedId]);
+
+  // The overlay: hand the player a track whose planet IS the draft.
+  const launch = (t: Track) => {
+    const show = wantDraft && t.id === selectedId && draftPlanet ? { ...t, planet: draftPlanet } : t;
+    playTrack(show, tracks);
+  };
+
+  // ?autoplay=1 → launch as soon as the track (and its draft, if requested) is ready.
+  useEffect(() => {
+    if (!wantAutoplay || autoLaunched.current || !selected || !canPerform(selected) || !draftReady) return;
+    autoLaunched.current = true;
+    launch(selected);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wantAutoplay, selected, draftReady]);
   const analysis = currentTrack?.planet?.analysis;
   const live = canPerform(currentTrack);
 
@@ -48,7 +96,8 @@ export default function StudioPage() {
           "linear-gradient(160deg, var(--theme-bg), #05030b)",
       }}
     >
-      {/* Control bar */}
+      {/* Control bar (hidden in the app's embedded WebView) */}
+      {!embed && (
       <header className="relative z-10 flex flex-wrap items-center gap-3 px-4 py-3 sm:px-6">
         <span className="font-display text-sm font-black uppercase tracking-[0.3em] text-white">Studio</span>
         <span className="rounded-full border border-white/15 px-2 py-0.5 font-mono text-[9px] uppercase tracking-wider text-white/40">lyric engine · alpha</span>
@@ -79,9 +128,10 @@ export default function StudioPage() {
 
         <Link href="/music" className="rounded-lg border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 hover:text-white">Exit</Link>
       </header>
+      )}
 
       {/* Planet readout — the song's analyzed identity */}
-      {analysis && (
+      {analysis && !embed && (
         <div className="relative z-10 flex flex-wrap items-center gap-x-3 gap-y-1 px-4 pb-1 sm:px-6">
           <span className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>🪐 {analysis.overallMood}</span>
           <span className="font-mono text-[10px] uppercase tracking-wider text-white/35">{analysis.themes.slice(0, 4).join(" · ")}</span>
@@ -101,7 +151,7 @@ export default function StudioPage() {
           <div className="text-center">
             {selected && canPerform(selected) ? (
               <button
-                onClick={() => selected && playTrack(selected, tracks)}
+                onClick={() => selected && launch(selected)}
                 className="rounded-full px-8 py-4 font-display text-lg font-black uppercase tracking-[0.2em] text-void transition hover:scale-105"
                 style={{ background: "var(--theme-primary)" }}
               >

@@ -3,7 +3,6 @@ import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ParticleField } from "@/components/ParticleField";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
-import { CustomCursor } from "@/components/CustomCursor";
 import { BootSequenceWrapper } from "@/components/BootSequenceWrapper";
 import { KeyboardShortcuts } from "@/components/KeyboardShortcuts";
 import { KeyboardHelp } from "@/components/KeyboardHelp";
@@ -55,7 +54,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <EasterEggs />
           <KonamiCode />
           <NoiseOverlay />
-          <CustomCursor />
           <UISoundLayer />
           <MusicPlayerBar />
         </MusicPlayerProvider>

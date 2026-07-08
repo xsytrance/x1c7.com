@@ -257,10 +257,10 @@ export default function Page() {
             <div className="p-8 sm:p-12">
               <p className="font-mono text-xs uppercase tracking-[0.4em] text-white/30">Featured Transmission</p>
               <h2 className="mt-4 font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl">{heroTrack.title}</h2>
-              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.genre} · {heroTrack.mood}</p>
+              <p className="mt-3 font-mono text-sm uppercase tracking-wider text-white/40">{heroTrack.artist} · {heroTrack.genre}{heroTrack.mood ? ` · ${heroTrack.mood}` : ""} · {heroTrack.duration}</p>
               <p className="mt-6 max-w-md text-base leading-8 text-white/60">
-                The first signal from xsy. A transmission from the edge of the creative void,
-                where machines dream in sound and humans shape the noise into meaning.
+                {heroTrack.planet?.analysis?.summary ||
+                  `${heroTrack.title} — ${heroTrack.genre.toLowerCase()} from ${heroTrack.artist}. Play it loud.`}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 {heroTrack.audioUrl ? (

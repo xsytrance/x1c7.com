@@ -27,13 +27,15 @@ function applyTheme(theme: Theme) {
 export function ThemeEngine() {
   const { currentTrack, isPlaying, analyser } = useMusicPlayer();
 
-  // Latest values for the always-on beat loop (avoids re-subscribing per frame).
+  // Latest values for the beat loop (avoids re-subscribing per frame).
   const analyserRef = useRef<AnalyserNode | null>(null);
   const playingRef = useRef(false);
   const intensityRef = useRef(DEFAULT_THEME.intensity);
+  const startLoopRef = useRef<(() => void) | null>(null);
   useEffect(() => {
     analyserRef.current = analyser;
     playingRef.current = isPlaying;
+    if (isPlaying) startLoopRef.current?.();
   }, [analyser, isPlaying]);
 
   // Resolve + apply the palette whenever the track changes. Palette extraction
@@ -62,11 +64,14 @@ export function ThemeEngine() {
     return () => { cancelled = true; };
   }, [currentTrack]);
 
-  // Always-on beat loop: real bass energy when the analyser is live + playing,
-  // a gentle synthetic pulse when playing without an analyser, and a decay to 0
-  // when paused. Writes both the CSS var (for CSS pulses) and the store (canvas).
+  // Beat loop: real bass energy when the analyser is live + playing, a gentle
+  // synthetic pulse when playing without an analyser, and a decay to 0 when
+  // paused. Writes both the CSS var (for CSS pulses) and the store (canvas).
+  // Parks itself once the pulse has decayed with nothing playing — a 60fps rAF
+  // on every route is a real battery cost on phones — and restarts on play.
   useEffect(() => {
     let raf = 0;
+    let running = false;
     let beat = 0;
     let freq: Uint8Array<ArrayBuffer> | null = null;
     let energyAvg = 0;
@@ -99,12 +104,29 @@ export function ThemeEngine() {
       }
       // Asymmetric smoothing: snap up on hits, ease down for a natural pulse.
       beat += (target - beat) * (target > beat ? 0.5 : 0.08);
+      if (!playingRef.current && beat < 0.001) {
+        beat = 0;
+        root.style.setProperty("--beat", "0");
+        themeStore.setBeat(0);
+        running = false;
+        return;
+      }
       root.style.setProperty("--beat", beat.toFixed(3));
       themeStore.setBeat(beat);
       raf = requestAnimationFrame(tick);
     };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
+    const start = () => {
+      if (running) return;
+      running = true;
+      raf = requestAnimationFrame(tick);
+    };
+    startLoopRef.current = start;
+    start();
+    return () => {
+      startLoopRef.current = null;
+      running = false;
+      cancelAnimationFrame(raf);
+    };
   }, []);
 
   return null;

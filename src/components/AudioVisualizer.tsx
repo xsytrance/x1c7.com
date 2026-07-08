@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useCallback } from "react";
 import { uiStore } from "@/lib/uiStore";
+import { detectLite } from "@/lib/perf";
 
 interface VisualizerProps {
   analyser: AnalyserNode | null;
@@ -31,6 +32,10 @@ function ampColor(val: number, color: string): [number, number, number] {
 export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", className = "", mode = "bars" }: VisualizerProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
+  const sizeRef = useRef({ w: 0, h: 0 });
+  const freqRef = useRef<Uint8Array<ArrayBuffer> | null>(null);
+  const timeRef = useRef<Uint8Array<ArrayBuffer> | null>(null);
+  const liteRef = useRef(false);
 
   const draw = useCallback(() => {
     if (!canvasRef.current) return;
@@ -42,21 +47,23 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    const dpr = Math.min(window.devicePixelRatio, 2);
-    const w = canvas.offsetWidth;
-    const h = canvas.offsetHeight;
-    canvas.width = w * dpr;
-    canvas.height = h * dpr;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    // Sizing, DPR transform, and buffer allocation live in the mount effect —
+    // the hot loop only reads audio data and draws.
+    const { w, h } = sizeRef.current;
+    const glow = !liteRef.current;
 
     let freqData: Uint8Array<ArrayBuffer>;
     let timeData: Uint8Array<ArrayBuffer>;
 
     if (analyser) {
       // Real frequency data (requires a same-origin / CORS-cleared source).
-      analyser.fftSize = 512;
-      freqData = new Uint8Array(analyser.frequencyBinCount);
-      timeData = new Uint8Array(analyser.fftSize);
+      if (analyser.fftSize !== 512) analyser.fftSize = 512;
+      if (!freqRef.current || freqRef.current.length !== analyser.frequencyBinCount) {
+        freqRef.current = new Uint8Array(analyser.frequencyBinCount);
+        timeRef.current = new Uint8Array(analyser.fftSize);
+      }
+      freqData = freqRef.current;
+      timeData = timeRef.current!;
       analyser.getByteFrequencyData(freqData);
       analyser.getByteTimeDomainData(timeData);
     } else {
@@ -64,8 +71,12 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
       // is cross-origin (can't be analysed) but still playing.
       const binCount = 256;
       const fftSize = 512;
-      freqData = new Uint8Array(binCount);
-      timeData = new Uint8Array(fftSize);
+      if (!freqRef.current || freqRef.current.length !== binCount) {
+        freqRef.current = new Uint8Array(binCount);
+        timeRef.current = new Uint8Array(fftSize);
+      }
+      freqData = freqRef.current;
+      timeData = timeRef.current!;
       const t = performance.now() / 1000;
       for (let i = 0; i < binCount; i++) {
         const f = i / binCount;
@@ -102,12 +113,14 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
         ctx.fillStyle = grad;
         ctx.fillRect(x, h - barH, barW, barH);
 
-        // Peak highlight
-        ctx.shadowColor = `rgb(${r},${g},${b})`;
-        ctx.shadowBlur = 6;
+        // Peak highlight (shadowBlur is expensive on mobile — perf-lite skips it)
+        if (glow) {
+          ctx.shadowColor = `rgb(${r},${g},${b})`;
+          ctx.shadowBlur = 6;
+        }
         ctx.fillStyle = `rgba(${r},${g},${b},0.95)`;
         ctx.fillRect(x, h - barH, barW, 2);
-        ctx.shadowBlur = 0;
+        if (glow) ctx.shadowBlur = 0;
       }
     } else if (mode === "wave") {
       const sliceW = w / timeData.length;
@@ -121,8 +134,10 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
       grad.addColorStop(0.5, `rgba(${Math.round(r*0.8)},${Math.round(g*1.2)},${Math.round(b*1.1)},0.9)`);
       grad.addColorStop(1, `rgba(${Math.round(r*1.2)},${Math.round(g*0.8)},${b},0.9)`);
       ctx.strokeStyle = grad;
-      ctx.shadowColor = `rgba(${r},${g},${b},0.4)`;
-      ctx.shadowBlur = 10;
+      if (glow) {
+        ctx.shadowColor = `rgba(${r},${g},${b},0.4)`;
+        ctx.shadowBlur = 10;
+      }
 
       ctx.beginPath();
       for (let i = 0; i < timeData.length; i++) {
@@ -130,7 +145,7 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
         i === 0 ? ctx.moveTo(0, y) : ctx.lineTo(i * sliceW, y);
       }
       ctx.stroke();
-      ctx.shadowBlur = 0;
+      if (glow) ctx.shadowBlur = 0;
     } else if (mode === "radial") {
       const cx = w / 2;
       const cy = h / 2;
@@ -150,14 +165,16 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
 
         ctx.strokeStyle = `rgba(${r},${g},${b},${0.5 + val * 0.5})`;
         ctx.lineWidth = 2;
-        ctx.shadowColor = `rgb(${r},${g},${b})`;
-        ctx.shadowBlur = val * 10;
+        if (glow) {
+          ctx.shadowColor = `rgb(${r},${g},${b})`;
+          ctx.shadowBlur = val * 10;
+        }
         ctx.beginPath();
         ctx.moveTo(x1, y1);
         ctx.lineTo(x2, y2);
         ctx.stroke();
       }
-      ctx.shadowBlur = 0;
+      if (glow) ctx.shadowBlur = 0;
     }
 
     animRef.current = requestAnimationFrame(draw);
@@ -165,8 +182,31 @@ export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", c
 
   useEffect(() => {
     if (!analyser && !active) return;
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    liteRef.current = detectLite();
+
+    // Resizing the backing store clears + reallocates the whole canvas, and
+    // offsetWidth forces layout — do it only when the element actually resizes.
+    const resize = () => {
+      const dpr = Math.min(window.devicePixelRatio, 2);
+      const w = canvas.offsetWidth;
+      const h = canvas.offsetHeight;
+      sizeRef.current = { w, h };
+      canvas.width = w * dpr;
+      canvas.height = h * dpr;
+      canvas.getContext("2d")?.setTransform(dpr, 0, 0, dpr, 0, 0);
+    };
+    resize();
+    const ro = new ResizeObserver(resize);
+    ro.observe(canvas);
+
     animRef.current = requestAnimationFrame(draw);
-    return () => cancelAnimationFrame(animRef.current);
+    return () => {
+      ro.disconnect();
+      cancelAnimationFrame(animRef.current);
+    };
   }, [analyser, active, draw]);
 
   return (

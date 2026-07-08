@@ -77,8 +77,9 @@ function useTypedText(
       return;
     }
     let i = 0;
+    let interval: ReturnType<typeof setInterval> | undefined;
     const timer = setTimeout(() => {
-      const interval = setInterval(() => {
+      interval = setInterval(() => {
         i++;
         setDisplay(text.slice(0, i));
         if (i >= text.length) {
@@ -86,9 +87,11 @@ function useTypedText(
           onCompleteRef.current?.();
         }
       }, speed);
-      return () => clearInterval(interval);
     }, delay);
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      clearInterval(interval);
+    };
   }, [text, speed, delay, reduceMotion]);
 
   return display;
