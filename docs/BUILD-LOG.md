@@ -7,6 +7,74 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-07 — Phase 2.4 SHIPPED: vertical/social frames (kinetica) + engine fix
+
+**Goal:** the roadmap's ★ "biggest single win" — a 9:16/1:1 canvas so Suno
+creators can post to TikTok/Reels/Shorts — plus the flagged live-browser
+validation of the aspect-box approach.
+
+**Changes (kinetica `Show.tsx` + `useRecorder.ts`; engine fix here):**
+1. **Frame control** in the Director's deck (Wide / 9:16 / 1:1), "V" key
+   cycles, choice remembered in localStorage. Implementation is the roadmap's
+   own sketch, confirmed working: wrap the stage in a **transformed box** — a
+   transform makes the ancestor the containing block for `fixed` descendants,
+   so every engine layer (words, weather, veils, meters, grade) letterboxes to
+   the frame with **zero engine changes**. Chrome stays outside the frame.
+2. **Cropped recording** — Region Capture (`CropTarget`/`cropTo`, Chromium):
+   recording a framed show exports a **real 9:16/1:1 video**, not a
+   letterboxed tab. Falls back silently to full capture elsewhere; the deck
+   hints "pick This Tab".
+3. **Engine bug caught during live validation** (fixed HERE, synced over):
+   `SurfaceEffects` now clamps `intensity` to 0..1 and `dt` to ≥ 0. A
+   section's live intensity dipping negative made `reach`/`maxR`/`grow`
+   negative → a negative `createRadialGradient` radius → `IndexSizeError`
+   thrown inside the rAF (reproduced + traced on the kinetica demo with an
+   instrumented canvas).
+
+**Verified:** Playwright + Chromium on the demo song — wide unchanged, 9:16
+and 1:1 letterbox with clean clipping at the frame edge, deck controls work,
+zero page errors after the clamp. Both repos `tsc` + build green; engine
+byte-identical after sync. **Follow-up:** portrait-orientation photo search
+for vertical shows (Pillar 2), export fps/resolution options.
+
+---
+
+## 2026-07-07 — Pillar 1 COMPLETE (handwrite + tvoff) · lint green again
+
+**Goal:** finish the roadmap's effects pillar and make `npm run lint`
+(`--max-warnings=0`) enforceable again — it had been red since before Phase 2.0.
+
+**Changes:**
+1. **✍️ Handwrite** (engine) — vow words write themselves on in script: a
+   cursive-stack span revealed left-to-right by a clip-path, with a glowing
+   pen-point riding the ink edge. Duration scales with word length. Vocab:
+   write/letter/vow/promise/sign/ink/pen/poem/diary/journal.
+2. **📺 TV-off** (engine) — final words switch off like an old CRT: flash on
+   from a scanline, hold, collapse to a bright line, then a phosphor dot that
+   dies. Vocab: end/goodbye/farewell/dead/death/die/dying + adiós ("gone" stays
+   dissolve's, "silence" stays whisper's). **That closes Pillar 1** — every
+   effect the roadmap named is shipped; only the stretch SVG stroke-font
+   handwrite variant remains an idea.
+   The registry-driven dream loop picked BOTH up with **zero script edits** —
+   the de-drift work paying for itself one commit later.
+3. **Lint green** (`eslint.config.mjs` + 4 real fixes):
+   - react-hooks v7's four **React-Compiler-preview rules** (set-state-in-
+     effect, refs, purity, immutability) are now off, with reasoning in the
+     config: they flag the engine's intentional "playhead → append to trail"
+     idiom 50+ times. rules-of-hooks + exhaustive-deps stay enforced.
+   - Real fixes: `pooledArt` added to the stage rAF effect deps (stable
+     useCallback), `performs` added to the karaoke-fallback effect deps (was a
+     genuine staleness bug — the rAF loop wouldn't stop if `performs` flipped
+     while open), `PRELOAD_RANGE` hoisted to module scope in Lightbox, and
+     `useTypedText`'s `onComplete` moved to a latest-ref (inline lambdas in
+     deps would restart the typing animation every parent render).
+   - `--fix` swept the unused eslint-disable directives.
+
+**Verified:** `npm run lint` exits 0 (first time in the Phase 2 era) · `tsc`
+clean · `next build` green · collision script still reports no dead vocabulary.
+
+---
+
 ## 2026-07-07 — Lexicon dream loop: registry-driven tables + shelf re-dream
 
 **Goal:** the dream loop's hand-copied tag tables had drifted **16 text effects

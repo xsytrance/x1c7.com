@@ -59,6 +59,8 @@ const REDACT_WORDS = new Set(["lie", "lies", "lied", "liar", "liars", "hidden", 
 const CHROMA_WORDS = new Set(["dream", "dreams", "dreaming", "dreamed", "dreamt", "nostalgia", "nostalgic", "analog", "vhs", "rewind", "retro", "vintage", "polaroid", "cassette", "flashback", "flashbacks", "déjà", "deja", "haze", "hazy", "blurry"]);  // → chromatic
 const LIQUID_WORDS = new Set(["tears", "cry", "cries", "crying", "cried", "weep", "weeping", "wept", "flood", "floods", "flooded", "soak", "soaked", "soaking", "spill", "spills", "spilled", "pour", "pours", "pouring", "overflow", "overflowing", "lágrimas", "llorar", "lloro"]);  // → liquid
 const BLEED_WORDS = new Set(["blood", "bloody", "bleed", "bleeds", "bleeding", "bled", "wound", "wounds", "wounded", "scar", "scars", "scarred", "vein", "veins", "bruise", "bruised", "bruises", "hurt", "hurts", "hurting", "pain", "pains", "ache", "aches", "aching", "sangre", "herida"]);  // → bleed
+const HANDWRITE_WORDS = new Set(["write", "writes", "writing", "written", "wrote", "letter", "letters", "vow", "vows", "promise", "promises", "promised", "sign", "signed", "signature", "ink", "pen", "poem", "poems", "poetry", "diary", "journal"]);  // → handwrite
+const TVOFF_WORDS = new Set(["end", "ends", "ended", "ending", "goodbye", "goodbyes", "farewell", "adios", "adiós", "dead", "death", "die", "dies", "died", "dying"]);  // → tvoff
 // normalize for lookup: lowercase, strip possessive ('s / ’s)
 const effectKey = (w: string) => w.toLowerCase().replace(/[’']s$/, "");
 
@@ -213,6 +215,8 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   chromatic: (w, a) => <WordChromatic word={w} airtime={a} />,
   liquid: (w, a) => <WordLiquid word={w} airtime={a} />,
   bleed: (w, a) => <WordBleed word={w} airtime={a} />,
+  handwrite: (w) => <WordHandwrite word={w} />,
+  tvoff: (w, a) => <WordTVOff word={w} airtime={a} />,
 };
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck }: {
@@ -1093,7 +1097,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, spawnRing, stems, stutterRuns]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, pooledArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -1122,8 +1126,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const types = !priorEffect && !fizzes && airtime >= 0.45 && TYPE_WORDS.has(ek);
   // Newer treatments auto-fire on their own vocabulary, at the lowest priority —
   // only when no signature effect above claimed the word (a per-word override
-  // still trumps this in resolveWordEffect). Gives freeze/melt/carve/shimmer/
-  // rise/fall/echo/tremor/redact/chromatic/liquid/bleed a life beyond the FX
+  // still trumps this in resolveWordEffect). Gives the whole post-signature
+  // family (freeze…tremor, redact…bleed, handwrite/tvoff) a life beyond the FX
   // panel. PHASE 4: this whole
   // family is the "Kinetica upgrade" pass, so it's gated behind pass >= 4 —
   // passes 1-3 stay exactly as they were before it.
@@ -1140,6 +1144,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       : CHROMA_WORDS.has(ek) ? "chromatic"
       : LIQUID_WORDS.has(ek) ? "liquid"
       : BLEED_WORDS.has(ek) ? "bleed"
+      : HANDWRITE_WORDS.has(ek) ? "handwrite"
+      : TVOFF_WORDS.has(ek) ? "tvoff"
       : null)
     : null;
   const glyph = !priorEffect && !fizzes && !types && !extraFx && shown && airtime >= 0.6
@@ -1219,7 +1225,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       to = setTimeout(() => { setTouchBurn(idx); navigator.vibrate?.(20); }, 430);
     }
     return () => { ro.disconnect(); if (to) clearTimeout(to); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+     
   }, [idx, dynamic]);
   // Residues center themselves the same way: measured negative margins.
   useLayoutEffect(() => {
@@ -1255,7 +1261,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           >
             {/* parallax shell — rides the device tilt / mouse via CSS vars */}
             <div className="h-full w-full" style={{ transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))", willChange: "transform" }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+              { }
               <motion.img
                 src={bgArt}
                 alt=""
@@ -2421,7 +2427,7 @@ function WordShimmer({ word, airtime }: { word: string; airtime: number }) {
         backgroundImage: "linear-gradient(100deg, #b8860b 0%, #ffe9a8 42%, #fffbe6 50%, #ffe9a8 58%, #b8860b 100%)",
         backgroundSize: "300% 100%",
         WebkitBackgroundClip: "text",
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+         
       } as any}
       initial={{ backgroundPositionX: "120%" }}
       animate={{ backgroundPositionX: ["120%", "-20%", "120%", "50%"], textShadow: ["0 0 0.2em rgba(255,220,140,0.0)", "0 0 0.35em rgba(255,220,140,0.55)", "0 0 0.2em rgba(255,220,140,0.2)", "0 0 0.25em rgba(255,220,140,0.35)"] }}
@@ -2625,6 +2631,58 @@ function WordBleed({ word, airtime }: { word: string; airtime: number }) {
           animate={{ scaleY: [0, 0.45 + n * 0.2, 1], opacity: [0, 0.85, 0.7] }}
           transition={{ duration: dur * 0.9, times: [0, 0.5, 1], delay: 0.3 + n * 0.16, ease: "easeIn" }} />
       ))}
+    </span>
+  );
+}
+
+/* ========== HANDWRITE ==========
+   Vow words write themselves on in script, revealed left-to-right behind a
+   glowing pen-point that rides the ink edge. Duration scales with length —
+   long promises take longer to sign. */
+function WordHandwrite({ word }: { word: string }) {
+  const dur = Math.min(1.6, Math.max(0.6, word.length * 0.09));
+  return (
+    <span className="relative inline-flex items-center justify-center"
+      style={{ fontFamily: '"Segoe Script", "Brush Script MT", "Snell Roundhand", cursive' }}>
+      <motion.span className="inline-block"
+        initial={{ clipPath: "inset(-20% 100% -20% 0)" }}
+        animate={{ clipPath: "inset(-20% -5% -20% 0)" }}
+        transition={{ duration: dur, ease: "linear" }}>
+        {word}
+      </motion.span>
+      <motion.span className="pointer-events-none absolute top-1/2 h-[0.08em] w-[0.08em] -translate-y-1/2 rounded-full" aria-hidden
+        style={{ background: "currentColor", boxShadow: "0 0 0.35em currentColor" }}
+        initial={{ left: "0%", opacity: 0.9 }}
+        animate={{ left: "102%", opacity: [0.9, 0.9, 0] }}
+        transition={{ duration: dur, ease: "linear", times: [0, 0.92, 1] }} />
+    </span>
+  );
+}
+
+/* ========== TV-OFF ==========
+   Final words switch off like an old CRT: flash on from a scanline, hold,
+   then collapse back to a bright line, then to a dot that dies out. */
+function WordTVOff({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.2, Math.max(1.1, airtime));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <motion.span className="inline-block"
+        initial={{ scaleY: 0.03, scaleX: 1.08, opacity: 0 }}
+        animate={{
+          scaleY: [0.03, 1, 1, 1, 0.02, 0.02],
+          scaleX: [1.08, 1, 1, 1, 1, 0.03],
+          opacity: [0.8, 1, 1, 1, 1, 0],
+          filter: ["brightness(3)", "brightness(1)", "brightness(1)", "brightness(1)", "brightness(4)", "brightness(6)"],
+        }}
+        transition={{ duration: dur, times: [0, 0.12, 0.5, 0.74, 0.84, 1], ease: "easeInOut" }}>
+        {word}
+      </motion.span>
+      {/* the dying phosphor dot */}
+      <motion.span className="pointer-events-none absolute h-[0.07em] w-[0.07em] rounded-full bg-white" aria-hidden
+        style={{ boxShadow: "0 0 0.3em rgba(255,255,255,0.9)" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 0, 0.95, 0] }}
+        transition={{ duration: dur, times: [0, 0.86, 0.93, 1] }} />
     </span>
   );
 }

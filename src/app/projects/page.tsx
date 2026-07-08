@@ -65,11 +65,15 @@ function useTypedText(
 ) {
   const [display, setDisplay] = useState("");
   const reduceMotion = useReducedMotion();
+  // Latest-ref: callers pass inline lambdas, and putting them in the effect's
+  // deps would restart the typing animation on every parent render.
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
 
   useEffect(() => {
     if (reduceMotion) {
       setDisplay(text);
-      onComplete?.();
+      onCompleteRef.current?.();
       return;
     }
     let i = 0;
@@ -79,7 +83,7 @@ function useTypedText(
         setDisplay(text.slice(0, i));
         if (i >= text.length) {
           clearInterval(interval);
-          onComplete?.();
+          onCompleteRef.current?.();
         }
       }, speed);
       return () => clearInterval(interval);

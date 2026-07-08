@@ -15,11 +15,14 @@
 > re-cloning the planet + a browser to shape the UX). **Beat fine-tune skipped** — the
 > beatClock is live-detected from bass onsets, so a manual BPM/offset would fight the design.
 >
-> **Phase 2.4 (vertical + export) — flagged decision:** the engine renders fullscreen via
-> `fixed inset-0` layers, so a 9:16/1:1 frame needs those layers containerized. Cleanest path
-> = wrap the show in a transform-contained aspect box (makes `fixed` descendants relative to
-> the wrapper, **no engine change**) — but it's a visual/layout change to validate live in a
-> browser before shipping. Phases 2.0/2.1/2.2 done. See [`BUILD-LOG.md`](./BUILD-LOG.md).
+> **Phase 2.4 (vertical) ✅ SHIPPED (2026-07-07):** the transform-contained aspect box
+> worked exactly as sketched — validated live (Playwright/Chromium on the demo): every
+> `fixed inset-0` engine layer letterboxes to the 9:16/1:1 frame, **no engine change**.
+> Frame control in the deck + "V" key; recording **crops to the frame** via Region
+> Capture so exports are real vertical/square video. Pillar 1 (text effects) is also
+> **complete** — all named effects shipped across 4 tranches. **Remaining 2.4 stretch:**
+> portrait-orientation photo search, export fps/resolution options.
+> Phases 2.0/2.1/2.2 done. See [`BUILD-LOG.md`](./BUILD-LOG.md).
 
 ## Context
 
@@ -98,8 +101,8 @@ in `registry.ts` + optional lexicon glyph. First close the drift, then add new o
 - ✅ **Gravity fall** — letters detach and drop. Tags: fall/collapse/gravity/down/sink. *(shipped as `fall`, tranche 2)*
 - ✅ **Gold-leaf shimmer** — luxe sweep across glyphs. Tags: gold/crown/rich/shine/luxury (pairs with Inferno/gold vibe). *(shipped as `shimmer`, tranche 2)*
 - ✅ **Bleed** — red ink weeps from the word. Tags: blood/bleed/wound/hurt/scar. *(tranche 3)*
-- **Handwrite** — script stroke draws on (SVG stroke-dashoffset). Tags: write/letter/vow/promise/sign.
-- **TV-off** — collapses to a white line then a dot. Tags: end/gone/dead/silence/off.
+- ✅ **Handwrite** — script writes on left-to-right behind a glowing pen-point (clip-path reveal in a cursive stack; the SVG stroke-font version stays a stretch idea). Tags: write/letter/vow/promise/sign. *(tranche 4)*
+- ✅ **TV-off** — flashes on from a scanline, holds, collapses to a bright line then a dying dot. Tags: end/goodbye/dead/death. *(tranche 4; "gone" stays dissolve's, "silence" stays whisper's — Pillar 1 COMPLETE)*
 
 Ship 3–4 per tranche; all respect perf-lite (CSS transforms/opacity, no per-frame blur on mobile).
 

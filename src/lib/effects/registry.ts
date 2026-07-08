@@ -40,7 +40,9 @@ export type TextEffect =
   // and vibe builder can pin any of these to a word.
   | "shimmer" | "rise" | "fall" | "echo" | "tremor"
   // Tranche 3 (Pillar 1): secrecy, analog memory, water, and blood.
-  | "redact" | "chromatic" | "liquid" | "bleed";
+  | "redact" | "chromatic" | "liquid" | "bleed"
+  // Tranche 4 (Pillar 1 complete): the written word, and the final cut to dark.
+  | "handwrite" | "tvoff";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -49,6 +51,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "slam", "wave", "neon", "pulse", "whisper", "fizz", "type",
   "shimmer", "rise", "fall", "echo", "tremor",
   "redact", "chromatic", "liquid", "bleed",
+  "handwrite", "tvoff",
 ];
 
 export interface EffectLego {
@@ -153,6 +156,8 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.chromatic", class: "textbound", mode: "chromatic", blurb: "RGB ghosts tear apart and lock back in — analog memory.", tags: ["dream", "nostalgia", "analog", "vhs", "rewind", "retro", "vintage", "polaroid", "cassette", "flashback"] },
   { id: "text.liquid", class: "textbound", mode: "liquid", blurb: "Water rises inside the letterforms.", tags: ["tears", "cry", "weep", "flood", "soak", "spill", "pour", "overflow", "lágrimas"] },
   { id: "text.bleed", class: "textbound", mode: "bleed", blurb: "Red ink weeps down from the word.", tags: ["blood", "bleed", "wound", "scar", "vein", "bruise", "hurt", "pain", "ache", "sangre"] },
+  { id: "text.handwrite", class: "textbound", mode: "handwrite", blurb: "The word writes itself on in script.", tags: ["write", "letter", "vow", "promise", "sign", "ink", "pen", "poem", "diary", "journal"] },
+  { id: "text.tvoff", class: "textbound", mode: "tvoff", blurb: "The word switches off like an old TV — line, dot, dark.", tags: ["end", "goodbye", "farewell", "dead", "death", "die", "dying"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────
@@ -226,6 +231,8 @@ const TEXT_MATCHERS: [RegExp, TextEffect][] = [
   [/\b(dream|dreams|nostalgia|analog|vhs|rewind|retro|vintage|polaroid|cassette)\b/, "chromatic"],
   [/\b(tears|cry|crying|weep|flood|spill|pour|overflow)\b/, "liquid"],
   [/\b(blood|bleed|bleeding|wound|scar|vein|bruise|ache)\b/, "bleed"],
+  [/\b(write|written|letter|vow|promise|signature|poem|diary|journal)\b/, "handwrite"],
+  [/\b(end|ending|goodbye|farewell|dead|death|die|dying)\b/, "tvoff"],
 ];
 /** A word-level text treatment, if the vocabulary calls for one. */
 export function textEffectFor(text: string): TextEffect | null {
