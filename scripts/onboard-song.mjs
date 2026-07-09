@@ -46,16 +46,34 @@ const toLrc = (sec) => {
 };
 
 async function llm(system, user, numPredict = 1200) {
+  // stream:true so headers arrive immediately — stream:false only responds
+  // after the FULL generation, and Node's fetch aborts at 300s on a slow or
+  // contended GPU ("fetch failed").
   const res = await fetch(`${OLLAMA}/api/chat`, {
     method: "POST", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      model: MODEL, stream: false, format: "json", think: false,
+      model: MODEL, stream: true, format: "json", think: false,
       options: { temperature: 0.4, num_ctx: 8192, num_predict: numPredict },
       messages: [{ role: "system", content: system }, { role: "user", content: user }],
     }),
   });
   if (!res.ok) throw new Error(`LLM ${res.status}: ${await res.text()}`);
-  const raw = (await res.json()).message?.content || "";
+  let raw = "";
+  const reader = res.body.getReader();
+  const dec = new TextDecoder();
+  let buf = "";
+  for (;;) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    buf += dec.decode(value, { stream: true });
+    let nl;
+    while ((nl = buf.indexOf("\n")) >= 0) {
+      const line = buf.slice(0, nl).trim();
+      buf = buf.slice(nl + 1);
+      if (!line) continue;
+      try { raw += JSON.parse(line).message?.content || ""; } catch { /* partial line */ }
+    }
+  }
   return JSON.parse(raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1));
 }
 

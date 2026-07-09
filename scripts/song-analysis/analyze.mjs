@@ -71,16 +71,35 @@ async function analyze(t) {
     `palette (4 hex colors capturing the vibe), sections (one per section name above, with emotion + intensity + colorHint hex), ` +
     `keywords (6-9 of the most emotionally-charged words, each with emotion + imageryPrompt).`;
 
+  // stream:true so headers arrive immediately — with stream:false the first
+  // byte lands only after the FULL generation, and Node's fetch gives up at
+  // 300s ("fetch failed") whenever the GPU is slow or contended.
   const res = await fetch(`${HOST}/api/chat`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ model: MODEL, stream: false, format: "json", think: false,
+    body: JSON.stringify({ model: MODEL, stream: true, format: "json", think: false,
       options: { temperature: 0.6, num_predict: 2200 },
       messages: [{ role: "system", content: sys }, { role: "user", content: user }] }),
   });
   if (!res.ok) throw new Error(`LLM ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const raw = data.message?.content || "";
+  let raw = "";
+  {
+    const reader = res.body.getReader();
+    const dec = new TextDecoder();
+    let buf = "";
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      buf += dec.decode(value, { stream: true });
+      let nl;
+      while ((nl = buf.indexOf("\n")) >= 0) {
+        const line = buf.slice(0, nl).trim();
+        buf = buf.slice(nl + 1);
+        if (!line) continue;
+        try { raw += JSON.parse(line).message?.content || ""; } catch { /* partial line */ }
+      }
+    }
+  }
   writeFileSync(args.out + ".raw.json", raw);
   const analysis = JSON.parse(raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1));
 
