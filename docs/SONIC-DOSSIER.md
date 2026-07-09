@@ -26,7 +26,7 @@ unverifiable renders as nothing — a partial profile still gets a dossier.
 
 ```bash
 # 0. pre-flight (once per session): free RAM/VRAM, warm the LLM
-curl -s localhost:11434/api/generate -d '{"model":"qwen2.5:14b","prompt":"ok","keep_alive":"2h","stream":false}'
+curl -s localhost:11434/api/generate -d '{"model":"qwen3.5:latest","prompt":"ok","keep_alive":"2h","stream":false}'
 
 # 1. THE ANALYZER — stems + Suno self-serve, publish dossier to R2
 node scripts/song-analysis/ultimate.mjs \
@@ -73,9 +73,11 @@ Phase 1 — **stems catch-up** (the missing ~10): extract zip → pipeline steps
 
 Phase 2 — **dossiers for the whole catalog**: for the ~44 tracks whose stems
 are already live, step 1 only (`--publish`). Their senses.json already exists
-in R2 but the profile needs the LLM passes — run overnight, they're ~5-8 min
-per song on the 14b model. GPU note: whisper + qwen contend with ComfyUI;
-pre-flight per session.
+in R2 but the profile needs the LLM passes — run overnight. Engine model is
+qwen3.5:latest (switched from qwen2.5:14b for speed, 2026-07-09); add
+--skip-vision in batch runs — palette extraction is pure code, only the
+2-sentence art description is lost, and it avoids a full model swap per song.
+GPU note: whisper + qwen contend with ComfyUI; pre-flight per session.
 
 Phase 3 — **BPM sweep of the covers**: after phase 1, rebuild manifest BPMs
 from R2 stems.json for every track that gained one, re-render + re-ship those

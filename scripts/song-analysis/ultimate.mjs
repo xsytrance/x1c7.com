@@ -20,7 +20,7 @@
 //     [--lyrics-file lyrics.txt] [--style "hint or file.txt"] \
 //     [--id slug] [--title "..."] [--artist xsytrance] \
 //     [--out scripts/song-analysis/profiles/<id>] \
-//     [--model qwen2.5:14b] [--vision-model llama3.2-vision] \
+//     [--model qwen3.5:latest] [--vision-model llama3.2-vision] \
 //     [--venv ~/whisper-venv] [--skip-vision] [--no-demucs] [--lang en] \
 //     [--publish]   (ship profile.json → R2 planets/<id>/ for the SONIC DOSSIER)
 //
@@ -81,7 +81,7 @@ const ARTIST = args.artist && args.artist !== true ? args.artist : "xsytrance";
 const ID = args.id && args.id !== true ? args.id
   : slugify((TITLE || basename(STEMS_IN || args.audio)).replace(/\.[a-z0-9]+$/, "").replace(/stems?$/i, ""));
 const OUT = resolve(args.out && args.out !== true ? args.out : join(HERE, "profiles", ID));
-const MODEL = args.model && args.model !== true ? args.model : "qwen2.5:14b";
+const MODEL = args.model && args.model !== true ? args.model : "qwen3.5:latest";
 const VISION = args["vision-model"] && args["vision-model"] !== true ? args["vision-model"] : "llama3.2-vision";
 const VENV = args.venv && args.venv !== true ? resolve(args.venv) : `${process.env.HOME}/whisper-venv`;
 mkdirSync(OUT, { recursive: true });

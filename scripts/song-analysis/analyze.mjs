@@ -14,7 +14,7 @@ const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1]]); return a;
 }, []));
 const HOST = args.host || "http://localhost:11434";
-const MODEL = args.model || "qwen2.5:14b"; // strong JSON, no "thinking" channel
+const MODEL = args.model || "qwen3.5:latest"; // faster than 14b; think:false in the request keeps its thinking channel off
 
 // Coerce "FF0000" / "#f00" / "red-ish" to #RRGGBB where possible.
 function hex(v) {
