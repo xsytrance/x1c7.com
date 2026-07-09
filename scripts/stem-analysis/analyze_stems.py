@@ -186,7 +186,7 @@ def main():
         "align": {"lag": round(lag, 3), "score": round(score, 2)},
         "beats": beats, "kicks": kicks, "snares": snares, "hats": hats,
         "cuts": cuts, "risers": risers,
-        "env": {k: env[k] for k in ("lead", "back", "drums", "perc", "bass", "synth", "other", "guitar", "keys") if k in env},
+        "env": {k: env[k] for k in ("lead", "back", "drums", "perc", "bass", "synth", "other", "guitar", "keys", "strings", "woodwinds") if k in env},
     }
     with open(args.out, "w") as f:
         json.dump(out, f, separators=(",", ":"))
