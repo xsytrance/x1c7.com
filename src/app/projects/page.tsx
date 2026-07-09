@@ -462,7 +462,7 @@ export default function ProjectsPage() {
             {/* Terminal top bar */}
             <div className="mb-4 flex items-center justify-between border-b border-[#7c3cff]/20 pb-3">
               <div className="flex items-center gap-2">
-                <span className="h-3 w-3 rounded-full bg-[#ff2bd6]/70" />
+                <span className="h-3 w-3 rounded-full bg-[#ff2440]/70" />
                 <span className="h-3 w-3 rounded-full bg-[#ff9b3d]/70" />
                 <span className="h-3 w-3 rounded-full bg-[#8dff4a]/70" />
               </div>
@@ -622,7 +622,7 @@ export default function ProjectsPage() {
             </Link>
             <Link
               href="/classified"
-              className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition hover:border-[#ff2bd6] hover:text-white"
+              className="rounded-full border border-white/15 px-5 py-3 text-sm font-black uppercase tracking-[0.2em] text-white/70 transition hover:border-[#ff2440] hover:text-white"
             >
               Try locked door
             </Link>

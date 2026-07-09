@@ -26,7 +26,7 @@ export default function Image() {
             position: "absolute",
             inset: 0,
             background:
-              "radial-gradient(circle at 12% 12%, rgba(255, 43, 214, 0.25), transparent 28%), radial-gradient(circle at 88% 18%, rgba(67, 247, 255, 0.22), transparent 24%), radial-gradient(circle at 50% 90%, rgba(141, 255, 74, 0.18), transparent 30%), linear-gradient(135deg, #05030b 0%, #120824 50%, #02070b 100%)",
+              "radial-gradient(circle at 12% 12%, rgba(255, 36, 64, 0.25), transparent 28%), radial-gradient(circle at 88% 18%, rgba(67, 247, 255, 0.22), transparent 24%), radial-gradient(circle at 50% 90%, rgba(141, 255, 74, 0.18), transparent 30%), linear-gradient(135deg, #05030b 0%, #120824 50%, #02070b 100%)",
           }}
         />
 
@@ -47,7 +47,7 @@ export default function Image() {
             width: 120,
             height: 120,
             borderRadius: 32,
-            background: "conic-gradient(from 180deg, #ff2bd6, #43f7ff, #8dff4a, #ff9b3d, #7c3cff, #ff2bd6)",
+            background: "conic-gradient(from 180deg, #ff2440, #43f7ff, #8dff4a, #ff9b3d, #7c3cff, #ff2440)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -133,7 +133,7 @@ export default function Image() {
             left: 0,
             right: 0,
             height: 4,
-            background: "linear-gradient(to right, #ff2bd6, #43f7ff, #8dff4a, #ff9b3d, #7c3cff)",
+            background: "linear-gradient(to right, #ff2440, #43f7ff, #8dff4a, #ff9b3d, #7c3cff)",
           }}
         />
       </div>

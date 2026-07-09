@@ -22,7 +22,7 @@ export interface GuideCategoryMeta {
 }
 
 export const guideCategoryMeta: Record<GuideCategory, GuideCategoryMeta> = {
-  music: { id: "music", label: "AI Music", color: "#ff2bd6" },
+  music: { id: "music", label: "AI Music", color: "#ff2440" },
   art: { id: "art", label: "AI Art", color: "#ff9b3d" },
   prompting: { id: "prompting", label: "Prompting", color: "#43f7ff" },
   agents: { id: "agents", label: "Agents", color: "#00ffa8" },

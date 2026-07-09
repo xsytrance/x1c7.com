@@ -11,7 +11,7 @@ interface ConnectionLine {
 }
 
 const connections: ConnectionLine[] = [
-  { x1: "50%", y1: "41%", x2: "50%", y2: "8%", color: "#ff2bd6" },
+  { x1: "50%", y1: "41%", x2: "50%", y2: "8%", color: "#ff2440" },
   { x1: "50%", y1: "41%", x2: "78%", y2: "23%", color: "#8dff4a" },
   { x1: "50%", y1: "41%", x2: "82%", y2: "56%", color: "#43f7ff" },
   { x1: "50%", y1: "41%", x2: "64%", y2: "78%", color: "#ff9b3d" },

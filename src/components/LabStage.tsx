@@ -37,7 +37,7 @@ export const LAB_MODES: { id: LabMode; label: string; blurb: string }[] = [
 
 const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
 const hash = (n: number) => (Math.imul(n ^ 0x9e3779b9, 2654435761) >>> 0);
-const HUES = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ffd84a", "#ff6a3c", "#b06aff"];
+const HUES = ["#ff2440", "#43f7ff", "#8dff4a", "#ffd84a", "#ff6a3c", "#b06aff"];
 
 /** Emits the active word index off the live playhead (shared by every core). */
 function useWordIndex(words: SyncedWord[], getTime: () => number) {

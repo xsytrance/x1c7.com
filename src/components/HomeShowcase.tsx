@@ -111,7 +111,7 @@ export function HomeShowcase() {
   const stats = [
     { value: projects.length, label: "Projects", color: "#43f7ff" },
     { value: projectCategories.length, label: "Divisions", color: "#7c3cff" },
-    { value: tracks.length, label: "Tracks", color: "#ff2bd6" },
+    { value: tracks.length, label: "Tracks", color: "#ff2440" },
     { value: agentsData.length, label: "Agents", color: "#00ffa8" },
     { value: artImages.length, label: "Art", color: "#ff9b3d" },
     { value: guides.length, label: "Protocols", color: "#8dff4a" },

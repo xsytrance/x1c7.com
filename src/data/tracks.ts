@@ -14,6 +14,7 @@ export type Track = {
   color: string;
   audioUrl: string;
   soundcloudUrl?: string;
+  sunoUrl?: string; // suno.com/song/<id> — scraped from the public profile
   cover?: string; // real cover-art URL (R2); falls back to gradient `art`
   featured?: boolean;
   theme?: ThemeOverride; // manual per-song site-theme override (from tracks.theme)
@@ -27,7 +28,7 @@ export type Track = {
 //   music/    all songs        covers/   album art        planets/  planet art
 const MUSIC_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
 
-const COLORS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
+const COLORS = ["#ff2440", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
 const GENRES = ["Electronic", "Synthwave", "Ambient", "Techno", "Industrial", "Pop", "House", "Dance"];
 const MOODS = ["Euphoric", "Defiant", "Dreamy", "Intense", "Confident", "Energetic", "Nostalgic", "Raw"];
 
@@ -207,6 +208,6 @@ export const tracks: Track[] = sources
 export const featuredTracks = tracks.filter((t) => t.featured);
 
 export const musicSources = [
-  { name: "SoundCloud", description: "The archive. Beats, experiments, and works in progress.", url: "https://soundcloud.com/xsytrance", color: "#ff9b3d" },
-  { name: "Suno", description: "AI-generated transmissions. Songs born from prompts.", url: "https://suno.com/@xsytrance", color: "#ff2bd6" },
+  { name: "SoundCloud", description: "The archive. Beats, experiments, and works in progress.", url: "https://soundcloud.com/rod-agenor", color: "#ff9b3d" },
+  { name: "Suno", description: "AI-generated transmissions. Songs born from prompts.", url: "https://suno.com/@xsytrance", color: "#ff2440" },
 ];

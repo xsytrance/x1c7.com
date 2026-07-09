@@ -357,7 +357,16 @@ async function renderOne(t) {
   const scaledH = Math.round(ARTW * meta.height / meta.width);
   let art, artTop;
   if (scaledH >= artAreaH) {
-    art = await sharp(src).resize(ARTW, artAreaH, { fit: "cover", position: "centre" }).toBuffer();
+    // portrait art anchors to the top so baked titles survive the crop;
+    // t.artTopCrop (fraction of height) skims off a baked header that would
+    // double-expose with our AGENOR PRESENTS band
+    if (meta.height > meta.width) {
+      const resized = await sharp(src).resize(ARTW, scaledH).toBuffer();
+      const top = Math.min(scaledH - artAreaH, Math.round((t.artTopCrop || 0) * scaledH));
+      art = await sharp(resized).extract({ left: 0, top, width: ARTW, height: artAreaH }).toBuffer();
+    } else {
+      art = await sharp(src).resize(ARTW, artAreaH, { fit: "cover", position: "centre" }).toBuffer();
+    }
     artTop = 0;
   } else {
     art = await sharp(src).resize(ARTW, scaledH).toBuffer();

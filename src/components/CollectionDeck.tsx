@@ -175,6 +175,11 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                   <span className="rounded-sm px-1.5 py-0.5 text-black" style={{ background: p.accent }}>{p.label}</span>
                   {t.mood ? <span className="truncate">{t.mood}</span> : null}
                   {canPerform(t) ? <span>🪐</span> : null}
+                  {t.sunoUrl ? (
+                    <a href={t.sunoUrl} target="_blank" rel="noopener noreferrer" className="ml-auto shrink-0 rounded-sm border border-white/20 px-2 py-0.5 text-white/60">
+                      SUNO ↗
+                    </a>
+                  ) : null}
                 </div>
                 <h3 className="mt-1 truncate font-display text-xl text-white">{t.title}</h3>
                 {isPreviewing && (

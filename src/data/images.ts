@@ -80,7 +80,7 @@ const COVER_ART: [string, string][] = [
   ["ora de la presion", "Oro De La Presión"],
 ];
 
-const ART_ACCENTS = ["#ff2bd6", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
+const ART_ACCENTS = ["#ff2440", "#43f7ff", "#8dff4a", "#ff9b3d", "#7c3cff", "#f5ff6b", "#00ffa8"];
 
 export const artImages: ImageAsset[] = COVER_ART.map(([file, title], i) => ({
   id: `cover-${i}`,
@@ -101,7 +101,7 @@ export const agentPortraits: ImageAsset[] = [
     title: "VG GOD",
     category: "agents",
     description: "The original creative engine. Dreams in pixels, thinks in dimensions.",
-    accent: "#ff2bd6",
+    accent: "#ff2440",
     aspect: "1/1",
   },
   {
@@ -110,7 +110,7 @@ export const agentPortraits: ImageAsset[] = [
     title: "VG GOD — Variant",
     category: "agents",
     description: "Alternate portrait of the creative daemon.",
-    accent: "#ff2bd6",
+    accent: "#ff2440",
     aspect: "1/1",
   },
   {
@@ -127,14 +127,14 @@ export const agentPortraits: ImageAsset[] = [
 // ── Project Thumbnails ───────────────────────────────────────────────────
 // When you have project screenshots:
 // export const projectThumbnails: ImageAsset[] = [
-//   { id: "project-vaib", src: r2("/projects/vaib-out.jpg"), alt: "vAIb out!", category: "projects", accent: "#ff2bd6" },
+//   { id: "project-vaib", src: r2("/projects/vaib-out.jpg"), alt: "vAIb out!", category: "projects", accent: "#ff2440" },
 //   ...
 // ];
 
 // ── Music Album Art ──────────────────────────────────────────────────────
 // When you have track-specific art:
 // export const albumArt: ImageAsset[] = [
-//   { id: "album-different-summer", src: r2("/music/different-this-summer.jpg"), alt: "Different This Summer", category: "music", accent: "#ff2bd6" },
+//   { id: "album-different-summer", src: r2("/music/different-this-summer.jpg"), alt: "Different This Summer", category: "music", accent: "#ff2440" },
 //   ...
 // ];
 

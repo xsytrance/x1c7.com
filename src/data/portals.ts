@@ -18,7 +18,7 @@ export const portals: Portal[] = [
     description: "Tracks, machines, visualizers, and the next loud experiment.",
     details: ["Suno transmissions", "PulseBox / Jukebox concept", "Future videos + visualizers"],
     cta: "Tune in",
-    color: "#ff2bd6",
+    color: "#ff2440",
     glyph: "♪",
     status: "forming",
   },

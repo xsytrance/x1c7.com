@@ -4,7 +4,7 @@
 
 /* Registered so the now-playing theme can *animate* between palettes — a plain
    custom property can't be transitioned, a typed @property color can. */
-@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #ff2bd6; }
+@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #ff2440; }
 @property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #43f7ff; }
 @property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #8dff4a; }
 @property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #05030b; }
@@ -13,7 +13,7 @@
   color-scheme: dark;
   --bg: #05030b;
   /* Now-playing theme (driven by ThemeEngine; defaults = house palette). */
-  --theme-primary: #ff2bd6;
+  --theme-primary: #ff2440;
   --theme-secondary: #43f7ff;
   --theme-accent: #8dff4a;
   --theme-bg: #05030b;
@@ -75,7 +75,7 @@ body::after {
   background-image:
     radial-gradient(circle, rgba(255,255,255,0.8) 0 1px, transparent 1.4px),
     radial-gradient(circle, rgba(67,247,255,0.8) 0 1px, transparent 1.5px),
-    radial-gradient(circle, rgba(255,43,214,0.8) 0 1px, transparent 1.5px);
+    radial-gradient(circle, rgba(255,36,64,0.8) 0 1px, transparent 1.5px);
   background-position: 0 0, 30px 60px, 90px 20px;
   background-size: 120px 120px, 180px 180px, 240px 240px;
   animation: drift 28s linear infinite;
@@ -288,7 +288,7 @@ body.cinematic-on { overflow: hidden; }
 }
 
 .portal-ring {
-  background: conic-gradient(from 180deg, #ff2bd6, #43f7ff, #8dff4a, #ff9b3d, #7c3cff, #ff2bd6);
+  background: conic-gradient(from 180deg, #ff2440, #43f7ff, #8dff4a, #ff9b3d, #7c3cff, #ff2440);
   filter: blur(0.2px);
 }
 

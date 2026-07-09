@@ -10,7 +10,7 @@ const config: Config = {
       },
       colors: {
         void: "#05030b",
-        plasma: "#ff2bd6",
+        plasma: "#ff2440",
         signal: "#43f7ff",
         venom: "#8dff4a",
         ember: "#ff9b3d",

@@ -84,12 +84,12 @@ const TAG_COLORS: Record<string, string> = {
   "phase-1": "#43f7ff",
   "phase-2": "#43f7ff",
   "phase-3": "#43f7ff",
-  music: "#ff2bd6",
+  music: "#ff2440",
   suno: "#ff9b3d",
   agents: "#7c3cff",
   systems: "#00ffa8",
   design: "#f5ff6b",
-  experiments: "#ff2bd6",
+  experiments: "#ff2440",
   failures: "#ff3b3b",
 };
 

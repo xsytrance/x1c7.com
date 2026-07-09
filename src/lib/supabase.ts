@@ -17,6 +17,7 @@ export interface TrackRow {
   color: string | null;
   cover: string | null;
   audio_url: string;
+  suno_url?: string | null;
   sort_order: number;
   featured: boolean;
   hidden: boolean;

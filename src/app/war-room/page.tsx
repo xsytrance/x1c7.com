@@ -120,7 +120,7 @@ function AgentStatus() {
   const statusColor: Record<string, string> = {
     active: "bg-venom shadow-[0_0_8px_rgba(141,255,74,0.6)]",
     standby: "bg-ember shadow-[0_0_8px_rgba(255,155,61,0.5)]",
-    offline: "bg-plasma/70 shadow-[0_0_8px_rgba(255,43,214,0.4)]",
+    offline: "bg-plasma/70 shadow-[0_0_8px_rgba(255,36,64,0.4)]",
   };
 
   return (

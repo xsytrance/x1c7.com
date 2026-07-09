@@ -30,12 +30,12 @@ const LANGUAGE_COLORS: Record<string, string> = {
   JavaScript: "#f5ff6b",
   Python: "#8dff4a",
   HTML: "#ff9b3d",
-  CSS: "#ff2bd6",
-  "C++": "#ff2bd6",
+  CSS: "#ff2440",
+  "C++": "#ff2440",
   Rust: "#ff9b3d",
   Go: "#43f7ff",
-  Java: "#ff2bd6",
-  Ruby: "#ff2bd6",
+  Java: "#ff2440",
+  Ruby: "#ff2440",
   Shell: "#8dff4a",
 };
 

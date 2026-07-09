@@ -75,8 +75,10 @@ async function analyze(t) {
   // node:http, not fetch — fetch's undici enforces a 300s headers timeout,
   // and on a long prompt Ollama's prompt eval can exceed that before the
   // first streamed byte arrives, even with stream:true.
+  // num_ctx must match onboard-song.mjs's llm() — a differing context size
+  // forces Ollama to restart the runner (a full model reload) between stages.
   const body = JSON.stringify({ model: MODEL, stream: true, format: "json", think: false,
-    options: { temperature: 0.6, num_predict: 2200 },
+    options: { temperature: 0.6, num_ctx: 8192, num_predict: 2200 },
     messages: [{ role: "system", content: sys }, { role: "user", content: user }] });
   const raw = await new Promise((resolve, reject) => {
     const req = http.request(`${HOST}/api/chat`, {
