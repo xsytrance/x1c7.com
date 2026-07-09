@@ -1,0 +1,273 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "fast-enough",
+  "generatedAt": "2026-07-09T18:05:32.236Z",
+  "measured": {
+    "bpm": 107.67,
+    "duration": 144.6
+  },
+  "identity": {
+    "title": "Fast Enough",
+    "titleAlternates": [],
+    "genre": "R&B/Hip-Hop Fusion",
+    "subGenres": [
+      902,
+      "New Jack Swing",
+      "Synth-pop"
+    ],
+    "mood": [
+      "Energetic",
+      "Playful",
+      "Nostalgic",
+      "Romantic"
+    ],
+    "styleSentence": "A high-energy late-90s futuristic R&B track at 108 BPM featuring bright FM synth leads, funky basslines, and bouncy New Jack swing drums that evoke a Sega Genesis aesthetic with crisp snares, arpeggiated game-like runs, and sparkling chord stabs.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Smooth confident male R&B lead with catchy harmonies, flirty swagger, and danceable hip-hop cadence."
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/fast-enough/cover.jpeg",
+    "palette": [
+      "#480808",
+      "#a80808",
+      "#580808",
+      "#080818",
+      "#980808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "A#",
+      "mode": "minor",
+      "confidence": 0.854
+    },
+    "boundaries": [
+      22.29,
+      25.26,
+      45.14,
+      47.28,
+      95.39,
+      102.45,
+      104.21,
+      107.18
+    ],
+    "brightness": 3715.8,
+    "dynamicsDb": 10.8
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - Immediate Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Verse 1]\nGreen light, go, we on a mission\nHeart in overdrive, no hesitation\nSpin through the night with you\nEverything feels brand new\n\nYou got me moving at the speed of you\nNo checkpoints, we don’t save and quit\nJust keep running through the city lights\nYou and me, yeah, we about to win\n\n[Pre-Hook]\nLoops and turns, we don’t hit the brakes\nSky so blue, no room for mistakes\nIf you with me, then we going all the way\nNo time to waste, it’s our day\n\n[Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Post-Hook]\nRing-ring, heart light\nLevel up all night\nSpring bounce, take flight\nYou and me, we feel right\n\n[Verse 2]\nFrom the block to the boardwalk lights\nWe shine together, everything’s right\nBounce on springs, we rise so high\nNothing can stop us, we touch the sky\n\nYou’re my boost, I’m your invincible\nGolden love, yeah, we collect it\nToo fast, too smooth, they can’t catch us\nYou know how we run it\n\n[Bridge - Dance Breakdown]\nDum da da da dum dum\nMove like that, don’t slow\nDum da da da dum dum\nBaby, let the whole night glow\n\nLevel up, level up\nWe go fast, fast enough\nLevel up, level up\nI could be the one you want\n\n[Final Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Outro]\nGotta go fast\nWith you\nNew level unlocked",
+    "lrc": "[Intro]\n[00:01.62] Oh, you're that somebody, I\n[00:04.84] could be that somebody\n[00:06.59] Can't do it like nobody,\n[00:09.02] girl,\n[00:09.26] we keep up,\n[00:09.96] don't stop now\n[00:10.90] Oh, you're that somebody,\n[00:13.50] I could be that somebody\n[00:15.26] Fast enough,\n[00:16.62] we can't get caught now,\n[00:17.88] girl,\n[00:18.14] we keep up,\n[00:18.74] don't stop now\n[Verse 1]\n[00:20.16] Green light,\n[00:21.32] dirty on the mission,\n[00:22.86] heart in overdrive,\n[00:24.04] no hesitation\n[00:25.08] Spinning through the net with you,\n[00:26.88] everything feels brand new\n[00:28.80] You got me moving like a theater,\n[00:30.50] you,\n[00:31.24] no checkpoints,\n[00:32.10] we don't save and quit\n[00:33.10] Just keep running through the city lights,\n[00:35.72] I mean,\n[00:36.18] yeah,\n[00:36.52] we about to win\n[Pre-Hook]\n[00:37.64] Two sensors,\n[00:38.94] get off the brakes,\n[00:40.04] sky so blue,\n[00:41.02] no room for mistake\n[00:41.92] If you with me,\n[00:43.20] then we going all the way,\n[00:44.32] no time to waste,\n[Hook]\n[00:45.64] it's our day\n[00:46.54] Oh,\n[00:46.78] you're that somebody,\n[00:47.86] I could be that somebody\n[00:50.78] Can't do it like nobody,\n[00:53.46] girl,\n[00:53.88] we keep up,\n[00:54.26] don't stop now\n[00:55.30] Oh, you're that somebody\n[00:56.38] Oh,\n[00:57.52] you're that somebody\n[00:58.73] Can't do it like nobody,\n[01:02.28] girl,\n[01:02.60] we keep up,\n[01:03.16] don't stop now\n[01:04.22] Green light,\n[01:05.60] dirty on the mission,\n[01:09.38] heart in overdrive,\n[01:09.38] no hesitation\n[01:09.42] Spinning through the net with you,\n[01:11.86] everything feels brand new\n[01:15.02] From the black to the boardwalk lights,\n[01:17.90] we shine together,\n[01:18.80] everything's bright\n[01:19.82] Down some springs,\n[01:20.00] we fly so high,\n[01:22.26] nothing can stop us,\n[01:23.34] we touch the sky\n[01:24.24] You're my boost,\n[01:25.44] I'm dark,\n[01:25.96] invincible,\n[01:26.88] go to love,\n[01:27.66] y'all be good\n[01:28.72] Too fast,\n[01:29.84] too smooth,\n[01:30.38] they can't catch us,\n[01:31.60] you know how we run it\n[Verse 2]\n[01:35.72] Move like that, don't slow\n[01:39.42] Baby,\n[01:40.92] let the whole night glow\n[Bridge]\n[01:44.54] We go fast\n[Final Hook]\n[01:48.30] I could be the one you want\n[01:50.94] Can't do it like nobody,\n[01:57.76] girl,\n[01:58.24] we keep up,\n[01:58.68] don't stop now\n[01:58.72] You got somebody\n[02:00.72] Ooh, ooh, ooh, ooh\n[02:02.60] I could be that somebody\n[02:04.44] Fast enough, you can't get caught now\n[02:06.40] Ready to keep up, don't stop now\n[02:08.60] Gotta\n[02:10.50] go fast\n[02:13.22] With you\n[02:13.66] New level\n[02:15.42] Unlocked\n"
+  },
+  "analysis": {
+    "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
+    "overallMood": "Energetic and Playful",
+    "themes": [
+      "Futuristic Romance",
+      "Gaming Nostalgia",
+      "High-Speed Pursuit",
+      "Unstoppable Love"
+    ],
+    "palette": [
+      "#FFD700",
+      "#4B0082",
+      "#C91E36",
+      "#FFEBCD"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Curious and Anticipatory",
+        "intensity": 0.85,
+        "colorHintHex": "#FFD700",
+        "start": 1.62
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Focused and Accelerating",
+        "intensity": 0.7,
+        "colorHintHex": "#4B0082",
+        "start": 20.16
+      },
+      {
+        "name": "Pre-Hook",
+        "emotion": "Urgent and Electric",
+        "intensity": 0.86,
+        "colorHintHex": "#C91E36",
+        "start": 37.64
+      },
+      {
+        "name": "Hook",
+        "emotion": "Triumphant and Euphoric",
+        "intensity": 0.76,
+        "colorHintHex": "#FFEBCD",
+        "start": 45.64
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Smooth and Confident",
+        "intensity": 0.3,
+        "colorHintHex": "#4B0082",
+        "start": 95.72
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Explosive Release",
+        "intensity": 0.28,
+        "colorHintHex": "#FFD700",
+        "start": 104.54
+      },
+      {
+        "name": "Final Hook",
+        "emotion": "Victorious and Joyful",
+        "intensity": 0.25,
+        "colorHintHex": "#FFEBCD",
+        "start": 108.3
+      }
+    ],
+    "keywords": [
+      {
+        "word": "fast",
+        "emotion": "Urgent Thrill",
+        "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+      },
+      {
+        "word": "boost",
+        "emotion": "Empowered Lift",
+        "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+      },
+      {
+        "word": "caught",
+        "emotion": "Playful Fearlessness",
+        "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
+      },
+      {
+        "word": "lights",
+        "emotion": "Vibrant Wonder",
+        "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
+      },
+      {
+        "word": "level",
+        "emotion": "Achievement Joy",
+        "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+      },
+      {
+        "word": "invincible",
+        "emotion": "Confident Power",
+        "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 42,
+      "mid": 45,
+      "close": 22
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 1.62,
+        "intensity": 0.85
+      },
+      {
+        "name": "Verse 1",
+        "start": 20.16,
+        "intensity": 0.7
+      },
+      {
+        "name": "Pre-Hook",
+        "start": 37.64,
+        "intensity": 0.86
+      },
+      {
+        "name": "Hook",
+        "start": 45.64,
+        "intensity": 0.76
+      },
+      {
+        "name": "Verse 2",
+        "start": 95.72,
+        "intensity": 0.3
+      },
+      {
+        "name": "Bridge",
+        "start": 104.54,
+        "intensity": 0.28
+      },
+      {
+        "name": "Final Hook",
+        "start": 108.3,
+        "intensity": 0.25
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 86
+      },
+      {
+        "name": "Verse 1",
+        "presence": 84
+      },
+      {
+        "name": "Pre-Hook",
+        "presence": 88
+      },
+      {
+        "name": "Hook",
+        "presence": 82
+      },
+      {
+        "name": "Verse 2",
+        "presence": 47
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Final Hook",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          22.22,
+          25.26
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "fast-enough-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

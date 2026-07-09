@@ -1,0 +1,130 @@
+[
+  {
+    "id": "honey-n-venom-rude-wine-riddim",
+    "planet": {
+      "analysis": {
+        "summary": "This high-octane Dancehall anthem juxtaposes seductive allure with dangerous toxicity, depicting a lover who is as sweet as honey but sharp and lethal like venom. The track captures the gritty, sweaty energy of a peak-time club night where physical desire clashes with emotional peril.",
+        "overallMood": "Aggressively Seductive",
+        "themes": [
+          "Toxic Romance",
+          "Club Energy",
+          "Sensory Overload",
+          "Dangerous Attraction",
+          "Raw Desire",
+          "Sound System Culture"
+        ],
+        "palette": [
+          "#FFD700",
+          "#2B1A16",
+          "#8E4539",
+          "#C5A065"
+        ],
+        "sections": [
+          {
+            "sectionName": "Intro",
+            "emotion": "Mysterious Anticipation",
+            "intensity": 0.7,
+            "colorHintHex": "#FFD700",
+            "start": 1.55
+          },
+          {
+            "sectionName": "Drop",
+            "emotion": "Explosive Release",
+            "intensity": 1,
+            "colorHintHex": "#C5A065",
+            "start": 12.36
+          },
+          {
+            "sectionName": "Chorus",
+            "emotion": "Feverish Desire",
+            "intensity": 0.9,
+            "colorHintHex": "#FF4C23",
+            "start": 25.28
+          },
+          {
+            "sectionName": "Post-Chorus",
+            "emotion": "Hypnotic Repetition",
+            "intensity": 0.85,
+            "colorHintHex": "#D1BFA9",
+            "start": 42.67
+          },
+          {
+            "sectionName": "Verse 1",
+            "emotion": "Tense Observation",
+            "intensity": 0.75,
+            "colorHintHex": "#2B1A16",
+            "start": 51.4
+          },
+          {
+            "sectionName": "Pre-Chorus",
+            "emotion": "Building Tension",
+            "intensity": 0.8,
+            "colorHintHex": "#FFD700",
+            "start": 85.16
+          },
+          {
+            "sectionName": "Chorus",
+            "emotion": "Chaotic Passion",
+            "intensity": 1,
+            "colorHintHex": "#C5A065",
+            "start": 90.02
+          },
+          {
+            "sectionName": "Dancehall Breakdown",
+            "emotion": "Unrestrained Chaos",
+            "intensity": 0.92,
+            "colorHintHex": "#FF4C23",
+            "start": 147.42
+          },
+          {
+            "sectionName": "Verse 2",
+            "emotion": "Intoxicated Confusion",
+            "intensity": 0.85,
+            "colorHintHex": "#D1BFA9",
+            "start": 160.2
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Venom",
+            "emotion": "Sharp Danger",
+            "imageryPrompt": "A microscopic view of a translucent green toxin dripping onto hot asphalt, creating jagged cracks in the ground."
+          },
+          {
+            "word": "Honey",
+            "emotion": "Cloying Sweetness",
+            "imageryPrompt": "Golden viscous syrup slowly cascading over dark chocolate stones, catching fire from a low flame below."
+          },
+          {
+            "word": "Strobe",
+            "emotion": "Disorientating Flash",
+            "imageryPrompt": "Blinding white geometric light beams cutting through thick club smoke, freezing dancing figures in static poses."
+          },
+          {
+            "word": "Wine",
+            "emotion": "Intoxicating Flow",
+            "imageryPrompt": "Deep red liquid swirling violently inside a cracked glass bottle amidst scattered grape skins and dust motes."
+          },
+          {
+            "word": "Burn",
+            "emotion": "Overheated Pain",
+            "imageryPrompt": "Skin turning bright orange against the backdrop of an exploding fireball, heat waves distorting the air above a club floor."
+          },
+          {
+            "word": "Grind",
+            "emotion": "Friction Heat",
+            "imageryPrompt": "Two dark silhouettes pressed tightly together on a wet dancefloor, steam rising from their bodies in rhythmic pulses."
+          },
+          {
+            "word": "Poison",
+            "emotion": "Fatal Allure",
+            "imageryPrompt": "A beautiful butterfly with wings stained black and blue, landing softly on a wilted red rose petal."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

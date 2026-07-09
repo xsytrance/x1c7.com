@@ -1,0 +1,116 @@
+[
+  {
+    "id": "ceasefire-in-the-static-data-storm-version",
+    "planet": {
+      "analysis": {
+        "summary": "A darkly atmospheric Gothic R&B track that explores the psychological weight of digital overload and information anxiety.",
+        "overallMood": "melancholic",
+        "themes": [
+          "Digital Detox",
+          "Information Overload",
+          "Identity Crisis",
+          "Anxiety vs. Peace"
+        ],
+        "palette": [
+          "#1a0b0e",
+          "#2c3e50",
+          "#8c7ae6",
+          "#d4af37"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "ominous anticipation",
+            "intensity": 0.3,
+            "colorHintHex": "#1a0b0e",
+            "start": 10.59
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "vulnerable fatigue",
+            "intensity": 0.65,
+            "colorHintHex": "#2c3e50",
+            "start": 26.56
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "dissolving identity",
+            "intensity": 0.8,
+            "colorHintHex": "#4a5f7a",
+            "start": 49.5
+          },
+          {
+            "name": "Chorus",
+            "emotion": "haunting hope amidst chaos",
+            "intensity": 0.9,
+            "colorHintHex": "#d4af37",
+            "start": 60
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "frustrated resignation",
+            "intensity": 0.85,
+            "colorHintHex": "#1a0b0e",
+            "start": 124.9
+          },
+          {
+            "name": "Rap Verse / Spoken Word",
+            "emotion": "urgent realization",
+            "intensity": 0.95,
+            "colorHintHex": "#2c3e50",
+            "start": 162.46
+          },
+          {
+            "name": "Pre-Chorus (Repeat)",
+            "emotion": "uncertain longing",
+            "intensity": 0.75,
+            "colorHintHex": "#4a5f7a",
+            "start": 209.48
+          },
+          {
+            "name": "Chorus (Big)",
+            "emotion": "resilient persistence",
+            "intensity": 1,
+            "colorHintHex": "#8c7ae6",
+            "start": 218.06
+          }
+        ],
+        "keywords": [
+          {
+            "word": "static",
+            "emotion": "anxious overwhelm",
+            "imageryPrompt": "grainy black and white television snow filling a dimly lit bedroom, digital noise overlaying shadows of furniture"
+          },
+          {
+            "word": "ceasefire",
+            "emotion": "longing for peace",
+            "imageryPrompt": "a single beam of soft moonlight piercing through heavy storm clouds to illuminate a quiet patch of floor in a chaotic room"
+          },
+          {
+            "word": "violence",
+            "emotion": "internal turmoil",
+            "imageryPrompt": "shattered glass reflecting distorted faces on the ceiling, sharp red light pulses cutting through darkness like warning signs"
+          },
+          {
+            "word": "overloaded",
+            "emotion": "sensory exhaustion",
+            "imageryPrompt": "a person standing in a room where every object is vibrating with invisible waves of blue and green digital data streams"
+          },
+          {
+            "word": "ghosts",
+            "emotion": "haunting presence",
+            "imageryPrompt": "translucent silhouettes of former friends or strangers flickering on the back of a smartphone screen within a dark living room"
+          },
+          {
+            "word": "code",
+            "emotion": "searching for pattern",
+            "imageryPrompt": "fragments of glowing binary numbers and broken geometric lines floating in an empty void, slowly assembling into a human shape"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

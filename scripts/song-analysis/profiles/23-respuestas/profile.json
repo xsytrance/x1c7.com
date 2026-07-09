@@ -1,0 +1,299 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "23-respuestas",
+  "generatedAt": "2026-07-09T17:57:32.589Z",
+  "measured": {
+    "bpm": 172.27,
+    "duration": 284.28
+  },
+  "identity": {
+    "styleSentence": "High-tempo urban Latin pop track featuring a driving reggaeton dembow rhythm at 172 BPM with crisp electronic drums, deep synth basslines, atmospheric string swells, and bright melodic guitar accents creating an empowering yet melancholic vibe.",
+    "energy": "high",
+    "vocalStyle": "Smooth female lead vocals delivering emotional storytelling with clear diction in the verses, transitioning to a powerful, belted delivery on the chorus supported by layered gang vocal ad-libs for intensity.",
+    "language": "Spanish",
+    "title": "23 Respuestas",
+    "titleAlternates": [],
+    "genre": "Reggaeton",
+    "subGenres": [
+      "Urbano Latino",
+      "Latin Pop"
+    ],
+    "mood": "Sensual, Melancholic, Empowered, Atmospheric"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/23-respuestas/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#080818",
+      "#181828",
+      "#081818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "G",
+      "mode": "major",
+      "confidence": 0.386
+    },
+    "boundaries": [
+      29.07,
+      78.48,
+      83.59,
+      144.15,
+      172.01,
+      239.54,
+      243.35,
+      278.64
+    ],
+    "brightness": 2818.5,
+    "dynamicsDb": 14.7
+  },
+  "lyrics": {
+    "official": true,
+    "language": "spanish",
+    "text": "[Title]\n23 Respuestas\n\n[Intro - Female Voice Note]\nTú hiciste veintitrés preguntas\nyo guardé veintitrés respuestas\ny ninguna dice vuelve\n\n[Intro Ad-libs]\nEh-eh\nNo vuelvo\nNo, no\n\n[Verse 1 - Female Lead, Smooth]\nMe preguntaste si te extraño\nsí, cuando cae la noche\ncuando suena aquel ringtone\ny me tiembla hasta el nombre\nPero extrañar no es regresar\ny llorar no es perder\nyo también tuve que romperme\npa’ aprender a escoger\n\nDices que quieres hablar\npero hablar no repara\nsi después de prometer\nse te olvida mi cara\nYo no niego lo bonito\nyo no borro lo real\npero amor que vive herido\nno se debe alimentar\n\n[Pre-Chorus - Female Lead]\nTe contesté con silencio\nporque el ruido me mataba\ntú buscando una puerta\nyo cerrando la ventana\nY aunque duela, bebé\nte lo digo de frente\nsi preguntas si te amo\neso no significa vuelve\n\n[Chorus - Female Lead, Big Hook]\nTengo veintitrés respuestas\ny ninguna dice vuelve\nte quise con toda el alma\npero el alma también se defiende\nTengo veintitrés respuestas\npa’ la herida que no duerme\nsi me preguntas si te extraño\nsí, pero eso no es suficiente\n\n[Post-Chorus - Gang Vocals]\nNo-no-no vuelvo\nno-no-no vuelvo\nTe pienso, te siento\npero no vuelvo\nNo-no-no vuelvo\nno-no-no vuelvo\nFuiste mi cielo\npero no mi puerto\n\n[Verse 2 - Female Lead, Melodic Rap]\nPreguntaste si hubo alguien\nque llegó después de ti\nllegó la paz a mi cuarto\ny me quedé por ahí\nPreguntaste si tus besos\ntodavía viven aquí\nsí, pero cambié la llave\ny ya no entran porque sí\n\nNo te odio, no te miento\nno te escribo pa’ pelear\nyo también fui la culpable\nde quedarme de más\nTú querías mi perdón\nsin cambiar la historia entera\nyo quería un amor grande\nno una guerra pasajera\n\n[Male Ghost Vocal - Background]\nContéstame\nno te vayas así\ndime si queda algo\nalgo de mí\n\n[Female Reply - Spoken-Sung]\nQueda mucho\npero no todo lo que queda\nse debe salvar\n\n[Pre-Chorus 2 - Female Lead]\nTe contesté con silencio\nporque el ruido me mataba\ntú buscando una puerta\nyo cerrando la ventana\nY aunque duela, bebé\nte lo digo de frente\nsi preguntas si te amo\neso no significa vuelve\n\n[Chorus - Female Lead, Bigger]\nTengo veintitrés respuestas\ny ninguna dice vuelve\nte quise con toda el alma\npero el alma también se defiende\nTengo veintitrés respuestas\npa’ la herida que no duerme\nsi me preguntas si te extraño\nsí, pero eso no es suficiente\n\n[Bridge - Las 23 Respuestas, Rhythmic Build]\nUna: sí te quise\nDos: no fue juego\nTres: todavía duele\nCuatro: ya no ruego\nCinco: fui tu casa\nSeis: fui tu suerte\nSiete: tú me viste\nOcho: no supiste verme\n\nNueve: hubo fuego\nDiez: hubo frío\nOnce: me perdí\nDoce: volví conmigo\nTrece: no te odio\nCatorce: no te espero\nQuince: si me llamas\nDieciséis: no contesto\n\nDiecisiete: guardo fotos\nDieciocho: sin mirarlas\nDiecinueve: tus promesas\nVeinte: ya no hablan\nVeintiuna: te perdono\nVeintidós: me suelto\nVeintitrés: si me amas\ndéjame lejos\n\n[Drop - Dembow Returns]\nDéjame lejos\ndéjame en paz\nlo que fue nuestro\nno vuelve pa’ atrás\nDéjame lejos\ndéjame sanar\nsi tú me quisiste\naprende a soltar\n\n[Final Chorus - Full Harmonies]\nTengo veintitrés respuestas\ny ninguna dice vuelve\nte quise con toda el alma\npero el alma también se defiende\nTengo veintitrés respuestas\npa’ la herida que no duerme\nsi me preguntas si te extraño\nsí, pero eso no es suficiente\n\n[Outro - Female Voice Note]\nNo todas las respuestas\nson para volver\na veces son para cerrar\nNo vuelvo\npero te deseo paz",
+    "lrc": "[Intro]\n[00:07.03] Tu hiciste veinte y treinta de preguntas\n[00:10.02] Yo guardé veintitrés respuestas\n[00:12.94] Y ninguna y se vuelve No vuelvo\n[00:20.74] No, no No, no, no\n[Verse 1]\n[00:27.44] Me preguntaste si te extraño Soy cuando cae la noche\n[00:30.82] Cuando suena aquel ringtone Y me tiembla hasta el nombre\n[00:35.16] Pero extrañando es regresar Y llorar no es perder\n[00:38.66] Yo también tuve que romperme Tu aprender es correr\n[00:44.97] Dice que quieres hablar Pero ahora él no repara\n[00:48.28] Si después de prometer Se te olvida mi cara\n[00:51.52] Yo no niego lo bonito Yo no borro lo real\n[00:54.34] Pero amor que vive herido No se debe\n[00:56.56] alimentar Te contesté con silencio\n[01:00.92] Porque el ruido me mataba Yo buscando una puerta\n[01:06.60] Yo cerrando la ventana\n[01:10.06] Y aunque duela, bebé\n[Pre-Chorus]\n[01:11.64] Te lo digo de frente Si preguntas si te amo\n[01:17.76] Eso no significa volver Tengo veintitrés respuestas\n[01:23.90] Y ninguna y se vuelve No vuelvo\n[01:26.54] Te quise con toda el alma Pero el alma también se defiende\n[01:32.20] Tengo veintitrés respuestas Pa' la herida que no duerme\n[01:37.96] Si me preguntas si te extraño Pero eso no es suficiente\n[01:43.34] No, no, no, no No vuelvo\n[01:46.84] No, no, no, no Te pienso, te siento\n[01:49.46] Pero no vuelvo No, no, no, no\n[01:51.78] No vuelvo No, no, no, no\n[01:53.20] No vuelvo No, no, no, no, no.\n[01:54.12] No vuelvo Fui de mi cielo, pero no mi pueblo.\n[Chorus]\n[01:57.44] Pregúntate si hubo alguien que llegó después de ti\n[02:00.10] Llegó la paz a mi cuarto y me quedé por ahí\n[02:02.82] Pregúntate si tus besos todavía viven aquí\n[02:05.72] Sí,\n[02:06.14] pero cambié la llave y ya no entran porque sí\n[02:08.72] No te odio,\n[02:09.54] no te miento,\n[02:10.24] no te escribo pa' pelear\n[02:11.56] Yo también fui la culpable de quedarme de más\n[02:14.42] Te quería mi perdón sin cambiar la historia entera\n[02:17.26] Yo quería un amor grande en una guerra pasajera\n[Post-Chorus]\n[02:20.90] Contéstame, no te vayas así\n[02:22.64] Dime si queda algo, algo de mí\n[02:25.76] Queda mucho,\n[02:26.86] pero no todo lo que queda se debe sacar\n[02:30.12] Te contesté con silencio porque el ruido me mataba\n[02:35.36] Tú buscando una puerta, yo cerrando la ventana\n[02:41.48] Y aunque duela, bebé, te lo digo de frente\n[02:47.05] Si preguntas si te amo, eso no significa vuelve\n[Verse 2]\n[02:52.84] Tengo veintitrés respuestas\n[02:55.76] Y ninguna y se vuelve\n[02:58.12] Te quise con toda el alma\n[03:00.80] Pero el alma también se defiende\n[03:03.74] Tengo veintitrés respuestas\n[03:06.66] Pa' la herida que no duerme\n[03:09.40] Si me preguntas si te extraño\n[03:12.28] Sí, pero eso no es suficiente\n[03:16.10] Si te quise\n[03:17.46] Dos, no fue juego\n[03:18.82] Tres, todavía duele\n[03:20.60] Cuatro, ya no ruego\n[03:21.74] Cinco, fui tu casa\n[03:23.06] Seis, fui tu suerte\n[03:24.64] Siete, tú me viste\n[03:26.04] Ocho, no supiste verme\n[03:28.91] Hubo fuego\n[03:29.54] Diez, hubo frío\n[03:30.88] No perdí\n[03:31.66] Lo perdí\n[03:32.40] Te olvidé conmigo\n[03:33.74] No te odio\n[03:34.62] No te espero\n[03:35.26] Quince, si me llamas\n[03:36.92] Dieciséis, no contesto\n[03:39.90] Guardo fotos sin mirarla\n[03:41.68] Promesa, ya no hablas\n[03:43.18] Me perdono\n[03:43.82] Veintidós, me suelto\n[03:45.30] Veintitrés, déjame lejos\n[03:48.30] Déjame lejos, déjame en paz\n[Pre-Chorus 2]\n[03:50.80] Lo que fue nuestro no vuelve pa' atrás\n[03:53.68] Déjame lejos, déjame sanar\n[03:56.58] Si tú me quisiste, aprende a soltar\n[04:01.42] Tengo veintitrés respuestas\n[04:03.90] Y ningún nariz se vuelve\n[04:06.68] Te quise con todo el alma\n[04:09.38] Pero el alma también se defiende\n[04:12.22] Tengo veintitrés respuestas\n[Chorus]\n[04:15.22] Tú a la herida que no duerme\n[04:17.94] Si me preguntas si te extraño\n[04:20.90] Sí, pero eso no es suficiente\n[04:23.68] No todas las respuestas\n[04:26.26] Son para volver\n[04:28.24] A\n[04:29.45] veces son para cerrar\n[04:31.26] No vuelvo\n[04:32.26] Pero te deseo paz\n"
+  },
+  "analysis": {
+    "summary": "A sensual yet melancholic reggaeton anthem where a female protagonist answers twenty-three questions from an ex-lover by firmly declaring her emotional closure and refusal to return.",
+    "overallMood": "Sensual, Melancholic, Empowered, Atmospheric",
+    "themes": [
+      "Emotional Closure",
+      "Self-Defense of the Soul",
+      "Silent Healing",
+      "Reclaiming Autonomy",
+      "Bittersweet Memory"
+    ],
+    "palette": [
+      "#2C3E50",
+      "#8DA9A6",
+      "#D4AF37",
+      "#1F2D3A"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Intimate reflection with dark nostalgia, intimate phone-call texture.",
+        "intensity": 0.81,
+        "colorHint": "#2c3e50",
+        "imageryPrompt": "A dimly lit room at night illuminated only by the blue glow of an old smartphone screen reflecting in eyes filled with quiet sadness.",
+        "start": 7.03
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Melancholic realization and gentle firmness, smooth melodic flow.",
+        "intensity": 0.78,
+        "colorHint": "#8da9a6",
+        "imageryPrompt": "Raindrops sliding down a window pane while shadows of two figures fade apart on the glass.",
+        "start": 27.44
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building emotional tension and defensive resolve.",
+        "intensity": 0.86,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A golden key turning in a lock while heavy storm clouds gather outside the window.",
+        "start": 71.64
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Triumphant closure and wide atmospheric release.",
+        "intensity": 0.61,
+        "colorHint": "#1f2d3a",
+        "imageryPrompt": "A vast open ocean at twilight where a lone boat sails away leaving no wake behind.",
+        "start": 117.44
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Sensual lingering pain and rhythmic repetition.",
+        "intensity": 0.47,
+        "colorHint": "#2c3e50",
+        "imageryPrompt": "Close up of a hand gently closing a heavy wooden door with sound waves rippling through the air.",
+        "start": 140.9
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Narrative storytelling and deep emotional counting.",
+        "intensity": 0.22,
+        "colorHint": "#8da9a6",
+        "imageryPrompt": "An open book with handwritten numbers fading into smoke that forms the shape of a heart breaking.",
+        "start": 172.84
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Finalizing emotional boundaries and healing.",
+        "intensity": 0.26,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A sunrise breaking through thick storm clouds revealing a path of blooming wildflowers.",
+        "start": 230.8
+      }
+    ],
+    "keywords": [
+      {
+        "word": "respuestas",
+        "emotion": "Defiant clarity and structured closure.",
+        "imageryPrompt": "Dozens of glowing neon numbers floating in the air like fireflies that turn to ash upon touch."
+      },
+      {
+        "word": "silencio",
+        "emotion": "Heavy, protective quietness after noise.",
+        "imageryPrompt": "A thick velvet curtain falling silently over a chaotic city street scene."
+      },
+      {
+        "word": "herida",
+        "emotion": "Raw vulnerability and persistent pain.",
+        "imageryPrompt": "A scar glowing softly on skin that never fully fades but stops bleeding."
+      },
+      {
+        "word": "cielo/pueblo",
+        "emotion": "Displacement from safety to community belonging issues.",
+        "imageryPrompt": "An angel standing in a cloud while looking down at a bustling village below refusing entry."
+      },
+      {
+        "word": "llave",
+        "emotion": "Irreversible change and lost access.",
+        "imagedPrompt": "A brass key dropped on the floor of an empty room with dust motes dancing in shafts of light."
+      },
+      {
+        "word": "paz",
+        "emotion": "Tranquil acceptance after turmoil.",
+        "imageryPrompt": "Soft white doves flying over a calm lake reflecting moonlight and starry skies."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 29,
+      "mid": 29,
+      "close": 12
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 7.03,
+        "intensity": 0.81
+      },
+      {
+        "name": "Verse 1",
+        "start": 27.44,
+        "intensity": 0.78
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 71.64,
+        "intensity": 0.86
+      },
+      {
+        "name": "Chorus",
+        "start": 117.44,
+        "intensity": 0.61
+      },
+      {
+        "name": "Post-Chorus",
+        "start": 140.9,
+        "intensity": 0.47
+      },
+      {
+        "name": "Verse 2",
+        "start": 172.84,
+        "intensity": 0.22
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "start": 230.8,
+        "intensity": 0.26
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 74
+      },
+      {
+        "name": "Verse 1",
+        "presence": 82
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 85
+      },
+      {
+        "name": "Chorus",
+        "presence": 87
+      },
+      {
+        "name": "Post-Chorus",
+        "presence": 84
+      },
+      {
+        "name": "Verse 2",
+        "presence": 9
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          8.86
+        ],
+        [
+          9.9,
+          29.26
+        ],
+        [
+          39.58,
+          40.7
+        ],
+        [
+          45.42,
+          46.38
+        ],
+        [
+          58.86,
+          60.7
+        ],
+        [
+          71.02,
+          72.06
+        ],
+        [
+          78.54,
+          80.7
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "strings"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "23-respuestas-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

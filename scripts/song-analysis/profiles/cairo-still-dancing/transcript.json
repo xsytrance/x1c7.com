@@ -1,0 +1,3028 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 21.44,
+      "end": 22.84,
+      "text": "we",
+      "words": [
+        {
+          "t": 21.44,
+          "text": "we"
+        }
+      ]
+    },
+    {
+      "start": 23.84,
+      "end": 26.84,
+      "text": "rise we stay",
+      "words": [
+        {
+          "t": 23.84,
+          "text": "rise"
+        },
+        {
+          "t": 24.24,
+          "text": "we"
+        },
+        {
+          "t": 26.5,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 31.04,
+      "end": 34.38,
+      "text": "they only see the sand in the story they only",
+      "words": [
+        {
+          "t": 31.04,
+          "text": "they"
+        },
+        {
+          "t": 31.808,
+          "text": "only"
+        },
+        {
+          "t": 32.04,
+          "text": "see"
+        },
+        {
+          "t": 32.26,
+          "text": "the"
+        },
+        {
+          "t": 32.4,
+          "text": "sand"
+        },
+        {
+          "t": 32.62,
+          "text": "in"
+        },
+        {
+          "t": 32.88,
+          "text": "the"
+        },
+        {
+          "t": 32.96,
+          "text": "story"
+        },
+        {
+          "t": 33.26,
+          "text": "they"
+        },
+        {
+          "t": 34.16,
+          "text": "only"
+        }
+      ]
+    },
+    {
+      "start": 34.38,
+      "end": 36.62,
+      "text": "see the scone in the frame but we got city lights",
+      "words": [
+        {
+          "t": 34.38,
+          "text": "see"
+        },
+        {
+          "t": 34.6,
+          "text": "the"
+        },
+        {
+          "t": 34.7,
+          "text": "scone"
+        },
+        {
+          "t": 34.96,
+          "text": "in"
+        },
+        {
+          "t": 35.18,
+          "text": "the"
+        },
+        {
+          "t": 35.26,
+          "text": "frame"
+        },
+        {
+          "t": 35.52,
+          "text": "but"
+        },
+        {
+          "t": 35.86,
+          "text": "we"
+        },
+        {
+          "t": 36.0,
+          "text": "got"
+        },
+        {
+          "t": 36.14,
+          "text": "city"
+        },
+        {
+          "t": 36.38,
+          "text": "lights"
+        }
+      ]
+    },
+    {
+      "start": 36.62,
+      "end": 39.22,
+      "text": "street drums late nights millions of hearts with",
+      "words": [
+        {
+          "t": 36.62,
+          "text": "street"
+        },
+        {
+          "t": 36.9,
+          "text": "drums"
+        },
+        {
+          "t": 37.22,
+          "text": "late"
+        },
+        {
+          "t": 37.48,
+          "text": "nights"
+        },
+        {
+          "t": 37.86,
+          "text": "millions"
+        },
+        {
+          "t": 38.4,
+          "text": "of"
+        },
+        {
+          "t": 38.74,
+          "text": "hearts"
+        },
+        {
+          "t": 39.04,
+          "text": "with"
+        }
+      ]
+    },
+    {
+      "start": 39.22,
+      "end": 42.24,
+      "text": "fire in the name from cairo rooftops to the river",
+      "words": [
+        {
+          "t": 39.22,
+          "text": "fire"
+        },
+        {
+          "t": 39.56,
+          "text": "in"
+        },
+        {
+          "t": 39.78,
+          "text": "the"
+        },
+        {
+          "t": 39.86,
+          "text": "name"
+        },
+        {
+          "t": 40.2,
+          "text": "from"
+        },
+        {
+          "t": 40.44,
+          "text": "cairo"
+        },
+        {
+          "t": 40.86,
+          "text": "rooftops"
+        },
+        {
+          "t": 41.54,
+          "text": "to"
+        },
+        {
+          "t": 41.76,
+          "text": "the"
+        },
+        {
+          "t": 41.88,
+          "text": "river"
+        }
+      ]
+    },
+    {
+      "start": 42.24,
+      "end": 45.66,
+      "text": "from alexandria out to the sea we don't need the",
+      "words": [
+        {
+          "t": 42.24,
+          "text": "from"
+        },
+        {
+          "t": 42.78,
+          "text": "alexandria"
+        },
+        {
+          "t": 43.56,
+          "text": "out"
+        },
+        {
+          "t": 43.86,
+          "text": "to"
+        },
+        {
+          "t": 44.08,
+          "text": "the"
+        },
+        {
+          "t": 44.2,
+          "text": "sea"
+        },
+        {
+          "t": 44.46,
+          "text": "we"
+        },
+        {
+          "t": 45.26,
+          "text": "don't"
+        },
+        {
+          "t": 45.48,
+          "text": "need"
+        },
+        {
+          "t": 45.56,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 45.66,
+      "end": 48.4,
+      "text": "world to understand us we just need the world",
+      "words": [
+        {
+          "t": 45.66,
+          "text": "world"
+        },
+        {
+          "t": 45.92,
+          "text": "to"
+        },
+        {
+          "t": 46.14,
+          "text": "understand"
+        },
+        {
+          "t": 46.68,
+          "text": "us"
+        },
+        {
+          "t": 47.18,
+          "text": "we"
+        },
+        {
+          "t": 47.58,
+          "text": "just"
+        },
+        {
+          "t": 47.7,
+          "text": "need"
+        },
+        {
+          "t": 47.88,
+          "text": "the"
+        },
+        {
+          "t": 47.98,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 48.4,
+      "end": 52.2,
+      "text": "to breathe mama said keep your soul protected baba",
+      "words": [
+        {
+          "t": 48.4,
+          "text": "to"
+        },
+        {
+          "t": 48.98,
+          "text": "breathe"
+        },
+        {
+          "t": 49.36,
+          "text": "mama"
+        },
+        {
+          "t": 49.9,
+          "text": "said"
+        },
+        {
+          "t": 50.16,
+          "text": "keep"
+        },
+        {
+          "t": 50.44,
+          "text": "your"
+        },
+        {
+          "t": 50.76,
+          "text": "soul"
+        },
+        {
+          "t": 51.06,
+          "text": "protected"
+        },
+        {
+          "t": 51.6,
+          "text": "baba"
+        }
+      ]
+    },
+    {
+      "start": 52.2,
+      "end": 55.24,
+      "text": "said keep your head up high even when the news",
+      "words": [
+        {
+          "t": 52.2,
+          "text": "said"
+        },
+        {
+          "t": 52.46,
+          "text": "keep"
+        },
+        {
+          "t": 52.72,
+          "text": "your"
+        },
+        {
+          "t": 53.06,
+          "text": "head"
+        },
+        {
+          "t": 53.42,
+          "text": "up"
+        },
+        {
+          "t": 53.7,
+          "text": "high"
+        },
+        {
+          "t": 53.98,
+          "text": "even"
+        },
+        {
+          "t": 54.56,
+          "text": "when"
+        },
+        {
+          "t": 54.78,
+          "text": "the"
+        },
+        {
+          "t": 54.94,
+          "text": "news"
+        }
+      ]
+    },
+    {
+      "start": 55.34,
+      "end": 57.66,
+      "text": "gets reckless don't let the fear move",
+      "words": [
+        {
+          "t": 55.34,
+          "text": "gets"
+        },
+        {
+          "t": 55.94,
+          "text": "reckless"
+        },
+        {
+          "t": 56.3,
+          "text": "don't"
+        },
+        {
+          "t": 56.88,
+          "text": "let"
+        },
+        {
+          "t": 57.04,
+          "text": "the"
+        },
+        {
+          "t": 57.2,
+          "text": "fear"
+        },
+        {
+          "t": 57.42,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 57.66,
+      "end": 59.84,
+      "text": "into your eyes and if the whole world",
+      "words": [
+        {
+          "t": 57.66,
+          "text": "into"
+        },
+        {
+          "t": 57.98,
+          "text": "your"
+        },
+        {
+          "t": 58.26,
+          "text": "eyes"
+        },
+        {
+          "t": 58.88,
+          "text": "and"
+        },
+        {
+          "t": 58.98,
+          "text": "if"
+        },
+        {
+          "t": 59.12,
+          "text": "the"
+        },
+        {
+          "t": 59.26,
+          "text": "whole"
+        },
+        {
+          "t": 59.44,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 59.84,
+      "end": 63.38,
+      "text": "shakes we put rhythm in the ground out if",
+      "words": [
+        {
+          "t": 59.84,
+          "text": "shakes"
+        },
+        {
+          "t": 60.36,
+          "text": "we"
+        },
+        {
+          "t": 61.06,
+          "text": "put"
+        },
+        {
+          "t": 61.18,
+          "text": "rhythm"
+        },
+        {
+          "t": 61.52,
+          "text": "in"
+        },
+        {
+          "t": 61.72,
+          "text": "the"
+        },
+        {
+          "t": 61.78,
+          "text": "ground"
+        },
+        {
+          "t": 62.14,
+          "text": "out"
+        },
+        {
+          "t": 62.6,
+          "text": "if"
+        }
+      ]
+    },
+    {
+      "start": 63.38,
+      "end": 66.72,
+      "text": "the guard gets loud we make a brighter sound",
+      "words": [
+        {
+          "t": 63.38,
+          "text": "the"
+        },
+        {
+          "t": 63.56,
+          "text": "guard"
+        },
+        {
+          "t": 63.96,
+          "text": "gets"
+        },
+        {
+          "t": 64.38,
+          "text": "loud"
+        },
+        {
+          "t": 64.8,
+          "text": "we"
+        },
+        {
+          "t": 65.52,
+          "text": "make"
+        },
+        {
+          "t": 65.74,
+          "text": "a"
+        },
+        {
+          "t": 65.86,
+          "text": "brighter"
+        },
+        {
+          "t": 66.18,
+          "text": "sound"
+        }
+      ]
+    },
+    {
+      "start": 68.096,
+      "end": 69.86,
+      "text": "we still dance when the night gets",
+      "words": [
+        {
+          "t": 68.096,
+          "text": "we"
+        },
+        {
+          "t": 68.38,
+          "text": "still"
+        },
+        {
+          "t": 68.7,
+          "text": "dance"
+        },
+        {
+          "t": 69.0,
+          "text": "when"
+        },
+        {
+          "t": 69.2,
+          "text": "the"
+        },
+        {
+          "t": 69.36,
+          "text": "night"
+        },
+        {
+          "t": 69.54,
+          "text": "gets"
+        }
+      ]
+    },
+    {
+      "start": 69.86,
+      "end": 72.44,
+      "text": "heavy still sing when the sky turns gray",
+      "words": [
+        {
+          "t": 69.86,
+          "text": "heavy"
+        },
+        {
+          "t": 70.12,
+          "text": "still"
+        },
+        {
+          "t": 70.94,
+          "text": "sing"
+        },
+        {
+          "t": 71.2,
+          "text": "when"
+        },
+        {
+          "t": 71.48,
+          "text": "the"
+        },
+        {
+          "t": 71.62,
+          "text": "sky"
+        },
+        {
+          "t": 71.78,
+          "text": "turns"
+        },
+        {
+          "t": 72.16,
+          "text": "gray"
+        }
+      ]
+    },
+    {
+      "start": 72.74,
+      "end": 75.72,
+      "text": "hands up if your heart stays ready love don't",
+      "words": [
+        {
+          "t": 72.74,
+          "text": "hands"
+        },
+        {
+          "t": 73.34,
+          "text": "up"
+        },
+        {
+          "t": 73.58,
+          "text": "if"
+        },
+        {
+          "t": 73.82,
+          "text": "your"
+        },
+        {
+          "t": 73.96,
+          "text": "heart"
+        },
+        {
+          "t": 74.14,
+          "text": "stays"
+        },
+        {
+          "t": 74.38,
+          "text": "ready"
+        },
+        {
+          "t": 74.64,
+          "text": "love"
+        },
+        {
+          "t": 75.26,
+          "text": "don't"
+        }
+      ]
+    },
+    {
+      "start": 75.72,
+      "end": 78.78,
+      "text": "break we find a way we still move when the drums",
+      "words": [
+        {
+          "t": 75.72,
+          "text": "break"
+        },
+        {
+          "t": 75.92,
+          "text": "we"
+        },
+        {
+          "t": 76.16,
+          "text": "find"
+        },
+        {
+          "t": 76.46,
+          "text": "a"
+        },
+        {
+          "t": 76.84,
+          "text": "way"
+        },
+        {
+          "t": 77.04,
+          "text": "we"
+        },
+        {
+          "t": 77.56,
+          "text": "still"
+        },
+        {
+          "t": 77.9,
+          "text": "move"
+        },
+        {
+          "t": 78.2,
+          "text": "when"
+        },
+        {
+          "t": 78.46,
+          "text": "the"
+        },
+        {
+          "t": 78.58,
+          "text": "drums"
+        }
+      ]
+    },
+    {
+      "start": 78.78,
+      "end": 81.66,
+      "text": "start crawling still shine when the lights go low",
+      "words": [
+        {
+          "t": 78.78,
+          "text": "start"
+        },
+        {
+          "t": 79.0,
+          "text": "crawling"
+        },
+        {
+          "t": 79.44,
+          "text": "still"
+        },
+        {
+          "t": 80.1,
+          "text": "shine"
+        },
+        {
+          "t": 80.48,
+          "text": "when"
+        },
+        {
+          "t": 80.74,
+          "text": "the"
+        },
+        {
+          "t": 80.86,
+          "text": "lights"
+        },
+        {
+          "t": 81.1,
+          "text": "go"
+        },
+        {
+          "t": 81.3,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 81.66,
+      "end": 85.34,
+      "text": "if one heart feels like falling we lift it up and",
+      "words": [
+        {
+          "t": 81.66,
+          "text": "if"
+        },
+        {
+          "t": 82.32,
+          "text": "one"
+        },
+        {
+          "t": 82.52,
+          "text": "heart"
+        },
+        {
+          "t": 82.8,
+          "text": "feels"
+        },
+        {
+          "t": 83.36,
+          "text": "like"
+        },
+        {
+          "t": 83.64,
+          "text": "falling"
+        },
+        {
+          "t": 84.1,
+          "text": "we"
+        },
+        {
+          "t": 84.32,
+          "text": "lift"
+        },
+        {
+          "t": 84.54,
+          "text": "it"
+        },
+        {
+          "t": 84.82,
+          "text": "up"
+        },
+        {
+          "t": 85.16,
+          "text": "and"
+        }
+      ]
+    },
+    {
+      "start": 85.34,
+      "end": 86.26,
+      "text": "let it know",
+      "words": [
+        {
+          "t": 85.34,
+          "text": "let"
+        },
+        {
+          "t": 85.66,
+          "text": "it"
+        },
+        {
+          "t": 86.0,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 88.08,
+      "end": 89.16,
+      "text": "yalla yalla",
+      "words": [
+        {
+          "t": 88.08,
+          "text": "yalla"
+        },
+        {
+          "t": 88.64,
+          "text": "yalla"
+        }
+      ]
+    },
+    {
+      "start": 90.42,
+      "end": 91.5,
+      "text": "we rise we stay",
+      "words": [
+        {
+          "t": 90.42,
+          "text": "we"
+        },
+        {
+          "t": 90.52,
+          "text": "rise"
+        },
+        {
+          "t": 90.88,
+          "text": "we"
+        },
+        {
+          "t": 91.08,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 93.056,
+      "end": 93.78,
+      "text": "yalla yalla",
+      "words": [
+        {
+          "t": 93.056,
+          "text": "yalla"
+        },
+        {
+          "t": 93.26,
+          "text": "yalla"
+        }
+      ]
+    },
+    {
+      "start": 95.296,
+      "end": 96.06,
+      "text": "love leads the way",
+      "words": [
+        {
+          "t": 95.296,
+          "text": "love"
+        },
+        {
+          "t": 95.46,
+          "text": "leads"
+        },
+        {
+          "t": 95.74,
+          "text": "the"
+        },
+        {
+          "t": 95.86,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 96.06,
+      "end": 97.7,
+      "text": "this ain't a postcard this is people",
+      "words": [
+        {
+          "t": 96.06,
+          "text": "this"
+        },
+        {
+          "t": 96.26,
+          "text": "ain't"
+        },
+        {
+          "t": 96.42,
+          "text": "a"
+        },
+        {
+          "t": 96.42,
+          "text": "postcard"
+        },
+        {
+          "t": 96.98,
+          "text": "this"
+        },
+        {
+          "t": 97.2,
+          "text": "is"
+        },
+        {
+          "t": 97.3,
+          "text": "people"
+        }
+      ]
+    },
+    {
+      "start": 97.7,
+      "end": 99.58,
+      "text": "this ain't a camel in the scene",
+      "words": [
+        {
+          "t": 97.7,
+          "text": "this"
+        },
+        {
+          "t": 98.14,
+          "text": "ain't"
+        },
+        {
+          "t": 98.72,
+          "text": "a"
+        },
+        {
+          "t": 98.76,
+          "text": "camel"
+        },
+        {
+          "t": 99.02,
+          "text": "in"
+        },
+        {
+          "t": 99.2,
+          "text": "the"
+        },
+        {
+          "t": 99.3,
+          "text": "scene"
+        }
+      ]
+    },
+    {
+      "start": 99.61,
+      "end": 101.3,
+      "text": "this is bass in the alley",
+      "words": [
+        {
+          "t": 99.61,
+          "text": "this"
+        },
+        {
+          "t": 100.26,
+          "text": "is"
+        },
+        {
+          "t": 100.46,
+          "text": "bass"
+        },
+        {
+          "t": 100.72,
+          "text": "in"
+        },
+        {
+          "t": 100.92,
+          "text": "the"
+        },
+        {
+          "t": 101.04,
+          "text": "alley"
+        }
+      ]
+    },
+    {
+      "start": 101.3,
+      "end": 102.5,
+      "text": "kids in the traffic",
+      "words": [
+        {
+          "t": 101.3,
+          "text": "kids"
+        },
+        {
+          "t": 101.84,
+          "text": "in"
+        },
+        {
+          "t": 102.1,
+          "text": "the"
+        },
+        {
+          "t": 102.18,
+          "text": "traffic"
+        }
+      ]
+    },
+    {
+      "start": 102.5,
+      "end": 103.6,
+      "text": "dreams in the dust",
+      "words": [
+        {
+          "t": 102.5,
+          "text": "dreams"
+        },
+        {
+          "t": 103.0,
+          "text": "in"
+        },
+        {
+          "t": 103.24,
+          "text": "the"
+        },
+        {
+          "t": 103.34,
+          "text": "dust"
+        }
+      ]
+    },
+    {
+      "start": 103.6,
+      "end": 104.54,
+      "text": "trying to stay clean",
+      "words": [
+        {
+          "t": 103.6,
+          "text": "trying"
+        },
+        {
+          "t": 103.84,
+          "text": "to"
+        },
+        {
+          "t": 103.94,
+          "text": "stay"
+        },
+        {
+          "t": 104.1,
+          "text": "clean"
+        }
+      ]
+    },
+    {
+      "start": 104.54,
+      "end": 106.76,
+      "text": "this is gold in the voice of the aunties",
+      "words": [
+        {
+          "t": 104.54,
+          "text": "this"
+        },
+        {
+          "t": 104.96,
+          "text": "is"
+        },
+        {
+          "t": 105.12,
+          "text": "gold"
+        },
+        {
+          "t": 105.36,
+          "text": "in"
+        },
+        {
+          "t": 105.56,
+          "text": "the"
+        },
+        {
+          "t": 105.66,
+          "text": "voice"
+        },
+        {
+          "t": 105.92,
+          "text": "of"
+        },
+        {
+          "t": 106.14,
+          "text": "the"
+        },
+        {
+          "t": 106.26,
+          "text": "aunties"
+        }
+      ]
+    },
+    {
+      "start": 106.76,
+      "end": 108.78,
+      "text": "this is tea when the night runs deep",
+      "words": [
+        {
+          "t": 106.76,
+          "text": "this"
+        },
+        {
+          "t": 107.28,
+          "text": "is"
+        },
+        {
+          "t": 107.44,
+          "text": "tea"
+        },
+        {
+          "t": 107.6,
+          "text": "when"
+        },
+        {
+          "t": 107.84,
+          "text": "the"
+        },
+        {
+          "t": 108.0,
+          "text": "night"
+        },
+        {
+          "t": 108.22,
+          "text": "runs"
+        },
+        {
+          "t": 108.46,
+          "text": "deep"
+        }
+      ]
+    },
+    {
+      "start": 108.93,
+      "end": 111.2,
+      "text": "this is jokes when the pressure gets ugly",
+      "words": [
+        {
+          "t": 108.93,
+          "text": "this"
+        },
+        {
+          "t": 109.58,
+          "text": "is"
+        },
+        {
+          "t": 109.7,
+          "text": "jokes"
+        },
+        {
+          "t": 109.96,
+          "text": "when"
+        },
+        {
+          "t": 110.14,
+          "text": "the"
+        },
+        {
+          "t": 110.28,
+          "text": "pressure"
+        },
+        {
+          "t": 110.5,
+          "text": "gets"
+        },
+        {
+          "t": 110.8,
+          "text": "ugly"
+        }
+      ]
+    },
+    {
+      "start": 111.2,
+      "end": 113.94,
+      "text": "this is faith when it's hard to sleep",
+      "words": [
+        {
+          "t": 111.2,
+          "text": "this"
+        },
+        {
+          "t": 111.86,
+          "text": "is"
+        },
+        {
+          "t": 112.0,
+          "text": "faith"
+        },
+        {
+          "t": 112.26,
+          "text": "when"
+        },
+        {
+          "t": 112.48,
+          "text": "it's"
+        },
+        {
+          "t": 112.64,
+          "text": "hard"
+        },
+        {
+          "t": 112.94,
+          "text": "to"
+        },
+        {
+          "t": 113.6,
+          "text": "sleep"
+        }
+      ]
+    },
+    {
+      "start": 113.94,
+      "end": 116.2,
+      "text": "i see mothers holding families together",
+      "words": [
+        {
+          "t": 113.94,
+          "text": "i"
+        },
+        {
+          "t": 114.4,
+          "text": "see"
+        },
+        {
+          "t": 114.64,
+          "text": "mothers"
+        },
+        {
+          "t": 115.06,
+          "text": "holding"
+        },
+        {
+          "t": 115.38,
+          "text": "families"
+        },
+        {
+          "t": 115.86,
+          "text": "together"
+        }
+      ]
+    },
+    {
+      "start": 116.2,
+      "end": 118.58,
+      "text": "i see fathers praying on the street like glow",
+      "words": [
+        {
+          "t": 116.2,
+          "text": "i"
+        },
+        {
+          "t": 116.46,
+          "text": "see"
+        },
+        {
+          "t": 116.6,
+          "text": "fathers"
+        },
+        {
+          "t": 117.08,
+          "text": "praying"
+        },
+        {
+          "t": 117.44,
+          "text": "on"
+        },
+        {
+          "t": 117.7,
+          "text": "the"
+        },
+        {
+          "t": 117.78,
+          "text": "street"
+        },
+        {
+          "t": 118.0,
+          "text": "like"
+        },
+        {
+          "t": 118.28,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 118.58,
+      "end": 119.82,
+      "text": "i see young ones building a house",
+      "words": [
+        {
+          "t": 118.58,
+          "text": "i"
+        },
+        {
+          "t": 118.76,
+          "text": "see"
+        },
+        {
+          "t": 118.94,
+          "text": "young"
+        },
+        {
+          "t": 119.18,
+          "text": "ones"
+        },
+        {
+          "t": 119.46,
+          "text": "building"
+        },
+        {
+          "t": 119.72,
+          "text": "a"
+        },
+        {
+          "t": 119.82,
+          "text": "house"
+        }
+      ]
+    },
+    {
+      "start": 119.84,
+      "end": 121.48,
+      "text": "Something better with a beat in the blood",
+      "words": [
+        {
+          "t": 119.84,
+          "text": "Something"
+        },
+        {
+          "t": 119.98,
+          "text": "better"
+        },
+        {
+          "t": 120.34,
+          "text": "with"
+        },
+        {
+          "t": 120.58,
+          "text": "a"
+        },
+        {
+          "t": 120.66,
+          "text": "beat"
+        },
+        {
+          "t": 120.9,
+          "text": "in"
+        },
+        {
+          "t": 121.12,
+          "text": "the"
+        },
+        {
+          "t": 121.24,
+          "text": "blood"
+        }
+      ]
+    },
+    {
+      "start": 121.48,
+      "end": 123.2,
+      "text": "Than a long way to go",
+      "words": [
+        {
+          "t": 121.48,
+          "text": "Than"
+        },
+        {
+          "t": 121.72,
+          "text": "a"
+        },
+        {
+          "t": 121.84,
+          "text": "long"
+        },
+        {
+          "t": 122.22,
+          "text": "way"
+        },
+        {
+          "t": 122.64,
+          "text": "to"
+        },
+        {
+          "t": 122.86,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 123.2,
+      "end": 124.34,
+      "text": "When the world says break",
+      "words": [
+        {
+          "t": 123.2,
+          "text": "When"
+        },
+        {
+          "t": 123.44,
+          "text": "the"
+        },
+        {
+          "t": 123.52,
+          "text": "world"
+        },
+        {
+          "t": 123.78,
+          "text": "says"
+        },
+        {
+          "t": 124.04,
+          "text": "break"
+        }
+      ]
+    },
+    {
+      "start": 124.34,
+      "end": 126.08,
+      "text": "When the fear says bow",
+      "words": [
+        {
+          "t": 124.34,
+          "text": "When"
+        },
+        {
+          "t": 124.6,
+          "text": "the"
+        },
+        {
+          "t": 124.76,
+          "text": "fear"
+        },
+        {
+          "t": 125.48,
+          "text": "says"
+        },
+        {
+          "t": 125.72,
+          "text": "bow"
+        }
+      ]
+    },
+    {
+      "start": 126.19,
+      "end": 127.84,
+      "text": "When the pain gets loud",
+      "words": [
+        {
+          "t": 126.19,
+          "text": "When"
+        },
+        {
+          "t": 126.848,
+          "text": "the"
+        },
+        {
+          "t": 127.0,
+          "text": "pain"
+        },
+        {
+          "t": 127.26,
+          "text": "gets"
+        },
+        {
+          "t": 127.5,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 127.84,
+      "end": 128.8,
+      "text": "We sing now",
+      "words": [
+        {
+          "t": 127.84,
+          "text": "We"
+        },
+        {
+          "t": 128.08,
+          "text": "sing"
+        },
+        {
+          "t": 128.2,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 132.08,
+      "end": 134.9,
+      "text": "We still dance when the night gets heavy",
+      "words": [
+        {
+          "t": 132.08,
+          "text": "We"
+        },
+        {
+          "t": 132.94,
+          "text": "still"
+        },
+        {
+          "t": 133.04,
+          "text": "dance"
+        },
+        {
+          "t": 133.6,
+          "text": "when"
+        },
+        {
+          "t": 133.8,
+          "text": "the"
+        },
+        {
+          "t": 133.98,
+          "text": "night"
+        },
+        {
+          "t": 134.16,
+          "text": "gets"
+        },
+        {
+          "t": 134.46,
+          "text": "heavy"
+        }
+      ]
+    },
+    {
+      "start": 134.9,
+      "end": 137.06,
+      "text": "Still see when the sky turns gray",
+      "words": [
+        {
+          "t": 134.9,
+          "text": "Still"
+        },
+        {
+          "t": 135.52,
+          "text": "see"
+        },
+        {
+          "t": 135.76,
+          "text": "when"
+        },
+        {
+          "t": 136.06,
+          "text": "the"
+        },
+        {
+          "t": 136.22,
+          "text": "sky"
+        },
+        {
+          "t": 136.38,
+          "text": "turns"
+        },
+        {
+          "t": 136.68,
+          "text": "gray"
+        }
+      ]
+    },
+    {
+      "start": 137.41,
+      "end": 139.32,
+      "text": "Hands up if your heart stays ready",
+      "words": [
+        {
+          "t": 137.41,
+          "text": "Hands"
+        },
+        {
+          "t": 137.96,
+          "text": "up"
+        },
+        {
+          "t": 138.18,
+          "text": "if"
+        },
+        {
+          "t": 138.42,
+          "text": "your"
+        },
+        {
+          "t": 138.56,
+          "text": "heart"
+        },
+        {
+          "t": 138.76,
+          "text": "stays"
+        },
+        {
+          "t": 138.94,
+          "text": "ready"
+        }
+      ]
+    },
+    {
+      "start": 139.32,
+      "end": 141.7,
+      "text": "Love don't break, we find a way",
+      "words": [
+        {
+          "t": 139.32,
+          "text": "Love"
+        },
+        {
+          "t": 139.9,
+          "text": "don't"
+        },
+        {
+          "t": 140.32,
+          "text": "break,"
+        },
+        {
+          "t": 140.58,
+          "text": "we"
+        },
+        {
+          "t": 140.76,
+          "text": "find"
+        },
+        {
+          "t": 141.06,
+          "text": "a"
+        },
+        {
+          "t": 141.46,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 141.7,
+      "end": 144.14,
+      "text": "We still move when the drums start calling",
+      "words": [
+        {
+          "t": 141.7,
+          "text": "We"
+        },
+        {
+          "t": 142.2,
+          "text": "still"
+        },
+        {
+          "t": 142.44,
+          "text": "move"
+        },
+        {
+          "t": 142.8,
+          "text": "when"
+        },
+        {
+          "t": 143.02,
+          "text": "the"
+        },
+        {
+          "t": 143.14,
+          "text": "drums"
+        },
+        {
+          "t": 143.4,
+          "text": "start"
+        },
+        {
+          "t": 143.6,
+          "text": "calling"
+        }
+      ]
+    },
+    {
+      "start": 144.14,
+      "end": 146.26,
+      "text": "Still shout when the lights go low",
+      "words": [
+        {
+          "t": 144.14,
+          "text": "Still"
+        },
+        {
+          "t": 144.72,
+          "text": "shout"
+        },
+        {
+          "t": 145.08,
+          "text": "when"
+        },
+        {
+          "t": 145.32,
+          "text": "the"
+        },
+        {
+          "t": 145.46,
+          "text": "lights"
+        },
+        {
+          "t": 145.7,
+          "text": "go"
+        },
+        {
+          "t": 145.9,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 146.26,
+      "end": 148.78,
+      "text": "If one heart feels like falling",
+      "words": [
+        {
+          "t": 146.26,
+          "text": "If"
+        },
+        {
+          "t": 146.92,
+          "text": "one"
+        },
+        {
+          "t": 147.1,
+          "text": "heart"
+        },
+        {
+          "t": 147.54,
+          "text": "feels"
+        },
+        {
+          "t": 147.94,
+          "text": "like"
+        },
+        {
+          "t": 148.24,
+          "text": "falling"
+        }
+      ]
+    },
+    {
+      "start": 148.78,
+      "end": 150.94,
+      "text": "Then stand up and let it know",
+      "words": [
+        {
+          "t": 148.78,
+          "text": "Then"
+        },
+        {
+          "t": 149.02,
+          "text": "stand"
+        },
+        {
+          "t": 149.24,
+          "text": "up"
+        },
+        {
+          "t": 149.74,
+          "text": "and"
+        },
+        {
+          "t": 149.94,
+          "text": "let"
+        },
+        {
+          "t": 150.28,
+          "text": "it"
+        },
+        {
+          "t": 150.54,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 153.376,
+      "end": 155.84,
+      "text": "Heart beating in the drums",
+      "words": [
+        {
+          "t": 153.376,
+          "text": "Heart"
+        },
+        {
+          "t": 153.92,
+          "text": "beating"
+        },
+        {
+          "t": 154.46,
+          "text": "in"
+        },
+        {
+          "t": 155.0,
+          "text": "the"
+        },
+        {
+          "t": 155.1,
+          "text": "drums"
+        }
+      ]
+    },
+    {
+      "start": 158.176,
+      "end": 159.96,
+      "text": "Love for everyone",
+      "words": [
+        {
+          "t": 158.176,
+          "text": "Love"
+        },
+        {
+          "t": 158.5,
+          "text": "for"
+        },
+        {
+          "t": 159.18,
+          "text": "everyone"
+        }
+      ]
+    },
+    {
+      "start": 162.26,
+      "end": 163.28,
+      "text": "Y'all up, y'all up",
+      "words": [
+        {
+          "t": 162.26,
+          "text": "Y"
+        },
+        {
+          "t": 162.36,
+          "text": "'all"
+        },
+        {
+          "t": 162.38,
+          "text": "up,"
+        },
+        {
+          "t": 162.76,
+          "text": "y"
+        },
+        {
+          "t": 162.88,
+          "text": "'all"
+        },
+        {
+          "t": 162.98,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 164.26,
+      "end": 165.34,
+      "text": "We rise, we stack",
+      "words": [
+        {
+          "t": 164.26,
+          "text": "We"
+        },
+        {
+          "t": 164.36,
+          "text": "rise,"
+        },
+        {
+          "t": 164.8,
+          "text": "we"
+        },
+        {
+          "t": 164.96,
+          "text": "stack"
+        }
+      ]
+    },
+    {
+      "start": 165.63,
+      "end": 168.0,
+      "text": "Y'all up, y'all up",
+      "words": [
+        {
+          "t": 165.63,
+          "text": "Y"
+        },
+        {
+          "t": 166.912,
+          "text": "'all"
+        },
+        {
+          "t": 167.02,
+          "text": "up,"
+        },
+        {
+          "t": 167.4,
+          "text": "y"
+        },
+        {
+          "t": 167.48,
+          "text": "'all"
+        },
+        {
+          "t": 167.6,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 168.19,
+      "end": 169.92,
+      "text": "We rise, we stack",
+      "words": [
+        {
+          "t": 168.19,
+          "text": "We"
+        },
+        {
+          "t": 169.04,
+          "text": "rise,"
+        },
+        {
+          "t": 169.38,
+          "text": "we"
+        },
+        {
+          "t": 169.58,
+          "text": "stack"
+        }
+      ]
+    },
+    {
+      "start": 169.92,
+      "end": 172.5,
+      "text": "No black should be a reason for sorrow",
+      "words": [
+        {
+          "t": 169.92,
+          "text": "No"
+        },
+        {
+          "t": 170.34,
+          "text": "black"
+        },
+        {
+          "t": 170.5,
+          "text": "should"
+        },
+        {
+          "t": 171.12,
+          "text": "be"
+        },
+        {
+          "t": 171.26,
+          "text": "a"
+        },
+        {
+          "t": 171.42,
+          "text": "reason"
+        },
+        {
+          "t": 171.72,
+          "text": "for"
+        },
+        {
+          "t": 171.98,
+          "text": "sorrow"
+        }
+      ]
+    },
+    {
+      "start": 174.68,
+      "end": 176.86,
+      "text": "No child should be afraid of tomorrow",
+      "words": [
+        {
+          "t": 174.68,
+          "text": "No"
+        },
+        {
+          "t": 174.78,
+          "text": "child"
+        },
+        {
+          "t": 175.14,
+          "text": "should"
+        },
+        {
+          "t": 175.74,
+          "text": "be"
+        },
+        {
+          "t": 175.92,
+          "text": "afraid"
+        },
+        {
+          "t": 176.2,
+          "text": "of"
+        },
+        {
+          "t": 176.48,
+          "text": "tomorrow"
+        }
+      ]
+    },
+    {
+      "start": 177.4,
+      "end": 177.84,
+      "text": "No",
+      "words": [
+        {
+          "t": 177.4,
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "start": 177.84,
+      "end": 177.952,
+      "text": "No",
+      "words": [
+        {
+          "t": 177.84,
+          "text": "No"
+        }
+      ]
+    },
+    {
+      "start": 178.78,
+      "end": 180.94,
+      "text": "From every border, every prayer",
+      "words": [
+        {
+          "t": 178.78,
+          "text": "From"
+        },
+        {
+          "t": 178.96,
+          "text": "every"
+        },
+        {
+          "t": 179.3,
+          "text": "border,"
+        },
+        {
+          "t": 179.96,
+          "text": "every"
+        },
+        {
+          "t": 180.34,
+          "text": "prayer"
+        }
+      ]
+    },
+    {
+      "start": 180.94,
+      "end": 183.32,
+      "text": "Every voice in the air",
+      "words": [
+        {
+          "t": 180.94,
+          "text": "Every"
+        },
+        {
+          "t": 181.4,
+          "text": "voice"
+        },
+        {
+          "t": 182.12,
+          "text": "in"
+        },
+        {
+          "t": 182.6,
+          "text": "the"
+        },
+        {
+          "t": 182.8,
+          "text": "air"
+        }
+      ]
+    },
+    {
+      "start": 183.32,
+      "end": 185.72,
+      "text": "We are more than what they show you",
+      "words": [
+        {
+          "t": 183.32,
+          "text": "We"
+        },
+        {
+          "t": 184.0,
+          "text": "are"
+        },
+        {
+          "t": 184.08,
+          "text": "more"
+        },
+        {
+          "t": 184.38,
+          "text": "than"
+        },
+        {
+          "t": 184.62,
+          "text": "what"
+        },
+        {
+          "t": 184.84,
+          "text": "they"
+        },
+        {
+          "t": 185.08,
+          "text": "show"
+        },
+        {
+          "t": 185.44,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 185.72,
+      "end": 187.68,
+      "text": "More than war on screen",
+      "words": [
+        {
+          "t": 185.72,
+          "text": "More"
+        },
+        {
+          "t": 186.1,
+          "text": "than"
+        },
+        {
+          "t": 186.32,
+          "text": "war"
+        },
+        {
+          "t": 186.62,
+          "text": "on"
+        },
+        {
+          "t": 187.24,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 187.68,
+      "end": 190.24,
+      "text": "More than pain in the headlines",
+      "words": [
+        {
+          "t": 187.68,
+          "text": "More"
+        },
+        {
+          "t": 188.38,
+          "text": "than"
+        },
+        {
+          "t": 188.64,
+          "text": "pain"
+        },
+        {
+          "t": 189.04,
+          "text": "in"
+        },
+        {
+          "t": 189.5,
+          "text": "the"
+        },
+        {
+          "t": 189.72,
+          "text": "headlines"
+        }
+      ]
+    },
+    {
+      "start": 190.24,
+      "end": 192.04,
+      "text": "More than ancient history",
+      "words": [
+        {
+          "t": 190.24,
+          "text": "More"
+        },
+        {
+          "t": 190.68,
+          "text": "than"
+        },
+        {
+          "t": 190.92,
+          "text": "ancient"
+        },
+        {
+          "t": 191.32,
+          "text": "history"
+        }
+      ]
+    },
+    {
+      "start": 193.1,
+      "end": 194.8,
+      "text": "This is for the strong ones",
+      "words": [
+        {
+          "t": 193.1,
+          "text": "This"
+        },
+        {
+          "t": 193.792,
+          "text": "is"
+        },
+        {
+          "t": 193.94,
+          "text": "for"
+        },
+        {
+          "t": 194.08,
+          "text": "the"
+        },
+        {
+          "t": 194.16,
+          "text": "strong"
+        },
+        {
+          "t": 194.5,
+          "text": "ones"
+        }
+      ]
+    },
+    {
+      "start": 194.8,
+      "end": 196.28,
+      "text": "The tired ones",
+      "words": [
+        {
+          "t": 194.8,
+          "text": "The"
+        },
+        {
+          "t": 195.584,
+          "text": "tired"
+        },
+        {
+          "t": 195.92,
+          "text": "ones"
+        }
+      ]
+    },
+    {
+      "start": 198.16,
+      "end": 200.22,
+      "text": "The ones still smiling when life gets wild",
+      "words": [
+        {
+          "t": 198.16,
+          "text": "The"
+        },
+        {
+          "t": 198.26,
+          "text": "ones"
+        },
+        {
+          "t": 198.44,
+          "text": "still"
+        },
+        {
+          "t": 198.64,
+          "text": "smiling"
+        },
+        {
+          "t": 199.16,
+          "text": "when"
+        },
+        {
+          "t": 199.36,
+          "text": "life"
+        },
+        {
+          "t": 199.62,
+          "text": "gets"
+        },
+        {
+          "t": 199.88,
+          "text": "wild"
+        }
+      ]
+    },
+    {
+      "start": 202.18,
+      "end": 203.18,
+      "text": "This is not just pride",
+      "words": [
+        {
+          "t": 202.18,
+          "text": "This"
+        },
+        {
+          "t": 202.28,
+          "text": "is"
+        },
+        {
+          "t": 202.42,
+          "text": "not"
+        },
+        {
+          "t": 202.6,
+          "text": "just"
+        },
+        {
+          "t": 202.82,
+          "text": "pride"
+        }
+      ]
+    },
+    {
+      "start": 203.65,
+      "end": 205.18,
+      "text": "This is beast with a pulse",
+      "words": [
+        {
+          "t": 203.65,
+          "text": "This"
+        },
+        {
+          "t": 204.2,
+          "text": "is"
+        },
+        {
+          "t": 204.36,
+          "text": "beast"
+        },
+        {
+          "t": 204.58,
+          "text": "with"
+        },
+        {
+          "t": 204.78,
+          "text": "a"
+        },
+        {
+          "t": 204.86,
+          "text": "pulse"
+        }
+      ]
+    },
+    {
+      "start": 206.96,
+      "end": 207.41,
+      "text": "This is culture",
+      "words": [
+        {
+          "t": 206.96,
+          "text": "This"
+        },
+        {
+          "t": 207.06,
+          "text": "is"
+        },
+        {
+          "t": 207.16,
+          "text": "culture"
+        }
+      ]
+    },
+    {
+      "start": 207.56,
+      "end": 208.66,
+      "text": "With arms",
+      "words": [
+        {
+          "t": 207.56,
+          "text": "With"
+        },
+        {
+          "t": 208.36,
+          "text": "arms"
+        }
+      ]
+    },
+    {
+      "start": 208.78,
+      "end": 209.68,
+      "text": "Open wide",
+      "words": [
+        {
+          "t": 208.78,
+          "text": "Open"
+        },
+        {
+          "t": 209.28,
+          "text": "wide"
+        }
+      ]
+    },
+    {
+      "start": 209.81,
+      "end": 212.02,
+      "text": "So let the oud cry",
+      "words": [
+        {
+          "t": 209.81,
+          "text": "So"
+        },
+        {
+          "t": 210.46,
+          "text": "let"
+        },
+        {
+          "t": 211.34,
+          "text": "the"
+        },
+        {
+          "t": 211.5,
+          "text": "oud"
+        },
+        {
+          "t": 211.76,
+          "text": "cry"
+        }
+      ]
+    },
+    {
+      "start": 212.02,
+      "end": 213.16,
+      "text": "Let the drum talk",
+      "words": [
+        {
+          "t": 212.02,
+          "text": "Let"
+        },
+        {
+          "t": 212.46,
+          "text": "the"
+        },
+        {
+          "t": 212.68,
+          "text": "drum"
+        },
+        {
+          "t": 212.9,
+          "text": "talk"
+        }
+      ]
+    },
+    {
+      "start": 213.16,
+      "end": 214.32,
+      "text": "Let the whole room move",
+      "words": [
+        {
+          "t": 213.16,
+          "text": "Let"
+        },
+        {
+          "t": 213.4,
+          "text": "the"
+        },
+        {
+          "t": 213.56,
+          "text": "whole"
+        },
+        {
+          "t": 213.8,
+          "text": "room"
+        },
+        {
+          "t": 214.06,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 214.32,
+      "end": 215.52,
+      "text": "Like the now walk",
+      "words": [
+        {
+          "t": 214.32,
+          "text": "Like"
+        },
+        {
+          "t": 214.78,
+          "text": "the"
+        },
+        {
+          "t": 214.96,
+          "text": "now"
+        },
+        {
+          "t": 215.2,
+          "text": "walk"
+        }
+      ]
+    },
+    {
+      "start": 215.52,
+      "end": 216.72,
+      "text": "If your heart hurts",
+      "words": [
+        {
+          "t": 215.52,
+          "text": "If"
+        },
+        {
+          "t": 215.74,
+          "text": "your"
+        },
+        {
+          "t": 215.86,
+          "text": "heart"
+        },
+        {
+          "t": 216.3,
+          "text": "hurts"
+        }
+      ]
+    },
+    {
+      "start": 216.72,
+      "end": 217.74,
+      "text": "Bring it close",
+      "words": [
+        {
+          "t": 216.72,
+          "text": "Bring"
+        },
+        {
+          "t": 217.16,
+          "text": "it"
+        },
+        {
+          "t": 217.34,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 217.74,
+      "end": 219.14,
+      "text": "We don't dance alone",
+      "words": [
+        {
+          "t": 217.74,
+          "text": "We"
+        },
+        {
+          "t": 218.28,
+          "text": "don't"
+        },
+        {
+          "t": 218.78,
+          "text": "dance"
+        },
+        {
+          "t": 219.04,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 220.54,
+      "end": 222.54,
+      "text": "We still dance when the night gets heavy",
+      "words": [
+        {
+          "t": 220.54,
+          "text": "We"
+        },
+        {
+          "t": 220.64,
+          "text": "still"
+        },
+        {
+          "t": 220.864,
+          "text": "dance"
+        },
+        {
+          "t": 221.38,
+          "text": "when"
+        },
+        {
+          "t": 221.48,
+          "text": "the"
+        },
+        {
+          "t": 221.6,
+          "text": "night"
+        },
+        {
+          "t": 221.84,
+          "text": "gets"
+        },
+        {
+          "t": 222.12,
+          "text": "heavy"
+        }
+      ]
+    },
+    {
+      "start": 222.54,
+      "end": 224.74,
+      "text": "Still sing when the sky turns gray",
+      "words": [
+        {
+          "t": 222.54,
+          "text": "Still"
+        },
+        {
+          "t": 223.168,
+          "text": "sing"
+        },
+        {
+          "t": 223.52,
+          "text": "when"
+        },
+        {
+          "t": 223.82,
+          "text": "the"
+        },
+        {
+          "t": 223.92,
+          "text": "sky"
+        },
+        {
+          "t": 224.12,
+          "text": "turns"
+        },
+        {
+          "t": 224.4,
+          "text": "gray"
+        }
+      ]
+    },
+    {
+      "start": 225.09,
+      "end": 227.0,
+      "text": "Hands up if your heart stays ready",
+      "words": [
+        {
+          "t": 225.09,
+          "text": "Hands"
+        },
+        {
+          "t": 225.64,
+          "text": "up"
+        },
+        {
+          "t": 225.86,
+          "text": "if"
+        },
+        {
+          "t": 226.1,
+          "text": "your"
+        },
+        {
+          "t": 226.24,
+          "text": "heart"
+        },
+        {
+          "t": 226.42,
+          "text": "stays"
+        },
+        {
+          "t": 226.62,
+          "text": "ready"
+        }
+      ]
+    },
+    {
+      "start": 227.0,
+      "end": 229.4,
+      "text": "Love don't break, we find a way",
+      "words": [
+        {
+          "t": 227.0,
+          "text": "Love"
+        },
+        {
+          "t": 227.56,
+          "text": "don't"
+        },
+        {
+          "t": 228.0,
+          "text": "break,"
+        },
+        {
+          "t": 228.26,
+          "text": "we"
+        },
+        {
+          "t": 228.44,
+          "text": "find"
+        },
+        {
+          "t": 228.7,
+          "text": "a"
+        },
+        {
+          "t": 229.14,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 229.4,
+      "end": 231.8,
+      "text": "We still move when the drums start calling",
+      "words": [
+        {
+          "t": 229.4,
+          "text": "We"
+        },
+        {
+          "t": 229.76,
+          "text": "still"
+        },
+        {
+          "t": 230.1,
+          "text": "move"
+        },
+        {
+          "t": 230.46,
+          "text": "when"
+        },
+        {
+          "t": 230.7,
+          "text": "the"
+        },
+        {
+          "t": 230.86,
+          "text": "drums"
+        },
+        {
+          "t": 231.04,
+          "text": "start"
+        },
+        {
+          "t": 231.26,
+          "text": "calling"
+        }
+      ]
+    },
+    {
+      "start": 231.8,
+      "end": 233.9,
+      "text": "Still shout when the lights go low",
+      "words": [
+        {
+          "t": 231.8,
+          "text": "Still"
+        },
+        {
+          "t": 232.34,
+          "text": "shout"
+        },
+        {
+          "t": 232.7,
+          "text": "when"
+        },
+        {
+          "t": 233.02,
+          "text": "the"
+        },
+        {
+          "t": 233.16,
+          "text": "lights"
+        },
+        {
+          "t": 233.38,
+          "text": "go"
+        },
+        {
+          "t": 233.58,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 233.9,
+      "end": 236.38,
+      "text": "If one heart feels like falling",
+      "words": [
+        {
+          "t": 233.9,
+          "text": "If"
+        },
+        {
+          "t": 234.56,
+          "text": "one"
+        },
+        {
+          "t": 234.76,
+          "text": "heart"
+        },
+        {
+          "t": 235.14,
+          "text": "feels"
+        },
+        {
+          "t": 235.64,
+          "text": "like"
+        },
+        {
+          "t": 235.9,
+          "text": "falling"
+        }
+      ]
+    },
+    {
+      "start": 236.38,
+      "end": 238.56,
+      "text": "We lift it up and let it know",
+      "words": [
+        {
+          "t": 236.38,
+          "text": "We"
+        },
+        {
+          "t": 236.58,
+          "text": "lift"
+        },
+        {
+          "t": 236.82,
+          "text": "it"
+        },
+        {
+          "t": 237.06,
+          "text": "up"
+        },
+        {
+          "t": 237.5,
+          "text": "and"
+        },
+        {
+          "t": 237.6,
+          "text": "let"
+        },
+        {
+          "t": 237.94,
+          "text": "it"
+        },
+        {
+          "t": 238.24,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 239.98,
+      "end": 241.7,
+      "text": "Your love, your love",
+      "words": [
+        {
+          "t": 239.98,
+          "text": "Your"
+        },
+        {
+          "t": 240.76,
+          "text": "love,"
+        },
+        {
+          "t": 241.2,
+          "text": "your"
+        },
+        {
+          "t": 241.36,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 241.7,
+      "end": 243.76,
+      "text": "We rise we stay",
+      "words": [
+        {
+          "t": 241.7,
+          "text": "We"
+        },
+        {
+          "t": 242.752,
+          "text": "rise"
+        },
+        {
+          "t": 243.12,
+          "text": "we"
+        },
+        {
+          "t": 243.38,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 245.26,
+      "end": 246.32,
+      "text": "Your love, your love",
+      "words": [
+        {
+          "t": 245.26,
+          "text": "Your"
+        },
+        {
+          "t": 245.36,
+          "text": "love,"
+        },
+        {
+          "t": 245.82,
+          "text": "your"
+        },
+        {
+          "t": 245.96,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 247.18,
+      "end": 248.38,
+      "text": "Love leads the way",
+      "words": [
+        {
+          "t": 247.18,
+          "text": "Love"
+        },
+        {
+          "t": 247.78,
+          "text": "leads"
+        },
+        {
+          "t": 248.02,
+          "text": "the"
+        },
+        {
+          "t": 248.16,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 253.12,
+      "end": 254.8,
+      "text": "Your must, your must",
+      "words": [
+        {
+          "t": 253.12,
+          "text": "Your"
+        },
+        {
+          "t": 253.26,
+          "text": "must,"
+        },
+        {
+          "t": 253.76,
+          "text": "your"
+        },
+        {
+          "t": 254.38,
+          "text": "must"
+        }
+      ]
+    },
+    {
+      "start": 254.8,
+      "end": 257.04,
+      "text": "Still dance when you still strong",
+      "words": [
+        {
+          "t": 254.8,
+          "text": "Still"
+        },
+        {
+          "t": 255.54,
+          "text": "dance"
+        },
+        {
+          "t": 255.94,
+          "text": "when"
+        },
+        {
+          "t": 256.36,
+          "text": "you"
+        },
+        {
+          "t": 256.5,
+          "text": "still"
+        },
+        {
+          "t": 256.7,
+          "text": "strong"
+        }
+      ]
+    }
+  ]
+}

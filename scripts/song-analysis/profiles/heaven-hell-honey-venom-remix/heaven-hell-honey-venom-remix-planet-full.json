@@ -1,0 +1,129 @@
+{
+  "analysis": {
+    "summary": "A sultry dancehall anthem about a forbidden attraction where an alluring figure embodies both dangerous temptation and divine beauty.",
+    "overallMood": "Sultry",
+    "themes": [
+      "Forbidden Love",
+      "Dangerous Allure",
+      "Obsession",
+      "Dual Nature (Heaven/Hell)",
+      "Nightlife Escapism"
+    ],
+    "palette": [
+      "#0F1216",
+      "#FFD700",
+      "#8B0000",
+      "#39FF14"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and low hum of tension",
+        "intensity": 0.63,
+        "colorHint": "#0f1216",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Internal conflict between desire and morality",
+        "intensity": 0.85,
+        "colorHint": "#8b0000",
+        "start": 5.04
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive release of forbidden passion",
+        "intensity": 0.93,
+        "colorHint": "#ffd700",
+        "start": 16.08
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Visualizing the object of desire with luxury and heat",
+        "intensity": 0.62,
+        "colorHint": "#39ff14",
+        "start": 57.67
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Rising tension and psychological shift",
+        "intensity": 0.46,
+        "colorHint": "#ffd700",
+        "start": 67.32
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Desperate bargaining with fate and desire",
+        "intensity": 0.28,
+        "colorHint": "#8b0000",
+        "start": 136.96
+      },
+      {
+        "name": "Drop",
+        "emotion": "Pure sonic assault of the bassline and hypnotic rhythm",
+        "intensity": 0.3,
+        "colorHint": "#39ff14",
+        "start": 143.2
+      },
+      {
+        "name": "Breakdown/Bridge 2",
+        "emotion": "Hypnotic repetition leading to trance state",
+        "intensity": 0.24,
+        "colorHint": "#0f1216",
+        "start": 166.38
+      },
+      {
+        "name": "Final Chorus/Outro",
+        "emotion": "Exhausted euphoria and lingering intoxication",
+        "intensity": 0.22,
+        "colorHint": "#ffd700",
+        "start": 171.68
+      }
+    ],
+    "keywords": [
+      {
+        "word": "venom",
+        "emotion": "Thrilling toxicity",
+        "imageryPrompt": "A golden viscous liquid dripping from a silver goblet onto dark stone, glowing with an inner blue light that illuminates the surrounding shadows."
+      },
+      {
+        "word": "honey",
+        "emotion": "Sweet entrapment",
+        "imageryPrompt": "Sunlight filtering through thick amber syrup in slow motion, trapping dust motes and creating a sticky, warm golden haze against dark wood textures."
+      },
+      {
+        "word": "strobe",
+        "emotion": "Disorienting intensity",
+        "imageryPrompt": "Sharp white rectangular beams of light slicing through smoke-filled air at nightclubs, freezing sweat on skin and illuminating neon outlines in high contrast black and white."
+      },
+      {
+        "word": "burn",
+        "emotion": "Painful pleasure",
+        "imageryPrompt": "A hand clutching a chest wound where flames lick the flesh but feel warm rather than hot, surrounded by ash that sparkles like diamonds in low light."
+      },
+      {
+        "word": "venomous",
+        "emotion": "Forbidden intimacy",
+        "imageryPrompt": "Two lips meeting under red emergency lights where one is coated in shimmering green poison dust and the other in golden honey, creating a swirling vortex of colors."
+      },
+      {
+        "word": "dangerous",
+        "emotion": "Subversive divinity",
+        "imageryPrompt": "A figure draped in tattered velvet robes standing atop a pile of burning money and broken crosses, eyes glowing with electric blue fire against a stormy sky."
+      },
+      {
+        "word": "spell",
+        "emotion": "Hypnotic control",
+        "imageryPrompt": "A swirling vortex of red ribbons and smoke forming an intricate geometric pattern above a sweating dancer's face, blurring the background into deep obsidian black."
+      },
+      {
+        "word": "electric",
+        "emotion": "Jolted arousal",
+        "imageryPrompt": "Blue electricity arcing across wet skin in a dark room, illuminating veins that glow faintly purple as the subject shivers under harsh neon club lighting."
+      }
+    ]
+  },
+  "styleHint": "108 BPM dark luxury dancehall anthem, massive sound-system bass, hyper-energetic bashment riddim, aggressive Caribbean drums, deep sub pressure, airhorn stabs, siren FX, neon nightclub atmosphere, female lead dominates with hypnotic sultry vocals, seductive but powerful delivery, raw male dancehall toasting, intense call-and-response sections, crowd chants, rewind moments, extended drops, dirty wine energy, late-night tropical city vibes, expensive trouble, forbidden attraction, bright strobe synths, gritty bassline, overdriven 808s, sweat-soaked dancefloor, dangerous romance, sexually charged tension, huge singalong hook, cinematic breakdowns, emotionally addictive, built for packed clubs and giant sound systems",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:08:12.267Z"
+}

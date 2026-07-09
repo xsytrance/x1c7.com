@@ -1,0 +1,109 @@
+[
+  {
+    "id": "fast-enough",
+    "planet": {
+      "analysis": {
+        "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
+        "overallMood": "Energetic and Playful",
+        "themes": [
+          "Futuristic Romance",
+          "Gaming Nostalgia",
+          "High-Speed Pursuit",
+          "Unstoppable Love"
+        ],
+        "palette": [
+          "#FFD700",
+          "#4B0082",
+          "#C91E36",
+          "#FFEBCD"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Curious and Anticipatory",
+            "intensity": 0.5,
+            "colorHintHex": "#FFD700",
+            "start": 1.62
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Focused and Accelerating",
+            "intensity": 0.65,
+            "colorHintHex": "#4B0082",
+            "start": 20.16
+          },
+          {
+            "name": "Pre-Hook",
+            "emotion": "Urgent and Electric",
+            "intensity": 0.75,
+            "colorHintHex": "#C91E36",
+            "start": 37.64
+          },
+          {
+            "name": "Hook",
+            "emotion": "Triumphant and Euphoric",
+            "intensity": 0.88,
+            "colorHintHex": "#FFEBCD",
+            "start": 45.64
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Smooth and Confident",
+            "intensity": 0.6,
+            "colorHintHex": "#4B0082",
+            "start": 95.72
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Explosive Release",
+            "intensity": 0.95,
+            "colorHintHex": "#FFD700",
+            "start": 104.54
+          },
+          {
+            "name": "Final Hook",
+            "emotion": "Victorious and Joyful",
+            "intensity": 0.82,
+            "colorHintHex": "#FFEBCD",
+            "start": 108.3
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Fast",
+            "emotion": "Urgent Thrill",
+            "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+          },
+          {
+            "word": "Boost",
+            "emotion": "Empowered Lift",
+            "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+          },
+          {
+            "word": "Caught",
+            "emotion": "Playful Fearlessness",
+            "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
+          },
+          {
+            "word": "Lights",
+            "emotion": "Vibrant Wonder",
+            "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
+          },
+          {
+            "word": "Level",
+            "emotion": "Achievement Joy",
+            "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+          },
+          {
+            "word": "Invincible",
+            "emotion": "Confident Power",
+            "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

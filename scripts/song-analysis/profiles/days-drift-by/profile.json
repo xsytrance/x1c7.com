@@ -1,0 +1,259 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "days-drift-by",
+  "generatedAt": "2026-07-09T18:03:56.183Z",
+  "measured": {
+    "bpm": 172.27,
+    "duration": 212.32
+  },
+  "identity": {
+    "title": "Days Drift By",
+    "titleAlternates": [],
+    "genre": "Liquid DnB",
+    "subGenres": [
+      "Ambient Dubstep",
+      "Melodic Trip-Hop"
+    ],
+    "mood": "ethereal, dreamy, melancholic, atmospheric",
+    "styleSentence": "A liquid drum and bass track at a moderate tempo featuring shimmering guitar textures, evolving ambient pads, and melodic synth leads that create an immersive, rainforest-adjacent soundscape.",
+    "language": "English",
+    "energy": "low",
+    "vocalStyle": "soft, ethereal, whispered"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/days-drift-by/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#181808",
+      "#282818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "G",
+      "mode": "minor",
+      "confidence": 0.791
+    },
+    "boundaries": [
+      2.23,
+      19.04,
+      64.18,
+      67.62,
+      126.6,
+      143.41,
+      194.03,
+      198.02
+    ],
+    "brightness": 2938.2,
+    "dynamicsDb": 10.1
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro]\n\nMorning light...\nTake me there...\nTake me there...\n\n(instrumental)\n\n[Verse 1]\n\nLeaves above, the river below\nEvery little heartbeat moving slow\nHands in the breeze\nNothing to chase\nTime disappears without a trace\n\n[Pre-Chorus]\n\nHold me\nDon't let go\nWhere we wander\nFlowers grow\n\n[Chorus]\n\nDays drift by\nWe don't have to know why\nBreathe tonight\nEverything feels alive\n\nDays drift by\nFloating into the sky\nStay with me\nStay with me\nStay...\n\n(Liquid DnB instrumental with melodic lead and guitar textures)\n\n[Verse 2]\n\nClouds roll in\nThen fade away\nEvery color melts into gray\nThen the sun\nFinds its way\nJust like it always does\n\n[Bridge]\n\nCloser...\nCloser...\nInto the light...\n\nHigher...\nHigher...\nThrough the leaves...\n\n(Long instrumental featuring evolving pads, liquid breaks, melodic synth lead, and shimmering guitar)\n\n[Final Chorus]\n\nDays drift by\nWe don't have to know why\nBreathe tonight\nEverything feels alive\n\nDays drift by\nFloating into the sky\nStay with me\nStay with me\n\nDays drift by...\nDays drift by...\nDays drift by...\n\n(Fade into rainforest ambience and distant vocal echoes.)",
+    "lrc": "[Intro]\n[00:00.03] Morning light, take me there, take me there.\n[Verse 1]\n[00:45.92] Leaves above,\n[00:47.22] the river below,\n[00:48.52] every little heartbeat movin' slow.\n[00:51.32] Hands in the breeze,\n[00:52.92] nothin' to chase,\n[00:54.22] time disappears without a trace.\n[Pre-Chorus]\n[00:56.96] Hold me, don't let go.\n[01:00.94] Where we wander, flowers grow.\n[Chorus]\n[01:07.88] Days drift by, we don't have to know why.\n[01:13.40] Breathe tonight,\n[01:15.30] everything feels alive.\n[01:18.84] Days drift by, floatin' into the sky.\n[01:23.28] Stay with me.\n[01:24.84] Stay.\n[01:26.04] Stay with me.\n[01:27.58] Stay.\n[01:28.78] Stay.\n[01:37.84] Stay.\n[01:50.48] Clouds, clouds rollin' and fade away.\n[01:54.00] Every color melts into gray.\n[01:56.74] Then the sun finds his way.\n[02:00.29] Just like it always does.\n[02:03.14] Closer.\n[02:04.50] Closer.\n[02:05.86] Into the light.\n[02:07.30] Higher.\n[02:09.92] Higher.\n[Verse 2]\n[02:11.50] Through the leaves.\n[02:35.23] Days\n[02:36.06] drift by.\n[02:37.16] We don't have to know why.\n[Bridge]\n[02:40.90] Breathe tonight.\n[02:42.74] Everything feels alive.\n[02:46.38] Days drift by.\n[02:48.24] Floating into the sky.\n[02:50.82] Stay with me.\n[02:52.22] Stay\n[02:53.57] with me.\n[02:54.90] Stay with me.\n[03:02.78] Days drift by.\n[03:07.60] Days drift by.\n[03:30.92] Days drift by.\n"
+  },
+  "analysis": {
+    "summary": "The song captures a melancholic yet ethereal journey through time where moments dissolve like mist over a river, blending gritty noir aesthetics with dreamy liberation from reality.",
+    "overallMood": "ethereal and cinematic",
+    "themes": [
+      "Melancholy acceptance of passing time",
+      "Ethereal escapism",
+      "Noir atmosphere vs. natural beauty",
+      "Intimacy in stillness"
+    ],
+    "palette": [
+      "#2C3539",
+      "#8B0000",
+      "#D4AF37",
+      "#E6E6FA"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Hopeful anticipation",
+        "intensity": 0.76,
+        "colorHint": "#f5f5dc",
+        "start": 0.03
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Slow drifting melancholy",
+        "intensity": 0.63,
+        "colorHint": "#708090",
+        "start": 45.92
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Urgent tenderness",
+        "intensity": 0.6,
+        "colorHint": "#d2b48c",
+        "start": 56.96
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Transcendent release",
+        "intensity": 0.54,
+        "colorHint": "#e3f7ff",
+        "start": 67.88
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Repetitive trance state",
+        "intensity": 0.15,
+        "colorHint": "#556b2f",
+        "start": 131.5
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Spiritual ascent",
+        "intensity": 0.24,
+        "colorHint": "#fffae3",
+        "start": 160.9
+      }
+    ],
+    "keywords": [
+      {
+        "word": "drift",
+        "emotion": "weightless sorrow",
+        "imageryPrompt": "A leaf floating on a dark river under moonlight, slow motion water ripples reflecting distorted city lights."
+      },
+      {
+        "word": "gray",
+        "emotion": "melancholic fading",
+        "imageryPrompt": "Black and white film grain overlaying colorful clouds dissolving into monochrome mist over a foggy dockside street."
+      },
+      {
+        "word": "breathe",
+        "emotion": "relief and calm",
+        "imageryPrompt": "Close-up of chest rising against the night sky, soft glowing particles floating in air like dust motes in sunlight."
+      },
+      {
+        "word": "alive",
+        "emotion": "vibrant connection",
+        "imageryPrompt": "Flowers blooming rapidly on a cracked concrete rooftop with vibrant green stems contrasting against gritty urban background."
+      },
+      {
+        "word": "fade",
+        "emotion": "gentle disappearance",
+        "imageryPrompt": "A silhouette of an old steamboat drifting into thick fog until it becomes indistinguishable from the surrounding mist."
+      },
+      {
+        "word": "light",
+        "emotion": "divine arrival",
+        "imageryPrompt": "Beams of golden sunlight piercing through heavy storm clouds illuminating a dusty room filled with floating dust particles."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 42,
+      "mid": 29,
+      "close": 15
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0.03,
+        "intensity": 0.76
+      },
+      {
+        "name": "Verse 1",
+        "start": 45.92,
+        "intensity": 0.63
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 56.96,
+        "intensity": 0.6
+      },
+      {
+        "name": "Chorus",
+        "start": 67.88,
+        "intensity": 0.54
+      },
+      {
+        "name": "Verse 2",
+        "start": 131.5,
+        "intensity": 0.15
+      },
+      {
+        "name": "Bridge",
+        "start": 160.9,
+        "intensity": 0.24
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 68
+      },
+      {
+        "name": "Verse 1",
+        "presence": 83
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 87
+      },
+      {
+        "name": "Chorus",
+        "presence": 56
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          13.58
+        ],
+        [
+          63.34,
+          65.42
+        ],
+        [
+          120.3,
+          122.7
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "keys",
+        "woodwinds"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "days-drift-by-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

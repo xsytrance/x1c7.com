@@ -1,0 +1,874 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.032,
+      "end": 13.68,
+      "text": "Morning light, take me there, take me there.",
+      "words": [
+        {
+          "t": 0.032,
+          "text": "Morning"
+        },
+        {
+          "t": 2.12,
+          "text": "light,"
+        },
+        {
+          "t": 3.18,
+          "text": "take"
+        },
+        {
+          "t": 7.14,
+          "text": "me"
+        },
+        {
+          "t": 8.0,
+          "text": "there,"
+        },
+        {
+          "t": 8.76,
+          "text": "take"
+        },
+        {
+          "t": 12.62,
+          "text": "me"
+        },
+        {
+          "t": 13.38,
+          "text": "there."
+        }
+      ]
+    },
+    {
+      "start": 45.92,
+      "end": 46.92,
+      "text": "Leaves above,",
+      "words": [
+        {
+          "t": 45.92,
+          "text": "Leaves"
+        },
+        {
+          "t": 46.64,
+          "text": "above,"
+        }
+      ]
+    },
+    {
+      "start": 47.22,
+      "end": 48.3,
+      "text": "the river below,",
+      "words": [
+        {
+          "t": 47.22,
+          "text": "the"
+        },
+        {
+          "t": 47.54,
+          "text": "river"
+        },
+        {
+          "t": 47.82,
+          "text": "below,"
+        }
+      ]
+    },
+    {
+      "start": 48.52,
+      "end": 51.08,
+      "text": "every little heartbeat movin' slow.",
+      "words": [
+        {
+          "t": 48.52,
+          "text": "every"
+        },
+        {
+          "t": 49.06,
+          "text": "little"
+        },
+        {
+          "t": 49.52,
+          "text": "heartbeat"
+        },
+        {
+          "t": 50.16,
+          "text": "movin'"
+        },
+        {
+          "t": 50.8,
+          "text": "slow."
+        }
+      ]
+    },
+    {
+      "start": 51.32,
+      "end": 52.7,
+      "text": "Hands in the breeze,",
+      "words": [
+        {
+          "t": 51.32,
+          "text": "Hands"
+        },
+        {
+          "t": 51.84,
+          "text": "in"
+        },
+        {
+          "t": 52.22,
+          "text": "the"
+        },
+        {
+          "t": 52.36,
+          "text": "breeze,"
+        }
+      ]
+    },
+    {
+      "start": 52.92,
+      "end": 53.92,
+      "text": "nothin' to chase,",
+      "words": [
+        {
+          "t": 52.92,
+          "text": "nothin'"
+        },
+        {
+          "t": 53.44,
+          "text": "to"
+        },
+        {
+          "t": 53.58,
+          "text": "chase,"
+        }
+      ]
+    },
+    {
+      "start": 54.22,
+      "end": 56.48,
+      "text": "time disappears without a trace.",
+      "words": [
+        {
+          "t": 54.22,
+          "text": "time"
+        },
+        {
+          "t": 55.072,
+          "text": "disappears"
+        },
+        {
+          "t": 55.264,
+          "text": "without"
+        },
+        {
+          "t": 55.78,
+          "text": "a"
+        },
+        {
+          "t": 56.2,
+          "text": "trace."
+        }
+      ]
+    },
+    {
+      "start": 56.96,
+      "end": 59.66,
+      "text": "Hold me, don't let go.",
+      "words": [
+        {
+          "t": 56.96,
+          "text": "Hold"
+        },
+        {
+          "t": 57.52,
+          "text": "me,"
+        },
+        {
+          "t": 58.26,
+          "text": "don't"
+        },
+        {
+          "t": 59.0,
+          "text": "let"
+        },
+        {
+          "t": 59.18,
+          "text": "go."
+        }
+      ]
+    },
+    {
+      "start": 60.94,
+      "end": 65.18,
+      "text": "Where we wander, flowers grow.",
+      "words": [
+        {
+          "t": 60.94,
+          "text": "Where"
+        },
+        {
+          "t": 62.06,
+          "text": "we"
+        },
+        {
+          "t": 62.42,
+          "text": "wander,"
+        },
+        {
+          "t": 63.48,
+          "text": "flowers"
+        },
+        {
+          "t": 64.18,
+          "text": "grow."
+        }
+      ]
+    },
+    {
+      "start": 67.88,
+      "end": 72.2,
+      "text": "Days drift by, we don't have to know why.",
+      "words": [
+        {
+          "t": 67.88,
+          "text": "Days"
+        },
+        {
+          "t": 68.44,
+          "text": "drift"
+        },
+        {
+          "t": 69.08,
+          "text": "by,"
+        },
+        {
+          "t": 69.62,
+          "text": "we"
+        },
+        {
+          "t": 70.28,
+          "text": "don't"
+        },
+        {
+          "t": 70.86,
+          "text": "have"
+        },
+        {
+          "t": 71.08,
+          "text": "to"
+        },
+        {
+          "t": 71.22,
+          "text": "know"
+        },
+        {
+          "t": 71.64,
+          "text": "why."
+        }
+      ]
+    },
+    {
+      "start": 73.4,
+      "end": 74.78,
+      "text": "Breathe tonight,",
+      "words": [
+        {
+          "t": 73.4,
+          "text": "Breathe"
+        },
+        {
+          "t": 73.96,
+          "text": "tonight,"
+        }
+      ]
+    },
+    {
+      "start": 75.3,
+      "end": 77.74,
+      "text": "everything feels alive.",
+      "words": [
+        {
+          "t": 75.3,
+          "text": "everything"
+        },
+        {
+          "t": 75.98,
+          "text": "feels"
+        },
+        {
+          "t": 76.84,
+          "text": "alive."
+        }
+      ]
+    },
+    {
+      "start": 78.84,
+      "end": 82.96,
+      "text": "Days drift by, floatin' into the sky.",
+      "words": [
+        {
+          "t": 78.84,
+          "text": "Days"
+        },
+        {
+          "t": 79.4,
+          "text": "drift"
+        },
+        {
+          "t": 80.04,
+          "text": "by,"
+        },
+        {
+          "t": 80.56,
+          "text": "floatin'"
+        },
+        {
+          "t": 81.7,
+          "text": "into"
+        },
+        {
+          "t": 82.12,
+          "text": "the"
+        },
+        {
+          "t": 82.4,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 83.28,
+      "end": 84.44,
+      "text": "Stay with me.",
+      "words": [
+        {
+          "t": 83.28,
+          "text": "Stay"
+        },
+        {
+          "t": 83.8,
+          "text": "with"
+        },
+        {
+          "t": 84.16,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 84.84,
+      "end": 85.48,
+      "text": "Stay.",
+      "words": [
+        {
+          "t": 84.84,
+          "text": "Stay."
+        }
+      ]
+    },
+    {
+      "start": 86.04,
+      "end": 87.3,
+      "text": "Stay with me.",
+      "words": [
+        {
+          "t": 86.04,
+          "text": "Stay"
+        },
+        {
+          "t": 86.62,
+          "text": "with"
+        },
+        {
+          "t": 87.0,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 87.58,
+      "end": 88.0,
+      "text": "Stay.",
+      "words": [
+        {
+          "t": 87.58,
+          "text": "Stay."
+        }
+      ]
+    },
+    {
+      "start": 88.78,
+      "end": 89.34,
+      "text": "Stay.",
+      "words": [
+        {
+          "t": 88.78,
+          "text": "Stay."
+        }
+      ]
+    },
+    {
+      "start": 97.84,
+      "end": 98.68,
+      "text": "Stay.",
+      "words": [
+        {
+          "t": 97.84,
+          "text": "Stay."
+        }
+      ]
+    },
+    {
+      "start": 110.48,
+      "end": 113.74,
+      "text": "Clouds, clouds rollin' and fade away.",
+      "words": [
+        {
+          "t": 110.48,
+          "text": "Clouds,"
+        },
+        {
+          "t": 111.32,
+          "text": "clouds"
+        },
+        {
+          "t": 111.98,
+          "text": "rollin'"
+        },
+        {
+          "t": 112.7,
+          "text": "and"
+        },
+        {
+          "t": 112.9,
+          "text": "fade"
+        },
+        {
+          "t": 113.32,
+          "text": "away."
+        }
+      ]
+    },
+    {
+      "start": 114.0,
+      "end": 116.6,
+      "text": "Every color melts into gray.",
+      "words": [
+        {
+          "t": 114.0,
+          "text": "Every"
+        },
+        {
+          "t": 114.9,
+          "text": "color"
+        },
+        {
+          "t": 115.072,
+          "text": "melts"
+        },
+        {
+          "t": 115.58,
+          "text": "into"
+        },
+        {
+          "t": 116.14,
+          "text": "gray."
+        }
+      ]
+    },
+    {
+      "start": 116.74,
+      "end": 118.62,
+      "text": "Then the sun finds his way.",
+      "words": [
+        {
+          "t": 116.74,
+          "text": "Then"
+        },
+        {
+          "t": 116.94,
+          "text": "the"
+        },
+        {
+          "t": 117.14,
+          "text": "sun"
+        },
+        {
+          "t": 117.48,
+          "text": "finds"
+        },
+        {
+          "t": 118.0,
+          "text": "his"
+        },
+        {
+          "t": 118.36,
+          "text": "way."
+        }
+      ]
+    },
+    {
+      "start": 120.288,
+      "end": 122.2,
+      "text": "Just like it always does.",
+      "words": [
+        {
+          "t": 120.288,
+          "text": "Just"
+        },
+        {
+          "t": 120.46,
+          "text": "like"
+        },
+        {
+          "t": 120.8,
+          "text": "it"
+        },
+        {
+          "t": 121.16,
+          "text": "always"
+        },
+        {
+          "t": 121.66,
+          "text": "does."
+        }
+      ]
+    },
+    {
+      "start": 123.14,
+      "end": 123.7,
+      "text": "Closer.",
+      "words": [
+        {
+          "t": 123.14,
+          "text": "Closer."
+        }
+      ]
+    },
+    {
+      "start": 124.5,
+      "end": 125.06,
+      "text": "Closer.",
+      "words": [
+        {
+          "t": 124.5,
+          "text": "Closer."
+        }
+      ]
+    },
+    {
+      "start": 125.856,
+      "end": 127.08,
+      "text": "Into the light.",
+      "words": [
+        {
+          "t": 125.856,
+          "text": "Into"
+        },
+        {
+          "t": 126.02,
+          "text": "the"
+        },
+        {
+          "t": 126.5,
+          "text": "light."
+        }
+      ]
+    },
+    {
+      "start": 127.3,
+      "end": 128.064,
+      "text": "Higher.",
+      "words": [
+        {
+          "t": 127.3,
+          "text": "Higher."
+        }
+      ]
+    },
+    {
+      "start": 129.92,
+      "end": 130.48,
+      "text": "Higher.",
+      "words": [
+        {
+          "t": 129.92,
+          "text": "Higher."
+        }
+      ]
+    },
+    {
+      "start": 131.5,
+      "end": 132.62,
+      "text": "Through the leaves.",
+      "words": [
+        {
+          "t": 131.5,
+          "text": "Through"
+        },
+        {
+          "t": 131.6,
+          "text": "the"
+        },
+        {
+          "t": 131.98,
+          "text": "leaves."
+        }
+      ]
+    },
+    {
+      "start": 155.232,
+      "end": 155.46,
+      "text": "Days",
+      "words": [
+        {
+          "t": 155.232,
+          "text": "Days"
+        }
+      ]
+    },
+    {
+      "start": 156.064,
+      "end": 156.96,
+      "text": "drift by.",
+      "words": [
+        {
+          "t": 156.064,
+          "text": "drift"
+        },
+        {
+          "t": 156.32,
+          "text": "by."
+        }
+      ]
+    },
+    {
+      "start": 157.16,
+      "end": 159.328,
+      "text": "We don't have to know why.",
+      "words": [
+        {
+          "t": 157.16,
+          "text": "We"
+        },
+        {
+          "t": 157.56,
+          "text": "don't"
+        },
+        {
+          "t": 158.1,
+          "text": "have"
+        },
+        {
+          "t": 158.368,
+          "text": "to"
+        },
+        {
+          "t": 158.56,
+          "text": "know"
+        },
+        {
+          "t": 158.9,
+          "text": "why."
+        }
+      ]
+    },
+    {
+      "start": 160.896,
+      "end": 162.08,
+      "text": "Breathe tonight.",
+      "words": [
+        {
+          "t": 160.896,
+          "text": "Breathe"
+        },
+        {
+          "t": 161.12,
+          "text": "tonight."
+        }
+      ]
+    },
+    {
+      "start": 162.74,
+      "end": 164.832,
+      "text": "Everything feels alive.",
+      "words": [
+        {
+          "t": 162.74,
+          "text": "Everything"
+        },
+        {
+          "t": 163.3,
+          "text": "feels"
+        },
+        {
+          "t": 164.12,
+          "text": "alive."
+        }
+      ]
+    },
+    {
+      "start": 166.38,
+      "end": 167.84,
+      "text": "Days drift by.",
+      "words": [
+        {
+          "t": 166.38,
+          "text": "Days"
+        },
+        {
+          "t": 166.48,
+          "text": "drift"
+        },
+        {
+          "t": 167.3,
+          "text": "by."
+        }
+      ]
+    },
+    {
+      "start": 168.24,
+      "end": 170.24,
+      "text": "Floating into the sky.",
+      "words": [
+        {
+          "t": 168.24,
+          "text": "Floating"
+        },
+        {
+          "t": 168.768,
+          "text": "into"
+        },
+        {
+          "t": 169.472,
+          "text": "the"
+        },
+        {
+          "t": 169.68,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 170.816,
+      "end": 171.88,
+      "text": "Stay with me.",
+      "words": [
+        {
+          "t": 170.816,
+          "text": "Stay"
+        },
+        {
+          "t": 171.0,
+          "text": "with"
+        },
+        {
+          "t": 171.42,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 172.22,
+      "end": 172.92,
+      "text": "Stay",
+      "words": [
+        {
+          "t": 172.22,
+          "text": "Stay"
+        }
+      ]
+    },
+    {
+      "start": 173.568,
+      "end": 174.74,
+      "text": "with me.",
+      "words": [
+        {
+          "t": 173.568,
+          "text": "with"
+        },
+        {
+          "t": 174.12,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 174.9,
+      "end": 178.04,
+      "text": "Stay with me.",
+      "words": [
+        {
+          "t": 174.9,
+          "text": "Stay"
+        },
+        {
+          "t": 175.74,
+          "text": "with"
+        },
+        {
+          "t": 177.96,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 182.784,
+      "end": 185.72,
+      "text": "Days drift by.",
+      "words": [
+        {
+          "t": 182.784,
+          "text": "Days"
+        },
+        {
+          "t": 183.36,
+          "text": "drift"
+        },
+        {
+          "t": 184.76,
+          "text": "by."
+        }
+      ]
+    },
+    {
+      "start": 187.6,
+      "end": 191.0,
+      "text": "Days drift by.",
+      "words": [
+        {
+          "t": 187.6,
+          "text": "Days"
+        },
+        {
+          "t": 188.3,
+          "text": "drift"
+        },
+        {
+          "t": 189.38,
+          "text": "by."
+        }
+      ]
+    },
+    {
+      "start": 210.92,
+      "end": 212.32,
+      "text": "Days drift by.",
+      "words": [
+        {
+          "t": 210.92,
+          "text": "Days"
+        },
+        {
+          "t": 212.32,
+          "text": "drift"
+        },
+        {
+          "t": 212.32,
+          "text": "by."
+        }
+      ]
+    }
+  ]
+}

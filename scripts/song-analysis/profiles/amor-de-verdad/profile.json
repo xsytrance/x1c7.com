@@ -1,0 +1,287 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "amor-de-verdad",
+  "generatedAt": "2026-07-09T17:58:46.182Z",
+  "measured": {
+    "bpm": 99.38,
+    "duration": 159.6
+  },
+  "identity": {
+    "title": "Amor De Verdad",
+    "titleAlternates": [],
+    "genre": "Latin R&B",
+    "subGenres": [
+      "Alt-R&B",
+      "Dark Pop"
+    ],
+    "mood": "bittersweet, intimate, gritty, vulnerable",
+    "styleSentence": "A midtempo (100 BPM) Latin alt-R&B track featuring a raw female vocal with emotional cracks over edgy dark pop production, saturated sub-bass, punchy trap-inflected drums, and stark guitar/Rhodes stabs weaving through atmospheric pads.",
+    "language": "Spanish",
+    "energy": "medium",
+    "vocalStyle": "confessional, intimate female vocal with slight rasp"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/amor-de-verdad/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#081818",
+      "#181808",
+      "#181818",
+      "#382818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "A#",
+      "mode": "minor",
+      "confidence": 0.699
+    },
+    "boundaries": [
+      9.94,
+      13.84,
+      54.33,
+      57.96,
+      93.62,
+      98.82,
+      106.16,
+      149.35
+    ],
+    "brightness": 2690,
+    "dynamicsDb": 16.8
+  },
+  "lyrics": {
+    "official": true,
+    "language": "spanish",
+    "text": "[Intro]\nMe llamaste a las tres\ny yo también temblé\n\n[Verse 1]\nDijiste que temblabas, que no lo esperabas\nyo sentí lo mismo, pero me callé\nno me hables a las tres si en la mañana te vas\nquédate también cuando salga el sol\n\n[Pre-Chorus]\nNo me amarres con un beso y una piel\nno quiero el poder, quiero saber que vas a volver\n\n[Chorus]\nAy, mi amor, no me preguntes\ncuál es la receta, no hay ninguna, solo ven\nyo no quiero amor de cine\nquiero el que se queda cuando todo se apaga otra vez\neres lindo como el agua, pero el agua se va con el calor\nyo no quiero amor de cine\nquiero amor del de verdad\n\n[Verse 2]\nNo me des mil horas que se inventan\nno me armes desfiles que después se van\nsi soy tu gasolina, no me quemes y ya\ndime si somos dos o solo cuando te conviene a ti\n\n[Bridge]\nNo vendas tu alma, guárdala pa' ti\nno corras diez mil kilómetros por mí\nsolo cruza la calle cuando te llame a las tres\nlos héroes de película no se quedan al final\n\n[Final Chorus]\nyo no quiero amor de cine\nquiero el que se queda...\nquédate\nquédate\n\n[Outro]\nSomos uno... ¿o somos dos?\nquédate y lo sabré",
+    "lrc": "[Intro]\n[00:03.30] Me llamaste a las tres,\n[00:08.50] y yo también temblé.\n[Verse 1]\n[Pre-Chorus]\n[00:20.84] Dijiste que temblabas,\n[00:22.18] que no lo esperabas,\n[00:24.77] yo sentí lo mismo,\n[00:26.80] pero me callé.\n[00:29.98] No me hables a las tres, si en la mañana te vas,\n[00:35.37] quédate también cuando salga el sol.\n[00:40.60] No me amarre con un beso y una piel,\n[00:44.96] no quiero el poder,\n[00:47.46] quiero saber que vas a volver.\n[Chorus]\n[Drop]\n[00:58.52] Ay.\n[00:59.98] Mi amor,\n[01:01.62] no me preguntes cuál es la receta,\n[01:05.64] no hay ninguna,\n[01:06.92] solo ven.\n[01:09.70] Yo no quiero amor de cine,\n[01:13.74] quiero el té se queda cuando todo se apaga otra vez.\n[01:19.40] Eres lindo como el agua,\n[01:22.44] pero el agua se va con el calor.\n[01:28.80] Yo no quiero amor de cine,\n[01:31.00] quiero amor de él de verdad.\n[Bridge]\n[01:36.58] No me den mil horas que se inventan,\n[01:39.13] mamá más desfiles que después se van.\n[01:41.40] Si,\n[01:41.84] si tu gasolina no me come si ya,\n[01:43.84] dime si somos dos o solo cuando te comien a ti.\n[Outro]\n[01:47.59] No vengas tu alma,\n[01:48.62] guárdala pa' ti,\n[01:49.58] no corras diez mil kilómetros por mí.\n[01:52.27] Solo cruza la calle cuando te llame a las tres,\n[01:54.74] los héroes de película.\n[01:57.45] No se quedan al final,\n[01:59.39] yo no quiero amor de cine,\n[02:07.96] quiero el té se queda,\n[02:11.18] quédate,\n[02:14.86] quédate.\n[02:16.86] No me den mil horas que se inventan,\n[02:22.46] mamá más desfiles que después se van.\n[02:23.24] Si,\n[02:24.18] si tu gasolina no me come si ya,\n[02:24.18] dime si somos dos o solo cuando te queden a ti.\n[02:24.18] No se quedan al final,\n[02:24.24] yo no quiero amor de cine,\n[02:24.24] quiero el té se queda,\n[02:24.24] quédate,\n[02:24.24] quédate.\n[02:24.24] Su me insumó, asumó estado.\n[02:31.88] Quédate y lo sabré.\n[02:34.00] Tú me quitaste de ti.\n[02:37.32] Yo te quité.\n[02:37.38] Qué porco, qué porco.\n[02:37.82] Yo te quité yo te inventé.\n[02:38.88] Quédate y lo sabré.\n"
+  },
+  "analysis": {
+    "summary": "The song is a raw confessional about rejecting performative or fleeting romantic gestures in favor of authentic, enduring connection amidst vulnerability and fear. It contrasts cinematic illusions with gritty reality to demand genuine presence over empty promises.",
+    "overallMood": "Bittersweet",
+    "themes": [
+      "Authenticity vs Performance",
+      "Vulnerability",
+      "Fear of Abandonment",
+      "Urban Intimacy"
+    ],
+    "palette": [
+      "#1a0f2e",
+      "#c94b36",
+      "#8d755b",
+      "#eaddcf"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Trembling anticipation, quiet intimacy",
+        "intensity": 0.76,
+        "colorHint": "#1a0f2e",
+        "start": 3.3
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Internal conflict and suppressed fear",
+        "intensity": 0.69,
+        "colorHint": "#8d755b",
+        "start": 20.84
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Rising tension seeking clarity",
+        "intensity": 0.56,
+        "colorHint": "#c94b36",
+        "start": 20.84
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive rejection of illusions for truth",
+        "intensity": 0.89,
+        "colorHint": "#eaddcf",
+        "start": 58.52
+      },
+      {
+        "name": "Drop",
+        "emotion": "Melodic release and desperate plea",
+        "intensity": 0.54,
+        "colorHint": "#c94b36",
+        "start": 58.52
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Angry realization of futility in empty promises",
+        "intensity": 0.22,
+        "colorHint": "#1a0f2e",
+        "start": 96.58
+      },
+      {
+        "name": "Outro",
+        "emotion": "Resigned vulnerability and final plea for presence",
+        "intensity": 0.09,
+        "colorHint": "#8d755b",
+        "start": 107.59
+      }
+    ],
+    "keywords": [
+      {
+        "word": "temblé",
+        "emotion": "Raw physical vulnerability and fear",
+        "imageryPrompt": "A close-up of a hand shaking slightly in the dim light of an empty room, dust motes dancing in a single shaft of weak sunlight."
+      },
+      {
+        "word": "cine",
+        "emotion": "Disappointment with superficiality",
+        "imageryPrompt": "Faded black and white movie tickets lying on a dirty street corner next to an overflowing trash can, rain blurring the background signs."
+      },
+      {
+        "word": "agua",
+        "emotion": "Transient beauty turning into loss",
+        "imageryPrompt": "Clear water flowing rapidly down a cracked concrete drain in a dry city alleyway under harsh midday sun."
+      },
+      {
+        "word": "verdad",
+        "emotion": "Urgent need for reality over fantasy",
+        "imageryPrompt": "A rough, unpolished stone sitting firmly on the ground amidst swirling fog and debris in a gritty urban landscape."
+      },
+      {
+        "word": "guárdala",
+        "emotion": "Fierce boundary setting and self-preservation",
+        "imageryPrompt": "Heavy iron gates closing shut against a storm, casting long shadows over cracked pavement with sparks flying from the hinges."
+      },
+      {
+        "word": "porco",
+        "emotion": "Bitter accusation of worthlessness",
+        "imageryPrompt": "A wilted flower crushed under heavy tires in an alleyway, surrounded by scattered ash and cigarette butts."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 32,
+      "mid": 23,
+      "close": 19
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 3.3,
+        "intensity": 0.76
+      },
+      {
+        "name": "Verse 1",
+        "start": 20.84,
+        "intensity": 0.69
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 20.84,
+        "intensity": 0.56
+      },
+      {
+        "name": "Chorus",
+        "start": 58.52,
+        "intensity": 0.89
+      },
+      {
+        "name": "Drop",
+        "start": 58.52,
+        "intensity": 0.54
+      },
+      {
+        "name": "Bridge",
+        "start": 96.58,
+        "intensity": 0.22
+      },
+      {
+        "name": "Outro",
+        "start": 107.59,
+        "intensity": 0.09
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 47
+      },
+      {
+        "name": "Verse 1",
+        "presence": 72
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 78
+      },
+      {
+        "name": "Chorus",
+        "presence": 33
+      },
+      {
+        "name": "Drop",
+        "presence": 68
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          19.74
+        ],
+        [
+          36.38,
+          38.94
+        ],
+        [
+          53.18,
+          57.5
+        ],
+        [
+          60.14,
+          62.94
+        ]
+      ],
+      "risers": [
+        {
+          "t": 53.28,
+          "end": 57.5
+        },
+        {
+          "t": 59.6,
+          "end": 62.94
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "amor-de-verdad-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

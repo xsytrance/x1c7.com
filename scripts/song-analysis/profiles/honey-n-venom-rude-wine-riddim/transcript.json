@@ -1,0 +1,2888 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 1.568,
+      "end": 3.58,
+      "text": "You look sweet from far away",
+      "words": [
+        {
+          "t": 1.568,
+          "text": "You"
+        },
+        {
+          "t": 1.8,
+          "text": "look"
+        },
+        {
+          "t": 2.44,
+          "text": "sweet"
+        },
+        {
+          "t": 2.76,
+          "text": "from"
+        },
+        {
+          "t": 3.04,
+          "text": "far"
+        },
+        {
+          "t": 3.48,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 7.9,
+      "end": 9.2,
+      "text": "Till you get a taste,",
+      "words": [
+        {
+          "t": 7.9,
+          "text": "Till"
+        },
+        {
+          "t": 8.0,
+          "text": "you"
+        },
+        {
+          "t": 8.12,
+          "text": "get"
+        },
+        {
+          "t": 8.44,
+          "text": "a"
+        },
+        {
+          "t": 8.76,
+          "text": "taste,"
+        }
+      ]
+    },
+    {
+      "start": 9.36,
+      "end": 9.8,
+      "text": "taste,",
+      "words": [
+        {
+          "t": 9.36,
+          "text": "taste,"
+        }
+      ]
+    },
+    {
+      "start": 9.92,
+      "end": 10.32,
+      "text": "taste,",
+      "words": [
+        {
+          "t": 9.92,
+          "text": "taste,"
+        }
+      ]
+    },
+    {
+      "start": 10.44,
+      "end": 11.08,
+      "text": "taste,",
+      "words": [
+        {
+          "t": 10.44,
+          "text": "taste,"
+        }
+      ]
+    },
+    {
+      "start": 11.2,
+      "end": 11.78,
+      "text": "taste,",
+      "words": [
+        {
+          "t": 11.2,
+          "text": "taste,"
+        }
+      ]
+    },
+    {
+      "start": 11.78,
+      "end": 12.38,
+      "text": "taste",
+      "words": [
+        {
+          "t": 11.78,
+          "text": "taste"
+        }
+      ]
+    },
+    {
+      "start": 12.38,
+      "end": 13.92,
+      "text": "Honey and venom,",
+      "words": [
+        {
+          "t": 12.38,
+          "text": "Honey"
+        },
+        {
+          "t": 13.216,
+          "text": "and"
+        },
+        {
+          "t": 13.68,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 14.18,
+      "end": 14.6,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 14.18,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 14.74,
+      "end": 15.136,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 14.74,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 15.34,
+      "end": 15.74,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 15.34,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 15.98,
+      "end": 16.192,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 15.98,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 16.58,
+      "end": 17.02,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 16.58,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 17.18,
+      "end": 17.52,
+      "text": "venom",
+      "words": [
+        {
+          "t": 17.18,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 18.12,
+      "end": 19.02,
+      "text": "Honey and venom,",
+      "words": [
+        {
+          "t": 18.12,
+          "text": "Honey"
+        },
+        {
+          "t": 18.22,
+          "text": "and"
+        },
+        {
+          "t": 18.58,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 19.14,
+      "end": 19.56,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 19.14,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 19.72,
+      "end": 20.032,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 19.72,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 20.36,
+      "end": 20.576,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 20.36,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 20.96,
+      "end": 21.184,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 20.96,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 21.54,
+      "end": 21.54,
+      "text": "venom,",
+      "words": [
+        {
+          "t": 21.54,
+          "text": "venom,"
+        }
+      ]
+    },
+    {
+      "start": 21.54,
+      "end": 21.824,
+      "text": "venom",
+      "words": [
+        {
+          "t": 21.54,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 22.6,
+      "end": 22.7,
+      "text": "Honey",
+      "words": [
+        {
+          "t": 22.6,
+          "text": "Honey"
+        }
+      ]
+    },
+    {
+      "start": 23.264,
+      "end": 25.3,
+      "text": "and venom, baby that's your style",
+      "words": [
+        {
+          "t": 23.264,
+          "text": "and"
+        },
+        {
+          "t": 23.62,
+          "text": "venom,"
+        },
+        {
+          "t": 24.12,
+          "text": "baby"
+        },
+        {
+          "t": 24.512,
+          "text": "that's"
+        },
+        {
+          "t": 24.9,
+          "text": "your"
+        },
+        {
+          "t": 24.92,
+          "text": "style"
+        }
+      ]
+    },
+    {
+      "start": 25.3,
+      "end": 27.74,
+      "text": "Kiss me deep while you grind for a while",
+      "words": [
+        {
+          "t": 25.3,
+          "text": "Kiss"
+        },
+        {
+          "t": 25.74,
+          "text": "me"
+        },
+        {
+          "t": 25.96,
+          "text": "deep"
+        },
+        {
+          "t": 26.42,
+          "text": "while"
+        },
+        {
+          "t": 26.66,
+          "text": "you"
+        },
+        {
+          "t": 26.8,
+          "text": "grind"
+        },
+        {
+          "t": 27.06,
+          "text": "for"
+        },
+        {
+          "t": 27.24,
+          "text": "a"
+        },
+        {
+          "t": 27.48,
+          "text": "while"
+        }
+      ]
+    },
+    {
+      "start": 27.74,
+      "end": 30.16,
+      "text": "Honey and venom, got me losing my head",
+      "words": [
+        {
+          "t": 27.74,
+          "text": "Honey"
+        },
+        {
+          "t": 28.22,
+          "text": "and"
+        },
+        {
+          "t": 28.56,
+          "text": "venom,"
+        },
+        {
+          "t": 29.0,
+          "text": "got"
+        },
+        {
+          "t": 29.12,
+          "text": "me"
+        },
+        {
+          "t": 29.26,
+          "text": "losing"
+        },
+        {
+          "t": 29.48,
+          "text": "my"
+        },
+        {
+          "t": 29.78,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 30.16,
+      "end": 32.66,
+      "text": "Both hands on my waist, got me wild in your bed",
+      "words": [
+        {
+          "t": 30.16,
+          "text": "Both"
+        },
+        {
+          "t": 30.38,
+          "text": "hands"
+        },
+        {
+          "t": 30.7,
+          "text": "on"
+        },
+        {
+          "t": 31.0,
+          "text": "my"
+        },
+        {
+          "t": 31.16,
+          "text": "waist,"
+        },
+        {
+          "t": 31.5,
+          "text": "got"
+        },
+        {
+          "t": 31.6,
+          "text": "me"
+        },
+        {
+          "t": 31.74,
+          "text": "wild"
+        },
+        {
+          "t": 32.04,
+          "text": "in"
+        },
+        {
+          "t": 32.26,
+          "text": "your"
+        },
+        {
+          "t": 32.38,
+          "text": "bed"
+        }
+      ]
+    },
+    {
+      "start": 32.66,
+      "end": 35.48,
+      "text": "Honey and venom, breasts in the strobe light",
+      "words": [
+        {
+          "t": 32.66,
+          "text": "Honey"
+        },
+        {
+          "t": 33.12,
+          "text": "and"
+        },
+        {
+          "t": 33.54,
+          "text": "venom,"
+        },
+        {
+          "t": 34.08,
+          "text": "breasts"
+        },
+        {
+          "t": 34.34,
+          "text": "in"
+        },
+        {
+          "t": 34.68,
+          "text": "the"
+        },
+        {
+          "t": 34.86,
+          "text": "strobe"
+        },
+        {
+          "t": 35.22,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 35.48,
+      "end": 37.92,
+      "text": "Heart says more while my dress riding up high",
+      "words": [
+        {
+          "t": 35.48,
+          "text": "Heart"
+        },
+        {
+          "t": 35.76,
+          "text": "says"
+        },
+        {
+          "t": 36.02,
+          "text": "more"
+        },
+        {
+          "t": 36.32,
+          "text": "while"
+        },
+        {
+          "t": 36.6,
+          "text": "my"
+        },
+        {
+          "t": 36.74,
+          "text": "dress"
+        },
+        {
+          "t": 37.0,
+          "text": "riding"
+        },
+        {
+          "t": 37.32,
+          "text": "up"
+        },
+        {
+          "t": 37.62,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 37.92,
+      "end": 40.12,
+      "text": "Honey and venom, everybody can tell",
+      "words": [
+        {
+          "t": 37.92,
+          "text": "Honey"
+        },
+        {
+          "t": 38.26,
+          "text": "and"
+        },
+        {
+          "t": 38.52,
+          "text": "venom,"
+        },
+        {
+          "t": 39.02,
+          "text": "everybody"
+        },
+        {
+          "t": 39.26,
+          "text": "can"
+        },
+        {
+          "t": 39.74,
+          "text": "tell"
+        }
+      ]
+    },
+    {
+      "start": 40.12,
+      "end": 42.68,
+      "text": "You look like heaven but we fucking like hell",
+      "words": [
+        {
+          "t": 40.12,
+          "text": "You"
+        },
+        {
+          "t": 40.46,
+          "text": "look"
+        },
+        {
+          "t": 40.76,
+          "text": "like"
+        },
+        {
+          "t": 41.08,
+          "text": "heaven"
+        },
+        {
+          "t": 41.36,
+          "text": "but"
+        },
+        {
+          "t": 41.58,
+          "text": "we"
+        },
+        {
+          "t": 41.72,
+          "text": "fucking"
+        },
+        {
+          "t": 41.96,
+          "text": "like"
+        },
+        {
+          "t": 42.24,
+          "text": "hell"
+        }
+      ]
+    },
+    {
+      "start": 42.69,
+      "end": 45.3,
+      "text": "Aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 42.69,
+          "text": "Aye,"
+        },
+        {
+          "t": 43.38,
+          "text": "aye,"
+        },
+        {
+          "t": 43.7,
+          "text": "aye,"
+        },
+        {
+          "t": 44.08,
+          "text": "aye,"
+        },
+        {
+          "t": 44.58,
+          "text": "aye,"
+        },
+        {
+          "t": 44.84,
+          "text": "aye,"
+        },
+        {
+          "t": 45.12,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 45.3,
+      "end": 46.42,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 45.3,
+          "text": "Honey"
+        },
+        {
+          "t": 45.664,
+          "text": "and"
+        },
+        {
+          "t": 46.0,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 47.91,
+      "end": 50.24,
+      "text": "Aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 47.91,
+          "text": "Aye,"
+        },
+        {
+          "t": 48.36,
+          "text": "aye,"
+        },
+        {
+          "t": 48.68,
+          "text": "aye,"
+        },
+        {
+          "t": 49.1,
+          "text": "aye,"
+        },
+        {
+          "t": 49.62,
+          "text": "aye,"
+        },
+        {
+          "t": 49.82,
+          "text": "aye,"
+        },
+        {
+          "t": 50.2,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 50.304,
+      "end": 51.42,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 50.304,
+          "text": "Honey"
+        },
+        {
+          "t": 50.656,
+          "text": "and"
+        },
+        {
+          "t": 51.0,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 51.42,
+      "end": 54.04,
+      "text": "Yeah, she walk in, she walk in slow motion",
+      "words": [
+        {
+          "t": 51.42,
+          "text": "Yeah,"
+        },
+        {
+          "t": 51.74,
+          "text": "she"
+        },
+        {
+          "t": 51.98,
+          "text": "walk"
+        },
+        {
+          "t": 52.32,
+          "text": "in,"
+        },
+        {
+          "t": 52.7,
+          "text": "she"
+        },
+        {
+          "t": 52.96,
+          "text": "walk"
+        },
+        {
+          "t": 53.22,
+          "text": "in"
+        },
+        {
+          "t": 53.38,
+          "text": "slow"
+        },
+        {
+          "t": 53.58,
+          "text": "motion"
+        }
+      ]
+    },
+    {
+      "start": 54.04,
+      "end": 56.38,
+      "text": "Whole room freeze up, cold in the smile",
+      "words": [
+        {
+          "t": 54.04,
+          "text": "Whole"
+        },
+        {
+          "t": 54.46,
+          "text": "room"
+        },
+        {
+          "t": 54.82,
+          "text": "freeze"
+        },
+        {
+          "t": 55.14,
+          "text": "up,"
+        },
+        {
+          "t": 55.48,
+          "text": "cold"
+        },
+        {
+          "t": 55.78,
+          "text": "in"
+        },
+        {
+          "t": 56.02,
+          "text": "the"
+        },
+        {
+          "t": 56.1,
+          "text": "smile"
+        }
+      ]
+    },
+    {
+      "start": 56.38,
+      "end": 57.62,
+      "text": "But the lips say deep",
+      "words": [
+        {
+          "t": 56.38,
+          "text": "But"
+        },
+        {
+          "t": 56.6,
+          "text": "the"
+        },
+        {
+          "t": 56.74,
+          "text": "lips"
+        },
+        {
+          "t": 57.04,
+          "text": "say"
+        },
+        {
+          "t": 57.26,
+          "text": "deep"
+        }
+      ]
+    },
+    {
+      "start": 57.62,
+      "end": 58.84,
+      "text": "But they got rhythm",
+      "words": [
+        {
+          "t": 57.62,
+          "text": "But"
+        },
+        {
+          "t": 58.1,
+          "text": "they"
+        },
+        {
+          "t": 58.3,
+          "text": "got"
+        },
+        {
+          "t": 58.5,
+          "text": "rhythm"
+        }
+      ]
+    },
+    {
+      "start": 58.84,
+      "end": 60.08,
+      "text": "Skin like steel",
+      "words": [
+        {
+          "t": 58.84,
+          "text": "Skin"
+        },
+        {
+          "t": 59.36,
+          "text": "like"
+        },
+        {
+          "t": 59.72,
+          "text": "steel"
+        }
+      ]
+    },
+    {
+      "start": 60.08,
+      "end": 62.22,
+      "text": "Sweet when she whining on the waistline",
+      "words": [
+        {
+          "t": 60.08,
+          "text": "Sweet"
+        },
+        {
+          "t": 60.44,
+          "text": "when"
+        },
+        {
+          "t": 60.94,
+          "text": "she"
+        },
+        {
+          "t": 61.1,
+          "text": "whining"
+        },
+        {
+          "t": 61.4,
+          "text": "on"
+        },
+        {
+          "t": 61.62,
+          "text": "the"
+        },
+        {
+          "t": 61.72,
+          "text": "waistline"
+        }
+      ]
+    },
+    {
+      "start": 62.22,
+      "end": 63.2,
+      "text": "Milk bumming, no",
+      "words": [
+        {
+          "t": 62.22,
+          "text": "Milk"
+        },
+        {
+          "t": 62.58,
+          "text": "bumming,"
+        },
+        {
+          "t": 63.02,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 63.88,
+      "end": 65.1,
+      "text": "Fire burning in the sugar",
+      "words": [
+        {
+          "t": 63.88,
+          "text": "Fire"
+        },
+        {
+          "t": 63.98,
+          "text": "burning"
+        },
+        {
+          "t": 64.52,
+          "text": "in"
+        },
+        {
+          "t": 64.74,
+          "text": "the"
+        },
+        {
+          "t": 64.82,
+          "text": "sugar"
+        }
+      ]
+    },
+    {
+      "start": 65.15,
+      "end": 67.6,
+      "text": "Pretty little waist and a king to a lover",
+      "words": [
+        {
+          "t": 65.15,
+          "text": "Pretty"
+        },
+        {
+          "t": 65.7,
+          "text": "little"
+        },
+        {
+          "t": 65.98,
+          "text": "waist"
+        },
+        {
+          "t": 66.42,
+          "text": "and"
+        },
+        {
+          "t": 66.58,
+          "text": "a"
+        },
+        {
+          "t": 66.72,
+          "text": "king"
+        },
+        {
+          "t": 66.94,
+          "text": "to"
+        },
+        {
+          "t": 67.16,
+          "text": "a"
+        },
+        {
+          "t": 67.32,
+          "text": "lover"
+        }
+      ]
+    },
+    {
+      "start": 67.6,
+      "end": 70.1,
+      "text": "One minute halo, next minute dawn",
+      "words": [
+        {
+          "t": 67.6,
+          "text": "One"
+        },
+        {
+          "t": 68.2,
+          "text": "minute"
+        },
+        {
+          "t": 68.56,
+          "text": "halo,"
+        },
+        {
+          "t": 69.1,
+          "text": "next"
+        },
+        {
+          "t": 69.44,
+          "text": "minute"
+        },
+        {
+          "t": 69.76,
+          "text": "dawn"
+        }
+      ]
+    },
+    {
+      "start": 70.1,
+      "end": 72.68,
+      "text": "Everybody know she wicked, still everybody swan",
+      "words": [
+        {
+          "t": 70.1,
+          "text": "Everybody"
+        },
+        {
+          "t": 70.52,
+          "text": "know"
+        },
+        {
+          "t": 70.92,
+          "text": "she"
+        },
+        {
+          "t": 71.08,
+          "text": "wicked,"
+        },
+        {
+          "t": 71.38,
+          "text": "still"
+        },
+        {
+          "t": 71.58,
+          "text": "everybody"
+        },
+        {
+          "t": 72.04,
+          "text": "swan"
+        }
+      ]
+    },
+    {
+      "start": 72.68,
+      "end": 77.56,
+      "text": "I know, I know, but I still come close",
+      "words": [
+        {
+          "t": 72.68,
+          "text": "I"
+        },
+        {
+          "t": 73.2,
+          "text": "know,"
+        },
+        {
+          "t": 74.0,
+          "text": "I"
+        },
+        {
+          "t": 74.7,
+          "text": "know,"
+        },
+        {
+          "t": 75.26,
+          "text": "but"
+        },
+        {
+          "t": 75.74,
+          "text": "I"
+        },
+        {
+          "t": 75.98,
+          "text": "still"
+        },
+        {
+          "t": 76.36,
+          "text": "come"
+        },
+        {
+          "t": 76.88,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 78.08,
+      "end": 82.82,
+      "text": "I know, I know, still dancing with ghosts",
+      "words": [
+        {
+          "t": 78.08,
+          "text": "I"
+        },
+        {
+          "t": 78.46,
+          "text": "know,"
+        },
+        {
+          "t": 79.0,
+          "text": "I"
+        },
+        {
+          "t": 79.62,
+          "text": "know,"
+        },
+        {
+          "t": 80.28,
+          "text": "still"
+        },
+        {
+          "t": 80.86,
+          "text": "dancing"
+        },
+        {
+          "t": 81.62,
+          "text": "with"
+        },
+        {
+          "t": 82.14,
+          "text": "ghosts"
+        }
+      ]
+    },
+    {
+      "start": 82.82,
+      "end": 85.16,
+      "text": "Honey and venom, baby that's your style",
+      "words": [
+        {
+          "t": 82.82,
+          "text": "Honey"
+        },
+        {
+          "t": 83.28,
+          "text": "and"
+        },
+        {
+          "t": 83.52,
+          "text": "venom,"
+        },
+        {
+          "t": 84.04,
+          "text": "baby"
+        },
+        {
+          "t": 84.38,
+          "text": "that's"
+        },
+        {
+          "t": 84.76,
+          "text": "your"
+        },
+        {
+          "t": 84.82,
+          "text": "style"
+        }
+      ]
+    },
+    {
+      "start": 85.18,
+      "end": 87.54,
+      "text": "Kiss me deep while you grind for a while",
+      "words": [
+        {
+          "t": 85.18,
+          "text": "Kiss"
+        },
+        {
+          "t": 85.68,
+          "text": "me"
+        },
+        {
+          "t": 85.88,
+          "text": "deep"
+        },
+        {
+          "t": 86.38,
+          "text": "while"
+        },
+        {
+          "t": 86.58,
+          "text": "you"
+        },
+        {
+          "t": 86.72,
+          "text": "grind"
+        },
+        {
+          "t": 86.96,
+          "text": "for"
+        },
+        {
+          "t": 87.16,
+          "text": "a"
+        },
+        {
+          "t": 87.42,
+          "text": "while"
+        }
+      ]
+    },
+    {
+      "start": 87.62,
+      "end": 88.84,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 87.62,
+          "text": "Honey"
+        },
+        {
+          "t": 88.18,
+          "text": "and"
+        },
+        {
+          "t": 88.5,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 88.84,
+      "end": 90.04,
+      "text": "Got me losing my head",
+      "words": [
+        {
+          "t": 88.84,
+          "text": "Got"
+        },
+        {
+          "t": 89.02,
+          "text": "me"
+        },
+        {
+          "t": 89.14,
+          "text": "losing"
+        },
+        {
+          "t": 89.38,
+          "text": "my"
+        },
+        {
+          "t": 89.72,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 90.04,
+      "end": 91.32,
+      "text": "Both hands on my waist",
+      "words": [
+        {
+          "t": 90.04,
+          "text": "Both"
+        },
+        {
+          "t": 90.32,
+          "text": "hands"
+        },
+        {
+          "t": 90.72,
+          "text": "on"
+        },
+        {
+          "t": 90.96,
+          "text": "my"
+        },
+        {
+          "t": 91.1,
+          "text": "waist"
+        }
+      ]
+    },
+    {
+      "start": 91.32,
+      "end": 92.6,
+      "text": "Got me wild and you're dead",
+      "words": [
+        {
+          "t": 91.32,
+          "text": "Got"
+        },
+        {
+          "t": 91.52,
+          "text": "me"
+        },
+        {
+          "t": 91.62,
+          "text": "wild"
+        },
+        {
+          "t": 91.96,
+          "text": "and"
+        },
+        {
+          "t": 92.18,
+          "text": "you're"
+        },
+        {
+          "t": 92.36,
+          "text": "dead"
+        }
+      ]
+    },
+    {
+      "start": 92.6,
+      "end": 93.9,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 92.6,
+          "text": "Honey"
+        },
+        {
+          "t": 93.02,
+          "text": "and"
+        },
+        {
+          "t": 93.48,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 94.02,
+      "end": 95.38,
+      "text": "Pressing in the strobe light",
+      "words": [
+        {
+          "t": 94.02,
+          "text": "Pressing"
+        },
+        {
+          "t": 94.62,
+          "text": "in"
+        },
+        {
+          "t": 94.7,
+          "text": "the"
+        },
+        {
+          "t": 94.78,
+          "text": "strobe"
+        },
+        {
+          "t": 95.14,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 95.38,
+      "end": 97.8,
+      "text": "Heart says more while my dress riding up high",
+      "words": [
+        {
+          "t": 95.38,
+          "text": "Heart"
+        },
+        {
+          "t": 95.66,
+          "text": "says"
+        },
+        {
+          "t": 95.94,
+          "text": "more"
+        },
+        {
+          "t": 96.24,
+          "text": "while"
+        },
+        {
+          "t": 96.54,
+          "text": "my"
+        },
+        {
+          "t": 96.66,
+          "text": "dress"
+        },
+        {
+          "t": 96.92,
+          "text": "riding"
+        },
+        {
+          "t": 97.26,
+          "text": "up"
+        },
+        {
+          "t": 97.54,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 97.8,
+      "end": 98.76,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 97.8,
+          "text": "Honey"
+        },
+        {
+          "t": 98.2,
+          "text": "and"
+        },
+        {
+          "t": 98.46,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 98.76,
+      "end": 100.04,
+      "text": "Everybody can tell",
+      "words": [
+        {
+          "t": 98.76,
+          "text": "Everybody"
+        },
+        {
+          "t": 99.2,
+          "text": "can"
+        },
+        {
+          "t": 99.64,
+          "text": "tell"
+        }
+      ]
+    },
+    {
+      "start": 100.04,
+      "end": 102.56,
+      "text": "You look like heaven but we fucking like hell",
+      "words": [
+        {
+          "t": 100.04,
+          "text": "You"
+        },
+        {
+          "t": 100.4,
+          "text": "look"
+        },
+        {
+          "t": 100.58,
+          "text": "like"
+        },
+        {
+          "t": 100.96,
+          "text": "heaven"
+        },
+        {
+          "t": 101.32,
+          "text": "but"
+        },
+        {
+          "t": 101.5,
+          "text": "we"
+        },
+        {
+          "t": 101.64,
+          "text": "fucking"
+        },
+        {
+          "t": 101.9,
+          "text": "like"
+        },
+        {
+          "t": 102.18,
+          "text": "hell"
+        }
+      ]
+    },
+    {
+      "start": 102.68,
+      "end": 105.08,
+      "text": "Aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 102.68,
+          "text": "Aye,"
+        },
+        {
+          "t": 103.3,
+          "text": "aye,"
+        },
+        {
+          "t": 103.6,
+          "text": "aye,"
+        },
+        {
+          "t": 104.02,
+          "text": "aye,"
+        },
+        {
+          "t": 104.52,
+          "text": "aye,"
+        },
+        {
+          "t": 104.74,
+          "text": "aye,"
+        },
+        {
+          "t": 104.98,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 105.248,
+      "end": 106.38,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 105.248,
+          "text": "Honey"
+        },
+        {
+          "t": 105.568,
+          "text": "and"
+        },
+        {
+          "t": 105.96,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 107.82,
+      "end": 110.16,
+      "text": "Aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 107.82,
+          "text": "Aye,"
+        },
+        {
+          "t": 108.26,
+          "text": "aye,"
+        },
+        {
+          "t": 108.58,
+          "text": "aye,"
+        },
+        {
+          "t": 109.04,
+          "text": "aye,"
+        },
+        {
+          "t": 109.52,
+          "text": "aye,"
+        },
+        {
+          "t": 109.8,
+          "text": "aye,"
+        },
+        {
+          "t": 110.1,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 110.16,
+      "end": 111.4,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 110.16,
+          "text": "Honey"
+        },
+        {
+          "t": 110.592,
+          "text": "and"
+        },
+        {
+          "t": 110.94,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 112.22,
+      "end": 113.1,
+      "text": "Wine slow",
+      "words": [
+        {
+          "t": 112.22,
+          "text": "Wine"
+        },
+        {
+          "t": 112.78,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 114.22,
+      "end": 115.02,
+      "text": "Don't stop",
+      "words": [
+        {
+          "t": 114.22,
+          "text": "Don't"
+        },
+        {
+          "t": 114.78,
+          "text": "stop"
+        }
+      ]
+    },
+    {
+      "start": 115.6,
+      "end": 116.3,
+      "text": "Hands high",
+      "words": [
+        {
+          "t": 115.6,
+          "text": "Hands"
+        },
+        {
+          "t": 115.88,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 116.3,
+      "end": 116.94,
+      "text": "Face drop",
+      "words": [
+        {
+          "t": 116.3,
+          "text": "Face"
+        },
+        {
+          "t": 116.62,
+          "text": "drop"
+        }
+      ]
+    },
+    {
+      "start": 116.94,
+      "end": 117.5,
+      "text": "Wine low",
+      "words": [
+        {
+          "t": 116.94,
+          "text": "Wine"
+        },
+        {
+          "t": 117.28,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 117.62,
+      "end": 118.2,
+      "text": "Tick tock",
+      "words": [
+        {
+          "t": 117.62,
+          "text": "Tick"
+        },
+        {
+          "t": 117.9,
+          "text": "tock"
+        }
+      ]
+    },
+    {
+      "start": 118.2,
+      "end": 118.8,
+      "text": "Wine slow",
+      "words": [
+        {
+          "t": 118.2,
+          "text": "Wine"
+        },
+        {
+          "t": 118.48,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 118.8,
+      "end": 119.36,
+      "text": "Wine slow",
+      "words": [
+        {
+          "t": 118.8,
+          "text": "Wine"
+        },
+        {
+          "t": 119.12,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 119.36,
+      "end": 120.0,
+      "text": "Don't stop",
+      "words": [
+        {
+          "t": 119.36,
+          "text": "Don't"
+        },
+        {
+          "t": 119.74,
+          "text": "stop"
+        }
+      ]
+    },
+    {
+      "start": 120.0,
+      "end": 120.64,
+      "text": "Don't stop",
+      "words": [
+        {
+          "t": 120.0,
+          "text": "Don't"
+        },
+        {
+          "t": 120.38,
+          "text": "stop"
+        }
+      ]
+    },
+    {
+      "start": 120.64,
+      "end": 121.3,
+      "text": "Hands high",
+      "words": [
+        {
+          "t": 120.64,
+          "text": "Hands"
+        },
+        {
+          "t": 121.08,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 121.3,
+      "end": 121.88,
+      "text": "Face drop",
+      "words": [
+        {
+          "t": 121.3,
+          "text": "Face"
+        },
+        {
+          "t": 121.58,
+          "text": "drop"
+        }
+      ]
+    },
+    {
+      "start": 121.88,
+      "end": 122.52,
+      "text": "Wine low",
+      "words": [
+        {
+          "t": 121.88,
+          "text": "Wine"
+        },
+        {
+          "t": 122.26,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 122.52,
+      "end": 123.12,
+      "text": "Tick tock",
+      "words": [
+        {
+          "t": 122.52,
+          "text": "Tick"
+        },
+        {
+          "t": 123.02,
+          "text": "tock"
+        }
+      ]
+    },
+    {
+      "start": 123.12,
+      "end": 123.76,
+      "text": "You got the sugar",
+      "words": [
+        {
+          "t": 123.12,
+          "text": "You"
+        },
+        {
+          "t": 123.28,
+          "text": "got"
+        },
+        {
+          "t": 123.42,
+          "text": "the"
+        },
+        {
+          "t": 123.54,
+          "text": "sugar"
+        }
+      ]
+    },
+    {
+      "start": 124.36,
+      "end": 125.28,
+      "text": "You want the taste",
+      "words": [
+        {
+          "t": 124.36,
+          "text": "You"
+        },
+        {
+          "t": 124.46,
+          "text": "want"
+        },
+        {
+          "t": 124.68,
+          "text": "the"
+        },
+        {
+          "t": 124.8,
+          "text": "taste"
+        }
+      ]
+    },
+    {
+      "start": 125.28,
+      "end": 126.4,
+      "text": "Bent on the speaker",
+      "words": [
+        {
+          "t": 125.28,
+          "text": "Bent"
+        },
+        {
+          "t": 125.66,
+          "text": "on"
+        },
+        {
+          "t": 125.94,
+          "text": "the"
+        },
+        {
+          "t": 126.04,
+          "text": "speaker"
+        }
+      ]
+    },
+    {
+      "start": 126.4,
+      "end": 127.72,
+      "text": "Hands on my waist",
+      "words": [
+        {
+          "t": 126.4,
+          "text": "Hands"
+        },
+        {
+          "t": 126.96,
+          "text": "on"
+        },
+        {
+          "t": 127.18,
+          "text": "my"
+        },
+        {
+          "t": 127.3,
+          "text": "waist"
+        }
+      ]
+    },
+    {
+      "start": 127.72,
+      "end": 128.94,
+      "text": "One more wine",
+      "words": [
+        {
+          "t": 127.72,
+          "text": "One"
+        },
+        {
+          "t": 128.1,
+          "text": "more"
+        },
+        {
+          "t": 128.46,
+          "text": "wine"
+        }
+      ]
+    },
+    {
+      "start": 128.94,
+      "end": 130.04,
+      "text": "One more night",
+      "words": [
+        {
+          "t": 128.94,
+          "text": "One"
+        },
+        {
+          "t": 129.4,
+          "text": "more"
+        },
+        {
+          "t": 129.72,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 130.04,
+      "end": 132.52,
+      "text": "Then we do it in the dark on the neon light",
+      "words": [
+        {
+          "t": 130.04,
+          "text": "Then"
+        },
+        {
+          "t": 130.3,
+          "text": "we"
+        },
+        {
+          "t": 130.4,
+          "text": "do"
+        },
+        {
+          "t": 130.6,
+          "text": "it"
+        },
+        {
+          "t": 130.76,
+          "text": "in"
+        },
+        {
+          "t": 130.92,
+          "text": "the"
+        },
+        {
+          "t": 131.04,
+          "text": "dark"
+        },
+        {
+          "t": 131.36,
+          "text": "on"
+        },
+        {
+          "t": 131.54,
+          "text": "the"
+        },
+        {
+          "t": 131.64,
+          "text": "neon"
+        },
+        {
+          "t": 132.08,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 132.52,
+      "end": 133.9,
+      "text": "Crap on the bumper",
+      "words": [
+        {
+          "t": 132.52,
+          "text": "Crap"
+        },
+        {
+          "t": 133.16,
+          "text": "on"
+        },
+        {
+          "t": 133.44,
+          "text": "the"
+        },
+        {
+          "t": 133.48,
+          "text": "bumper"
+        }
+      ]
+    },
+    {
+      "start": 133.9,
+      "end": 135.08,
+      "text": "Grip on the thigh",
+      "words": [
+        {
+          "t": 133.9,
+          "text": "Grip"
+        },
+        {
+          "t": 134.4,
+          "text": "on"
+        },
+        {
+          "t": 134.68,
+          "text": "the"
+        },
+        {
+          "t": 134.78,
+          "text": "thigh"
+        }
+      ]
+    },
+    {
+      "start": 135.08,
+      "end": 137.66,
+      "text": "Why you always make me misspeed it?",
+      "words": [
+        {
+          "t": 135.08,
+          "text": "Why"
+        },
+        {
+          "t": 135.6,
+          "text": "you"
+        },
+        {
+          "t": 135.74,
+          "text": "always"
+        },
+        {
+          "t": 136.04,
+          "text": "make"
+        },
+        {
+          "t": 136.34,
+          "text": "me"
+        },
+        {
+          "t": 136.58,
+          "text": "misspeed"
+        },
+        {
+          "t": 137.26,
+          "text": "it?"
+        }
+      ]
+    },
+    {
+      "start": 137.66,
+      "end": 138.92,
+      "text": "Is it love or not right?",
+      "words": [
+        {
+          "t": 137.66,
+          "text": "Is"
+        },
+        {
+          "t": 137.88,
+          "text": "it"
+        },
+        {
+          "t": 137.88,
+          "text": "love"
+        },
+        {
+          "t": 138.22,
+          "text": "or"
+        },
+        {
+          "t": 138.36,
+          "text": "not"
+        },
+        {
+          "t": 138.52,
+          "text": "right?"
+        }
+      ]
+    },
+    {
+      "start": 139.38,
+      "end": 140.16,
+      "text": "Dangerous cat",
+      "words": [
+        {
+          "t": 139.38,
+          "text": "Dangerous"
+        },
+        {
+          "t": 139.94,
+          "text": "cat"
+        }
+      ]
+    },
+    {
+      "start": 140.16,
+      "end": 141.28,
+      "text": "Dangerous boy",
+      "words": [
+        {
+          "t": 140.16,
+          "text": "Dangerous"
+        },
+        {
+          "t": 141.08,
+          "text": "boy"
+        }
+      ]
+    },
+    {
+      "start": 141.28,
+      "end": 142.912,
+      "text": "Why you always playing with fire?",
+      "words": [
+        {
+          "t": 141.28,
+          "text": "Why"
+        },
+        {
+          "t": 141.84,
+          "text": "you"
+        },
+        {
+          "t": 141.98,
+          "text": "always"
+        },
+        {
+          "t": 142.26,
+          "text": "playing"
+        },
+        {
+          "t": 142.54,
+          "text": "with"
+        },
+        {
+          "t": 142.78,
+          "text": "fire?"
+        }
+      ]
+    },
+    {
+      "start": 144.448,
+      "end": 147.22,
+      "text": "Because the burn feels good",
+      "words": [
+        {
+          "t": 144.448,
+          "text": "Because"
+        },
+        {
+          "t": 144.56,
+          "text": "the"
+        },
+        {
+          "t": 144.78,
+          "text": "burn"
+        },
+        {
+          "t": 145.14,
+          "text": "feels"
+        },
+        {
+          "t": 146.32,
+          "text": "good"
+        }
+      ]
+    },
+    {
+      "start": 147.44,
+      "end": 148.72,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 147.44,
+          "text": "Honey"
+        },
+        {
+          "t": 148.14,
+          "text": "and"
+        },
+        {
+          "t": 148.42,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 149.26,
+      "end": 150.22,
+      "text": "Baby that's your style",
+      "words": [
+        {
+          "t": 149.26,
+          "text": "Baby"
+        },
+        {
+          "t": 149.36,
+          "text": "that's"
+        },
+        {
+          "t": 149.7,
+          "text": "your"
+        },
+        {
+          "t": 149.76,
+          "text": "style"
+        }
+      ]
+    },
+    {
+      "start": 150.22,
+      "end": 151.26,
+      "text": "Whole dance out",
+      "words": [
+        {
+          "t": 150.22,
+          "text": "Whole"
+        },
+        {
+          "t": 150.62,
+          "text": "dance"
+        },
+        {
+          "t": 150.98,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 151.26,
+      "end": 152.54,
+      "text": "Shouting every dirty line",
+      "words": [
+        {
+          "t": 151.26,
+          "text": "Shouting"
+        },
+        {
+          "t": 151.6,
+          "text": "every"
+        },
+        {
+          "t": 151.88,
+          "text": "dirty"
+        },
+        {
+          "t": 152.2,
+          "text": "line"
+        }
+      ]
+    },
+    {
+      "start": 152.54,
+      "end": 153.72,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 152.54,
+          "text": "Honey"
+        },
+        {
+          "t": 153.16,
+          "text": "and"
+        },
+        {
+          "t": 153.4,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 153.72,
+      "end": 155.02,
+      "text": "Hands up to the sky",
+      "words": [
+        {
+          "t": 153.72,
+          "text": "Hands"
+        },
+        {
+          "t": 154.12,
+          "text": "up"
+        },
+        {
+          "t": 154.36,
+          "text": "to"
+        },
+        {
+          "t": 154.58,
+          "text": "the"
+        },
+        {
+          "t": 154.72,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 155.02,
+      "end": 156.26,
+      "text": "If loving you is wrong",
+      "words": [
+        {
+          "t": 155.02,
+          "text": "If"
+        },
+        {
+          "t": 155.44,
+          "text": "loving"
+        },
+        {
+          "t": 155.68,
+          "text": "you"
+        },
+        {
+          "t": 155.88,
+          "text": "is"
+        },
+        {
+          "t": 156.04,
+          "text": "wrong"
+        }
+      ]
+    },
+    {
+      "start": 156.26,
+      "end": 157.46,
+      "text": "Then I still wanna try",
+      "words": [
+        {
+          "t": 156.26,
+          "text": "Then"
+        },
+        {
+          "t": 156.48,
+          "text": "I"
+        },
+        {
+          "t": 156.6,
+          "text": "still"
+        },
+        {
+          "t": 156.82,
+          "text": "wanna"
+        },
+        {
+          "t": 157.16,
+          "text": "try"
+        }
+      ]
+    },
+    {
+      "start": 157.46,
+      "end": 158.74,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 157.46,
+          "text": "Honey"
+        },
+        {
+          "t": 158.12,
+          "text": "and"
+        },
+        {
+          "t": 158.38,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 158.74,
+      "end": 160.22,
+      "text": "Rhythm in my veins",
+      "words": [
+        {
+          "t": 158.74,
+          "text": "Rhythm"
+        },
+        {
+          "t": 159.4,
+          "text": "in"
+        },
+        {
+          "t": 159.64,
+          "text": "my"
+        },
+        {
+          "t": 159.68,
+          "text": "veins"
+        }
+      ]
+    },
+    {
+      "start": 160.22,
+      "end": 162.7,
+      "text": "Everybody's lettin' tropical raves",
+      "words": [
+        {
+          "t": 160.22,
+          "text": "Everybody's"
+        },
+        {
+          "t": 161.04,
+          "text": "lettin'"
+        },
+        {
+          "t": 161.38,
+          "text": "tropical"
+        },
+        {
+          "t": 161.72,
+          "text": "raves"
+        }
+      ]
+    },
+    {
+      "start": 162.7,
+      "end": 163.72,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 162.7,
+          "text": "Honey"
+        },
+        {
+          "t": 163.14,
+          "text": "and"
+        },
+        {
+          "t": 163.38,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 163.72,
+      "end": 165.0,
+      "text": "Llamo or time before dawn",
+      "words": [
+        {
+          "t": 163.72,
+          "text": "Llamo"
+        },
+        {
+          "t": 164.04,
+          "text": "or"
+        },
+        {
+          "t": 164.04,
+          "text": "time"
+        },
+        {
+          "t": 164.3,
+          "text": "before"
+        },
+        {
+          "t": 164.58,
+          "text": "dawn"
+        }
+      ]
+    },
+    {
+      "start": 165.0,
+      "end": 167.8,
+      "text": "Sweet little poison that the whole world haunts",
+      "words": [
+        {
+          "t": 165.0,
+          "text": "Sweet"
+        },
+        {
+          "t": 165.48,
+          "text": "little"
+        },
+        {
+          "t": 165.9,
+          "text": "poison"
+        },
+        {
+          "t": 166.26,
+          "text": "that"
+        },
+        {
+          "t": 166.46,
+          "text": "the"
+        },
+        {
+          "t": 166.6,
+          "text": "whole"
+        },
+        {
+          "t": 166.88,
+          "text": "world"
+        },
+        {
+          "t": 167.28,
+          "text": "haunts"
+        }
+      ]
+    },
+    {
+      "start": 167.8,
+      "end": 170.06,
+      "text": "Aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 167.8,
+          "text": "Aye,"
+        },
+        {
+          "t": 168.3,
+          "text": "aye,"
+        },
+        {
+          "t": 168.58,
+          "text": "aye,"
+        },
+        {
+          "t": 168.96,
+          "text": "aye,"
+        },
+        {
+          "t": 169.38,
+          "text": "aye,"
+        },
+        {
+          "t": 169.6,
+          "text": "aye,"
+        },
+        {
+          "t": 169.82,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 170.06,
+      "end": 171.3,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 170.06,
+          "text": "Honey"
+        },
+        {
+          "t": 170.528,
+          "text": "and"
+        },
+        {
+          "t": 170.9,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 172.8,
+      "end": 175.28,
+      "text": "Aye, aye, aye, aye, aye, aye, aye, aye",
+      "words": [
+        {
+          "t": 172.8,
+          "text": "Aye,"
+        },
+        {
+          "t": 173.24,
+          "text": "aye,"
+        },
+        {
+          "t": 173.56,
+          "text": "aye,"
+        },
+        {
+          "t": 174.06,
+          "text": "aye,"
+        },
+        {
+          "t": 174.48,
+          "text": "aye,"
+        },
+        {
+          "t": 174.66,
+          "text": "aye,"
+        },
+        {
+          "t": 175.0,
+          "text": "aye,"
+        },
+        {
+          "t": 175.04,
+          "text": "aye"
+        }
+      ]
+    },
+    {
+      "start": 175.52,
+      "end": 176.22,
+      "text": "Honey and venom",
+      "words": [
+        {
+          "t": 175.52,
+          "text": "Honey"
+        },
+        {
+          "t": 175.62,
+          "text": "and"
+        },
+        {
+          "t": 175.96,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 176.22,
+      "end": 176.62,
+      "text": "Aye,",
+      "words": [
+        {
+          "t": 176.22,
+          "text": "Aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "aye,",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "aye,"
+        }
+      ]
+    },
+    {
+      "start": 176.62,
+      "end": 176.62,
+      "text": "honey and venom",
+      "words": [
+        {
+          "t": 176.62,
+          "text": "honey"
+        },
+        {
+          "t": 176.62,
+          "text": "and"
+        },
+        {
+          "t": 176.62,
+          "text": "venom"
+        }
+      ]
+    },
+    {
+      "start": 177.888,
+      "end": 178.78,
+      "text": "Sweet like honey,",
+      "words": [
+        {
+          "t": 177.888,
+          "text": "Sweet"
+        },
+        {
+          "t": 178.1,
+          "text": "like"
+        },
+        {
+          "t": 178.42,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 178.94,
+      "end": 179.4,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 178.94,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 179.52,
+      "end": 180.7,
+      "text": "sharp like danger,",
+      "words": [
+        {
+          "t": 179.52,
+          "text": "sharp"
+        },
+        {
+          "t": 179.96,
+          "text": "like"
+        },
+        {
+          "t": 180.3,
+          "text": "danger,"
+        }
+      ]
+    },
+    {
+      "start": 180.9,
+      "end": 181.26,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 180.9,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 181.44,
+      "end": 181.88,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 181.44,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 182.04,
+      "end": 183.78,
+      "text": "and vanilla,",
+      "words": [
+        {
+          "t": 182.04,
+          "text": "and"
+        },
+        {
+          "t": 183.32,
+          "text": "vanilla,"
+        }
+      ]
+    },
+    {
+      "start": 183.98,
+      "end": 184.42,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 183.98,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 184.56,
+      "end": 185.08,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 184.56,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 185.18,
+      "end": 185.58,
+      "text": "honey,",
+      "words": [
+        {
+          "t": 185.18,
+          "text": "honey,"
+        }
+      ]
+    },
+    {
+      "start": 185.78,
+      "end": 188.78,
+      "text": "and vanilla.",
+      "words": [
+        {
+          "t": 185.78,
+          "text": "and"
+        },
+        {
+          "t": 188.3,
+          "text": "vanilla."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2872 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 10.592,
+      "end": 11.43,
+      "text": "Static in the walls",
+      "words": [
+        {
+          "t": 10.592,
+          "text": "Static"
+        },
+        {
+          "t": 10.7,
+          "text": "in"
+        },
+        {
+          "t": 10.88,
+          "text": "the"
+        },
+        {
+          "t": 10.98,
+          "text": "walls"
+        }
+      ]
+    },
+    {
+      "start": 14.816,
+      "end": 16.98,
+      "text": "Violins rise slowly",
+      "words": [
+        {
+          "t": 14.816,
+          "text": "Violins"
+        },
+        {
+          "t": 15.6,
+          "text": "rise"
+        },
+        {
+          "t": 16.08,
+          "text": "slowly"
+        }
+      ]
+    },
+    {
+      "start": 20.16,
+      "end": 22.24,
+      "text": "Phone light on the ceiling",
+      "words": [
+        {
+          "t": 20.16,
+          "text": "Phone"
+        },
+        {
+          "t": 20.96,
+          "text": "light"
+        },
+        {
+          "t": 21.34,
+          "text": "on"
+        },
+        {
+          "t": 21.74,
+          "text": "the"
+        },
+        {
+          "t": 21.98,
+          "text": "ceiling"
+        }
+      ]
+    },
+    {
+      "start": 26.56,
+      "end": 29.14,
+      "text": "I woke up on the flashing sky",
+      "words": [
+        {
+          "t": 26.56,
+          "text": "I"
+        },
+        {
+          "t": 27.26,
+          "text": "woke"
+        },
+        {
+          "t": 28.16,
+          "text": "up"
+        },
+        {
+          "t": 28.26,
+          "text": "on"
+        },
+        {
+          "t": 28.42,
+          "text": "the"
+        },
+        {
+          "t": 28.56,
+          "text": "flashing"
+        },
+        {
+          "t": 28.86,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 30.048,
+      "end": 32.24,
+      "text": "A thousand little miles of light",
+      "words": [
+        {
+          "t": 30.048,
+          "text": "A"
+        },
+        {
+          "t": 30.72,
+          "text": "thousand"
+        },
+        {
+          "t": 31.08,
+          "text": "little"
+        },
+        {
+          "t": 31.4,
+          "text": "miles"
+        },
+        {
+          "t": 31.8,
+          "text": "of"
+        },
+        {
+          "t": 31.96,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 32.94,
+      "end": 35.14,
+      "text": "They call my name, they sell me dreams",
+      "words": [
+        {
+          "t": 32.94,
+          "text": "They"
+        },
+        {
+          "t": 33.728,
+          "text": "call"
+        },
+        {
+          "t": 33.96,
+          "text": "my"
+        },
+        {
+          "t": 34.12,
+          "text": "name,"
+        },
+        {
+          "t": 34.4,
+          "text": "they"
+        },
+        {
+          "t": 34.48,
+          "text": "sell"
+        },
+        {
+          "t": 34.72,
+          "text": "me"
+        },
+        {
+          "t": 34.86,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 35.48,
+      "end": 38.22,
+      "text": "They follow me into the night",
+      "words": [
+        {
+          "t": 35.48,
+          "text": "They"
+        },
+        {
+          "t": 35.88,
+          "text": "follow"
+        },
+        {
+          "t": 36.32,
+          "text": "me"
+        },
+        {
+          "t": 36.58,
+          "text": "into"
+        },
+        {
+          "t": 37.14,
+          "text": "the"
+        },
+        {
+          "t": 37.64,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 38.78,
+      "end": 40.8,
+      "text": "Inbox open like a wound",
+      "words": [
+        {
+          "t": 38.78,
+          "text": "Inbox"
+        },
+        {
+          "t": 39.58,
+          "text": "open"
+        },
+        {
+          "t": 40.0,
+          "text": "like"
+        },
+        {
+          "t": 40.3,
+          "text": "a"
+        },
+        {
+          "t": 40.48,
+          "text": "wound"
+        }
+      ]
+    },
+    {
+      "start": 40.99,
+      "end": 43.74,
+      "text": "Red numbers climbing in my room",
+      "words": [
+        {
+          "t": 40.99,
+          "text": "Red"
+        },
+        {
+          "t": 41.94,
+          "text": "numbers"
+        },
+        {
+          "t": 42.62,
+          "text": "climbing"
+        },
+        {
+          "t": 43.0,
+          "text": "in"
+        },
+        {
+          "t": 43.28,
+          "text": "my"
+        },
+        {
+          "t": 43.42,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 45.056,
+      "end": 46.36,
+      "text": "Everybody needs a piece",
+      "words": [
+        {
+          "t": 45.056,
+          "text": "Everybody"
+        },
+        {
+          "t": 45.34,
+          "text": "needs"
+        },
+        {
+          "t": 45.86,
+          "text": "a"
+        },
+        {
+          "t": 46.06,
+          "text": "piece"
+        }
+      ]
+    },
+    {
+      "start": 46.36,
+      "end": 49.5,
+      "text": "But nobody asks if I can breathe",
+      "words": [
+        {
+          "t": 46.36,
+          "text": "But"
+        },
+        {
+          "t": 47.36,
+          "text": "nobody"
+        },
+        {
+          "t": 47.66,
+          "text": "asks"
+        },
+        {
+          "t": 48.3,
+          "text": "if"
+        },
+        {
+          "t": 48.72,
+          "text": "I"
+        },
+        {
+          "t": 48.86,
+          "text": "can"
+        },
+        {
+          "t": 49.04,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 49.5,
+      "end": 52.22,
+      "text": "Scroll by scroll",
+      "words": [
+        {
+          "t": 49.5,
+          "text": "Scroll"
+        },
+        {
+          "t": 50.62,
+          "text": "by"
+        },
+        {
+          "t": 51.42,
+          "text": "scroll"
+        }
+      ]
+    },
+    {
+      "start": 52.22,
+      "end": 54.94,
+      "text": "I lose the shape of me",
+      "words": [
+        {
+          "t": 52.22,
+          "text": "I"
+        },
+        {
+          "t": 52.62,
+          "text": "lose"
+        },
+        {
+          "t": 53.02,
+          "text": "the"
+        },
+        {
+          "t": 53.3,
+          "text": "shape"
+        },
+        {
+          "t": 53.76,
+          "text": "of"
+        },
+        {
+          "t": 54.56,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 56.64,
+      "end": 58.2,
+      "text": "Pin by pin",
+      "words": [
+        {
+          "t": 56.64,
+          "text": "Pin"
+        },
+        {
+          "t": 56.82,
+          "text": "by"
+        },
+        {
+          "t": 57.34,
+          "text": "pin"
+        }
+      ]
+    },
+    {
+      "start": 58.2,
+      "end": 59.72,
+      "text": "I forget what's up",
+      "words": [
+        {
+          "t": 58.2,
+          "text": "I"
+        },
+        {
+          "t": 58.54,
+          "text": "forget"
+        },
+        {
+          "t": 58.9,
+          "text": "what's"
+        },
+        {
+          "t": 59.38,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 60.0,
+      "end": 60.88,
+      "text": "What violence means",
+      "words": [
+        {
+          "t": 60.0,
+          "text": "What"
+        },
+        {
+          "t": 60.46,
+          "text": "violence"
+        },
+        {
+          "t": 60.46,
+          "text": "means"
+        }
+      ]
+    },
+    {
+      "start": 60.88,
+      "end": 64.12,
+      "text": "I'm looking for a ceasefire in the static",
+      "words": [
+        {
+          "t": 60.88,
+          "text": "I'm"
+        },
+        {
+          "t": 61.76,
+          "text": "looking"
+        },
+        {
+          "t": 61.98,
+          "text": "for"
+        },
+        {
+          "t": 62.3,
+          "text": "a"
+        },
+        {
+          "t": 62.46,
+          "text": "ceasefire"
+        },
+        {
+          "t": 63.06,
+          "text": "in"
+        },
+        {
+          "t": 63.5,
+          "text": "the"
+        },
+        {
+          "t": 63.68,
+          "text": "static"
+        }
+      ]
+    },
+    {
+      "start": 64.94,
+      "end": 66.86,
+      "text": "One quiet place inside the noise",
+      "words": [
+        {
+          "t": 64.94,
+          "text": "One"
+        },
+        {
+          "t": 65.04,
+          "text": "quiet"
+        },
+        {
+          "t": 65.36,
+          "text": "place"
+        },
+        {
+          "t": 65.74,
+          "text": "inside"
+        },
+        {
+          "t": 66.32,
+          "text": "the"
+        },
+        {
+          "t": 66.76,
+          "text": "noise"
+        }
+      ]
+    },
+    {
+      "start": 67.6,
+      "end": 70.28,
+      "text": "A little room behind the panic",
+      "words": [
+        {
+          "t": 67.6,
+          "text": "A"
+        },
+        {
+          "t": 68.032,
+          "text": "little"
+        },
+        {
+          "t": 68.28,
+          "text": "room"
+        },
+        {
+          "t": 68.72,
+          "text": "behind"
+        },
+        {
+          "t": 69.16,
+          "text": "the"
+        },
+        {
+          "t": 69.72,
+          "text": "panic"
+        }
+      ]
+    },
+    {
+      "start": 70.944,
+      "end": 73.02,
+      "text": "Where I can hear my real voice",
+      "words": [
+        {
+          "t": 70.944,
+          "text": "Where"
+        },
+        {
+          "t": 71.08,
+          "text": "I"
+        },
+        {
+          "t": 71.3,
+          "text": "can"
+        },
+        {
+          "t": 71.456,
+          "text": "hear"
+        },
+        {
+          "t": 71.72,
+          "text": "my"
+        },
+        {
+          "t": 72.02,
+          "text": "real"
+        },
+        {
+          "t": 72.44,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 73.02,
+      "end": 76.18,
+      "text": "I'm looking for a pattern in the madness",
+      "words": [
+        {
+          "t": 73.02,
+          "text": "I'm"
+        },
+        {
+          "t": 73.728,
+          "text": "looking"
+        },
+        {
+          "t": 74.048,
+          "text": "for"
+        },
+        {
+          "t": 74.18,
+          "text": "a"
+        },
+        {
+          "t": 74.464,
+          "text": "pattern"
+        },
+        {
+          "t": 74.94,
+          "text": "in"
+        },
+        {
+          "t": 75.42,
+          "text": "the"
+        },
+        {
+          "t": 75.56,
+          "text": "madness"
+        }
+      ]
+    },
+    {
+      "start": 76.18,
+      "end": 79.06,
+      "text": "A holy line through broken code",
+      "words": [
+        {
+          "t": 76.18,
+          "text": "A"
+        },
+        {
+          "t": 77.12,
+          "text": "holy"
+        },
+        {
+          "t": 77.26,
+          "text": "line"
+        },
+        {
+          "t": 77.58,
+          "text": "through"
+        },
+        {
+          "t": 77.96,
+          "text": "broken"
+        },
+        {
+          "t": 78.44,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 79.45,
+      "end": 82.11,
+      "text": "If peace is somewhere in the chaos",
+      "words": [
+        {
+          "t": 79.45,
+          "text": "If"
+        },
+        {
+          "t": 80.0,
+          "text": "peace"
+        },
+        {
+          "t": 80.22,
+          "text": "is"
+        },
+        {
+          "t": 80.544,
+          "text": "somewhere"
+        },
+        {
+          "t": 80.768,
+          "text": "in"
+        },
+        {
+          "t": 81.408,
+          "text": "the"
+        },
+        {
+          "t": 81.56,
+          "text": "chaos"
+        }
+      ]
+    },
+    {
+      "start": 82.14,
+      "end": 85.14,
+      "text": "Then I'm still walking down that road",
+      "words": [
+        {
+          "t": 82.14,
+          "text": "Then"
+        },
+        {
+          "t": 82.98,
+          "text": "I'm"
+        },
+        {
+          "t": 83.2,
+          "text": "still"
+        },
+        {
+          "t": 83.3,
+          "text": "walking"
+        },
+        {
+          "t": 84.064,
+          "text": "down"
+        },
+        {
+          "t": 84.32,
+          "text": "that"
+        },
+        {
+          "t": 84.74,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 85.6,
+      "end": 88.12,
+      "text": "Pads in my dreams, ghosts in my feed",
+      "words": [
+        {
+          "t": 85.6,
+          "text": "Pads"
+        },
+        {
+          "t": 86.02,
+          "text": "in"
+        },
+        {
+          "t": 86.14,
+          "text": "my"
+        },
+        {
+          "t": 86.3,
+          "text": "dreams,"
+        },
+        {
+          "t": 86.9,
+          "text": "ghosts"
+        },
+        {
+          "t": 87.28,
+          "text": "in"
+        },
+        {
+          "t": 87.62,
+          "text": "my"
+        },
+        {
+          "t": 87.76,
+          "text": "feed"
+        }
+      ]
+    },
+    {
+      "start": 88.12,
+      "end": 89.94,
+      "text": "Every open window open",
+      "words": [
+        {
+          "t": 88.12,
+          "text": "Every"
+        },
+        {
+          "t": 88.84,
+          "text": "open"
+        },
+        {
+          "t": 89.2,
+          "text": "window"
+        },
+        {
+          "t": 89.62,
+          "text": "open"
+        }
+      ]
+    },
+    {
+      "start": 90.0,
+      "end": 91.0,
+      "text": "Something else in me",
+      "words": [
+        {
+          "t": 90.0,
+          "text": "Something"
+        },
+        {
+          "t": 90.24,
+          "text": "else"
+        },
+        {
+          "t": 90.66,
+          "text": "in"
+        },
+        {
+          "t": 90.8,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 91.52,
+      "end": 93.26,
+      "text": "Messages stacked like stones",
+      "words": [
+        {
+          "t": 91.52,
+          "text": "Messages"
+        },
+        {
+          "t": 92.04,
+          "text": "stacked"
+        },
+        {
+          "t": 92.48,
+          "text": "like"
+        },
+        {
+          "t": 92.88,
+          "text": "stones"
+        }
+      ]
+    },
+    {
+      "start": 93.26,
+      "end": 94.74,
+      "text": "On a chest that won't let go",
+      "words": [
+        {
+          "t": 93.26,
+          "text": "On"
+        },
+        {
+          "t": 93.6,
+          "text": "a"
+        },
+        {
+          "t": 93.72,
+          "text": "chest"
+        },
+        {
+          "t": 93.98,
+          "text": "that"
+        },
+        {
+          "t": 94.14,
+          "text": "won't"
+        },
+        {
+          "t": 94.4,
+          "text": "let"
+        },
+        {
+          "t": 94.5,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 94.74,
+      "end": 96.22,
+      "text": "I keep answering the world",
+      "words": [
+        {
+          "t": 94.74,
+          "text": "I"
+        },
+        {
+          "t": 95.06,
+          "text": "keep"
+        },
+        {
+          "t": 95.26,
+          "text": "answering"
+        },
+        {
+          "t": 95.68,
+          "text": "the"
+        },
+        {
+          "t": 95.98,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 96.22,
+      "end": 97.84,
+      "text": "But I don't answer my own soul",
+      "words": [
+        {
+          "t": 96.22,
+          "text": "But"
+        },
+        {
+          "t": 96.38,
+          "text": "I"
+        },
+        {
+          "t": 96.58,
+          "text": "don't"
+        },
+        {
+          "t": 96.88,
+          "text": "answer"
+        },
+        {
+          "t": 97.06,
+          "text": "my"
+        },
+        {
+          "t": 97.3,
+          "text": "own"
+        },
+        {
+          "t": 97.52,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 97.84,
+      "end": 99.36,
+      "text": "I try to name the storm",
+      "words": [
+        {
+          "t": 97.84,
+          "text": "I"
+        },
+        {
+          "t": 98.22,
+          "text": "try"
+        },
+        {
+          "t": 98.38,
+          "text": "to"
+        },
+        {
+          "t": 98.58,
+          "text": "name"
+        },
+        {
+          "t": 98.84,
+          "text": "the"
+        },
+        {
+          "t": 98.96,
+          "text": "storm"
+        }
+      ]
+    },
+    {
+      "start": 99.36,
+      "end": 100.8,
+      "text": "Folders for the pain",
+      "words": [
+        {
+          "t": 99.36,
+          "text": "Folders"
+        },
+        {
+          "t": 100.14,
+          "text": "for"
+        },
+        {
+          "t": 100.28,
+          "text": "the"
+        },
+        {
+          "t": 100.44,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 100.8,
+      "end": 102.3,
+      "text": "Text for every memory",
+      "words": [
+        {
+          "t": 100.8,
+          "text": "Text"
+        },
+        {
+          "t": 101.44,
+          "text": "for"
+        },
+        {
+          "t": 101.6,
+          "text": "every"
+        },
+        {
+          "t": 101.86,
+          "text": "memory"
+        }
+      ]
+    },
+    {
+      "start": 102.3,
+      "end": 103.74,
+      "text": "Rules for every flame",
+      "words": [
+        {
+          "t": 102.3,
+          "text": "Rules"
+        },
+        {
+          "t": 102.78,
+          "text": "for"
+        },
+        {
+          "t": 103.06,
+          "text": "every"
+        },
+        {
+          "t": 103.34,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 103.74,
+      "end": 105.54,
+      "text": "But every time I clear the screen",
+      "words": [
+        {
+          "t": 103.74,
+          "text": "But"
+        },
+        {
+          "t": 104.04,
+          "text": "every"
+        },
+        {
+          "t": 104.46,
+          "text": "time"
+        },
+        {
+          "t": 104.8,
+          "text": "I"
+        },
+        {
+          "t": 104.96,
+          "text": "clear"
+        },
+        {
+          "t": 105.18,
+          "text": "the"
+        },
+        {
+          "t": 105.3,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 105.54,
+      "end": 107.1,
+      "text": "Another wave comes back",
+      "words": [
+        {
+          "t": 105.54,
+          "text": "Another"
+        },
+        {
+          "t": 106.18,
+          "text": "wave"
+        },
+        {
+          "t": 106.6,
+          "text": "comes"
+        },
+        {
+          "t": 106.82,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 107.1,
+      "end": 108.04,
+      "text": "Another voice",
+      "words": [
+        {
+          "t": 107.1,
+          "text": "Another"
+        },
+        {
+          "t": 107.54,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 108.04,
+      "end": 108.86,
+      "text": "Another need",
+      "words": [
+        {
+          "t": 108.04,
+          "text": "Another"
+        },
+        {
+          "t": 108.4,
+          "text": "need"
+        }
+      ]
+    },
+    {
+      "start": 108.86,
+      "end": 110.4,
+      "text": "Another signal dressed in black",
+      "words": [
+        {
+          "t": 108.86,
+          "text": "Another"
+        },
+        {
+          "t": 109.12,
+          "text": "signal"
+        },
+        {
+          "t": 109.66,
+          "text": "dressed"
+        },
+        {
+          "t": 109.96,
+          "text": "in"
+        },
+        {
+          "t": 110.2,
+          "text": "black"
+        }
+      ]
+    },
+    {
+      "start": 110.4,
+      "end": 111.18,
+      "text": "Too many tabs",
+      "words": [
+        {
+          "t": 110.4,
+          "text": "Too"
+        },
+        {
+          "t": 110.66,
+          "text": "many"
+        },
+        {
+          "t": 110.86,
+          "text": "tabs"
+        }
+      ]
+    },
+    {
+      "start": 111.18,
+      "end": 111.92,
+      "text": "Too many chains",
+      "words": [
+        {
+          "t": 111.18,
+          "text": "Too"
+        },
+        {
+          "t": 111.42,
+          "text": "many"
+        },
+        {
+          "t": 111.64,
+          "text": "chains"
+        }
+      ]
+    },
+    {
+      "start": 111.92,
+      "end": 113.4,
+      "text": "Too many faces with borrowed names",
+      "words": [
+        {
+          "t": 111.92,
+          "text": "Too"
+        },
+        {
+          "t": 112.16,
+          "text": "many"
+        },
+        {
+          "t": 112.38,
+          "text": "faces"
+        },
+        {
+          "t": 112.64,
+          "text": "with"
+        },
+        {
+          "t": 112.82,
+          "text": "borrowed"
+        },
+        {
+          "t": 113.08,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 113.4,
+      "end": 114.82,
+      "text": "Too many alerts in the bloodstream",
+      "words": [
+        {
+          "t": 113.4,
+          "text": "Too"
+        },
+        {
+          "t": 113.68,
+          "text": "many"
+        },
+        {
+          "t": 113.9,
+          "text": "alerts"
+        },
+        {
+          "t": 114.1,
+          "text": "in"
+        },
+        {
+          "t": 114.26,
+          "text": "the"
+        },
+        {
+          "t": 114.28,
+          "text": "bloodstream"
+        }
+      ]
+    },
+    {
+      "start": 114.82,
+      "end": 116.34,
+      "text": "Too many ghosts in the lock screen",
+      "words": [
+        {
+          "t": 114.82,
+          "text": "Too"
+        },
+        {
+          "t": 115.12,
+          "text": "many"
+        },
+        {
+          "t": 115.38,
+          "text": "ghosts"
+        },
+        {
+          "t": 115.58,
+          "text": "in"
+        },
+        {
+          "t": 115.76,
+          "text": "the"
+        },
+        {
+          "t": 115.8,
+          "text": "lock"
+        },
+        {
+          "t": 116.02,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 116.34,
+      "end": 118.08,
+      "text": "I'm not lost, I'm overloaded",
+      "words": [
+        {
+          "t": 116.34,
+          "text": "I'm"
+        },
+        {
+          "t": 116.72,
+          "text": "not"
+        },
+        {
+          "t": 116.88,
+          "text": "lost,"
+        },
+        {
+          "t": 117.2,
+          "text": "I'm"
+        },
+        {
+          "t": 117.4,
+          "text": "overloaded"
+        }
+      ]
+    },
+    {
+      "start": 118.08,
+      "end": 119.48,
+      "text": "Heart's still here, just over-coded",
+      "words": [
+        {
+          "t": 118.08,
+          "text": "Heart's"
+        },
+        {
+          "t": 118.26,
+          "text": "still"
+        },
+        {
+          "t": 118.4,
+          "text": "here,"
+        },
+        {
+          "t": 118.62,
+          "text": "just"
+        },
+        {
+          "t": 118.78,
+          "text": "over"
+        },
+        {
+          "t": 119.04,
+          "text": "-coded"
+        }
+      ]
+    },
+    {
+      "start": 119.57,
+      "end": 119.98,
+      "text": "Tryin' to break it",
+      "words": [
+        {
+          "t": 119.57,
+          "text": "Tryin'"
+        },
+        {
+          "t": 119.82,
+          "text": "to"
+        },
+        {
+          "t": 119.88,
+          "text": "break"
+        },
+        {
+          "t": 119.98,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 119.98,
+      "end": 121.08,
+      "text": "Read through the interface",
+      "words": [
+        {
+          "t": 119.98,
+          "text": "Read"
+        },
+        {
+          "t": 120.18,
+          "text": "through"
+        },
+        {
+          "t": 120.38,
+          "text": "the"
+        },
+        {
+          "t": 120.58,
+          "text": "interface"
+        }
+      ]
+    },
+    {
+      "start": 121.94,
+      "end": 124.34,
+      "text": "Tryin' to find one sacred space",
+      "words": [
+        {
+          "t": 121.94,
+          "text": "Tryin'"
+        },
+        {
+          "t": 122.38,
+          "text": "to"
+        },
+        {
+          "t": 122.4,
+          "text": "find"
+        },
+        {
+          "t": 122.82,
+          "text": "one"
+        },
+        {
+          "t": 123.24,
+          "text": "sacred"
+        },
+        {
+          "t": 123.8,
+          "text": "space"
+        }
+      ]
+    },
+    {
+      "start": 124.9,
+      "end": 126.74,
+      "text": "Scroll by scroll",
+      "words": [
+        {
+          "t": 124.9,
+          "text": "Scroll"
+        },
+        {
+          "t": 125.34,
+          "text": "by"
+        },
+        {
+          "t": 125.94,
+          "text": "scroll"
+        }
+      ]
+    },
+    {
+      "start": 126.74,
+      "end": 129.5,
+      "text": "I lose the shape of me",
+      "words": [
+        {
+          "t": 126.74,
+          "text": "I"
+        },
+        {
+          "t": 127.16,
+          "text": "lose"
+        },
+        {
+          "t": 127.52,
+          "text": "the"
+        },
+        {
+          "t": 127.82,
+          "text": "shape"
+        },
+        {
+          "t": 128.3,
+          "text": "of"
+        },
+        {
+          "t": 129.08,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 131.136,
+      "end": 132.74,
+      "text": "Ping by ping",
+      "words": [
+        {
+          "t": 131.136,
+          "text": "Ping"
+        },
+        {
+          "t": 131.38,
+          "text": "by"
+        },
+        {
+          "t": 131.88,
+          "text": "ping"
+        }
+      ]
+    },
+    {
+      "start": 132.74,
+      "end": 135.4,
+      "text": "I forget what silence means",
+      "words": [
+        {
+          "t": 132.74,
+          "text": "I"
+        },
+        {
+          "t": 133.06,
+          "text": "forget"
+        },
+        {
+          "t": 133.44,
+          "text": "what"
+        },
+        {
+          "t": 133.82,
+          "text": "silence"
+        },
+        {
+          "t": 134.58,
+          "text": "means"
+        }
+      ]
+    },
+    {
+      "start": 135.84,
+      "end": 138.62,
+      "text": "I'm looking for a ceasefire in the static",
+      "words": [
+        {
+          "t": 135.84,
+          "text": "I'm"
+        },
+        {
+          "t": 136.28,
+          "text": "looking"
+        },
+        {
+          "t": 136.46,
+          "text": "for"
+        },
+        {
+          "t": 136.8,
+          "text": "a"
+        },
+        {
+          "t": 137.0,
+          "text": "ceasefire"
+        },
+        {
+          "t": 137.64,
+          "text": "in"
+        },
+        {
+          "t": 138.02,
+          "text": "the"
+        },
+        {
+          "t": 138.22,
+          "text": "static"
+        }
+      ]
+    },
+    {
+      "start": 138.62,
+      "end": 141.664,
+      "text": "One quiet place inside the noise",
+      "words": [
+        {
+          "t": 138.62,
+          "text": "One"
+        },
+        {
+          "t": 139.62,
+          "text": "quiet"
+        },
+        {
+          "t": 139.92,
+          "text": "place"
+        },
+        {
+          "t": 140.544,
+          "text": "inside"
+        },
+        {
+          "t": 140.78,
+          "text": "the"
+        },
+        {
+          "t": 141.32,
+          "text": "noise"
+        }
+      ]
+    },
+    {
+      "start": 142.464,
+      "end": 144.8,
+      "text": "A little room behind the panic",
+      "words": [
+        {
+          "t": 142.464,
+          "text": "A"
+        },
+        {
+          "t": 142.58,
+          "text": "little"
+        },
+        {
+          "t": 142.82,
+          "text": "room"
+        },
+        {
+          "t": 143.584,
+          "text": "behind"
+        },
+        {
+          "t": 143.78,
+          "text": "the"
+        },
+        {
+          "t": 144.26,
+          "text": "panic"
+        }
+      ]
+    },
+    {
+      "start": 144.87,
+      "end": 147.52,
+      "text": "Where I can hear my real voice",
+      "words": [
+        {
+          "t": 144.87,
+          "text": "Where"
+        },
+        {
+          "t": 145.62,
+          "text": "I"
+        },
+        {
+          "t": 145.792,
+          "text": "can"
+        },
+        {
+          "t": 145.92,
+          "text": "hear"
+        },
+        {
+          "t": 146.22,
+          "text": "my"
+        },
+        {
+          "t": 146.52,
+          "text": "real"
+        },
+        {
+          "t": 146.96,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 147.52,
+      "end": 149.28,
+      "text": "I'm looking for a pattern",
+      "words": [
+        {
+          "t": 147.52,
+          "text": "I'm"
+        },
+        {
+          "t": 148.256,
+          "text": "looking"
+        },
+        {
+          "t": 148.42,
+          "text": "for"
+        },
+        {
+          "t": 148.72,
+          "text": "a"
+        },
+        {
+          "t": 148.94,
+          "text": "pattern"
+        }
+      ]
+    },
+    {
+      "start": 149.48,
+      "end": 150.56,
+      "text": "In the madness",
+      "words": [
+        {
+          "t": 149.48,
+          "text": "In"
+        },
+        {
+          "t": 149.86,
+          "text": "the"
+        },
+        {
+          "t": 150.14,
+          "text": "madness"
+        }
+      ]
+    },
+    {
+      "start": 150.688,
+      "end": 153.54,
+      "text": "A holy line through broken code",
+      "words": [
+        {
+          "t": 150.688,
+          "text": "A"
+        },
+        {
+          "t": 151.488,
+          "text": "holy"
+        },
+        {
+          "t": 151.78,
+          "text": "line"
+        },
+        {
+          "t": 152.38,
+          "text": "through"
+        },
+        {
+          "t": 152.48,
+          "text": "broken"
+        },
+        {
+          "t": 152.96,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 154.42,
+      "end": 156.72,
+      "text": "If peace is somewhere in the chaos",
+      "words": [
+        {
+          "t": 154.42,
+          "text": "If"
+        },
+        {
+          "t": 154.64,
+          "text": "peace"
+        },
+        {
+          "t": 154.74,
+          "text": "is"
+        },
+        {
+          "t": 154.9,
+          "text": "somewhere"
+        },
+        {
+          "t": 155.24,
+          "text": "in"
+        },
+        {
+          "t": 155.86,
+          "text": "the"
+        },
+        {
+          "t": 156.12,
+          "text": "chaos"
+        }
+      ]
+    },
+    {
+      "start": 156.72,
+      "end": 160.31,
+      "text": "Then I'm still walking down that road",
+      "words": [
+        {
+          "t": 156.72,
+          "text": "Then"
+        },
+        {
+          "t": 157.54,
+          "text": "I'm"
+        },
+        {
+          "t": 157.7,
+          "text": "still"
+        },
+        {
+          "t": 158.3,
+          "text": "walking"
+        },
+        {
+          "t": 158.4,
+          "text": "down"
+        },
+        {
+          "t": 158.82,
+          "text": "that"
+        },
+        {
+          "t": 159.26,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 162.464,
+      "end": 163.34,
+      "text": "Jettles swell",
+      "words": [
+        {
+          "t": 162.464,
+          "text": "Jettles"
+        },
+        {
+          "t": 162.78,
+          "text": "swell"
+        }
+      ]
+    },
+    {
+      "start": 163.34,
+      "end": 165.32,
+      "text": "Violents sharpen",
+      "words": [
+        {
+          "t": 163.34,
+          "text": "Violents"
+        },
+        {
+          "t": 164.8,
+          "text": "sharpen"
+        }
+      ]
+    },
+    {
+      "start": 165.76,
+      "end": 167.06,
+      "text": "Deep piano strikes",
+      "words": [
+        {
+          "t": 165.76,
+          "text": "Deep"
+        },
+        {
+          "t": 165.86,
+          "text": "piano"
+        },
+        {
+          "t": 166.48,
+          "text": "strikes"
+        }
+      ]
+    },
+    {
+      "start": 167.06,
+      "end": 169.3,
+      "text": "Deep piano strikes",
+      "words": [
+        {
+          "t": 167.06,
+          "text": "Deep"
+        },
+        {
+          "t": 168.18,
+          "text": "piano"
+        },
+        {
+          "t": 168.84,
+          "text": "strikes"
+        }
+      ]
+    },
+    {
+      "start": 169.42,
+      "end": 172.68,
+      "text": "Maybe peace is not a silence",
+      "words": [
+        {
+          "t": 169.42,
+          "text": "Maybe"
+        },
+        {
+          "t": 170.52,
+          "text": "peace"
+        },
+        {
+          "t": 170.96,
+          "text": "is"
+        },
+        {
+          "t": 171.32,
+          "text": "not"
+        },
+        {
+          "t": 171.66,
+          "text": "a"
+        },
+        {
+          "t": 172.02,
+          "text": "silence"
+        }
+      ]
+    },
+    {
+      "start": 172.68,
+      "end": 175.1,
+      "text": "Maybe peace is choosing one sound",
+      "words": [
+        {
+          "t": 172.68,
+          "text": "Maybe"
+        },
+        {
+          "t": 173.54,
+          "text": "peace"
+        },
+        {
+          "t": 173.9,
+          "text": "is"
+        },
+        {
+          "t": 174.1,
+          "text": "choosing"
+        },
+        {
+          "t": 174.38,
+          "text": "one"
+        },
+        {
+          "t": 174.64,
+          "text": "sound"
+        }
+      ]
+    },
+    {
+      "start": 175.11,
+      "end": 178.16,
+      "text": "Maybe order is not escape",
+      "words": [
+        {
+          "t": 175.11,
+          "text": "Maybe"
+        },
+        {
+          "t": 176.46,
+          "text": "order"
+        },
+        {
+          "t": 177.0,
+          "text": "is"
+        },
+        {
+          "t": 177.38,
+          "text": "not"
+        },
+        {
+          "t": 177.6,
+          "text": "escape"
+        }
+      ]
+    },
+    {
+      "start": 179.18,
+      "end": 179.46,
+      "text": "But what I know is",
+      "words": [
+        {
+          "t": 179.18,
+          "text": "But"
+        },
+        {
+          "t": 179.28,
+          "text": "what"
+        },
+        {
+          "t": 179.46,
+          "text": "I"
+        },
+        {
+          "t": 179.46,
+          "text": "know"
+        },
+        {
+          "t": 179.46,
+          "text": "is"
+        }
+      ]
+    },
+    {
+      "start": 179.48,
+      "end": 180.05,
+      "text": "What I keep",
+      "words": [
+        {
+          "t": 179.48,
+          "text": "What"
+        },
+        {
+          "t": 179.56,
+          "text": "I"
+        },
+        {
+          "t": 179.7,
+          "text": "keep"
+        }
+      ]
+    },
+    {
+      "start": 181.62,
+      "end": 184.0,
+      "text": "when storms come down",
+      "words": [
+        {
+          "t": 181.62,
+          "text": "when"
+        },
+        {
+          "t": 181.72,
+          "text": "storms"
+        },
+        {
+          "t": 182.7,
+          "text": "come"
+        },
+        {
+          "t": 183.68,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 185.408,
+      "end": 186.84,
+      "text": "Maybe I don't kill the signal",
+      "words": [
+        {
+          "t": 185.408,
+          "text": "Maybe"
+        },
+        {
+          "t": 185.54,
+          "text": "I"
+        },
+        {
+          "t": 185.9,
+          "text": "don't"
+        },
+        {
+          "t": 186.08,
+          "text": "kill"
+        },
+        {
+          "t": 186.28,
+          "text": "the"
+        },
+        {
+          "t": 186.42,
+          "text": "signal"
+        }
+      ]
+    },
+    {
+      "start": 187.68,
+      "end": 189.68,
+      "text": "Maybe I learn what not to say",
+      "words": [
+        {
+          "t": 187.68,
+          "text": "Maybe"
+        },
+        {
+          "t": 188.256,
+          "text": "I"
+        },
+        {
+          "t": 188.7,
+          "text": "learn"
+        },
+        {
+          "t": 188.9,
+          "text": "what"
+        },
+        {
+          "t": 189.06,
+          "text": "not"
+        },
+        {
+          "t": 189.24,
+          "text": "to"
+        },
+        {
+          "t": 189.44,
+          "text": "say"
+        }
+      ]
+    },
+    {
+      "start": 191.296,
+      "end": 192.87,
+      "text": "Maybe I don't beat the ocean",
+      "words": [
+        {
+          "t": 191.296,
+          "text": "Maybe"
+        },
+        {
+          "t": 191.42,
+          "text": "I"
+        },
+        {
+          "t": 191.9,
+          "text": "don't"
+        },
+        {
+          "t": 192.08,
+          "text": "beat"
+        },
+        {
+          "t": 192.24,
+          "text": "the"
+        },
+        {
+          "t": 192.42,
+          "text": "ocean"
+        }
+      ]
+    },
+    {
+      "start": 194.368,
+      "end": 195.904,
+      "text": "Maybe I just name the waves",
+      "words": [
+        {
+          "t": 194.368,
+          "text": "Maybe"
+        },
+        {
+          "t": 194.624,
+          "text": "I"
+        },
+        {
+          "t": 194.84,
+          "text": "just"
+        },
+        {
+          "t": 195.08,
+          "text": "name"
+        },
+        {
+          "t": 195.32,
+          "text": "the"
+        },
+        {
+          "t": 195.48,
+          "text": "waves"
+        }
+      ]
+    },
+    {
+      "start": 195.936,
+      "end": 197.2,
+      "text": "Name the fear",
+      "words": [
+        {
+          "t": 195.936,
+          "text": "Name"
+        },
+        {
+          "t": 196.4,
+          "text": "the"
+        },
+        {
+          "t": 196.8,
+          "text": "fear"
+        }
+      ]
+    },
+    {
+      "start": 197.2,
+      "end": 197.98,
+      "text": "Name the need",
+      "words": [
+        {
+          "t": 197.2,
+          "text": "Name"
+        },
+        {
+          "t": 197.46,
+          "text": "the"
+        },
+        {
+          "t": 197.72,
+          "text": "need"
+        }
+      ]
+    },
+    {
+      "start": 197.98,
+      "end": 198.74,
+      "text": "Name the womb",
+      "words": [
+        {
+          "t": 197.98,
+          "text": "Name"
+        },
+        {
+          "t": 198.24,
+          "text": "the"
+        },
+        {
+          "t": 198.46,
+          "text": "womb"
+        }
+      ]
+    },
+    {
+      "start": 198.74,
+      "end": 199.46,
+      "text": "Name the fear",
+      "words": [
+        {
+          "t": 198.74,
+          "text": "Name"
+        },
+        {
+          "t": 199.06,
+          "text": "the"
+        },
+        {
+          "t": 199.2,
+          "text": "fear"
+        }
+      ]
+    },
+    {
+      "start": 199.46,
+      "end": 200.26,
+      "text": "Name the ghost",
+      "words": [
+        {
+          "t": 199.46,
+          "text": "Name"
+        },
+        {
+          "t": 199.8,
+          "text": "the"
+        },
+        {
+          "t": 199.96,
+          "text": "ghost"
+        }
+      ]
+    },
+    {
+      "start": 200.26,
+      "end": 200.98,
+      "text": "Name the flame",
+      "words": [
+        {
+          "t": 200.26,
+          "text": "Name"
+        },
+        {
+          "t": 200.54,
+          "text": "the"
+        },
+        {
+          "t": 200.72,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 200.98,
+      "end": 201.78,
+      "text": "Name the noise",
+      "words": [
+        {
+          "t": 200.98,
+          "text": "Name"
+        },
+        {
+          "t": 201.26,
+          "text": "the"
+        },
+        {
+          "t": 201.44,
+          "text": "noise"
+        }
+      ]
+    },
+    {
+      "start": 201.78,
+      "end": 203.18,
+      "text": "But keep your name",
+      "words": [
+        {
+          "t": 201.78,
+          "text": "But"
+        },
+        {
+          "t": 202.02,
+          "text": "keep"
+        },
+        {
+          "t": 202.34,
+          "text": "your"
+        },
+        {
+          "t": 202.78,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 209.48,
+      "end": 210.22,
+      "text": "Did we find it?",
+      "words": [
+        {
+          "t": 209.48,
+          "text": "Did"
+        },
+        {
+          "t": 209.48,
+          "text": "we"
+        },
+        {
+          "t": 209.58,
+          "text": "find"
+        },
+        {
+          "t": 209.98,
+          "text": "it?"
+        }
+      ]
+    },
+    {
+      "start": 210.36,
+      "end": 211.4,
+      "text": "I don't know",
+      "words": [
+        {
+          "t": 210.36,
+          "text": "I"
+        },
+        {
+          "t": 210.912,
+          "text": "don't"
+        },
+        {
+          "t": 211.18,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 211.4,
+      "end": 212.18,
+      "text": "Is it quiet?",
+      "words": [
+        {
+          "t": 211.4,
+          "text": "Is"
+        },
+        {
+          "t": 211.66,
+          "text": "it"
+        },
+        {
+          "t": 211.86,
+          "text": "quiet?"
+        }
+      ]
+    },
+    {
+      "start": 212.58,
+      "end": 213.08,
+      "text": "Almost",
+      "words": [
+        {
+          "t": 212.58,
+          "text": "Almost"
+        }
+      ]
+    },
+    {
+      "start": 215.58,
+      "end": 218.06,
+      "text": "I'm looking for a ceasefire in the static",
+      "words": [
+        {
+          "t": 215.58,
+          "text": "I'm"
+        },
+        {
+          "t": 215.68,
+          "text": "looking"
+        },
+        {
+          "t": 215.9,
+          "text": "for"
+        },
+        {
+          "t": 216.24,
+          "text": "a"
+        },
+        {
+          "t": 216.38,
+          "text": "ceasefire"
+        },
+        {
+          "t": 217.04,
+          "text": "in"
+        },
+        {
+          "t": 217.42,
+          "text": "the"
+        },
+        {
+          "t": 217.64,
+          "text": "static"
+        }
+      ]
+    },
+    {
+      "start": 218.06,
+      "end": 221.18,
+      "text": "One quiet place inside the noise",
+      "words": [
+        {
+          "t": 218.06,
+          "text": "One"
+        },
+        {
+          "t": 218.98,
+          "text": "quiet"
+        },
+        {
+          "t": 219.52,
+          "text": "place"
+        },
+        {
+          "t": 219.968,
+          "text": "inside"
+        },
+        {
+          "t": 220.24,
+          "text": "the"
+        },
+        {
+          "t": 220.74,
+          "text": "noise"
+        }
+      ]
+    },
+    {
+      "start": 221.6,
+      "end": 224.24,
+      "text": "A little room behind the panic",
+      "words": [
+        {
+          "t": 221.6,
+          "text": "A"
+        },
+        {
+          "t": 222.048,
+          "text": "little"
+        },
+        {
+          "t": 222.432,
+          "text": "room"
+        },
+        {
+          "t": 222.912,
+          "text": "behind"
+        },
+        {
+          "t": 223.24,
+          "text": "the"
+        },
+        {
+          "t": 223.68,
+          "text": "panic"
+        }
+      ]
+    },
+    {
+      "start": 224.27,
+      "end": 226.848,
+      "text": "Where I can hear my real voice",
+      "words": [
+        {
+          "t": 224.27,
+          "text": "Where"
+        },
+        {
+          "t": 225.02,
+          "text": "I"
+        },
+        {
+          "t": 225.2,
+          "text": "can"
+        },
+        {
+          "t": 225.36,
+          "text": "hear"
+        },
+        {
+          "t": 225.66,
+          "text": "my"
+        },
+        {
+          "t": 225.96,
+          "text": "real"
+        },
+        {
+          "t": 226.44,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 227.552,
+      "end": 230.22,
+      "text": "I'm looking for a pattern in the madness",
+      "words": [
+        {
+          "t": 227.552,
+          "text": "I'm"
+        },
+        {
+          "t": 227.66,
+          "text": "looking"
+        },
+        {
+          "t": 227.86,
+          "text": "for"
+        },
+        {
+          "t": 228.2,
+          "text": "a"
+        },
+        {
+          "t": 228.38,
+          "text": "pattern"
+        },
+        {
+          "t": 228.94,
+          "text": "in"
+        },
+        {
+          "t": 229.42,
+          "text": "the"
+        },
+        {
+          "t": 229.6,
+          "text": "madness"
+        }
+      ]
+    },
+    {
+      "start": 230.22,
+      "end": 233.02,
+      "text": "A holy line through broken code",
+      "words": [
+        {
+          "t": 230.22,
+          "text": "A"
+        },
+        {
+          "t": 231.104,
+          "text": "holy"
+        },
+        {
+          "t": 231.26,
+          "text": "line"
+        },
+        {
+          "t": 231.58,
+          "text": "through"
+        },
+        {
+          "t": 232.128,
+          "text": "broken"
+        },
+        {
+          "t": 232.4,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 233.664,
+      "end": 236.18,
+      "text": "If peace is somewhere in the chaos",
+      "words": [
+        {
+          "t": 233.664,
+          "text": "If"
+        },
+        {
+          "t": 233.984,
+          "text": "peace"
+        },
+        {
+          "t": 234.2,
+          "text": "is"
+        },
+        {
+          "t": 234.34,
+          "text": "somewhere"
+        },
+        {
+          "t": 234.74,
+          "text": "in"
+        },
+        {
+          "t": 235.34,
+          "text": "the"
+        },
+        {
+          "t": 235.58,
+          "text": "chaos"
+        }
+      ]
+    },
+    {
+      "start": 236.18,
+      "end": 239.1,
+      "text": "Then I'm still walking down that road",
+      "words": [
+        {
+          "t": 236.18,
+          "text": "Then"
+        },
+        {
+          "t": 237.0,
+          "text": "I'm"
+        },
+        {
+          "t": 237.2,
+          "text": "still"
+        },
+        {
+          "t": 237.32,
+          "text": "walking"
+        },
+        {
+          "t": 237.888,
+          "text": "down"
+        },
+        {
+          "t": 238.32,
+          "text": "that"
+        },
+        {
+          "t": 238.72,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 239.1,
+      "end": 239.616,
+      "text": "Boom,",
+      "words": [
+        {
+          "t": 239.1,
+          "text": "Boom,"
+        }
+      ]
+    },
+    {
+      "start": 240.62,
+      "end": 242.0,
+      "text": "boom, boom",
+      "words": [
+        {
+          "t": 240.62,
+          "text": "boom,"
+        },
+        {
+          "t": 241.44,
+          "text": "boom"
+        }
+      ]
+    },
+    {
+      "start": 242.0,
+      "end": 245.98,
+      "text": "One notification blinks",
+      "words": [
+        {
+          "t": 242.0,
+          "text": "One"
+        },
+        {
+          "t": 243.776,
+          "text": "notification"
+        },
+        {
+          "t": 244.58,
+          "text": "blinks"
+        }
+      ]
+    },
+    {
+      "start": 245.98,
+      "end": 247.98,
+      "text": "Boom, boom, boom",
+      "words": [
+        {
+          "t": 245.98,
+          "text": "Boom,"
+        },
+        {
+          "t": 246.62,
+          "text": "boom,"
+        },
+        {
+          "t": 247.42,
+          "text": "boom"
+        }
+      ]
+    },
+    {
+      "start": 247.98,
+      "end": 249.46,
+      "text": "Then disappears",
+      "words": [
+        {
+          "t": 247.98,
+          "text": "Then"
+        },
+        {
+          "t": 248.86,
+          "text": "disappears"
+        }
+      ]
+    },
+    {
+      "start": 249.46,
+      "end": 252.3,
+      "text": "I heard silence for a second",
+      "words": [
+        {
+          "t": 249.46,
+          "text": "I"
+        },
+        {
+          "t": 250.528,
+          "text": "heard"
+        },
+        {
+          "t": 250.78,
+          "text": "silence"
+        },
+        {
+          "t": 251.3,
+          "text": "for"
+        },
+        {
+          "t": 251.6,
+          "text": "a"
+        },
+        {
+          "t": 251.78,
+          "text": "second"
+        }
+      ]
+    },
+    {
+      "start": 252.84,
+      "end": 256.04,
+      "text": "Or maybe it was just the storm",
+      "words": [
+        {
+          "t": 252.84,
+          "text": "Or"
+        },
+        {
+          "t": 253.728,
+          "text": "maybe"
+        },
+        {
+          "t": 254.08,
+          "text": "it"
+        },
+        {
+          "t": 254.42,
+          "text": "was"
+        },
+        {
+          "t": 254.66,
+          "text": "just"
+        },
+        {
+          "t": 255.1,
+          "text": "the"
+        },
+        {
+          "t": 255.4,
+          "text": "storm"
+        }
+      ]
+    },
+    {
+      "start": 257.94,
+      "end": 258.94,
+      "text": "But I kept walking",
+      "words": [
+        {
+          "t": 257.94,
+          "text": "But"
+        },
+        {
+          "t": 258.04,
+          "text": "I"
+        },
+        {
+          "t": 258.16,
+          "text": "kept"
+        },
+        {
+          "t": 258.42,
+          "text": "walking"
+        }
+      ]
+    },
+    {
+      "start": 258.94,
+      "end": 262.048,
+      "text": "I kept walking",
+      "words": [
+        {
+          "t": 258.94,
+          "text": "I"
+        },
+        {
+          "t": 259.74,
+          "text": "kept"
+        },
+        {
+          "t": 261.72,
+          "text": "walking"
+        }
+      ]
+    },
+    {
+      "start": 264.736,
+      "end": 265.44,
+      "text": "Static fade",
+      "words": [
+        {
+          "t": 264.736,
+          "text": "Static"
+        },
+        {
+          "t": 265.12,
+          "text": "fade"
+        }
+      ]
+    },
+    {
+      "start": 270.848,
+      "end": 271.78,
+      "text": "Static fade",
+      "words": [
+        {
+          "t": 270.848,
+          "text": "Static"
+        },
+        {
+          "t": 271.3,
+          "text": "fade"
+        }
+      ]
+    },
+    {
+      "start": 276.512,
+      "end": 278.98,
+      "text": "Piano unresolved",
+      "words": [
+        {
+          "t": 276.512,
+          "text": "Piano"
+        },
+        {
+          "t": 277.58,
+          "text": "unresolved"
+        }
+      ]
+    }
+  ]
+}

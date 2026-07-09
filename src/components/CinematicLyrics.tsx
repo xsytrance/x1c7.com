@@ -301,6 +301,8 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
           <AnimatePresence>
             {mixerOpen && hasStems && (
               <StemMixer
+                track={track}
+                getTime={getCurrentTime}
                 onClose={() => setMixerOpen(false)}
                 lensArmed={lensArmed}
                 onToggleLens={() => { setLensArmed((v) => !v); setMixerOpen(false); }}

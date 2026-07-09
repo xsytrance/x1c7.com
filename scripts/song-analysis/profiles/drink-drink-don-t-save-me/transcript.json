@@ -1,0 +1,1829 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 2.144,
+      "end": 3.616,
+      "text": "Don't save me,",
+      "words": [
+        {
+          "t": 2.144,
+          "text": "Don't"
+        },
+        {
+          "t": 2.976,
+          "text": "save"
+        },
+        {
+          "t": 3.26,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 6.496,
+      "end": 6.66,
+      "text": "don't",
+      "words": [
+        {
+          "t": 6.496,
+          "text": "don't"
+        }
+      ]
+    },
+    {
+      "start": 7.296,
+      "end": 7.66,
+      "text": "save me,",
+      "words": [
+        {
+          "t": 7.296,
+          "text": "save"
+        },
+        {
+          "t": 7.56,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 11.08,
+      "end": 13.76,
+      "text": "don't save me now",
+      "words": [
+        {
+          "t": 11.08,
+          "text": "don't"
+        },
+        {
+          "t": 12.38,
+          "text": "save"
+        },
+        {
+          "t": 12.8,
+          "text": "me"
+        },
+        {
+          "t": 13.24,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 13.94,
+      "end": 23.34,
+      "text": "Close your tap, fall through the ceiling",
+      "words": [
+        {
+          "t": 13.94,
+          "text": "Close"
+        },
+        {
+          "t": 14.64,
+          "text": "your"
+        },
+        {
+          "t": 15.14,
+          "text": "tap,"
+        },
+        {
+          "t": 16.72,
+          "text": "fall"
+        },
+        {
+          "t": 20.42,
+          "text": "through"
+        },
+        {
+          "t": 21.22,
+          "text": "the"
+        },
+        {
+          "t": 22.14,
+          "text": "ceiling"
+        }
+      ]
+    },
+    {
+      "start": 23.34,
+      "end": 25.408,
+      "text": "Train, train, train,",
+      "words": [
+        {
+          "t": 23.34,
+          "text": "Train,"
+        },
+        {
+          "t": 24.36,
+          "text": "train,"
+        },
+        {
+          "t": 25.26,
+          "text": "train,"
+        }
+      ]
+    },
+    {
+      "start": 26.22,
+      "end": 26.4,
+      "text": "train",
+      "words": [
+        {
+          "t": 26.22,
+          "text": "train"
+        }
+      ]
+    },
+    {
+      "start": 39.36,
+      "end": 43.36,
+      "text": "Put my sorrow in the light",
+      "words": [
+        {
+          "t": 39.36,
+          "text": "Put"
+        },
+        {
+          "t": 40.38,
+          "text": "my"
+        },
+        {
+          "t": 41.4,
+          "text": "sorrow"
+        },
+        {
+          "t": 41.86,
+          "text": "in"
+        },
+        {
+          "t": 42.34,
+          "text": "the"
+        },
+        {
+          "t": 42.88,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 47.14,
+      "end": 49.94,
+      "text": "Bottle glowing by my bed",
+      "words": [
+        {
+          "t": 47.14,
+          "text": "Bottle"
+        },
+        {
+          "t": 48.14,
+          "text": "glowing"
+        },
+        {
+          "t": 48.92,
+          "text": "by"
+        },
+        {
+          "t": 49.32,
+          "text": "my"
+        },
+        {
+          "t": 49.6,
+          "text": "bed"
+        }
+      ]
+    },
+    {
+      "start": 54.96,
+      "end": 57.7,
+      "text": "Pain keeps pounding in my head",
+      "words": [
+        {
+          "t": 54.96,
+          "text": "Pain"
+        },
+        {
+          "t": 55.6,
+          "text": "keeps"
+        },
+        {
+          "t": 55.98,
+          "text": "pounding"
+        },
+        {
+          "t": 56.6,
+          "text": "in"
+        },
+        {
+          "t": 56.92,
+          "text": "my"
+        },
+        {
+          "t": 57.16,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 60.78,
+      "end": 64.2,
+      "text": "Train, train, train, train, train",
+      "words": [
+        {
+          "t": 60.78,
+          "text": "Train,"
+        },
+        {
+          "t": 61.42,
+          "text": "train,"
+        },
+        {
+          "t": 61.96,
+          "text": "train,"
+        },
+        {
+          "t": 62.82,
+          "text": "train,"
+        },
+        {
+          "t": 63.38,
+          "text": "train"
+        }
+      ]
+    },
+    {
+      "start": 64.2,
+      "end": 64.9,
+      "text": "Train,",
+      "words": [
+        {
+          "t": 64.2,
+          "text": "Train,"
+        }
+      ]
+    },
+    {
+      "start": 65.62,
+      "end": 66.96,
+      "text": "train, train, train",
+      "words": [
+        {
+          "t": 65.62,
+          "text": "train,"
+        },
+        {
+          "t": 66.12,
+          "text": "train,"
+        },
+        {
+          "t": 66.64,
+          "text": "train"
+        }
+      ]
+    },
+    {
+      "start": 67.32,
+      "end": 70.14,
+      "text": "I've been out with the ghost again",
+      "words": [
+        {
+          "t": 67.32,
+          "text": "I've"
+        },
+        {
+          "t": 67.92,
+          "text": "been"
+        },
+        {
+          "t": 69.04,
+          "text": "out"
+        },
+        {
+          "t": 69.26,
+          "text": "with"
+        },
+        {
+          "t": 69.52,
+          "text": "the"
+        },
+        {
+          "t": 69.66,
+          "text": "ghost"
+        },
+        {
+          "t": 69.9,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 70.14,
+      "end": 71.88,
+      "text": "Dark glass to my face",
+      "words": [
+        {
+          "t": 70.14,
+          "text": "Dark"
+        },
+        {
+          "t": 70.54,
+          "text": "glass"
+        },
+        {
+          "t": 70.84,
+          "text": "to"
+        },
+        {
+          "t": 71.2,
+          "text": "my"
+        },
+        {
+          "t": 71.36,
+          "text": "face"
+        }
+      ]
+    },
+    {
+      "start": 71.88,
+      "end": 73.9,
+      "text": "City bleeding through the window",
+      "words": [
+        {
+          "t": 71.88,
+          "text": "City"
+        },
+        {
+          "t": 72.736,
+          "text": "bleeding"
+        },
+        {
+          "t": 73.08,
+          "text": "through"
+        },
+        {
+          "t": 73.32,
+          "text": "the"
+        },
+        {
+          "t": 73.48,
+          "text": "window"
+        }
+      ]
+    },
+    {
+      "start": 73.9,
+      "end": 75.62,
+      "text": "Smoke car in the base",
+      "words": [
+        {
+          "t": 73.9,
+          "text": "Smoke"
+        },
+        {
+          "t": 74.28,
+          "text": "car"
+        },
+        {
+          "t": 74.62,
+          "text": "in"
+        },
+        {
+          "t": 75.04,
+          "text": "the"
+        },
+        {
+          "t": 75.18,
+          "text": "base"
+        }
+      ]
+    },
+    {
+      "start": 75.62,
+      "end": 77.18,
+      "text": "I don't need another promise",
+      "words": [
+        {
+          "t": 75.62,
+          "text": "I"
+        },
+        {
+          "t": 76.0,
+          "text": "don't"
+        },
+        {
+          "t": 76.18,
+          "text": "need"
+        },
+        {
+          "t": 76.36,
+          "text": "another"
+        },
+        {
+          "t": 76.66,
+          "text": "promise"
+        }
+      ]
+    },
+    {
+      "start": 77.18,
+      "end": 78.92,
+      "text": "I don't need another sign",
+      "words": [
+        {
+          "t": 77.18,
+          "text": "I"
+        },
+        {
+          "t": 77.5,
+          "text": "don't"
+        },
+        {
+          "t": 78.08,
+          "text": "need"
+        },
+        {
+          "t": 78.28,
+          "text": "another"
+        },
+        {
+          "t": 78.6,
+          "text": "sign"
+        }
+      ]
+    },
+    {
+      "start": 79.4,
+      "end": 80.98,
+      "text": "I just need this bus to vanish",
+      "words": [
+        {
+          "t": 79.4,
+          "text": "I"
+        },
+        {
+          "t": 79.8,
+          "text": "just"
+        },
+        {
+          "t": 79.96,
+          "text": "need"
+        },
+        {
+          "t": 80.16,
+          "text": "this"
+        },
+        {
+          "t": 80.32,
+          "text": "bus"
+        },
+        {
+          "t": 80.48,
+          "text": "to"
+        },
+        {
+          "t": 80.6,
+          "text": "vanish"
+        }
+      ]
+    },
+    {
+      "start": 80.98,
+      "end": 82.84,
+      "text": "For a little piece of time",
+      "words": [
+        {
+          "t": 80.98,
+          "text": "For"
+        },
+        {
+          "t": 81.64,
+          "text": "a"
+        },
+        {
+          "t": 81.88,
+          "text": "little"
+        },
+        {
+          "t": 82.16,
+          "text": "piece"
+        },
+        {
+          "t": 82.38,
+          "text": "of"
+        },
+        {
+          "t": 82.54,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 82.84,
+      "end": 83.32,
+      "text": "For a little piece of time",
+      "words": [
+        {
+          "t": 82.84,
+          "text": "For"
+        },
+        {
+          "t": 83.26,
+          "text": "a"
+        },
+        {
+          "t": 83.32,
+          "text": "little"
+        },
+        {
+          "t": 83.32,
+          "text": "piece"
+        },
+        {
+          "t": 83.32,
+          "text": "of"
+        },
+        {
+          "t": 83.32,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 83.552,
+      "end": 85.56,
+      "text": "Bosses in the walls, but they sound like me",
+      "words": [
+        {
+          "t": 83.552,
+          "text": "Bosses"
+        },
+        {
+          "t": 83.76,
+          "text": "in"
+        },
+        {
+          "t": 83.84,
+          "text": "the"
+        },
+        {
+          "t": 83.94,
+          "text": "walls,"
+        },
+        {
+          "t": 84.448,
+          "text": "but"
+        },
+        {
+          "t": 84.56,
+          "text": "they"
+        },
+        {
+          "t": 84.8,
+          "text": "sound"
+        },
+        {
+          "t": 85.1,
+          "text": "like"
+        },
+        {
+          "t": 85.34,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 85.56,
+      "end": 87.24,
+      "text": "Heart doing last, moving lazily",
+      "words": [
+        {
+          "t": 85.56,
+          "text": "Heart"
+        },
+        {
+          "t": 86.04,
+          "text": "doing"
+        },
+        {
+          "t": 86.26,
+          "text": "last,"
+        },
+        {
+          "t": 86.56,
+          "text": "moving"
+        },
+        {
+          "t": 86.72,
+          "text": "lazily"
+        }
+      ]
+    },
+    {
+      "start": 87.24,
+      "end": 88.46,
+      "text": "I keep saying I'm fine,",
+      "words": [
+        {
+          "t": 87.24,
+          "text": "I"
+        },
+        {
+          "t": 87.5,
+          "text": "keep"
+        },
+        {
+          "t": 87.66,
+          "text": "saying"
+        },
+        {
+          "t": 87.92,
+          "text": "I'm"
+        },
+        {
+          "t": 88.18,
+          "text": "fine,"
+        }
+      ]
+    },
+    {
+      "start": 88.52,
+      "end": 89.54,
+      "text": "but the night won't believe me",
+      "words": [
+        {
+          "t": 88.52,
+          "text": "but"
+        },
+        {
+          "t": 88.6,
+          "text": "the"
+        },
+        {
+          "t": 88.72,
+          "text": "night"
+        },
+        {
+          "t": 88.88,
+          "text": "won't"
+        },
+        {
+          "t": 89.1,
+          "text": "believe"
+        },
+        {
+          "t": 89.3,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 89.54,
+      "end": 90.92,
+      "text": "So I tell my soul",
+      "words": [
+        {
+          "t": 89.54,
+          "text": "So"
+        },
+        {
+          "t": 89.76,
+          "text": "I"
+        },
+        {
+          "t": 90.02,
+          "text": "tell"
+        },
+        {
+          "t": 90.28,
+          "text": "my"
+        },
+        {
+          "t": 90.48,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 90.92,
+      "end": 94.58,
+      "text": "Sink down, sink deep, let go, don't speak",
+      "words": [
+        {
+          "t": 90.92,
+          "text": "Sink"
+        },
+        {
+          "t": 91.52,
+          "text": "down,"
+        },
+        {
+          "t": 92.02,
+          "text": "sink"
+        },
+        {
+          "t": 92.38,
+          "text": "deep,"
+        },
+        {
+          "t": 92.94,
+          "text": "let"
+        },
+        {
+          "t": 93.34,
+          "text": "go,"
+        },
+        {
+          "t": 93.86,
+          "text": "don't"
+        },
+        {
+          "t": 94.38,
+          "text": "speak"
+        }
+      ]
+    },
+    {
+      "start": 94.58,
+      "end": 98.5,
+      "text": "Sink down, sink deep, let go, don't drink",
+      "words": [
+        {
+          "t": 94.58,
+          "text": "Sink"
+        },
+        {
+          "t": 95.32,
+          "text": "down,"
+        },
+        {
+          "t": 95.84,
+          "text": "sink"
+        },
+        {
+          "t": 96.26,
+          "text": "deep,"
+        },
+        {
+          "t": 96.78,
+          "text": "let"
+        },
+        {
+          "t": 97.16,
+          "text": "go,"
+        },
+        {
+          "t": 97.7,
+          "text": "don't"
+        },
+        {
+          "t": 98.26,
+          "text": "drink"
+        }
+      ]
+    },
+    {
+      "start": 101.34,
+      "end": 104.0,
+      "text": "Oh, I don't wanna feel tonight",
+      "words": [
+        {
+          "t": 101.34,
+          "text": "Oh,"
+        },
+        {
+          "t": 101.86,
+          "text": "I"
+        },
+        {
+          "t": 102.368,
+          "text": "don't"
+        },
+        {
+          "t": 102.48,
+          "text": "wanna"
+        },
+        {
+          "t": 102.72,
+          "text": "feel"
+        },
+        {
+          "t": 103.16,
+          "text": "tonight"
+        }
+      ]
+    },
+    {
+      "start": 109.24,
+      "end": 111.82,
+      "text": "Put my sorrow in the light",
+      "words": [
+        {
+          "t": 109.24,
+          "text": "Put"
+        },
+        {
+          "t": 109.792,
+          "text": "my"
+        },
+        {
+          "t": 109.94,
+          "text": "sorrow"
+        },
+        {
+          "t": 110.46,
+          "text": "in"
+        },
+        {
+          "t": 110.88,
+          "text": "the"
+        },
+        {
+          "t": 111.44,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 116.416,
+      "end": 118.56,
+      "text": "Bottle blown by my bed",
+      "words": [
+        {
+          "t": 116.416,
+          "text": "Bottle"
+        },
+        {
+          "t": 116.68,
+          "text": "blown"
+        },
+        {
+          "t": 117.44,
+          "text": "by"
+        },
+        {
+          "t": 117.88,
+          "text": "my"
+        },
+        {
+          "t": 118.14,
+          "text": "bed"
+        }
+      ]
+    },
+    {
+      "start": 124.064,
+      "end": 126.26,
+      "text": "Panky's pounding in my head",
+      "words": [
+        {
+          "t": 124.064,
+          "text": "Panky's"
+        },
+        {
+          "t": 124.72,
+          "text": "pounding"
+        },
+        {
+          "t": 125.18,
+          "text": "in"
+        },
+        {
+          "t": 125.52,
+          "text": "my"
+        },
+        {
+          "t": 125.74,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 130.24,
+      "end": 131.38,
+      "text": "Don't save me",
+      "words": [
+        {
+          "t": 130.24,
+          "text": "Don't"
+        },
+        {
+          "t": 130.54,
+          "text": "save"
+        },
+        {
+          "t": 130.78,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 134.048,
+      "end": 135.18,
+      "text": "Don't save me",
+      "words": [
+        {
+          "t": 134.048,
+          "text": "Don't"
+        },
+        {
+          "t": 134.2,
+          "text": "save"
+        },
+        {
+          "t": 134.66,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 135.18,
+      "end": 137.4,
+      "text": "I hate it",
+      "words": [
+        {
+          "t": 135.18,
+          "text": "I"
+        },
+        {
+          "t": 136.512,
+          "text": "hate"
+        },
+        {
+          "t": 137.2,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 137.4,
+      "end": 140.4,
+      "text": "It's crazy",
+      "words": [
+        {
+          "t": 137.4,
+          "text": "It's"
+        },
+        {
+          "t": 139.62,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 141.62,
+      "end": 142.74,
+      "text": "Girl",
+      "words": [
+        {
+          "t": 141.62,
+          "text": "Girl"
+        }
+      ]
+    },
+    {
+      "start": 143.66,
+      "end": 145.96,
+      "text": "I hear my name in the ceiling fending",
+      "words": [
+        {
+          "t": 143.66,
+          "text": "I"
+        },
+        {
+          "t": 144.448,
+          "text": "hear"
+        },
+        {
+          "t": 144.7,
+          "text": "my"
+        },
+        {
+          "t": 144.86,
+          "text": "name"
+        },
+        {
+          "t": 145.1,
+          "text": "in"
+        },
+        {
+          "t": 145.24,
+          "text": "the"
+        },
+        {
+          "t": 145.32,
+          "text": "ceiling"
+        },
+        {
+          "t": 145.6,
+          "text": "fending"
+        }
+      ]
+    },
+    {
+      "start": 145.96,
+      "end": 147.44,
+      "text": "I see my shame in the smoke",
+      "words": [
+        {
+          "t": 145.96,
+          "text": "I"
+        },
+        {
+          "t": 146.32,
+          "text": "see"
+        },
+        {
+          "t": 146.6,
+          "text": "my"
+        },
+        {
+          "t": 146.74,
+          "text": "shame"
+        },
+        {
+          "t": 146.98,
+          "text": "in"
+        },
+        {
+          "t": 147.12,
+          "text": "the"
+        },
+        {
+          "t": 147.2,
+          "text": "smoke"
+        }
+      ]
+    },
+    {
+      "start": 147.5,
+      "end": 149.44,
+      "text": "Every blessing got a bottle",
+      "words": [
+        {
+          "t": 147.5,
+          "text": "Every"
+        },
+        {
+          "t": 148.256,
+          "text": "blessing"
+        },
+        {
+          "t": 148.82,
+          "text": "got"
+        },
+        {
+          "t": 149.02,
+          "text": "a"
+        },
+        {
+          "t": 149.16,
+          "text": "bottle"
+        }
+      ]
+    },
+    {
+      "start": 149.58,
+      "end": 151.3,
+      "text": "Every prayer hits my throat",
+      "words": [
+        {
+          "t": 149.58,
+          "text": "Every"
+        },
+        {
+          "t": 150.28,
+          "text": "prayer"
+        },
+        {
+          "t": 150.68,
+          "text": "hits"
+        },
+        {
+          "t": 150.88,
+          "text": "my"
+        },
+        {
+          "t": 151.02,
+          "text": "throat"
+        }
+      ]
+    },
+    {
+      "start": 151.34,
+      "end": 152.78,
+      "text": "I've been running on empty",
+      "words": [
+        {
+          "t": 151.34,
+          "text": "I've"
+        },
+        {
+          "t": 151.94,
+          "text": "been"
+        },
+        {
+          "t": 152.04,
+          "text": "running"
+        },
+        {
+          "t": 152.26,
+          "text": "on"
+        },
+        {
+          "t": 152.5,
+          "text": "empty"
+        }
+      ]
+    },
+    {
+      "start": 152.78,
+      "end": 154.12,
+      "text": "But the shots still hit",
+      "words": [
+        {
+          "t": 152.78,
+          "text": "But"
+        },
+        {
+          "t": 153.32,
+          "text": "the"
+        },
+        {
+          "t": 153.46,
+          "text": "shots"
+        },
+        {
+          "t": 153.62,
+          "text": "still"
+        },
+        {
+          "t": 153.9,
+          "text": "hit"
+        }
+      ]
+    },
+    {
+      "start": 154.27,
+      "end": 155.7,
+      "text": "I've been laughing in public",
+      "words": [
+        {
+          "t": 154.27,
+          "text": "I've"
+        },
+        {
+          "t": 154.82,
+          "text": "been"
+        },
+        {
+          "t": 154.92,
+          "text": "laughing"
+        },
+        {
+          "t": 155.14,
+          "text": "in"
+        },
+        {
+          "t": 155.32,
+          "text": "public"
+        }
+      ]
+    },
+    {
+      "start": 156.2,
+      "end": 157.4,
+      "text": "Then I've ended so quick",
+      "words": [
+        {
+          "t": 156.2,
+          "text": "Then"
+        },
+        {
+          "t": 156.7,
+          "text": "I've"
+        },
+        {
+          "t": 156.86,
+          "text": "ended"
+        },
+        {
+          "t": 156.98,
+          "text": "so"
+        },
+        {
+          "t": 157.2,
+          "text": "quick"
+        }
+      ]
+    },
+    {
+      "start": 158.92,
+      "end": 160.36,
+      "text": "Don't call me strong",
+      "words": [
+        {
+          "t": 158.92,
+          "text": "Don't"
+        },
+        {
+          "t": 159.48,
+          "text": "call"
+        },
+        {
+          "t": 159.7,
+          "text": "me"
+        },
+        {
+          "t": 160.0,
+          "text": "strong"
+        }
+      ]
+    },
+    {
+      "start": 160.36,
+      "end": 162.22,
+      "text": "I'm just trained not to fall",
+      "words": [
+        {
+          "t": 160.36,
+          "text": "I'm"
+        },
+        {
+          "t": 160.86,
+          "text": "just"
+        },
+        {
+          "t": 161.02,
+          "text": "trained"
+        },
+        {
+          "t": 161.34,
+          "text": "not"
+        },
+        {
+          "t": 161.66,
+          "text": "to"
+        },
+        {
+          "t": 161.9,
+          "text": "fall"
+        }
+      ]
+    },
+    {
+      "start": 162.48,
+      "end": 164.16,
+      "text": "Don't call me lost",
+      "words": [
+        {
+          "t": 162.48,
+          "text": "Don't"
+        },
+        {
+          "t": 163.28,
+          "text": "call"
+        },
+        {
+          "t": 163.56,
+          "text": "me"
+        },
+        {
+          "t": 163.84,
+          "text": "lost"
+        }
+      ]
+    },
+    {
+      "start": 164.16,
+      "end": 166.16,
+      "text": "I just walk with this hold",
+      "words": [
+        {
+          "t": 164.16,
+          "text": "I"
+        },
+        {
+          "t": 164.6,
+          "text": "just"
+        },
+        {
+          "t": 164.8,
+          "text": "walk"
+        },
+        {
+          "t": 165.12,
+          "text": "with"
+        },
+        {
+          "t": 165.4,
+          "text": "this"
+        },
+        {
+          "t": 165.78,
+          "text": "hold"
+        }
+      ]
+    },
+    {
+      "start": 166.16,
+      "end": 167.98,
+      "text": "And if tomorrow wants me",
+      "words": [
+        {
+          "t": 166.16,
+          "text": "And"
+        },
+        {
+          "t": 166.8,
+          "text": "if"
+        },
+        {
+          "t": 166.94,
+          "text": "tomorrow"
+        },
+        {
+          "t": 167.22,
+          "text": "wants"
+        },
+        {
+          "t": 167.68,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 167.98,
+      "end": 169.96,
+      "text": "Tell tomorrow hold on",
+      "words": [
+        {
+          "t": 167.98,
+          "text": "Tell"
+        },
+        {
+          "t": 168.84,
+          "text": "tomorrow"
+        },
+        {
+          "t": 169.14,
+          "text": "hold"
+        },
+        {
+          "t": 169.62,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 169.96,
+      "end": 171.82,
+      "text": "I'm under these drums",
+      "words": [
+        {
+          "t": 169.96,
+          "text": "I'm"
+        },
+        {
+          "t": 170.62,
+          "text": "under"
+        },
+        {
+          "t": 171.04,
+          "text": "these"
+        },
+        {
+          "t": 171.42,
+          "text": "drums"
+        }
+      ]
+    },
+    {
+      "start": 172.12,
+      "end": 172.72,
+      "text": "Trying to swim through the clouds",
+      "words": [
+        {
+          "t": 172.12,
+          "text": "Trying"
+        },
+        {
+          "t": 172.42,
+          "text": "to"
+        },
+        {
+          "t": 172.54,
+          "text": "swim"
+        },
+        {
+          "t": 172.66,
+          "text": "through"
+        },
+        {
+          "t": 172.72,
+          "text": "the"
+        },
+        {
+          "t": 172.72,
+          "text": "clouds"
+        }
+      ]
+    },
+    {
+      "start": 172.74,
+      "end": 173.84,
+      "text": "To weigh this storm",
+      "words": [
+        {
+          "t": 172.74,
+          "text": "To"
+        },
+        {
+          "t": 172.82,
+          "text": "weigh"
+        },
+        {
+          "t": 172.82,
+          "text": "this"
+        },
+        {
+          "t": 173.22,
+          "text": "storm"
+        }
+      ]
+    },
+    {
+      "start": 176.72,
+      "end": 178.52,
+      "text": "We let it go",
+      "words": [
+        {
+          "t": 176.72,
+          "text": "We"
+        },
+        {
+          "t": 177.632,
+          "text": "let"
+        },
+        {
+          "t": 177.9,
+          "text": "it"
+        },
+        {
+          "t": 178.16,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 181.184,
+      "end": 182.52,
+      "text": "There's a better road",
+      "words": [
+        {
+          "t": 181.184,
+          "text": "There's"
+        },
+        {
+          "t": 181.36,
+          "text": "a"
+        },
+        {
+          "t": 181.42,
+          "text": "better"
+        },
+        {
+          "t": 181.9,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 182.72,
+      "end": 185.14,
+      "text": "Don't save me now",
+      "words": [
+        {
+          "t": 182.72,
+          "text": "Don't"
+        },
+        {
+          "t": 184.02,
+          "text": "save"
+        },
+        {
+          "t": 184.2,
+          "text": "me"
+        },
+        {
+          "t": 184.62,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 185.14,
+      "end": 187.06,
+      "text": "Don't save me now",
+      "words": [
+        {
+          "t": 185.14,
+          "text": "Don't"
+        },
+        {
+          "t": 185.62,
+          "text": "save"
+        },
+        {
+          "t": 186.1,
+          "text": "me"
+        },
+        {
+          "t": 186.62,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 187.06,
+      "end": 189.04,
+      "text": "Don't save me now",
+      "words": [
+        {
+          "t": 187.06,
+          "text": "Don't"
+        },
+        {
+          "t": 187.9,
+          "text": "save"
+        },
+        {
+          "t": 188.0,
+          "text": "me"
+        },
+        {
+          "t": 188.5,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 193.92,
+      "end": 194.4,
+      "text": "Drink,",
+      "words": [
+        {
+          "t": 193.92,
+          "text": "Drink,"
+        }
+      ]
+    },
+    {
+      "start": 199.1,
+      "end": 201.78,
+      "text": "drink, drink, drink",
+      "words": [
+        {
+          "t": 199.1,
+          "text": "drink,"
+        },
+        {
+          "t": 200.06,
+          "text": "drink,"
+        },
+        {
+          "t": 201.04,
+          "text": "drink"
+        }
+      ]
+    },
+    {
+      "start": 201.78,
+      "end": 202.66,
+      "text": "Drink, drink, drink, drink, drink",
+      "words": [
+        {
+          "t": 201.78,
+          "text": "Drink,"
+        },
+        {
+          "t": 202.2,
+          "text": "drink,"
+        },
+        {
+          "t": 202.2,
+          "text": "drink,"
+        },
+        {
+          "t": 202.2,
+          "text": "drink,"
+        },
+        {
+          "t": 202.2,
+          "text": "drink"
+        }
+      ]
+    },
+    {
+      "start": 209.0,
+      "end": 211.96,
+      "text": "I don't want to feel tonight",
+      "words": [
+        {
+          "t": 209.0,
+          "text": "I"
+        },
+        {
+          "t": 210.02,
+          "text": "don't"
+        },
+        {
+          "t": 211.04,
+          "text": "want"
+        },
+        {
+          "t": 211.232,
+          "text": "to"
+        },
+        {
+          "t": 211.42,
+          "text": "feel"
+        },
+        {
+          "t": 211.86,
+          "text": "tonight"
+        }
+      ]
+    },
+    {
+      "start": 217.4,
+      "end": 220.256,
+      "text": "Put my sorrow in the light",
+      "words": [
+        {
+          "t": 217.4,
+          "text": "Put"
+        },
+        {
+          "t": 217.5,
+          "text": "my"
+        },
+        {
+          "t": 218.656,
+          "text": "sorrow"
+        },
+        {
+          "t": 219.04,
+          "text": "in"
+        },
+        {
+          "t": 219.52,
+          "text": "the"
+        },
+        {
+          "t": 220.02,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 221.48,
+      "end": 222.28,
+      "text": "But",
+      "words": [
+        {
+          "t": 221.48,
+          "text": "But"
+        }
+      ]
+    },
+    {
+      "start": 225.86,
+      "end": 227.36,
+      "text": "I'm going by my bed",
+      "words": [
+        {
+          "t": 225.86,
+          "text": "I'm"
+        },
+        {
+          "t": 225.96,
+          "text": "going"
+        },
+        {
+          "t": 226.1,
+          "text": "by"
+        },
+        {
+          "t": 226.42,
+          "text": "my"
+        },
+        {
+          "t": 226.74,
+          "text": "bed"
+        }
+      ]
+    },
+    {
+      "start": 232.56,
+      "end": 234.84,
+      "text": "Pain keeps clowning in my head",
+      "words": [
+        {
+          "t": 232.56,
+          "text": "Pain"
+        },
+        {
+          "t": 232.66,
+          "text": "keeps"
+        },
+        {
+          "t": 233.344,
+          "text": "clowning"
+        },
+        {
+          "t": 233.92,
+          "text": "in"
+        },
+        {
+          "t": 234.04,
+          "text": "my"
+        },
+        {
+          "t": 234.3,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 241.02,
+      "end": 242.06,
+      "text": "Don't save me",
+      "words": [
+        {
+          "t": 241.02,
+          "text": "Don't"
+        },
+        {
+          "t": 241.12,
+          "text": "save"
+        },
+        {
+          "t": 241.4,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 242.06,
+      "end": 242.6,
+      "text": "Don't",
+      "words": [
+        {
+          "t": 242.06,
+          "text": "Don't"
+        }
+      ]
+    },
+    {
+      "start": 245.0,
+      "end": 246.58,
+      "text": "save me now",
+      "words": [
+        {
+          "t": 245.0,
+          "text": "save"
+        },
+        {
+          "t": 245.1,
+          "text": "me"
+        },
+        {
+          "t": 246.04,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 271.64,
+      "end": 273.04,
+      "text": "Don't save me now",
+      "words": [
+        {
+          "t": 271.64,
+          "text": "Don't"
+        },
+        {
+          "t": 273.04,
+          "text": "save"
+        },
+        {
+          "t": 273.04,
+          "text": "me"
+        },
+        {
+          "t": 273.04,
+          "text": "now"
+        }
+      ]
+    }
+  ]
+}

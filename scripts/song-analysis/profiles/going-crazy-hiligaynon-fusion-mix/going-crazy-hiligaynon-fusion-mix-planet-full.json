@@ -1,0 +1,190 @@
+{
+  "analysis": {
+    "summary": "The song portrays a volatile relationship where the narrator is consumed by intense desire and confusion between love and hate, oscillating between addiction to the partner's presence and a desperate need for escape.",
+    "overallMood": "0.85",
+    "themes": [
+      "Addiction",
+      "Emotional Volatility",
+      "Urban Nightlife",
+      "Identity Crisis",
+      "Desperate Desire",
+      "Chaos vs. Control"
+    ],
+    "palette": [
+      "#FF2E1B",
+      "#3A0D0D",
+      "#F7941D",
+      "#C51162"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Confused awakening, sudden realization of chaos.",
+        "intensity": 0.39,
+        "colorHintHex": "#8A4B7D",
+        "keywords": [
+          {
+            "word": "control",
+            "emotion": "fragile fear",
+            "imageryPrompt": "Fingers trembling over a steering wheel in darkness, shattering glass reflecting red taillights."
+          },
+          {
+            "word": "maybe",
+            "emotion": "uncertainty",
+            "imageryPrompt": "A foggy street sign where the letters are flickering and indistinct against rain-slicked asphalt."
+          }
+        ],
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Repetitive obsession, minor panic.",
+        "intensity": 0.69,
+        "colorHintHex": "#C73E1D",
+        "keywords": [
+          {
+            "word": "crazy",
+            "emotion": "overwhelming confusion",
+            "imageryPrompt": "A kaleidoscope view of a city street where buildings are tilting and neon signs blur into streaks."
+          },
+          {
+            "word": "ghost",
+            "emotion": "lonely presence",
+            "imageryPrompt": "A translucent figure dancing alone in an empty subway station, illuminated by cold blue overhead lights."
+          }
+        ],
+        "start": 6.28
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Cataclysmic release, emotional overload.",
+        "intensity": 0.99,
+        "colorHintHex": "#FF1F4D",
+        "keywords": [
+          {
+            "word": "rise",
+            "emotion": "defiant hope",
+            "imageryPrompt": "A phoenix made of shattered glass shards soaring upwards through a stormy sky."
+          },
+          {
+            "word": "hate",
+            "emotion": "bitter conflict",
+            "imageryPrompt": "Two mirrors reflecting distorted, angry faces arguing in an empty hallway with flickering lights."
+          }
+        ],
+        "start": 9.44
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Toxic attraction, noisy intensity.",
+        "intensity": 0.85,
+        "colorHintHex": "#E63946",
+        "keywords": [
+          {
+            "word": "poison",
+            "emotion": "addictive danger",
+            "imageryPrompt": "A beautiful glass vial shattering on a marble floor, dark liquid spreading rapidly across the surface."
+          },
+          {
+            "word": "drunk",
+            "emotion": "intoxicated clarity",
+            "imageryPrompt": "Heavy rain pouring inside a sealed room, water droplets distorting reflections of smiling faces in windows."
+          }
+        ],
+        "start": 44.42
+      },
+      {
+        "name": "Pre-Chorus/Hook Transition",
+        "emotion": "Building tension, inevitable collision.",
+        "intensity": 0.8,
+        "colorHintHex": "#FF4D1F",
+        "keywords": [
+          {
+            "word": "burn",
+            "emotion": "scorching heat",
+            "imageryPrompt": "Flames licking up the side of a skyscraper at night, illuminating silhouettes holding hands tightly."
+          },
+          {
+            "word": "fade",
+            "emotion": "sudden loss",
+            "imageryPrompt": "A bright light bulb dimming rapidly until only a faint shadow remains against a black wall."
+          }
+        ],
+        "start": 69.82
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Secret vulnerability amidst the chaos.",
+        "intensity": 0.52,
+        "colorHintHex": "#D91E18",
+        "keywords": [
+          {
+            "word": "lie",
+            "emotion": "betrayal sting",
+            "imageryPrompt": "A cracked smartphone screen displaying a fake profile picture next to a real tear stain."
+          },
+          {
+            "word": "end",
+            "emotion": "resignation",
+            "imageryPrompt": "An hourglass with no sand left, sitting on a table surrounded by scattered letters and photos."
+          }
+        ],
+        "start": 112.7
+      },
+      {
+        "name": "Drop/Build-Up",
+        "emotion": "Raw honesty in the heat of the moment.",
+        "intensity": 0.3,
+        "colorHintHex": "#FF3A4B",
+        "keywords": [
+          {
+            "word": "holler",
+            "emotion": "loud declaration",
+            "imageryPrompt": "Mouth wide open screaming into a microphone that is sparking with electrical energy."
+          },
+          {
+            "word": "heart",
+            "emotion": "racing urgency",
+            "imageryPrompt": "A mechanical heart beating rapidly inside an iron cage, wires connecting to city power lines."
+          }
+        ],
+        "start": 128.14
+      }
+    ],
+    "keywords": [
+      {
+        "word": "crazy",
+        "emotion": "chaotic frenzy",
+        "imageryPrompt": "Confetti exploding in a dark room mixed with shattered mirrors and flickering neon signs."
+      },
+      {
+        "word": "die",
+        "emotion": "extreme desperation",
+        "imageryPrompt": "A hand clutching a phone tightly as the screen cracks from impact, background burning with orange fire."
+      },
+      {
+        "word": "falling",
+        "emotion": "helplessness",
+        "imageryPrompt": "Leaves swirling violently down an escalator into a dark abyss of smoke and debris."
+      },
+      {
+        "word": "poison",
+        "emotion": "addictive danger",
+        "imageryPrompt": "A beautiful glass vial shattering on a marble floor, dark liquid spreading rapidly across the surface."
+      },
+      {
+        "word": "burn",
+        "emotion": "scorching heat",
+        "imageryPrompt": "Flames licking up the side of a skyscraper at night, illuminating silhouettes holding hands tightly."
+      },
+      {
+        "word": "fade",
+        "emotion": "sudden loss",
+        "imageryPrompt": "A bright light bulb dimming rapidly until only a faint shadow remains against a black wall."
+      }
+    ]
+  },
+  "styleHint": "high-energy alternative rock K-pop fusion refined for studio production, 148 BPM, tightly edited saturated guitars with precise double-tracking, polished drum sound with layered samples and controlled room ambience, focused side-chained synth bass with clean low-end, glossy modern K-pop vocal mix emphasizing intimate details and dynamic swells, passionate female lead with wider emotional range, expressive male rap-sung sections with clear enunciation, densely stacked harmonies and chant-style hooks, cinematic reverbs with shorter tails and sculpted delays, subtle vocal chops and ear-candy fills, smooth automation-driven builds and drops, impact-driven stop-start breaks with studio-tight transitions, dramatic but controlled teen-drama atmosphere tailored for headphones and streaming",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:07:18.711Z"
+}

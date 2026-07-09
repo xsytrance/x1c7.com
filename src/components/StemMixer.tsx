@@ -4,11 +4,18 @@
 // Presets are the front door (the combinations with a soul); the per-stem
 // chips are the escape hatch for tinkerers. Styled after the Reactor panel.
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
-import { useStemMix, stemMixStore, presetsFor, presetGains, STEM_INFO, STEM_ORDER } from "@/lib/stemMix";
+import { useStemMix, stemMixStore, presetsFor, presetGains, STEM_ORDER } from "@/lib/stemMix";
+import { StemOrchestra } from "./StemGlyphs";
+import { stemsFor } from "@/lib/usePreview";
+import type { Track } from "@/data/tracks";
+import type { StemData } from "@/lib/stemSense";
 
-export function StemMixer({ onClose, lensArmed, onToggleLens }: {
+export function StemMixer({ track, getTime, onClose, lensArmed, onToggleLens }: {
+  track: Track;
+  getTime: () => number;
   onClose: () => void;
   lensArmed: boolean;
   onToggleLens: () => void;
@@ -17,6 +24,14 @@ export function StemMixer({ onClose, lensArmed, onToggleLens }: {
   const mix = useStemMix();
   const presets = presetsFor(mix.available);
   const stems = STEM_ORDER.filter((s) => mix.available.includes(s));
+
+  // THE BAND — measured hearing for the glyphs (cached; null just idles them).
+  const [stemData, setStemData] = useState<StemData | null>(null);
+  useEffect(() => {
+    let dead = false;
+    void stemsFor(track).then((d) => { if (!dead) setStemData(d); });
+    return () => { dead = true; };
+  }, [track]);
 
   // Which preset (if any) the current gains spell out — for highlighting.
   const activePreset = mix.active
@@ -57,24 +72,21 @@ export function StemMixer({ onClose, lensArmed, onToggleLens }: {
         ))}
       </div>
 
-      {/* The escape hatch — every instrument, one chip each. */}
-      <p className="mt-3 px-1 font-mono text-[9px] uppercase tracking-widest text-white/25">custom · tap an instrument</p>
-      <div className="mt-1.5 flex flex-wrap gap-1.5">
-        {stems.map((s) => {
-          const on = mix.active ? (mix.gains[s] ?? 1) > 0.5 : true;
-          return (
-            <button key={s}
-              onClick={() => {
-                // First touch from the full mix = "pull this instrument out".
-                if (!mix.active) { stemMixStore.setGain(s, 0); stemBus.engage(); }
-                else stemMixStore.setGain(s, on ? 0 : 1);
-              }}
-              className={`rounded-full border px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-wider transition ${on ? "border-[var(--theme-primary)] text-white" : "border-white/10 text-white/35 line-through"}`}
-              style={on ? { background: "color-mix(in srgb, var(--theme-primary) 12%, transparent)" } : undefined}>
-              {STEM_INFO[s].icon} {STEM_INFO[s].label}
-            </button>
-          );
-        })}
+      {/* THE BAND — every instrument alive on its own stem; tap one to mute it. */}
+      <p className="mt-3 px-1 font-mono text-[9px] uppercase tracking-widest text-white/25">the band · tap a musician to mute</p>
+      <div className="mt-1.5 rounded-xl border border-white/8 bg-black/25 px-1 py-2">
+        <StemOrchestra
+          stems={stems}
+          data={stemData}
+          getTime={getTime}
+          gainFor={(s) => (mix.active ? (mix.gains[s] ?? 1) : 1)}
+          onTap={(s) => {
+            const on = mix.active ? (mix.gains[s] ?? 1) > 0.5 : true;
+            // First touch from the full mix = "pull this instrument out".
+            if (!mix.active) { stemMixStore.setGain(s, 0); stemBus.engage(); }
+            else stemMixStore.setGain(s, on ? 0 : 1);
+          }}
+        />
       </div>
 
       {/* THE LENS — hold anywhere on the stage to hear only what lives there. */}

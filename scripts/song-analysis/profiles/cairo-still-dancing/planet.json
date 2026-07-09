@@ -1,0 +1,105 @@
+[
+  {
+    "id": "cairo-still-dancing",
+    "planet": {
+      "analysis": {
+        "summary": "This song is a cinematic anthem celebrating resilience and unity in Cairo, transforming the city's struggles into a rhythmic celebration where music and dance become acts of defiance against fear and division.",
+        "overallMood": "0.85",
+        "themes": [
+          "Resilience in the face of adversity",
+          "Pride in Egyptian heritage and culture",
+          "Global unity and brotherhood",
+          "The healing power of music and dance",
+          "Protection of family and soul",
+          "Defiance against fear and external narratives"
+        ],
+        "sections": [
+          {
+            "sectionName": "Intro",
+            "emotion": "Anticipation, gathering energy",
+            "intensity": 0.3,
+            "colorHintHex": "#1A237E",
+            "start": 21.42
+          },
+          {
+            "sectionName": "Chorus (Female Lead)",
+            "emotion": "Uplifting defiance, soaring hope",
+            "intensity": 0.65,
+            "colorHintHex": "#FFD700",
+            "start": 21.42
+          },
+          {
+            "sectionName": "Verse 1 (Male/Female/Pre-Chorus)",
+            "emotion": "Narrative storytelling, grounded warmth",
+            "intensity": 0.45,
+            "colorHintHex": "#C62828",
+            "start": 31.02
+          },
+          {
+            "sectionName": "Chorus (Full)",
+            "emotion": "Euphoric release, collective power",
+            "intensity": 0.9,
+            "colorHintHex": "#FFEB3B",
+            "start": 108.91
+          },
+          {
+            "sectionName": "Bridge (Group Chant + Verse 2 elements in transcript context)",
+            "emotion": "Solemn conviction, spiritual resolve",
+            "intensity": 0.75,
+            "colorHintHex": "#1A237E",
+            "start": 169.9
+          },
+          {
+            "sectionName": "Drop / Climax",
+            "emotion": "Explosive pride, raw cultural heartbeat",
+            "intensity": 1,
+            "colorHintHex": "#FF4500",
+            "start": 193.08
+          },
+          {
+            "sectionName": "Outro",
+            "emotion": "Reflective tenderness, enduring rhythm",
+            "intensity": 0.35,
+            "colorHintHex": "#D7CCC8",
+            "start": 211
+          }
+        ],
+        "keywords": [
+          {
+            "word": "rise",
+            "emotion": "Triumph and elevation",
+            "imageryPrompt": "A silhouette of a diverse crowd lifting their hands towards a breaking dawn, golden light piercing through heavy smoke, muscles straining upwards in unison."
+          },
+          {
+            "word": "sand",
+            "emotion": "Resilience against erasure",
+            "imageryPrompt": "Ancient desert sands shifting underfoot but covered by vibrant neon lights of a bustling modern city skyline at night, contrasting timeless earth with electric progress."
+          },
+          {
+            "word": "fire",
+            "emotion": "Passionate intensity and warmth",
+            "imageryPrompt": "A close-up of embers glowing within the palm of a hand against a dark background, illuminating tear-filled but smiling eyes, sparks rising like dancing notes."
+          },
+          {
+            "word": "drums",
+            "emotion": "Rhythmic heartbeat and urgency",
+            "imageryPrompt": "A massive darbuka drum skin vibrating with visible waves of energy, surrounded by floating geometric Arabic patterns that pulse in time with the beat."
+          },
+          {
+            "word": "falling",
+            "emotion": "Vulnerability followed by support",
+            "imageryPrompt": "Two figures reaching out to catch a falling star made of light against a stormy gray sky, symbolizing catching each other before hitting the ground."
+          },
+          {
+            "word": "pulse",
+            "emotion": "Living culture and vitality",
+            "imageryPrompt": "A translucent view inside an oud instrument where wood grain is replaced by flowing gold circuits of electricity, glowing warmly in a dimly lit alleyway."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

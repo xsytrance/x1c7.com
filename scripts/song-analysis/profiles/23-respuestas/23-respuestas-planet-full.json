@@ -1,0 +1,112 @@
+{
+  "analysis": {
+    "summary": "A sensual yet melancholic reggaeton anthem where a female protagonist answers twenty-three questions from an ex-lover by firmly declaring her emotional closure and refusal to return.",
+    "overallMood": "Sensual, Melancholic, Empowered, Atmospheric",
+    "themes": [
+      "Emotional Closure",
+      "Self-Defense of the Soul",
+      "Silent Healing",
+      "Reclaiming Autonomy",
+      "Bittersweet Memory"
+    ],
+    "palette": [
+      "#2C3E50",
+      "#8DA9A6",
+      "#D4AF37",
+      "#1F2D3A"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Intimate reflection with dark nostalgia, intimate phone-call texture.",
+        "intensity": 0.81,
+        "colorHint": "#2c3e50",
+        "imageryPrompt": "A dimly lit room at night illuminated only by the blue glow of an old smartphone screen reflecting in eyes filled with quiet sadness.",
+        "start": 7.03
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Melancholic realization and gentle firmness, smooth melodic flow.",
+        "intensity": 0.78,
+        "colorHint": "#8da9a6",
+        "imageryPrompt": "Raindrops sliding down a window pane while shadows of two figures fade apart on the glass.",
+        "start": 27.44
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building emotional tension and defensive resolve.",
+        "intensity": 0.86,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A golden key turning in a lock while heavy storm clouds gather outside the window.",
+        "start": 71.64
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Triumphant closure and wide atmospheric release.",
+        "intensity": 0.61,
+        "colorHint": "#1f2d3a",
+        "imageryPrompt": "A vast open ocean at twilight where a lone boat sails away leaving no wake behind.",
+        "start": 117.44
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Sensual lingering pain and rhythmic repetition.",
+        "intensity": 0.47,
+        "colorHint": "#2c3e50",
+        "imageryPrompt": "Close up of a hand gently closing a heavy wooden door with sound waves rippling through the air.",
+        "start": 140.9
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Narrative storytelling and deep emotional counting.",
+        "intensity": 0.22,
+        "colorHint": "#8da9a6",
+        "imageryPrompt": "An open book with handwritten numbers fading into smoke that forms the shape of a heart breaking.",
+        "start": 172.84
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Finalizing emotional boundaries and healing.",
+        "intensity": 0.26,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A sunrise breaking through thick storm clouds revealing a path of blooming wildflowers.",
+        "start": 230.8
+      }
+    ],
+    "keywords": [
+      {
+        "word": "respuestas",
+        "emotion": "Defiant clarity and structured closure.",
+        "imageryPrompt": "Dozens of glowing neon numbers floating in the air like fireflies that turn to ash upon touch."
+      },
+      {
+        "word": "silencio",
+        "emotion": "Heavy, protective quietness after noise.",
+        "imageryPrompt": "A thick velvet curtain falling silently over a chaotic city street scene."
+      },
+      {
+        "word": "herida",
+        "emotion": "Raw vulnerability and persistent pain.",
+        "imageryPrompt": "A scar glowing softly on skin that never fully fades but stops bleeding."
+      },
+      {
+        "word": "cielo/pueblo",
+        "emotion": "Displacement from safety to community belonging issues.",
+        "imageryPrompt": "An angel standing in a cloud while looking down at a bustling village below refusing entry."
+      },
+      {
+        "word": "llave",
+        "emotion": "Irreversible change and lost access.",
+        "imagedPrompt": "A brass key dropped on the floor of an empty room with dust motes dancing in shafts of light."
+      },
+      {
+        "word": "paz",
+        "emotion": "Tranquil acceptance after turmoil.",
+        "imageryPrompt": "Soft white doves flying over a calm lake reflecting moonlight and starry skies."
+      }
+    ]
+  },
+  "styleHint": "Romantic reggaeton response track, 83 BPM half-time / 166 double-time energy, dark E-minor mood, viral heartbreak anthem. Female lead answers a toxic ex’s questions with confidence, pain, and elegance; male ghost vocal ad-libs in the background like late-night voice notes. Modern Puerto Rican/Colombian urbano feel: clean dembow groove, deep sub bass, crisp rimshots, syncopated hats, nylon guitar arpeggios, atmospheric synth pads, plucked mallets, soft piano, filtered vocal chops, huge singalong chorus. Start intimate with phone-call texture, then drop into a polished perreo beat. Verses are smooth melodic rap, pre-chorus lifts emotionally, chorus is simple, catchy, and chantable. Theme: 23 answers, none of them say “come back.” Make it radio-ready, club-ready, TikTok-ready, sensual but not explicit, emotional but not weak, dramatic but not cheesy. Big final chorus with stacked harmonies and call-and-response ad-libs.",
+  "assets": {},
+  "generatedAt": "2026-07-09T17:57:32.589Z"
+}

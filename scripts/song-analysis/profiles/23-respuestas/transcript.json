@@ -1,0 +1,2866 @@
+{
+  "language": "spanish",
+  "segments": [
+    {
+      "start": 7.05,
+      "end": 10.04,
+      "text": "Tu hiciste veinte y treinta de preguntas",
+      "words": [
+        {
+          "t": 7.05,
+          "text": "Tu"
+        },
+        {
+          "t": 8.032,
+          "text": "hiciste"
+        },
+        {
+          "t": 8.38,
+          "text": "veinte"
+        },
+        {
+          "t": 8.72,
+          "text": "y"
+        },
+        {
+          "t": 8.84,
+          "text": "treinta"
+        },
+        {
+          "t": 9.28,
+          "text": "de"
+        },
+        {
+          "t": 9.48,
+          "text": "preguntas"
+        }
+      ]
+    },
+    {
+      "start": 10.04,
+      "end": 12.96,
+      "text": "Yo guardé veintitrés respuestas",
+      "words": [
+        {
+          "t": 10.04,
+          "text": "Yo"
+        },
+        {
+          "t": 10.88,
+          "text": "guardé"
+        },
+        {
+          "t": 11.3,
+          "text": "veintitrés"
+        },
+        {
+          "t": 11.92,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 12.96,
+      "end": 20.76,
+      "text": "Y ninguna y se vuelve No vuelvo",
+      "words": [
+        {
+          "t": 12.96,
+          "text": "Y"
+        },
+        {
+          "t": 14.528,
+          "text": "ninguna"
+        },
+        {
+          "t": 15.1,
+          "text": "y"
+        },
+        {
+          "t": 16.448,
+          "text": "se"
+        },
+        {
+          "t": 16.68,
+          "text": "vuelve"
+        },
+        {
+          "t": 17.78,
+          "text": "No"
+        },
+        {
+          "t": 20.1,
+          "text": "vuelvo"
+        }
+      ]
+    },
+    {
+      "start": 20.76,
+      "end": 26.58,
+      "text": "No, no No, no, no",
+      "words": [
+        {
+          "t": 20.76,
+          "text": "No,"
+        },
+        {
+          "t": 22.64,
+          "text": "no"
+        },
+        {
+          "t": 23.02,
+          "text": "No,"
+        },
+        {
+          "t": 24.82,
+          "text": "no,"
+        },
+        {
+          "t": 26.2,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 27.46,
+      "end": 30.84,
+      "text": "Me preguntaste si te extraño Soy cuando cae la noche",
+      "words": [
+        {
+          "t": 27.46,
+          "text": "Me"
+        },
+        {
+          "t": 28.192,
+          "text": "preguntaste"
+        },
+        {
+          "t": 28.7,
+          "text": "si"
+        },
+        {
+          "t": 28.94,
+          "text": "te"
+        },
+        {
+          "t": 29.12,
+          "text": "extraño"
+        },
+        {
+          "t": 29.58,
+          "text": "Soy"
+        },
+        {
+          "t": 29.84,
+          "text": "cuando"
+        },
+        {
+          "t": 30.12,
+          "text": "cae"
+        },
+        {
+          "t": 30.42,
+          "text": "la"
+        },
+        {
+          "t": 30.54,
+          "text": "noche"
+        }
+      ]
+    },
+    {
+      "start": 30.84,
+      "end": 35.18,
+      "text": "Cuando suena aquel ringtone Y me tiembla hasta el nombre",
+      "words": [
+        {
+          "t": 30.84,
+          "text": "Cuando"
+        },
+        {
+          "t": 31.12,
+          "text": "suena"
+        },
+        {
+          "t": 31.58,
+          "text": "aquel"
+        },
+        {
+          "t": 31.9,
+          "text": "ringtone"
+        },
+        {
+          "t": 32.64,
+          "text": "Y"
+        },
+        {
+          "t": 33.96,
+          "text": "me"
+        },
+        {
+          "t": 34.06,
+          "text": "tiembla"
+        },
+        {
+          "t": 34.54,
+          "text": "hasta"
+        },
+        {
+          "t": 34.64,
+          "text": "el"
+        },
+        {
+          "t": 34.84,
+          "text": "nombre"
+        }
+      ]
+    },
+    {
+      "start": 35.18,
+      "end": 38.68,
+      "text": "Pero extrañando es regresar Y llorar no es perder",
+      "words": [
+        {
+          "t": 35.18,
+          "text": "Pero"
+        },
+        {
+          "t": 35.98,
+          "text": "extrañando"
+        },
+        {
+          "t": 36.58,
+          "text": "es"
+        },
+        {
+          "t": 36.7,
+          "text": "regresar"
+        },
+        {
+          "t": 37.4,
+          "text": "Y"
+        },
+        {
+          "t": 37.56,
+          "text": "llorar"
+        },
+        {
+          "t": 37.9,
+          "text": "no"
+        },
+        {
+          "t": 38.16,
+          "text": "es"
+        },
+        {
+          "t": 38.28,
+          "text": "perder"
+        }
+      ]
+    },
+    {
+      "start": 38.68,
+      "end": 43.06,
+      "text": "Yo también tuve que romperme Tu aprender es correr",
+      "words": [
+        {
+          "t": 38.68,
+          "text": "Yo"
+        },
+        {
+          "t": 39.5,
+          "text": "también"
+        },
+        {
+          "t": 39.82,
+          "text": "tuve"
+        },
+        {
+          "t": 40.16,
+          "text": "que"
+        },
+        {
+          "t": 40.34,
+          "text": "romperme"
+        },
+        {
+          "t": 41.02,
+          "text": "Tu"
+        },
+        {
+          "t": 41.76,
+          "text": "aprender"
+        },
+        {
+          "t": 42.12,
+          "text": "es"
+        },
+        {
+          "t": 42.66,
+          "text": "correr"
+        }
+      ]
+    },
+    {
+      "start": 44.992,
+      "end": 48.2,
+      "text": "Dice que quieres hablar Pero ahora él no repara",
+      "words": [
+        {
+          "t": 44.992,
+          "text": "Dice"
+        },
+        {
+          "t": 45.32,
+          "text": "que"
+        },
+        {
+          "t": 45.54,
+          "text": "quieres"
+        },
+        {
+          "t": 45.9,
+          "text": "hablar"
+        },
+        {
+          "t": 46.36,
+          "text": "Pero"
+        },
+        {
+          "t": 46.88,
+          "text": "ahora"
+        },
+        {
+          "t": 47.18,
+          "text": "él"
+        },
+        {
+          "t": 47.3,
+          "text": "no"
+        },
+        {
+          "t": 47.38,
+          "text": "repara"
+        }
+      ]
+    },
+    {
+      "start": 48.3,
+      "end": 51.54,
+      "text": "Si después de prometer Se te olvida mi cara",
+      "words": [
+        {
+          "t": 48.3,
+          "text": "Si"
+        },
+        {
+          "t": 48.92,
+          "text": "después"
+        },
+        {
+          "t": 49.24,
+          "text": "de"
+        },
+        {
+          "t": 49.46,
+          "text": "prometer"
+        },
+        {
+          "t": 50.04,
+          "text": "Se"
+        },
+        {
+          "t": 50.52,
+          "text": "te"
+        },
+        {
+          "t": 50.64,
+          "text": "olvida"
+        },
+        {
+          "t": 51.12,
+          "text": "mi"
+        },
+        {
+          "t": 51.26,
+          "text": "cara"
+        }
+      ]
+    },
+    {
+      "start": 51.54,
+      "end": 54.36,
+      "text": "Yo no niego lo bonito Yo no borro lo real",
+      "words": [
+        {
+          "t": 51.54,
+          "text": "Yo"
+        },
+        {
+          "t": 51.8,
+          "text": "no"
+        },
+        {
+          "t": 51.96,
+          "text": "niego"
+        },
+        {
+          "t": 52.26,
+          "text": "lo"
+        },
+        {
+          "t": 52.54,
+          "text": "bonito"
+        },
+        {
+          "t": 52.94,
+          "text": "Yo"
+        },
+        {
+          "t": 53.24,
+          "text": "no"
+        },
+        {
+          "t": 53.42,
+          "text": "borro"
+        },
+        {
+          "t": 53.82,
+          "text": "lo"
+        },
+        {
+          "t": 53.94,
+          "text": "real"
+        }
+      ]
+    },
+    {
+      "start": 54.36,
+      "end": 56.5,
+      "text": "Pero amor que vive herido No se debe",
+      "words": [
+        {
+          "t": 54.36,
+          "text": "Pero"
+        },
+        {
+          "t": 54.76,
+          "text": "amor"
+        },
+        {
+          "t": 55.02,
+          "text": "que"
+        },
+        {
+          "t": 55.22,
+          "text": "vive"
+        },
+        {
+          "t": 55.44,
+          "text": "herido"
+        },
+        {
+          "t": 55.9,
+          "text": "No"
+        },
+        {
+          "t": 56.04,
+          "text": "se"
+        },
+        {
+          "t": 56.24,
+          "text": "debe"
+        }
+      ]
+    },
+    {
+      "start": 56.58,
+      "end": 60.94,
+      "text": "alimentar Te contesté con silencio",
+      "words": [
+        {
+          "t": 56.58,
+          "text": "alimentar"
+        },
+        {
+          "t": 57.78,
+          "text": "Te"
+        },
+        {
+          "t": 58.752,
+          "text": "contesté"
+        },
+        {
+          "t": 59.44,
+          "text": "con"
+        },
+        {
+          "t": 59.7,
+          "text": "silencio"
+        }
+      ]
+    },
+    {
+      "start": 60.94,
+      "end": 66.36,
+      "text": "Porque el ruido me mataba Yo buscando una puerta",
+      "words": [
+        {
+          "t": 60.94,
+          "text": "Porque"
+        },
+        {
+          "t": 61.6,
+          "text": "el"
+        },
+        {
+          "t": 61.94,
+          "text": "ruido"
+        },
+        {
+          "t": 62.54,
+          "text": "me"
+        },
+        {
+          "t": 62.84,
+          "text": "mataba"
+        },
+        {
+          "t": 63.98,
+          "text": "Yo"
+        },
+        {
+          "t": 64.68,
+          "text": "buscando"
+        },
+        {
+          "t": 65.12,
+          "text": "una"
+        },
+        {
+          "t": 65.64,
+          "text": "puerta"
+        }
+      ]
+    },
+    {
+      "start": 66.62,
+      "end": 69.56,
+      "text": "Yo cerrando la ventana",
+      "words": [
+        {
+          "t": 66.62,
+          "text": "Yo"
+        },
+        {
+          "t": 67.22,
+          "text": "cerrando"
+        },
+        {
+          "t": 68.02,
+          "text": "la"
+        },
+        {
+          "t": 68.56,
+          "text": "ventana"
+        }
+      ]
+    },
+    {
+      "start": 70.08,
+      "end": 71.168,
+      "text": "Y aunque duela, bebé",
+      "words": [
+        {
+          "t": 70.08,
+          "text": "Y"
+        },
+        {
+          "t": 70.18,
+          "text": "aunque"
+        },
+        {
+          "t": 70.46,
+          "text": "duela,"
+        },
+        {
+          "t": 71.0,
+          "text": "bebé"
+        }
+      ]
+    },
+    {
+      "start": 71.66,
+      "end": 77.78,
+      "text": "Te lo digo de frente Si preguntas si te amo",
+      "words": [
+        {
+          "t": 71.66,
+          "text": "Te"
+        },
+        {
+          "t": 73.056,
+          "text": "lo"
+        },
+        {
+          "t": 73.22,
+          "text": "digo"
+        },
+        {
+          "t": 73.66,
+          "text": "de"
+        },
+        {
+          "t": 74.06,
+          "text": "frente"
+        },
+        {
+          "t": 74.66,
+          "text": "Si"
+        },
+        {
+          "t": 75.904,
+          "text": "preguntas"
+        },
+        {
+          "t": 76.4,
+          "text": "si"
+        },
+        {
+          "t": 76.82,
+          "text": "te"
+        },
+        {
+          "t": 77.04,
+          "text": "amo"
+        }
+      ]
+    },
+    {
+      "start": 77.78,
+      "end": 83.92,
+      "text": "Eso no significa volver Tengo veintitrés respuestas",
+      "words": [
+        {
+          "t": 77.78,
+          "text": "Eso"
+        },
+        {
+          "t": 78.3,
+          "text": "no"
+        },
+        {
+          "t": 78.64,
+          "text": "significa"
+        },
+        {
+          "t": 79.46,
+          "text": "volver"
+        },
+        {
+          "t": 80.2,
+          "text": "Tengo"
+        },
+        {
+          "t": 81.74,
+          "text": "veintitrés"
+        },
+        {
+          "t": 82.88,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 83.92,
+      "end": 86.56,
+      "text": "Y ninguna y se vuelve No vuelvo",
+      "words": [
+        {
+          "t": 83.92,
+          "text": "Y"
+        },
+        {
+          "t": 84.3,
+          "text": "ninguna"
+        },
+        {
+          "t": 85.04,
+          "text": "y"
+        },
+        {
+          "t": 85.76,
+          "text": "se"
+        },
+        {
+          "t": 86.08,
+          "text": "vuelve"
+        },
+        {
+          "t": 86.48,
+          "text": "No"
+        },
+        {
+          "t": 86.56,
+          "text": "vuelvo"
+        }
+      ]
+    },
+    {
+      "start": 86.56,
+      "end": 92.22,
+      "text": "Te quise con toda el alma Pero el alma también se defiende",
+      "words": [
+        {
+          "t": 86.56,
+          "text": "Te"
+        },
+        {
+          "t": 87.12,
+          "text": "quise"
+        },
+        {
+          "t": 87.74,
+          "text": "con"
+        },
+        {
+          "t": 88.24,
+          "text": "toda"
+        },
+        {
+          "t": 88.76,
+          "text": "el"
+        },
+        {
+          "t": 89.06,
+          "text": "alma"
+        },
+        {
+          "t": 89.42,
+          "text": "Pero"
+        },
+        {
+          "t": 89.72,
+          "text": "el"
+        },
+        {
+          "t": 89.88,
+          "text": "alma"
+        },
+        {
+          "t": 90.32,
+          "text": "también"
+        },
+        {
+          "t": 90.86,
+          "text": "se"
+        },
+        {
+          "t": 91.44,
+          "text": "defiende"
+        }
+      ]
+    },
+    {
+      "start": 92.22,
+      "end": 97.98,
+      "text": "Tengo veintitrés respuestas Pa' la herida que no duerme",
+      "words": [
+        {
+          "t": 92.22,
+          "text": "Tengo"
+        },
+        {
+          "t": 93.18,
+          "text": "veintitrés"
+        },
+        {
+          "t": 94.32,
+          "text": "respuestas"
+        },
+        {
+          "t": 95.26,
+          "text": "Pa'"
+        },
+        {
+          "t": 95.86,
+          "text": "la"
+        },
+        {
+          "t": 96.02,
+          "text": "herida"
+        },
+        {
+          "t": 96.86,
+          "text": "que"
+        },
+        {
+          "t": 97.184,
+          "text": "no"
+        },
+        {
+          "t": 97.46,
+          "text": "duerme"
+        }
+      ]
+    },
+    {
+      "start": 97.98,
+      "end": 103.36,
+      "text": "Si me preguntas si te extraño Pero eso no es suficiente",
+      "words": [
+        {
+          "t": 97.98,
+          "text": "Si"
+        },
+        {
+          "t": 98.4,
+          "text": "me"
+        },
+        {
+          "t": 98.6,
+          "text": "preguntas"
+        },
+        {
+          "t": 99.4,
+          "text": "si"
+        },
+        {
+          "t": 100.02,
+          "text": "te"
+        },
+        {
+          "t": 100.22,
+          "text": "extraño"
+        },
+        {
+          "t": 100.82,
+          "text": "Pero"
+        },
+        {
+          "t": 101.32,
+          "text": "eso"
+        },
+        {
+          "t": 102.06,
+          "text": "no"
+        },
+        {
+          "t": 102.4,
+          "text": "es"
+        },
+        {
+          "t": 102.68,
+          "text": "suficiente"
+        }
+      ]
+    },
+    {
+      "start": 103.36,
+      "end": 106.63,
+      "text": "No, no, no, no No vuelvo",
+      "words": [
+        {
+          "t": 103.36,
+          "text": "No,"
+        },
+        {
+          "t": 104.06,
+          "text": "no,"
+        },
+        {
+          "t": 104.4,
+          "text": "no,"
+        },
+        {
+          "t": 104.86,
+          "text": "no"
+        },
+        {
+          "t": 105.02,
+          "text": "No"
+        },
+        {
+          "t": 105.48,
+          "text": "vuelvo"
+        }
+      ]
+    },
+    {
+      "start": 106.86,
+      "end": 109.48,
+      "text": "No, no, no, no Te pienso, te siento",
+      "words": [
+        {
+          "t": 106.86,
+          "text": "No,"
+        },
+        {
+          "t": 107.08,
+          "text": "no,"
+        },
+        {
+          "t": 107.24,
+          "text": "no,"
+        },
+        {
+          "t": 107.46,
+          "text": "no"
+        },
+        {
+          "t": 107.52,
+          "text": "Te"
+        },
+        {
+          "t": 108.34,
+          "text": "pienso,"
+        },
+        {
+          "t": 109.0,
+          "text": "te"
+        },
+        {
+          "t": 109.12,
+          "text": "siento"
+        }
+      ]
+    },
+    {
+      "start": 109.48,
+      "end": 111.8,
+      "text": "Pero no vuelvo No, no, no, no",
+      "words": [
+        {
+          "t": 109.48,
+          "text": "Pero"
+        },
+        {
+          "t": 109.94,
+          "text": "no"
+        },
+        {
+          "t": 110.38,
+          "text": "vuelvo"
+        },
+        {
+          "t": 111.14,
+          "text": "No,"
+        },
+        {
+          "t": 111.38,
+          "text": "no,"
+        },
+        {
+          "t": 111.54,
+          "text": "no,"
+        },
+        {
+          "t": 111.74,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 111.8,
+      "end": 113.22,
+      "text": "No vuelvo No, no, no, no",
+      "words": [
+        {
+          "t": 111.8,
+          "text": "No"
+        },
+        {
+          "t": 112.3,
+          "text": "vuelvo"
+        },
+        {
+          "t": 112.56,
+          "text": "No,"
+        },
+        {
+          "t": 112.8,
+          "text": "no,"
+        },
+        {
+          "t": 113.0,
+          "text": "no,"
+        },
+        {
+          "t": 113.2,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 113.22,
+      "end": 114.14,
+      "text": "No vuelvo No, no, no, no, no.",
+      "words": [
+        {
+          "t": 113.22,
+          "text": "No"
+        },
+        {
+          "t": 113.34,
+          "text": "vuelvo"
+        },
+        {
+          "t": 113.94,
+          "text": "No,"
+        },
+        {
+          "t": 114.14,
+          "text": "no,"
+        },
+        {
+          "t": 114.14,
+          "text": "no,"
+        },
+        {
+          "t": 114.14,
+          "text": "no,"
+        },
+        {
+          "t": 114.14,
+          "text": "no."
+        }
+      ]
+    },
+    {
+      "start": 114.14,
+      "end": 116.54,
+      "text": "No vuelvo Fui de mi cielo, pero no mi pueblo.",
+      "words": [
+        {
+          "t": 114.14,
+          "text": "No"
+        },
+        {
+          "t": 114.16,
+          "text": "vuelvo"
+        },
+        {
+          "t": 114.16,
+          "text": "Fui"
+        },
+        {
+          "t": 114.34,
+          "text": "de"
+        },
+        {
+          "t": 114.5,
+          "text": "mi"
+        },
+        {
+          "t": 114.78,
+          "text": "cielo,"
+        },
+        {
+          "t": 115.32,
+          "text": "pero"
+        },
+        {
+          "t": 115.66,
+          "text": "no"
+        },
+        {
+          "t": 115.92,
+          "text": "mi"
+        },
+        {
+          "t": 116.24,
+          "text": "pueblo."
+        }
+      ]
+    },
+    {
+      "start": 117.46,
+      "end": 120.12,
+      "text": "Pregúntate si hubo alguien que llegó después de ti",
+      "words": [
+        {
+          "t": 117.46,
+          "text": "Pregúntate"
+        },
+        {
+          "t": 117.96,
+          "text": "si"
+        },
+        {
+          "t": 118.18,
+          "text": "hubo"
+        },
+        {
+          "t": 118.42,
+          "text": "alguien"
+        },
+        {
+          "t": 118.76,
+          "text": "que"
+        },
+        {
+          "t": 118.98,
+          "text": "llegó"
+        },
+        {
+          "t": 119.24,
+          "text": "después"
+        },
+        {
+          "t": 119.58,
+          "text": "de"
+        },
+        {
+          "t": 119.84,
+          "text": "ti"
+        }
+      ]
+    },
+    {
+      "start": 120.12,
+      "end": 122.84,
+      "text": "Llegó la paz a mi cuarto y me quedé por ahí",
+      "words": [
+        {
+          "t": 120.12,
+          "text": "Llegó"
+        },
+        {
+          "t": 120.58,
+          "text": "la"
+        },
+        {
+          "t": 120.74,
+          "text": "paz"
+        },
+        {
+          "t": 120.98,
+          "text": "a"
+        },
+        {
+          "t": 121.14,
+          "text": "mi"
+        },
+        {
+          "t": 121.26,
+          "text": "cuarto"
+        },
+        {
+          "t": 121.54,
+          "text": "y"
+        },
+        {
+          "t": 121.68,
+          "text": "me"
+        },
+        {
+          "t": 121.8,
+          "text": "quedé"
+        },
+        {
+          "t": 122.24,
+          "text": "por"
+        },
+        {
+          "t": 122.46,
+          "text": "ahí"
+        }
+      ]
+    },
+    {
+      "start": 122.84,
+      "end": 125.74,
+      "text": "Pregúntate si tus besos todavía viven aquí",
+      "words": [
+        {
+          "t": 122.84,
+          "text": "Pregúntate"
+        },
+        {
+          "t": 123.68,
+          "text": "si"
+        },
+        {
+          "t": 123.94,
+          "text": "tus"
+        },
+        {
+          "t": 124.16,
+          "text": "besos"
+        },
+        {
+          "t": 124.54,
+          "text": "todavía"
+        },
+        {
+          "t": 124.84,
+          "text": "viven"
+        },
+        {
+          "t": 125.4,
+          "text": "aquí"
+        }
+      ]
+    },
+    {
+      "start": 125.74,
+      "end": 126.1,
+      "text": "Sí,",
+      "words": [
+        {
+          "t": 125.74,
+          "text": "Sí,"
+        }
+      ]
+    },
+    {
+      "start": 126.16,
+      "end": 128.74,
+      "text": "pero cambié la llave y ya no entran porque sí",
+      "words": [
+        {
+          "t": 126.16,
+          "text": "pero"
+        },
+        {
+          "t": 126.4,
+          "text": "cambié"
+        },
+        {
+          "t": 126.86,
+          "text": "la"
+        },
+        {
+          "t": 127.0,
+          "text": "llave"
+        },
+        {
+          "t": 127.3,
+          "text": "y"
+        },
+        {
+          "t": 127.48,
+          "text": "ya"
+        },
+        {
+          "t": 127.58,
+          "text": "no"
+        },
+        {
+          "t": 127.74,
+          "text": "entran"
+        },
+        {
+          "t": 128.1,
+          "text": "porque"
+        },
+        {
+          "t": 128.34,
+          "text": "sí"
+        }
+      ]
+    },
+    {
+      "start": 128.74,
+      "end": 129.52,
+      "text": "No te odio,",
+      "words": [
+        {
+          "t": 128.74,
+          "text": "No"
+        },
+        {
+          "t": 128.94,
+          "text": "te"
+        },
+        {
+          "t": 129.12,
+          "text": "odio,"
+        }
+      ]
+    },
+    {
+      "start": 129.56,
+      "end": 130.08,
+      "text": "no te miento,",
+      "words": [
+        {
+          "t": 129.56,
+          "text": "no"
+        },
+        {
+          "t": 129.66,
+          "text": "te"
+        },
+        {
+          "t": 129.78,
+          "text": "miento,"
+        }
+      ]
+    },
+    {
+      "start": 130.26,
+      "end": 131.58,
+      "text": "no te escribo pa' pelear",
+      "words": [
+        {
+          "t": 130.26,
+          "text": "no"
+        },
+        {
+          "t": 130.36,
+          "text": "te"
+        },
+        {
+          "t": 130.58,
+          "text": "escribo"
+        },
+        {
+          "t": 130.94,
+          "text": "pa'"
+        },
+        {
+          "t": 131.16,
+          "text": "pelear"
+        }
+      ]
+    },
+    {
+      "start": 131.58,
+      "end": 134.44,
+      "text": "Yo también fui la culpable de quedarme de más",
+      "words": [
+        {
+          "t": 131.58,
+          "text": "Yo"
+        },
+        {
+          "t": 131.82,
+          "text": "también"
+        },
+        {
+          "t": 132.08,
+          "text": "fui"
+        },
+        {
+          "t": 132.4,
+          "text": "la"
+        },
+        {
+          "t": 132.54,
+          "text": "culpable"
+        },
+        {
+          "t": 133.0,
+          "text": "de"
+        },
+        {
+          "t": 133.22,
+          "text": "quedarme"
+        },
+        {
+          "t": 133.86,
+          "text": "de"
+        },
+        {
+          "t": 134.1,
+          "text": "más"
+        }
+      ]
+    },
+    {
+      "start": 134.44,
+      "end": 137.28,
+      "text": "Te quería mi perdón sin cambiar la historia entera",
+      "words": [
+        {
+          "t": 134.44,
+          "text": "Te"
+        },
+        {
+          "t": 134.66,
+          "text": "quería"
+        },
+        {
+          "t": 135.0,
+          "text": "mi"
+        },
+        {
+          "t": 135.36,
+          "text": "perdón"
+        },
+        {
+          "t": 135.88,
+          "text": "sin"
+        },
+        {
+          "t": 136.12,
+          "text": "cambiar"
+        },
+        {
+          "t": 136.44,
+          "text": "la"
+        },
+        {
+          "t": 136.6,
+          "text": "historia"
+        },
+        {
+          "t": 136.84,
+          "text": "entera"
+        }
+      ]
+    },
+    {
+      "start": 137.28,
+      "end": 140.22,
+      "text": "Yo quería un amor grande en una guerra pasajera",
+      "words": [
+        {
+          "t": 137.28,
+          "text": "Yo"
+        },
+        {
+          "t": 137.52,
+          "text": "quería"
+        },
+        {
+          "t": 137.84,
+          "text": "un"
+        },
+        {
+          "t": 138.16,
+          "text": "amor"
+        },
+        {
+          "t": 138.38,
+          "text": "grande"
+        },
+        {
+          "t": 138.7,
+          "text": "en"
+        },
+        {
+          "t": 138.92,
+          "text": "una"
+        },
+        {
+          "t": 139.1,
+          "text": "guerra"
+        },
+        {
+          "t": 139.42,
+          "text": "pasajera"
+        }
+      ]
+    },
+    {
+      "start": 140.92,
+      "end": 142.66,
+      "text": "Contéstame, no te vayas así",
+      "words": [
+        {
+          "t": 140.92,
+          "text": "Contéstame,"
+        },
+        {
+          "t": 141.6,
+          "text": "no"
+        },
+        {
+          "t": 141.82,
+          "text": "te"
+        },
+        {
+          "t": 141.94,
+          "text": "vayas"
+        },
+        {
+          "t": 142.42,
+          "text": "así"
+        }
+      ]
+    },
+    {
+      "start": 142.66,
+      "end": 145.78,
+      "text": "Dime si queda algo, algo de mí",
+      "words": [
+        {
+          "t": 142.66,
+          "text": "Dime"
+        },
+        {
+          "t": 143.52,
+          "text": "si"
+        },
+        {
+          "t": 143.76,
+          "text": "queda"
+        },
+        {
+          "t": 144.04,
+          "text": "algo,"
+        },
+        {
+          "t": 144.74,
+          "text": "algo"
+        },
+        {
+          "t": 145.14,
+          "text": "de"
+        },
+        {
+          "t": 145.38,
+          "text": "mí"
+        }
+      ]
+    },
+    {
+      "start": 145.78,
+      "end": 146.52,
+      "text": "Queda mucho,",
+      "words": [
+        {
+          "t": 145.78,
+          "text": "Queda"
+        },
+        {
+          "t": 146.22,
+          "text": "mucho,"
+        }
+      ]
+    },
+    {
+      "start": 146.88,
+      "end": 150.14,
+      "text": "pero no todo lo que queda se debe sacar",
+      "words": [
+        {
+          "t": 146.88,
+          "text": "pero"
+        },
+        {
+          "t": 147.58,
+          "text": "no"
+        },
+        {
+          "t": 147.76,
+          "text": "todo"
+        },
+        {
+          "t": 148.0,
+          "text": "lo"
+        },
+        {
+          "t": 148.18,
+          "text": "que"
+        },
+        {
+          "t": 148.36,
+          "text": "queda"
+        },
+        {
+          "t": 148.7,
+          "text": "se"
+        },
+        {
+          "t": 149.58,
+          "text": "debe"
+        },
+        {
+          "t": 149.86,
+          "text": "sacar"
+        }
+      ]
+    },
+    {
+      "start": 150.14,
+      "end": 155.38,
+      "text": "Te contesté con silencio porque el ruido me mataba",
+      "words": [
+        {
+          "t": 150.14,
+          "text": "Te"
+        },
+        {
+          "t": 150.34,
+          "text": "contesté"
+        },
+        {
+          "t": 150.88,
+          "text": "con"
+        },
+        {
+          "t": 151.12,
+          "text": "silencio"
+        },
+        {
+          "t": 152.36,
+          "text": "porque"
+        },
+        {
+          "t": 153.06,
+          "text": "el"
+        },
+        {
+          "t": 153.38,
+          "text": "ruido"
+        },
+        {
+          "t": 153.98,
+          "text": "me"
+        },
+        {
+          "t": 154.3,
+          "text": "mataba"
+        }
+      ]
+    },
+    {
+      "start": 155.38,
+      "end": 161.06,
+      "text": "Tú buscando una puerta, yo cerrando la ventana",
+      "words": [
+        {
+          "t": 155.38,
+          "text": "Tú"
+        },
+        {
+          "t": 156.096,
+          "text": "buscando"
+        },
+        {
+          "t": 156.58,
+          "text": "una"
+        },
+        {
+          "t": 157.1,
+          "text": "puerta,"
+        },
+        {
+          "t": 158.16,
+          "text": "yo"
+        },
+        {
+          "t": 158.64,
+          "text": "cerrando"
+        },
+        {
+          "t": 159.52,
+          "text": "la"
+        },
+        {
+          "t": 160.02,
+          "text": "ventana"
+        }
+      ]
+    },
+    {
+      "start": 161.5,
+      "end": 166.0,
+      "text": "Y aunque duela, bebé, te lo digo de frente",
+      "words": [
+        {
+          "t": 161.5,
+          "text": "Y"
+        },
+        {
+          "t": 161.6,
+          "text": "aunque"
+        },
+        {
+          "t": 161.9,
+          "text": "duela,"
+        },
+        {
+          "t": 162.44,
+          "text": "bebé,"
+        },
+        {
+          "t": 163.18,
+          "text": "te"
+        },
+        {
+          "t": 164.48,
+          "text": "lo"
+        },
+        {
+          "t": 164.66,
+          "text": "digo"
+        },
+        {
+          "t": 165.18,
+          "text": "de"
+        },
+        {
+          "t": 165.48,
+          "text": "frente"
+        }
+      ]
+    },
+    {
+      "start": 167.072,
+      "end": 172.0,
+      "text": "Si preguntas si te amo, eso no significa vuelve",
+      "words": [
+        {
+          "t": 167.072,
+          "text": "Si"
+        },
+        {
+          "t": 167.28,
+          "text": "preguntas"
+        },
+        {
+          "t": 167.82,
+          "text": "si"
+        },
+        {
+          "t": 168.24,
+          "text": "te"
+        },
+        {
+          "t": 168.56,
+          "text": "amo,"
+        },
+        {
+          "t": 169.28,
+          "text": "eso"
+        },
+        {
+          "t": 169.78,
+          "text": "no"
+        },
+        {
+          "t": 170.04,
+          "text": "significa"
+        },
+        {
+          "t": 170.88,
+          "text": "vuelve"
+        }
+      ]
+    },
+    {
+      "start": 172.864,
+      "end": 175.36,
+      "text": "Tengo veintitrés respuestas",
+      "words": [
+        {
+          "t": 172.864,
+          "text": "Tengo"
+        },
+        {
+          "t": 173.18,
+          "text": "veintitrés"
+        },
+        {
+          "t": 174.32,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 175.78,
+      "end": 178.14,
+      "text": "Y ninguna y se vuelve",
+      "words": [
+        {
+          "t": 175.78,
+          "text": "Y"
+        },
+        {
+          "t": 175.82,
+          "text": "ninguna"
+        },
+        {
+          "t": 176.5,
+          "text": "y"
+        },
+        {
+          "t": 177.18,
+          "text": "se"
+        },
+        {
+          "t": 177.5,
+          "text": "vuelve"
+        }
+      ]
+    },
+    {
+      "start": 178.14,
+      "end": 180.82,
+      "text": "Te quise con toda el alma",
+      "words": [
+        {
+          "t": 178.14,
+          "text": "Te"
+        },
+        {
+          "t": 178.592,
+          "text": "quise"
+        },
+        {
+          "t": 179.18,
+          "text": "con"
+        },
+        {
+          "t": 179.66,
+          "text": "toda"
+        },
+        {
+          "t": 180.12,
+          "text": "el"
+        },
+        {
+          "t": 180.46,
+          "text": "alma"
+        }
+      ]
+    },
+    {
+      "start": 180.82,
+      "end": 183.76,
+      "text": "Pero el alma también se defiende",
+      "words": [
+        {
+          "t": 180.82,
+          "text": "Pero"
+        },
+        {
+          "t": 181.16,
+          "text": "el"
+        },
+        {
+          "t": 181.34,
+          "text": "alma"
+        },
+        {
+          "t": 181.7,
+          "text": "también"
+        },
+        {
+          "t": 182.26,
+          "text": "se"
+        },
+        {
+          "t": 182.86,
+          "text": "defiende"
+        }
+      ]
+    },
+    {
+      "start": 183.76,
+      "end": 186.68,
+      "text": "Tengo veintitrés respuestas",
+      "words": [
+        {
+          "t": 183.76,
+          "text": "Tengo"
+        },
+        {
+          "t": 184.6,
+          "text": "veintitrés"
+        },
+        {
+          "t": 185.78,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 186.68,
+      "end": 189.42,
+      "text": "Pa' la herida que no duerme",
+      "words": [
+        {
+          "t": 186.68,
+          "text": "Pa'"
+        },
+        {
+          "t": 187.24,
+          "text": "la"
+        },
+        {
+          "t": 187.5,
+          "text": "herida"
+        },
+        {
+          "t": 188.26,
+          "text": "que"
+        },
+        {
+          "t": 188.576,
+          "text": "no"
+        },
+        {
+          "t": 188.84,
+          "text": "duerme"
+        }
+      ]
+    },
+    {
+      "start": 189.42,
+      "end": 192.3,
+      "text": "Si me preguntas si te extraño",
+      "words": [
+        {
+          "t": 189.42,
+          "text": "Si"
+        },
+        {
+          "t": 189.8,
+          "text": "me"
+        },
+        {
+          "t": 190.0,
+          "text": "preguntas"
+        },
+        {
+          "t": 190.94,
+          "text": "si"
+        },
+        {
+          "t": 191.46,
+          "text": "te"
+        },
+        {
+          "t": 191.64,
+          "text": "extraño"
+        }
+      ]
+    },
+    {
+      "start": 192.3,
+      "end": 194.84,
+      "text": "Sí, pero eso no es suficiente",
+      "words": [
+        {
+          "t": 192.3,
+          "text": "Sí,"
+        },
+        {
+          "t": 192.78,
+          "text": "pero"
+        },
+        {
+          "t": 193.22,
+          "text": "eso"
+        },
+        {
+          "t": 193.56,
+          "text": "no"
+        },
+        {
+          "t": 193.82,
+          "text": "es"
+        },
+        {
+          "t": 194.08,
+          "text": "suficiente"
+        }
+      ]
+    },
+    {
+      "start": 196.128,
+      "end": 197.48,
+      "text": "Si te quise",
+      "words": [
+        {
+          "t": 196.128,
+          "text": "Si"
+        },
+        {
+          "t": 196.736,
+          "text": "te"
+        },
+        {
+          "t": 196.96,
+          "text": "quise"
+        }
+      ]
+    },
+    {
+      "start": 197.48,
+      "end": 198.84,
+      "text": "Dos, no fue juego",
+      "words": [
+        {
+          "t": 197.48,
+          "text": "Dos,"
+        },
+        {
+          "t": 198.1,
+          "text": "no"
+        },
+        {
+          "t": 198.22,
+          "text": "fue"
+        },
+        {
+          "t": 198.34,
+          "text": "juego"
+        }
+      ]
+    },
+    {
+      "start": 198.84,
+      "end": 200.62,
+      "text": "Tres, todavía duele",
+      "words": [
+        {
+          "t": 198.84,
+          "text": "Tres,"
+        },
+        {
+          "t": 199.44,
+          "text": "todavía"
+        },
+        {
+          "t": 199.84,
+          "text": "duele"
+        }
+      ]
+    },
+    {
+      "start": 200.62,
+      "end": 201.76,
+      "text": "Cuatro, ya no ruego",
+      "words": [
+        {
+          "t": 200.62,
+          "text": "Cuatro,"
+        },
+        {
+          "t": 201.02,
+          "text": "ya"
+        },
+        {
+          "t": 201.14,
+          "text": "no"
+        },
+        {
+          "t": 201.3,
+          "text": "ruego"
+        }
+      ]
+    },
+    {
+      "start": 201.76,
+      "end": 203.08,
+      "text": "Cinco, fui tu casa",
+      "words": [
+        {
+          "t": 201.76,
+          "text": "Cinco,"
+        },
+        {
+          "t": 202.4,
+          "text": "fui"
+        },
+        {
+          "t": 202.54,
+          "text": "tu"
+        },
+        {
+          "t": 202.7,
+          "text": "casa"
+        }
+      ]
+    },
+    {
+      "start": 203.08,
+      "end": 204.66,
+      "text": "Seis, fui tu suerte",
+      "words": [
+        {
+          "t": 203.08,
+          "text": "Seis,"
+        },
+        {
+          "t": 203.78,
+          "text": "fui"
+        },
+        {
+          "t": 203.98,
+          "text": "tu"
+        },
+        {
+          "t": 204.12,
+          "text": "suerte"
+        }
+      ]
+    },
+    {
+      "start": 204.66,
+      "end": 206.06,
+      "text": "Siete, tú me viste",
+      "words": [
+        {
+          "t": 204.66,
+          "text": "Siete,"
+        },
+        {
+          "t": 205.22,
+          "text": "tú"
+        },
+        {
+          "t": 205.38,
+          "text": "me"
+        },
+        {
+          "t": 205.54,
+          "text": "viste"
+        }
+      ]
+    },
+    {
+      "start": 206.06,
+      "end": 207.9,
+      "text": "Ocho, no supiste verme",
+      "words": [
+        {
+          "t": 206.06,
+          "text": "Ocho,"
+        },
+        {
+          "t": 206.66,
+          "text": "no"
+        },
+        {
+          "t": 206.82,
+          "text": "supiste"
+        },
+        {
+          "t": 207.42,
+          "text": "verme"
+        }
+      ]
+    },
+    {
+      "start": 208.928,
+      "end": 209.56,
+      "text": "Hubo fuego",
+      "words": [
+        {
+          "t": 208.928,
+          "text": "Hubo"
+        },
+        {
+          "t": 209.12,
+          "text": "fuego"
+        }
+      ]
+    },
+    {
+      "start": 209.56,
+      "end": 210.9,
+      "text": "Diez, hubo frío",
+      "words": [
+        {
+          "t": 209.56,
+          "text": "Diez,"
+        },
+        {
+          "t": 210.28,
+          "text": "hubo"
+        },
+        {
+          "t": 210.54,
+          "text": "frío"
+        }
+      ]
+    },
+    {
+      "start": 210.9,
+      "end": 211.68,
+      "text": "No perdí",
+      "words": [
+        {
+          "t": 210.9,
+          "text": "No"
+        },
+        {
+          "t": 211.1,
+          "text": "perdí"
+        }
+      ]
+    },
+    {
+      "start": 211.68,
+      "end": 212.42,
+      "text": "Lo perdí",
+      "words": [
+        {
+          "t": 211.68,
+          "text": "Lo"
+        },
+        {
+          "t": 211.8,
+          "text": "perdí"
+        }
+      ]
+    },
+    {
+      "start": 212.42,
+      "end": 213.76,
+      "text": "Te olvidé conmigo",
+      "words": [
+        {
+          "t": 212.42,
+          "text": "Te"
+        },
+        {
+          "t": 212.74,
+          "text": "olvidé"
+        },
+        {
+          "t": 213.18,
+          "text": "conmigo"
+        }
+      ]
+    },
+    {
+      "start": 213.76,
+      "end": 214.64,
+      "text": "No te odio",
+      "words": [
+        {
+          "t": 213.76,
+          "text": "No"
+        },
+        {
+          "t": 213.98,
+          "text": "te"
+        },
+        {
+          "t": 214.2,
+          "text": "odio"
+        }
+      ]
+    },
+    {
+      "start": 214.64,
+      "end": 215.24,
+      "text": "No te espero",
+      "words": [
+        {
+          "t": 214.64,
+          "text": "No"
+        },
+        {
+          "t": 214.68,
+          "text": "te"
+        },
+        {
+          "t": 214.84,
+          "text": "espero"
+        }
+      ]
+    },
+    {
+      "start": 215.28,
+      "end": 216.94,
+      "text": "Quince, si me llamas",
+      "words": [
+        {
+          "t": 215.28,
+          "text": "Quince,"
+        },
+        {
+          "t": 216.06,
+          "text": "si"
+        },
+        {
+          "t": 216.18,
+          "text": "me"
+        },
+        {
+          "t": 216.26,
+          "text": "llamas"
+        }
+      ]
+    },
+    {
+      "start": 216.94,
+      "end": 219.08,
+      "text": "Dieciséis, no contesto",
+      "words": [
+        {
+          "t": 216.94,
+          "text": "Dieciséis,"
+        },
+        {
+          "t": 217.94,
+          "text": "no"
+        },
+        {
+          "t": 218.22,
+          "text": "contesto"
+        }
+      ]
+    },
+    {
+      "start": 219.92,
+      "end": 221.7,
+      "text": "Guardo fotos sin mirarla",
+      "words": [
+        {
+          "t": 219.92,
+          "text": "Guardo"
+        },
+        {
+          "t": 220.6,
+          "text": "fotos"
+        },
+        {
+          "t": 220.88,
+          "text": "sin"
+        },
+        {
+          "t": 221.12,
+          "text": "mirarla"
+        }
+      ]
+    },
+    {
+      "start": 221.7,
+      "end": 223.2,
+      "text": "Promesa, ya no hablas",
+      "words": [
+        {
+          "t": 221.7,
+          "text": "Promesa,"
+        },
+        {
+          "t": 222.42,
+          "text": "ya"
+        },
+        {
+          "t": 222.54,
+          "text": "no"
+        },
+        {
+          "t": 222.68,
+          "text": "hablas"
+        }
+      ]
+    },
+    {
+      "start": 223.2,
+      "end": 223.84,
+      "text": "Me perdono",
+      "words": [
+        {
+          "t": 223.2,
+          "text": "Me"
+        },
+        {
+          "t": 223.38,
+          "text": "perdono"
+        }
+      ]
+    },
+    {
+      "start": 223.84,
+      "end": 225.32,
+      "text": "Veintidós, me suelto",
+      "words": [
+        {
+          "t": 223.84,
+          "text": "Veintidós,"
+        },
+        {
+          "t": 224.6,
+          "text": "me"
+        },
+        {
+          "t": 224.82,
+          "text": "suelto"
+        }
+      ]
+    },
+    {
+      "start": 225.32,
+      "end": 228.32,
+      "text": "Veintitrés, déjame lejos",
+      "words": [
+        {
+          "t": 225.32,
+          "text": "Veintitrés,"
+        },
+        {
+          "t": 226.42,
+          "text": "déjame"
+        },
+        {
+          "t": 227.66,
+          "text": "lejos"
+        }
+      ]
+    },
+    {
+      "start": 228.32,
+      "end": 230.82,
+      "text": "Déjame lejos, déjame en paz",
+      "words": [
+        {
+          "t": 228.32,
+          "text": "Déjame"
+        },
+        {
+          "t": 228.92,
+          "text": "lejos,"
+        },
+        {
+          "t": 229.84,
+          "text": "déjame"
+        },
+        {
+          "t": 230.34,
+          "text": "en"
+        },
+        {
+          "t": 230.52,
+          "text": "paz"
+        }
+      ]
+    },
+    {
+      "start": 230.82,
+      "end": 233.7,
+      "text": "Lo que fue nuestro no vuelve pa' atrás",
+      "words": [
+        {
+          "t": 230.82,
+          "text": "Lo"
+        },
+        {
+          "t": 231.46,
+          "text": "que"
+        },
+        {
+          "t": 231.56,
+          "text": "fue"
+        },
+        {
+          "t": 231.86,
+          "text": "nuestro"
+        },
+        {
+          "t": 232.36,
+          "text": "no"
+        },
+        {
+          "t": 232.7,
+          "text": "vuelve"
+        },
+        {
+          "t": 233.12,
+          "text": "pa'"
+        },
+        {
+          "t": 233.36,
+          "text": "atrás"
+        }
+      ]
+    },
+    {
+      "start": 233.7,
+      "end": 236.6,
+      "text": "Déjame lejos, déjame sanar",
+      "words": [
+        {
+          "t": 233.7,
+          "text": "Déjame"
+        },
+        {
+          "t": 234.62,
+          "text": "lejos,"
+        },
+        {
+          "t": 235.46,
+          "text": "déjame"
+        },
+        {
+          "t": 235.84,
+          "text": "sanar"
+        }
+      ]
+    },
+    {
+      "start": 236.6,
+      "end": 239.38,
+      "text": "Si tú me quisiste, aprende a soltar",
+      "words": [
+        {
+          "t": 236.6,
+          "text": "Si"
+        },
+        {
+          "t": 236.94,
+          "text": "tú"
+        },
+        {
+          "t": 237.16,
+          "text": "me"
+        },
+        {
+          "t": 237.32,
+          "text": "quisiste,"
+        },
+        {
+          "t": 238.208,
+          "text": "aprende"
+        },
+        {
+          "t": 238.82,
+          "text": "a"
+        },
+        {
+          "t": 238.82,
+          "text": "soltar"
+        }
+      ]
+    },
+    {
+      "start": 241.44,
+      "end": 243.92,
+      "text": "Tengo veintitrés respuestas",
+      "words": [
+        {
+          "t": 241.44,
+          "text": "Tengo"
+        },
+        {
+          "t": 241.94,
+          "text": "veintitrés"
+        },
+        {
+          "t": 242.88,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 243.92,
+      "end": 246.7,
+      "text": "Y ningún nariz se vuelve",
+      "words": [
+        {
+          "t": 243.92,
+          "text": "Y"
+        },
+        {
+          "t": 244.22,
+          "text": "ningún"
+        },
+        {
+          "t": 244.78,
+          "text": "nariz"
+        },
+        {
+          "t": 245.84,
+          "text": "se"
+        },
+        {
+          "t": 246.14,
+          "text": "vuelve"
+        }
+      ]
+    },
+    {
+      "start": 246.7,
+      "end": 249.4,
+      "text": "Te quise con todo el alma",
+      "words": [
+        {
+          "t": 246.7,
+          "text": "Te"
+        },
+        {
+          "t": 247.168,
+          "text": "quise"
+        },
+        {
+          "t": 247.74,
+          "text": "con"
+        },
+        {
+          "t": 248.24,
+          "text": "todo"
+        },
+        {
+          "t": 248.66,
+          "text": "el"
+        },
+        {
+          "t": 249.02,
+          "text": "alma"
+        }
+      ]
+    },
+    {
+      "start": 249.4,
+      "end": 252.24,
+      "text": "Pero el alma también se defiende",
+      "words": [
+        {
+          "t": 249.4,
+          "text": "Pero"
+        },
+        {
+          "t": 249.72,
+          "text": "el"
+        },
+        {
+          "t": 249.94,
+          "text": "alma"
+        },
+        {
+          "t": 250.32,
+          "text": "también"
+        },
+        {
+          "t": 250.86,
+          "text": "se"
+        },
+        {
+          "t": 251.48,
+          "text": "defiende"
+        }
+      ]
+    },
+    {
+      "start": 252.24,
+      "end": 255.24,
+      "text": "Tengo veintitrés respuestas",
+      "words": [
+        {
+          "t": 252.24,
+          "text": "Tengo"
+        },
+        {
+          "t": 253.14,
+          "text": "veintitrés"
+        },
+        {
+          "t": 254.34,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 255.24,
+      "end": 257.96,
+      "text": "Tú a la herida que no duerme",
+      "words": [
+        {
+          "t": 255.24,
+          "text": "Tú"
+        },
+        {
+          "t": 255.78,
+          "text": "a"
+        },
+        {
+          "t": 255.82,
+          "text": "la"
+        },
+        {
+          "t": 255.98,
+          "text": "herida"
+        },
+        {
+          "t": 256.84,
+          "text": "que"
+        },
+        {
+          "t": 257.152,
+          "text": "no"
+        },
+        {
+          "t": 257.44,
+          "text": "duerme"
+        }
+      ]
+    },
+    {
+      "start": 257.96,
+      "end": 260.92,
+      "text": "Si me preguntas si te extraño",
+      "words": [
+        {
+          "t": 257.96,
+          "text": "Si"
+        },
+        {
+          "t": 258.38,
+          "text": "me"
+        },
+        {
+          "t": 258.58,
+          "text": "preguntas"
+        },
+        {
+          "t": 259.44,
+          "text": "si"
+        },
+        {
+          "t": 260.02,
+          "text": "te"
+        },
+        {
+          "t": 260.16,
+          "text": "extraño"
+        }
+      ]
+    },
+    {
+      "start": 260.92,
+      "end": 263.34,
+      "text": "Sí, pero eso no es suficiente",
+      "words": [
+        {
+          "t": 260.92,
+          "text": "Sí,"
+        },
+        {
+          "t": 261.34,
+          "text": "pero"
+        },
+        {
+          "t": 261.74,
+          "text": "eso"
+        },
+        {
+          "t": 262.14,
+          "text": "no"
+        },
+        {
+          "t": 262.34,
+          "text": "es"
+        },
+        {
+          "t": 262.66,
+          "text": "suficiente"
+        }
+      ]
+    },
+    {
+      "start": 263.7,
+      "end": 266.28,
+      "text": "No todas las respuestas",
+      "words": [
+        {
+          "t": 263.7,
+          "text": "No"
+        },
+        {
+          "t": 264.832,
+          "text": "todas"
+        },
+        {
+          "t": 265.12,
+          "text": "las"
+        },
+        {
+          "t": 265.46,
+          "text": "respuestas"
+        }
+      ]
+    },
+    {
+      "start": 266.28,
+      "end": 268.02,
+      "text": "Son para volver",
+      "words": [
+        {
+          "t": 266.28,
+          "text": "Son"
+        },
+        {
+          "t": 267.12,
+          "text": "para"
+        },
+        {
+          "t": 267.4,
+          "text": "volver"
+        }
+      ]
+    },
+    {
+      "start": 268.26,
+      "end": 268.9,
+      "text": "A",
+      "words": [
+        {
+          "t": 268.26,
+          "text": "A"
+        }
+      ]
+    },
+    {
+      "start": 269.472,
+      "end": 271.08,
+      "text": "veces son para cerrar",
+      "words": [
+        {
+          "t": 269.472,
+          "text": "veces"
+        },
+        {
+          "t": 269.78,
+          "text": "son"
+        },
+        {
+          "t": 270.1,
+          "text": "para"
+        },
+        {
+          "t": 270.44,
+          "text": "cerrar"
+        }
+      ]
+    },
+    {
+      "start": 271.28,
+      "end": 272.28,
+      "text": "No vuelvo",
+      "words": [
+        {
+          "t": 271.28,
+          "text": "No"
+        },
+        {
+          "t": 271.62,
+          "text": "vuelvo"
+        }
+      ]
+    },
+    {
+      "start": 272.28,
+      "end": 274.74,
+      "text": "Pero te deseo paz",
+      "words": [
+        {
+          "t": 272.28,
+          "text": "Pero"
+        },
+        {
+          "t": 273.34,
+          "text": "te"
+        },
+        {
+          "t": 273.54,
+          "text": "deseo"
+        },
+        {
+          "t": 274.36,
+          "text": "paz"
+        }
+      ]
+    }
+  ]
+}

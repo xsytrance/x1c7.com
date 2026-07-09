@@ -1,0 +1,134 @@
+[
+  {
+    "id": "heaven-hell-honey-venom-remix",
+    "planet": {
+      "analysis": {
+        "summary": "A sultry dancehall anthem about a forbidden attraction where an alluring figure embodies both dangerous temptation and divine beauty.",
+        "overallMood": "Sultry",
+        "themes": [
+          "Forbidden Love",
+          "Dangerous Allure",
+          "Obsession",
+          "Dual Nature (Heaven/Hell)",
+          "Nightlife Escapism"
+        ],
+        "palette": [
+          "#0F1216",
+          "#FFD700",
+          "#8B0000",
+          "#39FF14"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipation and low hum of tension",
+            "intensity": 0.2,
+            "colorHint": "#0f1216",
+            "start": 0
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Internal conflict between desire and morality",
+            "intensity": 0.5,
+            "colorHint": "#8b0000",
+            "start": 5.04
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Explosive release of forbidden passion",
+            "intensity": 1,
+            "colorHint": "#ffd700",
+            "start": 16.08
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Visualizing the object of desire with luxury and heat",
+            "intensity": 0.6,
+            "colorHint": "#39ff14",
+            "start": 57.67
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Rising tension and psychological shift",
+            "intensity": 0.85,
+            "colorHint": "#ffd700",
+            "start": 67.32
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Desperate bargaining with fate and desire",
+            "intensity": 0.95,
+            "colorHint": "#8b0000",
+            "start": 136.96
+          },
+          {
+            "name": "Drop",
+            "emotion": "Pure sonic assault of the bassline and hypnotic rhythm",
+            "intensity": 1,
+            "colorHint": "#39ff14",
+            "start": 143.2
+          },
+          {
+            "name": "Breakdown/Bridge 2",
+            "emotion": "Hypnotic repetition leading to trance state",
+            "intensity": 0.8,
+            "colorHint": "#0f1216",
+            "start": 166.38
+          },
+          {
+            "name": "Final Chorus/Outro",
+            "emotion": "Exhausted euphoria and lingering intoxication",
+            "intensity": 0.75,
+            "colorHint": "#ffd700",
+            "start": 171.68
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Venom",
+            "emotion": "Thrilling toxicity",
+            "imageryPrompt": "A golden viscous liquid dripping from a silver goblet onto dark stone, glowing with an inner blue light that illuminates the surrounding shadows."
+          },
+          {
+            "word": "Honey",
+            "emotion": "Sweet entrapment",
+            "imageryPrompt": "Sunlight filtering through thick amber syrup in slow motion, trapping dust motes and creating a sticky, warm golden haze against dark wood textures."
+          },
+          {
+            "word": "Strobe",
+            "emotion": "Disorienting intensity",
+            "imageryPrompt": "Sharp white rectangular beams of light slicing through smoke-filled air at nightclubs, freezing sweat on skin and illuminating neon outlines in high contrast black and white."
+          },
+          {
+            "word": "Burn",
+            "emotion": "Painful pleasure",
+            "imageryPrompt": "A hand clutching a chest wound where flames lick the flesh but feel warm rather than hot, surrounded by ash that sparkles like diamonds in low light."
+          },
+          {
+            "word": "Venomous Kiss",
+            "emotion": "Forbidden intimacy",
+            "imageryPrompt": "Two lips meeting under red emergency lights where one is coated in shimmering green poison dust and the other in golden honey, creating a swirling vortex of colors."
+          },
+          {
+            "word": "Dangerous God",
+            "emotion": "Subversive divinity",
+            "imageryPrompt": "A figure draped in tattered velvet robes standing atop a pile of burning money and broken crosses, eyes glowing with electric blue fire against a stormy sky."
+          },
+          {
+            "word": "Spell",
+            "emotion": "Hypnotic control",
+            "imageryPrompt": "A swirling vortex of red ribbons and smoke forming an intricate geometric pattern above a sweating dancer's face, blurring the background into deep obsidian black."
+          },
+          {
+            "word": "Electric",
+            "emotion": "Jolted arousal",
+            "imageryPrompt": "Blue electricity arcing across wet skin in a dark room, illuminating veins that glow faintly purple as the subject shivers under harsh neon club lighting."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

@@ -1,0 +1,291 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "between-the-stations",
+  "generatedAt": "2026-07-09T17:59:58.281Z",
+  "measured": {
+    "bpm": 136,
+    "duration": 237.56
+  },
+  "identity": {
+    "title": "Between The Stations",
+    "titleAlternates": [],
+    "genre": "Afro-Caribbean Dancehall",
+    "subGenres": [
+      "Club Bashing",
+      "Latin House"
+    ],
+    "mood": "Aggressive, sweaty, high-energy, gritty",
+    "styleSentence": "A hyper-energetic 136 BPM Afro-Caribbean riddim driven by chest-rattling sub bass and overdriven 808s, featuring a dominant female lead trading rapid-fire call-and-response lines with a raw male toaster amidst dirty wine motifs, siren FX, and Latin-leaning percussion rolls for peak-time dancefloor impact.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Aggressive teasing delivery alternating between explicit female lead and raw male toaster"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/between-the-stations/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#080818",
+      "#081828",
+      "#081838",
+      "#181828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.708
+    },
+    "boundaries": [
+      34.18,
+      43.19,
+      110.71,
+      133.19,
+      177.68,
+      196.81,
+      226.81,
+      234.99
+    ],
+    "brightness": 2825.5,
+    "dynamicsDb": 11.4
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Verse 1 - Soft R&B Vocal]\nOld stops\nNew eyes\nBlue light\nPassing by\nWindow black\nFace in glass\nI see me\nThen I pass\nDowntown\nUptown\nUnder every sound\nI keep floating\nI keep finding ground\n\n[Pre-Chorus - Building, Smooth]\nAnd everybody’s going somewhere\nEverybody’s holding something\nEverybody looks so tired\nStill the city keeps on humming\nSo I let the rhythm hold me\nLet the tunnel pull me through\nEvery station feels familiar\nBut I’m waking up brand new\n\n[Chorus - Uplifting, Repetitive Hook]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Post-Chorus - Vocal Loop]\nBreathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found\nBreathe in\nBreathe out\nLet the night slow down\nBreathe in\nBreathe out\nI’m here right now\n\n[Instrumental Break - Ambient House Groove]\n\n[deep warm bass]\n\n[dusty breakbeat shuffle]\n\n[soft subway rumble under beat]\n\n[glowing synth pad]\n\n[filtered vocal chops]\n\n[Verse 2 - More Sultry, Calm]\nA train to Brooklyn\nA dream to Queens\nBronx in the rhythm\nManhattan in the steam\nSomeone’s got roses\nSomeone’s got rain\nSomeone’s got nothing\nBut a song for the pain\nI don’t need answers\nI don’t need signs\nJust one more breath\nAnd a little more time\n\n[Pre-Chorus 2 - Lift]\nAnd everybody’s changing cars\nEverybody’s chasing daylight\nEverybody’s half a scar\nGlowing under tunnel-white\nSo I let the rhythm hold me\nLet the morning come in blue\nEvery station feels familiar\nBut I’m moving into new\n\n[Chorus - Bigger Harmonies]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Bridge - Whispered / Dreamy]\nNo rush now\nNo fear now\nLet it roll\nLet it clear out\nNo rush now\nNo fear now\nLet it move\nLet it clear out\nI was heavy\nI was loud\nNow I’m quiet\nIn the crowd\nI was fading\nIn the sound\nNow I’m breathing\nUnderground\n\n[Final Chorus - Emotional, Uplifting]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Outro - Vocal Loop Fades]\nBreathe in\nBreathe out\nLet the city move around you\nBreathe in\nBreathe out\nWe’re still here somehow\nBreathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found",
+    "lrc": "[Intro]\n[00:03.46] Oh,\n[00:04.30] oh,\n[00:04.60] oh,\n[00:05.18] stops,\n[00:05.66] new eyes,\n[00:06.94] blue light,\n[00:08.02] passing by,\n[00:09.34] window,\n[00:10.08] black,\n[00:10.34] chasing glass,\n[00:11.70] I see me,\n[00:12.78] then I pass,\n[00:14.34] downtown,\n[00:15.30] uptown,\n[00:16.36] under every sun,\n[00:17.38] I keep floating,\n[00:19.98] I keep finding the ground\n[00:22.84] And everybody's holding somewhat,\n[00:25.17] everybody's holding something,\n[00:27.90] everybody looks so tired,\n[00:29.53] still the city keeps on coming,\n[00:32.20] so I let the rhythm hold me,\n[Verse 1]\n[00:34.96] let the tunnel pull me through,\n[00:37.48] every station feels familiar,\n[00:39.52] but I'm waking up brand new\n[Pre-Chorus]\n[00:42.04] Between the stations,\n[00:43.82] I can breathe again,\n[00:44.96] I can breathe again,\n[00:46.16] I can breathe,\n[00:47.08] between the stations,\n[00:48.66] I come back to me,\n[00:49.76] come back to me,\n[00:50.96] come back to me\n[00:51.76] Lights keep flashing,\n[00:53.20] hearts keep passing,\n[00:54.36] still I breathe,\n[00:55.56] still I breathe,\n[00:56.76] between the stations,\n[Chorus]\n[00:58.06] I can breathe again,\n[00:59.38] I can breathe again,\n[01:00.58] I can breathe\n[01:01.98] Breathing,\n[01:02.58] breathe out,\n[01:03.80] downtown,\n[01:04.34] that train goes underground,\n[01:06.38] breathing,\n[01:07.22] breathe out,\n[01:08.58] downtown,\n[01:09.16] I'm lost but I'm found\n[01:11.60] Breathing,\n[01:12.20] breathe out,\n[01:13.40] downtown,\n[01:13.90] let the night slow down,\n[01:16.08] breathing,\n[01:16.84] breathe out,\n[01:18.18] downtown,\n[01:18.44] I'm here right now�\n[01:30.73] A train to Brooklyn, a dream to Queens\n[01:33.18] Bronx in the rhythm, Manhattan in the steam\n[01:35.50] Someone's got roses, someone's got rain\n[01:38.12] Someone's got nothing but the song for the pain\n[01:40.38] I don't need answers, I don't need signs\n[01:42.74] Just one more breath and a little more time\n[01:48.92] And everybody's changing cars\n[Post-Chorus]\n[01:51.50] Everybody chasing daylight\n[01:54.28] Everybody's off a scar\n[01:56.65] Glowing under tunnel lights\n[01:58.83] So I let the rhythm hold me\n[02:01.11] Let the morning come in blue\n[02:03.18] Every station feels familiar\n[02:05.48] But I'm moving into new\n[02:08.38] Between the stations\n[02:09.96] I can breathe again, I can breathe again\n[02:12.44] I can breathe\n[02:13.28] Between the stations\n[02:14.74] I come back to me,\n[02:16.14] come back to me,\n[02:17.34] come back to me\n[02:18.46] Lights keep flashing, hearts keep prancing\n[02:20.60] Still I breathe, still I breathe\n[02:22.92] Between the stations\n[02:24.26] I can breathe again, I can breathe again\n[Verse 2]\n[02:26.86] I can breathe, breathe\n[02:28.76] No rush now, no fear now\n[02:30.96] Let it roll, let it clear out\n[02:32.82] No rush now, no fear now\n[02:35.94] Let it move, let it clear out\n[02:37.68] I was heavy, I was loud\n[02:39.91] Now I'm quiet, in the crowd\n[02:42.08] I was fading, in the sound\n[02:44.58] Now I'm breathing, underground\n[02:57.22] I can breathe again, I can breathe again\n[03:00.48] I can breathe\n[03:01.28] Between the stations\n[03:02.68] I can breathe again, I can breathe again\n[03:03.40] I come back to me,\n[03:04.12] come back to me,\n[03:05.34] come back to me\n[Pre-Chorus 2]\n[03:06.48] Lights keep flashing, hearts keep passing\n[03:08.70] Still I breathe, still I breathe\n[03:10.86] Between the stations\n[03:12.30] I can breathe again, I can breathe again\n[03:14.86] I can breathe\n[03:15.74] Between the stations\n[03:18.14] I come back to me,\n[03:18.34] come back to me,\n[03:18.34] come back to me\n[03:18.34] I come back to me,\n[03:18.34] come back to me,\n[03:18.50] come back to me\n[03:18.86] Lights keep flashing, hearts keep passing\n[03:19.28] Still I breathe, still I breathe\n[03:20.10] Between the stations\n[03:20.58] Breathe in, breathe out\n[03:23.92] Breathe in, breathe out\n[Chorus]\n[03:28.34] Let the city move around you\n[03:34.20] Breathe in, breathe out\n[03:38.02] We're still here somehow\n[03:43.76] Breathe in,\n[03:47.06] breathe out\n[03:48.50] Train goes underground\n[03:50.76] Lost\n[03:53.38] but home\n"
+  },
+  "analysis": {
+    "summary": "This track uses a subway journey as a metaphor for navigating urban exhaustion and finding moments of respite between chaotic stops. It transforms gritty city transit into an aggressive yet cathartic dancehall experience where rhythm becomes the mechanism to reclaim one's identity.",
+    "overallMood": "0.85",
+    "themes": [
+      "Urban Exhaustion",
+      "Cathartic Release",
+      "Identity Reclamation",
+      "Nightlife Escapism",
+      "Sensory Overload vs. Peace"
+    ],
+    "palette": [
+      "#1A0F0E",
+      "#8B2500",
+      "#FFD700",
+      "#C43D69"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Disoriented, hazy observation of the city passing by at night.",
+        "intensity": 0.85,
+        "colorHintHex": "#2E1A18",
+        "imageryPrompt": "Low angle shot from inside a moving vehicle looking out through rain-streaked windows at blurred neon signs and dark subway tunnels, shallow depth of field.",
+        "start": 3.46
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Physical sensation of being pulled forward by momentum despite mental fatigue.",
+        "intensity": 0.88,
+        "colorHintHex": "#4A2C29",
+        "imageryPrompt": "Close up on sweaty palms gripping a cold metal handrail inside a crowded train car with flickering fluorescent lights casting harsh shadows.",
+        "start": 34.96
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Sudden realization of freedom and the ability to control one's own breath.",
+        "intensity": 0.86,
+        "colorHintHex": "#FF8C42",
+        "imageryPrompt": "A silhouette standing on a platform edge with arms wide open against a backdrop of flashing red and green signal lights turning into abstract geometric patterns.",
+        "start": 42.04
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Final resolution where the journey becomes home, breathing in sync with the beat.",
+        "intensity": 0.73,
+        "colorHintHex": "#FFD700",
+        "imageryPrompt": "Explosive burst of golden light filling a dark underground station, confetti or sparks rising into the air as figures raise hands in celebration.",
+        "start": 58.06
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Reflective movement amidst the crowd, finding clarity through rhythm.",
+        "intensity": 0.42,
+        "colorHintHex": "#FFA500",
+        "imageryPrompt": "Wide shot of a massive dance floor with laser beams cutting through thick haze, everyone moving in sync but individuals looking focused and calm.",
+        "start": 111.5
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Internal quietude replacing previous heaviness, acceptance of the present moment.",
+        "intensity": 0.18,
+        "colorHintHex": "#3D4C53",
+        "imageryPrompt": "Slow motion shot inside a subway tunnel with blue emergency lighting reflecting on wet pavement, steam rising from vents creating soft mist.",
+        "start": 146.86
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Heightened sensory awareness of flashing lights and beating hearts.",
+        "intensity": 0.24,
+        "colorHintHex": "#DC143C",
+        "imageryPrompt": "Abstract view of a kaleidoscope formed by city billboard reflections on glass surfaces mixed with rhythmic pulse visualizations.",
+        "start": 186.48
+      }
+    ],
+    "keywords": [
+      {
+        "word": "breathe",
+        "emotion": "Relief and liberation from pressure.",
+        "imageryPrompt": "A lung expanding rapidly captured by high-speed photography with particles of dust or light exploding outward in slow motion."
+      },
+      {
+        "word": "tunnel",
+        "emotion": "Isolation leading to introspection within the urban maze.",
+        "imageryPrompt": "Infinite perspective down a long dark subway tunnel where the tracks seem to stretch into infinity with distant blue lights fading away."
+      },
+      {
+        "word": "chasing",
+        "emotion": "Desperate urgency mixed with exhaustion of pursuit.",
+        "imageryPrompt": "A runner blurred by motion running against a backdrop of city skyscrapers reflected in puddles under heavy rain at night."
+      },
+      {
+        "word": "underground",
+        "emotion": "Hidden sanctuary beneath the noisy surface world.",
+        "imageryPrompt": "Subterranean cavern with bioluminescent fungi and soft amber lighting creating a warm, safe atmosphere away from the sun."
+      },
+      {
+        "word": "steam",
+        "emotion": "Visceral heat rising to clear the mind of confusion.",
+        "imageryPrompt": "Thick white vapor swirling around a dancer in silhouette against hot industrial pipes and glowing red machinery sparks."
+      },
+      {
+        "word": "fading",
+        "emotion": "Loss of identity dissolving into the collective noise.",
+        "imageryPrompt": "A figure slowly becoming transparent or pixelating as they walk away from a bright, overwhelming city street sign."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 37,
+      "mid": 30,
+      "close": 10
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 3.46,
+        "intensity": 0.85
+      },
+      {
+        "name": "Verse 1",
+        "start": 34.96,
+        "intensity": 0.88
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 42.04,
+        "intensity": 0.86
+      },
+      {
+        "name": "Chorus",
+        "start": 58.06,
+        "intensity": 0.73
+      },
+      {
+        "name": "Post-Chorus",
+        "start": 111.5,
+        "intensity": 0.42
+      },
+      {
+        "name": "Verse 2",
+        "start": 146.86,
+        "intensity": 0.18
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "start": 186.48,
+        "intensity": 0.24
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 80
+      },
+      {
+        "name": "Verse 1",
+        "presence": 90
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 85
+      },
+      {
+        "name": "Chorus",
+        "presence": 82
+      },
+      {
+        "name": "Post-Chorus",
+        "presence": 78
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          6.22,
+          7.1
+        ],
+        [
+          7.5,
+          9.26
+        ],
+        [
+          25.26,
+          26.3
+        ],
+        [
+          27.66,
+          28.7
+        ],
+        [
+          98.54,
+          101.02
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "strings",
+        "brass"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "between-the-stations-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}
