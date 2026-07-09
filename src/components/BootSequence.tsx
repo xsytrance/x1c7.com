@@ -22,8 +22,14 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
   const skipped = useRef(false);
 
   useEffect(() => {
-    // Check if user has seen boot before
-    const seen = sessionStorage.getItem(STORAGE_KEY);
+    // One-time ceremony: localStorage survives across sessions, so the boot
+    // plays on a browser's first visit ever (or again after the user clears
+    // site data). Old sessionStorage marks migrate silently.
+    let seen: string | null = null;
+    try {
+      seen = localStorage.getItem(STORAGE_KEY) ?? sessionStorage.getItem(STORAGE_KEY);
+      if (seen) localStorage.setItem(STORAGE_KEY, "1");
+    } catch { /* storage blocked → play it, can't persist anyway */ }
     if (seen) {
       onComplete();
       return;
@@ -37,7 +43,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
     if (reduced) {
       setLines(BOOT_LINES.map((_, i) => i));
       setTimeout(() => {
-        sessionStorage.setItem(STORAGE_KEY, "1");
+        try { localStorage.setItem(STORAGE_KEY, "1"); } catch { /* private mode */ };
         setExiting(true);
         setTimeout(onComplete, 600);
       }, 500);
@@ -57,7 +63,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
     const lastDelay = BOOT_LINES[BOOT_LINES.length - 1].delay + 1200;
     const timer = setTimeout(() => {
       if (!skipped.current) {
-        sessionStorage.setItem(STORAGE_KEY, "1");
+        try { localStorage.setItem(STORAGE_KEY, "1"); } catch { /* private mode */ };
         setExiting(true);
         setTimeout(onComplete, 600);
       }
@@ -68,7 +74,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
 
   const handleSkip = () => {
     skipped.current = true;
-    sessionStorage.setItem(STORAGE_KEY, "1");
+    try { localStorage.setItem(STORAGE_KEY, "1"); } catch { /* private mode */ };
     setExiting(true);
     setTimeout(onComplete, 300);
   };
