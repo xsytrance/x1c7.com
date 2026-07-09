@@ -15,6 +15,7 @@ import { canPerform } from "@/components/KineticStage";
 import { classifyGenre, cardUrl, fmtTime } from "@/lib/collection";
 import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
+import ShareButton from "@/components/ShareButton";
 
 const PLANET_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
 
@@ -124,6 +125,7 @@ export default function TrackShare({ row }: { row: TrackRow }) {
               SUNO ↗
             </a>
           ) : null}
+          <ShareButton id={track.id} sizing="px-5 py-3 text-sm" />
         </div>
 
         {previewing ? (

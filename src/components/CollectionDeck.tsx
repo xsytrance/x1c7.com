@@ -182,7 +182,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                         SUNO ↗
                       </a>
                     ) : null}
-                    <ShareButton id={t.id} compact />
+                    <ShareButton id={t.id} sizing="px-2 py-0.5 text-[11px]" />
                   </span>
                 </div>
                 <h3 className="mt-1 truncate font-display text-xl text-white">{t.title}</h3>
