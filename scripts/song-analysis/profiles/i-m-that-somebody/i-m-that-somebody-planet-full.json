@@ -1,0 +1,111 @@
+{
+  "analysis": {
+    "summary": "A confident R&B track where a playful protagonist asserts their reliability and stability in a relationship, rejecting neediness while embracing the thrill of the moment.",
+    "overallMood": "Playful Confidence",
+    "themes": [
+      "Self-Assurance",
+      "Romantic Stability",
+      "Futuristic Nostalgia",
+      "Secretive Intimacy"
+    ],
+    "palette": [
+      "#FF4D8C",
+      "#2E3B51",
+      "#00A896",
+      "#FFE700"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Playful Mystery",
+        "intensity": 0.76,
+        "colorHint": "#ff4d8c",
+        "start": 6.14
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Observant Caution",
+        "intensity": 0.9,
+        "colorHint": "#2e3b51",
+        "start": 10.86
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Protective Confidence",
+        "intensity": 0.89,
+        "colorHint": "#ffe700",
+        "start": 27.3
+      },
+      {
+        "name": "Hook",
+        "emotion": "Unwavering Assurance",
+        "intensity": 0.92,
+        "colorHint": "#ff4d8c",
+        "start": 45.36
+      },
+      {
+        "name": "Post-Hook",
+        "emotion": "Admiring Devotion",
+        "intensity": 0.71,
+        "colorHint": "#00a896",
+        "start": 118.91
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Flirty Duality",
+        "intensity": 0.65,
+        "colorHint": "#ff4d8c",
+        "start": 129.41
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Playful Rebellion",
+        "intensity": 0.32,
+        "colorHint": "#ffe700",
+        "start": 157.1
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Devoted Commitment",
+        "intensity": 0.2,
+        "colorHint": "#2e3b51",
+        "start": 230
+      }
+    ],
+    "keywords": [
+      {
+        "word": "cautious",
+        "emotion": "Suspicious Playfulness",
+        "imageryPrompt": "A neon-lit city street at night where shadows seem to have eyes, reflecting off wet pavement under flickering blue and magenta lights."
+      },
+      {
+        "word": "steady",
+        "emotion": "Rock-Solid Reliability",
+        "imageryPrompt": "A massive glowing pillar of light standing firm against a chaotic storm of digital raindrops in a futuristic plaza."
+      },
+      {
+        "word": "secretly",
+        "emotion": "Hidden Intimacy",
+        "imageryPrompt": "Two silhouettes sharing a quiet moment behind frosted glass, with soft pink light leaking through cracks to reveal intimate gestures inside."
+      },
+      {
+        "word": "solid",
+        "emotion": "Unbreakable Strength",
+        "imageryPrompt": "A translucent crystal structure forming the shape of a heart that shimmers brightly without cracking despite heavy impact from surrounding debris."
+      },
+      {
+        "word": "responsible",
+        "emotion": "Guardian Duty",
+        "imageryPrompt": "A futuristic knight made of holographic armor standing protectively in front of a glowing portal, scanning the environment with calm focus."
+      },
+      {
+        "word": "naughty",
+        "emotion": "Spicy Curiosity",
+        "imageryPrompt": "Glitching pixel art sprites dancing playfully around each other on a checkerboard floor that shifts colors rapidly between red and purple."
+      }
+    ]
+  },
+  "styleHint": "Late-90s futuristic R&B with hip-hop bounce, 96 BPM, sparse syncopated drums, dry punchy kick, tight snare, rubbery bassline, off-grid percussion clicks, funky Y2K swing, playful 16-bit FM synth riffs inspired by classic blue-sky 90s video game music, bright chiptune arps, quirky vocal-chop accents, stop-start rhythmic pocket, smooth confident male lead vocal, sung first-half phrases followed by intimate spoken replies, flirty call-and-response hook, glossy club-ready R&B, catchy summer energy, minimal but addictive, no direct sample, no interpolation",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:11:32.697Z"
+}

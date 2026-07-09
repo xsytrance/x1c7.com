@@ -1,0 +1,242 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "push-it-on-me",
+  "generatedAt": "2026-07-09T18:27:08.440Z",
+  "measured": {
+    "bpm": 123.05,
+    "duration": 157
+  },
+  "identity": {
+    "title": "Push It On Me",
+    "titleAlternates": [],
+    "genre": "Deep House",
+    "subGenres": [
+      "French Touch",
+      "Disco Revival"
+    ],
+    "mood": "seductive, smoky, hypnotic, sultry",
+    "styleSentence": "A moody French touch deep house track at 123 BPM featuring a filtered disco loop and warm analog bassline that drives an intimate late-night vibe, underscored by side-chained pads and glitched female vocal chops.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "sultry female vocals with chopped/glitched hooks"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/push-it-on-me/cover.jpeg",
+    "palette": [
+      "#181818",
+      "#281818",
+      "#381818",
+      "#481828",
+      "#181828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.661
+    },
+    "boundaries": [
+      15.14,
+      27.49,
+      46.63,
+      86.01,
+      109.51,
+      113.03,
+      128.64,
+      140.34
+    ],
+    "brightness": 2542.9,
+    "dynamicsDb": 19.3
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - filtered, distant vocal]\nfeel it... feel it... (feel-feel-feel it)\n\n[Verse]\nlow lights, slow move, bodies in the dark\nnobody's watchin', give in to the spark\n\n[Hook - chopped & repeated]\npush it on me (push-push-push it on me)\nkeep the feeling, keep the feeling on\n(on-on-on)\n\n[Drop - vocal stutter over bass]\nfeel-feel-feel... it on\nfeel-feel-feel... it on\n\n[Breakdown - whispered]\ndon't stop now... keep it slow\n\n[Hook]\npush it on me (push-push-push it on me)",
+    "lrc": "[Intro]\n[00:00.00] Hmm\n[00:05.00] Feel it, feel it\n[Verse 1]\n[00:30.62] Low light, slow move, bodies in the dark\n[00:34.38] No, nobody's watching, giving through the spark\n[Chorus]\n[00:38.18] Push it on me, push, push, push it on me\n[00:41.18] Keep the feeling, keep the feeling on\n[Drop]\n[00:48.88] Feel it on\n[00:52.76] Feel it on\n[Bridge]\n[00:55.94] Stop now, keep it slow\n[01:23.69] Don't stop now, keep it slow\n[01:32.66] Push it, push it, push it on\n[01:40.12] Push it on\n[Hook]\n[02:18.52] Feel it,\n[02:19.00] feel it\n[02:35.58] Don't stop now, keep it slow\n"
+  },
+  "analysis": {
+    "summary": "This deep house track captures a seductive, late-night atmosphere where intimacy and desire take center stage in a smoky club setting.",
+    "overallMood": "Sultry",
+    "themes": [
+      "Intimacy",
+      "Desire",
+      "Hypnosis",
+      "Late Night"
+    ],
+    "palette": [
+      "#1a0f12",
+      "#4e3835",
+      "#d4af6b",
+      "#7c5e59"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and whispering darkness",
+        "intensity": 0.7,
+        "colorHintHex": "#1a0f12",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Secretive closeness in shadows",
+        "intensity": 0.78,
+        "colorHintHex": "#2b1d19",
+        "start": 30.62
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Direct physical craving and surrender",
+        "intensity": 0.89,
+        "colorHintHex": "#6f3c3a",
+        "start": 38.18
+      },
+      {
+        "name": "Drop",
+        "emotion": "Hypnotic trance rhythm",
+        "intensity": 1,
+        "colorHintHex": "#d4af6b",
+        "start": 48.88
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Stuttering tension and slowing breath",
+        "intensity": 0.49,
+        "colorHintHex": "#8c2e31",
+        "start": 55.94
+      },
+      {
+        "name": "Hook",
+        "emotion": "Lingering hypnotic loop",
+        "intensity": 0.18,
+        "colorHintHex": "#4e3835",
+        "start": 138.52
+      }
+    ],
+    "keywords": [
+      {
+        "word": "dark",
+        "emotion": "Enclosing safety and mystery",
+        "imageryPrompt": "A dimly lit room with deep shadows pooling on the floor, barely visible dust motes dancing in a single beam of amber light."
+      },
+      {
+        "word": "slow",
+        "emotion": "Languid timelessness",
+        "imageryPrompt": "Slow motion footage of smoke rings rising lazily from an incense burner against a velvet curtain background."
+      },
+      {
+        "word": "push",
+        "emotion": "Urgent physical need",
+        "imageryPrompt": "A close-up perspective looking up at lips parted in anticipation, with warm skin tones glowing softly under low light."
+      },
+      {
+        "word": "feel",
+        "emotion": "Tactile sensitivity and heat",
+        "imageryPrompt": "Silky fabric brushing against bare skin in a haze of golden hour lighting that feels almost liquid to the touch."
+      },
+      {
+        "word": "stop",
+        "emotion": "Desperate plea for stillness",
+        "imageryPrompt": "A frozen moment where time seems suspended, capturing the exact second before movement resumes in a smoky haze."
+      },
+      {
+        "word": "spark",
+        "emotion": "Electric connection and ignition",
+        "imageryPrompt": "Tiny blue-white embers glowing within a dark fireplace, illuminating two faces inches apart in total darkness."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 32,
+      "mid": 34,
+      "close": 28
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0,
+        "intensity": 0.7
+      },
+      {
+        "name": "Verse 1",
+        "start": 30.62,
+        "intensity": 0.78
+      },
+      {
+        "name": "Chorus",
+        "start": 38.18,
+        "intensity": 0.89
+      },
+      {
+        "name": "Drop",
+        "start": 48.88,
+        "intensity": 1
+      },
+      {
+        "name": "Bridge",
+        "start": 55.94,
+        "intensity": 0.49
+      },
+      {
+        "name": "Hook",
+        "start": 138.52,
+        "intensity": 0.18
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 27
+      },
+      {
+        "name": "Verse 1",
+        "presence": 77
+      },
+      {
+        "name": "Chorus",
+        "presence": 67
+      },
+      {
+        "name": "Drop",
+        "presence": 56
+      },
+      {
+        "name": "Bridge",
+        "presence": 7
+      },
+      {
+        "name": "Hook",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "drums",
+        "bass",
+        "synth",
+        "other"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "push-it-on-me-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

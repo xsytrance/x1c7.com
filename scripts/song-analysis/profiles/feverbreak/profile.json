@@ -1,0 +1,235 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "feverbreak",
+  "generatedAt": "2026-07-09T18:06:06.924Z",
+  "measured": {
+    "bpm": 99.38,
+    "duration": 119.92
+  },
+  "identity": {
+    "title": "Feverbreak",
+    "titleAlternates": [],
+    "genre": "Video Game Soundtrack",
+    "subGenres": [
+      "JRPG Battle Theme",
+      "Orchestral Strategy RPG",
+      "Cinematic Orchestral"
+    ],
+    "mood": [
+      "tense",
+      "heroic",
+      "noble",
+      "urgent"
+    ],
+    "styleSentence": "A medium-tempo (99 BPM) D minor orchestral battle theme featuring tense string ostinatos, a dramatic violin lead melody supported by aggressive viola and cello rhythms, restrained French horns, sharp brass accents, and militaristic percussion including snare rolls and timpani strikes to evoke a noble yet dangerous medieval fantasy war drama.",
+    "language": "Instrumental",
+    "energy": "medium",
+    "vocalStyle": "None"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/feverbreak/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#281808",
+      "#382818",
+      "#181808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D",
+      "mode": "minor",
+      "confidence": 0.803
+    },
+    "boundaries": [
+      19.78,
+      23.03,
+      59.16,
+      68.82,
+      85.45,
+      91.67,
+      98.36,
+      111.08
+    ],
+    "brightness": 1795.3,
+    "dynamicsDb": 7.8
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Instrumental]",
+    "lrc": "[Intro]\n[Verse 1]\n[00:08.60] Thank you very much.\n[Chorus]\n[00:37.06] Thank you.\n[Bridge]\n[Drop]\n[01:10.52] Thank you.\n[Outro]\n[01:33.54] Thank you.\n"
+  },
+  "analysis": {
+    "summary": "A silent, loopable tactical battle theme where sparse lyrics express profound gratitude amidst a cinematic orchestral storm.",
+    "overallMood": "Tense Heroic Urgent",
+    "themes": [
+      "Gratitude in adversity",
+      "Medieval fantasy warfare",
+      "PS1-era orchestral nostalgia",
+      "Decisive battle tension"
+    ],
+    "palette": [
+      "#2B3A47",
+      "#C0856E",
+      "#D9A45F",
+      "#1A1F24"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory tension with sparse strings and militaristic snare preparation.",
+        "intensity": 0.72,
+        "colorHintHex": "#2B3A47",
+        "start": 8.6
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Noble resolve emerging from the minor-key ostinato foundation.",
+        "intensity": 0.85,
+        "colorHintHex": "#C0856E",
+        "start": 8.6
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Dramatic violin melody soaring over aggressive viola and cello rhythms.",
+        "intensity": 0.6,
+        "colorHintHex": "#D9A45F",
+        "start": 37.06
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Restrained French horns building pressure for the climax without modern drumming.",
+        "intensity": 0.38,
+        "colorHintHex": "#1A1F24",
+        "start": 70.52
+      },
+      {
+        "name": "Drop",
+        "emotion": "Aggressive brass accents and timpani strikes hitting peak heroic tension.",
+        "intensity": 0.36,
+        "colorHintHex": "#C0856E",
+        "start": 70.52
+      },
+      {
+        "name": "Outro",
+        "emotion": "Fading cinematic resolve returning to the loopable tactical theme.",
+        "intensity": 0.12,
+        "colorHintHex": "#2B3A47",
+        "start": 93.54
+      }
+    ],
+    "keywords": [
+      {
+        "word": "thank",
+        "emotion": "Earnest gratitude mixed with solemnity",
+        "imageryPrompt": "Close up of a weathered medieval knight's gauntleted hand pressing against a cold steel shield, rain slicking the dark fantasy armor."
+      },
+      {
+        "word": "feverbreak",
+        "emotion": "Relief after intense physical and magical exhaustion",
+        "imageryPrompt": "Steam rising from a cracked helmet as dawn light breaks through storm clouds over a ruined castle battlefield."
+      },
+      {
+        "word": "tactical",
+        "emotion": "Strategic focus amidst chaos",
+        "imageryPrompt": "A high-angle view of soldiers moving in perfect geometric formation across muddy terrain under gray skies."
+      },
+      {
+        "word": "aggressive",
+        "emotion": "Fierce combat energy and determination",
+        "imageryPrompt": "Violin strings blurred by motion as a warrior charges forward, sparks flying from clashing swords in the dim light of a cave."
+      },
+      {
+        "word": "noble",
+        "emotion": "High moral standing despite danger",
+        "imageryPrompt": "A golden crest on battered armor gleaming softly against the backdrop of burning village ruins at twilight."
+      },
+      {
+        "word": "urgent",
+        "emotion": "Time-critical stakes requiring immediate action",
+        "imageryPrompt": "Quick cuts of a marching band's snare drumsticks blurring, soldiers rushing through heavy wooden gates as dust billows behind them."
+      },
+      {
+        "word": "dangerous",
+        "emotion": "Imminent threat and peril",
+        "imageryPrompt": "Shadows lengthening across the battlefield where invisible traps lie hidden beneath fallen timber and debris."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 50,
+      "mid": 44,
+      "close": 13
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 8.6,
+        "intensity": 0.72
+      },
+      {
+        "name": "Verse 1",
+        "start": 8.6,
+        "intensity": 0.85
+      },
+      {
+        "name": "Chorus",
+        "start": 37.06,
+        "intensity": 0.6
+      },
+      {
+        "name": "Bridge",
+        "start": 70.52,
+        "intensity": 0.38
+      },
+      {
+        "name": "Drop",
+        "start": 70.52,
+        "intensity": 0.36
+      },
+      {
+        "name": "Outro",
+        "start": 93.54,
+        "intensity": 0.12
+      }
+    ],
+    "vocalPresence": null,
+    "dropMap": {
+      "cuts": [
+        [
+          44.06,
+          45.74
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "drums",
+        "perc",
+        "synth",
+        "other",
+        "keys",
+        "strings",
+        "brass"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "feverbreak-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

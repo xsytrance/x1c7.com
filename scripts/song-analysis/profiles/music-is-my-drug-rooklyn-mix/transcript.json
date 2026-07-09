@@ -1,0 +1,2486 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.7,
+      "end": 0.9,
+      "text": "Oh baby,",
+      "words": [
+        {
+          "t": 0.7,
+          "text": "Oh"
+        },
+        {
+          "t": 0.8,
+          "text": "baby,"
+        }
+      ]
+    },
+    {
+      "start": 3.25,
+      "end": 7.14,
+      "text": "turn it up now, feel that bass line run",
+      "words": [
+        {
+          "t": 3.25,
+          "text": "turn"
+        },
+        {
+          "t": 4.064,
+          "text": "it"
+        },
+        {
+          "t": 4.28,
+          "text": "up"
+        },
+        {
+          "t": 4.44,
+          "text": "now,"
+        },
+        {
+          "t": 4.86,
+          "text": "feel"
+        },
+        {
+          "t": 5.94,
+          "text": "that"
+        },
+        {
+          "t": 6.2,
+          "text": "bass"
+        },
+        {
+          "t": 6.5,
+          "text": "line"
+        },
+        {
+          "t": 6.8,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 12.36,
+      "end": 14.58,
+      "text": "Yeah, I can't get enough",
+      "words": [
+        {
+          "t": 12.36,
+          "text": "Yeah,"
+        },
+        {
+          "t": 13.0,
+          "text": "I"
+        },
+        {
+          "t": 13.696,
+          "text": "can't"
+        },
+        {
+          "t": 14.06,
+          "text": "get"
+        },
+        {
+          "t": 14.24,
+          "text": "enough"
+        }
+      ]
+    },
+    {
+      "start": 14.58,
+      "end": 15.42,
+      "text": "Come on",
+      "words": [
+        {
+          "t": 14.58,
+          "text": "Come"
+        },
+        {
+          "t": 15.22,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 35.2,
+      "end": 40.94,
+      "text": "Turn it up now, feel that bass line run",
+      "words": [
+        {
+          "t": 35.2,
+          "text": "Turn"
+        },
+        {
+          "t": 35.92,
+          "text": "it"
+        },
+        {
+          "t": 36.64,
+          "text": "up"
+        },
+        {
+          "t": 36.8,
+          "text": "now,"
+        },
+        {
+          "t": 37.26,
+          "text": "feel"
+        },
+        {
+          "t": 39.64,
+          "text": "that"
+        },
+        {
+          "t": 39.92,
+          "text": "bass"
+        },
+        {
+          "t": 40.24,
+          "text": "line"
+        },
+        {
+          "t": 40.54,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 40.94,
+      "end": 41.152,
+      "text": "Yeah,",
+      "words": [
+        {
+          "t": 40.94,
+          "text": "Yeah,"
+        }
+      ]
+    },
+    {
+      "start": 41.87,
+      "end": 43.94,
+      "text": "I can't get enough",
+      "words": [
+        {
+          "t": 41.87,
+          "text": "I"
+        },
+        {
+          "t": 43.264,
+          "text": "can't"
+        },
+        {
+          "t": 43.44,
+          "text": "get"
+        },
+        {
+          "t": 43.52,
+          "text": "enough"
+        }
+      ]
+    },
+    {
+      "start": 43.94,
+      "end": 44.74,
+      "text": "Come on",
+      "words": [
+        {
+          "t": 43.94,
+          "text": "Come"
+        },
+        {
+          "t": 44.5,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 57.504,
+      "end": 59.68,
+      "text": "First note hits my skin",
+      "words": [
+        {
+          "t": 57.504,
+          "text": "First"
+        },
+        {
+          "t": 58.144,
+          "text": "note"
+        },
+        {
+          "t": 58.74,
+          "text": "hits"
+        },
+        {
+          "t": 59.0,
+          "text": "my"
+        },
+        {
+          "t": 59.24,
+          "text": "skin"
+        }
+      ]
+    },
+    {
+      "start": 59.68,
+      "end": 59.98,
+      "text": "Turn it up now, feel that bass line run",
+      "words": [
+        {
+          "t": 59.68,
+          "text": "Turn"
+        },
+        {
+          "t": 59.98,
+          "text": "it"
+        },
+        {
+          "t": 59.98,
+          "text": "up"
+        },
+        {
+          "t": 59.98,
+          "text": "now,"
+        },
+        {
+          "t": 59.98,
+          "text": "feel"
+        },
+        {
+          "t": 59.98,
+          "text": "that"
+        },
+        {
+          "t": 59.98,
+          "text": "bass"
+        },
+        {
+          "t": 59.98,
+          "text": "line"
+        },
+        {
+          "t": 59.98,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 60.4,
+      "end": 63.56,
+      "text": "Bass rollin' through my chest",
+      "words": [
+        {
+          "t": 60.4,
+          "text": "Bass"
+        },
+        {
+          "t": 61.7,
+          "text": "rollin'"
+        },
+        {
+          "t": 62.64,
+          "text": "through"
+        },
+        {
+          "t": 62.78,
+          "text": "my"
+        },
+        {
+          "t": 63.04,
+          "text": "chest"
+        }
+      ]
+    },
+    {
+      "start": 64.86,
+      "end": 67.12,
+      "text": "Goosebumps rushin' in",
+      "words": [
+        {
+          "t": 64.86,
+          "text": "Goosebumps"
+        },
+        {
+          "t": 65.9,
+          "text": "rushin'"
+        },
+        {
+          "t": 66.8,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 67.12,
+      "end": 70.8,
+      "text": "Like I forgot the rest",
+      "words": [
+        {
+          "t": 67.12,
+          "text": "Like"
+        },
+        {
+          "t": 68.46,
+          "text": "I"
+        },
+        {
+          "t": 68.86,
+          "text": "forgot"
+        },
+        {
+          "t": 69.66,
+          "text": "the"
+        },
+        {
+          "t": 70.38,
+          "text": "rest"
+        }
+      ]
+    },
+    {
+      "start": 70.86,
+      "end": 74.4,
+      "text": "One song can start a fire",
+      "words": [
+        {
+          "t": 70.86,
+          "text": "One"
+        },
+        {
+          "t": 72.16,
+          "text": "song"
+        },
+        {
+          "t": 72.54,
+          "text": "can"
+        },
+        {
+          "t": 73.06,
+          "text": "start"
+        },
+        {
+          "t": 73.4,
+          "text": "a"
+        },
+        {
+          "t": 73.8,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 74.4,
+      "end": 77.86,
+      "text": "One hook can stop the pain",
+      "words": [
+        {
+          "t": 74.4,
+          "text": "One"
+        },
+        {
+          "t": 75.14,
+          "text": "hook"
+        },
+        {
+          "t": 76.22,
+          "text": "can"
+        },
+        {
+          "t": 76.56,
+          "text": "stop"
+        },
+        {
+          "t": 77.34,
+          "text": "the"
+        },
+        {
+          "t": 77.44,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 77.86,
+      "end": 81.78,
+      "text": "One beat can make us strangers",
+      "words": [
+        {
+          "t": 77.86,
+          "text": "One"
+        },
+        {
+          "t": 78.7,
+          "text": "beat"
+        },
+        {
+          "t": 78.98,
+          "text": "can"
+        },
+        {
+          "t": 79.54,
+          "text": "make"
+        },
+        {
+          "t": 80.72,
+          "text": "us"
+        },
+        {
+          "t": 81.04,
+          "text": "strangers"
+        }
+      ]
+    },
+    {
+      "start": 81.94,
+      "end": 85.28,
+      "text": "Then bring us back again",
+      "words": [
+        {
+          "t": 81.94,
+          "text": "Then"
+        },
+        {
+          "t": 83.04,
+          "text": "bring"
+        },
+        {
+          "t": 83.48,
+          "text": "us"
+        },
+        {
+          "t": 83.78,
+          "text": "back"
+        },
+        {
+          "t": 84.18,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 88.48,
+      "end": 89.92,
+      "text": "When the world gets heavy",
+      "words": [
+        {
+          "t": 88.48,
+          "text": "When"
+        },
+        {
+          "t": 88.6,
+          "text": "the"
+        },
+        {
+          "t": 88.78,
+          "text": "world"
+        },
+        {
+          "t": 89.14,
+          "text": "gets"
+        },
+        {
+          "t": 89.48,
+          "text": "heavy"
+        }
+      ]
+    },
+    {
+      "start": 90.0,
+      "end": 91.86,
+      "text": "Music clears my mind",
+      "words": [
+        {
+          "t": 90.0,
+          "text": "Music"
+        },
+        {
+          "t": 90.94,
+          "text": "clears"
+        },
+        {
+          "t": 91.22,
+          "text": "my"
+        },
+        {
+          "t": 91.42,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 91.86,
+      "end": 93.9,
+      "text": "When my heart gets messy",
+      "words": [
+        {
+          "t": 91.86,
+          "text": "When"
+        },
+        {
+          "t": 92.3,
+          "text": "my"
+        },
+        {
+          "t": 92.46,
+          "text": "heart"
+        },
+        {
+          "t": 92.74,
+          "text": "gets"
+        },
+        {
+          "t": 93.1,
+          "text": "messy"
+        }
+      ]
+    },
+    {
+      "start": 93.9,
+      "end": 95.4,
+      "text": "It makes the broken shine",
+      "words": [
+        {
+          "t": 93.9,
+          "text": "It"
+        },
+        {
+          "t": 94.2,
+          "text": "makes"
+        },
+        {
+          "t": 94.52,
+          "text": "the"
+        },
+        {
+          "t": 94.62,
+          "text": "broken"
+        },
+        {
+          "t": 94.96,
+          "text": "shine"
+        }
+      ]
+    },
+    {
+      "start": 95.4,
+      "end": 97.44,
+      "text": "Under all this rhythm",
+      "words": [
+        {
+          "t": 95.4,
+          "text": "Under"
+        },
+        {
+          "t": 96.1,
+          "text": "all"
+        },
+        {
+          "t": 96.36,
+          "text": "this"
+        },
+        {
+          "t": 96.8,
+          "text": "rhythm"
+        }
+      ]
+    },
+    {
+      "start": 97.44,
+      "end": 99.18,
+      "text": "Something comes alive",
+      "words": [
+        {
+          "t": 97.44,
+          "text": "Something"
+        },
+        {
+          "t": 98.3,
+          "text": "comes"
+        },
+        {
+          "t": 99.08,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 102.528,
+      "end": 103.64,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 102.528,
+          "text": "Music"
+        },
+        {
+          "t": 102.78,
+          "text": "is"
+        },
+        {
+          "t": 103.1,
+          "text": "my"
+        },
+        {
+          "t": 103.36,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 103.64,
+      "end": 106.08,
+      "text": "Feel it in my body",
+      "words": [
+        {
+          "t": 103.64,
+          "text": "Feel"
+        },
+        {
+          "t": 104.42,
+          "text": "it"
+        },
+        {
+          "t": 105.54,
+          "text": "in"
+        },
+        {
+          "t": 105.62,
+          "text": "my"
+        },
+        {
+          "t": 105.74,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 106.22,
+      "end": 108.02,
+      "text": "Feel it in my mind",
+      "words": [
+        {
+          "t": 106.22,
+          "text": "Feel"
+        },
+        {
+          "t": 107.02,
+          "text": "it"
+        },
+        {
+          "t": 107.34,
+          "text": "in"
+        },
+        {
+          "t": 107.46,
+          "text": "my"
+        },
+        {
+          "t": 107.58,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 109.76,
+      "end": 111.02,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 109.76,
+          "text": "Music"
+        },
+        {
+          "t": 110.14,
+          "text": "is"
+        },
+        {
+          "t": 110.44,
+          "text": "my"
+        },
+        {
+          "t": 110.68,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 111.02,
+      "end": 111.6,
+      "text": "Eyes",
+      "words": [
+        {
+          "t": 111.02,
+          "text": "Eyes"
+        }
+      ]
+    },
+    {
+      "start": 112.192,
+      "end": 113.36,
+      "text": "shut to the feelings",
+      "words": [
+        {
+          "t": 112.192,
+          "text": "shut"
+        },
+        {
+          "t": 112.54,
+          "text": "to"
+        },
+        {
+          "t": 112.96,
+          "text": "the"
+        },
+        {
+          "t": 113.02,
+          "text": "feelings"
+        }
+      ]
+    },
+    {
+      "start": 113.36,
+      "end": 115.28,
+      "text": "Spirit in the sky",
+      "words": [
+        {
+          "t": 113.36,
+          "text": "Spirit"
+        },
+        {
+          "t": 114.08,
+          "text": "in"
+        },
+        {
+          "t": 114.62,
+          "text": "the"
+        },
+        {
+          "t": 114.82,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 115.28,
+      "end": 116.88,
+      "text": "Don't stop now",
+      "words": [
+        {
+          "t": 115.28,
+          "text": "Don't"
+        },
+        {
+          "t": 115.82,
+          "text": "stop"
+        },
+        {
+          "t": 116.44,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 116.88,
+      "end": 118.34,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 116.88,
+          "text": "Music"
+        },
+        {
+          "t": 117.46,
+          "text": "is"
+        },
+        {
+          "t": 117.82,
+          "text": "my"
+        },
+        {
+          "t": 118.0,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 118.66,
+      "end": 119.98,
+      "text": "It gives me chills",
+      "words": [
+        {
+          "t": 118.66,
+          "text": "It"
+        },
+        {
+          "t": 119.36,
+          "text": "gives"
+        },
+        {
+          "t": 119.64,
+          "text": "me"
+        },
+        {
+          "t": 119.78,
+          "text": "chills"
+        }
+      ]
+    },
+    {
+      "start": 119.98,
+      "end": 121.02,
+      "text": "Chills inside",
+      "words": [
+        {
+          "t": 119.98,
+          "text": "Chills"
+        },
+        {
+          "t": 120.38,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 121.23,
+      "end": 123.12,
+      "text": "It gets me high",
+      "words": [
+        {
+          "t": 121.23,
+          "text": "It"
+        },
+        {
+          "t": 121.68,
+          "text": "gets"
+        },
+        {
+          "t": 122.0,
+          "text": "me"
+        },
+        {
+          "t": 122.54,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 124.96,
+      "end": 125.42,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 124.96,
+          "text": "I'm"
+        },
+        {
+          "t": 125.06,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 126.37,
+      "end": 127.3,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 126.37,
+          "text": "I'm"
+        },
+        {
+          "t": 126.82,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 128.23,
+      "end": 129.08,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 128.23,
+          "text": "I'm"
+        },
+        {
+          "t": 128.68,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 130.35,
+      "end": 132.28,
+      "text": "Da da da da da da",
+      "words": [
+        {
+          "t": 130.35,
+          "text": "Da"
+        },
+        {
+          "t": 130.8,
+          "text": "da"
+        },
+        {
+          "t": 131.264,
+          "text": "da"
+        },
+        {
+          "t": 131.38,
+          "text": "da"
+        },
+        {
+          "t": 131.8,
+          "text": "da"
+        },
+        {
+          "t": 132.16,
+          "text": "da"
+        }
+      ]
+    },
+    {
+      "start": 134.4,
+      "end": 135.3,
+      "text": "Oh!",
+      "words": [
+        {
+          "t": 134.4,
+          "text": "Oh!"
+        }
+      ]
+    },
+    {
+      "start": 140.8,
+      "end": 141.16,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 140.8,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 142.62,
+      "end": 143.52,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 142.62,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 143.82,
+      "end": 143.88,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 143.82,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 145.46,
+      "end": 145.56,
+      "text": "It",
+      "words": [
+        {
+          "t": 145.46,
+          "text": "It"
+        }
+      ]
+    },
+    {
+      "start": 146.368,
+      "end": 147.76,
+      "text": "makes me laugh in color",
+      "words": [
+        {
+          "t": 146.368,
+          "text": "makes"
+        },
+        {
+          "t": 146.68,
+          "text": "me"
+        },
+        {
+          "t": 146.92,
+          "text": "laugh"
+        },
+        {
+          "t": 147.16,
+          "text": "in"
+        },
+        {
+          "t": 147.36,
+          "text": "color"
+        }
+      ]
+    },
+    {
+      "start": 147.76,
+      "end": 149.44,
+      "text": "Makes me cry in blue",
+      "words": [
+        {
+          "t": 147.76,
+          "text": "Makes"
+        },
+        {
+          "t": 148.28,
+          "text": "me"
+        },
+        {
+          "t": 148.64,
+          "text": "cry"
+        },
+        {
+          "t": 148.94,
+          "text": "in"
+        },
+        {
+          "t": 149.2,
+          "text": "blue"
+        }
+      ]
+    },
+    {
+      "start": 149.44,
+      "end": 151.38,
+      "text": "Makes me dance with memory",
+      "words": [
+        {
+          "t": 149.44,
+          "text": "Makes"
+        },
+        {
+          "t": 149.92,
+          "text": "me"
+        },
+        {
+          "t": 150.08,
+          "text": "dance"
+        },
+        {
+          "t": 150.62,
+          "text": "with"
+        },
+        {
+          "t": 151.02,
+          "text": "memory"
+        }
+      ]
+    },
+    {
+      "start": 151.38,
+      "end": 153.08,
+      "text": "I thought I never knew",
+      "words": [
+        {
+          "t": 151.38,
+          "text": "I"
+        },
+        {
+          "t": 151.88,
+          "text": "thought"
+        },
+        {
+          "t": 152.1,
+          "text": "I"
+        },
+        {
+          "t": 152.38,
+          "text": "never"
+        },
+        {
+          "t": 152.68,
+          "text": "knew"
+        }
+      ]
+    },
+    {
+      "start": 153.08,
+      "end": 155.14,
+      "text": "Turns pain into motion",
+      "words": [
+        {
+          "t": 153.08,
+          "text": "Turns"
+        },
+        {
+          "t": 153.34,
+          "text": "pain"
+        },
+        {
+          "t": 153.8,
+          "text": "into"
+        },
+        {
+          "t": 154.56,
+          "text": "motion"
+        }
+      ]
+    },
+    {
+      "start": 155.14,
+      "end": 156.82,
+      "text": "Turns silence into gold",
+      "words": [
+        {
+          "t": 155.14,
+          "text": "Turns"
+        },
+        {
+          "t": 155.54,
+          "text": "silence"
+        },
+        {
+          "t": 156.08,
+          "text": "into"
+        },
+        {
+          "t": 156.4,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 156.82,
+      "end": 158.44,
+      "text": "Makes a room of strangers",
+      "words": [
+        {
+          "t": 156.82,
+          "text": "Makes"
+        },
+        {
+          "t": 157.26,
+          "text": "a"
+        },
+        {
+          "t": 157.4,
+          "text": "room"
+        },
+        {
+          "t": 157.72,
+          "text": "of"
+        },
+        {
+          "t": 157.94,
+          "text": "strangers"
+        }
+      ]
+    },
+    {
+      "start": 158.44,
+      "end": 160.68,
+      "text": "Feel like one big soul",
+      "words": [
+        {
+          "t": 158.44,
+          "text": "Feel"
+        },
+        {
+          "t": 159.18,
+          "text": "like"
+        },
+        {
+          "t": 159.5,
+          "text": "one"
+        },
+        {
+          "t": 159.76,
+          "text": "big"
+        },
+        {
+          "t": 160.18,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 160.68,
+      "end": 161.54,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 160.68,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 161.68,
+      "end": 163.32,
+      "text": "When the night gets lonely",
+      "words": [
+        {
+          "t": 161.68,
+          "text": "When"
+        },
+        {
+          "t": 161.94,
+          "text": "the"
+        },
+        {
+          "t": 162.1,
+          "text": "night"
+        },
+        {
+          "t": 162.32,
+          "text": "gets"
+        },
+        {
+          "t": 162.68,
+          "text": "lonely"
+        }
+      ]
+    },
+    {
+      "start": 163.32,
+      "end": 165.06,
+      "text": "Music pulls me close",
+      "words": [
+        {
+          "t": 163.32,
+          "text": "Music"
+        },
+        {
+          "t": 164.12,
+          "text": "pulls"
+        },
+        {
+          "t": 164.48,
+          "text": "me"
+        },
+        {
+          "t": 164.7,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 165.06,
+      "end": 167.18,
+      "text": "When the road gets crazy",
+      "words": [
+        {
+          "t": 165.06,
+          "text": "When"
+        },
+        {
+          "t": 165.36,
+          "text": "the"
+        },
+        {
+          "t": 165.64,
+          "text": "road"
+        },
+        {
+          "t": 165.96,
+          "text": "gets"
+        },
+        {
+          "t": 166.4,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 167.18,
+      "end": 168.8,
+      "text": "The high I need the most",
+      "words": [
+        {
+          "t": 167.18,
+          "text": "The"
+        },
+        {
+          "t": 167.56,
+          "text": "high"
+        },
+        {
+          "t": 167.78,
+          "text": "I"
+        },
+        {
+          "t": 167.96,
+          "text": "need"
+        },
+        {
+          "t": 168.24,
+          "text": "the"
+        },
+        {
+          "t": 168.38,
+          "text": "most"
+        }
+      ]
+    },
+    {
+      "start": 168.8,
+      "end": 170.54,
+      "text": "Under all this rhythm",
+      "words": [
+        {
+          "t": 168.8,
+          "text": "Under"
+        },
+        {
+          "t": 169.38,
+          "text": "all"
+        },
+        {
+          "t": 169.66,
+          "text": "this"
+        },
+        {
+          "t": 170.06,
+          "text": "rhythm"
+        }
+      ]
+    },
+    {
+      "start": 170.54,
+      "end": 172.48,
+      "text": "Something comes alive",
+      "words": [
+        {
+          "t": 170.54,
+          "text": "Something"
+        },
+        {
+          "t": 171.52,
+          "text": "comes"
+        },
+        {
+          "t": 172.38,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 175.808,
+      "end": 176.94,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 175.808,
+          "text": "Music"
+        },
+        {
+          "t": 176.08,
+          "text": "is"
+        },
+        {
+          "t": 176.38,
+          "text": "my"
+        },
+        {
+          "t": 176.68,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 176.94,
+      "end": 177.52,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 176.94,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 178.272,
+      "end": 179.32,
+      "text": "Feel it in my body",
+      "words": [
+        {
+          "t": 178.272,
+          "text": "Feel"
+        },
+        {
+          "t": 178.54,
+          "text": "it"
+        },
+        {
+          "t": 178.82,
+          "text": "in"
+        },
+        {
+          "t": 178.92,
+          "text": "my"
+        },
+        {
+          "t": 179.0,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 179.38,
+      "end": 181.3,
+      "text": "Feel it in my mind",
+      "words": [
+        {
+          "t": 179.38,
+          "text": "Feel"
+        },
+        {
+          "t": 180.28,
+          "text": "it"
+        },
+        {
+          "t": 180.64,
+          "text": "in"
+        },
+        {
+          "t": 180.72,
+          "text": "my"
+        },
+        {
+          "t": 180.84,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 183.072,
+      "end": 184.26,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 183.072,
+          "text": "Music"
+        },
+        {
+          "t": 183.42,
+          "text": "is"
+        },
+        {
+          "t": 183.72,
+          "text": "my"
+        },
+        {
+          "t": 183.98,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 184.26,
+      "end": 186.64,
+      "text": "Eyes shut to the feelings",
+      "words": [
+        {
+          "t": 184.26,
+          "text": "Eyes"
+        },
+        {
+          "t": 184.9,
+          "text": "shut"
+        },
+        {
+          "t": 186.12,
+          "text": "to"
+        },
+        {
+          "t": 186.22,
+          "text": "the"
+        },
+        {
+          "t": 186.32,
+          "text": "feelings"
+        }
+      ]
+    },
+    {
+      "start": 186.9,
+      "end": 188.58,
+      "text": "Spirit in the sky",
+      "words": [
+        {
+          "t": 186.9,
+          "text": "Spirit"
+        },
+        {
+          "t": 187.36,
+          "text": "in"
+        },
+        {
+          "t": 187.88,
+          "text": "the"
+        },
+        {
+          "t": 188.06,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 188.58,
+      "end": 190.16,
+      "text": "Don't stop now",
+      "words": [
+        {
+          "t": 188.58,
+          "text": "Don't"
+        },
+        {
+          "t": 189.06,
+          "text": "stop"
+        },
+        {
+          "t": 189.72,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 190.16,
+      "end": 191.68,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 190.16,
+          "text": "Music"
+        },
+        {
+          "t": 190.76,
+          "text": "is"
+        },
+        {
+          "t": 191.04,
+          "text": "my"
+        },
+        {
+          "t": 191.32,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 192.02,
+      "end": 194.26,
+      "text": "It gives me chills inside",
+      "words": [
+        {
+          "t": 192.02,
+          "text": "It"
+        },
+        {
+          "t": 192.48,
+          "text": "gives"
+        },
+        {
+          "t": 192.94,
+          "text": "me"
+        },
+        {
+          "t": 193.08,
+          "text": "chills"
+        },
+        {
+          "t": 193.6,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 194.26,
+      "end": 196.34,
+      "text": "It gets me high",
+      "words": [
+        {
+          "t": 194.26,
+          "text": "It"
+        },
+        {
+          "t": 194.96,
+          "text": "gets"
+        },
+        {
+          "t": 195.34,
+          "text": "me"
+        },
+        {
+          "t": 195.86,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 198.08,
+      "end": 198.432,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 198.08,
+          "text": "I'm"
+        },
+        {
+          "t": 198.3,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 199.872,
+      "end": 200.68,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 199.872,
+          "text": "I'm"
+        },
+        {
+          "t": 200.12,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 201.792,
+      "end": 202.08,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 201.792,
+          "text": "I'm"
+        },
+        {
+          "t": 201.94,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 205.54,
+      "end": 207.18,
+      "text": "It's the laugh after crying",
+      "words": [
+        {
+          "t": 205.54,
+          "text": "It's"
+        },
+        {
+          "t": 206.0,
+          "text": "the"
+        },
+        {
+          "t": 206.08,
+          "text": "laugh"
+        },
+        {
+          "t": 206.34,
+          "text": "after"
+        },
+        {
+          "t": 206.68,
+          "text": "crying"
+        }
+      ]
+    },
+    {
+      "start": 207.32,
+      "end": 209.16,
+      "text": "It's the scream in the dark",
+      "words": [
+        {
+          "t": 207.32,
+          "text": "It's"
+        },
+        {
+          "t": 207.78,
+          "text": "the"
+        },
+        {
+          "t": 207.82,
+          "text": "scream"
+        },
+        {
+          "t": 208.22,
+          "text": "in"
+        },
+        {
+          "t": 208.48,
+          "text": "the"
+        },
+        {
+          "t": 208.66,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 209.16,
+      "end": 210.92,
+      "text": "It's the hands in the air",
+      "words": [
+        {
+          "t": 209.16,
+          "text": "It's"
+        },
+        {
+          "t": 209.58,
+          "text": "the"
+        },
+        {
+          "t": 209.68,
+          "text": "hands"
+        },
+        {
+          "t": 210.04,
+          "text": "in"
+        },
+        {
+          "t": 210.34,
+          "text": "the"
+        },
+        {
+          "t": 210.48,
+          "text": "air"
+        }
+      ]
+    },
+    {
+      "start": 210.92,
+      "end": 212.84,
+      "text": "It's the beat in my heart",
+      "words": [
+        {
+          "t": 210.92,
+          "text": "It's"
+        },
+        {
+          "t": 211.44,
+          "text": "the"
+        },
+        {
+          "t": 211.48,
+          "text": "beat"
+        },
+        {
+          "t": 211.82,
+          "text": "in"
+        },
+        {
+          "t": 212.1,
+          "text": "my"
+        },
+        {
+          "t": 212.3,
+          "text": "heart"
+        }
+      ]
+    },
+    {
+      "start": 212.84,
+      "end": 213.62,
+      "text": "Every drop",
+      "words": [
+        {
+          "t": 212.84,
+          "text": "Every"
+        },
+        {
+          "t": 213.32,
+          "text": "drop"
+        }
+      ]
+    },
+    {
+      "start": 213.62,
+      "end": 214.54,
+      "text": "Every drum",
+      "words": [
+        {
+          "t": 213.62,
+          "text": "Every"
+        },
+        {
+          "t": 214.2,
+          "text": "drum"
+        }
+      ]
+    },
+    {
+      "start": 214.54,
+      "end": 215.5,
+      "text": "Every voice",
+      "words": [
+        {
+          "t": 214.54,
+          "text": "Every"
+        },
+        {
+          "t": 215.12,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 215.72,
+      "end": 216.3,
+      "text": "Every one",
+      "words": [
+        {
+          "t": 215.72,
+          "text": "Every"
+        },
+        {
+          "t": 216.06,
+          "text": "one"
+        }
+      ]
+    },
+    {
+      "start": 216.3,
+      "end": 218.12,
+      "text": "When the bass line comes",
+      "words": [
+        {
+          "t": 216.3,
+          "text": "When"
+        },
+        {
+          "t": 216.88,
+          "text": "the"
+        },
+        {
+          "t": 217.04,
+          "text": "bass"
+        },
+        {
+          "t": 217.3,
+          "text": "line"
+        },
+        {
+          "t": 217.62,
+          "text": "comes"
+        }
+      ]
+    },
+    {
+      "start": 218.12,
+      "end": 219.78,
+      "text": "We become the song",
+      "words": [
+        {
+          "t": 218.12,
+          "text": "We"
+        },
+        {
+          "t": 218.54,
+          "text": "become"
+        },
+        {
+          "t": 218.92,
+          "text": "the"
+        },
+        {
+          "t": 219.48,
+          "text": "song"
+        }
+      ]
+    },
+    {
+      "start": 227.64,
+      "end": 228.32,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 227.64,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 230.6,
+      "end": 231.28,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 230.6,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 231.8,
+      "end": 232.128,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 231.8,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 232.58,
+      "end": 233.088,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 232.58,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 233.1,
+      "end": 233.44,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 233.1,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 233.94,
+      "end": 234.02,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 233.94,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 234.02,
+      "end": 234.4,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 234.02,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 234.66,
+      "end": 234.82,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 234.66,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 234.82,
+      "end": 234.88,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 234.82,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 234.88,
+      "end": 234.92,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 234.88,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 235.06,
+      "end": 235.18,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 235.06,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 235.18,
+      "end": 235.26,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 235.18,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 235.26,
+      "end": 235.44,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 235.26,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 235.44,
+      "end": 235.5,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 235.44,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 235.5,
+      "end": 235.744,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 235.5,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 236.4,
+      "end": 236.9,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 236.4,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 237.08,
+      "end": 237.24,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 237.08,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 237.24,
+      "end": 237.6,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 237.24,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 237.66,
+      "end": 237.68,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 237.66,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 237.68,
+      "end": 239.06,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 237.68,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 241.92,
+      "end": 242.8,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 241.92,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 244.72,
+      "end": 245.36,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 244.72,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 246.06,
+      "end": 246.94,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 246.06,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 247.4,
+      "end": 247.64,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 247.4,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 247.64,
+      "end": 247.8,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 247.64,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 247.8,
+      "end": 248.3,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 247.8,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 248.3,
+      "end": 248.36,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 248.3,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 248.36,
+      "end": 250.22,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 248.36,
+          "text": "Music"
+        },
+        {
+          "t": 249.1,
+          "text": "is"
+        },
+        {
+          "t": 249.7,
+          "text": "my"
+        },
+        {
+          "t": 249.9,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 250.22,
+      "end": 252.14,
+      "text": "Feel it in my body",
+      "words": [
+        {
+          "t": 250.22,
+          "text": "Feel"
+        },
+        {
+          "t": 250.82,
+          "text": "it"
+        },
+        {
+          "t": 251.24,
+          "text": "in"
+        },
+        {
+          "t": 251.42,
+          "text": "my"
+        },
+        {
+          "t": 251.66,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 252.14,
+      "end": 253.94,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 252.14,
+          "text": "Music"
+        },
+        {
+          "t": 253.04,
+          "text": "is"
+        },
+        {
+          "t": 253.32,
+          "text": "my"
+        },
+        {
+          "t": 253.58,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 253.94,
+      "end": 255.84,
+      "text": "Feel it in my mind",
+      "words": [
+        {
+          "t": 253.94,
+          "text": "Feel"
+        },
+        {
+          "t": 254.56,
+          "text": "it"
+        },
+        {
+          "t": 254.94,
+          "text": "in"
+        },
+        {
+          "t": 255.16,
+          "text": "my"
+        },
+        {
+          "t": 255.38,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 256.288,
+      "end": 257.58,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 256.288,
+          "text": "Music"
+        },
+        {
+          "t": 256.7,
+          "text": "is"
+        },
+        {
+          "t": 257.088,
+          "text": "my"
+        },
+        {
+          "t": 257.24,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 257.58,
+      "end": 259.96,
+      "text": "Eyes shut to the feelings",
+      "words": [
+        {
+          "t": 257.58,
+          "text": "Eyes"
+        },
+        {
+          "t": 258.176,
+          "text": "shut"
+        },
+        {
+          "t": 258.62,
+          "text": "to"
+        },
+        {
+          "t": 258.944,
+          "text": "the"
+        },
+        {
+          "t": 259.14,
+          "text": "feelings"
+        }
+      ]
+    },
+    {
+      "start": 260.8,
+      "end": 262.84,
+      "text": "Spirit in the sky",
+      "words": [
+        {
+          "t": 260.8,
+          "text": "Spirit"
+        },
+        {
+          "t": 261.28,
+          "text": "in"
+        },
+        {
+          "t": 262.3,
+          "text": "the"
+        },
+        {
+          "t": 262.5,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 263.4,
+      "end": 264.96,
+      "text": "Music is my drug",
+      "words": [
+        {
+          "t": 263.4,
+          "text": "Music"
+        },
+        {
+          "t": 264.06,
+          "text": "is"
+        },
+        {
+          "t": 264.34,
+          "text": "my"
+        },
+        {
+          "t": 264.54,
+          "text": "drug"
+        }
+      ]
+    },
+    {
+      "start": 264.96,
+      "end": 265.248,
+      "text": "Woo!",
+      "words": [
+        {
+          "t": 264.96,
+          "text": "Woo!"
+        }
+      ]
+    },
+    {
+      "start": 267.68,
+      "end": 268.864,
+      "text": "It gets me high",
+      "words": [
+        {
+          "t": 267.68,
+          "text": "It"
+        },
+        {
+          "t": 267.78,
+          "text": "gets"
+        },
+        {
+          "t": 268.08,
+          "text": "me"
+        },
+        {
+          "t": 268.24,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 277.64,
+      "end": 279.54,
+      "text": "Music is my job",
+      "words": [
+        {
+          "t": 277.64,
+          "text": "Music"
+        },
+        {
+          "t": 278.496,
+          "text": "is"
+        },
+        {
+          "t": 279.02,
+          "text": "my"
+        },
+        {
+          "t": 279.28,
+          "text": "job"
+        }
+      ]
+    },
+    {
+      "start": 279.54,
+      "end": 280.56,
+      "text": "Turn it up",
+      "words": [
+        {
+          "t": 279.54,
+          "text": "Turn"
+        },
+        {
+          "t": 280.12,
+          "text": "it"
+        },
+        {
+          "t": 280.3,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 283.64,
+      "end": 286.88,
+      "text": "Music is my job",
+      "words": [
+        {
+          "t": 283.64,
+          "text": "Music"
+        },
+        {
+          "t": 284.864,
+          "text": "is"
+        },
+        {
+          "t": 285.504,
+          "text": "my"
+        },
+        {
+          "t": 286.42,
+          "text": "job"
+        }
+      ]
+    }
+  ]
+}

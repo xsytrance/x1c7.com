@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 24,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "INTIMATE RHYTHM"
+   },
+   "why": "Opening drum-cut window (0-9s) and intro groove isolation to establish the dark nostalgia "
+  },
+  {
+   "start": 58,
+   "end": 83,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "guitar"
+    ],
+    "label": "DEFENSIVE GROOVE"
+   },
+   "why": "Pre-Chorus tension building, isolating bass and guitar to underscore the defensive resolve"
+  }
+ ],
+ "words": {
+  "respuestas": "shatter",
+  "herida": "bleed",
+  "silencio": "freeze",
+  "vuelve": "redact",
+  "paz": "bloom"
+ }
+}

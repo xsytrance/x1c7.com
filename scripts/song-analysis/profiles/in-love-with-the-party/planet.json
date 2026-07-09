@@ -1,0 +1,109 @@
+[
+  {
+    "id": "in-love-with-the-party",
+    "planet": {
+      "analysis": {
+        "summary": "This mid-tempo Pop House track explores an intimate connection found within a bustling party atmosphere, where the music acts as a heartbeat syncing two souls until dawn.",
+        "overallMood": "Euphoric",
+        "themes": [
+          "Intimacy amidst crowds",
+          "Nighttime escapism",
+          "Sensory warmth (synth pads/guitar)",
+          "Enduring connection"
+        ],
+        "palette": [
+          "#1A2634",
+          "#E8D5B7",
+          "#FF9F00",
+          "#C0392B"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipation and warmth",
+            "intensity": 0.4,
+            "colorHint": "#1a2634",
+            "start": 0
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Relaxed groove and confidence",
+            "intensity": 0.5,
+            "colorHint": "#e8d5b7",
+            "start": 0
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Climactic warmth with fading rhythm",
+            "intensity": 0.95,
+            "colorHint": "#ffa342",
+            "start": 15.65
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Soft vulnerability and acoustic intimacy",
+            "intensity": 0.35,
+            "colorHint": "#c0392b",
+            "start": 29.88
+          },
+          {
+            "name": "Drop",
+            "emotion": "Emotional lift with rhythmic drive",
+            "intensity": 0.85,
+            "colorHint": "#ff6f00",
+            "start": 44.76
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Deepened nostalgia and flow",
+            "intensity": 0.6,
+            "colorHint": "#e8d5b7",
+            "start": 59.04
+          },
+          {
+            "name": "Outro",
+            "emotion": "Quiet acceptance and lingering love",
+            "intensity": 0.45,
+            "colorHint": "#1f386b",
+            "start": 117.86
+          }
+        ],
+        "keywords": [
+          {
+            "word": "heartbeat",
+            "emotion": "Rhythmic pulse of connection",
+            "imageryPrompt": "Close up macro shot of a glowing, warm orange digital heartbeat waveform pulsing against a dark blue background."
+          },
+          {
+            "word": "lowlights",
+            "emotion": "Soft ambient warmth",
+            "imageryPrompt": "Dimly lit room with soft golden light filtering through shadows creating smooth gradients on skin and fabric textures."
+          },
+          {
+            "word": "wave",
+            "emotion": "Unifying flow of bodies",
+            "imageryPrompt": "A crowd of silhouettes moving in perfect unison like a single fluid body under moonlight, rippling with energy."
+          },
+          {
+            "word": "heat wave",
+            "emotion": "Intense sensory sensation",
+            "imageryPrompt": "Heat haze distorting city lights into shimmering golden streaks above a dancing crowd at night."
+          },
+          {
+            "word": "whisper",
+            "emotion": "Secret promise in the dark",
+            "imageryPrompt": "Two figures standing close together, one leaning towards the other's ear, illuminated by a single soft spotlight against darkness."
+          },
+          {
+            "word": "crispier",
+            "emotion": "Clarity of dawn arrival",
+            "imageryPrompt": "Pale blue morning light breaking over a city skyline with sharp, clear details replacing the previous haze."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

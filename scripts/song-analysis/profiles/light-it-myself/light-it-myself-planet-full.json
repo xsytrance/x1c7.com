@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "summary": "A cathartic anthem about transitioning from relying on a toxic 'fire' in another person to finding internal resilience and self-sufficiency through raw acceptance of one's own pain.",
+    "overallMood": "Cathartic Resilience",
+    "themes": [
+      "Self-Sufficiency",
+      "Toxic Relationships",
+      "Emotional Healing",
+      "Identity Reclamation",
+      "Acceptance of Silence",
+      "Inner Strength"
+    ],
+    "palette": [
+      "#2b1d0e",
+      "#c4a375",
+      "#8fbcbb",
+      "#ff6f69"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Vulnerable, trembling isolation with raw rain ambience",
+        "intensity": 0.75,
+        "colorHintHex": "#4a3b38",
+        "start": 0.65
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Anxious desperation and the struggle between wanting to call vs. knowing better",
+        "intensity": 0.85,
+        "colorHintHex": "#6e5c4f",
+        "start": 5.66
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive release of pain transforming into a defiant declaration of self-illumination",
+        "intensity": 0.75,
+        "colorHintHex": "#ff3d2e",
+        "start": 57.98
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Intimate realization and the quiet acceptance that silence is no longer scary",
+        "intensity": 0.46,
+        "colorHintHex": "#8fa1b9",
+        "start": 175.48
+      },
+      {
+        "name": "Drop",
+        "emotion": "Triumphant self-empowerment with polished sheen over gritty emotion",
+        "intensity": 0.33,
+        "colorHintHex": "#3ec4d6",
+        "start": 185.13
+      },
+      {
+        "name": "Outro",
+        "emotion": "Peaceful resolution and the gentle warmth of a candle lit by oneself",
+        "intensity": 0.17,
+        "colorHintHex": "#e8f1eb",
+        "start": 304.38
+      }
+    ],
+    "keywords": [
+      {
+        "word": "bleeding",
+        "emotion": "Deep internal wound and vulnerability",
+        "imageryPrompt": "Close-up of a raw human hand with visible cracks in the skin, warm blood seeping onto cold concrete floor, cinematic lighting highlighting the texture of pain."
+      },
+      {
+        "word": "fire",
+        "emotion": "Transformative energy shifting from external dependency to internal source",
+        "imageryPrompt": "A golden matchstick striking against a dark stormy night sky, illuminating a single tear track on a cheek, the flame reflecting in wet pavement."
+      },
+      {
+        "word": "darkness",
+        "emotion": "Safe haven and acceptance rather than fear",
+        "imageryPrompt": "A cozy room filled with thick velvet shadows where dust motes dance peacefully in moonlight, no sources of danger but a sense of restful enclosure."
+      },
+      {
+        "word": "alone",
+        "emotion": "Solitude redefined as strength rather than loneliness",
+        "imageryPrompt": "A solitary figure standing on an open cliff edge watching the sunrise, back to camera, wearing oversized hoodie, posture relaxed and confident despite isolation."
+      },
+      {
+        "word": "matches",
+        "emotion": "Tools of destruction turned into tools for creation",
+        "imageryPrompt": "A scattered pile of wooden matches lying on a scratched metal surface next to an unlit candle, rain dripping slowly onto the wood grain."
+      },
+      {
+        "word": "quiet",
+        "emotion": "The absence of noise as a new form of peace and clarity",
+        "imageryPrompt": "A still life composition featuring a glass vase with dried flowers reflecting nothingness, soft diffused light filtering through blinds creating calm horizontal lines."
+      },
+      {
+        "word": "burning",
+        "emotion": "The painful process required for rebirth and awareness",
+        "imageryPrompt": "Ember-like particles floating upwards in slow motion against a black void, each ember glowing with an inner blue-white light representing transformation."
+      }
+    ]
+  },
+  "styleHint": "Emo K-pop alt-rock response anthem, 84 BPM half-time with 168 BPM double-time trap hats, dark minor key, cinematic and cathartic. Native-fluent Korean male lead with a balanced 50/50 Korean-English delivery — verses and emotional lines sung in natural Korean, English reserved for the signature hook. Raw, cracked, melodic, instantly singable. Open on muted electric guitar from the very first second — no piano anywhere — with rain ambience, distant phone buzz, and a trembling breathy voicemail vocal. Distorted guitar enters early and stays. Build into glossy guitars, punchy live snare, deep 808 sub, crisp K-pop trap percussion, stadium emo singalong chorus, layered \"혼자\" gang vocals, faint female ghost vocal in the bridge. Verses are vulnerable melodic rap drifting into soaring sung hooks; chorus explosive but hopeful — acceptance, not begging. Polished K-pop sheen over emo-rock grit. Dynamics: raw intro, tense verse, pre-chorus lift, massive bilingual chorus, stripped duet bridge",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:15:56.767Z"
+}

@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
+    "overallMood": "Energetic and Playful",
+    "themes": [
+      "Futuristic Romance",
+      "Gaming Nostalgia",
+      "High-Speed Pursuit",
+      "Unstoppable Love"
+    ],
+    "palette": [
+      "#FFD700",
+      "#4B0082",
+      "#C91E36",
+      "#FFEBCD"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Curious and Anticipatory",
+        "intensity": 0.85,
+        "colorHintHex": "#FFD700",
+        "start": 1.62
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Focused and Accelerating",
+        "intensity": 0.7,
+        "colorHintHex": "#4B0082",
+        "start": 20.16
+      },
+      {
+        "name": "Pre-Hook",
+        "emotion": "Urgent and Electric",
+        "intensity": 0.86,
+        "colorHintHex": "#C91E36",
+        "start": 37.64
+      },
+      {
+        "name": "Hook",
+        "emotion": "Triumphant and Euphoric",
+        "intensity": 0.76,
+        "colorHintHex": "#FFEBCD",
+        "start": 45.64
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Smooth and Confident",
+        "intensity": 0.3,
+        "colorHintHex": "#4B0082",
+        "start": 95.72
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Explosive Release",
+        "intensity": 0.28,
+        "colorHintHex": "#FFD700",
+        "start": 104.54
+      },
+      {
+        "name": "Final Hook",
+        "emotion": "Victorious and Joyful",
+        "intensity": 0.25,
+        "colorHintHex": "#FFEBCD",
+        "start": 108.3
+      }
+    ],
+    "keywords": [
+      {
+        "word": "fast",
+        "emotion": "Urgent Thrill",
+        "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+      },
+      {
+        "word": "boost",
+        "emotion": "Empowered Lift",
+        "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+      },
+      {
+        "word": "caught",
+        "emotion": "Playful Fearlessness",
+        "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
+      },
+      {
+        "word": "lights",
+        "emotion": "Vibrant Wonder",
+        "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
+      },
+      {
+        "word": "level",
+        "emotion": "Achievement Joy",
+        "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+      },
+      {
+        "word": "invincible",
+        "emotion": "Confident Power",
+        "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+      }
+    ]
+  },
+  "styleHint": "High-energy late-90s futuristic R&B/hip-hop summer jam with strong Sega Genesis / Sonic 1 & 2 inspiration: bright FM synth leads, funky bassline, bouncy New Jack swing drums, crisp snares, syncopated percussion, arpeggiated game-like synth runs, sparkling chord stabs, and fast melodic hooks. No camera clicks, no baby sample. Signature sound: ring-collect sparkle, spring bounce, and quick “level up” synth flourish used as rhythmic ear candy. Smooth confident male R&B lead with catchy harmonies, flirty swagger, danceable hip-hop cadence, and instant hook in the first 5 seconds. Tempo around 116 BPM. Runtime around 3:00. Summer, energetic, playful, romantic, nostalgic but modern, radio-ready.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:05:32.236Z"
+}

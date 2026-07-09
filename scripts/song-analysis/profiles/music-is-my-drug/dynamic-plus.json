@@ -1,0 +1,39 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "lead"
+    ],
+    "label": "HYPNOTIC LEAD & SYNTH"
+   },
+   "why": ""
+  },
+  {
+   "start": 60,
+   "end": 85,
+   "reactor": "fireworks",
+   "why": "The first chorus and drop represent the peak euphoria; a fireworks reactor captures the ex"
+  },
+  {
+   "start": 135,
+   "end": 160,
+   "stemSpot": {
+    "solo": [
+     "other"
+    ],
+    "label": "ATMOSPHERIC CLOUDS"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "thank": "bloom",
+  "drug": "shatter",
+  "cathartic": "dissolve"
+ }
+}

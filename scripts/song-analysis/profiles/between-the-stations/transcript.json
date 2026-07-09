@@ -1,0 +1,2826 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 3.48,
+      "end": 4.2,
+      "text": "Oh,",
+      "words": [
+        {
+          "t": 3.48,
+          "text": "Oh,"
+        }
+      ]
+    },
+    {
+      "start": 4.32,
+      "end": 4.62,
+      "text": "oh,",
+      "words": [
+        {
+          "t": 4.32,
+          "text": "oh,"
+        }
+      ]
+    },
+    {
+      "start": 4.62,
+      "end": 4.8,
+      "text": "oh,",
+      "words": [
+        {
+          "t": 4.62,
+          "text": "oh,"
+        }
+      ]
+    },
+    {
+      "start": 5.2,
+      "end": 5.4,
+      "text": "stops,",
+      "words": [
+        {
+          "t": 5.2,
+          "text": "stops,"
+        }
+      ]
+    },
+    {
+      "start": 5.68,
+      "end": 6.74,
+      "text": "new eyes,",
+      "words": [
+        {
+          "t": 5.68,
+          "text": "new"
+        },
+        {
+          "t": 6.28,
+          "text": "eyes,"
+        }
+      ]
+    },
+    {
+      "start": 6.96,
+      "end": 7.94,
+      "text": "blue light,",
+      "words": [
+        {
+          "t": 6.96,
+          "text": "blue"
+        },
+        {
+          "t": 7.52,
+          "text": "light,"
+        }
+      ]
+    },
+    {
+      "start": 8.04,
+      "end": 9.08,
+      "text": "passing by,",
+      "words": [
+        {
+          "t": 8.04,
+          "text": "passing"
+        },
+        {
+          "t": 8.68,
+          "text": "by,"
+        }
+      ]
+    },
+    {
+      "start": 9.36,
+      "end": 9.98,
+      "text": "window,",
+      "words": [
+        {
+          "t": 9.36,
+          "text": "window,"
+        }
+      ]
+    },
+    {
+      "start": 10.1,
+      "end": 10.32,
+      "text": "black,",
+      "words": [
+        {
+          "t": 10.1,
+          "text": "black,"
+        }
+      ]
+    },
+    {
+      "start": 10.36,
+      "end": 11.54,
+      "text": "chasing glass,",
+      "words": [
+        {
+          "t": 10.36,
+          "text": "chasing"
+        },
+        {
+          "t": 10.94,
+          "text": "glass,"
+        }
+      ]
+    },
+    {
+      "start": 11.72,
+      "end": 12.66,
+      "text": "I see me,",
+      "words": [
+        {
+          "t": 11.72,
+          "text": "I"
+        },
+        {
+          "t": 12.16,
+          "text": "see"
+        },
+        {
+          "t": 12.42,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 12.8,
+      "end": 13.88,
+      "text": "then I pass,",
+      "words": [
+        {
+          "t": 12.8,
+          "text": "then"
+        },
+        {
+          "t": 13.26,
+          "text": "I"
+        },
+        {
+          "t": 13.52,
+          "text": "pass,"
+        }
+      ]
+    },
+    {
+      "start": 14.36,
+      "end": 14.46,
+      "text": "downtown,",
+      "words": [
+        {
+          "t": 14.36,
+          "text": "downtown,"
+        }
+      ]
+    },
+    {
+      "start": 15.32,
+      "end": 16.36,
+      "text": "uptown,",
+      "words": [
+        {
+          "t": 15.32,
+          "text": "uptown,"
+        }
+      ]
+    },
+    {
+      "start": 16.38,
+      "end": 17.18,
+      "text": "under every sun,",
+      "words": [
+        {
+          "t": 16.38,
+          "text": "under"
+        },
+        {
+          "t": 16.62,
+          "text": "every"
+        },
+        {
+          "t": 16.94,
+          "text": "sun,"
+        }
+      ]
+    },
+    {
+      "start": 17.4,
+      "end": 19.64,
+      "text": "I keep floating,",
+      "words": [
+        {
+          "t": 17.4,
+          "text": "I"
+        },
+        {
+          "t": 17.98,
+          "text": "keep"
+        },
+        {
+          "t": 18.94,
+          "text": "floating,"
+        }
+      ]
+    },
+    {
+      "start": 20.0,
+      "end": 21.78,
+      "text": "I keep finding the ground",
+      "words": [
+        {
+          "t": 20.0,
+          "text": "I"
+        },
+        {
+          "t": 20.608,
+          "text": "keep"
+        },
+        {
+          "t": 20.8,
+          "text": "finding"
+        },
+        {
+          "t": 21.28,
+          "text": "the"
+        },
+        {
+          "t": 21.5,
+          "text": "ground"
+        }
+      ]
+    },
+    {
+      "start": 22.86,
+      "end": 24.3,
+      "text": "And everybody's holding somewhat,",
+      "words": [
+        {
+          "t": 22.86,
+          "text": "And"
+        },
+        {
+          "t": 22.96,
+          "text": "everybody's"
+        },
+        {
+          "t": 23.64,
+          "text": "holding"
+        },
+        {
+          "t": 23.82,
+          "text": "somewhat,"
+        }
+      ]
+    },
+    {
+      "start": 25.19,
+      "end": 26.56,
+      "text": "everybody's holding something,",
+      "words": [
+        {
+          "t": 25.19,
+          "text": "everybody's"
+        },
+        {
+          "t": 26.04,
+          "text": "holding"
+        },
+        {
+          "t": 26.22,
+          "text": "something,"
+        }
+      ]
+    },
+    {
+      "start": 27.92,
+      "end": 29.12,
+      "text": "everybody looks so tired,",
+      "words": [
+        {
+          "t": 27.92,
+          "text": "everybody"
+        },
+        {
+          "t": 28.02,
+          "text": "looks"
+        },
+        {
+          "t": 28.54,
+          "text": "so"
+        },
+        {
+          "t": 28.68,
+          "text": "tired,"
+        }
+      ]
+    },
+    {
+      "start": 29.55,
+      "end": 31.5,
+      "text": "still the city keeps on coming,",
+      "words": [
+        {
+          "t": 29.55,
+          "text": "still"
+        },
+        {
+          "t": 30.3,
+          "text": "the"
+        },
+        {
+          "t": 30.5,
+          "text": "city"
+        },
+        {
+          "t": 30.66,
+          "text": "keeps"
+        },
+        {
+          "t": 30.96,
+          "text": "on"
+        },
+        {
+          "t": 31.14,
+          "text": "coming,"
+        }
+      ]
+    },
+    {
+      "start": 32.22,
+      "end": 34.62,
+      "text": "so I let the rhythm hold me,",
+      "words": [
+        {
+          "t": 32.22,
+          "text": "so"
+        },
+        {
+          "t": 32.992,
+          "text": "I"
+        },
+        {
+          "t": 33.22,
+          "text": "let"
+        },
+        {
+          "t": 33.66,
+          "text": "the"
+        },
+        {
+          "t": 33.76,
+          "text": "rhythm"
+        },
+        {
+          "t": 34.1,
+          "text": "hold"
+        },
+        {
+          "t": 34.38,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 34.98,
+      "end": 36.82,
+      "text": "let the tunnel pull me through,",
+      "words": [
+        {
+          "t": 34.98,
+          "text": "let"
+        },
+        {
+          "t": 35.48,
+          "text": "the"
+        },
+        {
+          "t": 35.66,
+          "text": "tunnel"
+        },
+        {
+          "t": 36.04,
+          "text": "pull"
+        },
+        {
+          "t": 36.36,
+          "text": "me"
+        },
+        {
+          "t": 36.54,
+          "text": "through,"
+        }
+      ]
+    },
+    {
+      "start": 37.5,
+      "end": 39.08,
+      "text": "every station feels familiar,",
+      "words": [
+        {
+          "t": 37.5,
+          "text": "every"
+        },
+        {
+          "t": 37.96,
+          "text": "station"
+        },
+        {
+          "t": 38.5,
+          "text": "feels"
+        },
+        {
+          "t": 38.74,
+          "text": "familiar,"
+        }
+      ]
+    },
+    {
+      "start": 39.54,
+      "end": 42.06,
+      "text": "but I'm waking up brand new",
+      "words": [
+        {
+          "t": 39.54,
+          "text": "but"
+        },
+        {
+          "t": 40.26,
+          "text": "I'm"
+        },
+        {
+          "t": 40.54,
+          "text": "waking"
+        },
+        {
+          "t": 40.84,
+          "text": "up"
+        },
+        {
+          "t": 41.24,
+          "text": "brand"
+        },
+        {
+          "t": 41.56,
+          "text": "new"
+        }
+      ]
+    },
+    {
+      "start": 42.06,
+      "end": 43.008,
+      "text": "Between the stations,",
+      "words": [
+        {
+          "t": 42.06,
+          "text": "Between"
+        },
+        {
+          "t": 42.58,
+          "text": "the"
+        },
+        {
+          "t": 42.9,
+          "text": "stations,"
+        }
+      ]
+    },
+    {
+      "start": 43.84,
+      "end": 44.86,
+      "text": "I can breathe again,",
+      "words": [
+        {
+          "t": 43.84,
+          "text": "I"
+        },
+        {
+          "t": 43.968,
+          "text": "can"
+        },
+        {
+          "t": 44.12,
+          "text": "breathe"
+        },
+        {
+          "t": 44.48,
+          "text": "again,"
+        }
+      ]
+    },
+    {
+      "start": 44.98,
+      "end": 46.06,
+      "text": "I can breathe again,",
+      "words": [
+        {
+          "t": 44.98,
+          "text": "I"
+        },
+        {
+          "t": 45.2,
+          "text": "can"
+        },
+        {
+          "t": 45.36,
+          "text": "breathe"
+        },
+        {
+          "t": 45.72,
+          "text": "again,"
+        }
+      ]
+    },
+    {
+      "start": 46.18,
+      "end": 46.92,
+      "text": "I can breathe,",
+      "words": [
+        {
+          "t": 46.18,
+          "text": "I"
+        },
+        {
+          "t": 46.38,
+          "text": "can"
+        },
+        {
+          "t": 46.58,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 47.1,
+      "end": 48.36,
+      "text": "between the stations,",
+      "words": [
+        {
+          "t": 47.1,
+          "text": "between"
+        },
+        {
+          "t": 47.42,
+          "text": "the"
+        },
+        {
+          "t": 47.74,
+          "text": "stations,"
+        }
+      ]
+    },
+    {
+      "start": 48.68,
+      "end": 49.68,
+      "text": "I come back to me,",
+      "words": [
+        {
+          "t": 48.68,
+          "text": "I"
+        },
+        {
+          "t": 48.76,
+          "text": "come"
+        },
+        {
+          "t": 48.96,
+          "text": "back"
+        },
+        {
+          "t": 49.3,
+          "text": "to"
+        },
+        {
+          "t": 49.5,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 49.78,
+      "end": 50.92,
+      "text": "come back to me,",
+      "words": [
+        {
+          "t": 49.78,
+          "text": "come"
+        },
+        {
+          "t": 50.0,
+          "text": "back"
+        },
+        {
+          "t": 50.42,
+          "text": "to"
+        },
+        {
+          "t": 50.76,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 50.98,
+      "end": 51.76,
+      "text": "come back to me",
+      "words": [
+        {
+          "t": 50.98,
+          "text": "come"
+        },
+        {
+          "t": 51.4,
+          "text": "back"
+        },
+        {
+          "t": 51.7,
+          "text": "to"
+        },
+        {
+          "t": 51.76,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 51.78,
+      "end": 53.1,
+      "text": "Lights keep flashing,",
+      "words": [
+        {
+          "t": 51.78,
+          "text": "Lights"
+        },
+        {
+          "t": 52.22,
+          "text": "keep"
+        },
+        {
+          "t": 52.56,
+          "text": "flashing,"
+        }
+      ]
+    },
+    {
+      "start": 53.22,
+      "end": 54.32,
+      "text": "hearts keep passing,",
+      "words": [
+        {
+          "t": 53.22,
+          "text": "hearts"
+        },
+        {
+          "t": 53.56,
+          "text": "keep"
+        },
+        {
+          "t": 53.76,
+          "text": "passing,"
+        }
+      ]
+    },
+    {
+      "start": 54.38,
+      "end": 55.3,
+      "text": "still I breathe,",
+      "words": [
+        {
+          "t": 54.38,
+          "text": "still"
+        },
+        {
+          "t": 54.6,
+          "text": "I"
+        },
+        {
+          "t": 54.9,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 55.58,
+      "end": 56.7,
+      "text": "still I breathe,",
+      "words": [
+        {
+          "t": 55.58,
+          "text": "still"
+        },
+        {
+          "t": 55.86,
+          "text": "I"
+        },
+        {
+          "t": 56.12,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 56.78,
+      "end": 57.9,
+      "text": "between the stations,",
+      "words": [
+        {
+          "t": 56.78,
+          "text": "between"
+        },
+        {
+          "t": 57.12,
+          "text": "the"
+        },
+        {
+          "t": 57.3,
+          "text": "stations,"
+        }
+      ]
+    },
+    {
+      "start": 58.08,
+      "end": 59.26,
+      "text": "I can breathe again,",
+      "words": [
+        {
+          "t": 58.08,
+          "text": "I"
+        },
+        {
+          "t": 58.34,
+          "text": "can"
+        },
+        {
+          "t": 58.56,
+          "text": "breathe"
+        },
+        {
+          "t": 58.86,
+          "text": "again,"
+        }
+      ]
+    },
+    {
+      "start": 59.4,
+      "end": 60.48,
+      "text": "I can breathe again,",
+      "words": [
+        {
+          "t": 59.4,
+          "text": "I"
+        },
+        {
+          "t": 59.6,
+          "text": "can"
+        },
+        {
+          "t": 59.78,
+          "text": "breathe"
+        },
+        {
+          "t": 60.14,
+          "text": "again,"
+        }
+      ]
+    },
+    {
+      "start": 60.6,
+      "end": 61.26,
+      "text": "I can breathe",
+      "words": [
+        {
+          "t": 60.6,
+          "text": "I"
+        },
+        {
+          "t": 60.76,
+          "text": "can"
+        },
+        {
+          "t": 60.96,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 62.0,
+      "end": 62.6,
+      "text": "Breathing,",
+      "words": [
+        {
+          "t": 62.0,
+          "text": "Breathing,"
+        }
+      ]
+    },
+    {
+      "start": 62.6,
+      "end": 63.76,
+      "text": "breathe out,",
+      "words": [
+        {
+          "t": 62.6,
+          "text": "breathe"
+        },
+        {
+          "t": 63.2,
+          "text": "out,"
+        }
+      ]
+    },
+    {
+      "start": 63.82,
+      "end": 64.12,
+      "text": "downtown,",
+      "words": [
+        {
+          "t": 63.82,
+          "text": "downtown,"
+        }
+      ]
+    },
+    {
+      "start": 64.36,
+      "end": 65.74,
+      "text": "that train goes underground,",
+      "words": [
+        {
+          "t": 64.36,
+          "text": "that"
+        },
+        {
+          "t": 64.62,
+          "text": "train"
+        },
+        {
+          "t": 64.88,
+          "text": "goes"
+        },
+        {
+          "t": 65.16,
+          "text": "underground,"
+        }
+      ]
+    },
+    {
+      "start": 66.4,
+      "end": 67.16,
+      "text": "breathing,",
+      "words": [
+        {
+          "t": 66.4,
+          "text": "breathing,"
+        }
+      ]
+    },
+    {
+      "start": 67.24,
+      "end": 68.54,
+      "text": "breathe out,",
+      "words": [
+        {
+          "t": 67.24,
+          "text": "breathe"
+        },
+        {
+          "t": 68.0,
+          "text": "out,"
+        }
+      ]
+    },
+    {
+      "start": 68.6,
+      "end": 68.98,
+      "text": "downtown,",
+      "words": [
+        {
+          "t": 68.6,
+          "text": "downtown,"
+        }
+      ]
+    },
+    {
+      "start": 69.18,
+      "end": 70.92,
+      "text": "I'm lost but I'm found",
+      "words": [
+        {
+          "t": 69.18,
+          "text": "I'm"
+        },
+        {
+          "t": 69.44,
+          "text": "lost"
+        },
+        {
+          "t": 69.66,
+          "text": "but"
+        },
+        {
+          "t": 70.26,
+          "text": "I'm"
+        },
+        {
+          "t": 70.56,
+          "text": "found"
+        }
+      ]
+    },
+    {
+      "start": 71.62,
+      "end": 72.22,
+      "text": "Breathing,",
+      "words": [
+        {
+          "t": 71.62,
+          "text": "Breathing,"
+        }
+      ]
+    },
+    {
+      "start": 72.22,
+      "end": 73.34,
+      "text": "breathe out,",
+      "words": [
+        {
+          "t": 72.22,
+          "text": "breathe"
+        },
+        {
+          "t": 72.82,
+          "text": "out,"
+        }
+      ]
+    },
+    {
+      "start": 73.42,
+      "end": 73.72,
+      "text": "downtown,",
+      "words": [
+        {
+          "t": 73.42,
+          "text": "downtown,"
+        }
+      ]
+    },
+    {
+      "start": 73.92,
+      "end": 75.68,
+      "text": "let the night slow down,",
+      "words": [
+        {
+          "t": 73.92,
+          "text": "let"
+        },
+        {
+          "t": 74.12,
+          "text": "the"
+        },
+        {
+          "t": 74.26,
+          "text": "night"
+        },
+        {
+          "t": 74.52,
+          "text": "slow"
+        },
+        {
+          "t": 75.04,
+          "text": "down,"
+        }
+      ]
+    },
+    {
+      "start": 76.1,
+      "end": 76.82,
+      "text": "breathing,",
+      "words": [
+        {
+          "t": 76.1,
+          "text": "breathing,"
+        }
+      ]
+    },
+    {
+      "start": 76.86,
+      "end": 78.2,
+      "text": "breathe out,",
+      "words": [
+        {
+          "t": 76.86,
+          "text": "breathe"
+        },
+        {
+          "t": 77.62,
+          "text": "out,"
+        }
+      ]
+    },
+    {
+      "start": 78.2,
+      "end": 78.46,
+      "text": "downtown,",
+      "words": [
+        {
+          "t": 78.2,
+          "text": "downtown,"
+        }
+      ]
+    },
+    {
+      "start": 78.46,
+      "end": 80.64,
+      "text": "I'm here right now�",
+      "words": [
+        {
+          "t": 78.46,
+          "text": "I'm"
+        },
+        {
+          "t": 79.04,
+          "text": "here"
+        },
+        {
+          "t": 79.32,
+          "text": "right"
+        },
+        {
+          "t": 79.9,
+          "text": "now�"
+        }
+      ]
+    },
+    {
+      "start": 90.752,
+      "end": 93.2,
+      "text": "A train to Brooklyn, a dream to Queens",
+      "words": [
+        {
+          "t": 90.752,
+          "text": "A"
+        },
+        {
+          "t": 91.04,
+          "text": "train"
+        },
+        {
+          "t": 91.3,
+          "text": "to"
+        },
+        {
+          "t": 91.66,
+          "text": "Brooklyn,"
+        },
+        {
+          "t": 92.16,
+          "text": "a"
+        },
+        {
+          "t": 92.3,
+          "text": "dream"
+        },
+        {
+          "t": 92.58,
+          "text": "to"
+        },
+        {
+          "t": 92.86,
+          "text": "Queens"
+        }
+      ]
+    },
+    {
+      "start": 93.2,
+      "end": 95.52,
+      "text": "Bronx in the rhythm, Manhattan in the steam",
+      "words": [
+        {
+          "t": 93.2,
+          "text": "Bronx"
+        },
+        {
+          "t": 93.74,
+          "text": "in"
+        },
+        {
+          "t": 93.94,
+          "text": "the"
+        },
+        {
+          "t": 94.06,
+          "text": "rhythm,"
+        },
+        {
+          "t": 94.38,
+          "text": "Manhattan"
+        },
+        {
+          "t": 94.78,
+          "text": "in"
+        },
+        {
+          "t": 95.16,
+          "text": "the"
+        },
+        {
+          "t": 95.28,
+          "text": "steam"
+        }
+      ]
+    },
+    {
+      "start": 95.52,
+      "end": 97.98,
+      "text": "Someone's got roses, someone's got rain",
+      "words": [
+        {
+          "t": 95.52,
+          "text": "Someone's"
+        },
+        {
+          "t": 96.34,
+          "text": "got"
+        },
+        {
+          "t": 96.48,
+          "text": "roses,"
+        },
+        {
+          "t": 96.98,
+          "text": "someone's"
+        },
+        {
+          "t": 97.54,
+          "text": "got"
+        },
+        {
+          "t": 97.7,
+          "text": "rain"
+        }
+      ]
+    },
+    {
+      "start": 98.14,
+      "end": 100.4,
+      "text": "Someone's got nothing but the song for the pain",
+      "words": [
+        {
+          "t": 98.14,
+          "text": "Someone's"
+        },
+        {
+          "t": 98.74,
+          "text": "got"
+        },
+        {
+          "t": 98.84,
+          "text": "nothing"
+        },
+        {
+          "t": 99.08,
+          "text": "but"
+        },
+        {
+          "t": 99.32,
+          "text": "the"
+        },
+        {
+          "t": 99.44,
+          "text": "song"
+        },
+        {
+          "t": 99.74,
+          "text": "for"
+        },
+        {
+          "t": 99.92,
+          "text": "the"
+        },
+        {
+          "t": 100.08,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 100.4,
+      "end": 102.76,
+      "text": "I don't need answers, I don't need signs",
+      "words": [
+        {
+          "t": 100.4,
+          "text": "I"
+        },
+        {
+          "t": 100.82,
+          "text": "don't"
+        },
+        {
+          "t": 101.16,
+          "text": "need"
+        },
+        {
+          "t": 101.32,
+          "text": "answers,"
+        },
+        {
+          "t": 101.86,
+          "text": "I"
+        },
+        {
+          "t": 102.08,
+          "text": "don't"
+        },
+        {
+          "t": 102.3,
+          "text": "need"
+        },
+        {
+          "t": 102.5,
+          "text": "signs"
+        }
+      ]
+    },
+    {
+      "start": 102.76,
+      "end": 105.24,
+      "text": "Just one more breath and a little more time",
+      "words": [
+        {
+          "t": 102.76,
+          "text": "Just"
+        },
+        {
+          "t": 103.28,
+          "text": "one"
+        },
+        {
+          "t": 103.44,
+          "text": "more"
+        },
+        {
+          "t": 103.74,
+          "text": "breath"
+        },
+        {
+          "t": 104.0,
+          "text": "and"
+        },
+        {
+          "t": 104.16,
+          "text": "a"
+        },
+        {
+          "t": 104.28,
+          "text": "little"
+        },
+        {
+          "t": 104.44,
+          "text": "more"
+        },
+        {
+          "t": 104.76,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 108.94,
+      "end": 110.62,
+      "text": "And everybody's changing cars",
+      "words": [
+        {
+          "t": 108.94,
+          "text": "And"
+        },
+        {
+          "t": 109.48,
+          "text": "everybody's"
+        },
+        {
+          "t": 110.02,
+          "text": "changing"
+        },
+        {
+          "t": 110.18,
+          "text": "cars"
+        }
+      ]
+    },
+    {
+      "start": 111.52,
+      "end": 112.96,
+      "text": "Everybody chasing daylight",
+      "words": [
+        {
+          "t": 111.52,
+          "text": "Everybody"
+        },
+        {
+          "t": 112.16,
+          "text": "chasing"
+        },
+        {
+          "t": 112.58,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 114.304,
+      "end": 115.52,
+      "text": "Everybody's off a scar",
+      "words": [
+        {
+          "t": 114.304,
+          "text": "Everybody's"
+        },
+        {
+          "t": 114.82,
+          "text": "off"
+        },
+        {
+          "t": 114.98,
+          "text": "a"
+        },
+        {
+          "t": 115.16,
+          "text": "scar"
+        }
+      ]
+    },
+    {
+      "start": 116.672,
+      "end": 117.92,
+      "text": "Glowing under tunnel lights",
+      "words": [
+        {
+          "t": 116.672,
+          "text": "Glowing"
+        },
+        {
+          "t": 116.84,
+          "text": "under"
+        },
+        {
+          "t": 117.12,
+          "text": "tunnel"
+        },
+        {
+          "t": 117.42,
+          "text": "lights"
+        }
+      ]
+    },
+    {
+      "start": 118.848,
+      "end": 121.0,
+      "text": "So I let the rhythm hold me",
+      "words": [
+        {
+          "t": 118.848,
+          "text": "So"
+        },
+        {
+          "t": 119.46,
+          "text": "I"
+        },
+        {
+          "t": 119.6,
+          "text": "let"
+        },
+        {
+          "t": 119.9,
+          "text": "the"
+        },
+        {
+          "t": 120.14,
+          "text": "rhythm"
+        },
+        {
+          "t": 120.48,
+          "text": "hold"
+        },
+        {
+          "t": 120.74,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 121.13,
+      "end": 123.2,
+      "text": "Let the morning come in blue",
+      "words": [
+        {
+          "t": 121.13,
+          "text": "Let"
+        },
+        {
+          "t": 121.88,
+          "text": "the"
+        },
+        {
+          "t": 122.04,
+          "text": "morning"
+        },
+        {
+          "t": 122.46,
+          "text": "come"
+        },
+        {
+          "t": 122.76,
+          "text": "in"
+        },
+        {
+          "t": 122.96,
+          "text": "blue"
+        }
+      ]
+    },
+    {
+      "start": 123.2,
+      "end": 125.5,
+      "text": "Every station feels familiar",
+      "words": [
+        {
+          "t": 123.2,
+          "text": "Every"
+        },
+        {
+          "t": 124.34,
+          "text": "station"
+        },
+        {
+          "t": 124.86,
+          "text": "feels"
+        },
+        {
+          "t": 125.12,
+          "text": "familiar"
+        }
+      ]
+    },
+    {
+      "start": 125.5,
+      "end": 128.4,
+      "text": "But I'm moving into new",
+      "words": [
+        {
+          "t": 125.5,
+          "text": "But"
+        },
+        {
+          "t": 126.62,
+          "text": "I'm"
+        },
+        {
+          "t": 126.9,
+          "text": "moving"
+        },
+        {
+          "t": 127.28,
+          "text": "into"
+        },
+        {
+          "t": 127.9,
+          "text": "new"
+        }
+      ]
+    },
+    {
+      "start": 128.4,
+      "end": 129.6,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 128.4,
+          "text": "Between"
+        },
+        {
+          "t": 128.92,
+          "text": "the"
+        },
+        {
+          "t": 129.3,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 129.984,
+      "end": 132.46,
+      "text": "I can breathe again, I can breathe again",
+      "words": [
+        {
+          "t": 129.984,
+          "text": "I"
+        },
+        {
+          "t": 130.36,
+          "text": "can"
+        },
+        {
+          "t": 130.5,
+          "text": "breathe"
+        },
+        {
+          "t": 130.84,
+          "text": "again,"
+        },
+        {
+          "t": 131.38,
+          "text": "I"
+        },
+        {
+          "t": 131.56,
+          "text": "can"
+        },
+        {
+          "t": 131.74,
+          "text": "breathe"
+        },
+        {
+          "t": 132.08,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 132.46,
+      "end": 133.3,
+      "text": "I can breathe",
+      "words": [
+        {
+          "t": 132.46,
+          "text": "I"
+        },
+        {
+          "t": 132.72,
+          "text": "can"
+        },
+        {
+          "t": 132.92,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 133.3,
+      "end": 134.76,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 133.3,
+          "text": "Between"
+        },
+        {
+          "t": 133.62,
+          "text": "the"
+        },
+        {
+          "t": 134.1,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 134.76,
+      "end": 136.08,
+      "text": "I come back to me,",
+      "words": [
+        {
+          "t": 134.76,
+          "text": "I"
+        },
+        {
+          "t": 135.16,
+          "text": "come"
+        },
+        {
+          "t": 135.36,
+          "text": "back"
+        },
+        {
+          "t": 135.66,
+          "text": "to"
+        },
+        {
+          "t": 135.94,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 136.16,
+      "end": 137.3,
+      "text": "come back to me,",
+      "words": [
+        {
+          "t": 136.16,
+          "text": "come"
+        },
+        {
+          "t": 136.38,
+          "text": "back"
+        },
+        {
+          "t": 136.82,
+          "text": "to"
+        },
+        {
+          "t": 137.14,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 137.36,
+      "end": 138.48,
+      "text": "come back to me",
+      "words": [
+        {
+          "t": 137.36,
+          "text": "come"
+        },
+        {
+          "t": 137.74,
+          "text": "back"
+        },
+        {
+          "t": 138.04,
+          "text": "to"
+        },
+        {
+          "t": 138.34,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 138.48,
+      "end": 140.6,
+      "text": "Lights keep flashing, hearts keep prancing",
+      "words": [
+        {
+          "t": 138.48,
+          "text": "Lights"
+        },
+        {
+          "t": 138.76,
+          "text": "keep"
+        },
+        {
+          "t": 138.96,
+          "text": "flashing,"
+        },
+        {
+          "t": 139.6,
+          "text": "hearts"
+        },
+        {
+          "t": 139.92,
+          "text": "keep"
+        },
+        {
+          "t": 140.16,
+          "text": "prancing"
+        }
+      ]
+    },
+    {
+      "start": 140.62,
+      "end": 142.94,
+      "text": "Still I breathe, still I breathe",
+      "words": [
+        {
+          "t": 140.62,
+          "text": "Still"
+        },
+        {
+          "t": 140.98,
+          "text": "I"
+        },
+        {
+          "t": 141.26,
+          "text": "breathe,"
+        },
+        {
+          "t": 141.94,
+          "text": "still"
+        },
+        {
+          "t": 142.22,
+          "text": "I"
+        },
+        {
+          "t": 142.44,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 142.94,
+      "end": 144.28,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 142.94,
+          "text": "Between"
+        },
+        {
+          "t": 143.4,
+          "text": "the"
+        },
+        {
+          "t": 143.7,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 144.28,
+      "end": 146.88,
+      "text": "I can breathe again, I can breathe again",
+      "words": [
+        {
+          "t": 144.28,
+          "text": "I"
+        },
+        {
+          "t": 144.74,
+          "text": "can"
+        },
+        {
+          "t": 144.94,
+          "text": "breathe"
+        },
+        {
+          "t": 145.24,
+          "text": "again,"
+        },
+        {
+          "t": 145.76,
+          "text": "I"
+        },
+        {
+          "t": 145.94,
+          "text": "can"
+        },
+        {
+          "t": 146.16,
+          "text": "breathe"
+        },
+        {
+          "t": 146.5,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 146.88,
+      "end": 148.1,
+      "text": "I can breathe, breathe",
+      "words": [
+        {
+          "t": 146.88,
+          "text": "I"
+        },
+        {
+          "t": 147.12,
+          "text": "can"
+        },
+        {
+          "t": 147.36,
+          "text": "breathe,"
+        },
+        {
+          "t": 147.86,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 148.78,
+      "end": 150.98,
+      "text": "No rush now, no fear now",
+      "words": [
+        {
+          "t": 148.78,
+          "text": "No"
+        },
+        {
+          "t": 149.088,
+          "text": "rush"
+        },
+        {
+          "t": 149.5,
+          "text": "now,"
+        },
+        {
+          "t": 149.94,
+          "text": "no"
+        },
+        {
+          "t": 150.3,
+          "text": "fear"
+        },
+        {
+          "t": 150.68,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 150.98,
+      "end": 152.84,
+      "text": "Let it roll, let it clear out",
+      "words": [
+        {
+          "t": 150.98,
+          "text": "Let"
+        },
+        {
+          "t": 151.52,
+          "text": "it"
+        },
+        {
+          "t": 151.68,
+          "text": "roll,"
+        },
+        {
+          "t": 152.06,
+          "text": "let"
+        },
+        {
+          "t": 152.16,
+          "text": "it"
+        },
+        {
+          "t": 152.3,
+          "text": "clear"
+        },
+        {
+          "t": 152.54,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 152.84,
+      "end": 155.82,
+      "text": "No rush now, no fear now",
+      "words": [
+        {
+          "t": 152.84,
+          "text": "No"
+        },
+        {
+          "t": 153.46,
+          "text": "rush"
+        },
+        {
+          "t": 154.32,
+          "text": "now,"
+        },
+        {
+          "t": 154.74,
+          "text": "no"
+        },
+        {
+          "t": 155.1,
+          "text": "fear"
+        },
+        {
+          "t": 155.5,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 155.96,
+      "end": 157.7,
+      "text": "Let it move, let it clear out",
+      "words": [
+        {
+          "t": 155.96,
+          "text": "Let"
+        },
+        {
+          "t": 156.36,
+          "text": "it"
+        },
+        {
+          "t": 156.5,
+          "text": "move,"
+        },
+        {
+          "t": 156.8,
+          "text": "let"
+        },
+        {
+          "t": 156.92,
+          "text": "it"
+        },
+        {
+          "t": 157.08,
+          "text": "clear"
+        },
+        {
+          "t": 157.32,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 157.7,
+      "end": 159.78,
+      "text": "I was heavy, I was loud",
+      "words": [
+        {
+          "t": 157.7,
+          "text": "I"
+        },
+        {
+          "t": 158.14,
+          "text": "was"
+        },
+        {
+          "t": 158.3,
+          "text": "heavy,"
+        },
+        {
+          "t": 158.68,
+          "text": "I"
+        },
+        {
+          "t": 159.296,
+          "text": "was"
+        },
+        {
+          "t": 159.52,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 159.93,
+      "end": 162.1,
+      "text": "Now I'm quiet, in the crowd",
+      "words": [
+        {
+          "t": 159.93,
+          "text": "Now"
+        },
+        {
+          "t": 160.58,
+          "text": "I'm"
+        },
+        {
+          "t": 160.74,
+          "text": "quiet,"
+        },
+        {
+          "t": 161.1,
+          "text": "in"
+        },
+        {
+          "t": 161.7,
+          "text": "the"
+        },
+        {
+          "t": 161.84,
+          "text": "crowd"
+        }
+      ]
+    },
+    {
+      "start": 162.1,
+      "end": 164.6,
+      "text": "I was fading, in the sound",
+      "words": [
+        {
+          "t": 162.1,
+          "text": "I"
+        },
+        {
+          "t": 162.912,
+          "text": "was"
+        },
+        {
+          "t": 163.14,
+          "text": "fading,"
+        },
+        {
+          "t": 163.52,
+          "text": "in"
+        },
+        {
+          "t": 164.18,
+          "text": "the"
+        },
+        {
+          "t": 164.26,
+          "text": "sound"
+        }
+      ]
+    },
+    {
+      "start": 164.6,
+      "end": 166.52,
+      "text": "Now I'm breathing, underground",
+      "words": [
+        {
+          "t": 164.6,
+          "text": "Now"
+        },
+        {
+          "t": 165.4,
+          "text": "I'm"
+        },
+        {
+          "t": 165.56,
+          "text": "breathing,"
+        },
+        {
+          "t": 166.1,
+          "text": "underground"
+        }
+      ]
+    },
+    {
+      "start": 177.24,
+      "end": 180.5,
+      "text": "I can breathe again, I can breathe again",
+      "words": [
+        {
+          "t": 177.24,
+          "text": "I"
+        },
+        {
+          "t": 177.88,
+          "text": "can"
+        },
+        {
+          "t": 178.52,
+          "text": "breathe"
+        },
+        {
+          "t": 178.88,
+          "text": "again,"
+        },
+        {
+          "t": 179.38,
+          "text": "I"
+        },
+        {
+          "t": 179.58,
+          "text": "can"
+        },
+        {
+          "t": 179.76,
+          "text": "breathe"
+        },
+        {
+          "t": 180.14,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 180.5,
+      "end": 181.3,
+      "text": "I can breathe",
+      "words": [
+        {
+          "t": 180.5,
+          "text": "I"
+        },
+        {
+          "t": 180.8,
+          "text": "can"
+        },
+        {
+          "t": 180.96,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 181.3,
+      "end": 182.7,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 181.3,
+          "text": "Between"
+        },
+        {
+          "t": 181.82,
+          "text": "the"
+        },
+        {
+          "t": 182.14,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 182.7,
+      "end": 183.42,
+      "text": "I can breathe again, I can breathe again",
+      "words": [
+        {
+          "t": 182.7,
+          "text": "I"
+        },
+        {
+          "t": 183.16,
+          "text": "can"
+        },
+        {
+          "t": 183.3,
+          "text": "breathe"
+        },
+        {
+          "t": 183.42,
+          "text": "again,"
+        },
+        {
+          "t": 183.42,
+          "text": "I"
+        },
+        {
+          "t": 183.42,
+          "text": "can"
+        },
+        {
+          "t": 183.42,
+          "text": "breathe"
+        },
+        {
+          "t": 183.42,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 183.42,
+      "end": 184.12,
+      "text": "I come back to me,",
+      "words": [
+        {
+          "t": 183.42,
+          "text": "I"
+        },
+        {
+          "t": 183.42,
+          "text": "come"
+        },
+        {
+          "t": 183.42,
+          "text": "back"
+        },
+        {
+          "t": 183.72,
+          "text": "to"
+        },
+        {
+          "t": 183.94,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 184.14,
+      "end": 185.34,
+      "text": "come back to me,",
+      "words": [
+        {
+          "t": 184.14,
+          "text": "come"
+        },
+        {
+          "t": 184.38,
+          "text": "back"
+        },
+        {
+          "t": 184.8,
+          "text": "to"
+        },
+        {
+          "t": 185.14,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 185.36,
+      "end": 186.5,
+      "text": "come back to me",
+      "words": [
+        {
+          "t": 185.36,
+          "text": "come"
+        },
+        {
+          "t": 185.76,
+          "text": "back"
+        },
+        {
+          "t": 186.12,
+          "text": "to"
+        },
+        {
+          "t": 186.36,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 186.5,
+      "end": 188.72,
+      "text": "Lights keep flashing, hearts keep passing",
+      "words": [
+        {
+          "t": 186.5,
+          "text": "Lights"
+        },
+        {
+          "t": 186.76,
+          "text": "keep"
+        },
+        {
+          "t": 187.02,
+          "text": "flashing,"
+        },
+        {
+          "t": 187.62,
+          "text": "hearts"
+        },
+        {
+          "t": 187.96,
+          "text": "keep"
+        },
+        {
+          "t": 188.22,
+          "text": "passing"
+        }
+      ]
+    },
+    {
+      "start": 188.72,
+      "end": 190.88,
+      "text": "Still I breathe, still I breathe",
+      "words": [
+        {
+          "t": 188.72,
+          "text": "Still"
+        },
+        {
+          "t": 189.0,
+          "text": "I"
+        },
+        {
+          "t": 189.32,
+          "text": "breathe,"
+        },
+        {
+          "t": 190.0,
+          "text": "still"
+        },
+        {
+          "t": 190.22,
+          "text": "I"
+        },
+        {
+          "t": 190.54,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 190.88,
+      "end": 192.32,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 190.88,
+          "text": "Between"
+        },
+        {
+          "t": 191.42,
+          "text": "the"
+        },
+        {
+          "t": 191.76,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 192.32,
+      "end": 194.88,
+      "text": "I can breathe again, I can breathe again",
+      "words": [
+        {
+          "t": 192.32,
+          "text": "I"
+        },
+        {
+          "t": 192.82,
+          "text": "can"
+        },
+        {
+          "t": 192.98,
+          "text": "breathe"
+        },
+        {
+          "t": 193.3,
+          "text": "again,"
+        },
+        {
+          "t": 193.78,
+          "text": "I"
+        },
+        {
+          "t": 193.98,
+          "text": "can"
+        },
+        {
+          "t": 194.16,
+          "text": "breathe"
+        },
+        {
+          "t": 194.48,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 194.88,
+      "end": 195.76,
+      "text": "I can breathe",
+      "words": [
+        {
+          "t": 194.88,
+          "text": "I"
+        },
+        {
+          "t": 195.18,
+          "text": "can"
+        },
+        {
+          "t": 195.34,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 195.76,
+      "end": 198.08,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 195.76,
+          "text": "Between"
+        },
+        {
+          "t": 196.66,
+          "text": "the"
+        },
+        {
+          "t": 197.68,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 198.16,
+      "end": 198.36,
+      "text": "I come back to me,",
+      "words": [
+        {
+          "t": 198.16,
+          "text": "I"
+        },
+        {
+          "t": 198.176,
+          "text": "come"
+        },
+        {
+          "t": 198.36,
+          "text": "back"
+        },
+        {
+          "t": 198.36,
+          "text": "to"
+        },
+        {
+          "t": 198.36,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 198.36,
+      "end": 198.36,
+      "text": "come back to me,",
+      "words": [
+        {
+          "t": 198.36,
+          "text": "come"
+        },
+        {
+          "t": 198.36,
+          "text": "back"
+        },
+        {
+          "t": 198.36,
+          "text": "to"
+        },
+        {
+          "t": 198.36,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 198.36,
+      "end": 198.36,
+      "text": "come back to me",
+      "words": [
+        {
+          "t": 198.36,
+          "text": "come"
+        },
+        {
+          "t": 198.36,
+          "text": "back"
+        },
+        {
+          "t": 198.36,
+          "text": "to"
+        },
+        {
+          "t": 198.36,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 198.36,
+      "end": 198.36,
+      "text": "I come back to me,",
+      "words": [
+        {
+          "t": 198.36,
+          "text": "I"
+        },
+        {
+          "t": 198.36,
+          "text": "come"
+        },
+        {
+          "t": 198.36,
+          "text": "back"
+        },
+        {
+          "t": 198.36,
+          "text": "to"
+        },
+        {
+          "t": 198.36,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 198.36,
+      "end": 198.38,
+      "text": "come back to me,",
+      "words": [
+        {
+          "t": 198.36,
+          "text": "come"
+        },
+        {
+          "t": 198.36,
+          "text": "back"
+        },
+        {
+          "t": 198.36,
+          "text": "to"
+        },
+        {
+          "t": 198.38,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 198.52,
+      "end": 198.88,
+      "text": "come back to me",
+      "words": [
+        {
+          "t": 198.52,
+          "text": "come"
+        },
+        {
+          "t": 198.88,
+          "text": "back"
+        },
+        {
+          "t": 198.88,
+          "text": "to"
+        },
+        {
+          "t": 198.88,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 198.88,
+      "end": 199.22,
+      "text": "Lights keep flashing, hearts keep passing",
+      "words": [
+        {
+          "t": 198.88,
+          "text": "Lights"
+        },
+        {
+          "t": 199.22,
+          "text": "keep"
+        },
+        {
+          "t": 199.22,
+          "text": "flashing,"
+        },
+        {
+          "t": 199.22,
+          "text": "hearts"
+        },
+        {
+          "t": 199.22,
+          "text": "keep"
+        },
+        {
+          "t": 199.22,
+          "text": "passing"
+        }
+      ]
+    },
+    {
+      "start": 199.3,
+      "end": 200.12,
+      "text": "Still I breathe, still I breathe",
+      "words": [
+        {
+          "t": 199.3,
+          "text": "Still"
+        },
+        {
+          "t": 199.4,
+          "text": "I"
+        },
+        {
+          "t": 199.62,
+          "text": "breathe,"
+        },
+        {
+          "t": 200.0,
+          "text": "still"
+        },
+        {
+          "t": 200.12,
+          "text": "I"
+        },
+        {
+          "t": 200.12,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 200.12,
+      "end": 200.6,
+      "text": "Between the stations",
+      "words": [
+        {
+          "t": 200.12,
+          "text": "Between"
+        },
+        {
+          "t": 200.6,
+          "text": "the"
+        },
+        {
+          "t": 200.6,
+          "text": "stations"
+        }
+      ]
+    },
+    {
+      "start": 200.6,
+      "end": 202.24,
+      "text": "Breathe in, breathe out",
+      "words": [
+        {
+          "t": 200.6,
+          "text": "Breathe"
+        },
+        {
+          "t": 200.7,
+          "text": "in,"
+        },
+        {
+          "t": 200.7,
+          "text": "breathe"
+        },
+        {
+          "t": 201.14,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 203.94,
+      "end": 208.36,
+      "text": "Breathe in, breathe out",
+      "words": [
+        {
+          "t": 203.94,
+          "text": "Breathe"
+        },
+        {
+          "t": 204.04,
+          "text": "in,"
+        },
+        {
+          "t": 206.6,
+          "text": "breathe"
+        },
+        {
+          "t": 206.92,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 208.36,
+      "end": 211.9,
+      "text": "Let the city move around you",
+      "words": [
+        {
+          "t": 208.36,
+          "text": "Let"
+        },
+        {
+          "t": 209.44,
+          "text": "the"
+        },
+        {
+          "t": 209.66,
+          "text": "city"
+        },
+        {
+          "t": 210.26,
+          "text": "move"
+        },
+        {
+          "t": 210.66,
+          "text": "around"
+        },
+        {
+          "t": 211.16,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 214.22,
+      "end": 218.04,
+      "text": "Breathe in, breathe out",
+      "words": [
+        {
+          "t": 214.22,
+          "text": "Breathe"
+        },
+        {
+          "t": 215.56,
+          "text": "in,"
+        },
+        {
+          "t": 216.22,
+          "text": "breathe"
+        },
+        {
+          "t": 217.04,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 218.04,
+      "end": 220.42,
+      "text": "We're still here somehow",
+      "words": [
+        {
+          "t": 218.04,
+          "text": "We're"
+        },
+        {
+          "t": 219.1,
+          "text": "still"
+        },
+        {
+          "t": 219.34,
+          "text": "here"
+        },
+        {
+          "t": 219.74,
+          "text": "somehow"
+        }
+      ]
+    },
+    {
+      "start": 223.78,
+      "end": 225.78,
+      "text": "Breathe in,",
+      "words": [
+        {
+          "t": 223.78,
+          "text": "Breathe"
+        },
+        {
+          "t": 225.12,
+          "text": "in,"
+        }
+      ]
+    },
+    {
+      "start": 227.08,
+      "end": 227.64,
+      "text": "breathe out",
+      "words": [
+        {
+          "t": 227.08,
+          "text": "breathe"
+        },
+        {
+          "t": 227.18,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 228.52,
+      "end": 230.22,
+      "text": "Train goes underground",
+      "words": [
+        {
+          "t": 228.52,
+          "text": "Train"
+        },
+        {
+          "t": 228.62,
+          "text": "goes"
+        },
+        {
+          "t": 229.26,
+          "text": "underground"
+        }
+      ]
+    },
+    {
+      "start": 230.78,
+      "end": 232.4,
+      "text": "Lost",
+      "words": [
+        {
+          "t": 230.78,
+          "text": "Lost"
+        }
+      ]
+    },
+    {
+      "start": 233.408,
+      "end": 234.76,
+      "text": "but home",
+      "words": [
+        {
+          "t": 233.408,
+          "text": "but"
+        },
+        {
+          "t": 234.12,
+          "text": "home"
+        }
+      ]
+    }
+  ]
+}

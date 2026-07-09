@@ -1,0 +1,322 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "ceasefire-in-the-static-data-storm-version",
+  "generatedAt": "2026-07-09T18:03:00.966Z",
+  "measured": {
+    "bpm": 80.75,
+    "duration": 283.2
+  },
+  "identity": {
+    "title": "Ceasefire in the Static (Data Storm Version)",
+    "titleAlternates": [],
+    "genre": "Gothic R&B",
+    "subGenres": [
+      "Trip-Hop",
+      "Cinematic Hip-Hop Soul",
+      "Orchestral Pop"
+    ],
+    "mood": "melancholic, ominous, vulnerable, atmospheric",
+    "styleSentence": "At a slow 82 BPM, this track blends dark gothic orchestration with late-90s street drums and deep piano to create an emotional R&B soundscape punctuated by digital glitch textures and urgent spoken-word verses.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "emotional female rock-opera singing paired with a vulnerable male R&B lead"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/ceasefire-in-the-static-data-storm-version/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#383838",
+      "#180808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "A#",
+      "mode": "minor",
+      "confidence": 0.773
+    },
+    "boundaries": [
+      23.68,
+      62.42,
+      123.34,
+      137.56,
+      159.01,
+      172.76,
+      250.13,
+      263.5
+    ],
+    "brightness": 2858.7,
+    "dynamicsDb": 15.7
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "Title: Ceasefire in the Static (Data Storm Version)\n\n[Style Notes]\n82 BPM. Dark gothic orchestral R&B with slow pounding drums, ominous violins, deep piano, cellos, choir pads, sub-bass, digital glitches, notification sounds, email pings, ad fragments, and static. Mostly emotional singing. One short rap-rock spoken verse. The song is about searching for peace and order inside modern data chaos. Ending stays ambiguous.\n\n[Intro - Slow Drums / Violins]\nboom... boom...\nstatic in the walls\nviolins rise slowly\nphone light on the ceiling\n\n[Female Vocal - Soft]\nI woke up under flashing skies\na thousand little mouths of light\nThey call my name, they sell me dreams\nthey follow me into the night\n\n[Male Vocal - Low]\nInbox open like a wound\nred numbers climbing in my room\nEverybody needs a piece\nbut nobody asks if I can breathe\n\n[Pre-Chorus - Both]\nScroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means\n\n[Chorus - Big Gothic R&B]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Verse 2 - Female]\nAds in my dreams\nghosts in my feed\nEvery open window\nopens something else in me\n\nMessages stack like stones\non a chest that won’t let go\nI keep answering the world\nbut I don’t answer my own soul\n\n[Male Vocal]\nI tried to name the storm\nfolders for the pain\nTags for every memory\nrules for every flame\n\nBut every time I clear the screen\nanother wave comes back\nAnother voice, another need\nanother signal dressed in black\n\n[Short Rap-Rock Spoken Verse]\nToo many tabs, too many chains\ntoo many faces with borrowed names\nToo many alerts in the bloodstream\ntoo many ghosts in the lockscreen\n\nI’m not lost, I’m overloaded\nheart still here, just overcoded\nTrying to breathe through the interface\ntrying to find one sacred space\n\n[Pre-Chorus - Female Lead]\nScroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means\n\n[Chorus - Bigger]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Bridge - Dark Orchestral Build]\nCellos swell\nviolins sharpen\ndeep piano strikes\nchoir hums under the beat\n\n[Female Vocal - Intense]\nMaybe peace is not a silence\nMaybe peace is choosing one sound\nMaybe order is not escape\nbut what I keep when storms come down\n\n[Male Vocal]\nMaybe I don’t kill the signal\nMaybe I learn what not to save\nMaybe I don’t beat the ocean\nMaybe I just name the waves\n\n[Both - Rising]\nName the fear\nName the need\nName the wound\nName the feed\n\nName the ghosts\nName the flame\nName the noise\nbut keep your name\n\n[Breakdown - Sudden Drop]\nnotification sounds cut off\ndrums stop\nstrings hold one long note\n\n[Whispered Female]\nDid we find it?\n\n[Whispered Male]\nI don’t know.\n\n[Female]\nIs it quiet?\n\n[Male]\nAlmost.\n\n[Final Chorus - Half Hopeful / Half Unresolved]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Outro - Ambiguous]\nboom... boom...\nviolins fade\none notification blinks\nthen disappears\n\n[Female Soft]\nI heard silence for a second\n\n[Male Soft]\nOr maybe it was just the storm\n\n[Both]\nBut I kept walking\nI kept walking\n\n[End]\nstatic fades\npiano unresolved",
+    "lrc": "[Intro]\n[00:10.59] Static in the walls\n[00:14.82] Violins rise slowly\n[00:20.16] Phone light on the ceiling\n[Verse 1]\n[00:26.56] I woke up on the flashing sky\n[00:30.05] A thousand little miles of light\n[00:32.94] They call my name, they sell me dreams\n[00:35.48] They follow me into the night\n[00:38.78] Inbox open like a wound\n[00:40.99] Red numbers climbing in my room\n[00:45.06] Everybody needs a piece\n[00:46.36] But nobody asks if I can breathe\n[Pre-Chorus]\n[00:49.50] Scroll by scroll\n[00:52.22] I lose the shape of me\n[00:56.64] Pin by pin\n[00:58.20] I forget what's up\n[Chorus]\n[01:00.00] What violence means\n[01:00.88] I'm looking for a ceasefire in the static\n[01:04.94] One quiet place inside the noise\n[01:07.60] A little room behind the panic\n[01:10.94] Where I can hear my real voice\n[01:13.02] I'm looking for a pattern in the madness\n[01:16.18] A holy line through broken code\n[01:19.45] If peace is somewhere in the chaos\n[01:22.14] Then I'm still walking down that road\n[01:25.60] Pads in my dreams, ghosts in my feed\n[01:28.12] Every open window open\n[01:30.00] Something else in me\n[01:31.52] Messages stacked like stones\n[01:33.26] On a chest that won't let go\n[01:34.74] I keep answering the world\n[01:36.22] But I don't answer my own soul\n[01:37.84] I try to name the storm\n[01:39.36] Folders for the pain\n[01:40.80] Text for every memory\n[01:42.30] Rules for every flame\n[01:43.74] But every time I clear the screen\n[01:45.54] Another wave comes back\n[01:47.10] Another voice\n[01:48.04] Another need\n[01:48.86] Another signal dressed in black\n[01:50.40] Too many tabs\n[01:51.18] Too many chains\n[01:51.92] Too many faces with borrowed names\n[01:53.40] Too many alerts in the bloodstream\n[01:54.82] Too many ghosts in the lock screen\n[01:56.34] I'm not lost, I'm overloaded\n[01:58.08] Heart's still here, just over-coded\n[01:59.57] Tryin' to break it\n[01:59.98] Read through the interface\n[02:01.94] Tryin' to find one sacred space\n[Verse 2]\n[02:04.90] Scroll by scroll\n[02:06.74] I lose the shape of me\n[02:11.14] Ping by ping\n[02:12.74] I forget what silence means\n[02:15.84] I'm looking for a ceasefire in the static\n[02:18.62] One quiet place inside the noise\n[02:22.46] A little room behind the panic\n[02:24.87] Where I can hear my real voice\n[02:27.52] I'm looking for a pattern\n[02:29.48] In the madness\n[02:30.69] A holy line through broken code\n[02:34.42] If peace is somewhere in the chaos\n[02:36.72] Then I'm still walking down that road\n[Rap Verse / Spoken Word]\n[02:42.46] Jettles swell\n[02:43.34] Violents sharpen\n[02:45.76] Deep piano strikes\n[02:47.06] Deep piano strikes\n[02:49.42] Maybe peace is not a silence\n[02:52.68] Maybe peace is choosing one sound\n[02:55.11] Maybe order is not escape\n[02:59.18] But what I know is\n[02:59.48] What I keep\n[03:01.62] when storms come down\n[03:05.41] Maybe I don't kill the signal\n[03:07.68] Maybe I learn what not to say\n[03:11.30] Maybe I don't beat the ocean\n[03:14.37] Maybe I just name the waves\n[03:15.94] Name the fear\n[03:17.20] Name the need\n[03:17.98] Name the womb\n[03:18.74] Name the fear\n[03:19.46] Name the ghost\n[03:20.26] Name the flame\n[03:20.98] Name the noise\n[03:21.78] But keep your name\n[Pre-Chorus (Repeat)]\n[03:29.48] Did we find it?\n[03:30.36] I don't know\n[03:31.40] Is it quiet?\n[03:32.58] Almost\n[03:35.58] I'm looking for a ceasefire in the static\n[Chorus (Big)]\n[03:38.06] One quiet place inside the noise\n[03:41.60] A little room behind the panic\n[03:44.27] Where I can hear my real voice\n[03:47.55] I'm looking for a pattern in the madness\n[03:50.22] A holy line through broken code\n[03:53.66] If peace is somewhere in the chaos\n[03:56.18] Then I'm still walking down that road\n[03:59.10] Boom,\n[04:00.62] boom, boom\n[04:02.00] One notification blinks\n[04:05.98] Boom, boom, boom\n[04:07.98] Then disappears\n[04:09.46] I heard silence for a second\n[04:12.84] Or maybe it was just the storm\n[04:17.94] But I kept walking\n[04:18.94] I kept walking\n[04:24.74] Static fade\n[04:30.85] Static fade\n[04:36.51] Piano unresolved\n"
+  },
+  "analysis": {
+    "summary": "A darkly atmospheric Gothic R&B track that explores the psychological weight of digital overload and information anxiety.",
+    "overallMood": "melancholic",
+    "themes": [
+      "Digital Detox",
+      "Information Overload",
+      "Identity Crisis",
+      "Anxiety vs. Peace"
+    ],
+    "palette": [
+      "#1a0b0e",
+      "#2c3e50",
+      "#8c7ae6",
+      "#d4af37"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "ominous anticipation",
+        "intensity": 0.79,
+        "colorHintHex": "#1a0b0e",
+        "start": 10.59
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "vulnerable fatigue",
+        "intensity": 0.81,
+        "colorHintHex": "#2c3e50",
+        "start": 26.56
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "dissolving identity",
+        "intensity": 0.87,
+        "colorHintHex": "#4a5f7a",
+        "start": 49.5
+      },
+      {
+        "name": "Chorus",
+        "emotion": "haunting hope amidst chaos",
+        "intensity": 0.82,
+        "colorHintHex": "#d4af37",
+        "start": 60
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "frustrated resignation",
+        "intensity": 0.69,
+        "colorHintHex": "#1a0b0e",
+        "start": 124.9
+      },
+      {
+        "name": "Rap Verse / Spoken Word",
+        "emotion": "urgent realization",
+        "intensity": 0.28,
+        "colorHintHex": "#2c3e50",
+        "start": 162.46
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "emotion": "uncertain longing",
+        "intensity": 0.22,
+        "colorHintHex": "#4a5f7a",
+        "start": 209.48
+      },
+      {
+        "name": "Chorus (Big)",
+        "emotion": "resilient persistence",
+        "intensity": 0.3,
+        "colorHintHex": "#8c7ae6",
+        "start": 218.06
+      }
+    ],
+    "keywords": [
+      {
+        "word": "static",
+        "emotion": "anxious overwhelm",
+        "imageryPrompt": "grainy black and white television snow filling a dimly lit bedroom, digital noise overlaying shadows of furniture"
+      },
+      {
+        "word": "ceasefire",
+        "emotion": "longing for peace",
+        "imageryPrompt": "a single beam of soft moonlight piercing through heavy storm clouds to illuminate a quiet patch of floor in a chaotic room"
+      },
+      {
+        "word": "violence",
+        "emotion": "internal turmoil",
+        "imageryPrompt": "shattered glass reflecting distorted faces on the ceiling, sharp red light pulses cutting through darkness like warning signs"
+      },
+      {
+        "word": "overloaded",
+        "emotion": "sensory exhaustion",
+        "imageryPrompt": "a person standing in a room where every object is vibrating with invisible waves of blue and green digital data streams"
+      },
+      {
+        "word": "ghosts",
+        "emotion": "haunting presence",
+        "imageryPrompt": "translucent silhouettes of former friends or strangers flickering on the back of a smartphone screen within a dark living room"
+      },
+      {
+        "word": "code",
+        "emotion": "searching for pattern",
+        "imageryPrompt": "fragments of glowing binary numbers and broken geometric lines floating in an empty void, slowly assembling into a human shape"
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 32,
+      "mid": 27,
+      "close": 23
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 10.59,
+        "intensity": 0.79
+      },
+      {
+        "name": "Verse 1",
+        "start": 26.56,
+        "intensity": 0.81
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 49.5,
+        "intensity": 0.87
+      },
+      {
+        "name": "Chorus",
+        "start": 60,
+        "intensity": 0.82
+      },
+      {
+        "name": "Verse 2",
+        "start": 124.9,
+        "intensity": 0.69
+      },
+      {
+        "name": "Rap Verse / Spoken Word",
+        "start": 162.46,
+        "intensity": 0.28
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "start": 209.48,
+        "intensity": 0.22
+      },
+      {
+        "name": "Chorus (Big)",
+        "start": 218.06,
+        "intensity": 0.3
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 45
+      },
+      {
+        "name": "Verse 1",
+        "presence": 76
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 73
+      },
+      {
+        "name": "Chorus",
+        "presence": 88
+      },
+      {
+        "name": "Verse 2",
+        "presence": 69
+      },
+      {
+        "name": "Rap Verse / Spoken Word",
+        "presence": 0
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "presence": 0
+      },
+      {
+        "name": "Chorus (Big)",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          26.46
+        ],
+        [
+          27.98,
+          29.02
+        ],
+        [
+          30.86,
+          31.98
+        ],
+        [
+          33.82,
+          34.94
+        ],
+        [
+          36.78,
+          37.9
+        ],
+        [
+          52.7,
+          56.54
+        ],
+        [
+          58.78,
+          62.46
+        ],
+        [
+          84.38,
+          86.38
+        ],
+        [
+          123.1,
+          125.18
+        ]
+      ],
+      "risers": [
+        {
+          "t": 14.4,
+          "end": 26.46
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys",
+        "strings"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "ceasefire-in-the-static-data-storm-version-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

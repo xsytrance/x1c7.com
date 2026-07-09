@@ -1,0 +1,17 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "reactor": "orbit",
+   "why": "The song's ethereal drive and futuristic isolation vibe perfectly match the 'orbit' mode, "
+  }
+ ],
+ "words": {
+  "solitary": "glitch",
+  "ethereal": "bloom",
+  "futuristic": "shimmer",
+  "introspective": "whisper"
+ }
+}

@@ -1,0 +1,118 @@
+{
+  "analysis": {
+    "summary": "The song is a resolute refusal to become a destructive force for someone else's emotional dependency. It depicts the narrator setting boundaries against volatile passion and toxic love cycles while choosing to preserve their own peace.",
+    "overallMood": "Melancholic, Resolute",
+    "themes": [
+      "Self-Preservation",
+      "Toxic Dependency",
+      "Emotional Burnout",
+      "Boundaries in Love"
+    ],
+    "palette": [
+      "#2A3B4C",
+      "#897F6E",
+      "#D05A5A",
+      "#1A1A1A"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Quiet realization, soft hesitation",
+        "intensity": 0.43,
+        "colorHintHex": "#897F6E",
+        "start": 0.88
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Loneliness, waiting in the rain",
+        "intensity": 0.53,
+        "colorHintHex": "#D05A5A",
+        "start": 3.1
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Defiant resolve to end the cycle",
+        "intensity": 0.78,
+        "colorHintHex": "#2A3B4C",
+        "start": 8.16
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Desperate need for proof of existence in darkness",
+        "intensity": 0.91,
+        "colorHintHex": "#1A1A1A",
+        "start": 40.48
+      },
+      {
+        "name": "Drop",
+        "emotion": "Calm determination to stop the fire",
+        "intensity": 0.71,
+        "colorHintHex": "#D05A5A",
+        "start": 52.64
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Regret over past destructive passion",
+        "intensity": 0.65,
+        "colorHintHex": "#4A3B5C",
+        "start": 100.7
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Rising tension against the noise of night",
+        "intensity": 0.5,
+        "colorHintHex": "#897F6E",
+        "start": 130.02
+      },
+      {
+        "name": "Verse 3",
+        "emotion": "Gentle acceptance of leaving for peace",
+        "intensity": 0.15,
+        "colorHintHex": "#897F6E",
+        "start": 205.28
+      },
+      {
+        "name": "Outro",
+        "emotion": "Soft hope and lingering light after the storm",
+        "intensity": 0.09,
+        "colorHintHex": "#D05A5A",
+        "start": 292.06
+      }
+    ],
+    "keywords": [
+      {
+        "word": "fire",
+        "emotion": "Dangerous passion that consumes safety",
+        "imageryPrompt": "A flickering orange flame casting long, trembling shadows against a wet concrete wall in the rain."
+      },
+      {
+        "word": "rain",
+        "emotion": "Melancholy cleansing and isolation",
+        "imageryPrompt": "Heavy droplets running down a grimy window pane reflecting streetlights and blurred city traffic at night."
+      },
+      {
+        "word": "darkness",
+        "emotion": "Overwhelming fear of the void inside oneself",
+        "imageryPrompt": "Deep black space with faint, cold blue ambient light revealing dust motes floating in a silent room."
+      },
+      {
+        "word": "silence",
+        "emotion": "Heavy pressure and suffocating quiet before breaking",
+        "imageryPrompt": "A stillness so thick it distorts the air around an empty chair, with shadows stretching unnaturally long."
+      },
+      {
+        "word": "thunder",
+        "emotion": "Violent release of repressed emotional pain",
+        "imageryPrompt": "Bright white lightning splitting a dark storm cloud illuminating jagged rooftops and bare trees violently swaying."
+      },
+      {
+        "word": "light",
+        "emotion": "Gentle hope or the small beacon remaining after departure",
+        "imageryPrompt": "A single warm yellow lamp glowing softly in a corner of an otherwise dark room, casting gentle pools on the floor."
+      }
+    ]
+  },
+  "styleHint": "A mid-tempo (86 BPM) atmospheric ballad blending warm F# major synth pads with melancholic acoustic guitar and deep 808 bass, creating a cinematic soundscape that supports emotive vocals about resisting destructive passion.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:46:17.825Z"
+}

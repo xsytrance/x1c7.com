@@ -1,0 +1,47 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 28,
+   "end": 36,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "BASS & SYNTH GROOVE ON"
+   },
+   "why": "Drum-cut window showcasing the foundational low-end and atmospheric synth textures driving"
+  },
+  {
+   "start": 126,
+   "end": 134,
+   "stemSpot": {
+    "solo": [
+     "keys"
+    ],
+    "label": "THE PIANO SPEAK"
+   },
+   "why": "Drum-cut window highlighting the melodic keyboard counterpoint during a moment of flirty d"
+  },
+  {
+   "start": 178,
+   "end": 203,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "perc"
+    ],
+    "label": "LEAD & PERC DANCE"
+   },
+   "why": "Extended drum-cut window allowing the lead vocal and percussion to drive a high-energy fin"
+  }
+ ],
+ "words": {
+  "cautious": "glitch",
+  "secretly": "dissolve",
+  "solid": "burn",
+  "responsible": "pulse",
+  "somebody": "bloom"
+ }
+}

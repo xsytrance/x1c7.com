@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "summary": "A raw anthem about setting boundaries in a toxic relationship where love is intertwined with self-destruction and emotional volatility. The song transitions from intimate vulnerability to explosive rebellion as the narrator refuses to be the source of their partner's pain just because they desperately want them to feel something.",
+    "overallMood": "wounded, rebellious",
+    "themes": [
+      "Toxic dependency",
+      "Emotional boundaries",
+      "Self-sacrifice vs. self-preservation",
+      "The illusion of love through pain"
+    ],
+    "palette": [
+      "#1a0b0e",
+      "#4a3c35",
+      "#d68f7a",
+      "#2d3b49"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "lonely anticipation, rain-soaked vulnerability",
+        "intensity": 0.43,
+        "colorHint": "#1a0b0e",
+        "start": 0.62
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "tense desperation, cracking under pressure",
+        "intensity": 0.84,
+        "colorHint": "#2d3b49",
+        "start": 32.82
+      },
+      {
+        "name": "Chorus",
+        "emotion": "explosive realization and refusal to break again",
+        "intensity": 0.31,
+        "colorHint": "#d68f7a",
+        "start": 158.1
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "confused exhaustion in the quiet aftermath",
+        "intensity": 0.2,
+        "colorHint": "#1a0b0e",
+        "start": 167.8
+      },
+      {
+        "name": "Drop",
+        "emotion": "cinematic release of held-back energy and resolve",
+        "intensity": 0.28,
+        "colorHint": "#4a3c35",
+        "start": 172.04
+      },
+      {
+        "name": "Bridge",
+        "emotion": "heartbreakingly firm finality with a spark of hope",
+        "intensity": 0.23,
+        "colorHint": "#d68f7a",
+        "start": 178.14
+      }
+    ],
+    "keywords": [
+      {
+        "word": "fighting",
+        "emotion": "defensive exhaustion",
+        "imageryPrompt": "A lone figure in a dark alley shielding their chest, rain mixing with tears on cracked concrete."
+      },
+      {
+        "word": "burn",
+        "emotion": "destructive attraction",
+        "imageryPrompt": "Blackened hands holding onto a dying embers that singes the skin instead of warming it."
+      },
+      {
+        "word": "silence",
+        "emotion": "heavy awkwardness",
+        "imageryPrompt": "A vast, empty hallway with dust motes dancing in dim light where no one speaks for too long."
+      },
+      {
+        "word": "thunder",
+        "emotion": "violent release",
+        "imageryPrompt": "Dark storm clouds cracking open above a city skyline as lightning flashes briefly illuminating shattered glass."
+      },
+      {
+        "word": "breaking",
+        "emotion": "shattering despair",
+        "imageryPrompt": "A porcelain heart in slow motion fracturing into jagged shards on a cold bathroom floor."
+      },
+      {
+        "word": "wire",
+        "emotion": "tense restraint",
+        "imageryPrompt": "Fingers gripping frayed electrical wires wrapped tightly around knuckles, sparks jumping from the skin."
+      }
+    ]
+  },
+  "styleHint": "Emo-rap pop-punk response anthem, 85 BPM half-time feel with 170 BPM double-time trap hats, dark minor key, huge viral hook, late-night toxic-love voicemail energy. Start intimate: rain ambience, muted electric guitar, distant phone buzz, soft wounded female vocal. Build into distorted guitars, punchy live snare, deep sub bass, glossy trap drums, stadium-size chorus, layered “no no no” gang vocals, male ghost vocal ad-libs in the background. Vocals should feel raw, cracked, melodic, desperate, and instantly singable; verses are vulnerable melodic rap, chorus is explosive pop-punk emo singalong. Dynamic structure: quiet intro, tense verse, pre-chorus lift, massive chorus, stripped bridge, final chorus with stacked harmonies. Theme: refusing to keep hurting someone you still love. Make it cinematic, heartbreaking, rebellious, catchy, modern, and replayable. Short viral singalong chorus, memorable one-line hook: “I won’t be your fire.” No cheesy theater, no happy pop, no over-rapping.",
+  "assets": {},
+  "generatedAt": "2026-07-09T17:26:00.900Z"
+}

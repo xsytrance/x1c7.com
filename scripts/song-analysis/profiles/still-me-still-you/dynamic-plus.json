@@ -1,0 +1,25 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 49,
+   "end": 57,
+   "reactor": "handwriting",
+   "why": "Drum-cut window allows intimate focus on the vocal confession of uncertainty; 'handwriting"
+  },
+  {
+   "start": 139,
+   "end": 147,
+   "reactor": "orbit",
+   "why": "Bridge section's 'breathless pause' and vulnerability match the cosmic, floating vibe of o"
+  }
+ ],
+ "words": {
+  "screen": "glitch",
+  "erase": "melt",
+  "sparks": "bloom",
+  "bass": "pulse",
+  "dreams": "shimmer",
+  "gloves": "bleed"
+ }
+}

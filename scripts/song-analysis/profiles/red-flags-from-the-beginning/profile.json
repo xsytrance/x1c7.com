@@ -1,0 +1,284 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "red-flags-from-the-beginning",
+  "generatedAt": "2026-07-09T18:28:04.334Z",
+  "measured": {
+    "bpm": 143.55,
+    "duration": 314.26
+  },
+  "identity": {
+    "title": "Red Flags From The Beginning",
+    "titleAlternates": [],
+    "genre": "Pop Rock",
+    "subGenres": [
+      "Alternative Pop",
+      "Drill-Infused Pop"
+    ],
+    "mood": "Anxious, Melancholic, Energetic, Resigned",
+    "styleSentence": "A high-energy (143 BPM) pop-rock anthem driven by a driving F-major key, featuring distorted guitar swells and modern drill-style hi-hats layered over deep 808 bass pulses to create an urgent yet emotionally raw soundscape.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Dynamic duet with spoken-word intros and verses alternating between intimate close-mic female leads and gritty male replies, culminating in a soaring but weary chorus."
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/red-flags-from-the-beginning/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#180808",
+      "#280808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "major",
+      "confidence": 0.873
+    },
+    "boundaries": [
+      12.63,
+      152.88,
+      165.79,
+      195.6,
+      211.95,
+      248.55,
+      255.05,
+      289.97
+    ],
+    "brightness": 2911.7,
+    "dynamicsDb": 12.5
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - Female Spoken, Close Mic]\nFucked [Intro]\n\n[spoken male vocals]\nFuckup ed up from the from the beginnbeginning\ning...\nAlways was...\nAlways was\nAlways will be...\n\nAlways will be[Male Spoken, Low]\nWe should’ve seen it.\n\n[Instrumental Break]\n\n[distorted guitar swell, drill hats, 808 pulse]\n\n[Verse 1 - Female Lead]\nFucked up from the jump, we were smiling through the sirens\nRed flags on the walls, but we called it perfect timi[Male Spoken]\nAlways ng\nI kept looking for the green, like a sign I could believe in\nBut the only green was money when the bills came screaming\nYou left socks on the floor like a war I couldn’t win\nUnfinished water by the sink, same fight again\nLaundry in a mountain, folding turned to blame\nOvertime kept calling and we answered it by name\n\n[Male Reply]\nI was tired, you were distant\nWe were loud, never listening\n\n[Female Lead]\nYou got secret with your phone, I got colder with my tone\nTwo people in a house still feeling alone\n\n[Pre-Chorus - Female]\nEyes bloodshot\nNot from the rot\nBut from reading every silence like a warning shot\n\n[Male]\nStay in your lane\n\n[Female]\nBut the lane was a graveyard\nEvery marker had our name\nEvery name had a scar\n\nw[Chorus - Female Lead + Male Echo]\nMaybe I as...\n\nshould stop\n[Female Whisper]\nAlMaybe I should drop\nLet the mountain keep the weight I never asked to carry up\nMaybe I should fall\nEcho down the hall\nLet the silence be the answer when I can’t stand up at all\nStop, drop\nWatch it all dissolve\nStop, drop\nNothing left to solve\n\n[Instrumental Break]\n\n[guitar riff, 808 slide, snare build]\n\n[Verse 2 - Female Lead]\nWe fought about the dishes, fought about the rent\nFought about the words we never really meant\nYou said I was dramatic, I said you never cared\nTruth is we were both just swinging at the air\n\n[Male Reply]\nYou checked out first\n\n[Female Reply]\nYou locked up worse\n\n[Male]\nYou wanted proof\n\n[Female]\nYou hid the hurt\n\n[Female Lead]\nHad the green light gleaming, but it never meant go\nJust another little lie in a pretty red glow\nI should’ve seen the signs when love felt like a debt\nWhen every kiss came loaded with a thing we won’t forget\n\n[Pre-Chorus - Female + Male]\nEyes bloodshot\nNot from the rot\nNot from the drinks\nNot from the smoke\nBut from the mirror showing both of us the joke\n\n[Male]\nWe called it passion\n\n[Female]\nIt was damage in disguise\n\n[Both]\nWe kept feeding the fire\nThen acted surprised\n\n[Chorus - Female Lead + Male Echo]\nMaybe I should stop\nMaybe I should drop\nLet the mountain keep the weight I never asked to carry up\nMaybe I should fall\nEcho down the hall\nLet the silence be the answer when I can’t stand up at all\nStop, drop\nWatch it all dissolve\nwStop, drop\nNothing left to solve\n\n[Bridge - Female, Vulnerable]\nHate to admit it\nBut God, I’m terrified\nTarred by my own hands\nFeathered by my pride\n\n[Male, Soft]\nI loved you wrong\n\n[Female]\nI stayed too long\n\n[Both]\nWe were doomed before the song\n\n[Solo Full Band Instrumental Break]\n\n[explosive guitar solo, crash cymbals, 808 undercurrent]\n\n[Final Pre-Chorus - Female, Rising]\nEyes bloodshot\nNot from the rot\nNot from the mountain\nNot from the cold\nBut from all those little warnings\nThat we watched and still ignored\n\n[pause break]\n\n[Final Chorus - Female Lead, Full Band]\nMaybe I should stop\nMaybe I should drop\nLet the mountain keep the weight I never asked to carry up\naMaybe yI s should fall\nwill be...\n\n[Ending Instrumental Break]\n\n[clean guitar fading into distorted low 808]Echo down the hall\nLet the silence be the answer when I can’t stand up at all\nBut the bloodshot fades\nAnd the red flags wave\nAnd the truth comes late\nBut it comes anyway\n\n[Post-Chorus - Female + Male]\nMaybe I should stop\nMaybe I should drop\nMaybe I already have\n\n[Outro - Female Spoken]\nFucked up from the beginning...\n\n[Male Spoken]\nAlways was...\n\n[Female Whisper]\nAlways will be...\n\n[Ending Instrumental Break]\n\n[clean guitar fading into distorted low 808]",
+    "lrc": "[Intro]\n[00:04.84] Fucked up from the beginning\n[00:09.54] Always was\n[00:13.90] Always will be\n[Verse 1]\n[00:27.08] Fucked up from the jump\n[00:28.42] We were smiling through the sirens\n[00:33.50] Red flags on the walls\n[00:35.08] But we called it perfect timing\n[00:37.74] I kept looking for the green\n[00:40.02] Like a sign I could believe in\n[00:41.88] But the only green was money\n[00:43.36] When the does came\n[00:44.50] Screaming\n[00:45.06] You left socks on the floor\n[00:46.62] Like a war I couldn't win\n[00:48.26] Finished water by the sink\n[00:50.02] Same fight again\n[00:51.52] Laundry in a mountain\n[00:53.49] Folding turn to blame\n[00:54.90] All the time kept calling\n[00:56.60] And we answered it by name\n[00:58.30] I was tired, you were distant\n[01:01.45] We were loud, never listening\n[01:03.30] You got a secret with your phone\n[01:06.30] I got colder with my tongue\n[01:08.12] Two people in a house\n[01:09.80] Still feeling alone\n[01:13.00] Eyes blind\n[01:13.92] Eyes blind\n[01:14.50] Shot not from the run\n[01:15.96] But from reading every silence\n[01:18.16] Like a warning shot\n[01:19.28] Stay in your lane\n[01:22.02] But the lane was a graveyard\n[01:25.64] Every marker had our name\n[01:28.86] Every name had a scar\n[01:31.98] Maybe I should stop\n[01:32.00] Maybe I should drop\n[01:34.68] Let the mountain keep the weight\n[01:36.28] I never asked to carry up\n[01:38.02] Maybe I should fall\n[01:39.76] Echo down the hall\n[01:41.26] Let the silence be the answer\n[01:43.02] When I can't stand it\n[01:44.48] Stop it all\n[01:45.89] Stop, drop\n[01:47.45] Watch it all dissolve\n[01:50.01] Stop\n[01:50.73] Nothing left to solve\n[Pre-Chorus]\n[01:58.12] We fought about the dishes\n[01:59.55] Fought about the rent\n[02:01.59] Fought about the words we never really meant\n[02:04.44] You said I was dramatic\n[02:05.98] I said you never cared\n[02:08.15] Truth is we were both just swinging at the air\n[02:11.14] You checked out first\n[Chorus]\n[02:12.50] You locked up worse\n[02:14.48] You wanted proof\n[02:15.72] You hid the hurt\n[02:17.50] Had the green light gleaming\n[02:19.42] But it never made gold\n[02:20.00] Just another little lie\n[02:22.60] In a pretty red glow\n[02:24.28] I should've seen the size\n[02:25.98] When love felt like a debt\n[02:27.58] When every kiss came loaded\n[02:29.30] With a pain we won't forget\n[02:31.96] Eyes blind\n[02:33.32] Shot not from the run\n[02:35.42] Not from the drinks\n[02:37.24] Not from the smoke\n[Verse 2]\n[02:38.74] But from the mirror showing\n[02:40.38] Both of us the joke\n[02:43.18] We called it passion\n[02:44.48] Was damaging the sky\n[02:47.44] We kept feeding the fire\n[02:50.99] Then I could surprise\n[02:54.66] Maybe I should stop\n[02:56.33] Maybe I should drop\n[02:57.46] Let the mountain keep the weight\n[02:59.06] I never asked to carry up\n[03:01.26] Maybe I should fall\n[03:02.86] Echo down the hall\n[03:04.02] Let the silence be the answer\n[03:05.77] When I can't stand up at all\n[03:08.32] Stop, drop\n[03:10.26] Watch it all dissolve\n[03:12.76] Stop\n[03:13.08] And nothing left to solve\n[03:15.52] Hate to admit it but\n[03:18.48] Got un-terrified\n[03:21.92] Tarred by my own hands\n[03:25.70] Feathered by my pride\n[03:28.36] I loved you wrong\n[03:30.48] I stayed too long\n[03:35.66] We were doomed\n[03:36.46] Before the sun\n[Pre-Chorus]\n[03:57.16] , I lived in pain\n[03:58.48] I'm weak\n[03:58.50] That's why I'm so strong\n[03:59.04] You're getting better\n[03:59.06] I'm not stupid\n[03:59.08] I'm gonna be the moon\n[03:59.76] And I'm no longer the moon\n[04:08.49] I'm not the moon\n[04:08.90] I'm just a fire\n[04:09.22] I'm not the moon\n[04:11.50] I'm just a fire\n[04:11.66] I'm not the moon\n[04:12.78] The mountain from the cold,\n[Chorus]\n[04:15.02] but from all those little warnings that we watched him still\n[04:21.38] Nort,\n[04:22.02] maybe I should stop maybe I should drop that don't\n[04:25.68] know to keep the way that never has to carry up\n[04:28.56] Maybe I should fall I go down the hall at\n[04:32.10] the silence be the answer when I can't stand\n[04:34.46] But the bloodshot fades and the red flags waving the truth\n[04:43.94] Maybe I should stop maybe I should drop maybe I already have\n[04:52.71] Fucked up from the beginning always was\n[04:58.12] Always will be\n[05:12.78] You\n[05:13.06] You\n"
+  },
+  "analysis": {
+    "summary": "The song depicts a toxic relationship doomed from the start, characterized by domestic chaos, emotional neglect, and the painful realization that love was actually a burden disguised as passion.",
+    "overallMood": "Anxious Melancholy",
+    "themes": [
+      "Toxic Love Patterns",
+      "Self-Realization & Growth",
+      "Domestic Struggle",
+      "Emotional Blindness"
+    ],
+    "palette": [
+      "#FF4D4D",
+      "#8B0000",
+      "#F5F5DC",
+      "#1A237E"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Fatalistic resignation",
+        "intensity": 0.88,
+        "colorHintHex": "#8B0000",
+        "start": 4.84
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Chaos and exhaustion",
+        "intensity": 0.78,
+        "colorHintHex": "#FF4D4D",
+        "start": 27.08
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Defensive realization",
+        "intensity": 0.66,
+        "colorHintHex": "#F5F5DC",
+        "start": 118.12
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Painful clarity and betrayal",
+        "intensity": 0.7,
+        "colorHintHex": "#FF4D4D",
+        "start": 132.5
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Internal reflection and crumbling ego",
+        "intensity": 0.32,
+        "colorHintHex": "#F5F5DC",
+        "start": 158.74
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "emotion": "Empowered transformation",
+        "intensity": 0.24,
+        "colorHintHex": "#1A237E",
+        "start": 237.16
+      },
+      {
+        "name": "Chorus (Final)",
+        "emotion": "Cathartic release and acceptance",
+        "intensity": 0.28,
+        "colorHintHex": "#FF4D4D",
+        "start": 255.02
+      }
+    ],
+    "keywords": [
+      {
+        "word": "flags",
+        "emotion": "Warning signal of doom",
+        "imageryPrompt": "A cracked red wall covered in peeling paint, casting long ominous shadows against a dark background."
+      },
+      {
+        "word": "sirens",
+        "emotion": "Escaping danger and panic",
+        "imageryPrompt": "Blue emergency lights flashing rapidly through rain-streaked windows reflecting on wet asphalt streets."
+      },
+      {
+        "word": "money",
+        "emotion": "False security and greed",
+        "imageryPrompt": "Stacks of green dollar bills glowing under a harsh spotlight while flowers wither in the background."
+      },
+      {
+        "word": "silence",
+        "emotion": "Heavy, suffocating emptiness",
+        "imageryPrompt": "A vast empty hallway stretching endlessly into darkness where dust motes hang motionless in still air."
+      },
+      {
+        "word": "fire",
+        "emotion": "Destructive passion and heat",
+        "imageryPrompt": "Orange flames consuming a wooden structure, illuminating tear-streaked faces with intense light and smoke."
+      },
+      {
+        "word": "moon",
+        "emotion": "Cold distance and isolation",
+        "imageryPrompt": "A pale white moon hanging high in a starless night sky above a lone silhouette standing on a cliff edge."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 34,
+      "mid": 28,
+      "close": 19
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 4.84,
+        "intensity": 0.88
+      },
+      {
+        "name": "Verse 1",
+        "start": 27.08,
+        "intensity": 0.78
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 118.12,
+        "intensity": 0.66
+      },
+      {
+        "name": "Chorus",
+        "start": 132.5,
+        "intensity": 0.7
+      },
+      {
+        "name": "Verse 2",
+        "start": 158.74,
+        "intensity": 0.32
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "start": 237.16,
+        "intensity": 0.24
+      },
+      {
+        "name": "Chorus (Final)",
+        "start": 255.02,
+        "intensity": 0.28
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 14
+      },
+      {
+        "name": "Verse 1",
+        "presence": 75
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 80
+      },
+      {
+        "name": "Chorus",
+        "presence": 36
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "presence": 0
+      },
+      {
+        "name": "Chorus (Final)",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          13.42
+        ],
+        [
+          14.46,
+          15.9
+        ],
+        [
+          17.74,
+          19.18
+        ],
+        [
+          73.18,
+          79.58
+        ]
+      ],
+      "risers": [
+        {
+          "t": 0.16,
+          "end": 13.42
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "red-flags-from-the-beginning-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 20,
+   "reactor": "downpour",
+   "why": "Intro atmosphere matches the 'Atmospheric dread and anticipation of rain' description; est"
+  },
+  {
+   "start": 67,
+   "end": 92,
+   "reactor": "fireworks",
+   "why": ""
+  },
+  {
+   "start": 105,
+   "end": 130,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "other"
+    ],
+    "label": "NEON & AMBIENCE ONLY"
+   },
+   "why": "Verse 2 offers a 'Resigned acceptance' moment; isolating synth and other elements highligh"
+  }
+ ],
+ "words": {
+  "low": "neon",
+  "lights": "fall",
+  "turning": "glitch",
+  "breaking": "shatter",
+  "rainy": "dissolve",
+  "crowd": "freeze",
+  "fade": "melt",
+  "party": "pulse",
+  "bodies": "bleed"
+ }
+}

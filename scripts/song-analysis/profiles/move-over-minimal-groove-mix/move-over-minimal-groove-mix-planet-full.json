@@ -1,0 +1,129 @@
+{
+  "analysis": {
+    "summary": "The song is a confident declaration of dominance on the dance floor, urging others to step aside for an undeniable summer heat and smooth bass-driven swagger.",
+    "overallMood": "stylish",
+    "themes": [
+      "Dance Floor Dominance",
+      "Retro Club Aesthetic",
+      "Minimalist Confidence",
+      "Summer Night Energy"
+    ],
+    "palette": [
+      "#FF005C",
+      "#2A0845",
+      "#1F1B36",
+      "#FFE6E9"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Mysterious anticipation of a new king taking the throne.",
+        "intensity": 0.39,
+        "colorHint": "#ff005c",
+        "start": 0.14
+      },
+      {
+        "name": "Verse 1 / Hook A",
+        "emotion": "Smooth declaration with a rhythmic push to clear space.",
+        "intensity": 0.75,
+        "colorHint": "#ffe6e9",
+        "start": 5.42
+      },
+      {
+        "name": "Hook B (Repeat)",
+        "emotion": "Reinforced confidence and catchy minimal groove energy.",
+        "intensity": 0.96,
+        "colorHint": "#2a0845",
+        "start": 46.64
+      },
+      {
+        "name": "Post-Hook / Crowd Chant",
+        "emotion": "Collective hype with deep bass resonance and soft swagger.",
+        "intensity": 0.72,
+        "colorHint": "#ff005c",
+        "start": 60.84
+      },
+      {
+        "name": "Groove 2 / Call & Response",
+        "emotion": "Breathless rhythm focusing on kick/clap/bass interplay.",
+        "intensity": 0.32,
+        "colorHint": "#1f1b36",
+        "start": 113.96
+      },
+      {
+        "name": "Pre-Hook",
+        "emotion": "Building tension before the final heat of the room.",
+        "intensity": 0.24,
+        "colorHint": "#ffe6e9",
+        "start": 135.38
+      },
+      {
+        "name": "Hook C (Repeat)",
+        "emotion": "Peak confidence with a cool summer night finish.",
+        "intensity": 0.21,
+        "colorHint": "#2a0845",
+        "start": 140.9
+      },
+      {
+        "name": "Bridge / Breakdown",
+        "emotion": "Minimalist pause emphasizing the singular presence of 'Move over'.",
+        "intensity": 0.09,
+        "colorHint": "#1f1b36",
+        "start": 158.04
+      }
+    ],
+    "keywords": [
+      {
+        "word": "heat",
+        "emotion": [
+          "Passionate",
+          "Intense"
+        ],
+        "imageryPrompt": "A glowing warm haze rising from a crowded retro dance floor, illuminating silhouettes with soft orange and pink light against dark walls."
+      },
+      {
+        "word": "drip",
+        "emotion": [
+          "Stylish",
+          "Confident"
+        ],
+        "imageryPrompt": "Close up of high-fashion streetwear details like gold chains or designer logos reflecting under neon club lights, exuding effortless coolness."
+      },
+      {
+        "word": "bass",
+        "emotion": [
+          "Deep",
+          "Resonant"
+        ],
+        "imageryPrompt": "Low frequency waves visualized as rippling dark purple energy pushing through a minimalist room with concrete floors and sparse furniture."
+      },
+      {
+        "word": "smooth",
+        "emotion": [
+          "Relaxed",
+          "Silky"
+        ],
+        "imageryPrompt": "A slow-motion shot of liquid mercury flowing over a sleek black surface, mirroring the effortless flow of the dance moves."
+      },
+      {
+        "word": "swagger",
+        "emotion": [
+          "Bold",
+          "Dominant"
+        ],
+        "imageryPrompt": "The confident stride of a dancer in 90s style attire stepping forward with one hand on their hip, casting long shadows under strobe lights."
+      },
+      {
+        "word": "move",
+        "emotion": [
+          "Urgent",
+          "Dynamic"
+        ],
+        "imageryPrompt": "Motion blur capturing the swift lateral movement of bodies sliding across a dance floor as if clearing space for an arrival."
+      }
+    ]
+  },
+  "styleHint": "BPM 125, minimal late-80s/early-90s hip-house and Eurodance club groove, stripped-down drum machine, tight four-on-the-floor kick, dry snare/clap, simple funky bass riff, short synth stabs, sparse vocal chops, cool female hype voice, confident male rap, call-and-response hook, dance-floor swagger, summer night energy, stylish not loud, catchy but minimal, retro club mix, clean radio-friendly lyrics, no big EDM drops, no overproduced festival sound, 3:20-3:50.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:19:47.477Z"
+}

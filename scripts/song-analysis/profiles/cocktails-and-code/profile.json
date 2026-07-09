@@ -1,0 +1,307 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "cocktails-and-code",
+  "generatedAt": "2026-07-09T18:45:17.271Z",
+  "measured": {
+    "bpm": 99.38,
+    "duration": 288.88
+  },
+  "identity": {
+    "title": "Cocktails && Code",
+    "titleAlternates": [],
+    "genre": "Hip Hop / Electronic Fusion",
+    "subGenres": [
+      "Lounge Hip Hop",
+      "Cyberpunk Pop"
+    ],
+    "mood": "Nocturnal, contemplative, electric, hopeful",
+    "styleSentence": "A mid-tempo (99 BPM) G minor track blending smooth synth pads and crisp drum programming with a laid-back hip-hop vocal flow that balances late-night cocktail lounge vibes with the rhythmic precision of coding logic.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "Laid-back, conversational rap-singing"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-art/collector/out/cocktails-and-code.png",
+    "palette": [
+      "#080808",
+      "#080828",
+      "#080818",
+      "#181808",
+      "#182848"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "G",
+      "mode": "minor",
+      "confidence": 0.716
+    },
+    "boundaries": [
+      11.05,
+      50.43,
+      70.59,
+      81.55,
+      153.25,
+      160.22,
+      235.82,
+      279.57
+    ],
+    "brightness": 3500.1,
+    "dynamicsDb": 13
+  },
+  "lyrics": {
+    "official": false,
+    "language": "english",
+    "text": "Uh, yeah,\nuh,\nwoo\nSummer night, laptop glow\nLittle\nice in the glass\nWe workin' different now, come on\nCocktails and coke\nWatch the new me low\nWe don't move like before\nNo, no, no\nUh,\nyeah\nUh,\nuh, yeah\nSunset drippin' through the blinds like gold\nSame little room but the dream got bold\nGlass on the table with the ice half low\nGot my mind on fire and my laptop glow\nI used to scroll when the day went dead\nSame old worries runnin' loops in my head\nNow I open up a new tab, breathe it slow\nType one question and the whole world grows\nI ain't tryna flex like I know it all\nI just stopped waitin' on the miracle call\nOne small bill, one clean plan\nOne more scale, one more scale\nAnd the palm of my hand\nAI talkin', I'm talkin' back\nTurnin' little ideas into somethin' that lasts\nSummer breeze comin' through the screen\nFeels like palm trees livin' in the machine\nOne little focus with the moonlight\nAdd a little rhythm to the grind\nThey don't have to run from the daylight\nWe can make a way this time\nCocktails and coke\nThat's how the night unfolds\nGot a little dream in the glass\nGot a little fire in the soul\nCocktails and coke\nWatch the new me load\nI can feel that future gettin' closer\nEvery time I take control\nSip, sip, sip,\nsip, sip, sip\nType it up, build, build, level up\nNo more waitin' on the world\nWe gon' make it come to us\nCocktails and coke\nThat's how the night unfolds\nSummon my sores cold\nWatch the new me load\nCocktails and coke\nI used to think the good life had a gate\nIt's somebody at the front saying\nWait, wait, wait\nNow I see the lock, got a pattern to it\nLearn a little logic, put some action through it\nDebug my doubt, clean up my days\nAutomate the noise, let the stress drift away\nBuild me a page, build me a flow\nBuild me a bridge where the army won't go\nIt ain't magic, but it feel like that\nWhen the idea hits and the beat comes back\nBaseline walking like it knows my name\n808 snap like a champagne frame\nI want beach chairs paid from the things I made\nNot another short break that I barely save\nI want Monday soft, I want time that's mine\nI want sunlight sitting on a better design\nJust a little focus with the moonlight\nAdd a little rhythm to the grind\nWe don't have to run from the daylight\nWe can make a way this time\nCocktails and coke, that's how the night unfolds\nGot a little dream in the glass\nGot a little fire in the soul\nCocktails and coke, watch the new me load\nI can feel that picture getting closer\nLet's go\nEvery time I take control\nSit, sit, sit\nSit, sit, sit, tap it up\nBuild, build, have a love\nNo more waiting on the world\nWe gon' make it come to us\nCocktails and coke\nThat's how the night unfolds\nSummoning my source code\nWatch the new me load\nMaybe the beach ain't far away\nMaybe it starts with what I make\nMaybe the life I used to chase\nIs hiding in the habits I create\nNo more wishing on the moon\nNo more waiting for the right sky\nI got rhythm, I got a time\nI got something new in my mind\nProp me a plan, I put feet on it\nDream looking clean when I keep on it\nSmall wins stacking like sunlight\nOne more commit in the midnight\nClass by the keys, breeze at the dope\nI don't wanna be tired no more\nI don't wanna just talk that growth\nI wanna build that boat and float\nCocktails and coke, that's how the night unfolds\nGot a little dream in the glass\nGot a little fire in the soul\nCocktails and coke\nWatch the new me load\nI can feel that that you're getting closer\nEvery time I take control\nSit, sit, sit\nSip, sip, sip, top it up\nBuild, build, have a love\nNo more waiting on the world\nWe gon' make it come to us\nCocktails and coke\nThat's how the night unfolds\nSummoning my source code\nWatch the new me load\nCocktails and coke\nOoh, ooh, ooh, ooh, ooh\nWatch the new me load\nOoh, ooh\nSummoning my source code\nNo, we don't move like before\nYeah, ice in the glass\nFuture in the tabs",
+    "lrc": "[Intro]\n[00:00.00] Uh, yeah,\n[00:00.92] uh,\n[00:01.58] woo\n[Verse 1]\n[00:03.44] Summer night, laptop glow\n[00:06.67] Little\n[00:08.04] ice in the glass\n[00:09.10] We workin' different now, come on\n[00:11.29] Cocktails and coke\n[00:15.27] Watch the new me low\n[00:18.92] We don't move like before\n[00:23.78] No, no, no\n[00:25.82] Uh,\n[00:28.64] yeah\n[00:28.66] Uh,\n[00:29.76] uh, yeah\n[00:31.14] Sunset drippin' through the blinds like gold\n[00:33.32] Same little room but the dream got bold\n[00:35.72] Glass on the table with the ice half low\n[00:38.10] Got my mind on fire and my laptop glow\n[00:40.48] I used to scroll when the day went dead\n[00:43.04] Same old worries runnin' loops in my head\n[00:45.40] Now I open up a new tab, breathe it slow\n[00:47.72] Type one question and the whole world grows\n[00:50.22] I ain't tryna flex like I know it all\n[Chorus]\n[00:52.42] I just stopped waitin' on the miracle call\n[00:55.08] One small bill, one clean plan\n[00:57.55] One more scale, one more scale\n[00:58.66] And the palm of my hand\n[01:00.02] AI talkin', I'm talkin' back\n[01:02.34] Turnin' little ideas into somethin' that lasts\n[01:04.86] Summer breeze comin' through the screen\n[01:06.96] Feels like palm trees livin' in the machine\n[01:09.70] One little focus with the moonlight\n[Bridge]\n[01:12.14] Add a little rhythm to the grind\n[01:14.40] They don't have to run from the daylight\n[01:16.65] We can make a way this time\n[01:19.32] Cocktails and coke\n[01:20.71] That's how the night unfolds\n[Drop]\n[01:22.74] Got a little dream in the glass\n[01:24.24] Got a little fire in the soul\n[01:29.27] Cocktails and coke\n[01:30.22] Watch the new me load\n[01:31.94] I can feel that future gettin' closer\n[01:33.98] Every time I take control\n[01:38.02] Sip, sip, sip,\n[01:39.76] sip, sip, sip\n[01:40.40] Type it up, build, build, level up\n[01:42.02] No more waitin' on the world\n[01:43.32] We gon' make it come to us\n[01:44.58] Cocktails and coke\n[01:46.13] That's how the night unfolds\n[01:48.62] Summon my sores cold\n[01:50.84] Watch the new me load\n[01:53.38] Cocktails and coke\n[01:54.10] I used to think the good life had a gate\n[01:56.34] It's somebody at the front saying\n[01:57.76] Wait, wait, wait\n[01:58.70] Now I see the lock, got a pattern to it\n[02:00.96] Learn a little logic, put some action through it\n[02:03.36] Debug my doubt, clean up my days\n[02:05.63] Automate the noise, let the stress drift away\n[02:07.80] Build me a page, build me a flow\n[02:10.22] Build me a bridge where the army won't go\n[02:12.74] It ain't magic, but it feel like that\n[02:15.06] When the idea hits and the beat comes back\n[02:17.64] Baseline walking like it knows my name\n[02:19.96] 808 snap like a champagne frame\n[02:22.34] I want beach chairs paid from the things I made\n[02:24.54] Not another short break that I barely save\n[02:26.90] I want Monday soft, I want time that's mine\n[02:29.64] I want sunlight sitting on a better design\n[02:32.18] Just a little focus with the moonlight\n[Verse 2]\n[02:34.45] Add a little rhythm to the grind\n[02:36.96] We don't have to run from the daylight\n[02:39.11] We can make a way this time\n[Chorus]\n[02:41.78] Cocktails and coke, that's how the night unfolds\n[02:45.16] Got a little dream in the glass\n[02:46.68] Got a little fire in the soul\n[02:51.66] Cocktails and coke, watch the new me load\n[02:54.38] I can feel that picture getting closer\n[02:56.40] Let's go\n[02:56.90] Every time I take control\n[02:59.56] Sit, sit, sit\n[03:01.38] Sit, sit, sit, tap it up\n[03:03.32] Build, build, have a love\n[03:04.48] No more waiting on the world\n[03:05.74] We gon' make it come to us\n[03:07.02] Cocktails and coke\n[03:08.42] That's how the night unfolds\n[03:10.98] Summoning my source code\n[03:13.28] Watch the new me load\n[03:15.70] Maybe the beach ain't far away\n[03:18.07] Maybe it starts with what I make\n[03:20.62] Maybe the life I used to chase\n[03:23.04] Is hiding in the habits I create\n[03:25.72] No more wishing on the moon\n[03:26.90] No more waiting for the right sky\n[03:30.06] I got rhythm, I got a time\n[03:32.57] I got something new in my mind\n[03:35.65] Prop me a plan, I put feet on it\n[03:38.24] Dream looking clean when I keep on it\n[03:40.24] Small wins stacking like sunlight\n[03:42.20] One more commit in the midnight\n[03:44.72] Class by the keys, breeze at the dope\n[03:47.39] I don't wanna be tired no more\n[03:49.78] I don't wanna just talk that growth\n[03:52.08] I wanna build that boat and float\n[03:54.53] Cocktails and coke, that's how the night unfolds\n[Outro]\n[03:57.54] Got a little dream in the glass\n[03:59.42] Got a little fire in the soul\n[04:04.46] Cocktails and coke\n[04:05.47] Watch the new me load\n[04:07.10] I can feel that that you're getting closer\n[04:09.14] Every time I take control\n[04:12.24] Sit, sit, sit\n[04:14.29] Sip, sip, sip, top it up\n[04:16.02] Build, build, have a love\n[04:17.18] No more waiting on the world\n[04:18.46] We gon' make it come to us\n[04:19.74] Cocktails and coke\n[04:21.28] That's how the night unfolds\n[04:23.68] Summoning my source code\n[04:25.06] Watch the new me load\n[04:28.42] Cocktails and coke\n[04:29.62] Ooh, ooh, ooh, ooh, ooh\n[04:32.26] Watch the new me load\n[04:33.94] Ooh, ooh\n[04:35.36] Summoning my source code\n[04:37.78] No, we don't move like before\n[04:41.48] Yeah, ice in the glass\n[04:43.47] Future in the tabs\n"
+  },
+  "analysis": {
+    "summary": "A nocturnal fusion of hip-hop flow and electronic textures that chronicles an artist's transformation from passive worry to active creation through late-night coding sessions paired with contemplative cocktail culture.",
+    "overallMood": "Nocturnal Contemplation",
+    "themes": [
+      "Digital Alchemy",
+      "Late Night Focus",
+      "Self-Empowerment",
+      "Process over Outcome",
+      "Urban Solitude",
+      "Technological Hope"
+    ],
+    "palette": [
+      "#0f172a",
+      "#64748b",
+      "#38bdf8",
+      "#eab308"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory Whisper",
+        "intensity": 0.39,
+        "colorHintHex": "#1e293b",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Quiet Realization",
+        "intensity": 0.63,
+        "colorHintHex": "#38bdf8",
+        "start": 3.44
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Cinematic Expansion",
+        "intensity": 0.96,
+        "colorHintHex": "#fbbf24",
+        "start": 52.42
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Strategic Breakthrough",
+        "intensity": 0.82,
+        "colorHintHex": "#14b8a6",
+        "start": 72.14
+      },
+      {
+        "name": "Drop",
+        "emotion": "Rhythmic Triumph",
+        "intensity": 0.92,
+        "colorHintHex": "#facc15",
+        "start": 82.74
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Confident Resolve",
+        "intensity": 0.38,
+        "colorHintHex": "#4ade80",
+        "start": 154.45
+      },
+      {
+        "name": "Outro",
+        "emotion": "Tranquil Future-Viewing",
+        "intensity": 0.11,
+        "colorHintHex": "#1e293b",
+        "start": 237.54
+      }
+    ],
+    "keywords": [
+      {
+        "word": "glow",
+        "emotion": "Warm Digital Intimacy",
+        "imageryPrompt": "Soft cyan light reflecting off a laptop screen and glass ice cubes in a dark room, volumetric lighting creating floating dust particles."
+      },
+      {
+        "word": "logic",
+        "emotion": "Structured Clarity",
+        "imageryPrompt": "Invisible geometric grids forming over a cluttered desk, clean lines connecting to the outside sunset, sharp focus on keyboard keys."
+      },
+      {
+        "word": "focus",
+        "emotion": "Deep Concentration",
+        "imageryPrompt": "A single beam of moonlight illuminating only hands typing rapidly while the rest of the room fades into soft bokeh shadows."
+      },
+      {
+        "word": "debug",
+        "emotion": "Painful Correction",
+        "imageryPrompt": "Red error symbols dissolving into green checkmarks, visualizing mental noise turning clear as liquid drains from a glass."
+      },
+      {
+        "word": "future",
+        "emotion": "Hopeful Anticipation",
+        "imageryPrompt": "A digital horizon line rising above the skyline, composed of binary code transforming into architectural blueprints and palm tree silhouettes."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 30,
+      "mid": 38,
+      "close": 20
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0,
+        "intensity": 0.39
+      },
+      {
+        "name": "Verse 1",
+        "start": 3.44,
+        "intensity": 0.63
+      },
+      {
+        "name": "Chorus",
+        "start": 52.42,
+        "intensity": 0.96
+      },
+      {
+        "name": "Bridge",
+        "start": 72.14,
+        "intensity": 0.82
+      },
+      {
+        "name": "Drop",
+        "start": 82.74,
+        "intensity": 0.92
+      },
+      {
+        "name": "Verse 2",
+        "start": 154.45,
+        "intensity": 0.38
+      },
+      {
+        "name": "Outro",
+        "start": 237.54,
+        "intensity": 0.11
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 33
+      },
+      {
+        "name": "Verse 1",
+        "presence": 80
+      },
+      {
+        "name": "Chorus",
+        "presence": 85
+      },
+      {
+        "name": "Bridge",
+        "presence": 87
+      },
+      {
+        "name": "Drop",
+        "presence": 86
+      },
+      {
+        "name": "Verse 2",
+        "presence": 45
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          1.02
+        ],
+        [
+          3.74,
+          4.62
+        ],
+        [
+          4.86,
+          5.82
+        ],
+        [
+          8.54,
+          9.5
+        ],
+        [
+          9.74,
+          10.7
+        ],
+        [
+          72.78,
+          73.74
+        ],
+        [
+          77.58,
+          79.82
+        ],
+        [
+          110.78,
+          111.9
+        ],
+        [
+          117.98,
+          119.18
+        ],
+        [
+          153.98,
+          154.94
+        ],
+        [
+          155.18,
+          156.14
+        ],
+        [
+          156.38,
+          157.34
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "cocktails-and-code-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

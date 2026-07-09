@@ -1,0 +1,1453 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 8.6,
+      "end": 14.5,
+      "text": "Closer, you know it",
+      "words": [
+        {
+          "t": 8.6,
+          "text": "Closer,"
+        },
+        {
+          "t": 10.04,
+          "text": "you"
+        },
+        {
+          "t": 10.66,
+          "text": "know"
+        },
+        {
+          "t": 11.4,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 15.3,
+      "end": 17.16,
+      "text": "Come here",
+      "words": [
+        {
+          "t": 15.3,
+          "text": "Come"
+        },
+        {
+          "t": 16.0,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 32.16,
+      "end": 34.58,
+      "text": "Different streets, different names",
+      "words": [
+        {
+          "t": 32.16,
+          "text": "Different"
+        },
+        {
+          "t": 32.3,
+          "text": "streets,"
+        },
+        {
+          "t": 33.04,
+          "text": "different"
+        },
+        {
+          "t": 34.0,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 34.58,
+      "end": 38.24,
+      "text": "Different skies, same heartbeat",
+      "words": [
+        {
+          "t": 34.58,
+          "text": "Different"
+        },
+        {
+          "t": 35.6,
+          "text": "skies,"
+        },
+        {
+          "t": 36.56,
+          "text": "same"
+        },
+        {
+          "t": 37.14,
+          "text": "heartbeat"
+        }
+      ]
+    },
+    {
+      "start": 38.3,
+      "end": 41.38,
+      "text": "You smile, I don't know what to say",
+      "words": [
+        {
+          "t": 38.3,
+          "text": "You"
+        },
+        {
+          "t": 39.1,
+          "text": "smile,"
+        },
+        {
+          "t": 39.88,
+          "text": "I"
+        },
+        {
+          "t": 40.24,
+          "text": "don't"
+        },
+        {
+          "t": 40.52,
+          "text": "know"
+        },
+        {
+          "t": 40.72,
+          "text": "what"
+        },
+        {
+          "t": 40.92,
+          "text": "to"
+        },
+        {
+          "t": 41.06,
+          "text": "say"
+        }
+      ]
+    },
+    {
+      "start": 41.38,
+      "end": 42.0,
+      "text": "But somehow",
+      "words": [
+        {
+          "t": 41.38,
+          "text": "But"
+        },
+        {
+          "t": 41.54,
+          "text": "somehow"
+        }
+      ]
+    },
+    {
+      "start": 42.37,
+      "end": 46.1,
+      "text": "You already know your language",
+      "words": [
+        {
+          "t": 42.37,
+          "text": "You"
+        },
+        {
+          "t": 43.84,
+          "text": "already"
+        },
+        {
+          "t": 44.38,
+          "text": "know"
+        },
+        {
+          "t": 44.88,
+          "text": "your"
+        },
+        {
+          "t": 45.46,
+          "text": "language"
+        }
+      ]
+    },
+    {
+      "start": 46.48,
+      "end": 49.0,
+      "text": "Mine too, still",
+      "words": [
+        {
+          "t": 46.48,
+          "text": "Mine"
+        },
+        {
+          "t": 47.78,
+          "text": "too,"
+        },
+        {
+          "t": 48.48,
+          "text": "still"
+        }
+      ]
+    },
+    {
+      "start": 52.128,
+      "end": 56.14,
+      "text": "We're moving like we always knew",
+      "words": [
+        {
+          "t": 52.128,
+          "text": "We're"
+        },
+        {
+          "t": 52.26,
+          "text": "moving"
+        },
+        {
+          "t": 52.82,
+          "text": "like"
+        },
+        {
+          "t": 53.86,
+          "text": "we"
+        },
+        {
+          "t": 54.16,
+          "text": "always"
+        },
+        {
+          "t": 54.96,
+          "text": "knew"
+        }
+      ]
+    },
+    {
+      "start": 57.632,
+      "end": 58.92,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 57.632,
+          "text": "Say"
+        },
+        {
+          "t": 57.9,
+          "text": "it"
+        },
+        {
+          "t": 58.12,
+          "text": "with"
+        },
+        {
+          "t": 58.32,
+          "text": "your"
+        },
+        {
+          "t": 58.52,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 59.94,
+      "end": 60.864,
+      "text": "Closer",
+      "words": [
+        {
+          "t": 59.94,
+          "text": "Closer"
+        }
+      ]
+    },
+    {
+      "start": 60.928,
+      "end": 62.46,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 60.928,
+          "text": "Say"
+        },
+        {
+          "t": 61.42,
+          "text": "it"
+        },
+        {
+          "t": 61.6,
+          "text": "with"
+        },
+        {
+          "t": 61.8,
+          "text": "your"
+        },
+        {
+          "t": 61.96,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 62.46,
+      "end": 64.3,
+      "text": "Slower",
+      "words": [
+        {
+          "t": 62.46,
+          "text": "Slower"
+        }
+      ]
+    },
+    {
+      "start": 64.31,
+      "end": 66.03,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 64.31,
+          "text": "Say"
+        },
+        {
+          "t": 64.86,
+          "text": "it"
+        },
+        {
+          "t": 65.08,
+          "text": "with"
+        },
+        {
+          "t": 65.28,
+          "text": "your"
+        },
+        {
+          "t": 65.48,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 66.06,
+      "end": 67.44,
+      "text": "Move me",
+      "words": [
+        {
+          "t": 66.06,
+          "text": "Move"
+        },
+        {
+          "t": 66.74,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 67.56,
+      "end": 69.44,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 67.56,
+          "text": "Say"
+        },
+        {
+          "t": 68.26,
+          "text": "it"
+        },
+        {
+          "t": 68.54,
+          "text": "with"
+        },
+        {
+          "t": 68.78,
+          "text": "your"
+        },
+        {
+          "t": 68.96,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 69.44,
+      "end": 70.9,
+      "text": "Hold me",
+      "words": [
+        {
+          "t": 69.44,
+          "text": "Hold"
+        },
+        {
+          "t": 70.32,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 70.9,
+      "end": 73.52,
+      "text": "Say it with your body, baby",
+      "words": [
+        {
+          "t": 70.9,
+          "text": "Say"
+        },
+        {
+          "t": 71.86,
+          "text": "it"
+        },
+        {
+          "t": 72.08,
+          "text": "with"
+        },
+        {
+          "t": 72.26,
+          "text": "your"
+        },
+        {
+          "t": 72.44,
+          "text": "body,"
+        },
+        {
+          "t": 73.1,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 76.064,
+      "end": 77.02,
+      "text": "Don't say maybe",
+      "words": [
+        {
+          "t": 76.064,
+          "text": "Don't"
+        },
+        {
+          "t": 76.26,
+          "text": "say"
+        },
+        {
+          "t": 76.52,
+          "text": "maybe"
+        }
+      ]
+    },
+    {
+      "start": 77.66,
+      "end": 79.9,
+      "text": "Just say it with your body",
+      "words": [
+        {
+          "t": 77.66,
+          "text": "Just"
+        },
+        {
+          "t": 78.272,
+          "text": "say"
+        },
+        {
+          "t": 78.72,
+          "text": "it"
+        },
+        {
+          "t": 79.0,
+          "text": "with"
+        },
+        {
+          "t": 79.18,
+          "text": "your"
+        },
+        {
+          "t": 79.36,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 84.76,
+      "end": 85.72,
+      "text": "Mmm",
+      "words": [
+        {
+          "t": 84.76,
+          "text": "Mmm"
+        }
+      ]
+    },
+    {
+      "start": 85.72,
+      "end": 88.8,
+      "text": "Every city's got another reason",
+      "words": [
+        {
+          "t": 85.72,
+          "text": "Every"
+        },
+        {
+          "t": 86.84,
+          "text": "city's"
+        },
+        {
+          "t": 87.72,
+          "text": "got"
+        },
+        {
+          "t": 87.86,
+          "text": "another"
+        },
+        {
+          "t": 88.28,
+          "text": "reason"
+        }
+      ]
+    },
+    {
+      "start": 89.72,
+      "end": 92.34,
+      "text": "Every heartbeat finds another home",
+      "words": [
+        {
+          "t": 89.72,
+          "text": "Every"
+        },
+        {
+          "t": 90.54,
+          "text": "heartbeat"
+        },
+        {
+          "t": 91.06,
+          "text": "finds"
+        },
+        {
+          "t": 91.36,
+          "text": "another"
+        },
+        {
+          "t": 91.72,
+          "text": "home"
+        }
+      ]
+    },
+    {
+      "start": 92.34,
+      "end": 95.76,
+      "text": "You reach for me, I answer back",
+      "words": [
+        {
+          "t": 92.34,
+          "text": "You"
+        },
+        {
+          "t": 93.28,
+          "text": "reach"
+        },
+        {
+          "t": 93.64,
+          "text": "for"
+        },
+        {
+          "t": 93.88,
+          "text": "me,"
+        },
+        {
+          "t": 94.62,
+          "text": "I"
+        },
+        {
+          "t": 95.02,
+          "text": "answer"
+        },
+        {
+          "t": 95.42,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 95.76,
+      "end": 99.28,
+      "text": "No translation on this road",
+      "words": [
+        {
+          "t": 95.76,
+          "text": "No"
+        },
+        {
+          "t": 97.14,
+          "text": "translation"
+        },
+        {
+          "t": 97.8,
+          "text": "on"
+        },
+        {
+          "t": 98.78,
+          "text": "this"
+        },
+        {
+          "t": 98.96,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 100.5,
+      "end": 103.52,
+      "text": "One small step, one slow sway",
+      "words": [
+        {
+          "t": 100.5,
+          "text": "One"
+        },
+        {
+          "t": 101.32,
+          "text": "small"
+        },
+        {
+          "t": 101.76,
+          "text": "step,"
+        },
+        {
+          "t": 102.34,
+          "text": "one"
+        },
+        {
+          "t": 102.64,
+          "text": "slow"
+        },
+        {
+          "t": 103.08,
+          "text": "sway"
+        }
+      ]
+    },
+    {
+      "start": 103.73,
+      "end": 105.9,
+      "text": "That's enough to tell me everything",
+      "words": [
+        {
+          "t": 103.73,
+          "text": "That's"
+        },
+        {
+          "t": 104.48,
+          "text": "enough"
+        },
+        {
+          "t": 104.72,
+          "text": "to"
+        },
+        {
+          "t": 104.98,
+          "text": "tell"
+        },
+        {
+          "t": 105.28,
+          "text": "me"
+        },
+        {
+          "t": 105.5,
+          "text": "everything"
+        }
+      ]
+    },
+    {
+      "start": 105.9,
+      "end": 107.58,
+      "text": "No dictionary,",
+      "words": [
+        {
+          "t": 105.9,
+          "text": "No"
+        },
+        {
+          "t": 107.16,
+          "text": "dictionary,"
+        }
+      ]
+    },
+    {
+      "start": 108.78,
+      "end": 109.54,
+      "text": "no explanation",
+      "words": [
+        {
+          "t": 108.78,
+          "text": "no"
+        },
+        {
+          "t": 108.88,
+          "text": "explanation"
+        }
+      ]
+    },
+    {
+      "start": 110.82,
+      "end": 111.41,
+      "text": "Just the music",
+      "words": [
+        {
+          "t": 110.82,
+          "text": "Just"
+        },
+        {
+          "t": 110.92,
+          "text": "the"
+        },
+        {
+          "t": 111.06,
+          "text": "music"
+        }
+      ]
+    },
+    {
+      "start": 112.24,
+      "end": 112.98,
+      "text": "and the vibration",
+      "words": [
+        {
+          "t": 112.24,
+          "text": "and"
+        },
+        {
+          "t": 112.34,
+          "text": "the"
+        },
+        {
+          "t": 112.62,
+          "text": "vibration"
+        }
+      ]
+    },
+    {
+      "start": 119.776,
+      "end": 121.7,
+      "text": "I just need that I hit the road",
+      "words": [
+        {
+          "t": 119.776,
+          "text": "I"
+        },
+        {
+          "t": 120.28,
+          "text": "just"
+        },
+        {
+          "t": 120.28,
+          "text": "need"
+        },
+        {
+          "t": 120.28,
+          "text": "that"
+        },
+        {
+          "t": 120.28,
+          "text": "I"
+        },
+        {
+          "t": 120.28,
+          "text": "hit"
+        },
+        {
+          "t": 121.58,
+          "text": "the"
+        },
+        {
+          "t": 121.7,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 121.7,
+      "end": 121.7,
+      "text": "Every",
+      "words": [
+        {
+          "t": 121.7,
+          "text": "Every"
+        }
+      ]
+    },
+    {
+      "start": 126.84,
+      "end": 128.26,
+      "text": "single thing that you try",
+      "words": [
+        {
+          "t": 126.84,
+          "text": "single"
+        },
+        {
+          "t": 127.04,
+          "text": "thing"
+        },
+        {
+          "t": 127.12,
+          "text": "that"
+        },
+        {
+          "t": 127.136,
+          "text": "you"
+        },
+        {
+          "t": 128.26,
+          "text": "try"
+        }
+      ]
+    },
+    {
+      "start": 128.26,
+      "end": 128.32,
+      "text": "As soon as it comes to me",
+      "words": [
+        {
+          "t": 128.26,
+          "text": "As"
+        },
+        {
+          "t": 128.32,
+          "text": "soon"
+        },
+        {
+          "t": 128.32,
+          "text": "as"
+        },
+        {
+          "t": 128.32,
+          "text": "it"
+        },
+        {
+          "t": 128.32,
+          "text": "comes"
+        },
+        {
+          "t": 128.32,
+          "text": "to"
+        },
+        {
+          "t": 128.32,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 128.32,
+      "end": 128.44,
+      "text": "I start a car你",
+      "words": [
+        {
+          "t": 128.32,
+          "text": "I"
+        },
+        {
+          "t": 128.32,
+          "text": "start"
+        },
+        {
+          "t": 128.32,
+          "text": "a"
+        },
+        {
+          "t": 128.32,
+          "text": "car你"
+        }
+      ]
+    },
+    {
+      "start": 128.44,
+      "end": 128.58,
+      "text": "Ric fragile",
+      "words": [
+        {
+          "t": 128.44,
+          "text": "Ric"
+        },
+        {
+          "t": 128.58,
+          "text": "fragile"
+        }
+      ]
+    },
+    {
+      "start": 128.58,
+      "end": 130.02,
+      "text": "I take up the car",
+      "words": [
+        {
+          "t": 128.58,
+          "text": "I"
+        },
+        {
+          "t": 128.98,
+          "text": "take"
+        },
+        {
+          "t": 129.66,
+          "text": "up"
+        },
+        {
+          "t": 130.02,
+          "text": "the"
+        },
+        {
+          "t": 130.02,
+          "text": "car"
+        }
+      ]
+    },
+    {
+      "start": 130.02,
+      "end": 133.64,
+      "text": "I devour every last drop",
+      "words": [
+        {
+          "t": 130.02,
+          "text": "I"
+        },
+        {
+          "t": 130.02,
+          "text": "devour"
+        },
+        {
+          "t": 133.64,
+          "text": "every"
+        },
+        {
+          "t": 133.64,
+          "text": "last"
+        },
+        {
+          "t": 133.64,
+          "text": "drop"
+        }
+      ]
+    },
+    {
+      "start": 133.64,
+      "end": 133.9,
+      "text": "That this world is yours",
+      "words": [
+        {
+          "t": 133.64,
+          "text": "That"
+        },
+        {
+          "t": 133.664,
+          "text": "this"
+        },
+        {
+          "t": 133.8,
+          "text": "world"
+        },
+        {
+          "t": 133.9,
+          "text": "is"
+        },
+        {
+          "t": 133.9,
+          "text": "yours"
+        }
+      ]
+    },
+    {
+      "start": 133.9,
+      "end": 133.96,
+      "text": "This từ sitten",
+      "words": [
+        {
+          "t": 133.9,
+          "text": "This"
+        },
+        {
+          "t": 133.9,
+          "text": "từ"
+        },
+        {
+          "t": 133.9,
+          "text": "sitten"
+        }
+      ]
+    },
+    {
+      "start": 133.96,
+      "end": 135.48,
+      "text": "It's not just does to you",
+      "words": [
+        {
+          "t": 133.96,
+          "text": "It's"
+        },
+        {
+          "t": 134.36,
+          "text": "not"
+        },
+        {
+          "t": 134.36,
+          "text": "just"
+        },
+        {
+          "t": 134.36,
+          "text": "does"
+        },
+        {
+          "t": 134.36,
+          "text": "to"
+        },
+        {
+          "t": 134.36,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 137.12,
+      "end": 145.86,
+      "text": "I keep getting the idea",
+      "words": [
+        {
+          "t": 137.12,
+          "text": "I"
+        },
+        {
+          "t": 137.92,
+          "text": "keep"
+        },
+        {
+          "t": 137.92,
+          "text": "getting"
+        },
+        {
+          "t": 145.86,
+          "text": "the"
+        },
+        {
+          "t": 145.86,
+          "text": "idea"
+        }
+      ]
+    },
+    {
+      "start": 148.192,
+      "end": 148.6,
+      "text": "Typical baby",
+      "words": [
+        {
+          "t": 148.192,
+          "text": "Typical"
+        },
+        {
+          "t": 148.52,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 179.232,
+      "end": 182.18,
+      "text": "I'll meet you halfway when the silence speaks",
+      "words": [
+        {
+          "t": 179.232,
+          "text": "I'll"
+        },
+        {
+          "t": 179.34,
+          "text": "meet"
+        },
+        {
+          "t": 179.48,
+          "text": "you"
+        },
+        {
+          "t": 179.74,
+          "text": "halfway"
+        },
+        {
+          "t": 180.3,
+          "text": "when"
+        },
+        {
+          "t": 180.84,
+          "text": "the"
+        },
+        {
+          "t": 181.0,
+          "text": "silence"
+        },
+        {
+          "t": 181.72,
+          "text": "speaks"
+        }
+      ]
+    },
+    {
+      "start": 182.6,
+      "end": 183.94,
+      "text": "I feel what you say",
+      "words": [
+        {
+          "t": 182.6,
+          "text": "I"
+        },
+        {
+          "t": 182.7,
+          "text": "feel"
+        },
+        {
+          "t": 183.06,
+          "text": "what"
+        },
+        {
+          "t": 183.26,
+          "text": "you"
+        },
+        {
+          "t": 183.44,
+          "text": "say"
+        }
+      ]
+    },
+    {
+      "start": 183.94,
+      "end": 187.32,
+      "text": "From Brooklyn to Manila to Laker to Saigon",
+      "words": [
+        {
+          "t": 183.94,
+          "text": "From"
+        },
+        {
+          "t": 184.28,
+          "text": "Brooklyn"
+        },
+        {
+          "t": 184.9,
+          "text": "to"
+        },
+        {
+          "t": 185.12,
+          "text": "Manila"
+        },
+        {
+          "t": 185.72,
+          "text": "to"
+        },
+        {
+          "t": 186.0,
+          "text": "Laker"
+        },
+        {
+          "t": 186.58,
+          "text": "to"
+        },
+        {
+          "t": 186.84,
+          "text": "Saigon"
+        }
+      ]
+    },
+    {
+      "start": 187.32,
+      "end": 190.18,
+      "text": "Every heartbeat speaks the same",
+      "words": [
+        {
+          "t": 187.32,
+          "text": "Every"
+        },
+        {
+          "t": 187.8,
+          "text": "heartbeat"
+        },
+        {
+          "t": 188.56,
+          "text": "speaks"
+        },
+        {
+          "t": 189.14,
+          "text": "the"
+        },
+        {
+          "t": 189.48,
+          "text": "same"
+        }
+      ]
+    },
+    {
+      "start": 192.98,
+      "end": 194.24,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 192.98,
+          "text": "Say"
+        },
+        {
+          "t": 193.48,
+          "text": "it"
+        },
+        {
+          "t": 193.62,
+          "text": "with"
+        },
+        {
+          "t": 193.94,
+          "text": "your"
+        },
+        {
+          "t": 194.04,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 194.62,
+      "end": 194.848,
+      "text": "Lord,",
+      "words": [
+        {
+          "t": 194.62,
+          "text": "Lord,"
+        }
+      ]
+    },
+    {
+      "start": 195.52,
+      "end": 199.3,
+      "text": "hold me",
+      "words": [
+        {
+          "t": 195.52,
+          "text": "hold"
+        },
+        {
+          "t": 196.6,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 199.81,
+      "end": 201.216,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 199.81,
+          "text": "Say"
+        },
+        {
+          "t": 200.36,
+          "text": "it"
+        },
+        {
+          "t": 200.58,
+          "text": "with"
+        },
+        {
+          "t": 200.74,
+          "text": "your"
+        },
+        {
+          "t": 200.96,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 201.76,
+      "end": 206.4,
+      "text": "Show me, know me",
+      "words": [
+        {
+          "t": 201.76,
+          "text": "Show"
+        },
+        {
+          "t": 202.2,
+          "text": "me,"
+        },
+        {
+          "t": 203.22,
+          "text": "know"
+        },
+        {
+          "t": 205.6,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 207.0,
+      "end": 208.28,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 207.0,
+          "text": "Say"
+        },
+        {
+          "t": 207.4,
+          "text": "it"
+        },
+        {
+          "t": 207.56,
+          "text": "with"
+        },
+        {
+          "t": 207.78,
+          "text": "your"
+        },
+        {
+          "t": 207.88,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 208.38,
+      "end": 210.88,
+      "text": "Make me feel",
+      "words": [
+        {
+          "t": 208.38,
+          "text": "Make"
+        },
+        {
+          "t": 209.14,
+          "text": "me"
+        },
+        {
+          "t": 210.34,
+          "text": "feel"
+        }
+      ]
+    },
+    {
+      "start": 210.88,
+      "end": 212.48,
+      "text": "Every little heartbeat",
+      "words": [
+        {
+          "t": 210.88,
+          "text": "Every"
+        },
+        {
+          "t": 211.62,
+          "text": "little"
+        },
+        {
+          "t": 212.1,
+          "text": "heartbeat"
+        }
+      ]
+    },
+    {
+      "start": 214.14,
+      "end": 215.28,
+      "text": "Say it with your body",
+      "words": [
+        {
+          "t": 214.14,
+          "text": "Say"
+        },
+        {
+          "t": 214.24,
+          "text": "it"
+        },
+        {
+          "t": 214.46,
+          "text": "with"
+        },
+        {
+          "t": 214.688,
+          "text": "your"
+        },
+        {
+          "t": 214.84,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 219.66,
+      "end": 222.26,
+      "text": "Just say it with your body",
+      "words": [
+        {
+          "t": 219.66,
+          "text": "Just"
+        },
+        {
+          "t": 220.64,
+          "text": "say"
+        },
+        {
+          "t": 221.1,
+          "text": "it"
+        },
+        {
+          "t": 221.4,
+          "text": "with"
+        },
+        {
+          "t": 221.52,
+          "text": "your"
+        },
+        {
+          "t": 221.76,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 239.34,
+      "end": 242.02,
+      "text": "He never had to say a word",
+      "words": [
+        {
+          "t": 239.34,
+          "text": "He"
+        },
+        {
+          "t": 239.44,
+          "text": "never"
+        },
+        {
+          "t": 239.78,
+          "text": "had"
+        },
+        {
+          "t": 240.28,
+          "text": "to"
+        },
+        {
+          "t": 240.7,
+          "text": "say"
+        },
+        {
+          "t": 241.18,
+          "text": "a"
+        },
+        {
+          "t": 241.56,
+          "text": "word"
+        }
+      ]
+    },
+    {
+      "start": 242.92,
+      "end": 244.1,
+      "text": "I heard you",
+      "words": [
+        {
+          "t": 242.92,
+          "text": "I"
+        },
+        {
+          "t": 243.02,
+          "text": "heard"
+        },
+        {
+          "t": 243.5,
+          "text": "you"
+        }
+      ]
+    }
+  ]
+}

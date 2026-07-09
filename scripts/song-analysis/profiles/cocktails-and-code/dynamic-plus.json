@@ -1,0 +1,24 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 52,
+   "end": 70,
+   "reactor": "fireworks",
+   "why": "Matches the Chorus's 'Cinematic Expansion' and festival energy; celebrates the triumph of "
+  },
+  {
+   "start": 154,
+   "end": 179,
+   "reactor": "orbit",
+   "why": "Captures Verse 2's 'Confident Resolve' and the song's electronic texture with a cosmic, fl"
+  }
+ ],
+ "words": {
+  "glow": "neon",
+  "logic": "type",
+  "focus": "pulse",
+  "debug": "shatter",
+  "future": "bloom"
+ }
+}

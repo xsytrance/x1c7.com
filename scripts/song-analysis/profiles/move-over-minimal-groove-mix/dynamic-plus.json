@@ -1,0 +1,32 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 52,
+   "end": 61,
+   "reactor": "aquarium",
+   "why": "The Post-Hook crowd chant offers a collective, floaty moment of deep bass resonance and so"
+  },
+  {
+   "start": 135,
+   "end": 149,
+   "reactor": "sizzle",
+   "why": "The Pre-Hook builds tension before the final heat; 'sizzle' captures the rising summer swe"
+  },
+  {
+   "start": 158,
+   "end": 167.9,
+   "reactor": "handwriting",
+   "why": "The Bridge is a minimalist pause emphasizing singular presence; 'handwriting' fits the int"
+  }
+ ],
+ "words": {
+  "heat": "burn",
+  "room": "echo",
+  "summer": "bloom",
+  "smooth": "liquid",
+  "drip": "shimmer",
+  "swagger": "pulse",
+  "move": "slam"
+ }
+}

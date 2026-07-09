@@ -1,0 +1,3246 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 5.2,
+      "end": 6.58,
+      "text": "Hey yo,",
+      "words": [
+        {
+          "t": 5.2,
+          "text": "Hey"
+        },
+        {
+          "t": 6.2,
+          "text": "yo,"
+        }
+      ]
+    },
+    {
+      "start": 8.06,
+      "end": 10.02,
+      "text": "why the broom moving by itself?",
+      "words": [
+        {
+          "t": 8.06,
+          "text": "why"
+        },
+        {
+          "t": 8.16,
+          "text": "the"
+        },
+        {
+          "t": 8.38,
+          "text": "broom"
+        },
+        {
+          "t": 8.8,
+          "text": "moving"
+        },
+        {
+          "t": 9.2,
+          "text": "by"
+        },
+        {
+          "t": 9.5,
+          "text": "itself?"
+        }
+      ]
+    },
+    {
+      "start": 14.02,
+      "end": 16.52,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 14.02,
+          "text": "Brooms"
+        },
+        {
+          "t": 14.54,
+          "text": "in"
+        },
+        {
+          "t": 15.14,
+          "text": "the"
+        },
+        {
+          "t": 15.26,
+          "text": "boiler"
+        },
+        {
+          "t": 15.88,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 29.14,
+      "end": 30.16,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 29.14,
+          "text": "Brooms"
+        },
+        {
+          "t": 29.24,
+          "text": "in"
+        },
+        {
+          "t": 29.44,
+          "text": "the"
+        },
+        {
+          "t": 29.6,
+          "text": "boiler"
+        },
+        {
+          "t": 29.84,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 30.16,
+      "end": 31.14,
+      "text": "Water starts to rise",
+      "words": [
+        {
+          "t": 30.16,
+          "text": "Water"
+        },
+        {
+          "t": 30.38,
+          "text": "starts"
+        },
+        {
+          "t": 30.6,
+          "text": "to"
+        },
+        {
+          "t": 30.84,
+          "text": "rise"
+        }
+      ]
+    },
+    {
+      "start": 31.14,
+      "end": 33.68,
+      "text": "Little mouse grinning with the stars in his eyes",
+      "words": [
+        {
+          "t": 31.14,
+          "text": "Little"
+        },
+        {
+          "t": 31.58,
+          "text": "mouse"
+        },
+        {
+          "t": 31.96,
+          "text": "grinning"
+        },
+        {
+          "t": 32.38,
+          "text": "with"
+        },
+        {
+          "t": 32.52,
+          "text": "the"
+        },
+        {
+          "t": 32.66,
+          "text": "stars"
+        },
+        {
+          "t": 32.98,
+          "text": "in"
+        },
+        {
+          "t": 33.18,
+          "text": "his"
+        },
+        {
+          "t": 33.34,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 33.68,
+      "end": 35.1,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 33.68,
+          "text": "Brooms"
+        },
+        {
+          "t": 34.16,
+          "text": "in"
+        },
+        {
+          "t": 34.38,
+          "text": "the"
+        },
+        {
+          "t": 34.5,
+          "text": "boiler"
+        },
+        {
+          "t": 34.76,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 35.1,
+      "end": 36.04,
+      "text": "Knockin' at the door",
+      "words": [
+        {
+          "t": 35.1,
+          "text": "Knockin'"
+        },
+        {
+          "t": 35.54,
+          "text": "at"
+        },
+        {
+          "t": 35.6,
+          "text": "the"
+        },
+        {
+          "t": 35.74,
+          "text": "door"
+        }
+      ]
+    },
+    {
+      "start": 36.04,
+      "end": 37.18,
+      "text": "Spell got loose",
+      "words": [
+        {
+          "t": 36.04,
+          "text": "Spell"
+        },
+        {
+          "t": 36.64,
+          "text": "got"
+        },
+        {
+          "t": 36.8,
+          "text": "loose"
+        }
+      ]
+    },
+    {
+      "start": 37.18,
+      "end": 38.38,
+      "text": "And they're hungry for more",
+      "words": [
+        {
+          "t": 37.18,
+          "text": "And"
+        },
+        {
+          "t": 37.44,
+          "text": "they're"
+        },
+        {
+          "t": 37.62,
+          "text": "hungry"
+        },
+        {
+          "t": 37.8,
+          "text": "for"
+        },
+        {
+          "t": 38.1,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 38.38,
+      "end": 39.66,
+      "text": "Black and white world",
+      "words": [
+        {
+          "t": 38.38,
+          "text": "Black"
+        },
+        {
+          "t": 38.92,
+          "text": "and"
+        },
+        {
+          "t": 39.12,
+          "text": "white"
+        },
+        {
+          "t": 39.36,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 39.66,
+      "end": 41.02,
+      "text": "But the money's still gold",
+      "words": [
+        {
+          "t": 39.66,
+          "text": "But"
+        },
+        {
+          "t": 39.88,
+          "text": "the"
+        },
+        {
+          "t": 40.02,
+          "text": "money's"
+        },
+        {
+          "t": 40.36,
+          "text": "still"
+        },
+        {
+          "t": 40.52,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 41.02,
+      "end": 43.4,
+      "text": "Whole tower shakin' when the wild drums roll",
+      "words": [
+        {
+          "t": 41.02,
+          "text": "Whole"
+        },
+        {
+          "t": 41.34,
+          "text": "tower"
+        },
+        {
+          "t": 41.72,
+          "text": "shakin'"
+        },
+        {
+          "t": 42.22,
+          "text": "when"
+        },
+        {
+          "t": 42.34,
+          "text": "the"
+        },
+        {
+          "t": 42.52,
+          "text": "wild"
+        },
+        {
+          "t": 42.76,
+          "text": "drums"
+        },
+        {
+          "t": 43.06,
+          "text": "roll"
+        }
+      ]
+    },
+    {
+      "start": 43.4,
+      "end": 44.92,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 43.4,
+          "text": "Brooms"
+        },
+        {
+          "t": 43.98,
+          "text": "in"
+        },
+        {
+          "t": 44.2,
+          "text": "the"
+        },
+        {
+          "t": 44.32,
+          "text": "boiler"
+        },
+        {
+          "t": 44.58,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 44.92,
+      "end": 45.76,
+      "text": "Moon turn blue",
+      "words": [
+        {
+          "t": 44.92,
+          "text": "Moon"
+        },
+        {
+          "t": 45.18,
+          "text": "turn"
+        },
+        {
+          "t": 45.42,
+          "text": "blue"
+        }
+      ]
+    },
+    {
+      "start": 46.01,
+      "end": 46.5,
+      "text": "One more time",
+      "words": [
+        {
+          "t": 46.01,
+          "text": "One"
+        },
+        {
+          "t": 46.36,
+          "text": "more"
+        },
+        {
+          "t": 46.5,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 46.52,
+      "end": 48.3,
+      "text": "Wrong spell and the hope through doom",
+      "words": [
+        {
+          "t": 46.52,
+          "text": "Wrong"
+        },
+        {
+          "t": 46.64,
+          "text": "spell"
+        },
+        {
+          "t": 46.94,
+          "text": "and"
+        },
+        {
+          "t": 47.28,
+          "text": "the"
+        },
+        {
+          "t": 47.4,
+          "text": "hope"
+        },
+        {
+          "t": 47.68,
+          "text": "through"
+        },
+        {
+          "t": 47.94,
+          "text": "doom"
+        }
+      ]
+    },
+    {
+      "start": 48.3,
+      "end": 50.7,
+      "text": "I came through small with the hat pulled low",
+      "words": [
+        {
+          "t": 48.3,
+          "text": "I"
+        },
+        {
+          "t": 48.66,
+          "text": "came"
+        },
+        {
+          "t": 48.88,
+          "text": "through"
+        },
+        {
+          "t": 49.12,
+          "text": "small"
+        },
+        {
+          "t": 49.46,
+          "text": "with"
+        },
+        {
+          "t": 49.72,
+          "text": "the"
+        },
+        {
+          "t": 49.9,
+          "text": "hat"
+        },
+        {
+          "t": 50.12,
+          "text": "pulled"
+        },
+        {
+          "t": 50.4,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 50.7,
+      "end": 53.16,
+      "text": "Stars on the brim and the gloves still glow",
+      "words": [
+        {
+          "t": 50.7,
+          "text": "Stars"
+        },
+        {
+          "t": 51.14,
+          "text": "on"
+        },
+        {
+          "t": 51.56,
+          "text": "the"
+        },
+        {
+          "t": 51.7,
+          "text": "brim"
+        },
+        {
+          "t": 52.02,
+          "text": "and"
+        },
+        {
+          "t": 52.18,
+          "text": "the"
+        },
+        {
+          "t": 52.34,
+          "text": "gloves"
+        },
+        {
+          "t": 52.58,
+          "text": "still"
+        },
+        {
+          "t": 52.82,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 53.16,
+      "end": 55.6,
+      "text": "Strings go stab but swoon go low",
+      "words": [
+        {
+          "t": 53.16,
+          "text": "Strings"
+        },
+        {
+          "t": 53.9,
+          "text": "go"
+        },
+        {
+          "t": 54.0,
+          "text": "stab"
+        },
+        {
+          "t": 54.4,
+          "text": "but"
+        },
+        {
+          "t": 54.76,
+          "text": "swoon"
+        },
+        {
+          "t": 55.06,
+          "text": "go"
+        },
+        {
+          "t": 55.24,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 55.71,
+      "end": 58.02,
+      "text": "Broom got the bucket and it march like whoa",
+      "words": [
+        {
+          "t": 55.71,
+          "text": "Broom"
+        },
+        {
+          "t": 56.26,
+          "text": "got"
+        },
+        {
+          "t": 56.44,
+          "text": "the"
+        },
+        {
+          "t": 56.64,
+          "text": "bucket"
+        },
+        {
+          "t": 56.9,
+          "text": "and"
+        },
+        {
+          "t": 57.1,
+          "text": "it"
+        },
+        {
+          "t": 57.26,
+          "text": "march"
+        },
+        {
+          "t": 57.48,
+          "text": "like"
+        },
+        {
+          "t": 57.7,
+          "text": "whoa"
+        }
+      ]
+    },
+    {
+      "start": 58.02,
+      "end": 60.48,
+      "text": "Told me don't cut so I touched back quick",
+      "words": [
+        {
+          "t": 58.02,
+          "text": "Told"
+        },
+        {
+          "t": 58.48,
+          "text": "me"
+        },
+        {
+          "t": 58.76,
+          "text": "don't"
+        },
+        {
+          "t": 59.1,
+          "text": "cut"
+        },
+        {
+          "t": 59.16,
+          "text": "so"
+        },
+        {
+          "t": 59.46,
+          "text": "I"
+        },
+        {
+          "t": 59.66,
+          "text": "touched"
+        },
+        {
+          "t": 59.92,
+          "text": "back"
+        },
+        {
+          "t": 60.2,
+          "text": "quick"
+        }
+      ]
+    },
+    {
+      "start": 60.48,
+      "end": 63.0,
+      "text": "Now the whole tower sick and the floorboards shift",
+      "words": [
+        {
+          "t": 60.48,
+          "text": "Now"
+        },
+        {
+          "t": 60.72,
+          "text": "the"
+        },
+        {
+          "t": 60.92,
+          "text": "whole"
+        },
+        {
+          "t": 61.14,
+          "text": "tower"
+        },
+        {
+          "t": 61.44,
+          "text": "sick"
+        },
+        {
+          "t": 61.76,
+          "text": "and"
+        },
+        {
+          "t": 62.0,
+          "text": "the"
+        },
+        {
+          "t": 62.12,
+          "text": "floorboards"
+        },
+        {
+          "t": 62.6,
+          "text": "shift"
+        }
+      ]
+    },
+    {
+      "start": 63.0,
+      "end": 65.52,
+      "text": "One broom, two brooms, three more rise",
+      "words": [
+        {
+          "t": 63.0,
+          "text": "One"
+        },
+        {
+          "t": 63.22,
+          "text": "broom,"
+        },
+        {
+          "t": 63.7,
+          "text": "two"
+        },
+        {
+          "t": 63.84,
+          "text": "brooms,"
+        },
+        {
+          "t": 64.5,
+          "text": "three"
+        },
+        {
+          "t": 64.76,
+          "text": "more"
+        },
+        {
+          "t": 65.08,
+          "text": "rise"
+        }
+      ]
+    },
+    {
+      "start": 65.52,
+      "end": 68.0,
+      "text": "Black ink magic in the cartoon eyes",
+      "words": [
+        {
+          "t": 65.52,
+          "text": "Black"
+        },
+        {
+          "t": 65.9,
+          "text": "ink"
+        },
+        {
+          "t": 66.22,
+          "text": "magic"
+        },
+        {
+          "t": 66.6,
+          "text": "in"
+        },
+        {
+          "t": 66.94,
+          "text": "the"
+        },
+        {
+          "t": 67.04,
+          "text": "cartoon"
+        },
+        {
+          "t": 67.46,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 68.0,
+      "end": 70.36,
+      "text": "Symphony boom when the stairwell crack",
+      "words": [
+        {
+          "t": 68.0,
+          "text": "Symphony"
+        },
+        {
+          "t": 68.58,
+          "text": "boom"
+        },
+        {
+          "t": 69.02,
+          "text": "when"
+        },
+        {
+          "t": 69.4,
+          "text": "the"
+        },
+        {
+          "t": 69.52,
+          "text": "stairwell"
+        },
+        {
+          "t": 69.98,
+          "text": "crack"
+        }
+      ]
+    },
+    {
+      "start": 70.36,
+      "end": 72.82,
+      "text": "Hobo line howlin' and the shadows clap back",
+      "words": [
+        {
+          "t": 70.36,
+          "text": "Hobo"
+        },
+        {
+          "t": 70.94,
+          "text": "line"
+        },
+        {
+          "t": 71.22,
+          "text": "howlin'"
+        },
+        {
+          "t": 71.74,
+          "text": "and"
+        },
+        {
+          "t": 71.82,
+          "text": "the"
+        },
+        {
+          "t": 71.94,
+          "text": "shadows"
+        },
+        {
+          "t": 72.26,
+          "text": "clap"
+        },
+        {
+          "t": 72.44,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 72.93,
+      "end": 75.28,
+      "text": "Moonlight bends when the wand goes snap",
+      "words": [
+        {
+          "t": 72.93,
+          "text": "Moonlight"
+        },
+        {
+          "t": 73.68,
+          "text": "bends"
+        },
+        {
+          "t": 73.98,
+          "text": "when"
+        },
+        {
+          "t": 74.28,
+          "text": "the"
+        },
+        {
+          "t": 74.44,
+          "text": "wand"
+        },
+        {
+          "t": 74.66,
+          "text": "goes"
+        },
+        {
+          "t": 74.92,
+          "text": "snap"
+        }
+      ]
+    },
+    {
+      "start": 75.28,
+      "end": 76.5,
+      "text": "Shadow on the wall",
+      "words": [
+        {
+          "t": 75.28,
+          "text": "Shadow"
+        },
+        {
+          "t": 75.9,
+          "text": "on"
+        },
+        {
+          "t": 76.16,
+          "text": "the"
+        },
+        {
+          "t": 76.26,
+          "text": "wall"
+        }
+      ]
+    },
+    {
+      "start": 76.5,
+      "end": 77.74,
+      "text": "With the long-eared cap",
+      "words": [
+        {
+          "t": 76.5,
+          "text": "With"
+        },
+        {
+          "t": 76.7,
+          "text": "the"
+        },
+        {
+          "t": 76.88,
+          "text": "long"
+        },
+        {
+          "t": 77.16,
+          "text": "-eared"
+        },
+        {
+          "t": 77.44,
+          "text": "cap"
+        }
+      ]
+    },
+    {
+      "start": 77.74,
+      "end": 78.44,
+      "text": "I ain't scared",
+      "words": [
+        {
+          "t": 77.74,
+          "text": "I"
+        },
+        {
+          "t": 77.96,
+          "text": "ain't"
+        },
+        {
+          "t": 78.16,
+          "text": "scared"
+        }
+      ]
+    },
+    {
+      "start": 78.44,
+      "end": 80.24,
+      "text": "I'm just deep in the trick",
+      "words": [
+        {
+          "t": 78.44,
+          "text": "I'm"
+        },
+        {
+          "t": 79.08,
+          "text": "just"
+        },
+        {
+          "t": 79.28,
+          "text": "deep"
+        },
+        {
+          "t": 79.6,
+          "text": "in"
+        },
+        {
+          "t": 79.82,
+          "text": "the"
+        },
+        {
+          "t": 79.94,
+          "text": "trick"
+        }
+      ]
+    },
+    {
+      "start": 80.24,
+      "end": 82.62,
+      "text": "Too much power for a little dude slick",
+      "words": [
+        {
+          "t": 80.24,
+          "text": "Too"
+        },
+        {
+          "t": 80.56,
+          "text": "much"
+        },
+        {
+          "t": 81.06,
+          "text": "power"
+        },
+        {
+          "t": 81.38,
+          "text": "for"
+        },
+        {
+          "t": 81.66,
+          "text": "a"
+        },
+        {
+          "t": 81.82,
+          "text": "little"
+        },
+        {
+          "t": 82.0,
+          "text": "dude"
+        },
+        {
+          "t": 82.28,
+          "text": "slick"
+        }
+      ]
+    },
+    {
+      "start": 82.62,
+      "end": 85.2,
+      "text": "Black and white frame but the gold still gleam",
+      "words": [
+        {
+          "t": 82.62,
+          "text": "Black"
+        },
+        {
+          "t": 83.1,
+          "text": "and"
+        },
+        {
+          "t": 83.38,
+          "text": "white"
+        },
+        {
+          "t": 83.58,
+          "text": "frame"
+        },
+        {
+          "t": 83.88,
+          "text": "but"
+        },
+        {
+          "t": 84.1,
+          "text": "the"
+        },
+        {
+          "t": 84.26,
+          "text": "gold"
+        },
+        {
+          "t": 84.52,
+          "text": "still"
+        },
+        {
+          "t": 84.72,
+          "text": "gleam"
+        }
+      ]
+    },
+    {
+      "start": 85.2,
+      "end": 87.56,
+      "text": "Money in the fog and the magic in steam",
+      "words": [
+        {
+          "t": 85.2,
+          "text": "Money"
+        },
+        {
+          "t": 85.76,
+          "text": "in"
+        },
+        {
+          "t": 85.98,
+          "text": "the"
+        },
+        {
+          "t": 86.12,
+          "text": "fog"
+        },
+        {
+          "t": 86.4,
+          "text": "and"
+        },
+        {
+          "t": 86.64,
+          "text": "the"
+        },
+        {
+          "t": 86.74,
+          "text": "magic"
+        },
+        {
+          "t": 87.02,
+          "text": "in"
+        },
+        {
+          "t": 87.22,
+          "text": "steam"
+        }
+      ]
+    },
+    {
+      "start": 88.02,
+      "end": 88.92,
+      "text": "Who cast that?",
+      "words": [
+        {
+          "t": 88.02,
+          "text": "Who"
+        },
+        {
+          "t": 88.3,
+          "text": "cast"
+        },
+        {
+          "t": 88.62,
+          "text": "that?"
+        }
+      ]
+    },
+    {
+      "start": 88.96,
+      "end": 89.36,
+      "text": "Not me",
+      "words": [
+        {
+          "t": 88.96,
+          "text": "Not"
+        },
+        {
+          "t": 89.08,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 89.36,
+      "end": 90.52,
+      "text": "Who touched the hat?",
+      "words": [
+        {
+          "t": 89.36,
+          "text": "Who"
+        },
+        {
+          "t": 89.64,
+          "text": "touched"
+        },
+        {
+          "t": 90.08,
+          "text": "the"
+        },
+        {
+          "t": 90.28,
+          "text": "hat?"
+        }
+      ]
+    },
+    {
+      "start": 90.72,
+      "end": 91.24,
+      "text": "Not me",
+      "words": [
+        {
+          "t": 90.72,
+          "text": "Not"
+        },
+        {
+          "t": 90.94,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 91.24,
+      "end": 92.54,
+      "text": "Who flooded the room?",
+      "words": [
+        {
+          "t": 91.24,
+          "text": "Who"
+        },
+        {
+          "t": 91.56,
+          "text": "flooded"
+        },
+        {
+          "t": 92.0,
+          "text": "the"
+        },
+        {
+          "t": 92.22,
+          "text": "room?"
+        }
+      ]
+    },
+    {
+      "start": 92.9,
+      "end": 93.7,
+      "text": "Couldn't be me",
+      "words": [
+        {
+          "t": 92.9,
+          "text": "Couldn't"
+        },
+        {
+          "t": 93.2,
+          "text": "be"
+        },
+        {
+          "t": 93.36,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 94.2,
+      "end": 96.54,
+      "text": "Then why the broom got a whole army?",
+      "words": [
+        {
+          "t": 94.2,
+          "text": "Then"
+        },
+        {
+          "t": 94.48,
+          "text": "why"
+        },
+        {
+          "t": 94.6,
+          "text": "the"
+        },
+        {
+          "t": 94.78,
+          "text": "broom"
+        },
+        {
+          "t": 95.1,
+          "text": "got"
+        },
+        {
+          "t": 95.38,
+          "text": "a"
+        },
+        {
+          "t": 95.56,
+          "text": "whole"
+        },
+        {
+          "t": 95.88,
+          "text": "army?"
+        }
+      ]
+    },
+    {
+      "start": 97.68,
+      "end": 98.96,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 97.68,
+          "text": "Brooms"
+        },
+        {
+          "t": 98.14,
+          "text": "in"
+        },
+        {
+          "t": 98.3,
+          "text": "the"
+        },
+        {
+          "t": 98.4,
+          "text": "boiler"
+        },
+        {
+          "t": 98.68,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 98.96,
+      "end": 99.94,
+      "text": "Water starts to rise",
+      "words": [
+        {
+          "t": 98.96,
+          "text": "Water"
+        },
+        {
+          "t": 99.24,
+          "text": "starts"
+        },
+        {
+          "t": 99.44,
+          "text": "to"
+        },
+        {
+          "t": 99.66,
+          "text": "rise"
+        }
+      ]
+    },
+    {
+      "start": 99.94,
+      "end": 102.54,
+      "text": "Little mouse grinning with the stars in his eyes",
+      "words": [
+        {
+          "t": 99.94,
+          "text": "Little"
+        },
+        {
+          "t": 100.4,
+          "text": "mouse"
+        },
+        {
+          "t": 100.8,
+          "text": "grinning"
+        },
+        {
+          "t": 101.24,
+          "text": "with"
+        },
+        {
+          "t": 101.34,
+          "text": "the"
+        },
+        {
+          "t": 101.5,
+          "text": "stars"
+        },
+        {
+          "t": 101.78,
+          "text": "in"
+        },
+        {
+          "t": 102.0,
+          "text": "his"
+        },
+        {
+          "t": 102.16,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 102.54,
+      "end": 103.86,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 102.54,
+          "text": "Brooms"
+        },
+        {
+          "t": 102.98,
+          "text": "in"
+        },
+        {
+          "t": 103.2,
+          "text": "the"
+        },
+        {
+          "t": 103.32,
+          "text": "boiler"
+        },
+        {
+          "t": 103.58,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 103.86,
+      "end": 104.86,
+      "text": "Knockin' at the door",
+      "words": [
+        {
+          "t": 103.86,
+          "text": "Knockin'"
+        },
+        {
+          "t": 104.34,
+          "text": "at"
+        },
+        {
+          "t": 104.42,
+          "text": "the"
+        },
+        {
+          "t": 104.56,
+          "text": "door"
+        }
+      ]
+    },
+    {
+      "start": 104.86,
+      "end": 106.02,
+      "text": "Spell got loose",
+      "words": [
+        {
+          "t": 104.86,
+          "text": "Spell"
+        },
+        {
+          "t": 105.52,
+          "text": "got"
+        },
+        {
+          "t": 105.64,
+          "text": "loose"
+        }
+      ]
+    },
+    {
+      "start": 106.02,
+      "end": 106.48,
+      "text": "And they're hungry for more",
+      "words": [
+        {
+          "t": 106.02,
+          "text": "And"
+        },
+        {
+          "t": 106.3,
+          "text": "they're"
+        },
+        {
+          "t": 106.48,
+          "text": "hungry"
+        },
+        {
+          "t": 106.48,
+          "text": "for"
+        },
+        {
+          "t": 106.48,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 107.0,
+      "end": 109.82,
+      "text": "Black and white world but the money still gold",
+      "words": [
+        {
+          "t": 107.0,
+          "text": "Black"
+        },
+        {
+          "t": 107.6,
+          "text": "and"
+        },
+        {
+          "t": 107.98,
+          "text": "white"
+        },
+        {
+          "t": 108.16,
+          "text": "world"
+        },
+        {
+          "t": 108.52,
+          "text": "but"
+        },
+        {
+          "t": 108.72,
+          "text": "the"
+        },
+        {
+          "t": 108.86,
+          "text": "money"
+        },
+        {
+          "t": 109.1,
+          "text": "still"
+        },
+        {
+          "t": 109.3,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 109.82,
+      "end": 112.22,
+      "text": "Whole tower shakin' when the wild drums roll",
+      "words": [
+        {
+          "t": 109.82,
+          "text": "Whole"
+        },
+        {
+          "t": 110.12,
+          "text": "tower"
+        },
+        {
+          "t": 110.5,
+          "text": "shakin'"
+        },
+        {
+          "t": 111.06,
+          "text": "when"
+        },
+        {
+          "t": 111.18,
+          "text": "the"
+        },
+        {
+          "t": 111.36,
+          "text": "wild"
+        },
+        {
+          "t": 111.6,
+          "text": "drums"
+        },
+        {
+          "t": 111.9,
+          "text": "roll"
+        }
+      ]
+    },
+    {
+      "start": 112.23,
+      "end": 113.7,
+      "text": "Brooms in the boiler room",
+      "words": [
+        {
+          "t": 112.23,
+          "text": "Brooms"
+        },
+        {
+          "t": 112.88,
+          "text": "in"
+        },
+        {
+          "t": 113.04,
+          "text": "the"
+        },
+        {
+          "t": 113.16,
+          "text": "boiler"
+        },
+        {
+          "t": 113.44,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 113.7,
+      "end": 114.6,
+      "text": "Moon turn blue",
+      "words": [
+        {
+          "t": 113.7,
+          "text": "Moon"
+        },
+        {
+          "t": 113.96,
+          "text": "turn"
+        },
+        {
+          "t": 114.28,
+          "text": "blue"
+        }
+      ]
+    },
+    {
+      "start": 114.6,
+      "end": 117.08,
+      "text": "One wrong spell and the whole crew doomed",
+      "words": [
+        {
+          "t": 114.6,
+          "text": "One"
+        },
+        {
+          "t": 115.12,
+          "text": "wrong"
+        },
+        {
+          "t": 115.52,
+          "text": "spell"
+        },
+        {
+          "t": 115.78,
+          "text": "and"
+        },
+        {
+          "t": 116.12,
+          "text": "the"
+        },
+        {
+          "t": 116.24,
+          "text": "whole"
+        },
+        {
+          "t": 116.46,
+          "text": "crew"
+        },
+        {
+          "t": 116.72,
+          "text": "doomed"
+        }
+      ]
+    },
+    {
+      "start": 117.08,
+      "end": 119.58,
+      "text": "I seen the mop grow teeth in the midnight haze",
+      "words": [
+        {
+          "t": 117.08,
+          "text": "I"
+        },
+        {
+          "t": 117.14,
+          "text": "seen"
+        },
+        {
+          "t": 117.34,
+          "text": "the"
+        },
+        {
+          "t": 117.52,
+          "text": "mop"
+        },
+        {
+          "t": 117.7,
+          "text": "grow"
+        },
+        {
+          "t": 117.94,
+          "text": "teeth"
+        },
+        {
+          "t": 118.32,
+          "text": "in"
+        },
+        {
+          "t": 118.62,
+          "text": "the"
+        },
+        {
+          "t": 118.72,
+          "text": "midnight"
+        },
+        {
+          "t": 119.02,
+          "text": "haze"
+        }
+      ]
+    },
+    {
+      "start": 119.58,
+      "end": 122.04,
+      "text": "Seen buckets pour rivers to a hundred stairways",
+      "words": [
+        {
+          "t": 119.58,
+          "text": "Seen"
+        },
+        {
+          "t": 119.88,
+          "text": "buckets"
+        },
+        {
+          "t": 120.18,
+          "text": "pour"
+        },
+        {
+          "t": 120.48,
+          "text": "rivers"
+        },
+        {
+          "t": 120.84,
+          "text": "to"
+        },
+        {
+          "t": 121.0,
+          "text": "a"
+        },
+        {
+          "t": 121.16,
+          "text": "hundred"
+        },
+        {
+          "t": 121.4,
+          "text": "stairways"
+        }
+      ]
+    },
+    {
+      "start": 122.04,
+      "end": 123.28,
+      "text": "Spidey laughin'",
+      "words": [
+        {
+          "t": 122.04,
+          "text": "Spidey"
+        },
+        {
+          "t": 122.76,
+          "text": "laughin'"
+        }
+      ]
+    },
+    {
+      "start": 123.3,
+      "end": 124.52,
+      "text": "Trumpets go crooked",
+      "words": [
+        {
+          "t": 123.3,
+          "text": "Trumpets"
+        },
+        {
+          "t": 123.98,
+          "text": "go"
+        },
+        {
+          "t": 124.08,
+          "text": "crooked"
+        }
+      ]
+    },
+    {
+      "start": 124.52,
+      "end": 126.9,
+      "text": "Whole magic tower lookin' haunted and flooded",
+      "words": [
+        {
+          "t": 124.52,
+          "text": "Whole"
+        },
+        {
+          "t": 124.76,
+          "text": "magic"
+        },
+        {
+          "t": 125.2,
+          "text": "tower"
+        },
+        {
+          "t": 125.6,
+          "text": "lookin'"
+        },
+        {
+          "t": 126.14,
+          "text": "haunted"
+        },
+        {
+          "t": 126.38,
+          "text": "and"
+        },
+        {
+          "t": 126.6,
+          "text": "flooded"
+        }
+      ]
+    },
+    {
+      "start": 126.9,
+      "end": 127.9,
+      "text": "Old wizard gone",
+      "words": [
+        {
+          "t": 126.9,
+          "text": "Old"
+        },
+        {
+          "t": 127.28,
+          "text": "wizard"
+        },
+        {
+          "t": 127.58,
+          "text": "gone"
+        }
+      ]
+    },
+    {
+      "start": 127.9,
+      "end": 129.62,
+      "text": "But the hat stayed watchin'",
+      "words": [
+        {
+          "t": 127.9,
+          "text": "But"
+        },
+        {
+          "t": 128.36,
+          "text": "the"
+        },
+        {
+          "t": 128.56,
+          "text": "hat"
+        },
+        {
+          "t": 128.78,
+          "text": "stayed"
+        },
+        {
+          "t": 129.02,
+          "text": "watchin'"
+        }
+      ]
+    },
+    {
+      "start": 129.68,
+      "end": 131.98,
+      "text": "Every little sparkle turned toxic",
+      "words": [
+        {
+          "t": 129.68,
+          "text": "Every"
+        },
+        {
+          "t": 129.98,
+          "text": "little"
+        },
+        {
+          "t": 130.28,
+          "text": "sparkle"
+        },
+        {
+          "t": 130.84,
+          "text": "turned"
+        },
+        {
+          "t": 131.46,
+          "text": "toxic"
+        }
+      ]
+    },
+    {
+      "start": 131.98,
+      "end": 134.4,
+      "text": "Broomstick army with the wooden leg stomp",
+      "words": [
+        {
+          "t": 131.98,
+          "text": "Broomstick"
+        },
+        {
+          "t": 132.68,
+          "text": "army"
+        },
+        {
+          "t": 133.1,
+          "text": "with"
+        },
+        {
+          "t": 133.32,
+          "text": "the"
+        },
+        {
+          "t": 133.5,
+          "text": "wooden"
+        },
+        {
+          "t": 133.72,
+          "text": "leg"
+        },
+        {
+          "t": 134.0,
+          "text": "stomp"
+        }
+      ]
+    },
+    {
+      "start": 134.4,
+      "end": 136.46,
+      "text": "Tap dance terror when the bass line goes off",
+      "words": [
+        {
+          "t": 134.4,
+          "text": "Tap"
+        },
+        {
+          "t": 134.78,
+          "text": "dance"
+        },
+        {
+          "t": 135.1,
+          "text": "terror"
+        },
+        {
+          "t": 135.54,
+          "text": "when"
+        },
+        {
+          "t": 135.8,
+          "text": "the"
+        },
+        {
+          "t": 135.94,
+          "text": "bass"
+        },
+        {
+          "t": 136.2,
+          "text": "line"
+        },
+        {
+          "t": 136.44,
+          "text": "goes"
+        },
+        {
+          "t": 136.46,
+          "text": "off"
+        }
+      ]
+    },
+    {
+      "start": 136.48,
+      "end": 136.74,
+      "text": "Broomstick army with the wooden leg stomp",
+      "words": [
+        {
+          "t": 136.48,
+          "text": "Broomstick"
+        },
+        {
+          "t": 136.74,
+          "text": "army"
+        },
+        {
+          "t": 136.74,
+          "text": "with"
+        },
+        {
+          "t": 136.74,
+          "text": "the"
+        },
+        {
+          "t": 136.74,
+          "text": "wooden"
+        },
+        {
+          "t": 136.74,
+          "text": "leg"
+        },
+        {
+          "t": 136.74,
+          "text": "stomp"
+        }
+      ]
+    },
+    {
+      "start": 136.74,
+      "end": 138.1,
+      "text": "I told little homie",
+      "words": [
+        {
+          "t": 136.74,
+          "text": "I"
+        },
+        {
+          "t": 136.98,
+          "text": "told"
+        },
+        {
+          "t": 137.28,
+          "text": "little"
+        },
+        {
+          "t": 137.7,
+          "text": "homie"
+        }
+      ]
+    },
+    {
+      "start": 138.1,
+      "end": 139.1,
+      "text": "You don't know that spell",
+      "words": [
+        {
+          "t": 138.1,
+          "text": "You"
+        },
+        {
+          "t": 138.18,
+          "text": "don't"
+        },
+        {
+          "t": 138.42,
+          "text": "know"
+        },
+        {
+          "t": 138.56,
+          "text": "that"
+        },
+        {
+          "t": 138.74,
+          "text": "spell"
+        }
+      ]
+    },
+    {
+      "start": 139.1,
+      "end": 141.56,
+      "text": "He said I know enough to make the whole room swell",
+      "words": [
+        {
+          "t": 139.1,
+          "text": "He"
+        },
+        {
+          "t": 139.32,
+          "text": "said"
+        },
+        {
+          "t": 139.5,
+          "text": "I"
+        },
+        {
+          "t": 139.64,
+          "text": "know"
+        },
+        {
+          "t": 139.8,
+          "text": "enough"
+        },
+        {
+          "t": 140.06,
+          "text": "to"
+        },
+        {
+          "t": 140.22,
+          "text": "make"
+        },
+        {
+          "t": 140.4,
+          "text": "the"
+        },
+        {
+          "t": 140.56,
+          "text": "whole"
+        },
+        {
+          "t": 140.78,
+          "text": "room"
+        },
+        {
+          "t": 141.18,
+          "text": "swell"
+        }
+      ]
+    },
+    {
+      "start": 141.56,
+      "end": 144.2,
+      "text": "Then the strings start chasin' ceiling got eyes",
+      "words": [
+        {
+          "t": 141.56,
+          "text": "Then"
+        },
+        {
+          "t": 141.92,
+          "text": "the"
+        },
+        {
+          "t": 142.06,
+          "text": "strings"
+        },
+        {
+          "t": 142.34,
+          "text": "start"
+        },
+        {
+          "t": 142.58,
+          "text": "chasin'"
+        },
+        {
+          "t": 143.22,
+          "text": "ceiling"
+        },
+        {
+          "t": 143.6,
+          "text": "got"
+        },
+        {
+          "t": 143.8,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 144.2,
+      "end": 146.6,
+      "text": "Stars in the robe started fallin' from the sky",
+      "words": [
+        {
+          "t": 144.2,
+          "text": "Stars"
+        },
+        {
+          "t": 144.64,
+          "text": "in"
+        },
+        {
+          "t": 145.02,
+          "text": "the"
+        },
+        {
+          "t": 145.14,
+          "text": "robe"
+        },
+        {
+          "t": 145.4,
+          "text": "started"
+        },
+        {
+          "t": 145.64,
+          "text": "fallin'"
+        },
+        {
+          "t": 146.12,
+          "text": "from"
+        },
+        {
+          "t": 146.2,
+          "text": "the"
+        },
+        {
+          "t": 146.36,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 146.6,
+      "end": 149.02,
+      "text": "Cauldron bubble floorboards split",
+      "words": [
+        {
+          "t": 146.6,
+          "text": "Cauldron"
+        },
+        {
+          "t": 147.54,
+          "text": "bubble"
+        },
+        {
+          "t": 147.82,
+          "text": "floorboards"
+        },
+        {
+          "t": 148.58,
+          "text": "split"
+        }
+      ]
+    },
+    {
+      "start": 149.02,
+      "end": 151.5,
+      "text": "One more chant and the whole place flip",
+      "words": [
+        {
+          "t": 149.02,
+          "text": "One"
+        },
+        {
+          "t": 149.48,
+          "text": "more"
+        },
+        {
+          "t": 149.94,
+          "text": "chant"
+        },
+        {
+          "t": 150.32,
+          "text": "and"
+        },
+        {
+          "t": 150.54,
+          "text": "the"
+        },
+        {
+          "t": 150.68,
+          "text": "whole"
+        },
+        {
+          "t": 150.88,
+          "text": "place"
+        },
+        {
+          "t": 151.22,
+          "text": "flip"
+        }
+      ]
+    },
+    {
+      "start": 151.5,
+      "end": 153.98,
+      "text": "Magic ain't cute when the shadows get tall",
+      "words": [
+        {
+          "t": 151.5,
+          "text": "Magic"
+        },
+        {
+          "t": 152.16,
+          "text": "ain't"
+        },
+        {
+          "t": 152.52,
+          "text": "cute"
+        },
+        {
+          "t": 152.74,
+          "text": "when"
+        },
+        {
+          "t": 153.0,
+          "text": "the"
+        },
+        {
+          "t": 153.14,
+          "text": "shadows"
+        },
+        {
+          "t": 153.38,
+          "text": "get"
+        },
+        {
+          "t": 153.66,
+          "text": "tall"
+        }
+      ]
+    },
+    {
+      "start": 153.98,
+      "end": 156.56,
+      "text": "Especially when the mouse got control of it all",
+      "words": [
+        {
+          "t": 153.98,
+          "text": "Especially"
+        },
+        {
+          "t": 154.48,
+          "text": "when"
+        },
+        {
+          "t": 154.84,
+          "text": "the"
+        },
+        {
+          "t": 155.02,
+          "text": "mouse"
+        },
+        {
+          "t": 155.26,
+          "text": "got"
+        },
+        {
+          "t": 155.44,
+          "text": "control"
+        },
+        {
+          "t": 155.76,
+          "text": "of"
+        },
+        {
+          "t": 156.1,
+          "text": "it"
+        },
+        {
+          "t": 156.28,
+          "text": "all"
+        }
+      ]
+    },
+    {
+      "start": 163.48,
+      "end": 165.8,
+      "text": "They said he was just an apprentice",
+      "words": [
+        {
+          "t": 163.48,
+          "text": "They"
+        },
+        {
+          "t": 164.192,
+          "text": "said"
+        },
+        {
+          "t": 164.52,
+          "text": "he"
+        },
+        {
+          "t": 164.68,
+          "text": "was"
+        },
+        {
+          "t": 164.84,
+          "text": "just"
+        },
+        {
+          "t": 165.14,
+          "text": "an"
+        },
+        {
+          "t": 165.38,
+          "text": "apprentice"
+        }
+      ]
+    },
+    {
+      "start": 167.52,
+      "end": 167.94,
+      "text": "Apprentice",
+      "words": [
+        {
+          "t": 167.52,
+          "text": "Apprentice"
+        }
+      ]
+    },
+    {
+      "start": 168.36,
+      "end": 169.08,
+      "text": "Yeah",
+      "words": [
+        {
+          "t": 168.36,
+          "text": "Yeah"
+        }
+      ]
+    },
+    {
+      "start": 169.08,
+      "end": 171.92,
+      "text": "Then why the broom salutin' him",
+      "words": [
+        {
+          "t": 169.08,
+          "text": "Then"
+        },
+        {
+          "t": 169.88,
+          "text": "why"
+        },
+        {
+          "t": 170.06,
+          "text": "the"
+        },
+        {
+          "t": 170.24,
+          "text": "broom"
+        },
+        {
+          "t": 170.64,
+          "text": "salutin'"
+        },
+        {
+          "t": 171.62,
+          "text": "him"
+        }
+      ]
+    },
+    {
+      "start": 182.016,
+      "end": 184.04,
+      "text": "Broom's In The Boiler Room",
+      "words": [
+        {
+          "t": 182.016,
+          "text": "Broom's"
+        },
+        {
+          "t": 182.44,
+          "text": "In"
+        },
+        {
+          "t": 183.04,
+          "text": "The"
+        },
+        {
+          "t": 183.2,
+          "text": "Boiler"
+        },
+        {
+          "t": 183.66,
+          "text": "Room"
+        }
+      ]
+    },
+    {
+      "start": 189.408,
+      "end": 190.3,
+      "text": "Hat too big",
+      "words": [
+        {
+          "t": 189.408,
+          "text": "Hat"
+        },
+        {
+          "t": 189.52,
+          "text": "too"
+        },
+        {
+          "t": 189.84,
+          "text": "big"
+        }
+      ]
+    },
+    {
+      "start": 190.3,
+      "end": 191.56,
+      "text": "Spell too strong",
+      "words": [
+        {
+          "t": 190.3,
+          "text": "Spell"
+        },
+        {
+          "t": 190.84,
+          "text": "too"
+        },
+        {
+          "t": 191.04,
+          "text": "strong"
+        }
+      ]
+    },
+    {
+      "start": 191.56,
+      "end": 192.86,
+      "text": "Room too wild",
+      "words": [
+        {
+          "t": 191.56,
+          "text": "Room"
+        },
+        {
+          "t": 192.1,
+          "text": "too"
+        },
+        {
+          "t": 192.32,
+          "text": "wild"
+        }
+      ]
+    },
+    {
+      "start": 192.86,
+      "end": 194.0,
+      "text": "Night too long",
+      "words": [
+        {
+          "t": 192.86,
+          "text": "Night"
+        },
+        {
+          "t": 193.26,
+          "text": "too"
+        },
+        {
+          "t": 193.58,
+          "text": "long"
+        }
+      ]
+    },
+    {
+      "start": 194.0,
+      "end": 195.24,
+      "text": "Water too high",
+      "words": [
+        {
+          "t": 194.0,
+          "text": "Water"
+        },
+        {
+          "t": 194.58,
+          "text": "too"
+        },
+        {
+          "t": 194.82,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 195.24,
+      "end": 196.4,
+      "text": "Door won't move",
+      "words": [
+        {
+          "t": 195.24,
+          "text": "Door"
+        },
+        {
+          "t": 195.78,
+          "text": "won't"
+        },
+        {
+          "t": 196.18,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 196.48,
+      "end": 199.72,
+      "text": "whole tower drowning still in groove strings go",
+      "words": [
+        {
+          "t": 196.48,
+          "text": "whole"
+        },
+        {
+          "t": 196.88,
+          "text": "tower"
+        },
+        {
+          "t": 197.28,
+          "text": "drowning"
+        },
+        {
+          "t": 197.94,
+          "text": "still"
+        },
+        {
+          "t": 198.34,
+          "text": "in"
+        },
+        {
+          "t": 198.5,
+          "text": "groove"
+        },
+        {
+          "t": 198.88,
+          "text": "strings"
+        },
+        {
+          "t": 199.32,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 199.72,
+      "end": 203.46,
+      "text": "sharp but soon go doom timpani hit one little",
+      "words": [
+        {
+          "t": 199.72,
+          "text": "sharp"
+        },
+        {
+          "t": 200.32,
+          "text": "but"
+        },
+        {
+          "t": 200.52,
+          "text": "soon"
+        },
+        {
+          "t": 200.7,
+          "text": "go"
+        },
+        {
+          "t": 200.98,
+          "text": "doom"
+        },
+        {
+          "t": 201.5,
+          "text": "timpani"
+        },
+        {
+          "t": 202.16,
+          "text": "hit"
+        },
+        {
+          "t": 202.62,
+          "text": "one"
+        },
+        {
+          "t": 203.1,
+          "text": "little"
+        }
+      ]
+    },
+    {
+      "start": 203.46,
+      "end": 207.4,
+      "text": "mouse big mistake one little wand whole world",
+      "words": [
+        {
+          "t": 203.46,
+          "text": "mouse"
+        },
+        {
+          "t": 203.96,
+          "text": "big"
+        },
+        {
+          "t": 204.4,
+          "text": "mistake"
+        },
+        {
+          "t": 204.84,
+          "text": "one"
+        },
+        {
+          "t": 205.62,
+          "text": "little"
+        },
+        {
+          "t": 206.02,
+          "text": "wand"
+        },
+        {
+          "t": 206.4,
+          "text": "whole"
+        },
+        {
+          "t": 206.86,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 207.4,
+      "end": 210.78,
+      "text": "shake black and white world but the money still",
+      "words": [
+        {
+          "t": 207.4,
+          "text": "shake"
+        },
+        {
+          "t": 207.78,
+          "text": "black"
+        },
+        {
+          "t": 209.14,
+          "text": "and"
+        },
+        {
+          "t": 209.46,
+          "text": "white"
+        },
+        {
+          "t": 209.66,
+          "text": "world"
+        },
+        {
+          "t": 209.98,
+          "text": "but"
+        },
+        {
+          "t": 210.2,
+          "text": "the"
+        },
+        {
+          "t": 210.34,
+          "text": "money"
+        },
+        {
+          "t": 210.6,
+          "text": "still"
+        }
+      ]
+    },
+    {
+      "start": 210.78,
+      "end": 213.34,
+      "text": "gold whole crew slipping while the spell takes",
+      "words": [
+        {
+          "t": 210.78,
+          "text": "gold"
+        },
+        {
+          "t": 211.24,
+          "text": "whole"
+        },
+        {
+          "t": 211.62,
+          "text": "crew"
+        },
+        {
+          "t": 211.9,
+          "text": "slipping"
+        },
+        {
+          "t": 212.34,
+          "text": "while"
+        },
+        {
+          "t": 212.68,
+          "text": "the"
+        },
+        {
+          "t": 212.82,
+          "text": "spell"
+        },
+        {
+          "t": 213.02,
+          "text": "takes"
+        }
+      ]
+    },
+    {
+      "start": 213.34,
+      "end": 216.14,
+      "text": "hold no crown no throne just a hat and a grin",
+      "words": [
+        {
+          "t": 213.34,
+          "text": "hold"
+        },
+        {
+          "t": 213.66,
+          "text": "no"
+        },
+        {
+          "t": 213.92,
+          "text": "crown"
+        },
+        {
+          "t": 214.24,
+          "text": "no"
+        },
+        {
+          "t": 214.54,
+          "text": "throne"
+        },
+        {
+          "t": 214.82,
+          "text": "just"
+        },
+        {
+          "t": 215.14,
+          "text": "a"
+        },
+        {
+          "t": 215.32,
+          "text": "hat"
+        },
+        {
+          "t": 215.56,
+          "text": "and"
+        },
+        {
+          "t": 215.76,
+          "text": "a"
+        },
+        {
+          "t": 215.94,
+          "text": "grin"
+        }
+      ]
+    },
+    {
+      "start": 216.14,
+      "end": 218.78,
+      "text": "and the broomsticks rise and the nightmare begins",
+      "words": [
+        {
+          "t": 216.14,
+          "text": "and"
+        },
+        {
+          "t": 216.4,
+          "text": "the"
+        },
+        {
+          "t": 216.56,
+          "text": "broomsticks"
+        },
+        {
+          "t": 216.96,
+          "text": "rise"
+        },
+        {
+          "t": 217.38,
+          "text": "and"
+        },
+        {
+          "t": 217.64,
+          "text": "the"
+        },
+        {
+          "t": 217.8,
+          "text": "nightmare"
+        },
+        {
+          "t": 218.12,
+          "text": "begins"
+        }
+      ]
+    },
+    {
+      "start": 224.0,
+      "end": 226.16,
+      "text": "brooms in the boiler room water starts to rise",
+      "words": [
+        {
+          "t": 224.0,
+          "text": "brooms"
+        },
+        {
+          "t": 224.32,
+          "text": "in"
+        },
+        {
+          "t": 224.48,
+          "text": "the"
+        },
+        {
+          "t": 224.6,
+          "text": "boiler"
+        },
+        {
+          "t": 224.84,
+          "text": "room"
+        },
+        {
+          "t": 225.16,
+          "text": "water"
+        },
+        {
+          "t": 225.44,
+          "text": "starts"
+        },
+        {
+          "t": 225.68,
+          "text": "to"
+        },
+        {
+          "t": 225.88,
+          "text": "rise"
+        }
+      ]
+    },
+    {
+      "start": 226.16,
+      "end": 228.76,
+      "text": "little mouse grinning with the stars in his eyes",
+      "words": [
+        {
+          "t": 226.16,
+          "text": "little"
+        },
+        {
+          "t": 226.6,
+          "text": "mouse"
+        },
+        {
+          "t": 226.98,
+          "text": "grinning"
+        },
+        {
+          "t": 227.42,
+          "text": "with"
+        },
+        {
+          "t": 227.54,
+          "text": "the"
+        },
+        {
+          "t": 227.68,
+          "text": "stars"
+        },
+        {
+          "t": 228.02,
+          "text": "in"
+        },
+        {
+          "t": 228.24,
+          "text": "his"
+        },
+        {
+          "t": 228.38,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 228.76,
+      "end": 231.1,
+      "text": "brooms in the boiler room knocking at the door",
+      "words": [
+        {
+          "t": 228.76,
+          "text": "brooms"
+        },
+        {
+          "t": 229.22,
+          "text": "in"
+        },
+        {
+          "t": 229.42,
+          "text": "the"
+        },
+        {
+          "t": 229.54,
+          "text": "boiler"
+        },
+        {
+          "t": 229.8,
+          "text": "room"
+        },
+        {
+          "t": 230.12,
+          "text": "knocking"
+        },
+        {
+          "t": 230.46,
+          "text": "at"
+        },
+        {
+          "t": 230.64,
+          "text": "the"
+        },
+        {
+          "t": 230.78,
+          "text": "door"
+        }
+      ]
+    },
+    {
+      "start": 231.1,
+      "end": 234.2,
+      "text": "spell got loose and he hungry for more black and",
+      "words": [
+        {
+          "t": 231.1,
+          "text": "spell"
+        },
+        {
+          "t": 231.5,
+          "text": "got"
+        },
+        {
+          "t": 231.84,
+          "text": "loose"
+        },
+        {
+          "t": 232.26,
+          "text": "and"
+        },
+        {
+          "t": 232.52,
+          "text": "he"
+        },
+        {
+          "t": 232.66,
+          "text": "hungry"
+        },
+        {
+          "t": 232.98,
+          "text": "for"
+        },
+        {
+          "t": 233.3,
+          "text": "more"
+        },
+        {
+          "t": 233.64,
+          "text": "black"
+        },
+        {
+          "t": 234.0,
+          "text": "and"
+        }
+      ]
+    },
+    {
+      "start": 234.2,
+      "end": 236.76,
+      "text": "white world but the money still gold whole tower",
+      "words": [
+        {
+          "t": 234.2,
+          "text": "white"
+        },
+        {
+          "t": 234.4,
+          "text": "world"
+        },
+        {
+          "t": 234.74,
+          "text": "but"
+        },
+        {
+          "t": 234.96,
+          "text": "the"
+        },
+        {
+          "t": 235.1,
+          "text": "money"
+        },
+        {
+          "t": 235.32,
+          "text": "still"
+        },
+        {
+          "t": 235.52,
+          "text": "gold"
+        },
+        {
+          "t": 236.04,
+          "text": "whole"
+        },
+        {
+          "t": 236.38,
+          "text": "tower"
+        }
+      ]
+    },
+    {
+      "start": 236.76,
+      "end": 239.42,
+      "text": "shaking when the wild drums roll brooms in the",
+      "words": [
+        {
+          "t": 236.76,
+          "text": "shaking"
+        },
+        {
+          "t": 237.12,
+          "text": "when"
+        },
+        {
+          "t": 237.44,
+          "text": "the"
+        },
+        {
+          "t": 237.58,
+          "text": "wild"
+        },
+        {
+          "t": 237.86,
+          "text": "drums"
+        },
+        {
+          "t": 238.16,
+          "text": "roll"
+        },
+        {
+          "t": 238.5,
+          "text": "brooms"
+        },
+        {
+          "t": 239.12,
+          "text": "in"
+        },
+        {
+          "t": 239.32,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 239.42,
+      "end": 243.36,
+      "text": "boiler room boom turn do one wrong spell and the whole crew doom",
+      "words": [
+        {
+          "t": 239.42,
+          "text": "boiler"
+        },
+        {
+          "t": 239.68,
+          "text": "room"
+        },
+        {
+          "t": 240.06,
+          "text": "boom"
+        },
+        {
+          "t": 240.28,
+          "text": "turn"
+        },
+        {
+          "t": 240.56,
+          "text": "do"
+        },
+        {
+          "t": 240.82,
+          "text": "one"
+        },
+        {
+          "t": 241.1,
+          "text": "wrong"
+        },
+        {
+          "t": 241.74,
+          "text": "spell"
+        },
+        {
+          "t": 242.08,
+          "text": "and"
+        },
+        {
+          "t": 242.38,
+          "text": "the"
+        },
+        {
+          "t": 242.5,
+          "text": "whole"
+        },
+        {
+          "t": 242.72,
+          "text": "crew"
+        },
+        {
+          "t": 243.04,
+          "text": "doom"
+        }
+      ]
+    },
+    {
+      "start": 248.832,
+      "end": 250.94,
+      "text": "brooms in the boiler room still marching",
+      "words": [
+        {
+          "t": 248.832,
+          "text": "brooms"
+        },
+        {
+          "t": 249.1,
+          "text": "in"
+        },
+        {
+          "t": 249.18,
+          "text": "the"
+        },
+        {
+          "t": 249.32,
+          "text": "boiler"
+        },
+        {
+          "t": 249.6,
+          "text": "room"
+        },
+        {
+          "t": 249.92,
+          "text": "still"
+        },
+        {
+          "t": 250.34,
+          "text": "marching"
+        }
+      ]
+    },
+    {
+      "start": 250.94,
+      "end": 254.92,
+      "text": "still stomping still pouring still watching",
+      "words": [
+        {
+          "t": 250.94,
+          "text": "still"
+        },
+        {
+          "t": 251.68,
+          "text": "stomping"
+        },
+        {
+          "t": 252.44,
+          "text": "still"
+        },
+        {
+          "t": 252.8,
+          "text": "pouring"
+        },
+        {
+          "t": 253.52,
+          "text": "still"
+        },
+        {
+          "t": 254.18,
+          "text": "watching"
+        }
+      ]
+    },
+    {
+      "start": 263.06,
+      "end": 264.22,
+      "text": "you",
+      "words": [
+        {
+          "t": 263.06,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 265.216,
+      "end": 271.0,
+      "text": "think it's over nah why the hat's still glowing",
+      "words": [
+        {
+          "t": 265.216,
+          "text": "think"
+        },
+        {
+          "t": 265.38,
+          "text": "it's"
+        },
+        {
+          "t": 265.62,
+          "text": "over"
+        },
+        {
+          "t": 265.88,
+          "text": "nah"
+        },
+        {
+          "t": 267.18,
+          "text": "why"
+        },
+        {
+          "t": 268.06,
+          "text": "the"
+        },
+        {
+          "t": 269.76,
+          "text": "hat's"
+        },
+        {
+          "t": 270.2,
+          "text": "still"
+        },
+        {
+          "t": 270.42,
+          "text": "glowing"
+        }
+      ]
+    }
+  ]
+}

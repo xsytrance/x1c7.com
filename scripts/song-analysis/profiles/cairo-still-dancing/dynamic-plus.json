@@ -1,0 +1,35 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 24,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "THE DRUMS SPEAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 109,
+   "end": 134,
+   "reactor": "fireworks",
+   "why": "Euphoric release and collective power at the peak chorus requires maximum celebration ener"
+  },
+  {
+   "start": 205,
+   "end": 230,
+   "reactor": "constellation",
+   "why": "Reflective tenderness and enduring rhythm calls for quiet awe as the night sky metaphor."
+  }
+ ],
+ "words": {
+  "rise": "shatter",
+  "sand": "bleed",
+  "drums": "pulse",
+  "heart": "bloom"
+ }
+}

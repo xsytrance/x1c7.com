@@ -1,0 +1,92 @@
+{
+  "analysis": {
+    "summary": "A minimalist electronic anthem where repetitive gratitude transforms into a hypnotic state of euphoria and deep connection.",
+    "overallMood": "Euphoric",
+    "themes": [
+      "Gratitude",
+      "Addiction to Music",
+      "Hypnosis",
+      "Catharsis"
+    ],
+    "palette": [
+      "#0F172A",
+      "#38BDF8",
+      "#EAB308",
+      "#F43F5E"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Quiet reverence and anticipation",
+        "intensity": 0.67,
+        "colorHintHex": "#0F172A",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Internal reflection building outward energy",
+        "intensity": 0.75,
+        "colorHintHex": "#38BDF8",
+        "start": 48.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive release and collective joy",
+        "intensity": 0.86,
+        "colorHintHex": "#EAB308",
+        "start": 48.2
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Trance-like surrender to the sound",
+        "intensity": 0.86,
+        "colorHintHex": "#F43F5E",
+        "start": 70.62
+      },
+      {
+        "name": "Drop",
+        "emotion": "Peak euphoric abandon and sonic weightlessness",
+        "intensity": 1,
+        "colorHintHex": "#FFFFFF",
+        "start": 100.7
+      },
+      {
+        "name": "Outro",
+        "emotion": "Sustained gratitude fading into eternal rhythm",
+        "intensity": 0.18,
+        "colorHintHex": "#38BDF8",
+        "start": 100.7
+      }
+    ],
+    "keywords": [
+      {
+        "word": "thank",
+        "emotion": "Deep relief and worshipful gratitude",
+        "imageryPrompt": "A beam of golden sunlight piercing through heavy storm clouds, illuminating a solitary figure raising hands in silent prayer amidst falling digital rain."
+      },
+      {
+        "word": "drug",
+        "emotion": "Intense dependency and altered consciousness",
+        "imageryPrompt": "Neon blue lightwaves twisting around the listener's silhouette like liquid glass, forming intricate geometric patterns that dissolve into pure white energy."
+      },
+      {
+        "word": "hypnotic",
+        "emotion": "Trance-like focus and timelessness",
+        "imageryPrompt": "Endless spirals of violet smoke rotating in a void where gravity ceases to exist, creating a perfect circular tunnel of light."
+      },
+      {
+        "word": "cathartic",
+        "emotion": "Purging sorrow through sonic release",
+        "imageryPrompt": "A massive dam of dark water bursting open into a rainbow explosion that fills the sky with glittering particles and soundwaves."
+      },
+      {
+        "word": "euphoric",
+        "emotion": "Overwhelming joy and flight sensation",
+        "imageryPrompt": "Soaring above an ocean of glowing liquid gold, surrounded by floating musical notes that bloom into bright flowers as they pass."
+      }
+    ]
+  },
+  "styleHint": "A driving D-major progressive house track at 129 BPM featuring a euphoric synth lead and deep bassline that builds from an open energy arc into a massive, cathartic climax before closing with repetitive vocal affirmations.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:20:31.863Z"
+}

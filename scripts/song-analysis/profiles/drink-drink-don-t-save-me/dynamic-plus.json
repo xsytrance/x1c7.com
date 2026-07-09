@@ -1,0 +1,38 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 150,
+   "end": 168,
+   "reactor": "aquarium",
+   "why": "Bridge section (Exhausted Realization): The vibe shifts to calm/fade as the narrator reali"
+  },
+  {
+   "start": 195,
+   "end": 220,
+   "reactor": "downpour",
+   "why": "Drop/Outro transition (Hypnotic Loop Collapse -> Fading Despair): Heavy rain washes over t"
+  },
+  {
+   "start": 240,
+   "end": 265,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "THE LOW END SINKS"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "save": "redact",
+  "train": "glitch",
+  "bottle": "neon",
+  "pain": "shatter",
+  "smoke": "dissolve",
+  "ghosts": "echo",
+  "drink": "pulse"
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 15,
+   "end": 29,
+   "stemSpot": {
+    "solo": [
+     "bass"
+    ],
+    "label": "THE BASS RUMBLE"
+   },
+   "why": ""
+  },
+  {
+   "start": 67,
+   "end": 85,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "HEARTBEAT ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 137,
+   "end": 162,
+   "reactor": "spellcast",
+   "why": "The bridge's 'desperate bargaining' and trance state perfectly match the mystical, rituali"
+  }
+ ],
+ "words": {
+  "venomous": "burn",
+  "honey": "bloom",
+  "dangerous": "shatter",
+  "electric": "glitch",
+  "heaven": "dissolve",
+  "hell": "slam"
+ }
+}

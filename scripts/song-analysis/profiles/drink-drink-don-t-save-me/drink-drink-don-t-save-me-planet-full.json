@@ -1,0 +1,121 @@
+{
+  "analysis": {
+    "summary": "A surreal and narcotic exploration of insomnia where the narrator rejects salvation to drown their pain in a hypnotic loop of drinking and dissociation.",
+    "overallMood": "Narcotic Insomnia",
+    "themes": [
+      "Dissociation",
+      "Chronic Pain",
+      "Rejection of Rescue",
+      "Nightmare Fuel"
+    ],
+    "palette": [
+      "#0f0b15",
+      "#4a3b2e",
+      "#8c766d",
+      "#ffccaa"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Desperate Entreaty",
+        "intensity": 0.79,
+        "colorHint": "#4a3b2e",
+        "start": 2.12
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Hypnotic Dissociation",
+        "intensity": 0.91,
+        "colorHint": "#8c766d",
+        "start": 11.06
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Narcotic Numbness",
+        "intensity": 0.96,
+        "colorHint": "#2b1d3e",
+        "start": 26.2
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Claustrophobic Surrealism",
+        "intensity": 0.85,
+        "colorHint": "#2b1d3e",
+        "start": 60.76
+      },
+      {
+        "name": "Verse 1 (Continued)",
+        "emotion": "Fractured Denial",
+        "intensity": 0.6,
+        "colorHint": "#4a3b2e",
+        "start": 94.56
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Exhausted Realization",
+        "intensity": 0.36,
+        "colorHint": "#8c766d",
+        "start": 145.94
+      },
+      {
+        "name": "Drop",
+        "emotion": "Hypnotic Loop Collapse",
+        "intensity": 0.3,
+        "colorHint": "#ffccaa",
+        "start": 185.12
+      },
+      {
+        "name": "Outro",
+        "emotion": "Fading Despair",
+        "intensity": 0.12,
+        "colorHint": "#0f0b15",
+        "start": 271.62
+      }
+    ],
+    "keywords": [
+      {
+        "word": "save",
+        "emotion": "Rejected Mercy",
+        "imageryPrompt": "A translucent hand reaching out from a dark void but being slapped away by a shadowy figure, floating debris in the air."
+      },
+      {
+        "word": "train",
+        "emotion": "Mental Repetition",
+        "imageryPrompt": "An endless monorail track curving through a smoggy night sky with no destination visible, glowing faintly against black clouds."
+      },
+      {
+        "word": "bottle",
+        "emotion": "Narcotic Necessity",
+        "imageryPrompt": "A clear glass bottle reflecting the blue light of moonlight on a dusty wooden floor next to an overturned chair."
+      },
+      {
+        "word": "pain",
+        "emotion": "Visceral Agony",
+        "imageryPrompt": "Glowing red veins pulsating rhythmically under pale skin, illuminating the darkness of a room with heavy shadows."
+      },
+      {
+        "word": "smoke",
+        "emotion": "Dissolving Reality",
+        "imageryPrompt": "Thick grey smoke swirling into shapes that look like faces and memories before vanishing instantly in mid-air."
+      },
+      {
+        "word": "drums",
+        "emotion": "Rhythmic Oppression",
+        "imageryPrompt": "Giant mechanical hammers striking a surface made of bone, sending shockwaves through the air that distort vision."
+      },
+      {
+        "word": "ghost",
+        "emotion": "Lonely Spirit",
+        "imageryPrompt": "A faint outline of a person walking alone down an empty hallway where walls bleed black liquid onto the floor."
+      },
+      {
+        "word": "shame",
+        "emotion": "Heavy Guilt",
+        "imageryPrompt": "A heavy chain made of smoke wrapped around a neck, dragging the figure forward into a mirror that shows nothing but darkness."
+      }
+    ]
+  },
+  "styleHint": "Dark hypnotic hip-hop and R&B, 3 minutes, heavy 808 bounce, slow trap drums, eerie soul chords, ghostly vocal chops, distorted choir pads, late-night insomnia atmosphere, sticky repeated chant hook using the word “sleep,” male lead with high-pitched hypnotic ad-libs, female R&B background vocals, minimal lyrics, dark melodic bassline, sparse verses, surreal dream-state energy, narcotic groove, cinematic underground club feel, original vocal tone, no direct artist imitation.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:04:52.690Z"
+}

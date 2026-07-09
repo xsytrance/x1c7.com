@@ -1,0 +1,2715 @@
+{
+  "language": "spanish",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "text": "Yeah,",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Yeah,"
+        }
+      ]
+    },
+    {
+      "start": 0.26,
+      "end": 2.6,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 0.26,
+          "text": "mi"
+        },
+        {
+          "t": 2.2,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 4.03,
+      "end": 6.56,
+      "text": "desde el bloque hasta la tarima,",
+      "words": [
+        {
+          "t": 4.03,
+          "text": "desde"
+        },
+        {
+          "t": 4.992,
+          "text": "el"
+        },
+        {
+          "t": 5.26,
+          "text": "bloque"
+        },
+        {
+          "t": 5.52,
+          "text": "hasta"
+        },
+        {
+          "t": 5.7,
+          "text": "la"
+        },
+        {
+          "t": 5.94,
+          "text": "tarima,"
+        }
+      ]
+    },
+    {
+      "start": 6.66,
+      "end": 7.58,
+      "text": "ya tú sabes,",
+      "words": [
+        {
+          "t": 6.66,
+          "text": "ya"
+        },
+        {
+          "t": 6.84,
+          "text": "tú"
+        },
+        {
+          "t": 7.06,
+          "text": "sabes,"
+        }
+      ]
+    },
+    {
+      "start": 7.88,
+      "end": 9.6,
+      "text": "dímelo,",
+      "words": [
+        {
+          "t": 7.88,
+          "text": "dímelo,"
+        }
+      ]
+    },
+    {
+      "start": 9.96,
+      "end": 10.16,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 9.96,
+          "text": "mi"
+        },
+        {
+          "t": 10.06,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 11.2,
+      "end": 11.584,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 11.2,
+          "text": "mi"
+        },
+        {
+          "t": 11.3,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 12.48,
+      "end": 14.56,
+      "text": "mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 12.48,
+          "text": "mi"
+        },
+        {
+          "t": 12.58,
+          "text": "gente,"
+        },
+        {
+          "t": 12.9,
+          "text": "mi"
+        },
+        {
+          "t": 13.22,
+          "text": "gente,"
+        },
+        {
+          "t": 13.58,
+          "text": "mi"
+        },
+        {
+          "t": 13.82,
+          "text": "gente,"
+        },
+        {
+          "t": 14.26,
+          "text": "mi"
+        },
+        {
+          "t": 14.36,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 14.56,
+      "end": 16.68,
+      "text": "Todo el mundo conmigo se siente,",
+      "words": [
+        {
+          "t": 14.56,
+          "text": "Todo"
+        },
+        {
+          "t": 15.06,
+          "text": "el"
+        },
+        {
+          "t": 15.22,
+          "text": "mundo"
+        },
+        {
+          "t": 15.52,
+          "text": "conmigo"
+        },
+        {
+          "t": 16.08,
+          "text": "se"
+        },
+        {
+          "t": 16.22,
+          "text": "siente,"
+        }
+      ]
+    },
+    {
+      "start": 16.68,
+      "end": 17.32,
+      "text": "se siente,",
+      "words": [
+        {
+          "t": 16.68,
+          "text": "se"
+        },
+        {
+          "t": 16.84,
+          "text": "siente,"
+        }
+      ]
+    },
+    {
+      "start": 17.34,
+      "end": 19.74,
+      "text": "si yo con los míos la calle se enciende",
+      "words": [
+        {
+          "t": 17.34,
+          "text": "si"
+        },
+        {
+          "t": 17.46,
+          "text": "yo"
+        },
+        {
+          "t": 17.68,
+          "text": "con"
+        },
+        {
+          "t": 17.92,
+          "text": "los"
+        },
+        {
+          "t": 18.1,
+          "text": "míos"
+        },
+        {
+          "t": 18.48,
+          "text": "la"
+        },
+        {
+          "t": 18.68,
+          "text": "calle"
+        },
+        {
+          "t": 19.04,
+          "text": "se"
+        },
+        {
+          "t": 19.28,
+          "text": "enciende"
+        }
+      ]
+    },
+    {
+      "start": 19.74,
+      "end": 20.22,
+      "text": "Mi gente,",
+      "words": [
+        {
+          "t": 19.74,
+          "text": "Mi"
+        },
+        {
+          "t": 19.96,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 20.42,
+      "end": 20.9,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 20.42,
+          "text": "mi"
+        },
+        {
+          "t": 20.54,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 21.06,
+      "end": 21.54,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 21.06,
+          "text": "mi"
+        },
+        {
+          "t": 21.16,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 21.66,
+      "end": 22.18,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 21.66,
+          "text": "mi"
+        },
+        {
+          "t": 21.8,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 22.3,
+      "end": 22.8,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 22.3,
+          "text": "mi"
+        },
+        {
+          "t": 22.4,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 22.84,
+      "end": 23.42,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 22.84,
+          "text": "mi"
+        },
+        {
+          "t": 23.04,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 23.44,
+      "end": 24.0,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 23.44,
+          "text": "mi"
+        },
+        {
+          "t": 23.68,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 24.06,
+      "end": 24.38,
+      "text": "mi gente",
+      "words": [
+        {
+          "t": 24.06,
+          "text": "mi"
+        },
+        {
+          "t": 24.28,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 24.38,
+      "end": 25.98,
+      "text": "No cambia mi coro,",
+      "words": [
+        {
+          "t": 24.38,
+          "text": "No"
+        },
+        {
+          "t": 24.82,
+          "text": "cambia"
+        },
+        {
+          "t": 25.36,
+          "text": "mi"
+        },
+        {
+          "t": 25.46,
+          "text": "coro,"
+        }
+      ]
+    },
+    {
+      "start": 25.98,
+      "end": 27.12,
+      "text": "mi sangre me entiende,",
+      "words": [
+        {
+          "t": 25.98,
+          "text": "mi"
+        },
+        {
+          "t": 26.08,
+          "text": "sangre"
+        },
+        {
+          "t": 26.44,
+          "text": "me"
+        },
+        {
+          "t": 26.68,
+          "text": "entiende,"
+        }
+      ]
+    },
+    {
+      "start": 27.2,
+      "end": 29.58,
+      "text": "del barrio pa'l mundo la vibra se extiende",
+      "words": [
+        {
+          "t": 27.2,
+          "text": "del"
+        },
+        {
+          "t": 27.34,
+          "text": "barrio"
+        },
+        {
+          "t": 27.78,
+          "text": "pa"
+        },
+        {
+          "t": 27.94,
+          "text": "'l"
+        },
+        {
+          "t": 28.02,
+          "text": "mundo"
+        },
+        {
+          "t": 28.28,
+          "text": "la"
+        },
+        {
+          "t": 28.56,
+          "text": "vibra"
+        },
+        {
+          "t": 28.98,
+          "text": "se"
+        },
+        {
+          "t": 29.12,
+          "text": "extiende"
+        }
+      ]
+    },
+    {
+      "start": 29.58,
+      "end": 31.6,
+      "text": "Mi gente, mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 29.58,
+          "text": "Mi"
+        },
+        {
+          "t": 29.82,
+          "text": "gente,"
+        },
+        {
+          "t": 30.28,
+          "text": "mi"
+        },
+        {
+          "t": 30.42,
+          "text": "gente,"
+        },
+        {
+          "t": 30.88,
+          "text": "mi"
+        },
+        {
+          "t": 31.02,
+          "text": "gente,"
+        },
+        {
+          "t": 31.48,
+          "text": "mi"
+        },
+        {
+          "t": 31.6,
+          "text": "gente,"
+        },
+        {
+          "t": 31.6,
+          "text": "mi"
+        },
+        {
+          "t": 31.6,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 31.6,
+      "end": 33.78,
+      "text": "Llegué con la ganga pero no es pa' aparentar,",
+      "words": [
+        {
+          "t": 31.6,
+          "text": "Llegué"
+        },
+        {
+          "t": 31.8,
+          "text": "con"
+        },
+        {
+          "t": 32.0,
+          "text": "la"
+        },
+        {
+          "t": 32.16,
+          "text": "ganga"
+        },
+        {
+          "t": 32.64,
+          "text": "pero"
+        },
+        {
+          "t": 32.82,
+          "text": "no"
+        },
+        {
+          "t": 33.04,
+          "text": "es"
+        },
+        {
+          "t": 33.16,
+          "text": "pa'"
+        },
+        {
+          "t": 33.28,
+          "text": "aparentar,"
+        }
+      ]
+    },
+    {
+      "start": 33.92,
+      "end": 34.9,
+      "text": "esto es familia,",
+      "words": [
+        {
+          "t": 33.92,
+          "text": "esto"
+        },
+        {
+          "t": 34.34,
+          "text": "es"
+        },
+        {
+          "t": 34.56,
+          "text": "familia,"
+        }
+      ]
+    },
+    {
+      "start": 35.04,
+      "end": 36.24,
+      "text": "no se compra con metal",
+      "words": [
+        {
+          "t": 35.04,
+          "text": "no"
+        },
+        {
+          "t": 35.2,
+          "text": "se"
+        },
+        {
+          "t": 35.3,
+          "text": "compra"
+        },
+        {
+          "t": 35.64,
+          "text": "con"
+        },
+        {
+          "t": 35.82,
+          "text": "metal"
+        }
+      ]
+    },
+    {
+      "start": 36.24,
+      "end": 38.72,
+      "text": "Desde la esquina donde aprendí a caminar,",
+      "words": [
+        {
+          "t": 36.24,
+          "text": "Desde"
+        },
+        {
+          "t": 36.78,
+          "text": "la"
+        },
+        {
+          "t": 37.04,
+          "text": "esquina"
+        },
+        {
+          "t": 37.52,
+          "text": "donde"
+        },
+        {
+          "t": 37.68,
+          "text": "aprendí"
+        },
+        {
+          "t": 38.14,
+          "text": "a"
+        },
+        {
+          "t": 38.18,
+          "text": "caminar,"
+        }
+      ]
+    },
+    {
+      "start": 38.88,
+      "end": 41.16,
+      "text": "hasta los sueños que no nos pudieron quitar",
+      "words": [
+        {
+          "t": 38.88,
+          "text": "hasta"
+        },
+        {
+          "t": 39.26,
+          "text": "los"
+        },
+        {
+          "t": 39.48,
+          "text": "sueños"
+        },
+        {
+          "t": 39.82,
+          "text": "que"
+        },
+        {
+          "t": 40.0,
+          "text": "no"
+        },
+        {
+          "t": 40.14,
+          "text": "nos"
+        },
+        {
+          "t": 40.26,
+          "text": "pudieron"
+        },
+        {
+          "t": 40.68,
+          "text": "quitar"
+        }
+      ]
+    },
+    {
+      "start": 41.16,
+      "end": 42.62,
+      "text": "Tengo dominicanos,",
+      "words": [
+        {
+          "t": 41.16,
+          "text": "Tengo"
+        },
+        {
+          "t": 41.6,
+          "text": "dominicanos,"
+        }
+      ]
+    },
+    {
+      "start": 42.64,
+      "end": 43.72,
+      "text": "borricos en la fila,",
+      "words": [
+        {
+          "t": 42.64,
+          "text": "borricos"
+        },
+        {
+          "t": 43.02,
+          "text": "en"
+        },
+        {
+          "t": 43.14,
+          "text": "la"
+        },
+        {
+          "t": 43.18,
+          "text": "fila,"
+        }
+      ]
+    },
+    {
+      "start": 43.74,
+      "end": 45.0,
+      "text": "mexicanos gritando,",
+      "words": [
+        {
+          "t": 43.74,
+          "text": "mexicanos"
+        },
+        {
+          "t": 44.44,
+          "text": "gritando,"
+        }
+      ]
+    },
+    {
+      "start": 45.0,
+      "end": 46.18,
+      "text": "cubanos con la pila",
+      "words": [
+        {
+          "t": 45.0,
+          "text": "cubanos"
+        },
+        {
+          "t": 45.48,
+          "text": "con"
+        },
+        {
+          "t": 45.64,
+          "text": "la"
+        },
+        {
+          "t": 45.78,
+          "text": "pila"
+        }
+      ]
+    },
+    {
+      "start": 46.29,
+      "end": 47.48,
+      "text": "Colombianos activos,",
+      "words": [
+        {
+          "t": 46.29,
+          "text": "Colombianos"
+        },
+        {
+          "t": 46.94,
+          "text": "activos,"
+        }
+      ]
+    },
+    {
+      "start": 47.56,
+      "end": 48.6,
+      "text": "todo el combo vacila,",
+      "words": [
+        {
+          "t": 47.56,
+          "text": "todo"
+        },
+        {
+          "t": 47.64,
+          "text": "el"
+        },
+        {
+          "t": 47.78,
+          "text": "combo"
+        },
+        {
+          "t": 48.02,
+          "text": "vacila,"
+        }
+      ]
+    },
+    {
+      "start": 48.66,
+      "end": 51.02,
+      "text": "si uno se levanta la mesa se multiplica",
+      "words": [
+        {
+          "t": 48.66,
+          "text": "si"
+        },
+        {
+          "t": 48.86,
+          "text": "uno"
+        },
+        {
+          "t": 49.12,
+          "text": "se"
+        },
+        {
+          "t": 49.3,
+          "text": "levanta"
+        },
+        {
+          "t": 49.84,
+          "text": "la"
+        },
+        {
+          "t": 49.9,
+          "text": "mesa"
+        },
+        {
+          "t": 50.16,
+          "text": "se"
+        },
+        {
+          "t": 50.38,
+          "text": "multiplica"
+        }
+      ]
+    },
+    {
+      "start": 51.02,
+      "end": 52.13,
+      "text": "No me hablen de lealtad,",
+      "words": [
+        {
+          "t": 51.02,
+          "text": "No"
+        },
+        {
+          "t": 51.18,
+          "text": "me"
+        },
+        {
+          "t": 51.3,
+          "text": "hablen"
+        },
+        {
+          "t": 51.5,
+          "text": "de"
+        },
+        {
+          "t": 51.68,
+          "text": "lealtad,"
+        }
+      ]
+    },
+    {
+      "start": 52.24,
+      "end": 53.62,
+      "text": "si no estaba en el frío,",
+      "words": [
+        {
+          "t": 52.24,
+          "text": "si"
+        },
+        {
+          "t": 52.42,
+          "text": "no"
+        },
+        {
+          "t": 52.54,
+          "text": "estaba"
+        },
+        {
+          "t": 52.74,
+          "text": "en"
+        },
+        {
+          "t": 52.98,
+          "text": "el"
+        },
+        {
+          "t": 53.12,
+          "text": "frío,"
+        }
+      ]
+    },
+    {
+      "start": 53.68,
+      "end": 56.16,
+      "text": "cuando faltaba todo y sonaban los líos",
+      "words": [
+        {
+          "t": 53.68,
+          "text": "cuando"
+        },
+        {
+          "t": 53.82,
+          "text": "faltaba"
+        },
+        {
+          "t": 54.38,
+          "text": "todo"
+        },
+        {
+          "t": 54.66,
+          "text": "y"
+        },
+        {
+          "t": 54.92,
+          "text": "sonaban"
+        },
+        {
+          "t": 55.28,
+          "text": "los"
+        },
+        {
+          "t": 55.56,
+          "text": "líos"
+        }
+      ]
+    },
+    {
+      "start": 56.16,
+      "end": 58.4,
+      "text": "Ahora ven la luz y quieren ser testigos,",
+      "words": [
+        {
+          "t": 56.16,
+          "text": "Ahora"
+        },
+        {
+          "t": 56.5,
+          "text": "ven"
+        },
+        {
+          "t": 56.74,
+          "text": "la"
+        },
+        {
+          "t": 56.88,
+          "text": "luz"
+        },
+        {
+          "t": 57.18,
+          "text": "y"
+        },
+        {
+          "t": 57.36,
+          "text": "quieren"
+        },
+        {
+          "t": 57.58,
+          "text": "ser"
+        },
+        {
+          "t": 57.8,
+          "text": "testigos,"
+        }
+      ]
+    },
+    {
+      "start": 58.66,
+      "end": 59.56,
+      "text": "pero yo sé",
+      "words": [
+        {
+          "t": 58.66,
+          "text": "pero"
+        },
+        {
+          "t": 58.98,
+          "text": "yo"
+        },
+        {
+          "t": 59.2,
+          "text": "sé"
+        }
+      ]
+    },
+    {
+      "start": 59.58,
+      "end": 61.96,
+      "text": "Quienes fueron de los míos, ¿quién llegó?",
+      "words": [
+        {
+          "t": 59.58,
+          "text": "Quienes"
+        },
+        {
+          "t": 60.02,
+          "text": "fueron"
+        },
+        {
+          "t": 60.16,
+          "text": "de"
+        },
+        {
+          "t": 60.42,
+          "text": "los"
+        },
+        {
+          "t": 60.56,
+          "text": "míos,"
+        },
+        {
+          "t": 61.22,
+          "text": "¿quién"
+        },
+        {
+          "t": 61.72,
+          "text": "llegó?"
+        }
+      ]
+    },
+    {
+      "start": 63.62,
+      "end": 64.66,
+      "text": "¿Quién sonó?",
+      "words": [
+        {
+          "t": 63.62,
+          "text": "¿Quién"
+        },
+        {
+          "t": 64.14,
+          "text": "sonó?"
+        }
+      ]
+    },
+    {
+      "start": 65.64,
+      "end": 67.12,
+      "text": "¿Quién prende la calle?",
+      "words": [
+        {
+          "t": 65.64,
+          "text": "¿Quién"
+        },
+        {
+          "t": 66.16,
+          "text": "prende"
+        },
+        {
+          "t": 66.58,
+          "text": "la"
+        },
+        {
+          "t": 66.7,
+          "text": "calle?"
+        }
+      ]
+    },
+    {
+      "start": 68.06,
+      "end": 69.58,
+      "text": "¿Quién nunca se vende?",
+      "words": [
+        {
+          "t": 68.06,
+          "text": "¿Quién"
+        },
+        {
+          "t": 68.58,
+          "text": "nunca"
+        },
+        {
+          "t": 68.86,
+          "text": "se"
+        },
+        {
+          "t": 69.16,
+          "text": "vende?"
+        }
+      ]
+    },
+    {
+      "start": 69.93,
+      "end": 70.816,
+      "text": "Mi gente,",
+      "words": [
+        {
+          "t": 69.93,
+          "text": "Mi"
+        },
+        {
+          "t": 70.38,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 70.92,
+      "end": 72.48,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 70.92,
+          "text": "mi"
+        },
+        {
+          "t": 71.6,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 72.72,
+      "end": 73.26,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 72.72,
+          "text": "mi"
+        },
+        {
+          "t": 72.9,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 73.3,
+      "end": 73.84,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 73.3,
+          "text": "mi"
+        },
+        {
+          "t": 73.5,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 73.92,
+      "end": 73.96,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 73.92,
+          "text": "mi"
+        },
+        {
+          "t": 73.96,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 73.96,
+      "end": 74.08,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 73.96,
+          "text": "mi"
+        },
+        {
+          "t": 74.08,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 74.08,
+      "end": 74.16,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 74.08,
+          "text": "mi"
+        },
+        {
+          "t": 74.16,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 74.16,
+      "end": 74.16,
+      "text": "mi gente",
+      "words": [
+        {
+          "t": 74.16,
+          "text": "mi"
+        },
+        {
+          "t": 74.16,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 74.16,
+      "end": 75.76,
+      "text": "Todo el mundo conmigo se siente,",
+      "words": [
+        {
+          "t": 74.16,
+          "text": "Todo"
+        },
+        {
+          "t": 74.16,
+          "text": "el"
+        },
+        {
+          "t": 74.34,
+          "text": "mundo"
+        },
+        {
+          "t": 74.62,
+          "text": "conmigo"
+        },
+        {
+          "t": 75.1,
+          "text": "se"
+        },
+        {
+          "t": 75.32,
+          "text": "siente,"
+        }
+      ]
+    },
+    {
+      "start": 75.76,
+      "end": 76.38,
+      "text": "se siente,",
+      "words": [
+        {
+          "t": 75.76,
+          "text": "se"
+        },
+        {
+          "t": 75.94,
+          "text": "siente,"
+        }
+      ]
+    },
+    {
+      "start": 76.42,
+      "end": 78.82,
+      "text": "si llego con los míos la calle se enciende",
+      "words": [
+        {
+          "t": 76.42,
+          "text": "si"
+        },
+        {
+          "t": 76.52,
+          "text": "llego"
+        },
+        {
+          "t": 76.86,
+          "text": "con"
+        },
+        {
+          "t": 77.04,
+          "text": "los"
+        },
+        {
+          "t": 77.2,
+          "text": "míos"
+        },
+        {
+          "t": 77.56,
+          "text": "la"
+        },
+        {
+          "t": 77.76,
+          "text": "calle"
+        },
+        {
+          "t": 78.14,
+          "text": "se"
+        },
+        {
+          "t": 78.38,
+          "text": "enciende"
+        }
+      ]
+    },
+    {
+      "start": 78.82,
+      "end": 79.46,
+      "text": "Mi gente,",
+      "words": [
+        {
+          "t": 78.82,
+          "text": "Mi"
+        },
+        {
+          "t": 79.06,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 79.52,
+      "end": 80.02,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 79.52,
+          "text": "mi"
+        },
+        {
+          "t": 79.66,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 80.12,
+      "end": 80.56,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 80.12,
+          "text": "mi"
+        },
+        {
+          "t": 80.24,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 80.72,
+      "end": 81.24,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 80.72,
+          "text": "mi"
+        },
+        {
+          "t": 80.86,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 81.36,
+      "end": 81.82,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 81.36,
+          "text": "mi"
+        },
+        {
+          "t": 81.46,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 81.96,
+      "end": 82.4,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 81.96,
+          "text": "mi"
+        },
+        {
+          "t": 82.12,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 82.54,
+      "end": 83.02,
+      "text": "mi gente,",
+      "words": [
+        {
+          "t": 82.54,
+          "text": "mi"
+        },
+        {
+          "t": 82.72,
+          "text": "gente,"
+        }
+      ]
+    },
+    {
+      "start": 83.14,
+      "end": 83.46,
+      "text": "mi gente",
+      "words": [
+        {
+          "t": 83.14,
+          "text": "mi"
+        },
+        {
+          "t": 83.3,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 83.46,
+      "end": 85.04,
+      "text": "No cambia mi coro,",
+      "words": [
+        {
+          "t": 83.46,
+          "text": "No"
+        },
+        {
+          "t": 83.88,
+          "text": "cambia"
+        },
+        {
+          "t": 84.42,
+          "text": "mi"
+        },
+        {
+          "t": 84.54,
+          "text": "coro,"
+        }
+      ]
+    },
+    {
+      "start": 85.04,
+      "end": 86.22,
+      "text": "mi sangre me entiende,",
+      "words": [
+        {
+          "t": 85.04,
+          "text": "mi"
+        },
+        {
+          "t": 85.16,
+          "text": "sangre"
+        },
+        {
+          "t": 85.54,
+          "text": "me"
+        },
+        {
+          "t": 85.76,
+          "text": "entiende,"
+        }
+      ]
+    },
+    {
+      "start": 86.28,
+      "end": 88.64,
+      "text": "del barrio pa'l mundo la vibra se extiende",
+      "words": [
+        {
+          "t": 86.28,
+          "text": "del"
+        },
+        {
+          "t": 86.4,
+          "text": "barrio"
+        },
+        {
+          "t": 86.88,
+          "text": "pa"
+        },
+        {
+          "t": 87.0,
+          "text": "'l"
+        },
+        {
+          "t": 87.1,
+          "text": "mundo"
+        },
+        {
+          "t": 87.34,
+          "text": "la"
+        },
+        {
+          "t": 87.62,
+          "text": "vibra"
+        },
+        {
+          "t": 88.0,
+          "text": "se"
+        },
+        {
+          "t": 88.2,
+          "text": "extiende"
+        }
+      ]
+    },
+    {
+      "start": 88.64,
+      "end": 89.26,
+      "text": "Mi gente",
+      "words": [
+        {
+          "t": 88.64,
+          "text": "Mi"
+        },
+        {
+          "t": 88.9,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 90.18,
+      "end": 92.94,
+      "text": "No somos perfectos, pero somos reales",
+      "words": [
+        {
+          "t": 90.18,
+          "text": "No"
+        },
+        {
+          "t": 90.82,
+          "text": "somos"
+        },
+        {
+          "t": 91.08,
+          "text": "perfectos,"
+        },
+        {
+          "t": 91.88,
+          "text": "pero"
+        },
+        {
+          "t": 92.04,
+          "text": "somos"
+        },
+        {
+          "t": 92.36,
+          "text": "reales"
+        }
+      ]
+    },
+    {
+      "start": 92.94,
+      "end": 95.58,
+      "text": "Y caprices brillando como medallas callejeras",
+      "words": [
+        {
+          "t": 92.94,
+          "text": "Y"
+        },
+        {
+          "t": 93.04,
+          "text": "caprices"
+        },
+        {
+          "t": 93.4,
+          "text": "brillando"
+        },
+        {
+          "t": 93.96,
+          "text": "como"
+        },
+        {
+          "t": 94.2,
+          "text": "medallas"
+        },
+        {
+          "t": 94.74,
+          "text": "callejeras"
+        }
+      ]
+    },
+    {
+      "start": 95.58,
+      "end": 98.02,
+      "text": "Hablamos con hechos, no con señales",
+      "words": [
+        {
+          "t": 95.58,
+          "text": "Hablamos"
+        },
+        {
+          "t": 96.14,
+          "text": "con"
+        },
+        {
+          "t": 96.36,
+          "text": "hechos,"
+        },
+        {
+          "t": 96.84,
+          "text": "no"
+        },
+        {
+          "t": 97.16,
+          "text": "con"
+        },
+        {
+          "t": 97.34,
+          "text": "señales"
+        }
+      ]
+    },
+    {
+      "start": 98.02,
+      "end": 100.36,
+      "text": "Y si caigo me levanta mi bandera",
+      "words": [
+        {
+          "t": 98.02,
+          "text": "Y"
+        },
+        {
+          "t": 98.44,
+          "text": "si"
+        },
+        {
+          "t": 98.66,
+          "text": "caigo"
+        },
+        {
+          "t": 99.02,
+          "text": "me"
+        },
+        {
+          "t": 99.18,
+          "text": "levanta"
+        },
+        {
+          "t": 99.7,
+          "text": "mi"
+        },
+        {
+          "t": 99.8,
+          "text": "bandera"
+        }
+      ]
+    },
+    {
+      "start": 100.36,
+      "end": 102.76,
+      "text": "Mira cómo suena cuando entra la percusión",
+      "words": [
+        {
+          "t": 100.36,
+          "text": "Mira"
+        },
+        {
+          "t": 100.76,
+          "text": "cómo"
+        },
+        {
+          "t": 101.08,
+          "text": "suena"
+        },
+        {
+          "t": 101.52,
+          "text": "cuando"
+        },
+        {
+          "t": 101.7,
+          "text": "entra"
+        },
+        {
+          "t": 101.96,
+          "text": "la"
+        },
+        {
+          "t": 102.1,
+          "text": "percusión"
+        }
+      ]
+    },
+    {
+      "start": 102.76,
+      "end": 105.18,
+      "text": "Bajo retumbando como declaración",
+      "words": [
+        {
+          "t": 102.76,
+          "text": "Bajo"
+        },
+        {
+          "t": 103.34,
+          "text": "retumbando"
+        },
+        {
+          "t": 104.06,
+          "text": "como"
+        },
+        {
+          "t": 104.32,
+          "text": "declaración"
+        }
+      ]
+    },
+    {
+      "start": 105.18,
+      "end": 107.68,
+      "text": "No es división, esto es conexión",
+      "words": [
+        {
+          "t": 105.18,
+          "text": "No"
+        },
+        {
+          "t": 105.66,
+          "text": "es"
+        },
+        {
+          "t": 105.78,
+          "text": "división,"
+        },
+        {
+          "t": 106.58,
+          "text": "esto"
+        },
+        {
+          "t": 106.88,
+          "text": "es"
+        },
+        {
+          "t": 107.02,
+          "text": "conexión"
+        }
+      ]
+    },
+    {
+      "start": 107.68,
+      "end": 110.14,
+      "text": "Mi gente en el pecho como religión",
+      "words": [
+        {
+          "t": 107.68,
+          "text": "Mi"
+        },
+        {
+          "t": 107.98,
+          "text": "gente"
+        },
+        {
+          "t": 108.28,
+          "text": "en"
+        },
+        {
+          "t": 108.46,
+          "text": "el"
+        },
+        {
+          "t": 108.58,
+          "text": "pecho"
+        },
+        {
+          "t": 109.04,
+          "text": "como"
+        },
+        {
+          "t": 109.4,
+          "text": "religión"
+        }
+      ]
+    },
+    {
+      "start": 110.14,
+      "end": 112.46,
+      "text": "Desde Queens hasta Cali, de PR hasta DR",
+      "words": [
+        {
+          "t": 110.14,
+          "text": "Desde"
+        },
+        {
+          "t": 110.34,
+          "text": "Queens"
+        },
+        {
+          "t": 110.7,
+          "text": "hasta"
+        },
+        {
+          "t": 110.92,
+          "text": "Cali,"
+        },
+        {
+          "t": 111.4,
+          "text": "de"
+        },
+        {
+          "t": 111.5,
+          "text": "PR"
+        },
+        {
+          "t": 111.84,
+          "text": "hasta"
+        },
+        {
+          "t": 112.08,
+          "text": "DR"
+        }
+      ]
+    },
+    {
+      "start": 112.46,
+      "end": 114.97,
+      "text": "La sangre caliente no se puede detener",
+      "words": [
+        {
+          "t": 112.46,
+          "text": "La"
+        },
+        {
+          "t": 113.0,
+          "text": "sangre"
+        },
+        {
+          "t": 113.26,
+          "text": "caliente"
+        },
+        {
+          "t": 113.74,
+          "text": "no"
+        },
+        {
+          "t": 113.94,
+          "text": "se"
+        },
+        {
+          "t": 114.06,
+          "text": "puede"
+        },
+        {
+          "t": 114.32,
+          "text": "detener"
+        }
+      ]
+    },
+    {
+      "start": 114.98,
+      "end": 117.36,
+      "text": "No importa el acento, se entiende el poder",
+      "words": [
+        {
+          "t": 114.98,
+          "text": "No"
+        },
+        {
+          "t": 115.36,
+          "text": "importa"
+        },
+        {
+          "t": 115.68,
+          "text": "el"
+        },
+        {
+          "t": 115.92,
+          "text": "acento,"
+        },
+        {
+          "t": 116.36,
+          "text": "se"
+        },
+        {
+          "t": 116.54,
+          "text": "entiende"
+        },
+        {
+          "t": 116.92,
+          "text": "el"
+        },
+        {
+          "t": 117.08,
+          "text": "poder"
+        }
+      ]
+    },
+    {
+      "start": 117.36,
+      "end": 119.98,
+      "text": "Cuando el barrio canta lo tiene que creer",
+      "words": [
+        {
+          "t": 117.36,
+          "text": "Cuando"
+        },
+        {
+          "t": 117.82,
+          "text": "el"
+        },
+        {
+          "t": 118.08,
+          "text": "barrio"
+        },
+        {
+          "t": 118.44,
+          "text": "canta"
+        },
+        {
+          "t": 118.9,
+          "text": "lo"
+        },
+        {
+          "t": 119.0,
+          "text": "tiene"
+        },
+        {
+          "t": 119.28,
+          "text": "que"
+        },
+        {
+          "t": 119.44,
+          "text": "creer"
+        }
+      ]
+    },
+    {
+      "start": 120.08,
+      "end": 122.44,
+      "text": "Manos arriba si tú tienes tu gente",
+      "words": [
+        {
+          "t": 120.08,
+          "text": "Manos"
+        },
+        {
+          "t": 120.78,
+          "text": "arriba"
+        },
+        {
+          "t": 121.04,
+          "text": "si"
+        },
+        {
+          "t": 121.32,
+          "text": "tú"
+        },
+        {
+          "t": 121.48,
+          "text": "tienes"
+        },
+        {
+          "t": 121.8,
+          "text": "tu"
+        },
+        {
+          "t": 121.98,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 122.44,
+      "end": 124.96,
+      "text": "Los que tuvieron cuando no había suerte",
+      "words": [
+        {
+          "t": 122.44,
+          "text": "Los"
+        },
+        {
+          "t": 123.04,
+          "text": "que"
+        },
+        {
+          "t": 123.18,
+          "text": "tuvieron"
+        },
+        {
+          "t": 123.64,
+          "text": "cuando"
+        },
+        {
+          "t": 123.86,
+          "text": "no"
+        },
+        {
+          "t": 124.14,
+          "text": "había"
+        },
+        {
+          "t": 124.38,
+          "text": "suerte"
+        }
+      ]
+    },
+    {
+      "start": 124.96,
+      "end": 127.52,
+      "text": "Los que se quedan cuando todo se pierde",
+      "words": [
+        {
+          "t": 124.96,
+          "text": "Los"
+        },
+        {
+          "t": 125.46,
+          "text": "que"
+        },
+        {
+          "t": 125.62,
+          "text": "se"
+        },
+        {
+          "t": 125.8,
+          "text": "quedan"
+        },
+        {
+          "t": 126.12,
+          "text": "cuando"
+        },
+        {
+          "t": 126.3,
+          "text": "todo"
+        },
+        {
+          "t": 126.66,
+          "text": "se"
+        },
+        {
+          "t": 126.86,
+          "text": "pierde"
+        }
+      ]
+    },
+    {
+      "start": 127.52,
+      "end": 129.84,
+      "text": "Los que convierten dolor en fuente",
+      "words": [
+        {
+          "t": 127.52,
+          "text": "Los"
+        },
+        {
+          "t": 127.92,
+          "text": "que"
+        },
+        {
+          "t": 128.08,
+          "text": "convierten"
+        },
+        {
+          "t": 128.68,
+          "text": "dolor"
+        },
+        {
+          "t": 129.0,
+          "text": "en"
+        },
+        {
+          "t": 129.44,
+          "text": "fuente"
+        }
+      ]
+    },
+    {
+      "start": 129.85,
+      "end": 132.28,
+      "text": "Manos arriba si tú tienes tu gente",
+      "words": [
+        {
+          "t": 129.85,
+          "text": "Manos"
+        },
+        {
+          "t": 130.6,
+          "text": "arriba"
+        },
+        {
+          "t": 130.9,
+          "text": "si"
+        },
+        {
+          "t": 131.2,
+          "text": "tú"
+        },
+        {
+          "t": 131.34,
+          "text": "tienes"
+        },
+        {
+          "t": 131.64,
+          "text": "tu"
+        },
+        {
+          "t": 131.86,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 132.28,
+      "end": 134.76,
+      "text": "Los que te cuidan aunque no estén presentes",
+      "words": [
+        {
+          "t": 132.28,
+          "text": "Los"
+        },
+        {
+          "t": 132.86,
+          "text": "que"
+        },
+        {
+          "t": 133.02,
+          "text": "te"
+        },
+        {
+          "t": 133.18,
+          "text": "cuidan"
+        },
+        {
+          "t": 133.54,
+          "text": "aunque"
+        },
+        {
+          "t": 133.72,
+          "text": "no"
+        },
+        {
+          "t": 133.92,
+          "text": "estén"
+        },
+        {
+          "t": 134.16,
+          "text": "presentes"
+        }
+      ]
+    },
+    {
+      "start": 134.96,
+      "end": 137.2,
+      "text": "Los que caminan con fuego en la frente",
+      "words": [
+        {
+          "t": 134.96,
+          "text": "Los"
+        },
+        {
+          "t": 135.32,
+          "text": "que"
+        },
+        {
+          "t": 135.46,
+          "text": "caminan"
+        },
+        {
+          "t": 136.12,
+          "text": "con"
+        },
+        {
+          "t": 136.26,
+          "text": "fuego"
+        },
+        {
+          "t": 136.5,
+          "text": "en"
+        },
+        {
+          "t": 136.68,
+          "text": "la"
+        },
+        {
+          "t": 136.74,
+          "text": "frente"
+        }
+      ]
+    },
+    {
+      "start": 137.2,
+      "end": 139.84,
+      "text": "Los que son familia aunque no sean parientes",
+      "words": [
+        {
+          "t": 137.2,
+          "text": "Los"
+        },
+        {
+          "t": 137.62,
+          "text": "que"
+        },
+        {
+          "t": 137.78,
+          "text": "son"
+        },
+        {
+          "t": 137.96,
+          "text": "familia"
+        },
+        {
+          "t": 138.32,
+          "text": "aunque"
+        },
+        {
+          "t": 138.62,
+          "text": "no"
+        },
+        {
+          "t": 138.9,
+          "text": "sean"
+        },
+        {
+          "t": 139.16,
+          "text": "parientes"
+        }
+      ]
+    },
+    {
+      "start": 142.86,
+      "end": 143.38,
+      "text": "¡Mi gente!",
+      "words": [
+        {
+          "t": 142.86,
+          "text": "¡Mi"
+        },
+        {
+          "t": 142.96,
+          "text": "gente!"
+        }
+      ]
+    },
+    {
+      "start": 145.216,
+      "end": 146.4,
+      "text": "¡Mi gente!",
+      "words": [
+        {
+          "t": 145.216,
+          "text": "¡Mi"
+        },
+        {
+          "t": 145.8,
+          "text": "gente!"
+        }
+      ]
+    },
+    {
+      "start": 146.4,
+      "end": 146.624,
+      "text": "¡Dale!",
+      "words": [
+        {
+          "t": 146.4,
+          "text": "¡Dale!"
+        }
+      ]
+    },
+    {
+      "start": 146.82,
+      "end": 147.264,
+      "text": "¡Otra!",
+      "words": [
+        {
+          "t": 146.82,
+          "text": "¡Otra!"
+        }
+      ]
+    },
+    {
+      "start": 147.82,
+      "end": 148.02,
+      "text": "¡Mi gente!",
+      "words": [
+        {
+          "t": 147.82,
+          "text": "¡Mi"
+        },
+        {
+          "t": 147.92,
+          "text": "gente!"
+        }
+      ]
+    },
+    {
+      "start": 150.3,
+      "end": 152.62,
+      "text": "Mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 150.3,
+          "text": "Mi"
+        },
+        {
+          "t": 150.4,
+          "text": "gente,"
+        },
+        {
+          "t": 150.88,
+          "text": "mi"
+        },
+        {
+          "t": 151.04,
+          "text": "gente,"
+        },
+        {
+          "t": 151.48,
+          "text": "mi"
+        },
+        {
+          "t": 151.62,
+          "text": "gente,"
+        },
+        {
+          "t": 152.08,
+          "text": "mi"
+        },
+        {
+          "t": 152.24,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 152.62,
+      "end": 155.12,
+      "text": "El mundo conmigo se siente, se siente",
+      "words": [
+        {
+          "t": 152.62,
+          "text": "El"
+        },
+        {
+          "t": 152.88,
+          "text": "mundo"
+        },
+        {
+          "t": 153.22,
+          "text": "conmigo"
+        },
+        {
+          "t": 153.86,
+          "text": "se"
+        },
+        {
+          "t": 154.08,
+          "text": "siente,"
+        },
+        {
+          "t": 154.56,
+          "text": "se"
+        },
+        {
+          "t": 154.7,
+          "text": "siente"
+        }
+      ]
+    },
+    {
+      "start": 155.12,
+      "end": 157.62,
+      "text": "Si llego con los míos la calle se enciende",
+      "words": [
+        {
+          "t": 155.12,
+          "text": "Si"
+        },
+        {
+          "t": 155.3,
+          "text": "llego"
+        },
+        {
+          "t": 155.64,
+          "text": "con"
+        },
+        {
+          "t": 155.8,
+          "text": "los"
+        },
+        {
+          "t": 155.96,
+          "text": "míos"
+        },
+        {
+          "t": 156.34,
+          "text": "la"
+        },
+        {
+          "t": 156.52,
+          "text": "calle"
+        },
+        {
+          "t": 156.9,
+          "text": "se"
+        },
+        {
+          "t": 157.14,
+          "text": "enciende"
+        }
+      ]
+    },
+    {
+      "start": 157.62,
+      "end": 160.04,
+      "text": "Mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 157.62,
+          "text": "Mi"
+        },
+        {
+          "t": 157.86,
+          "text": "gente,"
+        },
+        {
+          "t": 158.26,
+          "text": "mi"
+        },
+        {
+          "t": 158.42,
+          "text": "gente,"
+        },
+        {
+          "t": 158.86,
+          "text": "mi"
+        },
+        {
+          "t": 158.98,
+          "text": "gente,"
+        },
+        {
+          "t": 159.46,
+          "text": "mi"
+        },
+        {
+          "t": 159.62,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 160.04,
+      "end": 162.32,
+      "text": "Mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 160.04,
+          "text": "Mi"
+        },
+        {
+          "t": 160.22,
+          "text": "gente,"
+        },
+        {
+          "t": 160.72,
+          "text": "mi"
+        },
+        {
+          "t": 160.9,
+          "text": "gente,"
+        },
+        {
+          "t": 161.34,
+          "text": "mi"
+        },
+        {
+          "t": 161.48,
+          "text": "gente,"
+        },
+        {
+          "t": 161.96,
+          "text": "mi"
+        },
+        {
+          "t": 162.08,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 162.32,
+      "end": 164.96,
+      "text": "No cambia mi coro, mi sangre me entiende",
+      "words": [
+        {
+          "t": 162.32,
+          "text": "No"
+        },
+        {
+          "t": 162.68,
+          "text": "cambia"
+        },
+        {
+          "t": 163.2,
+          "text": "mi"
+        },
+        {
+          "t": 163.32,
+          "text": "coro,"
+        },
+        {
+          "t": 163.82,
+          "text": "mi"
+        },
+        {
+          "t": 163.92,
+          "text": "sangre"
+        },
+        {
+          "t": 164.3,
+          "text": "me"
+        },
+        {
+          "t": 164.54,
+          "text": "entiende"
+        }
+      ]
+    },
+    {
+      "start": 164.96,
+      "end": 167.42,
+      "text": "Del barrio pa'l mundo la vibra se extiende",
+      "words": [
+        {
+          "t": 164.96,
+          "text": "Del"
+        },
+        {
+          "t": 165.18,
+          "text": "barrio"
+        },
+        {
+          "t": 165.62,
+          "text": "pa"
+        },
+        {
+          "t": 165.76,
+          "text": "'l"
+        },
+        {
+          "t": 165.84,
+          "text": "mundo"
+        },
+        {
+          "t": 166.12,
+          "text": "la"
+        },
+        {
+          "t": 166.4,
+          "text": "vibra"
+        },
+        {
+          "t": 166.84,
+          "text": "se"
+        },
+        {
+          "t": 166.98,
+          "text": "extiende"
+        }
+      ]
+    },
+    {
+      "start": 167.42,
+      "end": 169.76,
+      "text": "Mi gente, mi gente, mi gente, mi gente",
+      "words": [
+        {
+          "t": 167.42,
+          "text": "Mi"
+        },
+        {
+          "t": 167.7,
+          "text": "gente,"
+        },
+        {
+          "t": 168.12,
+          "text": "mi"
+        },
+        {
+          "t": 168.24,
+          "text": "gente,"
+        },
+        {
+          "t": 168.72,
+          "text": "mi"
+        },
+        {
+          "t": 168.84,
+          "text": "gente,"
+        },
+        {
+          "t": 169.36,
+          "text": "mi"
+        },
+        {
+          "t": 169.44,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 170.92,
+      "end": 171.94,
+      "text": "Esto no es moda",
+      "words": [
+        {
+          "t": 170.92,
+          "text": "Esto"
+        },
+        {
+          "t": 171.02,
+          "text": "no"
+        },
+        {
+          "t": 171.28,
+          "text": "es"
+        },
+        {
+          "t": 171.38,
+          "text": "moda"
+        }
+      ]
+    },
+    {
+      "start": 172.94,
+      "end": 174.24,
+      "text": "Esto no es pose",
+      "words": [
+        {
+          "t": 172.94,
+          "text": "Esto"
+        },
+        {
+          "t": 173.46,
+          "text": "no"
+        },
+        {
+          "t": 173.76,
+          "text": "es"
+        },
+        {
+          "t": 173.86,
+          "text": "pose"
+        }
+      ]
+    },
+    {
+      "start": 175.9,
+      "end": 176.64,
+      "text": "Esto es mi gente",
+      "words": [
+        {
+          "t": 175.9,
+          "text": "Esto"
+        },
+        {
+          "t": 176.0,
+          "text": "es"
+        },
+        {
+          "t": 176.16,
+          "text": "mi"
+        },
+        {
+          "t": 176.24,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 176.7,
+      "end": 177.34,
+      "text": "Mi gente",
+      "words": [
+        {
+          "t": 176.7,
+          "text": "Mi"
+        },
+        {
+          "t": 176.92,
+          "text": "gente"
+        }
+      ]
+    },
+    {
+      "start": 177.34,
+      "end": 180.78,
+      "text": "Desde abajo hasta donde llegue el sonido",
+      "words": [
+        {
+          "t": 177.34,
+          "text": "Desde"
+        },
+        {
+          "t": 177.94,
+          "text": "abajo"
+        },
+        {
+          "t": 178.42,
+          "text": "hasta"
+        },
+        {
+          "t": 179.2,
+          "text": "donde"
+        },
+        {
+          "t": 179.5,
+          "text": "llegue"
+        },
+        {
+          "t": 180.04,
+          "text": "el"
+        },
+        {
+          "t": 180.1,
+          "text": "sonido"
+        }
+      ]
+    },
+    {
+      "start": 180.78,
+      "end": 181.216,
+      "text": "Mi gente",
+      "words": [
+        {
+          "t": 180.78,
+          "text": "Mi"
+        },
+        {
+          "t": 180.9,
+          "text": "gente"
+        }
+      ]
+    }
+  ]
+}

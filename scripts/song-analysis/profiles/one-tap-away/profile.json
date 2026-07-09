@@ -1,0 +1,271 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "one-tap-away",
+  "generatedAt": "2026-07-09T18:23:54.641Z",
+  "measured": {
+    "bpm": 95.7,
+    "duration": 195.64
+  },
+  "identity": {
+    "title": "One Tap Away",
+    "titleAlternates": [],
+    "genre": "Hip Hop",
+    "subGenres": [
+      "Pop Rap",
+      "Conscious Hip Hop"
+    ],
+    "mood": "melancholic, reflective, digital-isolation, introspective",
+    "styleSentence": "A mid-tempo (96 BPM) A# minor track blending organic drums and brass with atmospheric synths to create a moody, late-night vibe that critiques modern social connectivity.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "conversational, emotive, layered harmonies"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/one-tap-away/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#181808",
+      "#282828",
+      "#282818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "A#",
+      "mode": "minor",
+      "confidence": 0.853
+    },
+    "boundaries": [
+      12.72,
+      87.31,
+      90.84,
+      122.79,
+      127.52,
+      163.47,
+      179.91,
+      182.6
+    ],
+    "brightness": 3059.5,
+    "dynamicsDb": 12.6
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[singer A]\nYeah\none tap away\nbut somehow everybody far now\nuh\ncheck it\n\nBack-back when the screen made the room glow\nI thought the whole world would move close\nold names popping up like whoa though\nmiddle school faces in a new post\n\nI thought we’d talk-talk, really get honest\ndrop the mask, no fake persona\nfind your tribe, find your people\nmake the whole cold world feel warmer\n\nAds in the cracks, brands in the chat\neverybody got stats, everybody wants claps\neverybody got reach but don’t reach back\nhow we got this close and lost contact?\n\n[transition]\n\n[singer B]\nYou can see me in a second\nYou can call me any day\nYou can love me in private\nBut scroll right past my name\nFunny how we got connected\nThen forgot how to stay\nYou're right there in my pocket\nBut you feel a world away\n\nOne tap away (one tap away)\nFrom a real conversation but we don't say a thing\nWe're one tap away\nFrom \"I see you keep going\" from \"I'm proud of your dream\"\nSave your likes for the strangers\nSave your hearts for the stars\nBut the ones who really know you act like loving you is hard\nOne tap away\nSo why do I feel alone in a room full of names?\n\nTap, tap, but you don't reach back\nHeart, heart, but it don't feel like that\nClose, close, close, but we don't connect\nOne tap away and we still forget\n\nClick, click, click, everybody got a new rule\nDon't hype friends that ain't cool, cool\nSave that love for the big names\nBlue checks, big chains, big views\nThen if a stranger blow up overnight\nEverybody swear they saw the light\nSame ones quiet when you need a fire\nNow they in the comments like \"that's my guy\"\n\n[transition]\n\n[singer A]\nWe one tap away\none tap away\nfrom a real conversation\nbut we don’t say a thing\n\nSave your likes for the strangers\nsave your hearts for the stars\nbut the ones who really know you\nact like loving you is hard\n\nMaybe I was young\nthinking wires could heal us\nthinking all this light\nwould finally reveal us\n\nI’m not hard to find\nI’m not far away\nI’m still right here\none tap away\n\nWe one tap away\none tap away\nso why do I feel alone\nin a room full of names?\n\none tap away\nand still so far\neverybody online\nnobody where you are",
+    "lrc": "[Intro]\n[Verse 1]\n[00:03.20] Yeah, one tap away\n[00:07.46] But somehow everybody far now\n[00:13.76] Check it\n[00:14.96] Back, back when the screen made the room glow\n[00:17.30] I thought the whole world would move close\n[00:19.90] Old names poppin' up like water\n[00:22.38] Middle school faces in the new post\n[00:25.04] I thought we'd talk, talk, really get honest\n[00:27.42] Drop the mask, no fake persona\n[00:29.66] Find your tribe, find your people\n[00:32.26] Make the whole cold world feel warmer\n[00:35.06] Ads in the cracks, brands in the chat\n[00:37.44] Everybody got stats, everybody wants claps\n[00:39.96] Everybody got reach, but don't reach back\n[00:42.50] How we got this close and lost contact\n[00:44.94] You can see me in a second\n[Chorus]\n[00:47.76] You can call me any day\n[00:49.91] You can love me in private\n[00:51.72] But scroll right past my name\n[00:55.25] Funny how we got connected\n[00:56.70] But I'm not the only one\n[00:57.42] Then forgot how to stay\n[00:59.99] You're right there in my pocket\n[01:01.88] But you feel a world away\n[01:05.16] One tap away\n[01:06.54] One tap away\n[01:08.19] From a real conversation,\n[01:10.06] but we don't say a thing\n[01:11.34] We're one tap away\n[01:13.30] From I see you keep doing\n[01:14.98] From I'm proud of your dreams\n[01:16.40] Save your likes for the strangers\n[01:18.32] Save your hearts for the stars\n[01:21.10] But the ones who really know you act like\n[01:23.88] Loving you is hard\n[01:25.64] One tap away\n[01:27.21] Then forgot how to stay\n[Bridge]\n[01:27.40] One tap away\n[01:28.24] So why do I feel alone\n[01:30.24] In a room full of names\n[Verse 2]\n[01:31.64] Tap, tap, tap\n[01:32.54] But you don't reach back\n[01:33.96] Heart, heart\n[01:34.76] But it don't feel like that\n[01:36.72] Close, close, close\n[01:37.56] But we don't connect\n[01:38.88] One tap, one tap away\n[01:40.44] And we still forget\n[01:41.56] Click, click, click\n[01:42.66] Everybody got the new rule\n[01:44.38] Don't hide friends that ain't cool, cool\n[01:47.03] Say that love for the big names\n[01:49.18] Blue checks, big chains, big views\n[01:51.60] That if a stranger blow up overnight\n[01:54.77] Everybody's where they saw the light\n[01:56.04] Same ones, quack, quack, quack\n[01:57.38] When you need a fine\n[01:58.66] Now they in the comments like\n[02:00.38] That's my guy\n[02:01.44] One tap away\n[Chorus]\n[02:03.78] One\n[02:05.48] tap away\n[02:06.26] From a real conversation\n[02:08.90] But we don't\n[02:11.31] say a thing\n[02:21.28] Save your likes for the strangers\n[02:23.52] Save your hearts for the stars\n[02:27.01] But the ones who really know you\n[02:29.24] Act like loving you is hard\n[02:32.39] Maybe I was young\n[02:33.26] Thinking wires could heal us\n[02:34.68] Thinking all this light\n[02:35.82] Would finally reveal us\n[02:37.22] I'm not hard to find\n[02:38.38] I'm not far away\n[02:39.46] I'm still right here\n[02:40.00] One tap away\n[02:43.28] One tap away\n[Outro]\n[02:46.76] We one tap away\n[02:48.30] So why do I feel alone\n[02:51.47] In a room full of names\n[02:53.14] One tap away\n[02:54.64] It's still so far\n[02:55.86] Everybody knows\n[02:56.68] Everybody online\n[03:00.10] Nobody where you are\n[03:04.28] Nobody where you are\n[03:07.72] Nobody where you are\n[03:08.84] Nobody where you are\n[03:09.30] Nobody where you are\n[03:09.52] Nobody where you are\n[03:13.40] Nobody where you are\n[03:13.88] Nobody where you are\n[03:14.44] Nobody where you are\n[03:14.62] Nobody where you are\n[03:14.64] Nobody where you are\n"
+  },
+  "analysis": {
+    "summary": "The song critiques the paradoxical isolation inherent in digital connectivity, exploring how social media platforms create a physical proximity that feels like emotional distance.",
+    "overallMood": "melancholic and introspective",
+    "themes": [
+      "Digital Isolation",
+      "Superficial Connectivity",
+      "Loss of Authenticity",
+      "Social Comparison"
+    ],
+    "palette": [
+      "#1A202C",
+      "#4A5568",
+      "#9F7AEA",
+      "#EAB308"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Quiet anticipation and fading memory",
+        "intensity": 0.7,
+        "colorHint": "#1a202c",
+        "start": 3.2
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Nostalgic realization of digital decay",
+        "intensity": 0.84,
+        "colorHint": "#4a5568",
+        "start": 3.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Deepening resignation and heartache",
+        "intensity": 0.94,
+        "colorHint": "#9f7aea",
+        "start": 47.76
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Existential dread in a crowded space",
+        "intensity": 0.64,
+        "colorHint": "#eab308",
+        "start": 87.4
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Aggressive observation of performative love",
+        "intensity": 0.29,
+        "colorHint": "#4a5568",
+        "start": 91.64
+      },
+      {
+        "name": "Outro",
+        "emotion": "Echoing emptiness and final solitude",
+        "intensity": 0.11,
+        "colorHint": "#1a202c",
+        "start": 166.76
+      }
+    ],
+    "keywords": [
+      {
+        "word": "alone",
+        "emotion": "Deep loneliness despite proximity",
+        "imageryPrompt": "a solitary figure standing in the center of a vast, dark server room filled with blinking red lights, feeling physically cold"
+      },
+      {
+        "word": "tap",
+        "emotion": "Futile mechanical action",
+        "imageryPrompt": "a glowing smartphone screen reflecting a person's tired eyes as their thumb hovers over the send button without touching it"
+      },
+      {
+        "word": "strangers",
+        "emotion": "Distant admiration",
+        "imageryPrompt": "silhouettes of people watching celebrities on large screens, giving thumbs up while ignoring each other in a dark room"
+      },
+      {
+        "word": "fake",
+        "emotion": "Hollow deception",
+        "imageryPrompt": "a cracked mirror reflecting a distorted face behind an augmented reality filter that smooths out all imperfections instantly"
+      },
+      {
+        "word": "reach",
+        "emotion": "Failed connection attempt",
+        "imageryPrompt": "two hands reaching towards each other across a chasm of static electricity and digital noise, unable to make contact"
+      },
+      {
+        "word": "names",
+        "emotion": "Overwhelming identity clutter",
+        "imageryPrompt": "countless user profile names scrolling rapidly on an endless black screen like falling snow made of text that no one reads"
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 41,
+      "mid": 43,
+      "close": 18
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 3.2,
+        "intensity": 0.7
+      },
+      {
+        "name": "Verse 1",
+        "start": 3.2,
+        "intensity": 0.84
+      },
+      {
+        "name": "Chorus",
+        "start": 47.76,
+        "intensity": 0.94
+      },
+      {
+        "name": "Bridge",
+        "start": 87.4,
+        "intensity": 0.64
+      },
+      {
+        "name": "Verse 2",
+        "start": 91.64,
+        "intensity": 0.29
+      },
+      {
+        "name": "Outro",
+        "start": 166.76,
+        "intensity": 0.11
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 28
+      },
+      {
+        "name": "Verse 1",
+        "presence": 71
+      },
+      {
+        "name": "Chorus",
+        "presence": 87
+      },
+      {
+        "name": "Bridge",
+        "presence": 88
+      },
+      {
+        "name": "Verse 2",
+        "presence": 32
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          1.02,
+          3.42
+        ],
+        [
+          3.58,
+          8.54
+        ],
+        [
+          8.7,
+          13.1
+        ],
+        [
+          44.06,
+          46.22
+        ],
+        [
+          65.66,
+          66.62
+        ],
+        [
+          89.9,
+          90.86
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "keys",
+        "brass"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "one-tap-away-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

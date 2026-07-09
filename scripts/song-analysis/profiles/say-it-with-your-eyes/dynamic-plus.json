@@ -1,0 +1,48 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "bass"
+    ],
+    "label": "SULTRY SYNTH & BASS ON"
+   },
+   "why": "Capturing the intro groove before the first chorus; isolating the foundational low-end tex"
+  },
+  {
+   "start": 50,
+   "end": 68,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "DRUM CUT WINDOW"
+   },
+   "why": "Utilizing the specific drum-cut window (49-52s) to create a moment of stillness and focus "
+  },
+  {
+   "start": 105,
+   "end": 130,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "other"
+    ],
+    "label": "ACOUSTIC & ATMOSPHERE"
+   },
+   "why": "Highlighting the delicate instrumental break and atmospheric layers during 'Verse 2' to em"
+  }
+ ],
+ "words": {
+  "black": "shatter",
+  "hand": "freeze",
+  "look": "neon",
+  "stay": "pulse",
+  "frame": "carve"
+ }
+}

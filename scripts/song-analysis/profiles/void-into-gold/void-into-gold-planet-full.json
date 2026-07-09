@@ -1,0 +1,102 @@
+{
+  "analysis": {
+    "summary": "This song is a sultry, spiritual journey about releasing mental burdens and societal pressure to embrace a moment of healing and transformation from darkness into light. It blends Afro R&B grooves with electronic textures to create an atmosphere where vulnerability meets uplifting empowerment.",
+    "overallMood": "Sultry Uplifting Spiritual",
+    "themes": [
+      "Transformation",
+      "Healing",
+      "Release of Guilt",
+      "Summer Night Ambiance",
+      "Self-Love"
+    ],
+    "palette": [
+      "#1A0B2E",
+      "#4A3768",
+      "#D4AF37",
+      "#FDF5E6"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and relaxation as the sun sets, inviting a slow bassline to roll up.",
+        "intensity": 0.4,
+        "colorHint": "#1a0b2e",
+        "imageryPrompt": "Deep twilight sky over a calm ocean horizon, silhouettes of palm trees swaying gently in the breeze, fading warm orange light mixing with indigo shadows, soft dust motes dancing in a gentle wind.",
+        "start": 3.16
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Reflective weariness turning into relief as warmth replaces cold walls.",
+        "intensity": 0.69,
+        "colorHint": "#2e1a38",
+        "imageryPrompt": "Dimly lit cozy interior transitioning to a warm beachside view with smoke rising from a cigarette and ice cubes melting in glasses on wooden tables.",
+        "start": 27.52
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Awakening joy, finding balance, and preparing for an emotional release.",
+        "intensity": 0.9,
+        "colorHint": "#4a3768",
+        "imageryPrompt": "Vibrant tropical fruit piled high on a platter glowing in candlelight, steam rising from hot food, golden light filtering through lush green leaves.",
+        "start": 89.98
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Triumphant transformation and shining brightly after the journey.",
+        "intensity": 0.76,
+        "colorHint": "#ffd700",
+        "imageryPrompt": "A figure completely engulfed in radiant golden light standing on a beach at night, surrounded by floating embers that form shapes of flowers and music notes.",
+        "start": 137.1
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Tender forgiveness and mindful appreciation of fleeting moments.",
+        "intensity": 0.3,
+        "colorHint": "#fdf5e6",
+        "imageryPrompt": "Soft focus shot of a hand passing a glass to another across a table, blurred background of string instruments glowing like silver ribbons in the moonlight.",
+        "start": 175.82
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Quiet gratitude and acceptance after letting go of internal alarms.",
+        "intensity": 0.12,
+        "colorHint": "#3d2b50",
+        "imageryPrompt": "A solitary figure standing by the ocean watching waves recede, hands raised slightly in thanks to the sky, calm blue water meeting a darkening purple horizon.",
+        "start": 223.31
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Building momentum towards transformation with love and light.",
+        "intensity": 0.22,
+        "colorHint": "#8b6c42",
+        "imageryPrompt": "Silhouette of a dancer moving through swirling lights that shift from dark smoke to brilliant sparks.",
+        "start": 263.8
+      }
+    ],
+    "keywords": [
+      {
+        "word": "void",
+        "emotion": "Dark emptiness waiting to be filled",
+        "imageryPrompt": "A deep black cavern mouth opening into the sea, surrounded by swirling dark smoke that hints at hidden light within."
+      },
+      {
+        "word": "gold",
+        "emotion": "Precious transformation and value found in self",
+        "imageryPrompt": "Liquid gold pouring from a cracked vessel onto sand, glowing intensely against the night sky like captured stars."
+      },
+      {
+        "word": "smoke",
+        "emotion": "Mystery, relaxation, and clearing confusion",
+        "imageryPrompt": "Thick aromatic smoke curling upwards in slow motion around candle flames on a beach table at dusk."
+      },
+      {
+        "word": "bassline",
+        "emotion": "Pulsating heartbeat driving the rhythm forward",
+        "imageryPrompt": "Visible sound waves rippling through water like deep ocean currents, glowing faintly blue and purple beneath the surface."
+      }
+    ]
+  },
+  "styleHint": "Female lead vocals, sultry smoky alto voice, emotional but uplifting, smooth Afro R&B summer groove, alternative R&B, island soul, Jamaican-inspired bass wobble, hypnotic repeating bassline, warm live strings, cinematic violins and cellos, soft rock guitar accents, neo-soul chords, gentle reggae-style guitar rhythm, glitch-hop effects, turntable scratches, chopped vocal one-shots, tape stops, reverse cymbals, dub delays, filtered drum fills, hand percussion, shakers, congas, soft snare, deep rounded bass, no hard techno kick, no four-on-the-floor boom boom, danceable but relaxed, sunset beach lounge energy, Sade-like elegance, BT-inspired glitch textures, emotional electronic music translated into radio R&B, soulful chorus, hypnotic verses, uplifting bridge, warm summer night, sensual but spiritual, feel-good, human, alive",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:38:00.994Z"
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "id": "summer-drip",
+    "planet": {
+      "analysis": {
+        "summary": "A chopped-and-screwed anthem celebrating slow-motion summer confidence and high-class style, where the 'drip' is defined by glowing skin, luxury fits, and a cool detachment from thirsty admirers.",
+        "overallMood": "sultry",
+        "themes": [
+          "Slow-motion confidence",
+          "Luxury streetwear aesthetic",
+          "Emotional detachment from admirers",
+          "Southern summer atmosphere",
+          "High-class game mentality"
+        ],
+        "palette": [
+          "#FFD700",
+          "#C9A45E",
+          "#1F2833",
+          "#6B8E23"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "anticipatory haze",
+            "intensity": 0.4,
+            "colorHintHex": "#FFD700",
+            "start": 0.2
+          },
+          {
+            "name": "Chorus",
+            "emotion": "sultry confidence",
+            "intensity": 0.85,
+            "colorHintHex": "#C9A45E",
+            "start": 15.26
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "regal poise",
+            "intensity": 0.7,
+            "colorHintHex": "#FFD700",
+            "start": 49.69
+          },
+          {
+            "name": "Bridge",
+            "emotion": "cool detachment",
+            "intensity": 0.6,
+            "colorHintHex": "#1F2833",
+            "start": 125.9
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "playful arrogance",
+            "intensity": 0.75,
+            "colorHintHex": "#FFD700",
+            "start": 148.7
+          }
+        ],
+        "keywords": [
+          {
+            "word": "sunshine",
+            "emotion": "warmth",
+            "imageryPrompt": "Golden hour sunlight filtering through palm fronds, illuminating glowing skin and shimmering fabric textures."
+          },
+          {
+            "word": "drip",
+            "emotion": "luxury pride",
+            "imageryPrompt": "Close up of a high-end gold chain resting on smooth denim shorts with intricate stitching details visible in macro shot."
+          },
+          {
+            "word": "slow",
+            "emotion": "relaxed patience",
+            "imageryPrompt": "Time-lapse effect showing dust motes floating lazily in shafts of light, capturing a suspended moment of stillness."
+          },
+          {
+            "word": "flame",
+            "emotion": "passionate intensity",
+            "imageryPrompt": "Subtle orange and red ember glow reflecting off dark skin against the backdrop of cool blue twilight shadows."
+          },
+          {
+            "word": "thirsty",
+            "emotion": "dismissive disdain",
+            "imageryPrompt": "Silhouettes of wide-eyed figures reaching out towards a central figure who stands still and unbothered in golden light."
+          },
+          {
+            "word": "midnight",
+            "emotion": "mysterious allure",
+            "imageryPrompt": "Deep indigo night sky with street lamps casting long, dramatic shadows on wet pavement reflecting neon signs."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

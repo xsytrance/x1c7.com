@@ -1,0 +1,97 @@
+[
+  {
+    "id": "under-the-elevated",
+    "planet": {
+      "analysis": {
+        "summary": "A gritty cinematic exploration of addiction personified as a seductive force in late-night NYC, where the narrator struggles between maintaining appearances and confronting the 'dragon' beneath their facade.",
+        "overallMood": "Gritty Vulnerability",
+        "themes": [
+          "Addiction as a Seduction",
+          "The Mask of Success vs. Internal Decay",
+          "Urban Isolation and Loneliness",
+          "Self-Deception and Rationalization",
+          "Redemption through Truth",
+          "Breaking the Cycle"
+        ],
+        "palette": [
+          "#1C1C24",
+          "#8B0000",
+          "#D3A675",
+          "#FFFAE0"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Melancholic Warning",
+            "intensity": 0.4,
+            "colorHint": "#1c1c24",
+            "start": 6.9399999999999995
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Resigned Denial",
+            "intensity": 0.55,
+            "colorHint": "#8b0000",
+            "start": 50.06
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Frantic Desire",
+            "intensity": 0.72,
+            "colorHint": "#d3a675",
+            "start": 134.04
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Desperate Rationalization",
+            "intensity": 0.85,
+            "colorHint": "#fffae0",
+            "start": 153.05
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Awakening Resolve",
+            "intensity": 0.78,
+            "colorHint": "#1c1c24",
+            "start": 226.5
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Smoke",
+            "emotion": "Hypnotic Obscurity",
+            "imageryPrompt": "Thick grey haze swirling around a dimly lit corner store window, obscuring the street behind it like a ghostly veil."
+          },
+          {
+            "word": "Dragon",
+            "emotion": "Lurking Menace",
+            "imageryPrompt": "A shadowy serpentine silhouette coiled beneath the concrete underbelly of an elevated train track, glowing with faint emerald eyes in total darkness."
+          },
+          {
+            "word": "Freedom",
+            "emotion": "Irony and Longing",
+            "imageryPrompt": "Tattered paper wings fluttering uselessly above a grimy subway grate, unable to escape the weight of heavy rain falling on concrete below."
+          },
+          {
+            "word": "Chains",
+            "emotion": "Heavy Realization",
+            "imageryPrompt": "Rusted iron links wrapped around an ankle resting against a cold brick wall in a narrow alleyway, casting long sharp shadows at midnight."
+          },
+          {
+            "word": "Truth",
+            "emotion": "Blinding Clarity",
+            "imageryPrompt": "A single beam of harsh white light cutting through dense smoke to reveal cracked pavement and raw, unvarnished emotion on a face."
+          },
+          {
+            "word": "Liar",
+            "emotion": "Self-Pitying Reflection",
+            "imageryPrompt": "A distorted mirror reflecting a smiling figure while the glass cracks behind them with spiderweb fractures filled with dark liquid."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

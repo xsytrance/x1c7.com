@@ -1,0 +1,3144 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 6.24,
+      "end": 9.0,
+      "text": "Yo, black and white night on the river.",
+      "words": [
+        {
+          "t": 6.24,
+          "text": "Yo,"
+        },
+        {
+          "t": 7.26,
+          "text": "black"
+        },
+        {
+          "t": 7.36,
+          "text": "and"
+        },
+        {
+          "t": 7.66,
+          "text": "white"
+        },
+        {
+          "t": 7.92,
+          "text": "night"
+        },
+        {
+          "t": 8.24,
+          "text": "on"
+        },
+        {
+          "t": 8.44,
+          "text": "the"
+        },
+        {
+          "t": 8.56,
+          "text": "river."
+        }
+      ]
+    },
+    {
+      "start": 10.06,
+      "end": 11.44,
+      "text": "You hear that whistle?",
+      "words": [
+        {
+          "t": 10.06,
+          "text": "You"
+        },
+        {
+          "t": 10.624,
+          "text": "hear"
+        },
+        {
+          "t": 10.86,
+          "text": "that"
+        },
+        {
+          "t": 11.02,
+          "text": "whistle?"
+        }
+      ]
+    },
+    {
+      "start": 13.62,
+      "end": 15.08,
+      "text": "That ain't a warning.",
+      "words": [
+        {
+          "t": 13.62,
+          "text": "That"
+        },
+        {
+          "t": 14.208,
+          "text": "ain't"
+        },
+        {
+          "t": 14.52,
+          "text": "a"
+        },
+        {
+          "t": 14.6,
+          "text": "warning."
+        }
+      ]
+    },
+    {
+      "start": 16.82,
+      "end": 17.98,
+      "text": "That's a problem.",
+      "words": [
+        {
+          "t": 16.82,
+          "text": "That's"
+        },
+        {
+          "t": 17.38,
+          "text": "a"
+        },
+        {
+          "t": 17.42,
+          "text": "problem."
+        }
+      ]
+    },
+    {
+      "start": 23.04,
+      "end": 25.1,
+      "text": "Whistle on the river, smoke in the sky.",
+      "words": [
+        {
+          "t": 23.04,
+          "text": "Whistle"
+        },
+        {
+          "t": 23.14,
+          "text": "on"
+        },
+        {
+          "t": 23.44,
+          "text": "the"
+        },
+        {
+          "t": 23.54,
+          "text": "river,"
+        },
+        {
+          "t": 23.98,
+          "text": "smoke"
+        },
+        {
+          "t": 24.32,
+          "text": "in"
+        },
+        {
+          "t": 24.68,
+          "text": "the"
+        },
+        {
+          "t": 24.82,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 25.44,
+      "end": 27.66,
+      "text": "Boat full of trouble when the bad boys ride.",
+      "words": [
+        {
+          "t": 25.44,
+          "text": "Boat"
+        },
+        {
+          "t": 25.76,
+          "text": "full"
+        },
+        {
+          "t": 25.98,
+          "text": "of"
+        },
+        {
+          "t": 26.12,
+          "text": "trouble"
+        },
+        {
+          "t": 26.36,
+          "text": "when"
+        },
+        {
+          "t": 26.62,
+          "text": "the"
+        },
+        {
+          "t": 26.8,
+          "text": "bad"
+        },
+        {
+          "t": 27.04,
+          "text": "boys"
+        },
+        {
+          "t": 27.32,
+          "text": "ride."
+        }
+      ]
+    },
+    {
+      "start": 27.66,
+      "end": 30.22,
+      "text": "Hands on the wheel, eyes gone cold.",
+      "words": [
+        {
+          "t": 27.66,
+          "text": "Hands"
+        },
+        {
+          "t": 28.18,
+          "text": "on"
+        },
+        {
+          "t": 28.54,
+          "text": "the"
+        },
+        {
+          "t": 28.68,
+          "text": "wheel,"
+        },
+        {
+          "t": 29.14,
+          "text": "eyes"
+        },
+        {
+          "t": 29.536,
+          "text": "gone"
+        },
+        {
+          "t": 29.82,
+          "text": "cold."
+        }
+      ]
+    },
+    {
+      "start": 30.4,
+      "end": 32.82,
+      "text": "Black and white world, but the money still gold.",
+      "words": [
+        {
+          "t": 30.4,
+          "text": "Black"
+        },
+        {
+          "t": 30.74,
+          "text": "and"
+        },
+        {
+          "t": 30.92,
+          "text": "white"
+        },
+        {
+          "t": 31.2,
+          "text": "world,"
+        },
+        {
+          "t": 31.62,
+          "text": "but"
+        },
+        {
+          "t": 31.76,
+          "text": "the"
+        },
+        {
+          "t": 31.88,
+          "text": "money"
+        },
+        {
+          "t": 32.12,
+          "text": "still"
+        },
+        {
+          "t": 32.42,
+          "text": "gold."
+        }
+      ]
+    },
+    {
+      "start": 33.28,
+      "end": 35.38,
+      "text": "Whistle on the river, fog on the dock.",
+      "words": [
+        {
+          "t": 33.28,
+          "text": "Whistle"
+        },
+        {
+          "t": 33.44,
+          "text": "on"
+        },
+        {
+          "t": 33.78,
+          "text": "the"
+        },
+        {
+          "t": 33.8,
+          "text": "river,"
+        },
+        {
+          "t": 34.2,
+          "text": "fog"
+        },
+        {
+          "t": 34.42,
+          "text": "on"
+        },
+        {
+          "t": 34.9,
+          "text": "the"
+        },
+        {
+          "t": 35.06,
+          "text": "dock."
+        }
+      ]
+    },
+    {
+      "start": 35.904,
+      "end": 37.86,
+      "text": "Cartoon gloves, but the hammer don't stop.",
+      "words": [
+        {
+          "t": 35.904,
+          "text": "Cartoon"
+        },
+        {
+          "t": 36.38,
+          "text": "gloves,"
+        },
+        {
+          "t": 36.74,
+          "text": "but"
+        },
+        {
+          "t": 36.86,
+          "text": "the"
+        },
+        {
+          "t": 37.02,
+          "text": "hammer"
+        },
+        {
+          "t": 37.26,
+          "text": "don't"
+        },
+        {
+          "t": 37.66,
+          "text": "stop."
+        }
+      ]
+    },
+    {
+      "start": 38.12,
+      "end": 40.34,
+      "text": "Old school grin with a gangsta lean.",
+      "words": [
+        {
+          "t": 38.12,
+          "text": "Old"
+        },
+        {
+          "t": 38.42,
+          "text": "school"
+        },
+        {
+          "t": 38.74,
+          "text": "grin"
+        },
+        {
+          "t": 39.16,
+          "text": "with"
+        },
+        {
+          "t": 39.42,
+          "text": "a"
+        },
+        {
+          "t": 39.6,
+          "text": "gangsta"
+        },
+        {
+          "t": 40.04,
+          "text": "lean."
+        }
+      ]
+    },
+    {
+      "start": 40.8,
+      "end": 43.0,
+      "text": "Steam in the pipes and the whole boat mean.",
+      "words": [
+        {
+          "t": 40.8,
+          "text": "Steam"
+        },
+        {
+          "t": 41.18,
+          "text": "in"
+        },
+        {
+          "t": 41.36,
+          "text": "the"
+        },
+        {
+          "t": 41.48,
+          "text": "pipes"
+        },
+        {
+          "t": 41.8,
+          "text": "and"
+        },
+        {
+          "t": 42.02,
+          "text": "the"
+        },
+        {
+          "t": 42.16,
+          "text": "whole"
+        },
+        {
+          "t": 42.4,
+          "text": "boat"
+        },
+        {
+          "t": 42.7,
+          "text": "mean."
+        }
+      ]
+    },
+    {
+      "start": 43.36,
+      "end": 45.58,
+      "text": "I came through squeaking with the boots on deck.",
+      "words": [
+        {
+          "t": 43.36,
+          "text": "I"
+        },
+        {
+          "t": 43.48,
+          "text": "came"
+        },
+        {
+          "t": 43.68,
+          "text": "through"
+        },
+        {
+          "t": 43.96,
+          "text": "squeaking"
+        },
+        {
+          "t": 44.42,
+          "text": "with"
+        },
+        {
+          "t": 44.56,
+          "text": "the"
+        },
+        {
+          "t": 44.74,
+          "text": "boots"
+        },
+        {
+          "t": 45.06,
+          "text": "on"
+        },
+        {
+          "t": 45.26,
+          "text": "deck."
+        }
+      ]
+    },
+    {
+      "start": 45.8,
+      "end": 48.0,
+      "text": "Little gloves on, but I still collect.",
+      "words": [
+        {
+          "t": 45.8,
+          "text": "Little"
+        },
+        {
+          "t": 46.22,
+          "text": "gloves"
+        },
+        {
+          "t": 46.66,
+          "text": "on,"
+        },
+        {
+          "t": 46.94,
+          "text": "but"
+        },
+        {
+          "t": 47.12,
+          "text": "I"
+        },
+        {
+          "t": 47.28,
+          "text": "still"
+        },
+        {
+          "t": 47.56,
+          "text": "collect."
+        }
+      ]
+    },
+    {
+      "start": 48.36,
+      "end": 50.8,
+      "text": "Captain of the chaos, grin too wide.",
+      "words": [
+        {
+          "t": 48.36,
+          "text": "Captain"
+        },
+        {
+          "t": 48.88,
+          "text": "of"
+        },
+        {
+          "t": 49.12,
+          "text": "the"
+        },
+        {
+          "t": 49.18,
+          "text": "chaos,"
+        },
+        {
+          "t": 49.74,
+          "text": "grin"
+        },
+        {
+          "t": 50.0,
+          "text": "too"
+        },
+        {
+          "t": 50.3,
+          "text": "wide."
+        }
+      ]
+    },
+    {
+      "start": 51.12,
+      "end": 52.96,
+      "text": "Steamboat sliding through the low tide.",
+      "words": [
+        {
+          "t": 51.12,
+          "text": "Steamboat"
+        },
+        {
+          "t": 51.64,
+          "text": "sliding"
+        },
+        {
+          "t": 51.96,
+          "text": "through"
+        },
+        {
+          "t": 52.26,
+          "text": "the"
+        },
+        {
+          "t": 52.4,
+          "text": "low"
+        },
+        {
+          "t": 52.7,
+          "text": "tide."
+        }
+      ]
+    },
+    {
+      "start": 53.42,
+      "end": 55.7,
+      "text": "Pocket full of pens, hat tilted low.",
+      "words": [
+        {
+          "t": 53.42,
+          "text": "Pocket"
+        },
+        {
+          "t": 53.94,
+          "text": "full"
+        },
+        {
+          "t": 54.18,
+          "text": "of"
+        },
+        {
+          "t": 54.34,
+          "text": "pens,"
+        },
+        {
+          "t": 54.6,
+          "text": "hat"
+        },
+        {
+          "t": 54.88,
+          "text": "tilted"
+        },
+        {
+          "t": 55.26,
+          "text": "low."
+        }
+      ]
+    },
+    {
+      "start": 56.04,
+      "end": 57.64,
+      "text": "Whistle hit sharp when the crowd.",
+      "words": [
+        {
+          "t": 56.04,
+          "text": "Whistle"
+        },
+        {
+          "t": 56.56,
+          "text": "hit"
+        },
+        {
+          "t": 56.76,
+          "text": "sharp"
+        },
+        {
+          "t": 57.12,
+          "text": "when"
+        },
+        {
+          "t": 57.36,
+          "text": "the"
+        },
+        {
+          "t": 57.52,
+          "text": "crowd."
+        }
+      ]
+    },
+    {
+      "start": 57.66,
+      "end": 58.38,
+      "text": "Go and blow.",
+      "words": [
+        {
+          "t": 57.66,
+          "text": "Go"
+        },
+        {
+          "t": 57.72,
+          "text": "and"
+        },
+        {
+          "t": 58.06,
+          "text": "blow."
+        }
+      ]
+    },
+    {
+      "start": 58.62,
+      "end": 60.9,
+      "text": "Rat-tat rhythm on the wooden floor.",
+      "words": [
+        {
+          "t": 58.62,
+          "text": "Rat"
+        },
+        {
+          "t": 59.06,
+          "text": "-tat"
+        },
+        {
+          "t": 59.4,
+          "text": "rhythm"
+        },
+        {
+          "t": 59.62,
+          "text": "on"
+        },
+        {
+          "t": 60.0,
+          "text": "the"
+        },
+        {
+          "t": 60.14,
+          "text": "wooden"
+        },
+        {
+          "t": 60.42,
+          "text": "floor."
+        }
+      ]
+    },
+    {
+      "start": 61.2,
+      "end": 63.54,
+      "text": "Kick in the hatch, make the engine roar.",
+      "words": [
+        {
+          "t": 61.2,
+          "text": "Kick"
+        },
+        {
+          "t": 61.56,
+          "text": "in"
+        },
+        {
+          "t": 61.82,
+          "text": "the"
+        },
+        {
+          "t": 62.0,
+          "text": "hatch,"
+        },
+        {
+          "t": 62.36,
+          "text": "make"
+        },
+        {
+          "t": 62.48,
+          "text": "the"
+        },
+        {
+          "t": 62.68,
+          "text": "engine"
+        },
+        {
+          "t": 62.92,
+          "text": "roar."
+        }
+      ]
+    },
+    {
+      "start": 63.9,
+      "end": 65.0,
+      "text": "Oh, real flicker.",
+      "words": [
+        {
+          "t": 63.9,
+          "text": "Oh,"
+        },
+        {
+          "t": 64.2,
+          "text": "real"
+        },
+        {
+          "t": 64.42,
+          "text": "flicker."
+        }
+      ]
+    },
+    {
+      "start": 65.04,
+      "end": 66.14,
+      "text": "Everybody freeze.",
+      "words": [
+        {
+          "t": 65.04,
+          "text": "Everybody"
+        },
+        {
+          "t": 65.56,
+          "text": "freeze."
+        }
+      ]
+    },
+    {
+      "start": 66.48,
+      "end": 68.74,
+      "text": "Smoke stack, coughing like it got bad dreams.",
+      "words": [
+        {
+          "t": 66.48,
+          "text": "Smoke"
+        },
+        {
+          "t": 66.74,
+          "text": "stack,"
+        },
+        {
+          "t": 67.1,
+          "text": "coughing"
+        },
+        {
+          "t": 67.38,
+          "text": "like"
+        },
+        {
+          "t": 67.66,
+          "text": "it"
+        },
+        {
+          "t": 67.82,
+          "text": "got"
+        },
+        {
+          "t": 68.0,
+          "text": "bad"
+        },
+        {
+          "t": 68.3,
+          "text": "dreams."
+        }
+      ]
+    },
+    {
+      "start": 69.04,
+      "end": 71.22,
+      "text": "River racks scatter when the shadows get deep.",
+      "words": [
+        {
+          "t": 69.04,
+          "text": "River"
+        },
+        {
+          "t": 69.3,
+          "text": "racks"
+        },
+        {
+          "t": 69.68,
+          "text": "scatter"
+        },
+        {
+          "t": 69.92,
+          "text": "when"
+        },
+        {
+          "t": 70.18,
+          "text": "the"
+        },
+        {
+          "t": 70.34,
+          "text": "shadows"
+        },
+        {
+          "t": 70.66,
+          "text": "get"
+        },
+        {
+          "t": 70.88,
+          "text": "deep."
+        }
+      ]
+    },
+    {
+      "start": 71.42,
+      "end": 71.94,
+      "text": "In the moonlight,",
+      "words": [
+        {
+          "t": 71.42,
+          "text": "In"
+        },
+        {
+          "t": 71.52,
+          "text": "the"
+        },
+        {
+          "t": 71.64,
+          "text": "moonlight,"
+        }
+      ]
+    },
+    {
+      "start": 72.12,
+      "end": 73.76,
+      "text": "dancers wear the secret sleeve.",
+      "words": [
+        {
+          "t": 72.12,
+          "text": "dancers"
+        },
+        {
+          "t": 72.58,
+          "text": "wear"
+        },
+        {
+          "t": 72.8,
+          "text": "the"
+        },
+        {
+          "t": 72.92,
+          "text": "secret"
+        },
+        {
+          "t": 73.28,
+          "text": "sleeve."
+        }
+      ]
+    },
+    {
+      "start": 73.84,
+      "end": 74.2,
+      "text": "Hey, yo!",
+      "words": [
+        {
+          "t": 73.84,
+          "text": "Hey,"
+        },
+        {
+          "t": 74.0,
+          "text": "yo!"
+        }
+      ]
+    },
+    {
+      "start": 75.232,
+      "end": 75.84,
+      "text": "Steam up!",
+      "words": [
+        {
+          "t": 75.232,
+          "text": "Steam"
+        },
+        {
+          "t": 75.38,
+          "text": "up!"
+        }
+      ]
+    },
+    {
+      "start": 77.184,
+      "end": 77.78,
+      "text": "Gloves on!",
+      "words": [
+        {
+          "t": 77.184,
+          "text": "Gloves"
+        },
+        {
+          "t": 77.48,
+          "text": "on!"
+        }
+      ]
+    },
+    {
+      "start": 79.008,
+      "end": 79.6,
+      "text": "Lights out!",
+      "words": [
+        {
+          "t": 79.008,
+          "text": "Lights"
+        },
+        {
+          "t": 79.28,
+          "text": "out!"
+        }
+      ]
+    },
+    {
+      "start": 81.568,
+      "end": 83.48,
+      "text": "I'm on the dock with the rope and the crate.",
+      "words": [
+        {
+          "t": 81.568,
+          "text": "I'm"
+        },
+        {
+          "t": 81.68,
+          "text": "on"
+        },
+        {
+          "t": 81.72,
+          "text": "the"
+        },
+        {
+          "t": 81.9,
+          "text": "dock"
+        },
+        {
+          "t": 82.18,
+          "text": "with"
+        },
+        {
+          "t": 82.4,
+          "text": "the"
+        },
+        {
+          "t": 82.54,
+          "text": "rope"
+        },
+        {
+          "t": 82.82,
+          "text": "and"
+        },
+        {
+          "t": 83.04,
+          "text": "the"
+        },
+        {
+          "t": 83.2,
+          "text": "crate."
+        }
+      ]
+    },
+    {
+      "start": 83.64,
+      "end": 86.0,
+      "text": "Black ink dripping off the one it played.",
+      "words": [
+        {
+          "t": 83.64,
+          "text": "Black"
+        },
+        {
+          "t": 84.06,
+          "text": "ink"
+        },
+        {
+          "t": 84.4,
+          "text": "dripping"
+        },
+        {
+          "t": 84.72,
+          "text": "off"
+        },
+        {
+          "t": 85.02,
+          "text": "the"
+        },
+        {
+          "t": 85.2,
+          "text": "one"
+        },
+        {
+          "t": 85.48,
+          "text": "it"
+        },
+        {
+          "t": 85.7,
+          "text": "played."
+        }
+      ]
+    },
+    {
+      "start": 86.18,
+      "end": 87.32,
+      "text": "No color in the world.",
+      "words": [
+        {
+          "t": 86.18,
+          "text": "No"
+        },
+        {
+          "t": 86.28,
+          "text": "color"
+        },
+        {
+          "t": 86.62,
+          "text": "in"
+        },
+        {
+          "t": 86.88,
+          "text": "the"
+        },
+        {
+          "t": 87.02,
+          "text": "world."
+        }
+      ]
+    },
+    {
+      "start": 87.32,
+      "end": 88.66,
+      "text": "But the mood pitch dark.",
+      "words": [
+        {
+          "t": 87.32,
+          "text": "But"
+        },
+        {
+          "t": 87.48,
+          "text": "the"
+        },
+        {
+          "t": 87.7,
+          "text": "mood"
+        },
+        {
+          "t": 87.92,
+          "text": "pitch"
+        },
+        {
+          "t": 88.2,
+          "text": "dark."
+        }
+      ]
+    },
+    {
+      "start": 88.9,
+      "end": 91.1,
+      "text": "Be the one playing with the criminal spark.",
+      "words": [
+        {
+          "t": 88.9,
+          "text": "Be"
+        },
+        {
+          "t": 89.06,
+          "text": "the"
+        },
+        {
+          "t": 89.26,
+          "text": "one"
+        },
+        {
+          "t": 89.5,
+          "text": "playing"
+        },
+        {
+          "t": 89.88,
+          "text": "with"
+        },
+        {
+          "t": 90.1,
+          "text": "the"
+        },
+        {
+          "t": 90.26,
+          "text": "criminal"
+        },
+        {
+          "t": 90.6,
+          "text": "spark."
+        }
+      ]
+    },
+    {
+      "start": 91.6,
+      "end": 93.76,
+      "text": "Fog on base when the deal goes down.",
+      "words": [
+        {
+          "t": 91.6,
+          "text": "Fog"
+        },
+        {
+          "t": 91.86,
+          "text": "on"
+        },
+        {
+          "t": 92.02,
+          "text": "base"
+        },
+        {
+          "t": 92.36,
+          "text": "when"
+        },
+        {
+          "t": 92.64,
+          "text": "the"
+        },
+        {
+          "t": 92.84,
+          "text": "deal"
+        },
+        {
+          "t": 93.06,
+          "text": "goes"
+        },
+        {
+          "t": 93.3,
+          "text": "down."
+        }
+      ]
+    },
+    {
+      "start": 93.92,
+      "end": 96.16,
+      "text": "Everybody quiet when the boat come around.",
+      "words": [
+        {
+          "t": 93.92,
+          "text": "Everybody"
+        },
+        {
+          "t": 94.4,
+          "text": "quiet"
+        },
+        {
+          "t": 94.94,
+          "text": "when"
+        },
+        {
+          "t": 95.2,
+          "text": "the"
+        },
+        {
+          "t": 95.4,
+          "text": "boat"
+        },
+        {
+          "t": 95.6,
+          "text": "come"
+        },
+        {
+          "t": 95.86,
+          "text": "around."
+        }
+      ]
+    },
+    {
+      "start": 96.58,
+      "end": 98.68,
+      "text": "Heard three knocks and the whistle cried.",
+      "words": [
+        {
+          "t": 96.58,
+          "text": "Heard"
+        },
+        {
+          "t": 96.96,
+          "text": "three"
+        },
+        {
+          "t": 97.2,
+          "text": "knocks"
+        },
+        {
+          "t": 97.56,
+          "text": "and"
+        },
+        {
+          "t": 97.78,
+          "text": "the"
+        },
+        {
+          "t": 97.92,
+          "text": "whistle"
+        },
+        {
+          "t": 98.22,
+          "text": "cried."
+        }
+      ]
+    },
+    {
+      "start": 98.92,
+      "end": 101.42,
+      "text": "Now the whole pier know who runs that tide.",
+      "words": [
+        {
+          "t": 98.92,
+          "text": "Now"
+        },
+        {
+          "t": 99.08,
+          "text": "the"
+        },
+        {
+          "t": 99.22,
+          "text": "whole"
+        },
+        {
+          "t": 99.44,
+          "text": "pier"
+        },
+        {
+          "t": 99.78,
+          "text": "know"
+        },
+        {
+          "t": 100.04,
+          "text": "who"
+        },
+        {
+          "t": 100.36,
+          "text": "runs"
+        },
+        {
+          "t": 100.74,
+          "text": "that"
+        },
+        {
+          "t": 101.04,
+          "text": "tide."
+        }
+      ]
+    },
+    {
+      "start": 101.8,
+      "end": 103.86,
+      "text": "Rubber hose bounce, but the bar's concrete.",
+      "words": [
+        {
+          "t": 101.8,
+          "text": "Rubber"
+        },
+        {
+          "t": 102.16,
+          "text": "hose"
+        },
+        {
+          "t": 102.3,
+          "text": "bounce,"
+        },
+        {
+          "t": 102.78,
+          "text": "but"
+        },
+        {
+          "t": 102.92,
+          "text": "the"
+        },
+        {
+          "t": 103.1,
+          "text": "bar's"
+        },
+        {
+          "t": 103.4,
+          "text": "concrete."
+        }
+      ]
+    },
+    {
+      "start": 104.16,
+      "end": 106.5,
+      "text": "Tap dance rhythm with the steel toe feet.",
+      "words": [
+        {
+          "t": 104.16,
+          "text": "Tap"
+        },
+        {
+          "t": 104.62,
+          "text": "dance"
+        },
+        {
+          "t": 104.88,
+          "text": "rhythm"
+        },
+        {
+          "t": 105.24,
+          "text": "with"
+        },
+        {
+          "t": 105.52,
+          "text": "the"
+        },
+        {
+          "t": 105.66,
+          "text": "steel"
+        },
+        {
+          "t": 105.9,
+          "text": "toe"
+        },
+        {
+          "t": 106.1,
+          "text": "feet."
+        }
+      ]
+    },
+    {
+      "start": 106.72,
+      "end": 109.16,
+      "text": "Running at the moon like I know too much.",
+      "words": [
+        {
+          "t": 106.72,
+          "text": "Running"
+        },
+        {
+          "t": 107.16,
+          "text": "at"
+        },
+        {
+          "t": 107.44,
+          "text": "the"
+        },
+        {
+          "t": 107.56,
+          "text": "moon"
+        },
+        {
+          "t": 107.84,
+          "text": "like"
+        },
+        {
+          "t": 108.06,
+          "text": "I"
+        },
+        {
+          "t": 108.2,
+          "text": "know"
+        },
+        {
+          "t": 108.44,
+          "text": "too"
+        },
+        {
+          "t": 108.7,
+          "text": "much."
+        }
+      ]
+    },
+    {
+      "start": 109.32,
+      "end": 111.7,
+      "text": "Turn that crank and the whole beat crush.",
+      "words": [
+        {
+          "t": 109.32,
+          "text": "Turn"
+        },
+        {
+          "t": 109.78,
+          "text": "that"
+        },
+        {
+          "t": 110.02,
+          "text": "crank"
+        },
+        {
+          "t": 110.38,
+          "text": "and"
+        },
+        {
+          "t": 110.62,
+          "text": "the"
+        },
+        {
+          "t": 110.78,
+          "text": "whole"
+        },
+        {
+          "t": 111.0,
+          "text": "beat"
+        },
+        {
+          "t": 111.34,
+          "text": "crush."
+        }
+      ]
+    },
+    {
+      "start": 113.18,
+      "end": 114.62,
+      "text": "You thought it was funny?",
+      "words": [
+        {
+          "t": 113.18,
+          "text": "You"
+        },
+        {
+          "t": 113.7,
+          "text": "thought"
+        },
+        {
+          "t": 114.02,
+          "text": "it"
+        },
+        {
+          "t": 114.16,
+          "text": "was"
+        },
+        {
+          "t": 114.3,
+          "text": "funny?"
+        }
+      ]
+    },
+    {
+      "start": 115.02,
+      "end": 116.44,
+      "text": "You thought it was cute?",
+      "words": [
+        {
+          "t": 115.02,
+          "text": "You"
+        },
+        {
+          "t": 115.552,
+          "text": "thought"
+        },
+        {
+          "t": 115.8,
+          "text": "it"
+        },
+        {
+          "t": 115.96,
+          "text": "was"
+        },
+        {
+          "t": 116.12,
+          "text": "cute?"
+        }
+      ]
+    },
+    {
+      "start": 116.66,
+      "end": 117.0,
+      "text": "No.",
+      "words": [
+        {
+          "t": 116.66,
+          "text": "No."
+        }
+      ]
+    },
+    {
+      "start": 117.32,
+      "end": 117.42,
+      "text": "Uh,",
+      "words": [
+        {
+          "t": 117.32,
+          "text": "Uh,"
+        }
+      ]
+    },
+    {
+      "start": 118.3,
+      "end": 119.5,
+      "text": "that whistle means move.",
+      "words": [
+        {
+          "t": 118.3,
+          "text": "that"
+        },
+        {
+          "t": 118.4,
+          "text": "whistle"
+        },
+        {
+          "t": 118.74,
+          "text": "means"
+        },
+        {
+          "t": 119.04,
+          "text": "move."
+        }
+      ]
+    },
+    {
+      "start": 120.18,
+      "end": 121.32,
+      "text": "Whistle on the river.",
+      "words": [
+        {
+          "t": 120.18,
+          "text": "Whistle"
+        },
+        {
+          "t": 120.7,
+          "text": "on"
+        },
+        {
+          "t": 120.92,
+          "text": "the"
+        },
+        {
+          "t": 121.02,
+          "text": "river."
+        }
+      ]
+    },
+    {
+      "start": 121.44,
+      "end": 122.52,
+      "text": "Smoke in the sky.",
+      "words": [
+        {
+          "t": 121.44,
+          "text": "Smoke"
+        },
+        {
+          "t": 121.68,
+          "text": "in"
+        },
+        {
+          "t": 122.08,
+          "text": "the"
+        },
+        {
+          "t": 122.26,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 123.02,
+      "end": 125.18,
+      "text": "Boat full of trouble when the bad boys ride.",
+      "words": [
+        {
+          "t": 123.02,
+          "text": "Boat"
+        },
+        {
+          "t": 123.24,
+          "text": "full"
+        },
+        {
+          "t": 123.44,
+          "text": "of"
+        },
+        {
+          "t": 123.58,
+          "text": "trouble"
+        },
+        {
+          "t": 123.86,
+          "text": "when"
+        },
+        {
+          "t": 124.1,
+          "text": "the"
+        },
+        {
+          "t": 124.26,
+          "text": "bad"
+        },
+        {
+          "t": 124.5,
+          "text": "boys"
+        },
+        {
+          "t": 124.78,
+          "text": "ride."
+        }
+      ]
+    },
+    {
+      "start": 125.48,
+      "end": 126.5,
+      "text": "Hands on the wheel.",
+      "words": [
+        {
+          "t": 125.48,
+          "text": "Hands"
+        },
+        {
+          "t": 125.7,
+          "text": "on"
+        },
+        {
+          "t": 126.02,
+          "text": "the"
+        },
+        {
+          "t": 126.16,
+          "text": "wheel."
+        }
+      ]
+    },
+    {
+      "start": 126.74,
+      "end": 127.7,
+      "text": "Eyes gone cold.",
+      "words": [
+        {
+          "t": 126.74,
+          "text": "Eyes"
+        },
+        {
+          "t": 127.0,
+          "text": "gone"
+        },
+        {
+          "t": 127.32,
+          "text": "cold."
+        }
+      ]
+    },
+    {
+      "start": 127.96,
+      "end": 130.26,
+      "text": "Black and white world, but the money still gold.",
+      "words": [
+        {
+          "t": 127.96,
+          "text": "Black"
+        },
+        {
+          "t": 128.22,
+          "text": "and"
+        },
+        {
+          "t": 128.4,
+          "text": "white"
+        },
+        {
+          "t": 128.68,
+          "text": "world,"
+        },
+        {
+          "t": 129.08,
+          "text": "but"
+        },
+        {
+          "t": 129.26,
+          "text": "the"
+        },
+        {
+          "t": 129.38,
+          "text": "money"
+        },
+        {
+          "t": 129.6,
+          "text": "still"
+        },
+        {
+          "t": 129.86,
+          "text": "gold."
+        }
+      ]
+    },
+    {
+      "start": 130.66,
+      "end": 131.58,
+      "text": "Whistle on the river.",
+      "words": [
+        {
+          "t": 130.66,
+          "text": "Whistle"
+        },
+        {
+          "t": 130.92,
+          "text": "on"
+        },
+        {
+          "t": 131.2,
+          "text": "the"
+        },
+        {
+          "t": 131.28,
+          "text": "river."
+        }
+      ]
+    },
+    {
+      "start": 131.76,
+      "end": 132.9,
+      "text": "Fog on the dock.",
+      "words": [
+        {
+          "t": 131.76,
+          "text": "Fog"
+        },
+        {
+          "t": 132.14,
+          "text": "on"
+        },
+        {
+          "t": 132.38,
+          "text": "the"
+        },
+        {
+          "t": 132.54,
+          "text": "dock."
+        }
+      ]
+    },
+    {
+      "start": 133.34,
+      "end": 135.36,
+      "text": "Cartoon gloves, but the hammer don't stop.",
+      "words": [
+        {
+          "t": 133.34,
+          "text": "Cartoon"
+        },
+        {
+          "t": 133.86,
+          "text": "gloves,"
+        },
+        {
+          "t": 134.24,
+          "text": "but"
+        },
+        {
+          "t": 134.34,
+          "text": "the"
+        },
+        {
+          "t": 134.52,
+          "text": "hammer"
+        },
+        {
+          "t": 134.78,
+          "text": "don't"
+        },
+        {
+          "t": 135.14,
+          "text": "stop."
+        }
+      ]
+    },
+    {
+      "start": 135.6,
+      "end": 137.8,
+      "text": "Old school grin with the gangster lean.",
+      "words": [
+        {
+          "t": 135.6,
+          "text": "Old"
+        },
+        {
+          "t": 135.98,
+          "text": "school"
+        },
+        {
+          "t": 136.24,
+          "text": "grin"
+        },
+        {
+          "t": 136.66,
+          "text": "with"
+        },
+        {
+          "t": 136.94,
+          "text": "the"
+        },
+        {
+          "t": 137.08,
+          "text": "gangster"
+        },
+        {
+          "t": 137.46,
+          "text": "lean."
+        }
+      ]
+    },
+    {
+      "start": 138.26,
+      "end": 140.56,
+      "text": "Steam in the pipes and the whole boat mean.",
+      "words": [
+        {
+          "t": 138.26,
+          "text": "Steam"
+        },
+        {
+          "t": 138.6,
+          "text": "in"
+        },
+        {
+          "t": 138.86,
+          "text": "the"
+        },
+        {
+          "t": 139.0,
+          "text": "pipes"
+        },
+        {
+          "t": 139.34,
+          "text": "and"
+        },
+        {
+          "t": 139.52,
+          "text": "the"
+        },
+        {
+          "t": 139.66,
+          "text": "whole"
+        },
+        {
+          "t": 139.88,
+          "text": "boat"
+        },
+        {
+          "t": 140.18,
+          "text": "mean."
+        }
+      ]
+    },
+    {
+      "start": 141.42,
+      "end": 143.0,
+      "text": "Weep, weep, weep, weep, weep,",
+      "words": [
+        {
+          "t": 141.42,
+          "text": "Weep,"
+        },
+        {
+          "t": 141.52,
+          "text": "weep,"
+        },
+        {
+          "t": 142.08,
+          "text": "weep,"
+        },
+        {
+          "t": 142.44,
+          "text": "weep,"
+        },
+        {
+          "t": 142.74,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 143.7,
+      "end": 144.04,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 143.7,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 144.06,
+      "end": 144.62,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 144.06,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 144.84,
+      "end": 144.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 144.84,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.08,
+      "end": 145.12,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.08,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.28,
+      "end": 145.28,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.28,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.6,
+      "end": 145.6,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.6,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.62,
+      "end": 145.62,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.62,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.76,
+      "end": 145.76,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.76,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.84,
+      "end": 145.84,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.84,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.84,
+      "end": 145.84,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.84,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.84,
+      "end": 145.84,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 145.84,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 145.84,
+      "end": 145.84,
+      "text": "weep.",
+      "words": [
+        {
+          "t": 145.84,
+          "text": "weep."
+        }
+      ]
+    },
+    {
+      "start": 148.18,
+      "end": 150.14,
+      "text": "Weep, weep, weep, weep, weep,",
+      "words": [
+        {
+          "t": 148.18,
+          "text": "Weep,"
+        },
+        {
+          "t": 148.74,
+          "text": "weep,"
+        },
+        {
+          "t": 149.44,
+          "text": "weep,"
+        },
+        {
+          "t": 149.76,
+          "text": "weep,"
+        },
+        {
+          "t": 149.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.66,
+      "text": "weep.",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "weep."
+        }
+      ]
+    },
+    {
+      "start": 150.66,
+      "end": 150.94,
+      "text": "Weep,",
+      "words": [
+        {
+          "t": 150.66,
+          "text": "Weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep,",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep,"
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 150.94,
+      "text": "weep.",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "weep."
+        }
+      ]
+    },
+    {
+      "start": 150.94,
+      "end": 152.08,
+      "text": "Round ears and the shadow.",
+      "words": [
+        {
+          "t": 150.94,
+          "text": "Round"
+        },
+        {
+          "t": 150.94,
+          "text": "ears"
+        },
+        {
+          "t": 151.46,
+          "text": "and"
+        },
+        {
+          "t": 151.68,
+          "text": "the"
+        },
+        {
+          "t": 151.8,
+          "text": "shadow."
+        }
+      ]
+    },
+    {
+      "start": 152.2,
+      "end": 153.4,
+      "text": "White gloves on the crank.",
+      "words": [
+        {
+          "t": 152.2,
+          "text": "White"
+        },
+        {
+          "t": 152.36,
+          "text": "gloves"
+        },
+        {
+          "t": 152.7,
+          "text": "on"
+        },
+        {
+          "t": 153.0,
+          "text": "the"
+        },
+        {
+          "t": 153.12,
+          "text": "crank."
+        }
+      ]
+    },
+    {
+      "start": 153.5,
+      "end": 154.48,
+      "text": "Laugh like a cartoon.",
+      "words": [
+        {
+          "t": 153.5,
+          "text": "Laugh"
+        },
+        {
+          "t": 153.74,
+          "text": "like"
+        },
+        {
+          "t": 153.92,
+          "text": "a"
+        },
+        {
+          "t": 154.12,
+          "text": "cartoon."
+        }
+      ]
+    },
+    {
+      "start": 154.84,
+      "end": 155.94,
+      "text": "Move like a bank.",
+      "words": [
+        {
+          "t": 154.84,
+          "text": "Move"
+        },
+        {
+          "t": 155.26,
+          "text": "like"
+        },
+        {
+          "t": 155.54,
+          "text": "a"
+        },
+        {
+          "t": 155.76,
+          "text": "bank."
+        }
+      ]
+    },
+    {
+      "start": 156.2,
+      "end": 157.34,
+      "text": "Ink in my veins.",
+      "words": [
+        {
+          "t": 156.2,
+          "text": "Ink"
+        },
+        {
+          "t": 156.52,
+          "text": "in"
+        },
+        {
+          "t": 156.72,
+          "text": "my"
+        },
+        {
+          "t": 156.9,
+          "text": "veins."
+        }
+      ]
+    },
+    {
+      "start": 157.48,
+      "end": 158.5,
+      "text": "Steam in my chest.",
+      "words": [
+        {
+          "t": 157.48,
+          "text": "Steam"
+        },
+        {
+          "t": 157.74,
+          "text": "in"
+        },
+        {
+          "t": 157.94,
+          "text": "my"
+        },
+        {
+          "t": 158.22,
+          "text": "chest."
+        }
+      ]
+    },
+    {
+      "start": 158.8,
+      "end": 159.84,
+      "text": "River full of ghosts.",
+      "words": [
+        {
+          "t": 158.8,
+          "text": "River"
+        },
+        {
+          "t": 159.14,
+          "text": "full"
+        },
+        {
+          "t": 159.38,
+          "text": "of"
+        },
+        {
+          "t": 159.56,
+          "text": "ghosts."
+        }
+      ]
+    },
+    {
+      "start": 159.9,
+      "end": 161.02,
+      "text": "I don't lose I collect.",
+      "words": [
+        {
+          "t": 159.9,
+          "text": "I"
+        },
+        {
+          "t": 160.06,
+          "text": "don't"
+        },
+        {
+          "t": 160.26,
+          "text": "lose"
+        },
+        {
+          "t": 160.48,
+          "text": "I"
+        },
+        {
+          "t": 160.7,
+          "text": "collect."
+        }
+      ]
+    },
+    {
+      "start": 161.6,
+      "end": 163.68,
+      "text": "Boat go left when the lor go right.",
+      "words": [
+        {
+          "t": 161.6,
+          "text": "Boat"
+        },
+        {
+          "t": 161.82,
+          "text": "go"
+        },
+        {
+          "t": 161.94,
+          "text": "left"
+        },
+        {
+          "t": 162.26,
+          "text": "when"
+        },
+        {
+          "t": 162.6,
+          "text": "the"
+        },
+        {
+          "t": 162.76,
+          "text": "lor"
+        },
+        {
+          "t": 163.08,
+          "text": "go"
+        },
+        {
+          "t": 163.2,
+          "text": "right."
+        }
+      ]
+    },
+    {
+      "start": 163.8,
+      "end": 166.0,
+      "text": "Smoke stack black in the pale moonlight.",
+      "words": [
+        {
+          "t": 163.8,
+          "text": "Smoke"
+        },
+        {
+          "t": 164.18,
+          "text": "stack"
+        },
+        {
+          "t": 164.56,
+          "text": "black"
+        },
+        {
+          "t": 164.92,
+          "text": "in"
+        },
+        {
+          "t": 165.22,
+          "text": "the"
+        },
+        {
+          "t": 165.32,
+          "text": "pale"
+        },
+        {
+          "t": 165.58,
+          "text": "moonlight."
+        }
+      ]
+    },
+    {
+      "start": 166.56,
+      "end": 168.88,
+      "text": "Whistle hit once and the dock gets nervous.",
+      "words": [
+        {
+          "t": 166.56,
+          "text": "Whistle"
+        },
+        {
+          "t": 166.94,
+          "text": "hit"
+        },
+        {
+          "t": 167.18,
+          "text": "once"
+        },
+        {
+          "t": 167.5,
+          "text": "and"
+        },
+        {
+          "t": 167.74,
+          "text": "the"
+        },
+        {
+          "t": 167.92,
+          "text": "dock"
+        },
+        {
+          "t": 168.16,
+          "text": "gets"
+        },
+        {
+          "t": 168.44,
+          "text": "nervous."
+        }
+      ]
+    },
+    {
+      "start": 169.28,
+      "end": 171.46,
+      "text": "Old little tune with a brand new purpose.",
+      "words": [
+        {
+          "t": 169.28,
+          "text": "Old"
+        },
+        {
+          "t": 169.46,
+          "text": "little"
+        },
+        {
+          "t": 169.78,
+          "text": "tune"
+        },
+        {
+          "t": 170.08,
+          "text": "with"
+        },
+        {
+          "t": 170.34,
+          "text": "a"
+        },
+        {
+          "t": 170.5,
+          "text": "brand"
+        },
+        {
+          "t": 170.72,
+          "text": "new"
+        },
+        {
+          "t": 171.0,
+          "text": "purpose."
+        }
+      ]
+    },
+    {
+      "start": 171.88,
+      "end": 174.0,
+      "text": "Spin that wheel till the whole world shakes.",
+      "words": [
+        {
+          "t": 171.88,
+          "text": "Spin"
+        },
+        {
+          "t": 172.04,
+          "text": "that"
+        },
+        {
+          "t": 172.28,
+          "text": "wheel"
+        },
+        {
+          "t": 172.66,
+          "text": "till"
+        },
+        {
+          "t": 172.9,
+          "text": "the"
+        },
+        {
+          "t": 173.12,
+          "text": "whole"
+        },
+        {
+          "t": 173.3,
+          "text": "world"
+        },
+        {
+          "t": 173.68,
+          "text": "shakes."
+        }
+      ]
+    },
+    {
+      "start": 174.22,
+      "end": 175.22,
+      "text": "Let the riverboat boss.",
+      "words": [
+        {
+          "t": 174.22,
+          "text": "Let"
+        },
+        {
+          "t": 174.34,
+          "text": "the"
+        },
+        {
+          "t": 174.38,
+          "text": "riverboat"
+        },
+        {
+          "t": 174.84,
+          "text": "boss."
+        }
+      ]
+    },
+    {
+      "start": 175.22,
+      "end": 177.78,
+      "text": "with the rubber hose legs black and white frame",
+      "words": [
+        {
+          "t": 175.22,
+          "text": "with"
+        },
+        {
+          "t": 175.42,
+          "text": "the"
+        },
+        {
+          "t": 175.64,
+          "text": "rubber"
+        },
+        {
+          "t": 175.84,
+          "text": "hose"
+        },
+        {
+          "t": 176.14,
+          "text": "legs"
+        },
+        {
+          "t": 176.48,
+          "text": "black"
+        },
+        {
+          "t": 176.94,
+          "text": "and"
+        },
+        {
+          "t": 177.24,
+          "text": "white"
+        },
+        {
+          "t": 177.48,
+          "text": "frame"
+        }
+      ]
+    },
+    {
+      "start": 177.78,
+      "end": 180.6,
+      "text": "but the threats stay vivid steamboat willy with",
+      "words": [
+        {
+          "t": 177.78,
+          "text": "but"
+        },
+        {
+          "t": 178.04,
+          "text": "the"
+        },
+        {
+          "t": 178.18,
+          "text": "threats"
+        },
+        {
+          "t": 178.48,
+          "text": "stay"
+        },
+        {
+          "t": 178.76,
+          "text": "vivid"
+        },
+        {
+          "t": 179.08,
+          "text": "steamboat"
+        },
+        {
+          "t": 179.98,
+          "text": "willy"
+        },
+        {
+          "t": 180.46,
+          "text": "with"
+        }
+      ]
+    },
+    {
+      "start": 180.6,
+      "end": 183.36,
+      "text": "the whole gear with it whistle on the river smoke",
+      "words": [
+        {
+          "t": 180.6,
+          "text": "the"
+        },
+        {
+          "t": 180.76,
+          "text": "whole"
+        },
+        {
+          "t": 181.0,
+          "text": "gear"
+        },
+        {
+          "t": 181.32,
+          "text": "with"
+        },
+        {
+          "t": 181.56,
+          "text": "it"
+        },
+        {
+          "t": 181.8,
+          "text": "whistle"
+        },
+        {
+          "t": 182.34,
+          "text": "on"
+        },
+        {
+          "t": 182.56,
+          "text": "the"
+        },
+        {
+          "t": 182.68,
+          "text": "river"
+        },
+        {
+          "t": 182.92,
+          "text": "smoke"
+        }
+      ]
+    },
+    {
+      "start": 183.36,
+      "end": 186.86,
+      "text": "in the sky bullocks rubber when the bad boys ride",
+      "words": [
+        {
+          "t": 183.36,
+          "text": "in"
+        },
+        {
+          "t": 183.74,
+          "text": "the"
+        },
+        {
+          "t": 183.94,
+          "text": "sky"
+        },
+        {
+          "t": 184.26,
+          "text": "bullocks"
+        },
+        {
+          "t": 185.32,
+          "text": "rubber"
+        },
+        {
+          "t": 185.52,
+          "text": "when"
+        },
+        {
+          "t": 185.78,
+          "text": "the"
+        },
+        {
+          "t": 185.94,
+          "text": "bad"
+        },
+        {
+          "t": 186.16,
+          "text": "boys"
+        },
+        {
+          "t": 186.5,
+          "text": "ride"
+        }
+      ]
+    },
+    {
+      "start": 186.86,
+      "end": 190.34,
+      "text": "hands on the wheel eyes gone cold black and white",
+      "words": [
+        {
+          "t": 186.86,
+          "text": "hands"
+        },
+        {
+          "t": 187.38,
+          "text": "on"
+        },
+        {
+          "t": 187.68,
+          "text": "the"
+        },
+        {
+          "t": 187.84,
+          "text": "wheel"
+        },
+        {
+          "t": 188.2,
+          "text": "eyes"
+        },
+        {
+          "t": 188.72,
+          "text": "gone"
+        },
+        {
+          "t": 189.02,
+          "text": "cold"
+        },
+        {
+          "t": 189.34,
+          "text": "black"
+        },
+        {
+          "t": 189.9,
+          "text": "and"
+        },
+        {
+          "t": 190.14,
+          "text": "white"
+        }
+      ]
+    },
+    {
+      "start": 190.34,
+      "end": 192.98,
+      "text": "world but the money still cold whistle on the",
+      "words": [
+        {
+          "t": 190.34,
+          "text": "world"
+        },
+        {
+          "t": 190.66,
+          "text": "but"
+        },
+        {
+          "t": 190.9,
+          "text": "the"
+        },
+        {
+          "t": 191.08,
+          "text": "money"
+        },
+        {
+          "t": 191.28,
+          "text": "still"
+        },
+        {
+          "t": 191.54,
+          "text": "cold"
+        },
+        {
+          "t": 191.94,
+          "text": "whistle"
+        },
+        {
+          "t": 192.6,
+          "text": "on"
+        },
+        {
+          "t": 192.86,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 192.98,
+      "end": 196.48,
+      "text": "river fog on the dock cartoon glove but the hammer",
+      "words": [
+        {
+          "t": 192.98,
+          "text": "river"
+        },
+        {
+          "t": 193.32,
+          "text": "fog"
+        },
+        {
+          "t": 193.78,
+          "text": "on"
+        },
+        {
+          "t": 194.08,
+          "text": "the"
+        },
+        {
+          "t": 194.24,
+          "text": "dock"
+        },
+        {
+          "t": 194.56,
+          "text": "cartoon"
+        },
+        {
+          "t": 195.26,
+          "text": "glove"
+        },
+        {
+          "t": 195.8,
+          "text": "but"
+        },
+        {
+          "t": 196.04,
+          "text": "the"
+        },
+        {
+          "t": 196.24,
+          "text": "hammer"
+        }
+      ]
+    },
+    {
+      "start": 196.48,
+      "end": 199.56,
+      "text": "don't stop old school grin with the gangster lean",
+      "words": [
+        {
+          "t": 196.48,
+          "text": "don't"
+        },
+        {
+          "t": 196.86,
+          "text": "stop"
+        },
+        {
+          "t": 197.04,
+          "text": "old"
+        },
+        {
+          "t": 197.48,
+          "text": "school"
+        },
+        {
+          "t": 197.9,
+          "text": "grin"
+        },
+        {
+          "t": 198.36,
+          "text": "with"
+        },
+        {
+          "t": 198.64,
+          "text": "the"
+        },
+        {
+          "t": 198.78,
+          "text": "gangster"
+        },
+        {
+          "t": 199.18,
+          "text": "lean"
+        }
+      ]
+    },
+    {
+      "start": 199.56,
+      "end": 202.22,
+      "text": "steam in the pipes in the hobo mean",
+      "words": [
+        {
+          "t": 199.56,
+          "text": "steam"
+        },
+        {
+          "t": 200.32,
+          "text": "in"
+        },
+        {
+          "t": 200.56,
+          "text": "the"
+        },
+        {
+          "t": 200.7,
+          "text": "pipes"
+        },
+        {
+          "t": 201.04,
+          "text": "in"
+        },
+        {
+          "t": 201.26,
+          "text": "the"
+        },
+        {
+          "t": 201.36,
+          "text": "hobo"
+        },
+        {
+          "t": 201.86,
+          "text": "mean"
+        }
+      ]
+    },
+    {
+      "start": 204.18,
+      "end": 209.98,
+      "text": "that ain't a cartoon that's the river talking",
+      "words": [
+        {
+          "t": 204.18,
+          "text": "that"
+        },
+        {
+          "t": 204.28,
+          "text": "ain't"
+        },
+        {
+          "t": 204.74,
+          "text": "a"
+        },
+        {
+          "t": 204.76,
+          "text": "cartoon"
+        },
+        {
+          "t": 205.24,
+          "text": "that's"
+        },
+        {
+          "t": 209.02,
+          "text": "the"
+        },
+        {
+          "t": 209.14,
+          "text": "river"
+        },
+        {
+          "t": 209.42,
+          "text": "talking"
+        }
+      ]
+    }
+  ]
+}

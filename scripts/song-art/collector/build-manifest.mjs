@@ -73,7 +73,7 @@ const AUDIO = {
 };
 
 // Slugs whose stems.json exists in R2 (queried from tracks.planet.assets.stems).
-const NO_STEMS = new Set(["feverbreak", "music-is-my-drug-rooklyn-mix", "different-this-summer", "my-soul-lives-in-seoul", "paper-that-cut-you", "who-s-that-snake-funky-slow-jam-mix", "another-year-looks-good-on-you-happy-birthday-song"]);
+const NO_STEMS = new Set(["feverbreak", "music-is-my-drug-rooklyn-mix", "my-soul-lives-in-seoul", "paper-that-cut-you", "who-s-that-snake-funky-slow-jam-mix", "another-year-looks-good-on-you-happy-birthday-song"]);
 
 const fmtTime = (s) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
 

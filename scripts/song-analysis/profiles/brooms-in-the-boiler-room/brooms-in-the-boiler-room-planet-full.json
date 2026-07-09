@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "summary": "A dark, noir-infused narrative where a magical spell goes awry in an old tower, turning innocent cleaning tools into a terrifying army that floods the room and chases down power-hungry greed.",
+    "overallMood": "Ominous yet Playfully Dangerous",
+    "themes": [
+      "Magical Corruption",
+      "Greed vs. Innocence",
+      "Loss of Control",
+      "Noir Noir Atmosphere"
+    ],
+    "palette": [
+      "#2B1D0E",
+      "#C68F3A",
+      "#4A5D7F",
+      "#9EA7AA"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Inquisitive unease, sudden realization of wrongness",
+        "intensity": 0.67,
+        "colorHint": "#4a5d7f",
+        "start": 5.18
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Full-blown disaster with frantic, cartoonish horror",
+        "intensity": 1,
+        "colorHint": "#c68f3a",
+        "start": 13
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Narrative tension with a sense of slippery inevitability",
+        "intensity": 0.68,
+        "colorHint": "#2b1d0e",
+        "start": 48.28
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building panic and the toxic shift in atmosphere",
+        "intensity": 0.54,
+        "colorHint": "#9ea7aa",
+        "start": 127.88
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Resigned acceptance of doom amidst rising chaos",
+        "intensity": 0.33,
+        "colorHint": "#4a5d7f",
+        "start": 163.46
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Hypnotic dread and the final realization that help is impossible",
+        "intensity": 0.27,
+        "colorHint": "#2b1d0e",
+        "start": 210.76
+      }
+    ],
+    "keywords": [
+      {
+        "word": "spell",
+        "emotion": "Forbidden power turning predatory",
+        "imageryPrompt": "A glowing rune floating in smoky steam, cracking like glass as it expands into a jagged mouth with sharp teeth."
+      },
+      {
+        "word": "boiler",
+        "emotion": "Claustrophobic industrial horror",
+        "imageryPrompt": "An endless spiraling tower of rusted pipes and bubbling cauldrons flooding upward, walls melting into black ink water."
+      },
+      {
+        "word": "brooms",
+        "emotion": "Uncanny valley transformation to weaponized tools",
+        "imageryPrompt": "Traditional straw brooms with skeletal hands gripping their handles, marching in unison across wet floorboards leaving dark trails behind them."
+      },
+      {
+        "word": "gold",
+        "emotion": "Corrupting allure of wealth amidst decay",
+        "imageryPrompt": "A single beam of bright yellow light cutting through a pitch-black void, illuminating piles of coins that look like teeth rather than currency."
+      },
+      {
+        "word": "mouse",
+        "emotion": "Cunning triumph over human weakness",
+        "imageryPrompt": "A small rodent wearing oversized wizard robes, standing on its hind legs with a wide grin reflecting the stars in its eyes while holding a staff made of bones."
+      },
+      {
+        "word": "tower",
+        "emotion": "Overwhelming structural collapse and drowning fear",
+        "imageryPrompt": "A crumbling skyscraper structure dissolving into water, shadows stretching unnaturally long against the walls as gravity seems to reverse."
+      }
+    ]
+  },
+  "styleHint": "dark orchestral jazz rap, 100 BPM, gritty 90s east coast boom bap, Halloween noir cartoon atmosphere, inspired by frantic sorcerer-apprentice classical energy, dramatic strings, ominous bassoons, prominent oboe lines, staccato woodwinds, creeping clarinet, muted trumpet, smoky sax, booming timpani, marching broomstick percussion, dusty drum breaks, hard snare cracks, upright bass, xylophone bones, bubbling cauldron FX, flooding tower, old film projector noise, aggressive raspy male rap duo, crazy street-cartoon vocals, call and response ad-libs, gang chant chorus, black-and-white world but the money still gold, playful but dangerous, raw edges, no clean pop polish",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:00:53.320Z"
+}

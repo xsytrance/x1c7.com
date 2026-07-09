@@ -44,14 +44,18 @@ async function processOne(slug, srcBuf) {
   return { spine: spine.length, card: card.length };
 }
 
+const only = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : null;
+
 let n = 0;
-const local = readdirSync(join(HERE, "out")).filter((f) => f.endsWith(".png") && !f.startsWith("shelf") && !f.startsWith("_"));
+const local = readdirSync(join(HERE, "out")).filter((f) => f.endsWith(".png") && !f.startsWith("shelf") && !f.startsWith("_"))
+  .filter((f) => !only || f === `${only}.png`);
 for (const f of local) {
   const slug = f.replace(/\.png$/, "");
   const s = await processOne(slug, readFileSync(join(HERE, "out", f)));
   console.error(`${++n} ${slug} spine=${(s.spine / 1024) | 0}K card=${(s.card / 1024) | 0}K`);
 }
 for (const [slug, url] of Object.entries(EXTRA)) {
+  if (only && slug !== only) continue;
   const r = await fetch(url);
   if (!r.ok) { console.error(`skip ${slug}: ${r.status}`); continue; }
   const s = await processOne(slug, Buffer.from(await r.arrayBuffer()));

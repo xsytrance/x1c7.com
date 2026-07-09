@@ -1,0 +1,155 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Thank"
+        },
+        {
+          "t": 0.0,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 48.2,
+      "end": 51.0,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 48.2,
+          "text": "Thank"
+        },
+        {
+          "t": 49.6,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 70.62,
+      "end": 73.42,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 70.62,
+          "text": "Thank"
+        },
+        {
+          "t": 72.02,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 100.7,
+      "end": 102.496,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 100.7,
+          "text": "Thank"
+        },
+        {
+          "t": 102.1,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 131.22,
+      "end": 134.02,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 131.22,
+          "text": "Thank"
+        },
+        {
+          "t": 132.62,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 155.72,
+      "end": 158.52,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 155.72,
+          "text": "Thank"
+        },
+        {
+          "t": 157.12,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 185.86,
+      "end": 188.66,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 185.86,
+          "text": "Thank"
+        },
+        {
+          "t": 187.26,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 220.16,
+      "end": 222.96,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 220.16,
+          "text": "Thank"
+        },
+        {
+          "t": 221.56,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 250.12,
+      "end": 252.92,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 250.12,
+          "text": "Thank"
+        },
+        {
+          "t": 251.52,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 274.62,
+      "end": 276.36,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 274.62,
+          "text": "Thank"
+        },
+        {
+          "t": 275.78,
+          "text": "you."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "analysis": {
+    "summary": "The song chronicles a journey from deep struggle and darkness into triumphant resilience, transforming personal pressure and pain into pure golden success through relentless creation.",
+    "overallMood": "Triumphant",
+    "themes": [
+      "Resilience against adversity",
+      "Transformation of pain into gold",
+      "Self-actualization and growth",
+      "Cultural pride and identity",
+      "Overcoming doubt and fear"
+    ],
+    "palette": [
+      "#1a0b2e",
+      "#ff4500",
+      "#ffd700",
+      "#f8cdda"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Brooding anticipation shifting to explosive energy",
+        "intensity": 0.69,
+        "colorHintHex": "#2e1a47",
+        "start": 2.7800000000000002
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Heavy burden turning into rising defiance",
+        "intensity": 0.77,
+        "colorHintHex": "#8b3d3d",
+        "start": 30.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Soaring vocal release with unshakeable resolve",
+        "intensity": 0.79,
+        "colorHintHex": "#ff4500",
+        "start": 67.22
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Philosophical epiphany culminating in total mastery of the self",
+        "intensity": 0.96,
+        "colorHintHex": "#e6b32c",
+        "start": 80.4
+      },
+      {
+        "name": "Drop",
+        "emotion": "Maximum intensity brass-heavy climax with pure golden realization",
+        "intensity": 0.86,
+        "colorHintHex": "#ffd700",
+        "start": 107.68
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Cool-headed reflection on rejecting external validation",
+        "intensity": 0.53,
+        "colorHintHex": "#4a3b69",
+        "start": 169.4
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building spiritual heat and atmospheric pressure",
+        "intensity": 0.22,
+        "colorHintHex": "#d18c5e",
+        "start": 184.36
+      }
+    ],
+    "keywords": [
+      {
+        "word": "presión",
+        "emotion": "Intense physical and mental weight transforming into fuel",
+        "imageryPrompt": "A heavy, glowing blacksmith hammer striking molten gold ingot inside a dark forge with sparks flying in slow motion."
+      },
+      {
+        "word": "oro",
+        "emotion": "Pure, radiant success reflecting inner worth",
+        "imageryPrompt": "Liquid golden metal pouring from cracks in the sky onto cracked earth to form a shimmering river of wealth and light."
+      },
+      {
+        "word": "vacío",
+        "emotion": "Deep existential emptiness learning names through struggle",
+        "imageryPrompt": "A vast, swirling nebula of deep purple smoke where faint silhouettes stand against an infinite void that slowly ignites with orange embers."
+      },
+      {
+        "word": "fuego",
+        "emotion": "Uncontrollable passion burning away fear and doubt",
+        "imageryPrompt": "A roaring inferno inside a human chest made of brass gears, flames licking upwards to illuminate a silhouette against a night sky."
+      },
+      {
+        "word": "brass",
+        "emotion": "Hardened resilience sounding like war calls and building blocks",
+        "imageryPrompt": "Polished golden-yellow metal structures rising from ash into towering skyscrapers, vibrating with low-frequency sound waves visible as ripples."
+      },
+      {
+        "word": "corazón",
+        "emotion": "Beating heart of gold amidst the chaos and pressure",
+        "imageryPrompt": "An anatomical heart made entirely of spinning golden coins beating rhythmically within a chest cavity surrounded by storm clouds that part to let light through."
+      },
+      {
+        "word": "scars",
+        "emotion": "Proud marks of survival and the path climbed higher",
+        "imageryPrompt": "A warrior's arm where jagged silver scars glow with warm amber light, transforming from wounds into intricate maps of a mountain climb."
+      },
+      {
+        "word": "void",
+        "emotion": "The dark place before dawn and the start of creation",
+        "imageryPrompt": "A bottomless pit filled with floating debris that slowly coalesces into stars as a single beam of sunlight pierces through from above."
+      }
+    ]
+  },
+  "styleHint": "A mid-tempo (96 BPM) F-minor track blending gritty trap drums with atmospheric synth pads and warm basslines that build from a brooding void into an explosive, brass-heavy climax where the vocal delivery shifts between Spanish melodic hooks and aggressive English verses about turning struggle into gold.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:48:30.289Z"
+}

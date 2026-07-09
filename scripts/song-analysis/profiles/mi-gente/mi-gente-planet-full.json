@@ -1,0 +1,120 @@
+{
+  "analysis": {
+    "summary": "A high-energy Latin Trap anthem celebrating street loyalty, unity across diverse Latino communities, and transforming struggle into collective power.",
+    "overallMood": "Aggressive United Swagger",
+    "themes": [
+      "Loyalty and Family Bloodlines",
+      "Street Unity Across Borders",
+      "Resilience Against Adversity",
+      "Authentic Identity vs. Poseurs",
+      "Community Power Rising Up",
+      "Nighttime Barrio Celebration"
+    ],
+    "palette": [
+      "#120F15",
+      "#FF4D00",
+      "#8B0000",
+      "#FFEEDC"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory Swagger",
+        "intensity": 0.77,
+        "colorHintHex": "#120F15",
+        "start": 0
+      },
+      {
+        "name": "Chorus 1",
+        "emotion": "Triumphant Unity",
+        "intensity": 0.98,
+        "colorHintHex": "#FF4D00",
+        "start": 9.96
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Gritty Loyalty",
+        "intensity": 0.84,
+        "colorHintHex": "#8B0000",
+        "start": 29.58
+      },
+      {
+        "name": "Pre-Chorus / Chant Response",
+        "emotion": "Aggressive Challenge",
+        "intensity": 0.82,
+        "colorHintHex": "#FF4D00",
+        "start": 59.58
+      },
+      {
+        "name": "Chorus 2",
+        "emotion": "Empowered Declaration",
+        "intensity": 0.61,
+        "colorHintHex": "#FFEEDC",
+        "start": 73.92
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Global Connection",
+        "intensity": 0.31,
+        "colorHintHex": "#1A4D6F",
+        "start": 105.18
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Spiritual Brotherhood",
+        "intensity": 0.22,
+        "colorHintHex": "#FF4500",
+        "start": 132.28
+      },
+      {
+        "name": "Drop / Outro Start",
+        "emotion": "Explosive Release",
+        "intensity": 0.3,
+        "colorHintHex": "#8B0000",
+        "start": 142.86
+      },
+      {
+        "name": "Outro",
+        "emotion": "Enduring Pride",
+        "intensity": 0.21,
+        "colorHintHex": "#FFEEDC",
+        "start": 152.62
+      }
+    ],
+    "keywords": [
+      {
+        "word": "gente",
+        "emotion": "Belonging",
+        "imageryPrompt": "A massive crowd of diverse people with glowing outlines standing shoulder to shoulder under a neon sign, hands raised in unison."
+      },
+      {
+        "word": "sangre",
+        "emotion": "Deep Connection",
+        "imageryPrompt": "Close-up of intertwined veins glowing warmly against dark skin tones, symbolizing shared lineage and life force."
+      },
+      {
+        "word": "calle",
+        "emotion": "Street Pride",
+        "imageryPrompt": "A vibrant concrete alleyway at night illuminated by streetlights and graffiti art, reflecting confidence in the pavement cracks."
+      },
+      {
+        "word": "barrio",
+        "emotion": "Home Defense",
+        "imageryPrompt": "An elevated view of a colorful residential block party with lowrider cars parked outside, smoke rising from food stalls and people dancing."
+      },
+      {
+        "word": "fuego",
+        "emotion": "Passionate Fire",
+        "imageryPrompt": "Intense orange flames swirling around faces covered in sweat but smiling, representing the heat of passion and resilience."
+      },
+      {
+        "word": "lealtad",
+        "emotion": "Unbreakable Bond",
+        "imageryPrompt": "Two hands clasped tightly together with golden light radiating from the grip, ignoring shadows trying to pull them apart."
+      }
+    ]
+  },
+  "styleHint": "West Coast-inspired Latino street anthem, 98 BPM, heavy bounce, aggressive club rap energy, chant-ready hook, deep 808 bass, sharp claps, minimal piano stabs, dark brass hits, siren risers, crowd shouts, barrio block-party atmosphere, confident male lead rapper with crew ad-libs, Spanish and Spanglish delivery, gritty but polished mix, call-and-response sections, catchy repeated hook built for live crowds, radio-ready structure, swagger, loyalty, unity, street pride, nighttime city vibe, lowrider energy, no direct imitation of any artist, original melody and lyrics",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:19:00.450Z"
+}

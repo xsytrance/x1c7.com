@@ -1,0 +1,35 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 45,
+   "end": 62,
+   "stemSpot": {
+    "solo": [
+     "strings"
+    ],
+    "label": "THE STRINGS SPEAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 86,
+   "end": 105,
+   "stemSpot": {
+    "solo": [
+     "perc"
+    ],
+    "label": "TACTICAL SNARE"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "noble": "bloom",
+  "dangerous": "shatter",
+  "urgent": "pulse",
+  "tactical": "glitch",
+  "feverbreak": "dissolve",
+  "aggressive": "slam"
+ }
+}

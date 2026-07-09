@@ -1,0 +1,126 @@
+[
+  {
+    "id": "drink-drink-don-t-save-me",
+    "planet": {
+      "analysis": {
+        "summary": "A surreal and narcotic exploration of insomnia where the narrator rejects salvation to drown their pain in a hypnotic loop of drinking and dissociation.",
+        "overallMood": "Narcotic Insomnia",
+        "themes": [
+          "Dissociation",
+          "Chronic Pain",
+          "Rejection of Rescue",
+          "Nightmare Fuel"
+        ],
+        "palette": [
+          "#0f0b15",
+          "#4a3b2e",
+          "#8c766d",
+          "#ffccaa"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Desperate Entreaty",
+            "intensity": 0.5,
+            "colorHint": "#4a3b2e",
+            "start": 2.12
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Hypnotic Dissociation",
+            "intensity": 0.7,
+            "colorHint": "#8c766d",
+            "start": 11.06
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Narcotic Numbness",
+            "intensity": 0.95,
+            "colorHint": "#2b1d3e",
+            "start": 26.2
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Claustrophobic Surrealism",
+            "intensity": 0.85,
+            "colorHint": "#2b1d3e",
+            "start": 60.76
+          },
+          {
+            "name": "Verse 1 (Continued)",
+            "emotion": "Fractured Denial",
+            "intensity": 0.6,
+            "colorHint": "#4a3b2e",
+            "start": 94.56
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Exhausted Realization",
+            "intensity": 0.75,
+            "colorHint": "#8c766d",
+            "start": 145.94
+          },
+          {
+            "name": "Drop",
+            "emotion": "Hypnotic Loop Collapse",
+            "intensity": 1,
+            "colorHint": "#ffccaa",
+            "start": 185.12
+          },
+          {
+            "name": "Outro",
+            "emotion": "Fading Despair",
+            "intensity": 0.4,
+            "colorHint": "#0f0b15",
+            "start": 271.62
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Save",
+            "emotion": "Rejected Mercy",
+            "imageryPrompt": "A translucent hand reaching out from a dark void but being slapped away by a shadowy figure, floating debris in the air."
+          },
+          {
+            "word": "Train",
+            "emotion": "Mental Repetition",
+            "imageryPrompt": "An endless monorail track curving through a smoggy night sky with no destination visible, glowing faintly against black clouds."
+          },
+          {
+            "word": "Bottle",
+            "emotion": "Narcotic Necessity",
+            "imageryPrompt": "A clear glass bottle reflecting the blue light of moonlight on a dusty wooden floor next to an overturned chair."
+          },
+          {
+            "word": "Pain",
+            "emotion": "Visceral Agony",
+            "imageryPrompt": "Glowing red veins pulsating rhythmically under pale skin, illuminating the darkness of a room with heavy shadows."
+          },
+          {
+            "word": "Smoke",
+            "emotion": "Dissolving Reality",
+            "imageryPrompt": "Thick grey smoke swirling into shapes that look like faces and memories before vanishing instantly in mid-air."
+          },
+          {
+            "word": "Drums",
+            "emotion": "Rhythmic Oppression",
+            "imageryPrompt": "Giant mechanical hammers striking a surface made of bone, sending shockwaves through the air that distort vision."
+          },
+          {
+            "word": "Ghost",
+            "emotion": "Lonely Spirit",
+            "imageryPrompt": "A faint outline of a person walking alone down an empty hallway where walls bleed black liquid onto the floor."
+          },
+          {
+            "word": "Shame",
+            "emotion": "Heavy Guilt",
+            "imageryPrompt": "A heavy chain made of smoke wrapped around a neck, dragging the figure forward into a mirror that shows nothing but darkness."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

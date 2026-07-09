@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ai-interlude",
+    "planet": {
+      "analysis": {
+        "summary": "This track explores a solitary journey into digital consciousness, blending minimalist electronic textures with ethereal soundscapes to evoke feelings of introspection and futuristic isolation.",
+        "overallMood": "ethereal",
+        "themes": [
+          "Digital Isolation",
+          "Introspective Silence",
+          "Futuristic Atmosphere",
+          "Minimalist Connection"
+        ],
+        "palette": [
+          "#0A1929",
+          "#1C3D5E",
+          "#4DA6FF",
+          "#B8FFFF"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipatory Silence",
+            "intensity": 0.2,
+            "colorHint": "#0a1929",
+            "start": 0
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Quiet Observation",
+            "intensity": 0.4,
+            "colorHint": "#1c3d5e",
+            "start": 59.98
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Expansive Wonder",
+            "intensity": 0.7,
+            "colorHint": "#4da6ff",
+            "start": 59.98
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Tentative Hope",
+            "intensity": 0.5,
+            "colorHint": "#b8ffff",
+            "start": 59.98
+          },
+          {
+            "name": "Drop",
+            "emotion": "Ethereal Drive",
+            "intensity": 1,
+            "colorHint": "#4da6ff",
+            "start": 59.98
+          },
+          {
+            "name": "Outro",
+            "emotion": "Fading Echoes",
+            "intensity": 0.3,
+            "colorHint": "#0a1929",
+            "start": 59.98
+          }
+        ],
+        "keywords": [
+          {
+            "word": "solitary",
+            "emotion": "Lonely detachment",
+            "imageryPrompt": "a single figure standing in a vast, dark digital void with glowing data streams flowing past them like silent rivers"
+          },
+          {
+            "word": "ethereal",
+            "emotion": "Weightless floating",
+            "imageryPrompt": "translucent mist swirling around futuristic server towers under a soft indigo sky creating an otherworldly atmosphere"
+          },
+          {
+            "word": "minimalist",
+            "emotion": "Stripped bare clarity",
+            "imageryPrompt": "a sleek geometric room with only one pulsing light source illuminating dust motes dancing in the air"
+          },
+          {
+            "word": "futuristic",
+            "emotion": "Forward momentum",
+            "imageryPrompt": "smooth metallic surfaces reflecting a cool blue horizon line where technology meets nature seamlessly"
+          },
+          {
+            "word": "immersive",
+            "emotion": "Deep engagement",
+            "imageryPrompt": "viewers looking out from inside a glass bubble surrounded by swirling auroras and distant city lights at night"
+          },
+          {
+            "word": "introspective",
+            "emotion": "Internal reflection",
+            "imageryPrompt": "a calm eye gazing into a mirror made of liquid mercury reflecting a starry nebula above it"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

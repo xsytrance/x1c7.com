@@ -1,0 +1,59 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 28,
+   "end": 46,
+   "stemSpot": {
+    "solo": [
+     "strings"
+    ],
+    "label": "THE VIOLINS CRY"
+   },
+   "why": ""
+  },
+  {
+   "start": 123,
+   "end": 148,
+   "stemSpot": {
+    "solo": [
+     "keys"
+    ],
+    "label": "DEEP PIANO LAMENT"
+   },
+   "why": ""
+  },
+  {
+   "start": 160,
+   "end": 185,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "URGENT RHYTHM BREAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 218,
+   "end": 243,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "SUB-BASS & SYNTH WALLS"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "static": "glitch",
+  "ceasefire": "bloom",
+  "violence": "shatter",
+  "overloaded": "dissolve",
+  "ghosts": "echo",
+  "code": "redact"
+ }
+}

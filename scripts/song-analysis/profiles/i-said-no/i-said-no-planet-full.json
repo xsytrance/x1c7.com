@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "summary": "The song portrays a wealthy but socially isolated figure who aggressively rejects outsiders despite their admiration for his lifestyle and possessions.",
+    "overallMood": "sinister-fun",
+    "themes": [
+      "Rejection of Admiration",
+      "Material Excess vs. Isolation",
+      "Gritty Street Power",
+      "Playful Danger"
+    ],
+    "palette": [
+      "#1A1A20",
+      "#8B7359",
+      "#E6DCCF",
+      "#4A4A4A"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "sinister anticipation",
+        "intensity": 0.22,
+        "colorHintHex": "#1A1A20",
+        "start": 0.6
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "conceited arrogance",
+        "intensity": 0.88,
+        "colorHintHex": "#8B7359",
+        "start": 0.6
+      },
+      {
+        "name": "Chorus",
+        "emotion": "cold dismissal",
+        "intensity": 0.94,
+        "colorHintHex": "#E6DCCF",
+        "start": 24.78
+      },
+      {
+        "name": "Drop",
+        "emotion": "aggressive defiance",
+        "intensity": 0.78,
+        "colorHintHex": "#4A4A4A",
+        "start": 43.86
+      },
+      {
+        "name": "Bridge",
+        "emotion": "obsessive isolation",
+        "intensity": 0.32,
+        "colorHintHex": "#2C3E50",
+        "start": 54.95
+      },
+      {
+        "name": "Outro",
+        "emotion": "hollow finality",
+        "intensity": 0.03,
+        "colorHintHex": "#8B7359",
+        "start": 125.56
+      }
+    ],
+    "keywords": [
+      {
+        "word": "no!",
+        "emotion": "aggressive rejection",
+        "imageryPrompt": "A cartoon character in a black-and-white noir setting slamming a door, steam hissing from the hinges, casting a long shadow against foggy docks."
+      },
+      {
+        "word": "crib",
+        "emotion": "isolated luxury",
+        "imageryPrompt": "An opulent but empty room with dust motes dancing in shafts of light, surrounded by towering walls and no windows to the outside world."
+      },
+      {
+        "word": "ice",
+        "emotion": "cold wealth",
+        "imageryPrompt": "A jagged diamond necklace glowing faintly against a dark leather jacket, reflecting only cold blue tones in a grimy room."
+      },
+      {
+        "word": "overseas",
+        "emotion": "distant desire",
+        "imageryPrompt": "Silhouettes of figures on a distant horizon looking longingly at the protagonist's glowing window from across a dark, choppy river."
+      },
+      {
+        "word": "freeze",
+        "emotion": "arctic isolation",
+        "imageryPrompt": "A character shivering in an expensive coat while holding warm drinks that are sweating, standing alone on a frozen pier at night."
+      },
+      {
+        "word": "chain",
+        "emotion": "heavy burden",
+        "imageryPrompt": "A thick gold chain clanking loudly as it drags across dirty pavement, casting heavy metallic shadows in the gloom of an alleyway."
+      }
+    ]
+  },
+  "styleHint": "gritty hardcore gangsta rap, 94 BPM, grimy 90s east coast boom bap, dirty dockside crime story, black and white 1928 cartoon atmosphere, public domain steamboat chaos, rubber-hose animation energy flipped dark, riverboat whistle hook, dusty drums, hard snare cracks, vinyl hiss, upright bass stabs, sinister piano loop, muted trumpet, creepy xylophone hits, old film projector noise, chain clanks, dock footsteps, foghorn bass, aggressive male rap duo, raspy street vocals, call and response ad-libs, cinematic villain energy, grimy chorus chant, black-and-white noir cartoon gangsta world, playful but dangerous, no modern Disney references, no clean pop polish",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:12:10.785Z"
+}

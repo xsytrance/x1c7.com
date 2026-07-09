@@ -1,0 +1,2775 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.62,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "You"
+        },
+        {
+          "t": 0.448,
+          "text": "got"
+        },
+        {
+          "t": 0.74,
+          "text": "me"
+        },
+        {
+          "t": 0.96,
+          "text": "going"
+        },
+        {
+          "t": 1.16,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 3.4,
+      "end": 4.992,
+      "text": "Lose control, maybe",
+      "words": [
+        {
+          "t": 3.4,
+          "text": "Lose"
+        },
+        {
+          "t": 4.0,
+          "text": "control,"
+        },
+        {
+          "t": 4.58,
+          "text": "maybe"
+        }
+      ]
+    },
+    {
+      "start": 6.3,
+      "end": 6.9,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 6.3,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 9.46,
+      "end": 11.712,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 9.46,
+          "text": "You"
+        },
+        {
+          "t": 10.368,
+          "text": "got"
+        },
+        {
+          "t": 10.66,
+          "text": "me"
+        },
+        {
+          "t": 10.944,
+          "text": "going"
+        },
+        {
+          "t": 11.12,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 13.19,
+      "end": 15.136,
+      "text": "Still this love or hate, don't know why",
+      "words": [
+        {
+          "t": 13.19,
+          "text": "Still"
+        },
+        {
+          "t": 13.8,
+          "text": "this"
+        },
+        {
+          "t": 13.9,
+          "text": "love"
+        },
+        {
+          "t": 14.08,
+          "text": "or"
+        },
+        {
+          "t": 14.2,
+          "text": "hate,"
+        },
+        {
+          "t": 14.48,
+          "text": "don't"
+        },
+        {
+          "t": 14.64,
+          "text": "know"
+        },
+        {
+          "t": 14.86,
+          "text": "why"
+        }
+      ]
+    },
+    {
+      "start": 15.38,
+      "end": 17.3,
+      "text": "Am I just stuck in a race, baby",
+      "words": [
+        {
+          "t": 15.38,
+          "text": "Am"
+        },
+        {
+          "t": 15.48,
+          "text": "I"
+        },
+        {
+          "t": 15.48,
+          "text": "just"
+        },
+        {
+          "t": 15.66,
+          "text": "stuck"
+        },
+        {
+          "t": 15.86,
+          "text": "in"
+        },
+        {
+          "t": 16.12,
+          "text": "a"
+        },
+        {
+          "t": 16.28,
+          "text": "race,"
+        },
+        {
+          "t": 17.0,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 18.4,
+      "end": 20.76,
+      "text": "One more call and I might just die",
+      "words": [
+        {
+          "t": 18.4,
+          "text": "One"
+        },
+        {
+          "t": 18.6,
+          "text": "more"
+        },
+        {
+          "t": 18.8,
+          "text": "call"
+        },
+        {
+          "t": 19.12,
+          "text": "and"
+        },
+        {
+          "t": 19.48,
+          "text": "I"
+        },
+        {
+          "t": 19.64,
+          "text": "might"
+        },
+        {
+          "t": 19.94,
+          "text": "just"
+        },
+        {
+          "t": 20.26,
+          "text": "die"
+        }
+      ]
+    },
+    {
+      "start": 20.91,
+      "end": 23.58,
+      "text": "Every night I'm falling, I fall through",
+      "words": [
+        {
+          "t": 20.91,
+          "text": "Every"
+        },
+        {
+          "t": 21.66,
+          "text": "night"
+        },
+        {
+          "t": 21.96,
+          "text": "I'm"
+        },
+        {
+          "t": 22.2,
+          "text": "falling,"
+        },
+        {
+          "t": 22.76,
+          "text": "I"
+        },
+        {
+          "t": 22.96,
+          "text": "fall"
+        },
+        {
+          "t": 23.2,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 23.58,
+      "end": 25.024,
+      "text": "Got me going crazy",
+      "words": [
+        {
+          "t": 23.58,
+          "text": "Got"
+        },
+        {
+          "t": 23.98,
+          "text": "me"
+        },
+        {
+          "t": 24.22,
+          "text": "going"
+        },
+        {
+          "t": 24.54,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 25.28,
+      "end": 28.2,
+      "text": "Blanket, emo, ghost in a dance",
+      "words": [
+        {
+          "t": 25.28,
+          "text": "Blanket,"
+        },
+        {
+          "t": 26.32,
+          "text": "emo,"
+        },
+        {
+          "t": 26.98,
+          "text": "ghost"
+        },
+        {
+          "t": 27.56,
+          "text": "in"
+        },
+        {
+          "t": 27.78,
+          "text": "a"
+        },
+        {
+          "t": 27.78,
+          "text": "dance"
+        }
+      ]
+    },
+    {
+      "start": 28.2,
+      "end": 30.98,
+      "text": "Got hoonah, hoonah, don't need to boost now",
+      "words": [
+        {
+          "t": 28.2,
+          "text": "Got"
+        },
+        {
+          "t": 28.46,
+          "text": "hoonah,"
+        },
+        {
+          "t": 28.88,
+          "text": "hoonah,"
+        },
+        {
+          "t": 29.28,
+          "text": "don't"
+        },
+        {
+          "t": 29.56,
+          "text": "need"
+        },
+        {
+          "t": 29.72,
+          "text": "to"
+        },
+        {
+          "t": 29.86,
+          "text": "boost"
+        },
+        {
+          "t": 30.34,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 31.11,
+      "end": 34.18,
+      "text": "Better get up on your dog, I get",
+      "words": [
+        {
+          "t": 31.11,
+          "text": "Better"
+        },
+        {
+          "t": 31.86,
+          "text": "get"
+        },
+        {
+          "t": 32.16,
+          "text": "up"
+        },
+        {
+          "t": 32.44,
+          "text": "on"
+        },
+        {
+          "t": 32.78,
+          "text": "your"
+        },
+        {
+          "t": 33.08,
+          "text": "dog,"
+        },
+        {
+          "t": 33.58,
+          "text": "I"
+        },
+        {
+          "t": 33.88,
+          "text": "get"
+        }
+      ]
+    },
+    {
+      "start": 34.82,
+      "end": 36.736,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 34.82,
+          "text": "You"
+        },
+        {
+          "t": 35.3,
+          "text": "got"
+        },
+        {
+          "t": 35.78,
+          "text": "me"
+        },
+        {
+          "t": 36.16,
+          "text": "going"
+        },
+        {
+          "t": 36.32,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 37.26,
+      "end": 37.824,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 37.26,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 37.98,
+      "end": 38.4,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 37.98,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 38.86,
+      "end": 39.52,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 38.86,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 39.73,
+      "end": 40.48,
+      "text": "Yeah,",
+      "words": [
+        {
+          "t": 39.73,
+          "text": "Yeah,"
+        }
+      ]
+    },
+    {
+      "start": 41.184,
+      "end": 42.72,
+      "text": "late night drive, city glow",
+      "words": [
+        {
+          "t": 41.184,
+          "text": "late"
+        },
+        {
+          "t": 41.72,
+          "text": "night"
+        },
+        {
+          "t": 41.82,
+          "text": "drive,"
+        },
+        {
+          "t": 42.22,
+          "text": "city"
+        },
+        {
+          "t": 42.42,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 42.75,
+      "end": 44.44,
+      "text": "Booking lights and your name on my phone",
+      "words": [
+        {
+          "t": 42.75,
+          "text": "Booking"
+        },
+        {
+          "t": 43.2,
+          "text": "lights"
+        },
+        {
+          "t": 43.3,
+          "text": "and"
+        },
+        {
+          "t": 43.48,
+          "text": "your"
+        },
+        {
+          "t": 43.6,
+          "text": "name"
+        },
+        {
+          "t": 43.78,
+          "text": "on"
+        },
+        {
+          "t": 44.06,
+          "text": "my"
+        },
+        {
+          "t": 44.18,
+          "text": "phone"
+        }
+      ]
+    },
+    {
+      "start": 44.44,
+      "end": 46.18,
+      "text": "I know you're like a poison dose",
+      "words": [
+        {
+          "t": 44.44,
+          "text": "I"
+        },
+        {
+          "t": 44.64,
+          "text": "know"
+        },
+        {
+          "t": 44.78,
+          "text": "you're"
+        },
+        {
+          "t": 45.04,
+          "text": "like"
+        },
+        {
+          "t": 45.44,
+          "text": "a"
+        },
+        {
+          "t": 45.58,
+          "text": "poison"
+        },
+        {
+          "t": 45.9,
+          "text": "dose"
+        }
+      ]
+    },
+    {
+      "start": 46.18,
+      "end": 47.94,
+      "text": "When I look in your eyes, I can't say no",
+      "words": [
+        {
+          "t": 46.18,
+          "text": "When"
+        },
+        {
+          "t": 46.42,
+          "text": "I"
+        },
+        {
+          "t": 46.52,
+          "text": "look"
+        },
+        {
+          "t": 46.68,
+          "text": "in"
+        },
+        {
+          "t": 46.84,
+          "text": "your"
+        },
+        {
+          "t": 46.92,
+          "text": "eyes,"
+        },
+        {
+          "t": 47.16,
+          "text": "I"
+        },
+        {
+          "t": 47.3,
+          "text": "can't"
+        },
+        {
+          "t": 47.52,
+          "text": "say"
+        },
+        {
+          "t": 47.68,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 47.94,
+      "end": 49.54,
+      "text": "Get you closer, then you fade again",
+      "words": [
+        {
+          "t": 47.94,
+          "text": "Get"
+        },
+        {
+          "t": 48.32,
+          "text": "you"
+        },
+        {
+          "t": 48.48,
+          "text": "closer,"
+        },
+        {
+          "t": 48.78,
+          "text": "then"
+        },
+        {
+          "t": 48.92,
+          "text": "you"
+        },
+        {
+          "t": 49.0,
+          "text": "fade"
+        },
+        {
+          "t": 49.2,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 49.59,
+      "end": 51.34,
+      "text": "Run away, but you still drag me in",
+      "words": [
+        {
+          "t": 49.59,
+          "text": "Run"
+        },
+        {
+          "t": 50.04,
+          "text": "away,"
+        },
+        {
+          "t": 50.36,
+          "text": "but"
+        },
+        {
+          "t": 50.46,
+          "text": "you"
+        },
+        {
+          "t": 50.54,
+          "text": "still"
+        },
+        {
+          "t": 50.66,
+          "text": "drag"
+        },
+        {
+          "t": 50.9,
+          "text": "me"
+        },
+        {
+          "t": 51.04,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 51.34,
+      "end": 52.88,
+      "text": "Change my mind, but I still pretend",
+      "words": [
+        {
+          "t": 51.34,
+          "text": "Change"
+        },
+        {
+          "t": 51.64,
+          "text": "my"
+        },
+        {
+          "t": 51.88,
+          "text": "mind,"
+        },
+        {
+          "t": 52.1,
+          "text": "but"
+        },
+        {
+          "t": 52.2,
+          "text": "I"
+        },
+        {
+          "t": 52.3,
+          "text": "still"
+        },
+        {
+          "t": 52.5,
+          "text": "pretend"
+        }
+      ]
+    },
+    {
+      "start": 52.88,
+      "end": 54.66,
+      "text": "Erase you, but I always crave you still",
+      "words": [
+        {
+          "t": 52.88,
+          "text": "Erase"
+        },
+        {
+          "t": 53.32,
+          "text": "you,"
+        },
+        {
+          "t": 53.46,
+          "text": "but"
+        },
+        {
+          "t": 53.58,
+          "text": "I"
+        },
+        {
+          "t": 53.66,
+          "text": "always"
+        },
+        {
+          "t": 53.96,
+          "text": "crave"
+        },
+        {
+          "t": 54.24,
+          "text": "you"
+        },
+        {
+          "t": 54.4,
+          "text": "still"
+        }
+      ]
+    },
+    {
+      "start": 54.66,
+      "end": 56.44,
+      "text": "Bass hitting and you're right back fast",
+      "words": [
+        {
+          "t": 54.66,
+          "text": "Bass"
+        },
+        {
+          "t": 55.06,
+          "text": "hitting"
+        },
+        {
+          "t": 55.44,
+          "text": "and"
+        },
+        {
+          "t": 55.64,
+          "text": "you're"
+        },
+        {
+          "t": 55.76,
+          "text": "right"
+        },
+        {
+          "t": 55.92,
+          "text": "back"
+        },
+        {
+          "t": 56.06,
+          "text": "fast"
+        }
+      ]
+    },
+    {
+      "start": 56.44,
+      "end": 58.02,
+      "text": "All my friends telling me fall back",
+      "words": [
+        {
+          "t": 56.44,
+          "text": "All"
+        },
+        {
+          "t": 56.68,
+          "text": "my"
+        },
+        {
+          "t": 56.8,
+          "text": "friends"
+        },
+        {
+          "t": 57.12,
+          "text": "telling"
+        },
+        {
+          "t": 57.36,
+          "text": "me"
+        },
+        {
+          "t": 57.52,
+          "text": "fall"
+        },
+        {
+          "t": 57.74,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 58.02,
+      "end": 59.68,
+      "text": "Noisy nights with the volume up",
+      "words": [
+        {
+          "t": 58.02,
+          "text": "Noisy"
+        },
+        {
+          "t": 58.52,
+          "text": "nights"
+        },
+        {
+          "t": 58.76,
+          "text": "with"
+        },
+        {
+          "t": 58.96,
+          "text": "the"
+        },
+        {
+          "t": 59.08,
+          "text": "volume"
+        },
+        {
+          "t": 59.38,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 59.68,
+      "end": 61.42,
+      "text": "In my ears, I hear you, nigga, say I was slow",
+      "words": [
+        {
+          "t": 59.68,
+          "text": "In"
+        },
+        {
+          "t": 59.8,
+          "text": "my"
+        },
+        {
+          "t": 59.92,
+          "text": "ears,"
+        },
+        {
+          "t": 60.16,
+          "text": "I"
+        },
+        {
+          "t": 60.28,
+          "text": "hear"
+        },
+        {
+          "t": 60.42,
+          "text": "you,"
+        },
+        {
+          "t": 60.6,
+          "text": "nigga,"
+        },
+        {
+          "t": 60.7,
+          "text": "say"
+        },
+        {
+          "t": 60.88,
+          "text": "I"
+        },
+        {
+          "t": 61.02,
+          "text": "was"
+        },
+        {
+          "t": 61.2,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 61.42,
+      "end": 62.85,
+      "text": "Drunk on you, yes, dangerous",
+      "words": [
+        {
+          "t": 61.42,
+          "text": "Drunk"
+        },
+        {
+          "t": 61.82,
+          "text": "on"
+        },
+        {
+          "t": 61.98,
+          "text": "you,"
+        },
+        {
+          "t": 62.22,
+          "text": "yes,"
+        },
+        {
+          "t": 62.4,
+          "text": "dangerous"
+        }
+      ]
+    },
+    {
+      "start": 62.86,
+      "end": 64.56,
+      "text": "But I'm still ego-favorite",
+      "words": [
+        {
+          "t": 62.86,
+          "text": "But"
+        },
+        {
+          "t": 63.16,
+          "text": "I'm"
+        },
+        {
+          "t": 63.46,
+          "text": "still"
+        },
+        {
+          "t": 63.62,
+          "text": "ego"
+        },
+        {
+          "t": 63.94,
+          "text": "-favorite"
+        }
+      ]
+    },
+    {
+      "start": 64.56,
+      "end": 66.42,
+      "text": "Go break it down, then we save this love",
+      "words": [
+        {
+          "t": 64.56,
+          "text": "Go"
+        },
+        {
+          "t": 64.66,
+          "text": "break"
+        },
+        {
+          "t": 64.88,
+          "text": "it"
+        },
+        {
+          "t": 64.96,
+          "text": "down,"
+        },
+        {
+          "t": 65.376,
+          "text": "then"
+        },
+        {
+          "t": 65.5,
+          "text": "we"
+        },
+        {
+          "t": 65.68,
+          "text": "save"
+        },
+        {
+          "t": 66.0,
+          "text": "this"
+        },
+        {
+          "t": 66.24,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 66.42,
+      "end": 68.14,
+      "text": "Wake up and I'm shouting this",
+      "words": [
+        {
+          "t": 66.42,
+          "text": "Wake"
+        },
+        {
+          "t": 66.78,
+          "text": "up"
+        },
+        {
+          "t": 67.02,
+          "text": "and"
+        },
+        {
+          "t": 67.22,
+          "text": "I'm"
+        },
+        {
+          "t": 67.584,
+          "text": "shouting"
+        },
+        {
+          "t": 67.7,
+          "text": "this"
+        }
+      ]
+    },
+    {
+      "start": 68.384,
+      "end": 69.84,
+      "text": "Round and round",
+      "words": [
+        {
+          "t": 68.384,
+          "text": "Round"
+        },
+        {
+          "t": 68.608,
+          "text": "and"
+        },
+        {
+          "t": 69.1,
+          "text": "round"
+        }
+      ]
+    },
+    {
+      "start": 69.84,
+      "end": 71.86,
+      "text": "We're like a couple, oh, and yeah",
+      "words": [
+        {
+          "t": 69.84,
+          "text": "We're"
+        },
+        {
+          "t": 70.432,
+          "text": "like"
+        },
+        {
+          "t": 70.54,
+          "text": "a"
+        },
+        {
+          "t": 70.68,
+          "text": "couple,"
+        },
+        {
+          "t": 71.18,
+          "text": "oh,"
+        },
+        {
+          "t": 71.5,
+          "text": "and"
+        },
+        {
+          "t": 71.62,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 71.86,
+      "end": 72.74,
+      "text": "You never slow down",
+      "words": [
+        {
+          "t": 71.86,
+          "text": "You"
+        },
+        {
+          "t": 72.0,
+          "text": "never"
+        },
+        {
+          "t": 72.352,
+          "text": "slow"
+        },
+        {
+          "t": 72.64,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 73.1,
+      "end": 75.02,
+      "text": "Till we burn, now we just go",
+      "words": [
+        {
+          "t": 73.1,
+          "text": "Till"
+        },
+        {
+          "t": 73.5,
+          "text": "we"
+        },
+        {
+          "t": 73.68,
+          "text": "burn,"
+        },
+        {
+          "t": 74.16,
+          "text": "now"
+        },
+        {
+          "t": 74.36,
+          "text": "we"
+        },
+        {
+          "t": 74.56,
+          "text": "just"
+        },
+        {
+          "t": 74.78,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 75.24,
+      "end": 76.64,
+      "text": "We burn it up",
+      "words": [
+        {
+          "t": 75.24,
+          "text": "We"
+        },
+        {
+          "t": 75.34,
+          "text": "burn"
+        },
+        {
+          "t": 75.68,
+          "text": "it"
+        },
+        {
+          "t": 75.9,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 76.64,
+      "end": 78.5,
+      "text": "Must end, oh, man, then we fall again",
+      "words": [
+        {
+          "t": 76.64,
+          "text": "Must"
+        },
+        {
+          "t": 77.04,
+          "text": "end,"
+        },
+        {
+          "t": 77.24,
+          "text": "oh,"
+        },
+        {
+          "t": 77.3,
+          "text": "man,"
+        },
+        {
+          "t": 77.5,
+          "text": "then"
+        },
+        {
+          "t": 77.68,
+          "text": "we"
+        },
+        {
+          "t": 77.888,
+          "text": "fall"
+        },
+        {
+          "t": 78.1,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 78.82,
+      "end": 80.26,
+      "text": "Then we fall back down",
+      "words": [
+        {
+          "t": 78.82,
+          "text": "Then"
+        },
+        {
+          "t": 78.92,
+          "text": "we"
+        },
+        {
+          "t": 79.1,
+          "text": "fall"
+        },
+        {
+          "t": 79.42,
+          "text": "back"
+        },
+        {
+          "t": 79.84,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 80.26,
+      "end": 83.64,
+      "text": "But we rise in this time",
+      "words": [
+        {
+          "t": 80.26,
+          "text": "But"
+        },
+        {
+          "t": 80.52,
+          "text": "we"
+        },
+        {
+          "t": 81.46,
+          "text": "rise"
+        },
+        {
+          "t": 82.14,
+          "text": "in"
+        },
+        {
+          "t": 82.96,
+          "text": "this"
+        },
+        {
+          "t": 83.3,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 83.64,
+      "end": 85.376,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 83.64,
+          "text": "You"
+        },
+        {
+          "t": 84.16,
+          "text": "got"
+        },
+        {
+          "t": 84.42,
+          "text": "me"
+        },
+        {
+          "t": 84.82,
+          "text": "going"
+        },
+        {
+          "t": 84.92,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 87.11,
+      "end": 88.0,
+      "text": "Still this love or hate, don't know why",
+      "words": [
+        {
+          "t": 87.11,
+          "text": "Still"
+        },
+        {
+          "t": 87.38,
+          "text": "this"
+        },
+        {
+          "t": 87.712,
+          "text": "love"
+        },
+        {
+          "t": 87.82,
+          "text": "or"
+        },
+        {
+          "t": 87.98,
+          "text": "hate,"
+        },
+        {
+          "t": 88.0,
+          "text": "don't"
+        },
+        {
+          "t": 88.0,
+          "text": "know"
+        },
+        {
+          "t": 88.0,
+          "text": "why"
+        }
+      ]
+    },
+    {
+      "start": 88.6,
+      "end": 90.86,
+      "text": "Much as I can't erase, baby",
+      "words": [
+        {
+          "t": 88.6,
+          "text": "Much"
+        },
+        {
+          "t": 89.34,
+          "text": "as"
+        },
+        {
+          "t": 89.44,
+          "text": "I"
+        },
+        {
+          "t": 89.6,
+          "text": "can't"
+        },
+        {
+          "t": 90.04,
+          "text": "erase,"
+        },
+        {
+          "t": 90.76,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 91.8,
+      "end": 94.52,
+      "text": "One more call and I might just die",
+      "words": [
+        {
+          "t": 91.8,
+          "text": "One"
+        },
+        {
+          "t": 92.36,
+          "text": "more"
+        },
+        {
+          "t": 92.58,
+          "text": "call"
+        },
+        {
+          "t": 92.94,
+          "text": "and"
+        },
+        {
+          "t": 93.26,
+          "text": "I"
+        },
+        {
+          "t": 93.42,
+          "text": "might"
+        },
+        {
+          "t": 93.74,
+          "text": "just"
+        },
+        {
+          "t": 94.06,
+          "text": "die"
+        }
+      ]
+    },
+    {
+      "start": 94.62,
+      "end": 97.4,
+      "text": "Every night I'm falling, I fall through",
+      "words": [
+        {
+          "t": 94.62,
+          "text": "Every"
+        },
+        {
+          "t": 95.42,
+          "text": "night"
+        },
+        {
+          "t": 95.74,
+          "text": "I'm"
+        },
+        {
+          "t": 95.96,
+          "text": "falling,"
+        },
+        {
+          "t": 96.54,
+          "text": "I"
+        },
+        {
+          "t": 96.76,
+          "text": "fall"
+        },
+        {
+          "t": 97.04,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 97.4,
+      "end": 98.912,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 97.4,
+          "text": "You"
+        },
+        {
+          "t": 97.74,
+          "text": "got"
+        },
+        {
+          "t": 97.8,
+          "text": "me"
+        },
+        {
+          "t": 97.96,
+          "text": "going"
+        },
+        {
+          "t": 98.34,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 99.456,
+      "end": 101.94,
+      "text": "I've run, got emo, ghost, my dance",
+      "words": [
+        {
+          "t": 99.456,
+          "text": "I've"
+        },
+        {
+          "t": 99.74,
+          "text": "run,"
+        },
+        {
+          "t": 99.98,
+          "text": "got"
+        },
+        {
+          "t": 100.12,
+          "text": "emo,"
+        },
+        {
+          "t": 100.76,
+          "text": "ghost,"
+        },
+        {
+          "t": 101.44,
+          "text": "my"
+        },
+        {
+          "t": 101.54,
+          "text": "dance"
+        }
+      ]
+    },
+    {
+      "start": 101.94,
+      "end": 104.096,
+      "text": "Got who, now, who, not done, it's a pusla",
+      "words": [
+        {
+          "t": 101.94,
+          "text": "Got"
+        },
+        {
+          "t": 102.24,
+          "text": "who,"
+        },
+        {
+          "t": 102.54,
+          "text": "now,"
+        },
+        {
+          "t": 102.72,
+          "text": "who,"
+        },
+        {
+          "t": 102.96,
+          "text": "not"
+        },
+        {
+          "t": 103.1,
+          "text": "done,"
+        },
+        {
+          "t": 103.58,
+          "text": "it's"
+        },
+        {
+          "t": 103.68,
+          "text": "a"
+        },
+        {
+          "t": 103.7,
+          "text": "pusla"
+        }
+      ]
+    },
+    {
+      "start": 105.52,
+      "end": 108.0,
+      "text": "But I'll get up, I ain't done, I could get",
+      "words": [
+        {
+          "t": 105.52,
+          "text": "But"
+        },
+        {
+          "t": 105.62,
+          "text": "I'll"
+        },
+        {
+          "t": 105.9,
+          "text": "get"
+        },
+        {
+          "t": 105.98,
+          "text": "up,"
+        },
+        {
+          "t": 106.464,
+          "text": "I"
+        },
+        {
+          "t": 106.62,
+          "text": "ain't"
+        },
+        {
+          "t": 106.86,
+          "text": "done,"
+        },
+        {
+          "t": 107.2,
+          "text": "I"
+        },
+        {
+          "t": 107.62,
+          "text": "could"
+        },
+        {
+          "t": 107.62,
+          "text": "get"
+        }
+      ]
+    },
+    {
+      "start": 109.02,
+      "end": 110.656,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 109.02,
+          "text": "You"
+        },
+        {
+          "t": 109.12,
+          "text": "got"
+        },
+        {
+          "t": 109.6,
+          "text": "me"
+        },
+        {
+          "t": 109.8,
+          "text": "going"
+        },
+        {
+          "t": 110.08,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 111.04,
+      "end": 111.88,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 111.04,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 111.88,
+      "end": 112.352,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 111.88,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 112.72,
+      "end": 113.44,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 112.72,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 114.25,
+      "end": 115.9,
+      "text": "See my text and you let it stay",
+      "words": [
+        {
+          "t": 114.25,
+          "text": "See"
+        },
+        {
+          "t": 114.76,
+          "text": "my"
+        },
+        {
+          "t": 114.86,
+          "text": "text"
+        },
+        {
+          "t": 115.1,
+          "text": "and"
+        },
+        {
+          "t": 115.22,
+          "text": "you"
+        },
+        {
+          "t": 115.3,
+          "text": "let"
+        },
+        {
+          "t": 115.48,
+          "text": "it"
+        },
+        {
+          "t": 115.64,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 115.9,
+      "end": 117.88,
+      "text": "Acting fine while I laugh with my friends",
+      "words": [
+        {
+          "t": 115.9,
+          "text": "Acting"
+        },
+        {
+          "t": 116.4,
+          "text": "fine"
+        },
+        {
+          "t": 116.76,
+          "text": "while"
+        },
+        {
+          "t": 116.88,
+          "text": "I"
+        },
+        {
+          "t": 116.96,
+          "text": "laugh"
+        },
+        {
+          "t": 117.18,
+          "text": "with"
+        },
+        {
+          "t": 117.32,
+          "text": "my"
+        },
+        {
+          "t": 117.48,
+          "text": "friends"
+        }
+      ]
+    },
+    {
+      "start": 118.0,
+      "end": 119.17,
+      "text": "But when I see your name poppin'",
+      "words": [
+        {
+          "t": 118.0,
+          "text": "But"
+        },
+        {
+          "t": 118.18,
+          "text": "when"
+        },
+        {
+          "t": 118.3,
+          "text": "I"
+        },
+        {
+          "t": 118.44,
+          "text": "see"
+        },
+        {
+          "t": 118.58,
+          "text": "your"
+        },
+        {
+          "t": 118.68,
+          "text": "name"
+        },
+        {
+          "t": 118.82,
+          "text": "poppin'"
+        }
+      ]
+    },
+    {
+      "start": 119.32,
+      "end": 120.44,
+      "text": "I know how this will end",
+      "words": [
+        {
+          "t": 119.32,
+          "text": "I"
+        },
+        {
+          "t": 119.4,
+          "text": "know"
+        },
+        {
+          "t": 119.52,
+          "text": "how"
+        },
+        {
+          "t": 119.66,
+          "text": "this"
+        },
+        {
+          "t": 119.86,
+          "text": "will"
+        },
+        {
+          "t": 120.06,
+          "text": "end"
+        }
+      ]
+    },
+    {
+      "start": 120.44,
+      "end": 121.32,
+      "text": "I fall again",
+      "words": [
+        {
+          "t": 120.44,
+          "text": "I"
+        },
+        {
+          "t": 120.64,
+          "text": "fall"
+        },
+        {
+          "t": 120.88,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 121.32,
+      "end": 123.06,
+      "text": "Come a little kicker, where to find me?",
+      "words": [
+        {
+          "t": 121.32,
+          "text": "Come"
+        },
+        {
+          "t": 121.76,
+          "text": "a"
+        },
+        {
+          "t": 121.78,
+          "text": "little"
+        },
+        {
+          "t": 121.92,
+          "text": "kicker,"
+        },
+        {
+          "t": 122.34,
+          "text": "where"
+        },
+        {
+          "t": 122.52,
+          "text": "to"
+        },
+        {
+          "t": 122.62,
+          "text": "find"
+        },
+        {
+          "t": 122.84,
+          "text": "me?"
+        }
+      ]
+    },
+    {
+      "start": 123.1,
+      "end": 124.68,
+      "text": "Under neon, you pull up to me",
+      "words": [
+        {
+          "t": 123.1,
+          "text": "Under"
+        },
+        {
+          "t": 123.44,
+          "text": "neon,"
+        },
+        {
+          "t": 123.86,
+          "text": "you"
+        },
+        {
+          "t": 124.0,
+          "text": "pull"
+        },
+        {
+          "t": 124.18,
+          "text": "up"
+        },
+        {
+          "t": 124.32,
+          "text": "to"
+        },
+        {
+          "t": 124.46,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 124.68,
+      "end": 126.38,
+      "text": "Hands sliding down my waist so slow",
+      "words": [
+        {
+          "t": 124.68,
+          "text": "Hands"
+        },
+        {
+          "t": 124.9,
+          "text": "sliding"
+        },
+        {
+          "t": 125.2,
+          "text": "down"
+        },
+        {
+          "t": 125.5,
+          "text": "my"
+        },
+        {
+          "t": 125.66,
+          "text": "waist"
+        },
+        {
+          "t": 125.92,
+          "text": "so"
+        },
+        {
+          "t": 126.12,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 126.38,
+      "end": 128.16,
+      "text": "Every lie that you tell just fades with the glow",
+      "words": [
+        {
+          "t": 126.38,
+          "text": "Every"
+        },
+        {
+          "t": 126.56,
+          "text": "lie"
+        },
+        {
+          "t": 126.82,
+          "text": "that"
+        },
+        {
+          "t": 126.94,
+          "text": "you"
+        },
+        {
+          "t": 127.06,
+          "text": "tell"
+        },
+        {
+          "t": 127.22,
+          "text": "just"
+        },
+        {
+          "t": 127.38,
+          "text": "fades"
+        },
+        {
+          "t": 127.66,
+          "text": "with"
+        },
+        {
+          "t": 127.82,
+          "text": "the"
+        },
+        {
+          "t": 127.9,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 128.16,
+      "end": 130.08,
+      "text": "All the reasons I still want you",
+      "words": [
+        {
+          "t": 128.16,
+          "text": "All"
+        },
+        {
+          "t": 128.62,
+          "text": "the"
+        },
+        {
+          "t": 128.9,
+          "text": "reasons"
+        },
+        {
+          "t": 129.24,
+          "text": "I"
+        },
+        {
+          "t": 129.5,
+          "text": "still"
+        },
+        {
+          "t": 129.7,
+          "text": "want"
+        },
+        {
+          "t": 129.94,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 130.08,
+      "end": 131.8,
+      "text": "That one night, man, I'll holler more",
+      "words": [
+        {
+          "t": 130.08,
+          "text": "That"
+        },
+        {
+          "t": 130.34,
+          "text": "one"
+        },
+        {
+          "t": 130.54,
+          "text": "night,"
+        },
+        {
+          "t": 130.84,
+          "text": "man,"
+        },
+        {
+          "t": 131.0,
+          "text": "I'll"
+        },
+        {
+          "t": 131.28,
+          "text": "holler"
+        },
+        {
+          "t": 131.54,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 131.8,
+      "end": 133.5,
+      "text": "Finger tracing down my brown skin",
+      "words": [
+        {
+          "t": 131.8,
+          "text": "Finger"
+        },
+        {
+          "t": 132.3,
+          "text": "tracing"
+        },
+        {
+          "t": 132.64,
+          "text": "down"
+        },
+        {
+          "t": 132.86,
+          "text": "my"
+        },
+        {
+          "t": 133.04,
+          "text": "brown"
+        },
+        {
+          "t": 133.3,
+          "text": "skin"
+        }
+      ]
+    },
+    {
+      "start": 133.5,
+      "end": 135.2,
+      "text": "I don't wanna listen to your voice come in",
+      "words": [
+        {
+          "t": 133.5,
+          "text": "I"
+        },
+        {
+          "t": 133.64,
+          "text": "don't"
+        },
+        {
+          "t": 133.86,
+          "text": "wanna"
+        },
+        {
+          "t": 133.92,
+          "text": "listen"
+        },
+        {
+          "t": 134.28,
+          "text": "to"
+        },
+        {
+          "t": 134.48,
+          "text": "your"
+        },
+        {
+          "t": 134.6,
+          "text": "voice"
+        },
+        {
+          "t": 134.78,
+          "text": "come"
+        },
+        {
+          "t": 134.96,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 135.2,
+      "end": 136.84,
+      "text": "Don't say you love me, I tell you",
+      "words": [
+        {
+          "t": 135.2,
+          "text": "Don't"
+        },
+        {
+          "t": 135.58,
+          "text": "say"
+        },
+        {
+          "t": 135.72,
+          "text": "you"
+        },
+        {
+          "t": 135.84,
+          "text": "love"
+        },
+        {
+          "t": 136.02,
+          "text": "me,"
+        },
+        {
+          "t": 136.2,
+          "text": "I"
+        },
+        {
+          "t": 136.26,
+          "text": "tell"
+        },
+        {
+          "t": 136.44,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 136.84,
+      "end": 138.42,
+      "text": "Tonight, let me be honest and true",
+      "words": [
+        {
+          "t": 136.84,
+          "text": "Tonight,"
+        },
+        {
+          "t": 137.28,
+          "text": "let"
+        },
+        {
+          "t": 137.36,
+          "text": "me"
+        },
+        {
+          "t": 137.48,
+          "text": "be"
+        },
+        {
+          "t": 137.62,
+          "text": "honest"
+        },
+        {
+          "t": 137.82,
+          "text": "and"
+        },
+        {
+          "t": 138.12,
+          "text": "true"
+        }
+      ]
+    },
+    {
+      "start": 138.42,
+      "end": 140.14,
+      "text": "I don't need forever with you",
+      "words": [
+        {
+          "t": 138.42,
+          "text": "I"
+        },
+        {
+          "t": 138.78,
+          "text": "don't"
+        },
+        {
+          "t": 139.02,
+          "text": "need"
+        },
+        {
+          "t": 139.06,
+          "text": "forever"
+        },
+        {
+          "t": 139.32,
+          "text": "with"
+        },
+        {
+          "t": 139.76,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 140.14,
+      "end": 142.26,
+      "text": "Just heart me right now, are you with me?",
+      "words": [
+        {
+          "t": 140.14,
+          "text": "Just"
+        },
+        {
+          "t": 140.44,
+          "text": "heart"
+        },
+        {
+          "t": 140.66,
+          "text": "me"
+        },
+        {
+          "t": 140.82,
+          "text": "right"
+        },
+        {
+          "t": 141.02,
+          "text": "now,"
+        },
+        {
+          "t": 141.3,
+          "text": "are"
+        },
+        {
+          "t": 141.52,
+          "text": "you"
+        },
+        {
+          "t": 141.92,
+          "text": "with"
+        },
+        {
+          "t": 142.16,
+          "text": "me?"
+        }
+      ]
+    },
+    {
+      "start": 142.58,
+      "end": 144.16,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 142.58,
+          "text": "You"
+        },
+        {
+          "t": 143.06,
+          "text": "got"
+        },
+        {
+          "t": 143.16,
+          "text": "me"
+        },
+        {
+          "t": 143.3,
+          "text": "going"
+        },
+        {
+          "t": 143.66,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 145.216,
+      "end": 147.52,
+      "text": "Still this love or hate, don't know why",
+      "words": [
+        {
+          "t": 145.216,
+          "text": "Still"
+        },
+        {
+          "t": 145.54,
+          "text": "this"
+        },
+        {
+          "t": 146.336,
+          "text": "love"
+        },
+        {
+          "t": 146.5,
+          "text": "or"
+        },
+        {
+          "t": 146.7,
+          "text": "hate,"
+        },
+        {
+          "t": 146.98,
+          "text": "don't"
+        },
+        {
+          "t": 147.16,
+          "text": "know"
+        },
+        {
+          "t": 147.36,
+          "text": "why"
+        }
+      ]
+    },
+    {
+      "start": 147.84,
+      "end": 149.84,
+      "text": "Heart is racing, can't stop it, baby",
+      "words": [
+        {
+          "t": 147.84,
+          "text": "Heart"
+        },
+        {
+          "t": 147.94,
+          "text": "is"
+        },
+        {
+          "t": 148.06,
+          "text": "racing,"
+        },
+        {
+          "t": 148.38,
+          "text": "can't"
+        },
+        {
+          "t": 148.74,
+          "text": "stop"
+        },
+        {
+          "t": 149.02,
+          "text": "it,"
+        },
+        {
+          "t": 149.54,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 150.46,
+      "end": 153.3,
+      "text": "One more call and I might just die",
+      "words": [
+        {
+          "t": 150.46,
+          "text": "One"
+        },
+        {
+          "t": 151.06,
+          "text": "more"
+        },
+        {
+          "t": 151.32,
+          "text": "call"
+        },
+        {
+          "t": 151.68,
+          "text": "and"
+        },
+        {
+          "t": 152.0,
+          "text": "I"
+        },
+        {
+          "t": 152.14,
+          "text": "might"
+        },
+        {
+          "t": 152.46,
+          "text": "just"
+        },
+        {
+          "t": 152.82,
+          "text": "die"
+        }
+      ]
+    },
+    {
+      "start": 153.36,
+      "end": 156.26,
+      "text": "Every night I fall and I fall for you",
+      "words": [
+        {
+          "t": 153.36,
+          "text": "Every"
+        },
+        {
+          "t": 154.06,
+          "text": "night"
+        },
+        {
+          "t": 154.48,
+          "text": "I"
+        },
+        {
+          "t": 154.66,
+          "text": "fall"
+        },
+        {
+          "t": 154.9,
+          "text": "and"
+        },
+        {
+          "t": 155.36,
+          "text": "I"
+        },
+        {
+          "t": 155.5,
+          "text": "fall"
+        },
+        {
+          "t": 155.78,
+          "text": "for"
+        },
+        {
+          "t": 156.1,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 156.26,
+      "end": 157.61,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 156.26,
+          "text": "You"
+        },
+        {
+          "t": 156.4,
+          "text": "got"
+        },
+        {
+          "t": 156.52,
+          "text": "me"
+        },
+        {
+          "t": 156.74,
+          "text": "going"
+        },
+        {
+          "t": 157.06,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 158.176,
+      "end": 160.68,
+      "text": "I'm like a ghost in a dance",
+      "words": [
+        {
+          "t": 158.176,
+          "text": "I'm"
+        },
+        {
+          "t": 158.5,
+          "text": "like"
+        },
+        {
+          "t": 158.72,
+          "text": "a"
+        },
+        {
+          "t": 158.94,
+          "text": "ghost"
+        },
+        {
+          "t": 159.6,
+          "text": "in"
+        },
+        {
+          "t": 160.24,
+          "text": "a"
+        },
+        {
+          "t": 160.34,
+          "text": "dance"
+        }
+      ]
+    },
+    {
+      "start": 160.72,
+      "end": 162.496,
+      "text": "I'm like a ghost in a dance",
+      "words": [
+        {
+          "t": 160.72,
+          "text": "I'm"
+        },
+        {
+          "t": 161.16,
+          "text": "like"
+        },
+        {
+          "t": 161.32,
+          "text": "a"
+        },
+        {
+          "t": 161.54,
+          "text": "ghost"
+        },
+        {
+          "t": 162.1,
+          "text": "in"
+        },
+        {
+          "t": 162.16,
+          "text": "a"
+        },
+        {
+          "t": 162.32,
+          "text": "dance"
+        }
+      ]
+    },
+    {
+      "start": 162.5,
+      "end": 163.44,
+      "text": "I'm like a ghost in a dance",
+      "words": [
+        {
+          "t": 162.5,
+          "text": "I'm"
+        },
+        {
+          "t": 162.78,
+          "text": "like"
+        },
+        {
+          "t": 162.78,
+          "text": "a"
+        },
+        {
+          "t": 162.78,
+          "text": "ghost"
+        },
+        {
+          "t": 162.816,
+          "text": "in"
+        },
+        {
+          "t": 163.34,
+          "text": "a"
+        },
+        {
+          "t": 163.34,
+          "text": "dance"
+        }
+      ]
+    },
+    {
+      "start": 163.52,
+      "end": 169.728,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 163.52,
+          "text": "You"
+        },
+        {
+          "t": 164.256,
+          "text": "got"
+        },
+        {
+          "t": 164.64,
+          "text": "me"
+        },
+        {
+          "t": 168.42,
+          "text": "going"
+        },
+        {
+          "t": 168.76,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 169.78,
+      "end": 170.44,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 169.78,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 170.44,
+      "end": 171.08,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 170.44,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 173.5,
+      "end": 173.728,
+      "text": "Crazy",
+      "words": [
+        {
+          "t": 173.5,
+          "text": "Crazy"
+        }
+      ]
+    },
+    {
+      "start": 175.7,
+      "end": 177.66,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 175.7,
+          "text": "You"
+        },
+        {
+          "t": 176.448,
+          "text": "got"
+        },
+        {
+          "t": 176.74,
+          "text": "me"
+        },
+        {
+          "t": 176.84,
+          "text": "going"
+        },
+        {
+          "t": 177.22,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 180.1,
+      "end": 182.74,
+      "text": "I don't gotta be looking up or gone",
+      "words": [
+        {
+          "t": 180.1,
+          "text": "I"
+        },
+        {
+          "t": 180.2,
+          "text": "don't"
+        },
+        {
+          "t": 180.56,
+          "text": "gotta"
+        },
+        {
+          "t": 180.8,
+          "text": "be"
+        },
+        {
+          "t": 181.38,
+          "text": "looking"
+        },
+        {
+          "t": 181.48,
+          "text": "up"
+        },
+        {
+          "t": 181.88,
+          "text": "or"
+        },
+        {
+          "t": 182.2,
+          "text": "gone"
+        }
+      ]
+    },
+    {
+      "start": 182.74,
+      "end": 184.448,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 182.74,
+          "text": "You"
+        },
+        {
+          "t": 183.3,
+          "text": "got"
+        },
+        {
+          "t": 183.4,
+          "text": "me"
+        },
+        {
+          "t": 183.84,
+          "text": "going"
+        },
+        {
+          "t": 183.96,
+          "text": "crazy"
+        }
+      ]
+    },
+    {
+      "start": 187.488,
+      "end": 188.92,
+      "text": "Brooklyn to Philippines,",
+      "words": [
+        {
+          "t": 187.488,
+          "text": "Brooklyn"
+        },
+        {
+          "t": 187.776,
+          "text": "to"
+        },
+        {
+          "t": 188.2,
+          "text": "Philippines,"
+        }
+      ]
+    },
+    {
+      "start": 189.6,
+      "end": 190.96,
+      "text": "still you",
+      "words": [
+        {
+          "t": 189.6,
+          "text": "still"
+        },
+        {
+          "t": 190.1,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 193.91,
+      "end": 196.288,
+      "text": "You got me going crazy",
+      "words": [
+        {
+          "t": 193.91,
+          "text": "You"
+        },
+        {
+          "t": 195.008,
+          "text": "got"
+        },
+        {
+          "t": 195.2,
+          "text": "me"
+        },
+        {
+          "t": 195.38,
+          "text": "going"
+        },
+        {
+          "t": 195.72,
+          "text": "crazy"
+        }
+      ]
+    }
+  ]
+}

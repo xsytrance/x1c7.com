@@ -1,0 +1,268 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "say-it-with-your-eyes",
+  "generatedAt": "2026-07-09T18:31:03.777Z",
+  "measured": {
+    "bpm": 123.05,
+    "duration": 192.08
+  },
+  "identity": {
+    "title": "Say It With Your Eyes",
+    "titleAlternates": [],
+    "genre": "Southern R&B",
+    "subGenres": [
+      "chopped & screwed",
+      "slowed trap"
+    ],
+    "mood": "sultry, intimate, hushed, hypnotic",
+    "styleSentence": "A slow-burning D# major track at 123 BPM featuring chopped and screwed vocals over a dusty Southern R&B beat with heavy sub-bass, atmospheric synths, and distant guitar textures that create an underground club vibe.",
+    "language": "English",
+    "energy": "low",
+    "vocalStyle": "breathy, repetitive, close-mic"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/say-it-with-your-eyes/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#080818",
+      "#181828",
+      "#080828",
+      "#081828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D#",
+      "mode": "major",
+      "confidence": 0.747
+    },
+    "boundaries": [
+      139.32,
+      143.41,
+      151.49,
+      159.47,
+      167.37,
+      173.69,
+      183.62,
+      186.97
+    ],
+    "brightness": 2393.5,
+    "dynamicsDb": 17.5
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Verse 1]\nYou [Verse 1]\nYou over over there\nthere\nII’’m m over over here\nhere\nKeep Keep it it on on low\nlow\nKeep Keep it it ununclear\nclear\nI I take take one one step\nstep\nYou You look look away\naway\nThen Then I I catch catch your your face\nface\nFor For one one clean clean frame\n\nframe\n[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across Across the the the room\nroom\nroom\nI I stay\nstay\nI stay\nAcross Across Across the the the room\nroom\nroom\nI I I stay\n\nstay\n\nstay\n\n[Verse 2]\nBlue [Verse 2]\nBlue in in your your glass\nglass\nIce Ice on on yoyour ur hand\nhand\nYou You move move like like you you know\nknow\nI I understand\nunderstand\nI I dondon’t ’t say say much\nmuch\nYou You dondon’t ’t need need much\nmuch\nOne One little little glance\nglance\nThen Then we we both both cut cut up\n\nup\n\n[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust once\nJust once\nLook Look my my way\nway\nJust Just once\nonce\nAAcross cross the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I stay\n\n[Bridge]\n\n[Half-time drop]\nSay [Half-time drop]\nSay it it with with styour your aeyes\ny\n\neyes\nSay Say it it with with your your eyeeyes\ns\nDonDon’’t t make make it it loud\nloud\nDon’t make it loud\nDonDon’’t t make make it it loud\n\nloud[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I staystay",
+    "lrc": "[Intro]\n[Verse 2]\n[00:38.16] Keep it on low, keep it on clear\n[00:42.06] I take one step,\n[00:44.46] you look away\n[00:45.92] Can I get your face for one clean frame?\n[Chorus]\n[00:50.86] Look my way,\n[00:52.24] just listen\n[00:54.49] Look my way,\n[00:56.24] just listen\n[00:58.34] Swim across\n[00:59.40] the room, I stay\n[01:01.88] Swim across the room,\n[01:04.32] I stay\n[01:21.42] Blue in your black, black\n[01:24.30] Ice on your hand\n[01:26.28] You move like you know\n[01:27.72] That I'm not your friend\n[01:28.16] No, I don't understand\n[01:29.60] I don't say much\n[01:31.83] You don't need much\n[01:33.76] One little pass\n[01:35.72] Then we both go\n[01:37.22] Look my way,\n[01:40.88] just once\n[01:41.72] Look my way,\n[01:44.90] just once\n[01:45.74] Swim across the room, I stay\n[01:49.50] Swim across the room, I stay\n[01:58.44] Blue in your black, black\n[Verse 2 (Repeat)]\n[02:04.56] Ice\n[02:06.28] on your hand\n[02:06.80] You move like you know\n[02:07.20] That I'm not your friend\n[02:10.15] Swim across the room, I stay\n[02:12.00] Blue\n[02:14.34] in your black, black\n[Bridge / Half-time drop intro]\n[02:25.28] Ice on your hand\n[Half-time drop]\n[02:38.34] Thank you.\n[Chorus (Final)]\n[03:10.88] Thank you.\n"
+  },
+  "analysis": {
+    "summary": "A sultry Southern R&B track describing a tense yet hypnotic moment where two people share an intimate connection through unspoken glances and subtle gestures within a dimly lit space.",
+    "overallMood": "sultry, intimate, hushed, hypnotic",
+    "themes": [
+      "Silent Communication",
+      "Unrequited Desire",
+      "Atmospheric Intimacy",
+      "Visual Obsession"
+    ],
+    "palette": [
+      "#050A14",
+      "#2D3B5E",
+      "#6C7F98",
+      "#E0EBF5"
+    ],
+    "sections": [
+      {
+        "sectionName": "Intro",
+        "emotion": "Anticipation and quiet tension setting the stage for a visual encounter.",
+        "intensity": 0.79,
+        "colorHintHex": "#2D3B5E",
+        "start": 38.16
+      },
+      {
+        "sectionName": "Verse 2",
+        "emotion": "A focused request to capture a fleeting moment of connection amidst distraction.",
+        "intensity": 0.6,
+        "colorHintHex": "#6C7F98",
+        "start": 38.16
+      },
+      {
+        "sectionName": "Chorus",
+        "emotion": "Hypnotic longing and the surreal sensation of moving through a dark room solely for visual contact.",
+        "intensity": 0.54,
+        "colorHintHex": "#E0EBF5",
+        "start": 50.86
+      },
+      {
+        "sectionName": "Verse 2 (Repeat)",
+        "emotion": "Reinforced obsession with the subject's cold elegance and knowing distance.",
+        "intensity": 0.22,
+        "colorHintHex": "#1A2332",
+        "start": 124.56
+      },
+      {
+        "sectionName": "Bridge / Half-time drop intro",
+        "emotion": "Sudden stillness that freezes the scene on a single striking detail.",
+        "intensity": 0.15,
+        "colorHintHex": "#4A6B8D",
+        "start": 145.28
+      },
+      {
+        "sectionName": "Half-time drop",
+        "emotion": "Gratitude mixed with finality after an intense emotional exchange.",
+        "intensity": 0.06,
+        "colorHintHex": "#1C253A",
+        "start": 158.34
+      },
+      {
+        "sectionName": "Chorus (Final)",
+        "emotion": "Lingering echo of the visual connection fading into a quiet afterglow.",
+        "intensity": 0.18,
+        "colorHintHex": "#8FA1B3",
+        "start": 190.88
+      }
+    ],
+    "keywords": [
+      {
+        "word": "swim",
+        "emotion": "Fluid desperation and surreal movement against a dark background.",
+        "imageryPrompt": "A human figure appearing to swim slowly through thick, viscous air inside a dimly lit room with floating dust motes."
+      },
+      {
+        "word": "black",
+        "emotion": "Intense contrast between deep shadows and cool skin tones.",
+        "imageryPrompt": "Close-up of pale blue-toned lips set against the silhouette of a person wearing all-black clothing in low light."
+      },
+      {
+        "word": "hand",
+        "emotion": "Cold elegance, detachment, and sharp visual texture.",
+        "imageryPrompt": "A high-contrast shot of a manicured finger pressing against the lens with frost forming around it."
+      },
+      {
+        "word": "look",
+        "emotion": "Direct gaze that pierces through darkness demanding attention.",
+        "imageryPrompt": "Two pairs of eyes meeting across an empty space in a dark room, illuminated only by the reflection from each other's pupils."
+      },
+      {
+        "word": "stay",
+        "emotion": "Stagnant tension and refusal to move despite internal desire.",
+        "imageryPrompt": "A shadow cast on a wall that remains perfectly still while ripples of light pass around it."
+      },
+      {
+        "word": "frame",
+        "emotion": "The desire to freeze time into a perfect, clean image.",
+        "imageryPrompt": "A camera viewfinder overlay capturing the exact geometry of two faces in profile within a dark interior."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 38,
+      "mid": 30,
+      "close": 15
+    },
+    "sectionEnergy": [
+      {
+        "start": 38.16,
+        "intensity": 0.79
+      },
+      {
+        "start": 38.16,
+        "intensity": 0.6
+      },
+      {
+        "start": 50.86,
+        "intensity": 0.54
+      },
+      {
+        "start": 124.56,
+        "intensity": 0.22
+      },
+      {
+        "start": 145.28,
+        "intensity": 0.15
+      },
+      {
+        "start": 158.34,
+        "intensity": 0.06
+      },
+      {
+        "start": 190.88,
+        "intensity": 0.18
+      }
+    ],
+    "vocalPresence": [
+      {
+        "presence": 79
+      },
+      {
+        "presence": 74
+      },
+      {
+        "presence": 50
+      },
+      {
+        "presence": 0
+      },
+      {
+        "presence": 0
+      },
+      {
+        "presence": 0
+      },
+      {
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          4.14
+        ],
+        [
+          33.66,
+          35.9
+        ],
+        [
+          49.1,
+          51.82
+        ],
+        [
+          55.02,
+          55.82
+        ],
+        [
+          85.02,
+          86.54
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "say-it-with-your-eyes-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

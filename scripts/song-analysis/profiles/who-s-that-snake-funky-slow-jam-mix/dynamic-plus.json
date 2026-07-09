@@ -1,0 +1,31 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 30.5,
+   "end": 48.2,
+   "reactor": "graffiti",
+   "why": "Verse 1 hits the 'crumbling history' and narrative storytelling vibe; graffiti fits the du"
+  },
+  {
+   "start": 80.5,
+   "end": 94.3,
+   "reactor": "tarot",
+   "why": "Verse 2 brings angry exposition on 'clones' and identity; tarot captures the mystery of fa"
+  },
+  {
+   "start": 130.5,
+   "end": 146.8,
+   "reactor": "ouija",
+   "why": "The Bridge section is chaos of 'fragmented memories'; ouija evokes the spooky, haunted fee"
+  }
+ ],
+ "words": {
+  "snake": "shatter",
+  "facts": "glitch",
+  "clone": "freeze",
+  "tree": "bloom",
+  "mask": "redact",
+  "clones": "bleed"
+ }
+}

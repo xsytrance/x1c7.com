@@ -1,0 +1,73 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 8.6,
+      "end": 17.96,
+      "text": "Thank you very much.",
+      "words": [
+        {
+          "t": 8.6,
+          "text": "Thank"
+        },
+        {
+          "t": 10.0,
+          "text": "you"
+        },
+        {
+          "t": 11.4,
+          "text": "very"
+        },
+        {
+          "t": 17.32,
+          "text": "much."
+        }
+      ]
+    },
+    {
+      "start": 37.06,
+      "end": 39.86,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 37.06,
+          "text": "Thank"
+        },
+        {
+          "t": 38.46,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 70.52,
+      "end": 71.14,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 70.52,
+          "text": "Thank"
+        },
+        {
+          "t": 70.96,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 93.54,
+      "end": 94.98,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 93.54,
+          "text": "Thank"
+        },
+        {
+          "t": 94.94,
+          "text": "you."
+        }
+      ]
+    }
+  ]
+}

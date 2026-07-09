@@ -1,0 +1,339 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "i-m-that-somebody",
+  "generatedAt": "2026-07-09T18:11:32.697Z",
+  "measured": {
+    "bpm": 95.7,
+    "duration": 261.36
+  },
+  "identity": {
+    "styleSentence": "A glossy late-90s club track at 96 BPM featuring sparse syncopated drums with off-grid percussion clicks, a rubbery bassline, and bright chiptune/FM synth riffs that evoke classic blue-sky video game music, all anchored by smooth confident male vocals utilizing intimate spoken replies to create a stop-start rhythmic pocket.",
+    "energy": "medium",
+    "vocalStyle": "Smooth male lead with playful confidence mixed with intimate whispered ad-libs and staccato spoken interjections between sung phrases",
+    "language": "English",
+    "title": "I'm That Somebody",
+    "titleAlternates": [],
+    "genre": "R&B",
+    "subGenres": [
+      "Hip-Hop Soul",
+      "Nu-Disco",
+      "Y2K Pop"
+    ],
+    "mood": "playful, confident, flirty, futuristic"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/i-m-that-somebody/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#281808",
+      "#181808",
+      "#280808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.714
+    },
+    "boundaries": [
+      27.77,
+      36.5,
+      118.7,
+      156.41,
+      164.4,
+      176.94,
+      184.18,
+      259.04
+    ],
+    "brightness": 3080.5,
+    "dynamicsDb": 11.9
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - Whispered, playful]\nYeah\nYou asked me a question\nI already had the answer\nListen\n\n[Verse 1 - Smooth Male Vocal]\nYou been moving cautious\nLike the room got eyes\nLike the walls might talk\nLike the night got spies\n\nI see how you look\nWhen the bassline drops\nHalf a smile on your face\nThen you tell me stop\n\nYou got secrets in your rhythm\nLittle warnings in your tone\nBut I’m not here to run it\nI’m here to bring it home\n\n[Pre-Chorus - Sung then spoken]\nIiii wooon’t let thiiis shooow\n[Spoken] Won’t tell a soul, not anybody\n\nIiii knooow how thiiis goooes\n[Spoken] Keep it locked, keep it quiet, nobody\n\nIf you let me close\n[Spoken] I won’t make it public, no\n\nIf you let me know\n[Spoken] I won’t tell nobody\nI’m talking nobody\n\n[Hook - Catchy, same sung/spoken pattern]\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\n[Post-Hook - Vocal chops, playful]\nThat somebody\nThat somebody\nI’ll be that somebody\nNobody, nobody\nI won’t tell nobody\n\n[Verse 2 - Flirty, confident]\nYou asked if I’m steady\nGirl, you know I don’t fold\nI don’t move reckless\nI don’t speak what I’m told\n\nYou can test my patience\nYou can check my pride\nI’ll still keep your name\nOn the safer side\n\nYou don’t need a rumor\nYou don’t need a scene\nYou need somebody solid\nWhen the lights go green\n\nAnd if the world gets loud\nI’ll turn the noise down low\nPut your trust in my hands\nAnd I won’t let it go\n\n[Pre-Chorus 2 - Direct response, sung then spoken]\nYouuu knooow I’m respooonsible\n[Spoken] You ain’t gotta watch your back when I’m beside you\n\nYouuu knooow I’m respooonsible\n[Spoken] I don’t need the spotlight just to hide you\n\nYou’re not just anybody\n[Spoken] That’s why I move different when I’m around you\n\nYou’re not just anybody\n[Spoken] I saw that from the first time I found you\n\n[Hook]\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\n[Bridge - Lower, more intimate]\nSometimes you’re sweet, sweet\nSometimes you’re trouble, trouble\nSometimes you pull me close\nThen act like I said too much though\n\nI like it when you’re goody, goody\nI love it when you’re naughty, naughty\nEither way, you got me, got me\nI’m not leaving this party, party\n\n[Breakdown - Half sung, half spoken, highlight section]\nIiii wooon’t let thiiis gooo\n[Spoken] Won’t tell nobody, I’m talking nobody\n\nIf you let me know\n[Spoken] I won’t tell nobody, I’m talking nobody\n\nIf you let me close\n[Spoken] I’ll keep it between you and me\n\nIf you let this grow\n[Spoken] I’ll be exactly who I said I’d be\n\nIiii wooon’t let thiiis gooo\n[Spoken] Won’t tell nobody, I’m talking nobody\n\nIf you let me know\n[Spoken] I won’t tell nobody, I’m talking nobody\n\n[Final Hook - Bigger, more melodic]\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\nYou al-rea-dy know\nYou said you need somebody\nI said I’ll be that somebody\n\nSay less, don’t say no\nYou don’t gotta need somebody\nI’m right here, I’m that somebody\n\n[Outro - Whispered over quirky beat]\nNobody\nNobody\nI won’t tell nobody\n\nYou already know\nI’ll be that somebody",
+    "lrc": "[Intro]\n[00:06.14] You asking the question,\n[00:08.46] I already had the answer,\n[00:10.26] listen,\n[Verse 1]\n[00:10.86] listen\n[00:11.46] You been moving cautious like the boom got eyes\n[00:14.14] Like the balls might talk,\n[00:15.46] like the night got spies\n[00:16.52] I see how you look when the baseline drops\n[00:19.04] Half a smile on your face, then you tell me stop\n[00:21.46] You got secrets in your rhythm,\n[00:23.54] little warnings in your tone\n[00:24.70] But I'm not here to run it,\n[00:26.08] I'm here to bring it home\n[Pre-Chorus]\n[00:27.30] I won't let this show\n[00:30.36] Won't tell a soul, not anybody\n[00:32.28] I know how this go\n[00:35.43] Keep it locked, keep it quiet, nobody\n[00:37.66] If you let me lose\n[00:39.04] I won't make it public, no\n[00:40.91] If you let me know\n[00:42.72] I won't tell nobody\n[00:43.88] I'm talking nobody\n[Hook]\n[00:45.36] You already know\n[00:47.64] You said you need somebody\n[00:49.85] I said I'd be that somebody\n[00:52.46] Say less, don't say no\n[00:54.44] You don't gotta need somebody\n[00:56.30] I'm right here\n[00:58.28] I'm that somebody\n[01:00.28] You already know\n[01:02.56] You said you need somebody\n[01:04.66] I said I'd be that somebody\n[01:07.36] Say less, don't say no\n[01:09.36] You don't gotta need somebody\n[01:11.12] I'm right here\n[01:13.62] I'm that somebody\n[01:15.92] That somebody\n[01:20.54] I'll be that somebody\n[01:23.10] Nobody, nobody\n[01:24.54] I won't tell nobody\n[01:27.14] You already know\n[01:27.30] Asked if I'm steady, girl, you know I don't fold\n[01:29.34] I don't move, but I don't speak what I'm told\n[01:31.88] You can test my patience, you can check my pad\n[01:34.28] I'll still keep your name on the safer side\n[01:36.83] You don't need a rumor, you don't need a scene\n[01:39.46] You need somebody solid when the lights go green\n[01:41.72] And if the world gets loud,\n[01:43.04] I'll turn the noise down low\n[01:44.16] Put your trust in my hands and I won't let it grow\n[01:46.62] You know I'm responsible\n[01:50.31] You ain't gotta watch your back when I'm beside you\n[01:52.62] You know I'm responsible\n[01:55.16] I don't need the spotlight just to hide it from you\n[01:57.28] You're not just anybody\n[Post-Hook]\n[01:58.91] That's why I move different when I'm around you\n[02:02.92] You're not just anybody\n[02:03.70] I saw that from the first time I found you\n[02:06.54] You said you need somebody\n[Verse 2]\n[02:09.41] I said I'd be that somebody\n[02:12.04] Say less, don't say no\n[02:14.04] You don't gotta need somebody\n[02:15.82] I'm right here\n[02:18.30] I'm that somebody\n[02:20.32] You already know\n[02:22.12] You said you need somebody\n[02:24.33] I said I'd be that somebody\n[02:26.93] Say less, don't say no\n[02:27.28] You don't gotta need somebody\n[02:30.76] I'm right here\n[02:32.90] I'm that somebody\n[02:35.64] Sometimes you're sweet\n[Pre-Chorus 2]\n[02:37.10] Sometimes you're trouble\n[02:40.36] Sometimes you pull me\n[02:42.42] Then act like I said too much\n[02:44.64] Though\n[02:45.12] I like it when you're goody\n[02:47.89] I love it when you're naughty\n[02:50.32] Either way you got me\n[02:52.86] I'm not leaving this party\n[02:54.56] Bye\n[02:57.48] I won't let this go\n[02:59.62] Won't tell nobody, I'm talking nobody\n[03:01.82] I know how this go\n[Hook]\n[03:04.60] I won't tell nobody, I'm talking nobody\n[03:07.08] If you let me close\n[03:08.36] I'll keep it between you and me\n[03:10.38] If you let this grow\n[03:12.02] I'll be exactly who I said I'd be\n[03:17.30] I won't let this go\n[03:19.54] Won't tell nobody, I'm talking nobody\n[03:21.74] If you let me know\n[03:23.14] I won't tell nobody, I'm talking nobody\n[03:25.80] That they know, know, know, know, know\n[03:28.10] You already know\n[03:29.28] You said you need somebody\n[03:31.52] I said I'll be that somebody\n[03:34.12] Say less, don't say no\n[03:36.08] You don't gotta need somebody\n[03:37.90] I'm right here\n[03:39.58] I'm that somebody\n[03:42.34] You already know\n[03:44.22] You said you need somebody\n[03:46.44] I said I'll be that somebody\n[03:49.02] Say less, don't say no\n[Bridge]\n[03:50.00] You don't gotta need somebody\n[03:52.78] I'm right here\n[03:55.71] I'm right here\n[03:55.78] I'm that somebody\n[03:56.60] That somebody\n[03:59.10] That somebody\n[04:06.22] I'll be, I'll be, I'll be that somebody\n[04:11.18] You\n[04:12.71] already know\n[04:15.00] I'll be that somebody\n"
+  },
+  "analysis": {
+    "summary": "A confident R&B track where a playful protagonist asserts their reliability and stability in a relationship, rejecting neediness while embracing the thrill of the moment.",
+    "overallMood": "Playful Confidence",
+    "themes": [
+      "Self-Assurance",
+      "Romantic Stability",
+      "Futuristic Nostalgia",
+      "Secretive Intimacy"
+    ],
+    "palette": [
+      "#FF4D8C",
+      "#2E3B51",
+      "#00A896",
+      "#FFE700"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Playful Mystery",
+        "intensity": 0.76,
+        "colorHint": "#ff4d8c",
+        "start": 6.14
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Observant Caution",
+        "intensity": 0.9,
+        "colorHint": "#2e3b51",
+        "start": 10.86
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Protective Confidence",
+        "intensity": 0.89,
+        "colorHint": "#ffe700",
+        "start": 27.3
+      },
+      {
+        "name": "Hook",
+        "emotion": "Unwavering Assurance",
+        "intensity": 0.92,
+        "colorHint": "#ff4d8c",
+        "start": 45.36
+      },
+      {
+        "name": "Post-Hook",
+        "emotion": "Admiring Devotion",
+        "intensity": 0.71,
+        "colorHint": "#00a896",
+        "start": 118.91
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Flirty Duality",
+        "intensity": 0.65,
+        "colorHint": "#ff4d8c",
+        "start": 129.41
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Playful Rebellion",
+        "intensity": 0.32,
+        "colorHint": "#ffe700",
+        "start": 157.1
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Devoted Commitment",
+        "intensity": 0.2,
+        "colorHint": "#2e3b51",
+        "start": 230
+      }
+    ],
+    "keywords": [
+      {
+        "word": "cautious",
+        "emotion": "Suspicious Playfulness",
+        "imageryPrompt": "A neon-lit city street at night where shadows seem to have eyes, reflecting off wet pavement under flickering blue and magenta lights."
+      },
+      {
+        "word": "steady",
+        "emotion": "Rock-Solid Reliability",
+        "imageryPrompt": "A massive glowing pillar of light standing firm against a chaotic storm of digital raindrops in a futuristic plaza."
+      },
+      {
+        "word": "secretly",
+        "emotion": "Hidden Intimacy",
+        "imageryPrompt": "Two silhouettes sharing a quiet moment behind frosted glass, with soft pink light leaking through cracks to reveal intimate gestures inside."
+      },
+      {
+        "word": "solid",
+        "emotion": "Unbreakable Strength",
+        "imageryPrompt": "A translucent crystal structure forming the shape of a heart that shimmers brightly without cracking despite heavy impact from surrounding debris."
+      },
+      {
+        "word": "responsible",
+        "emotion": "Guardian Duty",
+        "imageryPrompt": "A futuristic knight made of holographic armor standing protectively in front of a glowing portal, scanning the environment with calm focus."
+      },
+      {
+        "word": "naughty",
+        "emotion": "Spicy Curiosity",
+        "imageryPrompt": "Glitching pixel art sprites dancing playfully around each other on a checkerboard floor that shifts colors rapidly between red and purple."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 42,
+      "mid": 31,
+      "close": 14
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 6.14,
+        "intensity": 0.76
+      },
+      {
+        "name": "Verse 1",
+        "start": 10.86,
+        "intensity": 0.9
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 27.3,
+        "intensity": 0.89
+      },
+      {
+        "name": "Hook",
+        "start": 45.36,
+        "intensity": 0.92
+      },
+      {
+        "name": "Post-Hook",
+        "start": 118.91,
+        "intensity": 0.71
+      },
+      {
+        "name": "Verse 2",
+        "start": 129.41,
+        "intensity": 0.65
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "start": 157.1,
+        "intensity": 0.32
+      },
+      {
+        "name": "Bridge",
+        "start": 230,
+        "intensity": 0.2
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 50
+      },
+      {
+        "name": "Verse 1",
+        "presence": 83
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 88
+      },
+      {
+        "name": "Hook",
+        "presence": 84
+      },
+      {
+        "name": "Post-Hook",
+        "presence": 82
+      },
+      {
+        "name": "Verse 2",
+        "presence": 86
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "presence": 9
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          27.98,
+          31.66
+        ],
+        [
+          32.94,
+          36.06
+        ],
+        [
+          46.62,
+          47.5
+        ],
+        [
+          61.5,
+          62.46
+        ],
+        [
+          76.46,
+          77.34
+        ],
+        [
+          86.38,
+          87.34
+        ],
+        [
+          87.66,
+          89.18
+        ],
+        [
+          98.78,
+          99.74
+        ],
+        [
+          109.26,
+          110.3
+        ],
+        [
+          126.14,
+          127.1
+        ],
+        [
+          141.1,
+          141.98
+        ],
+        [
+          159.1,
+          160.06
+        ],
+        [
+          160.3,
+          161.26
+        ],
+        [
+          177.5,
+          180.86
+        ],
+        [
+          182.22,
+          185.82
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "i-m-that-somebody-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

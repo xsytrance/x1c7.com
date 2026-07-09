@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 45,
+   "end": 62,
+   "reactor": "orbit",
+   "why": "The bridge section offers a fragile moment of hope and isolation; 'orbit' captures the fee"
+  },
+  {
+   "start": 120,
+   "end": 145,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "DUSTY BREAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 207,
+   "end": 232,
+   "stemSpot": {
+    "solo": [
+     "bass"
+    ],
+    "label": "SUBMERSED PULSE"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "breathe": "pulse"
+ }
+}

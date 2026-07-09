@@ -1,0 +1,30 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 70,
+   "end": 82,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "DRUMS & BASS ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 128,
+   "end": 146,
+   "reactor": "fireworks",
+   "why": "Matches the 'Drop/Build-Up' intensity and the lyrics about burning ('Till we burn') with a"
+  }
+ ],
+ "words": {
+  "crazy": "glitch",
+  "die": "shatter",
+  "falling": "dissolve",
+  "poison": "bleed",
+  "fade": "redact",
+  "burn": "slam"
+ }
+}

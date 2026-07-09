@@ -1,0 +1,106 @@
+{
+  "analysis": {
+    "summary": "This driving D major dance-pop anthem explores music as a powerful life-saving substance that transforms pain into euphoria and unites strangers into one soul through rhythm.",
+    "overallMood": "Euphoric, Uplifting, Intense",
+    "themes": [
+      "Catharsis",
+      "Addiction to Rhythm",
+      "Unity in Sound",
+      "Transformation of Pain",
+      "Escapism",
+      "Vitality"
+    ],
+    "palette": [
+      "#FF4D00",
+      "#2E86DE",
+      "#F5A623",
+      "#FFFFFF"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and low-volume intimacy",
+        "intensity": 0.12,
+        "colorHint": "#1a1a2e",
+        "start": 0.7
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Growing physical sensation of the bassline",
+        "intensity": 0.81,
+        "colorHint": "#533b7d",
+        "start": 35.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Massive release and emotional fire",
+        "intensity": 0.94,
+        "colorHint": "#e94560",
+        "start": 60.4
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Clarity and spiritual awakening",
+        "intensity": 0.62,
+        "colorHint": "#0f3d3e",
+        "start": 90
+      },
+      {
+        "name": "Verse 1 (Repeat/Build)",
+        "emotion": "Escalating tension and urgency",
+        "intensity": 0.62,
+        "colorHint": "#ff6b9d",
+        "start": 102.53
+      },
+      {
+        "name": "Chorus (Full)",
+        "emotion": "Total euphoria and chaotic joy",
+        "intensity": 0.98,
+        "colorHint": "#fd7e14",
+        "start": 103.64
+      },
+      {
+        "name": "Drop",
+        "emotion": "Explosive rhythm and collective trance",
+        "intensity": 1,
+        "colorHint": "#ffffff",
+        "start": 175.81
+      }
+    ],
+    "keywords": [
+      {
+        "word": "drug",
+        "emotion": "Obsessive need for connection",
+        "imageryPrompt": "A glowing neon pill dissolving into a river of golden light that flows upward, representing addiction to positive energy."
+      },
+      {
+        "word": "fire",
+        "emotion": "Intense passion and heat",
+        "imageryPrompt": "Blue and purple flames dancing in the wind without burning anything, illuminating faces with warmth rather than destruction."
+      },
+      {
+        "word": "pain",
+        "emotion": "Raw vulnerability turned positive",
+        "imageryPrompt": "A dark gray stone cracking open to reveal a bright yellow flower growing from the center of the fracture."
+      },
+      {
+        "word": "alive",
+        "emotion": "Rushing vitality and heartbeat",
+        "imageryPrompt": "Human silhouettes with visible golden veins pulsing against a deep indigo background, radiating light outward."
+      },
+      {
+        "word": "soul",
+        "emotion": "Deep spiritual unity",
+        "imageryPrompt": "A swirling galaxy of connected human hands merging into one single luminous sphere in the center of space."
+      },
+      {
+        "word": "gold",
+        "emotion": "Treasured transformation",
+        "imageryPrompt": "Silent dust turning instantly into shimmering metallic flakes that float upwards, catching the light from below."
+      }
+    ]
+  },
+  "styleHint": "A driving D major dance-pop track at 129 bpm featuring a rolling bassline, punchy drums, and an anthemic vocal delivery that builds from intimate verses to a massive, euphoric chorus.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:50:57.890Z"
+}

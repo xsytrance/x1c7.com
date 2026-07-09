@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "summary": "This track is a hypnotic exploration of late-night introspection and self-discovery, utilizing chopped vocals and slowed tempos to create a woozy atmosphere where the listener confronts their inner thoughts in isolation.",
+    "overallMood": "hypnotic",
+    "themes": [
+      "Introspection",
+      "Detachment",
+      "Nostalgia",
+      "Stagnation"
+    ],
+    "palette": [
+      "#1A0B2E",
+      "#483D59",
+      "#6F4C74",
+      "#FFCCCB"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "welcoming yet distant",
+        "intensity": 0.56,
+        "colorHint": "#1a0b2e",
+        "start": 10.96
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "melancholic reflection",
+        "intensity": 0.85,
+        "colorHint": "#483d59",
+        "start": 43.8
+      },
+      {
+        "name": "Chorus",
+        "emotion": "trance-like acceptance",
+        "intensity": 0.7,
+        "colorHint": "#6f4c74",
+        "start": 43.8
+      },
+      {
+        "name": "Bridge",
+        "emotion": "fragile hope",
+        "intensity": 0.19,
+        "colorHint": "#ffcccb",
+        "start": 150
+      },
+      {
+        "name": "Drop",
+        "emotion": "submerged bass weight",
+        "intensity": 0.3,
+        "colorHint": "#2e1a3f",
+        "start": 207.18
+      },
+      {
+        "name": "Outro",
+        "emotion": "fading realization",
+        "intensity": 0.09,
+        "colorHint": "#5c4b68",
+        "start": 207.18
+      }
+    ],
+    "keywords": [
+      {
+        "word": "hypnotic",
+        "emotion": "mesmerized",
+        "imageryPrompt": "A swirling vortex of dim purple smoke and neon streetlights, blurring into a dreamlike state where time stands still."
+      },
+      {
+        "word": "woozy",
+        "emotion": "dizzying",
+        "imageryPrompt": "Wobbly camera perspective inside a parked car at night, heat haze distorting the view of distant city lights and rain-slicked pavement."
+      },
+      {
+        "word": "detuned",
+        "emotion": "dissonant nostalgia",
+        "imageryPrompt": "An old cassette tape unraveling in slow motion against a backdrop of grainy 90s suburban decay, colors slightly off and muted."
+      },
+      {
+        "word": "chopped",
+        "emotion": "fragmented reality",
+        "imageryPrompt": "A collage of shattered glass reflections showing disjointed scenes of partying alone in a dark room, stitched together with rough edges."
+      },
+      {
+        "word": "hazy",
+        "emotion": "obscured clarity",
+        "imageryPrompt": "Thick fog rolling over abandoned industrial warehouses, silhouettes barely visible through the murk of artificial yellow streetlamps."
+      },
+      {
+        "word": "syrupy",
+        "emotion": "visceral slow motion",
+        "imageryPrompt": "Golden viscous liquid dripping slowly from a cracked faucet into a puddle, reflecting distorted images of the sky above."
+      }
+    ]
+  },
+  "styleHint": "Chopped and screwed dirty south reinterpretation with dramatically slowed-down tempo and heavy, trunk-rattling sub-bass. Syrupy, detuned synths and pitched-down vocal chops glide over spacious, swung 808 drums, booming kicks, and razor-sharp hi-hats. Stuttered, chopped vocal fragments and tape-stop effects create a hypnotic, woozy feel, while murky pads and distant analog leads drift in the background. Deep stereo imaging, extended low-end sustain, and echo-drenched transitions emphasize late-night car-cruise energy and thick, hazy southern club atmosphere. make_instrumental",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:23:06.691Z"
+}

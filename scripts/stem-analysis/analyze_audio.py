@@ -57,8 +57,10 @@ def boundaries(y, sr=SR, k=9):
 
 def demucs_split(audio, wd):
     """htdemucs 4-stem -> {lead,drums,bass,other} wav paths, or None."""
+    # demucs lives in the whisper venv (torch), not this librosa venv.
+    demucs_py = os.environ.get("DEMUCS_PY", os.path.expanduser("~/whisper-venv/bin/python"))
     try:
-        subprocess.run([sys.executable, "-m", "demucs", "-n", "htdemucs",
+        subprocess.run([demucs_py, "-m", "demucs", "-n", "htdemucs",
                         "-o", wd, audio], check=True,
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         stem = os.path.splitext(os.path.basename(audio))[0]
@@ -116,6 +118,7 @@ def main():
         snares = onsets(drums, fmin=1400, fmax=5000, delta=0.10)
         hats = onsets(drums, fmin=6000, delta=0.05, wait=1)
         tempo, beat_f = librosa.beat.beat_track(y=drums, sr=SR)
+        tempo = float(np.atleast_1d(tempo)[0])  # newer librosa returns a 1-elem array
         beats = [round(float(t), 3) for t in librosa.frames_to_time(beat_f, sr=SR)]
         log(f"  kicks {len(kicks)}, snares {len(snares)}, bpm {float(tempo):.1f}")
 

@@ -1,0 +1,120 @@
+{
+  "analysis": {
+    "summary": "The song explores the internalization of paranoia and self-sabotage, where a dark inner voice acts as a 'paper cut' that wounds the narrator from within while manipulating their perception of reality.",
+    "overallMood": "Paranoid",
+    "themes": [
+      "Internalized Paranoia",
+      "Self-Sabotage",
+      "Shadow Self Projection",
+      "Mental Distortion",
+      "Industrial Anxiety",
+      "Psychological Warfare"
+    ],
+    "palette": [
+      "#1a1a2e",
+      "#c0392b",
+      "#f4d03f",
+      "#7f8c8d"
+    ],
+    "sections": [
+      {
+        "sectionName": "Intro",
+        "emotion": "Eerie Whispering",
+        "intensity": 0.88,
+        "colorHintHex": "#1a1a2e",
+        "start": 2.44
+      },
+      {
+        "sectionName": "Verse 1",
+        "emotion": "Cynical Confession",
+        "intensity": 0.89,
+        "colorHintHex": "#c0392b",
+        "start": 30.7
+      },
+      {
+        "sectionName": "Pre-Chorus",
+        "emotion": "Building Tension",
+        "intensity": 0.69,
+        "colorHintHex": "#f4d03f",
+        "start": 109.95
+      },
+      {
+        "sectionName": "Chorus",
+        "emotion": "Explosive Aggression",
+        "intensity": 0.96,
+        "colorHintHex": "#e74c3c",
+        "start": 119
+      },
+      {
+        "sectionName": "Post-Chorus",
+        "emotion": "Ominous Stalking",
+        "intensity": 0.9,
+        "colorHintHex": "#2d3b4f",
+        "start": 140.48
+      },
+      {
+        "sectionName": "Verse 2",
+        "emotion": "Chaotic Looping",
+        "intensity": 0.47,
+        "colorHintHex": "#7f8c8d",
+        "start": 147.66
+      },
+      {
+        "sectionName": "Pre-Chorus",
+        "emotion": "Frantic Denial",
+        "intensity": 0.26,
+        "colorHintHex": "#e67e22",
+        "start": 228.02
+      },
+      {
+        "sectionName": "Chorus",
+        "emotion": "Maximal Distortion",
+        "intensity": 0.3,
+        "colorHintHex": "#c0392b",
+        "start": 236.55
+      },
+      {
+        "sectionName": "Bridge/Outro Part A",
+        "emotion": "Final Realization",
+        "intensity": 0.22,
+        "colorHintHex": "#1a1a2e",
+        "start": 297.1
+      }
+    ],
+    "keywords": [
+      {
+        "word": "paranoid",
+        "emotion": "Fearful Vigilance",
+        "imageryPrompt": "A shadowy figure with glowing red eyes peering through a cracked window at night, surrounded by flickering fluorescent lights and static noise."
+      },
+      {
+        "word": "cut",
+        "emotion": "Sharp Pain",
+        "imageryPrompt": "Close up of a jagged paper cut on pale skin with bright red blood seeping into dark grime, sharp focus on the wound edges."
+      },
+      {
+        "word": "static",
+        "emotion": "Digital Noise",
+        "imageryPrompt": "Analog television snowstorm blending with swirling dust particles and glitching digital artifacts in a dimly lit room."
+      },
+      {
+        "word": "shadow",
+        "emotion": "Oppressive Presence",
+        "imageryPrompt": "A distorted, elongated silhouette stretching across a concrete floor, seemingly detaching from the wall to loom over the subject."
+      },
+      {
+        "word": "voice",
+        "emotion": "Internal Conflict",
+        "imageryPrompt": "Sound waves visualized as jagged black tendrils wrapping around a human throat and ears, emitting sparks of electricity."
+      },
+      {
+        "word": "mirror",
+        "emotion": "Distorted Reflection",
+        "imageryPrompt": "A cracked vanity mirror reflecting not the person's face but a menacing stranger with sharp teeth standing in their place."
+      }
+    ]
+  },
+  "styleHint": "Modern rap-rock / nu-metal response track at 100 BPM, same mid-tempo bounce and nervous momentum as early-2000s rap-rock, but with modern industrial hip-hop production. Anxious male rap verses, explosive emotional male rock chorus, tense inner-voice whispers, call-and-response between singer and the voice inside his head. Heavy live drums, tight kick/snare groove, distorted guitar stabs, low tuned power chords, sub-bass pressure, aggressive turntable scratches, DJ cuts, vinyl backspins, chopped-and-screwed vocal fragments, glitch edits, pitch drops, tape stops, reverse cymbals, stuttered words, broken-radio effects. Dark paranoid atmosphere, cybernetic tension, paper-cut metaphor, voice mocking the singer, singer fighting back and remixing the voice. Big final chorus, chaotic scratches, no profanity.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:25:58.912Z"
+}

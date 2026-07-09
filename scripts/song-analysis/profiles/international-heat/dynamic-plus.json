@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 24,
+   "end": 34,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "THE HEAT RISES"
+   },
+   "why": "Drum-cut window captures the hypnotic low-end groove and synth textures building anticipat"
+  },
+  {
+   "start": 52,
+   "end": 60,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "perc"
+    ],
+    "label": "GLOBAL RHYTHMS"
+   },
+   "why": "Drum-cut window isolates the percussive elements and melodic guitar lines for a textural b"
+  }
+ ],
+ "words": {
+  "sweat": "liquid",
+  "rhythm": "pulse",
+  "curves": "bloom",
+  "sin": "glitch",
+  "control": "melt"
+ }
+}

@@ -1,0 +1,406 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "text": "Hmm",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Hmm"
+        }
+      ]
+    },
+    {
+      "start": 6.02,
+      "end": 7.72,
+      "text": "Feel it, feel it",
+      "words": [
+        {
+          "t": 6.02,
+          "text": "Feel"
+        },
+        {
+          "t": 6.66,
+          "text": "it,"
+        },
+        {
+          "t": 7.18,
+          "text": "feel"
+        },
+        {
+          "t": 7.4,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 30.64,
+      "end": 34.4,
+      "text": "Low light, slow move, bodies in the dark",
+      "words": [
+        {
+          "t": 30.64,
+          "text": "Low"
+        },
+        {
+          "t": 31.24,
+          "text": "light,"
+        },
+        {
+          "t": 31.94,
+          "text": "slow"
+        },
+        {
+          "t": 32.22,
+          "text": "move,"
+        },
+        {
+          "t": 33.04,
+          "text": "bodies"
+        },
+        {
+          "t": 33.44,
+          "text": "in"
+        },
+        {
+          "t": 33.76,
+          "text": "the"
+        },
+        {
+          "t": 33.92,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 34.4,
+      "end": 38.2,
+      "text": "No, nobody's watching, giving through the spark",
+      "words": [
+        {
+          "t": 34.4,
+          "text": "No,"
+        },
+        {
+          "t": 35.36,
+          "text": "nobody's"
+        },
+        {
+          "t": 36.04,
+          "text": "watching,"
+        },
+        {
+          "t": 36.8,
+          "text": "giving"
+        },
+        {
+          "t": 37.2,
+          "text": "through"
+        },
+        {
+          "t": 37.62,
+          "text": "the"
+        },
+        {
+          "t": 37.84,
+          "text": "spark"
+        }
+      ]
+    },
+    {
+      "start": 38.2,
+      "end": 40.62,
+      "text": "Push it on me, push, push, push it on me",
+      "words": [
+        {
+          "t": 38.2,
+          "text": "Push"
+        },
+        {
+          "t": 38.62,
+          "text": "it"
+        },
+        {
+          "t": 38.74,
+          "text": "on"
+        },
+        {
+          "t": 38.86,
+          "text": "me,"
+        },
+        {
+          "t": 39.32,
+          "text": "push,"
+        },
+        {
+          "t": 39.7,
+          "text": "push,"
+        },
+        {
+          "t": 39.94,
+          "text": "push"
+        },
+        {
+          "t": 40.08,
+          "text": "it"
+        },
+        {
+          "t": 40.2,
+          "text": "on"
+        },
+        {
+          "t": 40.32,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 41.2,
+      "end": 42.82,
+      "text": "Keep the feeling, keep the feeling on",
+      "words": [
+        {
+          "t": 41.2,
+          "text": "Keep"
+        },
+        {
+          "t": 41.7,
+          "text": "the"
+        },
+        {
+          "t": 41.88,
+          "text": "feeling,"
+        },
+        {
+          "t": 42.14,
+          "text": "keep"
+        },
+        {
+          "t": 42.22,
+          "text": "the"
+        },
+        {
+          "t": 42.36,
+          "text": "feeling"
+        },
+        {
+          "t": 42.56,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 48.9,
+      "end": 50.52,
+      "text": "Feel it on",
+      "words": [
+        {
+          "t": 48.9,
+          "text": "Feel"
+        },
+        {
+          "t": 49.5,
+          "text": "it"
+        },
+        {
+          "t": 50.1,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 52.78,
+      "end": 54.32,
+      "text": "Feel it on",
+      "words": [
+        {
+          "t": 52.78,
+          "text": "Feel"
+        },
+        {
+          "t": 53.38,
+          "text": "it"
+        },
+        {
+          "t": 53.98,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 55.96,
+      "end": 58.08,
+      "text": "Stop now, keep it slow",
+      "words": [
+        {
+          "t": 55.96,
+          "text": "Stop"
+        },
+        {
+          "t": 56.56,
+          "text": "now,"
+        },
+        {
+          "t": 57.28,
+          "text": "keep"
+        },
+        {
+          "t": 57.58,
+          "text": "it"
+        },
+        {
+          "t": 57.88,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 83.712,
+      "end": 85.36,
+      "text": "Don't stop now, keep it slow",
+      "words": [
+        {
+          "t": 83.712,
+          "text": "Don't"
+        },
+        {
+          "t": 84.0,
+          "text": "stop"
+        },
+        {
+          "t": 84.16,
+          "text": "now,"
+        },
+        {
+          "t": 84.66,
+          "text": "keep"
+        },
+        {
+          "t": 84.9,
+          "text": "it"
+        },
+        {
+          "t": 85.16,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 92.68,
+      "end": 93.54,
+      "text": "Push it, push it, push it on",
+      "words": [
+        {
+          "t": 92.68,
+          "text": "Push"
+        },
+        {
+          "t": 92.78,
+          "text": "it,"
+        },
+        {
+          "t": 92.9,
+          "text": "push"
+        },
+        {
+          "t": 93.0,
+          "text": "it,"
+        },
+        {
+          "t": 93.14,
+          "text": "push"
+        },
+        {
+          "t": 93.22,
+          "text": "it"
+        },
+        {
+          "t": 93.38,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 100.14,
+      "end": 100.86,
+      "text": "Push it on",
+      "words": [
+        {
+          "t": 100.14,
+          "text": "Push"
+        },
+        {
+          "t": 100.42,
+          "text": "it"
+        },
+        {
+          "t": 100.7,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 138.54,
+      "end": 138.98,
+      "text": "Feel it,",
+      "words": [
+        {
+          "t": 138.54,
+          "text": "Feel"
+        },
+        {
+          "t": 138.64,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 140.02,
+      "end": 140.38,
+      "text": "feel it",
+      "words": [
+        {
+          "t": 140.02,
+          "text": "feel"
+        },
+        {
+          "t": 140.12,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 155.6,
+      "end": 157.0,
+      "text": "Don't stop now, keep it slow",
+      "words": [
+        {
+          "t": 155.6,
+          "text": "Don't"
+        },
+        {
+          "t": 157.0,
+          "text": "stop"
+        },
+        {
+          "t": 157.0,
+          "text": "now,"
+        },
+        {
+          "t": 157.0,
+          "text": "keep"
+        },
+        {
+          "t": 157.0,
+          "text": "it"
+        },
+        {
+          "t": 157.0,
+          "text": "slow"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "one-more-breath-back-to-myself",
+  "generatedAt": "2026-07-09T18:23:06.691Z",
+  "measured": {
+    "bpm": 123.05,
+    "duration": 252.88
+  },
+  "identity": {
+    "title": "One More Breath [Back To Myself]",
+    "titleAlternates": [],
+    "genre": "Chopped and Screwed",
+    "subGenres": [
+      "Dirty South",
+      "Hip Hop Soul"
+    ],
+    "mood": "hypnotic, woozy, hazy, introspective",
+    "styleSentence": "At a dramatically slowed tempo of roughly 60 BPM (derived from the measured 123.05), this track features syrupy detuned synths and pitched-down vocal chops gliding over spacious swung 808 drums with heavy sub-bass, creating a thick, hazy southern club atmosphere perfect for late-night car cruises.",
+    "language": "English",
+    "energy": "low",
+    "vocalStyle": "whispered and chopped"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/one-more-breath-back-to-myself/cover.jpeg",
+    "palette": [
+      "#080818",
+      "#180818",
+      "#080808",
+      "#181818",
+      "#181828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D",
+      "mode": "major",
+      "confidence": 0.769
+    },
+    "boundaries": [
+      27.21,
+      31.21,
+      131.52,
+      152.6,
+      193.38,
+      196.91,
+      216.41,
+      247.34
+    ],
+    "brightness": 2744.5,
+    "dynamicsDb": 14
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - Soft Female Vocal Sample]\nBreathe\nOne more breath\nCome back down\n\n[Slow Breakbeat Enters]\n[Dusty drum break]\n[Deep warm bass]\n[Latin guitar loop]\n\n[Vocal Loop 1]\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\n[Instrumental Break]\n[Latin guitar repeats]\n[Viola and cello swell]\n[Low timpani hit]\n[Filtered synth glow]\n\n[Vocal Chop]\nBreathe in\nBreathe out\nBreathe in\nBreathe out\n\n[Hook Loop]\nI’m coming back\nBack to myself\nI’m coming back\nBack to myself\n\nI’m coming back\nBack to myself\nOne more breath\nNothing else\n\n[Instrumental Drop - Slow and Warm]\n[Heavy bass groove]\n[Chopped breakbeat drums]\n[Cello pulse]\n[Latin guitar melody]\n\n[Vocal Texture]\nLet it move\nLet it fade\nLet it move\nLet it fade\n\n[Bridge - Whispered]\nThe room gets quiet\nThe light gets low\nI hear my heartbeat\nI let it go\n\n[Final Loop]\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\nBreathe in\nBreathe out\nBreathe in\nBreathe out\n\n[Outro]\nI’m coming back\nBack to myself\nOne more breath\nNothing else",
+    "lrc": "[Intro]\n[00:10.96] Thank you for watching!\n[Verse 1]\n[Chorus]\n[00:43.80] Thank you for watching!\n[01:10.56] Thank you for watching!\n[01:42.60] Thank you for watching!\n[02:00.00] Thank you for watching!\n[Bridge]\n[02:30.00] Thank you for watching!\n[Drop]\n[Outro]\n[03:27.18] Thank you for watching!\n[03:38.18] Thank you for watching!\n[04:00.00] Thank you for watching!\n"
+  },
+  "analysis": {
+    "summary": "This track is a hypnotic exploration of late-night introspection and self-discovery, utilizing chopped vocals and slowed tempos to create a woozy atmosphere where the listener confronts their inner thoughts in isolation.",
+    "overallMood": "hypnotic",
+    "themes": [
+      "Introspection",
+      "Detachment",
+      "Nostalgia",
+      "Stagnation"
+    ],
+    "palette": [
+      "#1A0B2E",
+      "#483D59",
+      "#6F4C74",
+      "#FFCCCB"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "welcoming yet distant",
+        "intensity": 0.56,
+        "colorHint": "#1a0b2e",
+        "start": 10.96
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "melancholic reflection",
+        "intensity": 0.85,
+        "colorHint": "#483d59",
+        "start": 43.8
+      },
+      {
+        "name": "Chorus",
+        "emotion": "trance-like acceptance",
+        "intensity": 0.7,
+        "colorHint": "#6f4c74",
+        "start": 43.8
+      },
+      {
+        "name": "Bridge",
+        "emotion": "fragile hope",
+        "intensity": 0.19,
+        "colorHint": "#ffcccb",
+        "start": 150
+      },
+      {
+        "name": "Drop",
+        "emotion": "submerged bass weight",
+        "intensity": 0.3,
+        "colorHint": "#2e1a3f",
+        "start": 207.18
+      },
+      {
+        "name": "Outro",
+        "emotion": "fading realization",
+        "intensity": 0.09,
+        "colorHint": "#5c4b68",
+        "start": 207.18
+      }
+    ],
+    "keywords": [
+      {
+        "word": "hypnotic",
+        "emotion": "mesmerized",
+        "imageryPrompt": "A swirling vortex of dim purple smoke and neon streetlights, blurring into a dreamlike state where time stands still."
+      },
+      {
+        "word": "woozy",
+        "emotion": "dizzying",
+        "imageryPrompt": "Wobbly camera perspective inside a parked car at night, heat haze distorting the view of distant city lights and rain-slicked pavement."
+      },
+      {
+        "word": "detuned",
+        "emotion": "dissonant nostalgia",
+        "imageryPrompt": "An old cassette tape unraveling in slow motion against a backdrop of grainy 90s suburban decay, colors slightly off and muted."
+      },
+      {
+        "word": "chopped",
+        "emotion": "fragmented reality",
+        "imageryPrompt": "A collage of shattered glass reflections showing disjointed scenes of partying alone in a dark room, stitched together with rough edges."
+      },
+      {
+        "word": "hazy",
+        "emotion": "obscured clarity",
+        "imageryPrompt": "Thick fog rolling over abandoned industrial warehouses, silhouettes barely visible through the murk of artificial yellow streetlamps."
+      },
+      {
+        "word": "syrupy",
+        "emotion": "visceral slow motion",
+        "imageryPrompt": "Golden viscous liquid dripping slowly from a cracked faucet into a puddle, reflecting distorted images of the sky above."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 41,
+      "mid": 43,
+      "close": 7
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 10.96,
+        "intensity": 0.56
+      },
+      {
+        "name": "Verse 1",
+        "start": 43.8,
+        "intensity": 0.85
+      },
+      {
+        "name": "Chorus",
+        "start": 43.8,
+        "intensity": 0.7
+      },
+      {
+        "name": "Bridge",
+        "start": 150,
+        "intensity": 0.19
+      },
+      {
+        "name": "Drop",
+        "start": 207.18,
+        "intensity": 0.3
+      },
+      {
+        "name": "Outro",
+        "start": 207.18,
+        "intensity": 0.09
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 30
+      },
+      {
+        "name": "Verse 1",
+        "presence": 80
+      },
+      {
+        "name": "Chorus",
+        "presence": 62
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Drop",
+        "presence": 0
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          1.18
+        ],
+        [
+          2.3,
+          3.1
+        ],
+        [
+          8.06,
+          8.86
+        ],
+        [
+          13.9,
+          14.7
+        ],
+        [
+          59.98,
+          61.9
+        ],
+        [
+          119.02,
+          120.7
+        ],
+        [
+          120.94,
+          123.58
+        ]
+      ],
+      "risers": [
+        {
+          "t": 0,
+          "end": 3.1
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "one-more-breath-back-to-myself-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

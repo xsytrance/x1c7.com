@@ -1,0 +1,300 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "void-into-gold",
+  "generatedAt": "2026-07-09T18:38:00.994Z",
+  "measured": {
+    "bpm": 129.2,
+    "duration": 306.88
+  },
+  "identity": {
+    "title": "Void Into Gold",
+    "genre": "Afro R&B",
+    "subGenres": [
+      "Alternative R&B",
+      "Island Soul",
+      "Neo-Soul"
+    ],
+    "mood": "Sultry, Uplifting, Sensual, Spiritual",
+    "styleSentence": "A smooth Afro R&B summer groove driven by a hypnotic reggae-style bassline and warm live strings, featuring female sulty alto vocals over glitch-hop textures, cinematic violins, and relaxed danceable rhythms that blend Sade-like elegance with BT-inspired electronic flourishes.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "Sultry smoky alto"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/void-into-gold/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#080818",
+      "#180808",
+      "#382818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.788
+    },
+    "boundaries": [
+      28.51,
+      94.27,
+      161.7,
+      194.12,
+      238.52,
+      246.5,
+      260.06,
+      303.07
+    ],
+    "brightness": 2623.2,
+    "dynamicsDb": 15.2
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro - Spoken Female]\nMm\nThis summer feel different\nNo rush\nNo weight\nNo noise in my head tonight\n\n[Intro Chant]\nAh ya ya\nWe outside now\nAh ya ya\nSun going down\nAh ya ya\nLet the bass roll low\nLet the mind let go\n\n[Verse 1]\nI had too much living on my shoulders\nToo many tabs open in my mind\nSame old walls getting colder\nSame old clock stealing time\n\nThen the strings came in like sunlight\nBassline moving through the smoke\nOne deep breath and I felt life\nPull me back before I broke\n\nNow the beach got bottles glowing\nLittle fire by the shore\nLaptop closed but the soul still loading\nI don’t need to chase no more\n\n[Pre-Chorus]\nPour a little something sweet\nRoll a little peace if you need\nEat the fruit, taste the heat\nFind your balance in the feast\n\nNo shame in a joyful body\nNo fear in a healing night\nIf the world gets loud around me\nI’ma dance until it’s light\n\n[Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold\n\n[Post-Chorus - Vocal Chops]\nWine slow\nBass low\nEyes closed\nLet go\n\nNew me\nStill loading\nHeart clean\nStill glowing\n\n[Verse 2]\nCocktails and code on the table\nDreams in the blue screen light\nI was building when I was able\nNow I’m living what I typed\n\nNo more waiting on permission\nNo more saving joy for later\nEvery heartbeat is a rhythm\nEvery breath a little savior\n\nShe got flowers in her hair now\nHe got smoke up in the air\nEverybody got a story\nEverybody needs repair\n\nBut tonight we keep it tender\nNo judgment in the room\nJust the ocean, drums, and violins\nCutting silver through the moon\n\n[Pre-Chorus 2]\nHave a drink but keep your spirit\nTake a puff but keep your name\nTaste the world but don’t disappear in it\nPleasure don’t have to become pain\n\nPass the plate and pass forgiveness\nRaise your glass and bless the air\nWe are only here a minute\nSo be kind while we are here\n\n[Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold\n\n[Bridge - Spoken Over Snare, Bass Wobble, Strings]\nListen\nYou don’t have to answer every alarm\nYou don’t have to carry every ghost\nSome nights are made for healing\nSome nights are made for hands in the air\nSome nights you just thank the sky\nThat your heart still knows how to beat\n\n[Breakdown - Sung / Chopped]\nMind go quiet\nHeart go wide\nBassline rolling\nOcean tide\n\nMind go quiet\nHeart go wide\nThis summer different\nWe still alive\n\n[Final Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\n[Outro]\nAh ya ya\nWe outside now\nAh ya ya\nSun going down\n\nWine slow\nBass low\nEyes closed\nLet go\n\nWe came from the void\nNow we turn it into gold",
+    "lrc": "[Intro]\n[00:03.16] Mmm, this summer feel different\n[00:08.76] No rush, no wait, no noise in my head tonight\n[00:16.87] Ay-yi-yi, we outside now Ay-yi-yi,\n[00:22.15] sun goin' down\n[00:24.03] Ay-yi-yi,\n[00:25.66] let the bass roll up\n[Verse 1]\n[00:27.52] Let the mind let go\n[00:39.69] Mmm, I-I-I had too much livin' on my shoulders\n[00:46.76] Too many doubts openin' my mind\n[00:49.22] Same old walls gettin' colder Same old clocks stealin' time\n[00:57.45] Then the strings came in like sunlight\n[00:59.04] Mmm\n[01:00.84] Bassline movin' through the smoke One deep breath and I felt life\n[01:08.46] Pulled me back before I broke Now that beach got bottles blowin'\n[01:15.44] Little fire by the shore Laptop closed but the soul still lordin'\n[01:21.96] I don't need to chase no more Pour a little something sweet\n[01:28.84] Roll a little piece of ice And I'm back to where I belong\n[Pre-Chorus]\n[01:29.98] If you need,\n[01:30.88] eat the fruit,\n[01:31.78] taste the heat Find your balance in the feast\n[01:34.50] No shame in a joyful body No fear in a healing night\n[01:38.26] If the world gets loud around me I'ma dance until it's light\n[01:42.26] Empty your mind,\n[01:44.66] fill up your heart Move with the light,\n[01:47.00] let the good life start\n[01:49.60] Love who you love,\n[01:52.28] hold who you hold We came from the void,\n[01:55.42] now we turnin' into gold\n[01:57.14] Oh-oh, oh-oh, oh-oh, oh-oh Oh, let it go\n[02:01.22] Oh-oh, oh-oh, oh-oh, oh-oh Nice and slow\n[02:04.68] Oh-oh, oh-oh, oh-oh, oh-oh Feel your soul\n[02:08.32] We came from the void Now we turnin' into gold\n[02:12.88] Why ya slow?\n[Chorus]\n[02:17.10] Bass slow Eyes close\n[02:19.56] Let, let, let, let, let go\n[02:22.38] Mmm, me\n[02:24.23] It's still loadin'\n[02:25.42] Oh, oh, oh, oh-oh, oh-oh Heart cleansin' my soul\n[02:27.12] still blowing cocktails and cold on the table\n[02:30.40] dreams in the blue screen light i was building\n[02:33.06] when i was able now i'm living what i type no more\n[02:36.58] waiting on permission no more saving joy for later\n[02:39.66] every heartbeat is a rhythm every breath a little\n[02:42.96] savor she got flowers in her hair now he he got\n[02:45.94] smoke up in the air everybody got a story everybody\n[02:49.72] needs repair but tonight we keep it tender no\n[02:52.94] judgment in the room it's the ocean drums and\n[Post-Chorus]\n[02:55.82] violins cooking silver through the moon have a\n[02:58.66] drink but keep your spirit take a puff but keep\n[03:01.16] your name taste the world but don't disappear\n[03:03.30] any pleasure don't have to become pain pass the\n[03:06.08] plate and pass forgiveness raise your glass and\n[03:08.48] bless the air we are only here a minute so be kind\n[03:11.98] while we are into your mind fill up your heart\n[03:15.92] move with the night let the good life start love who you love\n[03:21.46] hold who\n[Verse 2]\n[03:43.31] listen you don't have to answer every\n[03:45.72] alarm you don't have to carry every ghost\n[03:49.10] so some nights are made for healing\n[03:51.94] you\n[03:52.94] some nights are made for hands in the\n[03:55.30] air some nights you just thank the sky\n[04:00.92] that your heart still knows how\n[04:04.00] to be\n[04:05.40] i go quiet go by baseline rolling ocean tie i go\n[04:14.72] quiet go by this summer different we still alive\n[04:22.94] you're hard\n[Pre-Chorus 2]\n[04:23.80] move with the night let the good life start love who you love\n[04:29.67] hold who you hold we came from the void\n[Chorus]\n[04:33.88] now we turn it into gold\n[04:36.10] we outshine them sun coming down wind\n[04:44.30] slow bass blow eyes closed let go\n[04:56.62] We came from the boy\n[05:01.98] Now we turn it into gold\n"
+  },
+  "analysis": {
+    "summary": "This song is a sultry, spiritual journey about releasing mental burdens and societal pressure to embrace a moment of healing and transformation from darkness into light. It blends Afro R&B grooves with electronic textures to create an atmosphere where vulnerability meets uplifting empowerment.",
+    "overallMood": "Sultry Uplifting Spiritual",
+    "themes": [
+      "Transformation",
+      "Healing",
+      "Release of Guilt",
+      "Summer Night Ambiance",
+      "Self-Love"
+    ],
+    "palette": [
+      "#1A0B2E",
+      "#4A3768",
+      "#D4AF37",
+      "#FDF5E6"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and relaxation as the sun sets, inviting a slow bassline to roll up.",
+        "intensity": 0.4,
+        "colorHint": "#1a0b2e",
+        "imageryPrompt": "Deep twilight sky over a calm ocean horizon, silhouettes of palm trees swaying gently in the breeze, fading warm orange light mixing with indigo shadows, soft dust motes dancing in a gentle wind.",
+        "start": 3.16
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Reflective weariness turning into relief as warmth replaces cold walls.",
+        "intensity": 0.69,
+        "colorHint": "#2e1a38",
+        "imageryPrompt": "Dimly lit cozy interior transitioning to a warm beachside view with smoke rising from a cigarette and ice cubes melting in glasses on wooden tables.",
+        "start": 27.52
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Awakening joy, finding balance, and preparing for an emotional release.",
+        "intensity": 0.9,
+        "colorHint": "#4a3768",
+        "imageryPrompt": "Vibrant tropical fruit piled high on a platter glowing in candlelight, steam rising from hot food, golden light filtering through lush green leaves.",
+        "start": 89.98
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Triumphant transformation and shining brightly after the journey.",
+        "intensity": 0.76,
+        "colorHint": "#ffd700",
+        "imageryPrompt": "A figure completely engulfed in radiant golden light standing on a beach at night, surrounded by floating embers that form shapes of flowers and music notes.",
+        "start": 137.1
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Tender forgiveness and mindful appreciation of fleeting moments.",
+        "intensity": 0.3,
+        "colorHint": "#fdf5e6",
+        "imageryPrompt": "Soft focus shot of a hand passing a glass to another across a table, blurred background of string instruments glowing like silver ribbons in the moonlight.",
+        "start": 175.82
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Quiet gratitude and acceptance after letting go of internal alarms.",
+        "intensity": 0.12,
+        "colorHint": "#3d2b50",
+        "imageryPrompt": "A solitary figure standing by the ocean watching waves recede, hands raised slightly in thanks to the sky, calm blue water meeting a darkening purple horizon.",
+        "start": 223.31
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "emotion": "Building momentum towards transformation with love and light.",
+        "intensity": 0.22,
+        "colorHint": "#8b6c42",
+        "imageryPrompt": "Silhouette of a dancer moving through swirling lights that shift from dark smoke to brilliant sparks.",
+        "start": 263.8
+      }
+    ],
+    "keywords": [
+      {
+        "word": "void",
+        "emotion": "Dark emptiness waiting to be filled",
+        "imageryPrompt": "A deep black cavern mouth opening into the sea, surrounded by swirling dark smoke that hints at hidden light within."
+      },
+      {
+        "word": "gold",
+        "emotion": "Precious transformation and value found in self",
+        "imageryPrompt": "Liquid gold pouring from a cracked vessel onto sand, glowing intensely against the night sky like captured stars."
+      },
+      {
+        "word": "smoke",
+        "emotion": "Mystery, relaxation, and clearing confusion",
+        "imageryPrompt": "Thick aromatic smoke curling upwards in slow motion around candle flames on a beach table at dusk."
+      },
+      {
+        "word": "bassline",
+        "emotion": "Pulsating heartbeat driving the rhythm forward",
+        "imageryPrompt": "Visible sound waves rippling through water like deep ocean currents, glowing faintly blue and purple beneath the surface."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 20,
+      "mid": 31,
+      "close": 19
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 3.16,
+        "intensity": 0.4
+      },
+      {
+        "name": "Verse 1",
+        "start": 27.52,
+        "intensity": 0.69
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 89.98,
+        "intensity": 0.9
+      },
+      {
+        "name": "Chorus",
+        "start": 137.1,
+        "intensity": 0.76
+      },
+      {
+        "name": "Post-Chorus",
+        "start": 175.82,
+        "intensity": 0.3
+      },
+      {
+        "name": "Verse 2",
+        "start": 223.31,
+        "intensity": 0.12
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "start": 263.8,
+        "intensity": 0.22
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 58
+      },
+      {
+        "name": "Verse 1",
+        "presence": 56
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 81
+      },
+      {
+        "name": "Chorus",
+        "presence": 80
+      },
+      {
+        "name": "Post-Chorus",
+        "presence": 8
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Pre-Chorus 2",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          14.94
+        ],
+        [
+          16.3,
+          17.5
+        ],
+        [
+          17.66,
+          18.7
+        ],
+        [
+          19.42,
+          21.26
+        ],
+        [
+          21.42,
+          22.46
+        ],
+        [
+          23.34,
+          24.78
+        ],
+        [
+          27.66,
+          28.54
+        ],
+        [
+          42.46,
+          43.74
+        ],
+        [
+          102.14,
+          103.74
+        ],
+        [
+          147.74,
+          148.78
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "void-into-gold-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

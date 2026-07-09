@@ -11,7 +11,7 @@ import { KineticStage, canPerform, MODES, type StageMode } from "./KineticStage"
 import { LabStage, LAB_MODES, type LabMode } from "./LabStage";
 import { StemMixer } from "./StemMixer";
 import { StemLens } from "./StemLens";
-import { useStemMix } from "@/lib/stemMix";
+import { useStemMix, stemMixStore, type StemMixState } from "@/lib/stemMix";
 import type { Track } from "@/data/tracks";
 
 /**
@@ -78,15 +78,21 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   synced: boolean;
   onClose: () => void;
 }) {
-  const { isPlaying, togglePlay, getCurrentTime, next, prev, queue, playTrack } = useMusicPlayer();
+  const { isPlaying, togglePlay, getCurrentTime, next, prev, queue, playTrack, stemBus } = useMusicPlayer();
   const [mounted, setMounted] = useState(false);
   // The playlist drawer — the whole queue, one tap from any show.
   const [drawer, setDrawer] = useState(false);
   // Satellites: which pass of the show is playing (newest = main show).
-  // Phase 5 (the cinematic camera) is the current top; passes 1-4 are the
-  // preserved earlier looks — 4 = Kinetica effects, 3 = full stagecraft, etc.
-  const MAX_PASS = 5;
+  // Phase 6 (DYNAMIC+, the LLM-choreographed showcase) is the top when the
+  // song ships choreography; Phase 5 (cinematic camera) otherwise. Passes
+  // 1-4 are the preserved earlier looks — 4 = Kinetica effects, 3 = full
+  // stagecraft, etc.
+  const dynPlus = track.planet?.dynamicPlus;
+  const MAX_PASS = dynPlus ? 6 : 5;
   const [pass, setPass] = useState(MAX_PASS);
+  // A new song opens on its newest look (and never strands pass 6 on a song
+  // without choreography).
+  useEffect(() => { setPass(dynPlus ? 6 : 5); }, [track.id]); // eslint-disable-line react-hooks/exhaustive-deps
   // THE REACTOR — experimental Labs modes. When set, they take over the stage.
   const [labMode, setLabMode] = useState<LabMode | null>(null);
   const [reactorOpen, setReactorOpen] = useState(false);
@@ -112,6 +118,53 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   const lastActive = useRef(-1);
   // Full engine when the song is a planet (word timings); line karaoke otherwise.
   const performs = canPerform(track);
+
+  // ── THE CONDUCTOR (Phase 6 · DYNAMIC+) ────────────────────────────────────
+  // Walks the LLM-choreographed acts against the playhead: Reactor modes take
+  // the stage for their windows, stem spotlights solo the billed instruments
+  // (and restore the listener's own mix after). Manual picks always win — the
+  // conductor only moves what it set itself.
+  const [spot, setSpot] = useState<string | null>(null);
+  const autoLab = useRef<LabMode | null>(null);
+  const spotPrev = useRef<Pick<StemMixState, "active" | "gains" | "solo"> | null>(null);
+  useEffect(() => {
+    if (!open || !performs || pass < 6 || !dynPlus?.acts?.length) return;
+    const acts = dynPlus.acts;
+    const validModes = new Set<string>(LAB_MODES.map((m) => m.id));
+    const endSpot = () => {
+      const prev = spotPrev.current;
+      if (!prev) return;
+      spotPrev.current = null;
+      stemMixStore.setSolo(prev.solo ?? null);
+      stemMixStore.setGains(prev.gains);
+      if (!prev.active) stemBus.disengage();
+      setSpot(null);
+    };
+    const iv = window.setInterval(() => {
+      const t = getCurrentTime();
+      const act = acts.find((a) => t >= a.start && t < a.end) ?? null;
+      // Reactor takeovers — enter only from an empty stage or our own prior pick.
+      const want = act?.reactor && validModes.has(act.reactor) ? (act.reactor as LabMode) : null;
+      setLabMode((cur) => {
+        if (want) {
+          if (cur === null || cur === autoLab.current) { autoLab.current = want; return want; }
+          return cur;
+        }
+        if (cur !== null && cur === autoLab.current) { autoLab.current = null; return null; }
+        return cur;
+      });
+      // Stem spotlights — snapshot the listener's mix, solo the bill, restore after.
+      const spotAct = act?.stemSpot ?? null;
+      if (spotAct && !spotPrev.current && stemMix.available.length) {
+        const snap = stemMixStore.snapshot();
+        spotPrev.current = { active: snap.active, gains: { ...snap.gains }, solo: snap.solo ? [...snap.solo] : null };
+        stemMixStore.setSolo(spotAct.solo.filter((s) => stemMix.available.includes(s)));
+        stemBus.engage();
+        setSpot(spotAct.label);
+      } else if (!spotAct) endSpot();
+    }, 400);
+    return () => { window.clearInterval(iv); endSpot(); if (autoLab.current) { setLabMode((cur) => (cur === autoLab.current ? null : cur)); autoLab.current = null; } };
+  }, [open, performs, pass, dynPlus, getCurrentTime, stemBus, stemMix.available]);
 
   useEffect(() => setMounted(true), []);
 
@@ -192,10 +245,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                     </button>
                   )}
                   <button onClick={() => setPass((p) => (p > 1 ? p - 1 : MAX_PASS))}
-                    title="Phase — every major upgrade of the show, preserved. Tap to switch."
+                    title="Phase — every major upgrade of the show, preserved. Tap to switch. Phase 6 = DYNAMIC+, the LLM-choreographed showcase."
                     className="rounded-xl px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider text-white transition"
                     style={{ background: "color-mix(in srgb, var(--theme-primary) 22%, transparent)", boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
-                    🌙 Phase {pass}
+                    {pass >= 6 ? "⚡ Dynamic+" : `🌙 Phase ${pass}`}
                   </button>
                 </div>
               )}
@@ -297,10 +350,27 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             )}
           </AnimatePresence>
 
+          {/* DYNAMIC+ spotlight billing — who's on stage right now */}
+          <AnimatePresence>
+            {spot && (
+              <motion.div
+                className="pointer-events-none absolute bottom-24 left-1/2 z-[60] -translate-x-1/2"
+                initial={{ opacity: 0, y: 12, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 12, scale: 0.94 }}
+              >
+                <span className="rounded-full border px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.22em]"
+                  style={{ borderColor: "var(--theme-primary)", color: "var(--theme-primary)", background: "#000b", boxShadow: "0 0 18px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
+                  ⚡ {spot}
+                </span>
+              </motion.div>
+            )}
+          </AnimatePresence>
+
           {/* THE STEM MIXER — presets + per-instrument chips + the Lens */}
           <AnimatePresence>
             {mixerOpen && hasStems && (
               <StemMixer
+                track={track}
+                getTime={getCurrentTime}
                 onClose={() => setMixerOpen(false)}
                 lensArmed={lensArmed}
                 onToggleLens={() => { setLensArmed((v) => !v); setMixerOpen(false); }}

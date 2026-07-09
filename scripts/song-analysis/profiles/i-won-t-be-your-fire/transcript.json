@@ -1,0 +1,3360 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.64,
+      "end": 2.48,
+      "text": "I saw your name light up again",
+      "words": [
+        {
+          "t": 0.64,
+          "text": "I"
+        },
+        {
+          "t": 1.184,
+          "text": "saw"
+        },
+        {
+          "t": 1.42,
+          "text": "your"
+        },
+        {
+          "t": 1.58,
+          "text": "name"
+        },
+        {
+          "t": 1.78,
+          "text": "light"
+        },
+        {
+          "t": 2.0,
+          "text": "up"
+        },
+        {
+          "t": 2.16,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 5.4,
+      "end": 5.6,
+      "text": "Same time,",
+      "words": [
+        {
+          "t": 5.4,
+          "text": "Same"
+        },
+        {
+          "t": 5.5,
+          "text": "time,"
+        }
+      ]
+    },
+    {
+      "start": 6.3,
+      "end": 7.6,
+      "text": "same storm",
+      "words": [
+        {
+          "t": 6.3,
+          "text": "same"
+        },
+        {
+          "t": 7.06,
+          "text": "storm"
+        }
+      ]
+    },
+    {
+      "start": 9.58,
+      "end": 11.06,
+      "text": "And I almost answered like always",
+      "words": [
+        {
+          "t": 9.58,
+          "text": "And"
+        },
+        {
+          "t": 9.68,
+          "text": "I"
+        },
+        {
+          "t": 9.78,
+          "text": "almost"
+        },
+        {
+          "t": 10.04,
+          "text": "answered"
+        },
+        {
+          "t": 10.44,
+          "text": "like"
+        },
+        {
+          "t": 10.68,
+          "text": "always"
+        }
+      ]
+    },
+    {
+      "start": 13.84,
+      "end": 15.6,
+      "text": "But I can't keep being the place you go",
+      "words": [
+        {
+          "t": 13.84,
+          "text": "But"
+        },
+        {
+          "t": 13.94,
+          "text": "I"
+        },
+        {
+          "t": 14.02,
+          "text": "can't"
+        },
+        {
+          "t": 14.28,
+          "text": "keep"
+        },
+        {
+          "t": 14.48,
+          "text": "being"
+        },
+        {
+          "t": 14.76,
+          "text": "the"
+        },
+        {
+          "t": 14.9,
+          "text": "place"
+        },
+        {
+          "t": 15.16,
+          "text": "you"
+        },
+        {
+          "t": 15.34,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 18.44,
+      "end": 19.49,
+      "text": "When you wanna fall apart",
+      "words": [
+        {
+          "t": 18.44,
+          "text": "When"
+        },
+        {
+          "t": 18.54,
+          "text": "you"
+        },
+        {
+          "t": 18.64,
+          "text": "wanna"
+        },
+        {
+          "t": 18.82,
+          "text": "fall"
+        },
+        {
+          "t": 19.04,
+          "text": "apart"
+        }
+      ]
+    },
+    {
+      "start": 22.88,
+      "end": 27.22,
+      "text": "Rain on glass, guitar comes in slow",
+      "words": [
+        {
+          "t": 22.88,
+          "text": "Rain"
+        },
+        {
+          "t": 23.42,
+          "text": "on"
+        },
+        {
+          "t": 24.02,
+          "text": "glass,"
+        },
+        {
+          "t": 24.84,
+          "text": "guitar"
+        },
+        {
+          "t": 25.62,
+          "text": "comes"
+        },
+        {
+          "t": 26.48,
+          "text": "in"
+        },
+        {
+          "t": 26.8,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 27.22,
+      "end": 32.84,
+      "text": "808, heart under the floor",
+      "words": [
+        {
+          "t": 27.22,
+          "text": "808,"
+        },
+        {
+          "t": 28.82,
+          "text": "heart"
+        },
+        {
+          "t": 30.592,
+          "text": "under"
+        },
+        {
+          "t": 31.52,
+          "text": "the"
+        },
+        {
+          "t": 32.38,
+          "text": "floor"
+        }
+      ]
+    },
+    {
+      "start": 32.84,
+      "end": 35.18,
+      "text": "I won't be your fighter",
+      "words": [
+        {
+          "t": 32.84,
+          "text": "I"
+        },
+        {
+          "t": 33.696,
+          "text": "won't"
+        },
+        {
+          "t": 34.0,
+          "text": "be"
+        },
+        {
+          "t": 34.18,
+          "text": "your"
+        },
+        {
+          "t": 34.54,
+          "text": "fighter"
+        }
+      ]
+    },
+    {
+      "start": 36.22,
+      "end": 38.528,
+      "text": "Just because you missed the burn",
+      "words": [
+        {
+          "t": 36.22,
+          "text": "Just"
+        },
+        {
+          "t": 36.608,
+          "text": "because"
+        },
+        {
+          "t": 36.96,
+          "text": "you"
+        },
+        {
+          "t": 37.38,
+          "text": "missed"
+        },
+        {
+          "t": 37.74,
+          "text": "the"
+        },
+        {
+          "t": 38.08,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 38.912,
+      "end": 43.936,
+      "text": "I won't say the sharp words Just to make the silence hurt",
+      "words": [
+        {
+          "t": 38.912,
+          "text": "I"
+        },
+        {
+          "t": 39.08,
+          "text": "won't"
+        },
+        {
+          "t": 39.5,
+          "text": "say"
+        },
+        {
+          "t": 39.82,
+          "text": "the"
+        },
+        {
+          "t": 40.14,
+          "text": "sharp"
+        },
+        {
+          "t": 40.58,
+          "text": "words"
+        },
+        {
+          "t": 41.3,
+          "text": "Just"
+        },
+        {
+          "t": 42.12,
+          "text": "to"
+        },
+        {
+          "t": 42.22,
+          "text": "make"
+        },
+        {
+          "t": 42.64,
+          "text": "the"
+        },
+        {
+          "t": 42.9,
+          "text": "silence"
+        },
+        {
+          "t": 43.5,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 44.04,
+      "end": 48.96,
+      "text": "I know you want the thunder When the quiet gets too loud",
+      "words": [
+        {
+          "t": 44.04,
+          "text": "I"
+        },
+        {
+          "t": 44.448,
+          "text": "know"
+        },
+        {
+          "t": 44.62,
+          "text": "you"
+        },
+        {
+          "t": 45.02,
+          "text": "want"
+        },
+        {
+          "t": 45.44,
+          "text": "the"
+        },
+        {
+          "t": 45.7,
+          "text": "thunder"
+        },
+        {
+          "t": 46.2,
+          "text": "When"
+        },
+        {
+          "t": 47.008,
+          "text": "the"
+        },
+        {
+          "t": 47.12,
+          "text": "quiet"
+        },
+        {
+          "t": 47.58,
+          "text": "gets"
+        },
+        {
+          "t": 48.4,
+          "text": "too"
+        },
+        {
+          "t": 48.5,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 49.248,
+      "end": 54.46,
+      "text": "But I won't be your reason I keep breaking down",
+      "words": [
+        {
+          "t": 49.248,
+          "text": "But"
+        },
+        {
+          "t": 49.44,
+          "text": "I"
+        },
+        {
+          "t": 49.728,
+          "text": "won't"
+        },
+        {
+          "t": 50.76,
+          "text": "be"
+        },
+        {
+          "t": 51.0,
+          "text": "your"
+        },
+        {
+          "t": 51.28,
+          "text": "reason"
+        },
+        {
+          "t": 52.28,
+          "text": "I"
+        },
+        {
+          "t": 53.32,
+          "text": "keep"
+        },
+        {
+          "t": 53.42,
+          "text": "breaking"
+        },
+        {
+          "t": 53.84,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 55.6,
+      "end": 56.52,
+      "text": "Yeah!",
+      "words": [
+        {
+          "t": 55.6,
+          "text": "Yeah!"
+        }
+      ]
+    },
+    {
+      "start": 57.64,
+      "end": 60.86,
+      "text": "No, no, I won't be your fighter",
+      "words": [
+        {
+          "t": 57.64,
+          "text": "No,"
+        },
+        {
+          "t": 58.16,
+          "text": "no,"
+        },
+        {
+          "t": 58.68,
+          "text": "I"
+        },
+        {
+          "t": 59.18,
+          "text": "won't"
+        },
+        {
+          "t": 59.76,
+          "text": "be"
+        },
+        {
+          "t": 60.1,
+          "text": "your"
+        },
+        {
+          "t": 60.34,
+          "text": "fighter"
+        }
+      ]
+    },
+    {
+      "start": 62.6,
+      "end": 64.98,
+      "text": "No, no, no I still care,",
+      "words": [
+        {
+          "t": 62.6,
+          "text": "No,"
+        },
+        {
+          "t": 63.12,
+          "text": "no,"
+        },
+        {
+          "t": 63.66,
+          "text": "no"
+        },
+        {
+          "t": 64.32,
+          "text": "I"
+        },
+        {
+          "t": 64.48,
+          "text": "still"
+        },
+        {
+          "t": 64.62,
+          "text": "care,"
+        }
+      ]
+    },
+    {
+      "start": 65.64,
+      "end": 66.54,
+      "text": "but I'm tired",
+      "words": [
+        {
+          "t": 65.64,
+          "text": "but"
+        },
+        {
+          "t": 65.74,
+          "text": "I'm"
+        },
+        {
+          "t": 66.04,
+          "text": "tired"
+        }
+      ]
+    },
+    {
+      "start": 66.54,
+      "end": 68.88,
+      "text": "You call me when the room gets cold When the",
+      "words": [
+        {
+          "t": 66.54,
+          "text": "You"
+        },
+        {
+          "t": 66.82,
+          "text": "call"
+        },
+        {
+          "t": 66.98,
+          "text": "me"
+        },
+        {
+          "t": 67.14,
+          "text": "when"
+        },
+        {
+          "t": 67.32,
+          "text": "the"
+        },
+        {
+          "t": 67.44,
+          "text": "room"
+        },
+        {
+          "t": 67.68,
+          "text": "gets"
+        },
+        {
+          "t": 67.82,
+          "text": "cold"
+        },
+        {
+          "t": 68.16,
+          "text": "When"
+        },
+        {
+          "t": 68.68,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 68.88,
+      "end": 71.34,
+      "text": "posters on your wall start looking like ghosts",
+      "words": [
+        {
+          "t": 68.88,
+          "text": "posters"
+        },
+        {
+          "t": 69.22,
+          "text": "on"
+        },
+        {
+          "t": 69.46,
+          "text": "your"
+        },
+        {
+          "t": 69.58,
+          "text": "wall"
+        },
+        {
+          "t": 69.84,
+          "text": "start"
+        },
+        {
+          "t": 70.08,
+          "text": "looking"
+        },
+        {
+          "t": 70.48,
+          "text": "like"
+        },
+        {
+          "t": 70.84,
+          "text": "ghosts"
+        }
+      ]
+    },
+    {
+      "start": 71.34,
+      "end": 74.0,
+      "text": "You say you need a reason just to feel something real",
+      "words": [
+        {
+          "t": 71.34,
+          "text": "You"
+        },
+        {
+          "t": 71.64,
+          "text": "say"
+        },
+        {
+          "t": 71.86,
+          "text": "you"
+        },
+        {
+          "t": 71.98,
+          "text": "need"
+        },
+        {
+          "t": 72.24,
+          "text": "a"
+        },
+        {
+          "t": 72.38,
+          "text": "reason"
+        },
+        {
+          "t": 72.7,
+          "text": "just"
+        },
+        {
+          "t": 72.9,
+          "text": "to"
+        },
+        {
+          "t": 73.04,
+          "text": "feel"
+        },
+        {
+          "t": 73.32,
+          "text": "something"
+        },
+        {
+          "t": 73.6,
+          "text": "real"
+        }
+      ]
+    },
+    {
+      "start": 74.0,
+      "end": 76.84,
+      "text": "But every time I answer I become what you can't heal",
+      "words": [
+        {
+          "t": 74.0,
+          "text": "But"
+        },
+        {
+          "t": 74.46,
+          "text": "every"
+        },
+        {
+          "t": 74.74,
+          "text": "time"
+        },
+        {
+          "t": 75.0,
+          "text": "I"
+        },
+        {
+          "t": 75.2,
+          "text": "answer"
+        },
+        {
+          "t": 75.48,
+          "text": "I"
+        },
+        {
+          "t": 75.68,
+          "text": "become"
+        },
+        {
+          "t": 75.92,
+          "text": "what"
+        },
+        {
+          "t": 76.22,
+          "text": "you"
+        },
+        {
+          "t": 76.38,
+          "text": "can't"
+        },
+        {
+          "t": 76.64,
+          "text": "heal"
+        }
+      ]
+    },
+    {
+      "start": 76.84,
+      "end": 78.16,
+      "text": "I know the hallway lights,",
+      "words": [
+        {
+          "t": 76.84,
+          "text": "I"
+        },
+        {
+          "t": 77.18,
+          "text": "know"
+        },
+        {
+          "t": 77.42,
+          "text": "the"
+        },
+        {
+          "t": 77.6,
+          "text": "hallway"
+        },
+        {
+          "t": 77.86,
+          "text": "lights,"
+        }
+      ]
+    },
+    {
+      "start": 78.22,
+      "end": 79.56,
+      "text": "I know the bathroom floor",
+      "words": [
+        {
+          "t": 78.22,
+          "text": "I"
+        },
+        {
+          "t": 78.32,
+          "text": "know"
+        },
+        {
+          "t": 78.46,
+          "text": "the"
+        },
+        {
+          "t": 78.66,
+          "text": "bathroom"
+        },
+        {
+          "t": 79.06,
+          "text": "floor"
+        }
+      ]
+    },
+    {
+      "start": 79.56,
+      "end": 82.3,
+      "text": "I know the kind of love that turns into a war",
+      "words": [
+        {
+          "t": 79.56,
+          "text": "I"
+        },
+        {
+          "t": 79.94,
+          "text": "know"
+        },
+        {
+          "t": 80.22,
+          "text": "the"
+        },
+        {
+          "t": 80.38,
+          "text": "kind"
+        },
+        {
+          "t": 80.6,
+          "text": "of"
+        },
+        {
+          "t": 80.78,
+          "text": "love"
+        },
+        {
+          "t": 80.96,
+          "text": "that"
+        },
+        {
+          "t": 81.1,
+          "text": "turns"
+        },
+        {
+          "t": 81.3,
+          "text": "into"
+        },
+        {
+          "t": 81.56,
+          "text": "a"
+        },
+        {
+          "t": 81.96,
+          "text": "war"
+        }
+      ]
+    },
+    {
+      "start": 82.3,
+      "end": 85.14,
+      "text": "I know you think the hurt means somebody's state",
+      "words": [
+        {
+          "t": 82.3,
+          "text": "I"
+        },
+        {
+          "t": 82.76,
+          "text": "know"
+        },
+        {
+          "t": 83.02,
+          "text": "you"
+        },
+        {
+          "t": 83.14,
+          "text": "think"
+        },
+        {
+          "t": 83.38,
+          "text": "the"
+        },
+        {
+          "t": 83.54,
+          "text": "hurt"
+        },
+        {
+          "t": 83.8,
+          "text": "means"
+        },
+        {
+          "t": 84.06,
+          "text": "somebody's"
+        },
+        {
+          "t": 84.84,
+          "text": "state"
+        }
+      ]
+    },
+    {
+      "start": 85.14,
+      "end": 87.2,
+      "text": "But pain is not proof that love is real",
+      "words": [
+        {
+          "t": 85.14,
+          "text": "But"
+        },
+        {
+          "t": 85.6,
+          "text": "pain"
+        },
+        {
+          "t": 85.84,
+          "text": "is"
+        },
+        {
+          "t": 86.02,
+          "text": "not"
+        },
+        {
+          "t": 86.18,
+          "text": "proof"
+        },
+        {
+          "t": 86.46,
+          "text": "that"
+        },
+        {
+          "t": 86.86,
+          "text": "love"
+        },
+        {
+          "t": 87.2,
+          "text": "is"
+        },
+        {
+          "t": 87.2,
+          "text": "real"
+        }
+      ]
+    },
+    {
+      "start": 87.22,
+      "end": 87.82,
+      "text": "And the world was ever safe",
+      "words": [
+        {
+          "t": 87.22,
+          "text": "And"
+        },
+        {
+          "t": 87.26,
+          "text": "the"
+        },
+        {
+          "t": 87.26,
+          "text": "world"
+        },
+        {
+          "t": 87.26,
+          "text": "was"
+        },
+        {
+          "t": 87.34,
+          "text": "ever"
+        },
+        {
+          "t": 87.62,
+          "text": "safe"
+        }
+      ]
+    },
+    {
+      "start": 88.0,
+      "end": 90.7,
+      "text": "I used to throw the mats Then cry about the smoke",
+      "words": [
+        {
+          "t": 88.0,
+          "text": "I"
+        },
+        {
+          "t": 88.38,
+          "text": "used"
+        },
+        {
+          "t": 88.6,
+          "text": "to"
+        },
+        {
+          "t": 88.74,
+          "text": "throw"
+        },
+        {
+          "t": 89.0,
+          "text": "the"
+        },
+        {
+          "t": 89.12,
+          "text": "mats"
+        },
+        {
+          "t": 89.4,
+          "text": "Then"
+        },
+        {
+          "t": 89.66,
+          "text": "cry"
+        },
+        {
+          "t": 89.96,
+          "text": "about"
+        },
+        {
+          "t": 90.26,
+          "text": "the"
+        },
+        {
+          "t": 90.44,
+          "text": "smoke"
+        }
+      ]
+    },
+    {
+      "start": 90.7,
+      "end": 93.52,
+      "text": "I used to say the things that cut into your throat",
+      "words": [
+        {
+          "t": 90.7,
+          "text": "I"
+        },
+        {
+          "t": 91.14,
+          "text": "used"
+        },
+        {
+          "t": 91.36,
+          "text": "to"
+        },
+        {
+          "t": 91.56,
+          "text": "say"
+        },
+        {
+          "t": 91.74,
+          "text": "the"
+        },
+        {
+          "t": 91.88,
+          "text": "things"
+        },
+        {
+          "t": 92.16,
+          "text": "that"
+        },
+        {
+          "t": 92.44,
+          "text": "cut"
+        },
+        {
+          "t": 92.74,
+          "text": "into"
+        },
+        {
+          "t": 93.0,
+          "text": "your"
+        },
+        {
+          "t": 93.28,
+          "text": "throat"
+        }
+      ]
+    },
+    {
+      "start": 93.52,
+      "end": 96.42,
+      "text": "But tonight I'm holding back With both hands on the wire",
+      "words": [
+        {
+          "t": 93.52,
+          "text": "But"
+        },
+        {
+          "t": 93.84,
+          "text": "tonight"
+        },
+        {
+          "t": 94.12,
+          "text": "I'm"
+        },
+        {
+          "t": 94.44,
+          "text": "holding"
+        },
+        {
+          "t": 94.58,
+          "text": "back"
+        },
+        {
+          "t": 94.92,
+          "text": "With"
+        },
+        {
+          "t": 95.2,
+          "text": "both"
+        },
+        {
+          "t": 95.4,
+          "text": "hands"
+        },
+        {
+          "t": 95.6,
+          "text": "on"
+        },
+        {
+          "t": 95.92,
+          "text": "the"
+        },
+        {
+          "t": 96.04,
+          "text": "wire"
+        }
+      ]
+    },
+    {
+      "start": 96.42,
+      "end": 99.3,
+      "text": "If I love you at all I can be your fire",
+      "words": [
+        {
+          "t": 96.42,
+          "text": "If"
+        },
+        {
+          "t": 96.8,
+          "text": "I"
+        },
+        {
+          "t": 96.94,
+          "text": "love"
+        },
+        {
+          "t": 97.18,
+          "text": "you"
+        },
+        {
+          "t": 97.34,
+          "text": "at"
+        },
+        {
+          "t": 97.52,
+          "text": "all"
+        },
+        {
+          "t": 97.9,
+          "text": "I"
+        },
+        {
+          "t": 98.4,
+          "text": "can"
+        },
+        {
+          "t": 98.5,
+          "text": "be"
+        },
+        {
+          "t": 98.66,
+          "text": "your"
+        },
+        {
+          "t": 98.86,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 100.256,
+      "end": 102.18,
+      "text": "I won't be your fighter",
+      "words": [
+        {
+          "t": 100.256,
+          "text": "I"
+        },
+        {
+          "t": 100.46,
+          "text": "won't"
+        },
+        {
+          "t": 100.88,
+          "text": "be"
+        },
+        {
+          "t": 101.16,
+          "text": "your"
+        },
+        {
+          "t": 101.5,
+          "text": "fighter"
+        }
+      ]
+    },
+    {
+      "start": 102.976,
+      "end": 105.44,
+      "text": "Just because you missed the burn",
+      "words": [
+        {
+          "t": 102.976,
+          "text": "Just"
+        },
+        {
+          "t": 103.52,
+          "text": "because"
+        },
+        {
+          "t": 103.78,
+          "text": "you"
+        },
+        {
+          "t": 104.32,
+          "text": "missed"
+        },
+        {
+          "t": 104.66,
+          "text": "the"
+        },
+        {
+          "t": 104.96,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 105.888,
+      "end": 110.94,
+      "text": "I won't say the sharp words Just to make the silence hurt",
+      "words": [
+        {
+          "t": 105.888,
+          "text": "I"
+        },
+        {
+          "t": 106.02,
+          "text": "won't"
+        },
+        {
+          "t": 106.66,
+          "text": "say"
+        },
+        {
+          "t": 106.76,
+          "text": "the"
+        },
+        {
+          "t": 107.06,
+          "text": "sharp"
+        },
+        {
+          "t": 107.62,
+          "text": "words"
+        },
+        {
+          "t": 108.16,
+          "text": "Just"
+        },
+        {
+          "t": 109.02,
+          "text": "to"
+        },
+        {
+          "t": 109.12,
+          "text": "make"
+        },
+        {
+          "t": 109.58,
+          "text": "the"
+        },
+        {
+          "t": 109.856,
+          "text": "silence"
+        },
+        {
+          "t": 110.36,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 110.94,
+      "end": 115.52,
+      "text": "I know you want the thunder When the quiet gets too loud",
+      "words": [
+        {
+          "t": 110.94,
+          "text": "I"
+        },
+        {
+          "t": 111.424,
+          "text": "know"
+        },
+        {
+          "t": 111.56,
+          "text": "you"
+        },
+        {
+          "t": 111.92,
+          "text": "want"
+        },
+        {
+          "t": 112.36,
+          "text": "the"
+        },
+        {
+          "t": 112.62,
+          "text": "thunder"
+        },
+        {
+          "t": 113.18,
+          "text": "When"
+        },
+        {
+          "t": 113.72,
+          "text": "the"
+        },
+        {
+          "t": 114.048,
+          "text": "quiet"
+        },
+        {
+          "t": 114.46,
+          "text": "gets"
+        },
+        {
+          "t": 115.32,
+          "text": "too"
+        },
+        {
+          "t": 115.42,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 116.224,
+      "end": 116.768,
+      "text": "But I...",
+      "words": [
+        {
+          "t": 116.224,
+          "text": "But"
+        },
+        {
+          "t": 116.34,
+          "text": "I..."
+        }
+      ]
+    },
+    {
+      "start": 116.896,
+      "end": 118.14,
+      "text": "Won't be a",
+      "words": [
+        {
+          "t": 116.896,
+          "text": "Won't"
+        },
+        {
+          "t": 117.64,
+          "text": "be"
+        },
+        {
+          "t": 117.8,
+          "text": "a"
+        }
+      ]
+    },
+    {
+      "start": 119.04,
+      "end": 121.38,
+      "text": "reason to keep breaking down",
+      "words": [
+        {
+          "t": 119.04,
+          "text": "reason"
+        },
+        {
+          "t": 119.14,
+          "text": "to"
+        },
+        {
+          "t": 120.16,
+          "text": "keep"
+        },
+        {
+          "t": 120.3,
+          "text": "breaking"
+        },
+        {
+          "t": 120.74,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 121.38,
+      "end": 122.56,
+      "text": "Don't leave me alone",
+      "words": [
+        {
+          "t": 121.38,
+          "text": "Don't"
+        },
+        {
+          "t": 121.78,
+          "text": "leave"
+        },
+        {
+          "t": 122.06,
+          "text": "me"
+        },
+        {
+          "t": 122.22,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 130.44,
+      "end": 132.6,
+      "text": "With my head like this",
+      "words": [
+        {
+          "t": 130.44,
+          "text": "With"
+        },
+        {
+          "t": 131.328,
+          "text": "my"
+        },
+        {
+          "t": 131.56,
+          "text": "head"
+        },
+        {
+          "t": 131.86,
+          "text": "like"
+        },
+        {
+          "t": 132.12,
+          "text": "this"
+        }
+      ]
+    },
+    {
+      "start": 132.6,
+      "end": 135.46,
+      "text": "I keep your name in my phone like a bruise",
+      "words": [
+        {
+          "t": 132.6,
+          "text": "I"
+        },
+        {
+          "t": 132.92,
+          "text": "keep"
+        },
+        {
+          "t": 133.48,
+          "text": "your"
+        },
+        {
+          "t": 133.68,
+          "text": "name"
+        },
+        {
+          "t": 133.94,
+          "text": "in"
+        },
+        {
+          "t": 134.2,
+          "text": "my"
+        },
+        {
+          "t": 134.32,
+          "text": "phone"
+        },
+        {
+          "t": 134.66,
+          "text": "like"
+        },
+        {
+          "t": 134.9,
+          "text": "a"
+        },
+        {
+          "t": 135.06,
+          "text": "bruise"
+        }
+      ]
+    },
+    {
+      "start": 135.46,
+      "end": 136.72,
+      "text": "I can press black hoodie,",
+      "words": [
+        {
+          "t": 135.46,
+          "text": "I"
+        },
+        {
+          "t": 135.64,
+          "text": "can"
+        },
+        {
+          "t": 135.72,
+          "text": "press"
+        },
+        {
+          "t": 136.02,
+          "text": "black"
+        },
+        {
+          "t": 136.34,
+          "text": "hoodie,"
+        }
+      ]
+    },
+    {
+      "start": 136.82,
+      "end": 137.32,
+      "text": "dead screen,",
+      "words": [
+        {
+          "t": 136.82,
+          "text": "dead"
+        },
+        {
+          "t": 137.04,
+          "text": "screen,"
+        }
+      ]
+    },
+    {
+      "start": 137.52,
+      "end": 138.78,
+      "text": "bad dreams in my chest",
+      "words": [
+        {
+          "t": 137.52,
+          "text": "bad"
+        },
+        {
+          "t": 137.68,
+          "text": "dreams"
+        },
+        {
+          "t": 138.12,
+          "text": "in"
+        },
+        {
+          "t": 138.4,
+          "text": "my"
+        },
+        {
+          "t": 138.5,
+          "text": "chest"
+        }
+      ]
+    },
+    {
+      "start": 138.78,
+      "end": 141.58,
+      "text": "I don't want peace, I don't know what that means",
+      "words": [
+        {
+          "t": 138.78,
+          "text": "I"
+        },
+        {
+          "t": 139.1,
+          "text": "don't"
+        },
+        {
+          "t": 139.44,
+          "text": "want"
+        },
+        {
+          "t": 139.8,
+          "text": "peace,"
+        },
+        {
+          "t": 140.36,
+          "text": "I"
+        },
+        {
+          "t": 140.5,
+          "text": "don't"
+        },
+        {
+          "t": 140.66,
+          "text": "know"
+        },
+        {
+          "t": 140.82,
+          "text": "what"
+        },
+        {
+          "t": 140.98,
+          "text": "that"
+        },
+        {
+          "t": 141.18,
+          "text": "means"
+        }
+      ]
+    },
+    {
+      "start": 141.58,
+      "end": 144.34,
+      "text": "I only feel close when you're angry at me",
+      "words": [
+        {
+          "t": 141.58,
+          "text": "I"
+        },
+        {
+          "t": 141.94,
+          "text": "only"
+        },
+        {
+          "t": 142.2,
+          "text": "feel"
+        },
+        {
+          "t": 142.54,
+          "text": "close"
+        },
+        {
+          "t": 143.04,
+          "text": "when"
+        },
+        {
+          "t": 143.28,
+          "text": "you're"
+        },
+        {
+          "t": 143.48,
+          "text": "angry"
+        },
+        {
+          "t": 143.74,
+          "text": "at"
+        },
+        {
+          "t": 144.02,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 144.34,
+      "end": 145.56,
+      "text": "I've been chasing the crash,",
+      "words": [
+        {
+          "t": 144.34,
+          "text": "I've"
+        },
+        {
+          "t": 144.72,
+          "text": "been"
+        },
+        {
+          "t": 144.8,
+          "text": "chasing"
+        },
+        {
+          "t": 145.08,
+          "text": "the"
+        },
+        {
+          "t": 145.34,
+          "text": "crash,"
+        }
+      ]
+    },
+    {
+      "start": 145.92,
+      "end": 147.1,
+      "text": "cause the car feels fake",
+      "words": [
+        {
+          "t": 145.92,
+          "text": "cause"
+        },
+        {
+          "t": 146.02,
+          "text": "the"
+        },
+        {
+          "t": 146.2,
+          "text": "car"
+        },
+        {
+          "t": 146.42,
+          "text": "feels"
+        },
+        {
+          "t": 146.74,
+          "text": "fake"
+        }
+      ]
+    },
+    {
+      "start": 147.1,
+      "end": 148.44,
+      "text": "I've been calling it love,",
+      "words": [
+        {
+          "t": 147.1,
+          "text": "I've"
+        },
+        {
+          "t": 147.5,
+          "text": "been"
+        },
+        {
+          "t": 147.62,
+          "text": "calling"
+        },
+        {
+          "t": 147.92,
+          "text": "it"
+        },
+        {
+          "t": 148.1,
+          "text": "love,"
+        }
+      ]
+    },
+    {
+      "start": 148.68,
+      "end": 149.86,
+      "text": "when it's only a skate",
+      "words": [
+        {
+          "t": 148.68,
+          "text": "when"
+        },
+        {
+          "t": 148.86,
+          "text": "it's"
+        },
+        {
+          "t": 149.04,
+          "text": "only"
+        },
+        {
+          "t": 149.26,
+          "text": "a"
+        },
+        {
+          "t": 149.5,
+          "text": "skate"
+        }
+      ]
+    },
+    {
+      "start": 150.09,
+      "end": 152.68,
+      "text": "Say something cold, make it sound like you care",
+      "words": [
+        {
+          "t": 150.09,
+          "text": "Say"
+        },
+        {
+          "t": 150.64,
+          "text": "something"
+        },
+        {
+          "t": 150.98,
+          "text": "cold,"
+        },
+        {
+          "t": 151.44,
+          "text": "make"
+        },
+        {
+          "t": 151.58,
+          "text": "it"
+        },
+        {
+          "t": 151.74,
+          "text": "sound"
+        },
+        {
+          "t": 151.96,
+          "text": "like"
+        },
+        {
+          "t": 152.16,
+          "text": "you"
+        },
+        {
+          "t": 152.34,
+          "text": "care"
+        }
+      ]
+    },
+    {
+      "start": 152.68,
+      "end": 155.48,
+      "text": "I can't stand the dark when there's nobody there",
+      "words": [
+        {
+          "t": 152.68,
+          "text": "I"
+        },
+        {
+          "t": 153.02,
+          "text": "can't"
+        },
+        {
+          "t": 153.5,
+          "text": "stand"
+        },
+        {
+          "t": 153.66,
+          "text": "the"
+        },
+        {
+          "t": 153.86,
+          "text": "dark"
+        },
+        {
+          "t": 154.22,
+          "text": "when"
+        },
+        {
+          "t": 154.38,
+          "text": "there's"
+        },
+        {
+          "t": 154.64,
+          "text": "nobody"
+        },
+        {
+          "t": 154.86,
+          "text": "there"
+        }
+      ]
+    },
+    {
+      "start": 155.65,
+      "end": 157.08,
+      "text": "I hear you,",
+      "words": [
+        {
+          "t": 155.65,
+          "text": "I"
+        },
+        {
+          "t": 156.448,
+          "text": "hear"
+        },
+        {
+          "t": 156.78,
+          "text": "you,"
+        }
+      ]
+    },
+    {
+      "start": 158.12,
+      "end": 158.46,
+      "text": "I do",
+      "words": [
+        {
+          "t": 158.12,
+          "text": "I"
+        },
+        {
+          "t": 158.22,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "start": 158.92,
+      "end": 160.72,
+      "text": "But I won't hurt you",
+      "words": [
+        {
+          "t": 158.92,
+          "text": "But"
+        },
+        {
+          "t": 159.872,
+          "text": "I"
+        },
+        {
+          "t": 160.0,
+          "text": "won't"
+        },
+        {
+          "t": 160.24,
+          "text": "hurt"
+        },
+        {
+          "t": 160.44,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 162.78,
+      "end": 164.16,
+      "text": "Just to prove I'm still here",
+      "words": [
+        {
+          "t": 162.78,
+          "text": "Just"
+        },
+        {
+          "t": 162.88,
+          "text": "to"
+        },
+        {
+          "t": 162.98,
+          "text": "prove"
+        },
+        {
+          "t": 163.28,
+          "text": "I'm"
+        },
+        {
+          "t": 163.54,
+          "text": "still"
+        },
+        {
+          "t": 163.82,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 167.82,
+      "end": 171.12,
+      "text": "What am I supposed to do when the night comes by?",
+      "words": [
+        {
+          "t": 167.82,
+          "text": "What"
+        },
+        {
+          "t": 167.92,
+          "text": "am"
+        },
+        {
+          "t": 168.14,
+          "text": "I"
+        },
+        {
+          "t": 168.28,
+          "text": "supposed"
+        },
+        {
+          "t": 168.58,
+          "text": "to"
+        },
+        {
+          "t": 169.06,
+          "text": "do"
+        },
+        {
+          "t": 169.38,
+          "text": "when"
+        },
+        {
+          "t": 169.7,
+          "text": "the"
+        },
+        {
+          "t": 169.88,
+          "text": "night"
+        },
+        {
+          "t": 170.14,
+          "text": "comes"
+        },
+        {
+          "t": 170.44,
+          "text": "by?"
+        }
+      ]
+    },
+    {
+      "start": 172.064,
+      "end": 173.04,
+      "text": "Breathe to the morning",
+      "words": [
+        {
+          "t": 172.064,
+          "text": "Breathe"
+        },
+        {
+          "t": 172.22,
+          "text": "to"
+        },
+        {
+          "t": 172.42,
+          "text": "the"
+        },
+        {
+          "t": 172.54,
+          "text": "morning"
+        }
+      ]
+    },
+    {
+      "start": 173.08,
+      "end": 174.24,
+      "text": "Don't run",
+      "words": [
+        {
+          "t": 173.08,
+          "text": "Don't"
+        },
+        {
+          "t": 174.06,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 174.24,
+      "end": 175.72,
+      "text": "To the match",
+      "words": [
+        {
+          "t": 174.24,
+          "text": "To"
+        },
+        {
+          "t": 174.82,
+          "text": "the"
+        },
+        {
+          "t": 175.16,
+          "text": "match"
+        }
+      ]
+    },
+    {
+      "start": 175.72,
+      "end": 178.16,
+      "text": "What if I disappear",
+      "words": [
+        {
+          "t": 175.72,
+          "text": "What"
+        },
+        {
+          "t": 177.08,
+          "text": "if"
+        },
+        {
+          "t": 177.34,
+          "text": "I"
+        },
+        {
+          "t": 177.56,
+          "text": "disappear"
+        }
+      ]
+    },
+    {
+      "start": 178.16,
+      "end": 180.88,
+      "text": "When the signal dies",
+      "words": [
+        {
+          "t": 178.16,
+          "text": "When"
+        },
+        {
+          "t": 179.04,
+          "text": "the"
+        },
+        {
+          "t": 179.52,
+          "text": "signal"
+        },
+        {
+          "t": 179.96,
+          "text": "dies"
+        }
+      ]
+    },
+    {
+      "start": 181.58,
+      "end": 184.06,
+      "text": "Then I'll leave one night on",
+      "words": [
+        {
+          "t": 181.58,
+          "text": "Then"
+        },
+        {
+          "t": 182.38,
+          "text": "I'll"
+        },
+        {
+          "t": 182.66,
+          "text": "leave"
+        },
+        {
+          "t": 182.98,
+          "text": "one"
+        },
+        {
+          "t": 183.28,
+          "text": "night"
+        },
+        {
+          "t": 183.6,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 184.06,
+      "end": 186.96,
+      "text": "But I won't feed the fire",
+      "words": [
+        {
+          "t": 184.06,
+          "text": "But"
+        },
+        {
+          "t": 184.76,
+          "text": "I"
+        },
+        {
+          "t": 184.96,
+          "text": "won't"
+        },
+        {
+          "t": 185.7,
+          "text": "feed"
+        },
+        {
+          "t": 186.08,
+          "text": "the"
+        },
+        {
+          "t": 186.46,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 187.01,
+      "end": 188.34,
+      "text": "Say you hate me",
+      "words": [
+        {
+          "t": 187.01,
+          "text": "Say"
+        },
+        {
+          "t": 187.66,
+          "text": "you"
+        },
+        {
+          "t": 187.88,
+          "text": "hate"
+        },
+        {
+          "t": 188.14,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 188.34,
+      "end": 189.64,
+      "text": "Say you're done",
+      "words": [
+        {
+          "t": 188.34,
+          "text": "Say"
+        },
+        {
+          "t": 188.84,
+          "text": "you're"
+        },
+        {
+          "t": 189.3,
+          "text": "done"
+        }
+      ]
+    },
+    {
+      "start": 189.64,
+      "end": 191.0,
+      "text": "Say anything",
+      "words": [
+        {
+          "t": 189.64,
+          "text": "Say"
+        },
+        {
+          "t": 190.42,
+          "text": "anything"
+        }
+      ]
+    },
+    {
+      "start": 191.0,
+      "end": 193.98,
+      "text": "I'm saying no because I love you enough",
+      "words": [
+        {
+          "t": 191.0,
+          "text": "I'm"
+        },
+        {
+          "t": 191.68,
+          "text": "saying"
+        },
+        {
+          "t": 191.94,
+          "text": "no"
+        },
+        {
+          "t": 192.28,
+          "text": "because"
+        },
+        {
+          "t": 192.66,
+          "text": "I"
+        },
+        {
+          "t": 193.16,
+          "text": "love"
+        },
+        {
+          "t": 193.54,
+          "text": "you"
+        },
+        {
+          "t": 193.88,
+          "text": "enough"
+        }
+      ]
+    },
+    {
+      "start": 196.544,
+      "end": 198.28,
+      "text": "Not to become another one",
+      "words": [
+        {
+          "t": 196.544,
+          "text": "Not"
+        },
+        {
+          "t": 196.72,
+          "text": "to"
+        },
+        {
+          "t": 196.86,
+          "text": "become"
+        },
+        {
+          "t": 197.2,
+          "text": "another"
+        },
+        {
+          "t": 197.7,
+          "text": "one"
+        }
+      ]
+    },
+    {
+      "start": 199.776,
+      "end": 200.24,
+      "text": "I",
+      "words": [
+        {
+          "t": 199.776,
+          "text": "I"
+        }
+      ]
+    },
+    {
+      "start": 200.9,
+      "end": 202.92,
+      "text": "can miss you and still not answer",
+      "words": [
+        {
+          "t": 200.9,
+          "text": "can"
+        },
+        {
+          "t": 201.0,
+          "text": "miss"
+        },
+        {
+          "t": 201.28,
+          "text": "you"
+        },
+        {
+          "t": 201.56,
+          "text": "and"
+        },
+        {
+          "t": 201.7,
+          "text": "still"
+        },
+        {
+          "t": 201.94,
+          "text": "not"
+        },
+        {
+          "t": 202.28,
+          "text": "answer"
+        }
+      ]
+    },
+    {
+      "start": 203.31,
+      "end": 204.22,
+      "text": "I can love you and still not answer",
+      "words": [
+        {
+          "t": 203.31,
+          "text": "I"
+        },
+        {
+          "t": 203.68,
+          "text": "can"
+        },
+        {
+          "t": 203.78,
+          "text": "love"
+        },
+        {
+          "t": 204.08,
+          "text": "you"
+        },
+        {
+          "t": 204.22,
+          "text": "and"
+        },
+        {
+          "t": 204.22,
+          "text": "still"
+        },
+        {
+          "t": 204.22,
+          "text": "not"
+        },
+        {
+          "t": 204.22,
+          "text": "answer"
+        }
+      ]
+    },
+    {
+      "start": 204.22,
+      "end": 205.78,
+      "text": "I can love you and leave the room",
+      "words": [
+        {
+          "t": 204.22,
+          "text": "I"
+        },
+        {
+          "t": 204.22,
+          "text": "can"
+        },
+        {
+          "t": 204.22,
+          "text": "love"
+        },
+        {
+          "t": 204.22,
+          "text": "you"
+        },
+        {
+          "t": 204.32,
+          "text": "and"
+        },
+        {
+          "t": 205.34,
+          "text": "leave"
+        },
+        {
+          "t": 205.44,
+          "text": "the"
+        },
+        {
+          "t": 205.68,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 206.12,
+      "end": 209.18,
+      "text": "I can pray that you'll find daylight",
+      "words": [
+        {
+          "t": 206.12,
+          "text": "I"
+        },
+        {
+          "t": 207.12,
+          "text": "can"
+        },
+        {
+          "t": 207.22,
+          "text": "pray"
+        },
+        {
+          "t": 207.46,
+          "text": "that"
+        },
+        {
+          "t": 207.968,
+          "text": "you'll"
+        },
+        {
+          "t": 208.18,
+          "text": "find"
+        },
+        {
+          "t": 208.54,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 211.872,
+      "end": 213.84,
+      "text": "Without becoming your moon",
+      "words": [
+        {
+          "t": 211.872,
+          "text": "Without"
+        },
+        {
+          "t": 212.1,
+          "text": "becoming"
+        },
+        {
+          "t": 212.9,
+          "text": "your"
+        },
+        {
+          "t": 213.72,
+          "text": "moon"
+        }
+      ]
+    },
+    {
+      "start": 213.84,
+      "end": 215.52,
+      "text": "I can hold all the good parts",
+      "words": [
+        {
+          "t": 213.84,
+          "text": "I"
+        },
+        {
+          "t": 213.94,
+          "text": "can"
+        },
+        {
+          "t": 214.12,
+          "text": "hold"
+        },
+        {
+          "t": 214.32,
+          "text": "all"
+        },
+        {
+          "t": 214.68,
+          "text": "the"
+        },
+        {
+          "t": 214.8,
+          "text": "good"
+        },
+        {
+          "t": 215.02,
+          "text": "parts"
+        }
+      ]
+    },
+    {
+      "start": 215.56,
+      "end": 218.2,
+      "text": "And still bury the blade",
+      "words": [
+        {
+          "t": 215.56,
+          "text": "And"
+        },
+        {
+          "t": 216.44,
+          "text": "still"
+        },
+        {
+          "t": 216.74,
+          "text": "bury"
+        },
+        {
+          "t": 217.24,
+          "text": "the"
+        },
+        {
+          "t": 217.78,
+          "text": "blade"
+        }
+      ]
+    },
+    {
+      "start": 218.2,
+      "end": 221.28,
+      "text": "I can remember your soft voice",
+      "words": [
+        {
+          "t": 218.2,
+          "text": "I"
+        },
+        {
+          "t": 218.84,
+          "text": "can"
+        },
+        {
+          "t": 219.18,
+          "text": "remember"
+        },
+        {
+          "t": 219.88,
+          "text": "your"
+        },
+        {
+          "t": 220.34,
+          "text": "soft"
+        },
+        {
+          "t": 220.62,
+          "text": "voice"
+        }
+      ]
+    },
+    {
+      "start": 221.28,
+      "end": 224.18,
+      "text": "Without entering the cage",
+      "words": [
+        {
+          "t": 221.28,
+          "text": "Without"
+        },
+        {
+          "t": 222.2,
+          "text": "entering"
+        },
+        {
+          "t": 222.88,
+          "text": "the"
+        },
+        {
+          "t": 223.62,
+          "text": "cage"
+        }
+      ]
+    },
+    {
+      "start": 224.18,
+      "end": 227.1,
+      "text": "I can cry for the old days",
+      "words": [
+        {
+          "t": 224.18,
+          "text": "I"
+        },
+        {
+          "t": 224.64,
+          "text": "can"
+        },
+        {
+          "t": 225.0,
+          "text": "cry"
+        },
+        {
+          "t": 225.42,
+          "text": "for"
+        },
+        {
+          "t": 226.0,
+          "text": "the"
+        },
+        {
+          "t": 226.34,
+          "text": "old"
+        },
+        {
+          "t": 226.72,
+          "text": "days"
+        }
+      ]
+    },
+    {
+      "start": 227.456,
+      "end": 229.22,
+      "text": "Without pulling you through",
+      "words": [
+        {
+          "t": 227.456,
+          "text": "Without"
+        },
+        {
+          "t": 227.66,
+          "text": "pulling"
+        },
+        {
+          "t": 228.18,
+          "text": "you"
+        },
+        {
+          "t": 228.82,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 229.31,
+      "end": 232.448,
+      "text": "Another night, we're the worst thing",
+      "words": [
+        {
+          "t": 229.31,
+          "text": "Another"
+        },
+        {
+          "t": 230.26,
+          "text": "night,"
+        },
+        {
+          "t": 231.2,
+          "text": "we're"
+        },
+        {
+          "t": 231.58,
+          "text": "the"
+        },
+        {
+          "t": 231.808,
+          "text": "worst"
+        },
+        {
+          "t": 232.16,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 232.54,
+      "end": 234.2,
+      "text": "I say, be kind",
+      "words": [
+        {
+          "t": 232.54,
+          "text": "I"
+        },
+        {
+          "t": 233.2,
+          "text": "say,"
+        },
+        {
+          "t": 233.78,
+          "text": "be"
+        },
+        {
+          "t": 234.04,
+          "text": "kind"
+        }
+      ]
+    },
+    {
+      "start": 234.2,
+      "end": 235.02,
+      "text": "It comes true",
+      "words": [
+        {
+          "t": 234.2,
+          "text": "It"
+        },
+        {
+          "t": 234.46,
+          "text": "comes"
+        },
+        {
+          "t": 234.46,
+          "text": "true"
+        }
+      ]
+    },
+    {
+      "start": 236.18,
+      "end": 237.792,
+      "text": "I won't be your fire",
+      "words": [
+        {
+          "t": 236.18,
+          "text": "I"
+        },
+        {
+          "t": 236.28,
+          "text": "won't"
+        },
+        {
+          "t": 236.96,
+          "text": "be"
+        },
+        {
+          "t": 237.06,
+          "text": "your"
+        },
+        {
+          "t": 237.4,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 239.04,
+      "end": 241.152,
+      "text": "Just because you missed the burn",
+      "words": [
+        {
+          "t": 239.04,
+          "text": "Just"
+        },
+        {
+          "t": 239.14,
+          "text": "because"
+        },
+        {
+          "t": 239.54,
+          "text": "you"
+        },
+        {
+          "t": 240.16,
+          "text": "missed"
+        },
+        {
+          "t": 240.52,
+          "text": "the"
+        },
+        {
+          "t": 240.88,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 241.34,
+      "end": 243.872,
+      "text": "I won't say the sharp words",
+      "words": [
+        {
+          "t": 241.34,
+          "text": "I"
+        },
+        {
+          "t": 241.86,
+          "text": "won't"
+        },
+        {
+          "t": 242.32,
+          "text": "say"
+        },
+        {
+          "t": 242.6,
+          "text": "the"
+        },
+        {
+          "t": 243.008,
+          "text": "sharp"
+        },
+        {
+          "t": 243.36,
+          "text": "words"
+        }
+      ]
+    },
+    {
+      "start": 244.54,
+      "end": 246.74,
+      "text": "Just to make the silence hurt",
+      "words": [
+        {
+          "t": 244.54,
+          "text": "Just"
+        },
+        {
+          "t": 244.64,
+          "text": "to"
+        },
+        {
+          "t": 244.928,
+          "text": "make"
+        },
+        {
+          "t": 245.44,
+          "text": "the"
+        },
+        {
+          "t": 245.62,
+          "text": "silence"
+        },
+        {
+          "t": 246.3,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 246.74,
+      "end": 249.0,
+      "text": "I know you want the thunder",
+      "words": [
+        {
+          "t": 246.74,
+          "text": "I"
+        },
+        {
+          "t": 247.168,
+          "text": "know"
+        },
+        {
+          "t": 247.38,
+          "text": "you"
+        },
+        {
+          "t": 247.72,
+          "text": "want"
+        },
+        {
+          "t": 248.14,
+          "text": "the"
+        },
+        {
+          "t": 248.38,
+          "text": "thunder"
+        }
+      ]
+    },
+    {
+      "start": 249.0,
+      "end": 251.62,
+      "text": "When the quiet gets too loud",
+      "words": [
+        {
+          "t": 249.0,
+          "text": "When"
+        },
+        {
+          "t": 249.5,
+          "text": "the"
+        },
+        {
+          "t": 250.08,
+          "text": "quiet"
+        },
+        {
+          "t": 250.24,
+          "text": "gets"
+        },
+        {
+          "t": 250.84,
+          "text": "too"
+        },
+        {
+          "t": 251.16,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 251.96,
+      "end": 252.34,
+      "text": "But I",
+      "words": [
+        {
+          "t": 251.96,
+          "text": "But"
+        },
+        {
+          "t": 252.06,
+          "text": "I"
+        }
+      ]
+    },
+    {
+      "start": 253.12,
+      "end": 254.64,
+      "text": "won't be your reason",
+      "words": [
+        {
+          "t": 253.12,
+          "text": "won't"
+        },
+        {
+          "t": 253.36,
+          "text": "be"
+        },
+        {
+          "t": 253.7,
+          "text": "your"
+        },
+        {
+          "t": 253.94,
+          "text": "reason"
+        }
+      ]
+    },
+    {
+      "start": 254.88,
+      "end": 257.02,
+      "text": "To keep breaking down",
+      "words": [
+        {
+          "t": 254.88,
+          "text": "To"
+        },
+        {
+          "t": 255.808,
+          "text": "keep"
+        },
+        {
+          "t": 256.02,
+          "text": "breaking"
+        },
+        {
+          "t": 256.44,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 258.24,
+      "end": 259.776,
+      "text": "I won't be your fire",
+      "words": [
+        {
+          "t": 258.24,
+          "text": "I"
+        },
+        {
+          "t": 258.4,
+          "text": "won't"
+        },
+        {
+          "t": 258.88,
+          "text": "be"
+        },
+        {
+          "t": 259.16,
+          "text": "your"
+        },
+        {
+          "t": 259.44,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 260.72,
+      "end": 262.68,
+      "text": "I won't be your knife",
+      "words": [
+        {
+          "t": 260.72,
+          "text": "I"
+        },
+        {
+          "t": 261.16,
+          "text": "won't"
+        },
+        {
+          "t": 261.62,
+          "text": "be"
+        },
+        {
+          "t": 261.86,
+          "text": "your"
+        },
+        {
+          "t": 262.22,
+          "text": "knife"
+        }
+      ]
+    },
+    {
+      "start": 262.71,
+      "end": 265.9,
+      "text": "I won't be the dark thing",
+      "words": [
+        {
+          "t": 262.71,
+          "text": "I"
+        },
+        {
+          "t": 263.86,
+          "text": "won't"
+        },
+        {
+          "t": 264.32,
+          "text": "be"
+        },
+        {
+          "t": 264.54,
+          "text": "the"
+        },
+        {
+          "t": 264.86,
+          "text": "dark"
+        },
+        {
+          "t": 265.44,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 266.02,
+      "end": 268.256,
+      "text": "That helps you hate your life",
+      "words": [
+        {
+          "t": 266.02,
+          "text": "That"
+        },
+        {
+          "t": 266.496,
+          "text": "helps"
+        },
+        {
+          "t": 266.752,
+          "text": "you"
+        },
+        {
+          "t": 266.98,
+          "text": "hate"
+        },
+        {
+          "t": 267.36,
+          "text": "your"
+        },
+        {
+          "t": 267.68,
+          "text": "life"
+        }
+      ]
+    },
+    {
+      "start": 268.288,
+      "end": 271.2,
+      "text": "I'll leave a little light on",
+      "words": [
+        {
+          "t": 268.288,
+          "text": "I'll"
+        },
+        {
+          "t": 269.28,
+          "text": "leave"
+        },
+        {
+          "t": 269.48,
+          "text": "a"
+        },
+        {
+          "t": 269.72,
+          "text": "little"
+        },
+        {
+          "t": 270.14,
+          "text": "light"
+        },
+        {
+          "t": 270.82,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 271.2,
+      "end": 273.48,
+      "text": "But I'm walking out now",
+      "words": [
+        {
+          "t": 271.2,
+          "text": "But"
+        },
+        {
+          "t": 271.46,
+          "text": "I'm"
+        },
+        {
+          "t": 271.9,
+          "text": "walking"
+        },
+        {
+          "t": 272.36,
+          "text": "out"
+        },
+        {
+          "t": 272.92,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 273.51,
+      "end": 274.16,
+      "text": "I",
+      "words": [
+        {
+          "t": 273.51,
+          "text": "I"
+        }
+      ]
+    },
+    {
+      "start": 275.2,
+      "end": 276.55,
+      "text": "won't be your reason",
+      "words": [
+        {
+          "t": 275.2,
+          "text": "won't"
+        },
+        {
+          "t": 275.392,
+          "text": "be"
+        },
+        {
+          "t": 275.64,
+          "text": "your"
+        },
+        {
+          "t": 275.9,
+          "text": "reason"
+        }
+      ]
+    },
+    {
+      "start": 277.26,
+      "end": 279.0,
+      "text": "To keep breaking down",
+      "words": [
+        {
+          "t": 277.26,
+          "text": "To"
+        },
+        {
+          "t": 277.72,
+          "text": "keep"
+        },
+        {
+          "t": 278.08,
+          "text": "breaking"
+        },
+        {
+          "t": 278.4,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 279.07,
+      "end": 280.7,
+      "text": "I hope you get through tonight",
+      "words": [
+        {
+          "t": 279.07,
+          "text": "I"
+        },
+        {
+          "t": 279.648,
+          "text": "hope"
+        },
+        {
+          "t": 279.86,
+          "text": "you"
+        },
+        {
+          "t": 279.98,
+          "text": "get"
+        },
+        {
+          "t": 280.16,
+          "text": "through"
+        },
+        {
+          "t": 280.34,
+          "text": "tonight"
+        }
+      ]
+    },
+    {
+      "start": 281.46,
+      "end": 284.1,
+      "text": "I hope you don't need pain",
+      "words": [
+        {
+          "t": 281.46,
+          "text": "I"
+        },
+        {
+          "t": 282.24,
+          "text": "hope"
+        },
+        {
+          "t": 282.48,
+          "text": "you"
+        },
+        {
+          "t": 282.62,
+          "text": "don't"
+        },
+        {
+          "t": 282.98,
+          "text": "need"
+        },
+        {
+          "t": 283.2,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 284.14,
+      "end": 287.64,
+      "text": "To know somebody loved you",
+      "words": [
+        {
+          "t": 284.14,
+          "text": "To"
+        },
+        {
+          "t": 285.02,
+          "text": "know"
+        },
+        {
+          "t": 285.2,
+          "text": "somebody"
+        },
+        {
+          "t": 285.84,
+          "text": "loved"
+        },
+        {
+          "t": 287.3,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 287.64,
+      "end": 290.04,
+      "text": "I hope one day",
+      "words": [
+        {
+          "t": 287.64,
+          "text": "I"
+        },
+        {
+          "t": 288.224,
+          "text": "hope"
+        },
+        {
+          "t": 288.74,
+          "text": "one"
+        },
+        {
+          "t": 289.34,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 291.904,
+      "end": 292.86,
+      "text": "Quiet feels safe",
+      "words": [
+        {
+          "t": 291.904,
+          "text": "Quiet"
+        },
+        {
+          "t": 292.1,
+          "text": "feels"
+        },
+        {
+          "t": 292.4,
+          "text": "safe"
+        }
+      ]
+    },
+    {
+      "start": 296.82,
+      "end": 298.5,
+      "text": "I won't be your fire",
+      "words": [
+        {
+          "t": 296.82,
+          "text": "I"
+        },
+        {
+          "t": 296.92,
+          "text": "won't"
+        },
+        {
+          "t": 297.36,
+          "text": "be"
+        },
+        {
+          "t": 297.42,
+          "text": "your"
+        },
+        {
+          "t": 297.9,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 301.96,
+      "end": 303.68,
+      "text": "But I'll leave you the light",
+      "words": [
+        {
+          "t": 301.96,
+          "text": "But"
+        },
+        {
+          "t": 302.06,
+          "text": "I'll"
+        },
+        {
+          "t": 302.32,
+          "text": "leave"
+        },
+        {
+          "t": 302.66,
+          "text": "you"
+        },
+        {
+          "t": 303.04,
+          "text": "the"
+        },
+        {
+          "t": 303.36,
+          "text": "light"
+        }
+      ]
+    }
+  ]
+}

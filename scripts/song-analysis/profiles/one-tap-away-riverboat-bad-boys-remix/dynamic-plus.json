@@ -1,0 +1,25 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 59,
+   "end": 84,
+   "reactor": "aquarium",
+   "why": ""
+  },
+  {
+   "start": 129,
+   "end": 137,
+   "reactor": "tarot",
+   "why": ""
+  }
+ ],
+ "words": {
+  "alone": "fall",
+  "tap": "glitch",
+  "stacks": "dissolve",
+  "scroll": "tvoff",
+  "stars": "shimmer",
+  "names": "redact"
+ }
+}

@@ -1,0 +1,125 @@
+[
+  {
+    "id": "paper-that-cut-you",
+    "planet": {
+      "analysis": {
+        "summary": "The song explores the internalization of paranoia and self-sabotage, where a dark inner voice acts as a 'paper cut' that wounds the narrator from within while manipulating their perception of reality.",
+        "overallMood": "Paranoid",
+        "themes": [
+          "Internalized Paranoia",
+          "Self-Sabotage",
+          "Shadow Self Projection",
+          "Mental Distortion",
+          "Industrial Anxiety",
+          "Psychological Warfare"
+        ],
+        "palette": [
+          "#1a1a2e",
+          "#c0392b",
+          "#f4d03f",
+          "#7f8c8d"
+        ],
+        "sections": [
+          {
+            "sectionName": "Intro",
+            "emotion": "Eerie Whispering",
+            "intensity": 0.6,
+            "colorHintHex": "#1a1a2e",
+            "start": 2.44
+          },
+          {
+            "sectionName": "Verse 1",
+            "emotion": "Cynical Confession",
+            "intensity": 0.75,
+            "colorHintHex": "#c0392b",
+            "start": 30.7
+          },
+          {
+            "sectionName": "Pre-Chorus",
+            "emotion": "Building Tension",
+            "intensity": 0.8,
+            "colorHintHex": "#f4d03f",
+            "start": 109.95
+          },
+          {
+            "sectionName": "Chorus",
+            "emotion": "Explosive Aggression",
+            "intensity": 1,
+            "colorHintHex": "#e74c3c",
+            "start": 119
+          },
+          {
+            "sectionName": "Post-Chorus",
+            "emotion": "Ominous Stalking",
+            "intensity": 0.85,
+            "colorHintHex": "#2d3b4f",
+            "start": 140.48
+          },
+          {
+            "sectionName": "Verse 2",
+            "emotion": "Chaotic Looping",
+            "intensity": 0.9,
+            "colorHintHex": "#7f8c8d",
+            "start": 147.66
+          },
+          {
+            "sectionName": "Pre-Chorus",
+            "emotion": "Frantic Denial",
+            "intensity": 0.85,
+            "colorHintHex": "#e67e22",
+            "start": 228.02
+          },
+          {
+            "sectionName": "Chorus",
+            "emotion": "Maximal Distortion",
+            "intensity": 1,
+            "colorHintHex": "#c0392b",
+            "start": 236.55
+          },
+          {
+            "sectionName": "Bridge/Outro Part A",
+            "emotion": "Final Realization",
+            "intensity": 0.75,
+            "colorHintHex": "#1a1a2e",
+            "start": 297.1
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Paranoid",
+            "emotion": "Fearful Vigilance",
+            "imageryPrompt": "A shadowy figure with glowing red eyes peering through a cracked window at night, surrounded by flickering fluorescent lights and static noise."
+          },
+          {
+            "word": "Cut",
+            "emotion": "Sharp Pain",
+            "imageryPrompt": "Close up of a jagged paper cut on pale skin with bright red blood seeping into dark grime, sharp focus on the wound edges."
+          },
+          {
+            "word": "Static",
+            "emotion": "Digital Noise",
+            "imageryPrompt": "Analog television snowstorm blending with swirling dust particles and glitching digital artifacts in a dimly lit room."
+          },
+          {
+            "word": "Shadow",
+            "emotion": "Oppressive Presence",
+            "imageryPrompt": "A distorted, elongated silhouette stretching across a concrete floor, seemingly detaching from the wall to loom over the subject."
+          },
+          {
+            "word": "Voice",
+            "emotion": "Internal Conflict",
+            "imageryPrompt": "Sound waves visualized as jagged black tendrils wrapping around a human throat and ears, emitting sparks of electricity."
+          },
+          {
+            "word": "Mirror",
+            "emotion": "Distorted Reflection",
+            "imageryPrompt": "A cracked vanity mirror reflecting not the person's face but a menacing stranger with sharp teeth standing in their place."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

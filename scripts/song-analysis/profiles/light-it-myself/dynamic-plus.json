@@ -1,0 +1,38 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 24,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "strings"
+    ],
+    "label": "THE ACHING STRINGS ONL"
+   },
+   "why": ""
+  },
+  {
+   "start": 58,
+   "end": 76,
+   "reactor": "fireworks",
+   "why": "Capturing the explosive release and defiant declaration of self-illumination in the first "
+  },
+  {
+   "start": 185,
+   "end": 203,
+   "reactor": "orbit",
+   "why": "Reflecting the 'Triumphant self-empowerment' and polished sheen of the Drop by placing the"
+  }
+ ],
+ "words": {
+  "bleeding": "liquid",
+  "fire": "bloom",
+  "darkness": "shatter",
+  "alone": "rise",
+  "matches": "carve",
+  "quiet": "whisper",
+  "burning": "glitch"
+ }
+}

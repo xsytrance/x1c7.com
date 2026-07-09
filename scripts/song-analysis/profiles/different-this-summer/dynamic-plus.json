@@ -1,0 +1,44 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 20,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "keys"
+    ],
+    "label": "THE ATMOSPHERE AWAKENS"
+   },
+   "why": "Captures the 'Anticipatory warmth' of the intro where pads and keys set the deep house moo"
+  },
+  {
+   "start": 68,
+   "end": 93,
+   "reactor": "fireworks",
+   "why": "Matches the explosive confidence and collective energy of the first Chorus with festival-s"
+  },
+  {
+   "start": 108,
+   "end": 133,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "lead"
+    ],
+    "label": "THE DRIVE TO TRANSFORM"
+   },
+   "why": "Focuses on the Post-Chorus 'Focused ambition' where bass and lead synth carry the strategi"
+  }
+ ],
+ "words": {
+  "fade": "dissolve",
+  "weather": "bloom",
+  "vibe": "pulse",
+  "summer": "shimmer",
+  "different": "rise",
+  "waiting": "freeze",
+  "light": "neon"
+ }
+}

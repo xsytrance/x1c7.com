@@ -1,0 +1,109 @@
+[
+  {
+    "id": "still-got-5-on-it",
+    "planet": {
+      "analysis": {
+        "summary": "The song is a gritty reflection on how inflation and changing markets have devalued money ('five') while destroying the community bonds and quality found in 'the good old days' of unbranded, shared experiences. It captures a melancholic nostalgia for an era where value was defined by trust and camaraderie rather than corporate branding or rising prices.",
+        "overallMood": "Nostalgic Gritty Noir",
+        "themes": [
+          "Economic Devaluation",
+          "Lost Community Trust",
+          "Chemical Nostalgia vs. Modern Pollution",
+          "Urban Decay",
+          "Shared Struggle"
+        ],
+        "palette": [
+          "#1A0F0F",
+          "#2C241B",
+          "#5D4E37",
+          "#896F4E"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Confused longing and weary resignation as the narrator questions where value has gone.",
+            "intensity": 0.2,
+            "colorHint": "#1a0f0f",
+            "imageryPrompt": "Low-angle shot of a dimly lit alleyway with steam rising from manhole covers reflecting neon signs that are flickering out.",
+            "start": 6.14
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Raw storytelling and bittersweet memory, contrasting past unity with current isolation.",
+            "intensity": 0.45,
+            "colorHint": "#2c241b",
+            "imageryPrompt": "Close-up of weathered hands holding a small crumpled bill against the backdrop of cracked windowpanes and dust motes dancing in slanted light.",
+            "start": 39.7
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Aggressive lamentation, repeating the core truth that money no longer holds its spiritual or communal weight.",
+            "intensity": 0.85,
+            "colorHint": "#4e3d2b",
+            "imageryPrompt": "Wide shot of a rainy city street at midnight where puddles reflect not faces but generic barcodes and chemical runoff.",
+            "start": 113.56
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Urgent plea for return to shared values and simple, honest connection.",
+            "intensity": 0.55,
+            "colorHint": "#4a3b28",
+            "imageryPrompt": "Silhouette of friends sitting in a semi-circle around a small table under the glow of a single streetlamp, passing an object back and forth.",
+            "start": 148.83
+          },
+          {
+            "name": "Drop",
+            "emotion": "Defeated acceptance and cynical dismissal of repeated attempts to fix what is broken.",
+            "intensity": 0.75,
+            "colorHint": "#2c1b18",
+            "imageryPrompt": "Abstract visual of a heavy stone door slamming shut in slow motion with dust particles freezing in the air.",
+            "start": 186.94
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Resigned observation of value eroding over time, accepting that 'five' is now dead.",
+            "intensity": 0.45,
+            "colorHint": "#1a1816",
+            "imageryPrompt": "Time-lapse style shot showing a vibrant neighborhood slowly turning gray and silent as the colors drain from the buildings.",
+            "start": 192.22
+          }
+        ],
+        "keywords": [
+          {
+            "word": "five",
+            "emotion": "Loss of value/trust",
+            "imageryPrompt": "A small crumpled dollar bill floating in a void, its edges burning away into gray ash."
+          },
+          {
+            "word": "mystery",
+            "emotion": "Dread/uncertainty",
+            "imageryPrompt": "Thick fog rolling off dark water where shadowy figures stand motionless under flickering sodium lights."
+          },
+          {
+            "word": "candy",
+            "emotion": "Disgust/fake sweetness",
+            "imageryPrompt": "Bright artificial colors oozing from a cracked pipe, contrasting sharply with the dull grime around it."
+          },
+          {
+            "word": "brand",
+            "emotion": "Alienation/indifference",
+            "imageryPrompt": "A giant corporate logo stamped over a faceless crowd of people walking in unison like robots."
+          },
+          {
+            "word": "trust",
+            "emotion": "Heartbreak/betrayal",
+            "imageryPrompt": "Two hands reaching out to shake but fading into smoke before they make contact, leaving only empty air."
+          },
+          {
+            "word": "chemical",
+            "emotion": "Illness/fear",
+            "imageryPrompt": "Viscous purple liquid dripping from a ceiling onto a rusty floor, bubbling with unnatural light."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

@@ -55,3 +55,8 @@ scripts/song-art/collector/gen/
 scripts/song-art/collector/thumbs/
 scripts/song-art/collector/web/
 scripts/song-art/collector/originals/
+
+# ultimate-analyzer heavy artifacts (audio proxies re-downloadable from R2/Suno)
+scripts/song-analysis/profiles/*/release.mp3
+scripts/song-analysis/profiles/*/cover.jpeg
+scripts/song-analysis/profiles/*/stems-src/

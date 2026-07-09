@@ -1,0 +1,105 @@
+{
+  "analysis": {
+    "summary": "This song is a motivational anthem celebrating self-improvement and resilience at the start of every month, urging listeners to leave past failures behind ('walk it out') and rebuild their lives through discipline and hard work. It blends East Coast hip-hop roots with military precision and borough pride to create an atmosphere of triumphant renewal.",
+    "overallMood": "Triumphant Discipline",
+    "themes": [
+      "Resilience & Reinvention",
+      "Military Precision in Daily Life",
+      "Borough Pride (Queens/Brooklyn)",
+      "Turning Void into Gold",
+      "Discipline Over Sympathy"
+    ],
+    "palette": [
+      "#FF4500",
+      "#1C2E38",
+      "#DAA520",
+      "#F4A460"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anxious Awakening",
+        "intensity": 0.76,
+        "colorHint": "#1c2e38",
+        "start": 0.02
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Ultimate Victory",
+        "intensity": 1,
+        "colorHint": "#ff4500",
+        "start": 6.76
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Grounded Hustle",
+        "intensity": 0.89,
+        "colorHint": "#daa520",
+        "start": 28.83
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Ascension & Focus",
+        "intensity": 0.62,
+        "colorHint": "#f4a460",
+        "start": 84.82
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Intense Challenge",
+        "intensity": 0.34,
+        "colorHint": "#c71585",
+        "start": 109.58
+      },
+      {
+        "name": "Verse 3",
+        "emotion": "Commanding Motion",
+        "intensity": 0.27,
+        "colorHint": "#daa520",
+        "start": 139
+      },
+      {
+        "name": "Outro",
+        "emotion": "Reflective Resolve",
+        "intensity": 0.18,
+        "colorHint": "#1c2e38",
+        "start": 146.16
+      }
+    ],
+    "keywords": [
+      {
+        "word": "walk",
+        "emotion": "Determined Action",
+        "imageryPrompt": "A silhouette of a person stepping forward with heavy boots, leaving tire tracks behind them on wet asphalt as golden sunlight breaks through grey morning clouds."
+      },
+      {
+        "word": "void",
+        "emotion": "Alchemical Transformation",
+        "imageryPrompt": "Abstract swirling darkness rapidly transforming into sparkling molten metal that solidifies into a bright, shining coin under intense scrutiny of a lens."
+      },
+      {
+        "word": "discipline",
+        "emotion": "Rigid Focus",
+        "imageryPrompt": "A close-up of a soldier's eye reflecting the morning sun behind iron bars and stacks of neatly organized files in a dimly lit office."
+      },
+      {
+        "word": "move",
+        "emotion": "Aggressive Advancement",
+        "imageryPrompt": "An athlete pushing through a dense wall of smoke, clearing space for themselves with dynamic motion blur and glowing footprints ahead."
+      },
+      {
+        "word": "borough",
+        "emotion": "Heritage Strength",
+        "imageryPrompt": "A collage of brick buildings blending into futuristic skyscrapers, overlaid with vibrant graffiti art featuring flags from the Dominican Republic and Puerto Rico."
+      },
+      {
+        "word": "dishonor",
+        "emotion": "Ultimate Integrity",
+        "imageryPrompt": "A stoic statue standing on a cliff edge overlooking an ocean, holding a sword that glows with inner light against the backdrop of a storm."
+      }
+    ]
+  },
+  "styleHint": "95 BPM East Coast hip-hop anthem, fast melodic rap harmonies, rapid-fire crew vocals, layered group chants, New York summer energy, booming kick drum, deep warm bass, crisp snare, subtle Latin percussion, turntable scratches, soulful piano stabs, triumphant brass accents, crowd-response hooks, Bone-inspired harmony flows without imitation, borough pride, Dominican and Puerto Rican flavor, street wisdom, military discipline, motivational energy, celebration of progress and self-improvement, block party atmosphere, memorable singalong chorus, multiple rappers trading bars, occasional Spanish phrases, powerful final chorus with crowd vocals. Classic hip-hop roots mixed with modern clean production. Aim for 4:30.",
+  "assets": {},
+  "generatedAt": "2026-07-09T17:56:19.649Z"
+}

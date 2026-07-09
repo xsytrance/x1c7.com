@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 21,
+   "end": 37,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "keys"
+    ],
+    "label": "ACOUSTIC GHOSTS ONLY"
+   },
+   "why": "Drum-cut window (21-25s) allows for an intimate instrumental break focusing on the song's "
+  },
+  {
+   "start": 60,
+   "end": 85,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "bass"
+    ],
+    "label": "RHYTHM & GRAVITY ONLY"
+   },
+   "why": "Drum-cut window (60-63s) provides a stripped-back groove to emphasize the bassline's weigh"
+  }
+ ],
+ "words": {
+  "temblé": "tremor",
+  "cine": "glitch",
+  "agua": "dissolve",
+  "verdad": "slam",
+  "guárdala": "shatter"
+ }
+}

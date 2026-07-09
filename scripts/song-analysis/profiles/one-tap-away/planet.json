@@ -1,0 +1,102 @@
+[
+  {
+    "id": "one-tap-away",
+    "planet": {
+      "analysis": {
+        "summary": "The song critiques the paradoxical isolation inherent in digital connectivity, exploring how social media platforms create a physical proximity that feels like emotional distance.",
+        "overallMood": "melancholic and introspective",
+        "themes": [
+          "Digital Isolation",
+          "Superficial Connectivity",
+          "Loss of Authenticity",
+          "Social Comparison"
+        ],
+        "palette": [
+          "#1A202C",
+          "#4A5568",
+          "#9F7AEA",
+          "#EAB308"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Quiet anticipation and fading memory",
+            "intensity": 0.2,
+            "colorHint": "#1a202c",
+            "start": 3.2
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Nostalgic realization of digital decay",
+            "intensity": 0.45,
+            "colorHint": "#4a5568",
+            "start": 3.2
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Deepening resignation and heartache",
+            "intensity": 0.8,
+            "colorHint": "#9f7aea",
+            "start": 47.76
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Existential dread in a crowded space",
+            "intensity": 0.85,
+            "colorHint": "#eab308",
+            "start": 87.4
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Aggressive observation of performative love",
+            "intensity": 0.65,
+            "colorHint": "#4a5568",
+            "start": 91.64
+          },
+          {
+            "name": "Outro",
+            "emotion": "Echoing emptiness and final solitude",
+            "intensity": 0.35,
+            "colorHint": "#1a202c",
+            "start": 166.76
+          }
+        ],
+        "keywords": [
+          {
+            "word": "alone",
+            "emotion": "Deep loneliness despite proximity",
+            "imageryPrompt": "a solitary figure standing in the center of a vast, dark server room filled with blinking red lights, feeling physically cold"
+          },
+          {
+            "word": "tap",
+            "emotion": "Futile mechanical action",
+            "imageryPrompt": "a glowing smartphone screen reflecting a person's tired eyes as their thumb hovers over the send button without touching it"
+          },
+          {
+            "word": "strangers",
+            "emotion": "Distant admiration",
+            "imageryPrompt": "silhouettes of people watching celebrities on large screens, giving thumbs up while ignoring each other in a dark room"
+          },
+          {
+            "word": "fake",
+            "emotion": "Hollow deception",
+            "imageryPrompt": "a cracked mirror reflecting a distorted face behind an augmented reality filter that smooths out all imperfections instantly"
+          },
+          {
+            "word": "reach",
+            "emotion": "Failed connection attempt",
+            "imageryPrompt": "two hands reaching towards each other across a chasm of static electricity and digital noise, unable to make contact"
+          },
+          {
+            "word": "names",
+            "emotion": "Overwhelming identity clutter",
+            "imageryPrompt": "countless user profile names scrolling rapidly on an endless black screen like falling snow made of text that no one reads"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

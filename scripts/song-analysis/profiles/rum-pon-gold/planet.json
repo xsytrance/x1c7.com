@@ -1,0 +1,123 @@
+[
+  {
+    "id": "rum-pon-gold",
+    "planet": {
+      "analysis": {
+        "summary": "A sweaty, raw dancehall anthem celebrating a confident 'crew' in a smoky Brooklyn-to-Kingston club where drinking rum and flashing gold chains fuel an intense, non-stop party vibe.",
+        "overallMood": "Sweaty, Raw, Confident",
+        "themes": [
+          "Club Culture & Grind",
+          "Luxury & Gold Imagery",
+          "Smoke & Atmosphere",
+          "Call-and-Response Energy"
+        ],
+        "palette": [
+          "#FFD700",
+          "#1C1C1C",
+          "#8B4513",
+          "#E63946"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipatory, Hushed Excitement",
+            "intensity": 0.2,
+            "colorHintHex": "#FFD700",
+            "start": 0
+          },
+          {
+            "name": "Verse 1 / Call & Response Setup",
+            "emotion": "Assertive Swagger",
+            "intensity": 0.5,
+            "colorHintHex": "#E63946",
+            "start": 7.87
+          },
+          {
+            "name": "Chorus (Hook) - First Pass",
+            "emotion": "Intoxicating Heat",
+            "intensity": 0.8,
+            "colorHintHex": "#FFD700",
+            "start": 23.81
+          },
+          {
+            "name": "Post-Hook / Verse 2 Start",
+            "emotion": "Kinetic Movement",
+            "intensity": 0.65,
+            "colorHintHex": "#1C1C1C",
+            "start": 40.9
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Aggressive Dominance",
+            "intensity": 0.9,
+            "colorHintHex": "#8B4513",
+            "start": 50.92
+          },
+          {
+            "name": "Chorus (Hook) - Second Pass",
+            "emotion": "Climaxing Fire",
+            "intensity": 0.95,
+            "colorHintHex": "#FFD700",
+            "start": 115.96
+          },
+          {
+            "name": "Breakdown / Bridge",
+            "emotion": "Sensory Overload",
+            "intensity": 0.85,
+            "colorHintHex": "#1C1C1C",
+            "start": 124.44
+          },
+          {
+            "name": "Instrumental Riddim Break / Verse 3 Start",
+            "emotion": "Hypnotic Repetition",
+            "intensity": 0.75,
+            "colorHintHex": "#E63946",
+            "start": 137.18
+          },
+          {
+            "name": "Verse 3",
+            "emotion": "Sated Satisfaction",
+            "intensity": 0.4,
+            "colorHintHex": "#8B4513",
+            "start": 148.08
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Gold",
+            "emotion": "Wealth & Confidence",
+            "imageryPrompt": "Shimmering liquid gold swirling in a crystal cup, reflecting neon club lights on wet skin."
+          },
+          {
+            "word": "Smoke",
+            "emotion": "Hazy Mystery",
+            "imageryPrompt": "Thick blue-grey cigarette smoke curling through the air of a dimly lit basement room with hanging light fixtures."
+          },
+          {
+            "word": "Rum",
+            "emotion": "Intoxicating Warmth",
+            "imageryPrompt": "Deep amber liquid sloshing in tilted red plastic cups, condensation dripping onto wooden tables."
+          },
+          {
+            "word": "Crew",
+            "emotion": "Tribal Unity",
+            "imageryPrompt": "A tight-knit group of dancers moving in perfect sync within a crowded dance floor filled with sweat and energy."
+          },
+          {
+            "word": "Rump",
+            "emotion": "Groovy Sensuality",
+            "imageryPrompt": "Silhouette of hips swaying rhythmically against a backdrop of deep purple shadows and strobe light flares."
+          },
+          {
+            "word": "Hot",
+            "emotion": "Overheating Intensity",
+            "imageryPrompt": "Heat waves distorting the view in a packed nightclub, glowing skin tones under intense overhead lighting."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

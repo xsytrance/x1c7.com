@@ -14,7 +14,7 @@ const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1]]); return a;
 }, []));
 const HOST = args.host || "http://localhost:11434";
-const MODEL = args.model || "qwen2.5:14b"; // strong JSON, no "thinking" channel
+const MODEL = args.model || "qwen3.5:latest"; // faster than 14b; think:false in the request keeps its thinking channel off
 
 // Coerce "FF0000" / "#f00" / "red-ish" to #RRGGBB where possible.
 function hex(v) {
@@ -78,7 +78,7 @@ async function analyze(t) {
   // num_ctx must match onboard-song.mjs's llm() — a differing context size
   // forces Ollama to restart the runner (a full model reload) between stages.
   const body = JSON.stringify({ model: MODEL, stream: true, format: "json", think: false,
-    options: { temperature: 0.6, num_ctx: 8192, num_predict: 2200 },
+    options: { temperature: 0.6, num_ctx: 8192, num_predict: 3200 },
     messages: [{ role: "system", content: sys }, { role: "user", content: user }] });
   const raw = await new Promise((resolve, reject) => {
     const req = http.request(`${HOST}/api/chat`, {
@@ -117,6 +117,10 @@ async function analyze(t) {
   analysis.sections = toSecs(analysis.sections);
   analysis.keywords = toKw(analysis.keywords);
   analysis.themes = arr(analysis.themes);
+  // overallMood sometimes arrives as {name, intensity, palette} — keep the name.
+  if (analysis.overallMood && typeof analysis.overallMood === "object") {
+    analysis.overallMood = String(analysis.overallMood.name ?? analysis.overallMood.mood ?? Object.values(analysis.overallMood)[0] ?? "");
+  }
 
   // Normalize colors to #RRGGBB.
   if (analysis.palette) for (const k of ["primary", "secondary", "accent", "bg"]) analysis.palette[k] = hex(analysis.palette[k]) || analysis.palette[k];

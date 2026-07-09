@@ -1,0 +1,109 @@
+[
+  {
+    "id": "amor-de-verdad",
+    "planet": {
+      "analysis": {
+        "summary": "The song is a raw confessional about rejecting performative or fleeting romantic gestures in favor of authentic, enduring connection amidst vulnerability and fear. It contrasts cinematic illusions with gritty reality to demand genuine presence over empty promises.",
+        "overallMood": "Bittersweet",
+        "themes": [
+          "Authenticity vs Performance",
+          "Vulnerability",
+          "Fear of Abandonment",
+          "Urban Intimacy"
+        ],
+        "palette": [
+          "#1a0f2e",
+          "#c94b36",
+          "#8d755b",
+          "#eaddcf"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Trembling anticipation, quiet intimacy",
+            "intensity": 0.2,
+            "colorHint": "#1a0f2e",
+            "start": 3.3
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Internal conflict and suppressed fear",
+            "intensity": 0.4,
+            "colorHint": "#8d755b",
+            "start": 20.84
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Rising tension seeking clarity",
+            "intensity": 0.6,
+            "colorHint": "#c94b36",
+            "start": 20.84
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Explosive rejection of illusions for truth",
+            "intensity": 1,
+            "colorHint": "#eaddcf",
+            "start": 58.52
+          },
+          {
+            "name": "Drop",
+            "emotion": "Melodic release and desperate plea",
+            "intensity": 0.85,
+            "colorHint": "#c94b36",
+            "start": 58.52
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Angry realization of futility in empty promises",
+            "intensity": 0.75,
+            "colorHint": "#1a0f2e",
+            "start": 96.58
+          },
+          {
+            "name": "Outro",
+            "emotion": "Resigned vulnerability and final plea for presence",
+            "intensity": 0.3,
+            "colorHint": "#8d755b",
+            "start": 107.59
+          }
+        ],
+        "keywords": [
+          {
+            "word": "temblé",
+            "emotion": "Raw physical vulnerability and fear",
+            "imageryPrompt": "A close-up of a hand shaking slightly in the dim light of an empty room, dust motes dancing in a single shaft of weak sunlight."
+          },
+          {
+            "word": "cine",
+            "emotion": "Disappointment with superficiality",
+            "imageryPrompt": "Faded black and white movie tickets lying on a dirty street corner next to an overflowing trash can, rain blurring the background signs."
+          },
+          {
+            "word": "agua",
+            "emotion": "Transient beauty turning into loss",
+            "imageryPrompt": "Clear water flowing rapidly down a cracked concrete drain in a dry city alleyway under harsh midday sun."
+          },
+          {
+            "word": "verdad",
+            "emotion": "Urgent need for reality over fantasy",
+            "imageryPrompt": "A rough, unpolished stone sitting firmly on the ground amidst swirling fog and debris in a gritty urban landscape."
+          },
+          {
+            "word": "guárdala",
+            "emotion": "Fierce boundary setting and self-preservation",
+            "imageryPrompt": "Heavy iron gates closing shut against a storm, casting long shadows over cracked pavement with sparks flying from the hinges."
+          },
+          {
+            "word": "porco",
+            "emotion": "Bitter accusation of worthlessness",
+            "imageryPrompt": "A wilted flower crushed under heavy tires in an alleyway, surrounded by scattered ash and cigarette butts."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

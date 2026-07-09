@@ -1,0 +1,355 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "mi-gente",
+  "generatedAt": "2026-07-09T18:19:00.450Z",
+  "measured": {
+    "bpm": 95.7,
+    "duration": 182.44
+  },
+  "identity": {
+    "title": "Mi Gente",
+    "titleAlternates": [],
+    "genre": "Latin Trap / Reggaeton",
+    "subGenres": [
+      "Urban Latino",
+      "Club Rap"
+    ],
+    "mood": "Aggressive, United, Swaggering, Nighttime",
+    "styleSentence": "A West Coast-infused Latin street anthem driving at a bouncy 98 BPM with deep 808 bass and sharp claps, featuring an aggressive male lead rapper delivering confident Spanglish verses over dark brass hits, siren risers, and minimal piano stabs to create a gritty yet polished barrio block-party atmosphere.",
+    "language": "Spanish",
+    "energy": "high",
+    "vocalStyle": "Confident male lead with crew ad-libs and chant-ready hook"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/mi-gente/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#281808",
+      "#180808",
+      "#181808",
+      "#382818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D",
+      "mode": "major",
+      "confidence": 0.518
+    },
+    "boundaries": [
+      12.45,
+      33.9,
+      62.6,
+      69.85,
+      140.9,
+      148.14,
+      150.47,
+      180.47
+    ],
+    "brightness": 2990.6,
+    "dynamicsDb": 12.3
+  },
+  "lyrics": {
+    "official": true,
+    "language": "spanish",
+    "text": "[Intro - Crew Shouts]\nYeah...\nMi gente...\nDesde el bloque hasta la tarima...\nYa tú sabes.\n\n[Ad-libs]\n¡Wuh!\n¡Dímelo!\n¡Mi gente!\n\n[Hook - Chant / Crew]\nMi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\n\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente\n\n[Verse 1 - Lead Rapper]\nLlegué con la ganga, pero no es pa’ aparentar\nEsto es familia, no se compra con metal\nDesde la esquina donde aprendí a caminar\nHasta los sueños que no nos pudieron quitar\n\nTengo dominicanos, boricuas en la fila\nMexicanos gritando, cubanos con la pila\nColombianos activos, to’ el combo vacila\nSi uno se levanta, la mesa se multiplica\n\nNo me hables de lealtad si no estabas en el frío\nCuando faltaba todo y sobraban los líos\nAhora ven la luz y quieren ser testigos\nPero yo sé quiénes fueron de los míos\n\n[Pre-Hook - Call and Response]\n¿Quién llegó?\nMi gente\n¿Quién sonó?\nMi gente\n¿Quién prende la calle?\nMi gente\n¿Quién nunca se vende?\nMi gente\n\n[Hook - Chant / Crew]\nMi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\n\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente\n\n[Verse 2 - More Aggressive]\nNo somos perfectos, pero somos reales\nCicatrices brillando como medallas callejeras\nHablamos con hechos, no con señales\nY si caigo, me levanta mi bandera\n\nMira cómo suena cuando entra la percusión\nBajo retumbando como declaración\nNo es división, esto es conexión\nMi gente en el pecho como religión\n\nDesde Queens hasta Cali, de PR hasta DR\nLa sangre caliente, no se puede detener\nNo importa el acento, se entiende el poder\nCuando el barrio canta, lo tienes que creer\n\n[Bridge - Half-Time / Crowd]\nManos arriba si tú tienes tu gente\nLos que estuvieron cuando no había suerte\nLos que se quedan cuando todo se pierde\nLos que convierten dolor en fuente\n\nManos arriba si tú tienes tu gente\nLos que te cuidan aunque no estén presentes\nLos que caminan con fuego en la frente\nLos que son familia aunque no sean parientes\n\n[Beat Drop - Crew Ad-libs]\n¡Mi gente!\n¡Wuh!\n¡Dale!\n¡Otra vez!\n¡Mi gente!\n\n[Final Hook - Bigger / Chant]\nMi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\n\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente\n\n[Outro - Spoken / Crew]\nEsto no es moda.\nEsto no es pose.\nEsto es mi gente.\nDesde abajo...\nhasta donde llegue el sonido.",
+    "lrc": "[Intro]\n[00:00.00] Yeah,\n[00:00.26] mi gente,\n[00:04.03] desde el bloque hasta la tarima,\n[00:06.66] ya tú sabes,\n[00:07.88] dímelo,\n[Chorus 1]\n[00:09.96] mi gente,\n[00:11.20] mi gente,\n[00:12.48] mi gente, mi gente, mi gente, mi gente\n[00:14.56] Todo el mundo conmigo se siente,\n[00:16.68] se siente,\n[00:17.34] si yo con los míos la calle se enciende\n[00:19.74] Mi gente,\n[00:20.42] mi gente,\n[00:21.06] mi gente,\n[00:21.66] mi gente,\n[00:22.30] mi gente,\n[00:22.84] mi gente,\n[00:23.44] mi gente,\n[00:24.06] mi gente\n[00:24.38] No cambia mi coro,\n[00:25.98] mi sangre me entiende,\n[00:27.20] del barrio pa'l mundo la vibra se extiende\n[Verse 1]\n[00:29.58] Mi gente, mi gente, mi gente, mi gente, mi gente\n[00:31.60] Llegué con la ganga pero no es pa' aparentar,\n[00:33.92] esto es familia,\n[00:35.04] no se compra con metal\n[00:36.24] Desde la esquina donde aprendí a caminar,\n[00:38.88] hasta los sueños que no nos pudieron quitar\n[00:41.16] Tengo dominicanos,\n[00:42.64] borricos en la fila,\n[00:43.74] mexicanos gritando,\n[00:45.00] cubanos con la pila\n[00:46.29] Colombianos activos,\n[00:47.56] todo el combo vacila,\n[00:48.66] si uno se levanta la mesa se multiplica\n[00:51.02] No me hablen de lealtad,\n[00:52.24] si no estaba en el frío,\n[00:53.68] cuando faltaba todo y sonaban los líos\n[00:56.16] Ahora ven la luz y quieren ser testigos,\n[00:58.66] pero yo sé\n[Pre-Chorus / Chant Response]\n[00:59.58] Quienes fueron de los míos, ¿quién llegó?\n[01:03.62] ¿Quién sonó?\n[01:05.64] ¿Quién prende la calle?\n[01:08.06] ¿Quién nunca se vende?\n[01:09.93] Mi gente,\n[01:10.92] mi gente,\n[01:12.72] mi gente,\n[01:13.30] mi gente,\n[Chorus 2]\n[01:13.92] mi gente,\n[01:13.96] mi gente,\n[01:14.08] mi gente,\n[01:14.16] mi gente\n[01:14.16] Todo el mundo conmigo se siente,\n[01:15.76] se siente,\n[01:16.42] si llego con los míos la calle se enciende\n[01:18.82] Mi gente,\n[01:19.52] mi gente,\n[01:20.12] mi gente,\n[01:20.72] mi gente,\n[01:21.36] mi gente,\n[01:21.96] mi gente,\n[01:22.54] mi gente,\n[01:23.14] mi gente\n[01:23.46] No cambia mi coro,\n[01:25.04] mi sangre me entiende,\n[01:26.28] del barrio pa'l mundo la vibra se extiende\n[01:28.64] Mi gente\n[01:30.18] No somos perfectos, pero somos reales\n[01:32.94] Y caprices brillando como medallas callejeras\n[01:35.58] Hablamos con hechos, no con señales\n[01:38.02] Y si caigo me levanta mi bandera\n[01:40.36] Mira cómo suena cuando entra la percusión\n[01:42.76] Bajo retumbando como declaración\n[Verse 2]\n[01:45.18] No es división, esto es conexión\n[01:47.68] Mi gente en el pecho como religión\n[01:50.14] Desde Queens hasta Cali, de PR hasta DR\n[01:52.46] La sangre caliente no se puede detener\n[01:54.98] No importa el acento, se entiende el poder\n[01:57.36] Cuando el barrio canta lo tiene que creer\n[02:00.08] Manos arriba si tú tienes tu gente\n[02:02.44] Los que tuvieron cuando no había suerte\n[02:04.96] Los que se quedan cuando todo se pierde\n[02:07.52] Los que convierten dolor en fuente\n[02:09.85] Manos arriba si tú tienes tu gente\n[Bridge]\n[02:12.28] Los que te cuidan aunque no estén presentes\n[02:14.96] Los que caminan con fuego en la frente\n[02:17.20] Los que son familia aunque no sean parientes\n[Drop / Outro Start]\n[02:22.86] ¡Mi gente!\n[02:25.22] ¡Mi gente!\n[02:26.40] ¡Dale!\n[02:26.82] ¡Otra!\n[02:27.82] ¡Mi gente!\n[02:30.30] Mi gente, mi gente, mi gente, mi gente\n[Outro]\n[02:32.62] El mundo conmigo se siente, se siente\n[02:35.12] Si llego con los míos la calle se enciende\n[02:37.62] Mi gente, mi gente, mi gente, mi gente\n[02:40.04] Mi gente, mi gente, mi gente, mi gente\n[02:42.32] No cambia mi coro, mi sangre me entiende\n[02:44.96] Del barrio pa'l mundo la vibra se extiende\n[02:47.42] Mi gente, mi gente, mi gente, mi gente\n[02:50.92] Esto no es moda\n[02:52.94] Esto no es pose\n[02:55.90] Esto es mi gente\n[02:56.70] Mi gente\n[02:57.34] Desde abajo hasta donde llegue el sonido\n[03:00.78] Mi gente\n"
+  },
+  "analysis": {
+    "summary": "A high-energy Latin Trap anthem celebrating street loyalty, unity across diverse Latino communities, and transforming struggle into collective power.",
+    "overallMood": "Aggressive United Swagger",
+    "themes": [
+      "Loyalty and Family Bloodlines",
+      "Street Unity Across Borders",
+      "Resilience Against Adversity",
+      "Authentic Identity vs. Poseurs",
+      "Community Power Rising Up",
+      "Nighttime Barrio Celebration"
+    ],
+    "palette": [
+      "#120F15",
+      "#FF4D00",
+      "#8B0000",
+      "#FFEEDC"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory Swagger",
+        "intensity": 0.77,
+        "colorHintHex": "#120F15",
+        "start": 0
+      },
+      {
+        "name": "Chorus 1",
+        "emotion": "Triumphant Unity",
+        "intensity": 0.98,
+        "colorHintHex": "#FF4D00",
+        "start": 9.96
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Gritty Loyalty",
+        "intensity": 0.84,
+        "colorHintHex": "#8B0000",
+        "start": 29.58
+      },
+      {
+        "name": "Pre-Chorus / Chant Response",
+        "emotion": "Aggressive Challenge",
+        "intensity": 0.82,
+        "colorHintHex": "#FF4D00",
+        "start": 59.58
+      },
+      {
+        "name": "Chorus 2",
+        "emotion": "Empowered Declaration",
+        "intensity": 0.61,
+        "colorHintHex": "#FFEEDC",
+        "start": 73.92
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Global Connection",
+        "intensity": 0.31,
+        "colorHintHex": "#1A4D6F",
+        "start": 105.18
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Spiritual Brotherhood",
+        "intensity": 0.22,
+        "colorHintHex": "#FF4500",
+        "start": 132.28
+      },
+      {
+        "name": "Drop / Outro Start",
+        "emotion": "Explosive Release",
+        "intensity": 0.3,
+        "colorHintHex": "#8B0000",
+        "start": 142.86
+      },
+      {
+        "name": "Outro",
+        "emotion": "Enduring Pride",
+        "intensity": 0.21,
+        "colorHintHex": "#FFEEDC",
+        "start": 152.62
+      }
+    ],
+    "keywords": [
+      {
+        "word": "gente",
+        "emotion": "Belonging",
+        "imageryPrompt": "A massive crowd of diverse people with glowing outlines standing shoulder to shoulder under a neon sign, hands raised in unison."
+      },
+      {
+        "word": "sangre",
+        "emotion": "Deep Connection",
+        "imageryPrompt": "Close-up of intertwined veins glowing warmly against dark skin tones, symbolizing shared lineage and life force."
+      },
+      {
+        "word": "calle",
+        "emotion": "Street Pride",
+        "imageryPrompt": "A vibrant concrete alleyway at night illuminated by streetlights and graffiti art, reflecting confidence in the pavement cracks."
+      },
+      {
+        "word": "barrio",
+        "emotion": "Home Defense",
+        "imageryPrompt": "An elevated view of a colorful residential block party with lowrider cars parked outside, smoke rising from food stalls and people dancing."
+      },
+      {
+        "word": "fuego",
+        "emotion": "Passionate Fire",
+        "imageryPrompt": "Intense orange flames swirling around faces covered in sweat but smiling, representing the heat of passion and resilience."
+      },
+      {
+        "word": "lealtad",
+        "emotion": "Unbreakable Bond",
+        "imageryPrompt": "Two hands clasped tightly together with golden light radiating from the grip, ignoring shadows trying to pull them apart."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 35,
+      "mid": 33,
+      "close": 9
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0,
+        "intensity": 0.77
+      },
+      {
+        "name": "Chorus 1",
+        "start": 9.96,
+        "intensity": 0.98
+      },
+      {
+        "name": "Verse 1",
+        "start": 29.58,
+        "intensity": 0.84
+      },
+      {
+        "name": "Pre-Chorus / Chant Response",
+        "start": 59.58,
+        "intensity": 0.82
+      },
+      {
+        "name": "Chorus 2",
+        "start": 73.92,
+        "intensity": 0.61
+      },
+      {
+        "name": "Verse 2",
+        "start": 105.18,
+        "intensity": 0.31
+      },
+      {
+        "name": "Bridge",
+        "start": 132.28,
+        "intensity": 0.22
+      },
+      {
+        "name": "Drop / Outro Start",
+        "start": 142.86,
+        "intensity": 0.3
+      },
+      {
+        "name": "Outro",
+        "start": 152.62,
+        "intensity": 0.21
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 65
+      },
+      {
+        "name": "Chorus 1",
+        "presence": 83
+      },
+      {
+        "name": "Verse 1",
+        "presence": 82
+      },
+      {
+        "name": "Pre-Chorus / Chant Response",
+        "presence": 73
+      },
+      {
+        "name": "Chorus 2",
+        "presence": 72
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Drop / Outro Start",
+        "presence": 0
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          12.62
+        ],
+        [
+          13.5,
+          14.46
+        ],
+        [
+          14.7,
+          15.74
+        ],
+        [
+          15.98,
+          16.94
+        ],
+        [
+          18.38,
+          19.42
+        ],
+        [
+          19.66,
+          20.62
+        ],
+        [
+          20.86,
+          21.9
+        ],
+        [
+          23.34,
+          24.3
+        ],
+        [
+          24.54,
+          25.58
+        ],
+        [
+          25.82,
+          26.78
+        ],
+        [
+          28.22,
+          29.26
+        ],
+        [
+          29.5,
+          32.3
+        ],
+        [
+          62.94,
+          64.3
+        ],
+        [
+          65.42,
+          66.78
+        ],
+        [
+          67.9,
+          69.26
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "mi-gente-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

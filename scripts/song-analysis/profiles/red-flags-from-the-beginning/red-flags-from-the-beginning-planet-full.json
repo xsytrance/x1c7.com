@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "summary": "The song depicts a toxic relationship doomed from the start, characterized by domestic chaos, emotional neglect, and the painful realization that love was actually a burden disguised as passion.",
+    "overallMood": "Anxious Melancholy",
+    "themes": [
+      "Toxic Love Patterns",
+      "Self-Realization & Growth",
+      "Domestic Struggle",
+      "Emotional Blindness"
+    ],
+    "palette": [
+      "#FF4D4D",
+      "#8B0000",
+      "#F5F5DC",
+      "#1A237E"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Fatalistic resignation",
+        "intensity": 0.88,
+        "colorHintHex": "#8B0000",
+        "start": 4.84
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Chaos and exhaustion",
+        "intensity": 0.78,
+        "colorHintHex": "#FF4D4D",
+        "start": 27.08
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Defensive realization",
+        "intensity": 0.66,
+        "colorHintHex": "#F5F5DC",
+        "start": 118.12
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Painful clarity and betrayal",
+        "intensity": 0.7,
+        "colorHintHex": "#FF4D4D",
+        "start": 132.5
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Internal reflection and crumbling ego",
+        "intensity": 0.32,
+        "colorHintHex": "#F5F5DC",
+        "start": 158.74
+      },
+      {
+        "name": "Pre-Chorus (Repeat)",
+        "emotion": "Empowered transformation",
+        "intensity": 0.24,
+        "colorHintHex": "#1A237E",
+        "start": 237.16
+      },
+      {
+        "name": "Chorus (Final)",
+        "emotion": "Cathartic release and acceptance",
+        "intensity": 0.28,
+        "colorHintHex": "#FF4D4D",
+        "start": 255.02
+      }
+    ],
+    "keywords": [
+      {
+        "word": "flags",
+        "emotion": "Warning signal of doom",
+        "imageryPrompt": "A cracked red wall covered in peeling paint, casting long ominous shadows against a dark background."
+      },
+      {
+        "word": "sirens",
+        "emotion": "Escaping danger and panic",
+        "imageryPrompt": "Blue emergency lights flashing rapidly through rain-streaked windows reflecting on wet asphalt streets."
+      },
+      {
+        "word": "money",
+        "emotion": "False security and greed",
+        "imageryPrompt": "Stacks of green dollar bills glowing under a harsh spotlight while flowers wither in the background."
+      },
+      {
+        "word": "silence",
+        "emotion": "Heavy, suffocating emptiness",
+        "imageryPrompt": "A vast empty hallway stretching endlessly into darkness where dust motes hang motionless in still air."
+      },
+      {
+        "word": "fire",
+        "emotion": "Destructive passion and heat",
+        "imageryPrompt": "Orange flames consuming a wooden structure, illuminating tear-streaked faces with intense light and smoke."
+      },
+      {
+        "word": "moon",
+        "emotion": "Cold distance and isolation",
+        "imageryPrompt": "A pale white moon hanging high in a starless night sky above a lone silhouette standing on a cliff edge."
+      }
+    ]
+  },
+  "styleHint": "pop rock, male and female duet, energetic",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:28:04.334Z"
+}

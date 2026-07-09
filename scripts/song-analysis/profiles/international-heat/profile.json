@@ -1,0 +1,319 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "international-heat",
+  "generatedAt": "2026-07-09T18:14:18.770Z",
+  "measured": {
+    "bpm": 99.38,
+    "duration": 227.24
+  },
+  "identity": {
+    "title": "International Heat",
+    "titleAlternates": [],
+    "genre": "Dirty South R&B",
+    "subGenres": [
+      "Club",
+      "Reggaeton Fusion"
+    ],
+    "mood": "Sultry, Seductive, Hypnotic, Tantalizing",
+    "styleSentence": "A chopped and screwed female lead with confident English–Vietnamese topline floats over a swinging half-time groove featuring massive sub bass, wobbly low-end, trunk-rattling 808s, hypnotic reggaeton-flavored percussion mixed with classic southern clap patterns, hi-hat rolls, deep kick thumps, lush pads, glossy keys, atmospheric synth bells, and warm cello/viola lines for a sensual cinematic feel.",
+    "language": "English/Vietnamese/Spanish",
+    "energy": "medium",
+    "vocalStyle": "Smooth, sultry female lead with flirtatious delivery; charismatic male call-and-response featuring confident enunciation and occasional Dominican Spanish ad-libs."
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/international-heat/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#281818",
+      "#281808",
+      "#181808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F#",
+      "mode": "major",
+      "confidence": 0.585
+    },
+    "boundaries": [
+      26.28,
+      61.3,
+      136.25,
+      139.41,
+      149.54,
+      201.18,
+      203.59,
+      220.31
+    ],
+    "brightness": 3179.1,
+    "dynamicsDb": 11.8
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Intro]\nFemale\nBoy...\nWhy you leanin' in my ear?\nSay it real clear...\n\nMale\nMami...\nI can feel that body talkin' from here...\n\nFemale\nAnh ơi, nhìn em hoài làm chi?\nLại gần đi... (come see)\n\n[Verse 1]\nFemale\nI caught you staring from across the room\nDon’t play shy, I can read your mood\nOne little touch, now your pulse go boom\nTonight I’m the fire, you the fuel in this world wide room\n\nI see you thinking ‘bout me on your face\nYou want my hips movin’ all those ways\nRight kinda wrong in the perfect place\nNo clothes, just skin, just sweat, just bass\n\nMale\nOh...\nIs that what you like?\nYou been teasing all night?\n\nFemale\nMaybe...\nYou gon’ slide?\n\nMale\nGirl...\nLet me feel that body ride...\n\n[Pre-Chorus]\nFemale\nLại đây... nice and slow...\nĐặt tay lên eo, feel the flow...\n\nMale\nDon’t stop...\nstay close...\n\nFemale\nEm muốn anh mất kiểm soát, you know...\n\nMale\nYeah...\nI already know...\n\n[Chorus]\nFemale\nInternational heat...\nSweat drippin’ down, two hearts off-beat...\nBody on body, deeper in between...\nEm muốn anh say, lost in my scene...\n\nMale\nCome ride...\ndon’t hide...\nRight here by my side...\n\nFemale\nLook in my eyes...\n\nMale\nThat’s all it takes to slide...\n\nBoth\nFrom Hanoi...\nSau Ho Chi Minh...\nWe fuckin’ to the rhythm of this international sin...\n\nFemale\nTouch me right, don’t you ever play tame...\nWe fuckin’ to the rhythm of this chopped-up game...\n\n[Drop]\nFemale\nMove...\nMove...\nMove...\nMove...\n\nMale\nCloser...\nCloser...\n\nFemale\nCứ thế rung, cho em thêm, cho em more...\n\nMale\nDám không? Take it lower than before...\n\n[Verse 2]\nMale\nBrooklyn on my passport, southside in my soul\nBut tonight after Sài Gòn, we lose all control\nYou ain’t gotta talk much, I can read your curves\nEvery little grind say you know what you deserve\n\nFemale\nEm không cần hứa đâu, just pull me near\nWhisper in my neck how you want me here\nNo translation for the way I ache\nJust your hands on my waist while our bodies shake\n\nEm nóng như Sài Gòn trưa tháng Năm\nAnh muốn em, cứ nói thẳng, không cần râm\nI love it when you grab me, kiss me, lay me down\nPut it on me slow, fuck me to the rhythm now\n\n[Bridge]\nFemale\nYou don’t gotta promise me forever, baby, just tonight...\nCho em say trong vòng tay anh đến sáng mai...\n\nMale\nWe can sweat out every secret ‘til the morning light...\n\nFemale\nOne more drink...\nMột nụ hôn...\n\nMale\nOne more dance...\n\nBoth\nOne more chance to lose control...\n\nFemale\nHôn em đi, until my lipstick gone...\nWe fuckin’ to the rhythm khi mà bass còn son...\n\n[Final Chorus]\nBoth\nInternational heat...\nInternational flame...\nEverybody watchin’ when you scream my name...\n\nFemale\nFrom District 1, qua Thủ Đức, still no sleep...\nAnh ôm em chặt, keep it dirty, keep it deep...\n\nMale\nCome ride...\ndon’t hide...\nRight here, let it slide...\n\nFemale\nAnh ơi, đừng dừng lại...\nCho em feel that vibe all night...\n\nBoth\nFrom Hanoi...\nSau Ho Chi Minh...\nTell your friends...\nBring your friends...\nLet this sin begin...\n\nFemale\nBodies talkin’, không cần câu từ...\nWe fuckin’ to the rhythm, every chop, every slur...\n\nMale\nMami, despacito, but the club still loud...\n\nFemale\nUn poquito más, make your queen so proud...\n\nBoth\nInternational heat, international flame...\nWe fuckin’ to the rhythm of that dirty south game...",
+    "lrc": "[Intro]\n[00:03.60] Boy, boy,\n[00:05.36] why you leanin' on my ear?\n[00:08.08] Say it real clear, mommy\n[00:12.28] I can feel that body talkin' from here\n[00:14.92] And I'm in a mile, I'm cheap\n[00:17.56] Like a knee, come see\n[00:20.10] I caught you starin' from across the room\n[00:22.98] Don't play shy, I can read your mood\n[00:26.08] One little touch, now your pulse go boom\n[Verse 1]\n[00:28.48] Tonight,\n[00:29.10] I'm the fire,\n[00:29.78] you the fuel in this worldwide room\n[00:31.58] I see you thinkin' bout me on your face\n[00:34.10] You want my hips movin' all those waves\n[00:36.60] Right kinda wrong in the perfect place\n[00:38.86] No clothes, just skin, just sweat, just bass\n[00:41.32] Oh, is that what you like?\n[00:43.68] You been teasin' all night\n[00:45.60] Maybe, maybe\n[00:46.92] You gon' slide\n[00:48.42] Yeah, let me feel that body ride\n[00:50.65] Like they nice and slow\n[00:53.86] Feel the flow\n[00:55.36] Don't stop\n[00:55.88] Stay close\n[00:56.68] And we'll make makin' swag, you know\n[00:58.36] Yeah, I already know\n[01:00.28] International heat\n[Pre-Chorus]\n[01:01.48] Sweat drippin' down two hearts off beat\n[01:03.98] Body on body, deep and in between\n[01:06.36] And women say\n[01:08.42] Lost in my scene\n[01:10.22] Come on\n[01:11.22] Don't hide\n[01:12.50] Right here\n[01:13.20] By my side\n[01:15.04] Lickin' my eyes\n[01:16.42] That's all it takes to slide\n[01:18.10] Fly, fly, fly\n[01:19.80] From Hanoi\n[01:21.34] So I'll hold you in\n[01:22.28] We're fuckin' to the rhythm of this international sin\n[01:24.84] Touch me right, don't you ever play tame\n[01:27.44] We're fuckin' to the rhythm of this international sin\n[01:28.36] We're бол dopamine\n[01:28.52] We're the mother s conservative game\n[01:38.06] Closer, closer, closer\n[01:40.36] Tae tones Jun 10 turn ma\n[01:42.62] Dumb come take it lower than before\n[01:45.06] Brooklyn on my passport\n[01:46.36] Southside in my soul\n[01:47.42] But tonight\n[01:47.96] After Saigon\n[01:48.74] We lose all control\n[01:49.70] We ain't gotta talk much\n[01:51.16] I can read your curves\n[01:52.46] Every little cry\n[01:53.50] Say you know what you deserve\n[01:54.70] On Ken Hoodle\n[01:55.66] Just come in here\n[01:56.66] Whisper in my neck\n[01:57.84] How you want me here\n[01:59.12] No translation for the way I\n[02:01.20] Just your hands on my waist while our bodies shake\n[02:03.92] I love it when you grab me, kiss me, lay me down\n[02:11.35] Put it on the slow, fuck me to the rhythm now\n[02:13.80] You don't gotta promise me forever,\n[02:15.68] baby,\n[02:15.98] just tonight\n[Chorus]\n[02:18.98] With the sweat out every secret to the morning light\n[Drop]\n[02:21.72] One more drink, one more dance\n[02:24.14] One more chance to lose control\n[02:26.50] Holdin' D until my lipstick gone\n[02:29.10] We fuckin' to the rhythm, keep my bass concerned\n[Verse 2]\n[02:33.55] International heat, international flame\n[02:36.08] Everybody watchin' when you scream my name\n[02:38.84] From District 1, 4 to 6, still no sleep\n[02:41.30] I know, man, check, keep it dirty, keep it deep\n[02:43.92] Don't hide, don't hide, right here\n[02:46.32] Let it slide, I enjoy things in life\n[02:50.61] Try and feel that vibe, all night\n[02:52.90] From Hanoi, Soho, Chi-Ming\n[02:55.56] Day of fire, day of fire, day of fire\n[02:56.50] We hear the conversation Why we kijken,\n[02:56.88] teach a difference\n[02:56.88] Bring your friends\n[02:57.92] Let the sin begin\n[02:58.97] Soho, Chi-Ming\n[03:00.40] Tell your friends\n[03:01.74] Bring your friends\n[03:02.82] Let the sin begin\n[03:03.86] parties\n[03:04.84] talking\n[03:05.20] talk\n[03:06.44] bodies\n[03:11.28] talking\n[03:11.88] we fuckin' to the rhythm every chop every slur\n[03:20.65] La espacito but the club still at\n[Bridge]\n[Outro]\n[03:28.40] Make your queen so proud\n[03:34.76] International heat\n[03:35.80] International fame\n[03:38.52] Fuck into the rhythm of that dirty South game\n"
+  },
+  "analysis": {
+    "summary": "A sultry, hypnotic Dirty South R&B track blending English and Southeast Asian languages to depict a seductive night in an international club where bodies move together on deep basslines.",
+    "overallMood": "Sultry, Seductive, Hypnotic",
+    "themes": [
+      "International Desire",
+      "Body Talk",
+      "Loss of Control",
+      "Cultural Fusion",
+      "Late Night Sin"
+    ],
+    "palette": [
+      "#1a0f2e",
+      "#ff3c69",
+      "#d4af37",
+      "#580c0c"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Whispered curiosity and tactile anticipation as the listener leans in to hear a secret.",
+        "intensity": 0.88,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "A close-up of two silhouettes standing inches apart in dim red lighting, steam rising from skin touching skin, shallow depth of field focusing on the tension between them.",
+        "start": 3.6
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Confident ownership and fiery invitation to join a worldwide dance floor.",
+        "intensity": 0.84,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A woman in shimmering gold attire dancing alone on a dark stage with spotlights cutting through haze, sweat glistening like liquid light, vibrant energy radiating outward.",
+        "start": 28.48
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Escalating heat and the dissolution of boundaries between two bodies.",
+        "intensity": 0.68,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "Two figures locked in a slow-motion embrace against a backdrop of blurred city lights at night, sweat mixing on skin, intimate shadows stretching across the floor.",
+        "start": 61.48
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Cathartic release and overwhelming sensory overload as secrets are spilled.",
+        "intensity": 0.45,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A wide shot of a packed dance floor where hundreds of bodies merge into one glowing mass under strobe lights, heat waves distorting the air above the crowd.",
+        "start": 138.98
+      },
+      {
+        "name": "Drop",
+        "emotion": "Rhythmic abandon and bass-driven trance state.",
+        "intensity": 0.43,
+        "colorHint": "#580c0c",
+        "imageryPrompt": "Abstract visualization of massive sub-bass waves shaking the ground, dark voids illuminated by pulsing neon veins, figures moving as a single fluid organism in total darkness.",
+        "start": 141.72
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Global connection and shared experience across different cities.",
+        "intensity": 0.24,
+        "colorHint": "#1a0f2e",
+        "imageryPrompt": "A split view connecting a nightclub in Ho Chi Minh City with one in Brooklyn via digital thread, warm orange hues bleeding into cool blue tones representing the fusion of locations.",
+        "start": 153.55
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Intense vulnerability and surrender to the music's pull.",
+        "intensity": 0.27,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "A single spotlight on a couple spinning slowly in zero gravity, their faces reflecting each other perfectly, surrounded by floating embers of gold and pink light.",
+        "start": 208.4
+      },
+      {
+        "name": "Outro",
+        "emotion": "Lingering satisfaction and the echo of fame.",
+        "intensity": 0.15,
+        "colorHint": "#1a0f2e",
+        "imageryPrompt": "Silhouettes walking away into a deep purple dawn, leaving footprints that glow faintly on the wet pavement, fading atmosphere.",
+        "start": 208.4
+      }
+    ],
+    "keywords": [
+      {
+        "word": "sweat",
+        "emotion": "Physical intimacy and heat.",
+        "imageryPrompt": "Glistening droplets of perspiration catching golden stage lights on pale skin, texture rich with moisture and warmth."
+      },
+      {
+        "word": "rhythm",
+        "emotion": "Hypnotic drive and pulse.",
+        "imageryPrompt": "Visualized sound waves forming a rhythmic heartbeat pattern in the air, glowing red veins pulsing through a dark room."
+      },
+      {
+        "word": "curves",
+        "emotion": "Admiration and desire.",
+        "imageryPrompt": "Smooth lines of hips accentuated by low lighting, casting soft shadows that suggest movement and allure without revealing too much."
+      },
+      {
+        "word": "sin",
+        "emotion": "Forbidden thrill and transgression.",
+        "imageryPrompt": "A shadowy alleyway lit only by flickering neon signs, creating a sense of illicit pleasure in the darkness."
+      },
+      {
+        "word": "control",
+        "emotion": "Loss of will to music.",
+        "imageryPrompt": "Hands flailing slightly as if caught in an invisible current, eyes rolling back under bright disco lights."
+      },
+      {
+        "word": "touch",
+        "emotion": "Sensory connection and grounding.",
+        "imageryPrompt": "Fingers tracing the spine of a partner with high detail on skin texture, warm amber glow highlighting the point of contact."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 46,
+      "mid": 34,
+      "close": 20
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 3.6,
+        "intensity": 0.88
+      },
+      {
+        "name": "Verse 1",
+        "start": 28.48,
+        "intensity": 0.84
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 61.48,
+        "intensity": 0.68
+      },
+      {
+        "name": "Chorus",
+        "start": 138.98,
+        "intensity": 0.45
+      },
+      {
+        "name": "Drop",
+        "start": 141.72,
+        "intensity": 0.43
+      },
+      {
+        "name": "Verse 2",
+        "start": 153.55,
+        "intensity": 0.24
+      },
+      {
+        "name": "Bridge",
+        "start": 208.4,
+        "intensity": 0.27
+      },
+      {
+        "name": "Outro",
+        "start": 208.4,
+        "intensity": 0.15
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 69
+      },
+      {
+        "name": "Verse 1",
+        "presence": 87
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 82
+      },
+      {
+        "name": "Chorus",
+        "presence": 88
+      },
+      {
+        "name": "Drop",
+        "presence": 62
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          22.22
+        ],
+        [
+          24.3,
+          25.26
+        ],
+        [
+          29.18,
+          30.14
+        ],
+        [
+          39.34,
+          41.74
+        ],
+        [
+          44.22,
+          46.7
+        ],
+        [
+          51.9,
+          56.46
+        ],
+        [
+          56.78,
+          59.26
+        ],
+        [
+          60.38,
+          61.34
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "international-heat-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

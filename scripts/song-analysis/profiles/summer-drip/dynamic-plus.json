@@ -1,0 +1,35 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 18,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "drums"
+    ],
+    "label": "BASS & DRUMS ONLY"
+   },
+   "why": "Intro drum-cut window (0-2s) and low-frequency bass groove establish the 'chopped' foundat"
+  },
+  {
+   "start": 45,
+   "end": 70,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "synth"
+    ],
+    "label": "LEAD & SYNTH"
+   },
+   "why": "Verse 1 features regal poise and 'smooth southern flow'; isolating lead vocal and atmosphe"
+  }
+ ],
+ "words": {
+  "sunshine": "bloom",
+  "slow": "pulse",
+  "flame": "burn",
+  "thirsty": "shatter"
+ }
+}

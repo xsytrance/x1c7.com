@@ -1,0 +1,315 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "move-over-minimal-groove-mix",
+  "generatedAt": "2026-07-09T18:19:47.477Z",
+  "measured": {
+    "bpm": 129.2,
+    "duration": 172.88
+  },
+  "identity": {
+    "title": "Move Over (Minimal Groove Mix)",
+    "titleAlternates": [],
+    "genre": "Eurodance",
+    "subGenres": [
+      "Hip-House",
+      "Minimal Techno"
+    ],
+    "mood": "stylish, confident, retro-cool, swaggering",
+    "styleSentence": "A driving F minor track at 129 BPM featuring a stripped-down late-80s/early-90s hip-house and Eurodance groove with a tight four-on-the-floor kick, funky bass riff, sparse synth stabs, dry snare/clap, confident male rap verses, cool female hype vocals, call-and-response hooks, and dance-floor swagger without overproduced festival elements.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "confident male rap with cool female lead vocal chops"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/move-over-minimal-groove-mix/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#181818",
+      "#281818",
+      "#382828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.7
+    },
+    "boundaries": [
+      10.68,
+      23.31,
+      41.24,
+      47.93,
+      74.86,
+      78.11,
+      86.19,
+      101.24
+    ],
+    "brightness": 3176.1,
+    "dynamicsDb": 11.7
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "Title: Move Over (Minimal Groove Mix)\n\n[Intro - Female, Cool Spoken]\nSomebody said the floor already had a king?\nHa.\nMove over.\n\n[Beat Starts - Minimal Kick, Bass, Clap]\n\n[Hook - Female Lead, Cool and Catchy]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Groove 1 - Female Spoken & Ad-Libs]\n(Yeah)\nLet it ride\n\nBassline talking\n(shh, just listen)\n\nSlow steps, low lights\n(so smooth)\n\nKeep it simple\nJust move\n\n[Female Ad-Lib]\nMmm.\nThat’s enough.\nLet it breathe.\n\n[Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Post-Hook - Crowd, Dry Chant]\nMove.\nMove.\nMove over.\nMove.\nMove.\nMove over.\n\n[Groove 2 - Call & Response, Chants]\n[Female Call]\nYou feel that?\n[Crowd Response]\nOh, we do.\n\n[Female Call]\nTurn it up.\n[Crowd Response]\nSlide it through.\n\n[Female Spoken]\nSoft steps.\nDeep bass.\n\n[Crowd Murmur]\n(mmm, yeah, right there)\n\n[Pre-Hook - Female Spoken]\nDon’t rush it.\nDon’t force it.\nJust catch it.\n\n[Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Bridge - Minimal Breakdown]\nKick.\nClap.\nBass.\nBreathe.\n\nKick.\nClap.\nBass.\nBreathe.\n\n[Female Spoken]\nSomebody said the floor had a king?\nCute.\n\n[Final Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Outro - Crowd Chant]\nMove.\nMove.\nMove over.\nThis summer different.\nMove.\nMove.\nMove over.",
+    "lrc": "[Intro]\n[00:00.14] Somebody said the floor already had a king\n[Verse 1 / Hook A]\n[00:05.42] Move over\n[00:06.94] Move over\n[00:11.70] We got heat in the room\n[00:14.32] Move over\n[00:15.48] Summer came through smooth\n[00:18.08] Don't talk too much\n[00:19.58] Just let that bass line hit\n[00:21.44] This summer different\n[00:23.26] You can tell by the drip\n[00:25.68] Yeah\n[00:26.36] Yeah\n[00:29.12] Let it ride\n[00:31.42] Bass line talking\n[00:34.30] Just listen\n[00:36.24] Slow steps, low light\n[00:37.98] Keep it simple, just move\n[00:42.02] That's enough\n[00:44.79] Let it breathe\n[Hook B (Repeat)]\n[00:46.64] Move over\n[00:49.96] We got heat in the room\n[00:52.22] Move over\n[00:53.32] Summer came through smooth\n[00:55.90] Don't talk too much\n[00:56.76] Just let that bass line hit\n[00:59.26] This summer different\n[Post-Hook / Crowd Chant]\n[01:00.84] You can tell by the drip\n[01:05.96] Move over\n[01:09.77] Move over\n[01:13.55] Move over\n[01:16.88] You feel that?\n[01:18.92] Oh, we do\n[01:20.92] Turn it up\n[01:21.88] Slide it through\n[01:25.77] It's soft stuff\n[01:26.58] Steps\n[01:27.72] Deep bass\n[01:29.78] Yeah, right there\n[01:34.31] Don't rush it\n[01:35.55] Don't force it\n[01:37.31] Just catch it\n[01:40.10] Move over\n[01:42.86] We got heat in the room\n[01:45.04] Move over\n[01:46.24] Summer came through smooth\n[01:48.78] Don't talk too much\n[01:50.28] Just let that bass line hit\n[01:52.12] This summer different\n[Groove 2 / Call & Response]\n[01:53.96] You can tell by the drip\n[01:56.58] Kick, clap, bass\n[01:58.92] Breathe,\n[02:00.52] kick, clap,\n[02:02.18] bass\n[02:03.02] Breathe,\n[02:04.12] breathe,\n[02:04.56] breathe,\n[02:05.02] breathe,\n[02:05.50] breathe,\n[02:05.00] breathe,\n[02:06.44] breathe\n[02:06.74] Somebody said the floor had a king\n[02:10.50] Cute\n[02:13.00] Move over\n[02:13.68] Move over\n[Pre-Hook]\n[02:15.38] We got heat in the room\n[02:17.16] Move over\n[02:18.28] Summer came through smooth\n[Hook C (Repeat)]\n[02:20.90] Don't talk too much\n[02:22.38] Just let that bass line hit\n[02:24.26] This summer different\n[02:25.78] Uh\n[02:26.94] You can tell by the drip\n[02:28.50] Move over\n[02:33.44] This summer different\n[Bridge / Breakdown]\n[02:38.04] Move over\n"
+  },
+  "analysis": {
+    "summary": "The song is a confident declaration of dominance on the dance floor, urging others to step aside for an undeniable summer heat and smooth bass-driven swagger.",
+    "overallMood": "stylish",
+    "themes": [
+      "Dance Floor Dominance",
+      "Retro Club Aesthetic",
+      "Minimalist Confidence",
+      "Summer Night Energy"
+    ],
+    "palette": [
+      "#FF005C",
+      "#2A0845",
+      "#1F1B36",
+      "#FFE6E9"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Mysterious anticipation of a new king taking the throne.",
+        "intensity": 0.39,
+        "colorHint": "#ff005c",
+        "start": 0.14
+      },
+      {
+        "name": "Verse 1 / Hook A",
+        "emotion": "Smooth declaration with a rhythmic push to clear space.",
+        "intensity": 0.75,
+        "colorHint": "#ffe6e9",
+        "start": 5.42
+      },
+      {
+        "name": "Hook B (Repeat)",
+        "emotion": "Reinforced confidence and catchy minimal groove energy.",
+        "intensity": 0.96,
+        "colorHint": "#2a0845",
+        "start": 46.64
+      },
+      {
+        "name": "Post-Hook / Crowd Chant",
+        "emotion": "Collective hype with deep bass resonance and soft swagger.",
+        "intensity": 0.72,
+        "colorHint": "#ff005c",
+        "start": 60.84
+      },
+      {
+        "name": "Groove 2 / Call & Response",
+        "emotion": "Breathless rhythm focusing on kick/clap/bass interplay.",
+        "intensity": 0.32,
+        "colorHint": "#1f1b36",
+        "start": 113.96
+      },
+      {
+        "name": "Pre-Hook",
+        "emotion": "Building tension before the final heat of the room.",
+        "intensity": 0.24,
+        "colorHint": "#ffe6e9",
+        "start": 135.38
+      },
+      {
+        "name": "Hook C (Repeat)",
+        "emotion": "Peak confidence with a cool summer night finish.",
+        "intensity": 0.21,
+        "colorHint": "#2a0845",
+        "start": 140.9
+      },
+      {
+        "name": "Bridge / Breakdown",
+        "emotion": "Minimalist pause emphasizing the singular presence of 'Move over'.",
+        "intensity": 0.09,
+        "colorHint": "#1f1b36",
+        "start": 158.04
+      }
+    ],
+    "keywords": [
+      {
+        "word": "heat",
+        "emotion": [
+          "Passionate",
+          "Intense"
+        ],
+        "imageryPrompt": "A glowing warm haze rising from a crowded retro dance floor, illuminating silhouettes with soft orange and pink light against dark walls."
+      },
+      {
+        "word": "drip",
+        "emotion": [
+          "Stylish",
+          "Confident"
+        ],
+        "imageryPrompt": "Close up of high-fashion streetwear details like gold chains or designer logos reflecting under neon club lights, exuding effortless coolness."
+      },
+      {
+        "word": "bass",
+        "emotion": [
+          "Deep",
+          "Resonant"
+        ],
+        "imageryPrompt": "Low frequency waves visualized as rippling dark purple energy pushing through a minimalist room with concrete floors and sparse furniture."
+      },
+      {
+        "word": "smooth",
+        "emotion": [
+          "Relaxed",
+          "Silky"
+        ],
+        "imageryPrompt": "A slow-motion shot of liquid mercury flowing over a sleek black surface, mirroring the effortless flow of the dance moves."
+      },
+      {
+        "word": "swagger",
+        "emotion": [
+          "Bold",
+          "Dominant"
+        ],
+        "imageryPrompt": "The confident stride of a dancer in 90s style attire stepping forward with one hand on their hip, casting long shadows under strobe lights."
+      },
+      {
+        "word": "move",
+        "emotion": [
+          "Urgent",
+          "Dynamic"
+        ],
+        "imageryPrompt": "Motion blur capturing the swift lateral movement of bodies sliding across a dance floor as if clearing space for an arrival."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 29,
+      "mid": 35,
+      "close": 20
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0.14,
+        "intensity": 0.39
+      },
+      {
+        "name": "Verse 1 / Hook A",
+        "start": 5.42,
+        "intensity": 0.75
+      },
+      {
+        "name": "Hook B (Repeat)",
+        "start": 46.64,
+        "intensity": 0.96
+      },
+      {
+        "name": "Post-Hook / Crowd Chant",
+        "start": 60.84,
+        "intensity": 0.72
+      },
+      {
+        "name": "Groove 2 / Call & Response",
+        "start": 113.96,
+        "intensity": 0.32
+      },
+      {
+        "name": "Pre-Hook",
+        "start": 135.38,
+        "intensity": 0.24
+      },
+      {
+        "name": "Hook C (Repeat)",
+        "start": 140.9,
+        "intensity": 0.21
+      },
+      {
+        "name": "Bridge / Breakdown",
+        "start": 158.04,
+        "intensity": 0.09
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 48
+      },
+      {
+        "name": "Verse 1 / Hook A",
+        "presence": 65
+      },
+      {
+        "name": "Hook B (Repeat)",
+        "presence": 73
+      },
+      {
+        "name": "Post-Hook / Crowd Chant",
+        "presence": 57
+      },
+      {
+        "name": "Groove 2 / Call & Response",
+        "presence": 0
+      },
+      {
+        "name": "Pre-Hook",
+        "presence": 0
+      },
+      {
+        "name": "Hook C (Repeat)",
+        "presence": 0
+      },
+      {
+        "name": "Bridge / Breakdown",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          2.38
+        ],
+        [
+          24.06,
+          25.58
+        ],
+        [
+          34.62,
+          36.46
+        ],
+        [
+          61.82,
+          63.34
+        ],
+        [
+          114.7,
+          116.3
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "move-over-minimal-groove-mix-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

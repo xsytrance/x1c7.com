@@ -1,0 +1,1511 @@
+{
+  "language": "spanish",
+  "segments": [
+    {
+      "start": 3.328,
+      "end": 5.3,
+      "text": "Me llamaste a las tres,",
+      "words": [
+        {
+          "t": 3.328,
+          "text": "Me"
+        },
+        {
+          "t": 3.872,
+          "text": "llamaste"
+        },
+        {
+          "t": 4.42,
+          "text": "a"
+        },
+        {
+          "t": 4.6,
+          "text": "las"
+        },
+        {
+          "t": 4.82,
+          "text": "tres,"
+        }
+      ]
+    },
+    {
+      "start": 8.52,
+      "end": 10.67,
+      "text": "y yo también temblé.",
+      "words": [
+        {
+          "t": 8.52,
+          "text": "y"
+        },
+        {
+          "t": 8.62,
+          "text": "yo"
+        },
+        {
+          "t": 9.02,
+          "text": "también"
+        },
+        {
+          "t": 9.54,
+          "text": "temblé."
+        }
+      ]
+    },
+    {
+      "start": 20.864,
+      "end": 21.8,
+      "text": "Dijiste que temblabas,",
+      "words": [
+        {
+          "t": 20.864,
+          "text": "Dijiste"
+        },
+        {
+          "t": 21.08,
+          "text": "que"
+        },
+        {
+          "t": 21.26,
+          "text": "temblabas,"
+        }
+      ]
+    },
+    {
+      "start": 22.2,
+      "end": 24.76,
+      "text": "que no lo esperabas,",
+      "words": [
+        {
+          "t": 22.2,
+          "text": "que"
+        },
+        {
+          "t": 23.32,
+          "text": "no"
+        },
+        {
+          "t": 23.52,
+          "text": "lo"
+        },
+        {
+          "t": 23.66,
+          "text": "esperabas,"
+        }
+      ]
+    },
+    {
+      "start": 24.79,
+      "end": 26.58,
+      "text": "yo sentí lo mismo,",
+      "words": [
+        {
+          "t": 24.79,
+          "text": "yo"
+        },
+        {
+          "t": 25.76,
+          "text": "sentí"
+        },
+        {
+          "t": 26.14,
+          "text": "lo"
+        },
+        {
+          "t": 26.24,
+          "text": "mismo,"
+        }
+      ]
+    },
+    {
+      "start": 26.82,
+      "end": 29.12,
+      "text": "pero me callé.",
+      "words": [
+        {
+          "t": 26.82,
+          "text": "pero"
+        },
+        {
+          "t": 28.22,
+          "text": "me"
+        },
+        {
+          "t": 28.46,
+          "text": "callé."
+        }
+      ]
+    },
+    {
+      "start": 30.0,
+      "end": 33.82,
+      "text": "No me hables a las tres, si en la mañana te vas,",
+      "words": [
+        {
+          "t": 30.0,
+          "text": "No"
+        },
+        {
+          "t": 30.4,
+          "text": "me"
+        },
+        {
+          "t": 30.58,
+          "text": "hables"
+        },
+        {
+          "t": 30.8,
+          "text": "a"
+        },
+        {
+          "t": 30.92,
+          "text": "las"
+        },
+        {
+          "t": 31.06,
+          "text": "tres,"
+        },
+        {
+          "t": 31.82,
+          "text": "si"
+        },
+        {
+          "t": 32.46,
+          "text": "en"
+        },
+        {
+          "t": 32.66,
+          "text": "la"
+        },
+        {
+          "t": 32.66,
+          "text": "mañana"
+        },
+        {
+          "t": 33.08,
+          "text": "te"
+        },
+        {
+          "t": 33.42,
+          "text": "vas,"
+        }
+      ]
+    },
+    {
+      "start": 35.392,
+      "end": 38.82,
+      "text": "quédate también cuando salga el sol.",
+      "words": [
+        {
+          "t": 35.392,
+          "text": "quédate"
+        },
+        {
+          "t": 35.64,
+          "text": "también"
+        },
+        {
+          "t": 36.12,
+          "text": "cuando"
+        },
+        {
+          "t": 36.94,
+          "text": "salga"
+        },
+        {
+          "t": 38.16,
+          "text": "el"
+        },
+        {
+          "t": 38.24,
+          "text": "sol."
+        }
+      ]
+    },
+    {
+      "start": 40.62,
+      "end": 44.18,
+      "text": "No me amarre con un beso y una piel,",
+      "words": [
+        {
+          "t": 40.62,
+          "text": "No"
+        },
+        {
+          "t": 41.056,
+          "text": "me"
+        },
+        {
+          "t": 41.22,
+          "text": "amarre"
+        },
+        {
+          "t": 41.6,
+          "text": "con"
+        },
+        {
+          "t": 41.94,
+          "text": "un"
+        },
+        {
+          "t": 42.36,
+          "text": "beso"
+        },
+        {
+          "t": 42.98,
+          "text": "y"
+        },
+        {
+          "t": 43.1,
+          "text": "una"
+        },
+        {
+          "t": 43.44,
+          "text": "piel,"
+        }
+      ]
+    },
+    {
+      "start": 44.98,
+      "end": 47.42,
+      "text": "no quiero el poder,",
+      "words": [
+        {
+          "t": 44.98,
+          "text": "no"
+        },
+        {
+          "t": 46.18,
+          "text": "quiero"
+        },
+        {
+          "t": 46.6,
+          "text": "el"
+        },
+        {
+          "t": 46.94,
+          "text": "poder,"
+        }
+      ]
+    },
+    {
+      "start": 47.48,
+      "end": 53.5,
+      "text": "quiero saber que vas a volver.",
+      "words": [
+        {
+          "t": 47.48,
+          "text": "quiero"
+        },
+        {
+          "t": 48.04,
+          "text": "saber"
+        },
+        {
+          "t": 49.34,
+          "text": "que"
+        },
+        {
+          "t": 52.224,
+          "text": "vas"
+        },
+        {
+          "t": 52.48,
+          "text": "a"
+        },
+        {
+          "t": 52.82,
+          "text": "volver."
+        }
+      ]
+    },
+    {
+      "start": 58.54,
+      "end": 59.38,
+      "text": "Ay.",
+      "words": [
+        {
+          "t": 58.54,
+          "text": "Ay."
+        }
+      ]
+    },
+    {
+      "start": 60.0,
+      "end": 60.64,
+      "text": "Mi amor,",
+      "words": [
+        {
+          "t": 60.0,
+          "text": "Mi"
+        },
+        {
+          "t": 60.24,
+          "text": "amor,"
+        }
+      ]
+    },
+    {
+      "start": 61.64,
+      "end": 65.6,
+      "text": "no me preguntes cuál es la receta,",
+      "words": [
+        {
+          "t": 61.64,
+          "text": "no"
+        },
+        {
+          "t": 61.74,
+          "text": "me"
+        },
+        {
+          "t": 62.176,
+          "text": "preguntes"
+        },
+        {
+          "t": 63.4,
+          "text": "cuál"
+        },
+        {
+          "t": 64.224,
+          "text": "es"
+        },
+        {
+          "t": 64.56,
+          "text": "la"
+        },
+        {
+          "t": 64.76,
+          "text": "receta,"
+        }
+      ]
+    },
+    {
+      "start": 65.66,
+      "end": 66.65,
+      "text": "no hay ninguna,",
+      "words": [
+        {
+          "t": 65.66,
+          "text": "no"
+        },
+        {
+          "t": 65.88,
+          "text": "hay"
+        },
+        {
+          "t": 66.1,
+          "text": "ninguna,"
+        }
+      ]
+    },
+    {
+      "start": 66.94,
+      "end": 67.98,
+      "text": "solo ven.",
+      "words": [
+        {
+          "t": 66.94,
+          "text": "solo"
+        },
+        {
+          "t": 67.32,
+          "text": "ven."
+        }
+      ]
+    },
+    {
+      "start": 69.72,
+      "end": 72.4,
+      "text": "Yo no quiero amor de cine,",
+      "words": [
+        {
+          "t": 69.72,
+          "text": "Yo"
+        },
+        {
+          "t": 70.14,
+          "text": "no"
+        },
+        {
+          "t": 70.5,
+          "text": "quiero"
+        },
+        {
+          "t": 70.92,
+          "text": "amor"
+        },
+        {
+          "t": 71.54,
+          "text": "de"
+        },
+        {
+          "t": 71.98,
+          "text": "cine,"
+        }
+      ]
+    },
+    {
+      "start": 73.76,
+      "end": 78.5,
+      "text": "quiero el té se queda cuando todo se apaga otra vez.",
+      "words": [
+        {
+          "t": 73.76,
+          "text": "quiero"
+        },
+        {
+          "t": 73.98,
+          "text": "el"
+        },
+        {
+          "t": 74.2,
+          "text": "té"
+        },
+        {
+          "t": 74.44,
+          "text": "se"
+        },
+        {
+          "t": 74.68,
+          "text": "queda"
+        },
+        {
+          "t": 75.1,
+          "text": "cuando"
+        },
+        {
+          "t": 75.64,
+          "text": "todo"
+        },
+        {
+          "t": 76.26,
+          "text": "se"
+        },
+        {
+          "t": 76.72,
+          "text": "apaga"
+        },
+        {
+          "t": 77.28,
+          "text": "otra"
+        },
+        {
+          "t": 77.9,
+          "text": "vez."
+        }
+      ]
+    },
+    {
+      "start": 79.424,
+      "end": 81.824,
+      "text": "Eres lindo como el agua,",
+      "words": [
+        {
+          "t": 79.424,
+          "text": "Eres"
+        },
+        {
+          "t": 80.1,
+          "text": "lindo"
+        },
+        {
+          "t": 80.52,
+          "text": "como"
+        },
+        {
+          "t": 81.14,
+          "text": "el"
+        },
+        {
+          "t": 81.38,
+          "text": "agua,"
+        }
+      ]
+    },
+    {
+      "start": 82.46,
+      "end": 86.66,
+      "text": "pero el agua se va con el calor.",
+      "words": [
+        {
+          "t": 82.46,
+          "text": "pero"
+        },
+        {
+          "t": 82.9,
+          "text": "el"
+        },
+        {
+          "t": 83.2,
+          "text": "agua"
+        },
+        {
+          "t": 83.9,
+          "text": "se"
+        },
+        {
+          "t": 84.78,
+          "text": "va"
+        },
+        {
+          "t": 85.12,
+          "text": "con"
+        },
+        {
+          "t": 85.48,
+          "text": "el"
+        },
+        {
+          "t": 85.9,
+          "text": "calor."
+        }
+      ]
+    },
+    {
+      "start": 88.82,
+      "end": 91.62,
+      "text": "Yo no quiero amor de cine,",
+      "words": [
+        {
+          "t": 88.82,
+          "text": "Yo"
+        },
+        {
+          "t": 89.3,
+          "text": "no"
+        },
+        {
+          "t": 89.64,
+          "text": "quiero"
+        },
+        {
+          "t": 90.208,
+          "text": "amor"
+        },
+        {
+          "t": 90.72,
+          "text": "de"
+        },
+        {
+          "t": 91.14,
+          "text": "cine,"
+        }
+      ]
+    },
+    {
+      "start": 92.02,
+      "end": 96.16,
+      "text": "quiero amor de él de verdad.",
+      "words": [
+        {
+          "t": 92.02,
+          "text": "quiero"
+        },
+        {
+          "t": 93.62,
+          "text": "amor"
+        },
+        {
+          "t": 94.26,
+          "text": "de"
+        },
+        {
+          "t": 94.752,
+          "text": "él"
+        },
+        {
+          "t": 94.96,
+          "text": "de"
+        },
+        {
+          "t": 95.28,
+          "text": "verdad."
+        }
+      ]
+    },
+    {
+      "start": 96.6,
+      "end": 98.65,
+      "text": "No me den mil horas que se inventan,",
+      "words": [
+        {
+          "t": 96.6,
+          "text": "No"
+        },
+        {
+          "t": 97.12,
+          "text": "me"
+        },
+        {
+          "t": 97.26,
+          "text": "den"
+        },
+        {
+          "t": 97.4,
+          "text": "mil"
+        },
+        {
+          "t": 97.62,
+          "text": "horas"
+        },
+        {
+          "t": 97.8,
+          "text": "que"
+        },
+        {
+          "t": 98.04,
+          "text": "se"
+        },
+        {
+          "t": 98.1,
+          "text": "inventan,"
+        }
+      ]
+    },
+    {
+      "start": 99.15,
+      "end": 101.1,
+      "text": "mamá más desfiles que después se van.",
+      "words": [
+        {
+          "t": 99.15,
+          "text": "mamá"
+        },
+        {
+          "t": 99.7,
+          "text": "más"
+        },
+        {
+          "t": 99.84,
+          "text": "desfiles"
+        },
+        {
+          "t": 100.24,
+          "text": "que"
+        },
+        {
+          "t": 100.44,
+          "text": "después"
+        },
+        {
+          "t": 100.66,
+          "text": "se"
+        },
+        {
+          "t": 100.88,
+          "text": "van."
+        }
+      ]
+    },
+    {
+      "start": 101.42,
+      "end": 101.74,
+      "text": "Si,",
+      "words": [
+        {
+          "t": 101.42,
+          "text": "Si,"
+        }
+      ]
+    },
+    {
+      "start": 101.86,
+      "end": 103.68,
+      "text": "si tu gasolina no me come si ya,",
+      "words": [
+        {
+          "t": 101.86,
+          "text": "si"
+        },
+        {
+          "t": 101.92,
+          "text": "tu"
+        },
+        {
+          "t": 102.06,
+          "text": "gasolina"
+        },
+        {
+          "t": 102.66,
+          "text": "no"
+        },
+        {
+          "t": 102.8,
+          "text": "me"
+        },
+        {
+          "t": 102.94,
+          "text": "come"
+        },
+        {
+          "t": 103.2,
+          "text": "si"
+        },
+        {
+          "t": 103.42,
+          "text": "ya,"
+        }
+      ]
+    },
+    {
+      "start": 103.86,
+      "end": 107.04,
+      "text": "dime si somos dos o solo cuando te comien a ti.",
+      "words": [
+        {
+          "t": 103.86,
+          "text": "dime"
+        },
+        {
+          "t": 104.24,
+          "text": "si"
+        },
+        {
+          "t": 104.46,
+          "text": "somos"
+        },
+        {
+          "t": 104.7,
+          "text": "dos"
+        },
+        {
+          "t": 105.02,
+          "text": "o"
+        },
+        {
+          "t": 105.26,
+          "text": "solo"
+        },
+        {
+          "t": 105.68,
+          "text": "cuando"
+        },
+        {
+          "t": 106.18,
+          "text": "te"
+        },
+        {
+          "t": 106.38,
+          "text": "comien"
+        },
+        {
+          "t": 106.76,
+          "text": "a"
+        },
+        {
+          "t": 106.88,
+          "text": "ti."
+        }
+      ]
+    },
+    {
+      "start": 107.616,
+      "end": 108.6,
+      "text": "No vengas tu alma,",
+      "words": [
+        {
+          "t": 107.616,
+          "text": "No"
+        },
+        {
+          "t": 107.88,
+          "text": "vengas"
+        },
+        {
+          "t": 108.22,
+          "text": "tu"
+        },
+        {
+          "t": 108.38,
+          "text": "alma,"
+        }
+      ]
+    },
+    {
+      "start": 108.64,
+      "end": 109.42,
+      "text": "guárdala pa' ti,",
+      "words": [
+        {
+          "t": 108.64,
+          "text": "guárdala"
+        },
+        {
+          "t": 109.04,
+          "text": "pa'"
+        },
+        {
+          "t": 109.28,
+          "text": "ti,"
+        }
+      ]
+    },
+    {
+      "start": 109.6,
+      "end": 111.88,
+      "text": "no corras diez mil kilómetros por mí.",
+      "words": [
+        {
+          "t": 109.6,
+          "text": "no"
+        },
+        {
+          "t": 110.26,
+          "text": "corras"
+        },
+        {
+          "t": 110.62,
+          "text": "diez"
+        },
+        {
+          "t": 110.76,
+          "text": "mil"
+        },
+        {
+          "t": 110.92,
+          "text": "kilómetros"
+        },
+        {
+          "t": 111.4,
+          "text": "por"
+        },
+        {
+          "t": 111.68,
+          "text": "mí."
+        }
+      ]
+    },
+    {
+      "start": 112.288,
+      "end": 114.74,
+      "text": "Solo cruza la calle cuando te llame a las tres,",
+      "words": [
+        {
+          "t": 112.288,
+          "text": "Solo"
+        },
+        {
+          "t": 112.6,
+          "text": "cruza"
+        },
+        {
+          "t": 113.0,
+          "text": "la"
+        },
+        {
+          "t": 113.12,
+          "text": "calle"
+        },
+        {
+          "t": 113.4,
+          "text": "cuando"
+        },
+        {
+          "t": 113.66,
+          "text": "te"
+        },
+        {
+          "t": 113.86,
+          "text": "llame"
+        },
+        {
+          "t": 114.18,
+          "text": "a"
+        },
+        {
+          "t": 114.26,
+          "text": "las"
+        },
+        {
+          "t": 114.4,
+          "text": "tres,"
+        }
+      ]
+    },
+    {
+      "start": 114.76,
+      "end": 115.74,
+      "text": "los héroes de película.",
+      "words": [
+        {
+          "t": 114.76,
+          "text": "los"
+        },
+        {
+          "t": 114.96,
+          "text": "héroes"
+        },
+        {
+          "t": 115.3,
+          "text": "de"
+        },
+        {
+          "t": 115.38,
+          "text": "película."
+        }
+      ]
+    },
+    {
+      "start": 117.472,
+      "end": 119.32,
+      "text": "No se quedan al final,",
+      "words": [
+        {
+          "t": 117.472,
+          "text": "No"
+        },
+        {
+          "t": 117.74,
+          "text": "se"
+        },
+        {
+          "t": 117.9,
+          "text": "quedan"
+        },
+        {
+          "t": 118.66,
+          "text": "al"
+        },
+        {
+          "t": 118.76,
+          "text": "final,"
+        }
+      ]
+    },
+    {
+      "start": 119.41,
+      "end": 125.5,
+      "text": "yo no quiero amor de cine,",
+      "words": [
+        {
+          "t": 119.41,
+          "text": "yo"
+        },
+        {
+          "t": 121.66,
+          "text": "no"
+        },
+        {
+          "t": 122.88,
+          "text": "quiero"
+        },
+        {
+          "t": 123.02,
+          "text": "amor"
+        },
+        {
+          "t": 124.1,
+          "text": "de"
+        },
+        {
+          "t": 124.66,
+          "text": "cine,"
+        }
+      ]
+    },
+    {
+      "start": 127.98,
+      "end": 130.98,
+      "text": "quiero el té se queda,",
+      "words": [
+        {
+          "t": 127.98,
+          "text": "quiero"
+        },
+        {
+          "t": 129.08,
+          "text": "el"
+        },
+        {
+          "t": 129.34,
+          "text": "té"
+        },
+        {
+          "t": 129.44,
+          "text": "se"
+        },
+        {
+          "t": 129.88,
+          "text": "queda,"
+        }
+      ]
+    },
+    {
+      "start": 131.2,
+      "end": 134.5,
+      "text": "quédate,",
+      "words": [
+        {
+          "t": 131.2,
+          "text": "quédate,"
+        }
+      ]
+    },
+    {
+      "start": 134.88,
+      "end": 136.78,
+      "text": "quédate.",
+      "words": [
+        {
+          "t": 134.88,
+          "text": "quédate."
+        }
+      ]
+    },
+    {
+      "start": 136.88,
+      "end": 142.48,
+      "text": "No me den mil horas que se inventan,",
+      "words": [
+        {
+          "t": 136.88,
+          "text": "No"
+        },
+        {
+          "t": 138.18,
+          "text": "me"
+        },
+        {
+          "t": 138.92,
+          "text": "den"
+        },
+        {
+          "t": 138.92,
+          "text": "mil"
+        },
+        {
+          "t": 138.92,
+          "text": "horas"
+        },
+        {
+          "t": 139.54,
+          "text": "que"
+        },
+        {
+          "t": 142.48,
+          "text": "se"
+        },
+        {
+          "t": 142.48,
+          "text": "inventan,"
+        }
+      ]
+    },
+    {
+      "start": 142.48,
+      "end": 143.26,
+      "text": "mamá más desfiles que después se van.",
+      "words": [
+        {
+          "t": 142.48,
+          "text": "mamá"
+        },
+        {
+          "t": 142.48,
+          "text": "más"
+        },
+        {
+          "t": 143.26,
+          "text": "desfiles"
+        },
+        {
+          "t": 143.26,
+          "text": "que"
+        },
+        {
+          "t": 143.26,
+          "text": "después"
+        },
+        {
+          "t": 143.26,
+          "text": "se"
+        },
+        {
+          "t": 143.26,
+          "text": "van."
+        }
+      ]
+    },
+    {
+      "start": 143.26,
+      "end": 144.2,
+      "text": "Si,",
+      "words": [
+        {
+          "t": 143.26,
+          "text": "Si,"
+        }
+      ]
+    },
+    {
+      "start": 144.2,
+      "end": 144.2,
+      "text": "si tu gasolina no me come si ya,",
+      "words": [
+        {
+          "t": 144.2,
+          "text": "si"
+        },
+        {
+          "t": 144.2,
+          "text": "tu"
+        },
+        {
+          "t": 144.2,
+          "text": "gasolina"
+        },
+        {
+          "t": 144.2,
+          "text": "no"
+        },
+        {
+          "t": 144.2,
+          "text": "me"
+        },
+        {
+          "t": 144.2,
+          "text": "come"
+        },
+        {
+          "t": 144.2,
+          "text": "si"
+        },
+        {
+          "t": 144.2,
+          "text": "ya,"
+        }
+      ]
+    },
+    {
+      "start": 144.2,
+      "end": 144.2,
+      "text": "dime si somos dos o solo cuando te queden a ti.",
+      "words": [
+        {
+          "t": 144.2,
+          "text": "dime"
+        },
+        {
+          "t": 144.2,
+          "text": "si"
+        },
+        {
+          "t": 144.2,
+          "text": "somos"
+        },
+        {
+          "t": 144.2,
+          "text": "dos"
+        },
+        {
+          "t": 144.2,
+          "text": "o"
+        },
+        {
+          "t": 144.2,
+          "text": "solo"
+        },
+        {
+          "t": 144.2,
+          "text": "cuando"
+        },
+        {
+          "t": 144.2,
+          "text": "te"
+        },
+        {
+          "t": 144.2,
+          "text": "queden"
+        },
+        {
+          "t": 144.2,
+          "text": "a"
+        },
+        {
+          "t": 144.2,
+          "text": "ti."
+        }
+      ]
+    },
+    {
+      "start": 144.2,
+      "end": 144.26,
+      "text": "No se quedan al final,",
+      "words": [
+        {
+          "t": 144.2,
+          "text": "No"
+        },
+        {
+          "t": 144.26,
+          "text": "se"
+        },
+        {
+          "t": 144.26,
+          "text": "quedan"
+        },
+        {
+          "t": 144.26,
+          "text": "al"
+        },
+        {
+          "t": 144.26,
+          "text": "final,"
+        }
+      ]
+    },
+    {
+      "start": 144.26,
+      "end": 144.26,
+      "text": "yo no quiero amor de cine,",
+      "words": [
+        {
+          "t": 144.26,
+          "text": "yo"
+        },
+        {
+          "t": 144.26,
+          "text": "no"
+        },
+        {
+          "t": 144.26,
+          "text": "quiero"
+        },
+        {
+          "t": 144.26,
+          "text": "amor"
+        },
+        {
+          "t": 144.26,
+          "text": "de"
+        },
+        {
+          "t": 144.26,
+          "text": "cine,"
+        }
+      ]
+    },
+    {
+      "start": 144.26,
+      "end": 144.26,
+      "text": "quiero el té se queda,",
+      "words": [
+        {
+          "t": 144.26,
+          "text": "quiero"
+        },
+        {
+          "t": 144.26,
+          "text": "el"
+        },
+        {
+          "t": 144.26,
+          "text": "té"
+        },
+        {
+          "t": 144.26,
+          "text": "se"
+        },
+        {
+          "t": 144.26,
+          "text": "queda,"
+        }
+      ]
+    },
+    {
+      "start": 144.26,
+      "end": 144.26,
+      "text": "quédate,",
+      "words": [
+        {
+          "t": 144.26,
+          "text": "quédate,"
+        }
+      ]
+    },
+    {
+      "start": 144.26,
+      "end": 144.26,
+      "text": "quédate.",
+      "words": [
+        {
+          "t": 144.26,
+          "text": "quédate."
+        }
+      ]
+    },
+    {
+      "start": 144.26,
+      "end": 148.14,
+      "text": "Su me insumó, asumó estado.",
+      "words": [
+        {
+          "t": 144.26,
+          "text": "Su"
+        },
+        {
+          "t": 144.416,
+          "text": "me"
+        },
+        {
+          "t": 144.8,
+          "text": "insumó,"
+        },
+        {
+          "t": 146.04,
+          "text": "asumó"
+        },
+        {
+          "t": 147.7,
+          "text": "estado."
+        }
+      ]
+    },
+    {
+      "start": 151.904,
+      "end": 153.84,
+      "text": "Quédate y lo sabré.",
+      "words": [
+        {
+          "t": 151.904,
+          "text": "Quédate"
+        },
+        {
+          "t": 152.46,
+          "text": "y"
+        },
+        {
+          "t": 152.82,
+          "text": "lo"
+        },
+        {
+          "t": 153.06,
+          "text": "sabré."
+        }
+      ]
+    },
+    {
+      "start": 155.02,
+      "end": 157.34,
+      "text": "Tú me quitaste de ti.",
+      "words": [
+        {
+          "t": 155.02,
+          "text": "Tú"
+        },
+        {
+          "t": 156.42,
+          "text": "me"
+        },
+        {
+          "t": 157.34,
+          "text": "quitaste"
+        },
+        {
+          "t": 157.34,
+          "text": "de"
+        },
+        {
+          "t": 157.34,
+          "text": "ti."
+        }
+      ]
+    },
+    {
+      "start": 157.34,
+      "end": 157.4,
+      "text": "Yo te quité.",
+      "words": [
+        {
+          "t": 157.34,
+          "text": "Yo"
+        },
+        {
+          "t": 157.4,
+          "text": "te"
+        },
+        {
+          "t": 157.4,
+          "text": "quité."
+        }
+      ]
+    },
+    {
+      "start": 157.4,
+      "end": 157.84,
+      "text": "Qué porco, qué porco.",
+      "words": [
+        {
+          "t": 157.4,
+          "text": "Qué"
+        },
+        {
+          "t": 157.4,
+          "text": "porco,"
+        },
+        {
+          "t": 157.4,
+          "text": "qué"
+        },
+        {
+          "t": 157.4,
+          "text": "porco."
+        }
+      ]
+    },
+    {
+      "start": 157.84,
+      "end": 158.9,
+      "text": "Yo te quité yo te inventé.",
+      "words": [
+        {
+          "t": 157.84,
+          "text": "Yo"
+        },
+        {
+          "t": 158.9,
+          "text": "te"
+        },
+        {
+          "t": 158.9,
+          "text": "quité"
+        },
+        {
+          "t": 158.9,
+          "text": "yo"
+        },
+        {
+          "t": 158.9,
+          "text": "te"
+        },
+        {
+          "t": 158.9,
+          "text": "inventé."
+        }
+      ]
+    },
+    {
+      "start": 158.9,
+      "end": 159.62,
+      "text": "Quédate y lo sabré.",
+      "words": [
+        {
+          "t": 158.9,
+          "text": "Quédate"
+        },
+        {
+          "t": 159.62,
+          "text": "y"
+        },
+        {
+          "t": 159.62,
+          "text": "lo"
+        },
+        {
+          "t": 159.62,
+          "text": "sabré."
+        }
+      ]
+    }
+  ]
+}

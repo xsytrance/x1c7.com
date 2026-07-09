@@ -1,0 +1,272 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "in-love-with-the-party",
+  "generatedAt": "2026-07-09T18:13:05.269Z",
+  "measured": {
+    "bpm": 129.2,
+    "duration": 121.72
+  },
+  "identity": {
+    "title": "In Love With The Party",
+    "titleAlternates": [],
+    "genre": "Pop House",
+    "subGenres": [
+      "Deep House",
+      "Nu-Disco"
+    ],
+    "mood": "Euphoric, Intimate, Lush, Nostalgic",
+    "styleSentence": "A mid-tempo (129 BPM) F# major track blending warm synth pads and soft guitar hums with a driving yet restrained 808 bassline that creates an intimate club atmosphere where the energy dips gracefully for vocal intimacy before rising again.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "Smooth, breathy, warm"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/in-love-with-the-party/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180818",
+      "#080818",
+      "#180808",
+      "#280818"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F#",
+      "mode": "major",
+      "confidence": 0.849
+    },
+    "boundaries": [
+      26.01,
+      31.21,
+      55.73,
+      59.81,
+      92.32,
+      100.77,
+      105.33,
+      116.1
+    ],
+    "brightness": 3165.4,
+    "dynamicsDb": 14.2
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "We’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums fade out\nBut we still keep swaying\nLow lights glow\nWhile the guitar’s still playing\nSoft lead hums\nLike a secret we’re saving\nHeartbeats sync\nWith the night we’re craving\nWhen the snare cuts\nI can hear your whisper\nPromise that you’ll stay\nTill the dawn gets crisper\nEven when it’s quiet\nWe still feel lifted\nParty in our souls\nThat’s a lifelong ticket\nWe’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums come back for a second\nThen they slide away\nVinyl crackle holds the memory\nOf this perfect day\nLast chord rings\nWhile we walk in the city light\nStill in love with the party\nCarry it into the night\nYeah",
+    "lrc": "[Intro]\n[Verse 1]\n[00:00.00] We in love with the party,\n[00:02.18] party after midnight\n[00:04.00] Smooth like the chords in the lowlights\n[00:07.69] 808 heartbeat, we've been out so right\n[00:11.24] We don't wanna leave,\n[00:12.94] we just wanna live the night alive\n[Chorus]\n[00:15.65] We in love with the party,\n[00:18.62] bodies in the same wave\n[00:20.44] Pump up the groove, still a heat wave\n[00:23.04] Every little moment that the DJ plays\n[00:26.04] Got us falling deeper in the late night, hey\n[Bridge]\n[00:29.88] Drums fade out, but we still keep swaying\n[00:33.72] Low lights blow out, the guitar's still playing\n[00:37.20] Soft let hum like a secret we're saving\n[00:41.02] Heartbeat sync with the night we're craving\n[Drop]\n[00:44.76] On the snare pad, I can hear your whisper\n[00:48.28] Promise that you'll stay till the dawn gets crisper\n[00:51.82] Even when it's quiet, we still feel lifted\n[00:55.46] Party in the night, we still keep swaying\n[00:56.04] Party in our souls, that's a lifelong ticket\n[Verse 2]\n[00:59.04] We in love with the party, party after midnight\n[01:03.70] Smooth like the chords in the lowlights\n[01:07.72] 808 heartbeat, we've been out so right\n[01:11.22] We don't wanna leave,\n[01:12.84] we just wanna live the night alive\n[Chorus]\n[01:15.46] We in love with the party,\n[01:18.54] bodies in the same wave\n[01:20.42] Pump up the groove, still a heat wave\n[01:23.06] Every little moment that the DJ plays\n[01:25.98] Pump up the groove, still a heat wave\n[01:26.04] Got us falling deeper in the late night, hey\n[01:30.04] Drums come back for a second,\n[01:32.86] then they slide away\n[01:33.86] Vinyl crackle hold the memory of this perfect day\n[01:37.64] Last chord ring while we walk in the city light\n[01:41.18] Still in love with the party carried into the night,\n[01:44.64] yeah\n[Outro]\n[01:57.86] Don't be shy\n[02:01.04] We're in love with the party the way we are\n"
+  },
+  "analysis": {
+    "summary": "This mid-tempo Pop House track explores an intimate connection found within a bustling party atmosphere, where the music acts as a heartbeat syncing two souls until dawn.",
+    "overallMood": "Euphoric",
+    "themes": [
+      "Intimacy amidst crowds",
+      "Nighttime escapism",
+      "Sensory warmth (synth pads/guitar)",
+      "Enduring connection"
+    ],
+    "palette": [
+      "#1A2634",
+      "#E8D5B7",
+      "#FF9F00",
+      "#C0392B"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and warmth",
+        "intensity": 0.58,
+        "colorHint": "#1a2634",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Relaxed groove and confidence",
+        "intensity": 0.85,
+        "colorHint": "#e8d5b7",
+        "start": 0
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Climactic warmth with fading rhythm",
+        "intensity": 0.98,
+        "colorHint": "#ffa342",
+        "start": 15.65
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Soft vulnerability and acoustic intimacy",
+        "intensity": 0.55,
+        "colorHint": "#c0392b",
+        "start": 29.88
+      },
+      {
+        "name": "Drop",
+        "emotion": "Emotional lift with rhythmic drive",
+        "intensity": 0.61,
+        "colorHint": "#ff6f00",
+        "start": 44.76
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Deepened nostalgia and flow",
+        "intensity": 0.2,
+        "colorHint": "#e8d5b7",
+        "start": 59.04
+      },
+      {
+        "name": "Outro",
+        "emotion": "Quiet acceptance and lingering love",
+        "intensity": 0.14,
+        "colorHint": "#1f386b",
+        "start": 117.86
+      }
+    ],
+    "keywords": [
+      {
+        "word": "heartbeat",
+        "emotion": "Rhythmic pulse of connection",
+        "imageryPrompt": "Close up macro shot of a glowing, warm orange digital heartbeat waveform pulsing against a dark blue background."
+      },
+      {
+        "word": "lowlights",
+        "emotion": "Soft ambient warmth",
+        "imageryPrompt": "Dimly lit room with soft golden light filtering through shadows creating smooth gradients on skin and fabric textures."
+      },
+      {
+        "word": "wave",
+        "emotion": "Unifying flow of bodies",
+        "imageryPrompt": "A crowd of silhouettes moving in perfect unison like a single fluid body under moonlight, rippling with energy."
+      },
+      {
+        "word": "heat",
+        "emotion": "Intense sensory sensation",
+        "imageryPrompt": "Heat haze distorting city lights into shimmering golden streaks above a dancing crowd at night."
+      },
+      {
+        "word": "whisper",
+        "emotion": "Secret promise in the dark",
+        "imageryPrompt": "Two figures standing close together, one leaning towards the other's ear, illuminated by a single soft spotlight against darkness."
+      },
+      {
+        "word": "crispier",
+        "emotion": "Clarity of dawn arrival",
+        "imageryPrompt": "Pale blue morning light breaking over a city skyline with sharp, clear details replacing the previous haze."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 56,
+      "mid": 43,
+      "close": 25
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0,
+        "intensity": 0.58
+      },
+      {
+        "name": "Verse 1",
+        "start": 0,
+        "intensity": 0.85
+      },
+      {
+        "name": "Chorus",
+        "start": 15.65,
+        "intensity": 0.98
+      },
+      {
+        "name": "Bridge",
+        "start": 29.88,
+        "intensity": 0.55
+      },
+      {
+        "name": "Drop",
+        "start": 44.76,
+        "intensity": 0.61
+      },
+      {
+        "name": "Verse 2",
+        "start": 59.04,
+        "intensity": 0.2
+      },
+      {
+        "name": "Outro",
+        "start": 117.86,
+        "intensity": 0.14
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 84
+      },
+      {
+        "name": "Verse 1",
+        "presence": 83
+      },
+      {
+        "name": "Chorus",
+        "presence": 83
+      },
+      {
+        "name": "Bridge",
+        "presence": 82
+      },
+      {
+        "name": "Drop",
+        "presence": 85
+      },
+      {
+        "name": "Verse 2",
+        "presence": 8
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          1.58
+        ],
+        [
+          38.22,
+          39.26
+        ],
+        [
+          43.58,
+          44.78
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "bass",
+        "synth",
+        "other"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "in-love-with-the-party-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

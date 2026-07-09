@@ -1,0 +1,117 @@
+[
+  {
+    "id": "between-the-stations",
+    "planet": {
+      "analysis": {
+        "summary": "This track uses a subway journey as a metaphor for navigating urban exhaustion and finding moments of respite between chaotic stops. It transforms gritty city transit into an aggressive yet cathartic dancehall experience where rhythm becomes the mechanism to reclaim one's identity.",
+        "overallMood": "0.85",
+        "themes": [
+          "Urban Exhaustion",
+          "Cathartic Release",
+          "Identity Reclamation",
+          "Nightlife Escapism",
+          "Sensory Overload vs. Peace"
+        ],
+        "palette": [
+          "#1A0F0E",
+          "#8B2500",
+          "#FFD700",
+          "#C43D69"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Disoriented, hazy observation of the city passing by at night.",
+            "intensity": 0.5,
+            "colorHintHex": "#2E1A18",
+            "imageryPrompt": "Low angle shot from inside a moving vehicle looking out through rain-streaked windows at blurred neon signs and dark subway tunnels, shallow depth of field.",
+            "start": 3.46
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Physical sensation of being pulled forward by momentum despite mental fatigue.",
+            "intensity": 0.65,
+            "colorHintHex": "#4A2C29",
+            "imageryPrompt": "Close up on sweaty palms gripping a cold metal handrail inside a crowded train car with flickering fluorescent lights casting harsh shadows.",
+            "start": 34.96
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Sudden realization of freedom and the ability to control one's own breath.",
+            "intensity": 0.75,
+            "colorHintHex": "#FF8C42",
+            "imageryPrompt": "A silhouette standing on a platform edge with arms wide open against a backdrop of flashing red and green signal lights turning into abstract geometric patterns.",
+            "start": 42.04
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Final resolution where the journey becomes home, breathing in sync with the beat.",
+            "intensity": 0.95,
+            "colorHintHex": "#FFD700",
+            "imageryPrompt": "Explosive burst of golden light filling a dark underground station, confetti or sparks rising into the air as figures raise hands in celebration.",
+            "start": 58.06
+          },
+          {
+            "name": "Post-Chorus",
+            "emotion": "Reflective movement amidst the crowd, finding clarity through rhythm.",
+            "intensity": 0.85,
+            "colorHintHex": "#FFA500",
+            "imageryPrompt": "Wide shot of a massive dance floor with laser beams cutting through thick haze, everyone moving in sync but individuals looking focused and calm.",
+            "start": 111.5
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Internal quietude replacing previous heaviness, acceptance of the present moment.",
+            "intensity": 0.6,
+            "colorHintHex": "#3D4C53",
+            "imageryPrompt": "Slow motion shot inside a subway tunnel with blue emergency lighting reflecting on wet pavement, steam rising from vents creating soft mist.",
+            "start": 146.86
+          },
+          {
+            "name": "Pre-Chorus 2",
+            "emotion": "Heightened sensory awareness of flashing lights and beating hearts.",
+            "intensity": 0.8,
+            "colorHintHex": "#DC143C",
+            "imageryPrompt": "Abstract view of a kaleidoscope formed by city billboard reflections on glass surfaces mixed with rhythmic pulse visualizations.",
+            "start": 186.48
+          }
+        ],
+        "keywords": [
+          {
+            "word": "breathe",
+            "emotion": "Relief and liberation from pressure.",
+            "imageryPrompt": "A lung expanding rapidly captured by high-speed photography with particles of dust or light exploding outward in slow motion."
+          },
+          {
+            "word": "tunnel",
+            "emotion": "Isolation leading to introspection within the urban maze.",
+            "imageryPrompt": "Infinite perspective down a long dark subway tunnel where the tracks seem to stretch into infinity with distant blue lights fading away."
+          },
+          {
+            "word": "chasing",
+            "emotion": "Desperate urgency mixed with exhaustion of pursuit.",
+            "imageryPrompt": "A runner blurred by motion running against a backdrop of city skyscrapers reflected in puddles under heavy rain at night."
+          },
+          {
+            "word": "underground",
+            "emotion": "Hidden sanctuary beneath the noisy surface world.",
+            "imageryPrompt": "Subterranean cavern with bioluminescent fungi and soft amber lighting creating a warm, safe atmosphere away from the sun."
+          },
+          {
+            "word": "steam",
+            "emotion": "Visceral heat rising to clear the mind of confusion.",
+            "imageryPrompt": "Thick white vapor swirling around a dancer in silhouette against hot industrial pipes and glowing red machinery sparks."
+          },
+          {
+            "word": "fading",
+            "emotion": "Loss of identity dissolving into the collective noise.",
+            "imageryPrompt": "A figure slowly becoming transparent or pixelating as they walk away from a bright, overwhelming city street sign."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

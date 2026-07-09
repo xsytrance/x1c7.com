@@ -1,0 +1,30 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 124,
+   "end": 137,
+   "reactor": "sizzle",
+   "why": "The breakdown hits peak sensory overload (0.96 intensity). 'Sizzle' captures the heat of t"
+  },
+  {
+   "start": 148,
+   "end": 172,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "DRUMS ONLY"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "gold": "shimmer",
+  "smoke": "dissolve",
+  "rum": "burn",
+  "crew": "pulse",
+  "hot": "glitch",
+  "bold": "slam"
+ }
+}
