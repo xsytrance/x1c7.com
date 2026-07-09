@@ -78,7 +78,7 @@ async function analyze(t) {
   // num_ctx must match onboard-song.mjs's llm() — a differing context size
   // forces Ollama to restart the runner (a full model reload) between stages.
   const body = JSON.stringify({ model: MODEL, stream: true, format: "json", think: false,
-    options: { temperature: 0.6, num_ctx: 8192, num_predict: 2200 },
+    options: { temperature: 0.6, num_ctx: 8192, num_predict: 3200 },
     messages: [{ role: "system", content: sys }, { role: "user", content: user }] });
   const raw = await new Promise((resolve, reject) => {
     const req = http.request(`${HOST}/api/chat`, {

@@ -42,24 +42,65 @@ const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1]?.startsWith("--") || arr[i + 1] === undefined ? true : arr[i + 1]]);
   return a;
 }, []));
-const AUDIO = args.audio && args.audio !== true ? resolve(args.audio) : null;
+const log = (...a) => console.error(...a);
+const slugify = (t) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+
+// ── SUNO SELF-SERVE ─────────────────────────────────────────────────────────
+// --suno <uuid | suno.com/song url | slug | title fragment> pulls whatever
+// inputs weren't given manually from the public profile API: release mp3,
+// cover, official lyrics (metadata.prompt), style (metadata.tags), title.
+let suno = null;
+if (args.suno && args.suno !== true) {
+  const handle = args.handle && args.handle !== true ? args.handle : "xsytrance";
+  const key = String(args.suno).replace(/^https?:\/\/suno\.com\/song\//, "").replace(/[?#].*$/, "").toLowerCase();
+  const UA = { headers: { "User-Agent": "Mozilla/5.0 (X11; Linux x86_64)" } };
+  const clips = [];
+  for (let n = 1; ; n++) {
+    const res = await fetch(`https://studio-api.prod.suno.com/api/profiles/${handle}?playlists_sort_by=upvote_count&clips_sort_by=created_at&page=${n}`, UA);
+    if (!res.ok) throw new Error(`suno api ${res.status}`);
+    const p = await res.json();
+    clips.push(...(p.clips ?? []));
+    if (!p.clips?.length || clips.length >= (p.num_total_clips ?? 0)) break;
+  }
+  const c = clips.find((x) => x.id === key)
+    ?? clips.find((x) => slugify(x.title ?? "") === key)
+    ?? clips.find((x) => (x.title ?? "").toLowerCase().includes(key));
+  if (!c) { console.error(`✗ no public clip matching "${args.suno}" on @${handle}`); process.exit(1); }
+  suno = {
+    id: c.id, title: c.title?.trim(), tags: c.metadata?.tags ?? null,
+    lyrics: c.metadata?.prompt ?? null, audioUrl: c.audio_url, imageUrl: c.image_large_url ?? c.image_url,
+  };
+  log(`suno: "${suno.title}" (${suno.id})`);
+}
+
 const STEMS_IN = args.stems && args.stems !== true ? resolve(args.stems) : null;
-if (!AUDIO && !STEMS_IN) { console.error("need at least --audio or --stems"); process.exit(1); }
-const COVER = args.cover && args.cover !== true ? resolve(args.cover) : null;
-const LYRICS = args["lyrics-file"] && args["lyrics-file"] !== true ? readFileSync(resolve(args["lyrics-file"]), "utf8").trim() : null;
-const STYLE = args.style && args.style !== true
-  ? (existsSync(resolve(args.style)) ? readFileSync(resolve(args.style), "utf8").trim() : args.style) : null;
-const TITLE = args.title && args.title !== true ? args.title : null;
+if (!args.audio && !STEMS_IN && !suno) { console.error("need --audio, --stems, or --suno"); process.exit(1); }
+const TITLE = args.title && args.title !== true ? args.title : suno?.title ?? null;
 const ARTIST = args.artist && args.artist !== true ? args.artist : "xsytrance";
 const ID = args.id && args.id !== true ? args.id
-  : (TITLE || basename(STEMS_IN || AUDIO)).toLowerCase().replace(/\.[a-z0-9]+$/, "")
-      .replace(/stems?$/i, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  : slugify((TITLE || basename(STEMS_IN || args.audio)).replace(/\.[a-z0-9]+$/, "").replace(/stems?$/i, ""));
 const OUT = resolve(args.out && args.out !== true ? args.out : join(HERE, "profiles", ID));
 const MODEL = args.model && args.model !== true ? args.model : "qwen2.5:14b";
 const VISION = args["vision-model"] && args["vision-model"] !== true ? args["vision-model"] : "llama3.2-vision";
 const VENV = args.venv && args.venv !== true ? resolve(args.venv) : `${process.env.HOME}/whisper-venv`;
-const log = (...a) => console.error(...a);
 mkdirSync(OUT, { recursive: true });
+
+const fetchTo = async (url, dest) => {
+  if (existsSync(dest)) return dest;
+  const res = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+  if (!res.ok) throw new Error(`${res.status} ${url}`);
+  writeFileSync(dest, Buffer.from(await res.arrayBuffer()));
+  return dest;
+};
+let AUDIO = args.audio && args.audio !== true ? resolve(args.audio) : null;
+if (!AUDIO && suno?.audioUrl) { log("↓ suno release mp3 …"); AUDIO = await fetchTo(suno.audioUrl, join(OUT, "release.mp3")); }
+let COVER = args.cover && args.cover !== true ? resolve(args.cover) : null;
+if (!COVER && suno?.imageUrl) COVER = await fetchTo(suno.imageUrl, join(OUT, "cover.jpeg"));
+const LYRICS = args["lyrics-file"] && args["lyrics-file"] !== true
+  ? readFileSync(resolve(args["lyrics-file"]), "utf8").trim() : suno?.lyrics?.trim() ?? null;
+const STYLE = args.style && args.style !== true
+  ? (existsSync(resolve(args.style)) ? readFileSync(resolve(args.style), "utf8").trim() : args.style)
+  : suno?.tags?.trim() ?? null;
 
 // Same filename → bucket map as analyze_stems.py / publish-stems.mjs.
 const PATTERNS = [
@@ -170,17 +211,23 @@ const mix = senses.mix ?? JSON.parse(readFileSync(mixPath, "utf8")).mix;
 
 // ── 3. HEAR THE WORDS (Whisper) ─────────────────────────────────────────────
 const trPath = join(OUT, "transcript.json");
+// The lead stem is the fast path (isolated vocal, no demucs) — but it lives
+// on the STEM clock. With a real release and a weak alignment score the two
+// clocks can genuinely diverge (different cut/master), so timestamps would
+// drift; then the release itself is the only trustworthy clock.
+const stemClockOk = !AUDIO || (senses.align?.score ?? 0) >= 0.6;
+const useLead = !!stemFiles.lead && stemClockOk;
 if (!existsSync(trPath)) {
-  const src = stemFiles.lead || release;
-  log(`▶ transcribe ${basename(src)} ${stemFiles.lead ? "(isolated lead, no demucs)" : "(demucs)"} …`);
+  const src = useLead ? stemFiles.lead : release;
+  log(`▶ transcribe ${basename(src)} ${useLead ? "(isolated lead, no demucs)" : "(release + demucs — stem clock unreliable)"} …`);
   run(`${VENV}/bin/python`, [join(REPO, "scripts/import-youtube/transcribe.py"),
     "--audio", src, "--out", trPath,
-    ...(stemFiles.lead ? ["--no-demucs"] : []),
+    ...(useLead ? ["--no-demucs"] : []),
     ...(args.lang && args.lang !== true ? ["--language", args.lang] : [])]);
 }
 const transcript = JSON.parse(readFileSync(trPath, "utf8"));
 // Stem clock → release clock.
-const lag = stemFiles.lead ? (senses.align?.lag ?? 0) : 0;
+const lag = useLead ? (senses.align?.lag ?? 0) : 0;
 const lines = transcript.segments
   .map((s) => ({ t: Math.max(0, s.start + lag), text: s.text.trim() }))
   .filter((l) => l.text);
@@ -190,9 +237,14 @@ const lyricsText = LYRICS || lines.map((l) => l.text).join("\n");
 const env = senses.env ?? {};
 const instruments = Object.keys(env);
 const arc = (() => {
-  const tot = instruments.length
+  let tot = instruments.length
     ? env[instruments[0]].map((_, i) => instruments.reduce((s, k) => s + (env[k][i] ?? 0), 0) / instruments.length)
     : [];
+  // Stems often carry a silent padded tail past the release's end — trim it
+  // so the arc reads the song, not the padding.
+  let end = tot.length;
+  while (end > 0 && tot[end - 1] <= 2) end--;
+  tot = tot.slice(0, end);
   if (!tot.length) return null;
   const third = Math.floor(tot.length / 3);
   const avg = (a) => Math.round(a.reduce((s, v) => s + v, 0) / (a.length || 1));
@@ -277,6 +329,16 @@ run("node", [join(HERE, "analyze.mjs"), "--in", tracksJson, "--out", planetJson,
 const planetRow = JSON.parse(readFileSync(planetJson, "utf8"))[0];
 if (!planetRow?.ok) throw new Error(`analyze.mjs failed: ${planetRow?.error}`);
 const analysis = planetRow.planet.analysis;
+
+// Lexicon wants single words — when the LLM emits a phrase ("say it with
+// your body"), keep its most salient word; drop dupes that creates.
+const STOP = new Set(["the", "a", "an", "with", "your", "our", "my", "it", "its", "in", "on", "of", "to", "and", "me", "you", "say"]);
+const seenKw = new Set();
+analysis.keywords = (analysis.keywords ?? []).map((k) => {
+  let w = String(k.word ?? "").toLowerCase().trim();
+  if (w.includes(" ")) w = w.split(/\s+/).filter((x) => !STOP.has(x)).sort((a, b) => b.length - a.length)[0] ?? w.split(/\s+/)[0];
+  return { ...k, word: w };
+}).filter((k) => k.word && !seenKw.has(k.word) && seenKw.add(k.word));
 
 // Measured intensity beats guessed intensity: mean full-band energy per section.
 const ENV_HZ = senses.envHz ?? 12.5;

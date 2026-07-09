@@ -11,6 +11,7 @@ import { classifyGenre, spineUrl, cardUrl, envBars, fmtTime, GENRE_PALETTES, typ
 import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
 import { detectLite } from "@/lib/perf";
+import ShareButton from "@/components/ShareButton";
 
 const HOVER_PREVIEW_DELAY = 380;
 
@@ -228,6 +229,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                       SUNO ↗
                     </a>
                   )}
+                  <ShareButton id={focused.id} />
                 </div>
                 <p className="mt-3 font-mono text-[11px] tracking-[0.12em] text-white/35">
                   {preview.state.blocked ? "CLICK ANYWHERE TO ENABLE SOUND PREVIEWS" :

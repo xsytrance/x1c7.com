@@ -4,7 +4,7 @@ The list that used to live in a session scratchpad, now somewhere reboots can't
 eat it. One line per track: checked = separated stems live in the mixer
 (Supabase `tracks.planet->assets->stemAudio` + audio in R2 `planets/<slug>/stems/`).
 
-Status as of **2026-07-09 (midday)** — 43 of 52 tracks live, **353 stems**.
+Status as of **2026-07-09 (afternoon)** — 56 tracks in the DB (54 public), 44 with live stem mixers. New today: Days Drift By, Say It With Your Body, Summer Drip, International Heat, Rum Pon Gold, Still Got 5 On It (all full onboards with official lyrics).
 
 Verify / regenerate against the live DB:
 
@@ -78,11 +78,6 @@ Drop the zip in `assets/suno/stems/` and run the pipeline
 - [ ] Paper That Cut You
 - [ ] Who's That Snake (Funky Slow-Jam Mix)
 - [ ] Summer Drip — LIVE on the site 2026-07-09 (full planet, official lyrics, 858 synced words); stems zip pending for the mixer
-
-## Lyrics + style in hand, no audio yet (3)
-
-Filed in `assets/suno/lyrics & styles/`; waiting on mp3 + cover from Suno.
-
-- [ ] Still Got Five On It (Rooklyn — river-noir boom bap)
-- [ ] International Heat (EN/VN club track)
-- [ ] Rum Pon Gold (dancehall riddim)
+- [ ] International Heat — LIVE 2026-07-09 (assets pulled via Suno API); stems zip pending
+- [ ] Rum Pon Gold — LIVE 2026-07-09 (assets pulled via Suno API); stems zip pending
+- [ ] Still Got 5 On It — LIVE 2026-07-09 (Rooklyn B&W+gold art rule applied); stems zip pending
