@@ -8,7 +8,7 @@
 import { useSyncExternalStore } from "react";
 import type { StemName } from "@/lib/stemSense";
 
-export const STEM_ORDER: StemName[] = ["lead", "back", "drums", "perc", "bass", "synth", "guitar", "keys", "other"];
+export const STEM_ORDER: StemName[] = ["lead", "back", "drums", "perc", "bass", "synth", "guitar", "keys", "strings", "woodwinds", "other"];
 
 export const STEM_INFO: Record<StemName, { label: string; icon: string }> = {
   lead: { label: "Voice", icon: "🎤" },
@@ -19,6 +19,8 @@ export const STEM_INFO: Record<StemName, { label: string; icon: string }> = {
   synth: { label: "Synth", icon: "🎛" },
   guitar: { label: "Guitar", icon: "🎸" },
   keys: { label: "Keys", icon: "🎹" },
+  strings: { label: "Strings", icon: "🎻" },
+  woodwinds: { label: "Winds", icon: "🎷" },
   other: { label: "Other", icon: "✨" },
 };
 
@@ -120,7 +122,7 @@ export interface StemPreset {
 }
 
 const RHYTHM: StemName[] = ["drums", "perc", "bass"];
-const BED: StemName[] = ["synth", "guitar", "keys", "other"];
+const BED: StemName[] = ["synth", "guitar", "keys", "strings", "woodwinds", "other"];
 
 export const STEM_PRESETS: StemPreset[] = [
   {

@@ -125,7 +125,8 @@ def main():
         if not low.endswith((".mp3", ".wav", ".flac")): continue
         for key, pat in [("lead", "lead voc"), ("back", "backing voc"), ("drums", "drum"),
                          ("bass", "bass"), ("perc", "perc"), ("synth", "synth"), ("other", "other"),
-                         ("guitar", "guitar"), ("keys", "keyboard")]:
+                         ("guitar", "guitar"), ("keys", "keyboard"),
+                         ("strings", "strings"), ("woodwinds", "woodwind")]:
             if pat in low: names[key] = os.path.join(args.stems, f)
     log("stems:", {k: os.path.basename(v) for k, v in names.items()})
 
