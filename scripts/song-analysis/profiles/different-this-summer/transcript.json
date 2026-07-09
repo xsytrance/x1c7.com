@@ -1,0 +1,4569 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "text": "Ooh,",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Ooh,"
+        }
+      ]
+    },
+    {
+      "start": 0.96,
+      "end": 1.96,
+      "text": "yeah",
+      "words": [
+        {
+          "t": 0.96,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 3.85,
+      "end": 6.82,
+      "text": "Uh, the sun comin' up like it know something",
+      "words": [
+        {
+          "t": 3.85,
+          "text": "Uh,"
+        },
+        {
+          "t": 4.72,
+          "text": "the"
+        },
+        {
+          "t": 5.184,
+          "text": "sun"
+        },
+        {
+          "t": 5.36,
+          "text": "comin'"
+        },
+        {
+          "t": 5.64,
+          "text": "up"
+        },
+        {
+          "t": 5.92,
+          "text": "like"
+        },
+        {
+          "t": 6.1,
+          "text": "it"
+        },
+        {
+          "t": 6.2,
+          "text": "know"
+        },
+        {
+          "t": 6.36,
+          "text": "something"
+        }
+      ]
+    },
+    {
+      "start": 8.448,
+      "end": 10.42,
+      "text": "This summer feel different already",
+      "words": [
+        {
+          "t": 8.448,
+          "text": "This"
+        },
+        {
+          "t": 8.96,
+          "text": "summer"
+        },
+        {
+          "t": 9.3,
+          "text": "feel"
+        },
+        {
+          "t": 9.54,
+          "text": "different"
+        },
+        {
+          "t": 9.98,
+          "text": "already"
+        }
+      ]
+    },
+    {
+      "start": 10.42,
+      "end": 11.56,
+      "text": "Come on",
+      "words": [
+        {
+          "t": 10.42,
+          "text": "Come"
+        },
+        {
+          "t": 11.34,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 13.06,
+      "end": 13.216,
+      "text": "Ooh,",
+      "words": [
+        {
+          "t": 13.06,
+          "text": "Ooh,"
+        }
+      ]
+    },
+    {
+      "start": 13.94,
+      "end": 15.62,
+      "text": "mm-mm-mm",
+      "words": [
+        {
+          "t": 13.94,
+          "text": "mm"
+        },
+        {
+          "t": 14.82,
+          "text": "-mm"
+        },
+        {
+          "t": 15.34,
+          "text": "-mm"
+        }
+      ]
+    },
+    {
+      "start": 15.62,
+      "end": 18.08,
+      "text": "We been waitin' on the light",
+      "words": [
+        {
+          "t": 15.62,
+          "text": "We"
+        },
+        {
+          "t": 16.448,
+          "text": "been"
+        },
+        {
+          "t": 16.68,
+          "text": "waitin'"
+        },
+        {
+          "t": 17.3,
+          "text": "on"
+        },
+        {
+          "t": 17.44,
+          "text": "the"
+        },
+        {
+          "t": 17.66,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 20.76,
+      "end": 21.98,
+      "text": "We gon' get it right",
+      "words": [
+        {
+          "t": 20.76,
+          "text": "We"
+        },
+        {
+          "t": 20.86,
+          "text": "gon'"
+        },
+        {
+          "t": 21.14,
+          "text": "get"
+        },
+        {
+          "t": 21.36,
+          "text": "it"
+        },
+        {
+          "t": 21.64,
+          "text": "right"
+        }
+      ]
+    },
+    {
+      "start": 23.64,
+      "end": 25.84,
+      "text": "No more losin' time",
+      "words": [
+        {
+          "t": 23.64,
+          "text": "No"
+        },
+        {
+          "t": 24.86,
+          "text": "more"
+        },
+        {
+          "t": 24.96,
+          "text": "losin'"
+        },
+        {
+          "t": 25.46,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 25.84,
+      "end": 27.34,
+      "text": "This summer",
+      "words": [
+        {
+          "t": 25.84,
+          "text": "This"
+        },
+        {
+          "t": 26.9,
+          "text": "summer"
+        }
+      ]
+    },
+    {
+      "start": 27.34,
+      "end": 29.28,
+      "text": "This summer",
+      "words": [
+        {
+          "t": 27.34,
+          "text": "This"
+        },
+        {
+          "t": 28.14,
+          "text": "summer"
+        }
+      ]
+    },
+    {
+      "start": 29.98,
+      "end": 32.24,
+      "text": "Yeah, yeah, yeah, yeah, yeah",
+      "words": [
+        {
+          "t": 29.98,
+          "text": "Yeah,"
+        },
+        {
+          "t": 30.38,
+          "text": "yeah,"
+        },
+        {
+          "t": 30.86,
+          "text": "yeah,"
+        },
+        {
+          "t": 31.36,
+          "text": "yeah,"
+        },
+        {
+          "t": 31.84,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 32.24,
+      "end": 34.48,
+      "text": "Same desk, same chair, same old ceiling",
+      "words": [
+        {
+          "t": 32.24,
+          "text": "Same"
+        },
+        {
+          "t": 32.7,
+          "text": "desk,"
+        },
+        {
+          "t": 33.04,
+          "text": "same"
+        },
+        {
+          "t": 33.24,
+          "text": "chair,"
+        },
+        {
+          "t": 33.58,
+          "text": "same"
+        },
+        {
+          "t": 33.92,
+          "text": "old"
+        },
+        {
+          "t": 34.2,
+          "text": "ceiling"
+        }
+      ]
+    },
+    {
+      "start": 34.48,
+      "end": 36.5,
+      "text": "Boss man talkin', but I lost that feelin'",
+      "words": [
+        {
+          "t": 34.48,
+          "text": "Boss"
+        },
+        {
+          "t": 34.92,
+          "text": "man"
+        },
+        {
+          "t": 35.12,
+          "text": "talkin',"
+        },
+        {
+          "t": 35.5,
+          "text": "but"
+        },
+        {
+          "t": 35.6,
+          "text": "I"
+        },
+        {
+          "t": 35.7,
+          "text": "lost"
+        },
+        {
+          "t": 35.9,
+          "text": "that"
+        },
+        {
+          "t": 36.1,
+          "text": "feelin'"
+        }
+      ]
+    },
+    {
+      "start": 36.52,
+      "end": 38.34,
+      "text": "Two weeks off, if the stars line up",
+      "words": [
+        {
+          "t": 36.52,
+          "text": "Two"
+        },
+        {
+          "t": 36.76,
+          "text": "weeks"
+        },
+        {
+          "t": 37.12,
+          "text": "off,"
+        },
+        {
+          "t": 37.42,
+          "text": "if"
+        },
+        {
+          "t": 37.54,
+          "text": "the"
+        },
+        {
+          "t": 37.62,
+          "text": "stars"
+        },
+        {
+          "t": 37.86,
+          "text": "line"
+        },
+        {
+          "t": 38.08,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 38.34,
+      "end": 40.22,
+      "text": "But the flight cost more than the whole damn check",
+      "words": [
+        {
+          "t": 38.34,
+          "text": "But"
+        },
+        {
+          "t": 38.48,
+          "text": "the"
+        },
+        {
+          "t": 38.6,
+          "text": "flight"
+        },
+        {
+          "t": 38.78,
+          "text": "cost"
+        },
+        {
+          "t": 38.98,
+          "text": "more"
+        },
+        {
+          "t": 39.24,
+          "text": "than"
+        },
+        {
+          "t": 39.44,
+          "text": "the"
+        },
+        {
+          "t": 39.58,
+          "text": "whole"
+        },
+        {
+          "t": 39.74,
+          "text": "damn"
+        },
+        {
+          "t": 39.98,
+          "text": "check"
+        }
+      ]
+    },
+    {
+      "start": 40.22,
+      "end": 42.28,
+      "text": "Everybody sayin', hold on, stay safe",
+      "words": [
+        {
+          "t": 40.22,
+          "text": "Everybody"
+        },
+        {
+          "t": 40.56,
+          "text": "sayin',"
+        },
+        {
+          "t": 41.06,
+          "text": "hold"
+        },
+        {
+          "t": 41.2,
+          "text": "on,"
+        },
+        {
+          "t": 41.46,
+          "text": "stay"
+        },
+        {
+          "t": 41.82,
+          "text": "safe"
+        }
+      ]
+    },
+    {
+      "start": 42.28,
+      "end": 44.1,
+      "text": "Clock keep beatin' up another good day",
+      "words": [
+        {
+          "t": 42.28,
+          "text": "Clock"
+        },
+        {
+          "t": 42.64,
+          "text": "keep"
+        },
+        {
+          "t": 42.88,
+          "text": "beatin'"
+        },
+        {
+          "t": 43.26,
+          "text": "up"
+        },
+        {
+          "t": 43.34,
+          "text": "another"
+        },
+        {
+          "t": 43.54,
+          "text": "good"
+        },
+        {
+          "t": 43.82,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 44.1,
+      "end": 45.98,
+      "text": "I used to let you lie, just slide right by",
+      "words": [
+        {
+          "t": 44.1,
+          "text": "I"
+        },
+        {
+          "t": 44.42,
+          "text": "used"
+        },
+        {
+          "t": 44.52,
+          "text": "to"
+        },
+        {
+          "t": 44.66,
+          "text": "let"
+        },
+        {
+          "t": 44.78,
+          "text": "you"
+        },
+        {
+          "t": 44.88,
+          "text": "lie,"
+        },
+        {
+          "t": 45.16,
+          "text": "just"
+        },
+        {
+          "t": 45.26,
+          "text": "slide"
+        },
+        {
+          "t": 45.56,
+          "text": "right"
+        },
+        {
+          "t": 45.76,
+          "text": "by"
+        }
+      ]
+    },
+    {
+      "start": 45.98,
+      "end": 47.98,
+      "text": "Like the sun was free, but it wasn't mine",
+      "words": [
+        {
+          "t": 45.98,
+          "text": "Like"
+        },
+        {
+          "t": 46.2,
+          "text": "the"
+        },
+        {
+          "t": 46.36,
+          "text": "sun"
+        },
+        {
+          "t": 46.52,
+          "text": "was"
+        },
+        {
+          "t": 46.7,
+          "text": "free,"
+        },
+        {
+          "t": 47.06,
+          "text": "but"
+        },
+        {
+          "t": 47.18,
+          "text": "it"
+        },
+        {
+          "t": 47.32,
+          "text": "wasn't"
+        },
+        {
+          "t": 47.64,
+          "text": "mine"
+        }
+      ]
+    },
+    {
+      "start": 48.18,
+      "end": 49.92,
+      "text": "Scrollin' on the phone while the world got loud",
+      "words": [
+        {
+          "t": 48.18,
+          "text": "Scrollin'"
+        },
+        {
+          "t": 48.58,
+          "text": "on"
+        },
+        {
+          "t": 48.64,
+          "text": "the"
+        },
+        {
+          "t": 48.74,
+          "text": "phone"
+        },
+        {
+          "t": 48.96,
+          "text": "while"
+        },
+        {
+          "t": 49.12,
+          "text": "the"
+        },
+        {
+          "t": 49.24,
+          "text": "world"
+        },
+        {
+          "t": 49.48,
+          "text": "got"
+        },
+        {
+          "t": 49.64,
+          "text": "loud"
+        }
+      ]
+    },
+    {
+      "start": 49.92,
+      "end": 51.82,
+      "text": "Everybody buildin', I was sittin' in doubt",
+      "words": [
+        {
+          "t": 49.92,
+          "text": "Everybody"
+        },
+        {
+          "t": 50.5,
+          "text": "buildin',"
+        },
+        {
+          "t": 50.98,
+          "text": "I"
+        },
+        {
+          "t": 51.08,
+          "text": "was"
+        },
+        {
+          "t": 51.16,
+          "text": "sittin'"
+        },
+        {
+          "t": 51.46,
+          "text": "in"
+        },
+        {
+          "t": 51.58,
+          "text": "doubt"
+        }
+      ]
+    },
+    {
+      "start": 51.82,
+      "end": 52.66,
+      "text": "Heard all that A.I.",
+      "words": [
+        {
+          "t": 51.82,
+          "text": "Heard"
+        },
+        {
+          "t": 52.14,
+          "text": "all"
+        },
+        {
+          "t": 52.32,
+          "text": "that"
+        },
+        {
+          "t": 52.4,
+          "text": "A"
+        },
+        {
+          "t": 52.56,
+          "text": ".I."
+        }
+      ]
+    },
+    {
+      "start": 52.66,
+      "end": 53.72,
+      "text": "talk, thought it wasn't for me",
+      "words": [
+        {
+          "t": 52.66,
+          "text": "talk,"
+        },
+        {
+          "t": 52.86,
+          "text": "thought"
+        },
+        {
+          "t": 52.98,
+          "text": "it"
+        },
+        {
+          "t": 53.12,
+          "text": "wasn't"
+        },
+        {
+          "t": 53.38,
+          "text": "for"
+        },
+        {
+          "t": 53.5,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 53.72,
+      "end": 54.98,
+      "text": "Now I'm lookin' at the wave like,",
+      "words": [
+        {
+          "t": 53.72,
+          "text": "Now"
+        },
+        {
+          "t": 53.96,
+          "text": "I'm"
+        },
+        {
+          "t": 54.14,
+          "text": "lookin'"
+        },
+        {
+          "t": 54.36,
+          "text": "at"
+        },
+        {
+          "t": 54.46,
+          "text": "the"
+        },
+        {
+          "t": 54.54,
+          "text": "wave"
+        },
+        {
+          "t": 54.78,
+          "text": "like,"
+        }
+      ]
+    },
+    {
+      "start": 55.04,
+      "end": 55.22,
+      "text": "wait,",
+      "words": [
+        {
+          "t": 55.04,
+          "text": "wait,"
+        }
+      ]
+    },
+    {
+      "start": 55.26,
+      "end": 55.7,
+      "text": "that's a key",
+      "words": [
+        {
+          "t": 55.26,
+          "text": "that's"
+        },
+        {
+          "t": 55.48,
+          "text": "a"
+        },
+        {
+          "t": 55.48,
+          "text": "key"
+        }
+      ]
+    },
+    {
+      "start": 55.7,
+      "end": 57.74,
+      "text": "No suitcase yet, but the plane got motion",
+      "words": [
+        {
+          "t": 55.7,
+          "text": "No"
+        },
+        {
+          "t": 55.88,
+          "text": "suitcase"
+        },
+        {
+          "t": 56.28,
+          "text": "yet,"
+        },
+        {
+          "t": 56.72,
+          "text": "but"
+        },
+        {
+          "t": 56.86,
+          "text": "the"
+        },
+        {
+          "t": 56.98,
+          "text": "plane"
+        },
+        {
+          "t": 57.18,
+          "text": "got"
+        },
+        {
+          "t": 57.38,
+          "text": "motion"
+        }
+      ]
+    },
+    {
+      "start": 57.74,
+      "end": 59.2,
+      "text": "Laptop open with a rumble",
+      "words": [
+        {
+          "t": 57.74,
+          "text": "Laptop"
+        },
+        {
+          "t": 58.34,
+          "text": "open"
+        },
+        {
+          "t": 58.62,
+          "text": "with"
+        },
+        {
+          "t": 58.82,
+          "text": "a"
+        },
+        {
+          "t": 58.92,
+          "text": "rumble"
+        }
+      ]
+    },
+    {
+      "start": 59.2,
+      "end": 59.72,
+      "text": "I'm by the ocean,",
+      "words": [
+        {
+          "t": 59.2,
+          "text": "I'm"
+        },
+        {
+          "t": 59.24,
+          "text": "by"
+        },
+        {
+          "t": 59.24,
+          "text": "the"
+        },
+        {
+          "t": 59.38,
+          "text": "ocean,"
+        }
+      ]
+    },
+    {
+      "start": 59.84,
+      "end": 60.52,
+      "text": "not there now,",
+      "words": [
+        {
+          "t": 59.84,
+          "text": "not"
+        },
+        {
+          "t": 60.0,
+          "text": "there"
+        },
+        {
+          "t": 60.24,
+          "text": "now,"
+        }
+      ]
+    },
+    {
+      "start": 60.62,
+      "end": 61.5,
+      "text": "but I see that scene",
+      "words": [
+        {
+          "t": 60.62,
+          "text": "but"
+        },
+        {
+          "t": 60.72,
+          "text": "I"
+        },
+        {
+          "t": 60.82,
+          "text": "see"
+        },
+        {
+          "t": 61.04,
+          "text": "that"
+        },
+        {
+          "t": 61.24,
+          "text": "scene"
+        }
+      ]
+    },
+    {
+      "start": 61.5,
+      "end": 63.48,
+      "text": "Gotta build that life before I leave that dream",
+      "words": [
+        {
+          "t": 61.5,
+          "text": "Gotta"
+        },
+        {
+          "t": 61.7,
+          "text": "build"
+        },
+        {
+          "t": 61.98,
+          "text": "that"
+        },
+        {
+          "t": 62.22,
+          "text": "life"
+        },
+        {
+          "t": 62.42,
+          "text": "before"
+        },
+        {
+          "t": 62.62,
+          "text": "I"
+        },
+        {
+          "t": 62.78,
+          "text": "leave"
+        },
+        {
+          "t": 63.0,
+          "text": "that"
+        },
+        {
+          "t": 63.2,
+          "text": "dream"
+        }
+      ]
+    },
+    {
+      "start": 63.48,
+      "end": 65.54,
+      "text": "We don't wanna waste no weather",
+      "words": [
+        {
+          "t": 63.48,
+          "text": "We"
+        },
+        {
+          "t": 63.84,
+          "text": "don't"
+        },
+        {
+          "t": 64.1,
+          "text": "wanna"
+        },
+        {
+          "t": 64.16,
+          "text": "waste"
+        },
+        {
+          "t": 64.54,
+          "text": "no"
+        },
+        {
+          "t": 64.86,
+          "text": "weather"
+        }
+      ]
+    },
+    {
+      "start": 67.488,
+      "end": 68.87,
+      "text": "We don't wanna wait forever",
+      "words": [
+        {
+          "t": 67.488,
+          "text": "We"
+        },
+        {
+          "t": 67.7,
+          "text": "don't"
+        },
+        {
+          "t": 67.88,
+          "text": "wanna"
+        },
+        {
+          "t": 68.04,
+          "text": "wait"
+        },
+        {
+          "t": 68.34,
+          "text": "forever"
+        }
+      ]
+    },
+    {
+      "start": 70.912,
+      "end": 72.82,
+      "text": "One more spark and we come alive",
+      "words": [
+        {
+          "t": 70.912,
+          "text": "One"
+        },
+        {
+          "t": 71.18,
+          "text": "more"
+        },
+        {
+          "t": 71.38,
+          "text": "spark"
+        },
+        {
+          "t": 71.62,
+          "text": "and"
+        },
+        {
+          "t": 71.86,
+          "text": "we"
+        },
+        {
+          "t": 71.96,
+          "text": "come"
+        },
+        {
+          "t": 72.22,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 74.88,
+      "end": 77.84,
+      "text": "One more step and we change the vibe",
+      "words": [
+        {
+          "t": 74.88,
+          "text": "One"
+        },
+        {
+          "t": 74.98,
+          "text": "more"
+        },
+        {
+          "t": 75.24,
+          "text": "step"
+        },
+        {
+          "t": 75.5,
+          "text": "and"
+        },
+        {
+          "t": 75.74,
+          "text": "we"
+        },
+        {
+          "t": 75.82,
+          "text": "change"
+        },
+        {
+          "t": 76.18,
+          "text": "the"
+        },
+        {
+          "t": 77.4,
+          "text": "vibe"
+        }
+      ]
+    },
+    {
+      "start": 78.58,
+      "end": 79.936,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 78.58,
+          "text": "This"
+        },
+        {
+          "t": 78.68,
+          "text": "summer"
+        },
+        {
+          "t": 79.02,
+          "text": "gon'"
+        },
+        {
+          "t": 79.42,
+          "text": "be"
+        },
+        {
+          "t": 79.56,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 81.06,
+      "end": 82.74,
+      "text": "We ain't need fade away",
+      "words": [
+        {
+          "t": 81.06,
+          "text": "We"
+        },
+        {
+          "t": 81.58,
+          "text": "ain't"
+        },
+        {
+          "t": 81.8,
+          "text": "need"
+        },
+        {
+          "t": 82.06,
+          "text": "fade"
+        },
+        {
+          "t": 82.36,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 82.74,
+      "end": 84.84,
+      "text": "Got the sun on our shoulders",
+      "words": [
+        {
+          "t": 82.74,
+          "text": "Got"
+        },
+        {
+          "t": 83.42,
+          "text": "the"
+        },
+        {
+          "t": 83.58,
+          "text": "sun"
+        },
+        {
+          "t": 83.8,
+          "text": "on"
+        },
+        {
+          "t": 84.14,
+          "text": "our"
+        },
+        {
+          "t": 84.44,
+          "text": "shoulders"
+        }
+      ]
+    },
+    {
+      "start": 84.84,
+      "end": 86.68,
+      "text": "Got a friend who gave me flame",
+      "words": [
+        {
+          "t": 84.84,
+          "text": "Got"
+        },
+        {
+          "t": 85.16,
+          "text": "a"
+        },
+        {
+          "t": 85.46,
+          "text": "friend"
+        },
+        {
+          "t": 85.7,
+          "text": "who"
+        },
+        {
+          "t": 85.9,
+          "text": "gave"
+        },
+        {
+          "t": 86.18,
+          "text": "me"
+        },
+        {
+          "t": 86.34,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 86.68,
+      "end": 87.74,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 86.68,
+          "text": "This"
+        },
+        {
+          "t": 86.84,
+          "text": "summer"
+        },
+        {
+          "t": 86.84,
+          "text": "gon'"
+        },
+        {
+          "t": 87.2,
+          "text": "be"
+        },
+        {
+          "t": 87.34,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 89.2,
+      "end": 90.56,
+      "text": "One more waitin' on some day",
+      "words": [
+        {
+          "t": 89.2,
+          "text": "One"
+        },
+        {
+          "t": 89.28,
+          "text": "more"
+        },
+        {
+          "t": 89.28,
+          "text": "waitin'"
+        },
+        {
+          "t": 89.8,
+          "text": "on"
+        },
+        {
+          "t": 89.84,
+          "text": "some"
+        },
+        {
+          "t": 90.2,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 90.56,
+      "end": 92.56,
+      "text": "We gon' learn a little something",
+      "words": [
+        {
+          "t": 90.56,
+          "text": "We"
+        },
+        {
+          "t": 90.92,
+          "text": "gon'"
+        },
+        {
+          "t": 91.28,
+          "text": "learn"
+        },
+        {
+          "t": 91.52,
+          "text": "a"
+        },
+        {
+          "t": 91.7,
+          "text": "little"
+        },
+        {
+          "t": 92.04,
+          "text": "something"
+        }
+      ]
+    },
+    {
+      "start": 92.56,
+      "end": 94.14,
+      "text": "We gon' build our own way",
+      "words": [
+        {
+          "t": 92.56,
+          "text": "We"
+        },
+        {
+          "t": 92.88,
+          "text": "gon'"
+        },
+        {
+          "t": 93.22,
+          "text": "build"
+        },
+        {
+          "t": 93.42,
+          "text": "our"
+        },
+        {
+          "t": 93.68,
+          "text": "own"
+        },
+        {
+          "t": 94.04,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 95.04,
+      "end": 96.42,
+      "text": "Pour it up, let it breathe",
+      "words": [
+        {
+          "t": 95.04,
+          "text": "Pour"
+        },
+        {
+          "t": 95.16,
+          "text": "it"
+        },
+        {
+          "t": 95.3,
+          "text": "up,"
+        },
+        {
+          "t": 95.52,
+          "text": "let"
+        },
+        {
+          "t": 96.02,
+          "text": "it"
+        },
+        {
+          "t": 96.1,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 96.44,
+      "end": 98.0,
+      "text": "Palm trees and the fantasy",
+      "words": [
+        {
+          "t": 96.44,
+          "text": "Palm"
+        },
+        {
+          "t": 97.04,
+          "text": "trees"
+        },
+        {
+          "t": 97.26,
+          "text": "and"
+        },
+        {
+          "t": 97.5,
+          "text": "the"
+        },
+        {
+          "t": 97.58,
+          "text": "fantasy"
+        }
+      ]
+    },
+    {
+      "start": 98.0,
+      "end": 100.36,
+      "text": "But we workin' while it glows",
+      "words": [
+        {
+          "t": 98.0,
+          "text": "But"
+        },
+        {
+          "t": 98.96,
+          "text": "we"
+        },
+        {
+          "t": 99.04,
+          "text": "workin'"
+        },
+        {
+          "t": 99.5,
+          "text": "while"
+        },
+        {
+          "t": 99.64,
+          "text": "it"
+        },
+        {
+          "t": 99.92,
+          "text": "glows"
+        }
+      ]
+    },
+    {
+      "start": 100.36,
+      "end": 102.3,
+      "text": "So the future feels easy",
+      "words": [
+        {
+          "t": 100.36,
+          "text": "So"
+        },
+        {
+          "t": 100.6,
+          "text": "the"
+        },
+        {
+          "t": 100.86,
+          "text": "future"
+        },
+        {
+          "t": 101.3,
+          "text": "feels"
+        },
+        {
+          "t": 101.64,
+          "text": "easy"
+        }
+      ]
+    },
+    {
+      "start": 103.64,
+      "end": 105.28,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 103.64,
+          "text": "This"
+        },
+        {
+          "t": 103.74,
+          "text": "summer"
+        },
+        {
+          "t": 104.18,
+          "text": "gon'"
+        },
+        {
+          "t": 104.58,
+          "text": "be"
+        },
+        {
+          "t": 104.8,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 105.28,
+      "end": 106.76,
+      "text": "Different, different, different",
+      "words": [
+        {
+          "t": 105.28,
+          "text": "Different,"
+        },
+        {
+          "t": 105.88,
+          "text": "different,"
+        },
+        {
+          "t": 106.38,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 106.76,
+      "end": 109.06,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 106.76,
+          "text": "This"
+        },
+        {
+          "t": 107.616,
+          "text": "summer"
+        },
+        {
+          "t": 108.04,
+          "text": "gon'"
+        },
+        {
+          "t": 108.46,
+          "text": "be"
+        },
+        {
+          "t": 108.66,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 109.06,
+      "end": 110.38,
+      "text": "And I'm different too",
+      "words": [
+        {
+          "t": 109.06,
+          "text": "And"
+        },
+        {
+          "t": 109.48,
+          "text": "I'm"
+        },
+        {
+          "t": 109.76,
+          "text": "different"
+        },
+        {
+          "t": 109.92,
+          "text": "too"
+        }
+      ]
+    },
+    {
+      "start": 110.38,
+      "end": 112.3,
+      "text": "Na-na-na-na-na-na-na",
+      "words": [
+        {
+          "t": 110.38,
+          "text": "Na"
+        },
+        {
+          "t": 110.9,
+          "text": "-na"
+        },
+        {
+          "t": 111.06,
+          "text": "-na"
+        },
+        {
+          "t": 111.32,
+          "text": "-na"
+        },
+        {
+          "t": 111.64,
+          "text": "-na"
+        },
+        {
+          "t": 111.8,
+          "text": "-na"
+        },
+        {
+          "t": 112.28,
+          "text": "-na"
+        }
+      ]
+    },
+    {
+      "start": 112.3,
+      "end": 113.14,
+      "text": "We outside",
+      "words": [
+        {
+          "t": 112.3,
+          "text": "We"
+        },
+        {
+          "t": 112.72,
+          "text": "outside"
+        }
+      ]
+    },
+    {
+      "start": 113.39,
+      "end": 116.14,
+      "text": "Na-na-na-na-na-na-na",
+      "words": [
+        {
+          "t": 113.39,
+          "text": "Na"
+        },
+        {
+          "t": 114.24,
+          "text": "-na"
+        },
+        {
+          "t": 114.94,
+          "text": "-na"
+        },
+        {
+          "t": 115.18,
+          "text": "-na"
+        },
+        {
+          "t": 115.52,
+          "text": "-na"
+        },
+        {
+          "t": 115.68,
+          "text": "-na"
+        },
+        {
+          "t": 116.08,
+          "text": "-na"
+        }
+      ]
+    },
+    {
+      "start": 116.14,
+      "end": 118.16,
+      "text": "But the mind don't know the drive",
+      "words": [
+        {
+          "t": 116.14,
+          "text": "But"
+        },
+        {
+          "t": 116.672,
+          "text": "the"
+        },
+        {
+          "t": 116.82,
+          "text": "mind"
+        },
+        {
+          "t": 117.14,
+          "text": "don't"
+        },
+        {
+          "t": 117.46,
+          "text": "know"
+        },
+        {
+          "t": 117.64,
+          "text": "the"
+        },
+        {
+          "t": 117.8,
+          "text": "drive"
+        }
+      ]
+    },
+    {
+      "start": 118.29,
+      "end": 119.18,
+      "text": "Na-na-na-na-na-na-na",
+      "words": [
+        {
+          "t": 118.29,
+          "text": "Na"
+        },
+        {
+          "t": 118.64,
+          "text": "-na"
+        },
+        {
+          "t": 118.78,
+          "text": "-na"
+        },
+        {
+          "t": 118.98,
+          "text": "-na"
+        },
+        {
+          "t": 119.14,
+          "text": "-na"
+        },
+        {
+          "t": 119.18,
+          "text": "-na"
+        },
+        {
+          "t": 119.18,
+          "text": "-na"
+        }
+      ]
+    },
+    {
+      "start": 119.2,
+      "end": 120.36,
+      "text": "Na-na-na-na-na-na-na",
+      "words": [
+        {
+          "t": 119.2,
+          "text": "Na"
+        },
+        {
+          "t": 119.2,
+          "text": "-na"
+        },
+        {
+          "t": 119.58,
+          "text": "-na"
+        },
+        {
+          "t": 119.86,
+          "text": "-na"
+        },
+        {
+          "t": 120.08,
+          "text": "-na"
+        },
+        {
+          "t": 120.1,
+          "text": "-na"
+        },
+        {
+          "t": 120.36,
+          "text": "-na"
+        }
+      ]
+    },
+    {
+      "start": 120.36,
+      "end": 121.02,
+      "text": "Feel that heat",
+      "words": [
+        {
+          "t": 120.36,
+          "text": "Feel"
+        },
+        {
+          "t": 120.448,
+          "text": "that"
+        },
+        {
+          "t": 120.72,
+          "text": "heat"
+        }
+      ]
+    },
+    {
+      "start": 121.52,
+      "end": 121.74,
+      "text": "Ooh,",
+      "words": [
+        {
+          "t": 121.52,
+          "text": "Ooh,"
+        }
+      ]
+    },
+    {
+      "start": 122.96,
+      "end": 125.06,
+      "text": "new world under my feet",
+      "words": [
+        {
+          "t": 122.96,
+          "text": "new"
+        },
+        {
+          "t": 123.06,
+          "text": "world"
+        },
+        {
+          "t": 123.6,
+          "text": "under"
+        },
+        {
+          "t": 124.2,
+          "text": "my"
+        },
+        {
+          "t": 124.58,
+          "text": "feet"
+        }
+      ]
+    },
+    {
+      "start": 125.06,
+      "end": 126.84,
+      "text": "I ain't tryna be an appetite face",
+      "words": [
+        {
+          "t": 125.06,
+          "text": "I"
+        },
+        {
+          "t": 125.5,
+          "text": "ain't"
+        },
+        {
+          "t": 125.66,
+          "text": "tryna"
+        },
+        {
+          "t": 125.78,
+          "text": "be"
+        },
+        {
+          "t": 126.0,
+          "text": "an"
+        },
+        {
+          "t": 126.12,
+          "text": "appetite"
+        },
+        {
+          "t": 126.34,
+          "text": "face"
+        }
+      ]
+    },
+    {
+      "start": 126.84,
+      "end": 128.62,
+      "text": "Calm down Friday like an escape",
+      "words": [
+        {
+          "t": 126.84,
+          "text": "Calm"
+        },
+        {
+          "t": 127.26,
+          "text": "down"
+        },
+        {
+          "t": 127.46,
+          "text": "Friday"
+        },
+        {
+          "t": 127.78,
+          "text": "like"
+        },
+        {
+          "t": 128.16,
+          "text": "an"
+        },
+        {
+          "t": 128.32,
+          "text": "escape"
+        }
+      ]
+    },
+    {
+      "start": 128.62,
+      "end": 130.64,
+      "text": "But one Monday feelin' like my own damn lane",
+      "words": [
+        {
+          "t": 128.62,
+          "text": "But"
+        },
+        {
+          "t": 128.88,
+          "text": "one"
+        },
+        {
+          "t": 129.0,
+          "text": "Monday"
+        },
+        {
+          "t": 129.36,
+          "text": "feelin'"
+        },
+        {
+          "t": 129.76,
+          "text": "like"
+        },
+        {
+          "t": 129.82,
+          "text": "my"
+        },
+        {
+          "t": 129.98,
+          "text": "own"
+        },
+        {
+          "t": 130.16,
+          "text": "damn"
+        },
+        {
+          "t": 130.4,
+          "text": "lane"
+        }
+      ]
+    },
+    {
+      "start": 130.64,
+      "end": 132.56,
+      "text": "Not a locked up loop with a different name",
+      "words": [
+        {
+          "t": 130.64,
+          "text": "Not"
+        },
+        {
+          "t": 130.84,
+          "text": "a"
+        },
+        {
+          "t": 130.94,
+          "text": "locked"
+        },
+        {
+          "t": 131.16,
+          "text": "up"
+        },
+        {
+          "t": 131.38,
+          "text": "loop"
+        },
+        {
+          "t": 131.6,
+          "text": "with"
+        },
+        {
+          "t": 131.8,
+          "text": "a"
+        },
+        {
+          "t": 131.9,
+          "text": "different"
+        },
+        {
+          "t": 132.22,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 132.56,
+      "end": 134.48,
+      "text": "So I'm divin' in, no perfect start",
+      "words": [
+        {
+          "t": 132.56,
+          "text": "So"
+        },
+        {
+          "t": 132.74,
+          "text": "I'm"
+        },
+        {
+          "t": 132.92,
+          "text": "divin'"
+        },
+        {
+          "t": 133.14,
+          "text": "in,"
+        },
+        {
+          "t": 133.38,
+          "text": "no"
+        },
+        {
+          "t": 133.52,
+          "text": "perfect"
+        },
+        {
+          "t": 134.08,
+          "text": "start"
+        }
+      ]
+    },
+    {
+      "start": 134.48,
+      "end": 136.44,
+      "text": "No fancy degree, just a hungry heart",
+      "words": [
+        {
+          "t": 134.48,
+          "text": "No"
+        },
+        {
+          "t": 134.68,
+          "text": "fancy"
+        },
+        {
+          "t": 135.08,
+          "text": "degree,"
+        },
+        {
+          "t": 135.52,
+          "text": "just"
+        },
+        {
+          "t": 135.66,
+          "text": "a"
+        },
+        {
+          "t": 135.76,
+          "text": "hungry"
+        },
+        {
+          "t": 136.06,
+          "text": "heart"
+        }
+      ]
+    },
+    {
+      "start": 136.52,
+      "end": 138.24,
+      "text": "Prompt by prompt, I'm learnin' the flow",
+      "words": [
+        {
+          "t": 136.52,
+          "text": "Prompt"
+        },
+        {
+          "t": 137.02,
+          "text": "by"
+        },
+        {
+          "t": 137.08,
+          "text": "prompt,"
+        },
+        {
+          "t": 137.54,
+          "text": "I'm"
+        },
+        {
+          "t": 137.7,
+          "text": "learnin'"
+        },
+        {
+          "t": 137.98,
+          "text": "the"
+        },
+        {
+          "t": 138.04,
+          "text": "flow"
+        }
+      ]
+    },
+    {
+      "start": 138.24,
+      "end": 140.28,
+      "text": "Ask better questions, watch better door show",
+      "words": [
+        {
+          "t": 138.24,
+          "text": "Ask"
+        },
+        {
+          "t": 138.62,
+          "text": "better"
+        },
+        {
+          "t": 138.82,
+          "text": "questions,"
+        },
+        {
+          "t": 139.38,
+          "text": "watch"
+        },
+        {
+          "t": 139.56,
+          "text": "better"
+        },
+        {
+          "t": 139.8,
+          "text": "door"
+        },
+        {
+          "t": 140.02,
+          "text": "show"
+        }
+      ]
+    },
+    {
+      "start": 140.35,
+      "end": 142.26,
+      "text": "Build me a buy, build me a site",
+      "words": [
+        {
+          "t": 140.35,
+          "text": "Build"
+        },
+        {
+          "t": 140.8,
+          "text": "me"
+        },
+        {
+          "t": 140.94,
+          "text": "a"
+        },
+        {
+          "t": 141.1,
+          "text": "buy,"
+        },
+        {
+          "t": 141.38,
+          "text": "build"
+        },
+        {
+          "t": 141.74,
+          "text": "me"
+        },
+        {
+          "t": 141.92,
+          "text": "a"
+        },
+        {
+          "t": 142.04,
+          "text": "site"
+        }
+      ]
+    },
+    {
+      "start": 142.26,
+      "end": 144.17,
+      "text": "Build me a plan for a better life",
+      "words": [
+        {
+          "t": 142.26,
+          "text": "Build"
+        },
+        {
+          "t": 142.7,
+          "text": "me"
+        },
+        {
+          "t": 142.88,
+          "text": "a"
+        },
+        {
+          "t": 143.02,
+          "text": "plan"
+        },
+        {
+          "t": 143.2,
+          "text": "for"
+        },
+        {
+          "t": 143.38,
+          "text": "a"
+        },
+        {
+          "t": 143.5,
+          "text": "better"
+        },
+        {
+          "t": 143.72,
+          "text": "life"
+        }
+      ]
+    },
+    {
+      "start": 144.22,
+      "end": 146.18,
+      "text": "Automate the boring, sharpen the brain",
+      "words": [
+        {
+          "t": 144.22,
+          "text": "Automate"
+        },
+        {
+          "t": 144.84,
+          "text": "the"
+        },
+        {
+          "t": 144.92,
+          "text": "boring,"
+        },
+        {
+          "t": 145.38,
+          "text": "sharpen"
+        },
+        {
+          "t": 145.68,
+          "text": "the"
+        },
+        {
+          "t": 145.9,
+          "text": "brain"
+        }
+      ]
+    },
+    {
+      "start": 146.18,
+      "end": 148.06,
+      "text": "Turn small sparks into summer rain",
+      "words": [
+        {
+          "t": 146.18,
+          "text": "Turn"
+        },
+        {
+          "t": 146.5,
+          "text": "small"
+        },
+        {
+          "t": 146.7,
+          "text": "sparks"
+        },
+        {
+          "t": 147.04,
+          "text": "into"
+        },
+        {
+          "t": 147.32,
+          "text": "summer"
+        },
+        {
+          "t": 147.6,
+          "text": "rain"
+        }
+      ]
+    },
+    {
+      "start": 148.06,
+      "end": 149.18,
+      "text": "Everybody wants to be a star in the sky",
+      "words": [
+        {
+          "t": 148.06,
+          "text": "Everybody"
+        },
+        {
+          "t": 148.6,
+          "text": "wants"
+        },
+        {
+          "t": 149.0,
+          "text": "to"
+        },
+        {
+          "t": 149.18,
+          "text": "be"
+        },
+        {
+          "t": 149.18,
+          "text": "a"
+        },
+        {
+          "t": 149.18,
+          "text": "star"
+        },
+        {
+          "t": 149.18,
+          "text": "in"
+        },
+        {
+          "t": 149.18,
+          "text": "the"
+        },
+        {
+          "t": 149.18,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 149.2,
+      "end": 150.2,
+      "text": "On the beach with no pressure code",
+      "words": [
+        {
+          "t": 149.2,
+          "text": "On"
+        },
+        {
+          "t": 149.32,
+          "text": "the"
+        },
+        {
+          "t": 149.32,
+          "text": "beach"
+        },
+        {
+          "t": 149.32,
+          "text": "with"
+        },
+        {
+          "t": 149.52,
+          "text": "no"
+        },
+        {
+          "t": 149.66,
+          "text": "pressure"
+        },
+        {
+          "t": 149.96,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 150.2,
+      "end": 151.86,
+      "text": "Drank clean sky time, you can measure",
+      "words": [
+        {
+          "t": 150.2,
+          "text": "Drank"
+        },
+        {
+          "t": 150.5,
+          "text": "clean"
+        },
+        {
+          "t": 150.62,
+          "text": "sky"
+        },
+        {
+          "t": 150.82,
+          "text": "time,"
+        },
+        {
+          "t": 151.24,
+          "text": "you"
+        },
+        {
+          "t": 151.34,
+          "text": "can"
+        },
+        {
+          "t": 151.5,
+          "text": "measure"
+        }
+      ]
+    },
+    {
+      "start": 151.86,
+      "end": 153.76,
+      "text": "But that kind of beast don't fall from blue",
+      "words": [
+        {
+          "t": 151.86,
+          "text": "But"
+        },
+        {
+          "t": 152.06,
+          "text": "that"
+        },
+        {
+          "t": 152.34,
+          "text": "kind"
+        },
+        {
+          "t": 152.56,
+          "text": "of"
+        },
+        {
+          "t": 152.68,
+          "text": "beast"
+        },
+        {
+          "t": 152.86,
+          "text": "don't"
+        },
+        {
+          "t": 153.1,
+          "text": "fall"
+        },
+        {
+          "t": 153.28,
+          "text": "from"
+        },
+        {
+          "t": 153.52,
+          "text": "blue"
+        }
+      ]
+    },
+    {
+      "start": 153.76,
+      "end": 155.68,
+      "text": "You gotta make the machine start workin' for you",
+      "words": [
+        {
+          "t": 153.76,
+          "text": "You"
+        },
+        {
+          "t": 153.96,
+          "text": "gotta"
+        },
+        {
+          "t": 154.16,
+          "text": "make"
+        },
+        {
+          "t": 154.38,
+          "text": "the"
+        },
+        {
+          "t": 154.46,
+          "text": "machine"
+        },
+        {
+          "t": 154.66,
+          "text": "start"
+        },
+        {
+          "t": 154.96,
+          "text": "workin'"
+        },
+        {
+          "t": 155.36,
+          "text": "for"
+        },
+        {
+          "t": 155.38,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 155.68,
+      "end": 157.74,
+      "text": "Focus in the morning, rhythm at night",
+      "words": [
+        {
+          "t": 155.68,
+          "text": "Focus"
+        },
+        {
+          "t": 156.24,
+          "text": "in"
+        },
+        {
+          "t": 156.42,
+          "text": "the"
+        },
+        {
+          "t": 156.52,
+          "text": "morning,"
+        },
+        {
+          "t": 156.92,
+          "text": "rhythm"
+        },
+        {
+          "t": 157.18,
+          "text": "at"
+        },
+        {
+          "t": 157.44,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 157.74,
+      "end": 159.66,
+      "text": "Discipline wasn't with me on life",
+      "words": [
+        {
+          "t": 157.74,
+          "text": "Discipline"
+        },
+        {
+          "t": 158.44,
+          "text": "wasn't"
+        },
+        {
+          "t": 158.72,
+          "text": "with"
+        },
+        {
+          "t": 158.86,
+          "text": "me"
+        },
+        {
+          "t": 159.06,
+          "text": "on"
+        },
+        {
+          "t": 159.34,
+          "text": "life"
+        }
+      ]
+    },
+    {
+      "start": 159.66,
+      "end": 161.54,
+      "text": "Will in my chest, hunger in my shoes",
+      "words": [
+        {
+          "t": 159.66,
+          "text": "Will"
+        },
+        {
+          "t": 160.04,
+          "text": "in"
+        },
+        {
+          "t": 160.16,
+          "text": "my"
+        },
+        {
+          "t": 160.32,
+          "text": "chest,"
+        },
+        {
+          "t": 160.62,
+          "text": "hunger"
+        },
+        {
+          "t": 160.82,
+          "text": "in"
+        },
+        {
+          "t": 161.0,
+          "text": "my"
+        },
+        {
+          "t": 161.22,
+          "text": "shoes"
+        }
+      ]
+    },
+    {
+      "start": 161.54,
+      "end": 163.48,
+      "text": "The same motivation, this is somethin' to prove",
+      "words": [
+        {
+          "t": 161.54,
+          "text": "The"
+        },
+        {
+          "t": 161.84,
+          "text": "same"
+        },
+        {
+          "t": 162.02,
+          "text": "motivation,"
+        },
+        {
+          "t": 162.58,
+          "text": "this"
+        },
+        {
+          "t": 162.72,
+          "text": "is"
+        },
+        {
+          "t": 162.8,
+          "text": "somethin'"
+        },
+        {
+          "t": 163.1,
+          "text": "to"
+        },
+        {
+          "t": 163.14,
+          "text": "prove"
+        }
+      ]
+    },
+    {
+      "start": 163.48,
+      "end": 166.06,
+      "text": "We don't wanna waste no weather",
+      "words": [
+        {
+          "t": 163.48,
+          "text": "We"
+        },
+        {
+          "t": 164.32,
+          "text": "don't"
+        },
+        {
+          "t": 164.56,
+          "text": "wanna"
+        },
+        {
+          "t": 164.68,
+          "text": "waste"
+        },
+        {
+          "t": 165.04,
+          "text": "no"
+        },
+        {
+          "t": 165.46,
+          "text": "weather"
+        }
+      ]
+    },
+    {
+      "start": 167.5,
+      "end": 169.57,
+      "text": "We don't wanna wait forever",
+      "words": [
+        {
+          "t": 167.5,
+          "text": "We"
+        },
+        {
+          "t": 168.224,
+          "text": "don't"
+        },
+        {
+          "t": 168.38,
+          "text": "wanna"
+        },
+        {
+          "t": 168.52,
+          "text": "wait"
+        },
+        {
+          "t": 168.82,
+          "text": "forever"
+        }
+      ]
+    },
+    {
+      "start": 171.54,
+      "end": 173.25,
+      "text": "One more spark and we come alive",
+      "words": [
+        {
+          "t": 171.54,
+          "text": "One"
+        },
+        {
+          "t": 171.64,
+          "text": "more"
+        },
+        {
+          "t": 171.86,
+          "text": "spark"
+        },
+        {
+          "t": 172.22,
+          "text": "and"
+        },
+        {
+          "t": 172.34,
+          "text": "we"
+        },
+        {
+          "t": 172.44,
+          "text": "come"
+        },
+        {
+          "t": 172.7,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 175.2,
+      "end": 178.24,
+      "text": "One more step and we change the vibe",
+      "words": [
+        {
+          "t": 175.2,
+          "text": "One"
+        },
+        {
+          "t": 175.44,
+          "text": "more"
+        },
+        {
+          "t": 175.68,
+          "text": "step"
+        },
+        {
+          "t": 175.92,
+          "text": "and"
+        },
+        {
+          "t": 176.14,
+          "text": "we"
+        },
+        {
+          "t": 176.26,
+          "text": "change"
+        },
+        {
+          "t": 176.64,
+          "text": "the"
+        },
+        {
+          "t": 177.86,
+          "text": "vibe"
+        }
+      ]
+    },
+    {
+      "start": 178.24,
+      "end": 179.18,
+      "text": "This is the time to be a star in the sky",
+      "words": [
+        {
+          "t": 178.24,
+          "text": "This"
+        },
+        {
+          "t": 179.08,
+          "text": "is"
+        },
+        {
+          "t": 179.18,
+          "text": "the"
+        },
+        {
+          "t": 179.18,
+          "text": "time"
+        },
+        {
+          "t": 179.18,
+          "text": "to"
+        },
+        {
+          "t": 179.18,
+          "text": "be"
+        },
+        {
+          "t": 179.18,
+          "text": "a"
+        },
+        {
+          "t": 179.18,
+          "text": "star"
+        },
+        {
+          "t": 179.18,
+          "text": "in"
+        },
+        {
+          "t": 179.18,
+          "text": "the"
+        },
+        {
+          "t": 179.18,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 179.2,
+      "end": 180.47,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 179.2,
+          "text": "This"
+        },
+        {
+          "t": 179.32,
+          "text": "summer"
+        },
+        {
+          "t": 179.4,
+          "text": "gon'"
+        },
+        {
+          "t": 179.84,
+          "text": "be"
+        },
+        {
+          "t": 180.02,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 180.56,
+      "end": 183.16,
+      "text": "We ain't lettin' it fade away",
+      "words": [
+        {
+          "t": 180.56,
+          "text": "We"
+        },
+        {
+          "t": 181.08,
+          "text": "ain't"
+        },
+        {
+          "t": 182.14,
+          "text": "lettin'"
+        },
+        {
+          "t": 182.4,
+          "text": "it"
+        },
+        {
+          "t": 182.46,
+          "text": "fade"
+        },
+        {
+          "t": 182.74,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 183.62,
+      "end": 185.26,
+      "text": "Got the sun on our shoulders",
+      "words": [
+        {
+          "t": 183.62,
+          "text": "Got"
+        },
+        {
+          "t": 183.88,
+          "text": "the"
+        },
+        {
+          "t": 183.98,
+          "text": "sun"
+        },
+        {
+          "t": 184.22,
+          "text": "on"
+        },
+        {
+          "t": 184.48,
+          "text": "our"
+        },
+        {
+          "t": 184.82,
+          "text": "shoulders"
+        }
+      ]
+    },
+    {
+      "start": 185.26,
+      "end": 187.1,
+      "text": "Got a brand new bling to slay",
+      "words": [
+        {
+          "t": 185.26,
+          "text": "Got"
+        },
+        {
+          "t": 185.56,
+          "text": "a"
+        },
+        {
+          "t": 185.86,
+          "text": "brand"
+        },
+        {
+          "t": 186.1,
+          "text": "new"
+        },
+        {
+          "t": 186.32,
+          "text": "bling"
+        },
+        {
+          "t": 186.64,
+          "text": "to"
+        },
+        {
+          "t": 186.76,
+          "text": "slay"
+        }
+      ]
+    },
+    {
+      "start": 187.1,
+      "end": 188.0,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 187.1,
+          "text": "This"
+        },
+        {
+          "t": 187.22,
+          "text": "summer"
+        },
+        {
+          "t": 187.24,
+          "text": "gon'"
+        },
+        {
+          "t": 187.64,
+          "text": "be"
+        },
+        {
+          "t": 187.7,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 189.14,
+      "end": 190.96,
+      "text": "Number waitin' on some day",
+      "words": [
+        {
+          "t": 189.14,
+          "text": "Number"
+        },
+        {
+          "t": 189.66,
+          "text": "waitin'"
+        },
+        {
+          "t": 190.2,
+          "text": "on"
+        },
+        {
+          "t": 190.26,
+          "text": "some"
+        },
+        {
+          "t": 190.62,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 190.96,
+      "end": 192.88,
+      "text": "Gon' learn a little somethin'",
+      "words": [
+        {
+          "t": 190.96,
+          "text": "Gon'"
+        },
+        {
+          "t": 191.64,
+          "text": "learn"
+        },
+        {
+          "t": 191.92,
+          "text": "a"
+        },
+        {
+          "t": 192.08,
+          "text": "little"
+        },
+        {
+          "t": 192.48,
+          "text": "somethin'"
+        }
+      ]
+    },
+    {
+      "start": 193.08,
+      "end": 194.5,
+      "text": "We gon' build our own way",
+      "words": [
+        {
+          "t": 193.08,
+          "text": "We"
+        },
+        {
+          "t": 193.3,
+          "text": "gon'"
+        },
+        {
+          "t": 193.58,
+          "text": "build"
+        },
+        {
+          "t": 193.82,
+          "text": "our"
+        },
+        {
+          "t": 194.3,
+          "text": "own"
+        },
+        {
+          "t": 194.4,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 195.392,
+      "end": 196.78,
+      "text": "Pour it up, up, let it breathe",
+      "words": [
+        {
+          "t": 195.392,
+          "text": "Pour"
+        },
+        {
+          "t": 195.5,
+          "text": "it"
+        },
+        {
+          "t": 195.64,
+          "text": "up,"
+        },
+        {
+          "t": 195.92,
+          "text": "up,"
+        },
+        {
+          "t": 196.24,
+          "text": "let"
+        },
+        {
+          "t": 196.34,
+          "text": "it"
+        },
+        {
+          "t": 196.54,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 197.312,
+      "end": 198.34,
+      "text": "Palm trees in the fantasy",
+      "words": [
+        {
+          "t": 197.312,
+          "text": "Palm"
+        },
+        {
+          "t": 197.44,
+          "text": "trees"
+        },
+        {
+          "t": 197.66,
+          "text": "in"
+        },
+        {
+          "t": 197.88,
+          "text": "the"
+        },
+        {
+          "t": 197.94,
+          "text": "fantasy"
+        }
+      ]
+    },
+    {
+      "start": 198.34,
+      "end": 200.72,
+      "text": "But we workin' while it glows",
+      "words": [
+        {
+          "t": 198.34,
+          "text": "But"
+        },
+        {
+          "t": 199.32,
+          "text": "we"
+        },
+        {
+          "t": 199.38,
+          "text": "workin'"
+        },
+        {
+          "t": 199.84,
+          "text": "while"
+        },
+        {
+          "t": 200.02,
+          "text": "it"
+        },
+        {
+          "t": 200.3,
+          "text": "glows"
+        }
+      ]
+    },
+    {
+      "start": 200.72,
+      "end": 202.6,
+      "text": "So the future feels easy",
+      "words": [
+        {
+          "t": 200.72,
+          "text": "So"
+        },
+        {
+          "t": 200.94,
+          "text": "the"
+        },
+        {
+          "t": 201.22,
+          "text": "future"
+        },
+        {
+          "t": 201.66,
+          "text": "feels"
+        },
+        {
+          "t": 201.98,
+          "text": "easy"
+        }
+      ]
+    },
+    {
+      "start": 203.98,
+      "end": 205.66,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 203.98,
+          "text": "This"
+        },
+        {
+          "t": 204.08,
+          "text": "summer"
+        },
+        {
+          "t": 204.46,
+          "text": "gon'"
+        },
+        {
+          "t": 204.9,
+          "text": "be"
+        },
+        {
+          "t": 205.16,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 205.66,
+      "end": 207.04,
+      "text": "Different, different, different",
+      "words": [
+        {
+          "t": 205.66,
+          "text": "Different,"
+        },
+        {
+          "t": 206.24,
+          "text": "different,"
+        },
+        {
+          "t": 206.72,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 207.04,
+      "end": 207.392,
+      "text": "Uh",
+      "words": [
+        {
+          "t": 207.04,
+          "text": "Uh"
+        }
+      ]
+    },
+    {
+      "start": 207.46,
+      "end": 209.18,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 207.46,
+          "text": "This"
+        },
+        {
+          "t": 207.88,
+          "text": "summer"
+        },
+        {
+          "t": 208.34,
+          "text": "gon'"
+        },
+        {
+          "t": 208.76,
+          "text": "be"
+        },
+        {
+          "t": 208.96,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 209.18,
+      "end": 210.68,
+      "text": "And I'm different too",
+      "words": [
+        {
+          "t": 209.18,
+          "text": "And"
+        },
+        {
+          "t": 209.7,
+          "text": "I'm"
+        },
+        {
+          "t": 210.0,
+          "text": "different"
+        },
+        {
+          "t": 210.26,
+          "text": "too"
+        }
+      ]
+    },
+    {
+      "start": 210.68,
+      "end": 212.24,
+      "text": "Imagine all along with a panic",
+      "words": [
+        {
+          "t": 210.68,
+          "text": "Imagine"
+        },
+        {
+          "t": 211.14,
+          "text": "all"
+        },
+        {
+          "t": 211.4,
+          "text": "along"
+        },
+        {
+          "t": 211.7,
+          "text": "with"
+        },
+        {
+          "t": 211.86,
+          "text": "a"
+        },
+        {
+          "t": 211.94,
+          "text": "panic"
+        }
+      ]
+    },
+    {
+      "start": 212.24,
+      "end": 214.52,
+      "text": "And ain't no boss in your head every single minute",
+      "words": [
+        {
+          "t": 212.24,
+          "text": "And"
+        },
+        {
+          "t": 212.6,
+          "text": "ain't"
+        },
+        {
+          "t": 212.74,
+          "text": "no"
+        },
+        {
+          "t": 212.8,
+          "text": "boss"
+        },
+        {
+          "t": 213.08,
+          "text": "in"
+        },
+        {
+          "t": 213.28,
+          "text": "your"
+        },
+        {
+          "t": 213.38,
+          "text": "head"
+        },
+        {
+          "t": 213.6,
+          "text": "every"
+        },
+        {
+          "t": 213.84,
+          "text": "single"
+        },
+        {
+          "t": 214.1,
+          "text": "minute"
+        }
+      ]
+    },
+    {
+      "start": 214.52,
+      "end": 216.5,
+      "text": "Just waste good friends in the room to breathe",
+      "words": [
+        {
+          "t": 214.52,
+          "text": "Just"
+        },
+        {
+          "t": 214.8,
+          "text": "waste"
+        },
+        {
+          "t": 215.0,
+          "text": "good"
+        },
+        {
+          "t": 215.22,
+          "text": "friends"
+        },
+        {
+          "t": 215.58,
+          "text": "in"
+        },
+        {
+          "t": 215.72,
+          "text": "the"
+        },
+        {
+          "t": 215.78,
+          "text": "room"
+        },
+        {
+          "t": 215.96,
+          "text": "to"
+        },
+        {
+          "t": 216.16,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 216.5,
+      "end": 218.42,
+      "text": "But first we plant the seed",
+      "words": [
+        {
+          "t": 216.5,
+          "text": "But"
+        },
+        {
+          "t": 217.12,
+          "text": "first"
+        },
+        {
+          "t": 217.46,
+          "text": "we"
+        },
+        {
+          "t": 217.6,
+          "text": "plant"
+        },
+        {
+          "t": 217.82,
+          "text": "the"
+        },
+        {
+          "t": 218.08,
+          "text": "seed"
+        }
+      ]
+    },
+    {
+      "start": 218.42,
+      "end": 220.28,
+      "text": "Imagine that view with your name on it",
+      "words": [
+        {
+          "t": 218.42,
+          "text": "Imagine"
+        },
+        {
+          "t": 218.86,
+          "text": "that"
+        },
+        {
+          "t": 219.1,
+          "text": "view"
+        },
+        {
+          "t": 219.36,
+          "text": "with"
+        },
+        {
+          "t": 219.52,
+          "text": "your"
+        },
+        {
+          "t": 219.62,
+          "text": "name"
+        },
+        {
+          "t": 219.8,
+          "text": "on"
+        },
+        {
+          "t": 220.08,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 220.28,
+      "end": 222.22,
+      "text": "That little idea with flame on it",
+      "words": [
+        {
+          "t": 220.28,
+          "text": "That"
+        },
+        {
+          "t": 220.54,
+          "text": "little"
+        },
+        {
+          "t": 220.74,
+          "text": "idea"
+        },
+        {
+          "t": 221.1,
+          "text": "with"
+        },
+        {
+          "t": 221.44,
+          "text": "flame"
+        },
+        {
+          "t": 221.74,
+          "text": "on"
+        },
+        {
+          "t": 222.0,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 222.22,
+      "end": 224.1,
+      "text": "Not chasing luck, we make it move",
+      "words": [
+        {
+          "t": 222.22,
+          "text": "Not"
+        },
+        {
+          "t": 222.4,
+          "text": "chasing"
+        },
+        {
+          "t": 222.76,
+          "text": "luck,"
+        },
+        {
+          "t": 223.22,
+          "text": "we"
+        },
+        {
+          "t": 223.36,
+          "text": "make"
+        },
+        {
+          "t": 223.68,
+          "text": "it"
+        },
+        {
+          "t": 223.9,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 224.1,
+      "end": 225.04,
+      "text": "We make it move",
+      "words": [
+        {
+          "t": 224.1,
+          "text": "We"
+        },
+        {
+          "t": 224.32,
+          "text": "make"
+        },
+        {
+          "t": 224.58,
+          "text": "it"
+        },
+        {
+          "t": 224.82,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 225.04,
+      "end": 227.3,
+      "text": "I used to say I'm stuck, now I say I'm loaded",
+      "words": [
+        {
+          "t": 225.04,
+          "text": "I"
+        },
+        {
+          "t": 225.34,
+          "text": "used"
+        },
+        {
+          "t": 226.0,
+          "text": "to"
+        },
+        {
+          "t": 226.1,
+          "text": "say"
+        },
+        {
+          "t": 226.2,
+          "text": "I'm"
+        },
+        {
+          "t": 226.32,
+          "text": "stuck,"
+        },
+        {
+          "t": 226.6,
+          "text": "now"
+        },
+        {
+          "t": 226.7,
+          "text": "I"
+        },
+        {
+          "t": 226.82,
+          "text": "say"
+        },
+        {
+          "t": 226.96,
+          "text": "I'm"
+        },
+        {
+          "t": 227.1,
+          "text": "loaded"
+        }
+      ]
+    },
+    {
+      "start": 227.57,
+      "end": 229.28,
+      "text": "Used to watch the door, now the code is opening",
+      "words": [
+        {
+          "t": 227.57,
+          "text": "Used"
+        },
+        {
+          "t": 227.92,
+          "text": "to"
+        },
+        {
+          "t": 228.04,
+          "text": "watch"
+        },
+        {
+          "t": 228.18,
+          "text": "the"
+        },
+        {
+          "t": 228.28,
+          "text": "door,"
+        },
+        {
+          "t": 228.52,
+          "text": "now"
+        },
+        {
+          "t": 228.64,
+          "text": "the"
+        },
+        {
+          "t": 228.76,
+          "text": "code"
+        },
+        {
+          "t": 228.92,
+          "text": "is"
+        },
+        {
+          "t": 229.04,
+          "text": "opening"
+        }
+      ]
+    },
+    {
+      "start": 229.42,
+      "end": 231.1,
+      "text": "Used to call the noise, now I hear the signal",
+      "words": [
+        {
+          "t": 229.42,
+          "text": "Used"
+        },
+        {
+          "t": 229.82,
+          "text": "to"
+        },
+        {
+          "t": 229.98,
+          "text": "call"
+        },
+        {
+          "t": 230.1,
+          "text": "the"
+        },
+        {
+          "t": 230.14,
+          "text": "noise,"
+        },
+        {
+          "t": 230.48,
+          "text": "now"
+        },
+        {
+          "t": 230.58,
+          "text": "I"
+        },
+        {
+          "t": 230.68,
+          "text": "hear"
+        },
+        {
+          "t": 230.84,
+          "text": "the"
+        },
+        {
+          "t": 230.9,
+          "text": "signal"
+        }
+      ]
+    },
+    {
+      "start": 231.1,
+      "end": 232.98,
+      "text": "Little by little the vision gets official",
+      "words": [
+        {
+          "t": 231.1,
+          "text": "Little"
+        },
+        {
+          "t": 231.34,
+          "text": "by"
+        },
+        {
+          "t": 231.5,
+          "text": "little"
+        },
+        {
+          "t": 231.8,
+          "text": "the"
+        },
+        {
+          "t": 232.0,
+          "text": "vision"
+        },
+        {
+          "t": 232.26,
+          "text": "gets"
+        },
+        {
+          "t": 232.54,
+          "text": "official"
+        }
+      ]
+    },
+    {
+      "start": 232.98,
+      "end": 235.5,
+      "text": "No more sleep walking through the sunshine",
+      "words": [
+        {
+          "t": 232.98,
+          "text": "No"
+        },
+        {
+          "t": 233.42,
+          "text": "more"
+        },
+        {
+          "t": 233.72,
+          "text": "sleep"
+        },
+        {
+          "t": 233.94,
+          "text": "walking"
+        },
+        {
+          "t": 234.34,
+          "text": "through"
+        },
+        {
+          "t": 234.68,
+          "text": "the"
+        },
+        {
+          "t": 234.92,
+          "text": "sunshine"
+        }
+      ]
+    },
+    {
+      "start": 237.14,
+      "end": 239.54,
+      "text": "No more waiting for the right time",
+      "words": [
+        {
+          "t": 237.14,
+          "text": "No"
+        },
+        {
+          "t": 237.24,
+          "text": "more"
+        },
+        {
+          "t": 237.6,
+          "text": "waiting"
+        },
+        {
+          "t": 238.18,
+          "text": "for"
+        },
+        {
+          "t": 238.46,
+          "text": "the"
+        },
+        {
+          "t": 238.76,
+          "text": "right"
+        },
+        {
+          "t": 239.08,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 239.9,
+      "end": 242.02,
+      "text": "Yeah, this is the right time",
+      "words": [
+        {
+          "t": 239.9,
+          "text": "Yeah,"
+        },
+        {
+          "t": 240.7,
+          "text": "this"
+        },
+        {
+          "t": 241.02,
+          "text": "is"
+        },
+        {
+          "t": 241.14,
+          "text": "the"
+        },
+        {
+          "t": 241.26,
+          "text": "right"
+        },
+        {
+          "t": 241.48,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 242.02,
+      "end": 243.38,
+      "text": "Right here",
+      "words": [
+        {
+          "t": 242.02,
+          "text": "Right"
+        },
+        {
+          "t": 242.72,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 244.88,
+      "end": 247.24,
+      "text": "Cold dream, clear mind, new gear",
+      "words": [
+        {
+          "t": 244.88,
+          "text": "Cold"
+        },
+        {
+          "t": 244.98,
+          "text": "dream,"
+        },
+        {
+          "t": 245.46,
+          "text": "clear"
+        },
+        {
+          "t": 245.94,
+          "text": "mind,"
+        },
+        {
+          "t": 246.5,
+          "text": "new"
+        },
+        {
+          "t": 246.88,
+          "text": "gear"
+        }
+      ]
+    },
+    {
+      "start": 247.3,
+      "end": 249.84,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 247.3,
+          "text": "This"
+        },
+        {
+          "t": 248.3,
+          "text": "summer"
+        },
+        {
+          "t": 248.7,
+          "text": "gon'"
+        },
+        {
+          "t": 249.12,
+          "text": "be"
+        },
+        {
+          "t": 249.26,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 250.56,
+      "end": 252.42,
+      "text": "We letting it fade away",
+      "words": [
+        {
+          "t": 250.56,
+          "text": "We"
+        },
+        {
+          "t": 251.168,
+          "text": "letting"
+        },
+        {
+          "t": 251.48,
+          "text": "it"
+        },
+        {
+          "t": 251.72,
+          "text": "fade"
+        },
+        {
+          "t": 252.02,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 252.42,
+      "end": 254.5,
+      "text": "Got the sun on our shoulders",
+      "words": [
+        {
+          "t": 252.42,
+          "text": "Got"
+        },
+        {
+          "t": 253.14,
+          "text": "the"
+        },
+        {
+          "t": 253.22,
+          "text": "sun"
+        },
+        {
+          "t": 253.44,
+          "text": "on"
+        },
+        {
+          "t": 253.72,
+          "text": "our"
+        },
+        {
+          "t": 254.04,
+          "text": "shoulders"
+        }
+      ]
+    },
+    {
+      "start": 254.5,
+      "end": 256.3,
+      "text": "Got a brand new game to swing",
+      "words": [
+        {
+          "t": 254.5,
+          "text": "Got"
+        },
+        {
+          "t": 254.84,
+          "text": "a"
+        },
+        {
+          "t": 255.08,
+          "text": "brand"
+        },
+        {
+          "t": 255.32,
+          "text": "new"
+        },
+        {
+          "t": 255.52,
+          "text": "game"
+        },
+        {
+          "t": 255.82,
+          "text": "to"
+        },
+        {
+          "t": 256.08,
+          "text": "swing"
+        }
+      ]
+    },
+    {
+      "start": 256.3,
+      "end": 257.19,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 256.3,
+          "text": "This"
+        },
+        {
+          "t": 256.38,
+          "text": "summer"
+        },
+        {
+          "t": 256.4,
+          "text": "gon'"
+        },
+        {
+          "t": 256.84,
+          "text": "be"
+        },
+        {
+          "t": 256.94,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 257.54,
+      "end": 260.02,
+      "text": "No more waiting on someday",
+      "words": [
+        {
+          "t": 257.54,
+          "text": "No"
+        },
+        {
+          "t": 257.94,
+          "text": "more"
+        },
+        {
+          "t": 258.84,
+          "text": "waiting"
+        },
+        {
+          "t": 259.28,
+          "text": "on"
+        },
+        {
+          "t": 259.54,
+          "text": "someday"
+        }
+      ]
+    },
+    {
+      "start": 260.02,
+      "end": 262.12,
+      "text": "We gon' learn a little something",
+      "words": [
+        {
+          "t": 260.02,
+          "text": "We"
+        },
+        {
+          "t": 260.56,
+          "text": "gon'"
+        },
+        {
+          "t": 260.88,
+          "text": "learn"
+        },
+        {
+          "t": 261.1,
+          "text": "a"
+        },
+        {
+          "t": 261.28,
+          "text": "little"
+        },
+        {
+          "t": 261.58,
+          "text": "something"
+        }
+      ]
+    },
+    {
+      "start": 262.12,
+      "end": 263.712,
+      "text": "We gon' build our own way",
+      "words": [
+        {
+          "t": 262.12,
+          "text": "We"
+        },
+        {
+          "t": 262.48,
+          "text": "gon'"
+        },
+        {
+          "t": 262.76,
+          "text": "build"
+        },
+        {
+          "t": 262.96,
+          "text": "our"
+        },
+        {
+          "t": 263.46,
+          "text": "own"
+        },
+        {
+          "t": 263.56,
+          "text": "way"
+        }
+      ]
+    },
+    {
+      "start": 264.576,
+      "end": 264.92,
+      "text": "Put up",
+      "words": [
+        {
+          "t": 264.576,
+          "text": "Put"
+        },
+        {
+          "t": 264.68,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 264.92,
+      "end": 265.1,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 264.92,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 265.1,
+      "end": 265.248,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 265.1,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 265.4,
+      "end": 265.48,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 265.4,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 265.5,
+      "end": 265.9,
+      "text": "Let it breathe",
+      "words": [
+        {
+          "t": 265.5,
+          "text": "Let"
+        },
+        {
+          "t": 265.6,
+          "text": "it"
+        },
+        {
+          "t": 265.72,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 265.9,
+      "end": 266.06,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 265.9,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 266.4,
+      "end": 267.56,
+      "text": "Palm trees in the fantasy",
+      "words": [
+        {
+          "t": 266.4,
+          "text": "Palm"
+        },
+        {
+          "t": 266.5,
+          "text": "trees"
+        },
+        {
+          "t": 266.82,
+          "text": "in"
+        },
+        {
+          "t": 267.02,
+          "text": "the"
+        },
+        {
+          "t": 267.1,
+          "text": "fantasy"
+        }
+      ]
+    },
+    {
+      "start": 267.56,
+      "end": 269.88,
+      "text": "But we working while it glows",
+      "words": [
+        {
+          "t": 267.56,
+          "text": "But"
+        },
+        {
+          "t": 268.46,
+          "text": "we"
+        },
+        {
+          "t": 268.52,
+          "text": "working"
+        },
+        {
+          "t": 268.82,
+          "text": "while"
+        },
+        {
+          "t": 269.22,
+          "text": "it"
+        },
+        {
+          "t": 269.44,
+          "text": "glows"
+        }
+      ]
+    },
+    {
+      "start": 269.88,
+      "end": 271.76,
+      "text": "So the future feels easy",
+      "words": [
+        {
+          "t": 269.88,
+          "text": "So"
+        },
+        {
+          "t": 270.12,
+          "text": "the"
+        },
+        {
+          "t": 270.36,
+          "text": "future"
+        },
+        {
+          "t": 270.8,
+          "text": "feels"
+        },
+        {
+          "t": 271.12,
+          "text": "easy"
+        }
+      ]
+    },
+    {
+      "start": 272.26,
+      "end": 274.76,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 272.26,
+          "text": "This"
+        },
+        {
+          "t": 273.216,
+          "text": "summer"
+        },
+        {
+          "t": 273.56,
+          "text": "gon'"
+        },
+        {
+          "t": 274.0,
+          "text": "be"
+        },
+        {
+          "t": 274.22,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 274.76,
+      "end": 276.12,
+      "text": "Different, different, different",
+      "words": [
+        {
+          "t": 274.76,
+          "text": "Different,"
+        },
+        {
+          "t": 275.34,
+          "text": "different,"
+        },
+        {
+          "t": 275.8,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 276.12,
+      "end": 278.52,
+      "text": "This summer gon' be different",
+      "words": [
+        {
+          "t": 276.12,
+          "text": "This"
+        },
+        {
+          "t": 276.68,
+          "text": "summer"
+        },
+        {
+          "t": 277.4,
+          "text": "gon'"
+        },
+        {
+          "t": 277.84,
+          "text": "be"
+        },
+        {
+          "t": 278.06,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 278.52,
+      "end": 279.78,
+      "text": "And I'm different too",
+      "words": [
+        {
+          "t": 278.52,
+          "text": "And"
+        },
+        {
+          "t": 278.88,
+          "text": "I'm"
+        },
+        {
+          "t": 279.08,
+          "text": "different"
+        },
+        {
+          "t": 279.38,
+          "text": "too"
+        }
+      ]
+    },
+    {
+      "start": 281.3,
+      "end": 282.04,
+      "text": "We",
+      "words": [
+        {
+          "t": 281.3,
+          "text": "We"
+        }
+      ]
+    },
+    {
+      "start": 282.592,
+      "end": 284.192,
+      "text": "been waiting on the light",
+      "words": [
+        {
+          "t": 282.592,
+          "text": "been"
+        },
+        {
+          "t": 282.78,
+          "text": "waiting"
+        },
+        {
+          "t": 283.26,
+          "text": "on"
+        },
+        {
+          "t": 283.54,
+          "text": "the"
+        },
+        {
+          "t": 283.74,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 284.39,
+      "end": 285.44,
+      "text": "We gon'",
+      "words": [
+        {
+          "t": 284.39,
+          "text": "We"
+        },
+        {
+          "t": 285.14,
+          "text": "gon'"
+        }
+      ]
+    },
+    {
+      "start": 287.2,
+      "end": 287.94,
+      "text": "get it right",
+      "words": [
+        {
+          "t": 287.2,
+          "text": "get"
+        },
+        {
+          "t": 287.36,
+          "text": "it"
+        },
+        {
+          "t": 287.68,
+          "text": "right"
+        }
+      ]
+    },
+    {
+      "start": 290.4,
+      "end": 291.78,
+      "text": "No more losing sight",
+      "words": [
+        {
+          "t": 290.4,
+          "text": "No"
+        },
+        {
+          "t": 290.52,
+          "text": "more"
+        },
+        {
+          "t": 290.96,
+          "text": "losing"
+        },
+        {
+          "t": 291.34,
+          "text": "sight"
+        }
+      ]
+    },
+    {
+      "start": 291.78,
+      "end": 293.3,
+      "text": "This summer",
+      "words": [
+        {
+          "t": 291.78,
+          "text": "This"
+        },
+        {
+          "t": 292.86,
+          "text": "summer"
+        }
+      ]
+    },
+    {
+      "start": 293.3,
+      "end": 294.26,
+      "text": "This summer",
+      "words": [
+        {
+          "t": 293.3,
+          "text": "This"
+        },
+        {
+          "t": 293.74,
+          "text": "summer"
+        }
+      ]
+    },
+    {
+      "start": 294.26,
+      "end": 294.8,
+      "text": "Yeah",
+      "words": [
+        {
+          "t": 294.26,
+          "text": "Yeah"
+        }
+      ]
+    },
+    {
+      "start": 294.8,
+      "end": 295.16,
+      "text": "This summer",
+      "words": [
+        {
+          "t": 294.8,
+          "text": "This"
+        },
+        {
+          "t": 295.06,
+          "text": "summer"
+        }
+      ]
+    },
+    {
+      "start": 296.64,
+      "end": 297.02,
+      "text": "Scythes One",
+      "words": [
+        {
+          "t": 296.64,
+          "text": "Scythes"
+        },
+        {
+          "t": 296.88,
+          "text": "One"
+        }
+      ]
+    },
+    {
+      "start": 298.3,
+      "end": 299.8,
+      "text": "New me",
+      "words": [
+        {
+          "t": 298.3,
+          "text": "New"
+        },
+        {
+          "t": 299.5,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 299.8,
+      "end": 300.096,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 299.8,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 301.98,
+      "end": 302.58,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 301.98,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 302.58,
+      "end": 302.74,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 302.58,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 302.74,
+      "end": 302.944,
+      "text": "Woo",
+      "words": [
+        {
+          "t": 302.74,
+          "text": "Woo"
+        }
+      ]
+    },
+    {
+      "start": 303.12,
+      "end": 303.328,
+      "text": "Jest",
+      "words": [
+        {
+          "t": 303.12,
+          "text": "Jest"
+        }
+      ]
+    }
+  ]
+}

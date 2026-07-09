@@ -21,7 +21,8 @@
 //     [--id slug] [--title "..."] [--artist xsytrance] \
 //     [--out scripts/song-analysis/profiles/<id>] \
 //     [--model qwen2.5:14b] [--vision-model llama3.2-vision] \
-//     [--venv ~/whisper-venv] [--skip-vision] [--no-demucs] [--lang en]
+//     [--venv ~/whisper-venv] [--skip-vision] [--no-demucs] [--lang en] \
+//     [--publish]   (ship profile.json → R2 planets/<id>/ for the SONIC DOSSIER)
 //
 // Needs at least one of --audio / --stems. DSP runs in the stem-analysis
 // venv (librosa); transcription in the whisper venv; LLM via Ollama.
@@ -383,6 +384,7 @@ writeFileSync(join(OUT, `${ID}-planet-full.json`),
   JSON.stringify({ analysis, styleHint, assets: {}, generatedAt }, null, 2));
 const profile = {
   v: 1, mode, id: ID, generatedAt,
+  measured: { bpm: senses.bpm ?? null, duration: senses.duration ?? null },
   identity, cover, mixFeatures: mix,
   lyrics: { official: !!LYRICS, language: transcript.language ?? identity.language, text: lyricsText, lrc },
   analysis, show,
@@ -397,6 +399,24 @@ const profile = {
   ],
 };
 writeFileSync(join(OUT, "profile.json"), JSON.stringify(profile, null, 2));
+
+// --publish → ship profile.json to R2 planets/<id>/profile.json; the /t/<id>
+// share page's SONIC DOSSIER picks it up with zero code changes.
+if (args.publish) {
+  const envFile = join(REPO, ".env");
+  const eo = Object.fromEntries(readFileSync(envFile, "utf8").split(/\r?\n/)
+    .map((l) => l.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/)).filter(Boolean)
+    .map((m) => [m[1], m[2].replace(/^["']|["']$/g, "")]));
+  execFileSync("rclone", ["copyto", join(OUT, "profile.json"), `R2:${eo.BUCKET || "x1c7-music"}/planets/${ID}/profile.json`, "--s3-no-check-bucket", "--no-traverse"], {
+    env: {
+      ...process.env,
+      RCLONE_CONFIG_R2_TYPE: "s3", RCLONE_CONFIG_R2_PROVIDER: "Cloudflare", RCLONE_CONFIG_R2_REGION: "auto",
+      RCLONE_CONFIG_R2_ACCESS_KEY_ID: eo.ACCESS_KEY_ID, RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: eo.SECRET_ACCESS_KEY,
+      RCLONE_CONFIG_R2_ENDPOINT: eo.ENDPOINT,
+    }, stdio: "inherit",
+  });
+  log(`↑ published → planets/${ID}/profile.json`);
+}
 
 console.log(JSON.stringify({
   id: ID, mode, title: identity.title, genre: identity.genre, mood: identity.mood,

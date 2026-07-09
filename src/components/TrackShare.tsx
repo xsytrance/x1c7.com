@@ -2,7 +2,7 @@
 // The share page body — one case, center stage. Preview drops at the hottest
 // bar; PLAY runs the real player (and the cinematic full show when the track
 // can perform). If the ultimate analyzer has published a profile.json for
-// this track, its sonic profile renders below — no code change needed there.
+// this track, its SONIC DOSSIER renders below — no code change needed there.
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
@@ -16,47 +16,7 @@ import { classifyGenre, cardUrl, fmtTime } from "@/lib/collection";
 import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
 import ShareButton from "@/components/ShareButton";
-
-const PLANET_BASE = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
-
-interface SonicProfile {
-  identity?: { key?: string; style?: string; bpm?: number };
-  summary?: string;
-  energyArc?: number[];
-  drops?: { t: number }[];
-  [k: string]: unknown;
-}
-
-function ProfilePanel({ slug, accent }: { slug: string; accent: string }) {
-  const [profile, setProfile] = useState<SonicProfile | null>(null);
-  useEffect(() => {
-    let dead = false;
-    fetch(`${PLANET_BASE}/planets/${slug}/profile.json`)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((j) => { if (!dead && j) setProfile(j); })
-      .catch(() => {});
-    return () => { dead = true; };
-  }, [slug]);
-  if (!profile) return null;
-  const arc = Array.isArray(profile.energyArc) ? profile.energyArc : null;
-  return (
-    <div className="mt-8 rounded-xl border border-white/10 bg-white/[0.03] p-6 text-left">
-      <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/40">sonic profile</p>
-      <div className="mt-3 flex flex-wrap gap-x-6 gap-y-1 font-mono text-sm text-white/70">
-        {profile.identity?.key ? <span>KEY {profile.identity.key}</span> : null}
-        {profile.identity?.style ? <span>{profile.identity.style}</span> : null}
-      </div>
-      {profile.summary ? <p className="mt-3 text-sm leading-6 text-white/60">{String(profile.summary)}</p> : null}
-      {arc && arc.length > 4 ? (
-        <div className="mt-4 flex h-12 items-end gap-[2px]">
-          {arc.map((v, i) => (
-            <div key={i} className="flex-1 rounded-sm" style={{ height: `${8 + Math.max(0, Math.min(1, v)) * 92}%`, background: accent, opacity: 0.35 + Math.max(0, Math.min(1, v)) * 0.6 }} />
-          ))}
-        </div>
-      ) : null}
-    </div>
-  );
-}
+import SonicDossier from "@/components/SonicDossier";
 
 export default function TrackShare({ row }: { row: TrackRow }) {
   const track = useMemo(() => trackFromRow(row), [row]);
@@ -141,7 +101,7 @@ export default function TrackShare({ row }: { row: TrackRow }) {
           <p className="mx-auto mt-8 max-w-md text-sm leading-7 text-white/55">{track.planet.analysis.summary}</p>
         ) : null}
 
-        <ProfilePanel slug={track.id} accent={pal.accent} />
+        <SonicDossier slug={track.id} accent={pal.accent} bpm={meta?.bpm} duration={meta?.duration} />
 
         <div className="mt-10">
           <Link href="/music" className="font-mono text-xs tracking-[0.25em] text-white/50 underline decoration-white/20 underline-offset-4 transition hover:text-white">

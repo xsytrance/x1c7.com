@@ -122,12 +122,17 @@ async function makeOne(t) {
   return true;
 }
 
+const only = process.argv.includes("--only") ? process.argv[process.argv.indexOf("--only") + 1] : null;
+
 let n = 0;
 for (const t of SRC.tracks) {
+  if (only && t.slug !== only) continue;
   try { if (await makeOne(t)) console.error(`✔ ${++n} ${t.slug}`); }
   catch (e) { console.error(`✘ ${t.slug}: ${e.message}`); }
 }
 // the /music page card: center crop of the shelf
-const shelf = await sharp(join(HERE, "out", "shelf.png")).resize(1200, 630, { fit: "cover", position: "centre" }).png().toBuffer();
-await put("covers/og/_music.png", shelf);
-console.error(`done — ${n} track cards + _music.png`);
+if (!only) {
+  const shelf = await sharp(join(HERE, "out", "shelf.png")).resize(1200, 630, { fit: "cover", position: "centre" }).png().toBuffer();
+  await put("covers/og/_music.png", shelf);
+}
+console.error(`done — ${n} track cards${only ? "" : " + _music.png"}`);

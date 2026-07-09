@@ -4,7 +4,7 @@ The list that used to live in a session scratchpad, now somewhere reboots can't
 eat it. One line per track: checked = separated stems live in the mixer
 (Supabase `tracks.planet->assets->stemAudio` + audio in R2 `planets/<slug>/stems/`).
 
-Status as of **2026-07-09 (afternoon)** — 56 tracks in the DB (54 public), 44 with live stem mixers. New today: Days Drift By, Say It With Your Body, Summer Drip, International Heat, Rum Pon Gold, Still Got 5 On It (all full onboards with official lyrics).
+Status as of **2026-07-09 (evening)** — 56 tracks in the DB (54 public), 45 with live stem mixers. New today: Days Drift By, Say It With Your Body, Summer Drip, International Heat, Rum Pon Gold, Still Got 5 On It (all full onboards with official lyrics). ALL remaining stem zips are now downloaded (assets/suno/stems/ has 96 files) — the catch-up rollout is docs/SONIC-DOSSIER.md.
 
 Verify / regenerate against the live DB:
 
@@ -20,6 +20,7 @@ ORDER BY title;
 ## Live in the mixer (43)
 
 - [x] 1st of the Month (Walk It Out) — 8 stems
+- [x] Different This Summer — 8 (2026-07-09: first SONIC DOSSIER track; 123 BPM verified onto the cover)
 - [x] Days Drift By — 9 (full onboard 2026-07-09: planet, art, official lyrics)
 - [x] Say It With Your Body — 9 (full onboard 2026-07-09: planet, art, official lyrics)
 - [x] The Big Top Has Wi-Fi Now — 11 (brass + strings)
@@ -70,7 +71,6 @@ Drop the zip in `assets/suno/stems/` and run the pipeline
 
 - [ ] Another Year Looks Good on You [Happy Birthday Song]
 - [ ] Coffee (Josh Woodward cover — hidden)
-- [ ] Different This Summer
 - [ ] Feverbreak
 - [ ] Let It In (hidden)
 - [ ] Music Is My Drug (Rooklyn Mix)
