@@ -6,7 +6,7 @@
 // data, not audio.
 
 /** Every instrument bucket the analyzer recognizes in a Suno stem zip. */
-export type StemName = "lead" | "back" | "drums" | "perc" | "bass" | "synth" | "guitar" | "keys" | "strings" | "woodwinds" | "other";
+export type StemName = "lead" | "back" | "drums" | "perc" | "bass" | "synth" | "guitar" | "keys" | "strings" | "woodwinds" | "brass" | "other";
 
 export interface StemRiser { t: number; end: number }
 export interface StemData {

@@ -42,7 +42,7 @@ const log = (...a) => console.error(...a);
 const PATTERNS = [
   ["lead", "lead voc"], ["back", "backing voc"], ["drums", "drum"], ["bass", "bass"],
   ["perc", "perc"], ["synth", "synth"], ["other", "other"], ["guitar", "guitar"], ["keys", "keyboard"],
-  ["strings", "strings"], ["woodwinds", "woodwind"],
+  ["strings", "strings"], ["woodwinds", "woodwind"], ["brass", "brass"],
 ];
 
 function loadEnv(file) {
