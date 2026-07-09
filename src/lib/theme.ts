@@ -12,7 +12,7 @@ export interface Theme {
 export type ThemeOverride = Partial<Theme>;
 
 export const DEFAULT_THEME: Theme = {
-  primary: "#ff2bd6",
+  primary: "#ff2440",
   secondary: "#43f7ff",
   accent: "#8dff4a",
   bg: "#05030b",

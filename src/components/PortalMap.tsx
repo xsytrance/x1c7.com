@@ -26,7 +26,7 @@ export function PortalMap() {
     <section className="relative mx-auto w-full max-w-7xl px-4 pb-20 pt-8 sm:px-6 lg:px-8">
       <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="relative min-h-[680px] overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.035] p-4 shadow-2xl shadow-plasma/10 backdrop-blur md:min-h-[720px] md:p-8">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(67,247,255,0.16),transparent_32%),radial-gradient(circle_at_20%_20%,rgba(255,43,214,0.16),transparent_28%),radial-gradient(circle_at_80%_75%,rgba(141,255,74,0.12),transparent_30%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(67,247,255,0.16),transparent_32%),radial-gradient(circle_at_20%_20%,rgba(255,36,64,0.16),transparent_28%),radial-gradient(circle_at_80%_75%,rgba(141,255,74,0.12),transparent_30%)]" />
           <div className="starfield" aria-hidden />
           <div className="absolute left-1/2 top-[295px] hidden h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-signal/20 md:block" />
           <div className="absolute left-1/2 top-[295px] hidden h-[610px] w-[610px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-dashed border-plasma/15 md:block" />

@@ -32,7 +32,7 @@ export const categoryMeta: Record<ProjectCategory, CategoryMeta> = {
     id: "music",
     label: "AI Music",
     blurb: "Players, rhythm games, and signal for the machines.",
-    color: "#ff2bd6",
+    color: "#ff2440",
     glyph: "♪",
   },
   art: {

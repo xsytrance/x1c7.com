@@ -42,11 +42,11 @@ const TRACK: Track = {
       summary: "A synthetic song for measuring the renderer.",
       overallMood: "rain",
       themes: ["rain", "city", "water", "light"],
-      palette: ["#43f7ff", "#7c3cff", "#ff2bd6", "#8dff4a"],
+      palette: ["#43f7ff", "#7c3cff", "#ff2440", "#8dff4a"],
       sections: [
         { name: "intro", emotion: "calm", intensity: 0.3, colorHint: "#43f7ff", start: 0 },
         { name: "build", emotion: "longing", intensity: 0.55, colorHint: "#7c3cff", start: 12 },
-        { name: "drop", emotion: "intense", intensity: 0.82, colorHint: "#ff2bd6", start: 22 },
+        { name: "drop", emotion: "intense", intensity: 0.82, colorHint: "#ff2440", start: 22 },
         { name: "outro", emotion: "dreamy", intensity: 0.4, colorHint: "#8dff4a", start: 34 },
       ],
       keywords: [

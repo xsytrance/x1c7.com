@@ -20,6 +20,7 @@ export function trackFromRow(r: TrackRow): Track {
     mood: r.mood || undefined,
     color,
     audioUrl: r.audio_url,
+    sunoUrl: r.suno_url || undefined,
     featured: !!r.featured,
     theme: (r.theme as Track["theme"]) || undefined,
     lyrics: r.lyrics || undefined,

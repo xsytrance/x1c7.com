@@ -222,6 +222,12 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                       🪐 FULL SHOW READY
                     </span>
                   )}
+                  {focused.sunoUrl && (
+                    <a href={focused.sunoUrl} target="_blank" rel="noopener noreferrer"
+                      className="rounded-sm border border-white/20 px-3 py-2 font-mono text-xs tracking-[0.14em] text-white/70 transition hover:border-white/60 hover:text-white">
+                      SUNO ↗
+                    </a>
+                  )}
                 </div>
                 <p className="mt-3 font-mono text-[11px] tracking-[0.12em] text-white/35">
                   {preview.state.blocked ? "CLICK ANYWHERE TO ENABLE SOUND PREVIEWS" :

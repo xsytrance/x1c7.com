@@ -29,7 +29,7 @@ function ampColor(val: number, color: string): [number, number, number] {
   ];
 }
 
-export function AudioVisualizer({ analyser, active = false, color = "#ff2bd6", className = "", mode = "bars" }: VisualizerProps) {
+export function AudioVisualizer({ analyser, active = false, color = "#ff2440", className = "", mode = "bars" }: VisualizerProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animRef = useRef<number>(0);
   const sizeRef = useRef({ w: 0, h: 0 });

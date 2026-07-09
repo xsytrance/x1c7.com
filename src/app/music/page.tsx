@@ -95,7 +95,7 @@ export default function Page() {
       {isPlaying && (
         <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="relative h-32 overflow-hidden rounded-xl border border-white/10 sm:h-44">
-            <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2bd6"} mode="wave" className="absolute inset-0" />
+            <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2440"} mode="wave" className="absolute inset-0" />
             <div className="absolute bottom-2 left-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
               now playing · {currentTrack?.title}
             </div>
@@ -122,9 +122,25 @@ export default function Page() {
         <GalaxyButton />
       </section>
 
+      {/* ===== SUNO GRATITUDE ===== */}
+      <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-8 text-center sm:px-10">
+          <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">a note on origins</p>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/75">
+            AGENOR is not affiliated with <a href="https://suno.com" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Suno</a> —
+            but every one of these transmissions began there. The writing, the worlds, the covers, the shows are ours;
+            the spark that made them possible is theirs. Endless gratitude to the Suno team.
+          </p>
+          <a href="https://suno.com/@xsytrance" target="_blank" rel="noopener noreferrer"
+            className="mt-5 inline-block rounded-sm border border-white/20 px-5 py-2.5 font-mono text-xs tracking-[0.2em] text-white/70 transition hover:border-white/60 hover:text-white">
+            THE CATALOG ON SUNO ↗
+          </a>
+        </div>
+      </section>
+
       {/* ===== SOUNDCLOUD ===== */}
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <SoundCloudEmbed url="https://soundcloud.com/xsytrance" />
+        <SoundCloudEmbed url="https://soundcloud.com/rod-agenor" />
       </section>
     </main>
   );

@@ -21,7 +21,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   Python: "#8dff4a",
   Rust: "#ff9b3d",
   Kotlin: "#7c3cff",
-  GDScript: "#ff2bd6",
+  GDScript: "#ff2440",
   HTML: "#ff9b3d",
   TeX: "#00ffa8",
 };

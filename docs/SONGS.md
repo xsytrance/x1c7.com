@@ -77,7 +77,7 @@ Drop the zip in `assets/suno/stems/` and run the pipeline
 - [ ] My Soul Lives In Seoul
 - [ ] Paper That Cut You
 - [ ] Who's That Snake (Funky Slow-Jam Mix)
-- [ ] Summer Drip — onboarding in progress 2026-07-09 (mp3 + cover + lyrics + style in hand; stems zip pending)
+- [ ] Summer Drip — LIVE on the site 2026-07-09 (full planet, official lyrics, 858 synced words); stems zip pending for the mixer
 
 ## Lyrics + style in hand, no audio yet (3)
 

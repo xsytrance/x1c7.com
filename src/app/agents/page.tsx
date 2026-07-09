@@ -26,10 +26,10 @@ function VgGodSilhouette() {
       <div
         className="h-16 w-16"
         style={{
-          background: "linear-gradient(135deg, #ff2bd6, #ff6ee3)",
+          background: "linear-gradient(135deg, #ff2440, #ff6ee3)",
           clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)",
-          boxShadow: "0 0 20px rgba(255, 43, 214, 0.5)",
-          filter: "drop-shadow(0 0 8px rgba(255, 43, 214, 0.6))",
+          boxShadow: "0 0 20px rgba(255, 36, 64, 0.5)",
+          filter: "drop-shadow(0 0 8px rgba(255, 36, 64, 0.6))",
         }}
       />
     </div>
@@ -160,7 +160,7 @@ const agents: Agent[] = [
     codename: "VG GOD",
     role: "Visual Generation",
     status: "live",
-    color: "#ff2bd6",
+    color: "#ff2440",
     silhouette: <VgGodSilhouette />,
   },
   {

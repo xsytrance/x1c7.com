@@ -29,7 +29,7 @@ const LEVELS = [
     num: "03",
     badge: "LEVEL 3",
     title: "Scale Operations",
-    color: "#ff2bd6",
+    color: "#ff2440",
     features: ["Multi-agent systems", "Custom AI training", "Full ecosystem integration"],
     status: "Available",
   },
@@ -57,7 +57,7 @@ const STEPS = [
   },
   {
     icon: (
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff2bd6" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ff2440" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <polyline points="22 7 13.5 15.5 8.5 10.5 2 17" />
         <polyline points="16 7 22 7 22 13" />
       </svg>
