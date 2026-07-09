@@ -4,7 +4,7 @@ The list that used to live in a session scratchpad, now somewhere reboots can't
 eat it. One line per track: checked = separated stems live in the mixer
 (Supabase `tracks.planet->assets->stemAudio` + audio in R2 `planets/<slug>/stems/`).
 
-Status as of **2026-07-09 (evening)** — 56 tracks in the DB (54 public), 45 with live stem mixers. New today: Days Drift By, Say It With Your Body, Summer Drip, International Heat, Rum Pon Gold, Still Got 5 On It (all full onboards with official lyrics). ALL remaining stem zips are now downloaded (assets/suno/stems/ has 96 files) — the catch-up rollout is docs/SONIC-DOSSIER.md.
+Status as of **2026-07-09 (night)** — **THE FULL ROLLOUT SHIPPED** (see docs/2026-07-09-CATALOG-ROLLOUT.md): 54/54 public tracks have Sonic Dossiers, full shows, planet analyses, and ⚡ DYNAMIC+ choreographies; **50/54 live stem mixers**. Remaining mixers wait on Suno stem zips: Rum Pon Gold, Still Got 5 On It, Music Is My Drug (Rooklyn Mix) (+ hidden tracks). New mixers today: Different This Summer, Feverbreak, International Heat, My Soul Lives In Seoul, Paper That Cut You, Who's That Snake.
 
 Verify / regenerate against the live DB:
 
