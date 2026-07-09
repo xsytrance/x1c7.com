@@ -1,0 +1,341 @@
+{
+ "snapshotDate": "2026-07-09",
+ "tracks": [
+  {
+   "id": "1st-of-the-month-walk-it-out",
+   "title": "1st of the Month (Walk It Out)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "23-respuestas",
+   "title": "23 Respuestas",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "ai-interlude",
+   "title": "AI Interlude",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "amor-de-verdad",
+   "title": "Amor De Verdad",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "another-year-looks-good-on-you-happy-birthday-song",
+   "title": "Another Year Looks Good on You [Happy Birthday Song]",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "between-the-stations",
+   "title": "Between The Stations",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "brooms-in-the-boiler-room",
+   "title": "Brooms in the Boiler Room",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "cairo-still-dancing",
+   "title": "Cairo Still Dancing",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "ceasefire-in-the-static-data-storm-version",
+   "title": "Ceasefire in the Static (Data Storm Version)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "cocktails-and-code",
+   "title": "Cocktails && Code",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "coffee-josh-woodward-lyrics",
+   "title": "Coffee",
+   "hidden": true,
+   "stemsLive": false
+  },
+  {
+   "id": "days-drift-by",
+   "title": "Days Drift By",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "different-this-summer",
+   "title": "Different This Summer",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "drink-drink-don-t-save-me",
+   "title": "Drink Drink [Don't Save Me]",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "fast-enough",
+   "title": "Fast Enough",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "feverbreak",
+   "title": "Feverbreak",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "going-crazy-hiligaynon-fusion-mix",
+   "title": "Going Crazy (Hiligaynon Fusion Mix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "heaven-hell-honey-venom-remix",
+   "title": "Heaven & Hell (Honey & Venom Remix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "honey-n-venom-rude-wine-riddim",
+   "title": "Honey N Venom (Rude Wine Riddim)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "i-don-t-quit-right-now",
+   "title": "I Don't Quit Right Now",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "i-m-that-somebody",
+   "title": "I'm That Somebody",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "i-said-no",
+   "title": "I Said No!",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "i-won-t-be-your-fire",
+   "title": "I Won’t Be Your Fire",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "i-won-t-be-your-fire-japanese-mix",
+   "title": "I Won’t Be Your Fire (Japanese Mix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "in-love-with-the-party",
+   "title": "In Love With The Party",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "international-heat",
+   "title": "International Heat",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "jayodeed-going-crazy-rooklyn-mix",
+   "title": "Jayodeed - Going Crazy (Rooklyn Mix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "let-it-in",
+   "title": "Let It In",
+   "hidden": true,
+   "stemsLive": false
+  },
+  {
+   "id": "light-it-myself",
+   "title": "Light It Myself (불은 내가)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "low-lights-tokyo-night",
+   "title": "Low Lights Tokyo: 君がいないNight",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "membrane-still-insane",
+   "title": "Membrane Still Insane",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "mi-gente",
+   "title": "Mi Gente",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "move-over-minimal-groove-mix",
+   "title": "Move Over (Minimal Groove Mix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "music-is-my-drug",
+   "title": "Music Is My Drug",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "music-is-my-drug-rooklyn-mix",
+   "title": "Music Is My Drug (Rooklyn Mix)",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "my-soul-lives-in-seoul",
+   "title": "My Soul Lives In Seoul",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "one-more-breath-back-to-myself",
+   "title": "One More Breath [Back To Myself]",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "one-tap-away",
+   "title": "One Tap Away",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "one-tap-away-riverboat-bad-boys-remix",
+   "title": "One Tap Away (Riverboat Bad Boys Remix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "oro-de-la-presion",
+   "title": "Oro De La Presión",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "paper-that-cut-you",
+   "title": "Paper That Cut You",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "push-it-on-me",
+   "title": "Push It On Me",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "red-flags-from-the-beginning",
+   "title": "Red Flags From The Beginning",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "rum-pon-gold",
+   "title": "Rum Pon Gold",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "say-it-with-your-body",
+   "title": "Say It With Your Body",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "say-it-with-your-eyes",
+   "title": "Say It With Your Eyes",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "still-got-5-on-it",
+   "title": "Still Got 5 On It",
+   "hidden": false,
+   "stemsLive": false
+  },
+  {
+   "id": "still-me-still-you",
+   "title": "Still Me: Still You",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "summer-drip",
+   "title": "Summer Drip",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "the-big-top-has-wi-fi-now",
+   "title": "The Big Top Has Wi-Fi Now",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "under-the-elevated",
+   "title": "Under The Elevated",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "veneno-y-miel",
+   "title": "Veneno Y Miel",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "void-into-gold",
+   "title": "Void Into Gold",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "void-into-gold-forged-above-gold-mix",
+   "title": "Void Into Gold (Forged Above Gold Mix)",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "whistle-on-the-river",
+   "title": "Whistle on the River",
+   "hidden": false,
+   "stemsLive": true
+  },
+  {
+   "id": "who-s-that-snake-funky-slow-jam-mix",
+   "title": "Who's That Snake (Funky Slow-Jam Mix)",
+   "hidden": false,
+   "stemsLive": false
+  }
+ ]
+}

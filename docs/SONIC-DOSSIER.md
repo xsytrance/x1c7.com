@@ -64,6 +64,29 @@ Steps 1 and 2 share `senses.json` — analyze once, use twice.
 
 ## Rollout — the big job
 
+**The batch runner exists: `scripts/song-analysis/batch-dossiers.mjs`.**
+
+```bash
+# pre-flight, then:
+node scripts/song-analysis/batch-dossiers.mjs           # the whole catalog
+#   [--dry] [--force] [--only slug,slug] [--include-hidden] [--limit N]
+```
+
+It walks `targets.json` (live-DB snapshot 2026-07-09: 56 tracks), skips
+anything already published to R2 (resume-safe — rerun after any crash),
+resolves local stems (extracted dir, else zip by slug match), runs the
+analyzer with `--skip-vision --publish`, and for tracks whose mixer isn't
+live yet also runs publish-stems and collects the emitted SQL into
+`batch-stems.sql` — apply that to Supabase afterward to light the mixers up.
+Serial by design (GPU-bound); failures don't stop the batch and the summary
+lists every skip/failure. Progress journal: `batch-log.jsonl`.
+
+Dry-run verdict (2026-07-09): 52 to process, 4 skipped (2 hidden, 2 already
+published). Only 3 tracks lack local stems (zips pending from Suno:
+music-is-my-drug-rooklyn-mix, rum-pon-gold, still-got-5-on-it) — they get
+demucs-approx dossiers now, real stems + mixer when the zips land.
+Budget ≈ 4–5 min/track → full catalog ≈ 4 hours.
+
 All stem zips are downloaded (96 files in `assets/suno/stems/`). Remaining
 work per docs/SONGS.md: ~10 tracks without live stems + all 54 public tracks
 without a published dossier.
@@ -85,6 +108,15 @@ covers (engine/web/og `--only` flags all exist now).
 
 Tracking: tick boxes in docs/SONGS.md; a track is DONE when mixer + dossier +
 BPM-on-cover are all live.
+
+After the batch (Phase 3, covers): for every track that gained a live
+stems.json, refresh manifest bpm from R2, then
+`engine.mjs --only <slug>` → `make-web-assets.mjs --only <slug>` →
+`make-og.mjs --only <slug>` + upload `out/<slug>.png` to
+`covers/collector/<slug>.png` (aws4fetch one-liner or rclone). Genre
+disagreements from the analyzer (e.g. I Won't Be Your Fire: catalog
+"Electronic" vs measured read "Emo-Rap Pop-Punk") are flagged in each
+profile's identity block — collect them for the owner, never auto-flip.
 
 ## Beyond the catalog — other people's songs
 
