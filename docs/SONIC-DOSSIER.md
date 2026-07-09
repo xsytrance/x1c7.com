@@ -118,6 +118,30 @@ disagreements from the analyzer (e.g. I Won't Be Your Fire: catalog
 "Electronic" vs measured read "Emo-Rap Pop-Punk") are flagged in each
 profile's identity block — collect them for the owner, never auto-flip.
 
+## From dossier to show — every song performs
+
+The analyzer output IS show fuel. Two scripts turn the batch into stagecraft:
+
+```bash
+# 1. FULL SHOWS — every analyzed song gains lyrics_synced (whisper word
+#    timings; official synced lyrics are never overwritten) + planet.analysis
+node scripts/song-analysis/publish-shows.mjs        # → shows.sql
+
+# 2. DYNAMIC+ (Phase 6) — the LLM show director choreographs the showcase
+#    pass per song: Reactor takeovers on matching sections, stem spotlights
+#    on isolation windows, keyword → text-effect picks
+node scripts/song-analysis/dynamic-plus.mjs         # → dynamic-plus.sql
+# apply shows.sql FIRST (dynamic-plus guards on planet IS NOT NULL)
+```
+
+Engine side (shipped 2026-07-09): `planet.dynamicPlus` type (synced to
+Kinetica), Phase 6 in the show (MAX_PASS 6 when choreography exists, "⚡
+Dynamic+" on the phase button), THE CONDUCTOR in CinematicLyrics (auto
+Reactor takeovers + stem spotlights with the listener's mix snapshotted and
+restored; manual picks always win), keyword overrides merged into the
+effect seam at pass ≥ 6, and THE BAND (StemGlyphs.tsx — animated instrument
+glyphs on every stem, live in the mixer).
+
 ## Beyond the catalog — other people's songs
 
 The analyzer already handles **mp3-only input** (demucs 4-stem fallback), so

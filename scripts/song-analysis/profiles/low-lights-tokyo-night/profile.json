@@ -1,0 +1,282 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "low-lights-tokyo-night",
+  "generatedAt": "2026-07-09T18:16:52.747Z",
+  "measured": {
+    "bpm": 136,
+    "duration": 169.4
+  },
+  "identity": {
+    "styleSentence": "A high-energy J-Rock fusion blending trap rock beats and hip-hop elements with cathartic pop sensibilities, featuring driving drums, gritty electric guitars, deep 808 bass synths, and atmospheric neon-lit synthesizers at a fast tempo of 136 BPM.",
+    "energy": "high",
+    "vocalStyle": "Emotive rap-singing delivery alternating between rhythmic spoken verses and melodic, breathy choruses with Japanese-English bilingual phrasing.",
+    "language": "Japanese/English",
+    "title": "Low Lights Tokyo / 君がいないNight",
+    "titleAlternates": [],
+    "genre": "J-Rock",
+    "subGenres": [
+      "Hip-Hop Rock",
+      "Cathartic Pop",
+      "Trap Rock"
+    ],
+    "mood": "Bittersweet",
+    "Nocturnal": ", "
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/low-lights-tokyo-night/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#080818",
+      "#080828",
+      "#081838",
+      "#081828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F#",
+      "mode": "major",
+      "confidence": 0.654
+    },
+    "boundaries": [
+      12.35,
+      17.55,
+      28.7,
+      57.77,
+      61.58,
+      114.52,
+      117.59,
+      167.18
+    ],
+    "brightness": 3069.5,
+    "dynamicsDb": 7.2
+  },
+  "lyrics": {
+    "official": true,
+    "language": "japanese",
+    "text": "[Intro]\nYeah\nLow lights Tokyo\n君がいない night\n\n[Verse 1]\nヴァイナル揺れて I slide through slow\n同じパーティー but 帰れない home\n808 鳴ってる 心の奥\n君のボイス still stuck in my phone\n笑ってるけど I’m not alright\n青いライトで 踊ってる night\nEverybody moving でも心は ice\n人混みの中 探して your light\n\n[Pre-Chorus]\nもしドラムが fade out しても\nここにいてよ please don’t go\nもしライトが消えても tonight\n君だけは消えないで stay in my sight\n\n[Chorus]\nWe’re in love with the party\nbut I’m still missing you\nLow lights 染まる body\nネオンは turning blue\nまだ帰りたくないね\nbut I can’t say goodbye\n踊ってるふりのままで\nI’m breaking in the night\n\n[Verse 2]\nスムーズなコード 雨のガラスみたい\n終電過ぎても 消えない vibe\n待たないでって 君は言ったけど\nでもまだ君を探してるよ\nクラウドの声は so loud tonight\n同じ song でも痛い inside\n心の中で party が鳴っても\n君がいない night 感じる cold\n\n[Bridge]\nドラム止まっても\nまだ sway, sway\n最後の音よ\nどうか don’t fade away\n鼓動重なって\nまた離れてく\n部屋を出た君\nまだ心にいる\n\n[Final Chorus]\nWe’re in love with the party\nbut I’m still missing you\nLow lights 染まる body\nネオンは turning blue\nまだ帰りたくないね\nbut I can’t say goodbye\nまだ party に恋して\nひとり Tokyo lights\n\n[Outro]\nYeah\nLow lights Tokyo\n君がいない night",
+    "lrc": "[Intro]\n[00:00.01] LOWLIGHTS TOKYO\n[00:06.38] 悲鳴がいない\n[00:20.28] 悲鳴がいない\n[Verse 1]\n[00:21.72] Yeah\n[00:26.06] Yeah Yeah Yeah Yeah\n[00:28.02] バイナル揺れて I slide through flow\n[00:31.50] 同じパーティーばかりでない home\n[00:34.78] 8th way 鳴ってる心\n[00:41.44] お疲れ様でした\n[Pre-Chorus]\n[Chorus]\n[01:07.26] Low light 染まる body\n[01:09.04] Now I'm turning blue\n[01:10.60] まだ変わりたくないね\n[01:12.74] But I can say goodbye\n[01:13.98] 踊ってるフリのままで\n[01:16.08] I'm breaking in the night\n[01:19.36] スムーズな鼓動 雨のガラスみたい\n[01:21.99] 終電すぎても消えないVibe\n[01:23.94] 待たないでって君は言ったけど\n[01:25.90] でもまだ君を探してるよ\n[01:32.58] クラウドの声は空を繋い\n[01:34.82] 同じソングで向いたインサイド\n[01:36.52] 心の中でパーティーが鳴っても\n[01:38.42] 君がいないない感じるCrow\n[01:40.06] ドラム止まっても\n[01:41.92] まだSway sway\n[01:43.46] 最後の音よ\n[01:45.62] どうかDon't fade away\n[01:47.28] 鼓動重なって\n[01:48.65] また離れてく\n[01:50.40] 部屋を出た君\n[01:52.04] まだ心にいる\n[Verse 2]\n[Bridge]\n[01:58.92] We're in love with the party\n[02:01.60] But I'm still missing you\n[02:03.20] Low light 染まる body\n[02:05.06] Now I'm turning blue\n[02:06.52] まだ帰りたくないね\n[02:08.87] But I can't say goodbye\n[02:10.08] まだパーティーに恋して\n[02:12.10] 一人TOKYO LIGHTS\n[02:20.17] Low light 時よ\n[02:26.47] 君でなんない\n[Final Chorus]\n[02:47.40] TOKYO LIGHTS\n[02:47.59] 順番 financially\n[02:47.68] -END-\n"
+  },
+  "analysis": {
+    "summary": "A melancholic journey through a rainy Tokyo nightlife where an artist navigates the bittersweet tension between partying to forget and the lingering pain of losing a loved one.",
+    "overallMood": "Bittersweet",
+    "themes": [
+      "Urban Isolation",
+      "Nostalgia",
+      "Hidden Grief",
+      "Neon Melancholy"
+    ],
+    "palette": [
+      "#0F1824",
+      "#1C3A59",
+      "#7D6E7B",
+      "#FF2A6D"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Atmospheric dread and anticipation of rain",
+        "intensity": 0.61,
+        "colorHint": "#1c3a59",
+        "start": 0.01
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Rhythmic numbness masking sadness",
+        "intensity": 0.69,
+        "colorHint": "#2e4f6d",
+        "start": 21.72
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building tension and rising anxiety",
+        "intensity": 0.96,
+        "colorHint": "#3a1c59",
+        "start": 67.26
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Raw emotional release amidst neon chaos",
+        "intensity": 0.64,
+        "colorHint": "#ff2a6d",
+        "start": 67.26
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Resigned acceptance of the void left behind",
+        "intensity": 0.33,
+        "colorHint": "#4f3a59",
+        "start": 118.92
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Desperate plea against fading memory",
+        "intensity": 0.3,
+        "colorHint": "#6e5c7d",
+        "start": 118.92
+      },
+      {
+        "name": "Final Chorus",
+        "emotion": "Anthemic resignation and final acceptance of loss",
+        "intensity": 0.3,
+        "colorHint": "#ff2a6d",
+        "start": 167.4
+      }
+    ],
+    "keywords": [
+      {
+        "word": "light",
+        "emotion": "Shadowed vulnerability",
+        "imageryPrompt": "dimly lit underground club with flickering neon signs casting long blue shadows on sweat-dampened concrete floors, rain streaking the windows behind"
+      },
+      {
+        "word": "turning",
+        "emotion": "Cold detachment and fading warmth",
+        "imageryPrompt": "skin turning a translucent pale shade of indigo under harsh fluorescent lights, ice cubes melting rapidly in a glass with condensation running down the sides"
+      },
+      {
+        "word": "breaking",
+        "emotion": "Fractured psyche and structural collapse",
+        "imageryPrompt": "cracked mirror reflecting a distorted silhouette shattering into glowing shards against a backdrop of blurred city traffic, glass dust floating in air currents"
+      },
+      {
+        "word": "rainy",
+        "emotion": "Melancholic cleansing and isolation",
+        "imageryPrompt": "heavy sheets of rain blurring the view of skyscrapers into watercolor smears, puddles reflecting fractured neon lights on wet asphalt streets"
+      },
+      {
+        "word": "crowd",
+        "emotion": "Dense silence within noise",
+        "imageryPrompt": "thousands of blurred figures moving as one mass under umbrellas in a dark alleyway, faces obscured by steam from breath and rain droplets clinging to glasses"
+      },
+      {
+        "word": "fade",
+        "emotion": "Existential slipping into nothingness",
+        "imageryPrompt": "silhouette of a person slowly dissolving into digital static or smoke particles, the edges of their form blurring and losing definition against a dark void"
+      },
+      {
+        "word": "party",
+        "emotion": "Forced euphoria masking pain",
+        "imageryPrompt": "overly saturated colors distorting reality in a crowded dance floor where faces are hidden behind masks of smiles, strobe lights creating disjointed motion blur"
+      },
+      {
+        "word": "lights",
+        "emotion": "Distant beauty and unreachable hope",
+        "imageryPrompt": "towering skyscrapers piercing a stormy night sky with windows glowing like dying stars, reflections in wet pavement showing the city as both majestic and indifferent"
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 42,
+      "mid": 41,
+      "close": 11
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0.01,
+        "intensity": 0.61
+      },
+      {
+        "name": "Verse 1",
+        "start": 21.72,
+        "intensity": 0.69
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 67.26,
+        "intensity": 0.96
+      },
+      {
+        "name": "Chorus",
+        "start": 67.26,
+        "intensity": 0.64
+      },
+      {
+        "name": "Verse 2",
+        "start": 118.92,
+        "intensity": 0.33
+      },
+      {
+        "name": "Bridge",
+        "start": 118.92,
+        "intensity": 0.3
+      },
+      {
+        "name": "Final Chorus",
+        "start": 167.4,
+        "intensity": 0.3
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 30
+      },
+      {
+        "name": "Verse 1",
+        "presence": 86
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 90
+      },
+      {
+        "name": "Chorus",
+        "presence": 41
+      },
+      {
+        "name": "Verse 2",
+        "presence": 0
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Final Chorus",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          8.94
+        ],
+        [
+          63.9,
+          65.26
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "low-lights-tokyo-night-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

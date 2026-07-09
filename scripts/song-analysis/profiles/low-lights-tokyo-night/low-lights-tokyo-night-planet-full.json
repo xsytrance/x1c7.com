@@ -1,0 +1,114 @@
+{
+  "analysis": {
+    "summary": "A melancholic journey through a rainy Tokyo nightlife where an artist navigates the bittersweet tension between partying to forget and the lingering pain of losing a loved one.",
+    "overallMood": "Bittersweet",
+    "themes": [
+      "Urban Isolation",
+      "Nostalgia",
+      "Hidden Grief",
+      "Neon Melancholy"
+    ],
+    "palette": [
+      "#0F1824",
+      "#1C3A59",
+      "#7D6E7B",
+      "#FF2A6D"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Atmospheric dread and anticipation of rain",
+        "intensity": 0.61,
+        "colorHint": "#1c3a59",
+        "start": 0.01
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Rhythmic numbness masking sadness",
+        "intensity": 0.69,
+        "colorHint": "#2e4f6d",
+        "start": 21.72
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building tension and rising anxiety",
+        "intensity": 0.96,
+        "colorHint": "#3a1c59",
+        "start": 67.26
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Raw emotional release amidst neon chaos",
+        "intensity": 0.64,
+        "colorHint": "#ff2a6d",
+        "start": 67.26
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Resigned acceptance of the void left behind",
+        "intensity": 0.33,
+        "colorHint": "#4f3a59",
+        "start": 118.92
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Desperate plea against fading memory",
+        "intensity": 0.3,
+        "colorHint": "#6e5c7d",
+        "start": 118.92
+      },
+      {
+        "name": "Final Chorus",
+        "emotion": "Anthemic resignation and final acceptance of loss",
+        "intensity": 0.3,
+        "colorHint": "#ff2a6d",
+        "start": 167.4
+      }
+    ],
+    "keywords": [
+      {
+        "word": "light",
+        "emotion": "Shadowed vulnerability",
+        "imageryPrompt": "dimly lit underground club with flickering neon signs casting long blue shadows on sweat-dampened concrete floors, rain streaking the windows behind"
+      },
+      {
+        "word": "turning",
+        "emotion": "Cold detachment and fading warmth",
+        "imageryPrompt": "skin turning a translucent pale shade of indigo under harsh fluorescent lights, ice cubes melting rapidly in a glass with condensation running down the sides"
+      },
+      {
+        "word": "breaking",
+        "emotion": "Fractured psyche and structural collapse",
+        "imageryPrompt": "cracked mirror reflecting a distorted silhouette shattering into glowing shards against a backdrop of blurred city traffic, glass dust floating in air currents"
+      },
+      {
+        "word": "rainy",
+        "emotion": "Melancholic cleansing and isolation",
+        "imageryPrompt": "heavy sheets of rain blurring the view of skyscrapers into watercolor smears, puddles reflecting fractured neon lights on wet asphalt streets"
+      },
+      {
+        "word": "crowd",
+        "emotion": "Dense silence within noise",
+        "imageryPrompt": "thousands of blurred figures moving as one mass under umbrellas in a dark alleyway, faces obscured by steam from breath and rain droplets clinging to glasses"
+      },
+      {
+        "word": "fade",
+        "emotion": "Existential slipping into nothingness",
+        "imageryPrompt": "silhouette of a person slowly dissolving into digital static or smoke particles, the edges of their form blurring and losing definition against a dark void"
+      },
+      {
+        "word": "party",
+        "emotion": "Forced euphoria masking pain",
+        "imageryPrompt": "overly saturated colors distorting reality in a crowded dance floor where faces are hidden behind masks of smiles, strobe lights creating disjointed motion blur"
+      },
+      {
+        "word": "lights",
+        "emotion": "Distant beauty and unreachable hope",
+        "imageryPrompt": "towering skyscrapers piercing a stormy night sky with windows glowing like dying stars, reflections in wet pavement showing the city as both majestic and indifferent"
+      }
+    ]
+  },
+  "styleHint": "Emotional J-rock and Japanese hip-hop hybrid at 92 BPM, intimate rap-sung male lead with urgent melodic hooks and airy female backing shouts, rainy Tokyo nightlife atmosphere with darker neon tension, driving distorted bass and tight punchy trap-rock drums, crunchy octave guitars and chorus-drenched arpeggios, wide overdriven power chords in the choruses, subtle vinyl crackle and tape saturation, smooth autotuned vocals blended with lightly gritty emo rock toplines and plate reverb, low lights and neon haze, bittersweet club-rock energy with a cathartic edge, catchy anthemic hook, steady groove focused on head-nod bounce instead of EDM-style drops or crowd-chant breakdowns",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:16:52.747Z"
+}

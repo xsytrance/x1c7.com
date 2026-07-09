@@ -82,6 +82,27 @@ export function resolveWordEffect(
   return natural;
 }
 
+/** DYNAMIC+ — the showcase pass (Phase 6). LLM-choreographed from the song's
+ * measured profile: Reactor takeovers and stem spotlights land on real section
+ * boundaries and drop-map moments; `words` extends the text-effect overrides
+ * with keyword picks. Authored offline by scripts/song-analysis/dynamic-plus.mjs. */
+export interface DynamicPlusAct {
+  start: number; // seconds
+  end: number;
+  /** a Reactor/Lab mode takes the stage for this window (hosts with Labs only) */
+  reactor?: string;
+  /** solo these stems for the window, billed under a stage label */
+  stemSpot?: { solo: StemName[]; label: string };
+  /** the choreographer's one-line reason — debugging + Studio display */
+  why?: string;
+}
+export interface PlanetDynamicPlus {
+  v: 1;
+  acts?: DynamicPlusAct[];
+  /** lowercased word -> text effect; merged under effects.overrides at pass 6 */
+  words?: Record<string, TextEffect>;
+}
+
 export interface Planet {
   analysis: PlanetAnalysis;
   assets?: PlanetAssets;
@@ -90,6 +111,8 @@ export interface Planet {
   interactions?: PlanetInteractions;
   /** Preset/override biasing of the word text effects (optional). */
   effects?: PlanetEffects;
+  /** Phase 6 choreography (optional — its absence caps the show at Phase 5). */
+  dynamicPlus?: PlanetDynamicPlus;
   generatedAt: string | null;
 }
 

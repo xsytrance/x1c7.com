@@ -649,7 +649,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // the effect-bias seam (per-word overrides + preset allow/surface) is part of
   // the Kinetica upgrade, so it only engages at pass >= 4 — passes 1-3 render
   // with the engine's own natural picks, as they did before.
-  const effectsCfg = pass >= 4 ? (effects ?? track.planet?.effects) : undefined;
+  const baseEffectsCfg = pass >= 4 ? (effects ?? track.planet?.effects) : undefined;
+  // PHASE 6 (DYNAMIC+): the choreographer's keyword picks join the override
+  // seam — under any explicit per-word overrides, above the natural lexicon.
+  const dynWords = pass >= 6 ? track.planet?.dynamicPlus?.words : undefined;
+  const effectsCfg = dynWords
+    ? { ...baseEffectsCfg, overrides: { ...dynWords, ...baseEffectsCfg?.overrides } }
+    : baseEffectsCfg;
   // MORE moments: beyond the LLM-choreographed ones, the engine reads the song
   // itself — the longest instrumental gap becomes a wipe, the biggest intensity
   // jump gets a blow (arrive the drop on a breath), the wildest section a shake.

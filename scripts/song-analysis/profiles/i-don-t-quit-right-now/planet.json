@@ -1,0 +1,201 @@
+[
+  {
+    "id": "i-don-t-quit-right-now",
+    "planet": {
+      "analysis": {
+        "summary": "This gritty hip-hop track captures the raw, internal struggle and relentless determination of a dedicated lifter fighting exhaustion and negative self-talk in the gym. It portrays discipline not as an act for others but as a solitary war against one's own limiting beliefs.",
+        "overallMood": "Relentless Grit",
+        "themes": [
+          "Internal Discipline vs. External Pressure",
+          "Somatic Pain as Proof of Progress",
+          "Rejection of Excuses and Distractions",
+          "Solitary War Against Self-Doubt",
+          "The Physiology of Endurance (Burn, Lock, Drip)",
+          "Transformation Through Repetition"
+        ],
+        "palette": [
+          "#1A0F0D",
+          "#5C2E26",
+          "#8B4738",
+          "#FFCC99"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Tense Anticipation",
+            "intensity": 0.15,
+            "colorHint": "#1a0f0d",
+            "keywords": [],
+            "start": 0
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Controlled Aggression",
+            "intensity": 0.68,
+            "colorHint": "#5c2e26",
+            "keywords": [
+              {
+                "word": "ugly",
+                "emotion": "Uncomfortable Honesty",
+                "imageryPrompt": "A dim gym light flickering over a pair of hands gripping heavy iron, skin flushed with sweat, the texture of cold metal and rough concrete floor."
+              },
+              {
+                "word": "trust",
+                "emotion": "Relentless Faith",
+                "imageryPrompt": "Close-up of ink drying on a logbook page next to a calloused thumb, surrounded by shadows that represent doubt being cast aside."
+              }
+            ],
+            "start": 12.14
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Overwhelming Pressure",
+            "intensity": 0.85,
+            "colorHint": "#8b4738",
+            "keywords": [
+              {
+                "word": "burns",
+                "emotion": "Intense Heat",
+                "imageryPrompt": "A heartbeat visualized as a glowing ember inside the chest cavity, radiating heat that turns sweat into steam in a dark room."
+              },
+              {
+                "word": "pressure",
+                "emotion": "Crushing Weight",
+                "imageryPrompt": "Heavy steel plates stacked high creating a tunnel of darkness where only the silhouette of a determined figure stands, shoulders bowing under immense load."
+              }
+            ],
+            "start": 49.24
+          },
+          {
+            "name": "Bridge 1",
+            "emotion": "Meditative Focus",
+            "intensity": 0.72,
+            "colorHint": "#5c2e26",
+            "keywords": [
+              {
+                "word": "quiet",
+                "emotion": "Deep Silence",
+                "imageryPrompt": "The sudden cessation of background noise as a barbell drops, leaving only the sound of heavy breathing and the rhythmic thud of feet on rubber mats."
+              },
+              {
+                "word": "truth",
+                "emotion": "Revelatory Clarity",
+                "imageryPrompt": "Steel cables under tension reflecting cold light in a dark warehouse, symbolizing unshakeable reality amidst internal chaos."
+              }
+            ],
+            "start": 69.08
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Relentless Drive",
+            "intensity": 0.78,
+            "colorHint": "#6d3b35",
+            "keywords": [
+              {
+                "word": "ignore",
+                "emotion": "Willful Dismissal",
+                "imageryPrompt": "A mental filter overlaying a chaotic room of distractions, leaving only the sharp focus on a single rep being completed."
+              },
+              {
+                "word": "dangerous",
+                "emotion": "Fierce Ambition",
+                "imageryPrompt": "Shadows stretching long across gym equipment as an athlete pushes beyond known limits, eyes narrowed in predatory determination."
+              }
+            ],
+            "start": 111.96
+          },
+          {
+            "name": "Chorus 2",
+            "emotion": "Sustained Intensity",
+            "intensity": 0.85,
+            "colorHint": "#ffcc99",
+            "keywords": [],
+            "start": 128.78
+          },
+          {
+            "name": "Bridge 2",
+            "emotion": "Defiant Resilience",
+            "intensity": 0.81,
+            "colorHint": "#5c2e26",
+            "keywords": [
+              {
+                "word": "discipline",
+                "emotion": "Stoic Strength",
+                "imageryPrompt": "A cracked concrete floor reflecting a single determined eye, surrounded by the ghostly echoes of past failures that are being stepped over."
+              },
+              {
+                "word": "storms",
+                "emotion": "Chaos Management",
+                "imageryPrompt": "Internal turbulence visualized as swirling dark clouds above a grounded figure holding an iron bar steady against gale-force winds inside the gym."
+              }
+            ],
+            "start": 138.76
+          },
+          {
+            "name": "Drop",
+            "emotion": "Cathartic Release",
+            "intensity": 0.96,
+            "colorHint": "#ffcc99",
+            "keywords": [
+              {
+                "word": "pressure",
+                "emotion": "Explosive Force",
+                "imageryPrompt": "The moment the chest compresses fully under a squat rack, veins popping like tectonic plates shifting in slow motion against dark skin."
+              }
+            ],
+            "start": 233.58
+          },
+          {
+            "name": "Outro",
+            "emotion": "Fading Determination",
+            "intensity": 0.25,
+            "colorHint": "#1a0f0d",
+            "keywords": [
+              {
+                "word": "crown",
+                "emotion": "Self-Crowned Victory",
+                "imageryPrompt": "The gleam of a medal made not of gold but of calluses and sweat, resting on the head as darkness slowly returns to the gym."
+              }
+            ],
+            "start": 241.54
+          }
+        ],
+        "keywords": [
+          {
+            "word": "pressure",
+            "emotion": "Crushing Weight",
+            "imageryPrompt": "Heavy steel plates stacked high creating a tunnel of darkness where only the silhouette of a determined figure stands, shoulders bowing under immense load."
+          },
+          {
+            "word": "burns",
+            "emotion": "Intense Heat",
+            "imageryPrompt": "A heartbeat visualized as a glowing ember inside the chest cavity, radiating heat that turns sweat into steam in a dark room."
+          },
+          {
+            "word": "discipline",
+            "emotion": "Stoic Strength",
+            "imageryPrompt": "A cracked concrete floor reflecting a single determined eye, surrounded by the ghostly echoes of past failures that are being stepped over."
+          },
+          {
+            "word": "ugly",
+            "emotion": "Uncomfortable Honesty",
+            "imageryPrompt": "A dim gym light flickering over a pair of hands gripping heavy iron, skin flushed with sweat, the texture of cold metal and rough concrete floor."
+          },
+          {
+            "word": "dangerous",
+            "emotion": "Fierce Ambition",
+            "imageryPrompt": "Shadows stretching long across gym equipment as an athlete pushes beyond known limits, eyes narrowed in predatory determination."
+          },
+          {
+            "word": "trust",
+            "emotion": "Relentless Faith",
+            "imageryPrompt": "Close-up of ink drying on a logbook page next to a calloused thumb, surrounded by shadows that represent doubt being cast aside."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

@@ -1,0 +1,120 @@
+{
+  "analysis": {
+    "summary": "A sultry, hypnotic Dirty South R&B track blending English and Southeast Asian languages to depict a seductive night in an international club where bodies move together on deep basslines.",
+    "overallMood": "Sultry, Seductive, Hypnotic",
+    "themes": [
+      "International Desire",
+      "Body Talk",
+      "Loss of Control",
+      "Cultural Fusion",
+      "Late Night Sin"
+    ],
+    "palette": [
+      "#1a0f2e",
+      "#ff3c69",
+      "#d4af37",
+      "#580c0c"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Whispered curiosity and tactile anticipation as the listener leans in to hear a secret.",
+        "intensity": 0.88,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "A close-up of two silhouettes standing inches apart in dim red lighting, steam rising from skin touching skin, shallow depth of field focusing on the tension between them.",
+        "start": 3.6
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Confident ownership and fiery invitation to join a worldwide dance floor.",
+        "intensity": 0.84,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A woman in shimmering gold attire dancing alone on a dark stage with spotlights cutting through haze, sweat glistening like liquid light, vibrant energy radiating outward.",
+        "start": 28.48
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Escalating heat and the dissolution of boundaries between two bodies.",
+        "intensity": 0.68,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "Two figures locked in a slow-motion embrace against a backdrop of blurred city lights at night, sweat mixing on skin, intimate shadows stretching across the floor.",
+        "start": 61.48
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Cathartic release and overwhelming sensory overload as secrets are spilled.",
+        "intensity": 0.45,
+        "colorHint": "#d4af37",
+        "imageryPrompt": "A wide shot of a packed dance floor where hundreds of bodies merge into one glowing mass under strobe lights, heat waves distorting the air above the crowd.",
+        "start": 138.98
+      },
+      {
+        "name": "Drop",
+        "emotion": "Rhythmic abandon and bass-driven trance state.",
+        "intensity": 0.43,
+        "colorHint": "#580c0c",
+        "imageryPrompt": "Abstract visualization of massive sub-bass waves shaking the ground, dark voids illuminated by pulsing neon veins, figures moving as a single fluid organism in total darkness.",
+        "start": 141.72
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Global connection and shared experience across different cities.",
+        "intensity": 0.24,
+        "colorHint": "#1a0f2e",
+        "imageryPrompt": "A split view connecting a nightclub in Ho Chi Minh City with one in Brooklyn via digital thread, warm orange hues bleeding into cool blue tones representing the fusion of locations.",
+        "start": 153.55
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Intense vulnerability and surrender to the music's pull.",
+        "intensity": 0.27,
+        "colorHint": "#ff3c69",
+        "imageryPrompt": "A single spotlight on a couple spinning slowly in zero gravity, their faces reflecting each other perfectly, surrounded by floating embers of gold and pink light.",
+        "start": 208.4
+      },
+      {
+        "name": "Outro",
+        "emotion": "Lingering satisfaction and the echo of fame.",
+        "intensity": 0.15,
+        "colorHint": "#1a0f2e",
+        "imageryPrompt": "Silhouettes walking away into a deep purple dawn, leaving footprints that glow faintly on the wet pavement, fading atmosphere.",
+        "start": 208.4
+      }
+    ],
+    "keywords": [
+      {
+        "word": "sweat",
+        "emotion": "Physical intimacy and heat.",
+        "imageryPrompt": "Glistening droplets of perspiration catching golden stage lights on pale skin, texture rich with moisture and warmth."
+      },
+      {
+        "word": "rhythm",
+        "emotion": "Hypnotic drive and pulse.",
+        "imageryPrompt": "Visualized sound waves forming a rhythmic heartbeat pattern in the air, glowing red veins pulsing through a dark room."
+      },
+      {
+        "word": "curves",
+        "emotion": "Admiration and desire.",
+        "imageryPrompt": "Smooth lines of hips accentuated by low lighting, casting soft shadows that suggest movement and allure without revealing too much."
+      },
+      {
+        "word": "sin",
+        "emotion": "Forbidden thrill and transgression.",
+        "imageryPrompt": "A shadowy alleyway lit only by flickering neon signs, creating a sense of illicit pleasure in the darkness."
+      },
+      {
+        "word": "control",
+        "emotion": "Loss of will to music.",
+        "imageryPrompt": "Hands flailing slightly as if caught in an invisible current, eyes rolling back under bright disco lights."
+      },
+      {
+        "word": "touch",
+        "emotion": "Sensory connection and grounding.",
+        "imageryPrompt": "Fingers tracing the spine of a partner with high detail on skin texture, warm amber glow highlighting the point of contact."
+      }
+    ]
+  },
+  "styleHint": "90s-inspired Dirty South R&B club track with chopped and screwed vocal moments, massive sub bass, wobbly low-end, and trunk-rattling 808s. Swinging half-time groove blending hypnotic reggaeton-flavored percussion with classic southern clap patterns, hi-hat rolls, and deep kick thump. Smooth, sultry female lead with naughty, flirtatious topline and confident English–Vietnamese phrases, plus charismatic male call-and-response and occasional Dominican Spanish ad-libs. Lush pads, glossy keys, and atmospheric synth bells wrapped around warm cello and viola lines that glide in the background for a sensual, cinematic feel. Vocal chops, tape-slow breakdowns, and pitch-bent hooks heighten the seductive, late-night energy. Designed for a packed Ho Chi Minh City dance club with lights low, bodies close, and a mesmerizing, sexy, tantalizing vibe all night.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:14:18.770Z"
+}

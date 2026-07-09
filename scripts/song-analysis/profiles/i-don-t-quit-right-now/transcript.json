@@ -1,0 +1,3974 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.928,
+      "text": "Yeah, yeah,",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Yeah,"
+        },
+        {
+          "t": 0.24,
+          "text": "yeah,"
+        }
+      ]
+    },
+    {
+      "start": 2.78,
+      "end": 3.328,
+      "text": "uh,",
+      "words": [
+        {
+          "t": 2.78,
+          "text": "uh,"
+        }
+      ]
+    },
+    {
+      "start": 4.56,
+      "end": 4.672,
+      "text": "uh,",
+      "words": [
+        {
+          "t": 4.56,
+          "text": "uh,"
+        }
+      ]
+    },
+    {
+      "start": 5.18,
+      "end": 5.28,
+      "text": "yeah,",
+      "words": [
+        {
+          "t": 5.18,
+          "text": "yeah,"
+        }
+      ]
+    },
+    {
+      "start": 6.48,
+      "end": 6.592,
+      "text": "uh",
+      "words": [
+        {
+          "t": 6.48,
+          "text": "uh"
+        }
+      ]
+    },
+    {
+      "start": 9.52,
+      "end": 12.16,
+      "text": "Beat drop, shoes tied, hood up, door slammed",
+      "words": [
+        {
+          "t": 9.52,
+          "text": "Beat"
+        },
+        {
+          "t": 9.62,
+          "text": "drop,"
+        },
+        {
+          "t": 10.26,
+          "text": "shoes"
+        },
+        {
+          "t": 10.56,
+          "text": "tied,"
+        },
+        {
+          "t": 11.1,
+          "text": "hood"
+        },
+        {
+          "t": 11.26,
+          "text": "up,"
+        },
+        {
+          "t": 11.62,
+          "text": "door"
+        },
+        {
+          "t": 11.88,
+          "text": "slammed"
+        }
+      ]
+    },
+    {
+      "start": 12.16,
+      "end": 14.94,
+      "text": "Still half-tied, but I move like a grown man",
+      "words": [
+        {
+          "t": 12.16,
+          "text": "Still"
+        },
+        {
+          "t": 12.7,
+          "text": "half"
+        },
+        {
+          "t": 13.1,
+          "text": "-tied,"
+        },
+        {
+          "t": 13.5,
+          "text": "but"
+        },
+        {
+          "t": 13.66,
+          "text": "I"
+        },
+        {
+          "t": 13.78,
+          "text": "move"
+        },
+        {
+          "t": 13.98,
+          "text": "like"
+        },
+        {
+          "t": 14.26,
+          "text": "a"
+        },
+        {
+          "t": 14.4,
+          "text": "grown"
+        },
+        {
+          "t": 14.64,
+          "text": "man"
+        }
+      ]
+    },
+    {
+      "start": 14.94,
+      "end": 17.16,
+      "text": "No speech, no height, no coach in my ear",
+      "words": [
+        {
+          "t": 14.94,
+          "text": "No"
+        },
+        {
+          "t": 15.18,
+          "text": "speech,"
+        },
+        {
+          "t": 15.68,
+          "text": "no"
+        },
+        {
+          "t": 15.82,
+          "text": "height,"
+        },
+        {
+          "t": 16.16,
+          "text": "no"
+        },
+        {
+          "t": 16.28,
+          "text": "coach"
+        },
+        {
+          "t": 16.52,
+          "text": "in"
+        },
+        {
+          "t": 16.76,
+          "text": "my"
+        },
+        {
+          "t": 16.88,
+          "text": "ear"
+        }
+      ]
+    },
+    {
+      "start": 17.16,
+      "end": 19.62,
+      "text": "Just that old weak voice that I came here to kill",
+      "words": [
+        {
+          "t": 17.16,
+          "text": "Just"
+        },
+        {
+          "t": 17.34,
+          "text": "that"
+        },
+        {
+          "t": 17.54,
+          "text": "old"
+        },
+        {
+          "t": 17.8,
+          "text": "weak"
+        },
+        {
+          "t": 18.02,
+          "text": "voice"
+        },
+        {
+          "t": 18.38,
+          "text": "that"
+        },
+        {
+          "t": 18.6,
+          "text": "I"
+        },
+        {
+          "t": 18.72,
+          "text": "came"
+        },
+        {
+          "t": 18.98,
+          "text": "here"
+        },
+        {
+          "t": 19.22,
+          "text": "to"
+        },
+        {
+          "t": 19.34,
+          "text": "kill"
+        }
+      ]
+    },
+    {
+      "start": 19.73,
+      "end": 21.86,
+      "text": "I don't feel ready, that's the point of it",
+      "words": [
+        {
+          "t": 19.73,
+          "text": "I"
+        },
+        {
+          "t": 20.18,
+          "text": "don't"
+        },
+        {
+          "t": 20.32,
+          "text": "feel"
+        },
+        {
+          "t": 20.52,
+          "text": "ready,"
+        },
+        {
+          "t": 20.94,
+          "text": "that's"
+        },
+        {
+          "t": 21.08,
+          "text": "the"
+        },
+        {
+          "t": 21.18,
+          "text": "point"
+        },
+        {
+          "t": 21.52,
+          "text": "of"
+        },
+        {
+          "t": 21.7,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 21.86,
+      "end": 24.36,
+      "text": "Same cold walk, same joints feelin' stiff",
+      "words": [
+        {
+          "t": 21.86,
+          "text": "Same"
+        },
+        {
+          "t": 22.28,
+          "text": "cold"
+        },
+        {
+          "t": 22.68,
+          "text": "walk,"
+        },
+        {
+          "t": 23.06,
+          "text": "same"
+        },
+        {
+          "t": 23.26,
+          "text": "joints"
+        },
+        {
+          "t": 23.64,
+          "text": "feelin'"
+        },
+        {
+          "t": 24.12,
+          "text": "stiff"
+        }
+      ]
+    },
+    {
+      "start": 24.39,
+      "end": 27.0,
+      "text": "Gym lights buzzin', bag on the floor",
+      "words": [
+        {
+          "t": 24.39,
+          "text": "Gym"
+        },
+        {
+          "t": 25.14,
+          "text": "lights"
+        },
+        {
+          "t": 25.42,
+          "text": "buzzin',"
+        },
+        {
+          "t": 25.9,
+          "text": "bag"
+        },
+        {
+          "t": 26.32,
+          "text": "on"
+        },
+        {
+          "t": 26.62,
+          "text": "the"
+        },
+        {
+          "t": 26.76,
+          "text": "floor"
+        }
+      ]
+    },
+    {
+      "start": 27.0,
+      "end": 29.44,
+      "text": "I'm not in the mood, so I need it more",
+      "words": [
+        {
+          "t": 27.0,
+          "text": "I'm"
+        },
+        {
+          "t": 27.44,
+          "text": "not"
+        },
+        {
+          "t": 27.66,
+          "text": "in"
+        },
+        {
+          "t": 27.86,
+          "text": "the"
+        },
+        {
+          "t": 28.02,
+          "text": "mood,"
+        },
+        {
+          "t": 28.44,
+          "text": "so"
+        },
+        {
+          "t": 28.56,
+          "text": "I"
+        },
+        {
+          "t": 28.8,
+          "text": "need"
+        },
+        {
+          "t": 29.08,
+          "text": "it"
+        },
+        {
+          "t": 29.22,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 29.44,
+      "end": 31.96,
+      "text": "First set ugly, second set clean",
+      "words": [
+        {
+          "t": 29.44,
+          "text": "First"
+        },
+        {
+          "t": 30.06,
+          "text": "set"
+        },
+        {
+          "t": 30.4,
+          "text": "ugly,"
+        },
+        {
+          "t": 30.88,
+          "text": "second"
+        },
+        {
+          "t": 31.32,
+          "text": "set"
+        },
+        {
+          "t": 31.6,
+          "text": "clean"
+        }
+      ]
+    },
+    {
+      "start": 31.96,
+      "end": 34.42,
+      "text": "Third set lookin' like I might get mean",
+      "words": [
+        {
+          "t": 31.96,
+          "text": "Third"
+        },
+        {
+          "t": 32.44,
+          "text": "set"
+        },
+        {
+          "t": 32.82,
+          "text": "lookin'"
+        },
+        {
+          "t": 33.3,
+          "text": "like"
+        },
+        {
+          "t": 33.42,
+          "text": "I"
+        },
+        {
+          "t": 33.58,
+          "text": "might"
+        },
+        {
+          "t": 33.8,
+          "text": "get"
+        },
+        {
+          "t": 34.08,
+          "text": "mean"
+        }
+      ]
+    },
+    {
+      "start": 34.42,
+      "end": 36.92,
+      "text": "Hands on the bar, quick sharp white",
+      "words": [
+        {
+          "t": 34.42,
+          "text": "Hands"
+        },
+        {
+          "t": 35.1,
+          "text": "on"
+        },
+        {
+          "t": 35.28,
+          "text": "the"
+        },
+        {
+          "t": 35.4,
+          "text": "bar,"
+        },
+        {
+          "t": 35.84,
+          "text": "quick"
+        },
+        {
+          "t": 36.26,
+          "text": "sharp"
+        },
+        {
+          "t": 36.56,
+          "text": "white"
+        }
+      ]
+    },
+    {
+      "start": 36.92,
+      "end": 39.46,
+      "text": "I don't trust motivation, I trust what I write",
+      "words": [
+        {
+          "t": 36.92,
+          "text": "I"
+        },
+        {
+          "t": 37.14,
+          "text": "don't"
+        },
+        {
+          "t": 37.38,
+          "text": "trust"
+        },
+        {
+          "t": 37.48,
+          "text": "motivation,"
+        },
+        {
+          "t": 38.32,
+          "text": "I"
+        },
+        {
+          "t": 38.42,
+          "text": "trust"
+        },
+        {
+          "t": 38.7,
+          "text": "what"
+        },
+        {
+          "t": 38.98,
+          "text": "I"
+        },
+        {
+          "t": 39.16,
+          "text": "write"
+        }
+      ]
+    },
+    {
+      "start": 39.46,
+      "end": 41.78,
+      "text": "Logbook open, numbers in ink",
+      "words": [
+        {
+          "t": 39.46,
+          "text": "Logbook"
+        },
+        {
+          "t": 40.3,
+          "text": "open,"
+        },
+        {
+          "t": 40.84,
+          "text": "numbers"
+        },
+        {
+          "t": 41.28,
+          "text": "in"
+        },
+        {
+          "t": 41.46,
+          "text": "ink"
+        }
+      ]
+    },
+    {
+      "start": 41.78,
+      "end": 44.18,
+      "text": "Either add one rep or adjust how I think",
+      "words": [
+        {
+          "t": 41.78,
+          "text": "Either"
+        },
+        {
+          "t": 42.14,
+          "text": "add"
+        },
+        {
+          "t": 42.48,
+          "text": "one"
+        },
+        {
+          "t": 42.74,
+          "text": "rep"
+        },
+        {
+          "t": 43.1,
+          "text": "or"
+        },
+        {
+          "t": 43.34,
+          "text": "adjust"
+        },
+        {
+          "t": 43.58,
+          "text": "how"
+        },
+        {
+          "t": 43.8,
+          "text": "I"
+        },
+        {
+          "t": 43.96,
+          "text": "think"
+        }
+      ]
+    },
+    {
+      "start": 44.18,
+      "end": 46.72,
+      "text": "I'm not here flexin', I'm not here cute",
+      "words": [
+        {
+          "t": 44.18,
+          "text": "I'm"
+        },
+        {
+          "t": 44.5,
+          "text": "not"
+        },
+        {
+          "t": 44.64,
+          "text": "here"
+        },
+        {
+          "t": 44.92,
+          "text": "flexin',"
+        },
+        {
+          "t": 45.68,
+          "text": "I'm"
+        },
+        {
+          "t": 45.96,
+          "text": "not"
+        },
+        {
+          "t": 46.16,
+          "text": "here"
+        },
+        {
+          "t": 46.46,
+          "text": "cute"
+        }
+      ]
+    },
+    {
+      "start": 46.72,
+      "end": 49.26,
+      "text": "I came to tell myself to stop, shut up and move",
+      "words": [
+        {
+          "t": 46.72,
+          "text": "I"
+        },
+        {
+          "t": 46.92,
+          "text": "came"
+        },
+        {
+          "t": 47.1,
+          "text": "to"
+        },
+        {
+          "t": 47.22,
+          "text": "tell"
+        },
+        {
+          "t": 47.42,
+          "text": "myself"
+        },
+        {
+          "t": 47.6,
+          "text": "to"
+        },
+        {
+          "t": 47.92,
+          "text": "stop,"
+        },
+        {
+          "t": 48.26,
+          "text": "shut"
+        },
+        {
+          "t": 48.5,
+          "text": "up"
+        },
+        {
+          "t": 48.78,
+          "text": "and"
+        },
+        {
+          "t": 49.02,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 49.26,
+      "end": 52.38,
+      "text": "I keep pushin' to the arms, lock up to the lungs",
+      "words": [
+        {
+          "t": 49.26,
+          "text": "I"
+        },
+        {
+          "t": 49.82,
+          "text": "keep"
+        },
+        {
+          "t": 50.2,
+          "text": "pushin'"
+        },
+        {
+          "t": 50.64,
+          "text": "to"
+        },
+        {
+          "t": 50.72,
+          "text": "the"
+        },
+        {
+          "t": 50.88,
+          "text": "arms,"
+        },
+        {
+          "t": 51.24,
+          "text": "lock"
+        },
+        {
+          "t": 51.5,
+          "text": "up"
+        },
+        {
+          "t": 51.648,
+          "text": "to"
+        },
+        {
+          "t": 52.0,
+          "text": "the"
+        },
+        {
+          "t": 52.14,
+          "text": "lungs"
+        }
+      ]
+    },
+    {
+      "start": 52.38,
+      "end": 54.82,
+      "text": "Burns high in the heartbeat, jump to the sweat",
+      "words": [
+        {
+          "t": 52.38,
+          "text": "Burns"
+        },
+        {
+          "t": 52.66,
+          "text": "high"
+        },
+        {
+          "t": 53.04,
+          "text": "in"
+        },
+        {
+          "t": 53.24,
+          "text": "the"
+        },
+        {
+          "t": 53.36,
+          "text": "heartbeat,"
+        },
+        {
+          "t": 53.82,
+          "text": "jump"
+        },
+        {
+          "t": 54.24,
+          "text": "to"
+        },
+        {
+          "t": 54.44,
+          "text": "the"
+        },
+        {
+          "t": 54.54,
+          "text": "sweat"
+        }
+      ]
+    },
+    {
+      "start": 54.82,
+      "end": 56.54,
+      "text": "Drip down in the vision blurb",
+      "words": [
+        {
+          "t": 54.82,
+          "text": "Drip"
+        },
+        {
+          "t": 55.14,
+          "text": "down"
+        },
+        {
+          "t": 55.46,
+          "text": "in"
+        },
+        {
+          "t": 55.7,
+          "text": "the"
+        },
+        {
+          "t": 55.8,
+          "text": "vision"
+        },
+        {
+          "t": 56.1,
+          "text": "blurb"
+        }
+      ]
+    },
+    {
+      "start": 56.54,
+      "end": 58.88,
+      "text": "I don't care how bad that pressure hurt",
+      "words": [
+        {
+          "t": 56.54,
+          "text": "I"
+        },
+        {
+          "t": 56.74,
+          "text": "don't"
+        },
+        {
+          "t": 57.12,
+          "text": "care"
+        },
+        {
+          "t": 57.28,
+          "text": "how"
+        },
+        {
+          "t": 57.58,
+          "text": "bad"
+        },
+        {
+          "t": 57.96,
+          "text": "that"
+        },
+        {
+          "t": 58.22,
+          "text": "pressure"
+        },
+        {
+          "t": 58.56,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 58.88,
+      "end": 59.42,
+      "text": "Another day, another day, another day",
+      "words": [
+        {
+          "t": 58.88,
+          "text": "Another"
+        },
+        {
+          "t": 59.42,
+          "text": "day,"
+        },
+        {
+          "t": 59.42,
+          "text": "another"
+        },
+        {
+          "t": 59.42,
+          "text": "day,"
+        },
+        {
+          "t": 59.42,
+          "text": "another"
+        },
+        {
+          "t": 59.42,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 59.44,
+      "end": 61.02,
+      "text": "Another set, another bait, another war",
+      "words": [
+        {
+          "t": 59.44,
+          "text": "Another"
+        },
+        {
+          "t": 59.58,
+          "text": "set,"
+        },
+        {
+          "t": 59.8,
+          "text": "another"
+        },
+        {
+          "t": 60.04,
+          "text": "bait,"
+        },
+        {
+          "t": 60.42,
+          "text": "another"
+        },
+        {
+          "t": 60.62,
+          "text": "war"
+        }
+      ]
+    },
+    {
+      "start": 61.02,
+      "end": 63.44,
+      "text": "Another voice in my head I ignore",
+      "words": [
+        {
+          "t": 61.02,
+          "text": "Another"
+        },
+        {
+          "t": 61.66,
+          "text": "voice"
+        },
+        {
+          "t": 62.28,
+          "text": "in"
+        },
+        {
+          "t": 62.52,
+          "text": "my"
+        },
+        {
+          "t": 62.64,
+          "text": "head"
+        },
+        {
+          "t": 62.94,
+          "text": "I"
+        },
+        {
+          "t": 63.14,
+          "text": "ignore"
+        }
+      ]
+    },
+    {
+      "start": 63.52,
+      "end": 66.46,
+      "text": "If I came this far, I ain't slowin' down",
+      "words": [
+        {
+          "t": 63.52,
+          "text": "If"
+        },
+        {
+          "t": 64.22,
+          "text": "I"
+        },
+        {
+          "t": 64.5,
+          "text": "came"
+        },
+        {
+          "t": 64.78,
+          "text": "this"
+        },
+        {
+          "t": 65.04,
+          "text": "far,"
+        },
+        {
+          "t": 65.44,
+          "text": "I"
+        },
+        {
+          "t": 65.68,
+          "text": "ain't"
+        },
+        {
+          "t": 65.74,
+          "text": "slowin'"
+        },
+        {
+          "t": 66.24,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 66.46,
+      "end": 69.1,
+      "text": "I don't stop, I don't quit right now",
+      "words": [
+        {
+          "t": 66.46,
+          "text": "I"
+        },
+        {
+          "t": 66.7,
+          "text": "don't"
+        },
+        {
+          "t": 66.98,
+          "text": "stop,"
+        },
+        {
+          "t": 67.32,
+          "text": "I"
+        },
+        {
+          "t": 67.56,
+          "text": "don't"
+        },
+        {
+          "t": 68.2,
+          "text": "quit"
+        },
+        {
+          "t": 68.46,
+          "text": "right"
+        },
+        {
+          "t": 68.74,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 69.1,
+      "end": 71.36,
+      "text": "Yo, bitch feel heavy, good, let it be",
+      "words": [
+        {
+          "t": 69.1,
+          "text": "Yo,"
+        },
+        {
+          "t": 69.4,
+          "text": "bitch"
+        },
+        {
+          "t": 69.72,
+          "text": "feel"
+        },
+        {
+          "t": 69.98,
+          "text": "heavy,"
+        },
+        {
+          "t": 70.4,
+          "text": "good,"
+        },
+        {
+          "t": 70.74,
+          "text": "let"
+        },
+        {
+          "t": 70.9,
+          "text": "it"
+        },
+        {
+          "t": 71.1,
+          "text": "be"
+        }
+      ]
+    },
+    {
+      "start": 71.36,
+      "end": 73.9,
+      "text": "That's the same way you standin' between me and me",
+      "words": [
+        {
+          "t": 71.36,
+          "text": "That's"
+        },
+        {
+          "t": 71.84,
+          "text": "the"
+        },
+        {
+          "t": 71.92,
+          "text": "same"
+        },
+        {
+          "t": 72.26,
+          "text": "way"
+        },
+        {
+          "t": 72.52,
+          "text": "you"
+        },
+        {
+          "t": 72.6,
+          "text": "standin'"
+        },
+        {
+          "t": 72.92,
+          "text": "between"
+        },
+        {
+          "t": 73.04,
+          "text": "me"
+        },
+        {
+          "t": 73.44,
+          "text": "and"
+        },
+        {
+          "t": 73.66,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 73.9,
+      "end": 76.62,
+      "text": "Two plates talkin' like, you sure you him?",
+      "words": [
+        {
+          "t": 73.9,
+          "text": "Two"
+        },
+        {
+          "t": 74.34,
+          "text": "plates"
+        },
+        {
+          "t": 74.68,
+          "text": "talkin'"
+        },
+        {
+          "t": 75.12,
+          "text": "like,"
+        },
+        {
+          "t": 75.38,
+          "text": "you"
+        },
+        {
+          "t": 75.52,
+          "text": "sure"
+        },
+        {
+          "t": 75.88,
+          "text": "you"
+        },
+        {
+          "t": 76.16,
+          "text": "him?"
+        }
+      ]
+    },
+    {
+      "start": 76.76,
+      "end": 79.04,
+      "text": "I unrack slow with a shark fin grin",
+      "words": [
+        {
+          "t": 76.76,
+          "text": "I"
+        },
+        {
+          "t": 76.82,
+          "text": "unrack"
+        },
+        {
+          "t": 77.48,
+          "text": "slow"
+        },
+        {
+          "t": 77.74,
+          "text": "with"
+        },
+        {
+          "t": 78.04,
+          "text": "a"
+        },
+        {
+          "t": 78.14,
+          "text": "shark"
+        },
+        {
+          "t": 78.46,
+          "text": "fin"
+        },
+        {
+          "t": 78.7,
+          "text": "grin"
+        }
+      ]
+    },
+    {
+      "start": 79.19,
+      "end": 81.6,
+      "text": "Elbows tucked, chest tight, breath held",
+      "words": [
+        {
+          "t": 79.19,
+          "text": "Elbows"
+        },
+        {
+          "t": 79.94,
+          "text": "tucked,"
+        },
+        {
+          "t": 80.36,
+          "text": "chest"
+        },
+        {
+          "t": 80.6,
+          "text": "tight,"
+        },
+        {
+          "t": 80.94,
+          "text": "breath"
+        },
+        {
+          "t": 81.18,
+          "text": "held"
+        }
+      ]
+    },
+    {
+      "start": 81.6,
+      "end": 84.02,
+      "text": "World get quiet when the barbell fell",
+      "words": [
+        {
+          "t": 81.6,
+          "text": "World"
+        },
+        {
+          "t": 82.16,
+          "text": "get"
+        },
+        {
+          "t": 82.38,
+          "text": "quiet"
+        },
+        {
+          "t": 82.76,
+          "text": "when"
+        },
+        {
+          "t": 83.02,
+          "text": "the"
+        },
+        {
+          "t": 83.16,
+          "text": "barbell"
+        },
+        {
+          "t": 83.6,
+          "text": "fell"
+        }
+      ]
+    },
+    {
+      "start": 84.14,
+      "end": 86.52,
+      "text": "Touch and press, no panic, no bounce",
+      "words": [
+        {
+          "t": 84.14,
+          "text": "Touch"
+        },
+        {
+          "t": 84.64,
+          "text": "and"
+        },
+        {
+          "t": 84.82,
+          "text": "press,"
+        },
+        {
+          "t": 85.2,
+          "text": "no"
+        },
+        {
+          "t": 85.34,
+          "text": "panic,"
+        },
+        {
+          "t": 85.92,
+          "text": "no"
+        },
+        {
+          "t": 86.1,
+          "text": "bounce"
+        }
+      ]
+    },
+    {
+      "start": 86.52,
+      "end": 89.02,
+      "text": "That's one more reason I don't count myself out",
+      "words": [
+        {
+          "t": 86.52,
+          "text": "That's"
+        },
+        {
+          "t": 86.76,
+          "text": "one"
+        },
+        {
+          "t": 87.02,
+          "text": "more"
+        },
+        {
+          "t": 87.4,
+          "text": "reason"
+        },
+        {
+          "t": 87.74,
+          "text": "I"
+        },
+        {
+          "t": 87.94,
+          "text": "don't"
+        },
+        {
+          "t": 88.14,
+          "text": "count"
+        },
+        {
+          "t": 88.24,
+          "text": "myself"
+        },
+        {
+          "t": 88.58,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 89.44,
+      "end": 91.44,
+      "text": "Squats on deck, legs already mad",
+      "words": [
+        {
+          "t": 89.44,
+          "text": "Squats"
+        },
+        {
+          "t": 89.7,
+          "text": "on"
+        },
+        {
+          "t": 89.88,
+          "text": "deck,"
+        },
+        {
+          "t": 90.26,
+          "text": "legs"
+        },
+        {
+          "t": 90.58,
+          "text": "already"
+        },
+        {
+          "t": 90.98,
+          "text": "mad"
+        }
+      ]
+    },
+    {
+      "start": 91.44,
+      "end": 93.94,
+      "text": "But I don't negotiate with habits I had",
+      "words": [
+        {
+          "t": 91.44,
+          "text": "But"
+        },
+        {
+          "t": 91.82,
+          "text": "I"
+        },
+        {
+          "t": 92.04,
+          "text": "don't"
+        },
+        {
+          "t": 92.2,
+          "text": "negotiate"
+        },
+        {
+          "t": 92.58,
+          "text": "with"
+        },
+        {
+          "t": 92.92,
+          "text": "habits"
+        },
+        {
+          "t": 93.28,
+          "text": "I"
+        },
+        {
+          "t": 93.6,
+          "text": "had"
+        }
+      ]
+    },
+    {
+      "start": 93.94,
+      "end": 96.46,
+      "text": "Deep breath, brace, spine locked in",
+      "words": [
+        {
+          "t": 93.94,
+          "text": "Deep"
+        },
+        {
+          "t": 94.46,
+          "text": "breath,"
+        },
+        {
+          "t": 94.96,
+          "text": "brace,"
+        },
+        {
+          "t": 95.48,
+          "text": "spine"
+        },
+        {
+          "t": 95.78,
+          "text": "locked"
+        },
+        {
+          "t": 96.08,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 96.7,
+      "end": 98.68,
+      "text": "Ain't in the hole, but I drive through it",
+      "words": [
+        {
+          "t": 96.7,
+          "text": "Ain't"
+        },
+        {
+          "t": 97.1,
+          "text": "in"
+        },
+        {
+          "t": 97.26,
+          "text": "the"
+        },
+        {
+          "t": 97.38,
+          "text": "hole,"
+        },
+        {
+          "t": 97.76,
+          "text": "but"
+        },
+        {
+          "t": 97.9,
+          "text": "I"
+        },
+        {
+          "t": 98.02,
+          "text": "drive"
+        },
+        {
+          "t": 98.3,
+          "text": "through"
+        },
+        {
+          "t": 98.52,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 99.06,
+      "end": 101.14,
+      "text": "Deadlift, they got truth in steel",
+      "words": [
+        {
+          "t": 99.06,
+          "text": "Deadlift,"
+        },
+        {
+          "t": 99.88,
+          "text": "they"
+        },
+        {
+          "t": 100.08,
+          "text": "got"
+        },
+        {
+          "t": 100.36,
+          "text": "truth"
+        },
+        {
+          "t": 100.68,
+          "text": "in"
+        },
+        {
+          "t": 100.86,
+          "text": "steel"
+        }
+      ]
+    },
+    {
+      "start": 101.14,
+      "end": 103.96,
+      "text": "You can't fake heart when the nerlin' feel real",
+      "words": [
+        {
+          "t": 101.14,
+          "text": "You"
+        },
+        {
+          "t": 101.42,
+          "text": "can't"
+        },
+        {
+          "t": 101.76,
+          "text": "fake"
+        },
+        {
+          "t": 102.02,
+          "text": "heart"
+        },
+        {
+          "t": 102.32,
+          "text": "when"
+        },
+        {
+          "t": 102.68,
+          "text": "the"
+        },
+        {
+          "t": 102.84,
+          "text": "nerlin'"
+        },
+        {
+          "t": 103.26,
+          "text": "feel"
+        },
+        {
+          "t": 103.48,
+          "text": "real"
+        }
+      ]
+    },
+    {
+      "start": 103.96,
+      "end": 106.24,
+      "text": "Boy, I don't care what excuse you brought",
+      "words": [
+        {
+          "t": 103.96,
+          "text": "Boy,"
+        },
+        {
+          "t": 104.52,
+          "text": "I"
+        },
+        {
+          "t": 104.66,
+          "text": "don't"
+        },
+        {
+          "t": 104.8,
+          "text": "care"
+        },
+        {
+          "t": 105.08,
+          "text": "what"
+        },
+        {
+          "t": 105.34,
+          "text": "excuse"
+        },
+        {
+          "t": 105.64,
+          "text": "you"
+        },
+        {
+          "t": 105.98,
+          "text": "brought"
+        }
+      ]
+    },
+    {
+      "start": 106.24,
+      "end": 108.38,
+      "text": "It only moves when your whole soul talks",
+      "words": [
+        {
+          "t": 106.24,
+          "text": "It"
+        },
+        {
+          "t": 106.46,
+          "text": "only"
+        },
+        {
+          "t": 106.7,
+          "text": "moves"
+        },
+        {
+          "t": 107.04,
+          "text": "when"
+        },
+        {
+          "t": 107.2,
+          "text": "your"
+        },
+        {
+          "t": 107.38,
+          "text": "whole"
+        },
+        {
+          "t": 107.56,
+          "text": "soul"
+        },
+        {
+          "t": 107.92,
+          "text": "talks"
+        }
+      ]
+    },
+    {
+      "start": 108.38,
+      "end": 111.98,
+      "text": "I keep pushin' to the arms, lock up to the lungs",
+      "words": [
+        {
+          "t": 108.38,
+          "text": "I"
+        },
+        {
+          "t": 108.82,
+          "text": "keep"
+        },
+        {
+          "t": 109.72,
+          "text": "pushin'"
+        },
+        {
+          "t": 110.22,
+          "text": "to"
+        },
+        {
+          "t": 110.28,
+          "text": "the"
+        },
+        {
+          "t": 110.5,
+          "text": "arms,"
+        },
+        {
+          "t": 110.84,
+          "text": "lock"
+        },
+        {
+          "t": 111.04,
+          "text": "up"
+        },
+        {
+          "t": 111.24,
+          "text": "to"
+        },
+        {
+          "t": 111.58,
+          "text": "the"
+        },
+        {
+          "t": 111.72,
+          "text": "lungs"
+        }
+      ]
+    },
+    {
+      "start": 111.98,
+      "end": 114.44,
+      "text": "Burns high in the heartbeat, jump to the sweat",
+      "words": [
+        {
+          "t": 111.98,
+          "text": "Burns"
+        },
+        {
+          "t": 112.22,
+          "text": "high"
+        },
+        {
+          "t": 112.6,
+          "text": "in"
+        },
+        {
+          "t": 112.92,
+          "text": "the"
+        },
+        {
+          "t": 112.92,
+          "text": "heartbeat,"
+        },
+        {
+          "t": 113.52,
+          "text": "jump"
+        },
+        {
+          "t": 113.82,
+          "text": "to"
+        },
+        {
+          "t": 114.04,
+          "text": "the"
+        },
+        {
+          "t": 114.18,
+          "text": "sweat"
+        }
+      ]
+    },
+    {
+      "start": 114.44,
+      "end": 116.1,
+      "text": "Drip down in the vision blurb",
+      "words": [
+        {
+          "t": 114.44,
+          "text": "Drip"
+        },
+        {
+          "t": 114.78,
+          "text": "down"
+        },
+        {
+          "t": 115.16,
+          "text": "in"
+        },
+        {
+          "t": 115.34,
+          "text": "the"
+        },
+        {
+          "t": 115.42,
+          "text": "vision"
+        },
+        {
+          "t": 115.74,
+          "text": "blurb"
+        }
+      ]
+    },
+    {
+      "start": 116.1,
+      "end": 118.52,
+      "text": "I don't care how bad that pressure hurt",
+      "words": [
+        {
+          "t": 116.1,
+          "text": "I"
+        },
+        {
+          "t": 116.3,
+          "text": "don't"
+        },
+        {
+          "t": 116.74,
+          "text": "care"
+        },
+        {
+          "t": 116.94,
+          "text": "how"
+        },
+        {
+          "t": 117.22,
+          "text": "bad"
+        },
+        {
+          "t": 117.62,
+          "text": "that"
+        },
+        {
+          "t": 117.86,
+          "text": "pressure"
+        },
+        {
+          "t": 118.24,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 118.52,
+      "end": 119.42,
+      "text": "Another set,",
+      "words": [
+        {
+          "t": 118.52,
+          "text": "Another"
+        },
+        {
+          "t": 119.06,
+          "text": "set,"
+        }
+      ]
+    },
+    {
+      "start": 119.42,
+      "end": 119.42,
+      "text": "another day,",
+      "words": [
+        {
+          "t": 119.42,
+          "text": "another"
+        },
+        {
+          "t": 119.42,
+          "text": "day,"
+        }
+      ]
+    },
+    {
+      "start": 119.42,
+      "end": 119.42,
+      "text": "another day,",
+      "words": [
+        {
+          "t": 119.42,
+          "text": "another"
+        },
+        {
+          "t": 119.42,
+          "text": "day,"
+        }
+      ]
+    },
+    {
+      "start": 119.42,
+      "end": 119.42,
+      "text": "another night",
+      "words": [
+        {
+          "t": 119.42,
+          "text": "another"
+        },
+        {
+          "t": 119.42,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 119.44,
+      "end": 120.62,
+      "text": "Another blade, another war",
+      "words": [
+        {
+          "t": 119.44,
+          "text": "Another"
+        },
+        {
+          "t": 119.6,
+          "text": "blade,"
+        },
+        {
+          "t": 120.08,
+          "text": "another"
+        },
+        {
+          "t": 120.26,
+          "text": "war"
+        }
+      ]
+    },
+    {
+      "start": 120.62,
+      "end": 123.08,
+      "text": "Another voice in my head I ignore",
+      "words": [
+        {
+          "t": 120.62,
+          "text": "Another"
+        },
+        {
+          "t": 121.22,
+          "text": "voice"
+        },
+        {
+          "t": 121.94,
+          "text": "in"
+        },
+        {
+          "t": 122.2,
+          "text": "my"
+        },
+        {
+          "t": 122.34,
+          "text": "head"
+        },
+        {
+          "t": 122.64,
+          "text": "I"
+        },
+        {
+          "t": 122.84,
+          "text": "ignore"
+        }
+      ]
+    },
+    {
+      "start": 123.09,
+      "end": 126.18,
+      "text": "If I came this far, ain't slowing down",
+      "words": [
+        {
+          "t": 123.09,
+          "text": "If"
+        },
+        {
+          "t": 123.94,
+          "text": "I"
+        },
+        {
+          "t": 124.18,
+          "text": "came"
+        },
+        {
+          "t": 124.5,
+          "text": "this"
+        },
+        {
+          "t": 124.74,
+          "text": "far,"
+        },
+        {
+          "t": 125.18,
+          "text": "ain't"
+        },
+        {
+          "t": 125.52,
+          "text": "slowing"
+        },
+        {
+          "t": 125.72,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 126.18,
+      "end": 128.8,
+      "text": "I don't stop, I don't quit right now",
+      "words": [
+        {
+          "t": 126.18,
+          "text": "I"
+        },
+        {
+          "t": 126.44,
+          "text": "don't"
+        },
+        {
+          "t": 126.7,
+          "text": "stop,"
+        },
+        {
+          "t": 127.06,
+          "text": "I"
+        },
+        {
+          "t": 127.4,
+          "text": "don't"
+        },
+        {
+          "t": 127.9,
+          "text": "quit"
+        },
+        {
+          "t": 128.14,
+          "text": "right"
+        },
+        {
+          "t": 128.46,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 128.8,
+      "end": 131.38,
+      "text": "Way in the shaker, meals in the bag",
+      "words": [
+        {
+          "t": 128.8,
+          "text": "Way"
+        },
+        {
+          "t": 129.44,
+          "text": "in"
+        },
+        {
+          "t": 129.68,
+          "text": "the"
+        },
+        {
+          "t": 129.8,
+          "text": "shaker,"
+        },
+        {
+          "t": 130.18,
+          "text": "meals"
+        },
+        {
+          "t": 130.7,
+          "text": "in"
+        },
+        {
+          "t": 130.96,
+          "text": "the"
+        },
+        {
+          "t": 131.06,
+          "text": "bag"
+        }
+      ]
+    },
+    {
+      "start": 131.38,
+      "end": 133.78,
+      "text": "Mack Roseborn, but the mirror don't cap",
+      "words": [
+        {
+          "t": 131.38,
+          "text": "Mack"
+        },
+        {
+          "t": 131.92,
+          "text": "Roseborn,"
+        },
+        {
+          "t": 132.66,
+          "text": "but"
+        },
+        {
+          "t": 132.78,
+          "text": "the"
+        },
+        {
+          "t": 132.94,
+          "text": "mirror"
+        },
+        {
+          "t": 133.16,
+          "text": "don't"
+        },
+        {
+          "t": 133.6,
+          "text": "cap"
+        }
+      ]
+    },
+    {
+      "start": 133.78,
+      "end": 136.28,
+      "text": "Pacing late night, water all day",
+      "words": [
+        {
+          "t": 133.78,
+          "text": "Pacing"
+        },
+        {
+          "t": 134.5,
+          "text": "late"
+        },
+        {
+          "t": 134.7,
+          "text": "night,"
+        },
+        {
+          "t": 135.2,
+          "text": "water"
+        },
+        {
+          "t": 135.66,
+          "text": "all"
+        },
+        {
+          "t": 135.88,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 136.28,
+      "end": 138.78,
+      "text": "Stretch when I'm stiff so I don't break",
+      "words": [
+        {
+          "t": 136.28,
+          "text": "Stretch"
+        },
+        {
+          "t": 136.82,
+          "text": "when"
+        },
+        {
+          "t": 137.16,
+          "text": "I'm"
+        },
+        {
+          "t": 137.32,
+          "text": "stiff"
+        },
+        {
+          "t": 137.52,
+          "text": "so"
+        },
+        {
+          "t": 137.78,
+          "text": "I"
+        },
+        {
+          "t": 138.08,
+          "text": "don't"
+        },
+        {
+          "t": 138.58,
+          "text": "break"
+        }
+      ]
+    },
+    {
+      "start": 138.78,
+      "end": 141.32,
+      "text": "Skull crushes burn, planks make me shake",
+      "words": [
+        {
+          "t": 138.78,
+          "text": "Skull"
+        },
+        {
+          "t": 139.42,
+          "text": "crushes"
+        },
+        {
+          "t": 139.82,
+          "text": "burn,"
+        },
+        {
+          "t": 140.2,
+          "text": "planks"
+        },
+        {
+          "t": 140.58,
+          "text": "make"
+        },
+        {
+          "t": 140.82,
+          "text": "me"
+        },
+        {
+          "t": 141.04,
+          "text": "shake"
+        }
+      ]
+    },
+    {
+      "start": 141.32,
+      "end": 143.86,
+      "text": "Crutches got fire running under my waist",
+      "words": [
+        {
+          "t": 141.32,
+          "text": "Crutches"
+        },
+        {
+          "t": 141.96,
+          "text": "got"
+        },
+        {
+          "t": 142.16,
+          "text": "fire"
+        },
+        {
+          "t": 142.52,
+          "text": "running"
+        },
+        {
+          "t": 142.88,
+          "text": "under"
+        },
+        {
+          "t": 143.14,
+          "text": "my"
+        },
+        {
+          "t": 143.42,
+          "text": "waist"
+        }
+      ]
+    },
+    {
+      "start": 143.86,
+      "end": 146.3,
+      "text": "Push-ups after just to prove I'm sick",
+      "words": [
+        {
+          "t": 143.86,
+          "text": "Push"
+        },
+        {
+          "t": 144.42,
+          "text": "-ups"
+        },
+        {
+          "t": 144.66,
+          "text": "after"
+        },
+        {
+          "t": 144.96,
+          "text": "just"
+        },
+        {
+          "t": 145.28,
+          "text": "to"
+        },
+        {
+          "t": 145.42,
+          "text": "prove"
+        },
+        {
+          "t": 145.72,
+          "text": "I'm"
+        },
+        {
+          "t": 146.0,
+          "text": "sick"
+        }
+      ]
+    },
+    {
+      "start": 146.3,
+      "end": 148.54,
+      "text": "Not sick like ill, sick like discipline",
+      "words": [
+        {
+          "t": 146.3,
+          "text": "Not"
+        },
+        {
+          "t": 146.54,
+          "text": "sick"
+        },
+        {
+          "t": 146.96,
+          "text": "like"
+        },
+        {
+          "t": 147.24,
+          "text": "ill,"
+        },
+        {
+          "t": 147.58,
+          "text": "sick"
+        },
+        {
+          "t": 147.94,
+          "text": "like"
+        },
+        {
+          "t": 148.14,
+          "text": "discipline"
+        }
+      ]
+    },
+    {
+      "start": 148.54,
+      "end": 151.42,
+      "text": "This ain't about abs, this ain't about arms",
+      "words": [
+        {
+          "t": 148.54,
+          "text": "This"
+        },
+        {
+          "t": 149.16,
+          "text": "ain't"
+        },
+        {
+          "t": 149.48,
+          "text": "about"
+        },
+        {
+          "t": 149.68,
+          "text": "abs,"
+        },
+        {
+          "t": 150.22,
+          "text": "this"
+        },
+        {
+          "t": 150.36,
+          "text": "ain't"
+        },
+        {
+          "t": 150.7,
+          "text": "about"
+        },
+        {
+          "t": 150.98,
+          "text": "arms"
+        }
+      ]
+    },
+    {
+      "start": 151.42,
+      "end": 153.94,
+      "text": "This about keeping one promise through storms",
+      "words": [
+        {
+          "t": 151.42,
+          "text": "This"
+        },
+        {
+          "t": 151.74,
+          "text": "about"
+        },
+        {
+          "t": 152.12,
+          "text": "keeping"
+        },
+        {
+          "t": 152.54,
+          "text": "one"
+        },
+        {
+          "t": 152.8,
+          "text": "promise"
+        },
+        {
+          "t": 153.22,
+          "text": "through"
+        },
+        {
+          "t": 153.46,
+          "text": "storms"
+        }
+      ]
+    },
+    {
+      "start": 153.94,
+      "end": 156.28,
+      "text": "This about becoming the proof I need",
+      "words": [
+        {
+          "t": 153.94,
+          "text": "This"
+        },
+        {
+          "t": 154.28,
+          "text": "about"
+        },
+        {
+          "t": 154.72,
+          "text": "becoming"
+        },
+        {
+          "t": 155.2,
+          "text": "the"
+        },
+        {
+          "t": 155.48,
+          "text": "proof"
+        },
+        {
+          "t": 155.7,
+          "text": "I"
+        },
+        {
+          "t": 156.0,
+          "text": "need"
+        }
+      ]
+    },
+    {
+      "start": 156.28,
+      "end": 158.74,
+      "text": "When my own damn mind start testing me",
+      "words": [
+        {
+          "t": 156.28,
+          "text": "When"
+        },
+        {
+          "t": 156.56,
+          "text": "my"
+        },
+        {
+          "t": 156.72,
+          "text": "own"
+        },
+        {
+          "t": 157.0,
+          "text": "damn"
+        },
+        {
+          "t": 157.3,
+          "text": "mind"
+        },
+        {
+          "t": 157.6,
+          "text": "start"
+        },
+        {
+          "t": 157.86,
+          "text": "testing"
+        },
+        {
+          "t": 158.36,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 158.74,
+      "end": 161.26,
+      "text": "No perfect week, no perfect mood",
+      "words": [
+        {
+          "t": 158.74,
+          "text": "No"
+        },
+        {
+          "t": 159.12,
+          "text": "perfect"
+        },
+        {
+          "t": 159.62,
+          "text": "week,"
+        },
+        {
+          "t": 160.04,
+          "text": "no"
+        },
+        {
+          "t": 160.36,
+          "text": "perfect"
+        },
+        {
+          "t": 160.84,
+          "text": "mood"
+        }
+      ]
+    },
+    {
+      "start": 161.26,
+      "end": 161.68,
+      "text": "You see,",
+      "words": [
+        {
+          "t": 161.26,
+          "text": "You"
+        },
+        {
+          "t": 161.5,
+          "text": "see,"
+        }
+      ]
+    },
+    {
+      "start": 161.76,
+      "end": 163.74,
+      "text": "perfect days where I still follow through",
+      "words": [
+        {
+          "t": 161.76,
+          "text": "perfect"
+        },
+        {
+          "t": 162.08,
+          "text": "days"
+        },
+        {
+          "t": 162.58,
+          "text": "where"
+        },
+        {
+          "t": 162.78,
+          "text": "I"
+        },
+        {
+          "t": 162.9,
+          "text": "still"
+        },
+        {
+          "t": 163.04,
+          "text": "follow"
+        },
+        {
+          "t": 163.4,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 163.74,
+      "end": 166.36,
+      "text": "I don't need applause, I don't need a crutch",
+      "words": [
+        {
+          "t": 163.74,
+          "text": "I"
+        },
+        {
+          "t": 164.16,
+          "text": "don't"
+        },
+        {
+          "t": 164.48,
+          "text": "need"
+        },
+        {
+          "t": 164.64,
+          "text": "applause,"
+        },
+        {
+          "t": 165.36,
+          "text": "I"
+        },
+        {
+          "t": 165.54,
+          "text": "don't"
+        },
+        {
+          "t": 165.72,
+          "text": "need"
+        },
+        {
+          "t": 165.9,
+          "text": "a"
+        },
+        {
+          "t": 166.06,
+          "text": "crutch"
+        }
+      ]
+    },
+    {
+      "start": 166.36,
+      "end": 169.04,
+      "text": "I need one more rep when I wanna sit down",
+      "words": [
+        {
+          "t": 166.36,
+          "text": "I"
+        },
+        {
+          "t": 166.5,
+          "text": "need"
+        },
+        {
+          "t": 166.76,
+          "text": "one"
+        },
+        {
+          "t": 167.12,
+          "text": "more"
+        },
+        {
+          "t": 167.44,
+          "text": "rep"
+        },
+        {
+          "t": 167.78,
+          "text": "when"
+        },
+        {
+          "t": 168.02,
+          "text": "I"
+        },
+        {
+          "t": 168.16,
+          "text": "wanna"
+        },
+        {
+          "t": 168.38,
+          "text": "sit"
+        },
+        {
+          "t": 168.66,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 169.04,
+      "end": 171.52,
+      "text": "I keep pushing till the arms lock up",
+      "words": [
+        {
+          "t": 169.04,
+          "text": "I"
+        },
+        {
+          "t": 169.48,
+          "text": "keep"
+        },
+        {
+          "t": 169.94,
+          "text": "pushing"
+        },
+        {
+          "t": 170.36,
+          "text": "till"
+        },
+        {
+          "t": 170.54,
+          "text": "the"
+        },
+        {
+          "t": 170.74,
+          "text": "arms"
+        },
+        {
+          "t": 171.0,
+          "text": "lock"
+        },
+        {
+          "t": 171.22,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 171.52,
+      "end": 174.08,
+      "text": "Till the lungs burn dry and the heart beat jump",
+      "words": [
+        {
+          "t": 171.52,
+          "text": "Till"
+        },
+        {
+          "t": 171.82,
+          "text": "the"
+        },
+        {
+          "t": 172.0,
+          "text": "lungs"
+        },
+        {
+          "t": 172.24,
+          "text": "burn"
+        },
+        {
+          "t": 172.5,
+          "text": "dry"
+        },
+        {
+          "t": 172.82,
+          "text": "and"
+        },
+        {
+          "t": 173.1,
+          "text": "the"
+        },
+        {
+          "t": 173.22,
+          "text": "heart"
+        },
+        {
+          "t": 173.48,
+          "text": "beat"
+        },
+        {
+          "t": 173.74,
+          "text": "jump"
+        }
+      ]
+    },
+    {
+      "start": 174.08,
+      "end": 176.28,
+      "text": "Till the sweat drip down in the vision book",
+      "words": [
+        {
+          "t": 174.08,
+          "text": "Till"
+        },
+        {
+          "t": 174.36,
+          "text": "the"
+        },
+        {
+          "t": 174.52,
+          "text": "sweat"
+        },
+        {
+          "t": 174.76,
+          "text": "drip"
+        },
+        {
+          "t": 175.06,
+          "text": "down"
+        },
+        {
+          "t": 175.4,
+          "text": "in"
+        },
+        {
+          "t": 175.68,
+          "text": "the"
+        },
+        {
+          "t": 175.78,
+          "text": "vision"
+        },
+        {
+          "t": 176.08,
+          "text": "book"
+        }
+      ]
+    },
+    {
+      "start": 176.28,
+      "end": 178.52,
+      "text": "I don't care how bad that pressure",
+      "words": [
+        {
+          "t": 176.28,
+          "text": "I"
+        },
+        {
+          "t": 176.992,
+          "text": "don't"
+        },
+        {
+          "t": 177.12,
+          "text": "care"
+        },
+        {
+          "t": 177.3,
+          "text": "how"
+        },
+        {
+          "t": 177.58,
+          "text": "bad"
+        },
+        {
+          "t": 178.0,
+          "text": "that"
+        },
+        {
+          "t": 178.24,
+          "text": "pressure"
+        }
+      ]
+    },
+    {
+      "start": 178.54,
+      "end": 181.1,
+      "text": "Another set, another beat, another war",
+      "words": [
+        {
+          "t": 178.54,
+          "text": "Another"
+        },
+        {
+          "t": 179.36,
+          "text": "set,"
+        },
+        {
+          "t": 179.88,
+          "text": "another"
+        },
+        {
+          "t": 180.1,
+          "text": "beat,"
+        },
+        {
+          "t": 180.5,
+          "text": "another"
+        },
+        {
+          "t": 180.7,
+          "text": "war"
+        }
+      ]
+    },
+    {
+      "start": 181.1,
+      "end": 183.64,
+      "text": "Another voice in my head I ignore",
+      "words": [
+        {
+          "t": 181.1,
+          "text": "Another"
+        },
+        {
+          "t": 181.9,
+          "text": "voice"
+        },
+        {
+          "t": 182.38,
+          "text": "in"
+        },
+        {
+          "t": 182.66,
+          "text": "my"
+        },
+        {
+          "t": 182.78,
+          "text": "head"
+        },
+        {
+          "t": 183.1,
+          "text": "I"
+        },
+        {
+          "t": 183.3,
+          "text": "ignore"
+        }
+      ]
+    },
+    {
+      "start": 183.74,
+      "end": 186.68,
+      "text": "If I came this far, I ain't slowing down",
+      "words": [
+        {
+          "t": 183.74,
+          "text": "If"
+        },
+        {
+          "t": 184.512,
+          "text": "I"
+        },
+        {
+          "t": 184.72,
+          "text": "came"
+        },
+        {
+          "t": 185.04,
+          "text": "this"
+        },
+        {
+          "t": 185.3,
+          "text": "far,"
+        },
+        {
+          "t": 185.7,
+          "text": "I"
+        },
+        {
+          "t": 185.82,
+          "text": "ain't"
+        },
+        {
+          "t": 185.96,
+          "text": "slowing"
+        },
+        {
+          "t": 186.26,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 186.68,
+      "end": 189.4,
+      "text": "I don't stop, I quit right now",
+      "words": [
+        {
+          "t": 186.68,
+          "text": "I"
+        },
+        {
+          "t": 186.86,
+          "text": "don't"
+        },
+        {
+          "t": 187.24,
+          "text": "stop,"
+        },
+        {
+          "t": 187.6,
+          "text": "I"
+        },
+        {
+          "t": 188.192,
+          "text": "quit"
+        },
+        {
+          "t": 188.52,
+          "text": "right"
+        },
+        {
+          "t": 189.04,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 189.4,
+      "end": 191.7,
+      "text": "I picture summer, but I don't daydream",
+      "words": [
+        {
+          "t": 189.4,
+          "text": "I"
+        },
+        {
+          "t": 189.52,
+          "text": "picture"
+        },
+        {
+          "t": 189.78,
+          "text": "summer,"
+        },
+        {
+          "t": 190.26,
+          "text": "but"
+        },
+        {
+          "t": 190.8,
+          "text": "I"
+        },
+        {
+          "t": 191.0,
+          "text": "don't"
+        },
+        {
+          "t": 191.18,
+          "text": "daydream"
+        }
+      ]
+    },
+    {
+      "start": 191.7,
+      "end": 193.8,
+      "text": "I put that beach body under a machine",
+      "words": [
+        {
+          "t": 191.7,
+          "text": "I"
+        },
+        {
+          "t": 192.0,
+          "text": "put"
+        },
+        {
+          "t": 192.22,
+          "text": "that"
+        },
+        {
+          "t": 192.4,
+          "text": "beach"
+        },
+        {
+          "t": 192.66,
+          "text": "body"
+        },
+        {
+          "t": 192.9,
+          "text": "under"
+        },
+        {
+          "t": 193.28,
+          "text": "a"
+        },
+        {
+          "t": 193.46,
+          "text": "machine"
+        }
+      ]
+    },
+    {
+      "start": 193.8,
+      "end": 196.8,
+      "text": "I put that cocktail far down the road",
+      "words": [
+        {
+          "t": 193.8,
+          "text": "I"
+        },
+        {
+          "t": 194.46,
+          "text": "put"
+        },
+        {
+          "t": 194.74,
+          "text": "that"
+        },
+        {
+          "t": 194.92,
+          "text": "cocktail"
+        },
+        {
+          "t": 195.36,
+          "text": "far"
+        },
+        {
+          "t": 195.72,
+          "text": "down"
+        },
+        {
+          "t": 196.22,
+          "text": "the"
+        },
+        {
+          "t": 196.46,
+          "text": "road"
+        }
+      ]
+    },
+    {
+      "start": 196.8,
+      "end": 199.24,
+      "text": "I put the day's work where excuses go",
+      "words": [
+        {
+          "t": 196.8,
+          "text": "I"
+        },
+        {
+          "t": 197.1,
+          "text": "put"
+        },
+        {
+          "t": 197.28,
+          "text": "the"
+        },
+        {
+          "t": 197.46,
+          "text": "day's"
+        },
+        {
+          "t": 197.78,
+          "text": "work"
+        },
+        {
+          "t": 198.04,
+          "text": "where"
+        },
+        {
+          "t": 198.26,
+          "text": "excuses"
+        },
+        {
+          "t": 198.58,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 199.24,
+      "end": 201.54,
+      "text": "Money right, mind right, body getting shot",
+      "words": [
+        {
+          "t": 199.24,
+          "text": "Money"
+        },
+        {
+          "t": 199.64,
+          "text": "right,"
+        },
+        {
+          "t": 200.02,
+          "text": "mind"
+        },
+        {
+          "t": 200.22,
+          "text": "right,"
+        },
+        {
+          "t": 200.64,
+          "text": "body"
+        },
+        {
+          "t": 200.88,
+          "text": "getting"
+        },
+        {
+          "t": 201.18,
+          "text": "shot"
+        }
+      ]
+    },
+    {
+      "start": 201.54,
+      "end": 204.14,
+      "text": "Cold on the screen after reps in the dark",
+      "words": [
+        {
+          "t": 201.54,
+          "text": "Cold"
+        },
+        {
+          "t": 202.24,
+          "text": "on"
+        },
+        {
+          "t": 202.46,
+          "text": "the"
+        },
+        {
+          "t": 202.56,
+          "text": "screen"
+        },
+        {
+          "t": 202.86,
+          "text": "after"
+        },
+        {
+          "t": 203.16,
+          "text": "reps"
+        },
+        {
+          "t": 203.5,
+          "text": "in"
+        },
+        {
+          "t": 203.74,
+          "text": "the"
+        },
+        {
+          "t": 203.86,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 204.14,
+      "end": 206.92,
+      "text": "Not trying to be perfect, trying to be dangerous",
+      "words": [
+        {
+          "t": 204.14,
+          "text": "Not"
+        },
+        {
+          "t": 204.5,
+          "text": "trying"
+        },
+        {
+          "t": 204.78,
+          "text": "to"
+        },
+        {
+          "t": 204.92,
+          "text": "be"
+        },
+        {
+          "t": 205.06,
+          "text": "perfect,"
+        },
+        {
+          "t": 205.66,
+          "text": "trying"
+        },
+        {
+          "t": 206.06,
+          "text": "to"
+        },
+        {
+          "t": 206.18,
+          "text": "be"
+        },
+        {
+          "t": 206.28,
+          "text": "dangerous"
+        }
+      ]
+    },
+    {
+      "start": 207.24,
+      "end": 208.52,
+      "text": "Trying to walk it, trying to walk it",
+      "words": [
+        {
+          "t": 207.24,
+          "text": "Trying"
+        },
+        {
+          "t": 207.64,
+          "text": "to"
+        },
+        {
+          "t": 207.8,
+          "text": "walk"
+        },
+        {
+          "t": 208.08,
+          "text": "it,"
+        },
+        {
+          "t": 208.36,
+          "text": "trying"
+        },
+        {
+          "t": 208.52,
+          "text": "to"
+        },
+        {
+          "t": 208.52,
+          "text": "walk"
+        },
+        {
+          "t": 208.52,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 208.576,
+      "end": 209.98,
+      "text": "Like pressure makes sense",
+      "words": [
+        {
+          "t": 208.576,
+          "text": "Like"
+        },
+        {
+          "t": 208.8,
+          "text": "pressure"
+        },
+        {
+          "t": 209.16,
+          "text": "makes"
+        },
+        {
+          "t": 209.64,
+          "text": "sense"
+        }
+      ]
+    },
+    {
+      "start": 209.98,
+      "end": 212.48,
+      "text": "Some days I'm strong, some days I run",
+      "words": [
+        {
+          "t": 209.98,
+          "text": "Some"
+        },
+        {
+          "t": 210.26,
+          "text": "days"
+        },
+        {
+          "t": 210.62,
+          "text": "I'm"
+        },
+        {
+          "t": 210.94,
+          "text": "strong,"
+        },
+        {
+          "t": 211.42,
+          "text": "some"
+        },
+        {
+          "t": 211.52,
+          "text": "days"
+        },
+        {
+          "t": 211.88,
+          "text": "I"
+        },
+        {
+          "t": 212.24,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 212.48,
+      "end": 214.98,
+      "text": "Some days just showing up wins it all",
+      "words": [
+        {
+          "t": 212.48,
+          "text": "Some"
+        },
+        {
+          "t": 212.82,
+          "text": "days"
+        },
+        {
+          "t": 213.2,
+          "text": "just"
+        },
+        {
+          "t": 213.52,
+          "text": "showing"
+        },
+        {
+          "t": 213.92,
+          "text": "up"
+        },
+        {
+          "t": 214.18,
+          "text": "wins"
+        },
+        {
+          "t": 214.48,
+          "text": "it"
+        },
+        {
+          "t": 214.8,
+          "text": "all"
+        }
+      ]
+    },
+    {
+      "start": 214.98,
+      "end": 217.72,
+      "text": "But skip too much and the old me grows",
+      "words": [
+        {
+          "t": 214.98,
+          "text": "But"
+        },
+        {
+          "t": 215.26,
+          "text": "skip"
+        },
+        {
+          "t": 215.72,
+          "text": "too"
+        },
+        {
+          "t": 216.064,
+          "text": "much"
+        },
+        {
+          "t": 216.54,
+          "text": "and"
+        },
+        {
+          "t": 216.74,
+          "text": "the"
+        },
+        {
+          "t": 216.88,
+          "text": "old"
+        },
+        {
+          "t": 217.12,
+          "text": "me"
+        },
+        {
+          "t": 217.42,
+          "text": "grows"
+        }
+      ]
+    },
+    {
+      "start": 217.72,
+      "end": 220.4,
+      "text": "So I cut that off before it gets close",
+      "words": [
+        {
+          "t": 217.72,
+          "text": "So"
+        },
+        {
+          "t": 218.0,
+          "text": "I"
+        },
+        {
+          "t": 218.2,
+          "text": "cut"
+        },
+        {
+          "t": 218.42,
+          "text": "that"
+        },
+        {
+          "t": 218.76,
+          "text": "off"
+        },
+        {
+          "t": 219.04,
+          "text": "before"
+        },
+        {
+          "t": 219.48,
+          "text": "it"
+        },
+        {
+          "t": 219.8,
+          "text": "gets"
+        },
+        {
+          "t": 220.1,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 220.4,
+      "end": 222.88,
+      "text": "I know that voice, I know that trap",
+      "words": [
+        {
+          "t": 220.4,
+          "text": "I"
+        },
+        {
+          "t": 220.68,
+          "text": "know"
+        },
+        {
+          "t": 220.96,
+          "text": "that"
+        },
+        {
+          "t": 221.36,
+          "text": "voice,"
+        },
+        {
+          "t": 221.74,
+          "text": "I"
+        },
+        {
+          "t": 222.02,
+          "text": "know"
+        },
+        {
+          "t": 222.3,
+          "text": "that"
+        },
+        {
+          "t": 222.52,
+          "text": "trap"
+        }
+      ]
+    },
+    {
+      "start": 222.88,
+      "end": 225.64,
+      "text": "Take one day, then the hunger goes flat",
+      "words": [
+        {
+          "t": 222.88,
+          "text": "Take"
+        },
+        {
+          "t": 223.26,
+          "text": "one"
+        },
+        {
+          "t": 223.64,
+          "text": "day,"
+        },
+        {
+          "t": 224.12,
+          "text": "then"
+        },
+        {
+          "t": 224.6,
+          "text": "the"
+        },
+        {
+          "t": 224.76,
+          "text": "hunger"
+        },
+        {
+          "t": 225.04,
+          "text": "goes"
+        },
+        {
+          "t": 225.26,
+          "text": "flat"
+        }
+      ]
+    },
+    {
+      "start": 225.64,
+      "end": 228.0,
+      "text": "Now, now today, now this round",
+      "words": [
+        {
+          "t": 225.64,
+          "text": "Now,"
+        },
+        {
+          "t": 226.06,
+          "text": "now"
+        },
+        {
+          "t": 226.52,
+          "text": "today,"
+        },
+        {
+          "t": 227.06,
+          "text": "now"
+        },
+        {
+          "t": 227.42,
+          "text": "this"
+        },
+        {
+          "t": 227.74,
+          "text": "round"
+        }
+      ]
+    },
+    {
+      "start": 228.0,
+      "end": 230.62,
+      "text": "I came inside, believe with the crown",
+      "words": [
+        {
+          "t": 228.0,
+          "text": "I"
+        },
+        {
+          "t": 228.18,
+          "text": "came"
+        },
+        {
+          "t": 228.64,
+          "text": "inside,"
+        },
+        {
+          "t": 229.48,
+          "text": "believe"
+        },
+        {
+          "t": 229.92,
+          "text": "with"
+        },
+        {
+          "t": 230.22,
+          "text": "the"
+        },
+        {
+          "t": 230.4,
+          "text": "crown"
+        }
+      ]
+    },
+    {
+      "start": 230.62,
+      "end": 233.6,
+      "text": "I keep pushing till the arms lock up",
+      "words": [
+        {
+          "t": 230.62,
+          "text": "I"
+        },
+        {
+          "t": 231.14,
+          "text": "keep"
+        },
+        {
+          "t": 231.88,
+          "text": "pushing"
+        },
+        {
+          "t": 232.36,
+          "text": "till"
+        },
+        {
+          "t": 232.56,
+          "text": "the"
+        },
+        {
+          "t": 232.74,
+          "text": "arms"
+        },
+        {
+          "t": 233.06,
+          "text": "lock"
+        },
+        {
+          "t": 233.32,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 233.6,
+      "end": 236.36,
+      "text": "Till the lungs burn dry and the heart beat jump",
+      "words": [
+        {
+          "t": 233.6,
+          "text": "Till"
+        },
+        {
+          "t": 233.9,
+          "text": "the"
+        },
+        {
+          "t": 234.08,
+          "text": "lungs"
+        },
+        {
+          "t": 234.32,
+          "text": "burn"
+        },
+        {
+          "t": 234.62,
+          "text": "dry"
+        },
+        {
+          "t": 234.96,
+          "text": "and"
+        },
+        {
+          "t": 235.26,
+          "text": "the"
+        },
+        {
+          "t": 235.4,
+          "text": "heart"
+        },
+        {
+          "t": 235.68,
+          "text": "beat"
+        },
+        {
+          "t": 235.98,
+          "text": "jump"
+        }
+      ]
+    },
+    {
+      "start": 236.36,
+      "end": 238.52,
+      "text": "Till the sweat drip down in the vision book",
+      "words": [
+        {
+          "t": 236.36,
+          "text": "Till"
+        },
+        {
+          "t": 236.64,
+          "text": "the"
+        },
+        {
+          "t": 236.8,
+          "text": "sweat"
+        },
+        {
+          "t": 237.1,
+          "text": "drip"
+        },
+        {
+          "t": 237.4,
+          "text": "down"
+        },
+        {
+          "t": 237.74,
+          "text": "in"
+        },
+        {
+          "t": 238.04,
+          "text": "the"
+        },
+        {
+          "t": 238.18,
+          "text": "vision"
+        },
+        {
+          "t": 238.48,
+          "text": "book"
+        }
+      ]
+    },
+    {
+      "start": 238.52,
+      "end": 241.56,
+      "text": "I don't care how bad that pressure hurt",
+      "words": [
+        {
+          "t": 238.52,
+          "text": "I"
+        },
+        {
+          "t": 239.168,
+          "text": "don't"
+        },
+        {
+          "t": 239.64,
+          "text": "care"
+        },
+        {
+          "t": 239.88,
+          "text": "how"
+        },
+        {
+          "t": 240.16,
+          "text": "bad"
+        },
+        {
+          "t": 240.54,
+          "text": "that"
+        },
+        {
+          "t": 240.86,
+          "text": "pressure"
+        },
+        {
+          "t": 241.22,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 241.56,
+      "end": 243.94,
+      "text": "Another set, another beat, another war",
+      "words": [
+        {
+          "t": 241.56,
+          "text": "Another"
+        },
+        {
+          "t": 242.22,
+          "text": "set,"
+        },
+        {
+          "t": 242.64,
+          "text": "another"
+        },
+        {
+          "t": 242.88,
+          "text": "beat,"
+        },
+        {
+          "t": 243.32,
+          "text": "another"
+        },
+        {
+          "t": 243.5,
+          "text": "war"
+        }
+      ]
+    },
+    {
+      "start": 243.94,
+      "end": 246.62,
+      "text": "Another voice in my head I ignore",
+      "words": [
+        {
+          "t": 243.94,
+          "text": "Another"
+        },
+        {
+          "t": 244.5,
+          "text": "voice"
+        },
+        {
+          "t": 245.36,
+          "text": "in"
+        },
+        {
+          "t": 245.62,
+          "text": "my"
+        },
+        {
+          "t": 245.76,
+          "text": "head"
+        },
+        {
+          "t": 246.12,
+          "text": "I"
+        },
+        {
+          "t": 246.3,
+          "text": "ignore"
+        }
+      ]
+    },
+    {
+      "start": 246.79,
+      "end": 249.94,
+      "text": "If I came this far, I'd slow it down",
+      "words": [
+        {
+          "t": 246.79,
+          "text": "If"
+        },
+        {
+          "t": 247.54,
+          "text": "I"
+        },
+        {
+          "t": 247.78,
+          "text": "came"
+        },
+        {
+          "t": 248.12,
+          "text": "this"
+        },
+        {
+          "t": 248.4,
+          "text": "far,"
+        },
+        {
+          "t": 248.82,
+          "text": "I'd"
+        },
+        {
+          "t": 249.0,
+          "text": "slow"
+        },
+        {
+          "t": 249.3,
+          "text": "it"
+        },
+        {
+          "t": 249.64,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 249.94,
+      "end": 252.82,
+      "text": "I don't stop, I don't quit right now",
+      "words": [
+        {
+          "t": 249.94,
+          "text": "I"
+        },
+        {
+          "t": 250.2,
+          "text": "don't"
+        },
+        {
+          "t": 250.44,
+          "text": "stop,"
+        },
+        {
+          "t": 250.88,
+          "text": "I"
+        },
+        {
+          "t": 251.392,
+          "text": "don't"
+        },
+        {
+          "t": 251.9,
+          "text": "quit"
+        },
+        {
+          "t": 252.1,
+          "text": "right"
+        },
+        {
+          "t": 252.46,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 252.82,
+      "end": 254.86,
+      "text": "No speech, no excuses",
+      "words": [
+        {
+          "t": 252.82,
+          "text": "No"
+        },
+        {
+          "t": 253.16,
+          "text": "speech,"
+        },
+        {
+          "t": 253.8,
+          "text": "no"
+        },
+        {
+          "t": 254.4,
+          "text": "excuses"
+        }
+      ]
+    },
+    {
+      "start": 256.68,
+      "end": 259.6,
+      "text": "One more rap, then another, then another",
+      "words": [
+        {
+          "t": 256.68,
+          "text": "One"
+        },
+        {
+          "t": 257.32,
+          "text": "more"
+        },
+        {
+          "t": 257.96,
+          "text": "rap,"
+        },
+        {
+          "t": 258.48,
+          "text": "then"
+        },
+        {
+          "t": 258.58,
+          "text": "another,"
+        },
+        {
+          "t": 259.08,
+          "text": "then"
+        },
+        {
+          "t": 259.28,
+          "text": "another"
+        }
+      ]
+    },
+    {
+      "start": 259.6,
+      "end": 263.76,
+      "text": "Then another, then another",
+      "words": [
+        {
+          "t": 259.6,
+          "text": "Then"
+        },
+        {
+          "t": 259.96,
+          "text": "another,"
+        },
+        {
+          "t": 263.3,
+          "text": "then"
+        },
+        {
+          "t": 263.46,
+          "text": "another"
+        }
+      ]
+    }
+  ]
+}
