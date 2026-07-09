@@ -28,6 +28,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { execFileSync } from "node:child_process";
+import http from "node:http";
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync, copyFileSync } from "node:fs";
 import { basename, dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -68,33 +69,39 @@ const PATTERNS = [
 ];
 
 async function llm(system, user, numPredict = 1600, model = MODEL, images = null) {
+  // node:http, not fetch — fetch's undici enforces a 300s headers timeout,
+  // and on a long prompt Ollama's prompt eval can exceed that before the
+  // first streamed byte arrives, even with stream:true.
   const msg = { role: "user", content: user };
   if (images) msg.images = images;
-  const res = await fetch(`${OLLAMA}/api/chat`, {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model, stream: true, format: "json", think: false,
-      options: { temperature: 0.4, num_ctx: 8192, num_predict: numPredict },
-      messages: [{ role: "system", content: system }, msg],
-    }),
+  const body = JSON.stringify({
+    model, stream: true, format: "json", think: false,
+    options: { temperature: 0.4, num_ctx: 8192, num_predict: numPredict },
+    messages: [{ role: "system", content: system }, msg],
   });
-  if (!res.ok) throw new Error(`LLM ${res.status}: ${await res.text()}`);
-  let text = "";
-  const reader = res.body.getReader();
-  const dec = new TextDecoder();
-  let buf = "";
-  for (;;) {
-    const { done, value } = await reader.read();
-    if (done) break;
-    buf += dec.decode(value, { stream: true });
-    let nl;
-    while ((nl = buf.indexOf("\n")) >= 0) {
-      const line = buf.slice(0, nl).trim();
-      buf = buf.slice(nl + 1);
-      if (!line) continue;
-      try { text += JSON.parse(line).message?.content ?? ""; } catch { /* partial line */ }
-    }
-  }
+  const text = await new Promise((resolve, reject) => {
+    const req = http.request(`${OLLAMA}/api/chat`, {
+      method: "POST", headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) },
+    }, (res) => {
+      if (res.statusCode !== 200) { reject(new Error(`LLM ${res.statusCode}`)); res.resume(); return; }
+      let out = "", buf = "";
+      res.setEncoding("utf8");
+      res.on("data", (chunk) => {
+        buf += chunk;
+        let nl;
+        while ((nl = buf.indexOf("\n")) >= 0) {
+          const line = buf.slice(0, nl).trim();
+          buf = buf.slice(nl + 1);
+          if (!line) continue;
+          try { out += JSON.parse(line).message?.content ?? ""; } catch { /* partial line */ }
+        }
+      });
+      res.on("end", () => resolve(out));
+      res.on("error", reject);
+    });
+    req.on("error", reject);
+    req.end(body);
+  });
   const a = text.indexOf("{"), b = text.lastIndexOf("}");
   if (a < 0 || b <= a) throw new Error(`LLM returned no JSON: ${text.slice(0, 200)}`);
   return JSON.parse(text.slice(a, b + 1));

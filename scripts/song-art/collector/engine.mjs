@@ -79,19 +79,25 @@ function classify(genre) {
 // ── Real Braille (Grade 1) — encodes the spine genre word ────────────────────
 const BRAILLE = { a: [1], b: [1, 2], c: [1, 4], d: [1, 4, 5], e: [1, 5], f: [1, 2, 4], g: [1, 2, 4, 5], h: [1, 2, 5], i: [2, 4], j: [2, 4, 5], k: [1, 3], l: [1, 2, 3], m: [1, 3, 4], n: [1, 3, 4, 5], o: [1, 3, 5], p: [1, 2, 3, 4], q: [1, 2, 3, 4, 5], r: [1, 2, 3, 5], s: [2, 3, 4], t: [2, 3, 4, 5], u: [1, 3, 6], v: [1, 2, 3, 6], w: [2, 4, 5, 6], x: [1, 3, 4, 6], y: [1, 3, 4, 5, 6], z: [1, 3, 5, 6], "&": [1, 2, 3, 4, 6], "-": [3, 6] };
 function brailleSVG(word, cx, y, dotR, color) {
-  // vertical stack of cells; dot positions: col0 = dots 1,2,3 · col1 = dots 4,5,6
+  // Braille cells reading down; splits into two side-by-side columns for long
+  // words so it never bleeds into the geo/series block below.
   const cells = [...word.toLowerCase()].map((ch) => BRAILLE[ch]).filter(Boolean);
   const colW = dotR * 3.2, rowH = dotR * 3.2, cellH = rowH * 3 + dotR * 2.6;
+  const twoCol = cells.length > 5;
+  const perCol = twoCol ? Math.ceil(cells.length / 2) : cells.length;
+  const colX = (ci) => (twoCol ? cx + (ci < perCol ? -1 : 1) * dotR * 4.2 : cx);
   let svg = "";
   cells.forEach((dots, ci) => {
-    const top = y + ci * cellH;
+    const row = twoCol ? ci % perCol : ci;
+    const top = y + row * cellH;
+    const x0 = colX(ci);
     for (let d = 1; d <= 6; d++) {
-      const col = d <= 3 ? 0 : 1, row = (d - 1) % 3;
+      const col = d <= 3 ? 0 : 1, r = (d - 1) % 3;
       const on = dots.includes(d);
-      svg += `<circle cx="${cx + (col - 0.5) * colW}" cy="${top + row * rowH}" r="${dotR}" fill="${color}" opacity="${on ? 0.92 : 0.16}"/>`;
+      svg += `<circle cx="${x0 + (col - 0.5) * colW}" cy="${top + r * rowH}" r="${dotR}" fill="${color}" opacity="${on ? 0.92 : 0.16}"/>`;
     }
   });
-  return { svg, height: cells.length * (rowH * 3 + dotR * 2.6) };
+  return { svg, height: perCol * cellH };
 }
 
 // ── Spine texture filters ────────────────────────────────────────────────────
@@ -174,22 +180,49 @@ function buildOverlay(t) {
   const spineTexture = textureDefs(P.texture, "tex");
   const innerX = sx + 14, innerW = sw - 28;
 
-  // vertical genre text: as large as fits, centered between chip and LANG block.
-  // After rotate(90) the glyph ascent extends toward +x, so shift the baseline
+  // Spine text stack (rotated 90°, reads top→bottom): TITLE dominant, optional
+  // subtitle (remix/parenthetical), then the genre — smaller, accent-colored,
+  // pinned at a constant position so genres scan uniformly across a shelf.
+  // After rotate(90) the glyph ascent extends toward +x, so shift each baseline
   // left by ~half the cap height to keep letters centered inside the spine.
-  const vTop = 575, vBottom = H - 700;
-  const maxLen = vBottom - vTop;
-  const fontSize = Math.min(210, (maxLen / Math.max(2, spineWord.length)) * 1.62, (sw - 44) / 0.75);
-  const estLen = spineWord.length * fontSize * 0.52 + (spineWord.length - 1) * 6;
-  const vStart = vTop + Math.max(0, (maxLen - estLen) / 2);
-  const vBase = sx + sw / 2 - fontSize * 0.355;
+  const stripCJK = (s) => s.replace(/[　-鿿가-힯＀-￯]/g, "").replace(/\s+/g, " ").trim();
+  const rawTitle = stripCJK(String(t.title));
+  const tm = rawTitle.match(/^([^([:]+)(?:[:([]+\s*([^)\]]*))?/);
+  const mainTitle = (tm?.[1] || rawTitle).trim().toUpperCase();
+  const subtitle = (tm?.[2] || "").trim().toUpperCase() || null;
+  const lenOf = (text, size) => text.length * size * 0.52 + Math.max(0, text.length - 1) * 4;
+
+  const genreSize = 40;
+  const genreLen = lenOf(spineWord, genreSize);
+  const genreStart = H - 690 - genreLen;          // genre ends just above LANG block
+  const vTop = 450;
+  const zoneEnd = genreStart - 56;
+  const zone = zoneEnd - vTop;
+
+  // Solve sizes directly: title gets the zone (72% when a subtitle exists),
+  // then scale the whole stack down if it still overruns. No floors that can
+  // force an overflow into the genre block.
+  const capW = (sw - 44) / 0.75;
+  const sizeToFit = (text, room) => (room - Math.max(0, text.length - 1) * 4) / (text.length * 0.52);
+  let titleSize = Math.min(150, capW, sizeToFit(mainTitle, zone * (subtitle ? 0.68 : 1)));
+  let subSize = subtitle ? Math.min(titleSize * 0.45, sizeToFit(subtitle, zone * 0.24)) : 0;
+  let titleLen = lenOf(mainTitle, titleSize);
+  let stackLen = titleLen + (subtitle ? 44 + lenOf(subtitle, subSize) : 0);
+  if (stackLen > zone) {
+    const k = zone / stackLen;
+    titleSize *= k; subSize *= k;
+    titleLen = lenOf(mainTitle, titleSize);
+    stackLen = titleLen + (subtitle ? 44 + lenOf(subtitle, subSize) : 0);
+  }
+  const stackStart = vTop + Math.max(0, (zone - stackLen) / 2);
+  const baseFor = (size) => sx + sw / 2 - size * 0.355;
 
   const braille = brailleSVG(spineWord.replace(/[^a-z&-]/gi, ""), sx + sw / 2, H - 560, 5.2, ink);
 
   const seriesLabel = t.series ? `${t.series} Series`.toUpperCase() : (t.unreleased ? "ARCHIVE EDITION" : null);
 
   // spine mini-waveform (真 waveform of this actual track when known)
-  const chip = t.peaks ? wavePath(t.peaks.filter((_, i) => i % 3 === 0), innerX + 24, 475, innerW - 48, 54, P.accent2 === "#8a8a8a" ? "#a3253a" : P.accent2) : "";
+  const chip = t.peaks ? wavePath(t.peaks.filter((_, i) => i % 3 === 0), innerX + 24, 368, innerW - 48, 50, P.accent2 === "#8a8a8a" ? "#a3253a" : P.accent2) : "";
 
   // geo block
   const geoSVG = t.geo ? `
@@ -205,13 +238,17 @@ function buildOverlay(t) {
     <rect x="${sx}" y="${BEZEL}" width="6" height="${H - 2 * BEZEL}" fill="#ffffff" opacity="0.10"/>
     <rect x="${SPINE - 8}" y="${BEZEL}" width="8" height="${H - 2 * BEZEL}" fill="#000000" opacity="0.45"/>
     <rect x="${SPINE - 2}" y="${BEZEL}" width="4" height="${H - 2 * BEZEL}" fill="url(#goldEdge)"/>
-    ${crownSVG(sx + sw / 2, 106, 40, gold)}
-    ${emblemSVG(sx + sw / 2, 280, 74, gold, P.base[1])}
-    <line x1="${innerX + 16}" y1="405" x2="${sx + sw - 30}" y2="405" stroke="${ink}" stroke-width="1.5" opacity="0.25" stroke-dasharray="2 7"/>
+    ${crownSVG(sx + sw / 2, 92, 34, gold)}
+    ${emblemSVG(sx + sw / 2, 222, 62, gold, P.base[1])}
+    <line x1="${innerX + 16}" y1="312" x2="${sx + sw - 30}" y2="312" stroke="${ink}" stroke-width="1.5" opacity="0.25" stroke-dasharray="2 7"/>
     ${chip}
-    <line x1="${innerX + 16}" y1="540" x2="${sx + sw - 30}" y2="540" stroke="${ink}" stroke-width="1.5" opacity="0.25" stroke-dasharray="2 7"/>
-    <text x="${vBase}" y="${vStart}" font-family="Bebas Neue" font-size="${fontSize}" fill="url(#goldText)" text-anchor="start" letter-spacing="6"
-      transform="rotate(90 ${vBase} ${vStart})" style="paint-order:stroke" stroke="#000000" stroke-width="3" stroke-opacity="0.35">${esc(spineWord)}</text>
+    <line x1="${innerX + 16}" y1="424" x2="${sx + sw - 30}" y2="424" stroke="${ink}" stroke-width="1.5" opacity="0.25" stroke-dasharray="2 7"/>
+    <text x="${baseFor(titleSize)}" y="${stackStart}" font-family="Bebas Neue" font-size="${titleSize}" fill="url(#goldText)" text-anchor="start" letter-spacing="4"
+      transform="rotate(90 ${baseFor(titleSize)} ${stackStart})" style="paint-order:stroke" stroke="#000000" stroke-width="3" stroke-opacity="0.35">${esc(mainTitle)}</text>
+    ${subtitle ? `<text x="${baseFor(subSize)}" y="${stackStart + titleLen + 44}" font-family="Bebas Neue" font-size="${subSize}" fill="${ink}" opacity="0.75" text-anchor="start" letter-spacing="4"
+      transform="rotate(90 ${baseFor(subSize)} ${stackStart + titleLen + 44})">${esc(subtitle)}</text>` : ""}
+    <text x="${baseFor(genreSize)}" y="${genreStart}" font-family="Bebas Neue" font-size="${genreSize}" fill="${accent}" opacity="0.95" text-anchor="start" letter-spacing="8"
+      transform="rotate(90 ${baseFor(genreSize)} ${genreStart})" style="paint-order:stroke" stroke="#000000" stroke-width="2" stroke-opacity="0.3">${esc(spineWord)}</text>
     ${langSVG}
     ${braille.svg}
     ${geoSVG}
