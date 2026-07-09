@@ -1,0 +1,3611 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 1.92,
+      "text": "Back, back, when the screen made the room blow",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Back,"
+        },
+        {
+          "t": 0.18,
+          "text": "back,"
+        },
+        {
+          "t": 0.56,
+          "text": "when"
+        },
+        {
+          "t": 0.66,
+          "text": "the"
+        },
+        {
+          "t": 0.84,
+          "text": "screen"
+        },
+        {
+          "t": 1.1,
+          "text": "made"
+        },
+        {
+          "t": 1.32,
+          "text": "the"
+        },
+        {
+          "t": 1.6,
+          "text": "room"
+        },
+        {
+          "t": 1.7,
+          "text": "blow"
+        }
+      ]
+    },
+    {
+      "start": 2.144,
+      "end": 4.62,
+      "text": "I thought the whole world would move close",
+      "words": [
+        {
+          "t": 2.144,
+          "text": "I"
+        },
+        {
+          "t": 2.48,
+          "text": "thought"
+        },
+        {
+          "t": 2.86,
+          "text": "the"
+        },
+        {
+          "t": 3.072,
+          "text": "whole"
+        },
+        {
+          "t": 3.28,
+          "text": "world"
+        },
+        {
+          "t": 3.712,
+          "text": "would"
+        },
+        {
+          "t": 3.9,
+          "text": "move"
+        },
+        {
+          "t": 4.14,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 4.62,
+      "end": 6.86,
+      "text": "Old names poppin' up like Wodo",
+      "words": [
+        {
+          "t": 4.62,
+          "text": "Old"
+        },
+        {
+          "t": 5.38,
+          "text": "names"
+        },
+        {
+          "t": 5.48,
+          "text": "poppin'"
+        },
+        {
+          "t": 5.96,
+          "text": "up"
+        },
+        {
+          "t": 6.3,
+          "text": "like"
+        },
+        {
+          "t": 6.4,
+          "text": "Wodo"
+        }
+      ]
+    },
+    {
+      "start": 7.82,
+      "end": 9.536,
+      "text": "Middle school faces in the new post",
+      "words": [
+        {
+          "t": 7.82,
+          "text": "Middle"
+        },
+        {
+          "t": 7.92,
+          "text": "school"
+        },
+        {
+          "t": 8.2,
+          "text": "faces"
+        },
+        {
+          "t": 8.768,
+          "text": "in"
+        },
+        {
+          "t": 8.92,
+          "text": "the"
+        },
+        {
+          "t": 9.02,
+          "text": "new"
+        },
+        {
+          "t": 9.24,
+          "text": "post"
+        }
+      ]
+    },
+    {
+      "start": 9.696,
+      "end": 11.98,
+      "text": "I thought we'd talk, talk, really get honest",
+      "words": [
+        {
+          "t": 9.696,
+          "text": "I"
+        },
+        {
+          "t": 9.86,
+          "text": "thought"
+        },
+        {
+          "t": 9.94,
+          "text": "we'd"
+        },
+        {
+          "t": 10.28,
+          "text": "talk,"
+        },
+        {
+          "t": 10.58,
+          "text": "talk,"
+        },
+        {
+          "t": 10.9,
+          "text": "really"
+        },
+        {
+          "t": 11.16,
+          "text": "get"
+        },
+        {
+          "t": 11.44,
+          "text": "honest"
+        }
+      ]
+    },
+    {
+      "start": 11.98,
+      "end": 14.016,
+      "text": "Drop the mask, no fake persona",
+      "words": [
+        {
+          "t": 11.98,
+          "text": "Drop"
+        },
+        {
+          "t": 12.72,
+          "text": "the"
+        },
+        {
+          "t": 12.82,
+          "text": "mask,"
+        },
+        {
+          "t": 13.2,
+          "text": "no"
+        },
+        {
+          "t": 13.32,
+          "text": "fake"
+        },
+        {
+          "t": 13.68,
+          "text": "persona"
+        }
+      ]
+    },
+    {
+      "start": 14.272,
+      "end": 16.82,
+      "text": "Find your tribe, find your people",
+      "words": [
+        {
+          "t": 14.272,
+          "text": "Find"
+        },
+        {
+          "t": 15.0,
+          "text": "your"
+        },
+        {
+          "t": 15.18,
+          "text": "tribe,"
+        },
+        {
+          "t": 15.8,
+          "text": "find"
+        },
+        {
+          "t": 16.16,
+          "text": "your"
+        },
+        {
+          "t": 16.46,
+          "text": "people"
+        }
+      ]
+    },
+    {
+      "start": 16.82,
+      "end": 19.44,
+      "text": "Make the whole cold world feel warm",
+      "words": [
+        {
+          "t": 16.82,
+          "text": "Make"
+        },
+        {
+          "t": 17.38,
+          "text": "the"
+        },
+        {
+          "t": 17.56,
+          "text": "whole"
+        },
+        {
+          "t": 17.78,
+          "text": "cold"
+        },
+        {
+          "t": 18.1,
+          "text": "world"
+        },
+        {
+          "t": 18.54,
+          "text": "feel"
+        },
+        {
+          "t": 18.94,
+          "text": "warm"
+        }
+      ]
+    },
+    {
+      "start": 19.66,
+      "end": 22.36,
+      "text": "Had a page with a song and a mood on it",
+      "words": [
+        {
+          "t": 19.66,
+          "text": "Had"
+        },
+        {
+          "t": 20.26,
+          "text": "a"
+        },
+        {
+          "t": 20.4,
+          "text": "page"
+        },
+        {
+          "t": 20.64,
+          "text": "with"
+        },
+        {
+          "t": 20.88,
+          "text": "a"
+        },
+        {
+          "t": 21.04,
+          "text": "song"
+        },
+        {
+          "t": 21.34,
+          "text": "and"
+        },
+        {
+          "t": 21.54,
+          "text": "a"
+        },
+        {
+          "t": 21.66,
+          "text": "mood"
+        },
+        {
+          "t": 21.92,
+          "text": "on"
+        },
+        {
+          "t": 22.18,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 22.36,
+      "end": 24.9,
+      "text": "Top friends like a room with your crew on it",
+      "words": [
+        {
+          "t": 22.36,
+          "text": "Top"
+        },
+        {
+          "t": 22.82,
+          "text": "friends"
+        },
+        {
+          "t": 23.18,
+          "text": "like"
+        },
+        {
+          "t": 23.38,
+          "text": "a"
+        },
+        {
+          "t": 23.54,
+          "text": "room"
+        },
+        {
+          "t": 23.82,
+          "text": "with"
+        },
+        {
+          "t": 24.02,
+          "text": "your"
+        },
+        {
+          "t": 24.18,
+          "text": "crew"
+        },
+        {
+          "t": 24.46,
+          "text": "on"
+        },
+        {
+          "t": 24.72,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 24.97,
+      "end": 27.44,
+      "text": "Comments felt live, had truth on it",
+      "words": [
+        {
+          "t": 24.97,
+          "text": "Comments"
+        },
+        {
+          "t": 25.72,
+          "text": "felt"
+        },
+        {
+          "t": 25.96,
+          "text": "live,"
+        },
+        {
+          "t": 26.36,
+          "text": "had"
+        },
+        {
+          "t": 26.56,
+          "text": "truth"
+        },
+        {
+          "t": 26.86,
+          "text": "on"
+        },
+        {
+          "t": 27.22,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 27.44,
+      "end": 29.88,
+      "text": "Now the whole feed got a suit on it",
+      "words": [
+        {
+          "t": 27.44,
+          "text": "Now"
+        },
+        {
+          "t": 27.84,
+          "text": "the"
+        },
+        {
+          "t": 27.94,
+          "text": "whole"
+        },
+        {
+          "t": 28.24,
+          "text": "feed"
+        },
+        {
+          "t": 28.6,
+          "text": "got"
+        },
+        {
+          "t": 28.92,
+          "text": "a"
+        },
+        {
+          "t": 29.14,
+          "text": "suit"
+        },
+        {
+          "t": 29.48,
+          "text": "on"
+        },
+        {
+          "t": 29.76,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 29.88,
+      "end": 31.98,
+      "text": "Ads in the cracks, brands in the chat",
+      "words": [
+        {
+          "t": 29.88,
+          "text": "Ads"
+        },
+        {
+          "t": 30.1,
+          "text": "in"
+        },
+        {
+          "t": 30.34,
+          "text": "the"
+        },
+        {
+          "t": 30.46,
+          "text": "cracks,"
+        },
+        {
+          "t": 30.9,
+          "text": "brands"
+        },
+        {
+          "t": 31.36,
+          "text": "in"
+        },
+        {
+          "t": 31.6,
+          "text": "the"
+        },
+        {
+          "t": 31.72,
+          "text": "chat"
+        }
+      ]
+    },
+    {
+      "start": 31.98,
+      "end": 34.52,
+      "text": "Everybody got stacks, everybody wants claps",
+      "words": [
+        {
+          "t": 31.98,
+          "text": "Everybody"
+        },
+        {
+          "t": 32.4,
+          "text": "got"
+        },
+        {
+          "t": 32.88,
+          "text": "stacks,"
+        },
+        {
+          "t": 33.44,
+          "text": "everybody"
+        },
+        {
+          "t": 33.66,
+          "text": "wants"
+        },
+        {
+          "t": 34.18,
+          "text": "claps"
+        }
+      ]
+    },
+    {
+      "start": 34.52,
+      "end": 37.0,
+      "text": "Everybody got reach, but don't reach back",
+      "words": [
+        {
+          "t": 34.52,
+          "text": "Everybody"
+        },
+        {
+          "t": 34.9,
+          "text": "got"
+        },
+        {
+          "t": 35.42,
+          "text": "reach,"
+        },
+        {
+          "t": 35.9,
+          "text": "but"
+        },
+        {
+          "t": 36.04,
+          "text": "don't"
+        },
+        {
+          "t": 36.48,
+          "text": "reach"
+        },
+        {
+          "t": 36.72,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 37.0,
+      "end": 39.38,
+      "text": "How we got this close and lost contact",
+      "words": [
+        {
+          "t": 37.0,
+          "text": "How"
+        },
+        {
+          "t": 37.28,
+          "text": "we"
+        },
+        {
+          "t": 37.44,
+          "text": "got"
+        },
+        {
+          "t": 37.64,
+          "text": "this"
+        },
+        {
+          "t": 37.94,
+          "text": "close"
+        },
+        {
+          "t": 38.3,
+          "text": "and"
+        },
+        {
+          "t": 38.56,
+          "text": "lost"
+        },
+        {
+          "t": 38.84,
+          "text": "contact"
+        }
+      ]
+    },
+    {
+      "start": 39.38,
+      "end": 40.9,
+      "text": "You can see me in a second",
+      "words": [
+        {
+          "t": 39.38,
+          "text": "You"
+        },
+        {
+          "t": 39.8,
+          "text": "can"
+        },
+        {
+          "t": 39.94,
+          "text": "see"
+        },
+        {
+          "t": 40.16,
+          "text": "me"
+        },
+        {
+          "t": 40.3,
+          "text": "in"
+        },
+        {
+          "t": 40.5,
+          "text": "a"
+        },
+        {
+          "t": 40.58,
+          "text": "second"
+        }
+      ]
+    },
+    {
+      "start": 41.72,
+      "end": 43.4,
+      "text": "You can call me any day",
+      "words": [
+        {
+          "t": 41.72,
+          "text": "You"
+        },
+        {
+          "t": 42.304,
+          "text": "can"
+        },
+        {
+          "t": 42.46,
+          "text": "call"
+        },
+        {
+          "t": 42.72,
+          "text": "me"
+        },
+        {
+          "t": 42.84,
+          "text": "any"
+        },
+        {
+          "t": 43.06,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 44.27,
+      "end": 46.07,
+      "text": "You can love me in private",
+      "words": [
+        {
+          "t": 44.27,
+          "text": "You"
+        },
+        {
+          "t": 44.82,
+          "text": "can"
+        },
+        {
+          "t": 44.98,
+          "text": "love"
+        },
+        {
+          "t": 45.18,
+          "text": "me"
+        },
+        {
+          "t": 45.4,
+          "text": "in"
+        },
+        {
+          "t": 45.52,
+          "text": "private"
+        }
+      ]
+    },
+    {
+      "start": 46.12,
+      "end": 48.44,
+      "text": "But scroll right past my name",
+      "words": [
+        {
+          "t": 46.12,
+          "text": "But"
+        },
+        {
+          "t": 46.72,
+          "text": "scroll"
+        },
+        {
+          "t": 47.04,
+          "text": "right"
+        },
+        {
+          "t": 47.44,
+          "text": "past"
+        },
+        {
+          "t": 47.74,
+          "text": "my"
+        },
+        {
+          "t": 48.06,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 49.59,
+      "end": 50.99,
+      "text": "Funny how we got connected",
+      "words": [
+        {
+          "t": 49.59,
+          "text": "Funny"
+        },
+        {
+          "t": 50.04,
+          "text": "how"
+        },
+        {
+          "t": 50.22,
+          "text": "we"
+        },
+        {
+          "t": 50.4,
+          "text": "got"
+        },
+        {
+          "t": 50.54,
+          "text": "connected"
+        }
+      ]
+    },
+    {
+      "start": 51.9,
+      "end": 53.52,
+      "text": "Then forgot how to stay",
+      "words": [
+        {
+          "t": 51.9,
+          "text": "Then"
+        },
+        {
+          "t": 52.46,
+          "text": "forgot"
+        },
+        {
+          "t": 52.7,
+          "text": "how"
+        },
+        {
+          "t": 53.0,
+          "text": "to"
+        },
+        {
+          "t": 53.18,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 54.56,
+      "end": 56.16,
+      "text": "You're right there in my pocket",
+      "words": [
+        {
+          "t": 54.56,
+          "text": "You're"
+        },
+        {
+          "t": 54.86,
+          "text": "right"
+        },
+        {
+          "t": 55.06,
+          "text": "there"
+        },
+        {
+          "t": 55.34,
+          "text": "in"
+        },
+        {
+          "t": 55.5,
+          "text": "my"
+        },
+        {
+          "t": 55.68,
+          "text": "pocket"
+        }
+      ]
+    },
+    {
+      "start": 56.16,
+      "end": 58.4,
+      "text": "But you feel the world away",
+      "words": [
+        {
+          "t": 56.16,
+          "text": "But"
+        },
+        {
+          "t": 56.52,
+          "text": "you"
+        },
+        {
+          "t": 56.84,
+          "text": "feel"
+        },
+        {
+          "t": 57.2,
+          "text": "the"
+        },
+        {
+          "t": 57.48,
+          "text": "world"
+        },
+        {
+          "t": 57.96,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 59.3,
+      "end": 59.86,
+      "text": "Everybody",
+      "words": [
+        {
+          "t": 59.3,
+          "text": "Everybody"
+        }
+      ]
+    },
+    {
+      "start": 59.88,
+      "end": 60.82,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 59.88,
+          "text": "One"
+        },
+        {
+          "t": 60.08,
+          "text": "tap"
+        },
+        {
+          "t": 60.48,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 62.2,
+      "end": 64.06,
+      "text": "From a real conversation,",
+      "words": [
+        {
+          "t": 62.2,
+          "text": "From"
+        },
+        {
+          "t": 62.76,
+          "text": "a"
+        },
+        {
+          "t": 63.32,
+          "text": "real"
+        },
+        {
+          "t": 63.58,
+          "text": "conversation,"
+        }
+      ]
+    },
+    {
+      "start": 64.3,
+      "end": 65.58,
+      "text": "but we don't say a thing",
+      "words": [
+        {
+          "t": 64.3,
+          "text": "but"
+        },
+        {
+          "t": 64.48,
+          "text": "we"
+        },
+        {
+          "t": 64.64,
+          "text": "don't"
+        },
+        {
+          "t": 64.94,
+          "text": "say"
+        },
+        {
+          "t": 65.06,
+          "text": "a"
+        },
+        {
+          "t": 65.24,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 65.58,
+      "end": 67.28,
+      "text": "We one tap away",
+      "words": [
+        {
+          "t": 65.58,
+          "text": "We"
+        },
+        {
+          "t": 65.76,
+          "text": "one"
+        },
+        {
+          "t": 66.16,
+          "text": "tap"
+        },
+        {
+          "t": 66.7,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 67.45,
+      "end": 69.24,
+      "text": "From I see you keep going",
+      "words": [
+        {
+          "t": 67.45,
+          "text": "From"
+        },
+        {
+          "t": 68.1,
+          "text": "I"
+        },
+        {
+          "t": 68.24,
+          "text": "see"
+        },
+        {
+          "t": 68.46,
+          "text": "you"
+        },
+        {
+          "t": 68.62,
+          "text": "keep"
+        },
+        {
+          "t": 68.88,
+          "text": "going"
+        }
+      ]
+    },
+    {
+      "start": 69.24,
+      "end": 70.58,
+      "text": "From I'm proud of your dreams",
+      "words": [
+        {
+          "t": 69.24,
+          "text": "From"
+        },
+        {
+          "t": 69.54,
+          "text": "I'm"
+        },
+        {
+          "t": 69.68,
+          "text": "proud"
+        },
+        {
+          "t": 69.94,
+          "text": "of"
+        },
+        {
+          "t": 70.16,
+          "text": "your"
+        },
+        {
+          "t": 70.24,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 70.58,
+      "end": 72.0,
+      "text": "Save your lights for the strangers",
+      "words": [
+        {
+          "t": 70.58,
+          "text": "Save"
+        },
+        {
+          "t": 70.78,
+          "text": "your"
+        },
+        {
+          "t": 70.9,
+          "text": "lights"
+        },
+        {
+          "t": 71.16,
+          "text": "for"
+        },
+        {
+          "t": 71.36,
+          "text": "the"
+        },
+        {
+          "t": 71.5,
+          "text": "strangers"
+        }
+      ]
+    },
+    {
+      "start": 72.41,
+      "end": 74.42,
+      "text": "Save your hearts for the stars",
+      "words": [
+        {
+          "t": 72.41,
+          "text": "Save"
+        },
+        {
+          "t": 73.16,
+          "text": "your"
+        },
+        {
+          "t": 73.42,
+          "text": "hearts"
+        },
+        {
+          "t": 73.72,
+          "text": "for"
+        },
+        {
+          "t": 73.88,
+          "text": "the"
+        },
+        {
+          "t": 74.0,
+          "text": "stars"
+        }
+      ]
+    },
+    {
+      "start": 75.2,
+      "end": 77.76,
+      "text": "But the ones who really know you act like",
+      "words": [
+        {
+          "t": 75.2,
+          "text": "But"
+        },
+        {
+          "t": 75.76,
+          "text": "the"
+        },
+        {
+          "t": 75.9,
+          "text": "ones"
+        },
+        {
+          "t": 76.16,
+          "text": "who"
+        },
+        {
+          "t": 76.28,
+          "text": "really"
+        },
+        {
+          "t": 76.5,
+          "text": "know"
+        },
+        {
+          "t": 76.82,
+          "text": "you"
+        },
+        {
+          "t": 77.16,
+          "text": "act"
+        },
+        {
+          "t": 77.52,
+          "text": "like"
+        }
+      ]
+    },
+    {
+      "start": 78.01,
+      "end": 79.82,
+      "text": "Loving you is hard",
+      "words": [
+        {
+          "t": 78.01,
+          "text": "Loving"
+        },
+        {
+          "t": 78.86,
+          "text": "you"
+        },
+        {
+          "t": 79.16,
+          "text": "is"
+        },
+        {
+          "t": 79.5,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 79.82,
+      "end": 81.04,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 79.82,
+          "text": "One"
+        },
+        {
+          "t": 80.2,
+          "text": "tap"
+        },
+        {
+          "t": 80.62,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 82.0,
+      "end": 84.26,
+      "text": "So why do I feel alone",
+      "words": [
+        {
+          "t": 82.0,
+          "text": "So"
+        },
+        {
+          "t": 82.592,
+          "text": "why"
+        },
+        {
+          "t": 82.84,
+          "text": "do"
+        },
+        {
+          "t": 83.06,
+          "text": "I"
+        },
+        {
+          "t": 83.28,
+          "text": "feel"
+        },
+        {
+          "t": 83.7,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 84.26,
+      "end": 85.8,
+      "text": "In a room full of names",
+      "words": [
+        {
+          "t": 84.26,
+          "text": "In"
+        },
+        {
+          "t": 84.66,
+          "text": "a"
+        },
+        {
+          "t": 84.78,
+          "text": "room"
+        },
+        {
+          "t": 85.08,
+          "text": "full"
+        },
+        {
+          "t": 85.32,
+          "text": "of"
+        },
+        {
+          "t": 85.36,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 85.8,
+      "end": 88.04,
+      "text": "Tap, tap, but you don't reach back",
+      "words": [
+        {
+          "t": 85.8,
+          "text": "Tap,"
+        },
+        {
+          "t": 86.4,
+          "text": "tap,"
+        },
+        {
+          "t": 86.68,
+          "text": "but"
+        },
+        {
+          "t": 86.94,
+          "text": "you"
+        },
+        {
+          "t": 87.2,
+          "text": "don't"
+        },
+        {
+          "t": 87.58,
+          "text": "reach"
+        },
+        {
+          "t": 87.74,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 88.04,
+      "end": 88.9,
+      "text": "Heart, heart",
+      "words": [
+        {
+          "t": 88.04,
+          "text": "Heart,"
+        },
+        {
+          "t": 88.58,
+          "text": "heart"
+        }
+      ]
+    },
+    {
+      "start": 88.9,
+      "end": 89.86,
+      "text": "But it don't matter",
+      "words": [
+        {
+          "t": 88.9,
+          "text": "But"
+        },
+        {
+          "t": 89.42,
+          "text": "it"
+        },
+        {
+          "t": 89.56,
+          "text": "don't"
+        },
+        {
+          "t": 89.86,
+          "text": "matter"
+        }
+      ]
+    },
+    {
+      "start": 89.88,
+      "end": 90.74,
+      "text": "I don't feel like that",
+      "words": [
+        {
+          "t": 89.88,
+          "text": "I"
+        },
+        {
+          "t": 89.88,
+          "text": "don't"
+        },
+        {
+          "t": 89.88,
+          "text": "feel"
+        },
+        {
+          "t": 90.02,
+          "text": "like"
+        },
+        {
+          "t": 90.42,
+          "text": "that"
+        }
+      ]
+    },
+    {
+      "start": 90.74,
+      "end": 91.58,
+      "text": "Close, close, close",
+      "words": [
+        {
+          "t": 90.74,
+          "text": "Close,"
+        },
+        {
+          "t": 91.14,
+          "text": "close,"
+        },
+        {
+          "t": 91.42,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 91.58,
+      "end": 92.92,
+      "text": "But we don't connect",
+      "words": [
+        {
+          "t": 91.58,
+          "text": "But"
+        },
+        {
+          "t": 91.94,
+          "text": "we"
+        },
+        {
+          "t": 92.24,
+          "text": "don't"
+        },
+        {
+          "t": 92.6,
+          "text": "connect"
+        }
+      ]
+    },
+    {
+      "start": 92.92,
+      "end": 94.44,
+      "text": "One tap, one tap away",
+      "words": [
+        {
+          "t": 92.92,
+          "text": "One"
+        },
+        {
+          "t": 93.32,
+          "text": "tap,"
+        },
+        {
+          "t": 93.54,
+          "text": "one"
+        },
+        {
+          "t": 93.78,
+          "text": "tap"
+        },
+        {
+          "t": 94.16,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 94.44,
+      "end": 95.62,
+      "text": "And we still forget",
+      "words": [
+        {
+          "t": 94.44,
+          "text": "And"
+        },
+        {
+          "t": 94.72,
+          "text": "we"
+        },
+        {
+          "t": 94.86,
+          "text": "still"
+        },
+        {
+          "t": 95.18,
+          "text": "forget"
+        }
+      ]
+    },
+    {
+      "start": 95.62,
+      "end": 96.66,
+      "text": "Click, click, click",
+      "words": [
+        {
+          "t": 95.62,
+          "text": "Click,"
+        },
+        {
+          "t": 96.12,
+          "text": "click,"
+        },
+        {
+          "t": 96.48,
+          "text": "click"
+        }
+      ]
+    },
+    {
+      "start": 96.66,
+      "end": 98.28,
+      "text": "Everybody got a new rule",
+      "words": [
+        {
+          "t": 96.66,
+          "text": "Everybody"
+        },
+        {
+          "t": 97.18,
+          "text": "got"
+        },
+        {
+          "t": 97.62,
+          "text": "a"
+        },
+        {
+          "t": 97.76,
+          "text": "new"
+        },
+        {
+          "t": 97.98,
+          "text": "rule"
+        }
+      ]
+    },
+    {
+      "start": 98.28,
+      "end": 100.84,
+      "text": "Don't hide friends that ain't cool, cool",
+      "words": [
+        {
+          "t": 98.28,
+          "text": "Don't"
+        },
+        {
+          "t": 99.0,
+          "text": "hide"
+        },
+        {
+          "t": 99.2,
+          "text": "friends"
+        },
+        {
+          "t": 99.52,
+          "text": "that"
+        },
+        {
+          "t": 99.82,
+          "text": "ain't"
+        },
+        {
+          "t": 100.18,
+          "text": "cool,"
+        },
+        {
+          "t": 100.58,
+          "text": "cool"
+        }
+      ]
+    },
+    {
+      "start": 100.99,
+      "end": 103.16,
+      "text": "Say that love for the big names",
+      "words": [
+        {
+          "t": 100.99,
+          "text": "Say"
+        },
+        {
+          "t": 101.64,
+          "text": "that"
+        },
+        {
+          "t": 101.9,
+          "text": "love"
+        },
+        {
+          "t": 102.16,
+          "text": "for"
+        },
+        {
+          "t": 102.34,
+          "text": "the"
+        },
+        {
+          "t": 102.46,
+          "text": "big"
+        },
+        {
+          "t": 102.76,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 103.16,
+      "end": 104.68,
+      "text": "Blue checks, big chains",
+      "words": [
+        {
+          "t": 103.16,
+          "text": "Blue"
+        },
+        {
+          "t": 103.6,
+          "text": "checks,"
+        },
+        {
+          "t": 104.06,
+          "text": "big"
+        },
+        {
+          "t": 104.24,
+          "text": "chains"
+        }
+      ]
+    },
+    {
+      "start": 104.68,
+      "end": 105.62,
+      "text": "Big views",
+      "words": [
+        {
+          "t": 104.68,
+          "text": "Big"
+        },
+        {
+          "t": 105.16,
+          "text": "views"
+        }
+      ]
+    },
+    {
+      "start": 105.62,
+      "end": 107.34,
+      "text": "The difference when you blow up overnight",
+      "words": [
+        {
+          "t": 105.62,
+          "text": "The"
+        },
+        {
+          "t": 106.0,
+          "text": "difference"
+        },
+        {
+          "t": 106.24,
+          "text": "when"
+        },
+        {
+          "t": 106.48,
+          "text": "you"
+        },
+        {
+          "t": 106.6,
+          "text": "blow"
+        },
+        {
+          "t": 106.76,
+          "text": "up"
+        },
+        {
+          "t": 106.98,
+          "text": "overnight"
+        }
+      ]
+    },
+    {
+      "start": 108.68,
+      "end": 110.06,
+      "text": "Everybody's where they saw the light",
+      "words": [
+        {
+          "t": 108.68,
+          "text": "Everybody's"
+        },
+        {
+          "t": 109.18,
+          "text": "where"
+        },
+        {
+          "t": 109.26,
+          "text": "they"
+        },
+        {
+          "t": 109.46,
+          "text": "saw"
+        },
+        {
+          "t": 109.6,
+          "text": "the"
+        },
+        {
+          "t": 109.74,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 110.78,
+      "end": 112.54,
+      "text": "Same ones quiet when you need to fight",
+      "words": [
+        {
+          "t": 110.78,
+          "text": "Same"
+        },
+        {
+          "t": 110.88,
+          "text": "ones"
+        },
+        {
+          "t": 111.24,
+          "text": "quiet"
+        },
+        {
+          "t": 111.5,
+          "text": "when"
+        },
+        {
+          "t": 111.82,
+          "text": "you"
+        },
+        {
+          "t": 111.94,
+          "text": "need"
+        },
+        {
+          "t": 112.16,
+          "text": "to"
+        },
+        {
+          "t": 112.28,
+          "text": "fight"
+        }
+      ]
+    },
+    {
+      "start": 112.54,
+      "end": 115.38,
+      "text": "Now they in the comments like that's my guy",
+      "words": [
+        {
+          "t": 112.54,
+          "text": "Now"
+        },
+        {
+          "t": 113.06,
+          "text": "they"
+        },
+        {
+          "t": 113.2,
+          "text": "in"
+        },
+        {
+          "t": 113.4,
+          "text": "the"
+        },
+        {
+          "t": 113.58,
+          "text": "comments"
+        },
+        {
+          "t": 114.04,
+          "text": "like"
+        },
+        {
+          "t": 114.34,
+          "text": "that's"
+        },
+        {
+          "t": 114.76,
+          "text": "my"
+        },
+        {
+          "t": 114.88,
+          "text": "guy"
+        }
+      ]
+    },
+    {
+      "start": 115.38,
+      "end": 117.68,
+      "text": "Nah, that's wild, that's weird to me",
+      "words": [
+        {
+          "t": 115.38,
+          "text": "Nah,"
+        },
+        {
+          "t": 116.04,
+          "text": "that's"
+        },
+        {
+          "t": 116.34,
+          "text": "wild,"
+        },
+        {
+          "t": 116.68,
+          "text": "that's"
+        },
+        {
+          "t": 116.96,
+          "text": "weird"
+        },
+        {
+          "t": 117.3,
+          "text": "to"
+        },
+        {
+          "t": 117.48,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 117.68,
+      "end": 119.78,
+      "text": "Friendship turned into courage",
+      "words": [
+        {
+          "t": 117.68,
+          "text": "Friendship"
+        },
+        {
+          "t": 118.48,
+          "text": "turned"
+        },
+        {
+          "t": 118.86,
+          "text": "into"
+        },
+        {
+          "t": 119.24,
+          "text": "courage"
+        }
+      ]
+    },
+    {
+      "start": 119.88,
+      "end": 122.9,
+      "text": "We got phones with emergency speed",
+      "words": [
+        {
+          "t": 119.88,
+          "text": "We"
+        },
+        {
+          "t": 120.54,
+          "text": "got"
+        },
+        {
+          "t": 120.94,
+          "text": "phones"
+        },
+        {
+          "t": 121.4,
+          "text": "with"
+        },
+        {
+          "t": 121.66,
+          "text": "emergency"
+        },
+        {
+          "t": 122.06,
+          "text": "speed"
+        }
+      ]
+    },
+    {
+      "start": 122.9,
+      "end": 125.34,
+      "text": "But nobody checks on your emergency",
+      "words": [
+        {
+          "t": 122.9,
+          "text": "But"
+        },
+        {
+          "t": 123.18,
+          "text": "nobody"
+        },
+        {
+          "t": 123.6,
+          "text": "checks"
+        },
+        {
+          "t": 124.14,
+          "text": "on"
+        },
+        {
+          "t": 124.46,
+          "text": "your"
+        },
+        {
+          "t": 124.68,
+          "text": "emergency"
+        }
+      ]
+    },
+    {
+      "start": 125.52,
+      "end": 128.62,
+      "text": "I don't need fame, don't need no crown",
+      "words": [
+        {
+          "t": 125.52,
+          "text": "I"
+        },
+        {
+          "t": 126.32,
+          "text": "don't"
+        },
+        {
+          "t": 126.68,
+          "text": "need"
+        },
+        {
+          "t": 126.98,
+          "text": "fame,"
+        },
+        {
+          "t": 127.44,
+          "text": "don't"
+        },
+        {
+          "t": 127.74,
+          "text": "need"
+        },
+        {
+          "t": 127.98,
+          "text": "no"
+        },
+        {
+          "t": 128.22,
+          "text": "crown"
+        }
+      ]
+    },
+    {
+      "start": 128.62,
+      "end": 131.16,
+      "text": "The state keep going when I'm feeling down",
+      "words": [
+        {
+          "t": 128.62,
+          "text": "The"
+        },
+        {
+          "t": 128.92,
+          "text": "state"
+        },
+        {
+          "t": 129.22,
+          "text": "keep"
+        },
+        {
+          "t": 129.54,
+          "text": "going"
+        },
+        {
+          "t": 129.86,
+          "text": "when"
+        },
+        {
+          "t": 130.16,
+          "text": "I'm"
+        },
+        {
+          "t": 130.48,
+          "text": "feeling"
+        },
+        {
+          "t": 130.68,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 131.16,
+      "end": 133.7,
+      "text": "We built the whole world out of sound",
+      "words": [
+        {
+          "t": 131.16,
+          "text": "We"
+        },
+        {
+          "t": 131.5,
+          "text": "built"
+        },
+        {
+          "t": 131.86,
+          "text": "the"
+        },
+        {
+          "t": 132.02,
+          "text": "whole"
+        },
+        {
+          "t": 132.26,
+          "text": "world"
+        },
+        {
+          "t": 132.84,
+          "text": "out"
+        },
+        {
+          "t": 133.08,
+          "text": "of"
+        },
+        {
+          "t": 133.2,
+          "text": "sound"
+        }
+      ]
+    },
+    {
+      "start": 133.7,
+      "end": 136.12,
+      "text": "And you did the Pico, we care about now",
+      "words": [
+        {
+          "t": 133.7,
+          "text": "And"
+        },
+        {
+          "t": 133.98,
+          "text": "you"
+        },
+        {
+          "t": 134.24,
+          "text": "did"
+        },
+        {
+          "t": 134.4,
+          "text": "the"
+        },
+        {
+          "t": 134.58,
+          "text": "Pico,"
+        },
+        {
+          "t": 135.02,
+          "text": "we"
+        },
+        {
+          "t": 135.2,
+          "text": "care"
+        },
+        {
+          "t": 135.5,
+          "text": "about"
+        },
+        {
+          "t": 135.72,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 136.39,
+      "end": 138.14,
+      "text": "You can see me in a second",
+      "words": [
+        {
+          "t": 136.39,
+          "text": "You"
+        },
+        {
+          "t": 137.024,
+          "text": "can"
+        },
+        {
+          "t": 137.18,
+          "text": "see"
+        },
+        {
+          "t": 137.4,
+          "text": "me"
+        },
+        {
+          "t": 137.54,
+          "text": "in"
+        },
+        {
+          "t": 137.76,
+          "text": "a"
+        },
+        {
+          "t": 137.84,
+          "text": "second"
+        }
+      ]
+    },
+    {
+      "start": 138.14,
+      "end": 139.36,
+      "text": "You can call me any day",
+      "words": [
+        {
+          "t": 138.14,
+          "text": "You"
+        },
+        {
+          "t": 138.32,
+          "text": "can"
+        },
+        {
+          "t": 138.48,
+          "text": "call"
+        },
+        {
+          "t": 138.72,
+          "text": "me"
+        },
+        {
+          "t": 138.84,
+          "text": "any"
+        },
+        {
+          "t": 139.06,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 139.36,
+      "end": 140.7,
+      "text": "You can call me any day",
+      "words": [
+        {
+          "t": 139.36,
+          "text": "You"
+        },
+        {
+          "t": 139.58,
+          "text": "can"
+        },
+        {
+          "t": 139.76,
+          "text": "call"
+        },
+        {
+          "t": 139.96,
+          "text": "me"
+        },
+        {
+          "t": 140.1,
+          "text": "any"
+        },
+        {
+          "t": 140.36,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 140.7,
+      "end": 141.95,
+      "text": "You can love me in private",
+      "words": [
+        {
+          "t": 140.7,
+          "text": "You"
+        },
+        {
+          "t": 140.9,
+          "text": "can"
+        },
+        {
+          "t": 141.02,
+          "text": "love"
+        },
+        {
+          "t": 141.2,
+          "text": "me"
+        },
+        {
+          "t": 141.38,
+          "text": "in"
+        },
+        {
+          "t": 141.5,
+          "text": "private"
+        }
+      ]
+    },
+    {
+      "start": 142.04,
+      "end": 144.62,
+      "text": "But scroll right past my name",
+      "words": [
+        {
+          "t": 142.04,
+          "text": "But"
+        },
+        {
+          "t": 142.56,
+          "text": "scroll"
+        },
+        {
+          "t": 142.8,
+          "text": "right"
+        },
+        {
+          "t": 143.44,
+          "text": "past"
+        },
+        {
+          "t": 143.72,
+          "text": "my"
+        },
+        {
+          "t": 144.08,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 144.62,
+      "end": 146.9,
+      "text": "I scroll right past your connected",
+      "words": [
+        {
+          "t": 144.62,
+          "text": "I"
+        },
+        {
+          "t": 145.26,
+          "text": "scroll"
+        },
+        {
+          "t": 145.6,
+          "text": "right"
+        },
+        {
+          "t": 146.06,
+          "text": "past"
+        },
+        {
+          "t": 146.3,
+          "text": "your"
+        },
+        {
+          "t": 146.48,
+          "text": "connected"
+        }
+      ]
+    },
+    {
+      "start": 146.9,
+      "end": 149.56,
+      "text": "Then forgot how to stay",
+      "words": [
+        {
+          "t": 146.9,
+          "text": "Then"
+        },
+        {
+          "t": 147.82,
+          "text": "forgot"
+        },
+        {
+          "t": 148.12,
+          "text": "how"
+        },
+        {
+          "t": 148.92,
+          "text": "to"
+        },
+        {
+          "t": 149.16,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 150.62,
+      "end": 152.22,
+      "text": "You right there in my pocket",
+      "words": [
+        {
+          "t": 150.62,
+          "text": "You"
+        },
+        {
+          "t": 150.72,
+          "text": "right"
+        },
+        {
+          "t": 151.02,
+          "text": "there"
+        },
+        {
+          "t": 151.3,
+          "text": "in"
+        },
+        {
+          "t": 151.54,
+          "text": "my"
+        },
+        {
+          "t": 151.72,
+          "text": "pocket"
+        }
+      ]
+    },
+    {
+      "start": 152.22,
+      "end": 154.26,
+      "text": "But you feel the world away",
+      "words": [
+        {
+          "t": 152.22,
+          "text": "But"
+        },
+        {
+          "t": 152.62,
+          "text": "you"
+        },
+        {
+          "t": 152.8,
+          "text": "feel"
+        },
+        {
+          "t": 153.32,
+          "text": "the"
+        },
+        {
+          "t": 153.5,
+          "text": "world"
+        },
+        {
+          "t": 153.84,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 155.46,
+      "end": 156.82,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 155.46,
+          "text": "One"
+        },
+        {
+          "t": 156.02,
+          "text": "tap"
+        },
+        {
+          "t": 156.42,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 156.82,
+      "end": 158.12,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 156.82,
+          "text": "One"
+        },
+        {
+          "t": 157.34,
+          "text": "tap"
+        },
+        {
+          "t": 157.66,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 159.04,
+      "end": 161.58,
+      "text": "From a real conversation but we don't say a thing",
+      "words": [
+        {
+          "t": 159.04,
+          "text": "From"
+        },
+        {
+          "t": 159.14,
+          "text": "a"
+        },
+        {
+          "t": 159.34,
+          "text": "real"
+        },
+        {
+          "t": 159.6,
+          "text": "conversation"
+        },
+        {
+          "t": 160.0,
+          "text": "but"
+        },
+        {
+          "t": 160.44,
+          "text": "we"
+        },
+        {
+          "t": 160.6,
+          "text": "don't"
+        },
+        {
+          "t": 160.94,
+          "text": "say"
+        },
+        {
+          "t": 161.12,
+          "text": "a"
+        },
+        {
+          "t": 161.24,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 161.58,
+      "end": 163.14,
+      "text": "We one tap away",
+      "words": [
+        {
+          "t": 161.58,
+          "text": "We"
+        },
+        {
+          "t": 161.82,
+          "text": "one"
+        },
+        {
+          "t": 162.04,
+          "text": "tap"
+        },
+        {
+          "t": 162.72,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 163.39,
+      "end": 165.34,
+      "text": "Before I see you keep going",
+      "words": [
+        {
+          "t": 163.39,
+          "text": "Before"
+        },
+        {
+          "t": 164.04,
+          "text": "I"
+        },
+        {
+          "t": 164.3,
+          "text": "see"
+        },
+        {
+          "t": 164.5,
+          "text": "you"
+        },
+        {
+          "t": 164.68,
+          "text": "keep"
+        },
+        {
+          "t": 164.88,
+          "text": "going"
+        }
+      ]
+    },
+    {
+      "start": 165.34,
+      "end": 166.6,
+      "text": "From I'm proud of your dreams",
+      "words": [
+        {
+          "t": 165.34,
+          "text": "From"
+        },
+        {
+          "t": 165.58,
+          "text": "I'm"
+        },
+        {
+          "t": 165.7,
+          "text": "proud"
+        },
+        {
+          "t": 165.94,
+          "text": "of"
+        },
+        {
+          "t": 166.18,
+          "text": "your"
+        },
+        {
+          "t": 166.3,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 166.6,
+      "end": 168.0,
+      "text": "Save your life for the strangers",
+      "words": [
+        {
+          "t": 166.6,
+          "text": "Save"
+        },
+        {
+          "t": 166.82,
+          "text": "your"
+        },
+        {
+          "t": 166.94,
+          "text": "life"
+        },
+        {
+          "t": 167.18,
+          "text": "for"
+        },
+        {
+          "t": 167.36,
+          "text": "the"
+        },
+        {
+          "t": 167.5,
+          "text": "strangers"
+        }
+      ]
+    },
+    {
+      "start": 168.64,
+      "end": 170.54,
+      "text": "Save your hearts for the stars",
+      "words": [
+        {
+          "t": 168.64,
+          "text": "Save"
+        },
+        {
+          "t": 169.2,
+          "text": "your"
+        },
+        {
+          "t": 169.46,
+          "text": "hearts"
+        },
+        {
+          "t": 169.74,
+          "text": "for"
+        },
+        {
+          "t": 169.9,
+          "text": "the"
+        },
+        {
+          "t": 170.06,
+          "text": "stars"
+        }
+      ]
+    },
+    {
+      "start": 171.24,
+      "end": 173.82,
+      "text": "But the ones who really know you act like",
+      "words": [
+        {
+          "t": 171.24,
+          "text": "But"
+        },
+        {
+          "t": 171.8,
+          "text": "the"
+        },
+        {
+          "t": 171.92,
+          "text": "ones"
+        },
+        {
+          "t": 172.18,
+          "text": "who"
+        },
+        {
+          "t": 172.3,
+          "text": "really"
+        },
+        {
+          "t": 172.5,
+          "text": "know"
+        },
+        {
+          "t": 172.82,
+          "text": "you"
+        },
+        {
+          "t": 173.12,
+          "text": "act"
+        },
+        {
+          "t": 173.54,
+          "text": "like"
+        }
+      ]
+    },
+    {
+      "start": 173.88,
+      "end": 175.84,
+      "text": "Loving you is hard",
+      "words": [
+        {
+          "t": 173.88,
+          "text": "Loving"
+        },
+        {
+          "t": 174.88,
+          "text": "you"
+        },
+        {
+          "t": 175.12,
+          "text": "is"
+        },
+        {
+          "t": 175.44,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 175.84,
+      "end": 177.0,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 175.84,
+          "text": "One"
+        },
+        {
+          "t": 176.5,
+          "text": "tap"
+        },
+        {
+          "t": 176.6,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 177.0,
+      "end": 178.28,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 177.0,
+          "text": "One"
+        },
+        {
+          "t": 177.6,
+          "text": "tap"
+        },
+        {
+          "t": 177.84,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 178.28,
+      "end": 179.86,
+      "text": "So why do I feel like I'm the only one",
+      "words": [
+        {
+          "t": 178.28,
+          "text": "So"
+        },
+        {
+          "t": 178.64,
+          "text": "why"
+        },
+        {
+          "t": 178.88,
+          "text": "do"
+        },
+        {
+          "t": 179.12,
+          "text": "I"
+        },
+        {
+          "t": 179.38,
+          "text": "feel"
+        },
+        {
+          "t": 179.78,
+          "text": "like"
+        },
+        {
+          "t": 179.86,
+          "text": "I'm"
+        },
+        {
+          "t": 179.86,
+          "text": "the"
+        },
+        {
+          "t": 179.86,
+          "text": "only"
+        },
+        {
+          "t": 179.86,
+          "text": "one"
+        }
+      ]
+    },
+    {
+      "start": 179.88,
+      "end": 180.1,
+      "text": "Still alone",
+      "words": [
+        {
+          "t": 179.88,
+          "text": "Still"
+        },
+        {
+          "t": 179.88,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 180.1,
+      "end": 181.8,
+      "text": "In a room full of names",
+      "words": [
+        {
+          "t": 180.1,
+          "text": "In"
+        },
+        {
+          "t": 180.62,
+          "text": "a"
+        },
+        {
+          "t": 180.8,
+          "text": "room"
+        },
+        {
+          "t": 181.08,
+          "text": "full"
+        },
+        {
+          "t": 181.3,
+          "text": "of"
+        },
+        {
+          "t": 181.44,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 181.8,
+      "end": 184.38,
+      "text": "Maybe I was young thinking why this could heal us",
+      "words": [
+        {
+          "t": 181.8,
+          "text": "Maybe"
+        },
+        {
+          "t": 182.32,
+          "text": "I"
+        },
+        {
+          "t": 182.54,
+          "text": "was"
+        },
+        {
+          "t": 182.74,
+          "text": "young"
+        },
+        {
+          "t": 182.98,
+          "text": "thinking"
+        },
+        {
+          "t": 183.26,
+          "text": "why"
+        },
+        {
+          "t": 183.52,
+          "text": "this"
+        },
+        {
+          "t": 183.7,
+          "text": "could"
+        },
+        {
+          "t": 183.82,
+          "text": "heal"
+        },
+        {
+          "t": 184.12,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 184.38,
+      "end": 187.06,
+      "text": "Thinking all this light would finally reveal us",
+      "words": [
+        {
+          "t": 184.38,
+          "text": "Thinking"
+        },
+        {
+          "t": 184.82,
+          "text": "all"
+        },
+        {
+          "t": 185.12,
+          "text": "this"
+        },
+        {
+          "t": 185.26,
+          "text": "light"
+        },
+        {
+          "t": 185.52,
+          "text": "would"
+        },
+        {
+          "t": 185.68,
+          "text": "finally"
+        },
+        {
+          "t": 186.08,
+          "text": "reveal"
+        },
+        {
+          "t": 186.58,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 187.06,
+      "end": 189.34,
+      "text": "Maybe I believed too much in this dream",
+      "words": [
+        {
+          "t": 187.06,
+          "text": "Maybe"
+        },
+        {
+          "t": 187.34,
+          "text": "I"
+        },
+        {
+          "t": 187.6,
+          "text": "believed"
+        },
+        {
+          "t": 188.0,
+          "text": "too"
+        },
+        {
+          "t": 188.28,
+          "text": "much"
+        },
+        {
+          "t": 188.56,
+          "text": "in"
+        },
+        {
+          "t": 188.9,
+          "text": "this"
+        },
+        {
+          "t": 189.04,
+          "text": "dream"
+        }
+      ]
+    },
+    {
+      "start": 189.34,
+      "end": 191.84,
+      "text": "Thought the future meant we'd say what we mean",
+      "words": [
+        {
+          "t": 189.34,
+          "text": "Thought"
+        },
+        {
+          "t": 189.8,
+          "text": "the"
+        },
+        {
+          "t": 189.96,
+          "text": "future"
+        },
+        {
+          "t": 190.24,
+          "text": "meant"
+        },
+        {
+          "t": 190.54,
+          "text": "we'd"
+        },
+        {
+          "t": 190.84,
+          "text": "say"
+        },
+        {
+          "t": 191.08,
+          "text": "what"
+        },
+        {
+          "t": 191.36,
+          "text": "we"
+        },
+        {
+          "t": 191.54,
+          "text": "mean"
+        }
+      ]
+    },
+    {
+      "start": 191.84,
+      "end": 194.34,
+      "text": "Tell me something real, not a heart, not a flame",
+      "words": [
+        {
+          "t": 191.84,
+          "text": "Tell"
+        },
+        {
+          "t": 192.3,
+          "text": "me"
+        },
+        {
+          "t": 192.46,
+          "text": "something"
+        },
+        {
+          "t": 192.66,
+          "text": "real,"
+        },
+        {
+          "t": 193.18,
+          "text": "not"
+        },
+        {
+          "t": 193.28,
+          "text": "a"
+        },
+        {
+          "t": 193.44,
+          "text": "heart,"
+        },
+        {
+          "t": 193.82,
+          "text": "not"
+        },
+        {
+          "t": 193.92,
+          "text": "a"
+        },
+        {
+          "t": 194.12,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 194.34,
+      "end": 196.84,
+      "text": "Tell me where you've been, tell me what changed",
+      "words": [
+        {
+          "t": 194.34,
+          "text": "Tell"
+        },
+        {
+          "t": 194.82,
+          "text": "me"
+        },
+        {
+          "t": 195.02,
+          "text": "where"
+        },
+        {
+          "t": 195.22,
+          "text": "you've"
+        },
+        {
+          "t": 195.4,
+          "text": "been,"
+        },
+        {
+          "t": 195.8,
+          "text": "tell"
+        },
+        {
+          "t": 196.04,
+          "text": "me"
+        },
+        {
+          "t": 196.28,
+          "text": "what"
+        },
+        {
+          "t": 196.5,
+          "text": "changed"
+        }
+      ]
+    },
+    {
+      "start": 197.22,
+      "end": 199.32,
+      "text": "I'm not out to fight, I'm not far away",
+      "words": [
+        {
+          "t": 197.22,
+          "text": "I'm"
+        },
+        {
+          "t": 197.48,
+          "text": "not"
+        },
+        {
+          "t": 197.58,
+          "text": "out"
+        },
+        {
+          "t": 197.76,
+          "text": "to"
+        },
+        {
+          "t": 197.88,
+          "text": "fight,"
+        },
+        {
+          "t": 198.4,
+          "text": "I'm"
+        },
+        {
+          "t": 198.54,
+          "text": "not"
+        },
+        {
+          "t": 198.74,
+          "text": "far"
+        },
+        {
+          "t": 198.98,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 199.32,
+      "end": 200.72,
+      "text": "I'm still right here",
+      "words": [
+        {
+          "t": 199.32,
+          "text": "I'm"
+        },
+        {
+          "t": 199.82,
+          "text": "still"
+        },
+        {
+          "t": 199.98,
+          "text": "right"
+        },
+        {
+          "t": 200.3,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 200.72,
+      "end": 202.4,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 200.72,
+          "text": "One"
+        },
+        {
+          "t": 201.24,
+          "text": "tap"
+        },
+        {
+          "t": 201.8,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 206.02,
+      "end": 207.34,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 206.02,
+          "text": "One"
+        },
+        {
+          "t": 206.82,
+          "text": "tap"
+        },
+        {
+          "t": 206.92,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 207.34,
+      "end": 208.58,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 207.34,
+          "text": "One"
+        },
+        {
+          "t": 207.82,
+          "text": "tap"
+        },
+        {
+          "t": 208.18,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 209.14,
+      "end": 209.86,
+      "text": "From a real conversation but we don't say a thing",
+      "words": [
+        {
+          "t": 209.14,
+          "text": "From"
+        },
+        {
+          "t": 209.68,
+          "text": "a"
+        },
+        {
+          "t": 209.78,
+          "text": "real"
+        },
+        {
+          "t": 209.86,
+          "text": "conversation"
+        },
+        {
+          "t": 209.86,
+          "text": "but"
+        },
+        {
+          "t": 209.86,
+          "text": "we"
+        },
+        {
+          "t": 209.86,
+          "text": "don't"
+        },
+        {
+          "t": 209.86,
+          "text": "say"
+        },
+        {
+          "t": 209.86,
+          "text": "a"
+        },
+        {
+          "t": 209.86,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 209.86,
+      "end": 210.9,
+      "text": "We,",
+      "words": [
+        {
+          "t": 209.86,
+          "text": "We,"
+        }
+      ]
+    },
+    {
+      "start": 211.84,
+      "end": 212.6,
+      "text": "We",
+      "words": [
+        {
+          "t": 211.84,
+          "text": "We"
+        }
+      ]
+    },
+    {
+      "start": 214.112,
+      "end": 215.84,
+      "text": "From I see you keep going",
+      "words": [
+        {
+          "t": 214.112,
+          "text": "From"
+        },
+        {
+          "t": 214.36,
+          "text": "I"
+        },
+        {
+          "t": 214.94,
+          "text": "see"
+        },
+        {
+          "t": 215.04,
+          "text": "you"
+        },
+        {
+          "t": 215.22,
+          "text": "keep"
+        },
+        {
+          "t": 215.42,
+          "text": "going"
+        }
+      ]
+    },
+    {
+      "start": 215.84,
+      "end": 217.18,
+      "text": "From I'm proud of your dreams",
+      "words": [
+        {
+          "t": 215.84,
+          "text": "From"
+        },
+        {
+          "t": 216.08,
+          "text": "I'm"
+        },
+        {
+          "t": 216.24,
+          "text": "proud"
+        },
+        {
+          "t": 216.48,
+          "text": "of"
+        },
+        {
+          "t": 216.68,
+          "text": "your"
+        },
+        {
+          "t": 216.84,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 217.18,
+      "end": 218.49,
+      "text": "Save your life for the strangers",
+      "words": [
+        {
+          "t": 217.18,
+          "text": "Save"
+        },
+        {
+          "t": 217.36,
+          "text": "your"
+        },
+        {
+          "t": 217.46,
+          "text": "life"
+        },
+        {
+          "t": 217.62,
+          "text": "for"
+        },
+        {
+          "t": 217.86,
+          "text": "the"
+        },
+        {
+          "t": 218.04,
+          "text": "strangers"
+        }
+      ]
+    },
+    {
+      "start": 218.58,
+      "end": 221.08,
+      "text": "Save your hearts for the stars",
+      "words": [
+        {
+          "t": 218.58,
+          "text": "Save"
+        },
+        {
+          "t": 219.58,
+          "text": "your"
+        },
+        {
+          "t": 219.98,
+          "text": "hearts"
+        },
+        {
+          "t": 220.26,
+          "text": "for"
+        },
+        {
+          "t": 220.42,
+          "text": "the"
+        },
+        {
+          "t": 220.58,
+          "text": "stars"
+        }
+      ]
+    },
+    {
+      "start": 221.76,
+      "end": 224.42,
+      "text": "But the ones who really know you act like",
+      "words": [
+        {
+          "t": 221.76,
+          "text": "But"
+        },
+        {
+          "t": 222.32,
+          "text": "the"
+        },
+        {
+          "t": 222.44,
+          "text": "ones"
+        },
+        {
+          "t": 222.7,
+          "text": "who"
+        },
+        {
+          "t": 222.82,
+          "text": "really"
+        },
+        {
+          "t": 223.04,
+          "text": "know"
+        },
+        {
+          "t": 223.34,
+          "text": "you"
+        },
+        {
+          "t": 223.6,
+          "text": "act"
+        },
+        {
+          "t": 224.06,
+          "text": "like"
+        }
+      ]
+    },
+    {
+      "start": 224.42,
+      "end": 226.34,
+      "text": "Loving you is hard",
+      "words": [
+        {
+          "t": 224.42,
+          "text": "Loving"
+        },
+        {
+          "t": 225.4,
+          "text": "you"
+        },
+        {
+          "t": 225.6,
+          "text": "is"
+        },
+        {
+          "t": 225.94,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 227.936,
+      "end": 228.88,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 227.936,
+          "text": "One"
+        },
+        {
+          "t": 228.12,
+          "text": "tap"
+        },
+        {
+          "t": 228.42,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 228.88,
+      "end": 230.82,
+      "text": "So why do I feel alone",
+      "words": [
+        {
+          "t": 228.88,
+          "text": "So"
+        },
+        {
+          "t": 229.2,
+          "text": "why"
+        },
+        {
+          "t": 229.42,
+          "text": "do"
+        },
+        {
+          "t": 229.64,
+          "text": "I"
+        },
+        {
+          "t": 229.9,
+          "text": "feel"
+        },
+        {
+          "t": 230.34,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 230.82,
+      "end": 232.42,
+      "text": "In a room full of names",
+      "words": [
+        {
+          "t": 230.82,
+          "text": "In"
+        },
+        {
+          "t": 231.26,
+          "text": "a"
+        },
+        {
+          "t": 231.36,
+          "text": "room"
+        },
+        {
+          "t": 231.62,
+          "text": "full"
+        },
+        {
+          "t": 231.84,
+          "text": "of"
+        },
+        {
+          "t": 231.98,
+          "text": "names"
+        }
+      ]
+    },
+    {
+      "start": 232.42,
+      "end": 233.46,
+      "text": "Tap tap",
+      "words": [
+        {
+          "t": 232.42,
+          "text": "Tap"
+        },
+        {
+          "t": 233.22,
+          "text": "tap"
+        }
+      ]
+    },
+    {
+      "start": 233.46,
+      "end": 235.06,
+      "text": "Still no reach back",
+      "words": [
+        {
+          "t": 233.46,
+          "text": "Still"
+        },
+        {
+          "t": 234.02,
+          "text": "no"
+        },
+        {
+          "t": 234.38,
+          "text": "reach"
+        },
+        {
+          "t": 234.74,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 235.06,
+      "end": 236.0,
+      "text": "Hard, hard",
+      "words": [
+        {
+          "t": 235.06,
+          "text": "Hard,"
+        },
+        {
+          "t": 235.78,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 236.0,
+      "end": 237.58,
+      "text": "But it don't feel like that",
+      "words": [
+        {
+          "t": 236.0,
+          "text": "But"
+        },
+        {
+          "t": 236.24,
+          "text": "it"
+        },
+        {
+          "t": 236.4,
+          "text": "don't"
+        },
+        {
+          "t": 236.74,
+          "text": "feel"
+        },
+        {
+          "t": 236.98,
+          "text": "like"
+        },
+        {
+          "t": 237.34,
+          "text": "that"
+        }
+      ]
+    },
+    {
+      "start": 237.58,
+      "end": 239.76,
+      "text": "One tap, One tap away",
+      "words": [
+        {
+          "t": 237.58,
+          "text": "One"
+        },
+        {
+          "t": 238.26,
+          "text": "tap,"
+        },
+        {
+          "t": 238.52,
+          "text": "One"
+        },
+        {
+          "t": 238.92,
+          "text": "tap"
+        },
+        {
+          "t": 239.48,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 239.76,
+      "end": 239.84,
+      "text": "One tap away",
+      "words": [
+        {
+          "t": 239.76,
+          "text": "One"
+        },
+        {
+          "t": 239.84,
+          "text": "tap"
+        },
+        {
+          "t": 239.84,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 239.86,
+      "end": 246.44,
+      "text": "and still so far everybody online nobody where you are",
+      "words": [
+        {
+          "t": 239.86,
+          "text": "and"
+        },
+        {
+          "t": 240.768,
+          "text": "still"
+        },
+        {
+          "t": 241.02,
+          "text": "so"
+        },
+        {
+          "t": 241.28,
+          "text": "far"
+        },
+        {
+          "t": 241.7,
+          "text": "everybody"
+        },
+        {
+          "t": 242.68,
+          "text": "online"
+        },
+        {
+          "t": 243.34,
+          "text": "nobody"
+        },
+        {
+          "t": 245.62,
+          "text": "where"
+        },
+        {
+          "t": 245.96,
+          "text": "you"
+        },
+        {
+          "t": 246.24,
+          "text": "are"
+        }
+      ]
+    }
+  ]
+}

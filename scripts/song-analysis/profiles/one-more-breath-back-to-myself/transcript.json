@@ -1,0 +1,212 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 10.96,
+      "end": 29.88,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 10.96,
+          "text": "Thank"
+        },
+        {
+          "t": 12.832,
+          "text": "you"
+        },
+        {
+          "t": 13.76,
+          "text": "for"
+        },
+        {
+          "t": 18.46,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 43.8,
+      "end": 50.92,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 43.8,
+          "text": "Thank"
+        },
+        {
+          "t": 45.2,
+          "text": "you"
+        },
+        {
+          "t": 46.6,
+          "text": "for"
+        },
+        {
+          "t": 47.42,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 70.56,
+      "end": 88.5,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 70.56,
+          "text": "Thank"
+        },
+        {
+          "t": 71.96,
+          "text": "you"
+        },
+        {
+          "t": 73.36,
+          "text": "for"
+        },
+        {
+          "t": 84.04,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 102.6,
+      "end": 119.9,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 102.6,
+          "text": "Thank"
+        },
+        {
+          "t": 104.0,
+          "text": "you"
+        },
+        {
+          "t": 105.4,
+          "text": "for"
+        },
+        {
+          "t": 111.7,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 120.0,
+      "end": 149.8,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 120.0,
+          "text": "Thank"
+        },
+        {
+          "t": 120.42,
+          "text": "you"
+        },
+        {
+          "t": 131.42,
+          "text": "for"
+        },
+        {
+          "t": 149.78,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 150.0,
+      "end": 178.48,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 150.0,
+          "text": "Thank"
+        },
+        {
+          "t": 150.76,
+          "text": "you"
+        },
+        {
+          "t": 154.02,
+          "text": "for"
+        },
+        {
+          "t": 175.2,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 207.18,
+      "end": 209.98,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 207.18,
+          "text": "Thank"
+        },
+        {
+          "t": 208.58,
+          "text": "you"
+        },
+        {
+          "t": 209.98,
+          "text": "for"
+        },
+        {
+          "t": 209.98,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 218.18,
+      "end": 239.52,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 218.18,
+          "text": "Thank"
+        },
+        {
+          "t": 219.58,
+          "text": "you"
+        },
+        {
+          "t": 220.98,
+          "text": "for"
+        },
+        {
+          "t": 233.36,
+          "text": "watching!"
+        }
+      ]
+    },
+    {
+      "start": 240.0,
+      "end": 252.48,
+      "text": "Thank you for watching!",
+      "words": [
+        {
+          "t": 240.0,
+          "text": "Thank"
+        },
+        {
+          "t": 241.08,
+          "text": "you"
+        },
+        {
+          "t": 245.02,
+          "text": "for"
+        },
+        {
+          "t": 252.46,
+          "text": "watching!"
+        }
+      ]
+    }
+  ]
+}

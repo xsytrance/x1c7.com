@@ -1,0 +1,245 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "music-is-my-drug",
+  "generatedAt": "2026-07-09T18:20:31.863Z",
+  "measured": {
+    "bpm": 129.2,
+    "duration": 284.91
+  },
+  "identity": {
+    "title": "Music Is My Drug",
+    "titleAlternates": [],
+    "genre": "Electronic Dance Music (EDM)",
+    "subGenres": [
+      "Progressive House",
+      "Uplifting Trance"
+    ],
+    "mood": "Euphoric, Anthemic, Grateful, Hypnotic",
+    "styleSentence": "A driving D-major progressive house track at 129 BPM featuring a euphoric synth lead and deep bassline that builds from an open energy arc into a massive, cathartic climax before closing with repetitive vocal affirmations.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Repetitive Chant"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/music-is-my-drug/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#280808",
+      "#381808",
+      "#481808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D",
+      "mode": "major",
+      "confidence": 0.793
+    },
+    "boundaries": [
+      30.09,
+      45.6,
+      59.54,
+      71.05,
+      85.64,
+      144.89,
+      158.45,
+      210.84
+    ],
+    "brightness": 3213.2,
+    "dynamicsDb": 9.3
+  },
+  "lyrics": {
+    "official": false,
+    "language": "english",
+    "text": "Thank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.",
+    "lrc": "[Intro]\n[00:00.00] Thank you.\n[Verse 1]\n[Chorus]\n[00:48.20] Thank you.\n[Bridge]\n[01:10.62] Thank you.\n[Drop]\n[Outro]\n[01:40.70] Thank you.\n[02:11.22] Thank you.\n[02:35.72] Thank you.\n[03:05.86] Thank you.\n[03:40.16] Thank you.\n[04:10.12] Thank you.\n[04:34.62] Thank you.\n"
+  },
+  "analysis": {
+    "summary": "A minimalist electronic anthem where repetitive gratitude transforms into a hypnotic state of euphoria and deep connection.",
+    "overallMood": "Euphoric",
+    "themes": [
+      "Gratitude",
+      "Addiction to Music",
+      "Hypnosis",
+      "Catharsis"
+    ],
+    "palette": [
+      "#0F172A",
+      "#38BDF8",
+      "#EAB308",
+      "#F43F5E"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Quiet reverence and anticipation",
+        "intensity": 0.67,
+        "colorHintHex": "#0F172A",
+        "start": 0
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Internal reflection building outward energy",
+        "intensity": 0.75,
+        "colorHintHex": "#38BDF8",
+        "start": 48.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive release and collective joy",
+        "intensity": 0.86,
+        "colorHintHex": "#EAB308",
+        "start": 48.2
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Trance-like surrender to the sound",
+        "intensity": 0.86,
+        "colorHintHex": "#F43F5E",
+        "start": 70.62
+      },
+      {
+        "name": "Drop",
+        "emotion": "Peak euphoric abandon and sonic weightlessness",
+        "intensity": 1,
+        "colorHintHex": "#FFFFFF",
+        "start": 100.7
+      },
+      {
+        "name": "Outro",
+        "emotion": "Sustained gratitude fading into eternal rhythm",
+        "intensity": 0.18,
+        "colorHintHex": "#38BDF8",
+        "start": 100.7
+      }
+    ],
+    "keywords": [
+      {
+        "word": "thank",
+        "emotion": "Deep relief and worshipful gratitude",
+        "imageryPrompt": "A beam of golden sunlight piercing through heavy storm clouds, illuminating a solitary figure raising hands in silent prayer amidst falling digital rain."
+      },
+      {
+        "word": "drug",
+        "emotion": "Intense dependency and altered consciousness",
+        "imageryPrompt": "Neon blue lightwaves twisting around the listener's silhouette like liquid glass, forming intricate geometric patterns that dissolve into pure white energy."
+      },
+      {
+        "word": "hypnotic",
+        "emotion": "Trance-like focus and timelessness",
+        "imageryPrompt": "Endless spirals of violet smoke rotating in a void where gravity ceases to exist, creating a perfect circular tunnel of light."
+      },
+      {
+        "word": "cathartic",
+        "emotion": "Purging sorrow through sonic release",
+        "imageryPrompt": "A massive dam of dark water bursting open into a rainbow explosion that fills the sky with glittering particles and soundwaves."
+      },
+      {
+        "word": "euphoric",
+        "emotion": "Overwhelming joy and flight sensation",
+        "imageryPrompt": "Soaring above an ocean of glowing liquid gold, surrounded by floating musical notes that bloom into bright flowers as they pass."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 36,
+      "mid": 37,
+      "close": 19
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0,
+        "intensity": 0.67
+      },
+      {
+        "name": "Verse 1",
+        "start": 48.2,
+        "intensity": 0.75
+      },
+      {
+        "name": "Chorus",
+        "start": 48.2,
+        "intensity": 0.86
+      },
+      {
+        "name": "Bridge",
+        "start": 70.62,
+        "intensity": 0.86
+      },
+      {
+        "name": "Drop",
+        "start": 100.7,
+        "intensity": 1
+      },
+      {
+        "name": "Outro",
+        "start": 100.7,
+        "intensity": 0.18
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 26
+      },
+      {
+        "name": "Verse 1",
+        "presence": 22
+      },
+      {
+        "name": "Chorus",
+        "presence": 81
+      },
+      {
+        "name": "Bridge",
+        "presence": 85
+      },
+      {
+        "name": "Drop",
+        "presence": 93
+      },
+      {
+        "name": "Outro",
+        "presence": 20
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          7.5
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "music-is-my-drug-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

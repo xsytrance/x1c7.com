@@ -36,6 +36,13 @@ export default function Page() {
   const { currentTrack, isPlaying, analyser, playTrack: playFromCtx, pause } = useMusicPlayer();
   const mode = useDeviceMode();
   const [query, setQuery] = useState("");
+  // Mobile view: the spine shelf is the default; the deck is one tap away.
+  const [view, setView] = useState<"spines" | "deck">("spines");
+  useEffect(() => {
+    const saved = localStorage.getItem("x1c7-collection-view");
+    if (saved === "deck" || saved === "spines") setView(saved);
+  }, []);
+  const pickView = (v: "spines" | "deck") => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
 
   // Play always seeds the global queue with the full library so the persistent
   // player bar's next/prev traverse every transmission.
@@ -72,7 +79,9 @@ export default function Page() {
         </div>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
           Every track a collector edition — genre-coded spines, verified metadata, the song&apos;s own waveform on the case.
-          {mode === "desktop" ? " Hover a spine to hear the drop." : " Swipe the deck, tap a case to hear the drop."}
+          {mode === "desktop" ? " Hover a spine to hear the drop."
+            : view === "spines" ? " Tap a spine to pull the case, tap again to play."
+            : " Swipe the deck, tap a case to hear the drop."}
         </p>
         {/* data-driven stats — every number is real */}
         <div className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-2 font-mono text-[11px] uppercase tracking-[0.25em] text-white/40">
@@ -105,8 +114,23 @@ export default function Page() {
 
       {/* ===== THE COLLECTION ===== */}
       <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* mobile view switch — spines are the default, the deck one tap away */}
+        {mode === "mobile" && (
+          <div className="mb-5 flex justify-center">
+            <div className="inline-flex rounded-full border border-white/15 bg-white/[0.05] p-1">
+              {([["spines", "▮▮ SHELF"], ["deck", "▢ DECK"]] as const).map(([v, label]) => (
+                <button key={v} onClick={() => pickView(v)}
+                  className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-[0.18em] transition ${view === v ? "bg-plasma text-black" : "text-white/55"}`}>
+                  {label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
         {mode === "desktop" && <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />}
-        {mode === "mobile" && <CollectionDeck tracks={list} onPlay={playTrack} onPauseMain={pause} />}
+        {mode === "mobile" && (view === "spines"
+          ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
+          : <CollectionDeck tracks={list} onPlay={playTrack} onPauseMain={pause} />)}
         {mode === null && (
           <div className="flex h-[50vh] items-center justify-center font-mono text-xs tracking-[0.3em] text-white/30">
             OPENING THE VAULT…

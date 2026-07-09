@@ -1,0 +1,281 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "my-soul-lives-in-seoul",
+  "generatedAt": "2026-07-09T18:21:36.960Z",
+  "measured": {
+    "bpm": 136,
+    "duration": 299.8
+  },
+  "identity": {
+    "title": "My Soul Lives In Seoul",
+    "titleAlternates": [],
+    "genre": "K-Pop",
+    "subGenres": [
+      "Reggaeton",
+      "Global Pop Fusion"
+    ],
+    "mood": [
+      "playful",
+      "heartfelt",
+      "romantic",
+      "global"
+    ],
+    "styleSentence": "A high-energy, danceable anthem at 104 BPM blending glossy K-Pop production with a reggaeton dembow groove, featuring punchy 808s, tropical synth plucks, and multilingual vocal chops that transition from smooth pop-rap verses to bright, stacked harmony choruses.",
+    "language": "Korean",
+    "energy": "high",
+    "vocalStyle": "Cute romantic male/female duet with playful rap exchanges"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/my-soul-lives-in-seoul/cover.jpeg",
+    "palette": [
+      "#080828",
+      "#080838",
+      "#080818",
+      "#080848",
+      "#180828"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F#",
+      "mode": "minor",
+      "confidence": 0.682
+    },
+    "boundaries": [
+      19.13,
+      56.84,
+      65.94,
+      207.4,
+      216.5,
+      273.44,
+      282.26,
+      292.11
+    ],
+    "brightness": 3484.1,
+    "dynamicsDb": 8.5
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Title: My Soul Lives In Seoul]\n\n[Intro: Soft K-Pop Synths, Phone Notification Sounds]\nYeah\nMy soul lives in Seoul\nBut my heart lives wherever you call me from\n\n[Female Vocal]\n안녕, 내 사랑\nCan you hear me now?\n\n[Male Vocal]\nSignal’s weak\nBut I feel you somehow\n\n[Both]\nTime zones, touch screens\nDifferent skies, same dreams\n\n[Build]\nOne, two, three, go\n\n[Verse 1: Male Lead, Smooth Pop Rap]\nI wake up, grab my phone before I even breathe\nThirty-seven messages waiting there for me\nYour morning is my midnight, my sunrise is your sleep\nBut your face on my screen makes the distance feel sweet\n\nWi-Fi acting crazy, signal dropping low\n“Can you hear me, baby?” then the camera froze\nFront cam, back cam, why am I showing the floor?\nYou laughing so hard, now I love you even more\n\nBattery on red, charger disappeared\nWrong cable in my bag, same problem all year\nStorage full again from the photos that you send\nBut I still save every selfie like I’ll never see you again\n\n[Pre-Chorus: Female Lead]\nShipping takes forever, plane tickets are high\nCurrency conversion got me asking why\nForms on the table, stamps in a line\nBut I’d cross every border just to call you mine\n\n[Both: Rising Harmonies]\nK-1, K-2, CR-1 too\nPaperwork dancing like it’s got moves\nLost in translation, but I still choose you\nEvery little problem turns into something cute\n\n[Chorus: Big K-Pop Hook]\nMy soul lives in Seoul\nBut my love goes worldwide\nFrom your good morning\nTo my good night\n\nWe fight, we make up\nThen we laugh on the phone\nNo matter where you are\nYou never feel alone\n\n내 영혼은 서울에 살아\nNe yeonghoneun Seoul-e sara\nBut it finds you wherever you go\n\n보고 싶어, my baby\nBogo sipeo, my baby\nMy soul lives in Seoul\n\n[Post-Chorus: Dance Pop Chant]\nOh-oh-oh, Seoul to your heart\nOh-oh-oh, miles apart\nOh-oh-oh, still we glow\nMy soul lives in Seoul\n\nOh-oh-oh, call me again\nOh-oh-oh, don’t let it end\nOh-oh-oh, you already know\nMy soul lives in Seoul\n\n[Verse 2: Female Lead, Cute Pop Flow]\nFamily asking questions, friends all in the chat\n“Is the foreigner rich?” Baby, what is that?\nEverybody thinks love comes with a golden crown\nBut we’re just counting coins till the next flight down\n\nYou send me a box, it arrives next year\nCustoms got me crying, but I smile when it’s here\nT-shirts, snacks, letters, little things you drew\nI keep them like treasure cause they came from you\n\nLanguage barrier? We turn it into jokes\nI say one wrong word and the whole call explodes\nDifferent food, different rules, different ways to show we care\nBut your culture feels like music when you let me meet you there\n\n[Pre-Chorus 2: Male Lead]\nTired thumbs from typing all night\nTired voice from “one more call” till daylight\nMissed calls, small fights, pride in the way\nThen one heart emoji saves the whole day\n\n[Both]\nYou screenshot me sleeping, I screenshot you mad\nWe got duplicate pictures of the best days we had\nBackup the memories, new phone, same us\nToo many photos, not enough touch\n\n[Chorus: Bigger, More Harmonies]\nMy soul lives in Seoul\nBut my love goes worldwide\nFrom your good morning\nTo my good night\n\nWe fight, we make up\nThen we laugh on the phone\nNo matter where you are\nYou never feel alone\n\n내 영혼은 서울에 살아\nNe yeonghoneun Seoul-e sara\nBut it finds you wherever you go\n\n보고 싶어, my baby\nBogo sipeo, my baby\nMy soul lives in Seoul\n\n[Korean Rap Battle: Cute Boyfriend vs Girlfriend]\n\n[Male Korean Rapper]\n야, 내 양말은 바닥에 한 번뿐이야\nYa, nae yangmareun badage han beonppuniya\nYour hair is everywhere, girl, 진짜 장난 아니야\nJinjja jangnan aniya\n설거지는 산처럼 쌓여 있는데\nSeolgeojineun sancheoreom ssayeo inneunde\nYou say “oppa, later,” then you buy one more thing\n\n[Female Korean Rapper]\n뭐? 너는 돈 없다면서 치킨은 또 시켜\nMwo? Neoneun don eopdamyeonseo chicken-eun tto sikyeo\n게임은 새로 사고 내 말은 또 미뤄\nGame-eun saero sago nae mareun tto mirwo\n내 머리카락? 사랑의 흔적이야\nNae meorikarak? Sarang-ui heunjeogiya\n네 양말 냄새는 거의 전설이야\n\n[Male Rapper]\nOkay, okay, maybe I’m messy\n\n[Female Rapper]\nMaybe I shop when I’m stressy\n\n[Male Rapper]\nYou blame me for the belly\n\n[Female Rapper]\nYou made me love your food already\n\n[Both Korean Rap]\n우리 둘 다 살쪘어, 하하, 괜찮아\nUri dul da saljjyeosseo, haha, gwaenchana\n너의 나라, 나의 나라, 맛있잖아\nNeoui nara, naui nara, masitjana\n싸워도 웃고, 다시 안아\nSsawodo utgo, dasi ana\n사랑은 배불러도 계속 가잖아\n\n[Reggaeton Section: Dembow Beat Drops, Spanish Vocal]\n[Male Reggaeton Vocal]\nDale, dale, mi amor, aunque lejos estamos\nEl vuelo cuesta caro, pero igual lo soñamos\nSe cae la señal, pero sube el corazón\nTu voz en mi teléfono me cambia la canción\n\nCambio de moneda, papeles en la mesa\nVisa, entrevista, paciencia y promesa\nTu familia pregunta, mis panas también\nPero nadie entiende lo que tú y yo tenemos, ven\n\n[Female Reggaeton Vocal]\nBaila conmigo por la pantalla\nAunque la cámara nunca se halla\nBatería baja, cargador perdido\nPero este amor sigue encendido\n\n[Both]\nDale suave, dale lento\nLove across every continent\nDale fuerte, dale true\nEvery rhythm brings me back to you\n\n[Japanese Rap Section: Tight Flow, Glitchy Synths]\n[Japanese Rapper]\n時差を越えて、また君へ送信\nJisa wo koete, mata kimi e soushin\n眠い目こすって、開",
+    "lrc": "[Intro]\n[00:01.18] Yeah, my soul lives in soul\n[00:03.00] But my heart lays wherever you call me from\n[00:08.84] I know that's hard, can you hear me now?\n[00:11.82] Signal's weak but I feel you somehow\n[00:13.30] Time zones touch screen\n[00:14.52] Different skies, same dreams\n[Verse 1]\n[00:16.37] 1, 2, 3, go!\n[00:18.68] I wake up, grab my phone before I even breathe\n[00:20.78] 37 messages waiting there for me\n[00:23.02] Your morning is my midnight,\n[00:24.06] my sunrise is your sleep\n[00:25.54] But your face on my screen makes the distance feel sweet\n[00:27.00] Wi-Fi, acting crazy, signal dropping low\n[00:30.38] Can you hear me, baby, then the camera froze\n[00:32.78] Front cam, back cam, why am I showing the floor?\n[00:35.36] You're laughing so hard\n[00:36.30] Now I love you even more\n[00:37.52] Battery on red, charger disappear\n[00:39.38] Wrong cable in my bag, same problem all year\n[00:42.18] Storage full again from the photos that you send\n[00:44.50] But I still save every selfie like I'll never see you again\n[Pre-Chorus]\n[00:47.16] Shipping takes forever, plane tickets are high\n[00:49.30] Currency conversion got me asking why\n[00:51.73] Forms on the table, stamps in the line\n[00:53.94] But I cross every border just to call you mine\n[00:56.32] K-1, K-2, 3, go!\n[00:57.00] K-1, 2, paperwork dancing like it's God moves\n[01:01.04] Lost in translation but I still choose you\n[Chorus]\n[01:03.38] Every little problem turns into something true\n[01:05.68] My soul lives in soul\n[01:07.46] But my love goes worldwide\n[01:09.66] From your good morning\n[01:11.34] To my good night\n[01:14.62] We fight, we make up\n[01:16.28] Then we laugh on the phone\n[01:17.46] No matter where you are, you never feel alone\n[01:19.98] My soul lives in Seoul\n[01:21.66] My soul lives in Seoul\n[01:24.68] But it finds you wherever\n[01:27.04] you go\n[01:28.36] I miss you, baby\n[01:29.64] I miss you, baby\n[01:32.86] My soul lives in Seoul\n[01:34.68] My soul lives in Seoul\n[01:35.70] Soul to your heart\n[01:37.90] Minds apart\n[01:39.70] Still we glow\n[01:40.94] My soul lives in Seoul\n[01:44.10] My soul lives in Seoul\n[01:44.94] Call me again\n[01:46.98] Don't let it end\n[01:49.07] You already know\n[01:50.40] My soul\n[01:52.33] lives in Seoul\n[01:52.98] Family asking questions, friends all in the chat\n[01:55.14] Is the foreigner rich, baby?\n[01:56.72] What is that?\n[01:57.00] Everybody thinks love comes with a golden crown\n[01:59.82] But we're just counting coins till the next slide down\n[02:02.18] You send me a box, it arrives next year\n[02:04.88] Customs got me crying,\n[02:05.80] but I smile when it's here\n[02:06.86] T-shirts,\n[02:07.52] snacks,\n[02:07.88] letters,\n[02:08.18] little things you drew\n[02:09.20] I keep them like treasure cause they came from you\n[Post-Chorus]\n[02:11.58] Language barrier, we turn it into jokes\n[02:13.38] I say one wrong word and the whole call explodes\n[02:15.66] Different food,\n[02:16.36] different rules,\n[02:16.00] different ways to show we care\n[02:18.04] But your culture feels like music when you let me meet you there\n[02:20.38] But your culture feels like music when you let me meet you there\n[02:21.12] Tired thumbs from typing all night\n[02:22.74] Tired voice from one more call to daylight\n[02:24.90] Missed calls, small fights\n[02:26.38] Pride in the way, don't worry about it\n[02:27.00] One heart emoji saves the whole day\n[02:29.97] You screenshot me sleeping, I screenshot you now\n[02:32.74] We got duplicated pictures of the best days we had\n[Verse 2]\n[02:35.20] Back up the memories\n[02:36.38] New phone, same us\n[02:37.78] Too many photos\n[02:38.80] My soul lives in Seoul\n[02:41.56] But my love goes worldwide\n[02:43.76] From your good morning\n[02:45.76] To my good night\n[02:47.82] We fight, we make out\n[02:50.40] Then we laugh on the phone\n[02:51.69] No matter where you are, you never feel alone\n[02:53.87] My soul lives in Seoul\n[02:55.76] My soul lives in Seoul\n[02:58.70] But it finds you wherever you go\n[03:02.92] I miss you my baby\n[03:04.45] I miss you my baby\n[03:06.62] My soul lives in Seoul\n[03:08.24] My socks are only one time on the floor\n[03:10.62] My socks are only one time on the floor\n[03:12.72] Your hair is everywhere girl\n[03:14.14] It's not a joke, it's not a joke\n[03:16.68] It's not a joke\n[03:17.62] The dishes are piled up like mountains\n[03:19.60] The dishes are piled up like mountains\n[03:21.90] You say up a little, then you buy one more thing\n[03:25.96] You say up a little, then you buy one more thing\n[03:28.12] You say up a little, then you buy one more thing\n[03:29.26] You have no money,\n[03:30.47] then you say I'll order fried chicken\n[03:31.08] Pay for the game and reverse my words\n[03:34.08] Pay for the game and reverse my words\n[03:35.98] My hair is fine where my love is\n[03:37.88] Playing with your socks is the myth\n[03:42.81] Okay, okay maybe I'm messy\n[03:45.78] No stress\n[03:48.50] You blame me for the belly\n[03:50.44] You made me love your food already\n[03:53.76] Oh, we both got hurt\n[03:55.70] Ha ha, it's okay\n[03:57.02] We both got hurt\n[03:58.32] Ha ha, it's okay\n[Chorus]\n[03:59.44] Your country, my country\n[04:00.64] It's delicious\n[04:01.22] Your country, my country\n[04:02.00] It's delicious\n[04:03.79] Even if we fight, we laugh\n[04:05.24] One more time\n[04:06.34] Even if we fight, we laugh\n[04:07.62] One more time\n[04:08.72] Even if we call out love, it keeps going\n[04:12.94] Para para mi amor, que lejos estamos\n[04:15.58] El cuelo cuesta caro, pero igual lo soñamos\n[04:18.14] Se cae la señal, pero sube el corazón\n[04:20.20] Tu voz en mi teléfono me cambia la canción\n[04:22.60] Cambio de moneda, papeles en la mesa\n[04:25.20] Visa, entrevista, paciencia y promesa\n[04:27.52] Tu pa' mi me preguntas, mis panas también\n[04:29.52] Pero nadie entiende lo que tú y yo tenemos, ven\n[Bridge]\n[04:32.72] Baila conmigo por la pantalla\n[04:34.00] Aunque la cámara nunca se halla\n[04:37.76] Batería baja, cargador perdido\n[04:41.20] Pero ese amor sigue encendido\n[04:43.50] Dale suave, dale lento\n[04:44.90] Dale suave, dale lento\n[04:46.06] Love across every continent\n[04:48.08] Talen fuerte, dale tro\n[04:49.36] Every rhythm brings me back to you\n"
+  },
+  "analysis": {
+    "summary": "This playful yet heartfelt K-Pop anthem chronicles a long-distance relationship navigating time zones, cultural barriers, and logistical hurdles like customs and currency. It blends multilingual vocals from Korean to Spanish and Japanese rap battles into a global love story where digital connection bridges physical distance.",
+    "overallMood": "Upbeat romantic resilience",
+    "themes": [
+      "Long-distance relationship dynamics",
+      "Cultural exchange and fusion",
+      "Digital communication struggles",
+      "Financial reality of modern dating",
+      "Multilingual expression of love"
+    ],
+    "palette": [
+      "#FF6B9D",
+      "#4A5F73",
+      "#E8D20A",
+      "#1C3A4D"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Melancholic connection",
+        "intensity": 0.59,
+        "colorHint": "#4a5f73",
+        "start": 1.18
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Anxious playfulness",
+        "intensity": 0.8,
+        "colorHint": "#e8d20a",
+        "start": 16.37
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Bureaucratic determination",
+        "intensity": 0.85,
+        "colorHint": "#1c3a4d",
+        "start": 47.16
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Triumphant global love",
+        "intensity": 0.98,
+        "colorHint": "#ff6b9d",
+        "start": 63.38
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Tired but loving intimacy",
+        "intensity": 0.76,
+        "colorHint": "#e8d20a",
+        "start": 131.58
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Messy domestic humor",
+        "intensity": 0.3,
+        "colorHint": "#4a5f73",
+        "start": 155.2
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Passionate rhythmic unity",
+        "intensity": 0.3,
+        "colorHint": "#ff6b9d",
+        "start": 272.72
+      }
+    ],
+    "keywords": [
+      {
+        "word": "seoul",
+        "emotion": "Nostalgic anchor point",
+        "imageryPrompt": "A glowing neon sign in deep blue night sky with soft pink cherry blossom petals floating around a smartphone screen displaying a map pin."
+      },
+      {
+        "word": "signal",
+        "emotion": "Tense longing",
+        "imageryPrompt": "Faint green bars wavering on a cracked phone screen against a backdrop of stormy grey clouds and distant city lights fading into darkness."
+      },
+      {
+        "word": "border",
+        "emotion": "Determined crossing",
+        "imageryPrompt": "A passport stamp glowing gold under a spotlight, with paper documents flying like confetti in the air above a chaotic but joyful airport terminal floor."
+      },
+      {
+        "word": "chaos",
+        "emotion": "Playful overwhelm",
+        "imageryPrompt": "Piles of laundry and takeout boxes forming colorful mountains under warm kitchen lighting, with socks dancing mid-air in slow motion."
+      },
+      {
+        "word": "customs",
+        "emotion": "Bittersweet delay",
+        "imageryPrompt": "A large cardboard box marked 'International' sitting on a dusty floor next to a crying but smiling face reflected in the polished metal of luggage scales."
+      },
+      {
+        "word": "emoji",
+        "emotion": "Digital salvation",
+        "imageryPrompt": "A giant floating heart symbol made of soft pink light connecting two silhouettes across an ocean, replacing a broken fiber optic cable."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 38,
+      "mid": 50,
+      "close": 30
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 1.18,
+        "intensity": 0.59
+      },
+      {
+        "name": "Verse 1",
+        "start": 16.37,
+        "intensity": 0.8
+      },
+      {
+        "name": "Pre-Chorus",
+        "start": 47.16,
+        "intensity": 0.85
+      },
+      {
+        "name": "Chorus",
+        "start": 63.38,
+        "intensity": 0.98
+      },
+      {
+        "name": "Post-Chorus",
+        "start": 131.58,
+        "intensity": 0.76
+      },
+      {
+        "name": "Verse 2",
+        "start": 155.2,
+        "intensity": 0.3
+      },
+      {
+        "name": "Bridge",
+        "start": 272.72,
+        "intensity": 0.3
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 86
+      },
+      {
+        "name": "Verse 1",
+        "presence": 86
+      },
+      {
+        "name": "Pre-Chorus",
+        "presence": 88
+      },
+      {
+        "name": "Chorus",
+        "presence": 85
+      },
+      {
+        "name": "Post-Chorus",
+        "presence": 85
+      },
+      {
+        "name": "Verse 2",
+        "presence": 25
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          8.22
+        ],
+        [
+          64.06,
+          65.42
+        ],
+        [
+          170.46,
+          184.46
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "my-soul-lives-in-seoul-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

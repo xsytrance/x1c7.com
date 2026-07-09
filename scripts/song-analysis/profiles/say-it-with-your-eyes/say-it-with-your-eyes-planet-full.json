@@ -1,0 +1,104 @@
+{
+  "analysis": {
+    "summary": "A sultry Southern R&B track describing a tense yet hypnotic moment where two people share an intimate connection through unspoken glances and subtle gestures within a dimly lit space.",
+    "overallMood": "sultry, intimate, hushed, hypnotic",
+    "themes": [
+      "Silent Communication",
+      "Unrequited Desire",
+      "Atmospheric Intimacy",
+      "Visual Obsession"
+    ],
+    "palette": [
+      "#050A14",
+      "#2D3B5E",
+      "#6C7F98",
+      "#E0EBF5"
+    ],
+    "sections": [
+      {
+        "sectionName": "Intro",
+        "emotion": "Anticipation and quiet tension setting the stage for a visual encounter.",
+        "intensity": 0.79,
+        "colorHintHex": "#2D3B5E",
+        "start": 38.16
+      },
+      {
+        "sectionName": "Verse 2",
+        "emotion": "A focused request to capture a fleeting moment of connection amidst distraction.",
+        "intensity": 0.6,
+        "colorHintHex": "#6C7F98",
+        "start": 38.16
+      },
+      {
+        "sectionName": "Chorus",
+        "emotion": "Hypnotic longing and the surreal sensation of moving through a dark room solely for visual contact.",
+        "intensity": 0.54,
+        "colorHintHex": "#E0EBF5",
+        "start": 50.86
+      },
+      {
+        "sectionName": "Verse 2 (Repeat)",
+        "emotion": "Reinforced obsession with the subject's cold elegance and knowing distance.",
+        "intensity": 0.22,
+        "colorHintHex": "#1A2332",
+        "start": 124.56
+      },
+      {
+        "sectionName": "Bridge / Half-time drop intro",
+        "emotion": "Sudden stillness that freezes the scene on a single striking detail.",
+        "intensity": 0.15,
+        "colorHintHex": "#4A6B8D",
+        "start": 145.28
+      },
+      {
+        "sectionName": "Half-time drop",
+        "emotion": "Gratitude mixed with finality after an intense emotional exchange.",
+        "intensity": 0.06,
+        "colorHintHex": "#1C253A",
+        "start": 158.34
+      },
+      {
+        "sectionName": "Chorus (Final)",
+        "emotion": "Lingering echo of the visual connection fading into a quiet afterglow.",
+        "intensity": 0.18,
+        "colorHintHex": "#8FA1B3",
+        "start": 190.88
+      }
+    ],
+    "keywords": [
+      {
+        "word": "swim",
+        "emotion": "Fluid desperation and surreal movement against a dark background.",
+        "imageryPrompt": "A human figure appearing to swim slowly through thick, viscous air inside a dimly lit room with floating dust motes."
+      },
+      {
+        "word": "black",
+        "emotion": "Intense contrast between deep shadows and cool skin tones.",
+        "imageryPrompt": "Close-up of pale blue-toned lips set against the silhouette of a person wearing all-black clothing in low light."
+      },
+      {
+        "word": "hand",
+        "emotion": "Cold elegance, detachment, and sharp visual texture.",
+        "imageryPrompt": "A high-contrast shot of a manicured finger pressing against the lens with frost forming around it."
+      },
+      {
+        "word": "look",
+        "emotion": "Direct gaze that pierces through darkness demanding attention.",
+        "imageryPrompt": "Two pairs of eyes meeting across an empty space in a dark room, illuminated only by the reflection from each other's pupils."
+      },
+      {
+        "word": "stay",
+        "emotion": "Stagnant tension and refusal to move despite internal desire.",
+        "imageryPrompt": "A shadow cast on a wall that remains perfectly still while ripples of light pass around it."
+      },
+      {
+        "word": "frame",
+        "emotion": "The desire to freeze time into a perfect, clean image.",
+        "imageryPrompt": "A camera viewfinder overlay capturing the exact geometry of two faces in profile within a dark interior."
+      }
+    ]
+  },
+  "styleHint": "Southern R&B, hip hop (chopped & screwed / “screw” style), trap / slowed trap",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:31:03.777Z"
+}

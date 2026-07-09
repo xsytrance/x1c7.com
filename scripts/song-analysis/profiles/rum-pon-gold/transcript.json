@@ -1,0 +1,2430 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.1,
+      "text": "Yo,",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Yo,"
+        }
+      ]
+    },
+    {
+      "start": 0.28,
+      "end": 0.48,
+      "text": "yo,",
+      "words": [
+        {
+          "t": 0.28,
+          "text": "yo,"
+        }
+      ]
+    },
+    {
+      "start": 0.56,
+      "end": 1.5,
+      "text": "girl cup crew,",
+      "words": [
+        {
+          "t": 0.56,
+          "text": "girl"
+        },
+        {
+          "t": 1.06,
+          "text": "cup"
+        },
+        {
+          "t": 1.16,
+          "text": "crew,"
+        }
+      ]
+    },
+    {
+      "start": 1.64,
+      "end": 1.84,
+      "text": "crew,",
+      "words": [
+        {
+          "t": 1.64,
+          "text": "crew,"
+        }
+      ]
+    },
+    {
+      "start": 2.0,
+      "end": 2.16,
+      "text": "crew,",
+      "words": [
+        {
+          "t": 2.0,
+          "text": "crew,"
+        }
+      ]
+    },
+    {
+      "start": 2.32,
+      "end": 2.48,
+      "text": "crew,",
+      "words": [
+        {
+          "t": 2.32,
+          "text": "crew,"
+        }
+      ]
+    },
+    {
+      "start": 2.48,
+      "end": 3.94,
+      "text": "smoke room",
+      "words": [
+        {
+          "t": 2.48,
+          "text": "smoke"
+        },
+        {
+          "t": 3.44,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 3.98,
+      "end": 4.54,
+      "text": "Pass it,",
+      "words": [
+        {
+          "t": 3.98,
+          "text": "Pass"
+        },
+        {
+          "t": 4.28,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 4.56,
+      "end": 5.22,
+      "text": "pass it,",
+      "words": [
+        {
+          "t": 4.56,
+          "text": "pass"
+        },
+        {
+          "t": 4.9,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 5.22,
+      "end": 5.9,
+      "text": "pass it,",
+      "words": [
+        {
+          "t": 5.22,
+          "text": "pass"
+        },
+        {
+          "t": 5.62,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 5.9,
+      "end": 6.56,
+      "text": "pass it,",
+      "words": [
+        {
+          "t": 5.9,
+          "text": "pass"
+        },
+        {
+          "t": 6.28,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 6.58,
+      "end": 7.26,
+      "text": "pass it,",
+      "words": [
+        {
+          "t": 6.58,
+          "text": "pass"
+        },
+        {
+          "t": 7.0,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 7.26,
+      "end": 7.86,
+      "text": "pass it",
+      "words": [
+        {
+          "t": 7.26,
+          "text": "pass"
+        },
+        {
+          "t": 7.58,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 7.872,
+      "end": 10.84,
+      "text": "Brooklyn to Kingston, run it",
+      "words": [
+        {
+          "t": 7.872,
+          "text": "Brooklyn"
+        },
+        {
+          "t": 8.22,
+          "text": "to"
+        },
+        {
+          "t": 8.74,
+          "text": "Kingston,"
+        },
+        {
+          "t": 9.48,
+          "text": "run"
+        },
+        {
+          "t": 10.68,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 10.84,
+      "end": 13.696,
+      "text": "Rump and gold, wine for me",
+      "words": [
+        {
+          "t": 10.84,
+          "text": "Rump"
+        },
+        {
+          "t": 11.86,
+          "text": "and"
+        },
+        {
+          "t": 12.02,
+          "text": "gold,"
+        },
+        {
+          "t": 12.7,
+          "text": "wine"
+        },
+        {
+          "t": 13.28,
+          "text": "for"
+        },
+        {
+          "t": 13.38,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 14.304,
+      "end": 15.072,
+      "text": "Smoke in a year,",
+      "words": [
+        {
+          "t": 14.304,
+          "text": "Smoke"
+        },
+        {
+          "t": 14.44,
+          "text": "in"
+        },
+        {
+          "t": 14.78,
+          "text": "a"
+        },
+        {
+          "t": 14.9,
+          "text": "year,"
+        }
+      ]
+    },
+    {
+      "start": 15.62,
+      "end": 16.48,
+      "text": "come find me",
+      "words": [
+        {
+          "t": 15.62,
+          "text": "come"
+        },
+        {
+          "t": 15.72,
+          "text": "find"
+        },
+        {
+          "t": 16.18,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 17.12,
+      "end": 17.824,
+      "text": "Rump and gold,",
+      "words": [
+        {
+          "t": 17.12,
+          "text": "Rump"
+        },
+        {
+          "t": 17.22,
+          "text": "and"
+        },
+        {
+          "t": 17.44,
+          "text": "gold,"
+        }
+      ]
+    },
+    {
+      "start": 18.432,
+      "end": 19.104,
+      "text": "move that waist",
+      "words": [
+        {
+          "t": 18.432,
+          "text": "move"
+        },
+        {
+          "t": 18.54,
+          "text": "that"
+        },
+        {
+          "t": 18.8,
+          "text": "waist"
+        }
+      ]
+    },
+    {
+      "start": 19.18,
+      "end": 21.92,
+      "text": "Pull on the rhythm, don't waste it",
+      "words": [
+        {
+          "t": 19.18,
+          "text": "Pull"
+        },
+        {
+          "t": 19.84,
+          "text": "on"
+        },
+        {
+          "t": 20.06,
+          "text": "the"
+        },
+        {
+          "t": 20.28,
+          "text": "rhythm,"
+        },
+        {
+          "t": 20.84,
+          "text": "don't"
+        },
+        {
+          "t": 20.94,
+          "text": "waste"
+        },
+        {
+          "t": 21.48,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 23.808,
+      "end": 25.98,
+      "text": "Rump and gold, gold in a cup",
+      "words": [
+        {
+          "t": 23.808,
+          "text": "Rump"
+        },
+        {
+          "t": 24.1,
+          "text": "and"
+        },
+        {
+          "t": 24.2,
+          "text": "gold,"
+        },
+        {
+          "t": 24.92,
+          "text": "gold"
+        },
+        {
+          "t": 25.36,
+          "text": "in"
+        },
+        {
+          "t": 25.64,
+          "text": "a"
+        },
+        {
+          "t": 25.72,
+          "text": "cup"
+        }
+      ]
+    },
+    {
+      "start": 25.98,
+      "end": 28.64,
+      "text": "Smoke gonna fall, turn it up",
+      "words": [
+        {
+          "t": 25.98,
+          "text": "Smoke"
+        },
+        {
+          "t": 26.52,
+          "text": "gonna"
+        },
+        {
+          "t": 26.96,
+          "text": "fall,"
+        },
+        {
+          "t": 27.68,
+          "text": "turn"
+        },
+        {
+          "t": 28.04,
+          "text": "it"
+        },
+        {
+          "t": 28.38,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 28.64,
+      "end": 30.2,
+      "text": "Body too bold",
+      "words": [
+        {
+          "t": 28.64,
+          "text": "Body"
+        },
+        {
+          "t": 29.36,
+          "text": "too"
+        },
+        {
+          "t": 29.66,
+          "text": "bold"
+        }
+      ]
+    },
+    {
+      "start": 30.2,
+      "end": 31.38,
+      "text": "Why ain't it slow?",
+      "words": [
+        {
+          "t": 30.2,
+          "text": "Why"
+        },
+        {
+          "t": 30.7,
+          "text": "ain't"
+        },
+        {
+          "t": 30.94,
+          "text": "it"
+        },
+        {
+          "t": 31.06,
+          "text": "slow?"
+        }
+      ]
+    },
+    {
+      "start": 31.62,
+      "end": 32.76,
+      "text": "Night getting hot",
+      "words": [
+        {
+          "t": 31.62,
+          "text": "Night"
+        },
+        {
+          "t": 32.02,
+          "text": "getting"
+        },
+        {
+          "t": 32.44,
+          "text": "hot"
+        }
+      ]
+    },
+    {
+      "start": 32.76,
+      "end": 34.06,
+      "text": "Don't let go",
+      "words": [
+        {
+          "t": 32.76,
+          "text": "Don't"
+        },
+        {
+          "t": 33.5,
+          "text": "let"
+        },
+        {
+          "t": 33.72,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 34.62,
+      "end": 36.08,
+      "text": "Wine for me",
+      "words": [
+        {
+          "t": 34.62,
+          "text": "Wine"
+        },
+        {
+          "t": 35.52,
+          "text": "for"
+        },
+        {
+          "t": 35.72,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 36.08,
+      "end": 37.44,
+      "text": "Wine for me",
+      "words": [
+        {
+          "t": 36.08,
+          "text": "Wine"
+        },
+        {
+          "t": 36.52,
+          "text": "for"
+        },
+        {
+          "t": 37.08,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 37.44,
+      "end": 39.22,
+      "text": "If you're bad come prove it",
+      "words": [
+        {
+          "t": 37.44,
+          "text": "If"
+        },
+        {
+          "t": 37.84,
+          "text": "you're"
+        },
+        {
+          "t": 38.0,
+          "text": "bad"
+        },
+        {
+          "t": 38.22,
+          "text": "come"
+        },
+        {
+          "t": 38.44,
+          "text": "prove"
+        },
+        {
+          "t": 38.82,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 39.22,
+      "end": 40.9,
+      "text": "Easy now, easy now",
+      "words": [
+        {
+          "t": 39.22,
+          "text": "Easy"
+        },
+        {
+          "t": 39.64,
+          "text": "now,"
+        },
+        {
+          "t": 40.18,
+          "text": "easy"
+        },
+        {
+          "t": 40.42,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 40.9,
+      "end": 41.48,
+      "text": "For me",
+      "words": [
+        {
+          "t": 40.9,
+          "text": "For"
+        },
+        {
+          "t": 41.2,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 41.54,
+      "end": 42.76,
+      "text": "Wine for me",
+      "words": [
+        {
+          "t": 41.54,
+          "text": "Wine"
+        },
+        {
+          "t": 42.24,
+          "text": "for"
+        },
+        {
+          "t": 42.52,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 42.76,
+      "end": 43.26,
+      "text": "Don't stop",
+      "words": [
+        {
+          "t": 42.76,
+          "text": "Don't"
+        },
+        {
+          "t": 42.98,
+          "text": "stop"
+        }
+      ]
+    },
+    {
+      "start": 43.26,
+      "end": 44.66,
+      "text": "Girl move it",
+      "words": [
+        {
+          "t": 43.26,
+          "text": "Girl"
+        },
+        {
+          "t": 43.84,
+          "text": "move"
+        },
+        {
+          "t": 44.24,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 44.66,
+      "end": 46.0,
+      "text": "Left side",
+      "words": [
+        {
+          "t": 44.66,
+          "text": "Left"
+        },
+        {
+          "t": 45.66,
+          "text": "side"
+        }
+      ]
+    },
+    {
+      "start": 46.0,
+      "end": 47.38,
+      "text": "Right side",
+      "words": [
+        {
+          "t": 46.0,
+          "text": "Right"
+        },
+        {
+          "t": 46.46,
+          "text": "side"
+        }
+      ]
+    },
+    {
+      "start": 47.38,
+      "end": 48.66,
+      "text": "Front row",
+      "words": [
+        {
+          "t": 47.38,
+          "text": "Front"
+        },
+        {
+          "t": 48.22,
+          "text": "row"
+        }
+      ]
+    },
+    {
+      "start": 48.66,
+      "end": 50.06,
+      "text": "Back row",
+      "words": [
+        {
+          "t": 48.66,
+          "text": "Back"
+        },
+        {
+          "t": 49.08,
+          "text": "row"
+        }
+      ]
+    },
+    {
+      "start": 50.92,
+      "end": 53.82,
+      "text": "Red cup tilt when the baseline knock",
+      "words": [
+        {
+          "t": 50.92,
+          "text": "Red"
+        },
+        {
+          "t": 51.68,
+          "text": "cup"
+        },
+        {
+          "t": 52.04,
+          "text": "tilt"
+        },
+        {
+          "t": 52.42,
+          "text": "when"
+        },
+        {
+          "t": 52.68,
+          "text": "the"
+        },
+        {
+          "t": 52.86,
+          "text": "baseline"
+        },
+        {
+          "t": 53.28,
+          "text": "knock"
+        }
+      ]
+    },
+    {
+      "start": 53.82,
+      "end": 56.48,
+      "text": "Gold chain swing when the waistline drop",
+      "words": [
+        {
+          "t": 53.82,
+          "text": "Gold"
+        },
+        {
+          "t": 54.3,
+          "text": "chain"
+        },
+        {
+          "t": 54.76,
+          "text": "swing"
+        },
+        {
+          "t": 55.08,
+          "text": "when"
+        },
+        {
+          "t": 55.4,
+          "text": "the"
+        },
+        {
+          "t": 55.6,
+          "text": "waistline"
+        },
+        {
+          "t": 56.16,
+          "text": "drop"
+        }
+      ]
+    },
+    {
+      "start": 56.48,
+      "end": 59.24,
+      "text": "Room full smoke and the door still lock",
+      "words": [
+        {
+          "t": 56.48,
+          "text": "Room"
+        },
+        {
+          "t": 57.06,
+          "text": "full"
+        },
+        {
+          "t": 57.42,
+          "text": "smoke"
+        },
+        {
+          "t": 57.78,
+          "text": "and"
+        },
+        {
+          "t": 58.14,
+          "text": "the"
+        },
+        {
+          "t": 58.28,
+          "text": "door"
+        },
+        {
+          "t": 58.54,
+          "text": "still"
+        },
+        {
+          "t": 58.82,
+          "text": "lock"
+        }
+      ]
+    },
+    {
+      "start": 59.24,
+      "end": 61.94,
+      "text": "DJ pull it back when the whole place rock",
+      "words": [
+        {
+          "t": 59.24,
+          "text": "DJ"
+        },
+        {
+          "t": 59.58,
+          "text": "pull"
+        },
+        {
+          "t": 60.16,
+          "text": "it"
+        },
+        {
+          "t": 60.34,
+          "text": "back"
+        },
+        {
+          "t": 60.6,
+          "text": "when"
+        },
+        {
+          "t": 60.82,
+          "text": "the"
+        },
+        {
+          "t": 61.02,
+          "text": "whole"
+        },
+        {
+          "t": 61.28,
+          "text": "place"
+        },
+        {
+          "t": 61.62,
+          "text": "rock"
+        }
+      ]
+    },
+    {
+      "start": 61.94,
+      "end": 63.08,
+      "text": "Brooklyn hot",
+      "words": [
+        {
+          "t": 61.94,
+          "text": "Brooklyn"
+        },
+        {
+          "t": 62.46,
+          "text": "hot"
+        }
+      ]
+    },
+    {
+      "start": 63.08,
+      "end": 64.72,
+      "text": "King Kingston hotter",
+      "words": [
+        {
+          "t": 63.08,
+          "text": "King"
+        },
+        {
+          "t": 63.52,
+          "text": "Kingston"
+        },
+        {
+          "t": 63.98,
+          "text": "hotter"
+        }
+      ]
+    },
+    {
+      "start": 64.72,
+      "end": 65.96,
+      "text": "Who bring fire?",
+      "words": [
+        {
+          "t": 64.72,
+          "text": "Who"
+        },
+        {
+          "t": 64.94,
+          "text": "bring"
+        },
+        {
+          "t": 65.52,
+          "text": "fire?"
+        }
+      ]
+    },
+    {
+      "start": 66.18,
+      "end": 67.38,
+      "text": "We bring proper",
+      "words": [
+        {
+          "t": 66.18,
+          "text": "We"
+        },
+        {
+          "t": 66.5,
+          "text": "bring"
+        },
+        {
+          "t": 66.9,
+          "text": "proper"
+        }
+      ]
+    },
+    {
+      "start": 67.38,
+      "end": 68.62,
+      "text": "Who got rum?",
+      "words": [
+        {
+          "t": 67.38,
+          "text": "Who"
+        },
+        {
+          "t": 68.02,
+          "text": "got"
+        },
+        {
+          "t": 68.3,
+          "text": "rum?"
+        }
+      ]
+    },
+    {
+      "start": 68.86,
+      "end": 70.16,
+      "text": "Pour more water",
+      "words": [
+        {
+          "t": 68.86,
+          "text": "Pour"
+        },
+        {
+          "t": 69.16,
+          "text": "more"
+        },
+        {
+          "t": 69.66,
+          "text": "water"
+        }
+      ]
+    },
+    {
+      "start": 70.16,
+      "end": 71.0,
+      "text": "Who bad bad?",
+      "words": [
+        {
+          "t": 70.16,
+          "text": "Who"
+        },
+        {
+          "t": 70.42,
+          "text": "bad"
+        },
+        {
+          "t": 70.74,
+          "text": "bad?"
+        }
+      ]
+    },
+    {
+      "start": 71.18,
+      "end": 71.8,
+      "text": "Don't ask",
+      "words": [
+        {
+          "t": 71.18,
+          "text": "Don't"
+        },
+        {
+          "t": 71.6,
+          "text": "ask"
+        }
+      ]
+    },
+    {
+      "start": 71.8,
+      "end": 72.78,
+      "text": "Father",
+      "words": [
+        {
+          "t": 71.8,
+          "text": "Father"
+        }
+      ]
+    },
+    {
+      "start": 73.5,
+      "end": 74.84,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 73.5,
+          "text": "Rump"
+        },
+        {
+          "t": 74.18,
+          "text": "and"
+        },
+        {
+          "t": 74.44,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 74.84,
+      "end": 76.18,
+      "text": "Gold in a cup",
+      "words": [
+        {
+          "t": 74.84,
+          "text": "Gold"
+        },
+        {
+          "t": 75.52,
+          "text": "in"
+        },
+        {
+          "t": 75.86,
+          "text": "a"
+        },
+        {
+          "t": 75.9,
+          "text": "cup"
+        }
+      ]
+    },
+    {
+      "start": 76.18,
+      "end": 77.42,
+      "text": "Smoke don't fall",
+      "words": [
+        {
+          "t": 76.18,
+          "text": "Smoke"
+        },
+        {
+          "t": 76.86,
+          "text": "don't"
+        },
+        {
+          "t": 77.28,
+          "text": "fall"
+        }
+      ]
+    },
+    {
+      "start": 77.42,
+      "end": 78.94,
+      "text": "Turn it up",
+      "words": [
+        {
+          "t": 77.42,
+          "text": "Turn"
+        },
+        {
+          "t": 78.22,
+          "text": "it"
+        },
+        {
+          "t": 78.5,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 78.94,
+      "end": 80.22,
+      "text": "Howdy to ball",
+      "words": [
+        {
+          "t": 78.94,
+          "text": "Howdy"
+        },
+        {
+          "t": 79.56,
+          "text": "to"
+        },
+        {
+          "t": 79.76,
+          "text": "ball"
+        }
+      ]
+    },
+    {
+      "start": 80.22,
+      "end": 81.54,
+      "text": "Why ain't it slow?",
+      "words": [
+        {
+          "t": 80.22,
+          "text": "Why"
+        },
+        {
+          "t": 80.9,
+          "text": "ain't"
+        },
+        {
+          "t": 81.12,
+          "text": "it"
+        },
+        {
+          "t": 81.26,
+          "text": "slow?"
+        }
+      ]
+    },
+    {
+      "start": 81.82,
+      "end": 82.98,
+      "text": "Night getting hot",
+      "words": [
+        {
+          "t": 81.82,
+          "text": "Night"
+        },
+        {
+          "t": 82.18,
+          "text": "getting"
+        },
+        {
+          "t": 82.6,
+          "text": "hot"
+        }
+      ]
+    },
+    {
+      "start": 83.24,
+      "end": 84.2,
+      "text": "Don't let go",
+      "words": [
+        {
+          "t": 83.24,
+          "text": "Don't"
+        },
+        {
+          "t": 83.84,
+          "text": "let"
+        },
+        {
+          "t": 83.96,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 84.2,
+      "end": 85.4,
+      "text": "One",
+      "words": [
+        {
+          "t": 84.2,
+          "text": "One"
+        }
+      ]
+    },
+    {
+      "start": 86.48,
+      "end": 86.76,
+      "text": "Time",
+      "words": [
+        {
+          "t": 86.48,
+          "text": "Time"
+        }
+      ]
+    },
+    {
+      "start": 86.76,
+      "end": 87.62,
+      "text": "Wine for me",
+      "words": [
+        {
+          "t": 86.76,
+          "text": "Wine"
+        },
+        {
+          "t": 86.98,
+          "text": "for"
+        },
+        {
+          "t": 87.32,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 87.62,
+      "end": 88.46,
+      "text": "Blue time",
+      "words": [
+        {
+          "t": 87.62,
+          "text": "Blue"
+        },
+        {
+          "t": 88.02,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 88.46,
+      "end": 90.36,
+      "text": "Wine for me",
+      "words": [
+        {
+          "t": 88.46,
+          "text": "Wine"
+        },
+        {
+          "t": 89.18,
+          "text": "for"
+        },
+        {
+          "t": 90.0,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 90.36,
+      "end": 91.18,
+      "text": "Tree time",
+      "words": [
+        {
+          "t": 90.36,
+          "text": "Tree"
+        },
+        {
+          "t": 90.68,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 91.18,
+      "end": 92.34,
+      "text": "Don't watch me",
+      "words": [
+        {
+          "t": 91.18,
+          "text": "Don't"
+        },
+        {
+          "t": 91.84,
+          "text": "watch"
+        },
+        {
+          "t": 92.14,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 92.34,
+      "end": 93.04,
+      "text": "For me",
+      "words": [
+        {
+          "t": 92.34,
+          "text": "For"
+        },
+        {
+          "t": 92.78,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 93.04,
+      "end": 93.82,
+      "text": "Four time",
+      "words": [
+        {
+          "t": 93.04,
+          "text": "Four"
+        },
+        {
+          "t": 93.46,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 93.82,
+      "end": 94.6,
+      "text": "Pull up",
+      "words": [
+        {
+          "t": 93.82,
+          "text": "Pull"
+        },
+        {
+          "t": 94.44,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 96.52,
+      "end": 97.24,
+      "text": "Hey",
+      "words": [
+        {
+          "t": 96.52,
+          "text": "Hey"
+        }
+      ]
+    },
+    {
+      "start": 99.06,
+      "end": 99.648,
+      "text": "Forward",
+      "words": [
+        {
+          "t": 99.06,
+          "text": "Forward"
+        }
+      ]
+    },
+    {
+      "start": 102.24,
+      "end": 102.96,
+      "text": "Forward",
+      "words": [
+        {
+          "t": 102.24,
+          "text": "Forward"
+        }
+      ]
+    },
+    {
+      "start": 104.98,
+      "end": 105.696,
+      "text": "Forward",
+      "words": [
+        {
+          "t": 104.98,
+          "text": "Forward"
+        }
+      ]
+    },
+    {
+      "start": 105.7,
+      "end": 105.984,
+      "text": "Forward",
+      "words": [
+        {
+          "t": 105.7,
+          "text": "Forward"
+        }
+      ]
+    },
+    {
+      "start": 108.0,
+      "end": 110.38,
+      "text": "Don't spill the drink like another one",
+      "words": [
+        {
+          "t": 108.0,
+          "text": "Don't"
+        },
+        {
+          "t": 108.7,
+          "text": "spill"
+        },
+        {
+          "t": 108.9,
+          "text": "the"
+        },
+        {
+          "t": 109.12,
+          "text": "drink"
+        },
+        {
+          "t": 109.4,
+          "text": "like"
+        },
+        {
+          "t": 109.64,
+          "text": "another"
+        },
+        {
+          "t": 109.92,
+          "text": "one"
+        }
+      ]
+    },
+    {
+      "start": 110.38,
+      "end": 112.06,
+      "text": "DJ not done",
+      "words": [
+        {
+          "t": 110.38,
+          "text": "DJ"
+        },
+        {
+          "t": 111.08,
+          "text": "not"
+        },
+        {
+          "t": 111.68,
+          "text": "done"
+        }
+      ]
+    },
+    {
+      "start": 112.06,
+      "end": 113.08,
+      "text": "Money never come",
+      "words": [
+        {
+          "t": 112.06,
+          "text": "Money"
+        },
+        {
+          "t": 112.42,
+          "text": "never"
+        },
+        {
+          "t": 112.72,
+          "text": "come"
+        }
+      ]
+    },
+    {
+      "start": 113.09,
+      "end": 115.96,
+      "text": "Hands on my waist but don't move them",
+      "words": [
+        {
+          "t": 113.09,
+          "text": "Hands"
+        },
+        {
+          "t": 113.952,
+          "text": "on"
+        },
+        {
+          "t": 114.4,
+          "text": "my"
+        },
+        {
+          "t": 114.52,
+          "text": "waist"
+        },
+        {
+          "t": 114.86,
+          "text": "but"
+        },
+        {
+          "t": 115.02,
+          "text": "don't"
+        },
+        {
+          "t": 115.42,
+          "text": "move"
+        },
+        {
+          "t": 115.64,
+          "text": "them"
+        }
+      ]
+    },
+    {
+      "start": 115.96,
+      "end": 116.38,
+      "text": "If you",
+      "words": [
+        {
+          "t": 115.96,
+          "text": "If"
+        },
+        {
+          "t": 116.26,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 116.48,
+      "end": 118.84,
+      "text": "Can't keep turn when you can't get none",
+      "words": [
+        {
+          "t": 116.48,
+          "text": "Can't"
+        },
+        {
+          "t": 116.92,
+          "text": "keep"
+        },
+        {
+          "t": 117.0,
+          "text": "turn"
+        },
+        {
+          "t": 117.52,
+          "text": "when"
+        },
+        {
+          "t": 117.8,
+          "text": "you"
+        },
+        {
+          "t": 117.92,
+          "text": "can't"
+        },
+        {
+          "t": 118.32,
+          "text": "get"
+        },
+        {
+          "t": 118.48,
+          "text": "none"
+        }
+      ]
+    },
+    {
+      "start": 118.84,
+      "end": 119.44,
+      "text": "Talk to them",
+      "words": [
+        {
+          "t": 118.84,
+          "text": "Talk"
+        },
+        {
+          "t": 119.08,
+          "text": "to"
+        },
+        {
+          "t": 119.24,
+          "text": "them"
+        }
+      ]
+    },
+    {
+      "start": 119.44,
+      "end": 121.74,
+      "text": "I like it rough but smooth with the timing",
+      "words": [
+        {
+          "t": 119.44,
+          "text": "I"
+        },
+        {
+          "t": 119.68,
+          "text": "like"
+        },
+        {
+          "t": 119.86,
+          "text": "it"
+        },
+        {
+          "t": 120.0,
+          "text": "rough"
+        },
+        {
+          "t": 120.24,
+          "text": "but"
+        },
+        {
+          "t": 120.5,
+          "text": "smooth"
+        },
+        {
+          "t": 120.86,
+          "text": "with"
+        },
+        {
+          "t": 121.24,
+          "text": "the"
+        },
+        {
+          "t": 121.38,
+          "text": "timing"
+        }
+      ]
+    },
+    {
+      "start": 121.74,
+      "end": 122.94,
+      "text": "Gold on the skin",
+      "words": [
+        {
+          "t": 121.74,
+          "text": "Gold"
+        },
+        {
+          "t": 122.28,
+          "text": "on"
+        },
+        {
+          "t": 122.54,
+          "text": "the"
+        },
+        {
+          "t": 122.66,
+          "text": "skin"
+        }
+      ]
+    },
+    {
+      "start": 122.94,
+      "end": 124.44,
+      "text": "Baseline climbing",
+      "words": [
+        {
+          "t": 122.94,
+          "text": "Baseline"
+        },
+        {
+          "t": 123.84,
+          "text": "climbing"
+        }
+      ]
+    },
+    {
+      "start": 124.44,
+      "end": 125.72,
+      "text": "Smoke in my hair",
+      "words": [
+        {
+          "t": 124.44,
+          "text": "Smoke"
+        },
+        {
+          "t": 124.82,
+          "text": "in"
+        },
+        {
+          "t": 125.24,
+          "text": "my"
+        },
+        {
+          "t": 125.4,
+          "text": "hair"
+        }
+      ]
+    },
+    {
+      "start": 125.72,
+      "end": 127.16,
+      "text": "Rum in the lighting",
+      "words": [
+        {
+          "t": 125.72,
+          "text": "Rum"
+        },
+        {
+          "t": 126.32,
+          "text": "in"
+        },
+        {
+          "t": 126.52,
+          "text": "the"
+        },
+        {
+          "t": 126.72,
+          "text": "lighting"
+        }
+      ]
+    },
+    {
+      "start": 127.16,
+      "end": 128.56,
+      "text": "If I say pull up",
+      "words": [
+        {
+          "t": 127.16,
+          "text": "If"
+        },
+        {
+          "t": 127.62,
+          "text": "I"
+        },
+        {
+          "t": 127.8,
+          "text": "say"
+        },
+        {
+          "t": 128.04,
+          "text": "pull"
+        },
+        {
+          "t": 128.24,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 128.56,
+      "end": 130.02,
+      "text": "You better rewind it",
+      "words": [
+        {
+          "t": 128.56,
+          "text": "You"
+        },
+        {
+          "t": 128.74,
+          "text": "better"
+        },
+        {
+          "t": 129.02,
+          "text": "rewind"
+        },
+        {
+          "t": 129.62,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 130.88,
+      "end": 131.82,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 130.88,
+          "text": "Rump"
+        },
+        {
+          "t": 131.22,
+          "text": "and"
+        },
+        {
+          "t": 131.48,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 131.82,
+      "end": 133.14,
+      "text": "Gold in a cup",
+      "words": [
+        {
+          "t": 131.82,
+          "text": "Gold"
+        },
+        {
+          "t": 132.48,
+          "text": "in"
+        },
+        {
+          "t": 132.74,
+          "text": "a"
+        },
+        {
+          "t": 132.78,
+          "text": "cup"
+        }
+      ]
+    },
+    {
+      "start": 133.14,
+      "end": 134.36,
+      "text": "Smoke don't fall",
+      "words": [
+        {
+          "t": 133.14,
+          "text": "Smoke"
+        },
+        {
+          "t": 133.76,
+          "text": "don't"
+        },
+        {
+          "t": 134.24,
+          "text": "fall"
+        }
+      ]
+    },
+    {
+      "start": 134.36,
+      "end": 135.9,
+      "text": "Turn it up",
+      "words": [
+        {
+          "t": 134.36,
+          "text": "Turn"
+        },
+        {
+          "t": 135.18,
+          "text": "it"
+        },
+        {
+          "t": 135.44,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 135.9,
+      "end": 137.18,
+      "text": "Howdy to ball",
+      "words": [
+        {
+          "t": 135.9,
+          "text": "Howdy"
+        },
+        {
+          "t": 136.6,
+          "text": "to"
+        },
+        {
+          "t": 136.76,
+          "text": "ball"
+        }
+      ]
+    },
+    {
+      "start": 137.18,
+      "end": 138.48,
+      "text": "Why ain't it slow?",
+      "words": [
+        {
+          "t": 137.18,
+          "text": "Why"
+        },
+        {
+          "t": 137.86,
+          "text": "ain't"
+        },
+        {
+          "t": 138.06,
+          "text": "it"
+        },
+        {
+          "t": 138.2,
+          "text": "slow?"
+        }
+      ]
+    },
+    {
+      "start": 138.72,
+      "end": 139.88,
+      "text": "Night getting hot",
+      "words": [
+        {
+          "t": 138.72,
+          "text": "Night"
+        },
+        {
+          "t": 139.1,
+          "text": "getting"
+        },
+        {
+          "t": 139.62,
+          "text": "hot"
+        }
+      ]
+    },
+    {
+      "start": 140.15,
+      "end": 141.12,
+      "text": "Don't let go",
+      "words": [
+        {
+          "t": 140.15,
+          "text": "Don't"
+        },
+        {
+          "t": 140.8,
+          "text": "let"
+        },
+        {
+          "t": 140.86,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 141.33,
+      "end": 142.18,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 141.33,
+          "text": "Rump"
+        },
+        {
+          "t": 141.88,
+          "text": "and"
+        },
+        {
+          "t": 142.1,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 142.18,
+      "end": 142.28,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 142.18,
+          "text": "Rump"
+        },
+        {
+          "t": 142.18,
+          "text": "and"
+        },
+        {
+          "t": 142.18,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 142.35,
+      "end": 143.14,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 142.35,
+          "text": "Rump"
+        },
+        {
+          "t": 142.9,
+          "text": "and"
+        },
+        {
+          "t": 143.12,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 143.14,
+      "end": 143.42,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 143.14,
+          "text": "Rump"
+        },
+        {
+          "t": 143.42,
+          "text": "and"
+        },
+        {
+          "t": 143.42,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 143.42,
+      "end": 145.02,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 143.42,
+          "text": "Rump"
+        },
+        {
+          "t": 144.26,
+          "text": "and"
+        },
+        {
+          "t": 144.56,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 145.02,
+      "end": 145.44,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 145.02,
+          "text": "Rump"
+        },
+        {
+          "t": 145.44,
+          "text": "and"
+        },
+        {
+          "t": 145.44,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 145.44,
+      "end": 145.84,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 145.44,
+          "text": "Rump"
+        },
+        {
+          "t": 145.84,
+          "text": "and"
+        },
+        {
+          "t": 145.84,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 145.92,
+      "end": 146.38,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 145.92,
+          "text": "Rump"
+        },
+        {
+          "t": 146.1,
+          "text": "and"
+        },
+        {
+          "t": 146.3,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 146.38,
+      "end": 146.46,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 146.38,
+          "text": "Rump"
+        },
+        {
+          "t": 146.46,
+          "text": "and"
+        },
+        {
+          "t": 146.46,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 146.48,
+      "end": 148.08,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 146.48,
+          "text": "Rump"
+        },
+        {
+          "t": 147.4,
+          "text": "and"
+        },
+        {
+          "t": 147.62,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 148.08,
+      "end": 149.44,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 148.08,
+          "text": "Rump"
+        },
+        {
+          "t": 148.76,
+          "text": "and"
+        },
+        {
+          "t": 149.06,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 149.44,
+      "end": 152.05,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 149.44,
+          "text": "Rump"
+        },
+        {
+          "t": 150.18,
+          "text": "and"
+        },
+        {
+          "t": 150.2,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 152.24,
+      "end": 152.76,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 152.24,
+          "text": "Rump"
+        },
+        {
+          "t": 152.76,
+          "text": "and"
+        },
+        {
+          "t": 152.76,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 152.76,
+      "end": 153.504,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 152.76,
+          "text": "Rump"
+        },
+        {
+          "t": 152.9,
+          "text": "and"
+        },
+        {
+          "t": 153.12,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 154.12,
+      "end": 154.26,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 154.12,
+          "text": "Rump"
+        },
+        {
+          "t": 154.22,
+          "text": "and"
+        },
+        {
+          "t": 154.26,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 154.26,
+      "end": 154.33,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 154.26,
+          "text": "Rump"
+        },
+        {
+          "t": 154.26,
+          "text": "and"
+        },
+        {
+          "t": 154.28,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 155.42,
+      "end": 155.56,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 155.42,
+          "text": "Rump"
+        },
+        {
+          "t": 155.52,
+          "text": "and"
+        },
+        {
+          "t": 155.56,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 155.56,
+      "end": 156.12,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 155.56,
+          "text": "Rump"
+        },
+        {
+          "t": 155.56,
+          "text": "and"
+        },
+        {
+          "t": 155.74,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 156.12,
+      "end": 157.62,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 156.12,
+          "text": "Rump"
+        },
+        {
+          "t": 156.64,
+          "text": "and"
+        },
+        {
+          "t": 157.06,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 157.62,
+      "end": 158.36,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 157.62,
+          "text": "Rump"
+        },
+        {
+          "t": 158.06,
+          "text": "and"
+        },
+        {
+          "t": 158.36,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 158.36,
+      "end": 158.71,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 158.36,
+          "text": "Rump"
+        },
+        {
+          "t": 158.36,
+          "text": "and"
+        },
+        {
+          "t": 158.46,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 159.0,
+      "end": 160.24,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 159.0,
+          "text": "Rump"
+        },
+        {
+          "t": 159.62,
+          "text": "and"
+        },
+        {
+          "t": 159.78,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 160.24,
+      "end": 161.66,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 160.24,
+          "text": "Rump"
+        },
+        {
+          "t": 160.96,
+          "text": "and"
+        },
+        {
+          "t": 161.26,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 161.66,
+      "end": 162.9,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 161.66,
+          "text": "Rump"
+        },
+        {
+          "t": 162.2,
+          "text": "and"
+        },
+        {
+          "t": 162.48,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 167.4,
+      "end": 168.1,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 167.4,
+          "text": "Rump"
+        },
+        {
+          "t": 167.8,
+          "text": "and"
+        },
+        {
+          "t": 167.94,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 175.648,
+      "end": 176.46,
+      "text": "Rump and gold",
+      "words": [
+        {
+          "t": 175.648,
+          "text": "Rump"
+        },
+        {
+          "t": 176.46,
+          "text": "and"
+        },
+        {
+          "t": 176.46,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 176.46,
+      "end": 177.08,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 176.46,
+          "text": "Thank"
+        },
+        {
+          "t": 176.98,
+          "text": "you."
+        }
+      ]
+    }
+  ]
+}

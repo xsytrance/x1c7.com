@@ -62,6 +62,10 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
   const [filter, setFilter] = useState<GenreKey | null>(null);
   const [meta, setMeta] = useState<StemData | null>(null);
   const hoverTimer = useRef<number | null>(null);
+  // Which spine a click/tap would PLAY. Mouse hover and keyboard focus arm it
+  // (so a click is instant, as ever); a touch tap arms it only on the second
+  // tap of the same spine — the first pulls the case and previews the drop.
+  const armedId = useRef<string | null>(null);
   const preview = usePreview(onPauseMain);
 
   const shelf = useMemo(
@@ -133,9 +137,9 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
         ))}
       </div>
 
-      <div className="flex items-stretch gap-8">
+      <div className="flex flex-col items-stretch gap-8 min-[900px]:flex-row">
         {/* the shelf */}
-        <div className="min-w-0 flex-1" onPointerLeave={leaveShelf}>
+        <div className="min-w-0 flex-1" onPointerLeave={(e) => { if (e.pointerType !== "touch") leaveShelf(); }}>
           <div className="flex items-end gap-[5px] overflow-x-auto pb-3 [scrollbar-width:thin]" style={{ perspective: "1200px" }}>
             {shelf.map((t) => {
               const p = classifyGenre(t.genre);
@@ -143,9 +147,11 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
               return (
                 <button
                   key={t.id}
-                  onPointerEnter={() => focusTrack(t)}
-                  onFocus={() => focusTrack(t)}
-                  onClick={() => onPlay(t)}
+                  // Mouse/keyboard arm on hover/focus so a click plays instantly;
+                  // touch taps once to pull the case + preview, again to play.
+                  onPointerEnter={(e) => { if (e.pointerType !== "touch") armedId.current = t.id; focusTrack(t); }}
+                  onFocus={() => { armedId.current = t.id; focusTrack(t); }}
+                  onClick={() => { if (armedId.current === t.id) onPlay(t); else armedId.current = t.id; }}
                   aria-label={`${t.title} — ${p.label}`}
                   className="group relative shrink-0 outline-none"
                   style={{ width: 52, height: "min(56vh, 540px)" }}
@@ -188,7 +194,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
         </div>
 
         {/* the pulled case */}
-        <div className="w-[380px] shrink-0">
+        <div className="w-full shrink-0 min-[900px]:w-[380px]">
           <AnimatePresence mode="wait">
             {focused ? (
               <motion.div

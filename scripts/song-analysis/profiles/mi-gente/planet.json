@@ -1,0 +1,125 @@
+[
+  {
+    "id": "mi-gente",
+    "planet": {
+      "analysis": {
+        "summary": "A high-energy Latin Trap anthem celebrating street loyalty, unity across diverse Latino communities, and transforming struggle into collective power.",
+        "overallMood": "Aggressive United Swagger",
+        "themes": [
+          "Loyalty and Family Bloodlines",
+          "Street Unity Across Borders",
+          "Resilience Against Adversity",
+          "Authentic Identity vs. Poseurs",
+          "Community Power Rising Up",
+          "Nighttime Barrio Celebration"
+        ],
+        "palette": [
+          "#120F15",
+          "#FF4D00",
+          "#8B0000",
+          "#FFEEDC"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipatory Swagger",
+            "intensity": 0.6,
+            "colorHintHex": "#120F15",
+            "start": 0
+          },
+          {
+            "name": "Chorus 1",
+            "emotion": "Triumphant Unity",
+            "intensity": 0.95,
+            "colorHintHex": "#FF4D00",
+            "start": 9.96
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Gritty Loyalty",
+            "intensity": 0.82,
+            "colorHintHex": "#8B0000",
+            "start": 29.58
+          },
+          {
+            "name": "Pre-Chorus / Chant Response",
+            "emotion": "Aggressive Challenge",
+            "intensity": 0.9,
+            "colorHintHex": "#FF4D00",
+            "start": 59.58
+          },
+          {
+            "name": "Chorus 2",
+            "emotion": "Empowered Declaration",
+            "intensity": 0.98,
+            "colorHintHex": "#FFEEDC",
+            "start": 73.92
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Global Connection",
+            "intensity": 0.85,
+            "colorHintHex": "#1A4D6F",
+            "start": 105.18
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Spiritual Brotherhood",
+            "intensity": 0.75,
+            "colorHintHex": "#FF4500",
+            "start": 132.28
+          },
+          {
+            "name": "Drop / Outro Start",
+            "emotion": "Explosive Release",
+            "intensity": 1,
+            "colorHintHex": "#8B0000",
+            "start": 142.86
+          },
+          {
+            "name": "Outro",
+            "emotion": "Enduring Pride",
+            "intensity": 0.7,
+            "colorHintHex": "#FFEEDC",
+            "start": 152.62
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Gente",
+            "emotion": "Belonging",
+            "imageryPrompt": "A massive crowd of diverse people with glowing outlines standing shoulder to shoulder under a neon sign, hands raised in unison."
+          },
+          {
+            "word": "Sangre",
+            "emotion": "Deep Connection",
+            "imageryPrompt": "Close-up of intertwined veins glowing warmly against dark skin tones, symbolizing shared lineage and life force."
+          },
+          {
+            "word": "Calle",
+            "emotion": "Street Pride",
+            "imageryPrompt": "A vibrant concrete alleyway at night illuminated by streetlights and graffiti art, reflecting confidence in the pavement cracks."
+          },
+          {
+            "word": "Barrio",
+            "emotion": "Home Defense",
+            "imageryPrompt": "An elevated view of a colorful residential block party with lowrider cars parked outside, smoke rising from food stalls and people dancing."
+          },
+          {
+            "word": "Fuego",
+            "emotion": "Passionate Fire",
+            "imageryPrompt": "Intense orange flames swirling around faces covered in sweat but smiling, representing the heat of passion and resilience."
+          },
+          {
+            "word": "Lealtad",
+            "emotion": "Unbreakable Bond",
+            "imageryPrompt": "Two hands clasped tightly together with golden light radiating from the grip, ignoring shadows trying to pull them apart."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

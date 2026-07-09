@@ -1,0 +1,847 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 38.18,
+      "end": 42.08,
+      "text": "Keep it on low, keep it on clear",
+      "words": [
+        {
+          "t": 38.18,
+          "text": "Keep"
+        },
+        {
+          "t": 39.08,
+          "text": "it"
+        },
+        {
+          "t": 39.56,
+          "text": "on"
+        },
+        {
+          "t": 39.8,
+          "text": "low,"
+        },
+        {
+          "t": 40.2,
+          "text": "keep"
+        },
+        {
+          "t": 41.14,
+          "text": "it"
+        },
+        {
+          "t": 41.5,
+          "text": "on"
+        },
+        {
+          "t": 41.8,
+          "text": "clear"
+        }
+      ]
+    },
+    {
+      "start": 42.08,
+      "end": 43.904,
+      "text": "I take one step,",
+      "words": [
+        {
+          "t": 42.08,
+          "text": "I"
+        },
+        {
+          "t": 42.76,
+          "text": "take"
+        },
+        {
+          "t": 43.488,
+          "text": "one"
+        },
+        {
+          "t": 43.72,
+          "text": "step,"
+        }
+      ]
+    },
+    {
+      "start": 44.48,
+      "end": 45.94,
+      "text": "you look away",
+      "words": [
+        {
+          "t": 44.48,
+          "text": "you"
+        },
+        {
+          "t": 45.184,
+          "text": "look"
+        },
+        {
+          "t": 45.5,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 45.94,
+      "end": 50.02,
+      "text": "Can I get your face for one clean frame?",
+      "words": [
+        {
+          "t": 45.94,
+          "text": "Can"
+        },
+        {
+          "t": 47.1,
+          "text": "I"
+        },
+        {
+          "t": 47.2,
+          "text": "get"
+        },
+        {
+          "t": 47.5,
+          "text": "your"
+        },
+        {
+          "t": 47.68,
+          "text": "face"
+        },
+        {
+          "t": 48.1,
+          "text": "for"
+        },
+        {
+          "t": 48.704,
+          "text": "one"
+        },
+        {
+          "t": 49.248,
+          "text": "clean"
+        },
+        {
+          "t": 49.52,
+          "text": "frame?"
+        }
+      ]
+    },
+    {
+      "start": 50.88,
+      "end": 51.648,
+      "text": "Look my way,",
+      "words": [
+        {
+          "t": 50.88,
+          "text": "Look"
+        },
+        {
+          "t": 51.08,
+          "text": "my"
+        },
+        {
+          "t": 51.38,
+          "text": "way,"
+        }
+      ]
+    },
+    {
+      "start": 52.26,
+      "end": 54.17,
+      "text": "just listen",
+      "words": [
+        {
+          "t": 52.26,
+          "text": "just"
+        },
+        {
+          "t": 53.42,
+          "text": "listen"
+        }
+      ]
+    },
+    {
+      "start": 54.51,
+      "end": 55.616,
+      "text": "Look my way,",
+      "words": [
+        {
+          "t": 54.51,
+          "text": "Look"
+        },
+        {
+          "t": 55.36,
+          "text": "my"
+        },
+        {
+          "t": 55.46,
+          "text": "way,"
+        }
+      ]
+    },
+    {
+      "start": 56.26,
+      "end": 57.568,
+      "text": "just listen",
+      "words": [
+        {
+          "t": 56.26,
+          "text": "just"
+        },
+        {
+          "t": 57.42,
+          "text": "listen"
+        }
+      ]
+    },
+    {
+      "start": 58.36,
+      "end": 58.84,
+      "text": "Swim across",
+      "words": [
+        {
+          "t": 58.36,
+          "text": "Swim"
+        },
+        {
+          "t": 58.46,
+          "text": "across"
+        }
+      ]
+    },
+    {
+      "start": 59.424,
+      "end": 61.9,
+      "text": "the room, I stay",
+      "words": [
+        {
+          "t": 59.424,
+          "text": "the"
+        },
+        {
+          "t": 59.6,
+          "text": "room,"
+        },
+        {
+          "t": 60.38,
+          "text": "I"
+        },
+        {
+          "t": 61.38,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 61.9,
+      "end": 63.76,
+      "text": "Swim across the room,",
+      "words": [
+        {
+          "t": 61.9,
+          "text": "Swim"
+        },
+        {
+          "t": 62.4,
+          "text": "across"
+        },
+        {
+          "t": 62.912,
+          "text": "the"
+        },
+        {
+          "t": 63.66,
+          "text": "room,"
+        }
+      ]
+    },
+    {
+      "start": 64.34,
+      "end": 65.88,
+      "text": "I stay",
+      "words": [
+        {
+          "t": 64.34,
+          "text": "I"
+        },
+        {
+          "t": 65.4,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 81.44,
+      "end": 84.32,
+      "text": "Blue in your black, black",
+      "words": [
+        {
+          "t": 81.44,
+          "text": "Blue"
+        },
+        {
+          "t": 82.36,
+          "text": "in"
+        },
+        {
+          "t": 83.28,
+          "text": "your"
+        },
+        {
+          "t": 83.48,
+          "text": "black,"
+        },
+        {
+          "t": 84.04,
+          "text": "black"
+        }
+      ]
+    },
+    {
+      "start": 84.32,
+      "end": 85.86,
+      "text": "Ice on your hand",
+      "words": [
+        {
+          "t": 84.32,
+          "text": "Ice"
+        },
+        {
+          "t": 84.992,
+          "text": "on"
+        },
+        {
+          "t": 85.26,
+          "text": "your"
+        },
+        {
+          "t": 85.42,
+          "text": "hand"
+        }
+      ]
+    },
+    {
+      "start": 86.3,
+      "end": 87.74,
+      "text": "You move like you know",
+      "words": [
+        {
+          "t": 86.3,
+          "text": "You"
+        },
+        {
+          "t": 86.4,
+          "text": "move"
+        },
+        {
+          "t": 87.12,
+          "text": "like"
+        },
+        {
+          "t": 87.22,
+          "text": "you"
+        },
+        {
+          "t": 87.4,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 87.74,
+      "end": 88.16,
+      "text": "That I'm not your friend",
+      "words": [
+        {
+          "t": 87.74,
+          "text": "That"
+        },
+        {
+          "t": 88.14,
+          "text": "I'm"
+        },
+        {
+          "t": 88.16,
+          "text": "not"
+        },
+        {
+          "t": 88.16,
+          "text": "your"
+        },
+        {
+          "t": 88.16,
+          "text": "friend"
+        }
+      ]
+    },
+    {
+      "start": 88.18,
+      "end": 89.62,
+      "text": "No, I don't understand",
+      "words": [
+        {
+          "t": 88.18,
+          "text": "No,"
+        },
+        {
+          "t": 88.4,
+          "text": "I"
+        },
+        {
+          "t": 88.864,
+          "text": "don't"
+        },
+        {
+          "t": 89.26,
+          "text": "understand"
+        }
+      ]
+    },
+    {
+      "start": 89.62,
+      "end": 91.584,
+      "text": "I don't say much",
+      "words": [
+        {
+          "t": 89.62,
+          "text": "I"
+        },
+        {
+          "t": 90.44,
+          "text": "don't"
+        },
+        {
+          "t": 91.2,
+          "text": "say"
+        },
+        {
+          "t": 91.38,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 91.85,
+      "end": 93.78,
+      "text": "You don't need much",
+      "words": [
+        {
+          "t": 91.85,
+          "text": "You"
+        },
+        {
+          "t": 92.9,
+          "text": "don't"
+        },
+        {
+          "t": 93.32,
+          "text": "need"
+        },
+        {
+          "t": 93.36,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 93.78,
+      "end": 95.74,
+      "text": "One little pass",
+      "words": [
+        {
+          "t": 93.78,
+          "text": "One"
+        },
+        {
+          "t": 94.9,
+          "text": "little"
+        },
+        {
+          "t": 95.24,
+          "text": "pass"
+        }
+      ]
+    },
+    {
+      "start": 95.74,
+      "end": 97.24,
+      "text": "Then we both go",
+      "words": [
+        {
+          "t": 95.74,
+          "text": "Then"
+        },
+        {
+          "t": 96.34,
+          "text": "we"
+        },
+        {
+          "t": 96.84,
+          "text": "both"
+        },
+        {
+          "t": 97.18,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 97.24,
+      "end": 99.64,
+      "text": "Look my way,",
+      "words": [
+        {
+          "t": 97.24,
+          "text": "Look"
+        },
+        {
+          "t": 98.04,
+          "text": "my"
+        },
+        {
+          "t": 99.06,
+          "text": "way,"
+        }
+      ]
+    },
+    {
+      "start": 100.9,
+      "end": 101.74,
+      "text": "just once",
+      "words": [
+        {
+          "t": 100.9,
+          "text": "just"
+        },
+        {
+          "t": 101.0,
+          "text": "once"
+        }
+      ]
+    },
+    {
+      "start": 101.74,
+      "end": 103.64,
+      "text": "Look my way,",
+      "words": [
+        {
+          "t": 101.74,
+          "text": "Look"
+        },
+        {
+          "t": 102.16,
+          "text": "my"
+        },
+        {
+          "t": 103.04,
+          "text": "way,"
+        }
+      ]
+    },
+    {
+      "start": 104.92,
+      "end": 105.76,
+      "text": "just once",
+      "words": [
+        {
+          "t": 104.92,
+          "text": "just"
+        },
+        {
+          "t": 105.02,
+          "text": "once"
+        }
+      ]
+    },
+    {
+      "start": 105.76,
+      "end": 109.52,
+      "text": "Swim across the room, I stay",
+      "words": [
+        {
+          "t": 105.76,
+          "text": "Swim"
+        },
+        {
+          "t": 106.1,
+          "text": "across"
+        },
+        {
+          "t": 106.46,
+          "text": "the"
+        },
+        {
+          "t": 107.24,
+          "text": "room,"
+        },
+        {
+          "t": 108.0,
+          "text": "I"
+        },
+        {
+          "t": 109.02,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 109.52,
+      "end": 113.48,
+      "text": "Swim across the room, I stay",
+      "words": [
+        {
+          "t": 109.52,
+          "text": "Swim"
+        },
+        {
+          "t": 110.08,
+          "text": "across"
+        },
+        {
+          "t": 110.42,
+          "text": "the"
+        },
+        {
+          "t": 111.22,
+          "text": "room,"
+        },
+        {
+          "t": 111.92,
+          "text": "I"
+        },
+        {
+          "t": 113.02,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 118.464,
+      "end": 124.58,
+      "text": "Blue in your black, black",
+      "words": [
+        {
+          "t": 118.464,
+          "text": "Blue"
+        },
+        {
+          "t": 118.62,
+          "text": "in"
+        },
+        {
+          "t": 119.46,
+          "text": "your"
+        },
+        {
+          "t": 124.58,
+          "text": "black,"
+        },
+        {
+          "t": 124.58,
+          "text": "black"
+        }
+      ]
+    },
+    {
+      "start": 124.58,
+      "end": 124.7,
+      "text": "Ice",
+      "words": [
+        {
+          "t": 124.58,
+          "text": "Ice"
+        }
+      ]
+    },
+    {
+      "start": 126.304,
+      "end": 126.82,
+      "text": "on your hand",
+      "words": [
+        {
+          "t": 126.304,
+          "text": "on"
+        },
+        {
+          "t": 126.64,
+          "text": "your"
+        },
+        {
+          "t": 126.82,
+          "text": "hand"
+        }
+      ]
+    },
+    {
+      "start": 126.82,
+      "end": 127.22,
+      "text": "You move like you know",
+      "words": [
+        {
+          "t": 126.82,
+          "text": "You"
+        },
+        {
+          "t": 126.82,
+          "text": "move"
+        },
+        {
+          "t": 126.82,
+          "text": "like"
+        },
+        {
+          "t": 126.86,
+          "text": "you"
+        },
+        {
+          "t": 127.22,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 127.22,
+      "end": 129.78,
+      "text": "That I'm not your friend",
+      "words": [
+        {
+          "t": 127.22,
+          "text": "That"
+        },
+        {
+          "t": 127.6,
+          "text": "I'm"
+        },
+        {
+          "t": 129.02,
+          "text": "not"
+        },
+        {
+          "t": 129.78,
+          "text": "your"
+        },
+        {
+          "t": 129.78,
+          "text": "friend"
+        }
+      ]
+    },
+    {
+      "start": 130.176,
+      "end": 132.16,
+      "text": "Swim across the room, I stay",
+      "words": [
+        {
+          "t": 130.176,
+          "text": "Swim"
+        },
+        {
+          "t": 130.6,
+          "text": "across"
+        },
+        {
+          "t": 131.1,
+          "text": "the"
+        },
+        {
+          "t": 131.3,
+          "text": "room,"
+        },
+        {
+          "t": 131.84,
+          "text": "I"
+        },
+        {
+          "t": 131.88,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 133.02,
+      "end": 133.34,
+      "text": "Blue",
+      "words": [
+        {
+          "t": 133.02,
+          "text": "Blue"
+        }
+      ]
+    },
+    {
+      "start": 134.368,
+      "end": 136.096,
+      "text": "in your black, black",
+      "words": [
+        {
+          "t": 134.368,
+          "text": "in"
+        },
+        {
+          "t": 134.58,
+          "text": "your"
+        },
+        {
+          "t": 135.24,
+          "text": "black,"
+        },
+        {
+          "t": 135.62,
+          "text": "black"
+        }
+      ]
+    },
+    {
+      "start": 145.3,
+      "end": 148.16,
+      "text": "Ice on your hand",
+      "words": [
+        {
+          "t": 145.3,
+          "text": "Ice"
+        },
+        {
+          "t": 146.38,
+          "text": "on"
+        },
+        {
+          "t": 147.46,
+          "text": "your"
+        },
+        {
+          "t": 147.48,
+          "text": "hand"
+        }
+      ]
+    },
+    {
+      "start": 158.36,
+      "end": 161.16,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 158.36,
+          "text": "Thank"
+        },
+        {
+          "t": 159.76,
+          "text": "you."
+        }
+      ]
+    },
+    {
+      "start": 190.9,
+      "end": 191.02,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 190.9,
+          "text": "Thank"
+        },
+        {
+          "t": 190.98,
+          "text": "you."
+        }
+      ]
+    }
+  ]
+}

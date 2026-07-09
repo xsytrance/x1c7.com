@@ -1,0 +1,111 @@
+[
+  {
+    "id": "one-tap-away-riverboat-bad-boys-remix",
+    "planet": {
+      "analysis": {
+        "summary": "A gritty noir critique on digital isolation where social media connections replace genuine intimacy, set against a cinematic backdrop of dirty dockside crime and rubber-hose animation chaos.",
+        "overallMood": "lonely paranoia",
+        "themes": [
+          "Digital Isolation",
+          "Superficial Fame",
+          "Lost Connection",
+          "Noir Melancholy",
+          "Public vs Private Self",
+          "Gangsta Vulnerability"
+        ],
+        "palette": [
+          "#1a1a1d",
+          "#c5a065",
+          "#ff4e50",
+          "#f2cc8f"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "nostalgic reflection",
+            "intensity": 0.3,
+            "colorHintHex": "#c5a065",
+            "start": 0
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "cold observation",
+            "intensity": 0.7,
+            "colorHintHex": "#2d2d34",
+            "start": 29.86
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "frustrated longing",
+            "intensity": 0.85,
+            "colorHintHex": "#ff4e50",
+            "start": 39.36
+          },
+          {
+            "name": "Chorus",
+            "emotion": "melancholic realization",
+            "intensity": 1,
+            "colorHintHex": "#f2cc8f",
+            "start": 59.28
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "resigned acceptance",
+            "intensity": 0.65,
+            "colorHintHex": "#4e4376",
+            "start": 128.6
+          },
+          {
+            "name": "Bridge",
+            "emotion": "heartbreaking clarity",
+            "intensity": 0.95,
+            "colorHintHex": "#1a1a2d",
+            "start": 136.37
+          },
+          {
+            "name": "Drop",
+            "emotion": "cinematic despair",
+            "intensity": 1,
+            "colorHintHex": "#ff4e50",
+            "start": 152.2
+          }
+        ],
+        "keywords": [
+          {
+            "word": "alone",
+            "emotion": "profound isolation",
+            "imageryPrompt": "A solitary figure in a grainy black and white noir room, surrounded by floating digital contact icons that refuse to connect like broken chain links."
+          },
+          {
+            "word": "tap",
+            "emotion": "frustrated futility",
+            "imageryPrompt": "A gloved hand slamming against an old wooden dock post, sending ripples through dirty water where a reflection of the hand does not match the movement above."
+          },
+          {
+            "word": "stacks",
+            "emotion": "hollow wealth",
+            "imageryPrompt": "Piles of gold coins turning to dust and ash instantly under harsh dockside floodlights, emphasizing temporary fame over substance."
+          },
+          {
+            "word": "scroll",
+            "emotion": "dismissive haste",
+            "imageryPrompt": "A finger rapidly swiping past a crying face on an old CRT screen until the image blurs into static noise and darkness."
+          },
+          {
+            "word": "stars",
+            "emotion": "distant hope",
+            "imageryPrompt": "Tiny, cold pinpricks of light in a vast foggy sky far above a gritty riverboat deck where humans are just small specks below."
+          },
+          {
+            "word": "names",
+            "emotion": "empty identity",
+            "imageryPrompt": "Dozens of glowing user handles falling like dead leaves onto a muddy dock floor, leaving no footprints or warmth behind them."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

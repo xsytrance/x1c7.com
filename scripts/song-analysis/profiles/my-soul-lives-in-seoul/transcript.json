@@ -1,0 +1,4554 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 1.2,
+      "end": 4.02,
+      "text": "Yeah, my soul lives in soul",
+      "words": [
+        {
+          "t": 1.2,
+          "text": "Yeah,"
+        },
+        {
+          "t": 1.824,
+          "text": "my"
+        },
+        {
+          "t": 2.36,
+          "text": "soul"
+        },
+        {
+          "t": 2.82,
+          "text": "lives"
+        },
+        {
+          "t": 3.32,
+          "text": "in"
+        },
+        {
+          "t": 3.68,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 4.02,
+      "end": 8.62,
+      "text": "But my heart lays wherever you call me from",
+      "words": [
+        {
+          "t": 4.02,
+          "text": "But"
+        },
+        {
+          "t": 4.44,
+          "text": "my"
+        },
+        {
+          "t": 4.76,
+          "text": "heart"
+        },
+        {
+          "t": 5.26,
+          "text": "lays"
+        },
+        {
+          "t": 5.888,
+          "text": "wherever"
+        },
+        {
+          "t": 6.16,
+          "text": "you"
+        },
+        {
+          "t": 6.86,
+          "text": "call"
+        },
+        {
+          "t": 7.52,
+          "text": "me"
+        },
+        {
+          "t": 8.0,
+          "text": "from"
+        }
+      ]
+    },
+    {
+      "start": 8.86,
+      "end": 11.584,
+      "text": "I know that's hard, can you hear me now?",
+      "words": [
+        {
+          "t": 8.86,
+          "text": "I"
+        },
+        {
+          "t": 8.96,
+          "text": "know"
+        },
+        {
+          "t": 9.24,
+          "text": "that's"
+        },
+        {
+          "t": 9.62,
+          "text": "hard,"
+        },
+        {
+          "t": 10.08,
+          "text": "can"
+        },
+        {
+          "t": 10.656,
+          "text": "you"
+        },
+        {
+          "t": 10.78,
+          "text": "hear"
+        },
+        {
+          "t": 11.06,
+          "text": "me"
+        },
+        {
+          "t": 11.3,
+          "text": "now?"
+        }
+      ]
+    },
+    {
+      "start": 11.84,
+      "end": 13.32,
+      "text": "Signal's weak but I feel you somehow",
+      "words": [
+        {
+          "t": 11.84,
+          "text": "Signal's"
+        },
+        {
+          "t": 12.06,
+          "text": "weak"
+        },
+        {
+          "t": 12.26,
+          "text": "but"
+        },
+        {
+          "t": 12.46,
+          "text": "I"
+        },
+        {
+          "t": 12.56,
+          "text": "feel"
+        },
+        {
+          "t": 12.76,
+          "text": "you"
+        },
+        {
+          "t": 12.9,
+          "text": "somehow"
+        }
+      ]
+    },
+    {
+      "start": 13.32,
+      "end": 14.54,
+      "text": "Time zones touch screen",
+      "words": [
+        {
+          "t": 13.32,
+          "text": "Time"
+        },
+        {
+          "t": 13.66,
+          "text": "zones"
+        },
+        {
+          "t": 13.9,
+          "text": "touch"
+        },
+        {
+          "t": 14.2,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 14.54,
+      "end": 15.78,
+      "text": "Different skies, same dreams",
+      "words": [
+        {
+          "t": 14.54,
+          "text": "Different"
+        },
+        {
+          "t": 14.84,
+          "text": "skies,"
+        },
+        {
+          "t": 15.26,
+          "text": "same"
+        },
+        {
+          "t": 15.58,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 16.39,
+      "end": 18.496,
+      "text": "1, 2, 3, go!",
+      "words": [
+        {
+          "t": 16.39,
+          "text": "1,"
+        },
+        {
+          "t": 17.04,
+          "text": "2,"
+        },
+        {
+          "t": 17.58,
+          "text": "3,"
+        },
+        {
+          "t": 18.16,
+          "text": "go!"
+        }
+      ]
+    },
+    {
+      "start": 18.7,
+      "end": 20.8,
+      "text": "I wake up, grab my phone before I even breathe",
+      "words": [
+        {
+          "t": 18.7,
+          "text": "I"
+        },
+        {
+          "t": 18.74,
+          "text": "wake"
+        },
+        {
+          "t": 19.0,
+          "text": "up,"
+        },
+        {
+          "t": 19.36,
+          "text": "grab"
+        },
+        {
+          "t": 19.48,
+          "text": "my"
+        },
+        {
+          "t": 19.62,
+          "text": "phone"
+        },
+        {
+          "t": 19.82,
+          "text": "before"
+        },
+        {
+          "t": 20.06,
+          "text": "I"
+        },
+        {
+          "t": 20.28,
+          "text": "even"
+        },
+        {
+          "t": 20.5,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 20.8,
+      "end": 23.04,
+      "text": "37 messages waiting there for me",
+      "words": [
+        {
+          "t": 20.8,
+          "text": "37"
+        },
+        {
+          "t": 21.376,
+          "text": "messages"
+        },
+        {
+          "t": 21.98,
+          "text": "waiting"
+        },
+        {
+          "t": 22.5,
+          "text": "there"
+        },
+        {
+          "t": 22.7,
+          "text": "for"
+        },
+        {
+          "t": 22.88,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 23.04,
+      "end": 24.08,
+      "text": "Your morning is my midnight,",
+      "words": [
+        {
+          "t": 23.04,
+          "text": "Your"
+        },
+        {
+          "t": 23.22,
+          "text": "morning"
+        },
+        {
+          "t": 23.46,
+          "text": "is"
+        },
+        {
+          "t": 23.64,
+          "text": "my"
+        },
+        {
+          "t": 23.76,
+          "text": "midnight,"
+        }
+      ]
+    },
+    {
+      "start": 24.08,
+      "end": 25.56,
+      "text": "my sunrise is your sleep",
+      "words": [
+        {
+          "t": 24.08,
+          "text": "my"
+        },
+        {
+          "t": 24.34,
+          "text": "sunrise"
+        },
+        {
+          "t": 24.72,
+          "text": "is"
+        },
+        {
+          "t": 25.08,
+          "text": "your"
+        },
+        {
+          "t": 25.22,
+          "text": "sleep"
+        }
+      ]
+    },
+    {
+      "start": 25.56,
+      "end": 28.02,
+      "text": "But your face on my screen makes the distance feel sweet",
+      "words": [
+        {
+          "t": 25.56,
+          "text": "But"
+        },
+        {
+          "t": 26.0,
+          "text": "your"
+        },
+        {
+          "t": 26.08,
+          "text": "face"
+        },
+        {
+          "t": 26.36,
+          "text": "on"
+        },
+        {
+          "t": 26.58,
+          "text": "my"
+        },
+        {
+          "t": 26.66,
+          "text": "screen"
+        },
+        {
+          "t": 26.92,
+          "text": "makes"
+        },
+        {
+          "t": 27.16,
+          "text": "the"
+        },
+        {
+          "t": 27.28,
+          "text": "distance"
+        },
+        {
+          "t": 27.54,
+          "text": "feel"
+        },
+        {
+          "t": 27.78,
+          "text": "sweet"
+        }
+      ]
+    },
+    {
+      "start": 28.02,
+      "end": 30.4,
+      "text": "Wi-Fi, acting crazy, signal dropping low",
+      "words": [
+        {
+          "t": 28.02,
+          "text": "Wi"
+        },
+        {
+          "t": 28.38,
+          "text": "-Fi,"
+        },
+        {
+          "t": 28.74,
+          "text": "acting"
+        },
+        {
+          "t": 28.98,
+          "text": "crazy,"
+        },
+        {
+          "t": 29.34,
+          "text": "signal"
+        },
+        {
+          "t": 29.58,
+          "text": "dropping"
+        },
+        {
+          "t": 30.0,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 30.4,
+      "end": 32.8,
+      "text": "Can you hear me, baby, then the camera froze",
+      "words": [
+        {
+          "t": 30.4,
+          "text": "Can"
+        },
+        {
+          "t": 30.66,
+          "text": "you"
+        },
+        {
+          "t": 30.82,
+          "text": "hear"
+        },
+        {
+          "t": 31.06,
+          "text": "me,"
+        },
+        {
+          "t": 31.32,
+          "text": "baby,"
+        },
+        {
+          "t": 31.68,
+          "text": "then"
+        },
+        {
+          "t": 31.84,
+          "text": "the"
+        },
+        {
+          "t": 31.96,
+          "text": "camera"
+        },
+        {
+          "t": 32.3,
+          "text": "froze"
+        }
+      ]
+    },
+    {
+      "start": 32.8,
+      "end": 35.16,
+      "text": "Front cam, back cam, why am I showing the floor?",
+      "words": [
+        {
+          "t": 32.8,
+          "text": "Front"
+        },
+        {
+          "t": 33.08,
+          "text": "cam,"
+        },
+        {
+          "t": 33.5,
+          "text": "back"
+        },
+        {
+          "t": 33.68,
+          "text": "cam,"
+        },
+        {
+          "t": 34.08,
+          "text": "why"
+        },
+        {
+          "t": 34.2,
+          "text": "am"
+        },
+        {
+          "t": 34.3,
+          "text": "I"
+        },
+        {
+          "t": 34.32,
+          "text": "showing"
+        },
+        {
+          "t": 34.56,
+          "text": "the"
+        },
+        {
+          "t": 34.78,
+          "text": "floor?"
+        }
+      ]
+    },
+    {
+      "start": 35.38,
+      "end": 36.32,
+      "text": "You're laughing so hard",
+      "words": [
+        {
+          "t": 35.38,
+          "text": "You're"
+        },
+        {
+          "t": 35.56,
+          "text": "laughing"
+        },
+        {
+          "t": 35.76,
+          "text": "so"
+        },
+        {
+          "t": 35.96,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 36.32,
+      "end": 37.54,
+      "text": "Now I love you even more",
+      "words": [
+        {
+          "t": 36.32,
+          "text": "Now"
+        },
+        {
+          "t": 36.54,
+          "text": "I"
+        },
+        {
+          "t": 36.68,
+          "text": "love"
+        },
+        {
+          "t": 36.9,
+          "text": "you"
+        },
+        {
+          "t": 37.0,
+          "text": "even"
+        },
+        {
+          "t": 37.22,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 37.54,
+      "end": 39.32,
+      "text": "Battery on red, charger disappear",
+      "words": [
+        {
+          "t": 37.54,
+          "text": "Battery"
+        },
+        {
+          "t": 38.12,
+          "text": "on"
+        },
+        {
+          "t": 38.48,
+          "text": "red,"
+        },
+        {
+          "t": 38.76,
+          "text": "charger"
+        },
+        {
+          "t": 39.0,
+          "text": "disappear"
+        }
+      ]
+    },
+    {
+      "start": 39.4,
+      "end": 42.2,
+      "text": "Wrong cable in my bag, same problem all year",
+      "words": [
+        {
+          "t": 39.4,
+          "text": "Wrong"
+        },
+        {
+          "t": 40.1,
+          "text": "cable"
+        },
+        {
+          "t": 40.46,
+          "text": "in"
+        },
+        {
+          "t": 40.68,
+          "text": "my"
+        },
+        {
+          "t": 40.78,
+          "text": "bag,"
+        },
+        {
+          "t": 41.14,
+          "text": "same"
+        },
+        {
+          "t": 41.26,
+          "text": "problem"
+        },
+        {
+          "t": 41.66,
+          "text": "all"
+        },
+        {
+          "t": 41.92,
+          "text": "year"
+        }
+      ]
+    },
+    {
+      "start": 42.2,
+      "end": 44.52,
+      "text": "Storage full again from the photos that you send",
+      "words": [
+        {
+          "t": 42.2,
+          "text": "Storage"
+        },
+        {
+          "t": 42.76,
+          "text": "full"
+        },
+        {
+          "t": 43.0,
+          "text": "again"
+        },
+        {
+          "t": 43.28,
+          "text": "from"
+        },
+        {
+          "t": 43.58,
+          "text": "the"
+        },
+        {
+          "t": 43.74,
+          "text": "photos"
+        },
+        {
+          "t": 44.04,
+          "text": "that"
+        },
+        {
+          "t": 44.22,
+          "text": "you"
+        },
+        {
+          "t": 44.32,
+          "text": "send"
+        }
+      ]
+    },
+    {
+      "start": 44.52,
+      "end": 47.18,
+      "text": "But I still save every selfie like I'll never see you again",
+      "words": [
+        {
+          "t": 44.52,
+          "text": "But"
+        },
+        {
+          "t": 44.78,
+          "text": "I"
+        },
+        {
+          "t": 44.92,
+          "text": "still"
+        },
+        {
+          "t": 45.06,
+          "text": "save"
+        },
+        {
+          "t": 45.26,
+          "text": "every"
+        },
+        {
+          "t": 45.48,
+          "text": "selfie"
+        },
+        {
+          "t": 45.76,
+          "text": "like"
+        },
+        {
+          "t": 45.98,
+          "text": "I'll"
+        },
+        {
+          "t": 46.14,
+          "text": "never"
+        },
+        {
+          "t": 46.3,
+          "text": "see"
+        },
+        {
+          "t": 46.6,
+          "text": "you"
+        },
+        {
+          "t": 46.82,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 47.18,
+      "end": 49.32,
+      "text": "Shipping takes forever, plane tickets are high",
+      "words": [
+        {
+          "t": 47.18,
+          "text": "Shipping"
+        },
+        {
+          "t": 47.52,
+          "text": "takes"
+        },
+        {
+          "t": 47.7,
+          "text": "forever,"
+        },
+        {
+          "t": 48.2,
+          "text": "plane"
+        },
+        {
+          "t": 48.34,
+          "text": "tickets"
+        },
+        {
+          "t": 48.68,
+          "text": "are"
+        },
+        {
+          "t": 48.96,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 49.32,
+      "end": 51.62,
+      "text": "Currency conversion got me asking why",
+      "words": [
+        {
+          "t": 49.32,
+          "text": "Currency"
+        },
+        {
+          "t": 50.0,
+          "text": "conversion"
+        },
+        {
+          "t": 50.36,
+          "text": "got"
+        },
+        {
+          "t": 50.68,
+          "text": "me"
+        },
+        {
+          "t": 50.74,
+          "text": "asking"
+        },
+        {
+          "t": 51.2,
+          "text": "why"
+        }
+      ]
+    },
+    {
+      "start": 51.75,
+      "end": 53.96,
+      "text": "Forms on the table, stamps in the line",
+      "words": [
+        {
+          "t": 51.75,
+          "text": "Forms"
+        },
+        {
+          "t": 52.4,
+          "text": "on"
+        },
+        {
+          "t": 52.44,
+          "text": "the"
+        },
+        {
+          "t": 52.54,
+          "text": "table,"
+        },
+        {
+          "t": 52.86,
+          "text": "stamps"
+        },
+        {
+          "t": 53.12,
+          "text": "in"
+        },
+        {
+          "t": 53.38,
+          "text": "the"
+        },
+        {
+          "t": 53.58,
+          "text": "line"
+        }
+      ]
+    },
+    {
+      "start": 53.96,
+      "end": 56.34,
+      "text": "But I cross every border just to call you mine",
+      "words": [
+        {
+          "t": 53.96,
+          "text": "But"
+        },
+        {
+          "t": 54.22,
+          "text": "I"
+        },
+        {
+          "t": 54.34,
+          "text": "cross"
+        },
+        {
+          "t": 54.54,
+          "text": "every"
+        },
+        {
+          "t": 54.84,
+          "text": "border"
+        },
+        {
+          "t": 55.18,
+          "text": "just"
+        },
+        {
+          "t": 55.34,
+          "text": "to"
+        },
+        {
+          "t": 55.52,
+          "text": "call"
+        },
+        {
+          "t": 55.78,
+          "text": "you"
+        },
+        {
+          "t": 56.0,
+          "text": "mine"
+        }
+      ]
+    },
+    {
+      "start": 56.34,
+      "end": 58.0,
+      "text": "K-1, K-2, 3, go!",
+      "words": [
+        {
+          "t": 56.34,
+          "text": "K"
+        },
+        {
+          "t": 56.92,
+          "text": "-1,"
+        },
+        {
+          "t": 57.26,
+          "text": "K"
+        },
+        {
+          "t": 57.44,
+          "text": "-2,"
+        },
+        {
+          "t": 57.8,
+          "text": "3,"
+        },
+        {
+          "t": 58.0,
+          "text": "go!"
+        }
+      ]
+    },
+    {
+      "start": 58.02,
+      "end": 61.06,
+      "text": "K-1, 2, paperwork dancing like it's God moves",
+      "words": [
+        {
+          "t": 58.02,
+          "text": "K"
+        },
+        {
+          "t": 58.28,
+          "text": "-1,"
+        },
+        {
+          "t": 58.4,
+          "text": "2,"
+        },
+        {
+          "t": 58.7,
+          "text": "paperwork"
+        },
+        {
+          "t": 59.22,
+          "text": "dancing"
+        },
+        {
+          "t": 59.86,
+          "text": "like"
+        },
+        {
+          "t": 60.12,
+          "text": "it's"
+        },
+        {
+          "t": 60.48,
+          "text": "God"
+        },
+        {
+          "t": 60.7,
+          "text": "moves"
+        }
+      ]
+    },
+    {
+      "start": 61.06,
+      "end": 63.4,
+      "text": "Lost in translation but I still choose you",
+      "words": [
+        {
+          "t": 61.06,
+          "text": "Lost"
+        },
+        {
+          "t": 61.54,
+          "text": "in"
+        },
+        {
+          "t": 61.72,
+          "text": "translation"
+        },
+        {
+          "t": 62.1,
+          "text": "but"
+        },
+        {
+          "t": 62.44,
+          "text": "I"
+        },
+        {
+          "t": 62.56,
+          "text": "still"
+        },
+        {
+          "t": 62.72,
+          "text": "choose"
+        },
+        {
+          "t": 63.06,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 63.4,
+      "end": 65.7,
+      "text": "Every little problem turns into something true",
+      "words": [
+        {
+          "t": 63.4,
+          "text": "Every"
+        },
+        {
+          "t": 63.98,
+          "text": "little"
+        },
+        {
+          "t": 64.24,
+          "text": "problem"
+        },
+        {
+          "t": 64.58,
+          "text": "turns"
+        },
+        {
+          "t": 64.82,
+          "text": "into"
+        },
+        {
+          "t": 65.18,
+          "text": "something"
+        },
+        {
+          "t": 65.46,
+          "text": "true"
+        }
+      ]
+    },
+    {
+      "start": 65.7,
+      "end": 67.48,
+      "text": "My soul lives in soul",
+      "words": [
+        {
+          "t": 65.7,
+          "text": "My"
+        },
+        {
+          "t": 66.0,
+          "text": "soul"
+        },
+        {
+          "t": 66.34,
+          "text": "lives"
+        },
+        {
+          "t": 66.84,
+          "text": "in"
+        },
+        {
+          "t": 67.16,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 67.48,
+      "end": 69.632,
+      "text": "But my love goes worldwide",
+      "words": [
+        {
+          "t": 67.48,
+          "text": "But"
+        },
+        {
+          "t": 67.98,
+          "text": "my"
+        },
+        {
+          "t": 68.28,
+          "text": "love"
+        },
+        {
+          "t": 68.98,
+          "text": "goes"
+        },
+        {
+          "t": 69.08,
+          "text": "worldwide"
+        }
+      ]
+    },
+    {
+      "start": 69.68,
+      "end": 71.36,
+      "text": "From your good morning",
+      "words": [
+        {
+          "t": 69.68,
+          "text": "From"
+        },
+        {
+          "t": 70.26,
+          "text": "your"
+        },
+        {
+          "t": 70.54,
+          "text": "good"
+        },
+        {
+          "t": 70.72,
+          "text": "morning"
+        }
+      ]
+    },
+    {
+      "start": 71.36,
+      "end": 73.58,
+      "text": "To my good night",
+      "words": [
+        {
+          "t": 71.36,
+          "text": "To"
+        },
+        {
+          "t": 71.96,
+          "text": "my"
+        },
+        {
+          "t": 72.7,
+          "text": "good"
+        },
+        {
+          "t": 73.04,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 74.64,
+      "end": 76.06,
+      "text": "We fight, we make up",
+      "words": [
+        {
+          "t": 74.64,
+          "text": "We"
+        },
+        {
+          "t": 74.74,
+          "text": "fight,"
+        },
+        {
+          "t": 75.22,
+          "text": "we"
+        },
+        {
+          "t": 75.38,
+          "text": "make"
+        },
+        {
+          "t": 75.74,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 76.3,
+      "end": 77.48,
+      "text": "Then we laugh on the phone",
+      "words": [
+        {
+          "t": 76.3,
+          "text": "Then"
+        },
+        {
+          "t": 76.4,
+          "text": "we"
+        },
+        {
+          "t": 76.54,
+          "text": "laugh"
+        },
+        {
+          "t": 76.92,
+          "text": "on"
+        },
+        {
+          "t": 77.12,
+          "text": "the"
+        },
+        {
+          "t": 77.24,
+          "text": "phone"
+        }
+      ]
+    },
+    {
+      "start": 77.48,
+      "end": 79.78,
+      "text": "No matter where you are, you never feel alone",
+      "words": [
+        {
+          "t": 77.48,
+          "text": "No"
+        },
+        {
+          "t": 77.86,
+          "text": "matter"
+        },
+        {
+          "t": 78.12,
+          "text": "where"
+        },
+        {
+          "t": 78.34,
+          "text": "you"
+        },
+        {
+          "t": 78.46,
+          "text": "are,"
+        },
+        {
+          "t": 78.66,
+          "text": "you"
+        },
+        {
+          "t": 78.74,
+          "text": "never"
+        },
+        {
+          "t": 78.96,
+          "text": "feel"
+        },
+        {
+          "t": 79.24,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 80.0,
+      "end": 81.65,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 80.0,
+          "text": "My"
+        },
+        {
+          "t": 80.16,
+          "text": "soul"
+        },
+        {
+          "t": 80.54,
+          "text": "lives"
+        },
+        {
+          "t": 80.84,
+          "text": "in"
+        },
+        {
+          "t": 80.9,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 81.68,
+      "end": 83.98,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 81.68,
+          "text": "My"
+        },
+        {
+          "t": 82.36,
+          "text": "soul"
+        },
+        {
+          "t": 82.76,
+          "text": "lives"
+        },
+        {
+          "t": 83.2,
+          "text": "in"
+        },
+        {
+          "t": 83.28,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 84.704,
+      "end": 86.26,
+      "text": "But it finds you wherever",
+      "words": [
+        {
+          "t": 84.704,
+          "text": "But"
+        },
+        {
+          "t": 84.82,
+          "text": "it"
+        },
+        {
+          "t": 84.94,
+          "text": "finds"
+        },
+        {
+          "t": 85.28,
+          "text": "you"
+        },
+        {
+          "t": 85.58,
+          "text": "wherever"
+        }
+      ]
+    },
+    {
+      "start": 87.06,
+      "end": 87.424,
+      "text": "you go",
+      "words": [
+        {
+          "t": 87.06,
+          "text": "you"
+        },
+        {
+          "t": 87.16,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 88.38,
+      "end": 89.66,
+      "text": "I miss you, baby",
+      "words": [
+        {
+          "t": 88.38,
+          "text": "I"
+        },
+        {
+          "t": 89.08,
+          "text": "miss"
+        },
+        {
+          "t": 89.08,
+          "text": "you,"
+        },
+        {
+          "t": 89.26,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 89.66,
+      "end": 91.98,
+      "text": "I miss you, baby",
+      "words": [
+        {
+          "t": 89.66,
+          "text": "I"
+        },
+        {
+          "t": 90.62,
+          "text": "miss"
+        },
+        {
+          "t": 91.36,
+          "text": "you,"
+        },
+        {
+          "t": 91.58,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 92.88,
+      "end": 94.7,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 92.88,
+          "text": "My"
+        },
+        {
+          "t": 92.98,
+          "text": "soul"
+        },
+        {
+          "t": 93.38,
+          "text": "lives"
+        },
+        {
+          "t": 93.9,
+          "text": "in"
+        },
+        {
+          "t": 94.28,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 94.7,
+      "end": 95.72,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 94.7,
+          "text": "My"
+        },
+        {
+          "t": 95.62,
+          "text": "soul"
+        },
+        {
+          "t": 95.72,
+          "text": "lives"
+        },
+        {
+          "t": 95.72,
+          "text": "in"
+        },
+        {
+          "t": 95.72,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 95.72,
+      "end": 96.51,
+      "text": "Soul to your heart",
+      "words": [
+        {
+          "t": 95.72,
+          "text": "Soul"
+        },
+        {
+          "t": 95.72,
+          "text": "to"
+        },
+        {
+          "t": 95.88,
+          "text": "your"
+        },
+        {
+          "t": 96.06,
+          "text": "heart"
+        }
+      ]
+    },
+    {
+      "start": 97.92,
+      "end": 98.44,
+      "text": "Minds apart",
+      "words": [
+        {
+          "t": 97.92,
+          "text": "Minds"
+        },
+        {
+          "t": 98.3,
+          "text": "apart"
+        }
+      ]
+    },
+    {
+      "start": 99.72,
+      "end": 100.896,
+      "text": "Still we glow",
+      "words": [
+        {
+          "t": 99.72,
+          "text": "Still"
+        },
+        {
+          "t": 100.48,
+          "text": "we"
+        },
+        {
+          "t": 100.64,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 100.96,
+      "end": 104.12,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 100.96,
+          "text": "My"
+        },
+        {
+          "t": 101.22,
+          "text": "soul"
+        },
+        {
+          "t": 101.88,
+          "text": "lives"
+        },
+        {
+          "t": 103.38,
+          "text": "in"
+        },
+        {
+          "t": 103.74,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 104.12,
+      "end": 104.96,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 104.12,
+          "text": "My"
+        },
+        {
+          "t": 104.36,
+          "text": "soul"
+        },
+        {
+          "t": 104.96,
+          "text": "lives"
+        },
+        {
+          "t": 104.96,
+          "text": "in"
+        },
+        {
+          "t": 104.96,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 104.96,
+      "end": 105.72,
+      "text": "Call me again",
+      "words": [
+        {
+          "t": 104.96,
+          "text": "Call"
+        },
+        {
+          "t": 105.152,
+          "text": "me"
+        },
+        {
+          "t": 105.34,
+          "text": "again"
+        }
+      ]
+    },
+    {
+      "start": 107.008,
+      "end": 108.36,
+      "text": "Don't let it end",
+      "words": [
+        {
+          "t": 107.008,
+          "text": "Don't"
+        },
+        {
+          "t": 107.2,
+          "text": "let"
+        },
+        {
+          "t": 107.44,
+          "text": "it"
+        },
+        {
+          "t": 107.84,
+          "text": "end"
+        }
+      ]
+    },
+    {
+      "start": 109.09,
+      "end": 109.86,
+      "text": "You already know",
+      "words": [
+        {
+          "t": 109.09,
+          "text": "You"
+        },
+        {
+          "t": 109.66,
+          "text": "already"
+        },
+        {
+          "t": 109.76,
+          "text": "know"
+        }
+      ]
+    },
+    {
+      "start": 110.42,
+      "end": 111.08,
+      "text": "My soul",
+      "words": [
+        {
+          "t": 110.42,
+          "text": "My"
+        },
+        {
+          "t": 110.66,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 112.352,
+      "end": 113.0,
+      "text": "lives in Seoul",
+      "words": [
+        {
+          "t": 112.352,
+          "text": "lives"
+        },
+        {
+          "t": 112.76,
+          "text": "in"
+        },
+        {
+          "t": 112.98,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 113.0,
+      "end": 115.16,
+      "text": "Family asking questions, friends all in the chat",
+      "words": [
+        {
+          "t": 113.0,
+          "text": "Family"
+        },
+        {
+          "t": 113.28,
+          "text": "asking"
+        },
+        {
+          "t": 113.62,
+          "text": "questions,"
+        },
+        {
+          "t": 114.06,
+          "text": "friends"
+        },
+        {
+          "t": 114.28,
+          "text": "all"
+        },
+        {
+          "t": 114.56,
+          "text": "in"
+        },
+        {
+          "t": 114.78,
+          "text": "the"
+        },
+        {
+          "t": 114.9,
+          "text": "chat"
+        }
+      ]
+    },
+    {
+      "start": 115.16,
+      "end": 116.6,
+      "text": "Is the foreigner rich, baby?",
+      "words": [
+        {
+          "t": 115.16,
+          "text": "Is"
+        },
+        {
+          "t": 115.36,
+          "text": "the"
+        },
+        {
+          "t": 115.48,
+          "text": "foreigner"
+        },
+        {
+          "t": 115.82,
+          "text": "rich,"
+        },
+        {
+          "t": 116.36,
+          "text": "baby?"
+        }
+      ]
+    },
+    {
+      "start": 116.74,
+      "end": 117.48,
+      "text": "What is that?",
+      "words": [
+        {
+          "t": 116.74,
+          "text": "What"
+        },
+        {
+          "t": 117.12,
+          "text": "is"
+        },
+        {
+          "t": 117.28,
+          "text": "that?"
+        }
+      ]
+    },
+    {
+      "start": 118.02,
+      "end": 119.84,
+      "text": "Everybody thinks love comes with a golden crown",
+      "words": [
+        {
+          "t": 118.02,
+          "text": "Everybody"
+        },
+        {
+          "t": 118.1,
+          "text": "thinks"
+        },
+        {
+          "t": 118.34,
+          "text": "love"
+        },
+        {
+          "t": 118.56,
+          "text": "comes"
+        },
+        {
+          "t": 118.74,
+          "text": "with"
+        },
+        {
+          "t": 118.94,
+          "text": "a"
+        },
+        {
+          "t": 119.02,
+          "text": "golden"
+        },
+        {
+          "t": 119.34,
+          "text": "crown"
+        }
+      ]
+    },
+    {
+      "start": 119.84,
+      "end": 122.2,
+      "text": "But we're just counting coins till the next slide down",
+      "words": [
+        {
+          "t": 119.84,
+          "text": "But"
+        },
+        {
+          "t": 120.2,
+          "text": "we're"
+        },
+        {
+          "t": 120.38,
+          "text": "just"
+        },
+        {
+          "t": 120.5,
+          "text": "counting"
+        },
+        {
+          "t": 120.74,
+          "text": "coins"
+        },
+        {
+          "t": 121.08,
+          "text": "till"
+        },
+        {
+          "t": 121.26,
+          "text": "the"
+        },
+        {
+          "t": 121.38,
+          "text": "next"
+        },
+        {
+          "t": 121.6,
+          "text": "slide"
+        },
+        {
+          "t": 121.88,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 122.2,
+      "end": 124.58,
+      "text": "You send me a box, it arrives next year",
+      "words": [
+        {
+          "t": 122.2,
+          "text": "You"
+        },
+        {
+          "t": 122.54,
+          "text": "send"
+        },
+        {
+          "t": 122.78,
+          "text": "me"
+        },
+        {
+          "t": 123.0,
+          "text": "a"
+        },
+        {
+          "t": 123.14,
+          "text": "box,"
+        },
+        {
+          "t": 123.5,
+          "text": "it"
+        },
+        {
+          "t": 123.64,
+          "text": "arrives"
+        },
+        {
+          "t": 123.82,
+          "text": "next"
+        },
+        {
+          "t": 124.22,
+          "text": "year"
+        }
+      ]
+    },
+    {
+      "start": 124.9,
+      "end": 125.74,
+      "text": "Customs got me crying,",
+      "words": [
+        {
+          "t": 124.9,
+          "text": "Customs"
+        },
+        {
+          "t": 125.3,
+          "text": "got"
+        },
+        {
+          "t": 125.34,
+          "text": "me"
+        },
+        {
+          "t": 125.44,
+          "text": "crying,"
+        }
+      ]
+    },
+    {
+      "start": 125.82,
+      "end": 126.88,
+      "text": "but I smile when it's here",
+      "words": [
+        {
+          "t": 125.82,
+          "text": "but"
+        },
+        {
+          "t": 125.96,
+          "text": "I"
+        },
+        {
+          "t": 126.04,
+          "text": "smile"
+        },
+        {
+          "t": 126.2,
+          "text": "when"
+        },
+        {
+          "t": 126.54,
+          "text": "it's"
+        },
+        {
+          "t": 126.72,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 126.88,
+      "end": 127.46,
+      "text": "T-shirts,",
+      "words": [
+        {
+          "t": 126.88,
+          "text": "T"
+        },
+        {
+          "t": 127.16,
+          "text": "-shirts,"
+        }
+      ]
+    },
+    {
+      "start": 127.54,
+      "end": 127.68,
+      "text": "snacks,",
+      "words": [
+        {
+          "t": 127.54,
+          "text": "snacks,"
+        }
+      ]
+    },
+    {
+      "start": 127.9,
+      "end": 128.08,
+      "text": "letters,",
+      "words": [
+        {
+          "t": 127.9,
+          "text": "letters,"
+        }
+      ]
+    },
+    {
+      "start": 128.2,
+      "end": 129.22,
+      "text": "little things you drew",
+      "words": [
+        {
+          "t": 128.2,
+          "text": "little"
+        },
+        {
+          "t": 128.36,
+          "text": "things"
+        },
+        {
+          "t": 128.64,
+          "text": "you"
+        },
+        {
+          "t": 128.9,
+          "text": "drew"
+        }
+      ]
+    },
+    {
+      "start": 129.22,
+      "end": 131.6,
+      "text": "I keep them like treasure cause they came from you",
+      "words": [
+        {
+          "t": 129.22,
+          "text": "I"
+        },
+        {
+          "t": 129.52,
+          "text": "keep"
+        },
+        {
+          "t": 129.76,
+          "text": "them"
+        },
+        {
+          "t": 129.92,
+          "text": "like"
+        },
+        {
+          "t": 130.08,
+          "text": "treasure"
+        },
+        {
+          "t": 130.42,
+          "text": "cause"
+        },
+        {
+          "t": 130.62,
+          "text": "they"
+        },
+        {
+          "t": 130.78,
+          "text": "came"
+        },
+        {
+          "t": 131.02,
+          "text": "from"
+        },
+        {
+          "t": 131.3,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 131.6,
+      "end": 133.4,
+      "text": "Language barrier, we turn it into jokes",
+      "words": [
+        {
+          "t": 131.6,
+          "text": "Language"
+        },
+        {
+          "t": 131.96,
+          "text": "barrier,"
+        },
+        {
+          "t": 132.28,
+          "text": "we"
+        },
+        {
+          "t": 132.54,
+          "text": "turn"
+        },
+        {
+          "t": 132.74,
+          "text": "it"
+        },
+        {
+          "t": 132.9,
+          "text": "into"
+        },
+        {
+          "t": 133.1,
+          "text": "jokes"
+        }
+      ]
+    },
+    {
+      "start": 133.4,
+      "end": 135.68,
+      "text": "I say one wrong word and the whole call explodes",
+      "words": [
+        {
+          "t": 133.4,
+          "text": "I"
+        },
+        {
+          "t": 133.58,
+          "text": "say"
+        },
+        {
+          "t": 133.72,
+          "text": "one"
+        },
+        {
+          "t": 133.92,
+          "text": "wrong"
+        },
+        {
+          "t": 134.24,
+          "text": "word"
+        },
+        {
+          "t": 134.58,
+          "text": "and"
+        },
+        {
+          "t": 134.78,
+          "text": "the"
+        },
+        {
+          "t": 134.88,
+          "text": "whole"
+        },
+        {
+          "t": 135.12,
+          "text": "call"
+        },
+        {
+          "t": 135.34,
+          "text": "explodes"
+        }
+      ]
+    },
+    {
+      "start": 135.68,
+      "end": 136.28,
+      "text": "Different food,",
+      "words": [
+        {
+          "t": 135.68,
+          "text": "Different"
+        },
+        {
+          "t": 136.02,
+          "text": "food,"
+        }
+      ]
+    },
+    {
+      "start": 136.38,
+      "end": 136.94,
+      "text": "different rules,",
+      "words": [
+        {
+          "t": 136.38,
+          "text": "different"
+        },
+        {
+          "t": 136.62,
+          "text": "rules,"
+        }
+      ]
+    },
+    {
+      "start": 137.02,
+      "end": 138.06,
+      "text": "different ways to show we care",
+      "words": [
+        {
+          "t": 137.02,
+          "text": "different"
+        },
+        {
+          "t": 137.18,
+          "text": "ways"
+        },
+        {
+          "t": 137.42,
+          "text": "to"
+        },
+        {
+          "t": 137.56,
+          "text": "show"
+        },
+        {
+          "t": 137.7,
+          "text": "we"
+        },
+        {
+          "t": 137.84,
+          "text": "care"
+        }
+      ]
+    },
+    {
+      "start": 138.06,
+      "end": 140.4,
+      "text": "But your culture feels like music when you let me meet you there",
+      "words": [
+        {
+          "t": 138.06,
+          "text": "But"
+        },
+        {
+          "t": 138.34,
+          "text": "your"
+        },
+        {
+          "t": 138.44,
+          "text": "culture"
+        },
+        {
+          "t": 138.7,
+          "text": "feels"
+        },
+        {
+          "t": 138.88,
+          "text": "like"
+        },
+        {
+          "t": 139.06,
+          "text": "music"
+        },
+        {
+          "t": 139.28,
+          "text": "when"
+        },
+        {
+          "t": 139.5,
+          "text": "you"
+        },
+        {
+          "t": 139.6,
+          "text": "let"
+        },
+        {
+          "t": 139.74,
+          "text": "me"
+        },
+        {
+          "t": 139.9,
+          "text": "meet"
+        },
+        {
+          "t": 140.08,
+          "text": "you"
+        },
+        {
+          "t": 140.22,
+          "text": "there"
+        }
+      ]
+    },
+    {
+      "start": 140.4,
+      "end": 141.14,
+      "text": "But your culture feels like music when you let me meet you there",
+      "words": [
+        {
+          "t": 140.4,
+          "text": "But"
+        },
+        {
+          "t": 141.0,
+          "text": "your"
+        },
+        {
+          "t": 141.14,
+          "text": "culture"
+        },
+        {
+          "t": 141.14,
+          "text": "feels"
+        },
+        {
+          "t": 141.14,
+          "text": "like"
+        },
+        {
+          "t": 141.14,
+          "text": "music"
+        },
+        {
+          "t": 141.14,
+          "text": "when"
+        },
+        {
+          "t": 141.14,
+          "text": "you"
+        },
+        {
+          "t": 141.14,
+          "text": "let"
+        },
+        {
+          "t": 141.14,
+          "text": "me"
+        },
+        {
+          "t": 141.14,
+          "text": "meet"
+        },
+        {
+          "t": 141.14,
+          "text": "you"
+        },
+        {
+          "t": 141.14,
+          "text": "there"
+        }
+      ]
+    },
+    {
+      "start": 141.14,
+      "end": 142.76,
+      "text": "Tired thumbs from typing all night",
+      "words": [
+        {
+          "t": 141.14,
+          "text": "Tired"
+        },
+        {
+          "t": 141.44,
+          "text": "thumbs"
+        },
+        {
+          "t": 141.62,
+          "text": "from"
+        },
+        {
+          "t": 141.84,
+          "text": "typing"
+        },
+        {
+          "t": 142.22,
+          "text": "all"
+        },
+        {
+          "t": 142.48,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 142.76,
+      "end": 144.92,
+      "text": "Tired voice from one more call to daylight",
+      "words": [
+        {
+          "t": 142.76,
+          "text": "Tired"
+        },
+        {
+          "t": 143.1,
+          "text": "voice"
+        },
+        {
+          "t": 143.36,
+          "text": "from"
+        },
+        {
+          "t": 143.64,
+          "text": "one"
+        },
+        {
+          "t": 143.9,
+          "text": "more"
+        },
+        {
+          "t": 144.02,
+          "text": "call"
+        },
+        {
+          "t": 144.26,
+          "text": "to"
+        },
+        {
+          "t": 144.6,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 144.92,
+      "end": 146.4,
+      "text": "Missed calls, small fights",
+      "words": [
+        {
+          "t": 144.92,
+          "text": "Missed"
+        },
+        {
+          "t": 145.46,
+          "text": "calls,"
+        },
+        {
+          "t": 145.8,
+          "text": "small"
+        },
+        {
+          "t": 145.92,
+          "text": "fights"
+        }
+      ]
+    },
+    {
+      "start": 146.4,
+      "end": 148.0,
+      "text": "Pride in the way, don't worry about it",
+      "words": [
+        {
+          "t": 146.4,
+          "text": "Pride"
+        },
+        {
+          "t": 146.78,
+          "text": "in"
+        },
+        {
+          "t": 147.14,
+          "text": "the"
+        },
+        {
+          "t": 147.22,
+          "text": "way,"
+        },
+        {
+          "t": 147.6,
+          "text": "don't"
+        },
+        {
+          "t": 147.94,
+          "text": "worry"
+        },
+        {
+          "t": 148.0,
+          "text": "about"
+        },
+        {
+          "t": 148.0,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 148.02,
+      "end": 149.88,
+      "text": "One heart emoji saves the whole day",
+      "words": [
+        {
+          "t": 148.02,
+          "text": "One"
+        },
+        {
+          "t": 148.1,
+          "text": "heart"
+        },
+        {
+          "t": 148.3,
+          "text": "emoji"
+        },
+        {
+          "t": 148.72,
+          "text": "saves"
+        },
+        {
+          "t": 149.08,
+          "text": "the"
+        },
+        {
+          "t": 149.34,
+          "text": "whole"
+        },
+        {
+          "t": 149.54,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 149.99,
+      "end": 152.76,
+      "text": "You screenshot me sleeping, I screenshot you now",
+      "words": [
+        {
+          "t": 149.99,
+          "text": "You"
+        },
+        {
+          "t": 150.74,
+          "text": "screenshot"
+        },
+        {
+          "t": 151.12,
+          "text": "me"
+        },
+        {
+          "t": 151.34,
+          "text": "sleeping,"
+        },
+        {
+          "t": 151.7,
+          "text": "I"
+        },
+        {
+          "t": 151.86,
+          "text": "screenshot"
+        },
+        {
+          "t": 152.26,
+          "text": "you"
+        },
+        {
+          "t": 152.56,
+          "text": "now"
+        }
+      ]
+    },
+    {
+      "start": 152.76,
+      "end": 155.22,
+      "text": "We got duplicated pictures of the best days we had",
+      "words": [
+        {
+          "t": 152.76,
+          "text": "We"
+        },
+        {
+          "t": 153.04,
+          "text": "got"
+        },
+        {
+          "t": 153.18,
+          "text": "duplicated"
+        },
+        {
+          "t": 153.56,
+          "text": "pictures"
+        },
+        {
+          "t": 153.96,
+          "text": "of"
+        },
+        {
+          "t": 154.18,
+          "text": "the"
+        },
+        {
+          "t": 154.3,
+          "text": "best"
+        },
+        {
+          "t": 154.56,
+          "text": "days"
+        },
+        {
+          "t": 154.78,
+          "text": "we"
+        },
+        {
+          "t": 154.96,
+          "text": "had"
+        }
+      ]
+    },
+    {
+      "start": 155.22,
+      "end": 156.4,
+      "text": "Back up the memories",
+      "words": [
+        {
+          "t": 155.22,
+          "text": "Back"
+        },
+        {
+          "t": 155.76,
+          "text": "up"
+        },
+        {
+          "t": 155.94,
+          "text": "the"
+        },
+        {
+          "t": 156.1,
+          "text": "memories"
+        }
+      ]
+    },
+    {
+      "start": 156.4,
+      "end": 157.8,
+      "text": "New phone, same us",
+      "words": [
+        {
+          "t": 156.4,
+          "text": "New"
+        },
+        {
+          "t": 156.8,
+          "text": "phone,"
+        },
+        {
+          "t": 157.24,
+          "text": "same"
+        },
+        {
+          "t": 157.44,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 157.8,
+      "end": 158.82,
+      "text": "Too many photos",
+      "words": [
+        {
+          "t": 157.8,
+          "text": "Too"
+        },
+        {
+          "t": 158.08,
+          "text": "many"
+        },
+        {
+          "t": 158.32,
+          "text": "photos"
+        }
+      ]
+    },
+    {
+      "start": 158.82,
+      "end": 161.58,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 158.82,
+          "text": "My"
+        },
+        {
+          "t": 159.24,
+          "text": "soul"
+        },
+        {
+          "t": 160.32,
+          "text": "lives"
+        },
+        {
+          "t": 160.92,
+          "text": "in"
+        },
+        {
+          "t": 161.32,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 161.58,
+      "end": 163.78,
+      "text": "But my love goes worldwide",
+      "words": [
+        {
+          "t": 161.58,
+          "text": "But"
+        },
+        {
+          "t": 162.06,
+          "text": "my"
+        },
+        {
+          "t": 162.36,
+          "text": "love"
+        },
+        {
+          "t": 162.78,
+          "text": "goes"
+        },
+        {
+          "t": 163.12,
+          "text": "worldwide"
+        }
+      ]
+    },
+    {
+      "start": 163.78,
+      "end": 165.152,
+      "text": "From your good morning",
+      "words": [
+        {
+          "t": 163.78,
+          "text": "From"
+        },
+        {
+          "t": 164.4,
+          "text": "your"
+        },
+        {
+          "t": 164.62,
+          "text": "good"
+        },
+        {
+          "t": 164.82,
+          "text": "morning"
+        }
+      ]
+    },
+    {
+      "start": 165.78,
+      "end": 167.76,
+      "text": "To my good night",
+      "words": [
+        {
+          "t": 165.78,
+          "text": "To"
+        },
+        {
+          "t": 166.08,
+          "text": "my"
+        },
+        {
+          "t": 167.04,
+          "text": "good"
+        },
+        {
+          "t": 167.14,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 167.84,
+      "end": 170.16,
+      "text": "We fight, we make out",
+      "words": [
+        {
+          "t": 167.84,
+          "text": "We"
+        },
+        {
+          "t": 168.84,
+          "text": "fight,"
+        },
+        {
+          "t": 169.34,
+          "text": "we"
+        },
+        {
+          "t": 169.44,
+          "text": "make"
+        },
+        {
+          "t": 169.84,
+          "text": "out"
+        }
+      ]
+    },
+    {
+      "start": 170.42,
+      "end": 171.6,
+      "text": "Then we laugh on the phone",
+      "words": [
+        {
+          "t": 170.42,
+          "text": "Then"
+        },
+        {
+          "t": 170.528,
+          "text": "we"
+        },
+        {
+          "t": 170.66,
+          "text": "laugh"
+        },
+        {
+          "t": 171.02,
+          "text": "on"
+        },
+        {
+          "t": 171.24,
+          "text": "the"
+        },
+        {
+          "t": 171.34,
+          "text": "phone"
+        }
+      ]
+    },
+    {
+      "start": 171.712,
+      "end": 173.824,
+      "text": "No matter where you are, you never feel alone",
+      "words": [
+        {
+          "t": 171.712,
+          "text": "No"
+        },
+        {
+          "t": 171.968,
+          "text": "matter"
+        },
+        {
+          "t": 172.224,
+          "text": "where"
+        },
+        {
+          "t": 172.4,
+          "text": "you"
+        },
+        {
+          "t": 172.56,
+          "text": "are,"
+        },
+        {
+          "t": 172.78,
+          "text": "you"
+        },
+        {
+          "t": 172.82,
+          "text": "never"
+        },
+        {
+          "t": 173.02,
+          "text": "feel"
+        },
+        {
+          "t": 173.38,
+          "text": "alone"
+        }
+      ]
+    },
+    {
+      "start": 173.888,
+      "end": 175.78,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 173.888,
+          "text": "My"
+        },
+        {
+          "t": 174.28,
+          "text": "soul"
+        },
+        {
+          "t": 174.56,
+          "text": "lives"
+        },
+        {
+          "t": 174.9,
+          "text": "in"
+        },
+        {
+          "t": 175.0,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 175.78,
+      "end": 177.5,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 175.78,
+          "text": "My"
+        },
+        {
+          "t": 176.44,
+          "text": "soul"
+        },
+        {
+          "t": 176.96,
+          "text": "lives"
+        },
+        {
+          "t": 177.26,
+          "text": "in"
+        },
+        {
+          "t": 177.32,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 178.72,
+      "end": 181.62,
+      "text": "But it finds you wherever you go",
+      "words": [
+        {
+          "t": 178.72,
+          "text": "But"
+        },
+        {
+          "t": 178.82,
+          "text": "it"
+        },
+        {
+          "t": 179.02,
+          "text": "finds"
+        },
+        {
+          "t": 179.4,
+          "text": "you"
+        },
+        {
+          "t": 179.68,
+          "text": "wherever"
+        },
+        {
+          "t": 180.704,
+          "text": "you"
+        },
+        {
+          "t": 181.22,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 182.944,
+      "end": 183.91,
+      "text": "I miss you my baby",
+      "words": [
+        {
+          "t": 182.944,
+          "text": "I"
+        },
+        {
+          "t": 183.12,
+          "text": "miss"
+        },
+        {
+          "t": 183.12,
+          "text": "you"
+        },
+        {
+          "t": 183.392,
+          "text": "my"
+        },
+        {
+          "t": 183.54,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 184.47,
+      "end": 186.112,
+      "text": "I miss you my baby",
+      "words": [
+        {
+          "t": 184.47,
+          "text": "I"
+        },
+        {
+          "t": 185.28,
+          "text": "miss"
+        },
+        {
+          "t": 185.44,
+          "text": "you"
+        },
+        {
+          "t": 185.46,
+          "text": "my"
+        },
+        {
+          "t": 185.94,
+          "text": "baby"
+        }
+      ]
+    },
+    {
+      "start": 186.64,
+      "end": 188.26,
+      "text": "My soul lives in Seoul",
+      "words": [
+        {
+          "t": 186.64,
+          "text": "My"
+        },
+        {
+          "t": 187.1,
+          "text": "soul"
+        },
+        {
+          "t": 187.52,
+          "text": "lives"
+        },
+        {
+          "t": 188.0,
+          "text": "in"
+        },
+        {
+          "t": 188.26,
+          "text": "Seoul"
+        }
+      ]
+    },
+    {
+      "start": 188.26,
+      "end": 190.64,
+      "text": "My socks are only one time on the floor",
+      "words": [
+        {
+          "t": 188.26,
+          "text": "My"
+        },
+        {
+          "t": 188.7,
+          "text": "socks"
+        },
+        {
+          "t": 189.02,
+          "text": "are"
+        },
+        {
+          "t": 189.3,
+          "text": "only"
+        },
+        {
+          "t": 189.44,
+          "text": "one"
+        },
+        {
+          "t": 189.46,
+          "text": "time"
+        },
+        {
+          "t": 190.18,
+          "text": "on"
+        },
+        {
+          "t": 190.64,
+          "text": "the"
+        },
+        {
+          "t": 190.64,
+          "text": "floor"
+        }
+      ]
+    },
+    {
+      "start": 190.64,
+      "end": 192.74,
+      "text": "My socks are only one time on the floor",
+      "words": [
+        {
+          "t": 190.64,
+          "text": "My"
+        },
+        {
+          "t": 190.98,
+          "text": "socks"
+        },
+        {
+          "t": 191.42,
+          "text": "are"
+        },
+        {
+          "t": 191.64,
+          "text": "only"
+        },
+        {
+          "t": 191.82,
+          "text": "one"
+        },
+        {
+          "t": 191.82,
+          "text": "time"
+        },
+        {
+          "t": 192.46,
+          "text": "on"
+        },
+        {
+          "t": 192.74,
+          "text": "the"
+        },
+        {
+          "t": 192.74,
+          "text": "floor"
+        }
+      ]
+    },
+    {
+      "start": 192.74,
+      "end": 194.16,
+      "text": "Your hair is everywhere girl",
+      "words": [
+        {
+          "t": 192.74,
+          "text": "Your"
+        },
+        {
+          "t": 193.14,
+          "text": "hair"
+        },
+        {
+          "t": 193.3,
+          "text": "is"
+        },
+        {
+          "t": 193.46,
+          "text": "everywhere"
+        },
+        {
+          "t": 193.7,
+          "text": "girl"
+        }
+      ]
+    },
+    {
+      "start": 194.16,
+      "end": 196.7,
+      "text": "It's not a joke, it's not a joke",
+      "words": [
+        {
+          "t": 194.16,
+          "text": "It's"
+        },
+        {
+          "t": 194.46,
+          "text": "not"
+        },
+        {
+          "t": 194.58,
+          "text": "a"
+        },
+        {
+          "t": 194.62,
+          "text": "joke,"
+        },
+        {
+          "t": 194.94,
+          "text": "it's"
+        },
+        {
+          "t": 195.9,
+          "text": "not"
+        },
+        {
+          "t": 196.36,
+          "text": "a"
+        },
+        {
+          "t": 196.7,
+          "text": "joke"
+        }
+      ]
+    },
+    {
+      "start": 196.7,
+      "end": 196.84,
+      "text": "It's not a joke",
+      "words": [
+        {
+          "t": 196.7,
+          "text": "It's"
+        },
+        {
+          "t": 196.7,
+          "text": "not"
+        },
+        {
+          "t": 196.7,
+          "text": "a"
+        },
+        {
+          "t": 196.74,
+          "text": "joke"
+        }
+      ]
+    },
+    {
+      "start": 197.64,
+      "end": 199.62,
+      "text": "The dishes are piled up like mountains",
+      "words": [
+        {
+          "t": 197.64,
+          "text": "The"
+        },
+        {
+          "t": 197.86,
+          "text": "dishes"
+        },
+        {
+          "t": 198.08,
+          "text": "are"
+        },
+        {
+          "t": 198.4,
+          "text": "piled"
+        },
+        {
+          "t": 198.74,
+          "text": "up"
+        },
+        {
+          "t": 198.76,
+          "text": "like"
+        },
+        {
+          "t": 199.62,
+          "text": "mountains"
+        }
+      ]
+    },
+    {
+      "start": 199.62,
+      "end": 201.92,
+      "text": "The dishes are piled up like mountains",
+      "words": [
+        {
+          "t": 199.62,
+          "text": "The"
+        },
+        {
+          "t": 200.04,
+          "text": "dishes"
+        },
+        {
+          "t": 200.44,
+          "text": "are"
+        },
+        {
+          "t": 200.74,
+          "text": "piled"
+        },
+        {
+          "t": 201.1,
+          "text": "up"
+        },
+        {
+          "t": 201.1,
+          "text": "like"
+        },
+        {
+          "t": 201.92,
+          "text": "mountains"
+        }
+      ]
+    },
+    {
+      "start": 201.92,
+      "end": 205.08,
+      "text": "You say up a little, then you buy one more thing",
+      "words": [
+        {
+          "t": 201.92,
+          "text": "You"
+        },
+        {
+          "t": 202.38,
+          "text": "say"
+        },
+        {
+          "t": 202.62,
+          "text": "up"
+        },
+        {
+          "t": 203.04,
+          "text": "a"
+        },
+        {
+          "t": 203.1,
+          "text": "little,"
+        },
+        {
+          "t": 203.44,
+          "text": "then"
+        },
+        {
+          "t": 203.58,
+          "text": "you"
+        },
+        {
+          "t": 203.72,
+          "text": "buy"
+        },
+        {
+          "t": 203.92,
+          "text": "one"
+        },
+        {
+          "t": 204.34,
+          "text": "more"
+        },
+        {
+          "t": 204.78,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 205.98,
+      "end": 207.88,
+      "text": "You say up a little, then you buy one more thing",
+      "words": [
+        {
+          "t": 205.98,
+          "text": "You"
+        },
+        {
+          "t": 206.66,
+          "text": "say"
+        },
+        {
+          "t": 207.34,
+          "text": "up"
+        },
+        {
+          "t": 207.44,
+          "text": "a"
+        },
+        {
+          "t": 207.44,
+          "text": "little,"
+        },
+        {
+          "t": 207.48,
+          "text": "then"
+        },
+        {
+          "t": 207.88,
+          "text": "you"
+        },
+        {
+          "t": 207.88,
+          "text": "buy"
+        },
+        {
+          "t": 207.88,
+          "text": "one"
+        },
+        {
+          "t": 207.88,
+          "text": "more"
+        },
+        {
+          "t": 207.88,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 208.14,
+      "end": 209.28,
+      "text": "You say up a little, then you buy one more thing",
+      "words": [
+        {
+          "t": 208.14,
+          "text": "You"
+        },
+        {
+          "t": 208.24,
+          "text": "say"
+        },
+        {
+          "t": 208.24,
+          "text": "up"
+        },
+        {
+          "t": 208.38,
+          "text": "a"
+        },
+        {
+          "t": 208.48,
+          "text": "little,"
+        },
+        {
+          "t": 209.18,
+          "text": "then"
+        },
+        {
+          "t": 209.18,
+          "text": "you"
+        },
+        {
+          "t": 209.18,
+          "text": "buy"
+        },
+        {
+          "t": 209.22,
+          "text": "one"
+        },
+        {
+          "t": 209.28,
+          "text": "more"
+        },
+        {
+          "t": 209.28,
+          "text": "thing"
+        }
+      ]
+    },
+    {
+      "start": 209.28,
+      "end": 210.06,
+      "text": "You have no money,",
+      "words": [
+        {
+          "t": 209.28,
+          "text": "You"
+        },
+        {
+          "t": 209.44,
+          "text": "have"
+        },
+        {
+          "t": 209.78,
+          "text": "no"
+        },
+        {
+          "t": 209.92,
+          "text": "money,"
+        }
+      ]
+    },
+    {
+      "start": 210.49,
+      "end": 210.99,
+      "text": "then you say I'll order fried chicken",
+      "words": [
+        {
+          "t": 210.49,
+          "text": "then"
+        },
+        {
+          "t": 210.64,
+          "text": "you"
+        },
+        {
+          "t": 210.64,
+          "text": "say"
+        },
+        {
+          "t": 210.64,
+          "text": "I'll"
+        },
+        {
+          "t": 210.78,
+          "text": "order"
+        },
+        {
+          "t": 210.84,
+          "text": "fried"
+        },
+        {
+          "t": 210.84,
+          "text": "chicken"
+        }
+      ]
+    },
+    {
+      "start": 211.1,
+      "end": 214.1,
+      "text": "Pay for the game and reverse my words",
+      "words": [
+        {
+          "t": 211.1,
+          "text": "Pay"
+        },
+        {
+          "t": 212.2,
+          "text": "for"
+        },
+        {
+          "t": 212.24,
+          "text": "the"
+        },
+        {
+          "t": 212.24,
+          "text": "game"
+        },
+        {
+          "t": 212.32,
+          "text": "and"
+        },
+        {
+          "t": 212.88,
+          "text": "reverse"
+        },
+        {
+          "t": 213.36,
+          "text": "my"
+        },
+        {
+          "t": 214.1,
+          "text": "words"
+        }
+      ]
+    },
+    {
+      "start": 214.1,
+      "end": 215.86,
+      "text": "Pay for the game and reverse my words",
+      "words": [
+        {
+          "t": 214.1,
+          "text": "Pay"
+        },
+        {
+          "t": 214.42,
+          "text": "for"
+        },
+        {
+          "t": 214.6,
+          "text": "the"
+        },
+        {
+          "t": 214.6,
+          "text": "game"
+        },
+        {
+          "t": 214.68,
+          "text": "and"
+        },
+        {
+          "t": 215.2,
+          "text": "reverse"
+        },
+        {
+          "t": 215.52,
+          "text": "my"
+        },
+        {
+          "t": 215.58,
+          "text": "words"
+        }
+      ]
+    },
+    {
+      "start": 216.0,
+      "end": 217.82,
+      "text": "My hair is fine where my love is",
+      "words": [
+        {
+          "t": 216.0,
+          "text": "My"
+        },
+        {
+          "t": 216.6,
+          "text": "hair"
+        },
+        {
+          "t": 216.94,
+          "text": "is"
+        },
+        {
+          "t": 217.3,
+          "text": "fine"
+        },
+        {
+          "t": 217.54,
+          "text": "where"
+        },
+        {
+          "t": 217.58,
+          "text": "my"
+        },
+        {
+          "t": 217.58,
+          "text": "love"
+        },
+        {
+          "t": 217.62,
+          "text": "is"
+        }
+      ]
+    },
+    {
+      "start": 217.9,
+      "end": 222.76,
+      "text": "Playing with your socks is the myth",
+      "words": [
+        {
+          "t": 217.9,
+          "text": "Playing"
+        },
+        {
+          "t": 218.8,
+          "text": "with"
+        },
+        {
+          "t": 221.32,
+          "text": "your"
+        },
+        {
+          "t": 221.38,
+          "text": "socks"
+        },
+        {
+          "t": 221.6,
+          "text": "is"
+        },
+        {
+          "t": 222.1,
+          "text": "the"
+        },
+        {
+          "t": 222.46,
+          "text": "myth"
+        }
+      ]
+    },
+    {
+      "start": 222.83,
+      "end": 225.8,
+      "text": "Okay, okay maybe I'm messy",
+      "words": [
+        {
+          "t": 222.83,
+          "text": "Okay,"
+        },
+        {
+          "t": 224.26,
+          "text": "okay"
+        },
+        {
+          "t": 224.68,
+          "text": "maybe"
+        },
+        {
+          "t": 225.2,
+          "text": "I'm"
+        },
+        {
+          "t": 225.56,
+          "text": "messy"
+        }
+      ]
+    },
+    {
+      "start": 225.8,
+      "end": 228.4,
+      "text": "No stress",
+      "words": [
+        {
+          "t": 225.8,
+          "text": "No"
+        },
+        {
+          "t": 226.12,
+          "text": "stress"
+        }
+      ]
+    },
+    {
+      "start": 228.52,
+      "end": 230.46,
+      "text": "You blame me for the belly",
+      "words": [
+        {
+          "t": 228.52,
+          "text": "You"
+        },
+        {
+          "t": 229.22,
+          "text": "blame"
+        },
+        {
+          "t": 229.44,
+          "text": "me"
+        },
+        {
+          "t": 229.74,
+          "text": "for"
+        },
+        {
+          "t": 230.0,
+          "text": "the"
+        },
+        {
+          "t": 230.18,
+          "text": "belly"
+        }
+      ]
+    },
+    {
+      "start": 230.46,
+      "end": 232.832,
+      "text": "You made me love your food already",
+      "words": [
+        {
+          "t": 230.46,
+          "text": "You"
+        },
+        {
+          "t": 230.7,
+          "text": "made"
+        },
+        {
+          "t": 231.0,
+          "text": "me"
+        },
+        {
+          "t": 231.24,
+          "text": "love"
+        },
+        {
+          "t": 231.58,
+          "text": "your"
+        },
+        {
+          "t": 231.82,
+          "text": "food"
+        },
+        {
+          "t": 232.18,
+          "text": "already"
+        }
+      ]
+    },
+    {
+      "start": 233.78,
+      "end": 235.72,
+      "text": "Oh, we both got hurt",
+      "words": [
+        {
+          "t": 233.78,
+          "text": "Oh,"
+        },
+        {
+          "t": 234.28,
+          "text": "we"
+        },
+        {
+          "t": 234.76,
+          "text": "both"
+        },
+        {
+          "t": 235.02,
+          "text": "got"
+        },
+        {
+          "t": 235.2,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 235.72,
+      "end": 237.04,
+      "text": "Ha ha, it's okay",
+      "words": [
+        {
+          "t": 235.72,
+          "text": "Ha"
+        },
+        {
+          "t": 236.14,
+          "text": "ha,"
+        },
+        {
+          "t": 236.52,
+          "text": "it's"
+        },
+        {
+          "t": 236.74,
+          "text": "okay"
+        }
+      ]
+    },
+    {
+      "start": 237.04,
+      "end": 238.34,
+      "text": "We both got hurt",
+      "words": [
+        {
+          "t": 237.04,
+          "text": "We"
+        },
+        {
+          "t": 237.36,
+          "text": "both"
+        },
+        {
+          "t": 237.62,
+          "text": "got"
+        },
+        {
+          "t": 237.86,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 238.34,
+      "end": 239.46,
+      "text": "Ha ha, it's okay",
+      "words": [
+        {
+          "t": 238.34,
+          "text": "Ha"
+        },
+        {
+          "t": 238.56,
+          "text": "ha,"
+        },
+        {
+          "t": 238.84,
+          "text": "it's"
+        },
+        {
+          "t": 239.12,
+          "text": "okay"
+        }
+      ]
+    },
+    {
+      "start": 239.46,
+      "end": 240.66,
+      "text": "Your country, my country",
+      "words": [
+        {
+          "t": 239.46,
+          "text": "Your"
+        },
+        {
+          "t": 239.78,
+          "text": "country,"
+        },
+        {
+          "t": 240.22,
+          "text": "my"
+        },
+        {
+          "t": 240.32,
+          "text": "country"
+        }
+      ]
+    },
+    {
+      "start": 240.66,
+      "end": 241.24,
+      "text": "It's delicious",
+      "words": [
+        {
+          "t": 240.66,
+          "text": "It's"
+        },
+        {
+          "t": 240.92,
+          "text": "delicious"
+        }
+      ]
+    },
+    {
+      "start": 241.24,
+      "end": 243.02,
+      "text": "Your country, my country",
+      "words": [
+        {
+          "t": 241.24,
+          "text": "Your"
+        },
+        {
+          "t": 242.0,
+          "text": "country,"
+        },
+        {
+          "t": 242.56,
+          "text": "my"
+        },
+        {
+          "t": 242.64,
+          "text": "country"
+        }
+      ]
+    },
+    {
+      "start": 243.02,
+      "end": 243.7,
+      "text": "It's delicious",
+      "words": [
+        {
+          "t": 243.02,
+          "text": "It's"
+        },
+        {
+          "t": 243.26,
+          "text": "delicious"
+        }
+      ]
+    },
+    {
+      "start": 243.81,
+      "end": 245.26,
+      "text": "Even if we fight, we laugh",
+      "words": [
+        {
+          "t": 243.81,
+          "text": "Even"
+        },
+        {
+          "t": 244.36,
+          "text": "if"
+        },
+        {
+          "t": 244.36,
+          "text": "we"
+        },
+        {
+          "t": 244.38,
+          "text": "fight,"
+        },
+        {
+          "t": 244.72,
+          "text": "we"
+        },
+        {
+          "t": 244.94,
+          "text": "laugh"
+        }
+      ]
+    },
+    {
+      "start": 245.26,
+      "end": 246.36,
+      "text": "One more time",
+      "words": [
+        {
+          "t": 245.26,
+          "text": "One"
+        },
+        {
+          "t": 245.58,
+          "text": "more"
+        },
+        {
+          "t": 245.9,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 246.36,
+      "end": 247.64,
+      "text": "Even if we fight, we laugh",
+      "words": [
+        {
+          "t": 246.36,
+          "text": "Even"
+        },
+        {
+          "t": 246.62,
+          "text": "if"
+        },
+        {
+          "t": 246.72,
+          "text": "we"
+        },
+        {
+          "t": 246.72,
+          "text": "fight,"
+        },
+        {
+          "t": 247.06,
+          "text": "we"
+        },
+        {
+          "t": 247.28,
+          "text": "laugh"
+        }
+      ]
+    },
+    {
+      "start": 247.64,
+      "end": 248.74,
+      "text": "One more time",
+      "words": [
+        {
+          "t": 247.64,
+          "text": "One"
+        },
+        {
+          "t": 247.94,
+          "text": "more"
+        },
+        {
+          "t": 248.2,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 248.74,
+      "end": 251.82,
+      "text": "Even if we call out love, it keeps going",
+      "words": [
+        {
+          "t": 248.74,
+          "text": "Even"
+        },
+        {
+          "t": 249.04,
+          "text": "if"
+        },
+        {
+          "t": 249.04,
+          "text": "we"
+        },
+        {
+          "t": 249.08,
+          "text": "call"
+        },
+        {
+          "t": 249.34,
+          "text": "out"
+        },
+        {
+          "t": 250.38,
+          "text": "love,"
+        },
+        {
+          "t": 250.44,
+          "text": "it"
+        },
+        {
+          "t": 250.84,
+          "text": "keeps"
+        },
+        {
+          "t": 251.16,
+          "text": "going"
+        }
+      ]
+    },
+    {
+      "start": 252.96,
+      "end": 255.6,
+      "text": "Para para mi amor, que lejos estamos",
+      "words": [
+        {
+          "t": 252.96,
+          "text": "Para"
+        },
+        {
+          "t": 253.54,
+          "text": "para"
+        },
+        {
+          "t": 253.86,
+          "text": "mi"
+        },
+        {
+          "t": 254.06,
+          "text": "amor,"
+        },
+        {
+          "t": 254.54,
+          "text": "que"
+        },
+        {
+          "t": 254.8,
+          "text": "lejos"
+        },
+        {
+          "t": 255.16,
+          "text": "estamos"
+        }
+      ]
+    },
+    {
+      "start": 255.6,
+      "end": 258.16,
+      "text": "El cuelo cuesta caro, pero igual lo soñamos",
+      "words": [
+        {
+          "t": 255.6,
+          "text": "El"
+        },
+        {
+          "t": 256.04,
+          "text": "cuelo"
+        },
+        {
+          "t": 256.28,
+          "text": "cuesta"
+        },
+        {
+          "t": 256.54,
+          "text": "caro,"
+        },
+        {
+          "t": 256.94,
+          "text": "pero"
+        },
+        {
+          "t": 257.1,
+          "text": "igual"
+        },
+        {
+          "t": 257.36,
+          "text": "lo"
+        },
+        {
+          "t": 257.64,
+          "text": "soñamos"
+        }
+      ]
+    },
+    {
+      "start": 258.16,
+      "end": 260.22,
+      "text": "Se cae la señal, pero sube el corazón",
+      "words": [
+        {
+          "t": 258.16,
+          "text": "Se"
+        },
+        {
+          "t": 258.34,
+          "text": "cae"
+        },
+        {
+          "t": 258.64,
+          "text": "la"
+        },
+        {
+          "t": 258.8,
+          "text": "señal,"
+        },
+        {
+          "t": 259.3,
+          "text": "pero"
+        },
+        {
+          "t": 259.48,
+          "text": "sube"
+        },
+        {
+          "t": 259.78,
+          "text": "el"
+        },
+        {
+          "t": 259.92,
+          "text": "corazón"
+        }
+      ]
+    },
+    {
+      "start": 260.22,
+      "end": 262.62,
+      "text": "Tu voz en mi teléfono me cambia la canción",
+      "words": [
+        {
+          "t": 260.22,
+          "text": "Tu"
+        },
+        {
+          "t": 260.66,
+          "text": "voz"
+        },
+        {
+          "t": 260.9,
+          "text": "en"
+        },
+        {
+          "t": 261.06,
+          "text": "mi"
+        },
+        {
+          "t": 261.16,
+          "text": "teléfono"
+        },
+        {
+          "t": 261.66,
+          "text": "me"
+        },
+        {
+          "t": 261.88,
+          "text": "cambia"
+        },
+        {
+          "t": 262.22,
+          "text": "la"
+        },
+        {
+          "t": 262.3,
+          "text": "canción"
+        }
+      ]
+    },
+    {
+      "start": 262.62,
+      "end": 265.22,
+      "text": "Cambio de moneda, papeles en la mesa",
+      "words": [
+        {
+          "t": 262.62,
+          "text": "Cambio"
+        },
+        {
+          "t": 263.4,
+          "text": "de"
+        },
+        {
+          "t": 263.48,
+          "text": "moneda,"
+        },
+        {
+          "t": 264.08,
+          "text": "papeles"
+        },
+        {
+          "t": 264.52,
+          "text": "en"
+        },
+        {
+          "t": 264.72,
+          "text": "la"
+        },
+        {
+          "t": 264.8,
+          "text": "mesa"
+        }
+      ]
+    },
+    {
+      "start": 265.22,
+      "end": 267.54,
+      "text": "Visa, entrevista, paciencia y promesa",
+      "words": [
+        {
+          "t": 265.22,
+          "text": "Visa,"
+        },
+        {
+          "t": 265.86,
+          "text": "entrevista,"
+        },
+        {
+          "t": 266.46,
+          "text": "paciencia"
+        },
+        {
+          "t": 266.98,
+          "text": "y"
+        },
+        {
+          "t": 267.08,
+          "text": "promesa"
+        }
+      ]
+    },
+    {
+      "start": 267.54,
+      "end": 269.54,
+      "text": "Tu pa' mi me preguntas, mis panas también",
+      "words": [
+        {
+          "t": 267.54,
+          "text": "Tu"
+        },
+        {
+          "t": 267.74,
+          "text": "pa'"
+        },
+        {
+          "t": 268.02,
+          "text": "mi"
+        },
+        {
+          "t": 268.1,
+          "text": "me"
+        },
+        {
+          "t": 268.22,
+          "text": "preguntas,"
+        },
+        {
+          "t": 268.84,
+          "text": "mis"
+        },
+        {
+          "t": 268.96,
+          "text": "panas"
+        },
+        {
+          "t": 269.3,
+          "text": "también"
+        }
+      ]
+    },
+    {
+      "start": 269.54,
+      "end": 272.74,
+      "text": "Pero nadie entiende lo que tú y yo tenemos, ven",
+      "words": [
+        {
+          "t": 269.54,
+          "text": "Pero"
+        },
+        {
+          "t": 270.04,
+          "text": "nadie"
+        },
+        {
+          "t": 270.36,
+          "text": "entiende"
+        },
+        {
+          "t": 270.7,
+          "text": "lo"
+        },
+        {
+          "t": 270.86,
+          "text": "que"
+        },
+        {
+          "t": 271.0,
+          "text": "tú"
+        },
+        {
+          "t": 271.18,
+          "text": "y"
+        },
+        {
+          "t": 271.3,
+          "text": "yo"
+        },
+        {
+          "t": 271.52,
+          "text": "tenemos,"
+        },
+        {
+          "t": 272.38,
+          "text": "ven"
+        }
+      ]
+    },
+    {
+      "start": 272.74,
+      "end": 275.02,
+      "text": "Baila conmigo por la pantalla",
+      "words": [
+        {
+          "t": 272.74,
+          "text": "Baila"
+        },
+        {
+          "t": 273.54,
+          "text": "conmigo"
+        },
+        {
+          "t": 273.9,
+          "text": "por"
+        },
+        {
+          "t": 274.1,
+          "text": "la"
+        },
+        {
+          "t": 274.38,
+          "text": "pantalla"
+        }
+      ]
+    },
+    {
+      "start": 275.02,
+      "end": 277.78,
+      "text": "Aunque la cámara nunca se halla",
+      "words": [
+        {
+          "t": 275.02,
+          "text": "Aunque"
+        },
+        {
+          "t": 275.78,
+          "text": "la"
+        },
+        {
+          "t": 275.98,
+          "text": "cámara"
+        },
+        {
+          "t": 276.28,
+          "text": "nunca"
+        },
+        {
+          "t": 276.62,
+          "text": "se"
+        },
+        {
+          "t": 277.04,
+          "text": "halla"
+        }
+      ]
+    },
+    {
+      "start": 277.78,
+      "end": 281.22,
+      "text": "Batería baja, cargador perdido",
+      "words": [
+        {
+          "t": 277.78,
+          "text": "Batería"
+        },
+        {
+          "t": 278.4,
+          "text": "baja,"
+        },
+        {
+          "t": 278.94,
+          "text": "cargador"
+        },
+        {
+          "t": 280.0,
+          "text": "perdido"
+        }
+      ]
+    },
+    {
+      "start": 281.22,
+      "end": 283.22,
+      "text": "Pero ese amor sigue encendido",
+      "words": [
+        {
+          "t": 281.22,
+          "text": "Pero"
+        },
+        {
+          "t": 281.7,
+          "text": "ese"
+        },
+        {
+          "t": 281.88,
+          "text": "amor"
+        },
+        {
+          "t": 282.1,
+          "text": "sigue"
+        },
+        {
+          "t": 282.42,
+          "text": "encendido"
+        }
+      ]
+    },
+    {
+      "start": 283.52,
+      "end": 284.92,
+      "text": "Dale suave, dale lento",
+      "words": [
+        {
+          "t": 283.52,
+          "text": "Dale"
+        },
+        {
+          "t": 283.92,
+          "text": "suave,"
+        },
+        {
+          "t": 284.26,
+          "text": "dale"
+        },
+        {
+          "t": 284.42,
+          "text": "lento"
+        }
+      ]
+    },
+    {
+      "start": 284.92,
+      "end": 285.1,
+      "text": "Dale suave, dale lento",
+      "words": [
+        {
+          "t": 284.92,
+          "text": "Dale"
+        },
+        {
+          "t": 285.1,
+          "text": "suave,"
+        },
+        {
+          "t": 285.1,
+          "text": "dale"
+        },
+        {
+          "t": 285.1,
+          "text": "lento"
+        }
+      ]
+    },
+    {
+      "start": 286.08,
+      "end": 287.34,
+      "text": "Love across every continent",
+      "words": [
+        {
+          "t": 286.08,
+          "text": "Love"
+        },
+        {
+          "t": 286.18,
+          "text": "across"
+        },
+        {
+          "t": 286.38,
+          "text": "every"
+        },
+        {
+          "t": 286.82,
+          "text": "continent"
+        }
+      ]
+    },
+    {
+      "start": 288.1,
+      "end": 289.38,
+      "text": "Talen fuerte, dale tro",
+      "words": [
+        {
+          "t": 288.1,
+          "text": "Talen"
+        },
+        {
+          "t": 288.7,
+          "text": "fuerte,"
+        },
+        {
+          "t": 288.92,
+          "text": "dale"
+        },
+        {
+          "t": 289.14,
+          "text": "tro"
+        }
+      ]
+    },
+    {
+      "start": 289.38,
+      "end": 292.14,
+      "text": "Every rhythm brings me back to you",
+      "words": [
+        {
+          "t": 289.38,
+          "text": "Every"
+        },
+        {
+          "t": 289.68,
+          "text": "rhythm"
+        },
+        {
+          "t": 290.38,
+          "text": "brings"
+        },
+        {
+          "t": 290.78,
+          "text": "me"
+        },
+        {
+          "t": 291.08,
+          "text": "back"
+        },
+        {
+          "t": 291.5,
+          "text": "to"
+        },
+        {
+          "t": 291.74,
+          "text": "you"
+        }
+      ]
+    }
+  ]
+}

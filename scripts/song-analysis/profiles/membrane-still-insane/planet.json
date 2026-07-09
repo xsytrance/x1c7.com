@@ -1,0 +1,98 @@
+[
+  {
+    "id": "membrane-still-insane",
+    "planet": {
+      "analysis": {
+        "summary": "Set in a gritty noir-cartoon world blending 1928 rubber-hose animation with 90s East Coast boom bap, this track narrates a dangerous descent into madness aboard a fog-shrouded riverboat where the line between reality and cartoonish villainy blurs. It explores themes of fractured sanity, criminal nostalgia, and playful terror through imagery of steam, smoke, and mechanical chains.",
+        "overallMood": "Sinister playfulness with gritty noir-cartoon atmosphere",
+        "themes": [
+          "Fractured Sanity",
+          "Noir Nostalgia",
+          "Riverboat Crime",
+          "Cartoon Violence"
+        ],
+        "palette": [
+          "#1A1814",
+          "#C0B89E",
+          "#2F3537",
+          "#6D6661"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipatory unease, foghorn bass rumble",
+            "intensity": 0.4,
+            "colorHint": "#2f3537",
+            "start": 6.11
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Manic rhythmic chaos, whistle hook driving the madness",
+            "intensity": 0.9,
+            "colorHint": "#c0b89e",
+            "start": 6.11
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Grimy storytelling with rubber-hose animation energy",
+            "intensity": 0.7,
+            "colorHint": "#6d6661",
+            "start": 48.26
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Claustrophobic tension in the dark river hole",
+            "intensity": 0.85,
+            "colorHint": "#1a1814",
+            "start": 130.42
+          }
+        ],
+        "keywords": [
+          {
+            "word": "whistle",
+            "emotion": "Intrusive command signal triggering chaos",
+            "imageryPrompt": "An old-fashioned brass riverboat whistle blowing sharply against a backdrop of black and white fog, steam rising from pipes, casting long distorted shadows in a 1928 cartoon style."
+          },
+          {
+            "word": "membrane",
+            "emotion": "Delicate barrier failing under pressure",
+            "imageryPrompt": "A translucent biological membrane stretching tight over a skull-like structure made of gears and clockwork, cracking as steam rushes through fissures in a gritty noir setting."
+          },
+          {
+            "word": "chain",
+            "emotion": "Heavy mechanical bondage restricting freedom",
+            "imageryPrompt": "A thick rusty iron chain wrapped around a cartoon character's ankle, the links glowing faintly with blue steam heat as they drag across wooden dock planks."
+          },
+          {
+            "word": "fog",
+            "emotion": "Thick obscuring veil hiding dangers",
+            "imageryPrompt": "Dense swirling grey mist rolling over a riverboat deck at night, swallowing the silhouette of a captain and distorting distant lighthouse beams in high-contrast black and white."
+          },
+          {
+            "word": "steam",
+            "emotion": "Pressurized energy threatening explosion",
+            "imageryPrompt": "Violent jets of hot steam erupting from boiler vents, pushing back against the frame like angry spirits, illuminating dust particles in a monochromatic industrial scene."
+          },
+          {
+            "word": "flames",
+            "emotion": "Destructive heat consuming the deck",
+            "imageryPrompt": "Black and white stylized fire dancing across wooden floorboards of a riverboat, flames appearing as jagged rubber-hose outlines licking up towards cartoon eyes."
+          },
+          {
+            "word": "villain",
+            "emotion": "Arrogant malevolence wearing old gold rings",
+            "imageryPrompt": "A classic 1920s gangster villain in a fedora laughing maniacally, his face painted with greasepaint cracks, standing atop a crumbling pier as the world spins."
+          },
+          {
+            "word": "shadow",
+            "emotion": "Ominous presence steering the boat unseen",
+            "imageryPrompt": "A tall elongated shadow cast by an unknown figure leaning against the railing of a riverboat, its form shifting slightly to mimic human movement in a foggy dock."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

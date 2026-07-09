@@ -1,0 +1,104 @@
+[
+  {
+    "id": "say-it-with-your-body",
+    "planet": {
+      "analysis": {
+        "summary": "An intimate R&B anthem exploring universal connection through physical touch and silent understanding across diverse cultures.",
+        "overallMood": "Sensual & Luxurious",
+        "themes": [
+          "Non-verbal communication",
+          "Intimate connection",
+          "Cultural unity through heartbeat",
+          "Sensual tension",
+          "Emotional vulnerability",
+          "Luxurious atmosphere"
+        ],
+        "palette": [
+          "#2c0e18",
+          "#5d3a46",
+          "#9b7f7f",
+          "#f4ece5"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipation and whispering invitation",
+            "intensity": 0.2,
+            "colorHintHex": "#1a1824",
+            "start": 8.58
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Quiet realization of shared soul across distances",
+            "intensity": 0.35,
+            "colorHintHex": "#2c0e18",
+            "start": 32.14
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Building tension and rhythmic certainty",
+            "intensity": 0.45,
+            "colorHintHex": "#5d3a46",
+            "start": 46.46
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Cinematic release of sensory desire",
+            "intensity": 0.75,
+            "colorHintHex": "#9b7f7f",
+            "start": 57.61
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Global resonance and consuming devotion",
+            "intensity": 0.6,
+            "colorHintHex": "#3e1c28",
+            "start": 126.82
+          },
+          {
+            "name": "Drop",
+            "emotion": "Raw, sub-bass driven spiritual surrender",
+            "intensity": 0.95,
+            "colorHintHex": "#f4ece5",
+            "start": 192.96
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Closer",
+            "emotion": "Urgent physical yearning",
+            "imageryPrompt": "Two silhouettes shrinking into a single point of light in a dimly lit luxury lounge, depth of field blurring the background city lights."
+          },
+          {
+            "word": "Heartbeat",
+            "emotion": "Rhythmic unity and life force",
+            "imageryPrompt": "A glowing red pulse wave expanding across a dark map connecting Brooklyn to Manila, visualizing sound as light."
+          },
+          {
+            "word": "Body",
+            "emotion": "Tactile sensation without sight",
+            "imageryPrompt": "Soft focus on fabric textures and skin tones in warm candlelight, capturing the feeling of touch rather than seeing a face."
+          },
+          {
+            "word": "Silence",
+            "emotion": "Comfortable void filled with meaning",
+            "imageryPrompt": "A vast empty space where sound waves are visible as gentle ripples in dark water, representing unspoken understanding."
+          },
+          {
+            "word": "Vibration",
+            "emotion": "Resonant emotional frequency",
+            "imageryPrompt": "Dust motes dancing intensely to an invisible low-frequency hum inside a cathedral-like room with velvet drapes."
+          },
+          {
+            "word": "Devour",
+            "emotion": "Intense, consuming love",
+            "imageryPrompt": "A mouth gently closing around a glowing orb of energy in slow motion, capturing the act of taking something precious into oneself."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

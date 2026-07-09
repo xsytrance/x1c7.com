@@ -1,0 +1,1466 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.16,
+      "end": 2.1,
+      "text": "Somebody said the floor already had a king",
+      "words": [
+        {
+          "t": 0.16,
+          "text": "Somebody"
+        },
+        {
+          "t": 0.26,
+          "text": "said"
+        },
+        {
+          "t": 0.62,
+          "text": "the"
+        },
+        {
+          "t": 0.78,
+          "text": "floor"
+        },
+        {
+          "t": 1.12,
+          "text": "already"
+        },
+        {
+          "t": 1.46,
+          "text": "had"
+        },
+        {
+          "t": 1.7,
+          "text": "a"
+        },
+        {
+          "t": 1.82,
+          "text": "king"
+        }
+      ]
+    },
+    {
+      "start": 5.44,
+      "end": 6.96,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 5.44,
+          "text": "Move"
+        },
+        {
+          "t": 6.2,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 6.96,
+      "end": 10.68,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 6.96,
+          "text": "Move"
+        },
+        {
+          "t": 8.1,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 11.72,
+      "end": 14.34,
+      "text": "We got heat in the room",
+      "words": [
+        {
+          "t": 11.72,
+          "text": "We"
+        },
+        {
+          "t": 12.576,
+          "text": "got"
+        },
+        {
+          "t": 13.0,
+          "text": "heat"
+        },
+        {
+          "t": 13.44,
+          "text": "in"
+        },
+        {
+          "t": 13.82,
+          "text": "the"
+        },
+        {
+          "t": 14.0,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 14.34,
+      "end": 15.5,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 14.34,
+          "text": "Move"
+        },
+        {
+          "t": 15.1,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 15.5,
+      "end": 18.1,
+      "text": "Summer came through smooth",
+      "words": [
+        {
+          "t": 15.5,
+          "text": "Summer"
+        },
+        {
+          "t": 16.7,
+          "text": "came"
+        },
+        {
+          "t": 17.18,
+          "text": "through"
+        },
+        {
+          "t": 17.62,
+          "text": "smooth"
+        }
+      ]
+    },
+    {
+      "start": 18.1,
+      "end": 19.6,
+      "text": "Don't talk too much",
+      "words": [
+        {
+          "t": 18.1,
+          "text": "Don't"
+        },
+        {
+          "t": 18.86,
+          "text": "talk"
+        },
+        {
+          "t": 19.08,
+          "text": "too"
+        },
+        {
+          "t": 19.26,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 19.6,
+      "end": 21.46,
+      "text": "Just let that bass line hit",
+      "words": [
+        {
+          "t": 19.6,
+          "text": "Just"
+        },
+        {
+          "t": 20.22,
+          "text": "let"
+        },
+        {
+          "t": 20.42,
+          "text": "that"
+        },
+        {
+          "t": 20.72,
+          "text": "bass"
+        },
+        {
+          "t": 21.0,
+          "text": "line"
+        },
+        {
+          "t": 21.2,
+          "text": "hit"
+        }
+      ]
+    },
+    {
+      "start": 21.46,
+      "end": 22.98,
+      "text": "This summer different",
+      "words": [
+        {
+          "t": 21.46,
+          "text": "This"
+        },
+        {
+          "t": 22.08,
+          "text": "summer"
+        },
+        {
+          "t": 22.44,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 23.28,
+      "end": 25.7,
+      "text": "You can tell by the drip",
+      "words": [
+        {
+          "t": 23.28,
+          "text": "You"
+        },
+        {
+          "t": 24.128,
+          "text": "can"
+        },
+        {
+          "t": 24.44,
+          "text": "tell"
+        },
+        {
+          "t": 24.9,
+          "text": "by"
+        },
+        {
+          "t": 25.16,
+          "text": "the"
+        },
+        {
+          "t": 25.44,
+          "text": "drip"
+        }
+      ]
+    },
+    {
+      "start": 25.7,
+      "end": 26.38,
+      "text": "Yeah",
+      "words": [
+        {
+          "t": 25.7,
+          "text": "Yeah"
+        }
+      ]
+    },
+    {
+      "start": 26.38,
+      "end": 26.62,
+      "text": "Yeah",
+      "words": [
+        {
+          "t": 26.38,
+          "text": "Yeah"
+        }
+      ]
+    },
+    {
+      "start": 29.14,
+      "end": 31.44,
+      "text": "Let it ride",
+      "words": [
+        {
+          "t": 29.14,
+          "text": "Let"
+        },
+        {
+          "t": 30.04,
+          "text": "it"
+        },
+        {
+          "t": 30.04,
+          "text": "ride"
+        }
+      ]
+    },
+    {
+      "start": 31.44,
+      "end": 34.32,
+      "text": "Bass line talking",
+      "words": [
+        {
+          "t": 31.44,
+          "text": "Bass"
+        },
+        {
+          "t": 33.14,
+          "text": "line"
+        },
+        {
+          "t": 33.98,
+          "text": "talking"
+        }
+      ]
+    },
+    {
+      "start": 34.32,
+      "end": 36.26,
+      "text": "Just listen",
+      "words": [
+        {
+          "t": 34.32,
+          "text": "Just"
+        },
+        {
+          "t": 34.9,
+          "text": "listen"
+        }
+      ]
+    },
+    {
+      "start": 36.26,
+      "end": 38.0,
+      "text": "Slow steps, low light",
+      "words": [
+        {
+          "t": 36.26,
+          "text": "Slow"
+        },
+        {
+          "t": 36.82,
+          "text": "steps,"
+        },
+        {
+          "t": 37.16,
+          "text": "low"
+        },
+        {
+          "t": 37.68,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 38.0,
+      "end": 40.76,
+      "text": "Keep it simple, just move",
+      "words": [
+        {
+          "t": 38.0,
+          "text": "Keep"
+        },
+        {
+          "t": 38.3,
+          "text": "it"
+        },
+        {
+          "t": 39.6,
+          "text": "simple,"
+        },
+        {
+          "t": 40.22,
+          "text": "just"
+        },
+        {
+          "t": 40.5,
+          "text": "move"
+        }
+      ]
+    },
+    {
+      "start": 42.04,
+      "end": 43.22,
+      "text": "That's enough",
+      "words": [
+        {
+          "t": 42.04,
+          "text": "That's"
+        },
+        {
+          "t": 42.94,
+          "text": "enough"
+        }
+      ]
+    },
+    {
+      "start": 44.81,
+      "end": 46.66,
+      "text": "Let it breathe",
+      "words": [
+        {
+          "t": 44.81,
+          "text": "Let"
+        },
+        {
+          "t": 46.048,
+          "text": "it"
+        },
+        {
+          "t": 46.32,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 46.66,
+      "end": 48.66,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 46.66,
+          "text": "Move"
+        },
+        {
+          "t": 48.22,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 49.984,
+      "end": 52.24,
+      "text": "We got heat in the room",
+      "words": [
+        {
+          "t": 49.984,
+          "text": "We"
+        },
+        {
+          "t": 50.48,
+          "text": "got"
+        },
+        {
+          "t": 50.816,
+          "text": "heat"
+        },
+        {
+          "t": 51.26,
+          "text": "in"
+        },
+        {
+          "t": 51.68,
+          "text": "the"
+        },
+        {
+          "t": 51.84,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 52.24,
+      "end": 53.34,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 52.24,
+          "text": "Move"
+        },
+        {
+          "t": 52.94,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 53.34,
+      "end": 55.92,
+      "text": "Summer came through smooth",
+      "words": [
+        {
+          "t": 53.34,
+          "text": "Summer"
+        },
+        {
+          "t": 54.58,
+          "text": "came"
+        },
+        {
+          "t": 54.98,
+          "text": "through"
+        },
+        {
+          "t": 55.52,
+          "text": "smooth"
+        }
+      ]
+    },
+    {
+      "start": 55.92,
+      "end": 56.6,
+      "text": "Don't talk too much",
+      "words": [
+        {
+          "t": 55.92,
+          "text": "Don't"
+        },
+        {
+          "t": 56.6,
+          "text": "talk"
+        },
+        {
+          "t": 56.6,
+          "text": "too"
+        },
+        {
+          "t": 56.6,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 56.78,
+      "end": 59.28,
+      "text": "Just let that bass line hit",
+      "words": [
+        {
+          "t": 56.78,
+          "text": "Just"
+        },
+        {
+          "t": 57.58,
+          "text": "let"
+        },
+        {
+          "t": 58.24,
+          "text": "that"
+        },
+        {
+          "t": 58.56,
+          "text": "bass"
+        },
+        {
+          "t": 58.8,
+          "text": "line"
+        },
+        {
+          "t": 58.98,
+          "text": "hit"
+        }
+      ]
+    },
+    {
+      "start": 59.28,
+      "end": 60.86,
+      "text": "This summer different",
+      "words": [
+        {
+          "t": 59.28,
+          "text": "This"
+        },
+        {
+          "t": 59.62,
+          "text": "summer"
+        },
+        {
+          "t": 60.3,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 60.86,
+      "end": 63.52,
+      "text": "You can tell by the drip",
+      "words": [
+        {
+          "t": 60.86,
+          "text": "You"
+        },
+        {
+          "t": 61.72,
+          "text": "can"
+        },
+        {
+          "t": 62.24,
+          "text": "tell"
+        },
+        {
+          "t": 62.62,
+          "text": "by"
+        },
+        {
+          "t": 62.98,
+          "text": "the"
+        },
+        {
+          "t": 63.24,
+          "text": "drip"
+        }
+      ]
+    },
+    {
+      "start": 65.984,
+      "end": 67.28,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 65.984,
+          "text": "Move"
+        },
+        {
+          "t": 66.48,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 69.792,
+      "end": 71.24,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 69.792,
+          "text": "Move"
+        },
+        {
+          "t": 70.44,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 73.568,
+      "end": 74.78,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 73.568,
+          "text": "Move"
+        },
+        {
+          "t": 73.98,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 76.9,
+      "end": 78.9,
+      "text": "You feel that?",
+      "words": [
+        {
+          "t": 76.9,
+          "text": "You"
+        },
+        {
+          "t": 77.7,
+          "text": "feel"
+        },
+        {
+          "t": 78.5,
+          "text": "that?"
+        }
+      ]
+    },
+    {
+      "start": 78.94,
+      "end": 80.02,
+      "text": "Oh, we do",
+      "words": [
+        {
+          "t": 78.94,
+          "text": "Oh,"
+        },
+        {
+          "t": 79.46,
+          "text": "we"
+        },
+        {
+          "t": 79.76,
+          "text": "do"
+        }
+      ]
+    },
+    {
+      "start": 80.94,
+      "end": 81.9,
+      "text": "Turn it up",
+      "words": [
+        {
+          "t": 80.94,
+          "text": "Turn"
+        },
+        {
+          "t": 81.54,
+          "text": "it"
+        },
+        {
+          "t": 81.66,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 81.9,
+      "end": 82.86,
+      "text": "Slide it through",
+      "words": [
+        {
+          "t": 81.9,
+          "text": "Slide"
+        },
+        {
+          "t": 82.36,
+          "text": "it"
+        },
+        {
+          "t": 82.64,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 85.792,
+      "end": 86.58,
+      "text": "It's soft stuff",
+      "words": [
+        {
+          "t": 85.792,
+          "text": "It's"
+        },
+        {
+          "t": 85.94,
+          "text": "soft"
+        },
+        {
+          "t": 86.2,
+          "text": "stuff"
+        }
+      ]
+    },
+    {
+      "start": 86.6,
+      "end": 87.136,
+      "text": "Steps",
+      "words": [
+        {
+          "t": 86.6,
+          "text": "Steps"
+        }
+      ]
+    },
+    {
+      "start": 87.744,
+      "end": 88.7,
+      "text": "Deep bass",
+      "words": [
+        {
+          "t": 87.744,
+          "text": "Deep"
+        },
+        {
+          "t": 87.94,
+          "text": "bass"
+        }
+      ]
+    },
+    {
+      "start": 89.8,
+      "end": 91.86,
+      "text": "Yeah, right there",
+      "words": [
+        {
+          "t": 89.8,
+          "text": "Yeah,"
+        },
+        {
+          "t": 90.88,
+          "text": "right"
+        },
+        {
+          "t": 91.48,
+          "text": "there"
+        }
+      ]
+    },
+    {
+      "start": 94.336,
+      "end": 94.96,
+      "text": "Don't rush it",
+      "words": [
+        {
+          "t": 94.336,
+          "text": "Don't"
+        },
+        {
+          "t": 94.46,
+          "text": "rush"
+        },
+        {
+          "t": 94.68,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 95.57,
+      "end": 96.86,
+      "text": "Don't force it",
+      "words": [
+        {
+          "t": 95.57,
+          "text": "Don't"
+        },
+        {
+          "t": 96.32,
+          "text": "force"
+        },
+        {
+          "t": 96.56,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 97.33,
+      "end": 98.78,
+      "text": "Just catch it",
+      "words": [
+        {
+          "t": 97.33,
+          "text": "Just"
+        },
+        {
+          "t": 98.18,
+          "text": "catch"
+        },
+        {
+          "t": 98.44,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 100.12,
+      "end": 101.42,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 100.12,
+          "text": "Move"
+        },
+        {
+          "t": 100.88,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 102.88,
+      "end": 105.06,
+      "text": "We got heat in the room",
+      "words": [
+        {
+          "t": 102.88,
+          "text": "We"
+        },
+        {
+          "t": 103.38,
+          "text": "got"
+        },
+        {
+          "t": 103.7,
+          "text": "heat"
+        },
+        {
+          "t": 104.14,
+          "text": "in"
+        },
+        {
+          "t": 104.52,
+          "text": "the"
+        },
+        {
+          "t": 104.72,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 105.06,
+      "end": 106.18,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 105.06,
+          "text": "Move"
+        },
+        {
+          "t": 105.84,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 106.26,
+      "end": 108.8,
+      "text": "Summer came through smooth",
+      "words": [
+        {
+          "t": 106.26,
+          "text": "Summer"
+        },
+        {
+          "t": 107.46,
+          "text": "came"
+        },
+        {
+          "t": 107.88,
+          "text": "through"
+        },
+        {
+          "t": 108.32,
+          "text": "smooth"
+        }
+      ]
+    },
+    {
+      "start": 108.8,
+      "end": 110.3,
+      "text": "Don't talk too much",
+      "words": [
+        {
+          "t": 108.8,
+          "text": "Don't"
+        },
+        {
+          "t": 109.6,
+          "text": "talk"
+        },
+        {
+          "t": 109.8,
+          "text": "too"
+        },
+        {
+          "t": 109.96,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 110.3,
+      "end": 112.14,
+      "text": "Just let that bass line hit",
+      "words": [
+        {
+          "t": 110.3,
+          "text": "Just"
+        },
+        {
+          "t": 110.68,
+          "text": "let"
+        },
+        {
+          "t": 111.14,
+          "text": "that"
+        },
+        {
+          "t": 111.46,
+          "text": "bass"
+        },
+        {
+          "t": 111.7,
+          "text": "line"
+        },
+        {
+          "t": 111.9,
+          "text": "hit"
+        }
+      ]
+    },
+    {
+      "start": 112.14,
+      "end": 113.56,
+      "text": "This summer different",
+      "words": [
+        {
+          "t": 112.14,
+          "text": "This"
+        },
+        {
+          "t": 112.768,
+          "text": "summer"
+        },
+        {
+          "t": 113.12,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 113.98,
+      "end": 116.44,
+      "text": "You can tell by the drip",
+      "words": [
+        {
+          "t": 113.98,
+          "text": "You"
+        },
+        {
+          "t": 114.88,
+          "text": "can"
+        },
+        {
+          "t": 115.12,
+          "text": "tell"
+        },
+        {
+          "t": 115.5,
+          "text": "by"
+        },
+        {
+          "t": 115.86,
+          "text": "the"
+        },
+        {
+          "t": 116.1,
+          "text": "drip"
+        }
+      ]
+    },
+    {
+      "start": 116.6,
+      "end": 118.56,
+      "text": "Kick, clap, bass",
+      "words": [
+        {
+          "t": 116.6,
+          "text": "Kick,"
+        },
+        {
+          "t": 117.22,
+          "text": "clap,"
+        },
+        {
+          "t": 118.42,
+          "text": "bass"
+        }
+      ]
+    },
+    {
+      "start": 118.94,
+      "end": 119.456,
+      "text": "Breathe,",
+      "words": [
+        {
+          "t": 118.94,
+          "text": "Breathe,"
+        }
+      ]
+    },
+    {
+      "start": 120.54,
+      "end": 121.1,
+      "text": "kick, clap,",
+      "words": [
+        {
+          "t": 120.54,
+          "text": "kick,"
+        },
+        {
+          "t": 121.0,
+          "text": "clap,"
+        }
+      ]
+    },
+    {
+      "start": 122.2,
+      "end": 122.82,
+      "text": "bass",
+      "words": [
+        {
+          "t": 122.2,
+          "text": "bass"
+        }
+      ]
+    },
+    {
+      "start": 123.04,
+      "end": 124.14,
+      "text": "Breathe,",
+      "words": [
+        {
+          "t": 123.04,
+          "text": "Breathe,"
+        }
+      ]
+    },
+    {
+      "start": 124.14,
+      "end": 124.54,
+      "text": "breathe,",
+      "words": [
+        {
+          "t": 124.14,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 124.58,
+      "end": 124.96,
+      "text": "breathe,",
+      "words": [
+        {
+          "t": 124.58,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 125.04,
+      "end": 125.48,
+      "text": "breathe,",
+      "words": [
+        {
+          "t": 125.04,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 125.52,
+      "end": 126.02,
+      "text": "breathe,",
+      "words": [
+        {
+          "t": 125.52,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 126.02,
+      "end": 126.46,
+      "text": "breathe,",
+      "words": [
+        {
+          "t": 126.02,
+          "text": "breathe,"
+        }
+      ]
+    },
+    {
+      "start": 126.46,
+      "end": 126.76,
+      "text": "breathe",
+      "words": [
+        {
+          "t": 126.46,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 126.76,
+      "end": 129.26,
+      "text": "Somebody said the floor had a king",
+      "words": [
+        {
+          "t": 126.76,
+          "text": "Somebody"
+        },
+        {
+          "t": 127.08,
+          "text": "said"
+        },
+        {
+          "t": 127.64,
+          "text": "the"
+        },
+        {
+          "t": 127.86,
+          "text": "floor"
+        },
+        {
+          "t": 128.28,
+          "text": "had"
+        },
+        {
+          "t": 128.74,
+          "text": "a"
+        },
+        {
+          "t": 128.92,
+          "text": "king"
+        }
+      ]
+    },
+    {
+      "start": 130.52,
+      "end": 131.232,
+      "text": "Cute",
+      "words": [
+        {
+          "t": 130.52,
+          "text": "Cute"
+        }
+      ]
+    },
+    {
+      "start": 133.024,
+      "end": 133.7,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 133.024,
+          "text": "Move"
+        },
+        {
+          "t": 133.14,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 133.7,
+      "end": 134.6,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 133.7,
+          "text": "Move"
+        },
+        {
+          "t": 134.0,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 135.4,
+      "end": 137.18,
+      "text": "We got heat in the room",
+      "words": [
+        {
+          "t": 135.4,
+          "text": "We"
+        },
+        {
+          "t": 135.5,
+          "text": "got"
+        },
+        {
+          "t": 135.84,
+          "text": "heat"
+        },
+        {
+          "t": 136.26,
+          "text": "in"
+        },
+        {
+          "t": 136.64,
+          "text": "the"
+        },
+        {
+          "t": 136.84,
+          "text": "room"
+        }
+      ]
+    },
+    {
+      "start": 137.18,
+      "end": 138.3,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 137.18,
+          "text": "Move"
+        },
+        {
+          "t": 137.92,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 138.3,
+      "end": 140.92,
+      "text": "Summer came through smooth",
+      "words": [
+        {
+          "t": 138.3,
+          "text": "Summer"
+        },
+        {
+          "t": 139.456,
+          "text": "came"
+        },
+        {
+          "t": 139.98,
+          "text": "through"
+        },
+        {
+          "t": 140.46,
+          "text": "smooth"
+        }
+      ]
+    },
+    {
+      "start": 140.92,
+      "end": 142.4,
+      "text": "Don't talk too much",
+      "words": [
+        {
+          "t": 140.92,
+          "text": "Don't"
+        },
+        {
+          "t": 141.7,
+          "text": "talk"
+        },
+        {
+          "t": 141.88,
+          "text": "too"
+        },
+        {
+          "t": 142.08,
+          "text": "much"
+        }
+      ]
+    },
+    {
+      "start": 142.4,
+      "end": 144.28,
+      "text": "Just let that bass line hit",
+      "words": [
+        {
+          "t": 142.4,
+          "text": "Just"
+        },
+        {
+          "t": 143.02,
+          "text": "let"
+        },
+        {
+          "t": 143.14,
+          "text": "that"
+        },
+        {
+          "t": 143.52,
+          "text": "bass"
+        },
+        {
+          "t": 143.82,
+          "text": "line"
+        },
+        {
+          "t": 143.98,
+          "text": "hit"
+        }
+      ]
+    },
+    {
+      "start": 144.28,
+      "end": 145.8,
+      "text": "This summer different",
+      "words": [
+        {
+          "t": 144.28,
+          "text": "This"
+        },
+        {
+          "t": 144.768,
+          "text": "summer"
+        },
+        {
+          "t": 145.28,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 145.8,
+      "end": 146.112,
+      "text": "Uh",
+      "words": [
+        {
+          "t": 145.8,
+          "text": "Uh"
+        }
+      ]
+    },
+    {
+      "start": 146.96,
+      "end": 148.52,
+      "text": "You can tell by the drip",
+      "words": [
+        {
+          "t": 146.96,
+          "text": "You"
+        },
+        {
+          "t": 147.06,
+          "text": "can"
+        },
+        {
+          "t": 147.22,
+          "text": "tell"
+        },
+        {
+          "t": 147.64,
+          "text": "by"
+        },
+        {
+          "t": 147.98,
+          "text": "the"
+        },
+        {
+          "t": 148.22,
+          "text": "drip"
+        }
+      ]
+    },
+    {
+      "start": 148.52,
+      "end": 152.34,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 148.52,
+          "text": "Move"
+        },
+        {
+          "t": 150.3,
+          "text": "over"
+        }
+      ]
+    },
+    {
+      "start": 153.46,
+      "end": 155.22,
+      "text": "This summer different",
+      "words": [
+        {
+          "t": 153.46,
+          "text": "This"
+        },
+        {
+          "t": 154.38,
+          "text": "summer"
+        },
+        {
+          "t": 154.72,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 158.06,
+      "end": 159.9,
+      "text": "Move over",
+      "words": [
+        {
+          "t": 158.06,
+          "text": "Move"
+        },
+        {
+          "t": 158.98,
+          "text": "over"
+        }
+      ]
+    }
+  ]
+}

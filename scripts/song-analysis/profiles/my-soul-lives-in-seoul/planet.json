@@ -1,0 +1,110 @@
+[
+  {
+    "id": "my-soul-lives-in-seoul",
+    "planet": {
+      "analysis": {
+        "summary": "This playful yet heartfelt K-Pop anthem chronicles a long-distance relationship navigating time zones, cultural barriers, and logistical hurdles like customs and currency. It blends multilingual vocals from Korean to Spanish and Japanese rap battles into a global love story where digital connection bridges physical distance.",
+        "overallMood": "Upbeat romantic resilience",
+        "themes": [
+          "Long-distance relationship dynamics",
+          "Cultural exchange and fusion",
+          "Digital communication struggles",
+          "Financial reality of modern dating",
+          "Multilingual expression of love"
+        ],
+        "palette": [
+          "#FF6B9D",
+          "#4A5F73",
+          "#E8D20A",
+          "#1C3A4D"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Melancholic connection",
+            "intensity": 0.6,
+            "colorHint": "#4a5f73",
+            "start": 1.18
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Anxious playfulness",
+            "intensity": 0.8,
+            "colorHint": "#e8d20a",
+            "start": 16.37
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Bureaucratic determination",
+            "intensity": 0.7,
+            "colorHint": "#1c3a4d",
+            "start": 47.16
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Triumphant global love",
+            "intensity": 0.95,
+            "colorHint": "#ff6b9d",
+            "start": 63.38
+          },
+          {
+            "name": "Post-Chorus",
+            "emotion": "Tired but loving intimacy",
+            "intensity": 0.75,
+            "colorHint": "#e8d20a",
+            "start": 131.58
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Messy domestic humor",
+            "intensity": 0.65,
+            "colorHint": "#4a5f73",
+            "start": 155.2
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Passionate rhythmic unity",
+            "intensity": 1,
+            "colorHint": "#ff6b9d",
+            "start": 272.72
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Seoul",
+            "emotion": "Nostalgic anchor point",
+            "imageryPrompt": "A glowing neon sign in deep blue night sky with soft pink cherry blossom petals floating around a smartphone screen displaying a map pin."
+          },
+          {
+            "word": "Signal",
+            "emotion": "Tense longing",
+            "imageryPrompt": "Faint green bars wavering on a cracked phone screen against a backdrop of stormy grey clouds and distant city lights fading into darkness."
+          },
+          {
+            "word": "Border",
+            "emotion": "Determined crossing",
+            "imageryPrompt": "A passport stamp glowing gold under a spotlight, with paper documents flying like confetti in the air above a chaotic but joyful airport terminal floor."
+          },
+          {
+            "word": "Chaos",
+            "emotion": "Playful overwhelm",
+            "imageryPrompt": "Piles of laundry and takeout boxes forming colorful mountains under warm kitchen lighting, with socks dancing mid-air in slow motion."
+          },
+          {
+            "word": "Customs",
+            "emotion": "Bittersweet delay",
+            "imageryPrompt": "A large cardboard box marked 'International' sitting on a dusty floor next to a crying but smiling face reflected in the polished metal of luggage scales."
+          },
+          {
+            "word": "Emoji",
+            "emotion": "Digital salvation",
+            "imageryPrompt": "A giant floating heart symbol made of soft pink light connecting two silhouettes across an ocean, replacing a broken fiber optic cable."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]
