@@ -32,6 +32,72 @@ const TRACKS = {
       fill: ["#f6d7b0", "#e8b88a"], y: 0.16, artist: true,
     },
   },
+  // Dance · Defiant — "Bottle glowing by my bed / Pain keeps pounding" turned into neon defiance
+  "drink-drink-don-t-save-me": {
+    coverName: "Drink Drink Dont Save Me.png",
+    style: "cinematic nightlife still life, electric blue and hot magenta neon on deep black, wet glass reflections, club light leaking through venetian blinds, high contrast, vaporous haze, no people",
+    scenes: [
+      "a glass bottle glowing from within like a neon beacon on a nightstand, club lights strobing through blinds behind it, condensation drops",
+      "a toppled cocktail glass mid-spill frozen in strobe light, liquid arc glowing electric blue and magenta against black",
+      "a row of shot glasses on a black bar top under a single hard magenta spotlight, smoke curling, one glass knocked over",
+    ],
+    title: { lines: ["DRINK DRINK", "DON'T SAVE ME"], font: "Bebas Neue", sizes: [220, 110], fill: ["#7ad4ff", "#ff4fa3"], y: 0.10, artist: true },
+  },
+  // Deep House · Seductive — low lights, slow move
+  "push-it-on-me": {
+    coverName: "Push It On Me.png",
+    style: "smoky minimal deep house club interior, deep slate gray with a single electric green laser line, velvet textures, low light haze, frequency ripples, moody and seductive, cinematic, no people",
+    scenes: [
+      "a velvet rope and a single electric green laser beam cutting through dance floor haze, empty dark club, bass speaker in shadow",
+      "close up of a speaker cone vibrating with green light tracing its rim, smoke drifting, black velvet backdrop",
+      "two silhouetted cocktail glasses nearly touching on a reflective black table, green laser line passing between them, haze",
+    ],
+    title: { lines: ["PUSH IT", "ON ME"], font: "Bebas Neue", sizes: [230, 150], fill: ["#d8f5e8", "#46e08c"], y: 0.12, artist: true },
+  },
+  // R&B · Intimate · recovery — restrained, hopeful, per the serious-topics rule
+  "one-more-breath-back-to-myself": {
+    coverName: "One More Breath.png",
+    style: "quiet cinematic still life, first morning light, white gauze curtains breathing in an open window, soft warm neutrals with deep blue shadow, gentle film grain, hopeful stillness, no people",
+    scenes: [
+      "white curtains billowing softly in an open window at sunrise, a glass of clear water on the sill catching golden light",
+      "a neatly made bed in first morning light, one deep breath of wind lifting the curtain, dust motes in a sunbeam",
+      "a fogged bathroom mirror with a clear circle wiped in the center reflecting warm window light, a folded towel, morning calm",
+    ],
+    title: { lines: ["One More Breath", "back to myself"], font: "Cormorant Garamond", sizes: [150, 84], fill: ["#f4ede0", "#c9b896"], y: 0.12, artist: true },
+  },
+  // Techno · Intense — brutalist industrial pulse
+  "membrane-still-insane": {
+    coverName: "Membrane Still Insane.png",
+    style: "brutalist industrial techno environment, raw concrete corridor, pulsing acid orange strobe, cables and steel, volumetric haze, harsh minimal geometry, cinematic, no people",
+    scenes: [
+      "a long raw concrete corridor with one blinding acid-orange strobe at the far end, cables running along the walls, haze",
+      "a wall of industrial speakers stacked floor to ceiling in orange strobe light, concrete dust in the air",
+      "a translucent vibrating membrane stretched across a steel ring, backlit acid orange, concrete wall behind, sound pressure visible as ripples",
+    ],
+    title: { lines: ["MEMBRANE", "STILL INSANE"], font: "Bebas Neue", sizes: [210, 130], fill: ["#f2e9e2", "#ff5a1f"], y: 0.10, artist: true },
+  },
+  // R&B · Playful funk slow-jam — 70s lounge with a snake in it
+  "who-s-that-snake-funky-slow-jam-mix": {
+    coverName: "Whos That Snake.png",
+    style: "1970s funk lounge still life, warm browns oranges and disco gold bokeh, velvet couch, vinyl records, soft snakeskin texture lurking in shadow, groovy retro cinematic, film grain, no people",
+    scenes: [
+      "a green snake coiled around a golden microphone stand in a warm 70s lounge, disco ball bokeh, velvet curtains",
+      "a snakeskin-patterned vinyl record on a turntable, warm amber lounge light, whiskey glass nearby, disco sparkle",
+      "a velvet couch in warm lounge light with a subtle snake silhouette shadow cast across it, gold disco bokeh, vinyl sleeves scattered",
+    ],
+    title: { lines: ["Who's That", "Snake?"], font: "Great Vibes", sizes: [180, 210], fill: ["#ffdf9e", "#e8a020"], y: 0.10, artist: true },
+  },
+  // Pop · Playful — the birthday song
+  "another-year-looks-good-on-you-happy-birthday-song": {
+    coverName: "Another Year Looks Good On You.png",
+    style: "joyful cinematic still life, birthday celebration at golden hour, warm champagne glow with soft pink and gold, confetti mid-air, shallow depth of field, sparkling bokeh, no people",
+    scenes: [
+      "a birthday cake with lit candles on a table at golden hour, confetti frozen mid-air, champagne-gold bokeh, soft pink balloons out of focus",
+      "a single lit sparkler on a small cake, warm golden light, drifting confetti, celebratory sparkle bokeh",
+      "champagne glasses mid-clink with golden light refracting, confetti and streamers suspended, pink and gold glow",
+    ],
+    title: { lines: ["Another Year", "Looks Good On You"], font: "Great Vibes", sizes: [190, 120], fill: ["#ffe9b8", "#f0b46a"], y: 0.10, artist: true },
+  },
 };
 
 function graph(prompt, seed) {

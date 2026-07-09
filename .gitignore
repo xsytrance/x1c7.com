@@ -37,7 +37,10 @@ next-env.d.ts
 /scripts/import-youtube/wd/
 /scripts/import-youtube/jobs/
 /scripts/onboard-jobs/
-/assets/
+/assets/*
+!/assets/suno
+/assets/suno/*
+!/assets/suno/art
 scripts/lexicon/cron.log
 scripts/song-art/topup/
 scripts/song-art/*-topup-*/

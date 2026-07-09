@@ -67,6 +67,8 @@ const AUDIO = {
   "23-respuestas": "music/23%20Respuestas.mp3",
   "red-flags-from-the-beginning": "music/Red%20Flags%20From%20The%20Beginning.mp3",
   "under-the-elevated": "music/Under%20the%20Elevated.mp3",
+  "who-s-that-snake-funky-slow-jam-mix": "music/Who's%20That%20Snake%20(Funky%20Slow-Jam%20Mix).mp3",
+  "another-year-looks-good-on-you-happy-birthday-song": "music/Another%20Year%20Looks%20Good%20on%20You%20%5BHappy%20Birthday%20Song%5D.mp3",
 };
 
 // Slugs whose stems.json exists in R2 (queried from tracks.planet.assets.stems).
