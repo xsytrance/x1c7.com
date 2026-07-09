@@ -1,0 +1,45 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 21,
+   "reactor": "handwriting",
+   "why": ""
+  },
+  {
+   "start": 58,
+   "end": 73,
+   "reactor": "fireworks",
+   "why": ""
+  },
+  {
+   "start": 104,
+   "end": 126,
+   "stemSpot": {
+    "solo": [
+     "strings"
+    ],
+    "label": "THE STRINGS SPEAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 193,
+   "end": 218,
+   "reactor": "orbit",
+   "why": ""
+  }
+ ],
+ "words": {
+  "closer": "glitch",
+  "heartbeat": "pulse",
+  "silence": "freeze",
+  "vibration": "shimmer",
+  "devour": "slam",
+  "body": "bloom",
+  "maybe": "redact",
+  "tighter": "melt",
+  "touch me": "bleed"
+ }
+}

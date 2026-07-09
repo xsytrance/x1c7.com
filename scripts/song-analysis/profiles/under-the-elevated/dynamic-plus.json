@@ -1,0 +1,41 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 20,
+   "end": 45,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "bass"
+    ],
+    "label": "NEON & RUMBLE ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 135,
+   "end": 146,
+   "reactor": "orbit",
+   "why": "Pre-chorus build-up: The lyrical line about 'losing with a different kind of gun' and the "
+  },
+  {
+   "start": 153,
+   "end": 178,
+   "stemSpot": {
+    "solo": [
+     "lead"
+    ],
+    "label": "THE VOCAL HEART"
+   },
+   "why": ""
+  },
+  {
+   "start": 208,
+   "end": 218,
+   "reactor": "downpour",
+   "why": "Verse 2 transition: As the narrator shifts from 'bills paid' facade to internal awakening "
+  }
+ ],
+ "words": {}
+}

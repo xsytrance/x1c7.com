@@ -1,0 +1,4855 @@
+{
+  "language": "spanish",
+  "segments": [
+    {
+      "start": 2.78,
+      "end": 4.58,
+      "text": "Este verano se siente diferente,",
+      "words": [
+        {
+          "t": 2.78,
+          "text": "Este"
+        },
+        {
+          "t": 2.88,
+          "text": "verano"
+        },
+        {
+          "t": 3.52,
+          "text": "se"
+        },
+        {
+          "t": 3.68,
+          "text": "siente"
+        },
+        {
+          "t": 4.1,
+          "text": "diferente,"
+        }
+      ]
+    },
+    {
+      "start": 4.97,
+      "end": 7.31,
+      "text": "pero esto no es vacaciones,",
+      "words": [
+        {
+          "t": 4.97,
+          "text": "pero"
+        },
+        {
+          "t": 6.112,
+          "text": "esto"
+        },
+        {
+          "t": 6.38,
+          "text": "no"
+        },
+        {
+          "t": 6.5,
+          "text": "es"
+        },
+        {
+          "t": 6.64,
+          "text": "vacaciones,"
+        }
+      ]
+    },
+    {
+      "start": 7.54,
+      "end": 9.58,
+      "text": "esto es presión,",
+      "words": [
+        {
+          "t": 7.54,
+          "text": "esto"
+        },
+        {
+          "t": 7.8,
+          "text": "es"
+        },
+        {
+          "t": 8.86,
+          "text": "presión,"
+        }
+      ]
+    },
+    {
+      "start": 9.91,
+      "end": 11.84,
+      "text": "esto es fuego,",
+      "words": [
+        {
+          "t": 9.91,
+          "text": "esto"
+        },
+        {
+          "t": 11.24,
+          "text": "es"
+        },
+        {
+          "t": 11.34,
+          "text": "fuego,"
+        }
+      ]
+    },
+    {
+      "start": 12.63,
+      "end": 15.6,
+      "text": "esto es cuando el vacío aprende mi nombre",
+      "words": [
+        {
+          "t": 12.63,
+          "text": "esto"
+        },
+        {
+          "t": 13.58,
+          "text": "es"
+        },
+        {
+          "t": 13.7,
+          "text": "cuando"
+        },
+        {
+          "t": 13.92,
+          "text": "el"
+        },
+        {
+          "t": 14.12,
+          "text": "vacío"
+        },
+        {
+          "t": 14.58,
+          "text": "aprende"
+        },
+        {
+          "t": 15.12,
+          "text": "mi"
+        },
+        {
+          "t": 15.22,
+          "text": "nombre"
+        }
+      ]
+    },
+    {
+      "start": 15.8,
+      "end": 16.9,
+      "text": "Construye,",
+      "words": [
+        {
+          "t": 15.8,
+          "text": "Construye,"
+        }
+      ]
+    },
+    {
+      "start": 16.96,
+      "end": 18.04,
+      "text": "sube,",
+      "words": [
+        {
+          "t": 16.96,
+          "text": "sube,"
+        }
+      ]
+    },
+    {
+      "start": 18.06,
+      "end": 19.04,
+      "text": "pressure make go,",
+      "words": [
+        {
+          "t": 18.06,
+          "text": "pressure"
+        },
+        {
+          "t": 18.5,
+          "text": "make"
+        },
+        {
+          "t": 18.74,
+          "text": "go,"
+        }
+      ]
+    },
+    {
+      "start": 19.44,
+      "end": 21.2,
+      "text": "la presión hace oro",
+      "words": [
+        {
+          "t": 19.44,
+          "text": "la"
+        },
+        {
+          "t": 19.84,
+          "text": "presión"
+        },
+        {
+          "t": 20.5,
+          "text": "hace"
+        },
+        {
+          "t": 20.72,
+          "text": "oro"
+        }
+      ]
+    },
+    {
+      "start": 23.78,
+      "end": 25.0,
+      "text": "Estamos afuera now,",
+      "words": [
+        {
+          "t": 23.78,
+          "text": "Estamos"
+        },
+        {
+          "t": 24.26,
+          "text": "afuera"
+        },
+        {
+          "t": 24.74,
+          "text": "now,"
+        }
+      ]
+    },
+    {
+      "start": 26.016,
+      "end": 27.56,
+      "text": "feet on the ground,",
+      "words": [
+        {
+          "t": 26.016,
+          "text": "feet"
+        },
+        {
+          "t": 26.26,
+          "text": "on"
+        },
+        {
+          "t": 27.02,
+          "text": "the"
+        },
+        {
+          "t": 27.26,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 28.42,
+      "end": 29.568,
+      "text": "let the bass roll up,",
+      "words": [
+        {
+          "t": 28.42,
+          "text": "let"
+        },
+        {
+          "t": 28.576,
+          "text": "the"
+        },
+        {
+          "t": 28.68,
+          "text": "bass"
+        },
+        {
+          "t": 28.98,
+          "text": "roll"
+        },
+        {
+          "t": 29.24,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 30.2,
+      "end": 31.58,
+      "text": "del vacío hasta el oro",
+      "words": [
+        {
+          "t": 30.2,
+          "text": "del"
+        },
+        {
+          "t": 30.3,
+          "text": "vacío"
+        },
+        {
+          "t": 30.94,
+          "text": "hasta"
+        },
+        {
+          "t": 31.18,
+          "text": "el"
+        },
+        {
+          "t": 31.26,
+          "text": "oro"
+        }
+      ]
+    },
+    {
+      "start": 31.58,
+      "end": 34.38,
+      "text": "I had too much weight sitting heavy on my shoulders,",
+      "words": [
+        {
+          "t": 31.58,
+          "text": "I"
+        },
+        {
+          "t": 32.08,
+          "text": "had"
+        },
+        {
+          "t": 32.34,
+          "text": "too"
+        },
+        {
+          "t": 32.52,
+          "text": "much"
+        },
+        {
+          "t": 32.76,
+          "text": "weight"
+        },
+        {
+          "t": 33.04,
+          "text": "sitting"
+        },
+        {
+          "t": 33.24,
+          "text": "heavy"
+        },
+        {
+          "t": 33.62,
+          "text": "on"
+        },
+        {
+          "t": 33.86,
+          "text": "my"
+        },
+        {
+          "t": 33.98,
+          "text": "shoulders,"
+        }
+      ]
+    },
+    {
+      "start": 34.52,
+      "end": 35.8,
+      "text": "demasiada noche fría,",
+      "words": [
+        {
+          "t": 34.52,
+          "text": "demasiada"
+        },
+        {
+          "t": 35.14,
+          "text": "noche"
+        },
+        {
+          "t": 35.38,
+          "text": "fría,"
+        }
+      ]
+    },
+    {
+      "start": 35.8,
+      "end": 37.02,
+      "text": "too many dreams getting older,",
+      "words": [
+        {
+          "t": 35.8,
+          "text": "too"
+        },
+        {
+          "t": 35.92,
+          "text": "many"
+        },
+        {
+          "t": 36.16,
+          "text": "dreams"
+        },
+        {
+          "t": 36.44,
+          "text": "getting"
+        },
+        {
+          "t": 36.68,
+          "text": "older,"
+        }
+      ]
+    },
+    {
+      "start": 37.04,
+      "end": 37.62,
+      "text": "same wall,",
+      "words": [
+        {
+          "t": 37.04,
+          "text": "same"
+        },
+        {
+          "t": 37.24,
+          "text": "wall,"
+        }
+      ]
+    },
+    {
+      "start": 37.7,
+      "end": 38.24,
+      "text": "same clock,",
+      "words": [
+        {
+          "t": 37.7,
+          "text": "same"
+        },
+        {
+          "t": 37.92,
+          "text": "clock,"
+        }
+      ]
+    },
+    {
+      "start": 38.34,
+      "end": 39.32,
+      "text": "same fight with time,",
+      "words": [
+        {
+          "t": 38.34,
+          "text": "same"
+        },
+        {
+          "t": 38.52,
+          "text": "fight"
+        },
+        {
+          "t": 38.86,
+          "text": "with"
+        },
+        {
+          "t": 39.06,
+          "text": "time,"
+        }
+      ]
+    },
+    {
+      "start": 39.46,
+      "end": 41.0,
+      "text": "same voice in the dark saying",
+      "words": [
+        {
+          "t": 39.46,
+          "text": "same"
+        },
+        {
+          "t": 39.76,
+          "text": "voice"
+        },
+        {
+          "t": 40.12,
+          "text": "in"
+        },
+        {
+          "t": 40.34,
+          "text": "the"
+        },
+        {
+          "t": 40.44,
+          "text": "dark"
+        },
+        {
+          "t": 40.74,
+          "text": "saying"
+        }
+      ]
+    },
+    {
+      "start": 41.0,
+      "end": 41.88,
+      "text": "You ain't gon' shine,",
+      "words": [
+        {
+          "t": 41.0,
+          "text": "You"
+        },
+        {
+          "t": 41.2,
+          "text": "ain't"
+        },
+        {
+          "t": 41.46,
+          "text": "gon'"
+        },
+        {
+          "t": 41.64,
+          "text": "shine,"
+        }
+      ]
+    },
+    {
+      "start": 41.96,
+      "end": 44.12,
+      "text": "por el tambor sonar like a war call,",
+      "words": [
+        {
+          "t": 41.96,
+          "text": "por"
+        },
+        {
+          "t": 42.14,
+          "text": "el"
+        },
+        {
+          "t": 42.2,
+          "text": "tambor"
+        },
+        {
+          "t": 42.56,
+          "text": "sonar"
+        },
+        {
+          "t": 43.2,
+          "text": "like"
+        },
+        {
+          "t": 43.38,
+          "text": "a"
+        },
+        {
+          "t": 43.58,
+          "text": "war"
+        },
+        {
+          "t": 43.78,
+          "text": "call,"
+        }
+      ]
+    },
+    {
+      "start": 44.26,
+      "end": 46.88,
+      "text": "brass hair hard made the whole block tall,",
+      "words": [
+        {
+          "t": 44.26,
+          "text": "brass"
+        },
+        {
+          "t": 45.0,
+          "text": "hair"
+        },
+        {
+          "t": 45.36,
+          "text": "hard"
+        },
+        {
+          "t": 45.68,
+          "text": "made"
+        },
+        {
+          "t": 45.86,
+          "text": "the"
+        },
+        {
+          "t": 46.02,
+          "text": "whole"
+        },
+        {
+          "t": 46.26,
+          "text": "block"
+        },
+        {
+          "t": 46.58,
+          "text": "tall,"
+        }
+      ]
+    },
+    {
+      "start": 47.02,
+      "end": 49.18,
+      "text": "one deep breath then I stood up tall",
+      "words": [
+        {
+          "t": 47.02,
+          "text": "one"
+        },
+        {
+          "t": 47.48,
+          "text": "deep"
+        },
+        {
+          "t": 47.8,
+          "text": "breath"
+        },
+        {
+          "t": 48.18,
+          "text": "then"
+        },
+        {
+          "t": 48.36,
+          "text": "I"
+        },
+        {
+          "t": 48.5,
+          "text": "stood"
+        },
+        {
+          "t": 48.72,
+          "text": "up"
+        },
+        {
+          "t": 48.92,
+          "text": "tall"
+        }
+      ]
+    },
+    {
+      "start": 49.18,
+      "end": 50.44,
+      "text": "Had to stop waiting,",
+      "words": [
+        {
+          "t": 49.18,
+          "text": "Had"
+        },
+        {
+          "t": 49.56,
+          "text": "to"
+        },
+        {
+          "t": 49.74,
+          "text": "stop"
+        },
+        {
+          "t": 49.98,
+          "text": "waiting,"
+        }
+      ]
+    },
+    {
+      "start": 50.6,
+      "end": 51.18,
+      "text": "had to take a break,",
+      "words": [
+        {
+          "t": 50.6,
+          "text": "had"
+        },
+        {
+          "t": 50.86,
+          "text": "to"
+        },
+        {
+          "t": 51.02,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break,"
+        }
+      ]
+    },
+    {
+      "start": 51.18,
+      "end": 51.18,
+      "text": "had to take a break,",
+      "words": [
+        {
+          "t": 51.18,
+          "text": "had"
+        },
+        {
+          "t": 51.18,
+          "text": "to"
+        },
+        {
+          "t": 51.18,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break,"
+        }
+      ]
+    },
+    {
+      "start": 51.18,
+      "end": 51.18,
+      "text": "had to take a break,",
+      "words": [
+        {
+          "t": 51.18,
+          "text": "had"
+        },
+        {
+          "t": 51.18,
+          "text": "to"
+        },
+        {
+          "t": 51.18,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break,"
+        }
+      ]
+    },
+    {
+      "start": 51.18,
+      "end": 51.18,
+      "text": "had to take a break,",
+      "words": [
+        {
+          "t": 51.18,
+          "text": "had"
+        },
+        {
+          "t": 51.18,
+          "text": "to"
+        },
+        {
+          "t": 51.18,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break,"
+        }
+      ]
+    },
+    {
+      "start": 51.18,
+      "end": 51.18,
+      "text": "had to take a break,",
+      "words": [
+        {
+          "t": 51.18,
+          "text": "had"
+        },
+        {
+          "t": 51.18,
+          "text": "to"
+        },
+        {
+          "t": 51.18,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break,"
+        }
+      ]
+    },
+    {
+      "start": 51.18,
+      "end": 51.18,
+      "text": "had to take a break",
+      "words": [
+        {
+          "t": 51.18,
+          "text": "had"
+        },
+        {
+          "t": 51.18,
+          "text": "to"
+        },
+        {
+          "t": 51.18,
+          "text": "take"
+        },
+        {
+          "t": 51.18,
+          "text": "a"
+        },
+        {
+          "t": 51.18,
+          "text": "break"
+        }
+      ]
+    },
+    {
+      "start": 51.2,
+      "end": 51.92,
+      "text": "Take it all,",
+      "words": [
+        {
+          "t": 51.2,
+          "text": "Take"
+        },
+        {
+          "t": 51.2,
+          "text": "it"
+        },
+        {
+          "t": 51.48,
+          "text": "all,"
+        }
+      ]
+    },
+    {
+      "start": 51.92,
+      "end": 54.34,
+      "text": "laptop closed but the soul still loaded,",
+      "words": [
+        {
+          "t": 51.92,
+          "text": "laptop"
+        },
+        {
+          "t": 52.46,
+          "text": "closed"
+        },
+        {
+          "t": 53.06,
+          "text": "but"
+        },
+        {
+          "t": 53.28,
+          "text": "the"
+        },
+        {
+          "t": 53.44,
+          "text": "soul"
+        },
+        {
+          "t": 53.68,
+          "text": "still"
+        },
+        {
+          "t": 53.9,
+          "text": "loaded,"
+        }
+      ]
+    },
+    {
+      "start": 54.42,
+      "end": 56.84,
+      "text": "hands still dirty but the heart still golden,",
+      "words": [
+        {
+          "t": 54.42,
+          "text": "hands"
+        },
+        {
+          "t": 54.82,
+          "text": "still"
+        },
+        {
+          "t": 55.16,
+          "text": "dirty"
+        },
+        {
+          "t": 55.56,
+          "text": "but"
+        },
+        {
+          "t": 55.76,
+          "text": "the"
+        },
+        {
+          "t": 55.9,
+          "text": "heart"
+        },
+        {
+          "t": 56.16,
+          "text": "still"
+        },
+        {
+          "t": 56.42,
+          "text": "golden,"
+        }
+      ]
+    },
+    {
+      "start": 56.9,
+      "end": 59.22,
+      "text": "I was down in the void where the lights don't show,",
+      "words": [
+        {
+          "t": 56.9,
+          "text": "I"
+        },
+        {
+          "t": 57.04,
+          "text": "was"
+        },
+        {
+          "t": 57.16,
+          "text": "down"
+        },
+        {
+          "t": 57.46,
+          "text": "in"
+        },
+        {
+          "t": 57.66,
+          "text": "the"
+        },
+        {
+          "t": 57.76,
+          "text": "void"
+        },
+        {
+          "t": 58.08,
+          "text": "where"
+        },
+        {
+          "t": 58.26,
+          "text": "the"
+        },
+        {
+          "t": 58.4,
+          "text": "lights"
+        },
+        {
+          "t": 58.66,
+          "text": "don't"
+        },
+        {
+          "t": 59.0,
+          "text": "show,"
+        }
+      ]
+    },
+    {
+      "start": 59.34,
+      "end": 61.68,
+      "text": "now I beat on the dark till the whole thing glow",
+      "words": [
+        {
+          "t": 59.34,
+          "text": "now"
+        },
+        {
+          "t": 59.46,
+          "text": "I"
+        },
+        {
+          "t": 59.66,
+          "text": "beat"
+        },
+        {
+          "t": 59.9,
+          "text": "on"
+        },
+        {
+          "t": 60.14,
+          "text": "the"
+        },
+        {
+          "t": 60.24,
+          "text": "dark"
+        },
+        {
+          "t": 60.56,
+          "text": "till"
+        },
+        {
+          "t": 60.72,
+          "text": "the"
+        },
+        {
+          "t": 60.9,
+          "text": "whole"
+        },
+        {
+          "t": 61.12,
+          "text": "thing"
+        },
+        {
+          "t": 61.42,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 61.68,
+      "end": 65.74,
+      "text": "Yo no estaba roto, me estaban formando, yo",
+      "words": [
+        {
+          "t": 61.68,
+          "text": "Yo"
+        },
+        {
+          "t": 62.14,
+          "text": "no"
+        },
+        {
+          "t": 62.38,
+          "text": "estaba"
+        },
+        {
+          "t": 62.62,
+          "text": "roto,"
+        },
+        {
+          "t": 63.42,
+          "text": "me"
+        },
+        {
+          "t": 63.86,
+          "text": "estaban"
+        },
+        {
+          "t": 64.18,
+          "text": "formando,"
+        },
+        {
+          "t": 65.3,
+          "text": "yo"
+        }
+      ]
+    },
+    {
+      "start": 67.22,
+      "end": 70.16,
+      "text": "no estaba muerto, me estaban quemando,",
+      "words": [
+        {
+          "t": 67.22,
+          "text": "no"
+        },
+        {
+          "t": 67.32,
+          "text": "estaba"
+        },
+        {
+          "t": 67.58,
+          "text": "muerto,"
+        },
+        {
+          "t": 68.44,
+          "text": "me"
+        },
+        {
+          "t": 68.84,
+          "text": "estaban"
+        },
+        {
+          "t": 69.16,
+          "text": "quemando,"
+        }
+      ]
+    },
+    {
+      "start": 71.456,
+      "end": 72.22,
+      "text": "suelta el miedo,",
+      "words": [
+        {
+          "t": 71.456,
+          "text": "suelta"
+        },
+        {
+          "t": 71.82,
+          "text": "el"
+        },
+        {
+          "t": 71.92,
+          "text": "miedo,"
+        }
+      ]
+    },
+    {
+      "start": 72.544,
+      "end": 74.24,
+      "text": "llena el pecho con fire,",
+      "words": [
+        {
+          "t": 72.544,
+          "text": "llena"
+        },
+        {
+          "t": 72.94,
+          "text": "el"
+        },
+        {
+          "t": 73.06,
+          "text": "pecho"
+        },
+        {
+          "t": 73.48,
+          "text": "con"
+        },
+        {
+          "t": 73.74,
+          "text": "fire,"
+        }
+      ]
+    },
+    {
+      "start": 74.44,
+      "end": 75.34,
+      "text": "step to the noise,",
+      "words": [
+        {
+          "t": 74.44,
+          "text": "step"
+        },
+        {
+          "t": 74.56,
+          "text": "to"
+        },
+        {
+          "t": 74.912,
+          "text": "the"
+        },
+        {
+          "t": 75.1,
+          "text": "noise,"
+        }
+      ]
+    },
+    {
+      "start": 75.38,
+      "end": 76.6,
+      "text": "climb a little higher,",
+      "words": [
+        {
+          "t": 75.38,
+          "text": "climb"
+        },
+        {
+          "t": 75.74,
+          "text": "a"
+        },
+        {
+          "t": 76.0,
+          "text": "little"
+        },
+        {
+          "t": 76.18,
+          "text": "higher,"
+        }
+      ]
+    },
+    {
+      "start": 76.8,
+      "end": 77.8,
+      "text": "no shame in the scars,",
+      "words": [
+        {
+          "t": 76.8,
+          "text": "no"
+        },
+        {
+          "t": 76.9,
+          "text": "shame"
+        },
+        {
+          "t": 77.2,
+          "text": "in"
+        },
+        {
+          "t": 77.42,
+          "text": "the"
+        },
+        {
+          "t": 77.52,
+          "text": "scars,"
+        }
+      ]
+    },
+    {
+      "start": 77.92,
+      "end": 79.04,
+      "text": "no fear in the climb",
+      "words": [
+        {
+          "t": 77.92,
+          "text": "no"
+        },
+        {
+          "t": 78.04,
+          "text": "fear"
+        },
+        {
+          "t": 78.42,
+          "text": "in"
+        },
+        {
+          "t": 78.66,
+          "text": "the"
+        },
+        {
+          "t": 78.76,
+          "text": "climb"
+        }
+      ]
+    },
+    {
+      "start": 79.04,
+      "end": 80.38,
+      "text": "El mundo grita duro,",
+      "words": [
+        {
+          "t": 79.04,
+          "text": "El"
+        },
+        {
+          "t": 79.34,
+          "text": "mundo"
+        },
+        {
+          "t": 79.6,
+          "text": "grita"
+        },
+        {
+          "t": 79.98,
+          "text": "duro,"
+        }
+      ]
+    },
+    {
+      "start": 80.4,
+      "end": 81.18,
+      "text": "I'ma turn it into fire,",
+      "words": [
+        {
+          "t": 80.4,
+          "text": "I'ma"
+        },
+        {
+          "t": 80.62,
+          "text": "turn"
+        },
+        {
+          "t": 80.9,
+          "text": "it"
+        },
+        {
+          "t": 81.06,
+          "text": "into"
+        },
+        {
+          "t": 81.18,
+          "text": "fire,"
+        }
+      ]
+    },
+    {
+      "start": 81.18,
+      "end": 81.18,
+      "text": "I'ma turn it into fire,",
+      "words": [
+        {
+          "t": 81.18,
+          "text": "I'ma"
+        },
+        {
+          "t": 81.18,
+          "text": "turn"
+        },
+        {
+          "t": 81.18,
+          "text": "it"
+        },
+        {
+          "t": 81.18,
+          "text": "into"
+        },
+        {
+          "t": 81.18,
+          "text": "fire,"
+        }
+      ]
+    },
+    {
+      "start": 81.18,
+      "end": 81.18,
+      "text": "I'ma turn it into fire,",
+      "words": [
+        {
+          "t": 81.18,
+          "text": "I'ma"
+        },
+        {
+          "t": 81.18,
+          "text": "turn"
+        },
+        {
+          "t": 81.18,
+          "text": "it"
+        },
+        {
+          "t": 81.18,
+          "text": "into"
+        },
+        {
+          "t": 81.18,
+          "text": "fire,"
+        }
+      ]
+    },
+    {
+      "start": 81.18,
+      "end": 81.18,
+      "text": "I'ma turn it into fire",
+      "words": [
+        {
+          "t": 81.18,
+          "text": "I'ma"
+        },
+        {
+          "t": 81.18,
+          "text": "turn"
+        },
+        {
+          "t": 81.18,
+          "text": "it"
+        },
+        {
+          "t": 81.18,
+          "text": "into"
+        },
+        {
+          "t": 81.18,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 81.76,
+      "end": 82.28,
+      "text": "Venimos,",
+      "words": [
+        {
+          "t": 81.76,
+          "text": "Venimos,"
+        }
+      ]
+    },
+    {
+      "start": 82.28,
+      "end": 82.28,
+      "text": "bênimos,",
+      "words": [
+        {
+          "t": 82.28,
+          "text": "bênimos,"
+        }
+      ]
+    },
+    {
+      "start": 82.44,
+      "end": 83.04,
+      "text": "Ben5,",
+      "words": [
+        {
+          "t": 82.44,
+          "text": "Ben5,"
+        }
+      ]
+    },
+    {
+      "start": 83.42,
+      "end": 84.77,
+      "text": "now we turn it into gold,",
+      "words": [
+        {
+          "t": 83.42,
+          "text": "now"
+        },
+        {
+          "t": 83.58,
+          "text": "we"
+        },
+        {
+          "t": 83.74,
+          "text": "turn"
+        },
+        {
+          "t": 83.92,
+          "text": "it"
+        },
+        {
+          "t": 84.1,
+          "text": "into"
+        },
+        {
+          "t": 84.32,
+          "text": "gold,"
+        }
+      ]
+    },
+    {
+      "start": 84.8,
+      "end": 86.08,
+      "text": "oro en el pecho,",
+      "words": [
+        {
+          "t": 84.8,
+          "text": "oro"
+        },
+        {
+          "t": 85.18,
+          "text": "en"
+        },
+        {
+          "t": 85.34,
+          "text": "el"
+        },
+        {
+          "t": 85.52,
+          "text": "pecho,"
+        }
+      ]
+    },
+    {
+      "start": 86.16,
+      "end": 87.22,
+      "text": "gold in the soul,",
+      "words": [
+        {
+          "t": 86.16,
+          "text": "gold"
+        },
+        {
+          "t": 86.4,
+          "text": "in"
+        },
+        {
+          "t": 86.74,
+          "text": "the"
+        },
+        {
+          "t": 86.82,
+          "text": "soul,"
+        }
+      ]
+    },
+    {
+      "start": 87.4,
+      "end": 88.46,
+      "text": "milk from the pressure,",
+      "words": [
+        {
+          "t": 87.4,
+          "text": "milk"
+        },
+        {
+          "t": 87.54,
+          "text": "from"
+        },
+        {
+          "t": 87.76,
+          "text": "the"
+        },
+        {
+          "t": 88.02,
+          "text": "pressure,"
+        }
+      ]
+    },
+    {
+      "start": 88.68,
+      "end": 89.66,
+      "text": "raised by the cold,",
+      "words": [
+        {
+          "t": 88.68,
+          "text": "raised"
+        },
+        {
+          "t": 88.94,
+          "text": "by"
+        },
+        {
+          "t": 89.16,
+          "text": "the"
+        },
+        {
+          "t": 89.36,
+          "text": "cold,"
+        }
+      ]
+    },
+    {
+      "start": 89.86,
+      "end": 90.78,
+      "text": "venimos del boy,",
+      "words": [
+        {
+          "t": 89.86,
+          "text": "venimos"
+        },
+        {
+          "t": 90.26,
+          "text": "del"
+        },
+        {
+          "t": 90.54,
+          "text": "boy,"
+        }
+      ]
+    },
+    {
+      "start": 90.9,
+      "end": 92.14,
+      "text": "now we turn it into gold",
+      "words": [
+        {
+          "t": 90.9,
+          "text": "now"
+        },
+        {
+          "t": 91.02,
+          "text": "we"
+        },
+        {
+          "t": 91.18,
+          "text": "turn"
+        },
+        {
+          "t": 91.38,
+          "text": "it"
+        },
+        {
+          "t": 91.52,
+          "text": "into"
+        },
+        {
+          "t": 91.76,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 92.74,
+      "end": 93.78,
+      "text": "Ovejame un pesco,",
+      "words": [
+        {
+          "t": 92.74,
+          "text": "Ovejame"
+        },
+        {
+          "t": 93.26,
+          "text": "un"
+        },
+        {
+          "t": 93.4,
+          "text": "pesco,"
+        }
+      ]
+    },
+    {
+      "start": 94.17,
+      "end": 96.56,
+      "text": "que lo sepa todo el mundo,",
+      "words": [
+        {
+          "t": 94.17,
+          "text": "que"
+        },
+        {
+          "t": 95.02,
+          "text": "lo"
+        },
+        {
+          "t": 95.46,
+          "text": "sepa"
+        },
+        {
+          "t": 95.74,
+          "text": "todo"
+        },
+        {
+          "t": 96.0,
+          "text": "el"
+        },
+        {
+          "t": 96.22,
+          "text": "mundo,"
+        }
+      ]
+    },
+    {
+      "start": 96.7,
+      "end": 99.06,
+      "text": "déjalo arder,",
+      "words": [
+        {
+          "t": 96.7,
+          "text": "déjalo"
+        },
+        {
+          "t": 98.5,
+          "text": "arder,"
+        }
+      ]
+    },
+    {
+      "start": 99.18,
+      "end": 101.38,
+      "text": "déjalo ver,",
+      "words": [
+        {
+          "t": 99.18,
+          "text": "déjalo"
+        },
+        {
+          "t": 100.98,
+          "text": "ver,"
+        }
+      ]
+    },
+    {
+      "start": 101.64,
+      "end": 103.74,
+      "text": "mírame crecer,",
+      "words": [
+        {
+          "t": 101.64,
+          "text": "mírame"
+        },
+        {
+          "t": 103.06,
+          "text": "crecer,"
+        }
+      ]
+    },
+    {
+      "start": 104.256,
+      "end": 106.368,
+      "text": "venimos del boy, now we turn it into gold",
+      "words": [
+        {
+          "t": 104.256,
+          "text": "venimos"
+        },
+        {
+          "t": 104.48,
+          "text": "del"
+        },
+        {
+          "t": 104.78,
+          "text": "boy,"
+        },
+        {
+          "t": 105.14,
+          "text": "now"
+        },
+        {
+          "t": 105.24,
+          "text": "we"
+        },
+        {
+          "t": 105.4,
+          "text": "turn"
+        },
+        {
+          "t": 105.64,
+          "text": "it"
+        },
+        {
+          "t": 105.74,
+          "text": "into"
+        },
+        {
+          "t": 105.9,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 107.68,
+      "end": 108.6,
+      "text": "Ovejame un pesco",
+      "words": [
+        {
+          "t": 107.68,
+          "text": "Ovejame"
+        },
+        {
+          "t": 108.0,
+          "text": "un"
+        },
+        {
+          "t": 108.18,
+          "text": "pesco"
+        }
+      ]
+    },
+    {
+      "start": 108.6,
+      "end": 111.04,
+      "text": "Que lo sepa todo el mundo",
+      "words": [
+        {
+          "t": 108.6,
+          "text": "Que"
+        },
+        {
+          "t": 109.3,
+          "text": "lo"
+        },
+        {
+          "t": 109.96,
+          "text": "sepa"
+        },
+        {
+          "t": 110.26,
+          "text": "todo"
+        },
+        {
+          "t": 110.52,
+          "text": "el"
+        },
+        {
+          "t": 110.7,
+          "text": "mundo"
+        }
+      ]
+    },
+    {
+      "start": 112.44,
+      "end": 115.76,
+      "text": "Deja el orden, déjalo ver,",
+      "words": [
+        {
+          "t": 112.44,
+          "text": "Deja"
+        },
+        {
+          "t": 112.54,
+          "text": "el"
+        },
+        {
+          "t": 112.66,
+          "text": "orden,"
+        },
+        {
+          "t": 113.32,
+          "text": "déjalo"
+        },
+        {
+          "t": 115.2,
+          "text": "ver,"
+        }
+      ]
+    },
+    {
+      "start": 117.088,
+      "end": 118.3,
+      "text": "mírame crecer,",
+      "words": [
+        {
+          "t": 117.088,
+          "text": "mírame"
+        },
+        {
+          "t": 117.44,
+          "text": "crecer,"
+        }
+      ]
+    },
+    {
+      "start": 118.976,
+      "end": 121.12,
+      "text": "venimos después, now we turn it into gold",
+      "words": [
+        {
+          "t": 118.976,
+          "text": "venimos"
+        },
+        {
+          "t": 119.32,
+          "text": "después,"
+        },
+        {
+          "t": 119.98,
+          "text": "now"
+        },
+        {
+          "t": 120.1,
+          "text": "we"
+        },
+        {
+          "t": 120.24,
+          "text": "turn"
+        },
+        {
+          "t": 120.48,
+          "text": "it"
+        },
+        {
+          "t": 120.6,
+          "text": "into"
+        },
+        {
+          "t": 120.8,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 121.12,
+      "end": 121.86,
+      "text": "Mente clara,",
+      "words": [
+        {
+          "t": 121.12,
+          "text": "Mente"
+        },
+        {
+          "t": 121.42,
+          "text": "clara,"
+        }
+      ]
+    },
+    {
+      "start": 121.92,
+      "end": 122.66,
+      "text": "heart bold,",
+      "words": [
+        {
+          "t": 121.92,
+          "text": "heart"
+        },
+        {
+          "t": 122.34,
+          "text": "bold,"
+        }
+      ]
+    },
+    {
+      "start": 122.88,
+      "end": 123.5,
+      "text": "manos arriba,",
+      "words": [
+        {
+          "t": 122.88,
+          "text": "manos"
+        },
+        {
+          "t": 123.14,
+          "text": "arriba,"
+        }
+      ]
+    },
+    {
+      "start": 123.6,
+      "end": 124.12,
+      "text": "still go,",
+      "words": [
+        {
+          "t": 123.6,
+          "text": "still"
+        },
+        {
+          "t": 123.82,
+          "text": "go,"
+        }
+      ]
+    },
+    {
+      "start": 124.34,
+      "end": 125.06,
+      "text": "new me,",
+      "words": [
+        {
+          "t": 124.34,
+          "text": "new"
+        },
+        {
+          "t": 124.74,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 125.22,
+      "end": 126.22,
+      "text": "still loaded,",
+      "words": [
+        {
+          "t": 125.22,
+          "text": "still"
+        },
+        {
+          "t": 125.66,
+          "text": "loaded,"
+        }
+      ]
+    },
+    {
+      "start": 126.48,
+      "end": 127.96,
+      "text": "alma limpia,",
+      "words": [
+        {
+          "t": 126.48,
+          "text": "alma"
+        },
+        {
+          "t": 127.3,
+          "text": "limpia,"
+        }
+      ]
+    },
+    {
+      "start": 127.98,
+      "end": 129.04,
+      "text": "still glowing",
+      "words": [
+        {
+          "t": 127.98,
+          "text": "still"
+        },
+        {
+          "t": 128.38,
+          "text": "glowing"
+        }
+      ]
+    },
+    {
+      "start": 130.2,
+      "end": 131.72,
+      "text": "De Queens to the island,",
+      "words": [
+        {
+          "t": 130.2,
+          "text": "De"
+        },
+        {
+          "t": 130.752,
+          "text": "Queens"
+        },
+        {
+          "t": 131.06,
+          "text": "to"
+        },
+        {
+          "t": 131.28,
+          "text": "the"
+        },
+        {
+          "t": 131.38,
+          "text": "island,"
+        }
+      ]
+    },
+    {
+      "start": 131.76,
+      "end": 132.86,
+      "text": "de la isla to the sky,",
+      "words": [
+        {
+          "t": 131.76,
+          "text": "de"
+        },
+        {
+          "t": 131.9,
+          "text": "la"
+        },
+        {
+          "t": 131.98,
+          "text": "isla"
+        },
+        {
+          "t": 132.28,
+          "text": "to"
+        },
+        {
+          "t": 132.46,
+          "text": "the"
+        },
+        {
+          "t": 132.58,
+          "text": "sky,"
+        }
+      ]
+    },
+    {
+      "start": 133.04,
+      "end": 133.98,
+      "text": "Boricua y Quique,",
+      "words": [
+        {
+          "t": 133.04,
+          "text": "Boricua"
+        },
+        {
+          "t": 133.58,
+          "text": "y"
+        },
+        {
+          "t": 133.62,
+          "text": "Quique,"
+        }
+      ]
+    },
+    {
+      "start": 134.06,
+      "end": 135.46,
+      "text": "fuego en my eyes",
+      "words": [
+        {
+          "t": 134.06,
+          "text": "fuego"
+        },
+        {
+          "t": 134.58,
+          "text": "en"
+        },
+        {
+          "t": 134.96,
+          "text": "my"
+        },
+        {
+          "t": 135.08,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 135.46,
+      "end": 136.62,
+      "text": "Plata no perico,",
+      "words": [
+        {
+          "t": 135.46,
+          "text": "Plata"
+        },
+        {
+          "t": 135.98,
+          "text": "no"
+        },
+        {
+          "t": 136.16,
+          "text": "perico,"
+        }
+      ]
+    },
+    {
+      "start": 136.68,
+      "end": 137.0,
+      "text": "ripiao,",
+      "words": [
+        {
+          "t": 136.68,
+          "text": "ripiao,"
+        }
+      ]
+    },
+    {
+      "start": 137.1,
+      "end": 137.82,
+      "text": "drums in the street,",
+      "words": [
+        {
+          "t": 137.1,
+          "text": "drums"
+        },
+        {
+          "t": 137.3,
+          "text": "in"
+        },
+        {
+          "t": 137.5,
+          "text": "the"
+        },
+        {
+          "t": 137.56,
+          "text": "street,"
+        }
+      ]
+    },
+    {
+      "start": 137.98,
+      "end": 139.06,
+      "text": "808 under my chest,",
+      "words": [
+        {
+          "t": 137.98,
+          "text": "808"
+        },
+        {
+          "t": 138.38,
+          "text": "under"
+        },
+        {
+          "t": 138.56,
+          "text": "my"
+        },
+        {
+          "t": 138.84,
+          "text": "chest,"
+        }
+      ]
+    },
+    {
+      "start": 139.16,
+      "end": 140.32,
+      "text": "brass under my feet",
+      "words": [
+        {
+          "t": 139.16,
+          "text": "brass"
+        },
+        {
+          "t": 139.4,
+          "text": "under"
+        },
+        {
+          "t": 139.68,
+          "text": "my"
+        },
+        {
+          "t": 139.94,
+          "text": "feet"
+        }
+      ]
+    },
+    {
+      "start": 140.32,
+      "end": 141.46,
+      "text": "No more waiting on permission,",
+      "words": [
+        {
+          "t": 140.32,
+          "text": "No"
+        },
+        {
+          "t": 140.48,
+          "text": "more"
+        },
+        {
+          "t": 140.6,
+          "text": "waiting"
+        },
+        {
+          "t": 140.96,
+          "text": "on"
+        },
+        {
+          "t": 141.12,
+          "text": "permission,"
+        }
+      ]
+    },
+    {
+      "start": 141.64,
+      "end": 142.82,
+      "text": "no more begging for a name,",
+      "words": [
+        {
+          "t": 141.64,
+          "text": "no"
+        },
+        {
+          "t": 141.74,
+          "text": "more"
+        },
+        {
+          "t": 141.9,
+          "text": "begging"
+        },
+        {
+          "t": 142.14,
+          "text": "for"
+        },
+        {
+          "t": 142.38,
+          "text": "a"
+        },
+        {
+          "t": 142.56,
+          "text": "name,"
+        }
+      ]
+    },
+    {
+      "start": 142.88,
+      "end": 144.06,
+      "text": "no more hiding all the vision,",
+      "words": [
+        {
+          "t": 142.88,
+          "text": "no"
+        },
+        {
+          "t": 142.98,
+          "text": "more"
+        },
+        {
+          "t": 143.16,
+          "text": "hiding"
+        },
+        {
+          "t": 143.44,
+          "text": "all"
+        },
+        {
+          "t": 143.66,
+          "text": "the"
+        },
+        {
+          "t": 143.74,
+          "text": "vision,"
+        }
+      ]
+    },
+    {
+      "start": 144.14,
+      "end": 145.5,
+      "text": "no more making joy feel shame",
+      "words": [
+        {
+          "t": 144.14,
+          "text": "no"
+        },
+        {
+          "t": 144.26,
+          "text": "more"
+        },
+        {
+          "t": 144.38,
+          "text": "making"
+        },
+        {
+          "t": 144.64,
+          "text": "joy"
+        },
+        {
+          "t": 144.9,
+          "text": "feel"
+        },
+        {
+          "t": 145.12,
+          "text": "shame"
+        }
+      ]
+    },
+    {
+      "start": 145.5,
+      "end": 147.44,
+      "text": "They laugh when the tools came out,",
+      "words": [
+        {
+          "t": 145.5,
+          "text": "They"
+        },
+        {
+          "t": 145.9,
+          "text": "laugh"
+        },
+        {
+          "t": 146.22,
+          "text": "when"
+        },
+        {
+          "t": 146.4,
+          "text": "the"
+        },
+        {
+          "t": 146.56,
+          "text": "tools"
+        },
+        {
+          "t": 146.78,
+          "text": "came"
+        },
+        {
+          "t": 147.04,
+          "text": "out,"
+        }
+      ]
+    },
+    {
+      "start": 147.5,
+      "end": 149.82,
+      "text": "said it ain't real when the new waves sprout",
+      "words": [
+        {
+          "t": 147.5,
+          "text": "said"
+        },
+        {
+          "t": 147.76,
+          "text": "it"
+        },
+        {
+          "t": 147.98,
+          "text": "ain't"
+        },
+        {
+          "t": 148.18,
+          "text": "real"
+        },
+        {
+          "t": 148.36,
+          "text": "when"
+        },
+        {
+          "t": 148.58,
+          "text": "the"
+        },
+        {
+          "t": 148.74,
+          "text": "new"
+        },
+        {
+          "t": 148.94,
+          "text": "waves"
+        },
+        {
+          "t": 149.44,
+          "text": "sprout"
+        }
+      ]
+    },
+    {
+      "start": 149.83,
+      "end": 151.48,
+      "text": "But I built with the sparks,",
+      "words": [
+        {
+          "t": 149.83,
+          "text": "But"
+        },
+        {
+          "t": 150.38,
+          "text": "I"
+        },
+        {
+          "t": 150.58,
+          "text": "built"
+        },
+        {
+          "t": 150.84,
+          "text": "with"
+        },
+        {
+          "t": 151.02,
+          "text": "the"
+        },
+        {
+          "t": 151.18,
+          "text": "sparks,"
+        }
+      ]
+    },
+    {
+      "start": 151.66,
+      "end": 152.68,
+      "text": "built with the scars,",
+      "words": [
+        {
+          "t": 151.66,
+          "text": "built"
+        },
+        {
+          "t": 152.0,
+          "text": "with"
+        },
+        {
+          "t": 152.22,
+          "text": "the"
+        },
+        {
+          "t": 152.42,
+          "text": "scars,"
+        }
+      ]
+    },
+    {
+      "start": 152.92,
+      "end": 155.26,
+      "text": "built with the bass and I aimed at stars",
+      "words": [
+        {
+          "t": 152.92,
+          "text": "built"
+        },
+        {
+          "t": 153.28,
+          "text": "with"
+        },
+        {
+          "t": 153.5,
+          "text": "the"
+        },
+        {
+          "t": 153.7,
+          "text": "bass"
+        },
+        {
+          "t": 153.96,
+          "text": "and"
+        },
+        {
+          "t": 154.14,
+          "text": "I"
+        },
+        {
+          "t": 154.28,
+          "text": "aimed"
+        },
+        {
+          "t": 154.62,
+          "text": "at"
+        },
+        {
+          "t": 154.78,
+          "text": "stars"
+        }
+      ]
+    },
+    {
+      "start": 155.26,
+      "end": 156.44,
+      "text": "Tú tiras sombra,",
+      "words": [
+        {
+          "t": 155.26,
+          "text": "Tú"
+        },
+        {
+          "t": 155.7,
+          "text": "tiras"
+        },
+        {
+          "t": 156.14,
+          "text": "sombra,"
+        }
+      ]
+    },
+    {
+      "start": 156.44,
+      "end": 157.54,
+      "text": "yo la vuelvo sol,",
+      "words": [
+        {
+          "t": 156.44,
+          "text": "yo"
+        },
+        {
+          "t": 156.58,
+          "text": "la"
+        },
+        {
+          "t": 156.76,
+          "text": "vuelvo"
+        },
+        {
+          "t": 157.26,
+          "text": "sol,"
+        }
+      ]
+    },
+    {
+      "start": 157.84,
+      "end": 158.94,
+      "text": "tú tiras piedra,",
+      "words": [
+        {
+          "t": 157.84,
+          "text": "tú"
+        },
+        {
+          "t": 158.14,
+          "text": "tiras"
+        },
+        {
+          "t": 158.62,
+          "text": "piedra,"
+        }
+      ]
+    },
+    {
+      "start": 158.94,
+      "end": 159.94,
+      "text": "yo construyo control",
+      "words": [
+        {
+          "t": 158.94,
+          "text": "yo"
+        },
+        {
+          "t": 159.06,
+          "text": "construyo"
+        },
+        {
+          "t": 159.52,
+          "text": "control"
+        }
+      ]
+    },
+    {
+      "start": 160.1,
+      "end": 161.38,
+      "text": "Tú can call it fake,",
+      "words": [
+        {
+          "t": 160.1,
+          "text": "Tú"
+        },
+        {
+          "t": 160.6,
+          "text": "can"
+        },
+        {
+          "t": 160.76,
+          "text": "call"
+        },
+        {
+          "t": 160.96,
+          "text": "it"
+        },
+        {
+          "t": 161.14,
+          "text": "fake,"
+        }
+      ]
+    },
+    {
+      "start": 161.52,
+      "end": 162.62,
+      "text": "I call it freak,",
+      "words": [
+        {
+          "t": 161.52,
+          "text": "I"
+        },
+        {
+          "t": 161.98,
+          "text": "call"
+        },
+        {
+          "t": 162.18,
+          "text": "it"
+        },
+        {
+          "t": 162.38,
+          "text": "freak,"
+        }
+      ]
+    },
+    {
+      "start": 162.74,
+      "end": 163.86,
+      "text": "I came from the void,",
+      "words": [
+        {
+          "t": 162.74,
+          "text": "I"
+        },
+        {
+          "t": 162.92,
+          "text": "came"
+        },
+        {
+          "t": 163.2,
+          "text": "from"
+        },
+        {
+          "t": 163.4,
+          "text": "the"
+        },
+        {
+          "t": 163.54,
+          "text": "void,"
+        }
+      ]
+    },
+    {
+      "start": 163.92,
+      "end": 165.02,
+      "text": "now the gold is me",
+      "words": [
+        {
+          "t": 163.92,
+          "text": "now"
+        },
+        {
+          "t": 164.04,
+          "text": "the"
+        },
+        {
+          "t": 164.18,
+          "text": "gold"
+        },
+        {
+          "t": 164.48,
+          "text": "is"
+        },
+        {
+          "t": 164.74,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 165.02,
+      "end": 169.4,
+      "text": "No necesito tu corona, no necesito tu gay",
+      "words": [
+        {
+          "t": 165.02,
+          "text": "No"
+        },
+        {
+          "t": 165.66,
+          "text": "necesito"
+        },
+        {
+          "t": 166.3,
+          "text": "tu"
+        },
+        {
+          "t": 166.46,
+          "text": "corona,"
+        },
+        {
+          "t": 167.26,
+          "text": "no"
+        },
+        {
+          "t": 168.18,
+          "text": "necesito"
+        },
+        {
+          "t": 168.92,
+          "text": "tu"
+        },
+        {
+          "t": 169.16,
+          "text": "gay"
+        }
+      ]
+    },
+    {
+      "start": 169.4,
+      "end": 170.3,
+      "text": "No necesito tu corona, no necesito tu gay",
+      "words": [
+        {
+          "t": 169.4,
+          "text": "No"
+        },
+        {
+          "t": 169.86,
+          "text": "necesito"
+        },
+        {
+          "t": 170.3,
+          "text": "tu"
+        },
+        {
+          "t": 170.3,
+          "text": "corona,"
+        },
+        {
+          "t": 170.3,
+          "text": "no"
+        },
+        {
+          "t": 170.3,
+          "text": "necesito"
+        },
+        {
+          "t": 170.3,
+          "text": "tu"
+        },
+        {
+          "t": 170.3,
+          "text": "gay"
+        }
+      ]
+    },
+    {
+      "start": 170.3,
+      "end": 174.46,
+      "text": "No necesito tu duda, no pago tu weight",
+      "words": [
+        {
+          "t": 170.3,
+          "text": "No"
+        },
+        {
+          "t": 170.6,
+          "text": "necesito"
+        },
+        {
+          "t": 171.32,
+          "text": "tu"
+        },
+        {
+          "t": 171.56,
+          "text": "duda,"
+        },
+        {
+          "t": 172.2,
+          "text": "no"
+        },
+        {
+          "t": 173.344,
+          "text": "pago"
+        },
+        {
+          "t": 173.78,
+          "text": "tu"
+        },
+        {
+          "t": 174.02,
+          "text": "weight"
+        }
+      ]
+    },
+    {
+      "start": 174.46,
+      "end": 177.02,
+      "text": "Have your joy but keep your spirit,",
+      "words": [
+        {
+          "t": 174.46,
+          "text": "Have"
+        },
+        {
+          "t": 175.06,
+          "text": "your"
+        },
+        {
+          "t": 175.28,
+          "text": "joy"
+        },
+        {
+          "t": 175.6,
+          "text": "but"
+        },
+        {
+          "t": 176.0,
+          "text": "keep"
+        },
+        {
+          "t": 176.1,
+          "text": "your"
+        },
+        {
+          "t": 176.42,
+          "text": "spirit,"
+        }
+      ]
+    },
+    {
+      "start": 177.18,
+      "end": 178.16,
+      "text": "toca el fuego,",
+      "words": [
+        {
+          "t": 177.18,
+          "text": "toca"
+        },
+        {
+          "t": 177.6,
+          "text": "el"
+        },
+        {
+          "t": 177.8,
+          "text": "fuego,"
+        }
+      ]
+    },
+    {
+      "start": 178.3,
+      "end": 179.24,
+      "text": "keep your name",
+      "words": [
+        {
+          "t": 178.3,
+          "text": "keep"
+        },
+        {
+          "t": 178.54,
+          "text": "your"
+        },
+        {
+          "t": 178.9,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 179.24,
+      "end": 182.2,
+      "text": "Taste the world but don't disappear in it,",
+      "words": [
+        {
+          "t": 179.24,
+          "text": "Taste"
+        },
+        {
+          "t": 180.0,
+          "text": "the"
+        },
+        {
+          "t": 180.24,
+          "text": "world"
+        },
+        {
+          "t": 180.52,
+          "text": "but"
+        },
+        {
+          "t": 180.78,
+          "text": "don't"
+        },
+        {
+          "t": 181.12,
+          "text": "disappear"
+        },
+        {
+          "t": 181.62,
+          "text": "in"
+        },
+        {
+          "t": 182.0,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 182.26,
+      "end": 184.36,
+      "text": "pleasure don't have to become pain",
+      "words": [
+        {
+          "t": 182.26,
+          "text": "pleasure"
+        },
+        {
+          "t": 182.58,
+          "text": "don't"
+        },
+        {
+          "t": 183.02,
+          "text": "have"
+        },
+        {
+          "t": 183.22,
+          "text": "to"
+        },
+        {
+          "t": 183.46,
+          "text": "become"
+        },
+        {
+          "t": 183.82,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 184.36,
+      "end": 185.76,
+      "text": "Pasa el plato,",
+      "words": [
+        {
+          "t": 184.36,
+          "text": "Pasa"
+        },
+        {
+          "t": 185.04,
+          "text": "el"
+        },
+        {
+          "t": 185.28,
+          "text": "plato,"
+        }
+      ]
+    },
+    {
+      "start": 185.78,
+      "end": 186.06,
+      "text": "press,",
+      "words": [
+        {
+          "t": 185.78,
+          "text": "press,"
+        }
+      ]
+    },
+    {
+      "start": 186.26,
+      "end": 187.02,
+      "text": "forgive me,",
+      "words": [
+        {
+          "t": 186.26,
+          "text": "forgive"
+        },
+        {
+          "t": 186.58,
+          "text": "me,"
+        }
+      ]
+    },
+    {
+      "start": 187.06,
+      "end": 189.216,
+      "text": "spray your glass and bless the air",
+      "words": [
+        {
+          "t": 187.06,
+          "text": "spray"
+        },
+        {
+          "t": 187.32,
+          "text": "your"
+        },
+        {
+          "t": 187.66,
+          "text": "glass"
+        },
+        {
+          "t": 188.08,
+          "text": "and"
+        },
+        {
+          "t": 188.34,
+          "text": "bless"
+        },
+        {
+          "t": 188.62,
+          "text": "the"
+        },
+        {
+          "t": 188.9,
+          "text": "air"
+        }
+      ]
+    },
+    {
+      "start": 190.272,
+      "end": 191.84,
+      "text": "Estamos aquí un minuto,",
+      "words": [
+        {
+          "t": 190.272,
+          "text": "Estamos"
+        },
+        {
+          "t": 190.48,
+          "text": "aquí"
+        },
+        {
+          "t": 190.976,
+          "text": "un"
+        },
+        {
+          "t": 191.18,
+          "text": "minuto,"
+        }
+      ]
+    },
+    {
+      "start": 192.0,
+      "end": 194.176,
+      "text": "feel the life you want while you're here",
+      "words": [
+        {
+          "t": 192.0,
+          "text": "feel"
+        },
+        {
+          "t": 192.38,
+          "text": "the"
+        },
+        {
+          "t": 192.56,
+          "text": "life"
+        },
+        {
+          "t": 192.88,
+          "text": "you"
+        },
+        {
+          "t": 193.1,
+          "text": "want"
+        },
+        {
+          "t": 193.34,
+          "text": "while"
+        },
+        {
+          "t": 193.6,
+          "text": "you're"
+        },
+        {
+          "t": 193.9,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 195.584,
+      "end": 197.04,
+      "text": "Venimos del voy,",
+      "words": [
+        {
+          "t": 195.584,
+          "text": "Venimos"
+        },
+        {
+          "t": 196.16,
+          "text": "del"
+        },
+        {
+          "t": 196.64,
+          "text": "voy,"
+        }
+      ]
+    },
+    {
+      "start": 197.22,
+      "end": 198.58,
+      "text": "now we turn it into gold,",
+      "words": [
+        {
+          "t": 197.22,
+          "text": "now"
+        },
+        {
+          "t": 197.44,
+          "text": "we"
+        },
+        {
+          "t": 197.56,
+          "text": "turn"
+        },
+        {
+          "t": 197.74,
+          "text": "it"
+        },
+        {
+          "t": 197.94,
+          "text": "into"
+        },
+        {
+          "t": 198.16,
+          "text": "gold,"
+        }
+      ]
+    },
+    {
+      "start": 198.68,
+      "end": 199.84,
+      "text": "oro en el pecho",
+      "words": [
+        {
+          "t": 198.68,
+          "text": "oro"
+        },
+        {
+          "t": 198.96,
+          "text": "en"
+        },
+        {
+          "t": 199.24,
+          "text": "el"
+        },
+        {
+          "t": 199.32,
+          "text": "pecho"
+        }
+      ]
+    },
+    {
+      "start": 200.3,
+      "end": 202.24,
+      "text": "Gold in the soul, built from the pressure",
+      "words": [
+        {
+          "t": 200.3,
+          "text": "Gold"
+        },
+        {
+          "t": 200.3,
+          "text": "in"
+        },
+        {
+          "t": 200.5,
+          "text": "the"
+        },
+        {
+          "t": 200.64,
+          "text": "soul,"
+        },
+        {
+          "t": 201.14,
+          "text": "built"
+        },
+        {
+          "t": 201.36,
+          "text": "from"
+        },
+        {
+          "t": 201.62,
+          "text": "the"
+        },
+        {
+          "t": 201.82,
+          "text": "pressure"
+        }
+      ]
+    },
+    {
+      "start": 202.26,
+      "end": 203.52,
+      "text": "Raised by the cold,",
+      "words": [
+        {
+          "t": 202.26,
+          "text": "Raised"
+        },
+        {
+          "t": 202.86,
+          "text": "by"
+        },
+        {
+          "t": 202.94,
+          "text": "the"
+        },
+        {
+          "t": 203.12,
+          "text": "cold,"
+        }
+      ]
+    },
+    {
+      "start": 203.64,
+      "end": 204.6,
+      "text": "venimos del voy,",
+      "words": [
+        {
+          "t": 203.64,
+          "text": "venimos"
+        },
+        {
+          "t": 204.06,
+          "text": "del"
+        },
+        {
+          "t": 204.36,
+          "text": "voy,"
+        }
+      ]
+    },
+    {
+      "start": 204.7,
+      "end": 205.8,
+      "text": "now we turn it into gold",
+      "words": [
+        {
+          "t": 204.7,
+          "text": "now"
+        },
+        {
+          "t": 204.84,
+          "text": "we"
+        },
+        {
+          "t": 204.98,
+          "text": "turn"
+        },
+        {
+          "t": 205.22,
+          "text": "it"
+        },
+        {
+          "t": 205.36,
+          "text": "into"
+        },
+        {
+          "t": 205.54,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 206.11,
+      "end": 210.32,
+      "text": "No we ever pass gold, que lo sepa todo el mundo",
+      "words": [
+        {
+          "t": 206.11,
+          "text": "No"
+        },
+        {
+          "t": 206.66,
+          "text": "we"
+        },
+        {
+          "t": 206.86,
+          "text": "ever"
+        },
+        {
+          "t": 207.08,
+          "text": "pass"
+        },
+        {
+          "t": 207.44,
+          "text": "gold,"
+        },
+        {
+          "t": 208.08,
+          "text": "que"
+        },
+        {
+          "t": 209.1,
+          "text": "lo"
+        },
+        {
+          "t": 209.344,
+          "text": "sepa"
+        },
+        {
+          "t": 209.56,
+          "text": "todo"
+        },
+        {
+          "t": 209.78,
+          "text": "el"
+        },
+        {
+          "t": 209.98,
+          "text": "mundo"
+        }
+      ]
+    },
+    {
+      "start": 211.88,
+      "end": 212.84,
+      "text": "Déjalo arder,",
+      "words": [
+        {
+          "t": 211.88,
+          "text": "Déjalo"
+        },
+        {
+          "t": 212.36,
+          "text": "arder,"
+        }
+      ]
+    },
+    {
+      "start": 214.336,
+      "end": 215.2,
+      "text": "déjalo ver,",
+      "words": [
+        {
+          "t": 214.336,
+          "text": "déjalo"
+        },
+        {
+          "t": 214.8,
+          "text": "ver,"
+        }
+      ]
+    },
+    {
+      "start": 216.512,
+      "end": 217.52,
+      "text": "mírame crecer",
+      "words": [
+        {
+          "t": 216.512,
+          "text": "mírame"
+        },
+        {
+          "t": 216.84,
+          "text": "crecer"
+        }
+      ]
+    },
+    {
+      "start": 217.952,
+      "end": 220.2,
+      "text": "Venimos del voy, now we turn it into gold",
+      "words": [
+        {
+          "t": 217.952,
+          "text": "Venimos"
+        },
+        {
+          "t": 218.32,
+          "text": "del"
+        },
+        {
+          "t": 218.6,
+          "text": "voy,"
+        },
+        {
+          "t": 218.96,
+          "text": "now"
+        },
+        {
+          "t": 219.1,
+          "text": "we"
+        },
+        {
+          "t": 219.22,
+          "text": "turn"
+        },
+        {
+          "t": 219.44,
+          "text": "it"
+        },
+        {
+          "t": 219.58,
+          "text": "into"
+        },
+        {
+          "t": 219.8,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 222.22,
+      "end": 222.32,
+      "text": "Escucha,",
+      "words": [
+        {
+          "t": 222.22,
+          "text": "Escucha,"
+        }
+      ]
+    },
+    {
+      "start": 223.08,
+      "end": 225.05,
+      "text": "no tienes que contestar cada alarma",
+      "words": [
+        {
+          "t": 223.08,
+          "text": "no"
+        },
+        {
+          "t": 223.18,
+          "text": "tienes"
+        },
+        {
+          "t": 223.42,
+          "text": "que"
+        },
+        {
+          "t": 223.62,
+          "text": "contestar"
+        },
+        {
+          "t": 224.28,
+          "text": "cada"
+        },
+        {
+          "t": 224.5,
+          "text": "alarma"
+        }
+      ]
+    },
+    {
+      "start": 225.66,
+      "end": 228.44,
+      "text": "No tienes que cargar cada fantasma",
+      "words": [
+        {
+          "t": 225.66,
+          "text": "No"
+        },
+        {
+          "t": 226.336,
+          "text": "tienes"
+        },
+        {
+          "t": 226.56,
+          "text": "que"
+        },
+        {
+          "t": 226.8,
+          "text": "cargar"
+        },
+        {
+          "t": 227.28,
+          "text": "cada"
+        },
+        {
+          "t": 227.6,
+          "text": "fantasma"
+        }
+      ]
+    },
+    {
+      "start": 229.48,
+      "end": 230.28,
+      "text": "No tienes que quedar sin ti,",
+      "words": [
+        {
+          "t": 229.48,
+          "text": "No"
+        },
+        {
+          "t": 229.58,
+          "text": "tienes"
+        },
+        {
+          "t": 229.82,
+          "text": "que"
+        },
+        {
+          "t": 230.02,
+          "text": "quedar"
+        },
+        {
+          "t": 230.28,
+          "text": "sin"
+        },
+        {
+          "t": 230.28,
+          "text": "ti,"
+        }
+      ]
+    },
+    {
+      "start": 230.28,
+      "end": 230.28,
+      "text": "no tienes que quedar sin ti",
+      "words": [
+        {
+          "t": 230.28,
+          "text": "no"
+        },
+        {
+          "t": 230.28,
+          "text": "tienes"
+        },
+        {
+          "t": 230.28,
+          "text": "que"
+        },
+        {
+          "t": 230.28,
+          "text": "quedar"
+        },
+        {
+          "t": 230.28,
+          "text": "sin"
+        },
+        {
+          "t": 230.28,
+          "text": "ti"
+        }
+      ]
+    },
+    {
+      "start": 230.3,
+      "end": 234.1,
+      "text": "Dejarte pequeño porque te conocieron en la oscuridad",
+      "words": [
+        {
+          "t": 230.3,
+          "text": "Dejarte"
+        },
+        {
+          "t": 230.46,
+          "text": "pequeño"
+        },
+        {
+          "t": 230.9,
+          "text": "porque"
+        },
+        {
+          "t": 231.46,
+          "text": "te"
+        },
+        {
+          "t": 232.576,
+          "text": "conocieron"
+        },
+        {
+          "t": 233.28,
+          "text": "en"
+        },
+        {
+          "t": 233.48,
+          "text": "la"
+        },
+        {
+          "t": 233.56,
+          "text": "oscuridad"
+        }
+      ]
+    },
+    {
+      "start": 234.1,
+      "end": 235.68,
+      "text": "Some nights are for healing",
+      "words": [
+        {
+          "t": 234.1,
+          "text": "Some"
+        },
+        {
+          "t": 234.58,
+          "text": "nights"
+        },
+        {
+          "t": 234.96,
+          "text": "are"
+        },
+        {
+          "t": 235.14,
+          "text": "for"
+        },
+        {
+          "t": 235.32,
+          "text": "healing"
+        }
+      ]
+    },
+    {
+      "start": 235.68,
+      "end": 238.24,
+      "text": "Some nights are for hands in the air",
+      "words": [
+        {
+          "t": 235.68,
+          "text": "Some"
+        },
+        {
+          "t": 236.34,
+          "text": "nights"
+        },
+        {
+          "t": 236.84,
+          "text": "are"
+        },
+        {
+          "t": 237.02,
+          "text": "for"
+        },
+        {
+          "t": 237.22,
+          "text": "hands"
+        },
+        {
+          "t": 237.58,
+          "text": "in"
+        },
+        {
+          "t": 237.78,
+          "text": "the"
+        },
+        {
+          "t": 237.92,
+          "text": "air"
+        }
+      ]
+    },
+    {
+      "start": 238.24,
+      "end": 239.96,
+      "text": "Pero algunas noches",
+      "words": [
+        {
+          "t": 238.24,
+          "text": "Pero"
+        },
+        {
+          "t": 238.8,
+          "text": "algunas"
+        },
+        {
+          "t": 239.1,
+          "text": "noches"
+        }
+      ]
+    },
+    {
+      "start": 239.96,
+      "end": 241.44,
+      "text": "Algunas noches",
+      "words": [
+        {
+          "t": 239.96,
+          "text": "Algunas"
+        },
+        {
+          "t": 240.92,
+          "text": "noches"
+        }
+      ]
+    },
+    {
+      "start": 241.44,
+      "end": 243.66,
+      "text": "Tú mismo construyes la corona",
+      "words": [
+        {
+          "t": 241.44,
+          "text": "Tú"
+        },
+        {
+          "t": 241.8,
+          "text": "mismo"
+        },
+        {
+          "t": 242.14,
+          "text": "construyes"
+        },
+        {
+          "t": 243.0,
+          "text": "la"
+        },
+        {
+          "t": 243.18,
+          "text": "corona"
+        }
+      ]
+    },
+    {
+      "start": 243.66,
+      "end": 245.0,
+      "text": "¿Quién te hizo?",
+      "words": [
+        {
+          "t": 243.66,
+          "text": "¿Quién"
+        },
+        {
+          "t": 244.46,
+          "text": "te"
+        },
+        {
+          "t": 244.58,
+          "text": "hizo?"
+        }
+      ]
+    },
+    {
+      "start": 245.22,
+      "end": 246.06,
+      "text": "La presión",
+      "words": [
+        {
+          "t": 245.22,
+          "text": "La"
+        },
+        {
+          "t": 245.32,
+          "text": "presión"
+        }
+      ]
+    },
+    {
+      "start": 246.06,
+      "end": 247.24,
+      "text": "¿Quién te crió?",
+      "words": [
+        {
+          "t": 246.06,
+          "text": "¿Quién"
+        },
+        {
+          "t": 246.68,
+          "text": "te"
+        },
+        {
+          "t": 246.78,
+          "text": "crió?"
+        }
+      ]
+    },
+    {
+      "start": 247.56,
+      "end": 248.48,
+      "text": "La lección",
+      "words": [
+        {
+          "t": 247.56,
+          "text": "La"
+        },
+        {
+          "t": 247.88,
+          "text": "lección"
+        }
+      ]
+    },
+    {
+      "start": 248.48,
+      "end": 249.8,
+      "text": "¿Quién dudó?",
+      "words": [
+        {
+          "t": 248.48,
+          "text": "¿Quién"
+        },
+        {
+          "t": 249.2,
+          "text": "dudó?"
+        }
+      ]
+    },
+    {
+      "start": 250.08,
+      "end": 250.88,
+      "text": "Un montón",
+      "words": [
+        {
+          "t": 250.08,
+          "text": "Un"
+        },
+        {
+          "t": 250.4,
+          "text": "montón"
+        }
+      ]
+    },
+    {
+      "start": 250.88,
+      "end": 251.88,
+      "text": "¿Quién brilla?",
+      "words": [
+        {
+          "t": 250.88,
+          "text": "¿Quién"
+        },
+        {
+          "t": 251.38,
+          "text": "brilla?"
+        }
+      ]
+    },
+    {
+      "start": 252.04,
+      "end": 253.12,
+      "text": "El corazón",
+      "words": [
+        {
+          "t": 252.04,
+          "text": "El"
+        },
+        {
+          "t": 252.4,
+          "text": "corazón"
+        }
+      ]
+    },
+    {
+      "start": 253.68,
+      "end": 256.032,
+      "text": "My mind go quiet",
+      "words": [
+        {
+          "t": 253.68,
+          "text": "My"
+        },
+        {
+          "t": 254.12,
+          "text": "mind"
+        },
+        {
+          "t": 255.46,
+          "text": "go"
+        },
+        {
+          "t": 255.56,
+          "text": "quiet"
+        }
+      ]
+    },
+    {
+      "start": 256.128,
+      "end": 256.8,
+      "text": "Heart go wide",
+      "words": [
+        {
+          "t": 256.128,
+          "text": "Heart"
+        },
+        {
+          "t": 256.36,
+          "text": "go"
+        },
+        {
+          "t": 256.66,
+          "text": "wide"
+        }
+      ]
+    },
+    {
+      "start": 257.26,
+      "end": 258.48,
+      "text": "Gumbo rolling",
+      "words": [
+        {
+          "t": 257.26,
+          "text": "Gumbo"
+        },
+        {
+          "t": 258.1,
+          "text": "rolling"
+        }
+      ]
+    },
+    {
+      "start": 258.72,
+      "end": 259.54,
+      "text": "Fire inside",
+      "words": [
+        {
+          "t": 258.72,
+          "text": "Fire"
+        },
+        {
+          "t": 258.96,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 259.54,
+      "end": 259.648,
+      "text": "Man",
+      "words": [
+        {
+          "t": 259.54,
+          "text": "Man"
+        }
+      ]
+    },
+    {
+      "start": 260.3,
+      "end": 260.512,
+      "text": "Mente clara",
+      "words": [
+        {
+          "t": 260.3,
+          "text": "Mente"
+        },
+        {
+          "t": 260.38,
+          "text": "clara"
+        }
+      ]
+    },
+    {
+      "start": 261.06,
+      "end": 262.14,
+      "text": "Alma alive",
+      "words": [
+        {
+          "t": 261.06,
+          "text": "Alma"
+        },
+        {
+          "t": 261.48,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 262.14,
+      "end": 264.6,
+      "text": "Este verano viste la lágrima",
+      "words": [
+        {
+          "t": 262.14,
+          "text": "Este"
+        },
+        {
+          "t": 262.82,
+          "text": "verano"
+        },
+        {
+          "t": 263.936,
+          "text": "viste"
+        },
+        {
+          "t": 264.08,
+          "text": "la"
+        },
+        {
+          "t": 264.28,
+          "text": "lágrima"
+        }
+      ]
+    },
+    {
+      "start": 264.72,
+      "end": 265.64,
+      "text": "I'm not just dope",
+      "words": [
+        {
+          "t": 264.72,
+          "text": "I'm"
+        },
+        {
+          "t": 264.82,
+          "text": "not"
+        },
+        {
+          "t": 264.92,
+          "text": "just"
+        },
+        {
+          "t": 265.24,
+          "text": "dope"
+        }
+      ]
+    },
+    {
+      "start": 265.64,
+      "end": 267.26,
+      "text": "Soy fuego con memoria",
+      "words": [
+        {
+          "t": 265.64,
+          "text": "Soy"
+        },
+        {
+          "t": 265.96,
+          "text": "fuego"
+        },
+        {
+          "t": 266.44,
+          "text": "con"
+        },
+        {
+          "t": 266.66,
+          "text": "memoria"
+        }
+      ]
+    },
+    {
+      "start": 267.26,
+      "end": 269.76,
+      "text": "Every loss melted down in the gloria",
+      "words": [
+        {
+          "t": 267.26,
+          "text": "Every"
+        },
+        {
+          "t": 267.98,
+          "text": "loss"
+        },
+        {
+          "t": 268.34,
+          "text": "melted"
+        },
+        {
+          "t": 268.64,
+          "text": "down"
+        },
+        {
+          "t": 269.0,
+          "text": "in"
+        },
+        {
+          "t": 269.22,
+          "text": "the"
+        },
+        {
+          "t": 269.3,
+          "text": "gloria"
+        }
+      ]
+    },
+    {
+      "start": 269.76,
+      "end": 272.0,
+      "text": "Every no got folded in steel",
+      "words": [
+        {
+          "t": 269.76,
+          "text": "Every"
+        },
+        {
+          "t": 270.48,
+          "text": "no"
+        },
+        {
+          "t": 270.72,
+          "text": "got"
+        },
+        {
+          "t": 271.0,
+          "text": "folded"
+        },
+        {
+          "t": 271.42,
+          "text": "in"
+        },
+        {
+          "t": 271.68,
+          "text": "steel"
+        }
+      ]
+    },
+    {
+      "start": 272.52,
+      "end": 274.58,
+      "text": "Every star turned proof I'm real",
+      "words": [
+        {
+          "t": 272.52,
+          "text": "Every"
+        },
+        {
+          "t": 272.94,
+          "text": "star"
+        },
+        {
+          "t": 273.22,
+          "text": "turned"
+        },
+        {
+          "t": 273.52,
+          "text": "proof"
+        },
+        {
+          "t": 273.84,
+          "text": "I'm"
+        },
+        {
+          "t": 274.24,
+          "text": "real"
+        }
+      ]
+    },
+    {
+      "start": 274.58,
+      "end": 276.36,
+      "text": "Go can bang, go can shine",
+      "words": [
+        {
+          "t": 274.58,
+          "text": "Go"
+        },
+        {
+          "t": 275.0,
+          "text": "can"
+        },
+        {
+          "t": 275.3,
+          "text": "bang,"
+        },
+        {
+          "t": 275.66,
+          "text": "go"
+        },
+        {
+          "t": 275.82,
+          "text": "can"
+        },
+        {
+          "t": 276.08,
+          "text": "shine"
+        }
+      ]
+    },
+    {
+      "start": 276.36,
+      "end": 277.9,
+      "text": "But I want worth that",
+      "words": [
+        {
+          "t": 276.36,
+          "text": "But"
+        },
+        {
+          "t": 276.9,
+          "text": "I"
+        },
+        {
+          "t": 277.08,
+          "text": "want"
+        },
+        {
+          "t": 277.28,
+          "text": "worth"
+        },
+        {
+          "t": 277.62,
+          "text": "that"
+        }
+      ]
+    },
+    {
+      "start": 277.9,
+      "end": 278.66,
+      "text": "Can't define",
+      "words": [
+        {
+          "t": 277.9,
+          "text": "Can't"
+        },
+        {
+          "t": 278.4,
+          "text": "define"
+        }
+      ]
+    },
+    {
+      "start": 278.66,
+      "end": 281.42,
+      "text": "Más alto que prenda, más alto que rings",
+      "words": [
+        {
+          "t": 278.66,
+          "text": "Más"
+        },
+        {
+          "t": 279.26,
+          "text": "alto"
+        },
+        {
+          "t": 279.56,
+          "text": "que"
+        },
+        {
+          "t": 279.8,
+          "text": "prenda,"
+        },
+        {
+          "t": 280.32,
+          "text": "más"
+        },
+        {
+          "t": 280.44,
+          "text": "alto"
+        },
+        {
+          "t": 280.8,
+          "text": "que"
+        },
+        {
+          "t": 281.06,
+          "text": "rings"
+        }
+      ]
+    },
+    {
+      "start": 281.42,
+      "end": 283.88,
+      "text": "Higher in price, higher in kings",
+      "words": [
+        {
+          "t": 281.42,
+          "text": "Higher"
+        },
+        {
+          "t": 282.02,
+          "text": "in"
+        },
+        {
+          "t": 282.3,
+          "text": "price,"
+        },
+        {
+          "t": 282.74,
+          "text": "higher"
+        },
+        {
+          "t": 283.28,
+          "text": "in"
+        },
+        {
+          "t": 283.58,
+          "text": "kings"
+        }
+      ]
+    },
+    {
+      "start": 283.88,
+      "end": 285.64,
+      "text": "Del vacío al fuego",
+      "words": [
+        {
+          "t": 283.88,
+          "text": "Del"
+        },
+        {
+          "t": 284.64,
+          "text": "vacío"
+        },
+        {
+          "t": 285.1,
+          "text": "al"
+        },
+        {
+          "t": 285.32,
+          "text": "fuego"
+        }
+      ]
+    },
+    {
+      "start": 287.008,
+      "end": 288.52,
+      "text": "Del fuego al molde",
+      "words": [
+        {
+          "t": 287.008,
+          "text": "Del"
+        },
+        {
+          "t": 287.12,
+          "text": "fuego"
+        },
+        {
+          "t": 287.6,
+          "text": "al"
+        },
+        {
+          "t": 287.86,
+          "text": "molde"
+        }
+      ]
+    },
+    {
+      "start": 288.52,
+      "end": 290.28,
+      "text": "Del molde al fuego",
+      "words": [
+        {
+          "t": 288.52,
+          "text": "Del"
+        },
+        {
+          "t": 289.64,
+          "text": "molde"
+        },
+        {
+          "t": 290.2,
+          "text": "al"
+        },
+        {
+          "t": 290.24,
+          "text": "fuego"
+        }
+      ]
+    },
+    {
+      "start": 290.3,
+      "end": 291.136,
+      "text": "Al brillo",
+      "words": [
+        {
+          "t": 290.3,
+          "text": "Al"
+        },
+        {
+          "t": 290.3,
+          "text": "brillo"
+        }
+      ]
+    },
+    {
+      "start": 291.36,
+      "end": 292.74,
+      "text": "Del brillo",
+      "words": [
+        {
+          "t": 291.36,
+          "text": "Del"
+        },
+        {
+          "t": 291.62,
+          "text": "brillo"
+        }
+      ]
+    },
+    {
+      "start": 292.74,
+      "end": 293.44,
+      "text": "PESCO",
+      "words": [
+        {
+          "t": 292.74,
+          "text": "PESCO"
+        }
+      ]
+    },
+    {
+      "start": 294.4,
+      "end": 296.04,
+      "text": "Venimos del boi",
+      "words": [
+        {
+          "t": 294.4,
+          "text": "Venimos"
+        },
+        {
+          "t": 295.12,
+          "text": "del"
+        },
+        {
+          "t": 295.62,
+          "text": "boi"
+        }
+      ]
+    },
+    {
+      "start": 296.04,
+      "end": 297.56,
+      "text": "Now we turn it into gold",
+      "words": [
+        {
+          "t": 296.04,
+          "text": "Now"
+        },
+        {
+          "t": 296.4,
+          "text": "we"
+        },
+        {
+          "t": 296.54,
+          "text": "turn"
+        },
+        {
+          "t": 296.72,
+          "text": "it"
+        },
+        {
+          "t": 296.9,
+          "text": "into"
+        },
+        {
+          "t": 297.12,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 297.56,
+      "end": 298.78,
+      "text": "Oro en el pecho",
+      "words": [
+        {
+          "t": 297.56,
+          "text": "Oro"
+        },
+        {
+          "t": 298.02,
+          "text": "en"
+        },
+        {
+          "t": 298.14,
+          "text": "el"
+        },
+        {
+          "t": 298.3,
+          "text": "pecho"
+        }
+      ]
+    },
+    {
+      "start": 298.78,
+      "end": 300.0,
+      "text": "Gold in the soul",
+      "words": [
+        {
+          "t": 298.78,
+          "text": "Gold"
+        },
+        {
+          "t": 299.22,
+          "text": "in"
+        },
+        {
+          "t": 299.52,
+          "text": "the"
+        },
+        {
+          "t": 299.62,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 300.0,
+      "end": 301.22,
+      "text": "Built from the pressure",
+      "words": [
+        {
+          "t": 300.0,
+          "text": "Built"
+        },
+        {
+          "t": 300.32,
+          "text": "from"
+        },
+        {
+          "t": 300.58,
+          "text": "the"
+        },
+        {
+          "t": 300.82,
+          "text": "pressure"
+        }
+      ]
+    },
+    {
+      "start": 301.22,
+      "end": 302.46,
+      "text": "Raised by the cold",
+      "words": [
+        {
+          "t": 301.22,
+          "text": "Raised"
+        },
+        {
+          "t": 301.84,
+          "text": "by"
+        },
+        {
+          "t": 301.92,
+          "text": "the"
+        },
+        {
+          "t": 302.1,
+          "text": "cold"
+        }
+      ]
+    },
+    {
+      "start": 302.46,
+      "end": 303.6,
+      "text": "Venimos del boi",
+      "words": [
+        {
+          "t": 302.46,
+          "text": "Venimos"
+        },
+        {
+          "t": 303.06,
+          "text": "del"
+        },
+        {
+          "t": 303.32,
+          "text": "boi"
+        }
+      ]
+    },
+    {
+      "start": 303.6,
+      "end": 304.94,
+      "text": "Now we burn it into gold",
+      "words": [
+        {
+          "t": 303.6,
+          "text": "Now"
+        },
+        {
+          "t": 303.78,
+          "text": "we"
+        },
+        {
+          "t": 303.96,
+          "text": "burn"
+        },
+        {
+          "t": 304.18,
+          "text": "it"
+        },
+        {
+          "t": 304.32,
+          "text": "into"
+        },
+        {
+          "t": 304.54,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 305.32,
+      "end": 306.52,
+      "text": "But we ain't been PESCO",
+      "words": [
+        {
+          "t": 305.32,
+          "text": "But"
+        },
+        {
+          "t": 305.68,
+          "text": "we"
+        },
+        {
+          "t": 305.84,
+          "text": "ain't"
+        },
+        {
+          "t": 306.02,
+          "text": "been"
+        },
+        {
+          "t": 306.1,
+          "text": "PESCO"
+        }
+      ]
+    },
+    {
+      "start": 307.14,
+      "end": 309.28,
+      "text": "Que lo sepa todo el mundo",
+      "words": [
+        {
+          "t": 307.14,
+          "text": "Que"
+        },
+        {
+          "t": 307.5,
+          "text": "lo"
+        },
+        {
+          "t": 308.22,
+          "text": "sepa"
+        },
+        {
+          "t": 308.54,
+          "text": "todo"
+        },
+        {
+          "t": 308.78,
+          "text": "el"
+        },
+        {
+          "t": 308.96,
+          "text": "mundo"
+        }
+      ]
+    },
+    {
+      "start": 309.28,
+      "end": 311.22,
+      "text": "Más alto que oro",
+      "words": [
+        {
+          "t": 309.28,
+          "text": "Más"
+        },
+        {
+          "t": 310.272,
+          "text": "alto"
+        },
+        {
+          "t": 310.5,
+          "text": "que"
+        },
+        {
+          "t": 310.84,
+          "text": "oro"
+        }
+      ]
+    },
+    {
+      "start": 312.064,
+      "end": 313.632,
+      "text": "Más alto que fear",
+      "words": [
+        {
+          "t": 312.064,
+          "text": "Más"
+        },
+        {
+          "t": 312.32,
+          "text": "alto"
+        },
+        {
+          "t": 312.82,
+          "text": "que"
+        },
+        {
+          "t": 313.24,
+          "text": "fear"
+        }
+      ]
+    },
+    {
+      "start": 314.304,
+      "end": 316.98,
+      "text": "Higher than what they said we were",
+      "words": [
+        {
+          "t": 314.304,
+          "text": "Higher"
+        },
+        {
+          "t": 315.02,
+          "text": "than"
+        },
+        {
+          "t": 315.32,
+          "text": "what"
+        },
+        {
+          "t": 315.78,
+          "text": "they"
+        },
+        {
+          "t": 315.88,
+          "text": "said"
+        },
+        {
+          "t": 316.32,
+          "text": "we"
+        },
+        {
+          "t": 316.62,
+          "text": "were"
+        }
+      ]
+    },
+    {
+      "start": 316.98,
+      "end": 318.6,
+      "text": "Todavía aquí",
+      "words": [
+        {
+          "t": 316.98,
+          "text": "Todavía"
+        },
+        {
+          "t": 318.06,
+          "text": "aquí"
+        }
+      ]
+    },
+    {
+      "start": 319.4,
+      "end": 320.12,
+      "text": "Aire",
+      "words": [
+        {
+          "t": 319.4,
+          "text": "Aire"
+        }
+      ]
+    },
+    {
+      "start": 320.12,
+      "end": 321.9,
+      "text": "Estamos afuera en la",
+      "words": [
+        {
+          "t": 320.12,
+          "text": "Estamos"
+        },
+        {
+          "t": 320.94,
+          "text": "afuera"
+        },
+        {
+          "t": 321.74,
+          "text": "en"
+        },
+        {
+          "t": 321.9,
+          "text": "la"
+        }
+      ]
+    },
+    {
+      "start": 321.9,
+      "end": 322.54,
+      "text": "Aire",
+      "words": [
+        {
+          "t": 321.9,
+          "text": "Aire"
+        }
+      ]
+    },
+    {
+      "start": 323.12,
+      "end": 324.58,
+      "text": "Feet on the ground",
+      "words": [
+        {
+          "t": 323.12,
+          "text": "Feet"
+        },
+        {
+          "t": 323.52,
+          "text": "on"
+        },
+        {
+          "t": 323.98,
+          "text": "the"
+        },
+        {
+          "t": 324.24,
+          "text": "ground"
+        }
+      ]
+    },
+    {
+      "start": 324.58,
+      "end": 325.48,
+      "text": "Mente clara",
+      "words": [
+        {
+          "t": 324.58,
+          "text": "Mente"
+        },
+        {
+          "t": 324.98,
+          "text": "clara"
+        }
+      ]
+    },
+    {
+      "start": 325.48,
+      "end": 326.08,
+      "text": "Oro",
+      "words": [
+        {
+          "t": 325.48,
+          "text": "Oro"
+        }
+      ]
+    },
+    {
+      "start": 326.5,
+      "end": 327.68,
+      "text": "From the boy",
+      "words": [
+        {
+          "t": 326.5,
+          "text": "From"
+        },
+        {
+          "t": 326.9,
+          "text": "the"
+        },
+        {
+          "t": 327.28,
+          "text": "boy"
+        }
+      ]
+    },
+    {
+      "start": 327.68,
+      "end": 329.08,
+      "text": "Cast the gold",
+      "words": [
+        {
+          "t": 327.68,
+          "text": "Cast"
+        },
+        {
+          "t": 328.36,
+          "text": "the"
+        },
+        {
+          "t": 328.68,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 329.08,
+      "end": 330.2,
+      "text": "Venimos del boi",
+      "words": [
+        {
+          "t": 329.08,
+          "text": "Venimos"
+        },
+        {
+          "t": 329.7,
+          "text": "del"
+        },
+        {
+          "t": 329.92,
+          "text": "boi"
+        }
+      ]
+    },
+    {
+      "start": 330.2,
+      "end": 331.58,
+      "text": "Now we burn it into gold",
+      "words": [
+        {
+          "t": 330.2,
+          "text": "Now"
+        },
+        {
+          "t": 330.42,
+          "text": "we"
+        },
+        {
+          "t": 330.56,
+          "text": "burn"
+        },
+        {
+          "t": 330.78,
+          "text": "it"
+        },
+        {
+          "t": 330.94,
+          "text": "into"
+        },
+        {
+          "t": 331.14,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 332.72,
+      "end": 333.52,
+      "text": "Feet on the ground",
+      "words": [
+        {
+          "t": 332.72,
+          "text": "Feet"
+        },
+        {
+          "t": 333.52,
+          "text": "on"
+        },
+        {
+          "t": 333.52,
+          "text": "the"
+        },
+        {
+          "t": 333.52,
+          "text": "ground"
+        }
+      ]
+    }
+  ]
+}

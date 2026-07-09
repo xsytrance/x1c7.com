@@ -1,0 +1,4649 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.22,
+      "end": 1.42,
+      "text": "He turned up,",
+      "words": [
+        {
+          "t": 0.22,
+          "text": "He"
+        },
+        {
+          "t": 0.32,
+          "text": "turned"
+        },
+        {
+          "t": 0.88,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 1.58,
+      "end": 1.92,
+      "text": "every,",
+      "words": [
+        {
+          "t": 1.58,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 2.02,
+      "end": 2.5,
+      "text": "every,",
+      "words": [
+        {
+          "t": 2.02,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 2.54,
+      "end": 2.94,
+      "text": "every,",
+      "words": [
+        {
+          "t": 2.54,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 3.0,
+      "end": 3.42,
+      "text": "every,",
+      "words": [
+        {
+          "t": 3.0,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 3.54,
+      "end": 4.02,
+      "text": "every,",
+      "words": [
+        {
+          "t": 3.54,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 4.02,
+      "end": 4.54,
+      "text": "every,",
+      "words": [
+        {
+          "t": 4.02,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 4.54,
+      "end": 5.12,
+      "text": "every,",
+      "words": [
+        {
+          "t": 4.54,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 5.12,
+      "end": 5.5,
+      "text": "every,",
+      "words": [
+        {
+          "t": 5.12,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 5.5,
+      "end": 5.9,
+      "text": "every,",
+      "words": [
+        {
+          "t": 5.5,
+          "text": "every,"
+        }
+      ]
+    },
+    {
+      "start": 6.02,
+      "end": 6.12,
+      "text": "step,",
+      "words": [
+        {
+          "t": 6.02,
+          "text": "step,"
+        }
+      ]
+    },
+    {
+      "start": 6.52,
+      "end": 7.38,
+      "text": "feel loud,",
+      "words": [
+        {
+          "t": 6.52,
+          "text": "feel"
+        },
+        {
+          "t": 6.9,
+          "text": "loud,"
+        }
+      ]
+    },
+    {
+      "start": 7.64,
+      "end": 8.84,
+      "text": "slow it down",
+      "words": [
+        {
+          "t": 7.64,
+          "text": "slow"
+        },
+        {
+          "t": 8.14,
+          "text": "it"
+        },
+        {
+          "t": 8.58,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 8.84,
+      "end": 9.9,
+      "text": "Summer drip,",
+      "words": [
+        {
+          "t": 8.84,
+          "text": "Summer"
+        },
+        {
+          "t": 9.4,
+          "text": "drip,"
+        }
+      ]
+    },
+    {
+      "start": 10.08,
+      "end": 10.82,
+      "text": "summer drip,",
+      "words": [
+        {
+          "t": 10.08,
+          "text": "summer"
+        },
+        {
+          "t": 10.4,
+          "text": "drip,"
+        }
+      ]
+    },
+    {
+      "start": 11.0,
+      "end": 11.86,
+      "text": "hips flip,",
+      "words": [
+        {
+          "t": 11.0,
+          "text": "hips"
+        },
+        {
+          "t": 11.38,
+          "text": "flip,"
+        }
+      ]
+    },
+    {
+      "start": 11.96,
+      "end": 12.36,
+      "text": "flip,",
+      "words": [
+        {
+          "t": 11.96,
+          "text": "flip,"
+        }
+      ]
+    },
+    {
+      "start": 12.44,
+      "end": 13.26,
+      "text": "walk me",
+      "words": [
+        {
+          "t": 12.44,
+          "text": "walk"
+        },
+        {
+          "t": 12.8,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 15.28,
+      "end": 15.98,
+      "text": "I,",
+      "words": [
+        {
+          "t": 15.28,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 15.98,
+      "end": 16.02,
+      "text": "I,",
+      "words": [
+        {
+          "t": 15.98,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.22,
+      "end": 16.34,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.22,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.34,
+      "end": 16.58,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.34,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.58,
+      "end": 16.8,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.58,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.8,
+      "end": 16.84,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.8,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.84,
+      "end": 16.88,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.84,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.88,
+      "end": 16.88,
+      "text": "I,",
+      "words": [
+        {
+          "t": 16.88,
+          "text": "I,"
+        }
+      ]
+    },
+    {
+      "start": 16.88,
+      "end": 20.24,
+      "text": "I feel the sun just go under the daylight",
+      "words": [
+        {
+          "t": 16.88,
+          "text": "I"
+        },
+        {
+          "t": 16.88,
+          "text": "feel"
+        },
+        {
+          "t": 17.16,
+          "text": "the"
+        },
+        {
+          "t": 17.5,
+          "text": "sun"
+        },
+        {
+          "t": 17.84,
+          "text": "just"
+        },
+        {
+          "t": 18.3,
+          "text": "go"
+        },
+        {
+          "t": 18.82,
+          "text": "under"
+        },
+        {
+          "t": 19.2,
+          "text": "the"
+        },
+        {
+          "t": 19.54,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 20.24,
+      "end": 24.28,
+      "text": "Hips swing slow, move it smooth in the midnight",
+      "words": [
+        {
+          "t": 20.24,
+          "text": "Hips"
+        },
+        {
+          "t": 21.0,
+          "text": "swing"
+        },
+        {
+          "t": 21.34,
+          "text": "slow,"
+        },
+        {
+          "t": 22.08,
+          "text": "move"
+        },
+        {
+          "t": 22.38,
+          "text": "it"
+        },
+        {
+          "t": 22.56,
+          "text": "smooth"
+        },
+        {
+          "t": 22.82,
+          "text": "in"
+        },
+        {
+          "t": 23.36,
+          "text": "the"
+        },
+        {
+          "t": 23.5,
+          "text": "midnight"
+        }
+      ]
+    },
+    {
+      "start": 24.28,
+      "end": 27.82,
+      "text": "Heart stay cold, but my stride got flame",
+      "words": [
+        {
+          "t": 24.28,
+          "text": "Heart"
+        },
+        {
+          "t": 24.86,
+          "text": "stay"
+        },
+        {
+          "t": 25.26,
+          "text": "cold,"
+        },
+        {
+          "t": 26.26,
+          "text": "but"
+        },
+        {
+          "t": 26.36,
+          "text": "my"
+        },
+        {
+          "t": 26.5,
+          "text": "stride"
+        },
+        {
+          "t": 27.02,
+          "text": "got"
+        },
+        {
+          "t": 27.32,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 27.82,
+      "end": 33.9,
+      "text": "Every little still got a high class game Smile so sweet,",
+      "words": [
+        {
+          "t": 27.82,
+          "text": "Every"
+        },
+        {
+          "t": 28.5,
+          "text": "little"
+        },
+        {
+          "t": 29.3,
+          "text": "still"
+        },
+        {
+          "t": 29.86,
+          "text": "got"
+        },
+        {
+          "t": 30.28,
+          "text": "a"
+        },
+        {
+          "t": 30.58,
+          "text": "high"
+        },
+        {
+          "t": 30.9,
+          "text": "class"
+        },
+        {
+          "t": 31.38,
+          "text": "game"
+        },
+        {
+          "t": 31.92,
+          "text": "Smile"
+        },
+        {
+          "t": 32.64,
+          "text": "so"
+        },
+        {
+          "t": 33.18,
+          "text": "sweet,"
+        }
+      ]
+    },
+    {
+      "start": 34.04,
+      "end": 35.86,
+      "text": "with the timing just right",
+      "words": [
+        {
+          "t": 34.04,
+          "text": "with"
+        },
+        {
+          "t": 34.34,
+          "text": "the"
+        },
+        {
+          "t": 34.54,
+          "text": "timing"
+        },
+        {
+          "t": 35.04,
+          "text": "just"
+        },
+        {
+          "t": 35.34,
+          "text": "right"
+        }
+      ]
+    },
+    {
+      "start": 35.86,
+      "end": 36.5,
+      "text": "Brown,",
+      "words": [
+        {
+          "t": 35.86,
+          "text": "Brown,"
+        }
+      ]
+    },
+    {
+      "start": 36.5,
+      "end": 36.72,
+      "text": "brown,",
+      "words": [
+        {
+          "t": 36.5,
+          "text": "brown,"
+        }
+      ]
+    },
+    {
+      "start": 36.72,
+      "end": 39.88,
+      "text": "brown skin shine With the street lamp light",
+      "words": [
+        {
+          "t": 36.72,
+          "text": "brown"
+        },
+        {
+          "t": 37.04,
+          "text": "skin"
+        },
+        {
+          "t": 37.22,
+          "text": "shine"
+        },
+        {
+          "t": 37.8,
+          "text": "With"
+        },
+        {
+          "t": 38.36,
+          "text": "the"
+        },
+        {
+          "t": 38.54,
+          "text": "street"
+        },
+        {
+          "t": 38.92,
+          "text": "lamp"
+        },
+        {
+          "t": 39.42,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 40.74,
+      "end": 41.86,
+      "text": "Perfume thick,",
+      "words": [
+        {
+          "t": 40.74,
+          "text": "Perfume"
+        },
+        {
+          "t": 41.3,
+          "text": "thick,"
+        }
+      ]
+    },
+    {
+      "start": 41.96,
+      "end": 44.5,
+      "text": "got em stuck in the body All,",
+      "words": [
+        {
+          "t": 41.96,
+          "text": "got"
+        },
+        {
+          "t": 42.48,
+          "text": "em"
+        },
+        {
+          "t": 42.58,
+          "text": "stuck"
+        },
+        {
+          "t": 42.78,
+          "text": "in"
+        },
+        {
+          "t": 43.12,
+          "text": "the"
+        },
+        {
+          "t": 43.3,
+          "text": "body"
+        },
+        {
+          "t": 43.72,
+          "text": "All,"
+        }
+      ]
+    },
+    {
+      "start": 44.5,
+      "end": 44.72,
+      "text": "all,",
+      "words": [
+        {
+          "t": 44.5,
+          "text": "all,"
+        }
+      ]
+    },
+    {
+      "start": 44.72,
+      "end": 45.96,
+      "text": "all these hungry eyes",
+      "words": [
+        {
+          "t": 44.72,
+          "text": "all"
+        },
+        {
+          "t": 44.9,
+          "text": "these"
+        },
+        {
+          "t": 45.12,
+          "text": "hungry"
+        },
+        {
+          "t": 45.52,
+          "text": "eyes"
+        }
+      ]
+    },
+    {
+      "start": 45.96,
+      "end": 47.82,
+      "text": "Got em losing they mind",
+      "words": [
+        {
+          "t": 45.96,
+          "text": "Got"
+        },
+        {
+          "t": 46.4,
+          "text": "em"
+        },
+        {
+          "t": 46.6,
+          "text": "losing"
+        },
+        {
+          "t": 46.96,
+          "text": "they"
+        },
+        {
+          "t": 47.36,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 49.71,
+      "end": 50.34,
+      "text": "Walked in the spot,",
+      "words": [
+        {
+          "t": 49.71,
+          "text": "Walked"
+        },
+        {
+          "t": 50.06,
+          "text": "in"
+        },
+        {
+          "t": 50.08,
+          "text": "the"
+        },
+        {
+          "t": 50.2,
+          "text": "spot,"
+        }
+      ]
+    },
+    {
+      "start": 50.46,
+      "end": 53.46,
+      "text": "had to sleep on my tone Whole room stand like a queen on a throne",
+      "words": [
+        {
+          "t": 50.46,
+          "text": "had"
+        },
+        {
+          "t": 50.58,
+          "text": "to"
+        },
+        {
+          "t": 50.68,
+          "text": "sleep"
+        },
+        {
+          "t": 50.86,
+          "text": "on"
+        },
+        {
+          "t": 51.0,
+          "text": "my"
+        },
+        {
+          "t": 51.12,
+          "text": "tone"
+        },
+        {
+          "t": 51.38,
+          "text": "Whole"
+        },
+        {
+          "t": 51.86,
+          "text": "room"
+        },
+        {
+          "t": 52.16,
+          "text": "stand"
+        },
+        {
+          "t": 52.32,
+          "text": "like"
+        },
+        {
+          "t": 52.58,
+          "text": "a"
+        },
+        {
+          "t": 52.72,
+          "text": "queen"
+        },
+        {
+          "t": 52.92,
+          "text": "on"
+        },
+        {
+          "t": 53.1,
+          "text": "a"
+        },
+        {
+          "t": 53.18,
+          "text": "throne"
+        }
+      ]
+    },
+    {
+      "start": 53.46,
+      "end": 54.46,
+      "text": "Dance floor quiet,",
+      "words": [
+        {
+          "t": 53.46,
+          "text": "Dance"
+        },
+        {
+          "t": 53.94,
+          "text": "floor"
+        },
+        {
+          "t": 54.1,
+          "text": "quiet,"
+        }
+      ]
+    },
+    {
+      "start": 54.52,
+      "end": 56.46,
+      "text": "but the glance is loud Every lens locked in,",
+      "words": [
+        {
+          "t": 54.52,
+          "text": "but"
+        },
+        {
+          "t": 54.62,
+          "text": "the"
+        },
+        {
+          "t": 54.72,
+          "text": "glance"
+        },
+        {
+          "t": 54.98,
+          "text": "is"
+        },
+        {
+          "t": 55.14,
+          "text": "loud"
+        },
+        {
+          "t": 55.4,
+          "text": "Every"
+        },
+        {
+          "t": 55.68,
+          "text": "lens"
+        },
+        {
+          "t": 55.92,
+          "text": "locked"
+        },
+        {
+          "t": 56.18,
+          "text": "in,"
+        }
+      ]
+    },
+    {
+      "start": 56.52,
+      "end": 57.42,
+      "text": "every worker so proud",
+      "words": [
+        {
+          "t": 56.52,
+          "text": "every"
+        },
+        {
+          "t": 56.7,
+          "text": "worker"
+        },
+        {
+          "t": 56.92,
+          "text": "so"
+        },
+        {
+          "t": 57.08,
+          "text": "proud"
+        }
+      ]
+    },
+    {
+      "start": 57.42,
+      "end": 58.5,
+      "text": "Long lace off hands,",
+      "words": [
+        {
+          "t": 57.42,
+          "text": "Long"
+        },
+        {
+          "t": 57.64,
+          "text": "lace"
+        },
+        {
+          "t": 57.92,
+          "text": "off"
+        },
+        {
+          "t": 58.2,
+          "text": "hands,"
+        }
+      ]
+    },
+    {
+      "start": 58.7,
+      "end": 61.54,
+      "text": "curves on the rise Tiny little waist doing work oversize",
+      "words": [
+        {
+          "t": 58.7,
+          "text": "curves"
+        },
+        {
+          "t": 58.94,
+          "text": "on"
+        },
+        {
+          "t": 59.12,
+          "text": "the"
+        },
+        {
+          "t": 59.2,
+          "text": "rise"
+        },
+        {
+          "t": 59.48,
+          "text": "Tiny"
+        },
+        {
+          "t": 59.84,
+          "text": "little"
+        },
+        {
+          "t": 60.12,
+          "text": "waist"
+        },
+        {
+          "t": 60.46,
+          "text": "doing"
+        },
+        {
+          "t": 60.66,
+          "text": "work"
+        },
+        {
+          "t": 60.92,
+          "text": "oversize"
+        }
+      ]
+    },
+    {
+      "start": 61.54,
+      "end": 62.88,
+      "text": "Gloves gain smooth neckline,",
+      "words": [
+        {
+          "t": 61.54,
+          "text": "Gloves"
+        },
+        {
+          "t": 61.98,
+          "text": "gain"
+        },
+        {
+          "t": 62.18,
+          "text": "smooth"
+        },
+        {
+          "t": 62.34,
+          "text": "neckline,"
+        }
+      ]
+    },
+    {
+      "start": 63.0,
+      "end": 65.44,
+      "text": "sitting real neat Gold chain restin' while my last so sweet",
+      "words": [
+        {
+          "t": 63.0,
+          "text": "sitting"
+        },
+        {
+          "t": 63.16,
+          "text": "real"
+        },
+        {
+          "t": 63.4,
+          "text": "neat"
+        },
+        {
+          "t": 63.64,
+          "text": "Gold"
+        },
+        {
+          "t": 63.94,
+          "text": "chain"
+        },
+        {
+          "t": 64.12,
+          "text": "restin'"
+        },
+        {
+          "t": 64.54,
+          "text": "while"
+        },
+        {
+          "t": 64.6,
+          "text": "my"
+        },
+        {
+          "t": 64.76,
+          "text": "last"
+        },
+        {
+          "t": 64.96,
+          "text": "so"
+        },
+        {
+          "t": 65.16,
+          "text": "sweet"
+        }
+      ]
+    },
+    {
+      "start": 65.44,
+      "end": 66.42,
+      "text": "This dress fit tight,",
+      "words": [
+        {
+          "t": 65.44,
+          "text": "This"
+        },
+        {
+          "t": 65.66,
+          "text": "dress"
+        },
+        {
+          "t": 65.94,
+          "text": "fit"
+        },
+        {
+          "t": 66.12,
+          "text": "tight,"
+        }
+      ]
+    },
+    {
+      "start": 66.56,
+      "end": 68.12,
+      "text": "little slit on the side Movin' through",
+      "words": [
+        {
+          "t": 66.56,
+          "text": "little"
+        },
+        {
+          "t": 66.66,
+          "text": "slit"
+        },
+        {
+          "t": 66.86,
+          "text": "on"
+        },
+        {
+          "t": 67.16,
+          "text": "the"
+        },
+        {
+          "t": 67.22,
+          "text": "side"
+        },
+        {
+          "t": 67.5,
+          "text": "Movin'"
+        },
+        {
+          "t": 68.0,
+          "text": "through"
+        }
+      ]
+    },
+    {
+      "start": 68.12,
+      "end": 69.54,
+      "text": "the crowd with my natural pride",
+      "words": [
+        {
+          "t": 68.12,
+          "text": "the"
+        },
+        {
+          "t": 68.26,
+          "text": "crowd"
+        },
+        {
+          "t": 68.48,
+          "text": "with"
+        },
+        {
+          "t": 68.64,
+          "text": "my"
+        },
+        {
+          "t": 68.74,
+          "text": "natural"
+        },
+        {
+          "t": 69.08,
+          "text": "pride"
+        }
+      ]
+    },
+    {
+      "start": 69.54,
+      "end": 70.44,
+      "text": "Didn't count high,",
+      "words": [
+        {
+          "t": 69.54,
+          "text": "Didn't"
+        },
+        {
+          "t": 69.98,
+          "text": "count"
+        },
+        {
+          "t": 70.18,
+          "text": "high,"
+        }
+      ]
+    },
+    {
+      "start": 70.52,
+      "end": 72.46,
+      "text": "but I'm tryna stay clean Loyal to my peace,",
+      "words": [
+        {
+          "t": 70.52,
+          "text": "but"
+        },
+        {
+          "t": 70.64,
+          "text": "I'm"
+        },
+        {
+          "t": 70.8,
+          "text": "tryna"
+        },
+        {
+          "t": 70.9,
+          "text": "stay"
+        },
+        {
+          "t": 71.1,
+          "text": "clean"
+        },
+        {
+          "t": 71.48,
+          "text": "Loyal"
+        },
+        {
+          "t": 72.04,
+          "text": "to"
+        },
+        {
+          "t": 72.1,
+          "text": "my"
+        },
+        {
+          "t": 72.26,
+          "text": "peace,"
+        }
+      ]
+    },
+    {
+      "start": 72.5,
+      "end": 73.52,
+      "text": "steady guard my dreams",
+      "words": [
+        {
+          "t": 72.5,
+          "text": "steady"
+        },
+        {
+          "t": 72.68,
+          "text": "guard"
+        },
+        {
+          "t": 72.92,
+          "text": "my"
+        },
+        {
+          "t": 73.1,
+          "text": "dreams"
+        }
+      ]
+    },
+    {
+      "start": 73.52,
+      "end": 79.26,
+      "text": "Sundress glow under the daylight Hips swing slow in the midnight",
+      "words": [
+        {
+          "t": 73.52,
+          "text": "Sundress"
+        },
+        {
+          "t": 74.54,
+          "text": "glow"
+        },
+        {
+          "t": 74.92,
+          "text": "under"
+        },
+        {
+          "t": 75.32,
+          "text": "the"
+        },
+        {
+          "t": 75.66,
+          "text": "daylight"
+        },
+        {
+          "t": 76.26,
+          "text": "Hips"
+        },
+        {
+          "t": 77.1,
+          "text": "swing"
+        },
+        {
+          "t": 77.52,
+          "text": "slow"
+        },
+        {
+          "t": 78.02,
+          "text": "in"
+        },
+        {
+          "t": 78.46,
+          "text": "the"
+        },
+        {
+          "t": 78.64,
+          "text": "midnight"
+        }
+      ]
+    },
+    {
+      "start": 79.26,
+      "end": 80.08,
+      "text": "Heart,",
+      "words": [
+        {
+          "t": 79.26,
+          "text": "Heart,"
+        }
+      ]
+    },
+    {
+      "start": 80.08,
+      "end": 80.3,
+      "text": "heart,",
+      "words": [
+        {
+          "t": 80.08,
+          "text": "heart,"
+        }
+      ]
+    },
+    {
+      "start": 80.3,
+      "end": 80.58,
+      "text": "heart,",
+      "words": [
+        {
+          "t": 80.3,
+          "text": "heart,"
+        }
+      ]
+    },
+    {
+      "start": 80.62,
+      "end": 84.4,
+      "text": "heart stay cold But my stride got flanked",
+      "words": [
+        {
+          "t": 80.62,
+          "text": "heart"
+        },
+        {
+          "t": 81.0,
+          "text": "stay"
+        },
+        {
+          "t": 81.4,
+          "text": "cold"
+        },
+        {
+          "t": 82.06,
+          "text": "But"
+        },
+        {
+          "t": 82.5,
+          "text": "my"
+        },
+        {
+          "t": 82.62,
+          "text": "stride"
+        },
+        {
+          "t": 83.16,
+          "text": "got"
+        },
+        {
+          "t": 83.44,
+          "text": "flanked"
+        }
+      ]
+    },
+    {
+      "start": 84.4,
+      "end": 87.4,
+      "text": "Every little still got a high class game Smile so sweet,",
+      "words": [
+        {
+          "t": 84.4,
+          "text": "Every"
+        },
+        {
+          "t": 84.64,
+          "text": "little"
+        },
+        {
+          "t": 85.42,
+          "text": "still"
+        },
+        {
+          "t": 86.0,
+          "text": "got"
+        },
+        {
+          "t": 86.36,
+          "text": "a"
+        },
+        {
+          "t": 86.72,
+          "text": "high"
+        },
+        {
+          "t": 87.0,
+          "text": "class"
+        },
+        {
+          "t": 87.4,
+          "text": "game"
+        },
+        {
+          "t": 87.4,
+          "text": "Smile"
+        },
+        {
+          "t": 87.4,
+          "text": "so"
+        },
+        {
+          "t": 87.4,
+          "text": "sweet,"
+        }
+      ]
+    },
+    {
+      "start": 87.4,
+      "end": 87.4,
+      "text": "with the timing just right",
+      "words": [
+        {
+          "t": 87.4,
+          "text": "with"
+        },
+        {
+          "t": 87.4,
+          "text": "the"
+        },
+        {
+          "t": 87.4,
+          "text": "timing"
+        },
+        {
+          "t": 87.4,
+          "text": "just"
+        },
+        {
+          "t": 87.4,
+          "text": "right"
+        }
+      ]
+    },
+    {
+      "start": 87.4,
+      "end": 89.2,
+      "text": "Hold up, hold up",
+      "words": [
+        {
+          "t": 87.4,
+          "text": "Hold"
+        },
+        {
+          "t": 88.2,
+          "text": "up,"
+        },
+        {
+          "t": 88.78,
+          "text": "hold"
+        },
+        {
+          "t": 89.0,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 89.2,
+      "end": 92.52,
+      "text": "Let me speak on my girls for a second Best friend bad,",
+      "words": [
+        {
+          "t": 89.2,
+          "text": "Let"
+        },
+        {
+          "t": 89.4,
+          "text": "me"
+        },
+        {
+          "t": 89.66,
+          "text": "speak"
+        },
+        {
+          "t": 89.96,
+          "text": "on"
+        },
+        {
+          "t": 90.46,
+          "text": "my"
+        },
+        {
+          "t": 90.72,
+          "text": "girls"
+        },
+        {
+          "t": 91.04,
+          "text": "for"
+        },
+        {
+          "t": 91.16,
+          "text": "a"
+        },
+        {
+          "t": 91.3,
+          "text": "second"
+        },
+        {
+          "t": 91.66,
+          "text": "Best"
+        },
+        {
+          "t": 92.0,
+          "text": "friend"
+        },
+        {
+          "t": 92.26,
+          "text": "bad,"
+        }
+      ]
+    },
+    {
+      "start": 92.6,
+      "end": 93.54,
+      "text": "that's a whole lot of pressure",
+      "words": [
+        {
+          "t": 92.6,
+          "text": "that's"
+        },
+        {
+          "t": 92.8,
+          "text": "a"
+        },
+        {
+          "t": 92.8,
+          "text": "whole"
+        },
+        {
+          "t": 93.0,
+          "text": "lot"
+        },
+        {
+          "t": 93.2,
+          "text": "of"
+        },
+        {
+          "t": 93.3,
+          "text": "pressure"
+        }
+      ]
+    },
+    {
+      "start": 93.54,
+      "end": 95.82,
+      "text": "One got curls that can make time freeze The",
+      "words": [
+        {
+          "t": 93.54,
+          "text": "One"
+        },
+        {
+          "t": 94.02,
+          "text": "got"
+        },
+        {
+          "t": 94.2,
+          "text": "curls"
+        },
+        {
+          "t": 94.56,
+          "text": "that"
+        },
+        {
+          "t": 94.68,
+          "text": "can"
+        },
+        {
+          "t": 94.8,
+          "text": "make"
+        },
+        {
+          "t": 95.0,
+          "text": "time"
+        },
+        {
+          "t": 95.24,
+          "text": "freeze"
+        },
+        {
+          "t": 95.56,
+          "text": "The"
+        }
+      ]
+    },
+    {
+      "start": 95.82,
+      "end": 97.54,
+      "text": "other walk by and the streets say please",
+      "words": [
+        {
+          "t": 95.82,
+          "text": "other"
+        },
+        {
+          "t": 96.0,
+          "text": "walk"
+        },
+        {
+          "t": 96.22,
+          "text": "by"
+        },
+        {
+          "t": 96.46,
+          "text": "and"
+        },
+        {
+          "t": 96.68,
+          "text": "the"
+        },
+        {
+          "t": 96.76,
+          "text": "streets"
+        },
+        {
+          "t": 97.02,
+          "text": "say"
+        },
+        {
+          "t": 97.22,
+          "text": "please"
+        }
+      ]
+    },
+    {
+      "start": 97.54,
+      "end": 99.56,
+      "text": "You like long hair like strong mind better",
+      "words": [
+        {
+          "t": 97.54,
+          "text": "You"
+        },
+        {
+          "t": 97.82,
+          "text": "like"
+        },
+        {
+          "t": 97.98,
+          "text": "long"
+        },
+        {
+          "t": 98.24,
+          "text": "hair"
+        },
+        {
+          "t": 98.5,
+          "text": "like"
+        },
+        {
+          "t": 98.72,
+          "text": "strong"
+        },
+        {
+          "t": 99.0,
+          "text": "mind"
+        },
+        {
+          "t": 99.28,
+          "text": "better"
+        }
+      ]
+    },
+    {
+      "start": 99.56,
+      "end": 101.54,
+      "text": "Side eye dilly like a hairpin letter",
+      "words": [
+        {
+          "t": 99.56,
+          "text": "Side"
+        },
+        {
+          "t": 100.04,
+          "text": "eye"
+        },
+        {
+          "t": 100.28,
+          "text": "dilly"
+        },
+        {
+          "t": 100.52,
+          "text": "like"
+        },
+        {
+          "t": 100.7,
+          "text": "a"
+        },
+        {
+          "t": 100.86,
+          "text": "hairpin"
+        },
+        {
+          "t": 101.2,
+          "text": "letter"
+        }
+      ]
+    },
+    {
+      "start": 101.54,
+      "end": 104.7,
+      "text": "Bold red lip make the whole block slow But ring on the hammy,",
+      "words": [
+        {
+          "t": 101.54,
+          "text": "Bold"
+        },
+        {
+          "t": 102.0,
+          "text": "red"
+        },
+        {
+          "t": 102.24,
+          "text": "lip"
+        },
+        {
+          "t": 102.56,
+          "text": "make"
+        },
+        {
+          "t": 102.7,
+          "text": "the"
+        },
+        {
+          "t": 102.86,
+          "text": "whole"
+        },
+        {
+          "t": 103.02,
+          "text": "block"
+        },
+        {
+          "t": 103.26,
+          "text": "slow"
+        },
+        {
+          "t": 103.48,
+          "text": "But"
+        },
+        {
+          "t": 103.72,
+          "text": "ring"
+        },
+        {
+          "t": 104.0,
+          "text": "on"
+        },
+        {
+          "t": 104.26,
+          "text": "the"
+        },
+        {
+          "t": 104.36,
+          "text": "hammy,"
+        }
+      ]
+    },
+    {
+      "start": 104.72,
+      "end": 105.58,
+      "text": "we keep that closed",
+      "words": [
+        {
+          "t": 104.72,
+          "text": "we"
+        },
+        {
+          "t": 104.82,
+          "text": "keep"
+        },
+        {
+          "t": 105.02,
+          "text": "that"
+        },
+        {
+          "t": 105.26,
+          "text": "closed"
+        }
+      ]
+    },
+    {
+      "start": 105.58,
+      "end": 107.62,
+      "text": "Tan line sharp from the beach last night",
+      "words": [
+        {
+          "t": 105.58,
+          "text": "Tan"
+        },
+        {
+          "t": 106.06,
+          "text": "line"
+        },
+        {
+          "t": 106.24,
+          "text": "sharp"
+        },
+        {
+          "t": 106.52,
+          "text": "from"
+        },
+        {
+          "t": 106.74,
+          "text": "the"
+        },
+        {
+          "t": 106.84,
+          "text": "beach"
+        },
+        {
+          "t": 107.06,
+          "text": "last"
+        },
+        {
+          "t": 107.24,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 107.62,
+      "end": 109.58,
+      "text": "Crop top sittin' with the waistlines laid",
+      "words": [
+        {
+          "t": 107.62,
+          "text": "Crop"
+        },
+        {
+          "t": 108.06,
+          "text": "top"
+        },
+        {
+          "t": 108.26,
+          "text": "sittin'"
+        },
+        {
+          "t": 108.64,
+          "text": "with"
+        },
+        {
+          "t": 108.7,
+          "text": "the"
+        },
+        {
+          "t": 108.86,
+          "text": "waistlines"
+        },
+        {
+          "t": 109.28,
+          "text": "laid"
+        }
+      ]
+    },
+    {
+      "start": 109.58,
+      "end": 110.54,
+      "text": "Denim shorts fitted,",
+      "words": [
+        {
+          "t": 109.58,
+          "text": "Denim"
+        },
+        {
+          "t": 110.08,
+          "text": "shorts"
+        },
+        {
+          "t": 110.22,
+          "text": "fitted,"
+        }
+      ]
+    },
+    {
+      "start": 110.58,
+      "end": 112.54,
+      "text": "sun-caulked at crease We summertime fine,",
+      "words": [
+        {
+          "t": 110.58,
+          "text": "sun"
+        },
+        {
+          "t": 110.74,
+          "text": "-caulked"
+        },
+        {
+          "t": 111.14,
+          "text": "at"
+        },
+        {
+          "t": 111.26,
+          "text": "crease"
+        },
+        {
+          "t": 111.56,
+          "text": "We"
+        },
+        {
+          "t": 111.82,
+          "text": "summertime"
+        },
+        {
+          "t": 112.14,
+          "text": "fine,"
+        }
+      ]
+    },
+    {
+      "start": 112.62,
+      "end": 113.64,
+      "text": "but we move with peace",
+      "words": [
+        {
+          "t": 112.62,
+          "text": "but"
+        },
+        {
+          "t": 112.72,
+          "text": "we"
+        },
+        {
+          "t": 112.86,
+          "text": "move"
+        },
+        {
+          "t": 113.04,
+          "text": "with"
+        },
+        {
+          "t": 113.26,
+          "text": "peace"
+        }
+      ]
+    },
+    {
+      "start": 113.64,
+      "end": 116.18,
+      "text": "Cool, cool, cool, cool, cool, that in the yellow",
+      "words": [
+        {
+          "t": 113.64,
+          "text": "Cool,"
+        },
+        {
+          "t": 114.12,
+          "text": "cool,"
+        },
+        {
+          "t": 114.34,
+          "text": "cool,"
+        },
+        {
+          "t": 114.78,
+          "text": "cool,"
+        },
+        {
+          "t": 114.84,
+          "text": "cool,"
+        },
+        {
+          "t": 115.14,
+          "text": "that"
+        },
+        {
+          "t": 115.26,
+          "text": "in"
+        },
+        {
+          "t": 115.6,
+          "text": "the"
+        },
+        {
+          "t": 115.76,
+          "text": "yellow"
+        }
+      ]
+    },
+    {
+      "start": 116.18,
+      "end": 117.38,
+      "text": "It glow, stay bright, little slit in the dark",
+      "words": [
+        {
+          "t": 116.18,
+          "text": "It"
+        },
+        {
+          "t": 116.46,
+          "text": "glow,"
+        },
+        {
+          "t": 116.6,
+          "text": "stay"
+        },
+        {
+          "t": 116.74,
+          "text": "bright,"
+        },
+        {
+          "t": 117.14,
+          "text": "little"
+        },
+        {
+          "t": 117.3,
+          "text": "slit"
+        },
+        {
+          "t": 117.38,
+          "text": "in"
+        },
+        {
+          "t": 117.38,
+          "text": "the"
+        },
+        {
+          "t": 117.38,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 117.98,
+      "end": 120.12,
+      "text": "One in the streets got that heartbeat wide",
+      "words": [
+        {
+          "t": 117.98,
+          "text": "One"
+        },
+        {
+          "t": 118.4,
+          "text": "in"
+        },
+        {
+          "t": 118.76,
+          "text": "the"
+        },
+        {
+          "t": 118.88,
+          "text": "streets"
+        },
+        {
+          "t": 119.04,
+          "text": "got"
+        },
+        {
+          "t": 119.26,
+          "text": "that"
+        },
+        {
+          "t": 119.42,
+          "text": "heartbeat"
+        },
+        {
+          "t": 119.7,
+          "text": "wide"
+        }
+      ]
+    },
+    {
+      "start": 120.15,
+      "end": 122.08,
+      "text": "One in the jeans got the whole block tied",
+      "words": [
+        {
+          "t": 120.15,
+          "text": "One"
+        },
+        {
+          "t": 120.6,
+          "text": "in"
+        },
+        {
+          "t": 120.78,
+          "text": "the"
+        },
+        {
+          "t": 120.9,
+          "text": "jeans"
+        },
+        {
+          "t": 121.1,
+          "text": "got"
+        },
+        {
+          "t": 121.26,
+          "text": "the"
+        },
+        {
+          "t": 121.4,
+          "text": "whole"
+        },
+        {
+          "t": 121.58,
+          "text": "block"
+        },
+        {
+          "t": 121.84,
+          "text": "tied"
+        }
+      ]
+    },
+    {
+      "start": 122.08,
+      "end": 123.06,
+      "text": "I got vows on paper,",
+      "words": [
+        {
+          "t": 122.08,
+          "text": "I"
+        },
+        {
+          "t": 122.3,
+          "text": "got"
+        },
+        {
+          "t": 122.38,
+          "text": "vows"
+        },
+        {
+          "t": 122.66,
+          "text": "on"
+        },
+        {
+          "t": 122.84,
+          "text": "paper,"
+        }
+      ]
+    },
+    {
+      "start": 123.14,
+      "end": 125.62,
+      "text": "but I still won't slide Stand ground,",
+      "words": [
+        {
+          "t": 123.14,
+          "text": "but"
+        },
+        {
+          "t": 123.26,
+          "text": "I"
+        },
+        {
+          "t": 123.38,
+          "text": "still"
+        },
+        {
+          "t": 123.56,
+          "text": "won't"
+        },
+        {
+          "t": 123.9,
+          "text": "slide"
+        },
+        {
+          "t": 124.1,
+          "text": "Stand"
+        },
+        {
+          "t": 125.12,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 125.92,
+      "end": 126.18,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 125.92,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 126.28,
+      "end": 126.68,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 126.28,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 126.84,
+      "end": 127.34,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 126.84,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 127.34,
+      "end": 127.84,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 127.34,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 127.84,
+      "end": 128.22,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 127.84,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 128.22,
+      "end": 128.66,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 128.22,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 128.66,
+      "end": 128.94,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 128.66,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 128.94,
+      "end": 129.16,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 128.94,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 129.16,
+      "end": 129.3,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 129.16,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 129.3,
+      "end": 129.46,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 129.3,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 129.46,
+      "end": 129.52,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 129.46,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 129.52,
+      "end": 129.58,
+      "text": "ground,",
+      "words": [
+        {
+          "t": 129.52,
+          "text": "ground,"
+        }
+      ]
+    },
+    {
+      "start": 129.58,
+      "end": 129.58,
+      "text": "ground",
+      "words": [
+        {
+          "t": 129.58,
+          "text": "ground"
+        }
+      ]
+    },
+    {
+      "start": 129.58,
+      "end": 130.64,
+      "text": "My phone stay lit,",
+      "words": [
+        {
+          "t": 129.58,
+          "text": "My"
+        },
+        {
+          "t": 129.74,
+          "text": "phone"
+        },
+        {
+          "t": 130.08,
+          "text": "stay"
+        },
+        {
+          "t": 130.32,
+          "text": "lit,"
+        }
+      ]
+    },
+    {
+      "start": 130.64,
+      "end": 133.52,
+      "text": "little hearts in a line Whole feet on me when I step outside",
+      "words": [
+        {
+          "t": 130.64,
+          "text": "little"
+        },
+        {
+          "t": 130.88,
+          "text": "hearts"
+        },
+        {
+          "t": 131.18,
+          "text": "in"
+        },
+        {
+          "t": 131.34,
+          "text": "a"
+        },
+        {
+          "t": 131.42,
+          "text": "line"
+        },
+        {
+          "t": 131.68,
+          "text": "Whole"
+        },
+        {
+          "t": 132.08,
+          "text": "feet"
+        },
+        {
+          "t": 132.36,
+          "text": "on"
+        },
+        {
+          "t": 132.58,
+          "text": "me"
+        },
+        {
+          "t": 132.66,
+          "text": "when"
+        },
+        {
+          "t": 132.82,
+          "text": "I"
+        },
+        {
+          "t": 132.9,
+          "text": "step"
+        },
+        {
+          "t": 133.04,
+          "text": "outside"
+        }
+      ]
+    },
+    {
+      "start": 133.52,
+      "end": 134.62,
+      "text": "Sun hits skin,",
+      "words": [
+        {
+          "t": 133.52,
+          "text": "Sun"
+        },
+        {
+          "t": 134.08,
+          "text": "hits"
+        },
+        {
+          "t": 134.34,
+          "text": "skin,"
+        }
+      ]
+    },
+    {
+      "start": 134.7,
+      "end": 136.66,
+      "text": "that's a natural light Walk so smooth,",
+      "words": [
+        {
+          "t": 134.7,
+          "text": "that's"
+        },
+        {
+          "t": 134.86,
+          "text": "a"
+        },
+        {
+          "t": 134.9,
+          "text": "natural"
+        },
+        {
+          "t": 135.26,
+          "text": "light"
+        },
+        {
+          "t": 135.68,
+          "text": "Walk"
+        },
+        {
+          "t": 136.1,
+          "text": "so"
+        },
+        {
+          "t": 136.28,
+          "text": "smooth,"
+        }
+      ]
+    },
+    {
+      "start": 136.72,
+      "end": 137.66,
+      "text": "I could guide through the night",
+      "words": [
+        {
+          "t": 136.72,
+          "text": "I"
+        },
+        {
+          "t": 136.84,
+          "text": "could"
+        },
+        {
+          "t": 136.92,
+          "text": "guide"
+        },
+        {
+          "t": 137.18,
+          "text": "through"
+        },
+        {
+          "t": 137.32,
+          "text": "the"
+        },
+        {
+          "t": 137.42,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 137.66,
+      "end": 138.6,
+      "text": "Every time I pass,",
+      "words": [
+        {
+          "t": 137.66,
+          "text": "Every"
+        },
+        {
+          "t": 137.9,
+          "text": "time"
+        },
+        {
+          "t": 138.16,
+          "text": "I"
+        },
+        {
+          "t": 138.38,
+          "text": "pass,"
+        }
+      ]
+    },
+    {
+      "start": 138.76,
+      "end": 140.66,
+      "text": "all the heads do a spin They checkin' their ring,",
+      "words": [
+        {
+          "t": 138.76,
+          "text": "all"
+        },
+        {
+          "t": 138.88,
+          "text": "the"
+        },
+        {
+          "t": 138.94,
+          "text": "heads"
+        },
+        {
+          "t": 139.16,
+          "text": "do"
+        },
+        {
+          "t": 139.32,
+          "text": "a"
+        },
+        {
+          "t": 139.4,
+          "text": "spin"
+        },
+        {
+          "t": 139.62,
+          "text": "They"
+        },
+        {
+          "t": 139.92,
+          "text": "checkin'"
+        },
+        {
+          "t": 140.26,
+          "text": "their"
+        },
+        {
+          "t": 140.32,
+          "text": "ring,"
+        }
+      ]
+    },
+    {
+      "start": 140.74,
+      "end": 141.36,
+      "text": "but they still lean",
+      "words": [
+        {
+          "t": 140.74,
+          "text": "but"
+        },
+        {
+          "t": 140.84,
+          "text": "they"
+        },
+        {
+          "t": 140.94,
+          "text": "still"
+        },
+        {
+          "t": 141.06,
+          "text": "lean"
+        }
+      ]
+    },
+    {
+      "start": 141.44,
+      "end": 143.62,
+      "text": "in We talk all day about loyal and pure",
+      "words": [
+        {
+          "t": 141.44,
+          "text": "in"
+        },
+        {
+          "t": 141.76,
+          "text": "We"
+        },
+        {
+          "t": 141.94,
+          "text": "talk"
+        },
+        {
+          "t": 142.14,
+          "text": "all"
+        },
+        {
+          "t": 142.38,
+          "text": "day"
+        },
+        {
+          "t": 142.62,
+          "text": "about"
+        },
+        {
+          "t": 142.8,
+          "text": "loyal"
+        },
+        {
+          "t": 143.18,
+          "text": "and"
+        },
+        {
+          "t": 143.44,
+          "text": "pure"
+        }
+      ]
+    },
+    {
+      "start": 143.62,
+      "end": 145.76,
+      "text": "But you breathe real hard when I walk through the door",
+      "words": [
+        {
+          "t": 143.62,
+          "text": "But"
+        },
+        {
+          "t": 143.82,
+          "text": "you"
+        },
+        {
+          "t": 143.94,
+          "text": "breathe"
+        },
+        {
+          "t": 144.14,
+          "text": "real"
+        },
+        {
+          "t": 144.4,
+          "text": "hard"
+        },
+        {
+          "t": 144.64,
+          "text": "when"
+        },
+        {
+          "t": 144.84,
+          "text": "I"
+        },
+        {
+          "t": 144.96,
+          "text": "walk"
+        },
+        {
+          "t": 145.16,
+          "text": "through"
+        },
+        {
+          "t": 145.32,
+          "text": "the"
+        },
+        {
+          "t": 145.46,
+          "text": "door"
+        }
+      ]
+    },
+    {
+      "start": 145.76,
+      "end": 147.38,
+      "text": "You post fly pics with a sly look,",
+      "words": [
+        {
+          "t": 145.76,
+          "text": "You"
+        },
+        {
+          "t": 145.98,
+          "text": "post"
+        },
+        {
+          "t": 146.2,
+          "text": "fly"
+        },
+        {
+          "t": 146.4,
+          "text": "pics"
+        },
+        {
+          "t": 146.64,
+          "text": "with"
+        },
+        {
+          "t": 146.88,
+          "text": "a"
+        },
+        {
+          "t": 146.98,
+          "text": "sly"
+        },
+        {
+          "t": 147.2,
+          "text": "look,"
+        }
+      ]
+    },
+    {
+      "start": 147.38,
+      "end": 147.38,
+      "text": "but you don't know what I'm talking about",
+      "words": [
+        {
+          "t": 147.38,
+          "text": "but"
+        },
+        {
+          "t": 147.38,
+          "text": "you"
+        },
+        {
+          "t": 147.38,
+          "text": "don't"
+        },
+        {
+          "t": 147.38,
+          "text": "know"
+        },
+        {
+          "t": 147.38,
+          "text": "what"
+        },
+        {
+          "t": 147.38,
+          "text": "I'm"
+        },
+        {
+          "t": 147.38,
+          "text": "talking"
+        },
+        {
+          "t": 147.38,
+          "text": "about"
+        }
+      ]
+    },
+    {
+      "start": 147.48,
+      "end": 148.72,
+      "text": "Pretty little look,",
+      "words": [
+        {
+          "t": 147.48,
+          "text": "Pretty"
+        },
+        {
+          "t": 148.08,
+          "text": "little"
+        },
+        {
+          "t": 148.36,
+          "text": "look,"
+        }
+      ]
+    },
+    {
+      "start": 148.72,
+      "end": 150.78,
+      "text": "but you guard that line I just like the T's,",
+      "words": [
+        {
+          "t": 148.72,
+          "text": "but"
+        },
+        {
+          "t": 148.84,
+          "text": "you"
+        },
+        {
+          "t": 148.96,
+          "text": "guard"
+        },
+        {
+          "t": 149.16,
+          "text": "that"
+        },
+        {
+          "t": 149.38,
+          "text": "line"
+        },
+        {
+          "t": 149.68,
+          "text": "I"
+        },
+        {
+          "t": 149.98,
+          "text": "just"
+        },
+        {
+          "t": 150.14,
+          "text": "like"
+        },
+        {
+          "t": 150.38,
+          "text": "the"
+        },
+        {
+          "t": 150.48,
+          "text": "T's,"
+        }
+      ]
+    },
+    {
+      "start": 150.8,
+      "end": 151.7,
+      "text": "I don't cross that line",
+      "words": [
+        {
+          "t": 150.8,
+          "text": "I"
+        },
+        {
+          "t": 150.86,
+          "text": "don't"
+        },
+        {
+          "t": 151.02,
+          "text": "cross"
+        },
+        {
+          "t": 151.1,
+          "text": "that"
+        },
+        {
+          "t": 151.4,
+          "text": "line"
+        }
+      ]
+    },
+    {
+      "start": 151.7,
+      "end": 154.64,
+      "text": "Still got them pressed every time Work figured on point,",
+      "words": [
+        {
+          "t": 151.7,
+          "text": "Still"
+        },
+        {
+          "t": 152.1,
+          "text": "got"
+        },
+        {
+          "t": 152.34,
+          "text": "them"
+        },
+        {
+          "t": 152.5,
+          "text": "pressed"
+        },
+        {
+          "t": 152.78,
+          "text": "every"
+        },
+        {
+          "t": 153.26,
+          "text": "time"
+        },
+        {
+          "t": 153.68,
+          "text": "Work"
+        },
+        {
+          "t": 153.98,
+          "text": "figured"
+        },
+        {
+          "t": 154.22,
+          "text": "on"
+        },
+        {
+          "t": 154.4,
+          "text": "point,"
+        }
+      ]
+    },
+    {
+      "start": 154.74,
+      "end": 155.64,
+      "text": "lookin' too on beat",
+      "words": [
+        {
+          "t": 154.74,
+          "text": "lookin'"
+        },
+        {
+          "t": 154.98,
+          "text": "too"
+        },
+        {
+          "t": 155.1,
+          "text": "on"
+        },
+        {
+          "t": 155.36,
+          "text": "beat"
+        }
+      ]
+    },
+    {
+      "start": 155.64,
+      "end": 157.7,
+      "text": "Gym set tight with the steady quad heat",
+      "words": [
+        {
+          "t": 155.64,
+          "text": "Gym"
+        },
+        {
+          "t": 156.14,
+          "text": "set"
+        },
+        {
+          "t": 156.34,
+          "text": "tight"
+        },
+        {
+          "t": 156.64,
+          "text": "with"
+        },
+        {
+          "t": 156.86,
+          "text": "the"
+        },
+        {
+          "t": 156.94,
+          "text": "steady"
+        },
+        {
+          "t": 157.16,
+          "text": "quad"
+        },
+        {
+          "t": 157.34,
+          "text": "heat"
+        }
+      ]
+    },
+    {
+      "start": 157.7,
+      "end": 159.72,
+      "text": "Brunch cool fresh with the seffys on time",
+      "words": [
+        {
+          "t": 157.7,
+          "text": "Brunch"
+        },
+        {
+          "t": 158.2,
+          "text": "cool"
+        },
+        {
+          "t": 158.34,
+          "text": "fresh"
+        },
+        {
+          "t": 158.62,
+          "text": "with"
+        },
+        {
+          "t": 158.86,
+          "text": "the"
+        },
+        {
+          "t": 158.98,
+          "text": "seffys"
+        },
+        {
+          "t": 159.22,
+          "text": "on"
+        },
+        {
+          "t": 159.38,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 159.72,
+      "end": 160.68,
+      "text": "Club girls ready,",
+      "words": [
+        {
+          "t": 159.72,
+          "text": "Club"
+        },
+        {
+          "t": 160.12,
+          "text": "girls"
+        },
+        {
+          "t": 160.44,
+          "text": "ready,"
+        }
+      ]
+    },
+    {
+      "start": 160.74,
+      "end": 163.72,
+      "text": "got the dance floor primed Beach trip hit with the sun-dressed breeze",
+      "words": [
+        {
+          "t": 160.74,
+          "text": "got"
+        },
+        {
+          "t": 160.84,
+          "text": "the"
+        },
+        {
+          "t": 160.98,
+          "text": "dance"
+        },
+        {
+          "t": 161.18,
+          "text": "floor"
+        },
+        {
+          "t": 161.34,
+          "text": "primed"
+        },
+        {
+          "t": 161.96,
+          "text": "Beach"
+        },
+        {
+          "t": 162.16,
+          "text": "trip"
+        },
+        {
+          "t": 162.42,
+          "text": "hit"
+        },
+        {
+          "t": 162.62,
+          "text": "with"
+        },
+        {
+          "t": 162.84,
+          "text": "the"
+        },
+        {
+          "t": 162.96,
+          "text": "sun"
+        },
+        {
+          "t": 163.18,
+          "text": "-dressed"
+        },
+        {
+          "t": 163.4,
+          "text": "breeze"
+        }
+      ]
+    },
+    {
+      "start": 163.89,
+      "end": 165.68,
+      "text": "Rooftop bar with the long hair free",
+      "words": [
+        {
+          "t": 163.89,
+          "text": "Rooftop"
+        },
+        {
+          "t": 164.44,
+          "text": "bar"
+        },
+        {
+          "t": 164.66,
+          "text": "with"
+        },
+        {
+          "t": 164.84,
+          "text": "the"
+        },
+        {
+          "t": 164.98,
+          "text": "long"
+        },
+        {
+          "t": 165.18,
+          "text": "hair"
+        },
+        {
+          "t": 165.4,
+          "text": "free"
+        }
+      ]
+    },
+    {
+      "start": 165.68,
+      "end": 167.76,
+      "text": "Old crush texts with a late-night theme",
+      "words": [
+        {
+          "t": 165.68,
+          "text": "Old"
+        },
+        {
+          "t": 166.18,
+          "text": "crush"
+        },
+        {
+          "t": 166.36,
+          "text": "texts"
+        },
+        {
+          "t": 166.66,
+          "text": "with"
+        },
+        {
+          "t": 166.88,
+          "text": "a"
+        },
+        {
+          "t": 167.0,
+          "text": "late"
+        },
+        {
+          "t": 167.2,
+          "text": "-night"
+        },
+        {
+          "t": 167.36,
+          "text": "theme"
+        }
+      ]
+    },
+    {
+      "start": 167.76,
+      "end": 169.72,
+      "text": "New like poppin' in the story stream",
+      "words": [
+        {
+          "t": 167.76,
+          "text": "New"
+        },
+        {
+          "t": 168.18,
+          "text": "like"
+        },
+        {
+          "t": 168.36,
+          "text": "poppin'"
+        },
+        {
+          "t": 168.82,
+          "text": "in"
+        },
+        {
+          "t": 168.86,
+          "text": "the"
+        },
+        {
+          "t": 168.96,
+          "text": "story"
+        },
+        {
+          "t": 169.24,
+          "text": "stream"
+        }
+      ]
+    },
+    {
+      "start": 169.72,
+      "end": 171.88,
+      "text": "Panna at home and they still tight here But",
+      "words": [
+        {
+          "t": 169.72,
+          "text": "Panna"
+        },
+        {
+          "t": 170.22,
+          "text": "at"
+        },
+        {
+          "t": 170.4,
+          "text": "home"
+        },
+        {
+          "t": 170.74,
+          "text": "and"
+        },
+        {
+          "t": 170.9,
+          "text": "they"
+        },
+        {
+          "t": 171.0,
+          "text": "still"
+        },
+        {
+          "t": 171.2,
+          "text": "tight"
+        },
+        {
+          "t": 171.44,
+          "text": "here"
+        },
+        {
+          "t": 171.72,
+          "text": "But"
+        }
+      ]
+    },
+    {
+      "start": 171.88,
+      "end": 173.72,
+      "text": "the DMs wild when the summer gettin' here",
+      "words": [
+        {
+          "t": 171.88,
+          "text": "the"
+        },
+        {
+          "t": 172.02,
+          "text": "DMs"
+        },
+        {
+          "t": 172.56,
+          "text": "wild"
+        },
+        {
+          "t": 172.72,
+          "text": "when"
+        },
+        {
+          "t": 172.94,
+          "text": "the"
+        },
+        {
+          "t": 173.02,
+          "text": "summer"
+        },
+        {
+          "t": 173.2,
+          "text": "gettin'"
+        },
+        {
+          "t": 173.52,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 173.72,
+      "end": 174.74,
+      "text": "I stay locked in,",
+      "words": [
+        {
+          "t": 173.72,
+          "text": "I"
+        },
+        {
+          "t": 173.9,
+          "text": "stay"
+        },
+        {
+          "t": 174.14,
+          "text": "locked"
+        },
+        {
+          "t": 174.48,
+          "text": "in,"
+        }
+      ]
+    },
+    {
+      "start": 174.8,
+      "end": 174.96,
+      "text": "yeah,",
+      "words": [
+        {
+          "t": 174.8,
+          "text": "yeah,"
+        }
+      ]
+    },
+    {
+      "start": 174.96,
+      "end": 177.38,
+      "text": "I play that strong But the thoughts run laps like a long time",
+      "words": [
+        {
+          "t": 174.96,
+          "text": "I"
+        },
+        {
+          "t": 175.04,
+          "text": "play"
+        },
+        {
+          "t": 175.18,
+          "text": "that"
+        },
+        {
+          "t": 175.42,
+          "text": "strong"
+        },
+        {
+          "t": 175.68,
+          "text": "But"
+        },
+        {
+          "t": 175.88,
+          "text": "the"
+        },
+        {
+          "t": 176.02,
+          "text": "thoughts"
+        },
+        {
+          "t": 176.24,
+          "text": "run"
+        },
+        {
+          "t": 176.42,
+          "text": "laps"
+        },
+        {
+          "t": 176.74,
+          "text": "like"
+        },
+        {
+          "t": 176.96,
+          "text": "a"
+        },
+        {
+          "t": 176.98,
+          "text": "long"
+        },
+        {
+          "t": 177.26,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 177.4,
+      "end": 179.94,
+      "text": "I see the sun dress glow under the",
+      "words": [
+        {
+          "t": 177.4,
+          "text": "I"
+        },
+        {
+          "t": 177.7,
+          "text": "see"
+        },
+        {
+          "t": 177.7,
+          "text": "the"
+        },
+        {
+          "t": 177.92,
+          "text": "sun"
+        },
+        {
+          "t": 178.26,
+          "text": "dress"
+        },
+        {
+          "t": 178.7,
+          "text": "glow"
+        },
+        {
+          "t": 179.18,
+          "text": "under"
+        },
+        {
+          "t": 179.6,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 179.94,
+      "end": 183.48,
+      "text": "daylight Hips swing slow in the midnight",
+      "words": [
+        {
+          "t": 179.94,
+          "text": "daylight"
+        },
+        {
+          "t": 180.48,
+          "text": "Hips"
+        },
+        {
+          "t": 181.36,
+          "text": "swing"
+        },
+        {
+          "t": 181.7,
+          "text": "slow"
+        },
+        {
+          "t": 182.2,
+          "text": "in"
+        },
+        {
+          "t": 182.76,
+          "text": "the"
+        },
+        {
+          "t": 182.88,
+          "text": "midnight"
+        }
+      ]
+    },
+    {
+      "start": 183.94,
+      "end": 184.32,
+      "text": "Heart,",
+      "words": [
+        {
+          "t": 183.94,
+          "text": "Heart,"
+        }
+      ]
+    },
+    {
+      "start": 184.34,
+      "end": 184.54,
+      "text": "heart,",
+      "words": [
+        {
+          "t": 184.34,
+          "text": "heart,"
+        }
+      ]
+    },
+    {
+      "start": 184.56,
+      "end": 184.8,
+      "text": "heart,",
+      "words": [
+        {
+          "t": 184.56,
+          "text": "heart,"
+        }
+      ]
+    },
+    {
+      "start": 184.86,
+      "end": 185.18,
+      "text": "heart,",
+      "words": [
+        {
+          "t": 184.86,
+          "text": "heart,"
+        }
+      ]
+    },
+    {
+      "start": 185.34,
+      "end": 188.18,
+      "text": "stay cold But my stride got flame",
+      "words": [
+        {
+          "t": 185.34,
+          "text": "stay"
+        },
+        {
+          "t": 185.64,
+          "text": "cold"
+        },
+        {
+          "t": 186.3,
+          "text": "But"
+        },
+        {
+          "t": 186.72,
+          "text": "my"
+        },
+        {
+          "t": 186.9,
+          "text": "stride"
+        },
+        {
+          "t": 187.38,
+          "text": "got"
+        },
+        {
+          "t": 187.7,
+          "text": "flame"
+        }
+      ]
+    },
+    {
+      "start": 188.18,
+      "end": 192.32,
+      "text": "Every little step got a high-class gang",
+      "words": [
+        {
+          "t": 188.18,
+          "text": "Every"
+        },
+        {
+          "t": 188.88,
+          "text": "little"
+        },
+        {
+          "t": 189.7,
+          "text": "step"
+        },
+        {
+          "t": 190.2,
+          "text": "got"
+        },
+        {
+          "t": 190.68,
+          "text": "a"
+        },
+        {
+          "t": 190.96,
+          "text": "high"
+        },
+        {
+          "t": 191.34,
+          "text": "-class"
+        },
+        {
+          "t": 192.02,
+          "text": "gang"
+        }
+      ]
+    },
+    {
+      "start": 192.32,
+      "end": 196.26,
+      "text": "Smile so sweet with the timing just right",
+      "words": [
+        {
+          "t": 192.32,
+          "text": "Smile"
+        },
+        {
+          "t": 192.98,
+          "text": "so"
+        },
+        {
+          "t": 193.52,
+          "text": "sweet"
+        },
+        {
+          "t": 194.26,
+          "text": "with"
+        },
+        {
+          "t": 194.72,
+          "text": "the"
+        },
+        {
+          "t": 194.92,
+          "text": "timing"
+        },
+        {
+          "t": 195.42,
+          "text": "just"
+        },
+        {
+          "t": 195.74,
+          "text": "right"
+        }
+      ]
+    },
+    {
+      "start": 196.26,
+      "end": 196.88,
+      "text": "Brown,",
+      "words": [
+        {
+          "t": 196.26,
+          "text": "Brown,"
+        }
+      ]
+    },
+    {
+      "start": 196.88,
+      "end": 197.12,
+      "text": "brown,",
+      "words": [
+        {
+          "t": 196.88,
+          "text": "brown,"
+        }
+      ]
+    },
+    {
+      "start": 197.12,
+      "end": 200.22,
+      "text": "brown skin shine With the street lamp light",
+      "words": [
+        {
+          "t": 197.12,
+          "text": "brown"
+        },
+        {
+          "t": 197.28,
+          "text": "skin"
+        },
+        {
+          "t": 197.66,
+          "text": "shine"
+        },
+        {
+          "t": 198.24,
+          "text": "With"
+        },
+        {
+          "t": 198.8,
+          "text": "the"
+        },
+        {
+          "t": 198.94,
+          "text": "street"
+        },
+        {
+          "t": 199.3,
+          "text": "lamp"
+        },
+        {
+          "t": 199.84,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 200.92,
+      "end": 202.28,
+      "text": "Perfume thick,",
+      "words": [
+        {
+          "t": 200.92,
+          "text": "Perfume"
+        },
+        {
+          "t": 201.72,
+          "text": "thick,"
+        }
+      ]
+    },
+    {
+      "start": 202.42,
+      "end": 204.86,
+      "text": "got them stuck in the bind All,",
+      "words": [
+        {
+          "t": 202.42,
+          "text": "got"
+        },
+        {
+          "t": 202.84,
+          "text": "them"
+        },
+        {
+          "t": 202.96,
+          "text": "stuck"
+        },
+        {
+          "t": 203.2,
+          "text": "in"
+        },
+        {
+          "t": 203.52,
+          "text": "the"
+        },
+        {
+          "t": 203.68,
+          "text": "bind"
+        },
+        {
+          "t": 204.08,
+          "text": "All,"
+        }
+      ]
+    },
+    {
+      "start": 204.86,
+      "end": 205.1,
+      "text": "all,",
+      "words": [
+        {
+          "t": 204.86,
+          "text": "all,"
+        }
+      ]
+    },
+    {
+      "start": 205.1,
+      "end": 206.4,
+      "text": "all these hungry eyes,",
+      "words": [
+        {
+          "t": 205.1,
+          "text": "all"
+        },
+        {
+          "t": 205.26,
+          "text": "these"
+        },
+        {
+          "t": 205.48,
+          "text": "hungry"
+        },
+        {
+          "t": 205.92,
+          "text": "eyes,"
+        }
+      ]
+    },
+    {
+      "start": 206.56,
+      "end": 207.02,
+      "text": "got them",
+      "words": [
+        {
+          "t": 206.56,
+          "text": "got"
+        },
+        {
+          "t": 206.84,
+          "text": "them"
+        }
+      ]
+    },
+    {
+      "start": 207.02,
+      "end": 208.32,
+      "text": "losing they minds",
+      "words": [
+        {
+          "t": 207.02,
+          "text": "losing"
+        },
+        {
+          "t": 207.5,
+          "text": "they"
+        },
+        {
+          "t": 207.72,
+          "text": "minds"
+        }
+      ]
+    },
+    {
+      "start": 209.84,
+      "end": 212.02,
+      "text": "Streets so high but the breeze feel balanced",
+      "words": [
+        {
+          "t": 209.84,
+          "text": "Streets"
+        },
+        {
+          "t": 210.32,
+          "text": "so"
+        },
+        {
+          "t": 210.5,
+          "text": "high"
+        },
+        {
+          "t": 210.78,
+          "text": "but"
+        },
+        {
+          "t": 210.96,
+          "text": "the"
+        },
+        {
+          "t": 211.12,
+          "text": "breeze"
+        },
+        {
+          "t": 211.34,
+          "text": "feel"
+        },
+        {
+          "t": 211.52,
+          "text": "balanced"
+        }
+      ]
+    },
+    {
+      "start": 212.02,
+      "end": 213.94,
+      "text": "Skirt catch wind like a natural talent",
+      "words": [
+        {
+          "t": 212.02,
+          "text": "Skirt"
+        },
+        {
+          "t": 212.28,
+          "text": "catch"
+        },
+        {
+          "t": 212.54,
+          "text": "wind"
+        },
+        {
+          "t": 212.76,
+          "text": "like"
+        },
+        {
+          "t": 212.98,
+          "text": "a"
+        },
+        {
+          "t": 213.12,
+          "text": "natural"
+        },
+        {
+          "t": 213.4,
+          "text": "talent"
+        }
+      ]
+    },
+    {
+      "start": 213.94,
+      "end": 214.76,
+      "text": "Two-piece low,",
+      "words": [
+        {
+          "t": 213.94,
+          "text": "Two"
+        },
+        {
+          "t": 214.3,
+          "text": "-piece"
+        },
+        {
+          "t": 214.52,
+          "text": "low,"
+        }
+      ]
+    },
+    {
+      "start": 214.84,
+      "end": 217.82,
+      "text": "little wrap tied high Sun hits skin while the clouds roll by",
+      "words": [
+        {
+          "t": 214.84,
+          "text": "little"
+        },
+        {
+          "t": 215.04,
+          "text": "wrap"
+        },
+        {
+          "t": 215.28,
+          "text": "tied"
+        },
+        {
+          "t": 215.54,
+          "text": "high"
+        },
+        {
+          "t": 215.86,
+          "text": "Sun"
+        },
+        {
+          "t": 216.3,
+          "text": "hits"
+        },
+        {
+          "t": 216.52,
+          "text": "skin"
+        },
+        {
+          "t": 216.78,
+          "text": "while"
+        },
+        {
+          "t": 216.98,
+          "text": "the"
+        },
+        {
+          "t": 217.12,
+          "text": "clouds"
+        },
+        {
+          "t": 217.38,
+          "text": "roll"
+        },
+        {
+          "t": 217.56,
+          "text": "by"
+        }
+      ]
+    },
+    {
+      "start": 217.82,
+      "end": 218.82,
+      "text": "Patio packed,",
+      "words": [
+        {
+          "t": 217.82,
+          "text": "Patio"
+        },
+        {
+          "t": 218.46,
+          "text": "packed,"
+        }
+      ]
+    },
+    {
+      "start": 218.92,
+      "end": 220.82,
+      "text": "every trade calibrated Playlist loud,",
+      "words": [
+        {
+          "t": 218.92,
+          "text": "every"
+        },
+        {
+          "t": 219.08,
+          "text": "trade"
+        },
+        {
+          "t": 219.32,
+          "text": "calibrated"
+        },
+        {
+          "t": 220.0,
+          "text": "Playlist"
+        },
+        {
+          "t": 220.52,
+          "text": "loud,"
+        }
+      ]
+    },
+    {
+      "start": 220.9,
+      "end": 221.82,
+      "text": "whole mood feel nice",
+      "words": [
+        {
+          "t": 220.9,
+          "text": "whole"
+        },
+        {
+          "t": 221.04,
+          "text": "mood"
+        },
+        {
+          "t": 221.28,
+          "text": "feel"
+        },
+        {
+          "t": 221.52,
+          "text": "nice"
+        }
+      ]
+    },
+    {
+      "start": 221.82,
+      "end": 224.58,
+      "text": "Crosswalk flashin' Little hips keep swangin'",
+      "words": [
+        {
+          "t": 221.82,
+          "text": "Crosswalk"
+        },
+        {
+          "t": 222.56,
+          "text": "flashin'"
+        },
+        {
+          "t": 223.14,
+          "text": "Little"
+        },
+        {
+          "t": 223.46,
+          "text": "hips"
+        },
+        {
+          "t": 223.8,
+          "text": "keep"
+        },
+        {
+          "t": 224.02,
+          "text": "swangin'"
+        }
+      ]
+    },
+    {
+      "start": 224.68,
+      "end": 226.53,
+      "text": "Phones in the air but the eyes stay prayin'",
+      "words": [
+        {
+          "t": 224.68,
+          "text": "Phones"
+        },
+        {
+          "t": 224.9,
+          "text": "in"
+        },
+        {
+          "t": 225.06,
+          "text": "the"
+        },
+        {
+          "t": 225.18,
+          "text": "air"
+        },
+        {
+          "t": 225.36,
+          "text": "but"
+        },
+        {
+          "t": 225.52,
+          "text": "the"
+        },
+        {
+          "t": 225.66,
+          "text": "eyes"
+        },
+        {
+          "t": 225.86,
+          "text": "stay"
+        },
+        {
+          "t": 226.08,
+          "text": "prayin'"
+        }
+      ]
+    },
+    {
+      "start": 226.62,
+      "end": 228.92,
+      "text": "My mind goin' pushups,",
+      "words": [
+        {
+          "t": 226.62,
+          "text": "My"
+        },
+        {
+          "t": 226.8,
+          "text": "mind"
+        },
+        {
+          "t": 227.38,
+          "text": "goin'"
+        },
+        {
+          "t": 227.96,
+          "text": "pushups,"
+        }
+      ]
+    },
+    {
+      "start": 228.94,
+      "end": 234.36,
+      "text": "car keep pace Tryna stay loyal in this fine feels bay",
+      "words": [
+        {
+          "t": 228.94,
+          "text": "car"
+        },
+        {
+          "t": 229.3,
+          "text": "keep"
+        },
+        {
+          "t": 229.8,
+          "text": "pace"
+        },
+        {
+          "t": 230.5,
+          "text": "Tryna"
+        },
+        {
+          "t": 231.48,
+          "text": "stay"
+        },
+        {
+          "t": 231.78,
+          "text": "loyal"
+        },
+        {
+          "t": 232.38,
+          "text": "in"
+        },
+        {
+          "t": 232.86,
+          "text": "this"
+        },
+        {
+          "t": 233.1,
+          "text": "fine"
+        },
+        {
+          "t": 233.44,
+          "text": "feels"
+        },
+        {
+          "t": 233.96,
+          "text": "bay"
+        }
+      ]
+    },
+    {
+      "start": 234.74,
+      "end": 235.232,
+      "text": "Drip it,",
+      "words": [
+        {
+          "t": 234.74,
+          "text": "Drip"
+        },
+        {
+          "t": 234.94,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 235.3,
+      "end": 235.66,
+      "text": "drip it,",
+      "words": [
+        {
+          "t": 235.3,
+          "text": "drip"
+        },
+        {
+          "t": 235.38,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 235.78,
+      "end": 236.16,
+      "text": "drip it,",
+      "words": [
+        {
+          "t": 235.78,
+          "text": "drip"
+        },
+        {
+          "t": 235.88,
+          "text": "it,"
+        }
+      ]
+    },
+    {
+      "start": 236.3,
+      "end": 237.0,
+      "text": "drip it Dress up,",
+      "words": [
+        {
+          "t": 236.3,
+          "text": "drip"
+        },
+        {
+          "t": 236.38,
+          "text": "it"
+        },
+        {
+          "t": 236.62,
+          "text": "Dress"
+        },
+        {
+          "t": 236.92,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 237.0,
+      "end": 237.0,
+      "text": "dress up,",
+      "words": [
+        {
+          "t": 237.0,
+          "text": "dress"
+        },
+        {
+          "t": 237.0,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 237.0,
+      "end": 237.0,
+      "text": "dress up,",
+      "words": [
+        {
+          "t": 237.0,
+          "text": "dress"
+        },
+        {
+          "t": 237.0,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 237.0,
+      "end": 237.0,
+      "text": "dress up,",
+      "words": [
+        {
+          "t": 237.0,
+          "text": "dress"
+        },
+        {
+          "t": 237.0,
+          "text": "up,"
+        }
+      ]
+    },
+    {
+      "start": 237.0,
+      "end": 237.0,
+      "text": "dress",
+      "words": [
+        {
+          "t": 237.0,
+          "text": "dress"
+        }
+      ]
+    },
+    {
+      "start": 237.02,
+      "end": 242.48,
+      "text": "I just gained too high Leg lines still fly",
+      "words": [
+        {
+          "t": 237.02,
+          "text": "I"
+        },
+        {
+          "t": 237.2,
+          "text": "just"
+        },
+        {
+          "t": 237.2,
+          "text": "gained"
+        },
+        {
+          "t": 237.42,
+          "text": "too"
+        },
+        {
+          "t": 237.86,
+          "text": "high"
+        },
+        {
+          "t": 238.44,
+          "text": "Leg"
+        },
+        {
+          "t": 239.56,
+          "text": "lines"
+        },
+        {
+          "t": 240.46,
+          "text": "still"
+        },
+        {
+          "t": 241.9,
+          "text": "fly"
+        }
+      ]
+    },
+    {
+      "start": 243.6,
+      "end": 248.34,
+      "text": "Waist lines so fine I won't lie",
+      "words": [
+        {
+          "t": 243.6,
+          "text": "Waist"
+        },
+        {
+          "t": 244.14,
+          "text": "lines"
+        },
+        {
+          "t": 244.68,
+          "text": "so"
+        },
+        {
+          "t": 245.84,
+          "text": "fine"
+        },
+        {
+          "t": 246.48,
+          "text": "I"
+        },
+        {
+          "t": 247.44,
+          "text": "won't"
+        },
+        {
+          "t": 248.08,
+          "text": "lie"
+        }
+      ]
+    },
+    {
+      "start": 248.76,
+      "end": 253.02,
+      "text": "Can somebody chill out all this thirst on",
+      "words": [
+        {
+          "t": 248.76,
+          "text": "Can"
+        },
+        {
+          "t": 249.3,
+          "text": "somebody"
+        },
+        {
+          "t": 249.84,
+          "text": "chill"
+        },
+        {
+          "t": 251.0,
+          "text": "out"
+        },
+        {
+          "t": 251.44,
+          "text": "all"
+        },
+        {
+          "t": 251.8,
+          "text": "this"
+        },
+        {
+          "t": 252.14,
+          "text": "thirst"
+        },
+        {
+          "t": 252.62,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 253.78,
+      "end": 256.42,
+      "text": "Oh that clown I'll just walk by",
+      "words": [
+        {
+          "t": 253.78,
+          "text": "Oh"
+        },
+        {
+          "t": 254.32,
+          "text": "that"
+        },
+        {
+          "t": 254.68,
+          "text": "clown"
+        },
+        {
+          "t": 254.98,
+          "text": "I'll"
+        },
+        {
+          "t": 255.44,
+          "text": "just"
+        },
+        {
+          "t": 255.66,
+          "text": "walk"
+        },
+        {
+          "t": 256.0,
+          "text": "by"
+        }
+      ]
+    },
+    {
+      "start": 256.64,
+      "end": 258.24,
+      "text": "Of course you will",
+      "words": [
+        {
+          "t": 256.64,
+          "text": "Of"
+        },
+        {
+          "t": 257.18,
+          "text": "course"
+        },
+        {
+          "t": 257.5,
+          "text": "you"
+        },
+        {
+          "t": 257.92,
+          "text": "will"
+        }
+      ]
+    },
+    {
+      "start": 258.24,
+      "end": 261.0,
+      "text": "Summer drip",
+      "words": [
+        {
+          "t": 258.24,
+          "text": "Summer"
+        },
+        {
+          "t": 259.68,
+          "text": "drip"
+        }
+      ]
+    },
+    {
+      "start": 262.98,
+      "end": 265.56,
+      "text": "On the late night air",
+      "words": [
+        {
+          "t": 262.98,
+          "text": "On"
+        },
+        {
+          "t": 263.52,
+          "text": "the"
+        },
+        {
+          "t": 264.16,
+          "text": "late"
+        },
+        {
+          "t": 264.52,
+          "text": "night"
+        },
+        {
+          "t": 264.98,
+          "text": "air"
+        }
+      ]
+    },
+    {
+      "start": 265.97,
+      "end": 269.32,
+      "text": "This so wild got em doing the math",
+      "words": [
+        {
+          "t": 265.97,
+          "text": "This"
+        },
+        {
+          "t": 266.92,
+          "text": "so"
+        },
+        {
+          "t": 267.16,
+          "text": "wild"
+        },
+        {
+          "t": 267.68,
+          "text": "got"
+        },
+        {
+          "t": 268.02,
+          "text": "em"
+        },
+        {
+          "t": 268.2,
+          "text": "doing"
+        },
+        {
+          "t": 268.56,
+          "text": "the"
+        },
+        {
+          "t": 268.94,
+          "text": "math"
+        }
+      ]
+    },
+    {
+      "start": 269.32,
+      "end": 273.52,
+      "text": "I promise so strong let the whole thing ride",
+      "words": [
+        {
+          "t": 269.32,
+          "text": "I"
+        },
+        {
+          "t": 269.9,
+          "text": "promise"
+        },
+        {
+          "t": 270.56,
+          "text": "so"
+        },
+        {
+          "t": 271.0,
+          "text": "strong"
+        },
+        {
+          "t": 271.56,
+          "text": "let"
+        },
+        {
+          "t": 271.92,
+          "text": "the"
+        },
+        {
+          "t": 272.16,
+          "text": "whole"
+        },
+        {
+          "t": 272.56,
+          "text": "thing"
+        },
+        {
+          "t": 273.02,
+          "text": "ride"
+        }
+      ]
+    },
+    {
+      "start": 273.55,
+      "end": 277.34,
+      "text": "Walking past pressure with my crew outside",
+      "words": [
+        {
+          "t": 273.55,
+          "text": "Walking"
+        },
+        {
+          "t": 274.6,
+          "text": "past"
+        },
+        {
+          "t": 275.1,
+          "text": "pressure"
+        },
+        {
+          "t": 275.5,
+          "text": "with"
+        },
+        {
+          "t": 275.92,
+          "text": "my"
+        },
+        {
+          "t": 276.2,
+          "text": "crew"
+        },
+        {
+          "t": 276.48,
+          "text": "outside"
+        }
+      ]
+    },
+    {
+      "start": 277.34,
+      "end": 279.9,
+      "text": "T-t-testing my blaze",
+      "words": [
+        {
+          "t": 277.34,
+          "text": "T"
+        },
+        {
+          "t": 277.92,
+          "text": "-t"
+        },
+        {
+          "t": 278.24,
+          "text": "-testing"
+        },
+        {
+          "t": 278.82,
+          "text": "my"
+        },
+        {
+          "t": 279.24,
+          "text": "blaze"
+        }
+      ]
+    },
+    {
+      "start": 279.9,
+      "end": 282.44,
+      "text": "Am I still yours",
+      "words": [
+        {
+          "t": 279.9,
+          "text": "Am"
+        },
+        {
+          "t": 280.08,
+          "text": "I"
+        },
+        {
+          "t": 280.58,
+          "text": "still"
+        },
+        {
+          "t": 281.34,
+          "text": "yours"
+        }
+      ]
+    },
+    {
+      "start": 282.44,
+      "end": 283.6,
+      "text": "Every every",
+      "words": [
+        {
+          "t": 282.44,
+          "text": "Every"
+        },
+        {
+          "t": 283.14,
+          "text": "every"
+        }
+      ]
+    },
+    {
+      "start": 283.6,
+      "end": 284.52,
+      "text": "Full sin",
+      "words": [
+        {
+          "t": 283.6,
+          "text": "Full"
+        },
+        {
+          "t": 284.0,
+          "text": "sin"
+        }
+      ]
+    },
+    {
+      "start": 284.52,
+      "end": 286.02,
+      "text": "Slow it down",
+      "words": [
+        {
+          "t": 284.52,
+          "text": "Slow"
+        },
+        {
+          "t": 285.42,
+          "text": "it"
+        },
+        {
+          "t": 285.8,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 287.28,
+      "end": 289.12,
+      "text": "Summer drip",
+      "words": [
+        {
+          "t": 287.28,
+          "text": "Summer"
+        },
+        {
+          "t": 288.2,
+          "text": "drip"
+        }
+      ]
+    }
+  ]
+}

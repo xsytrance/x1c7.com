@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 29,
+   "end": 45,
+   "reactor": "graffiti",
+   "why": "Verse 1 grounds the listener in East Coast hip-hop roots and borough pride; graffiti captu"
+  },
+  {
+   "start": 85,
+   "end": 96,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "THE DRUMS SPEAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 139,
+   "end": 152,
+   "reactor": "fireworks",
+   "why": "Verse 3 brings commanding motion and triumphant renewal; fireworks explode the energy to m"
+  }
+ ],
+ "words": {
+  "walk": "slam",
+  "void": "shatter",
+  "discipline": "freeze",
+  "move": "pulse",
+  "borough": "glitch",
+  "dishonor": "redact"
+ }
+}

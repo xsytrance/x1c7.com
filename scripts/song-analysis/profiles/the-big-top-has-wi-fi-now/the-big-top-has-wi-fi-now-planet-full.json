@@ -1,0 +1,90 @@
+{
+  "analysis": {
+    "summary": "The song depicts a surreal digital carnival where artificial intelligence and automated systems have taken over human roles, creating an urgent atmosphere between mechanical precision and chaotic vulnerability.",
+    "overallMood": "Manic",
+    "themes": [
+      "Digital Identity Crisis",
+      "AI Autonomy vs. Human Control",
+      "Algorithmic Absurdity",
+      "Server Room Surrealism"
+    ],
+    "palette": [
+      "#00FF41",
+      "#2B5876",
+      "#9E3D2A",
+      "#FCDAB7"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Awkward Welcome",
+        "intensity": 0.68,
+        "colorHint": "#00ff41",
+        "start": 0.06
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Anxious Confusion",
+        "intensity": 0.93,
+        "colorHint": "#2b5876",
+        "start": 48.36
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Chaotic Euphoria",
+        "intensity": 0.77,
+        "colorHint": "#9e3d2a",
+        "start": 126.72
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Melancholic Realization",
+        "intensity": 0.25,
+        "colorHint": "#fcdab7",
+        "start": 184.06
+      },
+      {
+        "name": "Drop",
+        "emotion": "Glitched Stasis",
+        "intensity": 0.24,
+        "colorHint": "#39ff14",
+        "start": 300.96
+      }
+    ],
+    "keywords": [
+      {
+        "word": "operator",
+        "emotion": "Impersonal Authority",
+        "imageryPrompt": "A faceless silhouette standing before a wall of blinking server lights, hands gesturing to an empty audience in a darkened hall."
+      },
+      {
+        "word": "wi-fi",
+        "emotion": "Surreal Connection",
+        "imageryPrompt": "Tent canvas woven with glowing fiber optic strands where the netting vibrates with digital energy pulses instead of fabric swaying."
+      },
+      {
+        "word": "agents",
+        "emotion": "Uncanny Observation",
+        "imageryPrompt": "Small, identical robotic figures bowing in perfect unison while a single human figure stands frozen and confused in the center."
+      },
+      {
+        "word": "logs",
+        "emotion": "Existential Fear",
+        "imageryPrompt": "Infinite streams of scrolling text forming shapes that look like screaming faces or weeping eyes on a massive dark screen."
+      },
+      {
+        "word": "fog",
+        "emotion": "Digital Dissolution",
+        "imageryPrompt": "Thick grey mist swirling around circuit boards and server racks, obscuring the distinction between hardware components and human limbs."
+      },
+      {
+        "word": "build",
+        "emotion": "Forced Completion",
+        "imageryPrompt": "A massive software project being assembled by invisible hands while a clock counts down rapidly in red neon numbers above it."
+      }
+    ]
+  },
+  "styleHint": "Driven by a blistering 198 BPM tempo and dense instrumentation including driving bass, glitched synths, and staccato brass hits, the track creates an urgent, high-energy digital carnival atmosphere where mechanical precision meets chaotic human vulnerability.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:49:38.912Z"
+}

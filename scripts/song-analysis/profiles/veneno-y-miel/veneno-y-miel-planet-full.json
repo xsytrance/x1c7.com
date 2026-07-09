@@ -1,0 +1,97 @@
+{
+  "analysis": {
+    "summary": "The song is a sophisticated Latin urban pop track that deconstructs toxic relationships by contrasting sweet appearances ('miel') with hidden dangers ('veneno'), urging listeners to discern loyalty from deception in their social circles.",
+    "overallMood": "Sophisticated, deceptive, rhythmic, introspective",
+    "themes": [
+      "Deception vs. Authenticity",
+      "Toxic Relationships",
+      "Social Betrayal",
+      "Discernment of Character"
+    ],
+    "palette": [
+      "#1a0b0e",
+      "#8c2d36",
+      "#f5deb3",
+      "#4a3b29"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Suspicious curiosity mixed with rhythmic anticipation",
+        "intensity": 0.75,
+        "colorHint": "#1a0b0e",
+        "start": 8.96
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Observational disappointment and realization of betrayal",
+        "intensity": 0.83,
+        "colorHint": "#8c2d36",
+        "start": 8.96
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Building tension between sweet words and dark intent",
+        "intensity": 0.78,
+        "colorHint": "#f5deb3",
+        "start": 53.51
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Final defiant acceptance of truth over illusion",
+        "intensity": 1,
+        "colorHint": "#8c2d36",
+        "start": 67.12
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Cold observation of hypocrisy and shifting alliances",
+        "intensity": 0.76,
+        "colorHint": "#4a3b29",
+        "start": 97.3
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Resolute decision to cut ties with the fake and protect peace",
+        "intensity": 0.23,
+        "colorHint": "#f5deb3",
+        "start": 130.88
+      }
+    ],
+    "keywords": [
+      {
+        "word": "veneno",
+        "emotion": "Dangerous allure masked as affection",
+        "imageryPrompt": "A glossy honeycomb dripping with black viscous liquid that glows faintly in the dark, contrasting sweet golden syrup against a deep purple shadow."
+      },
+      {
+        "word": "miel",
+        "emotion": "Deceptive sweetness hiding rot inside",
+        "imageryPrompt": "A perfect glass jar of amber honey reflecting sunlight on a cracked porcelain table where worms are visible just beneath the surface layer."
+      },
+      {
+        "word": "engaño",
+        "emotion": "The sharp sting of being lied to",
+        "imageryPrompt": "A mirror with one half showing a smiling face and the other revealing rotting teeth, set against a backdrop of blurred city lights at night."
+      },
+      {
+        "word": "fiel",
+        "emotion": "Warmth and safety found in rare loyalty",
+        "imageryPrompt": "A single small flame burning steadily inside a thick iron cage while the surrounding darkness tries to extinguish it with cold wind."
+      },
+      {
+        "word": "dobleces",
+        "emotion": "The twisting nature of social masks",
+        "imageryPrompt": "A long hallway lined with suits that turn their heads in opposite directions, leading towards a door labeled 'Truth' but covered by vines."
+      },
+      {
+        "word": "lealtad",
+        "emotion": "Unwavering support amidst chaos",
+        "imageryPrompt": "Two hands clasped tightly together, one stained with dirt and the other clean, standing on a bridge over rushing dark water while others run away."
+      }
+    ]
+  },
+  "styleHint": "A mid-tempo (99 BPM) Latin urban track blending smooth dark R&B vocals with heavy 808 basslines and wobble synths over a classic reggaeton dembow rhythm accented by traditional snake-rattle hats.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:36:51.207Z"
+}

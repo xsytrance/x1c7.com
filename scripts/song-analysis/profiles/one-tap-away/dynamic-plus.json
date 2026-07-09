@@ -1,0 +1,36 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 48,
+   "end": 60,
+   "reactor": "orbit",
+   "why": "The chorus hits its peak of existential isolation; 'orbit' captures the feeling of floatin"
+  },
+  {
+   "start": 90,
+   "end": 106,
+   "reactor": "terminal",
+   "why": "The bridge's existential dread in a crowded space mirrors the cold logic of code and syste"
+  },
+  {
+   "start": 145,
+   "end": 162,
+   "stemSpot": {
+    "solo": [
+     "keys"
+    ],
+    "label": "THE KEYS SPEAK"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "alone": "shatter",
+  "tap": "glitch",
+  "strangers": "dissolve",
+  "fake": "redact",
+  "reach": "bleed",
+  "names": "chromatic"
+ }
+}

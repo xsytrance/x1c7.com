@@ -1,0 +1,231 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "whistle-on-the-river",
+  "generatedAt": "2026-07-09T18:40:15.050Z",
+  "measured": {
+    "bpm": 92.29,
+    "duration": 227.44
+  },
+  "identity": {
+    "title": "Whistle on the River",
+    "titleAlternates": [],
+    "genre": "Gangsta Rap",
+    "subGenres": [
+      "Boom Bap",
+      "Noir Hip-Hop"
+    ],
+    "mood": "grimy, cinematic, playful-dangerous, noir",
+    "styleSentence": "A gritty 94 BPM boom bap track blending dirty dockside crime narratives with a sinister 1920s cartoon aesthetic, featuring dusty drums, upright bass stabs, vinyl hiss, and raspy aggressive male vocals over a dark piano loop.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "raspy street vocals"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/whistle-on-the-river/cover.jpeg",
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#383838",
+      "#484848"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "F",
+      "mode": "minor",
+      "confidence": 0.644
+    },
+    "boundaries": [
+      22.38,
+      76.16,
+      82.2,
+      113.03,
+      202.11,
+      215.11,
+      218.82,
+      224.3
+    ],
+    "brightness": 2706.9,
+    "dynamicsDb": 13.1
+  },
+  "lyrics": {
+    "official": false,
+    "language": "english",
+    "text": "Yo, black and white night on the river.\nYou hear that whistle?\nThat ain't a warning.\nThat's a problem.\nWhistle on the river, smoke in the sky.\nBoat full of trouble when the bad boys ride.\nHands on the wheel, eyes gone cold.\nBlack and white world, but the money still gold.\nWhistle on the river, fog on the dock.\nCartoon gloves, but the hammer don't stop.\nOld school grin with a gangsta lean.\nSteam in the pipes and the whole boat mean.\nI came through squeaking with the boots on deck.\nLittle gloves on, but I still collect.\nCaptain of the chaos, grin too wide.\nSteamboat sliding through the low tide.\nPocket full of pens, hat tilted low.\nWhistle hit sharp when the crowd.\nGo and blow.\nRat-tat rhythm on the wooden floor.\nKick in the hatch, make the engine roar.\nOh, real flicker.\nEverybody freeze.\nSmoke stack, coughing like it got bad dreams.\nRiver racks scatter when the shadows get deep.\nIn the moonlight,\ndancers wear the secret sleeve.\nHey, yo!\nSteam up!\nGloves on!\nLights out!\nI'm on the dock with the rope and the crate.\nBlack ink dripping off the one it played.\nNo color in the world.\nBut the mood pitch dark.\nBe the one playing with the criminal spark.\nFog on base when the deal goes down.\nEverybody quiet when the boat come around.\nHeard three knocks and the whistle cried.\nNow the whole pier know who runs that tide.\nRubber hose bounce, but the bar's concrete.\nTap dance rhythm with the steel toe feet.\nRunning at the moon like I know too much.\nTurn that crank and the whole beat crush.\nYou thought it was funny?\nYou thought it was cute?\nNo.\nUh,\nthat whistle means move.\nWhistle on the river.\nSmoke in the sky.\nBoat full of trouble when the bad boys ride.\nHands on the wheel.\nEyes gone cold.\nBlack and white world, but the money still gold.\nWhistle on the river.\nFog on the dock.\nCartoon gloves, but the hammer don't stop.\nOld school grin with the gangster lean.\nSteam in the pipes and the whole boat mean.\nWeep, weep, weep, weep, weep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nWeep, weep, weep, weep, weep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nWeep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nRound ears and the shadow.\nWhite gloves on the crank.\nLaugh like a cartoon.\nMove like a bank.\nInk in my veins.\nSteam in my chest.\nRiver full of ghosts.\nI don't lose I collect.\nBoat go left when the lor go right.\nSmoke stack black in the pale moonlight.\nWhistle hit once and the dock gets nervous.\nOld little tune with a brand new purpose.\nSpin that wheel till the whole world shakes.\nLet the riverboat boss.\nwith the rubber hose legs black and white frame\nbut the threats stay vivid steamboat willy with\nthe whole gear with it whistle on the river smoke\nin the sky bullocks rubber when the bad boys ride\nhands on the wheel eyes gone cold black and white\nworld but the money still cold whistle on the\nriver fog on the dock cartoon glove but the hammer\ndon't stop old school grin with the gangster lean\nsteam in the pipes in the hobo mean\nthat ain't a cartoon that's the river talking",
+    "lrc": "[Intro]\n[Verse 1]\n[00:06.24] Yo, black and white night on the river.\n[00:10.06] You hear that whistle?\n[00:13.62] That ain't a warning.\n[00:16.82] That's a problem.\n[00:23.04] Whistle on the river, smoke in the sky.\n[00:25.44] Boat full of trouble when the bad boys ride.\n[00:27.66] Hands on the wheel, eyes gone cold.\n[00:30.40] Black and white world, but the money still gold.\n[00:33.28] Whistle on the river, fog on the dock.\n[00:35.90] Cartoon gloves, but the hammer don't stop.\n[00:38.12] Old school grin with a gangsta lean.\n[00:40.80] Steam in the pipes and the whole boat mean.\n[00:43.36] I came through squeaking with the boots on deck.\n[00:45.80] Little gloves on, but I still collect.\n[00:48.36] Captain of the chaos, grin too wide.\n[00:51.12] Steamboat sliding through the low tide.\n[00:53.42] Pocket full of pens, hat tilted low.\n[00:56.04] Whistle hit sharp when the crowd.\n[Chorus]\n[00:57.66] Go and blow.\n[00:58.62] Rat-tat rhythm on the wooden floor.\n[01:01.20] Kick in the hatch, make the engine roar.\n[01:03.90] Oh, real flicker.\n[01:05.04] Everybody freeze.\n[01:06.48] Smoke stack, coughing like it got bad dreams.\n[01:09.04] River racks scatter when the shadows get deep.\n[01:11.42] In the moonlight,\n[01:12.12] dancers wear the secret sleeve.\n[01:13.84] Hey, yo!\n[01:15.23] Steam up!\n[01:17.18] Gloves on!\n[01:19.01] Lights out!\n[01:21.57] I'm on the dock with the rope and the crate.\n[01:23.64] Black ink dripping off the one it played.\n[01:26.18] No color in the world.\n[01:27.32] But the mood pitch dark.\n[01:28.90] Be the one playing with the criminal spark.\n[01:31.60] Fog on base when the deal goes down.\n[01:33.92] Everybody quiet when the boat come around.\n[01:36.58] Heard three knocks and the whistle cried.\n[Verse 2]\n[01:38.92] Now the whole pier know who runs that tide.\n[01:41.80] Rubber hose bounce, but the bar's concrete.\n[01:44.16] Tap dance rhythm with the steel toe feet.\n[01:46.72] Running at the moon like I know too much.\n[01:49.32] Turn that crank and the whole beat crush.\n[01:53.18] You thought it was funny?\n[01:55.02] You thought it was cute?\n[01:56.66] No.\n[01:57.32] Uh,\n[01:58.30] that whistle means move.\n[02:00.18] Whistle on the river.\n[02:01.44] Smoke in the sky.\n[02:03.02] Boat full of trouble when the bad boys ride.\n[02:05.48] Hands on the wheel.\n[02:06.74] Eyes gone cold.\n[02:07.96] Black and white world, but the money still gold.\n[02:10.66] Whistle on the river.\n[02:11.76] Fog on the dock.\n[02:13.34] Cartoon gloves, but the hammer don't stop.\n[02:15.60] Old school grin with the gangster lean.\n[02:18.26] Steam in the pipes and the whole boat mean.\n[02:21.42] Weep, weep, weep, weep, weep,\n[02:23.70] weep,\n[02:24.06] weep,\n[02:24.84] weep,\n[02:25.08] weep,\n[02:25.28] weep,\n[02:25.60] weep,\n[02:25.62] weep,\n[02:25.76] weep,\n[02:25.84] weep,\n[02:25.84] weep,\n[02:25.84] weep,\n[02:25.84] weep.\n[02:28.18] Weep, weep, weep, weep, weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep,\n[02:30.66] weep.\n[02:30.66] Weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep,\n[02:30.94] weep.\n[02:30.94] Round ears and the shadow.\n[02:32.20] White gloves on the crank.\n[02:33.50] Laugh like a cartoon.\n[02:34.84] Move like a bank.\n[02:36.20] Ink in my veins.\n[02:37.48] Steam in my chest.\n[02:38.80] River full of ghosts.\n[02:39.90] I don't lose I collect.\n[02:41.60] Boat go left when the lor go right.\n[02:43.80] Smoke stack black in the pale moonlight.\n[02:46.56] Whistle hit once and the dock gets nervous.\n[02:49.28] Old little tune with a brand new purpose.\n[02:51.88] Spin that wheel till the whole world shakes.\n[02:54.22] Let the riverboat boss.\n[02:55.22] with the rubber hose legs black and white frame\n[02:57.78] but the threats stay vivid steamboat willy with\n[03:00.60] the whole gear with it whistle on the river smoke\n[03:03.36] in the sky bullocks rubber when the bad boys ride\n[03:06.86] hands on the wheel eyes gone cold black and white\n[03:10.34] world but the money still cold whistle on the\n[03:12.98] river fog on the dock cartoon glove but the hammer\n[03:16.48] don't stop old school grin with the gangster lean\n[Chorus]\n[03:19.56] steam in the pipes in the hobo mean\n[03:24.18] that ain't a cartoon that's the river talking\n"
+  },
+  "analysis": {
+    "summary": "A gritty gangsta rap narrative blending noir atmosphere with chaotic rubber-hose cartoon aesthetics to depict a dangerous riverboat crime story where playful visuals mask lethal threats.",
+    "overallMood": "0.75",
+    "themes": [
+      "Violence disguised as play",
+      "Noir criminal underworld",
+      "Cartoon physics meets reality",
+      "Dangerous nostalgia",
+      "Monochromatic tension",
+      "Industrial decay"
+    ],
+    "palette": [
+      "#1C1A16",
+      "#4B3F2E",
+      "#7D5A50",
+      "#8E9BA8"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Mysterious, ominous anticipation of a crime story beginning.",
+        "intensity": 0.3,
+        "colorHintHex": "#1C1A16",
+        "imageryPrompt": "Black and white grainy film stock with fog rolling over dark wooden docks at night, faint silhouette of an old steamboat whistle cutting through the smoke.",
+        "start": 6.24
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Playful yet menacing introduction to characters on a dangerous boat.",
+        "intensity": 0.86,
+        "colorHintHex": "#4B3F2E",
+        "imageryPrompt": "Rubber-hose animation style hands gripping a ship's wheel in high contrast black and white, steam rising from pipes like ghostly fingers against a dark river background.",
+        "start": 6.24
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Final crescendo of industrial noise and criminal threat.",
+        "intensity": 0.98,
+        "colorHintHex": "#8E9BA8",
+        "imageryPrompt": "Monochromatic scene where a riverboat engine roars like a living beast, gangster figures in white gloves standing amidst steam that forms screaming faces.",
+        "start": 57.66
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Aggressive realization that the cartoon facade is deadly real.",
+        "intensity": 0.26,
+        "colorHintHex": "#3E2C1F",
+        "imageryPrompt": "Concrete pier meeting bouncing rubber hose legs, a steel-toed boot crushing tap dance rhythms, dark shadows looming over white gloved hands turning crank wheels.",
+        "start": 98.92
+      }
+    ],
+    "keywords": [
+      {
+        "word": "whistle",
+        "emotion": "Menacing warning signal",
+        "imageryPrompt": "A rusty metal ship whistle emitting a sound wave that distorts reality into jagged cartoon lines against black smoke."
+      },
+      {
+        "word": "smoke",
+        "emotion": "Choking atmosphere of crime",
+        "imageryPrompt": "Thick rolling fog from steamboat stacks obscuring faces, swirling in grayscale like ink spilled on water with a hint of red danger deep inside the gray."
+      },
+      {
+        "word": "gloves",
+        "emotion": "Clumsy violence potential",
+        "imageryPrompt": "Large rubber-hose style white gloves hovering over a dark surface, fingers curled as if ready to strike or clutch something forbidden."
+      },
+      {
+        "word": "steam",
+        "emotion": "Industrial pressure and heat",
+        "imageryPrompt": "White vapor exploding from boiler pipes creating ghostly shapes that look like screaming mouths in a 1928 cartoon frame."
+      },
+      {
+        "word": "ink",
+        "emotion": "Permanent mark of criminal record",
+        "imageryPrompt": "Black liquid dripping from a fountain pen onto dirty wooden planks, spreading rapidly to form shadowy fingerprints in the dust."
+      },
+      {
+        "word": "crank",
+        "emotion": "Mechanical force and turning point",
+        "imageryPrompt": "A large metal ship wheel being turned by white-gloved hands causing chains to clank rhythmically under dim electric light."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 30,
+      "mid": 35,
+      "close": 20
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 6.24,
+        "intensity": 0.3
+      },
+      {
+        "name": "Verse 1",
+        "start": 6.24,
+        "intensity": 0.86
+      },
+      {
+        "name": "Chorus",
+        "start": 57.66,
+        "intensity": 0.98
+      },
+      {
+        "name": "Verse 2",
+        "start": 98.92,
+        "intensity": 0.26
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 25
+      },
+      {
+        "name": "Verse 1",
+        "presence": 77
+      },
+      {
+        "name": "Chorus",
+        "presence": 87
+      },
+      {
+        "name": "Verse 2",
+        "presence": 11
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          22.3
+        ],
+        [
+          41.26,
+          43.5
+        ],
+        [
+          74.94,
+          76.78
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "whistle-on-the-river-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 49,
+   "end": 57,
+   "reactor": "fireworks",
+   "why": "Captures the overwhelming pressure and cathartic release of the first chorus climax."
+  },
+  {
+   "start": 69,
+   "end": 79,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "THE DRUMS SPEAK"
+   },
+   "why": ""
+  }
+ ],
+ "words": {}
+}

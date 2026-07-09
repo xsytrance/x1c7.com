@@ -1,0 +1,91 @@
+{
+  "analysis": {
+    "summary": "This aggressive hip-hop soul anthem chronicles a transformative journey from inner emptiness and external pressure to becoming forged like gold through resilience.",
+    "overallMood": "Aggressive, Triumphant, Raw, Anthemic",
+    "themes": [
+      "Transformation through pressure",
+      "Resilience against doubt",
+      "Self-made worthiness",
+      "Turning pain into power"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Tense anticipation building from darkness to revelation",
+        "intensity": 0.72,
+        "colorHint": "#2b1d36",
+        "start": 1.12
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Gritty determination and raw soulful pain under pressure",
+        "intensity": 0.91,
+        "colorHint": "#ff4500",
+        "start": 32.24
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Rising energy, cleansing fire preparing for the anthem",
+        "intensity": 0.97,
+        "colorHint": "#ffd700",
+        "start": 118.64
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Explosive triumph and defiant anthemic power",
+        "intensity": 0.67,
+        "colorHint": "#ffebcd",
+        "start": 132.42
+      },
+      {
+        "name": "Post-Chorus",
+        "emotion": "Cathartic release shifting from battle to healing reflection",
+        "intensity": 0.2,
+        "colorHint": "#1e3f4a",
+        "start": 198.24
+      },
+      {
+        "name": "Drop",
+        "emotion": "Ultimate victory and unshakeable golden confidence",
+        "intensity": 0.3,
+        "colorHint": "#ffd700",
+        "start": 242.72
+      }
+    ],
+    "keywords": [
+      {
+        "word": "pressure",
+        "emotion": "Compressed intensity transforming into strength",
+        "imageryPrompt": "A heavy iron weight crushing a dark silhouette, but the cracks are glowing with molten gold light seeping through."
+      },
+      {
+        "word": "void",
+        "emotion": "Deep existential emptiness turning into fertile ground for creation",
+        "imageryPrompt": "An endless swirling abyss of deep indigo and black mist, yet at the center a single spark ignites like a miniature sun."
+      },
+      {
+        "word": "gold",
+        "emotion": "Radiant triumph and unbreakable value forged in fire",
+        "imageryPrompt": "Molten liquid gold splashing against dark volcanic rock, reflecting intense orange flames that illuminate the surrounding smoke."
+      },
+      {
+        "word": "fire",
+        "emotion": "Purifying heat burning away fear and weakness",
+        "imageryPrompt": "Crackling blue and white flames consuming a pile of ash and broken wood, rising upward in tall spirals against a night sky."
+      },
+      {
+        "word": "scars",
+        "emotion": "Proud marks of survival that prove authenticity",
+        "imageryPrompt": "Close up on weathered skin where silver scars are glowing warmly like veins filled with liquid starlight instead of blood."
+      },
+      {
+        "word": "build",
+        "emotion": "Relentless construction rising from nothing to something magnificent",
+        "imageryPrompt": "A massive stone tower being constructed by giant hands emerging from a dark fog, each block glowing with internal golden light."
+      }
+    ]
+  },
+  "styleHint": "Hardcore motivational hip-hop soul anthem, 96 BPM, aggressive East Coast boom-bap drums, stomping street-chant energy, rowdy call-and-response crew vocals, gritty male hype shouts, powerful soulful female lead with raw gospel fire, smoky alto verses, soaring emotional belts, sharp rap verses, cinematic soul strings, dusty piano stabs, brass hits, chopped vocal samples, turntable scratches, heavy kick and snare, deep sub bass, tense build-ups, dramatic pauses, crowd chants, clap stacks, rebellious underdog energy. Theme: pressure, self-building, transformation, turning pain into value, rising from nothing into something rarer than gold. Hard but uplifting, no defeat, no whining, no soft beach lounge vibe. Anthemic chorus, memorable chant hook, intense breakdown, triumphant final chorus, raw human performance, polished but street-level, summer-night-to-war-room energy.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:39:12.660Z"
+}

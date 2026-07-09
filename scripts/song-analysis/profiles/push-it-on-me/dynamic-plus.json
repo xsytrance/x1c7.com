@@ -1,0 +1,31 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 31,
+   "end": 42,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "THE LOW LIGHTS & SLOW "
+   },
+   "why": ""
+  },
+  {
+   "start": 56,
+   "end": 71,
+   "reactor": "handwriting",
+   "why": "The whispered breakdown turns into an intimate letter; the stuttering tension is best serv"
+  }
+ ],
+ "words": {
+  "feel": "bloom",
+  "dark": "shatter",
+  "slow": "melt",
+  "spark": "pulse",
+  "push": "slam",
+  "stop": "freeze"
+ }
+}

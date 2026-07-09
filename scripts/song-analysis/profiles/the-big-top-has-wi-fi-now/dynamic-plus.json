@@ -1,0 +1,35 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 127,
+   "end": 149,
+   "reactor": "fireworks",
+   "why": "Matches the 'Chaotic Euphoria' of the main chorus where digital clowns and agents take ove"
+  },
+  {
+   "start": 184,
+   "end": 209,
+   "reactor": "tarot",
+   "why": "Aligns with the 'Melancholic Realization' at the bridge; tarot evokes fate and mystery as "
+  },
+  {
+   "start": 301,
+   "end": 314.4,
+   "reactor": "terminal",
+   "why": "Captures the 'Glitched Stasis' of the final drop; terminal mode represents tech/code/machi"
+  }
+ ],
+ "words": {
+  "operator": "glitch",
+  "circus": "shatter",
+  "awake": "pulse",
+  "green": "neon",
+  "haunt": "bleed",
+  "online": "dissolve",
+  "design": "chromatic",
+  "juggling": "wave",
+  "agents": "freeze",
+  "blinking": "shimmer"
+ }
+}

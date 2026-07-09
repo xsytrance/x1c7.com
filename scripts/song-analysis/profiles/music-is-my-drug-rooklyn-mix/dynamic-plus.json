@@ -1,0 +1,56 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 12,
+   "end": 37,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "THE BASSELINE SPEAKS"
+   },
+   "why": ""
+  },
+  {
+   "start": 60,
+   "end": 85,
+   "stemSpot": {
+    "solo": [
+     "lead"
+    ],
+    "label": "THE FIRE RISES"
+   },
+   "why": ""
+  },
+  {
+   "start": 90,
+   "end": 115,
+   "stemSpot": {
+    "solo": [
+     "lead"
+    ],
+    "label": "THE HOOK CLEARS MIND"
+   },
+   "why": ""
+  },
+  {
+   "start": 176,
+   "end": 201,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "lead"
+    ],
+    "label": "COLLECTIVE TRANCE MODE"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "drug": "shatter",
+  "fire": "bloom",
+  "pain": "melt",
+  "alive": "pulse"
+ }
+}

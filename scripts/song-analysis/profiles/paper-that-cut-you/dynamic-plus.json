@@ -1,0 +1,42 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 98,
+   "end": 106,
+   "stemSpot": {
+    "solo": [
+     "guitar"
+    ],
+    "label": "THE SHARP EDGE"
+   },
+   "why": ""
+  },
+  {
+   "start": 140,
+   "end": 165,
+   "reactor": "marionette",
+   "why": "The 'Ominous Stalking' section perfectly matches the marionette mode's vibe of manipulatio"
+  },
+  {
+   "start": 237,
+   "end": 260,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "drums"
+    ],
+    "label": "DIGITAL STATIC ONLY"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "paranoid": "glitch",
+  "cut": "shatter",
+  "shadow": "bleed",
+  "voice": "echo",
+  "lie": "melt",
+  "skin": "dissolve"
+ }
+}

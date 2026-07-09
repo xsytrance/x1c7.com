@@ -1,0 +1,2803 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 3.18,
+      "end": 5.56,
+      "text": "Mmm, this summer feel different",
+      "words": [
+        {
+          "t": 3.18,
+          "text": "Mmm,"
+        },
+        {
+          "t": 3.78,
+          "text": "this"
+        },
+        {
+          "t": 4.6,
+          "text": "summer"
+        },
+        {
+          "t": 4.7,
+          "text": "feel"
+        },
+        {
+          "t": 5.0,
+          "text": "different"
+        }
+      ]
+    },
+    {
+      "start": 8.78,
+      "end": 13.06,
+      "text": "No rush, no wait, no noise in my head tonight",
+      "words": [
+        {
+          "t": 8.78,
+          "text": "No"
+        },
+        {
+          "t": 8.88,
+          "text": "rush,"
+        },
+        {
+          "t": 9.46,
+          "text": "no"
+        },
+        {
+          "t": 10.26,
+          "text": "wait,"
+        },
+        {
+          "t": 10.9,
+          "text": "no"
+        },
+        {
+          "t": 11.26,
+          "text": "noise"
+        },
+        {
+          "t": 11.72,
+          "text": "in"
+        },
+        {
+          "t": 11.92,
+          "text": "my"
+        },
+        {
+          "t": 12.04,
+          "text": "head"
+        },
+        {
+          "t": 12.38,
+          "text": "tonight"
+        }
+      ]
+    },
+    {
+      "start": 16.896,
+      "end": 21.16,
+      "text": "Ay-yi-yi, we outside now Ay-yi-yi,",
+      "words": [
+        {
+          "t": 16.896,
+          "text": "Ay"
+        },
+        {
+          "t": 17.0,
+          "text": "-yi"
+        },
+        {
+          "t": 17.18,
+          "text": "-yi,"
+        },
+        {
+          "t": 17.5,
+          "text": "we"
+        },
+        {
+          "t": 19.06,
+          "text": "outside"
+        },
+        {
+          "t": 19.16,
+          "text": "now"
+        },
+        {
+          "t": 20.02,
+          "text": "Ay"
+        },
+        {
+          "t": 20.74,
+          "text": "-yi"
+        },
+        {
+          "t": 20.96,
+          "text": "-yi,"
+        }
+      ]
+    },
+    {
+      "start": 22.176,
+      "end": 23.44,
+      "text": "sun goin' down",
+      "words": [
+        {
+          "t": 22.176,
+          "text": "sun"
+        },
+        {
+          "t": 22.3,
+          "text": "goin'"
+        },
+        {
+          "t": 22.9,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 24.05,
+      "end": 24.92,
+      "text": "Ay-yi-yi,",
+      "words": [
+        {
+          "t": 24.05,
+          "text": "Ay"
+        },
+        {
+          "t": 24.5,
+          "text": "-yi"
+        },
+        {
+          "t": 24.64,
+          "text": "-yi,"
+        }
+      ]
+    },
+    {
+      "start": 25.68,
+      "end": 26.6,
+      "text": "let the bass roll up",
+      "words": [
+        {
+          "t": 25.68,
+          "text": "let"
+        },
+        {
+          "t": 25.78,
+          "text": "the"
+        },
+        {
+          "t": 25.88,
+          "text": "bass"
+        },
+        {
+          "t": 26.12,
+          "text": "roll"
+        },
+        {
+          "t": 26.32,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 27.54,
+      "end": 28.4,
+      "text": "Let the mind let go",
+      "words": [
+        {
+          "t": 27.54,
+          "text": "Let"
+        },
+        {
+          "t": 27.64,
+          "text": "the"
+        },
+        {
+          "t": 27.78,
+          "text": "mind"
+        },
+        {
+          "t": 27.96,
+          "text": "let"
+        },
+        {
+          "t": 28.14,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 39.71,
+      "end": 45.16,
+      "text": "Mmm, I-I-I had too much livin' on my shoulders",
+      "words": [
+        {
+          "t": 39.71,
+          "text": "Mmm,"
+        },
+        {
+          "t": 40.56,
+          "text": "I"
+        },
+        {
+          "t": 41.48,
+          "text": "-I"
+        },
+        {
+          "t": 42.7,
+          "text": "-I"
+        },
+        {
+          "t": 42.96,
+          "text": "had"
+        },
+        {
+          "t": 43.06,
+          "text": "too"
+        },
+        {
+          "t": 43.4,
+          "text": "much"
+        },
+        {
+          "t": 43.72,
+          "text": "livin'"
+        },
+        {
+          "t": 44.22,
+          "text": "on"
+        },
+        {
+          "t": 44.32,
+          "text": "my"
+        },
+        {
+          "t": 44.6,
+          "text": "shoulders"
+        }
+      ]
+    },
+    {
+      "start": 46.78,
+      "end": 49.24,
+      "text": "Too many doubts openin' my mind",
+      "words": [
+        {
+          "t": 46.78,
+          "text": "Too"
+        },
+        {
+          "t": 46.88,
+          "text": "many"
+        },
+        {
+          "t": 47.22,
+          "text": "doubts"
+        },
+        {
+          "t": 47.72,
+          "text": "openin'"
+        },
+        {
+          "t": 48.54,
+          "text": "my"
+        },
+        {
+          "t": 48.72,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 49.24,
+      "end": 56.36,
+      "text": "Same old walls gettin' colder Same old clocks stealin' time",
+      "words": [
+        {
+          "t": 49.24,
+          "text": "Same"
+        },
+        {
+          "t": 50.42,
+          "text": "old"
+        },
+        {
+          "t": 51.02,
+          "text": "walls"
+        },
+        {
+          "t": 51.54,
+          "text": "gettin'"
+        },
+        {
+          "t": 52.18,
+          "text": "colder"
+        },
+        {
+          "t": 52.78,
+          "text": "Same"
+        },
+        {
+          "t": 54.18,
+          "text": "old"
+        },
+        {
+          "t": 54.7,
+          "text": "clocks"
+        },
+        {
+          "t": 55.24,
+          "text": "stealin'"
+        },
+        {
+          "t": 55.9,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 57.472,
+      "end": 59.06,
+      "text": "Then the strings came in like sunlight",
+      "words": [
+        {
+          "t": 57.472,
+          "text": "Then"
+        },
+        {
+          "t": 57.68,
+          "text": "the"
+        },
+        {
+          "t": 57.78,
+          "text": "strings"
+        },
+        {
+          "t": 57.9,
+          "text": "came"
+        },
+        {
+          "t": 58.16,
+          "text": "in"
+        },
+        {
+          "t": 58.48,
+          "text": "like"
+        },
+        {
+          "t": 58.68,
+          "text": "sunlight"
+        }
+      ]
+    },
+    {
+      "start": 59.06,
+      "end": 59.328,
+      "text": "Mmm",
+      "words": [
+        {
+          "t": 59.06,
+          "text": "Mmm"
+        }
+      ]
+    },
+    {
+      "start": 60.864,
+      "end": 66.58,
+      "text": "Bassline movin' through the smoke One deep breath and I felt life",
+      "words": [
+        {
+          "t": 60.864,
+          "text": "Bassline"
+        },
+        {
+          "t": 61.48,
+          "text": "movin'"
+        },
+        {
+          "t": 62.02,
+          "text": "through"
+        },
+        {
+          "t": 62.12,
+          "text": "the"
+        },
+        {
+          "t": 62.36,
+          "text": "smoke"
+        },
+        {
+          "t": 62.68,
+          "text": "One"
+        },
+        {
+          "t": 64.7,
+          "text": "deep"
+        },
+        {
+          "t": 65.16,
+          "text": "breath"
+        },
+        {
+          "t": 65.5,
+          "text": "and"
+        },
+        {
+          "t": 65.68,
+          "text": "I"
+        },
+        {
+          "t": 65.9,
+          "text": "felt"
+        },
+        {
+          "t": 66.1,
+          "text": "life"
+        }
+      ]
+    },
+    {
+      "start": 68.48,
+      "end": 74.45,
+      "text": "Pulled me back before I broke Now that beach got bottles blowin'",
+      "words": [
+        {
+          "t": 68.48,
+          "text": "Pulled"
+        },
+        {
+          "t": 68.64,
+          "text": "me"
+        },
+        {
+          "t": 68.88,
+          "text": "back"
+        },
+        {
+          "t": 69.22,
+          "text": "before"
+        },
+        {
+          "t": 69.58,
+          "text": "I"
+        },
+        {
+          "t": 69.88,
+          "text": "broke"
+        },
+        {
+          "t": 70.28,
+          "text": "Now"
+        },
+        {
+          "t": 72.7,
+          "text": "that"
+        },
+        {
+          "t": 72.8,
+          "text": "beach"
+        },
+        {
+          "t": 72.98,
+          "text": "got"
+        },
+        {
+          "t": 73.16,
+          "text": "bottles"
+        },
+        {
+          "t": 73.6,
+          "text": "blowin'"
+        }
+      ]
+    },
+    {
+      "start": 75.46,
+      "end": 81.77,
+      "text": "Little fire by the shore Laptop closed but the soul still lordin'",
+      "words": [
+        {
+          "t": 75.46,
+          "text": "Little"
+        },
+        {
+          "t": 76.14,
+          "text": "fire"
+        },
+        {
+          "t": 76.82,
+          "text": "by"
+        },
+        {
+          "t": 77.12,
+          "text": "the"
+        },
+        {
+          "t": 77.28,
+          "text": "shore"
+        },
+        {
+          "t": 77.72,
+          "text": "Laptop"
+        },
+        {
+          "t": 79.76,
+          "text": "closed"
+        },
+        {
+          "t": 80.0,
+          "text": "but"
+        },
+        {
+          "t": 80.18,
+          "text": "the"
+        },
+        {
+          "t": 80.3,
+          "text": "soul"
+        },
+        {
+          "t": 80.58,
+          "text": "still"
+        },
+        {
+          "t": 80.92,
+          "text": "lordin'"
+        }
+      ]
+    },
+    {
+      "start": 81.98,
+      "end": 88.86,
+      "text": "I don't need to chase no more Pour a little something sweet",
+      "words": [
+        {
+          "t": 81.98,
+          "text": "I"
+        },
+        {
+          "t": 82.496,
+          "text": "don't"
+        },
+        {
+          "t": 83.6,
+          "text": "need"
+        },
+        {
+          "t": 83.74,
+          "text": "to"
+        },
+        {
+          "t": 83.96,
+          "text": "chase"
+        },
+        {
+          "t": 84.34,
+          "text": "no"
+        },
+        {
+          "t": 84.72,
+          "text": "more"
+        },
+        {
+          "t": 85.2,
+          "text": "Pour"
+        },
+        {
+          "t": 87.264,
+          "text": "a"
+        },
+        {
+          "t": 88.1,
+          "text": "little"
+        },
+        {
+          "t": 88.22,
+          "text": "something"
+        },
+        {
+          "t": 88.48,
+          "text": "sweet"
+        }
+      ]
+    },
+    {
+      "start": 88.86,
+      "end": 89.98,
+      "text": "Roll a little piece of ice And I'm back to where I belong",
+      "words": [
+        {
+          "t": 88.86,
+          "text": "Roll"
+        },
+        {
+          "t": 89.32,
+          "text": "a"
+        },
+        {
+          "t": 89.44,
+          "text": "little"
+        },
+        {
+          "t": 89.6,
+          "text": "piece"
+        },
+        {
+          "t": 89.88,
+          "text": "of"
+        },
+        {
+          "t": 89.98,
+          "text": "ice"
+        },
+        {
+          "t": 89.98,
+          "text": "And"
+        },
+        {
+          "t": 89.98,
+          "text": "I'm"
+        },
+        {
+          "t": 89.98,
+          "text": "back"
+        },
+        {
+          "t": 89.98,
+          "text": "to"
+        },
+        {
+          "t": 89.98,
+          "text": "where"
+        },
+        {
+          "t": 89.98,
+          "text": "I"
+        },
+        {
+          "t": 89.98,
+          "text": "belong"
+        }
+      ]
+    },
+    {
+      "start": 90.0,
+      "end": 90.76,
+      "text": "If you need,",
+      "words": [
+        {
+          "t": 90.0,
+          "text": "If"
+        },
+        {
+          "t": 90.36,
+          "text": "you"
+        },
+        {
+          "t": 90.5,
+          "text": "need,"
+        }
+      ]
+    },
+    {
+      "start": 90.9,
+      "end": 91.7,
+      "text": "eat the fruit,",
+      "words": [
+        {
+          "t": 90.9,
+          "text": "eat"
+        },
+        {
+          "t": 91.22,
+          "text": "the"
+        },
+        {
+          "t": 91.38,
+          "text": "fruit,"
+        }
+      ]
+    },
+    {
+      "start": 91.8,
+      "end": 94.52,
+      "text": "taste the heat Find your balance in the feast",
+      "words": [
+        {
+          "t": 91.8,
+          "text": "taste"
+        },
+        {
+          "t": 92.16,
+          "text": "the"
+        },
+        {
+          "t": 92.42,
+          "text": "heat"
+        },
+        {
+          "t": 92.68,
+          "text": "Find"
+        },
+        {
+          "t": 93.12,
+          "text": "your"
+        },
+        {
+          "t": 93.3,
+          "text": "balance"
+        },
+        {
+          "t": 93.76,
+          "text": "in"
+        },
+        {
+          "t": 94.04,
+          "text": "the"
+        },
+        {
+          "t": 94.18,
+          "text": "feast"
+        }
+      ]
+    },
+    {
+      "start": 94.52,
+      "end": 98.28,
+      "text": "No shame in a joyful body No fear in a healing night",
+      "words": [
+        {
+          "t": 94.52,
+          "text": "No"
+        },
+        {
+          "t": 94.9,
+          "text": "shame"
+        },
+        {
+          "t": 95.22,
+          "text": "in"
+        },
+        {
+          "t": 95.54,
+          "text": "a"
+        },
+        {
+          "t": 95.62,
+          "text": "joyful"
+        },
+        {
+          "t": 95.98,
+          "text": "body"
+        },
+        {
+          "t": 96.42,
+          "text": "No"
+        },
+        {
+          "t": 96.76,
+          "text": "fear"
+        },
+        {
+          "t": 97.08,
+          "text": "in"
+        },
+        {
+          "t": 97.42,
+          "text": "a"
+        },
+        {
+          "t": 97.5,
+          "text": "healing"
+        },
+        {
+          "t": 97.84,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 98.28,
+      "end": 102.08,
+      "text": "If the world gets loud around me I'ma dance until it's light",
+      "words": [
+        {
+          "t": 98.28,
+          "text": "If"
+        },
+        {
+          "t": 98.78,
+          "text": "the"
+        },
+        {
+          "t": 98.88,
+          "text": "world"
+        },
+        {
+          "t": 99.24,
+          "text": "gets"
+        },
+        {
+          "t": 99.4,
+          "text": "loud"
+        },
+        {
+          "t": 99.64,
+          "text": "around"
+        },
+        {
+          "t": 100.06,
+          "text": "me"
+        },
+        {
+          "t": 100.38,
+          "text": "I'ma"
+        },
+        {
+          "t": 100.74,
+          "text": "dance"
+        },
+        {
+          "t": 101.14,
+          "text": "until"
+        },
+        {
+          "t": 101.38,
+          "text": "it's"
+        },
+        {
+          "t": 101.78,
+          "text": "light"
+        }
+      ]
+    },
+    {
+      "start": 102.28,
+      "end": 104.1,
+      "text": "Empty your mind,",
+      "words": [
+        {
+          "t": 102.28,
+          "text": "Empty"
+        },
+        {
+          "t": 103.28,
+          "text": "your"
+        },
+        {
+          "t": 103.6,
+          "text": "mind,"
+        }
+      ]
+    },
+    {
+      "start": 104.68,
+      "end": 107.488,
+      "text": "fill up your heart Move with the light,",
+      "words": [
+        {
+          "t": 104.68,
+          "text": "fill"
+        },
+        {
+          "t": 104.78,
+          "text": "up"
+        },
+        {
+          "t": 105.24,
+          "text": "your"
+        },
+        {
+          "t": 105.5,
+          "text": "heart"
+        },
+        {
+          "t": 105.98,
+          "text": "Move"
+        },
+        {
+          "t": 106.66,
+          "text": "with"
+        },
+        {
+          "t": 107.06,
+          "text": "the"
+        },
+        {
+          "t": 107.32,
+          "text": "light,"
+        }
+      ]
+    },
+    {
+      "start": 108.02,
+      "end": 109.54,
+      "text": "let the good life start",
+      "words": [
+        {
+          "t": 108.02,
+          "text": "let"
+        },
+        {
+          "t": 108.12,
+          "text": "the"
+        },
+        {
+          "t": 108.32,
+          "text": "good"
+        },
+        {
+          "t": 108.64,
+          "text": "life"
+        },
+        {
+          "t": 109.06,
+          "text": "start"
+        }
+      ]
+    },
+    {
+      "start": 109.62,
+      "end": 111.552,
+      "text": "Love who you love,",
+      "words": [
+        {
+          "t": 109.62,
+          "text": "Love"
+        },
+        {
+          "t": 110.56,
+          "text": "who"
+        },
+        {
+          "t": 110.74,
+          "text": "you"
+        },
+        {
+          "t": 111.12,
+          "text": "love,"
+        }
+      ]
+    },
+    {
+      "start": 112.3,
+      "end": 115.34,
+      "text": "hold who you hold We came from the void,",
+      "words": [
+        {
+          "t": 112.3,
+          "text": "hold"
+        },
+        {
+          "t": 112.4,
+          "text": "who"
+        },
+        {
+          "t": 112.68,
+          "text": "you"
+        },
+        {
+          "t": 113.04,
+          "text": "hold"
+        },
+        {
+          "t": 113.42,
+          "text": "We"
+        },
+        {
+          "t": 113.92,
+          "text": "came"
+        },
+        {
+          "t": 114.26,
+          "text": "from"
+        },
+        {
+          "t": 114.68,
+          "text": "the"
+        },
+        {
+          "t": 114.86,
+          "text": "void,"
+        }
+      ]
+    },
+    {
+      "start": 115.44,
+      "end": 117.056,
+      "text": "now we turnin' into gold",
+      "words": [
+        {
+          "t": 115.44,
+          "text": "now"
+        },
+        {
+          "t": 115.6,
+          "text": "we"
+        },
+        {
+          "t": 115.78,
+          "text": "turnin'"
+        },
+        {
+          "t": 116.44,
+          "text": "into"
+        },
+        {
+          "t": 116.68,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 117.16,
+      "end": 120.78,
+      "text": "Oh-oh, oh-oh, oh-oh, oh-oh Oh, let it go",
+      "words": [
+        {
+          "t": 117.16,
+          "text": "Oh"
+        },
+        {
+          "t": 117.62,
+          "text": "-oh,"
+        },
+        {
+          "t": 117.8,
+          "text": "oh"
+        },
+        {
+          "t": 117.94,
+          "text": "-oh,"
+        },
+        {
+          "t": 118.208,
+          "text": "oh"
+        },
+        {
+          "t": 118.42,
+          "text": "-oh,"
+        },
+        {
+          "t": 118.88,
+          "text": "oh"
+        },
+        {
+          "t": 119.14,
+          "text": "-oh"
+        },
+        {
+          "t": 119.44,
+          "text": "Oh,"
+        },
+        {
+          "t": 119.744,
+          "text": "let"
+        },
+        {
+          "t": 120.256,
+          "text": "it"
+        },
+        {
+          "t": 120.5,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 121.24,
+      "end": 124.7,
+      "text": "Oh-oh, oh-oh, oh-oh, oh-oh Nice and slow",
+      "words": [
+        {
+          "t": 121.24,
+          "text": "Oh"
+        },
+        {
+          "t": 121.52,
+          "text": "-oh,"
+        },
+        {
+          "t": 121.88,
+          "text": "oh"
+        },
+        {
+          "t": 121.98,
+          "text": "-oh,"
+        },
+        {
+          "t": 122.16,
+          "text": "oh"
+        },
+        {
+          "t": 122.16,
+          "text": "-oh,"
+        },
+        {
+          "t": 122.68,
+          "text": "oh"
+        },
+        {
+          "t": 122.96,
+          "text": "-oh"
+        },
+        {
+          "t": 123.02,
+          "text": "Nice"
+        },
+        {
+          "t": 123.28,
+          "text": "and"
+        },
+        {
+          "t": 124.28,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 124.7,
+      "end": 128.34,
+      "text": "Oh-oh, oh-oh, oh-oh, oh-oh Feel your soul",
+      "words": [
+        {
+          "t": 124.7,
+          "text": "Oh"
+        },
+        {
+          "t": 125.24,
+          "text": "-oh,"
+        },
+        {
+          "t": 125.664,
+          "text": "oh"
+        },
+        {
+          "t": 125.78,
+          "text": "-oh,"
+        },
+        {
+          "t": 125.9,
+          "text": "oh"
+        },
+        {
+          "t": 125.9,
+          "text": "-oh,"
+        },
+        {
+          "t": 126.46,
+          "text": "oh"
+        },
+        {
+          "t": 126.64,
+          "text": "-oh"
+        },
+        {
+          "t": 126.68,
+          "text": "Feel"
+        },
+        {
+          "t": 127.18,
+          "text": "your"
+        },
+        {
+          "t": 127.94,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 128.34,
+      "end": 132.28,
+      "text": "We came from the void Now we turnin' into gold",
+      "words": [
+        {
+          "t": 128.34,
+          "text": "We"
+        },
+        {
+          "t": 128.92,
+          "text": "came"
+        },
+        {
+          "t": 129.32,
+          "text": "from"
+        },
+        {
+          "t": 129.7,
+          "text": "the"
+        },
+        {
+          "t": 129.86,
+          "text": "void"
+        },
+        {
+          "t": 130.36,
+          "text": "Now"
+        },
+        {
+          "t": 130.58,
+          "text": "we"
+        },
+        {
+          "t": 130.8,
+          "text": "turnin'"
+        },
+        {
+          "t": 131.4,
+          "text": "into"
+        },
+        {
+          "t": 131.7,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 132.9,
+      "end": 133.88,
+      "text": "Why ya slow?",
+      "words": [
+        {
+          "t": 132.9,
+          "text": "Why"
+        },
+        {
+          "t": 133.46,
+          "text": "ya"
+        },
+        {
+          "t": 133.56,
+          "text": "slow?"
+        }
+      ]
+    },
+    {
+      "start": 137.12,
+      "end": 138.32,
+      "text": "Bass slow Eyes close",
+      "words": [
+        {
+          "t": 137.12,
+          "text": "Bass"
+        },
+        {
+          "t": 137.22,
+          "text": "slow"
+        },
+        {
+          "t": 137.64,
+          "text": "Eyes"
+        },
+        {
+          "t": 138.22,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 139.58,
+      "end": 141.216,
+      "text": "Let, let, let, let, let go",
+      "words": [
+        {
+          "t": 139.58,
+          "text": "Let,"
+        },
+        {
+          "t": 140.02,
+          "text": "let,"
+        },
+        {
+          "t": 140.24,
+          "text": "let,"
+        },
+        {
+          "t": 140.68,
+          "text": "let,"
+        },
+        {
+          "t": 140.74,
+          "text": "let"
+        },
+        {
+          "t": 140.86,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 142.4,
+      "end": 143.36,
+      "text": "Mmm, me",
+      "words": [
+        {
+          "t": 142.4,
+          "text": "Mmm,"
+        },
+        {
+          "t": 142.96,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 144.256,
+      "end": 145.26,
+      "text": "It's still loadin'",
+      "words": [
+        {
+          "t": 144.256,
+          "text": "It's"
+        },
+        {
+          "t": 144.48,
+          "text": "still"
+        },
+        {
+          "t": 144.7,
+          "text": "loadin'"
+        }
+      ]
+    },
+    {
+      "start": 145.44,
+      "end": 147.14,
+      "text": "Oh, oh, oh, oh-oh, oh-oh Heart cleansin' my soul",
+      "words": [
+        {
+          "t": 145.44,
+          "text": "Oh,"
+        },
+        {
+          "t": 145.7,
+          "text": "oh,"
+        },
+        {
+          "t": 146.0,
+          "text": "oh,"
+        },
+        {
+          "t": 146.14,
+          "text": "oh"
+        },
+        {
+          "t": 146.32,
+          "text": "-oh,"
+        },
+        {
+          "t": 146.46,
+          "text": "oh"
+        },
+        {
+          "t": 146.46,
+          "text": "-oh"
+        },
+        {
+          "t": 146.46,
+          "text": "Heart"
+        },
+        {
+          "t": 146.52,
+          "text": "cleansin'"
+        },
+        {
+          "t": 147.12,
+          "text": "my"
+        },
+        {
+          "t": 147.14,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 147.14,
+      "end": 150.42,
+      "text": "still blowing cocktails and cold on the table",
+      "words": [
+        {
+          "t": 147.14,
+          "text": "still"
+        },
+        {
+          "t": 147.38,
+          "text": "blowing"
+        },
+        {
+          "t": 148.08,
+          "text": "cocktails"
+        },
+        {
+          "t": 148.56,
+          "text": "and"
+        },
+        {
+          "t": 149.56,
+          "text": "cold"
+        },
+        {
+          "t": 149.86,
+          "text": "on"
+        },
+        {
+          "t": 150.06,
+          "text": "the"
+        },
+        {
+          "t": 150.12,
+          "text": "table"
+        }
+      ]
+    },
+    {
+      "start": 150.42,
+      "end": 153.08,
+      "text": "dreams in the blue screen light i was building",
+      "words": [
+        {
+          "t": 150.42,
+          "text": "dreams"
+        },
+        {
+          "t": 150.82,
+          "text": "in"
+        },
+        {
+          "t": 151.14,
+          "text": "the"
+        },
+        {
+          "t": 151.4,
+          "text": "blue"
+        },
+        {
+          "t": 151.64,
+          "text": "screen"
+        },
+        {
+          "t": 151.9,
+          "text": "light"
+        },
+        {
+          "t": 152.16,
+          "text": "i"
+        },
+        {
+          "t": 152.608,
+          "text": "was"
+        },
+        {
+          "t": 152.8,
+          "text": "building"
+        }
+      ]
+    },
+    {
+      "start": 153.08,
+      "end": 156.6,
+      "text": "when i was able now i'm living what i type no more",
+      "words": [
+        {
+          "t": 153.08,
+          "text": "when"
+        },
+        {
+          "t": 153.32,
+          "text": "i"
+        },
+        {
+          "t": 153.52,
+          "text": "was"
+        },
+        {
+          "t": 153.84,
+          "text": "able"
+        },
+        {
+          "t": 154.16,
+          "text": "now"
+        },
+        {
+          "t": 154.44,
+          "text": "i'm"
+        },
+        {
+          "t": 154.78,
+          "text": "living"
+        },
+        {
+          "t": 155.04,
+          "text": "what"
+        },
+        {
+          "t": 155.44,
+          "text": "i"
+        },
+        {
+          "t": 155.64,
+          "text": "type"
+        },
+        {
+          "t": 156.0,
+          "text": "no"
+        },
+        {
+          "t": 156.34,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 156.6,
+      "end": 159.68,
+      "text": "waiting on permission no more saving joy for later",
+      "words": [
+        {
+          "t": 156.6,
+          "text": "waiting"
+        },
+        {
+          "t": 157.02,
+          "text": "on"
+        },
+        {
+          "t": 157.3,
+          "text": "permission"
+        },
+        {
+          "t": 157.82,
+          "text": "no"
+        },
+        {
+          "t": 158.2,
+          "text": "more"
+        },
+        {
+          "t": 158.5,
+          "text": "saving"
+        },
+        {
+          "t": 158.9,
+          "text": "joy"
+        },
+        {
+          "t": 159.2,
+          "text": "for"
+        },
+        {
+          "t": 159.38,
+          "text": "later"
+        }
+      ]
+    },
+    {
+      "start": 159.68,
+      "end": 162.98,
+      "text": "every heartbeat is a rhythm every breath a little",
+      "words": [
+        {
+          "t": 159.68,
+          "text": "every"
+        },
+        {
+          "t": 160.26,
+          "text": "heartbeat"
+        },
+        {
+          "t": 160.82,
+          "text": "is"
+        },
+        {
+          "t": 161.14,
+          "text": "a"
+        },
+        {
+          "t": 161.26,
+          "text": "rhythm"
+        },
+        {
+          "t": 161.72,
+          "text": "every"
+        },
+        {
+          "t": 162.12,
+          "text": "breath"
+        },
+        {
+          "t": 162.52,
+          "text": "a"
+        },
+        {
+          "t": 162.68,
+          "text": "little"
+        }
+      ]
+    },
+    {
+      "start": 162.98,
+      "end": 165.96,
+      "text": "savor she got flowers in her hair now he he got",
+      "words": [
+        {
+          "t": 162.98,
+          "text": "savor"
+        },
+        {
+          "t": 163.56,
+          "text": "she"
+        },
+        {
+          "t": 163.8,
+          "text": "got"
+        },
+        {
+          "t": 164.08,
+          "text": "flowers"
+        },
+        {
+          "t": 164.36,
+          "text": "in"
+        },
+        {
+          "t": 164.6,
+          "text": "her"
+        },
+        {
+          "t": 164.66,
+          "text": "hair"
+        },
+        {
+          "t": 164.9,
+          "text": "now"
+        },
+        {
+          "t": 165.16,
+          "text": "he"
+        },
+        {
+          "t": 165.48,
+          "text": "he"
+        },
+        {
+          "t": 165.74,
+          "text": "got"
+        }
+      ]
+    },
+    {
+      "start": 165.96,
+      "end": 169.38,
+      "text": "smoke up in the air everybody got a story everybody",
+      "words": [
+        {
+          "t": 165.96,
+          "text": "smoke"
+        },
+        {
+          "t": 166.2,
+          "text": "up"
+        },
+        {
+          "t": 166.5,
+          "text": "in"
+        },
+        {
+          "t": 166.72,
+          "text": "the"
+        },
+        {
+          "t": 166.86,
+          "text": "air"
+        },
+        {
+          "t": 167.04,
+          "text": "everybody"
+        },
+        {
+          "t": 167.86,
+          "text": "got"
+        },
+        {
+          "t": 168.28,
+          "text": "a"
+        },
+        {
+          "t": 168.4,
+          "text": "story"
+        },
+        {
+          "t": 168.68,
+          "text": "everybody"
+        }
+      ]
+    },
+    {
+      "start": 169.74,
+      "end": 172.96,
+      "text": "needs repair but tonight we keep it tender no",
+      "words": [
+        {
+          "t": 169.74,
+          "text": "needs"
+        },
+        {
+          "t": 170.42,
+          "text": "repair"
+        },
+        {
+          "t": 170.78,
+          "text": "but"
+        },
+        {
+          "t": 171.12,
+          "text": "tonight"
+        },
+        {
+          "t": 171.3,
+          "text": "we"
+        },
+        {
+          "t": 171.58,
+          "text": "keep"
+        },
+        {
+          "t": 171.86,
+          "text": "it"
+        },
+        {
+          "t": 172.1,
+          "text": "tender"
+        },
+        {
+          "t": 172.56,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 172.96,
+      "end": 175.84,
+      "text": "judgment in the room it's the ocean drums and",
+      "words": [
+        {
+          "t": 172.96,
+          "text": "judgment"
+        },
+        {
+          "t": 173.16,
+          "text": "in"
+        },
+        {
+          "t": 173.74,
+          "text": "the"
+        },
+        {
+          "t": 173.92,
+          "text": "room"
+        },
+        {
+          "t": 174.28,
+          "text": "it's"
+        },
+        {
+          "t": 174.66,
+          "text": "the"
+        },
+        {
+          "t": 174.78,
+          "text": "ocean"
+        },
+        {
+          "t": 175.28,
+          "text": "drums"
+        },
+        {
+          "t": 175.56,
+          "text": "and"
+        }
+      ]
+    },
+    {
+      "start": 175.84,
+      "end": 178.68,
+      "text": "violins cooking silver through the moon have a",
+      "words": [
+        {
+          "t": 175.84,
+          "text": "violins"
+        },
+        {
+          "t": 176.52,
+          "text": "cooking"
+        },
+        {
+          "t": 176.78,
+          "text": "silver"
+        },
+        {
+          "t": 177.1,
+          "text": "through"
+        },
+        {
+          "t": 177.46,
+          "text": "the"
+        },
+        {
+          "t": 177.7,
+          "text": "moon"
+        },
+        {
+          "t": 178.08,
+          "text": "have"
+        },
+        {
+          "t": 178.62,
+          "text": "a"
+        }
+      ]
+    },
+    {
+      "start": 178.68,
+      "end": 181.18,
+      "text": "drink but keep your spirit take a puff but keep",
+      "words": [
+        {
+          "t": 178.68,
+          "text": "drink"
+        },
+        {
+          "t": 178.92,
+          "text": "but"
+        },
+        {
+          "t": 179.1,
+          "text": "keep"
+        },
+        {
+          "t": 179.32,
+          "text": "your"
+        },
+        {
+          "t": 179.56,
+          "text": "spirit"
+        },
+        {
+          "t": 180.0,
+          "text": "take"
+        },
+        {
+          "t": 180.26,
+          "text": "a"
+        },
+        {
+          "t": 180.46,
+          "text": "puff"
+        },
+        {
+          "t": 180.74,
+          "text": "but"
+        },
+        {
+          "t": 180.94,
+          "text": "keep"
+        }
+      ]
+    },
+    {
+      "start": 181.18,
+      "end": 183.32,
+      "text": "your name taste the world but don't disappear",
+      "words": [
+        {
+          "t": 181.18,
+          "text": "your"
+        },
+        {
+          "t": 181.44,
+          "text": "name"
+        },
+        {
+          "t": 181.72,
+          "text": "taste"
+        },
+        {
+          "t": 182.1,
+          "text": "the"
+        },
+        {
+          "t": 182.34,
+          "text": "world"
+        },
+        {
+          "t": 182.68,
+          "text": "but"
+        },
+        {
+          "t": 182.82,
+          "text": "don't"
+        },
+        {
+          "t": 183.08,
+          "text": "disappear"
+        }
+      ]
+    },
+    {
+      "start": 183.32,
+      "end": 186.1,
+      "text": "any pleasure don't have to become pain pass the",
+      "words": [
+        {
+          "t": 183.32,
+          "text": "any"
+        },
+        {
+          "t": 183.82,
+          "text": "pleasure"
+        },
+        {
+          "t": 184.08,
+          "text": "don't"
+        },
+        {
+          "t": 184.52,
+          "text": "have"
+        },
+        {
+          "t": 184.62,
+          "text": "to"
+        },
+        {
+          "t": 184.82,
+          "text": "become"
+        },
+        {
+          "t": 185.08,
+          "text": "pain"
+        },
+        {
+          "t": 185.5,
+          "text": "pass"
+        },
+        {
+          "t": 185.86,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 186.1,
+      "end": 188.5,
+      "text": "plate and pass forgiveness raise your glass and",
+      "words": [
+        {
+          "t": 186.1,
+          "text": "plate"
+        },
+        {
+          "t": 186.42,
+          "text": "and"
+        },
+        {
+          "t": 186.58,
+          "text": "pass"
+        },
+        {
+          "t": 186.82,
+          "text": "forgiveness"
+        },
+        {
+          "t": 187.42,
+          "text": "raise"
+        },
+        {
+          "t": 187.78,
+          "text": "your"
+        },
+        {
+          "t": 187.98,
+          "text": "glass"
+        },
+        {
+          "t": 188.3,
+          "text": "and"
+        }
+      ]
+    },
+    {
+      "start": 188.5,
+      "end": 192.0,
+      "text": "bless the air we are only here a minute so be kind",
+      "words": [
+        {
+          "t": 188.5,
+          "text": "bless"
+        },
+        {
+          "t": 188.74,
+          "text": "the"
+        },
+        {
+          "t": 188.88,
+          "text": "air"
+        },
+        {
+          "t": 189.24,
+          "text": "we"
+        },
+        {
+          "t": 189.64,
+          "text": "are"
+        },
+        {
+          "t": 189.82,
+          "text": "only"
+        },
+        {
+          "t": 190.26,
+          "text": "here"
+        },
+        {
+          "t": 190.6,
+          "text": "a"
+        },
+        {
+          "t": 190.78,
+          "text": "minute"
+        },
+        {
+          "t": 191.08,
+          "text": "so"
+        },
+        {
+          "t": 191.46,
+          "text": "be"
+        },
+        {
+          "t": 191.64,
+          "text": "kind"
+        }
+      ]
+    },
+    {
+      "start": 192.0,
+      "end": 195.94,
+      "text": "while we are into your mind fill up your heart",
+      "words": [
+        {
+          "t": 192.0,
+          "text": "while"
+        },
+        {
+          "t": 192.24,
+          "text": "we"
+        },
+        {
+          "t": 192.5,
+          "text": "are"
+        },
+        {
+          "t": 192.66,
+          "text": "into"
+        },
+        {
+          "t": 193.14,
+          "text": "your"
+        },
+        {
+          "t": 193.6,
+          "text": "mind"
+        },
+        {
+          "t": 194.0,
+          "text": "fill"
+        },
+        {
+          "t": 194.86,
+          "text": "up"
+        },
+        {
+          "t": 195.22,
+          "text": "your"
+        },
+        {
+          "t": 195.54,
+          "text": "heart"
+        }
+      ]
+    },
+    {
+      "start": 195.94,
+      "end": 201.48,
+      "text": "move with the night let the good life start love who you love",
+      "words": [
+        {
+          "t": 195.94,
+          "text": "move"
+        },
+        {
+          "t": 196.72,
+          "text": "with"
+        },
+        {
+          "t": 197.06,
+          "text": "the"
+        },
+        {
+          "t": 197.3,
+          "text": "night"
+        },
+        {
+          "t": 197.74,
+          "text": "let"
+        },
+        {
+          "t": 198.06,
+          "text": "the"
+        },
+        {
+          "t": 198.272,
+          "text": "good"
+        },
+        {
+          "t": 198.62,
+          "text": "life"
+        },
+        {
+          "t": 199.1,
+          "text": "start"
+        },
+        {
+          "t": 199.48,
+          "text": "love"
+        },
+        {
+          "t": 200.48,
+          "text": "who"
+        },
+        {
+          "t": 200.72,
+          "text": "you"
+        },
+        {
+          "t": 201.06,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 201.48,
+      "end": 202.66,
+      "text": "hold who",
+      "words": [
+        {
+          "t": 201.48,
+          "text": "hold"
+        },
+        {
+          "t": 202.38,
+          "text": "who"
+        }
+      ]
+    },
+    {
+      "start": 223.328,
+      "end": 225.74,
+      "text": "listen you don't have to answer every",
+      "words": [
+        {
+          "t": 223.328,
+          "text": "listen"
+        },
+        {
+          "t": 223.46,
+          "text": "you"
+        },
+        {
+          "t": 224.64,
+          "text": "don't"
+        },
+        {
+          "t": 224.84,
+          "text": "have"
+        },
+        {
+          "t": 224.96,
+          "text": "to"
+        },
+        {
+          "t": 225.06,
+          "text": "answer"
+        },
+        {
+          "t": 225.36,
+          "text": "every"
+        }
+      ]
+    },
+    {
+      "start": 225.74,
+      "end": 229.12,
+      "text": "alarm you don't have to carry every ghost",
+      "words": [
+        {
+          "t": 225.74,
+          "text": "alarm"
+        },
+        {
+          "t": 226.08,
+          "text": "you"
+        },
+        {
+          "t": 227.712,
+          "text": "don't"
+        },
+        {
+          "t": 227.92,
+          "text": "have"
+        },
+        {
+          "t": 228.06,
+          "text": "to"
+        },
+        {
+          "t": 228.2,
+          "text": "carry"
+        },
+        {
+          "t": 228.44,
+          "text": "every"
+        },
+        {
+          "t": 228.82,
+          "text": "ghost"
+        }
+      ]
+    },
+    {
+      "start": 229.12,
+      "end": 231.96,
+      "text": "so some nights are made for healing",
+      "words": [
+        {
+          "t": 229.12,
+          "text": "so"
+        },
+        {
+          "t": 229.6,
+          "text": "some"
+        },
+        {
+          "t": 230.64,
+          "text": "nights"
+        },
+        {
+          "t": 231.02,
+          "text": "are"
+        },
+        {
+          "t": 231.24,
+          "text": "made"
+        },
+        {
+          "t": 231.42,
+          "text": "for"
+        },
+        {
+          "t": 231.62,
+          "text": "healing"
+        }
+      ]
+    },
+    {
+      "start": 231.96,
+      "end": 232.34,
+      "text": "you",
+      "words": [
+        {
+          "t": 231.96,
+          "text": "you"
+        }
+      ]
+    },
+    {
+      "start": 232.96,
+      "end": 235.32,
+      "text": "some nights are made for hands in the",
+      "words": [
+        {
+          "t": 232.96,
+          "text": "some"
+        },
+        {
+          "t": 233.632,
+          "text": "nights"
+        },
+        {
+          "t": 233.9,
+          "text": "are"
+        },
+        {
+          "t": 234.04,
+          "text": "made"
+        },
+        {
+          "t": 234.24,
+          "text": "for"
+        },
+        {
+          "t": 234.34,
+          "text": "hands"
+        },
+        {
+          "t": 234.82,
+          "text": "in"
+        },
+        {
+          "t": 235.22,
+          "text": "the"
+        }
+      ]
+    },
+    {
+      "start": 235.32,
+      "end": 240.0,
+      "text": "air some nights you just thank the sky",
+      "words": [
+        {
+          "t": 235.32,
+          "text": "air"
+        },
+        {
+          "t": 235.5,
+          "text": "some"
+        },
+        {
+          "t": 237.248,
+          "text": "nights"
+        },
+        {
+          "t": 237.72,
+          "text": "you"
+        },
+        {
+          "t": 239.04,
+          "text": "just"
+        },
+        {
+          "t": 239.24,
+          "text": "thank"
+        },
+        {
+          "t": 239.5,
+          "text": "the"
+        },
+        {
+          "t": 239.68,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 240.94,
+      "end": 244.48,
+      "text": "that your heart still knows how",
+      "words": [
+        {
+          "t": 240.94,
+          "text": "that"
+        },
+        {
+          "t": 242.14,
+          "text": "your"
+        },
+        {
+          "t": 242.38,
+          "text": "heart"
+        },
+        {
+          "t": 242.74,
+          "text": "still"
+        },
+        {
+          "t": 243.32,
+          "text": "knows"
+        },
+        {
+          "t": 243.8,
+          "text": "how"
+        }
+      ]
+    },
+    {
+      "start": 245.02,
+      "end": 245.42,
+      "text": "to be",
+      "words": [
+        {
+          "t": 245.02,
+          "text": "to"
+        },
+        {
+          "t": 245.12,
+          "text": "be"
+        }
+      ]
+    },
+    {
+      "start": 245.42,
+      "end": 254.74,
+      "text": "i go quiet go by baseline rolling ocean tie i go",
+      "words": [
+        {
+          "t": 245.42,
+          "text": "i"
+        },
+        {
+          "t": 246.816,
+          "text": "go"
+        },
+        {
+          "t": 247.26,
+          "text": "quiet"
+        },
+        {
+          "t": 248.0,
+          "text": "go"
+        },
+        {
+          "t": 249.06,
+          "text": "by"
+        },
+        {
+          "t": 249.7,
+          "text": "baseline"
+        },
+        {
+          "t": 250.96,
+          "text": "rolling"
+        },
+        {
+          "t": 251.64,
+          "text": "ocean"
+        },
+        {
+          "t": 252.46,
+          "text": "tie"
+        },
+        {
+          "t": 253.42,
+          "text": "i"
+        },
+        {
+          "t": 254.36,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 254.74,
+      "end": 260.36,
+      "text": "quiet go by this summer different we still alive",
+      "words": [
+        {
+          "t": 254.74,
+          "text": "quiet"
+        },
+        {
+          "t": 255.5,
+          "text": "go"
+        },
+        {
+          "t": 256.54,
+          "text": "by"
+        },
+        {
+          "t": 257.18,
+          "text": "this"
+        },
+        {
+          "t": 257.84,
+          "text": "summer"
+        },
+        {
+          "t": 258.24,
+          "text": "different"
+        },
+        {
+          "t": 259.08,
+          "text": "we"
+        },
+        {
+          "t": 259.68,
+          "text": "still"
+        },
+        {
+          "t": 259.88,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 262.96,
+      "end": 263.46,
+      "text": "you're hard",
+      "words": [
+        {
+          "t": 262.96,
+          "text": "you're"
+        },
+        {
+          "t": 263.08,
+          "text": "hard"
+        }
+      ]
+    },
+    {
+      "start": 263.82,
+      "end": 269.04,
+      "text": "move with the night let the good life start love who you love",
+      "words": [
+        {
+          "t": 263.82,
+          "text": "move"
+        },
+        {
+          "t": 264.48,
+          "text": "with"
+        },
+        {
+          "t": 264.58,
+          "text": "the"
+        },
+        {
+          "t": 265.06,
+          "text": "night"
+        },
+        {
+          "t": 265.32,
+          "text": "let"
+        },
+        {
+          "t": 265.58,
+          "text": "the"
+        },
+        {
+          "t": 265.792,
+          "text": "good"
+        },
+        {
+          "t": 266.1,
+          "text": "life"
+        },
+        {
+          "t": 266.64,
+          "text": "start"
+        },
+        {
+          "t": 267.04,
+          "text": "love"
+        },
+        {
+          "t": 267.96,
+          "text": "who"
+        },
+        {
+          "t": 268.2,
+          "text": "you"
+        },
+        {
+          "t": 268.62,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 269.696,
+      "end": 273.06,
+      "text": "hold who you hold we came from the void",
+      "words": [
+        {
+          "t": 269.696,
+          "text": "hold"
+        },
+        {
+          "t": 269.88,
+          "text": "who"
+        },
+        {
+          "t": 270.12,
+          "text": "you"
+        },
+        {
+          "t": 270.5,
+          "text": "hold"
+        },
+        {
+          "t": 270.94,
+          "text": "we"
+        },
+        {
+          "t": 271.584,
+          "text": "came"
+        },
+        {
+          "t": 271.76,
+          "text": "from"
+        },
+        {
+          "t": 272.44,
+          "text": "the"
+        },
+        {
+          "t": 272.62,
+          "text": "void"
+        }
+      ]
+    },
+    {
+      "start": 273.9,
+      "end": 276.12,
+      "text": "now we turn it into gold",
+      "words": [
+        {
+          "t": 273.9,
+          "text": "now"
+        },
+        {
+          "t": 274.0,
+          "text": "we"
+        },
+        {
+          "t": 274.304,
+          "text": "turn"
+        },
+        {
+          "t": 274.56,
+          "text": "it"
+        },
+        {
+          "t": 275.008,
+          "text": "into"
+        },
+        {
+          "t": 275.54,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 276.12,
+      "end": 284.32,
+      "text": "we outshine them sun coming down wind",
+      "words": [
+        {
+          "t": 276.12,
+          "text": "we"
+        },
+        {
+          "t": 277.54,
+          "text": "outshine"
+        },
+        {
+          "t": 279.24,
+          "text": "them"
+        },
+        {
+          "t": 279.7,
+          "text": "sun"
+        },
+        {
+          "t": 281.92,
+          "text": "coming"
+        },
+        {
+          "t": 283.12,
+          "text": "down"
+        },
+        {
+          "t": 283.9,
+          "text": "wind"
+        }
+      ]
+    },
+    {
+      "start": 284.32,
+      "end": 291.16,
+      "text": "slow bass blow eyes closed let go",
+      "words": [
+        {
+          "t": 284.32,
+          "text": "slow"
+        },
+        {
+          "t": 285.28,
+          "text": "bass"
+        },
+        {
+          "t": 286.26,
+          "text": "blow"
+        },
+        {
+          "t": 287.14,
+          "text": "eyes"
+        },
+        {
+          "t": 288.12,
+          "text": "closed"
+        },
+        {
+          "t": 289.08,
+          "text": "let"
+        },
+        {
+          "t": 289.74,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 296.64,
+      "end": 299.04,
+      "text": "We came from the boy",
+      "words": [
+        {
+          "t": 296.64,
+          "text": "We"
+        },
+        {
+          "t": 296.74,
+          "text": "came"
+        },
+        {
+          "t": 297.1,
+          "text": "from"
+        },
+        {
+          "t": 298.144,
+          "text": "the"
+        },
+        {
+          "t": 298.6,
+          "text": "boy"
+        }
+      ]
+    },
+    {
+      "start": 302.0,
+      "end": 305.2,
+      "text": "Now we turn it into gold",
+      "words": [
+        {
+          "t": 302.0,
+          "text": "Now"
+        },
+        {
+          "t": 303.072,
+          "text": "we"
+        },
+        {
+          "t": 303.34,
+          "text": "turn"
+        },
+        {
+          "t": 303.72,
+          "text": "it"
+        },
+        {
+          "t": 304.14,
+          "text": "into"
+        },
+        {
+          "t": 304.64,
+          "text": "gold"
+        }
+      ]
+    }
+  ]
+}

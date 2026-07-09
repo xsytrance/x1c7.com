@@ -1,0 +1,97 @@
+[
+  {
+    "id": "who-s-that-snake-funky-slow-jam-mix",
+    "planet": {
+      "analysis": {
+        "summary": "A dusty, laid-back boom-bap track that deconstructs a complex family tree of 'clones' and identity thieves within political or corporate circles.",
+        "overallMood": "0.45",
+        "themes": [
+          "Identity Theft",
+          "Generational Trauma",
+          "Truth vs Perception",
+          "Conspiracy & Cover-ups",
+          "The Cycle of Violence",
+          "Media Manipulation"
+        ],
+        "palette": [
+          "#1A0F0D",
+          "#5C4B3E",
+          "#8C7B6E",
+          "#2C2520"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Inquisitive, dusty curiosity",
+            "intensity": 0.3,
+            "colorHintHex": "#A89F91",
+            "start": 0
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Resigned acceptance with a final twist",
+            "intensity": 0.62,
+            "colorHintHex": "#4A3F37",
+            "start": 9.56
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Narrative storytelling with a sense of crumbling history",
+            "intensity": 0.6,
+            "colorHintHex": "#3B2F2A",
+            "start": 28.36
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Angry exposition on genetic and ideological clones",
+            "intensity": 0.65,
+            "colorHintHex": "#2A1F1D",
+            "start": 79.96
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Chaos of fragmented memories and identity loss",
+            "intensity": 0.75,
+            "colorHintHex": "#3E3430",
+            "start": 132.28
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Snake",
+            "emotion": "Deceptive danger lurking in plain sight",
+            "imageryPrompt": "a close-up of a dusty, patterned snake coiled around an old film reel camera, eyes reflecting green data streams"
+          },
+          {
+            "word": "Clones",
+            "emotion": "Uncanny valley replication of human souls",
+            "imageryPrompt": "three silhouettes standing in perfect alignment but with slightly different facial expressions and shadows, emerging from a dark foggy jungle background"
+          },
+          {
+            "word": "Tree",
+            "emotion": "Ancient wisdom witnessing the cycle of lies",
+            "imagingPrompt": "a gnarled oak tree trunk covered in moss and rusted metal tags with faces carved into it, standing against a twilight sky filled with smoke"
+          },
+          {
+            "word": "Kodak",
+            "emotion": "The cold eye of surveillance recording the truth",
+            "imageryPrompt": "an old-fashioned red Kodak camera lens glowing softly in the center of a dark room, capturing reflections of faces that do not match reality"
+          },
+          {
+            "word": "Blaze",
+            "emotion": "Uncontrollable rage consuming reason",
+            "imagingPrompt": "a small fire burning inside a glass cage made of ice, illuminating the smoke with angry orange and red hues while freezing tears on a nearby surface"
+          },
+          {
+            "word": "Mask",
+            "emotion": "Hidden identity hiding behind borrowed faces",
+            "imageryPrompt": "a smooth porcelain mask resting on a pile of discarded newspaper clippings, casting long distorted shadows that look like screaming mouths"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

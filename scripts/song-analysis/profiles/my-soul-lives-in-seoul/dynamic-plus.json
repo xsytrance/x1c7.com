@@ -1,0 +1,42 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "keys",
+     "synth"
+    ],
+    "label": "SYNTH WAVES ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 170,
+   "end": 184,
+   "stemSpot": {
+    "solo": [
+     "back"
+    ],
+    "label": "BACKING TRACK ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 265,
+   "end": 290,
+   "reactor": "fireworks",
+   "why": "The Bridge leads into a final resolution of 'Passionate rhythmic unity' and global triumph"
+  }
+ ],
+ "words": {
+  "seoul": "neon",
+  "signal": "glitch",
+  "border": "shatter",
+  "chaos": "bloom",
+  "customs": "redact",
+  "emoji": "type"
+ }
+}

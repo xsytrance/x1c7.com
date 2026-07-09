@@ -1,0 +1,40 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 16,
+   "end": 24,
+   "reactor": "fireworks",
+   "why": "Captures the climactic warmth of the first chorus where bodies unite in a 'wave'; firework"
+  },
+  {
+   "start": 38,
+   "end": 48,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "bass"
+    ],
+    "label": "SOUL & GROOVE ONLY"
+   },
+   "why": "Utilizes the drum-cut window (38-45s) to isolate the lead melody and bass, creating an int"
+  },
+  {
+   "start": 106,
+   "end": 114,
+   "stemSpot": {
+    "solo": [
+     "lead"
+    ],
+    "label": "SECRET LEAD HUME"
+   },
+   "why": "Ends on the outro's quiet acceptance; soloing the lead synth creates a lingering, floaty a"
+  }
+ ],
+ "words": {
+  "heartbeat": "pulse",
+  "wave": "bloom",
+  "heat": "shimmer",
+  "whisper": "handwrite"
+ }
+}

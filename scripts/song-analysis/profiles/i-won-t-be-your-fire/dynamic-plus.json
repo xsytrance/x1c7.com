@@ -1,0 +1,43 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "drums"
+    ],
+    "label": "GUITAR & RAIN ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 55,
+   "end": 80,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "bass"
+    ],
+    "label": "LEAD VOICE & BASS ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 93,
+   "end": 118,
+   "reactor": "fireworks",
+   "why": "Post-Chorus/Drop transition: The 'No no no' rejection and cinematic release of held-back e"
+  }
+ ],
+ "words": {
+  "fighting": "slam",
+  "burn": "shatter",
+  "silence": "freeze",
+  "thunder": "glitch",
+  "breaking": "dissolve",
+  "wire": "pulse"
+ }
+}

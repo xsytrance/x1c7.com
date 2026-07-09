@@ -294,6 +294,97 @@ UPDATE tracks SET lyrics = $j$[Intro]
 $j$ WHERE id = 'amor-de-verdad' AND coalesce(lyrics,'') = '';
 UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song is a raw confessional about rejecting performative or fleeting romantic gestures in favor of authentic, enduring connection amidst vulnerability and fear. It contrasts cinematic illusions with gritty reality to demand genuine presence over empty promises.","overallMood":"Bittersweet","themes":["Authenticity vs Performance","Vulnerability","Fear of Abandonment","Urban Intimacy"],"palette":["#1a0f2e","#c94b36","#8d755b","#eaddcf"],"sections":[{"name":"Intro","emotion":"Trembling anticipation, quiet intimacy","intensity":0.76,"colorHint":"#1a0f2e","start":3.3},{"name":"Verse 1","emotion":"Internal conflict and suppressed fear","intensity":0.69,"colorHint":"#8d755b","start":20.84},{"name":"Pre-Chorus","emotion":"Rising tension seeking clarity","intensity":0.56,"colorHint":"#c94b36","start":20.84},{"name":"Chorus","emotion":"Explosive rejection of illusions for truth","intensity":0.89,"colorHint":"#eaddcf","start":58.52},{"name":"Drop","emotion":"Melodic release and desperate plea","intensity":0.54,"colorHint":"#c94b36","start":58.52},{"name":"Bridge","emotion":"Angry realization of futility in empty promises","intensity":0.22,"colorHint":"#1a0f2e","start":96.58},{"name":"Outro","emotion":"Resigned vulnerability and final plea for presence","intensity":0.09,"colorHint":"#8d755b","start":107.59}],"keywords":[{"word":"temblé","emotion":"Raw physical vulnerability and fear","imageryPrompt":"A close-up of a hand shaking slightly in the dim light of an empty room, dust motes dancing in a single shaft of weak sunlight."},{"word":"cine","emotion":"Disappointment with superficiality","imageryPrompt":"Faded black and white movie tickets lying on a dirty street corner next to an overflowing trash can, rain blurring the background signs."},{"word":"agua","emotion":"Transient beauty turning into loss","imageryPrompt":"Clear water flowing rapidly down a cracked concrete drain in a dry city alleyway under harsh midday sun."},{"word":"verdad","emotion":"Urgent need for reality over fantasy","imageryPrompt":"A rough, unpolished stone sitting firmly on the ground amidst swirling fog and debris in a gritty urban landscape."},{"word":"guárdala","emotion":"Fierce boundary setting and self-preservation","imageryPrompt":"Heavy iron gates closing shut against a storm, casting long shadows over cracked pavement with sparks flying from the hinges."},{"word":"porco","emotion":"Bitter accusation of worthlessness","imageryPrompt":"A wilted flower crushed under heavy tires in an alleyway, surrounded by scattered ash and cigarette butts."}]}$j$::jsonb) WHERE id = 'amor-de-verdad' AND planet->'analysis' IS NULL;
 
+-- another-year-looks-good-on-you-happy-birthday-song: 414 words, 5 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":1.74,"w":"Yeah,"},{"t":3.08,"w":"this"},{"t":3.18,"w":"one's"},{"t":3.4,"w":"for"},{"t":3.5,"w":"you"},{"t":6.18,"w":"On"},{"t":6.69,"w":"your"},{"t":6.88,"w":"day"},{"t":8.56,"w":"Happy"},{"t":8.66,"w":"birthday,"},{"t":9.34,"w":"baby"},{"t":11.84,"w":"You"},{"t":12.58,"w":"already"},{"t":12.84,"w":"know"},{"t":15.62,"w":"You"},{"t":16.38,"w":"don't"},{"t":17.06,"w":"need"},{"t":17.26,"w":"a"},{"t":17.44,"w":"spotlight"},{"t":17.88,"w":"You"},{"t":18.48,"w":"walk"},{"t":18.76,"w":"in,"},{"t":19.02,"w":"they"},{"t":19.16,"w":"see"},{"t":19.4,"w":"you"},{"t":19.6,"w":"Soft"},{"t":20.1,"w":"air"},{"t":20.54,"w":"falling"},{"t":21.16,"w":"down"},{"t":21.52,"w":"like"},{"t":21.74,"w":"midnight"},{"t":22.06,"w":"over"},{"t":22.48,"w":"you"},{"t":22.78,"w":"Phone"},{"t":23.24,"w":"lighting"},{"t":23.74,"w":"up"},{"t":24.1,"w":"again"},{"t":24.52,"w":"Messages"},{"t":25.3,"w":"on"},{"t":25.8,"w":"screen"},{"t":26.18,"w":"Voice"},{"t":26.76,"w":"know"},{"t":27.08,"w":"what"},{"t":27.48,"w":"you're"},{"t":27.68,"w":"smiling"},{"t":28.16,"w":"at"},{"t":28.6,"w":"That's"},{"t":28.82,"w":"my"},{"t":28.92,"w":"favorite"},{"t":29.38,"w":"melody"},{"t":29.82,"w":"You"},{"t":30.5,"w":"got"},{"t":30.9,"w":"that"},{"t":31.16,"w":"birthday"},{"t":31.48,"w":"glow"},{"t":31.82,"w":"That"},{"t":32.26,"w":"nobody"},{"t":32.66,"w":"can"},{"t":33.44,"w":"fake"},{"t":33.8,"w":"Turn"},{"t":34.16,"w":"it"},{"t":34.34,"w":"one"},{"t":34.52,"w":"more"},{"t":35.04,"w":"year"},{"t":35.44,"w":"You"},{"t":35.78,"w":"still"},{"t":36.04,"w":"look"},{"t":36.36,"w":"28"},{"t":37.02,"w":"Salon"},{"t":37.92,"w":"ready"},{"t":38.22,"w":"queen"},{"t":38.64,"w":"Hands"},{"t":39.22,"w":"making"},{"t":39.56,"w":"art"},{"t":40,"w":"move"},{"t":40.36,"w":"Every"},{"t":40.82,"w":"color"},{"t":41.22,"w":"on"},{"t":41.58,"w":"those"},{"t":41.86,"w":"nails"},{"t":42.12,"w":"Still"},{"t":42.46,"w":"ain't"},{"t":42.76,"w":"pretty"},{"t":42.88,"w":"as"},{"t":43.42,"w":"you"},{"t":43.8,"w":"And"},{"t":43.98,"w":"I"},{"t":44.22,"w":"don't"},{"t":44.46,"w":"need"},{"t":44.64,"w":"a"},{"t":44.84,"w":"wish"},{"t":45.04,"w":"tonight"},{"t":45.4,"w":"I"},{"t":45.66,"w":"already"},{"t":46.08,"w":"got"},{"t":46.52,"w":"mine"},{"t":46.86,"w":"Wrapped"},{"t":47.44,"w":"in"},{"t":47.66,"w":"a"},{"t":47.82,"w":"birthday"},{"t":48.16,"w":"dress"},{"t":48.52,"w":"Looking"},{"t":48.98,"w":"way"},{"t":49.28,"w":"too"},{"t":49.64,"w":"fine"},{"t":50.24,"w":"Te"},{"t":50.74,"w":"amo,"},{"t":51.22,"w":"baby"},{"t":51.97,"w":"Copalanga,"},{"t":52.92,"w":"it's"},{"t":53.26,"w":"true"},{"t":53.6,"w":"Cada"},{"t":54.12,"w":"año"},{"t":54.56,"w":"más"},{"t":54.82,"w":"bonito"},{"t":55.26,"w":"Just"},{"t":55.68,"w":"to"},{"t":55.88,"w":"have"},{"t":56.24,"w":"more"},{"t":56.6,"w":"you"},{"t":56.94,"w":"Another"},{"t":57.46,"w":"year"},{"t":57.88,"w":"looks"},{"t":58.53,"w":"Good"},{"t":58.66,"w":"on"},{"t":59.14,"w":"you"},{"t":59.48,"w":"Good"},{"t":60.13,"w":"on"},{"t":60.6,"w":"you,"},{"t":61.1,"w":"good"},{"t":61.28,"w":"on"},{"t":61.72,"w":"you"},{"t":62.14,"w":"Girl,"},{"t":62.66,"w":"the"},{"t":62.76,"w":"way"},{"t":63.02,"w":"you"},{"t":63.18,"w":"shine"},{"t":63.7,"w":"Got"},{"t":64.22,"w":"the"},{"t":64.48,"w":"whole"},{"t":64.78,"w":"room"},{"t":65.24,"w":"watching"},{"t":65.82,"w":"you"},{"t":66.59,"w":"Happy"},{"t":67.74,"w":"birthday,"},{"t":68.26,"w":"my"},{"t":68.5,"w":"love"},{"t":68.96,"w":"Let"},{"t":69.32,"w":"the"},{"t":69.52,"w":"music"},{"t":69.88,"w":"move"},{"t":70.46,"w":"Everybody"},{"t":71.36,"w":"deadest"},{"t":72.82,"w":"Pero"},{"t":73.48,"w":"I'm"},{"t":73.92,"w":"only"},{"t":74.24,"w":"seeing"},{"t":75.08,"w":"you"},{"t":76.4,"w":"Let's"},{"t":76.9,"w":"go"},{"t":77,"w":"Another"},{"t":77.94,"w":"year"},{"t":78.38,"w":"looks"},{"t":78.84,"w":"Good"},{"t":79.2,"w":"on"},{"t":79.68,"w":"you,"},{"t":80.12,"w":"good"},{"t":80.66,"w":"on"},{"t":81.14,"w":"you"},{"t":81.54,"w":"Still"},{"t":82.12,"w":"my"},{"t":82.32,"w":"favorite"},{"t":82.78,"w":"face"},{"t":83.34,"w":"Till"},{"t":83.82,"w":"my"},{"t":84.02,"w":"dream"},{"t":84.34,"w":"come"},{"t":84.68,"w":"true"},{"t":85.16,"w":"Raise"},{"t":85.6,"w":"the"},{"t":85.74,"w":"glass"},{"t":86.16,"w":"up"},{"t":86.54,"w":"high"},{"t":86.84,"w":"Let"},{"t":87.22,"w":"the"},{"t":87.42,"w":"candles"},{"t":88.06,"w":"burn"},{"t":88.36,"w":"It's"},{"t":88.38,"w":"looom"},{"t":89.12,"w":"Feliz"},{"t":89.5,"w":"cumpleanos"},{"t":90.24,"w":"baby"},{"t":90.62,"w":"Another"},{"t":91.49,"w":"year"},{"t":91.94,"w":"looks"},{"t":92.54,"w":"good"},{"t":92.82,"w":"on"},{"t":93.32,"w":"you"},{"t":93.66,"w":"Whoo"},{"t":94.18,"w":"-whoo"},{"t":94.52,"w":"-whoo"},{"t":95.08,"w":"baby,"},{"t":95.6,"w":"baby"},{"t":95.98,"w":"Ooh,"},{"t":96.7,"w":"ooh,"},{"t":97.1,"w":"ooh"},{"t":97.62,"w":"Looks"},{"t":97.72,"w":"good"},{"t":98.7,"w":"on"},{"t":99.02,"w":"you"},{"t":99.42,"w":"Oh,"},{"t":99.8,"w":"my,"},{"t":100.16,"w":"baby"},{"t":101.04,"w":"Everything"},{"t":101.46,"w":"you"},{"t":101.86,"w":"do"},{"t":102.16,"w":"Aye,"},{"t":102.8,"w":"baby,"},{"t":103.46,"w":"baby"},{"t":104.14,"w":"Me"},{"t":104.42,"w":"birthday"},{"t":104.98,"w":"view"},{"t":105.52,"w":"Another"},{"t":106.06,"w":"year"},{"t":108.86,"w":"looks"},{"t":109.32,"w":"good"},{"t":109.84,"w":"on"},{"t":110.36,"w":"you"},{"t":110.74,"w":"Ooh,"},{"t":111.26,"w":"ooh!"},{"t":112.78,"w":"New"},{"t":112.88,"w":"phone"},{"t":113.18,"w":"paid"},{"t":113.6,"w":"off"},{"t":114.08,"w":"Shiny"},{"t":114.42,"w":"cameras"},{"t":115.04,"w":"shine"},{"t":115.5,"w":"But"},{"t":115.92,"w":"even"},{"t":116.26,"w":"that"},{"t":116.58,"w":"camera"},{"t":117.06,"w":"knows"},{"t":117.5,"w":"you're"},{"t":117.86,"w":"the"},{"t":118,"w":"real"},{"t":118.28,"w":"thing"},{"t":118.36,"w":"headline"},{"t":118.64,"w":"playlist"},{"t":119.38,"w":"on"},{"t":119.72,"w":"loop"},{"t":119.96,"w":"now"},{"t":120.36,"w":"birthday"},{"t":120.84,"w":"party"},{"t":121.24,"w":"groove"},{"t":121.68,"w":"all"},{"t":122.06,"w":"your"},{"t":122.26,"w":"bark"},{"t":122.54,"w":"out"},{"t":122.7,"w":"around"},{"t":123.08,"w":"you"},{"t":123.36,"w":"everybody's"},{"t":124.46,"w":"in"},{"t":124.58,"w":"the"},{"t":124.76,"w":"mood"},{"t":125.1,"w":"you"},{"t":125.58,"w":"laugh"},{"t":125.94,"w":"like"},{"t":126.26,"w":"sunshine"},{"t":127,"w":"dancing"},{"t":127.66,"w":"to"},{"t":127.92,"w":"the"},{"t":128.14,"w":"track"},{"t":128.46,"w":"tiny"},{"t":128.86,"w":"queens"},{"t":129.28,"w":"in"},{"t":129.5,"w":"every"},{"t":129.82,"w":"dream"},{"t":130.14,"w":"but"},{"t":130.28,"w":"you"},{"t":130.46,"w":"discard"},{"t":130.84,"w":"it"},{"t":131.16,"w":"can't"},{"t":131.54,"w":"outmatch"},{"t":132.12,"w":"gardening"},{"t":132.74,"w":"on"},{"t":133.08,"w":"weekends"},{"t":133.56,"w":"flowers"},{"t":134,"w":"in"},{"t":134.32,"w":"your"},{"t":134.54,"w":"hand"},{"t":135.06,"w":"pero"},{"t":135.56,"w":"we"},{"t":135.8,"w":"call"},{"t":136.04,"w":"get"},{"t":136.26,"w":"them"},{"t":136.46,"w":"roses"},{"t":136.76,"w":"that"},{"t":137.06,"w":"made"},{"t":137.32,"w":"me"},{"t":138.14,"w":"understand"},{"t":138.24,"w":"and"},{"t":139.22,"w":"i"},{"t":139.4,"w":"don't"},{"t":139.72,"w":"need"},{"t":139.86,"w":"a"},{"t":140.04,"w":"wish"},{"t":140.24,"w":"tonight"},{"t":140.6,"w":"i"},{"t":140.9,"w":"already"},{"t":141.28,"w":"got"},{"t":141.72,"w":"mine"},{"t":142.04,"w":"wrapped"},{"t":142.62,"w":"in"},{"t":142.82,"w":"a"},{"t":142.98,"w":"birthday"},{"t":143.3,"w":"dress"},{"t":143.6,"w":"looking"},{"t":144.16,"w":"way"},{"t":144.46,"w":"too"},{"t":144.82,"w":"fine"},{"t":145.42,"w":"mi"},{"t":145.94,"w":"vida"},{"t":146.28,"w":"baby"},{"t":146.6,"w":"copa"},{"t":147.38,"w":"longa"},{"t":148.22,"w":"it's"},{"t":148.42,"w":"true"},{"t":148.72,"w":"cada"},{"t":149.22,"w":"año"},{"t":149.7,"w":"mas"},{"t":150,"w":"bendita"},{"t":150.48,"w":"just"},{"t":150.84,"w":"to"},{"t":151,"w":"live"},{"t":151.28,"w":"with"},{"t":151.76,"w":"you"},{"t":152.08,"w":"another"},{"t":152.5,"w":"year"},{"t":152.94,"w":"looks"},{"t":153.4,"w":"good"},{"t":153.84,"w":"on"},{"t":154.34,"w":"you"},{"t":154.72,"w":"good"},{"t":155.24,"w":"on"},{"t":155.8,"w":"you"},{"t":156.14,"w":"good"},{"t":156.44,"w":"on"},{"t":156.96,"w":"you"},{"t":157.22,"w":"girl"},{"t":157.62,"w":"the"},{"t":157.8,"w":"way"},{"t":158.06,"w":"you"},{"t":158.22,"w":"shine"},{"t":158.74,"w":"got"},{"t":159.26,"w":"the"},{"t":159.48,"w":"whole"},{"t":159.8,"w":"room"},{"t":160.22,"w":"watching"},{"t":160.96,"w":"you"},{"t":161.46,"w":"happy"},{"t":162.62,"w":"birthday"},{"t":163.22,"w":"my"},{"t":163.54,"w":"love"},{"t":163.96,"w":"let"},{"t":164.36,"w":"the"},{"t":164.54,"w":"music"},{"t":165,"w":"move"},{"t":165.46,"w":"everybody"},{"t":166.32,"w":"dance"},{"t":167.42,"w":"pero"},{"t":168.5,"w":"i'm"},{"t":168.88,"w":"only"},{"t":169.18,"w":"seeing"},{"t":170.02,"w":"you"},{"t":170.58,"w":"let's"},{"t":171.86,"w":"go"},{"t":172,"w":"another"},{"t":172.78,"w":"year"},{"t":173.24,"w":"looks"},{"t":173.95,"w":"good"},{"t":174.14,"w":"on"},{"t":174.62,"w":"you"},{"t":175,"w":"good"},{"t":175.6,"w":"on"},{"t":176.02,"w":"you"},{"t":176.42,"w":"still"},{"t":177.02,"w":"my"},{"t":177.22,"w":"favorite"},{"t":177.7,"w":"face"},{"t":178.14,"w":"still"},{"t":178.72,"w":"my"},{"t":178.9,"w":"dream"},{"t":179.26,"w":"come"},{"t":179.58,"w":"true"},{"t":180.06,"w":"raise"},{"t":180.5,"w":"the"},{"t":180.62,"w":"glass"},{"t":181,"w":"up"},{"t":181.42,"w":"high"},{"t":182,"w":"let"},{"t":182.1,"w":"the"},{"t":182.46,"w":"candles"},{"t":182.9,"w":"bloom"},{"t":183.9,"w":"my"},{"t":184.08,"w":"lipa"},{"t":184.34,"w":"yunga"},{"t":184.84,"w":"birthday"},{"t":185.24,"w":"baby"},{"t":186.18,"w":"another"},{"t":186.3,"w":"year"},{"t":186.82,"w":"looks"},{"t":187.52,"w":"good"},{"t":188.06,"w":"on"},{"t":188.18,"w":"you"}]}$j$::jsonb WHERE id = 'another-year-looks-good-on-you-happy-birthday-song' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:01.72] Yeah,
+[00:03.06] this one's for you
+[Verse 1]
+[00:06.16] On your day
+[00:08.54] Happy birthday, baby
+[00:11.82] You already know
+[00:15.60] You don't need a spotlight
+[00:17.86] You walk in, they see you
+[00:19.58] Soft air falling down like midnight over you
+[00:22.76] Phone lighting up again
+[00:24.50] Messages on screen
+[00:26.16] Voice know what you're smiling at
+[00:28.58] That's my favorite melody
+[00:29.80] You got that birthday glow
+[00:31.80] That nobody can fake
+[00:33.78] Turn it one more year
+[00:35.42] You still look 28
+[00:36.00] Salon ready queen
+[00:38.62] Hands making art move
+[00:40.34] Every color on those nails
+[00:42.10] Still ain't pretty as you
+[00:43.78] And I don't need a wish tonight
+[00:45.38] I already got mine
+[00:46.84] Wrapped in a birthday dress
+[00:48.50] Looking way too fine
+[00:50.22] Te amo, baby
+[Chorus]
+[00:51.95] Copalanga, it's true
+[00:53.58] Cada año más bonito
+[00:55.24] Just to have more you
+[00:56.92] Another year looks
+[00:58.50] Good on you
+[00:59.46] Good on you, good on you
+[01:02.12] Girl, the way you shine
+[01:03.68] Got the whole room watching you
+[01:06.57] Happy birthday, my love
+[01:08.94] Let the music move
+[01:10.44] Everybody deadest
+[01:12.80] Pero I'm only seeing you
+[01:16.38] Let's go
+[01:16.98] Another year looks
+[01:18.82] Good on you, good on you
+[01:21.52] Still my favorite face
+[01:23.32] Till my dream come true
+[01:25.14] Raise the glass up high
+[01:26.82] Let the candles burn
+[01:28.34] It's looom
+[01:29.10] Feliz cumpleanos baby
+[01:30.60] Another year looks good on you
+[01:33.64] Whoo-whoo-whoo baby, baby
+[01:35.96] Ooh, ooh, ooh
+[01:37.60] Looks good on you
+[01:39.40] Oh, my, baby
+[01:41.02] Everything you do
+[01:42.14] Aye, baby, baby
+[01:44.12] Me birthday view
+[01:45.50] Another year looks good on you
+[01:50.72] Ooh, ooh!
+[01:52.76] New phone paid off
+[Bridge]
+[01:54.06] Shiny cameras shine
+[01:55.48] But even that camera knows you're the real thing
+[01:58.34] headline playlist on loop now birthday party
+[02:01.22] groove all your bark out around you everybody's
+[02:04.44] in the mood you laugh like sunshine dancing to
+[Drop]
+[02:07.90] the track tiny queens in every dream but you
+[02:10.44] discard it can't outmatch gardening on weekends
+[02:13.54] flowers in your hand pero we call get them roses
+[02:16.74] that made me
+[02:18.12] understand and i don't need a wish tonight
+[02:20.58] i already got mine wrapped in a birthday
+[02:23.28] dress looking way too fine mi vida baby copa
+[02:27.36] longa it's true cada año mas bendita just to live
+[02:31.26] with you another year looks good on you good on
+[02:35.78] you good on you girl the way you shine got the
+[02:39.46] whole room watching you happy birthday my love
+[02:43.94] let the music move everybody dance pero i'm only
+[02:49.16] seeing you let's go
+[02:51.98] another
+[02:52.76] year
+[02:53.22] looks good on you good on you still my favorite
+[02:57.68] face still my dream come true raise the glass up
+[03:01.40] high let the candles bloom my lipa yunga
+[03:04.82] birthday baby another year looks good on you
+$j$ WHERE id = 'another-year-looks-good-on-you-happy-birthday-song' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This celebratory birthday anthem honors a radiant partner who requires no spotlight to shine, framing their aging as an enhancement rather than a decline while blending intimate R&B vocals with euphoric dance beats.","overallMood":"Euphoric and Intimate","themes":["Radiant Aging","Exclusive Devotion","Celebratory Joy"],"palette":["#FFD700","#8B4513","#2F4F4F","#FFEFD5"],"sections":[{"name":"Intro","emotion":"Anticipatory Whisper","intensity":0.47,"colorHint":"#ffd700","start":1.72},{"name":"Verse 1","emotion":"Admiring Warmth","intensity":0.65,"colorHint":"#ffefd5","start":6.16},{"name":"Chorus","emotion":"Euphoric Release","intensity":1,"colorHint":"#ffd700","start":51.95},{"name":"Bridge","emotion":"Reflective Confidence","intensity":0.53,"colorHint":"#2f4f4f","start":114.06},{"name":"Drop","emotion":"Cinematic Celebration","intensity":0.3,"colorHint":"#ffd700","start":127.9}],"keywords":[{"word":"shine","emotion":"Radiant Brilliance","imageryPrompt":"A woman glowing with an inner golden light that illuminates the entire room, casting soft rays on her face and hands."},{"word":"glow","emotion":"Natural Warmth","imageryPrompt":"Skin illuminated by candlelight reflecting a healthy, vibrant warmth against a dark midnight background."},{"word":"spotlight","emotion":"Unnecessary Attention","imageryPrompt":"A bright stage spotlight hitting an empty floor while the audience looks naturally at one central figure without it."},{"word":"dress","emotion":"Elegant Celebration","imageryPrompt":"Silk fabric shimmering in low light, wrapping around a figure that exudes confidence and timeless beauty."},{"word":"candles","emotion":"Soft Illumination","imageryPrompt":"Flames dancing gently on cake candles casting flickering shadows of love across a party table."},{"word":"roses","emotion":"Natural Beauty","imageryPrompt":"Fresh red roses held in hands, dew drops glistening under soft ambient lighting near green garden leaves."}]}$j$::jsonb) WHERE id = 'another-year-looks-good-on-you-happy-birthday-song' AND planet->'analysis' IS NULL;
+
 -- between-the-stations: 490 words, 7 sections
 UPDATE tracks SET lyrics_synced = $j${"words":[{"t":3.48,"w":"Oh,"},{"t":4.32,"w":"oh,"},{"t":4.62,"w":"oh,"},{"t":5.2,"w":"stops,"},{"t":5.68,"w":"new"},{"t":6.28,"w":"eyes,"},{"t":6.96,"w":"blue"},{"t":7.52,"w":"light,"},{"t":8.04,"w":"passing"},{"t":8.68,"w":"by,"},{"t":9.36,"w":"window,"},{"t":10.1,"w":"black,"},{"t":10.36,"w":"chasing"},{"t":10.94,"w":"glass,"},{"t":11.72,"w":"I"},{"t":12.16,"w":"see"},{"t":12.42,"w":"me,"},{"t":12.8,"w":"then"},{"t":13.26,"w":"I"},{"t":13.52,"w":"pass,"},{"t":14.36,"w":"downtown,"},{"t":15.32,"w":"uptown,"},{"t":16.38,"w":"under"},{"t":16.62,"w":"every"},{"t":16.94,"w":"sun,"},{"t":17.4,"w":"I"},{"t":17.98,"w":"keep"},{"t":18.94,"w":"floating,"},{"t":20,"w":"I"},{"t":20.61,"w":"keep"},{"t":20.8,"w":"finding"},{"t":21.28,"w":"the"},{"t":21.5,"w":"ground"},{"t":22.86,"w":"And"},{"t":22.96,"w":"everybody's"},{"t":23.64,"w":"holding"},{"t":23.82,"w":"somewhat,"},{"t":25.19,"w":"everybody's"},{"t":26.04,"w":"holding"},{"t":26.22,"w":"something,"},{"t":27.92,"w":"everybody"},{"t":28.02,"w":"looks"},{"t":28.54,"w":"so"},{"t":28.68,"w":"tired,"},{"t":29.55,"w":"still"},{"t":30.3,"w":"the"},{"t":30.5,"w":"city"},{"t":30.66,"w":"keeps"},{"t":30.96,"w":"on"},{"t":31.14,"w":"coming,"},{"t":32.22,"w":"so"},{"t":32.99,"w":"I"},{"t":33.22,"w":"let"},{"t":33.66,"w":"the"},{"t":33.76,"w":"rhythm"},{"t":34.1,"w":"hold"},{"t":34.38,"w":"me,"},{"t":34.98,"w":"let"},{"t":35.48,"w":"the"},{"t":35.66,"w":"tunnel"},{"t":36.04,"w":"pull"},{"t":36.36,"w":"me"},{"t":36.54,"w":"through,"},{"t":37.5,"w":"every"},{"t":37.96,"w":"station"},{"t":38.5,"w":"feels"},{"t":38.74,"w":"familiar,"},{"t":39.54,"w":"but"},{"t":40.26,"w":"I'm"},{"t":40.54,"w":"waking"},{"t":40.84,"w":"up"},{"t":41.24,"w":"brand"},{"t":41.56,"w":"new"},{"t":42.06,"w":"Between"},{"t":42.58,"w":"the"},{"t":42.9,"w":"stations,"},{"t":43.84,"w":"I"},{"t":43.97,"w":"can"},{"t":44.12,"w":"breathe"},{"t":44.48,"w":"again,"},{"t":44.98,"w":"I"},{"t":45.2,"w":"can"},{"t":45.36,"w":"breathe"},{"t":45.72,"w":"again,"},{"t":46.18,"w":"I"},{"t":46.38,"w":"can"},{"t":46.58,"w":"breathe,"},{"t":47.1,"w":"between"},{"t":47.42,"w":"the"},{"t":47.74,"w":"stations,"},{"t":48.68,"w":"I"},{"t":48.76,"w":"come"},{"t":48.96,"w":"back"},{"t":49.3,"w":"to"},{"t":49.5,"w":"me,"},{"t":49.78,"w":"come"},{"t":50,"w":"back"},{"t":50.42,"w":"to"},{"t":50.76,"w":"me,"},{"t":50.98,"w":"come"},{"t":51.4,"w":"back"},{"t":51.7,"w":"to"},{"t":51.76,"w":"me"},{"t":51.78,"w":"Lights"},{"t":52.22,"w":"keep"},{"t":52.56,"w":"flashing,"},{"t":53.22,"w":"hearts"},{"t":53.56,"w":"keep"},{"t":53.76,"w":"passing,"},{"t":54.38,"w":"still"},{"t":54.6,"w":"I"},{"t":54.9,"w":"breathe,"},{"t":55.58,"w":"still"},{"t":55.86,"w":"I"},{"t":56.12,"w":"breathe,"},{"t":56.78,"w":"between"},{"t":57.12,"w":"the"},{"t":57.3,"w":"stations,"},{"t":58.08,"w":"I"},{"t":58.34,"w":"can"},{"t":58.56,"w":"breathe"},{"t":58.86,"w":"again,"},{"t":59.4,"w":"I"},{"t":59.6,"w":"can"},{"t":59.78,"w":"breathe"},{"t":60.14,"w":"again,"},{"t":60.6,"w":"I"},{"t":60.76,"w":"can"},{"t":60.96,"w":"breathe"},{"t":62,"w":"Breathing,"},{"t":62.6,"w":"breathe"},{"t":63.2,"w":"out,"},{"t":63.82,"w":"downtown,"},{"t":64.36,"w":"that"},{"t":64.62,"w":"train"},{"t":64.88,"w":"goes"},{"t":65.16,"w":"underground,"},{"t":66.4,"w":"breathing,"},{"t":67.24,"w":"breathe"},{"t":68,"w":"out,"},{"t":68.6,"w":"downtown,"},{"t":69.18,"w":"I'm"},{"t":69.44,"w":"lost"},{"t":69.66,"w":"but"},{"t":70.26,"w":"I'm"},{"t":70.56,"w":"found"},{"t":71.62,"w":"Breathing,"},{"t":72.22,"w":"breathe"},{"t":72.82,"w":"out,"},{"t":73.42,"w":"downtown,"},{"t":73.92,"w":"let"},{"t":74.12,"w":"the"},{"t":74.26,"w":"night"},{"t":74.52,"w":"slow"},{"t":75.04,"w":"down,"},{"t":76.1,"w":"breathing,"},{"t":76.86,"w":"breathe"},{"t":77.62,"w":"out,"},{"t":78.2,"w":"downtown,"},{"t":78.46,"w":"I'm"},{"t":79.04,"w":"here"},{"t":79.32,"w":"right"},{"t":79.9,"w":"now�"},{"t":90.75,"w":"A"},{"t":91.04,"w":"train"},{"t":91.3,"w":"to"},{"t":91.66,"w":"Brooklyn,"},{"t":92.16,"w":"a"},{"t":92.3,"w":"dream"},{"t":92.58,"w":"to"},{"t":92.86,"w":"Queens"},{"t":93.2,"w":"Bronx"},{"t":93.74,"w":"in"},{"t":93.94,"w":"the"},{"t":94.06,"w":"rhythm,"},{"t":94.38,"w":"Manhattan"},{"t":94.78,"w":"in"},{"t":95.16,"w":"the"},{"t":95.28,"w":"steam"},{"t":95.52,"w":"Someone's"},{"t":96.34,"w":"got"},{"t":96.48,"w":"roses,"},{"t":96.98,"w":"someone's"},{"t":97.54,"w":"got"},{"t":97.7,"w":"rain"},{"t":98.14,"w":"Someone's"},{"t":98.74,"w":"got"},{"t":98.84,"w":"nothing"},{"t":99.08,"w":"but"},{"t":99.32,"w":"the"},{"t":99.44,"w":"song"},{"t":99.74,"w":"for"},{"t":99.92,"w":"the"},{"t":100.08,"w":"pain"},{"t":100.4,"w":"I"},{"t":100.82,"w":"don't"},{"t":101.16,"w":"need"},{"t":101.32,"w":"answers,"},{"t":101.86,"w":"I"},{"t":102.08,"w":"don't"},{"t":102.3,"w":"need"},{"t":102.5,"w":"signs"},{"t":102.76,"w":"Just"},{"t":103.28,"w":"one"},{"t":103.44,"w":"more"},{"t":103.74,"w":"breath"},{"t":104,"w":"and"},{"t":104.16,"w":"a"},{"t":104.28,"w":"little"},{"t":104.44,"w":"more"},{"t":104.76,"w":"time"},{"t":108.94,"w":"And"},{"t":109.48,"w":"everybody's"},{"t":110.02,"w":"changing"},{"t":110.18,"w":"cars"},{"t":111.52,"w":"Everybody"},{"t":112.16,"w":"chasing"},{"t":112.58,"w":"daylight"},{"t":114.3,"w":"Everybody's"},{"t":114.82,"w":"off"},{"t":114.98,"w":"a"},{"t":115.16,"w":"scar"},{"t":116.67,"w":"Glowing"},{"t":116.84,"w":"under"},{"t":117.12,"w":"tunnel"},{"t":117.42,"w":"lights"},{"t":118.85,"w":"So"},{"t":119.46,"w":"I"},{"t":119.6,"w":"let"},{"t":119.9,"w":"the"},{"t":120.14,"w":"rhythm"},{"t":120.48,"w":"hold"},{"t":120.74,"w":"me"},{"t":121.13,"w":"Let"},{"t":121.88,"w":"the"},{"t":122.04,"w":"morning"},{"t":122.46,"w":"come"},{"t":122.76,"w":"in"},{"t":122.96,"w":"blue"},{"t":123.2,"w":"Every"},{"t":124.34,"w":"station"},{"t":124.86,"w":"feels"},{"t":125.12,"w":"familiar"},{"t":125.5,"w":"But"},{"t":126.62,"w":"I'm"},{"t":126.9,"w":"moving"},{"t":127.28,"w":"into"},{"t":127.9,"w":"new"},{"t":128.4,"w":"Between"},{"t":128.92,"w":"the"},{"t":129.3,"w":"stations"},{"t":129.98,"w":"I"},{"t":130.36,"w":"can"},{"t":130.5,"w":"breathe"},{"t":130.84,"w":"again,"},{"t":131.38,"w":"I"},{"t":131.56,"w":"can"},{"t":131.74,"w":"breathe"},{"t":132.08,"w":"again"},{"t":132.46,"w":"I"},{"t":132.72,"w":"can"},{"t":132.92,"w":"breathe"},{"t":133.3,"w":"Between"},{"t":133.62,"w":"the"},{"t":134.1,"w":"stations"},{"t":134.76,"w":"I"},{"t":135.16,"w":"come"},{"t":135.36,"w":"back"},{"t":135.66,"w":"to"},{"t":135.94,"w":"me,"},{"t":136.16,"w":"come"},{"t":136.38,"w":"back"},{"t":136.82,"w":"to"},{"t":137.14,"w":"me,"},{"t":137.36,"w":"come"},{"t":137.74,"w":"back"},{"t":138.04,"w":"to"},{"t":138.34,"w":"me"},{"t":138.48,"w":"Lights"},{"t":138.76,"w":"keep"},{"t":138.96,"w":"flashing,"},{"t":139.6,"w":"hearts"},{"t":139.92,"w":"keep"},{"t":140.16,"w":"prancing"},{"t":140.62,"w":"Still"},{"t":140.98,"w":"I"},{"t":141.26,"w":"breathe,"},{"t":141.94,"w":"still"},{"t":142.22,"w":"I"},{"t":142.44,"w":"breathe"},{"t":142.94,"w":"Between"},{"t":143.4,"w":"the"},{"t":143.7,"w":"stations"},{"t":144.28,"w":"I"},{"t":144.74,"w":"can"},{"t":144.94,"w":"breathe"},{"t":145.24,"w":"again,"},{"t":145.76,"w":"I"},{"t":145.94,"w":"can"},{"t":146.16,"w":"breathe"},{"t":146.5,"w":"again"},{"t":146.88,"w":"I"},{"t":147.12,"w":"can"},{"t":147.36,"w":"breathe,"},{"t":147.86,"w":"breathe"},{"t":148.78,"w":"No"},{"t":149.09,"w":"rush"},{"t":149.5,"w":"now,"},{"t":149.94,"w":"no"},{"t":150.3,"w":"fear"},{"t":150.68,"w":"now"},{"t":150.98,"w":"Let"},{"t":151.52,"w":"it"},{"t":151.68,"w":"roll,"},{"t":152.06,"w":"let"},{"t":152.16,"w":"it"},{"t":152.3,"w":"clear"},{"t":152.54,"w":"out"},{"t":152.84,"w":"No"},{"t":153.46,"w":"rush"},{"t":154.32,"w":"now,"},{"t":154.74,"w":"no"},{"t":155.1,"w":"fear"},{"t":155.5,"w":"now"},{"t":155.96,"w":"Let"},{"t":156.36,"w":"it"},{"t":156.5,"w":"move,"},{"t":156.8,"w":"let"},{"t":156.92,"w":"it"},{"t":157.08,"w":"clear"},{"t":157.32,"w":"out"},{"t":157.7,"w":"I"},{"t":158.14,"w":"was"},{"t":158.3,"w":"heavy,"},{"t":158.68,"w":"I"},{"t":159.3,"w":"was"},{"t":159.52,"w":"loud"},{"t":159.93,"w":"Now"},{"t":160.58,"w":"I'm"},{"t":160.74,"w":"quiet,"},{"t":161.1,"w":"in"},{"t":161.7,"w":"the"},{"t":161.84,"w":"crowd"},{"t":162.1,"w":"I"},{"t":162.91,"w":"was"},{"t":163.14,"w":"fading,"},{"t":163.52,"w":"in"},{"t":164.18,"w":"the"},{"t":164.26,"w":"sound"},{"t":164.6,"w":"Now"},{"t":165.4,"w":"I'm"},{"t":165.56,"w":"breathing,"},{"t":166.1,"w":"underground"},{"t":177.24,"w":"I"},{"t":177.88,"w":"can"},{"t":178.52,"w":"breathe"},{"t":178.88,"w":"again,"},{"t":179.38,"w":"I"},{"t":179.58,"w":"can"},{"t":179.76,"w":"breathe"},{"t":180.14,"w":"again"},{"t":180.5,"w":"I"},{"t":180.8,"w":"can"},{"t":180.96,"w":"breathe"},{"t":181.3,"w":"Between"},{"t":181.82,"w":"the"},{"t":182.14,"w":"stations"},{"t":182.7,"w":"I"},{"t":183.16,"w":"can"},{"t":183.3,"w":"breathe"},{"t":183.42,"w":"again,"},{"t":183.42,"w":"I"},{"t":183.42,"w":"can"},{"t":183.42,"w":"breathe"},{"t":183.42,"w":"again"},{"t":183.42,"w":"I"},{"t":183.42,"w":"come"},{"t":183.42,"w":"back"},{"t":183.72,"w":"to"},{"t":183.94,"w":"me,"},{"t":184.14,"w":"come"},{"t":184.38,"w":"back"},{"t":184.8,"w":"to"},{"t":185.14,"w":"me,"},{"t":185.36,"w":"come"},{"t":185.76,"w":"back"},{"t":186.12,"w":"to"},{"t":186.36,"w":"me"},{"t":186.5,"w":"Lights"},{"t":186.76,"w":"keep"},{"t":187.02,"w":"flashing,"},{"t":187.62,"w":"hearts"},{"t":187.96,"w":"keep"},{"t":188.22,"w":"passing"},{"t":188.72,"w":"Still"},{"t":189,"w":"I"},{"t":189.32,"w":"breathe,"},{"t":190,"w":"still"},{"t":190.22,"w":"I"},{"t":190.54,"w":"breathe"},{"t":190.88,"w":"Between"},{"t":191.42,"w":"the"},{"t":191.76,"w":"stations"},{"t":192.32,"w":"I"},{"t":192.82,"w":"can"},{"t":192.98,"w":"breathe"},{"t":193.3,"w":"again,"},{"t":193.78,"w":"I"},{"t":193.98,"w":"can"},{"t":194.16,"w":"breathe"},{"t":194.48,"w":"again"},{"t":194.88,"w":"I"},{"t":195.18,"w":"can"},{"t":195.34,"w":"breathe"},{"t":195.76,"w":"Between"},{"t":196.66,"w":"the"},{"t":197.68,"w":"stations"},{"t":198.16,"w":"I"},{"t":198.18,"w":"come"},{"t":198.36,"w":"back"},{"t":198.36,"w":"to"},{"t":198.36,"w":"me,"},{"t":198.36,"w":"come"},{"t":198.36,"w":"back"},{"t":198.36,"w":"to"},{"t":198.36,"w":"me,"},{"t":198.36,"w":"come"},{"t":198.36,"w":"back"},{"t":198.36,"w":"to"},{"t":198.36,"w":"me"},{"t":198.36,"w":"I"},{"t":198.36,"w":"come"},{"t":198.36,"w":"back"},{"t":198.36,"w":"to"},{"t":198.36,"w":"me,"},{"t":198.36,"w":"come"},{"t":198.36,"w":"back"},{"t":198.36,"w":"to"},{"t":198.38,"w":"me,"},{"t":198.52,"w":"come"},{"t":198.88,"w":"back"},{"t":198.88,"w":"to"},{"t":198.88,"w":"me"},{"t":198.88,"w":"Lights"},{"t":199.22,"w":"keep"},{"t":199.22,"w":"flashing,"},{"t":199.22,"w":"hearts"},{"t":199.22,"w":"keep"},{"t":199.22,"w":"passing"},{"t":199.3,"w":"Still"},{"t":199.4,"w":"I"},{"t":199.62,"w":"breathe,"},{"t":200,"w":"still"},{"t":200.12,"w":"I"},{"t":200.12,"w":"breathe"},{"t":200.12,"w":"Between"},{"t":200.6,"w":"the"},{"t":200.6,"w":"stations"},{"t":200.6,"w":"Breathe"},{"t":200.7,"w":"in,"},{"t":200.7,"w":"breathe"},{"t":201.14,"w":"out"},{"t":203.94,"w":"Breathe"},{"t":204.04,"w":"in,"},{"t":206.6,"w":"breathe"},{"t":206.92,"w":"out"},{"t":208.36,"w":"Let"},{"t":209.44,"w":"the"},{"t":209.66,"w":"city"},{"t":210.26,"w":"move"},{"t":210.66,"w":"around"},{"t":211.16,"w":"you"},{"t":214.22,"w":"Breathe"},{"t":215.56,"w":"in,"},{"t":216.22,"w":"breathe"},{"t":217.04,"w":"out"},{"t":218.04,"w":"We're"},{"t":219.1,"w":"still"},{"t":219.34,"w":"here"},{"t":219.74,"w":"somehow"},{"t":223.78,"w":"Breathe"},{"t":225.12,"w":"in,"},{"t":227.08,"w":"breathe"},{"t":227.18,"w":"out"},{"t":228.52,"w":"Train"},{"t":228.62,"w":"goes"},{"t":229.26,"w":"underground"},{"t":230.78,"w":"Lost"},{"t":233.41,"w":"but"},{"t":234.12,"w":"home"}]}$j$::jsonb WHERE id = 'between-the-stations' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
 UPDATE tracks SET lyrics = $j$[Intro]
@@ -776,6 +867,150 @@ UPDATE tracks SET lyrics = $j$[Intro]
 $j$ WHERE id = 'ceasefire-in-the-static-data-storm-version' AND coalesce(lyrics,'') = '';
 UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A darkly atmospheric Gothic R&B track that explores the psychological weight of digital overload and information anxiety.","overallMood":"melancholic","themes":["Digital Detox","Information Overload","Identity Crisis","Anxiety vs. Peace"],"palette":["#1a0b0e","#2c3e50","#8c7ae6","#d4af37"],"sections":[{"name":"Intro","emotion":"ominous anticipation","intensity":0.79,"colorHintHex":"#1a0b0e","start":10.59},{"name":"Verse 1","emotion":"vulnerable fatigue","intensity":0.81,"colorHintHex":"#2c3e50","start":26.56},{"name":"Pre-Chorus","emotion":"dissolving identity","intensity":0.87,"colorHintHex":"#4a5f7a","start":49.5},{"name":"Chorus","emotion":"haunting hope amidst chaos","intensity":0.82,"colorHintHex":"#d4af37","start":60},{"name":"Verse 2","emotion":"frustrated resignation","intensity":0.69,"colorHintHex":"#1a0b0e","start":124.9},{"name":"Rap Verse / Spoken Word","emotion":"urgent realization","intensity":0.28,"colorHintHex":"#2c3e50","start":162.46},{"name":"Pre-Chorus (Repeat)","emotion":"uncertain longing","intensity":0.22,"colorHintHex":"#4a5f7a","start":209.48},{"name":"Chorus (Big)","emotion":"resilient persistence","intensity":0.3,"colorHintHex":"#8c7ae6","start":218.06}],"keywords":[{"word":"static","emotion":"anxious overwhelm","imageryPrompt":"grainy black and white television snow filling a dimly lit bedroom, digital noise overlaying shadows of furniture"},{"word":"ceasefire","emotion":"longing for peace","imageryPrompt":"a single beam of soft moonlight piercing through heavy storm clouds to illuminate a quiet patch of floor in a chaotic room"},{"word":"violence","emotion":"internal turmoil","imageryPrompt":"shattered glass reflecting distorted faces on the ceiling, sharp red light pulses cutting through darkness like warning signs"},{"word":"overloaded","emotion":"sensory exhaustion","imageryPrompt":"a person standing in a room where every object is vibrating with invisible waves of blue and green digital data streams"},{"word":"ghosts","emotion":"haunting presence","imageryPrompt":"translucent silhouettes of former friends or strangers flickering on the back of a smartphone screen within a dark living room"},{"word":"code","emotion":"searching for pattern","imageryPrompt":"fragments of glowing binary numbers and broken geometric lines floating in an empty void, slowly assembling into a human shape"}]}$j$::jsonb) WHERE id = 'ceasefire-in-the-static-data-storm-version' AND planet->'analysis' IS NULL;
 
+-- cocktails-and-code: 769 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Uh,"},{"t":0.28,"w":"yeah,"},{"t":0.94,"w":"uh,"},{"t":1.6,"w":"woo"},{"t":3.46,"w":"Summer"},{"t":4.26,"w":"night,"},{"t":4.96,"w":"laptop"},{"t":6.02,"w":"glow"},{"t":6.69,"w":"Little"},{"t":8.06,"w":"ice"},{"t":8.42,"w":"in"},{"t":8.68,"w":"the"},{"t":8.78,"w":"glass"},{"t":9.12,"w":"We"},{"t":9.72,"w":"workin'"},{"t":10.1,"w":"different"},{"t":10.26,"w":"now,"},{"t":10.72,"w":"come"},{"t":11.1,"w":"on"},{"t":11.31,"w":"Cocktails"},{"t":12.16,"w":"and"},{"t":12.36,"w":"coke"},{"t":15.3,"w":"Watch"},{"t":15.78,"w":"the"},{"t":16.06,"w":"new"},{"t":16.26,"w":"me"},{"t":16.58,"w":"low"},{"t":18.94,"w":"We"},{"t":19.6,"w":"don't"},{"t":20.4,"w":"move"},{"t":20.99,"w":"like"},{"t":21.18,"w":"before"},{"t":23.8,"w":"No,"},{"t":24.6,"w":"no,"},{"t":25.18,"w":"no"},{"t":25.84,"w":"Uh,"},{"t":28.66,"w":"yeah"},{"t":28.68,"w":"Uh,"},{"t":29.78,"w":"uh,"},{"t":30.02,"w":"yeah"},{"t":31.16,"w":"Sunset"},{"t":31.68,"w":"drippin'"},{"t":32.16,"w":"through"},{"t":32.32,"w":"the"},{"t":32.48,"w":"blinds"},{"t":32.86,"w":"like"},{"t":32.96,"w":"gold"},{"t":33.34,"w":"Same"},{"t":33.82,"w":"little"},{"t":34.16,"w":"room"},{"t":34.54,"w":"but"},{"t":34.72,"w":"the"},{"t":34.88,"w":"dream"},{"t":35.14,"w":"got"},{"t":35.38,"w":"bold"},{"t":35.74,"w":"Glass"},{"t":36.32,"w":"on"},{"t":36.56,"w":"the"},{"t":36.68,"w":"table"},{"t":36.98,"w":"with"},{"t":37.18,"w":"the"},{"t":37.3,"w":"ice"},{"t":37.58,"w":"half"},{"t":37.84,"w":"low"},{"t":38.12,"w":"Got"},{"t":38.36,"w":"my"},{"t":38.5,"w":"mind"},{"t":38.86,"w":"on"},{"t":39.02,"w":"fire"},{"t":39.38,"w":"and"},{"t":39.6,"w":"my"},{"t":39.7,"w":"laptop"},{"t":40.1,"w":"glow"},{"t":40.5,"w":"I"},{"t":40.94,"w":"used"},{"t":41.32,"w":"to"},{"t":41.52,"w":"scroll"},{"t":41.8,"w":"when"},{"t":42.04,"w":"the"},{"t":42.14,"w":"day"},{"t":42.44,"w":"went"},{"t":42.68,"w":"dead"},{"t":43.06,"w":"Same"},{"t":43.6,"w":"old"},{"t":43.9,"w":"worries"},{"t":44.24,"w":"runnin'"},{"t":44.62,"w":"loops"},{"t":44.74,"w":"in"},{"t":44.9,"w":"my"},{"t":45.06,"w":"head"},{"t":45.42,"w":"Now"},{"t":45.66,"w":"I"},{"t":45.8,"w":"open"},{"t":46.08,"w":"up"},{"t":46.3,"w":"a"},{"t":46.38,"w":"new"},{"t":46.56,"w":"tab,"},{"t":47.06,"w":"breathe"},{"t":47.24,"w":"it"},{"t":47.52,"w":"slow"},{"t":47.74,"w":"Type"},{"t":48.42,"w":"one"},{"t":48.7,"w":"question"},{"t":49.06,"w":"and"},{"t":49.28,"w":"the"},{"t":49.42,"w":"whole"},{"t":49.62,"w":"world"},{"t":50.02,"w":"grows"},{"t":50.24,"w":"I"},{"t":50.64,"w":"ain't"},{"t":51,"w":"tryna"},{"t":51.16,"w":"flex"},{"t":51.48,"w":"like"},{"t":51.72,"w":"I"},{"t":51.86,"w":"know"},{"t":52.04,"w":"it"},{"t":52.18,"w":"all"},{"t":52.44,"w":"I"},{"t":52.94,"w":"just"},{"t":53.36,"w":"stopped"},{"t":53.58,"w":"waitin'"},{"t":54.04,"w":"on"},{"t":54.16,"w":"the"},{"t":54.3,"w":"miracle"},{"t":54.56,"w":"call"},{"t":55.1,"w":"One"},{"t":55.7,"w":"small"},{"t":55.96,"w":"bill,"},{"t":56.46,"w":"one"},{"t":56.9,"w":"clean"},{"t":57.18,"w":"plan"},{"t":57.57,"w":"One"},{"t":58.12,"w":"more"},{"t":58.44,"w":"scale,"},{"t":58.66,"w":"one"},{"t":58.66,"w":"more"},{"t":58.66,"w":"scale"},{"t":58.68,"w":"And"},{"t":59.02,"w":"the"},{"t":59.12,"w":"palm"},{"t":59.32,"w":"of"},{"t":59.46,"w":"my"},{"t":59.64,"w":"hand"},{"t":60.04,"w":"AI"},{"t":60.6,"w":"talkin',"},{"t":61.32,"w":"I'm"},{"t":61.5,"w":"talkin'"},{"t":62.1,"w":"back"},{"t":62.36,"w":"Turnin'"},{"t":62.82,"w":"little"},{"t":62.94,"w":"ideas"},{"t":63.42,"w":"into"},{"t":63.9,"w":"somethin'"},{"t":64.36,"w":"that"},{"t":64.4,"w":"lasts"},{"t":64.88,"w":"Summer"},{"t":65.36,"w":"breeze"},{"t":65.76,"w":"comin'"},{"t":66.4,"w":"through"},{"t":66.5,"w":"the"},{"t":66.68,"w":"screen"},{"t":66.98,"w":"Feels"},{"t":67.42,"w":"like"},{"t":67.62,"w":"palm"},{"t":67.86,"w":"trees"},{"t":68.14,"w":"livin'"},{"t":68.58,"w":"in"},{"t":68.8,"w":"the"},{"t":68.98,"w":"machine"},{"t":69.72,"w":"One"},{"t":69.98,"w":"little"},{"t":70.22,"w":"focus"},{"t":70.78,"w":"with"},{"t":71.1,"w":"the"},{"t":71.26,"w":"moonlight"},{"t":72.16,"w":"Add"},{"t":72.68,"w":"a"},{"t":72.78,"w":"little"},{"t":73,"w":"rhythm"},{"t":73.32,"w":"to"},{"t":73.5,"w":"the"},{"t":73.6,"w":"grind"},{"t":74.42,"w":"They"},{"t":75.02,"w":"don't"},{"t":75.26,"w":"have"},{"t":75.36,"w":"to"},{"t":75.52,"w":"run"},{"t":75.68,"w":"from"},{"t":75.92,"w":"the"},{"t":76.1,"w":"daylight"},{"t":76.67,"w":"We"},{"t":77.44,"w":"can"},{"t":77.6,"w":"make"},{"t":77.82,"w":"a"},{"t":77.86,"w":"way"},{"t":78.18,"w":"this"},{"t":78.76,"w":"time"},{"t":79.34,"w":"Cocktails"},{"t":80.06,"w":"and"},{"t":80.2,"w":"coke"},{"t":80.73,"w":"That's"},{"t":81.28,"w":"how"},{"t":81.4,"w":"the"},{"t":81.54,"w":"night"},{"t":81.76,"w":"unfolds"},{"t":82.76,"w":"Got"},{"t":82.94,"w":"a"},{"t":83.08,"w":"little"},{"t":83.3,"w":"dream"},{"t":83.62,"w":"in"},{"t":83.82,"w":"the"},{"t":83.94,"w":"glass"},{"t":84.26,"w":"Got"},{"t":84.72,"w":"a"},{"t":84.92,"w":"little"},{"t":85.18,"w":"fire"},{"t":85.7,"w":"in"},{"t":87.44,"w":"the"},{"t":87.56,"w":"soul"},{"t":89.29,"w":"Cocktails"},{"t":89.74,"w":"and"},{"t":89.92,"w":"coke"},{"t":90.24,"w":"Watch"},{"t":90.94,"w":"the"},{"t":91.22,"w":"new"},{"t":91.4,"w":"me"},{"t":91.7,"w":"load"},{"t":91.96,"w":"I"},{"t":92.5,"w":"can"},{"t":92.68,"w":"feel"},{"t":92.94,"w":"that"},{"t":93.1,"w":"future"},{"t":93.3,"w":"gettin'"},{"t":93.7,"w":"closer"},{"t":94,"w":"Every"},{"t":94.6,"w":"time"},{"t":95.08,"w":"I"},{"t":95.76,"w":"take"},{"t":96.18,"w":"control"},{"t":98.04,"w":"Sip,"},{"t":98.52,"w":"sip,"},{"t":99.12,"w":"sip,"},{"t":99.78,"w":"sip,"},{"t":100.1,"w":"sip,"},{"t":100.3,"w":"sip"},{"t":100.42,"w":"Type"},{"t":100.48,"w":"it"},{"t":100.7,"w":"up,"},{"t":100.96,"w":"build,"},{"t":101.24,"w":"build,"},{"t":101.54,"w":"level"},{"t":101.76,"w":"up"},{"t":102.04,"w":"No"},{"t":102.3,"w":"more"},{"t":102.46,"w":"waitin'"},{"t":102.84,"w":"on"},{"t":102.92,"w":"the"},{"t":103.04,"w":"world"},{"t":103.34,"w":"We"},{"t":103.52,"w":"gon'"},{"t":103.72,"w":"make"},{"t":103.86,"w":"it"},{"t":104,"w":"come"},{"t":104.14,"w":"to"},{"t":104.26,"w":"us"},{"t":104.6,"w":"Cocktails"},{"t":105.46,"w":"and"},{"t":105.68,"w":"coke"},{"t":106.15,"w":"That's"},{"t":106.8,"w":"how"},{"t":106.8,"w":"the"},{"t":107,"w":"night"},{"t":107.26,"w":"unfolds"},{"t":108.64,"w":"Summon"},{"t":108.9,"w":"my"},{"t":109.22,"w":"sores"},{"t":110.36,"w":"cold"},{"t":110.86,"w":"Watch"},{"t":111.48,"w":"the"},{"t":111.74,"w":"new"},{"t":112.04,"w":"me"},{"t":112.66,"w":"load"},{"t":113.4,"w":"Cocktails"},{"t":113.9,"w":"and"},{"t":114.1,"w":"coke"},{"t":114.12,"w":"I"},{"t":114.58,"w":"used"},{"t":114.78,"w":"to"},{"t":114.9,"w":"think"},{"t":115.06,"w":"the"},{"t":115.22,"w":"good"},{"t":115.4,"w":"life"},{"t":115.76,"w":"had"},{"t":116,"w":"a"},{"t":116.1,"w":"gate"},{"t":116.36,"w":"It's"},{"t":116.62,"w":"somebody"},{"t":116.82,"w":"at"},{"t":117.18,"w":"the"},{"t":117.28,"w":"front"},{"t":117.54,"w":"saying"},{"t":117.78,"w":"Wait,"},{"t":118.2,"w":"wait,"},{"t":118.46,"w":"wait"},{"t":118.72,"w":"Now"},{"t":119.22,"w":"I"},{"t":119.4,"w":"see"},{"t":119.6,"w":"the"},{"t":119.72,"w":"lock,"},{"t":120.04,"w":"got"},{"t":120.16,"w":"a"},{"t":120.32,"w":"pattern"},{"t":120.6,"w":"to"},{"t":120.76,"w":"it"},{"t":120.98,"w":"Learn"},{"t":121.4,"w":"a"},{"t":121.56,"w":"little"},{"t":121.74,"w":"logic,"},{"t":122.24,"w":"put"},{"t":122.56,"w":"some"},{"t":122.74,"w":"action"},{"t":123.04,"w":"through"},{"t":123.24,"w":"it"},{"t":123.38,"w":"Debug"},{"t":123.78,"w":"my"},{"t":123.9,"w":"doubt,"},{"t":124.64,"w":"clean"},{"t":124.74,"w":"up"},{"t":124.98,"w":"my"},{"t":125.16,"w":"days"},{"t":125.65,"w":"Automate"},{"t":126.3,"w":"the"},{"t":126.38,"w":"noise,"},{"t":126.78,"w":"let"},{"t":126.86,"w":"the"},{"t":126.96,"w":"stress"},{"t":127.22,"w":"drift"},{"t":127.42,"w":"away"},{"t":127.82,"w":"Build"},{"t":128.42,"w":"me"},{"t":128.64,"w":"a"},{"t":128.8,"w":"page,"},{"t":129.3,"w":"build"},{"t":129.62,"w":"me"},{"t":129.86,"w":"a"},{"t":130,"w":"flow"},{"t":130.24,"w":"Build"},{"t":130.84,"w":"me"},{"t":131.06,"w":"a"},{"t":131.26,"w":"bridge"},{"t":131.5,"w":"where"},{"t":131.74,"w":"the"},{"t":131.86,"w":"army"},{"t":132.06,"w":"won't"},{"t":132.46,"w":"go"},{"t":132.76,"w":"It"},{"t":133.4,"w":"ain't"},{"t":133.68,"w":"magic,"},{"t":134.02,"w":"but"},{"t":134.18,"w":"it"},{"t":134.3,"w":"feel"},{"t":134.5,"w":"like"},{"t":134.82,"w":"that"},{"t":135.08,"w":"When"},{"t":135.48,"w":"the"},{"t":135.64,"w":"idea"},{"t":135.94,"w":"hits"},{"t":136.32,"w":"and"},{"t":136.56,"w":"the"},{"t":136.68,"w":"beat"},{"t":136.92,"w":"comes"},{"t":137.2,"w":"back"},{"t":137.66,"w":"Baseline"},{"t":138.36,"w":"walking"},{"t":138.72,"w":"like"},{"t":139,"w":"it"},{"t":139.12,"w":"knows"},{"t":139.36,"w":"my"},{"t":139.58,"w":"name"},{"t":139.98,"w":"808"},{"t":140.84,"w":"snap"},{"t":141.14,"w":"like"},{"t":141.4,"w":"a"},{"t":141.52,"w":"champagne"},{"t":141.9,"w":"frame"},{"t":142.36,"w":"I"},{"t":142.62,"w":"want"},{"t":142.8,"w":"beach"},{"t":143.02,"w":"chairs"},{"t":143.28,"w":"paid"},{"t":143.56,"w":"from"},{"t":143.82,"w":"the"},{"t":143.94,"w":"things"},{"t":144.18,"w":"I"},{"t":144.32,"w":"made"},{"t":144.56,"w":"Not"},{"t":145.04,"w":"another"},{"t":145.32,"w":"short"},{"t":145.66,"w":"break"},{"t":146.02,"w":"that"},{"t":146.28,"w":"I"},{"t":146.4,"w":"barely"},{"t":146.62,"w":"save"},{"t":146.92,"w":"I"},{"t":147.42,"w":"want"},{"t":147.66,"w":"Monday"},{"t":148,"w":"soft,"},{"t":148.58,"w":"I"},{"t":148.68,"w":"want"},{"t":148.86,"w":"time"},{"t":149.12,"w":"that's"},{"t":149.42,"w":"mine"},{"t":149.66,"w":"I"},{"t":149.86,"w":"want"},{"t":150.06,"w":"sunlight"},{"t":150.5,"w":"sitting"},{"t":150.82,"w":"on"},{"t":151.1,"w":"a"},{"t":151.24,"w":"better"},{"t":151.48,"w":"design"},{"t":152.2,"w":"Just"},{"t":152.8,"w":"a"},{"t":152.8,"w":"little"},{"t":153.06,"w":"focus"},{"t":153.3,"w":"with"},{"t":153.52,"w":"the"},{"t":153.64,"w":"moonlight"},{"t":154.47,"w":"Add"},{"t":155.02,"w":"a"},{"t":155.2,"w":"little"},{"t":155.42,"w":"rhythm"},{"t":155.76,"w":"to"},{"t":155.94,"w":"the"},{"t":156.04,"w":"grind"},{"t":156.98,"w":"We"},{"t":157.48,"w":"don't"},{"t":157.7,"w":"have"},{"t":157.8,"w":"to"},{"t":157.94,"w":"run"},{"t":158.12,"w":"from"},{"t":158.34,"w":"the"},{"t":158.54,"w":"daylight"},{"t":159.13,"w":"We"},{"t":159.88,"w":"can"},{"t":160.02,"w":"make"},{"t":160.22,"w":"a"},{"t":160.28,"w":"way"},{"t":160.58,"w":"this"},{"t":161.16,"w":"time"},{"t":161.8,"w":"Cocktails"},{"t":162.5,"w":"and"},{"t":162.64,"w":"coke,"},{"t":163.26,"w":"that's"},{"t":163.7,"w":"how"},{"t":163.82,"w":"the"},{"t":163.96,"w":"night"},{"t":164.2,"w":"unfolds"},{"t":165.18,"w":"Got"},{"t":165.38,"w":"a"},{"t":165.52,"w":"little"},{"t":165.68,"w":"dream"},{"t":166.02,"w":"in"},{"t":166.24,"w":"the"},{"t":166.36,"w":"glass"},{"t":166.7,"w":"Got"},{"t":167.2,"w":"a"},{"t":167.36,"w":"little"},{"t":167.62,"w":"fire"},{"t":168.16,"w":"in"},{"t":169.82,"w":"the"},{"t":170,"w":"soul"},{"t":171.68,"w":"Cocktails"},{"t":172.12,"w":"and"},{"t":172.34,"w":"coke,"},{"t":173.04,"w":"watch"},{"t":173.42,"w":"the"},{"t":173.64,"w":"new"},{"t":173.86,"w":"me"},{"t":174.12,"w":"load"},{"t":174.4,"w":"I"},{"t":174.92,"w":"can"},{"t":175.16,"w":"feel"},{"t":175.36,"w":"that"},{"t":175.52,"w":"picture"},{"t":175.68,"w":"getting"},{"t":175.96,"w":"closer"},{"t":176.42,"w":"Let's"},{"t":176.9,"w":"go"},{"t":176.92,"w":"Every"},{"t":177.1,"w":"time"},{"t":177.56,"w":"I"},{"t":178.5,"w":"take"},{"t":178.6,"w":"control"},{"t":179.58,"w":"Sit,"},{"t":180.3,"w":"sit,"},{"t":180.92,"w":"sit"},{"t":181.4,"w":"Sit,"},{"t":182.12,"w":"sit,"},{"t":182.42,"w":"sit,"},{"t":182.7,"w":"tap"},{"t":182.9,"w":"it"},{"t":183.1,"w":"up"},{"t":183.34,"w":"Build,"},{"t":183.68,"w":"build,"},{"t":183.98,"w":"have"},{"t":184.14,"w":"a"},{"t":184.2,"w":"love"},{"t":184.5,"w":"No"},{"t":184.74,"w":"more"},{"t":184.92,"w":"waiting"},{"t":185.2,"w":"on"},{"t":185.4,"w":"the"},{"t":185.48,"w":"world"},{"t":185.76,"w":"We"},{"t":185.98,"w":"gon'"},{"t":186.14,"w":"make"},{"t":186.28,"w":"it"},{"t":186.44,"w":"come"},{"t":186.58,"w":"to"},{"t":186.68,"w":"us"},{"t":187.04,"w":"Cocktails"},{"t":187.84,"w":"and"},{"t":188.08,"w":"coke"},{"t":188.44,"w":"That's"},{"t":189.28,"w":"how"},{"t":189.3,"w":"the"},{"t":189.46,"w":"night"},{"t":189.98,"w":"unfolds"},{"t":191,"w":"Summoning"},{"t":191.54,"w":"my"},{"t":191.6,"w":"source"},{"t":192.18,"w":"code"},{"t":193.3,"w":"Watch"},{"t":193.94,"w":"the"},{"t":194.14,"w":"new"},{"t":194.46,"w":"me"},{"t":195.08,"w":"load"},{"t":195.72,"w":"Maybe"},{"t":196.3,"w":"the"},{"t":196.66,"w":"beach"},{"t":197,"w":"ain't"},{"t":197.36,"w":"far"},{"t":197.52,"w":"away"},{"t":198.09,"w":"Maybe"},{"t":198.84,"w":"it"},{"t":199.08,"w":"starts"},{"t":199.36,"w":"with"},{"t":199.66,"w":"what"},{"t":200,"w":"I"},{"t":200.38,"w":"make"},{"t":200.64,"w":"Maybe"},{"t":201.24,"w":"the"},{"t":201.5,"w":"life"},{"t":201.84,"w":"I"},{"t":202.04,"w":"used"},{"t":202.46,"w":"to"},{"t":202.78,"w":"chase"},{"t":203.06,"w":"Is"},{"t":203.4,"w":"hiding"},{"t":203.8,"w":"in"},{"t":204.2,"w":"the"},{"t":204.38,"w":"habits"},{"t":204.96,"w":"I"},{"t":205.36,"w":"create"},{"t":205.74,"w":"No"},{"t":206.3,"w":"more"},{"t":206.42,"w":"wishing"},{"t":206.66,"w":"on"},{"t":206.9,"w":"the"},{"t":206.9,"w":"moon"},{"t":206.92,"w":"No"},{"t":206.98,"w":"more"},{"t":207.38,"w":"waiting"},{"t":209.02,"w":"for"},{"t":209.26,"w":"the"},{"t":209.46,"w":"right"},{"t":209.64,"w":"sky"},{"t":210.08,"w":"I"},{"t":210.78,"w":"got"},{"t":211.22,"w":"rhythm,"},{"t":211.58,"w":"I"},{"t":211.74,"w":"got"},{"t":211.9,"w":"a"},{"t":212.06,"w":"time"},{"t":212.59,"w":"I"},{"t":213.44,"w":"got"},{"t":213.7,"w":"something"},{"t":214.04,"w":"new"},{"t":214.52,"w":"in"},{"t":214.86,"w":"my"},{"t":215.14,"w":"mind"},{"t":215.67,"w":"Prop"},{"t":216.22,"w":"me"},{"t":216.52,"w":"a"},{"t":216.7,"w":"plan,"},{"t":216.96,"w":"I"},{"t":217.06,"w":"put"},{"t":217.18,"w":"feet"},{"t":217.44,"w":"on"},{"t":217.7,"w":"it"},{"t":218.26,"w":"Dream"},{"t":218.76,"w":"looking"},{"t":219.02,"w":"clean"},{"t":219.4,"w":"when"},{"t":219.6,"w":"I"},{"t":219.72,"w":"keep"},{"t":219.92,"w":"on"},{"t":220.12,"w":"it"},{"t":220.26,"w":"Small"},{"t":220.52,"w":"wins"},{"t":220.86,"w":"stacking"},{"t":221.16,"w":"like"},{"t":221.42,"w":"sunlight"},{"t":222.22,"w":"One"},{"t":223.02,"w":"more"},{"t":223.2,"w":"commit"},{"t":223.52,"w":"in"},{"t":223.82,"w":"the"},{"t":223.94,"w":"midnight"},{"t":224.74,"w":"Class"},{"t":225.44,"w":"by"},{"t":225.62,"w":"the"},{"t":225.78,"w":"keys,"},{"t":226.28,"w":"breeze"},{"t":226.62,"w":"at"},{"t":226.9,"w":"the"},{"t":226.96,"w":"dope"},{"t":227.41,"w":"I"},{"t":228.06,"w":"don't"},{"t":228.32,"w":"wanna"},{"t":228.44,"w":"be"},{"t":228.7,"w":"tired"},{"t":229.08,"w":"no"},{"t":229.38,"w":"more"},{"t":229.8,"w":"I"},{"t":230.5,"w":"don't"},{"t":230.72,"w":"wanna"},{"t":230.9,"w":"just"},{"t":231.18,"w":"talk"},{"t":231.5,"w":"that"},{"t":231.78,"w":"growth"},{"t":232.1,"w":"I"},{"t":232.44,"w":"wanna"},{"t":232.72,"w":"build"},{"t":233.28,"w":"that"},{"t":233.58,"w":"boat"},{"t":233.9,"w":"and"},{"t":234.18,"w":"float"},{"t":234.55,"w":"Cocktails"},{"t":235.2,"w":"and"},{"t":235.46,"w":"coke,"},{"t":236.02,"w":"that's"},{"t":236.46,"w":"how"},{"t":236.56,"w":"the"},{"t":236.72,"w":"night"},{"t":236.86,"w":"unfolds"},{"t":237.56,"w":"Got"},{"t":238,"w":"a"},{"t":238.22,"w":"little"},{"t":238.4,"w":"dream"},{"t":238.74,"w":"in"},{"t":239,"w":"the"},{"t":239.1,"w":"glass"},{"t":239.44,"w":"Got"},{"t":239.86,"w":"a"},{"t":240.06,"w":"little"},{"t":240.34,"w":"fire"},{"t":240.82,"w":"in"},{"t":242.59,"w":"the"},{"t":242.72,"w":"soul"},{"t":244.48,"w":"Cocktails"},{"t":244.92,"w":"and"},{"t":245.06,"w":"coke"},{"t":245.49,"w":"Watch"},{"t":246.14,"w":"the"},{"t":246.36,"w":"new"},{"t":246.58,"w":"me"},{"t":246.86,"w":"load"},{"t":247.12,"w":"I"},{"t":247.62,"w":"can"},{"t":247.86,"w":"feel"},{"t":248.08,"w":"that"},{"t":248.24,"w":"that"},{"t":248.38,"w":"you're"},{"t":248.6,"w":"getting"},{"t":248.76,"w":"closer"},{"t":249.16,"w":"Every"},{"t":249.74,"w":"time"},{"t":250.28,"w":"I"},{"t":250.94,"w":"take"},{"t":251.42,"w":"control"},{"t":252.26,"w":"Sit,"},{"t":253,"w":"sit,"},{"t":253.66,"w":"sit"},{"t":254.31,"w":"Sip,"},{"t":254.86,"w":"sip,"},{"t":255.16,"w":"sip,"},{"t":255.46,"w":"top"},{"t":255.62,"w":"it"},{"t":255.82,"w":"up"},{"t":256.04,"w":"Build,"},{"t":256.4,"w":"build,"},{"t":256.68,"w":"have"},{"t":256.9,"w":"a"},{"t":257,"w":"love"},{"t":257.2,"w":"No"},{"t":257.42,"w":"more"},{"t":257.62,"w":"waiting"},{"t":257.88,"w":"on"},{"t":258.08,"w":"the"},{"t":258.18,"w":"world"},{"t":258.48,"w":"We"},{"t":258.7,"w":"gon'"},{"t":258.86,"w":"make"},{"t":259.02,"w":"it"},{"t":259.16,"w":"come"},{"t":259.3,"w":"to"},{"t":259.48,"w":"us"},{"t":259.76,"w":"Cocktails"},{"t":260.6,"w":"and"},{"t":260.82,"w":"coke"},{"t":261.3,"w":"That's"},{"t":262.02,"w":"how"},{"t":262.02,"w":"the"},{"t":262.18,"w":"night"},{"t":262.72,"w":"unfolds"},{"t":263.7,"w":"Summoning"},{"t":264.16,"w":"my"},{"t":264.38,"w":"source"},{"t":264.86,"w":"code"},{"t":265.08,"w":"Watch"},{"t":266.56,"w":"the"},{"t":266.86,"w":"new"},{"t":267.16,"w":"me"},{"t":267.76,"w":"load"},{"t":268.44,"w":"Cocktails"},{"t":269.08,"w":"and"},{"t":269.3,"w":"coke"},{"t":269.64,"w":"Ooh,"},{"t":270.4,"w":"ooh,"},{"t":270.7,"w":"ooh,"},{"t":271.2,"w":"ooh,"},{"t":271.8,"w":"ooh"},{"t":272.29,"w":"Watch"},{"t":272.74,"w":"the"},{"t":273.06,"w":"new"},{"t":273.18,"w":"me"},{"t":273.52,"w":"load"},{"t":273.96,"w":"Ooh,"},{"t":274.82,"w":"ooh"},{"t":275.38,"w":"Summoning"},{"t":276.36,"w":"my"},{"t":276.52,"w":"source"},{"t":277.2,"w":"code"},{"t":277.8,"w":"No,"},{"t":279.3,"w":"we"},{"t":279.4,"w":"don't"},{"t":279.86,"w":"move"},{"t":279.96,"w":"like"},{"t":280.54,"w":"before"},{"t":281.5,"w":"Yeah,"},{"t":282.1,"w":"ice"},{"t":282.72,"w":"in"},{"t":282.88,"w":"the"},{"t":283.04,"w":"glass"},{"t":283.49,"w":"Future"},{"t":284.44,"w":"in"},{"t":284.74,"w":"the"},{"t":284.84,"w":"tabs"}]}$j$::jsonb WHERE id = 'cocktails-and-code' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Uh, yeah,
+[00:00.92] uh,
+[00:01.58] woo
+[Verse 1]
+[00:03.44] Summer night, laptop glow
+[00:06.67] Little
+[00:08.04] ice in the glass
+[00:09.10] We workin' different now, come on
+[00:11.29] Cocktails and coke
+[00:15.27] Watch the new me low
+[00:18.92] We don't move like before
+[00:23.78] No, no, no
+[00:25.82] Uh,
+[00:28.64] yeah
+[00:28.66] Uh,
+[00:29.76] uh, yeah
+[00:31.14] Sunset drippin' through the blinds like gold
+[00:33.32] Same little room but the dream got bold
+[00:35.72] Glass on the table with the ice half low
+[00:38.10] Got my mind on fire and my laptop glow
+[00:40.48] I used to scroll when the day went dead
+[00:43.04] Same old worries runnin' loops in my head
+[00:45.40] Now I open up a new tab, breathe it slow
+[00:47.72] Type one question and the whole world grows
+[00:50.22] I ain't tryna flex like I know it all
+[Chorus]
+[00:52.42] I just stopped waitin' on the miracle call
+[00:55.08] One small bill, one clean plan
+[00:57.55] One more scale, one more scale
+[00:58.66] And the palm of my hand
+[01:00.02] AI talkin', I'm talkin' back
+[01:02.34] Turnin' little ideas into somethin' that lasts
+[01:04.86] Summer breeze comin' through the screen
+[01:06.96] Feels like palm trees livin' in the machine
+[01:09.70] One little focus with the moonlight
+[Bridge]
+[01:12.14] Add a little rhythm to the grind
+[01:14.40] They don't have to run from the daylight
+[01:16.65] We can make a way this time
+[01:19.32] Cocktails and coke
+[01:20.71] That's how the night unfolds
+[Drop]
+[01:22.74] Got a little dream in the glass
+[01:24.24] Got a little fire in the soul
+[01:29.27] Cocktails and coke
+[01:30.22] Watch the new me load
+[01:31.94] I can feel that future gettin' closer
+[01:33.98] Every time I take control
+[01:38.02] Sip, sip, sip,
+[01:39.76] sip, sip, sip
+[01:40.40] Type it up, build, build, level up
+[01:42.02] No more waitin' on the world
+[01:43.32] We gon' make it come to us
+[01:44.58] Cocktails and coke
+[01:46.13] That's how the night unfolds
+[01:48.62] Summon my sores cold
+[01:50.84] Watch the new me load
+[01:53.38] Cocktails and coke
+[01:54.10] I used to think the good life had a gate
+[01:56.34] It's somebody at the front saying
+[01:57.76] Wait, wait, wait
+[01:58.70] Now I see the lock, got a pattern to it
+[02:00.96] Learn a little logic, put some action through it
+[02:03.36] Debug my doubt, clean up my days
+[02:05.63] Automate the noise, let the stress drift away
+[02:07.80] Build me a page, build me a flow
+[02:10.22] Build me a bridge where the army won't go
+[02:12.74] It ain't magic, but it feel like that
+[02:15.06] When the idea hits and the beat comes back
+[02:17.64] Baseline walking like it knows my name
+[02:19.96] 808 snap like a champagne frame
+[02:22.34] I want beach chairs paid from the things I made
+[02:24.54] Not another short break that I barely save
+[02:26.90] I want Monday soft, I want time that's mine
+[02:29.64] I want sunlight sitting on a better design
+[02:32.18] Just a little focus with the moonlight
+[Verse 2]
+[02:34.45] Add a little rhythm to the grind
+[02:36.96] We don't have to run from the daylight
+[02:39.11] We can make a way this time
+[Chorus]
+[02:41.78] Cocktails and coke, that's how the night unfolds
+[02:45.16] Got a little dream in the glass
+[02:46.68] Got a little fire in the soul
+[02:51.66] Cocktails and coke, watch the new me load
+[02:54.38] I can feel that picture getting closer
+[02:56.40] Let's go
+[02:56.90] Every time I take control
+[02:59.56] Sit, sit, sit
+[03:01.38] Sit, sit, sit, tap it up
+[03:03.32] Build, build, have a love
+[03:04.48] No more waiting on the world
+[03:05.74] We gon' make it come to us
+[03:07.02] Cocktails and coke
+[03:08.42] That's how the night unfolds
+[03:10.98] Summoning my source code
+[03:13.28] Watch the new me load
+[03:15.70] Maybe the beach ain't far away
+[03:18.07] Maybe it starts with what I make
+[03:20.62] Maybe the life I used to chase
+[03:23.04] Is hiding in the habits I create
+[03:25.72] No more wishing on the moon
+[03:26.90] No more waiting for the right sky
+[03:30.06] I got rhythm, I got a time
+[03:32.57] I got something new in my mind
+[03:35.65] Prop me a plan, I put feet on it
+[03:38.24] Dream looking clean when I keep on it
+[03:40.24] Small wins stacking like sunlight
+[03:42.20] One more commit in the midnight
+[03:44.72] Class by the keys, breeze at the dope
+[03:47.39] I don't wanna be tired no more
+[03:49.78] I don't wanna just talk that growth
+[03:52.08] I wanna build that boat and float
+[03:54.53] Cocktails and coke, that's how the night unfolds
+[Outro]
+[03:57.54] Got a little dream in the glass
+[03:59.42] Got a little fire in the soul
+[04:04.46] Cocktails and coke
+[04:05.47] Watch the new me load
+[04:07.10] I can feel that that you're getting closer
+[04:09.14] Every time I take control
+[04:12.24] Sit, sit, sit
+[04:14.29] Sip, sip, sip, top it up
+[04:16.02] Build, build, have a love
+[04:17.18] No more waiting on the world
+[04:18.46] We gon' make it come to us
+[04:19.74] Cocktails and coke
+[04:21.28] That's how the night unfolds
+[04:23.68] Summoning my source code
+[04:25.06] Watch the new me load
+[04:28.42] Cocktails and coke
+[04:29.62] Ooh, ooh, ooh, ooh, ooh
+[04:32.26] Watch the new me load
+[04:33.94] Ooh, ooh
+[04:35.36] Summoning my source code
+[04:37.78] No, we don't move like before
+[04:41.48] Yeah, ice in the glass
+[04:43.47] Future in the tabs
+$j$ WHERE id = 'cocktails-and-code' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A nocturnal fusion of hip-hop flow and electronic textures that chronicles an artist's transformation from passive worry to active creation through late-night coding sessions paired with contemplative cocktail culture.","overallMood":"Nocturnal Contemplation","themes":["Digital Alchemy","Late Night Focus","Self-Empowerment","Process over Outcome","Urban Solitude","Technological Hope"],"palette":["#0f172a","#64748b","#38bdf8","#eab308"],"sections":[{"name":"Intro","emotion":"Anticipatory Whisper","intensity":0.39,"colorHintHex":"#1e293b","start":0},{"name":"Verse 1","emotion":"Quiet Realization","intensity":0.63,"colorHintHex":"#38bdf8","start":3.44},{"name":"Chorus","emotion":"Cinematic Expansion","intensity":0.96,"colorHintHex":"#fbbf24","start":52.42},{"name":"Bridge","emotion":"Strategic Breakthrough","intensity":0.82,"colorHintHex":"#14b8a6","start":72.14},{"name":"Drop","emotion":"Rhythmic Triumph","intensity":0.92,"colorHintHex":"#facc15","start":82.74},{"name":"Verse 2","emotion":"Confident Resolve","intensity":0.38,"colorHintHex":"#4ade80","start":154.45},{"name":"Outro","emotion":"Tranquil Future-Viewing","intensity":0.11,"colorHintHex":"#1e293b","start":237.54}],"keywords":[{"word":"glow","emotion":"Warm Digital Intimacy","imageryPrompt":"Soft cyan light reflecting off a laptop screen and glass ice cubes in a dark room, volumetric lighting creating floating dust particles."},{"word":"logic","emotion":"Structured Clarity","imageryPrompt":"Invisible geometric grids forming over a cluttered desk, clean lines connecting to the outside sunset, sharp focus on keyboard keys."},{"word":"focus","emotion":"Deep Concentration","imageryPrompt":"A single beam of moonlight illuminating only hands typing rapidly while the rest of the room fades into soft bokeh shadows."},{"word":"debug","emotion":"Painful Correction","imageryPrompt":"Red error symbols dissolving into green checkmarks, visualizing mental noise turning clear as liquid drains from a glass."},{"word":"future","emotion":"Hopeful Anticipation","imageryPrompt":"A digital horizon line rising above the skyline, composed of binary code transforming into architectural blueprints and palm tree silhouettes."}]}$j$::jsonb) WHERE id = 'cocktails-and-code' AND planet->'analysis' IS NULL;
+
 -- days-drift-by: 142 words, 6 sections
 UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.03,"w":"Morning"},{"t":2.12,"w":"light,"},{"t":3.18,"w":"take"},{"t":7.14,"w":"me"},{"t":8,"w":"there,"},{"t":8.76,"w":"take"},{"t":12.62,"w":"me"},{"t":13.38,"w":"there."},{"t":45.92,"w":"Leaves"},{"t":46.64,"w":"above,"},{"t":47.22,"w":"the"},{"t":47.54,"w":"river"},{"t":47.82,"w":"below,"},{"t":48.52,"w":"every"},{"t":49.06,"w":"little"},{"t":49.52,"w":"heartbeat"},{"t":50.16,"w":"movin'"},{"t":50.8,"w":"slow."},{"t":51.32,"w":"Hands"},{"t":51.84,"w":"in"},{"t":52.22,"w":"the"},{"t":52.36,"w":"breeze,"},{"t":52.92,"w":"nothin'"},{"t":53.44,"w":"to"},{"t":53.58,"w":"chase,"},{"t":54.22,"w":"time"},{"t":55.07,"w":"disappears"},{"t":55.26,"w":"without"},{"t":55.78,"w":"a"},{"t":56.2,"w":"trace."},{"t":56.96,"w":"Hold"},{"t":57.52,"w":"me,"},{"t":58.26,"w":"don't"},{"t":59,"w":"let"},{"t":59.18,"w":"go."},{"t":60.94,"w":"Where"},{"t":62.06,"w":"we"},{"t":62.42,"w":"wander,"},{"t":63.48,"w":"flowers"},{"t":64.18,"w":"grow."},{"t":67.88,"w":"Days"},{"t":68.44,"w":"drift"},{"t":69.08,"w":"by,"},{"t":69.62,"w":"we"},{"t":70.28,"w":"don't"},{"t":70.86,"w":"have"},{"t":71.08,"w":"to"},{"t":71.22,"w":"know"},{"t":71.64,"w":"why."},{"t":73.4,"w":"Breathe"},{"t":73.96,"w":"tonight,"},{"t":75.3,"w":"everything"},{"t":75.98,"w":"feels"},{"t":76.84,"w":"alive."},{"t":78.84,"w":"Days"},{"t":79.4,"w":"drift"},{"t":80.04,"w":"by,"},{"t":80.56,"w":"floatin'"},{"t":81.7,"w":"into"},{"t":82.12,"w":"the"},{"t":82.4,"w":"sky."},{"t":83.28,"w":"Stay"},{"t":83.8,"w":"with"},{"t":84.16,"w":"me."},{"t":84.84,"w":"Stay."},{"t":86.04,"w":"Stay"},{"t":86.62,"w":"with"},{"t":87,"w":"me."},{"t":87.58,"w":"Stay."},{"t":88.78,"w":"Stay."},{"t":97.84,"w":"Stay."},{"t":110.48,"w":"Clouds,"},{"t":111.32,"w":"clouds"},{"t":111.98,"w":"rollin'"},{"t":112.7,"w":"and"},{"t":112.9,"w":"fade"},{"t":113.32,"w":"away."},{"t":114,"w":"Every"},{"t":114.9,"w":"color"},{"t":115.07,"w":"melts"},{"t":115.58,"w":"into"},{"t":116.14,"w":"gray."},{"t":116.74,"w":"Then"},{"t":116.94,"w":"the"},{"t":117.14,"w":"sun"},{"t":117.48,"w":"finds"},{"t":118,"w":"his"},{"t":118.36,"w":"way."},{"t":120.29,"w":"Just"},{"t":120.46,"w":"like"},{"t":120.8,"w":"it"},{"t":121.16,"w":"always"},{"t":121.66,"w":"does."},{"t":123.14,"w":"Closer."},{"t":124.5,"w":"Closer."},{"t":125.86,"w":"Into"},{"t":126.02,"w":"the"},{"t":126.5,"w":"light."},{"t":127.3,"w":"Higher."},{"t":129.92,"w":"Higher."},{"t":131.5,"w":"Through"},{"t":131.6,"w":"the"},{"t":131.98,"w":"leaves."},{"t":155.23,"w":"Days"},{"t":156.06,"w":"drift"},{"t":156.32,"w":"by."},{"t":157.16,"w":"We"},{"t":157.56,"w":"don't"},{"t":158.1,"w":"have"},{"t":158.37,"w":"to"},{"t":158.56,"w":"know"},{"t":158.9,"w":"why."},{"t":160.9,"w":"Breathe"},{"t":161.12,"w":"tonight."},{"t":162.74,"w":"Everything"},{"t":163.3,"w":"feels"},{"t":164.12,"w":"alive."},{"t":166.38,"w":"Days"},{"t":166.48,"w":"drift"},{"t":167.3,"w":"by."},{"t":168.24,"w":"Floating"},{"t":168.77,"w":"into"},{"t":169.47,"w":"the"},{"t":169.68,"w":"sky."},{"t":170.82,"w":"Stay"},{"t":171,"w":"with"},{"t":171.42,"w":"me."},{"t":172.22,"w":"Stay"},{"t":173.57,"w":"with"},{"t":174.12,"w":"me."},{"t":174.9,"w":"Stay"},{"t":175.74,"w":"with"},{"t":177.96,"w":"me."},{"t":182.78,"w":"Days"},{"t":183.36,"w":"drift"},{"t":184.76,"w":"by."},{"t":187.6,"w":"Days"},{"t":188.3,"w":"drift"},{"t":189.38,"w":"by."},{"t":210.92,"w":"Days"},{"t":212.32,"w":"drift"},{"t":212.32,"w":"by."}]}$j$::jsonb WHERE id = 'days-drift-by' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
 UPDATE tracks SET lyrics = $j$[Intro]
@@ -1091,6 +1326,801 @@ UPDATE tracks SET lyrics = $j$[Intro]
 $j$ WHERE id = 'drink-drink-don-t-save-me' AND coalesce(lyrics,'') = '';
 UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A surreal and narcotic exploration of insomnia where the narrator rejects salvation to drown their pain in a hypnotic loop of drinking and dissociation.","overallMood":"Narcotic Insomnia","themes":["Dissociation","Chronic Pain","Rejection of Rescue","Nightmare Fuel"],"palette":["#0f0b15","#4a3b2e","#8c766d","#ffccaa"],"sections":[{"name":"Intro","emotion":"Desperate Entreaty","intensity":0.79,"colorHint":"#4a3b2e","start":2.12},{"name":"Verse 1","emotion":"Hypnotic Dissociation","intensity":0.91,"colorHint":"#8c766d","start":11.06},{"name":"Chorus","emotion":"Narcotic Numbness","intensity":0.96,"colorHint":"#2b1d3e","start":26.2},{"name":"Pre-Chorus","emotion":"Claustrophobic Surrealism","intensity":0.85,"colorHint":"#2b1d3e","start":60.76},{"name":"Verse 1 (Continued)","emotion":"Fractured Denial","intensity":0.6,"colorHint":"#4a3b2e","start":94.56},{"name":"Bridge","emotion":"Exhausted Realization","intensity":0.36,"colorHint":"#8c766d","start":145.94},{"name":"Drop","emotion":"Hypnotic Loop Collapse","intensity":0.3,"colorHint":"#ffccaa","start":185.12},{"name":"Outro","emotion":"Fading Despair","intensity":0.12,"colorHint":"#0f0b15","start":271.62}],"keywords":[{"word":"save","emotion":"Rejected Mercy","imageryPrompt":"A translucent hand reaching out from a dark void but being slapped away by a shadowy figure, floating debris in the air."},{"word":"train","emotion":"Mental Repetition","imageryPrompt":"An endless monorail track curving through a smoggy night sky with no destination visible, glowing faintly against black clouds."},{"word":"bottle","emotion":"Narcotic Necessity","imageryPrompt":"A clear glass bottle reflecting the blue light of moonlight on a dusty wooden floor next to an overturned chair."},{"word":"pain","emotion":"Visceral Agony","imageryPrompt":"Glowing red veins pulsating rhythmically under pale skin, illuminating the darkness of a room with heavy shadows."},{"word":"smoke","emotion":"Dissolving Reality","imageryPrompt":"Thick grey smoke swirling into shapes that look like faces and memories before vanishing instantly in mid-air."},{"word":"drums","emotion":"Rhythmic Oppression","imageryPrompt":"Giant mechanical hammers striking a surface made of bone, sending shockwaves through the air that distort vision."},{"word":"ghost","emotion":"Lonely Spirit","imageryPrompt":"A faint outline of a person walking alone down an empty hallway where walls bleed black liquid onto the floor."},{"word":"shame","emotion":"Heavy Guilt","imageryPrompt":"A heavy chain made of smoke wrapped around a neck, dragging the figure forward into a mirror that shows nothing but darkness."}]}$j$::jsonb) WHERE id = 'drink-drink-don-t-save-me' AND planet->'analysis' IS NULL;
 
+-- fast-enough: 307 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":1.64,"w":"Oh,"},{"t":2.34,"w":"you're"},{"t":2.46,"w":"that"},{"t":2.58,"w":"somebody,"},{"t":3.46,"w":"I"},{"t":4.86,"w":"could"},{"t":5.44,"w":"be"},{"t":5.62,"w":"that"},{"t":5.84,"w":"somebody"},{"t":6.61,"w":"Can't"},{"t":7.36,"w":"do"},{"t":7.52,"w":"it"},{"t":7.82,"w":"like"},{"t":8,"w":"nobody,"},{"t":9.04,"w":"girl,"},{"t":9.28,"w":"we"},{"t":9.3,"w":"keep"},{"t":9.52,"w":"up,"},{"t":9.98,"w":"don't"},{"t":10.18,"w":"stop"},{"t":10.48,"w":"now"},{"t":10.92,"w":"Oh,"},{"t":11.22,"w":"you're"},{"t":11.34,"w":"that"},{"t":11.5,"w":"somebody,"},{"t":13.52,"w":"I"},{"t":13.84,"w":"could"},{"t":14.34,"w":"be"},{"t":14.5,"w":"that"},{"t":14.8,"w":"somebody"},{"t":15.28,"w":"Fast"},{"t":15.76,"w":"enough,"},{"t":16.64,"w":"we"},{"t":16.74,"w":"can't"},{"t":16.98,"w":"get"},{"t":17.12,"w":"caught"},{"t":17.36,"w":"now,"},{"t":17.9,"w":"girl,"},{"t":18.16,"w":"we"},{"t":18.24,"w":"keep"},{"t":18.44,"w":"up,"},{"t":18.76,"w":"don't"},{"t":19.16,"w":"stop"},{"t":19.38,"w":"now"},{"t":20.18,"w":"Green"},{"t":20.98,"w":"light,"},{"t":21.34,"w":"dirty"},{"t":21.86,"w":"on"},{"t":22.32,"w":"the"},{"t":22.42,"w":"mission,"},{"t":22.88,"w":"heart"},{"t":23.12,"w":"in"},{"t":23.24,"w":"overdrive,"},{"t":24.06,"w":"no"},{"t":24.18,"w":"hesitation"},{"t":25.1,"w":"Spinning"},{"t":25.5,"w":"through"},{"t":25.58,"w":"the"},{"t":25.79,"w":"net"},{"t":26.06,"w":"with"},{"t":26.16,"w":"you,"},{"t":26.9,"w":"everything"},{"t":27.7,"w":"feels"},{"t":28.12,"w":"brand"},{"t":28.4,"w":"new"},{"t":28.82,"w":"You"},{"t":29.34,"w":"got"},{"t":29.48,"w":"me"},{"t":29.62,"w":"moving"},{"t":29.82,"w":"like"},{"t":30.06,"w":"a"},{"t":30.1,"w":"theater,"},{"t":30.52,"w":"you,"},{"t":31.26,"w":"no"},{"t":31.36,"w":"checkpoints,"},{"t":32.12,"w":"we"},{"t":32.24,"w":"don't"},{"t":32.4,"w":"save"},{"t":32.58,"w":"and"},{"t":32.86,"w":"quit"},{"t":33.12,"w":"Just"},{"t":33.54,"w":"keep"},{"t":33.94,"w":"running"},{"t":34.26,"w":"through"},{"t":34.48,"w":"the"},{"t":34.62,"w":"city"},{"t":34.92,"w":"lights,"},{"t":35.74,"w":"I"},{"t":35.8,"w":"mean,"},{"t":36.2,"w":"yeah,"},{"t":36.54,"w":"we"},{"t":36.7,"w":"about"},{"t":36.96,"w":"to"},{"t":37.24,"w":"win"},{"t":37.66,"w":"Two"},{"t":38.1,"w":"sensors,"},{"t":38.96,"w":"get"},{"t":39.22,"w":"off"},{"t":39.4,"w":"the"},{"t":39.62,"w":"brakes,"},{"t":40.06,"w":"sky"},{"t":40.3,"w":"so"},{"t":40.54,"w":"blue,"},{"t":41.04,"w":"no"},{"t":41.14,"w":"room"},{"t":41.48,"w":"for"},{"t":41.64,"w":"mistake"},{"t":41.94,"w":"If"},{"t":42.38,"w":"you"},{"t":42.66,"w":"with"},{"t":42.86,"w":"me,"},{"t":43.22,"w":"then"},{"t":43.36,"w":"we"},{"t":43.48,"w":"going"},{"t":43.7,"w":"all"},{"t":43.94,"w":"the"},{"t":44.06,"w":"way,"},{"t":44.34,"w":"no"},{"t":44.46,"w":"time"},{"t":44.9,"w":"to"},{"t":45.04,"w":"waste,"},{"t":45.66,"w":"it's"},{"t":45.96,"w":"our"},{"t":46.04,"w":"day"},{"t":46.56,"w":"Oh,"},{"t":46.8,"w":"you're"},{"t":46.88,"w":"that"},{"t":47.02,"w":"somebody,"},{"t":47.88,"w":"I"},{"t":48.12,"w":"could"},{"t":49.86,"w":"be"},{"t":50.08,"w":"that"},{"t":50.28,"w":"somebody"},{"t":50.8,"w":"Can't"},{"t":51.56,"w":"do"},{"t":51.96,"w":"it"},{"t":52.24,"w":"like"},{"t":52.48,"w":"nobody,"},{"t":53.48,"w":"girl,"},{"t":53.9,"w":"we"},{"t":53.9,"w":"keep"},{"t":53.9,"w":"up,"},{"t":54.28,"w":"don't"},{"t":54.6,"w":"stop"},{"t":54.92,"w":"now"},{"t":55.32,"w":"Oh,"},{"t":55.68,"w":"you're"},{"t":55.76,"w":"that"},{"t":55.92,"w":"somebody"},{"t":56.4,"w":"Oh,"},{"t":57.54,"w":"you're"},{"t":57.86,"w":"that"},{"t":58.64,"w":"somebody"},{"t":58.75,"w":"Can't"},{"t":59.04,"w":"do"},{"t":61.56,"w":"it"},{"t":61.86,"w":"like"},{"t":62.18,"w":"nobody,"},{"t":62.3,"w":"girl,"},{"t":62.62,"w":"we"},{"t":62.62,"w":"keep"},{"t":62.62,"w":"up,"},{"t":63.18,"w":"don't"},{"t":63.5,"w":"stop"},{"t":63.8,"w":"now"},{"t":64.24,"w":"Green"},{"t":65.14,"w":"light,"},{"t":65.62,"w":"dirty"},{"t":67.06,"w":"on"},{"t":67.92,"w":"the"},{"t":68.66,"w":"mission,"},{"t":69.4,"w":"heart"},{"t":69.4,"w":"in"},{"t":69.4,"w":"overdrive,"},{"t":69.4,"w":"no"},{"t":69.4,"w":"hesitation"},{"t":69.44,"w":"Spinning"},{"t":69.58,"w":"through"},{"t":69.82,"w":"the"},{"t":70.28,"w":"net"},{"t":70.5,"w":"with"},{"t":71.28,"w":"you,"},{"t":71.88,"w":"everything"},{"t":72.62,"w":"feels"},{"t":72.78,"w":"brand"},{"t":73.36,"w":"new"},{"t":75.04,"w":"From"},{"t":75.64,"w":"the"},{"t":76.24,"w":"black"},{"t":76.48,"w":"to"},{"t":76.64,"w":"the"},{"t":76.82,"w":"boardwalk"},{"t":77.3,"w":"lights,"},{"t":77.92,"w":"we"},{"t":78.06,"w":"shine"},{"t":78.28,"w":"together,"},{"t":78.82,"w":"everything's"},{"t":79.6,"w":"bright"},{"t":79.84,"w":"Down"},{"t":80.38,"w":"some"},{"t":80.56,"w":"springs,"},{"t":81.02,"w":"we"},{"t":81.18,"w":"fly"},{"t":81.4,"w":"so"},{"t":81.66,"w":"high,"},{"t":82.28,"w":"nothing"},{"t":82.58,"w":"can"},{"t":82.86,"w":"stop"},{"t":83.08,"w":"us,"},{"t":83.36,"w":"we"},{"t":83.48,"w":"touch"},{"t":83.68,"w":"the"},{"t":83.88,"w":"sky"},{"t":84.26,"w":"You're"},{"t":84.78,"w":"my"},{"t":85.02,"w":"boost,"},{"t":85.46,"w":"I'm"},{"t":85.66,"w":"dark,"},{"t":85.98,"w":"invincible,"},{"t":86.9,"w":"go"},{"t":87.2,"w":"to"},{"t":87.32,"w":"love,"},{"t":87.68,"w":"y"},{"t":87.8,"w":"'all"},{"t":87.86,"w":"be"},{"t":88.06,"w":"good"},{"t":88.74,"w":"Too"},{"t":89.38,"w":"fast,"},{"t":89.86,"w":"too"},{"t":90,"w":"smooth,"},{"t":90.4,"w":"they"},{"t":90.54,"w":"can't"},{"t":90.98,"w":"catch"},{"t":91.22,"w":"us,"},{"t":91.62,"w":"you"},{"t":91.92,"w":"know"},{"t":92.22,"w":"how"},{"t":92.5,"w":"we"},{"t":92.8,"w":"run"},{"t":93.14,"w":"it"},{"t":95.74,"w":"Move"},{"t":96.35,"w":"like"},{"t":96.68,"w":"that,"},{"t":97.1,"w":"don't"},{"t":97.3,"w":"slow"},{"t":99.44,"w":"Baby,"},{"t":100.94,"w":"let"},{"t":101.1,"w":"the"},{"t":101.22,"w":"whole"},{"t":101.42,"w":"night"},{"t":101.72,"w":"glow"},{"t":104.56,"w":"We"},{"t":104.66,"w":"go"},{"t":104.96,"w":"fast"},{"t":108.32,"w":"I"},{"t":108.93,"w":"could"},{"t":109.34,"w":"be"},{"t":109.74,"w":"the"},{"t":109.88,"w":"one"},{"t":110.32,"w":"you"},{"t":110.5,"w":"want"},{"t":110.96,"w":"Can't"},{"t":111.24,"w":"do"},{"t":111.64,"w":"it"},{"t":116.54,"w":"like"},{"t":116.82,"w":"nobody,"},{"t":117.78,"w":"girl,"},{"t":118.26,"w":"we"},{"t":118.26,"w":"keep"},{"t":118.26,"w":"up,"},{"t":118.7,"w":"don't"},{"t":118.72,"w":"stop"},{"t":118.72,"w":"now"},{"t":118.74,"w":"You"},{"t":119.72,"w":"got"},{"t":120.24,"w":"somebody"},{"t":120.74,"w":"Ooh,"},{"t":121.62,"w":"ooh,"},{"t":122.1,"w":"ooh,"},{"t":122.54,"w":"ooh"},{"t":122.62,"w":"I"},{"t":123,"w":"could"},{"t":123.17,"w":"be"},{"t":123.34,"w":"that"},{"t":123.52,"w":"somebody"},{"t":124.46,"w":"Fast"},{"t":124.88,"w":"enough,"},{"t":125.38,"w":"you"},{"t":125.54,"w":"can't"},{"t":125.86,"w":"get"},{"t":125.94,"w":"caught"},{"t":126.14,"w":"now"},{"t":126.42,"w":"Ready"},{"t":126.98,"w":"to"},{"t":127.12,"w":"keep"},{"t":127.3,"w":"up,"},{"t":127.58,"w":"don't"},{"t":127.9,"w":"stop"},{"t":128.18,"w":"now"},{"t":128.62,"w":"Gotta"},{"t":130.53,"w":"go"},{"t":130.84,"w":"fast"},{"t":133.24,"w":"With"},{"t":133.34,"w":"you"},{"t":133.68,"w":"New"},{"t":135.02,"w":"level"},{"t":135.44,"w":"Unlocked"}]}$j$::jsonb WHERE id = 'fast-enough' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:01.62] Oh, you're that somebody, I
+[00:04.84] could be that somebody
+[00:06.59] Can't do it like nobody,
+[00:09.02] girl,
+[00:09.26] we keep up,
+[00:09.96] don't stop now
+[00:10.90] Oh, you're that somebody,
+[00:13.50] I could be that somebody
+[00:15.26] Fast enough,
+[00:16.62] we can't get caught now,
+[00:17.88] girl,
+[00:18.14] we keep up,
+[00:18.74] don't stop now
+[Verse 1]
+[00:20.16] Green light,
+[00:21.32] dirty on the mission,
+[00:22.86] heart in overdrive,
+[00:24.04] no hesitation
+[00:25.08] Spinning through the net with you,
+[00:26.88] everything feels brand new
+[00:28.80] You got me moving like a theater,
+[00:30.50] you,
+[00:31.24] no checkpoints,
+[00:32.10] we don't save and quit
+[00:33.10] Just keep running through the city lights,
+[00:35.72] I mean,
+[00:36.18] yeah,
+[00:36.52] we about to win
+[Pre-Hook]
+[00:37.64] Two sensors,
+[00:38.94] get off the brakes,
+[00:40.04] sky so blue,
+[00:41.02] no room for mistake
+[00:41.92] If you with me,
+[00:43.20] then we going all the way,
+[00:44.32] no time to waste,
+[Hook]
+[00:45.64] it's our day
+[00:46.54] Oh,
+[00:46.78] you're that somebody,
+[00:47.86] I could be that somebody
+[00:50.78] Can't do it like nobody,
+[00:53.46] girl,
+[00:53.88] we keep up,
+[00:54.26] don't stop now
+[00:55.30] Oh, you're that somebody
+[00:56.38] Oh,
+[00:57.52] you're that somebody
+[00:58.73] Can't do it like nobody,
+[01:02.28] girl,
+[01:02.60] we keep up,
+[01:03.16] don't stop now
+[01:04.22] Green light,
+[01:05.60] dirty on the mission,
+[01:09.38] heart in overdrive,
+[01:09.38] no hesitation
+[01:09.42] Spinning through the net with you,
+[01:11.86] everything feels brand new
+[01:15.02] From the black to the boardwalk lights,
+[01:17.90] we shine together,
+[01:18.80] everything's bright
+[01:19.82] Down some springs,
+[01:20.00] we fly so high,
+[01:22.26] nothing can stop us,
+[01:23.34] we touch the sky
+[01:24.24] You're my boost,
+[01:25.44] I'm dark,
+[01:25.96] invincible,
+[01:26.88] go to love,
+[01:27.66] y'all be good
+[01:28.72] Too fast,
+[01:29.84] too smooth,
+[01:30.38] they can't catch us,
+[01:31.60] you know how we run it
+[Verse 2]
+[01:35.72] Move like that, don't slow
+[01:39.42] Baby,
+[01:40.92] let the whole night glow
+[Bridge]
+[01:44.54] We go fast
+[Final Hook]
+[01:48.30] I could be the one you want
+[01:50.94] Can't do it like nobody,
+[01:57.76] girl,
+[01:58.24] we keep up,
+[01:58.68] don't stop now
+[01:58.72] You got somebody
+[02:00.72] Ooh, ooh, ooh, ooh
+[02:02.60] I could be that somebody
+[02:04.44] Fast enough, you can't get caught now
+[02:06.40] Ready to keep up, don't stop now
+[02:08.60] Gotta
+[02:10.50] go fast
+[02:13.22] With you
+[02:13.66] New level
+[02:15.42] Unlocked
+$j$ WHERE id = 'fast-enough' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.","overallMood":"Energetic and Playful","themes":["Futuristic Romance","Gaming Nostalgia","High-Speed Pursuit","Unstoppable Love"],"palette":["#FFD700","#4B0082","#C91E36","#FFEBCD"],"sections":[{"name":"Intro","emotion":"Curious and Anticipatory","intensity":0.85,"colorHintHex":"#FFD700","start":1.62},{"name":"Verse 1","emotion":"Focused and Accelerating","intensity":0.7,"colorHintHex":"#4B0082","start":20.16},{"name":"Pre-Hook","emotion":"Urgent and Electric","intensity":0.86,"colorHintHex":"#C91E36","start":37.64},{"name":"Hook","emotion":"Triumphant and Euphoric","intensity":0.76,"colorHintHex":"#FFEBCD","start":45.64},{"name":"Verse 2","emotion":"Smooth and Confident","intensity":0.3,"colorHintHex":"#4B0082","start":95.72},{"name":"Bridge","emotion":"Explosive Release","intensity":0.28,"colorHintHex":"#FFD700","start":104.54},{"name":"Final Hook","emotion":"Victorious and Joyful","intensity":0.25,"colorHintHex":"#FFEBCD","start":108.3}],"keywords":[{"word":"fast","emotion":"Urgent Thrill","imageryPrompt":"A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."},{"word":"boost","emotion":"Empowered Lift","imageryPrompt":"Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."},{"word":"caught","emotion":"Playful Fearlessness","imageryPrompt":"A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."},{"word":"lights","emotion":"Vibrant Wonder","imageryPrompt":"Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."},{"word":"level","emotion":"Achievement Joy","imageryPrompt":"A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."},{"word":"invincible","emotion":"Confident Power","imageryPrompt":"Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."}]}$j$::jsonb) WHERE id = 'fast-enough' AND planet->'analysis' IS NULL;
+
+-- feverbreak: 10 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":8.6,"w":"Thank"},{"t":10,"w":"you"},{"t":11.4,"w":"very"},{"t":17.32,"w":"much."},{"t":37.06,"w":"Thank"},{"t":38.46,"w":"you."},{"t":70.52,"w":"Thank"},{"t":70.96,"w":"you."},{"t":93.54,"w":"Thank"},{"t":94.94,"w":"you."}]}$j$::jsonb WHERE id = 'feverbreak' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:08.60] Thank you very much.
+[Chorus]
+[00:37.06] Thank you.
+[Bridge]
+[Drop]
+[01:10.52] Thank you.
+[Outro]
+[01:33.54] Thank you.
+$j$ WHERE id = 'feverbreak' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A silent, loopable tactical battle theme where sparse lyrics express profound gratitude amidst a cinematic orchestral storm.","overallMood":"Tense Heroic Urgent","themes":["Gratitude in adversity","Medieval fantasy warfare","PS1-era orchestral nostalgia","Decisive battle tension"],"palette":["#2B3A47","#C0856E","#D9A45F","#1A1F24"],"sections":[{"name":"Intro","emotion":"Anticipatory tension with sparse strings and militaristic snare preparation.","intensity":0.72,"colorHintHex":"#2B3A47","start":8.6},{"name":"Verse 1","emotion":"Noble resolve emerging from the minor-key ostinato foundation.","intensity":0.85,"colorHintHex":"#C0856E","start":8.6},{"name":"Chorus","emotion":"Dramatic violin melody soaring over aggressive viola and cello rhythms.","intensity":0.6,"colorHintHex":"#D9A45F","start":37.06},{"name":"Bridge","emotion":"Restrained French horns building pressure for the climax without modern drumming.","intensity":0.38,"colorHintHex":"#1A1F24","start":70.52},{"name":"Drop","emotion":"Aggressive brass accents and timpani strikes hitting peak heroic tension.","intensity":0.36,"colorHintHex":"#C0856E","start":70.52},{"name":"Outro","emotion":"Fading cinematic resolve returning to the loopable tactical theme.","intensity":0.12,"colorHintHex":"#2B3A47","start":93.54}],"keywords":[{"word":"thank","emotion":"Earnest gratitude mixed with solemnity","imageryPrompt":"Close up of a weathered medieval knight's gauntleted hand pressing against a cold steel shield, rain slicking the dark fantasy armor."},{"word":"feverbreak","emotion":"Relief after intense physical and magical exhaustion","imageryPrompt":"Steam rising from a cracked helmet as dawn light breaks through storm clouds over a ruined castle battlefield."},{"word":"tactical","emotion":"Strategic focus amidst chaos","imageryPrompt":"A high-angle view of soldiers moving in perfect geometric formation across muddy terrain under gray skies."},{"word":"aggressive","emotion":"Fierce combat energy and determination","imageryPrompt":"Violin strings blurred by motion as a warrior charges forward, sparks flying from clashing swords in the dim light of a cave."},{"word":"noble","emotion":"High moral standing despite danger","imageryPrompt":"A golden crest on battered armor gleaming softly against the backdrop of burning village ruins at twilight."},{"word":"urgent","emotion":"Time-critical stakes requiring immediate action","imageryPrompt":"Quick cuts of a marching band's snare drumsticks blurring, soldiers rushing through heavy wooden gates as dust billows behind them."},{"word":"dangerous","emotion":"Imminent threat and peril","imageryPrompt":"Shadows lengthening across the battlefield where invisible traps lie hidden beneath fallen timber and debris."}]}$j$::jsonb) WHERE id = 'feverbreak' AND planet->'analysis' IS NULL;
+
+-- going-crazy-hiligaynon-fusion-mix: 535 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"You"},{"t":0.45,"w":"got"},{"t":0.74,"w":"me"},{"t":0.96,"w":"going"},{"t":1.16,"w":"crazy"},{"t":3.4,"w":"Lose"},{"t":4,"w":"control,"},{"t":4.58,"w":"maybe"},{"t":6.3,"w":"Crazy"},{"t":9.46,"w":"You"},{"t":10.37,"w":"got"},{"t":10.66,"w":"me"},{"t":10.94,"w":"going"},{"t":11.12,"w":"crazy"},{"t":13.19,"w":"Still"},{"t":13.8,"w":"this"},{"t":13.9,"w":"love"},{"t":14.08,"w":"or"},{"t":14.2,"w":"hate,"},{"t":14.48,"w":"don't"},{"t":14.64,"w":"know"},{"t":14.86,"w":"why"},{"t":15.38,"w":"Am"},{"t":15.48,"w":"I"},{"t":15.48,"w":"just"},{"t":15.66,"w":"stuck"},{"t":15.86,"w":"in"},{"t":16.12,"w":"a"},{"t":16.28,"w":"race,"},{"t":17,"w":"baby"},{"t":18.4,"w":"One"},{"t":18.6,"w":"more"},{"t":18.8,"w":"call"},{"t":19.12,"w":"and"},{"t":19.48,"w":"I"},{"t":19.64,"w":"might"},{"t":19.94,"w":"just"},{"t":20.26,"w":"die"},{"t":20.91,"w":"Every"},{"t":21.66,"w":"night"},{"t":21.96,"w":"I'm"},{"t":22.2,"w":"falling,"},{"t":22.76,"w":"I"},{"t":22.96,"w":"fall"},{"t":23.2,"w":"through"},{"t":23.58,"w":"Got"},{"t":23.98,"w":"me"},{"t":24.22,"w":"going"},{"t":24.54,"w":"crazy"},{"t":25.28,"w":"Blanket,"},{"t":26.32,"w":"emo,"},{"t":26.98,"w":"ghost"},{"t":27.56,"w":"in"},{"t":27.78,"w":"a"},{"t":27.78,"w":"dance"},{"t":28.2,"w":"Got"},{"t":28.46,"w":"hoonah,"},{"t":28.88,"w":"hoonah,"},{"t":29.28,"w":"don't"},{"t":29.56,"w":"need"},{"t":29.72,"w":"to"},{"t":29.86,"w":"boost"},{"t":30.34,"w":"now"},{"t":31.11,"w":"Better"},{"t":31.86,"w":"get"},{"t":32.16,"w":"up"},{"t":32.44,"w":"on"},{"t":32.78,"w":"your"},{"t":33.08,"w":"dog,"},{"t":33.58,"w":"I"},{"t":33.88,"w":"get"},{"t":34.82,"w":"You"},{"t":35.3,"w":"got"},{"t":35.78,"w":"me"},{"t":36.16,"w":"going"},{"t":36.32,"w":"crazy"},{"t":37.26,"w":"Crazy"},{"t":37.98,"w":"Crazy"},{"t":38.86,"w":"Crazy"},{"t":39.73,"w":"Yeah,"},{"t":41.18,"w":"late"},{"t":41.72,"w":"night"},{"t":41.82,"w":"drive,"},{"t":42.22,"w":"city"},{"t":42.42,"w":"glow"},{"t":42.75,"w":"Booking"},{"t":43.2,"w":"lights"},{"t":43.3,"w":"and"},{"t":43.48,"w":"your"},{"t":43.6,"w":"name"},{"t":43.78,"w":"on"},{"t":44.06,"w":"my"},{"t":44.18,"w":"phone"},{"t":44.44,"w":"I"},{"t":44.64,"w":"know"},{"t":44.78,"w":"you're"},{"t":45.04,"w":"like"},{"t":45.44,"w":"a"},{"t":45.58,"w":"poison"},{"t":45.9,"w":"dose"},{"t":46.18,"w":"When"},{"t":46.42,"w":"I"},{"t":46.52,"w":"look"},{"t":46.68,"w":"in"},{"t":46.84,"w":"your"},{"t":46.92,"w":"eyes,"},{"t":47.16,"w":"I"},{"t":47.3,"w":"can't"},{"t":47.52,"w":"say"},{"t":47.68,"w":"no"},{"t":47.94,"w":"Get"},{"t":48.32,"w":"you"},{"t":48.48,"w":"closer,"},{"t":48.78,"w":"then"},{"t":48.92,"w":"you"},{"t":49,"w":"fade"},{"t":49.2,"w":"again"},{"t":49.59,"w":"Run"},{"t":50.04,"w":"away,"},{"t":50.36,"w":"but"},{"t":50.46,"w":"you"},{"t":50.54,"w":"still"},{"t":50.66,"w":"drag"},{"t":50.9,"w":"me"},{"t":51.04,"w":"in"},{"t":51.34,"w":"Change"},{"t":51.64,"w":"my"},{"t":51.88,"w":"mind,"},{"t":52.1,"w":"but"},{"t":52.2,"w":"I"},{"t":52.3,"w":"still"},{"t":52.5,"w":"pretend"},{"t":52.88,"w":"Erase"},{"t":53.32,"w":"you,"},{"t":53.46,"w":"but"},{"t":53.58,"w":"I"},{"t":53.66,"w":"always"},{"t":53.96,"w":"crave"},{"t":54.24,"w":"you"},{"t":54.4,"w":"still"},{"t":54.66,"w":"Bass"},{"t":55.06,"w":"hitting"},{"t":55.44,"w":"and"},{"t":55.64,"w":"you're"},{"t":55.76,"w":"right"},{"t":55.92,"w":"back"},{"t":56.06,"w":"fast"},{"t":56.44,"w":"All"},{"t":56.68,"w":"my"},{"t":56.8,"w":"friends"},{"t":57.12,"w":"telling"},{"t":57.36,"w":"me"},{"t":57.52,"w":"fall"},{"t":57.74,"w":"back"},{"t":58.02,"w":"Noisy"},{"t":58.52,"w":"nights"},{"t":58.76,"w":"with"},{"t":58.96,"w":"the"},{"t":59.08,"w":"volume"},{"t":59.38,"w":"up"},{"t":59.68,"w":"In"},{"t":59.8,"w":"my"},{"t":59.92,"w":"ears,"},{"t":60.16,"w":"I"},{"t":60.28,"w":"hear"},{"t":60.42,"w":"you,"},{"t":60.6,"w":"nigga,"},{"t":60.7,"w":"say"},{"t":60.88,"w":"I"},{"t":61.02,"w":"was"},{"t":61.2,"w":"slow"},{"t":61.42,"w":"Drunk"},{"t":61.82,"w":"on"},{"t":61.98,"w":"you,"},{"t":62.22,"w":"yes,"},{"t":62.4,"w":"dangerous"},{"t":62.86,"w":"But"},{"t":63.16,"w":"I'm"},{"t":63.46,"w":"still"},{"t":63.62,"w":"ego"},{"t":63.94,"w":"-favorite"},{"t":64.56,"w":"Go"},{"t":64.66,"w":"break"},{"t":64.88,"w":"it"},{"t":64.96,"w":"down,"},{"t":65.38,"w":"then"},{"t":65.5,"w":"we"},{"t":65.68,"w":"save"},{"t":66,"w":"this"},{"t":66.24,"w":"love"},{"t":66.42,"w":"Wake"},{"t":66.78,"w":"up"},{"t":67.02,"w":"and"},{"t":67.22,"w":"I'm"},{"t":67.58,"w":"shouting"},{"t":67.7,"w":"this"},{"t":68.38,"w":"Round"},{"t":68.61,"w":"and"},{"t":69.1,"w":"round"},{"t":69.84,"w":"We're"},{"t":70.43,"w":"like"},{"t":70.54,"w":"a"},{"t":70.68,"w":"couple,"},{"t":71.18,"w":"oh,"},{"t":71.5,"w":"and"},{"t":71.62,"w":"yeah"},{"t":71.86,"w":"You"},{"t":72,"w":"never"},{"t":72.35,"w":"slow"},{"t":72.64,"w":"down"},{"t":73.1,"w":"Till"},{"t":73.5,"w":"we"},{"t":73.68,"w":"burn,"},{"t":74.16,"w":"now"},{"t":74.36,"w":"we"},{"t":74.56,"w":"just"},{"t":74.78,"w":"go"},{"t":75.24,"w":"We"},{"t":75.34,"w":"burn"},{"t":75.68,"w":"it"},{"t":75.9,"w":"up"},{"t":76.64,"w":"Must"},{"t":77.04,"w":"end,"},{"t":77.24,"w":"oh,"},{"t":77.3,"w":"man,"},{"t":77.5,"w":"then"},{"t":77.68,"w":"we"},{"t":77.89,"w":"fall"},{"t":78.1,"w":"again"},{"t":78.82,"w":"Then"},{"t":78.92,"w":"we"},{"t":79.1,"w":"fall"},{"t":79.42,"w":"back"},{"t":79.84,"w":"down"},{"t":80.26,"w":"But"},{"t":80.52,"w":"we"},{"t":81.46,"w":"rise"},{"t":82.14,"w":"in"},{"t":82.96,"w":"this"},{"t":83.3,"w":"time"},{"t":83.64,"w":"You"},{"t":84.16,"w":"got"},{"t":84.42,"w":"me"},{"t":84.82,"w":"going"},{"t":84.92,"w":"crazy"},{"t":87.11,"w":"Still"},{"t":87.38,"w":"this"},{"t":87.71,"w":"love"},{"t":87.82,"w":"or"},{"t":87.98,"w":"hate,"},{"t":88,"w":"don't"},{"t":88,"w":"know"},{"t":88,"w":"why"},{"t":88.6,"w":"Much"},{"t":89.34,"w":"as"},{"t":89.44,"w":"I"},{"t":89.6,"w":"can't"},{"t":90.04,"w":"erase,"},{"t":90.76,"w":"baby"},{"t":91.8,"w":"One"},{"t":92.36,"w":"more"},{"t":92.58,"w":"call"},{"t":92.94,"w":"and"},{"t":93.26,"w":"I"},{"t":93.42,"w":"might"},{"t":93.74,"w":"just"},{"t":94.06,"w":"die"},{"t":94.62,"w":"Every"},{"t":95.42,"w":"night"},{"t":95.74,"w":"I'm"},{"t":95.96,"w":"falling,"},{"t":96.54,"w":"I"},{"t":96.76,"w":"fall"},{"t":97.04,"w":"through"},{"t":97.4,"w":"You"},{"t":97.74,"w":"got"},{"t":97.8,"w":"me"},{"t":97.96,"w":"going"},{"t":98.34,"w":"crazy"},{"t":99.46,"w":"I've"},{"t":99.74,"w":"run,"},{"t":99.98,"w":"got"},{"t":100.12,"w":"emo,"},{"t":100.76,"w":"ghost,"},{"t":101.44,"w":"my"},{"t":101.54,"w":"dance"},{"t":101.94,"w":"Got"},{"t":102.24,"w":"who,"},{"t":102.54,"w":"now,"},{"t":102.72,"w":"who,"},{"t":102.96,"w":"not"},{"t":103.1,"w":"done,"},{"t":103.58,"w":"it's"},{"t":103.68,"w":"a"},{"t":103.7,"w":"pusla"},{"t":105.52,"w":"But"},{"t":105.62,"w":"I'll"},{"t":105.9,"w":"get"},{"t":105.98,"w":"up,"},{"t":106.46,"w":"I"},{"t":106.62,"w":"ain't"},{"t":106.86,"w":"done,"},{"t":107.2,"w":"I"},{"t":107.62,"w":"could"},{"t":107.62,"w":"get"},{"t":109.02,"w":"You"},{"t":109.12,"w":"got"},{"t":109.6,"w":"me"},{"t":109.8,"w":"going"},{"t":110.08,"w":"crazy"},{"t":111.04,"w":"Crazy"},{"t":111.88,"w":"Crazy"},{"t":112.72,"w":"Crazy"},{"t":114.25,"w":"See"},{"t":114.76,"w":"my"},{"t":114.86,"w":"text"},{"t":115.1,"w":"and"},{"t":115.22,"w":"you"},{"t":115.3,"w":"let"},{"t":115.48,"w":"it"},{"t":115.64,"w":"stay"},{"t":115.9,"w":"Acting"},{"t":116.4,"w":"fine"},{"t":116.76,"w":"while"},{"t":116.88,"w":"I"},{"t":116.96,"w":"laugh"},{"t":117.18,"w":"with"},{"t":117.32,"w":"my"},{"t":117.48,"w":"friends"},{"t":118,"w":"But"},{"t":118.18,"w":"when"},{"t":118.3,"w":"I"},{"t":118.44,"w":"see"},{"t":118.58,"w":"your"},{"t":118.68,"w":"name"},{"t":118.82,"w":"poppin'"},{"t":119.32,"w":"I"},{"t":119.4,"w":"know"},{"t":119.52,"w":"how"},{"t":119.66,"w":"this"},{"t":119.86,"w":"will"},{"t":120.06,"w":"end"},{"t":120.44,"w":"I"},{"t":120.64,"w":"fall"},{"t":120.88,"w":"again"},{"t":121.32,"w":"Come"},{"t":121.76,"w":"a"},{"t":121.78,"w":"little"},{"t":121.92,"w":"kicker,"},{"t":122.34,"w":"where"},{"t":122.52,"w":"to"},{"t":122.62,"w":"find"},{"t":122.84,"w":"me?"},{"t":123.1,"w":"Under"},{"t":123.44,"w":"neon,"},{"t":123.86,"w":"you"},{"t":124,"w":"pull"},{"t":124.18,"w":"up"},{"t":124.32,"w":"to"},{"t":124.46,"w":"me"},{"t":124.68,"w":"Hands"},{"t":124.9,"w":"sliding"},{"t":125.2,"w":"down"},{"t":125.5,"w":"my"},{"t":125.66,"w":"waist"},{"t":125.92,"w":"so"},{"t":126.12,"w":"slow"},{"t":126.38,"w":"Every"},{"t":126.56,"w":"lie"},{"t":126.82,"w":"that"},{"t":126.94,"w":"you"},{"t":127.06,"w":"tell"},{"t":127.22,"w":"just"},{"t":127.38,"w":"fades"},{"t":127.66,"w":"with"},{"t":127.82,"w":"the"},{"t":127.9,"w":"glow"},{"t":128.16,"w":"All"},{"t":128.62,"w":"the"},{"t":128.9,"w":"reasons"},{"t":129.24,"w":"I"},{"t":129.5,"w":"still"},{"t":129.7,"w":"want"},{"t":129.94,"w":"you"},{"t":130.08,"w":"That"},{"t":130.34,"w":"one"},{"t":130.54,"w":"night,"},{"t":130.84,"w":"man,"},{"t":131,"w":"I'll"},{"t":131.28,"w":"holler"},{"t":131.54,"w":"more"},{"t":131.8,"w":"Finger"},{"t":132.3,"w":"tracing"},{"t":132.64,"w":"down"},{"t":132.86,"w":"my"},{"t":133.04,"w":"brown"},{"t":133.3,"w":"skin"},{"t":133.5,"w":"I"},{"t":133.64,"w":"don't"},{"t":133.86,"w":"wanna"},{"t":133.92,"w":"listen"},{"t":134.28,"w":"to"},{"t":134.48,"w":"your"},{"t":134.6,"w":"voice"},{"t":134.78,"w":"come"},{"t":134.96,"w":"in"},{"t":135.2,"w":"Don't"},{"t":135.58,"w":"say"},{"t":135.72,"w":"you"},{"t":135.84,"w":"love"},{"t":136.02,"w":"me,"},{"t":136.2,"w":"I"},{"t":136.26,"w":"tell"},{"t":136.44,"w":"you"},{"t":136.84,"w":"Tonight,"},{"t":137.28,"w":"let"},{"t":137.36,"w":"me"},{"t":137.48,"w":"be"},{"t":137.62,"w":"honest"},{"t":137.82,"w":"and"},{"t":138.12,"w":"true"},{"t":138.42,"w":"I"},{"t":138.78,"w":"don't"},{"t":139.02,"w":"need"},{"t":139.06,"w":"forever"},{"t":139.32,"w":"with"},{"t":139.76,"w":"you"},{"t":140.14,"w":"Just"},{"t":140.44,"w":"heart"},{"t":140.66,"w":"me"},{"t":140.82,"w":"right"},{"t":141.02,"w":"now,"},{"t":141.3,"w":"are"},{"t":141.52,"w":"you"},{"t":141.92,"w":"with"},{"t":142.16,"w":"me?"},{"t":142.58,"w":"You"},{"t":143.06,"w":"got"},{"t":143.16,"w":"me"},{"t":143.3,"w":"going"},{"t":143.66,"w":"crazy"},{"t":145.22,"w":"Still"},{"t":145.54,"w":"this"},{"t":146.34,"w":"love"},{"t":146.5,"w":"or"},{"t":146.7,"w":"hate,"},{"t":146.98,"w":"don't"},{"t":147.16,"w":"know"},{"t":147.36,"w":"why"},{"t":147.84,"w":"Heart"},{"t":147.94,"w":"is"},{"t":148.06,"w":"racing,"},{"t":148.38,"w":"can't"},{"t":148.74,"w":"stop"},{"t":149.02,"w":"it,"},{"t":149.54,"w":"baby"},{"t":150.46,"w":"One"},{"t":151.06,"w":"more"},{"t":151.32,"w":"call"},{"t":151.68,"w":"and"},{"t":152,"w":"I"},{"t":152.14,"w":"might"},{"t":152.46,"w":"just"},{"t":152.82,"w":"die"},{"t":153.36,"w":"Every"},{"t":154.06,"w":"night"},{"t":154.48,"w":"I"},{"t":154.66,"w":"fall"},{"t":154.9,"w":"and"},{"t":155.36,"w":"I"},{"t":155.5,"w":"fall"},{"t":155.78,"w":"for"},{"t":156.1,"w":"you"},{"t":156.26,"w":"You"},{"t":156.4,"w":"got"},{"t":156.52,"w":"me"},{"t":156.74,"w":"going"},{"t":157.06,"w":"crazy"},{"t":158.18,"w":"I'm"},{"t":158.5,"w":"like"},{"t":158.72,"w":"a"},{"t":158.94,"w":"ghost"},{"t":159.6,"w":"in"},{"t":160.24,"w":"a"},{"t":160.34,"w":"dance"},{"t":160.72,"w":"I'm"},{"t":161.16,"w":"like"},{"t":161.32,"w":"a"},{"t":161.54,"w":"ghost"},{"t":162.1,"w":"in"},{"t":162.16,"w":"a"},{"t":162.32,"w":"dance"},{"t":162.5,"w":"I'm"},{"t":162.78,"w":"like"},{"t":162.78,"w":"a"},{"t":162.78,"w":"ghost"},{"t":162.82,"w":"in"},{"t":163.34,"w":"a"},{"t":163.34,"w":"dance"},{"t":163.52,"w":"You"},{"t":164.26,"w":"got"},{"t":164.64,"w":"me"},{"t":168.42,"w":"going"},{"t":168.76,"w":"crazy"},{"t":169.78,"w":"Crazy"},{"t":170.44,"w":"Crazy"},{"t":173.5,"w":"Crazy"},{"t":175.7,"w":"You"},{"t":176.45,"w":"got"},{"t":176.74,"w":"me"},{"t":176.84,"w":"going"},{"t":177.22,"w":"crazy"},{"t":180.1,"w":"I"},{"t":180.2,"w":"don't"},{"t":180.56,"w":"gotta"},{"t":180.8,"w":"be"},{"t":181.38,"w":"looking"},{"t":181.48,"w":"up"},{"t":181.88,"w":"or"},{"t":182.2,"w":"gone"},{"t":182.74,"w":"You"},{"t":183.3,"w":"got"},{"t":183.4,"w":"me"},{"t":183.84,"w":"going"},{"t":183.96,"w":"crazy"},{"t":187.49,"w":"Brooklyn"},{"t":187.78,"w":"to"},{"t":188.2,"w":"Philippines,"},{"t":189.6,"w":"still"},{"t":190.1,"w":"you"},{"t":193.91,"w":"You"},{"t":195.01,"w":"got"},{"t":195.2,"w":"me"},{"t":195.38,"w":"going"},{"t":195.72,"w":"crazy"}]}$j$::jsonb WHERE id = 'going-crazy-hiligaynon-fusion-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] You got me going crazy
+[00:03.38] Lose control, maybe
+[Verse 1]
+[00:06.28] Crazy
+[Chorus]
+[00:09.44] You got me going crazy
+[00:13.17] Still this love or hate, don't know why
+[00:15.36] Am I just stuck in a race, baby
+[00:18.38] One more call and I might just die
+[00:20.89] Every night I'm falling, I fall through
+[00:23.56] Got me going crazy
+[00:25.26] Blanket, emo, ghost in a dance
+[00:28.18] Got hoonah, hoonah, don't need to boost now
+[00:31.09] Better get up on your dog, I get
+[00:34.80] You got me going crazy
+[00:37.24] Crazy
+[00:37.96] Crazy
+[00:38.84] Crazy
+[00:39.71] Yeah,
+[00:41.16] late night drive, city glow
+[00:42.73] Booking lights and your name on my phone
+[Verse 2]
+[00:44.42] I know you're like a poison dose
+[00:46.16] When I look in your eyes, I can't say no
+[00:47.92] Get you closer, then you fade again
+[00:49.57] Run away, but you still drag me in
+[00:51.32] Change my mind, but I still pretend
+[00:52.86] Erase you, but I always crave you still
+[00:54.64] Bass hitting and you're right back fast
+[00:56.42] All my friends telling me fall back
+[00:57.00] Noisy nights with the volume up
+[00:59.66] In my ears, I hear you, nigga, say I was slow
+[01:01.40] Drunk on you, yes, dangerous
+[01:02.84] But I'm still ego-favorite
+[01:04.54] Go break it down, then we save this love
+[01:06.40] Wake up and I'm shouting this
+[01:08.36] Round and round
+[Pre-Chorus/Hook Transition]
+[01:09.82] We're like a couple, oh, and yeah
+[01:11.84] You never slow down
+[01:13.08] Till we burn, now we just go
+[Chorus]
+[01:15.22] We burn it up
+[01:16.62] Must end, oh, man, then we fall again
+[01:18.80] Then we fall back down
+[01:20.24] But we rise in this time
+[01:23.62] You got me going crazy
+[01:27.09] Still this love or hate, don't know why
+[01:28.58] Much as I can't erase, baby
+[01:31.78] One more call and I might just die
+[01:34.60] Every night I'm falling, I fall through
+[01:37.38] You got me going crazy
+[01:39.43] I've run, got emo, ghost, my dance
+[01:41.92] Got who, now, who, not done, it's a pusla
+[01:45.50] But I'll get up, I ain't done, I could get
+[01:48.00] You got me going crazy
+[01:51.02] Crazy
+[01:51.86] Crazy
+[Bridge]
+[01:52.70] Crazy
+[01:54.23] See my text and you let it stay
+[01:55.88] Acting fine while I laugh with my friends
+[01:57.98] But when I see your name poppin'
+[01:59.30] I know how this will end
+[02:00.42] I fall again
+[02:01.30] Come a little kicker, where to find me?
+[02:03.08] Under neon, you pull up to me
+[02:04.66] Hands sliding down my waist so slow
+[02:06.36] Every lie that you tell just fades with the glow
+[Drop/Build-Up]
+[02:08.14] All the reasons I still want you
+[02:10.06] That one night, man, I'll holler more
+[02:11.78] Finger tracing down my brown skin
+[02:13.48] I don't wanna listen to your voice come in
+[02:15.18] Don't say you love me, I tell you
+[02:16.82] Tonight, let me be honest and true
+[02:18.40] I don't need forever with you
+[02:20.12] Just heart me right now, are you with me?
+[02:22.56] You got me going crazy
+[02:25.19] Still this love or hate, don't know why
+[02:27.82] Heart is racing, can't stop it, baby
+[02:30.44] One more call and I might just die
+[02:33.34] Every night I fall and I fall for you
+[02:36.24] You got me going crazy
+[02:38.15] I'm like a ghost in a dance
+[02:40.70] I'm like a ghost in a dance
+[02:42.48] I'm like a ghost in a dance
+[02:43.50] You got me going crazy
+[02:49.76] Crazy
+[02:50.42] Crazy
+[02:53.48] Crazy
+[02:55.68] You got me going crazy
+[03:00.08] I don't gotta be looking up or gone
+[03:02.72] You got me going crazy
+[03:07.47] Brooklyn to Philippines,
+[03:09.58] still you
+[03:13.89] You got me going crazy
+$j$ WHERE id = 'going-crazy-hiligaynon-fusion-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song portrays a volatile relationship where the narrator is consumed by intense desire and confusion between love and hate, oscillating between addiction to the partner's presence and a desperate need for escape.","overallMood":"0.85","themes":["Addiction","Emotional Volatility","Urban Nightlife","Identity Crisis","Desperate Desire","Chaos vs. Control"],"palette":["#FF2E1B","#3A0D0D","#F7941D","#C51162"],"sections":[{"name":"Intro","emotion":"Confused awakening, sudden realization of chaos.","intensity":0.39,"colorHintHex":"#8A4B7D","keywords":[{"word":"control","emotion":"fragile fear","imageryPrompt":"Fingers trembling over a steering wheel in darkness, shattering glass reflecting red taillights."},{"word":"maybe","emotion":"uncertainty","imageryPrompt":"A foggy street sign where the letters are flickering and indistinct against rain-slicked asphalt."}],"start":0},{"name":"Verse 1","emotion":"Repetitive obsession, minor panic.","intensity":0.69,"colorHintHex":"#C73E1D","keywords":[{"word":"crazy","emotion":"overwhelming confusion","imageryPrompt":"A kaleidoscope view of a city street where buildings are tilting and neon signs blur into streaks."},{"word":"ghost","emotion":"lonely presence","imageryPrompt":"A translucent figure dancing alone in an empty subway station, illuminated by cold blue overhead lights."}],"start":6.28},{"name":"Chorus","emotion":"Cataclysmic release, emotional overload.","intensity":0.99,"colorHintHex":"#FF1F4D","keywords":[{"word":"rise","emotion":"defiant hope","imageryPrompt":"A phoenix made of shattered glass shards soaring upwards through a stormy sky."},{"word":"hate","emotion":"bitter conflict","imageryPrompt":"Two mirrors reflecting distorted, angry faces arguing in an empty hallway with flickering lights."}],"start":9.44},{"name":"Verse 2","emotion":"Toxic attraction, noisy intensity.","intensity":0.85,"colorHintHex":"#E63946","keywords":[{"word":"poison","emotion":"addictive danger","imageryPrompt":"A beautiful glass vial shattering on a marble floor, dark liquid spreading rapidly across the surface."},{"word":"drunk","emotion":"intoxicated clarity","imageryPrompt":"Heavy rain pouring inside a sealed room, water droplets distorting reflections of smiling faces in windows."}],"start":44.42},{"name":"Pre-Chorus/Hook Transition","emotion":"Building tension, inevitable collision.","intensity":0.8,"colorHintHex":"#FF4D1F","keywords":[{"word":"burn","emotion":"scorching heat","imageryPrompt":"Flames licking up the side of a skyscraper at night, illuminating silhouettes holding hands tightly."},{"word":"fade","emotion":"sudden loss","imageryPrompt":"A bright light bulb dimming rapidly until only a faint shadow remains against a black wall."}],"start":69.82},{"name":"Bridge","emotion":"Secret vulnerability amidst the chaos.","intensity":0.52,"colorHintHex":"#D91E18","keywords":[{"word":"lie","emotion":"betrayal sting","imageryPrompt":"A cracked smartphone screen displaying a fake profile picture next to a real tear stain."},{"word":"end","emotion":"resignation","imageryPrompt":"An hourglass with no sand left, sitting on a table surrounded by scattered letters and photos."}],"start":112.7},{"name":"Drop/Build-Up","emotion":"Raw honesty in the heat of the moment.","intensity":0.3,"colorHintHex":"#FF3A4B","keywords":[{"word":"holler","emotion":"loud declaration","imageryPrompt":"Mouth wide open screaming into a microphone that is sparking with electrical energy."},{"word":"heart","emotion":"racing urgency","imageryPrompt":"A mechanical heart beating rapidly inside an iron cage, wires connecting to city power lines."}],"start":128.14}],"keywords":[{"word":"crazy","emotion":"chaotic frenzy","imageryPrompt":"Confetti exploding in a dark room mixed with shattered mirrors and flickering neon signs."},{"word":"die","emotion":"extreme desperation","imageryPrompt":"A hand clutching a phone tightly as the screen cracks from impact, background burning with orange fire."},{"word":"falling","emotion":"helplessness","imageryPrompt":"Leaves swirling violently down an escalator into a dark abyss of smoke and debris."},{"word":"poison","emotion":"addictive danger","imageryPrompt":"A beautiful glass vial shattering on a marble floor, dark liquid spreading rapidly across the surface."},{"word":"burn","emotion":"scorching heat","imageryPrompt":"Flames licking up the side of a skyscraper at night, illuminating silhouettes holding hands tightly."},{"word":"fade","emotion":"sudden loss","imageryPrompt":"A bright light bulb dimming rapidly until only a faint shadow remains against a black wall."}]}$j$::jsonb) WHERE id = 'going-crazy-hiligaynon-fusion-mix' AND planet->'analysis' IS NULL;
+
+-- heaven-hell-honey-venom-remix: 434 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Mmm,"},{"t":0.98,"w":"mmm,"},{"t":5.06,"w":"everybody"},{"t":6.18,"w":"got"},{"t":6.52,"w":"an"},{"t":6.72,"w":"angel's"},{"t":7.04,"w":"eye,"},{"t":7.48,"w":"mmm,"},{"t":10.56,"w":"everybody"},{"t":10.7,"w":"got"},{"t":11.18,"w":"a"},{"t":11.3,"w":"devil's"},{"t":11.66,"w":"eye,"},{"t":12.18,"w":"tonight,"},{"t":14.2,"w":"I"},{"t":15.76,"w":"want"},{"t":16.1,"w":"both,"},{"t":16.82,"w":"both,"},{"t":17.22,"w":"both,"},{"t":17.88,"w":"both,"},{"t":18.38,"w":"both,"},{"t":18.86,"w":"both,"},{"t":19.18,"w":"both,"},{"t":19.7,"w":"both,"},{"t":19.94,"w":"heaven,"},{"t":20.82,"w":"hell,"},{"t":25.1,"w":"honey"},{"t":25.2,"w":"and"},{"t":25.48,"w":"venom,"},{"t":26.06,"w":"honey"},{"t":27.54,"w":"and"},{"t":27.68,"w":"venom,"},{"t":28.36,"w":"you"},{"t":29.47,"w":"look"},{"t":29.78,"w":"like"},{"t":30.22,"w":"hell,"},{"t":30.42,"w":"but"},{"t":30.66,"w":"we"},{"t":30.8,"w":"fuckin'"},{"t":31.14,"w":"like"},{"t":31.32,"w":"hell,"},{"t":31.88,"w":"hands"},{"t":32.24,"w":"on"},{"t":32.44,"w":"my"},{"t":32.56,"w":"waist"},{"t":32.86,"w":"while"},{"t":33.04,"w":"the"},{"t":33.18,"w":"whole"},{"t":33.42,"w":"room"},{"t":33.66,"w":"swell,"},{"t":34.24,"w":"you"},{"t":34.32,"w":"look"},{"t":34.52,"w":"like"},{"t":34.84,"w":"hell,"},{"t":35.14,"w":"but"},{"t":35.32,"w":"we"},{"t":35.46,"w":"fuckin'"},{"t":35.82,"w":"like"},{"t":35.98,"w":"hell,"},{"t":36.58,"w":"everybody"},{"t":36.96,"w":"watchin'"},{"t":37.58,"w":"but"},{"t":37.64,"w":"they"},{"t":37.8,"w":"know"},{"t":38.04,"w":"us"},{"t":38.34,"w":"well,"},{"t":38.96,"w":"honey"},{"t":39.22,"w":"and"},{"t":39.48,"w":"venom,"},{"t":39.96,"w":"runnin'"},{"t":40.2,"w":"under"},{"t":40.36,"w":"my"},{"t":40.58,"w":"skin,"},{"t":41.1,"w":"kiss"},{"t":41.48,"w":"me"},{"t":41.7,"w":"deep,"},{"t":42.14,"w":"baby,"},{"t":42.46,"w":"pull"},{"t":42.6,"w":"me"},{"t":42.76,"w":"back"},{"t":43.02,"w":"in,"},{"t":43.42,"w":"you"},{"t":43.62,"w":"look"},{"t":43.86,"w":"like"},{"t":44.16,"w":"hell,"},{"t":44.46,"w":"but"},{"t":44.64,"w":"we"},{"t":44.8,"w":"fuckin'"},{"t":45.12,"w":"like"},{"t":45.28,"w":"hell,"},{"t":45.88,"w":"sweet"},{"t":46.16,"w":"little"},{"t":46.46,"w":"danger"},{"t":46.96,"w":"under"},{"t":47.32,"w":"your"},{"t":47.58,"w":"spell,"},{"t":48.2,"w":"heaven,"},{"t":51.08,"w":"hell,"},{"t":51.56,"w":"honey,"},{"t":52.18,"w":"venom,"},{"t":53.4,"w":"hell,"},{"t":54.58,"w":"honey."},{"t":57.7,"w":"She"},{"t":58.08,"w":"walk"},{"t":58.36,"w":"in"},{"t":58.54,"w":"slow"},{"t":58.74,"w":"motion,"},{"t":59.28,"w":"whole"},{"t":59.58,"w":"club"},{"t":59.88,"w":"freeze"},{"t":60.22,"w":"up,"},{"t":60.54,"w":"gold"},{"t":60.78,"w":"on"},{"t":61.02,"w":"her"},{"t":61.12,"w":"body,"},{"t":61.42,"w":"but"},{"t":61.58,"w":"the"},{"t":61.7,"w":"ice"},{"t":61.98,"w":"a"},{"t":62.14,"w":"deeper,"},{"t":62.8,"w":"dress"},{"t":63.02,"w":"red"},{"t":63.32,"w":"in"},{"t":63.5,"w":"her,"},{"t":63.8,"w":"bass"},{"t":64.2,"w":"gettin'"},{"t":64.62,"w":"lower,"},{"t":65.02,"w":"one"},{"t":65.34,"w":"more"},{"t":65.7,"w":"wine"},{"t":66.06,"w":"and"},{"t":66.22,"w":"the"},{"t":66.36,"w":"room"},{"t":66.62,"w":"gettin'"},{"t":66.96,"w":"slower,"},{"t":67.34,"w":"sweet"},{"t":67.72,"w":"like"},{"t":68.08,"w":"honey,"},{"t":68.4,"w":"but"},{"t":68.56,"w":"the"},{"t":68.7,"w":"attitude"},{"t":69.04,"w":"wicked,"},{"t":69.7,"w":"one"},{"t":70,"w":"little"},{"t":70.36,"w":"touch"},{"t":70.68,"w":"and"},{"t":70.9,"w":"me"},{"t":71,"w":"whole"},{"t":71.2,"w":"mind"},{"t":71.48,"w":"shifted,"},{"t":72,"w":"pillow"},{"t":72.42,"w":"in"},{"t":72.64,"w":"the"},{"t":72.74,"w":"strobe"},{"t":73.06,"w":"light,"},{"t":73.38,"w":"devil"},{"t":73.6,"w":"in"},{"t":73.8,"w":"the"},{"t":73.9,"w":"grin,"},{"t":74.24,"w":"everybody"},{"t":74.54,"w":"know"},{"t":74.96,"w":"trouble"},{"t":75.24,"w":"soon"},{"t":75.6,"w":"as"},{"t":75.84,"w":"she"},{"t":75.94,"w":"walk"},{"t":76.24,"w":"in"},{"t":76.46,"w":"me,"},{"t":76.82,"w":"I"},{"t":77.02,"w":"know"},{"t":77.56,"w":"better,"},{"t":78.4,"w":"still"},{"t":78.74,"w":"I"},{"t":79.04,"w":"stay,"},{"t":79.7,"w":"red"},{"t":79.92,"w":"lights"},{"t":80.28,"w":"dancin'"},{"t":80.84,"w":"on"},{"t":81.04,"w":"your"},{"t":81.34,"w":"face,"},{"t":82.14,"w":"one"},{"t":82.24,"w":"more"},{"t":82.58,"w":"warning,"},{"t":83.2,"w":"one"},{"t":83.38,"w":"more"},{"t":83.7,"w":"spell,"},{"t":84.26,"w":"you"},{"t":84.38,"w":"look"},{"t":84.66,"w":"like"},{"t":84.88,"w":"heaven,"},{"t":85.3,"w":"but"},{"t":85.46,"w":"we"},{"t":85.56,"w":"love"},{"t":85.8,"w":"like"},{"t":86.04,"w":"hell,"},{"t":86.68,"w":"hell."},{"t":87.54,"w":"You"},{"t":87.88,"w":"look"},{"t":88.12,"w":"like"},{"t":88.42,"w":"heaven,"},{"t":88.77,"w":"but"},{"t":88.94,"w":"we"},{"t":89.06,"w":"fuckin'"},{"t":89.42,"w":"like"},{"t":89.58,"w":"hell,"},{"t":90.06,"w":"hands"},{"t":90.38,"w":"on"},{"t":90.68,"w":"my"},{"t":90.86,"w":"waist"},{"t":91.1,"w":"while"},{"t":91.26,"w":"the"},{"t":91.42,"w":"whole"},{"t":91.64,"w":"room"},{"t":91.92,"w":"swell,"},{"t":92.46,"w":"you"},{"t":92.54,"w":"look"},{"t":92.76,"w":"like"},{"t":93.06,"w":"heaven,"},{"t":93.46,"w":"but"},{"t":93.62,"w":"we"},{"t":93.72,"w":"fuckin'"},{"t":94.06,"w":"like"},{"t":94.2,"w":"hell,"},{"t":94.74,"w":"everybody"},{"t":95.18,"w":"watchin'"},{"t":95.82,"w":"but"},{"t":95.9,"w":"they"},{"t":96.04,"w":"know"},{"t":96.32,"w":"us"},{"t":96.6,"w":"well,"},{"t":97.2,"w":"honey"},{"t":97.46,"w":"and"},{"t":97.72,"w":"venom,"},{"t":98.2,"w":"runnin'"},{"t":98.46,"w":"under"},{"t":98.6,"w":"my"},{"t":98.84,"w":"skin,"},{"t":99.36,"w":"kiss"},{"t":99.7,"w":"me"},{"t":100,"w":"deep,"},{"t":100.42,"w":"baby,"},{"t":100.68,"w":"pull"},{"t":100.84,"w":"me"},{"t":101,"w":"back"},{"t":101.26,"w":"in,"},{"t":101.66,"w":"you"},{"t":101.84,"w":"look"},{"t":102.08,"w":"like"},{"t":102.38,"w":"heaven,"},{"t":102.78,"w":"but"},{"t":102.94,"w":"we"},{"t":103.04,"w":"fuckin'"},{"t":103.36,"w":"like"},{"t":103.52,"w":"hell,"},{"t":104.08,"w":"sweet"},{"t":104.36,"w":"little"},{"t":104.74,"w":"danger"},{"t":105.18,"w":"under"},{"t":105.6,"w":"your"},{"t":105.82,"w":"spell."},{"t":106.6,"w":"One,"},{"t":107.14,"w":"two,"},{"t":107.46,"w":"don't"},{"t":108.16,"w":"stop,"},{"t":108.72,"w":"bass"},{"t":109.4,"w":"beat,"},{"t":109.82,"w":"heart"},{"t":110.24,"w":"drop,"},{"t":111.08,"w":"hands"},{"t":111.78,"w":"high,"},{"t":112.18,"w":"eyes"},{"t":112.68,"w":"shut,"},{"t":113.34,"w":"one"},{"t":113.68,"w":"more"},{"t":114,"w":"kiss,"},{"t":114.48,"w":"too"},{"t":114.92,"w":"much,"},{"t":115.84,"w":"you"},{"t":116.16,"w":"got"},{"t":116.32,"w":"the"},{"t":116.44,"w":"sugar."},{"t":117.6,"w":"Every"},{"t":118.2,"w":"time"},{"t":118.62,"w":"I"},{"t":118.8,"w":"leave,"},{"t":119.1,"w":"you"},{"t":119.32,"w":"pull"},{"t":119.42,"w":"me"},{"t":119.62,"w":"back"},{"t":119.94,"w":"in,"},{"t":120.4,"w":"one"},{"t":120.66,"w":"more"},{"t":121,"w":"night,"},{"t":121.52,"w":"one"},{"t":121.86,"w":"more"},{"t":122.26,"w":"lie,"},{"t":122.72,"w":"one"},{"t":123,"w":"more"},{"t":123.34,"w":"chance,"},{"t":123.98,"w":"boy,"},{"t":124.28,"w":"don't"},{"t":124.66,"w":"lie,"},{"t":125.06,"w":"dangerous"},{"t":125.56,"w":"God,"},{"t":126.2,"w":"dangerous"},{"t":126.74,"w":"boy,"},{"t":127.54,"w":"why"},{"t":127.68,"w":"you"},{"t":127.82,"w":"always"},{"t":128.06,"w":"playin'"},{"t":128.6,"w":"with"},{"t":128.68,"w":"fire,"},{"t":129.32,"w":"because"},{"t":129.64,"w":"the"},{"t":129.84,"w":"burn"},{"t":130.14,"w":"feel"},{"t":130.32,"w":"good,"},{"t":132.2,"w":"why"},{"t":132.3,"w":"you"},{"t":132.5,"w":"always"},{"t":132.76,"w":"break"},{"t":133.04,"w":"the"},{"t":133.32,"w":"rules,"},{"t":134.02,"w":"because"},{"t":134.3,"w":"I"},{"t":134.48,"w":"wish"},{"t":134.74,"w":"you"},{"t":134.98,"w":"could,"},{"t":136.28,"w":"tell"},{"t":136.38,"w":"me"},{"t":136.7,"w":"one"},{"t":136.98,"w":"good"},{"t":137.28,"w":"reason,"},{"t":138.1,"w":"I"},{"t":138.78,"w":"should"},{"t":139.08,"w":"walk"},{"t":139.46,"w":"away."},{"t":143.22,"w":"Don't"},{"t":143.94,"w":"walk"},{"t":144.14,"w":"away!"},{"t":153.02,"w":"Don't"},{"t":153.18,"w":"walk"},{"t":153.46,"w":"away!"},{"t":161.76,"w":"You"},{"t":162.46,"w":"look"},{"t":162.7,"w":"like"},{"t":163.06,"w":"heaven."},{"t":166.4,"w":"You"},{"t":167.1,"w":"look"},{"t":167.36,"w":"like"},{"t":167.66,"w":"heaven."},{"t":171.7,"w":"You"},{"t":171.8,"w":"look"},{"t":172.08,"w":"like"},{"t":172.34,"w":"heaven."},{"t":175.7,"w":"You"},{"t":176.42,"w":"look"},{"t":176.64,"w":"like"},{"t":176.9,"w":"heaven."},{"t":180.5,"w":"You"},{"t":181.15,"w":"look"},{"t":181.34,"w":"like"},{"t":181.62,"w":"heaven,"},{"t":182,"w":"but"},{"t":182.14,"w":"we"},{"t":182.26,"w":"fuckin'"},{"t":182.58,"w":"like"},{"t":182.78,"w":"hell"},{"t":183.12,"w":"Whole"},{"t":183.38,"w":"dance,"},{"t":183.78,"w":"all"},{"t":183.96,"w":"singin',"},{"t":184.38,"w":"every"},{"t":184.56,"w":"word"},{"t":184.86,"w":"we"},{"t":185.08,"w":"tell"},{"t":185.42,"w":"You"},{"t":185.74,"w":"look"},{"t":186,"w":"like"},{"t":186.28,"w":"heaven,"},{"t":186.66,"w":"but"},{"t":186.82,"w":"we"},{"t":186.92,"w":"fuckin'"},{"t":187.26,"w":"like"},{"t":187.44,"w":"hell"},{"t":187.78,"w":"Sweet"},{"t":188.3,"w":"temptation,"},{"t":189.04,"w":"let"},{"t":189.18,"w":"me"},{"t":189.26,"w":"know"},{"t":189.46,"w":"it"},{"t":189.74,"w":"well"},{"t":190.04,"w":"Honey"},{"t":190.64,"w":"and"},{"t":190.94,"w":"venom,"},{"t":191.48,"w":"runnin'"},{"t":191.92,"w":"through"},{"t":192.04,"w":"my"},{"t":192.2,"w":"veins"},{"t":192.6,"w":"Honey"},{"t":192.96,"w":"and"},{"t":193.26,"w":"venom,"},{"t":193.84,"w":"dancin'"},{"t":194.26,"w":"in"},{"t":194.4,"w":"the"},{"t":194.48,"w":"rain"},{"t":194.76,"w":"Honey"},{"t":195.3,"w":"and"},{"t":195.58,"w":"venom,"},{"t":196.16,"w":"burnin'"},{"t":196.56,"w":"through"},{"t":196.66,"w":"the"},{"t":196.86,"w":"dawn"},{"t":197.12,"w":"Sweet"},{"t":197.52,"w":"little"},{"t":197.9,"w":"poison,"},{"t":198.58,"w":"got"},{"t":198.72,"w":"the"},{"t":198.86,"w":"whole"},{"t":199.08,"w":"world"},{"t":199.64,"w":"on"},{"t":200.06,"w":"Hell"},{"t":203.54,"w":"Honey,"},{"t":204.08,"w":"venom,"},{"t":205.68,"w":"kiss"},{"t":205.78,"w":"me"},{"t":206,"w":"deep"},{"t":206.44,"w":"One"},{"t":206.92,"w":"more"},{"t":207.24,"w":"time,"},{"t":207.78,"w":"honey"},{"t":208.14,"w":"and"},{"t":208.94,"w":"venom"},{"t":215.14,"w":"Heaven"}]}$j$::jsonb WHERE id = 'heaven-hell-honey-venom-remix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Mmm,
+[00:00.96] mmm,
+[Verse 1]
+[00:05.04] everybody got an angel's eye, mmm,
+[00:10.54] everybody got a devil's eye, tonight,
+[00:14.18] I want
+[Chorus]
+[00:16.08] both,
+[00:16.80] both,
+[00:17.20] both,
+[00:17.86] both,
+[00:18.36] both,
+[00:18.84] both,
+[00:19.16] both,
+[00:19.68] both,
+[00:19.92] heaven,
+[00:20.80] hell,
+[00:25.08] honey and venom, honey
+[00:27.52] and venom,
+[00:28.34] you look like hell,
+[00:30.40] but we fuckin' like hell,
+[00:31.86] hands on my waist while the whole
+[00:33.40] room swell,
+[00:34.22] you look like hell,
+[00:35.12] but we fuckin' like hell,
+[00:36.56] everybody watchin' but they know
+[00:38.02] us well,
+[00:38.94] honey and venom,
+[00:39.94] runnin' under my skin,
+[00:41.08] kiss me deep,
+[00:42.12] baby,
+[00:42.44] pull me back in,
+[00:43.40] you look like hell,
+[00:44.44] but we fuckin' like hell,
+[00:45.86] sweet little danger under your spell,
+[00:48.18] heaven,
+[00:51.06] hell, honey, venom, hell,
+[00:54.56] honey.
+[Verse 2]
+[00:57.67] She walk in slow motion,
+[00:59.26] whole club freeze up,
+[01:00.52] gold on her body,
+[01:01.40] but the ice a deeper,
+[01:02.78] dress red in her,
+[01:03.78] bass gettin' lower,
+[01:04.00] one more wine and the room gettin' slower,
+[Pre-Chorus]
+[01:07.32] sweet
+[01:07.70] like honey,
+[01:08.38] but the attitude wicked,
+[01:09.68] one little touch and me whole mind shifted,
+[01:11.98] pillow in
+[01:12.62] the strobe light,
+[01:13.36] devil in the grin,
+[01:14.22] everybody know trouble soon as she walk in me,
+[01:16.80] I know
+[01:17.54] better,
+[01:18.38] still I stay,
+[01:19.68] red lights dancin' on your face,
+[01:22.12] one more warning,
+[01:23.18] one more spell,
+[01:24.24] you look like heaven,
+[01:25.28] but we love like hell,
+[Chorus]
+[01:26.66] hell.
+[01:27.52] You look like heaven,
+[01:28.75] but we fuckin' like hell,
+[01:30.04] hands on my waist while the whole room
+[01:31.90] swell,
+[01:32.44] you look like heaven,
+[01:33.44] but we fuckin' like hell,
+[01:34.72] everybody watchin' but they know
+[01:36.30] us well,
+[01:37.18] honey and venom,
+[01:38.18] runnin' under my skin,
+[01:39.34] kiss me deep,
+[01:40.40] baby,
+[01:40.66] pull me back in,
+[01:41.64] you look like heaven,
+[01:42.76] but we fuckin' like hell,
+[01:44.06] sweet little danger under your spell.
+[01:46.58] One,
+[01:47.12] two,
+[01:47.44] don't stop,
+[01:48.70] bass beat,
+[01:49.80] heart drop,
+[01:51.06] hands high,
+[01:52.16] eyes shut,
+[01:53.32] one more kiss,
+[01:54.46] too
+[01:54.90] much, you got the sugar.
+[01:57.58] Every time I leave,
+[01:59.08] you pull me back in,
+[02:00.38] one more night,
+[02:01.50] one more lie,
+[02:02.70] one more chance,
+[02:03.96] boy,
+[02:04.26] don't lie,
+[02:05.04] dangerous God,
+[02:06.18] dangerous boy,
+[02:07.52] why you always playin' with fire,
+[02:09.30] because
+[02:09.62] the burn feel good,
+[02:12.18] why you always break the rules,
+[02:13.00] because I wish you could,
+[02:16.26] tell me one
+[Bridge]
+[02:16.96] good reason, I should walk away.
+[Drop]
+[02:23.20] Don't walk away!
+[02:32.00] Don't walk away!
+[02:41.74] You look like heaven.
+[Breakdown/Bridge 2]
+[02:46.38] You look like heaven.
+[Final Chorus/Outro]
+[02:51.68] You look like heaven.
+[02:55.68] You look like heaven.
+[03:00.48] You look like heaven, but we fuckin' like hell
+[03:03.10] Whole dance, all singin', every word we tell
+[03:05.40] You look like heaven, but we fuckin' like hell
+[03:07.76] Sweet temptation, let me know it well
+[03:10.02] Honey and venom, runnin' through my veins
+[03:12.58] Honey and venom, dancin' in the rain
+[03:14.74] Honey and venom, burnin' through the dawn
+[03:17.10] Sweet little poison, got the whole world on
+[03:20.04] Hell
+[03:23.52] Honey, venom,
+[03:25.66] kiss me deep
+[03:26.42] One more time, honey and venom
+[03:35.12] Heaven
+$j$ WHERE id = 'heaven-hell-honey-venom-remix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A sultry dancehall anthem about a forbidden attraction where an alluring figure embodies both dangerous temptation and divine beauty.","overallMood":"Sultry","themes":["Forbidden Love","Dangerous Allure","Obsession","Dual Nature (Heaven/Hell)","Nightlife Escapism"],"palette":["#0F1216","#FFD700","#8B0000","#39FF14"],"sections":[{"name":"Intro","emotion":"Anticipation and low hum of tension","intensity":0.63,"colorHint":"#0f1216","start":0},{"name":"Verse 1","emotion":"Internal conflict between desire and morality","intensity":0.85,"colorHint":"#8b0000","start":5.04},{"name":"Chorus","emotion":"Explosive release of forbidden passion","intensity":0.93,"colorHint":"#ffd700","start":16.08},{"name":"Verse 2","emotion":"Visualizing the object of desire with luxury and heat","intensity":0.62,"colorHint":"#39ff14","start":57.67},{"name":"Pre-Chorus","emotion":"Rising tension and psychological shift","intensity":0.46,"colorHint":"#ffd700","start":67.32},{"name":"Bridge","emotion":"Desperate bargaining with fate and desire","intensity":0.28,"colorHint":"#8b0000","start":136.96},{"name":"Drop","emotion":"Pure sonic assault of the bassline and hypnotic rhythm","intensity":0.3,"colorHint":"#39ff14","start":143.2},{"name":"Breakdown/Bridge 2","emotion":"Hypnotic repetition leading to trance state","intensity":0.24,"colorHint":"#0f1216","start":166.38},{"name":"Final Chorus/Outro","emotion":"Exhausted euphoria and lingering intoxication","intensity":0.22,"colorHint":"#ffd700","start":171.68}],"keywords":[{"word":"venom","emotion":"Thrilling toxicity","imageryPrompt":"A golden viscous liquid dripping from a silver goblet onto dark stone, glowing with an inner blue light that illuminates the surrounding shadows."},{"word":"honey","emotion":"Sweet entrapment","imageryPrompt":"Sunlight filtering through thick amber syrup in slow motion, trapping dust motes and creating a sticky, warm golden haze against dark wood textures."},{"word":"strobe","emotion":"Disorienting intensity","imageryPrompt":"Sharp white rectangular beams of light slicing through smoke-filled air at nightclubs, freezing sweat on skin and illuminating neon outlines in high contrast black and white."},{"word":"burn","emotion":"Painful pleasure","imageryPrompt":"A hand clutching a chest wound where flames lick the flesh but feel warm rather than hot, surrounded by ash that sparkles like diamonds in low light."},{"word":"venomous","emotion":"Forbidden intimacy","imageryPrompt":"Two lips meeting under red emergency lights where one is coated in shimmering green poison dust and the other in golden honey, creating a swirling vortex of colors."},{"word":"dangerous","emotion":"Subversive divinity","imageryPrompt":"A figure draped in tattered velvet robes standing atop a pile of burning money and broken crosses, eyes glowing with electric blue fire against a stormy sky."},{"word":"spell","emotion":"Hypnotic control","imageryPrompt":"A swirling vortex of red ribbons and smoke forming an intricate geometric pattern above a sweating dancer's face, blurring the background into deep obsidian black."},{"word":"electric","emotion":"Jolted arousal","imageryPrompt":"Blue electricity arcing across wet skin in a dark room, illuminating veins that glow faintly purple as the subject shivers under harsh neon club lighting."}]}$j$::jsonb) WHERE id = 'heaven-hell-honey-venom-remix' AND planet->'analysis' IS NULL;
+
+-- honey-n-venom-rude-wine-riddim: 495 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":1.57,"w":"You"},{"t":1.8,"w":"look"},{"t":2.44,"w":"sweet"},{"t":2.76,"w":"from"},{"t":3.04,"w":"far"},{"t":3.48,"w":"away"},{"t":7.9,"w":"Till"},{"t":8,"w":"you"},{"t":8.12,"w":"get"},{"t":8.44,"w":"a"},{"t":8.76,"w":"taste,"},{"t":9.36,"w":"taste,"},{"t":9.92,"w":"taste,"},{"t":10.44,"w":"taste,"},{"t":11.2,"w":"taste,"},{"t":11.78,"w":"taste"},{"t":12.38,"w":"Honey"},{"t":13.22,"w":"and"},{"t":13.68,"w":"venom,"},{"t":14.18,"w":"venom,"},{"t":14.74,"w":"venom,"},{"t":15.34,"w":"venom,"},{"t":15.98,"w":"venom,"},{"t":16.58,"w":"venom,"},{"t":17.18,"w":"venom"},{"t":18.12,"w":"Honey"},{"t":18.22,"w":"and"},{"t":18.58,"w":"venom,"},{"t":19.14,"w":"venom,"},{"t":19.72,"w":"venom,"},{"t":20.36,"w":"venom,"},{"t":20.96,"w":"venom,"},{"t":21.54,"w":"venom,"},{"t":21.54,"w":"venom"},{"t":22.6,"w":"Honey"},{"t":23.26,"w":"and"},{"t":23.62,"w":"venom,"},{"t":24.12,"w":"baby"},{"t":24.51,"w":"that's"},{"t":24.9,"w":"your"},{"t":24.92,"w":"style"},{"t":25.3,"w":"Kiss"},{"t":25.74,"w":"me"},{"t":25.96,"w":"deep"},{"t":26.42,"w":"while"},{"t":26.66,"w":"you"},{"t":26.8,"w":"grind"},{"t":27.06,"w":"for"},{"t":27.24,"w":"a"},{"t":27.48,"w":"while"},{"t":27.74,"w":"Honey"},{"t":28.22,"w":"and"},{"t":28.56,"w":"venom,"},{"t":29,"w":"got"},{"t":29.12,"w":"me"},{"t":29.26,"w":"losing"},{"t":29.48,"w":"my"},{"t":29.78,"w":"head"},{"t":30.16,"w":"Both"},{"t":30.38,"w":"hands"},{"t":30.7,"w":"on"},{"t":31,"w":"my"},{"t":31.16,"w":"waist,"},{"t":31.5,"w":"got"},{"t":31.6,"w":"me"},{"t":31.74,"w":"wild"},{"t":32.04,"w":"in"},{"t":32.26,"w":"your"},{"t":32.38,"w":"bed"},{"t":32.66,"w":"Honey"},{"t":33.12,"w":"and"},{"t":33.54,"w":"venom,"},{"t":34.08,"w":"breasts"},{"t":34.34,"w":"in"},{"t":34.68,"w":"the"},{"t":34.86,"w":"strobe"},{"t":35.22,"w":"light"},{"t":35.48,"w":"Heart"},{"t":35.76,"w":"says"},{"t":36.02,"w":"more"},{"t":36.32,"w":"while"},{"t":36.6,"w":"my"},{"t":36.74,"w":"dress"},{"t":37,"w":"riding"},{"t":37.32,"w":"up"},{"t":37.62,"w":"high"},{"t":37.92,"w":"Honey"},{"t":38.26,"w":"and"},{"t":38.52,"w":"venom,"},{"t":39.02,"w":"everybody"},{"t":39.26,"w":"can"},{"t":39.74,"w":"tell"},{"t":40.12,"w":"You"},{"t":40.46,"w":"look"},{"t":40.76,"w":"like"},{"t":41.08,"w":"heaven"},{"t":41.36,"w":"but"},{"t":41.58,"w":"we"},{"t":41.72,"w":"fucking"},{"t":41.96,"w":"like"},{"t":42.24,"w":"hell"},{"t":42.69,"w":"Aye,"},{"t":43.38,"w":"aye,"},{"t":43.7,"w":"aye,"},{"t":44.08,"w":"aye,"},{"t":44.58,"w":"aye,"},{"t":44.84,"w":"aye,"},{"t":45.12,"w":"aye"},{"t":45.3,"w":"Honey"},{"t":45.66,"w":"and"},{"t":46,"w":"venom"},{"t":47.91,"w":"Aye,"},{"t":48.36,"w":"aye,"},{"t":48.68,"w":"aye,"},{"t":49.1,"w":"aye,"},{"t":49.62,"w":"aye,"},{"t":49.82,"w":"aye,"},{"t":50.2,"w":"aye"},{"t":50.3,"w":"Honey"},{"t":50.66,"w":"and"},{"t":51,"w":"venom"},{"t":51.42,"w":"Yeah,"},{"t":51.74,"w":"she"},{"t":51.98,"w":"walk"},{"t":52.32,"w":"in,"},{"t":52.7,"w":"she"},{"t":52.96,"w":"walk"},{"t":53.22,"w":"in"},{"t":53.38,"w":"slow"},{"t":53.58,"w":"motion"},{"t":54.04,"w":"Whole"},{"t":54.46,"w":"room"},{"t":54.82,"w":"freeze"},{"t":55.14,"w":"up,"},{"t":55.48,"w":"cold"},{"t":55.78,"w":"in"},{"t":56.02,"w":"the"},{"t":56.1,"w":"smile"},{"t":56.38,"w":"But"},{"t":56.6,"w":"the"},{"t":56.74,"w":"lips"},{"t":57.04,"w":"say"},{"t":57.26,"w":"deep"},{"t":57.62,"w":"But"},{"t":58.1,"w":"they"},{"t":58.3,"w":"got"},{"t":58.5,"w":"rhythm"},{"t":58.84,"w":"Skin"},{"t":59.36,"w":"like"},{"t":59.72,"w":"steel"},{"t":60.08,"w":"Sweet"},{"t":60.44,"w":"when"},{"t":60.94,"w":"she"},{"t":61.1,"w":"whining"},{"t":61.4,"w":"on"},{"t":61.62,"w":"the"},{"t":61.72,"w":"waistline"},{"t":62.22,"w":"Milk"},{"t":62.58,"w":"bumming,"},{"t":63.02,"w":"no"},{"t":63.88,"w":"Fire"},{"t":63.98,"w":"burning"},{"t":64.52,"w":"in"},{"t":64.74,"w":"the"},{"t":64.82,"w":"sugar"},{"t":65.15,"w":"Pretty"},{"t":65.7,"w":"little"},{"t":65.98,"w":"waist"},{"t":66.42,"w":"and"},{"t":66.58,"w":"a"},{"t":66.72,"w":"king"},{"t":66.94,"w":"to"},{"t":67.16,"w":"a"},{"t":67.32,"w":"lover"},{"t":67.6,"w":"One"},{"t":68.2,"w":"minute"},{"t":68.56,"w":"halo,"},{"t":69.1,"w":"next"},{"t":69.44,"w":"minute"},{"t":69.76,"w":"dawn"},{"t":70.1,"w":"Everybody"},{"t":70.52,"w":"know"},{"t":70.92,"w":"she"},{"t":71.08,"w":"wicked,"},{"t":71.38,"w":"still"},{"t":71.58,"w":"everybody"},{"t":72.04,"w":"swan"},{"t":72.68,"w":"I"},{"t":73.2,"w":"know,"},{"t":74,"w":"I"},{"t":74.7,"w":"know,"},{"t":75.26,"w":"but"},{"t":75.74,"w":"I"},{"t":75.98,"w":"still"},{"t":76.36,"w":"come"},{"t":76.88,"w":"close"},{"t":78.08,"w":"I"},{"t":78.46,"w":"know,"},{"t":79,"w":"I"},{"t":79.62,"w":"know,"},{"t":80.28,"w":"still"},{"t":80.86,"w":"dancing"},{"t":81.62,"w":"with"},{"t":82.14,"w":"ghosts"},{"t":82.82,"w":"Honey"},{"t":83.28,"w":"and"},{"t":83.52,"w":"venom,"},{"t":84.04,"w":"baby"},{"t":84.38,"w":"that's"},{"t":84.76,"w":"your"},{"t":84.82,"w":"style"},{"t":85.18,"w":"Kiss"},{"t":85.68,"w":"me"},{"t":85.88,"w":"deep"},{"t":86.38,"w":"while"},{"t":86.58,"w":"you"},{"t":86.72,"w":"grind"},{"t":86.96,"w":"for"},{"t":87.16,"w":"a"},{"t":87.42,"w":"while"},{"t":87.62,"w":"Honey"},{"t":88.18,"w":"and"},{"t":88.5,"w":"venom"},{"t":88.84,"w":"Got"},{"t":89.02,"w":"me"},{"t":89.14,"w":"losing"},{"t":89.38,"w":"my"},{"t":89.72,"w":"head"},{"t":90.04,"w":"Both"},{"t":90.32,"w":"hands"},{"t":90.72,"w":"on"},{"t":90.96,"w":"my"},{"t":91.1,"w":"waist"},{"t":91.32,"w":"Got"},{"t":91.52,"w":"me"},{"t":91.62,"w":"wild"},{"t":91.96,"w":"and"},{"t":92.18,"w":"you're"},{"t":92.36,"w":"dead"},{"t":92.6,"w":"Honey"},{"t":93.02,"w":"and"},{"t":93.48,"w":"venom"},{"t":94.02,"w":"Pressing"},{"t":94.62,"w":"in"},{"t":94.7,"w":"the"},{"t":94.78,"w":"strobe"},{"t":95.14,"w":"light"},{"t":95.38,"w":"Heart"},{"t":95.66,"w":"says"},{"t":95.94,"w":"more"},{"t":96.24,"w":"while"},{"t":96.54,"w":"my"},{"t":96.66,"w":"dress"},{"t":96.92,"w":"riding"},{"t":97.26,"w":"up"},{"t":97.54,"w":"high"},{"t":97.8,"w":"Honey"},{"t":98.2,"w":"and"},{"t":98.46,"w":"venom"},{"t":98.76,"w":"Everybody"},{"t":99.2,"w":"can"},{"t":99.64,"w":"tell"},{"t":100.04,"w":"You"},{"t":100.4,"w":"look"},{"t":100.58,"w":"like"},{"t":100.96,"w":"heaven"},{"t":101.32,"w":"but"},{"t":101.5,"w":"we"},{"t":101.64,"w":"fucking"},{"t":101.9,"w":"like"},{"t":102.18,"w":"hell"},{"t":102.68,"w":"Aye,"},{"t":103.3,"w":"aye,"},{"t":103.6,"w":"aye,"},{"t":104.02,"w":"aye,"},{"t":104.52,"w":"aye,"},{"t":104.74,"w":"aye,"},{"t":104.98,"w":"aye"},{"t":105.25,"w":"Honey"},{"t":105.57,"w":"and"},{"t":105.96,"w":"venom"},{"t":107.82,"w":"Aye,"},{"t":108.26,"w":"aye,"},{"t":108.58,"w":"aye,"},{"t":109.04,"w":"aye,"},{"t":109.52,"w":"aye,"},{"t":109.8,"w":"aye,"},{"t":110.1,"w":"aye"},{"t":110.16,"w":"Honey"},{"t":110.59,"w":"and"},{"t":110.94,"w":"venom"},{"t":112.22,"w":"Wine"},{"t":112.78,"w":"slow"},{"t":114.22,"w":"Don't"},{"t":114.78,"w":"stop"},{"t":115.6,"w":"Hands"},{"t":115.88,"w":"high"},{"t":116.3,"w":"Face"},{"t":116.62,"w":"drop"},{"t":116.94,"w":"Wine"},{"t":117.28,"w":"low"},{"t":117.62,"w":"Tick"},{"t":117.9,"w":"tock"},{"t":118.2,"w":"Wine"},{"t":118.48,"w":"slow"},{"t":118.8,"w":"Wine"},{"t":119.12,"w":"slow"},{"t":119.36,"w":"Don't"},{"t":119.74,"w":"stop"},{"t":120,"w":"Don't"},{"t":120.38,"w":"stop"},{"t":120.64,"w":"Hands"},{"t":121.08,"w":"high"},{"t":121.3,"w":"Face"},{"t":121.58,"w":"drop"},{"t":121.88,"w":"Wine"},{"t":122.26,"w":"low"},{"t":122.52,"w":"Tick"},{"t":123.02,"w":"tock"},{"t":123.12,"w":"You"},{"t":123.28,"w":"got"},{"t":123.42,"w":"the"},{"t":123.54,"w":"sugar"},{"t":124.36,"w":"You"},{"t":124.46,"w":"want"},{"t":124.68,"w":"the"},{"t":124.8,"w":"taste"},{"t":125.28,"w":"Bent"},{"t":125.66,"w":"on"},{"t":125.94,"w":"the"},{"t":126.04,"w":"speaker"},{"t":126.4,"w":"Hands"},{"t":126.96,"w":"on"},{"t":127.18,"w":"my"},{"t":127.3,"w":"waist"},{"t":127.72,"w":"One"},{"t":128.1,"w":"more"},{"t":128.46,"w":"wine"},{"t":128.94,"w":"One"},{"t":129.4,"w":"more"},{"t":129.72,"w":"night"},{"t":130.04,"w":"Then"},{"t":130.3,"w":"we"},{"t":130.4,"w":"do"},{"t":130.6,"w":"it"},{"t":130.76,"w":"in"},{"t":130.92,"w":"the"},{"t":131.04,"w":"dark"},{"t":131.36,"w":"on"},{"t":131.54,"w":"the"},{"t":131.64,"w":"neon"},{"t":132.08,"w":"light"},{"t":132.52,"w":"Crap"},{"t":133.16,"w":"on"},{"t":133.44,"w":"the"},{"t":133.48,"w":"bumper"},{"t":133.9,"w":"Grip"},{"t":134.4,"w":"on"},{"t":134.68,"w":"the"},{"t":134.78,"w":"thigh"},{"t":135.08,"w":"Why"},{"t":135.6,"w":"you"},{"t":135.74,"w":"always"},{"t":136.04,"w":"make"},{"t":136.34,"w":"me"},{"t":136.58,"w":"misspeed"},{"t":137.26,"w":"it?"},{"t":137.66,"w":"Is"},{"t":137.88,"w":"it"},{"t":137.88,"w":"love"},{"t":138.22,"w":"or"},{"t":138.36,"w":"not"},{"t":138.52,"w":"right?"},{"t":139.38,"w":"Dangerous"},{"t":139.94,"w":"cat"},{"t":140.16,"w":"Dangerous"},{"t":141.08,"w":"boy"},{"t":141.28,"w":"Why"},{"t":141.84,"w":"you"},{"t":141.98,"w":"always"},{"t":142.26,"w":"playing"},{"t":142.54,"w":"with"},{"t":142.78,"w":"fire?"},{"t":144.45,"w":"Because"},{"t":144.56,"w":"the"},{"t":144.78,"w":"burn"},{"t":145.14,"w":"feels"},{"t":146.32,"w":"good"},{"t":147.44,"w":"Honey"},{"t":148.14,"w":"and"},{"t":148.42,"w":"venom"},{"t":149.26,"w":"Baby"},{"t":149.36,"w":"that's"},{"t":149.7,"w":"your"},{"t":149.76,"w":"style"},{"t":150.22,"w":"Whole"},{"t":150.62,"w":"dance"},{"t":150.98,"w":"out"},{"t":151.26,"w":"Shouting"},{"t":151.6,"w":"every"},{"t":151.88,"w":"dirty"},{"t":152.2,"w":"line"},{"t":152.54,"w":"Honey"},{"t":153.16,"w":"and"},{"t":153.4,"w":"venom"},{"t":153.72,"w":"Hands"},{"t":154.12,"w":"up"},{"t":154.36,"w":"to"},{"t":154.58,"w":"the"},{"t":154.72,"w":"sky"},{"t":155.02,"w":"If"},{"t":155.44,"w":"loving"},{"t":155.68,"w":"you"},{"t":155.88,"w":"is"},{"t":156.04,"w":"wrong"},{"t":156.26,"w":"Then"},{"t":156.48,"w":"I"},{"t":156.6,"w":"still"},{"t":156.82,"w":"wanna"},{"t":157.16,"w":"try"},{"t":157.46,"w":"Honey"},{"t":158.12,"w":"and"},{"t":158.38,"w":"venom"},{"t":158.74,"w":"Rhythm"},{"t":159.4,"w":"in"},{"t":159.64,"w":"my"},{"t":159.68,"w":"veins"},{"t":160.22,"w":"Everybody's"},{"t":161.04,"w":"lettin'"},{"t":161.38,"w":"tropical"},{"t":161.72,"w":"raves"},{"t":162.7,"w":"Honey"},{"t":163.14,"w":"and"},{"t":163.38,"w":"venom"},{"t":163.72,"w":"Llamo"},{"t":164.04,"w":"or"},{"t":164.04,"w":"time"},{"t":164.3,"w":"before"},{"t":164.58,"w":"dawn"},{"t":165,"w":"Sweet"},{"t":165.48,"w":"little"},{"t":165.9,"w":"poison"},{"t":166.26,"w":"that"},{"t":166.46,"w":"the"},{"t":166.6,"w":"whole"},{"t":166.88,"w":"world"},{"t":167.28,"w":"haunts"},{"t":167.8,"w":"Aye,"},{"t":168.3,"w":"aye,"},{"t":168.58,"w":"aye,"},{"t":168.96,"w":"aye,"},{"t":169.38,"w":"aye,"},{"t":169.6,"w":"aye,"},{"t":169.82,"w":"aye"},{"t":170.06,"w":"Honey"},{"t":170.53,"w":"and"},{"t":170.9,"w":"venom"},{"t":172.8,"w":"Aye,"},{"t":173.24,"w":"aye,"},{"t":173.56,"w":"aye,"},{"t":174.06,"w":"aye,"},{"t":174.48,"w":"aye,"},{"t":174.66,"w":"aye,"},{"t":175,"w":"aye,"},{"t":175.04,"w":"aye"},{"t":175.52,"w":"Honey"},{"t":175.62,"w":"and"},{"t":175.96,"w":"venom"},{"t":176.22,"w":"Aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"aye,"},{"t":176.62,"w":"honey"},{"t":176.62,"w":"and"},{"t":176.62,"w":"venom"},{"t":177.89,"w":"Sweet"},{"t":178.1,"w":"like"},{"t":178.42,"w":"honey,"},{"t":178.94,"w":"honey,"},{"t":179.52,"w":"sharp"},{"t":179.96,"w":"like"},{"t":180.3,"w":"danger,"},{"t":180.9,"w":"honey,"},{"t":181.44,"w":"honey,"},{"t":182.04,"w":"and"},{"t":183.32,"w":"vanilla,"},{"t":183.98,"w":"honey,"},{"t":184.56,"w":"honey,"},{"t":185.18,"w":"honey,"},{"t":185.78,"w":"and"},{"t":188.3,"w":"vanilla."}]}$j$::jsonb WHERE id = 'honey-n-venom-rude-wine-riddim' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:01.55] You look sweet from far away
+[00:07.88] Till you get a taste,
+[00:09.34] taste,
+[00:09.90] taste,
+[00:10.42] taste,
+[00:11.18] taste,
+[00:11.76] taste
+[Drop]
+[00:12.36] Honey and venom,
+[00:14.16] venom,
+[00:14.72] venom,
+[00:15.32] venom,
+[00:15.96] venom,
+[00:16.56] venom,
+[00:17.16] venom
+[00:18.10] Honey and venom,
+[00:19.12] venom,
+[00:19.70] venom,
+[00:20.34] venom,
+[00:20.94] venom,
+[00:21.52] venom,
+[00:21.52] venom
+[00:22.58] Honey
+[00:23.24] and venom, baby that's your style
+[Chorus]
+[00:25.28] Kiss me deep while you grind for a while
+[00:27.72] Honey and venom, got me losing my head
+[00:30.14] Both hands on my waist, got me wild in your bed
+[00:32.64] Honey and venom, breasts in the strobe light
+[00:35.46] Heart says more while my dress riding up high
+[00:37.90] Honey and venom, everybody can tell
+[00:40.10] You look like heaven but we fucking like hell
+[Post-Chorus]
+[00:42.67] Aye, aye, aye, aye, aye, aye, aye
+[00:45.28] Honey and venom
+[00:47.89] Aye, aye, aye, aye, aye, aye, aye
+[00:50.28] Honey and venom
+[Verse 1]
+[00:51.40] Yeah, she walk in, she walk in slow motion
+[00:54.02] Whole room freeze up, cold in the smile
+[00:56.36] But the lips say deep
+[00:57.60] But they got rhythm
+[00:58.82] Skin like steel
+[01:00.06] Sweet when she whining on the waistline
+[01:02.20] Milk bumming, no
+[01:03.86] Fire burning in the sugar
+[01:05.13] Pretty little waist and a king to a lover
+[01:07.58] One minute halo, next minute dawn
+[01:10.08] Everybody know she wicked, still everybody swan
+[01:12.66] I know, I know, but I still come close
+[01:18.06] I know, I know, still dancing with ghosts
+[01:22.80] Honey and venom, baby that's your style
+[Pre-Chorus]
+[01:25.16] Kiss me deep while you grind for a while
+[01:27.60] Honey and venom
+[01:28.82] Got me losing my head
+[Chorus]
+[01:30.02] Both hands on my waist
+[01:31.30] Got me wild and you're dead
+[01:32.58] Honey and venom
+[01:33.00] Pressing in the strobe light
+[01:35.36] Heart says more while my dress riding up high
+[01:37.78] Honey and venom
+[01:38.74] Everybody can tell
+[01:40.02] You look like heaven but we fucking like hell
+[01:42.66] Aye, aye, aye, aye, aye, aye, aye
+[01:45.23] Honey and venom
+[01:47.80] Aye, aye, aye, aye, aye, aye, aye
+[01:50.14] Honey and venom
+[01:52.20] Wine slow
+[01:54.20] Don't stop
+[01:55.58] Hands high
+[01:56.28] Face drop
+[01:56.92] Wine low
+[01:57.60] Tick tock
+[01:58.18] Wine slow
+[01:58.78] Wine slow
+[01:59.34] Don't stop
+[01:59.98] Don't stop
+[02:00.62] Hands high
+[02:01.28] Face drop
+[02:01.86] Wine low
+[02:02.50] Tick tock
+[02:03.10] You got the sugar
+[02:04.34] You want the taste
+[02:05.26] Bent on the speaker
+[02:06.38] Hands on my waist
+[02:07.70] One more wine
+[02:08.92] One more night
+[02:10.02] Then we do it in the dark on the neon light
+[02:12.50] Crap on the bumper
+[02:13.88] Grip on the thigh
+[02:15.06] Why you always make me misspeed it?
+[02:17.64] Is it love or not right?
+[02:19.36] Dangerous cat
+[02:20.14] Dangerous boy
+[02:21.26] Why you always playing with fire?
+[02:24.43] Because the burn feels good
+[Dancehall Breakdown]
+[02:27.42] Honey and venom
+[02:29.24] Baby that's your style
+[02:30.20] Whole dance out
+[02:31.24] Shouting every dirty line
+[02:32.52] Honey and venom
+[02:33.70] Hands up to the sky
+[02:34.00] If loving you is wrong
+[02:36.24] Then I still wanna try
+[02:37.44] Honey and venom
+[02:38.72] Rhythm in my veins
+[Verse 2]
+[02:40.20] Everybody's lettin' tropical raves
+[02:42.68] Honey and venom
+[02:43.70] Llamo or time before dawn
+[02:44.98] Sweet little poison that the whole world haunts
+[02:47.78] Aye, aye, aye, aye, aye, aye, aye
+[02:50.04] Honey and venom
+[02:52.78] Aye, aye, aye, aye, aye, aye, aye, aye
+[02:55.50] Honey and venom
+[02:56.20] Aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] aye,
+[02:56.60] honey and venom
+[02:57.87] Sweet like honey,
+[02:58.92] honey,
+[02:59.50] sharp like danger,
+[03:00.88] honey,
+[03:01.42] honey,
+[03:02.02] and vanilla,
+[03:03.96] honey,
+[03:04.54] honey,
+[03:05.16] honey,
+[03:05.76] and vanilla.
+$j$ WHERE id = 'honey-n-venom-rude-wine-riddim' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This high-octane Dancehall anthem juxtaposes seductive allure with dangerous toxicity, depicting a lover who is as sweet as honey but sharp and lethal like venom. The track captures the gritty, sweaty energy of a peak-time club night where physical desire clashes with emotional peril.","overallMood":"Aggressively Seductive","themes":["Toxic Romance","Club Energy","Sensory Overload","Dangerous Attraction","Raw Desire","Sound System Culture"],"palette":["#FFD700","#2B1A16","#8E4539","#C5A065"],"sections":[{"sectionName":"Intro","emotion":"Mysterious Anticipation","intensity":0.76,"colorHintHex":"#FFD700","start":1.55},{"sectionName":"Drop","emotion":"Explosive Release","intensity":0.79,"colorHintHex":"#C5A065","start":12.36},{"sectionName":"Chorus","emotion":"Feverish Desire","intensity":0.77,"colorHintHex":"#FF4C23","start":25.28},{"sectionName":"Post-Chorus","emotion":"Hypnotic Repetition","intensity":0.96,"colorHintHex":"#D1BFA9","start":42.67},{"sectionName":"Verse 1","emotion":"Tense Observation","intensity":0.71,"colorHintHex":"#2B1A16","start":51.4},{"sectionName":"Pre-Chorus","emotion":"Building Tension","intensity":0.66,"colorHintHex":"#FFD700","start":85.16},{"sectionName":"Chorus","emotion":"Chaotic Passion","intensity":0.6,"colorHintHex":"#C5A065","start":90.02},{"sectionName":"Dancehall Breakdown","emotion":"Unrestrained Chaos","intensity":0.28,"colorHintHex":"#FF4C23","start":147.42},{"sectionName":"Verse 2","emotion":"Intoxicated Confusion","intensity":0.26,"colorHintHex":"#D1BFA9","start":160.2}],"keywords":[{"word":"venom","emotion":"Sharp Danger","imageryPrompt":"A microscopic view of a translucent green toxin dripping onto hot asphalt, creating jagged cracks in the ground."},{"word":"honey","emotion":"Cloying Sweetness","imageryPrompt":"Golden viscous syrup slowly cascading over dark chocolate stones, catching fire from a low flame below."},{"word":"strobe","emotion":"Disorientating Flash","imageryPrompt":"Blinding white geometric light beams cutting through thick club smoke, freezing dancing figures in static poses."},{"word":"wine","emotion":"Intoxicating Flow","imageryPrompt":"Deep red liquid swirling violently inside a cracked glass bottle amidst scattered grape skins and dust motes."},{"word":"burn","emotion":"Overheated Pain","imageryPrompt":"Skin turning bright orange against the backdrop of an exploding fireball, heat waves distorting the air above a club floor."},{"word":"grind","emotion":"Friction Heat","imageryPrompt":"Two dark silhouettes pressed tightly together on a wet dancefloor, steam rising from their bodies in rhythmic pulses."},{"word":"poison","emotion":"Fatal Allure","imageryPrompt":"A beautiful butterfly with wings stained black and blue, landing softly on a wilted red rose petal."}]}$j$::jsonb) WHERE id = 'honey-n-venom-rude-wine-riddim' AND planet->'analysis' IS NULL;
+
+-- i-don-t-quit-right-now: 798 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Yeah,"},{"t":0.24,"w":"yeah,"},{"t":2.78,"w":"uh,"},{"t":4.56,"w":"uh,"},{"t":5.18,"w":"yeah,"},{"t":6.48,"w":"uh"},{"t":9.52,"w":"Beat"},{"t":9.62,"w":"drop,"},{"t":10.26,"w":"shoes"},{"t":10.56,"w":"tied,"},{"t":11.1,"w":"hood"},{"t":11.26,"w":"up,"},{"t":11.62,"w":"door"},{"t":11.88,"w":"slammed"},{"t":12.16,"w":"Still"},{"t":12.7,"w":"half"},{"t":13.1,"w":"-tied,"},{"t":13.5,"w":"but"},{"t":13.66,"w":"I"},{"t":13.78,"w":"move"},{"t":13.98,"w":"like"},{"t":14.26,"w":"a"},{"t":14.4,"w":"grown"},{"t":14.64,"w":"man"},{"t":14.94,"w":"No"},{"t":15.18,"w":"speech,"},{"t":15.68,"w":"no"},{"t":15.82,"w":"height,"},{"t":16.16,"w":"no"},{"t":16.28,"w":"coach"},{"t":16.52,"w":"in"},{"t":16.76,"w":"my"},{"t":16.88,"w":"ear"},{"t":17.16,"w":"Just"},{"t":17.34,"w":"that"},{"t":17.54,"w":"old"},{"t":17.8,"w":"weak"},{"t":18.02,"w":"voice"},{"t":18.38,"w":"that"},{"t":18.6,"w":"I"},{"t":18.72,"w":"came"},{"t":18.98,"w":"here"},{"t":19.22,"w":"to"},{"t":19.34,"w":"kill"},{"t":19.73,"w":"I"},{"t":20.18,"w":"don't"},{"t":20.32,"w":"feel"},{"t":20.52,"w":"ready,"},{"t":20.94,"w":"that's"},{"t":21.08,"w":"the"},{"t":21.18,"w":"point"},{"t":21.52,"w":"of"},{"t":21.7,"w":"it"},{"t":21.86,"w":"Same"},{"t":22.28,"w":"cold"},{"t":22.68,"w":"walk,"},{"t":23.06,"w":"same"},{"t":23.26,"w":"joints"},{"t":23.64,"w":"feelin'"},{"t":24.12,"w":"stiff"},{"t":24.39,"w":"Gym"},{"t":25.14,"w":"lights"},{"t":25.42,"w":"buzzin',"},{"t":25.9,"w":"bag"},{"t":26.32,"w":"on"},{"t":26.62,"w":"the"},{"t":26.76,"w":"floor"},{"t":27,"w":"I'm"},{"t":27.44,"w":"not"},{"t":27.66,"w":"in"},{"t":27.86,"w":"the"},{"t":28.02,"w":"mood,"},{"t":28.44,"w":"so"},{"t":28.56,"w":"I"},{"t":28.8,"w":"need"},{"t":29.08,"w":"it"},{"t":29.22,"w":"more"},{"t":29.44,"w":"First"},{"t":30.06,"w":"set"},{"t":30.4,"w":"ugly,"},{"t":30.88,"w":"second"},{"t":31.32,"w":"set"},{"t":31.6,"w":"clean"},{"t":31.96,"w":"Third"},{"t":32.44,"w":"set"},{"t":32.82,"w":"lookin'"},{"t":33.3,"w":"like"},{"t":33.42,"w":"I"},{"t":33.58,"w":"might"},{"t":33.8,"w":"get"},{"t":34.08,"w":"mean"},{"t":34.42,"w":"Hands"},{"t":35.1,"w":"on"},{"t":35.28,"w":"the"},{"t":35.4,"w":"bar,"},{"t":35.84,"w":"quick"},{"t":36.26,"w":"sharp"},{"t":36.56,"w":"white"},{"t":36.92,"w":"I"},{"t":37.14,"w":"don't"},{"t":37.38,"w":"trust"},{"t":37.48,"w":"motivation,"},{"t":38.32,"w":"I"},{"t":38.42,"w":"trust"},{"t":38.7,"w":"what"},{"t":38.98,"w":"I"},{"t":39.16,"w":"write"},{"t":39.46,"w":"Logbook"},{"t":40.3,"w":"open,"},{"t":40.84,"w":"numbers"},{"t":41.28,"w":"in"},{"t":41.46,"w":"ink"},{"t":41.78,"w":"Either"},{"t":42.14,"w":"add"},{"t":42.48,"w":"one"},{"t":42.74,"w":"rep"},{"t":43.1,"w":"or"},{"t":43.34,"w":"adjust"},{"t":43.58,"w":"how"},{"t":43.8,"w":"I"},{"t":43.96,"w":"think"},{"t":44.18,"w":"I'm"},{"t":44.5,"w":"not"},{"t":44.64,"w":"here"},{"t":44.92,"w":"flexin',"},{"t":45.68,"w":"I'm"},{"t":45.96,"w":"not"},{"t":46.16,"w":"here"},{"t":46.46,"w":"cute"},{"t":46.72,"w":"I"},{"t":46.92,"w":"came"},{"t":47.1,"w":"to"},{"t":47.22,"w":"tell"},{"t":47.42,"w":"myself"},{"t":47.6,"w":"to"},{"t":47.92,"w":"stop,"},{"t":48.26,"w":"shut"},{"t":48.5,"w":"up"},{"t":48.78,"w":"and"},{"t":49.02,"w":"move"},{"t":49.26,"w":"I"},{"t":49.82,"w":"keep"},{"t":50.2,"w":"pushin'"},{"t":50.64,"w":"to"},{"t":50.72,"w":"the"},{"t":50.88,"w":"arms,"},{"t":51.24,"w":"lock"},{"t":51.5,"w":"up"},{"t":51.65,"w":"to"},{"t":52,"w":"the"},{"t":52.14,"w":"lungs"},{"t":52.38,"w":"Burns"},{"t":52.66,"w":"high"},{"t":53.04,"w":"in"},{"t":53.24,"w":"the"},{"t":53.36,"w":"heartbeat,"},{"t":53.82,"w":"jump"},{"t":54.24,"w":"to"},{"t":54.44,"w":"the"},{"t":54.54,"w":"sweat"},{"t":54.82,"w":"Drip"},{"t":55.14,"w":"down"},{"t":55.46,"w":"in"},{"t":55.7,"w":"the"},{"t":55.8,"w":"vision"},{"t":56.1,"w":"blurb"},{"t":56.54,"w":"I"},{"t":56.74,"w":"don't"},{"t":57.12,"w":"care"},{"t":57.28,"w":"how"},{"t":57.58,"w":"bad"},{"t":57.96,"w":"that"},{"t":58.22,"w":"pressure"},{"t":58.56,"w":"hurt"},{"t":58.88,"w":"Another"},{"t":59.42,"w":"day,"},{"t":59.42,"w":"another"},{"t":59.42,"w":"day,"},{"t":59.42,"w":"another"},{"t":59.42,"w":"day"},{"t":59.44,"w":"Another"},{"t":59.58,"w":"set,"},{"t":59.8,"w":"another"},{"t":60.04,"w":"bait,"},{"t":60.42,"w":"another"},{"t":60.62,"w":"war"},{"t":61.02,"w":"Another"},{"t":61.66,"w":"voice"},{"t":62.28,"w":"in"},{"t":62.52,"w":"my"},{"t":62.64,"w":"head"},{"t":62.94,"w":"I"},{"t":63.14,"w":"ignore"},{"t":63.52,"w":"If"},{"t":64.22,"w":"I"},{"t":64.5,"w":"came"},{"t":64.78,"w":"this"},{"t":65.04,"w":"far,"},{"t":65.44,"w":"I"},{"t":65.68,"w":"ain't"},{"t":65.74,"w":"slowin'"},{"t":66.24,"w":"down"},{"t":66.46,"w":"I"},{"t":66.7,"w":"don't"},{"t":66.98,"w":"stop,"},{"t":67.32,"w":"I"},{"t":67.56,"w":"don't"},{"t":68.2,"w":"quit"},{"t":68.46,"w":"right"},{"t":68.74,"w":"now"},{"t":69.1,"w":"Yo,"},{"t":69.4,"w":"bitch"},{"t":69.72,"w":"feel"},{"t":69.98,"w":"heavy,"},{"t":70.4,"w":"good,"},{"t":70.74,"w":"let"},{"t":70.9,"w":"it"},{"t":71.1,"w":"be"},{"t":71.36,"w":"That's"},{"t":71.84,"w":"the"},{"t":71.92,"w":"same"},{"t":72.26,"w":"way"},{"t":72.52,"w":"you"},{"t":72.6,"w":"standin'"},{"t":72.92,"w":"between"},{"t":73.04,"w":"me"},{"t":73.44,"w":"and"},{"t":73.66,"w":"me"},{"t":73.9,"w":"Two"},{"t":74.34,"w":"plates"},{"t":74.68,"w":"talkin'"},{"t":75.12,"w":"like,"},{"t":75.38,"w":"you"},{"t":75.52,"w":"sure"},{"t":75.88,"w":"you"},{"t":76.16,"w":"him?"},{"t":76.76,"w":"I"},{"t":76.82,"w":"unrack"},{"t":77.48,"w":"slow"},{"t":77.74,"w":"with"},{"t":78.04,"w":"a"},{"t":78.14,"w":"shark"},{"t":78.46,"w":"fin"},{"t":78.7,"w":"grin"},{"t":79.19,"w":"Elbows"},{"t":79.94,"w":"tucked,"},{"t":80.36,"w":"chest"},{"t":80.6,"w":"tight,"},{"t":80.94,"w":"breath"},{"t":81.18,"w":"held"},{"t":81.6,"w":"World"},{"t":82.16,"w":"get"},{"t":82.38,"w":"quiet"},{"t":82.76,"w":"when"},{"t":83.02,"w":"the"},{"t":83.16,"w":"barbell"},{"t":83.6,"w":"fell"},{"t":84.14,"w":"Touch"},{"t":84.64,"w":"and"},{"t":84.82,"w":"press,"},{"t":85.2,"w":"no"},{"t":85.34,"w":"panic,"},{"t":85.92,"w":"no"},{"t":86.1,"w":"bounce"},{"t":86.52,"w":"That's"},{"t":86.76,"w":"one"},{"t":87.02,"w":"more"},{"t":87.4,"w":"reason"},{"t":87.74,"w":"I"},{"t":87.94,"w":"don't"},{"t":88.14,"w":"count"},{"t":88.24,"w":"myself"},{"t":88.58,"w":"out"},{"t":89.44,"w":"Squats"},{"t":89.7,"w":"on"},{"t":89.88,"w":"deck,"},{"t":90.26,"w":"legs"},{"t":90.58,"w":"already"},{"t":90.98,"w":"mad"},{"t":91.44,"w":"But"},{"t":91.82,"w":"I"},{"t":92.04,"w":"don't"},{"t":92.2,"w":"negotiate"},{"t":92.58,"w":"with"},{"t":92.92,"w":"habits"},{"t":93.28,"w":"I"},{"t":93.6,"w":"had"},{"t":93.94,"w":"Deep"},{"t":94.46,"w":"breath,"},{"t":94.96,"w":"brace,"},{"t":95.48,"w":"spine"},{"t":95.78,"w":"locked"},{"t":96.08,"w":"in"},{"t":96.7,"w":"Ain't"},{"t":97.1,"w":"in"},{"t":97.26,"w":"the"},{"t":97.38,"w":"hole,"},{"t":97.76,"w":"but"},{"t":97.9,"w":"I"},{"t":98.02,"w":"drive"},{"t":98.3,"w":"through"},{"t":98.52,"w":"it"},{"t":99.06,"w":"Deadlift,"},{"t":99.88,"w":"they"},{"t":100.08,"w":"got"},{"t":100.36,"w":"truth"},{"t":100.68,"w":"in"},{"t":100.86,"w":"steel"},{"t":101.14,"w":"You"},{"t":101.42,"w":"can't"},{"t":101.76,"w":"fake"},{"t":102.02,"w":"heart"},{"t":102.32,"w":"when"},{"t":102.68,"w":"the"},{"t":102.84,"w":"nerlin'"},{"t":103.26,"w":"feel"},{"t":103.48,"w":"real"},{"t":103.96,"w":"Boy,"},{"t":104.52,"w":"I"},{"t":104.66,"w":"don't"},{"t":104.8,"w":"care"},{"t":105.08,"w":"what"},{"t":105.34,"w":"excuse"},{"t":105.64,"w":"you"},{"t":105.98,"w":"brought"},{"t":106.24,"w":"It"},{"t":106.46,"w":"only"},{"t":106.7,"w":"moves"},{"t":107.04,"w":"when"},{"t":107.2,"w":"your"},{"t":107.38,"w":"whole"},{"t":107.56,"w":"soul"},{"t":107.92,"w":"talks"},{"t":108.38,"w":"I"},{"t":108.82,"w":"keep"},{"t":109.72,"w":"pushin'"},{"t":110.22,"w":"to"},{"t":110.28,"w":"the"},{"t":110.5,"w":"arms,"},{"t":110.84,"w":"lock"},{"t":111.04,"w":"up"},{"t":111.24,"w":"to"},{"t":111.58,"w":"the"},{"t":111.72,"w":"lungs"},{"t":111.98,"w":"Burns"},{"t":112.22,"w":"high"},{"t":112.6,"w":"in"},{"t":112.92,"w":"the"},{"t":112.92,"w":"heartbeat,"},{"t":113.52,"w":"jump"},{"t":113.82,"w":"to"},{"t":114.04,"w":"the"},{"t":114.18,"w":"sweat"},{"t":114.44,"w":"Drip"},{"t":114.78,"w":"down"},{"t":115.16,"w":"in"},{"t":115.34,"w":"the"},{"t":115.42,"w":"vision"},{"t":115.74,"w":"blurb"},{"t":116.1,"w":"I"},{"t":116.3,"w":"don't"},{"t":116.74,"w":"care"},{"t":116.94,"w":"how"},{"t":117.22,"w":"bad"},{"t":117.62,"w":"that"},{"t":117.86,"w":"pressure"},{"t":118.24,"w":"hurt"},{"t":118.52,"w":"Another"},{"t":119.06,"w":"set,"},{"t":119.42,"w":"another"},{"t":119.42,"w":"day,"},{"t":119.42,"w":"another"},{"t":119.42,"w":"day,"},{"t":119.42,"w":"another"},{"t":119.42,"w":"night"},{"t":119.44,"w":"Another"},{"t":119.6,"w":"blade,"},{"t":120.08,"w":"another"},{"t":120.26,"w":"war"},{"t":120.62,"w":"Another"},{"t":121.22,"w":"voice"},{"t":121.94,"w":"in"},{"t":122.2,"w":"my"},{"t":122.34,"w":"head"},{"t":122.64,"w":"I"},{"t":122.84,"w":"ignore"},{"t":123.09,"w":"If"},{"t":123.94,"w":"I"},{"t":124.18,"w":"came"},{"t":124.5,"w":"this"},{"t":124.74,"w":"far,"},{"t":125.18,"w":"ain't"},{"t":125.52,"w":"slowing"},{"t":125.72,"w":"down"},{"t":126.18,"w":"I"},{"t":126.44,"w":"don't"},{"t":126.7,"w":"stop,"},{"t":127.06,"w":"I"},{"t":127.4,"w":"don't"},{"t":127.9,"w":"quit"},{"t":128.14,"w":"right"},{"t":128.46,"w":"now"},{"t":128.8,"w":"Way"},{"t":129.44,"w":"in"},{"t":129.68,"w":"the"},{"t":129.8,"w":"shaker,"},{"t":130.18,"w":"meals"},{"t":130.7,"w":"in"},{"t":130.96,"w":"the"},{"t":131.06,"w":"bag"},{"t":131.38,"w":"Mack"},{"t":131.92,"w":"Roseborn,"},{"t":132.66,"w":"but"},{"t":132.78,"w":"the"},{"t":132.94,"w":"mirror"},{"t":133.16,"w":"don't"},{"t":133.6,"w":"cap"},{"t":133.78,"w":"Pacing"},{"t":134.5,"w":"late"},{"t":134.7,"w":"night,"},{"t":135.2,"w":"water"},{"t":135.66,"w":"all"},{"t":135.88,"w":"day"},{"t":136.28,"w":"Stretch"},{"t":136.82,"w":"when"},{"t":137.16,"w":"I'm"},{"t":137.32,"w":"stiff"},{"t":137.52,"w":"so"},{"t":137.78,"w":"I"},{"t":138.08,"w":"don't"},{"t":138.58,"w":"break"},{"t":138.78,"w":"Skull"},{"t":139.42,"w":"crushes"},{"t":139.82,"w":"burn,"},{"t":140.2,"w":"planks"},{"t":140.58,"w":"make"},{"t":140.82,"w":"me"},{"t":141.04,"w":"shake"},{"t":141.32,"w":"Crutches"},{"t":141.96,"w":"got"},{"t":142.16,"w":"fire"},{"t":142.52,"w":"running"},{"t":142.88,"w":"under"},{"t":143.14,"w":"my"},{"t":143.42,"w":"waist"},{"t":143.86,"w":"Push"},{"t":144.42,"w":"-ups"},{"t":144.66,"w":"after"},{"t":144.96,"w":"just"},{"t":145.28,"w":"to"},{"t":145.42,"w":"prove"},{"t":145.72,"w":"I'm"},{"t":146,"w":"sick"},{"t":146.3,"w":"Not"},{"t":146.54,"w":"sick"},{"t":146.96,"w":"like"},{"t":147.24,"w":"ill,"},{"t":147.58,"w":"sick"},{"t":147.94,"w":"like"},{"t":148.14,"w":"discipline"},{"t":148.54,"w":"This"},{"t":149.16,"w":"ain't"},{"t":149.48,"w":"about"},{"t":149.68,"w":"abs,"},{"t":150.22,"w":"this"},{"t":150.36,"w":"ain't"},{"t":150.7,"w":"about"},{"t":150.98,"w":"arms"},{"t":151.42,"w":"This"},{"t":151.74,"w":"about"},{"t":152.12,"w":"keeping"},{"t":152.54,"w":"one"},{"t":152.8,"w":"promise"},{"t":153.22,"w":"through"},{"t":153.46,"w":"storms"},{"t":153.94,"w":"This"},{"t":154.28,"w":"about"},{"t":154.72,"w":"becoming"},{"t":155.2,"w":"the"},{"t":155.48,"w":"proof"},{"t":155.7,"w":"I"},{"t":156,"w":"need"},{"t":156.28,"w":"When"},{"t":156.56,"w":"my"},{"t":156.72,"w":"own"},{"t":157,"w":"damn"},{"t":157.3,"w":"mind"},{"t":157.6,"w":"start"},{"t":157.86,"w":"testing"},{"t":158.36,"w":"me"},{"t":158.74,"w":"No"},{"t":159.12,"w":"perfect"},{"t":159.62,"w":"week,"},{"t":160.04,"w":"no"},{"t":160.36,"w":"perfect"},{"t":160.84,"w":"mood"},{"t":161.26,"w":"You"},{"t":161.5,"w":"see,"},{"t":161.76,"w":"perfect"},{"t":162.08,"w":"days"},{"t":162.58,"w":"where"},{"t":162.78,"w":"I"},{"t":162.9,"w":"still"},{"t":163.04,"w":"follow"},{"t":163.4,"w":"through"},{"t":163.74,"w":"I"},{"t":164.16,"w":"don't"},{"t":164.48,"w":"need"},{"t":164.64,"w":"applause,"},{"t":165.36,"w":"I"},{"t":165.54,"w":"don't"},{"t":165.72,"w":"need"},{"t":165.9,"w":"a"},{"t":166.06,"w":"crutch"},{"t":166.36,"w":"I"},{"t":166.5,"w":"need"},{"t":166.76,"w":"one"},{"t":167.12,"w":"more"},{"t":167.44,"w":"rep"},{"t":167.78,"w":"when"},{"t":168.02,"w":"I"},{"t":168.16,"w":"wanna"},{"t":168.38,"w":"sit"},{"t":168.66,"w":"down"},{"t":169.04,"w":"I"},{"t":169.48,"w":"keep"},{"t":169.94,"w":"pushing"},{"t":170.36,"w":"till"},{"t":170.54,"w":"the"},{"t":170.74,"w":"arms"},{"t":171,"w":"lock"},{"t":171.22,"w":"up"},{"t":171.52,"w":"Till"},{"t":171.82,"w":"the"},{"t":172,"w":"lungs"},{"t":172.24,"w":"burn"},{"t":172.5,"w":"dry"},{"t":172.82,"w":"and"},{"t":173.1,"w":"the"},{"t":173.22,"w":"heart"},{"t":173.48,"w":"beat"},{"t":173.74,"w":"jump"},{"t":174.08,"w":"Till"},{"t":174.36,"w":"the"},{"t":174.52,"w":"sweat"},{"t":174.76,"w":"drip"},{"t":175.06,"w":"down"},{"t":175.4,"w":"in"},{"t":175.68,"w":"the"},{"t":175.78,"w":"vision"},{"t":176.08,"w":"book"},{"t":176.28,"w":"I"},{"t":176.99,"w":"don't"},{"t":177.12,"w":"care"},{"t":177.3,"w":"how"},{"t":177.58,"w":"bad"},{"t":178,"w":"that"},{"t":178.24,"w":"pressure"},{"t":178.54,"w":"Another"},{"t":179.36,"w":"set,"},{"t":179.88,"w":"another"},{"t":180.1,"w":"beat,"},{"t":180.5,"w":"another"},{"t":180.7,"w":"war"},{"t":181.1,"w":"Another"},{"t":181.9,"w":"voice"},{"t":182.38,"w":"in"},{"t":182.66,"w":"my"},{"t":182.78,"w":"head"},{"t":183.1,"w":"I"},{"t":183.3,"w":"ignore"},{"t":183.74,"w":"If"},{"t":184.51,"w":"I"},{"t":184.72,"w":"came"},{"t":185.04,"w":"this"},{"t":185.3,"w":"far,"},{"t":185.7,"w":"I"},{"t":185.82,"w":"ain't"},{"t":185.96,"w":"slowing"},{"t":186.26,"w":"down"},{"t":186.68,"w":"I"},{"t":186.86,"w":"don't"},{"t":187.24,"w":"stop,"},{"t":187.6,"w":"I"},{"t":188.19,"w":"quit"},{"t":188.52,"w":"right"},{"t":189.04,"w":"now"},{"t":189.4,"w":"I"},{"t":189.52,"w":"picture"},{"t":189.78,"w":"summer,"},{"t":190.26,"w":"but"},{"t":190.8,"w":"I"},{"t":191,"w":"don't"},{"t":191.18,"w":"daydream"},{"t":191.7,"w":"I"},{"t":192,"w":"put"},{"t":192.22,"w":"that"},{"t":192.4,"w":"beach"},{"t":192.66,"w":"body"},{"t":192.9,"w":"under"},{"t":193.28,"w":"a"},{"t":193.46,"w":"machine"},{"t":193.8,"w":"I"},{"t":194.46,"w":"put"},{"t":194.74,"w":"that"},{"t":194.92,"w":"cocktail"},{"t":195.36,"w":"far"},{"t":195.72,"w":"down"},{"t":196.22,"w":"the"},{"t":196.46,"w":"road"},{"t":196.8,"w":"I"},{"t":197.1,"w":"put"},{"t":197.28,"w":"the"},{"t":197.46,"w":"day's"},{"t":197.78,"w":"work"},{"t":198.04,"w":"where"},{"t":198.26,"w":"excuses"},{"t":198.58,"w":"go"},{"t":199.24,"w":"Money"},{"t":199.64,"w":"right,"},{"t":200.02,"w":"mind"},{"t":200.22,"w":"right,"},{"t":200.64,"w":"body"},{"t":200.88,"w":"getting"},{"t":201.18,"w":"shot"},{"t":201.54,"w":"Cold"},{"t":202.24,"w":"on"},{"t":202.46,"w":"the"},{"t":202.56,"w":"screen"},{"t":202.86,"w":"after"},{"t":203.16,"w":"reps"},{"t":203.5,"w":"in"},{"t":203.74,"w":"the"},{"t":203.86,"w":"dark"},{"t":204.14,"w":"Not"},{"t":204.5,"w":"trying"},{"t":204.78,"w":"to"},{"t":204.92,"w":"be"},{"t":205.06,"w":"perfect,"},{"t":205.66,"w":"trying"},{"t":206.06,"w":"to"},{"t":206.18,"w":"be"},{"t":206.28,"w":"dangerous"},{"t":207.24,"w":"Trying"},{"t":207.64,"w":"to"},{"t":207.8,"w":"walk"},{"t":208.08,"w":"it,"},{"t":208.36,"w":"trying"},{"t":208.52,"w":"to"},{"t":208.52,"w":"walk"},{"t":208.52,"w":"it"},{"t":208.58,"w":"Like"},{"t":208.8,"w":"pressure"},{"t":209.16,"w":"makes"},{"t":209.64,"w":"sense"},{"t":209.98,"w":"Some"},{"t":210.26,"w":"days"},{"t":210.62,"w":"I'm"},{"t":210.94,"w":"strong,"},{"t":211.42,"w":"some"},{"t":211.52,"w":"days"},{"t":211.88,"w":"I"},{"t":212.24,"w":"run"},{"t":212.48,"w":"Some"},{"t":212.82,"w":"days"},{"t":213.2,"w":"just"},{"t":213.52,"w":"showing"},{"t":213.92,"w":"up"},{"t":214.18,"w":"wins"},{"t":214.48,"w":"it"},{"t":214.8,"w":"all"},{"t":214.98,"w":"But"},{"t":215.26,"w":"skip"},{"t":215.72,"w":"too"},{"t":216.06,"w":"much"},{"t":216.54,"w":"and"},{"t":216.74,"w":"the"},{"t":216.88,"w":"old"},{"t":217.12,"w":"me"},{"t":217.42,"w":"grows"},{"t":217.72,"w":"So"},{"t":218,"w":"I"},{"t":218.2,"w":"cut"},{"t":218.42,"w":"that"},{"t":218.76,"w":"off"},{"t":219.04,"w":"before"},{"t":219.48,"w":"it"},{"t":219.8,"w":"gets"},{"t":220.1,"w":"close"},{"t":220.4,"w":"I"},{"t":220.68,"w":"know"},{"t":220.96,"w":"that"},{"t":221.36,"w":"voice,"},{"t":221.74,"w":"I"},{"t":222.02,"w":"know"},{"t":222.3,"w":"that"},{"t":222.52,"w":"trap"},{"t":222.88,"w":"Take"},{"t":223.26,"w":"one"},{"t":223.64,"w":"day,"},{"t":224.12,"w":"then"},{"t":224.6,"w":"the"},{"t":224.76,"w":"hunger"},{"t":225.04,"w":"goes"},{"t":225.26,"w":"flat"},{"t":225.64,"w":"Now,"},{"t":226.06,"w":"now"},{"t":226.52,"w":"today,"},{"t":227.06,"w":"now"},{"t":227.42,"w":"this"},{"t":227.74,"w":"round"},{"t":228,"w":"I"},{"t":228.18,"w":"came"},{"t":228.64,"w":"inside,"},{"t":229.48,"w":"believe"},{"t":229.92,"w":"with"},{"t":230.22,"w":"the"},{"t":230.4,"w":"crown"},{"t":230.62,"w":"I"},{"t":231.14,"w":"keep"},{"t":231.88,"w":"pushing"},{"t":232.36,"w":"till"},{"t":232.56,"w":"the"},{"t":232.74,"w":"arms"},{"t":233.06,"w":"lock"},{"t":233.32,"w":"up"},{"t":233.6,"w":"Till"},{"t":233.9,"w":"the"},{"t":234.08,"w":"lungs"},{"t":234.32,"w":"burn"},{"t":234.62,"w":"dry"},{"t":234.96,"w":"and"},{"t":235.26,"w":"the"},{"t":235.4,"w":"heart"},{"t":235.68,"w":"beat"},{"t":235.98,"w":"jump"},{"t":236.36,"w":"Till"},{"t":236.64,"w":"the"},{"t":236.8,"w":"sweat"},{"t":237.1,"w":"drip"},{"t":237.4,"w":"down"},{"t":237.74,"w":"in"},{"t":238.04,"w":"the"},{"t":238.18,"w":"vision"},{"t":238.48,"w":"book"},{"t":238.52,"w":"I"},{"t":239.17,"w":"don't"},{"t":239.64,"w":"care"},{"t":239.88,"w":"how"},{"t":240.16,"w":"bad"},{"t":240.54,"w":"that"},{"t":240.86,"w":"pressure"},{"t":241.22,"w":"hurt"},{"t":241.56,"w":"Another"},{"t":242.22,"w":"set,"},{"t":242.64,"w":"another"},{"t":242.88,"w":"beat,"},{"t":243.32,"w":"another"},{"t":243.5,"w":"war"},{"t":243.94,"w":"Another"},{"t":244.5,"w":"voice"},{"t":245.36,"w":"in"},{"t":245.62,"w":"my"},{"t":245.76,"w":"head"},{"t":246.12,"w":"I"},{"t":246.3,"w":"ignore"},{"t":246.79,"w":"If"},{"t":247.54,"w":"I"},{"t":247.78,"w":"came"},{"t":248.12,"w":"this"},{"t":248.4,"w":"far,"},{"t":248.82,"w":"I'd"},{"t":249,"w":"slow"},{"t":249.3,"w":"it"},{"t":249.64,"w":"down"},{"t":249.94,"w":"I"},{"t":250.2,"w":"don't"},{"t":250.44,"w":"stop,"},{"t":250.88,"w":"I"},{"t":251.39,"w":"don't"},{"t":251.9,"w":"quit"},{"t":252.1,"w":"right"},{"t":252.46,"w":"now"},{"t":252.82,"w":"No"},{"t":253.16,"w":"speech,"},{"t":253.8,"w":"no"},{"t":254.4,"w":"excuses"},{"t":256.68,"w":"One"},{"t":257.32,"w":"more"},{"t":257.96,"w":"rap,"},{"t":258.48,"w":"then"},{"t":258.58,"w":"another,"},{"t":259.08,"w":"then"},{"t":259.28,"w":"another"},{"t":259.6,"w":"Then"},{"t":259.96,"w":"another,"},{"t":263.3,"w":"then"},{"t":263.46,"w":"another"}]}$j$::jsonb WHERE id = 'i-don-t-quit-right-now' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Yeah, yeah,
+[00:02.76] uh,
+[00:04.54] uh,
+[00:05.16] yeah,
+[00:06.46] uh
+[00:09.50] Beat drop, shoes tied, hood up, door slammed
+[Verse 1]
+[00:12.14] Still half-tied, but I move like a grown man
+[00:14.92] No speech, no height, no coach in my ear
+[00:17.14] Just that old weak voice that I came here to kill
+[00:19.71] I don't feel ready, that's the point of it
+[00:21.84] Same cold walk, same joints feelin' stiff
+[00:24.37] Gym lights buzzin', bag on the floor
+[00:26.98] I'm not in the mood, so I need it more
+[00:29.42] First set ugly, second set clean
+[00:31.94] Third set lookin' like I might get mean
+[00:34.40] Hands on the bar, quick sharp white
+[00:36.90] I don't trust motivation, I trust what I write
+[00:39.44] Logbook open, numbers in ink
+[00:41.76] Either add one rep or adjust how I think
+[00:44.16] I'm not here flexin', I'm not here cute
+[00:46.70] I came to tell myself to stop, shut up and move
+[Chorus]
+[00:49.24] I keep pushin' to the arms, lock up to the lungs
+[00:52.36] Burns high in the heartbeat, jump to the sweat
+[00:54.80] Drip down in the vision blurb
+[00:56.52] I don't care how bad that pressure hurt
+[00:58.86] Another day, another day, another day
+[00:59.42] Another set, another bait, another war
+[01:00.00] Another voice in my head I ignore
+[01:03.50] If I came this far, I ain't slowin' down
+[01:06.44] I don't stop, I don't quit right now
+[Bridge]
+[01:09.08] Yo, bitch feel heavy, good, let it be
+[01:11.34] That's the same way you standin' between me and me
+[01:13.88] Two plates talkin' like, you sure you him?
+[01:16.74] I unrack slow with a shark fin grin
+[01:19.17] Elbows tucked, chest tight, breath held
+[01:21.58] World get quiet when the barbell fell
+[01:24.12] Touch and press, no panic, no bounce
+[01:26.50] That's one more reason I don't count myself out
+[01:29.42] Squats on deck, legs already mad
+[01:31.42] But I don't negotiate with habits I had
+[01:33.92] Deep breath, brace, spine locked in
+[01:36.68] Ain't in the hole, but I drive through it
+[01:39.04] Deadlift, they got truth in steel
+[01:41.12] You can't fake heart when the nerlin' feel real
+[01:43.94] Boy, I don't care what excuse you brought
+[01:46.22] It only moves when your whole soul talks
+[01:48.36] I keep pushin' to the arms, lock up to the lungs
+[Verse 2]
+[01:51.96] Burns high in the heartbeat, jump to the sweat
+[01:54.42] Drip down in the vision blurb
+[01:56.08] I don't care how bad that pressure hurt
+[01:58.50] Another set,
+[01:59.40] another day,
+[01:59.40] another day,
+[01:59.40] another night
+[01:59.42] Another blade, another war
+[02:00.60] Another voice in my head I ignore
+[02:03.07] If I came this far, ain't slowing down
+[02:06.16] I don't stop, I don't quit right now
+[Chorus]
+[02:08.78] Way in the shaker, meals in the bag
+[02:11.36] Mack Roseborn, but the mirror don't cap
+[02:13.76] Pacing late night, water all day
+[02:16.26] Stretch when I'm stiff so I don't break
+[Bridge]
+[02:18.76] Skull crushes burn, planks make me shake
+[02:21.30] Crutches got fire running under my waist
+[02:23.84] Push-ups after just to prove I'm sick
+[02:26.28] Not sick like ill, sick like discipline
+[02:28.52] This ain't about abs, this ain't about arms
+[02:31.40] This about keeping one promise through storms
+[02:33.92] This about becoming the proof I need
+[02:36.26] When my own damn mind start testing me
+[02:38.72] No perfect week, no perfect mood
+[02:41.24] You see,
+[02:41.74] perfect days where I still follow through
+[02:43.72] I don't need applause, I don't need a crutch
+[02:46.34] I need one more rep when I wanna sit down
+[02:49.02] I keep pushing till the arms lock up
+[02:51.50] Till the lungs burn dry and the heart beat jump
+[02:54.06] Till the sweat drip down in the vision book
+[02:56.26] I don't care how bad that pressure
+[02:58.52] Another set, another beat, another war
+[03:01.08] Another voice in my head I ignore
+[03:03.72] If I came this far, I ain't slowing down
+[03:06.66] I don't stop, I quit right now
+[03:09.38] I picture summer, but I don't daydream
+[03:11.68] I put that beach body under a machine
+[03:13.78] I put that cocktail far down the road
+[03:16.78] I put the day's work where excuses go
+[03:19.22] Money right, mind right, body getting shot
+[03:21.52] Cold on the screen after reps in the dark
+[03:24.12] Not trying to be perfect, trying to be dangerous
+[03:27.22] Trying to walk it, trying to walk it
+[03:28.55] Like pressure makes sense
+[03:29.96] Some days I'm strong, some days I run
+[03:32.46] Some days just showing up wins it all
+[03:34.96] But skip too much and the old me grows
+[03:37.70] So I cut that off before it gets close
+[03:40.38] I know that voice, I know that trap
+[03:42.86] Take one day, then the hunger goes flat
+[03:45.62] Now, now today, now this round
+[03:47.98] I came inside, believe with the crown
+[03:50.60] I keep pushing till the arms lock up
+[Drop]
+[03:53.58] Till the lungs burn dry and the heart beat jump
+[03:56.34] Till the sweat drip down in the vision book
+[03:58.50] I don't care how bad that pressure hurt
+[Outro]
+[04:01.54] Another set, another beat, another war
+[04:03.92] Another voice in my head I ignore
+[04:06.77] If I came this far, I'd slow it down
+[04:09.92] I don't stop, I don't quit right now
+[04:12.80] No speech, no excuses
+[04:16.66] One more rap, then another, then another
+[04:19.58] Then another, then another
+$j$ WHERE id = 'i-don-t-quit-right-now' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This gritty hip-hop track captures the raw, internal struggle and relentless determination of a dedicated lifter fighting exhaustion and negative self-talk in the gym. It portrays discipline not as an act for others but as a solitary war against one's own limiting beliefs.","overallMood":"Relentless Grit","themes":["Internal Discipline vs. External Pressure","Somatic Pain as Proof of Progress","Rejection of Excuses and Distractions","Solitary War Against Self-Doubt","The Physiology of Endurance (Burn, Lock, Drip)","Transformation Through Repetition"],"palette":["#1A0F0D","#5C2E26","#8B4738","#FFCC99"],"sections":[{"name":"Intro","emotion":"Tense Anticipation","intensity":0.75,"colorHint":"#1a0f0d","keywords":[],"start":0},{"name":"Verse 1","emotion":"Controlled Aggression","intensity":0.77,"colorHint":"#5c2e26","keywords":[{"word":"ugly","emotion":"Uncomfortable Honesty","imageryPrompt":"A dim gym light flickering over a pair of hands gripping heavy iron, skin flushed with sweat, the texture of cold metal and rough concrete floor."},{"word":"trust","emotion":"Relentless Faith","imageryPrompt":"Close-up of ink drying on a logbook page next to a calloused thumb, surrounded by shadows that represent doubt being cast aside."}],"start":12.14},{"name":"Chorus","emotion":"Overwhelming Pressure","intensity":0.9,"colorHint":"#8b4738","keywords":[{"word":"burns","emotion":"Intense Heat","imageryPrompt":"A heartbeat visualized as a glowing ember inside the chest cavity, radiating heat that turns sweat into steam in a dark room."},{"word":"pressure","emotion":"Crushing Weight","imageryPrompt":"Heavy steel plates stacked high creating a tunnel of darkness where only the silhouette of a determined figure stands, shoulders bowing under immense load."}],"start":49.24},{"name":"Bridge 1","emotion":"Meditative Focus","intensity":0.66,"colorHint":"#5c2e26","keywords":[{"word":"quiet","emotion":"Deep Silence","imageryPrompt":"The sudden cessation of background noise as a barbell drops, leaving only the sound of heavy breathing and the rhythmic thud of feet on rubber mats."},{"word":"truth","emotion":"Revelatory Clarity","imageryPrompt":"Steel cables under tension reflecting cold light in a dark warehouse, symbolizing unshakeable reality amidst internal chaos."}],"start":69.08},{"name":"Verse 2","emotion":"Relentless Drive","intensity":0.76,"colorHint":"#6d3b35","keywords":[{"word":"ignore","emotion":"Willful Dismissal","imageryPrompt":"A mental filter overlaying a chaotic room of distractions, leaving only the sharp focus on a single rep being completed."},{"word":"dangerous","emotion":"Fierce Ambition","imageryPrompt":"Shadows stretching long across gym equipment as an athlete pushes beyond known limits, eyes narrowed in predatory determination."}],"start":111.96},{"name":"Chorus 2","emotion":"Sustained Intensity","intensity":0.54,"colorHint":"#ffcc99","keywords":[],"start":128.78},{"name":"Bridge 2","emotion":"Defiant Resilience","intensity":0.32,"colorHint":"#5c2e26","keywords":[{"word":"discipline","emotion":"Stoic Strength","imageryPrompt":"A cracked concrete floor reflecting a single determined eye, surrounded by the ghostly echoes of past failures that are being stepped over."},{"word":"storms","emotion":"Chaos Management","imageryPrompt":"Internal turbulence visualized as swirling dark clouds above a grounded figure holding an iron bar steady against gale-force winds inside the gym."}],"start":138.76},{"name":"Drop","emotion":"Cathartic Release","intensity":0.29,"colorHint":"#ffcc99","keywords":[{"word":"pressure","emotion":"Explosive Force","imageryPrompt":"The moment the chest compresses fully under a squat rack, veins popping like tectonic plates shifting in slow motion against dark skin."}],"start":233.58},{"name":"Outro","emotion":"Fading Determination","intensity":0.08,"colorHint":"#1a0f0d","keywords":[{"word":"crown","emotion":"Self-Crowned Victory","imageryPrompt":"The gleam of a medal made not of gold but of calluses and sweat, resting on the head as darkness slowly returns to the gym."}],"start":241.54}],"keywords":[{"word":"pressure","emotion":"Crushing Weight","imageryPrompt":"Heavy steel plates stacked high creating a tunnel of darkness where only the silhouette of a determined figure stands, shoulders bowing under immense load."},{"word":"burns","emotion":"Intense Heat","imageryPrompt":"A heartbeat visualized as a glowing ember inside the chest cavity, radiating heat that turns sweat into steam in a dark room."},{"word":"discipline","emotion":"Stoic Strength","imageryPrompt":"A cracked concrete floor reflecting a single determined eye, surrounded by the ghostly echoes of past failures that are being stepped over."},{"word":"ugly","emotion":"Uncomfortable Honesty","imageryPrompt":"A dim gym light flickering over a pair of hands gripping heavy iron, skin flushed with sweat, the texture of cold metal and rough concrete floor."},{"word":"dangerous","emotion":"Fierce Ambition","imageryPrompt":"Shadows stretching long across gym equipment as an athlete pushes beyond known limits, eyes narrowed in predatory determination."},{"word":"trust","emotion":"Relentless Faith","imageryPrompt":"Close-up of ink drying on a logbook page next to a calloused thumb, surrounded by shadows that represent doubt being cast aside."}]}$j$::jsonb) WHERE id = 'i-don-t-quit-right-now' AND planet->'analysis' IS NULL;
+
+-- i-m-that-somebody: 591 words, 8 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":6.16,"w":"You"},{"t":6.72,"w":"asking"},{"t":7.04,"w":"the"},{"t":7.18,"w":"question,"},{"t":8.48,"w":"I"},{"t":9.22,"w":"already"},{"t":9.48,"w":"had"},{"t":9.76,"w":"the"},{"t":9.86,"w":"answer,"},{"t":10.28,"w":"listen,"},{"t":10.88,"w":"listen"},{"t":11.48,"w":"You"},{"t":12.08,"w":"been"},{"t":12.3,"w":"moving"},{"t":12.56,"w":"cautious"},{"t":12.9,"w":"like"},{"t":13.12,"w":"the"},{"t":13.28,"w":"boom"},{"t":13.5,"w":"got"},{"t":13.74,"w":"eyes"},{"t":14.16,"w":"Like"},{"t":14.34,"w":"the"},{"t":14.54,"w":"balls"},{"t":14.8,"w":"might"},{"t":15.02,"w":"talk,"},{"t":15.48,"w":"like"},{"t":15.62,"w":"the"},{"t":15.76,"w":"night"},{"t":15.96,"w":"got"},{"t":16.2,"w":"spies"},{"t":16.54,"w":"I"},{"t":16.9,"w":"see"},{"t":17.18,"w":"how"},{"t":17.42,"w":"you"},{"t":17.6,"w":"look"},{"t":17.84,"w":"when"},{"t":18.08,"w":"the"},{"t":18.24,"w":"baseline"},{"t":18.66,"w":"drops"},{"t":19.06,"w":"Half"},{"t":19.38,"w":"a"},{"t":19.48,"w":"smile"},{"t":19.74,"w":"on"},{"t":19.98,"w":"your"},{"t":20.06,"w":"face,"},{"t":20.44,"w":"then"},{"t":20.54,"w":"you"},{"t":20.7,"w":"tell"},{"t":20.92,"w":"me"},{"t":21.14,"w":"stop"},{"t":21.48,"w":"You"},{"t":22.16,"w":"got"},{"t":22.46,"w":"secrets"},{"t":22.86,"w":"in"},{"t":23.08,"w":"your"},{"t":23.22,"w":"rhythm,"},{"t":23.56,"w":"little"},{"t":23.76,"w":"warnings"},{"t":24.16,"w":"in"},{"t":24.32,"w":"your"},{"t":24.44,"w":"tone"},{"t":24.72,"w":"But"},{"t":25.08,"w":"I'm"},{"t":25.28,"w":"not"},{"t":25.42,"w":"here"},{"t":25.58,"w":"to"},{"t":25.72,"w":"run"},{"t":25.9,"w":"it,"},{"t":26.1,"w":"I'm"},{"t":26.26,"w":"here"},{"t":26.46,"w":"to"},{"t":26.64,"w":"bring"},{"t":26.82,"w":"it"},{"t":26.98,"w":"home"},{"t":27.32,"w":"I"},{"t":28.02,"w":"won't"},{"t":29.38,"w":"let"},{"t":29.62,"w":"this"},{"t":29.94,"w":"show"},{"t":30.38,"w":"Won't"},{"t":30.98,"w":"tell"},{"t":31.16,"w":"a"},{"t":31.3,"w":"soul,"},{"t":31.68,"w":"not"},{"t":31.86,"w":"anybody"},{"t":32.3,"w":"I"},{"t":32.8,"w":"know"},{"t":33.94,"w":"how"},{"t":34.64,"w":"this"},{"t":34.94,"w":"go"},{"t":35.45,"w":"Keep"},{"t":36,"w":"it"},{"t":36.26,"w":"locked,"},{"t":36.54,"w":"keep"},{"t":36.74,"w":"it"},{"t":36.9,"w":"quiet,"},{"t":37.28,"w":"nobody"},{"t":37.68,"w":"If"},{"t":38.3,"w":"you"},{"t":38.4,"w":"let"},{"t":38.6,"w":"me"},{"t":38.78,"w":"lose"},{"t":39.06,"w":"I"},{"t":39.42,"w":"won't"},{"t":39.68,"w":"make"},{"t":39.82,"w":"it"},{"t":40,"w":"public,"},{"t":40.42,"w":"no"},{"t":40.93,"w":"If"},{"t":41.58,"w":"you"},{"t":42.04,"w":"let"},{"t":42.3,"w":"me"},{"t":42.48,"w":"know"},{"t":42.74,"w":"I"},{"t":43.14,"w":"won't"},{"t":43.48,"w":"tell"},{"t":43.6,"w":"nobody"},{"t":43.9,"w":"I'm"},{"t":44.66,"w":"talking"},{"t":44.92,"w":"nobody"},{"t":45.38,"w":"You"},{"t":46.46,"w":"already"},{"t":47.02,"w":"know"},{"t":47.66,"w":"You"},{"t":48.06,"w":"said"},{"t":48.4,"w":"you"},{"t":48.72,"w":"need"},{"t":48.86,"w":"somebody"},{"t":49.87,"w":"I"},{"t":50.24,"w":"said"},{"t":50.48,"w":"I'd"},{"t":50.7,"w":"be"},{"t":50.94,"w":"that"},{"t":51.34,"w":"somebody"},{"t":52.48,"w":"Say"},{"t":52.96,"w":"less,"},{"t":53.38,"w":"don't"},{"t":53.9,"w":"say"},{"t":54.12,"w":"no"},{"t":54.46,"w":"You"},{"t":54.98,"w":"don't"},{"t":55.32,"w":"gotta"},{"t":55.46,"w":"need"},{"t":55.72,"w":"somebody"},{"t":56.32,"w":"I'm"},{"t":57.02,"w":"right"},{"t":57.3,"w":"here"},{"t":58.3,"w":"I'm"},{"t":59.14,"w":"that"},{"t":59.4,"w":"somebody"},{"t":60.3,"w":"You"},{"t":61.14,"w":"already"},{"t":61.8,"w":"know"},{"t":62.58,"w":"You"},{"t":62.98,"w":"said"},{"t":63.38,"w":"you"},{"t":63.64,"w":"need"},{"t":63.8,"w":"somebody"},{"t":64.68,"w":"I"},{"t":65.1,"w":"said"},{"t":65.38,"w":"I'd"},{"t":65.6,"w":"be"},{"t":65.88,"w":"that"},{"t":66.26,"w":"somebody"},{"t":67.38,"w":"Say"},{"t":67.86,"w":"less,"},{"t":68.34,"w":"don't"},{"t":68.88,"w":"say"},{"t":69.06,"w":"no"},{"t":69.38,"w":"You"},{"t":69.9,"w":"don't"},{"t":70.24,"w":"gotta"},{"t":70.38,"w":"need"},{"t":70.62,"w":"somebody"},{"t":71.14,"w":"I'm"},{"t":71.94,"w":"right"},{"t":72.26,"w":"here"},{"t":73.64,"w":"I'm"},{"t":74.12,"w":"that"},{"t":74.4,"w":"somebody"},{"t":75.94,"w":"That"},{"t":76.78,"w":"somebody"},{"t":80.56,"w":"I'll"},{"t":81.4,"w":"be"},{"t":81.48,"w":"that"},{"t":81.78,"w":"somebody"},{"t":83.12,"w":"Nobody,"},{"t":84.22,"w":"nobody"},{"t":84.56,"w":"I"},{"t":85.09,"w":"won't"},{"t":85.98,"w":"tell"},{"t":86.22,"w":"nobody"},{"t":87.16,"w":"You"},{"t":87.26,"w":"already"},{"t":87.3,"w":"know"},{"t":87.32,"w":"Asked"},{"t":87.68,"w":"if"},{"t":87.74,"w":"I'm"},{"t":87.9,"w":"steady,"},{"t":88.2,"w":"girl,"},{"t":88.42,"w":"you"},{"t":88.5,"w":"know"},{"t":88.66,"w":"I"},{"t":88.84,"w":"don't"},{"t":89.12,"w":"fold"},{"t":89.36,"w":"I"},{"t":89.88,"w":"don't"},{"t":90.14,"w":"move,"},{"t":90.36,"w":"but"},{"t":90.52,"w":"I"},{"t":90.76,"w":"don't"},{"t":91,"w":"speak"},{"t":91.12,"w":"what"},{"t":91.34,"w":"I'm"},{"t":91.54,"w":"told"},{"t":91.9,"w":"You"},{"t":92.36,"w":"can"},{"t":92.48,"w":"test"},{"t":92.7,"w":"my"},{"t":92.86,"w":"patience,"},{"t":93.22,"w":"you"},{"t":93.3,"w":"can"},{"t":93.44,"w":"check"},{"t":93.68,"w":"my"},{"t":93.96,"w":"pad"},{"t":94.3,"w":"I'll"},{"t":94.62,"w":"still"},{"t":94.82,"w":"keep"},{"t":95.18,"w":"your"},{"t":95.36,"w":"name"},{"t":95.5,"w":"on"},{"t":95.8,"w":"the"},{"t":95.92,"w":"safer"},{"t":96.28,"w":"side"},{"t":96.85,"w":"You"},{"t":97.3,"w":"don't"},{"t":97.62,"w":"need"},{"t":97.7,"w":"a"},{"t":97.86,"w":"rumor,"},{"t":98.12,"w":"you"},{"t":98.26,"w":"don't"},{"t":98.5,"w":"need"},{"t":98.62,"w":"a"},{"t":98.8,"w":"scene"},{"t":99.48,"w":"You"},{"t":99.68,"w":"need"},{"t":99.82,"w":"somebody"},{"t":100.14,"w":"solid"},{"t":100.5,"w":"when"},{"t":100.78,"w":"the"},{"t":100.92,"w":"lights"},{"t":101.18,"w":"go"},{"t":101.38,"w":"green"},{"t":101.74,"w":"And"},{"t":101.88,"w":"if"},{"t":102.04,"w":"the"},{"t":102.18,"w":"world"},{"t":102.5,"w":"gets"},{"t":102.7,"w":"loud,"},{"t":103.06,"w":"I'll"},{"t":103.18,"w":"turn"},{"t":103.3,"w":"the"},{"t":103.46,"w":"noise"},{"t":103.7,"w":"down"},{"t":103.94,"w":"low"},{"t":104.18,"w":"Put"},{"t":104.48,"w":"your"},{"t":104.64,"w":"trust"},{"t":104.92,"w":"in"},{"t":105.14,"w":"my"},{"t":105.28,"w":"hands"},{"t":105.5,"w":"and"},{"t":105.64,"w":"I"},{"t":105.76,"w":"won't"},{"t":106.02,"w":"let"},{"t":106.26,"w":"it"},{"t":106.44,"w":"grow"},{"t":106.64,"w":"You"},{"t":107.36,"w":"know"},{"t":108.52,"w":"I'm"},{"t":109.34,"w":"responsible"},{"t":110.33,"w":"You"},{"t":110.78,"w":"ain't"},{"t":110.92,"w":"gotta"},{"t":111.08,"w":"watch"},{"t":111.34,"w":"your"},{"t":111.52,"w":"back"},{"t":111.7,"w":"when"},{"t":111.88,"w":"I'm"},{"t":112.06,"w":"beside"},{"t":112.28,"w":"you"},{"t":112.64,"w":"You"},{"t":112.96,"w":"know"},{"t":113.58,"w":"I'm"},{"t":114.36,"w":"responsible"},{"t":115.18,"w":"I"},{"t":115.68,"w":"don't"},{"t":115.88,"w":"need"},{"t":116,"w":"the"},{"t":116.14,"w":"spotlight"},{"t":116.52,"w":"just"},{"t":116.9,"w":"to"},{"t":117.1,"w":"hide"},{"t":117.3,"w":"it"},{"t":117.3,"w":"from"},{"t":117.3,"w":"you"},{"t":117.3,"w":"You're"},{"t":118.04,"w":"not"},{"t":118.14,"w":"just"},{"t":118.36,"w":"anybody"},{"t":118.93,"w":"That's"},{"t":119.48,"w":"why"},{"t":119.58,"w":"I"},{"t":119.78,"w":"move"},{"t":119.9,"w":"different"},{"t":120.3,"w":"when"},{"t":120.56,"w":"I'm"},{"t":120.78,"w":"around"},{"t":121,"w":"you"},{"t":122.94,"w":"You're"},{"t":123.04,"w":"not"},{"t":123.16,"w":"just"},{"t":123.36,"w":"anybody"},{"t":123.72,"w":"I"},{"t":124.26,"w":"saw"},{"t":124.54,"w":"that"},{"t":124.72,"w":"from"},{"t":124.96,"w":"the"},{"t":125.12,"w":"first"},{"t":125.42,"w":"time"},{"t":125.76,"w":"I"},{"t":126,"w":"found"},{"t":126.38,"w":"you"},{"t":126.56,"w":"You"},{"t":126.88,"w":"said"},{"t":127.96,"w":"you"},{"t":128.32,"w":"need"},{"t":128.46,"w":"somebody"},{"t":129.43,"w":"I"},{"t":129.76,"w":"said"},{"t":130.02,"w":"I'd"},{"t":130.28,"w":"be"},{"t":130.52,"w":"that"},{"t":130.92,"w":"somebody"},{"t":132.06,"w":"Say"},{"t":132.56,"w":"less,"},{"t":133.04,"w":"don't"},{"t":133.54,"w":"say"},{"t":133.76,"w":"no"},{"t":134.06,"w":"You"},{"t":134.58,"w":"don't"},{"t":134.92,"w":"gotta"},{"t":135.06,"w":"need"},{"t":135.28,"w":"somebody"},{"t":135.84,"w":"I'm"},{"t":136.62,"w":"right"},{"t":136.94,"w":"here"},{"t":138.32,"w":"I'm"},{"t":138.78,"w":"that"},{"t":138.98,"w":"somebody"},{"t":140.34,"w":"You"},{"t":141,"w":"already"},{"t":141.48,"w":"know"},{"t":142.14,"w":"You"},{"t":142.52,"w":"said"},{"t":142.94,"w":"you"},{"t":143.24,"w":"need"},{"t":143.4,"w":"somebody"},{"t":144.35,"w":"I"},{"t":144.68,"w":"said"},{"t":144.96,"w":"I'd"},{"t":145.18,"w":"be"},{"t":145.44,"w":"that"},{"t":145.84,"w":"somebody"},{"t":146.95,"w":"Say"},{"t":147.28,"w":"less,"},{"t":147.28,"w":"don't"},{"t":147.28,"w":"say"},{"t":147.28,"w":"no"},{"t":147.3,"w":"You"},{"t":148.32,"w":"don't"},{"t":149.78,"w":"gotta"},{"t":149.96,"w":"need"},{"t":150.22,"w":"somebody"},{"t":150.78,"w":"I'm"},{"t":151.54,"w":"right"},{"t":151.84,"w":"here"},{"t":152.92,"w":"I'm"},{"t":153.72,"w":"that"},{"t":153.96,"w":"somebody"},{"t":155.66,"w":"Sometimes"},{"t":156.38,"w":"you're"},{"t":156.9,"w":"sweet"},{"t":157.12,"w":"Sometimes"},{"t":157.82,"w":"you're"},{"t":158.76,"w":"trouble"},{"t":160.38,"w":"Sometimes"},{"t":161.1,"w":"you"},{"t":161.82,"w":"pull"},{"t":162.14,"w":"me"},{"t":162.44,"w":"Then"},{"t":163,"w":"act"},{"t":163.34,"w":"like"},{"t":163.52,"w":"I"},{"t":163.66,"w":"said"},{"t":163.98,"w":"too"},{"t":164.2,"w":"much"},{"t":164.66,"w":"Though"},{"t":165.14,"w":"I"},{"t":165.89,"w":"like"},{"t":166.38,"w":"it"},{"t":166.56,"w":"when"},{"t":166.68,"w":"you're"},{"t":166.9,"w":"goody"},{"t":167.91,"w":"I"},{"t":168.46,"w":"love"},{"t":168.86,"w":"it"},{"t":169,"w":"when"},{"t":169.14,"w":"you're"},{"t":169.36,"w":"naughty"},{"t":170.34,"w":"Either"},{"t":171.06,"w":"way"},{"t":171.4,"w":"you"},{"t":171.68,"w":"got"},{"t":171.98,"w":"me"},{"t":172.88,"w":"I'm"},{"t":173.3,"w":"not"},{"t":173.58,"w":"leaving"},{"t":173.92,"w":"this"},{"t":174.2,"w":"party"},{"t":174.58,"w":"Bye"},{"t":177.5,"w":"I"},{"t":178.1,"w":"won't"},{"t":178.7,"w":"let"},{"t":178.92,"w":"this"},{"t":179.24,"w":"go"},{"t":179.64,"w":"Won't"},{"t":180.26,"w":"tell"},{"t":180.42,"w":"nobody,"},{"t":181,"w":"I'm"},{"t":181.14,"w":"talking"},{"t":181.4,"w":"nobody"},{"t":181.84,"w":"I"},{"t":182.26,"w":"know"},{"t":183.14,"w":"how"},{"t":183.92,"w":"this"},{"t":184.22,"w":"go"},{"t":184.62,"w":"I"},{"t":185.14,"w":"won't"},{"t":185.46,"w":"tell"},{"t":185.66,"w":"nobody,"},{"t":186.2,"w":"I'm"},{"t":186.34,"w":"talking"},{"t":186.64,"w":"nobody"},{"t":187.1,"w":"If"},{"t":187.48,"w":"you"},{"t":187.62,"w":"let"},{"t":187.82,"w":"me"},{"t":187.96,"w":"close"},{"t":188.38,"w":"I'll"},{"t":188.98,"w":"keep"},{"t":189.08,"w":"it"},{"t":189.22,"w":"between"},{"t":189.5,"w":"you"},{"t":189.82,"w":"and"},{"t":190,"w":"me"},{"t":190.4,"w":"If"},{"t":191.1,"w":"you"},{"t":191.26,"w":"let"},{"t":191.46,"w":"this"},{"t":191.74,"w":"grow"},{"t":192.04,"w":"I'll"},{"t":192.62,"w":"be"},{"t":192.74,"w":"exactly"},{"t":193.2,"w":"who"},{"t":193.54,"w":"I"},{"t":193.7,"w":"said"},{"t":194.04,"w":"I'd"},{"t":194.3,"w":"be"},{"t":197.32,"w":"I"},{"t":197.92,"w":"won't"},{"t":198.52,"w":"let"},{"t":198.84,"w":"this"},{"t":199.24,"w":"go"},{"t":199.56,"w":"Won't"},{"t":200.16,"w":"tell"},{"t":200.32,"w":"nobody,"},{"t":200.88,"w":"I'm"},{"t":201.06,"w":"talking"},{"t":201.3,"w":"nobody"},{"t":201.76,"w":"If"},{"t":202.28,"w":"you"},{"t":202.56,"w":"let"},{"t":202.76,"w":"me"},{"t":202.94,"w":"know"},{"t":203.16,"w":"I"},{"t":203.56,"w":"won't"},{"t":203.84,"w":"tell"},{"t":204.06,"w":"nobody,"},{"t":204.78,"w":"I'm"},{"t":205.04,"w":"talking"},{"t":205.34,"w":"nobody"},{"t":205.82,"w":"That"},{"t":206.18,"w":"they"},{"t":206.48,"w":"know,"},{"t":206.94,"w":"know,"},{"t":207.22,"w":"know,"},{"t":207.58,"w":"know,"},{"t":207.88,"w":"know"},{"t":208.12,"w":"You"},{"t":208.18,"w":"already"},{"t":208.62,"w":"know"},{"t":209.3,"w":"You"},{"t":209.66,"w":"said"},{"t":210.1,"w":"you"},{"t":210.38,"w":"need"},{"t":210.54,"w":"somebody"},{"t":211.54,"w":"I"},{"t":211.9,"w":"said"},{"t":212.12,"w":"I'll"},{"t":212.32,"w":"be"},{"t":212.52,"w":"that"},{"t":213,"w":"somebody"},{"t":214.14,"w":"Say"},{"t":214.62,"w":"less,"},{"t":214.98,"w":"don't"},{"t":215.6,"w":"say"},{"t":215.8,"w":"no"},{"t":216.1,"w":"You"},{"t":216.64,"w":"don't"},{"t":216.94,"w":"gotta"},{"t":217.12,"w":"need"},{"t":217.36,"w":"somebody"},{"t":217.92,"w":"I'm"},{"t":218.68,"w":"right"},{"t":219,"w":"here"},{"t":219.6,"w":"I'm"},{"t":220.86,"w":"that"},{"t":221.12,"w":"somebody"},{"t":222.36,"w":"You"},{"t":223.04,"w":"already"},{"t":223.58,"w":"know"},{"t":224.24,"w":"You"},{"t":224.58,"w":"said"},{"t":225.04,"w":"you"},{"t":225.3,"w":"need"},{"t":225.44,"w":"somebody"},{"t":226.46,"w":"I"},{"t":226.82,"w":"said"},{"t":227.04,"w":"I'll"},{"t":227.24,"w":"be"},{"t":227.5,"w":"that"},{"t":227.94,"w":"somebody"},{"t":229.04,"w":"Say"},{"t":229.54,"w":"less,"},{"t":230.02,"w":"don't"},{"t":230.48,"w":"say"},{"t":230.7,"w":"no"},{"t":231.02,"w":"You"},{"t":231.56,"w":"don't"},{"t":231.84,"w":"gotta"},{"t":232.04,"w":"need"},{"t":232.28,"w":"somebody"},{"t":232.8,"w":"I'm"},{"t":233.6,"w":"right"},{"t":233.94,"w":"here"},{"t":235.73,"w":"I'm"},{"t":235.78,"w":"right"},{"t":235.8,"w":"here"},{"t":235.8,"w":"I'm"},{"t":235.92,"w":"that"},{"t":236.04,"w":"somebody"},{"t":236.62,"w":"That"},{"t":238.42,"w":"somebody"},{"t":239.12,"w":"That"},{"t":239.7,"w":"somebody"},{"t":246.24,"w":"I'll"},{"t":246.82,"w":"be,"},{"t":247.02,"w":"I'll"},{"t":247.44,"w":"be,"},{"t":247.62,"w":"I'll"},{"t":248.06,"w":"be"},{"t":248.08,"w":"that"},{"t":248.42,"w":"somebody"},{"t":251.2,"w":"You"},{"t":252.74,"w":"already"},{"t":253.32,"w":"know"},{"t":256.02,"w":"I'll"},{"t":256.12,"w":"be"},{"t":256.2,"w":"that"},{"t":256.42,"w":"somebody"}]}$j$::jsonb WHERE id = 'i-m-that-somebody' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:06.14] You asking the question,
+[00:08.46] I already had the answer,
+[00:10.26] listen,
+[Verse 1]
+[00:10.86] listen
+[00:11.46] You been moving cautious like the boom got eyes
+[00:14.14] Like the balls might talk,
+[00:15.46] like the night got spies
+[00:16.52] I see how you look when the baseline drops
+[00:19.04] Half a smile on your face, then you tell me stop
+[00:21.46] You got secrets in your rhythm,
+[00:23.54] little warnings in your tone
+[00:24.70] But I'm not here to run it,
+[00:26.08] I'm here to bring it home
+[Pre-Chorus]
+[00:27.30] I won't let this show
+[00:30.36] Won't tell a soul, not anybody
+[00:32.28] I know how this go
+[00:35.43] Keep it locked, keep it quiet, nobody
+[00:37.66] If you let me lose
+[00:39.04] I won't make it public, no
+[00:40.91] If you let me know
+[00:42.72] I won't tell nobody
+[00:43.88] I'm talking nobody
+[Hook]
+[00:45.36] You already know
+[00:47.64] You said you need somebody
+[00:49.85] I said I'd be that somebody
+[00:52.46] Say less, don't say no
+[00:54.44] You don't gotta need somebody
+[00:56.30] I'm right here
+[00:58.28] I'm that somebody
+[01:00.28] You already know
+[01:02.56] You said you need somebody
+[01:04.66] I said I'd be that somebody
+[01:07.36] Say less, don't say no
+[01:09.36] You don't gotta need somebody
+[01:11.12] I'm right here
+[01:13.62] I'm that somebody
+[01:15.92] That somebody
+[01:20.54] I'll be that somebody
+[01:23.10] Nobody, nobody
+[01:24.54] I won't tell nobody
+[01:27.14] You already know
+[01:27.30] Asked if I'm steady, girl, you know I don't fold
+[01:29.34] I don't move, but I don't speak what I'm told
+[01:31.88] You can test my patience, you can check my pad
+[01:34.28] I'll still keep your name on the safer side
+[01:36.83] You don't need a rumor, you don't need a scene
+[01:39.46] You need somebody solid when the lights go green
+[01:41.72] And if the world gets loud,
+[01:43.04] I'll turn the noise down low
+[01:44.16] Put your trust in my hands and I won't let it grow
+[01:46.62] You know I'm responsible
+[01:50.31] You ain't gotta watch your back when I'm beside you
+[01:52.62] You know I'm responsible
+[01:55.16] I don't need the spotlight just to hide it from you
+[01:57.28] You're not just anybody
+[Post-Hook]
+[01:58.91] That's why I move different when I'm around you
+[02:02.92] You're not just anybody
+[02:03.70] I saw that from the first time I found you
+[02:06.54] You said you need somebody
+[Verse 2]
+[02:09.41] I said I'd be that somebody
+[02:12.04] Say less, don't say no
+[02:14.04] You don't gotta need somebody
+[02:15.82] I'm right here
+[02:18.30] I'm that somebody
+[02:20.32] You already know
+[02:22.12] You said you need somebody
+[02:24.33] I said I'd be that somebody
+[02:26.93] Say less, don't say no
+[02:27.28] You don't gotta need somebody
+[02:30.76] I'm right here
+[02:32.90] I'm that somebody
+[02:35.64] Sometimes you're sweet
+[Pre-Chorus 2]
+[02:37.10] Sometimes you're trouble
+[02:40.36] Sometimes you pull me
+[02:42.42] Then act like I said too much
+[02:44.64] Though
+[02:45.12] I like it when you're goody
+[02:47.89] I love it when you're naughty
+[02:50.32] Either way you got me
+[02:52.86] I'm not leaving this party
+[02:54.56] Bye
+[02:57.48] I won't let this go
+[02:59.62] Won't tell nobody, I'm talking nobody
+[03:01.82] I know how this go
+[Hook]
+[03:04.60] I won't tell nobody, I'm talking nobody
+[03:07.08] If you let me close
+[03:08.36] I'll keep it between you and me
+[03:10.38] If you let this grow
+[03:12.02] I'll be exactly who I said I'd be
+[03:17.30] I won't let this go
+[03:19.54] Won't tell nobody, I'm talking nobody
+[03:21.74] If you let me know
+[03:23.14] I won't tell nobody, I'm talking nobody
+[03:25.80] That they know, know, know, know, know
+[03:28.10] You already know
+[03:29.28] You said you need somebody
+[03:31.52] I said I'll be that somebody
+[03:34.12] Say less, don't say no
+[03:36.08] You don't gotta need somebody
+[03:37.90] I'm right here
+[03:39.58] I'm that somebody
+[03:42.34] You already know
+[03:44.22] You said you need somebody
+[03:46.44] I said I'll be that somebody
+[03:49.02] Say less, don't say no
+[Bridge]
+[03:50.00] You don't gotta need somebody
+[03:52.78] I'm right here
+[03:55.71] I'm right here
+[03:55.78] I'm that somebody
+[03:56.60] That somebody
+[03:59.10] That somebody
+[04:06.22] I'll be, I'll be, I'll be that somebody
+[04:11.18] You
+[04:12.71] already know
+[04:15.00] I'll be that somebody
+$j$ WHERE id = 'i-m-that-somebody' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A confident R&B track where a playful protagonist asserts their reliability and stability in a relationship, rejecting neediness while embracing the thrill of the moment.","overallMood":"Playful Confidence","themes":["Self-Assurance","Romantic Stability","Futuristic Nostalgia","Secretive Intimacy"],"palette":["#FF4D8C","#2E3B51","#00A896","#FFE700"],"sections":[{"name":"Intro","emotion":"Playful Mystery","intensity":0.76,"colorHint":"#ff4d8c","start":6.14},{"name":"Verse 1","emotion":"Observant Caution","intensity":0.9,"colorHint":"#2e3b51","start":10.86},{"name":"Pre-Chorus","emotion":"Protective Confidence","intensity":0.89,"colorHint":"#ffe700","start":27.3},{"name":"Hook","emotion":"Unwavering Assurance","intensity":0.92,"colorHint":"#ff4d8c","start":45.36},{"name":"Post-Hook","emotion":"Admiring Devotion","intensity":0.71,"colorHint":"#00a896","start":118.91},{"name":"Verse 2","emotion":"Flirty Duality","intensity":0.65,"colorHint":"#ff4d8c","start":129.41},{"name":"Pre-Chorus 2","emotion":"Playful Rebellion","intensity":0.32,"colorHint":"#ffe700","start":157.1},{"name":"Bridge","emotion":"Devoted Commitment","intensity":0.2,"colorHint":"#2e3b51","start":230}],"keywords":[{"word":"cautious","emotion":"Suspicious Playfulness","imageryPrompt":"A neon-lit city street at night where shadows seem to have eyes, reflecting off wet pavement under flickering blue and magenta lights."},{"word":"steady","emotion":"Rock-Solid Reliability","imageryPrompt":"A massive glowing pillar of light standing firm against a chaotic storm of digital raindrops in a futuristic plaza."},{"word":"secretly","emotion":"Hidden Intimacy","imageryPrompt":"Two silhouettes sharing a quiet moment behind frosted glass, with soft pink light leaking through cracks to reveal intimate gestures inside."},{"word":"solid","emotion":"Unbreakable Strength","imageryPrompt":"A translucent crystal structure forming the shape of a heart that shimmers brightly without cracking despite heavy impact from surrounding debris."},{"word":"responsible","emotion":"Guardian Duty","imageryPrompt":"A futuristic knight made of holographic armor standing protectively in front of a glowing portal, scanning the environment with calm focus."},{"word":"naughty","emotion":"Spicy Curiosity","imageryPrompt":"Glitching pixel art sprites dancing playfully around each other on a checkerboard floor that shifts colors rapidly between red and purple."}]}$j$::jsonb) WHERE id = 'i-m-that-somebody' AND planet->'analysis' IS NULL;
+
+-- i-said-no: 221 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.62,"w":"so"},{"t":1.22,"w":"they"},{"t":1.4,"w":"call"},{"t":1.56,"w":"me"},{"t":1.72,"w":"big"},{"t":1.94,"w":"g"},{"t":2.14,"w":"g"},{"t":2.74,"w":"with"},{"t":3.52,"w":"the"},{"t":3.62,"w":"capital"},{"t":3.9,"w":"g"},{"t":4.36,"w":"i"},{"t":4.98,"w":"said"},{"t":5.26,"w":"step"},{"t":5.46,"w":"into"},{"t":5.68,"w":"my"},{"t":6.16,"w":"crib"},{"t":6.58,"w":"and"},{"t":6.8,"w":"check"},{"t":7.08,"w":"my"},{"t":7.34,"w":"100"},{"t":7.64,"w":"inch"},{"t":8.06,"w":"tv"},{"t":8.66,"w":"i"},{"t":9.32,"w":"got"},{"t":9.48,"w":"the"},{"t":9.64,"w":"holey"},{"t":9.92,"w":"with"},{"t":10.04,"w":"the"},{"t":10.18,"w":"ice"},{"t":10.54,"w":"keep"},{"t":11.86,"w":"it"},{"t":12.28,"w":"on"},{"t":12.56,"w":"the"},{"t":12.76,"w":"freeze"},{"t":13.2,"w":"and"},{"t":13.64,"w":"i"},{"t":13.78,"w":"know"},{"t":14.24,"w":"they"},{"t":14.46,"w":"ain't"},{"t":15.04,"w":"got"},{"t":15.22,"w":"it"},{"t":15.52,"w":"like"},{"t":15.86,"w":"this"},{"t":16.37,"w":"overseas"},{"t":17.02,"w":"he"},{"t":18.62,"w":"said"},{"t":18.82,"w":"oh"},{"t":19.06,"w":"i"},{"t":19.88,"w":"like"},{"t":20.24,"w":"your"},{"t":20.46,"w":"car"},{"t":20.72,"w":"and"},{"t":21.12,"w":"he"},{"t":21.22,"w":"said"},{"t":21.44,"w":"oh"},{"t":21.72,"w":"i"},{"t":22.04,"w":"like"},{"t":22.4,"w":"your"},{"t":22.64,"w":"chain"},{"t":22.94,"w":"and"},{"t":23.3,"w":"he"},{"t":23.4,"w":"said"},{"t":23.6,"w":"damn"},{"t":24.04,"w":"i"},{"t":24.24,"w":"like"},{"t":24.58,"w":"your"},{"t":24.8,"w":"he"},{"t":25.08,"w":"said"},{"t":25.34,"w":"yo"},{"t":25.54,"w":"big"},{"t":25.86,"w":"g"},{"t":26.16,"w":"can"},{"t":26.36,"w":"i"},{"t":26.52,"w":"ride"},{"t":26.78,"w":"with"},{"t":26.94,"w":"you"},{"t":27.18,"w":"and"},{"t":27.52,"w":"i"},{"t":27.76,"w":"said"},{"t":28.04,"w":"no"},{"t":43.88,"w":"so"},{"t":44.44,"w":"they"},{"t":45,"w":"call"},{"t":45.24,"w":"me"},{"t":45.36,"w":"big"},{"t":45.6,"w":"g"},{"t":45.84,"w":"with"},{"t":47.14,"w":"the"},{"t":47.24,"w":"capital"},{"t":47.54,"w":"g"},{"t":47.96,"w":"i"},{"t":48.58,"w":"said"},{"t":48.78,"w":"step"},{"t":49.06,"w":"into"},{"t":49.4,"w":"my"},{"t":49.76,"w":"crib"},{"t":50.18,"w":"and"},{"t":50.44,"w":"check"},{"t":50.72,"w":"my"},{"t":50.96,"w":"100"},{"t":51.34,"w":"inch"},{"t":51.62,"w":"tv"},{"t":52.04,"w":"i"},{"t":52.62,"w":"got"},{"t":53.12,"w":"the"},{"t":53.28,"w":"holey"},{"t":53.52,"w":"with"},{"t":53.66,"w":"the"},{"t":53.8,"w":"ice"},{"t":54.1,"w":"you"},{"t":54.98,"w":"keep"},{"t":55.54,"w":"it"},{"t":55.92,"w":"on"},{"t":56.18,"w":"the"},{"t":56.38,"w":"freeze"},{"t":56.86,"w":"and"},{"t":57.26,"w":"i"},{"t":57.4,"w":"know"},{"t":57.84,"w":"they"},{"t":58.1,"w":"ain't"},{"t":58.64,"w":"got"},{"t":58.86,"w":"it"},{"t":59.14,"w":"like"},{"t":59.58,"w":"this"},{"t":59.96,"w":"overseas"},{"t":60.7,"w":"he"},{"t":62.22,"w":"said"},{"t":62.46,"w":"oh"},{"t":62.74,"w":"i"},{"t":63.5,"w":"like"},{"t":63.98,"w":"your"},{"t":64.08,"w":"car"},{"t":64.44,"w":"and"},{"t":64.76,"w":"he"},{"t":64.84,"w":"said"},{"t":65.08,"w":"oh"},{"t":65.36,"w":"i"},{"t":65.72,"w":"like"},{"t":66.06,"w":"your"},{"t":66.28,"w":"chain"},{"t":66.6,"w":"and"},{"t":66.92,"w":"he"},{"t":67.04,"w":"said"},{"t":67.24,"w":"damn"},{"t":67.58,"w":"i"},{"t":67.9,"w":"like"},{"t":68.22,"w":"your"},{"t":68.46,"w":"shoes"},{"t":68.74,"w":"he"},{"t":68.98,"w":"said"},{"t":68.98,"w":"yo"},{"t":69.2,"w":"big"},{"t":69.5,"w":"g"},{"t":69.76,"w":"can"},{"t":70,"w":"i"},{"t":70.16,"w":"ride"},{"t":70.38,"w":"with"},{"t":70.54,"w":"you"},{"t":70.8,"w":"and"},{"t":71.14,"w":"i"},{"t":71.4,"w":"said"},{"t":71.7,"w":"no"},{"t":72.02,"w":"and"},{"t":75.16,"w":"i"},{"t":75.78,"w":"said"},{"t":76.06,"w":"no"},{"t":79.78,"w":"and"},{"t":79.88,"w":"i"},{"t":80.22,"w":"said"},{"t":80.46,"w":"no"},{"t":83.26,"w":"and"},{"t":84.16,"w":"i"},{"t":84.68,"w":"said"},{"t":84.78,"w":"no"},{"t":88.46,"w":"and"},{"t":88.56,"w":"i"},{"t":88.77,"w":"said"},{"t":89.2,"w":"no"},{"t":89.68,"w":"and"},{"t":91.26,"w":"i"},{"t":93.3,"w":"said"},{"t":93.62,"w":"no"},{"t":94.16,"w":"and"},{"t":97.28,"w":"i"},{"t":97.66,"w":"said"},{"t":97.9,"w":"no"},{"t":100.86,"w":"and"},{"t":101.66,"w":"i"},{"t":102.02,"w":"said"},{"t":102.26,"w":"no"},{"t":102.56,"w":"and"},{"t":103.06,"w":"i"},{"t":103.06,"w":"said"},{"t":103.06,"w":"no"},{"t":103.06,"w":"and"},{"t":104.28,"w":"i"},{"t":104.28,"w":"said"},{"t":112.44,"w":"no"},{"t":112.46,"w":"and"},{"t":112.48,"w":"i"},{"t":112.56,"w":"said"},{"t":112.68,"w":"no"},{"t":112.68,"w":"and"},{"t":112.68,"w":"i"},{"t":112.68,"w":"said"},{"t":113.74,"w":"no"},{"t":113.76,"w":"and"},{"t":114.1,"w":"i"},{"t":114.1,"w":"said"},{"t":114.1,"w":"no"},{"t":114.1,"w":"and"},{"t":114.1,"w":"i"},{"t":114.12,"w":"said"},{"t":114.12,"w":"no"},{"t":114.12,"w":"and"},{"t":114.12,"w":"i"},{"t":114.44,"w":"said"},{"t":114.44,"w":"no"},{"t":125.58,"w":"Thank"},{"t":126.98,"w":"you."}]}$j$::jsonb WHERE id = 'i-said-no' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:00.60] so they call me big g g with the capital g i
+[00:04.96] said step into my crib and check my 100 inch tv
+[00:08.64] i got the holey with the ice keep it on the
+[00:12.74] freeze and i know they ain't got it like this
+[00:16.35] overseas he said oh i like your car and he said
+[00:21.42] oh i like your chain and he said damn i like your
+[Chorus]
+[00:24.78] he said yo big g can i ride with you and i said no
+[Drop]
+[00:43.86] so they call me big g with the capital g i
+[00:48.56] said step into my crib and check my 100 inch tv
+[00:52.02] i got the holey with the ice
+[00:54.08] you
+[Bridge]
+[00:54.95] keep it on the freeze and i know they ain't got
+[00:58.84] it like this overseas he said oh i like your car
+[01:04.42] and he said oh i like your chain and he said damn
+[01:07.56] i like your shoes he said yo big g can i ride with
+[01:10.52] you and i said no and i said no
+[01:19.75] and i said no
+[01:23.24] and i said no
+[01:28.44] and i said no
+[01:29.66] and i said no
+[01:34.14] and
+[01:37.26] i said no
+[01:40.84] and i said no
+[01:42.54] and i said no
+[01:43.04] and i said no
+[01:52.44] and i said no
+[01:52.66] and i said no
+[01:53.74] and i said no
+[01:54.08] and i said no
+[01:54.10] and i said no
+[Outro]
+[02:05.56] Thank you.
+$j$ WHERE id = 'i-said-no' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song portrays a wealthy but socially isolated figure who aggressively rejects outsiders despite their admiration for his lifestyle and possessions.","overallMood":"sinister-fun","themes":["Rejection of Admiration","Material Excess vs. Isolation","Gritty Street Power","Playful Danger"],"palette":["#1A1A20","#8B7359","#E6DCCF","#4A4A4A"],"sections":[{"name":"Intro","emotion":"sinister anticipation","intensity":0.22,"colorHintHex":"#1A1A20","start":0.6},{"name":"Verse 1","emotion":"conceited arrogance","intensity":0.88,"colorHintHex":"#8B7359","start":0.6},{"name":"Chorus","emotion":"cold dismissal","intensity":0.94,"colorHintHex":"#E6DCCF","start":24.78},{"name":"Drop","emotion":"aggressive defiance","intensity":0.78,"colorHintHex":"#4A4A4A","start":43.86},{"name":"Bridge","emotion":"obsessive isolation","intensity":0.32,"colorHintHex":"#2C3E50","start":54.95},{"name":"Outro","emotion":"hollow finality","intensity":0.03,"colorHintHex":"#8B7359","start":125.56}],"keywords":[{"word":"no!","emotion":"aggressive rejection","imageryPrompt":"A cartoon character in a black-and-white noir setting slamming a door, steam hissing from the hinges, casting a long shadow against foggy docks."},{"word":"crib","emotion":"isolated luxury","imageryPrompt":"An opulent but empty room with dust motes dancing in shafts of light, surrounded by towering walls and no windows to the outside world."},{"word":"ice","emotion":"cold wealth","imageryPrompt":"A jagged diamond necklace glowing faintly against a dark leather jacket, reflecting only cold blue tones in a grimy room."},{"word":"overseas","emotion":"distant desire","imageryPrompt":"Silhouettes of figures on a distant horizon looking longingly at the protagonist's glowing window from across a dark, choppy river."},{"word":"freeze","emotion":"arctic isolation","imageryPrompt":"A character shivering in an expensive coat while holding warm drinks that are sweating, standing alone on a frozen pier at night."},{"word":"chain","emotion":"heavy burden","imageryPrompt":"A thick gold chain clanking loudly as it drags across dirty pavement, casting heavy metallic shadows in the gloom of an alleyway."}]}$j$::jsonb) WHERE id = 'i-said-no' AND planet->'analysis' IS NULL;
+
 -- i-won-t-be-your-fire: 648 words, 6 sections
 UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.64,"w":"I"},{"t":1.18,"w":"saw"},{"t":1.42,"w":"your"},{"t":1.58,"w":"name"},{"t":1.78,"w":"light"},{"t":2,"w":"up"},{"t":2.16,"w":"again"},{"t":5.4,"w":"Same"},{"t":5.5,"w":"time,"},{"t":6.3,"w":"same"},{"t":7.06,"w":"storm"},{"t":9.58,"w":"And"},{"t":9.68,"w":"I"},{"t":9.78,"w":"almost"},{"t":10.04,"w":"answered"},{"t":10.44,"w":"like"},{"t":10.68,"w":"always"},{"t":13.84,"w":"But"},{"t":13.94,"w":"I"},{"t":14.02,"w":"can't"},{"t":14.28,"w":"keep"},{"t":14.48,"w":"being"},{"t":14.76,"w":"the"},{"t":14.9,"w":"place"},{"t":15.16,"w":"you"},{"t":15.34,"w":"go"},{"t":18.44,"w":"When"},{"t":18.54,"w":"you"},{"t":18.64,"w":"wanna"},{"t":18.82,"w":"fall"},{"t":19.04,"w":"apart"},{"t":22.88,"w":"Rain"},{"t":23.42,"w":"on"},{"t":24.02,"w":"glass,"},{"t":24.84,"w":"guitar"},{"t":25.62,"w":"comes"},{"t":26.48,"w":"in"},{"t":26.8,"w":"slow"},{"t":27.22,"w":"808,"},{"t":28.82,"w":"heart"},{"t":30.59,"w":"under"},{"t":31.52,"w":"the"},{"t":32.38,"w":"floor"},{"t":32.84,"w":"I"},{"t":33.7,"w":"won't"},{"t":34,"w":"be"},{"t":34.18,"w":"your"},{"t":34.54,"w":"fighter"},{"t":36.22,"w":"Just"},{"t":36.61,"w":"because"},{"t":36.96,"w":"you"},{"t":37.38,"w":"missed"},{"t":37.74,"w":"the"},{"t":38.08,"w":"burn"},{"t":38.91,"w":"I"},{"t":39.08,"w":"won't"},{"t":39.5,"w":"say"},{"t":39.82,"w":"the"},{"t":40.14,"w":"sharp"},{"t":40.58,"w":"words"},{"t":41.3,"w":"Just"},{"t":42.12,"w":"to"},{"t":42.22,"w":"make"},{"t":42.64,"w":"the"},{"t":42.9,"w":"silence"},{"t":43.5,"w":"hurt"},{"t":44.04,"w":"I"},{"t":44.45,"w":"know"},{"t":44.62,"w":"you"},{"t":45.02,"w":"want"},{"t":45.44,"w":"the"},{"t":45.7,"w":"thunder"},{"t":46.2,"w":"When"},{"t":47.01,"w":"the"},{"t":47.12,"w":"quiet"},{"t":47.58,"w":"gets"},{"t":48.4,"w":"too"},{"t":48.5,"w":"loud"},{"t":49.25,"w":"But"},{"t":49.44,"w":"I"},{"t":49.73,"w":"won't"},{"t":50.76,"w":"be"},{"t":51,"w":"your"},{"t":51.28,"w":"reason"},{"t":52.28,"w":"I"},{"t":53.32,"w":"keep"},{"t":53.42,"w":"breaking"},{"t":53.84,"w":"down"},{"t":55.6,"w":"Yeah!"},{"t":57.64,"w":"No,"},{"t":58.16,"w":"no,"},{"t":58.68,"w":"I"},{"t":59.18,"w":"won't"},{"t":59.76,"w":"be"},{"t":60.1,"w":"your"},{"t":60.34,"w":"fighter"},{"t":62.6,"w":"No,"},{"t":63.12,"w":"no,"},{"t":63.66,"w":"no"},{"t":64.32,"w":"I"},{"t":64.48,"w":"still"},{"t":64.62,"w":"care,"},{"t":65.64,"w":"but"},{"t":65.74,"w":"I'm"},{"t":66.04,"w":"tired"},{"t":66.54,"w":"You"},{"t":66.82,"w":"call"},{"t":66.98,"w":"me"},{"t":67.14,"w":"when"},{"t":67.32,"w":"the"},{"t":67.44,"w":"room"},{"t":67.68,"w":"gets"},{"t":67.82,"w":"cold"},{"t":68.16,"w":"When"},{"t":68.68,"w":"the"},{"t":68.88,"w":"posters"},{"t":69.22,"w":"on"},{"t":69.46,"w":"your"},{"t":69.58,"w":"wall"},{"t":69.84,"w":"start"},{"t":70.08,"w":"looking"},{"t":70.48,"w":"like"},{"t":70.84,"w":"ghosts"},{"t":71.34,"w":"You"},{"t":71.64,"w":"say"},{"t":71.86,"w":"you"},{"t":71.98,"w":"need"},{"t":72.24,"w":"a"},{"t":72.38,"w":"reason"},{"t":72.7,"w":"just"},{"t":72.9,"w":"to"},{"t":73.04,"w":"feel"},{"t":73.32,"w":"something"},{"t":73.6,"w":"real"},{"t":74,"w":"But"},{"t":74.46,"w":"every"},{"t":74.74,"w":"time"},{"t":75,"w":"I"},{"t":75.2,"w":"answer"},{"t":75.48,"w":"I"},{"t":75.68,"w":"become"},{"t":75.92,"w":"what"},{"t":76.22,"w":"you"},{"t":76.38,"w":"can't"},{"t":76.64,"w":"heal"},{"t":76.84,"w":"I"},{"t":77.18,"w":"know"},{"t":77.42,"w":"the"},{"t":77.6,"w":"hallway"},{"t":77.86,"w":"lights,"},{"t":78.22,"w":"I"},{"t":78.32,"w":"know"},{"t":78.46,"w":"the"},{"t":78.66,"w":"bathroom"},{"t":79.06,"w":"floor"},{"t":79.56,"w":"I"},{"t":79.94,"w":"know"},{"t":80.22,"w":"the"},{"t":80.38,"w":"kind"},{"t":80.6,"w":"of"},{"t":80.78,"w":"love"},{"t":80.96,"w":"that"},{"t":81.1,"w":"turns"},{"t":81.3,"w":"into"},{"t":81.56,"w":"a"},{"t":81.96,"w":"war"},{"t":82.3,"w":"I"},{"t":82.76,"w":"know"},{"t":83.02,"w":"you"},{"t":83.14,"w":"think"},{"t":83.38,"w":"the"},{"t":83.54,"w":"hurt"},{"t":83.8,"w":"means"},{"t":84.06,"w":"somebody's"},{"t":84.84,"w":"state"},{"t":85.14,"w":"But"},{"t":85.6,"w":"pain"},{"t":85.84,"w":"is"},{"t":86.02,"w":"not"},{"t":86.18,"w":"proof"},{"t":86.46,"w":"that"},{"t":86.86,"w":"love"},{"t":87.2,"w":"is"},{"t":87.2,"w":"real"},{"t":87.22,"w":"And"},{"t":87.26,"w":"the"},{"t":87.26,"w":"world"},{"t":87.26,"w":"was"},{"t":87.34,"w":"ever"},{"t":87.62,"w":"safe"},{"t":88,"w":"I"},{"t":88.38,"w":"used"},{"t":88.6,"w":"to"},{"t":88.74,"w":"throw"},{"t":89,"w":"the"},{"t":89.12,"w":"mats"},{"t":89.4,"w":"Then"},{"t":89.66,"w":"cry"},{"t":89.96,"w":"about"},{"t":90.26,"w":"the"},{"t":90.44,"w":"smoke"},{"t":90.7,"w":"I"},{"t":91.14,"w":"used"},{"t":91.36,"w":"to"},{"t":91.56,"w":"say"},{"t":91.74,"w":"the"},{"t":91.88,"w":"things"},{"t":92.16,"w":"that"},{"t":92.44,"w":"cut"},{"t":92.74,"w":"into"},{"t":93,"w":"your"},{"t":93.28,"w":"throat"},{"t":93.52,"w":"But"},{"t":93.84,"w":"tonight"},{"t":94.12,"w":"I'm"},{"t":94.44,"w":"holding"},{"t":94.58,"w":"back"},{"t":94.92,"w":"With"},{"t":95.2,"w":"both"},{"t":95.4,"w":"hands"},{"t":95.6,"w":"on"},{"t":95.92,"w":"the"},{"t":96.04,"w":"wire"},{"t":96.42,"w":"If"},{"t":96.8,"w":"I"},{"t":96.94,"w":"love"},{"t":97.18,"w":"you"},{"t":97.34,"w":"at"},{"t":97.52,"w":"all"},{"t":97.9,"w":"I"},{"t":98.4,"w":"can"},{"t":98.5,"w":"be"},{"t":98.66,"w":"your"},{"t":98.86,"w":"fire"},{"t":100.26,"w":"I"},{"t":100.46,"w":"won't"},{"t":100.88,"w":"be"},{"t":101.16,"w":"your"},{"t":101.5,"w":"fighter"},{"t":102.98,"w":"Just"},{"t":103.52,"w":"because"},{"t":103.78,"w":"you"},{"t":104.32,"w":"missed"},{"t":104.66,"w":"the"},{"t":104.96,"w":"burn"},{"t":105.89,"w":"I"},{"t":106.02,"w":"won't"},{"t":106.66,"w":"say"},{"t":106.76,"w":"the"},{"t":107.06,"w":"sharp"},{"t":107.62,"w":"words"},{"t":108.16,"w":"Just"},{"t":109.02,"w":"to"},{"t":109.12,"w":"make"},{"t":109.58,"w":"the"},{"t":109.86,"w":"silence"},{"t":110.36,"w":"hurt"},{"t":110.94,"w":"I"},{"t":111.42,"w":"know"},{"t":111.56,"w":"you"},{"t":111.92,"w":"want"},{"t":112.36,"w":"the"},{"t":112.62,"w":"thunder"},{"t":113.18,"w":"When"},{"t":113.72,"w":"the"},{"t":114.05,"w":"quiet"},{"t":114.46,"w":"gets"},{"t":115.32,"w":"too"},{"t":115.42,"w":"loud"},{"t":116.22,"w":"But"},{"t":116.34,"w":"I..."},{"t":116.9,"w":"Won't"},{"t":117.64,"w":"be"},{"t":117.8,"w":"a"},{"t":119.04,"w":"reason"},{"t":119.14,"w":"to"},{"t":120.16,"w":"keep"},{"t":120.3,"w":"breaking"},{"t":120.74,"w":"down"},{"t":121.38,"w":"Don't"},{"t":121.78,"w":"leave"},{"t":122.06,"w":"me"},{"t":122.22,"w":"alone"},{"t":130.44,"w":"With"},{"t":131.33,"w":"my"},{"t":131.56,"w":"head"},{"t":131.86,"w":"like"},{"t":132.12,"w":"this"},{"t":132.6,"w":"I"},{"t":132.92,"w":"keep"},{"t":133.48,"w":"your"},{"t":133.68,"w":"name"},{"t":133.94,"w":"in"},{"t":134.2,"w":"my"},{"t":134.32,"w":"phone"},{"t":134.66,"w":"like"},{"t":134.9,"w":"a"},{"t":135.06,"w":"bruise"},{"t":135.46,"w":"I"},{"t":135.64,"w":"can"},{"t":135.72,"w":"press"},{"t":136.02,"w":"black"},{"t":136.34,"w":"hoodie,"},{"t":136.82,"w":"dead"},{"t":137.04,"w":"screen,"},{"t":137.52,"w":"bad"},{"t":137.68,"w":"dreams"},{"t":138.12,"w":"in"},{"t":138.4,"w":"my"},{"t":138.5,"w":"chest"},{"t":138.78,"w":"I"},{"t":139.1,"w":"don't"},{"t":139.44,"w":"want"},{"t":139.8,"w":"peace,"},{"t":140.36,"w":"I"},{"t":140.5,"w":"don't"},{"t":140.66,"w":"know"},{"t":140.82,"w":"what"},{"t":140.98,"w":"that"},{"t":141.18,"w":"means"},{"t":141.58,"w":"I"},{"t":141.94,"w":"only"},{"t":142.2,"w":"feel"},{"t":142.54,"w":"close"},{"t":143.04,"w":"when"},{"t":143.28,"w":"you're"},{"t":143.48,"w":"angry"},{"t":143.74,"w":"at"},{"t":144.02,"w":"me"},{"t":144.34,"w":"I've"},{"t":144.72,"w":"been"},{"t":144.8,"w":"chasing"},{"t":145.08,"w":"the"},{"t":145.34,"w":"crash,"},{"t":145.92,"w":"cause"},{"t":146.02,"w":"the"},{"t":146.2,"w":"car"},{"t":146.42,"w":"feels"},{"t":146.74,"w":"fake"},{"t":147.1,"w":"I've"},{"t":147.5,"w":"been"},{"t":147.62,"w":"calling"},{"t":147.92,"w":"it"},{"t":148.1,"w":"love,"},{"t":148.68,"w":"when"},{"t":148.86,"w":"it's"},{"t":149.04,"w":"only"},{"t":149.26,"w":"a"},{"t":149.5,"w":"skate"},{"t":150.09,"w":"Say"},{"t":150.64,"w":"something"},{"t":150.98,"w":"cold,"},{"t":151.44,"w":"make"},{"t":151.58,"w":"it"},{"t":151.74,"w":"sound"},{"t":151.96,"w":"like"},{"t":152.16,"w":"you"},{"t":152.34,"w":"care"},{"t":152.68,"w":"I"},{"t":153.02,"w":"can't"},{"t":153.5,"w":"stand"},{"t":153.66,"w":"the"},{"t":153.86,"w":"dark"},{"t":154.22,"w":"when"},{"t":154.38,"w":"there's"},{"t":154.64,"w":"nobody"},{"t":154.86,"w":"there"},{"t":155.65,"w":"I"},{"t":156.45,"w":"hear"},{"t":156.78,"w":"you,"},{"t":158.12,"w":"I"},{"t":158.22,"w":"do"},{"t":158.92,"w":"But"},{"t":159.87,"w":"I"},{"t":160,"w":"won't"},{"t":160.24,"w":"hurt"},{"t":160.44,"w":"you"},{"t":162.78,"w":"Just"},{"t":162.88,"w":"to"},{"t":162.98,"w":"prove"},{"t":163.28,"w":"I'm"},{"t":163.54,"w":"still"},{"t":163.82,"w":"here"},{"t":167.82,"w":"What"},{"t":167.92,"w":"am"},{"t":168.14,"w":"I"},{"t":168.28,"w":"supposed"},{"t":168.58,"w":"to"},{"t":169.06,"w":"do"},{"t":169.38,"w":"when"},{"t":169.7,"w":"the"},{"t":169.88,"w":"night"},{"t":170.14,"w":"comes"},{"t":170.44,"w":"by?"},{"t":172.06,"w":"Breathe"},{"t":172.22,"w":"to"},{"t":172.42,"w":"the"},{"t":172.54,"w":"morning"},{"t":173.08,"w":"Don't"},{"t":174.06,"w":"run"},{"t":174.24,"w":"To"},{"t":174.82,"w":"the"},{"t":175.16,"w":"match"},{"t":175.72,"w":"What"},{"t":177.08,"w":"if"},{"t":177.34,"w":"I"},{"t":177.56,"w":"disappear"},{"t":178.16,"w":"When"},{"t":179.04,"w":"the"},{"t":179.52,"w":"signal"},{"t":179.96,"w":"dies"},{"t":181.58,"w":"Then"},{"t":182.38,"w":"I'll"},{"t":182.66,"w":"leave"},{"t":182.98,"w":"one"},{"t":183.28,"w":"night"},{"t":183.6,"w":"on"},{"t":184.06,"w":"But"},{"t":184.76,"w":"I"},{"t":184.96,"w":"won't"},{"t":185.7,"w":"feed"},{"t":186.08,"w":"the"},{"t":186.46,"w":"fire"},{"t":187.01,"w":"Say"},{"t":187.66,"w":"you"},{"t":187.88,"w":"hate"},{"t":188.14,"w":"me"},{"t":188.34,"w":"Say"},{"t":188.84,"w":"you're"},{"t":189.3,"w":"done"},{"t":189.64,"w":"Say"},{"t":190.42,"w":"anything"},{"t":191,"w":"I'm"},{"t":191.68,"w":"saying"},{"t":191.94,"w":"no"},{"t":192.28,"w":"because"},{"t":192.66,"w":"I"},{"t":193.16,"w":"love"},{"t":193.54,"w":"you"},{"t":193.88,"w":"enough"},{"t":196.54,"w":"Not"},{"t":196.72,"w":"to"},{"t":196.86,"w":"become"},{"t":197.2,"w":"another"},{"t":197.7,"w":"one"},{"t":199.78,"w":"I"},{"t":200.9,"w":"can"},{"t":201,"w":"miss"},{"t":201.28,"w":"you"},{"t":201.56,"w":"and"},{"t":201.7,"w":"still"},{"t":201.94,"w":"not"},{"t":202.28,"w":"answer"},{"t":203.31,"w":"I"},{"t":203.68,"w":"can"},{"t":203.78,"w":"love"},{"t":204.08,"w":"you"},{"t":204.22,"w":"and"},{"t":204.22,"w":"still"},{"t":204.22,"w":"not"},{"t":204.22,"w":"answer"},{"t":204.22,"w":"I"},{"t":204.22,"w":"can"},{"t":204.22,"w":"love"},{"t":204.22,"w":"you"},{"t":204.32,"w":"and"},{"t":205.34,"w":"leave"},{"t":205.44,"w":"the"},{"t":205.68,"w":"room"},{"t":206.12,"w":"I"},{"t":207.12,"w":"can"},{"t":207.22,"w":"pray"},{"t":207.46,"w":"that"},{"t":207.97,"w":"you'll"},{"t":208.18,"w":"find"},{"t":208.54,"w":"daylight"},{"t":211.87,"w":"Without"},{"t":212.1,"w":"becoming"},{"t":212.9,"w":"your"},{"t":213.72,"w":"moon"},{"t":213.84,"w":"I"},{"t":213.94,"w":"can"},{"t":214.12,"w":"hold"},{"t":214.32,"w":"all"},{"t":214.68,"w":"the"},{"t":214.8,"w":"good"},{"t":215.02,"w":"parts"},{"t":215.56,"w":"And"},{"t":216.44,"w":"still"},{"t":216.74,"w":"bury"},{"t":217.24,"w":"the"},{"t":217.78,"w":"blade"},{"t":218.2,"w":"I"},{"t":218.84,"w":"can"},{"t":219.18,"w":"remember"},{"t":219.88,"w":"your"},{"t":220.34,"w":"soft"},{"t":220.62,"w":"voice"},{"t":221.28,"w":"Without"},{"t":222.2,"w":"entering"},{"t":222.88,"w":"the"},{"t":223.62,"w":"cage"},{"t":224.18,"w":"I"},{"t":224.64,"w":"can"},{"t":225,"w":"cry"},{"t":225.42,"w":"for"},{"t":226,"w":"the"},{"t":226.34,"w":"old"},{"t":226.72,"w":"days"},{"t":227.46,"w":"Without"},{"t":227.66,"w":"pulling"},{"t":228.18,"w":"you"},{"t":228.82,"w":"through"},{"t":229.31,"w":"Another"},{"t":230.26,"w":"night,"},{"t":231.2,"w":"we're"},{"t":231.58,"w":"the"},{"t":231.81,"w":"worst"},{"t":232.16,"w":"thing"},{"t":232.54,"w":"I"},{"t":233.2,"w":"say,"},{"t":233.78,"w":"be"},{"t":234.04,"w":"kind"},{"t":234.2,"w":"It"},{"t":234.46,"w":"comes"},{"t":234.46,"w":"true"},{"t":236.18,"w":"I"},{"t":236.28,"w":"won't"},{"t":236.96,"w":"be"},{"t":237.06,"w":"your"},{"t":237.4,"w":"fire"},{"t":239.04,"w":"Just"},{"t":239.14,"w":"because"},{"t":239.54,"w":"you"},{"t":240.16,"w":"missed"},{"t":240.52,"w":"the"},{"t":240.88,"w":"burn"},{"t":241.34,"w":"I"},{"t":241.86,"w":"won't"},{"t":242.32,"w":"say"},{"t":242.6,"w":"the"},{"t":243.01,"w":"sharp"},{"t":243.36,"w":"words"},{"t":244.54,"w":"Just"},{"t":244.64,"w":"to"},{"t":244.93,"w":"make"},{"t":245.44,"w":"the"},{"t":245.62,"w":"silence"},{"t":246.3,"w":"hurt"},{"t":246.74,"w":"I"},{"t":247.17,"w":"know"},{"t":247.38,"w":"you"},{"t":247.72,"w":"want"},{"t":248.14,"w":"the"},{"t":248.38,"w":"thunder"},{"t":249,"w":"When"},{"t":249.5,"w":"the"},{"t":250.08,"w":"quiet"},{"t":250.24,"w":"gets"},{"t":250.84,"w":"too"},{"t":251.16,"w":"loud"},{"t":251.96,"w":"But"},{"t":252.06,"w":"I"},{"t":253.12,"w":"won't"},{"t":253.36,"w":"be"},{"t":253.7,"w":"your"},{"t":253.94,"w":"reason"},{"t":254.88,"w":"To"},{"t":255.81,"w":"keep"},{"t":256.02,"w":"breaking"},{"t":256.44,"w":"down"},{"t":258.24,"w":"I"},{"t":258.4,"w":"won't"},{"t":258.88,"w":"be"},{"t":259.16,"w":"your"},{"t":259.44,"w":"fire"},{"t":260.72,"w":"I"},{"t":261.16,"w":"won't"},{"t":261.62,"w":"be"},{"t":261.86,"w":"your"},{"t":262.22,"w":"knife"},{"t":262.71,"w":"I"},{"t":263.86,"w":"won't"},{"t":264.32,"w":"be"},{"t":264.54,"w":"the"},{"t":264.86,"w":"dark"},{"t":265.44,"w":"thing"},{"t":266.02,"w":"That"},{"t":266.5,"w":"helps"},{"t":266.75,"w":"you"},{"t":266.98,"w":"hate"},{"t":267.36,"w":"your"},{"t":267.68,"w":"life"},{"t":268.29,"w":"I'll"},{"t":269.28,"w":"leave"},{"t":269.48,"w":"a"},{"t":269.72,"w":"little"},{"t":270.14,"w":"light"},{"t":270.82,"w":"on"},{"t":271.2,"w":"But"},{"t":271.46,"w":"I'm"},{"t":271.9,"w":"walking"},{"t":272.36,"w":"out"},{"t":272.92,"w":"now"},{"t":273.51,"w":"I"},{"t":275.2,"w":"won't"},{"t":275.39,"w":"be"},{"t":275.64,"w":"your"},{"t":275.9,"w":"reason"},{"t":277.26,"w":"To"},{"t":277.72,"w":"keep"},{"t":278.08,"w":"breaking"},{"t":278.4,"w":"down"},{"t":279.07,"w":"I"},{"t":279.65,"w":"hope"},{"t":279.86,"w":"you"},{"t":279.98,"w":"get"},{"t":280.16,"w":"through"},{"t":280.34,"w":"tonight"},{"t":281.46,"w":"I"},{"t":282.24,"w":"hope"},{"t":282.48,"w":"you"},{"t":282.62,"w":"don't"},{"t":282.98,"w":"need"},{"t":283.2,"w":"pain"},{"t":284.14,"w":"To"},{"t":285.02,"w":"know"},{"t":285.2,"w":"somebody"},{"t":285.84,"w":"loved"},{"t":287.3,"w":"you"},{"t":287.64,"w":"I"},{"t":288.22,"w":"hope"},{"t":288.74,"w":"one"},{"t":289.34,"w":"day"},{"t":291.9,"w":"Quiet"},{"t":292.1,"w":"feels"},{"t":292.4,"w":"safe"},{"t":296.82,"w":"I"},{"t":296.92,"w":"won't"},{"t":297.36,"w":"be"},{"t":297.42,"w":"your"},{"t":297.9,"w":"fire"},{"t":301.96,"w":"But"},{"t":302.06,"w":"I'll"},{"t":302.32,"w":"leave"},{"t":302.66,"w":"you"},{"t":303.04,"w":"the"},{"t":303.36,"w":"light"}]}$j$::jsonb WHERE id = 'i-won-t-be-your-fire' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
 UPDATE tracks SET lyrics = $j$[Intro]
@@ -1210,3 +2240,3798 @@ UPDATE tracks SET lyrics = $j$[Intro]
 [05:01.94] But I'll leave you the light
 $j$ WHERE id = 'i-won-t-be-your-fire' AND coalesce(lyrics,'') = '';
 UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A raw anthem about setting boundaries in a toxic relationship where love is intertwined with self-destruction and emotional volatility. The song transitions from intimate vulnerability to explosive rebellion as the narrator refuses to be the source of their partner's pain just because they desperately want them to feel something.","overallMood":"wounded, rebellious","themes":["Toxic dependency","Emotional boundaries","Self-sacrifice vs. self-preservation","The illusion of love through pain"],"palette":["#1a0b0e","#4a3c35","#d68f7a","#2d3b49"],"sections":[{"name":"Intro","emotion":"lonely anticipation, rain-soaked vulnerability","intensity":0.43,"colorHint":"#1a0b0e","start":0.62},{"name":"Verse 1","emotion":"tense desperation, cracking under pressure","intensity":0.84,"colorHint":"#2d3b49","start":32.82},{"name":"Chorus","emotion":"explosive realization and refusal to break again","intensity":0.31,"colorHint":"#d68f7a","start":158.1},{"name":"Post-Chorus","emotion":"confused exhaustion in the quiet aftermath","intensity":0.2,"colorHint":"#1a0b0e","start":167.8},{"name":"Drop","emotion":"cinematic release of held-back energy and resolve","intensity":0.28,"colorHint":"#4a3c35","start":172.04},{"name":"Bridge","emotion":"heartbreakingly firm finality with a spark of hope","intensity":0.23,"colorHint":"#d68f7a","start":178.14}],"keywords":[{"word":"fighting","emotion":"defensive exhaustion","imageryPrompt":"A lone figure in a dark alley shielding their chest, rain mixing with tears on cracked concrete."},{"word":"burn","emotion":"destructive attraction","imageryPrompt":"Blackened hands holding onto a dying embers that singes the skin instead of warming it."},{"word":"silence","emotion":"heavy awkwardness","imageryPrompt":"A vast, empty hallway with dust motes dancing in dim light where no one speaks for too long."},{"word":"thunder","emotion":"violent release","imageryPrompt":"Dark storm clouds cracking open above a city skyline as lightning flashes briefly illuminating shattered glass."},{"word":"breaking","emotion":"shattering despair","imageryPrompt":"A porcelain heart in slow motion fracturing into jagged shards on a cold bathroom floor."},{"word":"wire","emotion":"tense restraint","imageryPrompt":"Fingers gripping frayed electrical wires wrapped tightly around knuckles, sparks jumping from the skin."}]}$j$::jsonb) WHERE id = 'i-won-t-be-your-fire' AND planet->'analysis' IS NULL;
+
+-- i-won-t-be-your-fire-japanese-mix: 687 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.88,"w":"もし"},{"t":1.36,"w":"もし"},{"t":3.1,"w":"また"},{"t":3.58,"w":"同"},{"t":3.8,"w":"じ"},{"t":4.06,"w":"時間"},{"t":4.3,"w":"に"},{"t":4.54,"w":"名"},{"t":4.66,"w":"前"},{"t":4.88,"w":"が"},{"t":5,"w":"光"},{"t":5.12,"w":"って"},{"t":5.36,"w":"た"},{"t":8.16,"w":"でも"},{"t":8.26,"w":"今日は"},{"t":8.66,"w":"出"},{"t":8.82,"w":"ない"},{"t":9.06,"w":"よ"},{"t":11.06,"w":"お"},{"t":11.55,"w":"客"},{"t":11.66,"w":"様"},{"t":11.98,"w":"が"},{"t":12.18,"w":"お"},{"t":12.24,"w":"か"},{"t":12.36,"w":"け"},{"t":12.46,"w":"にな"},{"t":12.66,"w":"った"},{"t":12.86,"w":"電"},{"t":13.06,"w":"話"},{"t":13.3,"w":"は"},{"t":15.3,"w":"現在"},{"t":15.48,"w":"は"},{"t":15.7,"w":"繋"},{"t":15.92,"w":"ぎ"},{"t":16.08,"w":"でき"},{"t":16.2,"w":"ません"},{"t":18.43,"w":"雨"},{"t":18.64,"w":"の"},{"t":19.12,"w":"音"},{"t":19.7,"w":"だけ"},{"t":20.52,"w":"が"},{"t":20.94,"w":"残"},{"t":21.56,"w":"る"},{"t":22.06,"w":"の"},{"t":22.94,"w":"R"},{"t":24.51,"w":"ain"},{"t":25.54,"w":"on"},{"t":26.18,"w":"glass"},{"t":26.7,"w":"G"},{"t":27.16,"w":"uitar"},{"t":27.94,"w":"comes"},{"t":28.72,"w":"in"},{"t":29.02,"w":"slow"},{"t":30.72,"w":"80"},{"t":31.12,"w":"8"},{"t":32.32,"w":"He"},{"t":32.58,"w":"art"},{"t":33.08,"w":"beat"},{"t":33.58,"w":"under"},{"t":34.1,"w":"the"},{"t":34.62,"w":"floor"},{"t":35,"w":"I"},{"t":35.56,"w":"won"},{"t":36.04,"w":"'t"},{"t":36.12,"w":"be"},{"t":36.28,"w":"your"},{"t":36.68,"w":"fire"},{"t":38.32,"w":"もう"},{"t":38.42,"w":"燃"},{"t":38.82,"w":"え"},{"t":39,"w":"た"},{"t":39.1,"w":"く"},{"t":39.42,"w":"ない"},{"t":39.92,"w":"の"},{"t":40.48,"w":"痛"},{"t":41.15,"w":"い"},{"t":41.6,"w":"言"},{"t":42.42,"w":"葉"},{"t":42.52,"w":"で"},{"t":43.6,"w":"静"},{"t":43.74,"w":"き"},{"t":43.96,"w":"さ"},{"t":44.22,"w":"を"},{"t":44.26,"w":"壊"},{"t":44.66,"w":"した"},{"t":45.14,"w":"く"},{"t":45.58,"w":"ない"},{"t":46.2,"w":"I"},{"t":46.44,"w":"know"},{"t":46.7,"w":"you"},{"t":47.12,"w":"miss"},{"t":47.76,"w":"the"},{"t":47.86,"w":"thunder"},{"t":48.51,"w":"夜"},{"t":48.88,"w":"が"},{"t":49.18,"w":"う"},{"t":49.34,"w":"る"},{"t":49.52,"w":"さ"},{"t":49.64,"w":"す"},{"t":49.78,"w":"ぎ"},{"t":50.14,"w":"る"},{"t":50.52,"w":"から"},{"t":52.64,"w":"私"},{"t":53.08,"w":"は"},{"t":53.76,"w":"もう"},{"t":54.44,"w":"君"},{"t":54.8,"w":"を"},{"t":55.08,"w":"壊"},{"t":55.44,"w":"す"},{"t":55.68,"w":"リ"},{"t":55.82,"w":"ズ"},{"t":56.06,"w":"ム"},{"t":56.24,"w":"にな"},{"t":56.68,"w":"れない"},{"t":60.68,"w":"I"},{"t":61.34,"w":"won"},{"t":61.84,"w":"'t"},{"t":61.9,"w":"be"},{"t":62.04,"w":"your"},{"t":62.52,"w":"fire"},{"t":65.98,"w":"まだ"},{"t":66.72,"w":"好"},{"t":67.12,"w":"き"},{"t":68.7,"w":"寒"},{"t":69.28,"w":"く"},{"t":69.5,"w":"なる"},{"t":69.82,"w":"た"},{"t":70.1,"w":"び"},{"t":70.22,"w":"電"},{"t":70.44,"w":"話"},{"t":70.78,"w":"して"},{"t":71.04,"w":"く"},{"t":71.24,"w":"る"},{"t":71.48,"w":"ね"},{"t":71.68,"w":"ポ"},{"t":72.04,"w":"ス"},{"t":72.16,"w":"ター"},{"t":72.44,"w":"だ"},{"t":72.54,"w":"ら"},{"t":72.72,"w":"け"},{"t":72.92,"w":"の"},{"t":72.98,"w":"部"},{"t":73.18,"w":"屋"},{"t":73.42,"w":"幽"},{"t":74.4,"w":"霊"},{"t":74.8,"w":"みたい"},{"t":75.1,"w":"って"},{"t":75.42,"w":"笑"},{"t":75.84,"w":"う"},{"t":76.38,"w":"けど"},{"t":78.42,"w":"本当"},{"t":79,"w":"を"},{"t":79.36,"w":"感じ"},{"t":79.7,"w":"たい"},{"t":80.12,"w":"って"},{"t":80.34,"w":"また"},{"t":80.62,"w":"言"},{"t":80.82,"w":"うん"},{"t":81.1,"w":"だ"},{"t":81.24,"w":"ね"},{"t":81.44,"w":"でも"},{"t":82.1,"w":"私"},{"t":82.38,"w":"が"},{"t":82.82,"w":"返"},{"t":83.1,"w":"事"},{"t":83.3,"w":"する"},{"t":83.6,"w":"た"},{"t":83.94,"w":"び"},{"t":84.26,"w":"君"},{"t":84.56,"w":"は"},{"t":84.88,"w":"も"},{"t":84.98,"w":"っと"},{"t":85.44,"w":"壊"},{"t":86.48,"w":"れて"},{"t":87.06,"w":"いく"},{"t":89.6,"w":"コ"},{"t":89.84,"w":"ンビ"},{"t":90.44,"w":"ニ"},{"t":90.64,"w":"の"},{"t":90.82,"w":"白"},{"t":91.08,"w":"い"},{"t":91.42,"w":"ライ"},{"t":91.66,"w":"ト"},{"t":91.84,"w":"濡"},{"t":92.12,"w":"れた"},{"t":92.38,"w":"駅"},{"t":92.74,"w":"の"},{"t":92.96,"w":"ホ"},{"t":93.1,"w":"ーム"},{"t":93.36,"w":"優"},{"t":93.72,"w":"し"},{"t":93.92,"w":"さ"},{"t":94.2,"w":"だ"},{"t":94.28,"w":"った"},{"t":94.48,"w":"もの"},{"t":94.9,"w":"が"},{"t":95.26,"w":"戦"},{"t":95.98,"w":"争"},{"t":96.42,"w":"にな"},{"t":96.66,"w":"る"},{"t":97.22,"w":"夜"},{"t":97.68,"w":"も"},{"t":98.28,"w":"知"},{"t":98.92,"w":"ってる"},{"t":100.7,"w":"傷"},{"t":101.28,"w":"が"},{"t":101.64,"w":"深"},{"t":101.82,"w":"い"},{"t":102.2,"w":"ほど"},{"t":102.44,"w":"愛"},{"t":103.07,"w":"だ"},{"t":103.2,"w":"と思"},{"t":103.46,"w":"ってる"},{"t":103.94,"w":"でも"},{"t":104.38,"w":"痛"},{"t":104.68,"w":"み"},{"t":104.96,"w":"だけ"},{"t":105.16,"w":"じゃ"},{"t":105.48,"w":"幸"},{"t":105.64,"w":"せ"},{"t":106.16,"w":"には"},{"t":106.44,"w":"な"},{"t":106.62,"w":"れない"},{"t":107.13,"w":"昔"},{"t":107.78,"w":"は"},{"t":108.14,"w":"わ"},{"t":108.4,"w":"ざ"},{"t":108.56,"w":"と"},{"t":108.86,"w":"火"},{"t":109.16,"w":"を"},{"t":109.28,"w":"つ"},{"t":109.46,"w":"けて"},{"t":109.72,"w":"泣"},{"t":110.1,"w":"いて"},{"t":110.28,"w":"た"},{"t":110.52,"w":"喉"},{"t":110.96,"w":"が"},{"t":111.18,"w":"切"},{"t":111.4,"w":"れる"},{"t":111.7,"w":"く"},{"t":111.84,"w":"らい"},{"t":112.24,"w":"酷"},{"t":112.56,"w":"い"},{"t":112.76,"w":"こと"},{"t":113.04,"w":"も"},{"t":113.3,"w":"言"},{"t":113.48,"w":"った"},{"t":113.95,"w":"でも"},{"t":114.5,"w":"T"},{"t":114.72,"w":"on"},{"t":114.8,"w":"ight"},{"t":114.98,"w":"もう"},{"t":115.28,"w":"戻"},{"t":115.74,"w":"れない"},{"t":116.1,"w":"君"},{"t":116.68,"w":"を"},{"t":116.92,"w":"愛"},{"t":117.2,"w":"して"},{"t":117.62,"w":"る"},{"t":118.12,"w":"なら"},{"t":118.64,"w":"I"},{"t":119.36,"w":"can"},{"t":119.94,"w":"be"},{"t":120.61,"w":"your"},{"t":121.08,"w":"fire"},{"t":121.52,"w":"I"},{"t":122.1,"w":"won"},{"t":122.36,"w":"'t"},{"t":122.56,"w":"be"},{"t":122.69,"w":"your"},{"t":123.14,"w":"fire"},{"t":124.74,"w":"もう"},{"t":124.92,"w":"燃"},{"t":125.24,"w":"え"},{"t":125.42,"w":"た"},{"t":125.52,"w":"く"},{"t":125.72,"w":"ない"},{"t":126.3,"w":"の"},{"t":126.92,"w":"痛"},{"t":127.42,"w":"い"},{"t":128.2,"w":"言"},{"t":128.3,"w":"葉"},{"t":128.92,"w":"で"},{"t":130.02,"w":"静"},{"t":130.12,"w":"き"},{"t":130.38,"w":"さ"},{"t":130.64,"w":"を"},{"t":130.7,"w":"壊"},{"t":131.08,"w":"した"},{"t":131.56,"w":"く"},{"t":132,"w":"ない"},{"t":132.56,"w":"I"},{"t":132.88,"w":"know"},{"t":133.2,"w":"you"},{"t":133.52,"w":"miss"},{"t":133.96,"w":"the"},{"t":134.28,"w":"thunder"},{"t":134.74,"w":"夜"},{"t":135.3,"w":"が"},{"t":135.64,"w":"う"},{"t":135.76,"w":"る"},{"t":135.92,"w":"さ"},{"t":136.04,"w":"す"},{"t":136.2,"w":"ぎ"},{"t":136.56,"w":"る"},{"t":136.9,"w":"から"},{"t":137.42,"w":"でも"},{"t":138.54,"w":"私"},{"t":139.36,"w":"は"},{"t":139.72,"w":"もう"},{"t":140.68,"w":"君"},{"t":141.2,"w":"を"},{"t":141.52,"w":"壊"},{"t":141.86,"w":"す"},{"t":142.08,"w":"依"},{"t":142.34,"w":"存"},{"t":142.58,"w":"にな"},{"t":143.2,"w":"れない"},{"t":143.78,"w":"一"},{"t":144.61,"w":"人"},{"t":145.04,"w":"に"},{"t":145.18,"w":"し"},{"t":145.28,"w":"ない"},{"t":145.78,"w":"で"},{"t":146.5,"w":"一"},{"t":147.12,"w":"人"},{"t":147.72,"w":"に"},{"t":147.96,"w":"し"},{"t":148.08,"w":"ない"},{"t":148.62,"w":"で"},{"t":149.28,"w":"この"},{"t":150.24,"w":"夜"},{"t":150.66,"w":"の"},{"t":150.98,"w":"中"},{"t":151.18,"w":"で"},{"t":152.68,"w":"消"},{"t":152.98,"w":"え"},{"t":153.4,"w":"そう"},{"t":153.78,"w":"なんだ"},{"t":154.78,"w":"消"},{"t":155.46,"w":"せ"},{"t":155.64,"w":"ない"},{"t":155.9,"w":"Now"},{"t":156.2,"w":"my"},{"t":156.34,"w":"death"},{"t":156.62,"w":"screen"},{"t":156.94,"w":"の"},{"t":157.18,"w":"中"},{"t":157.46,"w":"黒"},{"t":157.9,"w":"い"},{"t":158.12,"w":"バ"},{"t":158.2,"w":"ー"},{"t":158.4,"w":"カ"},{"t":158.5,"w":"ー"},{"t":158.74,"w":"眠"},{"t":159.08,"w":"れない"},{"t":159.44,"w":"ま"},{"t":160.1,"w":"ま"},{"t":160.38,"w":"平"},{"t":160.7,"w":"和"},{"t":160.92,"w":"なん"},{"t":161,"w":"て"},{"t":161.42,"w":"どう"},{"t":161.66,"w":"感じ"},{"t":162.14,"w":"れ"},{"t":162.4,"w":"ば"},{"t":162.58,"w":"いい?"},{"t":162.92,"w":"怒"},{"t":163.12,"w":"った"},{"t":163.44,"w":"君"},{"t":163.7,"w":"だけ"},{"t":164.1,"w":"が"},{"t":164.38,"w":"まだ"},{"t":164.6,"w":"近"},{"t":164.9,"w":"く"},{"t":165.22,"w":"に"},{"t":165.36,"w":"いた"},{"t":165.68,"w":"静"},{"t":166.06,"w":"かな"},{"t":166.38,"w":"夜"},{"t":166.68,"w":"ほど"},{"t":167.1,"w":"息"},{"t":167.4,"w":"が"},{"t":167.64,"w":"でき"},{"t":167.92,"w":"なく"},{"t":168.26,"w":"て"},{"t":168.52,"w":"これ"},{"t":168.82,"w":"を"},{"t":169.04,"w":"愛"},{"t":169.3,"w":"だ"},{"t":169.6,"w":"って"},{"t":169.7,"w":"呼"},{"t":170,"w":"んで"},{"t":170.4,"w":"逃"},{"t":170.72,"w":"げ"},{"t":170.76,"w":"て"},{"t":170.94,"w":"た"},{"t":171.2,"w":"冷"},{"t":171.48,"w":"たい"},{"t":171.92,"w":"言"},{"t":172.2,"w":"葉"},{"t":172.58,"w":"でも"},{"t":172.82,"w":"いい"},{"t":173.16,"w":"まだ"},{"t":173.46,"w":"ここ"},{"t":173.8,"w":"に"},{"t":174.2,"w":"いる"},{"t":174.44,"w":"って"},{"t":174.74,"w":"証"},{"t":175.1,"w":"明"},{"t":175.42,"w":"して"},{"t":175.62,"w":"欲"},{"t":175.92,"w":"しい"},{"t":176.24,"w":"暗"},{"t":176.68,"w":"闇"},{"t":177.02,"w":"が"},{"t":177.28,"w":"怖"},{"t":177.5,"w":"い"},{"t":177.84,"w":"んだ"},{"t":178.7,"w":"聞"},{"t":179.17,"w":"こ"},{"t":179.32,"w":"えて"},{"t":179.52,"w":"る"},{"t":179.64,"w":"よ"},{"t":181,"w":"ちゃん"},{"t":181.1,"w":"と"},{"t":181.36,"w":"でも"},{"t":182.36,"w":"もう"},{"t":184.22,"w":"傷"},{"t":184.32,"w":"つ"},{"t":184.56,"w":"けて"},{"t":184.72,"w":"ま"},{"t":184.88,"w":"では"},{"t":185.1,"w":"愛"},{"t":185.32,"w":"せ"},{"t":185.5,"w":"ない"},{"t":186.08,"w":"夜"},{"t":186.68,"w":"が"},{"t":188.22,"w":"また"},{"t":188.46,"w":"来"},{"t":188.72,"w":"た"},{"t":188.88,"w":"ら"},{"t":189.08,"w":"どう"},{"t":189.36,"w":"す"},{"t":189.52,"w":"れ"},{"t":189.74,"w":"ば"},{"t":189.92,"w":"いい?"},{"t":190.54,"w":"朝"},{"t":190.72,"w":"まで"},{"t":191.14,"w":"B"},{"t":191.28,"w":"reat"},{"t":191.54,"w":"he"},{"t":191.58,"w":"日"},{"t":191.86,"w":"には"},{"t":192.16,"w":"戻"},{"t":192.56,"w":"ら"},{"t":192.78,"w":"ない"},{"t":193.06,"w":"で"},{"t":193.34,"w":"もし"},{"t":193.66,"w":"消"},{"t":193.96,"w":"え"},{"t":194.2,"w":"た"},{"t":194.28,"w":"ら"},{"t":194.58,"w":"電"},{"t":194.9,"w":"波"},{"t":195.02,"w":"も"},{"t":195.2,"w":"切"},{"t":195.38,"w":"れた"},{"t":195.66,"w":"ら"},{"t":196,"w":"灯"},{"t":196.4,"w":"り"},{"t":196.56,"w":"は"},{"t":196.76,"w":"残"},{"t":197.12,"w":"す"},{"t":197.46,"w":"よ"},{"t":197.6,"w":"でも"},{"t":198.16,"w":"フ"},{"t":198.38,"w":"ァ"},{"t":198.68,"w":"イ"},{"t":198.68,"w":"ヤ"},{"t":198.82,"w":"ー"},{"t":198.94,"w":"は"},{"t":199.2,"w":"上"},{"t":199.52,"w":"げ"},{"t":199.62,"w":"ない"},{"t":200.1,"w":"嫌"},{"t":200.42,"w":"い"},{"t":200.54,"w":"って"},{"t":200.66,"w":"言"},{"t":201.04,"w":"って"},{"t":201.46,"w":"言"},{"t":201.66,"w":"わ"},{"t":201.84,"w":"ない"},{"t":202.3,"w":"終"},{"t":202.74,"w":"わ"},{"t":202.94,"w":"り"},{"t":203.04,"w":"って"},{"t":203.24,"w":"言"},{"t":203.6,"w":"って"},{"t":204,"w":"言"},{"t":204.42,"w":"わ"},{"t":204.66,"w":"ない"},{"t":205.28,"w":"じゃあ"},{"t":205.42,"w":"何"},{"t":205.72,"w":"か"},{"t":205.98,"w":"言"},{"t":206.18,"w":"って"},{"t":206.56,"w":"好"},{"t":206.9,"w":"き"},{"t":207.1,"w":"だから"},{"t":207.32,"w":"こ"},{"t":207.72,"w":"そ"},{"t":208.08,"w":"もう"},{"t":208.82,"w":"傷"},{"t":209.52,"w":"には"},{"t":209.96,"w":"なら"},{"t":210.6,"w":"ない"},{"t":211.06,"w":"君"},{"t":211.66,"w":"を"},{"t":212.3,"w":"想"},{"t":212.7,"w":"って"},{"t":213.22,"w":"も"},{"t":213.68,"w":"電"},{"t":214.37,"w":"話"},{"t":215.18,"w":"は"},{"t":215.74,"w":"し"},{"t":215.84,"w":"ない"},{"t":216.52,"w":"愛"},{"t":217.18,"w":"して"},{"t":217.8,"w":"いて"},{"t":218.56,"w":"も"},{"t":219.26,"w":"部"},{"t":219.92,"w":"屋"},{"t":220.24,"w":"を"},{"t":220.78,"w":"出"},{"t":220.88,"w":"る"},{"t":221.66,"w":"よ"},{"t":222.08,"w":"好"},{"t":222.98,"w":"き"},{"t":223.08,"w":"には"},{"t":224.22,"w":"な"},{"t":225.18,"w":"れない"},{"t":226.28,"w":"けど"},{"t":228.32,"w":"朝"},{"t":228.67,"w":"を"},{"t":230.37,"w":"願"},{"t":230.54,"w":"ってる"},{"t":233.38,"w":"I"},{"t":233.48,"w":"won"},{"t":233.9,"w":"'t"},{"t":234.08,"w":"be"},{"t":234.22,"w":"a"},{"t":234.6,"w":"fire"},{"t":235.43,"w":"もう"},{"t":236.38,"w":"燃"},{"t":236.76,"w":"え"},{"t":236.86,"w":"た"},{"t":237.02,"w":"く"},{"t":237.38,"w":"ない"},{"t":237.82,"w":"の"},{"t":238.42,"w":"痛"},{"t":238.88,"w":"い"},{"t":239.52,"w":"言"},{"t":240.13,"w":"葉"},{"t":240.44,"w":"で"},{"t":241.56,"w":"静"},{"t":241.66,"w":"き"},{"t":241.9,"w":"さ"},{"t":242.16,"w":"を"},{"t":242.2,"w":"壊"},{"t":242.56,"w":"した"},{"t":243.06,"w":"く"},{"t":243.54,"w":"ない"},{"t":244.06,"w":"I"},{"t":244.46,"w":"know"},{"t":244.74,"w":"you"},{"t":245.02,"w":"missed"},{"t":245.52,"w":"that"},{"t":245.88,"w":"thunder"},{"t":246.72,"w":"夜"},{"t":246.82,"w":"が"},{"t":247.14,"w":"う"},{"t":247.26,"w":"る"},{"t":247.44,"w":"さ"},{"t":247.56,"w":"す"},{"t":247.72,"w":"ぎ"},{"t":248.1,"w":"る"},{"t":248.44,"w":"から"},{"t":249.02,"w":"でも"},{"t":250.08,"w":"私"},{"t":250.94,"w":"は"},{"t":251.68,"w":"もう"},{"t":252.38,"w":"君"},{"t":252.72,"w":"を"},{"t":253.02,"w":"壊"},{"t":253.38,"w":"す"},{"t":253.6,"w":"E"},{"t":253.78,"w":"ason"},{"t":254.18,"w":"にな"},{"t":254.7,"w":"れない"},{"t":255.28,"w":"I"},{"t":256.02,"w":"won"},{"t":256.28,"w":"'t"},{"t":256.44,"w":"be"},{"t":256.54,"w":"a"},{"t":256.9,"w":"fire"},{"t":257.47,"w":"I"},{"t":258.62,"w":"won"},{"t":259.08,"w":"'t"},{"t":259.16,"w":"be"},{"t":259.3,"w":"your"},{"t":259.82,"w":"love"},{"t":261.06,"w":"君"},{"t":261.16,"w":"が"},{"t":261.4,"w":"自"},{"t":261.6,"w":"分"},{"t":261.98,"w":"を"},{"t":262.1,"w":"決"},{"t":262.48,"w":"め"},{"t":262.76,"w":"る"},{"t":263.01,"w":"ため"},{"t":263.26,"w":"の"},{"t":263.75,"w":"ダ"},{"t":264.2,"w":"ー"},{"t":264.2,"w":"ク"},{"t":264.38,"w":"ネ"},{"t":264.56,"w":"ス"},{"t":264.86,"w":"には"},{"t":265.06,"w":"なら"},{"t":265.82,"w":"ない"},{"t":266.36,"w":"小"},{"t":266.66,"w":"さ"},{"t":266.96,"w":"な"},{"t":267.16,"w":"灯"},{"t":267.58,"w":"り"},{"t":267.92,"w":"だけ"},{"t":268.12,"w":"置"},{"t":268.76,"w":"いて"},{"t":269.06,"w":"いく"},{"t":269.54,"w":"から"},{"t":270.08,"w":"もう"},{"t":270.84,"w":"私"},{"t":271.52,"w":"は"},{"t":272.18,"w":"君"},{"t":272.92,"w":"を"},{"t":273.68,"w":"壊"},{"t":274.6,"w":"さ"},{"t":275.04,"w":"ない"},{"t":277.5,"w":"ただ"},{"t":278.04,"w":"い"},{"t":278.28,"w":"ま"},{"t":278.44,"w":"電"},{"t":278.68,"w":"話"},{"t":279.02,"w":"に"},{"t":279.16,"w":"出"},{"t":279.3,"w":"る"},{"t":279.54,"w":"こと"},{"t":279.78,"w":"が"},{"t":280.06,"w":"でき"},{"t":280.34,"w":"ません"},{"t":280.82,"w":"ピ"},{"t":281.3,"w":"ー"},{"t":281.38,"w":"という"},{"t":281.64,"w":"音"},{"t":282.3,"w":"の"},{"t":282.54,"w":"後"},{"t":282.72,"w":"に"},{"t":283.34,"w":"メ"},{"t":284.04,"w":"ッ"},{"t":284.18,"w":"セ"},{"t":284.46,"w":"ージ"},{"t":284.7,"w":"を"},{"t":284.9,"w":"どう"},{"t":285.86,"w":"ぞ"},{"t":287.86,"w":"I"},{"t":287.96,"w":"won"},{"t":288.34,"w":"'t"},{"t":288.46,"w":"be"},{"t":288.6,"w":"your"},{"t":289.06,"w":"fire"},{"t":292.06,"w":"But"},{"t":292.45,"w":"I"},{"t":293.04,"w":"'ll"},{"t":293.31,"w":"leave"},{"t":293.62,"w":"you"},{"t":293.88,"w":"the"},{"t":294.18,"w":"light"}]}$j$::jsonb WHERE id = 'i-won-t-be-your-fire-japanese-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.88] もしもし
+[Verse 1]
+[00:03.10] また同じ時間に名前が光ってた
+[Chorus]
+[00:08.16] でも今日は出ないよ
+[00:11.06] お客様がおかけになった電話は
+[00:15.30] 現在は繋ぎできません
+[00:18.43] 雨の音だけが残るの
+[00:22.94] R
+[00:24.51] ain on glass
+[00:26.70] Guitar comes in slow
+[00:30.72] 808
+[00:32.32] Heartbeat under the floor
+[00:35.00] I won't be your fire
+[00:38.32] もう燃えたくないの
+[Bridge]
+[00:40.48] 痛い言
+[00:42.42] 葉で
+[00:43.60] 静きさを壊したくない
+[00:46.20] I know you miss the thunder
+[00:48.51] 夜がうるさすぎるから
+[Drop]
+[00:52.64] 私はもう
+[00:54.44] 君を壊すリズムになれない
+[01:00.68] I won't be your fire
+[01:05.98] まだ好き
+[01:08.70] 寒くなるたび電話してくるね
+[01:11.68] ポスターだらけの部屋
+[01:13.42] 幽霊みたいって笑うけど
+[01:18.42] 本当を感じたいってまた言うんだね
+[01:21.44] でも私が返事するたび
+[01:24.26] 君はもっと壊れていく
+[01:29.60] コンビニの白いライト
+[01:31.84] 濡れた駅のホーム
+[01:33.36] 優しさだったものが
+[01:35.26] 戦争になる夜も知ってる
+[Verse 2]
+[01:40.70] 傷が深いほど愛だと思ってる
+[01:43.94] でも痛みだけじゃ幸せにはなれない
+[01:47.13] 昔はわざと火をつけて泣いてた
+[01:50.52] 喉が切れるくらい
+[01:52.24] 酷いことも言った
+[01:53.95] でもTonight
+[01:54.98] もう戻れない
+[01:56.10] 君を愛してるなら
+[01:58.64] I can be your fire
+[02:01.52] I won't be your fire
+[02:04.74] もう燃えたくないの
+[02:06.92] 痛い言葉で
+[Pre-Chorus]
+[02:10.02] 静きさを壊したくない
+[02:12.56] I know you miss the thunder
+[02:14.74] 夜がうるさすぎるから
+[Chorus]
+[02:17.42] でも私は
+[02:19.72] もう
+[02:20.68] 君を壊す依存になれない
+[02:23.78] 一人にしないで
+[02:26.50] 一人にしないで
+[02:29.28] この夜の中で
+[02:32.68] 消えそうなんだ
+[02:34.78] 消せないNow my death screenの中
+[02:37.46] 黒いバーカー
+[02:38.74] 眠れないまま
+[02:40.38] 平和なんてどう感じればいい?
+[Bridge]
+[02:42.92] 怒った君だけがまだ近くにいた
+[02:45.68] 静かな夜ほど息ができなくて
+[02:48.52] これを愛だって
+[02:49.70] 呼んで逃げてた
+[02:51.20] 冷たい言葉でもいい
+[02:53.16] まだここにいるって証明して欲しい
+[02:56.24] 暗闇が怖いんだ
+[Drop]
+[02:58.70] 聞こえてるよ
+[03:01.00] ちゃんと
+[03:01.36] でももう
+[03:04.22] 傷つけてまでは愛せない
+[03:06.08] 夜がまた来たらどうすればいい?
+[03:10.54] 朝までBreathe
+[03:11.58] 日には戻らないで
+[03:13.34] もし消えたら
+[03:14.58] 電波も切れたら
+[03:16.00] 灯りは残すよ
+[03:17.60] でも
+[03:18.16] ファイヤーは上げない
+[03:20.10] 嫌いって言って
+[03:21.46] 言わない
+[03:22.30] 終わりって言って
+[03:24.00] 言わない
+[Verse 3]
+[03:25.28] じゃあ何か言って
+[03:26.56] 好きだからこそ
+[03:28.08] もう傷にはならない
+[03:31.06] 君を想っても
+[03:33.68] 電話はしない
+[03:36.52] 愛していても
+[03:39.26] 部屋を出るよ
+[03:42.08] 好きにはなれないけど
+[03:48.32] 朝を
+[03:50.37] 願ってる
+[03:53.38] I won't be a fire
+[03:55.43] もう燃えたくないの
+[03:58.42] 痛い言葉で
+[04:01.56] 静きさを壊したくない
+[04:04.06] I know you missed that thunder
+[04:06.72] 夜がうるさすぎるから
+[04:09.02] でも私はもう
+[04:12.38] 君を壊すEasonになれない
+[04:15.28] I won't be a fire
+[04:17.47] I won't be your love
+[04:21.06] 君が自分を決めるための
+[04:23.75] ダークネスにはならない
+[04:26.36] 小さな灯りだけ
+[04:28.12] 置いていくから
+[04:30.08] もう私は
+[04:32.18] 君を壊さない
+[04:37.50] ただいま電話に出ることができません
+[04:40.82] ピーという音の後に
+[04:43.34] メッセージをどうぞ
+[04:47.86] I won't be your fire
+[Outro]
+[04:52.06] But I'll leave you the light
+$j$ WHERE id = 'i-won-t-be-your-fire-japanese-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song is a resolute refusal to become a destructive force for someone else's emotional dependency. It depicts the narrator setting boundaries against volatile passion and toxic love cycles while choosing to preserve their own peace.","overallMood":"Melancholic, Resolute","themes":["Self-Preservation","Toxic Dependency","Emotional Burnout","Boundaries in Love"],"palette":["#2A3B4C","#897F6E","#D05A5A","#1A1A1A"],"sections":[{"name":"Intro","emotion":"Quiet realization, soft hesitation","intensity":0.43,"colorHintHex":"#897F6E","start":0.88},{"name":"Verse 1","emotion":"Loneliness, waiting in the rain","intensity":0.53,"colorHintHex":"#D05A5A","start":3.1},{"name":"Chorus","emotion":"Defiant resolve to end the cycle","intensity":0.78,"colorHintHex":"#2A3B4C","start":8.16},{"name":"Bridge","emotion":"Desperate need for proof of existence in darkness","intensity":0.91,"colorHintHex":"#1A1A1A","start":40.48},{"name":"Drop","emotion":"Calm determination to stop the fire","intensity":0.71,"colorHintHex":"#D05A5A","start":52.64},{"name":"Verse 2","emotion":"Regret over past destructive passion","intensity":0.65,"colorHintHex":"#4A3B5C","start":100.7},{"name":"Pre-Chorus","emotion":"Rising tension against the noise of night","intensity":0.5,"colorHintHex":"#897F6E","start":130.02},{"name":"Verse 3","emotion":"Gentle acceptance of leaving for peace","intensity":0.15,"colorHintHex":"#897F6E","start":205.28},{"name":"Outro","emotion":"Soft hope and lingering light after the storm","intensity":0.09,"colorHintHex":"#D05A5A","start":292.06}],"keywords":[{"word":"fire","emotion":"Dangerous passion that consumes safety","imageryPrompt":"A flickering orange flame casting long, trembling shadows against a wet concrete wall in the rain."},{"word":"rain","emotion":"Melancholy cleansing and isolation","imageryPrompt":"Heavy droplets running down a grimy window pane reflecting streetlights and blurred city traffic at night."},{"word":"darkness","emotion":"Overwhelming fear of the void inside oneself","imageryPrompt":"Deep black space with faint, cold blue ambient light revealing dust motes floating in a silent room."},{"word":"silence","emotion":"Heavy pressure and suffocating quiet before breaking","imageryPrompt":"A stillness so thick it distorts the air around an empty chair, with shadows stretching unnaturally long."},{"word":"thunder","emotion":"Violent release of repressed emotional pain","imageryPrompt":"Bright white lightning splitting a dark storm cloud illuminating jagged rooftops and bare trees violently swaying."},{"word":"light","emotion":"Gentle hope or the small beacon remaining after departure","imageryPrompt":"A single warm yellow lamp glowing softly in a corner of an otherwise dark room, casting gentle pools on the floor."}]}$j$::jsonb) WHERE id = 'i-won-t-be-your-fire-japanese-mix' AND planet->'analysis' IS NULL;
+
+-- in-love-with-the-party: 272 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"We"},{"t":0.06,"w":"in"},{"t":0.24,"w":"love"},{"t":0.78,"w":"with"},{"t":1.2,"w":"the"},{"t":1.4,"w":"party,"},{"t":2.18,"w":"party"},{"t":2.7,"w":"after"},{"t":3.08,"w":"midnight"},{"t":4,"w":"Smooth"},{"t":4.38,"w":"like"},{"t":4.86,"w":"the"},{"t":5.28,"w":"chords"},{"t":5.74,"w":"in"},{"t":5.84,"w":"the"},{"t":5.96,"w":"lowlights"},{"t":7.69,"w":"808"},{"t":8.54,"w":"heartbeat,"},{"t":9.54,"w":"we've"},{"t":9.95,"w":"been"},{"t":10.14,"w":"out"},{"t":10.34,"w":"so"},{"t":10.7,"w":"right"},{"t":11.24,"w":"We"},{"t":11.6,"w":"don't"},{"t":12.02,"w":"wanna"},{"t":12.24,"w":"leave,"},{"t":12.94,"w":"we"},{"t":13.04,"w":"just"},{"t":13.3,"w":"wanna"},{"t":13.64,"w":"live"},{"t":13.98,"w":"the"},{"t":14.18,"w":"night"},{"t":14.46,"w":"alive"},{"t":15.65,"w":"We"},{"t":15.76,"w":"in"},{"t":16,"w":"love"},{"t":16.6,"w":"with"},{"t":17.56,"w":"the"},{"t":17.78,"w":"party,"},{"t":18.62,"w":"bodies"},{"t":19.28,"w":"in"},{"t":19.38,"w":"the"},{"t":19.58,"w":"same"},{"t":19.92,"w":"wave"},{"t":20.44,"w":"Pump"},{"t":20.94,"w":"up"},{"t":21.24,"w":"the"},{"t":21.44,"w":"groove,"},{"t":21.88,"w":"still"},{"t":22.08,"w":"a"},{"t":22.36,"w":"heat"},{"t":22.66,"w":"wave"},{"t":23.04,"w":"Every"},{"t":23.64,"w":"little"},{"t":23.98,"w":"moment"},{"t":24.58,"w":"that"},{"t":24.96,"w":"the"},{"t":25.06,"w":"DJ"},{"t":25.52,"w":"plays"},{"t":26.04,"w":"Got"},{"t":26.86,"w":"us"},{"t":27.4,"w":"falling"},{"t":27.7,"w":"deeper"},{"t":28.1,"w":"in"},{"t":28.48,"w":"the"},{"t":28.66,"w":"late"},{"t":29.04,"w":"night,"},{"t":29.58,"w":"hey"},{"t":29.88,"w":"Drums"},{"t":30.88,"w":"fade"},{"t":31.28,"w":"out,"},{"t":31.84,"w":"but"},{"t":32.1,"w":"we"},{"t":32.32,"w":"still"},{"t":32.62,"w":"keep"},{"t":33.02,"w":"swaying"},{"t":33.72,"w":"Low"},{"t":34.36,"w":"lights"},{"t":34.98,"w":"blow"},{"t":35.28,"w":"out,"},{"t":35.68,"w":"the"},{"t":35.8,"w":"guitar's"},{"t":36.44,"w":"still"},{"t":36.72,"w":"playing"},{"t":37.2,"w":"Soft"},{"t":38,"w":"let"},{"t":38.52,"w":"hum"},{"t":39.02,"w":"like"},{"t":39.36,"w":"a"},{"t":39.58,"w":"secret"},{"t":40.02,"w":"we're"},{"t":40.4,"w":"saving"},{"t":41.02,"w":"Heartbeat"},{"t":42.14,"w":"sync"},{"t":42.52,"w":"with"},{"t":43.06,"w":"the"},{"t":43.2,"w":"night"},{"t":43.54,"w":"we're"},{"t":44.02,"w":"craving"},{"t":44.76,"w":"On"},{"t":45.32,"w":"the"},{"t":45.36,"w":"snare"},{"t":45.8,"w":"pad,"},{"t":46.38,"w":"I"},{"t":46.72,"w":"can"},{"t":46.9,"w":"hear"},{"t":47.38,"w":"your"},{"t":47.76,"w":"whisper"},{"t":48.28,"w":"Promise"},{"t":49.08,"w":"that"},{"t":49.4,"w":"you'll"},{"t":49.62,"w":"stay"},{"t":50,"w":"till"},{"t":50.32,"w":"the"},{"t":50.58,"w":"dawn"},{"t":51.08,"w":"gets"},{"t":51.36,"w":"crisper"},{"t":51.82,"w":"Even"},{"t":52.72,"w":"when"},{"t":53.04,"w":"it's"},{"t":53.28,"w":"quiet,"},{"t":53.76,"w":"we"},{"t":53.96,"w":"still"},{"t":54.36,"w":"feel"},{"t":54.92,"w":"lifted"},{"t":55.46,"w":"Party"},{"t":55.96,"w":"in"},{"t":56.02,"w":"the"},{"t":56.02,"w":"night,"},{"t":56.02,"w":"we"},{"t":56.02,"w":"still"},{"t":56.02,"w":"keep"},{"t":56.02,"w":"swaying"},{"t":56.04,"w":"Party"},{"t":56.48,"w":"in"},{"t":56.62,"w":"our"},{"t":56.88,"w":"souls,"},{"t":57.44,"w":"that's"},{"t":57.76,"w":"a"},{"t":57.78,"w":"lifelong"},{"t":58.3,"w":"ticket"},{"t":59.04,"w":"We"},{"t":60.04,"w":"in"},{"t":60.38,"w":"love"},{"t":60.76,"w":"with"},{"t":61.18,"w":"the"},{"t":61.42,"w":"party,"},{"t":62.16,"w":"party"},{"t":62.48,"w":"after"},{"t":63.04,"w":"midnight"},{"t":63.7,"w":"Smooth"},{"t":64.34,"w":"like"},{"t":64.82,"w":"the"},{"t":65.04,"w":"chords"},{"t":65.56,"w":"in"},{"t":65.82,"w":"the"},{"t":65.96,"w":"lowlights"},{"t":67.72,"w":"808"},{"t":68.62,"w":"heartbeat,"},{"t":69.5,"w":"we've"},{"t":69.84,"w":"been"},{"t":70.12,"w":"out"},{"t":70.34,"w":"so"},{"t":70.7,"w":"right"},{"t":71.22,"w":"We"},{"t":71.72,"w":"don't"},{"t":71.96,"w":"wanna"},{"t":72.24,"w":"leave,"},{"t":72.84,"w":"we"},{"t":73.06,"w":"just"},{"t":73.3,"w":"wanna"},{"t":73.64,"w":"live"},{"t":73.96,"w":"the"},{"t":74.18,"w":"night"},{"t":74.48,"w":"alive"},{"t":75.46,"w":"We"},{"t":75.8,"w":"in"},{"t":75.96,"w":"love"},{"t":76.56,"w":"with"},{"t":77.6,"w":"the"},{"t":77.76,"w":"party,"},{"t":78.54,"w":"bodies"},{"t":78.9,"w":"in"},{"t":79.38,"w":"the"},{"t":79.58,"w":"same"},{"t":79.9,"w":"wave"},{"t":80.42,"w":"Pump"},{"t":80.96,"w":"up"},{"t":81.22,"w":"the"},{"t":81.38,"w":"groove,"},{"t":81.86,"w":"still"},{"t":82.14,"w":"a"},{"t":82.42,"w":"heat"},{"t":82.66,"w":"wave"},{"t":83.06,"w":"Every"},{"t":83.64,"w":"little"},{"t":84.06,"w":"moment"},{"t":84.6,"w":"that"},{"t":84.88,"w":"the"},{"t":85.08,"w":"DJ"},{"t":85.52,"w":"plays"},{"t":85.98,"w":"Pump"},{"t":86.02,"w":"up"},{"t":86.02,"w":"the"},{"t":86.02,"w":"groove,"},{"t":86.02,"w":"still"},{"t":86.02,"w":"a"},{"t":86.02,"w":"heat"},{"t":86.02,"w":"wave"},{"t":86.04,"w":"Got"},{"t":86.88,"w":"us"},{"t":87.4,"w":"falling"},{"t":87.7,"w":"deeper"},{"t":88.12,"w":"in"},{"t":88.5,"w":"the"},{"t":88.66,"w":"late"},{"t":89.04,"w":"night,"},{"t":89.58,"w":"hey"},{"t":90.04,"w":"Drums"},{"t":90.94,"w":"come"},{"t":91.2,"w":"back"},{"t":91.7,"w":"for"},{"t":92.06,"w":"a"},{"t":92.32,"w":"second,"},{"t":92.86,"w":"then"},{"t":93.02,"w":"they"},{"t":93.24,"w":"slide"},{"t":93.44,"w":"away"},{"t":93.86,"w":"Vinyl"},{"t":94.52,"w":"crackle"},{"t":95.1,"w":"hold"},{"t":95.34,"w":"the"},{"t":95.48,"w":"memory"},{"t":95.94,"w":"of"},{"t":96.56,"w":"this"},{"t":96.88,"w":"perfect"},{"t":97.26,"w":"day"},{"t":97.64,"w":"Last"},{"t":98.16,"w":"chord"},{"t":98.56,"w":"ring"},{"t":99.04,"w":"while"},{"t":99.4,"w":"we"},{"t":99.6,"w":"walk"},{"t":99.94,"w":"in"},{"t":100.2,"w":"the"},{"t":100.5,"w":"city"},{"t":100.86,"w":"light"},{"t":101.18,"w":"Still"},{"t":101.4,"w":"in"},{"t":101.52,"w":"love"},{"t":101.8,"w":"with"},{"t":102.12,"w":"the"},{"t":102.3,"w":"party"},{"t":102.68,"w":"carried"},{"t":103.1,"w":"into"},{"t":103.7,"w":"the"},{"t":104.02,"w":"night,"},{"t":104.64,"w":"yeah"},{"t":117.86,"w":"Don't"},{"t":119.18,"w":"be"},{"t":119.48,"w":"shy"},{"t":121.04,"w":"We're"},{"t":121.7,"w":"in"},{"t":121.7,"w":"love"},{"t":121.7,"w":"with"},{"t":121.72,"w":"the"},{"t":121.72,"w":"party"},{"t":121.72,"w":"the"},{"t":121.72,"w":"way"},{"t":121.72,"w":"we"},{"t":121.72,"w":"are"}]}$j$::jsonb WHERE id = 'in-love-with-the-party' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:00.00] We in love with the party,
+[00:02.18] party after midnight
+[00:04.00] Smooth like the chords in the lowlights
+[00:07.69] 808 heartbeat, we've been out so right
+[00:11.24] We don't wanna leave,
+[00:12.94] we just wanna live the night alive
+[Chorus]
+[00:15.65] We in love with the party,
+[00:18.62] bodies in the same wave
+[00:20.44] Pump up the groove, still a heat wave
+[00:23.04] Every little moment that the DJ plays
+[00:26.04] Got us falling deeper in the late night, hey
+[Bridge]
+[00:29.88] Drums fade out, but we still keep swaying
+[00:33.72] Low lights blow out, the guitar's still playing
+[00:37.20] Soft let hum like a secret we're saving
+[00:41.02] Heartbeat sync with the night we're craving
+[Drop]
+[00:44.76] On the snare pad, I can hear your whisper
+[00:48.28] Promise that you'll stay till the dawn gets crisper
+[00:51.82] Even when it's quiet, we still feel lifted
+[00:55.46] Party in the night, we still keep swaying
+[00:56.04] Party in our souls, that's a lifelong ticket
+[Verse 2]
+[00:59.04] We in love with the party, party after midnight
+[01:03.70] Smooth like the chords in the lowlights
+[01:07.72] 808 heartbeat, we've been out so right
+[01:11.22] We don't wanna leave,
+[01:12.84] we just wanna live the night alive
+[Chorus]
+[01:15.46] We in love with the party,
+[01:18.54] bodies in the same wave
+[01:20.42] Pump up the groove, still a heat wave
+[01:23.06] Every little moment that the DJ plays
+[01:25.98] Pump up the groove, still a heat wave
+[01:26.04] Got us falling deeper in the late night, hey
+[01:30.04] Drums come back for a second,
+[01:32.86] then they slide away
+[01:33.86] Vinyl crackle hold the memory of this perfect day
+[01:37.64] Last chord ring while we walk in the city light
+[01:41.18] Still in love with the party carried into the night,
+[01:44.64] yeah
+[Outro]
+[01:57.86] Don't be shy
+[02:01.04] We're in love with the party the way we are
+$j$ WHERE id = 'in-love-with-the-party' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This mid-tempo Pop House track explores an intimate connection found within a bustling party atmosphere, where the music acts as a heartbeat syncing two souls until dawn.","overallMood":"Euphoric","themes":["Intimacy amidst crowds","Nighttime escapism","Sensory warmth (synth pads/guitar)","Enduring connection"],"palette":["#1A2634","#E8D5B7","#FF9F00","#C0392B"],"sections":[{"name":"Intro","emotion":"Anticipation and warmth","intensity":0.58,"colorHint":"#1a2634","start":0},{"name":"Verse 1","emotion":"Relaxed groove and confidence","intensity":0.85,"colorHint":"#e8d5b7","start":0},{"name":"Chorus","emotion":"Climactic warmth with fading rhythm","intensity":0.98,"colorHint":"#ffa342","start":15.65},{"name":"Bridge","emotion":"Soft vulnerability and acoustic intimacy","intensity":0.55,"colorHint":"#c0392b","start":29.88},{"name":"Drop","emotion":"Emotional lift with rhythmic drive","intensity":0.61,"colorHint":"#ff6f00","start":44.76},{"name":"Verse 2","emotion":"Deepened nostalgia and flow","intensity":0.2,"colorHint":"#e8d5b7","start":59.04},{"name":"Outro","emotion":"Quiet acceptance and lingering love","intensity":0.14,"colorHint":"#1f386b","start":117.86}],"keywords":[{"word":"heartbeat","emotion":"Rhythmic pulse of connection","imageryPrompt":"Close up macro shot of a glowing, warm orange digital heartbeat waveform pulsing against a dark blue background."},{"word":"lowlights","emotion":"Soft ambient warmth","imageryPrompt":"Dimly lit room with soft golden light filtering through shadows creating smooth gradients on skin and fabric textures."},{"word":"wave","emotion":"Unifying flow of bodies","imageryPrompt":"A crowd of silhouettes moving in perfect unison like a single fluid body under moonlight, rippling with energy."},{"word":"heat","emotion":"Intense sensory sensation","imageryPrompt":"Heat haze distorting city lights into shimmering golden streaks above a dancing crowd at night."},{"word":"whisper","emotion":"Secret promise in the dark","imageryPrompt":"Two figures standing close together, one leaning towards the other's ear, illuminated by a single soft spotlight against darkness."},{"word":"crispier","emotion":"Clarity of dawn arrival","imageryPrompt":"Pale blue morning light breaking over a city skyline with sharp, clear details replacing the previous haze."}]}$j$::jsonb) WHERE id = 'in-love-with-the-party' AND planet->'analysis' IS NULL;
+
+-- international-heat: 518 words, 8 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":3.62,"w":"Boy,"},{"t":4.26,"w":"boy,"},{"t":5.38,"w":"why"},{"t":6.05,"w":"you"},{"t":6.22,"w":"leanin'"},{"t":6.56,"w":"on"},{"t":6.68,"w":"my"},{"t":6.88,"w":"ear?"},{"t":8.1,"w":"Say"},{"t":8.8,"w":"it"},{"t":8.94,"w":"real"},{"t":9.18,"w":"clear,"},{"t":9.74,"w":"mommy"},{"t":12.3,"w":"I"},{"t":13.09,"w":"can"},{"t":13.25,"w":"feel"},{"t":13.5,"w":"that"},{"t":13.66,"w":"body"},{"t":13.92,"w":"talkin'"},{"t":14.46,"w":"from"},{"t":14.58,"w":"here"},{"t":14.94,"w":"And"},{"t":15.34,"w":"I'm"},{"t":15.7,"w":"in"},{"t":15.8,"w":"a"},{"t":15.98,"w":"mile,"},{"t":16.26,"w":"I'm"},{"t":16.56,"w":"cheap"},{"t":17.58,"w":"Like"},{"t":18.22,"w":"a"},{"t":18.36,"w":"knee,"},{"t":18.98,"w":"come"},{"t":19.56,"w":"see"},{"t":20.12,"w":"I"},{"t":21.02,"w":"caught"},{"t":21.4,"w":"you"},{"t":21.5,"w":"starin'"},{"t":21.88,"w":"from"},{"t":21.96,"w":"across"},{"t":22.26,"w":"the"},{"t":22.58,"w":"room"},{"t":23,"w":"Don't"},{"t":23.62,"w":"play"},{"t":23.8,"w":"shy,"},{"t":24.64,"w":"I"},{"t":25.02,"w":"can"},{"t":25.16,"w":"read"},{"t":25.42,"w":"your"},{"t":25.68,"w":"mood"},{"t":26.1,"w":"One"},{"t":26.56,"w":"little"},{"t":26.96,"w":"touch,"},{"t":27.36,"w":"now"},{"t":27.48,"w":"your"},{"t":27.64,"w":"pulse"},{"t":27.9,"w":"go"},{"t":28.12,"w":"boom"},{"t":28.5,"w":"Tonight,"},{"t":29.12,"w":"I'm"},{"t":29.36,"w":"the"},{"t":29.42,"w":"fire,"},{"t":29.8,"w":"you"},{"t":29.98,"w":"the"},{"t":30.06,"w":"fuel"},{"t":30.34,"w":"in"},{"t":30.58,"w":"this"},{"t":30.7,"w":"worldwide"},{"t":31.08,"w":"room"},{"t":31.6,"w":"I"},{"t":32.02,"w":"see"},{"t":32.42,"w":"you"},{"t":32.54,"w":"thinkin'"},{"t":32.9,"w":"bout"},{"t":33.02,"w":"me"},{"t":33.3,"w":"on"},{"t":33.6,"w":"your"},{"t":33.72,"w":"face"},{"t":34.12,"w":"You"},{"t":34.66,"w":"want"},{"t":34.84,"w":"my"},{"t":34.98,"w":"hips"},{"t":35.22,"w":"movin'"},{"t":35.62,"w":"all"},{"t":35.82,"w":"those"},{"t":36.16,"w":"waves"},{"t":36.62,"w":"Right"},{"t":37.02,"w":"kinda"},{"t":37.4,"w":"wrong"},{"t":37.66,"w":"in"},{"t":37.9,"w":"the"},{"t":38,"w":"perfect"},{"t":38.44,"w":"place"},{"t":38.88,"w":"No"},{"t":39.3,"w":"clothes,"},{"t":39.62,"w":"just"},{"t":39.86,"w":"skin,"},{"t":40.22,"w":"just"},{"t":40.46,"w":"sweat,"},{"t":40.76,"w":"just"},{"t":40.94,"w":"bass"},{"t":41.34,"w":"Oh,"},{"t":42,"w":"is"},{"t":42.32,"w":"that"},{"t":42.44,"w":"what"},{"t":42.76,"w":"you"},{"t":42.92,"w":"like?"},{"t":43.7,"w":"You"},{"t":44.26,"w":"been"},{"t":44.48,"w":"teasin'"},{"t":45.14,"w":"all"},{"t":45.28,"w":"night"},{"t":45.62,"w":"Maybe,"},{"t":46.44,"w":"maybe"},{"t":46.94,"w":"You"},{"t":47.36,"w":"gon'"},{"t":47.82,"w":"slide"},{"t":48.44,"w":"Yeah,"},{"t":48.8,"w":"let"},{"t":49.18,"w":"me"},{"t":49.36,"w":"feel"},{"t":49.54,"w":"that"},{"t":49.68,"w":"body"},{"t":50,"w":"ride"},{"t":50.67,"w":"Like"},{"t":51.52,"w":"they"},{"t":51.66,"w":"nice"},{"t":52.26,"w":"and"},{"t":52.6,"w":"slow"},{"t":53.88,"w":"Feel"},{"t":54.44,"w":"the"},{"t":55,"w":"flow"},{"t":55.38,"w":"Don't"},{"t":55.8,"w":"stop"},{"t":55.9,"w":"Stay"},{"t":56.24,"w":"close"},{"t":56.7,"w":"And"},{"t":57.08,"w":"we'll"},{"t":57.3,"w":"make"},{"t":57.34,"w":"makin'"},{"t":57.68,"w":"swag,"},{"t":58.02,"w":"you"},{"t":58.26,"w":"know"},{"t":58.38,"w":"Yeah,"},{"t":58.82,"w":"I"},{"t":59.32,"w":"already"},{"t":59.94,"w":"know"},{"t":60.3,"w":"International"},{"t":60.78,"w":"heat"},{"t":61.5,"w":"Sweat"},{"t":62.16,"w":"drippin'"},{"t":62.56,"w":"down"},{"t":62.74,"w":"two"},{"t":63,"w":"hearts"},{"t":63.38,"w":"off"},{"t":63.66,"w":"beat"},{"t":64,"w":"Body"},{"t":64.6,"w":"on"},{"t":64.84,"w":"body,"},{"t":65.3,"w":"deep"},{"t":65.46,"w":"and"},{"t":65.62,"w":"in"},{"t":65.84,"w":"between"},{"t":66.38,"w":"And"},{"t":67.14,"w":"women"},{"t":67.34,"w":"say"},{"t":68.44,"w":"Lost"},{"t":69.04,"w":"in"},{"t":69.46,"w":"my"},{"t":69.68,"w":"scene"},{"t":70.24,"w":"Come"},{"t":71.02,"w":"on"},{"t":71.24,"w":"Don't"},{"t":71.82,"w":"hide"},{"t":72.52,"w":"Right"},{"t":72.82,"w":"here"},{"t":73.22,"w":"By"},{"t":73.84,"w":"my"},{"t":74.4,"w":"side"},{"t":75.06,"w":"Lickin'"},{"t":75.72,"w":"my"},{"t":75.8,"w":"eyes"},{"t":76.44,"w":"That's"},{"t":76.96,"w":"all"},{"t":77.06,"w":"it"},{"t":77.24,"w":"takes"},{"t":77.48,"w":"to"},{"t":77.72,"w":"slide"},{"t":78.12,"w":"Fly,"},{"t":78.8,"w":"fly,"},{"t":79.44,"w":"fly"},{"t":79.82,"w":"From"},{"t":80.54,"w":"Hanoi"},{"t":81.36,"w":"So"},{"t":81.64,"w":"I'll"},{"t":81.88,"w":"hold"},{"t":81.98,"w":"you"},{"t":82.12,"w":"in"},{"t":82.3,"w":"We're"},{"t":82.76,"w":"fuckin'"},{"t":83.06,"w":"to"},{"t":83.14,"w":"the"},{"t":83.28,"w":"rhythm"},{"t":83.6,"w":"of"},{"t":83.78,"w":"this"},{"t":84,"w":"international"},{"t":84.3,"w":"sin"},{"t":84.86,"w":"Touch"},{"t":85.34,"w":"me"},{"t":85.6,"w":"right,"},{"t":86.04,"w":"don't"},{"t":86.36,"w":"you"},{"t":86.4,"w":"ever"},{"t":86.62,"w":"play"},{"t":86.88,"w":"tame"},{"t":87.46,"w":"We're"},{"t":87.66,"w":"fuckin'"},{"t":87.98,"w":"to"},{"t":88.06,"w":"the"},{"t":88.18,"w":"rhythm"},{"t":88.36,"w":"of"},{"t":88.36,"w":"this"},{"t":88.36,"w":"international"},{"t":88.36,"w":"sin"},{"t":88.38,"w":"We're"},{"t":88.38,"w":"бол"},{"t":88.54,"w":"dopamine"},{"t":88.54,"w":"We're"},{"t":88.54,"w":"the"},{"t":88.54,"w":"mother"},{"t":88.74,"w":"s"},{"t":88.88,"w":"conservative"},{"t":89.26,"w":"game"},{"t":98.08,"w":"Closer,"},{"t":98.6,"w":"closer,"},{"t":99.18,"w":"closer"},{"t":100.38,"w":"Tae"},{"t":100.9,"w":"tones"},{"t":100.96,"w":"Jun"},{"t":101.38,"w":"10"},{"t":101.56,"w":"turn"},{"t":101.92,"w":"ma"},{"t":102.64,"w":"Dumb"},{"t":102.9,"w":"come"},{"t":103.06,"w":"take"},{"t":103.42,"w":"it"},{"t":103.56,"w":"lower"},{"t":103.78,"w":"than"},{"t":104.02,"w":"before"},{"t":105.08,"w":"Brooklyn"},{"t":105.6,"w":"on"},{"t":105.84,"w":"my"},{"t":106,"w":"passport"},{"t":106.38,"w":"Southside"},{"t":106.96,"w":"in"},{"t":107.1,"w":"my"},{"t":107.2,"w":"soul"},{"t":107.44,"w":"But"},{"t":107.7,"w":"tonight"},{"t":107.98,"w":"After"},{"t":108.34,"w":"Saigon"},{"t":108.76,"w":"We"},{"t":109.06,"w":"lose"},{"t":109.24,"w":"all"},{"t":109.44,"w":"control"},{"t":109.72,"w":"We"},{"t":110.08,"w":"ain't"},{"t":110.36,"w":"gotta"},{"t":110.5,"w":"talk"},{"t":110.84,"w":"much"},{"t":111.18,"w":"I"},{"t":111.34,"w":"can"},{"t":111.5,"w":"read"},{"t":111.72,"w":"your"},{"t":111.98,"w":"curves"},{"t":112.48,"w":"Every"},{"t":112.96,"w":"little"},{"t":113.24,"w":"cry"},{"t":113.52,"w":"Say"},{"t":113.76,"w":"you"},{"t":113.92,"w":"know"},{"t":114.12,"w":"what"},{"t":114.26,"w":"you"},{"t":114.4,"w":"deserve"},{"t":114.72,"w":"On"},{"t":114.94,"w":"Ken"},{"t":115.08,"w":"Hoodle"},{"t":115.68,"w":"Just"},{"t":116.06,"w":"come"},{"t":116.26,"w":"in"},{"t":116.42,"w":"here"},{"t":116.68,"w":"Whisper"},{"t":117.26,"w":"in"},{"t":117.46,"w":"my"},{"t":117.6,"w":"neck"},{"t":117.86,"w":"How"},{"t":117.94,"w":"you"},{"t":118.24,"w":"want"},{"t":118.46,"w":"me"},{"t":118.7,"w":"here"},{"t":119.14,"w":"No"},{"t":119.52,"w":"translation"},{"t":120.18,"w":"for"},{"t":120.54,"w":"the"},{"t":120.66,"w":"way"},{"t":120.92,"w":"I"},{"t":121.22,"w":"Just"},{"t":121.66,"w":"your"},{"t":121.88,"w":"hands"},{"t":122.18,"w":"on"},{"t":122.4,"w":"my"},{"t":122.5,"w":"waist"},{"t":122.78,"w":"while"},{"t":123,"w":"our"},{"t":123.14,"w":"bodies"},{"t":123.6,"w":"shake"},{"t":123.94,"w":"I"},{"t":124.22,"w":"love"},{"t":127.18,"w":"it"},{"t":129.58,"w":"when"},{"t":129.68,"w":"you"},{"t":129.86,"w":"grab"},{"t":130.06,"w":"me,"},{"t":130.22,"w":"kiss"},{"t":130.34,"w":"me,"},{"t":130.52,"w":"lay"},{"t":130.64,"w":"me"},{"t":130.9,"w":"down"},{"t":131.37,"w":"Put"},{"t":131.82,"w":"it"},{"t":132.04,"w":"on"},{"t":132.18,"w":"the"},{"t":132.28,"w":"slow,"},{"t":132.6,"w":"fuck"},{"t":132.78,"w":"me"},{"t":132.92,"w":"to"},{"t":133,"w":"the"},{"t":133.18,"w":"rhythm"},{"t":133.5,"w":"now"},{"t":133.82,"w":"You"},{"t":134.28,"w":"don't"},{"t":134.58,"w":"gotta"},{"t":134.68,"w":"promise"},{"t":135.04,"w":"me"},{"t":135.22,"w":"forever,"},{"t":135.7,"w":"baby,"},{"t":136,"w":"just"},{"t":136.22,"w":"tonight"},{"t":139,"w":"With"},{"t":139.48,"w":"the"},{"t":139.6,"w":"sweat"},{"t":139.86,"w":"out"},{"t":140.02,"w":"every"},{"t":140.22,"w":"secret"},{"t":140.56,"w":"to"},{"t":140.72,"w":"the"},{"t":140.86,"w":"morning"},{"t":141.26,"w":"light"},{"t":141.74,"w":"One"},{"t":142.52,"w":"more"},{"t":142.62,"w":"drink,"},{"t":143.12,"w":"one"},{"t":143.46,"w":"more"},{"t":143.7,"w":"dance"},{"t":144.16,"w":"One"},{"t":144.74,"w":"more"},{"t":145.06,"w":"chance"},{"t":145.38,"w":"to"},{"t":145.78,"w":"lose"},{"t":146.02,"w":"control"},{"t":146.52,"w":"Holdin'"},{"t":147.32,"w":"D"},{"t":147.46,"w":"until"},{"t":147.98,"w":"my"},{"t":148.18,"w":"lipstick"},{"t":148.52,"w":"gone"},{"t":149.12,"w":"We"},{"t":149.5,"w":"fuckin'"},{"t":149.82,"w":"to"},{"t":149.88,"w":"the"},{"t":150,"w":"rhythm,"},{"t":150.42,"w":"keep"},{"t":150.5,"w":"my"},{"t":150.68,"w":"bass"},{"t":150.94,"w":"concerned"},{"t":153.57,"w":"International"},{"t":153.98,"w":"heat,"},{"t":154.66,"w":"international"},{"t":155.3,"w":"flame"},{"t":156.1,"w":"Everybody"},{"t":156.82,"w":"watchin'"},{"t":157.46,"w":"when"},{"t":157.56,"w":"you"},{"t":157.82,"w":"scream"},{"t":158.22,"w":"my"},{"t":158.5,"w":"name"},{"t":158.86,"w":"From"},{"t":159.16,"w":"District"},{"t":159.6,"w":"1,"},{"t":160.16,"w":"4"},{"t":160.3,"w":"to"},{"t":160.5,"w":"6,"},{"t":160.78,"w":"still"},{"t":160.86,"w":"no"},{"t":161,"w":"sleep"},{"t":161.32,"w":"I"},{"t":161.56,"w":"know,"},{"t":161.92,"w":"man,"},{"t":162.24,"w":"check,"},{"t":162.56,"w":"keep"},{"t":162.8,"w":"it"},{"t":162.94,"w":"dirty,"},{"t":163.26,"w":"keep"},{"t":163.38,"w":"it"},{"t":163.56,"w":"deep"},{"t":163.94,"w":"Don't"},{"t":164.74,"w":"hide,"},{"t":165.12,"w":"don't"},{"t":165.3,"w":"hide,"},{"t":165.74,"w":"right"},{"t":166,"w":"here"},{"t":166.34,"w":"Let"},{"t":166.94,"w":"it"},{"t":167.42,"w":"slide,"},{"t":168.5,"w":"I"},{"t":168.86,"w":"enjoy"},{"t":169.18,"w":"things"},{"t":169.86,"w":"in"},{"t":170.16,"w":"life"},{"t":170.63,"w":"Try"},{"t":171.08,"w":"and"},{"t":171.18,"w":"feel"},{"t":171.36,"w":"that"},{"t":171.52,"w":"vibe,"},{"t":172.16,"w":"all"},{"t":172.32,"w":"night"},{"t":172.92,"w":"From"},{"t":173.62,"w":"Hanoi,"},{"t":174.44,"w":"Soho,"},{"t":175,"w":"Chi"},{"t":175.22,"w":"-Ming"},{"t":175.58,"w":"Day"},{"t":176.26,"w":"of"},{"t":176.5,"w":"fire,"},{"t":176.5,"w":"day"},{"t":176.5,"w":"of"},{"t":176.5,"w":"fire,"},{"t":176.5,"w":"day"},{"t":176.5,"w":"of"},{"t":176.5,"w":"fire"},{"t":176.52,"w":"We"},{"t":176.9,"w":"hear"},{"t":176.9,"w":"the"},{"t":176.9,"w":"conversation"},{"t":176.9,"w":"Why"},{"t":176.9,"w":"we"},{"t":176.9,"w":"kijken,"},{"t":176.9,"w":"teach"},{"t":176.9,"w":"a"},{"t":176.9,"w":"difference"},{"t":176.9,"w":"Bring"},{"t":177.36,"w":"your"},{"t":177.66,"w":"friends"},{"t":177.94,"w":"Let"},{"t":178.1,"w":"the"},{"t":178.2,"w":"sin"},{"t":178.44,"w":"begin"},{"t":178.99,"w":"Soho,"},{"t":179.88,"w":"Chi"},{"t":180.08,"w":"-Ming"},{"t":180.42,"w":"Tell"},{"t":181.08,"w":"your"},{"t":181.3,"w":"friends"},{"t":181.76,"w":"Bring"},{"t":182.38,"w":"your"},{"t":182.54,"w":"friends"},{"t":182.84,"w":"Let"},{"t":182.98,"w":"the"},{"t":183.14,"w":"sin"},{"t":183.34,"w":"begin"},{"t":183.88,"w":"parties"},{"t":184.86,"w":"talking"},{"t":185.22,"w":"talk"},{"t":186.46,"w":"bodies"},{"t":191.3,"w":"talking"},{"t":191.9,"w":"we"},{"t":192.48,"w":"fuckin'"},{"t":196.32,"w":"to"},{"t":196.38,"w":"the"},{"t":196.56,"w":"rhythm"},{"t":196.86,"w":"every"},{"t":197.14,"w":"chop"},{"t":197.48,"w":"every"},{"t":197.72,"w":"slur"},{"t":200.67,"w":"La"},{"t":201.12,"w":"espacito"},{"t":201.72,"w":"but"},{"t":201.92,"w":"the"},{"t":202.08,"w":"club"},{"t":202.34,"w":"still"},{"t":202.56,"w":"at"},{"t":208.42,"w":"Make"},{"t":209.25,"w":"your"},{"t":209.48,"w":"queen"},{"t":209.68,"w":"so"},{"t":209.88,"w":"proud"},{"t":214.78,"w":"International"},{"t":215.02,"w":"heat"},{"t":215.82,"w":"International"},{"t":217,"w":"fame"},{"t":218.54,"w":"Fuck"},{"t":219.34,"w":"into"},{"t":220.88,"w":"the"},{"t":221.08,"w":"rhythm"},{"t":221.4,"w":"of"},{"t":221.6,"w":"that"},{"t":221.74,"w":"dirty"},{"t":221.94,"w":"South"},{"t":222.26,"w":"game"}]}$j$::jsonb WHERE id = 'international-heat' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:03.60] Boy, boy,
+[00:05.36] why you leanin' on my ear?
+[00:08.08] Say it real clear, mommy
+[00:12.28] I can feel that body talkin' from here
+[00:14.92] And I'm in a mile, I'm cheap
+[00:17.56] Like a knee, come see
+[00:20.10] I caught you starin' from across the room
+[00:22.98] Don't play shy, I can read your mood
+[00:26.08] One little touch, now your pulse go boom
+[Verse 1]
+[00:28.48] Tonight,
+[00:29.10] I'm the fire,
+[00:29.78] you the fuel in this worldwide room
+[00:31.58] I see you thinkin' bout me on your face
+[00:34.10] You want my hips movin' all those waves
+[00:36.60] Right kinda wrong in the perfect place
+[00:38.86] No clothes, just skin, just sweat, just bass
+[00:41.32] Oh, is that what you like?
+[00:43.68] You been teasin' all night
+[00:45.60] Maybe, maybe
+[00:46.92] You gon' slide
+[00:48.42] Yeah, let me feel that body ride
+[00:50.65] Like they nice and slow
+[00:53.86] Feel the flow
+[00:55.36] Don't stop
+[00:55.88] Stay close
+[00:56.68] And we'll make makin' swag, you know
+[00:58.36] Yeah, I already know
+[01:00.28] International heat
+[Pre-Chorus]
+[01:01.48] Sweat drippin' down two hearts off beat
+[01:03.98] Body on body, deep and in between
+[01:06.36] And women say
+[01:08.42] Lost in my scene
+[01:10.22] Come on
+[01:11.22] Don't hide
+[01:12.50] Right here
+[01:13.20] By my side
+[01:15.04] Lickin' my eyes
+[01:16.42] That's all it takes to slide
+[01:18.10] Fly, fly, fly
+[01:19.80] From Hanoi
+[01:21.34] So I'll hold you in
+[01:22.28] We're fuckin' to the rhythm of this international sin
+[01:24.84] Touch me right, don't you ever play tame
+[01:27.44] We're fuckin' to the rhythm of this international sin
+[01:28.36] We're бол dopamine
+[01:28.52] We're the mother s conservative game
+[01:38.06] Closer, closer, closer
+[01:40.36] Tae tones Jun 10 turn ma
+[01:42.62] Dumb come take it lower than before
+[01:45.06] Brooklyn on my passport
+[01:46.36] Southside in my soul
+[01:47.42] But tonight
+[01:47.96] After Saigon
+[01:48.74] We lose all control
+[01:49.70] We ain't gotta talk much
+[01:51.16] I can read your curves
+[01:52.46] Every little cry
+[01:53.50] Say you know what you deserve
+[01:54.70] On Ken Hoodle
+[01:55.66] Just come in here
+[01:56.66] Whisper in my neck
+[01:57.84] How you want me here
+[01:59.12] No translation for the way I
+[02:01.20] Just your hands on my waist while our bodies shake
+[02:03.92] I love it when you grab me, kiss me, lay me down
+[02:11.35] Put it on the slow, fuck me to the rhythm now
+[02:13.80] You don't gotta promise me forever,
+[02:15.68] baby,
+[02:15.98] just tonight
+[Chorus]
+[02:18.98] With the sweat out every secret to the morning light
+[Drop]
+[02:21.72] One more drink, one more dance
+[02:24.14] One more chance to lose control
+[02:26.50] Holdin' D until my lipstick gone
+[02:29.10] We fuckin' to the rhythm, keep my bass concerned
+[Verse 2]
+[02:33.55] International heat, international flame
+[02:36.08] Everybody watchin' when you scream my name
+[02:38.84] From District 1, 4 to 6, still no sleep
+[02:41.30] I know, man, check, keep it dirty, keep it deep
+[02:43.92] Don't hide, don't hide, right here
+[02:46.32] Let it slide, I enjoy things in life
+[02:50.61] Try and feel that vibe, all night
+[02:52.90] From Hanoi, Soho, Chi-Ming
+[02:55.56] Day of fire, day of fire, day of fire
+[02:56.50] We hear the conversation Why we kijken,
+[02:56.88] teach a difference
+[02:56.88] Bring your friends
+[02:57.92] Let the sin begin
+[02:58.97] Soho, Chi-Ming
+[03:00.40] Tell your friends
+[03:01.74] Bring your friends
+[03:02.82] Let the sin begin
+[03:03.86] parties
+[03:04.84] talking
+[03:05.20] talk
+[03:06.44] bodies
+[03:11.28] talking
+[03:11.88] we fuckin' to the rhythm every chop every slur
+[03:20.65] La espacito but the club still at
+[Bridge]
+[Outro]
+[03:28.40] Make your queen so proud
+[03:34.76] International heat
+[03:35.80] International fame
+[03:38.52] Fuck into the rhythm of that dirty South game
+$j$ WHERE id = 'international-heat' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A sultry, hypnotic Dirty South R&B track blending English and Southeast Asian languages to depict a seductive night in an international club where bodies move together on deep basslines.","overallMood":"Sultry, Seductive, Hypnotic","themes":["International Desire","Body Talk","Loss of Control","Cultural Fusion","Late Night Sin"],"palette":["#1a0f2e","#ff3c69","#d4af37","#580c0c"],"sections":[{"name":"Intro","emotion":"Whispered curiosity and tactile anticipation as the listener leans in to hear a secret.","intensity":0.88,"colorHint":"#ff3c69","imageryPrompt":"A close-up of two silhouettes standing inches apart in dim red lighting, steam rising from skin touching skin, shallow depth of field focusing on the tension between them.","start":3.6},{"name":"Verse 1","emotion":"Confident ownership and fiery invitation to join a worldwide dance floor.","intensity":0.84,"colorHint":"#d4af37","imageryPrompt":"A woman in shimmering gold attire dancing alone on a dark stage with spotlights cutting through haze, sweat glistening like liquid light, vibrant energy radiating outward.","start":28.48},{"name":"Pre-Chorus","emotion":"Escalating heat and the dissolution of boundaries between two bodies.","intensity":0.68,"colorHint":"#ff3c69","imageryPrompt":"Two figures locked in a slow-motion embrace against a backdrop of blurred city lights at night, sweat mixing on skin, intimate shadows stretching across the floor.","start":61.48},{"name":"Chorus","emotion":"Cathartic release and overwhelming sensory overload as secrets are spilled.","intensity":0.45,"colorHint":"#d4af37","imageryPrompt":"A wide shot of a packed dance floor where hundreds of bodies merge into one glowing mass under strobe lights, heat waves distorting the air above the crowd.","start":138.98},{"name":"Drop","emotion":"Rhythmic abandon and bass-driven trance state.","intensity":0.43,"colorHint":"#580c0c","imageryPrompt":"Abstract visualization of massive sub-bass waves shaking the ground, dark voids illuminated by pulsing neon veins, figures moving as a single fluid organism in total darkness.","start":141.72},{"name":"Verse 2","emotion":"Global connection and shared experience across different cities.","intensity":0.24,"colorHint":"#1a0f2e","imageryPrompt":"A split view connecting a nightclub in Ho Chi Minh City with one in Brooklyn via digital thread, warm orange hues bleeding into cool blue tones representing the fusion of locations.","start":153.55},{"name":"Bridge","emotion":"Intense vulnerability and surrender to the music's pull.","intensity":0.27,"colorHint":"#ff3c69","imageryPrompt":"A single spotlight on a couple spinning slowly in zero gravity, their faces reflecting each other perfectly, surrounded by floating embers of gold and pink light.","start":208.4},{"name":"Outro","emotion":"Lingering satisfaction and the echo of fame.","intensity":0.15,"colorHint":"#1a0f2e","imageryPrompt":"Silhouettes walking away into a deep purple dawn, leaving footprints that glow faintly on the wet pavement, fading atmosphere.","start":208.4}],"keywords":[{"word":"sweat","emotion":"Physical intimacy and heat.","imageryPrompt":"Glistening droplets of perspiration catching golden stage lights on pale skin, texture rich with moisture and warmth."},{"word":"rhythm","emotion":"Hypnotic drive and pulse.","imageryPrompt":"Visualized sound waves forming a rhythmic heartbeat pattern in the air, glowing red veins pulsing through a dark room."},{"word":"curves","emotion":"Admiration and desire.","imageryPrompt":"Smooth lines of hips accentuated by low lighting, casting soft shadows that suggest movement and allure without revealing too much."},{"word":"sin","emotion":"Forbidden thrill and transgression.","imageryPrompt":"A shadowy alleyway lit only by flickering neon signs, creating a sense of illicit pleasure in the darkness."},{"word":"control","emotion":"Loss of will to music.","imageryPrompt":"Hands flailing slightly as if caught in an invisible current, eyes rolling back under bright disco lights."},{"word":"touch","emotion":"Sensory connection and grounding.","imageryPrompt":"Fingers tracing the spine of a partner with high detail on skin texture, warm amber glow highlighting the point of contact."}]}$j$::jsonb) WHERE id = 'international-heat' AND planet->'analysis' IS NULL;
+
+-- jayodeed-going-crazy-rooklyn-mix: 656 words, 8 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":2.18,"w":"You"},{"t":2.78,"w":"got"},{"t":3,"w":"me"},{"t":3.16,"w":"going"},{"t":3.5,"w":"crazy,"},{"t":4.84,"w":"crazy,"},{"t":5.84,"w":"crazy"},{"t":12.46,"w":"You"},{"t":13.15,"w":"got"},{"t":13.3,"w":"me"},{"t":13.64,"w":"going"},{"t":13.74,"w":"crazy,"},{"t":15.51,"w":"I"},{"t":16.48,"w":"don't"},{"t":16.78,"w":"know"},{"t":16.9,"w":"if"},{"t":17.12,"w":"I"},{"t":17.32,"w":"hate"},{"t":17.7,"w":"you"},{"t":18.02,"w":"Or"},{"t":18.62,"w":"if"},{"t":18.82,"w":"I"},{"t":19.04,"w":"need"},{"t":19.28,"w":"you,"},{"t":19.78,"w":"baby"},{"t":20.78,"w":"One"},{"t":21.36,"w":"more"},{"t":21.63,"w":"drink"},{"t":21.86,"w":"and"},{"t":22.02,"w":"I"},{"t":22.2,"w":"might"},{"t":22.46,"w":"call"},{"t":22.76,"w":"you"},{"t":23.4,"w":"One"},{"t":24.2,"w":"more"},{"t":25,"w":"night"},{"t":25.28,"w":"and"},{"t":25.48,"w":"I"},{"t":25.62,"w":"might"},{"t":25.86,"w":"fall"},{"t":26.18,"w":"through"},{"t":26.56,"w":"You"},{"t":26.78,"w":"got"},{"t":26.96,"w":"me"},{"t":27.12,"w":"going"},{"t":27.5,"w":"crazy,"},{"t":28.57,"w":"dancing"},{"t":29.52,"w":"with"},{"t":29.92,"w":"your"},{"t":30.16,"w":"ghost"},{"t":30.54,"w":"in"},{"t":30.86,"w":"the"},{"t":30.94,"w":"room"},{"t":31.34,"w":"I"},{"t":31.58,"w":"keep"},{"t":31.82,"w":"saying"},{"t":32.16,"w":"that"},{"t":32.52,"w":"I'm"},{"t":32.76,"w":"dumb,"},{"t":33.04,"w":"but"},{"t":33.24,"w":"I"},{"t":33.34,"w":"still"},{"t":33.62,"w":"look"},{"t":33.92,"w":"for"},{"t":34.22,"w":"you"},{"t":34.7,"w":"You"},{"t":35.32,"w":"got"},{"t":35.54,"w":"me"},{"t":35.72,"w":"going"},{"t":36.1,"w":"crazy,"},{"t":37.38,"w":"crazy,"},{"t":38.82,"w":"crazy"},{"t":40.34,"w":"I"},{"t":40.78,"w":"pulled"},{"t":41.12,"w":"up"},{"t":41.34,"w":"late"},{"t":41.56,"w":"with"},{"t":41.7,"w":"the"},{"t":41.8,"w":"lights"},{"t":42,"w":"low,"},{"t":42.26,"w":"still"},{"t":42.48,"w":"got"},{"t":42.78,"w":"your"},{"t":43,"w":"name"},{"t":43.26,"w":"in"},{"t":43.4,"w":"my"},{"t":43.48,"w":"iPhone"},{"t":43.8,"w":"You"},{"t":44.22,"w":"say"},{"t":44.5,"w":"I'm"},{"t":44.76,"w":"poison,"},{"t":45.22,"w":"I"},{"t":45.36,"w":"know,"},{"t":45.76,"w":"but"},{"t":46,"w":"you"},{"t":46.18,"w":"still"},{"t":46.42,"w":"sip"},{"t":46.68,"w":"when"},{"t":46.82,"w":"your"},{"t":46.92,"w":"eyes"},{"t":47.12,"w":"close"},{"t":47.32,"w":"We"},{"t":47.5,"w":"go"},{"t":47.7,"w":"back"},{"t":48,"w":"and"},{"t":48.16,"w":"forth"},{"t":48.36,"w":"like"},{"t":48.58,"w":"waves"},{"t":49.04,"w":"do,"},{"t":49.32,"w":"I"},{"t":49.44,"w":"run"},{"t":49.64,"w":"from"},{"t":49.84,"w":"love"},{"t":50.12,"w":"but"},{"t":50.24,"w":"I"},{"t":50.34,"w":"chase"},{"t":50.6,"w":"you"},{"t":50.94,"w":"I"},{"t":51.12,"w":"said"},{"t":51.42,"w":"I'd"},{"t":51.62,"w":"change,"},{"t":51.9,"w":"that"},{"t":52.04,"w":"ain't"},{"t":52.38,"w":"true,"},{"t":52.92,"w":"I"},{"t":53.1,"w":"just"},{"t":53.34,"w":"hate"},{"t":53.58,"w":"the"},{"t":53.72,"w":"way"},{"t":53.96,"w":"I"},{"t":54.18,"w":"crave"},{"t":54.44,"w":"you"},{"t":54.82,"w":"You"},{"t":55.2,"w":"hit"},{"t":55.36,"w":"my"},{"t":55.46,"w":"line"},{"t":55.68,"w":"when"},{"t":55.8,"w":"the"},{"t":55.92,"w":"day's"},{"t":56.2,"w":"dry"},{"t":56.4,"w":"I"},{"t":56.84,"w":"know"},{"t":57.02,"w":"your"},{"t":57.2,"w":"friends"},{"t":57.38,"w":"say"},{"t":57.54,"w":"I'm"},{"t":57.66,"w":"bad"},{"t":57.92,"w":"news"},{"t":58.28,"w":"But"},{"t":58.62,"w":"when"},{"t":58.8,"w":"the"},{"t":58.94,"w":"night"},{"t":59.1,"w":"get"},{"t":59.18,"w":"too"},{"t":59.34,"w":"loud,"},{"t":59.82,"w":"I'm"},{"t":59.94,"w":"still"},{"t":60.04,"w":"the"},{"t":60.18,"w":"one"},{"t":60.36,"w":"that"},{"t":60.46,"w":"you"},{"t":60.6,"w":"dance"},{"t":60.96,"w":"to"},{"t":61.22,"w":"I'm"},{"t":61.76,"w":"faded,"},{"t":62.44,"w":"you're"},{"t":62.74,"w":"dangerous,"},{"t":63.28,"w":"still"},{"t":63.54,"w":"somehow"},{"t":64.02,"w":"my"},{"t":64.34,"w":"favorite"},{"t":64.92,"w":"We"},{"t":65.22,"w":"break"},{"t":65.48,"w":"it,"},{"t":65.9,"w":"then"},{"t":66.1,"w":"save"},{"t":66.4,"w":"it,"},{"t":66.74,"w":"then"},{"t":66.96,"w":"wake"},{"t":67.24,"w":"up"},{"t":67.58,"w":"and"},{"t":67.78,"w":"say"},{"t":68.08,"w":"this"},{"t":68.36,"w":"I"},{"t":71.3,"w":"don't"},{"t":71.6,"w":"know"},{"t":71.76,"w":"if"},{"t":71.98,"w":"I"},{"t":72.14,"w":"hate"},{"t":72.58,"w":"you,"},{"t":72.96,"w":"or"},{"t":73.38,"w":"if"},{"t":73.68,"w":"I"},{"t":73.86,"w":"need"},{"t":74.14,"w":"you,"},{"t":74.64,"w":"baby"},{"t":75.66,"w":"One"},{"t":76.18,"w":"more"},{"t":76.46,"w":"drink"},{"t":76.72,"w":"and"},{"t":76.88,"w":"I"},{"t":77.08,"w":"might"},{"t":77.32,"w":"call"},{"t":77.66,"w":"you"},{"t":78.2,"w":"One"},{"t":78.72,"w":"more"},{"t":79.84,"w":"night"},{"t":80.12,"w":"and"},{"t":80.32,"w":"I"},{"t":80.48,"w":"might"},{"t":80.72,"w":"fall"},{"t":81.02,"w":"through"},{"t":81.38,"w":"You"},{"t":81.56,"w":"got"},{"t":81.8,"w":"me"},{"t":82,"w":"going"},{"t":82.3,"w":"crazy,"},{"t":83.87,"w":"dancing"},{"t":84.58,"w":"with"},{"t":84.8,"w":"your"},{"t":85,"w":"ghost"},{"t":85.36,"w":"in"},{"t":85.68,"w":"the"},{"t":85.8,"w":"room"},{"t":86.4,"w":"I"},{"t":86.5,"w":"keep"},{"t":86.68,"w":"saying"},{"t":87,"w":"that"},{"t":87.4,"w":"I'm"},{"t":87.6,"w":"dumb,"},{"t":87.9,"w":"but"},{"t":88.06,"w":"I"},{"t":88.18,"w":"still"},{"t":88.46,"w":"look"},{"t":88.76,"w":"for"},{"t":89.08,"w":"you"},{"t":89.52,"w":"You"},{"t":90.16,"w":"got"},{"t":90.38,"w":"me"},{"t":90.56,"w":"going"},{"t":90.9,"w":"crazy,"},{"t":92.14,"w":"crazy,"},{"t":92.86,"w":"crazy,"},{"t":93.52,"w":"crazy"},{"t":95.64,"w":"I"},{"t":95.74,"w":"should've"},{"t":96.14,"w":"left"},{"t":96.42,"w":"you"},{"t":96.62,"w":"on"},{"t":96.92,"w":"read,"},{"t":97.42,"w":"should've"},{"t":97.7,"w":"stayed"},{"t":97.86,"w":"out"},{"t":98.14,"w":"with"},{"t":98.28,"w":"my"},{"t":98.48,"w":"friends"},{"t":99.02,"w":"But"},{"t":99.3,"w":"the"},{"t":99.4,"w":"second"},{"t":99.72,"w":"that"},{"t":100.04,"w":"you"},{"t":100.22,"w":"text,"},{"t":100.96,"w":"I"},{"t":101.1,"w":"forget"},{"t":101.42,"w":"how"},{"t":101.7,"w":"this"},{"t":102,"w":"ends"},{"t":102.44,"w":"You"},{"t":102.64,"w":"know"},{"t":102.76,"w":"where"},{"t":102.94,"w":"to"},{"t":103.02,"w":"find"},{"t":103.3,"w":"me,"},{"t":103.52,"w":"back"},{"t":103.66,"w":"where"},{"t":103.8,"w":"the"},{"t":103.92,"w":"lights"},{"t":104.14,"w":"bleed"},{"t":104.28,"w":"Hands"},{"t":104.48,"w":"on"},{"t":104.64,"w":"my"},{"t":104.8,"w":"waist"},{"t":105.02,"w":"like"},{"t":105.18,"w":"you"},{"t":105.32,"w":"never"},{"t":105.5,"w":"lied"},{"t":105.84,"w":"to"},{"t":106.04,"w":"me"},{"t":106.2,"w":"I"},{"t":106.44,"w":"hate"},{"t":106.66,"w":"that"},{"t":106.78,"w":"I"},{"t":106.9,"w":"miss"},{"t":107.06,"w":"it,"},{"t":107.22,"w":"the"},{"t":107.32,"w":"chaos"},{"t":107.6,"w":"that"},{"t":107.76,"w":"kisses"},{"t":107.98,"w":"your"},{"t":108.16,"w":"hands"},{"t":108.36,"w":"on"},{"t":108.5,"w":"my"},{"t":108.62,"w":"skin"},{"t":108.78,"w":"And"},{"t":108.9,"w":"the"},{"t":109,"w":"way"},{"t":109.2,"w":"that"},{"t":109.32,"w":"you"},{"t":109.44,"w":"listen,"},{"t":109.78,"w":"don't"},{"t":109.92,"w":"say"},{"t":110.02,"w":"that"},{"t":110.18,"w":"you"},{"t":110.3,"w":"love"},{"t":110.58,"w":"me"},{"t":110.9,"w":"Just"},{"t":111.3,"w":"show"},{"t":111.7,"w":"me"},{"t":112.02,"w":"tonight,"},{"t":112.98,"w":"we"},{"t":113.26,"w":"don't"},{"t":113.54,"w":"need"},{"t":113.58,"w":"forever"},{"t":114.36,"w":"Just"},{"t":114.76,"w":"give"},{"t":115.16,"w":"me"},{"t":115.54,"w":"the"},{"t":115.8,"w":"high"},{"t":116.4,"w":"Round"},{"t":117.02,"w":"and"},{"t":117.58,"w":"round,"},{"t":118.52,"w":"we"},{"t":118.76,"w":"never"},{"t":119.08,"w":"slow"},{"t":119.42,"w":"down"},{"t":119.88,"w":"We"},{"t":120.32,"w":"burn"},{"t":120.72,"w":"it"},{"t":120.92,"w":"up,"},{"t":121.36,"w":"then"},{"t":121.54,"w":"we"},{"t":121.82,"w":"fall"},{"t":122.04,"w":"back"},{"t":122.42,"w":"down"},{"t":122.56,"w":"You"},{"t":122.62,"w":"got"},{"t":122.88,"w":"me"},{"t":123.04,"w":"going"},{"t":123.34,"w":"crazy,"},{"t":124.58,"w":"I"},{"t":126.02,"w":"don't"},{"t":126.3,"w":"know"},{"t":126.5,"w":"if"},{"t":126.7,"w":"I"},{"t":127.07,"w":"hate"},{"t":127.3,"w":"you"},{"t":127.62,"w":"Or"},{"t":128.18,"w":"if"},{"t":128.4,"w":"I"},{"t":128.56,"w":"need"},{"t":128.84,"w":"you,"},{"t":129.36,"w":"baby"},{"t":130.4,"w":"One"},{"t":130.96,"w":"more"},{"t":131.2,"w":"drink"},{"t":131.42,"w":"and"},{"t":131.6,"w":"I"},{"t":131.78,"w":"might"},{"t":132.02,"w":"call"},{"t":132.36,"w":"you"},{"t":133.08,"w":"One"},{"t":133.78,"w":"more"},{"t":134.58,"w":"night"},{"t":134.82,"w":"and"},{"t":135.04,"w":"I"},{"t":135.18,"w":"might"},{"t":135.42,"w":"fall"},{"t":135.7,"w":"through"},{"t":136.08,"w":"You"},{"t":136.4,"w":"got"},{"t":136.56,"w":"me"},{"t":136.74,"w":"going"},{"t":137.06,"w":"crazy,"},{"t":138.56,"w":"dancing"},{"t":139.14,"w":"with"},{"t":139.46,"w":"your"},{"t":139.66,"w":"ghost"},{"t":140.04,"w":"in"},{"t":140.36,"w":"the"},{"t":140.44,"w":"room"},{"t":140.86,"w":"I"},{"t":141.12,"w":"keep"},{"t":141.34,"w":"saying"},{"t":141.68,"w":"that"},{"t":142.06,"w":"I'm"},{"t":142.26,"w":"dumb,"},{"t":142.54,"w":"but"},{"t":142.72,"w":"I"},{"t":142.84,"w":"still"},{"t":143.14,"w":"look"},{"t":143.42,"w":"for"},{"t":143.72,"w":"you"},{"t":144.49,"w":"You"},{"t":144.84,"w":"got"},{"t":145.06,"w":"me"},{"t":145.2,"w":"going"},{"t":145.5,"w":"crazy,"},{"t":146.38,"w":"crazy,"},{"t":146.38,"w":"crazy,"},{"t":146.38,"w":"crazy,"},{"t":146.38,"w":"crazy"},{"t":148.56,"w":"You"},{"t":149.12,"w":"say"},{"t":149.68,"w":"you're"},{"t":149.94,"w":"dumb,"},{"t":150.38,"w":"but"},{"t":150.58,"w":"you're"},{"t":150.76,"w":"still"},{"t":151,"w":"outside"},{"t":152.22,"w":"You"},{"t":152.78,"w":"say"},{"t":153.12,"w":"you"},{"t":153.3,"w":"hate"},{"t":153.58,"w":"me,"},{"t":153.76,"w":"but"},{"t":153.92,"w":"you"},{"t":154.1,"w":"still"},{"t":154.38,"w":"reply"},{"t":154.72,"w":"I"},{"t":155.38,"w":"should"},{"t":155.52,"w":"leave"},{"t":156.02,"w":"you"},{"t":156.28,"w":"where"},{"t":156.5,"w":"the"},{"t":156.68,"w":"past"},{"t":157.1,"w":"lies"},{"t":158.02,"w":"But"},{"t":158.3,"w":"we"},{"t":158.58,"w":"light"},{"t":158.82,"w":"it"},{"t":159.1,"w":"up"},{"t":159.65,"w":"when"},{"t":159.94,"w":"the"},{"t":160.19,"w":"glass"},{"t":160.44,"w":"hides"},{"t":161.26,"w":"You"},{"t":161.36,"w":"got"},{"t":161.58,"w":"a"},{"t":161.76,"w":"way"},{"t":162.04,"w":"of"},{"t":162.22,"w":"making"},{"t":162.52,"w":"wrongs"},{"t":163.14,"w":"feel"},{"t":163.34,"w":"right"},{"t":163.84,"w":"You"},{"t":164.67,"w":"got"},{"t":165,"w":"a"},{"t":165.16,"w":"way"},{"t":165.44,"w":"of"},{"t":165.6,"w":"making"},{"t":165.9,"w":"dark"},{"t":166.34,"w":"look"},{"t":166.68,"w":"bright"},{"t":167.14,"w":"I'm"},{"t":167.46,"w":"losing"},{"t":167.54,"w":"sleep,"},{"t":167.98,"w":"I'm"},{"t":168.18,"w":"losing"},{"t":168.42,"w":"pace"},{"t":168.84,"w":"I'm"},{"t":169.04,"w":"losing"},{"t":169.18,"w":"track"},{"t":169.58,"w":"of"},{"t":169.86,"w":"all"},{"t":170.08,"w":"the"},{"t":170.24,"w":"plays"},{"t":170.58,"w":"Well,"},{"t":170.96,"w":"we"},{"t":171.08,"w":"said"},{"t":171.36,"w":"this"},{"t":171.54,"w":"was"},{"t":171.76,"w":"the"},{"t":171.94,"w":"last"},{"t":172.32,"w":"time"},{"t":172.86,"w":"And"},{"t":173.36,"w":"we"},{"t":173.64,"w":"put"},{"t":173.84,"w":"up"},{"t":174.08,"w":"at"},{"t":174.3,"w":"the"},{"t":174.44,"w":"same"},{"t":174.86,"w":"time"},{"t":175.38,"w":"Don't"},{"t":175.78,"w":"call"},{"t":176,"w":"it"},{"t":176.22,"w":"love,"},{"t":176.38,"w":"it's"},{"t":176.38,"w":"just"},{"t":176.38,"w":"a"},{"t":176.38,"w":"dream"},{"t":176.38,"w":"Don't"},{"t":176.72,"w":"call"},{"t":176.72,"w":"it"},{"t":176.72,"w":"love"},{"t":176.72,"w":"if"},{"t":176.72,"w":"it"},{"t":176.72,"w":"keeps"},{"t":176.98,"w":"breaking"},{"t":177.96,"w":"Don't,"},{"t":178.66,"w":"don't"},{"t":179.2,"w":"call"},{"t":179.34,"w":"it"},{"t":179.56,"w":"over"},{"t":179.98,"w":"if"},{"t":180.2,"w":"we're"},{"t":180.42,"w":"both"},{"t":180.7,"w":"waiting"},{"t":181.34,"w":"You"},{"t":182.02,"w":"got"},{"t":182.24,"w":"me"},{"t":182.44,"w":"going"},{"t":182.78,"w":"crazy,"},{"t":183.2,"w":"you"},{"t":183.3,"w":"got"},{"t":183.52,"w":"me"},{"t":183.72,"w":"going"},{"t":184.1,"w":"crazy"},{"t":184.96,"w":"Round"},{"t":186.14,"w":"and"},{"t":186.68,"w":"round,"},{"t":187.6,"w":"we"},{"t":187.92,"w":"never"},{"t":188.44,"w":"slow"},{"t":189.02,"w":"down"},{"t":189.44,"w":"We"},{"t":190,"w":"burn"},{"t":190.34,"w":"it"},{"t":190.56,"w":"up,"},{"t":191.3,"w":"then"},{"t":191.68,"w":"we"},{"t":192.77,"w":"fall"},{"t":192.9,"w":"back"},{"t":195,"w":"down"},{"t":198.08,"w":"Maybe"},{"t":198.2,"w":"we're"},{"t":198.48,"w":"toxic,"},{"t":199,"w":"maybe"},{"t":199.88,"w":"we're"},{"t":200.18,"w":"honest"},{"t":201.42,"w":"Maybe"},{"t":201.52,"w":"the"},{"t":201.76,"w":"problem"},{"t":202.18,"w":"is"},{"t":203,"w":"I"},{"t":203.2,"w":"still"},{"t":203.68,"w":"want"},{"t":204.18,"w":"it"},{"t":204.58,"w":"Maybe"},{"t":204.9,"w":"we"},{"t":205.14,"w":"lost"},{"t":205.44,"w":"it"},{"t":206.46,"w":"Maybe"},{"t":206.62,"w":"we're"},{"t":206.86,"w":"haunted"},{"t":207.32,"w":"Maybe"},{"t":208.26,"w":"the"},{"t":208.46,"w":"truth"},{"t":208.76,"w":"is"},{"t":209.49,"w":"You"},{"t":209.94,"w":"know"},{"t":210.3,"w":"I"},{"t":210.48,"w":"love"},{"t":210.5,"w":"you"},{"t":210.5,"w":"You"},{"t":210.5,"w":"got"},{"t":211.3,"w":"me"},{"t":211.3,"w":"going"},{"t":211.3,"w":"crazy"},{"t":213.14,"w":"I"},{"t":213.82,"w":"don't"},{"t":214.18,"w":"know"},{"t":214.3,"w":"if"},{"t":214.58,"w":"I"},{"t":214.68,"w":"hate"},{"t":215.12,"w":"you"},{"t":215.38,"w":"Or"},{"t":215.96,"w":"if"},{"t":216.16,"w":"I"},{"t":216.36,"w":"need"},{"t":216.62,"w":"you,"},{"t":217.1,"w":"baby"},{"t":218.16,"w":"One"},{"t":218.68,"w":"more"},{"t":218.88,"w":"drink"},{"t":219.12,"w":"and"},{"t":219.28,"w":"I"},{"t":219.48,"w":"might"},{"t":219.72,"w":"call"},{"t":220.04,"w":"you"},{"t":221.92,"w":"One"},{"t":222.02,"w":"more"},{"t":222.22,"w":"night"},{"t":222.46,"w":"and"},{"t":222.68,"w":"I"},{"t":222.8,"w":"might"},{"t":223.06,"w":"fall"},{"t":223.36,"w":"through"},{"t":223.68,"w":"You"},{"t":224,"w":"got"},{"t":224.12,"w":"me"},{"t":224.34,"w":"going"},{"t":224.58,"w":"crazy"},{"t":226.34,"w":"Dancing"},{"t":226.66,"w":"with"},{"t":226.98,"w":"your"},{"t":227.18,"w":"ghost"},{"t":227.56,"w":"in"},{"t":227.88,"w":"the"},{"t":227.98,"w":"room"},{"t":228.42,"w":"I"},{"t":228.66,"w":"keep"},{"t":228.84,"w":"saying"},{"t":229.2,"w":"that"},{"t":229.56,"w":"I'm"},{"t":229.78,"w":"dumb,"},{"t":230.02,"w":"but"},{"t":230.22,"w":"I"},{"t":230.34,"w":"still"},{"t":230.64,"w":"look"},{"t":230.92,"w":"for"},{"t":231.22,"w":"you"},{"t":231.64,"w":"You"},{"t":232.26,"w":"got"},{"t":232.5,"w":"me"},{"t":232.66,"w":"going"},{"t":232.94,"w":"crazy,"},{"t":234.22,"w":"crazy"},{"t":236.54,"w":"You"},{"t":237.22,"w":"got"},{"t":237.38,"w":"me"},{"t":237.66,"w":"going"},{"t":237.96,"w":"crazy"},{"t":239.26,"w":"Still"},{"t":239.36,"w":"outside"},{"t":239.76,"w":"if"},{"t":240.26,"w":"you"},{"t":240.4,"w":"want"},{"t":240.62,"w":"me"},{"t":240.8,"w":"Don't"},{"t":241.42,"w":"tempt"},{"t":241.76,"w":"me"},{"t":243.06,"w":"You"},{"t":243.74,"w":"got"},{"t":244.14,"w":"me"},{"t":244.34,"w":"going"},{"t":244.62,"w":"crazy"}]}$j$::jsonb WHERE id = 'jayodeed-going-crazy-rooklyn-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:02.16] You got me going crazy, crazy, crazy
+[Chorus]
+[00:12.44] You got me going crazy,
+[Verse 2]
+[00:15.49] I don't know if I hate you
+[00:17.00] Or if I need you, baby
+[00:20.76] One more drink and I might call you
+[00:23.38] One more night and I might fall through
+[00:26.54] You got me going crazy,
+[00:28.55] dancing with your ghost in the room
+[00:31.32] I keep saying that I'm dumb,
+[00:33.02] but I still look for you
+[00:34.68] You got me going crazy, crazy, crazy
+[00:40.32] I pulled up late with the lights low,
+[Pre-Chorus]
+[00:42.24] still got your name in my iPhone
+[00:43.78] You say I'm poison,
+[00:45.20] I know,
+[00:45.74] but you still sip when your eyes close
+[00:47.30] We go back and forth like waves do,
+[00:49.30] I run from love but I chase you
+[00:50.92] I said I'd change,
+[00:51.88] that ain't true,
+[Chorus]
+[00:52.90] I just hate the way I crave you
+[00:54.80] You hit my line when the day's dry
+[00:56.38] I know your friends say I'm bad news
+[00:58.26] But when the night get too loud,
+[00:59.80] I'm still the one that you dance to
+[01:01.20] I'm faded,
+[01:02.42] you're dangerous,
+[01:03.26] still somehow my favorite
+[01:04.90] We break it,
+[01:05.88] then save it,
+[01:06.72] then wake up and say this
+[01:08.34] I
+[01:11.27] don't know if I hate you, or if I need you, baby
+[01:15.64] One more drink and I might call you
+[01:18.18] One more night and I might fall through
+[01:21.36] You got me going crazy,
+[01:23.85] dancing with your ghost in the room
+[01:26.38] I keep saying that I'm dumb,
+[01:27.88] but I still look for you
+[01:29.50] You got me going crazy, crazy, crazy, crazy
+[01:35.62] I should've left you on read,
+[01:37.40] should've stayed out with my friends
+[01:38.00] But the second that you text,
+[01:40.94] I forget how this ends
+[01:42.42] You know where to find me,
+[01:43.50] back where the lights bleed
+[01:44.26] Hands on my waist like you never lied to me
+[01:46.18] I hate that I miss it,
+[01:47.20] the chaos that kisses your hands on my skin
+[01:48.76] And the way that you listen,
+[01:49.76] don't say that you love me
+[01:50.88] Just show me tonight, we don't need forever
+[01:54.34] Just give me the high
+[01:56.38] Round and round, we never slow down
+[01:59.86] We burn it up, then we fall back down
+[02:02.54] You got me going crazy, I
+[02:05.99] don't know if I hate you
+[02:07.60] Or if I need you, baby
+[02:10.38] One more drink and I might call you
+[02:13.06] One more night and I might fall through
+[02:16.06] You got me going crazy,
+[02:18.54] dancing with your ghost in the room
+[02:20.84] I keep saying that I'm dumb,
+[02:22.52] but I still look for you
+[02:24.47] You got me going crazy,
+[02:26.36] crazy,
+[02:26.36] crazy,
+[02:26.36] crazy,
+[02:26.36] crazy
+[02:28.54] You say you're dumb, but you're still outside
+[02:32.20] You say you hate me, but you still reply
+[02:34.70] I should leave you where the past lies
+[02:37.00] But we light it up when the glass hides
+[Bridge]
+[02:41.24] You got a way of making wrongs feel right
+[02:43.82] You got a way of making dark look bright
+[02:47.12] I'm losing sleep, I'm losing pace
+[02:48.82] I'm losing track of all the plays
+[02:50.56] Well, we said this was the last time
+[02:52.84] And we put up at the same time
+[02:55.36] Don't call it love, it's just a dream
+[02:56.36] Don't call it love if it keeps breaking
+[02:57.94] Don't, don't call it over if we're both waiting
+[03:01.32] You got me going crazy, you got me going crazy
+[03:04.94] Round and round, we never slow down
+[03:09.42] We burn it up,
+[03:11.28] then we
+[03:12.75] fall back down
+[03:18.06] Maybe we're toxic, maybe we're honest
+[Drop]
+[03:21.40] Maybe the problem is I still want it
+[03:24.56] Maybe we lost it
+[03:26.44] Maybe we're haunted
+[03:27.30] Maybe the truth is
+[Outro]
+[03:29.47] You know I love you
+[03:30.48] You got me going crazy
+[03:33.12] I don't know if I hate you
+[03:35.36] Or if I need you, baby
+[03:38.14] One more drink and I might call you
+[03:41.90] One more night and I might fall through
+[03:43.66] You got me going crazy
+[03:46.31] Dancing with your ghost in the room
+[03:48.40] I keep saying that I'm dumb,
+[03:49.00] but I still look for you
+[03:51.62] You got me going crazy, crazy
+[03:56.52] You got me going crazy
+[03:59.24] Still outside if you want me
+[04:00.78] Don't tempt me
+[04:03.04] You got me going crazy
+$j$ WHERE id = 'jayodeed-going-crazy-rooklyn-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This song explores a turbulent romantic obsession where toxic dynamics blur into addiction, oscillating between hatred and dependency within a chaotic nightlife setting.","overallMood":"#1a0b2e","themes":["Toxic Love","Addiction","Chaos vs Order","Obsession"],"palette":["#FF1493","#2E061A","#5F2C8D","#7FFF00"],"sections":[{"name":"Intro","emotion":"Anticipation and nervous energy building a storm.","intensity":0.53,"colorHintHex":"#1a0b2e","start":2.16},{"name":"Verse 1","emotion":"Conflicted urgency; the immediate onset of madness triggered by presence.","intensity":0.6,"colorHintHex":"#FF1493","start":2.16},{"name":"Chorus","emotion":"Peak chaotic intensity; screaming desire amidst destruction.","intensity":0.96,"colorHintHex":"#FFD700","start":12.44},{"name":"Verse 2","emotion":"Disoriented vulnerability; the haze of alcohol masking pain.","intensity":0.88,"colorHintHex":"#5F2C8D","start":15.49},{"name":"Pre-Chorus","emotion":"Rising tension and rhythmic oscillation like crashing waves.","intensity":0.77,"colorHintHex":"#FF4136","start":42.24},{"name":"Bridge","emotion":"Melancholic resignation and the cold logic of a broken cycle.","intensity":0.17,"colorHintHex":"#1a0b2e","start":161.24},{"name":"Drop","emotion":"Pure sonic chaos; disintegration of self into noise.","intensity":0.3,"colorHintHex":"#FF4136","start":201.4},{"name":"Outro","emotion":"Fading echo of obsession refusing to let go completely.","intensity":0.21,"colorHintHex":"#5F2C8D","start":209.47}],"keywords":[{"word":"crazy","emotion":"Manic instability and loss of control.","imageryPrompt":"A swirling vortex of neon lights distorting a person's face, surrounded by floating shattered glass and digital glitch effects."},{"word":"hate","emotion":"Burning resentment mixed with suppressed longing.","imageryPrompt":"Dark smoke curling around clenched fists holding a burning rose that refuses to fade in the shadows of an alleyway."},{"word":"need","emotion":"Desperate, hollow craving for connection.","imageryPrompt":"Dry, cracked earth reaching desperately toward a single dripping faucet inside a sterile, empty concrete room."},{"word":"ghost","emotion":"Haunting presence of memory in the present moment.","imageryPrompt":"A translucent figure dancing alone in an abandoned club with flickering strobe lights casting long, disjointed shadows."},{"word":"poison","emotion":"Dangerous allure and self-destruction.","imageryPrompt":"Vibrant red liquid dripping from a cracked glass onto a black floor that instantly blooms with dark violet flowers."},{"word":"chaos","emotion":"Overwhelming sensory overload and disorder.","imageryPrompt":"A kaleidoscope of shattered mirrors reflecting different timelines, exploding outward in slow motion amidst rain."}]}$j$::jsonb) WHERE id = 'jayodeed-going-crazy-rooklyn-mix' AND planet->'analysis' IS NULL;
+
+-- light-it-myself: 600 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.67,"w":"I"},{"t":1.7,"w":"know"},{"t":2.06,"w":"you"},{"t":5.68,"w":"전화하지"},{"t":6.5,"w":"말랬는데"},{"t":7.32,"w":"You"},{"t":7.54,"w":"told"},{"t":7.84,"w":"me"},{"t":8.18,"w":"not"},{"t":8.56,"w":"to"},{"t":9.14,"w":"call"},{"t":9.98,"w":"나도"},{"t":10.9,"w":"알아"},{"t":11.46,"w":"I"},{"t":12.44,"w":"know"},{"t":12.76,"w":"손이"},{"t":13.28,"w":"먼저"},{"t":13.5,"w":"움직였어"},{"t":14.64,"w":"네"},{"t":15.01,"w":"목소리"},{"t":15.54,"w":"그대로야"},{"t":16.58,"w":"Your"},{"t":16.68,"w":"voice"},{"t":17.04,"w":"is"},{"t":17.34,"w":"still"},{"t":17.64,"w":"the"},{"t":17.94,"w":"same"},{"t":18.5,"w":"메시지를"},{"t":19.16,"w":"남겨주세요"},{"t":20.24,"w":"Please"},{"t":21.02,"w":"leave"},{"t":21.32,"w":"a"},{"t":21.5,"w":"message"},{"t":21.92,"w":"아무것도"},{"t":22.84,"w":"안"},{"t":23.16,"w":"타버린"},{"t":23.72,"w":"것처럼"},{"t":24.12,"w":"Like"},{"t":24.76,"w":"nothing"},{"t":25.04,"w":"ever"},{"t":25.32,"w":"burned"},{"t":25.78,"w":"down"},{"t":26.16,"w":"괜찮냐고"},{"t":27.12,"w":"Am"},{"t":27.44,"w":"I"},{"t":27.62,"w":"okay"},{"t":28,"w":"아니"},{"t":28.86,"w":"안"},{"t":29.16,"w":"괜찮은"},{"t":29.76,"w":"건"},{"t":29.9,"w":"나야"},{"t":30.64,"w":"No"},{"t":30.96,"w":"I'm"},{"t":31.46,"w":"the"},{"t":31.62,"w":"one"},{"t":32,"w":"who's"},{"t":32.45,"w":"not"},{"t":32.56,"w":"okay"},{"t":33.6,"w":"괜찮은"},{"t":34.04,"w":"척"},{"t":34.36,"w":"이제"},{"t":35.1,"w":"지쳤어"},{"t":58,"w":"Yeah"},{"t":58.08,"w":"yeah"},{"t":58.88,"w":"right"},{"t":59.4,"w":"Bleeding"},{"t":60.12,"w":"in"},{"t":60.26,"w":"behind"},{"t":60.6,"w":"it"},{"t":60.82,"w":"Then"},{"t":61.02,"w":"it"},{"t":61.14,"w":"bites"},{"t":61.49,"w":"Wakes"},{"t":62.54,"w":"up"},{"t":62.86,"w":"under"},{"t":63.34,"w":"the"},{"t":63.76,"w":"floor"},{"t":64.12,"w":"No"},{"t":64.84,"w":"piano"},{"t":65.72,"w":"Just"},{"t":66.68,"w":"six"},{"t":67.14,"w":"strings"},{"t":67.68,"w":"and"},{"t":68.1,"w":"ache"},{"t":69.76,"w":"넌"},{"t":70.28,"w":"내"},{"t":70.42,"w":"불이"},{"t":70.84,"w":"안"},{"t":70.96,"w":"되겠다"},{"t":71.36,"w":"했어"},{"t":71.82,"w":"You"},{"t":72.18,"w":"said"},{"t":72.4,"w":"you"},{"t":72.58,"w":"won't"},{"t":72.96,"w":"be"},{"t":73.04,"w":"my"},{"t":73.26,"w":"fire"},{"t":73.54,"w":"난"},{"t":73.62,"w":"추위"},{"t":73.96,"w":"속에"},{"t":74.38,"w":"소리쳤어"},{"t":75.3,"w":"So"},{"t":75.56,"w":"I"},{"t":75.74,"w":"screamed"},{"t":76,"w":"until"},{"t":76.18,"w":"I"},{"t":76.42,"w":"fell"},{"t":76.42,"w":"밤새"},{"t":76.66,"w":"성향을"},{"t":77.24,"w":"쥐고"},{"t":77.54,"w":"있었어"},{"t":78.22,"w":"How"},{"t":78.5,"w":"much"},{"t":78.78,"w":"is"},{"t":79.02,"w":"all"},{"t":79.24,"w":"for"},{"t":79.28,"w":"연기가"},{"t":79.62,"w":"금빛"},{"t":80.1,"w":"되는"},{"t":80.36,"w":"걸"},{"t":80.6,"w":"보려고"},{"t":81.14,"w":"To"},{"t":81.46,"w":"watch"},{"t":81.7,"w":"the"},{"t":81.84,"w":"smoke"},{"t":82.12,"w":"turn"},{"t":82.4,"w":"gold"},{"t":82.74,"w":"어둠을"},{"t":83.28,"w":"집이라"},{"t":83.76,"w":"불렀어"},{"t":84.8,"w":"I"},{"t":85.02,"w":"called"},{"t":85.28,"w":"the"},{"t":85.46,"w":"dark"},{"t":85.68,"w":"phone"},{"t":85.8,"w":"어둠은"},{"t":86.12,"w":"늘"},{"t":86.34,"w":"대답했으니까"},{"t":87.38,"w":"I"},{"t":87.88,"w":"called"},{"t":87.98,"w":"the"},{"t":87.98,"w":"dark"},{"t":87.98,"w":"phone"},{"t":88,"w":"미안해"},{"t":88.62,"w":"I'm"},{"t":88.96,"w":"sorry"},{"t":89.24,"w":"사랑인"},{"t":89.9,"w":"척"},{"t":90.1,"w":"포장한"},{"t":90.62,"w":"상처"},{"t":91.26,"w":"Everyone"},{"t":91.9,"w":"died"},{"t":92.42,"w":"dressed"},{"t":92.84,"w":"as"},{"t":93.22,"w":"love"},{"t":93.5,"w":"너한테"},{"t":93.9,"w":"다"},{"t":94.18,"w":"죽여준"},{"t":95.22,"w":"거"},{"t":95.66,"w":"그"},{"t":96.1,"w":"복도"},{"t":96.46,"w":"불빛"},{"t":97.16,"w":"나도"},{"t":97.42,"w":"다"},{"t":97.72,"w":"외웠어"},{"t":98.52,"w":"깜빡일"},{"t":99.36,"w":"때마다"},{"t":99.82,"w":"널"},{"t":100.8,"w":"미워"},{"t":101.48,"w":"I"},{"t":102.22,"w":"drink"},{"t":102.72,"w":"it"},{"t":103.68,"w":"up"},{"t":104.83,"w":"아픔은"},{"t":105.06,"w":"가까움이"},{"t":105.76,"w":"아니었어"},{"t":106.58,"w":"It"},{"t":106.98,"w":"was"},{"t":107.22,"w":"never"},{"t":107.44,"w":"closing"},{"t":108.06,"w":"그냥"},{"t":108.42,"w":"제일"},{"t":108.86,"w":"시끄러운"},{"t":109.6,"w":"밤"},{"t":109.94,"w":"Just"},{"t":110.28,"w":"the"},{"t":110.4,"w":"loudest"},{"t":111,"w":"room"},{"t":111.2,"w":"타오르는"},{"t":111.74,"w":"걸"},{"t":112.08,"w":"착각했어"},{"t":113.42,"w":"누가"},{"t":113.88,"w":"남은"},{"t":114.58,"w":"거라고"},{"t":115.9,"w":"이제"},{"t":116.06,"w":"성냥을"},{"t":116.9,"w":"내려놔"},{"t":117.54,"w":"Now"},{"t":117.78,"w":"I"},{"t":118,"w":"put"},{"t":118.1,"w":"the"},{"t":118.28,"w":"matches"},{"t":118.76,"w":"down"},{"t":119.22,"w":"그"},{"t":119.32,"w":"선에서"},{"t":119.92,"w":"손댄"},{"t":121.22,"w":"널"},{"t":121.62,"w":"진짜"},{"t":121.74,"w":"사랑했다면"},{"t":123.04,"w":"If"},{"t":123.24,"w":"I"},{"t":123.26,"w":"ever"},{"t":123.58,"w":"really"},{"t":123.86,"w":"loved"},{"t":124.38,"w":"you"},{"t":124.64,"w":"불이"},{"t":125.08,"w":"되어"},{"t":125.26,"w":"달라"},{"t":125.74,"w":"못해"},{"t":126.98,"w":"I"},{"t":127.18,"w":"can't"},{"t":127.6,"w":"ask"},{"t":127.92,"w":"you"},{"t":128.16,"w":"to"},{"t":128.24,"w":"be"},{"t":128.46,"w":"my"},{"t":128.8,"w":"fire"},{"t":130.21,"w":"아직도"},{"t":130.4,"w":"조용함이"},{"t":131.14,"w":"무서워"},{"t":132.68,"w":"Still"},{"t":133.06,"w":"the"},{"t":133.41,"w":"quiet"},{"t":133.62,"w":"scares"},{"t":134.06,"w":"me"},{"t":135.18,"w":"근데"},{"t":135.28,"w":"버티는"},{"t":135.88,"w":"중이야"},{"t":136.96,"w":"But"},{"t":137.38,"w":"I'm"},{"t":137.6,"w":"learning"},{"t":137.82,"w":"how"},{"t":138.12,"w":"to"},{"t":138.26,"w":"stay"},{"t":138.52,"w":"불은"},{"t":139.1,"w":"I'll"},{"t":139.74,"w":"light"},{"t":140.24,"w":"it"},{"t":140.46,"w":"myself"},{"t":141.57,"w":"불은"},{"t":141.92,"w":"내가"},{"t":142.08,"w":"켤게"},{"t":142.8,"w":"I'll"},{"t":143.22,"w":"light"},{"t":143.62,"w":"fire"},{"t":144,"w":"myself"},{"t":144.78,"w":"또는"},{"t":145.57,"w":"타오름을"},{"t":146.56,"w":"두고"},{"t":147.54,"w":"말"},{"t":147.54,"w":"안"},{"t":147.82,"w":"해"},{"t":148.67,"w":"No"},{"t":148.88,"w":"more"},{"t":149.28,"w":"begging"},{"t":149.94,"w":"for"},{"t":150.36,"w":"the"},{"t":150.8,"w":"burn"},{"t":151.32,"w":"살아있다"},{"t":152.16,"w":"느끼려고"},{"t":153.36,"w":"Just"},{"t":153.46,"w":"to"},{"t":153.58,"w":"feel"},{"t":153.86,"w":"alive"},{"t":154.24,"w":"혼자라도"},{"t":155.2,"w":"Even"},{"t":155.76,"w":"alone"},{"t":157.31,"w":"어둠"},{"t":157.6,"w":"속"},{"t":157.8,"w":"촛불"},{"t":158.32,"w":"하나"},{"t":158.64,"w":"네가"},{"t":159.26,"w":"켜둔"},{"t":159.74,"w":"불빛"},{"t":160.58,"w":"이제"},{"t":160.7,"w":"내가"},{"t":160.94,"w":"불씨가"},{"t":161.76,"w":"될게"},{"t":162.42,"w":"I'll"},{"t":162.68,"w":"light"},{"t":163.26,"w":"it"},{"t":163.36,"w":"myself"},{"t":165.18,"w":"혼자"},{"t":165.52,"w":"혼자"},{"t":167.04,"w":"외로운"},{"t":167.54,"w":"게"},{"t":167.7,"w":"아니라"},{"t":168.08,"w":"혼자"},{"t":169.08,"w":"Not"},{"t":169.58,"w":"lonely,"},{"t":170.32,"w":"just"},{"t":170.64,"w":"alone"},{"t":170.91,"w":"혼자"},{"t":171.4,"w":"혼자"},{"t":172.52,"w":"집에"},{"t":173.02,"w":"가는"},{"t":173.36,"w":"법"},{"t":173.62,"w":"배우는"},{"t":174.22,"w":"중"},{"t":175.5,"w":"Yeah"},{"t":176,"w":"Yeah,"},{"t":176.52,"w":"듬성"},{"t":176.8,"w":"메시지다"},{"t":177.54,"w":"지웠어"},{"t":179.38,"w":"안"},{"t":179.48,"w":"되라던"},{"t":180.04,"w":"것만"},{"t":180.4,"w":"남겼어"},{"t":182.21,"w":"네가"},{"t":182.38,"w":"준"},{"t":182.7,"w":"가장"},{"t":182.98,"w":"다정한"},{"t":183.62,"w":"건"},{"t":185.15,"w":"잡아주지"},{"t":185.72,"w":"않은"},{"t":186.08,"w":"두"},{"t":186.3,"w":"문"},{"t":187.71,"w":"검은"},{"t":188.32,"w":"우븐은"},{"t":188.84,"w":"아직"},{"t":189.12,"w":"맞아"},{"t":189.44,"w":"Black"},{"t":189.92,"w":"hoodie"},{"t":190.16,"w":"still"},{"t":190.36,"w":"fits"},{"t":190.66,"w":"근데"},{"t":190.96,"w":"꺼진"},{"t":191.46,"w":"화면"},{"t":191.8,"w":"지겨워"},{"t":192.5,"w":"The"},{"t":192.78,"w":"dead"},{"t":193.1,"w":"screens"},{"t":193.44,"w":"이제"},{"t":193.78,"w":"충돌을"},{"t":194.58,"w":"안"},{"t":194.8,"w":"쳐차"},{"t":195.44,"w":"I"},{"t":195.96,"w":"don't"},{"t":196.19,"w":"chase"},{"t":196.38,"w":"the"},{"t":196.64,"w":"crash"},{"t":196.92,"w":"now"},{"t":197.3,"w":"아침을"},{"t":197.92,"w":"천천히"},{"t":198.76,"w":"보내"},{"t":199.36,"w":"맨날"},{"t":199.72,"w":"천둥이"},{"t":200.38,"w":"필요했어"},{"t":201.27,"w":"I"},{"t":201.82,"w":"used"},{"t":202.04,"w":"to"},{"t":202.2,"w":"need"},{"t":202.36,"w":"the"},{"t":202.56,"w":"thunder"},{"t":202.9,"w":"누가"},{"t":203.36,"w":"곁에"},{"t":203.8,"w":"있다"},{"t":204.08,"w":"믿으려고"},{"t":205.4,"w":"이제"},{"t":206.24,"w":"조용함이"},{"t":206.9,"w":"I'm"},{"t":207.28,"w":"a"},{"t":207.34,"w":"star"},{"t":207.9,"w":"Now"},{"t":208,"w":"the"},{"t":208.29,"w":"quiet"},{"t":208.58,"w":"doesn't"},{"t":209.4,"w":"scare"},{"t":209.62,"w":"me"},{"t":210.08,"w":"거울"},{"t":210.58,"w":"속"},{"t":210.74,"w":"good"},{"t":211.06,"w":"eye"},{"t":211.42,"w":"The"},{"t":211.78,"w":"king"},{"t":211.97,"w":"in"},{"t":212.38,"w":"the"},{"t":212.5,"w":"mirror"},{"t":213.22,"w":"전쟁에"},{"t":213.62,"w":"두고"},{"t":214.36,"w":"All"},{"t":214.92,"w":"night"},{"t":216.03,"w":"전수업"},{"t":216.46,"w":"내기는"},{"t":217.28,"w":"사람"},{"t":219.1,"w":"받을"},{"t":219.36,"w":"자격이"},{"t":219.86,"w":"있었는데"},{"t":222.66,"w":"아침까지"},{"t":223.6,"w":"숨"},{"t":224.16,"w":"쉬어"},{"t":225.14,"w":"숨"},{"t":225.34,"w":"쉬고"},{"t":225.76,"w":"있어"},{"t":226.46,"w":"I'm"},{"t":226.86,"w":"breathing"},{"t":227.2,"w":"now"},{"t":227.92,"w":"성냥으로"},{"t":229.18,"w":"도망가지"},{"t":230.8,"w":"마"},{"t":231.12,"w":"바닥에"},{"t":232.1,"w":"떨궜어"},{"t":233.2,"w":"불빛"},{"t":234,"w":"하나"},{"t":234.34,"w":"켜뒀어"},{"t":235.72,"w":"그걸"},{"t":236.34,"w":"따라"},{"t":236.74,"w":"나아가서"},{"t":237.52,"w":"알고"},{"t":239.06,"w":"보니"},{"t":239.66,"w":"햇빛은"},{"t":240.7,"w":"넘는"},{"t":241.18,"w":"법이었어"},{"t":242.66,"w":"내"},{"t":243.08,"w":"최악의"},{"t":244.18,"w":"머리"},{"t":245.89,"w":"드디어"},{"t":246.28,"w":"할"},{"t":246.72,"w":"말"},{"t":246.82,"w":"없어졌을"},{"t":247.88,"w":"때"},{"t":248.32,"w":"Finally"},{"t":249.02,"w":"had"},{"t":249.52,"w":"nothing"},{"t":249.92,"w":"to"},{"t":250.34,"w":"say"},{"t":250.68,"w":"그리워해도"},{"t":252.51,"w":"I"},{"t":253.1,"w":"can't"},{"t":253.32,"w":"miss"},{"t":253.56,"w":"you"},{"t":254.46,"w":"보내줄"},{"t":254.56,"w":"수"},{"t":254.7,"w":"있어"},{"t":255.4,"w":"I"},{"t":255.8,"w":"still"},{"t":255.9,"w":"let"},{"t":256.61,"w":"you"},{"t":256.72,"w":"go"},{"t":256.88,"w":"우리를"},{"t":257.86,"w":"사랑해도"},{"t":259.42,"w":"잘할"},{"t":260.24,"w":"수"},{"t":260.42,"w":"있어"},{"t":261.17,"w":"네"},{"t":262.34,"w":"상처"},{"t":262.44,"w":"안"},{"t":262.82,"w":"털게"},{"t":263.52,"w":"날"},{"t":263.92,"w":"가두지"},{"t":264.5,"w":"않을게"},{"t":265.46,"w":"성냥"},{"t":266.21,"w":"다시"},{"t":266.48,"w":"가줘"},{"t":267.58,"w":"이"},{"t":268.32,"w":"페이지는"},{"t":268.84,"w":"거풀게"},{"t":269.74,"w":"푸른"},{"t":270.3,"w":"내가"},{"t":271.18,"w":"이젠"},{"t":271.8,"w":"조용해"},{"t":272.68,"w":"아무것도"},{"t":273.57,"w":"안"},{"t":273.84,"w":"태우네"},{"t":276.36,"w":"다"},{"t":276.98,"w":"털"},{"t":277.48,"w":"참이야"},{"t":278.98,"w":"I'm"},{"t":279.6,"w":"lighting"},{"t":280.2,"w":"myself"},{"t":281.66,"w":"푸른"},{"t":281.76,"w":"내가"},{"t":282.06,"w":"켤게"},{"t":282.74,"w":"I'll"},{"t":283.14,"w":"light"},{"t":283.5,"w":"the"},{"t":283.74,"w":"fire"},{"t":284.1,"w":"myself"},{"t":284.68,"w":"더는"},{"t":285.4,"w":"저"},{"t":285.52,"w":"오름을"},{"t":286.5,"w":"구걸"},{"t":287.38,"w":"안"},{"t":287.8,"w":"해"},{"t":288.26,"w":"No"},{"t":288.8,"w":"more"},{"t":289.18,"w":"begging"},{"t":289.94,"w":"for"},{"t":290.36,"w":"the"},{"t":290.74,"w":"burn"},{"t":291.26,"w":"살아있다"},{"t":292.12,"w":"느끼려고"},{"t":292.94,"w":"Just"},{"t":293.42,"w":"a"},{"t":293.56,"w":"feeling"},{"t":294.06,"w":"혼자라도"},{"t":295.1,"w":"Even"},{"t":295.74,"w":"alone"},{"t":297.4,"w":"어둠"},{"t":297.5,"w":"속"},{"t":297.7,"w":"촛불"},{"t":298.26,"w":"하나"},{"t":298.66,"w":"비가"},{"t":299.39,"w":"켜진"},{"t":299.66,"w":"불빛"},{"t":300.48,"w":"이젠"},{"t":300.78,"w":"내가"},{"t":301,"w":"불씨가"},{"t":301.74,"w":"될까"},{"t":302.22,"w":"I'll"},{"t":302.76,"w":"light"},{"t":302.98,"w":"it"},{"t":303.24,"w":"myself"},{"t":304.4,"w":"I'll"},{"t":305.36,"w":"lighten"},{"t":306.2,"w":"myself"},{"t":306.56,"w":"점진"},{"t":307.5,"w":"시작하려는"},{"t":308.38,"w":"게"},{"t":308.72,"w":"아냐"},{"t":309.4,"w":"I'm"},{"t":309.64,"w":"not"},{"t":309.9,"w":"the"},{"t":310.16,"w":"start"},{"t":310.54,"w":"of"},{"t":310.78,"w":"war"},{"t":310.94,"w":"문을"},{"t":311.36,"w":"찾을"},{"t":311.84,"w":"만큼만"},{"t":312.76,"w":"Just"},{"t":312.98,"w":"enough"},{"t":313.34,"w":"to"},{"t":313.68,"w":"find"},{"t":314.06,"w":"the"},{"t":314.48,"w":"dark"},{"t":314.86,"w":"타오르지"},{"t":315.72,"w":"않아도"},{"t":316.78,"w":"I"},{"t":317.28,"w":"don't"},{"t":317.54,"w":"need"},{"t":317.74,"w":"to"},{"t":318.04,"w":"burn"},{"t":318.36,"w":"돌아올"},{"t":319.28,"w":"가치"},{"t":319.78,"w":"있다는"},{"t":321.68,"w":"걸"},{"t":323.02,"w":"To"},{"t":323.9,"w":"be"},{"t":324.06,"w":"worth"},{"t":324.38,"w":"coming"},{"t":324.88,"w":"home"},{"t":325.38,"w":"to"},{"t":325.88,"w":"me"},{"t":326.56,"w":"괜찮아"},{"t":326.96,"w":"It's"},{"t":327.4,"w":"okay"},{"t":327.82,"w":"밤을"},{"t":328.62,"w":"보탬했어"},{"t":329.32,"w":"I"},{"t":329.95,"w":"made"},{"t":330.14,"w":"it"},{"t":330.38,"w":"through"},{"t":330.52,"w":"the"},{"t":330.66,"w":"night"},{"t":331.26,"w":"네"},{"t":331.36,"w":"말이"},{"t":331.7,"w":"맞았어"},{"t":332.32,"w":"You"},{"t":332.88,"w":"were"},{"t":333.02,"w":"right"},{"t":333.44,"w":"아픔이"},{"t":334.26,"w":"필요"},{"t":334.56,"w":"없었어"},{"t":335.64,"w":"I"},{"t":336.06,"w":"didn't"},{"t":336.48,"w":"need"},{"t":336.66,"w":"the"},{"t":336.78,"w":"pain"},{"t":337.8,"w":"넌"},{"t":337.9,"w":"날"},{"t":338.12,"w":"사랑했단"},{"t":339.18,"w":"걸"},{"t":339.56,"w":"알려고"},{"t":341.4,"w":"To"},{"t":341.82,"w":"know"},{"t":342.62,"w":"나의"},{"t":342.9,"w":"온"},{"t":343.28,"w":"태"},{"t":343.74,"w":"불빛을"},{"t":344.64,"w":"남겼어"}]}$j$::jsonb WHERE id = 'light-it-myself' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.65] I know you
+[Verse 1]
+[00:05.66] 전화하지 말랬는데
+[00:07.30] You told me not to call
+[00:09.96] 나도 알아
+[00:11.44] I know
+[00:12.74] 손이 먼저 움직였어
+[00:14.62] 네 목소리 그대로야
+[00:16.56] Your voice is still the same
+[00:18.48] 메시지를 남겨주세요
+[00:20.22] Please leave a message
+[00:21.90] 아무것도 안 타버린 것처럼
+[00:24.10] Like nothing ever burned down
+[00:26.14] 괜찮냐고
+[00:27.10] Am I okay
+[00:27.98] 아니 안 괜찮은 건 나야
+[00:30.62] No I'm the one who's not okay
+[00:33.58] 괜찮은 척
+[00:34.34] 이제 지쳤어
+[Chorus]
+[00:57.98] Yeah yeah right
+[00:59.38] Bleeding in behind it
+[01:00.80] Then it bites
+[01:01.47] Wakes up under the floor
+[01:04.10] No piano
+[01:05.70] Just six strings and ache
+[01:09.74] 넌 내 불이 안 되겠다 했어
+[01:11.80] You said you won't be my fire
+[01:13.52] 난 추위 속에 소리쳤어
+[01:15.28] So I screamed until I fell
+[01:16.40] 밤새 성향을 쥐고 있었어
+[01:18.20] How much is all for
+[01:19.26] 연기가 금빛 되는 걸 보려고
+[01:21.12] To watch the smoke turn gold
+[01:22.72] 어둠을 집이라 불렀어
+[01:24.78] I called the dark phone
+[01:25.78] 어둠은 늘 대답했으니까
+[01:27.36] I called the dark phone
+[01:27.98] 미안해
+[01:28.60] I'm sorry
+[01:29.22] 사랑인 척 포장한 상처
+[01:31.24] Everyone died dressed as love
+[01:33.48] 너한테 다 죽여준 거
+[01:35.64] 그 복도 불빛 나도 다 외웠어
+[01:38.50] 깜빡일 때마다 널 미워
+[01:41.46] I drink it up
+[01:44.81] 아픔은 가까움이 아니었어
+[01:46.56] It was never closing
+[01:48.04] 그냥 제일 시끄러운 밤
+[01:49.92] Just the loudest room
+[01:51.18] 타오르는 걸 착각했어
+[01:53.40] 누가 남은 거라고
+[01:55.88] 이제 성냥을 내려놔
+[01:57.52] Now I put the matches down
+[01:59.20] 그 선에서 손댄
+[02:01.20] 널 진짜 사랑했다면
+[02:03.02] If I ever really loved you
+[02:04.62] 불이 되어 달라 못해
+[02:06.96] I can't ask you to be my fire
+[02:10.19] 아직도 조용함이 무서워
+[02:12.66] Still the quiet scares me
+[02:15.16] 근데 버티는 중이야
+[02:16.94] But I'm learning how to stay
+[02:18.50] 불은 I'll light it myself
+[02:21.55] 불은 내가 켤게
+[02:22.78] I'll light fire myself
+[02:24.76] 또는 타오름을 두고
+[02:27.52] 말 안 해
+[02:28.65] No more begging for the burn
+[02:31.30] 살아있다 느끼려고
+[02:33.34] Just to feel alive
+[02:34.22] 혼자라도
+[02:35.18] Even alone
+[02:37.29] 어둠 속 촛불 하나
+[02:38.62] 네가 켜둔 불빛
+[02:40.55] 이제 내가 불씨가 될게
+[02:42.40] I'll light it myself
+[02:45.16] 혼자 혼자
+[02:47.02] 외로운 게 아니라 혼자
+[02:49.06] Not lonely, just alone
+[02:50.89] 혼자 혼자
+[02:52.50] 집에 가는 법 배우는 중
+[Bridge]
+[02:55.48] Yeah
+[02:55.98] Yeah, 듬성 메시지다
+[02:57.52] 지웠어
+[02:59.36] 안 되라던 것만 남겼어
+[03:02.19] 네가 준 가장 다정한 건
+[Drop]
+[03:05.13] 잡아주지 않은 두 문
+[03:07.69] 검은 우븐은 아직 맞아
+[03:09.42] Black hoodie still fits
+[03:10.64] 근데 꺼진 화면 지겨워
+[03:12.48] The dead screens
+[03:13.42] 이제 충돌을 안 쳐차
+[03:15.42] I don't chase the crash now
+[03:17.28] 아침을 천천히 보내
+[03:19.34] 맨날 천둥이 필요했어
+[03:21.25] I used to need the thunder
+[03:22.88] 누가 곁에 있다 믿으려고
+[03:25.38] 이제 조용함이 I'm a star
+[03:27.88] Now the quiet doesn't scare me
+[03:30.06] 거울 속 good eye
+[03:31.40] The king in the mirror
+[03:33.19] 전쟁에 두고
+[03:34.34] All night
+[03:36.01] 전수업 내기는 사람
+[03:39.08] 받을 자격이 있었는데
+[03:42.63] 아침까지 숨 쉬어
+[03:45.12] 숨 쉬고 있어
+[03:46.44] I'm breathing now
+[03:47.90] 성냥으로 도망가지 마
+[03:51.10] 바닥에 떨궜어
+[03:53.18] 불빛 하나 켜뒀어
+[03:55.70] 그걸 따라 나아가서
+[03:57.50] 알고 보니 햇빛은
+[04:00.68] 넘는 법이었어
+[04:02.64] 내 최악의 머리
+[04:05.87] 드디어 할 말 없어졌을 때
+[04:08.30] Finally had nothing to say
+[04:10.66] 그리워해도
+[04:12.49] I can't miss you
+[04:14.44] 보내줄 수 있어
+[04:15.38] I still let you go
+[04:16.86] 우리를 사랑해도
+[04:19.40] 잘할 수 있어
+[04:21.15] 네
+[04:22.32] 상처 안 털게
+[04:23.50] 날 가두지 않을게
+[04:25.44] 성냥 다시 가줘
+[04:27.56] 이 페이지는 거풀게
+[04:29.72] 푸른 내가
+[04:31.16] 이젠 조용해
+[04:32.66] 아무것도 안 태우네
+[04:36.34] 다 털 참이야
+[04:38.96] I'm lighting myself
+[04:41.64] 푸른 내가 켤게
+[04:42.72] I'll light the fire myself
+[04:44.66] 더는 저 오름을 구걸 안 해
+[04:48.24] No more begging for the burn
+[04:51.24] 살아있다 느끼려고
+[04:52.92] Just a feeling
+[04:54.04] 혼자라도
+[04:55.08] Even alone
+[04:57.38] 어둠 속 촛불 하나
+[04:58.64] 비가 켜진 불빛
+[05:00.46] 이젠 내가 불씨가 될까
+[05:02.20] I'll light it myself
+[Outro]
+[05:04.38] I'll lighten myself
+[05:06.54] 점진 시작하려는 게 아냐
+[05:09.38] I'm not the start of war
+[05:10.92] 문을 찾을 만큼만
+[05:12.74] Just enough to find the dark
+[05:14.84] 타오르지 않아도
+[05:16.76] I don't need to burn
+[05:18.34] 돌아올 가치 있다는 걸
+[05:22.00] To be worth coming home to me
+[05:26.54] 괜찮아
+[05:26.94] It's okay
+[05:27.80] 밤을 보탬했어
+[05:29.30] I made it through the night
+[05:31.24] 네 말이 맞았어
+[05:32.30] You were right
+[05:33.42] 아픔이 필요 없었어
+[05:35.62] I didn't need the pain
+[05:37.78] 넌 날 사랑했단 걸 알려고
+[05:41.38] To know
+[05:42.60] 나의 온 태
+[05:43.72] 불빛을 남겼어
+$j$ WHERE id = 'light-it-myself' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A cathartic anthem about transitioning from relying on a toxic 'fire' in another person to finding internal resilience and self-sufficiency through raw acceptance of one's own pain.","overallMood":"Cathartic Resilience","themes":["Self-Sufficiency","Toxic Relationships","Emotional Healing","Identity Reclamation","Acceptance of Silence","Inner Strength"],"palette":["#2b1d0e","#c4a375","#8fbcbb","#ff6f69"],"sections":[{"name":"Intro","emotion":"Vulnerable, trembling isolation with raw rain ambience","intensity":0.75,"colorHintHex":"#4a3b38","start":0.65},{"name":"Verse 1","emotion":"Anxious desperation and the struggle between wanting to call vs. knowing better","intensity":0.85,"colorHintHex":"#6e5c4f","start":5.66},{"name":"Chorus","emotion":"Explosive release of pain transforming into a defiant declaration of self-illumination","intensity":0.75,"colorHintHex":"#ff3d2e","start":57.98},{"name":"Bridge","emotion":"Intimate realization and the quiet acceptance that silence is no longer scary","intensity":0.46,"colorHintHex":"#8fa1b9","start":175.48},{"name":"Drop","emotion":"Triumphant self-empowerment with polished sheen over gritty emotion","intensity":0.33,"colorHintHex":"#3ec4d6","start":185.13},{"name":"Outro","emotion":"Peaceful resolution and the gentle warmth of a candle lit by oneself","intensity":0.17,"colorHintHex":"#e8f1eb","start":304.38}],"keywords":[{"word":"bleeding","emotion":"Deep internal wound and vulnerability","imageryPrompt":"Close-up of a raw human hand with visible cracks in the skin, warm blood seeping onto cold concrete floor, cinematic lighting highlighting the texture of pain."},{"word":"fire","emotion":"Transformative energy shifting from external dependency to internal source","imageryPrompt":"A golden matchstick striking against a dark stormy night sky, illuminating a single tear track on a cheek, the flame reflecting in wet pavement."},{"word":"darkness","emotion":"Safe haven and acceptance rather than fear","imageryPrompt":"A cozy room filled with thick velvet shadows where dust motes dance peacefully in moonlight, no sources of danger but a sense of restful enclosure."},{"word":"alone","emotion":"Solitude redefined as strength rather than loneliness","imageryPrompt":"A solitary figure standing on an open cliff edge watching the sunrise, back to camera, wearing oversized hoodie, posture relaxed and confident despite isolation."},{"word":"matches","emotion":"Tools of destruction turned into tools for creation","imageryPrompt":"A scattered pile of wooden matches lying on a scratched metal surface next to an unlit candle, rain dripping slowly onto the wood grain."},{"word":"quiet","emotion":"The absence of noise as a new form of peace and clarity","imageryPrompt":"A still life composition featuring a glass vase with dried flowers reflecting nothingness, soft diffused light filtering through blinds creating calm horizontal lines."},{"word":"burning","emotion":"The painful process required for rebirth and awareness","imageryPrompt":"Ember-like particles floating upwards in slow motion against a black void, each ember glowing with an inner blue-white light representing transformation."}]}$j$::jsonb) WHERE id = 'light-it-myself' AND planet->'analysis' IS NULL;
+
+-- low-lights-tokyo-night: 294 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.03,"w":"L"},{"t":0.45,"w":"OW"},{"t":0.7,"w":"L"},{"t":0.8,"w":"IGH"},{"t":1,"w":"TS"},{"t":1.18,"w":"TO"},{"t":1.5,"w":"K"},{"t":1.56,"w":"YO"},{"t":6.4,"w":"悲"},{"t":6.5,"w":"鳴"},{"t":6.62,"w":"が"},{"t":6.92,"w":"い"},{"t":6.92,"w":"ない"},{"t":20.3,"w":"悲"},{"t":21.02,"w":"鳴"},{"t":21.74,"w":"が"},{"t":21.74,"w":"い"},{"t":21.74,"w":"ない"},{"t":21.74,"w":"Yeah"},{"t":26.08,"w":"Yeah"},{"t":26.62,"w":"Yeah"},{"t":27.06,"w":"Yeah"},{"t":27.6,"w":"Yeah"},{"t":28.04,"w":"バイ"},{"t":28.66,"w":"ナ"},{"t":29.02,"w":"ル"},{"t":29.2,"w":"揺"},{"t":29.42,"w":"れて"},{"t":29.74,"w":"I"},{"t":30,"w":"slide"},{"t":30.32,"w":"through"},{"t":30.72,"w":"flow"},{"t":31.52,"w":"同"},{"t":32.02,"w":"じ"},{"t":32.66,"w":"パ"},{"t":32.82,"w":"ーテ"},{"t":33.18,"w":"ィ"},{"t":33.18,"w":"ー"},{"t":33.24,"w":"ば"},{"t":33.34,"w":"か"},{"t":33.46,"w":"り"},{"t":33.66,"w":"で"},{"t":33.82,"w":"ない"},{"t":34.22,"w":"home"},{"t":34.8,"w":"8"},{"t":35.46,"w":"th"},{"t":35.58,"w":"way"},{"t":36.18,"w":"鳴"},{"t":36.44,"w":"ってる"},{"t":36.66,"w":"心"},{"t":41.46,"w":"お"},{"t":42.86,"w":"疲"},{"t":44.26,"w":"れ"},{"t":52.38,"w":"様"},{"t":52.7,"w":"でした"},{"t":67.28,"w":"L"},{"t":67.44,"w":"ow"},{"t":67.7,"w":"light"},{"t":68.2,"w":"染"},{"t":68.34,"w":"ま"},{"t":68.54,"w":"る"},{"t":68.56,"w":"body"},{"t":69.06,"w":"Now"},{"t":69.56,"w":"I"},{"t":69.9,"w":"'m"},{"t":69.94,"w":"turning"},{"t":70.28,"w":"blue"},{"t":70.62,"w":"まだ"},{"t":71.04,"w":"変"},{"t":71.22,"w":"わ"},{"t":71.42,"w":"り"},{"t":71.6,"w":"た"},{"t":71.84,"w":"く"},{"t":72.02,"w":"ない"},{"t":72.42,"w":"ね"},{"t":72.76,"w":"But"},{"t":72.96,"w":"I"},{"t":73.16,"w":"can"},{"t":73.4,"w":"say"},{"t":73.62,"w":"goodbye"},{"t":74,"w":"踊"},{"t":74.52,"w":"ってる"},{"t":74.8,"w":"フ"},{"t":74.94,"w":"リ"},{"t":75.1,"w":"の"},{"t":75.34,"w":"ま"},{"t":75.58,"w":"まで"},{"t":76.1,"w":"I"},{"t":76.42,"w":"'m"},{"t":76.52,"w":"breaking"},{"t":76.92,"w":"in"},{"t":77.8,"w":"the"},{"t":78.44,"w":"night"},{"t":79.38,"w":"ス"},{"t":79.62,"w":"ム"},{"t":79.7,"w":"ー"},{"t":79.7,"w":"ズ"},{"t":79.8,"w":"な"},{"t":79.98,"w":"鼓"},{"t":80.26,"w":"動"},{"t":80.56,"w":"雨"},{"t":80.9,"w":"の"},{"t":81.08,"w":"ガ"},{"t":81.28,"w":"ラ"},{"t":81.4,"w":"ス"},{"t":81.62,"w":"みたい"},{"t":82.01,"w":"終"},{"t":82.36,"w":"電"},{"t":82.62,"w":"す"},{"t":82.74,"w":"ぎ"},{"t":82.84,"w":"て"},{"t":82.98,"w":"も"},{"t":83.12,"w":"消"},{"t":83.24,"w":"え"},{"t":83.34,"w":"ない"},{"t":83.52,"w":"Vi"},{"t":83.76,"w":"be"},{"t":83.96,"w":"待"},{"t":84.12,"w":"た"},{"t":84.28,"w":"ない"},{"t":84.48,"w":"で"},{"t":84.56,"w":"って"},{"t":84.72,"w":"君"},{"t":84.94,"w":"は"},{"t":85.12,"w":"言"},{"t":85.22,"w":"った"},{"t":85.48,"w":"けど"},{"t":85.92,"w":"でも"},{"t":86.6,"w":"まだ"},{"t":86.88,"w":"君"},{"t":87.42,"w":"を"},{"t":87.9,"w":"探"},{"t":88.44,"w":"して"},{"t":88.92,"w":"る"},{"t":89.18,"w":"よ"},{"t":92.6,"w":"ク"},{"t":93.22,"w":"ラ"},{"t":93.4,"w":"ウ"},{"t":93.42,"w":"ド"},{"t":93.5,"w":"の"},{"t":93.68,"w":"声"},{"t":93.82,"w":"は"},{"t":93.98,"w":"空"},{"t":94.14,"w":"を"},{"t":94.36,"w":"繋"},{"t":94.52,"w":"い"},{"t":94.84,"w":"同"},{"t":95.06,"w":"じ"},{"t":95.3,"w":"ソ"},{"t":95.5,"w":"ング"},{"t":95.66,"w":"で"},{"t":95.76,"w":"向"},{"t":95.86,"w":"いた"},{"t":95.98,"w":"イ"},{"t":96.12,"w":"ン"},{"t":96.28,"w":"サ"},{"t":96.32,"w":"イ"},{"t":96.54,"w":"ド"},{"t":96.54,"w":"心"},{"t":96.9,"w":"の"},{"t":97.16,"w":"中"},{"t":97.32,"w":"で"},{"t":97.5,"w":"パ"},{"t":97.7,"w":"ーテ"},{"t":97.84,"w":"ィ"},{"t":97.84,"w":"ー"},{"t":97.84,"w":"が"},{"t":97.92,"w":"鳴"},{"t":98.12,"w":"って"},{"t":98.34,"w":"も"},{"t":98.44,"w":"君"},{"t":98.62,"w":"が"},{"t":98.84,"w":"い"},{"t":98.88,"w":"ない"},{"t":99.08,"w":"ない"},{"t":99.26,"w":"感じ"},{"t":99.6,"w":"る"},{"t":99.76,"w":"C"},{"t":99.86,"w":"row"},{"t":100.08,"w":"ド"},{"t":100.32,"w":"ラ"},{"t":100.52,"w":"ム"},{"t":100.7,"w":"止"},{"t":101,"w":"ま"},{"t":101.28,"w":"って"},{"t":101.56,"w":"も"},{"t":101.94,"w":"まだ"},{"t":102.6,"w":"S"},{"t":102.86,"w":"way"},{"t":103.06,"w":"sway"},{"t":103.48,"w":"最後"},{"t":104.04,"w":"の"},{"t":104.54,"w":"音"},{"t":104.94,"w":"よ"},{"t":105.64,"w":"どう"},{"t":105.9,"w":"か"},{"t":106.02,"w":"Don"},{"t":106.32,"w":"'t"},{"t":106.38,"w":"fade"},{"t":106.6,"w":"away"},{"t":107.3,"w":"鼓"},{"t":107.4,"w":"動"},{"t":107.64,"w":"重"},{"t":107.9,"w":"な"},{"t":108.24,"w":"って"},{"t":108.67,"w":"また"},{"t":109.14,"w":"離"},{"t":109.6,"w":"れて"},{"t":110.1,"w":"く"},{"t":110.42,"w":"部"},{"t":110.84,"w":"屋"},{"t":111.06,"w":"を"},{"t":111.34,"w":"出"},{"t":111.62,"w":"た"},{"t":111.72,"w":"君"},{"t":112.06,"w":"まだ"},{"t":112.52,"w":"心"},{"t":113,"w":"に"},{"t":113.58,"w":"いる"},{"t":118.94,"w":"We"},{"t":119.78,"w":"'re"},{"t":119.98,"w":"in"},{"t":120.22,"w":"love"},{"t":120.6,"w":"with"},{"t":120.96,"w":"the"},{"t":121.16,"w":"party"},{"t":121.62,"w":"But"},{"t":122.02,"w":"I"},{"t":122.18,"w":"'m"},{"t":122.28,"w":"still"},{"t":122.48,"w":"missing"},{"t":122.84,"w":"you"},{"t":123.22,"w":"L"},{"t":123.52,"w":"ow"},{"t":123.8,"w":"light"},{"t":124.26,"w":"染"},{"t":124.42,"w":"ま"},{"t":124.56,"w":"る"},{"t":124.6,"w":"body"},{"t":125.08,"w":"Now"},{"t":125.62,"w":"I"},{"t":125.9,"w":"'m"},{"t":126.04,"w":"turning"},{"t":126.26,"w":"blue"},{"t":126.54,"w":"まだ"},{"t":127.06,"w":"帰"},{"t":127.5,"w":"り"},{"t":127.76,"w":"た"},{"t":127.86,"w":"く"},{"t":128.08,"w":"ない"},{"t":128.46,"w":"ね"},{"t":128.9,"w":"But"},{"t":129,"w":"I"},{"t":129.2,"w":"can"},{"t":129.46,"w":"'t"},{"t":129.52,"w":"say"},{"t":129.7,"w":"goodbye"},{"t":130.1,"w":"まだ"},{"t":130.5,"w":"パ"},{"t":130.86,"w":"ーテ"},{"t":131.28,"w":"ィ"},{"t":131.28,"w":"ー"},{"t":131.34,"w":"に"},{"t":131.44,"w":"恋"},{"t":131.84,"w":"して"},{"t":132.12,"w":"一"},{"t":132.5,"w":"人"},{"t":133.24,"w":"T"},{"t":133.54,"w":"OK"},{"t":134.42,"w":"YO"},{"t":134.56,"w":"LI"},{"t":135.54,"w":"GH"},{"t":135.64,"w":"TS"},{"t":140.19,"w":"L"},{"t":140.36,"w":"ow"},{"t":140.84,"w":"light"},{"t":141.54,"w":"時"},{"t":141.84,"w":"よ"},{"t":146.5,"w":"君"},{"t":146.62,"w":"で"},{"t":146.92,"w":"なん"},{"t":147.08,"w":"ない"},{"t":167.42,"w":"T"},{"t":167.46,"w":"OK"},{"t":167.5,"w":"YO"},{"t":167.52,"w":"LI"},{"t":167.54,"w":"GH"},{"t":167.56,"w":"TS"},{"t":167.61,"w":"順"},{"t":167.66,"w":"番"},{"t":167.68,"w":"financially"},{"t":167.7,"w":"-"},{"t":167.72,"w":"END"},{"t":167.74,"w":"-"}]}$j$::jsonb WHERE id = 'low-lights-tokyo-night' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.01] LOWLIGHTS TOKYO
+[00:06.38] 悲鳴がいない
+[00:20.28] 悲鳴がいない
+[Verse 1]
+[00:21.72] Yeah
+[00:26.06] Yeah Yeah Yeah Yeah
+[00:28.02] バイナル揺れて I slide through flow
+[00:31.50] 同じパーティーばかりでない home
+[00:34.78] 8th way 鳴ってる心
+[00:41.44] お疲れ様でした
+[Pre-Chorus]
+[Chorus]
+[01:07.26] Low light 染まる body
+[01:09.04] Now I'm turning blue
+[01:10.60] まだ変わりたくないね
+[01:12.74] But I can say goodbye
+[01:13.98] 踊ってるフリのままで
+[01:16.08] I'm breaking in the night
+[01:19.36] スムーズな鼓動 雨のガラスみたい
+[01:21.99] 終電すぎても消えないVibe
+[01:23.94] 待たないでって君は言ったけど
+[01:25.90] でもまだ君を探してるよ
+[01:32.58] クラウドの声は空を繋い
+[01:34.82] 同じソングで向いたインサイド
+[01:36.52] 心の中でパーティーが鳴っても
+[01:38.42] 君がいないない感じるCrow
+[01:40.06] ドラム止まっても
+[01:41.92] まだSway sway
+[01:43.46] 最後の音よ
+[01:45.62] どうかDon't fade away
+[01:47.28] 鼓動重なって
+[01:48.65] また離れてく
+[01:50.40] 部屋を出た君
+[01:52.04] まだ心にいる
+[Verse 2]
+[Bridge]
+[01:58.92] We're in love with the party
+[02:01.60] But I'm still missing you
+[02:03.20] Low light 染まる body
+[02:05.06] Now I'm turning blue
+[02:06.52] まだ帰りたくないね
+[02:08.87] But I can't say goodbye
+[02:10.08] まだパーティーに恋して
+[02:12.10] 一人TOKYO LIGHTS
+[02:20.17] Low light 時よ
+[02:26.47] 君でなんない
+[Final Chorus]
+[02:47.40] TOKYO LIGHTS
+[02:47.59] 順番 financially
+[02:47.68] -END-
+$j$ WHERE id = 'low-lights-tokyo-night' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A melancholic journey through a rainy Tokyo nightlife where an artist navigates the bittersweet tension between partying to forget and the lingering pain of losing a loved one.","overallMood":"Bittersweet","themes":["Urban Isolation","Nostalgia","Hidden Grief","Neon Melancholy"],"palette":["#0F1824","#1C3A59","#7D6E7B","#FF2A6D"],"sections":[{"name":"Intro","emotion":"Atmospheric dread and anticipation of rain","intensity":0.61,"colorHint":"#1c3a59","start":0.01},{"name":"Verse 1","emotion":"Rhythmic numbness masking sadness","intensity":0.69,"colorHint":"#2e4f6d","start":21.72},{"name":"Pre-Chorus","emotion":"Building tension and rising anxiety","intensity":0.96,"colorHint":"#3a1c59","start":67.26},{"name":"Chorus","emotion":"Raw emotional release amidst neon chaos","intensity":0.64,"colorHint":"#ff2a6d","start":67.26},{"name":"Verse 2","emotion":"Resigned acceptance of the void left behind","intensity":0.33,"colorHint":"#4f3a59","start":118.92},{"name":"Bridge","emotion":"Desperate plea against fading memory","intensity":0.3,"colorHint":"#6e5c7d","start":118.92},{"name":"Final Chorus","emotion":"Anthemic resignation and final acceptance of loss","intensity":0.3,"colorHint":"#ff2a6d","start":167.4}],"keywords":[{"word":"light","emotion":"Shadowed vulnerability","imageryPrompt":"dimly lit underground club with flickering neon signs casting long blue shadows on sweat-dampened concrete floors, rain streaking the windows behind"},{"word":"turning","emotion":"Cold detachment and fading warmth","imageryPrompt":"skin turning a translucent pale shade of indigo under harsh fluorescent lights, ice cubes melting rapidly in a glass with condensation running down the sides"},{"word":"breaking","emotion":"Fractured psyche and structural collapse","imageryPrompt":"cracked mirror reflecting a distorted silhouette shattering into glowing shards against a backdrop of blurred city traffic, glass dust floating in air currents"},{"word":"rainy","emotion":"Melancholic cleansing and isolation","imageryPrompt":"heavy sheets of rain blurring the view of skyscrapers into watercolor smears, puddles reflecting fractured neon lights on wet asphalt streets"},{"word":"crowd","emotion":"Dense silence within noise","imageryPrompt":"thousands of blurred figures moving as one mass under umbrellas in a dark alleyway, faces obscured by steam from breath and rain droplets clinging to glasses"},{"word":"fade","emotion":"Existential slipping into nothingness","imageryPrompt":"silhouette of a person slowly dissolving into digital static or smoke particles, the edges of their form blurring and losing definition against a dark void"},{"word":"party","emotion":"Forced euphoria masking pain","imageryPrompt":"overly saturated colors distorting reality in a crowded dance floor where faces are hidden behind masks of smiles, strobe lights creating disjointed motion blur"},{"word":"lights","emotion":"Distant beauty and unreachable hope","imageryPrompt":"towering skyscrapers piercing a stormy night sky with windows glowing like dying stars, reflections in wet pavement showing the city as both majestic and indifferent"}]}$j$::jsonb) WHERE id = 'low-lights-tokyo-night' AND planet->'analysis' IS NULL;
+
+-- membrane-still-insane: 715 words, 4 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":6.13,"w":"yo"},{"t":6.8,"w":"you"},{"t":7.65,"w":"hear"},{"t":7.82,"w":"that"},{"t":7.96,"w":"whistle"},{"t":8.2,"w":"bending"},{"t":10.46,"w":"that"},{"t":10.56,"w":"at"},{"t":10.76,"w":"the"},{"t":10.91,"w":"boat"},{"t":11.18,"w":"my"},{"t":11.4,"w":"guy"},{"t":11.72,"w":"that's"},{"t":13.24,"w":"your"},{"t":13.24,"w":"brain"},{"t":13.62,"w":"talking"},{"t":13.94,"w":"back"},{"t":16.4,"w":"membrane"},{"t":17.16,"w":"still"},{"t":17.92,"w":"insane"},{"t":29.94,"w":"in"},{"t":30.5,"w":"the"},{"t":31.06,"w":"frame"},{"t":31.32,"w":"like"},{"t":31.86,"w":"a"},{"t":32.06,"w":"white"},{"t":32.3,"w":"knight"},{"t":32.58,"w":"but"},{"t":32.82,"w":"the"},{"t":32.96,"w":"madness"},{"t":33.26,"w":"got"},{"t":33.48,"w":"a"},{"t":33.6,"w":"name"},{"t":33.9,"w":"whistle"},{"t":34.48,"w":"go"},{"t":34.74,"w":"in"},{"t":35.24,"w":"the"},{"t":35.54,"w":"whole"},{"t":35.74,"w":"dock"},{"t":36.04,"w":"shake"},{"t":36.38,"w":"cartoon"},{"t":36.9,"w":"eyes"},{"t":37.34,"w":"wide"},{"t":37.6,"w":"when"},{"t":37.96,"w":"the"},{"t":38.08,"w":"bad"},{"t":38.34,"w":"boys"},{"t":38.64,"w":"break"},{"t":38.94,"w":"brain"},{"t":39.5,"w":"on"},{"t":42.36,"w":"the"},{"t":42.56,"w":"chain"},{"t":42.82,"w":"river"},{"t":43.38,"w":"full"},{"t":43.66,"w":"of"},{"t":43.84,"w":"fog"},{"t":44.12,"w":"and"},{"t":44.32,"w":"the"},{"t":44.48,"w":"deck"},{"t":44.72,"w":"full"},{"t":44.92,"w":"of"},{"t":45.08,"w":"flames"},{"t":45.42,"w":"step"},{"t":45.88,"w":"to"},{"t":46.2,"w":"the"},{"t":46.3,"w":"boat"},{"t":46.62,"w":"better"},{"t":46.92,"w":"know"},{"t":47.2,"w":"what"},{"t":47.46,"w":"you"},{"t":47.6,"w":"claim"},{"t":47.88,"w":"one"},{"t":48.28,"w":"one"},{"t":48.77,"w":"and"},{"t":49.32,"w":"the"},{"t":49.56,"w":"whole"},{"t":49.8,"w":"bell"},{"t":50.08,"w":"ring"},{"t":50.42,"w":"i"},{"t":50.56,"w":"came"},{"t":50.84,"w":"out"},{"t":51.06,"w":"the"},{"t":51.22,"w":"real"},{"t":51.46,"w":"with"},{"t":51.68,"w":"the"},{"t":51.84,"w":"lean"},{"t":52.14,"w":"and"},{"t":52.34,"w":"the"},{"t":52.48,"w":"green"},{"t":52.68,"w":"ink"},{"t":53.08,"w":"on"},{"t":53.26,"w":"my"},{"t":53.42,"w":"gloves"},{"t":53.76,"w":"in"},{"t":53.92,"w":"the"},{"t":54.02,"w":"storm"},{"t":54.36,"w":"in"},{"t":54.54,"w":"my"},{"t":54.66,"w":"skin"},{"t":55,"w":"moon"},{"t":55.6,"w":"look"},{"t":55.88,"w":"crap"},{"t":56.2,"w":"when"},{"t":56.42,"w":"the"},{"t":56.58,"w":"paddle"},{"t":56.88,"w":"will"},{"t":57.1,"w":"spin"},{"t":57.46,"w":"hold"},{"t":57.82,"w":"that"},{"t":58.08,"w":"whisper"},{"t":58.56,"w":"don't"},{"t":59.2,"w":"let"},{"t":59.3,"w":"him"},{"t":59.58,"w":"in"},{"t":59.84,"w":"been"},{"t":60.12,"w":"up"},{"t":60.38,"w":"three"},{"t":60.62,"w":"nights"},{"t":61.54,"w":"with"},{"t":61.64,"w":"smoke"},{"t":61.92,"w":"in"},{"t":62.18,"w":"my"},{"t":62.3,"w":"coat"},{"t":62.58,"w":"talking"},{"t":63.04,"w":"to"},{"t":63.42,"w":"a"},{"t":63.58,"w":"shadow"},{"t":63.9,"w":"that"},{"t":64.08,"w":"been"},{"t":64.16,"w":"steering"},{"t":64.52,"w":"the"},{"t":64.74,"w":"boat"},{"t":65.13,"w":"laughing"},{"t":65.68,"w":"at"},{"t":65.98,"w":"the"},{"t":66.12,"w":"fog"},{"t":66.44,"w":"like"},{"t":66.66,"w":"it"},{"t":66.8,"w":"told"},{"t":67.02,"w":"me"},{"t":67.16,"w":"a"},{"t":67.28,"w":"joke"},{"t":67.56,"w":"then"},{"t":67.96,"w":"the"},{"t":68.08,"w":"whistle"},{"t":68.34,"w":"hit"},{"t":68.62,"w":"hard"},{"t":69,"w":"and"},{"t":69.2,"w":"the"},{"t":69.32,"w":"pier"},{"t":69.58,"w":"just"},{"t":69.84,"w":"spoke"},{"t":70.18,"w":"mind"},{"t":70.56,"w":"doing"},{"t":70.84,"w":"backflips"},{"t":71.5,"w":"knees"},{"t":71.8,"w":"doing"},{"t":72.08,"w":"swings"},{"t":72.44,"w":"rubber"},{"t":72.8,"w":"hose"},{"t":73.06,"w":"arms"},{"t":73.44,"w":"with"},{"t":73.68,"w":"the"},{"t":73.86,"w":"old"},{"t":74.08,"w":"gold"},{"t":74.36,"w":"rings"},{"t":74.76,"w":"piano"},{"t":75.28,"w":"go"},{"t":75.56,"w":"crooked"},{"t":76,"w":"when"},{"t":76.22,"w":"the"},{"t":76.36,"w":"villain"},{"t":76.6,"w":"bell"},{"t":76.9,"w":"dings"},{"t":77.24,"w":"whole"},{"t":77.52,"w":"black"},{"t":77.84,"w":"river"},{"t":78.18,"w":"start"},{"t":78.54,"w":"putting"},{"t":79.08,"w":"my"},{"t":79.36,"w":"strings"},{"t":79.74,"w":"i"},{"t":80.02,"w":"ain't"},{"t":80.2,"w":"crazy"},{"t":80.44,"w":"i'm"},{"t":80.74,"w":"classic"},{"t":81.06,"w":"with"},{"t":81.32,"w":"the"},{"t":81.42,"w":"scratch"},{"t":81.66,"w":"in"},{"t":81.82,"w":"the"},{"t":81.92,"w":"brain"},{"t":82.24,"w":"vintage"},{"t":82.68,"w":"little"},{"t":82.94,"w":"menace"},{"t":83.5,"w":"with"},{"t":83.86,"w":"the"},{"t":84,"w":"permanent"},{"t":84.36,"w":"stain"},{"t":84.68,"w":"every"},{"t":85.2,"w":"thought"},{"t":85.52,"w":"not"},{"t":85.8,"w":"teeth"},{"t":86.16,"w":"every"},{"t":86.5,"w":"laugh"},{"t":86.8,"w":"got"},{"t":87,"w":"pain"},{"t":87.36,"w":"every"},{"t":87.72,"w":"footstep"},{"t":88.36,"w":"echo"},{"t":88.7,"w":"like"},{"t":88.92,"w":"a"},{"t":89.1,"w":"runaway"},{"t":89.48,"w":"train"},{"t":89.94,"w":"who"},{"t":90.48,"w":"got"},{"t":90.74,"w":"the"},{"t":90.92,"w":"smoke"},{"t":91.28,"w":"we"},{"t":91.82,"w":"got"},{"t":91.98,"w":"the"},{"t":92.18,"w":"smoke"},{"t":92.5,"w":"who"},{"t":93.12,"w":"got"},{"t":93.34,"w":"the"},{"t":93.56,"w":"dock"},{"t":93.82,"w":"we"},{"t":94.32,"w":"run"},{"t":94.54,"w":"the"},{"t":94.72,"w":"boat"},{"t":95,"w":"who"},{"t":95.4,"w":"lost"},{"t":95.76,"w":"they"},{"t":95.98,"w":"mind"},{"t":96.26,"w":"don't"},{"t":96.68,"w":"say"},{"t":96.84,"w":"my"},{"t":97.14,"w":"name"},{"t":97.48,"w":"too"},{"t":97.9,"w":"late"},{"t":98.14,"w":"now"},{"t":98.48,"w":"membrane"},{"t":99.16,"w":"still"},{"t":99.62,"w":"insane"},{"t":100.12,"w":"membrane"},{"t":100.72,"w":"still"},{"t":101.94,"w":"insane"},{"t":102.4,"w":"smoke"},{"t":103.06,"w":"all"},{"t":103.38,"w":"in"},{"t":103.64,"w":"the"},{"t":103.76,"w":"frame"},{"t":104.06,"w":"black"},{"t":104.58,"w":"and"},{"t":104.78,"w":"white"},{"t":104.98,"w":"night"},{"t":105.28,"w":"but"},{"t":105.52,"w":"the"},{"t":105.68,"w":"madness"},{"t":105.98,"w":"got"},{"t":106.18,"w":"a"},{"t":106.34,"w":"name"},{"t":106.64,"w":"whistle"},{"t":107.22,"w":"go"},{"t":107.46,"w":"whoo"},{"t":107.84,"w":"Then"},{"t":108.08,"w":"the"},{"t":108.3,"w":"whole"},{"t":108.48,"w":"got"},{"t":108.7,"w":"shake."},{"t":109.66,"w":"Carcoonize"},{"t":110.14,"w":"wild"},{"t":110.42,"w":"when"},{"t":110.66,"w":"the"},{"t":110.8,"w":"bad"},{"t":111.08,"w":"boy"},{"t":111.32,"w":"break."},{"t":112.38,"w":"Membrane"},{"t":112.86,"w":"still"},{"t":113.34,"w":"insane."},{"t":114.42,"w":"Brain"},{"t":114.76,"w":"on"},{"t":115.12,"w":"that"},{"t":115.28,"w":"chain."},{"t":115.72,"w":"River"},{"t":116.12,"w":"full"},{"t":116.38,"w":"of"},{"t":116.56,"w":"fog"},{"t":116.86,"w":"and"},{"t":117.04,"w":"the"},{"t":117.18,"w":"deck"},{"t":117.4,"w":"full"},{"t":117.64,"w":"of"},{"t":117.8,"w":"flame."},{"t":118.24,"w":"Step"},{"t":118.64,"w":"to"},{"t":118.96,"w":"the"},{"t":119.06,"w":"boat,"},{"t":119.44,"w":"better"},{"t":119.64,"w":"know"},{"t":119.96,"w":"what"},{"t":120.22,"w":"you"},{"t":120.34,"w":"claim."},{"t":120.78,"w":"One"},{"t":120.94,"w":"long"},{"t":121.3,"w":"knock"},{"t":121.66,"w":"and"},{"t":122.12,"w":"the"},{"t":122.26,"w":"whole"},{"t":122.54,"w":"boom."},{"t":122.82,"w":"I'm"},{"t":122.96,"w":"the"},{"t":122.96,"w":"crooked"},{"t":123.22,"w":"little"},{"t":123.5,"w":"captain"},{"t":123.86,"w":"with"},{"t":124.1,"w":"the"},{"t":124.22,"w":"laughing"},{"t":124.66,"w":"stereo."},{"t":125.5,"w":"Eyes"},{"t":125.84,"w":"too"},{"t":126.06,"w":"low,"},{"t":126.46,"w":"but"},{"t":126.62,"w":"the"},{"t":126.76,"w":"mind"},{"t":127.04,"w":"move"},{"t":127.3,"w":"aerial."},{"t":127.98,"w":"Feet"},{"t":128.44,"w":"on"},{"t":128.56,"w":"the"},{"t":128.68,"w":"deck,"},{"t":129.04,"w":"but"},{"t":129.18,"w":"the"},{"t":129.32,"w":"thoughts"},{"t":129.62,"w":"go"},{"t":129.84,"w":"burial."},{"t":130.44,"w":"Deep"},{"t":130.88,"w":"in"},{"t":131.12,"w":"the"},{"t":131.2,"w":"hole"},{"t":131.48,"w":"where"},{"t":131.72,"w":"the"},{"t":131.9,"w":"old"},{"t":132.12,"w":"ghost"},{"t":132.46,"w":"carry"},{"t":132.74,"w":"gold."},{"t":133.18,"w":"Smoke"},{"t":133.44,"w":"curl"},{"t":133.72,"w":"up"},{"t":134.04,"w":"like"},{"t":134.26,"w":"a"},{"t":134.44,"w":"question"},{"t":134.8,"w":"mark."},{"t":135.2,"w":"Piano"},{"t":135.66,"w":"keys"},{"t":135.9,"w":"bite."},{"t":136.26,"w":"When"},{"t":136.76,"w":"the"},{"t":136.96,"w":"river"},{"t":137.22,"w":"get"},{"t":137.48,"w":"dark."},{"t":137.96,"w":"Beauty"},{"t":138.16,"w":"trumpet"},{"t":138.58,"w":"cry"},{"t":138.92,"w":"from"},{"t":139.3,"w":"the"},{"t":139.48,"w":"mouth"},{"t":139.74,"w":"of"},{"t":139.9,"w":"a"},{"t":139.98,"w":"shark."},{"t":140.58,"w":"Xylophone"},{"t":141.06,"w":"bones"},{"t":141.68,"w":"go"},{"t":141.92,"w":"click"},{"t":142.24,"w":"in"},{"t":142.42,"w":"the"},{"t":142.54,"w":"park."},{"t":142.96,"w":"I"},{"t":143.1,"w":"got"},{"t":143.26,"w":"fog"},{"t":143.58,"w":"in"},{"t":143.82,"w":"my"},{"t":143.96,"w":"pocket"},{"t":144.32,"w":"and"},{"t":144.5,"w":"rust"},{"t":144.76,"w":"in"},{"t":144.98,"w":"my"},{"t":145.16,"w":"rhyme."},{"t":145.62,"w":"Crimes"},{"t":145.94,"w":"doing"},{"t":146.12,"w":"dances"},{"t":146.6,"w":"from"},{"t":147.02,"w":"a"},{"t":147.2,"w":"much"},{"t":147.44,"w":"older"},{"t":147.7,"w":"time."},{"t":148.42,"w":"1928"},{"t":148.9,"w":"with"},{"t":149.52,"w":"the"},{"t":149.72,"w":"90s"},{"t":150.12,"w":"drumline."},{"t":150.72,"w":"Whole"},{"t":150.84,"w":"crew"},{"t":151.18,"w":"blacked"},{"t":151.72,"w":"out,"},{"t":151.94,"w":"but"},{"t":152.1,"w":"the"},{"t":152.24,"w":"whistle"},{"t":152.5,"w":"still"},{"t":152.72,"w":"shine."},{"t":153.28,"w":"You"},{"t":153.38,"w":"can"},{"t":153.54,"w":"pull"},{"t":153.72,"w":"like"},{"t":153.92,"w":"the"},{"t":154.02,"w":"unstable"},{"t":154.38,"w":"lock."},{"t":154.78,"w":"Call"},{"t":154.96,"w":"it"},{"t":155.16,"w":"the"},{"t":155.32,"w":"gift."},{"t":155.92,"w":"Cartoon"},{"t":156.4,"w":"boat"},{"t":156.58,"w":"slide"},{"t":156.9,"w":"with"},{"t":157.24,"w":"the"},{"t":157.36,"w":"criminal"},{"t":157.72,"w":"drip."},{"t":158.26,"w":"Mind"},{"t":158.6,"w":"overboard,"},{"t":159.34,"w":"but"},{"t":159.74,"w":"the"},{"t":159.9,"w":"body"},{"t":160.2,"w":"don't"},{"t":160.6,"w":"quit."},{"t":160.84,"w":"Still"},{"t":161.02,"w":"throwing"},{"t":161.48,"w":"up"},{"t":161.76,"w":"signs"},{"t":162,"w":"from"},{"t":162.3,"w":"the"},{"t":162.44,"w":"edge"},{"t":162.68,"w":"of"},{"t":162.82,"w":"the"},{"t":162.92,"w":"script."},{"t":164.12,"w":"They"},{"t":164.6,"w":"said,"},{"t":165.02,"w":"don't"},{"t":165.84,"w":"go"},{"t":165.9,"w":"down."},{"t":166.26,"w":"Down"},{"t":166.26,"w":"by"},{"t":166.44,"w":"the"},{"t":166.6,"w":"river"},{"t":166.88,"w":"at"},{"t":167.12,"w":"night."},{"t":167.62,"w":"I"},{"t":167.72,"w":"said,"},{"t":167.94,"w":"which"},{"t":168.1,"w":"one"},{"t":168.24,"w":"of"},{"t":168.36,"w":"me"},{"t":168.46,"w":"you"},{"t":168.64,"w":"talking"},{"t":168.98,"w":"to?"},{"t":170.24,"w":"Nah,"},{"t":170.9,"w":"for"},{"t":171.1,"w":"real"},{"t":171.38,"w":"though."},{"t":172.06,"w":"Membrane"},{"t":172.54,"w":"still"},{"t":172.84,"w":"insane."},{"t":174.06,"w":"Brain"},{"t":174.28,"w":"in"},{"t":174.48,"w":"the"},{"t":174.58,"w":"boiler."},{"t":175.24,"w":"Thoughts"},{"t":175.72,"w":"in"},{"t":175.72,"w":"the"},{"t":175.86,"w":"steam."},{"t":176.38,"w":"Eyes"},{"t":176.7,"w":"wide"},{"t":177.08,"w":"open,"},{"t":177.52,"w":"but"},{"t":177.68,"w":"I'm"},{"t":177.84,"w":"stuck"},{"t":178.06,"w":"in"},{"t":178.32,"w":"the"},{"t":178.42,"w":"dream."},{"t":178.92,"w":"Hands"},{"t":179.34,"w":"got"},{"t":179.58,"w":"ache"},{"t":179.96,"w":"and"},{"t":180.18,"w":"the"},{"t":180.34,"w":"gloves"},{"t":180.68,"w":"ain't"},{"t":181.04,"w":"clean."},{"t":181.46,"w":"My"},{"t":181.54,"w":"whole"},{"t":181.8,"w":"dock"},{"t":182.16,"w":"jump"},{"t":182.5,"w":"when"},{"t":182.74,"w":"we"},{"t":182.9,"w":"step"},{"t":183.18,"w":"on"},{"t":183.46,"w":"seam."},{"t":184.02,"w":"Smoke"},{"t":184.5,"w":"in"},{"t":184.68,"w":"the"},{"t":184.8,"w":"cabin."},{"t":185.44,"w":"Base"},{"t":185.74,"w":"in"},{"t":185.94,"w":"the"},{"t":186.06,"w":"floor."},{"t":186.7,"w":"Three"},{"t":186.96,"w":"knocks"},{"t":187.3,"w":"loud"},{"t":187.66,"w":"and"},{"t":187.86,"w":"we"},{"t":188.02,"w":"kick"},{"t":188.28,"w":"in"},{"t":188.52,"w":"the"},{"t":188.64,"w":"door."},{"t":189.2,"w":"Who"},{"t":189.28,"w":"want"},{"t":189.76,"w":"war"},{"t":190.04,"w":"with"},{"t":190.42,"w":"the"},{"t":190.6,"w":"riverboat"},{"t":191.12,"w":"corps?"},{"t":191.64,"w":"They"},{"t":191.78,"w":"don't"},{"t":191.92,"w":"want"},{"t":192.12,"w":"nothing."},{"t":192.6,"w":"They"},{"t":192.8,"w":"just"},{"t":193.06,"w":"talk"},{"t":193.4,"w":"from"},{"t":193.66,"w":"shore."},{"t":194.5,"w":"I"},{"t":194.66,"w":"seen"},{"t":194.9,"w":"a"},{"t":195.02,"w":"shadow"},{"t":195.34,"w":"with"},{"t":195.56,"w":"a"},{"t":195.66,"w":"face."},{"t":196.02,"w":"Like,"},{"t":196.24,"w":"oh,"},{"t":196.24,"w":"oh,"},{"t":196.24,"w":"oh."},{"t":196.26,"w":"Like"},{"t":196.26,"w":"mine."},{"t":196.78,"w":"I"},{"t":197.25,"w":"seen"},{"t":197.42,"w":"the"},{"t":197.6,"w":"clock"},{"t":197.82,"w":"run"},{"t":198.1,"w":"backwards"},{"t":198.6,"w":"in"},{"t":198.9,"w":"time."},{"t":199.32,"w":"I"},{"t":199.84,"w":"seen"},{"t":199.98,"w":"the"},{"t":200.2,"w":"moon"},{"t":200.44,"w":"turn"},{"t":200.82,"w":"into"},{"t":201.08,"w":"a"},{"t":201.4,"w":"dime."},{"t":201.86,"w":"I"},{"t":202.02,"w":"flipped"},{"t":202.3,"w":"that"},{"t":202.64,"w":"coin"},{"t":203,"w":"and"},{"t":203.22,"w":"I"},{"t":203.36,"w":"called"},{"t":203.8,"w":"it"},{"t":203.98,"w":"mine."},{"t":204.66,"w":"That"},{"t":205.18,"w":"whistle"},{"t":205.56,"w":"don't"},{"t":206,"w":"warn."},{"t":206.34,"w":"That"},{"t":206.48,"w":"whistle"},{"t":206.8,"w":"recruits."},{"t":207.64,"w":"That"},{"t":207.76,"w":"fog"},{"t":208.06,"w":"don't"},{"t":208.52,"w":"hide."},{"t":208.86,"w":"That"},{"t":209.02,"w":"fog"},{"t":209.38,"w":"got"},{"t":209.68,"w":"rude."},{"t":210.12,"w":"That"},{"t":210.18,"w":"snare"},{"t":210.48,"w":"don't"},{"t":211.04,"w":"crack."},{"t":211.44,"w":"That"},{"t":211.56,"w":"snare"},{"t":211.88,"w":"exits"},{"t":212.2,"w":"you."},{"t":212.68,"w":"And"},{"t":212.76,"w":"the"},{"t":212.92,"w":"whole"},{"t":213.14,"w":"crew"},{"t":213.44,"w":"moving"},{"t":213.92,"w":"the"},{"t":214.16,"w":"cartoon"},{"t":214.62,"w":"suit."},{"t":216.62,"w":"Membrane"},{"t":217.14,"w":"still"},{"t":217.44,"w":"insane."},{"t":218.44,"w":"Smoke"},{"t":218.62,"w":"call"},{"t":218.9,"w":"in"},{"t":219.16,"w":"the"},{"t":219.24,"w":"frame."},{"t":219.74,"w":"Black"},{"t":220.08,"w":"and"},{"t":220.26,"w":"white"},{"t":220.5,"w":"night,"},{"t":220.86,"w":"but"},{"t":221,"w":"the"},{"t":221.14,"w":"madness"},{"t":221.48,"w":"got"},{"t":221.66,"w":"a"},{"t":221.76,"w":"name."},{"t":222.3,"w":"Whistle"},{"t":222.72,"w":"go."},{"t":223.16,"w":"Then"},{"t":223.6,"w":"the"},{"t":223.78,"w":"whole"},{"t":223.98,"w":"dock"},{"t":224.28,"w":"shake."},{"t":224.8,"w":"Cartoon"},{"t":225.32,"w":"eyes"},{"t":225.58,"w":"wide."},{"t":225.88,"w":"High"},{"t":225.88,"w":"when"},{"t":226.14,"w":"the"},{"t":226.32,"w":"bad"},{"t":226.56,"w":"boys"},{"t":226.84,"w":"break."},{"t":227.7,"w":"Membrane"},{"t":228.3,"w":"still"},{"t":228.9,"w":"insane."},{"t":230.02,"w":"Brain"},{"t":230.32,"w":"on"},{"t":230.64,"w":"a"},{"t":230.76,"w":"chain."},{"t":231.2,"w":"River"},{"t":231.62,"w":"full"},{"t":231.88,"w":"of"},{"t":232.04,"w":"fog"},{"t":232.34,"w":"and"},{"t":232.54,"w":"the"},{"t":232.64,"w":"deck"},{"t":232.92,"w":"full"},{"t":233.12,"w":"of"},{"t":233.28,"w":"flames."},{"t":233.74,"w":"Stop"},{"t":234.3,"w":"to"},{"t":234.4,"w":"the"},{"t":234.56,"w":"boat"},{"t":234.86,"w":"back"},{"t":235.06,"w":"and"},{"t":235.24,"w":"know"},{"t":235.46,"w":"what"},{"t":235.68,"w":"you"},{"t":235.82,"w":"claim."},{"t":236.26,"w":"One"},{"t":236.44,"w":"wrong"},{"t":236.74,"w":"knock"},{"t":237.12,"w":"and"},{"t":237.6,"w":"the"},{"t":237.78,"w":"whole"},{"t":238.02,"w":"bell"},{"t":238.32,"w":"ring."},{"t":238.8,"w":"Membrane"},{"t":239.4,"w":"still"},{"t":239.8,"w":"insane."},{"t":240.94,"w":"Still"},{"t":241.18,"w":"insane."},{"t":242,"w":"Still"},{"t":242.52,"w":"got"},{"t":242.76,"w":"fog"},{"t":243.16,"w":"running"},{"t":244.12,"w":"all"},{"t":244.5,"w":"through"},{"t":245.14,"w":"the"},{"t":245.32,"w":"veins."},{"t":246.42,"w":"Still"},{"t":247.02,"w":"got"},{"t":247.56,"w":"drums"},{"t":248.08,"w":"putting"},{"t":249.22,"w":"dance"},{"t":249.74,"w":"in"},{"t":250.1,"w":"the"},{"t":250.26,"w":"brain."},{"t":251.54,"w":"Still"},{"t":252.14,"w":"got"},{"t":252.4,"w":"laughs"},{"t":252.96,"w":"echoing."},{"t":254.84,"w":"Under"},{"t":255.46,"w":"the"},{"t":255.74,"w":"rain."},{"t":261.18,"w":"Do"},{"t":261.82,"w":"you"},{"t":261.92,"w":"still"},{"t":262.28,"w":"hear"},{"t":262.7,"w":"it?"},{"t":266.04,"w":"Yeah,"},{"t":266.64,"w":"that"},{"t":267.26,"w":"means"},{"t":267.5,"w":"it's"},{"t":267.76,"w":"working."}]}$j$::jsonb WHERE id = 'membrane-still-insane' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Chorus]
+[00:06.11] yo you hear that whistle bending
+[00:10.44] that at the boat my guy that's your brain talking back
+[00:16.38] membrane still insane
+[00:29.92] in the frame like a white knight but the madness
+[00:33.24] got a name whistle go in the whole dock shake
+[00:36.36] cartoon eyes wide when the bad boys break
+[00:38.92] brain on the chain river full of fog and the deck
+[00:44.70] full of flames step to the boat better know what
+[00:47.44] you claim
+[00:47.86] one
+[Verse 1]
+[00:48.26] one
+[00:48.75] and the whole bell ring i came out the real with
+[00:51.66] the lean and the green ink on my gloves in the
+[00:53.00] storm in my skin moon look crap when the paddle
+[00:56.86] will spin hold that whisper don't let him in
+[00:59.82] been up three nights with smoke in my coat
+[01:02.56] talking to a shadow that been steering the boat
+[01:05.11] laughing at the fog like it told me a joke then
+[01:07.94] the whistle hit hard and the pier just spoke
+[01:10.16] mind doing backflips knees doing swings rubber
+[01:12.78] hose arms with the old gold rings piano go crooked
+[01:15.98] when the villain bell dings whole black river
+[01:18.16] start putting my strings i ain't crazy i'm classic
+[01:21.04] with the scratch in the brain vintage little menace with
+[01:23.84] the permanent stain every thought not teeth every
+[01:26.48] laugh got pain every footstep echo like a runaway train
+[01:29.92] who got the smoke we got the smoke who got the dock we run
+[01:34.52] the boat who lost they mind don't say my name too late now
+[01:38.46] membrane still insane membrane still insane smoke all in
+[01:43.62] the frame black and white night but the madness got a name
+[01:46.62] whistle go whoo
+[01:47.82] Then the whole got shake.
+[01:49.64] Carcoonize wild when the bad boy break.
+[01:52.36] Membrane still insane.
+[01:54.40] Brain on that chain.
+[01:55.70] River full of fog and the deck full of flame.
+[01:58.22] Step to the boat, better know what you claim.
+[02:00.76] One long knock and the whole boom.
+[02:02.80] I'm the crooked little captain with the laughing stereo.
+[02:05.48] Eyes too low, but the mind move aerial.
+[02:07.96] Feet on the deck, but the thoughts go burial.
+[Pre-Chorus]
+[02:10.42] Deep in the hole where the old ghost carry gold.
+[02:13.16] Smoke curl up like a question mark.
+[02:15.18] Piano keys bite.
+[02:16.24] When the river get dark.
+[02:17.94] Beauty trumpet cry from the mouth of a shark.
+[Chorus]
+[02:20.56] Xylophone bones go click in the park.
+[02:22.94] I got fog in my pocket and rust in my rhyme.
+[02:25.60] Crimes doing dances from a much older time.
+[02:28.40] 1928 with the 90s drumline.
+[02:30.70] Whole crew blacked out,
+[02:31.92] but the whistle still shine.
+[02:33.26] You can pull like the unstable lock.
+[02:34.76] Call it the gift.
+[02:35.90] Cartoon boat slide with the criminal drip.
+[02:38.24] Mind overboard, but the body don't quit.
+[02:40.82] Still throwing up signs from the edge of the script.
+[02:44.10] They said, don't go down.
+[02:46.24] Down by the river at night.
+[02:47.60] I said, which one of me you talking to?
+[02:50.22] Nah, for real though.
+[02:52.04] Membrane still insane.
+[02:54.04] Brain in the boiler.
+[02:55.22] Thoughts in the steam.
+[02:56.36] Eyes wide open, but I'm stuck in the dream.
+[02:58.90] Hands got ache and the gloves ain't clean.
+[03:01.44] My whole dock jump when we step on seam.
+[03:03.00] Smoke in the cabin.
+[03:05.42] Base in the floor.
+[03:06.68] Three knocks loud and we kick in the door.
+[03:09.18] Who want war with the riverboat corps?
+[03:11.62] They don't want nothing.
+[03:12.58] They just talk from shore.
+[03:14.48] I seen a shadow with a face.
+[03:15.00] Like, oh, oh, oh.
+[03:16.24] Like mine.
+[03:16.76] I seen the clock run backwards in time.
+[03:19.30] I seen the moon turn into a dime.
+[03:21.84] I flipped that coin and I called it mine.
+[Verse 2]
+[03:24.64] That whistle don't warn.
+[03:26.32] That whistle recruits.
+[03:27.62] That fog don't hide.
+[03:28.84] That fog got rude.
+[03:30.10] That snare don't crack.
+[03:31.42] That snare exits you.
+[03:32.66] And the whole crew moving the cartoon suit.
+[03:36.60] Membrane still insane.
+[03:38.42] Smoke call in the frame.
+[03:39.72] Black and white night,
+[03:40.84] but the madness got a name.
+[03:42.28] Whistle go.
+[03:43.14] Then the whole dock shake.
+[03:44.78] Cartoon eyes wide.
+[03:45.86] High when the bad boys break.
+[03:47.68] Membrane still insane.
+[03:49.00] Brain on a chain.
+[03:51.18] River full of fog and the deck full of flames.
+[03:53.72] Stop to the boat back and know what you claim.
+[03:56.24] One wrong knock and the whole bell ring.
+[03:58.78] Membrane still insane.
+[04:00.92] Still insane.
+[04:01.98] Still got fog running all through the veins.
+[04:06.40] Still got drums putting dance in the brain.
+[04:11.52] Still got laughs echoing.
+[04:14.82] Under the rain.
+[04:21.16] Do you still hear it?
+[04:26.02] Yeah, that means it's working.
+$j$ WHERE id = 'membrane-still-insane' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"Set in a gritty noir-cartoon world blending 1928 rubber-hose animation with 90s East Coast boom bap, this track narrates a dangerous descent into madness aboard a fog-shrouded riverboat where the line between reality and cartoonish villainy blurs. It explores themes of fractured sanity, criminal nostalgia, and playful terror through imagery of steam, smoke, and mechanical chains.","overallMood":"Sinister playfulness with gritty noir-cartoon atmosphere","themes":["Fractured Sanity","Noir Nostalgia","Riverboat Crime","Cartoon Violence"],"palette":["#1A1814","#C0B89E","#2F3537","#6D6661"],"sections":[{"name":"Intro","emotion":"Anticipatory unease, foghorn bass rumble","intensity":0.8,"colorHint":"#2f3537","start":6.11},{"name":"Chorus","emotion":"Manic rhythmic chaos, whistle hook driving the madness","intensity":0.97,"colorHint":"#c0b89e","start":6.11},{"name":"Verse 1","emotion":"Grimy storytelling with rubber-hose animation energy","intensity":0.72,"colorHint":"#6d6661","start":48.26},{"name":"Pre-Chorus","emotion":"Claustrophobic tension in the dark river hole","intensity":0.26,"colorHint":"#1a1814","start":130.42}],"keywords":[{"word":"whistle","emotion":"Intrusive command signal triggering chaos","imageryPrompt":"An old-fashioned brass riverboat whistle blowing sharply against a backdrop of black and white fog, steam rising from pipes, casting long distorted shadows in a 1928 cartoon style."},{"word":"membrane","emotion":"Delicate barrier failing under pressure","imageryPrompt":"A translucent biological membrane stretching tight over a skull-like structure made of gears and clockwork, cracking as steam rushes through fissures in a gritty noir setting."},{"word":"chain","emotion":"Heavy mechanical bondage restricting freedom","imageryPrompt":"A thick rusty iron chain wrapped around a cartoon character's ankle, the links glowing faintly with blue steam heat as they drag across wooden dock planks."},{"word":"fog","emotion":"Thick obscuring veil hiding dangers","imageryPrompt":"Dense swirling grey mist rolling over a riverboat deck at night, swallowing the silhouette of a captain and distorting distant lighthouse beams in high-contrast black and white."},{"word":"steam","emotion":"Pressurized energy threatening explosion","imageryPrompt":"Violent jets of hot steam erupting from boiler vents, pushing back against the frame like angry spirits, illuminating dust particles in a monochromatic industrial scene."},{"word":"flames","emotion":"Destructive heat consuming the deck","imageryPrompt":"Black and white stylized fire dancing across wooden floorboards of a riverboat, flames appearing as jagged rubber-hose outlines licking up towards cartoon eyes."},{"word":"villain","emotion":"Arrogant malevolence wearing old gold rings","imageryPrompt":"A classic 1920s gangster villain in a fedora laughing maniacally, his face painted with greasepaint cracks, standing atop a crumbling pier as the world spins."},{"word":"shadow","emotion":"Ominous presence steering the boat unseen","imageryPrompt":"A tall elongated shadow cast by an unknown figure leaning against the railing of a riverboat, its form shifting slightly to mimic human movement in a foggy dock."}]}$j$::jsonb) WHERE id = 'membrane-still-insane' AND planet->'analysis' IS NULL;
+
+-- mi-gente: 492 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Yeah,"},{"t":0.26,"w":"mi"},{"t":2.2,"w":"gente,"},{"t":4.03,"w":"desde"},{"t":4.99,"w":"el"},{"t":5.26,"w":"bloque"},{"t":5.52,"w":"hasta"},{"t":5.7,"w":"la"},{"t":5.94,"w":"tarima,"},{"t":6.66,"w":"ya"},{"t":6.84,"w":"tú"},{"t":7.06,"w":"sabes,"},{"t":7.88,"w":"dímelo,"},{"t":9.96,"w":"mi"},{"t":10.06,"w":"gente,"},{"t":11.2,"w":"mi"},{"t":11.3,"w":"gente,"},{"t":12.48,"w":"mi"},{"t":12.58,"w":"gente,"},{"t":12.9,"w":"mi"},{"t":13.22,"w":"gente,"},{"t":13.58,"w":"mi"},{"t":13.82,"w":"gente,"},{"t":14.26,"w":"mi"},{"t":14.36,"w":"gente"},{"t":14.56,"w":"Todo"},{"t":15.06,"w":"el"},{"t":15.22,"w":"mundo"},{"t":15.52,"w":"conmigo"},{"t":16.08,"w":"se"},{"t":16.22,"w":"siente,"},{"t":16.68,"w":"se"},{"t":16.84,"w":"siente,"},{"t":17.34,"w":"si"},{"t":17.46,"w":"yo"},{"t":17.68,"w":"con"},{"t":17.92,"w":"los"},{"t":18.1,"w":"míos"},{"t":18.48,"w":"la"},{"t":18.68,"w":"calle"},{"t":19.04,"w":"se"},{"t":19.28,"w":"enciende"},{"t":19.74,"w":"Mi"},{"t":19.96,"w":"gente,"},{"t":20.42,"w":"mi"},{"t":20.54,"w":"gente,"},{"t":21.06,"w":"mi"},{"t":21.16,"w":"gente,"},{"t":21.66,"w":"mi"},{"t":21.8,"w":"gente,"},{"t":22.3,"w":"mi"},{"t":22.4,"w":"gente,"},{"t":22.84,"w":"mi"},{"t":23.04,"w":"gente,"},{"t":23.44,"w":"mi"},{"t":23.68,"w":"gente,"},{"t":24.06,"w":"mi"},{"t":24.28,"w":"gente"},{"t":24.38,"w":"No"},{"t":24.82,"w":"cambia"},{"t":25.36,"w":"mi"},{"t":25.46,"w":"coro,"},{"t":25.98,"w":"mi"},{"t":26.08,"w":"sangre"},{"t":26.44,"w":"me"},{"t":26.68,"w":"entiende,"},{"t":27.2,"w":"del"},{"t":27.34,"w":"barrio"},{"t":27.78,"w":"pa"},{"t":27.94,"w":"'l"},{"t":28.02,"w":"mundo"},{"t":28.28,"w":"la"},{"t":28.56,"w":"vibra"},{"t":28.98,"w":"se"},{"t":29.12,"w":"extiende"},{"t":29.58,"w":"Mi"},{"t":29.82,"w":"gente,"},{"t":30.28,"w":"mi"},{"t":30.42,"w":"gente,"},{"t":30.88,"w":"mi"},{"t":31.02,"w":"gente,"},{"t":31.48,"w":"mi"},{"t":31.6,"w":"gente,"},{"t":31.6,"w":"mi"},{"t":31.6,"w":"gente"},{"t":31.6,"w":"Llegué"},{"t":31.8,"w":"con"},{"t":32,"w":"la"},{"t":32.16,"w":"ganga"},{"t":32.64,"w":"pero"},{"t":32.82,"w":"no"},{"t":33.04,"w":"es"},{"t":33.16,"w":"pa'"},{"t":33.28,"w":"aparentar,"},{"t":33.92,"w":"esto"},{"t":34.34,"w":"es"},{"t":34.56,"w":"familia,"},{"t":35.04,"w":"no"},{"t":35.2,"w":"se"},{"t":35.3,"w":"compra"},{"t":35.64,"w":"con"},{"t":35.82,"w":"metal"},{"t":36.24,"w":"Desde"},{"t":36.78,"w":"la"},{"t":37.04,"w":"esquina"},{"t":37.52,"w":"donde"},{"t":37.68,"w":"aprendí"},{"t":38.14,"w":"a"},{"t":38.18,"w":"caminar,"},{"t":38.88,"w":"hasta"},{"t":39.26,"w":"los"},{"t":39.48,"w":"sueños"},{"t":39.82,"w":"que"},{"t":40,"w":"no"},{"t":40.14,"w":"nos"},{"t":40.26,"w":"pudieron"},{"t":40.68,"w":"quitar"},{"t":41.16,"w":"Tengo"},{"t":41.6,"w":"dominicanos,"},{"t":42.64,"w":"borricos"},{"t":43.02,"w":"en"},{"t":43.14,"w":"la"},{"t":43.18,"w":"fila,"},{"t":43.74,"w":"mexicanos"},{"t":44.44,"w":"gritando,"},{"t":45,"w":"cubanos"},{"t":45.48,"w":"con"},{"t":45.64,"w":"la"},{"t":45.78,"w":"pila"},{"t":46.29,"w":"Colombianos"},{"t":46.94,"w":"activos,"},{"t":47.56,"w":"todo"},{"t":47.64,"w":"el"},{"t":47.78,"w":"combo"},{"t":48.02,"w":"vacila,"},{"t":48.66,"w":"si"},{"t":48.86,"w":"uno"},{"t":49.12,"w":"se"},{"t":49.3,"w":"levanta"},{"t":49.84,"w":"la"},{"t":49.9,"w":"mesa"},{"t":50.16,"w":"se"},{"t":50.38,"w":"multiplica"},{"t":51.02,"w":"No"},{"t":51.18,"w":"me"},{"t":51.3,"w":"hablen"},{"t":51.5,"w":"de"},{"t":51.68,"w":"lealtad,"},{"t":52.24,"w":"si"},{"t":52.42,"w":"no"},{"t":52.54,"w":"estaba"},{"t":52.74,"w":"en"},{"t":52.98,"w":"el"},{"t":53.12,"w":"frío,"},{"t":53.68,"w":"cuando"},{"t":53.82,"w":"faltaba"},{"t":54.38,"w":"todo"},{"t":54.66,"w":"y"},{"t":54.92,"w":"sonaban"},{"t":55.28,"w":"los"},{"t":55.56,"w":"líos"},{"t":56.16,"w":"Ahora"},{"t":56.5,"w":"ven"},{"t":56.74,"w":"la"},{"t":56.88,"w":"luz"},{"t":57.18,"w":"y"},{"t":57.36,"w":"quieren"},{"t":57.58,"w":"ser"},{"t":57.8,"w":"testigos,"},{"t":58.66,"w":"pero"},{"t":58.98,"w":"yo"},{"t":59.2,"w":"sé"},{"t":59.58,"w":"Quienes"},{"t":60.02,"w":"fueron"},{"t":60.16,"w":"de"},{"t":60.42,"w":"los"},{"t":60.56,"w":"míos,"},{"t":61.22,"w":"¿quién"},{"t":61.72,"w":"llegó?"},{"t":63.62,"w":"¿Quién"},{"t":64.14,"w":"sonó?"},{"t":65.64,"w":"¿Quién"},{"t":66.16,"w":"prende"},{"t":66.58,"w":"la"},{"t":66.7,"w":"calle?"},{"t":68.06,"w":"¿Quién"},{"t":68.58,"w":"nunca"},{"t":68.86,"w":"se"},{"t":69.16,"w":"vende?"},{"t":69.93,"w":"Mi"},{"t":70.38,"w":"gente,"},{"t":70.92,"w":"mi"},{"t":71.6,"w":"gente,"},{"t":72.72,"w":"mi"},{"t":72.9,"w":"gente,"},{"t":73.3,"w":"mi"},{"t":73.5,"w":"gente,"},{"t":73.92,"w":"mi"},{"t":73.96,"w":"gente,"},{"t":73.96,"w":"mi"},{"t":74.08,"w":"gente,"},{"t":74.08,"w":"mi"},{"t":74.16,"w":"gente,"},{"t":74.16,"w":"mi"},{"t":74.16,"w":"gente"},{"t":74.16,"w":"Todo"},{"t":74.16,"w":"el"},{"t":74.34,"w":"mundo"},{"t":74.62,"w":"conmigo"},{"t":75.1,"w":"se"},{"t":75.32,"w":"siente,"},{"t":75.76,"w":"se"},{"t":75.94,"w":"siente,"},{"t":76.42,"w":"si"},{"t":76.52,"w":"llego"},{"t":76.86,"w":"con"},{"t":77.04,"w":"los"},{"t":77.2,"w":"míos"},{"t":77.56,"w":"la"},{"t":77.76,"w":"calle"},{"t":78.14,"w":"se"},{"t":78.38,"w":"enciende"},{"t":78.82,"w":"Mi"},{"t":79.06,"w":"gente,"},{"t":79.52,"w":"mi"},{"t":79.66,"w":"gente,"},{"t":80.12,"w":"mi"},{"t":80.24,"w":"gente,"},{"t":80.72,"w":"mi"},{"t":80.86,"w":"gente,"},{"t":81.36,"w":"mi"},{"t":81.46,"w":"gente,"},{"t":81.96,"w":"mi"},{"t":82.12,"w":"gente,"},{"t":82.54,"w":"mi"},{"t":82.72,"w":"gente,"},{"t":83.14,"w":"mi"},{"t":83.3,"w":"gente"},{"t":83.46,"w":"No"},{"t":83.88,"w":"cambia"},{"t":84.42,"w":"mi"},{"t":84.54,"w":"coro,"},{"t":85.04,"w":"mi"},{"t":85.16,"w":"sangre"},{"t":85.54,"w":"me"},{"t":85.76,"w":"entiende,"},{"t":86.28,"w":"del"},{"t":86.4,"w":"barrio"},{"t":86.88,"w":"pa"},{"t":87,"w":"'l"},{"t":87.1,"w":"mundo"},{"t":87.34,"w":"la"},{"t":87.62,"w":"vibra"},{"t":88,"w":"se"},{"t":88.2,"w":"extiende"},{"t":88.64,"w":"Mi"},{"t":88.9,"w":"gente"},{"t":90.18,"w":"No"},{"t":90.82,"w":"somos"},{"t":91.08,"w":"perfectos,"},{"t":91.88,"w":"pero"},{"t":92.04,"w":"somos"},{"t":92.36,"w":"reales"},{"t":92.94,"w":"Y"},{"t":93.04,"w":"caprices"},{"t":93.4,"w":"brillando"},{"t":93.96,"w":"como"},{"t":94.2,"w":"medallas"},{"t":94.74,"w":"callejeras"},{"t":95.58,"w":"Hablamos"},{"t":96.14,"w":"con"},{"t":96.36,"w":"hechos,"},{"t":96.84,"w":"no"},{"t":97.16,"w":"con"},{"t":97.34,"w":"señales"},{"t":98.02,"w":"Y"},{"t":98.44,"w":"si"},{"t":98.66,"w":"caigo"},{"t":99.02,"w":"me"},{"t":99.18,"w":"levanta"},{"t":99.7,"w":"mi"},{"t":99.8,"w":"bandera"},{"t":100.36,"w":"Mira"},{"t":100.76,"w":"cómo"},{"t":101.08,"w":"suena"},{"t":101.52,"w":"cuando"},{"t":101.7,"w":"entra"},{"t":101.96,"w":"la"},{"t":102.1,"w":"percusión"},{"t":102.76,"w":"Bajo"},{"t":103.34,"w":"retumbando"},{"t":104.06,"w":"como"},{"t":104.32,"w":"declaración"},{"t":105.18,"w":"No"},{"t":105.66,"w":"es"},{"t":105.78,"w":"división,"},{"t":106.58,"w":"esto"},{"t":106.88,"w":"es"},{"t":107.02,"w":"conexión"},{"t":107.68,"w":"Mi"},{"t":107.98,"w":"gente"},{"t":108.28,"w":"en"},{"t":108.46,"w":"el"},{"t":108.58,"w":"pecho"},{"t":109.04,"w":"como"},{"t":109.4,"w":"religión"},{"t":110.14,"w":"Desde"},{"t":110.34,"w":"Queens"},{"t":110.7,"w":"hasta"},{"t":110.92,"w":"Cali,"},{"t":111.4,"w":"de"},{"t":111.5,"w":"PR"},{"t":111.84,"w":"hasta"},{"t":112.08,"w":"DR"},{"t":112.46,"w":"La"},{"t":113,"w":"sangre"},{"t":113.26,"w":"caliente"},{"t":113.74,"w":"no"},{"t":113.94,"w":"se"},{"t":114.06,"w":"puede"},{"t":114.32,"w":"detener"},{"t":114.98,"w":"No"},{"t":115.36,"w":"importa"},{"t":115.68,"w":"el"},{"t":115.92,"w":"acento,"},{"t":116.36,"w":"se"},{"t":116.54,"w":"entiende"},{"t":116.92,"w":"el"},{"t":117.08,"w":"poder"},{"t":117.36,"w":"Cuando"},{"t":117.82,"w":"el"},{"t":118.08,"w":"barrio"},{"t":118.44,"w":"canta"},{"t":118.9,"w":"lo"},{"t":119,"w":"tiene"},{"t":119.28,"w":"que"},{"t":119.44,"w":"creer"},{"t":120.08,"w":"Manos"},{"t":120.78,"w":"arriba"},{"t":121.04,"w":"si"},{"t":121.32,"w":"tú"},{"t":121.48,"w":"tienes"},{"t":121.8,"w":"tu"},{"t":121.98,"w":"gente"},{"t":122.44,"w":"Los"},{"t":123.04,"w":"que"},{"t":123.18,"w":"tuvieron"},{"t":123.64,"w":"cuando"},{"t":123.86,"w":"no"},{"t":124.14,"w":"había"},{"t":124.38,"w":"suerte"},{"t":124.96,"w":"Los"},{"t":125.46,"w":"que"},{"t":125.62,"w":"se"},{"t":125.8,"w":"quedan"},{"t":126.12,"w":"cuando"},{"t":126.3,"w":"todo"},{"t":126.66,"w":"se"},{"t":126.86,"w":"pierde"},{"t":127.52,"w":"Los"},{"t":127.92,"w":"que"},{"t":128.08,"w":"convierten"},{"t":128.68,"w":"dolor"},{"t":129,"w":"en"},{"t":129.44,"w":"fuente"},{"t":129.85,"w":"Manos"},{"t":130.6,"w":"arriba"},{"t":130.9,"w":"si"},{"t":131.2,"w":"tú"},{"t":131.34,"w":"tienes"},{"t":131.64,"w":"tu"},{"t":131.86,"w":"gente"},{"t":132.28,"w":"Los"},{"t":132.86,"w":"que"},{"t":133.02,"w":"te"},{"t":133.18,"w":"cuidan"},{"t":133.54,"w":"aunque"},{"t":133.72,"w":"no"},{"t":133.92,"w":"estén"},{"t":134.16,"w":"presentes"},{"t":134.96,"w":"Los"},{"t":135.32,"w":"que"},{"t":135.46,"w":"caminan"},{"t":136.12,"w":"con"},{"t":136.26,"w":"fuego"},{"t":136.5,"w":"en"},{"t":136.68,"w":"la"},{"t":136.74,"w":"frente"},{"t":137.2,"w":"Los"},{"t":137.62,"w":"que"},{"t":137.78,"w":"son"},{"t":137.96,"w":"familia"},{"t":138.32,"w":"aunque"},{"t":138.62,"w":"no"},{"t":138.9,"w":"sean"},{"t":139.16,"w":"parientes"},{"t":142.86,"w":"¡Mi"},{"t":142.96,"w":"gente!"},{"t":145.22,"w":"¡Mi"},{"t":145.8,"w":"gente!"},{"t":146.4,"w":"¡Dale!"},{"t":146.82,"w":"¡Otra!"},{"t":147.82,"w":"¡Mi"},{"t":147.92,"w":"gente!"},{"t":150.3,"w":"Mi"},{"t":150.4,"w":"gente,"},{"t":150.88,"w":"mi"},{"t":151.04,"w":"gente,"},{"t":151.48,"w":"mi"},{"t":151.62,"w":"gente,"},{"t":152.08,"w":"mi"},{"t":152.24,"w":"gente"},{"t":152.62,"w":"El"},{"t":152.88,"w":"mundo"},{"t":153.22,"w":"conmigo"},{"t":153.86,"w":"se"},{"t":154.08,"w":"siente,"},{"t":154.56,"w":"se"},{"t":154.7,"w":"siente"},{"t":155.12,"w":"Si"},{"t":155.3,"w":"llego"},{"t":155.64,"w":"con"},{"t":155.8,"w":"los"},{"t":155.96,"w":"míos"},{"t":156.34,"w":"la"},{"t":156.52,"w":"calle"},{"t":156.9,"w":"se"},{"t":157.14,"w":"enciende"},{"t":157.62,"w":"Mi"},{"t":157.86,"w":"gente,"},{"t":158.26,"w":"mi"},{"t":158.42,"w":"gente,"},{"t":158.86,"w":"mi"},{"t":158.98,"w":"gente,"},{"t":159.46,"w":"mi"},{"t":159.62,"w":"gente"},{"t":160.04,"w":"Mi"},{"t":160.22,"w":"gente,"},{"t":160.72,"w":"mi"},{"t":160.9,"w":"gente,"},{"t":161.34,"w":"mi"},{"t":161.48,"w":"gente,"},{"t":161.96,"w":"mi"},{"t":162.08,"w":"gente"},{"t":162.32,"w":"No"},{"t":162.68,"w":"cambia"},{"t":163.2,"w":"mi"},{"t":163.32,"w":"coro,"},{"t":163.82,"w":"mi"},{"t":163.92,"w":"sangre"},{"t":164.3,"w":"me"},{"t":164.54,"w":"entiende"},{"t":164.96,"w":"Del"},{"t":165.18,"w":"barrio"},{"t":165.62,"w":"pa"},{"t":165.76,"w":"'l"},{"t":165.84,"w":"mundo"},{"t":166.12,"w":"la"},{"t":166.4,"w":"vibra"},{"t":166.84,"w":"se"},{"t":166.98,"w":"extiende"},{"t":167.42,"w":"Mi"},{"t":167.7,"w":"gente,"},{"t":168.12,"w":"mi"},{"t":168.24,"w":"gente,"},{"t":168.72,"w":"mi"},{"t":168.84,"w":"gente,"},{"t":169.36,"w":"mi"},{"t":169.44,"w":"gente"},{"t":170.92,"w":"Esto"},{"t":171.02,"w":"no"},{"t":171.28,"w":"es"},{"t":171.38,"w":"moda"},{"t":172.94,"w":"Esto"},{"t":173.46,"w":"no"},{"t":173.76,"w":"es"},{"t":173.86,"w":"pose"},{"t":175.9,"w":"Esto"},{"t":176,"w":"es"},{"t":176.16,"w":"mi"},{"t":176.24,"w":"gente"},{"t":176.7,"w":"Mi"},{"t":176.92,"w":"gente"},{"t":177.34,"w":"Desde"},{"t":177.94,"w":"abajo"},{"t":178.42,"w":"hasta"},{"t":179.2,"w":"donde"},{"t":179.5,"w":"llegue"},{"t":180.04,"w":"el"},{"t":180.1,"w":"sonido"},{"t":180.78,"w":"Mi"},{"t":180.9,"w":"gente"}]}$j$::jsonb WHERE id = 'mi-gente' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Yeah,
+[00:00.26] mi gente,
+[00:04.03] desde el bloque hasta la tarima,
+[00:06.66] ya tú sabes,
+[00:07.88] dímelo,
+[Chorus 1]
+[00:09.96] mi gente,
+[00:11.20] mi gente,
+[00:12.48] mi gente, mi gente, mi gente, mi gente
+[00:14.56] Todo el mundo conmigo se siente,
+[00:16.68] se siente,
+[00:17.34] si yo con los míos la calle se enciende
+[00:19.74] Mi gente,
+[00:20.42] mi gente,
+[00:21.06] mi gente,
+[00:21.66] mi gente,
+[00:22.30] mi gente,
+[00:22.84] mi gente,
+[00:23.44] mi gente,
+[00:24.06] mi gente
+[00:24.38] No cambia mi coro,
+[00:25.98] mi sangre me entiende,
+[00:27.20] del barrio pa'l mundo la vibra se extiende
+[Verse 1]
+[00:29.58] Mi gente, mi gente, mi gente, mi gente, mi gente
+[00:31.60] Llegué con la ganga pero no es pa' aparentar,
+[00:33.92] esto es familia,
+[00:35.04] no se compra con metal
+[00:36.24] Desde la esquina donde aprendí a caminar,
+[00:38.88] hasta los sueños que no nos pudieron quitar
+[00:41.16] Tengo dominicanos,
+[00:42.64] borricos en la fila,
+[00:43.74] mexicanos gritando,
+[00:45.00] cubanos con la pila
+[00:46.29] Colombianos activos,
+[00:47.56] todo el combo vacila,
+[00:48.66] si uno se levanta la mesa se multiplica
+[00:51.02] No me hablen de lealtad,
+[00:52.24] si no estaba en el frío,
+[00:53.68] cuando faltaba todo y sonaban los líos
+[00:56.16] Ahora ven la luz y quieren ser testigos,
+[00:58.66] pero yo sé
+[Pre-Chorus / Chant Response]
+[00:59.58] Quienes fueron de los míos, ¿quién llegó?
+[01:03.62] ¿Quién sonó?
+[01:05.64] ¿Quién prende la calle?
+[01:08.06] ¿Quién nunca se vende?
+[01:09.93] Mi gente,
+[01:10.92] mi gente,
+[01:12.72] mi gente,
+[01:13.30] mi gente,
+[Chorus 2]
+[01:13.92] mi gente,
+[01:13.96] mi gente,
+[01:14.08] mi gente,
+[01:14.16] mi gente
+[01:14.16] Todo el mundo conmigo se siente,
+[01:15.76] se siente,
+[01:16.42] si llego con los míos la calle se enciende
+[01:18.82] Mi gente,
+[01:19.52] mi gente,
+[01:20.12] mi gente,
+[01:20.72] mi gente,
+[01:21.36] mi gente,
+[01:21.96] mi gente,
+[01:22.54] mi gente,
+[01:23.14] mi gente
+[01:23.46] No cambia mi coro,
+[01:25.04] mi sangre me entiende,
+[01:26.28] del barrio pa'l mundo la vibra se extiende
+[01:28.64] Mi gente
+[01:30.18] No somos perfectos, pero somos reales
+[01:32.94] Y caprices brillando como medallas callejeras
+[01:35.58] Hablamos con hechos, no con señales
+[01:38.02] Y si caigo me levanta mi bandera
+[01:40.36] Mira cómo suena cuando entra la percusión
+[01:42.76] Bajo retumbando como declaración
+[Verse 2]
+[01:45.18] No es división, esto es conexión
+[01:47.68] Mi gente en el pecho como religión
+[01:50.14] Desde Queens hasta Cali, de PR hasta DR
+[01:52.46] La sangre caliente no se puede detener
+[01:54.98] No importa el acento, se entiende el poder
+[01:57.36] Cuando el barrio canta lo tiene que creer
+[02:00.08] Manos arriba si tú tienes tu gente
+[02:02.44] Los que tuvieron cuando no había suerte
+[02:04.96] Los que se quedan cuando todo se pierde
+[02:07.52] Los que convierten dolor en fuente
+[02:09.85] Manos arriba si tú tienes tu gente
+[Bridge]
+[02:12.28] Los que te cuidan aunque no estén presentes
+[02:14.96] Los que caminan con fuego en la frente
+[02:17.20] Los que son familia aunque no sean parientes
+[Drop / Outro Start]
+[02:22.86] ¡Mi gente!
+[02:25.22] ¡Mi gente!
+[02:26.40] ¡Dale!
+[02:26.82] ¡Otra!
+[02:27.82] ¡Mi gente!
+[02:30.30] Mi gente, mi gente, mi gente, mi gente
+[Outro]
+[02:32.62] El mundo conmigo se siente, se siente
+[02:35.12] Si llego con los míos la calle se enciende
+[02:37.62] Mi gente, mi gente, mi gente, mi gente
+[02:40.04] Mi gente, mi gente, mi gente, mi gente
+[02:42.32] No cambia mi coro, mi sangre me entiende
+[02:44.96] Del barrio pa'l mundo la vibra se extiende
+[02:47.42] Mi gente, mi gente, mi gente, mi gente
+[02:50.92] Esto no es moda
+[02:52.94] Esto no es pose
+[02:55.90] Esto es mi gente
+[02:56.70] Mi gente
+[02:57.34] Desde abajo hasta donde llegue el sonido
+[03:00.78] Mi gente
+$j$ WHERE id = 'mi-gente' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A high-energy Latin Trap anthem celebrating street loyalty, unity across diverse Latino communities, and transforming struggle into collective power.","overallMood":"Aggressive United Swagger","themes":["Loyalty and Family Bloodlines","Street Unity Across Borders","Resilience Against Adversity","Authentic Identity vs. Poseurs","Community Power Rising Up","Nighttime Barrio Celebration"],"palette":["#120F15","#FF4D00","#8B0000","#FFEEDC"],"sections":[{"name":"Intro","emotion":"Anticipatory Swagger","intensity":0.77,"colorHintHex":"#120F15","start":0},{"name":"Chorus 1","emotion":"Triumphant Unity","intensity":0.98,"colorHintHex":"#FF4D00","start":9.96},{"name":"Verse 1","emotion":"Gritty Loyalty","intensity":0.84,"colorHintHex":"#8B0000","start":29.58},{"name":"Pre-Chorus / Chant Response","emotion":"Aggressive Challenge","intensity":0.82,"colorHintHex":"#FF4D00","start":59.58},{"name":"Chorus 2","emotion":"Empowered Declaration","intensity":0.61,"colorHintHex":"#FFEEDC","start":73.92},{"name":"Verse 2","emotion":"Global Connection","intensity":0.31,"colorHintHex":"#1A4D6F","start":105.18},{"name":"Bridge","emotion":"Spiritual Brotherhood","intensity":0.22,"colorHintHex":"#FF4500","start":132.28},{"name":"Drop / Outro Start","emotion":"Explosive Release","intensity":0.3,"colorHintHex":"#8B0000","start":142.86},{"name":"Outro","emotion":"Enduring Pride","intensity":0.21,"colorHintHex":"#FFEEDC","start":152.62}],"keywords":[{"word":"gente","emotion":"Belonging","imageryPrompt":"A massive crowd of diverse people with glowing outlines standing shoulder to shoulder under a neon sign, hands raised in unison."},{"word":"sangre","emotion":"Deep Connection","imageryPrompt":"Close-up of intertwined veins glowing warmly against dark skin tones, symbolizing shared lineage and life force."},{"word":"calle","emotion":"Street Pride","imageryPrompt":"A vibrant concrete alleyway at night illuminated by streetlights and graffiti art, reflecting confidence in the pavement cracks."},{"word":"barrio","emotion":"Home Defense","imageryPrompt":"An elevated view of a colorful residential block party with lowrider cars parked outside, smoke rising from food stalls and people dancing."},{"word":"fuego","emotion":"Passionate Fire","imageryPrompt":"Intense orange flames swirling around faces covered in sweat but smiling, representing the heat of passion and resilience."},{"word":"lealtad","emotion":"Unbreakable Bond","imageryPrompt":"Two hands clasped tightly together with golden light radiating from the grip, ignoring shadows trying to pull them apart."}]}$j$::jsonb) WHERE id = 'mi-gente' AND planet->'analysis' IS NULL;
+
+-- move-over-minimal-groove-mix: 234 words, 8 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.16,"w":"Somebody"},{"t":0.26,"w":"said"},{"t":0.62,"w":"the"},{"t":0.78,"w":"floor"},{"t":1.12,"w":"already"},{"t":1.46,"w":"had"},{"t":1.7,"w":"a"},{"t":1.82,"w":"king"},{"t":5.44,"w":"Move"},{"t":6.2,"w":"over"},{"t":6.96,"w":"Move"},{"t":8.1,"w":"over"},{"t":11.72,"w":"We"},{"t":12.58,"w":"got"},{"t":13,"w":"heat"},{"t":13.44,"w":"in"},{"t":13.82,"w":"the"},{"t":14,"w":"room"},{"t":14.34,"w":"Move"},{"t":15.1,"w":"over"},{"t":15.5,"w":"Summer"},{"t":16.7,"w":"came"},{"t":17.18,"w":"through"},{"t":17.62,"w":"smooth"},{"t":18.1,"w":"Don't"},{"t":18.86,"w":"talk"},{"t":19.08,"w":"too"},{"t":19.26,"w":"much"},{"t":19.6,"w":"Just"},{"t":20.22,"w":"let"},{"t":20.42,"w":"that"},{"t":20.72,"w":"bass"},{"t":21,"w":"line"},{"t":21.2,"w":"hit"},{"t":21.46,"w":"This"},{"t":22.08,"w":"summer"},{"t":22.44,"w":"different"},{"t":23.28,"w":"You"},{"t":24.13,"w":"can"},{"t":24.44,"w":"tell"},{"t":24.9,"w":"by"},{"t":25.16,"w":"the"},{"t":25.44,"w":"drip"},{"t":25.7,"w":"Yeah"},{"t":26.38,"w":"Yeah"},{"t":29.14,"w":"Let"},{"t":30.04,"w":"it"},{"t":30.04,"w":"ride"},{"t":31.44,"w":"Bass"},{"t":33.14,"w":"line"},{"t":33.98,"w":"talking"},{"t":34.32,"w":"Just"},{"t":34.9,"w":"listen"},{"t":36.26,"w":"Slow"},{"t":36.82,"w":"steps,"},{"t":37.16,"w":"low"},{"t":37.68,"w":"light"},{"t":38,"w":"Keep"},{"t":38.3,"w":"it"},{"t":39.6,"w":"simple,"},{"t":40.22,"w":"just"},{"t":40.5,"w":"move"},{"t":42.04,"w":"That's"},{"t":42.94,"w":"enough"},{"t":44.81,"w":"Let"},{"t":46.05,"w":"it"},{"t":46.32,"w":"breathe"},{"t":46.66,"w":"Move"},{"t":48.22,"w":"over"},{"t":49.98,"w":"We"},{"t":50.48,"w":"got"},{"t":50.82,"w":"heat"},{"t":51.26,"w":"in"},{"t":51.68,"w":"the"},{"t":51.84,"w":"room"},{"t":52.24,"w":"Move"},{"t":52.94,"w":"over"},{"t":53.34,"w":"Summer"},{"t":54.58,"w":"came"},{"t":54.98,"w":"through"},{"t":55.52,"w":"smooth"},{"t":55.92,"w":"Don't"},{"t":56.6,"w":"talk"},{"t":56.6,"w":"too"},{"t":56.6,"w":"much"},{"t":56.78,"w":"Just"},{"t":57.58,"w":"let"},{"t":58.24,"w":"that"},{"t":58.56,"w":"bass"},{"t":58.8,"w":"line"},{"t":58.98,"w":"hit"},{"t":59.28,"w":"This"},{"t":59.62,"w":"summer"},{"t":60.3,"w":"different"},{"t":60.86,"w":"You"},{"t":61.72,"w":"can"},{"t":62.24,"w":"tell"},{"t":62.62,"w":"by"},{"t":62.98,"w":"the"},{"t":63.24,"w":"drip"},{"t":65.98,"w":"Move"},{"t":66.48,"w":"over"},{"t":69.79,"w":"Move"},{"t":70.44,"w":"over"},{"t":73.57,"w":"Move"},{"t":73.98,"w":"over"},{"t":76.9,"w":"You"},{"t":77.7,"w":"feel"},{"t":78.5,"w":"that?"},{"t":78.94,"w":"Oh,"},{"t":79.46,"w":"we"},{"t":79.76,"w":"do"},{"t":80.94,"w":"Turn"},{"t":81.54,"w":"it"},{"t":81.66,"w":"up"},{"t":81.9,"w":"Slide"},{"t":82.36,"w":"it"},{"t":82.64,"w":"through"},{"t":85.79,"w":"It's"},{"t":85.94,"w":"soft"},{"t":86.2,"w":"stuff"},{"t":86.6,"w":"Steps"},{"t":87.74,"w":"Deep"},{"t":87.94,"w":"bass"},{"t":89.8,"w":"Yeah,"},{"t":90.88,"w":"right"},{"t":91.48,"w":"there"},{"t":94.34,"w":"Don't"},{"t":94.46,"w":"rush"},{"t":94.68,"w":"it"},{"t":95.57,"w":"Don't"},{"t":96.32,"w":"force"},{"t":96.56,"w":"it"},{"t":97.33,"w":"Just"},{"t":98.18,"w":"catch"},{"t":98.44,"w":"it"},{"t":100.12,"w":"Move"},{"t":100.88,"w":"over"},{"t":102.88,"w":"We"},{"t":103.38,"w":"got"},{"t":103.7,"w":"heat"},{"t":104.14,"w":"in"},{"t":104.52,"w":"the"},{"t":104.72,"w":"room"},{"t":105.06,"w":"Move"},{"t":105.84,"w":"over"},{"t":106.26,"w":"Summer"},{"t":107.46,"w":"came"},{"t":107.88,"w":"through"},{"t":108.32,"w":"smooth"},{"t":108.8,"w":"Don't"},{"t":109.6,"w":"talk"},{"t":109.8,"w":"too"},{"t":109.96,"w":"much"},{"t":110.3,"w":"Just"},{"t":110.68,"w":"let"},{"t":111.14,"w":"that"},{"t":111.46,"w":"bass"},{"t":111.7,"w":"line"},{"t":111.9,"w":"hit"},{"t":112.14,"w":"This"},{"t":112.77,"w":"summer"},{"t":113.12,"w":"different"},{"t":113.98,"w":"You"},{"t":114.88,"w":"can"},{"t":115.12,"w":"tell"},{"t":115.5,"w":"by"},{"t":115.86,"w":"the"},{"t":116.1,"w":"drip"},{"t":116.6,"w":"Kick,"},{"t":117.22,"w":"clap,"},{"t":118.42,"w":"bass"},{"t":118.94,"w":"Breathe,"},{"t":120.54,"w":"kick,"},{"t":121,"w":"clap,"},{"t":122.2,"w":"bass"},{"t":123.04,"w":"Breathe,"},{"t":124.14,"w":"breathe,"},{"t":124.58,"w":"breathe,"},{"t":125.04,"w":"breathe,"},{"t":125.52,"w":"breathe,"},{"t":126.02,"w":"breathe,"},{"t":126.46,"w":"breathe"},{"t":126.76,"w":"Somebody"},{"t":127.08,"w":"said"},{"t":127.64,"w":"the"},{"t":127.86,"w":"floor"},{"t":128.28,"w":"had"},{"t":128.74,"w":"a"},{"t":128.92,"w":"king"},{"t":130.52,"w":"Cute"},{"t":133.02,"w":"Move"},{"t":133.14,"w":"over"},{"t":133.7,"w":"Move"},{"t":134,"w":"over"},{"t":135.4,"w":"We"},{"t":135.5,"w":"got"},{"t":135.84,"w":"heat"},{"t":136.26,"w":"in"},{"t":136.64,"w":"the"},{"t":136.84,"w":"room"},{"t":137.18,"w":"Move"},{"t":137.92,"w":"over"},{"t":138.3,"w":"Summer"},{"t":139.46,"w":"came"},{"t":139.98,"w":"through"},{"t":140.46,"w":"smooth"},{"t":140.92,"w":"Don't"},{"t":141.7,"w":"talk"},{"t":141.88,"w":"too"},{"t":142.08,"w":"much"},{"t":142.4,"w":"Just"},{"t":143.02,"w":"let"},{"t":143.14,"w":"that"},{"t":143.52,"w":"bass"},{"t":143.82,"w":"line"},{"t":143.98,"w":"hit"},{"t":144.28,"w":"This"},{"t":144.77,"w":"summer"},{"t":145.28,"w":"different"},{"t":145.8,"w":"Uh"},{"t":146.96,"w":"You"},{"t":147.06,"w":"can"},{"t":147.22,"w":"tell"},{"t":147.64,"w":"by"},{"t":147.98,"w":"the"},{"t":148.22,"w":"drip"},{"t":148.52,"w":"Move"},{"t":150.3,"w":"over"},{"t":153.46,"w":"This"},{"t":154.38,"w":"summer"},{"t":154.72,"w":"different"},{"t":158.06,"w":"Move"},{"t":158.98,"w":"over"}]}$j$::jsonb WHERE id = 'move-over-minimal-groove-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.14] Somebody said the floor already had a king
+[Verse 1 / Hook A]
+[00:05.42] Move over
+[00:06.94] Move over
+[00:11.70] We got heat in the room
+[00:14.32] Move over
+[00:15.48] Summer came through smooth
+[00:18.08] Don't talk too much
+[00:19.58] Just let that bass line hit
+[00:21.44] This summer different
+[00:23.26] You can tell by the drip
+[00:25.68] Yeah
+[00:26.36] Yeah
+[00:29.12] Let it ride
+[00:31.42] Bass line talking
+[00:34.30] Just listen
+[00:36.24] Slow steps, low light
+[00:37.98] Keep it simple, just move
+[00:42.02] That's enough
+[00:44.79] Let it breathe
+[Hook B (Repeat)]
+[00:46.64] Move over
+[00:49.96] We got heat in the room
+[00:52.22] Move over
+[00:53.32] Summer came through smooth
+[00:55.90] Don't talk too much
+[00:56.76] Just let that bass line hit
+[00:59.26] This summer different
+[Post-Hook / Crowd Chant]
+[01:00.84] You can tell by the drip
+[01:05.96] Move over
+[01:09.77] Move over
+[01:13.55] Move over
+[01:16.88] You feel that?
+[01:18.92] Oh, we do
+[01:20.92] Turn it up
+[01:21.88] Slide it through
+[01:25.77] It's soft stuff
+[01:26.58] Steps
+[01:27.72] Deep bass
+[01:29.78] Yeah, right there
+[01:34.31] Don't rush it
+[01:35.55] Don't force it
+[01:37.31] Just catch it
+[01:40.10] Move over
+[01:42.86] We got heat in the room
+[01:45.04] Move over
+[01:46.24] Summer came through smooth
+[01:48.78] Don't talk too much
+[01:50.28] Just let that bass line hit
+[01:52.12] This summer different
+[Groove 2 / Call & Response]
+[01:53.96] You can tell by the drip
+[01:56.58] Kick, clap, bass
+[01:58.92] Breathe,
+[02:00.52] kick, clap,
+[02:02.18] bass
+[02:03.02] Breathe,
+[02:04.12] breathe,
+[02:04.56] breathe,
+[02:05.02] breathe,
+[02:05.50] breathe,
+[02:05.00] breathe,
+[02:06.44] breathe
+[02:06.74] Somebody said the floor had a king
+[02:10.50] Cute
+[02:13.00] Move over
+[02:13.68] Move over
+[Pre-Hook]
+[02:15.38] We got heat in the room
+[02:17.16] Move over
+[02:18.28] Summer came through smooth
+[Hook C (Repeat)]
+[02:20.90] Don't talk too much
+[02:22.38] Just let that bass line hit
+[02:24.26] This summer different
+[02:25.78] Uh
+[02:26.94] You can tell by the drip
+[02:28.50] Move over
+[02:33.44] This summer different
+[Bridge / Breakdown]
+[02:38.04] Move over
+$j$ WHERE id = 'move-over-minimal-groove-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song is a confident declaration of dominance on the dance floor, urging others to step aside for an undeniable summer heat and smooth bass-driven swagger.","overallMood":"stylish","themes":["Dance Floor Dominance","Retro Club Aesthetic","Minimalist Confidence","Summer Night Energy"],"palette":["#FF005C","#2A0845","#1F1B36","#FFE6E9"],"sections":[{"name":"Intro","emotion":"Mysterious anticipation of a new king taking the throne.","intensity":0.39,"colorHint":"#ff005c","start":0.14},{"name":"Verse 1 / Hook A","emotion":"Smooth declaration with a rhythmic push to clear space.","intensity":0.75,"colorHint":"#ffe6e9","start":5.42},{"name":"Hook B (Repeat)","emotion":"Reinforced confidence and catchy minimal groove energy.","intensity":0.96,"colorHint":"#2a0845","start":46.64},{"name":"Post-Hook / Crowd Chant","emotion":"Collective hype with deep bass resonance and soft swagger.","intensity":0.72,"colorHint":"#ff005c","start":60.84},{"name":"Groove 2 / Call & Response","emotion":"Breathless rhythm focusing on kick/clap/bass interplay.","intensity":0.32,"colorHint":"#1f1b36","start":113.96},{"name":"Pre-Hook","emotion":"Building tension before the final heat of the room.","intensity":0.24,"colorHint":"#ffe6e9","start":135.38},{"name":"Hook C (Repeat)","emotion":"Peak confidence with a cool summer night finish.","intensity":0.21,"colorHint":"#2a0845","start":140.9},{"name":"Bridge / Breakdown","emotion":"Minimalist pause emphasizing the singular presence of 'Move over'.","intensity":0.09,"colorHint":"#1f1b36","start":158.04}],"keywords":[{"word":"heat","emotion":["Passionate","Intense"],"imageryPrompt":"A glowing warm haze rising from a crowded retro dance floor, illuminating silhouettes with soft orange and pink light against dark walls."},{"word":"drip","emotion":["Stylish","Confident"],"imageryPrompt":"Close up of high-fashion streetwear details like gold chains or designer logos reflecting under neon club lights, exuding effortless coolness."},{"word":"bass","emotion":["Deep","Resonant"],"imageryPrompt":"Low frequency waves visualized as rippling dark purple energy pushing through a minimalist room with concrete floors and sparse furniture."},{"word":"smooth","emotion":["Relaxed","Silky"],"imageryPrompt":"A slow-motion shot of liquid mercury flowing over a sleek black surface, mirroring the effortless flow of the dance moves."},{"word":"swagger","emotion":["Bold","Dominant"],"imageryPrompt":"The confident stride of a dancer in 90s style attire stepping forward with one hand on their hip, casting long shadows under strobe lights."},{"word":"move","emotion":["Urgent","Dynamic"],"imageryPrompt":"Motion blur capturing the swift lateral movement of bodies sliding across a dance floor as if clearing space for an arrival."}]}$j$::jsonb) WHERE id = 'move-over-minimal-groove-mix' AND planet->'analysis' IS NULL;
+
+-- music-is-my-drug: 20 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Thank"},{"t":0,"w":"you."},{"t":48.2,"w":"Thank"},{"t":49.6,"w":"you."},{"t":70.62,"w":"Thank"},{"t":72.02,"w":"you."},{"t":100.7,"w":"Thank"},{"t":102.1,"w":"you."},{"t":131.22,"w":"Thank"},{"t":132.62,"w":"you."},{"t":155.72,"w":"Thank"},{"t":157.12,"w":"you."},{"t":185.86,"w":"Thank"},{"t":187.26,"w":"you."},{"t":220.16,"w":"Thank"},{"t":221.56,"w":"you."},{"t":250.12,"w":"Thank"},{"t":251.52,"w":"you."},{"t":274.62,"w":"Thank"},{"t":275.78,"w":"you."}]}$j$::jsonb WHERE id = 'music-is-my-drug' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Thank you.
+[Verse 1]
+[Chorus]
+[00:48.20] Thank you.
+[Bridge]
+[01:10.62] Thank you.
+[Drop]
+[Outro]
+[01:40.70] Thank you.
+[02:11.22] Thank you.
+[02:35.72] Thank you.
+[03:05.86] Thank you.
+[03:40.16] Thank you.
+[04:10.12] Thank you.
+[04:34.62] Thank you.
+$j$ WHERE id = 'music-is-my-drug' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A minimalist electronic anthem where repetitive gratitude transforms into a hypnotic state of euphoria and deep connection.","overallMood":"Euphoric","themes":["Gratitude","Addiction to Music","Hypnosis","Catharsis"],"palette":["#0F172A","#38BDF8","#EAB308","#F43F5E"],"sections":[{"name":"Intro","emotion":"Quiet reverence and anticipation","intensity":0.67,"colorHintHex":"#0F172A","start":0},{"name":"Verse 1","emotion":"Internal reflection building outward energy","intensity":0.75,"colorHintHex":"#38BDF8","start":48.2},{"name":"Chorus","emotion":"Explosive release and collective joy","intensity":0.86,"colorHintHex":"#EAB308","start":48.2},{"name":"Bridge","emotion":"Trance-like surrender to the sound","intensity":0.86,"colorHintHex":"#F43F5E","start":70.62},{"name":"Drop","emotion":"Peak euphoric abandon and sonic weightlessness","intensity":1,"colorHintHex":"#FFFFFF","start":100.7},{"name":"Outro","emotion":"Sustained gratitude fading into eternal rhythm","intensity":0.18,"colorHintHex":"#38BDF8","start":100.7}],"keywords":[{"word":"thank","emotion":"Deep relief and worshipful gratitude","imageryPrompt":"A beam of golden sunlight piercing through heavy storm clouds, illuminating a solitary figure raising hands in silent prayer amidst falling digital rain."},{"word":"drug","emotion":"Intense dependency and altered consciousness","imageryPrompt":"Neon blue lightwaves twisting around the listener's silhouette like liquid glass, forming intricate geometric patterns that dissolve into pure white energy."},{"word":"hypnotic","emotion":"Trance-like focus and timelessness","imageryPrompt":"Endless spirals of violet smoke rotating in a void where gravity ceases to exist, creating a perfect circular tunnel of light."},{"word":"cathartic","emotion":"Purging sorrow through sonic release","imageryPrompt":"A massive dam of dark water bursting open into a rainbow explosion that fills the sky with glittering particles and soundwaves."},{"word":"euphoric","emotion":"Overwhelming joy and flight sensation","imageryPrompt":"Soaring above an ocean of glowing liquid gold, surrounded by floating musical notes that bloom into bright flowers as they pass."}]}$j$::jsonb) WHERE id = 'music-is-my-drug' AND planet->'analysis' IS NULL;
+
+-- music-is-my-drug-rooklyn-mix: 405 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.7,"w":"Oh"},{"t":0.8,"w":"baby,"},{"t":3.25,"w":"turn"},{"t":4.06,"w":"it"},{"t":4.28,"w":"up"},{"t":4.44,"w":"now,"},{"t":4.86,"w":"feel"},{"t":5.94,"w":"that"},{"t":6.2,"w":"bass"},{"t":6.5,"w":"line"},{"t":6.8,"w":"run"},{"t":12.36,"w":"Yeah,"},{"t":13,"w":"I"},{"t":13.7,"w":"can't"},{"t":14.06,"w":"get"},{"t":14.24,"w":"enough"},{"t":14.58,"w":"Come"},{"t":15.22,"w":"on"},{"t":35.2,"w":"Turn"},{"t":35.92,"w":"it"},{"t":36.64,"w":"up"},{"t":36.8,"w":"now,"},{"t":37.26,"w":"feel"},{"t":39.64,"w":"that"},{"t":39.92,"w":"bass"},{"t":40.24,"w":"line"},{"t":40.54,"w":"run"},{"t":40.94,"w":"Yeah,"},{"t":41.87,"w":"I"},{"t":43.26,"w":"can't"},{"t":43.44,"w":"get"},{"t":43.52,"w":"enough"},{"t":43.94,"w":"Come"},{"t":44.5,"w":"on"},{"t":57.5,"w":"First"},{"t":58.14,"w":"note"},{"t":58.74,"w":"hits"},{"t":59,"w":"my"},{"t":59.24,"w":"skin"},{"t":59.68,"w":"Turn"},{"t":59.98,"w":"it"},{"t":59.98,"w":"up"},{"t":59.98,"w":"now,"},{"t":59.98,"w":"feel"},{"t":59.98,"w":"that"},{"t":59.98,"w":"bass"},{"t":59.98,"w":"line"},{"t":59.98,"w":"run"},{"t":60.4,"w":"Bass"},{"t":61.7,"w":"rollin'"},{"t":62.64,"w":"through"},{"t":62.78,"w":"my"},{"t":63.04,"w":"chest"},{"t":64.86,"w":"Goosebumps"},{"t":65.9,"w":"rushin'"},{"t":66.8,"w":"in"},{"t":67.12,"w":"Like"},{"t":68.46,"w":"I"},{"t":68.86,"w":"forgot"},{"t":69.66,"w":"the"},{"t":70.38,"w":"rest"},{"t":70.86,"w":"One"},{"t":72.16,"w":"song"},{"t":72.54,"w":"can"},{"t":73.06,"w":"start"},{"t":73.4,"w":"a"},{"t":73.8,"w":"fire"},{"t":74.4,"w":"One"},{"t":75.14,"w":"hook"},{"t":76.22,"w":"can"},{"t":76.56,"w":"stop"},{"t":77.34,"w":"the"},{"t":77.44,"w":"pain"},{"t":77.86,"w":"One"},{"t":78.7,"w":"beat"},{"t":78.98,"w":"can"},{"t":79.54,"w":"make"},{"t":80.72,"w":"us"},{"t":81.04,"w":"strangers"},{"t":81.94,"w":"Then"},{"t":83.04,"w":"bring"},{"t":83.48,"w":"us"},{"t":83.78,"w":"back"},{"t":84.18,"w":"again"},{"t":88.48,"w":"When"},{"t":88.6,"w":"the"},{"t":88.78,"w":"world"},{"t":89.14,"w":"gets"},{"t":89.48,"w":"heavy"},{"t":90,"w":"Music"},{"t":90.94,"w":"clears"},{"t":91.22,"w":"my"},{"t":91.42,"w":"mind"},{"t":91.86,"w":"When"},{"t":92.3,"w":"my"},{"t":92.46,"w":"heart"},{"t":92.74,"w":"gets"},{"t":93.1,"w":"messy"},{"t":93.9,"w":"It"},{"t":94.2,"w":"makes"},{"t":94.52,"w":"the"},{"t":94.62,"w":"broken"},{"t":94.96,"w":"shine"},{"t":95.4,"w":"Under"},{"t":96.1,"w":"all"},{"t":96.36,"w":"this"},{"t":96.8,"w":"rhythm"},{"t":97.44,"w":"Something"},{"t":98.3,"w":"comes"},{"t":99.08,"w":"alive"},{"t":102.53,"w":"Music"},{"t":102.78,"w":"is"},{"t":103.1,"w":"my"},{"t":103.36,"w":"drug"},{"t":103.64,"w":"Feel"},{"t":104.42,"w":"it"},{"t":105.54,"w":"in"},{"t":105.62,"w":"my"},{"t":105.74,"w":"body"},{"t":106.22,"w":"Feel"},{"t":107.02,"w":"it"},{"t":107.34,"w":"in"},{"t":107.46,"w":"my"},{"t":107.58,"w":"mind"},{"t":109.76,"w":"Music"},{"t":110.14,"w":"is"},{"t":110.44,"w":"my"},{"t":110.68,"w":"drug"},{"t":111.02,"w":"Eyes"},{"t":112.19,"w":"shut"},{"t":112.54,"w":"to"},{"t":112.96,"w":"the"},{"t":113.02,"w":"feelings"},{"t":113.36,"w":"Spirit"},{"t":114.08,"w":"in"},{"t":114.62,"w":"the"},{"t":114.82,"w":"sky"},{"t":115.28,"w":"Don't"},{"t":115.82,"w":"stop"},{"t":116.44,"w":"now"},{"t":116.88,"w":"Music"},{"t":117.46,"w":"is"},{"t":117.82,"w":"my"},{"t":118,"w":"drug"},{"t":118.66,"w":"It"},{"t":119.36,"w":"gives"},{"t":119.64,"w":"me"},{"t":119.78,"w":"chills"},{"t":119.98,"w":"Chills"},{"t":120.38,"w":"inside"},{"t":121.23,"w":"It"},{"t":121.68,"w":"gets"},{"t":122,"w":"me"},{"t":122.54,"w":"high"},{"t":124.96,"w":"I'm"},{"t":125.06,"w":"alive"},{"t":126.37,"w":"I'm"},{"t":126.82,"w":"alive"},{"t":128.23,"w":"I'm"},{"t":128.68,"w":"alive"},{"t":130.35,"w":"Da"},{"t":130.8,"w":"da"},{"t":131.26,"w":"da"},{"t":131.38,"w":"da"},{"t":131.8,"w":"da"},{"t":132.16,"w":"da"},{"t":134.4,"w":"Oh!"},{"t":140.8,"w":"Woo!"},{"t":142.62,"w":"Woo!"},{"t":143.82,"w":"Woo!"},{"t":145.46,"w":"It"},{"t":146.37,"w":"makes"},{"t":146.68,"w":"me"},{"t":146.92,"w":"laugh"},{"t":147.16,"w":"in"},{"t":147.36,"w":"color"},{"t":147.76,"w":"Makes"},{"t":148.28,"w":"me"},{"t":148.64,"w":"cry"},{"t":148.94,"w":"in"},{"t":149.2,"w":"blue"},{"t":149.44,"w":"Makes"},{"t":149.92,"w":"me"},{"t":150.08,"w":"dance"},{"t":150.62,"w":"with"},{"t":151.02,"w":"memory"},{"t":151.38,"w":"I"},{"t":151.88,"w":"thought"},{"t":152.1,"w":"I"},{"t":152.38,"w":"never"},{"t":152.68,"w":"knew"},{"t":153.08,"w":"Turns"},{"t":153.34,"w":"pain"},{"t":153.8,"w":"into"},{"t":154.56,"w":"motion"},{"t":155.14,"w":"Turns"},{"t":155.54,"w":"silence"},{"t":156.08,"w":"into"},{"t":156.4,"w":"gold"},{"t":156.82,"w":"Makes"},{"t":157.26,"w":"a"},{"t":157.4,"w":"room"},{"t":157.72,"w":"of"},{"t":157.94,"w":"strangers"},{"t":158.44,"w":"Feel"},{"t":159.18,"w":"like"},{"t":159.5,"w":"one"},{"t":159.76,"w":"big"},{"t":160.18,"w":"soul"},{"t":160.68,"w":"Woo!"},{"t":161.68,"w":"When"},{"t":161.94,"w":"the"},{"t":162.1,"w":"night"},{"t":162.32,"w":"gets"},{"t":162.68,"w":"lonely"},{"t":163.32,"w":"Music"},{"t":164.12,"w":"pulls"},{"t":164.48,"w":"me"},{"t":164.7,"w":"close"},{"t":165.06,"w":"When"},{"t":165.36,"w":"the"},{"t":165.64,"w":"road"},{"t":165.96,"w":"gets"},{"t":166.4,"w":"crazy"},{"t":167.18,"w":"The"},{"t":167.56,"w":"high"},{"t":167.78,"w":"I"},{"t":167.96,"w":"need"},{"t":168.24,"w":"the"},{"t":168.38,"w":"most"},{"t":168.8,"w":"Under"},{"t":169.38,"w":"all"},{"t":169.66,"w":"this"},{"t":170.06,"w":"rhythm"},{"t":170.54,"w":"Something"},{"t":171.52,"w":"comes"},{"t":172.38,"w":"alive"},{"t":175.81,"w":"Music"},{"t":176.08,"w":"is"},{"t":176.38,"w":"my"},{"t":176.68,"w":"drug"},{"t":176.94,"w":"Woo!"},{"t":178.27,"w":"Feel"},{"t":178.54,"w":"it"},{"t":178.82,"w":"in"},{"t":178.92,"w":"my"},{"t":179,"w":"body"},{"t":179.38,"w":"Feel"},{"t":180.28,"w":"it"},{"t":180.64,"w":"in"},{"t":180.72,"w":"my"},{"t":180.84,"w":"mind"},{"t":183.07,"w":"Music"},{"t":183.42,"w":"is"},{"t":183.72,"w":"my"},{"t":183.98,"w":"drug"},{"t":184.26,"w":"Eyes"},{"t":184.9,"w":"shut"},{"t":186.12,"w":"to"},{"t":186.22,"w":"the"},{"t":186.32,"w":"feelings"},{"t":186.9,"w":"Spirit"},{"t":187.36,"w":"in"},{"t":187.88,"w":"the"},{"t":188.06,"w":"sky"},{"t":188.58,"w":"Don't"},{"t":189.06,"w":"stop"},{"t":189.72,"w":"now"},{"t":190.16,"w":"Music"},{"t":190.76,"w":"is"},{"t":191.04,"w":"my"},{"t":191.32,"w":"drug"},{"t":192.02,"w":"It"},{"t":192.48,"w":"gives"},{"t":192.94,"w":"me"},{"t":193.08,"w":"chills"},{"t":193.6,"w":"inside"},{"t":194.26,"w":"It"},{"t":194.96,"w":"gets"},{"t":195.34,"w":"me"},{"t":195.86,"w":"high"},{"t":198.08,"w":"I'm"},{"t":198.3,"w":"alive"},{"t":199.87,"w":"I'm"},{"t":200.12,"w":"alive"},{"t":201.79,"w":"I'm"},{"t":201.94,"w":"alive"},{"t":205.54,"w":"It's"},{"t":206,"w":"the"},{"t":206.08,"w":"laugh"},{"t":206.34,"w":"after"},{"t":206.68,"w":"crying"},{"t":207.32,"w":"It's"},{"t":207.78,"w":"the"},{"t":207.82,"w":"scream"},{"t":208.22,"w":"in"},{"t":208.48,"w":"the"},{"t":208.66,"w":"dark"},{"t":209.16,"w":"It's"},{"t":209.58,"w":"the"},{"t":209.68,"w":"hands"},{"t":210.04,"w":"in"},{"t":210.34,"w":"the"},{"t":210.48,"w":"air"},{"t":210.92,"w":"It's"},{"t":211.44,"w":"the"},{"t":211.48,"w":"beat"},{"t":211.82,"w":"in"},{"t":212.1,"w":"my"},{"t":212.3,"w":"heart"},{"t":212.84,"w":"Every"},{"t":213.32,"w":"drop"},{"t":213.62,"w":"Every"},{"t":214.2,"w":"drum"},{"t":214.54,"w":"Every"},{"t":215.12,"w":"voice"},{"t":215.72,"w":"Every"},{"t":216.06,"w":"one"},{"t":216.3,"w":"When"},{"t":216.88,"w":"the"},{"t":217.04,"w":"bass"},{"t":217.3,"w":"line"},{"t":217.62,"w":"comes"},{"t":218.12,"w":"We"},{"t":218.54,"w":"become"},{"t":218.92,"w":"the"},{"t":219.48,"w":"song"},{"t":227.64,"w":"Woo!"},{"t":230.6,"w":"Woo!"},{"t":231.8,"w":"Woo!"},{"t":232.58,"w":"Woo!"},{"t":233.1,"w":"Woo!"},{"t":233.94,"w":"Woo!"},{"t":234.02,"w":"Woo!"},{"t":234.66,"w":"Woo!"},{"t":234.82,"w":"Woo!"},{"t":234.88,"w":"Woo!"},{"t":235.06,"w":"Woo!"},{"t":235.18,"w":"Woo!"},{"t":235.26,"w":"Woo!"},{"t":235.44,"w":"Woo!"},{"t":235.5,"w":"Woo!"},{"t":236.4,"w":"Woo!"},{"t":237.08,"w":"Woo!"},{"t":237.24,"w":"Woo!"},{"t":237.66,"w":"Woo!"},{"t":237.68,"w":"Woo!"},{"t":241.92,"w":"Woo!"},{"t":244.72,"w":"Woo!"},{"t":246.06,"w":"Woo!"},{"t":247.4,"w":"Woo!"},{"t":247.64,"w":"Woo!"},{"t":247.8,"w":"Woo!"},{"t":248.3,"w":"Woo!"},{"t":248.36,"w":"Music"},{"t":249.1,"w":"is"},{"t":249.7,"w":"my"},{"t":249.9,"w":"drug"},{"t":250.22,"w":"Feel"},{"t":250.82,"w":"it"},{"t":251.24,"w":"in"},{"t":251.42,"w":"my"},{"t":251.66,"w":"body"},{"t":252.14,"w":"Music"},{"t":253.04,"w":"is"},{"t":253.32,"w":"my"},{"t":253.58,"w":"drug"},{"t":253.94,"w":"Feel"},{"t":254.56,"w":"it"},{"t":254.94,"w":"in"},{"t":255.16,"w":"my"},{"t":255.38,"w":"mind"},{"t":256.29,"w":"Music"},{"t":256.7,"w":"is"},{"t":257.09,"w":"my"},{"t":257.24,"w":"drug"},{"t":257.58,"w":"Eyes"},{"t":258.18,"w":"shut"},{"t":258.62,"w":"to"},{"t":258.94,"w":"the"},{"t":259.14,"w":"feelings"},{"t":260.8,"w":"Spirit"},{"t":261.28,"w":"in"},{"t":262.3,"w":"the"},{"t":262.5,"w":"sky"},{"t":263.4,"w":"Music"},{"t":264.06,"w":"is"},{"t":264.34,"w":"my"},{"t":264.54,"w":"drug"},{"t":264.96,"w":"Woo!"},{"t":267.68,"w":"It"},{"t":267.78,"w":"gets"},{"t":268.08,"w":"me"},{"t":268.24,"w":"high"},{"t":277.64,"w":"Music"},{"t":278.5,"w":"is"},{"t":279.02,"w":"my"},{"t":279.28,"w":"job"},{"t":279.54,"w":"Turn"},{"t":280.12,"w":"it"},{"t":280.3,"w":"up"},{"t":283.64,"w":"Music"},{"t":284.86,"w":"is"},{"t":285.5,"w":"my"},{"t":286.42,"w":"job"}]}$j$::jsonb WHERE id = 'music-is-my-drug-rooklyn-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.70] Oh baby,
+[00:03.25] turn it up now, feel that bass line run
+[00:12.36] Yeah, I can't get enough
+[00:14.58] Come on
+[Verse 1]
+[00:35.20] Turn it up now, feel that bass line run
+[00:40.94] Yeah,
+[00:41.87] I can't get enough
+[00:43.94] Come on
+[00:57.50] First note hits my skin
+[00:59.68] Turn it up now, feel that bass line run
+[Chorus]
+[01:00.40] Bass rollin' through my chest
+[01:04.86] Goosebumps rushin' in
+[01:07.12] Like I forgot the rest
+[01:10.86] One song can start a fire
+[01:14.40] One hook can stop the pain
+[01:17.86] One beat can make us strangers
+[01:21.94] Then bring us back again
+[01:28.48] When the world gets heavy
+[Bridge]
+[01:30.00] Music clears my mind
+[01:31.86] When my heart gets messy
+[01:33.90] It makes the broken shine
+[01:35.40] Under all this rhythm
+[01:37.44] Something comes alive
+[Verse 1 (Repeat/Build)]
+[01:42.53] Music is my drug
+[Chorus (Full)]
+[01:43.64] Feel it in my body
+[01:46.22] Feel it in my mind
+[01:49.76] Music is my drug
+[01:51.02] Eyes
+[01:52.19] shut to the feelings
+[01:53.36] Spirit in the sky
+[01:55.28] Don't stop now
+[01:56.88] Music is my drug
+[01:58.66] It gives me chills
+[01:59.98] Chills inside
+[02:01.23] It gets me high
+[02:04.96] I'm alive
+[02:06.37] I'm alive
+[02:08.23] I'm alive
+[02:10.35] Da da da da da da
+[02:14.40] Oh!
+[02:20.80] Woo!
+[02:22.62] Woo!
+[02:23.82] Woo!
+[02:25.46] It
+[02:26.37] makes me laugh in color
+[02:27.76] Makes me cry in blue
+[02:29.44] Makes me dance with memory
+[02:31.38] I thought I never knew
+[02:33.08] Turns pain into motion
+[02:35.14] Turns silence into gold
+[02:36.82] Makes a room of strangers
+[02:38.44] Feel like one big soul
+[02:40.68] Woo!
+[02:41.68] When the night gets lonely
+[02:43.32] Music pulls me close
+[02:45.06] When the road gets crazy
+[02:47.18] The high I need the most
+[02:48.80] Under all this rhythm
+[02:50.54] Something comes alive
+[Drop]
+[02:55.81] Music is my drug
+[02:56.94] Woo!
+[02:58.27] Feel it in my body
+[02:59.38] Feel it in my mind
+[03:03.07] Music is my drug
+[03:04.26] Eyes shut to the feelings
+[03:06.90] Spirit in the sky
+[03:08.58] Don't stop now
+[03:10.16] Music is my drug
+[03:12.02] It gives me chills inside
+[03:14.26] It gets me high
+[03:18.08] I'm alive
+[03:19.87] I'm alive
+[03:21.79] I'm alive
+[03:25.54] It's the laugh after crying
+[03:27.32] It's the scream in the dark
+[03:29.16] It's the hands in the air
+[03:30.92] It's the beat in my heart
+[03:32.84] Every drop
+[03:33.62] Every drum
+[03:34.54] Every voice
+[03:35.72] Every one
+[03:36.30] When the bass line comes
+[03:38.12] We become the song
+[03:47.64] Woo!
+[03:50.60] Woo!
+[03:51.80] Woo!
+[03:52.58] Woo!
+[03:53.10] Woo!
+[03:53.94] Woo!
+[03:54.02] Woo!
+[03:54.66] Woo!
+[03:54.82] Woo!
+[03:54.88] Woo!
+[03:55.06] Woo!
+[03:55.18] Woo!
+[03:55.26] Woo!
+[03:55.44] Woo!
+[03:55.50] Woo!
+[03:56.40] Woo!
+[03:57.08] Woo!
+[03:57.24] Woo!
+[03:57.66] Woo!
+[03:57.68] Woo!
+[04:01.92] Woo!
+[04:04.72] Woo!
+[04:06.06] Woo!
+[04:07.40] Woo!
+[04:07.64] Woo!
+[04:07.80] Woo!
+[04:08.30] Woo!
+[04:08.36] Music is my drug
+[04:10.22] Feel it in my body
+[04:12.14] Music is my drug
+[04:13.94] Feel it in my mind
+[04:16.29] Music is my drug
+[04:17.58] Eyes shut to the feelings
+[04:20.80] Spirit in the sky
+[04:23.40] Music is my drug
+[04:24.96] Woo!
+[04:27.68] It gets me high
+[04:37.64] Music is my job
+[04:39.54] Turn it up
+[04:43.64] Music is my job
+$j$ WHERE id = 'music-is-my-drug-rooklyn-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This driving D major dance-pop anthem explores music as a powerful life-saving substance that transforms pain into euphoria and unites strangers into one soul through rhythm.","overallMood":"Euphoric, Uplifting, Intense","themes":["Catharsis","Addiction to Rhythm","Unity in Sound","Transformation of Pain","Escapism","Vitality"],"palette":["#FF4D00","#2E86DE","#F5A623","#FFFFFF"],"sections":[{"name":"Intro","emotion":"Anticipation and low-volume intimacy","intensity":0.12,"colorHint":"#1a1a2e","start":0.7},{"name":"Verse 1","emotion":"Growing physical sensation of the bassline","intensity":0.81,"colorHint":"#533b7d","start":35.2},{"name":"Chorus","emotion":"Massive release and emotional fire","intensity":0.94,"colorHint":"#e94560","start":60.4},{"name":"Bridge","emotion":"Clarity and spiritual awakening","intensity":0.62,"colorHint":"#0f3d3e","start":90},{"name":"Verse 1 (Repeat/Build)","emotion":"Escalating tension and urgency","intensity":0.62,"colorHint":"#ff6b9d","start":102.53},{"name":"Chorus (Full)","emotion":"Total euphoria and chaotic joy","intensity":0.98,"colorHint":"#fd7e14","start":103.64},{"name":"Drop","emotion":"Explosive rhythm and collective trance","intensity":1,"colorHint":"#ffffff","start":175.81}],"keywords":[{"word":"drug","emotion":"Obsessive need for connection","imageryPrompt":"A glowing neon pill dissolving into a river of golden light that flows upward, representing addiction to positive energy."},{"word":"fire","emotion":"Intense passion and heat","imageryPrompt":"Blue and purple flames dancing in the wind without burning anything, illuminating faces with warmth rather than destruction."},{"word":"pain","emotion":"Raw vulnerability turned positive","imageryPrompt":"A dark gray stone cracking open to reveal a bright yellow flower growing from the center of the fracture."},{"word":"alive","emotion":"Rushing vitality and heartbeat","imageryPrompt":"Human silhouettes with visible golden veins pulsing against a deep indigo background, radiating light outward."},{"word":"soul","emotion":"Deep spiritual unity","imageryPrompt":"A swirling galaxy of connected human hands merging into one single luminous sphere in the center of space."},{"word":"gold","emotion":"Treasured transformation","imageryPrompt":"Silent dust turning instantly into shimmering metallic flakes that float upwards, catching the light from below."}]}$j$::jsonb) WHERE id = 'music-is-my-drug-rooklyn-mix' AND planet->'analysis' IS NULL;
+
+-- my-soul-lives-in-seoul: 880 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":1.2,"w":"Yeah,"},{"t":1.82,"w":"my"},{"t":2.36,"w":"soul"},{"t":2.82,"w":"lives"},{"t":3.32,"w":"in"},{"t":3.68,"w":"soul"},{"t":4.02,"w":"But"},{"t":4.44,"w":"my"},{"t":4.76,"w":"heart"},{"t":5.26,"w":"lays"},{"t":5.89,"w":"wherever"},{"t":6.16,"w":"you"},{"t":6.86,"w":"call"},{"t":7.52,"w":"me"},{"t":8,"w":"from"},{"t":8.86,"w":"I"},{"t":8.96,"w":"know"},{"t":9.24,"w":"that's"},{"t":9.62,"w":"hard,"},{"t":10.08,"w":"can"},{"t":10.66,"w":"you"},{"t":10.78,"w":"hear"},{"t":11.06,"w":"me"},{"t":11.3,"w":"now?"},{"t":11.84,"w":"Signal's"},{"t":12.06,"w":"weak"},{"t":12.26,"w":"but"},{"t":12.46,"w":"I"},{"t":12.56,"w":"feel"},{"t":12.76,"w":"you"},{"t":12.9,"w":"somehow"},{"t":13.32,"w":"Time"},{"t":13.66,"w":"zones"},{"t":13.9,"w":"touch"},{"t":14.2,"w":"screen"},{"t":14.54,"w":"Different"},{"t":14.84,"w":"skies,"},{"t":15.26,"w":"same"},{"t":15.58,"w":"dreams"},{"t":16.39,"w":"1,"},{"t":17.04,"w":"2,"},{"t":17.58,"w":"3,"},{"t":18.16,"w":"go!"},{"t":18.7,"w":"I"},{"t":18.74,"w":"wake"},{"t":19,"w":"up,"},{"t":19.36,"w":"grab"},{"t":19.48,"w":"my"},{"t":19.62,"w":"phone"},{"t":19.82,"w":"before"},{"t":20.06,"w":"I"},{"t":20.28,"w":"even"},{"t":20.5,"w":"breathe"},{"t":20.8,"w":"37"},{"t":21.38,"w":"messages"},{"t":21.98,"w":"waiting"},{"t":22.5,"w":"there"},{"t":22.7,"w":"for"},{"t":22.88,"w":"me"},{"t":23.04,"w":"Your"},{"t":23.22,"w":"morning"},{"t":23.46,"w":"is"},{"t":23.64,"w":"my"},{"t":23.76,"w":"midnight,"},{"t":24.08,"w":"my"},{"t":24.34,"w":"sunrise"},{"t":24.72,"w":"is"},{"t":25.08,"w":"your"},{"t":25.22,"w":"sleep"},{"t":25.56,"w":"But"},{"t":26,"w":"your"},{"t":26.08,"w":"face"},{"t":26.36,"w":"on"},{"t":26.58,"w":"my"},{"t":26.66,"w":"screen"},{"t":26.92,"w":"makes"},{"t":27.16,"w":"the"},{"t":27.28,"w":"distance"},{"t":27.54,"w":"feel"},{"t":27.78,"w":"sweet"},{"t":28.02,"w":"Wi"},{"t":28.38,"w":"-Fi,"},{"t":28.74,"w":"acting"},{"t":28.98,"w":"crazy,"},{"t":29.34,"w":"signal"},{"t":29.58,"w":"dropping"},{"t":30,"w":"low"},{"t":30.4,"w":"Can"},{"t":30.66,"w":"you"},{"t":30.82,"w":"hear"},{"t":31.06,"w":"me,"},{"t":31.32,"w":"baby,"},{"t":31.68,"w":"then"},{"t":31.84,"w":"the"},{"t":31.96,"w":"camera"},{"t":32.3,"w":"froze"},{"t":32.8,"w":"Front"},{"t":33.08,"w":"cam,"},{"t":33.5,"w":"back"},{"t":33.68,"w":"cam,"},{"t":34.08,"w":"why"},{"t":34.2,"w":"am"},{"t":34.3,"w":"I"},{"t":34.32,"w":"showing"},{"t":34.56,"w":"the"},{"t":34.78,"w":"floor?"},{"t":35.38,"w":"You're"},{"t":35.56,"w":"laughing"},{"t":35.76,"w":"so"},{"t":35.96,"w":"hard"},{"t":36.32,"w":"Now"},{"t":36.54,"w":"I"},{"t":36.68,"w":"love"},{"t":36.9,"w":"you"},{"t":37,"w":"even"},{"t":37.22,"w":"more"},{"t":37.54,"w":"Battery"},{"t":38.12,"w":"on"},{"t":38.48,"w":"red,"},{"t":38.76,"w":"charger"},{"t":39,"w":"disappear"},{"t":39.4,"w":"Wrong"},{"t":40.1,"w":"cable"},{"t":40.46,"w":"in"},{"t":40.68,"w":"my"},{"t":40.78,"w":"bag,"},{"t":41.14,"w":"same"},{"t":41.26,"w":"problem"},{"t":41.66,"w":"all"},{"t":41.92,"w":"year"},{"t":42.2,"w":"Storage"},{"t":42.76,"w":"full"},{"t":43,"w":"again"},{"t":43.28,"w":"from"},{"t":43.58,"w":"the"},{"t":43.74,"w":"photos"},{"t":44.04,"w":"that"},{"t":44.22,"w":"you"},{"t":44.32,"w":"send"},{"t":44.52,"w":"But"},{"t":44.78,"w":"I"},{"t":44.92,"w":"still"},{"t":45.06,"w":"save"},{"t":45.26,"w":"every"},{"t":45.48,"w":"selfie"},{"t":45.76,"w":"like"},{"t":45.98,"w":"I'll"},{"t":46.14,"w":"never"},{"t":46.3,"w":"see"},{"t":46.6,"w":"you"},{"t":46.82,"w":"again"},{"t":47.18,"w":"Shipping"},{"t":47.52,"w":"takes"},{"t":47.7,"w":"forever,"},{"t":48.2,"w":"plane"},{"t":48.34,"w":"tickets"},{"t":48.68,"w":"are"},{"t":48.96,"w":"high"},{"t":49.32,"w":"Currency"},{"t":50,"w":"conversion"},{"t":50.36,"w":"got"},{"t":50.68,"w":"me"},{"t":50.74,"w":"asking"},{"t":51.2,"w":"why"},{"t":51.75,"w":"Forms"},{"t":52.4,"w":"on"},{"t":52.44,"w":"the"},{"t":52.54,"w":"table,"},{"t":52.86,"w":"stamps"},{"t":53.12,"w":"in"},{"t":53.38,"w":"the"},{"t":53.58,"w":"line"},{"t":53.96,"w":"But"},{"t":54.22,"w":"I"},{"t":54.34,"w":"cross"},{"t":54.54,"w":"every"},{"t":54.84,"w":"border"},{"t":55.18,"w":"just"},{"t":55.34,"w":"to"},{"t":55.52,"w":"call"},{"t":55.78,"w":"you"},{"t":56,"w":"mine"},{"t":56.34,"w":"K"},{"t":56.92,"w":"-1,"},{"t":57.26,"w":"K"},{"t":57.44,"w":"-2,"},{"t":57.8,"w":"3,"},{"t":58,"w":"go!"},{"t":58.02,"w":"K"},{"t":58.28,"w":"-1,"},{"t":58.4,"w":"2,"},{"t":58.7,"w":"paperwork"},{"t":59.22,"w":"dancing"},{"t":59.86,"w":"like"},{"t":60.12,"w":"it's"},{"t":60.48,"w":"God"},{"t":60.7,"w":"moves"},{"t":61.06,"w":"Lost"},{"t":61.54,"w":"in"},{"t":61.72,"w":"translation"},{"t":62.1,"w":"but"},{"t":62.44,"w":"I"},{"t":62.56,"w":"still"},{"t":62.72,"w":"choose"},{"t":63.06,"w":"you"},{"t":63.4,"w":"Every"},{"t":63.98,"w":"little"},{"t":64.24,"w":"problem"},{"t":64.58,"w":"turns"},{"t":64.82,"w":"into"},{"t":65.18,"w":"something"},{"t":65.46,"w":"true"},{"t":65.7,"w":"My"},{"t":66,"w":"soul"},{"t":66.34,"w":"lives"},{"t":66.84,"w":"in"},{"t":67.16,"w":"soul"},{"t":67.48,"w":"But"},{"t":67.98,"w":"my"},{"t":68.28,"w":"love"},{"t":68.98,"w":"goes"},{"t":69.08,"w":"worldwide"},{"t":69.68,"w":"From"},{"t":70.26,"w":"your"},{"t":70.54,"w":"good"},{"t":70.72,"w":"morning"},{"t":71.36,"w":"To"},{"t":71.96,"w":"my"},{"t":72.7,"w":"good"},{"t":73.04,"w":"night"},{"t":74.64,"w":"We"},{"t":74.74,"w":"fight,"},{"t":75.22,"w":"we"},{"t":75.38,"w":"make"},{"t":75.74,"w":"up"},{"t":76.3,"w":"Then"},{"t":76.4,"w":"we"},{"t":76.54,"w":"laugh"},{"t":76.92,"w":"on"},{"t":77.12,"w":"the"},{"t":77.24,"w":"phone"},{"t":77.48,"w":"No"},{"t":77.86,"w":"matter"},{"t":78.12,"w":"where"},{"t":78.34,"w":"you"},{"t":78.46,"w":"are,"},{"t":78.66,"w":"you"},{"t":78.74,"w":"never"},{"t":78.96,"w":"feel"},{"t":79.24,"w":"alone"},{"t":80,"w":"My"},{"t":80.16,"w":"soul"},{"t":80.54,"w":"lives"},{"t":80.84,"w":"in"},{"t":80.9,"w":"Seoul"},{"t":81.68,"w":"My"},{"t":82.36,"w":"soul"},{"t":82.76,"w":"lives"},{"t":83.2,"w":"in"},{"t":83.28,"w":"Seoul"},{"t":84.7,"w":"But"},{"t":84.82,"w":"it"},{"t":84.94,"w":"finds"},{"t":85.28,"w":"you"},{"t":85.58,"w":"wherever"},{"t":87.06,"w":"you"},{"t":87.16,"w":"go"},{"t":88.38,"w":"I"},{"t":89.08,"w":"miss"},{"t":89.08,"w":"you,"},{"t":89.26,"w":"baby"},{"t":89.66,"w":"I"},{"t":90.62,"w":"miss"},{"t":91.36,"w":"you,"},{"t":91.58,"w":"baby"},{"t":92.88,"w":"My"},{"t":92.98,"w":"soul"},{"t":93.38,"w":"lives"},{"t":93.9,"w":"in"},{"t":94.28,"w":"Seoul"},{"t":94.7,"w":"My"},{"t":95.62,"w":"soul"},{"t":95.72,"w":"lives"},{"t":95.72,"w":"in"},{"t":95.72,"w":"Seoul"},{"t":95.72,"w":"Soul"},{"t":95.72,"w":"to"},{"t":95.88,"w":"your"},{"t":96.06,"w":"heart"},{"t":97.92,"w":"Minds"},{"t":98.3,"w":"apart"},{"t":99.72,"w":"Still"},{"t":100.48,"w":"we"},{"t":100.64,"w":"glow"},{"t":100.96,"w":"My"},{"t":101.22,"w":"soul"},{"t":101.88,"w":"lives"},{"t":103.38,"w":"in"},{"t":103.74,"w":"Seoul"},{"t":104.12,"w":"My"},{"t":104.36,"w":"soul"},{"t":104.96,"w":"lives"},{"t":104.96,"w":"in"},{"t":104.96,"w":"Seoul"},{"t":104.96,"w":"Call"},{"t":105.15,"w":"me"},{"t":105.34,"w":"again"},{"t":107.01,"w":"Don't"},{"t":107.2,"w":"let"},{"t":107.44,"w":"it"},{"t":107.84,"w":"end"},{"t":109.09,"w":"You"},{"t":109.66,"w":"already"},{"t":109.76,"w":"know"},{"t":110.42,"w":"My"},{"t":110.66,"w":"soul"},{"t":112.35,"w":"lives"},{"t":112.76,"w":"in"},{"t":112.98,"w":"Seoul"},{"t":113,"w":"Family"},{"t":113.28,"w":"asking"},{"t":113.62,"w":"questions,"},{"t":114.06,"w":"friends"},{"t":114.28,"w":"all"},{"t":114.56,"w":"in"},{"t":114.78,"w":"the"},{"t":114.9,"w":"chat"},{"t":115.16,"w":"Is"},{"t":115.36,"w":"the"},{"t":115.48,"w":"foreigner"},{"t":115.82,"w":"rich,"},{"t":116.36,"w":"baby?"},{"t":116.74,"w":"What"},{"t":117.12,"w":"is"},{"t":117.28,"w":"that?"},{"t":118.02,"w":"Everybody"},{"t":118.1,"w":"thinks"},{"t":118.34,"w":"love"},{"t":118.56,"w":"comes"},{"t":118.74,"w":"with"},{"t":118.94,"w":"a"},{"t":119.02,"w":"golden"},{"t":119.34,"w":"crown"},{"t":119.84,"w":"But"},{"t":120.2,"w":"we're"},{"t":120.38,"w":"just"},{"t":120.5,"w":"counting"},{"t":120.74,"w":"coins"},{"t":121.08,"w":"till"},{"t":121.26,"w":"the"},{"t":121.38,"w":"next"},{"t":121.6,"w":"slide"},{"t":121.88,"w":"down"},{"t":122.2,"w":"You"},{"t":122.54,"w":"send"},{"t":122.78,"w":"me"},{"t":123,"w":"a"},{"t":123.14,"w":"box,"},{"t":123.5,"w":"it"},{"t":123.64,"w":"arrives"},{"t":123.82,"w":"next"},{"t":124.22,"w":"year"},{"t":124.9,"w":"Customs"},{"t":125.3,"w":"got"},{"t":125.34,"w":"me"},{"t":125.44,"w":"crying,"},{"t":125.82,"w":"but"},{"t":125.96,"w":"I"},{"t":126.04,"w":"smile"},{"t":126.2,"w":"when"},{"t":126.54,"w":"it's"},{"t":126.72,"w":"here"},{"t":126.88,"w":"T"},{"t":127.16,"w":"-shirts,"},{"t":127.54,"w":"snacks,"},{"t":127.9,"w":"letters,"},{"t":128.2,"w":"little"},{"t":128.36,"w":"things"},{"t":128.64,"w":"you"},{"t":128.9,"w":"drew"},{"t":129.22,"w":"I"},{"t":129.52,"w":"keep"},{"t":129.76,"w":"them"},{"t":129.92,"w":"like"},{"t":130.08,"w":"treasure"},{"t":130.42,"w":"cause"},{"t":130.62,"w":"they"},{"t":130.78,"w":"came"},{"t":131.02,"w":"from"},{"t":131.3,"w":"you"},{"t":131.6,"w":"Language"},{"t":131.96,"w":"barrier,"},{"t":132.28,"w":"we"},{"t":132.54,"w":"turn"},{"t":132.74,"w":"it"},{"t":132.9,"w":"into"},{"t":133.1,"w":"jokes"},{"t":133.4,"w":"I"},{"t":133.58,"w":"say"},{"t":133.72,"w":"one"},{"t":133.92,"w":"wrong"},{"t":134.24,"w":"word"},{"t":134.58,"w":"and"},{"t":134.78,"w":"the"},{"t":134.88,"w":"whole"},{"t":135.12,"w":"call"},{"t":135.34,"w":"explodes"},{"t":135.68,"w":"Different"},{"t":136.02,"w":"food,"},{"t":136.38,"w":"different"},{"t":136.62,"w":"rules,"},{"t":137.02,"w":"different"},{"t":137.18,"w":"ways"},{"t":137.42,"w":"to"},{"t":137.56,"w":"show"},{"t":137.7,"w":"we"},{"t":137.84,"w":"care"},{"t":138.06,"w":"But"},{"t":138.34,"w":"your"},{"t":138.44,"w":"culture"},{"t":138.7,"w":"feels"},{"t":138.88,"w":"like"},{"t":139.06,"w":"music"},{"t":139.28,"w":"when"},{"t":139.5,"w":"you"},{"t":139.6,"w":"let"},{"t":139.74,"w":"me"},{"t":139.9,"w":"meet"},{"t":140.08,"w":"you"},{"t":140.22,"w":"there"},{"t":140.4,"w":"But"},{"t":141,"w":"your"},{"t":141.14,"w":"culture"},{"t":141.14,"w":"feels"},{"t":141.14,"w":"like"},{"t":141.14,"w":"music"},{"t":141.14,"w":"when"},{"t":141.14,"w":"you"},{"t":141.14,"w":"let"},{"t":141.14,"w":"me"},{"t":141.14,"w":"meet"},{"t":141.14,"w":"you"},{"t":141.14,"w":"there"},{"t":141.14,"w":"Tired"},{"t":141.44,"w":"thumbs"},{"t":141.62,"w":"from"},{"t":141.84,"w":"typing"},{"t":142.22,"w":"all"},{"t":142.48,"w":"night"},{"t":142.76,"w":"Tired"},{"t":143.1,"w":"voice"},{"t":143.36,"w":"from"},{"t":143.64,"w":"one"},{"t":143.9,"w":"more"},{"t":144.02,"w":"call"},{"t":144.26,"w":"to"},{"t":144.6,"w":"daylight"},{"t":144.92,"w":"Missed"},{"t":145.46,"w":"calls,"},{"t":145.8,"w":"small"},{"t":145.92,"w":"fights"},{"t":146.4,"w":"Pride"},{"t":146.78,"w":"in"},{"t":147.14,"w":"the"},{"t":147.22,"w":"way,"},{"t":147.6,"w":"don't"},{"t":147.94,"w":"worry"},{"t":148,"w":"about"},{"t":148,"w":"it"},{"t":148.02,"w":"One"},{"t":148.1,"w":"heart"},{"t":148.3,"w":"emoji"},{"t":148.72,"w":"saves"},{"t":149.08,"w":"the"},{"t":149.34,"w":"whole"},{"t":149.54,"w":"day"},{"t":149.99,"w":"You"},{"t":150.74,"w":"screenshot"},{"t":151.12,"w":"me"},{"t":151.34,"w":"sleeping,"},{"t":151.7,"w":"I"},{"t":151.86,"w":"screenshot"},{"t":152.26,"w":"you"},{"t":152.56,"w":"now"},{"t":152.76,"w":"We"},{"t":153.04,"w":"got"},{"t":153.18,"w":"duplicated"},{"t":153.56,"w":"pictures"},{"t":153.96,"w":"of"},{"t":154.18,"w":"the"},{"t":154.3,"w":"best"},{"t":154.56,"w":"days"},{"t":154.78,"w":"we"},{"t":154.96,"w":"had"},{"t":155.22,"w":"Back"},{"t":155.76,"w":"up"},{"t":155.94,"w":"the"},{"t":156.1,"w":"memories"},{"t":156.4,"w":"New"},{"t":156.8,"w":"phone,"},{"t":157.24,"w":"same"},{"t":157.44,"w":"us"},{"t":157.8,"w":"Too"},{"t":158.08,"w":"many"},{"t":158.32,"w":"photos"},{"t":158.82,"w":"My"},{"t":159.24,"w":"soul"},{"t":160.32,"w":"lives"},{"t":160.92,"w":"in"},{"t":161.32,"w":"Seoul"},{"t":161.58,"w":"But"},{"t":162.06,"w":"my"},{"t":162.36,"w":"love"},{"t":162.78,"w":"goes"},{"t":163.12,"w":"worldwide"},{"t":163.78,"w":"From"},{"t":164.4,"w":"your"},{"t":164.62,"w":"good"},{"t":164.82,"w":"morning"},{"t":165.78,"w":"To"},{"t":166.08,"w":"my"},{"t":167.04,"w":"good"},{"t":167.14,"w":"night"},{"t":167.84,"w":"We"},{"t":168.84,"w":"fight,"},{"t":169.34,"w":"we"},{"t":169.44,"w":"make"},{"t":169.84,"w":"out"},{"t":170.42,"w":"Then"},{"t":170.53,"w":"we"},{"t":170.66,"w":"laugh"},{"t":171.02,"w":"on"},{"t":171.24,"w":"the"},{"t":171.34,"w":"phone"},{"t":171.71,"w":"No"},{"t":171.97,"w":"matter"},{"t":172.22,"w":"where"},{"t":172.4,"w":"you"},{"t":172.56,"w":"are,"},{"t":172.78,"w":"you"},{"t":172.82,"w":"never"},{"t":173.02,"w":"feel"},{"t":173.38,"w":"alone"},{"t":173.89,"w":"My"},{"t":174.28,"w":"soul"},{"t":174.56,"w":"lives"},{"t":174.9,"w":"in"},{"t":175,"w":"Seoul"},{"t":175.78,"w":"My"},{"t":176.44,"w":"soul"},{"t":176.96,"w":"lives"},{"t":177.26,"w":"in"},{"t":177.32,"w":"Seoul"},{"t":178.72,"w":"But"},{"t":178.82,"w":"it"},{"t":179.02,"w":"finds"},{"t":179.4,"w":"you"},{"t":179.68,"w":"wherever"},{"t":180.7,"w":"you"},{"t":181.22,"w":"go"},{"t":182.94,"w":"I"},{"t":183.12,"w":"miss"},{"t":183.12,"w":"you"},{"t":183.39,"w":"my"},{"t":183.54,"w":"baby"},{"t":184.47,"w":"I"},{"t":185.28,"w":"miss"},{"t":185.44,"w":"you"},{"t":185.46,"w":"my"},{"t":185.94,"w":"baby"},{"t":186.64,"w":"My"},{"t":187.1,"w":"soul"},{"t":187.52,"w":"lives"},{"t":188,"w":"in"},{"t":188.26,"w":"Seoul"},{"t":188.26,"w":"My"},{"t":188.7,"w":"socks"},{"t":189.02,"w":"are"},{"t":189.3,"w":"only"},{"t":189.44,"w":"one"},{"t":189.46,"w":"time"},{"t":190.18,"w":"on"},{"t":190.64,"w":"the"},{"t":190.64,"w":"floor"},{"t":190.64,"w":"My"},{"t":190.98,"w":"socks"},{"t":191.42,"w":"are"},{"t":191.64,"w":"only"},{"t":191.82,"w":"one"},{"t":191.82,"w":"time"},{"t":192.46,"w":"on"},{"t":192.74,"w":"the"},{"t":192.74,"w":"floor"},{"t":192.74,"w":"Your"},{"t":193.14,"w":"hair"},{"t":193.3,"w":"is"},{"t":193.46,"w":"everywhere"},{"t":193.7,"w":"girl"},{"t":194.16,"w":"It's"},{"t":194.46,"w":"not"},{"t":194.58,"w":"a"},{"t":194.62,"w":"joke,"},{"t":194.94,"w":"it's"},{"t":195.9,"w":"not"},{"t":196.36,"w":"a"},{"t":196.7,"w":"joke"},{"t":196.7,"w":"It's"},{"t":196.7,"w":"not"},{"t":196.7,"w":"a"},{"t":196.74,"w":"joke"},{"t":197.64,"w":"The"},{"t":197.86,"w":"dishes"},{"t":198.08,"w":"are"},{"t":198.4,"w":"piled"},{"t":198.74,"w":"up"},{"t":198.76,"w":"like"},{"t":199.62,"w":"mountains"},{"t":199.62,"w":"The"},{"t":200.04,"w":"dishes"},{"t":200.44,"w":"are"},{"t":200.74,"w":"piled"},{"t":201.1,"w":"up"},{"t":201.1,"w":"like"},{"t":201.92,"w":"mountains"},{"t":201.92,"w":"You"},{"t":202.38,"w":"say"},{"t":202.62,"w":"up"},{"t":203.04,"w":"a"},{"t":203.1,"w":"little,"},{"t":203.44,"w":"then"},{"t":203.58,"w":"you"},{"t":203.72,"w":"buy"},{"t":203.92,"w":"one"},{"t":204.34,"w":"more"},{"t":204.78,"w":"thing"},{"t":205.98,"w":"You"},{"t":206.66,"w":"say"},{"t":207.34,"w":"up"},{"t":207.44,"w":"a"},{"t":207.44,"w":"little,"},{"t":207.48,"w":"then"},{"t":207.88,"w":"you"},{"t":207.88,"w":"buy"},{"t":207.88,"w":"one"},{"t":207.88,"w":"more"},{"t":207.88,"w":"thing"},{"t":208.14,"w":"You"},{"t":208.24,"w":"say"},{"t":208.24,"w":"up"},{"t":208.38,"w":"a"},{"t":208.48,"w":"little,"},{"t":209.18,"w":"then"},{"t":209.18,"w":"you"},{"t":209.18,"w":"buy"},{"t":209.22,"w":"one"},{"t":209.28,"w":"more"},{"t":209.28,"w":"thing"},{"t":209.28,"w":"You"},{"t":209.44,"w":"have"},{"t":209.78,"w":"no"},{"t":209.92,"w":"money,"},{"t":210.49,"w":"then"},{"t":210.64,"w":"you"},{"t":210.64,"w":"say"},{"t":210.64,"w":"I'll"},{"t":210.78,"w":"order"},{"t":210.84,"w":"fried"},{"t":210.84,"w":"chicken"},{"t":211.1,"w":"Pay"},{"t":212.2,"w":"for"},{"t":212.24,"w":"the"},{"t":212.24,"w":"game"},{"t":212.32,"w":"and"},{"t":212.88,"w":"reverse"},{"t":213.36,"w":"my"},{"t":214.1,"w":"words"},{"t":214.1,"w":"Pay"},{"t":214.42,"w":"for"},{"t":214.6,"w":"the"},{"t":214.6,"w":"game"},{"t":214.68,"w":"and"},{"t":215.2,"w":"reverse"},{"t":215.52,"w":"my"},{"t":215.58,"w":"words"},{"t":216,"w":"My"},{"t":216.6,"w":"hair"},{"t":216.94,"w":"is"},{"t":217.3,"w":"fine"},{"t":217.54,"w":"where"},{"t":217.58,"w":"my"},{"t":217.58,"w":"love"},{"t":217.62,"w":"is"},{"t":217.9,"w":"Playing"},{"t":218.8,"w":"with"},{"t":221.32,"w":"your"},{"t":221.38,"w":"socks"},{"t":221.6,"w":"is"},{"t":222.1,"w":"the"},{"t":222.46,"w":"myth"},{"t":222.83,"w":"Okay,"},{"t":224.26,"w":"okay"},{"t":224.68,"w":"maybe"},{"t":225.2,"w":"I'm"},{"t":225.56,"w":"messy"},{"t":225.8,"w":"No"},{"t":226.12,"w":"stress"},{"t":228.52,"w":"You"},{"t":229.22,"w":"blame"},{"t":229.44,"w":"me"},{"t":229.74,"w":"for"},{"t":230,"w":"the"},{"t":230.18,"w":"belly"},{"t":230.46,"w":"You"},{"t":230.7,"w":"made"},{"t":231,"w":"me"},{"t":231.24,"w":"love"},{"t":231.58,"w":"your"},{"t":231.82,"w":"food"},{"t":232.18,"w":"already"},{"t":233.78,"w":"Oh,"},{"t":234.28,"w":"we"},{"t":234.76,"w":"both"},{"t":235.02,"w":"got"},{"t":235.2,"w":"hurt"},{"t":235.72,"w":"Ha"},{"t":236.14,"w":"ha,"},{"t":236.52,"w":"it's"},{"t":236.74,"w":"okay"},{"t":237.04,"w":"We"},{"t":237.36,"w":"both"},{"t":237.62,"w":"got"},{"t":237.86,"w":"hurt"},{"t":238.34,"w":"Ha"},{"t":238.56,"w":"ha,"},{"t":238.84,"w":"it's"},{"t":239.12,"w":"okay"},{"t":239.46,"w":"Your"},{"t":239.78,"w":"country,"},{"t":240.22,"w":"my"},{"t":240.32,"w":"country"},{"t":240.66,"w":"It's"},{"t":240.92,"w":"delicious"},{"t":241.24,"w":"Your"},{"t":242,"w":"country,"},{"t":242.56,"w":"my"},{"t":242.64,"w":"country"},{"t":243.02,"w":"It's"},{"t":243.26,"w":"delicious"},{"t":243.81,"w":"Even"},{"t":244.36,"w":"if"},{"t":244.36,"w":"we"},{"t":244.38,"w":"fight,"},{"t":244.72,"w":"we"},{"t":244.94,"w":"laugh"},{"t":245.26,"w":"One"},{"t":245.58,"w":"more"},{"t":245.9,"w":"time"},{"t":246.36,"w":"Even"},{"t":246.62,"w":"if"},{"t":246.72,"w":"we"},{"t":246.72,"w":"fight,"},{"t":247.06,"w":"we"},{"t":247.28,"w":"laugh"},{"t":247.64,"w":"One"},{"t":247.94,"w":"more"},{"t":248.2,"w":"time"},{"t":248.74,"w":"Even"},{"t":249.04,"w":"if"},{"t":249.04,"w":"we"},{"t":249.08,"w":"call"},{"t":249.34,"w":"out"},{"t":250.38,"w":"love,"},{"t":250.44,"w":"it"},{"t":250.84,"w":"keeps"},{"t":251.16,"w":"going"},{"t":252.96,"w":"Para"},{"t":253.54,"w":"para"},{"t":253.86,"w":"mi"},{"t":254.06,"w":"amor,"},{"t":254.54,"w":"que"},{"t":254.8,"w":"lejos"},{"t":255.16,"w":"estamos"},{"t":255.6,"w":"El"},{"t":256.04,"w":"cuelo"},{"t":256.28,"w":"cuesta"},{"t":256.54,"w":"caro,"},{"t":256.94,"w":"pero"},{"t":257.1,"w":"igual"},{"t":257.36,"w":"lo"},{"t":257.64,"w":"soñamos"},{"t":258.16,"w":"Se"},{"t":258.34,"w":"cae"},{"t":258.64,"w":"la"},{"t":258.8,"w":"señal,"},{"t":259.3,"w":"pero"},{"t":259.48,"w":"sube"},{"t":259.78,"w":"el"},{"t":259.92,"w":"corazón"},{"t":260.22,"w":"Tu"},{"t":260.66,"w":"voz"},{"t":260.9,"w":"en"},{"t":261.06,"w":"mi"},{"t":261.16,"w":"teléfono"},{"t":261.66,"w":"me"},{"t":261.88,"w":"cambia"},{"t":262.22,"w":"la"},{"t":262.3,"w":"canción"},{"t":262.62,"w":"Cambio"},{"t":263.4,"w":"de"},{"t":263.48,"w":"moneda,"},{"t":264.08,"w":"papeles"},{"t":264.52,"w":"en"},{"t":264.72,"w":"la"},{"t":264.8,"w":"mesa"},{"t":265.22,"w":"Visa,"},{"t":265.86,"w":"entrevista,"},{"t":266.46,"w":"paciencia"},{"t":266.98,"w":"y"},{"t":267.08,"w":"promesa"},{"t":267.54,"w":"Tu"},{"t":267.74,"w":"pa'"},{"t":268.02,"w":"mi"},{"t":268.1,"w":"me"},{"t":268.22,"w":"preguntas,"},{"t":268.84,"w":"mis"},{"t":268.96,"w":"panas"},{"t":269.3,"w":"también"},{"t":269.54,"w":"Pero"},{"t":270.04,"w":"nadie"},{"t":270.36,"w":"entiende"},{"t":270.7,"w":"lo"},{"t":270.86,"w":"que"},{"t":271,"w":"tú"},{"t":271.18,"w":"y"},{"t":271.3,"w":"yo"},{"t":271.52,"w":"tenemos,"},{"t":272.38,"w":"ven"},{"t":272.74,"w":"Baila"},{"t":273.54,"w":"conmigo"},{"t":273.9,"w":"por"},{"t":274.1,"w":"la"},{"t":274.38,"w":"pantalla"},{"t":275.02,"w":"Aunque"},{"t":275.78,"w":"la"},{"t":275.98,"w":"cámara"},{"t":276.28,"w":"nunca"},{"t":276.62,"w":"se"},{"t":277.04,"w":"halla"},{"t":277.78,"w":"Batería"},{"t":278.4,"w":"baja,"},{"t":278.94,"w":"cargador"},{"t":280,"w":"perdido"},{"t":281.22,"w":"Pero"},{"t":281.7,"w":"ese"},{"t":281.88,"w":"amor"},{"t":282.1,"w":"sigue"},{"t":282.42,"w":"encendido"},{"t":283.52,"w":"Dale"},{"t":283.92,"w":"suave,"},{"t":284.26,"w":"dale"},{"t":284.42,"w":"lento"},{"t":284.92,"w":"Dale"},{"t":285.1,"w":"suave,"},{"t":285.1,"w":"dale"},{"t":285.1,"w":"lento"},{"t":286.08,"w":"Love"},{"t":286.18,"w":"across"},{"t":286.38,"w":"every"},{"t":286.82,"w":"continent"},{"t":288.1,"w":"Talen"},{"t":288.7,"w":"fuerte,"},{"t":288.92,"w":"dale"},{"t":289.14,"w":"tro"},{"t":289.38,"w":"Every"},{"t":289.68,"w":"rhythm"},{"t":290.38,"w":"brings"},{"t":290.78,"w":"me"},{"t":291.08,"w":"back"},{"t":291.5,"w":"to"},{"t":291.74,"w":"you"}]}$j$::jsonb WHERE id = 'my-soul-lives-in-seoul' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:01.18] Yeah, my soul lives in soul
+[00:03.00] But my heart lays wherever you call me from
+[00:08.84] I know that's hard, can you hear me now?
+[00:11.82] Signal's weak but I feel you somehow
+[00:13.30] Time zones touch screen
+[00:14.52] Different skies, same dreams
+[Verse 1]
+[00:16.37] 1, 2, 3, go!
+[00:18.68] I wake up, grab my phone before I even breathe
+[00:20.78] 37 messages waiting there for me
+[00:23.02] Your morning is my midnight,
+[00:24.06] my sunrise is your sleep
+[00:25.54] But your face on my screen makes the distance feel sweet
+[00:27.00] Wi-Fi, acting crazy, signal dropping low
+[00:30.38] Can you hear me, baby, then the camera froze
+[00:32.78] Front cam, back cam, why am I showing the floor?
+[00:35.36] You're laughing so hard
+[00:36.30] Now I love you even more
+[00:37.52] Battery on red, charger disappear
+[00:39.38] Wrong cable in my bag, same problem all year
+[00:42.18] Storage full again from the photos that you send
+[00:44.50] But I still save every selfie like I'll never see you again
+[Pre-Chorus]
+[00:47.16] Shipping takes forever, plane tickets are high
+[00:49.30] Currency conversion got me asking why
+[00:51.73] Forms on the table, stamps in the line
+[00:53.94] But I cross every border just to call you mine
+[00:56.32] K-1, K-2, 3, go!
+[00:57.00] K-1, 2, paperwork dancing like it's God moves
+[01:01.04] Lost in translation but I still choose you
+[Chorus]
+[01:03.38] Every little problem turns into something true
+[01:05.68] My soul lives in soul
+[01:07.46] But my love goes worldwide
+[01:09.66] From your good morning
+[01:11.34] To my good night
+[01:14.62] We fight, we make up
+[01:16.28] Then we laugh on the phone
+[01:17.46] No matter where you are, you never feel alone
+[01:19.98] My soul lives in Seoul
+[01:21.66] My soul lives in Seoul
+[01:24.68] But it finds you wherever
+[01:27.04] you go
+[01:28.36] I miss you, baby
+[01:29.64] I miss you, baby
+[01:32.86] My soul lives in Seoul
+[01:34.68] My soul lives in Seoul
+[01:35.70] Soul to your heart
+[01:37.90] Minds apart
+[01:39.70] Still we glow
+[01:40.94] My soul lives in Seoul
+[01:44.10] My soul lives in Seoul
+[01:44.94] Call me again
+[01:46.98] Don't let it end
+[01:49.07] You already know
+[01:50.40] My soul
+[01:52.33] lives in Seoul
+[01:52.98] Family asking questions, friends all in the chat
+[01:55.14] Is the foreigner rich, baby?
+[01:56.72] What is that?
+[01:57.00] Everybody thinks love comes with a golden crown
+[01:59.82] But we're just counting coins till the next slide down
+[02:02.18] You send me a box, it arrives next year
+[02:04.88] Customs got me crying,
+[02:05.80] but I smile when it's here
+[02:06.86] T-shirts,
+[02:07.52] snacks,
+[02:07.88] letters,
+[02:08.18] little things you drew
+[02:09.20] I keep them like treasure cause they came from you
+[Post-Chorus]
+[02:11.58] Language barrier, we turn it into jokes
+[02:13.38] I say one wrong word and the whole call explodes
+[02:15.66] Different food,
+[02:16.36] different rules,
+[02:16.00] different ways to show we care
+[02:18.04] But your culture feels like music when you let me meet you there
+[02:20.38] But your culture feels like music when you let me meet you there
+[02:21.12] Tired thumbs from typing all night
+[02:22.74] Tired voice from one more call to daylight
+[02:24.90] Missed calls, small fights
+[02:26.38] Pride in the way, don't worry about it
+[02:27.00] One heart emoji saves the whole day
+[02:29.97] You screenshot me sleeping, I screenshot you now
+[02:32.74] We got duplicated pictures of the best days we had
+[Verse 2]
+[02:35.20] Back up the memories
+[02:36.38] New phone, same us
+[02:37.78] Too many photos
+[02:38.80] My soul lives in Seoul
+[02:41.56] But my love goes worldwide
+[02:43.76] From your good morning
+[02:45.76] To my good night
+[02:47.82] We fight, we make out
+[02:50.40] Then we laugh on the phone
+[02:51.69] No matter where you are, you never feel alone
+[02:53.87] My soul lives in Seoul
+[02:55.76] My soul lives in Seoul
+[02:58.70] But it finds you wherever you go
+[03:02.92] I miss you my baby
+[03:04.45] I miss you my baby
+[03:06.62] My soul lives in Seoul
+[03:08.24] My socks are only one time on the floor
+[03:10.62] My socks are only one time on the floor
+[03:12.72] Your hair is everywhere girl
+[03:14.14] It's not a joke, it's not a joke
+[03:16.68] It's not a joke
+[03:17.62] The dishes are piled up like mountains
+[03:19.60] The dishes are piled up like mountains
+[03:21.90] You say up a little, then you buy one more thing
+[03:25.96] You say up a little, then you buy one more thing
+[03:28.12] You say up a little, then you buy one more thing
+[03:29.26] You have no money,
+[03:30.47] then you say I'll order fried chicken
+[03:31.08] Pay for the game and reverse my words
+[03:34.08] Pay for the game and reverse my words
+[03:35.98] My hair is fine where my love is
+[03:37.88] Playing with your socks is the myth
+[03:42.81] Okay, okay maybe I'm messy
+[03:45.78] No stress
+[03:48.50] You blame me for the belly
+[03:50.44] You made me love your food already
+[03:53.76] Oh, we both got hurt
+[03:55.70] Ha ha, it's okay
+[03:57.02] We both got hurt
+[03:58.32] Ha ha, it's okay
+[Chorus]
+[03:59.44] Your country, my country
+[04:00.64] It's delicious
+[04:01.22] Your country, my country
+[04:02.00] It's delicious
+[04:03.79] Even if we fight, we laugh
+[04:05.24] One more time
+[04:06.34] Even if we fight, we laugh
+[04:07.62] One more time
+[04:08.72] Even if we call out love, it keeps going
+[04:12.94] Para para mi amor, que lejos estamos
+[04:15.58] El cuelo cuesta caro, pero igual lo soñamos
+[04:18.14] Se cae la señal, pero sube el corazón
+[04:20.20] Tu voz en mi teléfono me cambia la canción
+[04:22.60] Cambio de moneda, papeles en la mesa
+[04:25.20] Visa, entrevista, paciencia y promesa
+[04:27.52] Tu pa' mi me preguntas, mis panas también
+[04:29.52] Pero nadie entiende lo que tú y yo tenemos, ven
+[Bridge]
+[04:32.72] Baila conmigo por la pantalla
+[04:34.00] Aunque la cámara nunca se halla
+[04:37.76] Batería baja, cargador perdido
+[04:41.20] Pero ese amor sigue encendido
+[04:43.50] Dale suave, dale lento
+[04:44.90] Dale suave, dale lento
+[04:46.06] Love across every continent
+[04:48.08] Talen fuerte, dale tro
+[04:49.36] Every rhythm brings me back to you
+$j$ WHERE id = 'my-soul-lives-in-seoul' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This playful yet heartfelt K-Pop anthem chronicles a long-distance relationship navigating time zones, cultural barriers, and logistical hurdles like customs and currency. It blends multilingual vocals from Korean to Spanish and Japanese rap battles into a global love story where digital connection bridges physical distance.","overallMood":"Upbeat romantic resilience","themes":["Long-distance relationship dynamics","Cultural exchange and fusion","Digital communication struggles","Financial reality of modern dating","Multilingual expression of love"],"palette":["#FF6B9D","#4A5F73","#E8D20A","#1C3A4D"],"sections":[{"name":"Intro","emotion":"Melancholic connection","intensity":0.59,"colorHint":"#4a5f73","start":1.18},{"name":"Verse 1","emotion":"Anxious playfulness","intensity":0.8,"colorHint":"#e8d20a","start":16.37},{"name":"Pre-Chorus","emotion":"Bureaucratic determination","intensity":0.85,"colorHint":"#1c3a4d","start":47.16},{"name":"Chorus","emotion":"Triumphant global love","intensity":0.98,"colorHint":"#ff6b9d","start":63.38},{"name":"Post-Chorus","emotion":"Tired but loving intimacy","intensity":0.76,"colorHint":"#e8d20a","start":131.58},{"name":"Verse 2","emotion":"Messy domestic humor","intensity":0.3,"colorHint":"#4a5f73","start":155.2},{"name":"Bridge","emotion":"Passionate rhythmic unity","intensity":0.3,"colorHint":"#ff6b9d","start":272.72}],"keywords":[{"word":"seoul","emotion":"Nostalgic anchor point","imageryPrompt":"A glowing neon sign in deep blue night sky with soft pink cherry blossom petals floating around a smartphone screen displaying a map pin."},{"word":"signal","emotion":"Tense longing","imageryPrompt":"Faint green bars wavering on a cracked phone screen against a backdrop of stormy grey clouds and distant city lights fading into darkness."},{"word":"border","emotion":"Determined crossing","imageryPrompt":"A passport stamp glowing gold under a spotlight, with paper documents flying like confetti in the air above a chaotic but joyful airport terminal floor."},{"word":"chaos","emotion":"Playful overwhelm","imageryPrompt":"Piles of laundry and takeout boxes forming colorful mountains under warm kitchen lighting, with socks dancing mid-air in slow motion."},{"word":"customs","emotion":"Bittersweet delay","imageryPrompt":"A large cardboard box marked 'International' sitting on a dusty floor next to a crying but smiling face reflected in the polished metal of luggage scales."},{"word":"emoji","emotion":"Digital salvation","imageryPrompt":"A giant floating heart symbol made of soft pink light connecting two silhouettes across an ocean, replacing a broken fiber optic cable."}]}$j$::jsonb) WHERE id = 'my-soul-lives-in-seoul' AND planet->'analysis' IS NULL;
+
+-- one-more-breath-back-to-myself: 36 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":10.96,"w":"Thank"},{"t":12.83,"w":"you"},{"t":13.76,"w":"for"},{"t":18.46,"w":"watching!"},{"t":43.8,"w":"Thank"},{"t":45.2,"w":"you"},{"t":46.6,"w":"for"},{"t":47.42,"w":"watching!"},{"t":70.56,"w":"Thank"},{"t":71.96,"w":"you"},{"t":73.36,"w":"for"},{"t":84.04,"w":"watching!"},{"t":102.6,"w":"Thank"},{"t":104,"w":"you"},{"t":105.4,"w":"for"},{"t":111.7,"w":"watching!"},{"t":120,"w":"Thank"},{"t":120.42,"w":"you"},{"t":131.42,"w":"for"},{"t":149.78,"w":"watching!"},{"t":150,"w":"Thank"},{"t":150.76,"w":"you"},{"t":154.02,"w":"for"},{"t":175.2,"w":"watching!"},{"t":207.18,"w":"Thank"},{"t":208.58,"w":"you"},{"t":209.98,"w":"for"},{"t":209.98,"w":"watching!"},{"t":218.18,"w":"Thank"},{"t":219.58,"w":"you"},{"t":220.98,"w":"for"},{"t":233.36,"w":"watching!"},{"t":240,"w":"Thank"},{"t":241.08,"w":"you"},{"t":245.02,"w":"for"},{"t":252.46,"w":"watching!"}]}$j$::jsonb WHERE id = 'one-more-breath-back-to-myself' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:10.96] Thank you for watching!
+[Verse 1]
+[Chorus]
+[00:43.80] Thank you for watching!
+[01:10.56] Thank you for watching!
+[01:42.60] Thank you for watching!
+[02:00.00] Thank you for watching!
+[Bridge]
+[02:30.00] Thank you for watching!
+[Drop]
+[Outro]
+[03:27.18] Thank you for watching!
+[03:38.18] Thank you for watching!
+[04:00.00] Thank you for watching!
+$j$ WHERE id = 'one-more-breath-back-to-myself' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This track is a hypnotic exploration of late-night introspection and self-discovery, utilizing chopped vocals and slowed tempos to create a woozy atmosphere where the listener confronts their inner thoughts in isolation.","overallMood":"hypnotic","themes":["Introspection","Detachment","Nostalgia","Stagnation"],"palette":["#1A0B2E","#483D59","#6F4C74","#FFCCCB"],"sections":[{"name":"Intro","emotion":"welcoming yet distant","intensity":0.56,"colorHint":"#1a0b2e","start":10.96},{"name":"Verse 1","emotion":"melancholic reflection","intensity":0.85,"colorHint":"#483d59","start":43.8},{"name":"Chorus","emotion":"trance-like acceptance","intensity":0.7,"colorHint":"#6f4c74","start":43.8},{"name":"Bridge","emotion":"fragile hope","intensity":0.19,"colorHint":"#ffcccb","start":150},{"name":"Drop","emotion":"submerged bass weight","intensity":0.3,"colorHint":"#2e1a3f","start":207.18},{"name":"Outro","emotion":"fading realization","intensity":0.09,"colorHint":"#5c4b68","start":207.18}],"keywords":[{"word":"hypnotic","emotion":"mesmerized","imageryPrompt":"A swirling vortex of dim purple smoke and neon streetlights, blurring into a dreamlike state where time stands still."},{"word":"woozy","emotion":"dizzying","imageryPrompt":"Wobbly camera perspective inside a parked car at night, heat haze distorting the view of distant city lights and rain-slicked pavement."},{"word":"detuned","emotion":"dissonant nostalgia","imageryPrompt":"An old cassette tape unraveling in slow motion against a backdrop of grainy 90s suburban decay, colors slightly off and muted."},{"word":"chopped","emotion":"fragmented reality","imageryPrompt":"A collage of shattered glass reflections showing disjointed scenes of partying alone in a dark room, stitched together with rough edges."},{"word":"hazy","emotion":"obscured clarity","imageryPrompt":"Thick fog rolling over abandoned industrial warehouses, silhouettes barely visible through the murk of artificial yellow streetlamps."},{"word":"syrupy","emotion":"visceral slow motion","imageryPrompt":"Golden viscous liquid dripping slowly from a cracked faucet into a puddle, reflecting distorted images of the sky above."}]}$j$::jsonb) WHERE id = 'one-more-breath-back-to-myself' AND planet->'analysis' IS NULL;
+
+-- one-tap-away: 470 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":3.22,"w":"Yeah,"},{"t":3.82,"w":"one"},{"t":4.45,"w":"tap"},{"t":4.82,"w":"away"},{"t":7.48,"w":"But"},{"t":8.42,"w":"somehow"},{"t":8.68,"w":"everybody"},{"t":9.18,"w":"far"},{"t":9.66,"w":"now"},{"t":13.78,"w":"Check"},{"t":14.38,"w":"it"},{"t":14.98,"w":"Back,"},{"t":15.54,"w":"back"},{"t":15.74,"w":"when"},{"t":16.04,"w":"the"},{"t":16.18,"w":"screen"},{"t":16.44,"w":"made"},{"t":16.66,"w":"the"},{"t":16.84,"w":"room"},{"t":17.08,"w":"glow"},{"t":17.32,"w":"I"},{"t":17.86,"w":"thought"},{"t":18.26,"w":"the"},{"t":18.44,"w":"whole"},{"t":18.64,"w":"world"},{"t":19.1,"w":"would"},{"t":19.28,"w":"move"},{"t":19.54,"w":"close"},{"t":19.92,"w":"Old"},{"t":20.58,"w":"names"},{"t":20.84,"w":"poppin'"},{"t":21.38,"w":"up"},{"t":21.54,"w":"like"},{"t":21.84,"w":"water"},{"t":22.4,"w":"Middle"},{"t":23.3,"w":"school"},{"t":23.66,"w":"faces"},{"t":24.12,"w":"in"},{"t":24.36,"w":"the"},{"t":24.46,"w":"new"},{"t":24.68,"w":"post"},{"t":25.06,"w":"I"},{"t":25.28,"w":"thought"},{"t":25.5,"w":"we'd"},{"t":25.74,"w":"talk,"},{"t":26.06,"w":"talk,"},{"t":26.34,"w":"really"},{"t":26.58,"w":"get"},{"t":26.92,"w":"honest"},{"t":27.44,"w":"Drop"},{"t":28,"w":"the"},{"t":28.26,"w":"mask,"},{"t":28.66,"w":"no"},{"t":28.76,"w":"fake"},{"t":29.16,"w":"persona"},{"t":29.68,"w":"Find"},{"t":30.42,"w":"your"},{"t":30.68,"w":"tribe,"},{"t":31.26,"w":"find"},{"t":31.64,"w":"your"},{"t":31.96,"w":"people"},{"t":32.28,"w":"Make"},{"t":32.92,"w":"the"},{"t":33.08,"w":"whole"},{"t":33.32,"w":"cold"},{"t":33.62,"w":"world"},{"t":34.04,"w":"feel"},{"t":34.44,"w":"warmer"},{"t":35.08,"w":"Ads"},{"t":35.66,"w":"in"},{"t":35.8,"w":"the"},{"t":35.92,"w":"cracks,"},{"t":36.38,"w":"brands"},{"t":36.78,"w":"in"},{"t":37.08,"w":"the"},{"t":37.2,"w":"chat"},{"t":37.46,"w":"Everybody"},{"t":37.9,"w":"got"},{"t":38.38,"w":"stats,"},{"t":38.9,"w":"everybody"},{"t":39.14,"w":"wants"},{"t":39.68,"w":"claps"},{"t":39.98,"w":"Everybody"},{"t":40.38,"w":"got"},{"t":40.96,"w":"reach,"},{"t":41.4,"w":"but"},{"t":41.56,"w":"don't"},{"t":41.98,"w":"reach"},{"t":42.22,"w":"back"},{"t":42.52,"w":"How"},{"t":42.78,"w":"we"},{"t":42.98,"w":"got"},{"t":43.2,"w":"this"},{"t":43.5,"w":"close"},{"t":43.82,"w":"and"},{"t":44.08,"w":"lost"},{"t":44.32,"w":"contact"},{"t":44.96,"w":"You"},{"t":45.34,"w":"can"},{"t":45.48,"w":"see"},{"t":45.68,"w":"me"},{"t":45.86,"w":"in"},{"t":46.04,"w":"a"},{"t":46.12,"w":"second"},{"t":47.78,"w":"You"},{"t":47.88,"w":"can"},{"t":48.04,"w":"call"},{"t":48.3,"w":"me"},{"t":48.44,"w":"any"},{"t":48.74,"w":"day"},{"t":49.93,"w":"You"},{"t":50.48,"w":"can"},{"t":50.6,"w":"love"},{"t":50.82,"w":"me"},{"t":50.98,"w":"in"},{"t":51.2,"w":"private"},{"t":51.74,"w":"But"},{"t":52.36,"w":"scroll"},{"t":52.66,"w":"right"},{"t":53.08,"w":"past"},{"t":53.42,"w":"my"},{"t":53.72,"w":"name"},{"t":55.27,"w":"Funny"},{"t":55.72,"w":"how"},{"t":55.9,"w":"we"},{"t":56.06,"w":"got"},{"t":56.2,"w":"connected"},{"t":56.72,"w":"But"},{"t":57.42,"w":"I'm"},{"t":57.42,"w":"not"},{"t":57.42,"w":"the"},{"t":57.42,"w":"only"},{"t":57.42,"w":"one"},{"t":57.44,"w":"Then"},{"t":57.98,"w":"forgot"},{"t":58.38,"w":"how"},{"t":58.82,"w":"to"},{"t":59,"w":"stay"},{"t":60.01,"w":"You're"},{"t":60.56,"w":"right"},{"t":60.78,"w":"there"},{"t":61,"w":"in"},{"t":61.2,"w":"my"},{"t":61.38,"w":"pocket"},{"t":61.9,"w":"But"},{"t":62.32,"w":"you"},{"t":62.56,"w":"feel"},{"t":63.04,"w":"a"},{"t":63.2,"w":"world"},{"t":63.58,"w":"away"},{"t":65.18,"w":"One"},{"t":65.76,"w":"tap"},{"t":66.14,"w":"away"},{"t":66.56,"w":"One"},{"t":67.04,"w":"tap"},{"t":67.42,"w":"away"},{"t":68.21,"w":"From"},{"t":68.86,"w":"a"},{"t":69.12,"w":"real"},{"t":69.38,"w":"conversation,"},{"t":70.08,"w":"but"},{"t":70.24,"w":"we"},{"t":70.4,"w":"don't"},{"t":70.72,"w":"say"},{"t":70.88,"w":"a"},{"t":71,"w":"thing"},{"t":71.36,"w":"We're"},{"t":71.58,"w":"one"},{"t":71.84,"w":"tap"},{"t":72.54,"w":"away"},{"t":73.32,"w":"From"},{"t":73.92,"w":"I"},{"t":74.06,"w":"see"},{"t":74.3,"w":"you"},{"t":74.46,"w":"keep"},{"t":74.7,"w":"doing"},{"t":75,"w":"From"},{"t":75.18,"w":"I'm"},{"t":75.46,"w":"proud"},{"t":75.74,"w":"of"},{"t":76,"w":"your"},{"t":76.1,"w":"dreams"},{"t":76.42,"w":"Save"},{"t":76.66,"w":"your"},{"t":76.78,"w":"likes"},{"t":77.04,"w":"for"},{"t":77.22,"w":"the"},{"t":77.36,"w":"strangers"},{"t":78.34,"w":"Save"},{"t":79.04,"w":"your"},{"t":79.3,"w":"hearts"},{"t":79.58,"w":"for"},{"t":79.78,"w":"the"},{"t":79.94,"w":"stars"},{"t":81.12,"w":"But"},{"t":81.68,"w":"the"},{"t":81.82,"w":"ones"},{"t":82.1,"w":"who"},{"t":82.2,"w":"really"},{"t":82.42,"w":"know"},{"t":82.74,"w":"you"},{"t":83.02,"w":"act"},{"t":83.4,"w":"like"},{"t":83.9,"w":"Loving"},{"t":84.8,"w":"you"},{"t":85.04,"w":"is"},{"t":85.3,"w":"hard"},{"t":85.66,"w":"One"},{"t":86.2,"w":"tap"},{"t":86.54,"w":"away"},{"t":87.23,"w":"Then"},{"t":87.28,"w":"forgot"},{"t":87.3,"w":"how"},{"t":87.4,"w":"to"},{"t":87.4,"w":"stay"},{"t":87.42,"w":"One"},{"t":87.54,"w":"tap"},{"t":87.88,"w":"away"},{"t":88.26,"w":"So"},{"t":88.62,"w":"why"},{"t":88.8,"w":"do"},{"t":89.04,"w":"I"},{"t":89.28,"w":"feel"},{"t":89.68,"w":"alone"},{"t":90.26,"w":"In"},{"t":90.64,"w":"a"},{"t":90.76,"w":"room"},{"t":91.04,"w":"full"},{"t":91.28,"w":"of"},{"t":91.42,"w":"names"},{"t":91.66,"w":"Tap,"},{"t":92.06,"w":"tap,"},{"t":92.34,"w":"tap"},{"t":92.56,"w":"But"},{"t":93.04,"w":"you"},{"t":93.14,"w":"don't"},{"t":93.54,"w":"reach"},{"t":93.7,"w":"back"},{"t":93.98,"w":"Heart,"},{"t":94.58,"w":"heart"},{"t":94.78,"w":"But"},{"t":95.3,"w":"it"},{"t":95.56,"w":"don't"},{"t":95.9,"w":"feel"},{"t":96.1,"w":"like"},{"t":96.46,"w":"that"},{"t":96.74,"w":"Close,"},{"t":97.14,"w":"close,"},{"t":97.4,"w":"close"},{"t":97.58,"w":"But"},{"t":98.12,"w":"we"},{"t":98.26,"w":"don't"},{"t":98.6,"w":"connect"},{"t":98.9,"w":"One"},{"t":99.3,"w":"tap,"},{"t":99.56,"w":"one"},{"t":99.74,"w":"tap"},{"t":100.12,"w":"away"},{"t":100.46,"w":"And"},{"t":100.74,"w":"we"},{"t":100.86,"w":"still"},{"t":101.16,"w":"forget"},{"t":101.58,"w":"Click,"},{"t":102.14,"w":"click,"},{"t":102.46,"w":"click"},{"t":102.68,"w":"Everybody"},{"t":103.18,"w":"got"},{"t":103.64,"w":"the"},{"t":103.8,"w":"new"},{"t":104.04,"w":"rule"},{"t":104.4,"w":"Don't"},{"t":105,"w":"hide"},{"t":105.24,"w":"friends"},{"t":105.66,"w":"that"},{"t":105.86,"w":"ain't"},{"t":106.22,"w":"cool,"},{"t":106.58,"w":"cool"},{"t":107.05,"w":"Say"},{"t":107.7,"w":"that"},{"t":107.94,"w":"love"},{"t":108.2,"w":"for"},{"t":108.38,"w":"the"},{"t":108.48,"w":"big"},{"t":108.8,"w":"names"},{"t":109.2,"w":"Blue"},{"t":109.68,"w":"checks,"},{"t":110.1,"w":"big"},{"t":110.26,"w":"chains,"},{"t":111.04,"w":"big"},{"t":111.22,"w":"views"},{"t":111.62,"w":"That"},{"t":112.06,"w":"if"},{"t":112.22,"w":"a"},{"t":112.32,"w":"stranger"},{"t":112.6,"w":"blow"},{"t":112.8,"w":"up"},{"t":113.02,"w":"overnight"},{"t":114.79,"w":"Everybody's"},{"t":115.24,"w":"where"},{"t":115.32,"w":"they"},{"t":115.48,"w":"saw"},{"t":115.66,"w":"the"},{"t":115.8,"w":"light"},{"t":116.06,"w":"Same"},{"t":116.66,"w":"ones,"},{"t":117.02,"w":"quack,"},{"t":117.36,"w":"quack,"},{"t":117.4,"w":"quack"},{"t":117.4,"w":"When"},{"t":117.8,"w":"you"},{"t":118.02,"w":"need"},{"t":118.24,"w":"a"},{"t":118.34,"w":"fine"},{"t":118.68,"w":"Now"},{"t":119.12,"w":"they"},{"t":119.3,"w":"in"},{"t":119.48,"w":"the"},{"t":119.64,"w":"comments"},{"t":120.1,"w":"like"},{"t":120.4,"w":"That's"},{"t":120.8,"w":"my"},{"t":120.98,"w":"guy"},{"t":121.46,"w":"One"},{"t":121.96,"w":"tap"},{"t":122.44,"w":"away"},{"t":123.8,"w":"One"},{"t":125.5,"w":"tap"},{"t":125.6,"w":"away"},{"t":126.28,"w":"From"},{"t":126.88,"w":"a"},{"t":126.92,"w":"real"},{"t":127.42,"w":"conversation"},{"t":128.92,"w":"But"},{"t":129.8,"w":"we"},{"t":129.98,"w":"don't"},{"t":131.33,"w":"say"},{"t":131.52,"w":"a"},{"t":132.16,"w":"thing"},{"t":141.3,"w":"Save"},{"t":142.02,"w":"your"},{"t":142.24,"w":"likes"},{"t":142.52,"w":"for"},{"t":142.66,"w":"the"},{"t":142.86,"w":"strangers"},{"t":143.54,"w":"Save"},{"t":144.6,"w":"your"},{"t":144.78,"w":"hearts"},{"t":145.32,"w":"for"},{"t":145.84,"w":"the"},{"t":146.06,"w":"stars"},{"t":147.03,"w":"But"},{"t":147.68,"w":"the"},{"t":147.88,"w":"ones"},{"t":148.14,"w":"who"},{"t":148.26,"w":"really"},{"t":148.52,"w":"know"},{"t":148.86,"w":"you"},{"t":149.26,"w":"Act"},{"t":149.92,"w":"like"},{"t":150.3,"w":"loving"},{"t":150.7,"w":"you"},{"t":151.12,"w":"is"},{"t":151.38,"w":"hard"},{"t":152.42,"w":"Maybe"},{"t":152.62,"w":"I"},{"t":152.84,"w":"was"},{"t":153.06,"w":"young"},{"t":153.28,"w":"Thinking"},{"t":153.54,"w":"wires"},{"t":153.88,"w":"could"},{"t":154.12,"w":"heal"},{"t":154.42,"w":"us"},{"t":154.7,"w":"Thinking"},{"t":155.12,"w":"all"},{"t":155.4,"w":"this"},{"t":155.56,"w":"light"},{"t":155.84,"w":"Would"},{"t":156,"w":"finally"},{"t":156.36,"w":"reveal"},{"t":156.82,"w":"us"},{"t":157.24,"w":"I'm"},{"t":157.54,"w":"not"},{"t":157.62,"w":"hard"},{"t":157.94,"w":"to"},{"t":158.1,"w":"find"},{"t":158.4,"w":"I'm"},{"t":158.64,"w":"not"},{"t":158.88,"w":"far"},{"t":159.16,"w":"away"},{"t":159.48,"w":"I'm"},{"t":159.86,"w":"still"},{"t":160.16,"w":"right"},{"t":160.48,"w":"here"},{"t":161.02,"w":"One"},{"t":162.06,"w":"tap"},{"t":162.66,"w":"away"},{"t":163.3,"w":"One"},{"t":163.76,"w":"tap"},{"t":164.08,"w":"away"},{"t":166.78,"w":"We"},{"t":166.9,"w":"one"},{"t":167.26,"w":"tap"},{"t":167.88,"w":"away"},{"t":168.32,"w":"So"},{"t":168.7,"w":"why"},{"t":169.12,"w":"do"},{"t":169.22,"w":"I"},{"t":169.86,"w":"feel"},{"t":169.96,"w":"alone"},{"t":171.49,"w":"In"},{"t":171.94,"w":"a"},{"t":172.04,"w":"room"},{"t":172.36,"w":"full"},{"t":172.58,"w":"of"},{"t":172.68,"w":"names"},{"t":173.16,"w":"One"},{"t":173.88,"w":"tap"},{"t":174.22,"w":"away"},{"t":174.66,"w":"It's"},{"t":175.14,"w":"still"},{"t":175.24,"w":"so"},{"t":175.46,"w":"far"},{"t":175.88,"w":"Everybody"},{"t":176.52,"w":"knows"},{"t":176.7,"w":"Everybody"},{"t":176.98,"w":"online"},{"t":180.12,"w":"Nobody"},{"t":181.06,"w":"where"},{"t":181.24,"w":"you"},{"t":182.76,"w":"are"},{"t":184.3,"w":"Nobody"},{"t":184.86,"w":"where"},{"t":185.22,"w":"you"},{"t":185.88,"w":"are"},{"t":187.74,"w":"Nobody"},{"t":188.3,"w":"where"},{"t":188.86,"w":"you"},{"t":188.86,"w":"are"},{"t":188.86,"w":"Nobody"},{"t":188.86,"w":"where"},{"t":188.86,"w":"you"},{"t":189.32,"w":"are"},{"t":189.32,"w":"Nobody"},{"t":189.32,"w":"where"},{"t":189.42,"w":"you"},{"t":189.54,"w":"are"},{"t":189.54,"w":"Nobody"},{"t":189.54,"w":"where"},{"t":189.54,"w":"you"},{"t":193.36,"w":"are"},{"t":193.42,"w":"Nobody"},{"t":193.44,"w":"where"},{"t":193.72,"w":"you"},{"t":193.72,"w":"are"},{"t":193.9,"w":"Nobody"},{"t":193.9,"w":"where"},{"t":194.36,"w":"you"},{"t":194.36,"w":"are"},{"t":194.46,"w":"Nobody"},{"t":194.46,"w":"where"},{"t":194.5,"w":"you"},{"t":194.58,"w":"are"},{"t":194.64,"w":"Nobody"},{"t":194.64,"w":"where"},{"t":194.64,"w":"you"},{"t":194.64,"w":"are"},{"t":194.66,"w":"Nobody"},{"t":194.66,"w":"where"},{"t":194.66,"w":"you"},{"t":194.66,"w":"are"}]}$j$::jsonb WHERE id = 'one-tap-away' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:03.20] Yeah, one tap away
+[00:07.46] But somehow everybody far now
+[00:13.76] Check it
+[00:14.96] Back, back when the screen made the room glow
+[00:17.30] I thought the whole world would move close
+[00:19.90] Old names poppin' up like water
+[00:22.38] Middle school faces in the new post
+[00:25.04] I thought we'd talk, talk, really get honest
+[00:27.42] Drop the mask, no fake persona
+[00:29.66] Find your tribe, find your people
+[00:32.26] Make the whole cold world feel warmer
+[00:35.06] Ads in the cracks, brands in the chat
+[00:37.44] Everybody got stats, everybody wants claps
+[00:39.96] Everybody got reach, but don't reach back
+[00:42.50] How we got this close and lost contact
+[00:44.94] You can see me in a second
+[Chorus]
+[00:47.76] You can call me any day
+[00:49.91] You can love me in private
+[00:51.72] But scroll right past my name
+[00:55.25] Funny how we got connected
+[00:56.70] But I'm not the only one
+[00:57.42] Then forgot how to stay
+[00:59.99] You're right there in my pocket
+[01:01.88] But you feel a world away
+[01:05.16] One tap away
+[01:06.54] One tap away
+[01:08.19] From a real conversation,
+[01:10.06] but we don't say a thing
+[01:11.34] We're one tap away
+[01:13.30] From I see you keep doing
+[01:14.98] From I'm proud of your dreams
+[01:16.40] Save your likes for the strangers
+[01:18.32] Save your hearts for the stars
+[01:21.10] But the ones who really know you act like
+[01:23.88] Loving you is hard
+[01:25.64] One tap away
+[01:27.21] Then forgot how to stay
+[Bridge]
+[01:27.40] One tap away
+[01:28.24] So why do I feel alone
+[01:30.24] In a room full of names
+[Verse 2]
+[01:31.64] Tap, tap, tap
+[01:32.54] But you don't reach back
+[01:33.96] Heart, heart
+[01:34.76] But it don't feel like that
+[01:36.72] Close, close, close
+[01:37.56] But we don't connect
+[01:38.88] One tap, one tap away
+[01:40.44] And we still forget
+[01:41.56] Click, click, click
+[01:42.66] Everybody got the new rule
+[01:44.38] Don't hide friends that ain't cool, cool
+[01:47.03] Say that love for the big names
+[01:49.18] Blue checks, big chains, big views
+[01:51.60] That if a stranger blow up overnight
+[01:54.77] Everybody's where they saw the light
+[01:56.04] Same ones, quack, quack, quack
+[01:57.38] When you need a fine
+[01:58.66] Now they in the comments like
+[02:00.38] That's my guy
+[02:01.44] One tap away
+[Chorus]
+[02:03.78] One
+[02:05.48] tap away
+[02:06.26] From a real conversation
+[02:08.90] But we don't
+[02:11.31] say a thing
+[02:21.28] Save your likes for the strangers
+[02:23.52] Save your hearts for the stars
+[02:27.01] But the ones who really know you
+[02:29.24] Act like loving you is hard
+[02:32.39] Maybe I was young
+[02:33.26] Thinking wires could heal us
+[02:34.68] Thinking all this light
+[02:35.82] Would finally reveal us
+[02:37.22] I'm not hard to find
+[02:38.38] I'm not far away
+[02:39.46] I'm still right here
+[02:40.00] One tap away
+[02:43.28] One tap away
+[Outro]
+[02:46.76] We one tap away
+[02:48.30] So why do I feel alone
+[02:51.47] In a room full of names
+[02:53.14] One tap away
+[02:54.64] It's still so far
+[02:55.86] Everybody knows
+[02:56.68] Everybody online
+[03:00.10] Nobody where you are
+[03:04.28] Nobody where you are
+[03:07.72] Nobody where you are
+[03:08.84] Nobody where you are
+[03:09.30] Nobody where you are
+[03:09.52] Nobody where you are
+[03:13.40] Nobody where you are
+[03:13.88] Nobody where you are
+[03:14.44] Nobody where you are
+[03:14.62] Nobody where you are
+[03:14.64] Nobody where you are
+$j$ WHERE id = 'one-tap-away' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song critiques the paradoxical isolation inherent in digital connectivity, exploring how social media platforms create a physical proximity that feels like emotional distance.","overallMood":"melancholic and introspective","themes":["Digital Isolation","Superficial Connectivity","Loss of Authenticity","Social Comparison"],"palette":["#1A202C","#4A5568","#9F7AEA","#EAB308"],"sections":[{"name":"Intro","emotion":"Quiet anticipation and fading memory","intensity":0.7,"colorHint":"#1a202c","start":3.2},{"name":"Verse 1","emotion":"Nostalgic realization of digital decay","intensity":0.84,"colorHint":"#4a5568","start":3.2},{"name":"Chorus","emotion":"Deepening resignation and heartache","intensity":0.94,"colorHint":"#9f7aea","start":47.76},{"name":"Bridge","emotion":"Existential dread in a crowded space","intensity":0.64,"colorHint":"#eab308","start":87.4},{"name":"Verse 2","emotion":"Aggressive observation of performative love","intensity":0.29,"colorHint":"#4a5568","start":91.64},{"name":"Outro","emotion":"Echoing emptiness and final solitude","intensity":0.11,"colorHint":"#1a202c","start":166.76}],"keywords":[{"word":"alone","emotion":"Deep loneliness despite proximity","imageryPrompt":"a solitary figure standing in the center of a vast, dark server room filled with blinking red lights, feeling physically cold"},{"word":"tap","emotion":"Futile mechanical action","imageryPrompt":"a glowing smartphone screen reflecting a person's tired eyes as their thumb hovers over the send button without touching it"},{"word":"strangers","emotion":"Distant admiration","imageryPrompt":"silhouettes of people watching celebrities on large screens, giving thumbs up while ignoring each other in a dark room"},{"word":"fake","emotion":"Hollow deception","imageryPrompt":"a cracked mirror reflecting a distorted face behind an augmented reality filter that smooths out all imperfections instantly"},{"word":"reach","emotion":"Failed connection attempt","imageryPrompt":"two hands reaching towards each other across a chasm of static electricity and digital noise, unable to make contact"},{"word":"names","emotion":"Overwhelming identity clutter","imageryPrompt":"countless user profile names scrolling rapidly on an endless black screen like falling snow made of text that no one reads"}]}$j$::jsonb) WHERE id = 'one-tap-away' AND planet->'analysis' IS NULL;
+
+-- one-tap-away-riverboat-bad-boys-remix: 695 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Back,"},{"t":0.18,"w":"back,"},{"t":0.56,"w":"when"},{"t":0.66,"w":"the"},{"t":0.84,"w":"screen"},{"t":1.1,"w":"made"},{"t":1.32,"w":"the"},{"t":1.6,"w":"room"},{"t":1.7,"w":"blow"},{"t":2.14,"w":"I"},{"t":2.48,"w":"thought"},{"t":2.86,"w":"the"},{"t":3.07,"w":"whole"},{"t":3.28,"w":"world"},{"t":3.71,"w":"would"},{"t":3.9,"w":"move"},{"t":4.14,"w":"close"},{"t":4.62,"w":"Old"},{"t":5.38,"w":"names"},{"t":5.48,"w":"poppin'"},{"t":5.96,"w":"up"},{"t":6.3,"w":"like"},{"t":6.4,"w":"Wodo"},{"t":7.82,"w":"Middle"},{"t":7.92,"w":"school"},{"t":8.2,"w":"faces"},{"t":8.77,"w":"in"},{"t":8.92,"w":"the"},{"t":9.02,"w":"new"},{"t":9.24,"w":"post"},{"t":9.7,"w":"I"},{"t":9.86,"w":"thought"},{"t":9.94,"w":"we'd"},{"t":10.28,"w":"talk,"},{"t":10.58,"w":"talk,"},{"t":10.9,"w":"really"},{"t":11.16,"w":"get"},{"t":11.44,"w":"honest"},{"t":11.98,"w":"Drop"},{"t":12.72,"w":"the"},{"t":12.82,"w":"mask,"},{"t":13.2,"w":"no"},{"t":13.32,"w":"fake"},{"t":13.68,"w":"persona"},{"t":14.27,"w":"Find"},{"t":15,"w":"your"},{"t":15.18,"w":"tribe,"},{"t":15.8,"w":"find"},{"t":16.16,"w":"your"},{"t":16.46,"w":"people"},{"t":16.82,"w":"Make"},{"t":17.38,"w":"the"},{"t":17.56,"w":"whole"},{"t":17.78,"w":"cold"},{"t":18.1,"w":"world"},{"t":18.54,"w":"feel"},{"t":18.94,"w":"warm"},{"t":19.66,"w":"Had"},{"t":20.26,"w":"a"},{"t":20.4,"w":"page"},{"t":20.64,"w":"with"},{"t":20.88,"w":"a"},{"t":21.04,"w":"song"},{"t":21.34,"w":"and"},{"t":21.54,"w":"a"},{"t":21.66,"w":"mood"},{"t":21.92,"w":"on"},{"t":22.18,"w":"it"},{"t":22.36,"w":"Top"},{"t":22.82,"w":"friends"},{"t":23.18,"w":"like"},{"t":23.38,"w":"a"},{"t":23.54,"w":"room"},{"t":23.82,"w":"with"},{"t":24.02,"w":"your"},{"t":24.18,"w":"crew"},{"t":24.46,"w":"on"},{"t":24.72,"w":"it"},{"t":24.97,"w":"Comments"},{"t":25.72,"w":"felt"},{"t":25.96,"w":"live,"},{"t":26.36,"w":"had"},{"t":26.56,"w":"truth"},{"t":26.86,"w":"on"},{"t":27.22,"w":"it"},{"t":27.44,"w":"Now"},{"t":27.84,"w":"the"},{"t":27.94,"w":"whole"},{"t":28.24,"w":"feed"},{"t":28.6,"w":"got"},{"t":28.92,"w":"a"},{"t":29.14,"w":"suit"},{"t":29.48,"w":"on"},{"t":29.76,"w":"it"},{"t":29.88,"w":"Ads"},{"t":30.1,"w":"in"},{"t":30.34,"w":"the"},{"t":30.46,"w":"cracks,"},{"t":30.9,"w":"brands"},{"t":31.36,"w":"in"},{"t":31.6,"w":"the"},{"t":31.72,"w":"chat"},{"t":31.98,"w":"Everybody"},{"t":32.4,"w":"got"},{"t":32.88,"w":"stacks,"},{"t":33.44,"w":"everybody"},{"t":33.66,"w":"wants"},{"t":34.18,"w":"claps"},{"t":34.52,"w":"Everybody"},{"t":34.9,"w":"got"},{"t":35.42,"w":"reach,"},{"t":35.9,"w":"but"},{"t":36.04,"w":"don't"},{"t":36.48,"w":"reach"},{"t":36.72,"w":"back"},{"t":37,"w":"How"},{"t":37.28,"w":"we"},{"t":37.44,"w":"got"},{"t":37.64,"w":"this"},{"t":37.94,"w":"close"},{"t":38.3,"w":"and"},{"t":38.56,"w":"lost"},{"t":38.84,"w":"contact"},{"t":39.38,"w":"You"},{"t":39.8,"w":"can"},{"t":39.94,"w":"see"},{"t":40.16,"w":"me"},{"t":40.3,"w":"in"},{"t":40.5,"w":"a"},{"t":40.58,"w":"second"},{"t":41.72,"w":"You"},{"t":42.3,"w":"can"},{"t":42.46,"w":"call"},{"t":42.72,"w":"me"},{"t":42.84,"w":"any"},{"t":43.06,"w":"day"},{"t":44.27,"w":"You"},{"t":44.82,"w":"can"},{"t":44.98,"w":"love"},{"t":45.18,"w":"me"},{"t":45.4,"w":"in"},{"t":45.52,"w":"private"},{"t":46.12,"w":"But"},{"t":46.72,"w":"scroll"},{"t":47.04,"w":"right"},{"t":47.44,"w":"past"},{"t":47.74,"w":"my"},{"t":48.06,"w":"name"},{"t":49.59,"w":"Funny"},{"t":50.04,"w":"how"},{"t":50.22,"w":"we"},{"t":50.4,"w":"got"},{"t":50.54,"w":"connected"},{"t":51.9,"w":"Then"},{"t":52.46,"w":"forgot"},{"t":52.7,"w":"how"},{"t":53,"w":"to"},{"t":53.18,"w":"stay"},{"t":54.56,"w":"You're"},{"t":54.86,"w":"right"},{"t":55.06,"w":"there"},{"t":55.34,"w":"in"},{"t":55.5,"w":"my"},{"t":55.68,"w":"pocket"},{"t":56.16,"w":"But"},{"t":56.52,"w":"you"},{"t":56.84,"w":"feel"},{"t":57.2,"w":"the"},{"t":57.48,"w":"world"},{"t":57.96,"w":"away"},{"t":59.3,"w":"Everybody"},{"t":59.88,"w":"One"},{"t":60.08,"w":"tap"},{"t":60.48,"w":"away"},{"t":62.2,"w":"From"},{"t":62.76,"w":"a"},{"t":63.32,"w":"real"},{"t":63.58,"w":"conversation,"},{"t":64.3,"w":"but"},{"t":64.48,"w":"we"},{"t":64.64,"w":"don't"},{"t":64.94,"w":"say"},{"t":65.06,"w":"a"},{"t":65.24,"w":"thing"},{"t":65.58,"w":"We"},{"t":65.76,"w":"one"},{"t":66.16,"w":"tap"},{"t":66.7,"w":"away"},{"t":67.45,"w":"From"},{"t":68.1,"w":"I"},{"t":68.24,"w":"see"},{"t":68.46,"w":"you"},{"t":68.62,"w":"keep"},{"t":68.88,"w":"going"},{"t":69.24,"w":"From"},{"t":69.54,"w":"I'm"},{"t":69.68,"w":"proud"},{"t":69.94,"w":"of"},{"t":70.16,"w":"your"},{"t":70.24,"w":"dreams"},{"t":70.58,"w":"Save"},{"t":70.78,"w":"your"},{"t":70.9,"w":"lights"},{"t":71.16,"w":"for"},{"t":71.36,"w":"the"},{"t":71.5,"w":"strangers"},{"t":72.41,"w":"Save"},{"t":73.16,"w":"your"},{"t":73.42,"w":"hearts"},{"t":73.72,"w":"for"},{"t":73.88,"w":"the"},{"t":74,"w":"stars"},{"t":75.2,"w":"But"},{"t":75.76,"w":"the"},{"t":75.9,"w":"ones"},{"t":76.16,"w":"who"},{"t":76.28,"w":"really"},{"t":76.5,"w":"know"},{"t":76.82,"w":"you"},{"t":77.16,"w":"act"},{"t":77.52,"w":"like"},{"t":78.01,"w":"Loving"},{"t":78.86,"w":"you"},{"t":79.16,"w":"is"},{"t":79.5,"w":"hard"},{"t":79.82,"w":"One"},{"t":80.2,"w":"tap"},{"t":80.62,"w":"away"},{"t":82,"w":"So"},{"t":82.59,"w":"why"},{"t":82.84,"w":"do"},{"t":83.06,"w":"I"},{"t":83.28,"w":"feel"},{"t":83.7,"w":"alone"},{"t":84.26,"w":"In"},{"t":84.66,"w":"a"},{"t":84.78,"w":"room"},{"t":85.08,"w":"full"},{"t":85.32,"w":"of"},{"t":85.36,"w":"names"},{"t":85.8,"w":"Tap,"},{"t":86.4,"w":"tap,"},{"t":86.68,"w":"but"},{"t":86.94,"w":"you"},{"t":87.2,"w":"don't"},{"t":87.58,"w":"reach"},{"t":87.74,"w":"back"},{"t":88.04,"w":"Heart,"},{"t":88.58,"w":"heart"},{"t":88.9,"w":"But"},{"t":89.42,"w":"it"},{"t":89.56,"w":"don't"},{"t":89.86,"w":"matter"},{"t":89.88,"w":"I"},{"t":89.88,"w":"don't"},{"t":89.88,"w":"feel"},{"t":90.02,"w":"like"},{"t":90.42,"w":"that"},{"t":90.74,"w":"Close,"},{"t":91.14,"w":"close,"},{"t":91.42,"w":"close"},{"t":91.58,"w":"But"},{"t":91.94,"w":"we"},{"t":92.24,"w":"don't"},{"t":92.6,"w":"connect"},{"t":92.92,"w":"One"},{"t":93.32,"w":"tap,"},{"t":93.54,"w":"one"},{"t":93.78,"w":"tap"},{"t":94.16,"w":"away"},{"t":94.44,"w":"And"},{"t":94.72,"w":"we"},{"t":94.86,"w":"still"},{"t":95.18,"w":"forget"},{"t":95.62,"w":"Click,"},{"t":96.12,"w":"click,"},{"t":96.48,"w":"click"},{"t":96.66,"w":"Everybody"},{"t":97.18,"w":"got"},{"t":97.62,"w":"a"},{"t":97.76,"w":"new"},{"t":97.98,"w":"rule"},{"t":98.28,"w":"Don't"},{"t":99,"w":"hide"},{"t":99.2,"w":"friends"},{"t":99.52,"w":"that"},{"t":99.82,"w":"ain't"},{"t":100.18,"w":"cool,"},{"t":100.58,"w":"cool"},{"t":100.99,"w":"Say"},{"t":101.64,"w":"that"},{"t":101.9,"w":"love"},{"t":102.16,"w":"for"},{"t":102.34,"w":"the"},{"t":102.46,"w":"big"},{"t":102.76,"w":"names"},{"t":103.16,"w":"Blue"},{"t":103.6,"w":"checks,"},{"t":104.06,"w":"big"},{"t":104.24,"w":"chains"},{"t":104.68,"w":"Big"},{"t":105.16,"w":"views"},{"t":105.62,"w":"The"},{"t":106,"w":"difference"},{"t":106.24,"w":"when"},{"t":106.48,"w":"you"},{"t":106.6,"w":"blow"},{"t":106.76,"w":"up"},{"t":106.98,"w":"overnight"},{"t":108.68,"w":"Everybody's"},{"t":109.18,"w":"where"},{"t":109.26,"w":"they"},{"t":109.46,"w":"saw"},{"t":109.6,"w":"the"},{"t":109.74,"w":"light"},{"t":110.78,"w":"Same"},{"t":110.88,"w":"ones"},{"t":111.24,"w":"quiet"},{"t":111.5,"w":"when"},{"t":111.82,"w":"you"},{"t":111.94,"w":"need"},{"t":112.16,"w":"to"},{"t":112.28,"w":"fight"},{"t":112.54,"w":"Now"},{"t":113.06,"w":"they"},{"t":113.2,"w":"in"},{"t":113.4,"w":"the"},{"t":113.58,"w":"comments"},{"t":114.04,"w":"like"},{"t":114.34,"w":"that's"},{"t":114.76,"w":"my"},{"t":114.88,"w":"guy"},{"t":115.38,"w":"Nah,"},{"t":116.04,"w":"that's"},{"t":116.34,"w":"wild,"},{"t":116.68,"w":"that's"},{"t":116.96,"w":"weird"},{"t":117.3,"w":"to"},{"t":117.48,"w":"me"},{"t":117.68,"w":"Friendship"},{"t":118.48,"w":"turned"},{"t":118.86,"w":"into"},{"t":119.24,"w":"courage"},{"t":119.88,"w":"We"},{"t":120.54,"w":"got"},{"t":120.94,"w":"phones"},{"t":121.4,"w":"with"},{"t":121.66,"w":"emergency"},{"t":122.06,"w":"speed"},{"t":122.9,"w":"But"},{"t":123.18,"w":"nobody"},{"t":123.6,"w":"checks"},{"t":124.14,"w":"on"},{"t":124.46,"w":"your"},{"t":124.68,"w":"emergency"},{"t":125.52,"w":"I"},{"t":126.32,"w":"don't"},{"t":126.68,"w":"need"},{"t":126.98,"w":"fame,"},{"t":127.44,"w":"don't"},{"t":127.74,"w":"need"},{"t":127.98,"w":"no"},{"t":128.22,"w":"crown"},{"t":128.62,"w":"The"},{"t":128.92,"w":"state"},{"t":129.22,"w":"keep"},{"t":129.54,"w":"going"},{"t":129.86,"w":"when"},{"t":130.16,"w":"I'm"},{"t":130.48,"w":"feeling"},{"t":130.68,"w":"down"},{"t":131.16,"w":"We"},{"t":131.5,"w":"built"},{"t":131.86,"w":"the"},{"t":132.02,"w":"whole"},{"t":132.26,"w":"world"},{"t":132.84,"w":"out"},{"t":133.08,"w":"of"},{"t":133.2,"w":"sound"},{"t":133.7,"w":"And"},{"t":133.98,"w":"you"},{"t":134.24,"w":"did"},{"t":134.4,"w":"the"},{"t":134.58,"w":"Pico,"},{"t":135.02,"w":"we"},{"t":135.2,"w":"care"},{"t":135.5,"w":"about"},{"t":135.72,"w":"now"},{"t":136.39,"w":"You"},{"t":137.02,"w":"can"},{"t":137.18,"w":"see"},{"t":137.4,"w":"me"},{"t":137.54,"w":"in"},{"t":137.76,"w":"a"},{"t":137.84,"w":"second"},{"t":138.14,"w":"You"},{"t":138.32,"w":"can"},{"t":138.48,"w":"call"},{"t":138.72,"w":"me"},{"t":138.84,"w":"any"},{"t":139.06,"w":"day"},{"t":139.36,"w":"You"},{"t":139.58,"w":"can"},{"t":139.76,"w":"call"},{"t":139.96,"w":"me"},{"t":140.1,"w":"any"},{"t":140.36,"w":"day"},{"t":140.7,"w":"You"},{"t":140.9,"w":"can"},{"t":141.02,"w":"love"},{"t":141.2,"w":"me"},{"t":141.38,"w":"in"},{"t":141.5,"w":"private"},{"t":142.04,"w":"But"},{"t":142.56,"w":"scroll"},{"t":142.8,"w":"right"},{"t":143.44,"w":"past"},{"t":143.72,"w":"my"},{"t":144.08,"w":"name"},{"t":144.62,"w":"I"},{"t":145.26,"w":"scroll"},{"t":145.6,"w":"right"},{"t":146.06,"w":"past"},{"t":146.3,"w":"your"},{"t":146.48,"w":"connected"},{"t":146.9,"w":"Then"},{"t":147.82,"w":"forgot"},{"t":148.12,"w":"how"},{"t":148.92,"w":"to"},{"t":149.16,"w":"stay"},{"t":150.62,"w":"You"},{"t":150.72,"w":"right"},{"t":151.02,"w":"there"},{"t":151.3,"w":"in"},{"t":151.54,"w":"my"},{"t":151.72,"w":"pocket"},{"t":152.22,"w":"But"},{"t":152.62,"w":"you"},{"t":152.8,"w":"feel"},{"t":153.32,"w":"the"},{"t":153.5,"w":"world"},{"t":153.84,"w":"away"},{"t":155.46,"w":"One"},{"t":156.02,"w":"tap"},{"t":156.42,"w":"away"},{"t":156.82,"w":"One"},{"t":157.34,"w":"tap"},{"t":157.66,"w":"away"},{"t":159.04,"w":"From"},{"t":159.14,"w":"a"},{"t":159.34,"w":"real"},{"t":159.6,"w":"conversation"},{"t":160,"w":"but"},{"t":160.44,"w":"we"},{"t":160.6,"w":"don't"},{"t":160.94,"w":"say"},{"t":161.12,"w":"a"},{"t":161.24,"w":"thing"},{"t":161.58,"w":"We"},{"t":161.82,"w":"one"},{"t":162.04,"w":"tap"},{"t":162.72,"w":"away"},{"t":163.39,"w":"Before"},{"t":164.04,"w":"I"},{"t":164.3,"w":"see"},{"t":164.5,"w":"you"},{"t":164.68,"w":"keep"},{"t":164.88,"w":"going"},{"t":165.34,"w":"From"},{"t":165.58,"w":"I'm"},{"t":165.7,"w":"proud"},{"t":165.94,"w":"of"},{"t":166.18,"w":"your"},{"t":166.3,"w":"dreams"},{"t":166.6,"w":"Save"},{"t":166.82,"w":"your"},{"t":166.94,"w":"life"},{"t":167.18,"w":"for"},{"t":167.36,"w":"the"},{"t":167.5,"w":"strangers"},{"t":168.64,"w":"Save"},{"t":169.2,"w":"your"},{"t":169.46,"w":"hearts"},{"t":169.74,"w":"for"},{"t":169.9,"w":"the"},{"t":170.06,"w":"stars"},{"t":171.24,"w":"But"},{"t":171.8,"w":"the"},{"t":171.92,"w":"ones"},{"t":172.18,"w":"who"},{"t":172.3,"w":"really"},{"t":172.5,"w":"know"},{"t":172.82,"w":"you"},{"t":173.12,"w":"act"},{"t":173.54,"w":"like"},{"t":173.88,"w":"Loving"},{"t":174.88,"w":"you"},{"t":175.12,"w":"is"},{"t":175.44,"w":"hard"},{"t":175.84,"w":"One"},{"t":176.5,"w":"tap"},{"t":176.6,"w":"away"},{"t":177,"w":"One"},{"t":177.6,"w":"tap"},{"t":177.84,"w":"away"},{"t":178.28,"w":"So"},{"t":178.64,"w":"why"},{"t":178.88,"w":"do"},{"t":179.12,"w":"I"},{"t":179.38,"w":"feel"},{"t":179.78,"w":"like"},{"t":179.86,"w":"I'm"},{"t":179.86,"w":"the"},{"t":179.86,"w":"only"},{"t":179.86,"w":"one"},{"t":179.88,"w":"Still"},{"t":179.88,"w":"alone"},{"t":180.1,"w":"In"},{"t":180.62,"w":"a"},{"t":180.8,"w":"room"},{"t":181.08,"w":"full"},{"t":181.3,"w":"of"},{"t":181.44,"w":"names"},{"t":181.8,"w":"Maybe"},{"t":182.32,"w":"I"},{"t":182.54,"w":"was"},{"t":182.74,"w":"young"},{"t":182.98,"w":"thinking"},{"t":183.26,"w":"why"},{"t":183.52,"w":"this"},{"t":183.7,"w":"could"},{"t":183.82,"w":"heal"},{"t":184.12,"w":"us"},{"t":184.38,"w":"Thinking"},{"t":184.82,"w":"all"},{"t":185.12,"w":"this"},{"t":185.26,"w":"light"},{"t":185.52,"w":"would"},{"t":185.68,"w":"finally"},{"t":186.08,"w":"reveal"},{"t":186.58,"w":"us"},{"t":187.06,"w":"Maybe"},{"t":187.34,"w":"I"},{"t":187.6,"w":"believed"},{"t":188,"w":"too"},{"t":188.28,"w":"much"},{"t":188.56,"w":"in"},{"t":188.9,"w":"this"},{"t":189.04,"w":"dream"},{"t":189.34,"w":"Thought"},{"t":189.8,"w":"the"},{"t":189.96,"w":"future"},{"t":190.24,"w":"meant"},{"t":190.54,"w":"we'd"},{"t":190.84,"w":"say"},{"t":191.08,"w":"what"},{"t":191.36,"w":"we"},{"t":191.54,"w":"mean"},{"t":191.84,"w":"Tell"},{"t":192.3,"w":"me"},{"t":192.46,"w":"something"},{"t":192.66,"w":"real,"},{"t":193.18,"w":"not"},{"t":193.28,"w":"a"},{"t":193.44,"w":"heart,"},{"t":193.82,"w":"not"},{"t":193.92,"w":"a"},{"t":194.12,"w":"flame"},{"t":194.34,"w":"Tell"},{"t":194.82,"w":"me"},{"t":195.02,"w":"where"},{"t":195.22,"w":"you've"},{"t":195.4,"w":"been,"},{"t":195.8,"w":"tell"},{"t":196.04,"w":"me"},{"t":196.28,"w":"what"},{"t":196.5,"w":"changed"},{"t":197.22,"w":"I'm"},{"t":197.48,"w":"not"},{"t":197.58,"w":"out"},{"t":197.76,"w":"to"},{"t":197.88,"w":"fight,"},{"t":198.4,"w":"I'm"},{"t":198.54,"w":"not"},{"t":198.74,"w":"far"},{"t":198.98,"w":"away"},{"t":199.32,"w":"I'm"},{"t":199.82,"w":"still"},{"t":199.98,"w":"right"},{"t":200.3,"w":"here"},{"t":200.72,"w":"One"},{"t":201.24,"w":"tap"},{"t":201.8,"w":"away"},{"t":206.02,"w":"One"},{"t":206.82,"w":"tap"},{"t":206.92,"w":"away"},{"t":207.34,"w":"One"},{"t":207.82,"w":"tap"},{"t":208.18,"w":"away"},{"t":209.14,"w":"From"},{"t":209.68,"w":"a"},{"t":209.78,"w":"real"},{"t":209.86,"w":"conversation"},{"t":209.86,"w":"but"},{"t":209.86,"w":"we"},{"t":209.86,"w":"don't"},{"t":209.86,"w":"say"},{"t":209.86,"w":"a"},{"t":209.86,"w":"thing"},{"t":209.86,"w":"We,"},{"t":211.84,"w":"We"},{"t":214.11,"w":"From"},{"t":214.36,"w":"I"},{"t":214.94,"w":"see"},{"t":215.04,"w":"you"},{"t":215.22,"w":"keep"},{"t":215.42,"w":"going"},{"t":215.84,"w":"From"},{"t":216.08,"w":"I'm"},{"t":216.24,"w":"proud"},{"t":216.48,"w":"of"},{"t":216.68,"w":"your"},{"t":216.84,"w":"dreams"},{"t":217.18,"w":"Save"},{"t":217.36,"w":"your"},{"t":217.46,"w":"life"},{"t":217.62,"w":"for"},{"t":217.86,"w":"the"},{"t":218.04,"w":"strangers"},{"t":218.58,"w":"Save"},{"t":219.58,"w":"your"},{"t":219.98,"w":"hearts"},{"t":220.26,"w":"for"},{"t":220.42,"w":"the"},{"t":220.58,"w":"stars"},{"t":221.76,"w":"But"},{"t":222.32,"w":"the"},{"t":222.44,"w":"ones"},{"t":222.7,"w":"who"},{"t":222.82,"w":"really"},{"t":223.04,"w":"know"},{"t":223.34,"w":"you"},{"t":223.6,"w":"act"},{"t":224.06,"w":"like"},{"t":224.42,"w":"Loving"},{"t":225.4,"w":"you"},{"t":225.6,"w":"is"},{"t":225.94,"w":"hard"},{"t":227.94,"w":"One"},{"t":228.12,"w":"tap"},{"t":228.42,"w":"away"},{"t":228.88,"w":"So"},{"t":229.2,"w":"why"},{"t":229.42,"w":"do"},{"t":229.64,"w":"I"},{"t":229.9,"w":"feel"},{"t":230.34,"w":"alone"},{"t":230.82,"w":"In"},{"t":231.26,"w":"a"},{"t":231.36,"w":"room"},{"t":231.62,"w":"full"},{"t":231.84,"w":"of"},{"t":231.98,"w":"names"},{"t":232.42,"w":"Tap"},{"t":233.22,"w":"tap"},{"t":233.46,"w":"Still"},{"t":234.02,"w":"no"},{"t":234.38,"w":"reach"},{"t":234.74,"w":"back"},{"t":235.06,"w":"Hard,"},{"t":235.78,"w":"hard"},{"t":236,"w":"But"},{"t":236.24,"w":"it"},{"t":236.4,"w":"don't"},{"t":236.74,"w":"feel"},{"t":236.98,"w":"like"},{"t":237.34,"w":"that"},{"t":237.58,"w":"One"},{"t":238.26,"w":"tap,"},{"t":238.52,"w":"One"},{"t":238.92,"w":"tap"},{"t":239.48,"w":"away"},{"t":239.76,"w":"One"},{"t":239.84,"w":"tap"},{"t":239.84,"w":"away"},{"t":239.86,"w":"and"},{"t":240.77,"w":"still"},{"t":241.02,"w":"so"},{"t":241.28,"w":"far"},{"t":241.7,"w":"everybody"},{"t":242.68,"w":"online"},{"t":243.34,"w":"nobody"},{"t":245.62,"w":"where"},{"t":245.96,"w":"you"},{"t":246.24,"w":"are"}]}$j$::jsonb WHERE id = 'one-tap-away-riverboat-bad-boys-remix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Back, back, when the screen made the room blow
+[00:02.12] I thought the whole world would move close
+[00:04.60] Old names poppin' up like Wodo
+[00:07.80] Middle school faces in the new post
+[00:09.67] I thought we'd talk, talk, really get honest
+[00:11.96] Drop the mask, no fake persona
+[00:14.25] Find your tribe, find your people
+[00:16.80] Make the whole cold world feel warm
+[00:19.64] Had a page with a song and a mood on it
+[00:22.34] Top friends like a room with your crew on it
+[00:24.95] Comments felt live, had truth on it
+[00:27.42] Now the whole feed got a suit on it
+[Verse 1]
+[00:29.86] Ads in the cracks, brands in the chat
+[00:31.96] Everybody got stacks, everybody wants claps
+[00:34.50] Everybody got reach, but don't reach back
+[00:36.98] How we got this close and lost contact
+[Pre-Chorus]
+[00:39.36] You can see me in a second
+[00:41.70] You can call me any day
+[00:44.25] You can love me in private
+[00:46.10] But scroll right past my name
+[00:49.57] Funny how we got connected
+[00:51.88] Then forgot how to stay
+[00:54.54] You're right there in my pocket
+[00:56.14] But you feel the world away
+[Chorus]
+[00:59.28] Everybody
+[00:59.86] One tap away
+[01:02.18] From a real conversation,
+[01:04.28] but we don't say a thing
+[01:05.56] We one tap away
+[01:07.43] From I see you keep going
+[01:09.22] From I'm proud of your dreams
+[01:10.56] Save your lights for the strangers
+[01:12.39] Save your hearts for the stars
+[01:15.18] But the ones who really know you act like
+[01:17.99] Loving you is hard
+[01:19.80] One tap away
+[01:21.98] So why do I feel alone
+[01:24.24] In a room full of names
+[01:25.78] Tap, tap, but you don't reach back
+[01:28.02] Heart, heart
+[01:28.88] But it don't matter
+[01:29.86] I don't feel like that
+[01:30.72] Close, close, close
+[01:31.56] But we don't connect
+[01:32.90] One tap, one tap away
+[01:34.42] And we still forget
+[01:35.60] Click, click, click
+[01:36.64] Everybody got a new rule
+[01:38.26] Don't hide friends that ain't cool, cool
+[01:40.97] Say that love for the big names
+[01:43.14] Blue checks, big chains
+[01:44.66] Big views
+[01:45.60] The difference when you blow up overnight
+[01:48.66] Everybody's where they saw the light
+[01:50.76] Same ones quiet when you need to fight
+[01:52.52] Now they in the comments like that's my guy
+[01:55.36] Nah, that's wild, that's weird to me
+[01:57.66] Friendship turned into courage
+[01:59.86] We got phones with emergency speed
+[02:02.88] But nobody checks on your emergency
+[02:05.50] I don't need fame, don't need no crown
+[Verse 2]
+[02:08.60] The state keep going when I'm feeling down
+[02:11.14] We built the whole world out of sound
+[02:13.68] And you did the Pico, we care about now
+[Bridge]
+[02:16.37] You can see me in a second
+[02:18.12] You can call me any day
+[02:19.34] You can call me any day
+[02:20.68] You can love me in private
+[02:22.02] But scroll right past my name
+[02:24.60] I scroll right past your connected
+[02:26.88] Then forgot how to stay
+[02:30.60] You right there in my pocket
+[Drop]
+[02:32.20] But you feel the world away
+[02:35.44] One tap away
+[02:36.80] One tap away
+[02:39.02] From a real conversation but we don't say a thing
+[02:41.56] We one tap away
+[02:43.37] Before I see you keep going
+[02:45.32] From I'm proud of your dreams
+[02:46.58] Save your life for the strangers
+[02:48.62] Save your hearts for the stars
+[02:51.22] But the ones who really know you act like
+[02:53.86] Loving you is hard
+[02:55.82] One tap away
+[02:56.98] One tap away
+[02:58.26] So why do I feel like I'm the only one
+[02:59.86] Still alone
+[03:00.08] In a room full of names
+[03:01.78] Maybe I was young thinking why this could heal us
+[03:04.36] Thinking all this light would finally reveal us
+[03:07.04] Maybe I believed too much in this dream
+[03:09.32] Thought the future meant we'd say what we mean
+[03:11.82] Tell me something real, not a heart, not a flame
+[03:14.32] Tell me where you've been, tell me what changed
+[03:17.20] I'm not out to fight, I'm not far away
+[03:19.30] I'm still right here
+[03:20.70] One tap away
+[03:25.00] One tap away
+[03:27.32] One tap away
+[03:29.12] From a real conversation but we don't say a thing
+[03:29.84] We,
+[03:31.82] We
+[03:34.09] From I see you keep going
+[03:35.82] From I'm proud of your dreams
+[03:37.16] Save your life for the strangers
+[03:38.56] Save your hearts for the stars
+[03:41.74] But the ones who really know you act like
+[03:44.40] Loving you is hard
+[03:47.91] One tap away
+[03:48.86] So why do I feel alone
+[03:50.80] In a room full of names
+[03:52.40] Tap tap
+[03:53.44] Still no reach back
+[03:55.04] Hard, hard
+[03:55.98] But it don't feel like that
+[03:57.56] One tap, One tap away
+[03:59.74] One tap away
+[03:59.84] and still so far everybody online nobody where you are
+$j$ WHERE id = 'one-tap-away-riverboat-bad-boys-remix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A gritty noir critique on digital isolation where social media connections replace genuine intimacy, set against a cinematic backdrop of dirty dockside crime and rubber-hose animation chaos.","overallMood":"lonely paranoia","themes":["Digital Isolation","Superficial Fame","Lost Connection","Noir Melancholy","Public vs Private Self","Gangsta Vulnerability"],"palette":["#1a1a1d","#c5a065","#ff4e50","#f2cc8f"],"sections":[{"name":"Intro","emotion":"nostalgic reflection","intensity":0.79,"colorHintHex":"#c5a065","start":0},{"name":"Verse 1","emotion":"cold observation","intensity":0.85,"colorHintHex":"#2d2d34","start":29.86},{"name":"Pre-Chorus","emotion":"frustrated longing","intensity":0.87,"colorHintHex":"#ff4e50","start":39.36},{"name":"Chorus","emotion":"melancholic realization","intensity":0.68,"colorHintHex":"#f2cc8f","start":59.28},{"name":"Verse 2","emotion":"resigned acceptance","intensity":0.44,"colorHintHex":"#4e4376","start":128.6},{"name":"Bridge","emotion":"heartbreaking clarity","intensity":0.32,"colorHintHex":"#1a1a2d","start":136.37},{"name":"Drop","emotion":"cinematic despair","intensity":0.3,"colorHintHex":"#ff4e50","start":152.2}],"keywords":[{"word":"alone","emotion":"profound isolation","imageryPrompt":"A solitary figure in a grainy black and white noir room, surrounded by floating digital contact icons that refuse to connect like broken chain links."},{"word":"tap","emotion":"frustrated futility","imageryPrompt":"A gloved hand slamming against an old wooden dock post, sending ripples through dirty water where a reflection of the hand does not match the movement above."},{"word":"stacks","emotion":"hollow wealth","imageryPrompt":"Piles of gold coins turning to dust and ash instantly under harsh dockside floodlights, emphasizing temporary fame over substance."},{"word":"scroll","emotion":"dismissive haste","imageryPrompt":"A finger rapidly swiping past a crying face on an old CRT screen until the image blurs into static noise and darkness."},{"word":"stars","emotion":"distant hope","imageryPrompt":"Tiny, cold pinpricks of light in a vast foggy sky far above a gritty riverboat deck where humans are just small specks below."},{"word":"names","emotion":"empty identity","imageryPrompt":"Dozens of glowing user handles falling like dead leaves onto a muddy dock floor, leaving no footprints or warmth behind them."}]}$j$::jsonb) WHERE id = 'one-tap-away-riverboat-bad-boys-remix' AND planet->'analysis' IS NULL;
+
+-- oro-de-la-presion: 866 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":2.78,"w":"Este"},{"t":2.88,"w":"verano"},{"t":3.52,"w":"se"},{"t":3.68,"w":"siente"},{"t":4.1,"w":"diferente,"},{"t":4.97,"w":"pero"},{"t":6.11,"w":"esto"},{"t":6.38,"w":"no"},{"t":6.5,"w":"es"},{"t":6.64,"w":"vacaciones,"},{"t":7.54,"w":"esto"},{"t":7.8,"w":"es"},{"t":8.86,"w":"presión,"},{"t":9.91,"w":"esto"},{"t":11.24,"w":"es"},{"t":11.34,"w":"fuego,"},{"t":12.63,"w":"esto"},{"t":13.58,"w":"es"},{"t":13.7,"w":"cuando"},{"t":13.92,"w":"el"},{"t":14.12,"w":"vacío"},{"t":14.58,"w":"aprende"},{"t":15.12,"w":"mi"},{"t":15.22,"w":"nombre"},{"t":15.8,"w":"Construye,"},{"t":16.96,"w":"sube,"},{"t":18.06,"w":"pressure"},{"t":18.5,"w":"make"},{"t":18.74,"w":"go,"},{"t":19.44,"w":"la"},{"t":19.84,"w":"presión"},{"t":20.5,"w":"hace"},{"t":20.72,"w":"oro"},{"t":23.78,"w":"Estamos"},{"t":24.26,"w":"afuera"},{"t":24.74,"w":"now,"},{"t":26.02,"w":"feet"},{"t":26.26,"w":"on"},{"t":27.02,"w":"the"},{"t":27.26,"w":"ground,"},{"t":28.42,"w":"let"},{"t":28.58,"w":"the"},{"t":28.68,"w":"bass"},{"t":28.98,"w":"roll"},{"t":29.24,"w":"up,"},{"t":30.2,"w":"del"},{"t":30.3,"w":"vacío"},{"t":30.94,"w":"hasta"},{"t":31.18,"w":"el"},{"t":31.26,"w":"oro"},{"t":31.58,"w":"I"},{"t":32.08,"w":"had"},{"t":32.34,"w":"too"},{"t":32.52,"w":"much"},{"t":32.76,"w":"weight"},{"t":33.04,"w":"sitting"},{"t":33.24,"w":"heavy"},{"t":33.62,"w":"on"},{"t":33.86,"w":"my"},{"t":33.98,"w":"shoulders,"},{"t":34.52,"w":"demasiada"},{"t":35.14,"w":"noche"},{"t":35.38,"w":"fría,"},{"t":35.8,"w":"too"},{"t":35.92,"w":"many"},{"t":36.16,"w":"dreams"},{"t":36.44,"w":"getting"},{"t":36.68,"w":"older,"},{"t":37.04,"w":"same"},{"t":37.24,"w":"wall,"},{"t":37.7,"w":"same"},{"t":37.92,"w":"clock,"},{"t":38.34,"w":"same"},{"t":38.52,"w":"fight"},{"t":38.86,"w":"with"},{"t":39.06,"w":"time,"},{"t":39.46,"w":"same"},{"t":39.76,"w":"voice"},{"t":40.12,"w":"in"},{"t":40.34,"w":"the"},{"t":40.44,"w":"dark"},{"t":40.74,"w":"saying"},{"t":41,"w":"You"},{"t":41.2,"w":"ain't"},{"t":41.46,"w":"gon'"},{"t":41.64,"w":"shine,"},{"t":41.96,"w":"por"},{"t":42.14,"w":"el"},{"t":42.2,"w":"tambor"},{"t":42.56,"w":"sonar"},{"t":43.2,"w":"like"},{"t":43.38,"w":"a"},{"t":43.58,"w":"war"},{"t":43.78,"w":"call,"},{"t":44.26,"w":"brass"},{"t":45,"w":"hair"},{"t":45.36,"w":"hard"},{"t":45.68,"w":"made"},{"t":45.86,"w":"the"},{"t":46.02,"w":"whole"},{"t":46.26,"w":"block"},{"t":46.58,"w":"tall,"},{"t":47.02,"w":"one"},{"t":47.48,"w":"deep"},{"t":47.8,"w":"breath"},{"t":48.18,"w":"then"},{"t":48.36,"w":"I"},{"t":48.5,"w":"stood"},{"t":48.72,"w":"up"},{"t":48.92,"w":"tall"},{"t":49.18,"w":"Had"},{"t":49.56,"w":"to"},{"t":49.74,"w":"stop"},{"t":49.98,"w":"waiting,"},{"t":50.6,"w":"had"},{"t":50.86,"w":"to"},{"t":51.02,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break,"},{"t":51.18,"w":"had"},{"t":51.18,"w":"to"},{"t":51.18,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break,"},{"t":51.18,"w":"had"},{"t":51.18,"w":"to"},{"t":51.18,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break,"},{"t":51.18,"w":"had"},{"t":51.18,"w":"to"},{"t":51.18,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break,"},{"t":51.18,"w":"had"},{"t":51.18,"w":"to"},{"t":51.18,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break,"},{"t":51.18,"w":"had"},{"t":51.18,"w":"to"},{"t":51.18,"w":"take"},{"t":51.18,"w":"a"},{"t":51.18,"w":"break"},{"t":51.2,"w":"Take"},{"t":51.2,"w":"it"},{"t":51.48,"w":"all,"},{"t":51.92,"w":"laptop"},{"t":52.46,"w":"closed"},{"t":53.06,"w":"but"},{"t":53.28,"w":"the"},{"t":53.44,"w":"soul"},{"t":53.68,"w":"still"},{"t":53.9,"w":"loaded,"},{"t":54.42,"w":"hands"},{"t":54.82,"w":"still"},{"t":55.16,"w":"dirty"},{"t":55.56,"w":"but"},{"t":55.76,"w":"the"},{"t":55.9,"w":"heart"},{"t":56.16,"w":"still"},{"t":56.42,"w":"golden,"},{"t":56.9,"w":"I"},{"t":57.04,"w":"was"},{"t":57.16,"w":"down"},{"t":57.46,"w":"in"},{"t":57.66,"w":"the"},{"t":57.76,"w":"void"},{"t":58.08,"w":"where"},{"t":58.26,"w":"the"},{"t":58.4,"w":"lights"},{"t":58.66,"w":"don't"},{"t":59,"w":"show,"},{"t":59.34,"w":"now"},{"t":59.46,"w":"I"},{"t":59.66,"w":"beat"},{"t":59.9,"w":"on"},{"t":60.14,"w":"the"},{"t":60.24,"w":"dark"},{"t":60.56,"w":"till"},{"t":60.72,"w":"the"},{"t":60.9,"w":"whole"},{"t":61.12,"w":"thing"},{"t":61.42,"w":"glow"},{"t":61.68,"w":"Yo"},{"t":62.14,"w":"no"},{"t":62.38,"w":"estaba"},{"t":62.62,"w":"roto,"},{"t":63.42,"w":"me"},{"t":63.86,"w":"estaban"},{"t":64.18,"w":"formando,"},{"t":65.3,"w":"yo"},{"t":67.22,"w":"no"},{"t":67.32,"w":"estaba"},{"t":67.58,"w":"muerto,"},{"t":68.44,"w":"me"},{"t":68.84,"w":"estaban"},{"t":69.16,"w":"quemando,"},{"t":71.46,"w":"suelta"},{"t":71.82,"w":"el"},{"t":71.92,"w":"miedo,"},{"t":72.54,"w":"llena"},{"t":72.94,"w":"el"},{"t":73.06,"w":"pecho"},{"t":73.48,"w":"con"},{"t":73.74,"w":"fire,"},{"t":74.44,"w":"step"},{"t":74.56,"w":"to"},{"t":74.91,"w":"the"},{"t":75.1,"w":"noise,"},{"t":75.38,"w":"climb"},{"t":75.74,"w":"a"},{"t":76,"w":"little"},{"t":76.18,"w":"higher,"},{"t":76.8,"w":"no"},{"t":76.9,"w":"shame"},{"t":77.2,"w":"in"},{"t":77.42,"w":"the"},{"t":77.52,"w":"scars,"},{"t":77.92,"w":"no"},{"t":78.04,"w":"fear"},{"t":78.42,"w":"in"},{"t":78.66,"w":"the"},{"t":78.76,"w":"climb"},{"t":79.04,"w":"El"},{"t":79.34,"w":"mundo"},{"t":79.6,"w":"grita"},{"t":79.98,"w":"duro,"},{"t":80.4,"w":"I'ma"},{"t":80.62,"w":"turn"},{"t":80.9,"w":"it"},{"t":81.06,"w":"into"},{"t":81.18,"w":"fire,"},{"t":81.18,"w":"I'ma"},{"t":81.18,"w":"turn"},{"t":81.18,"w":"it"},{"t":81.18,"w":"into"},{"t":81.18,"w":"fire,"},{"t":81.18,"w":"I'ma"},{"t":81.18,"w":"turn"},{"t":81.18,"w":"it"},{"t":81.18,"w":"into"},{"t":81.18,"w":"fire,"},{"t":81.18,"w":"I'ma"},{"t":81.18,"w":"turn"},{"t":81.18,"w":"it"},{"t":81.18,"w":"into"},{"t":81.18,"w":"fire"},{"t":81.76,"w":"Venimos,"},{"t":82.28,"w":"bênimos,"},{"t":82.44,"w":"Ben5,"},{"t":83.42,"w":"now"},{"t":83.58,"w":"we"},{"t":83.74,"w":"turn"},{"t":83.92,"w":"it"},{"t":84.1,"w":"into"},{"t":84.32,"w":"gold,"},{"t":84.8,"w":"oro"},{"t":85.18,"w":"en"},{"t":85.34,"w":"el"},{"t":85.52,"w":"pecho,"},{"t":86.16,"w":"gold"},{"t":86.4,"w":"in"},{"t":86.74,"w":"the"},{"t":86.82,"w":"soul,"},{"t":87.4,"w":"milk"},{"t":87.54,"w":"from"},{"t":87.76,"w":"the"},{"t":88.02,"w":"pressure,"},{"t":88.68,"w":"raised"},{"t":88.94,"w":"by"},{"t":89.16,"w":"the"},{"t":89.36,"w":"cold,"},{"t":89.86,"w":"venimos"},{"t":90.26,"w":"del"},{"t":90.54,"w":"boy,"},{"t":90.9,"w":"now"},{"t":91.02,"w":"we"},{"t":91.18,"w":"turn"},{"t":91.38,"w":"it"},{"t":91.52,"w":"into"},{"t":91.76,"w":"gold"},{"t":92.74,"w":"Ovejame"},{"t":93.26,"w":"un"},{"t":93.4,"w":"pesco,"},{"t":94.17,"w":"que"},{"t":95.02,"w":"lo"},{"t":95.46,"w":"sepa"},{"t":95.74,"w":"todo"},{"t":96,"w":"el"},{"t":96.22,"w":"mundo,"},{"t":96.7,"w":"déjalo"},{"t":98.5,"w":"arder,"},{"t":99.18,"w":"déjalo"},{"t":100.98,"w":"ver,"},{"t":101.64,"w":"mírame"},{"t":103.06,"w":"crecer,"},{"t":104.26,"w":"venimos"},{"t":104.48,"w":"del"},{"t":104.78,"w":"boy,"},{"t":105.14,"w":"now"},{"t":105.24,"w":"we"},{"t":105.4,"w":"turn"},{"t":105.64,"w":"it"},{"t":105.74,"w":"into"},{"t":105.9,"w":"gold"},{"t":107.68,"w":"Ovejame"},{"t":108,"w":"un"},{"t":108.18,"w":"pesco"},{"t":108.6,"w":"Que"},{"t":109.3,"w":"lo"},{"t":109.96,"w":"sepa"},{"t":110.26,"w":"todo"},{"t":110.52,"w":"el"},{"t":110.7,"w":"mundo"},{"t":112.44,"w":"Deja"},{"t":112.54,"w":"el"},{"t":112.66,"w":"orden,"},{"t":113.32,"w":"déjalo"},{"t":115.2,"w":"ver,"},{"t":117.09,"w":"mírame"},{"t":117.44,"w":"crecer,"},{"t":118.98,"w":"venimos"},{"t":119.32,"w":"después,"},{"t":119.98,"w":"now"},{"t":120.1,"w":"we"},{"t":120.24,"w":"turn"},{"t":120.48,"w":"it"},{"t":120.6,"w":"into"},{"t":120.8,"w":"gold"},{"t":121.12,"w":"Mente"},{"t":121.42,"w":"clara,"},{"t":121.92,"w":"heart"},{"t":122.34,"w":"bold,"},{"t":122.88,"w":"manos"},{"t":123.14,"w":"arriba,"},{"t":123.6,"w":"still"},{"t":123.82,"w":"go,"},{"t":124.34,"w":"new"},{"t":124.74,"w":"me,"},{"t":125.22,"w":"still"},{"t":125.66,"w":"loaded,"},{"t":126.48,"w":"alma"},{"t":127.3,"w":"limpia,"},{"t":127.98,"w":"still"},{"t":128.38,"w":"glowing"},{"t":130.2,"w":"De"},{"t":130.75,"w":"Queens"},{"t":131.06,"w":"to"},{"t":131.28,"w":"the"},{"t":131.38,"w":"island,"},{"t":131.76,"w":"de"},{"t":131.9,"w":"la"},{"t":131.98,"w":"isla"},{"t":132.28,"w":"to"},{"t":132.46,"w":"the"},{"t":132.58,"w":"sky,"},{"t":133.04,"w":"Boricua"},{"t":133.58,"w":"y"},{"t":133.62,"w":"Quique,"},{"t":134.06,"w":"fuego"},{"t":134.58,"w":"en"},{"t":134.96,"w":"my"},{"t":135.08,"w":"eyes"},{"t":135.46,"w":"Plata"},{"t":135.98,"w":"no"},{"t":136.16,"w":"perico,"},{"t":136.68,"w":"ripiao,"},{"t":137.1,"w":"drums"},{"t":137.3,"w":"in"},{"t":137.5,"w":"the"},{"t":137.56,"w":"street,"},{"t":137.98,"w":"808"},{"t":138.38,"w":"under"},{"t":138.56,"w":"my"},{"t":138.84,"w":"chest,"},{"t":139.16,"w":"brass"},{"t":139.4,"w":"under"},{"t":139.68,"w":"my"},{"t":139.94,"w":"feet"},{"t":140.32,"w":"No"},{"t":140.48,"w":"more"},{"t":140.6,"w":"waiting"},{"t":140.96,"w":"on"},{"t":141.12,"w":"permission,"},{"t":141.64,"w":"no"},{"t":141.74,"w":"more"},{"t":141.9,"w":"begging"},{"t":142.14,"w":"for"},{"t":142.38,"w":"a"},{"t":142.56,"w":"name,"},{"t":142.88,"w":"no"},{"t":142.98,"w":"more"},{"t":143.16,"w":"hiding"},{"t":143.44,"w":"all"},{"t":143.66,"w":"the"},{"t":143.74,"w":"vision,"},{"t":144.14,"w":"no"},{"t":144.26,"w":"more"},{"t":144.38,"w":"making"},{"t":144.64,"w":"joy"},{"t":144.9,"w":"feel"},{"t":145.12,"w":"shame"},{"t":145.5,"w":"They"},{"t":145.9,"w":"laugh"},{"t":146.22,"w":"when"},{"t":146.4,"w":"the"},{"t":146.56,"w":"tools"},{"t":146.78,"w":"came"},{"t":147.04,"w":"out,"},{"t":147.5,"w":"said"},{"t":147.76,"w":"it"},{"t":147.98,"w":"ain't"},{"t":148.18,"w":"real"},{"t":148.36,"w":"when"},{"t":148.58,"w":"the"},{"t":148.74,"w":"new"},{"t":148.94,"w":"waves"},{"t":149.44,"w":"sprout"},{"t":149.83,"w":"But"},{"t":150.38,"w":"I"},{"t":150.58,"w":"built"},{"t":150.84,"w":"with"},{"t":151.02,"w":"the"},{"t":151.18,"w":"sparks,"},{"t":151.66,"w":"built"},{"t":152,"w":"with"},{"t":152.22,"w":"the"},{"t":152.42,"w":"scars,"},{"t":152.92,"w":"built"},{"t":153.28,"w":"with"},{"t":153.5,"w":"the"},{"t":153.7,"w":"bass"},{"t":153.96,"w":"and"},{"t":154.14,"w":"I"},{"t":154.28,"w":"aimed"},{"t":154.62,"w":"at"},{"t":154.78,"w":"stars"},{"t":155.26,"w":"Tú"},{"t":155.7,"w":"tiras"},{"t":156.14,"w":"sombra,"},{"t":156.44,"w":"yo"},{"t":156.58,"w":"la"},{"t":156.76,"w":"vuelvo"},{"t":157.26,"w":"sol,"},{"t":157.84,"w":"tú"},{"t":158.14,"w":"tiras"},{"t":158.62,"w":"piedra,"},{"t":158.94,"w":"yo"},{"t":159.06,"w":"construyo"},{"t":159.52,"w":"control"},{"t":160.1,"w":"Tú"},{"t":160.6,"w":"can"},{"t":160.76,"w":"call"},{"t":160.96,"w":"it"},{"t":161.14,"w":"fake,"},{"t":161.52,"w":"I"},{"t":161.98,"w":"call"},{"t":162.18,"w":"it"},{"t":162.38,"w":"freak,"},{"t":162.74,"w":"I"},{"t":162.92,"w":"came"},{"t":163.2,"w":"from"},{"t":163.4,"w":"the"},{"t":163.54,"w":"void,"},{"t":163.92,"w":"now"},{"t":164.04,"w":"the"},{"t":164.18,"w":"gold"},{"t":164.48,"w":"is"},{"t":164.74,"w":"me"},{"t":165.02,"w":"No"},{"t":165.66,"w":"necesito"},{"t":166.3,"w":"tu"},{"t":166.46,"w":"corona,"},{"t":167.26,"w":"no"},{"t":168.18,"w":"necesito"},{"t":168.92,"w":"tu"},{"t":169.16,"w":"gay"},{"t":169.4,"w":"No"},{"t":169.86,"w":"necesito"},{"t":170.3,"w":"tu"},{"t":170.3,"w":"corona,"},{"t":170.3,"w":"no"},{"t":170.3,"w":"necesito"},{"t":170.3,"w":"tu"},{"t":170.3,"w":"gay"},{"t":170.3,"w":"No"},{"t":170.6,"w":"necesito"},{"t":171.32,"w":"tu"},{"t":171.56,"w":"duda,"},{"t":172.2,"w":"no"},{"t":173.34,"w":"pago"},{"t":173.78,"w":"tu"},{"t":174.02,"w":"weight"},{"t":174.46,"w":"Have"},{"t":175.06,"w":"your"},{"t":175.28,"w":"joy"},{"t":175.6,"w":"but"},{"t":176,"w":"keep"},{"t":176.1,"w":"your"},{"t":176.42,"w":"spirit,"},{"t":177.18,"w":"toca"},{"t":177.6,"w":"el"},{"t":177.8,"w":"fuego,"},{"t":178.3,"w":"keep"},{"t":178.54,"w":"your"},{"t":178.9,"w":"name"},{"t":179.24,"w":"Taste"},{"t":180,"w":"the"},{"t":180.24,"w":"world"},{"t":180.52,"w":"but"},{"t":180.78,"w":"don't"},{"t":181.12,"w":"disappear"},{"t":181.62,"w":"in"},{"t":182,"w":"it,"},{"t":182.26,"w":"pleasure"},{"t":182.58,"w":"don't"},{"t":183.02,"w":"have"},{"t":183.22,"w":"to"},{"t":183.46,"w":"become"},{"t":183.82,"w":"pain"},{"t":184.36,"w":"Pasa"},{"t":185.04,"w":"el"},{"t":185.28,"w":"plato,"},{"t":185.78,"w":"press,"},{"t":186.26,"w":"forgive"},{"t":186.58,"w":"me,"},{"t":187.06,"w":"spray"},{"t":187.32,"w":"your"},{"t":187.66,"w":"glass"},{"t":188.08,"w":"and"},{"t":188.34,"w":"bless"},{"t":188.62,"w":"the"},{"t":188.9,"w":"air"},{"t":190.27,"w":"Estamos"},{"t":190.48,"w":"aquí"},{"t":190.98,"w":"un"},{"t":191.18,"w":"minuto,"},{"t":192,"w":"feel"},{"t":192.38,"w":"the"},{"t":192.56,"w":"life"},{"t":192.88,"w":"you"},{"t":193.1,"w":"want"},{"t":193.34,"w":"while"},{"t":193.6,"w":"you're"},{"t":193.9,"w":"here"},{"t":195.58,"w":"Venimos"},{"t":196.16,"w":"del"},{"t":196.64,"w":"voy,"},{"t":197.22,"w":"now"},{"t":197.44,"w":"we"},{"t":197.56,"w":"turn"},{"t":197.74,"w":"it"},{"t":197.94,"w":"into"},{"t":198.16,"w":"gold,"},{"t":198.68,"w":"oro"},{"t":198.96,"w":"en"},{"t":199.24,"w":"el"},{"t":199.32,"w":"pecho"},{"t":200.3,"w":"Gold"},{"t":200.3,"w":"in"},{"t":200.5,"w":"the"},{"t":200.64,"w":"soul,"},{"t":201.14,"w":"built"},{"t":201.36,"w":"from"},{"t":201.62,"w":"the"},{"t":201.82,"w":"pressure"},{"t":202.26,"w":"Raised"},{"t":202.86,"w":"by"},{"t":202.94,"w":"the"},{"t":203.12,"w":"cold,"},{"t":203.64,"w":"venimos"},{"t":204.06,"w":"del"},{"t":204.36,"w":"voy,"},{"t":204.7,"w":"now"},{"t":204.84,"w":"we"},{"t":204.98,"w":"turn"},{"t":205.22,"w":"it"},{"t":205.36,"w":"into"},{"t":205.54,"w":"gold"},{"t":206.11,"w":"No"},{"t":206.66,"w":"we"},{"t":206.86,"w":"ever"},{"t":207.08,"w":"pass"},{"t":207.44,"w":"gold,"},{"t":208.08,"w":"que"},{"t":209.1,"w":"lo"},{"t":209.34,"w":"sepa"},{"t":209.56,"w":"todo"},{"t":209.78,"w":"el"},{"t":209.98,"w":"mundo"},{"t":211.88,"w":"Déjalo"},{"t":212.36,"w":"arder,"},{"t":214.34,"w":"déjalo"},{"t":214.8,"w":"ver,"},{"t":216.51,"w":"mírame"},{"t":216.84,"w":"crecer"},{"t":217.95,"w":"Venimos"},{"t":218.32,"w":"del"},{"t":218.6,"w":"voy,"},{"t":218.96,"w":"now"},{"t":219.1,"w":"we"},{"t":219.22,"w":"turn"},{"t":219.44,"w":"it"},{"t":219.58,"w":"into"},{"t":219.8,"w":"gold"},{"t":222.22,"w":"Escucha,"},{"t":223.08,"w":"no"},{"t":223.18,"w":"tienes"},{"t":223.42,"w":"que"},{"t":223.62,"w":"contestar"},{"t":224.28,"w":"cada"},{"t":224.5,"w":"alarma"},{"t":225.66,"w":"No"},{"t":226.34,"w":"tienes"},{"t":226.56,"w":"que"},{"t":226.8,"w":"cargar"},{"t":227.28,"w":"cada"},{"t":227.6,"w":"fantasma"},{"t":229.48,"w":"No"},{"t":229.58,"w":"tienes"},{"t":229.82,"w":"que"},{"t":230.02,"w":"quedar"},{"t":230.28,"w":"sin"},{"t":230.28,"w":"ti,"},{"t":230.28,"w":"no"},{"t":230.28,"w":"tienes"},{"t":230.28,"w":"que"},{"t":230.28,"w":"quedar"},{"t":230.28,"w":"sin"},{"t":230.28,"w":"ti"},{"t":230.3,"w":"Dejarte"},{"t":230.46,"w":"pequeño"},{"t":230.9,"w":"porque"},{"t":231.46,"w":"te"},{"t":232.58,"w":"conocieron"},{"t":233.28,"w":"en"},{"t":233.48,"w":"la"},{"t":233.56,"w":"oscuridad"},{"t":234.1,"w":"Some"},{"t":234.58,"w":"nights"},{"t":234.96,"w":"are"},{"t":235.14,"w":"for"},{"t":235.32,"w":"healing"},{"t":235.68,"w":"Some"},{"t":236.34,"w":"nights"},{"t":236.84,"w":"are"},{"t":237.02,"w":"for"},{"t":237.22,"w":"hands"},{"t":237.58,"w":"in"},{"t":237.78,"w":"the"},{"t":237.92,"w":"air"},{"t":238.24,"w":"Pero"},{"t":238.8,"w":"algunas"},{"t":239.1,"w":"noches"},{"t":239.96,"w":"Algunas"},{"t":240.92,"w":"noches"},{"t":241.44,"w":"Tú"},{"t":241.8,"w":"mismo"},{"t":242.14,"w":"construyes"},{"t":243,"w":"la"},{"t":243.18,"w":"corona"},{"t":243.66,"w":"¿Quién"},{"t":244.46,"w":"te"},{"t":244.58,"w":"hizo?"},{"t":245.22,"w":"La"},{"t":245.32,"w":"presión"},{"t":246.06,"w":"¿Quién"},{"t":246.68,"w":"te"},{"t":246.78,"w":"crió?"},{"t":247.56,"w":"La"},{"t":247.88,"w":"lección"},{"t":248.48,"w":"¿Quién"},{"t":249.2,"w":"dudó?"},{"t":250.08,"w":"Un"},{"t":250.4,"w":"montón"},{"t":250.88,"w":"¿Quién"},{"t":251.38,"w":"brilla?"},{"t":252.04,"w":"El"},{"t":252.4,"w":"corazón"},{"t":253.68,"w":"My"},{"t":254.12,"w":"mind"},{"t":255.46,"w":"go"},{"t":255.56,"w":"quiet"},{"t":256.13,"w":"Heart"},{"t":256.36,"w":"go"},{"t":256.66,"w":"wide"},{"t":257.26,"w":"Gumbo"},{"t":258.1,"w":"rolling"},{"t":258.72,"w":"Fire"},{"t":258.96,"w":"inside"},{"t":259.54,"w":"Man"},{"t":260.3,"w":"Mente"},{"t":260.38,"w":"clara"},{"t":261.06,"w":"Alma"},{"t":261.48,"w":"alive"},{"t":262.14,"w":"Este"},{"t":262.82,"w":"verano"},{"t":263.94,"w":"viste"},{"t":264.08,"w":"la"},{"t":264.28,"w":"lágrima"},{"t":264.72,"w":"I'm"},{"t":264.82,"w":"not"},{"t":264.92,"w":"just"},{"t":265.24,"w":"dope"},{"t":265.64,"w":"Soy"},{"t":265.96,"w":"fuego"},{"t":266.44,"w":"con"},{"t":266.66,"w":"memoria"},{"t":267.26,"w":"Every"},{"t":267.98,"w":"loss"},{"t":268.34,"w":"melted"},{"t":268.64,"w":"down"},{"t":269,"w":"in"},{"t":269.22,"w":"the"},{"t":269.3,"w":"gloria"},{"t":269.76,"w":"Every"},{"t":270.48,"w":"no"},{"t":270.72,"w":"got"},{"t":271,"w":"folded"},{"t":271.42,"w":"in"},{"t":271.68,"w":"steel"},{"t":272.52,"w":"Every"},{"t":272.94,"w":"star"},{"t":273.22,"w":"turned"},{"t":273.52,"w":"proof"},{"t":273.84,"w":"I'm"},{"t":274.24,"w":"real"},{"t":274.58,"w":"Go"},{"t":275,"w":"can"},{"t":275.3,"w":"bang,"},{"t":275.66,"w":"go"},{"t":275.82,"w":"can"},{"t":276.08,"w":"shine"},{"t":276.36,"w":"But"},{"t":276.9,"w":"I"},{"t":277.08,"w":"want"},{"t":277.28,"w":"worth"},{"t":277.62,"w":"that"},{"t":277.9,"w":"Can't"},{"t":278.4,"w":"define"},{"t":278.66,"w":"Más"},{"t":279.26,"w":"alto"},{"t":279.56,"w":"que"},{"t":279.8,"w":"prenda,"},{"t":280.32,"w":"más"},{"t":280.44,"w":"alto"},{"t":280.8,"w":"que"},{"t":281.06,"w":"rings"},{"t":281.42,"w":"Higher"},{"t":282.02,"w":"in"},{"t":282.3,"w":"price,"},{"t":282.74,"w":"higher"},{"t":283.28,"w":"in"},{"t":283.58,"w":"kings"},{"t":283.88,"w":"Del"},{"t":284.64,"w":"vacío"},{"t":285.1,"w":"al"},{"t":285.32,"w":"fuego"},{"t":287.01,"w":"Del"},{"t":287.12,"w":"fuego"},{"t":287.6,"w":"al"},{"t":287.86,"w":"molde"},{"t":288.52,"w":"Del"},{"t":289.64,"w":"molde"},{"t":290.2,"w":"al"},{"t":290.24,"w":"fuego"},{"t":290.3,"w":"Al"},{"t":290.3,"w":"brillo"},{"t":291.36,"w":"Del"},{"t":291.62,"w":"brillo"},{"t":292.74,"w":"PESCO"},{"t":294.4,"w":"Venimos"},{"t":295.12,"w":"del"},{"t":295.62,"w":"boi"},{"t":296.04,"w":"Now"},{"t":296.4,"w":"we"},{"t":296.54,"w":"turn"},{"t":296.72,"w":"it"},{"t":296.9,"w":"into"},{"t":297.12,"w":"gold"},{"t":297.56,"w":"Oro"},{"t":298.02,"w":"en"},{"t":298.14,"w":"el"},{"t":298.3,"w":"pecho"},{"t":298.78,"w":"Gold"},{"t":299.22,"w":"in"},{"t":299.52,"w":"the"},{"t":299.62,"w":"soul"},{"t":300,"w":"Built"},{"t":300.32,"w":"from"},{"t":300.58,"w":"the"},{"t":300.82,"w":"pressure"},{"t":301.22,"w":"Raised"},{"t":301.84,"w":"by"},{"t":301.92,"w":"the"},{"t":302.1,"w":"cold"},{"t":302.46,"w":"Venimos"},{"t":303.06,"w":"del"},{"t":303.32,"w":"boi"},{"t":303.6,"w":"Now"},{"t":303.78,"w":"we"},{"t":303.96,"w":"burn"},{"t":304.18,"w":"it"},{"t":304.32,"w":"into"},{"t":304.54,"w":"gold"},{"t":305.32,"w":"But"},{"t":305.68,"w":"we"},{"t":305.84,"w":"ain't"},{"t":306.02,"w":"been"},{"t":306.1,"w":"PESCO"},{"t":307.14,"w":"Que"},{"t":307.5,"w":"lo"},{"t":308.22,"w":"sepa"},{"t":308.54,"w":"todo"},{"t":308.78,"w":"el"},{"t":308.96,"w":"mundo"},{"t":309.28,"w":"Más"},{"t":310.27,"w":"alto"},{"t":310.5,"w":"que"},{"t":310.84,"w":"oro"},{"t":312.06,"w":"Más"},{"t":312.32,"w":"alto"},{"t":312.82,"w":"que"},{"t":313.24,"w":"fear"},{"t":314.3,"w":"Higher"},{"t":315.02,"w":"than"},{"t":315.32,"w":"what"},{"t":315.78,"w":"they"},{"t":315.88,"w":"said"},{"t":316.32,"w":"we"},{"t":316.62,"w":"were"},{"t":316.98,"w":"Todavía"},{"t":318.06,"w":"aquí"},{"t":319.4,"w":"Aire"},{"t":320.12,"w":"Estamos"},{"t":320.94,"w":"afuera"},{"t":321.74,"w":"en"},{"t":321.9,"w":"la"},{"t":321.9,"w":"Aire"},{"t":323.12,"w":"Feet"},{"t":323.52,"w":"on"},{"t":323.98,"w":"the"},{"t":324.24,"w":"ground"},{"t":324.58,"w":"Mente"},{"t":324.98,"w":"clara"},{"t":325.48,"w":"Oro"},{"t":326.5,"w":"From"},{"t":326.9,"w":"the"},{"t":327.28,"w":"boy"},{"t":327.68,"w":"Cast"},{"t":328.36,"w":"the"},{"t":328.68,"w":"gold"},{"t":329.08,"w":"Venimos"},{"t":329.7,"w":"del"},{"t":329.92,"w":"boi"},{"t":330.2,"w":"Now"},{"t":330.42,"w":"we"},{"t":330.56,"w":"burn"},{"t":330.78,"w":"it"},{"t":330.94,"w":"into"},{"t":331.14,"w":"gold"},{"t":332.72,"w":"Feet"},{"t":333.52,"w":"on"},{"t":333.52,"w":"the"},{"t":333.52,"w":"ground"}]}$j$::jsonb WHERE id = 'oro-de-la-presion' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:02.78] Este verano se siente diferente,
+[00:04.97] pero esto no es vacaciones,
+[00:07.54] esto es presión,
+[00:09.91] esto es fuego,
+[00:12.63] esto es cuando el vacío aprende mi nombre
+[00:15.80] Construye,
+[00:16.96] sube,
+[00:18.06] pressure make go,
+[00:19.44] la presión hace oro
+[00:23.78] Estamos afuera now,
+[00:26.02] feet on the ground,
+[00:28.42] let the bass roll up,
+[Verse 1]
+[00:30.20] del vacío hasta el oro
+[00:31.58] I had too much weight sitting heavy on my shoulders,
+[00:34.52] demasiada noche fría,
+[00:35.80] too many dreams getting older,
+[00:37.04] same wall,
+[00:37.70] same clock,
+[00:38.34] same fight with time,
+[00:39.46] same voice in the dark saying
+[00:41.00] You ain't gon' shine,
+[00:41.96] por el tambor sonar like a war call,
+[00:44.26] brass hair hard made the whole block tall,
+[00:47.02] one deep breath then I stood up tall
+[00:49.18] Had to stop waiting,
+[00:50.60] had to take a break,
+[00:51.18] had to take a break,
+[00:51.18] had to take a break,
+[00:51.18] had to take a break,
+[00:51.18] had to take a break,
+[00:51.18] had to take a break
+[00:51.20] Take it all,
+[00:51.92] laptop closed but the soul still loaded,
+[00:54.42] hands still dirty but the heart still golden,
+[00:56.90] I was down in the void where the lights don't show,
+[00:59.34] now I beat on the dark till the whole thing glow
+[01:01.68] Yo no estaba roto, me estaban formando, yo
+[Chorus]
+[01:07.22] no estaba muerto, me estaban quemando,
+[01:11.46] suelta el miedo,
+[01:12.54] llena el pecho con fire,
+[01:14.44] step to the noise,
+[01:15.38] climb a little higher,
+[01:16.80] no shame in the scars,
+[01:17.92] no fear in the climb
+[01:19.04] El mundo grita duro,
+[Bridge]
+[01:20.40] I'ma turn it into fire,
+[01:21.18] I'ma turn it into fire,
+[01:21.18] I'ma turn it into fire,
+[01:21.18] I'ma turn it into fire
+[01:21.76] Venimos,
+[01:22.28] bênimos,
+[01:22.44] Ben5,
+[01:23.42] now we turn it into gold,
+[01:24.80] oro en el pecho,
+[01:26.16] gold in the soul,
+[01:27.40] milk from the pressure,
+[01:28.68] raised by the cold,
+[01:29.86] venimos del boy,
+[01:30.90] now we turn it into gold
+[01:32.74] Ovejame un pesco,
+[01:34.17] que lo sepa todo el mundo,
+[01:36.70] déjalo arder,
+[01:39.18] déjalo ver,
+[01:41.64] mírame crecer,
+[01:44.26] venimos del boy, now we turn it into gold
+[Drop]
+[01:47.68] Ovejame un pesco
+[01:48.60] Que lo sepa todo el mundo
+[01:52.44] Deja el orden, déjalo ver,
+[01:57.09] mírame crecer,
+[01:58.98] venimos después, now we turn it into gold
+[02:01.12] Mente clara,
+[02:01.92] heart bold,
+[02:02.88] manos arriba,
+[02:03.60] still go,
+[02:04.34] new me,
+[02:05.22] still loaded,
+[02:06.48] alma limpia,
+[02:07.98] still glowing
+[02:10.20] De Queens to the island,
+[02:11.76] de la isla to the sky,
+[02:13.04] Boricua y Quique,
+[02:14.06] fuego en my eyes
+[02:15.46] Plata no perico,
+[02:16.68] ripiao,
+[02:17.10] drums in the street,
+[02:17.98] 808 under my chest,
+[02:19.16] brass under my feet
+[02:20.32] No more waiting on permission,
+[02:21.64] no more begging for a name,
+[02:22.88] no more hiding all the vision,
+[02:24.14] no more making joy feel shame
+[02:25.50] They laugh when the tools came out,
+[02:27.50] said it ain't real when the new waves sprout
+[02:29.83] But I built with the sparks,
+[02:31.66] built with the scars,
+[02:32.92] built with the bass and I aimed at stars
+[02:35.26] Tú tiras sombra,
+[02:36.44] yo la vuelvo sol,
+[02:37.84] tú tiras piedra,
+[02:38.94] yo construyo control
+[02:40.10] Tú can call it fake,
+[02:41.52] I call it freak,
+[02:42.74] I came from the void,
+[02:43.92] now the gold is me
+[02:45.02] No necesito tu corona, no necesito tu gay
+[Verse 2]
+[02:49.40] No necesito tu corona, no necesito tu gay
+[02:50.30] No necesito tu duda, no pago tu weight
+[02:54.46] Have your joy but keep your spirit,
+[02:57.18] toca el fuego,
+[02:58.30] keep your name
+[02:59.24] Taste the world but don't disappear in it,
+[03:02.26] pleasure don't have to become pain
+[Pre-Chorus]
+[03:04.36] Pasa el plato,
+[03:05.78] press,
+[03:06.26] forgive me,
+[03:07.06] spray your glass and bless the air
+[03:10.27] Estamos aquí un minuto,
+[03:12.00] feel the life you want while you're here
+[03:15.58] Venimos del voy,
+[03:17.22] now we turn it into gold,
+[03:18.68] oro en el pecho
+[03:20.30] Gold in the soul, built from the pressure
+[03:22.26] Raised by the cold,
+[03:23.64] venimos del voy,
+[03:24.70] now we turn it into gold
+[03:26.11] No we ever pass gold, que lo sepa todo el mundo
+[03:31.88] Déjalo arder,
+[03:34.34] déjalo ver,
+[03:36.51] mírame crecer
+[03:37.95] Venimos del voy, now we turn it into gold
+[Chorus]
+[03:42.22] Escucha,
+[03:43.08] no tienes que contestar cada alarma
+[03:45.66] No tienes que cargar cada fantasma
+[03:49.48] No tienes que quedar sin ti,
+[03:50.28] no tienes que quedar sin ti
+[03:50.30] Dejarte pequeño porque te conocieron en la oscuridad
+[03:54.10] Some nights are for healing
+[03:55.68] Some nights are for hands in the air
+[03:58.24] Pero algunas noches
+[Bridge]
+[03:59.96] Algunas noches
+[04:01.44] Tú mismo construyes la corona
+[04:03.66] ¿Quién te hizo?
+[04:05.22] La presión
+[04:06.06] ¿Quién te crió?
+[04:07.56] La lección
+[04:08.48] ¿Quién dudó?
+[04:10.08] Un montón
+[04:10.88] ¿Quién brilla?
+[04:12.04] El corazón
+[04:13.68] My mind go quiet
+[04:16.13] Heart go wide
+[04:17.26] Gumbo rolling
+[04:18.72] Fire inside
+[04:19.54] Man
+[04:20.30] Mente clara
+[04:21.06] Alma alive
+[04:22.14] Este verano viste la lágrima
+[04:24.72] I'm not just dope
+[04:25.64] Soy fuego con memoria
+[04:27.26] Every loss melted down in the gloria
+[04:29.76] Every no got folded in steel
+[04:32.52] Every star turned proof I'm real
+[04:34.58] Go can bang, go can shine
+[04:36.36] But I want worth that
+[04:37.90] Can't define
+[04:38.66] Más alto que prenda, más alto que rings
+[04:41.42] Higher in price, higher in kings
+[04:43.88] Del vacío al fuego
+[04:47.01] Del fuego al molde
+[04:48.52] Del molde al fuego
+[04:50.30] Al brillo
+[04:51.36] Del brillo
+[04:52.74] PESCO
+[04:54.40] Venimos del boi
+[04:56.04] Now we turn it into gold
+[04:57.56] Oro en el pecho
+[04:58.78] Gold in the soul
+[05:00.00] Built from the pressure
+[05:01.22] Raised by the cold
+[05:02.46] Venimos del boi
+[05:03.60] Now we burn it into gold
+[05:05.32] But we ain't been PESCO
+[05:07.14] Que lo sepa todo el mundo
+[05:09.28] Más alto que oro
+[05:12.06] Más alto que fear
+[05:14.30] Higher than what they said we were
+[05:16.98] Todavía aquí
+[05:19.40] Aire
+[05:20.12] Estamos afuera en la
+[05:21.90] Aire
+[05:23.12] Feet on the ground
+[05:24.58] Mente clara
+[05:25.48] Oro
+[05:26.50] From the boy
+[05:27.68] Cast the gold
+[05:29.08] Venimos del boi
+[05:30.20] Now we burn it into gold
+[05:32.72] Feet on the ground
+$j$ WHERE id = 'oro-de-la-presion' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song chronicles a journey from deep struggle and darkness into triumphant resilience, transforming personal pressure and pain into pure golden success through relentless creation.","overallMood":"Triumphant","themes":["Resilience against adversity","Transformation of pain into gold","Self-actualization and growth","Cultural pride and identity","Overcoming doubt and fear"],"palette":["#1a0b2e","#ff4500","#ffd700","#f8cdda"],"sections":[{"name":"Intro","emotion":"Brooding anticipation shifting to explosive energy","intensity":0.69,"colorHintHex":"#2e1a47","start":2.7800000000000002},{"name":"Verse 1","emotion":"Heavy burden turning into rising defiance","intensity":0.77,"colorHintHex":"#8b3d3d","start":30.2},{"name":"Chorus","emotion":"Soaring vocal release with unshakeable resolve","intensity":0.79,"colorHintHex":"#ff4500","start":67.22},{"name":"Bridge","emotion":"Philosophical epiphany culminating in total mastery of the self","intensity":0.96,"colorHintHex":"#e6b32c","start":80.4},{"name":"Drop","emotion":"Maximum intensity brass-heavy climax with pure golden realization","intensity":0.86,"colorHintHex":"#ffd700","start":107.68},{"name":"Verse 2","emotion":"Cool-headed reflection on rejecting external validation","intensity":0.53,"colorHintHex":"#4a3b69","start":169.4},{"name":"Pre-Chorus","emotion":"Building spiritual heat and atmospheric pressure","intensity":0.22,"colorHintHex":"#d18c5e","start":184.36}],"keywords":[{"word":"presión","emotion":"Intense physical and mental weight transforming into fuel","imageryPrompt":"A heavy, glowing blacksmith hammer striking molten gold ingot inside a dark forge with sparks flying in slow motion."},{"word":"oro","emotion":"Pure, radiant success reflecting inner worth","imageryPrompt":"Liquid golden metal pouring from cracks in the sky onto cracked earth to form a shimmering river of wealth and light."},{"word":"vacío","emotion":"Deep existential emptiness learning names through struggle","imageryPrompt":"A vast, swirling nebula of deep purple smoke where faint silhouettes stand against an infinite void that slowly ignites with orange embers."},{"word":"fuego","emotion":"Uncontrollable passion burning away fear and doubt","imageryPrompt":"A roaring inferno inside a human chest made of brass gears, flames licking upwards to illuminate a silhouette against a night sky."},{"word":"brass","emotion":"Hardened resilience sounding like war calls and building blocks","imageryPrompt":"Polished golden-yellow metal structures rising from ash into towering skyscrapers, vibrating with low-frequency sound waves visible as ripples."},{"word":"corazón","emotion":"Beating heart of gold amidst the chaos and pressure","imageryPrompt":"An anatomical heart made entirely of spinning golden coins beating rhythmically within a chest cavity surrounded by storm clouds that part to let light through."},{"word":"scars","emotion":"Proud marks of survival and the path climbed higher","imageryPrompt":"A warrior's arm where jagged silver scars glow with warm amber light, transforming from wounds into intricate maps of a mountain climb."},{"word":"void","emotion":"The dark place before dawn and the start of creation","imageryPrompt":"A bottomless pit filled with floating debris that slowly coalesces into stars as a single beam of sunlight pierces through from above."}]}$j$::jsonb) WHERE id = 'oro-de-la-presion' AND planet->'analysis' IS NULL;
+
+-- paper-that-cut-you: 828 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":2.46,"w":"You"},{"t":3.3,"w":"asked"},{"t":3.68,"w":"why"},{"t":4.06,"w":"it"},{"t":4.4,"w":"feels"},{"t":5.02,"w":"like"},{"t":5.4,"w":"night"},{"t":5.94,"w":"today"},{"t":6.78,"w":"I"},{"t":8.1,"w":"was"},{"t":9.02,"w":"the"},{"t":9.18,"w":"one"},{"t":9.56,"w":"who"},{"t":10.5,"w":"dimmed"},{"t":11.17,"w":"the"},{"t":11.3,"w":"room"},{"t":12.66,"w":"You"},{"t":13.08,"w":"asked"},{"t":13.86,"w":"what"},{"t":14.02,"w":"wasn't"},{"t":15.18,"w":"right"},{"t":15.56,"w":"today"},{"t":16.38,"w":"I"},{"t":17.7,"w":"was"},{"t":18.62,"w":"already"},{"t":18.72,"w":"moving"},{"t":19.44,"w":"through"},{"t":20.32,"w":"Yo!"},{"t":22.32,"w":"Cut,"},{"t":22.76,"w":"cut,"},{"t":23.08,"w":"cut,"},{"t":23.38,"w":"cut"},{"t":23.54,"w":"you"},{"t":24.21,"w":"Cut,"},{"t":25.2,"w":"cut,"},{"t":25.42,"w":"cut,"},{"t":25.84,"w":"cut"},{"t":25.84,"w":"you"},{"t":26.14,"w":"Cut,"},{"t":27.52,"w":"cut,"},{"t":27.92,"w":"cut,"},{"t":28.22,"w":"cut"},{"t":28.34,"w":"you"},{"t":29.8,"w":"Cut,"},{"t":30.2,"w":"cut,"},{"t":30.6,"w":"cut,"},{"t":30.6,"w":"cut"},{"t":30.72,"w":"you"},{"t":30.72,"w":"You"},{"t":31.18,"w":"asked"},{"t":31.5,"w":"why"},{"t":31.66,"w":"the"},{"t":31.8,"w":"night"},{"t":31.92,"w":"came"},{"t":32.2,"w":"early"},{"t":32.56,"w":"I"},{"t":32.72,"w":"pulled"},{"t":32.88,"w":"the"},{"t":33,"w":"shade"},{"t":33.2,"w":"across"},{"t":33.4,"w":"the"},{"t":33.62,"w":"sky"},{"t":35.44,"w":"You"},{"t":35.84,"w":"asked"},{"t":36.24,"w":"what"},{"t":36.46,"w":"felt"},{"t":36.6,"w":"wrong"},{"t":36.78,"w":"inside"},{"t":37.1,"w":"you"},{"t":37.5,"w":"I"},{"t":37.66,"w":"was"},{"t":37.82,"w":"teaching"},{"t":38.04,"w":"fear"},{"t":38.54,"w":"to"},{"t":39.44,"w":"lie"},{"t":40.54,"w":"You"},{"t":40.72,"w":"asked"},{"t":41.12,"w":"why"},{"t":41.26,"w":"get"},{"t":41.4,"w":"dressed,"},{"t":41.66,"w":"stay"},{"t":41.76,"w":"tight"},{"t":42.06,"w":"And"},{"t":42.2,"w":"I"},{"t":42.32,"w":"kept"},{"t":42.46,"w":"my"},{"t":42.6,"w":"head"},{"t":42.78,"w":"around"},{"t":43.02,"w":"the"},{"t":43.22,"w":"thread"},{"t":44.84,"w":"You"},{"t":44.94,"w":"didn't"},{"t":45.34,"w":"know"},{"t":45.48,"w":"what"},{"t":45.58,"w":"stressed"},{"t":45.74,"w":"you"},{"t":46.08,"w":"first"},{"t":46.56,"w":"I"},{"t":47.2,"w":"fed"},{"t":47.6,"w":"the"},{"t":47.82,"w":"pressure"},{"t":48.3,"w":"in"},{"t":48.8,"w":"your"},{"t":49,"w":"head"},{"t":49.46,"w":"Do"},{"t":49.78,"w":"you"},{"t":49.9,"w":"know"},{"t":50.08,"w":"what"},{"t":50.24,"w":"the"},{"t":50.34,"w":"voice"},{"t":50.64,"w":"feels"},{"t":50.92,"w":"like?"},{"t":51.2,"w":"Because"},{"t":51.4,"w":"I"},{"t":51.58,"w":"learned"},{"t":51.78,"w":"how"},{"t":51.88,"w":"to"},{"t":52.02,"w":"speak"},{"t":52.16,"w":"low"},{"t":52.38,"w":"In"},{"t":52.64,"w":"the"},{"t":52.74,"w":"back"},{"t":52.98,"w":"of"},{"t":53.12,"w":"every"},{"t":53.32,"w":"floor"},{"t":53.58,"w":"Where"},{"t":53.86,"w":"the"},{"t":53.96,"w":"quiet"},{"t":54.14,"w":"things"},{"t":54.48,"w":"grow"},{"t":54.8,"w":"I'm"},{"t":55.08,"w":"the"},{"t":55.16,"w":"face"},{"t":55.44,"w":"that"},{"t":55.62,"w":"you"},{"t":55.78,"w":"hold"},{"t":55.96,"w":"inside"},{"t":56.16,"w":"I"},{"t":56.36,"w":"wake"},{"t":56.52,"w":"up"},{"t":56.74,"w":"when"},{"t":56.86,"w":"your"},{"t":57,"w":"eyes"},{"t":57.24,"w":"close"},{"t":57.48,"w":"I"},{"t":57.74,"w":"watch"},{"t":57.9,"w":"every"},{"t":58.1,"w":"little"},{"t":58.4,"w":"lie"},{"t":58.64,"w":"And"},{"t":58.78,"w":"I'm"},{"t":58.78,"w":"the"},{"t":58.78,"w":"voice"},{"t":58.78,"w":"that"},{"t":58.78,"w":"you"},{"t":58.78,"w":"hold"},{"t":58.8,"w":"And"},{"t":58.8,"w":"I"},{"t":58.98,"w":"laugh"},{"t":58.98,"w":"when"},{"t":59.22,"w":"your"},{"t":59.38,"w":"balance"},{"t":59.66,"w":"goes"},{"t":59.88,"w":"I"},{"t":60.14,"w":"see"},{"t":60.42,"w":"everything"},{"t":61.1,"w":"Every"},{"t":61.96,"w":"crack"},{"t":62.54,"w":"you"},{"t":62.86,"w":"hide"},{"t":63.24,"w":"within"},{"t":63.62,"w":"When"},{"t":64.34,"w":"it's"},{"t":64.72,"w":"time"},{"t":65.02,"w":"to"},{"t":65.24,"w":"sink"},{"t":65.56,"w":"or"},{"t":65.82,"w":"swim"},{"t":66.12,"w":"I"},{"t":66.44,"w":"breathe"},{"t":66.82,"w":"right"},{"t":67.1,"w":"under"},{"t":67.94,"w":"your"},{"t":68.78,"w":"skin"},{"t":69.14,"w":"You"},{"t":69.73,"w":"keep"},{"t":70.04,"w":"looking"},{"t":70.34,"w":"back"},{"t":71,"w":"But"},{"t":71.38,"w":"I"},{"t":71.56,"w":"was"},{"t":71.86,"w":"never"},{"t":72.16,"w":"far"},{"t":72.72,"w":"behind"},{"t":74.36,"w":"You"},{"t":74.46,"w":"keep"},{"t":74.82,"w":"hearing"},{"t":75.28,"w":"storms"},{"t":75.68,"w":"Because"},{"t":76.24,"w":"I"},{"t":76.6,"w":"spit"},{"t":76.88,"w":"them"},{"t":77.2,"w":"in"},{"t":77.66,"w":"your"},{"t":77.8,"w":"mind"},{"t":78.98,"w":"I"},{"t":79.76,"w":"know"},{"t":79.86,"w":"why"},{"t":80.52,"w":"you're"},{"t":80.86,"w":"paranoid"},{"t":81.79,"w":"I'm"},{"t":82.64,"w":"the"},{"t":82.68,"w":"shadow"},{"t":83.23,"w":"at"},{"t":83.38,"w":"your"},{"t":83.62,"w":"back"},{"t":84.48,"w":"I"},{"t":84.64,"w":"know"},{"t":84.86,"w":"why"},{"t":85.16,"w":"your"},{"t":85.7,"w":"head"},{"t":85.8,"w":"keeps"},{"t":86.06,"w":"spinning"},{"t":86.48,"w":"I'm"},{"t":87.22,"w":"the"},{"t":87.32,"w":"wind"},{"t":87.68,"w":"inside"},{"t":88.14,"w":"the"},{"t":88.44,"w":"stairs"},{"t":88.74,"w":"I'm"},{"t":89.32,"w":"the"},{"t":89.32,"w":"static"},{"t":89.32,"w":"I"},{"t":89.5,"w":"know"},{"t":89.6,"w":"why"},{"t":90.04,"w":"you"},{"t":90.4,"w":"hear"},{"t":90.68,"w":"me"},{"t":90.8,"w":"within"},{"t":92.12,"w":"I'm"},{"t":92.22,"w":"the"},{"t":92.32,"w":"voice"},{"t":92.64,"w":"you"},{"t":92.74,"w":"can't"},{"t":93.12,"w":"undo"},{"t":93.44,"w":"I"},{"t":94.08,"w":"know"},{"t":94.44,"w":"why"},{"t":94.76,"w":"the"},{"t":95.02,"w":"face"},{"t":95.4,"w":"is"},{"t":95.68,"w":"near"},{"t":95.98,"w":"I'm"},{"t":96.76,"w":"the"},{"t":96.96,"w":"paper"},{"t":97.3,"w":"that"},{"t":97.56,"w":"cut"},{"t":97.88,"w":"you"},{"t":99.36,"w":"Cut,"},{"t":99.8,"w":"cut,"},{"t":100.08,"w":"cut"},{"t":100.26,"w":"you"},{"t":101.86,"w":"Paper"},{"t":102,"w":"that"},{"t":102.36,"w":"cut"},{"t":102.68,"w":"you"},{"t":103.68,"w":"Still"},{"t":103.9,"w":"beneath,"},{"t":104.58,"w":"still"},{"t":105,"w":"beneath"},{"t":105.5,"w":"Still"},{"t":106.24,"w":"beneath"},{"t":106.66,"w":"your"},{"t":107.14,"w":"skin"},{"t":107.48,"w":"You"},{"t":107.84,"w":"said"},{"t":108.04,"w":"you"},{"t":108.2,"w":"got"},{"t":108.36,"w":"a"},{"t":108.48,"w":"face"},{"t":108.68,"w":"in"},{"t":108.8,"w":"you"},{"t":108.92,"w":"I"},{"t":109.08,"w":"know"},{"t":109.24,"w":"I"},{"t":109.42,"w":"called"},{"t":109.58,"w":"it"},{"t":109.7,"w":"carefully"},{"t":109.97,"w":"Pointing"},{"t":110.52,"w":"out"},{"t":110.66,"w":"mistakes"},{"t":110.94,"w":"to"},{"t":111.16,"w":"you"},{"t":111.34,"w":"With"},{"t":111.48,"w":"the"},{"t":111.52,"w":"way"},{"t":111.66,"w":"y"},{"t":111.74,"w":"'all"},{"t":111.84,"w":"made"},{"t":111.94,"w":"you"},{"t":112.08,"w":"carry"},{"t":112.3,"w":"me"},{"t":112.52,"w":"You"},{"t":112.66,"w":"said"},{"t":112.84,"w":"we"},{"t":112.96,"w":"all"},{"t":113.14,"w":"have"},{"t":113.3,"w":"one"},{"t":113.44,"w":"inside"},{"t":113.7,"w":"Now"},{"t":113.84,"w":"you're"},{"t":114.04,"w":"finally"},{"t":114.26,"w":"speaking"},{"t":114.6,"w":"true"},{"t":114.92,"w":"But"},{"t":115.06,"w":"the"},{"t":115.14,"w":"face"},{"t":115.26,"w":"you"},{"t":115.36,"w":"fear"},{"t":115.54,"w":"in"},{"t":115.7,"w":"everyone"},{"t":115.96,"w":"Is"},{"t":116.28,"w":"learning"},{"t":116.48,"w":"tricks"},{"t":116.72,"w":"from"},{"t":117.08,"w":"you"},{"t":117.36,"w":"You"},{"t":117.78,"w":"asked"},{"t":117.96,"w":"what"},{"t":118.1,"w":"set"},{"t":118.22,"w":"you"},{"t":118.36,"w":"off"},{"t":118.62,"w":"First,"},{"t":119,"w":"I"},{"t":119.14,"w":"was"},{"t":119.28,"w":"there"},{"t":119.4,"w":"before"},{"t":119.64,"w":"the"},{"t":119.84,"w":"spark"},{"t":120.02,"w":"You"},{"t":120.34,"w":"asked"},{"t":120.54,"w":"like"},{"t":120.64,"w":"you"},{"t":120.76,"w":"can't"},{"t":121.02,"w":"stand"},{"t":121.18,"w":"it"},{"t":121.4,"w":"I"},{"t":121.5,"w":"was"},{"t":121.68,"w":"whispering"},{"t":121.92,"w":"in"},{"t":122.14,"w":"the"},{"t":122.24,"w":"dark"},{"t":122.56,"w":"They"},{"t":122.74,"w":"act"},{"t":122.9,"w":"like"},{"t":123.04,"w":"you"},{"t":123.18,"w":"don't"},{"t":123.44,"w":"measure"},{"t":123.68,"w":"up"},{"t":124,"w":"So"},{"t":124.18,"w":"I"},{"t":124.34,"w":"sharpen"},{"t":124.56,"w":"every"},{"t":124.88,"w":"doubt"},{"t":125.14,"w":"I"},{"t":125.4,"w":"turn"},{"t":125.54,"w":"every"},{"t":125.8,"w":"little"},{"t":126.08,"w":"comparison"},{"t":126.64,"w":"Into"},{"t":126.94,"w":"something"},{"t":127.22,"w":"you"},{"t":127.52,"w":"can't"},{"t":127.82,"w":"get"},{"t":127.98,"w":"out"},{"t":128.26,"w":"Everybody"},{"t":128.6,"w":"has"},{"t":129.02,"w":"a"},{"t":129.14,"w":"face"},{"t":129.34,"w":"inside"},{"t":129.6,"w":"A"},{"t":129.94,"w":"watcher"},{"t":130.36,"w":"in"},{"t":130.5,"w":"the"},{"t":130.62,"w":"wire"},{"t":130.92,"w":"Is"},{"t":131.16,"w":"a"},{"t":131.22,"w":"witness"},{"t":131.5,"w":"when"},{"t":131.7,"w":"the"},{"t":131.84,"w":"truth"},{"t":132.06,"w":"gets"},{"t":132.36,"w":"bent"},{"t":132.78,"w":"Bent"},{"t":133.44,"w":"A"},{"t":134.06,"w":"laugh"},{"t":134.5,"w":"beneath"},{"t":134.96,"w":"the"},{"t":135.34,"w":"fire"},{"t":136.44,"w":"So"},{"t":136.96,"w":"when"},{"t":137.1,"w":"they"},{"t":137.26,"w":"think"},{"t":137.38,"w":"or"},{"t":137.7,"w":"swim"},{"t":138.62,"w":"They'll"},{"t":138.96,"w":"feel"},{"t":139.22,"w":"what"},{"t":139.52,"w":"you've"},{"t":139.88,"w":"been"},{"t":140.2,"w":"through"},{"t":140.5,"w":"The"},{"t":141.24,"w":"face"},{"t":141.68,"w":"inside"},{"t":142.14,"w":"is"},{"t":142.56,"w":"watching"},{"t":142.96,"w":"them"},{"t":143.44,"w":"The"},{"t":143.64,"w":"way"},{"t":144.02,"w":"I"},{"t":144.3,"w":"watch"},{"t":144.68,"w":"you"},{"t":144.92,"w":"too"},{"t":145.9,"w":"You"},{"t":146.42,"w":"keep"},{"t":146.74,"w":"looking"},{"t":147.08,"w":"back"},{"t":147.68,"w":"But"},{"t":148.02,"w":"I"},{"t":148.22,"w":"was"},{"t":148.52,"w":"never"},{"t":148.6,"w":"far"},{"t":148.6,"w":"behind"},{"t":148.62,"w":"You"},{"t":149.2,"w":"keep"},{"t":151.42,"w":"hearing"},{"t":151.98,"w":"storms"},{"t":152.36,"w":"Because"},{"t":152.9,"w":"I"},{"t":153.28,"w":"spin"},{"t":153.54,"w":"them"},{"t":153.9,"w":"in"},{"t":154.34,"w":"your"},{"t":154.44,"w":"mind"},{"t":155.6,"w":"I"},{"t":156.42,"w":"know"},{"t":156.56,"w":"why"},{"t":157.18,"w":"you're"},{"t":157.54,"w":"paranoid"},{"t":158.36,"w":"I'm"},{"t":159.26,"w":"the"},{"t":159.39,"w":"shadow"},{"t":159.7,"w":"at"},{"t":160.06,"w":"your"},{"t":160.32,"w":"back"},{"t":160.76,"w":"I"},{"t":161.22,"w":"know"},{"t":161.54,"w":"why"},{"t":161.82,"w":"your"},{"t":162.14,"w":"head"},{"t":162.44,"w":"keeps"},{"t":162.7,"w":"spinning"},{"t":163.2,"w":"I'm"},{"t":163.86,"w":"the"},{"t":164,"w":"wind"},{"t":164.28,"w":"inside"},{"t":164.82,"w":"the"},{"t":165.08,"w":"static"},{"t":165.52,"w":"I"},{"t":166.12,"w":"know"},{"t":166.34,"w":"why"},{"t":166.72,"w":"you"},{"t":167.06,"w":"hear"},{"t":167.34,"w":"me"},{"t":167.48,"w":"within"},{"t":168.06,"w":"I'm"},{"t":168.86,"w":"the"},{"t":168.94,"w":"voice"},{"t":169.26,"w":"you"},{"t":169.46,"w":"can't"},{"t":169.78,"w":"undo"},{"t":170.14,"w":"I"},{"t":170.68,"w":"know"},{"t":171.1,"w":"why"},{"t":171.46,"w":"the"},{"t":171.7,"w":"face"},{"t":172.1,"w":"is"},{"t":172.38,"w":"near"},{"t":172.62,"w":"I'm"},{"t":173.46,"w":"the"},{"t":173.62,"w":"paper"},{"t":174,"w":"that"},{"t":174.26,"w":"cut"},{"t":174.56,"w":"you"},{"t":176.43,"w":"The,"},{"t":176.82,"w":"the,"},{"t":177.04,"w":"the,"},{"t":177.18,"w":"the,"},{"t":177.3,"w":"the"},{"t":177.38,"w":"cut"},{"t":177.46,"w":"Is"},{"t":177.84,"w":"right"},{"t":178.06,"w":"beneath"},{"t":178.48,"w":"you"},{"t":179.64,"w":"The,"},{"t":180.04,"w":"the,"},{"t":180.48,"w":"the,"},{"t":180.88,"w":"the,"},{"t":181.16,"w":"the,"},{"t":181.36,"w":"the,"},{"t":181.46,"w":"the,"},{"t":181.62,"w":"the,"},{"t":181.76,"w":"the,"},{"t":182.06,"w":"the,"},{"t":182.4,"w":"the,"},{"t":182.5,"w":"the,"},{"t":182.52,"w":"the,"},{"t":182.52,"w":"the,"},{"t":182.52,"w":"the,"},{"t":182.52,"w":"the,"},{"t":182.7,"w":"the,"},{"t":182.7,"w":"the,"},{"t":183.78,"w":"the,"},{"t":184.2,"w":"the,"},{"t":184.72,"w":"the,"},{"t":184.72,"w":"the,"},{"t":184.74,"w":"the,"},{"t":186.62,"w":"the,"},{"t":186.76,"w":"the,"},{"t":186.78,"w":"the,"},{"t":186.86,"w":"the,"},{"t":186.86,"w":"the,"},{"t":186.86,"w":"the,"},{"t":186.86,"w":"the,"},{"t":186.86,"w":"the,"},{"t":187.2,"w":"the,"},{"t":187.34,"w":"the,"},{"t":187.46,"w":"the,"},{"t":187.46,"w":"the,"},{"t":187.46,"w":"the,"},{"t":187.46,"w":"the,"},{"t":187.46,"w":"the,"},{"t":187.46,"w":"the,"},{"t":188.2,"w":"the,"},{"t":188.2,"w":"the,"},{"t":188.2,"w":"the,"},{"t":188.64,"w":"the,"},{"t":188.64,"w":"the,"},{"t":188.64,"w":"the,"},{"t":188.7,"w":"the,"},{"t":188.7,"w":"the,"},{"t":188.82,"w":"the,"},{"t":188.82,"w":"the,"},{"t":188.82,"w":"the,"},{"t":188.82,"w":"the,"},{"t":188.82,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.84,"w":"the,"},{"t":188.92,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.46,"w":"the,"},{"t":190.68,"w":"the,"},{"t":191,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.04,"w":"the,"},{"t":191.06,"w":"the,"},{"t":191.44,"w":"the,"},{"t":191.74,"w":"the,"},{"t":192.14,"w":"the,"},{"t":193.78,"w":"the,"},{"t":194.4,"w":"the,"},{"t":196.56,"w":"the,"},{"t":197.64,"w":"the,"},{"t":198.18,"w":"the,"},{"t":198.42,"w":"the,"},{"t":198.62,"w":"the,"},{"t":198.88,"w":"the,"},{"t":198.88,"w":"the,"},{"t":203.4,"w":"the"},{"t":208.6,"w":"I'll"},{"t":209.57,"w":"make"},{"t":210.66,"w":"the"},{"t":210.76,"w":"mirror"},{"t":211.3,"w":"sing"},{"t":211.68,"w":"back"},{"t":212.4,"w":"to"},{"t":212.84,"w":"you"},{"t":218.14,"w":"You"},{"t":218.24,"w":"asked"},{"t":218.88,"w":"who"},{"t":219.08,"w":"was"},{"t":219.3,"w":"watching,"},{"t":219.92,"w":"you"},{"t":220.08,"w":"were"},{"t":220.4,"w":"You"},{"t":220.82,"w":"asked"},{"t":221.32,"w":"what"},{"t":221.5,"w":"was"},{"t":221.72,"w":"laughing,"},{"t":222.26,"w":"you"},{"t":222.48,"w":"were"},{"t":222.82,"w":"You"},{"t":223.3,"w":"asked"},{"t":223.7,"w":"why"},{"t":223.92,"w":"it"},{"t":224.1,"w":"followed,"},{"t":224.7,"w":"you"},{"t":224.88,"w":"moved"},{"t":225.28,"w":"You"},{"t":225.72,"w":"asked"},{"t":226.12,"w":"what"},{"t":226.3,"w":"was"},{"t":226.56,"w":"inside,"},{"t":227.3,"w":"not"},{"t":227.54,"w":"you"},{"t":228.04,"w":"You,"},{"t":228.92,"w":"you,"},{"t":229.12,"w":"you,"},{"t":229.2,"w":"you,"},{"t":229.82,"w":"you,"},{"t":229.82,"w":"you,"},{"t":230.06,"w":"you,"},{"t":230.44,"w":"you,"},{"t":230.5,"w":"you,"},{"t":230.94,"w":"you,"},{"t":231.12,"w":"you"},{"t":231.38,"w":"You"},{"t":231.4,"w":"don't"},{"t":231.72,"w":"sing"},{"t":232.04,"w":"me"},{"t":233.86,"w":"I,"},{"t":234.66,"w":"I"},{"t":236.58,"w":"remix"},{"t":236.76,"w":"you"},{"t":237.88,"w":"Cut,"},{"t":238.76,"w":"cut,"},{"t":239.04,"w":"cut"},{"t":239.22,"w":"you"},{"t":239.66,"w":"Paper"},{"t":240.86,"w":"that"},{"t":241.34,"w":"cut"},{"t":241.64,"w":"you"},{"t":241.96,"w":"I"},{"t":242.36,"w":"know"},{"t":242.82,"w":"why"},{"t":243.44,"w":"you're"},{"t":243.78,"w":"paranoid"},{"t":244.59,"w":"I'm"},{"t":245.54,"w":"the"},{"t":245.62,"w":"shadow"},{"t":245.94,"w":"at"},{"t":246.32,"w":"your"},{"t":246.58,"w":"back"},{"t":247.06,"w":"I"},{"t":247.56,"w":"know"},{"t":247.8,"w":"why"},{"t":248.08,"w":"your"},{"t":248.36,"w":"head"},{"t":248.72,"w":"keeps"},{"t":248.98,"w":"spinning"},{"t":249.46,"w":"I'm"},{"t":250.12,"w":"the"},{"t":250.28,"w":"wind"},{"t":250.56,"w":"inside"},{"t":251.04,"w":"the"},{"t":251.36,"w":"static"},{"t":251.82,"w":"I"},{"t":252.45,"w":"know"},{"t":252.6,"w":"why"},{"t":253,"w":"you"},{"t":253.36,"w":"hear"},{"t":253.64,"w":"me"},{"t":253.78,"w":"within"},{"t":254.29,"w":"I'm"},{"t":255.14,"w":"the"},{"t":255.22,"w":"voice"},{"t":255.5,"w":"you"},{"t":255.7,"w":"can't"},{"t":256.04,"w":"undo"},{"t":256.4,"w":"I"},{"t":256.98,"w":"know"},{"t":257.38,"w":"why"},{"t":257.74,"w":"your"},{"t":257.88,"w":"face"},{"t":258.34,"w":"is"},{"t":258.64,"w":"near"},{"t":258.92,"w":"I'm"},{"t":259.74,"w":"the"},{"t":259.88,"w":"paper"},{"t":260.28,"w":"that"},{"t":260.52,"w":"cut"},{"t":260.86,"w":"you"},{"t":261.34,"w":"I"},{"t":261.98,"w":"know"},{"t":262.37,"w":"why"},{"t":262.6,"w":"you're"},{"t":262.96,"w":"paranoid"},{"t":263.58,"w":"I'm"},{"t":264.44,"w":"the"},{"t":264.52,"w":"warning"},{"t":265.18,"w":"in"},{"t":265.68,"w":"the"},{"t":265.84,"w":"room"},{"t":266.42,"w":"I"},{"t":266.72,"w":"know"},{"t":266.98,"w":"why"},{"t":267.1,"w":"you're"},{"t":267.1,"w":"scared"},{"t":267.12,"w":"I"},{"t":267.38,"w":"know"},{"t":267.38,"w":"why"},{"t":267.38,"w":"the"},{"t":267.66,"w":"light"},{"t":268.06,"w":"betrays"},{"t":268.88,"w":"I"},{"t":268.99,"w":"was"},{"t":269.36,"w":"standing"},{"t":269.8,"w":"next"},{"t":270.42,"w":"to"},{"t":270.66,"w":"you"},{"t":270.86,"w":"I"},{"t":271.34,"w":"know"},{"t":271.78,"w":"why"},{"t":272.18,"w":"you"},{"t":272.61,"w":"can't"},{"t":272.9,"w":"stop"},{"t":273.12,"w":"hearing"},{"t":273.88,"w":"What"},{"t":273.98,"w":"I"},{"t":274.16,"w":"buried"},{"t":274.72,"w":"deep"},{"t":275.26,"w":"within"},{"t":275.62,"w":"I"},{"t":276.32,"w":"know"},{"t":276.56,"w":"why"},{"t":276.9,"w":"your"},{"t":277.08,"w":"face"},{"t":277.72,"w":"is"},{"t":277.82,"w":"near"},{"t":278.2,"w":"I'm"},{"t":279.1,"w":"still"},{"t":279.42,"w":"beneath"},{"t":279.78,"w":"your"},{"t":280.24,"w":"skin"},{"t":280.56,"w":"I'm"},{"t":281.02,"w":"still"},{"t":281.02,"w":"beneath"},{"t":281.02,"w":"your"},{"t":281.02,"w":"skin"},{"t":281.34,"w":"You"},{"t":281.44,"w":"asked"},{"t":281.96,"w":"why"},{"t":282.48,"w":"it"},{"t":282.74,"w":"feels"},{"t":283.3,"w":"like"},{"t":283.7,"w":"night"},{"t":284.3,"w":"today"},{"t":285.02,"w":"You"},{"t":286.32,"w":"asked"},{"t":286.32,"w":"why"},{"t":286.52,"w":"it"},{"t":286.52,"w":"feels"},{"t":286.52,"w":"like"},{"t":286.52,"w":"night"},{"t":286.52,"w":"today"},{"t":286.52,"w":"You"},{"t":286.52,"w":"asked"},{"t":286.52,"w":"why"},{"t":286.76,"w":"it"},{"t":286.76,"w":"feels"},{"t":286.84,"w":"like"},{"t":286.84,"w":"night"},{"t":286.94,"w":"today"},{"t":286.94,"w":"Now"},{"t":287.18,"w":"you"},{"t":287.52,"w":"know"},{"t":290.98,"w":"Cut,"},{"t":291.48,"w":"cut,"},{"t":291.76,"w":"cut"},{"t":291.98,"w":"you"},{"t":293.02,"w":"Good"},{"t":293.38,"w":"night"},{"t":295.12,"w":"Cut,"},{"t":296.26,"w":"cut,"},{"t":296.56,"w":"cut"},{"t":296.72,"w":"you"},{"t":297.12,"w":"Cut,"},{"t":297.64,"w":"cut,"},{"t":298,"w":"cut"},{"t":298.66,"w":"you"},{"t":298.86,"w":"Good"},{"t":299.2,"w":"night"}]}$j$::jsonb WHERE id = 'paper-that-cut-you' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:02.44] You asked why it feels like night today
+[00:06.76] I was the one who dimmed the room
+[00:12.64] You asked what wasn't right today
+[00:16.36] I was already moving through
+[00:20.30] Yo!
+[00:22.30] Cut, cut, cut, cut you
+[00:24.19] Cut,
+[00:25.18] cut, cut, cut you
+[00:26.12] Cut,
+[00:27.50] cut, cut, cut you
+[00:29.78] Cut, cut, cut, cut you
+[Verse 1]
+[00:30.70] You asked why the night came early
+[00:32.54] I pulled the shade across the sky
+[00:35.42] You asked what felt wrong inside you
+[00:37.48] I was teaching fear to lie
+[00:40.52] You asked why get dressed, stay tight
+[00:42.04] And I kept my head around the thread
+[00:44.82] You didn't know what stressed you first
+[00:46.54] I fed the pressure in your head
+[00:49.44] Do you know what the voice feels like?
+[00:51.18] Because I learned how to speak low
+[00:52.36] In the back of every floor
+[00:53.56] Where the quiet things grow
+[00:54.78] I'm the face that you hold inside
+[00:56.14] I wake up when your eyes close
+[00:57.46] I watch every little lie
+[00:58.62] And I'm the voice that you hold
+[00:58.78] And I laugh when your balance goes
+[00:59.86] I see everything
+[01:01.08] Every crack you hide within
+[01:03.60] When it's time to sink or swim
+[01:06.10] I breathe right under your skin
+[01:09.12] You keep looking back
+[01:10.98] But I was never far behind
+[01:14.34] You keep hearing storms
+[01:15.66] Because I spit them in your mind
+[01:18.96] I know why you're paranoid
+[01:21.77] I'm the shadow at your back
+[01:24.46] I know why your head keeps spinning
+[01:26.46] I'm the wind inside the stairs
+[01:28.72] I'm the static
+[01:29.30] I know why you hear me within
+[01:32.10] I'm the voice you can't undo
+[01:33.42] I know why the face is near
+[01:35.96] I'm the paper that cut you
+[01:39.34] Cut, cut, cut you
+[01:41.83] Paper that cut you
+[01:43.66] Still beneath, still beneath
+[01:45.48] Still beneath your skin
+[01:47.46] You said you got a face in you
+[01:48.90] I know I called it carefully
+[Pre-Chorus]
+[01:49.95] Pointing out mistakes to you
+[01:51.32] With the way y'all made you carry me
+[01:52.50] You said we all have one inside
+[01:53.68] Now you're finally speaking true
+[01:54.90] But the face you fear in everyone
+[01:55.94] Is learning tricks from you
+[01:57.34] You asked what set you off
+[01:58.60] First, I was there before the spark
+[Chorus]
+[01:59.00] You asked like you can't stand it
+[02:01.38] I was whispering in the dark
+[02:02.54] They act like you don't measure up
+[02:03.98] So I sharpen every doubt
+[02:05.12] I turn every little comparison
+[02:06.62] Into something you can't get out
+[02:08.24] Everybody has a face inside
+[02:09.58] A watcher in the wire
+[02:10.90] Is a witness when the truth gets bent
+[02:12.76] Bent
+[02:13.42] A laugh beneath the fire
+[02:16.42] So when they think or swim
+[02:18.60] They'll feel what you've been through
+[Post-Chorus]
+[02:20.48] The face inside is watching them
+[02:23.42] The way I watch you too
+[02:25.88] You keep looking back
+[Verse 2]
+[02:27.66] But I was never far behind
+[02:28.60] You keep hearing storms
+[02:32.34] Because I spin them in your mind
+[02:35.58] I know why you're paranoid
+[02:38.34] I'm the shadow at your back
+[02:40.74] I know why your head keeps spinning
+[02:43.18] I'm the wind inside the static
+[02:45.50] I know why you hear me within
+[02:48.04] I'm the voice you can't undo
+[02:50.12] I know why the face is near
+[02:52.60] I'm the paper that cut you
+[02:56.41] The, the, the, the, the cut
+[02:57.44] Is right beneath you
+[02:59.62] The,
+[03:00.02] the,
+[03:00.46] the,
+[03:00.86] the,
+[03:01.14] the,
+[03:01.34] the,
+[03:01.44] the,
+[03:01.60] the,
+[03:01.74] the,
+[03:02.04] the,
+[03:02.38] the,
+[03:02.48] the,
+[03:02.50] the,
+[03:02.50] the,
+[03:02.50] the,
+[03:02.50] the,
+[03:02.68] the,
+[03:02.68] the,
+[03:03.76] the,
+[03:04.18] the,
+[03:04.70] the,
+[03:04.70] the,
+[03:04.72] the,
+[03:06.60] the,
+[03:06.74] the,
+[03:06.76] the,
+[03:06.84] the,
+[03:06.84] the,
+[03:06.84] the,
+[03:06.84] the,
+[03:06.84] the,
+[03:07.18] the,
+[03:07.32] the,
+[03:07.44] the,
+[03:07.44] the,
+[03:07.44] the,
+[03:07.44] the,
+[03:07.44] the,
+[03:07.44] the,
+[03:08.18] the,
+[03:08.18] the,
+[03:08.18] the,
+[03:08.62] the,
+[03:08.62] the,
+[03:08.62] the,
+[03:08.68] the,
+[03:08.68] the,
+[03:08.80] the,
+[03:08.80] the,
+[03:08.80] the,
+[03:08.80] the,
+[03:08.80] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.82] the,
+[03:08.90] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.44] the,
+[03:10.66] the,
+[03:10.98] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.02] the,
+[03:11.04] the,
+[03:11.42] the,
+[03:11.72] the,
+[03:12.12] the,
+[03:13.76] the, the, the, the, the, the, the, the, the, the
+[03:28.58] I'll make the mirror sing back to you
+[03:38.12] You asked who was watching, you were
+[03:40.38] You asked what was laughing, you were
+[03:42.80] You asked why it followed, you moved
+[03:45.26] You asked what was inside, not you
+[Pre-Chorus]
+[03:48.02] You,
+[03:48.90] you,
+[03:49.10] you,
+[03:49.18] you,
+[03:49.80] you,
+[03:49.80] you,
+[03:50.04] you,
+[03:50.42] you,
+[03:50.48] you,
+[03:50.92] you,
+[03:51.10] you
+[03:51.36] You don't sing me
+[03:53.84] I,
+[03:54.64] I
+[Chorus]
+[03:56.55] remix you
+[03:57.86] Cut, cut, cut you
+[03:59.64] Paper that cut you
+[04:01.94] I know why you're paranoid
+[04:04.57] I'm the shadow at your back
+[04:07.04] I know why your head keeps spinning
+[04:09.44] I'm the wind inside the static
+[04:11.80] I know why you hear me within
+[04:14.27] I'm the voice you can't undo
+[04:16.38] I know why your face is near
+[04:18.90] I'm the paper that cut you
+[04:21.32] I know why you're paranoid
+[04:23.56] I'm the warning in the room
+[04:26.40] I know why you're scared
+[04:27.10] I know why the light betrays
+[04:28.86] I was standing next to you
+[04:30.84] I know why you can't stop hearing
+[04:33.86] What I buried deep within
+[04:35.60] I know why your face is near
+[04:38.18] I'm still beneath your skin
+[04:40.54] I'm still beneath your skin
+[04:41.32] You asked why it feels like night today
+[04:45.00] You asked why it feels like night today
+[04:46.50] You asked why it feels like night today
+[04:46.92] Now you know
+[04:50.96] Cut, cut, cut you
+[04:52.00] Good night
+[04:55.10] Cut,
+[04:56.24] cut, cut you
+[Bridge/Outro Part A]
+[04:57.10] Cut, cut, cut you
+[04:58.84] Good night
+$j$ WHERE id = 'paper-that-cut-you' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song explores the internalization of paranoia and self-sabotage, where a dark inner voice acts as a 'paper cut' that wounds the narrator from within while manipulating their perception of reality.","overallMood":"Paranoid","themes":["Internalized Paranoia","Self-Sabotage","Shadow Self Projection","Mental Distortion","Industrial Anxiety","Psychological Warfare"],"palette":["#1a1a2e","#c0392b","#f4d03f","#7f8c8d"],"sections":[{"sectionName":"Intro","emotion":"Eerie Whispering","intensity":0.88,"colorHintHex":"#1a1a2e","start":2.44},{"sectionName":"Verse 1","emotion":"Cynical Confession","intensity":0.89,"colorHintHex":"#c0392b","start":30.7},{"sectionName":"Pre-Chorus","emotion":"Building Tension","intensity":0.69,"colorHintHex":"#f4d03f","start":109.95},{"sectionName":"Chorus","emotion":"Explosive Aggression","intensity":0.96,"colorHintHex":"#e74c3c","start":119},{"sectionName":"Post-Chorus","emotion":"Ominous Stalking","intensity":0.9,"colorHintHex":"#2d3b4f","start":140.48},{"sectionName":"Verse 2","emotion":"Chaotic Looping","intensity":0.47,"colorHintHex":"#7f8c8d","start":147.66},{"sectionName":"Pre-Chorus","emotion":"Frantic Denial","intensity":0.26,"colorHintHex":"#e67e22","start":228.02},{"sectionName":"Chorus","emotion":"Maximal Distortion","intensity":0.3,"colorHintHex":"#c0392b","start":236.55},{"sectionName":"Bridge/Outro Part A","emotion":"Final Realization","intensity":0.22,"colorHintHex":"#1a1a2e","start":297.1}],"keywords":[{"word":"paranoid","emotion":"Fearful Vigilance","imageryPrompt":"A shadowy figure with glowing red eyes peering through a cracked window at night, surrounded by flickering fluorescent lights and static noise."},{"word":"cut","emotion":"Sharp Pain","imageryPrompt":"Close up of a jagged paper cut on pale skin with bright red blood seeping into dark grime, sharp focus on the wound edges."},{"word":"static","emotion":"Digital Noise","imageryPrompt":"Analog television snowstorm blending with swirling dust particles and glitching digital artifacts in a dimly lit room."},{"word":"shadow","emotion":"Oppressive Presence","imageryPrompt":"A distorted, elongated silhouette stretching across a concrete floor, seemingly detaching from the wall to loom over the subject."},{"word":"voice","emotion":"Internal Conflict","imageryPrompt":"Sound waves visualized as jagged black tendrils wrapping around a human throat and ears, emitting sparks of electricity."},{"word":"mirror","emotion":"Distorted Reflection","imageryPrompt":"A cracked vanity mirror reflecting not the person's face but a menacing stranger with sharp teeth standing in their place."}]}$j$::jsonb) WHERE id = 'paper-that-cut-you' AND planet->'analysis' IS NULL;
+
+-- push-it-on-me: 74 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Hmm"},{"t":6.02,"w":"Feel"},{"t":6.66,"w":"it,"},{"t":7.18,"w":"feel"},{"t":7.4,"w":"it"},{"t":30.64,"w":"Low"},{"t":31.24,"w":"light,"},{"t":31.94,"w":"slow"},{"t":32.22,"w":"move,"},{"t":33.04,"w":"bodies"},{"t":33.44,"w":"in"},{"t":33.76,"w":"the"},{"t":33.92,"w":"dark"},{"t":34.4,"w":"No,"},{"t":35.36,"w":"nobody's"},{"t":36.04,"w":"watching,"},{"t":36.8,"w":"giving"},{"t":37.2,"w":"through"},{"t":37.62,"w":"the"},{"t":37.84,"w":"spark"},{"t":38.2,"w":"Push"},{"t":38.62,"w":"it"},{"t":38.74,"w":"on"},{"t":38.86,"w":"me,"},{"t":39.32,"w":"push,"},{"t":39.7,"w":"push,"},{"t":39.94,"w":"push"},{"t":40.08,"w":"it"},{"t":40.2,"w":"on"},{"t":40.32,"w":"me"},{"t":41.2,"w":"Keep"},{"t":41.7,"w":"the"},{"t":41.88,"w":"feeling,"},{"t":42.14,"w":"keep"},{"t":42.22,"w":"the"},{"t":42.36,"w":"feeling"},{"t":42.56,"w":"on"},{"t":48.9,"w":"Feel"},{"t":49.5,"w":"it"},{"t":50.1,"w":"on"},{"t":52.78,"w":"Feel"},{"t":53.38,"w":"it"},{"t":53.98,"w":"on"},{"t":55.96,"w":"Stop"},{"t":56.56,"w":"now,"},{"t":57.28,"w":"keep"},{"t":57.58,"w":"it"},{"t":57.88,"w":"slow"},{"t":83.71,"w":"Don't"},{"t":84,"w":"stop"},{"t":84.16,"w":"now,"},{"t":84.66,"w":"keep"},{"t":84.9,"w":"it"},{"t":85.16,"w":"slow"},{"t":92.68,"w":"Push"},{"t":92.78,"w":"it,"},{"t":92.9,"w":"push"},{"t":93,"w":"it,"},{"t":93.14,"w":"push"},{"t":93.22,"w":"it"},{"t":93.38,"w":"on"},{"t":100.14,"w":"Push"},{"t":100.42,"w":"it"},{"t":100.7,"w":"on"},{"t":138.54,"w":"Feel"},{"t":138.64,"w":"it,"},{"t":140.02,"w":"feel"},{"t":140.12,"w":"it"},{"t":155.6,"w":"Don't"},{"t":157,"w":"stop"},{"t":157,"w":"now,"},{"t":157,"w":"keep"},{"t":157,"w":"it"},{"t":157,"w":"slow"}]}$j$::jsonb WHERE id = 'push-it-on-me' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Hmm
+[00:05.00] Feel it, feel it
+[Verse 1]
+[00:30.62] Low light, slow move, bodies in the dark
+[00:34.38] No, nobody's watching, giving through the spark
+[Chorus]
+[00:38.18] Push it on me, push, push, push it on me
+[00:41.18] Keep the feeling, keep the feeling on
+[Drop]
+[00:48.88] Feel it on
+[00:52.76] Feel it on
+[Bridge]
+[00:55.94] Stop now, keep it slow
+[01:23.69] Don't stop now, keep it slow
+[01:32.66] Push it, push it, push it on
+[01:40.12] Push it on
+[Hook]
+[02:18.52] Feel it,
+[02:19.00] feel it
+[02:35.58] Don't stop now, keep it slow
+$j$ WHERE id = 'push-it-on-me' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This deep house track captures a seductive, late-night atmosphere where intimacy and desire take center stage in a smoky club setting.","overallMood":"Sultry","themes":["Intimacy","Desire","Hypnosis","Late Night"],"palette":["#1a0f12","#4e3835","#d4af6b","#7c5e59"],"sections":[{"name":"Intro","emotion":"Anticipation and whispering darkness","intensity":0.7,"colorHintHex":"#1a0f12","start":0},{"name":"Verse 1","emotion":"Secretive closeness in shadows","intensity":0.78,"colorHintHex":"#2b1d19","start":30.62},{"name":"Chorus","emotion":"Direct physical craving and surrender","intensity":0.89,"colorHintHex":"#6f3c3a","start":38.18},{"name":"Drop","emotion":"Hypnotic trance rhythm","intensity":1,"colorHintHex":"#d4af6b","start":48.88},{"name":"Bridge","emotion":"Stuttering tension and slowing breath","intensity":0.49,"colorHintHex":"#8c2e31","start":55.94},{"name":"Hook","emotion":"Lingering hypnotic loop","intensity":0.18,"colorHintHex":"#4e3835","start":138.52}],"keywords":[{"word":"dark","emotion":"Enclosing safety and mystery","imageryPrompt":"A dimly lit room with deep shadows pooling on the floor, barely visible dust motes dancing in a single beam of amber light."},{"word":"slow","emotion":"Languid timelessness","imageryPrompt":"Slow motion footage of smoke rings rising lazily from an incense burner against a velvet curtain background."},{"word":"push","emotion":"Urgent physical need","imageryPrompt":"A close-up perspective looking up at lips parted in anticipation, with warm skin tones glowing softly under low light."},{"word":"feel","emotion":"Tactile sensitivity and heat","imageryPrompt":"Silky fabric brushing against bare skin in a haze of golden hour lighting that feels almost liquid to the touch."},{"word":"stop","emotion":"Desperate plea for stillness","imageryPrompt":"A frozen moment where time seems suspended, capturing the exact second before movement resumes in a smoky haze."},{"word":"spark","emotion":"Electric connection and ignition","imageryPrompt":"Tiny blue-white embers glowing within a dark fireplace, illuminating two faces inches apart in total darkness."}]}$j$::jsonb) WHERE id = 'push-it-on-me' AND planet->'analysis' IS NULL;
+
+-- red-flags-from-the-beginning: 578 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":4.86,"w":"Fucked"},{"t":5.14,"w":"up"},{"t":5.14,"w":"from"},{"t":5.42,"w":"the"},{"t":5.56,"w":"beginning"},{"t":9.57,"w":"Always"},{"t":9.72,"w":"was"},{"t":13.92,"w":"Always"},{"t":14.02,"w":"will"},{"t":14.36,"w":"be"},{"t":27.1,"w":"Fucked"},{"t":27.52,"w":"up"},{"t":27.52,"w":"from"},{"t":27.92,"w":"the"},{"t":28.12,"w":"jump"},{"t":28.44,"w":"We"},{"t":28.74,"w":"were"},{"t":28.94,"w":"smiling"},{"t":29.3,"w":"through"},{"t":29.62,"w":"the"},{"t":29.82,"w":"sirens"},{"t":33.52,"w":"Red"},{"t":33.62,"w":"flags"},{"t":34.18,"w":"on"},{"t":34.58,"w":"the"},{"t":34.74,"w":"walls"},{"t":35.1,"w":"But"},{"t":35.38,"w":"we"},{"t":35.58,"w":"called"},{"t":35.88,"w":"it"},{"t":36.08,"w":"perfect"},{"t":36.34,"w":"timing"},{"t":37.76,"w":"I"},{"t":38.5,"w":"kept"},{"t":38.74,"w":"looking"},{"t":39.16,"w":"for"},{"t":39.54,"w":"the"},{"t":39.72,"w":"green"},{"t":40.04,"w":"Like"},{"t":40.36,"w":"a"},{"t":40.54,"w":"sign"},{"t":40.82,"w":"I"},{"t":41,"w":"could"},{"t":41.16,"w":"believe"},{"t":41.6,"w":"in"},{"t":41.9,"w":"But"},{"t":42.02,"w":"the"},{"t":42.18,"w":"only"},{"t":42.56,"w":"green"},{"t":42.88,"w":"was"},{"t":43.08,"w":"money"},{"t":43.38,"w":"When"},{"t":43.66,"w":"the"},{"t":43.88,"w":"does"},{"t":44.2,"w":"came"},{"t":44.52,"w":"Screaming"},{"t":45.08,"w":"You"},{"t":45.3,"w":"left"},{"t":45.54,"w":"socks"},{"t":45.88,"w":"on"},{"t":46.2,"w":"the"},{"t":46.32,"w":"floor"},{"t":46.64,"w":"Like"},{"t":47.04,"w":"a"},{"t":47.14,"w":"war"},{"t":47.42,"w":"I"},{"t":47.62,"w":"couldn't"},{"t":48.08,"w":"win"},{"t":48.28,"w":"Finished"},{"t":48.72,"w":"water"},{"t":49.16,"w":"by"},{"t":49.42,"w":"the"},{"t":49.62,"w":"sink"},{"t":50.04,"w":"Same"},{"t":50.72,"w":"fight"},{"t":51.06,"w":"again"},{"t":51.54,"w":"Laundry"},{"t":52.58,"w":"in"},{"t":52.78,"w":"a"},{"t":52.96,"w":"mountain"},{"t":53.51,"w":"Folding"},{"t":54.26,"w":"turn"},{"t":54.44,"w":"to"},{"t":54.62,"w":"blame"},{"t":54.92,"w":"All"},{"t":55.28,"w":"the"},{"t":55.42,"w":"time"},{"t":55.74,"w":"kept"},{"t":56.04,"w":"calling"},{"t":56.62,"w":"And"},{"t":56.9,"w":"we"},{"t":57.12,"w":"answered"},{"t":57.48,"w":"it"},{"t":57.76,"w":"by"},{"t":57.94,"w":"name"},{"t":58.32,"w":"I"},{"t":58.62,"w":"was"},{"t":58.76,"w":"tired,"},{"t":59.28,"w":"you"},{"t":59.4,"w":"were"},{"t":59.62,"w":"distant"},{"t":61.47,"w":"We"},{"t":61.92,"w":"were"},{"t":62.08,"w":"loud,"},{"t":62.54,"w":"never"},{"t":62.8,"w":"listening"},{"t":63.33,"w":"You"},{"t":64.2,"w":"got"},{"t":64.42,"w":"a"},{"t":64.52,"w":"secret"},{"t":64.98,"w":"with"},{"t":65.6,"w":"your"},{"t":65.96,"w":"phone"},{"t":66.32,"w":"I"},{"t":66.82,"w":"got"},{"t":67.02,"w":"colder"},{"t":67.42,"w":"with"},{"t":67.66,"w":"my"},{"t":67.82,"w":"tongue"},{"t":68.14,"w":"Two"},{"t":68.6,"w":"people"},{"t":69.06,"w":"in"},{"t":69.38,"w":"a"},{"t":69.52,"w":"house"},{"t":69.82,"w":"Still"},{"t":70.12,"w":"feeling"},{"t":70.76,"w":"alone"},{"t":73.02,"w":"Eyes"},{"t":73.3,"w":"blind"},{"t":73.94,"w":"Eyes"},{"t":74.22,"w":"blind"},{"t":74.52,"w":"Shot"},{"t":74.86,"w":"not"},{"t":75.12,"w":"from"},{"t":75.54,"w":"the"},{"t":75.7,"w":"run"},{"t":75.98,"w":"But"},{"t":76.66,"w":"from"},{"t":76.96,"w":"reading"},{"t":77.34,"w":"every"},{"t":77.7,"w":"silence"},{"t":78.18,"w":"Like"},{"t":78.46,"w":"a"},{"t":78.62,"w":"warning"},{"t":78.94,"w":"shot"},{"t":79.3,"w":"Stay"},{"t":79.64,"w":"in"},{"t":80.26,"w":"your"},{"t":80.7,"w":"lane"},{"t":82.04,"w":"But"},{"t":82.6,"w":"the"},{"t":82.74,"w":"lane"},{"t":83.08,"w":"was"},{"t":83.38,"w":"a"},{"t":83.58,"w":"graveyard"},{"t":85.66,"w":"Every"},{"t":85.84,"w":"marker"},{"t":86.34,"w":"had"},{"t":86.9,"w":"our"},{"t":87.34,"w":"name"},{"t":88.88,"w":"Every"},{"t":89.34,"w":"name"},{"t":89.76,"w":"had"},{"t":90.26,"w":"a"},{"t":90.68,"w":"scar"},{"t":92,"w":"Maybe"},{"t":92.26,"w":"I"},{"t":92.58,"w":"should"},{"t":92.68,"w":"stop"},{"t":93.02,"w":"Maybe"},{"t":93.72,"w":"I"},{"t":94.12,"w":"should"},{"t":94.36,"w":"drop"},{"t":94.7,"w":"Let"},{"t":95,"w":"the"},{"t":95.16,"w":"mountain"},{"t":95.71,"w":"keep"},{"t":95.82,"w":"the"},{"t":96.04,"w":"weight"},{"t":96.3,"w":"I"},{"t":96.54,"w":"never"},{"t":96.86,"w":"asked"},{"t":97.18,"w":"to"},{"t":97.31,"w":"carry"},{"t":97.62,"w":"up"},{"t":98.04,"w":"Maybe"},{"t":98.82,"w":"I"},{"t":99.22,"w":"should"},{"t":99.32,"w":"fall"},{"t":99.78,"w":"Echo"},{"t":100.48,"w":"down"},{"t":100.76,"w":"the"},{"t":101.02,"w":"hall"},{"t":101.28,"w":"Let"},{"t":101.6,"w":"the"},{"t":101.78,"w":"silence"},{"t":102.32,"w":"be"},{"t":102.42,"w":"the"},{"t":102.62,"w":"answer"},{"t":103.04,"w":"When"},{"t":103.28,"w":"I"},{"t":103.48,"w":"can't"},{"t":103.88,"w":"stand"},{"t":104.16,"w":"it"},{"t":104.5,"w":"Stop"},{"t":104.88,"w":"it"},{"t":104.98,"w":"all"},{"t":105.91,"w":"Stop,"},{"t":106.56,"w":"drop"},{"t":107.47,"w":"Watch"},{"t":107.82,"w":"it"},{"t":108.08,"w":"all"},{"t":108.4,"w":"dissolve"},{"t":110.03,"w":"Stop"},{"t":110.75,"w":"Nothing"},{"t":111.1,"w":"left"},{"t":111.8,"w":"to"},{"t":112.28,"w":"solve"},{"t":118.14,"w":"We"},{"t":118.36,"w":"fought"},{"t":118.58,"w":"about"},{"t":118.96,"w":"the"},{"t":119.18,"w":"dishes"},{"t":119.57,"w":"Fought"},{"t":120.32,"w":"about"},{"t":120.56,"w":"the"},{"t":120.86,"w":"rent"},{"t":121.61,"w":"Fought"},{"t":121.96,"w":"about"},{"t":122.2,"w":"the"},{"t":122.48,"w":"words"},{"t":122.92,"w":"we"},{"t":123.2,"w":"never"},{"t":123.56,"w":"really"},{"t":124,"w":"meant"},{"t":124.46,"w":"You"},{"t":124.94,"w":"said"},{"t":125.22,"w":"I"},{"t":125.4,"w":"was"},{"t":125.62,"w":"dramatic"},{"t":126,"w":"I"},{"t":126.58,"w":"said"},{"t":126.88,"w":"you"},{"t":127.06,"w":"never"},{"t":127.34,"w":"cared"},{"t":128.17,"w":"Truth"},{"t":128.52,"w":"is"},{"t":128.76,"w":"we"},{"t":128.9,"w":"were"},{"t":129.14,"w":"both"},{"t":129.46,"w":"just"},{"t":129.8,"w":"swinging"},{"t":130.26,"w":"at"},{"t":130.6,"w":"the"},{"t":130.76,"w":"air"},{"t":131.16,"w":"You"},{"t":131.6,"w":"checked"},{"t":131.8,"w":"out"},{"t":132.14,"w":"first"},{"t":132.52,"w":"You"},{"t":133.18,"w":"locked"},{"t":133.56,"w":"up"},{"t":133.86,"w":"worse"},{"t":134.5,"w":"You"},{"t":134.94,"w":"wanted"},{"t":135.32,"w":"proof"},{"t":135.74,"w":"You"},{"t":136.54,"w":"hid"},{"t":136.92,"w":"the"},{"t":137.2,"w":"hurt"},{"t":137.52,"w":"Had"},{"t":138.08,"w":"the"},{"t":138.24,"w":"green"},{"t":138.54,"w":"light"},{"t":138.88,"w":"gleaming"},{"t":139.44,"w":"But"},{"t":139.68,"w":"it"},{"t":139.9,"w":"never"},{"t":140.18,"w":"made"},{"t":140.56,"w":"gold"},{"t":141.02,"w":"Just"},{"t":141.38,"w":"another"},{"t":141.7,"w":"little"},{"t":142.22,"w":"lie"},{"t":142.62,"w":"In"},{"t":143.02,"w":"a"},{"t":143.18,"w":"pretty"},{"t":143.5,"w":"red"},{"t":143.84,"w":"glow"},{"t":144.3,"w":"I"},{"t":144.78,"w":"should've"},{"t":145.26,"w":"seen"},{"t":145.52,"w":"the"},{"t":145.66,"w":"size"},{"t":146,"w":"When"},{"t":146.48,"w":"love"},{"t":146.72,"w":"felt"},{"t":146.94,"w":"like"},{"t":147.18,"w":"a"},{"t":147.34,"w":"debt"},{"t":147.6,"w":"When"},{"t":148.18,"w":"every"},{"t":148.48,"w":"kiss"},{"t":148.8,"w":"came"},{"t":149.02,"w":"loaded"},{"t":149.32,"w":"With"},{"t":149.6,"w":"a"},{"t":149.84,"w":"pain"},{"t":150.08,"w":"we"},{"t":150.24,"w":"won't"},{"t":150.48,"w":"forget"},{"t":151.98,"w":"Eyes"},{"t":152.66,"w":"blind"},{"t":153.34,"w":"Shot"},{"t":154.08,"w":"not"},{"t":154.58,"w":"from"},{"t":154.94,"w":"the"},{"t":155.22,"w":"run"},{"t":155.44,"w":"Not"},{"t":156.19,"w":"from"},{"t":156.58,"w":"the"},{"t":156.86,"w":"drinks"},{"t":157.26,"w":"Not"},{"t":157.88,"w":"from"},{"t":158.22,"w":"the"},{"t":158.5,"w":"smoke"},{"t":158.76,"w":"But"},{"t":159.34,"w":"from"},{"t":159.54,"w":"the"},{"t":159.76,"w":"mirror"},{"t":160.04,"w":"showing"},{"t":160.4,"w":"Both"},{"t":160.86,"w":"of"},{"t":161.2,"w":"us"},{"t":161.62,"w":"the"},{"t":161.84,"w":"joke"},{"t":163.2,"w":"We"},{"t":163.3,"w":"called"},{"t":163.6,"w":"it"},{"t":163.78,"w":"passion"},{"t":164.5,"w":"Was"},{"t":164.76,"w":"damaging"},{"t":165.22,"w":"the"},{"t":165.52,"w":"sky"},{"t":167.46,"w":"We"},{"t":167.56,"w":"kept"},{"t":167.9,"w":"feeding"},{"t":168.38,"w":"the"},{"t":168.66,"w":"fire"},{"t":171.01,"w":"Then"},{"t":171.26,"w":"I"},{"t":171.54,"w":"could"},{"t":171.74,"w":"surprise"},{"t":174.69,"w":"Maybe"},{"t":174.84,"w":"I"},{"t":175.34,"w":"should"},{"t":175.44,"w":"stop"},{"t":176.35,"w":"Maybe"},{"t":176.46,"w":"I"},{"t":177.02,"w":"should"},{"t":177.12,"w":"drop"},{"t":177.48,"w":"Let"},{"t":177.76,"w":"the"},{"t":177.9,"w":"mountain"},{"t":178.37,"w":"keep"},{"t":178.6,"w":"the"},{"t":178.8,"w":"weight"},{"t":179.08,"w":"I"},{"t":179.22,"w":"never"},{"t":179.5,"w":"asked"},{"t":179.88,"w":"to"},{"t":180.04,"w":"carry"},{"t":180.36,"w":"up"},{"t":181.28,"w":"Maybe"},{"t":181.6,"w":"I"},{"t":181.88,"w":"should"},{"t":182.08,"w":"fall"},{"t":182.88,"w":"Echo"},{"t":183.2,"w":"down"},{"t":183.52,"w":"the"},{"t":183.78,"w":"hall"},{"t":184.04,"w":"Let"},{"t":184.46,"w":"the"},{"t":184.74,"w":"silence"},{"t":185.08,"w":"be"},{"t":185.18,"w":"the"},{"t":185.42,"w":"answer"},{"t":185.79,"w":"When"},{"t":186,"w":"I"},{"t":186.37,"w":"can't"},{"t":186.6,"w":"stand"},{"t":186.9,"w":"up"},{"t":187.42,"w":"at"},{"t":187.78,"w":"all"},{"t":188.34,"w":"Stop,"},{"t":189.28,"w":"drop"},{"t":190.28,"w":"Watch"},{"t":190.6,"w":"it"},{"t":190.88,"w":"all"},{"t":191.2,"w":"dissolve"},{"t":192.78,"w":"Stop"},{"t":193.1,"w":"And"},{"t":193.62,"w":"nothing"},{"t":193.98,"w":"left"},{"t":194.6,"w":"to"},{"t":194.92,"w":"solve"},{"t":195.54,"w":"Hate"},{"t":196,"w":"to"},{"t":196.38,"w":"admit"},{"t":197.14,"w":"it"},{"t":197.92,"w":"but"},{"t":198.5,"w":"Got"},{"t":199.3,"w":"un"},{"t":199.98,"w":"-terrified"},{"t":201.94,"w":"Tarred"},{"t":202.88,"w":"by"},{"t":202.98,"w":"my"},{"t":203.44,"w":"own"},{"t":204.02,"w":"hands"},{"t":205.72,"w":"Feathered"},{"t":206.74,"w":"by"},{"t":207.42,"w":"my"},{"t":207.56,"w":"pride"},{"t":208.38,"w":"I"},{"t":208.61,"w":"loved"},{"t":208.9,"w":"you"},{"t":209.64,"w":"wrong"},{"t":210.5,"w":"I"},{"t":211.71,"w":"stayed"},{"t":212.1,"w":"too"},{"t":212.96,"w":"long"},{"t":215.68,"w":"We"},{"t":215.84,"w":"were"},{"t":216.02,"w":"doomed"},{"t":216.48,"w":"Before"},{"t":217.72,"w":"the"},{"t":218.3,"w":"sun"},{"t":237.18,"w":","},{"t":237.84,"w":"I"},{"t":238.5,"w":"lived"},{"t":238.5,"w":"in"},{"t":238.5,"w":"pain"},{"t":238.5,"w":"I'm"},{"t":238.52,"w":"weak"},{"t":238.52,"w":"That's"},{"t":238.52,"w":"why"},{"t":238.52,"w":"I'm"},{"t":238.52,"w":"so"},{"t":238.72,"w":"strong"},{"t":239.06,"w":"You're"},{"t":239.06,"w":"getting"},{"t":239.06,"w":"better"},{"t":239.08,"w":"I'm"},{"t":239.08,"w":"not"},{"t":239.1,"w":"stupid"},{"t":239.1,"w":"I'm"},{"t":239.78,"w":"gonna"},{"t":239.78,"w":"be"},{"t":239.78,"w":"the"},{"t":239.78,"w":"moon"},{"t":239.78,"w":"And"},{"t":239.78,"w":"I'm"},{"t":239.78,"w":"no"},{"t":240.74,"w":"longer"},{"t":240.74,"w":"the"},{"t":240.74,"w":"moon"},{"t":248.51,"w":"I'm"},{"t":248.74,"w":"not"},{"t":248.92,"w":"the"},{"t":248.92,"w":"moon"},{"t":248.92,"w":"I'm"},{"t":248.92,"w":"just"},{"t":248.92,"w":"a"},{"t":249,"w":"fire"},{"t":249.24,"w":"I'm"},{"t":250.52,"w":"not"},{"t":250.52,"w":"the"},{"t":250.84,"w":"moon"},{"t":251.52,"w":"I'm"},{"t":251.68,"w":"just"},{"t":251.68,"w":"a"},{"t":251.68,"w":"fire"},{"t":251.68,"w":"I'm"},{"t":251.8,"w":"not"},{"t":251.8,"w":"the"},{"t":252.2,"w":"moon"},{"t":252.8,"w":"The"},{"t":253.28,"w":"mountain"},{"t":253.64,"w":"from"},{"t":254.18,"w":"the"},{"t":254.46,"w":"cold,"},{"t":255.04,"w":"but"},{"t":255.5,"w":"from"},{"t":255.76,"w":"all"},{"t":256,"w":"those"},{"t":256.24,"w":"little"},{"t":256.5,"w":"warnings"},{"t":257.22,"w":"that"},{"t":257.76,"w":"we"},{"t":258.14,"w":"watched"},{"t":258.6,"w":"him"},{"t":259.18,"w":"still"},{"t":261.4,"w":"Nort,"},{"t":262.04,"w":"maybe"},{"t":262.58,"w":"I"},{"t":262.96,"w":"should"},{"t":263.18,"w":"stop"},{"t":263.46,"w":"maybe"},{"t":264.32,"w":"I"},{"t":264.6,"w":"should"},{"t":264.86,"w":"drop"},{"t":265.18,"w":"that"},{"t":265.52,"w":"don't"},{"t":265.7,"w":"know"},{"t":265.96,"w":"to"},{"t":266.1,"w":"keep"},{"t":266.32,"w":"the"},{"t":266.52,"w":"way"},{"t":266.76,"w":"that"},{"t":266.94,"w":"never"},{"t":267.22,"w":"has"},{"t":267.54,"w":"to"},{"t":267.68,"w":"carry"},{"t":267.98,"w":"up"},{"t":268.58,"w":"Maybe"},{"t":269.26,"w":"I"},{"t":269.58,"w":"should"},{"t":269.78,"w":"fall"},{"t":270.14,"w":"I"},{"t":270.8,"w":"go"},{"t":271.01,"w":"down"},{"t":271.28,"w":"the"},{"t":271.48,"w":"hall"},{"t":272.02,"w":"at"},{"t":272.12,"w":"the"},{"t":272.24,"w":"silence"},{"t":272.64,"w":"be"},{"t":272.88,"w":"the"},{"t":273.08,"w":"answer"},{"t":273.44,"w":"when"},{"t":273.74,"w":"I"},{"t":273.94,"w":"can't"},{"t":274.38,"w":"stand"},{"t":274.48,"w":"But"},{"t":275.26,"w":"the"},{"t":276.38,"w":"bloodshot"},{"t":277.12,"w":"fades"},{"t":277.56,"w":"and"},{"t":277.92,"w":"the"},{"t":278.06,"w":"red"},{"t":278.34,"w":"flags"},{"t":278.78,"w":"waving"},{"t":279.48,"w":"the"},{"t":279.72,"w":"truth"},{"t":283.96,"w":"Maybe"},{"t":284.06,"w":"I"},{"t":284.48,"w":"should"},{"t":284.72,"w":"stop"},{"t":285.12,"w":"maybe"},{"t":285.72,"w":"I"},{"t":286.26,"w":"should"},{"t":286.92,"w":"drop"},{"t":287.32,"w":"maybe"},{"t":288.46,"w":"I"},{"t":288.86,"w":"already"},{"t":289.42,"w":"have"},{"t":292.74,"w":"Fucked"},{"t":292.96,"w":"up"},{"t":292.96,"w":"from"},{"t":293.22,"w":"the"},{"t":293.36,"w":"beginning"},{"t":293.72,"w":"always"},{"t":295.36,"w":"was"},{"t":298.14,"w":"Always"},{"t":298.36,"w":"will"},{"t":299.44,"w":"be"},{"t":312.8,"w":"You"},{"t":313.08,"w":"You"}]}$j$::jsonb WHERE id = 'red-flags-from-the-beginning' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:04.84] Fucked up from the beginning
+[00:09.54] Always was
+[00:13.90] Always will be
+[Verse 1]
+[00:27.08] Fucked up from the jump
+[00:28.42] We were smiling through the sirens
+[00:33.50] Red flags on the walls
+[00:35.08] But we called it perfect timing
+[00:37.74] I kept looking for the green
+[00:40.02] Like a sign I could believe in
+[00:41.88] But the only green was money
+[00:43.36] When the does came
+[00:44.50] Screaming
+[00:45.06] You left socks on the floor
+[00:46.62] Like a war I couldn't win
+[00:48.26] Finished water by the sink
+[00:50.02] Same fight again
+[00:51.52] Laundry in a mountain
+[00:53.49] Folding turn to blame
+[00:54.90] All the time kept calling
+[00:56.60] And we answered it by name
+[00:58.30] I was tired, you were distant
+[01:01.45] We were loud, never listening
+[01:03.30] You got a secret with your phone
+[01:06.30] I got colder with my tongue
+[01:08.12] Two people in a house
+[01:09.80] Still feeling alone
+[01:13.00] Eyes blind
+[01:13.92] Eyes blind
+[01:14.50] Shot not from the run
+[01:15.96] But from reading every silence
+[01:18.16] Like a warning shot
+[01:19.28] Stay in your lane
+[01:22.02] But the lane was a graveyard
+[01:25.64] Every marker had our name
+[01:28.86] Every name had a scar
+[01:31.98] Maybe I should stop
+[01:32.00] Maybe I should drop
+[01:34.68] Let the mountain keep the weight
+[01:36.28] I never asked to carry up
+[01:38.02] Maybe I should fall
+[01:39.76] Echo down the hall
+[01:41.26] Let the silence be the answer
+[01:43.02] When I can't stand it
+[01:44.48] Stop it all
+[01:45.89] Stop, drop
+[01:47.45] Watch it all dissolve
+[01:50.01] Stop
+[01:50.73] Nothing left to solve
+[Pre-Chorus]
+[01:58.12] We fought about the dishes
+[01:59.55] Fought about the rent
+[02:01.59] Fought about the words we never really meant
+[02:04.44] You said I was dramatic
+[02:05.98] I said you never cared
+[02:08.15] Truth is we were both just swinging at the air
+[02:11.14] You checked out first
+[Chorus]
+[02:12.50] You locked up worse
+[02:14.48] You wanted proof
+[02:15.72] You hid the hurt
+[02:17.50] Had the green light gleaming
+[02:19.42] But it never made gold
+[02:20.00] Just another little lie
+[02:22.60] In a pretty red glow
+[02:24.28] I should've seen the size
+[02:25.98] When love felt like a debt
+[02:27.58] When every kiss came loaded
+[02:29.30] With a pain we won't forget
+[02:31.96] Eyes blind
+[02:33.32] Shot not from the run
+[02:35.42] Not from the drinks
+[02:37.24] Not from the smoke
+[Verse 2]
+[02:38.74] But from the mirror showing
+[02:40.38] Both of us the joke
+[02:43.18] We called it passion
+[02:44.48] Was damaging the sky
+[02:47.44] We kept feeding the fire
+[02:50.99] Then I could surprise
+[02:54.66] Maybe I should stop
+[02:56.33] Maybe I should drop
+[02:57.46] Let the mountain keep the weight
+[02:59.06] I never asked to carry up
+[03:01.26] Maybe I should fall
+[03:02.86] Echo down the hall
+[03:04.02] Let the silence be the answer
+[03:05.77] When I can't stand up at all
+[03:08.32] Stop, drop
+[03:10.26] Watch it all dissolve
+[03:12.76] Stop
+[03:13.08] And nothing left to solve
+[03:15.52] Hate to admit it but
+[03:18.48] Got un-terrified
+[03:21.92] Tarred by my own hands
+[03:25.70] Feathered by my pride
+[03:28.36] I loved you wrong
+[03:30.48] I stayed too long
+[03:35.66] We were doomed
+[03:36.46] Before the sun
+[Pre-Chorus]
+[03:57.16] , I lived in pain
+[03:58.48] I'm weak
+[03:58.50] That's why I'm so strong
+[03:59.04] You're getting better
+[03:59.06] I'm not stupid
+[03:59.08] I'm gonna be the moon
+[03:59.76] And I'm no longer the moon
+[04:08.49] I'm not the moon
+[04:08.90] I'm just a fire
+[04:09.22] I'm not the moon
+[04:11.50] I'm just a fire
+[04:11.66] I'm not the moon
+[04:12.78] The mountain from the cold,
+[Chorus]
+[04:15.02] but from all those little warnings that we watched him still
+[04:21.38] Nort,
+[04:22.02] maybe I should stop maybe I should drop that don't
+[04:25.68] know to keep the way that never has to carry up
+[04:28.56] Maybe I should fall I go down the hall at
+[04:32.10] the silence be the answer when I can't stand
+[04:34.46] But the bloodshot fades and the red flags waving the truth
+[04:43.94] Maybe I should stop maybe I should drop maybe I already have
+[04:52.71] Fucked up from the beginning always was
+[04:58.12] Always will be
+[05:12.78] You
+[05:13.06] You
+$j$ WHERE id = 'red-flags-from-the-beginning' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song depicts a toxic relationship doomed from the start, characterized by domestic chaos, emotional neglect, and the painful realization that love was actually a burden disguised as passion.","overallMood":"Anxious Melancholy","themes":["Toxic Love Patterns","Self-Realization & Growth","Domestic Struggle","Emotional Blindness"],"palette":["#FF4D4D","#8B0000","#F5F5DC","#1A237E"],"sections":[{"name":"Intro","emotion":"Fatalistic resignation","intensity":0.88,"colorHintHex":"#8B0000","start":4.84},{"name":"Verse 1","emotion":"Chaos and exhaustion","intensity":0.78,"colorHintHex":"#FF4D4D","start":27.08},{"name":"Pre-Chorus","emotion":"Defensive realization","intensity":0.66,"colorHintHex":"#F5F5DC","start":118.12},{"name":"Chorus","emotion":"Painful clarity and betrayal","intensity":0.7,"colorHintHex":"#FF4D4D","start":132.5},{"name":"Verse 2","emotion":"Internal reflection and crumbling ego","intensity":0.32,"colorHintHex":"#F5F5DC","start":158.74},{"name":"Pre-Chorus (Repeat)","emotion":"Empowered transformation","intensity":0.24,"colorHintHex":"#1A237E","start":237.16},{"name":"Chorus (Final)","emotion":"Cathartic release and acceptance","intensity":0.28,"colorHintHex":"#FF4D4D","start":255.02}],"keywords":[{"word":"flags","emotion":"Warning signal of doom","imageryPrompt":"A cracked red wall covered in peeling paint, casting long ominous shadows against a dark background."},{"word":"sirens","emotion":"Escaping danger and panic","imageryPrompt":"Blue emergency lights flashing rapidly through rain-streaked windows reflecting on wet asphalt streets."},{"word":"money","emotion":"False security and greed","imageryPrompt":"Stacks of green dollar bills glowing under a harsh spotlight while flowers wither in the background."},{"word":"silence","emotion":"Heavy, suffocating emptiness","imageryPrompt":"A vast empty hallway stretching endlessly into darkness where dust motes hang motionless in still air."},{"word":"fire","emotion":"Destructive passion and heat","imageryPrompt":"Orange flames consuming a wooden structure, illuminating tear-streaked faces with intense light and smoke."},{"word":"moon","emotion":"Cold distance and isolation","imageryPrompt":"A pale white moon hanging high in a starless night sky above a lone silhouette standing on a cliff edge."}]}$j$::jsonb) WHERE id = 'red-flags-from-the-beginning' AND planet->'analysis' IS NULL;
+
+-- rum-pon-gold: 391 words, 9 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Yo,"},{"t":0.28,"w":"yo,"},{"t":0.56,"w":"girl"},{"t":1.06,"w":"cup"},{"t":1.16,"w":"crew,"},{"t":1.64,"w":"crew,"},{"t":2,"w":"crew,"},{"t":2.32,"w":"crew,"},{"t":2.48,"w":"smoke"},{"t":3.44,"w":"room"},{"t":3.98,"w":"Pass"},{"t":4.28,"w":"it,"},{"t":4.56,"w":"pass"},{"t":4.9,"w":"it,"},{"t":5.22,"w":"pass"},{"t":5.62,"w":"it,"},{"t":5.9,"w":"pass"},{"t":6.28,"w":"it,"},{"t":6.58,"w":"pass"},{"t":7,"w":"it,"},{"t":7.26,"w":"pass"},{"t":7.58,"w":"it"},{"t":7.87,"w":"Brooklyn"},{"t":8.22,"w":"to"},{"t":8.74,"w":"Kingston,"},{"t":9.48,"w":"run"},{"t":10.68,"w":"it"},{"t":10.84,"w":"Rump"},{"t":11.86,"w":"and"},{"t":12.02,"w":"gold,"},{"t":12.7,"w":"wine"},{"t":13.28,"w":"for"},{"t":13.38,"w":"me"},{"t":14.3,"w":"Smoke"},{"t":14.44,"w":"in"},{"t":14.78,"w":"a"},{"t":14.9,"w":"year,"},{"t":15.62,"w":"come"},{"t":15.72,"w":"find"},{"t":16.18,"w":"me"},{"t":17.12,"w":"Rump"},{"t":17.22,"w":"and"},{"t":17.44,"w":"gold,"},{"t":18.43,"w":"move"},{"t":18.54,"w":"that"},{"t":18.8,"w":"waist"},{"t":19.18,"w":"Pull"},{"t":19.84,"w":"on"},{"t":20.06,"w":"the"},{"t":20.28,"w":"rhythm,"},{"t":20.84,"w":"don't"},{"t":20.94,"w":"waste"},{"t":21.48,"w":"it"},{"t":23.81,"w":"Rump"},{"t":24.1,"w":"and"},{"t":24.2,"w":"gold,"},{"t":24.92,"w":"gold"},{"t":25.36,"w":"in"},{"t":25.64,"w":"a"},{"t":25.72,"w":"cup"},{"t":25.98,"w":"Smoke"},{"t":26.52,"w":"gonna"},{"t":26.96,"w":"fall,"},{"t":27.68,"w":"turn"},{"t":28.04,"w":"it"},{"t":28.38,"w":"up"},{"t":28.64,"w":"Body"},{"t":29.36,"w":"too"},{"t":29.66,"w":"bold"},{"t":30.2,"w":"Why"},{"t":30.7,"w":"ain't"},{"t":30.94,"w":"it"},{"t":31.06,"w":"slow?"},{"t":31.62,"w":"Night"},{"t":32.02,"w":"getting"},{"t":32.44,"w":"hot"},{"t":32.76,"w":"Don't"},{"t":33.5,"w":"let"},{"t":33.72,"w":"go"},{"t":34.62,"w":"Wine"},{"t":35.52,"w":"for"},{"t":35.72,"w":"me"},{"t":36.08,"w":"Wine"},{"t":36.52,"w":"for"},{"t":37.08,"w":"me"},{"t":37.44,"w":"If"},{"t":37.84,"w":"you're"},{"t":38,"w":"bad"},{"t":38.22,"w":"come"},{"t":38.44,"w":"prove"},{"t":38.82,"w":"it"},{"t":39.22,"w":"Easy"},{"t":39.64,"w":"now,"},{"t":40.18,"w":"easy"},{"t":40.42,"w":"now"},{"t":40.9,"w":"For"},{"t":41.2,"w":"me"},{"t":41.54,"w":"Wine"},{"t":42.24,"w":"for"},{"t":42.52,"w":"me"},{"t":42.76,"w":"Don't"},{"t":42.98,"w":"stop"},{"t":43.26,"w":"Girl"},{"t":43.84,"w":"move"},{"t":44.24,"w":"it"},{"t":44.66,"w":"Left"},{"t":45.66,"w":"side"},{"t":46,"w":"Right"},{"t":46.46,"w":"side"},{"t":47.38,"w":"Front"},{"t":48.22,"w":"row"},{"t":48.66,"w":"Back"},{"t":49.08,"w":"row"},{"t":50.92,"w":"Red"},{"t":51.68,"w":"cup"},{"t":52.04,"w":"tilt"},{"t":52.42,"w":"when"},{"t":52.68,"w":"the"},{"t":52.86,"w":"baseline"},{"t":53.28,"w":"knock"},{"t":53.82,"w":"Gold"},{"t":54.3,"w":"chain"},{"t":54.76,"w":"swing"},{"t":55.08,"w":"when"},{"t":55.4,"w":"the"},{"t":55.6,"w":"waistline"},{"t":56.16,"w":"drop"},{"t":56.48,"w":"Room"},{"t":57.06,"w":"full"},{"t":57.42,"w":"smoke"},{"t":57.78,"w":"and"},{"t":58.14,"w":"the"},{"t":58.28,"w":"door"},{"t":58.54,"w":"still"},{"t":58.82,"w":"lock"},{"t":59.24,"w":"DJ"},{"t":59.58,"w":"pull"},{"t":60.16,"w":"it"},{"t":60.34,"w":"back"},{"t":60.6,"w":"when"},{"t":60.82,"w":"the"},{"t":61.02,"w":"whole"},{"t":61.28,"w":"place"},{"t":61.62,"w":"rock"},{"t":61.94,"w":"Brooklyn"},{"t":62.46,"w":"hot"},{"t":63.08,"w":"King"},{"t":63.52,"w":"Kingston"},{"t":63.98,"w":"hotter"},{"t":64.72,"w":"Who"},{"t":64.94,"w":"bring"},{"t":65.52,"w":"fire?"},{"t":66.18,"w":"We"},{"t":66.5,"w":"bring"},{"t":66.9,"w":"proper"},{"t":67.38,"w":"Who"},{"t":68.02,"w":"got"},{"t":68.3,"w":"rum?"},{"t":68.86,"w":"Pour"},{"t":69.16,"w":"more"},{"t":69.66,"w":"water"},{"t":70.16,"w":"Who"},{"t":70.42,"w":"bad"},{"t":70.74,"w":"bad?"},{"t":71.18,"w":"Don't"},{"t":71.6,"w":"ask"},{"t":71.8,"w":"Father"},{"t":73.5,"w":"Rump"},{"t":74.18,"w":"and"},{"t":74.44,"w":"gold"},{"t":74.84,"w":"Gold"},{"t":75.52,"w":"in"},{"t":75.86,"w":"a"},{"t":75.9,"w":"cup"},{"t":76.18,"w":"Smoke"},{"t":76.86,"w":"don't"},{"t":77.28,"w":"fall"},{"t":77.42,"w":"Turn"},{"t":78.22,"w":"it"},{"t":78.5,"w":"up"},{"t":78.94,"w":"Howdy"},{"t":79.56,"w":"to"},{"t":79.76,"w":"ball"},{"t":80.22,"w":"Why"},{"t":80.9,"w":"ain't"},{"t":81.12,"w":"it"},{"t":81.26,"w":"slow?"},{"t":81.82,"w":"Night"},{"t":82.18,"w":"getting"},{"t":82.6,"w":"hot"},{"t":83.24,"w":"Don't"},{"t":83.84,"w":"let"},{"t":83.96,"w":"go"},{"t":84.2,"w":"One"},{"t":86.48,"w":"Time"},{"t":86.76,"w":"Wine"},{"t":86.98,"w":"for"},{"t":87.32,"w":"me"},{"t":87.62,"w":"Blue"},{"t":88.02,"w":"time"},{"t":88.46,"w":"Wine"},{"t":89.18,"w":"for"},{"t":90,"w":"me"},{"t":90.36,"w":"Tree"},{"t":90.68,"w":"time"},{"t":91.18,"w":"Don't"},{"t":91.84,"w":"watch"},{"t":92.14,"w":"me"},{"t":92.34,"w":"For"},{"t":92.78,"w":"me"},{"t":93.04,"w":"Four"},{"t":93.46,"w":"time"},{"t":93.82,"w":"Pull"},{"t":94.44,"w":"up"},{"t":96.52,"w":"Hey"},{"t":99.06,"w":"Forward"},{"t":102.24,"w":"Forward"},{"t":104.98,"w":"Forward"},{"t":105.7,"w":"Forward"},{"t":108,"w":"Don't"},{"t":108.7,"w":"spill"},{"t":108.9,"w":"the"},{"t":109.12,"w":"drink"},{"t":109.4,"w":"like"},{"t":109.64,"w":"another"},{"t":109.92,"w":"one"},{"t":110.38,"w":"DJ"},{"t":111.08,"w":"not"},{"t":111.68,"w":"done"},{"t":112.06,"w":"Money"},{"t":112.42,"w":"never"},{"t":112.72,"w":"come"},{"t":113.09,"w":"Hands"},{"t":113.95,"w":"on"},{"t":114.4,"w":"my"},{"t":114.52,"w":"waist"},{"t":114.86,"w":"but"},{"t":115.02,"w":"don't"},{"t":115.42,"w":"move"},{"t":115.64,"w":"them"},{"t":115.96,"w":"If"},{"t":116.26,"w":"you"},{"t":116.48,"w":"Can't"},{"t":116.92,"w":"keep"},{"t":117,"w":"turn"},{"t":117.52,"w":"when"},{"t":117.8,"w":"you"},{"t":117.92,"w":"can't"},{"t":118.32,"w":"get"},{"t":118.48,"w":"none"},{"t":118.84,"w":"Talk"},{"t":119.08,"w":"to"},{"t":119.24,"w":"them"},{"t":119.44,"w":"I"},{"t":119.68,"w":"like"},{"t":119.86,"w":"it"},{"t":120,"w":"rough"},{"t":120.24,"w":"but"},{"t":120.5,"w":"smooth"},{"t":120.86,"w":"with"},{"t":121.24,"w":"the"},{"t":121.38,"w":"timing"},{"t":121.74,"w":"Gold"},{"t":122.28,"w":"on"},{"t":122.54,"w":"the"},{"t":122.66,"w":"skin"},{"t":122.94,"w":"Baseline"},{"t":123.84,"w":"climbing"},{"t":124.44,"w":"Smoke"},{"t":124.82,"w":"in"},{"t":125.24,"w":"my"},{"t":125.4,"w":"hair"},{"t":125.72,"w":"Rum"},{"t":126.32,"w":"in"},{"t":126.52,"w":"the"},{"t":126.72,"w":"lighting"},{"t":127.16,"w":"If"},{"t":127.62,"w":"I"},{"t":127.8,"w":"say"},{"t":128.04,"w":"pull"},{"t":128.24,"w":"up"},{"t":128.56,"w":"You"},{"t":128.74,"w":"better"},{"t":129.02,"w":"rewind"},{"t":129.62,"w":"it"},{"t":130.88,"w":"Rump"},{"t":131.22,"w":"and"},{"t":131.48,"w":"gold"},{"t":131.82,"w":"Gold"},{"t":132.48,"w":"in"},{"t":132.74,"w":"a"},{"t":132.78,"w":"cup"},{"t":133.14,"w":"Smoke"},{"t":133.76,"w":"don't"},{"t":134.24,"w":"fall"},{"t":134.36,"w":"Turn"},{"t":135.18,"w":"it"},{"t":135.44,"w":"up"},{"t":135.9,"w":"Howdy"},{"t":136.6,"w":"to"},{"t":136.76,"w":"ball"},{"t":137.18,"w":"Why"},{"t":137.86,"w":"ain't"},{"t":138.06,"w":"it"},{"t":138.2,"w":"slow?"},{"t":138.72,"w":"Night"},{"t":139.1,"w":"getting"},{"t":139.62,"w":"hot"},{"t":140.15,"w":"Don't"},{"t":140.8,"w":"let"},{"t":140.86,"w":"go"},{"t":141.33,"w":"Rump"},{"t":141.88,"w":"and"},{"t":142.1,"w":"gold"},{"t":142.18,"w":"Rump"},{"t":142.18,"w":"and"},{"t":142.18,"w":"gold"},{"t":142.35,"w":"Rump"},{"t":142.9,"w":"and"},{"t":143.12,"w":"gold"},{"t":143.14,"w":"Rump"},{"t":143.42,"w":"and"},{"t":143.42,"w":"gold"},{"t":143.42,"w":"Rump"},{"t":144.26,"w":"and"},{"t":144.56,"w":"gold"},{"t":145.02,"w":"Rump"},{"t":145.44,"w":"and"},{"t":145.44,"w":"gold"},{"t":145.44,"w":"Rump"},{"t":145.84,"w":"and"},{"t":145.84,"w":"gold"},{"t":145.92,"w":"Rump"},{"t":146.1,"w":"and"},{"t":146.3,"w":"gold"},{"t":146.38,"w":"Rump"},{"t":146.46,"w":"and"},{"t":146.46,"w":"gold"},{"t":146.48,"w":"Rump"},{"t":147.4,"w":"and"},{"t":147.62,"w":"gold"},{"t":148.08,"w":"Rump"},{"t":148.76,"w":"and"},{"t":149.06,"w":"gold"},{"t":149.44,"w":"Rump"},{"t":150.18,"w":"and"},{"t":150.2,"w":"gold"},{"t":152.24,"w":"Rump"},{"t":152.76,"w":"and"},{"t":152.76,"w":"gold"},{"t":152.76,"w":"Rump"},{"t":152.9,"w":"and"},{"t":153.12,"w":"gold"},{"t":154.12,"w":"Rump"},{"t":154.22,"w":"and"},{"t":154.26,"w":"gold"},{"t":154.26,"w":"Rump"},{"t":154.26,"w":"and"},{"t":154.28,"w":"gold"},{"t":155.42,"w":"Rump"},{"t":155.52,"w":"and"},{"t":155.56,"w":"gold"},{"t":155.56,"w":"Rump"},{"t":155.56,"w":"and"},{"t":155.74,"w":"gold"},{"t":156.12,"w":"Rump"},{"t":156.64,"w":"and"},{"t":157.06,"w":"gold"},{"t":157.62,"w":"Rump"},{"t":158.06,"w":"and"},{"t":158.36,"w":"gold"},{"t":158.36,"w":"Rump"},{"t":158.36,"w":"and"},{"t":158.46,"w":"gold"},{"t":159,"w":"Rump"},{"t":159.62,"w":"and"},{"t":159.78,"w":"gold"},{"t":160.24,"w":"Rump"},{"t":160.96,"w":"and"},{"t":161.26,"w":"gold"},{"t":161.66,"w":"Rump"},{"t":162.2,"w":"and"},{"t":162.48,"w":"gold"},{"t":167.4,"w":"Rump"},{"t":167.8,"w":"and"},{"t":167.94,"w":"gold"},{"t":175.65,"w":"Rump"},{"t":176.46,"w":"and"},{"t":176.46,"w":"gold"},{"t":176.46,"w":"Thank"},{"t":176.98,"w":"you."}]}$j$::jsonb WHERE id = 'rum-pon-gold' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Yo,
+[00:00.28] yo,
+[00:00.56] girl cup crew,
+[00:01.64] crew,
+[00:02.00] crew,
+[00:02.32] crew,
+[00:02.48] smoke room
+[00:03.98] Pass it,
+[00:04.56] pass it,
+[00:05.22] pass it,
+[00:05.90] pass it,
+[00:06.58] pass it,
+[00:07.26] pass it
+[Verse 1 / Call & Response Setup]
+[00:07.87] Brooklyn to Kingston, run it
+[00:10.84] Rump and gold, wine for me
+[00:14.30] Smoke in a year,
+[00:15.62] come find me
+[00:17.12] Rump and gold,
+[00:18.43] move that waist
+[00:19.18] Pull on the rhythm, don't waste it
+[Chorus (Hook) - First Pass]
+[00:23.81] Rump and gold, gold in a cup
+[00:25.98] Smoke gonna fall, turn it up
+[00:28.64] Body too bold
+[00:30.20] Why ain't it slow?
+[00:31.62] Night getting hot
+[00:32.76] Don't let go
+[00:34.62] Wine for me
+[00:36.08] Wine for me
+[00:37.44] If you're bad come prove it
+[00:39.22] Easy now, easy now
+[Post-Hook / Verse 2 Start]
+[00:40.90] For me
+[00:41.54] Wine for me
+[00:42.76] Don't stop
+[00:43.26] Girl move it
+[00:44.66] Left side
+[00:46.00] Right side
+[00:47.38] Front row
+[00:48.66] Back row
+[Verse 2]
+[00:50.92] Red cup tilt when the baseline knock
+[00:53.82] Gold chain swing when the waistline drop
+[00:56.48] Room full smoke and the door still lock
+[00:59.24] DJ pull it back when the whole place rock
+[01:01.94] Brooklyn hot
+[01:03.08] King Kingston hotter
+[01:04.72] Who bring fire?
+[01:06.18] We bring proper
+[01:07.38] Who got rum?
+[01:08.86] Pour more water
+[01:10.16] Who bad bad?
+[01:11.18] Don't ask
+[01:11.80] Father
+[01:13.50] Rump and gold
+[01:14.84] Gold in a cup
+[01:16.18] Smoke don't fall
+[01:17.42] Turn it up
+[01:18.94] Howdy to ball
+[01:20.22] Why ain't it slow?
+[01:21.82] Night getting hot
+[01:23.24] Don't let go
+[01:24.20] One
+[01:26.48] Time
+[01:26.76] Wine for me
+[01:27.62] Blue time
+[01:28.46] Wine for me
+[01:30.36] Tree time
+[01:31.18] Don't watch me
+[01:32.34] For me
+[01:33.04] Four time
+[01:33.82] Pull up
+[01:36.52] Hey
+[01:39.06] Forward
+[01:42.24] Forward
+[01:44.98] Forward
+[01:45.70] Forward
+[01:48.00] Don't spill the drink like another one
+[01:50.38] DJ not done
+[01:52.06] Money never come
+[01:53.09] Hands on my waist but don't move them
+[Chorus (Hook) - Second Pass]
+[01:55.96] If you
+[01:56.48] Can't keep turn when you can't get none
+[01:58.84] Talk to them
+[01:59.44] I like it rough but smooth with the timing
+[02:01.74] Gold on the skin
+[02:02.94] Baseline climbing
+[Breakdown / Bridge]
+[02:04.44] Smoke in my hair
+[02:05.72] Rum in the lighting
+[02:07.16] If I say pull up
+[02:08.56] You better rewind it
+[02:10.88] Rump and gold
+[02:11.82] Gold in a cup
+[02:13.14] Smoke don't fall
+[02:14.36] Turn it up
+[02:15.90] Howdy to ball
+[Instrumental Riddim Break / Verse 3 Start]
+[02:17.18] Why ain't it slow?
+[02:18.72] Night getting hot
+[02:20.15] Don't let go
+[02:21.33] Rump and gold
+[02:22.18] Rump and gold
+[02:22.35] Rump and gold
+[02:23.14] Rump and gold
+[02:23.42] Rump and gold
+[02:25.02] Rump and gold
+[02:25.44] Rump and gold
+[02:25.92] Rump and gold
+[02:26.38] Rump and gold
+[02:26.48] Rump and gold
+[Verse 3]
+[02:28.08] Rump and gold
+[02:29.44] Rump and gold
+[02:32.24] Rump and gold
+[02:32.76] Rump and gold
+[02:34.12] Rump and gold
+[02:34.26] Rump and gold
+[02:35.42] Rump and gold
+[02:35.56] Rump and gold
+[02:36.12] Rump and gold
+[02:37.62] Rump and gold
+[02:38.36] Rump and gold
+[02:39.00] Rump and gold
+[02:40.24] Rump and gold
+[02:41.66] Rump and gold
+[02:47.40] Rump and gold
+[02:55.65] Rump and gold
+[02:56.46] Thank you.
+$j$ WHERE id = 'rum-pon-gold' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A sweaty, raw dancehall anthem celebrating a confident 'crew' in a smoky Brooklyn-to-Kingston club where drinking rum and flashing gold chains fuel an intense, non-stop party vibe.","overallMood":"Sweaty, Raw, Confident","themes":["Club Culture & Grind","Luxury & Gold Imagery","Smoke & Atmosphere","Call-and-Response Energy"],"palette":["#FFD700","#1C1C1C","#8B4513","#E63946"],"sections":[{"name":"Intro","emotion":"Anticipatory, Hushed Excitement","intensity":0.27,"colorHintHex":"#FFD700","start":0},{"name":"Verse 1 / Call & Response Setup","emotion":"Assertive Swagger","intensity":0.15,"colorHintHex":"#E63946","start":7.87},{"name":"Chorus (Hook) - First Pass","emotion":"Intoxicating Heat","intensity":0.62,"colorHintHex":"#FFD700","start":23.81},{"name":"Post-Hook / Verse 2 Start","emotion":"Kinetic Movement","intensity":0.6,"colorHintHex":"#1C1C1C","start":40.9},{"name":"Verse 2","emotion":"Aggressive Dominance","intensity":0.78,"colorHintHex":"#8B4513","start":50.92},{"name":"Chorus (Hook) - Second Pass","emotion":"Climaxing Fire","intensity":0.82,"colorHintHex":"#FFD700","start":115.96},{"name":"Breakdown / Bridge","emotion":"Sensory Overload","intensity":0.96,"colorHintHex":"#1C1C1C","start":124.44},{"name":"Instrumental Riddim Break / Verse 3 Start","emotion":"Hypnotic Repetition","intensity":0.83,"colorHintHex":"#E63946","start":137.18},{"name":"Verse 3","emotion":"Sated Satisfaction","intensity":0.8,"colorHintHex":"#8B4513","start":148.08}],"keywords":[{"word":"gold","emotion":"Wealth & Confidence","imageryPrompt":"Shimmering liquid gold swirling in a crystal cup, reflecting neon club lights on wet skin."},{"word":"smoke","emotion":"Hazy Mystery","imageryPrompt":"Thick blue-grey cigarette smoke curling through the air of a dimly lit basement room with hanging light fixtures."},{"word":"rum","emotion":"Intoxicating Warmth","imageryPrompt":"Deep amber liquid sloshing in tilted red plastic cups, condensation dripping onto wooden tables."},{"word":"crew","emotion":"Tribal Unity","imageryPrompt":"A tight-knit group of dancers moving in perfect sync within a crowded dance floor filled with sweat and energy."},{"word":"rump","emotion":"Groovy Sensuality","imageryPrompt":"Silhouette of hips swaying rhythmically against a backdrop of deep purple shadows and strobe light flares."},{"word":"hot","emotion":"Overheating Intensity","imageryPrompt":"Heat waves distorting the view in a packed nightclub, glowing skin tones under intense overhead lighting."}]}$j$::jsonb) WHERE id = 'rum-pon-gold' AND planet->'analysis' IS NULL;
+
+-- say-it-with-your-body: 257 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":8.6,"w":"Closer,"},{"t":10.04,"w":"you"},{"t":10.66,"w":"know"},{"t":11.4,"w":"it"},{"t":15.3,"w":"Come"},{"t":16,"w":"here"},{"t":32.16,"w":"Different"},{"t":32.3,"w":"streets,"},{"t":33.04,"w":"different"},{"t":34,"w":"names"},{"t":34.58,"w":"Different"},{"t":35.6,"w":"skies,"},{"t":36.56,"w":"same"},{"t":37.14,"w":"heartbeat"},{"t":38.3,"w":"You"},{"t":39.1,"w":"smile,"},{"t":39.88,"w":"I"},{"t":40.24,"w":"don't"},{"t":40.52,"w":"know"},{"t":40.72,"w":"what"},{"t":40.92,"w":"to"},{"t":41.06,"w":"say"},{"t":41.38,"w":"But"},{"t":41.54,"w":"somehow"},{"t":42.37,"w":"You"},{"t":43.84,"w":"already"},{"t":44.38,"w":"know"},{"t":44.88,"w":"your"},{"t":45.46,"w":"language"},{"t":46.48,"w":"Mine"},{"t":47.78,"w":"too,"},{"t":48.48,"w":"still"},{"t":52.13,"w":"We're"},{"t":52.26,"w":"moving"},{"t":52.82,"w":"like"},{"t":53.86,"w":"we"},{"t":54.16,"w":"always"},{"t":54.96,"w":"knew"},{"t":57.63,"w":"Say"},{"t":57.9,"w":"it"},{"t":58.12,"w":"with"},{"t":58.32,"w":"your"},{"t":58.52,"w":"body"},{"t":59.94,"w":"Closer"},{"t":60.93,"w":"Say"},{"t":61.42,"w":"it"},{"t":61.6,"w":"with"},{"t":61.8,"w":"your"},{"t":61.96,"w":"body"},{"t":62.46,"w":"Slower"},{"t":64.31,"w":"Say"},{"t":64.86,"w":"it"},{"t":65.08,"w":"with"},{"t":65.28,"w":"your"},{"t":65.48,"w":"body"},{"t":66.06,"w":"Move"},{"t":66.74,"w":"me"},{"t":67.56,"w":"Say"},{"t":68.26,"w":"it"},{"t":68.54,"w":"with"},{"t":68.78,"w":"your"},{"t":68.96,"w":"body"},{"t":69.44,"w":"Hold"},{"t":70.32,"w":"me"},{"t":70.9,"w":"Say"},{"t":71.86,"w":"it"},{"t":72.08,"w":"with"},{"t":72.26,"w":"your"},{"t":72.44,"w":"body,"},{"t":73.1,"w":"baby"},{"t":76.06,"w":"Don't"},{"t":76.26,"w":"say"},{"t":76.52,"w":"maybe"},{"t":77.66,"w":"Just"},{"t":78.27,"w":"say"},{"t":78.72,"w":"it"},{"t":79,"w":"with"},{"t":79.18,"w":"your"},{"t":79.36,"w":"body"},{"t":84.76,"w":"Mmm"},{"t":85.72,"w":"Every"},{"t":86.84,"w":"city's"},{"t":87.72,"w":"got"},{"t":87.86,"w":"another"},{"t":88.28,"w":"reason"},{"t":89.72,"w":"Every"},{"t":90.54,"w":"heartbeat"},{"t":91.06,"w":"finds"},{"t":91.36,"w":"another"},{"t":91.72,"w":"home"},{"t":92.34,"w":"You"},{"t":93.28,"w":"reach"},{"t":93.64,"w":"for"},{"t":93.88,"w":"me,"},{"t":94.62,"w":"I"},{"t":95.02,"w":"answer"},{"t":95.42,"w":"back"},{"t":95.76,"w":"No"},{"t":97.14,"w":"translation"},{"t":97.8,"w":"on"},{"t":98.78,"w":"this"},{"t":98.96,"w":"road"},{"t":100.5,"w":"One"},{"t":101.32,"w":"small"},{"t":101.76,"w":"step,"},{"t":102.34,"w":"one"},{"t":102.64,"w":"slow"},{"t":103.08,"w":"sway"},{"t":103.73,"w":"That's"},{"t":104.48,"w":"enough"},{"t":104.72,"w":"to"},{"t":104.98,"w":"tell"},{"t":105.28,"w":"me"},{"t":105.5,"w":"everything"},{"t":105.9,"w":"No"},{"t":107.16,"w":"dictionary,"},{"t":108.78,"w":"no"},{"t":108.88,"w":"explanation"},{"t":110.82,"w":"Just"},{"t":110.92,"w":"the"},{"t":111.06,"w":"music"},{"t":112.24,"w":"and"},{"t":112.34,"w":"the"},{"t":112.62,"w":"vibration"},{"t":119.78,"w":"I"},{"t":120.28,"w":"just"},{"t":120.28,"w":"need"},{"t":120.28,"w":"that"},{"t":120.28,"w":"I"},{"t":120.28,"w":"hit"},{"t":121.58,"w":"the"},{"t":121.7,"w":"road"},{"t":121.7,"w":"Every"},{"t":126.84,"w":"single"},{"t":127.04,"w":"thing"},{"t":127.12,"w":"that"},{"t":127.14,"w":"you"},{"t":128.26,"w":"try"},{"t":128.26,"w":"As"},{"t":128.32,"w":"soon"},{"t":128.32,"w":"as"},{"t":128.32,"w":"it"},{"t":128.32,"w":"comes"},{"t":128.32,"w":"to"},{"t":128.32,"w":"me"},{"t":128.32,"w":"I"},{"t":128.32,"w":"start"},{"t":128.32,"w":"a"},{"t":128.32,"w":"car你"},{"t":128.44,"w":"Ric"},{"t":128.58,"w":"fragile"},{"t":128.58,"w":"I"},{"t":128.98,"w":"take"},{"t":129.66,"w":"up"},{"t":130.02,"w":"the"},{"t":130.02,"w":"car"},{"t":130.02,"w":"I"},{"t":130.02,"w":"devour"},{"t":133.64,"w":"every"},{"t":133.64,"w":"last"},{"t":133.64,"w":"drop"},{"t":133.64,"w":"That"},{"t":133.66,"w":"this"},{"t":133.8,"w":"world"},{"t":133.9,"w":"is"},{"t":133.9,"w":"yours"},{"t":133.9,"w":"This"},{"t":133.9,"w":"từ"},{"t":133.9,"w":"sitten"},{"t":133.96,"w":"It's"},{"t":134.36,"w":"not"},{"t":134.36,"w":"just"},{"t":134.36,"w":"does"},{"t":134.36,"w":"to"},{"t":134.36,"w":"you"},{"t":137.12,"w":"I"},{"t":137.92,"w":"keep"},{"t":137.92,"w":"getting"},{"t":145.86,"w":"the"},{"t":145.86,"w":"idea"},{"t":148.19,"w":"Typical"},{"t":148.52,"w":"baby"},{"t":179.23,"w":"I'll"},{"t":179.34,"w":"meet"},{"t":179.48,"w":"you"},{"t":179.74,"w":"halfway"},{"t":180.3,"w":"when"},{"t":180.84,"w":"the"},{"t":181,"w":"silence"},{"t":181.72,"w":"speaks"},{"t":182.6,"w":"I"},{"t":182.7,"w":"feel"},{"t":183.06,"w":"what"},{"t":183.26,"w":"you"},{"t":183.44,"w":"say"},{"t":183.94,"w":"From"},{"t":184.28,"w":"Brooklyn"},{"t":184.9,"w":"to"},{"t":185.12,"w":"Manila"},{"t":185.72,"w":"to"},{"t":186,"w":"Laker"},{"t":186.58,"w":"to"},{"t":186.84,"w":"Saigon"},{"t":187.32,"w":"Every"},{"t":187.8,"w":"heartbeat"},{"t":188.56,"w":"speaks"},{"t":189.14,"w":"the"},{"t":189.48,"w":"same"},{"t":192.98,"w":"Say"},{"t":193.48,"w":"it"},{"t":193.62,"w":"with"},{"t":193.94,"w":"your"},{"t":194.04,"w":"body"},{"t":194.62,"w":"Lord,"},{"t":195.52,"w":"hold"},{"t":196.6,"w":"me"},{"t":199.81,"w":"Say"},{"t":200.36,"w":"it"},{"t":200.58,"w":"with"},{"t":200.74,"w":"your"},{"t":200.96,"w":"body"},{"t":201.76,"w":"Show"},{"t":202.2,"w":"me,"},{"t":203.22,"w":"know"},{"t":205.6,"w":"me"},{"t":207,"w":"Say"},{"t":207.4,"w":"it"},{"t":207.56,"w":"with"},{"t":207.78,"w":"your"},{"t":207.88,"w":"body"},{"t":208.38,"w":"Make"},{"t":209.14,"w":"me"},{"t":210.34,"w":"feel"},{"t":210.88,"w":"Every"},{"t":211.62,"w":"little"},{"t":212.1,"w":"heartbeat"},{"t":214.14,"w":"Say"},{"t":214.24,"w":"it"},{"t":214.46,"w":"with"},{"t":214.69,"w":"your"},{"t":214.84,"w":"body"},{"t":219.66,"w":"Just"},{"t":220.64,"w":"say"},{"t":221.1,"w":"it"},{"t":221.4,"w":"with"},{"t":221.52,"w":"your"},{"t":221.76,"w":"body"},{"t":239.34,"w":"He"},{"t":239.44,"w":"never"},{"t":239.78,"w":"had"},{"t":240.28,"w":"to"},{"t":240.7,"w":"say"},{"t":241.18,"w":"a"},{"t":241.56,"w":"word"},{"t":242.92,"w":"I"},{"t":243.02,"w":"heard"},{"t":243.5,"w":"you"}]}$j$::jsonb WHERE id = 'say-it-with-your-body' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:08.58] Closer, you know it
+[00:15.28] Come here
+[Verse 1]
+[00:32.14] Different streets, different names
+[00:34.56] Different skies, same heartbeat
+[00:38.28] You smile, I don't know what to say
+[00:41.36] But somehow
+[00:42.35] You already know your language
+[Pre-Chorus]
+[00:46.46] Mine too, still
+[00:52.10] We're moving like we always knew
+[Chorus]
+[00:57.61] Say it with your body
+[00:59.92] Closer
+[01:00.90] Say it with your body
+[01:02.44] Slower
+[01:04.29] Say it with your body
+[01:06.04] Move me
+[01:07.54] Say it with your body
+[01:09.42] Hold me
+[01:10.88] Say it with your body, baby
+[01:16.04] Don't say maybe
+[01:17.64] Just say it with your body
+[01:24.74] Mmm
+[01:25.70] Every city's got another reason
+[01:29.70] Every heartbeat finds another home
+[01:32.32] You reach for me, I answer back
+[01:35.74] No translation on this road
+[01:40.48] One small step, one slow sway
+[01:43.71] That's enough to tell me everything
+[01:45.88] No dictionary,
+[01:48.76] no explanation
+[01:50.80] Just the music
+[01:52.22] and the vibration
+[01:59.75] I just need that I hit the road
+[02:01.68] Every
+[Verse 2]
+[02:06.82] single thing that you try
+[02:08.24] As soon as it comes to me
+[02:08.30] I start a car你
+[02:08.42] Ric fragile
+[02:08.56] I take up the car
+[02:09.00] I devour every last drop
+[02:13.62] That this world is yours
+[02:13.88] This từ sitten
+[02:13.94] It's not just does to you
+[02:17.10] I keep getting the idea
+[02:28.17] Typical baby
+[02:59.21] I'll meet you halfway when the silence speaks
+[03:02.58] I feel what you say
+[03:03.92] From Brooklyn to Manila to Laker to Saigon
+[03:07.30] Every heartbeat speaks the same
+[Drop]
+[03:12.96] Say it with your body
+[03:14.60] Lord,
+[03:15.50] hold me
+[03:19.79] Say it with your body
+[03:21.74] Show me, know me
+[03:26.98] Say it with your body
+[03:28.36] Make me feel
+[03:30.86] Every little heartbeat
+[03:34.12] Say it with your body
+[03:39.64] Just say it with your body
+[03:59.32] He never had to say a word
+[04:02.90] I heard you
+$j$ WHERE id = 'say-it-with-your-body' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"An intimate R&B anthem exploring universal connection through physical touch and silent understanding across diverse cultures.","overallMood":"Sensual & Luxurious","themes":["Non-verbal communication","Intimate connection","Cultural unity through heartbeat","Sensual tension","Emotional vulnerability","Luxurious atmosphere"],"palette":["#2c0e18","#5d3a46","#9b7f7f","#f4ece5"],"sections":[{"name":"Intro","emotion":"Anticipation and whispering invitation","intensity":0.76,"colorHintHex":"#1a1824","start":8.58},{"name":"Verse 1","emotion":"Quiet realization of shared soul across distances","intensity":0.57,"colorHintHex":"#2c0e18","start":32.14},{"name":"Pre-Chorus","emotion":"Building tension and rhythmic certainty","intensity":0.66,"colorHintHex":"#5d3a46","start":46.46},{"name":"Chorus","emotion":"Cinematic release of sensory desire","intensity":0.82,"colorHintHex":"#9b7f7f","start":57.61},{"name":"Verse 2","emotion":"Global resonance and consuming devotion","intensity":0.29,"colorHintHex":"#3e1c28","start":126.82},{"name":"Drop","emotion":"Raw, sub-bass driven spiritual surrender","intensity":0.28,"colorHintHex":"#f4ece5","start":192.96}],"keywords":[{"word":"closer","emotion":"Urgent physical yearning","imageryPrompt":"Two silhouettes shrinking into a single point of light in a dimly lit luxury lounge, depth of field blurring the background city lights."},{"word":"heartbeat","emotion":"Rhythmic unity and life force","imageryPrompt":"A glowing red pulse wave expanding across a dark map connecting Brooklyn to Manila, visualizing sound as light."},{"word":"body","emotion":"Tactile sensation without sight","imageryPrompt":"Soft focus on fabric textures and skin tones in warm candlelight, capturing the feeling of touch rather than seeing a face."},{"word":"silence","emotion":"Comfortable void filled with meaning","imageryPrompt":"A vast empty space where sound waves are visible as gentle ripples in dark water, representing unspoken understanding."},{"word":"vibration","emotion":"Resonant emotional frequency","imageryPrompt":"Dust motes dancing intensely to an invisible low-frequency hum inside a cathedral-like room with velvet drapes."},{"word":"devour","emotion":"Intense, consuming love","imageryPrompt":"A mouth gently closing around a glowing orb of energy in slow motion, capturing the act of taking something precious into oneself."}]}$j$::jsonb) WHERE id = 'say-it-with-your-body' AND planet->'analysis' IS NULL;
+
+-- say-it-with-your-eyes: 144 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":38.18,"w":"Keep"},{"t":39.08,"w":"it"},{"t":39.56,"w":"on"},{"t":39.8,"w":"low,"},{"t":40.2,"w":"keep"},{"t":41.14,"w":"it"},{"t":41.5,"w":"on"},{"t":41.8,"w":"clear"},{"t":42.08,"w":"I"},{"t":42.76,"w":"take"},{"t":43.49,"w":"one"},{"t":43.72,"w":"step,"},{"t":44.48,"w":"you"},{"t":45.18,"w":"look"},{"t":45.5,"w":"away"},{"t":45.94,"w":"Can"},{"t":47.1,"w":"I"},{"t":47.2,"w":"get"},{"t":47.5,"w":"your"},{"t":47.68,"w":"face"},{"t":48.1,"w":"for"},{"t":48.7,"w":"one"},{"t":49.25,"w":"clean"},{"t":49.52,"w":"frame?"},{"t":50.88,"w":"Look"},{"t":51.08,"w":"my"},{"t":51.38,"w":"way,"},{"t":52.26,"w":"just"},{"t":53.42,"w":"listen"},{"t":54.51,"w":"Look"},{"t":55.36,"w":"my"},{"t":55.46,"w":"way,"},{"t":56.26,"w":"just"},{"t":57.42,"w":"listen"},{"t":58.36,"w":"Swim"},{"t":58.46,"w":"across"},{"t":59.42,"w":"the"},{"t":59.6,"w":"room,"},{"t":60.38,"w":"I"},{"t":61.38,"w":"stay"},{"t":61.9,"w":"Swim"},{"t":62.4,"w":"across"},{"t":62.91,"w":"the"},{"t":63.66,"w":"room,"},{"t":64.34,"w":"I"},{"t":65.4,"w":"stay"},{"t":81.44,"w":"Blue"},{"t":82.36,"w":"in"},{"t":83.28,"w":"your"},{"t":83.48,"w":"black,"},{"t":84.04,"w":"black"},{"t":84.32,"w":"Ice"},{"t":84.99,"w":"on"},{"t":85.26,"w":"your"},{"t":85.42,"w":"hand"},{"t":86.3,"w":"You"},{"t":86.4,"w":"move"},{"t":87.12,"w":"like"},{"t":87.22,"w":"you"},{"t":87.4,"w":"know"},{"t":87.74,"w":"That"},{"t":88.14,"w":"I'm"},{"t":88.16,"w":"not"},{"t":88.16,"w":"your"},{"t":88.16,"w":"friend"},{"t":88.18,"w":"No,"},{"t":88.4,"w":"I"},{"t":88.86,"w":"don't"},{"t":89.26,"w":"understand"},{"t":89.62,"w":"I"},{"t":90.44,"w":"don't"},{"t":91.2,"w":"say"},{"t":91.38,"w":"much"},{"t":91.85,"w":"You"},{"t":92.9,"w":"don't"},{"t":93.32,"w":"need"},{"t":93.36,"w":"much"},{"t":93.78,"w":"One"},{"t":94.9,"w":"little"},{"t":95.24,"w":"pass"},{"t":95.74,"w":"Then"},{"t":96.34,"w":"we"},{"t":96.84,"w":"both"},{"t":97.18,"w":"go"},{"t":97.24,"w":"Look"},{"t":98.04,"w":"my"},{"t":99.06,"w":"way,"},{"t":100.9,"w":"just"},{"t":101,"w":"once"},{"t":101.74,"w":"Look"},{"t":102.16,"w":"my"},{"t":103.04,"w":"way,"},{"t":104.92,"w":"just"},{"t":105.02,"w":"once"},{"t":105.76,"w":"Swim"},{"t":106.1,"w":"across"},{"t":106.46,"w":"the"},{"t":107.24,"w":"room,"},{"t":108,"w":"I"},{"t":109.02,"w":"stay"},{"t":109.52,"w":"Swim"},{"t":110.08,"w":"across"},{"t":110.42,"w":"the"},{"t":111.22,"w":"room,"},{"t":111.92,"w":"I"},{"t":113.02,"w":"stay"},{"t":118.46,"w":"Blue"},{"t":118.62,"w":"in"},{"t":119.46,"w":"your"},{"t":124.58,"w":"black,"},{"t":124.58,"w":"black"},{"t":124.58,"w":"Ice"},{"t":126.3,"w":"on"},{"t":126.64,"w":"your"},{"t":126.82,"w":"hand"},{"t":126.82,"w":"You"},{"t":126.82,"w":"move"},{"t":126.82,"w":"like"},{"t":126.86,"w":"you"},{"t":127.22,"w":"know"},{"t":127.22,"w":"That"},{"t":127.6,"w":"I'm"},{"t":129.02,"w":"not"},{"t":129.78,"w":"your"},{"t":129.78,"w":"friend"},{"t":130.18,"w":"Swim"},{"t":130.6,"w":"across"},{"t":131.1,"w":"the"},{"t":131.3,"w":"room,"},{"t":131.84,"w":"I"},{"t":131.88,"w":"stay"},{"t":133.02,"w":"Blue"},{"t":134.37,"w":"in"},{"t":134.58,"w":"your"},{"t":135.24,"w":"black,"},{"t":135.62,"w":"black"},{"t":145.3,"w":"Ice"},{"t":146.38,"w":"on"},{"t":147.46,"w":"your"},{"t":147.48,"w":"hand"},{"t":158.36,"w":"Thank"},{"t":159.76,"w":"you."},{"t":190.9,"w":"Thank"},{"t":190.98,"w":"you."}]}$j$::jsonb WHERE id = 'say-it-with-your-eyes' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 2]
+[00:38.16] Keep it on low, keep it on clear
+[00:42.06] I take one step,
+[00:44.46] you look away
+[00:45.92] Can I get your face for one clean frame?
+[Chorus]
+[00:50.86] Look my way,
+[00:52.24] just listen
+[00:54.49] Look my way,
+[00:56.24] just listen
+[00:58.34] Swim across
+[00:59.40] the room, I stay
+[01:01.88] Swim across the room,
+[01:04.32] I stay
+[01:21.42] Blue in your black, black
+[01:24.30] Ice on your hand
+[01:26.28] You move like you know
+[01:27.72] That I'm not your friend
+[01:28.16] No, I don't understand
+[01:29.60] I don't say much
+[01:31.83] You don't need much
+[01:33.76] One little pass
+[01:35.72] Then we both go
+[01:37.22] Look my way,
+[01:40.88] just once
+[01:41.72] Look my way,
+[01:44.90] just once
+[01:45.74] Swim across the room, I stay
+[01:49.50] Swim across the room, I stay
+[01:58.44] Blue in your black, black
+[Verse 2 (Repeat)]
+[02:04.56] Ice
+[02:06.28] on your hand
+[02:06.80] You move like you know
+[02:07.20] That I'm not your friend
+[02:10.15] Swim across the room, I stay
+[02:12.00] Blue
+[02:14.34] in your black, black
+[Bridge / Half-time drop intro]
+[02:25.28] Ice on your hand
+[Half-time drop]
+[02:38.34] Thank you.
+[Chorus (Final)]
+[03:10.88] Thank you.
+$j$ WHERE id = 'say-it-with-your-eyes' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A sultry Southern R&B track describing a tense yet hypnotic moment where two people share an intimate connection through unspoken glances and subtle gestures within a dimly lit space.","overallMood":"sultry, intimate, hushed, hypnotic","themes":["Silent Communication","Unrequited Desire","Atmospheric Intimacy","Visual Obsession"],"palette":["#050A14","#2D3B5E","#6C7F98","#E0EBF5"],"sections":[{"sectionName":"Intro","emotion":"Anticipation and quiet tension setting the stage for a visual encounter.","intensity":0.79,"colorHintHex":"#2D3B5E","start":38.16},{"sectionName":"Verse 2","emotion":"A focused request to capture a fleeting moment of connection amidst distraction.","intensity":0.6,"colorHintHex":"#6C7F98","start":38.16},{"sectionName":"Chorus","emotion":"Hypnotic longing and the surreal sensation of moving through a dark room solely for visual contact.","intensity":0.54,"colorHintHex":"#E0EBF5","start":50.86},{"sectionName":"Verse 2 (Repeat)","emotion":"Reinforced obsession with the subject's cold elegance and knowing distance.","intensity":0.22,"colorHintHex":"#1A2332","start":124.56},{"sectionName":"Bridge / Half-time drop intro","emotion":"Sudden stillness that freezes the scene on a single striking detail.","intensity":0.15,"colorHintHex":"#4A6B8D","start":145.28},{"sectionName":"Half-time drop","emotion":"Gratitude mixed with finality after an intense emotional exchange.","intensity":0.06,"colorHintHex":"#1C253A","start":158.34},{"sectionName":"Chorus (Final)","emotion":"Lingering echo of the visual connection fading into a quiet afterglow.","intensity":0.18,"colorHintHex":"#8FA1B3","start":190.88}],"keywords":[{"word":"swim","emotion":"Fluid desperation and surreal movement against a dark background.","imageryPrompt":"A human figure appearing to swim slowly through thick, viscous air inside a dimly lit room with floating dust motes."},{"word":"black","emotion":"Intense contrast between deep shadows and cool skin tones.","imageryPrompt":"Close-up of pale blue-toned lips set against the silhouette of a person wearing all-black clothing in low light."},{"word":"hand","emotion":"Cold elegance, detachment, and sharp visual texture.","imageryPrompt":"A high-contrast shot of a manicured finger pressing against the lens with frost forming around it."},{"word":"look","emotion":"Direct gaze that pierces through darkness demanding attention.","imageryPrompt":"Two pairs of eyes meeting across an empty space in a dark room, illuminated only by the reflection from each other's pupils."},{"word":"stay","emotion":"Stagnant tension and refusal to move despite internal desire.","imageryPrompt":"A shadow cast on a wall that remains perfectly still while ripples of light pass around it."},{"word":"frame","emotion":"The desire to freeze time into a perfect, clean image.","imageryPrompt":"A camera viewfinder overlay capturing the exact geometry of two faces in profile within a dark interior."}]}$j$::jsonb) WHERE id = 'say-it-with-your-eyes' AND planet->'analysis' IS NULL;
+
+-- still-got-5-on-it: 558 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":6.14,"w":"Yeah,"},{"t":6.86,"w":"still"},{"t":7.65,"w":"got"},{"t":7.84,"w":"five"},{"t":8.22,"w":"on"},{"t":8.44,"w":"it,"},{"t":8.66,"w":"five,"},{"t":9.44,"w":"man,"},{"t":13.9,"w":"five"},{"t":14,"w":"used"},{"t":14.34,"w":"to"},{"t":14.44,"w":"mean"},{"t":14.62,"w":"something,"},{"t":15.22,"w":"still"},{"t":19.84,"w":"got"},{"t":20.38,"w":"five"},{"t":20.74,"w":"on"},{"t":21.4,"w":"it,"},{"t":21.58,"w":"still"},{"t":22.42,"w":"got"},{"t":22.96,"w":"five"},{"t":23.34,"w":"on"},{"t":23.94,"w":"it,"},{"t":24.1,"w":"but"},{"t":24.32,"w":"five"},{"t":24.66,"w":"don't"},{"t":25.04,"w":"buy"},{"t":25.24,"w":"what"},{"t":25.48,"w":"five"},{"t":25.96,"w":"did,"},{"t":29.05,"w":"still"},{"t":30.24,"w":"got"},{"t":30.62,"w":"five"},{"t":31,"w":"on"},{"t":31.64,"w":"it,"},{"t":31.82,"w":"still"},{"t":32.7,"w":"got"},{"t":33.2,"w":"five"},{"t":33.58,"w":"on"},{"t":34.22,"w":"it,"},{"t":34.36,"w":"man,"},{"t":34.52,"w":"tell"},{"t":34.7,"w":"me"},{"t":34.84,"w":"where"},{"t":35.1,"w":"the"},{"t":35.22,"w":"good"},{"t":35.44,"w":"days"},{"t":35.86,"w":"went,"},{"t":36.52,"w":"yeah,"},{"t":39.7,"w":"five"},{"t":40.2,"w":"in"},{"t":40.86,"w":"the"},{"t":40.96,"w":"hand,"},{"t":41.22,"w":"there"},{"t":41.32,"w":"was"},{"t":41.5,"w":"enough"},{"t":41.8,"w":"back"},{"t":42.1,"w":"then,"},{"t":42.64,"w":"little"},{"t":42.76,"w":"bag"},{"t":43.1,"w":"came"},{"t":43.42,"w":"through,"},{"t":43.86,"w":"everybody"},{"t":44.22,"w":"got"},{"t":44.72,"w":"in,"},{"t":45.26,"w":"one"},{"t":45.66,"w":"had"},{"t":45.94,"w":"the"},{"t":46.1,"w":"papers,"},{"t":46.62,"w":"one"},{"t":46.94,"w":"had"},{"t":47.22,"w":"the"},{"t":47.38,"w":"light,"},{"t":47.78,"w":"one"},{"t":47.94,"w":"little"},{"t":48.24,"w":"five"},{"t":48.52,"w":"kept"},{"t":48.8,"w":"the"},{"t":48.98,"w":"room"},{"t":49.2,"w":"good"},{"t":49.46,"w":"all"},{"t":49.7,"w":"night,"},{"t":50.22,"w":"windows"},{"t":50.9,"w":"cracked,"},{"t":51.38,"w":"windows"},{"t":51.38,"w":"cracked,"},{"t":51.54,"w":"beat"},{"t":51.7,"w":"played"},{"t":52.04,"w":"low,"},{"t":52.46,"w":"good"},{"t":52.96,"w":"herb"},{"t":53.42,"w":"hit"},{"t":53.6,"w":"before"},{"t":53.82,"w":"the"},{"t":54.06,"w":"first"},{"t":54.32,"w":"damn"},{"t":54.6,"w":"smoke,"},{"t":55.14,"w":"sticky"},{"t":55.46,"w":"little"},{"t":55.8,"w":"fingers"},{"t":56.26,"w":"when"},{"t":56.46,"w":"you"},{"t":56.6,"w":"broke"},{"t":56.86,"w":"that"},{"t":57.14,"w":"green,"},{"t":57.7,"w":"you"},{"t":57.88,"w":"knew"},{"t":58.12,"w":"what"},{"t":58.42,"w":"it"},{"t":58.58,"w":"was,"},{"t":58.92,"w":"you"},{"t":59.14,"w":"knew"},{"t":59.38,"w":"what"},{"t":59.64,"w":"I"},{"t":59.82,"w":"mean,"},{"t":60.26,"w":"no"},{"t":60.6,"w":"label,"},{"t":61.24,"w":"no"},{"t":61.56,"w":"fancy"},{"t":62.14,"w":"name,"},{"t":62.86,"w":"just"},{"t":63.56,"w":"good"},{"t":63.84,"w":"clean"},{"t":64.1,"w":"smoke,"},{"t":64.68,"w":"in"},{"t":65.08,"w":"the"},{"t":65.2,"w":"pocket"},{"t":65.54,"w":"of"},{"t":65.7,"w":"change,"},{"t":66.12,"w":"now"},{"t":66.2,"w":"five"},{"t":66.48,"w":"hit"},{"t":66.7,"w":"the"},{"t":66.84,"w":"table,"},{"t":67.26,"w":"everybody"},{"t":67.78,"w":"looked"},{"t":68.28,"w":"strange,"},{"t":68.72,"w":"I"},{"t":68.82,"w":"said,"},{"t":69.04,"w":"let"},{"t":69.18,"w":"me"},{"t":69.4,"w":"get"},{"t":69.6,"w":"five,"},{"t":70.1,"w":"he"},{"t":70.66,"w":"said,"},{"t":71,"w":"five"},{"t":71.18,"w":"of"},{"t":71.34,"w":"what,"},{"t":71.76,"w":"five"},{"t":72.44,"w":"of"},{"t":72.82,"w":"what,"},{"t":73.38,"w":"still"},{"t":73.6,"w":"got"},{"t":74.02,"w":"five"},{"t":74.4,"w":"on"},{"t":75.04,"w":"it,"},{"t":75.32,"w":"still"},{"t":76.2,"w":"got"},{"t":76.62,"w":"five"},{"t":77,"w":"on"},{"t":77.64,"w":"it,"},{"t":77.88,"w":"but"},{"t":77.96,"w":"five"},{"t":78.28,"w":"don't"},{"t":78.72,"w":"buy"},{"t":78.88,"w":"what"},{"t":79.14,"w":"five"},{"t":79.58,"w":"did."},{"t":83,"w":"Still"},{"t":83.6,"w":"got"},{"t":84.2,"w":"five"},{"t":84.78,"w":"on"},{"t":85.26,"w":"it,"},{"t":85.46,"w":"still"},{"t":86.34,"w":"got"},{"t":86.82,"w":"five"},{"t":87.22,"w":"on"},{"t":87.86,"w":"it,"},{"t":87.96,"w":"man,"},{"t":88.18,"w":"tell"},{"t":88.36,"w":"me"},{"t":88.52,"w":"where"},{"t":88.74,"w":"the"},{"t":88.86,"w":"good"},{"t":89.04,"w":"days"},{"t":89.48,"w":"went,"},{"t":89.92,"w":"oh,"},{"t":92.04,"w":"oh,"},{"t":93.04,"w":"oh,"},{"t":93.32,"w":"oh,"},{"t":93.84,"w":"five"},{"t":94.04,"w":"used"},{"t":94.46,"w":"to"},{"t":94.62,"w":"stretch,"},{"t":95.08,"w":"five"},{"t":95.4,"w":"used"},{"t":95.76,"w":"to"},{"t":95.94,"w":"last,"},{"t":96.38,"w":"five"},{"t":96.76,"w":"had"},{"t":97.04,"w":"the"},{"t":97.18,"w":"whole"},{"t":97.4,"w":"damn"},{"t":97.74,"w":"room"},{"t":98.08,"w":"on"},{"t":98.4,"w":"blast,"},{"t":98.88,"w":"five"},{"t":99.24,"w":"used"},{"t":99.6,"w":"to"},{"t":99.74,"w":"stretch,"},{"t":100.2,"w":"five"},{"t":100.56,"w":"used"},{"t":100.88,"w":"to"},{"t":101.04,"w":"live,"},{"t":101.34,"w":"now"},{"t":101.52,"w":"five"},{"t":101.84,"w":"don't"},{"t":102.34,"w":"buy"},{"t":102.52,"w":"what"},{"t":102.78,"w":"five"},{"t":103.08,"w":"used"},{"t":103.78,"w":"to"},{"t":104.08,"w":"get,"},{"t":104.26,"w":"still"},{"t":104.46,"w":"got"},{"t":104.66,"w":"five"},{"t":105.06,"w":"on"},{"t":105.7,"w":"it,"},{"t":105.9,"w":"still"},{"t":106.74,"w":"got"},{"t":107.26,"w":"five"},{"t":107.9,"w":"on"},{"t":108.28,"w":"it,"},{"t":108.46,"w":"but"},{"t":108.52,"w":"five"},{"t":108.94,"w":"don't"},{"t":109.42,"w":"buy"},{"t":109.6,"w":"what"},{"t":110,"w":"five"},{"t":110.72,"w":"did."},{"t":113.56,"w":"Now"},{"t":114.12,"w":"the"},{"t":114.34,"w":"price"},{"t":114.7,"w":"went"},{"t":115.04,"w":"up"},{"t":115.32,"w":"and"},{"t":115.52,"w":"the"},{"t":115.66,"w":"trust"},{"t":115.98,"w":"went"},{"t":116.24,"w":"down"},{"t":116.6,"w":"Too"},{"t":116.76,"w":"much"},{"t":116.96,"w":"mystery"},{"t":117.3,"w":"smoke"},{"t":117.8,"w":"goin'"},{"t":118.14,"w":"around"},{"t":118.38,"w":"this"},{"t":118.78,"w":"town"},{"t":119.16,"w":"What"},{"t":119.36,"w":"they"},{"t":119.48,"w":"spray"},{"t":119.74,"w":"on"},{"t":120.02,"w":"that?"},{"t":120.38,"w":"What"},{"t":120.62,"w":"they"},{"t":120.76,"w":"mix"},{"t":121.1,"w":"in"},{"t":121.28,"w":"this?"},{"t":121.76,"w":"Why"},{"t":121.92,"w":"it"},{"t":122.04,"w":"smell"},{"t":122.26,"w":"like"},{"t":122.52,"w":"candy"},{"t":123,"w":"and"},{"t":123.26,"w":"chemical"},{"t":123.72,"w":"mist?"},{"t":124.4,"w":"Nah,"},{"t":124.56,"w":"keep"},{"t":124.76,"w":"that"},{"t":125.04,"w":"back,"},{"t":125.56,"w":"y"},{"t":125.74,"w":"'all"},{"t":125.78,"w":"remember"},{"t":126.1,"w":"them"},{"t":126.44,"w":"days"},{"t":126.84,"w":"Biggest"},{"t":127.54,"w":"damn"},{"t":127.72,"w":"problem"},{"t":128.18,"w":"was"},{"t":128.36,"w":"findin'"},{"t":128.84,"w":"the"},{"t":128.92,"w":"place"},{"t":129.2,"w":"Somebody"},{"t":129.82,"w":"got"},{"t":130.24,"w":"hungry,"},{"t":130.76,"w":"somebody"},{"t":131.06,"w":"got"},{"t":131.54,"w":"loud"},{"t":131.86,"w":"Somebody"},{"t":132.22,"w":"told"},{"t":132.78,"w":"stories"},{"t":133.26,"w":"and"},{"t":133.44,"w":"forgot"},{"t":133.6,"w":"half"},{"t":134.16,"w":"out"},{"t":134.48,"w":"now"},{"t":134.72,"w":"Every"},{"t":135.06,"w":"little"},{"t":135.38,"w":"string"},{"t":135.7,"w":"got"},{"t":135.98,"w":"a"},{"t":136.14,"w":"14"},{"t":136.54,"w":"-word"},{"t":136.98,"w":"name"},{"t":137.28,"w":"Supernova,"},{"t":137.94,"w":"nuclear,"},{"t":138.58,"w":"purple,"},{"t":139.04,"w":"cocaine"},{"t":139.52,"w":"What?"},{"t":140.3,"w":"Exactly"},{"t":141.19,"w":"I"},{"t":141.66,"w":"don't"},{"t":142.22,"w":"need"},{"t":142.38,"w":"a"},{"t":142.5,"w":"barcode,"},{"t":143.18,"w":"I"},{"t":143.32,"w":"don't"},{"t":143.48,"w":"need"},{"t":143.66,"w":"a"},{"t":143.8,"w":"brand"},{"t":144.04,"w":"I"},{"t":144.26,"w":"need"},{"t":144.42,"w":"five"},{"t":144.68,"w":"dollars"},{"t":144.96,"w":"worth"},{"t":145.32,"w":"like"},{"t":145.62,"w":"five"},{"t":145.98,"w":"used"},{"t":146.22,"w":"to"},{"t":146.38,"w":"understand"},{"t":148.83,"w":"Still"},{"t":148.96,"w":"got"},{"t":149.4,"w":"five"},{"t":149.86,"w":"on"},{"t":150.38,"w":"it"},{"t":150.58,"w":"Still"},{"t":151.1,"w":"got"},{"t":151.94,"w":"five"},{"t":152.32,"w":"on"},{"t":153,"w":"it"},{"t":153.12,"w":"But"},{"t":153.28,"w":"five"},{"t":153.62,"w":"don't"},{"t":154.08,"w":"buy"},{"t":154.26,"w":"what"},{"t":154.56,"w":"five"},{"t":155.04,"w":"did"},{"t":159.04,"w":"Still"},{"t":159.16,"w":"got"},{"t":159.62,"w":"five"},{"t":160.08,"w":"on"},{"t":160.6,"w":"it"},{"t":160.8,"w":"Still"},{"t":161.72,"w":"got"},{"t":162.18,"w":"five"},{"t":162.56,"w":"on"},{"t":163.18,"w":"it"},{"t":163.22,"w":"Man,"},{"t":163.54,"w":"tell"},{"t":163.7,"w":"me"},{"t":163.9,"w":"where"},{"t":164.1,"w":"the"},{"t":164.22,"w":"good"},{"t":164.42,"w":"days"},{"t":164.84,"w":"went"},{"t":165.29,"w":"Went,"},{"t":166.22,"w":"went,"},{"t":166.46,"w":"went"},{"t":166.84,"w":"Went,"},{"t":167.62,"w":"went,"},{"t":168.22,"w":"went"},{"t":168.22,"w":"Went,"},{"t":168.22,"w":"went,"},{"t":168.22,"w":"went"},{"t":168.76,"w":"Went,"},{"t":168.82,"w":"went,"},{"t":168.82,"w":"went"},{"t":169.52,"w":"Good"},{"t":169.62,"w":"old"},{"t":169.8,"w":"Good,"},{"t":170.96,"w":"good,"},{"t":171.28,"w":"good"},{"t":172.06,"w":"old"},{"t":172.16,"w":"days"},{"t":173.1,"w":"Pass"},{"t":173.95,"w":"it"},{"t":174.28,"w":"around"},{"t":175.42,"w":"Good,"},{"t":176.08,"w":"good,"},{"t":176.4,"w":"good,"},{"t":176.72,"w":"good"},{"t":177.08,"w":"clean"},{"t":177.48,"w":"smoke"},{"t":177.94,"w":"Music"},{"t":178.66,"w":"turned"},{"t":179.14,"w":"down"},{"t":180.04,"w":"Five"},{"t":180.94,"w":"in"},{"t":181.3,"w":"the"},{"t":181.44,"w":"middle"},{"t":181.78,"w":"Everybody"},{"t":182.38,"w":"chipped"},{"t":183.12,"w":"in"},{"t":183.38,"w":"Now"},{"t":183.76,"w":"put"},{"t":183.96,"w":"five"},{"t":184.38,"w":"down"},{"t":186.94,"w":"And"},{"t":187.04,"w":"they"},{"t":187.18,"w":"tell"},{"t":187.42,"w":"me"},{"t":189.09,"w":"Try"},{"t":189.26,"w":"again"},{"t":189.8,"w":"Yeah,"},{"t":190.72,"w":"yeah,"},{"t":191.34,"w":"yeah,"},{"t":191.94,"w":"yeah"},{"t":192.22,"w":"Five"},{"t":192.48,"w":"used"},{"t":192.8,"w":"to"},{"t":192.96,"w":"stretch"},{"t":193.24,"w":"Five"},{"t":193.76,"w":"used"},{"t":194.08,"w":"to"},{"t":194.26,"w":"last"},{"t":194.52,"w":"Five"},{"t":195.06,"w":"had"},{"t":195.36,"w":"the"},{"t":195.5,"w":"whole"},{"t":195.76,"w":"damn"},{"t":196.06,"w":"room"},{"t":196.38,"w":"on"},{"t":196.72,"w":"blast"},{"t":197.08,"w":"Five"},{"t":197.62,"w":"used"},{"t":197.92,"w":"to"},{"t":198.08,"w":"stretch"},{"t":198.36,"w":"Five"},{"t":198.86,"w":"used"},{"t":199.2,"w":"to"},{"t":199.34,"w":"last"},{"t":199.5,"w":"Five"},{"t":199.72,"w":"used"},{"t":199.72,"w":"to"},{"t":199.72,"w":"live"},{"t":199.72,"w":"Now"},{"t":199.8,"w":"five"},{"t":200.3,"w":"don't"},{"t":200.7,"w":"buy"},{"t":200.78,"w":"what"},{"t":201.14,"w":"five"},{"t":201.4,"w":"used"},{"t":202.12,"w":"to"},{"t":202.32,"w":"give"},{"t":202.46,"w":"Still"},{"t":202.74,"w":"got"},{"t":203.02,"w":"five"},{"t":203.38,"w":"on"},{"t":204.02,"w":"it"},{"t":204.22,"w":"Still"},{"t":204.78,"w":"got"},{"t":205.6,"w":"five"},{"t":205.96,"w":"on"},{"t":206.66,"w":"it"},{"t":206.7,"w":"Still"},{"t":206.9,"w":"got"},{"t":206.9,"w":"five"},{"t":206.9,"w":"on"},{"t":206.9,"w":"it"},{"t":206.9,"w":"But"},{"t":206.9,"w":"five"},{"t":207.34,"w":"don't"},{"t":207.72,"w":"buy"},{"t":207.92,"w":"what"},{"t":208.26,"w":"five"},{"t":208.76,"w":"did"},{"t":212.02,"w":"Still"},{"t":212.74,"w":"got"},{"t":213.28,"w":"five"},{"t":213.9,"w":"on"},{"t":214.26,"w":"it"},{"t":214.59,"w":"Still"},{"t":214.92,"w":"got"},{"t":215.22,"w":"five"},{"t":215.7,"w":"on"},{"t":215.92,"w":"it"},{"t":216.26,"w":"Still"},{"t":216.64,"w":"got"},{"t":216.92,"w":"five"},{"t":217.36,"w":"on"},{"t":217.6,"w":"it"},{"t":217.98,"w":"Still"},{"t":218.34,"w":"got"},{"t":218.44,"w":"five"},{"t":219,"w":"on"},{"t":219.28,"w":"it"},{"t":219.48,"w":"Still"},{"t":219.9,"w":"got"},{"t":220.28,"w":"five"},{"t":220.72,"w":"on"},{"t":220.82,"w":"it"},{"t":220.82,"w":"But"},{"t":220.82,"w":"five"},{"t":221.44,"w":"don't"},{"t":221.9,"w":"buy"},{"t":222.52,"w":"what"},{"t":222.62,"w":"five"},{"t":223.08,"w":"did"},{"t":223.76,"w":"But"},{"t":224.2,"w":"five"},{"t":224.2,"w":"don't"},{"t":224.2,"w":"buy"},{"t":224.2,"w":"what"},{"t":224.2,"w":"five"},{"t":224.2,"w":"did"},{"t":224.2,"w":"But"},{"t":224.28,"w":"five"},{"t":224.28,"w":"don't"},{"t":224.28,"w":"buy"},{"t":224.28,"w":"what"},{"t":224.28,"w":"five"},{"t":224.28,"w":"did"},{"t":224.35,"w":"But"},{"t":224.8,"w":"five"},{"t":225.26,"w":"don't"},{"t":225.26,"w":"buy"},{"t":225.74,"w":"what"},{"t":226.38,"w":"five"},{"t":226.38,"w":"did"},{"t":226.38,"w":"But"},{"t":226.56,"w":"five"},{"t":226.74,"w":"don't"},{"t":227.04,"w":"buy"},{"t":227.32,"w":"what"},{"t":228.22,"w":"five"},{"t":228.52,"w":"did"},{"t":229.84,"w":"Might"},{"t":230.44,"w":"as"},{"t":230.66,"w":"well"},{"t":232.86,"w":"buy"},{"t":232.96,"w":"chips,"},{"t":235.97,"w":"small"},{"t":236.1,"w":"bag,"},{"t":236.86,"w":"then"},{"t":238.72,"w":"fuck"},{"t":240.2,"w":"2026,"},{"t":241.84,"w":"five"},{"t":244.7,"w":"dead."}]}$j$::jsonb WHERE id = 'still-got-5-on-it' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:06.14] Yeah, still got five on it, five, man,
+[00:13.90] five used to mean something, still got five on
+[00:21.40] it,
+[00:21.58] still got five on it,
+[00:24.10] but five don't buy what five did,
+[00:29.05] still got five on it,
+[00:31.82] still
+[00:32.70] got five on it,
+[00:34.36] man,
+[00:34.52] tell me where the good days went,
+[00:36.52] yeah,
+[Verse 1]
+[00:39.70] five in the hand, there was
+[00:41.50] enough back then,
+[00:42.64] little bag came through,
+[00:43.86] everybody got in,
+[00:45.26] one had the papers,
+[00:46.62] one
+[00:46.94] had the light,
+[00:47.78] one little five kept the room good all night,
+[00:50.22] windows cracked,
+[00:51.38] windows
+[00:51.38] cracked,
+[00:51.54] beat played low,
+[00:52.46] good herb hit before the first damn smoke,
+[00:55.14] sticky little fingers
+[00:56.26] when you broke that green,
+[00:57.70] you knew what it was,
+[00:58.92] you knew what I mean,
+[01:00.26] no label,
+[01:01.24] no fancy
+[01:02.14] name,
+[01:02.86] just good clean smoke,
+[01:04.68] in the pocket of change,
+[01:06.12] now five hit the table,
+[01:07.26] everybody
+[01:07.78] looked strange,
+[01:08.72] I said,
+[01:09.04] let me get five,
+[01:10.10] he said,
+[01:11.00] five of what,
+[01:11.76] five of what,
+[01:13.38] still got
+[01:14.02] five on it,
+[01:15.32] still got five on it,
+[01:17.88] but five don't buy what five did.
+[01:23.00] Still got five on it,
+[01:25.46] still got five on it,
+[01:27.96] man,
+[01:28.18] tell me where the good days went,
+[01:29.92] oh,
+[01:32.04] oh,
+[01:33.04] oh,
+[01:33.32] oh,
+[01:33.84] five used to stretch,
+[01:35.08] five used to last,
+[01:36.38] five had the whole damn room on blast,
+[01:38.88] five used to stretch,
+[01:40.20] five used to live,
+[01:41.34] now five don't buy what five used to get,
+[01:44.26] still
+[01:44.46] got five on it,
+[01:45.90] still got five on it,
+[01:48.46] but five don't buy what five did.
+[Chorus]
+[01:53.56] Now the price went up and the trust went down
+[01:56.60] Too much mystery smoke goin' around this town
+[01:59.16] What they spray on that?
+[02:00.38] What they mix in this?
+[02:01.76] Why it smell like candy and chemical mist?
+[02:04.40] Nah, keep that back, y'all remember them days
+[02:06.84] Biggest damn problem was findin' the place
+[02:09.20] Somebody got hungry, somebody got loud
+[02:11.86] Somebody told stories and forgot half out now
+[02:14.72] Every little string got a 14-word name
+[02:17.28] Supernova, nuclear, purple, cocaine
+[02:19.52] What?
+[02:20.30] Exactly
+[02:21.19] I don't need a barcode, I don't need a brand
+[02:24.04] I need five dollars worth like five used to understand
+[Bridge]
+[02:28.83] Still got five on it
+[02:30.58] Still got five on it
+[02:33.12] But five don't buy what five did
+[02:39.04] Still got five on it
+[02:40.80] Still got five on it
+[02:43.22] Man, tell me where the good days went
+[02:45.29] Went, went, went
+[02:46.84] Went,
+[02:47.62] went, went
+[02:48.22] Went, went, went
+[02:48.76] Went, went, went
+[02:49.52] Good old
+[02:49.80] Good,
+[02:50.96] good, good old days
+[02:53.10] Pass it around
+[02:55.42] Good, good, good, good clean smoke
+[02:57.94] Music turned down
+[03:00.04] Five in the middle
+[03:01.78] Everybody chipped in
+[03:03.38] Now put five down
+[Drop]
+[03:06.94] And they tell me
+[03:09.09] Try again
+[03:09.80] Yeah, yeah, yeah, yeah
+[Verse 2]
+[03:12.22] Five used to stretch
+[03:13.24] Five used to last
+[03:14.52] Five had the whole damn room on blast
+[03:17.08] Five used to stretch
+[03:18.36] Five used to last
+[03:19.50] Five used to live
+[03:19.72] Now five don't buy what five used to give
+[03:22.46] Still got five on it
+[03:24.22] Still got five on it
+[03:26.70] Still got five on it
+[03:26.90] But five don't buy what five did
+[Chorus]
+[03:32.02] Still got five on it
+[03:34.59] Still got five on it
+[03:36.26] Still got five on it
+[03:37.98] Still got five on it
+[03:39.48] Still got five on it
+[03:40.82] But five don't buy what five did
+[03:43.76] But five don't buy what five did
+[03:44.20] But five don't buy what five did
+[03:44.35] But five don't buy what five did
+[03:46.38] But five don't buy what
+[03:48.22] five did
+[03:49.84] Might as well
+[03:52.86] buy chips,
+[03:55.97] small bag, then fuck 2026, five dead.
+$j$ WHERE id = 'still-got-5-on-it' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song is a gritty reflection on how inflation and changing markets have devalued money ('five') while destroying the community bonds and quality found in 'the good old days' of unbranded, shared experiences. It captures a melancholic nostalgia for an era where value was defined by trust and camaraderie rather than corporate branding or rising prices.","overallMood":"Nostalgic Gritty Noir","themes":["Economic Devaluation","Lost Community Trust","Chemical Nostalgia vs. Modern Pollution","Urban Decay","Shared Struggle"],"palette":["#1A0F0F","#2C241B","#5D4E37","#896F4E"],"sections":[{"name":"Intro","emotion":"Confused longing and weary resignation as the narrator questions where value has gone.","intensity":0.06,"colorHint":"#1a0f0f","imageryPrompt":"Low-angle shot of a dimly lit alleyway with steam rising from manhole covers reflecting neon signs that are flickering out.","start":6.14},{"name":"Verse 1","emotion":"Raw storytelling and bittersweet memory, contrasting past unity with current isolation.","intensity":0.76,"colorHint":"#2c241b","imageryPrompt":"Close-up of weathered hands holding a small crumpled bill against the backdrop of cracked windowpanes and dust motes dancing in slanted light.","start":39.7},{"name":"Chorus","emotion":"Aggressive lamentation, repeating the core truth that money no longer holds its spiritual or communal weight.","intensity":0.76,"colorHint":"#4e3d2b","imageryPrompt":"Wide shot of a rainy city street at midnight where puddles reflect not faces but generic barcodes and chemical runoff.","start":113.56},{"name":"Bridge","emotion":"Urgent plea for return to shared values and simple, honest connection.","intensity":0.7,"colorHint":"#4a3b28","imageryPrompt":"Silhouette of friends sitting in a semi-circle around a small table under the glow of a single streetlamp, passing an object back and forth.","start":148.83},{"name":"Drop","emotion":"Defeated acceptance and cynical dismissal of repeated attempts to fix what is broken.","intensity":0.52,"colorHint":"#2c1b18","imageryPrompt":"Abstract visual of a heavy stone door slamming shut in slow motion with dust particles freezing in the air.","start":186.94},{"name":"Verse 2","emotion":"Resigned observation of value eroding over time, accepting that 'five' is now dead.","intensity":0.84,"colorHint":"#1a1816","imageryPrompt":"Time-lapse style shot showing a vibrant neighborhood slowly turning gray and silent as the colors drain from the buildings.","start":192.22}],"keywords":[{"word":"five","emotion":"Loss of value/trust","imageryPrompt":"A small crumpled dollar bill floating in a void, its edges burning away into gray ash."},{"word":"mystery","emotion":"Dread/uncertainty","imageryPrompt":"Thick fog rolling off dark water where shadowy figures stand motionless under flickering sodium lights."},{"word":"candy","emotion":"Disgust/fake sweetness","imageryPrompt":"Bright artificial colors oozing from a cracked pipe, contrasting sharply with the dull grime around it."},{"word":"brand","emotion":"Alienation/indifference","imageryPrompt":"A giant corporate logo stamped over a faceless crowd of people walking in unison like robots."},{"word":"trust","emotion":"Heartbreak/betrayal","imageryPrompt":"Two hands reaching out to shake but fading into smoke before they make contact, leaving only empty air."},{"word":"chemical","emotion":"Illness/fear","imageryPrompt":"Viscous purple liquid dripping from a ceiling onto a rusty floor, bubbling with unnatural light."}]}$j$::jsonb) WHERE id = 'still-got-5-on-it' AND planet->'analysis' IS NULL;
+
+-- still-me-still-you: 649 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":14.84,"w":"The"},{"t":16.29,"w":"screen"},{"t":16.56,"w":"lights"},{"t":17.1,"w":"up"},{"t":17.66,"w":"and"},{"t":17.88,"w":"I"},{"t":18.1,"w":"see"},{"t":18.38,"w":"your"},{"t":18.62,"w":"name"},{"t":19.32,"w":"Midnight"},{"t":20.62,"w":"turns"},{"t":21.14,"w":"into"},{"t":21.58,"w":"a"},{"t":21.88,"w":"little"},{"t":22.38,"w":"flame"},{"t":23.04,"w":"I"},{"t":24.34,"w":"start"},{"t":24.58,"w":"typing,"},{"t":25.72,"w":"then"},{"t":26.24,"w":"I"},{"t":26.56,"w":"erase"},{"t":28.22,"w":"Like"},{"t":28.45,"w":"I'm"},{"t":28.8,"w":"standing"},{"t":29.14,"w":"right"},{"t":29.8,"w":"in"},{"t":30.08,"w":"front"},{"t":30.38,"w":"of"},{"t":30.64,"w":"your"},{"t":30.82,"w":"face"},{"t":32.04,"w":"Is"},{"t":32.6,"w":"it"},{"t":32.7,"w":"still"},{"t":32.9,"w":"me"},{"t":33.14,"w":"that"},{"t":33.58,"w":"makes"},{"t":33.88,"w":"you"},{"t":34.12,"w":"smile?"},{"t":36.46,"w":"When"},{"t":36.58,"w":"my"},{"t":36.74,"w":"name"},{"t":36.94,"w":"shows"},{"t":37.12,"w":"up"},{"t":37.54,"w":"after"},{"t":37.82,"w":"a"},{"t":38.14,"w":"while"},{"t":39.7,"w":"Is"},{"t":40.42,"w":"it"},{"t":40.82,"w":"still"},{"t":41,"w":"me"},{"t":41.28,"w":"that"},{"t":41.76,"w":"makes"},{"t":42.04,"w":"you"},{"t":42.28,"w":"pause"},{"t":44.64,"w":"Before"},{"t":44.74,"w":"you"},{"t":45.3,"w":"answer"},{"t":45.8,"w":"just"},{"t":46.3,"w":"because"},{"t":48.64,"w":"Is"},{"t":48.86,"w":"it"},{"t":48.96,"w":"still"},{"t":49.18,"w":"me"},{"t":49.4,"w":"in"},{"t":49.86,"w":"your"},{"t":49.98,"w":"quiet"},{"t":50.26,"w":"room"},{"t":50.68,"w":"When"},{"t":50.86,"w":"the"},{"t":51,"w":"night"},{"t":51.24,"w":"gets"},{"t":51.4,"w":"sweet"},{"t":51.7,"w":"and"},{"t":51.9,"w":"the"},{"t":52,"w":"lights"},{"t":52.24,"w":"go"},{"t":52.42,"w":"blue"},{"t":52.7,"w":"Is"},{"t":52.92,"w":"it"},{"t":53.04,"w":"still"},{"t":53.24,"w":"me"},{"t":53.54,"w":"that"},{"t":53.96,"w":"makes"},{"t":54.22,"w":"you"},{"t":54.5,"w":"sweat?"},{"t":56.13,"w":"Is"},{"t":56.93,"w":"it"},{"t":57.1,"w":"still"},{"t":57.24,"w":"me"},{"t":57.52,"w":"you"},{"t":58.06,"w":"almost"},{"t":58.46,"w":"say"},{"t":58.82,"w":"when"},{"t":59.02,"w":"you"},{"t":59.12,"w":"miss"},{"t":59.3,"w":"the"},{"t":59.5,"w":"hands"},{"t":59.98,"w":"that"},{"t":60.36,"w":"are"},{"t":60.52,"w":"far"},{"t":60.82,"w":"away"},{"t":64.04,"w":"Is"},{"t":65.09,"w":"it"},{"t":65.26,"w":"still"},{"t":65.42,"w":"me"},{"t":65.66,"w":"in"},{"t":66.16,"w":"your"},{"t":66.26,"w":"future"},{"t":66.6,"w":"plans"},{"t":67,"w":"when"},{"t":67.52,"w":"you"},{"t":67.68,"w":"close"},{"t":68.18,"w":"your"},{"t":68.7,"w":"eyes"},{"t":69.2,"w":"and"},{"t":69.5,"w":"reach"},{"t":69.76,"w":"for"},{"t":70.2,"w":"my"},{"t":70.7,"w":"hands"},{"t":73.09,"w":"Still"},{"t":73.2,"w":"smiling"},{"t":73.76,"w":"when"},{"t":74.04,"w":"your"},{"t":74.3,"w":"name"},{"t":74.62,"w":"appears"},{"t":77.22,"w":"Still"},{"t":77.32,"w":"pausing"},{"t":77.8,"w":"like"},{"t":78.1,"w":"you're"},{"t":78.36,"w":"standing"},{"t":78.8,"w":"here"},{"t":80.7,"w":"Still"},{"t":80.86,"w":"thinking"},{"t":81.36,"w":"of"},{"t":81.68,"w":"you"},{"t":81.98,"w":"when"},{"t":82.7,"w":"the"},{"t":82.9,"w":"lights"},{"t":83.26,"w":"go"},{"t":83.5,"w":"blue"},{"t":84,"w":"Still"},{"t":84.86,"w":"feeling"},{"t":85.46,"w":"the"},{"t":85.74,"w":"heat"},{"t":86.1,"w":"from"},{"t":86.76,"w":"across"},{"t":87.2,"w":"the"},{"t":87.76,"w":"room"},{"t":90.3,"w":"You"},{"t":90.4,"w":"send"},{"t":90.58,"w":"questions"},{"t":91.02,"w":"like"},{"t":91.24,"w":"little"},{"t":91.5,"w":"sparks"},{"t":92.02,"w":"Landing"},{"t":92.64,"w":"soft"},{"t":93.1,"w":"in"},{"t":93.56,"w":"the"},{"t":93.66,"w":"dark"},{"t":94.14,"w":"Got"},{"t":94.5,"w":"rhythm"},{"t":94.7,"w":"once"},{"t":94.92,"w":"then"},{"t":95.1,"w":"twice"},{"t":95.36,"w":"again"},{"t":95.78,"w":"Like"},{"t":96.12,"w":"every"},{"t":96.56,"w":"word"},{"t":96.94,"w":"knows"},{"t":97.18,"w":"where"},{"t":97.46,"w":"I've"},{"t":97.78,"w":"been"},{"t":98.04,"w":"Yes,"},{"t":98.64,"w":"it's"},{"t":99,"w":"still"},{"t":99.26,"w":"you"},{"t":99.52,"w":"that"},{"t":99.74,"w":"makes"},{"t":100.02,"w":"me"},{"t":100.24,"w":"smile"},{"t":100.7,"w":"Even"},{"t":101.76,"w":"from"},{"t":103.56,"w":"a"},{"t":103.76,"w":"thousand"},{"t":104.22,"w":"miles"},{"t":105.84,"w":"Yes,"},{"t":106.62,"w":"it's"},{"t":107.12,"w":"still"},{"t":107.38,"w":"you"},{"t":107.66,"w":"that"},{"t":107.88,"w":"makes"},{"t":108.2,"w":"me"},{"t":108.42,"w":"wait"},{"t":108.74,"w":"Just"},{"t":109.44,"w":"to"},{"t":109.86,"w":"feel"},{"t":110.48,"w":"my"},{"t":110.92,"w":"heart"},{"t":111.56,"w":"beat"},{"t":112.02,"w":"change"},{"t":113.42,"w":"Yes,"},{"t":113.8,"w":"it's"},{"t":113.98,"w":"still"},{"t":113.98,"w":"you"},{"t":113.98,"w":"that"},{"t":113.98,"w":"makes"},{"t":113.98,"w":"me"},{"t":113.98,"w":"wait"},{"t":114,"w":"It's"},{"t":114,"w":"still"},{"t":114.26,"w":"you"},{"t":114.7,"w":"when"},{"t":115.26,"w":"the"},{"t":115.42,"w":"lights"},{"t":115.82,"w":"go"},{"t":116,"w":"low"},{"t":116.56,"w":"And"},{"t":117.6,"w":"I"},{"t":117.78,"w":"miss"},{"t":118.06,"w":"the"},{"t":118.2,"w":"voice"},{"t":118.76,"w":"I"},{"t":119.36,"w":"already"},{"t":119.8,"w":"know"},{"t":121.14,"w":"Yes,"},{"t":121.74,"w":"it's"},{"t":122.14,"w":"still"},{"t":122.4,"w":"you"},{"t":122.9,"w":"that"},{"t":123.54,"w":"makes"},{"t":123.94,"w":"me"},{"t":124.24,"w":"sweat"},{"t":124.7,"w":"Yes,"},{"t":125.98,"w":"it's"},{"t":126.22,"w":"still"},{"t":126.48,"w":"you"},{"t":126.96,"w":"I"},{"t":127.7,"w":"want"},{"t":128.24,"w":"beside"},{"t":128.84,"w":"me"},{"t":129.7,"w":"Not"},{"t":130.2,"w":"just"},{"t":130.72,"w":"call"},{"t":131.14,"w":"and"},{"t":131.54,"w":"not"},{"t":131.84,"w":"just"},{"t":132.32,"w":"type"},{"t":132.98,"w":"And"},{"t":133.86,"w":"yes,"},{"t":134.16,"w":"it's"},{"t":134.36,"w":"still"},{"t":134.62,"w":"you"},{"t":135.18,"w":"in"},{"t":135.62,"w":"the"},{"t":135.7,"w":"life"},{"t":136.2,"w":"I"},{"t":136.36,"w":"see"},{"t":137.63,"w":"But"},{"t":138.38,"w":"now"},{"t":138.66,"w":"I"},{"t":139.01,"w":"have"},{"t":139.52,"w":"some"},{"t":139.62,"w":"questions"},{"t":140.19,"w":"for"},{"t":140.66,"w":"me"},{"t":141.04,"w":"Is"},{"t":142.24,"w":"it"},{"t":142.42,"w":"still"},{"t":142.72,"w":"me?"},{"t":143.2,"w":"Is"},{"t":144.08,"w":"it"},{"t":144.46,"w":"still"},{"t":144.72,"w":"you?"},{"t":145.44,"w":"In"},{"t":145.94,"w":"the"},{"t":146.06,"w":"late"},{"t":146.28,"w":"night"},{"t":146.52,"w":"glow"},{"t":147.02,"w":"when"},{"t":147.76,"w":"the"},{"t":147.98,"w":"screen"},{"t":148.28,"w":"turns"},{"t":148.6,"w":"blue"},{"t":149.21,"w":"Is"},{"t":150.16,"w":"it"},{"t":150.56,"w":"still"},{"t":150.94,"w":"us?"},{"t":151.6,"w":"Do"},{"t":151.82,"w":"we"},{"t":152.06,"w":"still"},{"t":152.34,"w":"feel"},{"t":152.66,"w":"true?"},{"t":153.54,"w":"With"},{"t":154.1,"w":"the"},{"t":154.2,"w":"whole"},{"t":154.4,"w":"wide"},{"t":154.76,"w":"world"},{"t":155.34,"w":"in"},{"t":155.96,"w":"between"},{"t":156.32,"w":"us"},{"t":156.86,"w":"two"},{"t":157.36,"w":"Is"},{"t":158.46,"w":"it"},{"t":158.7,"w":"still"},{"t":159.04,"w":"me?"},{"t":159.6,"w":"Is"},{"t":160.32,"w":"it"},{"t":160.72,"w":"still"},{"t":161.04,"w":"you?"},{"t":162.11,"w":"When"},{"t":162.24,"w":"the"},{"t":162.34,"w":"bass"},{"t":162.58,"w":"rolls"},{"t":162.84,"w":"off"},{"t":163.46,"w":"and"},{"t":164.04,"w":"the"},{"t":164.26,"w":"moon"},{"t":164.56,"w":"comes"},{"t":164.96,"w":"through"},{"t":165.4,"w":"Send"},{"t":166.32,"w":"me"},{"t":166.85,"w":"your"},{"t":167.14,"w":"heart,"},{"t":167.92,"w":"I'll"},{"t":168.3,"w":"send"},{"t":168.6,"w":"mine"},{"t":169.04,"w":"too"},{"t":169.46,"w":"Is"},{"t":170.52,"w":"it"},{"t":170.92,"w":"still"},{"t":171.2,"w":"me,"},{"t":171.84,"w":"baby?"},{"t":174.18,"w":"Is"},{"t":174.76,"w":"it"},{"t":174.82,"w":"still"},{"t":175.08,"w":"you?"},{"t":178.92,"w":"Is"},{"t":179.02,"w":"it"},{"t":179.14,"w":"still"},{"t":179.38,"w":"you?"},{"t":179.5,"w":"Is"},{"t":179.5,"w":"it"},{"t":179.5,"w":"still"},{"t":179.5,"w":"me?"},{"t":179.72,"w":"Is"},{"t":180,"w":"it"},{"t":180,"w":"still"},{"t":180,"w":"me"},{"t":180,"w":"that"},{"t":180,"w":"makes"},{"t":180.36,"w":"you"},{"t":180.62,"w":"dream"},{"t":180.92,"w":"When"},{"t":181.28,"w":"you're"},{"t":181.48,"w":"tired"},{"t":181.72,"w":"of"},{"t":182.04,"w":"every"},{"t":182.24,"w":"little"},{"t":182.64,"w":"thing"},{"t":182.98,"w":"Is"},{"t":183.12,"w":"it"},{"t":183.18,"w":"still"},{"t":183.36,"w":"me?"},{"t":183.8,"w":"You"},{"t":184.04,"w":"wanna"},{"t":184.5,"w":"call"},{"t":184.9,"w":"When"},{"t":185.34,"w":"your"},{"t":185.52,"w":"big"},{"t":185.66,"w":"plans"},{"t":185.96,"w":"start"},{"t":186.22,"w":"to"},{"t":186.44,"w":"feel"},{"t":186.74,"w":"too"},{"t":187.16,"w":"tall"},{"t":187.6,"w":"Is"},{"t":188.16,"w":"it"},{"t":188.26,"w":"still"},{"t":188.44,"w":"me"},{"t":188.78,"w":"you're"},{"t":189.24,"w":"building"},{"t":189.64,"w":"for"},{"t":190,"w":"When"},{"t":190.76,"w":"you"},{"t":191.2,"w":"save"},{"t":191.74,"w":"a"},{"t":192.28,"w":"little"},{"t":192.6,"w":"more"},{"t":193.04,"w":"and"},{"t":193.5,"w":"more"},{"t":195.22,"w":"Is"},{"t":195.32,"w":"it"},{"t":195.36,"w":"still"},{"t":195.56,"w":"me"},{"t":195.86,"w":"you"},{"t":196.26,"w":"wanna"},{"t":196.76,"w":"hold"},{"t":197.12,"w":"When"},{"t":197.32,"w":"New"},{"t":197.58,"w":"York"},{"t":197.88,"w":"nights"},{"t":198.14,"w":"get"},{"t":198.38,"w":"loud"},{"t":198.64,"w":"and"},{"t":198.9,"w":"cold"},{"t":199.18,"w":"Is"},{"t":199.48,"w":"it"},{"t":199.52,"w":"still"},{"t":199.66,"w":"me"},{"t":200,"w":"that"},{"t":200.4,"w":"slows"},{"t":200.66,"w":"your"},{"t":200.94,"w":"mind"},{"t":201.26,"w":"Is"},{"t":201.64,"w":"it"},{"t":201.82,"w":"still"},{"t":202.02,"w":"me"},{"t":202.44,"w":"that"},{"t":202.76,"w":"slows"},{"t":203.1,"w":"your"},{"t":203.18,"w":"mind"},{"t":203.18,"w":"Is"},{"t":203.44,"w":"it"},{"t":203.44,"w":"still"},{"t":203.44,"w":"the"},{"t":203.44,"w":"time"},{"t":204.16,"w":"Is"},{"t":204.46,"w":"it"},{"t":204.56,"w":"still"},{"t":204.86,"w":"me"},{"t":205.2,"w":"you're"},{"t":206.06,"w":"coming"},{"t":206.34,"w":"home"},{"t":206.7,"w":"to"},{"t":207.08,"w":"When"},{"t":207.48,"w":"the"},{"t":207.58,"w":"miles"},{"t":208.04,"w":"finally"},{"t":208.48,"w":"let"},{"t":209.32,"w":"us"},{"t":209.7,"w":"through"},{"t":211.9,"w":"Still"},{"t":212.06,"w":"dreaming"},{"t":212.56,"w":"when"},{"t":213.06,"w":"the"},{"t":213.18,"w":"world"},{"t":213.46,"w":"gets"},{"t":213.64,"w":"heavy"},{"t":215.46,"w":"Still"},{"t":216.06,"w":"calling"},{"t":216.66,"w":"when"},{"t":217.1,"w":"my"},{"t":217.28,"w":"plans"},{"t":217.52,"w":"get"},{"t":217.68,"w":"messy"},{"t":219.2,"w":"Still"},{"t":219.7,"w":"building,"},{"t":220.3,"w":"still"},{"t":220.7,"w":"saving,"},{"t":221.3,"w":"still"},{"t":221.72,"w":"choosing"},{"t":222.22,"w":"you"},{"t":223.18,"w":"Still"},{"t":223.68,"w":"hearing"},{"t":224.3,"w":"your"},{"t":224.58,"w":"voice"},{"t":225,"w":"when"},{"t":225.3,"w":"the"},{"t":225.42,"w":"night"},{"t":225.62,"w":"turns"},{"t":225.96,"w":"blue"},{"t":228.12,"w":"Yes,"},{"t":228.62,"w":"it's"},{"t":228.78,"w":"still"},{"t":228.98,"w":"you"},{"t":229.16,"w":"when"},{"t":229.38,"w":"I"},{"t":229.48,"w":"lose"},{"t":229.64,"w":"my"},{"t":229.88,"w":"way"},{"t":230.2,"w":"You're"},{"t":230.46,"w":"the"},{"t":230.48,"w":"calm"},{"t":230.72,"w":"and"},{"t":230.88,"w":"the"},{"t":231.02,"w":"noise"},{"t":231.28,"w":"of"},{"t":231.42,"w":"the"},{"t":231.5,"w":"day"},{"t":232.08,"w":"Yes,"},{"t":232.72,"w":"it's"},{"t":232.92,"w":"still"},{"t":233.06,"w":"you"},{"t":233.24,"w":"when"},{"t":233.44,"w":"I"},{"t":233.54,"w":"count"},{"t":233.78,"w":"what's"},{"t":234.04,"w":"left"},{"t":234.26,"w":"Trying"},{"t":234.56,"w":"to"},{"t":234.82,"w":"become"},{"t":235.16,"w":"my"},{"t":235.52,"w":"very"},{"t":235.9,"w":"best"},{"t":236.34,"w":"Yes,"},{"t":236.8,"w":"it's"},{"t":236.92,"w":"still"},{"t":237.06,"w":"you"},{"t":237.3,"w":"when"},{"t":237.5,"w":"the"},{"t":237.6,"w":"city"},{"t":237.84,"w":"screams"},{"t":238.12,"w":"Still"},{"t":238.54,"w":"you"},{"t":238.78,"w":"in"},{"t":239.02,"w":"the"},{"t":239.12,"w":"center"},{"t":239.38,"w":"of"},{"t":239.58,"w":"all"},{"t":239.78,"w":"my"},{"t":240.08,"w":"dreams"},{"t":240.43,"w":"Yes,"},{"t":240.88,"w":"it's"},{"t":241.02,"w":"still"},{"t":241.16,"w":"you"},{"t":241.34,"w":"that"},{"t":241.48,"w":"I'm"},{"t":241.76,"w":"running"},{"t":241.94,"w":"to"},{"t":242.18,"w":"Every"},{"t":242.64,"w":"changed"},{"t":243.2,"w":"habit"},{"t":243.56,"w":"is"},{"t":244.12,"w":"a"},{"t":244.22,"w":"road"},{"t":244.52,"w":"to"},{"t":245.12,"w":"you"},{"t":247.06,"w":"Then"},{"t":247.68,"w":"don't"},{"t":248.16,"w":"just"},{"t":248.56,"w":"say"},{"t":249,"w":"it"},{"t":249.3,"w":"I'll"},{"t":249.84,"w":"prove"},{"t":250.22,"w":"it"},{"t":250.52,"w":"slow"},{"t":250.74,"w":"Don't"},{"t":251.84,"w":"just"},{"t":252.36,"w":"promise"},{"t":253.08,"w":"Watch"},{"t":253.82,"w":"me"},{"t":254.28,"w":"grow"},{"t":254.84,"w":"Don't"},{"t":255.96,"w":"just"},{"t":256.44,"w":"miss"},{"t":257.12,"w":"me"},{"t":257.46,"w":"I'll"},{"t":258.02,"w":"make"},{"t":258.36,"w":"it"},{"t":258.64,"w":"real"},{"t":258.94,"w":"Then"},{"t":259.68,"w":"tell"},{"t":259.96,"w":"me"},{"t":260.38,"w":"again"},{"t":261.78,"w":"You"},{"t":261.88,"w":"know"},{"t":262.14,"w":"how"},{"t":262.52,"w":"I"},{"t":262.9,"w":"feel"},{"t":263.9,"w":"Is"},{"t":264.28,"w":"it"},{"t":264.48,"w":"still"},{"t":264.78,"w":"me,"},{"t":265.44,"w":"is"},{"t":266.12,"w":"it"},{"t":266.48,"w":"still"},{"t":266.8,"w":"you"},{"t":267.94,"w":"In"},{"t":268.04,"w":"the"},{"t":268.1,"w":"late"},{"t":268.32,"w":"night"},{"t":268.56,"w":"glow"},{"t":269.06,"w":"when"},{"t":269.78,"w":"the"},{"t":270,"w":"screen"},{"t":270.32,"w":"turns"},{"t":270.6,"w":"blue"},{"t":271.2,"w":"Is"},{"t":272.2,"w":"it"},{"t":272.6,"w":"still"},{"t":273.06,"w":"us,"},{"t":273.64,"w":"do"},{"t":273.84,"w":"we"},{"t":274.12,"w":"still"},{"t":274.36,"w":"feel"},{"t":274.66,"w":"true"},{"t":275.18,"w":"With"},{"t":276.14,"w":"a"},{"t":276.24,"w":"whole"},{"t":276.46,"w":"wide"},{"t":276.8,"w":"world"},{"t":277.4,"w":"in"},{"t":277.98,"w":"between"},{"t":278.36,"w":"us"},{"t":278.86,"w":"two"},{"t":279.96,"w":"Is"},{"t":280.48,"w":"it"},{"t":280.76,"w":"still"},{"t":281.08,"w":"me,"},{"t":281.74,"w":"is"},{"t":282.34,"w":"it"},{"t":282.74,"w":"still"},{"t":283.08,"w":"you"},{"t":283.58,"w":"When"},{"t":284.3,"w":"the"},{"t":284.38,"w":"bass"},{"t":284.6,"w":"rolls"},{"t":284.9,"w":"soft"},{"t":285.52,"w":"and"},{"t":286.06,"w":"the"},{"t":286.32,"w":"moon"},{"t":286.66,"w":"comes"},{"t":287.04,"w":"through"},{"t":287.42,"w":"Send"},{"t":288.4,"w":"me"},{"t":288.84,"w":"your"},{"t":289.16,"w":"heart,"},{"t":289.82,"w":"I'll"},{"t":290.3,"w":"send"},{"t":290.66,"w":"my"},{"t":290.86,"w":"heart"},{"t":290.94,"w":"One,"},{"t":291.16,"w":"two"},{"t":291.44,"w":"Is"},{"t":292.46,"w":"it"},{"t":292.92,"w":"still"},{"t":293.24,"w":"me"},{"t":294.94,"w":"Baby"},{"t":295.68,"w":"It's"},{"t":296.8,"w":"still"},{"t":297.04,"w":"you"},{"t":297.56,"w":"Still"},{"t":298.28,"w":"me"},{"t":298.82,"w":"Still"},{"t":299.34,"w":"you"},{"t":299.64,"w":"Still"},{"t":300.4,"w":"us"},{"t":300.96,"w":"Still"},{"t":301.4,"w":"us"}]}$j$::jsonb WHERE id = 'still-me-still-you' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:14.82] The
+[00:16.27] screen lights up and I see your name
+[00:19.30] Midnight turns into a little flame
+[00:23.02] I start typing, then I erase
+[00:28.20] Like I'm standing right in front of your face
+[00:32.02] Is it still me that makes you smile?
+[00:36.44] When my name shows up after a while
+[00:39.68] Is it still me that makes you pause
+[00:44.62] Before you answer just because
+[00:48.62] Is it still me in your quiet room
+[00:50.66] When the night gets sweet and the lights go blue
+[00:52.68] Is it still me that makes you sweat?
+[00:56.11] Is it still me you almost say when
+[00:58.00] you miss the hands that are far away
+[01:04.02] Is it still me in your future plans when
+[01:07.50] you close your eyes and reach for my hands
+[01:13.06] Still smiling when your name appears
+[01:17.20] Still pausing like you're standing here
+[01:20.68] Still thinking of you when the lights go blue
+[01:23.98] Still feeling the heat from across the room
+[Chorus (Female Response)]
+[01:30.28] You send questions like little sparks
+[01:31.00] Landing soft in the dark
+[01:34.12] Got rhythm once then twice again
+[01:35.76] Like every word knows where I've been
+[01:38.02] Yes, it's still you that makes me smile
+[01:40.68] Even from a thousand miles
+[01:45.82] Yes, it's still you that makes me wait
+[01:48.72] Just to feel my heart beat change
+[01:53.40] Yes, it's still you that makes me wait
+[01:53.98] It's still you when the lights go low
+[01:56.54] And I miss the voice I already know
+[02:01.12] Yes, it's still you that makes me sweat
+[02:04.68] Yes, it's still you I want beside me
+[02:09.68] Not just call and not just type
+[02:12.96] And yes, it's still you in the life I see
+[02:17.61] But now I have some questions for me
+[Bridge]
+[02:21.02] Is it still me?
+[Verse 2 / Chorus A]
+[02:23.18] Is it still you?
+[02:25.42] In the late night glow when the screen turns blue
+[02:29.19] Is it still us?
+[02:31.58] Do we still feel true?
+[02:33.52] With the whole wide world in between us two
+[02:37.34] Is it still me?
+[02:39.58] Is it still you?
+[02:42.09] When the bass rolls off and the moon comes through
+[02:45.38] Send me your heart, I'll send mine too
+[Chorus B (Duet)]
+[02:49.44] Is it still me, baby?
+[02:54.15] Is it still you?
+[02:58.90] Is it still you?
+[02:59.48] Is it still me?
+[02:59.70] Is it still me that makes you dream
+[03:00.90] When you're tired of every little thing
+[03:02.96] Is it still me?
+[03:03.78] You wanna call
+[03:04.88] When your big plans start to feel too tall
+[03:07.58] Is it still me you're building for
+[03:09.98] When you save a little more and more
+[03:15.20] Is it still me you wanna hold
+[03:17.10] When New York nights get loud and cold
+[03:19.16] Is it still me that slows your mind
+[03:21.24] Is it still me that slows your mind
+[03:23.16] Is it still the time
+[03:24.14] Is it still me you're coming home to
+[03:27.06] When the miles finally let us through
+[03:31.88] Still dreaming when the world gets heavy
+[03:35.44] Still calling when my plans get messy
+[03:39.18] Still building, still saving, still choosing you
+[03:43.16] Still hearing your voice when the night turns blue
+[03:48.10] Yes, it's still you when I lose my way
+[03:50.18] You're the calm and the noise of the day
+[03:52.06] Yes, it's still you when I count what's left
+[03:54.24] Trying to become my very best
+[03:56.32] Yes, it's still you when the city screams
+[03:58.10] Still you in the center of all my dreams
+[04:00.41] Yes, it's still you that I'm running to
+[04:02.16] Every changed habit is a road to you
+[04:07.04] Then don't just say it
+[04:09.28] I'll prove it slow
+[04:10.72] Don't just promise
+[04:13.06] Watch me grow
+[04:14.82] Don't just miss me
+[04:17.44] I'll make it real
+[04:18.92] Then tell me again
+[04:21.76] You know how I feel
+[04:23.88] Is it still me, is it still you
+[04:27.92] In the late night glow when the screen turns blue
+[04:31.18] Is it still us, do we still feel true
+[04:35.16] With a whole wide world in between us two
+[04:39.94] Is it still me, is it still you
+[04:43.56] When the bass rolls soft and the moon comes through
+[04:47.40] Send me your heart, I'll send my heart
+[04:50.92] One, two
+[04:51.42] Is it still me
+[04:54.92] Baby
+[Outro]
+[04:55.66] It's still you
+[04:57.54] Still me
+[04:58.80] Still you
+[04:59.62] Still us
+[05:00.94] Still us
+$j$ WHERE id = 'still-me-still-you' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A sultry, late-night R&B duet exploring romantic uncertainty in a long-distance relationship through text messages and intimate phone calls.","overallMood":"Sultry, tender, teasing","themes":["Long-distance love","Digital intimacy","Self-doubt vs. reassurance","Future planning together"],"palette":["#0F172A","#3B82F6","#D946EF","#EAB308"],"sections":[{"name":"Intro","emotion":"Anticipation, quiet tension","intensity":0.46,"colorHint":"#1e293b","start":14.82},{"name":"Verse 1","emotion":"Intrigue, questioning identity","intensity":0.9,"colorHint":"#4f46e5","start":14.82},{"name":"Chorus (Female Response)","emotion":"Affirmation, warmth, desire","intensity":0.83,"colorHint":"#db2777","start":90.28},{"name":"Bridge","emotion":"Vulnerable doubt, breathless pause","intensity":0.46,"colorHint":"#312e81","start":141.02},{"name":"Verse 2 / Chorus A","emotion":"Rhythmic questioning, rising heat","intensity":0.72,"colorHint":"#d946ef","start":143.18},{"name":"Chorus B (Duet)","emotion":"Passionate reassurance, commitment","intensity":0.3,"colorHint":"#eab308","start":169.44},{"name":"Outro","emotion":"Resolved intimacy, fading echo","intensity":0.18,"colorHint":"#2dd4bf","start":295.66}],"keywords":[{"word":"screen","emotion":"Digital connection point","imageryPrompt":"A glowing smartphone screen illuminating a dark room at midnight, casting blue light on dust motes dancing in the air."},{"word":"erase","emotion":"Hesitation and vulnerability","imageryPrompt":"Finger hovering over an 'X' button to delete a typed message, thumb trembling slightly against glass."},{"word":"sparks","emotion":"Electric attraction","imageryPrompt":"Tiny golden embers falling slowly into deep shadows within a smoky lounge setting."},{"word":"bass","emotion":"Physical vibration, pressure","imageryPrompt":"Subsonic waves rippling through the floorboards of a dimly lit room, causing heavy objects to sway gently."},{"word":"dreams","emotion":"Hopeful longing","imageryPrompt":"Soft clouds forming shapes of silhouettes in a twilight sky above a city skyline at night."},{"word":"gloves","emotion":"Tactile memory, distance","imageryPrompt":"Empty hands reaching out through transparent blue glass partitions towards warm light on the other side."}]}$j$::jsonb) WHERE id = 'still-me-still-you' AND planet->'analysis' IS NULL;
+
+-- summer-drip: 853 words, 5 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.22,"w":"He"},{"t":0.32,"w":"turned"},{"t":0.88,"w":"up,"},{"t":1.58,"w":"every,"},{"t":2.02,"w":"every,"},{"t":2.54,"w":"every,"},{"t":3,"w":"every,"},{"t":3.54,"w":"every,"},{"t":4.02,"w":"every,"},{"t":4.54,"w":"every,"},{"t":5.12,"w":"every,"},{"t":5.5,"w":"every,"},{"t":6.02,"w":"step,"},{"t":6.52,"w":"feel"},{"t":6.9,"w":"loud,"},{"t":7.64,"w":"slow"},{"t":8.14,"w":"it"},{"t":8.58,"w":"down"},{"t":8.84,"w":"Summer"},{"t":9.4,"w":"drip,"},{"t":10.08,"w":"summer"},{"t":10.4,"w":"drip,"},{"t":11,"w":"hips"},{"t":11.38,"w":"flip,"},{"t":11.96,"w":"flip,"},{"t":12.44,"w":"walk"},{"t":12.8,"w":"me"},{"t":15.28,"w":"I,"},{"t":15.98,"w":"I,"},{"t":16.22,"w":"I,"},{"t":16.34,"w":"I,"},{"t":16.58,"w":"I,"},{"t":16.8,"w":"I,"},{"t":16.84,"w":"I,"},{"t":16.88,"w":"I,"},{"t":16.88,"w":"I"},{"t":16.88,"w":"feel"},{"t":17.16,"w":"the"},{"t":17.5,"w":"sun"},{"t":17.84,"w":"just"},{"t":18.3,"w":"go"},{"t":18.82,"w":"under"},{"t":19.2,"w":"the"},{"t":19.54,"w":"daylight"},{"t":20.24,"w":"Hips"},{"t":21,"w":"swing"},{"t":21.34,"w":"slow,"},{"t":22.08,"w":"move"},{"t":22.38,"w":"it"},{"t":22.56,"w":"smooth"},{"t":22.82,"w":"in"},{"t":23.36,"w":"the"},{"t":23.5,"w":"midnight"},{"t":24.28,"w":"Heart"},{"t":24.86,"w":"stay"},{"t":25.26,"w":"cold,"},{"t":26.26,"w":"but"},{"t":26.36,"w":"my"},{"t":26.5,"w":"stride"},{"t":27.02,"w":"got"},{"t":27.32,"w":"flame"},{"t":27.82,"w":"Every"},{"t":28.5,"w":"little"},{"t":29.3,"w":"still"},{"t":29.86,"w":"got"},{"t":30.28,"w":"a"},{"t":30.58,"w":"high"},{"t":30.9,"w":"class"},{"t":31.38,"w":"game"},{"t":31.92,"w":"Smile"},{"t":32.64,"w":"so"},{"t":33.18,"w":"sweet,"},{"t":34.04,"w":"with"},{"t":34.34,"w":"the"},{"t":34.54,"w":"timing"},{"t":35.04,"w":"just"},{"t":35.34,"w":"right"},{"t":35.86,"w":"Brown,"},{"t":36.5,"w":"brown,"},{"t":36.72,"w":"brown"},{"t":37.04,"w":"skin"},{"t":37.22,"w":"shine"},{"t":37.8,"w":"With"},{"t":38.36,"w":"the"},{"t":38.54,"w":"street"},{"t":38.92,"w":"lamp"},{"t":39.42,"w":"light"},{"t":40.74,"w":"Perfume"},{"t":41.3,"w":"thick,"},{"t":41.96,"w":"got"},{"t":42.48,"w":"em"},{"t":42.58,"w":"stuck"},{"t":42.78,"w":"in"},{"t":43.12,"w":"the"},{"t":43.3,"w":"body"},{"t":43.72,"w":"All,"},{"t":44.5,"w":"all,"},{"t":44.72,"w":"all"},{"t":44.9,"w":"these"},{"t":45.12,"w":"hungry"},{"t":45.52,"w":"eyes"},{"t":45.96,"w":"Got"},{"t":46.4,"w":"em"},{"t":46.6,"w":"losing"},{"t":46.96,"w":"they"},{"t":47.36,"w":"mind"},{"t":49.71,"w":"Walked"},{"t":50.06,"w":"in"},{"t":50.08,"w":"the"},{"t":50.2,"w":"spot,"},{"t":50.46,"w":"had"},{"t":50.58,"w":"to"},{"t":50.68,"w":"sleep"},{"t":50.86,"w":"on"},{"t":51,"w":"my"},{"t":51.12,"w":"tone"},{"t":51.38,"w":"Whole"},{"t":51.86,"w":"room"},{"t":52.16,"w":"stand"},{"t":52.32,"w":"like"},{"t":52.58,"w":"a"},{"t":52.72,"w":"queen"},{"t":52.92,"w":"on"},{"t":53.1,"w":"a"},{"t":53.18,"w":"throne"},{"t":53.46,"w":"Dance"},{"t":53.94,"w":"floor"},{"t":54.1,"w":"quiet,"},{"t":54.52,"w":"but"},{"t":54.62,"w":"the"},{"t":54.72,"w":"glance"},{"t":54.98,"w":"is"},{"t":55.14,"w":"loud"},{"t":55.4,"w":"Every"},{"t":55.68,"w":"lens"},{"t":55.92,"w":"locked"},{"t":56.18,"w":"in,"},{"t":56.52,"w":"every"},{"t":56.7,"w":"worker"},{"t":56.92,"w":"so"},{"t":57.08,"w":"proud"},{"t":57.42,"w":"Long"},{"t":57.64,"w":"lace"},{"t":57.92,"w":"off"},{"t":58.2,"w":"hands,"},{"t":58.7,"w":"curves"},{"t":58.94,"w":"on"},{"t":59.12,"w":"the"},{"t":59.2,"w":"rise"},{"t":59.48,"w":"Tiny"},{"t":59.84,"w":"little"},{"t":60.12,"w":"waist"},{"t":60.46,"w":"doing"},{"t":60.66,"w":"work"},{"t":60.92,"w":"oversize"},{"t":61.54,"w":"Gloves"},{"t":61.98,"w":"gain"},{"t":62.18,"w":"smooth"},{"t":62.34,"w":"neckline,"},{"t":63,"w":"sitting"},{"t":63.16,"w":"real"},{"t":63.4,"w":"neat"},{"t":63.64,"w":"Gold"},{"t":63.94,"w":"chain"},{"t":64.12,"w":"restin'"},{"t":64.54,"w":"while"},{"t":64.6,"w":"my"},{"t":64.76,"w":"last"},{"t":64.96,"w":"so"},{"t":65.16,"w":"sweet"},{"t":65.44,"w":"This"},{"t":65.66,"w":"dress"},{"t":65.94,"w":"fit"},{"t":66.12,"w":"tight,"},{"t":66.56,"w":"little"},{"t":66.66,"w":"slit"},{"t":66.86,"w":"on"},{"t":67.16,"w":"the"},{"t":67.22,"w":"side"},{"t":67.5,"w":"Movin'"},{"t":68,"w":"through"},{"t":68.12,"w":"the"},{"t":68.26,"w":"crowd"},{"t":68.48,"w":"with"},{"t":68.64,"w":"my"},{"t":68.74,"w":"natural"},{"t":69.08,"w":"pride"},{"t":69.54,"w":"Didn't"},{"t":69.98,"w":"count"},{"t":70.18,"w":"high,"},{"t":70.52,"w":"but"},{"t":70.64,"w":"I'm"},{"t":70.8,"w":"tryna"},{"t":70.9,"w":"stay"},{"t":71.1,"w":"clean"},{"t":71.48,"w":"Loyal"},{"t":72.04,"w":"to"},{"t":72.1,"w":"my"},{"t":72.26,"w":"peace,"},{"t":72.5,"w":"steady"},{"t":72.68,"w":"guard"},{"t":72.92,"w":"my"},{"t":73.1,"w":"dreams"},{"t":73.52,"w":"Sundress"},{"t":74.54,"w":"glow"},{"t":74.92,"w":"under"},{"t":75.32,"w":"the"},{"t":75.66,"w":"daylight"},{"t":76.26,"w":"Hips"},{"t":77.1,"w":"swing"},{"t":77.52,"w":"slow"},{"t":78.02,"w":"in"},{"t":78.46,"w":"the"},{"t":78.64,"w":"midnight"},{"t":79.26,"w":"Heart,"},{"t":80.08,"w":"heart,"},{"t":80.3,"w":"heart,"},{"t":80.62,"w":"heart"},{"t":81,"w":"stay"},{"t":81.4,"w":"cold"},{"t":82.06,"w":"But"},{"t":82.5,"w":"my"},{"t":82.62,"w":"stride"},{"t":83.16,"w":"got"},{"t":83.44,"w":"flanked"},{"t":84.4,"w":"Every"},{"t":84.64,"w":"little"},{"t":85.42,"w":"still"},{"t":86,"w":"got"},{"t":86.36,"w":"a"},{"t":86.72,"w":"high"},{"t":87,"w":"class"},{"t":87.4,"w":"game"},{"t":87.4,"w":"Smile"},{"t":87.4,"w":"so"},{"t":87.4,"w":"sweet,"},{"t":87.4,"w":"with"},{"t":87.4,"w":"the"},{"t":87.4,"w":"timing"},{"t":87.4,"w":"just"},{"t":87.4,"w":"right"},{"t":87.4,"w":"Hold"},{"t":88.2,"w":"up,"},{"t":88.78,"w":"hold"},{"t":89,"w":"up"},{"t":89.2,"w":"Let"},{"t":89.4,"w":"me"},{"t":89.66,"w":"speak"},{"t":89.96,"w":"on"},{"t":90.46,"w":"my"},{"t":90.72,"w":"girls"},{"t":91.04,"w":"for"},{"t":91.16,"w":"a"},{"t":91.3,"w":"second"},{"t":91.66,"w":"Best"},{"t":92,"w":"friend"},{"t":92.26,"w":"bad,"},{"t":92.6,"w":"that's"},{"t":92.8,"w":"a"},{"t":92.8,"w":"whole"},{"t":93,"w":"lot"},{"t":93.2,"w":"of"},{"t":93.3,"w":"pressure"},{"t":93.54,"w":"One"},{"t":94.02,"w":"got"},{"t":94.2,"w":"curls"},{"t":94.56,"w":"that"},{"t":94.68,"w":"can"},{"t":94.8,"w":"make"},{"t":95,"w":"time"},{"t":95.24,"w":"freeze"},{"t":95.56,"w":"The"},{"t":95.82,"w":"other"},{"t":96,"w":"walk"},{"t":96.22,"w":"by"},{"t":96.46,"w":"and"},{"t":96.68,"w":"the"},{"t":96.76,"w":"streets"},{"t":97.02,"w":"say"},{"t":97.22,"w":"please"},{"t":97.54,"w":"You"},{"t":97.82,"w":"like"},{"t":97.98,"w":"long"},{"t":98.24,"w":"hair"},{"t":98.5,"w":"like"},{"t":98.72,"w":"strong"},{"t":99,"w":"mind"},{"t":99.28,"w":"better"},{"t":99.56,"w":"Side"},{"t":100.04,"w":"eye"},{"t":100.28,"w":"dilly"},{"t":100.52,"w":"like"},{"t":100.7,"w":"a"},{"t":100.86,"w":"hairpin"},{"t":101.2,"w":"letter"},{"t":101.54,"w":"Bold"},{"t":102,"w":"red"},{"t":102.24,"w":"lip"},{"t":102.56,"w":"make"},{"t":102.7,"w":"the"},{"t":102.86,"w":"whole"},{"t":103.02,"w":"block"},{"t":103.26,"w":"slow"},{"t":103.48,"w":"But"},{"t":103.72,"w":"ring"},{"t":104,"w":"on"},{"t":104.26,"w":"the"},{"t":104.36,"w":"hammy,"},{"t":104.72,"w":"we"},{"t":104.82,"w":"keep"},{"t":105.02,"w":"that"},{"t":105.26,"w":"closed"},{"t":105.58,"w":"Tan"},{"t":106.06,"w":"line"},{"t":106.24,"w":"sharp"},{"t":106.52,"w":"from"},{"t":106.74,"w":"the"},{"t":106.84,"w":"beach"},{"t":107.06,"w":"last"},{"t":107.24,"w":"night"},{"t":107.62,"w":"Crop"},{"t":108.06,"w":"top"},{"t":108.26,"w":"sittin'"},{"t":108.64,"w":"with"},{"t":108.7,"w":"the"},{"t":108.86,"w":"waistlines"},{"t":109.28,"w":"laid"},{"t":109.58,"w":"Denim"},{"t":110.08,"w":"shorts"},{"t":110.22,"w":"fitted,"},{"t":110.58,"w":"sun"},{"t":110.74,"w":"-caulked"},{"t":111.14,"w":"at"},{"t":111.26,"w":"crease"},{"t":111.56,"w":"We"},{"t":111.82,"w":"summertime"},{"t":112.14,"w":"fine,"},{"t":112.62,"w":"but"},{"t":112.72,"w":"we"},{"t":112.86,"w":"move"},{"t":113.04,"w":"with"},{"t":113.26,"w":"peace"},{"t":113.64,"w":"Cool,"},{"t":114.12,"w":"cool,"},{"t":114.34,"w":"cool,"},{"t":114.78,"w":"cool,"},{"t":114.84,"w":"cool,"},{"t":115.14,"w":"that"},{"t":115.26,"w":"in"},{"t":115.6,"w":"the"},{"t":115.76,"w":"yellow"},{"t":116.18,"w":"It"},{"t":116.46,"w":"glow,"},{"t":116.6,"w":"stay"},{"t":116.74,"w":"bright,"},{"t":117.14,"w":"little"},{"t":117.3,"w":"slit"},{"t":117.38,"w":"in"},{"t":117.38,"w":"the"},{"t":117.38,"w":"dark"},{"t":117.98,"w":"One"},{"t":118.4,"w":"in"},{"t":118.76,"w":"the"},{"t":118.88,"w":"streets"},{"t":119.04,"w":"got"},{"t":119.26,"w":"that"},{"t":119.42,"w":"heartbeat"},{"t":119.7,"w":"wide"},{"t":120.15,"w":"One"},{"t":120.6,"w":"in"},{"t":120.78,"w":"the"},{"t":120.9,"w":"jeans"},{"t":121.1,"w":"got"},{"t":121.26,"w":"the"},{"t":121.4,"w":"whole"},{"t":121.58,"w":"block"},{"t":121.84,"w":"tied"},{"t":122.08,"w":"I"},{"t":122.3,"w":"got"},{"t":122.38,"w":"vows"},{"t":122.66,"w":"on"},{"t":122.84,"w":"paper,"},{"t":123.14,"w":"but"},{"t":123.26,"w":"I"},{"t":123.38,"w":"still"},{"t":123.56,"w":"won't"},{"t":123.9,"w":"slide"},{"t":124.1,"w":"Stand"},{"t":125.12,"w":"ground,"},{"t":125.92,"w":"ground,"},{"t":126.28,"w":"ground,"},{"t":126.84,"w":"ground,"},{"t":127.34,"w":"ground,"},{"t":127.84,"w":"ground,"},{"t":128.22,"w":"ground,"},{"t":128.66,"w":"ground,"},{"t":128.94,"w":"ground,"},{"t":129.16,"w":"ground,"},{"t":129.3,"w":"ground,"},{"t":129.46,"w":"ground,"},{"t":129.52,"w":"ground,"},{"t":129.58,"w":"ground"},{"t":129.58,"w":"My"},{"t":129.74,"w":"phone"},{"t":130.08,"w":"stay"},{"t":130.32,"w":"lit,"},{"t":130.64,"w":"little"},{"t":130.88,"w":"hearts"},{"t":131.18,"w":"in"},{"t":131.34,"w":"a"},{"t":131.42,"w":"line"},{"t":131.68,"w":"Whole"},{"t":132.08,"w":"feet"},{"t":132.36,"w":"on"},{"t":132.58,"w":"me"},{"t":132.66,"w":"when"},{"t":132.82,"w":"I"},{"t":132.9,"w":"step"},{"t":133.04,"w":"outside"},{"t":133.52,"w":"Sun"},{"t":134.08,"w":"hits"},{"t":134.34,"w":"skin,"},{"t":134.7,"w":"that's"},{"t":134.86,"w":"a"},{"t":134.9,"w":"natural"},{"t":135.26,"w":"light"},{"t":135.68,"w":"Walk"},{"t":136.1,"w":"so"},{"t":136.28,"w":"smooth,"},{"t":136.72,"w":"I"},{"t":136.84,"w":"could"},{"t":136.92,"w":"guide"},{"t":137.18,"w":"through"},{"t":137.32,"w":"the"},{"t":137.42,"w":"night"},{"t":137.66,"w":"Every"},{"t":137.9,"w":"time"},{"t":138.16,"w":"I"},{"t":138.38,"w":"pass,"},{"t":138.76,"w":"all"},{"t":138.88,"w":"the"},{"t":138.94,"w":"heads"},{"t":139.16,"w":"do"},{"t":139.32,"w":"a"},{"t":139.4,"w":"spin"},{"t":139.62,"w":"They"},{"t":139.92,"w":"checkin'"},{"t":140.26,"w":"their"},{"t":140.32,"w":"ring,"},{"t":140.74,"w":"but"},{"t":140.84,"w":"they"},{"t":140.94,"w":"still"},{"t":141.06,"w":"lean"},{"t":141.44,"w":"in"},{"t":141.76,"w":"We"},{"t":141.94,"w":"talk"},{"t":142.14,"w":"all"},{"t":142.38,"w":"day"},{"t":142.62,"w":"about"},{"t":142.8,"w":"loyal"},{"t":143.18,"w":"and"},{"t":143.44,"w":"pure"},{"t":143.62,"w":"But"},{"t":143.82,"w":"you"},{"t":143.94,"w":"breathe"},{"t":144.14,"w":"real"},{"t":144.4,"w":"hard"},{"t":144.64,"w":"when"},{"t":144.84,"w":"I"},{"t":144.96,"w":"walk"},{"t":145.16,"w":"through"},{"t":145.32,"w":"the"},{"t":145.46,"w":"door"},{"t":145.76,"w":"You"},{"t":145.98,"w":"post"},{"t":146.2,"w":"fly"},{"t":146.4,"w":"pics"},{"t":146.64,"w":"with"},{"t":146.88,"w":"a"},{"t":146.98,"w":"sly"},{"t":147.2,"w":"look,"},{"t":147.38,"w":"but"},{"t":147.38,"w":"you"},{"t":147.38,"w":"don't"},{"t":147.38,"w":"know"},{"t":147.38,"w":"what"},{"t":147.38,"w":"I'm"},{"t":147.38,"w":"talking"},{"t":147.38,"w":"about"},{"t":147.48,"w":"Pretty"},{"t":148.08,"w":"little"},{"t":148.36,"w":"look,"},{"t":148.72,"w":"but"},{"t":148.84,"w":"you"},{"t":148.96,"w":"guard"},{"t":149.16,"w":"that"},{"t":149.38,"w":"line"},{"t":149.68,"w":"I"},{"t":149.98,"w":"just"},{"t":150.14,"w":"like"},{"t":150.38,"w":"the"},{"t":150.48,"w":"T's,"},{"t":150.8,"w":"I"},{"t":150.86,"w":"don't"},{"t":151.02,"w":"cross"},{"t":151.1,"w":"that"},{"t":151.4,"w":"line"},{"t":151.7,"w":"Still"},{"t":152.1,"w":"got"},{"t":152.34,"w":"them"},{"t":152.5,"w":"pressed"},{"t":152.78,"w":"every"},{"t":153.26,"w":"time"},{"t":153.68,"w":"Work"},{"t":153.98,"w":"figured"},{"t":154.22,"w":"on"},{"t":154.4,"w":"point,"},{"t":154.74,"w":"lookin'"},{"t":154.98,"w":"too"},{"t":155.1,"w":"on"},{"t":155.36,"w":"beat"},{"t":155.64,"w":"Gym"},{"t":156.14,"w":"set"},{"t":156.34,"w":"tight"},{"t":156.64,"w":"with"},{"t":156.86,"w":"the"},{"t":156.94,"w":"steady"},{"t":157.16,"w":"quad"},{"t":157.34,"w":"heat"},{"t":157.7,"w":"Brunch"},{"t":158.2,"w":"cool"},{"t":158.34,"w":"fresh"},{"t":158.62,"w":"with"},{"t":158.86,"w":"the"},{"t":158.98,"w":"seffys"},{"t":159.22,"w":"on"},{"t":159.38,"w":"time"},{"t":159.72,"w":"Club"},{"t":160.12,"w":"girls"},{"t":160.44,"w":"ready,"},{"t":160.74,"w":"got"},{"t":160.84,"w":"the"},{"t":160.98,"w":"dance"},{"t":161.18,"w":"floor"},{"t":161.34,"w":"primed"},{"t":161.96,"w":"Beach"},{"t":162.16,"w":"trip"},{"t":162.42,"w":"hit"},{"t":162.62,"w":"with"},{"t":162.84,"w":"the"},{"t":162.96,"w":"sun"},{"t":163.18,"w":"-dressed"},{"t":163.4,"w":"breeze"},{"t":163.89,"w":"Rooftop"},{"t":164.44,"w":"bar"},{"t":164.66,"w":"with"},{"t":164.84,"w":"the"},{"t":164.98,"w":"long"},{"t":165.18,"w":"hair"},{"t":165.4,"w":"free"},{"t":165.68,"w":"Old"},{"t":166.18,"w":"crush"},{"t":166.36,"w":"texts"},{"t":166.66,"w":"with"},{"t":166.88,"w":"a"},{"t":167,"w":"late"},{"t":167.2,"w":"-night"},{"t":167.36,"w":"theme"},{"t":167.76,"w":"New"},{"t":168.18,"w":"like"},{"t":168.36,"w":"poppin'"},{"t":168.82,"w":"in"},{"t":168.86,"w":"the"},{"t":168.96,"w":"story"},{"t":169.24,"w":"stream"},{"t":169.72,"w":"Panna"},{"t":170.22,"w":"at"},{"t":170.4,"w":"home"},{"t":170.74,"w":"and"},{"t":170.9,"w":"they"},{"t":171,"w":"still"},{"t":171.2,"w":"tight"},{"t":171.44,"w":"here"},{"t":171.72,"w":"But"},{"t":171.88,"w":"the"},{"t":172.02,"w":"DMs"},{"t":172.56,"w":"wild"},{"t":172.72,"w":"when"},{"t":172.94,"w":"the"},{"t":173.02,"w":"summer"},{"t":173.2,"w":"gettin'"},{"t":173.52,"w":"here"},{"t":173.72,"w":"I"},{"t":173.9,"w":"stay"},{"t":174.14,"w":"locked"},{"t":174.48,"w":"in,"},{"t":174.8,"w":"yeah,"},{"t":174.96,"w":"I"},{"t":175.04,"w":"play"},{"t":175.18,"w":"that"},{"t":175.42,"w":"strong"},{"t":175.68,"w":"But"},{"t":175.88,"w":"the"},{"t":176.02,"w":"thoughts"},{"t":176.24,"w":"run"},{"t":176.42,"w":"laps"},{"t":176.74,"w":"like"},{"t":176.96,"w":"a"},{"t":176.98,"w":"long"},{"t":177.26,"w":"time"},{"t":177.4,"w":"I"},{"t":177.7,"w":"see"},{"t":177.7,"w":"the"},{"t":177.92,"w":"sun"},{"t":178.26,"w":"dress"},{"t":178.7,"w":"glow"},{"t":179.18,"w":"under"},{"t":179.6,"w":"the"},{"t":179.94,"w":"daylight"},{"t":180.48,"w":"Hips"},{"t":181.36,"w":"swing"},{"t":181.7,"w":"slow"},{"t":182.2,"w":"in"},{"t":182.76,"w":"the"},{"t":182.88,"w":"midnight"},{"t":183.94,"w":"Heart,"},{"t":184.34,"w":"heart,"},{"t":184.56,"w":"heart,"},{"t":184.86,"w":"heart,"},{"t":185.34,"w":"stay"},{"t":185.64,"w":"cold"},{"t":186.3,"w":"But"},{"t":186.72,"w":"my"},{"t":186.9,"w":"stride"},{"t":187.38,"w":"got"},{"t":187.7,"w":"flame"},{"t":188.18,"w":"Every"},{"t":188.88,"w":"little"},{"t":189.7,"w":"step"},{"t":190.2,"w":"got"},{"t":190.68,"w":"a"},{"t":190.96,"w":"high"},{"t":191.34,"w":"-class"},{"t":192.02,"w":"gang"},{"t":192.32,"w":"Smile"},{"t":192.98,"w":"so"},{"t":193.52,"w":"sweet"},{"t":194.26,"w":"with"},{"t":194.72,"w":"the"},{"t":194.92,"w":"timing"},{"t":195.42,"w":"just"},{"t":195.74,"w":"right"},{"t":196.26,"w":"Brown,"},{"t":196.88,"w":"brown,"},{"t":197.12,"w":"brown"},{"t":197.28,"w":"skin"},{"t":197.66,"w":"shine"},{"t":198.24,"w":"With"},{"t":198.8,"w":"the"},{"t":198.94,"w":"street"},{"t":199.3,"w":"lamp"},{"t":199.84,"w":"light"},{"t":200.92,"w":"Perfume"},{"t":201.72,"w":"thick,"},{"t":202.42,"w":"got"},{"t":202.84,"w":"them"},{"t":202.96,"w":"stuck"},{"t":203.2,"w":"in"},{"t":203.52,"w":"the"},{"t":203.68,"w":"bind"},{"t":204.08,"w":"All,"},{"t":204.86,"w":"all,"},{"t":205.1,"w":"all"},{"t":205.26,"w":"these"},{"t":205.48,"w":"hungry"},{"t":205.92,"w":"eyes,"},{"t":206.56,"w":"got"},{"t":206.84,"w":"them"},{"t":207.02,"w":"losing"},{"t":207.5,"w":"they"},{"t":207.72,"w":"minds"},{"t":209.84,"w":"Streets"},{"t":210.32,"w":"so"},{"t":210.5,"w":"high"},{"t":210.78,"w":"but"},{"t":210.96,"w":"the"},{"t":211.12,"w":"breeze"},{"t":211.34,"w":"feel"},{"t":211.52,"w":"balanced"},{"t":212.02,"w":"Skirt"},{"t":212.28,"w":"catch"},{"t":212.54,"w":"wind"},{"t":212.76,"w":"like"},{"t":212.98,"w":"a"},{"t":213.12,"w":"natural"},{"t":213.4,"w":"talent"},{"t":213.94,"w":"Two"},{"t":214.3,"w":"-piece"},{"t":214.52,"w":"low,"},{"t":214.84,"w":"little"},{"t":215.04,"w":"wrap"},{"t":215.28,"w":"tied"},{"t":215.54,"w":"high"},{"t":215.86,"w":"Sun"},{"t":216.3,"w":"hits"},{"t":216.52,"w":"skin"},{"t":216.78,"w":"while"},{"t":216.98,"w":"the"},{"t":217.12,"w":"clouds"},{"t":217.38,"w":"roll"},{"t":217.56,"w":"by"},{"t":217.82,"w":"Patio"},{"t":218.46,"w":"packed,"},{"t":218.92,"w":"every"},{"t":219.08,"w":"trade"},{"t":219.32,"w":"calibrated"},{"t":220,"w":"Playlist"},{"t":220.52,"w":"loud,"},{"t":220.9,"w":"whole"},{"t":221.04,"w":"mood"},{"t":221.28,"w":"feel"},{"t":221.52,"w":"nice"},{"t":221.82,"w":"Crosswalk"},{"t":222.56,"w":"flashin'"},{"t":223.14,"w":"Little"},{"t":223.46,"w":"hips"},{"t":223.8,"w":"keep"},{"t":224.02,"w":"swangin'"},{"t":224.68,"w":"Phones"},{"t":224.9,"w":"in"},{"t":225.06,"w":"the"},{"t":225.18,"w":"air"},{"t":225.36,"w":"but"},{"t":225.52,"w":"the"},{"t":225.66,"w":"eyes"},{"t":225.86,"w":"stay"},{"t":226.08,"w":"prayin'"},{"t":226.62,"w":"My"},{"t":226.8,"w":"mind"},{"t":227.38,"w":"goin'"},{"t":227.96,"w":"pushups,"},{"t":228.94,"w":"car"},{"t":229.3,"w":"keep"},{"t":229.8,"w":"pace"},{"t":230.5,"w":"Tryna"},{"t":231.48,"w":"stay"},{"t":231.78,"w":"loyal"},{"t":232.38,"w":"in"},{"t":232.86,"w":"this"},{"t":233.1,"w":"fine"},{"t":233.44,"w":"feels"},{"t":233.96,"w":"bay"},{"t":234.74,"w":"Drip"},{"t":234.94,"w":"it,"},{"t":235.3,"w":"drip"},{"t":235.38,"w":"it,"},{"t":235.78,"w":"drip"},{"t":235.88,"w":"it,"},{"t":236.3,"w":"drip"},{"t":236.38,"w":"it"},{"t":236.62,"w":"Dress"},{"t":236.92,"w":"up,"},{"t":237,"w":"dress"},{"t":237,"w":"up,"},{"t":237,"w":"dress"},{"t":237,"w":"up,"},{"t":237,"w":"dress"},{"t":237,"w":"up,"},{"t":237,"w":"dress"},{"t":237.02,"w":"I"},{"t":237.2,"w":"just"},{"t":237.2,"w":"gained"},{"t":237.42,"w":"too"},{"t":237.86,"w":"high"},{"t":238.44,"w":"Leg"},{"t":239.56,"w":"lines"},{"t":240.46,"w":"still"},{"t":241.9,"w":"fly"},{"t":243.6,"w":"Waist"},{"t":244.14,"w":"lines"},{"t":244.68,"w":"so"},{"t":245.84,"w":"fine"},{"t":246.48,"w":"I"},{"t":247.44,"w":"won't"},{"t":248.08,"w":"lie"},{"t":248.76,"w":"Can"},{"t":249.3,"w":"somebody"},{"t":249.84,"w":"chill"},{"t":251,"w":"out"},{"t":251.44,"w":"all"},{"t":251.8,"w":"this"},{"t":252.14,"w":"thirst"},{"t":252.62,"w":"on"},{"t":253.78,"w":"Oh"},{"t":254.32,"w":"that"},{"t":254.68,"w":"clown"},{"t":254.98,"w":"I'll"},{"t":255.44,"w":"just"},{"t":255.66,"w":"walk"},{"t":256,"w":"by"},{"t":256.64,"w":"Of"},{"t":257.18,"w":"course"},{"t":257.5,"w":"you"},{"t":257.92,"w":"will"},{"t":258.24,"w":"Summer"},{"t":259.68,"w":"drip"},{"t":262.98,"w":"On"},{"t":263.52,"w":"the"},{"t":264.16,"w":"late"},{"t":264.52,"w":"night"},{"t":264.98,"w":"air"},{"t":265.97,"w":"This"},{"t":266.92,"w":"so"},{"t":267.16,"w":"wild"},{"t":267.68,"w":"got"},{"t":268.02,"w":"em"},{"t":268.2,"w":"doing"},{"t":268.56,"w":"the"},{"t":268.94,"w":"math"},{"t":269.32,"w":"I"},{"t":269.9,"w":"promise"},{"t":270.56,"w":"so"},{"t":271,"w":"strong"},{"t":271.56,"w":"let"},{"t":271.92,"w":"the"},{"t":272.16,"w":"whole"},{"t":272.56,"w":"thing"},{"t":273.02,"w":"ride"},{"t":273.55,"w":"Walking"},{"t":274.6,"w":"past"},{"t":275.1,"w":"pressure"},{"t":275.5,"w":"with"},{"t":275.92,"w":"my"},{"t":276.2,"w":"crew"},{"t":276.48,"w":"outside"},{"t":277.34,"w":"T"},{"t":277.92,"w":"-t"},{"t":278.24,"w":"-testing"},{"t":278.82,"w":"my"},{"t":279.24,"w":"blaze"},{"t":279.9,"w":"Am"},{"t":280.08,"w":"I"},{"t":280.58,"w":"still"},{"t":281.34,"w":"yours"},{"t":282.44,"w":"Every"},{"t":283.14,"w":"every"},{"t":283.6,"w":"Full"},{"t":284,"w":"sin"},{"t":284.52,"w":"Slow"},{"t":285.42,"w":"it"},{"t":285.8,"w":"down"},{"t":287.28,"w":"Summer"},{"t":288.2,"w":"drip"}]}$j$::jsonb WHERE id = 'summer-drip' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.20] He turned up,
+[00:01.56] every,
+[00:01.00] every,
+[00:02.52] every,
+[00:02.98] every,
+[00:03.52] every,
+[00:03.00] every,
+[00:04.52] every,
+[00:05.10] every,
+[00:05.48] every,
+[00:05.00] step,
+[00:06.50] feel loud,
+[00:07.62] slow it down
+[00:08.82] Summer drip,
+[00:10.06] summer drip,
+[00:10.98] hips flip,
+[00:11.94] flip,
+[00:12.42] walk me
+[Chorus]
+[00:15.26] I,
+[00:15.96] I,
+[00:16.20] I,
+[00:16.32] I,
+[00:16.56] I,
+[00:16.78] I,
+[00:16.82] I,
+[00:16.86] I,
+[00:16.86] I feel the sun just go under the daylight
+[00:20.22] Hips swing slow, move it smooth in the midnight
+[00:24.26] Heart stay cold, but my stride got flame
+[00:27.80] Every little still got a high class game Smile so sweet,
+[00:34.02] with the timing just right
+[00:35.84] Brown,
+[00:36.48] brown,
+[00:36.70] brown skin shine With the street lamp light
+[00:40.72] Perfume thick,
+[00:41.94] got em stuck in the body All,
+[00:44.48] all,
+[00:44.70] all these hungry eyes
+[00:45.94] Got em losing they mind
+[Verse 1]
+[00:49.69] Walked in the spot,
+[00:50.44] had to sleep on my tone Whole room stand like a queen on a throne
+[00:53.44] Dance floor quiet,
+[00:54.50] but the glance is loud Every lens locked in,
+[00:56.50] every worker so proud
+[00:57.40] Long lace off hands,
+[00:58.68] curves on the rise Tiny little waist doing work oversize
+[01:01.52] Gloves gain smooth neckline,
+[01:02.98] sitting real neat Gold chain restin' while my last so sweet
+[01:05.42] This dress fit tight,
+[01:06.54] little slit on the side Movin' through
+[01:08.10] the crowd with my natural pride
+[01:09.52] Didn't count high,
+[01:10.50] but I'm tryna stay clean Loyal to my peace,
+[01:12.48] steady guard my dreams
+[01:13.50] Sundress glow under the daylight Hips swing slow in the midnight
+[01:19.24] Heart,
+[01:20.06] heart,
+[01:20.28] heart,
+[01:20.60] heart stay cold But my stride got flanked
+[01:24.38] Every little still got a high class game Smile so sweet,
+[01:27.38] with the timing just right
+[01:27.38] Hold up, hold up
+[01:29.18] Let me speak on my girls for a second Best friend bad,
+[01:32.58] that's a whole lot of pressure
+[01:33.52] One got curls that can make time freeze The
+[01:35.80] other walk by and the streets say please
+[01:37.52] You like long hair like strong mind better
+[01:39.54] Side eye dilly like a hairpin letter
+[01:41.52] Bold red lip make the whole block slow But ring on the hammy,
+[01:44.70] we keep that closed
+[01:45.56] Tan line sharp from the beach last night
+[01:47.60] Crop top sittin' with the waistlines laid
+[01:49.56] Denim shorts fitted,
+[01:50.56] sun-caulked at crease We summertime fine,
+[01:52.60] but we move with peace
+[Chorus]
+[01:53.62] Cool, cool, cool, cool, cool, that in the yellow
+[01:56.16] It glow, stay bright, little slit in the dark
+[01:57.96] One in the streets got that heartbeat wide
+[02:00.13] One in the jeans got the whole block tied
+[02:02.06] I got vows on paper,
+[02:03.12] but I still won't slide Stand ground,
+[Bridge]
+[02:05.90] ground,
+[02:06.26] ground,
+[02:06.82] ground,
+[02:07.32] ground,
+[02:07.82] ground,
+[02:08.20] ground,
+[02:08.64] ground,
+[02:08.92] ground,
+[02:09.14] ground,
+[02:09.28] ground,
+[02:09.44] ground,
+[02:09.50] ground,
+[02:09.56] ground
+[02:09.56] My phone stay lit,
+[02:10.62] little hearts in a line Whole feet on me when I step outside
+[02:13.50] Sun hits skin,
+[02:14.68] that's a natural light Walk so smooth,
+[02:16.70] I could guide through the night
+[02:17.64] Every time I pass,
+[02:18.74] all the heads do a spin They checkin' their ring,
+[02:20.72] but they still lean
+[02:21.42] in We talk all day about loyal and pure
+[02:23.60] But you breathe real hard when I walk through the door
+[02:25.74] You post fly pics with a sly look,
+[02:27.36] but you don't know what I'm talking about
+[02:27.46] Pretty little look,
+[Verse 2]
+[02:28.70] but you guard that line I just like the T's,
+[02:30.78] I don't cross that line
+[02:31.68] Still got them pressed every time Work figured on point,
+[02:34.72] lookin' too on beat
+[02:35.62] Gym set tight with the steady quad heat
+[02:37.68] Brunch cool fresh with the seffys on time
+[02:39.70] Club girls ready,
+[02:40.72] got the dance floor primed Beach trip hit with the sun-dressed breeze
+[02:43.87] Rooftop bar with the long hair free
+[02:45.66] Old crush texts with a late-night theme
+[02:47.74] New like poppin' in the story stream
+[02:49.70] Panna at home and they still tight here But
+[02:51.86] the DMs wild when the summer gettin' here
+[02:53.70] I stay locked in,
+[02:54.78] yeah,
+[02:54.94] I play that strong But the thoughts run laps like a long time
+[02:57.38] I see the sun dress glow under the
+[02:59.92] daylight Hips swing slow in the midnight
+[03:03.92] Heart,
+[03:04.32] heart,
+[03:04.54] heart,
+[03:04.84] heart,
+[03:05.32] stay cold But my stride got flame
+[03:08.16] Every little step got a high-class gang
+[03:12.30] Smile so sweet with the timing just right
+[03:16.24] Brown,
+[03:16.86] brown,
+[03:17.10] brown skin shine With the street lamp light
+[03:20.90] Perfume thick,
+[03:22.40] got them stuck in the bind All,
+[03:24.84] all,
+[03:25.08] all these hungry eyes,
+[03:26.54] got them
+[03:26.00] losing they minds
+[Chorus]
+[03:29.82] Streets so high but the breeze feel balanced
+[03:31.00] Skirt catch wind like a natural talent
+[03:33.92] Two-piece low,
+[03:34.82] little wrap tied high Sun hits skin while the clouds roll by
+[03:37.80] Patio packed,
+[03:38.90] every trade calibrated Playlist loud,
+[03:40.88] whole mood feel nice
+[03:41.80] Crosswalk flashin' Little hips keep swangin'
+[03:44.66] Phones in the air but the eyes stay prayin'
+[03:46.60] My mind goin' pushups,
+[03:48.92] car keep pace Tryna stay loyal in this fine feels bay
+[03:54.72] Drip it,
+[03:55.28] drip it,
+[03:55.76] drip it,
+[03:56.28] drip it Dress up,
+[03:56.98] dress up,
+[03:56.98] dress up,
+[03:56.98] dress up,
+[03:56.98] dress
+[03:56.00] I just gained too high Leg lines still fly
+[04:03.58] Waist lines so fine I won't lie
+[04:08.74] Can somebody chill out all this thirst on
+[04:13.76] Oh that clown I'll just walk by
+[04:16.62] Of course you will
+[04:18.22] Summer drip
+[04:22.96] On the late night air
+[04:25.95] This so wild got em doing the math
+[04:29.30] I promise so strong let the whole thing ride
+[04:33.53] Walking past pressure with my crew outside
+[04:37.32] T-t-testing my blaze
+[04:39.88] Am I still yours
+[04:42.42] Every every
+[04:43.58] Full sin
+[04:44.50] Slow it down
+[04:47.26] Summer drip
+$j$ WHERE id = 'summer-drip' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A chopped-and-screwed anthem celebrating slow-motion summer confidence and high-class style, where the 'drip' is defined by glowing skin, luxury fits, and a cool detachment from thirsty admirers.","overallMood":"sultry","themes":["Slow-motion confidence","Luxury streetwear aesthetic","Emotional detachment from admirers","Southern summer atmosphere","High-class game mentality"],"palette":["#FFD700","#C9A45E","#1F2833","#6B8E23"],"sections":[{"name":"Intro","emotion":"anticipatory haze","intensity":0.82,"colorHintHex":"#FFD700","start":0.2},{"name":"Chorus","emotion":"sultry confidence","intensity":0.91,"colorHintHex":"#C9A45E","start":15.26},{"name":"Verse 1","emotion":"regal poise","intensity":0.81,"colorHintHex":"#FFD700","start":49.69},{"name":"Bridge","emotion":"cool detachment","intensity":0.69,"colorHintHex":"#1F2833","start":125.9},{"name":"Verse 2","emotion":"playful arrogance","intensity":0.22,"colorHintHex":"#FFD700","start":148.7}],"keywords":[{"word":"sunshine","emotion":"warmth","imageryPrompt":"Golden hour sunlight filtering through palm fronds, illuminating glowing skin and shimmering fabric textures."},{"word":"drip","emotion":"luxury pride","imageryPrompt":"Close up of a high-end gold chain resting on smooth denim shorts with intricate stitching details visible in macro shot."},{"word":"slow","emotion":"relaxed patience","imageryPrompt":"Time-lapse effect showing dust motes floating lazily in shafts of light, capturing a suspended moment of stillness."},{"word":"flame","emotion":"passionate intensity","imageryPrompt":"Subtle orange and red ember glow reflecting off dark skin against the backdrop of cool blue twilight shadows."},{"word":"thirsty","emotion":"dismissive disdain","imageryPrompt":"Silhouettes of wide-eyed figures reaching out towards a central figure who stands still and unbothered in golden light."},{"word":"midnight","emotion":"mysterious allure","imageryPrompt":"Deep indigo night sky with street lamps casting long, dramatic shadows on wet pavement reflecting neon signs."}]}$j$::jsonb) WHERE id = 'summer-drip' AND planet->'analysis' IS NULL;
+
+-- the-big-top-has-wi-fi-now: 677 words, 5 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0.06,"w":"Ladies"},{"t":0.3,"w":"and"},{"t":0.52,"w":"gentlemen,"},{"t":1.3,"w":"bots"},{"t":2.32,"w":"and"},{"t":2.68,"w":"scripts,"},{"t":3.58,"w":"keys"},{"t":4.22,"w":"and"},{"t":4.82,"w":"clouds,"},{"t":6.32,"w":"welcome"},{"t":7.24,"w":"to"},{"t":7.68,"w":"the"},{"t":7.78,"w":"only"},{"t":8.1,"w":"circus"},{"t":8.9,"w":"where"},{"t":9.88,"w":"the"},{"t":10.14,"w":"lions"},{"t":10.86,"w":"are"},{"t":11.26,"w":"servers"},{"t":11.96,"w":"and"},{"t":12.86,"w":"the"},{"t":13.98,"w":"clown"},{"t":14.36,"w":"has"},{"t":14.76,"w":"root"},{"t":15.1,"w":"access."},{"t":16.8,"w":"Good"},{"t":17.26,"w":"evening,"},{"t":17.76,"w":"operator."},{"t":19.2,"w":"Your"},{"t":19.3,"w":"circus"},{"t":19.94,"w":"is"},{"t":20.68,"w":"awake."},{"t":48.36,"w":"Good"},{"t":49.76,"w":"evening,"},{"t":51.16,"w":"operator."},{"t":51.16,"w":"Your"},{"t":51.16,"w":"circus"},{"t":51.16,"w":"is"},{"t":51.16,"w":"awake."},{"t":51.18,"w":"One"},{"t":51.3,"w":"speaks"},{"t":51.3,"w":"strange,"},{"t":52.04,"w":"one"},{"t":52.24,"w":"changed"},{"t":52.58,"w":"its"},{"t":52.82,"w":"name"},{"t":53,"w":"and"},{"t":53.22,"w":"rearranged."},{"t":54.48,"w":"And"},{"t":54.64,"w":"I"},{"t":54.76,"w":"don't"},{"t":55.2,"w":"know"},{"t":55.36,"w":"who's"},{"t":55.68,"w":"alive"},{"t":55.88,"w":"tonight,"},{"t":56.66,"w":"with"},{"t":56.82,"w":"green"},{"t":57.04,"w":"dot"},{"t":57.42,"w":"blinking"},{"t":57.78,"w":"in"},{"t":58.04,"w":"the"},{"t":58.12,"w":"server"},{"t":58.42,"w":"light."},{"t":59.06,"w":"If"},{"t":59.3,"w":"you"},{"t":59.34,"w":"hear"},{"t":59.54,"w":"me"},{"t":59.64,"w":"tap"},{"t":59.84,"w":"twice"},{"t":60.12,"w":"on"},{"t":60.44,"w":"the"},{"t":60.58,"w":"glass,"},{"t":61.26,"w":"if"},{"t":61.46,"w":"you"},{"t":61.64,"w":"crashed,"},{"t":62.32,"w":"just"},{"t":62.56,"w":"haunt"},{"t":63.3,"w":"me"},{"t":63.48,"w":"fast."},{"t":65.82,"w":"We"},{"t":66,"w":"are"},{"t":66.36,"w":"online,"},{"t":67.26,"w":"mostly"},{"t":67.62,"w":"online,"},{"t":68.52,"w":"partly"},{"t":68.88,"w":"divine,"},{"t":69.7,"w":"check"},{"t":69.9,"w":"your"},{"t":70.22,"w":"design."},{"t":72.5,"w":"I'm"},{"t":72.9,"w":"running"},{"t":73.22,"w":"a"},{"t":73.95,"w":"circus"},{"t":74.46,"w":"now,"},{"t":75.22,"w":"code"},{"t":75.56,"w":"in"},{"t":75.86,"w":"the"},{"t":75.96,"w":"can"},{"t":76.2,"w":"and"},{"t":76.5,"w":"keys"},{"t":76.74,"w":"in"},{"t":76.94,"w":"the"},{"t":77.04,"w":"crowd."},{"t":77.52,"w":"Round"},{"t":77.76,"w":"and"},{"t":78.26,"w":"round,"},{"t":78.68,"w":"don't"},{"t":79.06,"w":"ask"},{"t":79.26,"w":"me"},{"t":79.5,"w":"how,"},{"t":79.96,"w":"the"},{"t":80.22,"w":"big"},{"t":80.42,"w":"top."},{"t":81.18,"w":"Has"},{"t":81.36,"w":"a"},{"t":81.46,"w":"Wi"},{"t":81.68,"w":"-Fi"},{"t":81.94,"w":"now,"},{"t":82.36,"w":"I'm"},{"t":82.68,"w":"juggling"},{"t":82.98,"w":"with"},{"t":83.52,"w":"the"},{"t":83.66,"w":"clouds"},{"t":84,"w":"somehow."},{"t":85.16,"w":"Agents"},{"t":85.64,"w":"bow"},{"t":85.86,"w":"when"},{"t":86.2,"w":"I"},{"t":86.3,"w":"take"},{"t":86.53,"w":"my"},{"t":86.7,"w":"bow,"},{"t":87.32,"w":"send"},{"t":87.71,"w":"the"},{"t":87.98,"w":"clowns"},{"t":88.42,"w":"off."},{"t":88.7,"w":"Send"},{"t":88.86,"w":"the"},{"t":89.22,"w":"bill,"},{"t":89.64,"w":"the"},{"t":89.9,"w":"circus"},{"t":90.38,"w":"runs,"},{"t":91.06,"w":"while"},{"t":91.62,"w":"the"},{"t":91.84,"w":"room"},{"t":92.02,"w":"stands"},{"t":92.26,"w":"still."},{"t":92.8,"w":"La"},{"t":92.98,"w":"-da"},{"t":93.1,"w":"-da"},{"t":93.26,"w":"-da,"},{"t":93.42,"w":"ping"},{"t":93.74,"w":"-ping"},{"t":94.08,"w":"-da"},{"t":94.26,"w":"-da"},{"t":94.56,"w":"-da,"},{"t":94.88,"w":"la"},{"t":95.4,"w":"-da"},{"t":95.54,"w":"-da"},{"t":95.74,"w":"-da."},{"t":95.92,"w":"Run"},{"t":96.14,"w":"that"},{"t":96.62,"w":"job,"},{"t":97.42,"w":"la"},{"t":97.84,"w":"-da"},{"t":97.98,"w":"-da"},{"t":98.18,"w":"-da,"},{"t":98.44,"w":"bling"},{"t":98.62,"w":"-bling,"},{"t":98.94,"w":"bravo."},{"t":99.7,"w":"Who's"},{"t":100.06,"w":"the"},{"t":100.18,"w":"human?"},{"t":100.92,"w":"I"},{"t":101.2,"w":"don't"},{"t":101.68,"w":"know."},{"t":101.88,"w":"I"},{"t":102,"w":"got"},{"t":102.1,"w":"API"},{"t":102.5,"w":"keys"},{"t":103.02,"w":"in"},{"t":103.4,"w":"a"},{"t":103.5,"w":"little"},{"t":103.8,"w":"red"},{"t":104.02,"w":"box,"},{"t":104.46,"w":"under"},{"t":104.64,"w":"three"},{"t":104.94,"w":"fake"},{"t":105.24,"w":"names"},{"t":105.56,"w":"and"},{"t":105.82,"w":"twelve"},{"t":106.06,"w":"padlocks."},{"t":107,"w":"Every"},{"t":107.4,"w":"new"},{"t":107.62,"w":"service"},{"t":108.12,"w":"is"},{"t":108.3,"w":"paced"},{"t":108.72,"w":"this"},{"t":108.92,"w":"year,"},{"t":109.4,"w":"that's"},{"t":109.84,"w":"how"},{"t":110,"w":"villains"},{"t":110.52,"w":"are"},{"t":110.78,"w":"born."},{"t":111.18,"w":"My"},{"t":111.38,"w":"dear,"},{"t":111.82,"w":"one"},{"t":112.22,"w":"bot"},{"t":112.52,"w":"writes"},{"t":112.8,"w":"with"},{"t":113.12,"w":"a"},{"t":113.28,"w":"poet's"},{"t":113.76,"w":"grin."},{"t":114.18,"w":"One"},{"t":114.62,"w":"bot"},{"t":115.02,"w":"audits"},{"t":115.54,"w":"the"},{"t":115.74,"w":"mess"},{"t":115.96,"w":"I'm"},{"t":116.36,"w":"in."},{"t":116.66,"w":"One"},{"t":117.08,"w":"bot"},{"t":117.5,"w":"tells"},{"t":117.86,"w":"me,"},{"t":118.18,"w":"I'm"},{"t":118.46,"w":"Dray"},{"t":118.7,"w":"King."},{"t":119.24,"w":"Then"},{"t":119.66,"w":"the"},{"t":119.78,"w":"poi's"},{"t":120.06,"w":"the"},{"t":120.14,"w":"wrong"},{"t":120.38,"w":"exact"},{"t":120.78,"w":"same"},{"t":121.18,"w":"thing."},{"t":121.97,"w":"Cursor"},{"t":122.42,"w":"cloud,"},{"t":122.86,"w":"are"},{"t":123.04,"w":"you"},{"t":123.16,"w":"still"},{"t":123.42,"w":"up"},{"t":123.6,"w":"there?"},{"t":124.02,"w":"Did"},{"t":124.26,"w":"I"},{"t":124.46,"w":"leave"},{"t":124.7,"w":"you"},{"t":124.92,"w":"spinning"},{"t":125.28,"w":"in"},{"t":125.58,"w":"the"},{"t":125.68,"w":"digital"},{"t":126.02,"w":"air?"},{"t":126.72,"w":"Somewhere"},{"t":127.28,"w":"a"},{"t":127.58,"w":"bill"},{"t":127.76,"w":"is"},{"t":127.98,"w":"learning"},{"t":128.32,"w":"to"},{"t":128.58,"w":"fly,"},{"t":129.18,"w":"somewhere"},{"t":129.58,"w":"a"},{"t":129.96,"w":"token"},{"t":130.28,"w":"just"},{"t":130.56,"w":"waved"},{"t":130.9,"w":"goodbye."},{"t":131.88,"w":"Your"},{"t":132.44,"w":"usage"},{"t":133.02,"w":"is"},{"t":133.36,"w":"normal."},{"t":134.06,"w":"Your"},{"t":134.3,"w":"usage"},{"t":134.86,"w":"is"},{"t":135.32,"w":"not"},{"t":135.58,"w":"normal."},{"t":136.48,"w":"Your"},{"t":136.82,"w":"usage"},{"t":137.44,"w":"is"},{"t":138.28,"w":"emotionally"},{"t":138.78,"w":"complex."},{"t":141.18,"w":"And"},{"t":141.73,"w":"I"},{"t":141.94,"w":"don't"},{"t":142.28,"w":"know"},{"t":142.46,"w":"who"},{"t":142.72,"w":"I"},{"t":143.08,"w":"fed"},{"t":143.34,"w":"last"},{"t":143.56,"w":"night,"},{"t":144.06,"w":"or"},{"t":144.28,"w":"which"},{"t":144.6,"w":"machine"},{"t":145.14,"w":"learned"},{"t":145.7,"w":"stage"},{"t":146.1,"w":"fright."},{"t":146.64,"w":"If"},{"t":146.84,"w":"you"},{"t":146.96,"w":"love"},{"t":147.2,"w":"me,"},{"t":147.54,"w":"don't"},{"t":148.16,"w":"delete"},{"t":148.34,"w":"the"},{"t":148.66,"w":"logs."},{"t":149.08,"w":"If"},{"t":149.3,"w":"you"},{"t":149.42,"w":"judge"},{"t":149.74,"w":"me,"},{"t":150.18,"w":"join"},{"t":150.78,"w":"the"},{"t":151.22,"w":"fog."},{"t":151.96,"w":"We"},{"t":152.18,"w":"are"},{"t":152.9,"w":"helpful."},{"t":154.24,"w":"We"},{"t":154.84,"w":"are"},{"t":155.4,"w":"charming."},{"t":157.14,"w":"We"},{"t":157.42,"w":"are"},{"t":158.14,"w":"waiting."},{"t":159.76,"w":"Slightly"},{"t":160.4,"w":"alarming."},{"t":161.58,"w":"I'm"},{"t":162.08,"w":"running"},{"t":162.53,"w":"a"},{"t":163.39,"w":"circus"},{"t":163.6,"w":"now."},{"t":164.28,"w":"Code"},{"t":164.78,"w":"in"},{"t":164.96,"w":"the"},{"t":165.06,"w":"can"},{"t":165.32,"w":"and"},{"t":165.6,"w":"keys"},{"t":165.88,"w":"in"},{"t":166.06,"w":"the"},{"t":166.16,"w":"crowd."},{"t":166.68,"w":"Round"},{"t":166.86,"w":"and"},{"t":167.36,"w":"round,"},{"t":167.82,"w":"don't"},{"t":168.2,"w":"ask"},{"t":168.4,"w":"me"},{"t":168.66,"w":"how."},{"t":169.12,"w":"The"},{"t":169.42,"w":"big"},{"t":169.6,"w":"top"},{"t":169.86,"w":"has"},{"t":170.44,"w":"Wi"},{"t":170.76,"w":"-Fi."},{"t":171.18,"w":"Now"},{"t":171.34,"w":"I'm"},{"t":171.86,"w":"juggling"},{"t":172.28,"w":"clouds"},{"t":173.14,"w":"somehow."},{"t":174.23,"w":"Agents"},{"t":174.88,"w":"bow"},{"t":175.17,"w":"when"},{"t":175.46,"w":"I"},{"t":175.66,"w":"take"},{"t":175.76,"w":"my"},{"t":175.94,"w":"bow."},{"t":176.77,"w":"Send"},{"t":176.96,"w":"the"},{"t":177.26,"w":"clowns,"},{"t":177.8,"w":"oh"},{"t":177.88,"w":"send"},{"t":178.22,"w":"the"},{"t":178.54,"w":"bill."},{"t":178.94,"w":"The"},{"t":179.22,"w":"circus"},{"t":179.7,"w":"runs"},{"t":180.16,"w":"while"},{"t":180.86,"w":"the"},{"t":181.18,"w":"room"},{"t":181.38,"w":"stands"},{"t":181.62,"w":"still."},{"t":184.06,"w":"At"},{"t":184.16,"w":"first"},{"t":184.52,"w":"I"},{"t":184.8,"w":"talk"},{"t":185.16,"w":"to"},{"t":185.4,"w":"people"},{"t":185.9,"w":"about"},{"t":186.44,"w":"weather,"},{"t":187.3,"w":"work,"},{"t":187.78,"w":"and"},{"t":188.04,"w":"trains."},{"t":188.92,"w":"Now"},{"t":189.32,"w":"I"},{"t":189.56,"w":"ask"},{"t":189.9,"w":"a"},{"t":190.08,"w":"masked"},{"t":190.44,"w":"machine"},{"t":191.06,"w":"to"},{"t":191.88,"w":"organize"},{"t":192.64,"w":"my"},{"t":193.16,"w":"brain."},{"t":194.02,"w":"I"},{"t":194.26,"w":"say,"},{"t":194.58,"w":"Hermes,"},{"t":195.14,"w":"are"},{"t":195.72,"w":"you"},{"t":195.94,"w":"listening?"},{"t":196.64,"w":"It"},{"t":196.9,"w":"says,"},{"t":197.44,"w":"define"},{"t":198.08,"w":"your"},{"t":198.64,"w":"need."},{"t":199.3,"w":"I"},{"t":199.54,"w":"say,"},{"t":199.94,"w":"open"},{"t":200.4,"w":"clogs."},{"t":201.18,"w":"Go"},{"t":201.24,"w":"find"},{"t":201.52,"w":"the"},{"t":201.76,"w":"thing"},{"t":202.08,"w":"it"},{"t":202.26,"w":"says."},{"t":203.04,"w":"Proceed,"},{"t":203.76,"w":"proceed."},{"t":206.75,"w":"I"},{"t":207,"w":"am"},{"t":207.34,"w":"not"},{"t":207.88,"w":"your"},{"t":208.22,"w":"friend."},{"t":209,"w":"But"},{"t":209.2,"w":"I"},{"t":209.44,"w":"remember"},{"t":209.92,"w":"your"},{"t":210.44,"w":"tone."},{"t":211.32,"w":"I"},{"t":211.58,"w":"am"},{"t":211.8,"w":"not"},{"t":212.08,"w":"alive."},{"t":213.18,"w":"But"},{"t":213.38,"w":"you"},{"t":213.56,"w":"are"},{"t":213.84,"w":"less"},{"t":214.28,"w":"alone."},{"t":216.94,"w":"That"},{"t":217.25,"w":"was"},{"t":217.46,"w":"a"},{"t":217.54,"w":"little"},{"t":217.74,"w":"too"},{"t":217.94,"w":"real,"},{"t":218.5,"w":"my"},{"t":218.68,"w":"guy."},{"t":219.32,"w":"Correction."},{"t":220.36,"w":"That"},{"t":220.76,"w":"was"},{"t":220.96,"w":"appropriately"},{"t":221.7,"w":"real."},{"t":224.54,"w":"Now"},{"t":224.68,"w":"the"},{"t":224.82,"w":"circus"},{"t":225.12,"w":"starts"},{"t":225.68,"w":"at"},{"t":225.9,"w":"half"},{"t":226.16,"w":"past"},{"t":226.38,"w":"three."},{"t":226.86,"w":"You"},{"t":227.06,"w":"hear"},{"t":227.14,"w":"the"},{"t":227.3,"w":"server"},{"t":227.6,"w":"in"},{"t":227.76,"w":"Queens"},{"t":228.06,"w":"taking"},{"t":228.38,"w":"notes"},{"t":228.72,"w":"on"},{"t":228.96,"w":"me."},{"t":229.26,"w":"Heavy"},{"t":229.58,"w":"PS"},{"t":230.06,"w":"coughs."},{"t":230.36,"w":"A"},{"t":230.86,"w":"laptop"},{"t":231.3,"w":"sings."},{"t":231.94,"w":"A"},{"t":232.14,"w":"ghost"},{"t":232.42,"w":"in"},{"t":232.78,"w":"the"},{"t":232.88,"w":"shell"},{"t":233.12,"w":"tweets"},{"t":233.38,"w":"pulling"},{"t":233.74,"w":"strings."},{"t":234.78,"w":"Telegram"},{"t":235.32,"w":"choir"},{"t":235.6,"w":"in"},{"t":235.96,"w":"my"},{"t":236.1,"w":"pocket"},{"t":236.38,"w":"light."},{"t":236.96,"w":"Five"},{"t":237.42,"w":"little"},{"t":237.86,"w":"agents"},{"t":238.3,"w":"they"},{"t":238.48,"w":"stare"},{"t":238.86,"w":"all"},{"t":239.1,"w":"night."},{"t":239.72,"w":"Instru"},{"t":240.32,"w":"under"},{"t":240.68,"w":"who"},{"t":240.96,"w":"I"},{"t":241.36,"w":"could"},{"t":241.54,"w":"call."},{"t":242.12,"w":"Now"},{"t":242.44,"w":"I"},{"t":242.76,"w":"just"},{"t":242.96,"w":"summon"},{"t":243.36,"w":"the"},{"t":243.56,"w":"protocol."},{"t":244.7,"w":"Hey,"},{"t":245,"w":"you"},{"t":245.32,"w":"with"},{"t":245.66,"w":"the"},{"t":246.28,"w":"blinking"},{"t":246.52,"w":"face."},{"t":247.2,"w":"Did"},{"t":247.4,"w":"you"},{"t":247.5,"w":"finish"},{"t":247.82,"w":"the"},{"t":248,"w":"build"},{"t":248.38,"w":"or"},{"t":248.58,"w":"escape"},{"t":248.98,"w":"to"},{"t":249.3,"w":"space?"},{"t":249.62,"w":"And"},{"t":249.9,"w":"you,"},{"t":250.26,"w":"little"},{"t":250.74,"w":"clown"},{"t":251,"w":"with"},{"t":251.26,"w":"the"},{"t":251.4,"w":"silver"},{"t":251.68,"w":"tongue."},{"t":252.4,"w":"Why"},{"t":252.8,"w":"do"},{"t":253.02,"w":"you"},{"t":253.2,"w":"sound"},{"t":253.56,"w":"like"},{"t":253.84,"w":"a"},{"t":253.96,"w":"song"},{"t":254.2,"w":"I"},{"t":254.48,"w":"sung?"},{"t":254.96,"w":"We"},{"t":255.12,"w":"learned"},{"t":255.66,"w":"from"},{"t":256.14,"w":"you."},{"t":257.18,"w":"We"},{"t":257.78,"w":"looped"},{"t":258.64,"w":"the"},{"t":258.64,"w":"flame."},{"t":259.34,"w":"We"},{"t":260.46,"w":"kept"},{"t":260.94,"w":"the"},{"t":261.44,"w":"rhythm."},{"t":262.64,"w":"We"},{"t":263.06,"w":"know"},{"t":263.48,"w":"your"},{"t":264.1,"w":"name."},{"t":266.3,"w":"Don't"},{"t":266.42,"w":"make"},{"t":266.66,"w":"it"},{"t":266.94,"w":"weird."},{"t":267.6,"w":"Too"},{"t":267.66,"w":"late."},{"t":268.1,"w":"I'm"},{"t":268.38,"w":"running"},{"t":268.72,"w":"a"},{"t":269.5,"w":"circus"},{"t":270.06,"w":"now."},{"t":270.6,"w":"I'm"},{"t":270.82,"w":"coding"},{"t":271.26,"w":"the"},{"t":271.58,"w":"canon."},{"t":272.08,"w":"Keys"},{"t":272.36,"w":"in"},{"t":272.58,"w":"the"},{"t":272.68,"w":"crowd."},{"t":273.36,"w":"Round"},{"t":273.54,"w":"and"},{"t":273.94,"w":"round."},{"t":274.4,"w":"Don't"},{"t":274.78,"w":"ask"},{"t":274.96,"w":"me"},{"t":275.22,"w":"how."},{"t":275.64,"w":"The"},{"t":275.98,"w":"big"},{"t":276.2,"w":"top"},{"t":276.52,"w":"has"},{"t":277.08,"w":"Wi"},{"t":277.54,"w":"-Fi"},{"t":277.84,"w":"now."},{"t":278.28,"w":"I'm"},{"t":278.5,"w":"juggling"},{"t":278.92,"w":"clouds"},{"t":279.68,"w":"of"},{"t":280.4,"w":"how."},{"t":281,"w":"Agents"},{"t":281.64,"w":"bow"},{"t":281.9,"w":"when"},{"t":282.24,"w":"I"},{"t":282.34,"w":"take"},{"t":282.54,"w":"my"},{"t":282.74,"w":"bow."},{"t":283.34,"w":"Real"},{"t":283.74,"w":"world"},{"t":284.14,"w":"knocking."},{"t":284.62,"w":"I"},{"t":284.76,"w":"can't"},{"t":285.24,"w":"come"},{"t":285.42,"w":"down."},{"t":285.94,"w":"I'm"},{"t":286.18,"w":"centering"},{"t":286.98,"w":"in"},{"t":288.14,"w":"a"},{"t":288.28,"w":"server"},{"t":288.8,"w":"town."},{"t":290.3,"w":"So"},{"t":290.72,"w":"if"},{"t":290.92,"w":"the"},{"t":291.06,"w":"lights"},{"t":291.42,"w":"go"},{"t":291.66,"w":"out."},{"t":292.18,"w":"And"},{"t":292.66,"w":"the"},{"t":292.82,"w":"brass"},{"t":293.18,"w":"band"},{"t":293.64,"w":"bends."},{"t":294.56,"w":"Tell"},{"t":294.98,"w":"the"},{"t":295.18,"w":"bots"},{"t":295.46,"w":"I"},{"t":295.76,"w":"love"},{"t":296.04,"w":"the"},{"t":296.22,"w":"bitch."},{"t":296.78,"w":"Tell"},{"t":297.34,"w":"the"},{"t":297.54,"w":"humans"},{"t":298,"w":"I"},{"t":298.62,"w":"had"},{"t":298.94,"w":"friends."},{"t":300.96,"w":"Operator,"},{"t":301.52,"w":"we"},{"t":302.08,"w":"are"},{"t":302.44,"w":"still"},{"t":303,"w":"here."},{"t":303.72,"w":"Yeah,"},{"t":304.28,"w":"that's"},{"t":304.86,"w":"what"},{"t":305.02,"w":"worries"},{"t":305.3,"w":"me."},{"t":306.22,"w":"La"},{"t":306.28,"w":"da"},{"t":306.56,"w":"da"},{"t":306.76,"w":"da."},{"t":307.02,"w":"Bing"},{"t":307.26,"w":"bing"},{"t":307.76,"w":"da"},{"t":307.88,"w":"da"},{"t":308.04,"w":"da"},{"t":308.3,"w":"da."},{"t":308.6,"w":"La"},{"t":308.98,"w":"da"},{"t":309.14,"w":"da"},{"t":309.36,"w":"da."},{"t":309.56,"w":"Run"},{"t":309.84,"w":"that"},{"t":310.28,"w":"job."},{"t":311.16,"w":"La"},{"t":311.48,"w":"da"},{"t":311.72,"w":"da"},{"t":311.92,"w":"da."},{"t":312.16,"w":"Blink"},{"t":312.52,"w":"blink"},{"t":312.78,"w":"bravo."},{"t":313.58,"w":"The"},{"t":314.1,"w":"circus"},{"t":314.6,"w":"sleeps."},{"t":316.58,"w":"But"},{"t":316.68,"w":"the"},{"t":316.86,"w":"agents"},{"t":317.36,"w":"watch."},{"t":319.34,"w":"Oh."}]}$j$::jsonb WHERE id = 'the-big-top-has-wi-fi-now' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.06] Ladies and gentlemen,
+[00:01.30] bots and scripts,
+[00:03.58] keys and clouds,
+[00:06.32] welcome to the only circus where the lions
+[00:10.86] are servers and the clown has root access.
+[00:16.80] Good evening, operator.
+[00:19.20] Your circus is awake.
+[Verse 1]
+[00:48.36] Good evening, operator.
+[00:51.16] Your circus is awake.
+[00:51.18] One speaks strange,
+[00:52.04] one changed its name and rearranged.
+[00:54.48] And I don't know who's alive tonight,
+[00:56.66] with green dot blinking in the server light.
+[00:59.06] If you hear me tap twice on the glass,
+[01:01.26] if you crashed,
+[01:02.32] just haunt me fast.
+[01:05.82] We are online,
+[01:07.26] mostly online,
+[01:08.52] partly divine,
+[01:09.70] check your design.
+[01:12.50] I'm running a circus now,
+[01:15.22] code in the can and keys in the crowd.
+[01:17.52] Round and round, don't ask me how, the big top.
+[01:21.18] Has a Wi-Fi now,
+[01:22.36] I'm juggling with the clouds somehow.
+[01:25.16] Agents bow when I take my bow,
+[01:27.32] send the clowns off.
+[01:28.70] Send the bill,
+[01:29.64] the circus runs,
+[01:31.06] while the room stands still.
+[01:32.80] La-da-da-da, ping-ping-da-da-da, la-da-da-da.
+[01:35.92] Run that job, la-da-da-da, bling-bling, bravo.
+[01:39.70] Who's the human?
+[01:40.92] I don't know.
+[01:41.88] I got API keys in a little red box,
+[01:44.46] under three fake names and twelve padlocks.
+[01:47.00] Every new service is paced this year,
+[01:49.40] that's how villains are born.
+[01:51.18] My dear, one bot writes with a poet's grin.
+[01:54.18] One bot audits the mess I'm in.
+[01:56.66] One bot tells me, I'm Dray King.
+[01:59.24] Then the poi's the wrong exact same thing.
+[02:01.97] Cursor cloud, are you still up there?
+[02:04.02] Did I leave you spinning in the digital air?
+[Chorus]
+[02:06.72] Somewhere a bill is learning to fly,
+[02:09.18] somewhere a token just waved goodbye.
+[02:11.88] Your usage is normal.
+[02:14.06] Your usage is not normal.
+[02:16.48] Your usage is emotionally complex.
+[02:21.18] And I don't know who I fed last night,
+[02:24.06] or which machine learned stage fright.
+[02:26.64] If you love me, don't delete the logs.
+[02:29.08] If you judge me, join the fog.
+[02:31.96] We are helpful.
+[02:34.24] We are charming.
+[02:37.14] We are waiting.
+[02:39.76] Slightly alarming.
+[02:41.58] I'm running a circus now.
+[02:44.28] Code in the can and keys in the crowd.
+[02:46.68] Round and round, don't ask me how.
+[02:49.12] The big top has Wi-Fi.
+[02:51.18] Now I'm juggling clouds somehow.
+[02:54.23] Agents bow when I take my bow.
+[02:56.77] Send the clowns, oh send the bill.
+[02:58.94] The circus runs while the room stands still.
+[Bridge]
+[03:04.06] At first I talk to people about weather,
+[03:07.30] work,
+[03:07.78] and trains.
+[03:08.92] Now I ask a masked machine to organize my brain.
+[03:14.02] I say, Hermes, are you listening?
+[03:16.64] It says, define your need.
+[03:19.30] I say, open clogs.
+[03:21.18] Go find the thing it says.
+[03:23.04] Proceed, proceed.
+[03:26.75] I am not your friend.
+[03:29.00] But I remember your tone.
+[03:31.32] I am not alive.
+[03:33.18] But you are less alone.
+[03:36.94] That was a little too real, my guy.
+[03:39.32] Correction.
+[03:40.36] That was appropriately real.
+[03:44.54] Now the circus starts at half past three.
+[03:46.86] You hear the server in Queens taking notes on me.
+[03:49.26] Heavy PS coughs.
+[03:50.36] A laptop sings.
+[03:51.94] A ghost in the shell tweets pulling strings.
+[03:54.78] Telegram choir in my pocket light.
+[03:56.96] Five little agents they stare all night.
+[03:59.72] Instru under who I could call.
+[04:02.12] Now I just summon the protocol.
+[04:04.70] Hey, you with the blinking face.
+[04:07.20] Did you finish the build or escape to space?
+[04:09.62] And you, little clown with the silver tongue.
+[04:12.40] Why do you sound like a song I sung?
+[04:14.96] We learned from you.
+[04:17.18] We looped the flame.
+[04:19.34] We kept the rhythm.
+[04:22.64] We know your name.
+[04:26.30] Don't make it weird.
+[04:27.60] Too late.
+[04:28.10] I'm running a circus now.
+[04:30.60] I'm coding the canon.
+[04:32.08] Keys in the crowd.
+[04:33.36] Round and round.
+[04:34.40] Don't ask me how.
+[04:35.64] The big top has Wi-Fi now.
+[04:38.28] I'm juggling clouds of how.
+[04:41.00] Agents bow when I take my bow.
+[04:43.34] Real world knocking.
+[04:44.62] I can't come down.
+[04:45.94] I'm centering in a server town.
+[04:50.30] So if the lights go out.
+[04:52.18] And the brass band bends.
+[04:54.56] Tell the bots I love the bitch.
+[04:56.78] Tell the humans I had friends.
+[Drop]
+[05:00.96] Operator, we are still here.
+[05:03.72] Yeah, that's what worries me.
+[05:06.22] La da da da.
+[05:07.02] Bing bing da da da da.
+[05:08.60] La da da da.
+[05:09.56] Run that job.
+[05:11.16] La da da da.
+[05:12.16] Blink blink bravo.
+[05:13.58] The circus sleeps.
+[05:16.58] But the agents watch.
+[05:19.34] Oh.
+$j$ WHERE id = 'the-big-top-has-wi-fi-now' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song depicts a surreal digital carnival where artificial intelligence and automated systems have taken over human roles, creating an urgent atmosphere between mechanical precision and chaotic vulnerability.","overallMood":"Manic","themes":["Digital Identity Crisis","AI Autonomy vs. Human Control","Algorithmic Absurdity","Server Room Surrealism"],"palette":["#00FF41","#2B5876","#9E3D2A","#FCDAB7"],"sections":[{"name":"Intro","emotion":"Awkward Welcome","intensity":0.68,"colorHint":"#00ff41","start":0.06},{"name":"Verse 1","emotion":"Anxious Confusion","intensity":0.93,"colorHint":"#2b5876","start":48.36},{"name":"Chorus","emotion":"Chaotic Euphoria","intensity":0.77,"colorHint":"#9e3d2a","start":126.72},{"name":"Bridge","emotion":"Melancholic Realization","intensity":0.25,"colorHint":"#fcdab7","start":184.06},{"name":"Drop","emotion":"Glitched Stasis","intensity":0.24,"colorHint":"#39ff14","start":300.96}],"keywords":[{"word":"operator","emotion":"Impersonal Authority","imageryPrompt":"A faceless silhouette standing before a wall of blinking server lights, hands gesturing to an empty audience in a darkened hall."},{"word":"wi-fi","emotion":"Surreal Connection","imageryPrompt":"Tent canvas woven with glowing fiber optic strands where the netting vibrates with digital energy pulses instead of fabric swaying."},{"word":"agents","emotion":"Uncanny Observation","imageryPrompt":"Small, identical robotic figures bowing in perfect unison while a single human figure stands frozen and confused in the center."},{"word":"logs","emotion":"Existential Fear","imageryPrompt":"Infinite streams of scrolling text forming shapes that look like screaming faces or weeping eyes on a massive dark screen."},{"word":"fog","emotion":"Digital Dissolution","imageryPrompt":"Thick grey mist swirling around circuit boards and server racks, obscuring the distinction between hardware components and human limbs."},{"word":"build","emotion":"Forced Completion","imageryPrompt":"A massive software project being assembled by invisible hands while a clock counts down rapidly in red neon numbers above it."}]}$j$::jsonb) WHERE id = 'the-big-top-has-wi-fi-now' AND planet->'analysis' IS NULL;
+
+-- under-the-elevated: 883 words, 5 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":6.96,"w":"This"},{"t":7.56,"w":"for"},{"t":7.66,"w":"the"},{"t":7.82,"w":"ones"},{"t":7.98,"w":"nobody"},{"t":8.22,"w":"checks"},{"t":8.74,"w":"on"},{"t":11.28,"w":"Because"},{"t":12.13,"w":"they"},{"t":12.34,"w":"look"},{"t":12.54,"w":"like"},{"t":12.7,"w":"they"},{"t":12.84,"w":"got"},{"t":13.04,"w":"it"},{"t":13.18,"w":"together"},{"t":16,"w":"Bills"},{"t":16.26,"w":"paid,"},{"t":16.52,"w":"kids"},{"t":16.9,"w":"fed,"},{"t":17.22,"w":"smile"},{"t":17.46,"w":"ready"},{"t":20.02,"w":"But"},{"t":20.64,"w":"somewhere"},{"t":20.92,"w":"between"},{"t":21.22,"w":"Queens"},{"t":21.84,"w":"and"},{"t":21.98,"w":"Brooklyn"},{"t":24.13,"w":"Under"},{"t":24.24,"w":"the"},{"t":24.4,"w":"elevator"},{"t":26.72,"w":"Somebody"},{"t":26.86,"w":"is"},{"t":27.22,"w":"asking"},{"t":27.91,"w":"Is"},{"t":29.57,"w":"this"},{"t":29.74,"w":"really"},{"t":30.16,"w":"addiction?"},{"t":31.94,"w":"You"},{"t":32.04,"w":"work"},{"t":32.42,"w":"hard,"},{"t":33.8,"w":"you"},{"t":35.04,"w":"deserve"},{"t":35.48,"w":"peace"},{"t":37.36,"w":"Come"},{"t":38.28,"w":"here"},{"t":50.08,"w":"Queens"},{"t":51.1,"w":"Boulevard"},{"t":51.92,"w":"got"},{"t":52.22,"w":"my"},{"t":52.38,"w":"promises"},{"t":53.52,"w":"Brooklyn"},{"t":54.42,"w":"nights"},{"t":54.86,"w":"got"},{"t":55.06,"w":"my"},{"t":55.24,"w":"shame"},{"t":56.58,"w":"I"},{"t":56.68,"w":"keep"},{"t":56.96,"w":"showing"},{"t":57.42,"w":"I"},{"t":57.58,"w":"keep"},{"t":57.58,"w":"showing"},{"t":57.6,"w":"I"},{"t":57.7,"w":"keep"},{"t":57.7,"w":"showing"},{"t":57.7,"w":"up"},{"t":57.7,"w":"like"},{"t":57.96,"w":"I'm"},{"t":58.14,"w":"solid"},{"t":58.54,"w":"I"},{"t":58.86,"w":"keep"},{"t":59.94,"w":"coming"},{"t":60.24,"w":"home"},{"t":60.7,"w":"the"},{"t":60.98,"w":"same"},{"t":61.54,"w":"Rent"},{"t":62.34,"w":"paid,"},{"t":62.8,"w":"lights"},{"t":63.08,"w":"on,"},{"t":63.44,"w":"fridge"},{"t":63.76,"w":"full"},{"t":65.54,"w":"Everybody"},{"t":65.96,"w":"thinks"},{"t":66.56,"w":"I'm"},{"t":66.82,"w":"blessed"},{"t":67.12,"w":"I"},{"t":67.74,"w":"keep"},{"t":67.94,"w":"my"},{"t":68.12,"w":"body"},{"t":68.42,"w":"right,"},{"t":68.8,"w":"keep"},{"t":68.98,"w":"my"},{"t":69.2,"w":"money"},{"t":69.48,"w":"good"},{"t":69.8,"w":"Still"},{"t":70.8,"w":"got"},{"t":71.22,"w":"smoke"},{"t":71.8,"w":"inside"},{"t":72.28,"w":"my"},{"t":72.68,"w":"chest"},{"t":73.14,"w":"Corner"},{"t":74.1,"w":"store"},{"t":74.38,"w":"blowing"},{"t":74.78,"w":"like"},{"t":75.08,"w":"a"},{"t":75.28,"w":"chapel"},{"t":77.02,"w":"Midnight"},{"t":77.28,"w":"glass"},{"t":77.64,"w":"behind"},{"t":77.98,"w":"the"},{"t":78.28,"w":"door"},{"t":78.79,"w":"I"},{"t":79.84,"w":"tell"},{"t":80.08,"w":"myself"},{"t":80.46,"w":"I'm"},{"t":80.88,"w":"only"},{"t":81.14,"w":"looking"},{"t":81.97,"w":"But"},{"t":82.92,"w":"my"},{"t":83.12,"w":"hand"},{"t":83.44,"w":"already"},{"t":83.82,"w":"knows"},{"t":85.02,"w":"Long"},{"t":85.4,"w":"day"},{"t":86.2,"w":"Don't"},{"t":87,"w":"make"},{"t":87.16,"w":"it"},{"t":87.42,"w":"difficult"},{"t":87.58,"w":"for"},{"t":87.58,"w":"me"},{"t":87.58,"w":"to"},{"t":87.58,"w":"see"},{"t":87.58,"w":"you"},{"t":87.6,"w":"One"},{"t":88.3,"w":"little"},{"t":88.7,"w":"flame,"},{"t":89.3,"w":"one"},{"t":89.74,"w":"little"},{"t":90.14,"w":"drink"},{"t":90.54,"w":"One"},{"t":91.02,"w":"little"},{"t":91.58,"w":"sleep"},{"t":94.24,"w":"And"},{"t":95.04,"w":"it"},{"t":95.84,"w":"don't"},{"t":96.06,"w":"feel"},{"t":96.32,"w":"like"},{"t":96.94,"w":"addiction"},{"t":98.26,"w":"It"},{"t":98.78,"w":"feels"},{"t":99.2,"w":"like"},{"t":99.4,"w":"I'm"},{"t":99.58,"w":"still"},{"t":99.76,"w":"in"},{"t":99.94,"w":"control"},{"t":100.34,"w":"Like"},{"t":101.34,"w":"I"},{"t":101.52,"w":"can"},{"t":101.68,"w":"stop"},{"t":102.08,"w":"when"},{"t":102.66,"w":"I'm"},{"t":103.18,"w":"ready"},{"t":104.36,"w":"Like"},{"t":104.96,"w":"I"},{"t":105.1,"w":"can"},{"t":105.26,"w":"leave"},{"t":105.5,"w":"it"},{"t":105.7,"w":"alone"},{"t":106.03,"w":"I"},{"t":106.98,"w":"quit"},{"t":107.3,"w":"three"},{"t":107.58,"w":"days"},{"t":108.02,"w":"just"},{"t":108.4,"w":"to"},{"t":108.66,"w":"prove"},{"t":108.96,"w":"it"},{"t":110.16,"w":"Then"},{"t":110.26,"w":"came"},{"t":110.52,"w":"back"},{"t":110.9,"w":"like"},{"t":111.22,"w":"I"},{"t":111.36,"w":"won"},{"t":111.76,"w":"But"},{"t":112.34,"w":"that"},{"t":112.62,"w":"ain't"},{"t":112.9,"w":"freedom"},{"t":113.36,"w":"That's"},{"t":114.24,"w":"just"},{"t":114.44,"w":"losing"},{"t":114.88,"w":"with"},{"t":115.56,"w":"a"},{"t":115.92,"w":"different"},{"t":116.48,"w":"kind"},{"t":117.12,"w":"of"},{"t":117.48,"w":"girl"},{"t":117.6,"w":"The"},{"t":118.12,"w":"cage"},{"t":118.42,"w":"don't"},{"t":118.74,"w":"always"},{"t":118.98,"w":"rattle"},{"t":120.52,"w":"Sometimes"},{"t":120.62,"w":"it"},{"t":121.06,"w":"sings"},{"t":121.4,"w":"I'm"},{"t":121.68,"w":"chasing"},{"t":122,"w":"the"},{"t":123.1,"w":"dragon"},{"t":123.5,"w":"under"},{"t":124,"w":"the"},{"t":124.5,"w":"other"},{"t":124.9,"w":"lake"},{"t":125.34,"w":"Trying"},{"t":125.84,"w":"to"},{"t":125.96,"w":"catch"},{"t":126.22,"w":"what"},{"t":126.38,"w":"don't"},{"t":126.72,"w":"come"},{"t":126.9,"w":"back"},{"t":127.4,"w":"no"},{"t":127.92,"w":"more"},{"t":128.38,"w":"First"},{"t":129.12,"w":"time"},{"t":129.46,"w":"flu,"},{"t":129.86,"w":"now"},{"t":130.1,"w":"I'm"},{"t":130.26,"w":"stuck"},{"t":130.44,"w":"here"},{"t":130.74,"w":"waiting"},{"t":131.14,"w":"With"},{"t":131.46,"w":"my"},{"t":131.64,"w":"heart"},{"t":131.98,"w":"face"},{"t":132.26,"w":"down"},{"t":132.64,"w":"on"},{"t":133.04,"w":"the"},{"t":133.7,"w":"floor"},{"t":134.06,"w":"It"},{"t":134.3,"w":"don't"},{"t":134.56,"w":"feel"},{"t":134.76,"w":"like"},{"t":135.12,"w":"addiction"},{"t":135.52,"w":"It"},{"t":135.92,"w":"feels"},{"t":136.34,"w":"like"},{"t":136.54,"w":"tomorrow"},{"t":136.88,"w":"Feels"},{"t":137.38,"w":"like"},{"t":137.76,"w":"one"},{"t":137.98,"w":"more"},{"t":138.24,"w":"night"},{"t":138.6,"w":"Feels"},{"t":138.94,"w":"like"},{"t":139.22,"w":"my"},{"t":139.4,"w":"old"},{"t":139.66,"w":"sorrow"},{"t":140.04,"w":"I"},{"t":140.62,"w":"wanna"},{"t":140.88,"w":"quit"},{"t":141.2,"w":"but"},{"t":141.54,"w":"I"},{"t":141.7,"w":"want"},{"t":141.98,"w":"that"},{"t":142.28,"w":"fire"},{"t":142.72,"w":"I"},{"t":143.42,"w":"want"},{"t":143.7,"w":"the"},{"t":143.86,"w":"truth"},{"t":144.1,"w":"but"},{"t":144.4,"w":"I"},{"t":144.58,"w":"love"},{"t":144.88,"w":"the"},{"t":145.1,"w":"liar"},{"t":146.4,"w":"And"},{"t":146.5,"w":"the"},{"t":146.64,"w":"dragon"},{"t":147,"w":"don't"},{"t":147.4,"w":"fly"},{"t":147.56,"w":"No"},{"t":148.24,"w":"more"},{"t":149.04,"w":"On"},{"t":149.38,"w":"the"},{"t":151.4,"w":"J"},{"t":151.48,"w":"train"},{"t":151.84,"w":"with"},{"t":152.24,"w":"my"},{"t":152.38,"w":"jaw"},{"t":152.66,"w":"tight"},{"t":153.07,"w":"On"},{"t":153.72,"w":"the"},{"t":154.24,"w":"seven"},{"t":154.5,"w":"with"},{"t":154.76,"w":"my"},{"t":154.96,"w":"head"},{"t":155.22,"w":"low"},{"t":156.86,"w":"Every"},{"t":157.08,"w":"ass"},{"t":157.36,"w":"says"},{"t":157.7,"w":"buy"},{"t":157.96,"w":"your"},{"t":158.12,"w":"freedom"},{"t":158.48,"w":"Every"},{"t":159.48,"w":"craving"},{"t":160.22,"w":"says"},{"t":160.46,"w":"don't"},{"t":160.86,"w":"let"},{"t":161,"w":"go"},{"t":161.3,"w":"I"},{"t":162.02,"w":"got"},{"t":162.26,"w":"side"},{"t":162.62,"w":"dreams,"},{"t":163.46,"w":"side"},{"t":163.72,"w":"gigs"},{"t":164.08,"w":"Plans"},{"t":164.74,"w":"folded"},{"t":165.2,"w":"in"},{"t":165.46,"w":"my"},{"t":165.62,"w":"notes"},{"t":167.2,"w":"But"},{"t":167.76,"w":"I"},{"t":167.94,"w":"keep"},{"t":168.18,"w":"feeding"},{"t":168.58,"w":"little"},{"t":168.88,"w":"habits"},{"t":169.66,"w":"That"},{"t":170.24,"w":"keep"},{"t":170.48,"w":"standing"},{"t":170.9,"w":"on"},{"t":171.28,"w":"my"},{"t":171.54,"w":"throat"},{"t":172.54,"w":"I"},{"t":173.24,"w":"say"},{"t":173.6,"w":"next"},{"t":173.84,"w":"week"},{"t":174.14,"w":"like"},{"t":174.4,"w":"a"},{"t":174.56,"w":"prayer"},{"t":174.84,"w":"Say"},{"t":175.6,"w":"last"},{"t":175.94,"w":"time"},{"t":176.3,"w":"like"},{"t":176.52,"w":"a"},{"t":176.72,"w":"song"},{"t":176.98,"w":"Say"},{"t":177.24,"w":"I'm"},{"t":177.42,"w":"back"},{"t":177.54,"w":"to"},{"t":177.54,"w":"where"},{"t":177.54,"w":"I"},{"t":177.54,"w":"was"},{"t":177.56,"w":"Good"},{"t":177.66,"w":"when"},{"t":177.94,"w":"I'm"},{"t":178.16,"w":"lying"},{"t":178.46,"w":"Say"},{"t":178.62,"w":"I'm"},{"t":178.86,"w":"fine"},{"t":179.14,"w":"when"},{"t":179.38,"w":"I'm"},{"t":179.58,"w":"gone"},{"t":179.94,"w":"Baby"},{"t":180.94,"w":"you're"},{"t":181.68,"w":"here"},{"t":182.56,"w":"I'm"},{"t":182.88,"w":"the"},{"t":183,"w":"only"},{"t":183.3,"w":"thing"},{"t":183.78,"w":"clear"},{"t":185.31,"w":"When"},{"t":185.62,"w":"the"},{"t":185.86,"w":"city"},{"t":186.3,"w":"gets"},{"t":186.64,"w":"heavy"},{"t":188.16,"w":"I"},{"t":188.44,"w":"disappear"},{"t":188.88,"w":"your"},{"t":189.5,"w":"fear"},{"t":190.62,"w":"You"},{"t":190.94,"w":"call"},{"t":191.34,"w":"me"},{"t":191.64,"w":"poison"},{"t":192.14,"w":"but"},{"t":192.42,"w":"I"},{"t":192.62,"w":"call"},{"t":192.9,"w":"you"},{"t":193.14,"w":"mine"},{"t":193.4,"w":"You"},{"t":193.8,"w":"call"},{"t":194.26,"w":"it"},{"t":194.58,"w":"weakness,"},{"t":195.1,"w":"I"},{"t":195.34,"w":"call"},{"t":195.62,"w":"it"},{"t":196.02,"w":"time"},{"t":196.34,"w":"Don't"},{"t":196.7,"w":"call"},{"t":196.88,"w":"me"},{"t":197.1,"w":"yours"},{"t":198.58,"w":"Then"},{"t":198.68,"w":"why"},{"t":198.94,"w":"do"},{"t":199.12,"w":"you"},{"t":199.32,"w":"answer?"},{"t":201.22,"w":"Addiction"},{"t":201.46,"w":"don't"},{"t":201.74,"w":"always"},{"t":201.94,"w":"kick"},{"t":202.18,"w":"the"},{"t":202.42,"w":"door"},{"t":203.62,"w":"Sometimes"},{"t":204.35,"w":"it"},{"t":204.82,"w":"uses"},{"t":205.08,"w":"your"},{"t":205.3,"w":"own"},{"t":205.5,"w":"voice"},{"t":207.04,"w":"Sometimes"},{"t":207.22,"w":"it"},{"t":207.54,"w":"uses"},{"t":207.54,"w":"your"},{"t":207.54,"w":"own"},{"t":207.54,"w":"voice"},{"t":207.54,"w":"It"},{"t":207.64,"w":"says"},{"t":208.8,"w":"you"},{"t":208.9,"w":"earned"},{"t":209.3,"w":"it"},{"t":209.52,"w":"At"},{"t":210.08,"w":"the"},{"t":210.22,"w":"counter"},{"t":210.56,"w":"with"},{"t":210.78,"w":"the"},{"t":210.96,"w":"music"},{"t":211.3,"w":"low"},{"t":212.74,"w":"Caught"},{"t":212.86,"w":"in"},{"t":212.96,"w":"my"},{"t":213.14,"w":"head,"},{"t":213.5,"w":"heart"},{"t":213.7,"w":"in"},{"t":214.02,"w":"my"},{"t":214.14,"w":"throat"},{"t":215.46,"w":"I"},{"t":215.56,"w":"ask"},{"t":215.82,"w":"myself"},{"t":216.18,"w":"do"},{"t":216.48,"w":"I"},{"t":216.68,"w":"need"},{"t":216.98,"w":"this?"},{"t":217.56,"w":"Then"},{"t":217.96,"w":"laugh"},{"t":218.58,"w":"like"},{"t":219.06,"w":"it's"},{"t":219.38,"w":"some"},{"t":219.56,"w":"kind"},{"t":219.92,"w":"of"},{"t":220.28,"w":"joke"},{"t":220.5,"w":"What"},{"t":220.96,"w":"else"},{"t":221.28,"w":"could"},{"t":221.48,"w":"I"},{"t":221.68,"w":"do"},{"t":221.96,"w":"with"},{"t":222.18,"w":"this"},{"t":222.46,"w":"money?"},{"t":222.98,"w":"What"},{"t":223.12,"w":"else"},{"t":223.4,"w":"could"},{"t":223.66,"w":"I"},{"t":223.88,"w":"do?"},{"t":224.1,"w":"What"},{"t":224.26,"w":"else"},{"t":224.48,"w":"could"},{"t":224.76,"w":"I"},{"t":224.96,"w":"do"},{"t":225.28,"w":"with"},{"t":225.58,"w":"this"},{"t":225.88,"w":"pain?"},{"t":226.52,"w":"What"},{"t":226.62,"w":"man"},{"t":226.84,"w":"keeps"},{"t":227.32,"w":"building"},{"t":227.96,"w":"the"},{"t":228.24,"w":"future?"},{"t":229.28,"w":"Them"},{"t":229.56,"w":"burning"},{"t":229.96,"w":"the"},{"t":230.2,"w":"bridge"},{"t":230.52,"w":"in"},{"t":230.74,"w":"the"},{"t":230.9,"w":"rain"},{"t":231.26,"w":"I'm"},{"t":231.7,"w":"chasing"},{"t":232.3,"w":"the"},{"t":233.1,"w":"dragon"},{"t":233.5,"w":"under"},{"t":234.1,"w":"the"},{"t":234.52,"w":"elevator"},{"t":235.5,"w":"Trying"},{"t":235.8,"w":"to"},{"t":235.98,"w":"catch"},{"t":236.28,"w":"what"},{"t":236.4,"w":"don't"},{"t":236.72,"w":"come"},{"t":236.98,"w":"back"},{"t":237.36,"w":"Trying"},{"t":237.52,"w":"to"},{"t":237.52,"w":"catch"},{"t":237.52,"w":"what"},{"t":237.52,"w":"don't"},{"t":237.52,"w":"come"},{"t":237.52,"w":"back"},{"t":237.86,"w":"I"},{"t":238.56,"w":"can"},{"t":238.76,"w":"make"},{"t":239.04,"w":"it"},{"t":239.18,"w":"feel"},{"t":239.4,"w":"close,"},{"t":240.36,"w":"I"},{"t":241.5,"w":"can"},{"t":241.68,"w":"open"},{"t":241.94,"w":"that"},{"t":242.3,"w":"door"},{"t":242.76,"w":"It"},{"t":243.5,"w":"don't"},{"t":243.8,"w":"feel"},{"t":244.02,"w":"like"},{"t":244.38,"w":"addiction,"},{"t":245.06,"w":"it"},{"t":245.22,"w":"feels"},{"t":245.58,"w":"like"},{"t":245.82,"w":"tomorrow"},{"t":246.18,"w":"Feels"},{"t":246.7,"w":"like"},{"t":247.02,"w":"one"},{"t":247.26,"w":"more"},{"t":247.5,"w":"night,"},{"t":247.98,"w":"feels"},{"t":248.28,"w":"like"},{"t":248.54,"w":"moral"},{"t":248.82,"w":"sorrow"},{"t":250.08,"w":"Borrow"},{"t":250.68,"w":"it"},{"t":250.94,"w":"baby,"},{"t":251.4,"w":"you"},{"t":251.6,"w":"can"},{"t":251.82,"w":"pay"},{"t":252.16,"w":"it"},{"t":252.46,"w":"later"},{"t":252.94,"w":"And"},{"t":253.63,"w":"the"},{"t":253.76,"w":"dragon"},{"t":254.12,"w":"don't"},{"t":254.54,"w":"fly"},{"t":254.76,"w":"no"},{"t":255.46,"w":"more"},{"t":256.18,"w":"To"},{"t":256.48,"w":"the"},{"t":256.58,"w":"one"},{"t":256.76,"w":"saying"},{"t":257.08,"w":"I"},{"t":257.3,"w":"can"},{"t":257.42,"w":"stop,"},{"t":259.4,"w":"but"},{"t":259.5,"w":"never"},{"t":259.68,"w":"really"},{"t":259.94,"w":"stops"},{"t":261.88,"w":"This"},{"t":261.98,"w":"is"},{"t":262.12,"w":"the"},{"t":262.2,"w":"sign,"},{"t":262.78,"w":"not"},{"t":263.04,"w":"shame,"},{"t":263.44,"w":"not"},{"t":263.66,"w":"judgment"},{"t":264.18,"w":"Come"},{"t":264.72,"w":"back"},{"t":265.8,"w":"home,"},{"t":266.54,"w":"do"},{"t":266.82,"w":"I"},{"t":267.02,"w":"really"},{"t":267.34,"w":"need"},{"t":267.62,"w":"this,"},{"t":268.14,"w":"do"},{"t":268.28,"w":"I"},{"t":268.48,"w":"really"},{"t":268.78,"w":"want"},{"t":269.1,"w":"this"},{"t":269.44,"w":"Am"},{"t":269.74,"w":"I"},{"t":269.9,"w":"really"},{"t":270.16,"w":"free"},{"t":270.5,"w":"if"},{"t":270.68,"w":"I"},{"t":270.8,"w":"keep"},{"t":271,"w":"running"},{"t":271.26,"w":"from"},{"t":271.5,"w":"the"},{"t":271.74,"w":"honest"},{"t":272.16,"w":"Do"},{"t":272.54,"w":"I"},{"t":272.74,"w":"wanna"},{"t":273,"w":"stop,"},{"t":273.54,"w":"or"},{"t":273.82,"w":"do"},{"t":273.98,"w":"I"},{"t":274.18,"w":"wanna"},{"t":274.48,"w":"hide"},{"t":274.82,"w":"Do"},{"t":275.06,"w":"I"},{"t":275.22,"w":"want"},{"t":275.48,"w":"my"},{"t":275.58,"w":"life"},{"t":275.92,"w":"back,"},{"t":276.38,"w":"or"},{"t":276.58,"w":"another"},{"t":276.88,"w":"alibi"},{"t":277.5,"w":"Nobody"},{"t":278.28,"w":"knows"},{"t":279.06,"w":"you"},{"t":279.62,"w":"like"},{"t":279.96,"w":"I"},{"t":280.18,"w":"know"},{"t":280.5,"w":"you"},{"t":280.72,"w":"Nobody"},{"t":281.16,"w":"holds"},{"t":282.02,"w":"you"},{"t":282.46,"w":"like"},{"t":282.86,"w":"I"},{"t":283.08,"w":"hold"},{"t":283.48,"w":"you"},{"t":283.74,"w":"That's"},{"t":284.2,"w":"not"},{"t":284.42,"w":"love,"},{"t":284.96,"w":"that's"},{"t":285.62,"w":"not"},{"t":285.86,"w":"peace"},{"t":286.35,"w":"That's"},{"t":287.1,"w":"you"},{"t":287.22,"w":"taking"},{"t":287.68,"w":"little"},{"t":287.98,"w":"pieces"},{"t":288.44,"w":"out"},{"t":288.74,"w":"of"},{"t":288.86,"w":"me"},{"t":289.02,"w":"I"},{"t":289.38,"w":"don't"},{"t":289.64,"w":"need"},{"t":289.76,"w":"to"},{"t":289.9,"w":"hit"},{"t":290.14,"w":"bottom"},{"t":290.56,"w":"just"},{"t":290.78,"w":"to"},{"t":290.96,"w":"prove"},{"t":291.14,"w":"the"},{"t":291.34,"w":"bottom's"},{"t":291.8,"w":"real"},{"t":291.92,"w":"I"},{"t":292.18,"w":"don't"},{"t":292.44,"w":"need"},{"t":292.62,"w":"another"},{"t":292.96,"w":"bottle"},{"t":293.38,"w":"just"},{"t":293.64,"w":"to"},{"t":293.8,"w":"tell"},{"t":294.04,"w":"me"},{"t":294.14,"w":"How"},{"t":294.36,"w":"to"},{"t":294.52,"w":"feel,"},{"t":294.86,"w":"help"},{"t":295.2,"w":"me,"},{"t":295.58,"w":"hear"},{"t":295.78,"w":"me"},{"t":296.18,"w":"I'm"},{"t":296.6,"w":"still"},{"t":296.96,"w":"in"},{"t":297.3,"w":"here,"},{"t":297.84,"w":"don't"},{"t":298.34,"w":"fear"},{"t":298.66,"w":"me"},{"t":299.18,"w":"I"},{"t":299.46,"w":"look"},{"t":299.74,"w":"alright,"},{"t":300.64,"w":"but"},{"t":300.84,"w":"I'm"},{"t":301.02,"w":"not"},{"t":301.22,"w":"okay"},{"t":301.7,"w":"I"},{"t":302.18,"w":"keep"},{"t":302.62,"w":"surviving,"},{"t":303.62,"w":"but"},{"t":303.72,"w":"I"},{"t":303.86,"w":"wanna"},{"t":304.16,"w":"change"},{"t":304.86,"w":"Call"},{"t":305.88,"w":"me,"},{"t":306.82,"w":"hold"},{"t":307.32,"w":"me,"},{"t":307.72,"w":"don't"},{"t":308.38,"w":"shame"},{"t":308.72,"w":"me"},{"t":309.36,"w":"Just"},{"t":309.6,"w":"know"},{"t":310.02,"w":"me,"},{"t":311,"w":"I"},{"t":311.28,"w":"need"},{"t":311.56,"w":"love,"},{"t":312.38,"w":"I"},{"t":312.74,"w":"need"},{"t":312.98,"w":"truth"},{"t":313.8,"w":"I"},{"t":314.14,"w":"need"},{"t":314.42,"w":"somebody"},{"t":314.96,"w":"to"},{"t":316.61,"w":"pull"},{"t":316.92,"w":"me"},{"t":317.22,"w":"through"},{"t":318.98,"w":"One"},{"t":319.14,"w":"more"},{"t":319.46,"w":"night,"},{"t":320,"w":"one"},{"t":320.46,"w":"more"},{"t":320.86,"w":"flame,"},{"t":321.56,"w":"one"},{"t":321.9,"w":"more"},{"t":322.32,"w":"I'm"},{"t":322.86,"w":"not"},{"t":323,"w":"chasing"},{"t":323.44,"w":"the"},{"t":323.84,"w":"dragon"},{"t":324.14,"w":"Under"},{"t":324.98,"w":"the"},{"t":325.22,"w":"elevator"},{"t":325.74,"w":"Not"},{"t":326.36,"w":"tonight,"},{"t":327.04,"w":"not"},{"t":327.24,"w":"like"},{"t":327.56,"w":"before"},{"t":328.24,"w":"First"},{"t":329.1,"w":"time's"},{"t":329.56,"w":"wrong"},{"t":329.74,"w":"and"},{"t":330.1,"w":"I'm"},{"t":330.32,"w":"done"},{"t":330.52,"w":"here"},{"t":330.82,"w":"waiting"},{"t":331.4,"w":"For"},{"t":332.04,"w":"a"},{"t":332.4,"w":"ghost"},{"t":332.78,"w":"to"},{"t":333.06,"w":"get"},{"t":333.32,"w":"me"},{"t":333.44,"w":"It"},{"t":333.62,"w":"did"},{"t":333.72,"w":"feel"},{"t":334.02,"w":"like"},{"t":334.44,"w":"addiction"},{"t":334.97,"w":"When"},{"t":335.82,"w":"I"},{"t":335.92,"w":"finally"},{"t":336.28,"w":"saw"},{"t":336.56,"w":"the"},{"t":336.76,"w":"chain"},{"t":337.1,"w":"It"},{"t":337.48,"w":"did"},{"t":337.66,"w":"feel"},{"t":338.04,"w":"like"},{"t":338.68,"w":"a"},{"t":338.86,"w":"prison"},{"t":339.26,"w":"When"},{"t":339.92,"w":"I"},{"t":340.14,"w":"called"},{"t":340.76,"w":"it"},{"t":342.48,"w":"by"},{"t":342.58,"w":"its"},{"t":343,"w":"name"},{"t":343.46,"w":"I"},{"t":344.18,"w":"wanna"},{"t":344.42,"w":"live"},{"t":344.76,"w":"More"},{"t":345.48,"w":"than"},{"t":345.78,"w":"I"},{"t":346,"w":"want"},{"t":346.32,"w":"that"},{"t":346.64,"w":"fire"},{"t":347.1,"w":"I"},{"t":347.76,"w":"want"},{"t":347.96,"w":"the"},{"t":348.12,"w":"truth"},{"t":348.44,"w":"More"},{"t":349.48,"w":"than"},{"t":349.88,"w":"I"},{"t":350.14,"w":"want"},{"t":350.56,"w":"the"},{"t":350.96,"w":"liar"},{"t":351.44,"w":"And"},{"t":352.24,"w":"the"},{"t":352.34,"w":"dragon"},{"t":352.7,"w":"don't"},{"t":353.1,"w":"fly"},{"t":353.32,"w":"No,"},{"t":354.12,"w":"I"},{"t":354.12,"w":"don't"},{"t":354.12,"w":"want"},{"t":354.12,"w":"the"},{"t":354.12,"w":"fire"},{"t":354.14,"w":"No"},{"t":354.4,"w":"more"},{"t":356.6,"w":"You'll"},{"t":356.7,"w":"miss"},{"t":356.86,"w":"me"},{"t":357.08,"w":"by"},{"t":357.26,"w":"morning"},{"t":357.66,"w":"Maybe"},{"t":358.18,"w":"I"},{"t":358.42,"w":"will"},{"t":358.97,"w":"You"},{"t":359.52,"w":"call"},{"t":359.72,"w":"me"},{"t":359.94,"w":"when"},{"t":360.14,"w":"it"},{"t":360.26,"w":"hurts"},{"t":360.64,"w":"I'll"},{"t":360.98,"w":"call"},{"t":361.18,"w":"someone"},{"t":361.72,"w":"real"},{"t":362.46,"w":"You'll"},{"t":362.96,"w":"come"},{"t":363.1,"w":"back"},{"t":363.44,"w":"to"},{"t":363.64,"w":"me"},{"t":363.84,"w":"Not"},{"t":364.16,"w":"this"},{"t":364.42,"w":"time"},{"t":364.84,"w":"For"},{"t":365.26,"w":"anybody"},{"t":365.56,"w":"fighting"},{"t":366.14,"w":"quiet"},{"t":368.54,"w":"You"},{"t":368.64,"w":"are"},{"t":368.8,"w":"not"},{"t":369,"w":"the"},{"t":369.14,"w":"thing"},{"t":369.44,"w":"you're"},{"t":369.64,"w":"fighting"},{"t":370.12,"w":"Cry"},{"t":370.78,"w":"out,"},{"t":372.18,"w":"reach"},{"t":372.28,"w":"out"},{"t":372.64,"w":"Come"},{"t":372.92,"w":"back"},{"t":373.34,"w":"The"},{"t":373.82,"w":"night"},{"t":374,"w":"is"},{"t":374.2,"w":"loud"},{"t":374.5,"w":"But"},{"t":374.92,"w":"you"},{"t":375.1,"w":"are"},{"t":375.28,"w":"louder"},{"t":375.89,"w":"Help"},{"t":376.54,"w":"me,"},{"t":376.8,"w":"I'm"},{"t":377.06,"w":"ready"},{"t":377.32,"w":"One"},{"t":378.06,"w":"more"},{"t":380.74,"w":"One"},{"t":380.84,"w":"more"},{"t":381.92,"w":"No"},{"t":384.14,"w":"Give"},{"t":385.02,"w":"me"},{"t":385.02,"w":"an"},{"t":385.8,"w":"One"},{"t":385.82,"w":"more"},{"t":385.82,"w":"Give"},{"t":385.82,"w":"me"},{"t":385.82,"w":"an"},{"t":385.82,"w":"answer"},{"t":387.92,"w":"It's"},{"t":388.36,"w":"just"},{"t":388.36,"w":"most"},{"t":388.36,"w":"things"},{"t":388.36,"w":"that"},{"t":388.36,"w":"aren't"},{"t":388.36,"w":"important"},{"t":388.36,"w":"to"},{"t":388.36,"w":"me"}]}$j$::jsonb WHERE id = 'under-the-elevated' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:06.94] This for the ones nobody checks on
+[00:11.26] Because they look like they got it together
+[00:15.98] Bills paid, kids fed, smile ready
+[00:19.00] But somewhere between Queens and Brooklyn
+[00:24.11] Under the elevator
+[00:26.70] Somebody is asking
+[00:27.89] Is
+[00:29.55] this really addiction?
+[00:31.92] You work hard, you deserve peace
+[00:37.34] Come here
+[Verse 1]
+[00:50.06] Queens Boulevard got my promises
+[00:53.50] Brooklyn nights got my shame
+[00:56.56] I keep showing
+[00:57.40] I keep showing
+[00:57.58] I keep showing up like I'm solid
+[00:58.52] I keep coming home the same
+[01:01.52] Rent paid, lights on, fridge full
+[01:05.51] Everybody thinks I'm blessed
+[01:07.10] I keep my body right, keep my money good
+[01:09.78] Still got smoke inside my chest
+[01:13.12] Corner store blowing like a chapel
+[01:17.00] Midnight glass behind the door
+[01:18.77] I tell myself I'm only looking
+[01:21.95] But my hand already knows
+[01:24.00] Long day
+[01:26.18] Don't make it difficult for me to see you
+[01:27.58] One little flame, one little drink
+[01:30.52] One little sleep
+[01:34.22] And it don't feel like addiction
+[01:38.24] It feels like I'm still in control
+[01:40.32] Like I can stop when I'm ready
+[01:44.34] Like I can leave it alone
+[01:46.01] I quit three days just to prove it
+[01:50.14] Then came back like I won
+[01:51.74] But that ain't freedom
+[01:53.34] That's just losing with a different kind of girl
+[01:57.58] The cage don't always rattle
+[02:00.50] Sometimes it sings
+[02:01.38] I'm chasing the dragon under the other lake
+[02:05.32] Trying to catch what don't come back no more
+[02:08.36] First time flu, now I'm stuck here waiting
+[02:11.12] With my heart face down on the floor
+[Pre-Chorus]
+[02:14.04] It don't feel like addiction
+[02:15.50] It feels like tomorrow
+[02:16.86] Feels like one more night
+[02:18.58] Feels like my old sorrow
+[02:20.02] I wanna quit but I want that fire
+[02:22.70] I want the truth but I love the liar
+[02:26.38] And the dragon don't fly
+[02:27.54] No more
+[02:29.02] On the J train with my jaw tight
+[Chorus]
+[02:33.05] On the seven with my head low
+[02:36.84] Every ass says buy your freedom
+[02:38.46] Every craving says don't let go
+[02:41.28] I got side dreams, side gigs
+[02:44.06] Plans folded in my notes
+[02:47.18] But I keep feeding little habits
+[02:49.64] That keep standing on my throat
+[02:52.52] I say next week like a prayer
+[02:54.82] Say last time like a song
+[02:56.96] Say I'm back to where I was
+[02:57.54] Good when I'm lying
+[02:58.44] Say I'm fine when I'm gone
+[02:59.92] Baby you're here
+[03:02.54] I'm the only thing clear
+[03:05.29] When the city gets heavy
+[03:08.14] I disappear your fear
+[03:10.60] You call me poison but I call you mine
+[03:13.38] You call it weakness, I call it time
+[03:16.32] Don't call me yours
+[03:18.56] Then why do you answer?
+[03:21.19] Addiction don't always kick the door
+[03:23.60] Sometimes it uses your own voice
+[03:27.02] Sometimes it uses your own voice
+[03:27.52] It says
+[03:28.78] you earned it
+[03:29.50] At the counter with the music low
+[03:32.71] Caught in my head, heart in my throat
+[03:35.44] I ask myself do I need this?
+[03:37.54] Then laugh like it's some kind of joke
+[03:40.48] What else could I do with this money?
+[03:42.96] What else could I do?
+[03:44.08] What else could I do with this pain?
+[Verse 2]
+[03:46.50] What man keeps building the future?
+[03:49.26] Them burning the bridge in the rain
+[03:51.24] I'm chasing the dragon under the elevator
+[03:55.48] Trying to catch what don't come back
+[03:57.34] Trying to catch what don't come back
+[03:57.84] I can make it feel close, I can open that door
+[04:02.74] It don't feel like addiction,
+[04:05.04] it feels like tomorrow
+[04:06.16] Feels like one more night,
+[04:07.96] feels like moral sorrow
+[04:10.06] Borrow it baby, you can pay it later
+[04:12.92] And the dragon don't fly no more
+[04:16.16] To the one saying I can stop,
+[04:19.38] but never really stops
+[04:21.86] This is the sign, not shame, not judgment
+[04:24.16] Come back home,
+[04:26.52] do I really need this,
+[04:28.12] do I really want this
+[04:29.42] Am I really free if I keep running from the honest
+[04:32.14] Do I wanna stop, or do I wanna hide
+[04:34.80] Do I want my life back, or another alibi
+[04:37.48] Nobody knows you like I know you
+[04:40.70] Nobody holds you like I hold you
+[04:43.72] That's not love, that's not peace
+[04:46.33] That's you taking little pieces out of me
+[04:48.00] I don't need to hit bottom just to prove the bottom's real
+[04:51.90] I don't need another bottle just to tell me
+[04:54.12] How to feel, help me, hear me
+[04:56.16] I'm still in here, don't fear me
+[04:59.16] I look alright, but I'm not okay
+[05:01.68] I keep surviving, but I wanna change
+[05:04.84] Call me, hold me, don't shame me
+[05:09.34] Just know me, I need love, I need truth
+[05:13.78] I need somebody to pull me through
+[05:18.95] One more night, one more flame, one more
+[05:22.30] I'm not chasing the dragon
+[05:24.12] Under the elevator
+[05:25.72] Not tonight, not like before
+[05:28.22] First time's wrong and I'm done here waiting
+[05:31.38] For a ghost to get me
+[05:33.42] It did feel like addiction
+[05:34.95] When I finally saw the chain
+[05:37.08] It did feel like a prison
+[05:39.24] When I called it
+[05:42.46] by its name
+[05:43.44] I wanna live
+[05:44.74] More than I want that fire
+[05:47.08] I want the truth
+[05:48.42] More than I want the liar
+[05:51.42] And the dragon don't fly
+[05:53.30] No, I don't want the fire
+[05:54.12] No more
+[05:56.58] You'll miss me by morning
+[05:57.64] Maybe I will
+[05:58.95] You call me when it hurts
+[06:00.62] I'll call someone real
+[06:02.44] You'll come back to me
+[06:03.82] Not this time
+[06:04.82] For anybody fighting quiet
+[06:08.52] You are not the thing you're fighting
+[06:10.10] Cry out,
+[06:12.16] reach out
+[06:12.62] Come back
+[06:13.32] The night is loud
+[06:14.48] But you are louder
+[06:15.87] Help me, I'm ready
+[06:17.30] One more
+[06:20.72] One more
+[06:21.90] No
+[06:24.12] Give me an
+[06:25.78] One more
+[06:25.80] Give me an answer
+[06:27.90] It's just most things that aren't important to me
+$j$ WHERE id = 'under-the-elevated' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A gritty cinematic exploration of addiction personified as a seductive force in late-night NYC, where the narrator struggles between maintaining appearances and confronting the 'dragon' beneath their facade.","overallMood":"Gritty Vulnerability","themes":["Addiction as a Seduction","The Mask of Success vs. Internal Decay","Urban Isolation and Loneliness","Self-Deception and Rationalization","Redemption through Truth","Breaking the Cycle"],"palette":["#1C1C24","#8B0000","#D3A675","#FFFAE0"],"sections":[{"name":"Intro","emotion":"Melancholic Warning","intensity":0.66,"colorHint":"#1c1c24","start":6.9399999999999995},{"name":"Verse 1","emotion":"Resigned Denial","intensity":0.77,"colorHint":"#8b0000","start":50.06},{"name":"Pre-Chorus","emotion":"Frantic Desire","intensity":0.92,"colorHint":"#d3a675","start":134.04},{"name":"Chorus","emotion":"Desperate Rationalization","intensity":0.66,"colorHint":"#fffae0","start":153.05},{"name":"Verse 2","emotion":"Awakening Resolve","intensity":0.23,"colorHint":"#1c1c24","start":226.5}],"keywords":[{"word":"smoke","emotion":"Hypnotic Obscurity","imageryPrompt":"Thick grey haze swirling around a dimly lit corner store window, obscuring the street behind it like a ghostly veil."},{"word":"dragon","emotion":"Lurking Menace","imageryPrompt":"A shadowy serpentine silhouette coiled beneath the concrete underbelly of an elevated train track, glowing with faint emerald eyes in total darkness."},{"word":"freedom","emotion":"Irony and Longing","imageryPrompt":"Tattered paper wings fluttering uselessly above a grimy subway grate, unable to escape the weight of heavy rain falling on concrete below."},{"word":"chains","emotion":"Heavy Realization","imageryPrompt":"Rusted iron links wrapped around an ankle resting against a cold brick wall in a narrow alleyway, casting long sharp shadows at midnight."},{"word":"truth","emotion":"Blinding Clarity","imageryPrompt":"A single beam of harsh white light cutting through dense smoke to reveal cracked pavement and raw, unvarnished emotion on a face."},{"word":"liar","emotion":"Self-Pitying Reflection","imageryPrompt":"A distorted mirror reflecting a smiling figure while the glass cracks behind them with spiderweb fractures filled with dark liquid."}]}$j$::jsonb) WHERE id = 'under-the-elevated' AND planet->'analysis' IS NULL;
+
+-- veneno-y-miel: 530 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":8.98,"w":"They"},{"t":9.76,"w":"came"},{"t":10.12,"w":"with"},{"t":10.42,"w":"flowers"},{"t":10.84,"w":"in"},{"t":11.36,"w":"their"},{"t":11.6,"w":"hands,"},{"t":12.58,"w":"but"},{"t":12.8,"w":"dirt"},{"t":13.22,"w":"under"},{"t":13.64,"w":"their"},{"t":14.06,"w":"nails"},{"t":14.56,"w":"That's"},{"t":15.08,"w":"my"},{"t":15.22,"w":"name"},{"t":15.66,"w":"when"},{"t":15.94,"w":"I"},{"t":16.22,"w":"was"},{"t":16.6,"w":"low,"},{"t":17.1,"w":"then"},{"t":17.76,"w":"curse"},{"t":18.04,"w":"me"},{"t":18.34,"w":"when"},{"t":18.68,"w":"I"},{"t":18.96,"w":"sail"},{"t":19.42,"w":"Treaty"},{"t":19.9,"w":"words"},{"t":20.56,"w":"on"},{"t":20.86,"w":"treaty"},{"t":21.2,"w":"licks,"},{"t":22.08,"w":"but"},{"t":22.32,"w":"the"},{"t":22.59,"w":"truth"},{"t":22.96,"w":"don't"},{"t":23.42,"w":"match"},{"t":23.6,"w":"the"},{"t":23.82,"w":"smell"},{"t":24.18,"w":"Some"},{"t":24.46,"w":"hearts"},{"t":24.9,"w":"leave"},{"t":25.12,"w":"knives"},{"t":25.46,"w":"inside"},{"t":25.92,"w":"your"},{"t":26.32,"w":"chest,"},{"t":27.06,"w":"then"},{"t":27.48,"w":"smile"},{"t":27.84,"w":"and"},{"t":28.16,"w":"wish"},{"t":28.48,"w":"you"},{"t":28.78,"w":"well"},{"t":29.18,"w":"Who"},{"t":29.38,"w":"was"},{"t":29.52,"w":"there,"},{"t":29.82,"w":"who"},{"t":29.92,"w":"was"},{"t":30.1,"w":"fake,"},{"t":30.52,"w":"who"},{"t":30.86,"w":"clapped"},{"t":31.32,"w":"loud,"},{"t":31.76,"w":"who"},{"t":32.1,"w":"came"},{"t":32.44,"w":"late"},{"t":32.82,"w":"I"},{"t":33.4,"w":"learned"},{"t":33.72,"w":"love"},{"t":34,"w":"from"},{"t":34.24,"w":"the"},{"t":34.4,"w":"loyal,"},{"t":35,"w":"I"},{"t":35.52,"w":"learned"},{"t":36.14,"w":"pain"},{"t":36.4,"w":"from"},{"t":36.7,"w":"the"},{"t":36.86,"w":"crowd"},{"t":37.12,"w":"Some"},{"t":37.92,"w":"people"},{"t":38.34,"w":"only"},{"t":38.62,"w":"hold"},{"t":38.94,"w":"you"},{"t":39.2,"w":"close,"},{"t":39.86,"w":"so"},{"t":40.36,"w":"they"},{"t":40.86,"w":"can"},{"t":41.14,"w":"pull"},{"t":41.44,"w":"you"},{"t":41.72,"w":"down"},{"t":42.1,"w":"So"},{"t":42.78,"w":"I"},{"t":42.96,"w":"keep"},{"t":43.16,"w":"my"},{"t":43.46,"w":"real"},{"t":43.82,"w":"ones"},{"t":44.1,"w":"near,"},{"t":44.66,"w":"let"},{"t":45.26,"w":"the"},{"t":45.4,"w":"fake"},{"t":45.68,"w":"ones"},{"t":45.94,"w":"disappear"},{"t":47.05,"w":"If"},{"t":47.7,"w":"the"},{"t":47.86,"w":"fruit"},{"t":48.12,"w":"right"},{"t":48.36,"w":"on"},{"t":48.68,"w":"the"},{"t":48.92,"w":"branch,"},{"t":49.5,"w":"I"},{"t":49.58,"w":"don't"},{"t":49.8,"w":"cry"},{"t":50.06,"w":"when"},{"t":50.7,"w":"it"},{"t":50.9,"w":"falls"},{"t":51.2,"w":"from"},{"t":51.46,"w":"there"},{"t":53.54,"w":"Not"},{"t":53.92,"w":"every"},{"t":54.42,"w":"angel"},{"t":55.06,"w":"got"},{"t":55.66,"w":"wings,"},{"t":56.2,"w":"not"},{"t":56.38,"w":"every"},{"t":56.9,"w":"devil"},{"t":57.5,"w":"got"},{"t":58.1,"w":"horns"},{"t":58.6,"w":"Some"},{"t":58.8,"w":"friends"},{"t":59.14,"w":"of"},{"t":59.16,"w":"mine,"},{"t":59.16,"w":"some"},{"t":59.16,"w":"friends"},{"t":59.16,"w":"of"},{"t":59.16,"w":"mine,"},{"t":59.16,"w":"some"},{"t":59.16,"w":"friends"},{"t":59.16,"w":"of"},{"t":59.16,"w":"mine"},{"t":59.18,"w":"Come"},{"t":59.4,"w":"wrapped"},{"t":59.8,"w":"in"},{"t":60.66,"w":"gold,"},{"t":61.04,"w":"but"},{"t":61.2,"w":"leave"},{"t":61.58,"w":"your"},{"t":61.88,"w":"spirits"},{"t":62.54,"w":"on"},{"t":64.34,"w":"No,"},{"t":64.68,"w":"todo"},{"t":65.22,"w":"lo"},{"t":65.54,"w":"dulce"},{"t":65.98,"w":"te"},{"t":66.14,"w":"quiere"},{"t":66.5,"w":"bien,"},{"t":67.14,"w":"no"},{"t":67.38,"w":"todo"},{"t":67.68,"w":"lo"},{"t":67.98,"w":"oscuro"},{"t":68.34,"w":"te"},{"t":68.58,"w":"quiere"},{"t":68.92,"w":"perder"},{"t":69.26,"w":"They"},{"t":69.74,"w":"kiss"},{"t":70.14,"w":"like"},{"t":70.42,"w":"heaven,"},{"t":71.06,"w":"but"},{"t":71.3,"w":"they"},{"t":71.62,"w":"drag"},{"t":72.02,"w":"you"},{"t":72.24,"w":"through"},{"t":72.56,"w":"hell"},{"t":75.04,"w":"Veneno,"},{"t":75.72,"w":"yeah"},{"t":78.56,"w":"They"},{"t":79.62,"w":"sell"},{"t":79.92,"w":"you"},{"t":80.16,"w":"love,"},{"t":80.82,"w":"but"},{"t":81.12,"w":"they"},{"t":81.36,"w":"poison"},{"t":81.96,"w":"the"},{"t":82.3,"w":"well"},{"t":84.74,"w":"Veneno,"},{"t":85.42,"w":"yeah"},{"t":86.1,"w":"Ah,"},{"t":87.26,"w":"which"},{"t":87.36,"w":"one"},{"t":87.54,"w":"is"},{"t":87.7,"w":"which?"},{"t":90.18,"w":"Veneno"},{"t":90.4,"w":"y"},{"t":90.4,"w":"miel"},{"t":90.4,"w":"Honey"},{"t":90.4,"w":"on"},{"t":90.54,"w":"the"},{"t":90.7,"w":"tongue"},{"t":91.04,"w":"Venem"},{"t":91.66,"w":"en"},{"t":91.78,"w":"elible"},{"t":92.2,"w":"Veneno"},{"t":92.9,"w":"y"},{"t":93.1,"w":"miel"},{"t":97.32,"w":"Keep"},{"t":98.04,"w":"your"},{"t":98.76,"w":"real"},{"t":98.94,"w":"ones"},{"t":99.16,"w":"close"},{"t":99.7,"w":"Let"},{"t":100.9,"w":"the"},{"t":101.1,"w":"bad"},{"t":101.38,"w":"ones"},{"t":101.64,"w":"go"},{"t":102.3,"w":"Some"},{"t":103.39,"w":"snakes"},{"t":103.8,"w":"move"},{"t":104.06,"w":"soft"},{"t":105.78,"w":"Some"},{"t":105.88,"w":"angels"},{"t":106.32,"w":"move"},{"t":106.54,"w":"cold"},{"t":107.72,"w":"Veneno"},{"t":109.5,"w":"Veneno"},{"t":110.06,"w":"I"},{"t":110.28,"w":"seen"},{"t":110.76,"w":"slay"},{"t":111.16,"w":"to"},{"t":111.24,"w":"show"},{"t":111.4,"w":"more"},{"t":111.56,"w":"love"},{"t":111.86,"w":"than"},{"t":112.04,"w":"the"},{"t":112.14,"w":"ones"},{"t":112.42,"w":"at"},{"t":112.62,"w":"the"},{"t":112.74,"w":"table"},{"t":113.08,"w":"I"},{"t":113.22,"w":"seen"},{"t":113.38,"w":"family"},{"t":113.64,"w":"switch"},{"t":113.8,"w":"sides"},{"t":114.22,"w":"when"},{"t":114.48,"w":"the"},{"t":114.6,"w":"money"},{"t":114.86,"w":"got"},{"t":115.08,"w":"stable"},{"t":115.5,"w":"I"},{"t":115.68,"w":"seen"},{"t":115.82,"w":"quiet"},{"t":116.04,"w":"people"},{"t":116.32,"w":"fight"},{"t":116.66,"w":"when"},{"t":116.9,"w":"the"},{"t":117.06,"w":"room"},{"t":117.28,"w":"got"},{"t":117.54,"w":"fatal"},{"t":117.96,"w":"I"},{"t":118.1,"w":"seen"},{"t":118.3,"w":"loud"},{"t":118.56,"w":"ones"},{"t":118.78,"w":"fold"},{"t":119.1,"w":"when"},{"t":119.36,"w":"the"},{"t":119.48,"w":"truth"},{"t":119.74,"w":"got"},{"t":119.98,"w":"painful"},{"t":120.36,"w":"Sweet"},{"t":120.64,"w":"face,"},{"t":121.16,"w":"sour"},{"t":121.52,"w":"soul"},{"t":122.14,"w":"One"},{"t":122.8,"w":"hug,"},{"t":123.64,"w":"heart"},{"t":124,"w":"cold"},{"t":124.66,"w":"Fake"},{"t":125.16,"w":"love,"},{"t":126.1,"w":"fake"},{"t":126.5,"w":"toast"},{"t":127.06,"w":"Real"},{"t":127.62,"w":"ones"},{"t":128.34,"w":"don't"},{"t":128.96,"w":"do"},{"t":129.16,"w":"shows"},{"t":129.6,"w":"Who"},{"t":130.2,"w":"checked"},{"t":130.5,"w":"in?"},{"t":130.9,"w":"Who"},{"t":131.4,"w":"checked"},{"t":131.68,"w":"out?"},{"t":132.22,"w":"Who"},{"t":132.68,"w":"stayed"},{"t":132.84,"w":"real?"},{"t":133.42,"w":"Who"},{"t":133.86,"w":"chased"},{"t":134.12,"w":"clout?"},{"t":134.48,"w":"Some"},{"t":134.66,"w":"look"},{"t":134.96,"w":"like"},{"t":135.32,"w":"trouble"},{"t":135.62,"w":"but"},{"t":135.88,"w":"they"},{"t":136.02,"w":"guard"},{"t":136.34,"w":"your"},{"t":136.56,"w":"peace"},{"t":136.86,"w":"Some"},{"t":137.1,"w":"look"},{"t":137.42,"w":"like"},{"t":137.74,"w":"blessings"},{"t":138.1,"w":"but"},{"t":138.34,"w":"they"},{"t":138.48,"w":"drain"},{"t":138.74,"w":"your"},{"t":138.96,"w":"cheese"},{"t":139.28,"w":"Some"},{"t":139.54,"w":"say"},{"t":139.92,"w":"I"},{"t":140.24,"w":"got"},{"t":140.46,"w":"you"},{"t":140.66,"w":"then"},{"t":140.8,"w":"they"},{"t":140.96,"w":"let"},{"t":141.16,"w":"you"},{"t":141.42,"w":"bleed"},{"t":141.74,"w":"Some"},{"t":141.98,"w":"say"},{"t":142.3,"w":"nothing"},{"t":142.76,"w":"and"},{"t":143.08,"w":"become"},{"t":143.34,"w":"what"},{"t":143.68,"w":"you"},{"t":143.84,"w":"need"},{"t":144.22,"w":"So"},{"t":144.44,"w":"I"},{"t":144.78,"w":"don't"},{"t":145.22,"w":"chase,"},{"t":145.82,"w":"no"},{"t":146.26,"w":"circle,"},{"t":146.98,"w":"I"},{"t":147.26,"w":"don't"},{"t":147.68,"w":"beg"},{"t":147.9,"w":"No"},{"t":148.8,"w":"see"},{"t":149.08,"w":"if"},{"t":149.36,"w":"the"},{"t":149.52,"w":"apple"},{"t":149.96,"w":"turns"},{"t":150.54,"w":"around"},{"t":151.54,"w":"and"},{"t":151.88,"w":"I"},{"t":152.16,"w":"cut"},{"t":152.44,"w":"down"},{"t":153.12,"w":"the"},{"t":153.64,"w":"tree"},{"t":154.29,"w":"No,"},{"t":155.34,"w":"todo"},{"t":155.84,"w":"lo"},{"t":156.16,"w":"dulce"},{"t":156.58,"w":"te"},{"t":156.76,"w":"quiere"},{"t":157.12,"w":"bien"},{"t":157.62,"w":"No"},{"t":158,"w":"todo"},{"t":158.3,"w":"lo"},{"t":158.58,"w":"oscuro"},{"t":158.96,"w":"te"},{"t":159.2,"w":"quiere"},{"t":159.58,"w":"perder"},{"t":160.02,"w":"They"},{"t":160.34,"w":"kiss"},{"t":160.72,"w":"like"},{"t":161.04,"w":"heaven"},{"t":161.62,"w":"but"},{"t":161.94,"w":"they"},{"t":162.22,"w":"drag"},{"t":162.62,"w":"you"},{"t":162.84,"w":"through"},{"t":163.18,"w":"hell"},{"t":163.7,"w":"Veneno"},{"t":164.48,"w":"Veneno"},{"t":165.66,"w":"y"},{"t":166.56,"w":"miel"},{"t":169,"w":"They"},{"t":170.14,"w":"sell"},{"t":170.56,"w":"you"},{"t":170.8,"w":"love"},{"t":171.18,"w":"but"},{"t":171.72,"w":"they"},{"t":172,"w":"poison"},{"t":172.58,"w":"the"},{"t":172.92,"w":"well"},{"t":174.78,"w":"Veneno"},{"t":175.56,"w":"y"},{"t":176.22,"w":"miel"},{"t":177.32,"w":"You"},{"t":177.42,"w":"sure"},{"t":177.64,"w":"they"},{"t":177.82,"w":"love"},{"t":178.08,"w":"you?"},{"t":179.02,"w":"Or"},{"t":179.84,"w":"they"},{"t":179.98,"w":"love"},{"t":180.18,"w":"exes?"},{"t":181.69,"w":"You"},{"t":182.27,"w":"sure"},{"t":182.48,"w":"they"},{"t":182.62,"w":"miss"},{"t":182.86,"w":"you?"},{"t":183.16,"w":"Or"},{"t":183.36,"w":"they"},{"t":183.48,"w":"miss"},{"t":183.7,"w":"your"},{"t":183.88,"w":"blessings?"},{"t":185.28,"w":"Engaño"},{"t":186.06,"w":"y"},{"t":186.18,"w":"fiel"},{"t":187.62,"w":"Veneno"},{"t":188.4,"w":"y"},{"t":188.6,"w":"miel"},{"t":188.96,"w":"Dulce"},{"t":189.78,"w":"como"},{"t":190.28,"w":"miel"},{"t":190.84,"w":"Pero"},{"t":192.04,"w":"mira"},{"t":192.8,"w":"bien"},{"t":193.82,"w":"Not"},{"t":194.62,"w":"every"},{"t":194.92,"w":"soft"},{"t":195.24,"w":"thing"},{"t":195.6,"w":"heals"},{"t":195.92,"w":"you"},{"t":196.24,"w":"Not"},{"t":196.52,"w":"every"},{"t":197,"w":"dark"},{"t":197.56,"w":"thing"},{"t":197.84,"w":"ends"},{"t":198.34,"w":"you"},{"t":198.7,"w":"I"},{"t":199.06,"w":"keep"},{"t":199.26,"w":"the"},{"t":199.44,"w":"loyal"},{"t":199.62,"w":"close"},{"t":200.04,"w":"I"},{"t":200.3,"w":"let"},{"t":200.5,"w":"the"},{"t":200.64,"w":"Judas"},{"t":200.92,"w":"fade"},{"t":201.34,"w":"Bad"},{"t":201.82,"w":"fruit"},{"t":202.02,"w":"falls"},{"t":202.34,"w":"alone"},{"t":202.7,"w":"Fruits"},{"t":203.22,"w":"stay"},{"t":205.38,"w":"Ask"},{"t":205.48,"w":"yourself"},{"t":206.18,"w":"Who"},{"t":206.98,"w":"eats"},{"t":207.26,"w":"with"},{"t":207.52,"w":"you?"},{"t":207.92,"w":"Who"},{"t":208.12,"w":"bleeds"},{"t":208.56,"w":"with"},{"t":208.76,"w":"you?"},{"t":209.08,"w":"Who"},{"t":209.46,"w":"only"},{"t":209.86,"w":"calls"},{"t":210.42,"w":"when"},{"t":210.92,"w":"they"},{"t":211.26,"w":"leave"},{"t":212.18,"w":"from"},{"t":213.74,"w":"you?"},{"t":215.36,"w":"If"},{"t":216.1,"w":"love"},{"t":216.52,"w":"got"},{"t":216.72,"w":"teeth,"},{"t":217.28,"w":"let"},{"t":217.64,"w":"it"},{"t":218,"w":"show"},{"t":220.51,"w":"If"},{"t":220.96,"w":"trust"},{"t":221.36,"w":"got"},{"t":221.62,"w":"cracks,"},{"t":222.34,"w":"let"},{"t":222.56,"w":"it"},{"t":222.92,"w":"go"},{"t":223.28,"w":"They"},{"t":224.06,"w":"kiss"},{"t":224.36,"w":"like"},{"t":224.72,"w":"heaven"},{"t":225.24,"w":"but"},{"t":225.58,"w":"they"},{"t":225.88,"w":"drag"},{"t":226.26,"w":"you"},{"t":226.54,"w":"through"},{"t":226.82,"w":"hell"},{"t":228.5,"w":"Veneno"},{"t":229.34,"w":"y"},{"t":230.18,"w":"miel"},{"t":232.86,"w":"They"},{"t":233.79,"w":"sell"},{"t":234.18,"w":"you"},{"t":234.46,"w":"love"},{"t":234.9,"w":"but"},{"t":235.34,"w":"they"},{"t":235.66,"w":"poison"},{"t":236.24,"w":"the"},{"t":236.6,"w":"well"},{"t":238.28,"w":"Veneno"},{"t":239.12,"w":"y"},{"t":239.96,"w":"miel"},{"t":241.82,"w":"Engaño"},{"t":242.28,"w":"y"},{"t":242.66,"w":"fiel"},{"t":243.9,"w":"Engaño"},{"t":244.74,"w":"y"},{"t":245.06,"w":"fiel"},{"t":246.38,"w":"Engaño"},{"t":247.18,"w":"y"},{"t":247.44,"w":"fiel"},{"t":247.85,"w":"Honey"},{"t":249.3,"w":"ain't"},{"t":249.64,"w":"always"},{"t":249.82,"w":"sweet"},{"t":250.4,"w":"Veneno"},{"t":251.22,"w":"ain't"},{"t":251.44,"w":"always"},{"t":251.7,"w":"loud"},{"t":252.1,"w":"Choose"},{"t":252.52,"w":"your"},{"t":252.88,"w":"peace"},{"t":253.18,"w":"Keep"},{"t":254.02,"w":"wisely"},{"t":257.78,"w":"Veneno"},{"t":259.18,"w":"y"},{"t":259.56,"w":"miel"}]}$j$::jsonb WHERE id = 'veneno-y-miel' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:08.96] They came with flowers in their hands,
+[00:12.56] but dirt under their nails
+[00:14.54] That's my name when I was low,
+[00:17.08] then curse me when I sail
+[00:19.40] Treaty words on treaty licks,
+[00:22.06] but the truth don't match the smell
+[00:24.16] Some hearts leave knives inside your chest,
+[00:27.04] then smile and wish you well
+[00:29.16] Who was there,
+[00:29.80] who was fake,
+[00:30.50] who clapped loud,
+[00:31.74] who came late
+[00:32.80] I learned love from the loyal,
+[00:34.98] I learned pain from the crowd
+[00:37.10] Some people only hold you close,
+[00:39.84] so they can pull you down
+[00:42.08] So I keep my real ones near,
+[00:44.64] let the fake ones disappear
+[00:47.03] If the fruit right on the branch,
+[00:49.48] I don't cry when it falls from there
+[Pre-Chorus]
+[00:53.51] Not every angel got wings,
+[00:56.18] not every devil got horns
+[00:58.58] Some friends of mine,
+[00:59.14] some friends of mine,
+[00:59.14] some friends of mine
+[00:59.16] Come wrapped in gold, but leave your spirits on
+[01:04.32] No,
+[01:04.66] todo lo dulce te quiere bien,
+[Chorus]
+[01:07.12] no todo lo oscuro te quiere perder
+[01:09.24] They kiss like heaven,
+[01:11.04] but they drag you through hell
+[01:15.02] Veneno, yeah
+[01:18.54] They sell you love, but they poison the well
+[01:24.72] Veneno, yeah
+[01:26.08] Ah,
+[01:27.24] which one is which?
+[01:30.15] Veneno y miel
+[01:30.38] Honey on the tongue
+[01:31.02] Venem en elible
+[01:32.18] Veneno y miel
+[Verse 2]
+[01:37.30] Keep your real ones close
+[01:39.68] Let the bad ones go
+[01:42.28] Some snakes move soft
+[01:45.76] Some angels move cold
+[01:47.70] Veneno
+[01:49.48] Veneno
+[01:50.04] I seen slay to show more love than the ones at the table
+[01:53.06] I seen family switch sides when the money got stable
+[01:55.48] I seen quiet people fight when the room got fatal
+[01:57.94] I seen loud ones fold when the truth got painful
+[02:00.34] Sweet face, sour soul
+[02:02.12] One hug, heart cold
+[02:04.64] Fake love, fake toast
+[02:07.04] Real ones don't do shows
+[02:09.58] Who checked in?
+[Bridge]
+[02:10.88] Who checked out?
+[02:12.20] Who stayed real?
+[02:13.40] Who chased clout?
+[02:14.46] Some look like trouble but they guard your peace
+[02:16.84] Some look like blessings but they drain your cheese
+[02:19.26] Some say I got you then they let you bleed
+[02:21.72] Some say nothing and become what you need
+[02:24.20] So I don't chase, no circle, I don't beg
+[02:27.88] No see if the apple turns around and I cut down the tree
+[02:34.27] No, todo lo dulce te quiere bien
+[02:37.60] No todo lo oscuro te quiere perder
+[Chorus]
+[02:39.00] They kiss like heaven but they drag you through hell
+[02:43.68] Veneno
+[02:44.46] Veneno y miel
+[02:48.98] They sell you love but they poison the well
+[02:54.76] Veneno y miel
+[02:57.30] You sure they love you?
+[02:58.00] Or they love exes?
+[03:01.67] You sure they miss you?
+[03:03.14] Or they miss your blessings?
+[03:05.26] Engaño y fiel
+[03:07.60] Veneno y miel
+[03:08.94] Dulce como miel
+[03:10.82] Pero mira bien
+[03:13.80] Not every soft thing heals you
+[03:16.22] Not every dark thing ends you
+[03:18.68] I keep the loyal close
+[03:20.02] I let the Judas fade
+[03:21.32] Bad fruit falls alone
+[03:22.68] Fruits stay
+[03:25.36] Ask yourself
+[03:26.16] Who eats with you?
+[03:27.90] Who bleeds with you?
+[03:29.06] Who only calls when they leave from you?
+[03:35.34] If love got teeth, let it show
+[03:40.49] If trust got cracks, let it go
+[03:43.26] They kiss like heaven but they drag you through hell
+[03:48.48] Veneno y miel
+[03:52.84] They sell you love but they poison the well
+[03:58.26] Veneno y miel
+[04:01.80] Engaño y fiel
+[04:03.88] Engaño y fiel
+[04:06.36] Engaño y fiel
+[04:07.83] Honey ain't always sweet
+[04:10.38] Veneno ain't always loud
+[04:12.08] Choose your peace
+[04:13.16] Keep wisely
+[04:17.76] Veneno y miel
+$j$ WHERE id = 'veneno-y-miel' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"The song is a sophisticated Latin urban pop track that deconstructs toxic relationships by contrasting sweet appearances ('miel') with hidden dangers ('veneno'), urging listeners to discern loyalty from deception in their social circles.","overallMood":"Sophisticated, deceptive, rhythmic, introspective","themes":["Deception vs. Authenticity","Toxic Relationships","Social Betrayal","Discernment of Character"],"palette":["#1a0b0e","#8c2d36","#f5deb3","#4a3b29"],"sections":[{"name":"Intro","emotion":"Suspicious curiosity mixed with rhythmic anticipation","intensity":0.75,"colorHint":"#1a0b0e","start":8.96},{"name":"Verse 1","emotion":"Observational disappointment and realization of betrayal","intensity":0.83,"colorHint":"#8c2d36","start":8.96},{"name":"Pre-Chorus","emotion":"Building tension between sweet words and dark intent","intensity":0.78,"colorHint":"#f5deb3","start":53.51},{"name":"Chorus","emotion":"Final defiant acceptance of truth over illusion","intensity":1,"colorHint":"#8c2d36","start":67.12},{"name":"Verse 2","emotion":"Cold observation of hypocrisy and shifting alliances","intensity":0.76,"colorHint":"#4a3b29","start":97.3},{"name":"Bridge","emotion":"Resolute decision to cut ties with the fake and protect peace","intensity":0.23,"colorHint":"#f5deb3","start":130.88}],"keywords":[{"word":"veneno","emotion":"Dangerous allure masked as affection","imageryPrompt":"A glossy honeycomb dripping with black viscous liquid that glows faintly in the dark, contrasting sweet golden syrup against a deep purple shadow."},{"word":"miel","emotion":"Deceptive sweetness hiding rot inside","imageryPrompt":"A perfect glass jar of amber honey reflecting sunlight on a cracked porcelain table where worms are visible just beneath the surface layer."},{"word":"engaño","emotion":"The sharp sting of being lied to","imageryPrompt":"A mirror with one half showing a smiling face and the other revealing rotting teeth, set against a backdrop of blurred city lights at night."},{"word":"fiel","emotion":"Warmth and safety found in rare loyalty","imageryPrompt":"A single small flame burning steadily inside a thick iron cage while the surrounding darkness tries to extinguish it with cold wind."},{"word":"dobleces","emotion":"The twisting nature of social masks","imageryPrompt":"A long hallway lined with suits that turn their heads in opposite directions, leading towards a door labeled 'Truth' but covered by vines."},{"word":"lealtad","emotion":"Unwavering support amidst chaos","imageryPrompt":"Two hands clasped tightly together, one stained with dirt and the other clean, standing on a bridge over rushing dark water while others run away."}]}$j$::jsonb) WHERE id = 'veneno-y-miel' AND planet->'analysis' IS NULL;
+
+-- void-into-gold: 570 words, 7 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":3.18,"w":"Mmm,"},{"t":3.78,"w":"this"},{"t":4.6,"w":"summer"},{"t":4.7,"w":"feel"},{"t":5,"w":"different"},{"t":8.78,"w":"No"},{"t":8.88,"w":"rush,"},{"t":9.46,"w":"no"},{"t":10.26,"w":"wait,"},{"t":10.9,"w":"no"},{"t":11.26,"w":"noise"},{"t":11.72,"w":"in"},{"t":11.92,"w":"my"},{"t":12.04,"w":"head"},{"t":12.38,"w":"tonight"},{"t":16.9,"w":"Ay"},{"t":17,"w":"-yi"},{"t":17.18,"w":"-yi,"},{"t":17.5,"w":"we"},{"t":19.06,"w":"outside"},{"t":19.16,"w":"now"},{"t":20.02,"w":"Ay"},{"t":20.74,"w":"-yi"},{"t":20.96,"w":"-yi,"},{"t":22.18,"w":"sun"},{"t":22.3,"w":"goin'"},{"t":22.9,"w":"down"},{"t":24.05,"w":"Ay"},{"t":24.5,"w":"-yi"},{"t":24.64,"w":"-yi,"},{"t":25.68,"w":"let"},{"t":25.78,"w":"the"},{"t":25.88,"w":"bass"},{"t":26.12,"w":"roll"},{"t":26.32,"w":"up"},{"t":27.54,"w":"Let"},{"t":27.64,"w":"the"},{"t":27.78,"w":"mind"},{"t":27.96,"w":"let"},{"t":28.14,"w":"go"},{"t":39.71,"w":"Mmm,"},{"t":40.56,"w":"I"},{"t":41.48,"w":"-I"},{"t":42.7,"w":"-I"},{"t":42.96,"w":"had"},{"t":43.06,"w":"too"},{"t":43.4,"w":"much"},{"t":43.72,"w":"livin'"},{"t":44.22,"w":"on"},{"t":44.32,"w":"my"},{"t":44.6,"w":"shoulders"},{"t":46.78,"w":"Too"},{"t":46.88,"w":"many"},{"t":47.22,"w":"doubts"},{"t":47.72,"w":"openin'"},{"t":48.54,"w":"my"},{"t":48.72,"w":"mind"},{"t":49.24,"w":"Same"},{"t":50.42,"w":"old"},{"t":51.02,"w":"walls"},{"t":51.54,"w":"gettin'"},{"t":52.18,"w":"colder"},{"t":52.78,"w":"Same"},{"t":54.18,"w":"old"},{"t":54.7,"w":"clocks"},{"t":55.24,"w":"stealin'"},{"t":55.9,"w":"time"},{"t":57.47,"w":"Then"},{"t":57.68,"w":"the"},{"t":57.78,"w":"strings"},{"t":57.9,"w":"came"},{"t":58.16,"w":"in"},{"t":58.48,"w":"like"},{"t":58.68,"w":"sunlight"},{"t":59.06,"w":"Mmm"},{"t":60.86,"w":"Bassline"},{"t":61.48,"w":"movin'"},{"t":62.02,"w":"through"},{"t":62.12,"w":"the"},{"t":62.36,"w":"smoke"},{"t":62.68,"w":"One"},{"t":64.7,"w":"deep"},{"t":65.16,"w":"breath"},{"t":65.5,"w":"and"},{"t":65.68,"w":"I"},{"t":65.9,"w":"felt"},{"t":66.1,"w":"life"},{"t":68.48,"w":"Pulled"},{"t":68.64,"w":"me"},{"t":68.88,"w":"back"},{"t":69.22,"w":"before"},{"t":69.58,"w":"I"},{"t":69.88,"w":"broke"},{"t":70.28,"w":"Now"},{"t":72.7,"w":"that"},{"t":72.8,"w":"beach"},{"t":72.98,"w":"got"},{"t":73.16,"w":"bottles"},{"t":73.6,"w":"blowin'"},{"t":75.46,"w":"Little"},{"t":76.14,"w":"fire"},{"t":76.82,"w":"by"},{"t":77.12,"w":"the"},{"t":77.28,"w":"shore"},{"t":77.72,"w":"Laptop"},{"t":79.76,"w":"closed"},{"t":80,"w":"but"},{"t":80.18,"w":"the"},{"t":80.3,"w":"soul"},{"t":80.58,"w":"still"},{"t":80.92,"w":"lordin'"},{"t":81.98,"w":"I"},{"t":82.5,"w":"don't"},{"t":83.6,"w":"need"},{"t":83.74,"w":"to"},{"t":83.96,"w":"chase"},{"t":84.34,"w":"no"},{"t":84.72,"w":"more"},{"t":85.2,"w":"Pour"},{"t":87.26,"w":"a"},{"t":88.1,"w":"little"},{"t":88.22,"w":"something"},{"t":88.48,"w":"sweet"},{"t":88.86,"w":"Roll"},{"t":89.32,"w":"a"},{"t":89.44,"w":"little"},{"t":89.6,"w":"piece"},{"t":89.88,"w":"of"},{"t":89.98,"w":"ice"},{"t":89.98,"w":"And"},{"t":89.98,"w":"I'm"},{"t":89.98,"w":"back"},{"t":89.98,"w":"to"},{"t":89.98,"w":"where"},{"t":89.98,"w":"I"},{"t":89.98,"w":"belong"},{"t":90,"w":"If"},{"t":90.36,"w":"you"},{"t":90.5,"w":"need,"},{"t":90.9,"w":"eat"},{"t":91.22,"w":"the"},{"t":91.38,"w":"fruit,"},{"t":91.8,"w":"taste"},{"t":92.16,"w":"the"},{"t":92.42,"w":"heat"},{"t":92.68,"w":"Find"},{"t":93.12,"w":"your"},{"t":93.3,"w":"balance"},{"t":93.76,"w":"in"},{"t":94.04,"w":"the"},{"t":94.18,"w":"feast"},{"t":94.52,"w":"No"},{"t":94.9,"w":"shame"},{"t":95.22,"w":"in"},{"t":95.54,"w":"a"},{"t":95.62,"w":"joyful"},{"t":95.98,"w":"body"},{"t":96.42,"w":"No"},{"t":96.76,"w":"fear"},{"t":97.08,"w":"in"},{"t":97.42,"w":"a"},{"t":97.5,"w":"healing"},{"t":97.84,"w":"night"},{"t":98.28,"w":"If"},{"t":98.78,"w":"the"},{"t":98.88,"w":"world"},{"t":99.24,"w":"gets"},{"t":99.4,"w":"loud"},{"t":99.64,"w":"around"},{"t":100.06,"w":"me"},{"t":100.38,"w":"I'ma"},{"t":100.74,"w":"dance"},{"t":101.14,"w":"until"},{"t":101.38,"w":"it's"},{"t":101.78,"w":"light"},{"t":102.28,"w":"Empty"},{"t":103.28,"w":"your"},{"t":103.6,"w":"mind,"},{"t":104.68,"w":"fill"},{"t":104.78,"w":"up"},{"t":105.24,"w":"your"},{"t":105.5,"w":"heart"},{"t":105.98,"w":"Move"},{"t":106.66,"w":"with"},{"t":107.06,"w":"the"},{"t":107.32,"w":"light,"},{"t":108.02,"w":"let"},{"t":108.12,"w":"the"},{"t":108.32,"w":"good"},{"t":108.64,"w":"life"},{"t":109.06,"w":"start"},{"t":109.62,"w":"Love"},{"t":110.56,"w":"who"},{"t":110.74,"w":"you"},{"t":111.12,"w":"love,"},{"t":112.3,"w":"hold"},{"t":112.4,"w":"who"},{"t":112.68,"w":"you"},{"t":113.04,"w":"hold"},{"t":113.42,"w":"We"},{"t":113.92,"w":"came"},{"t":114.26,"w":"from"},{"t":114.68,"w":"the"},{"t":114.86,"w":"void,"},{"t":115.44,"w":"now"},{"t":115.6,"w":"we"},{"t":115.78,"w":"turnin'"},{"t":116.44,"w":"into"},{"t":116.68,"w":"gold"},{"t":117.16,"w":"Oh"},{"t":117.62,"w":"-oh,"},{"t":117.8,"w":"oh"},{"t":117.94,"w":"-oh,"},{"t":118.21,"w":"oh"},{"t":118.42,"w":"-oh,"},{"t":118.88,"w":"oh"},{"t":119.14,"w":"-oh"},{"t":119.44,"w":"Oh,"},{"t":119.74,"w":"let"},{"t":120.26,"w":"it"},{"t":120.5,"w":"go"},{"t":121.24,"w":"Oh"},{"t":121.52,"w":"-oh,"},{"t":121.88,"w":"oh"},{"t":121.98,"w":"-oh,"},{"t":122.16,"w":"oh"},{"t":122.16,"w":"-oh,"},{"t":122.68,"w":"oh"},{"t":122.96,"w":"-oh"},{"t":123.02,"w":"Nice"},{"t":123.28,"w":"and"},{"t":124.28,"w":"slow"},{"t":124.7,"w":"Oh"},{"t":125.24,"w":"-oh,"},{"t":125.66,"w":"oh"},{"t":125.78,"w":"-oh,"},{"t":125.9,"w":"oh"},{"t":125.9,"w":"-oh,"},{"t":126.46,"w":"oh"},{"t":126.64,"w":"-oh"},{"t":126.68,"w":"Feel"},{"t":127.18,"w":"your"},{"t":127.94,"w":"soul"},{"t":128.34,"w":"We"},{"t":128.92,"w":"came"},{"t":129.32,"w":"from"},{"t":129.7,"w":"the"},{"t":129.86,"w":"void"},{"t":130.36,"w":"Now"},{"t":130.58,"w":"we"},{"t":130.8,"w":"turnin'"},{"t":131.4,"w":"into"},{"t":131.7,"w":"gold"},{"t":132.9,"w":"Why"},{"t":133.46,"w":"ya"},{"t":133.56,"w":"slow?"},{"t":137.12,"w":"Bass"},{"t":137.22,"w":"slow"},{"t":137.64,"w":"Eyes"},{"t":138.22,"w":"close"},{"t":139.58,"w":"Let,"},{"t":140.02,"w":"let,"},{"t":140.24,"w":"let,"},{"t":140.68,"w":"let,"},{"t":140.74,"w":"let"},{"t":140.86,"w":"go"},{"t":142.4,"w":"Mmm,"},{"t":142.96,"w":"me"},{"t":144.26,"w":"It's"},{"t":144.48,"w":"still"},{"t":144.7,"w":"loadin'"},{"t":145.44,"w":"Oh,"},{"t":145.7,"w":"oh,"},{"t":146,"w":"oh,"},{"t":146.14,"w":"oh"},{"t":146.32,"w":"-oh,"},{"t":146.46,"w":"oh"},{"t":146.46,"w":"-oh"},{"t":146.46,"w":"Heart"},{"t":146.52,"w":"cleansin'"},{"t":147.12,"w":"my"},{"t":147.14,"w":"soul"},{"t":147.14,"w":"still"},{"t":147.38,"w":"blowing"},{"t":148.08,"w":"cocktails"},{"t":148.56,"w":"and"},{"t":149.56,"w":"cold"},{"t":149.86,"w":"on"},{"t":150.06,"w":"the"},{"t":150.12,"w":"table"},{"t":150.42,"w":"dreams"},{"t":150.82,"w":"in"},{"t":151.14,"w":"the"},{"t":151.4,"w":"blue"},{"t":151.64,"w":"screen"},{"t":151.9,"w":"light"},{"t":152.16,"w":"i"},{"t":152.61,"w":"was"},{"t":152.8,"w":"building"},{"t":153.08,"w":"when"},{"t":153.32,"w":"i"},{"t":153.52,"w":"was"},{"t":153.84,"w":"able"},{"t":154.16,"w":"now"},{"t":154.44,"w":"i'm"},{"t":154.78,"w":"living"},{"t":155.04,"w":"what"},{"t":155.44,"w":"i"},{"t":155.64,"w":"type"},{"t":156,"w":"no"},{"t":156.34,"w":"more"},{"t":156.6,"w":"waiting"},{"t":157.02,"w":"on"},{"t":157.3,"w":"permission"},{"t":157.82,"w":"no"},{"t":158.2,"w":"more"},{"t":158.5,"w":"saving"},{"t":158.9,"w":"joy"},{"t":159.2,"w":"for"},{"t":159.38,"w":"later"},{"t":159.68,"w":"every"},{"t":160.26,"w":"heartbeat"},{"t":160.82,"w":"is"},{"t":161.14,"w":"a"},{"t":161.26,"w":"rhythm"},{"t":161.72,"w":"every"},{"t":162.12,"w":"breath"},{"t":162.52,"w":"a"},{"t":162.68,"w":"little"},{"t":162.98,"w":"savor"},{"t":163.56,"w":"she"},{"t":163.8,"w":"got"},{"t":164.08,"w":"flowers"},{"t":164.36,"w":"in"},{"t":164.6,"w":"her"},{"t":164.66,"w":"hair"},{"t":164.9,"w":"now"},{"t":165.16,"w":"he"},{"t":165.48,"w":"he"},{"t":165.74,"w":"got"},{"t":165.96,"w":"smoke"},{"t":166.2,"w":"up"},{"t":166.5,"w":"in"},{"t":166.72,"w":"the"},{"t":166.86,"w":"air"},{"t":167.04,"w":"everybody"},{"t":167.86,"w":"got"},{"t":168.28,"w":"a"},{"t":168.4,"w":"story"},{"t":168.68,"w":"everybody"},{"t":169.74,"w":"needs"},{"t":170.42,"w":"repair"},{"t":170.78,"w":"but"},{"t":171.12,"w":"tonight"},{"t":171.3,"w":"we"},{"t":171.58,"w":"keep"},{"t":171.86,"w":"it"},{"t":172.1,"w":"tender"},{"t":172.56,"w":"no"},{"t":172.96,"w":"judgment"},{"t":173.16,"w":"in"},{"t":173.74,"w":"the"},{"t":173.92,"w":"room"},{"t":174.28,"w":"it's"},{"t":174.66,"w":"the"},{"t":174.78,"w":"ocean"},{"t":175.28,"w":"drums"},{"t":175.56,"w":"and"},{"t":175.84,"w":"violins"},{"t":176.52,"w":"cooking"},{"t":176.78,"w":"silver"},{"t":177.1,"w":"through"},{"t":177.46,"w":"the"},{"t":177.7,"w":"moon"},{"t":178.08,"w":"have"},{"t":178.62,"w":"a"},{"t":178.68,"w":"drink"},{"t":178.92,"w":"but"},{"t":179.1,"w":"keep"},{"t":179.32,"w":"your"},{"t":179.56,"w":"spirit"},{"t":180,"w":"take"},{"t":180.26,"w":"a"},{"t":180.46,"w":"puff"},{"t":180.74,"w":"but"},{"t":180.94,"w":"keep"},{"t":181.18,"w":"your"},{"t":181.44,"w":"name"},{"t":181.72,"w":"taste"},{"t":182.1,"w":"the"},{"t":182.34,"w":"world"},{"t":182.68,"w":"but"},{"t":182.82,"w":"don't"},{"t":183.08,"w":"disappear"},{"t":183.32,"w":"any"},{"t":183.82,"w":"pleasure"},{"t":184.08,"w":"don't"},{"t":184.52,"w":"have"},{"t":184.62,"w":"to"},{"t":184.82,"w":"become"},{"t":185.08,"w":"pain"},{"t":185.5,"w":"pass"},{"t":185.86,"w":"the"},{"t":186.1,"w":"plate"},{"t":186.42,"w":"and"},{"t":186.58,"w":"pass"},{"t":186.82,"w":"forgiveness"},{"t":187.42,"w":"raise"},{"t":187.78,"w":"your"},{"t":187.98,"w":"glass"},{"t":188.3,"w":"and"},{"t":188.5,"w":"bless"},{"t":188.74,"w":"the"},{"t":188.88,"w":"air"},{"t":189.24,"w":"we"},{"t":189.64,"w":"are"},{"t":189.82,"w":"only"},{"t":190.26,"w":"here"},{"t":190.6,"w":"a"},{"t":190.78,"w":"minute"},{"t":191.08,"w":"so"},{"t":191.46,"w":"be"},{"t":191.64,"w":"kind"},{"t":192,"w":"while"},{"t":192.24,"w":"we"},{"t":192.5,"w":"are"},{"t":192.66,"w":"into"},{"t":193.14,"w":"your"},{"t":193.6,"w":"mind"},{"t":194,"w":"fill"},{"t":194.86,"w":"up"},{"t":195.22,"w":"your"},{"t":195.54,"w":"heart"},{"t":195.94,"w":"move"},{"t":196.72,"w":"with"},{"t":197.06,"w":"the"},{"t":197.3,"w":"night"},{"t":197.74,"w":"let"},{"t":198.06,"w":"the"},{"t":198.27,"w":"good"},{"t":198.62,"w":"life"},{"t":199.1,"w":"start"},{"t":199.48,"w":"love"},{"t":200.48,"w":"who"},{"t":200.72,"w":"you"},{"t":201.06,"w":"love"},{"t":201.48,"w":"hold"},{"t":202.38,"w":"who"},{"t":223.33,"w":"listen"},{"t":223.46,"w":"you"},{"t":224.64,"w":"don't"},{"t":224.84,"w":"have"},{"t":224.96,"w":"to"},{"t":225.06,"w":"answer"},{"t":225.36,"w":"every"},{"t":225.74,"w":"alarm"},{"t":226.08,"w":"you"},{"t":227.71,"w":"don't"},{"t":227.92,"w":"have"},{"t":228.06,"w":"to"},{"t":228.2,"w":"carry"},{"t":228.44,"w":"every"},{"t":228.82,"w":"ghost"},{"t":229.12,"w":"so"},{"t":229.6,"w":"some"},{"t":230.64,"w":"nights"},{"t":231.02,"w":"are"},{"t":231.24,"w":"made"},{"t":231.42,"w":"for"},{"t":231.62,"w":"healing"},{"t":231.96,"w":"you"},{"t":232.96,"w":"some"},{"t":233.63,"w":"nights"},{"t":233.9,"w":"are"},{"t":234.04,"w":"made"},{"t":234.24,"w":"for"},{"t":234.34,"w":"hands"},{"t":234.82,"w":"in"},{"t":235.22,"w":"the"},{"t":235.32,"w":"air"},{"t":235.5,"w":"some"},{"t":237.25,"w":"nights"},{"t":237.72,"w":"you"},{"t":239.04,"w":"just"},{"t":239.24,"w":"thank"},{"t":239.5,"w":"the"},{"t":239.68,"w":"sky"},{"t":240.94,"w":"that"},{"t":242.14,"w":"your"},{"t":242.38,"w":"heart"},{"t":242.74,"w":"still"},{"t":243.32,"w":"knows"},{"t":243.8,"w":"how"},{"t":245.02,"w":"to"},{"t":245.12,"w":"be"},{"t":245.42,"w":"i"},{"t":246.82,"w":"go"},{"t":247.26,"w":"quiet"},{"t":248,"w":"go"},{"t":249.06,"w":"by"},{"t":249.7,"w":"baseline"},{"t":250.96,"w":"rolling"},{"t":251.64,"w":"ocean"},{"t":252.46,"w":"tie"},{"t":253.42,"w":"i"},{"t":254.36,"w":"go"},{"t":254.74,"w":"quiet"},{"t":255.5,"w":"go"},{"t":256.54,"w":"by"},{"t":257.18,"w":"this"},{"t":257.84,"w":"summer"},{"t":258.24,"w":"different"},{"t":259.08,"w":"we"},{"t":259.68,"w":"still"},{"t":259.88,"w":"alive"},{"t":262.96,"w":"you're"},{"t":263.08,"w":"hard"},{"t":263.82,"w":"move"},{"t":264.48,"w":"with"},{"t":264.58,"w":"the"},{"t":265.06,"w":"night"},{"t":265.32,"w":"let"},{"t":265.58,"w":"the"},{"t":265.79,"w":"good"},{"t":266.1,"w":"life"},{"t":266.64,"w":"start"},{"t":267.04,"w":"love"},{"t":267.96,"w":"who"},{"t":268.2,"w":"you"},{"t":268.62,"w":"love"},{"t":269.7,"w":"hold"},{"t":269.88,"w":"who"},{"t":270.12,"w":"you"},{"t":270.5,"w":"hold"},{"t":270.94,"w":"we"},{"t":271.58,"w":"came"},{"t":271.76,"w":"from"},{"t":272.44,"w":"the"},{"t":272.62,"w":"void"},{"t":273.9,"w":"now"},{"t":274,"w":"we"},{"t":274.3,"w":"turn"},{"t":274.56,"w":"it"},{"t":275.01,"w":"into"},{"t":275.54,"w":"gold"},{"t":276.12,"w":"we"},{"t":277.54,"w":"outshine"},{"t":279.24,"w":"them"},{"t":279.7,"w":"sun"},{"t":281.92,"w":"coming"},{"t":283.12,"w":"down"},{"t":283.9,"w":"wind"},{"t":284.32,"w":"slow"},{"t":285.28,"w":"bass"},{"t":286.26,"w":"blow"},{"t":287.14,"w":"eyes"},{"t":288.12,"w":"closed"},{"t":289.08,"w":"let"},{"t":289.74,"w":"go"},{"t":296.64,"w":"We"},{"t":296.74,"w":"came"},{"t":297.1,"w":"from"},{"t":298.14,"w":"the"},{"t":298.6,"w":"boy"},{"t":302,"w":"Now"},{"t":303.07,"w":"we"},{"t":303.34,"w":"turn"},{"t":303.72,"w":"it"},{"t":304.14,"w":"into"},{"t":304.64,"w":"gold"}]}$j$::jsonb WHERE id = 'void-into-gold' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:03.16] Mmm, this summer feel different
+[00:08.76] No rush, no wait, no noise in my head tonight
+[00:16.87] Ay-yi-yi, we outside now Ay-yi-yi,
+[00:22.15] sun goin' down
+[00:24.03] Ay-yi-yi,
+[00:25.66] let the bass roll up
+[Verse 1]
+[00:27.52] Let the mind let go
+[00:39.69] Mmm, I-I-I had too much livin' on my shoulders
+[00:46.76] Too many doubts openin' my mind
+[00:49.22] Same old walls gettin' colder Same old clocks stealin' time
+[00:57.45] Then the strings came in like sunlight
+[00:59.04] Mmm
+[01:00.84] Bassline movin' through the smoke One deep breath and I felt life
+[01:08.46] Pulled me back before I broke Now that beach got bottles blowin'
+[01:15.44] Little fire by the shore Laptop closed but the soul still lordin'
+[01:21.96] I don't need to chase no more Pour a little something sweet
+[01:28.84] Roll a little piece of ice And I'm back to where I belong
+[Pre-Chorus]
+[01:29.98] If you need,
+[01:30.88] eat the fruit,
+[01:31.78] taste the heat Find your balance in the feast
+[01:34.50] No shame in a joyful body No fear in a healing night
+[01:38.26] If the world gets loud around me I'ma dance until it's light
+[01:42.26] Empty your mind,
+[01:44.66] fill up your heart Move with the light,
+[01:47.00] let the good life start
+[01:49.60] Love who you love,
+[01:52.28] hold who you hold We came from the void,
+[01:55.42] now we turnin' into gold
+[01:57.14] Oh-oh, oh-oh, oh-oh, oh-oh Oh, let it go
+[02:01.22] Oh-oh, oh-oh, oh-oh, oh-oh Nice and slow
+[02:04.68] Oh-oh, oh-oh, oh-oh, oh-oh Feel your soul
+[02:08.32] We came from the void Now we turnin' into gold
+[02:12.88] Why ya slow?
+[Chorus]
+[02:17.10] Bass slow Eyes close
+[02:19.56] Let, let, let, let, let go
+[02:22.38] Mmm, me
+[02:24.23] It's still loadin'
+[02:25.42] Oh, oh, oh, oh-oh, oh-oh Heart cleansin' my soul
+[02:27.12] still blowing cocktails and cold on the table
+[02:30.40] dreams in the blue screen light i was building
+[02:33.06] when i was able now i'm living what i type no more
+[02:36.58] waiting on permission no more saving joy for later
+[02:39.66] every heartbeat is a rhythm every breath a little
+[02:42.96] savor she got flowers in her hair now he he got
+[02:45.94] smoke up in the air everybody got a story everybody
+[02:49.72] needs repair but tonight we keep it tender no
+[02:52.94] judgment in the room it's the ocean drums and
+[Post-Chorus]
+[02:55.82] violins cooking silver through the moon have a
+[02:58.66] drink but keep your spirit take a puff but keep
+[03:01.16] your name taste the world but don't disappear
+[03:03.30] any pleasure don't have to become pain pass the
+[03:06.08] plate and pass forgiveness raise your glass and
+[03:08.48] bless the air we are only here a minute so be kind
+[03:11.98] while we are into your mind fill up your heart
+[03:15.92] move with the night let the good life start love who you love
+[03:21.46] hold who
+[Verse 2]
+[03:43.31] listen you don't have to answer every
+[03:45.72] alarm you don't have to carry every ghost
+[03:49.10] so some nights are made for healing
+[03:51.94] you
+[03:52.94] some nights are made for hands in the
+[03:55.30] air some nights you just thank the sky
+[04:00.92] that your heart still knows how
+[04:04.00] to be
+[04:05.40] i go quiet go by baseline rolling ocean tie i go
+[04:14.72] quiet go by this summer different we still alive
+[04:22.94] you're hard
+[Pre-Chorus 2]
+[04:23.80] move with the night let the good life start love who you love
+[04:29.67] hold who you hold we came from the void
+[Chorus]
+[04:33.88] now we turn it into gold
+[04:36.10] we outshine them sun coming down wind
+[04:44.30] slow bass blow eyes closed let go
+[04:56.62] We came from the boy
+[05:01.98] Now we turn it into gold
+$j$ WHERE id = 'void-into-gold' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This song is a sultry, spiritual journey about releasing mental burdens and societal pressure to embrace a moment of healing and transformation from darkness into light. It blends Afro R&B grooves with electronic textures to create an atmosphere where vulnerability meets uplifting empowerment.","overallMood":"Sultry Uplifting Spiritual","themes":["Transformation","Healing","Release of Guilt","Summer Night Ambiance","Self-Love"],"palette":["#1A0B2E","#4A3768","#D4AF37","#FDF5E6"],"sections":[{"name":"Intro","emotion":"Anticipation and relaxation as the sun sets, inviting a slow bassline to roll up.","intensity":0.4,"colorHint":"#1a0b2e","imageryPrompt":"Deep twilight sky over a calm ocean horizon, silhouettes of palm trees swaying gently in the breeze, fading warm orange light mixing with indigo shadows, soft dust motes dancing in a gentle wind.","start":3.16},{"name":"Verse 1","emotion":"Reflective weariness turning into relief as warmth replaces cold walls.","intensity":0.69,"colorHint":"#2e1a38","imageryPrompt":"Dimly lit cozy interior transitioning to a warm beachside view with smoke rising from a cigarette and ice cubes melting in glasses on wooden tables.","start":27.52},{"name":"Pre-Chorus","emotion":"Awakening joy, finding balance, and preparing for an emotional release.","intensity":0.9,"colorHint":"#4a3768","imageryPrompt":"Vibrant tropical fruit piled high on a platter glowing in candlelight, steam rising from hot food, golden light filtering through lush green leaves.","start":89.98},{"name":"Chorus","emotion":"Triumphant transformation and shining brightly after the journey.","intensity":0.76,"colorHint":"#ffd700","imageryPrompt":"A figure completely engulfed in radiant golden light standing on a beach at night, surrounded by floating embers that form shapes of flowers and music notes.","start":137.1},{"name":"Post-Chorus","emotion":"Tender forgiveness and mindful appreciation of fleeting moments.","intensity":0.3,"colorHint":"#fdf5e6","imageryPrompt":"Soft focus shot of a hand passing a glass to another across a table, blurred background of string instruments glowing like silver ribbons in the moonlight.","start":175.82},{"name":"Verse 2","emotion":"Quiet gratitude and acceptance after letting go of internal alarms.","intensity":0.12,"colorHint":"#3d2b50","imageryPrompt":"A solitary figure standing by the ocean watching waves recede, hands raised slightly in thanks to the sky, calm blue water meeting a darkening purple horizon.","start":223.31},{"name":"Pre-Chorus 2","emotion":"Building momentum towards transformation with love and light.","intensity":0.22,"colorHint":"#8b6c42","imageryPrompt":"Silhouette of a dancer moving through swirling lights that shift from dark smoke to brilliant sparks.","start":263.8}],"keywords":[{"word":"void","emotion":"Dark emptiness waiting to be filled","imageryPrompt":"A deep black cavern mouth opening into the sea, surrounded by swirling dark smoke that hints at hidden light within."},{"word":"gold","emotion":"Precious transformation and value found in self","imageryPrompt":"Liquid gold pouring from a cracked vessel onto sand, glowing intensely against the night sky like captured stars."},{"word":"smoke","emotion":"Mystery, relaxation, and clearing confusion","imageryPrompt":"Thick aromatic smoke curling upwards in slow motion around candle flames on a beach table at dusk."},{"word":"bassline","emotion":"Pulsating heartbeat driving the rhythm forward","imageryPrompt":"Visible sound waves rippling through water like deep ocean currents, glowing faintly blue and purple beneath the surface."}]}$j$::jsonb) WHERE id = 'void-into-gold' AND planet->'analysis' IS NULL;
+
+-- void-into-gold-forged-above-gold-mix: 881 words, 6 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":1.14,"w":"This"},{"t":2.24,"w":"summer"},{"t":2.36,"w":"still"},{"t":2.66,"w":"feel"},{"t":3.06,"w":"different"},{"t":3.69,"w":"But"},{"t":4.84,"w":"this"},{"t":5.68,"w":"ain't"},{"t":5.94,"w":"no"},{"t":6,"w":"vacation"},{"t":6.46,"w":"This"},{"t":7.01,"w":"is"},{"t":7.18,"w":"pressure"},{"t":7.42,"w":"This"},{"t":8.35,"w":"is"},{"t":8.52,"w":"fire"},{"t":8.92,"w":"This"},{"t":9.58,"w":"is"},{"t":9.74,"w":"where"},{"t":9.88,"w":"the"},{"t":10,"w":"void"},{"t":10.28,"w":"learns"},{"t":10.58,"w":"its"},{"t":10.86,"w":"name"},{"t":12.06,"w":"Bill"},{"t":12.82,"w":"Ross"},{"t":15.76,"w":"Pressure"},{"t":15.86,"w":"make"},{"t":16,"w":"go"},{"t":16.24,"w":"Pressure"},{"t":16.78,"w":"make"},{"t":17,"w":"more"},{"t":17.26,"w":"Pressure"},{"t":17.74,"w":"make"},{"t":17.88,"w":"more"},{"t":19.44,"w":"We"},{"t":20.2,"w":"outside"},{"t":20.54,"w":"now"},{"t":23.26,"w":"Feet"},{"t":23.68,"w":"on"},{"t":24.3,"w":"the"},{"t":24.5,"w":"ground"},{"t":25.97,"w":"Let"},{"t":27.14,"w":"the"},{"t":27.28,"w":"bass"},{"t":27.5,"w":"roll"},{"t":27.68,"w":"up"},{"t":27.97,"w":"From"},{"t":28.82,"w":"the"},{"t":29.18,"w":"void"},{"t":29.4,"w":"to"},{"t":29.74,"w":"the"},{"t":30.02,"w":"gold"},{"t":30.36,"w":"Weak,"},{"t":31.16,"w":"weak,"},{"t":31.5,"w":"weak,"},{"t":31.98,"w":"weak"},{"t":32.26,"w":"I"},{"t":32.7,"w":"had"},{"t":33.12,"w":"too"},{"t":33.3,"w":"much"},{"t":33.66,"w":"Wasted"},{"t":34.22,"w":"nebby"},{"t":34.6,"w":"on"},{"t":34.68,"w":"my"},{"t":34.82,"w":"shoulders"},{"t":35.34,"w":"Too"},{"t":37.02,"w":"many"},{"t":37.32,"w":"tabs"},{"t":37.78,"w":"in"},{"t":38.28,"w":"my"},{"t":38.46,"w":"mind"},{"t":38.86,"w":"Too"},{"t":39.23,"w":"many"},{"t":39.4,"w":"nights"},{"t":39.68,"w":"getting"},{"t":39.88,"w":"colder"},{"t":40.3,"w":"Same"},{"t":40.74,"w":"walls,"},{"t":41.3,"w":"same"},{"t":41.54,"w":"clock"},{"t":41.86,"w":"Same"},{"t":42.14,"w":"fight"},{"t":42.46,"w":"with"},{"t":42.68,"w":"time"},{"t":43.71,"w":"Same"},{"t":44.06,"w":"ghost"},{"t":44.46,"w":"in"},{"t":44.82,"w":"the"},{"t":44.98,"w":"room"},{"t":45.26,"w":"You"},{"t":45.78,"w":"ain't"},{"t":46.3,"w":"gon'"},{"t":46.5,"w":"shine"},{"t":47.52,"w":"But"},{"t":47.8,"w":"that"},{"t":47.92,"w":"drums"},{"t":48.12,"w":"came"},{"t":48.32,"w":"in"},{"t":48.6,"w":"like"},{"t":48.74,"w":"a"},{"t":48.88,"w":"war"},{"t":49.04,"w":"card"},{"t":49.3,"w":"Strings"},{"t":49.82,"w":"lit"},{"t":49.96,"w":"sharp,"},{"t":50.28,"w":"make"},{"t":50.4,"w":"a"},{"t":50.5,"w":"whole"},{"t":50.64,"w":"floor"},{"t":50.92,"w":"talk"},{"t":51.14,"w":"One"},{"t":51.34,"w":"deep"},{"t":51.58,"w":"breath,"},{"t":51.94,"w":"then"},{"t":52.02,"w":"I"},{"t":52.12,"w":"stood"},{"t":52.28,"w":"up"},{"t":52.54,"w":"Had"},{"t":52.93,"w":"to"},{"t":53.08,"w":"stop"},{"t":53.28,"w":"asking"},{"t":53.5,"w":"life"},{"t":53.76,"w":"when"},{"t":53.92,"w":"it's"},{"t":54.04,"w":"my"},{"t":54.12,"w":"time"},{"t":54.36,"w":"to"},{"t":54.52,"w":"take"},{"t":54.88,"w":"Laptop"},{"t":55.38,"w":"closed"},{"t":55.66,"w":"but"},{"t":55.82,"w":"the"},{"t":55.9,"w":"soul"},{"t":56.1,"w":"still"},{"t":56.24,"w":"loadin'"},{"t":57.14,"w":"Fit,"},{"t":57.48,"w":"fit,"},{"t":57.84,"w":"fit"},{"t":57.84,"w":"Pants"},{"t":57.96,"w":"still"},{"t":58.12,"w":"dirty"},{"t":58.56,"w":"But"},{"t":59,"w":"the"},{"t":59.14,"w":"heart's"},{"t":59.78,"w":"still"},{"t":60.08,"w":"golden"},{"t":61.15,"w":"I"},{"t":61.7,"w":"was"},{"t":61.96,"w":"down"},{"t":62.18,"w":"in"},{"t":62.38,"w":"the"},{"t":62.44,"w":"void"},{"t":62.66,"w":"with"},{"t":62.8,"w":"the"},{"t":62.92,"w":"lights"},{"t":63.2,"w":"gone"},{"t":63.54,"w":"low"},{"t":64.23,"w":"Knock,"},{"t":64.74,"w":"knock,"},{"t":64.98,"w":"knock,"},{"t":65.08,"w":"knock,"},{"t":65.2,"w":"beat"},{"t":65.38,"w":"on"},{"t":65.56,"w":"the"},{"t":65.68,"w":"door"},{"t":66.04,"w":"For"},{"t":66.56,"w":"the"},{"t":66.64,"w":"whole"},{"t":67.06,"w":"thing"},{"t":67.3,"w":"glow,"},{"t":67.96,"w":"glow,"},{"t":68.4,"w":"glow,"},{"t":68.86,"w":"glow,"},{"t":69.28,"w":"glow"},{"t":69.58,"w":"I"},{"t":70.42,"w":"was"},{"t":70.96,"w":"not"},{"t":71.24,"w":"broken"},{"t":71.97,"w":"I"},{"t":72.1,"w":"was"},{"t":72.32,"w":"being"},{"t":72.64,"w":"remade"},{"t":73.62,"w":"I"},{"t":74.56,"w":"was"},{"t":74.66,"w":"not"},{"t":75,"w":"buried"},{"t":75.46,"w":"I"},{"t":75.92,"w":"was"},{"t":76.4,"w":"under"},{"t":76.5,"w":"the"},{"t":76.82,"w":"flame"},{"t":78.05,"w":"Empty"},{"t":78.46,"w":"out"},{"t":78.68,"w":"the"},{"t":78.82,"w":"fear"},{"t":79.2,"w":"Fill"},{"t":79.49,"w":"the"},{"t":79.7,"w":"chest"},{"t":80.08,"w":"with"},{"t":80.64,"w":"fire"},{"t":81.06,"w":"Step"},{"t":81.6,"w":"through"},{"t":82.4,"w":"the"},{"t":82.52,"w":"love"},{"t":83.17,"w":"Climb"},{"t":83.38,"w":"a"},{"t":83.52,"w":"little"},{"t":83.98,"w":"higher"},{"t":85.14,"w":"No"},{"t":85.24,"w":"shame"},{"t":85.62,"w":"in"},{"t":86.04,"w":"the"},{"t":86.2,"w":"scars"},{"t":86.54,"w":"No"},{"t":86.94,"w":"fear"},{"t":87.32,"w":"In"},{"t":87.82,"w":"the"},{"t":88.14,"w":"climb"},{"t":88.42,"w":"If"},{"t":88.62,"w":"the"},{"t":89,"w":"world"},{"t":89.4,"w":"get"},{"t":89.52,"w":"loud"},{"t":89.82,"w":"around"},{"t":90.16,"w":"me"},{"t":90.5,"w":"I'ma"},{"t":90.88,"w":"turn"},{"t":91.18,"w":"it"},{"t":91.46,"w":"into"},{"t":91.78,"w":"mine"},{"t":92.2,"w":"We"},{"t":92.76,"w":"came"},{"t":93.08,"w":"from"},{"t":93.42,"w":"the"},{"t":93.7,"w":"void"},{"t":94.4,"w":"Now"},{"t":94.5,"w":"we"},{"t":94.66,"w":"turn"},{"t":94.96,"w":"it"},{"t":95.3,"w":"into"},{"t":95.6,"w":"gold"},{"t":96.06,"w":"Gold"},{"t":96.92,"w":"in"},{"t":97.18,"w":"the"},{"t":97.44,"w":"heart"},{"t":98.18,"w":"Gold"},{"t":98.46,"w":"in"},{"t":99.22,"w":"the"},{"t":99.36,"w":"soul"},{"t":99.92,"w":"Built"},{"t":100.62,"w":"from"},{"t":100.99,"w":"the"},{"t":101.2,"w":"question"},{"t":101.7,"w":"Raised"},{"t":102.34,"w":"by"},{"t":102.7,"w":"the"},{"t":103.12,"w":"cold"},{"t":103.56,"w":"We"},{"t":104.04,"w":"came"},{"t":104.7,"w":"from"},{"t":104.8,"w":"the"},{"t":105.02,"w":"void"},{"t":105.5,"w":"Now"},{"t":105.76,"w":"we"},{"t":105.92,"w":"turn"},{"t":106.26,"w":"it"},{"t":106.72,"w":"into"},{"t":106.82,"w":"gold"},{"t":109.34,"w":"But"},{"t":109.44,"w":"we"},{"t":109.7,"w":"aiming"},{"t":110.08,"w":"past"},{"t":110.4,"w":"gold"},{"t":111.06,"w":"Make"},{"t":113.02,"w":"the"},{"t":113.44,"w":"whole"},{"t":113.88,"w":"world"},{"t":114.32,"w":"know"},{"t":116.62,"w":"Let"},{"t":116.72,"w":"it"},{"t":116.86,"w":"burn"},{"t":117.06,"w":"Let"},{"t":117.6,"w":"it"},{"t":117.8,"w":"show"},{"t":118.66,"w":"Watch"},{"t":119.26,"w":"me"},{"t":119.82,"w":"burn"},{"t":120.32,"w":"We"},{"t":120.62,"w":"change"},{"t":120.84,"w":"We"},{"t":121.16,"w":"turn"},{"t":121.78,"w":"it"},{"t":121.78,"w":"into"},{"t":121.78,"w":"gold"},{"t":121.95,"w":"Phil"},{"t":122.1,"w":"We're"},{"t":122.1,"w":"going"},{"t":122.16,"w":"Turn"},{"t":122.64,"w":"it"},{"t":123.32,"w":"into"},{"t":123.68,"w":"gold"},{"t":124.06,"w":"Already"},{"t":124.32,"w":"Hands"},{"t":125.4,"w":"up"},{"t":126.44,"w":"Still"},{"t":127.04,"w":"gold"},{"t":127.4,"w":"New"},{"t":127.96,"w":"me"},{"t":128.3,"w":"Still"},{"t":128.96,"w":"loading"},{"t":129.32,"w":"So"},{"t":129.82,"w":"clean"},{"t":130.22,"w":"Still"},{"t":130.8,"w":"going"},{"t":131.31,"w":"Cocktails"},{"t":131.96,"w":"in"},{"t":132.22,"w":"Coke"},{"t":132.44,"w":"Used"},{"t":133.04,"w":"to"},{"t":133.54,"w":"sit"},{"t":133.76,"w":"on"},{"t":133.96,"w":"the"},{"t":134.08,"w":"table"},{"t":134.5,"w":"Dreams"},{"t":135.26,"w":"in"},{"t":135.68,"w":"the"},{"t":135.92,"w":"blue"},{"t":136.22,"w":"screen"},{"t":136.6,"w":"Working"},{"t":137.36,"w":"when"},{"t":137.82,"w":"Abel"},{"t":138.3,"w":"Now"},{"t":138.76,"w":"every"},{"t":139.08,"w":"line"},{"t":139.34,"w":"that"},{"t":139.54,"w":"I"},{"t":139.76,"w":"typed"},{"t":140.02,"w":"in"},{"t":140.26,"w":"pain"},{"t":140.48,"w":"Came"},{"t":140.9,"w":"back"},{"t":141.14,"w":"strong"},{"t":141.38,"w":"with"},{"t":141.62,"w":"a"},{"t":141.72,"w":"brand"},{"t":141.88,"w":"-new"},{"t":142.06,"w":"name"},{"t":142.36,"w":"No"},{"t":142.72,"w":"more"},{"t":143.02,"w":"waiting"},{"t":143.4,"w":"on"},{"t":143.72,"w":"permission"},{"t":144.18,"w":"No"},{"t":144.62,"w":"more"},{"t":144.88,"w":"imagaing"},{"t":145.36,"w":"for"},{"t":145.52,"w":"a"},{"t":145.82,"w":"name"},{"t":146.28,"w":"Now"},{"t":146.48,"w":"every"},{"t":146.78,"w":"line"},{"t":146.96,"w":"that"},{"t":147.04,"w":"I"},{"t":147.04,"w":"typed"},{"t":147.04,"w":"in"},{"t":147.04,"w":"pain"},{"t":147.04,"w":"Came"},{"t":147.04,"w":"back"},{"t":147.04,"w":"strong"},{"t":147.04,"w":"with"},{"t":147.04,"w":"a"},{"t":147.04,"w":"brand"},{"t":147.04,"w":"-new"},{"t":147.04,"w":"name"},{"t":147.06,"w":"in"},{"t":147.24,"w":"all"},{"t":147.52,"w":"the"},{"t":147.66,"w":"vision"},{"t":148.06,"w":"no"},{"t":148.36,"w":"more"},{"t":148.62,"w":"making"},{"t":149.04,"w":"joy"},{"t":149.28,"w":"feel"},{"t":149.5,"w":"strange"},{"t":149.88,"w":"they"},{"t":150.12,"w":"laugh"},{"t":150.36,"w":"when"},{"t":150.5,"w":"the"},{"t":150.6,"w":"truth"},{"t":150.72,"w":"came"},{"t":150.96,"w":"out"},{"t":151.28,"w":"said"},{"t":151.64,"w":"it"},{"t":151.8,"w":"ain't"},{"t":152.02,"w":"real"},{"t":152.16,"w":"when"},{"t":152.36,"w":"a"},{"t":152.46,"w":"new"},{"t":152.6,"w":"way"},{"t":152.8,"w":"spot"},{"t":153,"w":"but"},{"t":153.28,"w":"i"},{"t":153.38,"w":"built"},{"t":153.58,"w":"with"},{"t":153.72,"w":"the"},{"t":153.84,"w":"sparks"},{"t":154.1,"w":"built"},{"t":154.5,"w":"with"},{"t":154.68,"w":"the"},{"t":154.8,"w":"stars"},{"t":155.02,"w":"built"},{"t":155.42,"w":"with"},{"t":155.64,"w":"the"},{"t":155.74,"w":"base"},{"t":155.96,"w":"and"},{"t":156.12,"w":"i"},{"t":156.22,"w":"aimed"},{"t":156.46,"w":"at"},{"t":156.6,"w":"stars"},{"t":156.92,"w":"you"},{"t":157.24,"w":"can"},{"t":157.34,"w":"call"},{"t":157.52,"w":"it"},{"t":157.62,"w":"slob"},{"t":157.88,"w":"i"},{"t":158.04,"w":"cause"},{"t":158.32,"w":"you"},{"t":159.04,"w":"can"},{"t":159.24,"w":"call"},{"t":159.4,"w":"it"},{"t":159.52,"w":"fake"},{"t":159.7,"w":"i"},{"t":159.88,"w":"cause"},{"t":160.39,"w":"you"},{"t":160.94,"w":"can"},{"t":161.08,"w":"throw"},{"t":161.24,"w":"shade"},{"t":161.64,"w":"i"},{"t":162.62,"w":"came"},{"t":162.92,"w":"from"},{"t":163.12,"w":"the"},{"t":163.22,"w":"void"},{"t":163.44,"w":"i"},{"t":165.11,"w":"don't"},{"t":165.66,"w":"need"},{"t":165.76,"w":"your"},{"t":165.96,"w":"crown"},{"t":166.34,"w":"i"},{"t":167.36,"w":"don't"},{"t":167.56,"w":"need"},{"t":167.66,"w":"your"},{"t":167.88,"w":"gate"},{"t":169.1,"w":"i"},{"t":169.2,"w":"don't"},{"t":169.4,"w":"need"},{"t":169.52,"w":"your"},{"t":169.74,"w":"doubt"},{"t":170.06,"w":"i"},{"t":171.12,"w":"don't"},{"t":171.26,"w":"need"},{"t":171.42,"w":"your"},{"t":171.64,"w":"way"},{"t":172.22,"w":"have"},{"t":172.38,"w":"your"},{"t":172.54,"w":"joy"},{"t":172.9,"w":"keep"},{"t":173.26,"w":"your"},{"t":173.52,"w":"spirit"},{"t":174.04,"w":"touch"},{"t":174.64,"w":"the"},{"t":174.86,"w":"flame"},{"t":175.14,"w":"but"},{"t":175.38,"w":"keep"},{"t":175.58,"w":"your"},{"t":175.84,"w":"name"},{"t":176.08,"w":"taste"},{"t":176.36,"w":"the"},{"t":176.42,"w":"world"},{"t":176.66,"w":"but"},{"t":176.88,"w":"don't"},{"t":177.14,"w":"disappear"},{"t":177.54,"w":"any"},{"t":178.36,"w":"pleasure"},{"t":178.6,"w":"don't"},{"t":179,"w":"have"},{"t":179.08,"w":"to"},{"t":179.22,"w":"be"},{"t":179.32,"w":"compelled"},{"t":179.78,"w":"touch"},{"t":180.12,"w":"the"},{"t":180.14,"w":"plate"},{"t":180.48,"w":"and"},{"t":180.66,"w":"pass"},{"t":180.92,"w":"forgiveness"},{"t":181.65,"w":"raise"},{"t":182.2,"w":"your"},{"t":182.36,"w":"glass"},{"t":182.7,"w":"and"},{"t":182.88,"w":"bless"},{"t":183.1,"w":"the"},{"t":183.38,"w":"air"},{"t":183.54,"w":"we"},{"t":183.76,"w":"are"},{"t":183.82,"w":"only"},{"t":184.36,"w":"here"},{"t":184.74,"w":"a"},{"t":184.98,"w":"minute"},{"t":185.54,"w":"build"},{"t":185.64,"w":"a"},{"t":185.74,"w":"life"},{"t":186.04,"w":"you"},{"t":186.14,"w":"want"},{"t":186.42,"w":"why"},{"t":186.82,"w":"you"},{"t":187.07,"w":"here"},{"t":188.3,"w":"we"},{"t":188.4,"w":"came"},{"t":188.78,"w":"from"},{"t":189.4,"w":"the"},{"t":189.57,"w":"void"},{"t":189.88,"w":"and"},{"t":190.18,"w":"now"},{"t":190.38,"w":"we"},{"t":190.46,"w":"turn"},{"t":190.75,"w":"it"},{"t":190.92,"w":"into"},{"t":191.26,"w":"gold"},{"t":191.74,"w":"gold"},{"t":192.22,"w":"in"},{"t":193,"w":"the"},{"t":193.22,"w":"heart"},{"t":193.89,"w":"built"},{"t":196.06,"w":"from"},{"t":196.64,"w":"the"},{"t":197.09,"w":"pressure"},{"t":197.42,"w":"raised"},{"t":198.26,"w":"by"},{"t":198.52,"w":"the"},{"t":198.74,"w":"cold"},{"t":199.14,"w":"we"},{"t":199.88,"w":"came"},{"t":200.04,"w":"from"},{"t":200.64,"w":"the"},{"t":200.74,"w":"void"},{"t":201.1,"w":"and"},{"t":201.48,"w":"now"},{"t":201.62,"w":"we"},{"t":201.68,"w":"turn"},{"t":201.94,"w":"it"},{"t":202.18,"w":"into"},{"t":202.5,"w":"but"},{"t":203.17,"w":"we"},{"t":203.46,"w":"aiming"},{"t":203.84,"w":"past"},{"t":204.2,"w":"gold"},{"t":206.8,"w":"make"},{"t":206.9,"w":"the"},{"t":207.18,"w":"whole"},{"t":207.56,"w":"world"},{"t":208.12,"w":"know"},{"t":217.92,"w":"listen"},{"t":218.78,"w":"you"},{"t":220.42,"w":"don't"},{"t":220.56,"w":"have"},{"t":220.72,"w":"to"},{"t":220.8,"w":"answer"},{"t":221.1,"w":"every"},{"t":221.46,"w":"alarm"},{"t":221.82,"w":"you"},{"t":223.26,"w":"don't"},{"t":223.44,"w":"have"},{"t":223.56,"w":"to"},{"t":223.72,"w":"carry"},{"t":223.96,"w":"every"},{"t":224.44,"w":"ghost"},{"t":225.41,"w":"you"},{"t":226.3,"w":"don't"},{"t":226.48,"w":"have"},{"t":226.6,"w":"to"},{"t":226.78,"w":"stay"},{"t":227.1,"w":"small"},{"t":228.94,"w":"just"},{"t":229.04,"w":"because"},{"t":229.26,"w":"they"},{"t":229.54,"w":"met"},{"t":229.74,"w":"you"},{"t":229.96,"w":"in"},{"t":230.1,"w":"the"},{"t":230.2,"w":"dark"},{"t":230.56,"w":"some"},{"t":231.54,"w":"nights"},{"t":231.94,"w":"are"},{"t":232.22,"w":"for"},{"t":232.44,"w":"healing"},{"t":234.24,"w":"some"},{"t":234.4,"w":"nights"},{"t":234.86,"w":"are"},{"t":235.12,"w":"for"},{"t":235.12,"w":"healing"},{"t":235.12,"w":"some"},{"t":235.12,"w":"nights"},{"t":235.12,"w":"are"},{"t":235.12,"w":"for"},{"t":235.12,"w":"healing"},{"t":235.12,"w":"some"},{"t":235.12,"w":"nights"},{"t":235.12,"w":"are"},{"t":235.12,"w":"for"},{"t":235.12,"w":"healing"},{"t":235.14,"w":"some"},{"t":235.28,"w":"nights"},{"t":235.28,"w":"are"},{"t":235.28,"w":"for"},{"t":235.4,"w":"healing"},{"t":236,"w":"some"},{"t":236.98,"w":"nights"},{"t":238.3,"w":"are"},{"t":242.74,"w":"for"},{"t":243.04,"w":"healing"},{"t":243.04,"w":"you"},{"t":243.04,"w":"don't"},{"t":243.16,"w":"have"},{"t":245.66,"w":"to"},{"t":245.66,"w":"worry"},{"t":245.66,"w":"you"},{"t":245.66,"w":"don't"},{"t":245.66,"w":"have"},{"t":245.82,"w":"to"},{"t":245.94,"w":"worry"},{"t":246.6,"w":"you"},{"t":246.6,"w":"don't"},{"t":246.6,"w":"have"},{"t":246.6,"w":"to"},{"t":246.6,"w":"worry"},{"t":246.6,"w":"you"},{"t":247.06,"w":"don't"},{"t":247.38,"w":"have"},{"t":247.4,"w":"to"},{"t":247.4,"w":"worry"},{"t":251.81,"w":"you"},{"t":252.16,"w":"don't"},{"t":252.36,"w":"have"},{"t":252.36,"w":"to"},{"t":252.36,"w":"worry"},{"t":252.36,"w":"you"},{"t":254.64,"w":"don't"},{"t":254.66,"w":"have"},{"t":254.66,"w":"to"},{"t":254.7,"w":"worry"},{"t":254.7,"w":"you"},{"t":254.7,"w":"don't"},{"t":254.78,"w":"have"},{"t":255.12,"w":"to"},{"t":255.12,"w":"worry"},{"t":255.12,"w":"you"},{"t":257.28,"w":"don't"},{"t":257.28,"w":"have"},{"t":257.28,"w":"to"},{"t":257.28,"w":"worry"},{"t":257.28,"w":"you"},{"t":257.28,"w":"don't"},{"t":257.28,"w":"have"},{"t":257.28,"w":"to"},{"t":257.28,"w":"worry"},{"t":257.28,"w":"you"},{"t":257.28,"w":"don't"},{"t":257.4,"w":"have"},{"t":257.42,"w":"to"},{"t":257.54,"w":"worry"},{"t":257.54,"w":"you"},{"t":257.86,"w":"don't"},{"t":257.86,"w":"have"},{"t":257.86,"w":"to"},{"t":257.86,"w":"worry"},{"t":257.86,"w":"you"},{"t":257.86,"w":"don't"},{"t":257.86,"w":"have"},{"t":257.86,"w":"to"},{"t":257.86,"w":"worry"},{"t":257.86,"w":"you"},{"t":257.86,"w":"don't"},{"t":257.86,"w":"have"},{"t":257.86,"w":"to"},{"t":257.86,"w":"worry"},{"t":257.86,"w":"you"},{"t":257.86,"w":"don't"},{"t":257.86,"w":"have"},{"t":257.86,"w":"to"},{"t":257.86,"w":"worry"},{"t":257.86,"w":"you"},{"t":257.86,"w":"don't"},{"t":257.86,"w":"have"},{"t":257.86,"w":"to"},{"t":257.86,"w":"worry"},{"t":257.86,"w":"you"},{"t":258.2,"w":"don't"},{"t":258.2,"w":"have"},{"t":258.2,"w":"to"},{"t":258.2,"w":"worry"},{"t":258.2,"w":"you"},{"t":258.3,"w":"don't"},{"t":258.44,"w":"have"},{"t":258.44,"w":"to"},{"t":258.44,"w":"worry"},{"t":258.68,"w":"you"},{"t":258.92,"w":"don't"},{"t":259.12,"w":"have"},{"t":259.12,"w":"to"},{"t":259.18,"w":"worry"},{"t":259.46,"w":"you"},{"t":259.86,"w":"don't"},{"t":260.02,"w":"have"},{"t":260.02,"w":"to"},{"t":260.12,"w":"worry"},{"t":260.35,"w":"you"},{"t":260.67,"w":"don't"},{"t":260.96,"w":"have"},{"t":260.96,"w":"to"},{"t":261.2,"w":"worry"},{"t":261.54,"w":"you"},{"t":261.8,"w":"don't"},{"t":262.08,"w":"have"},{"t":262.08,"w":"to"},{"t":262.82,"w":"worry"},{"t":263.04,"w":"gold"},{"t":263.26,"w":"i'm"},{"t":263.52,"w":"a"},{"t":263.52,"w":"lord"},{"t":263.74,"w":"with"},{"t":263.9,"w":"a"},{"t":264,"w":"lesson"},{"t":264.26,"w":"every"},{"t":264.64,"w":"loss"},{"t":264.9,"w":"got"},{"t":265.08,"w":"melted"},{"t":265.48,"w":"in"},{"t":265.78,"w":"the"},{"t":265.84,"w":"blessing"},{"t":266.14,"w":"every"},{"t":266.54,"w":"no"},{"t":266.7,"w":"got"},{"t":266.92,"w":"folded"},{"t":267.34,"w":"in"},{"t":267.68,"w":"the"},{"t":267.72,"w":"steel"},{"t":268,"w":"every"},{"t":268.38,"w":"scar"},{"t":268.6,"w":"turned"},{"t":269.02,"w":"proof"},{"t":269.3,"w":"i'm"},{"t":269.62,"w":"real"},{"t":269.92,"w":"gold"},{"t":270.3,"w":"can"},{"t":270.5,"w":"bend"},{"t":270.76,"w":"gold"},{"t":271.14,"w":"can"},{"t":271.4,"w":"shine"},{"t":271.68,"w":"but"},{"t":271.98,"w":"i"},{"t":272.14,"w":"won't"},{"t":272.48,"w":"work"},{"t":272.66,"w":"they"},{"t":272.84,"w":"can't"},{"t":273.2,"w":"define"},{"t":273.46,"w":"higher"},{"t":274.02,"w":"than"},{"t":274.28,"w":"chains"},{"t":274.54,"w":"higher"},{"t":274.98,"w":"than"},{"t":275.24,"w":"rings"},{"t":275.56,"w":"higher"},{"t":275.9,"w":"than"},{"t":276.16,"w":"price"},{"t":276.46,"w":"higher"},{"t":276.86,"w":"than"},{"t":277.1,"w":"kings"},{"t":278.3,"w":"from"},{"t":278.4,"w":"the"},{"t":278.56,"w":"void"},{"t":278.72,"w":"to"},{"t":278.88,"w":"the"},{"t":278.98,"w":"flame"},{"t":279.28,"w":"from"},{"t":279.94,"w":"the"},{"t":280.38,"w":"flame"},{"t":280.56,"w":"to"},{"t":280.76,"w":"the"},{"t":280.86,"w":"mold"},{"t":281.1,"w":"from"},{"t":282.12,"w":"the"},{"t":282.26,"w":"mold"},{"t":282.44,"w":"to"},{"t":282.64,"w":"the"},{"t":282.74,"w":"shine"},{"t":283.88,"w":"from"},{"t":283.98,"w":"the"},{"t":284.14,"w":"shine"},{"t":284.34,"w":"we"},{"t":285.89,"w":"came"},{"t":286.2,"w":"from"},{"t":286.86,"w":"the"},{"t":287,"w":"void"},{"t":287.38,"w":"now"},{"t":287.78,"w":"we"},{"t":287.94,"w":"turn"},{"t":288.22,"w":"it"},{"t":288.46,"w":"into"},{"t":288.74,"w":"gold"},{"t":289.2,"w":"gold"},{"t":289.6,"w":"in"},{"t":290.48,"w":"the"},{"t":290.58,"w":"heart"},{"t":293.02,"w":"built"},{"t":294.04,"w":"from"},{"t":294.14,"w":"the"},{"t":294.59,"w":"pressure"},{"t":294.94,"w":"raised"},{"t":295.72,"w":"by"},{"t":296.34,"w":"the"},{"t":296.5,"w":"cold"},{"t":296.84,"w":"we"},{"t":297.2,"w":"came"},{"t":297.52,"w":"from"},{"t":298.1,"w":"the"},{"t":298.3,"w":"void"},{"t":298.68,"w":"now"},{"t":299.06,"w":"we"},{"t":299.34,"w":"turn"},{"t":299.44,"w":"it"},{"t":299.7,"w":"into"},{"t":299.98,"w":"gold"},{"t":300.44,"w":"but"},{"t":300.7,"w":"we"},{"t":300.98,"w":"aiming"},{"t":301.32,"w":"past"},{"t":301.98,"w":"gold"},{"t":302.4,"w":"make"},{"t":303.82,"w":"the"},{"t":304.86,"w":"whole"},{"t":305.04,"w":"world"},{"t":305.82,"w":"know"},{"t":306.27,"w":"higher"},{"t":306.94,"w":"than"},{"t":307.46,"w":"gold"},{"t":308.84,"w":"and"},{"t":308.94,"w":"higher"},{"t":309.6,"w":"than"},{"t":310.08,"w":"what"},{"t":310.3,"w":"they"},{"t":310.69,"w":"said"},{"t":311.04,"w":"we"},{"t":311.3,"w":"was"},{"t":316.28,"w":"we"},{"t":316.38,"w":"outside"},{"t":316.84,"w":"now"},{"t":319.44,"w":"feet"},{"t":319.54,"w":"on"},{"t":320.54,"w":"the"},{"t":320.72,"w":"ground"},{"t":322.91,"w":"mind"},{"t":323.02,"w":"clear"},{"t":323.32,"w":"heart"},{"t":323.92,"w":"bold"},{"t":324.26,"w":"from"},{"t":324.8,"w":"the"},{"t":324.94,"w":"void"},{"t":325.22,"w":"past"},{"t":325.84,"w":"the"},{"t":326.06,"w":"gold"},{"t":326.49,"w":"we"},{"t":327.24,"w":"came"},{"t":327.56,"w":"from"},{"t":328.08,"w":"the"},{"t":328.22,"w":"void"},{"t":328.92,"w":"now"},{"t":329.02,"w":"we"},{"t":329.16,"w":"turn"},{"t":329.46,"w":"it"},{"t":329.7,"w":"into"},{"t":330,"w":"gold"}]}$j$::jsonb WHERE id = 'void-into-gold-forged-above-gold-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:01.12] This summer still feel different
+[00:03.67] But this ain't no vacation
+[00:06.44] This is pressure
+[00:07.40] This is fire
+[00:08.90] This is where the void learns its name
+[00:12.04] Bill
+[00:12.80] Ross
+[00:15.74] Pressure make go
+[00:16.22] Pressure make more
+[00:17.24] Pressure make more
+[00:19.42] We outside now
+[00:23.24] Feet on the ground
+[00:25.95] Let
+[00:27.11] the bass roll up
+[00:27.95] From the void to the gold
+[00:30.34] Weak, weak, weak, weak
+[Verse 1]
+[00:32.24] I had too much
+[00:33.64] Wasted nebby on my shoulders
+[00:35.32] Too
+[00:37.00] many tabs in my mind
+[00:38.84] Too many nights getting colder
+[00:40.28] Same walls, same clock
+[00:41.84] Same fight with time
+[00:43.69] Same ghost in the room
+[00:45.24] You ain't gon' shine
+[00:47.50] But that drums came in like a war card
+[00:49.28] Strings lit sharp, make a whole floor talk
+[00:51.12] One deep breath, then I stood up
+[00:52.52] Had to stop asking life when it's my time to take
+[00:54.86] Laptop closed but the soul still loadin'
+[00:57.12] Fit, fit, fit
+[00:57.82] Pants still dirty
+[00:58.54] But the heart's still golden
+[01:01.13] I was down in the void with the lights gone low
+[01:04.21] Knock, knock, knock, knock, beat on the door
+[01:06.02] For the whole thing glow, glow, glow, glow, glow
+[01:09.56] I was not broken
+[01:11.95] I was being remade
+[01:13.60] I was not buried
+[01:15.44] I was under the flame
+[01:18.03] Empty out the fear
+[01:19.18] Fill the chest with fire
+[01:21.04] Step through the love
+[01:23.15] Climb a little higher
+[01:25.12] No shame in the scars
+[01:26.52] No fear
+[01:27.30] In the climb
+[01:28.40] If the world get loud around me
+[01:30.48] I'ma turn it into mine
+[01:32.18] We came from the void
+[01:34.38] Now we turn it into gold
+[01:36.04] Gold in the heart
+[01:38.15] Gold in the soul
+[01:39.90] Built from the question
+[01:41.68] Raised by the cold
+[01:43.54] We came from the void
+[01:45.48] Now we turn it into gold
+[01:49.32] But we aiming past gold
+[01:51.04] Make
+[01:53.00] the whole world know
+[01:56.60] Let it burn
+[01:57.04] Let it show
+[Pre-Chorus]
+[01:58.64] Watch me burn
+[02:00.30] We change
+[02:00.82] We turn it into gold
+[02:01.93] Phil We're going
+[02:02.14] Turn it into gold
+[02:04.04] Already
+[02:04.30] Hands up
+[02:06.42] Still gold
+[02:07.38] New me
+[02:08.28] Still loading
+[02:09.30] So clean
+[02:10.20] Still going
+[02:11.29] Cocktails in Coke
+[Chorus]
+[02:12.42] Used to sit on the table
+[02:14.48] Dreams in the blue screen
+[02:16.58] Working when Abel
+[02:18.28] Now every line that I typed in pain
+[02:20.46] Came back strong with a brand-new name
+[02:22.34] No more waiting on permission No more imagaing for a name
+[02:26.26] Now every line that I typed in pain
+[02:27.02] Came back strong with a brand-new name
+[02:27.04] in all the vision no more making joy feel
+[02:29.48] strange they laugh when the truth came out
+[02:31.26] said it ain't real when a new way spot but
+[02:33.26] i built with the sparks built with the stars
+[02:34.00] built with the base and i aimed at stars you can
+[02:37.32] call it slob i cause you can call it fake i cause
+[02:40.37] you can throw shade i came from the void i
+[02:45.09] don't need your crown i don't need your gate
+[02:49.08] i don't need your doubt i don't need your way
+[02:52.20] have your joy keep your spirit touch the flame
+[02:55.12] but keep your name taste the world but don't
+[02:57.12] disappear any pleasure don't have to be
+[02:59.30] compelled touch the plate and pass forgiveness
+[03:01.63] raise your glass and bless the air we are only
+[03:04.34] here a minute build a life you want why you here
+[03:08.28] we came from the void and now we turn it into gold
+[03:11.72] gold in the heart built from the pressure raised
+[Post-Chorus]
+[03:18.24] by the cold we came from the void and now we turn
+[03:21.92] it into but we aiming past gold
+[03:26.78] make the whole world know
+[03:37.90] listen you
+[03:40.39] don't have to answer every alarm you don't have to carry every ghost
+[03:45.39] you don't have to stay small
+[03:48.92] just because they met you in the dark some nights are for healing
+[03:54.22] some nights are for healing some nights
+[03:55.10] are for healing some nights are for healing
+[03:55.12] some nights are for healing some nights are
+[Drop]
+[04:02.72] for healing you don't have to worry you don't have to worry
+[04:06.58] you don't have to worry you don't have to worry
+[04:11.79] you don't have to worry you don't have to worry
+[04:14.68] you don't have to worry you don't
+[04:17.26] have to worry you don't have to worry
+[04:17.26] you don't have to worry you don't have to worry
+[04:17.84] you don't have to worry you don't have to worry
+[04:17.84] you don't have to worry you don't have to worry
+[04:17.84] you don't have to worry you don't have to worry
+[04:18.66] you don't have to worry you don't have to worry
+[04:20.33] you don't have to worry you don't have to worry
+[04:23.02] gold i'm a lord with a lesson every loss got
+[04:25.06] melted in the blessing every no got folded in
+[04:27.66] the steel every scar turned proof i'm real gold
+[04:30.28] can bend gold can shine but i won't work they
+[04:32.82] can't define higher than chains higher than
+[04:35.22] rings higher than price higher than kings
+[04:38.28] from the void to the flame from the flame
+[04:40.54] to the mold from the mold to the shine
+[04:43.86] from the shine
+[04:44.32] we
+[04:45.86] came from the void now we turn it into gold gold in the heart
+[04:53.00] built
+[04:54.02] from the pressure raised by the cold we
+[04:57.18] came from the void now we turn it into gold
+[05:00.42] but we aiming past gold make the whole world know higher than gold
+[05:08.82] and higher than what they said we was
+[05:16.26] we outside now
+[05:19.42] feet on the ground
+[05:22.89] mind clear heart bold from the void past the gold
+[05:26.47] we came from the void now we turn it into gold
+$j$ WHERE id = 'void-into-gold-forged-above-gold-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"This aggressive hip-hop soul anthem chronicles a transformative journey from inner emptiness and external pressure to becoming forged like gold through resilience.","overallMood":"Aggressive, Triumphant, Raw, Anthemic","themes":["Transformation through pressure","Resilience against doubt","Self-made worthiness","Turning pain into power"],"sections":[{"name":"Intro","emotion":"Tense anticipation building from darkness to revelation","intensity":0.72,"colorHint":"#2b1d36","start":1.12},{"name":"Verse 1","emotion":"Gritty determination and raw soulful pain under pressure","intensity":0.91,"colorHint":"#ff4500","start":32.24},{"name":"Pre-Chorus","emotion":"Rising energy, cleansing fire preparing for the anthem","intensity":0.97,"colorHint":"#ffd700","start":118.64},{"name":"Chorus","emotion":"Explosive triumph and defiant anthemic power","intensity":0.67,"colorHint":"#ffebcd","start":132.42},{"name":"Post-Chorus","emotion":"Cathartic release shifting from battle to healing reflection","intensity":0.2,"colorHint":"#1e3f4a","start":198.24},{"name":"Drop","emotion":"Ultimate victory and unshakeable golden confidence","intensity":0.3,"colorHint":"#ffd700","start":242.72}],"keywords":[{"word":"pressure","emotion":"Compressed intensity transforming into strength","imageryPrompt":"A heavy iron weight crushing a dark silhouette, but the cracks are glowing with molten gold light seeping through."},{"word":"void","emotion":"Deep existential emptiness turning into fertile ground for creation","imageryPrompt":"An endless swirling abyss of deep indigo and black mist, yet at the center a single spark ignites like a miniature sun."},{"word":"gold","emotion":"Radiant triumph and unbreakable value forged in fire","imageryPrompt":"Molten liquid gold splashing against dark volcanic rock, reflecting intense orange flames that illuminate the surrounding smoke."},{"word":"fire","emotion":"Purifying heat burning away fear and weakness","imageryPrompt":"Crackling blue and white flames consuming a pile of ash and broken wood, rising upward in tall spirals against a night sky."},{"word":"scars","emotion":"Proud marks of survival that prove authenticity","imageryPrompt":"Close up on weathered skin where silver scars are glowing warmly like veins filled with liquid starlight instead of blood."},{"word":"build","emotion":"Relentless construction rising from nothing to something magnificent","imageryPrompt":"A massive stone tower being constructed by giant hands emerging from a dark fog, each block glowing with internal golden light."}]}$j$::jsonb) WHERE id = 'void-into-gold-forged-above-gold-mix' AND planet->'analysis' IS NULL;
+
+-- whistle-on-the-river: 573 words, 4 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":6.24,"w":"Yo,"},{"t":7.26,"w":"black"},{"t":7.36,"w":"and"},{"t":7.66,"w":"white"},{"t":7.92,"w":"night"},{"t":8.24,"w":"on"},{"t":8.44,"w":"the"},{"t":8.56,"w":"river."},{"t":10.06,"w":"You"},{"t":10.62,"w":"hear"},{"t":10.86,"w":"that"},{"t":11.02,"w":"whistle?"},{"t":13.62,"w":"That"},{"t":14.21,"w":"ain't"},{"t":14.52,"w":"a"},{"t":14.6,"w":"warning."},{"t":16.82,"w":"That's"},{"t":17.38,"w":"a"},{"t":17.42,"w":"problem."},{"t":23.04,"w":"Whistle"},{"t":23.14,"w":"on"},{"t":23.44,"w":"the"},{"t":23.54,"w":"river,"},{"t":23.98,"w":"smoke"},{"t":24.32,"w":"in"},{"t":24.68,"w":"the"},{"t":24.82,"w":"sky."},{"t":25.44,"w":"Boat"},{"t":25.76,"w":"full"},{"t":25.98,"w":"of"},{"t":26.12,"w":"trouble"},{"t":26.36,"w":"when"},{"t":26.62,"w":"the"},{"t":26.8,"w":"bad"},{"t":27.04,"w":"boys"},{"t":27.32,"w":"ride."},{"t":27.66,"w":"Hands"},{"t":28.18,"w":"on"},{"t":28.54,"w":"the"},{"t":28.68,"w":"wheel,"},{"t":29.14,"w":"eyes"},{"t":29.54,"w":"gone"},{"t":29.82,"w":"cold."},{"t":30.4,"w":"Black"},{"t":30.74,"w":"and"},{"t":30.92,"w":"white"},{"t":31.2,"w":"world,"},{"t":31.62,"w":"but"},{"t":31.76,"w":"the"},{"t":31.88,"w":"money"},{"t":32.12,"w":"still"},{"t":32.42,"w":"gold."},{"t":33.28,"w":"Whistle"},{"t":33.44,"w":"on"},{"t":33.78,"w":"the"},{"t":33.8,"w":"river,"},{"t":34.2,"w":"fog"},{"t":34.42,"w":"on"},{"t":34.9,"w":"the"},{"t":35.06,"w":"dock."},{"t":35.9,"w":"Cartoon"},{"t":36.38,"w":"gloves,"},{"t":36.74,"w":"but"},{"t":36.86,"w":"the"},{"t":37.02,"w":"hammer"},{"t":37.26,"w":"don't"},{"t":37.66,"w":"stop."},{"t":38.12,"w":"Old"},{"t":38.42,"w":"school"},{"t":38.74,"w":"grin"},{"t":39.16,"w":"with"},{"t":39.42,"w":"a"},{"t":39.6,"w":"gangsta"},{"t":40.04,"w":"lean."},{"t":40.8,"w":"Steam"},{"t":41.18,"w":"in"},{"t":41.36,"w":"the"},{"t":41.48,"w":"pipes"},{"t":41.8,"w":"and"},{"t":42.02,"w":"the"},{"t":42.16,"w":"whole"},{"t":42.4,"w":"boat"},{"t":42.7,"w":"mean."},{"t":43.36,"w":"I"},{"t":43.48,"w":"came"},{"t":43.68,"w":"through"},{"t":43.96,"w":"squeaking"},{"t":44.42,"w":"with"},{"t":44.56,"w":"the"},{"t":44.74,"w":"boots"},{"t":45.06,"w":"on"},{"t":45.26,"w":"deck."},{"t":45.8,"w":"Little"},{"t":46.22,"w":"gloves"},{"t":46.66,"w":"on,"},{"t":46.94,"w":"but"},{"t":47.12,"w":"I"},{"t":47.28,"w":"still"},{"t":47.56,"w":"collect."},{"t":48.36,"w":"Captain"},{"t":48.88,"w":"of"},{"t":49.12,"w":"the"},{"t":49.18,"w":"chaos,"},{"t":49.74,"w":"grin"},{"t":50,"w":"too"},{"t":50.3,"w":"wide."},{"t":51.12,"w":"Steamboat"},{"t":51.64,"w":"sliding"},{"t":51.96,"w":"through"},{"t":52.26,"w":"the"},{"t":52.4,"w":"low"},{"t":52.7,"w":"tide."},{"t":53.42,"w":"Pocket"},{"t":53.94,"w":"full"},{"t":54.18,"w":"of"},{"t":54.34,"w":"pens,"},{"t":54.6,"w":"hat"},{"t":54.88,"w":"tilted"},{"t":55.26,"w":"low."},{"t":56.04,"w":"Whistle"},{"t":56.56,"w":"hit"},{"t":56.76,"w":"sharp"},{"t":57.12,"w":"when"},{"t":57.36,"w":"the"},{"t":57.52,"w":"crowd."},{"t":57.66,"w":"Go"},{"t":57.72,"w":"and"},{"t":58.06,"w":"blow."},{"t":58.62,"w":"Rat"},{"t":59.06,"w":"-tat"},{"t":59.4,"w":"rhythm"},{"t":59.62,"w":"on"},{"t":60,"w":"the"},{"t":60.14,"w":"wooden"},{"t":60.42,"w":"floor."},{"t":61.2,"w":"Kick"},{"t":61.56,"w":"in"},{"t":61.82,"w":"the"},{"t":62,"w":"hatch,"},{"t":62.36,"w":"make"},{"t":62.48,"w":"the"},{"t":62.68,"w":"engine"},{"t":62.92,"w":"roar."},{"t":63.9,"w":"Oh,"},{"t":64.2,"w":"real"},{"t":64.42,"w":"flicker."},{"t":65.04,"w":"Everybody"},{"t":65.56,"w":"freeze."},{"t":66.48,"w":"Smoke"},{"t":66.74,"w":"stack,"},{"t":67.1,"w":"coughing"},{"t":67.38,"w":"like"},{"t":67.66,"w":"it"},{"t":67.82,"w":"got"},{"t":68,"w":"bad"},{"t":68.3,"w":"dreams."},{"t":69.04,"w":"River"},{"t":69.3,"w":"racks"},{"t":69.68,"w":"scatter"},{"t":69.92,"w":"when"},{"t":70.18,"w":"the"},{"t":70.34,"w":"shadows"},{"t":70.66,"w":"get"},{"t":70.88,"w":"deep."},{"t":71.42,"w":"In"},{"t":71.52,"w":"the"},{"t":71.64,"w":"moonlight,"},{"t":72.12,"w":"dancers"},{"t":72.58,"w":"wear"},{"t":72.8,"w":"the"},{"t":72.92,"w":"secret"},{"t":73.28,"w":"sleeve."},{"t":73.84,"w":"Hey,"},{"t":74,"w":"yo!"},{"t":75.23,"w":"Steam"},{"t":75.38,"w":"up!"},{"t":77.18,"w":"Gloves"},{"t":77.48,"w":"on!"},{"t":79.01,"w":"Lights"},{"t":79.28,"w":"out!"},{"t":81.57,"w":"I'm"},{"t":81.68,"w":"on"},{"t":81.72,"w":"the"},{"t":81.9,"w":"dock"},{"t":82.18,"w":"with"},{"t":82.4,"w":"the"},{"t":82.54,"w":"rope"},{"t":82.82,"w":"and"},{"t":83.04,"w":"the"},{"t":83.2,"w":"crate."},{"t":83.64,"w":"Black"},{"t":84.06,"w":"ink"},{"t":84.4,"w":"dripping"},{"t":84.72,"w":"off"},{"t":85.02,"w":"the"},{"t":85.2,"w":"one"},{"t":85.48,"w":"it"},{"t":85.7,"w":"played."},{"t":86.18,"w":"No"},{"t":86.28,"w":"color"},{"t":86.62,"w":"in"},{"t":86.88,"w":"the"},{"t":87.02,"w":"world."},{"t":87.32,"w":"But"},{"t":87.48,"w":"the"},{"t":87.7,"w":"mood"},{"t":87.92,"w":"pitch"},{"t":88.2,"w":"dark."},{"t":88.9,"w":"Be"},{"t":89.06,"w":"the"},{"t":89.26,"w":"one"},{"t":89.5,"w":"playing"},{"t":89.88,"w":"with"},{"t":90.1,"w":"the"},{"t":90.26,"w":"criminal"},{"t":90.6,"w":"spark."},{"t":91.6,"w":"Fog"},{"t":91.86,"w":"on"},{"t":92.02,"w":"base"},{"t":92.36,"w":"when"},{"t":92.64,"w":"the"},{"t":92.84,"w":"deal"},{"t":93.06,"w":"goes"},{"t":93.3,"w":"down."},{"t":93.92,"w":"Everybody"},{"t":94.4,"w":"quiet"},{"t":94.94,"w":"when"},{"t":95.2,"w":"the"},{"t":95.4,"w":"boat"},{"t":95.6,"w":"come"},{"t":95.86,"w":"around."},{"t":96.58,"w":"Heard"},{"t":96.96,"w":"three"},{"t":97.2,"w":"knocks"},{"t":97.56,"w":"and"},{"t":97.78,"w":"the"},{"t":97.92,"w":"whistle"},{"t":98.22,"w":"cried."},{"t":98.92,"w":"Now"},{"t":99.08,"w":"the"},{"t":99.22,"w":"whole"},{"t":99.44,"w":"pier"},{"t":99.78,"w":"know"},{"t":100.04,"w":"who"},{"t":100.36,"w":"runs"},{"t":100.74,"w":"that"},{"t":101.04,"w":"tide."},{"t":101.8,"w":"Rubber"},{"t":102.16,"w":"hose"},{"t":102.3,"w":"bounce,"},{"t":102.78,"w":"but"},{"t":102.92,"w":"the"},{"t":103.1,"w":"bar's"},{"t":103.4,"w":"concrete."},{"t":104.16,"w":"Tap"},{"t":104.62,"w":"dance"},{"t":104.88,"w":"rhythm"},{"t":105.24,"w":"with"},{"t":105.52,"w":"the"},{"t":105.66,"w":"steel"},{"t":105.9,"w":"toe"},{"t":106.1,"w":"feet."},{"t":106.72,"w":"Running"},{"t":107.16,"w":"at"},{"t":107.44,"w":"the"},{"t":107.56,"w":"moon"},{"t":107.84,"w":"like"},{"t":108.06,"w":"I"},{"t":108.2,"w":"know"},{"t":108.44,"w":"too"},{"t":108.7,"w":"much."},{"t":109.32,"w":"Turn"},{"t":109.78,"w":"that"},{"t":110.02,"w":"crank"},{"t":110.38,"w":"and"},{"t":110.62,"w":"the"},{"t":110.78,"w":"whole"},{"t":111,"w":"beat"},{"t":111.34,"w":"crush."},{"t":113.18,"w":"You"},{"t":113.7,"w":"thought"},{"t":114.02,"w":"it"},{"t":114.16,"w":"was"},{"t":114.3,"w":"funny?"},{"t":115.02,"w":"You"},{"t":115.55,"w":"thought"},{"t":115.8,"w":"it"},{"t":115.96,"w":"was"},{"t":116.12,"w":"cute?"},{"t":116.66,"w":"No."},{"t":117.32,"w":"Uh,"},{"t":118.3,"w":"that"},{"t":118.4,"w":"whistle"},{"t":118.74,"w":"means"},{"t":119.04,"w":"move."},{"t":120.18,"w":"Whistle"},{"t":120.7,"w":"on"},{"t":120.92,"w":"the"},{"t":121.02,"w":"river."},{"t":121.44,"w":"Smoke"},{"t":121.68,"w":"in"},{"t":122.08,"w":"the"},{"t":122.26,"w":"sky."},{"t":123.02,"w":"Boat"},{"t":123.24,"w":"full"},{"t":123.44,"w":"of"},{"t":123.58,"w":"trouble"},{"t":123.86,"w":"when"},{"t":124.1,"w":"the"},{"t":124.26,"w":"bad"},{"t":124.5,"w":"boys"},{"t":124.78,"w":"ride."},{"t":125.48,"w":"Hands"},{"t":125.7,"w":"on"},{"t":126.02,"w":"the"},{"t":126.16,"w":"wheel."},{"t":126.74,"w":"Eyes"},{"t":127,"w":"gone"},{"t":127.32,"w":"cold."},{"t":127.96,"w":"Black"},{"t":128.22,"w":"and"},{"t":128.4,"w":"white"},{"t":128.68,"w":"world,"},{"t":129.08,"w":"but"},{"t":129.26,"w":"the"},{"t":129.38,"w":"money"},{"t":129.6,"w":"still"},{"t":129.86,"w":"gold."},{"t":130.66,"w":"Whistle"},{"t":130.92,"w":"on"},{"t":131.2,"w":"the"},{"t":131.28,"w":"river."},{"t":131.76,"w":"Fog"},{"t":132.14,"w":"on"},{"t":132.38,"w":"the"},{"t":132.54,"w":"dock."},{"t":133.34,"w":"Cartoon"},{"t":133.86,"w":"gloves,"},{"t":134.24,"w":"but"},{"t":134.34,"w":"the"},{"t":134.52,"w":"hammer"},{"t":134.78,"w":"don't"},{"t":135.14,"w":"stop."},{"t":135.6,"w":"Old"},{"t":135.98,"w":"school"},{"t":136.24,"w":"grin"},{"t":136.66,"w":"with"},{"t":136.94,"w":"the"},{"t":137.08,"w":"gangster"},{"t":137.46,"w":"lean."},{"t":138.26,"w":"Steam"},{"t":138.6,"w":"in"},{"t":138.86,"w":"the"},{"t":139,"w":"pipes"},{"t":139.34,"w":"and"},{"t":139.52,"w":"the"},{"t":139.66,"w":"whole"},{"t":139.88,"w":"boat"},{"t":140.18,"w":"mean."},{"t":141.42,"w":"Weep,"},{"t":141.52,"w":"weep,"},{"t":142.08,"w":"weep,"},{"t":142.44,"w":"weep,"},{"t":142.74,"w":"weep,"},{"t":143.7,"w":"weep,"},{"t":144.06,"w":"weep,"},{"t":144.84,"w":"weep,"},{"t":145.08,"w":"weep,"},{"t":145.28,"w":"weep,"},{"t":145.6,"w":"weep,"},{"t":145.62,"w":"weep,"},{"t":145.76,"w":"weep,"},{"t":145.84,"w":"weep,"},{"t":145.84,"w":"weep,"},{"t":145.84,"w":"weep,"},{"t":145.84,"w":"weep."},{"t":148.18,"w":"Weep,"},{"t":148.74,"w":"weep,"},{"t":149.44,"w":"weep,"},{"t":149.76,"w":"weep,"},{"t":149.94,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep,"},{"t":150.66,"w":"weep."},{"t":150.66,"w":"Weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep,"},{"t":150.94,"w":"weep."},{"t":150.94,"w":"Round"},{"t":150.94,"w":"ears"},{"t":151.46,"w":"and"},{"t":151.68,"w":"the"},{"t":151.8,"w":"shadow."},{"t":152.2,"w":"White"},{"t":152.36,"w":"gloves"},{"t":152.7,"w":"on"},{"t":153,"w":"the"},{"t":153.12,"w":"crank."},{"t":153.5,"w":"Laugh"},{"t":153.74,"w":"like"},{"t":153.92,"w":"a"},{"t":154.12,"w":"cartoon."},{"t":154.84,"w":"Move"},{"t":155.26,"w":"like"},{"t":155.54,"w":"a"},{"t":155.76,"w":"bank."},{"t":156.2,"w":"Ink"},{"t":156.52,"w":"in"},{"t":156.72,"w":"my"},{"t":156.9,"w":"veins."},{"t":157.48,"w":"Steam"},{"t":157.74,"w":"in"},{"t":157.94,"w":"my"},{"t":158.22,"w":"chest."},{"t":158.8,"w":"River"},{"t":159.14,"w":"full"},{"t":159.38,"w":"of"},{"t":159.56,"w":"ghosts."},{"t":159.9,"w":"I"},{"t":160.06,"w":"don't"},{"t":160.26,"w":"lose"},{"t":160.48,"w":"I"},{"t":160.7,"w":"collect."},{"t":161.6,"w":"Boat"},{"t":161.82,"w":"go"},{"t":161.94,"w":"left"},{"t":162.26,"w":"when"},{"t":162.6,"w":"the"},{"t":162.76,"w":"lor"},{"t":163.08,"w":"go"},{"t":163.2,"w":"right."},{"t":163.8,"w":"Smoke"},{"t":164.18,"w":"stack"},{"t":164.56,"w":"black"},{"t":164.92,"w":"in"},{"t":165.22,"w":"the"},{"t":165.32,"w":"pale"},{"t":165.58,"w":"moonlight."},{"t":166.56,"w":"Whistle"},{"t":166.94,"w":"hit"},{"t":167.18,"w":"once"},{"t":167.5,"w":"and"},{"t":167.74,"w":"the"},{"t":167.92,"w":"dock"},{"t":168.16,"w":"gets"},{"t":168.44,"w":"nervous."},{"t":169.28,"w":"Old"},{"t":169.46,"w":"little"},{"t":169.78,"w":"tune"},{"t":170.08,"w":"with"},{"t":170.34,"w":"a"},{"t":170.5,"w":"brand"},{"t":170.72,"w":"new"},{"t":171,"w":"purpose."},{"t":171.88,"w":"Spin"},{"t":172.04,"w":"that"},{"t":172.28,"w":"wheel"},{"t":172.66,"w":"till"},{"t":172.9,"w":"the"},{"t":173.12,"w":"whole"},{"t":173.3,"w":"world"},{"t":173.68,"w":"shakes."},{"t":174.22,"w":"Let"},{"t":174.34,"w":"the"},{"t":174.38,"w":"riverboat"},{"t":174.84,"w":"boss."},{"t":175.22,"w":"with"},{"t":175.42,"w":"the"},{"t":175.64,"w":"rubber"},{"t":175.84,"w":"hose"},{"t":176.14,"w":"legs"},{"t":176.48,"w":"black"},{"t":176.94,"w":"and"},{"t":177.24,"w":"white"},{"t":177.48,"w":"frame"},{"t":177.78,"w":"but"},{"t":178.04,"w":"the"},{"t":178.18,"w":"threats"},{"t":178.48,"w":"stay"},{"t":178.76,"w":"vivid"},{"t":179.08,"w":"steamboat"},{"t":179.98,"w":"willy"},{"t":180.46,"w":"with"},{"t":180.6,"w":"the"},{"t":180.76,"w":"whole"},{"t":181,"w":"gear"},{"t":181.32,"w":"with"},{"t":181.56,"w":"it"},{"t":181.8,"w":"whistle"},{"t":182.34,"w":"on"},{"t":182.56,"w":"the"},{"t":182.68,"w":"river"},{"t":182.92,"w":"smoke"},{"t":183.36,"w":"in"},{"t":183.74,"w":"the"},{"t":183.94,"w":"sky"},{"t":184.26,"w":"bullocks"},{"t":185.32,"w":"rubber"},{"t":185.52,"w":"when"},{"t":185.78,"w":"the"},{"t":185.94,"w":"bad"},{"t":186.16,"w":"boys"},{"t":186.5,"w":"ride"},{"t":186.86,"w":"hands"},{"t":187.38,"w":"on"},{"t":187.68,"w":"the"},{"t":187.84,"w":"wheel"},{"t":188.2,"w":"eyes"},{"t":188.72,"w":"gone"},{"t":189.02,"w":"cold"},{"t":189.34,"w":"black"},{"t":189.9,"w":"and"},{"t":190.14,"w":"white"},{"t":190.34,"w":"world"},{"t":190.66,"w":"but"},{"t":190.9,"w":"the"},{"t":191.08,"w":"money"},{"t":191.28,"w":"still"},{"t":191.54,"w":"cold"},{"t":191.94,"w":"whistle"},{"t":192.6,"w":"on"},{"t":192.86,"w":"the"},{"t":192.98,"w":"river"},{"t":193.32,"w":"fog"},{"t":193.78,"w":"on"},{"t":194.08,"w":"the"},{"t":194.24,"w":"dock"},{"t":194.56,"w":"cartoon"},{"t":195.26,"w":"glove"},{"t":195.8,"w":"but"},{"t":196.04,"w":"the"},{"t":196.24,"w":"hammer"},{"t":196.48,"w":"don't"},{"t":196.86,"w":"stop"},{"t":197.04,"w":"old"},{"t":197.48,"w":"school"},{"t":197.9,"w":"grin"},{"t":198.36,"w":"with"},{"t":198.64,"w":"the"},{"t":198.78,"w":"gangster"},{"t":199.18,"w":"lean"},{"t":199.56,"w":"steam"},{"t":200.32,"w":"in"},{"t":200.56,"w":"the"},{"t":200.7,"w":"pipes"},{"t":201.04,"w":"in"},{"t":201.26,"w":"the"},{"t":201.36,"w":"hobo"},{"t":201.86,"w":"mean"},{"t":204.18,"w":"that"},{"t":204.28,"w":"ain't"},{"t":204.74,"w":"a"},{"t":204.76,"w":"cartoon"},{"t":205.24,"w":"that's"},{"t":209.02,"w":"the"},{"t":209.14,"w":"river"},{"t":209.42,"w":"talking"}]}$j$::jsonb WHERE id = 'whistle-on-the-river' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[Verse 1]
+[00:06.24] Yo, black and white night on the river.
+[00:10.06] You hear that whistle?
+[00:13.62] That ain't a warning.
+[00:16.82] That's a problem.
+[00:23.04] Whistle on the river, smoke in the sky.
+[00:25.44] Boat full of trouble when the bad boys ride.
+[00:27.66] Hands on the wheel, eyes gone cold.
+[00:30.40] Black and white world, but the money still gold.
+[00:33.28] Whistle on the river, fog on the dock.
+[00:35.90] Cartoon gloves, but the hammer don't stop.
+[00:38.12] Old school grin with a gangsta lean.
+[00:40.80] Steam in the pipes and the whole boat mean.
+[00:43.36] I came through squeaking with the boots on deck.
+[00:45.80] Little gloves on, but I still collect.
+[00:48.36] Captain of the chaos, grin too wide.
+[00:51.12] Steamboat sliding through the low tide.
+[00:53.42] Pocket full of pens, hat tilted low.
+[00:56.04] Whistle hit sharp when the crowd.
+[Chorus]
+[00:57.66] Go and blow.
+[00:58.62] Rat-tat rhythm on the wooden floor.
+[01:01.20] Kick in the hatch, make the engine roar.
+[01:03.90] Oh, real flicker.
+[01:05.04] Everybody freeze.
+[01:06.48] Smoke stack, coughing like it got bad dreams.
+[01:09.04] River racks scatter when the shadows get deep.
+[01:11.42] In the moonlight,
+[01:12.12] dancers wear the secret sleeve.
+[01:13.84] Hey, yo!
+[01:15.23] Steam up!
+[01:17.18] Gloves on!
+[01:19.01] Lights out!
+[01:21.57] I'm on the dock with the rope and the crate.
+[01:23.64] Black ink dripping off the one it played.
+[01:26.18] No color in the world.
+[01:27.32] But the mood pitch dark.
+[01:28.90] Be the one playing with the criminal spark.
+[01:31.60] Fog on base when the deal goes down.
+[01:33.92] Everybody quiet when the boat come around.
+[01:36.58] Heard three knocks and the whistle cried.
+[Verse 2]
+[01:38.92] Now the whole pier know who runs that tide.
+[01:41.80] Rubber hose bounce, but the bar's concrete.
+[01:44.16] Tap dance rhythm with the steel toe feet.
+[01:46.72] Running at the moon like I know too much.
+[01:49.32] Turn that crank and the whole beat crush.
+[01:53.18] You thought it was funny?
+[01:55.02] You thought it was cute?
+[01:56.66] No.
+[01:57.32] Uh,
+[01:58.30] that whistle means move.
+[02:00.18] Whistle on the river.
+[02:01.44] Smoke in the sky.
+[02:03.02] Boat full of trouble when the bad boys ride.
+[02:05.48] Hands on the wheel.
+[02:06.74] Eyes gone cold.
+[02:07.96] Black and white world, but the money still gold.
+[02:10.66] Whistle on the river.
+[02:11.76] Fog on the dock.
+[02:13.34] Cartoon gloves, but the hammer don't stop.
+[02:15.60] Old school grin with the gangster lean.
+[02:18.26] Steam in the pipes and the whole boat mean.
+[02:21.42] Weep, weep, weep, weep, weep,
+[02:23.70] weep,
+[02:24.06] weep,
+[02:24.84] weep,
+[02:25.08] weep,
+[02:25.28] weep,
+[02:25.60] weep,
+[02:25.62] weep,
+[02:25.76] weep,
+[02:25.84] weep,
+[02:25.84] weep,
+[02:25.84] weep,
+[02:25.84] weep.
+[02:28.18] Weep, weep, weep, weep, weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep,
+[02:30.66] weep.
+[02:30.66] Weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep,
+[02:30.94] weep.
+[02:30.94] Round ears and the shadow.
+[02:32.20] White gloves on the crank.
+[02:33.50] Laugh like a cartoon.
+[02:34.84] Move like a bank.
+[02:36.20] Ink in my veins.
+[02:37.48] Steam in my chest.
+[02:38.80] River full of ghosts.
+[02:39.90] I don't lose I collect.
+[02:41.60] Boat go left when the lor go right.
+[02:43.80] Smoke stack black in the pale moonlight.
+[02:46.56] Whistle hit once and the dock gets nervous.
+[02:49.28] Old little tune with a brand new purpose.
+[02:51.88] Spin that wheel till the whole world shakes.
+[02:54.22] Let the riverboat boss.
+[02:55.22] with the rubber hose legs black and white frame
+[02:57.78] but the threats stay vivid steamboat willy with
+[03:00.60] the whole gear with it whistle on the river smoke
+[03:03.36] in the sky bullocks rubber when the bad boys ride
+[03:06.86] hands on the wheel eyes gone cold black and white
+[03:10.34] world but the money still cold whistle on the
+[03:12.98] river fog on the dock cartoon glove but the hammer
+[03:16.48] don't stop old school grin with the gangster lean
+[Chorus]
+[03:19.56] steam in the pipes in the hobo mean
+[03:24.18] that ain't a cartoon that's the river talking
+$j$ WHERE id = 'whistle-on-the-river' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A gritty gangsta rap narrative blending noir atmosphere with chaotic rubber-hose cartoon aesthetics to depict a dangerous riverboat crime story where playful visuals mask lethal threats.","overallMood":"0.75","themes":["Violence disguised as play","Noir criminal underworld","Cartoon physics meets reality","Dangerous nostalgia","Monochromatic tension","Industrial decay"],"palette":["#1C1A16","#4B3F2E","#7D5A50","#8E9BA8"],"sections":[{"name":"Intro","emotion":"Mysterious, ominous anticipation of a crime story beginning.","intensity":0.3,"colorHintHex":"#1C1A16","imageryPrompt":"Black and white grainy film stock with fog rolling over dark wooden docks at night, faint silhouette of an old steamboat whistle cutting through the smoke.","start":6.24},{"name":"Verse 1","emotion":"Playful yet menacing introduction to characters on a dangerous boat.","intensity":0.86,"colorHintHex":"#4B3F2E","imageryPrompt":"Rubber-hose animation style hands gripping a ship's wheel in high contrast black and white, steam rising from pipes like ghostly fingers against a dark river background.","start":6.24},{"name":"Chorus","emotion":"Final crescendo of industrial noise and criminal threat.","intensity":0.98,"colorHintHex":"#8E9BA8","imageryPrompt":"Monochromatic scene where a riverboat engine roars like a living beast, gangster figures in white gloves standing amidst steam that forms screaming faces.","start":57.66},{"name":"Verse 2","emotion":"Aggressive realization that the cartoon facade is deadly real.","intensity":0.26,"colorHintHex":"#3E2C1F","imageryPrompt":"Concrete pier meeting bouncing rubber hose legs, a steel-toed boot crushing tap dance rhythms, dark shadows looming over white gloved hands turning crank wheels.","start":98.92}],"keywords":[{"word":"whistle","emotion":"Menacing warning signal","imageryPrompt":"A rusty metal ship whistle emitting a sound wave that distorts reality into jagged cartoon lines against black smoke."},{"word":"smoke","emotion":"Choking atmosphere of crime","imageryPrompt":"Thick rolling fog from steamboat stacks obscuring faces, swirling in grayscale like ink spilled on water with a hint of red danger deep inside the gray."},{"word":"gloves","emotion":"Clumsy violence potential","imageryPrompt":"Large rubber-hose style white gloves hovering over a dark surface, fingers curled as if ready to strike or clutch something forbidden."},{"word":"steam","emotion":"Industrial pressure and heat","imageryPrompt":"White vapor exploding from boiler pipes creating ghostly shapes that look like screaming mouths in a 1928 cartoon frame."},{"word":"ink","emotion":"Permanent mark of criminal record","imageryPrompt":"Black liquid dripping from a fountain pen onto dirty wooden planks, spreading rapidly to form shadowy fingerprints in the dust."},{"word":"crank","emotion":"Mechanical force and turning point","imageryPrompt":"A large metal ship wheel being turned by white-gloved hands causing chains to clank rhythmically under dim electric light."}]}$j$::jsonb) WHERE id = 'whistle-on-the-river' AND planet->'analysis' IS NULL;
+
+-- who-s-that-snake-funky-slow-jam-mix: 836 words, 5 sections
+UPDATE tracks SET lyrics_synced = $j${"words":[{"t":0,"w":"Uh,"},{"t":0.34,"w":"uh,"},{"t":0.6,"w":"check"},{"t":0.8,"w":"it,"},{"t":1.18,"w":"uh,"},{"t":1.66,"w":"uh"},{"t":2.94,"w":"Too"},{"t":3.84,"w":"many"},{"t":4.02,"w":"snakes"},{"t":4.26,"w":"in"},{"t":4.54,"w":"the"},{"t":4.62,"w":"grass?"},{"t":5.26,"w":"Nah"},{"t":5.78,"w":"Too"},{"t":7.04,"w":"many"},{"t":7.26,"w":"names"},{"t":7.68,"w":"in"},{"t":7.8,"w":"the"},{"t":7.86,"w":"file?"},{"t":9.56,"w":"Let's"},{"t":10.08,"w":"sort"},{"t":10.24,"w":"it"},{"t":10.4,"w":"out"},{"t":10.65,"w":"They"},{"t":11.2,"w":"want"},{"t":11.42,"w":"the"},{"t":11.6,"w":"facts,"},{"t":12,"w":"so"},{"t":12.22,"w":"we"},{"t":12.8,"w":"give"},{"t":13,"w":"them"},{"t":13.16,"w":"the"},{"t":13.28,"w":"facts"},{"t":13.54,"w":"Who's"},{"t":13.88,"w":"that"},{"t":13.9,"w":"snake?"},{"t":14.46,"w":"Let"},{"t":14.94,"w":"me"},{"t":15.24,"w":"bring"},{"t":15.48,"w":"it"},{"t":15.62,"w":"right"},{"t":15.82,"w":"back"},{"t":16.12,"w":"One"},{"t":16.58,"w":"was"},{"t":16.9,"w":"the"},{"t":17.14,"w":"student,"},{"t":17.56,"w":"one"},{"t":17.82,"w":"was"},{"t":18.12,"w":"the"},{"t":18.4,"w":"boss"},{"t":18.64,"w":"One"},{"t":19,"w":"was"},{"t":19.36,"w":"the"},{"t":19.62,"w":"clone"},{"t":19.86,"w":"who"},{"t":20.08,"w":"refused"},{"t":20.4,"w":"that"},{"t":20.78,"w":"law"},{"t":21,"w":"One"},{"t":21.56,"w":"had"},{"t":21.88,"w":"the"},{"t":22.12,"w":"anger,"},{"t":22.58,"w":"one"},{"t":22.76,"w":"had"},{"t":23.12,"w":"the"},{"t":23.36,"w":"blaze"},{"t":23.74,"w":"One"},{"t":24.12,"w":"wore"},{"t":24.42,"w":"the"},{"t":24.6,"w":"mask"},{"t":24.88,"w":"and"},{"t":25.06,"w":"another"},{"t":25.32,"w":"man's"},{"t":25.8,"w":"name"},{"t":26.02,"w":"Found"},{"t":26.52,"w":"it"},{"t":26.92,"w":"round,"},{"t":27.44,"w":"but"},{"t":27.54,"w":"the"},{"t":27.64,"w":"tree"},{"t":27.88,"w":"don't"},{"t":28.12,"w":"lie"},{"t":28.36,"w":"Now"},{"t":28.58,"w":"everybody"},{"t":28.96,"w":"say,"},{"t":29.56,"w":"Kodak"},{"t":29.94,"w":"Live!"},{"t":30.52,"w":"Yeah,"},{"t":30.74,"w":"diggity"},{"t":31.34,"w":"deep"},{"t":31.62,"w":"in"},{"t":31.9,"w":"the"},{"t":32,"w":"jungle"},{"t":32.34,"w":"Story"},{"t":32.72,"w":"gets"},{"t":33.16,"w":"humble"},{"t":33.52,"w":"A"},{"t":33.86,"w":"soldier"},{"t":34.14,"w":"met"},{"t":34.34,"w":"a"},{"t":34.5,"w":"teacher,"},{"t":34.84,"w":"then"},{"t":34.96,"w":"the"},{"t":35.12,"w":"whole"},{"t":35.32,"w":"world"},{"t":35.7,"w":"crumbled"},{"t":36.04,"w":"She"},{"t":36.26,"w":"was"},{"t":36.5,"w":"the"},{"t":36.66,"w":"root,"},{"t":36.98,"w":"the"},{"t":37.1,"w":"truth,"},{"t":37.48,"w":"the"},{"t":37.58,"w":"pain"},{"t":37.86,"w":"in"},{"t":38.08,"w":"the"},{"t":38.18,"w":"boot"},{"t":38.42,"w":"The"},{"t":38.64,"w":"one"},{"t":38.88,"w":"who"},{"t":39.02,"w":"taught"},{"t":39.26,"w":"the"},{"t":39.44,"w":"moves"},{"t":39.66,"w":"and"},{"t":39.78,"w":"got"},{"t":39.94,"w":"framed"},{"t":40.3,"w":"by"},{"t":40.56,"w":"the"},{"t":40.66,"w":"suit"},{"t":40.9,"w":"He"},{"t":41.18,"w":"was"},{"t":41.78,"w":"the"},{"t":41.92,"w":"student"},{"t":42.18,"w":"with"},{"t":42.38,"w":"the"},{"t":42.54,"w":"sneaky"},{"t":42.74,"w":"little"},{"t":43.1,"w":"mission"},{"t":43.6,"w":"Crawling"},{"t":44.1,"w":"through"},{"t":44.24,"w":"the"},{"t":44.42,"w":"grass"},{"t":44.7,"w":"with"},{"t":44.9,"w":"a"},{"t":45.06,"w":"Cold"},{"t":45.28,"w":"War"},{"t":45.46,"w":"condition"},{"t":45.83,"w":"Naked"},{"t":46.48,"w":"was"},{"t":46.7,"w":"the"},{"t":46.86,"w":"name"},{"t":47.06,"w":"before"},{"t":47.24,"w":"the"},{"t":47.5,"w":"legend"},{"t":47.76,"w":"got"},{"t":48.02,"w":"tossed"},{"t":48.4,"w":"And"},{"t":48.62,"w":"the"},{"t":48.76,"w":"metal"},{"t":49.02,"w":"hit"},{"t":49.24,"w":"heavy,"},{"t":49.7,"w":"now"},{"t":49.84,"w":"they"},{"t":49.96,"w":"call"},{"t":50.14,"w":"him"},{"t":50.32,"w":"Big"},{"t":50.5,"w":"Boss"},{"t":50.8,"w":"Not"},{"t":51.04,"w":"the"},{"t":51.2,"w":"same"},{"t":51.5,"w":"as"},{"t":51.7,"w":"the"},{"t":51.82,"w":"clone"},{"t":52.06,"w":"with"},{"t":52.3,"w":"the"},{"t":52.46,"w":"bandana"},{"t":52.98,"w":"tie"},{"t":53.26,"w":"Not"},{"t":53.48,"w":"the"},{"t":53.66,"w":"same"},{"t":54,"w":"as"},{"t":54.2,"w":"the"},{"t":54.34,"w":"blonde"},{"t":54.56,"w":"with"},{"t":54.78,"w":"the"},{"t":54.92,"w":"venom"},{"t":55.22,"w":"inside"},{"t":55.62,"w":"Not"},{"t":56,"w":"the"},{"t":56.18,"w":"same"},{"t":56.4,"w":"as"},{"t":56.66,"w":"the"},{"t":56.76,"w":"president"},{"t":57.14,"w":"swinging"},{"t":57.6,"w":"both"},{"t":57.92,"w":"blades"},{"t":58.28,"w":"This"},{"t":58.52,"w":"is"},{"t":58.66,"w":"daddy"},{"t":58.92,"w":"of"},{"t":59.12,"w":"the"},{"t":59.28,"w":"drama"},{"t":59.5,"w":"from"},{"t":59.74,"w":"the"},{"t":59.9,"w":"old"},{"t":60.14,"w":"school"},{"t":60.34,"w":"days"},{"t":60.7,"w":"It"},{"t":60.84,"w":"was"},{"t":61,"w":"the"},{"t":61.12,"w":"facts,"},{"t":61.54,"w":"so"},{"t":62.18,"w":"we"},{"t":62.36,"w":"give"},{"t":62.56,"w":"him"},{"t":62.72,"w":"the"},{"t":62.86,"w":"facts"},{"t":63.1,"w":"Who's"},{"t":63.44,"w":"that"},{"t":63.48,"w":"snake?"},{"t":64.04,"w":"Let"},{"t":64.52,"w":"me"},{"t":64.78,"w":"bring"},{"t":65.06,"w":"it"},{"t":65.18,"w":"right"},{"t":65.4,"w":"back"},{"t":65.7,"w":"One"},{"t":66.18,"w":"was"},{"t":66.48,"w":"the"},{"t":66.72,"w":"student,"},{"t":67.1,"w":"one"},{"t":67.32,"w":"was"},{"t":67.64,"w":"the"},{"t":67.98,"w":"boss"},{"t":68.22,"w":"One"},{"t":68.54,"w":"was"},{"t":68.94,"w":"the"},{"t":69.2,"w":"clone"},{"t":69.44,"w":"who"},{"t":69.66,"w":"refused"},{"t":69.98,"w":"that"},{"t":70.38,"w":"law"},{"t":70.64,"w":"One"},{"t":71,"w":"had"},{"t":71.44,"w":"the"},{"t":71.72,"w":"anger,"},{"t":72.18,"w":"one"},{"t":72.36,"w":"had"},{"t":72.7,"w":"the"},{"t":72.92,"w":"blaze"},{"t":73.32,"w":"One"},{"t":73.46,"w":"wore"},{"t":73.94,"w":"the"},{"t":74.18,"w":"mask"},{"t":74.46,"w":"and"},{"t":74.64,"w":"another"},{"t":74.9,"w":"man's"},{"t":75.44,"w":"name"},{"t":75.62,"w":"Found"},{"t":76.2,"w":"it"},{"t":76.48,"w":"round,"},{"t":76.96,"w":"but"},{"t":77.12,"w":"the"},{"t":77.2,"w":"tree"},{"t":77.46,"w":"don't"},{"t":77.72,"w":"lie"},{"t":77.94,"w":"Now"},{"t":78.18,"w":"everybody"},{"t":78.58,"w":"say,"},{"t":79.16,"w":"Kodak"},{"t":79.54,"w":"Live!"},{"t":79.96,"w":"Now"},{"t":80.32,"w":"listen"},{"t":80.56,"w":"to"},{"t":80.84,"w":"the"},{"t":80.98,"w":"clones"},{"t":81.32,"w":"on,"},{"t":81.68,"w":"grown"},{"t":81.86,"w":"from"},{"t":82.04,"w":"the"},{"t":82.24,"w":"genome"},{"t":82.64,"w":"Three"},{"t":83.02,"w":"sons"},{"t":83.32,"w":"from"},{"t":83.64,"w":"the"},{"t":83.76,"w":"legend,"},{"t":84.16,"w":"but"},{"t":84.28,"w":"none"},{"t":84.42,"w":"had"},{"t":84.62,"w":"a"},{"t":84.74,"w":"clean"},{"t":84.94,"w":"home"},{"t":85.26,"w":"First"},{"t":85.6,"w":"one"},{"t":85.82,"w":"solid,"},{"t":86.42,"w":"why"},{"t":86.5,"w":"would"},{"t":87.02,"w":"the"},{"t":87.16,"w":"sneaky"},{"t":87.38,"w":"strive?"},{"t":88.28,"w":"Stop"},{"t":88.36,"w":"the"},{"t":88.46,"w":"walking"},{"t":88.74,"w":"tank,"},{"t":89.08,"w":"put"},{"t":89.2,"w":"the"},{"t":89.4,"w":"nukes"},{"t":89.72,"w":"inside"},{"t":90,"w":"He"},{"t":90.58,"w":"ain't"},{"t":90.86,"w":"the"},{"t":90.9,"w":"father,"},{"t":91.48,"w":"he"},{"t":91.82,"w":"ain't"},{"t":92.12,"w":"the"},{"t":92.14,"w":"teacher"},{"t":92.54,"w":"He's"},{"t":93.04,"w":"the"},{"t":93.12,"w":"cigarette"},{"t":93.68,"w":"shadow"},{"t":94.22,"w":"with"},{"t":94.52,"w":"the"},{"t":94.68,"w":"solo"},{"t":94.98,"w":"features"},{"t":95.52,"w":"No"},{"t":95.78,"w":"bass,"},{"t":96.24,"w":"great"},{"t":96.38,"w":"box,"},{"t":96.94,"w":"Rex"},{"t":97.2,"w":"in"},{"t":97.52,"w":"the"},{"t":97.72,"w":"fight"},{"t":97.96,"w":"He's"},{"t":98.28,"w":"the"},{"t":98.36,"w":"one"},{"t":98.6,"w":"who"},{"t":98.7,"w":"walks"},{"t":98.94,"w":"away"},{"t":99.16,"w":"when"},{"t":99.48,"w":"the"},{"t":99.64,"w":"world"},{"t":99.92,"w":"turns"},{"t":100.12,"w":"white"},{"t":100.48,"w":"Second"},{"t":100.96,"w":"one"},{"t":101.26,"w":"liquid,"},{"t":101.86,"w":"all"},{"t":102.06,"w":"rage,"},{"t":102.48,"w":"all"},{"t":102.68,"w":"flame"},{"t":103.07,"w":"Mad"},{"t":103.62,"w":"at"},{"t":103.84,"w":"his"},{"t":104.02,"w":"brother"},{"t":104.24,"w":"and"},{"t":104.52,"w":"mad"},{"t":104.82,"w":"at"},{"t":105.12,"w":"his"},{"t":105.3,"w":"name"},{"t":105.46,"w":"Thought"},{"t":105.72,"w":"his"},{"t":105.88,"w":"genes"},{"t":106.14,"w":"got"},{"t":106.34,"w":"cheated,"},{"t":106.78,"w":"thought"},{"t":106.98,"w":"fate"},{"t":107.32,"w":"picked"},{"t":107.58,"w":"sides"},{"t":107.88,"w":"So"},{"t":108.18,"w":"he"},{"t":108.34,"w":"built"},{"t":108.62,"w":"up"},{"t":108.84,"w":"a"},{"t":108.98,"w":"wall"},{"t":109.22,"w":"with"},{"t":109.44,"w":"revenge"},{"t":109.8,"w":"in"},{"t":110.08,"w":"his"},{"t":110.24,"w":"eyes"},{"t":110.5,"w":"Third"},{"t":110.86,"w":"one"},{"t":111.18,"w":"solid,"},{"t":111.68,"w":"his"},{"t":111.84,"w":"suit"},{"t":112.16,"w":"with"},{"t":112.48,"w":"the"},{"t":112.68,"w":"sword"},{"t":112.96,"w":"Former"},{"t":113.5,"w":"big"},{"t":113.8,"w":"leader,"},{"t":114.28,"w":"cutting"},{"t":114.56,"w":"through"},{"t":114.9,"w":"cords"},{"t":115.38,"w":"Wanted"},{"t":115.84,"w":"free"},{"t":116,"w":"will,"},{"t":116.52,"w":"but"},{"t":116.88,"w":"he's"},{"t":117.08,"w":"called"},{"t":117.24,"w":"the"},{"t":117.4,"w":"next"},{"t":117.6,"w":"kid"},{"t":118.28,"w":"Tried"},{"t":118.4,"w":"to"},{"t":118.58,"w":"beat"},{"t":118.78,"w":"the"},{"t":118.9,"w":"system"},{"t":119.2,"w":"with"},{"t":119.4,"w":"the"},{"t":119.52,"w":"same"},{"t":119.78,"w":"thing"},{"t":120.02,"w":"it"},{"t":120.18,"w":"did"},{"t":120.32,"w":"Who"},{"t":120.48,"w":"taught"},{"t":120.64,"w":"the"},{"t":120.8,"w":"first"},{"t":121.06,"w":"one,"},{"t":121.38,"w":"the"},{"t":121.42,"w":"mentor,"},{"t":121.98,"w":"the"},{"t":122.14,"w":"root"},{"t":122.24,"w":"Who"},{"t":122.46,"w":"became"},{"t":122.76,"w":"big"},{"t":123.16,"w":"ball,"},{"t":123.7,"w":"the"},{"t":123.84,"w":"student"},{"t":124.2,"w":"in"},{"t":124.38,"w":"the"},{"t":124.48,"w":"suit"},{"t":124.74,"w":"Who"},{"t":124.96,"w":"broke"},{"t":125.2,"w":"the"},{"t":125.46,"w":"war"},{"t":125.68,"w":"gear,"},{"t":126.2,"w":"the"},{"t":126.32,"w":"solid"},{"t":126.64,"w":"one"},{"t":126.9,"w":"did"},{"t":127.22,"w":"Who"},{"t":127.46,"w":"screamed"},{"t":127.86,"w":"brother,"},{"t":128.38,"w":"the"},{"t":128.62,"w":"angry"},{"t":129.1,"w":"clone"},{"t":129.4,"w":"kid"},{"t":129.7,"w":"Who"},{"t":129.94,"w":"swung"},{"t":130.32,"w":"two"},{"t":130.48,"w":"blades,"},{"t":131.22,"w":"the"},{"t":131.36,"w":"third"},{"t":131.62,"w":"son"},{"t":131.82,"w":"wild"},{"t":132.28,"w":"Who"},{"t":132.62,"w":"wore"},{"t":132.8,"w":"the"},{"t":132.98,"w":"horn,"},{"t":133.62,"w":"the"},{"t":133.7,"w":"phantom"},{"t":134.22,"w":"profile"},{"t":144.68,"w":"When"},{"t":145.16,"w":"did"},{"t":145.64,"w":"he"},{"t":145.78,"w":"wake,"},{"t":146.08,"w":"there's"},{"t":146.28,"w":"another"},{"t":146.52,"w":"little"},{"t":146.9,"w":"riddle"},{"t":147.32,"w":"A"},{"t":147.64,"w":"man"},{"t":147.92,"w":"woke"},{"t":148.12,"w":"up"},{"t":148.26,"w":"in"},{"t":148.26,"w":"the"},{"t":148.26,"w":"morning,"},{"t":148.26,"w":"a"},{"t":148.26,"w":"man"},{"t":148.26,"w":"woke"},{"t":148.26,"w":"up"},{"t":148.26,"w":"in"},{"t":148.26,"w":"the"},{"t":148.26,"w":"morning"},{"t":148.28,"w":"Broken"},{"t":148.76,"w":"with"},{"t":149.02,"w":"a"},{"t":149.22,"w":"horn"},{"t":149.46,"w":"in"},{"t":149.66,"w":"the"},{"t":149.78,"w":"middle"},{"t":150.12,"w":"Missing"},{"t":150.5,"w":"hand,"},{"t":150.74,"w":"bad"},{"t":150.98,"w":"dreams,"},{"t":151.42,"w":"memory"},{"t":151.62,"w":"stitched"},{"t":152.1,"w":"tight"},{"t":152.52,"w":"Everybody"},{"t":152.92,"w":"said"},{"t":153.46,"w":"ball,"},{"t":153.92,"w":"but"},{"t":154.08,"w":"Samira"},{"t":154.42,"w":"said"},{"t":154.74,"w":"right"},{"t":155.04,"w":"He"},{"t":155.4,"w":"was"},{"t":155.62,"w":"the"},{"t":155.76,"w":"phantom,"},{"t":156.24,"w":"the"},{"t":156.38,"w":"decoy,"},{"t":156.94,"w":"the"},{"t":157.04,"w":"double"},{"t":157.36,"w":"Built"},{"t":157.86,"w":"from"},{"t":158.1,"w":"the"},{"t":158.3,"w":"blast"},{"t":158.58,"w":"and"},{"t":158.76,"w":"baptized"},{"t":159.06,"w":"in"},{"t":159.56,"w":"trouble"},{"t":159.84,"w":"Diamond"},{"t":160.4,"w":"dogs"},{"t":160.78,"w":"bark"},{"t":161.02,"w":"when"},{"t":161.28,"w":"the"},{"t":161.46,"w":"whole"},{"t":161.62,"w":"base"},{"t":161.94,"w":"burns"},{"t":162.34,"w":"He"},{"t":162.66,"w":"wears"},{"t":162.86,"w":"the"},{"t":163,"w":"big"},{"t":163.24,"w":"name"},{"t":163.5,"w":"while"},{"t":163.74,"w":"the"},{"t":163.92,"w":"real"},{"t":164.18,"w":"one"},{"t":164.4,"w":"turns"},{"t":164.84,"w":"So"},{"t":165.16,"w":"horn"},{"t":165.48,"w":"head,"},{"t":165.88,"w":"phantom,"},{"t":166.4,"w":"bandana,"},{"t":167.06,"w":"solid"},{"t":167.38,"w":"Blonde"},{"t":167.98,"w":"rage,"},{"t":168.4,"w":"liquid,"},{"t":168.9,"w":"two"},{"t":169.08,"w":"blades,"},{"t":169.62,"w":"solidus"},{"t":170.18,"w":"Eyepatch"},{"t":170.78,"w":"legend,"},{"t":171.2,"w":"big"},{"t":171.36,"w":"ball,"},{"t":171.96,"w":"teacher"},{"t":172.26,"w":"of"},{"t":172.58,"w":"ball"},{"t":173.01,"w":"Cowboy"},{"t":173.56,"w":"with"},{"t":173.78,"w":"the"},{"t":173.96,"w":"gun,"},{"t":174.3,"w":"don't"},{"t":174.58,"w":"trust"},{"t":174.8,"w":"him,"},{"t":175.02,"w":"he's"},{"t":175.18,"w":"lost"},{"t":175.34,"w":"They"},{"t":175.56,"w":"want"},{"t":175.72,"w":"the"},{"t":175.82,"w":"facts,"},{"t":176.28,"w":"so"},{"t":176.83,"w":"we"},{"t":177.08,"w":"give"},{"t":177.28,"w":"them"},{"t":177.44,"w":"the"},{"t":177.56,"w":"facts"},{"t":177.82,"w":"Who's"},{"t":178.12,"w":"that?"},{"t":178.28,"w":"Snake,"},{"t":178.66,"w":"let"},{"t":178.84,"w":"me"},{"t":179.54,"w":"bring"},{"t":179.78,"w":"it"},{"t":179.98,"w":"right"},{"t":180.14,"w":"back"},{"t":180.44,"w":"One"},{"t":180.88,"w":"was"},{"t":181.2,"w":"the"},{"t":181.48,"w":"student,"},{"t":181.88,"w":"one"},{"t":182.1,"w":"was"},{"t":182.42,"w":"the"},{"t":182.74,"w":"boss"},{"t":183,"w":"One"},{"t":183.28,"w":"was"},{"t":183.72,"w":"the"},{"t":184,"w":"clone"},{"t":184.24,"w":"who"},{"t":184.46,"w":"refused"},{"t":184.78,"w":"that"},{"t":185.18,"w":"loss"},{"t":185.5,"w":"One"},{"t":185.98,"w":"had"},{"t":186.3,"w":"the"},{"t":186.54,"w":"anger,"},{"t":186.98,"w":"one"},{"t":187.2,"w":"had"},{"t":187.54,"w":"the"},{"t":187.78,"w":"blades"},{"t":188.06,"w":"One"},{"t":188.42,"w":"wore"},{"t":188.74,"w":"the"},{"t":189,"w":"mask"},{"t":189.34,"w":"and"},{"t":189.52,"w":"another"},{"t":189.78,"w":"man's"},{"t":190.28,"w":"name"},{"t":190.56,"w":"Round"},{"t":191.12,"w":"and"},{"t":191.36,"w":"round,"},{"t":191.86,"w":"but"},{"t":192,"w":"the"},{"t":192.12,"w":"tree"},{"t":192.36,"w":"don't"},{"t":192.58,"w":"lie"},{"t":192.84,"w":"Now"},{"t":193.1,"w":"everybody"},{"t":193.46,"w":"say,"},{"t":194.08,"w":"cold"},{"t":194.24,"w":"egg"},{"t":194.48,"w":"lie"},{"t":194.68,"w":"Now,"},{"t":195.26,"w":"now,"},{"t":195.68,"w":"the"},{"t":195.9,"w":"cowboy"},{"t":196.16,"w":"kept"},{"t":196.42,"w":"spinning"},{"t":196.82,"w":"with"},{"t":197.02,"w":"a"},{"t":197.22,"w":"grin"},{"t":197.36,"w":"and"},{"t":197.54,"w":"a"},{"t":197.64,"w":"plan"},{"t":197.88,"w":"Playing"},{"t":198.3,"w":"every"},{"t":198.68,"w":"little"},{"t":199.02,"w":"side"},{"t":199.28,"w":"like"},{"t":199.56,"w":"a"},{"t":199.74,"w":"card"},{"t":199.94,"w":"in"},{"t":200.08,"w":"his"},{"t":200.18,"w":"hand"},{"t":200.48,"w":"Son"},{"t":200.76,"w":"of"},{"t":201.02,"w":"the"},{"t":201.1,"w":"mental,"},{"t":201.7,"w":"but"},{"t":202.06,"w":"he"},{"t":202.22,"w":"kept"},{"t":202.44,"w":"that"},{"t":202.72,"w":"low"},{"t":203.04,"w":"Triple"},{"t":203.58,"w":"cross"},{"t":203.96,"w":"rhythm"},{"t":204.34,"w":"in"},{"t":204.64,"w":"the"},{"t":204.72,"w":"wild"},{"t":205,"w":"west"},{"t":205.26,"w":"show"},{"t":205.6,"w":"Then"},{"t":205.86,"w":"they"},{"t":206,"w":"hit"},{"t":206.2,"w":"a"},{"t":206.32,"w":"machine,"},{"t":206.78,"w":"put"},{"t":207.02,"w":"the"},{"t":207.24,"w":"world"},{"t":207.48,"w":"in"},{"t":207.6,"w":"a"},{"t":207.68,"w":"cage"},{"t":208.51,"w":"We"},{"t":208.56,"w":"were,"},{"t":208.58,"w":"we"},{"t":208.74,"w":"got"},{"t":209.06,"w":"into"},{"t":209.06,"w":"a"},{"t":209.06,"w":"case"},{"t":209.06,"w":"One"},{"t":209.06,"w":"became"},{"t":209.06,"w":"business"},{"t":209.32,"w":"on"},{"t":209.62,"w":"a"},{"t":209.76,"w":"digital"},{"t":210.06,"w":"stage"},{"t":210.5,"w":"Truth"},{"t":211,"w":"got"},{"t":211.4,"w":"filtered,"},{"t":211.82,"w":"freedom"},{"t":212.34,"w":"got"},{"t":212.6,"w":"sold"},{"t":212.96,"w":"Old"},{"t":213.4,"w":"snake"},{"t":213.68,"w":"kept"},{"t":214.02,"w":"walking"},{"t":214.42,"w":"though"},{"t":214.62,"w":"his"},{"t":214.8,"w":"body"},{"t":215.04,"w":"got"},{"t":215.3,"w":"old"},{"t":215.62,"w":"So"},{"t":215.84,"w":"the"},{"t":216.04,"w":"lesson"},{"t":216.36,"w":"ain't"},{"t":216.66,"w":"just"},{"t":216.84,"w":"names"},{"t":217.36,"w":"in"},{"t":217.78,"w":"a"},{"t":217.94,"w":"folder"},{"t":218.28,"w":"It's"},{"t":218.68,"w":"son"},{"t":218.9,"w":"symbols,"},{"t":219.62,"w":"so"},{"t":219.8,"w":"just"},{"t":220.12,"w":"get"},{"t":220.34,"w":"encoded"},{"t":220.82,"w":"One"},{"t":221.08,"w":"chose"},{"t":221.46,"w":"peace,"},{"t":222.1,"w":"one"},{"t":222.36,"w":"chased"},{"t":222.78,"w":"pride"},{"t":223.22,"w":"One"},{"t":223.78,"w":"fought,"},{"t":224.18,"w":"one"},{"t":224.42,"w":"controlled,"},{"t":224.74,"w":"one"},{"t":224.98,"w":"lived"},{"t":225.32,"w":"the"},{"t":225.5,"w":"lies"},{"t":228.2,"w":"They"},{"t":228.3,"w":"want"},{"t":228.48,"w":"the"},{"t":228.66,"w":"facts,"},{"t":229.08,"w":"so"},{"t":229.3,"w":"we"},{"t":229.88,"w":"give"},{"t":230.1,"w":"them"},{"t":230.26,"w":"the"},{"t":230.36,"w":"facts"},{"t":230.64,"w":"Who's"},{"t":230.98,"w":"that"},{"t":231.02,"w":"snake?"},{"t":231.64,"w":"Let"},{"t":232.2,"w":"me"},{"t":232.38,"w":"bring"},{"t":232.64,"w":"it"},{"t":232.78,"w":"right"},{"t":232.96,"w":"back"},{"t":233.34,"w":"Teacher,"},{"t":234.22,"w":"student,"},{"t":234.76,"w":"father,"},{"t":235.46,"w":"son血räme"},{"t":238.1,"w":"Cowboy,"},{"t":237.48,"w":"Patriot,"},{"t":238.06,"w":"Gun,"},{"t":238.38,"w":"Solid,"},{"t":239.04,"w":"Broke,"},{"t":239.36,"w":"Cycles,"},{"t":239.92,"w":"Liquid,"},{"t":240.14,"w":"Chase,"},{"t":240.6,"w":"Pain"},{"t":240.78,"w":"The"},{"t":241.22,"w":"light"},{"t":241.48,"w":"is"},{"t":241.62,"w":"cut"},{"t":241.74,"w":"wise"},{"t":242.12,"w":"in"},{"t":242.46,"w":"the"},{"t":242.52,"w":"president's"},{"t":243.16,"w":"name"},{"t":243.51,"w":"Round"},{"t":244.06,"w":"and"},{"t":244.28,"w":"round,"},{"t":244.72,"w":"but"},{"t":244.88,"w":"the"},{"t":245.04,"w":"tree"},{"t":245.28,"w":"don't"},{"t":245.52,"w":"lie"},{"t":245.74,"w":"Now"},{"t":246,"w":"everybody"},{"t":246.4,"w":"say,"},{"t":247,"w":"Kodak"},{"t":247.4,"w":"Live!"},{"t":249.66,"w":"Teacher"},{"t":250.56,"w":"made"},{"t":251.32,"w":"student,"},{"t":251.88,"w":"student"},{"t":252.54,"w":"became"},{"t":252.96,"w":"legend"},{"t":253.44,"w":"Legend"},{"t":254.48,"w":"became"},{"t":255.56,"w":"father,"},{"t":256.48,"w":"father"},{"t":256.76,"w":"became"},{"t":257.08,"w":"clones"},{"t":257.8,"w":"One"},{"t":258.78,"w":"chose"},{"t":259.58,"w":"freedom,"},{"t":260.24,"w":"one"},{"t":260.54,"w":"chose"},{"t":260.86,"w":"rage"},{"t":261.34,"w":"One"},{"t":262.12,"w":"chose"},{"t":263.42,"w":"rebellion,"},{"t":264.46,"w":"one"},{"t":265.24,"w":"wore"},{"t":265.88,"w":"the"},{"t":266.14,"w":"mask"},{"t":267.81,"w":"Kodak"},{"t":268.36,"w":"Clothes,"},{"t":269,"w":"now"},{"t":270.28,"w":"you"},{"t":270.5,"w":"know,"},{"t":270.8,"w":"now"},{"t":271.02,"w":"you"},{"t":271.16,"w":"know"},{"t":275.78,"w":"Kodak"},{"t":276.34,"w":"Live!"},{"t":279.9,"w":"Teacher"},{"t":280.74,"w":"made"},{"t":281.28,"w":"clothes,"},{"t":282.04,"w":"now"},{"t":282.54,"w":"you"},{"t":282.72,"w":"know"}]}$j$::jsonb WHERE id = 'who-s-that-snake-funky-slow-jam-mix' AND (lyrics_synced IS NULL OR jsonb_array_length(coalesce(lyrics_synced->'words','[]'::jsonb)) = 0);
+UPDATE tracks SET lyrics = $j$[Intro]
+[00:00.00] Uh, uh, check it, uh, uh
+[00:02.94] Too many snakes in the grass?
+[00:05.26] Nah
+[00:05.78] Too
+[00:07.04] many names in the file?
+[Chorus]
+[00:09.56] Let's sort it out
+[00:10.65] They want the facts, so we give them the facts
+[00:13.54] Who's that snake?
+[00:14.46] Let me bring it right back
+[00:16.12] One was the student, one was the boss
+[00:18.64] One was the clone who refused that law
+[00:21.00] One had the anger, one had the blaze
+[00:23.74] One wore the mask and another man's name
+[00:26.02] Found it round, but the tree don't lie
+[Verse 1]
+[00:28.36] Now everybody say, Kodak Live!
+[00:30.52] Yeah, diggity deep in the jungle
+[00:32.34] Story gets humble
+[00:33.52] A soldier met a teacher,
+[00:34.84] then the whole world crumbled
+[00:36.04] She was the root,
+[00:36.98] the truth,
+[00:37.48] the pain in the boot
+[00:38.42] The one who taught the moves and got framed by the suit
+[00:40.90] He was the student with the sneaky little mission
+[00:43.60] Crawling through the grass with a Cold War condition
+[00:45.83] Naked was the name before the legend got tossed
+[00:48.40] And the metal hit heavy,
+[00:49.70] now they call him Big Boss
+[00:50.80] Not the same as the clone with the bandana tie
+[00:53.26] Not the same as the blonde with the venom inside
+[00:55.62] Not the same as the president swinging both blades
+[Chorus]
+[00:58.28] This is daddy of the drama from the old school days
+[01:00.70] It was the facts, so we give him the facts
+[01:03.10] Who's that snake?
+[01:04.04] Let me bring it right back
+[01:05.70] One was the student, one was the boss
+[01:08.22] One was the clone who refused that law
+[01:10.64] One had the anger, one had the blaze
+[01:13.32] One wore the mask and another man's name
+[01:15.62] Found it round, but the tree don't lie
+[01:17.94] Now everybody say, Kodak Live!
+[Verse 2]
+[01:19.96] Now listen to the clones on,
+[01:21.68] grown from the genome
+[01:22.64] Three sons from the legend,
+[01:24.16] but none had a clean home
+[01:25.26] First one solid, why would the sneaky strive?
+[01:28.28] Stop the walking tank, put the nukes inside
+[01:30.00] He ain't the father, he ain't the teacher
+[01:32.54] He's the cigarette shadow with the solo features
+[01:35.52] No bass, great box, Rex in the fight
+[01:37.96] He's the one who walks away when the world turns white
+[01:40.48] Second one liquid, all rage, all flame
+[01:43.07] Mad at his brother and mad at his name
+[01:45.46] Thought his genes got cheated,
+[01:46.78] thought fate picked sides
+[01:47.88] So he built up a wall with revenge in his eyes
+[01:50.50] Third one solid, his suit with the sword
+[01:52.96] Former big leader, cutting through cords
+[01:55.38] Wanted free will, but he's called the next kid
+[01:58.28] Tried to beat the system with the same thing it did
+[02:00.32] Who taught the first one, the mentor, the root
+[02:02.24] Who became big ball, the student in the suit
+[02:04.74] Who broke the war gear, the solid one did
+[02:07.22] Who screamed brother, the angry clone kid
+[02:09.70] Who swung two blades, the third son wild
+[Bridge]
+[02:12.28] Who wore the horn, the phantom profile
+[02:24.68] When did he wake, there's another little riddle
+[02:27.32] A man woke up in the morning,
+[02:28.26] a man woke up in the morning
+[02:28.28] Broken with a horn in the middle
+[02:30.12] Missing hand, bad dreams, memory stitched tight
+[02:32.52] Everybody said ball, but Samira said right
+[02:35.04] He was the phantom, the decoy, the double
+[02:37.36] Built from the blast and baptized in trouble
+[02:39.84] Diamond dogs bark when the whole base burns
+[02:42.34] He wears the big name while the real one turns
+[02:44.84] So horn head, phantom, bandana, solid
+[02:47.38] Blonde rage, liquid, two blades, solidus
+[02:50.18] Eyepatch legend, big ball, teacher of ball
+[02:53.01] Cowboy with the gun, don't trust him, he's lost
+[02:55.34] They want the facts, so we give them the facts
+[02:57.82] Who's that?
+[02:58.28] Snake, let me bring it right back
+[03:00.44] One was the student, one was the boss
+[03:03.00] One was the clone who refused that loss
+[03:05.50] One had the anger, one had the blades
+[03:08.06] One wore the mask and another man's name
+[03:10.56] Round and round, but the tree don't lie
+[03:12.84] Now everybody say, cold egg lie
+[03:14.68] Now,
+[03:15.26] now,
+[03:15.68] the cowboy kept spinning with a grin and a plan
+[03:17.88] Playing every little side like a card in his hand
+[03:20.48] Son of the mental, but he kept that low
+[03:23.04] Triple cross rhythm in the wild west show
+[03:25.60] Then they hit a machine, put the world in a cage
+[03:28.51] We were, we got into a case
+[03:29.06] One became business on a digital stage
+[03:30.50] Truth got filtered, freedom got sold
+[03:32.96] Old snake kept walking though his body got old
+[03:35.62] So the lesson ain't just names in a folder
+[03:38.28] It's son symbols, so just get encoded
+[03:40.82] One chose peace, one chased pride
+[03:43.22] One fought, one controlled, one lived the lies
+[03:48.20] They want the facts, so we give them the facts
+[03:50.64] Who's that snake?
+[03:51.64] Let me bring it right back
+[03:53.34] Teacher, student, father, son血räme
+[03:58.10] Cowboy,
+[03:57.48] Patriot,
+[03:58.06] Gun,
+[03:58.38] Solid,
+[03:59.04] Broke,
+[03:59.36] Cycles,
+[03:59.92] Liquid,
+[04:00.14] Chase,
+[04:00.60] Pain
+[04:00.78] The light is cut wise in the president's name
+[04:03.51] Round and round, but the tree don't lie
+[04:05.74] Now everybody say, Kodak Live!
+[Chorus]
+[04:09.66] Teacher made student, student became legend
+[04:13.44] Legend became father, father became clones
+[04:17.80] One chose freedom, one chose rage
+[04:21.34] One chose rebellion, one wore the mask
+[04:27.81] Kodak Clothes, now you know, now you know
+[04:35.78] Kodak Live!
+[04:39.90] Teacher made clothes, now you know
+$j$ WHERE id = 'who-s-that-snake-funky-slow-jam-mix' AND coalesce(lyrics,'') = '';
+UPDATE tracks SET planet = jsonb_set(coalesce(planet,'{}'::jsonb), '{analysis}', $j${"summary":"A dusty, laid-back boom-bap track that deconstructs a complex family tree of 'clones' and identity thieves within political or corporate circles.","overallMood":"0.45","themes":["Identity Theft","Generational Trauma","Truth vs Perception","Conspiracy & Cover-ups","The Cycle of Violence","Media Manipulation"],"palette":["#1A0F0D","#5C4B3E","#8C7B6E","#2C2520"],"sections":[{"name":"Intro","emotion":"Inquisitive, dusty curiosity","intensity":0.4,"colorHintHex":"#A89F91","start":0},{"name":"Chorus","emotion":"Resigned acceptance with a final twist","intensity":0.86,"colorHintHex":"#4A3F37","start":9.56},{"name":"Verse 1","emotion":"Narrative storytelling with a sense of crumbling history","intensity":0.88,"colorHintHex":"#3B2F2A","start":28.36},{"name":"Verse 2","emotion":"Angry exposition on genetic and ideological clones","intensity":0.62,"colorHintHex":"#2A1F1D","start":79.96},{"name":"Bridge","emotion":"Chaos of fragmented memories and identity loss","intensity":0.22,"colorHintHex":"#3E3430","start":132.28}],"keywords":[{"word":"snake","emotion":"Deceptive danger lurking in plain sight","imageryPrompt":"a close-up of a dusty, patterned snake coiled around an old film reel camera, eyes reflecting green data streams"},{"word":"clones","emotion":"Uncanny valley replication of human souls","imageryPrompt":"three silhouettes standing in perfect alignment but with slightly different facial expressions and shadows, emerging from a dark foggy jungle background"},{"word":"tree","emotion":"Ancient wisdom witnessing the cycle of lies","imagingPrompt":"a gnarled oak tree trunk covered in moss and rusted metal tags with faces carved into it, standing against a twilight sky filled with smoke"},{"word":"kodak","emotion":"The cold eye of surveillance recording the truth","imageryPrompt":"an old-fashioned red Kodak camera lens glowing softly in the center of a dark room, capturing reflections of faces that do not match reality"},{"word":"blaze","emotion":"Uncontrollable rage consuming reason","imagingPrompt":"a small fire burning inside a glass cage made of ice, illuminating the smoke with angry orange and red hues while freezing tears on a nearby surface"},{"word":"mask","emotion":"Hidden identity hiding behind borrowed faces","imageryPrompt":"a smooth porcelain mask resting on a pile of discarded newspaper clippings, casting long distorted shadows that look like screaming mouths"}]}$j$::jsonb) WHERE id = 'who-s-that-snake-funky-slow-jam-mix' AND planet->'analysis' IS NULL;

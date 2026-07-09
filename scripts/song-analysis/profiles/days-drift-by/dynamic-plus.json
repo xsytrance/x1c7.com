@@ -1,0 +1,60 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 46,
+   "end": 57,
+   "stemSpot": {
+    "solo": [
+     "keys",
+     "lead"
+    ],
+    "label": "ETHEREAL PADS & LEAD O"
+   },
+   "why": ""
+  },
+  {
+   "start": 68,
+   "end": 79,
+   "stemSpot": {
+    "solo": [
+     "woodwinds"
+    ],
+    "label": "THE WOODWINDS SPEAK"
+   },
+   "why": ""
+  },
+  {
+   "start": 132,
+   "end": 148,
+   "stemSpot": {
+    "solo": [
+     "bass"
+    ],
+    "label": "LIQUID BASS SOLO"
+   },
+   "why": ""
+  },
+  {
+   "start": 161,
+   "end": 180,
+   "stemSpot": {
+    "solo": [
+     "perc",
+     "drums"
+    ],
+    "label": "RHYTHM & PERCUSSION ON"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "leaves": "dissolve",
+  "hold": "slam",
+  "drift": "bloom",
+  "gray": "shatter",
+  "melt": "liquid",
+  "closer": "rise",
+  "higher": "glitch"
+ }
+}

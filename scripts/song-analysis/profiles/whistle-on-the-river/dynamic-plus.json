@@ -1,0 +1,37 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 23,
+   "end": 48,
+   "reactor": "graffiti",
+   "why": "Verse 1 establishes the playful yet menacing noir/cartoon aesthetic; graffiti captures the"
+  },
+  {
+   "start": 59,
+   "end": 84,
+   "reactor": "fireworks",
+   "why": "The Chorus hits maximum intensity (0.98) with an industrial crescendo; fireworks provide t"
+  },
+  {
+   "start": 125,
+   "end": 147,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "bass"
+    ],
+    "label": "THE RIVER GROOVE ONLY"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "whistle": "shatter",
+  "smoke": "dissolve",
+  "gloves": "glitch",
+  "ink": "bleed",
+  "crank": "slam",
+  "flicker": "freeze"
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "synth",
+     "drums"
+    ],
+    "label": "INTRO GROOVE ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 67,
+   "end": 85,
+   "reactor": "fireworks",
+   "why": ""
+  },
+  {
+   "start": 97,
+   "end": 120,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "perc"
+    ],
+    "label": "COLD OBSERVATION"
+   },
+   "why": ""
+  },
+  {
+   "start": 137,
+   "end": 152,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "other"
+    ],
+    "label": "RESOLUTE DECISION"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "veneno": "shatter",
+  "miel": "bloom",
+  "engaño": "glitch",
+  "fiel": "pulse",
+  "lealtad": "rise"
+ }
+}

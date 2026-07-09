@@ -1,0 +1,37 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 14,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "DRUMS & PERC ONLY"
+   },
+   "why": "Captures the 'Chaos and exhaustion' of Verse 1 during a drum-cut window (14-16s extended),"
+  },
+  {
+   "start": 73,
+   "end": 85,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "keys"
+    ],
+    "label": "GUITAR & KEYS DUALITY"
+   },
+   "why": "Highlights the instrumental break in Verse 2 where 'Internal reflection and crumbling ego'"
+  }
+ ],
+ "words": {
+  "fucked": "shatter",
+  "sirens": "glitch",
+  "money": "burn",
+  "silence": "dissolve",
+  "red flags": "carve",
+  "moon": "freeze"
+ }
+}

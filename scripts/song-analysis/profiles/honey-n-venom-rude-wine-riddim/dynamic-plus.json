@@ -1,0 +1,30 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 43,
+   "end": 51,
+   "reactor": "orbit",
+   "why": "Captures the 'Hypnotic Repetition' section where the listener feels floating in a trance o"
+  },
+  {
+   "start": 85,
+   "end": 95,
+   "reactor": "marionette",
+   "why": "Reflects 'Chaotic Passion' and toxic love; the subject is being manipulated by desire like"
+  },
+  {
+   "start": 147,
+   "end": 160,
+   "reactor": "tarot",
+   "why": "Matches 'Unrestrained Chaos' and 'Intoxicated Confusion'; the song's fate feels like a dar"
+  }
+ ],
+ "words": {
+  "venom": "shatter",
+  "honey": "bloom",
+  "poison": "glitch",
+  "burn": "melt",
+  "strobe": "freeze"
+ }
+}

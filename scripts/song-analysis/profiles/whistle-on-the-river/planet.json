@@ -1,0 +1,94 @@
+[
+  {
+    "id": "whistle-on-the-river",
+    "planet": {
+      "analysis": {
+        "summary": "A gritty gangsta rap narrative blending noir atmosphere with chaotic rubber-hose cartoon aesthetics to depict a dangerous riverboat crime story where playful visuals mask lethal threats.",
+        "overallMood": "0.75",
+        "themes": [
+          "Violence disguised as play",
+          "Noir criminal underworld",
+          "Cartoon physics meets reality",
+          "Dangerous nostalgia",
+          "Monochromatic tension",
+          "Industrial decay"
+        ],
+        "palette": [
+          "#1C1A16",
+          "#4B3F2E",
+          "#7D5A50",
+          "#8E9BA8"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Mysterious, ominous anticipation of a crime story beginning.",
+            "intensity": 0.4,
+            "colorHintHex": "#1C1A16",
+            "imageryPrompt": "Black and white grainy film stock with fog rolling over dark wooden docks at night, faint silhouette of an old steamboat whistle cutting through the smoke.",
+            "start": 6.24
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Playful yet menacing introduction to characters on a dangerous boat.",
+            "intensity": 0.65,
+            "colorHintHex": "#4B3F2E",
+            "imageryPrompt": "Rubber-hose animation style hands gripping a ship's wheel in high contrast black and white, steam rising from pipes like ghostly fingers against a dark river background.",
+            "start": 6.24
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Final crescendo of industrial noise and criminal threat.",
+            "intensity": 0.95,
+            "colorHintHex": "#8E9BA8",
+            "imageryPrompt": "Monochromatic scene where a riverboat engine roars like a living beast, gangster figures in white gloves standing amidst steam that forms screaming faces.",
+            "start": 57.66
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Aggressive realization that the cartoon facade is deadly real.",
+            "intensity": 0.85,
+            "colorHintHex": "#3E2C1F",
+            "imageryPrompt": "Concrete pier meeting bouncing rubber hose legs, a steel-toed boot crushing tap dance rhythms, dark shadows looming over white gloved hands turning crank wheels.",
+            "start": 98.92
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Whistle",
+            "emotion": "Menacing warning signal",
+            "imageryPrompt": "A rusty metal ship whistle emitting a sound wave that distorts reality into jagged cartoon lines against black smoke."
+          },
+          {
+            "word": "Smoke",
+            "emotion": "Choking atmosphere of crime",
+            "imageryPrompt": "Thick rolling fog from steamboat stacks obscuring faces, swirling in grayscale like ink spilled on water with a hint of red danger deep inside the gray."
+          },
+          {
+            "word": "Gloves",
+            "emotion": "Clumsy violence potential",
+            "imageryPrompt": "Large rubber-hose style white gloves hovering over a dark surface, fingers curled as if ready to strike or clutch something forbidden."
+          },
+          {
+            "word": "Steam",
+            "emotion": "Industrial pressure and heat",
+            "imageryPrompt": "White vapor exploding from boiler pipes creating ghostly shapes that look like screaming mouths in a 1928 cartoon frame."
+          },
+          {
+            "word": "Ink",
+            "emotion": "Permanent mark of criminal record",
+            "imageryPrompt": "Black liquid dripping from a fountain pen onto dirty wooden planks, spreading rapidly to form shadowy fingerprints in the dust."
+          },
+          {
+            "word": "Crank",
+            "emotion": "Mechanical force and turning point",
+            "imageryPrompt": "A large metal ship wheel being turned by white-gloved hands causing chains to clank rhythmically under dim electric light."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

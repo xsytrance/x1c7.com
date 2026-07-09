@@ -1,0 +1,30 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 13,
+   "end": 25,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "DRUMS & BASS ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 187,
+   "end": 212,
+   "reactor": "tarot",
+   "why": "The 'Drop' at 187s represents the narrator's defeated acceptance and cynical dismissal. Ta"
+  }
+ ],
+ "words": {
+  "five": "melt",
+  "hand": "shatter",
+  "candy": "glitch",
+  "brand": "redact",
+  "trust": "bleed",
+  "chemical": "tremor"
+ }
+}

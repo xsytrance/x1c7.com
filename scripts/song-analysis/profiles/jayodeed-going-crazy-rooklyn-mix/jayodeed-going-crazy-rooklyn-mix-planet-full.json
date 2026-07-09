@@ -1,0 +1,111 @@
+{
+  "analysis": {
+    "summary": "This song explores a turbulent romantic obsession where toxic dynamics blur into addiction, oscillating between hatred and dependency within a chaotic nightlife setting.",
+    "overallMood": "#1a0b2e",
+    "themes": [
+      "Toxic Love",
+      "Addiction",
+      "Chaos vs Order",
+      "Obsession"
+    ],
+    "palette": [
+      "#FF1493",
+      "#2E061A",
+      "#5F2C8D",
+      "#7FFF00"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and nervous energy building a storm.",
+        "intensity": 0.53,
+        "colorHintHex": "#1a0b2e",
+        "start": 2.16
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Conflicted urgency; the immediate onset of madness triggered by presence.",
+        "intensity": 0.6,
+        "colorHintHex": "#FF1493",
+        "start": 2.16
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Peak chaotic intensity; screaming desire amidst destruction.",
+        "intensity": 0.96,
+        "colorHintHex": "#FFD700",
+        "start": 12.44
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Disoriented vulnerability; the haze of alcohol masking pain.",
+        "intensity": 0.88,
+        "colorHintHex": "#5F2C8D",
+        "start": 15.49
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Rising tension and rhythmic oscillation like crashing waves.",
+        "intensity": 0.77,
+        "colorHintHex": "#FF4136",
+        "start": 42.24
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Melancholic resignation and the cold logic of a broken cycle.",
+        "intensity": 0.17,
+        "colorHintHex": "#1a0b2e",
+        "start": 161.24
+      },
+      {
+        "name": "Drop",
+        "emotion": "Pure sonic chaos; disintegration of self into noise.",
+        "intensity": 0.3,
+        "colorHintHex": "#FF4136",
+        "start": 201.4
+      },
+      {
+        "name": "Outro",
+        "emotion": "Fading echo of obsession refusing to let go completely.",
+        "intensity": 0.21,
+        "colorHintHex": "#5F2C8D",
+        "start": 209.47
+      }
+    ],
+    "keywords": [
+      {
+        "word": "crazy",
+        "emotion": "Manic instability and loss of control.",
+        "imageryPrompt": "A swirling vortex of neon lights distorting a person's face, surrounded by floating shattered glass and digital glitch effects."
+      },
+      {
+        "word": "hate",
+        "emotion": "Burning resentment mixed with suppressed longing.",
+        "imageryPrompt": "Dark smoke curling around clenched fists holding a burning rose that refuses to fade in the shadows of an alleyway."
+      },
+      {
+        "word": "need",
+        "emotion": "Desperate, hollow craving for connection.",
+        "imageryPrompt": "Dry, cracked earth reaching desperately toward a single dripping faucet inside a sterile, empty concrete room."
+      },
+      {
+        "word": "ghost",
+        "emotion": "Haunting presence of memory in the present moment.",
+        "imageryPrompt": "A translucent figure dancing alone in an abandoned club with flickering strobe lights casting long, disjointed shadows."
+      },
+      {
+        "word": "poison",
+        "emotion": "Dangerous allure and self-destruction.",
+        "imageryPrompt": "Vibrant red liquid dripping from a cracked glass onto a black floor that instantly blooms with dark violet flowers."
+      },
+      {
+        "word": "chaos",
+        "emotion": "Overwhelming sensory overload and disorder.",
+        "imageryPrompt": "A kaleidoscope of shattered mirrors reflecting different timelines, exploding outward in slow motion amidst rain."
+      }
+    ]
+  },
+  "styleHint": "A driving G major synth-pop track at a high-energy 143.5 bpm featuring pulsating basslines and atmospheric keys that build an urgent, club-ready vibe perfect for expressing turbulent romantic obsession.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:47:10.440Z"
+}

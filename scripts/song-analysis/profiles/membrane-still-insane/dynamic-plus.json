@@ -1,0 +1,60 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 29,
+   "end": 47,
+   "stemSpot": {
+    "solo": [
+     "drums"
+    ],
+    "label": "DRUMS & BASS ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 94,
+   "end": 102,
+   "stemSpot": {
+    "solo": [
+     "perc",
+     "lead"
+    ],
+    "label": "PERC & LEAD ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 164,
+   "end": 182,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "synth"
+    ],
+    "label": "BASS & SYNTH ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 205,
+   "end": 230,
+   "stemSpot": {
+    "solo": [
+     "lead",
+     "other"
+    ],
+    "label": "LEAD & ATMOSPHERE ONLY"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "whistle": "slam",
+  "membrane": "shatter",
+  "fog": "dissolve",
+  "steam": "glitch",
+  "flames": "burn",
+  "villain": "carve"
+ }
+}

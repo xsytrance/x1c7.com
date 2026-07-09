@@ -1,0 +1,41 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 30,
+   "end": 55,
+   "stemSpot": {
+    "solo": [
+     "bass",
+     "drums"
+    ],
+    "label": "THE PRESSURE RISES"
+   },
+   "why": "Captures the heavy burden turning into defiance during Verse 1; isolates the rhythmic driv"
+  },
+  {
+   "start": 67,
+   "end": 92,
+   "reactor": "fireworks",
+   "why": "Matches the soaring vocal release of the FIRST CHORUS ('la presión hace oro'); captures th"
+  },
+  {
+   "start": 108,
+   "end": 133,
+   "stemSpot": {
+    "solo": [
+     "lead"
+    ],
+    "label": "THE BRASS CROWN"
+   },
+   "why": "Highlights the brass-heavy climax of the Drop; isolates the 'war call' sounds and hardened"
+  }
+ ],
+ "words": {
+  "presión": "slam",
+  "oro": "bloom",
+  "fuego": "burn",
+  "brass": "pulse",
+  "scars": "glitch"
+ }
+}

@@ -1,0 +1,3998 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 0.38,
+      "text": "Uh, yeah,",
+      "words": [
+        {
+          "t": 0.0,
+          "text": "Uh,"
+        },
+        {
+          "t": 0.28,
+          "text": "yeah,"
+        }
+      ]
+    },
+    {
+      "start": 0.94,
+      "end": 1.04,
+      "text": "uh,",
+      "words": [
+        {
+          "t": 0.94,
+          "text": "uh,"
+        }
+      ]
+    },
+    {
+      "start": 1.6,
+      "end": 1.7,
+      "text": "woo",
+      "words": [
+        {
+          "t": 1.6,
+          "text": "woo"
+        }
+      ]
+    },
+    {
+      "start": 3.46,
+      "end": 6.62,
+      "text": "Summer night, laptop glow",
+      "words": [
+        {
+          "t": 3.46,
+          "text": "Summer"
+        },
+        {
+          "t": 4.26,
+          "text": "night,"
+        },
+        {
+          "t": 4.96,
+          "text": "laptop"
+        },
+        {
+          "t": 6.02,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 6.69,
+      "end": 7.54,
+      "text": "Little",
+      "words": [
+        {
+          "t": 6.69,
+          "text": "Little"
+        }
+      ]
+    },
+    {
+      "start": 8.064,
+      "end": 9.12,
+      "text": "ice in the glass",
+      "words": [
+        {
+          "t": 8.064,
+          "text": "ice"
+        },
+        {
+          "t": 8.42,
+          "text": "in"
+        },
+        {
+          "t": 8.68,
+          "text": "the"
+        },
+        {
+          "t": 8.78,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "start": 9.12,
+      "end": 11.26,
+      "text": "We workin' different now, come on",
+      "words": [
+        {
+          "t": 9.12,
+          "text": "We"
+        },
+        {
+          "t": 9.72,
+          "text": "workin'"
+        },
+        {
+          "t": 10.1,
+          "text": "different"
+        },
+        {
+          "t": 10.26,
+          "text": "now,"
+        },
+        {
+          "t": 10.72,
+          "text": "come"
+        },
+        {
+          "t": 11.1,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 11.31,
+      "end": 12.7,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 11.31,
+          "text": "Cocktails"
+        },
+        {
+          "t": 12.16,
+          "text": "and"
+        },
+        {
+          "t": 12.36,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 15.296,
+      "end": 16.98,
+      "text": "Watch the new me low",
+      "words": [
+        {
+          "t": 15.296,
+          "text": "Watch"
+        },
+        {
+          "t": 15.776,
+          "text": "the"
+        },
+        {
+          "t": 16.06,
+          "text": "new"
+        },
+        {
+          "t": 16.26,
+          "text": "me"
+        },
+        {
+          "t": 16.58,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 18.944,
+      "end": 22.1,
+      "text": "We don't move like before",
+      "words": [
+        {
+          "t": 18.944,
+          "text": "We"
+        },
+        {
+          "t": 19.6,
+          "text": "don't"
+        },
+        {
+          "t": 20.4,
+          "text": "move"
+        },
+        {
+          "t": 20.992,
+          "text": "like"
+        },
+        {
+          "t": 21.18,
+          "text": "before"
+        }
+      ]
+    },
+    {
+      "start": 23.8,
+      "end": 25.58,
+      "text": "No, no, no",
+      "words": [
+        {
+          "t": 23.8,
+          "text": "No,"
+        },
+        {
+          "t": 24.6,
+          "text": "no,"
+        },
+        {
+          "t": 25.18,
+          "text": "no"
+        }
+      ]
+    },
+    {
+      "start": 25.84,
+      "end": 26.24,
+      "text": "Uh,",
+      "words": [
+        {
+          "t": 25.84,
+          "text": "Uh,"
+        }
+      ]
+    },
+    {
+      "start": 28.66,
+      "end": 28.68,
+      "text": "yeah",
+      "words": [
+        {
+          "t": 28.66,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 28.68,
+      "end": 28.896,
+      "text": "Uh,",
+      "words": [
+        {
+          "t": 28.68,
+          "text": "Uh,"
+        }
+      ]
+    },
+    {
+      "start": 29.78,
+      "end": 30.12,
+      "text": "uh, yeah",
+      "words": [
+        {
+          "t": 29.78,
+          "text": "uh,"
+        },
+        {
+          "t": 30.02,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 31.16,
+      "end": 33.34,
+      "text": "Sunset drippin' through the blinds like gold",
+      "words": [
+        {
+          "t": 31.16,
+          "text": "Sunset"
+        },
+        {
+          "t": 31.68,
+          "text": "drippin'"
+        },
+        {
+          "t": 32.16,
+          "text": "through"
+        },
+        {
+          "t": 32.32,
+          "text": "the"
+        },
+        {
+          "t": 32.48,
+          "text": "blinds"
+        },
+        {
+          "t": 32.86,
+          "text": "like"
+        },
+        {
+          "t": 32.96,
+          "text": "gold"
+        }
+      ]
+    },
+    {
+      "start": 33.34,
+      "end": 35.74,
+      "text": "Same little room but the dream got bold",
+      "words": [
+        {
+          "t": 33.34,
+          "text": "Same"
+        },
+        {
+          "t": 33.824,
+          "text": "little"
+        },
+        {
+          "t": 34.16,
+          "text": "room"
+        },
+        {
+          "t": 34.54,
+          "text": "but"
+        },
+        {
+          "t": 34.72,
+          "text": "the"
+        },
+        {
+          "t": 34.88,
+          "text": "dream"
+        },
+        {
+          "t": 35.14,
+          "text": "got"
+        },
+        {
+          "t": 35.38,
+          "text": "bold"
+        }
+      ]
+    },
+    {
+      "start": 35.74,
+      "end": 38.12,
+      "text": "Glass on the table with the ice half low",
+      "words": [
+        {
+          "t": 35.74,
+          "text": "Glass"
+        },
+        {
+          "t": 36.32,
+          "text": "on"
+        },
+        {
+          "t": 36.56,
+          "text": "the"
+        },
+        {
+          "t": 36.68,
+          "text": "table"
+        },
+        {
+          "t": 36.98,
+          "text": "with"
+        },
+        {
+          "t": 37.18,
+          "text": "the"
+        },
+        {
+          "t": 37.3,
+          "text": "ice"
+        },
+        {
+          "t": 37.58,
+          "text": "half"
+        },
+        {
+          "t": 37.84,
+          "text": "low"
+        }
+      ]
+    },
+    {
+      "start": 38.12,
+      "end": 40.5,
+      "text": "Got my mind on fire and my laptop glow",
+      "words": [
+        {
+          "t": 38.12,
+          "text": "Got"
+        },
+        {
+          "t": 38.36,
+          "text": "my"
+        },
+        {
+          "t": 38.5,
+          "text": "mind"
+        },
+        {
+          "t": 38.86,
+          "text": "on"
+        },
+        {
+          "t": 39.02,
+          "text": "fire"
+        },
+        {
+          "t": 39.38,
+          "text": "and"
+        },
+        {
+          "t": 39.6,
+          "text": "my"
+        },
+        {
+          "t": 39.7,
+          "text": "laptop"
+        },
+        {
+          "t": 40.1,
+          "text": "glow"
+        }
+      ]
+    },
+    {
+      "start": 40.5,
+      "end": 43.06,
+      "text": "I used to scroll when the day went dead",
+      "words": [
+        {
+          "t": 40.5,
+          "text": "I"
+        },
+        {
+          "t": 40.94,
+          "text": "used"
+        },
+        {
+          "t": 41.32,
+          "text": "to"
+        },
+        {
+          "t": 41.52,
+          "text": "scroll"
+        },
+        {
+          "t": 41.8,
+          "text": "when"
+        },
+        {
+          "t": 42.04,
+          "text": "the"
+        },
+        {
+          "t": 42.14,
+          "text": "day"
+        },
+        {
+          "t": 42.44,
+          "text": "went"
+        },
+        {
+          "t": 42.68,
+          "text": "dead"
+        }
+      ]
+    },
+    {
+      "start": 43.06,
+      "end": 45.42,
+      "text": "Same old worries runnin' loops in my head",
+      "words": [
+        {
+          "t": 43.06,
+          "text": "Same"
+        },
+        {
+          "t": 43.6,
+          "text": "old"
+        },
+        {
+          "t": 43.9,
+          "text": "worries"
+        },
+        {
+          "t": 44.24,
+          "text": "runnin'"
+        },
+        {
+          "t": 44.62,
+          "text": "loops"
+        },
+        {
+          "t": 44.74,
+          "text": "in"
+        },
+        {
+          "t": 44.9,
+          "text": "my"
+        },
+        {
+          "t": 45.06,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 45.42,
+      "end": 47.74,
+      "text": "Now I open up a new tab, breathe it slow",
+      "words": [
+        {
+          "t": 45.42,
+          "text": "Now"
+        },
+        {
+          "t": 45.66,
+          "text": "I"
+        },
+        {
+          "t": 45.8,
+          "text": "open"
+        },
+        {
+          "t": 46.08,
+          "text": "up"
+        },
+        {
+          "t": 46.3,
+          "text": "a"
+        },
+        {
+          "t": 46.38,
+          "text": "new"
+        },
+        {
+          "t": 46.56,
+          "text": "tab,"
+        },
+        {
+          "t": 47.06,
+          "text": "breathe"
+        },
+        {
+          "t": 47.24,
+          "text": "it"
+        },
+        {
+          "t": 47.52,
+          "text": "slow"
+        }
+      ]
+    },
+    {
+      "start": 47.74,
+      "end": 50.24,
+      "text": "Type one question and the whole world grows",
+      "words": [
+        {
+          "t": 47.74,
+          "text": "Type"
+        },
+        {
+          "t": 48.42,
+          "text": "one"
+        },
+        {
+          "t": 48.7,
+          "text": "question"
+        },
+        {
+          "t": 49.06,
+          "text": "and"
+        },
+        {
+          "t": 49.28,
+          "text": "the"
+        },
+        {
+          "t": 49.42,
+          "text": "whole"
+        },
+        {
+          "t": 49.62,
+          "text": "world"
+        },
+        {
+          "t": 50.02,
+          "text": "grows"
+        }
+      ]
+    },
+    {
+      "start": 50.24,
+      "end": 52.44,
+      "text": "I ain't tryna flex like I know it all",
+      "words": [
+        {
+          "t": 50.24,
+          "text": "I"
+        },
+        {
+          "t": 50.64,
+          "text": "ain't"
+        },
+        {
+          "t": 51.0,
+          "text": "tryna"
+        },
+        {
+          "t": 51.16,
+          "text": "flex"
+        },
+        {
+          "t": 51.48,
+          "text": "like"
+        },
+        {
+          "t": 51.72,
+          "text": "I"
+        },
+        {
+          "t": 51.86,
+          "text": "know"
+        },
+        {
+          "t": 52.04,
+          "text": "it"
+        },
+        {
+          "t": 52.18,
+          "text": "all"
+        }
+      ]
+    },
+    {
+      "start": 52.44,
+      "end": 55.1,
+      "text": "I just stopped waitin' on the miracle call",
+      "words": [
+        {
+          "t": 52.44,
+          "text": "I"
+        },
+        {
+          "t": 52.94,
+          "text": "just"
+        },
+        {
+          "t": 53.36,
+          "text": "stopped"
+        },
+        {
+          "t": 53.58,
+          "text": "waitin'"
+        },
+        {
+          "t": 54.04,
+          "text": "on"
+        },
+        {
+          "t": 54.16,
+          "text": "the"
+        },
+        {
+          "t": 54.3,
+          "text": "miracle"
+        },
+        {
+          "t": 54.56,
+          "text": "call"
+        }
+      ]
+    },
+    {
+      "start": 55.1,
+      "end": 57.5,
+      "text": "One small bill, one clean plan",
+      "words": [
+        {
+          "t": 55.1,
+          "text": "One"
+        },
+        {
+          "t": 55.7,
+          "text": "small"
+        },
+        {
+          "t": 55.96,
+          "text": "bill,"
+        },
+        {
+          "t": 56.46,
+          "text": "one"
+        },
+        {
+          "t": 56.9,
+          "text": "clean"
+        },
+        {
+          "t": 57.18,
+          "text": "plan"
+        }
+      ]
+    },
+    {
+      "start": 57.57,
+      "end": 58.66,
+      "text": "One more scale, one more scale",
+      "words": [
+        {
+          "t": 57.57,
+          "text": "One"
+        },
+        {
+          "t": 58.12,
+          "text": "more"
+        },
+        {
+          "t": 58.44,
+          "text": "scale,"
+        },
+        {
+          "t": 58.66,
+          "text": "one"
+        },
+        {
+          "t": 58.66,
+          "text": "more"
+        },
+        {
+          "t": 58.66,
+          "text": "scale"
+        }
+      ]
+    },
+    {
+      "start": 58.68,
+      "end": 60.04,
+      "text": "And the palm of my hand",
+      "words": [
+        {
+          "t": 58.68,
+          "text": "And"
+        },
+        {
+          "t": 59.02,
+          "text": "the"
+        },
+        {
+          "t": 59.12,
+          "text": "palm"
+        },
+        {
+          "t": 59.32,
+          "text": "of"
+        },
+        {
+          "t": 59.46,
+          "text": "my"
+        },
+        {
+          "t": 59.64,
+          "text": "hand"
+        }
+      ]
+    },
+    {
+      "start": 60.04,
+      "end": 62.36,
+      "text": "AI talkin', I'm talkin' back",
+      "words": [
+        {
+          "t": 60.04,
+          "text": "AI"
+        },
+        {
+          "t": 60.6,
+          "text": "talkin',"
+        },
+        {
+          "t": 61.32,
+          "text": "I'm"
+        },
+        {
+          "t": 61.5,
+          "text": "talkin'"
+        },
+        {
+          "t": 62.1,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 62.36,
+      "end": 64.88,
+      "text": "Turnin' little ideas into somethin' that lasts",
+      "words": [
+        {
+          "t": 62.36,
+          "text": "Turnin'"
+        },
+        {
+          "t": 62.82,
+          "text": "little"
+        },
+        {
+          "t": 62.94,
+          "text": "ideas"
+        },
+        {
+          "t": 63.42,
+          "text": "into"
+        },
+        {
+          "t": 63.9,
+          "text": "somethin'"
+        },
+        {
+          "t": 64.36,
+          "text": "that"
+        },
+        {
+          "t": 64.4,
+          "text": "lasts"
+        }
+      ]
+    },
+    {
+      "start": 64.88,
+      "end": 66.98,
+      "text": "Summer breeze comin' through the screen",
+      "words": [
+        {
+          "t": 64.88,
+          "text": "Summer"
+        },
+        {
+          "t": 65.36,
+          "text": "breeze"
+        },
+        {
+          "t": 65.76,
+          "text": "comin'"
+        },
+        {
+          "t": 66.4,
+          "text": "through"
+        },
+        {
+          "t": 66.5,
+          "text": "the"
+        },
+        {
+          "t": 66.68,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 66.98,
+      "end": 69.28,
+      "text": "Feels like palm trees livin' in the machine",
+      "words": [
+        {
+          "t": 66.98,
+          "text": "Feels"
+        },
+        {
+          "t": 67.42,
+          "text": "like"
+        },
+        {
+          "t": 67.62,
+          "text": "palm"
+        },
+        {
+          "t": 67.86,
+          "text": "trees"
+        },
+        {
+          "t": 68.14,
+          "text": "livin'"
+        },
+        {
+          "t": 68.58,
+          "text": "in"
+        },
+        {
+          "t": 68.8,
+          "text": "the"
+        },
+        {
+          "t": 68.98,
+          "text": "machine"
+        }
+      ]
+    },
+    {
+      "start": 69.72,
+      "end": 71.64,
+      "text": "One little focus with the moonlight",
+      "words": [
+        {
+          "t": 69.72,
+          "text": "One"
+        },
+        {
+          "t": 69.98,
+          "text": "little"
+        },
+        {
+          "t": 70.22,
+          "text": "focus"
+        },
+        {
+          "t": 70.78,
+          "text": "with"
+        },
+        {
+          "t": 71.1,
+          "text": "the"
+        },
+        {
+          "t": 71.26,
+          "text": "moonlight"
+        }
+      ]
+    },
+    {
+      "start": 72.16,
+      "end": 74.02,
+      "text": "Add a little rhythm to the grind",
+      "words": [
+        {
+          "t": 72.16,
+          "text": "Add"
+        },
+        {
+          "t": 72.68,
+          "text": "a"
+        },
+        {
+          "t": 72.78,
+          "text": "little"
+        },
+        {
+          "t": 73.0,
+          "text": "rhythm"
+        },
+        {
+          "t": 73.32,
+          "text": "to"
+        },
+        {
+          "t": 73.5,
+          "text": "the"
+        },
+        {
+          "t": 73.6,
+          "text": "grind"
+        }
+      ]
+    },
+    {
+      "start": 74.42,
+      "end": 76.5,
+      "text": "They don't have to run from the daylight",
+      "words": [
+        {
+          "t": 74.42,
+          "text": "They"
+        },
+        {
+          "t": 75.02,
+          "text": "don't"
+        },
+        {
+          "t": 75.26,
+          "text": "have"
+        },
+        {
+          "t": 75.36,
+          "text": "to"
+        },
+        {
+          "t": 75.52,
+          "text": "run"
+        },
+        {
+          "t": 75.68,
+          "text": "from"
+        },
+        {
+          "t": 75.92,
+          "text": "the"
+        },
+        {
+          "t": 76.1,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 76.67,
+      "end": 79.34,
+      "text": "We can make a way this time",
+      "words": [
+        {
+          "t": 76.67,
+          "text": "We"
+        },
+        {
+          "t": 77.44,
+          "text": "can"
+        },
+        {
+          "t": 77.6,
+          "text": "make"
+        },
+        {
+          "t": 77.82,
+          "text": "a"
+        },
+        {
+          "t": 77.86,
+          "text": "way"
+        },
+        {
+          "t": 78.176,
+          "text": "this"
+        },
+        {
+          "t": 78.76,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 79.34,
+      "end": 80.52,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 79.34,
+          "text": "Cocktails"
+        },
+        {
+          "t": 80.06,
+          "text": "and"
+        },
+        {
+          "t": 80.2,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 80.73,
+      "end": 82.31,
+      "text": "That's how the night unfolds",
+      "words": [
+        {
+          "t": 80.73,
+          "text": "That's"
+        },
+        {
+          "t": 81.28,
+          "text": "how"
+        },
+        {
+          "t": 81.4,
+          "text": "the"
+        },
+        {
+          "t": 81.54,
+          "text": "night"
+        },
+        {
+          "t": 81.76,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 82.76,
+      "end": 84.26,
+      "text": "Got a little dream in the glass",
+      "words": [
+        {
+          "t": 82.76,
+          "text": "Got"
+        },
+        {
+          "t": 82.94,
+          "text": "a"
+        },
+        {
+          "t": 83.08,
+          "text": "little"
+        },
+        {
+          "t": 83.3,
+          "text": "dream"
+        },
+        {
+          "t": 83.62,
+          "text": "in"
+        },
+        {
+          "t": 83.82,
+          "text": "the"
+        },
+        {
+          "t": 83.94,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "start": 84.26,
+      "end": 87.98,
+      "text": "Got a little fire in the soul",
+      "words": [
+        {
+          "t": 84.26,
+          "text": "Got"
+        },
+        {
+          "t": 84.72,
+          "text": "a"
+        },
+        {
+          "t": 84.92,
+          "text": "little"
+        },
+        {
+          "t": 85.18,
+          "text": "fire"
+        },
+        {
+          "t": 85.7,
+          "text": "in"
+        },
+        {
+          "t": 87.44,
+          "text": "the"
+        },
+        {
+          "t": 87.56,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 89.29,
+      "end": 90.1,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 89.29,
+          "text": "Cocktails"
+        },
+        {
+          "t": 89.74,
+          "text": "and"
+        },
+        {
+          "t": 89.92,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 90.24,
+      "end": 91.96,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 90.24,
+          "text": "Watch"
+        },
+        {
+          "t": 90.94,
+          "text": "the"
+        },
+        {
+          "t": 91.22,
+          "text": "new"
+        },
+        {
+          "t": 91.4,
+          "text": "me"
+        },
+        {
+          "t": 91.7,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 91.96,
+      "end": 94.0,
+      "text": "I can feel that future gettin' closer",
+      "words": [
+        {
+          "t": 91.96,
+          "text": "I"
+        },
+        {
+          "t": 92.5,
+          "text": "can"
+        },
+        {
+          "t": 92.68,
+          "text": "feel"
+        },
+        {
+          "t": 92.94,
+          "text": "that"
+        },
+        {
+          "t": 93.1,
+          "text": "future"
+        },
+        {
+          "t": 93.3,
+          "text": "gettin'"
+        },
+        {
+          "t": 93.7,
+          "text": "closer"
+        }
+      ]
+    },
+    {
+      "start": 94.0,
+      "end": 97.2,
+      "text": "Every time I take control",
+      "words": [
+        {
+          "t": 94.0,
+          "text": "Every"
+        },
+        {
+          "t": 94.6,
+          "text": "time"
+        },
+        {
+          "t": 95.08,
+          "text": "I"
+        },
+        {
+          "t": 95.76,
+          "text": "take"
+        },
+        {
+          "t": 96.18,
+          "text": "control"
+        }
+      ]
+    },
+    {
+      "start": 98.04,
+      "end": 99.264,
+      "text": "Sip, sip, sip,",
+      "words": [
+        {
+          "t": 98.04,
+          "text": "Sip,"
+        },
+        {
+          "t": 98.52,
+          "text": "sip,"
+        },
+        {
+          "t": 99.12,
+          "text": "sip,"
+        }
+      ]
+    },
+    {
+      "start": 99.78,
+      "end": 100.42,
+      "text": "sip, sip, sip",
+      "words": [
+        {
+          "t": 99.78,
+          "text": "sip,"
+        },
+        {
+          "t": 100.1,
+          "text": "sip,"
+        },
+        {
+          "t": 100.3,
+          "text": "sip"
+        }
+      ]
+    },
+    {
+      "start": 100.42,
+      "end": 102.04,
+      "text": "Type it up, build, build, level up",
+      "words": [
+        {
+          "t": 100.42,
+          "text": "Type"
+        },
+        {
+          "t": 100.48,
+          "text": "it"
+        },
+        {
+          "t": 100.7,
+          "text": "up,"
+        },
+        {
+          "t": 100.96,
+          "text": "build,"
+        },
+        {
+          "t": 101.24,
+          "text": "build,"
+        },
+        {
+          "t": 101.54,
+          "text": "level"
+        },
+        {
+          "t": 101.76,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 102.04,
+      "end": 103.34,
+      "text": "No more waitin' on the world",
+      "words": [
+        {
+          "t": 102.04,
+          "text": "No"
+        },
+        {
+          "t": 102.3,
+          "text": "more"
+        },
+        {
+          "t": 102.46,
+          "text": "waitin'"
+        },
+        {
+          "t": 102.84,
+          "text": "on"
+        },
+        {
+          "t": 102.92,
+          "text": "the"
+        },
+        {
+          "t": 103.04,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 103.34,
+      "end": 104.6,
+      "text": "We gon' make it come to us",
+      "words": [
+        {
+          "t": 103.34,
+          "text": "We"
+        },
+        {
+          "t": 103.52,
+          "text": "gon'"
+        },
+        {
+          "t": 103.72,
+          "text": "make"
+        },
+        {
+          "t": 103.86,
+          "text": "it"
+        },
+        {
+          "t": 104.0,
+          "text": "come"
+        },
+        {
+          "t": 104.14,
+          "text": "to"
+        },
+        {
+          "t": 104.26,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 104.6,
+      "end": 106.14,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 104.6,
+          "text": "Cocktails"
+        },
+        {
+          "t": 105.46,
+          "text": "and"
+        },
+        {
+          "t": 105.68,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 106.15,
+      "end": 107.91,
+      "text": "That's how the night unfolds",
+      "words": [
+        {
+          "t": 106.15,
+          "text": "That's"
+        },
+        {
+          "t": 106.8,
+          "text": "how"
+        },
+        {
+          "t": 106.8,
+          "text": "the"
+        },
+        {
+          "t": 107.0,
+          "text": "night"
+        },
+        {
+          "t": 107.26,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 108.64,
+      "end": 110.86,
+      "text": "Summon my sores cold",
+      "words": [
+        {
+          "t": 108.64,
+          "text": "Summon"
+        },
+        {
+          "t": 108.9,
+          "text": "my"
+        },
+        {
+          "t": 109.22,
+          "text": "sores"
+        },
+        {
+          "t": 110.36,
+          "text": "cold"
+        }
+      ]
+    },
+    {
+      "start": 110.86,
+      "end": 113.32,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 110.86,
+          "text": "Watch"
+        },
+        {
+          "t": 111.48,
+          "text": "the"
+        },
+        {
+          "t": 111.74,
+          "text": "new"
+        },
+        {
+          "t": 112.04,
+          "text": "me"
+        },
+        {
+          "t": 112.66,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 113.4,
+      "end": 114.12,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 113.4,
+          "text": "Cocktails"
+        },
+        {
+          "t": 113.9,
+          "text": "and"
+        },
+        {
+          "t": 114.1,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 114.12,
+      "end": 116.36,
+      "text": "I used to think the good life had a gate",
+      "words": [
+        {
+          "t": 114.12,
+          "text": "I"
+        },
+        {
+          "t": 114.58,
+          "text": "used"
+        },
+        {
+          "t": 114.78,
+          "text": "to"
+        },
+        {
+          "t": 114.9,
+          "text": "think"
+        },
+        {
+          "t": 115.06,
+          "text": "the"
+        },
+        {
+          "t": 115.22,
+          "text": "good"
+        },
+        {
+          "t": 115.4,
+          "text": "life"
+        },
+        {
+          "t": 115.76,
+          "text": "had"
+        },
+        {
+          "t": 116.0,
+          "text": "a"
+        },
+        {
+          "t": 116.1,
+          "text": "gate"
+        }
+      ]
+    },
+    {
+      "start": 116.36,
+      "end": 117.78,
+      "text": "It's somebody at the front saying",
+      "words": [
+        {
+          "t": 116.36,
+          "text": "It's"
+        },
+        {
+          "t": 116.62,
+          "text": "somebody"
+        },
+        {
+          "t": 116.82,
+          "text": "at"
+        },
+        {
+          "t": 117.18,
+          "text": "the"
+        },
+        {
+          "t": 117.28,
+          "text": "front"
+        },
+        {
+          "t": 117.54,
+          "text": "saying"
+        }
+      ]
+    },
+    {
+      "start": 117.78,
+      "end": 118.66,
+      "text": "Wait, wait, wait",
+      "words": [
+        {
+          "t": 117.78,
+          "text": "Wait,"
+        },
+        {
+          "t": 118.2,
+          "text": "wait,"
+        },
+        {
+          "t": 118.46,
+          "text": "wait"
+        }
+      ]
+    },
+    {
+      "start": 118.72,
+      "end": 120.98,
+      "text": "Now I see the lock, got a pattern to it",
+      "words": [
+        {
+          "t": 118.72,
+          "text": "Now"
+        },
+        {
+          "t": 119.22,
+          "text": "I"
+        },
+        {
+          "t": 119.4,
+          "text": "see"
+        },
+        {
+          "t": 119.6,
+          "text": "the"
+        },
+        {
+          "t": 119.72,
+          "text": "lock,"
+        },
+        {
+          "t": 120.04,
+          "text": "got"
+        },
+        {
+          "t": 120.16,
+          "text": "a"
+        },
+        {
+          "t": 120.32,
+          "text": "pattern"
+        },
+        {
+          "t": 120.6,
+          "text": "to"
+        },
+        {
+          "t": 120.76,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 120.98,
+      "end": 123.38,
+      "text": "Learn a little logic, put some action through it",
+      "words": [
+        {
+          "t": 120.98,
+          "text": "Learn"
+        },
+        {
+          "t": 121.4,
+          "text": "a"
+        },
+        {
+          "t": 121.56,
+          "text": "little"
+        },
+        {
+          "t": 121.74,
+          "text": "logic,"
+        },
+        {
+          "t": 122.24,
+          "text": "put"
+        },
+        {
+          "t": 122.56,
+          "text": "some"
+        },
+        {
+          "t": 122.74,
+          "text": "action"
+        },
+        {
+          "t": 123.04,
+          "text": "through"
+        },
+        {
+          "t": 123.24,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 123.38,
+      "end": 125.5,
+      "text": "Debug my doubt, clean up my days",
+      "words": [
+        {
+          "t": 123.38,
+          "text": "Debug"
+        },
+        {
+          "t": 123.78,
+          "text": "my"
+        },
+        {
+          "t": 123.9,
+          "text": "doubt,"
+        },
+        {
+          "t": 124.64,
+          "text": "clean"
+        },
+        {
+          "t": 124.74,
+          "text": "up"
+        },
+        {
+          "t": 124.98,
+          "text": "my"
+        },
+        {
+          "t": 125.16,
+          "text": "days"
+        }
+      ]
+    },
+    {
+      "start": 125.65,
+      "end": 127.74,
+      "text": "Automate the noise, let the stress drift away",
+      "words": [
+        {
+          "t": 125.65,
+          "text": "Automate"
+        },
+        {
+          "t": 126.3,
+          "text": "the"
+        },
+        {
+          "t": 126.38,
+          "text": "noise,"
+        },
+        {
+          "t": 126.78,
+          "text": "let"
+        },
+        {
+          "t": 126.86,
+          "text": "the"
+        },
+        {
+          "t": 126.96,
+          "text": "stress"
+        },
+        {
+          "t": 127.22,
+          "text": "drift"
+        },
+        {
+          "t": 127.42,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 127.82,
+      "end": 130.24,
+      "text": "Build me a page, build me a flow",
+      "words": [
+        {
+          "t": 127.82,
+          "text": "Build"
+        },
+        {
+          "t": 128.42,
+          "text": "me"
+        },
+        {
+          "t": 128.64,
+          "text": "a"
+        },
+        {
+          "t": 128.8,
+          "text": "page,"
+        },
+        {
+          "t": 129.3,
+          "text": "build"
+        },
+        {
+          "t": 129.62,
+          "text": "me"
+        },
+        {
+          "t": 129.86,
+          "text": "a"
+        },
+        {
+          "t": 130.0,
+          "text": "flow"
+        }
+      ]
+    },
+    {
+      "start": 130.24,
+      "end": 132.76,
+      "text": "Build me a bridge where the army won't go",
+      "words": [
+        {
+          "t": 130.24,
+          "text": "Build"
+        },
+        {
+          "t": 130.84,
+          "text": "me"
+        },
+        {
+          "t": 131.06,
+          "text": "a"
+        },
+        {
+          "t": 131.26,
+          "text": "bridge"
+        },
+        {
+          "t": 131.5,
+          "text": "where"
+        },
+        {
+          "t": 131.74,
+          "text": "the"
+        },
+        {
+          "t": 131.86,
+          "text": "army"
+        },
+        {
+          "t": 132.06,
+          "text": "won't"
+        },
+        {
+          "t": 132.46,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 132.76,
+      "end": 135.08,
+      "text": "It ain't magic, but it feel like that",
+      "words": [
+        {
+          "t": 132.76,
+          "text": "It"
+        },
+        {
+          "t": 133.4,
+          "text": "ain't"
+        },
+        {
+          "t": 133.68,
+          "text": "magic,"
+        },
+        {
+          "t": 134.02,
+          "text": "but"
+        },
+        {
+          "t": 134.18,
+          "text": "it"
+        },
+        {
+          "t": 134.3,
+          "text": "feel"
+        },
+        {
+          "t": 134.5,
+          "text": "like"
+        },
+        {
+          "t": 134.82,
+          "text": "that"
+        }
+      ]
+    },
+    {
+      "start": 135.08,
+      "end": 137.56,
+      "text": "When the idea hits and the beat comes back",
+      "words": [
+        {
+          "t": 135.08,
+          "text": "When"
+        },
+        {
+          "t": 135.48,
+          "text": "the"
+        },
+        {
+          "t": 135.64,
+          "text": "idea"
+        },
+        {
+          "t": 135.94,
+          "text": "hits"
+        },
+        {
+          "t": 136.32,
+          "text": "and"
+        },
+        {
+          "t": 136.56,
+          "text": "the"
+        },
+        {
+          "t": 136.68,
+          "text": "beat"
+        },
+        {
+          "t": 136.92,
+          "text": "comes"
+        },
+        {
+          "t": 137.2,
+          "text": "back"
+        }
+      ]
+    },
+    {
+      "start": 137.66,
+      "end": 139.98,
+      "text": "Baseline walking like it knows my name",
+      "words": [
+        {
+          "t": 137.66,
+          "text": "Baseline"
+        },
+        {
+          "t": 138.36,
+          "text": "walking"
+        },
+        {
+          "t": 138.72,
+          "text": "like"
+        },
+        {
+          "t": 139.0,
+          "text": "it"
+        },
+        {
+          "t": 139.12,
+          "text": "knows"
+        },
+        {
+          "t": 139.36,
+          "text": "my"
+        },
+        {
+          "t": 139.58,
+          "text": "name"
+        }
+      ]
+    },
+    {
+      "start": 139.98,
+      "end": 142.36,
+      "text": "808 snap like a champagne frame",
+      "words": [
+        {
+          "t": 139.98,
+          "text": "808"
+        },
+        {
+          "t": 140.84,
+          "text": "snap"
+        },
+        {
+          "t": 141.14,
+          "text": "like"
+        },
+        {
+          "t": 141.4,
+          "text": "a"
+        },
+        {
+          "t": 141.52,
+          "text": "champagne"
+        },
+        {
+          "t": 141.9,
+          "text": "frame"
+        }
+      ]
+    },
+    {
+      "start": 142.36,
+      "end": 144.56,
+      "text": "I want beach chairs paid from the things I made",
+      "words": [
+        {
+          "t": 142.36,
+          "text": "I"
+        },
+        {
+          "t": 142.62,
+          "text": "want"
+        },
+        {
+          "t": 142.8,
+          "text": "beach"
+        },
+        {
+          "t": 143.02,
+          "text": "chairs"
+        },
+        {
+          "t": 143.28,
+          "text": "paid"
+        },
+        {
+          "t": 143.56,
+          "text": "from"
+        },
+        {
+          "t": 143.82,
+          "text": "the"
+        },
+        {
+          "t": 143.94,
+          "text": "things"
+        },
+        {
+          "t": 144.18,
+          "text": "I"
+        },
+        {
+          "t": 144.32,
+          "text": "made"
+        }
+      ]
+    },
+    {
+      "start": 144.56,
+      "end": 146.92,
+      "text": "Not another short break that I barely save",
+      "words": [
+        {
+          "t": 144.56,
+          "text": "Not"
+        },
+        {
+          "t": 145.04,
+          "text": "another"
+        },
+        {
+          "t": 145.32,
+          "text": "short"
+        },
+        {
+          "t": 145.66,
+          "text": "break"
+        },
+        {
+          "t": 146.02,
+          "text": "that"
+        },
+        {
+          "t": 146.28,
+          "text": "I"
+        },
+        {
+          "t": 146.4,
+          "text": "barely"
+        },
+        {
+          "t": 146.62,
+          "text": "save"
+        }
+      ]
+    },
+    {
+      "start": 146.92,
+      "end": 149.66,
+      "text": "I want Monday soft, I want time that's mine",
+      "words": [
+        {
+          "t": 146.92,
+          "text": "I"
+        },
+        {
+          "t": 147.42,
+          "text": "want"
+        },
+        {
+          "t": 147.66,
+          "text": "Monday"
+        },
+        {
+          "t": 148.0,
+          "text": "soft,"
+        },
+        {
+          "t": 148.58,
+          "text": "I"
+        },
+        {
+          "t": 148.68,
+          "text": "want"
+        },
+        {
+          "t": 148.86,
+          "text": "time"
+        },
+        {
+          "t": 149.12,
+          "text": "that's"
+        },
+        {
+          "t": 149.42,
+          "text": "mine"
+        }
+      ]
+    },
+    {
+      "start": 149.66,
+      "end": 151.98,
+      "text": "I want sunlight sitting on a better design",
+      "words": [
+        {
+          "t": 149.66,
+          "text": "I"
+        },
+        {
+          "t": 149.86,
+          "text": "want"
+        },
+        {
+          "t": 150.06,
+          "text": "sunlight"
+        },
+        {
+          "t": 150.5,
+          "text": "sitting"
+        },
+        {
+          "t": 150.82,
+          "text": "on"
+        },
+        {
+          "t": 151.1,
+          "text": "a"
+        },
+        {
+          "t": 151.24,
+          "text": "better"
+        },
+        {
+          "t": 151.48,
+          "text": "design"
+        }
+      ]
+    },
+    {
+      "start": 152.2,
+      "end": 154.08,
+      "text": "Just a little focus with the moonlight",
+      "words": [
+        {
+          "t": 152.2,
+          "text": "Just"
+        },
+        {
+          "t": 152.8,
+          "text": "a"
+        },
+        {
+          "t": 152.8,
+          "text": "little"
+        },
+        {
+          "t": 153.06,
+          "text": "focus"
+        },
+        {
+          "t": 153.3,
+          "text": "with"
+        },
+        {
+          "t": 153.52,
+          "text": "the"
+        },
+        {
+          "t": 153.64,
+          "text": "moonlight"
+        }
+      ]
+    },
+    {
+      "start": 154.47,
+      "end": 156.46,
+      "text": "Add a little rhythm to the grind",
+      "words": [
+        {
+          "t": 154.47,
+          "text": "Add"
+        },
+        {
+          "t": 155.02,
+          "text": "a"
+        },
+        {
+          "t": 155.2,
+          "text": "little"
+        },
+        {
+          "t": 155.42,
+          "text": "rhythm"
+        },
+        {
+          "t": 155.76,
+          "text": "to"
+        },
+        {
+          "t": 155.94,
+          "text": "the"
+        },
+        {
+          "t": 156.04,
+          "text": "grind"
+        }
+      ]
+    },
+    {
+      "start": 156.98,
+      "end": 158.9,
+      "text": "We don't have to run from the daylight",
+      "words": [
+        {
+          "t": 156.98,
+          "text": "We"
+        },
+        {
+          "t": 157.48,
+          "text": "don't"
+        },
+        {
+          "t": 157.7,
+          "text": "have"
+        },
+        {
+          "t": 157.8,
+          "text": "to"
+        },
+        {
+          "t": 157.94,
+          "text": "run"
+        },
+        {
+          "t": 158.12,
+          "text": "from"
+        },
+        {
+          "t": 158.34,
+          "text": "the"
+        },
+        {
+          "t": 158.54,
+          "text": "daylight"
+        }
+      ]
+    },
+    {
+      "start": 159.13,
+      "end": 161.8,
+      "text": "We can make a way this time",
+      "words": [
+        {
+          "t": 159.13,
+          "text": "We"
+        },
+        {
+          "t": 159.88,
+          "text": "can"
+        },
+        {
+          "t": 160.02,
+          "text": "make"
+        },
+        {
+          "t": 160.22,
+          "text": "a"
+        },
+        {
+          "t": 160.28,
+          "text": "way"
+        },
+        {
+          "t": 160.58,
+          "text": "this"
+        },
+        {
+          "t": 161.16,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 161.8,
+      "end": 165.0,
+      "text": "Cocktails and coke, that's how the night unfolds",
+      "words": [
+        {
+          "t": 161.8,
+          "text": "Cocktails"
+        },
+        {
+          "t": 162.5,
+          "text": "and"
+        },
+        {
+          "t": 162.64,
+          "text": "coke,"
+        },
+        {
+          "t": 163.26,
+          "text": "that's"
+        },
+        {
+          "t": 163.7,
+          "text": "how"
+        },
+        {
+          "t": 163.82,
+          "text": "the"
+        },
+        {
+          "t": 163.96,
+          "text": "night"
+        },
+        {
+          "t": 164.2,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 165.18,
+      "end": 166.7,
+      "text": "Got a little dream in the glass",
+      "words": [
+        {
+          "t": 165.18,
+          "text": "Got"
+        },
+        {
+          "t": 165.38,
+          "text": "a"
+        },
+        {
+          "t": 165.52,
+          "text": "little"
+        },
+        {
+          "t": 165.68,
+          "text": "dream"
+        },
+        {
+          "t": 166.02,
+          "text": "in"
+        },
+        {
+          "t": 166.24,
+          "text": "the"
+        },
+        {
+          "t": 166.36,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "start": 166.7,
+      "end": 170.42,
+      "text": "Got a little fire in the soul",
+      "words": [
+        {
+          "t": 166.7,
+          "text": "Got"
+        },
+        {
+          "t": 167.2,
+          "text": "a"
+        },
+        {
+          "t": 167.36,
+          "text": "little"
+        },
+        {
+          "t": 167.62,
+          "text": "fire"
+        },
+        {
+          "t": 168.16,
+          "text": "in"
+        },
+        {
+          "t": 169.82,
+          "text": "the"
+        },
+        {
+          "t": 170.0,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 171.68,
+      "end": 174.4,
+      "text": "Cocktails and coke, watch the new me load",
+      "words": [
+        {
+          "t": 171.68,
+          "text": "Cocktails"
+        },
+        {
+          "t": 172.12,
+          "text": "and"
+        },
+        {
+          "t": 172.34,
+          "text": "coke,"
+        },
+        {
+          "t": 173.04,
+          "text": "watch"
+        },
+        {
+          "t": 173.42,
+          "text": "the"
+        },
+        {
+          "t": 173.64,
+          "text": "new"
+        },
+        {
+          "t": 173.86,
+          "text": "me"
+        },
+        {
+          "t": 174.12,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 174.4,
+      "end": 176.42,
+      "text": "I can feel that picture getting closer",
+      "words": [
+        {
+          "t": 174.4,
+          "text": "I"
+        },
+        {
+          "t": 174.92,
+          "text": "can"
+        },
+        {
+          "t": 175.16,
+          "text": "feel"
+        },
+        {
+          "t": 175.36,
+          "text": "that"
+        },
+        {
+          "t": 175.52,
+          "text": "picture"
+        },
+        {
+          "t": 175.68,
+          "text": "getting"
+        },
+        {
+          "t": 175.96,
+          "text": "closer"
+        }
+      ]
+    },
+    {
+      "start": 176.42,
+      "end": 176.9,
+      "text": "Let's go",
+      "words": [
+        {
+          "t": 176.42,
+          "text": "Let's"
+        },
+        {
+          "t": 176.9,
+          "text": "go"
+        }
+      ]
+    },
+    {
+      "start": 176.92,
+      "end": 179.58,
+      "text": "Every time I take control",
+      "words": [
+        {
+          "t": 176.92,
+          "text": "Every"
+        },
+        {
+          "t": 177.1,
+          "text": "time"
+        },
+        {
+          "t": 177.56,
+          "text": "I"
+        },
+        {
+          "t": 178.5,
+          "text": "take"
+        },
+        {
+          "t": 178.6,
+          "text": "control"
+        }
+      ]
+    },
+    {
+      "start": 179.58,
+      "end": 181.38,
+      "text": "Sit, sit, sit",
+      "words": [
+        {
+          "t": 179.58,
+          "text": "Sit,"
+        },
+        {
+          "t": 180.3,
+          "text": "sit,"
+        },
+        {
+          "t": 180.92,
+          "text": "sit"
+        }
+      ]
+    },
+    {
+      "start": 181.4,
+      "end": 183.34,
+      "text": "Sit, sit, sit, tap it up",
+      "words": [
+        {
+          "t": 181.4,
+          "text": "Sit,"
+        },
+        {
+          "t": 182.12,
+          "text": "sit,"
+        },
+        {
+          "t": 182.42,
+          "text": "sit,"
+        },
+        {
+          "t": 182.7,
+          "text": "tap"
+        },
+        {
+          "t": 182.9,
+          "text": "it"
+        },
+        {
+          "t": 183.1,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 183.34,
+      "end": 184.5,
+      "text": "Build, build, have a love",
+      "words": [
+        {
+          "t": 183.34,
+          "text": "Build,"
+        },
+        {
+          "t": 183.68,
+          "text": "build,"
+        },
+        {
+          "t": 183.98,
+          "text": "have"
+        },
+        {
+          "t": 184.14,
+          "text": "a"
+        },
+        {
+          "t": 184.2,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 184.5,
+      "end": 185.76,
+      "text": "No more waiting on the world",
+      "words": [
+        {
+          "t": 184.5,
+          "text": "No"
+        },
+        {
+          "t": 184.74,
+          "text": "more"
+        },
+        {
+          "t": 184.92,
+          "text": "waiting"
+        },
+        {
+          "t": 185.2,
+          "text": "on"
+        },
+        {
+          "t": 185.4,
+          "text": "the"
+        },
+        {
+          "t": 185.48,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 185.76,
+      "end": 187.03,
+      "text": "We gon' make it come to us",
+      "words": [
+        {
+          "t": 185.76,
+          "text": "We"
+        },
+        {
+          "t": 185.98,
+          "text": "gon'"
+        },
+        {
+          "t": 186.14,
+          "text": "make"
+        },
+        {
+          "t": 186.28,
+          "text": "it"
+        },
+        {
+          "t": 186.44,
+          "text": "come"
+        },
+        {
+          "t": 186.58,
+          "text": "to"
+        },
+        {
+          "t": 186.68,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 187.04,
+      "end": 188.44,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 187.04,
+          "text": "Cocktails"
+        },
+        {
+          "t": 187.84,
+          "text": "and"
+        },
+        {
+          "t": 188.08,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 188.44,
+      "end": 191.0,
+      "text": "That's how the night unfolds",
+      "words": [
+        {
+          "t": 188.44,
+          "text": "That's"
+        },
+        {
+          "t": 189.28,
+          "text": "how"
+        },
+        {
+          "t": 189.3,
+          "text": "the"
+        },
+        {
+          "t": 189.46,
+          "text": "night"
+        },
+        {
+          "t": 189.98,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 191.0,
+      "end": 193.3,
+      "text": "Summoning my source code",
+      "words": [
+        {
+          "t": 191.0,
+          "text": "Summoning"
+        },
+        {
+          "t": 191.54,
+          "text": "my"
+        },
+        {
+          "t": 191.6,
+          "text": "source"
+        },
+        {
+          "t": 192.18,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 193.3,
+      "end": 195.72,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 193.3,
+          "text": "Watch"
+        },
+        {
+          "t": 193.94,
+          "text": "the"
+        },
+        {
+          "t": 194.14,
+          "text": "new"
+        },
+        {
+          "t": 194.46,
+          "text": "me"
+        },
+        {
+          "t": 195.08,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 195.72,
+      "end": 198.02,
+      "text": "Maybe the beach ain't far away",
+      "words": [
+        {
+          "t": 195.72,
+          "text": "Maybe"
+        },
+        {
+          "t": 196.3,
+          "text": "the"
+        },
+        {
+          "t": 196.66,
+          "text": "beach"
+        },
+        {
+          "t": 197.0,
+          "text": "ain't"
+        },
+        {
+          "t": 197.36,
+          "text": "far"
+        },
+        {
+          "t": 197.52,
+          "text": "away"
+        }
+      ]
+    },
+    {
+      "start": 198.09,
+      "end": 200.64,
+      "text": "Maybe it starts with what I make",
+      "words": [
+        {
+          "t": 198.09,
+          "text": "Maybe"
+        },
+        {
+          "t": 198.84,
+          "text": "it"
+        },
+        {
+          "t": 199.08,
+          "text": "starts"
+        },
+        {
+          "t": 199.36,
+          "text": "with"
+        },
+        {
+          "t": 199.66,
+          "text": "what"
+        },
+        {
+          "t": 200.0,
+          "text": "I"
+        },
+        {
+          "t": 200.38,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "start": 200.64,
+      "end": 203.06,
+      "text": "Maybe the life I used to chase",
+      "words": [
+        {
+          "t": 200.64,
+          "text": "Maybe"
+        },
+        {
+          "t": 201.24,
+          "text": "the"
+        },
+        {
+          "t": 201.5,
+          "text": "life"
+        },
+        {
+          "t": 201.84,
+          "text": "I"
+        },
+        {
+          "t": 202.04,
+          "text": "used"
+        },
+        {
+          "t": 202.46,
+          "text": "to"
+        },
+        {
+          "t": 202.78,
+          "text": "chase"
+        }
+      ]
+    },
+    {
+      "start": 203.06,
+      "end": 205.74,
+      "text": "Is hiding in the habits I create",
+      "words": [
+        {
+          "t": 203.06,
+          "text": "Is"
+        },
+        {
+          "t": 203.4,
+          "text": "hiding"
+        },
+        {
+          "t": 203.8,
+          "text": "in"
+        },
+        {
+          "t": 204.2,
+          "text": "the"
+        },
+        {
+          "t": 204.38,
+          "text": "habits"
+        },
+        {
+          "t": 204.96,
+          "text": "I"
+        },
+        {
+          "t": 205.36,
+          "text": "create"
+        }
+      ]
+    },
+    {
+      "start": 205.74,
+      "end": 206.9,
+      "text": "No more wishing on the moon",
+      "words": [
+        {
+          "t": 205.74,
+          "text": "No"
+        },
+        {
+          "t": 206.3,
+          "text": "more"
+        },
+        {
+          "t": 206.42,
+          "text": "wishing"
+        },
+        {
+          "t": 206.66,
+          "text": "on"
+        },
+        {
+          "t": 206.9,
+          "text": "the"
+        },
+        {
+          "t": 206.9,
+          "text": "moon"
+        }
+      ]
+    },
+    {
+      "start": 206.92,
+      "end": 209.86,
+      "text": "No more waiting for the right sky",
+      "words": [
+        {
+          "t": 206.92,
+          "text": "No"
+        },
+        {
+          "t": 206.98,
+          "text": "more"
+        },
+        {
+          "t": 207.38,
+          "text": "waiting"
+        },
+        {
+          "t": 209.02,
+          "text": "for"
+        },
+        {
+          "t": 209.26,
+          "text": "the"
+        },
+        {
+          "t": 209.46,
+          "text": "right"
+        },
+        {
+          "t": 209.64,
+          "text": "sky"
+        }
+      ]
+    },
+    {
+      "start": 210.08,
+      "end": 212.52,
+      "text": "I got rhythm, I got a time",
+      "words": [
+        {
+          "t": 210.08,
+          "text": "I"
+        },
+        {
+          "t": 210.78,
+          "text": "got"
+        },
+        {
+          "t": 211.22,
+          "text": "rhythm,"
+        },
+        {
+          "t": 211.58,
+          "text": "I"
+        },
+        {
+          "t": 211.74,
+          "text": "got"
+        },
+        {
+          "t": 211.9,
+          "text": "a"
+        },
+        {
+          "t": 212.06,
+          "text": "time"
+        }
+      ]
+    },
+    {
+      "start": 212.59,
+      "end": 215.38,
+      "text": "I got something new in my mind",
+      "words": [
+        {
+          "t": 212.59,
+          "text": "I"
+        },
+        {
+          "t": 213.44,
+          "text": "got"
+        },
+        {
+          "t": 213.7,
+          "text": "something"
+        },
+        {
+          "t": 214.04,
+          "text": "new"
+        },
+        {
+          "t": 214.52,
+          "text": "in"
+        },
+        {
+          "t": 214.86,
+          "text": "my"
+        },
+        {
+          "t": 215.14,
+          "text": "mind"
+        }
+      ]
+    },
+    {
+      "start": 215.67,
+      "end": 217.88,
+      "text": "Prop me a plan, I put feet on it",
+      "words": [
+        {
+          "t": 215.67,
+          "text": "Prop"
+        },
+        {
+          "t": 216.22,
+          "text": "me"
+        },
+        {
+          "t": 216.52,
+          "text": "a"
+        },
+        {
+          "t": 216.7,
+          "text": "plan,"
+        },
+        {
+          "t": 216.96,
+          "text": "I"
+        },
+        {
+          "t": 217.06,
+          "text": "put"
+        },
+        {
+          "t": 217.18,
+          "text": "feet"
+        },
+        {
+          "t": 217.44,
+          "text": "on"
+        },
+        {
+          "t": 217.7,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 218.26,
+      "end": 220.26,
+      "text": "Dream looking clean when I keep on it",
+      "words": [
+        {
+          "t": 218.26,
+          "text": "Dream"
+        },
+        {
+          "t": 218.76,
+          "text": "looking"
+        },
+        {
+          "t": 219.02,
+          "text": "clean"
+        },
+        {
+          "t": 219.4,
+          "text": "when"
+        },
+        {
+          "t": 219.6,
+          "text": "I"
+        },
+        {
+          "t": 219.72,
+          "text": "keep"
+        },
+        {
+          "t": 219.92,
+          "text": "on"
+        },
+        {
+          "t": 220.12,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 220.26,
+      "end": 221.96,
+      "text": "Small wins stacking like sunlight",
+      "words": [
+        {
+          "t": 220.26,
+          "text": "Small"
+        },
+        {
+          "t": 220.52,
+          "text": "wins"
+        },
+        {
+          "t": 220.86,
+          "text": "stacking"
+        },
+        {
+          "t": 221.16,
+          "text": "like"
+        },
+        {
+          "t": 221.42,
+          "text": "sunlight"
+        }
+      ]
+    },
+    {
+      "start": 222.22,
+      "end": 224.44,
+      "text": "One more commit in the midnight",
+      "words": [
+        {
+          "t": 222.22,
+          "text": "One"
+        },
+        {
+          "t": 223.02,
+          "text": "more"
+        },
+        {
+          "t": 223.2,
+          "text": "commit"
+        },
+        {
+          "t": 223.52,
+          "text": "in"
+        },
+        {
+          "t": 223.82,
+          "text": "the"
+        },
+        {
+          "t": 223.94,
+          "text": "midnight"
+        }
+      ]
+    },
+    {
+      "start": 224.74,
+      "end": 227.28,
+      "text": "Class by the keys, breeze at the dope",
+      "words": [
+        {
+          "t": 224.74,
+          "text": "Class"
+        },
+        {
+          "t": 225.44,
+          "text": "by"
+        },
+        {
+          "t": 225.62,
+          "text": "the"
+        },
+        {
+          "t": 225.78,
+          "text": "keys,"
+        },
+        {
+          "t": 226.28,
+          "text": "breeze"
+        },
+        {
+          "t": 226.62,
+          "text": "at"
+        },
+        {
+          "t": 226.9,
+          "text": "the"
+        },
+        {
+          "t": 226.96,
+          "text": "dope"
+        }
+      ]
+    },
+    {
+      "start": 227.41,
+      "end": 229.64,
+      "text": "I don't wanna be tired no more",
+      "words": [
+        {
+          "t": 227.41,
+          "text": "I"
+        },
+        {
+          "t": 228.06,
+          "text": "don't"
+        },
+        {
+          "t": 228.32,
+          "text": "wanna"
+        },
+        {
+          "t": 228.44,
+          "text": "be"
+        },
+        {
+          "t": 228.7,
+          "text": "tired"
+        },
+        {
+          "t": 229.08,
+          "text": "no"
+        },
+        {
+          "t": 229.38,
+          "text": "more"
+        }
+      ]
+    },
+    {
+      "start": 229.8,
+      "end": 232.1,
+      "text": "I don't wanna just talk that growth",
+      "words": [
+        {
+          "t": 229.8,
+          "text": "I"
+        },
+        {
+          "t": 230.5,
+          "text": "don't"
+        },
+        {
+          "t": 230.72,
+          "text": "wanna"
+        },
+        {
+          "t": 230.9,
+          "text": "just"
+        },
+        {
+          "t": 231.18,
+          "text": "talk"
+        },
+        {
+          "t": 231.5,
+          "text": "that"
+        },
+        {
+          "t": 231.78,
+          "text": "growth"
+        }
+      ]
+    },
+    {
+      "start": 232.1,
+      "end": 234.5,
+      "text": "I wanna build that boat and float",
+      "words": [
+        {
+          "t": 232.1,
+          "text": "I"
+        },
+        {
+          "t": 232.44,
+          "text": "wanna"
+        },
+        {
+          "t": 232.72,
+          "text": "build"
+        },
+        {
+          "t": 233.28,
+          "text": "that"
+        },
+        {
+          "t": 233.58,
+          "text": "boat"
+        },
+        {
+          "t": 233.9,
+          "text": "and"
+        },
+        {
+          "t": 234.18,
+          "text": "float"
+        }
+      ]
+    },
+    {
+      "start": 234.55,
+      "end": 236.9,
+      "text": "Cocktails and coke, that's how the night unfolds",
+      "words": [
+        {
+          "t": 234.55,
+          "text": "Cocktails"
+        },
+        {
+          "t": 235.2,
+          "text": "and"
+        },
+        {
+          "t": 235.46,
+          "text": "coke,"
+        },
+        {
+          "t": 236.02,
+          "text": "that's"
+        },
+        {
+          "t": 236.46,
+          "text": "how"
+        },
+        {
+          "t": 236.56,
+          "text": "the"
+        },
+        {
+          "t": 236.72,
+          "text": "night"
+        },
+        {
+          "t": 236.86,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 237.56,
+      "end": 239.44,
+      "text": "Got a little dream in the glass",
+      "words": [
+        {
+          "t": 237.56,
+          "text": "Got"
+        },
+        {
+          "t": 238.0,
+          "text": "a"
+        },
+        {
+          "t": 238.22,
+          "text": "little"
+        },
+        {
+          "t": 238.4,
+          "text": "dream"
+        },
+        {
+          "t": 238.74,
+          "text": "in"
+        },
+        {
+          "t": 239.0,
+          "text": "the"
+        },
+        {
+          "t": 239.1,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "start": 239.44,
+      "end": 243.18,
+      "text": "Got a little fire in the soul",
+      "words": [
+        {
+          "t": 239.44,
+          "text": "Got"
+        },
+        {
+          "t": 239.86,
+          "text": "a"
+        },
+        {
+          "t": 240.06,
+          "text": "little"
+        },
+        {
+          "t": 240.34,
+          "text": "fire"
+        },
+        {
+          "t": 240.82,
+          "text": "in"
+        },
+        {
+          "t": 242.592,
+          "text": "the"
+        },
+        {
+          "t": 242.72,
+          "text": "soul"
+        }
+      ]
+    },
+    {
+      "start": 244.48,
+      "end": 245.28,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 244.48,
+          "text": "Cocktails"
+        },
+        {
+          "t": 244.92,
+          "text": "and"
+        },
+        {
+          "t": 245.06,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 245.49,
+      "end": 247.12,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 245.49,
+          "text": "Watch"
+        },
+        {
+          "t": 246.14,
+          "text": "the"
+        },
+        {
+          "t": 246.36,
+          "text": "new"
+        },
+        {
+          "t": 246.58,
+          "text": "me"
+        },
+        {
+          "t": 246.86,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 247.12,
+      "end": 249.16,
+      "text": "I can feel that that you're getting closer",
+      "words": [
+        {
+          "t": 247.12,
+          "text": "I"
+        },
+        {
+          "t": 247.62,
+          "text": "can"
+        },
+        {
+          "t": 247.86,
+          "text": "feel"
+        },
+        {
+          "t": 248.08,
+          "text": "that"
+        },
+        {
+          "t": 248.24,
+          "text": "that"
+        },
+        {
+          "t": 248.38,
+          "text": "you're"
+        },
+        {
+          "t": 248.6,
+          "text": "getting"
+        },
+        {
+          "t": 248.76,
+          "text": "closer"
+        }
+      ]
+    },
+    {
+      "start": 249.16,
+      "end": 252.26,
+      "text": "Every time I take control",
+      "words": [
+        {
+          "t": 249.16,
+          "text": "Every"
+        },
+        {
+          "t": 249.74,
+          "text": "time"
+        },
+        {
+          "t": 250.28,
+          "text": "I"
+        },
+        {
+          "t": 250.94,
+          "text": "take"
+        },
+        {
+          "t": 251.42,
+          "text": "control"
+        }
+      ]
+    },
+    {
+      "start": 252.26,
+      "end": 254.06,
+      "text": "Sit, sit, sit",
+      "words": [
+        {
+          "t": 252.26,
+          "text": "Sit,"
+        },
+        {
+          "t": 253.0,
+          "text": "sit,"
+        },
+        {
+          "t": 253.66,
+          "text": "sit"
+        }
+      ]
+    },
+    {
+      "start": 254.31,
+      "end": 256.04,
+      "text": "Sip, sip, sip, top it up",
+      "words": [
+        {
+          "t": 254.31,
+          "text": "Sip,"
+        },
+        {
+          "t": 254.86,
+          "text": "sip,"
+        },
+        {
+          "t": 255.16,
+          "text": "sip,"
+        },
+        {
+          "t": 255.46,
+          "text": "top"
+        },
+        {
+          "t": 255.62,
+          "text": "it"
+        },
+        {
+          "t": 255.82,
+          "text": "up"
+        }
+      ]
+    },
+    {
+      "start": 256.04,
+      "end": 257.2,
+      "text": "Build, build, have a love",
+      "words": [
+        {
+          "t": 256.04,
+          "text": "Build,"
+        },
+        {
+          "t": 256.4,
+          "text": "build,"
+        },
+        {
+          "t": 256.68,
+          "text": "have"
+        },
+        {
+          "t": 256.9,
+          "text": "a"
+        },
+        {
+          "t": 257.0,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 257.2,
+      "end": 258.48,
+      "text": "No more waiting on the world",
+      "words": [
+        {
+          "t": 257.2,
+          "text": "No"
+        },
+        {
+          "t": 257.42,
+          "text": "more"
+        },
+        {
+          "t": 257.62,
+          "text": "waiting"
+        },
+        {
+          "t": 257.88,
+          "text": "on"
+        },
+        {
+          "t": 258.08,
+          "text": "the"
+        },
+        {
+          "t": 258.18,
+          "text": "world"
+        }
+      ]
+    },
+    {
+      "start": 258.48,
+      "end": 259.76,
+      "text": "We gon' make it come to us",
+      "words": [
+        {
+          "t": 258.48,
+          "text": "We"
+        },
+        {
+          "t": 258.7,
+          "text": "gon'"
+        },
+        {
+          "t": 258.86,
+          "text": "make"
+        },
+        {
+          "t": 259.02,
+          "text": "it"
+        },
+        {
+          "t": 259.16,
+          "text": "come"
+        },
+        {
+          "t": 259.3,
+          "text": "to"
+        },
+        {
+          "t": 259.48,
+          "text": "us"
+        }
+      ]
+    },
+    {
+      "start": 259.76,
+      "end": 261.3,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 259.76,
+          "text": "Cocktails"
+        },
+        {
+          "t": 260.6,
+          "text": "and"
+        },
+        {
+          "t": 260.82,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 261.3,
+      "end": 263.7,
+      "text": "That's how the night unfolds",
+      "words": [
+        {
+          "t": 261.3,
+          "text": "That's"
+        },
+        {
+          "t": 262.02,
+          "text": "how"
+        },
+        {
+          "t": 262.02,
+          "text": "the"
+        },
+        {
+          "t": 262.18,
+          "text": "night"
+        },
+        {
+          "t": 262.72,
+          "text": "unfolds"
+        }
+      ]
+    },
+    {
+      "start": 263.7,
+      "end": 265.08,
+      "text": "Summoning my source code",
+      "words": [
+        {
+          "t": 263.7,
+          "text": "Summoning"
+        },
+        {
+          "t": 264.16,
+          "text": "my"
+        },
+        {
+          "t": 264.38,
+          "text": "source"
+        },
+        {
+          "t": 264.86,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 265.08,
+      "end": 268.44,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 265.08,
+          "text": "Watch"
+        },
+        {
+          "t": 266.56,
+          "text": "the"
+        },
+        {
+          "t": 266.86,
+          "text": "new"
+        },
+        {
+          "t": 267.16,
+          "text": "me"
+        },
+        {
+          "t": 267.76,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 268.44,
+      "end": 269.64,
+      "text": "Cocktails and coke",
+      "words": [
+        {
+          "t": 268.44,
+          "text": "Cocktails"
+        },
+        {
+          "t": 269.08,
+          "text": "and"
+        },
+        {
+          "t": 269.3,
+          "text": "coke"
+        }
+      ]
+    },
+    {
+      "start": 269.64,
+      "end": 271.936,
+      "text": "Ooh, ooh, ooh, ooh, ooh",
+      "words": [
+        {
+          "t": 269.64,
+          "text": "Ooh,"
+        },
+        {
+          "t": 270.4,
+          "text": "ooh,"
+        },
+        {
+          "t": 270.7,
+          "text": "ooh,"
+        },
+        {
+          "t": 271.2,
+          "text": "ooh,"
+        },
+        {
+          "t": 271.8,
+          "text": "ooh"
+        }
+      ]
+    },
+    {
+      "start": 272.288,
+      "end": 273.96,
+      "text": "Watch the new me load",
+      "words": [
+        {
+          "t": 272.288,
+          "text": "Watch"
+        },
+        {
+          "t": 272.74,
+          "text": "the"
+        },
+        {
+          "t": 273.06,
+          "text": "new"
+        },
+        {
+          "t": 273.18,
+          "text": "me"
+        },
+        {
+          "t": 273.52,
+          "text": "load"
+        }
+      ]
+    },
+    {
+      "start": 273.96,
+      "end": 275.38,
+      "text": "Ooh, ooh",
+      "words": [
+        {
+          "t": 273.96,
+          "text": "Ooh,"
+        },
+        {
+          "t": 274.82,
+          "text": "ooh"
+        }
+      ]
+    },
+    {
+      "start": 275.38,
+      "end": 277.8,
+      "text": "Summoning my source code",
+      "words": [
+        {
+          "t": 275.38,
+          "text": "Summoning"
+        },
+        {
+          "t": 276.36,
+          "text": "my"
+        },
+        {
+          "t": 276.52,
+          "text": "source"
+        },
+        {
+          "t": 277.2,
+          "text": "code"
+        }
+      ]
+    },
+    {
+      "start": 277.8,
+      "end": 281.5,
+      "text": "No, we don't move like before",
+      "words": [
+        {
+          "t": 277.8,
+          "text": "No,"
+        },
+        {
+          "t": 279.3,
+          "text": "we"
+        },
+        {
+          "t": 279.4,
+          "text": "don't"
+        },
+        {
+          "t": 279.86,
+          "text": "move"
+        },
+        {
+          "t": 279.96,
+          "text": "like"
+        },
+        {
+          "t": 280.54,
+          "text": "before"
+        }
+      ]
+    },
+    {
+      "start": 281.5,
+      "end": 283.36,
+      "text": "Yeah, ice in the glass",
+      "words": [
+        {
+          "t": 281.5,
+          "text": "Yeah,"
+        },
+        {
+          "t": 282.1,
+          "text": "ice"
+        },
+        {
+          "t": 282.72,
+          "text": "in"
+        },
+        {
+          "t": 282.88,
+          "text": "the"
+        },
+        {
+          "t": 283.04,
+          "text": "glass"
+        }
+      ]
+    },
+    {
+      "start": 283.49,
+      "end": 285.22,
+      "text": "Future in the tabs",
+      "words": [
+        {
+          "t": 283.49,
+          "text": "Future"
+        },
+        {
+          "t": 284.44,
+          "text": "in"
+        },
+        {
+          "t": 284.74,
+          "text": "the"
+        },
+        {
+          "t": 284.84,
+          "text": "tabs"
+        }
+      ]
+    }
+  ]
+}

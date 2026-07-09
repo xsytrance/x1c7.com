@@ -1,0 +1,89 @@
+{
+  "analysis": {
+    "summary": "This celebratory birthday anthem honors a radiant partner who requires no spotlight to shine, framing their aging as an enhancement rather than a decline while blending intimate R&B vocals with euphoric dance beats.",
+    "overallMood": "Euphoric and Intimate",
+    "themes": [
+      "Radiant Aging",
+      "Exclusive Devotion",
+      "Celebratory Joy"
+    ],
+    "palette": [
+      "#FFD700",
+      "#8B4513",
+      "#2F4F4F",
+      "#FFEFD5"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory Whisper",
+        "intensity": 0.47,
+        "colorHint": "#ffd700",
+        "start": 1.72
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Admiring Warmth",
+        "intensity": 0.65,
+        "colorHint": "#ffefd5",
+        "start": 6.16
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Euphoric Release",
+        "intensity": 1,
+        "colorHint": "#ffd700",
+        "start": 51.95
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Reflective Confidence",
+        "intensity": 0.53,
+        "colorHint": "#2f4f4f",
+        "start": 114.06
+      },
+      {
+        "name": "Drop",
+        "emotion": "Cinematic Celebration",
+        "intensity": 0.3,
+        "colorHint": "#ffd700",
+        "start": 127.9
+      }
+    ],
+    "keywords": [
+      {
+        "word": "shine",
+        "emotion": "Radiant Brilliance",
+        "imageryPrompt": "A woman glowing with an inner golden light that illuminates the entire room, casting soft rays on her face and hands."
+      },
+      {
+        "word": "glow",
+        "emotion": "Natural Warmth",
+        "imageryPrompt": "Skin illuminated by candlelight reflecting a healthy, vibrant warmth against a dark midnight background."
+      },
+      {
+        "word": "spotlight",
+        "emotion": "Unnecessary Attention",
+        "imageryPrompt": "A bright stage spotlight hitting an empty floor while the audience looks naturally at one central figure without it."
+      },
+      {
+        "word": "dress",
+        "emotion": "Elegant Celebration",
+        "imageryPrompt": "Silk fabric shimmering in low light, wrapping around a figure that exudes confidence and timeless beauty."
+      },
+      {
+        "word": "candles",
+        "emotion": "Soft Illumination",
+        "imageryPrompt": "Flames dancing gently on cake candles casting flickering shadows of love across a party table."
+      },
+      {
+        "word": "roses",
+        "emotion": "Natural Beauty",
+        "imageryPrompt": "Fresh red roses held in hands, dew drops glistening under soft ambient lighting near green garden leaves."
+      }
+    ]
+  },
+  "styleHint": "A mid-tempo (143 BPM) G minor groove driven by a syncopated drum kit and warm synth pads that underpin smooth R&B vocal runs, creating an upbeat yet intimate atmosphere perfect for a birthday toast.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:44:16.752Z"
+}

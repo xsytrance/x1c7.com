@@ -1,0 +1,48 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 20,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "RAW BEAT LOOP ONLY"
+   },
+   "why": ""
+  },
+  {
+   "start": 46,
+   "end": 70,
+   "stemSpot": {
+    "solo": [
+     "guitar",
+     "lead"
+    ],
+    "label": "SOUL STRINGS & MELODY"
+   },
+   "why": ""
+  },
+  {
+   "start": 96,
+   "end": 120,
+   "stemSpot": {
+    "solo": [
+     "drums",
+     "perc"
+    ],
+    "label": "FINAL BEAT BREAKDOWN"
+   },
+   "why": ""
+  }
+ ],
+ "words": {
+  "void": "dissolve",
+  "gold": "shimmer",
+  "fire": "burn",
+  "scars": "carve",
+  "build": "rise"
+ }
+}

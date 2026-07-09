@@ -1,0 +1,270 @@
+{
+  "v": 1,
+  "mode": "audio-only",
+  "id": "music-is-my-drug-rooklyn-mix",
+  "generatedAt": "2026-07-09T18:50:57.890Z",
+  "measured": {
+    "bpm": 129.2,
+    "duration": 291.98
+  },
+  "identity": {
+    "title": "Music Is My Drug (Rooklyn Mix)",
+    "titleAlternates": [],
+    "genre": "Pop",
+    "subGenres": [
+      "Dance-Pop"
+    ],
+    "mood": [
+      "Euphoric",
+      "Uplifting",
+      "Intense"
+    ],
+    "styleSentence": "A driving D major dance-pop track at 129 bpm featuring a rolling bassline, punchy drums, and an anthemic vocal delivery that builds from intimate verses to a massive, euphoric chorus.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Anthemic"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-art/collector/out/music-is-my-drug-rooklyn-mix.png",
+    "palette": [
+      "#080808",
+      "#180808",
+      "#181808",
+      "#282828",
+      "#280808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "D",
+      "mode": "major",
+      "confidence": 0.78
+    },
+    "boundaries": [
+      29.35,
+      59.72,
+      89.63,
+      99.94,
+      103.38,
+      173.41,
+      176.56,
+      288.21
+    ],
+    "brightness": 3335.2,
+    "dynamicsDb": 8.8
+  },
+  "lyrics": {
+    "official": false,
+    "language": "english",
+    "text": "Oh baby,\nturn it up now, feel that bass line run\nYeah, I can't get enough\nCome on\nTurn it up now, feel that bass line run\nYeah,\nI can't get enough\nCome on\nFirst note hits my skin\nTurn it up now, feel that bass line run\nBass rollin' through my chest\nGoosebumps rushin' in\nLike I forgot the rest\nOne song can start a fire\nOne hook can stop the pain\nOne beat can make us strangers\nThen bring us back again\nWhen the world gets heavy\nMusic clears my mind\nWhen my heart gets messy\nIt makes the broken shine\nUnder all this rhythm\nSomething comes alive\nMusic is my drug\nFeel it in my body\nFeel it in my mind\nMusic is my drug\nEyes\nshut to the feelings\nSpirit in the sky\nDon't stop now\nMusic is my drug\nIt gives me chills\nChills inside\nIt gets me high\nI'm alive\nI'm alive\nI'm alive\nDa da da da da da\nOh!\nWoo!\nWoo!\nWoo!\nIt\nmakes me laugh in color\nMakes me cry in blue\nMakes me dance with memory\nI thought I never knew\nTurns pain into motion\nTurns silence into gold\nMakes a room of strangers\nFeel like one big soul\nWoo!\nWhen the night gets lonely\nMusic pulls me close\nWhen the road gets crazy\nThe high I need the most\nUnder all this rhythm\nSomething comes alive\nMusic is my drug\nWoo!\nFeel it in my body\nFeel it in my mind\nMusic is my drug\nEyes shut to the feelings\nSpirit in the sky\nDon't stop now\nMusic is my drug\nIt gives me chills inside\nIt gets me high\nI'm alive\nI'm alive\nI'm alive\nIt's the laugh after crying\nIt's the scream in the dark\nIt's the hands in the air\nIt's the beat in my heart\nEvery drop\nEvery drum\nEvery voice\nEvery one\nWhen the bass line comes\nWe become the song\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nMusic is my drug\nFeel it in my body\nMusic is my drug\nFeel it in my mind\nMusic is my drug\nEyes shut to the feelings\nSpirit in the sky\nMusic is my drug\nWoo!\nIt gets me high\nMusic is my job\nTurn it up\nMusic is my job",
+    "lrc": "[Intro]\n[00:00.70] Oh baby,\n[00:03.25] turn it up now, feel that bass line run\n[00:12.36] Yeah, I can't get enough\n[00:14.58] Come on\n[Verse 1]\n[00:35.20] Turn it up now, feel that bass line run\n[00:40.94] Yeah,\n[00:41.87] I can't get enough\n[00:43.94] Come on\n[00:57.50] First note hits my skin\n[00:59.68] Turn it up now, feel that bass line run\n[Chorus]\n[01:00.40] Bass rollin' through my chest\n[01:04.86] Goosebumps rushin' in\n[01:07.12] Like I forgot the rest\n[01:10.86] One song can start a fire\n[01:14.40] One hook can stop the pain\n[01:17.86] One beat can make us strangers\n[01:21.94] Then bring us back again\n[01:28.48] When the world gets heavy\n[Bridge]\n[01:30.00] Music clears my mind\n[01:31.86] When my heart gets messy\n[01:33.90] It makes the broken shine\n[01:35.40] Under all this rhythm\n[01:37.44] Something comes alive\n[Verse 1 (Repeat/Build)]\n[01:42.53] Music is my drug\n[Chorus (Full)]\n[01:43.64] Feel it in my body\n[01:46.22] Feel it in my mind\n[01:49.76] Music is my drug\n[01:51.02] Eyes\n[01:52.19] shut to the feelings\n[01:53.36] Spirit in the sky\n[01:55.28] Don't stop now\n[01:56.88] Music is my drug\n[01:58.66] It gives me chills\n[01:59.98] Chills inside\n[02:01.23] It gets me high\n[02:04.96] I'm alive\n[02:06.37] I'm alive\n[02:08.23] I'm alive\n[02:10.35] Da da da da da da\n[02:14.40] Oh!\n[02:20.80] Woo!\n[02:22.62] Woo!\n[02:23.82] Woo!\n[02:25.46] It\n[02:26.37] makes me laugh in color\n[02:27.76] Makes me cry in blue\n[02:29.44] Makes me dance with memory\n[02:31.38] I thought I never knew\n[02:33.08] Turns pain into motion\n[02:35.14] Turns silence into gold\n[02:36.82] Makes a room of strangers\n[02:38.44] Feel like one big soul\n[02:40.68] Woo!\n[02:41.68] When the night gets lonely\n[02:43.32] Music pulls me close\n[02:45.06] When the road gets crazy\n[02:47.18] The high I need the most\n[02:48.80] Under all this rhythm\n[02:50.54] Something comes alive\n[Drop]\n[02:55.81] Music is my drug\n[02:56.94] Woo!\n[02:58.27] Feel it in my body\n[02:59.38] Feel it in my mind\n[03:03.07] Music is my drug\n[03:04.26] Eyes shut to the feelings\n[03:06.90] Spirit in the sky\n[03:08.58] Don't stop now\n[03:10.16] Music is my drug\n[03:12.02] It gives me chills inside\n[03:14.26] It gets me high\n[03:18.08] I'm alive\n[03:19.87] I'm alive\n[03:21.79] I'm alive\n[03:25.54] It's the laugh after crying\n[03:27.32] It's the scream in the dark\n[03:29.16] It's the hands in the air\n[03:30.92] It's the beat in my heart\n[03:32.84] Every drop\n[03:33.62] Every drum\n[03:34.54] Every voice\n[03:35.72] Every one\n[03:36.30] When the bass line comes\n[03:38.12] We become the song\n[03:47.64] Woo!\n[03:50.60] Woo!\n[03:51.80] Woo!\n[03:52.58] Woo!\n[03:53.10] Woo!\n[03:53.94] Woo!\n[03:54.02] Woo!\n[03:54.66] Woo!\n[03:54.82] Woo!\n[03:54.88] Woo!\n[03:55.06] Woo!\n[03:55.18] Woo!\n[03:55.26] Woo!\n[03:55.44] Woo!\n[03:55.50] Woo!\n[03:56.40] Woo!\n[03:57.08] Woo!\n[03:57.24] Woo!\n[03:57.66] Woo!\n[03:57.68] Woo!\n[04:01.92] Woo!\n[04:04.72] Woo!\n[04:06.06] Woo!\n[04:07.40] Woo!\n[04:07.64] Woo!\n[04:07.80] Woo!\n[04:08.30] Woo!\n[04:08.36] Music is my drug\n[04:10.22] Feel it in my body\n[04:12.14] Music is my drug\n[04:13.94] Feel it in my mind\n[04:16.29] Music is my drug\n[04:17.58] Eyes shut to the feelings\n[04:20.80] Spirit in the sky\n[04:23.40] Music is my drug\n[04:24.96] Woo!\n[04:27.68] It gets me high\n[04:37.64] Music is my job\n[04:39.54] Turn it up\n[04:43.64] Music is my job\n"
+  },
+  "analysis": {
+    "summary": "This driving D major dance-pop anthem explores music as a powerful life-saving substance that transforms pain into euphoria and unites strangers into one soul through rhythm.",
+    "overallMood": "Euphoric, Uplifting, Intense",
+    "themes": [
+      "Catharsis",
+      "Addiction to Rhythm",
+      "Unity in Sound",
+      "Transformation of Pain",
+      "Escapism",
+      "Vitality"
+    ],
+    "palette": [
+      "#FF4D00",
+      "#2E86DE",
+      "#F5A623",
+      "#FFFFFF"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and low-volume intimacy",
+        "intensity": 0.12,
+        "colorHint": "#1a1a2e",
+        "start": 0.7
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Growing physical sensation of the bassline",
+        "intensity": 0.81,
+        "colorHint": "#533b7d",
+        "start": 35.2
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Massive release and emotional fire",
+        "intensity": 0.94,
+        "colorHint": "#e94560",
+        "start": 60.4
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Clarity and spiritual awakening",
+        "intensity": 0.62,
+        "colorHint": "#0f3d3e",
+        "start": 90
+      },
+      {
+        "name": "Verse 1 (Repeat/Build)",
+        "emotion": "Escalating tension and urgency",
+        "intensity": 0.62,
+        "colorHint": "#ff6b9d",
+        "start": 102.53
+      },
+      {
+        "name": "Chorus (Full)",
+        "emotion": "Total euphoria and chaotic joy",
+        "intensity": 0.98,
+        "colorHint": "#fd7e14",
+        "start": 103.64
+      },
+      {
+        "name": "Drop",
+        "emotion": "Explosive rhythm and collective trance",
+        "intensity": 1,
+        "colorHint": "#ffffff",
+        "start": 175.81
+      }
+    ],
+    "keywords": [
+      {
+        "word": "drug",
+        "emotion": "Obsessive need for connection",
+        "imageryPrompt": "A glowing neon pill dissolving into a river of golden light that flows upward, representing addiction to positive energy."
+      },
+      {
+        "word": "fire",
+        "emotion": "Intense passion and heat",
+        "imageryPrompt": "Blue and purple flames dancing in the wind without burning anything, illuminating faces with warmth rather than destruction."
+      },
+      {
+        "word": "pain",
+        "emotion": "Raw vulnerability turned positive",
+        "imageryPrompt": "A dark gray stone cracking open to reveal a bright yellow flower growing from the center of the fracture."
+      },
+      {
+        "word": "alive",
+        "emotion": "Rushing vitality and heartbeat",
+        "imageryPrompt": "Human silhouettes with visible golden veins pulsing against a deep indigo background, radiating light outward."
+      },
+      {
+        "word": "soul",
+        "emotion": "Deep spiritual unity",
+        "imageryPrompt": "A swirling galaxy of connected human hands merging into one single luminous sphere in the center of space."
+      },
+      {
+        "word": "gold",
+        "emotion": "Treasured transformation",
+        "imageryPrompt": "Silent dust turning instantly into shimmering metallic flakes that float upwards, catching the light from below."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 79,
+      "mid": 84,
+      "close": 84
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 0.7,
+        "intensity": 0.12
+      },
+      {
+        "name": "Verse 1",
+        "start": 35.2,
+        "intensity": 0.81
+      },
+      {
+        "name": "Chorus",
+        "start": 60.4,
+        "intensity": 0.94
+      },
+      {
+        "name": "Bridge",
+        "start": 90,
+        "intensity": 0.62
+      },
+      {
+        "name": "Verse 1 (Repeat/Build)",
+        "start": 102.53,
+        "intensity": 0.62
+      },
+      {
+        "name": "Chorus (Full)",
+        "start": 103.64,
+        "intensity": 0.98
+      },
+      {
+        "name": "Drop",
+        "start": 175.81,
+        "intensity": 1
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 77
+      },
+      {
+        "name": "Verse 1",
+        "presence": 85
+      },
+      {
+        "name": "Chorus",
+        "presence": 87
+      },
+      {
+        "name": "Bridge",
+        "presence": 84
+      },
+      {
+        "name": "Verse 1 (Repeat/Build)",
+        "presence": 78
+      },
+      {
+        "name": "Chorus (Full)",
+        "presence": 87
+      },
+      {
+        "name": "Drop",
+        "presence": 88
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          12.48,
+          13.6
+        ],
+        [
+          290.48,
+          292
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "drums",
+        "other"
+      ],
+      "approx": true
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "music-is-my-drug-rooklyn-mix-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

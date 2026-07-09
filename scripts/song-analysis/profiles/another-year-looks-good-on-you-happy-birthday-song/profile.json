@@ -1,0 +1,282 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "another-year-looks-good-on-you-happy-birthday-song",
+  "generatedAt": "2026-07-09T18:44:16.752Z",
+  "measured": {
+    "bpm": 143.55,
+    "duration": 202.76
+  },
+  "identity": {
+    "title": "Another Year Looks Good on You [Happy Birthday Song]",
+    "titleAlternates": [],
+    "genre": "Pop",
+    "subGenres": [
+      "R&B",
+      "Latin Pop"
+    ],
+    "mood": "celebratory, radiant, intimate, euphoric",
+    "styleSentence": "A mid-tempo (143 BPM) G minor groove driven by a syncopated drum kit and warm synth pads that underpin smooth R&B vocal runs, creating an upbeat yet intimate atmosphere perfect for a birthday toast.",
+    "language": "English/Spanish",
+    "energy": "high",
+    "vocalStyle": "smooth, melismatic, conversational"
+  },
+  "cover": {
+    "file": "/home/xsyprime/x1c7.com/scripts/song-art/collector/out/another-year-looks-good-on-you-happy-birthday-song.png",
+    "palette": [
+      "#785848",
+      "#886858",
+      "#684848",
+      "#785858",
+      "#080808"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "G",
+      "mode": "minor",
+      "confidence": 0.738
+    },
+    "boundaries": [
+      3.16,
+      20.9,
+      30,
+      51.64,
+      113.22,
+      126.22,
+      152.32,
+      200.16
+    ],
+    "brightness": 3564.7,
+    "dynamicsDb": 12.7
+  },
+  "lyrics": {
+    "official": false,
+    "language": "english",
+    "text": "Yeah,\nthis one's for you\nOn your day\nHappy birthday, baby\nYou already know\nYou don't need a spotlight\nYou walk in, they see you\nSoft air falling down like midnight over you\nPhone lighting up again\nMessages on screen\nVoice know what you're smiling at\nThat's my favorite melody\nYou got that birthday glow\nThat nobody can fake\nTurn it one more year\nYou still look 28\nSalon ready queen\nHands making art move\nEvery color on those nails\nStill ain't pretty as you\nAnd I don't need a wish tonight\nI already got mine\nWrapped in a birthday dress\nLooking way too fine\nTe amo, baby\nCopalanga, it's true\nCada año más bonito\nJust to have more you\nAnother year looks\nGood on you\nGood on you, good on you\nGirl, the way you shine\nGot the whole room watching you\nHappy birthday, my love\nLet the music move\nEverybody deadest\nPero I'm only seeing you\nLet's go\nAnother year looks\nGood on you, good on you\nStill my favorite face\nTill my dream come true\nRaise the glass up high\nLet the candles burn\nIt's looom\nFeliz cumpleanos baby\nAnother year looks good on you\nWhoo-whoo-whoo baby, baby\nOoh, ooh, ooh\nLooks good on you\nOh, my, baby\nEverything you do\nAye, baby, baby\nMe birthday view\nAnother year looks good on you\nOoh, ooh!\nNew phone paid off\nShiny cameras shine\nBut even that camera knows you're the real thing\nheadline playlist on loop now birthday party\ngroove all your bark out around you everybody's\nin the mood you laugh like sunshine dancing to\nthe track tiny queens in every dream but you\ndiscard it can't outmatch gardening on weekends\nflowers in your hand pero we call get them roses\nthat made me\nunderstand and i don't need a wish tonight\ni already got mine wrapped in a birthday\ndress looking way too fine mi vida baby copa\nlonga it's true cada año mas bendita just to live\nwith you another year looks good on you good on\nyou good on you girl the way you shine got the\nwhole room watching you happy birthday my love\nlet the music move everybody dance pero i'm only\nseeing you let's go\nanother\nyear\nlooks good on you good on you still my favorite\nface still my dream come true raise the glass up\nhigh let the candles bloom my lipa yunga\nbirthday baby another year looks good on you",
+    "lrc": "[Intro]\n[00:01.72] Yeah,\n[00:03.06] this one's for you\n[Verse 1]\n[00:06.16] On your day\n[00:08.54] Happy birthday, baby\n[00:11.82] You already know\n[00:15.60] You don't need a spotlight\n[00:17.86] You walk in, they see you\n[00:19.58] Soft air falling down like midnight over you\n[00:22.76] Phone lighting up again\n[00:24.50] Messages on screen\n[00:26.16] Voice know what you're smiling at\n[00:28.58] That's my favorite melody\n[00:29.80] You got that birthday glow\n[00:31.80] That nobody can fake\n[00:33.78] Turn it one more year\n[00:35.42] You still look 28\n[00:36.00] Salon ready queen\n[00:38.62] Hands making art move\n[00:40.34] Every color on those nails\n[00:42.10] Still ain't pretty as you\n[00:43.78] And I don't need a wish tonight\n[00:45.38] I already got mine\n[00:46.84] Wrapped in a birthday dress\n[00:48.50] Looking way too fine\n[00:50.22] Te amo, baby\n[Chorus]\n[00:51.95] Copalanga, it's true\n[00:53.58] Cada año más bonito\n[00:55.24] Just to have more you\n[00:56.92] Another year looks\n[00:58.50] Good on you\n[00:59.46] Good on you, good on you\n[01:02.12] Girl, the way you shine\n[01:03.68] Got the whole room watching you\n[01:06.57] Happy birthday, my love\n[01:08.94] Let the music move\n[01:10.44] Everybody deadest\n[01:12.80] Pero I'm only seeing you\n[01:16.38] Let's go\n[01:16.98] Another year looks\n[01:18.82] Good on you, good on you\n[01:21.52] Still my favorite face\n[01:23.32] Till my dream come true\n[01:25.14] Raise the glass up high\n[01:26.82] Let the candles burn\n[01:28.34] It's looom\n[01:29.10] Feliz cumpleanos baby\n[01:30.60] Another year looks good on you\n[01:33.64] Whoo-whoo-whoo baby, baby\n[01:35.96] Ooh, ooh, ooh\n[01:37.60] Looks good on you\n[01:39.40] Oh, my, baby\n[01:41.02] Everything you do\n[01:42.14] Aye, baby, baby\n[01:44.12] Me birthday view\n[01:45.50] Another year looks good on you\n[01:50.72] Ooh, ooh!\n[01:52.76] New phone paid off\n[Bridge]\n[01:54.06] Shiny cameras shine\n[01:55.48] But even that camera knows you're the real thing\n[01:58.34] headline playlist on loop now birthday party\n[02:01.22] groove all your bark out around you everybody's\n[02:04.44] in the mood you laugh like sunshine dancing to\n[Drop]\n[02:07.90] the track tiny queens in every dream but you\n[02:10.44] discard it can't outmatch gardening on weekends\n[02:13.54] flowers in your hand pero we call get them roses\n[02:16.74] that made me\n[02:18.12] understand and i don't need a wish tonight\n[02:20.58] i already got mine wrapped in a birthday\n[02:23.28] dress looking way too fine mi vida baby copa\n[02:27.36] longa it's true cada año mas bendita just to live\n[02:31.26] with you another year looks good on you good on\n[02:35.78] you good on you girl the way you shine got the\n[02:39.46] whole room watching you happy birthday my love\n[02:43.94] let the music move everybody dance pero i'm only\n[02:49.16] seeing you let's go\n[02:51.98] another\n[02:52.76] year\n[02:53.22] looks good on you good on you still my favorite\n[02:57.68] face still my dream come true raise the glass up\n[03:01.40] high let the candles bloom my lipa yunga\n[03:04.82] birthday baby another year looks good on you\n"
+  },
+  "analysis": {
+    "summary": "This celebratory birthday anthem honors a radiant partner who requires no spotlight to shine, framing their aging as an enhancement rather than a decline while blending intimate R&B vocals with euphoric dance beats.",
+    "overallMood": "Euphoric and Intimate",
+    "themes": [
+      "Radiant Aging",
+      "Exclusive Devotion",
+      "Celebratory Joy"
+    ],
+    "palette": [
+      "#FFD700",
+      "#8B4513",
+      "#2F4F4F",
+      "#FFEFD5"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipatory Whisper",
+        "intensity": 0.47,
+        "colorHint": "#ffd700",
+        "start": 1.72
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Admiring Warmth",
+        "intensity": 0.65,
+        "colorHint": "#ffefd5",
+        "start": 6.16
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Euphoric Release",
+        "intensity": 1,
+        "colorHint": "#ffd700",
+        "start": 51.95
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Reflective Confidence",
+        "intensity": 0.53,
+        "colorHint": "#2f4f4f",
+        "start": 114.06
+      },
+      {
+        "name": "Drop",
+        "emotion": "Cinematic Celebration",
+        "intensity": 0.3,
+        "colorHint": "#ffd700",
+        "start": 127.9
+      }
+    ],
+    "keywords": [
+      {
+        "word": "shine",
+        "emotion": "Radiant Brilliance",
+        "imageryPrompt": "A woman glowing with an inner golden light that illuminates the entire room, casting soft rays on her face and hands."
+      },
+      {
+        "word": "glow",
+        "emotion": "Natural Warmth",
+        "imageryPrompt": "Skin illuminated by candlelight reflecting a healthy, vibrant warmth against a dark midnight background."
+      },
+      {
+        "word": "spotlight",
+        "emotion": "Unnecessary Attention",
+        "imageryPrompt": "A bright stage spotlight hitting an empty floor while the audience looks naturally at one central figure without it."
+      },
+      {
+        "word": "dress",
+        "emotion": "Elegant Celebration",
+        "imageryPrompt": "Silk fabric shimmering in low light, wrapping around a figure that exudes confidence and timeless beauty."
+      },
+      {
+        "word": "candles",
+        "emotion": "Soft Illumination",
+        "imageryPrompt": "Flames dancing gently on cake candles casting flickering shadows of love across a party table."
+      },
+      {
+        "word": "roses",
+        "emotion": "Natural Beauty",
+        "imageryPrompt": "Fresh red roses held in hands, dew drops glistening under soft ambient lighting near green garden leaves."
+      }
+    ]
+  },
+  "show": {
+    "energyArc": {
+      "open": 25,
+      "mid": 40,
+      "close": 23
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 1.72,
+        "intensity": 0.47
+      },
+      {
+        "name": "Verse 1",
+        "start": 6.16,
+        "intensity": 0.65
+      },
+      {
+        "name": "Chorus",
+        "start": 51.95,
+        "intensity": 1
+      },
+      {
+        "name": "Bridge",
+        "start": 114.06,
+        "intensity": 0.53
+      },
+      {
+        "name": "Drop",
+        "start": 127.9,
+        "intensity": 0.3
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 40
+      },
+      {
+        "name": "Verse 1",
+        "presence": 76
+      },
+      {
+        "name": "Chorus",
+        "presence": 86
+      },
+      {
+        "name": "Bridge",
+        "presence": 80
+      },
+      {
+        "name": "Drop",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          18.22
+        ],
+        [
+          19.26,
+          20.14
+        ],
+        [
+          20.54,
+          21.42
+        ],
+        [
+          22.46,
+          23.58
+        ],
+        [
+          25.82,
+          26.94
+        ],
+        [
+          27.18,
+          28.06
+        ],
+        [
+          46.38,
+          48.14
+        ],
+        [
+          48.94,
+          51.58
+        ],
+        [
+          57.58,
+          58.62
+        ],
+        [
+          89.66,
+          90.78
+        ],
+        [
+          91.34,
+          92.46
+        ],
+        [
+          98.14,
+          99.5
+        ],
+        [
+          104.62,
+          110.86
+        ]
+      ],
+      "risers": [],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar",
+        "keys"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "another-year-looks-good-on-you-happy-birthday-song-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

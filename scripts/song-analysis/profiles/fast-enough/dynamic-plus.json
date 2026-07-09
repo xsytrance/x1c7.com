@@ -1,0 +1,41 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 10,
+   "end": 18,
+   "stemSpot": {
+    "solo": [
+     "synth"
+    ],
+    "label": "SYNTH INTRO"
+   },
+   "why": ""
+  },
+  {
+   "start": 46,
+   "end": 68,
+   "stemSpot": {
+    "solo": [
+     "bass"
+    ],
+    "label": "BASS DRIVE"
+   },
+   "why": ""
+  },
+  {
+   "start": 105,
+   "end": 123,
+   "reactor": "fireworks",
+   "why": "The Bridge is the explosive release point where energy peaks; fireworks provide a massive,"
+  }
+ ],
+ "words": {
+  "fast": "pulse",
+  "boost": "shimmer",
+  "caught": "glitch",
+  "lights": "bloom",
+  "level": "rise",
+  "invincible": "slam"
+ }
+}

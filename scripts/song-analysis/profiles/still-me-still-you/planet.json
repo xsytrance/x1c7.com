@@ -1,0 +1,109 @@
+[
+  {
+    "id": "still-me-still-you",
+    "planet": {
+      "analysis": {
+        "summary": "A sultry, late-night R&B duet exploring romantic uncertainty in a long-distance relationship through text messages and intimate phone calls.",
+        "overallMood": "Sultry, tender, teasing",
+        "themes": [
+          "Long-distance love",
+          "Digital intimacy",
+          "Self-doubt vs. reassurance",
+          "Future planning together"
+        ],
+        "palette": [
+          "#0F172A",
+          "#3B82F6",
+          "#D946EF",
+          "#EAB308"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipation, quiet tension",
+            "intensity": 0.35,
+            "colorHint": "#1e293b",
+            "start": 14.82
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Intrigue, questioning identity",
+            "intensity": 0.65,
+            "colorHint": "#4f46e5",
+            "start": 14.82
+          },
+          {
+            "name": "Chorus (Female Response)",
+            "emotion": "Affirmation, warmth, desire",
+            "intensity": 0.82,
+            "colorHint": "#db2777",
+            "start": 90.28
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Vulnerable doubt, breathless pause",
+            "intensity": 0.55,
+            "colorHint": "#312e81",
+            "start": 141.02
+          },
+          {
+            "name": "Verse 2 / Chorus A",
+            "emotion": "Rhythmic questioning, rising heat",
+            "intensity": 0.76,
+            "colorHint": "#d946ef",
+            "start": 143.18
+          },
+          {
+            "name": "Chorus B (Duet)",
+            "emotion": "Passionate reassurance, commitment",
+            "intensity": 0.95,
+            "colorHint": "#eab308",
+            "start": 169.44
+          },
+          {
+            "name": "Outro",
+            "emotion": "Resolved intimacy, fading echo",
+            "intensity": 0.6,
+            "colorHint": "#2dd4bf",
+            "start": 295.66
+          }
+        ],
+        "keywords": [
+          {
+            "word": "screen",
+            "emotion": "Digital connection point",
+            "imageryPrompt": "A glowing smartphone screen illuminating a dark room at midnight, casting blue light on dust motes dancing in the air."
+          },
+          {
+            "word": "erase",
+            "emotion": "Hesitation and vulnerability",
+            "imageryPrompt": "Finger hovering over an 'X' button to delete a typed message, thumb trembling slightly against glass."
+          },
+          {
+            "word": "sparks",
+            "emotion": "Electric attraction",
+            "imageryPrompt": "Tiny golden embers falling slowly into deep shadows within a smoky lounge setting."
+          },
+          {
+            "word": "bass",
+            "emotion": "Physical vibration, pressure",
+            "imageryPrompt": "Subsonic waves rippling through the floorboards of a dimly lit room, causing heavy objects to sway gently."
+          },
+          {
+            "word": "dreams",
+            "emotion": "Hopeful longing",
+            "imageryPrompt": "Soft clouds forming shapes of silhouettes in a twilight sky above a city skyline at night."
+          },
+          {
+            "word": "gloves",
+            "emotion": "Tactile memory, distance",
+            "imageryPrompt": "Empty hands reaching out through transparent blue glass partitions towards warm light on the other side."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

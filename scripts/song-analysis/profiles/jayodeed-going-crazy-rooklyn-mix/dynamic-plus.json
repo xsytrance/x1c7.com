@@ -1,0 +1,25 @@
+{
+ "v": 1,
+ "acts": [
+  {
+   "start": 42,
+   "end": 60,
+   "reactor": "orbit",
+   "why": "The pre-chorus builds tension like crashing waves; 'orbit' captures the hypnotic rising os"
+  },
+  {
+   "start": 160,
+   "end": 185,
+   "reactor": "downpour",
+   "why": "The bridge brings melancholic resignation and cold logic; 'downpour' evokes the rain, clea"
+  }
+ ],
+ "words": {
+  "crazy": "shatter",
+  "hate": "burn",
+  "need": "bleed",
+  "ghost": "echo",
+  "poison": "glitch",
+  "chaos": "dissolve"
+ }
+}

@@ -1,0 +1,92 @@
+{
+  "analysis": {
+    "summary": "A gritty cinematic exploration of addiction personified as a seductive force in late-night NYC, where the narrator struggles between maintaining appearances and confronting the 'dragon' beneath their facade.",
+    "overallMood": "Gritty Vulnerability",
+    "themes": [
+      "Addiction as a Seduction",
+      "The Mask of Success vs. Internal Decay",
+      "Urban Isolation and Loneliness",
+      "Self-Deception and Rationalization",
+      "Redemption through Truth",
+      "Breaking the Cycle"
+    ],
+    "palette": [
+      "#1C1C24",
+      "#8B0000",
+      "#D3A675",
+      "#FFFAE0"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Melancholic Warning",
+        "intensity": 0.66,
+        "colorHint": "#1c1c24",
+        "start": 6.9399999999999995
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Resigned Denial",
+        "intensity": 0.77,
+        "colorHint": "#8b0000",
+        "start": 50.06
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Frantic Desire",
+        "intensity": 0.92,
+        "colorHint": "#d3a675",
+        "start": 134.04
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Desperate Rationalization",
+        "intensity": 0.66,
+        "colorHint": "#fffae0",
+        "start": 153.05
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "Awakening Resolve",
+        "intensity": 0.23,
+        "colorHint": "#1c1c24",
+        "start": 226.5
+      }
+    ],
+    "keywords": [
+      {
+        "word": "smoke",
+        "emotion": "Hypnotic Obscurity",
+        "imageryPrompt": "Thick grey haze swirling around a dimly lit corner store window, obscuring the street behind it like a ghostly veil."
+      },
+      {
+        "word": "dragon",
+        "emotion": "Lurking Menace",
+        "imageryPrompt": "A shadowy serpentine silhouette coiled beneath the concrete underbelly of an elevated train track, glowing with faint emerald eyes in total darkness."
+      },
+      {
+        "word": "freedom",
+        "emotion": "Irony and Longing",
+        "imageryPrompt": "Tattered paper wings fluttering uselessly above a grimy subway grate, unable to escape the weight of heavy rain falling on concrete below."
+      },
+      {
+        "word": "chains",
+        "emotion": "Heavy Realization",
+        "imageryPrompt": "Rusted iron links wrapped around an ankle resting against a cold brick wall in a narrow alleyway, casting long sharp shadows at midnight."
+      },
+      {
+        "word": "truth",
+        "emotion": "Blinding Clarity",
+        "imageryPrompt": "A single beam of harsh white light cutting through dense smoke to reveal cracked pavement and raw, unvarnished emotion on a face."
+      },
+      {
+        "word": "liar",
+        "emotion": "Self-Pitying Reflection",
+        "imageryPrompt": "A distorted mirror reflecting a smiling figure while the glass cracks behind them with spiderweb fractures filled with dark liquid."
+      }
+    ]
+  },
+  "styleHint": "Dark gritty New York City R&B with hip-hop influence, bass-heavy, slow 82 BPM, dusty boom-bap-inspired drums but no 808s, deep live kick, rimshots, vinyl crackle, subway rumble, late-night bodega atmosphere, cinematic noir strings, violins, viola, cello, double bass, clarinet, oboe, dark piano, smoky pads, heavy low-end groove. Smooth vulnerable male R&B singer with melodic hip-hop phrasing, charming but wounded, soft at first then powerful and desperate. Female voice is addiction personified: smoky, seductive, hypnotic, gothic, sultry, dangerous, whispered and sung, never the addicted person’s POV. Add a spoken narrator like a late-night NYC radio voice / street preacher, offering emotional commentary throughout. Raw, emotional, cinematic, gritty, hopeful ending, no rap verses, no glamorizing addiction.",
+  "assets": {},
+  "generatedAt": "2026-07-09T18:35:47.450Z"
+}

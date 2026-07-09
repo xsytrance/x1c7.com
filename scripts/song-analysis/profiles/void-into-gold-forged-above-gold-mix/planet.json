@@ -1,0 +1,96 @@
+[
+  {
+    "id": "void-into-gold-forged-above-gold-mix",
+    "planet": {
+      "analysis": {
+        "summary": "This aggressive hip-hop soul anthem chronicles a transformative journey from inner emptiness and external pressure to becoming forged like gold through resilience.",
+        "overallMood": "Aggressive, Triumphant, Raw, Anthemic",
+        "themes": [
+          "Transformation through pressure",
+          "Resilience against doubt",
+          "Self-made worthiness",
+          "Turning pain into power"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Tense anticipation building from darkness to revelation",
+            "intensity": 0.45,
+            "colorHint": "#2b1d36",
+            "start": 1.12
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Gritty determination and raw soulful pain under pressure",
+            "intensity": 0.78,
+            "colorHint": "#ff4500",
+            "start": 32.24
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Rising energy, cleansing fire preparing for the anthem",
+            "intensity": 0.91,
+            "colorHint": "#ffd700",
+            "start": 118.64
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Explosive triumph and defiant anthemic power",
+            "intensity": 0.98,
+            "colorHint": "#ffebcd",
+            "start": 132.42
+          },
+          {
+            "name": "Post-Chorus",
+            "emotion": "Cathartic release shifting from battle to healing reflection",
+            "intensity": 0.65,
+            "colorHint": "#1e3f4a",
+            "start": 198.24
+          },
+          {
+            "name": "Drop",
+            "emotion": "Ultimate victory and unshakeable golden confidence",
+            "intensity": 1,
+            "colorHint": "#ffd700",
+            "start": 242.72
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Pressure",
+            "emotion": "Compressed intensity transforming into strength",
+            "imageryPrompt": "A heavy iron weight crushing a dark silhouette, but the cracks are glowing with molten gold light seeping through."
+          },
+          {
+            "word": "Void",
+            "emotion": "Deep existential emptiness turning into fertile ground for creation",
+            "imageryPrompt": "An endless swirling abyss of deep indigo and black mist, yet at the center a single spark ignites like a miniature sun."
+          },
+          {
+            "word": "Gold",
+            "emotion": "Radiant triumph and unbreakable value forged in fire",
+            "imageryPrompt": "Molten liquid gold splashing against dark volcanic rock, reflecting intense orange flames that illuminate the surrounding smoke."
+          },
+          {
+            "word": "Fire",
+            "emotion": "Purifying heat burning away fear and weakness",
+            "imageryPrompt": "Crackling blue and white flames consuming a pile of ash and broken wood, rising upward in tall spirals against a night sky."
+          },
+          {
+            "word": "Scars",
+            "emotion": "Proud marks of survival that prove authenticity",
+            "imageryPrompt": "Close up on weathered skin where silver scars are glowing warmly like veins filled with liquid starlight instead of blood."
+          },
+          {
+            "word": "Build",
+            "emotion": "Relentless construction rising from nothing to something magnificent",
+            "imageryPrompt": "A massive stone tower being constructed by giant hands emerging from a dark fog, each block glowing with internal golden light."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]
