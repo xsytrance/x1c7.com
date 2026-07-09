@@ -8,6 +8,7 @@
 // Output: [{ id, planet: { analysis, generatedAt:null }, ok, error }]
 
 import { readFileSync, writeFileSync } from "node:fs";
+import http from "node:http";
 
 const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1]]); return a;
@@ -71,16 +72,35 @@ async function analyze(t) {
     `palette (4 hex colors capturing the vibe), sections (one per section name above, with emotion + intensity + colorHint hex), ` +
     `keywords (6-9 of the most emotionally-charged words, each with emotion + imageryPrompt).`;
 
-  const res = await fetch(`${HOST}/api/chat`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ model: MODEL, stream: false, format: "json", think: false,
-      options: { temperature: 0.6, num_predict: 2200 },
-      messages: [{ role: "system", content: sys }, { role: "user", content: user }] }),
+  // node:http, not fetch — fetch's undici enforces a 300s headers timeout,
+  // and on a long prompt Ollama's prompt eval can exceed that before the
+  // first streamed byte arrives, even with stream:true.
+  const body = JSON.stringify({ model: MODEL, stream: true, format: "json", think: false,
+    options: { temperature: 0.6, num_predict: 2200 },
+    messages: [{ role: "system", content: sys }, { role: "user", content: user }] });
+  const raw = await new Promise((resolve, reject) => {
+    const req = http.request(`${HOST}/api/chat`, {
+      method: "POST", headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) },
+    }, (res) => {
+      if (res.statusCode !== 200) { reject(new Error(`LLM ${res.statusCode}`)); res.resume(); return; }
+      let text = "", buf = "";
+      res.setEncoding("utf8");
+      res.on("data", (chunk) => {
+        buf += chunk;
+        let nl;
+        while ((nl = buf.indexOf("\n")) >= 0) {
+          const line = buf.slice(0, nl).trim();
+          buf = buf.slice(nl + 1);
+          if (!line) continue;
+          try { text += JSON.parse(line).message?.content || ""; } catch { /* partial line */ }
+        }
+      });
+      res.on("end", () => resolve(text));
+      res.on("error", reject);
+    });
+    req.on("error", reject);
+    req.end(body);
   });
-  if (!res.ok) throw new Error(`LLM ${res.status}: ${await res.text()}`);
-  const data = await res.json();
-  const raw = data.message?.content || "";
   writeFileSync(args.out + ".raw.json", raw);
   const analysis = JSON.parse(raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1));
 

@@ -42,6 +42,7 @@ const log = (...a) => console.error(...a);
 const PATTERNS = [
   ["lead", "lead voc"], ["back", "backing voc"], ["drums", "drum"], ["bass", "bass"],
   ["perc", "perc"], ["synth", "synth"], ["other", "other"], ["guitar", "guitar"], ["keys", "keyboard"],
+  ["strings", "strings"], ["woodwinds", "woodwind"], ["brass", "brass"],
 ];
 
 function loadEnv(file) {
@@ -116,6 +117,6 @@ console.log("\n— merge into the track's planet.assets (Supabase `tracks.planet
 console.log(JSON.stringify(assets, null, 2));
 console.log(`\n— or apply directly —\n`);
 console.log(
-  `UPDATE tracks SET planet = jsonb_set(planet, '{assets}', coalesce(planet->'assets', '{}'::jsonb) || '${JSON.stringify(assets)}'::jsonb) WHERE id = '${SLUG}';`,
+  `UPDATE tracks SET planet = jsonb_set(coalesce(planet, '{}'::jsonb), '{assets}', coalesce(planet->'assets', '{}'::jsonb) || '${JSON.stringify(assets)}'::jsonb) WHERE id = '${SLUG}';`,
 );
 log(`\n✦ done — the live mixer lights up for "${SLUG}" once the row updates.`);

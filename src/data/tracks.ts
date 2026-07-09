@@ -105,6 +105,9 @@ const COVER_OVERRIDES: Record<string, { folder: string; name: string }> = {
   "Honey N Venom (Rude Wine Riddim)": { folder: "album-art/Art", name: "Honey and Venom" },
   "Oro De La Presión": { folder: "album-art/Art", name: "ora de la presion" },
   "One Tap Away": { folder: "album-art/Art", name: "One Tap Away Original" },
+  "Red Flags From The Beginning": { folder: "covers", name: "Red Flags From The Beginning" },
+  "Under the Elevated": { folder: "covers", name: "Under The Elevated" },
+  "Veneno Y Miel": { folder: "covers", name: "Veneno Y Miel" },
 };
 
 // Best-effort match a track title to a cover. Explicit overrides win; then an
@@ -138,16 +141,18 @@ function coverFor(title: string): string | undefined {
 // Organized library under music/ (clean names). The storage reorg folded the
 // old legacy bucket-root files in here too, so there's one consistent home.
 const MP3_FILES = [
-  "1st of the Month (Walk It Out)", "AI Interlude", "Amor De Verdad",
+  "1st of the Month (Walk It Out)", "23 Respuestas", "AI Interlude", "Amor De Verdad",
   "Another Year Looks Good on You [Happy Birthday Song]", "Between The Stations",
   "Brooms in the Boiler Room", "Cairo Still Dancing", "Ceasefire in the Static (Data Storm Version)",
+  "Cocktails && Code",
   "Drink Drink [Don’t Save Me]", "Fast Enough", "Feverbreak", "Going Crazy (Hiligaynon Fusion Mix)",
   "Heaven & Hell (Honey & Venom Remix)", "Honey N Venom (Rude Wine Riddim)", "I Don't Quit Right Now",
   "I Said No!", "In Love With The Party", "Light It Myself (불은 내가)", "Low Lights Tokyo _ 君がいないNight",
   "Membrane Still Insane", "Mi Gente", "Move Over (Minimal Groove Mix)", "Music Is My Drug (Rooklyn Mix)",
   "Music Is My Drug", "One More Breath [Back To Myself]", "One Tap Away (Riverboat Bad Boys Remix)",
-  "One Tap Away", "Oro De La Presión", "Push It On Me", "Say It With Your Eyes", "Still Me_ Still You",
-  "Void Into Gold (Forged Above Gold Mix)", "Void Into Gold", "Whistle on the River",
+  "One Tap Away", "Oro De La Presión", "Push It On Me", "Red Flags From The Beginning",
+  "Say It With Your Eyes", "Still Me_ Still You", "The Big Top Has Wi-Fi", "Under the Elevated",
+  "Veneno Y Miel", "Void Into Gold (Forged Above Gold Mix)", "Void Into Gold", "Whistle on the River",
   "Who’s That Snake (Funky Slow-Jam Mix)", "xsytrance presents Jayodeed - Going Crazy (Rooklyn Mix)",
   // Folded in from the legacy bucket root during the storage reorg (now music/).
   "Different This Summer", "I Won’t Be Your Fire (Japanese Mix)", "I Won’t Be Your Fire",
@@ -193,8 +198,9 @@ export const tracks: Track[] = sources
       color,
       audioUrl: s.audioUrl,
       // Match the live DB's featured track so the hero doesn't flash a
-      // different cover while Supabase data loads.
-      featured: slugify(s.title) === "i-won-t-be-your-fire",
+      // different cover while Supabase data loads. Update this slug whenever
+      // `featured` changes in the tracks table.
+      featured: slugify(s.title) === "under-the-elevated",
     };
   });
 

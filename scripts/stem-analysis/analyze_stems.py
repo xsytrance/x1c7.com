@@ -125,7 +125,8 @@ def main():
         if not low.endswith((".mp3", ".wav", ".flac")): continue
         for key, pat in [("lead", "lead voc"), ("back", "backing voc"), ("drums", "drum"),
                          ("bass", "bass"), ("perc", "perc"), ("synth", "synth"), ("other", "other"),
-                         ("guitar", "guitar"), ("keys", "keyboard")]:
+                         ("guitar", "guitar"), ("keys", "keyboard"),
+                         ("strings", "strings"), ("woodwinds", "woodwind"), ("brass", "brass")]:
             if pat in low: names[key] = os.path.join(args.stems, f)
     log("stems:", {k: os.path.basename(v) for k, v in names.items()})
 
@@ -185,7 +186,7 @@ def main():
         "align": {"lag": round(lag, 3), "score": round(score, 2)},
         "beats": beats, "kicks": kicks, "snares": snares, "hats": hats,
         "cuts": cuts, "risers": risers,
-        "env": {k: env[k] for k in ("lead", "back", "drums", "perc", "bass", "synth", "other", "guitar", "keys") if k in env},
+        "env": {k: env[k] for k in ("lead", "back", "drums", "perc", "bass", "synth", "other", "guitar", "keys", "strings", "woodwinds", "brass") if k in env},
     }
     with open(args.out, "w") as f:
         json.dump(out, f, separators=(",", ":"))

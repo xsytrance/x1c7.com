@@ -62,15 +62,38 @@ const rcloneEnv = {
 };
 const r2put = (local, key) => execFileSync("rclone", ["copyto", local, `R2:${E.BUCKET}/${key}`, "--s3-disable-checksum", "--s3-no-check-bucket"], { env: rcloneEnv, stdio: "ignore" });
 async function remoteGallery(slug) {
-  if (!PUB) return {};
-  try { const r = await fetch(`${PUB}/planets/${slug}/gallery.json`); if (r.ok) return (await r.json()).art || {}; } catch { /* new song */ }
-  return {};
+  if (!PUB) return { art: {}, passes: {} };
+  try {
+    const r = await fetch(`${PUB}/planets/${slug}/gallery.json?cb=${Date.now()}`);
+    if (r.ok) { const j = await r.json(); return { art: j.art || {}, passes: j.passes || {} }; }
+  } catch { /* new song */ }
+  return { art: {}, passes: {} };
 }
 
 // ── Prompt sources ───────────────────────────────────────────────────────────
-const bases = {};
-for (const slug of readdirSync(PLANETS, { withFileTypes: true }).filter((e) => e.isDirectory() && e.name !== "_shared").map((e) => e.name)) {
-  bases[slug] = [...new Set(readdirSync(join(PLANETS, slug)).filter((f) => f.endsWith(".webp")).map((f) => norm(basename(f, ".webp").replace(/-\d+$/, ""))))];
+// Planets + base art live on R2 since the storage reorg (public/planets was
+// slimmed out of the repo), so enumerate from the bucket — a local dir is
+// used only as a fallback for offline dry runs.
+const bases = {}, baseFiles = {};
+try {
+  const dirs = execFileSync("rclone", ["lsf", `R2:${E.BUCKET}/planets`, "--dirs-only"], { env: rcloneEnv, encoding: "utf8" })
+    .split("\n").map((s) => s.replace(/\/$/, "").trim()).filter(Boolean)
+    .filter((d) => d !== "_shared" && d !== "defaults");
+  for (const slug of dirs) {
+    const files = execFileSync("rclone", ["lsf", `R2:${E.BUCKET}/planets/${slug}`, "--files-only"], { env: rcloneEnv, encoding: "utf8" })
+      .split("\n").map((s) => s.trim()).filter((f) => f.endsWith(".webp"));
+    if (!files.length) continue; // stems-only planet — no base art to grow from yet
+    baseFiles[slug] = files;
+    bases[slug] = [...new Set(files.map((f) => norm(basename(f, ".webp").replace(/-\d+$/, ""))))];
+  }
+} catch (e) {
+  log(`R2 enumeration failed (${e.message}) — falling back to local ${PLANETS}`);
+  for (const slug of readdirSync(PLANETS, { withFileTypes: true }).filter((e2) => e2.isDirectory() && e2.name !== "_shared").map((e2) => e2.name)) {
+    const files = readdirSync(join(PLANETS, slug)).filter((f) => f.endsWith(".webp"));
+    if (!files.length) continue;
+    baseFiles[slug] = files;
+    bases[slug] = [...new Set(files.map((f) => norm(basename(f, ".webp").replace(/-\d+$/, ""))))];
+  }
 }
 const slugs = Object.keys(bases);
 const promptIdx = Object.fromEntries(slugs.map((s) => [s, {}]));
@@ -138,8 +161,9 @@ let budget = LIMIT, totalDone = 0, totalFail = 0, seed = 1_000_000 + (Date.now()
 
 for (const slug of targets) {
   if (budget <= 0) break;
-  const gallery = await remoteGallery(slug);
-  const baseCount = readdirSync(join(PLANETS, slug)).filter((f) => f.endsWith(".webp")).length;
+  const remote = await remoteGallery(slug);
+  const gallery = remote.art;
+  const baseCount = (baseFiles[slug] || []).length;
   const galCount = Object.values(gallery).reduce((n, a) => n + a.length, 0);
   const need = Math.min(budget, TARGET - baseCount - galCount);
   if (need <= 0) continue;
@@ -147,7 +171,7 @@ for (const slug of targets) {
   log(`${slug}: ${baseCount} base + ${galCount} gallery → +${jobs.length} toward ${TARGET}`);
   if (args.dry) { for (const j of jobs.slice(0, 4)) log(`  ${j.key}: ${j.prompt.slice(0, 90)}`); continue; }
 
-  let changed = false;
+  let changed = false, addedThisSong = 0;
   for (const j of jobs) {
     if (budget <= 0) break;
     try {
@@ -159,15 +183,25 @@ for (const slug of targets) {
       r2put(tmp, `planets/${slug}/gallery/${j.key}-${n}.webp`);
       try { unlinkSync(tmp); } catch { /* temp cleanup best-effort */ }
       (gallery[j.key] ??= []).push(rel);
-      changed = true; totalDone++; budget--;
+      changed = true; totalDone++; addedThisSong++; budget--;
       log(`  [${totalDone}] ${rel}`);
     } catch (e) { totalFail++; log(`  ERROR ${slug}/${j.key}: ${e.message}`); }
   }
   if (changed) {
     const gjson = join(TMP, "gallery.json");
-    writeFileSync(gjson, JSON.stringify({ slug, model: CKPT, art: gallery }, null, 2));
+    // --pass tags the run (e.g. X1) so gallery.json records which grow-pass
+    // last touched it and how many images each pass added.
+    const meta = { slug, model: CKPT, art: gallery };
+    if (args.pass && args.pass !== true) {
+      const p = String(args.pass);
+      meta.pass = p;
+      meta.passes = { ...remote.passes, [p]: { added: (remote.passes[p]?.added || 0) + addedThisSong, at: new Date().toISOString() } };
+    } else if (Object.keys(remote.passes).length) {
+      meta.passes = remote.passes;
+    }
+    writeFileSync(gjson, JSON.stringify(meta, null, 2));
     r2put(gjson, `planets/${slug}/gallery.json`);
-    log(`  ↑ gallery.json updated for ${slug}`);
+    log(`  ↑ gallery.json updated for ${slug}${meta.pass ? ` (pass ${meta.pass})` : ""}`);
   }
 }
 log(`\ndone: ${totalDone} rendered+published, ${totalFail} failed`);

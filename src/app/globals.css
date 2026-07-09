@@ -566,3 +566,11 @@ body.perf-lite .stage-warn-pill {
   from { transform: translate(0, 0) rotate(0deg); }
   to { transform: translate(4vw, -3vh) rotate(180deg); }
 }
+
+/* The Collection — hide scrollbars on snap rails without killing scroll */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

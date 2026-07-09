@@ -20,6 +20,7 @@
 // Emits scripts/onboard-jobs/<id>/row.sql — apply via Supabase MCP/SQL editor.
 
 import { execFileSync, spawnSync } from "node:child_process";
+import http from "node:http";
 import { existsSync, mkdirSync, readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -46,16 +47,37 @@ const toLrc = (sec) => {
 };
 
 async function llm(system, user, numPredict = 1200) {
-  const res = await fetch(`${OLLAMA}/api/chat`, {
-    method: "POST", headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      model: MODEL, stream: false, format: "json", think: false,
-      options: { temperature: 0.4, num_ctx: 8192, num_predict: numPredict },
-      messages: [{ role: "system", content: system }, { role: "user", content: user }],
-    }),
+  // node:http, not fetch — fetch's undici enforces a 300s headers timeout,
+  // and on a long prompt (big lyrics + transcript) Ollama's prompt eval can
+  // exceed that before the first streamed byte, even with stream:true.
+  const body = JSON.stringify({
+    model: MODEL, stream: true, format: "json", think: false,
+    options: { temperature: 0.4, num_ctx: 8192, num_predict: numPredict },
+    messages: [{ role: "system", content: system }, { role: "user", content: user }],
   });
-  if (!res.ok) throw new Error(`LLM ${res.status}: ${await res.text()}`);
-  const raw = (await res.json()).message?.content || "";
+  const raw = await new Promise((resolve, reject) => {
+    const req = http.request(`${OLLAMA}/api/chat`, {
+      method: "POST", headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) },
+    }, (res) => {
+      if (res.statusCode !== 200) { reject(new Error(`LLM ${res.statusCode}`)); res.resume(); return; }
+      let text = "", buf = "";
+      res.setEncoding("utf8");
+      res.on("data", (chunk) => {
+        buf += chunk;
+        let nl;
+        while ((nl = buf.indexOf("\n")) >= 0) {
+          const line = buf.slice(0, nl).trim();
+          buf = buf.slice(nl + 1);
+          if (!line) continue;
+          try { text += JSON.parse(line).message?.content || ""; } catch { /* partial line */ }
+        }
+      });
+      res.on("end", () => resolve(text));
+      res.on("error", reject);
+    });
+    req.on("error", reject);
+    req.end(body);
+  });
   return JSON.parse(raw.slice(raw.indexOf("{"), raw.lastIndexOf("}") + 1));
 }
 
