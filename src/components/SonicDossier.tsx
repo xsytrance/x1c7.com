@@ -26,7 +26,7 @@ interface Profile {
   };
   lyrics?: { official?: boolean; language?: string };
   analysis?: {
-    summary?: string; overallMood?: string; themes?: string[];
+    summary?: string; overallMood?: string | { name?: string }; themes?: string[];
     sections?: { name: string; start?: number; emotion?: string; intensity?: number; colorHint?: string }[];
     keywords?: { word: string; emotion?: string }[];
   };
@@ -122,7 +122,7 @@ export default function SonicDossier({ slug, accent, bpm, duration }: {
           {theBpm ? <Tile label="Tempo" value={String(Math.round(theBpm))} sub="BPM" /> : null}
           {ke?.key ? <Tile label="Key" value={`${NICE_KEY[ke.key] ?? ke.key}${ke.mode === "minor" ? "m" : ""}`} sub={cam ? `CAMELOT ${cam}` : null} /> : null}
           {theDur ? <Tile label="Runtime" value={fmtT(theDur)} sub={theBpm ? `${Math.round((theDur / 60) * theBpm)} BEATS` : null} /> : null}
-          {p.identity?.energy ? <Tile label="Energy" value={p.identity.energy.toUpperCase()} sub={p.analysis?.overallMood?.toUpperCase().slice(0, 14) ?? null} /> : null}
+          {p.identity?.energy ? <Tile label="Energy" value={p.identity.energy.toUpperCase()} sub={(typeof p.analysis?.overallMood === "string" ? p.analysis.overallMood : p.analysis?.overallMood?.name)?.toUpperCase().slice(0, 14) ?? null} /> : null}
           {p.mixFeatures?.dynamicsDb != null ? <Tile label="Dynamics" value={`${Math.round(p.mixFeatures.dynamicsDb)}dB`} sub={dynLabel(p.mixFeatures.dynamicsDb)} /> : null}
           {p.mixFeatures?.brightness != null ? <Tile label="Tone" value={toneLabel(p.mixFeatures.brightness) ?? "—"} sub={`${Math.round(p.mixFeatures.brightness)} HZ`} /> : null}
         </div>

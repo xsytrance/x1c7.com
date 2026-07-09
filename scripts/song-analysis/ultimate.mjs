@@ -261,17 +261,29 @@ const measuredBrief = [
 ].filter(Boolean).join(" · ");
 
 log("▶ identity (LLM) …");
-const identity = await llm(
+let identity = await llm(
   `You are a music A&R analyst. From measured audio features and transcribed lyrics, identify the song's character. Respond ONLY with JSON: {"title": string (${TITLE ? "use the given title verbatim" : "invent the most likely title, usually the hook line"}), "titleAlternates": string[] (${TITLE ? "[]" : "2-3 other plausible titles"}), "genre": string (one main genre), "subGenres": string[], "mood": string (2-4 evocative words), "styleSentence": string (one sentence a music producer would write to describe the sound, mentioning tempo/instrumentation/vibe), "language": string, "energy": "low"|"medium"|"high", "vocalStyle": string}`,
   [TITLE ? `Title: ${TITLE}` : null, STYLE ? `Producer style notes: ${STYLE}` : null,
    `Measured: ${measuredBrief}`, `Lyrics:\n${lyricsText.slice(0, 1800)}`].filter(Boolean).join("\n\n"));
+// Some models trim optional-feeling fields — one insistent retry fills them.
+if (!identity.styleSentence || !identity.energy || !identity.vocalStyle) {
+  log("  identity incomplete, one retry …");
+  try {
+    const again = await llm(
+      `Fill in ONLY the missing fields for this song. Respond ONLY with JSON: {"styleSentence": string (one sentence a music producer would write describing the sound: tempo, instrumentation, vibe), "energy": "low"|"medium"|"high", "vocalStyle": string (how the vocal is delivered), "language": string}`,
+      [`Known: ${JSON.stringify(identity)}`, `Measured: ${measuredBrief}`, `Lyrics:\n${lyricsText.slice(0, 1200)}`].join("\n\n"));
+    identity = { ...again, ...Object.fromEntries(Object.entries(identity).filter(([, v]) => v != null && v !== "")) };
+  } catch (e) { log("  retry failed (non-fatal):", e.message); }
+}
 if (TITLE) identity.title = TITLE;
 log(`  "${identity.title}" — ${identity.genre} · ${identity.mood}`);
 
 // ── 5. READ THE COVER ───────────────────────────────────────────────────────
+// Palette is pure code and always runs; only the vision-LLM read is skippable
+// (--skip-vision also avoids the model swap that can wedge Ollama's scheduler).
 let cover = null;
-if (COVER && !args["skip-vision"]) {
-  log("▶ cover (vision + palette) …");
+if (COVER) {
+  log(`▶ cover (palette${args["skip-vision"] ? "" : " + vision"}) …`);
   const { default: sharp } = await import("sharp");
   const buf = readFileSync(COVER);
   const { data, info } = await sharp(buf).resize(64, 64, { fit: "cover" }).raw().toBuffer({ resolveWithObject: true });
@@ -283,12 +295,14 @@ if (COVER && !args["skip-vision"]) {
   const palette = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5)
     .map(([k]) => "#" + k.split(".").map((v) => ((+v << 4) | 8).toString(16).padStart(2, "0")).join(""));
   let read = {};
-  try {
-    read = await llm(
-      'Describe this album cover for a stage-visuals designer. Respond ONLY with JSON: {"description": string (2 sentences), "mood": string, "artStyle": string, "subjects": string[]}',
-      "The album cover image is attached.", 600, VISION,
-      [(await sharp(buf).resize(672, 672, { fit: "inside" }).jpeg().toBuffer()).toString("base64")]);
-  } catch (e) { log("  vision failed (non-fatal):", e.message); }
+  if (!args["skip-vision"]) {
+    try {
+      read = await llm(
+        'Describe this album cover for a stage-visuals designer. Respond ONLY with JSON: {"description": string (2 sentences), "mood": string, "artStyle": string, "subjects": string[]}',
+        "The album cover image is attached.", 600, VISION,
+        [(await sharp(buf).resize(672, 672, { fit: "inside" }).jpeg().toBuffer()).toString("base64")]);
+    } catch (e) { log("  vision failed (non-fatal):", e.message); }
+  }
   cover = { file: COVER, palette, ...read };
 }
 

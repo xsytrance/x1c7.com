@@ -117,6 +117,10 @@ async function analyze(t) {
   analysis.sections = toSecs(analysis.sections);
   analysis.keywords = toKw(analysis.keywords);
   analysis.themes = arr(analysis.themes);
+  // overallMood sometimes arrives as {name, intensity, palette} — keep the name.
+  if (analysis.overallMood && typeof analysis.overallMood === "object") {
+    analysis.overallMood = String(analysis.overallMood.name ?? analysis.overallMood.mood ?? Object.values(analysis.overallMood)[0] ?? "");
+  }
 
   // Normalize colors to #RRGGBB.
   if (analysis.palette) for (const k of ["primary", "secondary", "accent", "bg"]) analysis.palette[k] = hex(analysis.palette[k]) || analysis.palette[k];
