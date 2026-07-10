@@ -13,6 +13,7 @@ import type { StemData } from "@/lib/stemSense";
 import { detectLite } from "@/lib/perf";
 import ShareButton from "@/components/ShareButton";
 import Booklet, { type BookletHandle } from "@/components/Booklet";
+import { suppressTakeoverFor } from "@/components/CinematicLyrics";
 
 const HOVER_PREVIEW_DELAY = 380;
 
@@ -63,10 +64,11 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
   const [filter, setFilter] = useState<GenreKey | null>(null);
   const [meta, setMeta] = useState<StemData | null>(null);
   const hoverTimer = useRef<number | null>(null);
-  // Which spine a click/tap would PLAY. Mouse hover and keyboard focus arm it
-  // (so a click is instant, as ever); a touch tap arms it only on the second
-  // tap of the same spine — the first pulls the case and previews the drop.
+  // Which spine a click would PLAY. Mouse hover and keyboard focus arm it
+  // (so a desktop click is instant, as ever). Touch NEVER plays from the
+  // spine — a tap pulls the case, and the case panel offers show/play/insert.
   const armedId = useRef<string | null>(null);
+  const lastPointer = useRef<string>("mouse");
   const preview = usePreview(onPauseMain);
   const booklet = useRef<BookletHandle>(null);
   const [insertFor, setInsertFor] = useState<string | null>(null);
@@ -153,8 +155,12 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                   // Mouse/keyboard arm on hover/focus so a click plays instantly;
                   // touch taps once to pull the case + preview, again to play.
                   onPointerEnter={(e) => { if (e.pointerType !== "touch") armedId.current = t.id; focusTrack(t); }}
+                  onPointerDown={(e) => { lastPointer.current = e.pointerType; }}
                   onFocus={() => { armedId.current = t.id; focusTrack(t); }}
-                  onClick={() => { if (armedId.current === t.id) onPlay(t); else armedId.current = t.id; }}
+                  onClick={() => {
+                    if (lastPointer.current === "touch") { if (focusId !== t.id) focusTrack(t); return; }
+                    if (armedId.current === t.id) onPlay(t); else armedId.current = t.id;
+                  }}
                   aria-label={`${t.title} — ${p.label}`}
                   className="group relative shrink-0 outline-none"
                   style={{ width: 52, height: "min(56vh, 540px)" }}
@@ -234,16 +240,26 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                   {focused.mood ? <span className="truncate">{focused.mood}</span> : null}
                 </div>
                 <h3 className="mt-2 font-display text-2xl text-white">{focused.title}</h3>
-                <div className="mt-3 flex gap-2">
-                  <button onClick={() => { preview.stop(false); onPlay(focused); }}
-                    className="rounded-sm px-4 py-2 font-mono text-sm tracking-[0.14em] text-black transition hover:brightness-110"
-                    style={{ background: pal.accent }}>
-                    ▶ PLAY FULL
-                  </button>
-                  {canPerform(focused) && (
-                    <span className="rounded-sm border border-white/20 px-3 py-2 font-mono text-xs tracking-[0.14em] text-white/70">
-                      🪐 FULL SHOW READY
-                    </span>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {canPerform(focused) ? (
+                    <>
+                      {/* the show is the star — the plain listen sits beside it */}
+                      <button onClick={() => { preview.stop(false); onPlay(focused); }}
+                        className="rounded-sm px-4 py-2 font-mono text-sm tracking-[0.14em] text-black transition hover:brightness-110"
+                        style={{ background: pal.accent }}>
+                        🪐 START THE SHOW
+                      </button>
+                      <button onClick={() => { preview.stop(false); suppressTakeoverFor(focused.id); onPlay(focused); }}
+                        className="rounded-sm border border-white/20 px-3 py-2 font-mono text-xs tracking-[0.14em] text-white/70 transition hover:border-white/60 hover:text-white">
+                        ▶ JUST PLAY
+                      </button>
+                    </>
+                  ) : (
+                    <button onClick={() => { preview.stop(false); onPlay(focused); }}
+                      className="rounded-sm px-4 py-2 font-mono text-sm tracking-[0.14em] text-black transition hover:brightness-110"
+                      style={{ background: pal.accent }}>
+                      ▶ PLAY FULL
+                    </button>
                   )}
                   {/* the insert — chip appears only when this song's booklet exists */}
                   <Booklet ref={booklet} slug={focused.id} accent={pal.accent} sizing="px-3 py-2 text-xs" label="📖 INSERT"
@@ -259,7 +275,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                 <p className="mt-3 font-mono text-[11px] tracking-[0.12em] text-white/35">
                   {preview.state.blocked ? "CLICK ANYWHERE TO ENABLE SOUND PREVIEWS" :
                     previewing ? `PREVIEWING THE DROP · ${fmtTime(preview.state.startAt)}` :
-                    "HOVER TO HEAR THE HOTTEST BAR · CLICK THE CASE FOR THE INSERT"}
+                    "HOVER OR TAP A SPINE TO PULL A CASE · THE CASE ART OPENS THE INSERT"}
                 </p>
               </motion.div>
             ) : (

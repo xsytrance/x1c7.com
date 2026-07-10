@@ -21,6 +21,11 @@ import type { Track } from "@/data/tracks";
  * occluded + culled) and pauses the particle field, which keeps mobile renderers
  * alive. The karaoke highlight is driven by rAF + refs (no per-frame re-render).
  */
+// "Just play it" seam — a page can ask that the NEXT auto-takeover for a
+// track be skipped (music only, no show). One-shot; consumed on first check.
+let suppressFor: string | null = null;
+export const suppressTakeoverFor = (id: string) => { suppressFor = id; };
+
 export function CinematicLyrics() {
   const { currentTrack, isPlaying } = useMusicPlayer();
   const [open, setOpen] = useState(false);
@@ -34,7 +39,9 @@ export function CinematicLyrics() {
 
   // Auto-take-over: when a lyrics track plays and the user hasn't closed it, open.
   useEffect(() => {
-    if (isPlaying && hasLyrics && currentTrack && dismissedId !== currentTrack.id) setOpen(true);
+    if (!(isPlaying && hasLyrics && currentTrack)) return;
+    if (suppressFor === currentTrack.id) { suppressFor = null; setDismissedId(currentTrack.id); return; }
+    if (dismissedId !== currentTrack.id) setOpen(true);
   }, [isPlaying, hasLyrics, currentTrack, dismissedId]);
 
   if (!currentTrack || !hasLyrics) return null;
@@ -78,7 +85,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   synced: boolean;
   onClose: () => void;
 }) {
-  const { isPlaying, togglePlay, getCurrentTime, next, prev, queue, playTrack, stemBus } = useMusicPlayer();
+  const { isPlaying, togglePlay, getCurrentTime, next, prev, queue, playTrack, stemBus, pause } = useMusicPlayer();
   const [mounted, setMounted] = useState(false);
   // The playlist drawer — the whole queue, one tap from any show.
   const [drawer, setDrawer] = useState(false);
@@ -319,6 +326,17 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               reads as one cohesive "player screen". Decorative, never blocks. */}
           <div className="pointer-events-none absolute inset-0 z-[55]" aria-hidden
             style={{ boxShadow: "inset 0 0 0 1.5px color-mix(in srgb, var(--theme-primary) 14%, rgba(255,255,255,0.06)), inset 0 0 70px rgba(0,0,0,0.4)" }} />
+
+          {/* END SHOW — the always-there exit, thumb-reachable even mid
+              Dynamic+ takeover. Stops the music AND closes the stage
+              (the top-bar chevron only minimizes; music keeps playing). */}
+          <motion.button
+            initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
+            onClick={() => { pause(); onClose(); }}
+            aria-label="End the show — stops the music"
+            className="absolute bottom-4 right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-red-400/70 hover:text-red-200">
+            ✕ <span>End show</span>
+          </motion.button>
 
           {/* THE REACTOR — experimental mode picker */}
           <AnimatePresence>
