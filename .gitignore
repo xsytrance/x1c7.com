@@ -66,3 +66,4 @@ scripts/song-analysis/dynamic-plus-backup-*.jsonl
 scripts/song-analysis/profiles/*/release.mp3
 scripts/song-analysis/profiles/*/cover.jpeg
 scripts/song-analysis/profiles/*/stems-src/
+scripts/song-art/.backfill-tmp/

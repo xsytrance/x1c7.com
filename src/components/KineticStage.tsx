@@ -1849,7 +1849,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Mic primer — ask ONCE at show start (never mid-song) when this
           song has a breath OR scream moment coming. */}
       {pass >= 3 && !blow && !scream && (
-        <MicPrimer active={allMoments.some((mm) => mm.type === "blow" || mm.type === "scream")} />
+        <MicPrimer id={track.id} active={allMoments.some((mm) => mm.type === "blow" || mm.type === "scream")} />
       )}
 
       {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
@@ -2776,15 +2776,23 @@ async function micPermissionGranted(): Promise<boolean> {
     return st.state === "granted";
   } catch { return false; }
 }
-function MicPrimer({ active }: { active: boolean }) {
-  // "unknown" until checked; primer shows only when permission isn't granted yet.
+// Once per song per page-load — module scope because the primer UNMOUNTS
+// during a blow/scream moment and remounts after; any in-component guard
+// would reset and resurrect a banner the listener already dismissed.
+const micPrimed = new Set<string>();
+function MicPrimer({ id, active }: { id: string; active: boolean }) {
+  // "unknown" until checked; primer shows only when permission isn't granted
+  // yet, and an ignored one folds away by itself after 12s (the blow moment
+  // still falls back to tap).
   const [show, setShow] = useState(false);
   useEffect(() => {
-    if (!active) { setShow(false); return; }
+    if (!active || micPrimed.has(id)) return;
+    micPrimed.add(id);
     let on = true;
     micPermissionGranted().then((ok) => { if (on) setShow(!ok); });
-    return () => { on = false; };
-  }, [active]);
+    const hide = window.setTimeout(() => { if (on) setShow(false); }, 12000);
+    return () => { on = false; window.clearTimeout(hide); };
+  }, [active, id]);
   const prime = async () => {
     try {
       const s = await navigator.mediaDevices.getUserMedia({ audio: true });
