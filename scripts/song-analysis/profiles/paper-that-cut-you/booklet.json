@@ -6,13 +6,13 @@
   {
    "type": "cover",
    "title": "Paper That Cut You",
-   "tagline": "Cut deep with industrial paranoia.",
+   "tagline": "Paper That Cut You: Internalize The Noise.",
    "genre": "Rap Rock",
    "bookletNo": "6D6"
   },
   {
    "type": "read",
-   "body": "This high-energy fusion of early-2000s rap-rock bounce and modern industrial production captures a mid-tempo groove driven by heavy live drums, distorted guitar stabs, sub-bass pressure, and aggressive turntable scratches. The track explores the internalization of paranoia where a dark inner voice acts as a paper cut that wounds from within while manipulating perception of reality. Anxious male rap verses alternate with explosive rock chorus vocals and tense inner-voice whispers to create a journey through mental distortion. Listen closely as self-sabotage manifests, turning quiet thoughts into loud accusations.",
+   "body": "Step into a world where paranoia becomes your own worst enemy. This track fuses early-2000s rap-rock bounce with modern industrial production to create a mid-tempo groove driven by heavy live drums, distorted guitar stabs, and sub-bass pressure. Aggressive turntable scratches glitch out against pitch drops as the narrator battles an inner voice that wounds from within. The journey moves from eerie whispers of self-dimmed reality to explosive rock aggression where you confront the shadow at your back. It is a psychological warfare anthem about teaching fear to lie and breathing right under someone's skin, proving that sometimes the darkest voices are the ones we invited in ourselves.",
    "styleSentence": "A high-energy fusion of early-2000s rap-rock bounce and modern industrial production featuring a mid-tempo (100 BPM) groove driven by heavy live drums, distorted guitar stabs, sub-bass pressure, and aggressive turntable scratches with glitch edits and pitch drops.",
    "mood": [
     "Anxious, Paranoid, Aggressive, Chaotic"
@@ -34,7 +34,7 @@
     "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/paper-that-cut-you/gallery/paranoia-1.webp",
     "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/paper-that-cut-you/gallery/remix-1.webp"
    ],
-   "caption": "Navigate the glitched landscape where shadow selves project paranoia onto every silent thought in this chaotic industrial odyssey of psychol",
+   "caption": "A glitched industrial wasteland where shadows spin inside static minds amidst heavy bass pressure and distorted guitar stabs.",
    "themes": [
     "Internalized Paranoia",
     "Self-Sabotage",
@@ -52,37 +52,37 @@
     {
      "stem": "lead",
      "name": "LEAD VOX",
-     "bio": "Guides the voice through fear and static noise."
+     "bio": "Channels anxious male rap verses with explosive rock chorus vocals."
     },
     {
      "stem": "drums",
      "name": "DRUMS",
-     "bio": "Keeps the floor shaking. Never misses a downbeat."
+     "bio": "Keeps the floor shaking without ever missing a downbeat."
     },
     {
      "stem": "perc",
      "name": "PERCUSSION",
-     "bio": "Texture in the pocket, always moving."
+     "bio": "Delivers chaotic looping patterns that drive frantic denial forward."
     },
     {
      "stem": "bass",
      "name": "BASS",
-     "bio": "The low end you feel in your chest."
+     "bio": "Applies sub-bass pressure deep inside every thought and feeling."
     },
     {
      "stem": "synth",
      "name": "SYNTH",
-     "bio": "Paints the sky behind the words."
+     "bio": "Generates glitch edits and pitch drops for mental distortion effects."
     },
     {
      "stem": "other",
      "name": "TEXTURES",
-     "bio": "Everything you feel but can't name."
+     "bio": "Layers aggressive scratches to create a paranoid industrial atmosphere."
     },
     {
      "stem": "guitar",
      "name": "GUITAR",
-     "bio": "Strings with an attitude."
+     "bio": "Dismantles calm with distorted stabs that cut like paper."
     }
    ]
   },
@@ -98,8 +98,8 @@
    "duration": 303,
    "levels": [
     {
-     "section": "Section 1",
-     "name": "EERIE WHISPER",
+     "section": "Intro",
+     "name": "EERIE WHISPERING",
      "start": 2,
      "end": 31,
      "intensity": 0.88,
@@ -107,8 +107,8 @@
      "boss": false
     },
     {
-     "section": "Section 2",
-     "name": "CYNICAL CONFESION",
+     "section": "Verse 1",
+     "name": "CYNICAL CONFESSIONS",
      "start": 31,
      "end": 110,
      "intensity": 0.89,
@@ -116,8 +116,8 @@
      "boss": true
     },
     {
-     "section": "Section 3",
-     "name": "BUILDING TENSION",
+     "section": "Pre-Chorus",
+     "name": "FRANTIC DENIAL",
      "start": 110,
      "end": 119,
      "intensity": 0.69,
@@ -125,8 +125,8 @@
      "boss": false
     },
     {
-     "section": "Section 4",
-     "name": "EXPLOSIVE AGGRESSION",
+     "section": "Chorus",
+     "name": "MAXIMAL DISTORTION",
      "start": 119,
      "end": 140,
      "intensity": 0.96,
@@ -134,8 +134,8 @@
      "boss": false
     },
     {
-     "section": "Section 5",
-     "name": "SECTION 5",
+     "section": "Post-Chorus",
+     "name": "OMINOUS STALKING",
      "start": 140,
      "end": 148,
      "intensity": 0.9,
@@ -143,8 +143,8 @@
      "boss": false
     },
     {
-     "section": "Section 6",
-     "name": "SECTION 6",
+     "section": "Verse 2",
+     "name": "CHAOTIC LOOPING",
      "start": 148,
      "end": 228,
      "intensity": 0.47,
@@ -152,8 +152,8 @@
      "boss": false
     },
     {
-     "section": "Section 7",
-     "name": "SECTION 7",
+     "section": "Pre-Chorus",
+     "name": "FRANTIC DENIAL",
      "start": 228,
      "end": 237,
      "intensity": 0.26,
@@ -161,8 +161,8 @@
      "boss": false
     },
     {
-     "section": "Section 8",
-     "name": "SECTION 8",
+     "section": "Chorus",
+     "name": "MAXIMAL DISTORTION",
      "start": 237,
      "end": 297,
      "intensity": 0.3,
@@ -170,8 +170,8 @@
      "boss": false
     },
     {
-     "section": "Section 9",
-     "name": "SECTION 9",
+     "section": "Bridge/Outro Part A",
+     "name": "FINAL REALIZATION",
      "start": 297,
      "end": 303,
      "intensity": 0.22,

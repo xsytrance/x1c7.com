@@ -6,13 +6,13 @@
   {
    "type": "cover",
    "title": "Cairo Still Dancing",
-   "tagline": "Dance defiantly through Cairo's night in this glossy anthem.",
+   "tagline": "Cairo's resilient heartbeat meets 808 bass.",
    "genre": "Egyptian Pop R&B",
    "bookletNo": "F5F"
   },
   {
    "type": "read",
-   "body": "Step into a soundscape where deep 808 bass meets traditional oud and ney flute, crafting a dark yet glossy world. This polished Egyptian pop track at 104 BPM transforms city struggles into rhythmic defiance. Smooth vocal duets layer over rhythmic Arabic chants like 'heyya' and 'yalla,' building from minor key verses to soaring choruses. Here, music becomes protection for the soul against fear and division. From rooftops to the river's edge, millions of hearts beat with fire in their name. It is a cinematic celebration where dance acts as unity, proving that love finds a way even when the sky turns gray.",
+   "body": "This cinematic anthem transforms Cairo's struggles into a rhythmic celebration where music becomes defiance. Blending deep sub-bass with traditional oud and ney flute, the track builds from minor verses to an uplifting chorus of collective power. Smooth male and female duets weave through group chants in Egyptian Arabic, capturing modern nightlife energy without sentimentality. From rooftop views to sea breezes, every bar celebrates resilience and unity against fear. As darkness looms, rhythm grounds us; as doubt rises, a brighter sound emerges. This is more than pop—it is a proud declaration that love never breaks, lifting hearts when they feel like falling.",
    "styleSentence": "A polished, radio-ready Egyptian pop R&B track at 104 BPM that fuses deep 808 sub bass and crisp club drums with traditional instrumentation like oud, qanun, darbuka, and ney flute to create a dark yet glossy soundscape; the arrangement features smooth male/female vocal duets layered with rhythmic group chants in Egyptian Arabic (heyya, yalla) over minor key verses that build into an uplifting chorus, capturing modern Cairo nightlife energy without cheesy sentimentality.",
    "mood": [
     "Resilient",
@@ -35,37 +35,37 @@
     {
      "stem": "lead",
      "name": "LEAD VOX",
-     "bio": "Sings smooth R&B lines that glide over the track's heavy rhythm."
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
     },
     {
      "stem": "back",
      "name": "BACKING VOX",
-     "bio": "Harmonizes in thick layers to fill every gap between notes."
+     "bio": "Weaves harmony layers without losing focus."
     },
     {
      "stem": "drums",
      "name": "DRUMS",
-     "bio": "Keeps the floor shaking with crisp club beats and tight timing."
+     "bio": "Sets the pulse steady through chaos."
     },
     {
      "stem": "perc",
      "name": "PERCUSSION",
-     "bio": "Pounds traditional rhythms on darbuka that drive the dance energy forward."
+     "bio": "Adds traditional flair to modern beats."
     },
     {
      "stem": "bass",
      "name": "BASS",
-     "bio": "Rumbles deep sub frequencies that anchor the entire glossy arrangement."
+     "bio": "Lowers the energy with deep, warm tones."
     },
     {
      "stem": "synth",
      "name": "SYNTH",
-     "bio": "Weaves atmospheric textures to bridge modern electronics with heritage sounds."
+     "bio": "Paints atmospheric textures over minor keys."
     },
     {
      "stem": "other",
      "name": "TEXTURES",
-     "bio": "Scatters ambient details that add depth without cluttering the mix."
+     "bio": "Scatters cultural dust for cinematic depth."
     }
    ]
   },
@@ -81,8 +81,8 @@
    "duration": 260,
    "levels": [
     {
-     "section": "Section 1",
-     "name": "GATHERING STORM",
+     "section": "Intro",
+     "name": "GATHERING SPARKS",
      "start": 21,
      "end": 21,
      "intensity": 0.74,
@@ -90,8 +90,8 @@
      "boss": true
     },
     {
-     "section": "Section 2",
-     "name": "SOARING DEFYANCE",
+     "section": "Chorus (Female Lead)",
+     "name": "SOARING HOPE GATEWAY",
      "start": 21,
      "end": 31,
      "intensity": 0.9,
@@ -99,8 +99,8 @@
      "boss": true
     },
     {
-     "section": "Section 3",
-     "name": "GROUNDED STORYTELLER",
+     "section": "Verse 1 (Male/Female/Pre-Chorus)",
+     "name": "STREET STORY PATH",
      "start": 31,
      "end": 109,
      "intensity": 0.8,
@@ -108,8 +108,8 @@
      "boss": false
     },
     {
-     "section": "Section 4",
-     "name": "EUPHORIC RELEASE",
+     "section": "Chorus (Full)",
+     "name": "COLLECTIVE POWER PULSE",
      "start": 109,
      "end": 170,
      "intensity": 0.72,
@@ -117,8 +117,8 @@
      "boss": true
     },
     {
-     "section": "Section 5",
-     "name": "SPIRITUAL RESOLVE",
+     "section": "Bridge (Group Chant + Verse 2 elements in transcript context)",
+     "name": "BRIDGE (GROUP CHANT + VERSE 2 ELEMENTS IN TRANSCRIPT CONTEXT)",
      "start": 170,
      "end": 193,
      "intensity": 0.4,
@@ -126,8 +126,8 @@
      "boss": false
     },
     {
-     "section": "Section 6",
-     "name": "RAW CULTURAL HEARTBEAT",
+     "section": "Drop / Climax",
+     "name": "EXPLOSIVE PRIDE BLAST",
      "start": 193,
      "end": 211,
      "intensity": 0.3,
@@ -135,8 +135,8 @@
      "boss": false
     },
     {
-     "section": "Section 7",
-     "name": "ENDURING RHYTHM",
+     "section": "Outro",
+     "name": "ENDURING RHYTM FLOW",
      "start": 211,
      "end": 260,
      "intensity": 0.11,

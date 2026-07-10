@@ -1,25 +1,24 @@
 {
- "tagline": "Taste the sweet before it stings.",
- "liner": "This high-octane Dancehall anthem juxtaposes seductive allure with dangerous toxicity. Driven by a sharp Afro-Caribbean riddim at blistering speed, the track features chest-rattling overdriven 808s and piercing siren FX. Sultry female vocals trade rapid-fire call-and-response toasts against raw male delivery, painting a picture of lovers who are as sweet as honey but lethal like venom. It captures the gritty, sweaty energy of a peak-time club night where physical desire clashes with emotional peril under strobe lights.",
- "worldCaption": "A neon-drenched sound system culture explosion blending sultry allure, aggressive toasting, and chaotic feverish desire within a toxic roman",
+ "tagline": "Sweet allure meets lethal heat in this peak-time bashment ba",
+ "liner": "Step into the sweaty grip of a club where desire burns hotter than strobe lights. This anthem blends sultry female toasting with raw male vocals, weaving a narrative of lovers who are as deadly as they are delicious. Feel the chest-rattling 808s shake your floor and let rapid-fire call-and-response patterns build an intoxicating tension. It is not merely music; it is a sensory overload that captures the gritty energy of Dancehall culture at its most electric. Embrace the dangerous attraction, lose control in the drop, and ride out the chaos where heaven looks like hell.",
+ "worldCaption": "A neon-drenched dancefloor where strobe lights meet sticky skin amidst the roar of sound systems blasting high-tempo Afro-Caribbean rhythms ",
  "bios": {
-  "lead": "Sets the sultry tone for every drop.",
-  "back": "Layers depth behind the main vocal hook.",
-  "drums": "Keeps the floor shaking hard and fast.",
-  "perc": "Adds sharp, rhythmic accents to the mix.",
-  "bass": "Delivers chest-rattling low-end heat.",
-  "synth": "Weaves atmospheric textures through the beat.",
-  "other": "Sprinkles gritty grit over the whole vibe."
+  "lead": "Sultry lead voice teasing your soul with rapid-fire delivery.",
+  "back": "Raw male power backing her up in chaotic unison.",
+  "drums": "Sharp riddim keeps the floor shaking without ever missing a beat.",
+  "perc": "Explosive rhythms add texture to every sweaty dance step.",
+  "bass": "Overdriven low-end rattles your chest like a dangerous lover.",
+  "synth": "Cuts through the noise with siren FX and sharp melody lines.",
+  "other": "Gritty layers create an atmosphere of intoxicating sensory overload."
  },
  "levels": {
-  "Section 1": "MISTY ANTICIPATION",
-  "Section 2": "EXPLOSIVE RELEASE",
-  "Section 3": "FEVERISH DESIRE",
-  "Section 4": "HYPNOTIC LOOP",
-  "Section 5": "TENSE WATCH",
-  "Section 6": "BUILDING TENSION",
-  "Section 7": "CHAOTIC PASSION",
-  "Section 8": "UNRESTRAINED CHAOS",
-  "Section 9": "INTOXICATED CONFUSION"
+  "Intro": "MYSTERY ANTICIPATION",
+  "Drop": "EXPLOSIVE RELEASE",
+  "Chorus": "CHAOTIC PASSION",
+  "Post-Chorus": "HYPNOTIC REPETITION",
+  "Verse 1": "TENSE OBSERVATION",
+  "Pre-Chorus": "BUILDING TENSION",
+  "Dancehall Breakdown": "UNRESTRAINED CHAOS",
+  "Verse 2": "INTOXICATED CONFUSION"
  }
 }

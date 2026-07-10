@@ -6,13 +6,13 @@
   {
    "type": "cover",
    "title": "Say It With Your Eyes",
-   "tagline": "Step into the hushed glow of Southern soul.",
+   "tagline": "Sultry Southern R&B whispers in D# major.",
    "genre": "Southern R&B",
    "bookletNo": "F4E"
   },
   {
    "type": "read",
-   "body": "Imagine standing in a dimly lit room where unspoken glances hold more weight than words. This slow-burning D# major track at 123 BPM invites you to close your eyes and feel the dusty, atmospheric intimacy creeping through every breathy syllable. The chopped vocals loop over heavy sub-bass, creating an underground club vibe that feels both distant and immediate. It captures a tense yet hypnotic moment of visual obsession, where a single clean frame freezes time between two souls connected by silence. As the intensity fades into a quiet afterglow, you are left with only the lingering echo of that connection.",
+   "body": "Step into this slow-burning sanctuary of sound, where every note hums a quiet request to be seen. The track unfolds like a hushed conversation in a dimly lit room, dominated by heavy sub-bass and atmospheric synths that wrap around you. Breathless vocals drift over chopped and screwed rhythms, creating an intimate space for unspoken glances and visual obsession. Here, desire speaks without words; the music captures that singular moment when one person stays frozen across the distance while another moves with knowing grace. Let the dusty textures wash away the noise until only your gaze remains.",
    "styleSentence": "A slow-burning D# major track at 123 BPM featuring chopped and screwed vocals over a dusty Southern R&B beat with heavy sub-bass, atmospheric synths, and distant guitar textures that create an underground club vibe.",
    "mood": [
     "sultry, intimate, hushed, hypnotic"
@@ -32,42 +32,42 @@
     {
      "stem": "lead",
      "name": "LEAD VOX",
-     "bio": "Breathes life into every hushed, repetitive note with closeness."
+     "bio": "Breathes longing into every syllable."
     },
     {
      "stem": "back",
      "name": "BACKING VOX",
-     "bio": "Layers warmth beneath the lead voice without overpowering it."
+     "bio": "Weaves shadows around the lead melody."
     },
     {
      "stem": "drums",
      "name": "DRUMS",
-     "bio": "Keeps the floor shaking with a steady, hypnotic pulse."
+     "bio": "Keeps time with dusty Southern precision."
     },
     {
      "stem": "perc",
      "name": "PERCUSSION",
-     "bio": "Adds subtle texture to maintain tension throughout the journey."
+     "bio": "Adds subtle, rhythmic cracks to the beat."
     },
     {
      "stem": "bass",
      "name": "BASS",
-     "bio": "Delivers heavy sub-frequencies that anchor every emotional moment."
+     "bio": "Anchors the floor with heavy sub frequencies."
     },
     {
      "stem": "synth",
      "name": "SYNTH",
-     "bio": "Paints atmospheric skies above the dusty beat and vocals."
+     "bio": "Paints atmospheric clouds in low tones."
     },
     {
      "stem": "other",
      "name": "TEXTURES",
-     "bio": "Weaves distant guitar sounds into a surreal, dimly lit setting."
+     "bio": "Dusts the air with distant guitar haze."
     },
     {
      "stem": "guitar",
      "name": "GUITAR",
-     "bio": "Provides faint textures that drift through the darkened room."
+     "bio": "Provides a faint, echoing resonance."
     }
    ]
   },
@@ -83,8 +83,8 @@
    "duration": 192,
    "levels": [
     {
-     "section": "Section 1",
-     "name": "SHADE RISES",
+     "section": "Intro",
+     "name": "QUANTUM ANTICIPATION",
      "start": 38,
      "end": 38,
      "intensity": 0.79,
@@ -92,8 +92,8 @@
      "boss": false
     },
     {
-     "section": "Section 2",
-     "name": "FOCUS LOCKED IN",
+     "section": "Verse 2",
+     "name": "DISTRACTION GAUNTLET",
      "start": 38,
      "end": 51,
      "intensity": 0.6,
@@ -101,8 +101,8 @@
      "boss": true
     },
     {
-     "section": "Section 3",
-     "name": "DARK ROOM DANCE",
+     "section": "Chorus",
+     "name": "HYPOPTIC ROOM LOOP",
      "start": 51,
      "end": 125,
      "intensity": 0.54,
@@ -110,8 +110,8 @@
      "boss": true
     },
     {
-     "section": "Section 4",
-     "name": "COLD ELEGANCE LOOP",
+     "section": "Verse 2 (Repeat)",
+     "name": "COLD ELEGANCE ZONE",
      "start": 125,
      "end": 145,
      "intensity": 0.22,
@@ -119,8 +119,8 @@
      "boss": false
     },
     {
-     "section": "Section 5",
-     "name": "FREEZE FRAME NOW",
+     "section": "Bridge / Half-time drop intro",
+     "name": "STILLNESS FREEZE FRAME",
      "start": 145,
      "end": 158,
      "intensity": 0.15,
@@ -128,8 +128,8 @@
      "boss": false
     },
     {
-     "section": "Section 6",
-     "name": "QUIET GOODBYE ZONE",
+     "section": "Half-time drop",
+     "name": "FINALITY GRAVITY WELL",
      "start": 158,
      "end": 191,
      "intensity": 0.06,
@@ -137,8 +137,8 @@
      "boss": false
     },
     {
-     "section": "Section 7",
-     "name": "FADE TO AFTERGLOW",
+     "section": "Chorus (Final)",
+     "name": "AFTERGLOW ECHO CHAMBER",
      "start": 191,
      "end": 192,
      "intensity": 0.18,

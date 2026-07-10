@@ -1,20 +1,23 @@
 {
- "tagline": "Cut deep with industrial paranoia.",
- "liner": "This high-energy fusion of early-2000s rap-rock bounce and modern industrial production captures a mid-tempo groove driven by heavy live drums, distorted guitar stabs, sub-bass pressure, and aggressive turntable scratches. The track explores the internalization of paranoia where a dark inner voice acts as a paper cut that wounds from within while manipulating perception of reality. Anxious male rap verses alternate with explosive rock chorus vocals and tense inner-voice whispers to create a journey through mental distortion. Listen closely as self-sabotage manifests, turning quiet thoughts into loud accusations.",
- "worldCaption": "Navigate the glitched landscape where shadow selves project paranoia onto every silent thought in this chaotic industrial odyssey of psychol",
+ "tagline": "Paper That Cut You: Internalize The Noise.",
+ "liner": "Step into a world where paranoia becomes your own worst enemy. This track fuses early-2000s rap-rock bounce with modern industrial production to create a mid-tempo groove driven by heavy live drums, distorted guitar stabs, and sub-bass pressure. Aggressive turntable scratches glitch out against pitch drops as the narrator battles an inner voice that wounds from within. The journey moves from eerie whispers of self-dimmed reality to explosive rock aggression where you confront the shadow at your back. It is a psychological warfare anthem about teaching fear to lie and breathing right under someone's skin, proving that sometimes the darkest voices are the ones we invited in ourselves.",
+ "worldCaption": "A glitched industrial wasteland where shadows spin inside static minds amidst heavy bass pressure and distorted guitar stabs.",
  "bios": {
-  "lead": "Guides the voice through fear and static noise.",
-  "drums": "Keeps the floor shaking. Never misses a downbeat.",
-  "perc": "Texture in the pocket, always moving.",
-  "bass": "The low end you feel in your chest.",
-  "synth": "Paints the sky behind the words.",
-  "other": "Everything you feel but can't name.",
-  "guitar": "Strings with an attitude."
+  "lead": "Channels anxious male rap verses with explosive rock chorus vocals.",
+  "drums": "Keeps the floor shaking without ever missing a downbeat.",
+  "perc": "Delivers chaotic looping patterns that drive frantic denial forward.",
+  "bass": "Applies sub-bass pressure deep inside every thought and feeling.",
+  "synth": "Generates glitch edits and pitch drops for mental distortion effects.",
+  "other": "Layers aggressive scratches to create a paranoid industrial atmosphere.",
+  "guitar": "Dismantles calm with distorted stabs that cut like paper."
  },
  "levels": {
-  "Section 1": "EERIE WHISPER",
-  "Section 2": "CYNICAL CONFESION",
-  "Section 3": "BUILDING TENSION",
-  "Section 4": "EXPLOSIVE AGGRESSION"
+  "Intro": "EERIE WHISPERING",
+  "Verse 1": "CYNICAL CONFESSIONS",
+  "Pre-Chorus": "FRANTIC DENIAL",
+  "Chorus": "MAXIMAL DISTORTION",
+  "Post-Chorus": "OMINOUS STALKING",
+  "Verse 2": "CHAOTIC LOOPING",
+  "Bridge/Outro Part A": "FINAL REALIZATION"
  }
 }

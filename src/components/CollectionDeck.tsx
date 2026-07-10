@@ -12,6 +12,7 @@ import { usePreview } from "@/lib/usePreview";
 import { detectLite } from "@/lib/perf";
 import ShareButton from "@/components/ShareButton";
 import Booklet from "@/components/Booklet";
+import { suppressTakeoverFor } from "@/components/CinematicLyrics";
 
 const PREVIEW_LEN = 20;
 
@@ -92,20 +93,18 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
     return () => io.disconnect();
   }, [deck, tracks, preview]);
 
+  // Card taps never launch the song — first tap previews the drop, tap again
+  // stops it. Playing is always an explicit button on the centered card.
   const tapCard = useCallback((t: Track) => {
     if (t.id !== activeId) {
       // side card — snap it to center; snap handler will preview if armed
       scrollerRef.current?.querySelector(`[data-track-id="${CSS.escape(t.id)}"]`)?.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
       return;
     }
-    if (preview.state.id === t.id) {
-      preview.stop(false);
-      onPlay(t);
-      return;
-    }
+    if (preview.state.id === t.id) { preview.stop(); return; }
     armedRef.current = true;
     void preview.start(t);
-  }, [activeId, preview, onPlay]);
+  }, [activeId, preview]);
 
   // auto-stop preview after PREVIEW_LEN
   useEffect(() => {
@@ -157,7 +156,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                 animate={{ scale: isActive ? 1 : 0.92, opacity: isActive ? 1 : 0.55 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 style={{ boxShadow: isActive ? `0 20px 60px -18px ${p.accent}55` : "0 10px 30px -14px #000c" }}
-                aria-label={`${t.title} — tap to preview, tap again to play`}
+                aria-label={`${t.title} — tap to hear the drop, tap again to stop`}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -167,8 +166,9 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                 />
                 <ProgressRing active={isPreviewing} getTime={preview.getTime} startAt={preview.state.startAt} />
                 {isActive && !isPreviewing && (
-                  <div className="absolute bottom-3 right-3 flex h-16 w-16 items-center justify-center rounded-full bg-black/60 backdrop-blur-sm">
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z" /></svg>
+                  <div className="absolute bottom-3 right-3 flex h-16 w-16 items-center justify-center rounded-full bg-black/60 backdrop-blur-sm"
+                    title="hear the drop">
+                    <span className="text-2xl">⚡</span>
                   </div>
                 )}
               </motion.button>
@@ -189,12 +189,29 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                   </span>
                 </div>
                 <h3 className="mt-1 truncate font-display text-xl text-white">{t.title}</h3>
-                {isPreviewing && (
-                  <button onClick={() => { preview.stop(false); onPlay(t); }}
-                    className="mt-2 w-full rounded-sm py-2.5 text-center font-mono text-sm tracking-[0.16em] text-black"
-                    style={{ background: p.accent }}>
-                    ▶ PLAY FULL TRACK
-                  </button>
+                {/* the actions live on the centered card — playing is always explicit */}
+                {isActive && (
+                  <div className="mt-2 flex gap-2">
+                    {canPerform(t) ? (
+                      <>
+                        <button onClick={() => { preview.stop(false); onPlay(t); }}
+                          className="flex-1 rounded-sm py-2.5 text-center font-mono text-sm tracking-[0.16em] text-black"
+                          style={{ background: p.accent }}>
+                          🪐 START THE SHOW
+                        </button>
+                        <button onClick={() => { preview.stop(false); suppressTakeoverFor(t.id); onPlay(t); }}
+                          className="rounded-sm border border-white/20 px-3 py-2.5 font-mono text-xs tracking-[0.14em] text-white/70">
+                          ▶ JUST PLAY
+                        </button>
+                      </>
+                    ) : (
+                      <button onClick={() => { preview.stop(false); onPlay(t); }}
+                        className="flex-1 rounded-sm py-2.5 text-center font-mono text-sm tracking-[0.16em] text-black"
+                        style={{ background: p.accent }}>
+                        ▶ PLAY FULL TRACK
+                      </button>
+                    )}
+                  </div>
                 )}
               </div>
             </div>

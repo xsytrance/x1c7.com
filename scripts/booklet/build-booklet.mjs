@@ -222,8 +222,10 @@ const pages = [
   { type: "read", body: copy.liner, styleSentence: p.identity?.styleSentence ?? null, mood: Array.isArray(p.identity?.mood) ? p.identity.mood : [p.identity?.mood].filter(Boolean) },
   ...(hasLyrics
     ? [{ type: "lyrics", official: !!p.lyrics?.official, language: p.lyrics?.language ?? null, text: p.lyrics.text }]
-    : [{ ...worldPage, caption: "AN INSTRUMENTAL TRANSMISSION — THE WORLD SPEAKS FOR ITSELF" }]),
-  ...(art.length ? [worldPage] : []),
+    : art.length
+      ? [{ ...worldPage, caption: "AN INSTRUMENTAL TRANSMISSION — THE WORLD SPEAKS FOR ITSELF" }]
+      : []),
+  ...(hasLyrics && art.length ? [worldPage] : []),
   ...(stems.length ? [{ type: "band", approx: !!p.show?.performs?.approx, vocalStyle: p.identity?.vocalStyle ?? null, members: stems.map((s) => ({ stem: s, name: STEM_LABEL[s] ?? s.toUpperCase(), bio: copy.bios[s] ?? null })) }] : []),
   { type: "howto", performs: stems.length > 0 || hasLyrics, dynamicActs: dp?.acts?.length ?? 0, wordFx: dp ? Object.keys(dp.words ?? {}).length : 0, stems: stems.length },
   ...(levels.length > 1 ? [{ type: "map", duration: dur ? Math.round(dur) : null, levels }] : []),

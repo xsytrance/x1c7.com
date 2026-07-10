@@ -80,7 +80,8 @@ function PageBody({ page, slug, accent }: { page: BookletPage; slug: string; acc
           <div className="mt-3 grid flex-1 grid-cols-2 content-start gap-2">
             {page.art.slice(0, 6).map((u) => (
               /* eslint-disable-next-line @next/next/no-img-element */
-              <img key={u} src={u} alt="" loading="lazy" className="aspect-square w-full rounded-md object-cover" />
+              <img key={u} src={u} alt="" loading="lazy" className="aspect-square w-full rounded-md object-cover"
+                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }} />
             ))}
           </div>
           {page.caption ? <p className="mt-3 text-center font-mono text-[10px] uppercase leading-5 tracking-[0.18em] text-white/45">{page.caption}</p> : null}
@@ -96,7 +97,7 @@ function PageBody({ page, slug, accent }: { page: BookletPage; slug: string; acc
                 <InstrumentGlyph stem={m.stem as StemName} size={30} />
                 <div className="min-w-0">
                   <p className="font-mono text-[10px] tracking-[0.2em] text-white">{m.name}</p>
-                  {m.bio ? <p className="truncate text-[11px] leading-5 text-white/55">{m.bio}</p> : null}
+                  {m.bio ? <p className="line-clamp-2 text-[11px] leading-5 text-white/55">{m.bio}</p> : null}
                 </div>
               </div>
             ))}
@@ -222,6 +223,14 @@ const Booklet = forwardRef<BookletHandle, {
     return () => window.clearTimeout(h);
   }, [hint]);
 
+  // the page behind the book must not scroll while reading
+  useEffect(() => {
+    if (!open) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, [open]);
+
   const pages = useMemo(() => (data ? paginate(data.pages) : []), [data]);
   const turn = useCallback((d: number) => {
     setDir(d);
@@ -254,6 +263,7 @@ const Booklet = forwardRef<BookletHandle, {
       <AnimatePresence>
         {open ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+            role="dialog" aria-modal="true" aria-label={`${data.id} booklet`}
             className="fixed inset-0 z-[80] flex items-center justify-center bg-black/85 backdrop-blur-sm"
             onClick={() => setOpen(false)}>
             <motion.div initial={{ scale: 0.92, y: 14 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0 }}

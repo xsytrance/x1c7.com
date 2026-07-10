@@ -334,7 +334,8 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
             onClick={() => { pause(); onClose(); }}
             aria-label="End the show — stops the music"
-            className="absolute bottom-4 right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-red-400/70 hover:text-red-200">
+            style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
+            className="absolute right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-red-400/70 hover:text-red-200">
             ✕ <span>End show</span>
           </motion.button>
 

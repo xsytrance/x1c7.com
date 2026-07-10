@@ -2,14 +2,18 @@
 // ═══════════════════════════════════════════════════════════════════════════
 // THE BOOKLET BATCH — an insert for the whole catalog.
 //
-//   node scripts/booklet/batch-booklets.mjs [--dry] [--force] [--only s,s]
-//                                           [--include-hidden] [--limit N]
+//   node scripts/booklet/batch-booklets.mjs [--dry] [--force] [--refresh]
+//                                           [--only s,s] [--include-hidden] [--limit N]
 //
 // Mirrors batch-dossiers.mjs: walks the song-analysis targets.json snapshot,
-// skips tracks without a profile and (unless --force) tracks whose booklet is
-// already on R2 — resume-safe, rerun after any crash. Serial by design (the
-// LLM is the bottleneck); failures never stop the batch. Journal:
+// skips tracks without a profile and (unless --force/--refresh) tracks whose
+// booklet is already on R2 — resume-safe, rerun after any crash. Serial by
+// design (the LLM is the bottleneck); failures never stop the batch. Journal:
 // scripts/booklet/batch-log.jsonl. Pre-flight: warm qwen3.5 (keep_alive 2h).
+//
+// --refresh rebuilds + republishes EVERY booklet from its cached copy (no
+// LLM) — run it after the nightly art top-up grows new planet galleries so
+// world pages appear on tracks that had no art yet.
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { execFileSync } from "node:child_process";
@@ -37,7 +41,7 @@ let done = 0, skipped = [], failed = [];
 for (const t of tracks) {
   if (done >= LIMIT) break;
   if (!existsSync(join(PROFILES, t.id, "profile.json"))) { skipped.push([t.id, "no profile"]); continue; }
-  if (!flag("--force")) {
+  if (!flag("--force") && !flag("--refresh")) {
     const head = await fetch(`${PUB}/planets/${t.id}/booklet.json`, { method: "HEAD" }).catch(() => null);
     if (head?.ok) { skipped.push([t.id, "published"]); continue; }
   }

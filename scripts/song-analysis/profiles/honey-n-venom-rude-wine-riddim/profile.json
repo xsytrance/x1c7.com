@@ -79,63 +79,72 @@
         "emotion": "Mysterious Anticipation",
         "intensity": 0.76,
         "colorHintHex": "#FFD700",
-        "start": 1.55
+        "start": 1.55,
+        "name": "Intro"
       },
       {
         "sectionName": "Drop",
         "emotion": "Explosive Release",
         "intensity": 0.79,
         "colorHintHex": "#C5A065",
-        "start": 12.36
+        "start": 12.36,
+        "name": "Drop"
       },
       {
         "sectionName": "Chorus",
         "emotion": "Feverish Desire",
         "intensity": 0.77,
         "colorHintHex": "#FF4C23",
-        "start": 25.28
+        "start": 25.28,
+        "name": "Chorus"
       },
       {
         "sectionName": "Post-Chorus",
         "emotion": "Hypnotic Repetition",
         "intensity": 0.96,
         "colorHintHex": "#D1BFA9",
-        "start": 42.67
+        "start": 42.67,
+        "name": "Post-Chorus"
       },
       {
         "sectionName": "Verse 1",
         "emotion": "Tense Observation",
         "intensity": 0.71,
         "colorHintHex": "#2B1A16",
-        "start": 51.4
+        "start": 51.4,
+        "name": "Verse 1"
       },
       {
         "sectionName": "Pre-Chorus",
         "emotion": "Building Tension",
         "intensity": 0.66,
         "colorHintHex": "#FFD700",
-        "start": 85.16
+        "start": 85.16,
+        "name": "Pre-Chorus"
       },
       {
         "sectionName": "Chorus",
         "emotion": "Chaotic Passion",
         "intensity": 0.6,
         "colorHintHex": "#C5A065",
-        "start": 90.02
+        "start": 90.02,
+        "name": "Chorus"
       },
       {
         "sectionName": "Dancehall Breakdown",
         "emotion": "Unrestrained Chaos",
         "intensity": 0.28,
         "colorHintHex": "#FF4C23",
-        "start": 147.42
+        "start": 147.42,
+        "name": "Dancehall Breakdown"
       },
       {
         "sectionName": "Verse 2",
         "emotion": "Intoxicated Confusion",
         "intensity": 0.26,
         "colorHintHex": "#D1BFA9",
-        "start": 160.2
+        "start": 160.2,
+        "name": "Verse 2"
       }
     ],
     "keywords": [
@@ -270,7 +279,7 @@
           "end": 3.9
         }
       ],
-      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+      "hint": "cuts \u2192 blackout/cut-mode moments; risers \u2192 supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
     },
     "performs": {
       "stems": [
