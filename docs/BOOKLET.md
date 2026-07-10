@@ -82,11 +82,20 @@ node scripts/booklet/batch-booklets.mjs   # mirror of batch-dossiers.mjs:
   and the dossier), rendered only after `booklet.json` 200s. Reuses
   `StemGlyphs` for band portraits and the dossier's Camelot/tone label logic
   (import from `SonicDossier.tsx` — keep exports in sync).
-- Phase 2 mounts: the shelf case panel on `/music`; a print/PDF export
-  (`booklet-print.mjs`, sharp compositor — pattern proven by `make-og.mjs`)
-  which is also the press-kit one-sheet from the dossier doc's ideas list.
+- **Shipped mounts (2026-07-09)**: the `/t` share page (button + tap the
+  cover art, via `BookletHandle.open()`); the `/music` shelf (pulled case
+  art + 📖 INSERT chip in the action row); the deck (chip on the centered
+  card — card taps keep their preview/play meaning). The trigger takes
+  `sizing`/`label` props, ShareButton convention.
+- Phase 2: a print/PDF export (`booklet-print.mjs`, sharp compositor —
+  pattern proven by `make-og.mjs`) which is also the press-kit one-sheet
+  from the dossier doc's ideas list.
 
 ## Rollout
+
+**STATUS: SHIPPED 2026-07-09 — 54/54 booklets live** (batch ~9s/song on warm
+qwen3.5; 4 unnamed-section crashes fixed with a `Section N` fallback and
+rebuilt). The steps below are kept as the pattern for future catalogs.
 
 1. **Specimen**: Different This Summer (the dossier's first specimen too).
    Build → publish → eyeball `/t/different-this-summer` on desktop + phone.

@@ -138,6 +138,7 @@ node scripts/stem-analysis/publish-stems.mjs --stems "assets/suno/stems/<slug>" 
 node scripts/song-analysis/apply-shows.mjs --only <slug>
 node scripts/song-analysis/dynamic-plus.mjs --only <slug>
 node scripts/song-analysis/apply-dynamic-plus.mjs --only <slug>
+node scripts/booklet/build-booklet.mjs --id <slug> --publish   # THE BOOKLET (after dynamic-plus so act counts land)
 # cover: engine.mjs / make-web-assets.mjs / make-og.mjs, all --only <slug>
 ```
 

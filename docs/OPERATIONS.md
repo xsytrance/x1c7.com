@@ -15,6 +15,8 @@ and the R2 storage. Deep-dives: [`EFFECTS-AND-LEXICON.md`](EFFECTS-AND-LEXICON.m
 music/         all 47 songs
 covers/        all album art
 planets/       planet backdrop art  +  <slug>/gallery/ (top-up art)  +  <slug>/gallery.json
+               + <slug>/profile.json (Sonic Dossier)  +  <slug>/booklet.json (THE BOOKLET)
+               + <slug>/show.json (word timings + LRC + analysis backfill)
 lexicon/       per-word generated art (lexicon/<word>/sN-n.webp)
 lexicon.json   the hosted word shelf (words · legos · imagery · image URLs)
 ```

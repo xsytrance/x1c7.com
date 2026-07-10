@@ -37,6 +37,15 @@ were unnamed sections hitting the copy validator — normalized
 instrumental + one Spanish track fetched from R2 and content-checked;
 54/54 HEAD 200; live bundle on x1c7.com serves the button.
 
+**Follow-ups same session:** tapping the collector cover on `/t` opens the
+booklet (`BookletHandle.open()` via forwardRef); the insert reached `/music`
+— pulled case art + 📖 INSERT chip on the shelf, chip on the deck's centered
+card, spine/card taps untouched (trigger takes `sizing`/`label`, ShareButton
+convention; booklet.json fetched only for the focused song). Both deploys
+verified live in the served bundle. Ops docs updated: booklet in the R2
+bucket map (OPERATIONS.md) + the new-song onboard runbook (catalog rollout
+doc) + BOOKLET.md marked shipped.
+
 ---
 
 ## 2026-07-07 — Phase 2.4 SHIPPED: vertical/social frames (kinetica) + engine fix
