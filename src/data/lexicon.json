@@ -1,7 +1,7 @@
 {
   "version": 1,
   "galaxy": "xsytrance-canon",
-  "generatedAt": "2026-07-07T22:53:22.436Z",
+  "generatedAt": "2026-07-10T05:17:02.838Z",
   "entries": {
     "circus": {
       "word": "circus",
@@ -43,10 +43,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -99,10 +99,10 @@
               "blackout"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -150,10 +150,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -200,10 +200,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -251,10 +251,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -301,10 +301,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -356,10 +356,10 @@
               "flare"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "bt"
       ],
@@ -412,10 +412,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cc"
       ],
@@ -466,10 +466,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cc"
       ],
@@ -518,7 +518,7 @@
               "flare"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Imaginative",
@@ -557,10 +557,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "cc",
         "seoul"
@@ -610,10 +610,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cc"
       ],
@@ -662,10 +662,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cc"
       ],
@@ -716,7 +716,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Optimism",
@@ -754,10 +754,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "cc",
         "dts"
@@ -807,10 +807,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cc"
       ],
@@ -859,10 +859,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -909,10 +909,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -964,10 +964,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -1013,10 +1013,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -1063,10 +1063,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -1114,10 +1114,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -1165,10 +1165,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "cs"
       ],
@@ -1215,10 +1215,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "dts"
       ],
@@ -1266,7 +1266,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Determined",
@@ -1304,10 +1304,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "dts",
         "still"
@@ -1359,10 +1359,10 @@
               "flare"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "dts"
       ],
@@ -1411,10 +1411,10 @@
               "blackout"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "dts"
       ],
@@ -1461,10 +1461,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "dts"
       ],
@@ -1511,10 +1511,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "dts"
       ],
@@ -1563,7 +1563,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Playful",
@@ -1601,10 +1601,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "fast",
         "smb"
@@ -1654,10 +1654,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1705,10 +1705,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1755,10 +1755,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1805,10 +1805,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1858,10 +1858,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1910,10 +1910,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "fast"
       ],
@@ -1961,10 +1961,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2012,10 +2012,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2064,10 +2064,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2117,10 +2117,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2166,10 +2166,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2216,10 +2216,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2267,10 +2267,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "gente"
       ],
@@ -2322,10 +2322,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2374,7 +2374,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Comforted",
@@ -2412,10 +2412,10 @@
               "flicker"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "paper",
         "still"
@@ -2468,10 +2468,10 @@
               "flicker"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2522,10 +2522,10 @@
               "flicker"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2573,10 +2573,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2623,10 +2623,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2675,10 +2675,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "paper"
       ],
@@ -2729,10 +2729,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -2779,10 +2779,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -2829,10 +2829,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -2879,10 +2879,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -2930,10 +2930,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -2982,7 +2982,7 @@
               "flicker"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Devotion",
@@ -3019,7 +3019,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Intimate",
@@ -3056,10 +3056,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 6,
+      "freq": 9,
       "sources": [
         "quit",
         "seoul",
@@ -3109,10 +3109,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "quit"
       ],
@@ -3163,10 +3163,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3213,10 +3213,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3265,10 +3265,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3320,10 +3320,10 @@
               "flicker"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3370,10 +3370,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3420,10 +3420,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "resp"
       ],
@@ -3476,10 +3476,10 @@
               "flare"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "seoul"
       ],
@@ -3528,10 +3528,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "seoul"
       ],
@@ -3578,10 +3578,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "seoul"
       ],
@@ -3628,10 +3628,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "seoul"
       ],
@@ -3678,10 +3678,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "smb"
       ],
@@ -3730,10 +3730,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "smb"
       ],
@@ -3780,10 +3780,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "smb"
       ],
@@ -3831,10 +3831,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "smb"
       ],
@@ -3882,10 +3882,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "smb"
       ],
@@ -3932,10 +3932,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "still"
       ],
@@ -3982,10 +3982,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "still"
       ],
@@ -4031,10 +4031,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "still"
       ],
@@ -4086,10 +4086,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "still"
       ],
@@ -4138,10 +4138,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4188,10 +4188,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4239,10 +4239,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4294,10 +4294,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4344,10 +4344,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4394,10 +4394,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "vg"
       ],
@@ -4446,7 +4446,7 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         },
         {
           "gloss": "Covetous",
@@ -4487,10 +4487,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 4,
+      "freq": 6,
       "sources": [
         "vg",
         "wr"
@@ -4543,10 +4543,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4599,10 +4599,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4651,10 +4651,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4706,10 +4706,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4758,10 +4758,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4812,10 +4812,10 @@
               "godrays"
             ]
           },
-          "score": 2
+          "score": 3
         }
       ],
-      "freq": 2,
+      "freq": 3,
       "sources": [
         "wr"
       ],
@@ -4826,6 +4826,6 @@
     "words": 87,
     "senses": 95,
     "images": 190,
-    "filled": 87
+    "filled": 0
   }
 }
