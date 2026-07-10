@@ -64,7 +64,12 @@ function coverItem(track: Record<string, unknown>, rec: ManifestRecord | undefin
     featured: track.featured,
     hidden: track.hidden,
     theme: track.theme,
-    original: track.cover,
+    // The UNTOUCHED source art (R2 covers/ root, same file the engine reads
+    // from originals/). track.cover is the finished collector print for most
+    // tracks — feeding that to a preview nests the frame inside itself.
+    original: rec?.coverFile
+      ? `${PUB}/covers/${encodeURIComponent(String(rec.coverFile))}`
+      : (track.cover as string | null),
     record: rec ?? null,
     paletteKey: forced && COLLECTOR_PALETTES[forced] ? forced : auto.key,
     autoPaletteKey: auto.key,
