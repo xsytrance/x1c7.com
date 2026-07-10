@@ -1,45 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 21,
-   "reactor": "handwriting",
-   "why": ""
+   "start": 46,
+   "end": 58,
+   "label": "THE SILENT LANGUAGE",
+   "why": "Pre-chorus tension builds into the cinematic release of desire at the first chorus drop."
   },
   {
-   "start": 58,
-   "end": 73,
-   "reactor": "fireworks",
-   "why": ""
+   "start": 120,
+   "end": 139,
+   "label": "GLOBAL RESONANCE",
+   "why": "Verse 2 connects global rhythms to personal devotion before the instrumental breakdown."
   },
   {
-   "start": 104,
-   "end": 126,
-   "stemSpot": {
-    "solo": [
-     "strings"
-    ],
-    "label": "THE STRINGS SPEAK"
-   },
-   "why": ""
-  },
-  {
-   "start": 193,
-   "end": 218,
-   "reactor": "orbit",
-   "why": ""
+   "start": 185,
+   "end": 210,
+   "label": "SPIRITUAL SURRENDER",
+   "why": "The final drop and outro represent raw sub-bass driven surrender and lasting intimacy."
   }
  ],
  "words": {
-  "closer": "glitch",
-  "heartbeat": "pulse",
-  "silence": "freeze",
-  "vibration": "shimmer",
-  "devour": "slam",
-  "body": "bloom",
-  "maybe": "redact",
-  "tighter": "melt",
-  "touch me": "bleed"
+  "same heartbeat": "pulse",
+  "closer...": "rise",
+  "don't say maybe": "shatter",
+  "no translation on this road": "dissolve",
+  "just the music": "glitch",
+  "and the vibration": "bloom"
  }
 }

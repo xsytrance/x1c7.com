@@ -1,45 +1,26 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 20,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "RAW BEAT LOOP ONLY"
-   },
-   "why": ""
+   "start": 123,
+   "end": 145,
+   "label": "VOID BECOMES GOLD",
+   "why": "The lyric 'Now I beat on the dark till the whole thing glow' marks the pivotal transformat"
   },
   {
-   "start": 46,
-   "end": 70,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "lead"
-    ],
-    "label": "SOUL STRINGS & MELODY"
-   },
-   "why": ""
+   "start": 198,
+   "end": 220,
+   "label": "CATHARSIS & HEALING",
+   "why": "The Post-Chorus intensity drops to a reflective cathartic release; this act visualizes the"
   },
   {
-   "start": 96,
-   "end": 120,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "FINAL BEAT BREAKDOWN"
-   },
-   "why": ""
+   "start": 243,
+   "end": 265,
+   "label": "ULTIMATE VICTORY",
+   "why": "The Drop section represents unshakeable golden confidence and ultimate triumph; this is th"
   }
  ],
  "words": {
-  "void": "dissolve",
   "gold": "shimmer",
   "fire": "burn",
   "scars": "carve",

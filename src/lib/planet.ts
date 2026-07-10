@@ -87,23 +87,19 @@ export function resolveWordEffect(
  * `words` extends the text-effect overrides with keyword picks. Authored
  * offline by scripts/song-analysis/dynamic-plus.mjs.
  *
- * Playback renders acts as VISUAL moments only — the backdrop holds &
- * brightens for the window, and stemSpot acts show their label chip. Nothing
- * changes the audio, the stem mix, or the Lab/Reactor mode anymore (the
- * original auto-takeovers were retired 2026-07-10 at the owner's call); the
- * reactor/stemSpot fields survive as authored data. */
+ * Acts are VISUAL moments: the backdrop holds & brightens for the window and
+ * the act's billing chip shows. Nothing touches the audio, the stem mix, or
+ * the Lab/Reactor mode — v2 dropped those fields from the data entirely. */
 export interface DynamicPlusAct {
   start: number; // seconds
   end: number;
-  /** authored as a Reactor pick — now just marks the window as a moment */
-  reactor?: string;
-  /** the billed stems + stage label; playback uses only the label (chip) */
-  stemSpot?: { solo: StemName[]; label: string };
+  /** short marquee billing shown as the moment chip (≤22 chars, uppercase) */
+  label?: string;
   /** the choreographer's one-line reason — debugging + Studio display */
   why?: string;
 }
 export interface PlanetDynamicPlus {
-  v: 1;
+  v: 2;
   acts?: DynamicPlusAct[];
   /** lowercased word -> text effect; merged under effects.overrides at pass 6 */
   words?: Record<string, TextEffect>;

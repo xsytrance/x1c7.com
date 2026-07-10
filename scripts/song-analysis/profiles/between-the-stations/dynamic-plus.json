@@ -1,27 +1,29 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 45,
-   "end": 70,
-   "reactor": "fireworks",
-   "why": ""
+   "start": 58,
+   "end": 73,
+   "label": "BREATHE AGAIN",
+   "why": "The first major release of tension after the build-up; the chorus hook 'I can breathe' is "
   },
   {
-   "start": 105,
-   "end": 130,
-   "reactor": "handwriting",
-   "why": "Instrumental break window allows isolation of the lead vocal for an intimate, confessional"
+   "start": 147,
+   "end": 162,
+   "label": "UNDERGROUND SANCTUARY",
+   "why": "Verse 2 marks a shift from aggressive pursuit to internal quietude and acceptance of the '"
   }
  ],
  "words": {
-  "breathe": "pulse",
-  "tunnel": "glitch",
-  "fading": "dissolve",
-  "chasing": "shatter",
-  "bloom": "neon",
-  "rise": "wave",
-  "fall": "redact",
-  "echo": "whisper"
+  "i can breathe again": "pulse",
+  "under every sound": "glitch",
+  "waking up brand new": "bloom",
+  "lights keep flashing": "neon",
+  "hearts keep passing": "shatter",
+  "breathe in / breathe out": "liquid",
+  "lost but i'm found": "rise",
+  "i'm here right now": "freeze",
+  "dusty breakbeat shuffle": "tremor",
+  "fading": "redact"
  }
 }

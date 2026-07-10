@@ -1,47 +1,32 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 28,
-   "end": 36,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "BASS & SYNTH GROOVE ON"
-   },
-   "why": "Drum-cut window showcasing the foundational low-end and atmospheric synth textures driving"
+   "start": 45,
+   "end": 62,
+   "label": "UNWAVERING ASSURANCE",
+   "why": "The primary Hook establishes the song's core theme; 'steady' and 'solid' map to the confid"
   },
   {
-   "start": 126,
-   "end": 134,
-   "stemSpot": {
-    "solo": [
-     "keys"
-    ],
-    "label": "THE PIANO SPEAK"
-   },
-   "why": "Drum-cut window highlighting the melodic keyboard counterpoint during a moment of flirty d"
+   "start": 129,
+   "end": 154,
+   "label": "FLIRTY DUALITY",
+   "why": "Verse 2 introduces a shift in tone to 'Flirty Duality'; the quiet window at 141-142s allow"
   },
   {
-   "start": 178,
-   "end": 203,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "perc"
-    ],
-    "label": "LEAD & PERC DANCE"
-   },
-   "why": "Extended drum-cut window allowing the lead vocal and percussion to drive a high-energy fin"
+   "start": 230,
+   "end": 251,
+   "label": "DEVOTED COMMITMENT",
+   "why": "The Bridge is the emotional peak of commitment ('Devoted Commitment'); 'rise' and 'bloom' "
   }
  ],
  "words": {
-  "cautious": "glitch",
-  "secretly": "dissolve",
-  "solid": "burn",
-  "responsible": "pulse",
-  "somebody": "bloom"
+  "steady": "pulse",
+  "solid": "glitch",
+  "secretly": "whisper",
+  "naughty": "neon",
+  "rise": "bloom",
+  "echo": "fizz",
+  "cautious": "shimmer"
  }
 }

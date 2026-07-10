@@ -1,40 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 16,
-   "end": 24,
-   "reactor": "fireworks",
-   "why": "Captures the climactic warmth of the first chorus where bodies unite in a 'wave'; firework"
+   "start": 59,
+   "end": 74,
+   "label": "SOULS SYNC UP",
+   "why": "Captures the emotional lift and rhythmic drive of Verse 2 where 'Heartbeats sync' connects"
   },
   {
-   "start": 38,
-   "end": 48,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "bass"
-    ],
-    "label": "SOUL & GROOVE ONLY"
-   },
-   "why": "Utilizes the drum-cut window (38-45s) to isolate the lead melody and bass, creating an int"
-  },
-  {
-   "start": 106,
-   "end": 114,
-   "stemSpot": {
-    "solo": [
-     "lead"
-    ],
-    "label": "SECRET LEAD HUME"
-   },
-   "why": "Ends on the outro's quiet acceptance; soloing the lead synth creates a lingering, floaty a"
+   "start": 95,
+   "end": 108,
+   "label": "DREAMING OF DAWN",
+   "why": "Highlights the quiet acceptance and visual clarity as lyrics mention dawn getting crisper."
   }
  ],
  "words": {
   "heartbeat": "pulse",
-  "wave": "bloom",
-  "heat": "shimmer",
-  "whisper": "handwrite"
+  "lowlights": "neon",
+  "wave": "glitch",
+  "heat": "melt",
+  "whisper": "shimmer",
+  "crispier": "type"
  }
 }

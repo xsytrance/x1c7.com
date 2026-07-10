@@ -1,41 +1,26 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 30,
-   "end": 55,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "drums"
-    ],
-    "label": "THE PRESSURE RISES"
-   },
-   "why": "Captures the heavy burden turning into defiance during Verse 1; isolates the rhythmic driv"
+   "start": 80,
+   "end": 105,
+   "label": "EL ÉXODO DE ORO",
+   "why": "The Bridge represents the philosophical epiphany and total mastery of self; this act captu"
   },
   {
-   "start": 67,
-   "end": 92,
-   "reactor": "fireworks",
-   "why": "Matches the soaring vocal release of the FIRST CHORUS ('la presión hace oro'); captures th"
-  },
-  {
-   "start": 108,
-   "end": 133,
-   "stemSpot": {
-    "solo": [
-     "lead"
-    ],
-    "label": "THE BRASS CROWN"
-   },
-   "why": "Highlights the brass-heavy climax of the Drop; isolates the 'war call' sounds and hardened"
+   "start": 240,
+   "end": 265,
+   "label": "CORAZÓN DE ORO",
+   "why": "A later section (Verse/Chorus transition) highlighting the final realization of inner wort"
   }
  ],
  "words": {
   "presión": "slam",
   "oro": "bloom",
   "fuego": "burn",
-  "brass": "pulse",
-  "scars": "glitch"
+  "vacío": "dissolve",
+  "brass": "shimmer",
+  "corazón": "pulse",
+  "scars": "carve"
  }
 }

@@ -1,25 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 42,
-   "end": 60,
-   "reactor": "orbit",
-   "why": "The pre-chorus builds tension like crashing waves; 'orbit' captures the hypnotic rising os"
+   "start": 12,
+   "end": 34,
+   "label": "CHAOS IGNITES",
+   "why": "The first major visual escalation occurs here with the 'Chorus' section. The lyrics explic"
   },
   {
-   "start": 160,
-   "end": 185,
-   "reactor": "downpour",
-   "why": "The bridge brings melancholic resignation and cold logic; 'downpour' evokes the rain, clea"
+   "start": 104,
+   "end": 126,
+   "label": "THE GHOST DANCES",
+   "why": "The second act targets the bridge/pre-drop section where the protagonist admits to 'Dancin"
+  },
+  {
+   "start": 201,
+   "end": 226,
+   "label": "PURE SONIC CHAOS",
+   "why": "The finale act captures the 'Drop' and subsequent outro. The instruction specifies 'Pure s"
   }
  ],
  "words": {
-  "crazy": "shatter",
+  "crazy": "glitch",
   "hate": "burn",
   "need": "bleed",
-  "ghost": "echo",
-  "poison": "glitch",
-  "chaos": "dissolve"
+  "ghost": "shatter",
+  "poison": "liquid",
+  "chaos": "redact"
  }
 }

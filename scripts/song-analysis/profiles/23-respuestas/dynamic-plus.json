@@ -1,36 +1,33 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 24,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "INTIMATE RHYTHM"
-   },
-   "why": "Opening drum-cut window (0-9s) and intro groove isolation to establish the dark nostalgia "
+   "start": 107,
+   "end": 129,
+   "label": "LA VERDAD FINAL",
+   "why": "The climactic drop of the chorus where 'ninguna dice vuelve' hits; maximum atmospheric rel"
   },
   {
-   "start": 58,
-   "end": 83,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "guitar"
-    ],
-    "label": "DEFENSIVE GROOVE"
-   },
-   "why": "Pre-Chorus tension building, isolating bass and guitar to underscore the defensive resolve"
+   "start": 140,
+   "end": 158,
+   "label": "EL SILENCIO",
+   "why": "Post-chorus instrumental break where the gang vocals fade into a sensual, protective quiet"
+  },
+  {
+   "start": 230,
+   "end": 254,
+   "label": "CIERRE DE PUNTA",
+   "why": "The final pre-chorus resolving emotional boundaries and healing before the song's end."
   }
  ],
  "words": {
-  "respuestas": "shatter",
+  "respuestas": "shimmer",
   "herida": "bleed",
   "silencio": "freeze",
   "vuelve": "redact",
+  "noche": "neon",
+  "ringtone": "glitch",
+  "romperse": "carve",
   "paz": "bloom"
  }
 }

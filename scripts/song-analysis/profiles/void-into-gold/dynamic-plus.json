@@ -1,10 +1,28 @@
 {
- "v": 1,
- "acts": [],
+ "v": 2,
+ "acts": [
+  {
+   "start": 124,
+   "end": 149,
+   "label": "WE TURN IT INTO GOLD",
+   "why": "The song's central transformation moment where the lyrics explicitly state 'We came from t"
+  },
+  {
+   "start": 176,
+   "end": 201,
+   "label": "TENDER FORGIVENESS",
+   "why": "A quiet, intimate peak focusing on vocal chops ('Wine slow') and themes of acceptance afte"
+  }
+ ],
  "words": {
-  "void": "shatter",
+  "void": "dissolve",
   "gold": "bloom",
-  "smoke": "dissolve",
-  "bassline": "pulse"
+  "smoke": "glitch",
+  "bassline": "pulse",
+  "life": "rise",
+  "soul": "shimmer",
+  "light": "neon",
+  "go": "fall",
+  "slow": "tremor"
  }
 }

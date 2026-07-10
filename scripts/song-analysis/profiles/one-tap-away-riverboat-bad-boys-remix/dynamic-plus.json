@@ -1,25 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 59,
-   "end": 84,
-   "reactor": "aquarium",
-   "why": ""
+   "end": 74,
+   "label": "SAVE YOUR LIKES FOR ST",
+   "why": "The first major chorus drop where the melancholic realization peaks; intensity shifts from"
   },
   {
    "start": 129,
-   "end": 137,
-   "reactor": "tarot",
-   "why": ""
+   "end": 145,
+   "label": "RESIGNED ACCEPTANCE",
+   "why": "Verse 2 introduces a lower energy but emotionally heavy resignation; the visual tone darke"
+  },
+  {
+   "start": 152,
+   "end": 168,
+   "label": "THE DROP HITS",
+   "why": "The designated cinematic drop at 152s; this is the show's main event where kinetic energy "
   }
  ],
  "words": {
-  "alone": "fall",
+  "alone": "bleed",
   "tap": "glitch",
-  "stacks": "dissolve",
-  "scroll": "tvoff",
+  "stacks": "redact",
+  "scroll": "wave",
   "stars": "shimmer",
-  "names": "redact"
+  "names": "fizz"
  }
 }

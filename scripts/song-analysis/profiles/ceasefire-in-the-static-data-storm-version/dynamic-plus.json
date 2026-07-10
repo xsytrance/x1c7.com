@@ -1,59 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 28,
-   "end": 46,
-   "stemSpot": {
-    "solo": [
-     "strings"
-    ],
-    "label": "THE VIOLINS CRY"
-   },
-   "why": ""
+   "start": 125,
+   "end": 143,
+   "label": "FRUSTRATED RESIGNATION",
+   "why": "Acting as the first major featured moment after the intro buildup and initial choruses. Th"
   },
   {
-   "start": 123,
-   "end": 148,
-   "stemSpot": {
-    "solo": [
-     "keys"
-    ],
-    "label": "DEEP PIANO LAMENT"
-   },
-   "why": ""
-  },
-  {
-   "start": 160,
-   "end": 185,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "URGENT RHYTHM BREAK"
-   },
-   "why": ""
+   "start": 162,
+   "end": 180,
+   "label": "THE URGENT REALIZATION",
+   "why": "Captures the Spoken Word/Rap section (intensity 0.28). This is a distinct shift in deliver"
   },
   {
    "start": 218,
-   "end": 243,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "SUB-BASS & SYNTH WALLS"
-   },
-   "why": ""
+   "end": 236,
+   "label": "RESONANT PERSISTENCE",
+   "why": "Features the final 'Big Chorus' where intensity stabilizes into resilient persistence. Thi"
   }
  ],
  "words": {
   "static": "glitch",
-  "ceasefire": "bloom",
+  "ceasefire": "shimmer",
   "violence": "shatter",
   "overloaded": "dissolve",
-  "ghosts": "echo",
-  "code": "redact"
+  "ghosts": "tremor",
+  "code": "type"
  }
 }

@@ -7,6 +7,41 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-10 — DYNAMIC+ v2 (reactor/stem-free) · deck default · the art backfill
+
+Owner's call: "I don't like dynamic+ — back to phase 5, new phase 6 pass without
+reactor or stem effects."
+
+**DYNAMIC+ v2:**
+- Catalog reverted to Phase 5 with the new `revert-dynamic-plus.mjs` (per-row
+  backup → `dynamic-plus-backup-2026-07-10.jsonl`, gitignored; strips
+  `planet.dynamicPlus`). Verified 0 rows left, planets otherwise intact.
+- Contract rewritten (`src/lib/planet.ts`, synced to kinetica): acts are pure
+  visual moments `{start, end, label, why}` — `reactor`/`stemSpot` deleted from
+  the type, the choreographer prompt, and the data. `v: 2`.
+- `dynamic-plus.mjs` reworked: no Reactor catalog, no stems line; the LLM bills
+  each act with a ≤22-char marquee label in the song's own language ("THE DROP
+  HITS", "EL ÚLTIMO CORO"); validation requires the label. Fresh qwen3.5 pass
+  authored all 54 songs, zero failures. `apply-dynamic-plus.mjs` now refuses any
+  non-v2 cache; live on 54 tracks.
+- Conductor (`CinematicLyrics.tsx`) chips from `act.label` now.
+
+**/music mobile:** the deck is the default view again (`page.tsx` one-liner);
+the SHELF/DECK switch stays, saved preference still wins.
+
+**The art backfill (the real "missing art"):** 30 of 54 planets had ZERO
+backdrops on R2 — bare-stage shows. topup never saw them (it skips planets with
+no base art). Fixes: 4 songs' local `public/planets` art uploaded (post-reorg
+stragglers); new `scripts/song-art/backfill-planet-art.mjs` rendered keyword +
+section art for the other 28 from their DB analysis (onboard step-7 recipe,
+Rooklyn/Riverboat slugs forced to the B&W+gold voice) and wired
+`planet.assets` in Supabase, preserving stem keys. Then
+`topup.mjs --target 100 --pass BLITZ1` grows the whole catalog to 100/song.
+
+**Verified:** tsc + eslint + prod build green (x1c7 and kinetica); DB checks:
+54× `v:2`, no `reactor|stemSpot` anywhere, 0 dynamicPlus after revert (before
+re-apply); covers audit clean (51/51 spine+card+OG live, 0 broken track URLs).
+
 ## 2026-07-09 — THE BOOKLET: 54/54 inserts published
 
 CD liner notes × game manual, one per collector edition (plan:

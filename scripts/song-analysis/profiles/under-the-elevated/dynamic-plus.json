@@ -1,41 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 20,
-   "end": 45,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "bass"
-    ],
-    "label": "NEON & RUMBLE ONLY"
-   },
-   "why": ""
+   "start": 134,
+   "end": 152,
+   "label": "THE CAGE SHUTS",
+   "why": "Pre-Chorus buildup where the narrator rationalizes control before the inevitable collapse;"
   },
   {
-   "start": 135,
-   "end": 146,
-   "reactor": "orbit",
-   "why": "Pre-chorus build-up: The lyrical line about 'losing with a different kind of gun' and the "
+   "start": 186,
+   "end": 211,
+   "label": "THE DRAGON RISES",
+   "why": "Verse 2 awakening resolve section where the 'dragon' metaphor becomes visual and the reali"
   },
   {
-   "start": 153,
-   "end": 178,
-   "stemSpot": {
-    "solo": [
-     "lead"
-    ],
-    "label": "THE VOCAL HEART"
-   },
-   "why": ""
-  },
-  {
-   "start": 208,
-   "end": 218,
-   "reactor": "downpour",
-   "why": "Verse 2 transition: As the narrator shifts from 'bills paid' facade to internal awakening "
+   "start": 340,
+   "end": 365,
+   "label": "FINAL CONFESSION",
+   "why": "The song's conclusion; a quiet but heavy resolution where 'smoke' and 'truth' linger as th"
   }
  ],
- "words": {}
+ "words": {
+  "cage": "shatter",
+  "control": "glitch",
+  "dragon": "rise",
+  "chains": "bleed",
+  "smoke": "dissolve",
+  "truth": "burn"
+ }
 }

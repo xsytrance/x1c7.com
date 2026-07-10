@@ -1,41 +1,27 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 15,
-   "end": 29,
-   "stemSpot": {
-    "solo": [
-     "bass"
-    ],
-    "label": "THE BASS RUMBLE"
-   },
-   "why": ""
-  },
-  {
-   "start": 67,
-   "end": 85,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "HEARTBEAT ONLY"
-   },
-   "why": ""
+   "start": 58,
+   "end": 79,
+   "label": "LUXURY & HEAT",
+   "why": "Visualizing the object of desire with gold and red visuals as tension rises before the bri"
   },
   {
    "start": 137,
    "end": 162,
-   "reactor": "spellcast",
-   "why": "The bridge's 'desperate bargaining' and trance state perfectly match the mystical, rituali"
+   "label": "DESPERATE BARGAINING",
+   "why": "The hypnotic trance state leading into the final sonic assault drop and resolution."
   }
  ],
  "words": {
-  "venomous": "burn",
   "honey": "bloom",
-  "dangerous": "shatter",
-  "electric": "glitch",
+  "venom": "shatter",
+  "spell": "glitch",
+  "dangerous": "neon",
+  "hell": "burn",
   "heaven": "dissolve",
-  "hell": "slam"
+  "strobe": "freeze",
+  "electric": "pulse"
  }
 }

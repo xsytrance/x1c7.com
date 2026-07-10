@@ -1,48 +1,32 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
+   "start": 10,
+   "end": 24,
+   "label": "THE REFUSAL",
+   "why": "First major declaration of boundaries at the song's debut chorus; a visual standstill repr"
+  },
+  {
+   "start": 53,
+   "end": 78,
+   "label": "THE DROP",
+   "why": "The instrumental break and calm determination phase where the stage clears of destructive "
+  },
+  {
    "start": 109,
-   "end": 134,
-   "reactor": "downpour",
-   "why": "The lyric 'Rain on glass' and the section's melancholy isolation perfectly match a downpou"
-  },
-  {
-   "start": 150,
-   "end": 175,
-   "reactor": "handwriting",
-   "why": "A confession-style reactor for 'I won't be your fire', matching the intimate, letter-to-so"
-  },
-  {
-   "start": 215,
-   "end": 240,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "keys"
-    ],
-    "label": "GUITAR & KEYS ONLY"
-   },
-   "why": ""
-  },
-  {
-   "start": 265,
-   "end": 290,
-   "stemSpot": {
-    "solo": [
-     "synth"
-    ],
-    "label": "THE SYNTH HOPE"
-   },
-   "why": ""
+   "end": 125,
+   "label": "SILENCE",
+   "why": "A quiet window between verses where drums fall silent; the visual freezes to represent 'he"
   }
  ],
  "words": {
-  "fire": "burn",
+  "fire": "shatter",
   "rain": "dissolve",
-  "darkness": "shatter",
+  "thunder": "glitch",
   "silence": "freeze",
-  "thunder": "slam",
-  "light": "bloom"
+  "light": "bloom",
+  "darkness": "redact",
+  "cold": "melt"
  }
 }

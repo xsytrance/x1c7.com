@@ -1,29 +1,24 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 124,
-   "end": 137,
-   "reactor": "sizzle",
-   "why": "The breakdown hits peak sensory overload (0.96 intensity). 'Sizzle' captures the heat of t"
+   "start": 137,
+   "end": 152,
+   "label": "THE RUM DROPS",
+   "why": "Captures the 'Hypnotic Repetition' and high intensity of Verse 3 start (0.83), where the r"
   },
   {
-   "start": 148,
-   "end": 172,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "DRUMS ONLY"
-   },
-   "why": ""
+   "start": 167,
+   "end": 176.8,
+   "label": "FINAL SMOKE",
+   "why": "Ends on a lingering note as intensity fades to quiet (drums silent) at the very end of the"
   }
  ],
  "words": {
   "gold": "shimmer",
   "smoke": "dissolve",
-  "rum": "burn",
-  "crew": "pulse",
+  "rum": "pulse",
+  "crew": "neon",
   "hot": "glitch",
   "bold": "slam"
  }

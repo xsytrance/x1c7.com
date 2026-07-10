@@ -1,47 +1,23 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "synth",
-     "drums"
-    ],
-    "label": "INTRO GROOVE ONLY"
-   },
-   "why": ""
-  },
-  {
    "start": 67,
-   "end": 85,
-   "reactor": "fireworks",
-   "why": ""
+   "end": 82,
+   "label": "THE TRUTH REVEALED",
+   "why": "The first major drop where the chorus hits maximum intensity (1.0), visually contrasting '"
   },
   {
    "start": 97,
-   "end": 120,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "perc"
-    ],
-    "label": "COLD OBSERVATION"
-   },
-   "why": ""
+   "end": 122,
+   "label": "COLD OBSERVATION",
+   "why": "Verse 2 begins a cold, detached observation of hypocrisy; intensity drops to 0.76 allowing"
   },
   {
-   "start": 137,
-   "end": 152,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "other"
-    ],
-    "label": "RESOLUTE DECISION"
-   },
-   "why": ""
+   "start": 131,
+   "end": 156,
+   "label": "CUTTING TIES",
+   "why": "The bridge marks the resolute decision to leave; a long window where the beat falls silent"
   }
  ],
  "words": {
@@ -49,6 +25,7 @@
   "miel": "bloom",
   "engaño": "glitch",
   "fiel": "pulse",
-  "lealtad": "rise"
+  "dobleces": "carve",
+  "lealtad": "neon"
  }
 }

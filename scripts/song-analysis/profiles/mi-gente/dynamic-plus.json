@@ -1,40 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 20,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "THE RHYTHM FOUNDATION"
-   },
-   "why": "Intro drum-cut window (0-13s) isolates the foundational beat to build anticipatory swagger"
+   "start": 60,
+   "end": 82,
+   "label": "LA VIBRA SE EXTIENDE",
+   "why": "Pre-Chorus chant response and the second Chorus onset captures 'Aggressive Challenge' turn"
   },
   {
-   "start": 28,
-   "end": 46,
-   "reactor": "fireworks",
-   "why": "First major chorus (high intensity) representing triumphant unity and festival energy; 'Mi"
+   "start": 95,
+   "end": 120,
+   "label": "FAMILIA SIN METAL",
+   "why": "Mid-Verse 1 section highlights the core theme of loyalty and diverse unity ('dominicanos',"
   },
   {
-   "start": 105,
-   "end": 128,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "GLOBAL VIBES ONLY"
-   },
-   "why": "Verse 2 low intensity (0.31) focuses on global connection; stripping to bass/synth isolate"
+   "start": 132,
+   "end": 157,
+   "label": "EL ÚLTIMO CORO",
+   "why": "The Bridge's spiritual brotherhood leading directly into the explosive Drop/Outro start re"
   }
  ],
  "words": {
-  "gente": "bloom",
-  "sangre": "pulse",
-  "lealtad": "shatter"
+  "gente": "pulse",
+  "calle": "neon",
+  "sangre": "burn",
+  "barrio": "shatter",
+  "lealtad": "glitch",
+  "fuego": "slam"
  }
 }

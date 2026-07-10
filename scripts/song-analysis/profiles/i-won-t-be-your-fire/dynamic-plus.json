@@ -1,43 +1,30 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "drums"
-    ],
-    "label": "GUITAR & RAIN ONLY"
-   },
-   "why": ""
+   "start": 120,
+   "end": 145,
+   "label": "THE WAR BEGINS",
+   "why": "The quiet window (120-123s) allows the stage to breathe before Verse 1 escalates into 'a w"
   },
   {
-   "start": 55,
-   "end": 80,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "bass"
-    ],
-    "label": "LEAD VOICE & BASS ONLY"
-   },
-   "why": ""
+   "start": 156,
+   "end": 179,
+   "label": "I WON'T BE YOUR FIRE",
+   "why": "The main chorus hits with explosive realization. This is the show's headline moment where "
   },
   {
-   "start": 93,
-   "end": 118,
-   "reactor": "fireworks",
-   "why": "Post-Chorus/Drop transition: The 'No no no' rejection and cinematic release of held-back e"
+   "start": 205,
+   "end": 230,
+   "label": "THE THUNDER BREAKS",
+   "why": "The final chorus/Drop section delivers the cinematic release of energy and firm resolve as"
   }
  ],
  "words": {
-  "fighting": "slam",
-  "burn": "shatter",
-  "silence": "freeze",
-  "thunder": "glitch",
-  "breaking": "dissolve",
-  "wire": "pulse"
+  "fire": "burn",
+  "cold": "freeze",
+  "ghosts": "dissolve",
+  "war": "slam",
+  "hurt": "shatter"
  }
 }

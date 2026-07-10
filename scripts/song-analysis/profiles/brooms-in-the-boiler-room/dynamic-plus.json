@@ -1,34 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 89,
-   "end": 102,
-   "reactor": "tarot",
-   "why": "The drum-cut window at 89s offers a moment of suspended dread; the 'Tarot' mode fits the t"
+   "start": 120,
+   "end": 145,
+   "label": "THE MOUSE TRUMPHS",
+   "why": "Post-Pre-Chorus build-up where the 'mouse' keyword hits with maximum intensity before Vers"
   },
   {
-   "start": 139,
-   "end": 152,
-   "stemSpot": {
-    "solo": [
-     "bass"
-    ],
-    "label": "THE BOILER PULSE"
-   },
-   "why": ""
+   "start": 190,
+   "end": 215,
+   "label": "THE BOILER ROAR",
+   "why": "Mid-Verse 2 transition into the Bridge; captures the 'boiler' claustrophobia and rising ch"
   },
   {
-   "start": 164,
-   "end": 178,
-   "reactor": "marionette",
-   "why": "Verse 2's resigned acceptance of doom is perfectly captured by 'Marionette,' visualizing t"
+   "start": 240,
+   "end": 265,
+   "label": "FROZEN DOOM",
+   "why": "The final realization of impossibility in the Bridge; a static, terrifying freeze-frame as"
   }
  ],
  "words": {
-  "spell": "glitch",
-  "brooms": "shatter",
+  "spell": "shatter",
+  "boiler": "glitch",
+  "brooms": "slam",
   "gold": "bleed",
-  "tower": "fall"
+  "mouse": "rise",
+  "tower": "dissolve"
  }
 }

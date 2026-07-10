@@ -1,31 +1,30 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 31,
-   "end": 42,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "THE LOW LIGHTS & SLOW "
-   },
-   "why": ""
+   "start": 49,
+   "end": 61,
+   "label": "THE PUSH",
+   "why": "Captures the hypnotic trance rhythm of the Drop where vocal stutters and bass peaks demand"
   },
   {
-   "start": 56,
-   "end": 71,
-   "reactor": "handwriting",
-   "why": "The whispered breakdown turns into an intimate letter; the stuttering tension is best serv"
+   "start": 72,
+   "end": 84,
+   "label": "SLOW BREATH",
+   "why": "Marks the Bridge/Slowdown section where tension builds through whispered vocals and stutte"
+  },
+  {
+   "start": 105,
+   "end": 127,
+   "label": "FINAL CRUSH",
+   "why": "The ultimate culmination of desire in the second chorus/loop where energy returns to a pea"
   }
  ],
  "words": {
-  "feel": "bloom",
-  "dark": "shatter",
-  "slow": "melt",
-  "spark": "pulse",
   "push": "slam",
+  "feel": "pulse",
+  "dark": "shimmer",
+  "slow": "melt",
   "stop": "freeze"
  }
 }

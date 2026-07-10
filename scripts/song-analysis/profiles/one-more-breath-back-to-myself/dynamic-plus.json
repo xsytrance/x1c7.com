@@ -1,36 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 45,
-   "end": 62,
-   "reactor": "orbit",
-   "why": "The bridge section offers a fragile moment of hope and isolation; 'orbit' captures the fee"
-  },
-  {
-   "start": 120,
-   "end": 145,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "DUSTY BREAK"
-   },
-   "why": ""
+   "start": 140,
+   "end": 165,
+   "label": "THE QUIET ROOM",
+   "why": "Bridge transition: Intensity drops to fragile hope; the stage dims as introspection peaks "
   },
   {
    "start": 207,
    "end": 232,
-   "stemSpot": {
-    "solo": [
-     "bass"
-    ],
-    "label": "SUBMERSED PULSE"
-   },
-   "why": ""
+   "label": "FINAL REALIZATION",
+   "why": "Outro climax: The track fades to silence; this act captures the lingering echo of self-dis"
   }
  ],
  "words": {
-  "breathe": "pulse"
+  "hypnotic": "glitch",
+  "woozy": "dissolve",
+  "detuned": "chromatic",
+  "chopped": "shatter",
+  "hazy": "melt",
+  "syrupy": "liquid"
  }
 }

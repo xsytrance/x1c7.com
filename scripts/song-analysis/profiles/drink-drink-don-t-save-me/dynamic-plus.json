@@ -1,38 +1,33 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 150,
-   "end": 168,
-   "reactor": "aquarium",
-   "why": "Bridge section (Exhausted Realization): The vibe shifts to calm/fade as the narrator reali"
+   "start": 56,
+   "end": 81,
+   "label": "THE HYPNOTIC LOOP",
+   "why": "Captures the 'Hypnotic Dissociation' intensity of Verse 1's conclusion and Pre-Chorus tran"
   },
   {
-   "start": 195,
-   "end": 220,
-   "reactor": "downpour",
-   "why": "Drop/Outro transition (Hypnotic Loop Collapse -> Fading Despair): Heavy rain washes over t"
+   "start": 95,
+   "end": 120,
+   "label": "GHOSTS IN THE WALL",
+   "why": "Targets Verse 1 (Continued) where 'ghosts' and 'smoke' are mentioned. This act visualizes "
   },
   {
    "start": 240,
    "end": 265,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "THE LOW END SINKS"
-   },
-   "why": ""
+   "label": "FADE TO DESPAIR",
+   "why": "Marks the final Outro window (intensity dropping to 0.12). This is the 'Fading Despair' mo"
   }
  ],
  "words": {
-  "save": "redact",
-  "train": "glitch",
-  "bottle": "neon",
-  "pain": "shatter",
-  "smoke": "dissolve",
-  "ghosts": "echo",
-  "drink": "pulse"
+  "don't save me": "redact",
+  "drink": "pulse",
+  "smoke caught in the bass": "dissolve",
+  "voices in the walls": "echo",
+  "ghosts again": "shatter",
+  "heart doing laps": "glitch",
+  "sink deep": "melt",
+  "don't speak": "whisper"
  }
 }

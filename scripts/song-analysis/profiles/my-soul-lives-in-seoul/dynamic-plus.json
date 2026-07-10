@@ -1,42 +1,32 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "keys",
-     "synth"
-    ],
-    "label": "SYNTH WAVES ONLY"
-   },
-   "why": ""
+   "start": 70,
+   "end": 95,
+   "label": "THE SIGNAL DROPS",
+   "why": "First major visual peak after the intro build-up; captures the 'Tense longing' of weak sig"
   },
   {
-   "start": 170,
-   "end": 184,
-   "stemSpot": {
-    "solo": [
-     "back"
-    ],
-    "label": "BACKING TRACK ONLY"
-   },
-   "why": ""
+   "start": 142,
+   "end": 167,
+   "label": "CROSSING THE BORDER",
+   "why": "Aligns with Pre-Chorus intensity; visualizes the 'Bureaucratic determination' and emotiona"
   },
   {
-   "start": 265,
-   "end": 290,
-   "reactor": "fireworks",
-   "why": "The Bridge leads into a final resolution of 'Passionate rhythmic unity' and global triumph"
+   "start": 270,
+   "end": 294.8,
+   "label": "GLOBAL UNITY",
+   "why": "The Bridge's rhythmic unity; transforms the quiet window into a passionate climax with mul"
   }
  ],
  "words": {
-  "seoul": "neon",
   "signal": "glitch",
+  "screen": "freeze",
   "border": "shatter",
-  "chaos": "bloom",
-  "customs": "redact",
-  "emoji": "type"
+  "dreams": "bloom",
+  "forms": "redact",
+  "stamps": "carve",
+  "love": "neon"
  }
 }

@@ -1,25 +1,34 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 49,
-   "end": 57,
-   "reactor": "handwriting",
-   "why": "Drum-cut window allows intimate focus on the vocal confession of uncertainty; 'handwriting"
+   "end": 63,
+   "label": "THE MIDNIGHT FLAME",
+   "why": "Captures the peak romantic tension of Verse 1 where 'flame' ignites and typing begins."
   },
   {
-   "start": 139,
-   "end": 147,
-   "reactor": "orbit",
-   "why": "Bridge section's 'breathless pause' and vulnerability match the cosmic, floating vibe of o"
+   "start": 86,
+   "end": 102,
+   "label": "LONG DISTANCE HEAT",
+   "why": "Highlights the Female Response chorus affirmation ('still smiling', 'standing here') again"
+  },
+  {
+   "start": 174,
+   "end": 198,
+   "label": "HANDS FAR AWAY",
+   "why": "Focuses on the emotional climax of Text 5 and the duet reassurance regarding physical conn"
   }
  ],
  "words": {
-  "screen": "glitch",
-  "erase": "melt",
-  "sparks": "bloom",
-  "bass": "pulse",
-  "dreams": "shimmer",
-  "gloves": "bleed"
+  "screen": "neon",
+  "flame": "burn",
+  "typing": "glitch",
+  "erase": "redact",
+  "smile": "bloom",
+  "pause": "freeze",
+  "blue": "chromatic",
+  "sparks": "pulse",
+  "hands": "shatter"
  }
 }

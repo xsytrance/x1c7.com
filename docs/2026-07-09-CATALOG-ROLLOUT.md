@@ -76,27 +76,31 @@ produces word-level timings for everything. So:
 - Show bundles also live at R2 `planets/<id>/show.json` (words + LRC +
   analysis) for any future backfill without re-running anything.
 
-### 5. ⚡ DYNAMIC+ — Phase 6, the showcase pass
+### 5. ⚡ DYNAMIC+ — Phase 6, the showcase pass (v2, 2026-07-10)
 - **Contract**: `planet.dynamicPlus` (`src/lib/planet.ts`, synced to
-  Kinetica): `acts[]` — each window is EITHER a `reactor` takeover (one of
-  16 Lab modes) OR a `stemSpot` (solo 1-3 stems under a stage label) —
-  plus `words` (lyric word → one of the 26 text effects).
+  Kinetica), `v: 2`: `acts[]` — pure visual moments
+  `{ start, end, label, why }` — plus `words` (lyric word → one of the
+  26 text effects). v1's `reactor` takeovers and `stemSpot` solos were
+  retired at the owner's call and then **dropped from the data entirely**;
+  the whole catalog was reverted to Phase 5 and re-choreographed as v2
+  (old v1 plans live in git history + `dynamic-plus-backup-*.jsonl`).
 - **The Conductor** (`CinematicLyrics.tsx`): walks acts against the
-  playhead at pass 6. Reactor modes enter/exit automatically but NEVER
-  stomp a manual pick (it only moves what it set). Stem spotlights
-  snapshot the listener's mix and restore it after; a billing chip shows
-  who's on stage ("⚡ THE WAR DRUMS"). `MAX_PASS` is 6 when choreography
-  exists; the phase button reads "⚡ Dynamic+".
+  playhead at pass 6 as visual moments — the backdrop holds & brightens
+  for the window and the act's marquee chip shows ("⚡ THE DROP HITS").
+  It never touches the audio, the stem mix, or the Reactor. `MAX_PASS`
+  is 6 when choreography exists; the phase button reads "⚡ Dynamic+".
 - **The word seam** (`KineticStage.tsx`): `dynamicPlus.words` merges under
   `effects.overrides` at pass ≥ 6 — under explicit overrides, above the
   natural lexicon.
 - **The choreographer**: `scripts/song-analysis/dynamic-plus.mjs` — feeds
-  qwen3.5 the measured profile (sections, drum-cut windows, stems,
-  keywords) + a Reactor vibe catalog; validates hard in code (window
-  clamps, overlap drops, unknown ids filtered); **caches each plan** to
+  qwen3.5 the measured profile (sections, quiet windows, keywords);
+  validates hard in code (window clamps, overlap drops, label required,
+  unknown effects filtered); **caches each plan** to
   `profiles/<id>/dynamic-plus.json` (an `--only` rerun can never clobber
   the catalog — learned the hard way); assembles `dynamic-plus.sql` from
-  all caches. Apply with `apply-dynamic-plus.mjs`.
+  all caches. Apply with `apply-dynamic-plus.mjs` (skips any non-v2
+  cache). Revert with `revert-dynamic-plus.mjs` (dumps a backup JSONL,
+  strips the key, caps everything at Phase 5).
 
 ### 6. 🎸 THE BAND — instrument mini-visualizers
 `src/components/StemGlyphs.tsx` — 12 animated SVG musicians (mic shedding
@@ -110,8 +114,9 @@ strip; the mixer's toggle chips ARE the band now (tap a musician to mute
 them).
 
 ### 7. /music on mobile
-- The **spine shelf is the default view** on phones; a SHELF/DECK
-  segmented switch (persisted) keeps the deck one tap away.
+- The **deck is the default view** on phones (owner's call, 2026-07-10);
+  a SHELF/DECK segmented switch (persisted via `x1c7-collection-view`)
+  keeps the shelf one tap away.
 - The shelf is touch-native: tap a spine to pull the case + preview, tap
   the same spine again to play; `pointerleave` ignores touch so the case
   stays pulled. Desktop hover/click and keyboard behavior unchanged.

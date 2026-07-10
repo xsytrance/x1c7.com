@@ -6,6 +6,9 @@
 # testing
 /coverage
 
+# show-watch runs (screenshots, contact sheets, videos — all regenerable)
+/artifacts/
+
 # next.js
 /.next/
 /out/
@@ -55,6 +58,9 @@ scripts/song-art/collector/gen/
 scripts/song-art/collector/thumbs/
 scripts/song-art/collector/web/
 scripts/song-art/collector/originals/
+
+# dynamic+ revert safety dumps (v1 plans also live in git history)
+scripts/song-analysis/dynamic-plus-backup-*.jsonl
 
 # ultimate-analyzer heavy artifacts (audio proxies re-downloadable from R2/Suno)
 scripts/song-analysis/profiles/*/release.mp3

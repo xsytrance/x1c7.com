@@ -1,36 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 48,
-   "end": 60,
-   "reactor": "orbit",
-   "why": "The chorus hits its peak of existential isolation; 'orbit' captures the feeling of floatin"
+   "end": 67,
+   "label": "THE DIGITAL GAP",
+   "why": "First major chorus peak highlighting the paradox of proximity vs. distance."
   },
   {
-   "start": 90,
-   "end": 106,
-   "reactor": "terminal",
-   "why": "The bridge's existential dread in a crowded space mirrors the cold logic of code and syste"
+   "start": 92,
+   "end": 115,
+   "label": "CROWDED SOLITUDE",
+   "why": "Verse 2 aggressive observation where intensity drops but emotional weight rises in a 'crow"
   },
   {
-   "start": 145,
-   "end": 162,
-   "stemSpot": {
-    "solo": [
-     "keys"
-    ],
-    "label": "THE KEYS SPEAK"
-   },
-   "why": ""
+   "start": 140,
+   "end": 165,
+   "label": "FINAL ECHO",
+   "why": "Outro section focusing on the ultimate feeling of emptiness and final solitude."
   }
  ],
  "words": {
-  "alone": "shatter",
+  "alone": "bleed",
   "tap": "glitch",
   "strangers": "dissolve",
-  "fake": "redact",
-  "reach": "bleed",
-  "names": "chromatic"
+  "fake": "shatter",
+  "reach": "freeze",
+  "names": "redact"
  }
 }

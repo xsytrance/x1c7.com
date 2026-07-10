@@ -1,37 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 24,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "strings"
-    ],
-    "label": "THE ACHING STRINGS ONL"
-   },
-   "why": ""
+   "start": 139,
+   "end": 164,
+   "label": "THE MATCHES DROP",
+   "why": "Captures the pivotal moment where the protagonist decides to put down the matches (tools o"
   },
   {
-   "start": 58,
-   "end": 76,
-   "reactor": "fireworks",
-   "why": "Capturing the explosive release and defiant declaration of self-illumination in the first "
+   "start": 175,
+   "end": 200,
+   "label": "THE CANDLE IGNITES",
+   "why": "Showcases the triumphant bridge turn where the narrator accepts silence as peace and decla"
   },
   {
-   "start": 185,
-   "end": 203,
-   "reactor": "orbit",
-   "why": "Reflecting the 'Triumphant self-empowerment' and polished sheen of the Drop by placing the"
+   "start": 231,
+   "end": 256,
+   "label": "THE FINAL DECLARATION",
+   "why": "Features the final chorus climax where the line '불은 내가 켤게' (I'll light it myself) is deliv"
   }
  ],
  "words": {
-  "bleeding": "liquid",
+  "bleeding": "shatter",
   "fire": "bloom",
-  "darkness": "shatter",
+  "darkness": "neon",
   "alone": "rise",
-  "matches": "carve",
+  "matches": "slam",
   "quiet": "whisper",
   "burning": "glitch"
  }

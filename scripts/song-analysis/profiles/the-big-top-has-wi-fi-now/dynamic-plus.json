@@ -1,35 +1,32 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 127,
-   "end": 149,
-   "reactor": "fireworks",
-   "why": "Matches the 'Chaotic Euphoria' of the main chorus where digital clowns and agents take ove"
+   "end": 150,
+   "label": "THE DIGITAL CIRCUS",
+   "why": "Chorus peak where mechanical precision meets chaotic euphoria; the 'build' and 'agents' co"
   },
   {
-   "start": 184,
-   "end": 209,
-   "reactor": "tarot",
-   "why": "Aligns with the 'Melancholic Realization' at the bridge; tarot evokes fate and mystery as "
+   "start": 248,
+   "end": 271,
+   "label": "GLITCHED REALIZATION",
+   "why": "Post-chorus instrumental swell leading into the bridge; intensity drops but text effects h"
   },
   {
    "start": 301,
    "end": 314.4,
-   "reactor": "terminal",
-   "why": "Captures the 'Glitched Stasis' of the final drop; terminal mode represents tech/code/machi"
+   "label": "STATIC STASIS",
+   "why": "Final drop section; 'Glitched Stasis' requires a freeze-frame effect to represent the urge"
   }
  ],
  "words": {
   "operator": "glitch",
-  "circus": "shatter",
-  "awake": "pulse",
-  "green": "neon",
-  "haunt": "bleed",
-  "online": "dissolve",
-  "design": "chromatic",
-  "juggling": "wave",
-  "agents": "freeze",
-  "blinking": "shimmer"
+  "circus": "bloom",
+  "tokens": "shatter",
+  "vps": "neon",
+  "humming": "pulse",
+  "alive": "bleed",
+  "design": "redact"
  }
 }

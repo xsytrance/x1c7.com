@@ -1,22 +1,17 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 49,
-   "end": 57,
-   "reactor": "fireworks",
-   "why": "Captures the overwhelming pressure and cathartic release of the first chorus climax."
+   "start": 69,
+   "end": 85,
+   "label": "THE UGLY TRUTH",
+   "why": "Bridge 1 provides a meditative focus moment to highlight the raw honesty of self-talk and "
   },
   {
-   "start": 69,
-   "end": 79,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "THE DRUMS SPEAK"
-   },
-   "why": ""
+   "start": 129,
+   "end": 145,
+   "label": "THE PRESSURE HURTS",
+   "why": "Chorus 2 offers a sustained intensity window to display the crushing weight metaphor befor"
   }
  ],
  "words": {}

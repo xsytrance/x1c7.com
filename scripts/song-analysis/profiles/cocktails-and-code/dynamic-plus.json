@@ -1,24 +1,29 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 52,
-   "end": 70,
-   "reactor": "fireworks",
-   "why": "Matches the Chorus's 'Cinematic Expansion' and festival energy; celebrates the triumph of "
+   "end": 73,
+   "label": "THE NIGHT UNFOLDS",
+   "why": "Chorus peak where 'dream' and 'fire' visuals explode with neon effects as the song transit"
+  },
+  {
+   "start": 83,
+   "end": 105,
+   "label": "RHYTHMIC TRIUMPH",
+   "why": "The main Drop hit where 'debug' and 'logic' slam onto the screen with glitch effects match"
   },
   {
    "start": 154,
    "end": 179,
-   "reactor": "orbit",
-   "why": "Captures Verse 2's 'Confident Resolve' and the song's electronic texture with a cosmic, fl"
+   "label": "TRANQUIL FUTURE",
+   "why": "The Outro section where 'future' blooms and dissolves into a hopeful final view as the int"
   }
  ],
  "words": {
-  "glow": "neon",
-  "logic": "type",
-  "focus": "pulse",
-  "debug": "shatter",
+  "dream": "neon",
+  "debug": "slam",
+  "logic": "shatter",
   "future": "bloom"
  }
 }

@@ -30,12 +30,13 @@ for (const id of readdirSync(PROFILES)) {
   const cache = join(PROFILES, id, "dynamic-plus.json");
   if (!existsSync(cache)) continue;
   const plan = JSON.parse(readFileSync(cache, "utf8"));
+  if (plan.v !== 2) { skipped++; console.error(`— ${id}: stale v${plan.v} cache — regenerate with dynamic-plus.mjs`); continue; }
   const { data: row, error } = await db.from("tracks").select("id, planet").eq("id", id).maybeSingle();
   if (error || !row?.planet) { skipped++; console.error(`— ${id}: ${error?.message ?? "no planet"}`); continue; }
   if (DRY) { console.error(`(dry) ${id}: ${plan.acts?.length ?? 0} acts, ${Object.keys(plan.words ?? {}).length} words`); continue; }
   const { error: e2 } = await db.from("tracks").update({ planet: { ...row.planet, dynamicPlus: plan } }).eq("id", id);
   if (e2) { console.error(`✘ ${id}: ${e2.message}`); continue; }
   applied++;
-  console.error(`⚡ ${id}: ${(plan.acts ?? []).map((a) => a.reactor ?? a.stemSpot?.label).join(" · ") || "words only"}`);
+  console.error(`⚡ ${id}: ${(plan.acts ?? []).map((a) => a.label).join(" · ") || "words only"}`);
 }
 console.error(`\nDYNAMIC+ live on ${applied} tracks${skipped ? ` · skipped ${skipped}` : ""}`);

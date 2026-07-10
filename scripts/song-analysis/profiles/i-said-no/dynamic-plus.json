@@ -1,42 +1,24 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 26,
-   "end": 34,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "DRUMS & BASS ONLY"
-   },
-   "why": "Drum-cut window (0-2s relative to section start) allows isolating the percussion groove."
+   "start": 40,
+   "end": 52,
+   "label": "THE FINAL NO",
+   "why": "The climax of the song where the repetitive 'And I said No' reaches maximum intensity befo"
   },
   {
-   "start": 58,
-   "end": 76,
-   "reactor": "graffiti",
-   "why": "Verse 2 conveys conceited arrogance and aggressive rejection; graffiti mode matches the gr"
-  },
-  {
-   "start": 104,
-   "end": 119,
-   "stemSpot": {
-    "solo": [
-     "synth",
-     "bass"
-    ],
-    "label": "THE LOW END SPEAK"
-   },
-   "why": "Outro section features hollow finality; isolating synth and bass creates a cold, lingering"
+   "start": 98,
+   "end": 106,
+   "label": "COLD ISOLATION",
+   "why": "The bridge section emphasizing the arctic freeze and heavy chains while drums fall silent."
   }
  ],
  "words": {
   "no!": "slam",
-  "crib": "neon",
-  "ice": "shimmer",
-  "overseas": "glitch",
-  "freeze": "melt",
+  "crib": "shatter",
+  "ice": "freeze",
+  "overseas": "dissolve",
   "chain": "bleed"
  }
 }

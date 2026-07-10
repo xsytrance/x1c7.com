@@ -1,31 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 30.5,
-   "end": 48.2,
-   "reactor": "graffiti",
-   "why": "Verse 1 hits the 'crumbling history' and narrative storytelling vibe; graffiti fits the du"
+   "start": 28,
+   "end": 43,
+   "label": "THE CRUMBLING ROOT",
+   "why": "Verse 1 peaks as the narrative shifts from humble storytelling to a sense of historical co"
   },
   {
-   "start": 80.5,
-   "end": 94.3,
-   "reactor": "tarot",
-   "why": "Verse 2 brings angry exposition on 'clones' and identity; tarot captures the mystery of fa"
+   "start": 80,
+   "end": 95,
+   "label": "THE CLONE WAR",
+   "why": "Verse 2 begins with high-stakes exposition on genetic and ideological clones; this act cap"
   },
   {
-   "start": 130.5,
-   "end": 146.8,
-   "reactor": "ouija",
-   "why": "The Bridge section is chaos of 'fragmented memories'; ouija evokes the spooky, haunted fee"
+   "start": 132,
+   "end": 157,
+   "label": "CHAOS MEMORY",
+   "why": "The bridge section hits a chaotic low-intensity point (0.22) where fragmented memories and"
   }
  ],
  "words": {
-  "snake": "shatter",
-  "facts": "glitch",
-  "clone": "freeze",
-  "tree": "bloom",
-  "mask": "redact",
-  "clones": "bleed"
+  "snake": "glitch",
+  "clones": "shatter",
+  "tree": "dissolve",
+  "kodak": "freeze",
+  "blaze": "slam",
+  "mask": "redact"
  }
 }

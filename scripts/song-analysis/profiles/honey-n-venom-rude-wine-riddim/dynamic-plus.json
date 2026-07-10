@@ -1,30 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 43,
-   "end": 51,
-   "reactor": "orbit",
-   "why": "Captures the 'Hypnotic Repetition' section where the listener feels floating in a trance o"
-  },
-  {
-   "start": 85,
-   "end": 95,
-   "reactor": "marionette",
-   "why": "Reflects 'Chaotic Passion' and toxic love; the subject is being manipulated by desire like"
+   "start": 25,
+   "end": 39,
+   "label": "THE STROBE BLAST",
+   "why": "First major peak visual moment matching the high-intensity Chorus and 'strobe light' lyric"
   },
   {
    "start": 147,
-   "end": 160,
-   "reactor": "tarot",
-   "why": "Matches 'Unrestrained Chaos' and 'Intoxicated Confusion'; the song's fate feels like a dar"
+   "end": 162,
+   "label": "UNLEASHED CHAOS",
+   "why": "Captures the Dancehall Breakdown section where intensity drops but movement becomes unrest"
   }
  ],
  "words": {
   "venom": "shatter",
   "honey": "bloom",
-  "poison": "glitch",
+  "grind": "slam",
   "burn": "melt",
-  "strobe": "freeze"
+  "poison": "bleed",
+  "strobe": "glitch"
  }
 }

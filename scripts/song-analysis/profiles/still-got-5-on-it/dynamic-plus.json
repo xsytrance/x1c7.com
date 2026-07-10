@@ -1,30 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 13,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "DRUMS & BASS ONLY"
-   },
-   "why": ""
+   "start": 135,
+   "end": 149,
+   "label": "THE PLEA",
+   "why": "Bridge turn; intensity shifts from aggressive lament to urgent plea for shared values."
   },
   {
    "start": 187,
-   "end": 212,
-   "reactor": "tarot",
-   "why": "The 'Drop' at 187s represents the narrator's defeated acceptance and cynical dismissal. Ta"
+   "end": 205,
+   "label": "DEFIANT SILENCE",
+   "why": "Drop moment where the beat cuts and acceptance of brokenness hits hardest."
   }
  ],
  "words": {
   "five": "melt",
-  "hand": "shatter",
-  "candy": "glitch",
-  "brand": "redact",
+  "good days": "shatter",
   "trust": "bleed",
-  "chemical": "tremor"
+  "brand": "glitch",
+  "chemical": "tremor",
+  "candy": "fizz"
  }
 }

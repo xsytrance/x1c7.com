@@ -1,36 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 24,
-   "end": 34,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "THE HEAT RISES"
-   },
-   "why": "Drum-cut window captures the hypnotic low-end groove and synth textures building anticipat"
+   "start": 39,
+   "end": 52,
+   "label": "THE FIRE RISES",
+   "why": "The pre-chorus builds tension with 'sweat' and 'pulse', culminating in the bass drop trans"
   },
   {
-   "start": 52,
-   "end": 60,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "perc"
-    ],
-    "label": "GLOBAL RHYTHMS"
-   },
-   "why": "Drum-cut window isolates the percussive elements and melodic guitar lines for a textural b"
+   "start": 139,
+   "end": 160,
+   "label": "GLOBAL HEAT WAVE",
+   "why": "The first major drop and the 'International heat' hook. This is the peak sensory overload "
+  },
+  {
+   "start": 208,
+   "end": 219,
+   "label": "LINGERING ECHO",
+   "why": "The outro fades out. The energy drops to zero as the final lines about 'fame' and satisfac"
   }
  ],
  "words": {
-  "sweat": "liquid",
+  "sweat": "melt",
   "rhythm": "pulse",
   "curves": "bloom",
   "sin": "glitch",
-  "control": "melt"
+  "control": "shatter",
+  "touch": "neon"
  }
 }

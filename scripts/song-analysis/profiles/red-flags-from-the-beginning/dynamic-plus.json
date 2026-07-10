@@ -1,37 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 14,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "DRUMS & PERC ONLY"
-   },
-   "why": "Captures the 'Chaos and exhaustion' of Verse 1 during a drum-cut window (14-16s extended),"
+   "start": 159,
+   "end": 184,
+   "label": "THE CRUMBLING EGO",
+   "why": "Acting on Verse 2's low intensity (0.32) where the narrator reflects internally; visualize"
   },
   {
-   "start": 73,
-   "end": 85,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "keys"
-    ],
-    "label": "GUITAR & KEYS DUALITY"
-   },
-   "why": "Highlights the instrumental break in Verse 2 where 'Internal reflection and crumbling ego'"
+   "start": 255,
+   "end": 280,
+   "label": "CATHARSIS & ACCEPTANCE",
+   "why": "The Final Chorus represents the song's resolution and release; a massive visual payoff for"
   }
  ],
  "words": {
-  "fucked": "shatter",
-  "sirens": "glitch",
-  "money": "burn",
-  "silence": "dissolve",
-  "red flags": "carve",
-  "moon": "freeze"
+  "flags": "shatter",
+  "money": "bleed",
+  "silence": "freeze",
+  "fire": "burn",
+  "moon": "tremor",
+  "scar": "carve"
  }
 }

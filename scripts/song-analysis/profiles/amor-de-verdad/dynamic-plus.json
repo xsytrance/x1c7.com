@@ -1,36 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 21,
-   "end": 37,
-   "stemSpot": {
-    "solo": [
-     "guitar",
-     "keys"
-    ],
-    "label": "ACOUSTIC GHOSTS ONLY"
-   },
-   "why": "Drum-cut window (21-25s) allows for an intimate instrumental break focusing on the song's "
+   "start": 53,
+   "end": 78,
+   "label": "EL FALLO DE CINE",
+   "why": "The Pre-Chorus tension culminates into the Chorus where the artist explicitly rejects 'amo"
   },
   {
-   "start": 60,
-   "end": 85,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "bass"
-    ],
-    "label": "RHYTHM & GRAVITY ONLY"
-   },
-   "why": "Drum-cut window (60-63s) provides a stripped-back groove to emphasize the bassline's weigh"
+   "start": 97,
+   "end": 120,
+   "label": "LA VERDAD CRUDA",
+   "why": "The Bridge section hits an angry realization of futility. The lyrics demand self-preservat"
   }
  ],
  "words": {
   "temblé": "tremor",
   "cine": "glitch",
-  "agua": "dissolve",
+  "agua": "melt",
   "verdad": "slam",
-  "guárdala": "shatter"
+  "guárdala": "freeze",
+  "porco": "redact"
  }
 }

@@ -128,10 +128,9 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   const performs = canPerform(track);
 
   // ── THE CONDUCTOR (Phase 6 · DYNAMIC+) ────────────────────────────────────
-  // Walks the LLM-choreographed acts against the playhead — but only as
-  // VISUAL moments now: the backdrop holds & brightens for the window, and
-  // spotlight acts show their billing chip. It never touches the audio, the
-  // stem mix, or the Reactor (the owner retired the takeovers).
+  // Walks the LLM-choreographed acts against the playhead as VISUAL moments:
+  // the backdrop holds & brightens for the window, and the act's billing
+  // chip shows. It never touches the audio, the stem mix, or the Reactor.
   const [moment, setMoment] = useState<{ on: boolean; label: string | null }>({ on: false, label: null });
   useEffect(() => {
     if (!open || !performs || pass < 6 || !dynPlus?.acts?.length) return;
@@ -139,9 +138,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
     const iv = window.setInterval(() => {
       const t = getCurrentTime();
       const act = acts.find((a) => t >= a.start && t < a.end) ?? null;
-      // Reactor-flavored acts get the backdrop accent only — no chip (the
-      // mode id would advertise a takeover that no longer happens).
-      const label = act?.stemSpot?.label ?? null;
+      const label = act?.label ?? null;
       setMoment((prev) => (prev.on === !!act && prev.label === label ? prev : { on: !!act, label }));
     }, 400);
     return () => { window.clearInterval(iv); setMoment({ on: false, label: null }); };

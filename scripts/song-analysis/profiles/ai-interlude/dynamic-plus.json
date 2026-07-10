@@ -1,17 +1,29 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 10,
-   "end": 25,
-   "reactor": "orbit",
-   "why": "The song's ethereal drive and futuristic isolation vibe perfectly match the 'orbit' mode, "
+   "end": 24,
+   "label": "THE DROP HITS",
+   "why": "Captures the first major atmospheric shift into ethereal drive."
+  },
+  {
+   "start": 36,
+   "end": 50,
+   "label": "INTO THE VOID",
+   "why": "Highlights the bridge turn and internal reflection moment."
   }
  ],
  "words": {
-  "solitary": "glitch",
+  "solitary": "dissolve",
   "ethereal": "bloom",
-  "futuristic": "shimmer",
-  "introspective": "whisper"
+  "futuristic": "neon",
+  "introspective": "whisper",
+  "minimalist": "freeze",
+  "digital": "glitch",
+  "isolation": "shatter",
+  "wonder": "pulse",
+  "hope": "rise",
+  "silence": "tvoff"
  }
 }

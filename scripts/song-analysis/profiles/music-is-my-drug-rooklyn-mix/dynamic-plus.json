@@ -1,56 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 12,
-   "end": 37,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "THE BASSELINE SPEAKS"
-   },
-   "why": ""
-  },
-  {
-   "start": 60,
-   "end": 85,
-   "stemSpot": {
-    "solo": [
-     "lead"
-    ],
-    "label": "THE FIRE RISES"
-   },
-   "why": ""
-  },
-  {
-   "start": 90,
-   "end": 115,
-   "stemSpot": {
-    "solo": [
-     "lead"
-    ],
-    "label": "THE HOOK CLEARS MIND"
-   },
-   "why": ""
+   "start": 124,
+   "end": 149,
+   "label": "STRANGERS TO SOUL",
+   "why": "Culminates the 'broken shine' and collective trance moment where pain transforms into moti"
   },
   {
    "start": 176,
    "end": 201,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "lead"
-    ],
-    "label": "COLLECTIVE TRANCE MODE"
-   },
-   "why": ""
+   "label": "THE EXPLOSIVE DROP",
+   "why": "Captures the intensity peak of 1.0 at the main drop with maximum kinetic energy and rhythm"
+  },
+  {
+   "start": 245,
+   "end": 270,
+   "label": "FINAL EUPHORIA",
+   "why": "Secures the lingering high of the 'alive' chorus before the final fade-out at 292s."
   }
  ],
  "words": {
-  "drug": "shatter",
-  "fire": "bloom",
-  "pain": "melt",
-  "alive": "pulse"
+  "drug": "burn",
+  "fire": "slam",
+  "pain": "shatter",
+  "alive": "pulse",
+  "gold": "bloom",
+  "soul": "rise"
  }
 }

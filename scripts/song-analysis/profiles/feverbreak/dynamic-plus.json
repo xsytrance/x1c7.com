@@ -1,35 +1,26 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 45,
-   "end": 62,
-   "stemSpot": {
-    "solo": [
-     "strings"
-    ],
-    "label": "THE STRINGS SPEAK"
-   },
-   "why": ""
+   "start": 40,
+   "end": 52,
+   "label": "NIGHT FEVER BREAKS",
+   "why": "Captures the relief moment as sparse strings resolve after aggressive viola/cello rhythms."
   },
   {
-   "start": 86,
-   "end": 105,
-   "stemSpot": {
-    "solo": [
-     "perc"
-    ],
-    "label": "TACTICAL SNARE"
-   },
-   "why": ""
+   "start": 68,
+   "end": 79,
+   "label": "HEROIC DROP",
+   "why": "Marks the peak tension where brass accents and timpani strikes hit maximum heroic intensit"
   }
  ],
  "words": {
-  "noble": "bloom",
-  "dangerous": "shatter",
-  "urgent": "pulse",
+  "thank": "shimmer",
+  "feverbreak": "bloom",
   "tactical": "glitch",
-  "feverbreak": "dissolve",
-  "aggressive": "slam"
+  "aggressive": "slam",
+  "noble": "rise",
+  "urgent": "pulse",
+  "dangerous": "redact"
  }
 }

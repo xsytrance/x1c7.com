@@ -1,39 +1,30 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 25,
-   "stemSpot": {
-    "solo": [
-     "synth",
-     "lead"
-    ],
-    "label": "HYPNOTIC LEAD & SYNTH"
-   },
-   "why": ""
+   "start": 12,
+   "end": 30,
+   "label": "THE HYPNOTIC RISE",
+   "why": "Captures the transition from quiet reverence to the first major build-up of intensity befo"
   },
   {
-   "start": 60,
-   "end": 85,
-   "reactor": "fireworks",
-   "why": "The first chorus and drop represent the peak euphoria; a fireworks reactor captures the ex"
+   "start": 48,
+   "end": 72,
+   "label": "CATHARTIC RELEASE",
+   "why": "Marks the explosive Chorus and Bridge turn where collective joy peaks and sorrow is purged"
   },
   {
-   "start": 135,
-   "end": 160,
-   "stemSpot": {
-    "solo": [
-     "other"
-    ],
-    "label": "ATMOSPHERIC CLOUDS"
-   },
-   "why": ""
+   "start": 101,
+   "end": 126,
+   "label": "EUPHORIC WEIGHTLESS",
+   "why": "The definitive Drop moment representing peak sonic weightlessness and the hypnotic state o"
   }
  ],
  "words": {
-  "thank": "bloom",
-  "drug": "shatter",
-  "cathartic": "dissolve"
+  "thank": "pulse",
+  "you": "shimmer",
+  "drug": "glitch",
+  "hypnotic": "liquid",
+  "cathartic": "bloom"
  }
 }

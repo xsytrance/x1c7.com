@@ -1,60 +1,32 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 29,
    "end": 47,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "DRUMS & BASS ONLY"
-   },
-   "why": ""
+   "label": "WHISTLE SCREAMS",
+   "why": "Captures the 'Manic rhythmic chaos' of the first chorus where the whistle hook drives the "
   },
   {
-   "start": 94,
-   "end": 102,
-   "stemSpot": {
-    "solo": [
-     "perc",
-     "lead"
-    ],
-    "label": "PERC & LEAD ONLY"
-   },
-   "why": ""
+   "start": 92,
+   "end": 106,
+   "label": "SHADOW STEERS",
+   "why": "Highlights the 'Quiet window' in Verse 1 where tension builds as a shadow begins steering "
   },
   {
-   "start": 164,
-   "end": 182,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "synth"
-    ],
-    "label": "BASS & SYNTH ONLY"
-   },
-   "why": ""
-  },
-  {
-   "start": 205,
-   "end": 230,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "other"
-    ],
-    "label": "LEAD & ATMOSPHERE ONLY"
-   },
-   "why": ""
+   "start": 234,
+   "end": 259,
+   "label": "FLAMES CONSUME",
+   "why": "Sets up the finale by visualizing the 'deck full of flames' and the destructive heat consu"
   }
  ],
  "words": {
   "whistle": "slam",
   "membrane": "shatter",
+  "chain": "carve",
   "fog": "dissolve",
   "steam": "glitch",
   "flames": "burn",
-  "villain": "carve"
+  "shadow": "bleed"
  }
 }

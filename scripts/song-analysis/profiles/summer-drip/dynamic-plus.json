@@ -1,35 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 18,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "drums"
-    ],
-    "label": "BASS & DRUMS ONLY"
-   },
-   "why": "Intro drum-cut window (0-2s) and low-frequency bass groove establish the 'chopped' foundat"
+   "start": 150,
+   "end": 173,
+   "label": "THE FLAME RISES",
+   "why": "Captures the 'flame' and confident strut from Verse 2 where intensity shifts to playful ar"
   },
   {
-   "start": 45,
-   "end": 70,
-   "stemSpot": {
-    "solo": [
-     "lead",
-     "synth"
-    ],
-    "label": "LEAD & SYNTH"
-   },
-   "why": "Verse 1 features regal poise and 'smooth southern flow'; isolating lead vocal and atmosphe"
+   "start": 205,
+   "end": 230,
+   "label": "MIDNIGHT ALLURE",
+   "why": "Highlights the sultry confidence of moving smooth in the midnight section before the outro"
   }
  ],
  "words": {
-  "sunshine": "bloom",
-  "slow": "pulse",
-  "flame": "burn",
-  "thirsty": "shatter"
+  "slow": "melt",
+  "flame": "pulse",
+  "hotter": "burn",
+  "drip": "shimmer",
+  "cold": "freeze",
+  "sweet": "bloom"
  }
 }

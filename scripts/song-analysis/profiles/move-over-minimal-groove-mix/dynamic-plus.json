@@ -1,32 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 52,
-   "end": 61,
-   "reactor": "aquarium",
-   "why": "The Post-Hook crowd chant offers a collective, floaty moment of deep bass resonance and so"
+   "start": 47,
+   "end": 63,
+   "label": "THE DROP HITS",
+   "why": "Marks the first major peak energy at Hook B (1.0 intensity) where confidence peaks and the"
   },
   {
-   "start": 135,
-   "end": 149,
-   "reactor": "sizzle",
-   "why": "The Pre-Hook builds tension before the final heat; 'sizzle' captures the rising summer swe"
-  },
-  {
-   "start": 158,
-   "end": 167.9,
-   "reactor": "handwriting",
-   "why": "The Bridge is a minimalist pause emphasizing singular presence; 'handwriting' fits the int"
+   "start": 141,
+   "end": 158,
+   "label": "FINAL HEAT",
+   "why": "Captures the final chorus repetition before the minimalist bridge breakdown at 0.9 intensi"
   }
  ],
  "words": {
   "heat": "burn",
-  "room": "echo",
+  "room": "pulse",
   "summer": "bloom",
   "smooth": "liquid",
   "drip": "shimmer",
-  "swagger": "pulse",
-  "move": "slam"
+  "swaggar": "glitch"
  }
 }

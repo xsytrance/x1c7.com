@@ -1,58 +1,18 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 24,
-   "end": 36,
-   "stemSpot": {
-    "solo": [
-     "perc"
-    ],
-    "label": "PERC ONLY"
-   },
-   "why": ""
-  },
-  {
    "start": 46,
-   "end": 58,
-   "stemSpot": {
-    "solo": [
-     "keys"
-    ],
-    "label": "THE KEYS SPEAK"
-   },
-   "why": ""
+   "end": 71,
+   "label": "THE BIRTHDAY GLOW",
+   "why": "Quiet window (46-59s) sets the stage for a radiant build-up into the main chorus; captures"
   },
   {
-   "start": 90,
-   "end": 105,
-   "stemSpot": {
-    "solo": [
-     "bass",
-     "guitar"
-    ],
-    "label": "BASS & GUITAR ONLY"
-   },
-   "why": ""
-  },
-  {
-   "start": 128,
-   "end": 140,
-   "stemSpot": {
-    "solo": [
-     "synth",
-     "other"
-    ],
-    "label": "CINEMATIC LAYERS ONLY"
-   },
-   "why": ""
+   "start": 103,
+   "end": 127,
+   "label": "AFTER THE STORM",
+   "why": "Reflective bridge section (intensity drop) leading into the final 'Drop' at 128s; utilizes"
   }
  ],
- "words": {
-  "shine": "bloom",
-  "glow": "neon",
-  "spotlight": "redact",
-  "dress": "shimmer",
-  "candles": "burn"
- }
+ "words": {}
 }

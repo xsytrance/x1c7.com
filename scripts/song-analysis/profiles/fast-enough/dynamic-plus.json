@@ -1,41 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 18,
-   "stemSpot": {
-    "solo": [
-     "synth"
-    ],
-    "label": "SYNTH INTRO"
-   },
-   "why": ""
-  },
-  {
    "start": 46,
-   "end": 68,
-   "stemSpot": {
-    "solo": [
-     "bass"
-    ],
-    "label": "BASS DRIVE"
-   },
-   "why": ""
+   "end": 70,
+   "label": "THE SPEED LIMIT BUSTED",
+   "why": "First major drop after Pre-Hook; captures the 'Fast Enough' hook's euphoric energy."
   },
   {
-   "start": 105,
-   "end": 123,
-   "reactor": "fireworks",
-   "why": "The Bridge is the explosive release point where energy peaks; fireworks provide a massive,"
+   "start": 96,
+   "end": 121,
+   "label": "LEVEL UP ALL NIGHT",
+   "why": "Mid-verse 2 to Bridge transition showcasing confident power and explosive release."
   }
  ],
  "words": {
-  "fast": "pulse",
-  "boost": "shimmer",
-  "caught": "glitch",
-  "lights": "bloom",
-  "level": "rise",
-  "invincible": "slam"
+  "in overdrive": "pulse",
+  "speed of you": "neon",
+  "don't stop now": "slam",
+  "brand new": "bloom",
+  "go all the way": "rise",
+  "touch the sky": "shimmer"
  }
 }

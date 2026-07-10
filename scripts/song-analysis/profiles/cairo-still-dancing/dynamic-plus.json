@@ -1,35 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
-   "start": 10,
-   "end": 24,
-   "stemSpot": {
-    "solo": [
-     "drums",
-     "perc"
-    ],
-    "label": "THE DRUMS SPEAK"
-   },
-   "why": ""
+   "start": 80,
+   "end": 105,
+   "label": "FIRE IN THE NAME",
+   "why": "Cinematic peak where the male lead's verse ignites with raw cultural pride and visual inte"
   },
   {
-   "start": 109,
-   "end": 134,
-   "reactor": "fireworks",
-   "why": "Euphoric release and collective power at the peak chorus requires maximum celebration ener"
-  },
-  {
-   "start": 205,
-   "end": 230,
-   "reactor": "constellation",
-   "why": "Reflective tenderness and enduring rhythm calls for quiet awe as the night sky metaphor."
+   "start": 193,
+   "end": 218,
+   "label": "EXPLOSIVE PRIDE DROP",
+   "why": "The final climax featuring the 'raw cultural heartbeat' where energy explodes into a rhyth"
   }
  ],
  "words": {
   "rise": "shatter",
   "sand": "bleed",
+  "fire": "burn",
   "drums": "pulse",
-  "heart": "bloom"
+  "falling": "glitch",
+  "city lights": "neon"
  }
 }

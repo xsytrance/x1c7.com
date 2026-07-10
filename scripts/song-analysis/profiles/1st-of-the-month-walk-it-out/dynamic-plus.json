@@ -1,36 +1,31 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
   {
    "start": 29,
-   "end": 45,
-   "reactor": "graffiti",
-   "why": "Verse 1 grounds the listener in East Coast hip-hop roots and borough pride; graffiti captu"
+   "end": 54,
+   "label": "EAST SIDE RISE",
+   "why": "Verse 1 introduces the gritty East Elmhurst origin and heritage; this act captures the 'Gr"
   },
   {
    "start": 85,
-   "end": 96,
-   "stemSpot": {
-    "solo": [
-     "drums"
-    ],
-    "label": "THE DRUMS SPEAK"
-   },
-   "why": ""
+   "end": 107,
+   "label": "THE VOID TRANSFORMS",
+   "why": "Mid-verse bridge section where the lyrical alchemy happens ('Turn the void into gold'); a "
   },
   {
    "start": 139,
-   "end": 152,
-   "reactor": "fireworks",
-   "why": "Verse 3 brings commanding motion and triumphant renewal; fireworks explode the energy to m"
+   "end": 164,
+   "label": "COMMANDING MOTION",
+   "why": "The final high-energy section combining Verse 3's commanding motion with the Outro's refle"
   }
  ],
  "words": {
   "walk": "slam",
   "void": "shatter",
   "discipline": "freeze",
-  "move": "pulse",
-  "borough": "glitch",
+  "move": "glitch",
+  "borough": "neon",
   "dishonor": "redact"
  }
 }

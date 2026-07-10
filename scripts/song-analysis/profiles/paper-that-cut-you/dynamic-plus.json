@@ -1,42 +1,25 @@
 {
- "v": 1,
+ "v": 2,
  "acts": [
-  {
-   "start": 98,
-   "end": 106,
-   "stemSpot": {
-    "solo": [
-     "guitar"
-    ],
-    "label": "THE SHARP EDGE"
-   },
-   "why": ""
-  },
   {
    "start": 140,
    "end": 165,
-   "reactor": "marionette",
-   "why": "The 'Ominous Stalking' section perfectly matches the marionette mode's vibe of manipulatio"
+   "label": "THE SHADOW STRIKES",
+   "why": "Post-Chorus ominous stalking moment where paranoia peaks; visual chaos matches the 'ominou"
   },
   {
    "start": 237,
    "end": 260,
-   "stemSpot": {
-    "solo": [
-     "synth",
-     "drums"
-    ],
-    "label": "DIGITAL STATIC ONLY"
-   },
-   "why": ""
+   "label": "MAXIMAL DISTORTION",
+   "why": "Second Chorus hit with highest intensity distortion; the stage must visually shatter and g"
   }
  ],
  "words": {
   "paranoid": "glitch",
-  "cut": "shatter",
   "shadow": "bleed",
+  "static": "shimmer",
   "voice": "echo",
-  "lie": "melt",
-  "skin": "dissolve"
+  "cut": "slam",
+  "spinning": "tremor"
  }
 }
