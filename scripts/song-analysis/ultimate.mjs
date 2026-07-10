@@ -63,9 +63,14 @@ if (args.suno && args.suno !== true) {
     clips.push(...(p.clips ?? []));
     if (!p.clips?.length || clips.length >= (p.num_total_clips ?? 0)) break;
   }
+  // norm strips everything but [a-z0-9] — survives "&&", accents, CJK
+  // prefixes, and "xsytrance Presents:" title dressing.
+  const norm = (s) => String(s ?? "").toLowerCase().normalize("NFD").replace(/[^a-z0-9]+/g, "");
   const c = clips.find((x) => x.id === key)
     ?? clips.find((x) => slugify(x.title ?? "") === key)
-    ?? clips.find((x) => (x.title ?? "").toLowerCase().includes(key));
+    ?? clips.find((x) => (x.title ?? "").toLowerCase().includes(key))
+    ?? clips.find((x) => norm(x.title) === norm(key))
+    ?? clips.find((x) => norm(x.title).includes(norm(key)) || norm(key).includes(norm(x.title)));
   if (!c) { console.error(`✗ no public clip matching "${args.suno}" on @${handle}`); process.exit(1); }
   suno = {
     id: c.id, title: c.title?.trim(), tags: c.metadata?.tags ?? null,
