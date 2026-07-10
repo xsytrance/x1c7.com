@@ -100,6 +100,23 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ===== SUNO GRATITUDE — up top so nobody has to scroll to find it ===== */}
+      <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-6 text-center sm:px-10">
+          <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">a note on origins</p>
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-8 text-white/75">
+            AGENOR is <b className="font-semibold text-white/90">not affiliated with{" "}
+            <a href="https://suno.com" target="_blank" rel="noopener noreferrer" className="underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Suno</a></b> —
+            but every one of these transmissions began there. The writing, the worlds, the covers, the shows are ours;
+            the spark that made them possible is theirs. Endless gratitude to the Suno team.
+          </p>
+          <a href="https://suno.com/@xsytrance" target="_blank" rel="noopener noreferrer"
+            className="mt-4 inline-block rounded-sm border border-white/20 px-5 py-2.5 font-mono text-xs tracking-[0.2em] text-white/70 transition hover:border-white/60 hover:text-white">
+            THE CATALOG ON SUNO ↗
+          </a>
+        </div>
+      </section>
+
       {/* ===== LIVE VISUALIZER (only while the real player runs) ===== */}
       {isPlaying && (
         <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -146,18 +163,19 @@ export default function Page() {
         <GalaxyButton />
       </section>
 
-      {/* ===== SUNO GRATITUDE ===== */}
+      {/* ===== KINETICA — the engine behind the shows ===== */}
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-8 text-center sm:px-10">
-          <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">a note on origins</p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">the engine behind the shows</p>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/75">
-            AGENOR is not affiliated with <a href="https://suno.com" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Suno</a> —
-            but every one of these transmissions began there. The writing, the worlds, the covers, the shows are ours;
-            the spark that made them possible is theirs. Endless gratitude to the Suno team.
+            Every full show on this shelf is performed live by <a href="https://xsytrance.github.io/kinetica/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Kinetica</a> —
+            our free, <a href="https://github.com/xsytrance/kinetica" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">open-source</a> lyric-video
+            engine. Drop a Suno stem zip and it listens to the actual drums and bass, igniting every word in time with the
+            music. It runs entirely in your browser — your song never leaves your machine.
           </p>
-          <a href="https://suno.com/@xsytrance" target="_blank" rel="noopener noreferrer"
+          <a href="https://xsytrance.github.io/kinetica/" target="_blank" rel="noopener noreferrer"
             className="mt-5 inline-block rounded-sm border border-white/20 px-5 py-2.5 font-mono text-xs tracking-[0.2em] text-white/70 transition hover:border-white/60 hover:text-white">
-            THE CATALOG ON SUNO ↗
+            TRY KINETICA WITH YOUR OWN TRACKS ↗
           </a>
         </div>
       </section>
