@@ -143,18 +143,18 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
       {/* the deck */}
       <div
         ref={scrollerRef}
-        className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto px-[10vw] pb-2"
+        className="no-scrollbar -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-[16vw] pb-2"
       >
         {deck.map((t) => {
           const p = classifyGenre(t.genre);
           const isActive = t.id === activeId;
           const isPreviewing = preview.state.id === t.id;
           return (
-            <div key={t.id} data-track-id={t.id} className="w-[80vw] max-w-[420px] shrink-0 snap-center">
+            <div key={t.id} data-track-id={t.id} className="w-[68vw] max-w-[380px] shrink-0 snap-center">
               <motion.button
                 onClick={() => tapCard(t)}
                 className="relative block w-full overflow-hidden rounded-lg text-left"
-                animate={{ scale: isActive ? 1 : 0.92, opacity: isActive ? 1 : 0.55 }}
+                animate={{ scale: isActive ? 1 : 0.9, opacity: isActive ? 1 : 0.68 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 style={{ boxShadow: isActive ? `0 20px 60px -18px ${p.accent}55` : "0 10px 30px -14px #000c" }}
                 aria-label={`${t.title} — tap to hear the drop, tap again to stop`}
@@ -173,7 +173,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                   </div>
                 )}
               </motion.button>
-              <div className="mt-3 px-1">
+              <div className={`mt-3 px-1 transition-opacity duration-300 ${isActive ? "opacity-100" : "pointer-events-none opacity-0"}`}>
                 <div className="flex items-center gap-2 font-mono text-[11px] text-white/60">
                   <span className="rounded-sm px-1.5 py-0.5 text-black" style={{ background: p.accent }}>{p.label}</span>
                   {t.mood ? <span className="truncate">{t.mood}</span> : null}
