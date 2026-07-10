@@ -4,7 +4,7 @@
 // exists on R2 (SonicDossier pattern), so shipping a new booklet needs zero
 // deploys. Every page renders defensively: a missing block is simply absent.
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import type { BookletData, BookletPage } from "@/lib/booklet";
 import { InstrumentGlyph } from "@/components/StemGlyphs";
@@ -173,12 +173,25 @@ function PageBody({ page, slug, accent }: { page: BookletPage; slug: string; acc
   }
 }
 
-export default function Booklet({ slug, accent }: { slug: string; accent: string }) {
+export interface BookletHandle {
+  /** open the booklet if one exists; returns whether it did */
+  open: () => boolean;
+}
+
+const Booklet = forwardRef<BookletHandle, { slug: string; accent: string }>(function Booklet({ slug, accent }, ref) {
   const [data, setData] = useState<BookletData | null>(null);
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
   const [dir, setDir] = useState(1);
   const [touchX, setTouchX] = useState<number | null>(null);
+
+  useImperativeHandle(ref, () => ({
+    open: () => {
+      if (!data) return false;
+      setIdx(0); setOpen(true);
+      return true;
+    },
+  }), [data]);
 
   useEffect(() => {
     let dead = false;
@@ -260,4 +273,6 @@ export default function Booklet({ slug, accent }: { slug: string; accent: string
       </AnimatePresence>
     </>
   );
-}
+});
+
+export default Booklet;

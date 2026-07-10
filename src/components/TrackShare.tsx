@@ -4,7 +4,7 @@
 // can perform). If the ultimate analyzer has published a profile.json for
 // this track, its SONIC DOSSIER renders below — no code change needed there.
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { TrackRow } from "@/lib/supabase";
@@ -17,7 +17,7 @@ import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
 import ShareButton from "@/components/ShareButton";
 import SonicDossier from "@/components/SonicDossier";
-import Booklet from "@/components/Booklet";
+import Booklet, { type BookletHandle } from "@/components/Booklet";
 
 export default function TrackShare({ row }: { row: TrackRow }) {
   const track = useMemo(() => trackFromRow(row), [row]);
@@ -25,6 +25,7 @@ export default function TrackShare({ row }: { row: TrackRow }) {
   const preview = usePreview(pause);
   const [meta, setMeta] = useState<StemData | null>(null);
   const pal = classifyGenre(track.genre);
+  const booklet = useRef<BookletHandle>(null);
 
   useEffect(() => { void stemsFor(track).then(setMeta); }, [track]);
 
@@ -44,9 +45,11 @@ export default function TrackShare({ row }: { row: TrackRow }) {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={cardUrl(track.id)} alt={`${track.title} collector cover`}
-            className="mx-auto aspect-square w-full max-w-[480px] rounded-lg object-cover"
+            className="mx-auto aspect-square w-full max-w-[480px] cursor-pointer rounded-lg object-cover"
             style={{ boxShadow: `0 30px 90px -24px ${pal.accent}66` }}
             onError={(e) => { (e.currentTarget as HTMLImageElement).src = track.cover || track.art; }}
+            onClick={() => booklet.current?.open()}
+            title="open the case"
           />
         </motion.div>
 
@@ -102,8 +105,8 @@ export default function TrackShare({ row }: { row: TrackRow }) {
           <p className="mx-auto mt-8 max-w-md text-sm leading-7 text-white/55">{track.planet.analysis.summary}</p>
         ) : null}
 
-        {/* the insert — appears only once booklet.json exists on R2 */}
-        <Booklet slug={track.id} accent={pal.accent} />
+        {/* the insert — appears only once booklet.json exists on R2; the cover art opens it too */}
+        <Booklet ref={booklet} slug={track.id} accent={pal.accent} />
 
 
         <SonicDossier slug={track.id} accent={pal.accent} bpm={meta?.bpm} duration={meta?.duration} />
