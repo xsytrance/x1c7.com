@@ -12,6 +12,7 @@ import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
 import { detectLite } from "@/lib/perf";
 import ShareButton from "@/components/ShareButton";
+import Booklet, { type BookletHandle } from "@/components/Booklet";
 
 const HOVER_PREVIEW_DELAY = 380;
 
@@ -67,6 +68,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
   // tap of the same spine — the first pulls the case and previews the drop.
   const armedId = useRef<string | null>(null);
   const preview = usePreview(onPauseMain);
+  const booklet = useRef<BookletHandle>(null);
 
   const shelf = useMemo(
     () => (filter ? tracks.filter((t) => classifyGenre(t.genre).key === filter) : tracks),
@@ -207,9 +209,11 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img src={cardUrl(focused.id)} alt={focused.title}
-                  className="aspect-square w-full rounded-md object-cover"
+                  className="aspect-square w-full cursor-pointer rounded-md object-cover"
                   style={{ boxShadow: `0 24px 70px -20px ${pal.accent}55` }}
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = focused.cover || focused.art; }}
+                  onClick={() => booklet.current?.open()}
+                  title="open the case"
                 />
                 <div className="mt-4 flex items-center gap-3 font-mono text-xs text-white/60">
                   <span className="rounded-sm px-2 py-0.5 text-black" style={{ background: pal.accent }}>{pal.label}</span>
@@ -229,6 +233,8 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                       🪐 FULL SHOW READY
                     </span>
                   )}
+                  {/* the insert — chip appears only when this song's booklet exists */}
+                  <Booklet ref={booklet} slug={focused.id} accent={pal.accent} sizing="px-3 py-2 text-xs" label="📖 INSERT" />
                   {focused.sunoUrl && (
                     <a href={focused.sunoUrl} target="_blank" rel="noopener noreferrer"
                       className="rounded-sm border border-white/20 px-3 py-2 font-mono text-xs tracking-[0.14em] text-white/70 transition hover:border-white/60 hover:text-white">
@@ -240,7 +246,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                 <p className="mt-3 font-mono text-[11px] tracking-[0.12em] text-white/35">
                   {preview.state.blocked ? "CLICK ANYWHERE TO ENABLE SOUND PREVIEWS" :
                     previewing ? `PREVIEWING THE DROP · ${fmtTime(preview.state.startAt)}` :
-                    "HOVER TO HEAR THE HOTTEST BAR"}
+                    "HOVER TO HEAR THE HOTTEST BAR · CLICK THE CASE FOR THE INSERT"}
                 </p>
               </motion.div>
             ) : (

@@ -178,7 +178,13 @@ export interface BookletHandle {
   open: () => boolean;
 }
 
-const Booklet = forwardRef<BookletHandle, { slug: string; accent: string }>(function Booklet({ slug, accent }, ref) {
+const Booklet = forwardRef<BookletHandle, {
+  slug: string;
+  accent: string;
+  /** trigger size/spacing classes — ShareButton convention */
+  sizing?: string;
+  label?: string;
+}>(function Booklet({ slug, accent, sizing = "mt-4 px-5 py-3 text-sm", label = "📖 OPEN THE BOOKLET" }, ref) {
   const [data, setData] = useState<BookletData | null>(null);
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
@@ -224,8 +230,8 @@ const Booklet = forwardRef<BookletHandle, { slug: string; accent: string }>(func
   return (
     <>
       <button onClick={() => { setIdx(0); setOpen(true); }}
-        className="mt-4 rounded-sm border border-white/20 px-5 py-3 font-mono text-sm tracking-[0.16em] text-white/70 transition hover:border-white/60 hover:text-white">
-        📖 OPEN THE BOOKLET
+        className={`rounded-sm border border-white/20 font-mono tracking-[0.16em] text-white/70 transition hover:border-white/60 hover:text-white ${sizing}`}>
+        {label}
       </button>
 
       <AnimatePresence>

@@ -11,6 +11,7 @@ import { classifyGenre, cardUrl, fmtTime, GENRE_PALETTES, type GenreKey } from "
 import { usePreview } from "@/lib/usePreview";
 import { detectLite } from "@/lib/perf";
 import ShareButton from "@/components/ShareButton";
+import Booklet from "@/components/Booklet";
 
 const PREVIEW_LEN = 20;
 
@@ -177,6 +178,8 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                   {t.mood ? <span className="truncate">{t.mood}</span> : null}
                   {canPerform(t) ? <span>🪐</span> : null}
                   <span className="ml-auto flex shrink-0 items-center gap-1.5">
+                    {/* the insert — fetched only for the centered card */}
+                    {isActive ? <Booklet slug={t.id} accent={p.accent} sizing="px-2 py-0.5 text-[11px]" label="📖 INSERT" /> : null}
                     {t.sunoUrl ? (
                       <a href={t.sunoUrl} target="_blank" rel="noopener noreferrer" className="rounded-sm border border-white/20 px-2 py-0.5 text-white/60">
                         SUNO ↗

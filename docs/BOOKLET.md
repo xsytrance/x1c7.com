@@ -101,7 +101,9 @@ node scripts/booklet/batch-booklets.mjs   # mirror of batch-dossiers.mjs:
 1. Booklet-specific ComfyUI art style (a "print illustration" look?) vs pure
    gallery reuse for v1.
 2. Print/PDF export priority — Phase 2 or later.
-3. Should the booklet open from the shelf case on /music too, or stay a
-   share-page exclusive (a reason to send links)?
+3. ~~Should the booklet open from the shelf case on /music too?~~ **Decided
+   (2026-07-09): yes** — the pulled case's art + a 📖 INSERT chip open it on
+   the shelf; the deck's centered card gets the chip (card tap stays
+   preview/play).
 4. Level-name flavor: earnest (section moods) or full retro-manual cheese
    ("STAGE 3: THE RISER GAUNTLET"). The LLM can do either; pick a voice.
