@@ -17,6 +17,7 @@ import { usePreview, stemsFor } from "@/lib/usePreview";
 import type { StemData } from "@/lib/stemSense";
 import ShareButton from "@/components/ShareButton";
 import SonicDossier from "@/components/SonicDossier";
+import Booklet from "@/components/Booklet";
 
 export default function TrackShare({ row }: { row: TrackRow }) {
   const track = useMemo(() => trackFromRow(row), [row]);
@@ -100,6 +101,10 @@ export default function TrackShare({ row }: { row: TrackRow }) {
         {track.planet?.analysis?.summary ? (
           <p className="mx-auto mt-8 max-w-md text-sm leading-7 text-white/55">{track.planet.analysis.summary}</p>
         ) : null}
+
+        {/* the insert — appears only once booklet.json exists on R2 */}
+        <Booklet slug={track.id} accent={pal.accent} />
+
 
         <SonicDossier slug={track.id} accent={pal.accent} bpm={meta?.bpm} duration={meta?.duration} />
 
