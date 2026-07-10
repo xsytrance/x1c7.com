@@ -36,8 +36,8 @@ export default function Page() {
   const { currentTrack, isPlaying, analyser, playTrack: playFromCtx, pause } = useMusicPlayer();
   const mode = useDeviceMode();
   const [query, setQuery] = useState("");
-  // Mobile view: the spine shelf is the default; the deck is one tap away.
-  const [view, setView] = useState<"spines" | "deck">("spines");
+  // Mobile view: the deck is the default; the spine shelf is one tap away.
+  const [view, setView] = useState<"spines" | "deck">("deck");
   useEffect(() => {
     const saved = localStorage.getItem("x1c7-collection-view");
     if (saved === "deck" || saved === "spines") setView(saved);
