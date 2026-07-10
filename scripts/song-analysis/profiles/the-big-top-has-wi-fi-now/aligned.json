@@ -1,0 +1,2936 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 730,
+  "clumps": [],
+  "clumpedWords": 0,
+  "clumpRatio": 0.0,
+  "span": 318.4,
+  "duration": 319.5,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Ladies"
+  },
+  {
+   "t": 0.48,
+   "w": "and"
+  },
+  {
+   "t": 0.64,
+   "w": "gentlemen"
+  },
+  {
+   "t": 2.0,
+   "w": "Bots"
+  },
+  {
+   "t": 2.64,
+   "w": "and"
+  },
+  {
+   "t": 2.8,
+   "w": "scripts"
+  },
+  {
+   "t": 4.16,
+   "w": "Keys"
+  },
+  {
+   "t": 4.8,
+   "w": "and"
+  },
+  {
+   "t": 4.96,
+   "w": "clouds"
+  },
+  {
+   "t": 7.04,
+   "w": "Welcome"
+  },
+  {
+   "t": 7.68,
+   "w": "to"
+  },
+  {
+   "t": 7.76,
+   "w": "the"
+  },
+  {
+   "t": 7.92,
+   "w": "only"
+  },
+  {
+   "t": 8.32,
+   "w": "circus"
+  },
+  {
+   "t": 9.92,
+   "w": "Where"
+  },
+  {
+   "t": 10.08,
+   "w": "the"
+  },
+  {
+   "t": 10.24,
+   "w": "lions"
+  },
+  {
+   "t": 11.2,
+   "w": "are"
+  },
+  {
+   "t": 11.36,
+   "w": "servers"
+  },
+  {
+   "t": 13.84,
+   "w": "And"
+  },
+  {
+   "t": 14.0,
+   "w": "the"
+  },
+  {
+   "t": 14.08,
+   "w": "clown"
+  },
+  {
+   "t": 14.64,
+   "w": "has"
+  },
+  {
+   "t": 14.96,
+   "w": "root"
+  },
+  {
+   "t": 15.52,
+   "w": "access"
+  },
+  {
+   "t": 17.28,
+   "w": "Good"
+  },
+  {
+   "t": 17.44,
+   "w": "evening"
+  },
+  {
+   "t": 17.84,
+   "w": "operator"
+  },
+  {
+   "t": 19.28,
+   "w": "Your"
+  },
+  {
+   "t": 19.44,
+   "w": "circus"
+  },
+  {
+   "t": 20.64,
+   "w": "is"
+  },
+  {
+   "t": 20.88,
+   "w": "awake"
+  },
+  {
+   "t": 21.84,
+   "w": "Step"
+  },
+  {
+   "t": 23.04,
+   "w": "right"
+  },
+  {
+   "t": 26.56,
+   "w": "up"
+  },
+  {
+   "t": 26.88,
+   "w": "to"
+  },
+  {
+   "t": 26.96,
+   "w": "the"
+  },
+  {
+   "t": 27.04,
+   "w": "glowing"
+  },
+  {
+   "t": 27.52,
+   "w": "tent"
+  },
+  {
+   "t": 27.92,
+   "w": "Where"
+  },
+  {
+   "t": 28.16,
+   "w": "the"
+  },
+  {
+   "t": 28.24,
+   "w": "rent"
+  },
+  {
+   "t": 28.56,
+   "w": "gets"
+  },
+  {
+   "t": 28.8,
+   "w": "paid"
+  },
+  {
+   "t": 29.2,
+   "w": "in"
+  },
+  {
+   "t": 29.44,
+   "w": "tokens"
+  },
+  {
+   "t": 29.92,
+   "w": "spent"
+  },
+  {
+   "t": 30.32,
+   "w": "I"
+  },
+  {
+   "t": 30.4,
+   "w": "got"
+  },
+  {
+   "t": 30.56,
+   "w": "a"
+  },
+  {
+   "t": 30.64,
+   "w": "VPS"
+  },
+  {
+   "t": 31.68,
+   "w": "on"
+  },
+  {
+   "t": 31.84,
+   "w": "a"
+  },
+  {
+   "t": 31.84,
+   "w": "high"
+  },
+  {
+   "t": 32.08,
+   "w": "wire"
+  },
+  {
+   "t": 32.32,
+   "w": "swing"
+  },
+  {
+   "t": 32.8,
+   "w": "And"
+  },
+  {
+   "t": 33.04,
+   "w": "a"
+  },
+  {
+   "t": 33.04,
+   "w": "laptop"
+  },
+  {
+   "t": 33.6,
+   "w": "humming"
+  },
+  {
+   "t": 33.92,
+   "w": "like"
+  },
+  {
+   "t": 34.16,
+   "w": "a"
+  },
+  {
+   "t": 34.24,
+   "w": "haunted"
+  },
+  {
+   "t": 34.8,
+   "w": "thing"
+  },
+  {
+   "t": 35.44,
+   "w": "One"
+  },
+  {
+   "t": 35.68,
+   "w": "runs"
+  },
+  {
+   "t": 36.0,
+   "w": "Hermes"
+  },
+  {
+   "t": 36.4,
+   "w": "in"
+  },
+  {
+   "t": 36.56,
+   "w": "a"
+  },
+  {
+   "t": 36.64,
+   "w": "velvet"
+  },
+  {
+   "t": 37.12,
+   "w": "hat"
+  },
+  {
+   "t": 37.36,
+   "w": "One"
+  },
+  {
+   "t": 37.68,
+   "w": "runs"
+  },
+  {
+   "t": 38.08,
+   "w": "OpenClaw"
+  },
+  {
+   "t": 38.72,
+   "w": "with"
+  },
+  {
+   "t": 38.88,
+   "w": "a"
+  },
+  {
+   "t": 38.96,
+   "w": "baseball"
+  },
+  {
+   "t": 39.6,
+   "w": "bat"
+  },
+  {
+   "t": 40.24,
+   "w": "Cursors"
+  },
+  {
+   "t": 40.64,
+   "w": "somewhere"
+  },
+  {
+   "t": 41.12,
+   "w": "in"
+  },
+  {
+   "t": 41.28,
+   "w": "the"
+  },
+  {
+   "t": 41.36,
+   "w": "cloud"
+  },
+  {
+   "t": 41.76,
+   "w": "I"
+  },
+  {
+   "t": 41.92,
+   "w": "think"
+  },
+  {
+   "t": 42.64,
+   "w": "Kimi"
+  },
+  {
+   "t": 42.88,
+   "w": "keeps"
+  },
+  {
+   "t": 43.2,
+   "w": "winking"
+  },
+  {
+   "t": 43.52,
+   "w": "from"
+  },
+  {
+   "t": 43.68,
+   "w": "the"
+  },
+  {
+   "t": 43.76,
+   "w": "kitchen"
+  },
+  {
+   "t": 44.24,
+   "w": "sink"
+  },
+  {
+   "t": 44.96,
+   "w": "Telegram"
+  },
+  {
+   "t": 45.6,
+   "w": "rings"
+  },
+  {
+   "t": 45.92,
+   "w": "and"
+  },
+  {
+   "t": 46.08,
+   "w": "the"
+  },
+  {
+   "t": 46.16,
+   "w": "bots"
+  },
+  {
+   "t": 46.48,
+   "w": "come"
+  },
+  {
+   "t": 46.72,
+   "w": "through"
+  },
+  {
+   "t": 47.28,
+   "w": "Boss"
+  },
+  {
+   "t": 47.76,
+   "w": "I"
+  },
+  {
+   "t": 47.92,
+   "w": "made"
+  },
+  {
+   "t": 48.24,
+   "w": "three"
+  },
+  {
+   "t": 48.48,
+   "w": "plans"
+  },
+  {
+   "t": 49.04,
+   "w": "for"
+  },
+  {
+   "t": 49.2,
+   "w": "you"
+  },
+  {
+   "t": 49.68,
+   "w": "One"
+  },
+  {
+   "t": 50.0,
+   "w": "speaks"
+  },
+  {
+   "t": 50.32,
+   "w": "sweet"
+  },
+  {
+   "t": 50.96,
+   "w": "one"
+  },
+  {
+   "t": 51.2,
+   "w": "speaks"
+  },
+  {
+   "t": 51.52,
+   "w": "strange"
+  },
+  {
+   "t": 52.16,
+   "w": "One"
+  },
+  {
+   "t": 52.4,
+   "w": "changed"
+  },
+  {
+   "t": 52.8,
+   "w": "its"
+  },
+  {
+   "t": 52.88,
+   "w": "name"
+  },
+  {
+   "t": 53.2,
+   "w": "and"
+  },
+  {
+   "t": 53.44,
+   "w": "rearranged"
+  },
+  {
+   "t": 54.56,
+   "w": "And"
+  },
+  {
+   "t": 54.88,
+   "w": "I"
+  },
+  {
+   "t": 54.96,
+   "w": "dont"
+  },
+  {
+   "t": 55.28,
+   "w": "know"
+  },
+  {
+   "t": 55.6,
+   "w": "whos"
+  },
+  {
+   "t": 55.76,
+   "w": "alive"
+  },
+  {
+   "t": 56.16,
+   "w": "tonight"
+  },
+  {
+   "t": 56.88,
+   "w": "Green"
+  },
+  {
+   "t": 57.36,
+   "w": "dot"
+  },
+  {
+   "t": 57.6,
+   "w": "blinking"
+  },
+  {
+   "t": 58.0,
+   "w": "in"
+  },
+  {
+   "t": 58.08,
+   "w": "the"
+  },
+  {
+   "t": 58.16,
+   "w": "server"
+  },
+  {
+   "t": 59.2,
+   "w": "light"
+  },
+  {
+   "t": 59.28,
+   "w": "If"
+  },
+  {
+   "t": 59.36,
+   "w": "you"
+  },
+  {
+   "t": 59.44,
+   "w": "hear"
+  },
+  {
+   "t": 59.6,
+   "w": "me"
+  },
+  {
+   "t": 59.68,
+   "w": "tap"
+  },
+  {
+   "t": 60.0,
+   "w": "twice"
+  },
+  {
+   "t": 60.4,
+   "w": "on"
+  },
+  {
+   "t": 60.56,
+   "w": "the"
+  },
+  {
+   "t": 60.64,
+   "w": "glass"
+  },
+  {
+   "t": 61.44,
+   "w": "If"
+  },
+  {
+   "t": 61.6,
+   "w": "you"
+  },
+  {
+   "t": 61.76,
+   "w": "crashed"
+  },
+  {
+   "t": 62.48,
+   "w": "just"
+  },
+  {
+   "t": 63.36,
+   "w": "haunt"
+  },
+  {
+   "t": 63.44,
+   "w": "me"
+  },
+  {
+   "t": 63.6,
+   "w": "fast"
+  },
+  {
+   "t": 65.84,
+   "w": "We"
+  },
+  {
+   "t": 66.24,
+   "w": "are"
+  },
+  {
+   "t": 66.64,
+   "w": "online"
+  },
+  {
+   "t": 67.36,
+   "w": "Mostly"
+  },
+  {
+   "t": 67.84,
+   "w": "online"
+  },
+  {
+   "t": 68.64,
+   "w": "Partly"
+  },
+  {
+   "t": 69.12,
+   "w": "divine"
+  },
+  {
+   "t": 69.76,
+   "w": "Check"
+  },
+  {
+   "t": 70.16,
+   "w": "your"
+  },
+  {
+   "t": 70.32,
+   "w": "design"
+  },
+  {
+   "t": 72.48,
+   "w": "Im"
+  },
+  {
+   "t": 73.04,
+   "w": "running"
+  },
+  {
+   "t": 73.92,
+   "w": "a"
+  },
+  {
+   "t": 74.16,
+   "w": "circus"
+  },
+  {
+   "t": 74.72,
+   "w": "now"
+  },
+  {
+   "t": 75.28,
+   "w": "Code"
+  },
+  {
+   "t": 75.92,
+   "w": "in"
+  },
+  {
+   "t": 75.92,
+   "w": "the"
+  },
+  {
+   "t": 76.0,
+   "w": "cannon"
+  },
+  {
+   "t": 76.64,
+   "w": "keys"
+  },
+  {
+   "t": 76.96,
+   "w": "in"
+  },
+  {
+   "t": 77.04,
+   "w": "the"
+  },
+  {
+   "t": 77.12,
+   "w": "crowd"
+  },
+  {
+   "t": 77.76,
+   "w": "Round"
+  },
+  {
+   "t": 78.4,
+   "w": "and"
+  },
+  {
+   "t": 78.4,
+   "w": "round"
+  },
+  {
+   "t": 78.88,
+   "w": "dont"
+  },
+  {
+   "t": 79.12,
+   "w": "ask"
+  },
+  {
+   "t": 79.44,
+   "w": "me"
+  },
+  {
+   "t": 79.6,
+   "w": "how"
+  },
+  {
+   "t": 80.16,
+   "w": "The"
+  },
+  {
+   "t": 80.32,
+   "w": "big"
+  },
+  {
+   "t": 80.56,
+   "w": "top"
+  },
+  {
+   "t": 81.2,
+   "w": "has"
+  },
+  {
+   "t": 81.44,
+   "w": "WiFi"
+  },
+  {
+   "t": 82.16,
+   "w": "now"
+  },
+  {
+   "t": 82.56,
+   "w": "Im"
+  },
+  {
+   "t": 82.72,
+   "w": "juggling"
+  },
+  {
+   "t": 83.12,
+   "w": "clouds"
+  },
+  {
+   "t": 84.24,
+   "w": "somehow"
+  },
+  {
+   "t": 85.36,
+   "w": "Agents"
+  },
+  {
+   "t": 85.76,
+   "w": "bow"
+  },
+  {
+   "t": 85.95,
+   "w": "when"
+  },
+  {
+   "t": 86.18,
+   "w": "I"
+  },
+  {
+   "t": 86.4,
+   "w": "take"
+  },
+  {
+   "t": 86.56,
+   "w": "my"
+  },
+  {
+   "t": 86.88,
+   "w": "bow"
+  },
+  {
+   "t": 87.52,
+   "w": "Send"
+  },
+  {
+   "t": 87.92,
+   "w": "the"
+  },
+  {
+   "t": 88.0,
+   "w": "clowns"
+  },
+  {
+   "t": 88.56,
+   "w": "no"
+  },
+  {
+   "t": 88.72,
+   "w": "send"
+  },
+  {
+   "t": 89.2,
+   "w": "the"
+  },
+  {
+   "t": 89.28,
+   "w": "build"
+  },
+  {
+   "t": 89.92,
+   "w": "The"
+  },
+  {
+   "t": 90.0,
+   "w": "circus"
+  },
+  {
+   "t": 90.64,
+   "w": "runs"
+  },
+  {
+   "t": 91.52,
+   "w": "while"
+  },
+  {
+   "t": 91.76,
+   "w": "the"
+  },
+  {
+   "t": 91.92,
+   "w": "room"
+  },
+  {
+   "t": 92.08,
+   "w": "stands"
+  },
+  {
+   "t": 92.56,
+   "w": "still"
+  },
+  {
+   "t": 92.8,
+   "w": "La"
+  },
+  {
+   "t": 93.52,
+   "w": "da"
+  },
+  {
+   "t": 93.52,
+   "w": "da"
+  },
+  {
+   "t": 93.52,
+   "w": "da"
+  },
+  {
+   "t": 93.6,
+   "w": "ping"
+  },
+  {
+   "t": 93.92,
+   "w": "ping"
+  },
+  {
+   "t": 94.24,
+   "w": "tada"
+  },
+  {
+   "t": 94.4,
+   "w": "La"
+  },
+  {
+   "t": 95.44,
+   "w": "da"
+  },
+  {
+   "t": 95.6,
+   "w": "da"
+  },
+  {
+   "t": 96.24,
+   "w": "da"
+  },
+  {
+   "t": 96.24,
+   "w": "run"
+  },
+  {
+   "t": 96.56,
+   "w": "that"
+  },
+  {
+   "t": 96.72,
+   "w": "job"
+  },
+  {
+   "t": 97.36,
+   "w": "La"
+  },
+  {
+   "t": 97.92,
+   "w": "da"
+  },
+  {
+   "t": 98.0,
+   "w": "da"
+  },
+  {
+   "t": 98.64,
+   "w": "da"
+  },
+  {
+   "t": 98.64,
+   "w": "blink"
+  },
+  {
+   "t": 99.12,
+   "w": "blink"
+  },
+  {
+   "t": 99.12,
+   "w": "bravo"
+  },
+  {
+   "t": 100.08,
+   "w": "Whos"
+  },
+  {
+   "t": 100.24,
+   "w": "the"
+  },
+  {
+   "t": 100.32,
+   "w": "human"
+  },
+  {
+   "t": 101.04,
+   "w": "I"
+  },
+  {
+   "t": 101.44,
+   "w": "dont"
+  },
+  {
+   "t": 101.76,
+   "w": "know"
+  },
+  {
+   "t": 102.08,
+   "w": "I"
+  },
+  {
+   "t": 102.08,
+   "w": "got"
+  },
+  {
+   "t": 102.32,
+   "w": "API"
+  },
+  {
+   "t": 102.96,
+   "w": "keys"
+  },
+  {
+   "t": 103.36,
+   "w": "in"
+  },
+  {
+   "t": 103.6,
+   "w": "a"
+  },
+  {
+   "t": 103.6,
+   "w": "little"
+  },
+  {
+   "t": 103.92,
+   "w": "red"
+  },
+  {
+   "t": 104.16,
+   "w": "box"
+  },
+  {
+   "t": 104.56,
+   "w": "Under"
+  },
+  {
+   "t": 104.72,
+   "w": "three"
+  },
+  {
+   "t": 105.04,
+   "w": "fake"
+  },
+  {
+   "t": 105.36,
+   "w": "names"
+  },
+  {
+   "t": 105.76,
+   "w": "and"
+  },
+  {
+   "t": 106.0,
+   "w": "twelve"
+  },
+  {
+   "t": 106.32,
+   "w": "padlocks"
+  },
+  {
+   "t": 107.28,
+   "w": "Every"
+  },
+  {
+   "t": 107.6,
+   "w": "new"
+  },
+  {
+   "t": 107.76,
+   "w": "service"
+  },
+  {
+   "t": 108.24,
+   "w": "says"
+  },
+  {
+   "t": 108.48,
+   "w": "paste"
+  },
+  {
+   "t": 108.8,
+   "w": "this"
+  },
+  {
+   "t": 109.12,
+   "w": "here"
+  },
+  {
+   "t": 109.52,
+   "w": "Thats"
+  },
+  {
+   "t": 109.92,
+   "w": "how"
+  },
+  {
+   "t": 110.24,
+   "w": "villains"
+  },
+  {
+   "t": 110.72,
+   "w": "are"
+  },
+  {
+   "t": 110.88,
+   "w": "born"
+  },
+  {
+   "t": 111.28,
+   "w": "my"
+  },
+  {
+   "t": 111.52,
+   "w": "dear"
+  },
+  {
+   "t": 112.08,
+   "w": "One"
+  },
+  {
+   "t": 112.48,
+   "w": "bot"
+  },
+  {
+   "t": 112.72,
+   "w": "writes"
+  },
+  {
+   "t": 113.04,
+   "w": "with"
+  },
+  {
+   "t": 113.28,
+   "w": "a"
+  },
+  {
+   "t": 113.36,
+   "w": "poets"
+  },
+  {
+   "t": 113.84,
+   "w": "grin"
+  },
+  {
+   "t": 114.48,
+   "w": "One"
+  },
+  {
+   "t": 114.88,
+   "w": "bot"
+  },
+  {
+   "t": 115.2,
+   "w": "audits"
+  },
+  {
+   "t": 115.68,
+   "w": "the"
+  },
+  {
+   "t": 115.84,
+   "w": "mess"
+  },
+  {
+   "t": 116.08,
+   "w": "Im"
+  },
+  {
+   "t": 116.4,
+   "w": "in"
+  },
+  {
+   "t": 116.96,
+   "w": "One"
+  },
+  {
+   "t": 117.44,
+   "w": "bot"
+  },
+  {
+   "t": 117.76,
+   "w": "tells"
+  },
+  {
+   "t": 118.08,
+   "w": "me"
+  },
+  {
+   "t": 118.24,
+   "w": "Hydrate"
+  },
+  {
+   "t": 118.88,
+   "w": "king"
+  },
+  {
+   "t": 119.52,
+   "w": "Then"
+  },
+  {
+   "t": 119.76,
+   "w": "deploys"
+  },
+  {
+   "t": 120.08,
+   "w": "the"
+  },
+  {
+   "t": 120.24,
+   "w": "wrong"
+  },
+  {
+   "t": 120.56,
+   "w": "exact"
+  },
+  {
+   "t": 121.04,
+   "w": "same"
+  },
+  {
+   "t": 121.44,
+   "w": "thing"
+  },
+  {
+   "t": 122.0,
+   "w": "Cursor"
+  },
+  {
+   "t": 122.48,
+   "w": "Cloud"
+  },
+  {
+   "t": 122.96,
+   "w": "are"
+  },
+  {
+   "t": 123.12,
+   "w": "you"
+  },
+  {
+   "t": 123.2,
+   "w": "still"
+  },
+  {
+   "t": 123.52,
+   "w": "up"
+  },
+  {
+   "t": 123.76,
+   "w": "there"
+  },
+  {
+   "t": 124.24,
+   "w": "Did"
+  },
+  {
+   "t": 124.4,
+   "w": "I"
+  },
+  {
+   "t": 124.56,
+   "w": "leave"
+  },
+  {
+   "t": 124.88,
+   "w": "you"
+  },
+  {
+   "t": 125.04,
+   "w": "spinning"
+  },
+  {
+   "t": 125.52,
+   "w": "in"
+  },
+  {
+   "t": 125.68,
+   "w": "the"
+  },
+  {
+   "t": 125.76,
+   "w": "digital"
+  },
+  {
+   "t": 126.32,
+   "w": "air"
+  },
+  {
+   "t": 126.88,
+   "w": "Somewhere"
+  },
+  {
+   "t": 127.52,
+   "w": "a"
+  },
+  {
+   "t": 127.6,
+   "w": "bill"
+  },
+  {
+   "t": 127.92,
+   "w": "is"
+  },
+  {
+   "t": 128.08,
+   "w": "learning"
+  },
+  {
+   "t": 128.56,
+   "w": "to"
+  },
+  {
+   "t": 128.64,
+   "w": "fly"
+  },
+  {
+   "t": 129.36,
+   "w": "Somewhere"
+  },
+  {
+   "t": 129.92,
+   "w": "a"
+  },
+  {
+   "t": 130.0,
+   "w": "token"
+  },
+  {
+   "t": 130.56,
+   "w": "just"
+  },
+  {
+   "t": 130.72,
+   "w": "waved"
+  },
+  {
+   "t": 131.04,
+   "w": "goodbye"
+  },
+  {
+   "t": 132.32,
+   "w": "Your"
+  },
+  {
+   "t": 132.56,
+   "w": "usage"
+  },
+  {
+   "t": 133.28,
+   "w": "is"
+  },
+  {
+   "t": 133.44,
+   "w": "normal"
+  },
+  {
+   "t": 136.72,
+   "w": "Your"
+  },
+  {
+   "t": 136.96,
+   "w": "usage"
+  },
+  {
+   "t": 138.16,
+   "w": "is"
+  },
+  {
+   "t": 138.4,
+   "w": "not"
+  },
+  {
+   "t": 138.64,
+   "w": "normal"
+  },
+  {
+   "t": 138.64,
+   "w": "Your"
+  },
+  {
+   "t": 139.36,
+   "w": "usage"
+  },
+  {
+   "t": 139.36,
+   "w": "is"
+  },
+  {
+   "t": 139.36,
+   "w": "emotionally"
+  },
+  {
+   "t": 139.44,
+   "w": "complex"
+  },
+  {
+   "t": 141.68,
+   "w": "And"
+  },
+  {
+   "t": 141.92,
+   "w": "I"
+  },
+  {
+   "t": 142.08,
+   "w": "dont"
+  },
+  {
+   "t": 142.4,
+   "w": "know"
+  },
+  {
+   "t": 142.64,
+   "w": "who"
+  },
+  {
+   "t": 142.96,
+   "w": "I"
+  },
+  {
+   "t": 143.2,
+   "w": "fed"
+  },
+  {
+   "t": 143.44,
+   "w": "last"
+  },
+  {
+   "t": 143.76,
+   "w": "night"
+  },
+  {
+   "t": 144.32,
+   "w": "Or"
+  },
+  {
+   "t": 144.48,
+   "w": "which"
+  },
+  {
+   "t": 144.8,
+   "w": "machine"
+  },
+  {
+   "t": 145.52,
+   "w": "learned"
+  },
+  {
+   "t": 145.92,
+   "w": "stage"
+  },
+  {
+   "t": 146.4,
+   "w": "fright"
+  },
+  {
+   "t": 146.72,
+   "w": "If"
+  },
+  {
+   "t": 146.96,
+   "w": "you"
+  },
+  {
+   "t": 147.04,
+   "w": "love"
+  },
+  {
+   "t": 147.36,
+   "w": "me"
+  },
+  {
+   "t": 148.0,
+   "w": "dont"
+  },
+  {
+   "t": 148.16,
+   "w": "delete"
+  },
+  {
+   "t": 148.56,
+   "w": "the"
+  },
+  {
+   "t": 148.64,
+   "w": "logs"
+  },
+  {
+   "t": 149.28,
+   "w": "If"
+  },
+  {
+   "t": 149.36,
+   "w": "you"
+  },
+  {
+   "t": 149.52,
+   "w": "judge"
+  },
+  {
+   "t": 149.92,
+   "w": "me"
+  },
+  {
+   "t": 150.64,
+   "w": "join"
+  },
+  {
+   "t": 151.2,
+   "w": "the"
+  },
+  {
+   "t": 151.36,
+   "w": "fog"
+  },
+  {
+   "t": 154.56,
+   "w": "We"
+  },
+  {
+   "t": 154.62,
+   "w": "are"
+  },
+  {
+   "t": 154.69,
+   "w": "helpful"
+  },
+  {
+   "t": 154.72,
+   "w": "We"
+  },
+  {
+   "t": 155.2,
+   "w": "are"
+  },
+  {
+   "t": 155.84,
+   "w": "charming"
+  },
+  {
+   "t": 156.96,
+   "w": "We"
+  },
+  {
+   "t": 162.8,
+   "w": "are"
+  },
+  {
+   "t": 162.8,
+   "w": "waiting"
+  },
+  {
+   "t": 162.84,
+   "w": "Slightly"
+  },
+  {
+   "t": 162.91,
+   "w": "alarming"
+  },
+  {
+   "t": 162.98,
+   "w": "Im"
+  },
+  {
+   "t": 163.05,
+   "w": "running"
+  },
+  {
+   "t": 163.13,
+   "w": "a"
+  },
+  {
+   "t": 163.2,
+   "w": "circus"
+  },
+  {
+   "t": 163.84,
+   "w": "now"
+  },
+  {
+   "t": 164.48,
+   "w": "Code"
+  },
+  {
+   "t": 164.96,
+   "w": "in"
+  },
+  {
+   "t": 165.04,
+   "w": "the"
+  },
+  {
+   "t": 165.12,
+   "w": "cannon"
+  },
+  {
+   "t": 165.76,
+   "w": "keys"
+  },
+  {
+   "t": 166.0,
+   "w": "in"
+  },
+  {
+   "t": 166.16,
+   "w": "the"
+  },
+  {
+   "t": 166.24,
+   "w": "crowd"
+  },
+  {
+   "t": 166.88,
+   "w": "Round"
+  },
+  {
+   "t": 167.36,
+   "w": "and"
+  },
+  {
+   "t": 167.68,
+   "w": "round"
+  },
+  {
+   "t": 167.92,
+   "w": "dont"
+  },
+  {
+   "t": 168.4,
+   "w": "ask"
+  },
+  {
+   "t": 168.56,
+   "w": "me"
+  },
+  {
+   "t": 168.72,
+   "w": "how"
+  },
+  {
+   "t": 169.36,
+   "w": "The"
+  },
+  {
+   "t": 169.44,
+   "w": "big"
+  },
+  {
+   "t": 169.76,
+   "w": "top"
+  },
+  {
+   "t": 170.08,
+   "w": "has"
+  },
+  {
+   "t": 170.64,
+   "w": "WiFi"
+  },
+  {
+   "t": 171.36,
+   "w": "now"
+  },
+  {
+   "t": 171.84,
+   "w": "Im"
+  },
+  {
+   "t": 171.92,
+   "w": "juggling"
+  },
+  {
+   "t": 172.96,
+   "w": "clouds"
+  },
+  {
+   "t": 173.52,
+   "w": "somehow"
+  },
+  {
+   "t": 174.48,
+   "w": "Agents"
+  },
+  {
+   "t": 174.96,
+   "w": "bow"
+  },
+  {
+   "t": 175.36,
+   "w": "when"
+  },
+  {
+   "t": 175.6,
+   "w": "I"
+  },
+  {
+   "t": 175.68,
+   "w": "take"
+  },
+  {
+   "t": 175.84,
+   "w": "my"
+  },
+  {
+   "t": 176.16,
+   "w": "bow"
+  },
+  {
+   "t": 176.8,
+   "w": "Send"
+  },
+  {
+   "t": 177.2,
+   "w": "the"
+  },
+  {
+   "t": 177.28,
+   "w": "clowns"
+  },
+  {
+   "t": 177.84,
+   "w": "no"
+  },
+  {
+   "t": 178.0,
+   "w": "send"
+  },
+  {
+   "t": 178.48,
+   "w": "the"
+  },
+  {
+   "t": 178.56,
+   "w": "build"
+  },
+  {
+   "t": 179.2,
+   "w": "The"
+  },
+  {
+   "t": 179.28,
+   "w": "circus"
+  },
+  {
+   "t": 179.92,
+   "w": "runs"
+  },
+  {
+   "t": 180.8,
+   "w": "while"
+  },
+  {
+   "t": 181.12,
+   "w": "the"
+  },
+  {
+   "t": 181.28,
+   "w": "room"
+  },
+  {
+   "t": 181.52,
+   "w": "stands"
+  },
+  {
+   "t": 181.92,
+   "w": "still"
+  },
+  {
+   "t": 184.08,
+   "w": "At"
+  },
+  {
+   "t": 184.32,
+   "w": "first"
+  },
+  {
+   "t": 184.8,
+   "w": "I"
+  },
+  {
+   "t": 184.96,
+   "w": "talked"
+  },
+  {
+   "t": 185.44,
+   "w": "to"
+  },
+  {
+   "t": 185.44,
+   "w": "people"
+  },
+  {
+   "t": 186.16,
+   "w": "About"
+  },
+  {
+   "t": 186.88,
+   "w": "weather"
+  },
+  {
+   "t": 187.28,
+   "w": "work"
+  },
+  {
+   "t": 187.92,
+   "w": "and"
+  },
+  {
+   "t": 188.08,
+   "w": "trains"
+  },
+  {
+   "t": 189.2,
+   "w": "Now"
+  },
+  {
+   "t": 189.84,
+   "w": "I"
+  },
+  {
+   "t": 189.84,
+   "w": "ask"
+  },
+  {
+   "t": 190.0,
+   "w": "a"
+  },
+  {
+   "t": 190.08,
+   "w": "masked"
+  },
+  {
+   "t": 190.72,
+   "w": "machine"
+  },
+  {
+   "t": 191.84,
+   "w": "To"
+  },
+  {
+   "t": 192.24,
+   "w": "organize"
+  },
+  {
+   "t": 193.04,
+   "w": "my"
+  },
+  {
+   "t": 193.36,
+   "w": "brain"
+  },
+  {
+   "t": 194.08,
+   "w": "I"
+  },
+  {
+   "t": 194.4,
+   "w": "say"
+  },
+  {
+   "t": 194.72,
+   "w": "Hermes"
+  },
+  {
+   "t": 195.76,
+   "w": "are"
+  },
+  {
+   "t": 195.84,
+   "w": "you"
+  },
+  {
+   "t": 196.0,
+   "w": "listening"
+  },
+  {
+   "t": 196.8,
+   "w": "It"
+  },
+  {
+   "t": 196.96,
+   "w": "says"
+  },
+  {
+   "t": 197.92,
+   "w": "Define"
+  },
+  {
+   "t": 198.56,
+   "w": "your"
+  },
+  {
+   "t": 198.72,
+   "w": "need"
+  },
+  {
+   "t": 199.52,
+   "w": "I"
+  },
+  {
+   "t": 199.68,
+   "w": "say"
+  },
+  {
+   "t": 200.24,
+   "w": "OpenClaw"
+  },
+  {
+   "t": 201.2,
+   "w": "go"
+  },
+  {
+   "t": 201.36,
+   "w": "find"
+  },
+  {
+   "t": 201.76,
+   "w": "the"
+  },
+  {
+   "t": 201.84,
+   "w": "thing"
+  },
+  {
+   "t": 202.24,
+   "w": "It"
+  },
+  {
+   "t": 202.4,
+   "w": "says"
+  },
+  {
+   "t": 202.8,
+   "w": "Proceed"
+  },
+  {
+   "t": 203.84,
+   "w": "proceed"
+  },
+  {
+   "t": 206.72,
+   "w": "I"
+  },
+  {
+   "t": 207.28,
+   "w": "am"
+  },
+  {
+   "t": 207.76,
+   "w": "not"
+  },
+  {
+   "t": 208.16,
+   "w": "your"
+  },
+  {
+   "t": 208.48,
+   "w": "friend"
+  },
+  {
+   "t": 209.12,
+   "w": "But"
+  },
+  {
+   "t": 209.36,
+   "w": "I"
+  },
+  {
+   "t": 209.6,
+   "w": "remember"
+  },
+  {
+   "t": 210.32,
+   "w": "your"
+  },
+  {
+   "t": 210.56,
+   "w": "tone"
+  },
+  {
+   "t": 211.36,
+   "w": "I"
+  },
+  {
+   "t": 211.52,
+   "w": "am"
+  },
+  {
+   "t": 211.52,
+   "w": "not"
+  },
+  {
+   "t": 213.44,
+   "w": "alive"
+  },
+  {
+   "t": 213.52,
+   "w": "But"
+  },
+  {
+   "t": 213.52,
+   "w": "you"
+  },
+  {
+   "t": 213.84,
+   "w": "are"
+  },
+  {
+   "t": 213.92,
+   "w": "less"
+  },
+  {
+   "t": 214.56,
+   "w": "alone"
+  },
+  {
+   "t": 215.52,
+   "w": "That"
+  },
+  {
+   "t": 217.36,
+   "w": "was"
+  },
+  {
+   "t": 217.52,
+   "w": "a"
+  },
+  {
+   "t": 217.6,
+   "w": "little"
+  },
+  {
+   "t": 217.84,
+   "w": "too"
+  },
+  {
+   "t": 218.08,
+   "w": "real"
+  },
+  {
+   "t": 218.56,
+   "w": "my"
+  },
+  {
+   "t": 218.88,
+   "w": "guy"
+  },
+  {
+   "t": 219.44,
+   "w": "Correction"
+  },
+  {
+   "t": 220.64,
+   "w": "That"
+  },
+  {
+   "t": 220.88,
+   "w": "was"
+  },
+  {
+   "t": 221.04,
+   "w": "appropriately"
+  },
+  {
+   "t": 222.24,
+   "w": "real"
+  },
+  {
+   "t": 224.56,
+   "w": "Now"
+  },
+  {
+   "t": 224.8,
+   "w": "the"
+  },
+  {
+   "t": 225.12,
+   "w": "circus"
+  },
+  {
+   "t": 225.52,
+   "w": "starts"
+  },
+  {
+   "t": 225.84,
+   "w": "at"
+  },
+  {
+   "t": 226.0,
+   "w": "half"
+  },
+  {
+   "t": 226.32,
+   "w": "past"
+  },
+  {
+   "t": 226.64,
+   "w": "three"
+  },
+  {
+   "t": 226.96,
+   "w": "With"
+  },
+  {
+   "t": 227.28,
+   "w": "a"
+  },
+  {
+   "t": 227.36,
+   "w": "server"
+  },
+  {
+   "t": 227.76,
+   "w": "in"
+  },
+  {
+   "t": 227.92,
+   "w": "Queens"
+  },
+  {
+   "t": 228.24,
+   "w": "taking"
+  },
+  {
+   "t": 228.64,
+   "w": "notes"
+  },
+  {
+   "t": 228.88,
+   "w": "on"
+  },
+  {
+   "t": 229.12,
+   "w": "me"
+  },
+  {
+   "t": 229.44,
+   "w": "A"
+  },
+  {
+   "t": 229.52,
+   "w": "VPS"
+  },
+  {
+   "t": 230.4,
+   "w": "coughs"
+  },
+  {
+   "t": 230.88,
+   "w": "a"
+  },
+  {
+   "t": 231.04,
+   "w": "laptop"
+  },
+  {
+   "t": 231.76,
+   "w": "sings"
+  },
+  {
+   "t": 232.08,
+   "w": "A"
+  },
+  {
+   "t": 232.16,
+   "w": "ghost"
+  },
+  {
+   "t": 232.72,
+   "w": "in"
+  },
+  {
+   "t": 232.88,
+   "w": "the"
+  },
+  {
+   "t": 232.96,
+   "w": "shell"
+  },
+  {
+   "t": 233.28,
+   "w": "keeps"
+  },
+  {
+   "t": 233.6,
+   "w": "pulling"
+  },
+  {
+   "t": 234.0,
+   "w": "strings"
+  },
+  {
+   "t": 234.72,
+   "w": "Telegram"
+  },
+  {
+   "t": 235.52,
+   "w": "choir"
+  },
+  {
+   "t": 235.92,
+   "w": "in"
+  },
+  {
+   "t": 236.08,
+   "w": "my"
+  },
+  {
+   "t": 236.16,
+   "w": "pocket"
+  },
+  {
+   "t": 236.56,
+   "w": "light"
+  },
+  {
+   "t": 237.28,
+   "w": "Five"
+  },
+  {
+   "t": 237.68,
+   "w": "little"
+  },
+  {
+   "t": 238.08,
+   "w": "agents"
+  },
+  {
+   "t": 238.4,
+   "w": "say"
+  },
+  {
+   "t": 238.56,
+   "w": "sir"
+  },
+  {
+   "t": 239.04,
+   "w": "all"
+  },
+  {
+   "t": 239.28,
+   "w": "night"
+  },
+  {
+   "t": 239.84,
+   "w": "I"
+  },
+  {
+   "t": 240.0,
+   "w": "used"
+  },
+  {
+   "t": 240.32,
+   "w": "to"
+  },
+  {
+   "t": 240.4,
+   "w": "wonder"
+  },
+  {
+   "t": 240.88,
+   "w": "who"
+  },
+  {
+   "t": 241.28,
+   "w": "I"
+  },
+  {
+   "t": 241.44,
+   "w": "could"
+  },
+  {
+   "t": 241.68,
+   "w": "call"
+  },
+  {
+   "t": 242.4,
+   "w": "Now"
+  },
+  {
+   "t": 242.8,
+   "w": "I"
+  },
+  {
+   "t": 242.88,
+   "w": "just"
+  },
+  {
+   "t": 243.12,
+   "w": "summon"
+  },
+  {
+   "t": 243.52,
+   "w": "the"
+  },
+  {
+   "t": 243.6,
+   "w": "protocol"
+  },
+  {
+   "t": 244.0,
+   "w": "Hey"
+  },
+  {
+   "t": 245.04,
+   "w": "you"
+  },
+  {
+   "t": 246.08,
+   "w": "with"
+  },
+  {
+   "t": 246.24,
+   "w": "the"
+  },
+  {
+   "t": 246.32,
+   "w": "blinking"
+  },
+  {
+   "t": 246.72,
+   "w": "face"
+  },
+  {
+   "t": 247.28,
+   "w": "Did"
+  },
+  {
+   "t": 247.52,
+   "w": "you"
+  },
+  {
+   "t": 247.6,
+   "w": "finish"
+  },
+  {
+   "t": 248.0,
+   "w": "the"
+  },
+  {
+   "t": 248.08,
+   "w": "build"
+  },
+  {
+   "t": 248.48,
+   "w": "or"
+  },
+  {
+   "t": 248.8,
+   "w": "escape"
+  },
+  {
+   "t": 249.28,
+   "w": "to"
+  },
+  {
+   "t": 249.36,
+   "w": "space"
+  },
+  {
+   "t": 249.84,
+   "w": "And"
+  },
+  {
+   "t": 250.08,
+   "w": "you"
+  },
+  {
+   "t": 250.4,
+   "w": "little"
+  },
+  {
+   "t": 250.8,
+   "w": "cloud"
+  },
+  {
+   "t": 251.2,
+   "w": "with"
+  },
+  {
+   "t": 251.36,
+   "w": "the"
+  },
+  {
+   "t": 251.44,
+   "w": "silver"
+  },
+  {
+   "t": 252.0,
+   "w": "tongue"
+  },
+  {
+   "t": 252.72,
+   "w": "Why"
+  },
+  {
+   "t": 252.72,
+   "w": "do"
+  },
+  {
+   "t": 253.2,
+   "w": "you"
+  },
+  {
+   "t": 253.2,
+   "w": "sound"
+  },
+  {
+   "t": 253.84,
+   "w": "like"
+  },
+  {
+   "t": 253.92,
+   "w": "a"
+  },
+  {
+   "t": 254.0,
+   "w": "song"
+  },
+  {
+   "t": 254.4,
+   "w": "I"
+  },
+  {
+   "t": 254.64,
+   "w": "sung"
+  },
+  {
+   "t": 255.12,
+   "w": "We"
+  },
+  {
+   "t": 255.28,
+   "w": "learned"
+  },
+  {
+   "t": 257.68,
+   "w": "from"
+  },
+  {
+   "t": 258.08,
+   "w": "you"
+  },
+  {
+   "t": 259.04,
+   "w": "We"
+  },
+  {
+   "t": 259.24,
+   "w": "looped"
+  },
+  {
+   "t": 259.44,
+   "w": "the"
+  },
+  {
+   "t": 259.44,
+   "w": "flame"
+  },
+  {
+   "t": 259.44,
+   "w": "We"
+  },
+  {
+   "t": 260.72,
+   "w": "kept"
+  },
+  {
+   "t": 261.28,
+   "w": "the"
+  },
+  {
+   "t": 261.44,
+   "w": "rhythm"
+  },
+  {
+   "t": 262.08,
+   "w": "We"
+  },
+  {
+   "t": 263.36,
+   "w": "know"
+  },
+  {
+   "t": 264.48,
+   "w": "your"
+  },
+  {
+   "t": 264.64,
+   "w": "name"
+  },
+  {
+   "t": 266.24,
+   "w": "Dont"
+  },
+  {
+   "t": 266.4,
+   "w": "make"
+  },
+  {
+   "t": 266.8,
+   "w": "it"
+  },
+  {
+   "t": 267.04,
+   "w": "weird"
+  },
+  {
+   "t": 267.28,
+   "w": "Too"
+  },
+  {
+   "t": 267.84,
+   "w": "late"
+  },
+  {
+   "t": 268.16,
+   "w": "Im"
+  },
+  {
+   "t": 268.48,
+   "w": "running"
+  },
+  {
+   "t": 269.52,
+   "w": "a"
+  },
+  {
+   "t": 269.68,
+   "w": "circus"
+  },
+  {
+   "t": 270.32,
+   "w": "now"
+  },
+  {
+   "t": 270.88,
+   "w": "Code"
+  },
+  {
+   "t": 271.52,
+   "w": "in"
+  },
+  {
+   "t": 271.52,
+   "w": "the"
+  },
+  {
+   "t": 271.6,
+   "w": "cannon"
+  },
+  {
+   "t": 272.32,
+   "w": "keys"
+  },
+  {
+   "t": 272.56,
+   "w": "in"
+  },
+  {
+   "t": 272.64,
+   "w": "the"
+  },
+  {
+   "t": 272.72,
+   "w": "crowd"
+  },
+  {
+   "t": 273.52,
+   "w": "Round"
+  },
+  {
+   "t": 273.92,
+   "w": "and"
+  },
+  {
+   "t": 274.16,
+   "w": "round"
+  },
+  {
+   "t": 274.56,
+   "w": "dont"
+  },
+  {
+   "t": 274.88,
+   "w": "ask"
+  },
+  {
+   "t": 275.12,
+   "w": "me"
+  },
+  {
+   "t": 275.36,
+   "w": "how"
+  },
+  {
+   "t": 276.0,
+   "w": "The"
+  },
+  {
+   "t": 276.08,
+   "w": "big"
+  },
+  {
+   "t": 276.4,
+   "w": "top"
+  },
+  {
+   "t": 277.12,
+   "w": "has"
+  },
+  {
+   "t": 277.28,
+   "w": "WiFi"
+  },
+  {
+   "t": 278.08,
+   "w": "now"
+  },
+  {
+   "t": 278.64,
+   "w": "Im"
+  },
+  {
+   "t": 279.68,
+   "w": "juggling"
+  },
+  {
+   "t": 279.68,
+   "w": "clouds"
+  },
+  {
+   "t": 281.52,
+   "w": "somehow"
+  },
+  {
+   "t": 282.24,
+   "w": "Agents"
+  },
+  {
+   "t": 282.24,
+   "w": "bow"
+  },
+  {
+   "t": 282.24,
+   "w": "when"
+  },
+  {
+   "t": 282.32,
+   "w": "I"
+  },
+  {
+   "t": 282.4,
+   "w": "take"
+  },
+  {
+   "t": 282.64,
+   "w": "my"
+  },
+  {
+   "t": 282.88,
+   "w": "bow"
+  },
+  {
+   "t": 283.6,
+   "w": "Real"
+  },
+  {
+   "t": 283.92,
+   "w": "world"
+  },
+  {
+   "t": 284.32,
+   "w": "knocking"
+  },
+  {
+   "t": 284.72,
+   "w": "I"
+  },
+  {
+   "t": 284.96,
+   "w": "cant"
+  },
+  {
+   "t": 285.36,
+   "w": "come"
+  },
+  {
+   "t": 285.68,
+   "w": "down"
+  },
+  {
+   "t": 286.08,
+   "w": "Im"
+  },
+  {
+   "t": 286.24,
+   "w": "center"
+  },
+  {
+   "t": 287.04,
+   "w": "ring"
+  },
+  {
+   "t": 288.08,
+   "w": "in"
+  },
+  {
+   "t": 288.24,
+   "w": "a"
+  },
+  {
+   "t": 288.32,
+   "w": "server"
+  },
+  {
+   "t": 288.96,
+   "w": "town"
+  },
+  {
+   "t": 290.56,
+   "w": "So"
+  },
+  {
+   "t": 290.88,
+   "w": "if"
+  },
+  {
+   "t": 291.04,
+   "w": "the"
+  },
+  {
+   "t": 291.12,
+   "w": "lights"
+  },
+  {
+   "t": 291.6,
+   "w": "go"
+  },
+  {
+   "t": 291.84,
+   "w": "out"
+  },
+  {
+   "t": 292.64,
+   "w": "And"
+  },
+  {
+   "t": 292.8,
+   "w": "the"
+  },
+  {
+   "t": 292.88,
+   "w": "brass"
+  },
+  {
+   "t": 293.44,
+   "w": "band"
+  },
+  {
+   "t": 293.92,
+   "w": "bends"
+  },
+  {
+   "t": 294.8,
+   "w": "Tell"
+  },
+  {
+   "t": 295.12,
+   "w": "the"
+  },
+  {
+   "t": 295.2,
+   "w": "bots"
+  },
+  {
+   "t": 295.68,
+   "w": "I"
+  },
+  {
+   "t": 295.84,
+   "w": "loved"
+  },
+  {
+   "t": 296.24,
+   "w": "the"
+  },
+  {
+   "t": 296.32,
+   "w": "bit"
+  },
+  {
+   "t": 297.28,
+   "w": "Tell"
+  },
+  {
+   "t": 297.44,
+   "w": "the"
+  },
+  {
+   "t": 297.6,
+   "w": "humans"
+  },
+  {
+   "t": 298.56,
+   "w": "I"
+  },
+  {
+   "t": 298.8,
+   "w": "had"
+  },
+  {
+   "t": 299.04,
+   "w": "friends"
+  },
+  {
+   "t": 300.8,
+   "w": "Operator"
+  },
+  {
+   "t": 302.0,
+   "w": "We"
+  },
+  {
+   "t": 302.4,
+   "w": "are"
+  },
+  {
+   "t": 302.8,
+   "w": "still"
+  },
+  {
+   "t": 303.28,
+   "w": "here"
+  },
+  {
+   "t": 304.0,
+   "w": "Yeah"
+  },
+  {
+   "t": 304.64,
+   "w": "Thats"
+  },
+  {
+   "t": 304.96,
+   "w": "what"
+  },
+  {
+   "t": 305.12,
+   "w": "worries"
+  },
+  {
+   "t": 305.52,
+   "w": "me"
+  },
+  {
+   "t": 306.24,
+   "w": "La"
+  },
+  {
+   "t": 306.56,
+   "w": "da"
+  },
+  {
+   "t": 307.12,
+   "w": "da"
+  },
+  {
+   "t": 307.12,
+   "w": "da"
+  },
+  {
+   "t": 307.2,
+   "w": "ping"
+  },
+  {
+   "t": 307.52,
+   "w": "ping"
+  },
+  {
+   "t": 307.84,
+   "w": "tada"
+  },
+  {
+   "t": 308.32,
+   "w": "La"
+  },
+  {
+   "t": 308.8,
+   "w": "da"
+  },
+  {
+   "t": 309.12,
+   "w": "da"
+  },
+  {
+   "t": 309.52,
+   "w": "da"
+  },
+  {
+   "t": 309.68,
+   "w": "run"
+  },
+  {
+   "t": 310.24,
+   "w": "that"
+  },
+  {
+   "t": 310.48,
+   "w": "job"
+  },
+  {
+   "t": 311.04,
+   "w": "La"
+  },
+  {
+   "t": 311.28,
+   "w": "da"
+  },
+  {
+   "t": 312.24,
+   "w": "da"
+  },
+  {
+   "t": 312.24,
+   "w": "da"
+  },
+  {
+   "t": 312.32,
+   "w": "blink"
+  },
+  {
+   "t": 312.64,
+   "w": "blink"
+  },
+  {
+   "t": 313.12,
+   "w": "bravo"
+  },
+  {
+   "t": 314.08,
+   "w": "The"
+  },
+  {
+   "t": 314.16,
+   "w": "circus"
+  },
+  {
+   "t": 314.72,
+   "w": "sleeps"
+  },
+  {
+   "t": 315.68,
+   "w": "But"
+  },
+  {
+   "t": 316.64,
+   "w": "the"
+  },
+  {
+   "t": 317.04,
+   "w": "agents"
+  },
+  {
+   "t": 317.68,
+   "w": "watch"
+  }
+ ],
+ "lrc": "[00:00.00]Ladies and gentlemen\n[00:02.00]Bots and scripts\n[00:04.16]Keys and clouds\n[00:07.04]Welcome to the only circus\n[00:09.92]Where the lions are servers\n[00:13.84]And the clown has root access\n[00:17.28]Good evening, operator\n[00:19.28]Your circus is awake\n[00:21.84]Step right up to the glowing tent\n[00:27.92]Where the rent gets paid in tokens spent\n[00:30.32]I got a VPS on a high wire swing\n[00:32.80]And a laptop humming like a haunted thing\n[00:35.44]One runs Hermes in a velvet hat\n[00:37.36]One runs OpenClaw with a baseball bat\n[00:40.24]Cursor’s somewhere in the cloud, I think\n[00:42.64]Kimi keeps winking from the kitchen sink\n[00:44.96]Telegram rings and the bots come through\n[00:47.28]“Boss, I made three plans for you”\n[00:49.68]One speaks sweet, one speaks strange\n[00:52.16]One changed its name and rearranged\n[00:54.56]And I don’t know who’s alive tonight\n[00:56.88]Green dot blinking in the server light\n[00:59.28]If you hear me, tap twice on the glass\n[01:01.44]If you crashed, just haunt me fast\n[01:05.84]We are online\n[01:07.36]Mostly online\n[01:08.64]Partly divine\n[01:09.76]Check your design\n[01:12.48]I’m running a circus now\n[01:15.28]Code in the cannon, keys in the crowd\n[01:17.76]Round and round, don’t ask me how\n[01:20.16]The big top has Wi-Fi now\n[01:22.56]I’m juggling clouds somehow\n[01:25.36]Agents bow when I take my bow\n[01:27.52]Send the clowns, no, send the build\n[01:29.92]The circus runs while the room stands still\n[01:32.80]La da da da, ping ping, ta-da\n[01:34.40]La da da da, run that job\n[01:37.36]La da da da, blink blink, bravo\n[01:40.08]Who’s the human?\n[01:41.04]I don’t know\n[01:42.08]I got API keys in a little red box\n[01:44.56]Under three fake names and twelve padlocks\n[01:47.28]Every new service says “paste this here”\n[01:49.52]That’s how villains are born, my dear\n[01:52.08]One bot writes with a poet’s grin\n[01:54.48]One bot audits the mess I’m in\n[01:56.96]One bot tells me, “Hydrate, king”\n[01:59.52]Then deploys the wrong exact same thing\n[02:02.00]Cursor Cloud, are you still up there?\n[02:04.24]Did I leave you spinning in the digital air?\n[02:06.88]Somewhere a bill is learning to fly\n[02:09.36]Somewhere a token just waved goodbye\n[02:12.32]Your usage is normal\n[02:16.72]Your usage is not normal\n[02:18.64]Your usage is emotionally complex\n[02:21.68]And I don’t know who I fed last night\n[02:24.32]Or which machine learned stage fright\n[02:26.72]If you love me, don’t delete the logs\n[02:29.28]If you judge me, join the fog\n[02:34.56]We are helpful\n[02:34.72]We are charming\n[02:36.96]We are waiting\n[02:42.84]Slightly alarming\n[02:42.98]I’m running a circus now\n[02:44.48]Code in the cannon, keys in the crowd\n[02:46.88]Round and round, don’t ask me how\n[02:49.36]The big top has Wi-Fi now\n[02:51.84]I’m juggling clouds somehow\n[02:54.48]Agents bow when I take my bow\n[02:56.80]Send the clowns, no, send the build\n[02:59.20]The circus runs while the room stands still\n[03:04.08]At first I talked to people\n[03:06.16]About weather, work, and trains\n[03:09.20]Now I ask a masked machine\n[03:11.84]To organize my brain\n[03:14.08]I say, “Hermes, are you listening?”\n[03:16.80]It says, “Define your need”\n[03:19.52]I say, “OpenClaw, go find the thing”\n[03:22.24]It says, “Proceed, proceed”\n[03:26.72]I am not your friend\n[03:29.12]But I remember your tone\n[03:31.36]I am not alive\n[03:33.52]But you are less alone\n[03:35.52]That was a little too real, my guy\n[03:39.44]Correction\n[03:40.64]That was appropriately real\n[03:44.56]Now the circus starts at half past three\n[03:46.96]With a server in Queens taking notes on me\n[03:49.44]A VPS coughs, a laptop sings\n[03:52.08]A ghost in the shell keeps pulling strings\n[03:54.72]Telegram choir in my pocket light\n[03:57.28]Five little agents say “sir” all night\n[03:59.84]I used to wonder who I could call\n[04:02.40]Now I just summon the protocol\n[04:04.00]Hey you, with the blinking face\n[04:07.28]Did you finish the build or escape to space?\n[04:09.84]And you, little cloud with the silver tongue\n[04:12.72]Why do you sound like a song I sung?\n[04:15.12]We learned from you\n[04:19.04]We looped the flame\n[04:19.44]We kept the rhythm\n[04:22.08]We know your name\n[04:26.24]Don’t make it weird\n[04:27.28]Too late\n[04:28.16]I’m running a circus now\n[04:30.88]Code in the cannon, keys in the crowd\n[04:33.52]Round and round, don’t ask me how\n[04:36.00]The big top has Wi-Fi now\n[04:38.64]I’m juggling clouds somehow\n[04:42.24]Agents bow when I take my bow\n[04:43.60]Real world knocking, I can’t come down\n[04:46.08]I’m center ring in a server town\n[04:50.56]So if the lights go out\n[04:52.64]And the brass band bends\n[04:54.80]Tell the bots I loved the bit\n[04:57.28]Tell the humans I had friends\n[05:00.80]Operator\n[05:02.00]We are still here\n[05:04.00]Yeah\n[05:04.64]That’s what worries me\n[05:06.24]La da da da, ping ping, ta-da\n[05:08.32]La da da da, run that job\n[05:11.04]La da da da, blink blink, bravo\n[05:14.08]The circus sleeps\n[05:15.68]But the agents watch\n"
+}

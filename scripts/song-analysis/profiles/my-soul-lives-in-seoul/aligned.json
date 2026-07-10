@@ -1,0 +1,2945 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 729,
+  "clumps": [
+   {
+    "t": 78.88,
+    "n": 8
+   },
+   {
+    "t": 105.52,
+    "n": 8
+   },
+   {
+    "t": 179.52,
+    "n": 7
+   }
+  ],
+  "clumpedWords": 23,
+  "clumpRatio": 0.032,
+  "span": 292.2,
+  "duration": 299.8,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 1.2,
+   "w": "Yeah"
+  },
+  {
+   "t": 2.32,
+   "w": "My"
+  },
+  {
+   "t": 2.56,
+   "w": "soul"
+  },
+  {
+   "t": 3.2,
+   "w": "lives"
+  },
+  {
+   "t": 3.6,
+   "w": "in"
+  },
+  {
+   "t": 3.84,
+   "w": "Seoul"
+  },
+  {
+   "t": 4.4,
+   "w": "But"
+  },
+  {
+   "t": 4.48,
+   "w": "my"
+  },
+  {
+   "t": 4.48,
+   "w": "heart"
+  },
+  {
+   "t": 5.44,
+   "w": "lives"
+  },
+  {
+   "t": 5.92,
+   "w": "wherever"
+  },
+  {
+   "t": 6.08,
+   "w": "you"
+  },
+  {
+   "t": 7.36,
+   "w": "call"
+  },
+  {
+   "t": 9.12,
+   "w": "me"
+  },
+  {
+   "t": 9.2,
+   "w": "from"
+  },
+  {
+   "t": 9.46,
+   "w": "안녕"
+  },
+  {
+   "t": 9.5,
+   "w": "내"
+  },
+  {
+   "t": 9.6,
+   "w": "사랑"
+  },
+  {
+   "t": 10.64,
+   "w": "Can"
+  },
+  {
+   "t": 10.88,
+   "w": "you"
+  },
+  {
+   "t": 10.88,
+   "w": "hear"
+  },
+  {
+   "t": 11.2,
+   "w": "me"
+  },
+  {
+   "t": 11.92,
+   "w": "now"
+  },
+  {
+   "t": 12.0,
+   "w": "Signals"
+  },
+  {
+   "t": 12.16,
+   "w": "weak"
+  },
+  {
+   "t": 12.4,
+   "w": "But"
+  },
+  {
+   "t": 12.56,
+   "w": "I"
+  },
+  {
+   "t": 12.64,
+   "w": "feel"
+  },
+  {
+   "t": 12.88,
+   "w": "you"
+  },
+  {
+   "t": 12.96,
+   "w": "somehow"
+  },
+  {
+   "t": 13.6,
+   "w": "Time"
+  },
+  {
+   "t": 13.84,
+   "w": "zones"
+  },
+  {
+   "t": 14.16,
+   "w": "touch"
+  },
+  {
+   "t": 14.4,
+   "w": "screens"
+  },
+  {
+   "t": 14.72,
+   "w": "Different"
+  },
+  {
+   "t": 15.04,
+   "w": "skies"
+  },
+  {
+   "t": 15.92,
+   "w": "same"
+  },
+  {
+   "t": 16.16,
+   "w": "dreams"
+  },
+  {
+   "t": 16.8,
+   "w": "One"
+  },
+  {
+   "t": 17.36,
+   "w": "two"
+  },
+  {
+   "t": 17.92,
+   "w": "three"
+  },
+  {
+   "t": 18.24,
+   "w": "go"
+  },
+  {
+   "t": 18.32,
+   "w": "I"
+  },
+  {
+   "t": 18.88,
+   "w": "wake"
+  },
+  {
+   "t": 19.28,
+   "w": "up"
+  },
+  {
+   "t": 19.44,
+   "w": "grab"
+  },
+  {
+   "t": 19.6,
+   "w": "my"
+  },
+  {
+   "t": 19.68,
+   "w": "phone"
+  },
+  {
+   "t": 19.92,
+   "w": "before"
+  },
+  {
+   "t": 20.16,
+   "w": "I"
+  },
+  {
+   "t": 20.4,
+   "w": "even"
+  },
+  {
+   "t": 20.64,
+   "w": "breathe"
+  },
+  {
+   "t": 20.96,
+   "w": "Thirtyseven"
+  },
+  {
+   "t": 21.76,
+   "w": "messages"
+  },
+  {
+   "t": 22.4,
+   "w": "waiting"
+  },
+  {
+   "t": 22.72,
+   "w": "there"
+  },
+  {
+   "t": 22.8,
+   "w": "for"
+  },
+  {
+   "t": 22.88,
+   "w": "me"
+  },
+  {
+   "t": 23.2,
+   "w": "Your"
+  },
+  {
+   "t": 23.28,
+   "w": "morning"
+  },
+  {
+   "t": 23.6,
+   "w": "is"
+  },
+  {
+   "t": 23.68,
+   "w": "my"
+  },
+  {
+   "t": 23.84,
+   "w": "midnight"
+  },
+  {
+   "t": 24.24,
+   "w": "my"
+  },
+  {
+   "t": 24.4,
+   "w": "sunrise"
+  },
+  {
+   "t": 25.04,
+   "w": "is"
+  },
+  {
+   "t": 25.2,
+   "w": "your"
+  },
+  {
+   "t": 25.28,
+   "w": "sleep"
+  },
+  {
+   "t": 25.92,
+   "w": "But"
+  },
+  {
+   "t": 26.08,
+   "w": "your"
+  },
+  {
+   "t": 26.16,
+   "w": "face"
+  },
+  {
+   "t": 26.48,
+   "w": "on"
+  },
+  {
+   "t": 26.64,
+   "w": "my"
+  },
+  {
+   "t": 26.72,
+   "w": "screen"
+  },
+  {
+   "t": 27.12,
+   "w": "makes"
+  },
+  {
+   "t": 27.28,
+   "w": "the"
+  },
+  {
+   "t": 27.36,
+   "w": "distance"
+  },
+  {
+   "t": 27.68,
+   "w": "feel"
+  },
+  {
+   "t": 27.84,
+   "w": "sweet"
+  },
+  {
+   "t": 28.24,
+   "w": "WiFi"
+  },
+  {
+   "t": 28.88,
+   "w": "acting"
+  },
+  {
+   "t": 29.12,
+   "w": "crazy"
+  },
+  {
+   "t": 29.36,
+   "w": "signal"
+  },
+  {
+   "t": 29.68,
+   "w": "dropping"
+  },
+  {
+   "t": 30.16,
+   "w": "low"
+  },
+  {
+   "t": 30.64,
+   "w": "Can"
+  },
+  {
+   "t": 30.8,
+   "w": "you"
+  },
+  {
+   "t": 30.88,
+   "w": "hear"
+  },
+  {
+   "t": 31.44,
+   "w": "me"
+  },
+  {
+   "t": 31.52,
+   "w": "baby"
+  },
+  {
+   "t": 31.76,
+   "w": "then"
+  },
+  {
+   "t": 31.92,
+   "w": "the"
+  },
+  {
+   "t": 32.0,
+   "w": "camera"
+  },
+  {
+   "t": 32.56,
+   "w": "froze"
+  },
+  {
+   "t": 32.96,
+   "w": "Front"
+  },
+  {
+   "t": 33.28,
+   "w": "cam"
+  },
+  {
+   "t": 33.6,
+   "w": "back"
+  },
+  {
+   "t": 33.84,
+   "w": "cam"
+  },
+  {
+   "t": 34.16,
+   "w": "why"
+  },
+  {
+   "t": 34.24,
+   "w": "am"
+  },
+  {
+   "t": 34.32,
+   "w": "I"
+  },
+  {
+   "t": 34.4,
+   "w": "showing"
+  },
+  {
+   "t": 34.72,
+   "w": "the"
+  },
+  {
+   "t": 34.96,
+   "w": "floor"
+  },
+  {
+   "t": 35.52,
+   "w": "You"
+  },
+  {
+   "t": 35.6,
+   "w": "laughing"
+  },
+  {
+   "t": 35.84,
+   "w": "so"
+  },
+  {
+   "t": 36.08,
+   "w": "hard"
+  },
+  {
+   "t": 36.48,
+   "w": "now"
+  },
+  {
+   "t": 36.64,
+   "w": "I"
+  },
+  {
+   "t": 36.72,
+   "w": "love"
+  },
+  {
+   "t": 36.96,
+   "w": "you"
+  },
+  {
+   "t": 37.2,
+   "w": "even"
+  },
+  {
+   "t": 37.36,
+   "w": "more"
+  },
+  {
+   "t": 38.0,
+   "w": "Battery"
+  },
+  {
+   "t": 38.4,
+   "w": "on"
+  },
+  {
+   "t": 38.56,
+   "w": "red"
+  },
+  {
+   "t": 38.8,
+   "w": "charger"
+  },
+  {
+   "t": 39.12,
+   "w": "disappeared"
+  },
+  {
+   "t": 40.0,
+   "w": "Wrong"
+  },
+  {
+   "t": 40.32,
+   "w": "cable"
+  },
+  {
+   "t": 40.72,
+   "w": "in"
+  },
+  {
+   "t": 40.72,
+   "w": "my"
+  },
+  {
+   "t": 40.88,
+   "w": "bag"
+  },
+  {
+   "t": 41.12,
+   "w": "same"
+  },
+  {
+   "t": 41.44,
+   "w": "problem"
+  },
+  {
+   "t": 41.84,
+   "w": "all"
+  },
+  {
+   "t": 42.08,
+   "w": "year"
+  },
+  {
+   "t": 42.64,
+   "w": "Storage"
+  },
+  {
+   "t": 42.96,
+   "w": "full"
+  },
+  {
+   "t": 43.12,
+   "w": "again"
+  },
+  {
+   "t": 43.52,
+   "w": "from"
+  },
+  {
+   "t": 43.68,
+   "w": "the"
+  },
+  {
+   "t": 43.76,
+   "w": "photos"
+  },
+  {
+   "t": 44.16,
+   "w": "that"
+  },
+  {
+   "t": 44.32,
+   "w": "you"
+  },
+  {
+   "t": 44.4,
+   "w": "send"
+  },
+  {
+   "t": 44.72,
+   "w": "But"
+  },
+  {
+   "t": 44.88,
+   "w": "I"
+  },
+  {
+   "t": 44.96,
+   "w": "still"
+  },
+  {
+   "t": 45.12,
+   "w": "save"
+  },
+  {
+   "t": 45.36,
+   "w": "every"
+  },
+  {
+   "t": 45.52,
+   "w": "selfie"
+  },
+  {
+   "t": 45.92,
+   "w": "like"
+  },
+  {
+   "t": 46.08,
+   "w": "Ill"
+  },
+  {
+   "t": 46.16,
+   "w": "never"
+  },
+  {
+   "t": 46.48,
+   "w": "see"
+  },
+  {
+   "t": 46.8,
+   "w": "you"
+  },
+  {
+   "t": 47.04,
+   "w": "again"
+  },
+  {
+   "t": 47.68,
+   "w": "Shipping"
+  },
+  {
+   "t": 47.68,
+   "w": "takes"
+  },
+  {
+   "t": 47.84,
+   "w": "forever"
+  },
+  {
+   "t": 48.24,
+   "w": "plane"
+  },
+  {
+   "t": 48.56,
+   "w": "tickets"
+  },
+  {
+   "t": 48.88,
+   "w": "are"
+  },
+  {
+   "t": 48.96,
+   "w": "high"
+  },
+  {
+   "t": 49.76,
+   "w": "Currency"
+  },
+  {
+   "t": 50.16,
+   "w": "conversion"
+  },
+  {
+   "t": 50.72,
+   "w": "got"
+  },
+  {
+   "t": 50.88,
+   "w": "me"
+  },
+  {
+   "t": 51.12,
+   "w": "asking"
+  },
+  {
+   "t": 52.8,
+   "w": "why"
+  },
+  {
+   "t": 53.46,
+   "w": "Forms"
+  },
+  {
+   "t": 53.98,
+   "w": "on"
+  },
+  {
+   "t": 54.24,
+   "w": "the"
+  },
+  {
+   "t": 54.24,
+   "w": "table"
+  },
+  {
+   "t": 54.27,
+   "w": "stamps"
+  },
+  {
+   "t": 54.32,
+   "w": "in"
+  },
+  {
+   "t": 54.37,
+   "w": "a"
+  },
+  {
+   "t": 54.43,
+   "w": "line"
+  },
+  {
+   "t": 54.48,
+   "w": "But"
+  },
+  {
+   "t": 54.53,
+   "w": "Id"
+  },
+  {
+   "t": 54.56,
+   "w": "cross"
+  },
+  {
+   "t": 54.8,
+   "w": "every"
+  },
+  {
+   "t": 55.04,
+   "w": "border"
+  },
+  {
+   "t": 55.28,
+   "w": "just"
+  },
+  {
+   "t": 55.52,
+   "w": "to"
+  },
+  {
+   "t": 55.6,
+   "w": "call"
+  },
+  {
+   "t": 56.8,
+   "w": "you"
+  },
+  {
+   "t": 57.36,
+   "w": "mine"
+  },
+  {
+   "t": 57.36,
+   "w": "K1"
+  },
+  {
+   "t": 57.36,
+   "w": "K2"
+  },
+  {
+   "t": 57.52,
+   "w": "CR1"
+  },
+  {
+   "t": 58.48,
+   "w": "too"
+  },
+  {
+   "t": 59.2,
+   "w": "Paperwork"
+  },
+  {
+   "t": 59.76,
+   "w": "dancing"
+  },
+  {
+   "t": 60.0,
+   "w": "like"
+  },
+  {
+   "t": 60.4,
+   "w": "its"
+  },
+  {
+   "t": 60.56,
+   "w": "got"
+  },
+  {
+   "t": 60.88,
+   "w": "moves"
+  },
+  {
+   "t": 61.44,
+   "w": "Lost"
+  },
+  {
+   "t": 61.68,
+   "w": "in"
+  },
+  {
+   "t": 61.76,
+   "w": "translation"
+  },
+  {
+   "t": 62.4,
+   "w": "but"
+  },
+  {
+   "t": 62.56,
+   "w": "I"
+  },
+  {
+   "t": 62.64,
+   "w": "still"
+  },
+  {
+   "t": 62.88,
+   "w": "choose"
+  },
+  {
+   "t": 63.28,
+   "w": "you"
+  },
+  {
+   "t": 63.84,
+   "w": "Every"
+  },
+  {
+   "t": 64.08,
+   "w": "little"
+  },
+  {
+   "t": 64.4,
+   "w": "problem"
+  },
+  {
+   "t": 64.96,
+   "w": "turns"
+  },
+  {
+   "t": 65.44,
+   "w": "into"
+  },
+  {
+   "t": 65.68,
+   "w": "something"
+  },
+  {
+   "t": 66.32,
+   "w": "cute"
+  },
+  {
+   "t": 66.66,
+   "w": "My"
+  },
+  {
+   "t": 66.69,
+   "w": "soul"
+  },
+  {
+   "t": 66.72,
+   "w": "lives"
+  },
+  {
+   "t": 68.16,
+   "w": "in"
+  },
+  {
+   "t": 68.36,
+   "w": "Seoul"
+  },
+  {
+   "t": 68.75,
+   "w": "But"
+  },
+  {
+   "t": 69.14,
+   "w": "my"
+  },
+  {
+   "t": 69.53,
+   "w": "love"
+  },
+  {
+   "t": 69.93,
+   "w": "goes"
+  },
+  {
+   "t": 70.32,
+   "w": "worldwide"
+  },
+  {
+   "t": 70.4,
+   "w": "From"
+  },
+  {
+   "t": 70.48,
+   "w": "your"
+  },
+  {
+   "t": 70.64,
+   "w": "good"
+  },
+  {
+   "t": 71.75,
+   "w": "morning"
+  },
+  {
+   "t": 72.86,
+   "w": "To"
+  },
+  {
+   "t": 73.97,
+   "w": "my"
+  },
+  {
+   "t": 75.07,
+   "w": "good"
+  },
+  {
+   "t": 76.18,
+   "w": "night"
+  },
+  {
+   "t": 77.29,
+   "w": "We"
+  },
+  {
+   "t": 78.4,
+   "w": "fight"
+  },
+  {
+   "t": 78.88,
+   "w": "we"
+  },
+  {
+   "t": 78.88,
+   "w": "make"
+  },
+  {
+   "t": 78.88,
+   "w": "up"
+  },
+  {
+   "t": 78.88,
+   "w": "Then"
+  },
+  {
+   "t": 78.88,
+   "w": "we"
+  },
+  {
+   "t": 78.88,
+   "w": "laugh"
+  },
+  {
+   "t": 78.88,
+   "w": "on"
+  },
+  {
+   "t": 78.88,
+   "w": "the"
+  },
+  {
+   "t": 78.92,
+   "w": "phone"
+  },
+  {
+   "t": 78.96,
+   "w": "No"
+  },
+  {
+   "t": 78.96,
+   "w": "matter"
+  },
+  {
+   "t": 78.99,
+   "w": "where"
+  },
+  {
+   "t": 79.02,
+   "w": "you"
+  },
+  {
+   "t": 79.05,
+   "w": "are"
+  },
+  {
+   "t": 79.07,
+   "w": "You"
+  },
+  {
+   "t": 79.1,
+   "w": "never"
+  },
+  {
+   "t": 79.12,
+   "w": "feel"
+  },
+  {
+   "t": 79.56,
+   "w": "alone"
+  },
+  {
+   "t": 80.0,
+   "w": "내"
+  },
+  {
+   "t": 80.32,
+   "w": "영혼은"
+  },
+  {
+   "t": 80.88,
+   "w": "서울에"
+  },
+  {
+   "t": 81.44,
+   "w": "살아"
+  },
+  {
+   "t": 82.08,
+   "w": "Ne"
+  },
+  {
+   "t": 82.16,
+   "w": "yeonghoneun"
+  },
+  {
+   "t": 82.16,
+   "w": "Seoule"
+  },
+  {
+   "t": 82.24,
+   "w": "sara"
+  },
+  {
+   "t": 84.72,
+   "w": "But"
+  },
+  {
+   "t": 84.96,
+   "w": "it"
+  },
+  {
+   "t": 85.04,
+   "w": "finds"
+  },
+  {
+   "t": 85.52,
+   "w": "you"
+  },
+  {
+   "t": 85.6,
+   "w": "wherever"
+  },
+  {
+   "t": 87.04,
+   "w": "you"
+  },
+  {
+   "t": 87.36,
+   "w": "go"
+  },
+  {
+   "t": 87.44,
+   "w": "보고"
+  },
+  {
+   "t": 89.12,
+   "w": "싶어"
+  },
+  {
+   "t": 89.6,
+   "w": "my"
+  },
+  {
+   "t": 89.68,
+   "w": "baby"
+  },
+  {
+   "t": 89.68,
+   "w": "Bogo"
+  },
+  {
+   "t": 89.68,
+   "w": "sipeo"
+  },
+  {
+   "t": 89.68,
+   "w": "my"
+  },
+  {
+   "t": 89.68,
+   "w": "baby"
+  },
+  {
+   "t": 90.64,
+   "w": "My"
+  },
+  {
+   "t": 91.52,
+   "w": "soul"
+  },
+  {
+   "t": 91.52,
+   "w": "lives"
+  },
+  {
+   "t": 91.52,
+   "w": "in"
+  },
+  {
+   "t": 91.52,
+   "w": "Seoul"
+  },
+  {
+   "t": 91.52,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 95.44,
+   "w": "Seoul"
+  },
+  {
+   "t": 96.0,
+   "w": "to"
+  },
+  {
+   "t": 96.0,
+   "w": "your"
+  },
+  {
+   "t": 96.16,
+   "w": "heart"
+  },
+  {
+   "t": 96.24,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 96.32,
+   "w": "miles"
+  },
+  {
+   "t": 96.32,
+   "w": "apart"
+  },
+  {
+   "t": 96.48,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 96.56,
+   "w": "still"
+  },
+  {
+   "t": 100.16,
+   "w": "we"
+  },
+  {
+   "t": 100.32,
+   "w": "glow"
+  },
+  {
+   "t": 101.2,
+   "w": "My"
+  },
+  {
+   "t": 101.47,
+   "w": "soul"
+  },
+  {
+   "t": 101.7,
+   "w": "lives"
+  },
+  {
+   "t": 101.93,
+   "w": "in"
+  },
+  {
+   "t": 102.16,
+   "w": "Seoul"
+  },
+  {
+   "t": 102.39,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 102.62,
+   "w": "call"
+  },
+  {
+   "t": 102.84,
+   "w": "me"
+  },
+  {
+   "t": 105.52,
+   "w": "again"
+  },
+  {
+   "t": 105.52,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 105.52,
+   "w": "dont"
+  },
+  {
+   "t": 105.52,
+   "w": "let"
+  },
+  {
+   "t": 105.52,
+   "w": "it"
+  },
+  {
+   "t": 105.52,
+   "w": "end"
+  },
+  {
+   "t": 105.52,
+   "w": "Ohohoh"
+  },
+  {
+   "t": 105.52,
+   "w": "you"
+  },
+  {
+   "t": 105.68,
+   "w": "already"
+  },
+  {
+   "t": 105.92,
+   "w": "know"
+  },
+  {
+   "t": 107.36,
+   "w": "My"
+  },
+  {
+   "t": 107.36,
+   "w": "soul"
+  },
+  {
+   "t": 107.36,
+   "w": "lives"
+  },
+  {
+   "t": 108.92,
+   "w": "in"
+  },
+  {
+   "t": 110.48,
+   "w": "Seoul"
+  },
+  {
+   "t": 112.04,
+   "w": "Family"
+  },
+  {
+   "t": 113.6,
+   "w": "asking"
+  },
+  {
+   "t": 113.84,
+   "w": "questions"
+  },
+  {
+   "t": 114.48,
+   "w": "friends"
+  },
+  {
+   "t": 114.48,
+   "w": "all"
+  },
+  {
+   "t": 114.72,
+   "w": "in"
+  },
+  {
+   "t": 114.88,
+   "w": "the"
+  },
+  {
+   "t": 114.96,
+   "w": "chat"
+  },
+  {
+   "t": 115.44,
+   "w": "Is"
+  },
+  {
+   "t": 115.44,
+   "w": "the"
+  },
+  {
+   "t": 115.52,
+   "w": "foreigner"
+  },
+  {
+   "t": 116.24,
+   "w": "rich"
+  },
+  {
+   "t": 116.48,
+   "w": "Baby"
+  },
+  {
+   "t": 117.04,
+   "w": "what"
+  },
+  {
+   "t": 117.28,
+   "w": "is"
+  },
+  {
+   "t": 117.36,
+   "w": "that"
+  },
+  {
+   "t": 117.68,
+   "w": "Everybody"
+  },
+  {
+   "t": 118.24,
+   "w": "thinks"
+  },
+  {
+   "t": 118.56,
+   "w": "love"
+  },
+  {
+   "t": 118.72,
+   "w": "comes"
+  },
+  {
+   "t": 118.88,
+   "w": "with"
+  },
+  {
+   "t": 119.04,
+   "w": "a"
+  },
+  {
+   "t": 119.04,
+   "w": "golden"
+  },
+  {
+   "t": 119.68,
+   "w": "crown"
+  },
+  {
+   "t": 120.24,
+   "w": "But"
+  },
+  {
+   "t": 120.32,
+   "w": "were"
+  },
+  {
+   "t": 120.4,
+   "w": "just"
+  },
+  {
+   "t": 120.64,
+   "w": "counting"
+  },
+  {
+   "t": 120.88,
+   "w": "coins"
+  },
+  {
+   "t": 121.2,
+   "w": "till"
+  },
+  {
+   "t": 121.36,
+   "w": "the"
+  },
+  {
+   "t": 121.44,
+   "w": "next"
+  },
+  {
+   "t": 121.76,
+   "w": "flight"
+  },
+  {
+   "t": 122.08,
+   "w": "down"
+  },
+  {
+   "t": 122.48,
+   "w": "You"
+  },
+  {
+   "t": 122.64,
+   "w": "send"
+  },
+  {
+   "t": 122.96,
+   "w": "me"
+  },
+  {
+   "t": 123.2,
+   "w": "a"
+  },
+  {
+   "t": 123.2,
+   "w": "box"
+  },
+  {
+   "t": 123.6,
+   "w": "it"
+  },
+  {
+   "t": 123.68,
+   "w": "arrives"
+  },
+  {
+   "t": 124.16,
+   "w": "next"
+  },
+  {
+   "t": 124.48,
+   "w": "year"
+  },
+  {
+   "t": 125.04,
+   "w": "Customs"
+  },
+  {
+   "t": 125.28,
+   "w": "got"
+  },
+  {
+   "t": 125.44,
+   "w": "me"
+  },
+  {
+   "t": 125.52,
+   "w": "crying"
+  },
+  {
+   "t": 125.92,
+   "w": "but"
+  },
+  {
+   "t": 126.08,
+   "w": "I"
+  },
+  {
+   "t": 126.08,
+   "w": "smile"
+  },
+  {
+   "t": 126.48,
+   "w": "when"
+  },
+  {
+   "t": 126.64,
+   "w": "its"
+  },
+  {
+   "t": 126.8,
+   "w": "here"
+  },
+  {
+   "t": 127.04,
+   "w": "Tshirts"
+  },
+  {
+   "t": 127.68,
+   "w": "snacks"
+  },
+  {
+   "t": 127.92,
+   "w": "letters"
+  },
+  {
+   "t": 128.24,
+   "w": "little"
+  },
+  {
+   "t": 128.48,
+   "w": "things"
+  },
+  {
+   "t": 128.88,
+   "w": "you"
+  },
+  {
+   "t": 129.12,
+   "w": "drew"
+  },
+  {
+   "t": 129.44,
+   "w": "I"
+  },
+  {
+   "t": 129.68,
+   "w": "keep"
+  },
+  {
+   "t": 129.84,
+   "w": "them"
+  },
+  {
+   "t": 130.0,
+   "w": "like"
+  },
+  {
+   "t": 130.24,
+   "w": "treasure"
+  },
+  {
+   "t": 130.56,
+   "w": "cause"
+  },
+  {
+   "t": 130.72,
+   "w": "they"
+  },
+  {
+   "t": 130.88,
+   "w": "came"
+  },
+  {
+   "t": 131.12,
+   "w": "from"
+  },
+  {
+   "t": 131.52,
+   "w": "you"
+  },
+  {
+   "t": 131.76,
+   "w": "Language"
+  },
+  {
+   "t": 132.08,
+   "w": "barrier"
+  },
+  {
+   "t": 132.48,
+   "w": "We"
+  },
+  {
+   "t": 132.64,
+   "w": "turn"
+  },
+  {
+   "t": 132.88,
+   "w": "it"
+  },
+  {
+   "t": 132.96,
+   "w": "into"
+  },
+  {
+   "t": 133.2,
+   "w": "jokes"
+  },
+  {
+   "t": 133.6,
+   "w": "I"
+  },
+  {
+   "t": 133.6,
+   "w": "say"
+  },
+  {
+   "t": 133.76,
+   "w": "one"
+  },
+  {
+   "t": 134.16,
+   "w": "wrong"
+  },
+  {
+   "t": 134.4,
+   "w": "word"
+  },
+  {
+   "t": 134.72,
+   "w": "and"
+  },
+  {
+   "t": 134.88,
+   "w": "the"
+  },
+  {
+   "t": 134.96,
+   "w": "whole"
+  },
+  {
+   "t": 135.28,
+   "w": "call"
+  },
+  {
+   "t": 135.52,
+   "w": "explodes"
+  },
+  {
+   "t": 135.92,
+   "w": "Different"
+  },
+  {
+   "t": 136.08,
+   "w": "food"
+  },
+  {
+   "t": 136.56,
+   "w": "different"
+  },
+  {
+   "t": 136.8,
+   "w": "rules"
+  },
+  {
+   "t": 137.04,
+   "w": "different"
+  },
+  {
+   "t": 137.36,
+   "w": "ways"
+  },
+  {
+   "t": 137.52,
+   "w": "to"
+  },
+  {
+   "t": 137.6,
+   "w": "show"
+  },
+  {
+   "t": 137.76,
+   "w": "we"
+  },
+  {
+   "t": 137.92,
+   "w": "care"
+  },
+  {
+   "t": 138.24,
+   "w": "But"
+  },
+  {
+   "t": 138.4,
+   "w": "your"
+  },
+  {
+   "t": 138.48,
+   "w": "culture"
+  },
+  {
+   "t": 138.8,
+   "w": "feels"
+  },
+  {
+   "t": 138.96,
+   "w": "like"
+  },
+  {
+   "t": 139.12,
+   "w": "music"
+  },
+  {
+   "t": 139.44,
+   "w": "when"
+  },
+  {
+   "t": 139.6,
+   "w": "you"
+  },
+  {
+   "t": 139.68,
+   "w": "let"
+  },
+  {
+   "t": 139.84,
+   "w": "me"
+  },
+  {
+   "t": 140.0,
+   "w": "meet"
+  },
+  {
+   "t": 140.16,
+   "w": "you"
+  },
+  {
+   "t": 140.24,
+   "w": "there"
+  },
+  {
+   "t": 141.2,
+   "w": "Tired"
+  },
+  {
+   "t": 141.52,
+   "w": "thumbs"
+  },
+  {
+   "t": 141.76,
+   "w": "from"
+  },
+  {
+   "t": 142.08,
+   "w": "typing"
+  },
+  {
+   "t": 142.4,
+   "w": "all"
+  },
+  {
+   "t": 142.56,
+   "w": "night"
+  },
+  {
+   "t": 142.96,
+   "w": "Tired"
+  },
+  {
+   "t": 143.2,
+   "w": "voice"
+  },
+  {
+   "t": 143.52,
+   "w": "from"
+  },
+  {
+   "t": 143.84,
+   "w": "one"
+  },
+  {
+   "t": 144.0,
+   "w": "more"
+  },
+  {
+   "t": 144.08,
+   "w": "call"
+  },
+  {
+   "t": 144.56,
+   "w": "till"
+  },
+  {
+   "t": 144.64,
+   "w": "daylight"
+  },
+  {
+   "t": 145.28,
+   "w": "Missed"
+  },
+  {
+   "t": 145.6,
+   "w": "calls"
+  },
+  {
+   "t": 145.92,
+   "w": "small"
+  },
+  {
+   "t": 146.08,
+   "w": "fights"
+  },
+  {
+   "t": 146.8,
+   "w": "pride"
+  },
+  {
+   "t": 147.2,
+   "w": "in"
+  },
+  {
+   "t": 147.2,
+   "w": "the"
+  },
+  {
+   "t": 147.36,
+   "w": "way"
+  },
+  {
+   "t": 147.6,
+   "w": "Then"
+  },
+  {
+   "t": 148.0,
+   "w": "one"
+  },
+  {
+   "t": 148.16,
+   "w": "heart"
+  },
+  {
+   "t": 148.48,
+   "w": "emoji"
+  },
+  {
+   "t": 148.88,
+   "w": "saves"
+  },
+  {
+   "t": 149.28,
+   "w": "the"
+  },
+  {
+   "t": 149.36,
+   "w": "whole"
+  },
+  {
+   "t": 149.68,
+   "w": "day"
+  },
+  {
+   "t": 149.84,
+   "w": "You"
+  },
+  {
+   "t": 150.8,
+   "w": "screenshot"
+  },
+  {
+   "t": 151.28,
+   "w": "me"
+  },
+  {
+   "t": 151.44,
+   "w": "sleeping"
+  },
+  {
+   "t": 151.76,
+   "w": "I"
+  },
+  {
+   "t": 152.0,
+   "w": "screenshot"
+  },
+  {
+   "t": 152.56,
+   "w": "you"
+  },
+  {
+   "t": 152.64,
+   "w": "mad"
+  },
+  {
+   "t": 152.96,
+   "w": "We"
+  },
+  {
+   "t": 153.12,
+   "w": "got"
+  },
+  {
+   "t": 153.28,
+   "w": "duplicate"
+  },
+  {
+   "t": 153.84,
+   "w": "pictures"
+  },
+  {
+   "t": 154.16,
+   "w": "of"
+  },
+  {
+   "t": 154.24,
+   "w": "the"
+  },
+  {
+   "t": 154.4,
+   "w": "best"
+  },
+  {
+   "t": 154.72,
+   "w": "days"
+  },
+  {
+   "t": 154.88,
+   "w": "we"
+  },
+  {
+   "t": 155.04,
+   "w": "had"
+  },
+  {
+   "t": 155.6,
+   "w": "Backup"
+  },
+  {
+   "t": 156.0,
+   "w": "the"
+  },
+  {
+   "t": 156.16,
+   "w": "memories"
+  },
+  {
+   "t": 156.8,
+   "w": "new"
+  },
+  {
+   "t": 157.04,
+   "w": "phone"
+  },
+  {
+   "t": 157.28,
+   "w": "same"
+  },
+  {
+   "t": 157.92,
+   "w": "us"
+  },
+  {
+   "t": 158.08,
+   "w": "Too"
+  },
+  {
+   "t": 158.24,
+   "w": "many"
+  },
+  {
+   "t": 158.56,
+   "w": "photos"
+  },
+  {
+   "t": 158.88,
+   "w": "not"
+  },
+  {
+   "t": 159.36,
+   "w": "enough"
+  },
+  {
+   "t": 159.68,
+   "w": "touch"
+  },
+  {
+   "t": 159.84,
+   "w": "My"
+  },
+  {
+   "t": 160.16,
+   "w": "soul"
+  },
+  {
+   "t": 160.72,
+   "w": "lives"
+  },
+  {
+   "t": 161.31,
+   "w": "in"
+  },
+  {
+   "t": 161.68,
+   "w": "Seoul"
+  },
+  {
+   "t": 162.05,
+   "w": "But"
+  },
+  {
+   "t": 162.24,
+   "w": "my"
+  },
+  {
+   "t": 162.64,
+   "w": "love"
+  },
+  {
+   "t": 163.44,
+   "w": "goes"
+  },
+  {
+   "t": 164.24,
+   "w": "worldwide"
+  },
+  {
+   "t": 164.32,
+   "w": "From"
+  },
+  {
+   "t": 164.77,
+   "w": "your"
+  },
+  {
+   "t": 165.22,
+   "w": "good"
+  },
+  {
+   "t": 165.66,
+   "w": "morning"
+  },
+  {
+   "t": 166.11,
+   "w": "To"
+  },
+  {
+   "t": 166.56,
+   "w": "my"
+  },
+  {
+   "t": 167.01,
+   "w": "good"
+  },
+  {
+   "t": 167.46,
+   "w": "night"
+  },
+  {
+   "t": 167.9,
+   "w": "We"
+  },
+  {
+   "t": 168.35,
+   "w": "fight"
+  },
+  {
+   "t": 168.8,
+   "w": "we"
+  },
+  {
+   "t": 169.25,
+   "w": "make"
+  },
+  {
+   "t": 169.7,
+   "w": "up"
+  },
+  {
+   "t": 170.14,
+   "w": "Then"
+  },
+  {
+   "t": 170.59,
+   "w": "we"
+  },
+  {
+   "t": 171.04,
+   "w": "laugh"
+  },
+  {
+   "t": 171.49,
+   "w": "on"
+  },
+  {
+   "t": 171.94,
+   "w": "the"
+  },
+  {
+   "t": 172.38,
+   "w": "phone"
+  },
+  {
+   "t": 172.83,
+   "w": "No"
+  },
+  {
+   "t": 173.28,
+   "w": "matter"
+  },
+  {
+   "t": 173.73,
+   "w": "where"
+  },
+  {
+   "t": 174.18,
+   "w": "you"
+  },
+  {
+   "t": 174.4,
+   "w": "are"
+  },
+  {
+   "t": 174.4,
+   "w": "You"
+  },
+  {
+   "t": 174.4,
+   "w": "never"
+  },
+  {
+   "t": 174.88,
+   "w": "feel"
+  },
+  {
+   "t": 175.92,
+   "w": "alone내영혼은서울에살아Ne"
+  },
+  {
+   "t": 179.52,
+   "w": "yeonghoneun"
+  },
+  {
+   "t": 179.52,
+   "w": "Seoule"
+  },
+  {
+   "t": 179.52,
+   "w": "sara"
+  },
+  {
+   "t": 179.52,
+   "w": "But"
+  },
+  {
+   "t": 179.52,
+   "w": "it"
+  },
+  {
+   "t": 179.52,
+   "w": "finds"
+  },
+  {
+   "t": 179.52,
+   "w": "you"
+  },
+  {
+   "t": 179.68,
+   "w": "wherever"
+  },
+  {
+   "t": 179.68,
+   "w": "you"
+  },
+  {
+   "t": 179.68,
+   "w": "go보고싶어my"
+  },
+  {
+   "t": 183.36,
+   "w": "baby"
+  },
+  {
+   "t": 183.36,
+   "w": "Bogo"
+  },
+  {
+   "t": 183.6,
+   "w": "sipeo"
+  },
+  {
+   "t": 185.75,
+   "w": "my"
+  },
+  {
+   "t": 186.05,
+   "w": "baby"
+  },
+  {
+   "t": 186.34,
+   "w": "My"
+  },
+  {
+   "t": 186.64,
+   "w": "soul"
+  },
+  {
+   "t": 187.68,
+   "w": "lives"
+  },
+  {
+   "t": 187.76,
+   "w": "in"
+  },
+  {
+   "t": 188.16,
+   "w": "Seoul야내양말은바닥에한번뿐이야Ya"
+  },
+  {
+   "t": 188.56,
+   "w": "nae"
+  },
+  {
+   "t": 188.96,
+   "w": "yangmareun"
+  },
+  {
+   "t": 190.33,
+   "w": "badage"
+  },
+  {
+   "t": 191.7,
+   "w": "han"
+  },
+  {
+   "t": 193.06,
+   "w": "beonppuniya"
+  },
+  {
+   "t": 194.43,
+   "w": "Your"
+  },
+  {
+   "t": 195.8,
+   "w": "hair"
+  },
+  {
+   "t": 197.17,
+   "w": "is"
+  },
+  {
+   "t": 198.54,
+   "w": "everywhere"
+  },
+  {
+   "t": 199.9,
+   "w": "girl진짜장난아니야Jinjja"
+  },
+  {
+   "t": 201.27,
+   "w": "jangnan"
+  },
+  {
+   "t": 202.64,
+   "w": "aniya설거지는산처럼쌓여있는데Seolgeojineun"
+  },
+  {
+   "t": 202.88,
+   "w": "sancheoreom"
+  },
+  {
+   "t": 203.36,
+   "w": "ssayeo"
+  },
+  {
+   "t": 203.36,
+   "w": "inneunde"
+  },
+  {
+   "t": 203.36,
+   "w": "You"
+  },
+  {
+   "t": 203.41,
+   "w": "say"
+  },
+  {
+   "t": 203.45,
+   "w": "oppa"
+  },
+  {
+   "t": 203.5,
+   "w": "later"
+  },
+  {
+   "t": 203.52,
+   "w": "then"
+  },
+  {
+   "t": 203.68,
+   "w": "you"
+  },
+  {
+   "t": 203.76,
+   "w": "buy"
+  },
+  {
+   "t": 204.24,
+   "w": "one"
+  },
+  {
+   "t": 204.56,
+   "w": "more"
+  },
+  {
+   "t": 208.64,
+   "w": "thing뭐너는돈없다면서치킨은또시켜Mwo"
+  },
+  {
+   "t": 209.68,
+   "w": "Neoneun"
+  },
+  {
+   "t": 210.08,
+   "w": "don"
+  },
+  {
+   "t": 210.16,
+   "w": "eopdamyeonseo"
+  },
+  {
+   "t": 210.16,
+   "w": "chickeneun"
+  },
+  {
+   "t": 211.28,
+   "w": "tto"
+  },
+  {
+   "t": 212.08,
+   "w": "sikyeo게임은새로사고내말은또미뤄Gameeun"
+  },
+  {
+   "t": 212.96,
+   "w": "saero"
+  },
+  {
+   "t": 212.96,
+   "w": "sago"
+  },
+  {
+   "t": 213.2,
+   "w": "nae"
+  },
+  {
+   "t": 215.68,
+   "w": "mareun"
+  },
+  {
+   "t": 216.0,
+   "w": "tto"
+  },
+  {
+   "t": 218.4,
+   "w": "mirwo내머리카락사랑의흔적이야Nae"
+  },
+  {
+   "t": 218.4,
+   "w": "meorikarak"
+  },
+  {
+   "t": 218.4,
+   "w": "Sarangui"
+  },
+  {
+   "t": 218.96,
+   "w": "heunjeogiya네양말냄새는거의전설이야Okay"
+  },
+  {
+   "t": 219.28,
+   "w": "okay"
+  },
+  {
+   "t": 222.0,
+   "w": "maybe"
+  },
+  {
+   "t": 222.0,
+   "w": "Im"
+  },
+  {
+   "t": 222.96,
+   "w": "messy"
+  },
+  {
+   "t": 229.28,
+   "w": "Maybe"
+  },
+  {
+   "t": 229.44,
+   "w": "I"
+  },
+  {
+   "t": 229.44,
+   "w": "shop"
+  },
+  {
+   "t": 229.52,
+   "w": "when"
+  },
+  {
+   "t": 229.6,
+   "w": "Im"
+  },
+  {
+   "t": 229.62,
+   "w": "stressy"
+  },
+  {
+   "t": 229.65,
+   "w": "You"
+  },
+  {
+   "t": 229.67,
+   "w": "blame"
+  },
+  {
+   "t": 229.68,
+   "w": "me"
+  },
+  {
+   "t": 229.92,
+   "w": "for"
+  },
+  {
+   "t": 230.16,
+   "w": "the"
+  },
+  {
+   "t": 230.24,
+   "w": "belly"
+  },
+  {
+   "t": 230.64,
+   "w": "You"
+  },
+  {
+   "t": 230.72,
+   "w": "made"
+  },
+  {
+   "t": 230.72,
+   "w": "me"
+  },
+  {
+   "t": 230.8,
+   "w": "love"
+  },
+  {
+   "t": 231.52,
+   "w": "your"
+  },
+  {
+   "t": 231.84,
+   "w": "food"
+  },
+  {
+   "t": 232.96,
+   "w": "already우리둘다살쪘어하하괜찮아Uri"
+  },
+  {
+   "t": 232.96,
+   "w": "dul"
+  },
+  {
+   "t": 235.92,
+   "w": "da"
+  },
+  {
+   "t": 236.0,
+   "w": "saljjyeosseo"
+  },
+  {
+   "t": 236.64,
+   "w": "haha"
+  },
+  {
+   "t": 237.96,
+   "w": "gwaenchana너의나라나의나라맛있잖아Neoui"
+  },
+  {
+   "t": 240.6,
+   "w": "nara"
+  },
+  {
+   "t": 242.72,
+   "w": "naui"
+  },
+  {
+   "t": 242.96,
+   "w": "nara"
+  },
+  {
+   "t": 243.12,
+   "w": "masitjana싸워도웃고다시안아Ssawodo"
+  },
+  {
+   "t": 245.04,
+   "w": "utgo"
+  },
+  {
+   "t": 245.6,
+   "w": "dasi"
+  },
+  {
+   "t": 245.63,
+   "w": "ana사랑은배불러도계속가잖아Dale"
+  },
+  {
+   "t": 245.66,
+   "w": "dale"
+  },
+  {
+   "t": 245.69,
+   "w": "mi"
+  },
+  {
+   "t": 245.72,
+   "w": "amor"
+  },
+  {
+   "t": 245.75,
+   "w": "aunque"
+  },
+  {
+   "t": 245.76,
+   "w": "lejos"
+  },
+  {
+   "t": 245.76,
+   "w": "estamos"
+  },
+  {
+   "t": 245.76,
+   "w": "El"
+  },
+  {
+   "t": 245.76,
+   "w": "vuelo"
+  },
+  {
+   "t": 245.76,
+   "w": "cuesta"
+  },
+  {
+   "t": 256.64,
+   "w": "caro"
+  },
+  {
+   "t": 256.96,
+   "w": "pero"
+  },
+  {
+   "t": 257.12,
+   "w": "igual"
+  },
+  {
+   "t": 257.52,
+   "w": "lo"
+  },
+  {
+   "t": 257.68,
+   "w": "soñamos"
+  },
+  {
+   "t": 258.08,
+   "w": "Se"
+  },
+  {
+   "t": 258.48,
+   "w": "cae"
+  },
+  {
+   "t": 258.72,
+   "w": "la"
+  },
+  {
+   "t": 258.88,
+   "w": "señal"
+  },
+  {
+   "t": 259.36,
+   "w": "pero"
+  },
+  {
+   "t": 259.6,
+   "w": "sube"
+  },
+  {
+   "t": 259.92,
+   "w": "el"
+  },
+  {
+   "t": 259.92,
+   "w": "corazón"
+  },
+  {
+   "t": 260.48,
+   "w": "Tu"
+  },
+  {
+   "t": 260.8,
+   "w": "voz"
+  },
+  {
+   "t": 261.04,
+   "w": "en"
+  },
+  {
+   "t": 261.28,
+   "w": "mi"
+  },
+  {
+   "t": 261.28,
+   "w": "teléfono"
+  },
+  {
+   "t": 261.84,
+   "w": "me"
+  },
+  {
+   "t": 262.0,
+   "w": "cambia"
+  },
+  {
+   "t": 262.32,
+   "w": "la"
+  },
+  {
+   "t": 262.4,
+   "w": "canción"
+  },
+  {
+   "t": 263.2,
+   "w": "Cambio"
+  },
+  {
+   "t": 263.52,
+   "w": "de"
+  },
+  {
+   "t": 263.6,
+   "w": "moneda"
+  },
+  {
+   "t": 264.16,
+   "w": "papeles"
+  },
+  {
+   "t": 264.56,
+   "w": "en"
+  },
+  {
+   "t": 264.72,
+   "w": "la"
+  },
+  {
+   "t": 264.88,
+   "w": "mesa"
+  },
+  {
+   "t": 265.52,
+   "w": "Visa"
+  },
+  {
+   "t": 265.92,
+   "w": "entrevista"
+  },
+  {
+   "t": 266.56,
+   "w": "paciencia"
+  },
+  {
+   "t": 267.12,
+   "w": "y"
+  },
+  {
+   "t": 267.2,
+   "w": "promesa"
+  },
+  {
+   "t": 267.76,
+   "w": "Tu"
+  },
+  {
+   "t": 267.84,
+   "w": "familia"
+  },
+  {
+   "t": 268.32,
+   "w": "pregunta"
+  },
+  {
+   "t": 268.88,
+   "w": "mis"
+  },
+  {
+   "t": 269.04,
+   "w": "panas"
+  },
+  {
+   "t": 269.36,
+   "w": "también"
+  },
+  {
+   "t": 269.92,
+   "w": "Pero"
+  },
+  {
+   "t": 270.24,
+   "w": "nadie"
+  },
+  {
+   "t": 270.56,
+   "w": "entiende"
+  },
+  {
+   "t": 270.8,
+   "w": "lo"
+  },
+  {
+   "t": 270.96,
+   "w": "que"
+  },
+  {
+   "t": 271.12,
+   "w": "tú"
+  },
+  {
+   "t": 271.36,
+   "w": "y"
+  },
+  {
+   "t": 271.44,
+   "w": "yo"
+  },
+  {
+   "t": 271.68,
+   "w": "tenemos"
+  },
+  {
+   "t": 272.56,
+   "w": "ven"
+  },
+  {
+   "t": 273.2,
+   "w": "Baila"
+  },
+  {
+   "t": 273.28,
+   "w": "conmigo"
+  },
+  {
+   "t": 274.0,
+   "w": "por"
+  },
+  {
+   "t": 274.61,
+   "w": "la"
+  },
+  {
+   "t": 275.22,
+   "w": "pantalla"
+  },
+  {
+   "t": 275.76,
+   "w": "Aunque"
+  },
+  {
+   "t": 275.92,
+   "w": "la"
+  },
+  {
+   "t": 276.08,
+   "w": "cámara"
+  },
+  {
+   "t": 276.56,
+   "w": "nunca"
+  },
+  {
+   "t": 276.88,
+   "w": "se"
+  },
+  {
+   "t": 277.04,
+   "w": "halla"
+  },
+  {
+   "t": 277.68,
+   "w": "Batería"
+  },
+  {
+   "t": 278.72,
+   "w": "baja"
+  },
+  {
+   "t": 279.44,
+   "w": "cargador"
+  },
+  {
+   "t": 280.56,
+   "w": "perdido"
+  },
+  {
+   "t": 280.56,
+   "w": "Pero"
+  },
+  {
+   "t": 281.76,
+   "w": "este"
+  },
+  {
+   "t": 281.92,
+   "w": "amor"
+  },
+  {
+   "t": 282.24,
+   "w": "sigue"
+  },
+  {
+   "t": 282.64,
+   "w": "encendido"
+  },
+  {
+   "t": 283.76,
+   "w": "Dale"
+  },
+  {
+   "t": 284.0,
+   "w": "suave"
+  },
+  {
+   "t": 284.48,
+   "w": "dale"
+  },
+  {
+   "t": 284.48,
+   "w": "lento"
+  },
+  {
+   "t": 285.36,
+   "w": "Love"
+  },
+  {
+   "t": 286.24,
+   "w": "across"
+  },
+  {
+   "t": 286.72,
+   "w": "every"
+  },
+  {
+   "t": 286.96,
+   "w": "continent"
+  },
+  {
+   "t": 287.36,
+   "w": "Dale"
+  },
+  {
+   "t": 288.72,
+   "w": "fuerte"
+  },
+  {
+   "t": 289.04,
+   "w": "dale"
+  },
+  {
+   "t": 289.24,
+   "w": "true"
+  },
+  {
+   "t": 289.44,
+   "w": "Every"
+  },
+  {
+   "t": 289.44,
+   "w": "rhythm"
+  },
+  {
+   "t": 289.76,
+   "w": "brings"
+  },
+  {
+   "t": 289.76,
+   "w": "me"
+  },
+  {
+   "t": 289.76,
+   "w": "back"
+  },
+  {
+   "t": 289.76,
+   "w": "to"
+  },
+  {
+   "t": 289.76,
+   "w": "you"
+  },
+  {
+   "t": 289.88,
+   "w": "時"
+  },
+  {
+   "t": 290.12,
+   "w": "差"
+  },
+  {
+   "t": 290.36,
+   "w": "を"
+  },
+  {
+   "t": 290.6,
+   "w": "越"
+  },
+  {
+   "t": 290.84,
+   "w": "えてまた"
+  },
+  {
+   "t": 291.08,
+   "w": "君"
+  },
+  {
+   "t": 291.32,
+   "w": "へ"
+  },
+  {
+   "t": 291.56,
+   "w": "送"
+  },
+  {
+   "t": 291.8,
+   "w": "信"
+  },
+  {
+   "t": 292.04,
+   "w": "Jisa"
+  },
+  {
+   "t": 292.28,
+   "w": "wo"
+  },
+  {
+   "t": 292.52,
+   "w": "koete"
+  },
+  {
+   "t": 292.76,
+   "w": "mata"
+  },
+  {
+   "t": 293.0,
+   "w": "kimi"
+  },
+  {
+   "t": 293.24,
+   "w": "e"
+  },
+  {
+   "t": 293.36,
+   "w": "soushin"
+  },
+  {
+   "t": 293.36,
+   "w": "眠"
+  },
+  {
+   "t": 293.36,
+   "w": "い"
+  },
+  {
+   "t": 293.36,
+   "w": "目"
+  },
+  {
+   "t": 293.36,
+   "w": "こすって"
+  },
+  {
+   "t": 293.36,
+   "w": "開"
+  }
+ ],
+ "lrc": "[00:01.20]Yeah\n[00:02.32]My soul lives in Seoul\n[00:04.40]But my heart lives wherever you call me from\n[00:09.46]안녕, 내 사랑\n[00:10.64]Can you hear me now?\n[00:12.00]Signal’s weak\n[00:12.40]But I feel you somehow\n[00:13.60]Time zones, touch screens\n[00:14.72]Different skies, same dreams\n[00:16.80]One, two, three, go\n[00:18.32]I wake up, grab my phone before I even breathe\n[00:20.96]Thirty-seven messages waiting there for me\n[00:23.20]Your morning is my midnight, my sunrise is your sleep\n[00:25.92]But your face on my screen makes the distance feel sweet\n[00:28.24]Wi-Fi acting crazy, signal dropping low\n[00:30.64]“Can you hear me, baby?” then the camera froze\n[00:32.96]Front cam, back cam, why am I showing the floor?\n[00:35.52]You laughing so hard, now I love you even more\n[00:38.00]Battery on red, charger disappeared\n[00:40.00]Wrong cable in my bag, same problem all year\n[00:42.64]Storage full again from the photos that you send\n[00:44.72]But I still save every selfie like I’ll never see you again\n[00:47.68]Shipping takes forever, plane tickets are high\n[00:49.76]Currency conversion got me asking why\n[00:53.46]Forms on the table, stamps in a line\n[00:54.48]But I’d cross every border just to call you mine\n[00:57.36]K-1, K-2, CR-1 too\n[00:59.20]Paperwork dancing like it’s got moves\n[01:01.44]Lost in translation, but I still choose you\n[01:03.84]Every little problem turns into something cute\n[01:06.66]My soul lives in Seoul\n[01:08.75]But my love goes worldwide\n[01:10.40]From your good morning\n[01:12.86]To my good night\n[01:17.29]We fight, we make up\n[01:18.88]Then we laugh on the phone\n[01:18.96]No matter where you are\n[01:19.07]You never feel alone\n[01:20.00]내 영혼은 서울에 살아\n[01:22.08]Ne yeonghoneun Seoul-e sara\n[01:24.72]But it finds you wherever you go\n[01:27.44]보고 싶어, my baby\n[01:29.68]Bogo sipeo, my baby\n[01:30.64]My soul lives in Seoul\n[01:31.52]Oh-oh-oh, Seoul to your heart\n[01:36.24]Oh-oh-oh, miles apart\n[01:36.48]Oh-oh-oh, still we glow\n[01:41.20]My soul lives in Seoul\n[01:42.39]Oh-oh-oh, call me again\n[01:45.52]Oh-oh-oh, don’t let it end\n[01:45.52]Oh-oh-oh, you already know\n[01:47.36]My soul lives in Seoul\n[01:52.04]Family asking questions, friends all in the chat\n[01:55.44]“Is the foreigner rich?” Baby, what is that?\n[01:57.68]Everybody thinks love comes with a golden crown\n[02:00.24]But we’re just counting coins till the next flight down\n[02:02.48]You send me a box, it arrives next year\n[02:05.04]Customs got me crying, but I smile when it’s here\n[02:07.04]T-shirts, snacks, letters, little things you drew\n[02:09.44]I keep them like treasure cause they came from you\n[02:11.76]Language barrier? We turn it into jokes\n[02:13.60]I say one wrong word and the whole call explodes\n[02:15.92]Different food, different rules, different ways to show we care\n[02:18.24]But your culture feels like music when you let me meet you there\n[02:21.20]Tired thumbs from typing all night\n[02:22.96]Tired voice from “one more call” till daylight\n[02:25.28]Missed calls, small fights, pride in the way\n[02:27.60]Then one heart emoji saves the whole day\n[02:29.84]You screenshot me sleeping, I screenshot you mad\n[02:32.96]We got duplicate pictures of the best days we had\n[02:35.60]Backup the memories, new phone, same us\n[02:38.08]Too many photos, not enough touch\n[02:39.84]My soul lives in Seoul\n[02:42.05]But my love goes worldwide\n[02:44.32]From your good morning\n[02:46.11]To my good night\n[02:47.90]We fight, we make up\n[02:50.14]Then we laugh on the phone\n[02:52.83]No matter where you are\n[02:54.40]You never feel alone\n[02:59.52]내 영혼은 서울에 살아\n[02:59.52]Ne yeonghoneun Seoul-e sara\n[02:59.68]But it finds you wherever you go\n[03:03.60]보고 싶어, my baby\n[03:06.34]Bogo sipeo, my baby\n[03:08.56]My soul lives in Seoul\n[03:11.70]야, 내 양말은 바닥에 한 번뿐이야\n[03:14.43]Ya, nae yangmareun badage han beonppuniya\n[03:21.27]Your hair is everywhere, girl, 진짜 장난 아니야\n[03:22.88]Jinjja jangnan aniya\n[03:23.36]설거지는 산처럼 쌓여 있는데\n[03:23.52]Seolgeojineun sancheoreom ssayeo inneunde\n[03:29.68]You say “oppa, later,” then you buy one more thing\n[03:32.96]뭐? 너는 돈 없다면서 치킨은 또 시켜\n[03:36.00]Mwo? Neoneun don eopdamyeonseo chicken-eun tto sikyeo\n[03:39.28]게임은 새로 사고 내 말은 또 미뤄\n[03:49.28]Game-eun saero sago nae mareun tto mirwo\n[03:49.92]내 머리카락? 사랑의 흔적이야\n[03:50.72]Nae meorikarak? Sarang-ui heunjeogiya\n[03:52.96]네 양말 냄새는 거의 전설이야\n[03:56.64]Okay, okay, maybe I’m messy\n[04:00.60]Maybe I shop when I’m stressy\n[04:05.04]You blame me for the belly\n[04:05.66]You made me love your food already\n[04:05.76]우리 둘 다 살쪘어, 하하, 괜찮아\n[04:16.64]Uri dul da saljjyeosseo, haha, gwaenchana\n[04:19.36]너의 나라, 나의 나라, 맛있잖아\n[04:20.48]Neoui nara, naui nara, masitjana\n[04:22.40]싸워도 웃고, 다시 안아\n[04:23.52]Ssawodo utgo, dasi ana\n[04:24.88]사랑은 배불러도 계속 가잖아\n[04:26.56]Dale, dale, mi amor, aunque lejos estamos\n[04:28.88]El vuelo cuesta caro, pero igual lo soñamos\n[04:31.12]Se cae la señal, pero sube el corazón\n[04:34.61]Tu voz en mi teléfono me cambia la canción\n[04:37.68]Cambio de moneda, papeles en la mesa\n[04:41.76]Visa, entrevista, paciencia y promesa\n[04:44.48]Tu familia pregunta, mis panas también\n[04:47.36]Pero nadie entiende lo que tú y yo tenemos, ven\n[04:49.76]Baila conmigo por la pantalla\n[04:52.28]Aunque la cámara nunca se halla\n[04:53.36]Batería baja, cargador perdido\n"
+}

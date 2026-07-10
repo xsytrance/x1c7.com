@@ -1,0 +1,693 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 167,
+  "clumps": [
+   {
+    "t": 171.6,
+    "n": 19
+   },
+   {
+    "t": 138.56,
+    "n": 10
+   }
+  ],
+  "clumpedWords": 29,
+  "clumpRatio": 0.174,
+  "span": 191.0,
+  "duration": 212.4,
+  "pass": false
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Morning"
+  },
+  {
+   "t": 0.32,
+   "w": "light"
+  },
+  {
+   "t": 12.56,
+   "w": "Take"
+  },
+  {
+   "t": 12.72,
+   "w": "me"
+  },
+  {
+   "t": 16.03,
+   "w": "there"
+  },
+  {
+   "t": 19.34,
+   "w": "Take"
+  },
+  {
+   "t": 22.65,
+   "w": "me"
+  },
+  {
+   "t": 25.96,
+   "w": "there"
+  },
+  {
+   "t": 29.27,
+   "w": "instrumental"
+  },
+  {
+   "t": 32.57,
+   "w": "Leaves"
+  },
+  {
+   "t": 35.88,
+   "w": "above"
+  },
+  {
+   "t": 39.19,
+   "w": "the"
+  },
+  {
+   "t": 42.5,
+   "w": "river"
+  },
+  {
+   "t": 45.81,
+   "w": "below"
+  },
+  {
+   "t": 49.12,
+   "w": "Every"
+  },
+  {
+   "t": 49.54,
+   "w": "little"
+  },
+  {
+   "t": 49.96,
+   "w": "heartbeat"
+  },
+  {
+   "t": 50.38,
+   "w": "moving"
+  },
+  {
+   "t": 50.8,
+   "w": "slow"
+  },
+  {
+   "t": 51.22,
+   "w": "Hands"
+  },
+  {
+   "t": 51.64,
+   "w": "in"
+  },
+  {
+   "t": 52.06,
+   "w": "the"
+  },
+  {
+   "t": 52.48,
+   "w": "breeze"
+  },
+  {
+   "t": 52.96,
+   "w": "Nothing"
+  },
+  {
+   "t": 53.47,
+   "w": "to"
+  },
+  {
+   "t": 53.98,
+   "w": "chase"
+  },
+  {
+   "t": 54.56,
+   "w": "Time"
+  },
+  {
+   "t": 54.88,
+   "w": "disappears"
+  },
+  {
+   "t": 55.52,
+   "w": "without"
+  },
+  {
+   "t": 56.16,
+   "w": "a"
+  },
+  {
+   "t": 56.32,
+   "w": "trace"
+  },
+  {
+   "t": 57.36,
+   "w": "Hold"
+  },
+  {
+   "t": 58.0,
+   "w": "me"
+  },
+  {
+   "t": 58.64,
+   "w": "Don't"
+  },
+  {
+   "t": 59.12,
+   "w": "let"
+  },
+  {
+   "t": 59.6,
+   "w": "go"
+  },
+  {
+   "t": 61.92,
+   "w": "Where"
+  },
+  {
+   "t": 62.0,
+   "w": "we"
+  },
+  {
+   "t": 62.56,
+   "w": "wander"
+  },
+  {
+   "t": 63.84,
+   "w": "Flowers"
+  },
+  {
+   "t": 64.96,
+   "w": "grow"
+  },
+  {
+   "t": 65.44,
+   "w": "Days"
+  },
+  {
+   "t": 69.04,
+   "w": "drift"
+  },
+  {
+   "t": 69.64,
+   "w": "by"
+  },
+  {
+   "t": 70.23,
+   "w": "We"
+  },
+  {
+   "t": 70.83,
+   "w": "don't"
+  },
+  {
+   "t": 71.42,
+   "w": "have"
+  },
+  {
+   "t": 72.02,
+   "w": "to"
+  },
+  {
+   "t": 72.61,
+   "w": "know"
+  },
+  {
+   "t": 73.21,
+   "w": "why"
+  },
+  {
+   "t": 73.8,
+   "w": "Breathe"
+  },
+  {
+   "t": 74.4,
+   "w": "tonight"
+  },
+  {
+   "t": 74.88,
+   "w": "Everything"
+  },
+  {
+   "t": 74.88,
+   "w": "feels"
+  },
+  {
+   "t": 78.11,
+   "w": "alive"
+  },
+  {
+   "t": 81.7,
+   "w": "Days"
+  },
+  {
+   "t": 85.28,
+   "w": "drift"
+  },
+  {
+   "t": 88.86,
+   "w": "by"
+  },
+  {
+   "t": 92.45,
+   "w": "Floating"
+  },
+  {
+   "t": 96.03,
+   "w": "into"
+  },
+  {
+   "t": 99.62,
+   "w": "the"
+  },
+  {
+   "t": 103.2,
+   "w": "sky"
+  },
+  {
+   "t": 103.68,
+   "w": "Stay"
+  },
+  {
+   "t": 104.17,
+   "w": "with"
+  },
+  {
+   "t": 104.65,
+   "w": "me"
+  },
+  {
+   "t": 105.14,
+   "w": "Stay"
+  },
+  {
+   "t": 105.62,
+   "w": "with"
+  },
+  {
+   "t": 106.1,
+   "w": "me"
+  },
+  {
+   "t": 106.59,
+   "w": "Stay"
+  },
+  {
+   "t": 107.07,
+   "w": "Liquid"
+  },
+  {
+   "t": 107.56,
+   "w": "DnB"
+  },
+  {
+   "t": 108.04,
+   "w": "instrumental"
+  },
+  {
+   "t": 108.52,
+   "w": "with"
+  },
+  {
+   "t": 109.01,
+   "w": "melodic"
+  },
+  {
+   "t": 109.49,
+   "w": "lead"
+  },
+  {
+   "t": 109.97,
+   "w": "and"
+  },
+  {
+   "t": 110.46,
+   "w": "guitar"
+  },
+  {
+   "t": 110.94,
+   "w": "textures"
+  },
+  {
+   "t": 111.43,
+   "w": "Clouds"
+  },
+  {
+   "t": 111.91,
+   "w": "roll"
+  },
+  {
+   "t": 112.39,
+   "w": "in"
+  },
+  {
+   "t": 112.88,
+   "w": "Then"
+  },
+  {
+   "t": 113.12,
+   "w": "fade"
+  },
+  {
+   "t": 113.52,
+   "w": "away"
+  },
+  {
+   "t": 114.48,
+   "w": "Every"
+  },
+  {
+   "t": 114.88,
+   "w": "color"
+  },
+  {
+   "t": 115.28,
+   "w": "melts"
+  },
+  {
+   "t": 116.0,
+   "w": "into"
+  },
+  {
+   "t": 116.4,
+   "w": "gray"
+  },
+  {
+   "t": 116.88,
+   "w": "Then"
+  },
+  {
+   "t": 117.2,
+   "w": "the"
+  },
+  {
+   "t": 117.2,
+   "w": "sun"
+  },
+  {
+   "t": 117.92,
+   "w": "Finds"
+  },
+  {
+   "t": 118.32,
+   "w": "its"
+  },
+  {
+   "t": 118.48,
+   "w": "way"
+  },
+  {
+   "t": 120.32,
+   "w": "Just"
+  },
+  {
+   "t": 120.64,
+   "w": "like"
+  },
+  {
+   "t": 121.04,
+   "w": "it"
+  },
+  {
+   "t": 121.36,
+   "w": "always"
+  },
+  {
+   "t": 122.0,
+   "w": "does"
+  },
+  {
+   "t": 123.36,
+   "w": "Closer"
+  },
+  {
+   "t": 124.88,
+   "w": "Closer"
+  },
+  {
+   "t": 126.08,
+   "w": "Into"
+  },
+  {
+   "t": 126.48,
+   "w": "the"
+  },
+  {
+   "t": 126.56,
+   "w": "light"
+  },
+  {
+   "t": 131.52,
+   "w": "Higher"
+  },
+  {
+   "t": 131.52,
+   "w": "Higher"
+  },
+  {
+   "t": 131.52,
+   "w": "Through"
+  },
+  {
+   "t": 132.08,
+   "w": "the"
+  },
+  {
+   "t": 132.16,
+   "w": "leaves"
+  },
+  {
+   "t": 132.64,
+   "w": "Long"
+  },
+  {
+   "t": 135.76,
+   "w": "instrumental"
+  },
+  {
+   "t": 137.52,
+   "w": "featuring"
+  },
+  {
+   "t": 138.56,
+   "w": "evolving"
+  },
+  {
+   "t": 138.56,
+   "w": "pads"
+  },
+  {
+   "t": 138.56,
+   "w": "liquid"
+  },
+  {
+   "t": 138.56,
+   "w": "breaks"
+  },
+  {
+   "t": 138.56,
+   "w": "melodic"
+  },
+  {
+   "t": 138.56,
+   "w": "synth"
+  },
+  {
+   "t": 138.56,
+   "w": "lead"
+  },
+  {
+   "t": 138.56,
+   "w": "and"
+  },
+  {
+   "t": 138.56,
+   "w": "shimmering"
+  },
+  {
+   "t": 138.56,
+   "w": "guitar"
+  },
+  {
+   "t": 145.09,
+   "w": "Days"
+  },
+  {
+   "t": 151.62,
+   "w": "drift"
+  },
+  {
+   "t": 158.14,
+   "w": "by"
+  },
+  {
+   "t": 164.67,
+   "w": "We"
+  },
+  {
+   "t": 171.2,
+   "w": "don't"
+  },
+  {
+   "t": 171.6,
+   "w": "have"
+  },
+  {
+   "t": 171.6,
+   "w": "to"
+  },
+  {
+   "t": 171.6,
+   "w": "know"
+  },
+  {
+   "t": 171.6,
+   "w": "why"
+  },
+  {
+   "t": 171.6,
+   "w": "Breathe"
+  },
+  {
+   "t": 171.6,
+   "w": "tonight"
+  },
+  {
+   "t": 171.6,
+   "w": "Everything"
+  },
+  {
+   "t": 171.6,
+   "w": "feels"
+  },
+  {
+   "t": 171.6,
+   "w": "alive"
+  },
+  {
+   "t": 171.6,
+   "w": "Days"
+  },
+  {
+   "t": 171.6,
+   "w": "drift"
+  },
+  {
+   "t": 171.6,
+   "w": "by"
+  },
+  {
+   "t": 171.6,
+   "w": "Floating"
+  },
+  {
+   "t": 171.6,
+   "w": "into"
+  },
+  {
+   "t": 171.6,
+   "w": "the"
+  },
+  {
+   "t": 171.6,
+   "w": "sky"
+  },
+  {
+   "t": 171.6,
+   "w": "Stay"
+  },
+  {
+   "t": 171.6,
+   "w": "with"
+  },
+  {
+   "t": 171.6,
+   "w": "me"
+  },
+  {
+   "t": 172.8,
+   "w": "Stay"
+  },
+  {
+   "t": 174.0,
+   "w": "with"
+  },
+  {
+   "t": 174.32,
+   "w": "me"
+  },
+  {
+   "t": 175.12,
+   "w": "Days"
+  },
+  {
+   "t": 184.8,
+   "w": "drift"
+  },
+  {
+   "t": 184.8,
+   "w": "by"
+  },
+  {
+   "t": 188.24,
+   "w": "Days"
+  },
+  {
+   "t": 188.32,
+   "w": "drift"
+  },
+  {
+   "t": 188.32,
+   "w": "by"
+  },
+  {
+   "t": 188.32,
+   "w": "Days"
+  },
+  {
+   "t": 188.32,
+   "w": "drift"
+  },
+  {
+   "t": 188.32,
+   "w": "by"
+  },
+  {
+   "t": 188.32,
+   "w": "Fade"
+  },
+  {
+   "t": 188.64,
+   "w": "into"
+  },
+  {
+   "t": 188.64,
+   "w": "rainforest"
+  },
+  {
+   "t": 190.68,
+   "w": "ambience"
+  },
+  {
+   "t": 190.76,
+   "w": "and"
+  },
+  {
+   "t": 190.8,
+   "w": "distant"
+  },
+  {
+   "t": 190.88,
+   "w": "vocal"
+  },
+  {
+   "t": 190.96,
+   "w": "echoes"
+  }
+ ],
+ "lrc": "[00:00.00]Morning light...\n[00:12.56]Take me there...\n[00:19.34]Take me there...\n[00:29.27](instrumental)\n[00:32.57]Leaves above, the river below\n[00:49.12]Every little heartbeat moving slow\n[00:51.22]Hands in the breeze\n[00:52.96]Nothing to chase\n[00:54.56]Time disappears without a trace\n[00:57.36]Hold me\n[00:58.64]Don't let go\n[01:01.92]Where we wander\n[01:03.84]Flowers grow\n[01:05.44]Days drift by\n[01:10.23]We don't have to know why\n[01:13.80]Breathe tonight\n[01:14.88]Everything feels alive\n[01:21.70]Days drift by\n[01:32.45]Floating into the sky\n[01:43.68]Stay with me\n[01:45.14]Stay with me\n[01:46.59]Stay...\n[01:47.07](Liquid DnB instrumental with melodic lead and guitar textures)\n[01:51.43]Clouds roll in\n[01:52.88]Then fade away\n[01:54.48]Every color melts into gray\n[01:56.88]Then the sun\n[01:57.92]Finds its way\n[02:00.32]Just like it always does\n[02:03.36]Closer...\n[02:04.88]Closer...\n[02:06.08]Into the light...\n[02:11.52]Higher...\n[02:11.52]Higher...\n[02:11.52]Through the leaves...\n[02:12.64](Long instrumental featuring evolving pads, liquid breaks, melodic synth lead, and shimmering guitar)\n[02:25.09]Days drift by\n[02:44.67]We don't have to know why\n[02:51.60]Breathe tonight\n[02:51.60]Everything feels alive\n[02:51.60]Days drift by\n[02:51.60]Floating into the sky\n[02:51.60]Stay with me\n[02:52.80]Stay with me\n[02:55.12]Days drift by...\n[03:08.24]Days drift by...\n[03:08.32]Days drift by...\n[03:08.32](Fade into rainforest ambience and distant vocal echoes.)\n"
+}

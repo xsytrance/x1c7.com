@@ -36,7 +36,23 @@ artifacts, structure into lines) → the text feeds back through Tier A.
   timings (today whisper only fills empty rows — correct then, blocking now).
   Everything stays journaled + reversible via R2 show.json.
 
-## Rollout
+## Rollout — STATUS 2026-07-10
+
+**Tier A SHIPPED the night it was planned**: 43 tracks aligned (~0.7s each),
+**32 applied** to the live DB (`lyrics_synced.source = "aligned-official"`,
+prior values journaled to `scripts/alignment/replaced-backup.jsonl`),
+**11 QA-flagged** and held — their clumps are *written echo-doubling and
+stretched adlib spellings in the official prompts* ("you love love but
+but…", "Buyyy mieeeeel") that the audio sings once. They keep whisper
+timings until an arbitration pass. Two traps found: libsndfile silently
+truncates Suno stem MP3s (~195s, broken VBR — always decode via ffmpeg);
+the aligner sees ~200s per pass (windowed committed-prefix solves it).
+Feverbreak is truly instrumental (its stem zip has no vocal track).
+Remaining: flagged-11 arbitration (whisper-assisted duplicate resolution or
+owner lyric cleanup), Tier B for the 8 lyric-less, rum-pon-gold +
+still-got-5-on-it await stem zips.
+
+Original plan:
 
 1. **Bake-off** (first task): 3 tracks — different-this-summer (EN),
    oro-de-la-presion (ES), i-won-t-be-your-fire-japanese-mix (JA) — align

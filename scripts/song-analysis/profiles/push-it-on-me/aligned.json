@@ -1,0 +1,244 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 57,
+  "clumps": [],
+  "clumpedWords": 0,
+  "clumpRatio": 0.0,
+  "span": 110.6,
+  "duration": 157.0,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 7.76,
+   "w": "feel"
+  },
+  {
+   "t": 7.76,
+   "w": "it"
+  },
+  {
+   "t": 7.76,
+   "w": "feel"
+  },
+  {
+   "t": 7.76,
+   "w": "it"
+  },
+  {
+   "t": 8.8,
+   "w": "feelfeelfeel"
+  },
+  {
+   "t": 19.96,
+   "w": "it"
+  },
+  {
+   "t": 31.12,
+   "w": "low"
+  },
+  {
+   "t": 31.68,
+   "w": "lights"
+  },
+  {
+   "t": 32.24,
+   "w": "slow"
+  },
+  {
+   "t": 32.72,
+   "w": "move"
+  },
+  {
+   "t": 33.12,
+   "w": "bodies"
+  },
+  {
+   "t": 33.76,
+   "w": "in"
+  },
+  {
+   "t": 33.92,
+   "w": "the"
+  },
+  {
+   "t": 34.16,
+   "w": "dark"
+  },
+  {
+   "t": 35.36,
+   "w": "nobody's"
+  },
+  {
+   "t": 36.08,
+   "w": "watchin'"
+  },
+  {
+   "t": 37.04,
+   "w": "give"
+  },
+  {
+   "t": 37.28,
+   "w": "in"
+  },
+  {
+   "t": 37.52,
+   "w": "to"
+  },
+  {
+   "t": 37.76,
+   "w": "the"
+  },
+  {
+   "t": 37.84,
+   "w": "spark"
+  },
+  {
+   "t": 38.56,
+   "w": "push"
+  },
+  {
+   "t": 38.72,
+   "w": "it"
+  },
+  {
+   "t": 38.8,
+   "w": "on"
+  },
+  {
+   "t": 39.04,
+   "w": "me"
+  },
+  {
+   "t": 39.52,
+   "w": "pushpushpush"
+  },
+  {
+   "t": 40.24,
+   "w": "it"
+  },
+  {
+   "t": 40.24,
+   "w": "on"
+  },
+  {
+   "t": 40.56,
+   "w": "me"
+  },
+  {
+   "t": 41.68,
+   "w": "keep"
+  },
+  {
+   "t": 41.84,
+   "w": "the"
+  },
+  {
+   "t": 41.92,
+   "w": "feeling"
+  },
+  {
+   "t": 42.16,
+   "w": "keep"
+  },
+  {
+   "t": 42.32,
+   "w": "the"
+  },
+  {
+   "t": 42.4,
+   "w": "feeling"
+  },
+  {
+   "t": 42.72,
+   "w": "on"
+  },
+  {
+   "t": 46.4,
+   "w": "ononon"
+  },
+  {
+   "t": 49.04,
+   "w": "feelfeelfeel"
+  },
+  {
+   "t": 50.08,
+   "w": "it"
+  },
+  {
+   "t": 50.32,
+   "w": "on"
+  },
+  {
+   "t": 52.96,
+   "w": "feelfeelfeel"
+  },
+  {
+   "t": 53.44,
+   "w": "it"
+  },
+  {
+   "t": 54.16,
+   "w": "on"
+  },
+  {
+   "t": 54.96,
+   "w": "don't"
+  },
+  {
+   "t": 55.6,
+   "w": "stop"
+  },
+  {
+   "t": 56.24,
+   "w": "now"
+  },
+  {
+   "t": 57.52,
+   "w": "keep"
+  },
+  {
+   "t": 57.76,
+   "w": "it"
+  },
+  {
+   "t": 57.92,
+   "w": "slow"
+  },
+  {
+   "t": 58.48,
+   "w": "push"
+  },
+  {
+   "t": 59.52,
+   "w": "it"
+  },
+  {
+   "t": 79.44,
+   "w": "on"
+  },
+  {
+   "t": 81.12,
+   "w": "me"
+  },
+  {
+   "t": 81.12,
+   "w": "pushpushpush"
+  },
+  {
+   "t": 104.08,
+   "w": "it"
+  },
+  {
+   "t": 104.08,
+   "w": "on"
+  },
+  {
+   "t": 118.4,
+   "w": "me"
+  }
+ ],
+ "lrc": "[00:07.76]feel it... feel it... (feel-feel-feel it)\n[00:31.12]low lights, slow move, bodies in the dark\n[00:35.36]nobody's watchin', give in to the spark\n[00:38.56]push it on me (push-push-push it on me)\n[00:41.68]keep the feeling, keep the feeling on\n[00:46.40](on-on-on)\n[00:49.04]feel-feel-feel... it on\n[00:52.96]feel-feel-feel... it on\n[00:54.96]don't stop now... keep it slow\n[00:58.48]push it on me (push-push-push it on me)\n"
+}

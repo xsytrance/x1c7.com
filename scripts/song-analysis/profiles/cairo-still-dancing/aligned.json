@@ -1,0 +1,2568 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 638,
+  "clumps": [],
+  "clumpedWords": 0,
+  "clumpRatio": 0.0,
+  "span": 257.4,
+  "duration": 259.7,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "We"
+  },
+  {
+   "t": 13.04,
+   "w": "still"
+  },
+  {
+   "t": 13.52,
+   "w": "dance"
+  },
+  {
+   "t": 13.84,
+   "w": "when"
+  },
+  {
+   "t": 13.92,
+   "w": "the"
+  },
+  {
+   "t": 14.08,
+   "w": "night"
+  },
+  {
+   "t": 14.32,
+   "w": "gets"
+  },
+  {
+   "t": 14.56,
+   "w": "heavy"
+  },
+  {
+   "t": 15.36,
+   "w": "Still"
+  },
+  {
+   "t": 15.68,
+   "w": "sing"
+  },
+  {
+   "t": 16.08,
+   "w": "when"
+  },
+  {
+   "t": 16.24,
+   "w": "the"
+  },
+  {
+   "t": 16.32,
+   "w": "sky"
+  },
+  {
+   "t": 16.56,
+   "w": "turns"
+  },
+  {
+   "t": 16.96,
+   "w": "gray"
+  },
+  {
+   "t": 17.76,
+   "w": "Hands"
+  },
+  {
+   "t": 18.08,
+   "w": "up"
+  },
+  {
+   "t": 18.48,
+   "w": "if"
+  },
+  {
+   "t": 18.56,
+   "w": "your"
+  },
+  {
+   "t": 18.64,
+   "w": "heart"
+  },
+  {
+   "t": 18.8,
+   "w": "stays"
+  },
+  {
+   "t": 19.12,
+   "w": "ready"
+  },
+  {
+   "t": 19.68,
+   "w": "Love"
+  },
+  {
+   "t": 20.08,
+   "w": "dont"
+  },
+  {
+   "t": 20.4,
+   "w": "break"
+  },
+  {
+   "t": 20.72,
+   "w": "we"
+  },
+  {
+   "t": 20.88,
+   "w": "find"
+  },
+  {
+   "t": 21.44,
+   "w": "a"
+  },
+  {
+   "t": 21.52,
+   "w": "way"
+  },
+  {
+   "t": 23.76,
+   "w": "Heyya"
+  },
+  {
+   "t": 24.0,
+   "w": "heyya"
+  },
+  {
+   "t": 24.0,
+   "w": "Yalla"
+  },
+  {
+   "t": 24.4,
+   "w": "yalla"
+  },
+  {
+   "t": 24.96,
+   "w": "Sawa"
+  },
+  {
+   "t": 25.6,
+   "w": "sawa"
+  },
+  {
+   "t": 26.0,
+   "w": "We"
+  },
+  {
+   "t": 26.08,
+   "w": "rise"
+  },
+  {
+   "t": 26.48,
+   "w": "we"
+  },
+  {
+   "t": 26.64,
+   "w": "stay"
+  },
+  {
+   "t": 28.4,
+   "w": "They"
+  },
+  {
+   "t": 28.48,
+   "w": "only"
+  },
+  {
+   "t": 32.16,
+   "w": "see"
+  },
+  {
+   "t": 32.32,
+   "w": "the"
+  },
+  {
+   "t": 32.48,
+   "w": "sand"
+  },
+  {
+   "t": 32.88,
+   "w": "in"
+  },
+  {
+   "t": 32.96,
+   "w": "the"
+  },
+  {
+   "t": 32.96,
+   "w": "story"
+  },
+  {
+   "t": 34.08,
+   "w": "They"
+  },
+  {
+   "t": 34.24,
+   "w": "only"
+  },
+  {
+   "t": 34.48,
+   "w": "see"
+  },
+  {
+   "t": 34.64,
+   "w": "the"
+  },
+  {
+   "t": 34.72,
+   "w": "stone"
+  },
+  {
+   "t": 35.12,
+   "w": "in"
+  },
+  {
+   "t": 35.28,
+   "w": "the"
+  },
+  {
+   "t": 35.28,
+   "w": "frame"
+  },
+  {
+   "t": 35.84,
+   "w": "But"
+  },
+  {
+   "t": 36.0,
+   "w": "we"
+  },
+  {
+   "t": 36.08,
+   "w": "got"
+  },
+  {
+   "t": 36.24,
+   "w": "city"
+  },
+  {
+   "t": 36.48,
+   "w": "lights"
+  },
+  {
+   "t": 36.8,
+   "w": "street"
+  },
+  {
+   "t": 37.12,
+   "w": "drums"
+  },
+  {
+   "t": 37.44,
+   "w": "late"
+  },
+  {
+   "t": 37.6,
+   "w": "nights"
+  },
+  {
+   "t": 38.24,
+   "w": "Millions"
+  },
+  {
+   "t": 38.72,
+   "w": "of"
+  },
+  {
+   "t": 38.8,
+   "w": "hearts"
+  },
+  {
+   "t": 39.12,
+   "w": "with"
+  },
+  {
+   "t": 39.28,
+   "w": "fire"
+  },
+  {
+   "t": 39.76,
+   "w": "in"
+  },
+  {
+   "t": 39.84,
+   "w": "the"
+  },
+  {
+   "t": 39.92,
+   "w": "name"
+  },
+  {
+   "t": 40.4,
+   "w": "From"
+  },
+  {
+   "t": 40.56,
+   "w": "Cairo"
+  },
+  {
+   "t": 41.12,
+   "w": "rooftops"
+  },
+  {
+   "t": 41.76,
+   "w": "to"
+  },
+  {
+   "t": 41.84,
+   "w": "the"
+  },
+  {
+   "t": 42.32,
+   "w": "river"
+  },
+  {
+   "t": 42.72,
+   "w": "From"
+  },
+  {
+   "t": 42.96,
+   "w": "Alexandria"
+  },
+  {
+   "t": 43.92,
+   "w": "out"
+  },
+  {
+   "t": 44.08,
+   "w": "to"
+  },
+  {
+   "t": 44.16,
+   "w": "the"
+  },
+  {
+   "t": 44.24,
+   "w": "sea"
+  },
+  {
+   "t": 45.2,
+   "w": "We"
+  },
+  {
+   "t": 45.36,
+   "w": "dont"
+  },
+  {
+   "t": 45.52,
+   "w": "need"
+  },
+  {
+   "t": 45.6,
+   "w": "the"
+  },
+  {
+   "t": 45.76,
+   "w": "world"
+  },
+  {
+   "t": 46.16,
+   "w": "to"
+  },
+  {
+   "t": 46.48,
+   "w": "understand"
+  },
+  {
+   "t": 46.96,
+   "w": "us"
+  },
+  {
+   "t": 47.44,
+   "w": "We"
+  },
+  {
+   "t": 47.68,
+   "w": "just"
+  },
+  {
+   "t": 47.76,
+   "w": "need"
+  },
+  {
+   "t": 48.0,
+   "w": "the"
+  },
+  {
+   "t": 48.0,
+   "w": "world"
+  },
+  {
+   "t": 48.96,
+   "w": "to"
+  },
+  {
+   "t": 49.2,
+   "w": "breathe"
+  },
+  {
+   "t": 49.76,
+   "w": "Mama"
+  },
+  {
+   "t": 50.08,
+   "w": "said"
+  },
+  {
+   "t": 50.4,
+   "w": "keep"
+  },
+  {
+   "t": 50.64,
+   "w": "your"
+  },
+  {
+   "t": 50.88,
+   "w": "soul"
+  },
+  {
+   "t": 51.28,
+   "w": "protected"
+  },
+  {
+   "t": 52.08,
+   "w": "Baba"
+  },
+  {
+   "t": 52.32,
+   "w": "said"
+  },
+  {
+   "t": 52.64,
+   "w": "keep"
+  },
+  {
+   "t": 52.88,
+   "w": "your"
+  },
+  {
+   "t": 53.68,
+   "w": "head"
+  },
+  {
+   "t": 53.76,
+   "w": "up"
+  },
+  {
+   "t": 53.76,
+   "w": "high"
+  },
+  {
+   "t": 54.48,
+   "w": "Even"
+  },
+  {
+   "t": 55.04,
+   "w": "when"
+  },
+  {
+   "t": 55.6,
+   "w": "the"
+  },
+  {
+   "t": 55.76,
+   "w": "news"
+  },
+  {
+   "t": 55.84,
+   "w": "gets"
+  },
+  {
+   "t": 56.08,
+   "w": "reckless"
+  },
+  {
+   "t": 56.72,
+   "w": "Dont"
+  },
+  {
+   "t": 56.96,
+   "w": "let"
+  },
+  {
+   "t": 57.2,
+   "w": "the"
+  },
+  {
+   "t": 57.28,
+   "w": "fear"
+  },
+  {
+   "t": 57.52,
+   "w": "move"
+  },
+  {
+   "t": 57.76,
+   "w": "into"
+  },
+  {
+   "t": 58.24,
+   "w": "your"
+  },
+  {
+   "t": 58.96,
+   "w": "eyes"
+  },
+  {
+   "t": 59.12,
+   "w": "And"
+  },
+  {
+   "t": 59.12,
+   "w": "if"
+  },
+  {
+   "t": 59.2,
+   "w": "the"
+  },
+  {
+   "t": 59.2,
+   "w": "whole"
+  },
+  {
+   "t": 59.68,
+   "w": "world"
+  },
+  {
+   "t": 60.08,
+   "w": "shakes"
+  },
+  {
+   "t": 61.04,
+   "w": "We"
+  },
+  {
+   "t": 61.12,
+   "w": "put"
+  },
+  {
+   "t": 61.44,
+   "w": "rhythm"
+  },
+  {
+   "t": 61.68,
+   "w": "in"
+  },
+  {
+   "t": 61.76,
+   "w": "the"
+  },
+  {
+   "t": 61.92,
+   "w": "ground"
+  },
+  {
+   "t": 63.36,
+   "w": "If"
+  },
+  {
+   "t": 63.52,
+   "w": "the"
+  },
+  {
+   "t": 63.6,
+   "w": "dark"
+  },
+  {
+   "t": 64.24,
+   "w": "gets"
+  },
+  {
+   "t": 64.64,
+   "w": "loud"
+  },
+  {
+   "t": 65.52,
+   "w": "We"
+  },
+  {
+   "t": 65.68,
+   "w": "make"
+  },
+  {
+   "t": 65.84,
+   "w": "a"
+  },
+  {
+   "t": 65.92,
+   "w": "brighter"
+  },
+  {
+   "t": 66.4,
+   "w": "sound"
+  },
+  {
+   "t": 66.88,
+   "w": "We"
+  },
+  {
+   "t": 66.88,
+   "w": "still"
+  },
+  {
+   "t": 69.2,
+   "w": "dance"
+  },
+  {
+   "t": 69.2,
+   "w": "when"
+  },
+  {
+   "t": 69.28,
+   "w": "the"
+  },
+  {
+   "t": 69.36,
+   "w": "night"
+  },
+  {
+   "t": 69.76,
+   "w": "gets"
+  },
+  {
+   "t": 69.92,
+   "w": "heavy"
+  },
+  {
+   "t": 70.72,
+   "w": "Still"
+  },
+  {
+   "t": 71.12,
+   "w": "sing"
+  },
+  {
+   "t": 71.44,
+   "w": "when"
+  },
+  {
+   "t": 71.6,
+   "w": "the"
+  },
+  {
+   "t": 71.68,
+   "w": "sky"
+  },
+  {
+   "t": 72.0,
+   "w": "turns"
+  },
+  {
+   "t": 72.32,
+   "w": "gray"
+  },
+  {
+   "t": 73.12,
+   "w": "Hands"
+  },
+  {
+   "t": 73.52,
+   "w": "up"
+  },
+  {
+   "t": 73.76,
+   "w": "if"
+  },
+  {
+   "t": 73.92,
+   "w": "your"
+  },
+  {
+   "t": 74.08,
+   "w": "heart"
+  },
+  {
+   "t": 74.24,
+   "w": "stays"
+  },
+  {
+   "t": 74.56,
+   "w": "ready"
+  },
+  {
+   "t": 75.12,
+   "w": "Love"
+  },
+  {
+   "t": 75.52,
+   "w": "dont"
+  },
+  {
+   "t": 75.84,
+   "w": "break"
+  },
+  {
+   "t": 76.08,
+   "w": "we"
+  },
+  {
+   "t": 76.24,
+   "w": "find"
+  },
+  {
+   "t": 76.8,
+   "w": "a"
+  },
+  {
+   "t": 76.88,
+   "w": "way"
+  },
+  {
+   "t": 77.44,
+   "w": "We"
+  },
+  {
+   "t": 77.6,
+   "w": "still"
+  },
+  {
+   "t": 78.32,
+   "w": "move"
+  },
+  {
+   "t": 78.48,
+   "w": "when"
+  },
+  {
+   "t": 78.56,
+   "w": "the"
+  },
+  {
+   "t": 78.64,
+   "w": "drums"
+  },
+  {
+   "t": 78.96,
+   "w": "start"
+  },
+  {
+   "t": 79.2,
+   "w": "calling"
+  },
+  {
+   "t": 79.92,
+   "w": "Still"
+  },
+  {
+   "t": 80.32,
+   "w": "shine"
+  },
+  {
+   "t": 80.72,
+   "w": "when"
+  },
+  {
+   "t": 80.8,
+   "w": "the"
+  },
+  {
+   "t": 80.96,
+   "w": "lights"
+  },
+  {
+   "t": 81.2,
+   "w": "go"
+  },
+  {
+   "t": 81.36,
+   "w": "low"
+  },
+  {
+   "t": 82.32,
+   "w": "If"
+  },
+  {
+   "t": 82.56,
+   "w": "one"
+  },
+  {
+   "t": 82.64,
+   "w": "heart"
+  },
+  {
+   "t": 83.28,
+   "w": "feels"
+  },
+  {
+   "t": 83.52,
+   "w": "like"
+  },
+  {
+   "t": 83.76,
+   "w": "falling"
+  },
+  {
+   "t": 84.32,
+   "w": "We"
+  },
+  {
+   "t": 84.4,
+   "w": "lift"
+  },
+  {
+   "t": 84.72,
+   "w": "it"
+  },
+  {
+   "t": 85.04,
+   "w": "up"
+  },
+  {
+   "t": 85.28,
+   "w": "and"
+  },
+  {
+   "t": 85.68,
+   "w": "let"
+  },
+  {
+   "t": 85.84,
+   "w": "it"
+  },
+  {
+   "t": 86.16,
+   "w": "know"
+  },
+  {
+   "t": 86.16,
+   "w": "Heyya"
+  },
+  {
+   "t": 86.24,
+   "w": "heyya"
+  },
+  {
+   "t": 88.08,
+   "w": "Yalla"
+  },
+  {
+   "t": 89.2,
+   "w": "yalla"
+  },
+  {
+   "t": 89.2,
+   "w": "Sawa"
+  },
+  {
+   "t": 91.44,
+   "w": "sawa"
+  },
+  {
+   "t": 91.84,
+   "w": "We"
+  },
+  {
+   "t": 92.0,
+   "w": "rise"
+  },
+  {
+   "t": 92.0,
+   "w": "we"
+  },
+  {
+   "t": 92.0,
+   "w": "stay"
+  },
+  {
+   "t": 92.0,
+   "w": "Heyya"
+  },
+  {
+   "t": 92.0,
+   "w": "heyya"
+  },
+  {
+   "t": 92.0,
+   "w": "Yalla"
+  },
+  {
+   "t": 92.28,
+   "w": "yalla"
+  },
+  {
+   "t": 92.56,
+   "w": "Sawa"
+  },
+  {
+   "t": 92.84,
+   "w": "sawa"
+  },
+  {
+   "t": 93.12,
+   "w": "Love"
+  },
+  {
+   "t": 93.12,
+   "w": "leads"
+  },
+  {
+   "t": 93.92,
+   "w": "the"
+  },
+  {
+   "t": 95.92,
+   "w": "way"
+  },
+  {
+   "t": 96.24,
+   "w": "This"
+  },
+  {
+   "t": 96.48,
+   "w": "aint"
+  },
+  {
+   "t": 96.48,
+   "w": "a"
+  },
+  {
+   "t": 96.48,
+   "w": "postcard"
+  },
+  {
+   "t": 97.2,
+   "w": "this"
+  },
+  {
+   "t": 97.28,
+   "w": "is"
+  },
+  {
+   "t": 97.36,
+   "w": "people"
+  },
+  {
+   "t": 98.4,
+   "w": "This"
+  },
+  {
+   "t": 98.64,
+   "w": "aint"
+  },
+  {
+   "t": 98.72,
+   "w": "a"
+  },
+  {
+   "t": 98.8,
+   "w": "camel"
+  },
+  {
+   "t": 99.12,
+   "w": "in"
+  },
+  {
+   "t": 99.28,
+   "w": "a"
+  },
+  {
+   "t": 99.36,
+   "w": "scene"
+  },
+  {
+   "t": 100.24,
+   "w": "This"
+  },
+  {
+   "t": 100.48,
+   "w": "is"
+  },
+  {
+   "t": 100.56,
+   "w": "bass"
+  },
+  {
+   "t": 100.88,
+   "w": "in"
+  },
+  {
+   "t": 101.04,
+   "w": "the"
+  },
+  {
+   "t": 101.2,
+   "w": "alley"
+  },
+  {
+   "t": 101.76,
+   "w": "kids"
+  },
+  {
+   "t": 102.08,
+   "w": "in"
+  },
+  {
+   "t": 102.16,
+   "w": "the"
+  },
+  {
+   "t": 102.24,
+   "w": "traffic"
+  },
+  {
+   "t": 102.88,
+   "w": "Dreams"
+  },
+  {
+   "t": 103.2,
+   "w": "in"
+  },
+  {
+   "t": 103.36,
+   "w": "the"
+  },
+  {
+   "t": 103.36,
+   "w": "dust"
+  },
+  {
+   "t": 103.68,
+   "w": "trying"
+  },
+  {
+   "t": 103.92,
+   "w": "to"
+  },
+  {
+   "t": 104.0,
+   "w": "stay"
+  },
+  {
+   "t": 104.56,
+   "w": "clean"
+  },
+  {
+   "t": 104.96,
+   "w": "This"
+  },
+  {
+   "t": 105.04,
+   "w": "is"
+  },
+  {
+   "t": 105.12,
+   "w": "gold"
+  },
+  {
+   "t": 105.52,
+   "w": "in"
+  },
+  {
+   "t": 105.6,
+   "w": "the"
+  },
+  {
+   "t": 105.76,
+   "w": "voice"
+  },
+  {
+   "t": 106.08,
+   "w": "of"
+  },
+  {
+   "t": 106.24,
+   "w": "the"
+  },
+  {
+   "t": 106.32,
+   "w": "aunties"
+  },
+  {
+   "t": 107.2,
+   "w": "This"
+  },
+  {
+   "t": 107.36,
+   "w": "is"
+  },
+  {
+   "t": 107.52,
+   "w": "tea"
+  },
+  {
+   "t": 107.76,
+   "w": "when"
+  },
+  {
+   "t": 107.92,
+   "w": "the"
+  },
+  {
+   "t": 108.0,
+   "w": "night"
+  },
+  {
+   "t": 108.4,
+   "w": "runs"
+  },
+  {
+   "t": 108.64,
+   "w": "deep"
+  },
+  {
+   "t": 109.52,
+   "w": "This"
+  },
+  {
+   "t": 109.68,
+   "w": "is"
+  },
+  {
+   "t": 109.76,
+   "w": "jokes"
+  },
+  {
+   "t": 110.08,
+   "w": "when"
+  },
+  {
+   "t": 110.24,
+   "w": "the"
+  },
+  {
+   "t": 110.32,
+   "w": "pressure"
+  },
+  {
+   "t": 110.64,
+   "w": "gets"
+  },
+  {
+   "t": 110.96,
+   "w": "ugly"
+  },
+  {
+   "t": 111.84,
+   "w": "This"
+  },
+  {
+   "t": 112.0,
+   "w": "is"
+  },
+  {
+   "t": 112.08,
+   "w": "faith"
+  },
+  {
+   "t": 112.4,
+   "w": "when"
+  },
+  {
+   "t": 112.56,
+   "w": "its"
+  },
+  {
+   "t": 112.72,
+   "w": "hard"
+  },
+  {
+   "t": 112.88,
+   "w": "to"
+  },
+  {
+   "t": 113.68,
+   "w": "sleep"
+  },
+  {
+   "t": 113.84,
+   "w": "I"
+  },
+  {
+   "t": 114.64,
+   "w": "see"
+  },
+  {
+   "t": 114.72,
+   "w": "mothers"
+  },
+  {
+   "t": 115.28,
+   "w": "holding"
+  },
+  {
+   "t": 116.0,
+   "w": "families"
+  },
+  {
+   "t": 116.0,
+   "w": "together"
+  },
+  {
+   "t": 116.48,
+   "w": "I"
+  },
+  {
+   "t": 116.56,
+   "w": "see"
+  },
+  {
+   "t": 116.72,
+   "w": "fathers"
+  },
+  {
+   "t": 117.28,
+   "w": "praying"
+  },
+  {
+   "t": 117.44,
+   "w": "under"
+  },
+  {
+   "t": 117.76,
+   "w": "streetlight"
+  },
+  {
+   "t": 118.08,
+   "w": "glow"
+  },
+  {
+   "t": 118.08,
+   "w": "I"
+  },
+  {
+   "t": 118.88,
+   "w": "see"
+  },
+  {
+   "t": 119.04,
+   "w": "young"
+  },
+  {
+   "t": 119.52,
+   "w": "ones"
+  },
+  {
+   "t": 119.6,
+   "w": "building"
+  },
+  {
+   "t": 119.68,
+   "w": "something"
+  },
+  {
+   "t": 120.08,
+   "w": "better"
+  },
+  {
+   "t": 120.48,
+   "w": "With"
+  },
+  {
+   "t": 120.64,
+   "w": "a"
+  },
+  {
+   "t": 120.8,
+   "w": "beat"
+  },
+  {
+   "t": 121.04,
+   "w": "in"
+  },
+  {
+   "t": 121.28,
+   "w": "the"
+  },
+  {
+   "t": 121.36,
+   "w": "blood"
+  },
+  {
+   "t": 121.52,
+   "w": "and"
+  },
+  {
+   "t": 121.92,
+   "w": "a"
+  },
+  {
+   "t": 121.92,
+   "w": "long"
+  },
+  {
+   "t": 122.48,
+   "w": "way"
+  },
+  {
+   "t": 122.88,
+   "w": "to"
+  },
+  {
+   "t": 123.04,
+   "w": "go"
+  },
+  {
+   "t": 123.36,
+   "w": "When"
+  },
+  {
+   "t": 123.78,
+   "w": "the"
+  },
+  {
+   "t": 123.81,
+   "w": "world"
+  },
+  {
+   "t": 123.84,
+   "w": "says"
+  },
+  {
+   "t": 124.24,
+   "w": "break"
+  },
+  {
+   "t": 124.56,
+   "w": "Group"
+  },
+  {
+   "t": 124.56,
+   "w": "We"
+  },
+  {
+   "t": 124.64,
+   "w": "dont"
+  },
+  {
+   "t": 124.88,
+   "w": "break"
+  },
+  {
+   "t": 125.28,
+   "w": "When"
+  },
+  {
+   "t": 125.28,
+   "w": "the"
+  },
+  {
+   "t": 125.28,
+   "w": "fear"
+  },
+  {
+   "t": 125.6,
+   "w": "says"
+  },
+  {
+   "t": 125.92,
+   "w": "bow"
+  },
+  {
+   "t": 126.4,
+   "w": "Group"
+  },
+  {
+   "t": 126.56,
+   "w": "We"
+  },
+  {
+   "t": 126.96,
+   "w": "dont"
+  },
+  {
+   "t": 127.04,
+   "w": "bow"
+  },
+  {
+   "t": 127.14,
+   "w": "When"
+  },
+  {
+   "t": 127.23,
+   "w": "the"
+  },
+  {
+   "t": 127.28,
+   "w": "pain"
+  },
+  {
+   "t": 127.36,
+   "w": "gets"
+  },
+  {
+   "t": 127.68,
+   "w": "loud"
+  },
+  {
+   "t": 128.08,
+   "w": "Group"
+  },
+  {
+   "t": 128.08,
+   "w": "We"
+  },
+  {
+   "t": 128.08,
+   "w": "sing"
+  },
+  {
+   "t": 128.88,
+   "w": "now"
+  },
+  {
+   "t": 130.16,
+   "w": "We"
+  },
+  {
+   "t": 130.16,
+   "w": "sing"
+  },
+  {
+   "t": 130.16,
+   "w": "now"
+  },
+  {
+   "t": 130.16,
+   "w": "we"
+  },
+  {
+   "t": 132.96,
+   "w": "sing"
+  },
+  {
+   "t": 133.6,
+   "w": "now"
+  },
+  {
+   "t": 133.6,
+   "w": "We"
+  },
+  {
+   "t": 133.65,
+   "w": "still"
+  },
+  {
+   "t": 133.71,
+   "w": "dance"
+  },
+  {
+   "t": 133.76,
+   "w": "when"
+  },
+  {
+   "t": 133.92,
+   "w": "the"
+  },
+  {
+   "t": 134.32,
+   "w": "night"
+  },
+  {
+   "t": 134.32,
+   "w": "gets"
+  },
+  {
+   "t": 134.56,
+   "w": "heavy"
+  },
+  {
+   "t": 135.36,
+   "w": "Still"
+  },
+  {
+   "t": 135.68,
+   "w": "sing"
+  },
+  {
+   "t": 136.08,
+   "w": "when"
+  },
+  {
+   "t": 136.16,
+   "w": "the"
+  },
+  {
+   "t": 136.24,
+   "w": "sky"
+  },
+  {
+   "t": 136.8,
+   "w": "turns"
+  },
+  {
+   "t": 136.96,
+   "w": "gray"
+  },
+  {
+   "t": 137.84,
+   "w": "Hands"
+  },
+  {
+   "t": 138.16,
+   "w": "up"
+  },
+  {
+   "t": 138.4,
+   "w": "if"
+  },
+  {
+   "t": 138.48,
+   "w": "your"
+  },
+  {
+   "t": 138.64,
+   "w": "heart"
+  },
+  {
+   "t": 138.8,
+   "w": "stays"
+  },
+  {
+   "t": 139.12,
+   "w": "ready"
+  },
+  {
+   "t": 139.76,
+   "w": "Love"
+  },
+  {
+   "t": 140.08,
+   "w": "dont"
+  },
+  {
+   "t": 140.4,
+   "w": "break"
+  },
+  {
+   "t": 140.72,
+   "w": "we"
+  },
+  {
+   "t": 140.88,
+   "w": "find"
+  },
+  {
+   "t": 141.44,
+   "w": "a"
+  },
+  {
+   "t": 141.44,
+   "w": "way"
+  },
+  {
+   "t": 142.16,
+   "w": "We"
+  },
+  {
+   "t": 142.4,
+   "w": "still"
+  },
+  {
+   "t": 142.96,
+   "w": "move"
+  },
+  {
+   "t": 142.96,
+   "w": "when"
+  },
+  {
+   "t": 143.12,
+   "w": "the"
+  },
+  {
+   "t": 143.2,
+   "w": "drums"
+  },
+  {
+   "t": 143.52,
+   "w": "start"
+  },
+  {
+   "t": 143.84,
+   "w": "calling"
+  },
+  {
+   "t": 144.56,
+   "w": "Still"
+  },
+  {
+   "t": 144.88,
+   "w": "shine"
+  },
+  {
+   "t": 145.36,
+   "w": "when"
+  },
+  {
+   "t": 145.44,
+   "w": "the"
+  },
+  {
+   "t": 145.52,
+   "w": "lights"
+  },
+  {
+   "t": 145.84,
+   "w": "go"
+  },
+  {
+   "t": 145.92,
+   "w": "low"
+  },
+  {
+   "t": 146.88,
+   "w": "If"
+  },
+  {
+   "t": 147.04,
+   "w": "one"
+  },
+  {
+   "t": 147.28,
+   "w": "heart"
+  },
+  {
+   "t": 147.92,
+   "w": "feels"
+  },
+  {
+   "t": 148.16,
+   "w": "like"
+  },
+  {
+   "t": 148.4,
+   "w": "falling"
+  },
+  {
+   "t": 149.04,
+   "w": "We"
+  },
+  {
+   "t": 149.12,
+   "w": "lift"
+  },
+  {
+   "t": 149.36,
+   "w": "it"
+  },
+  {
+   "t": 149.68,
+   "w": "up"
+  },
+  {
+   "t": 149.92,
+   "w": "and"
+  },
+  {
+   "t": 150.24,
+   "w": "let"
+  },
+  {
+   "t": 150.48,
+   "w": "it"
+  },
+  {
+   "t": 150.72,
+   "w": "know"
+  },
+  {
+   "t": 153.36,
+   "w": "Ya"
+  },
+  {
+   "t": 153.92,
+   "w": "Masr"
+  },
+  {
+   "t": 153.92,
+   "w": "ya"
+  },
+  {
+   "t": 153.92,
+   "w": "Masr"
+  },
+  {
+   "t": 153.92,
+   "w": "Heartbeat"
+  },
+  {
+   "t": 154.96,
+   "w": "in"
+  },
+  {
+   "t": 155.2,
+   "w": "the"
+  },
+  {
+   "t": 155.36,
+   "w": "drum"
+  },
+  {
+   "t": 155.52,
+   "w": "Ya"
+  },
+  {
+   "t": 162.32,
+   "w": "Masr"
+  },
+  {
+   "t": 162.32,
+   "w": "ya"
+  },
+  {
+   "t": 162.32,
+   "w": "Masr"
+  },
+  {
+   "t": 162.58,
+   "w": "Love"
+  },
+  {
+   "t": 162.83,
+   "w": "for"
+  },
+  {
+   "t": 163.09,
+   "w": "everyone"
+  },
+  {
+   "t": 163.34,
+   "w": "Heyya"
+  },
+  {
+   "t": 163.6,
+   "w": "heyya"
+  },
+  {
+   "t": 163.86,
+   "w": "Yalla"
+  },
+  {
+   "t": 164.11,
+   "w": "yalla"
+  },
+  {
+   "t": 164.92,
+   "w": "Sawa"
+  },
+  {
+   "t": 166.3,
+   "w": "sawa"
+  },
+  {
+   "t": 167.67,
+   "w": "We"
+  },
+  {
+   "t": 169.04,
+   "w": "rise"
+  },
+  {
+   "t": 169.41,
+   "w": "we"
+  },
+  {
+   "t": 169.79,
+   "w": "stay"
+  },
+  {
+   "t": 170.16,
+   "w": "No"
+  },
+  {
+   "t": 170.51,
+   "w": "flag"
+  },
+  {
+   "t": 170.88,
+   "w": "should"
+  },
+  {
+   "t": 171.25,
+   "w": "be"
+  },
+  {
+   "t": 171.44,
+   "w": "a"
+  },
+  {
+   "t": 171.44,
+   "w": "reason"
+  },
+  {
+   "t": 171.92,
+   "w": "for"
+  },
+  {
+   "t": 172.08,
+   "w": "sorrow"
+  },
+  {
+   "t": 174.64,
+   "w": "No"
+  },
+  {
+   "t": 174.88,
+   "w": "child"
+  },
+  {
+   "t": 175.68,
+   "w": "should"
+  },
+  {
+   "t": 175.84,
+   "w": "be"
+  },
+  {
+   "t": 176.0,
+   "w": "afraid"
+  },
+  {
+   "t": 176.4,
+   "w": "of"
+  },
+  {
+   "t": 176.56,
+   "w": "tomorrow"
+  },
+  {
+   "t": 178.88,
+   "w": "From"
+  },
+  {
+   "t": 179.04,
+   "w": "every"
+  },
+  {
+   "t": 179.44,
+   "w": "border"
+  },
+  {
+   "t": 180.24,
+   "w": "every"
+  },
+  {
+   "t": 180.64,
+   "w": "prayer"
+  },
+  {
+   "t": 181.36,
+   "w": "Every"
+  },
+  {
+   "t": 181.84,
+   "w": "voice"
+  },
+  {
+   "t": 182.56,
+   "w": "in"
+  },
+  {
+   "t": 182.8,
+   "w": "the"
+  },
+  {
+   "t": 183.12,
+   "w": "air"
+  },
+  {
+   "t": 183.92,
+   "w": "We"
+  },
+  {
+   "t": 184.08,
+   "w": "are"
+  },
+  {
+   "t": 184.16,
+   "w": "more"
+  },
+  {
+   "t": 184.56,
+   "w": "than"
+  },
+  {
+   "t": 184.72,
+   "w": "what"
+  },
+  {
+   "t": 185.04,
+   "w": "they"
+  },
+  {
+   "t": 185.2,
+   "w": "show"
+  },
+  {
+   "t": 185.84,
+   "w": "you"
+  },
+  {
+   "t": 186.0,
+   "w": "More"
+  },
+  {
+   "t": 186.24,
+   "w": "than"
+  },
+  {
+   "t": 186.56,
+   "w": "war"
+  },
+  {
+   "t": 187.36,
+   "w": "on"
+  },
+  {
+   "t": 187.44,
+   "w": "a"
+  },
+  {
+   "t": 187.44,
+   "w": "screen"
+  },
+  {
+   "t": 188.24,
+   "w": "More"
+  },
+  {
+   "t": 188.56,
+   "w": "than"
+  },
+  {
+   "t": 188.8,
+   "w": "pain"
+  },
+  {
+   "t": 189.44,
+   "w": "in"
+  },
+  {
+   "t": 189.68,
+   "w": "the"
+  },
+  {
+   "t": 190.56,
+   "w": "headlines"
+  },
+  {
+   "t": 190.56,
+   "w": "More"
+  },
+  {
+   "t": 190.8,
+   "w": "than"
+  },
+  {
+   "t": 191.12,
+   "w": "ancient"
+  },
+  {
+   "t": 191.6,
+   "w": "history"
+  },
+  {
+   "t": 193.76,
+   "w": "This"
+  },
+  {
+   "t": 193.92,
+   "w": "is"
+  },
+  {
+   "t": 194.0,
+   "w": "for"
+  },
+  {
+   "t": 194.16,
+   "w": "the"
+  },
+  {
+   "t": 194.24,
+   "w": "strong"
+  },
+  {
+   "t": 194.64,
+   "w": "ones"
+  },
+  {
+   "t": 195.6,
+   "w": "The"
+  },
+  {
+   "t": 195.68,
+   "w": "tired"
+  },
+  {
+   "t": 196.08,
+   "w": "ones"
+  },
+  {
+   "t": 198.24,
+   "w": "The"
+  },
+  {
+   "t": 198.32,
+   "w": "ones"
+  },
+  {
+   "t": 198.56,
+   "w": "still"
+  },
+  {
+   "t": 198.72,
+   "w": "smiling"
+  },
+  {
+   "t": 199.36,
+   "w": "when"
+  },
+  {
+   "t": 199.52,
+   "w": "life"
+  },
+  {
+   "t": 199.76,
+   "w": "gets"
+  },
+  {
+   "t": 200.0,
+   "w": "wild"
+  },
+  {
+   "t": 202.24,
+   "w": "This"
+  },
+  {
+   "t": 202.4,
+   "w": "is"
+  },
+  {
+   "t": 202.48,
+   "w": "not"
+  },
+  {
+   "t": 202.72,
+   "w": "just"
+  },
+  {
+   "t": 202.96,
+   "w": "pride"
+  },
+  {
+   "t": 204.08,
+   "w": "This"
+  },
+  {
+   "t": 204.32,
+   "w": "is"
+  },
+  {
+   "t": 204.4,
+   "w": "peace"
+  },
+  {
+   "t": 204.72,
+   "w": "with"
+  },
+  {
+   "t": 204.88,
+   "w": "a"
+  },
+  {
+   "t": 204.88,
+   "w": "pulse"
+  },
+  {
+   "t": 206.96,
+   "w": "This"
+  },
+  {
+   "t": 207.12,
+   "w": "is"
+  },
+  {
+   "t": 207.28,
+   "w": "culture"
+  },
+  {
+   "t": 208.32,
+   "w": "with"
+  },
+  {
+   "t": 208.48,
+   "w": "arms"
+  },
+  {
+   "t": 209.2,
+   "w": "open"
+  },
+  {
+   "t": 209.6,
+   "w": "wide"
+  },
+  {
+   "t": 210.32,
+   "w": "So"
+  },
+  {
+   "t": 211.2,
+   "w": "let"
+  },
+  {
+   "t": 211.44,
+   "w": "the"
+  },
+  {
+   "t": 211.6,
+   "w": "oud"
+  },
+  {
+   "t": 211.92,
+   "w": "cry"
+  },
+  {
+   "t": 212.48,
+   "w": "Let"
+  },
+  {
+   "t": 212.64,
+   "w": "the"
+  },
+  {
+   "t": 212.72,
+   "w": "drum"
+  },
+  {
+   "t": 213.04,
+   "w": "talk"
+  },
+  {
+   "t": 213.36,
+   "w": "Let"
+  },
+  {
+   "t": 213.52,
+   "w": "the"
+  },
+  {
+   "t": 213.6,
+   "w": "whole"
+  },
+  {
+   "t": 213.92,
+   "w": "room"
+  },
+  {
+   "t": 214.24,
+   "w": "move"
+  },
+  {
+   "t": 214.64,
+   "w": "like"
+  },
+  {
+   "t": 214.96,
+   "w": "the"
+  },
+  {
+   "t": 215.04,
+   "w": "Nile"
+  },
+  {
+   "t": 215.6,
+   "w": "walk"
+  },
+  {
+   "t": 215.68,
+   "w": "If"
+  },
+  {
+   "t": 215.84,
+   "w": "your"
+  },
+  {
+   "t": 215.92,
+   "w": "heart"
+  },
+  {
+   "t": 216.48,
+   "w": "hurts"
+  },
+  {
+   "t": 217.12,
+   "w": "Bring"
+  },
+  {
+   "t": 217.28,
+   "w": "it"
+  },
+  {
+   "t": 217.68,
+   "w": "close"
+  },
+  {
+   "t": 218.24,
+   "w": "We"
+  },
+  {
+   "t": 218.4,
+   "w": "dont"
+  },
+  {
+   "t": 218.88,
+   "w": "dance"
+  },
+  {
+   "t": 219.68,
+   "w": "alone"
+  },
+  {
+   "t": 219.84,
+   "w": "We"
+  },
+  {
+   "t": 220.72,
+   "w": "still"
+  },
+  {
+   "t": 221.12,
+   "w": "dance"
+  },
+  {
+   "t": 221.68,
+   "w": "when"
+  },
+  {
+   "t": 221.68,
+   "w": "the"
+  },
+  {
+   "t": 221.84,
+   "w": "night"
+  },
+  {
+   "t": 222.0,
+   "w": "gets"
+  },
+  {
+   "t": 222.32,
+   "w": "heavy"
+  },
+  {
+   "t": 223.12,
+   "w": "Still"
+  },
+  {
+   "t": 223.44,
+   "w": "sing"
+  },
+  {
+   "t": 223.76,
+   "w": "when"
+  },
+  {
+   "t": 223.92,
+   "w": "the"
+  },
+  {
+   "t": 223.92,
+   "w": "sky"
+  },
+  {
+   "t": 224.24,
+   "w": "turns"
+  },
+  {
+   "t": 224.56,
+   "w": "gray"
+  },
+  {
+   "t": 225.44,
+   "w": "Hands"
+  },
+  {
+   "t": 225.68,
+   "w": "up"
+  },
+  {
+   "t": 226.0,
+   "w": "if"
+  },
+  {
+   "t": 226.16,
+   "w": "your"
+  },
+  {
+   "t": 226.32,
+   "w": "heart"
+  },
+  {
+   "t": 226.48,
+   "w": "stays"
+  },
+  {
+   "t": 226.8,
+   "w": "ready"
+  },
+  {
+   "t": 227.44,
+   "w": "Love"
+  },
+  {
+   "t": 227.76,
+   "w": "dont"
+  },
+  {
+   "t": 228.08,
+   "w": "break"
+  },
+  {
+   "t": 228.32,
+   "w": "we"
+  },
+  {
+   "t": 228.56,
+   "w": "find"
+  },
+  {
+   "t": 229.12,
+   "w": "a"
+  },
+  {
+   "t": 229.2,
+   "w": "way"
+  },
+  {
+   "t": 229.76,
+   "w": "We"
+  },
+  {
+   "t": 229.92,
+   "w": "still"
+  },
+  {
+   "t": 230.4,
+   "w": "move"
+  },
+  {
+   "t": 230.64,
+   "w": "when"
+  },
+  {
+   "t": 230.8,
+   "w": "the"
+  },
+  {
+   "t": 230.88,
+   "w": "drums"
+  },
+  {
+   "t": 231.2,
+   "w": "start"
+  },
+  {
+   "t": 231.52,
+   "w": "calling"
+  },
+  {
+   "t": 232.24,
+   "w": "Still"
+  },
+  {
+   "t": 232.56,
+   "w": "shine"
+  },
+  {
+   "t": 233.12,
+   "w": "when"
+  },
+  {
+   "t": 233.12,
+   "w": "the"
+  },
+  {
+   "t": 233.28,
+   "w": "lights"
+  },
+  {
+   "t": 233.52,
+   "w": "go"
+  },
+  {
+   "t": 233.68,
+   "w": "low"
+  },
+  {
+   "t": 234.56,
+   "w": "If"
+  },
+  {
+   "t": 234.72,
+   "w": "one"
+  },
+  {
+   "t": 234.88,
+   "w": "heart"
+  },
+  {
+   "t": 235.52,
+   "w": "feels"
+  },
+  {
+   "t": 235.84,
+   "w": "like"
+  },
+  {
+   "t": 236.08,
+   "w": "falling"
+  },
+  {
+   "t": 236.56,
+   "w": "We"
+  },
+  {
+   "t": 236.72,
+   "w": "lift"
+  },
+  {
+   "t": 236.96,
+   "w": "it"
+  },
+  {
+   "t": 237.36,
+   "w": "up"
+  },
+  {
+   "t": 237.6,
+   "w": "and"
+  },
+  {
+   "t": 237.92,
+   "w": "let"
+  },
+  {
+   "t": 238.16,
+   "w": "it"
+  },
+  {
+   "t": 238.48,
+   "w": "know"
+  },
+  {
+   "t": 239.36,
+   "w": "Heyya"
+  },
+  {
+   "t": 240.88,
+   "w": "heyya"
+  },
+  {
+   "t": 241.12,
+   "w": "Yalla"
+  },
+  {
+   "t": 241.28,
+   "w": "yalla"
+  },
+  {
+   "t": 241.84,
+   "w": "Sawa"
+  },
+  {
+   "t": 243.44,
+   "w": "sawa"
+  },
+  {
+   "t": 245.28,
+   "w": "We"
+  },
+  {
+   "t": 245.36,
+   "w": "rise"
+  },
+  {
+   "t": 245.41,
+   "w": "we"
+  },
+  {
+   "t": 245.47,
+   "w": "stay"
+  },
+  {
+   "t": 245.52,
+   "w": "Heyya"
+  },
+  {
+   "t": 246.4,
+   "w": "heyya"
+  },
+  {
+   "t": 246.48,
+   "w": "Yalla"
+  },
+  {
+   "t": 246.48,
+   "w": "yalla"
+  },
+  {
+   "t": 246.56,
+   "w": "Sawa"
+  },
+  {
+   "t": 246.56,
+   "w": "sawa"
+  },
+  {
+   "t": 247.12,
+   "w": "Love"
+  },
+  {
+   "t": 247.12,
+   "w": "leads"
+  },
+  {
+   "t": 248.08,
+   "w": "the"
+  },
+  {
+   "t": 248.16,
+   "w": "way"
+  },
+  {
+   "t": 253.12,
+   "w": "Ya"
+  },
+  {
+   "t": 253.28,
+   "w": "Masr"
+  },
+  {
+   "t": 254.24,
+   "w": "ya"
+  },
+  {
+   "t": 254.4,
+   "w": "Masr"
+  },
+  {
+   "t": 255.52,
+   "w": "Still"
+  },
+  {
+   "t": 255.52,
+   "w": "dancing"
+  },
+  {
+   "t": 256.48,
+   "w": "Still"
+  },
+  {
+   "t": 257.2,
+   "w": "strong"
+  }
+ ],
+ "lrc": "[00:00.00]We still dance when the night gets heavy\n[00:15.36]Still sing when the sky turns gray\n[00:17.76]Hands up if your heart stays ready\n[00:19.68]Love don’t break, we find a way\n[00:23.76]Heyya, heyya\n[00:24.00]Yalla, yalla\n[00:24.96]Sawa, sawa\n[00:26.00]We rise, we stay\n[00:28.40]They only see the sand in the story\n[00:34.08]They only see the stone in the frame\n[00:35.84]But we got city lights, street drums, late nights\n[00:38.24]Millions of hearts with fire in the name\n[00:40.40]From Cairo rooftops to the river\n[00:42.72]From Alexandria out to the sea\n[00:45.20]We don’t need the world to understand us\n[00:47.44]We just need the world to breathe\n[00:49.76]Mama said keep your soul protected\n[00:52.08]Baba said keep your head up high\n[00:54.48]Even when the news gets reckless\n[00:56.72]Don’t let the fear move into your eyes\n[00:59.12]And if the whole world shakes\n[01:01.04]We put rhythm in the ground\n[01:03.36]If the dark gets loud\n[01:05.52]We make a brighter sound\n[01:06.88]We still dance when the night gets heavy\n[01:10.72]Still sing when the sky turns gray\n[01:13.12]Hands up if your heart stays ready\n[01:15.12]Love don’t break, we find a way\n[01:17.44]We still move when the drums start calling\n[01:19.92]Still shine when the lights go low\n[01:22.32]If one heart feels like falling\n[01:24.32]We lift it up and let it know\n[01:26.16]Heyya, heyya\n[01:28.08]Yalla, yalla\n[01:29.20]Sawa, sawa\n[01:31.84]We rise, we stay\n[01:32.00]Heyya, heyya\n[01:32.00]Yalla, yalla\n[01:32.56]Sawa, sawa\n[01:33.12]Love leads the way\n[01:36.24]This ain’t a postcard, this is people\n[01:38.40]This ain’t a camel in a scene\n[01:40.24]This is bass in the alley, kids in the traffic\n[01:42.88]Dreams in the dust trying to stay clean\n[01:44.96]This is gold in the voice of the aunties\n[01:47.20]This is tea when the night runs deep\n[01:49.52]This is jokes when the pressure gets ugly\n[01:51.84]This is faith when it’s hard to sleep\n[01:53.84]I see mothers holding families together\n[01:56.48]I see fathers praying under streetlight glow\n[01:58.08]I see young ones building something better\n[02:00.48]With a beat in the blood and a long way to go\n[02:03.36]When the world says break\n[02:04.56][Group] We don’t break\n[02:05.28]When the fear says bow\n[02:06.40][Group] We don’t bow\n[02:07.14]When the pain gets loud\n[02:08.08][Group] We sing now\n[02:10.16]We sing now, we sing now\n[02:13.60]We still dance when the night gets heavy\n[02:15.36]Still sing when the sky turns gray\n[02:17.84]Hands up if your heart stays ready\n[02:19.76]Love don’t break, we find a way\n[02:22.16]We still move when the drums start calling\n[02:24.56]Still shine when the lights go low\n[02:26.88]If one heart feels like falling\n[02:29.04]We lift it up and let it know\n[02:33.36]Ya Masr, ya Masr\n[02:33.92]Heartbeat in the drum\n[02:35.52]Ya Masr, ya Masr\n[02:42.58]Love for everyone\n[02:43.34]Heyya, heyya\n[02:43.86]Yalla, yalla\n[02:44.92]Sawa, sawa\n[02:47.67]We rise, we stay\n[02:50.16]No flag should be a reason for sorrow\n[02:54.64]No child should be afraid of tomorrow\n[02:58.88]From every border, every prayer\n[03:01.36]Every voice in the air\n[03:03.92]We are more than what they show you\n[03:06.00]More than war on a screen\n[03:08.24]More than pain in the headlines\n[03:10.56]More than ancient history\n[03:13.76]This is for the strong ones\n[03:15.60]The tired ones\n[03:18.24]The ones still smiling when life gets wild\n[03:22.24]This is not just pride\n[03:24.08]This is peace with a pulse\n[03:26.96]This is culture with arms open wide\n[03:30.32]So let the oud cry\n[03:32.48]Let the drum talk\n[03:33.36]Let the whole room move like the Nile walk\n[03:35.68]If your heart hurts\n[03:37.12]Bring it close\n[03:38.24]We don’t dance alone\n[03:39.84]We still dance when the night gets heavy\n[03:43.12]Still sing when the sky turns gray\n[03:45.44]Hands up if your heart stays ready\n[03:47.44]Love don’t break, we find a way\n[03:49.76]We still move when the drums start calling\n[03:52.24]Still shine when the lights go low\n[03:54.56]If one heart feels like falling\n[03:56.56]We lift it up and let it know\n[03:59.36]Heyya, heyya\n[04:01.12]Yalla, yalla\n[04:01.84]Sawa, sawa\n[04:05.28]We rise, we stay\n[04:05.52]Heyya, heyya\n[04:06.48]Yalla, yalla\n[04:06.56]Sawa, sawa\n[04:07.12]Love leads the way\n[04:13.12]Ya Masr, ya Masr\n[04:15.52]Still dancing\n[04:16.48]Still strong\n"
+}

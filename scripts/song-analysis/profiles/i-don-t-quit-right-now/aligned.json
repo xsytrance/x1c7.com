@@ -1,0 +1,3088 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 768,
+  "clumps": [],
+  "clumpedWords": 0,
+  "clumpRatio": 0.0,
+  "span": 259.1,
+  "duration": 268.0,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Beat"
+  },
+  {
+   "t": 2.48,
+   "w": "drop"
+  },
+  {
+   "t": 10.4,
+   "w": "shoes"
+  },
+  {
+   "t": 10.8,
+   "w": "tied"
+  },
+  {
+   "t": 11.12,
+   "w": "hood"
+  },
+  {
+   "t": 11.52,
+   "w": "up"
+  },
+  {
+   "t": 11.76,
+   "w": "door"
+  },
+  {
+   "t": 11.92,
+   "w": "slam"
+  },
+  {
+   "t": 12.56,
+   "w": "Still"
+  },
+  {
+   "t": 12.96,
+   "w": "half"
+  },
+  {
+   "t": 13.28,
+   "w": "tired"
+  },
+  {
+   "t": 13.6,
+   "w": "but"
+  },
+  {
+   "t": 13.76,
+   "w": "I"
+  },
+  {
+   "t": 13.84,
+   "w": "move"
+  },
+  {
+   "t": 14.24,
+   "w": "like"
+  },
+  {
+   "t": 14.4,
+   "w": "a"
+  },
+  {
+   "t": 14.4,
+   "w": "grown"
+  },
+  {
+   "t": 14.88,
+   "w": "man"
+  },
+  {
+   "t": 15.2,
+   "w": "No"
+  },
+  {
+   "t": 15.28,
+   "w": "speech"
+  },
+  {
+   "t": 15.76,
+   "w": "no"
+  },
+  {
+   "t": 15.92,
+   "w": "hype"
+  },
+  {
+   "t": 16.24,
+   "w": "no"
+  },
+  {
+   "t": 16.32,
+   "w": "coach"
+  },
+  {
+   "t": 16.72,
+   "w": "in"
+  },
+  {
+   "t": 16.8,
+   "w": "my"
+  },
+  {
+   "t": 17.04,
+   "w": "ear"
+  },
+  {
+   "t": 17.28,
+   "w": "Just"
+  },
+  {
+   "t": 17.52,
+   "w": "that"
+  },
+  {
+   "t": 17.68,
+   "w": "old"
+  },
+  {
+   "t": 18.0,
+   "w": "weak"
+  },
+  {
+   "t": 18.16,
+   "w": "voice"
+  },
+  {
+   "t": 18.56,
+   "w": "that"
+  },
+  {
+   "t": 18.72,
+   "w": "I"
+  },
+  {
+   "t": 18.8,
+   "w": "came"
+  },
+  {
+   "t": 19.2,
+   "w": "here"
+  },
+  {
+   "t": 19.76,
+   "w": "to"
+  },
+  {
+   "t": 19.76,
+   "w": "kill"
+  },
+  {
+   "t": 20.16,
+   "w": "I"
+  },
+  {
+   "t": 20.32,
+   "w": "dont"
+  },
+  {
+   "t": 20.4,
+   "w": "feel"
+  },
+  {
+   "t": 20.64,
+   "w": "ready"
+  },
+  {
+   "t": 20.96,
+   "w": "thats"
+  },
+  {
+   "t": 21.12,
+   "w": "the"
+  },
+  {
+   "t": 21.28,
+   "w": "point"
+  },
+  {
+   "t": 21.68,
+   "w": "of"
+  },
+  {
+   "t": 21.84,
+   "w": "it"
+  },
+  {
+   "t": 22.16,
+   "w": "Same"
+  },
+  {
+   "t": 22.48,
+   "w": "cold"
+  },
+  {
+   "t": 22.88,
+   "w": "walk"
+  },
+  {
+   "t": 23.12,
+   "w": "same"
+  },
+  {
+   "t": 23.44,
+   "w": "joints"
+  },
+  {
+   "t": 23.76,
+   "w": "feeling"
+  },
+  {
+   "t": 24.16,
+   "w": "stiff"
+  },
+  {
+   "t": 25.04,
+   "w": "Gym"
+  },
+  {
+   "t": 25.36,
+   "w": "lights"
+  },
+  {
+   "t": 25.6,
+   "w": "buzzing"
+  },
+  {
+   "t": 26.24,
+   "w": "bag"
+  },
+  {
+   "t": 26.56,
+   "w": "on"
+  },
+  {
+   "t": 26.8,
+   "w": "the"
+  },
+  {
+   "t": 26.8,
+   "w": "floor"
+  },
+  {
+   "t": 27.36,
+   "w": "Im"
+  },
+  {
+   "t": 27.52,
+   "w": "not"
+  },
+  {
+   "t": 27.84,
+   "w": "in"
+  },
+  {
+   "t": 28.0,
+   "w": "the"
+  },
+  {
+   "t": 28.0,
+   "w": "mood"
+  },
+  {
+   "t": 28.48,
+   "w": "so"
+  },
+  {
+   "t": 28.8,
+   "w": "I"
+  },
+  {
+   "t": 28.96,
+   "w": "need"
+  },
+  {
+   "t": 29.2,
+   "w": "it"
+  },
+  {
+   "t": 29.28,
+   "w": "more"
+  },
+  {
+   "t": 29.92,
+   "w": "First"
+  },
+  {
+   "t": 30.32,
+   "w": "set"
+  },
+  {
+   "t": 30.64,
+   "w": "ugly"
+  },
+  {
+   "t": 31.12,
+   "w": "second"
+  },
+  {
+   "t": 31.52,
+   "w": "set"
+  },
+  {
+   "t": 31.84,
+   "w": "clean"
+  },
+  {
+   "t": 32.48,
+   "w": "Third"
+  },
+  {
+   "t": 32.64,
+   "w": "set"
+  },
+  {
+   "t": 33.04,
+   "w": "looking"
+  },
+  {
+   "t": 33.36,
+   "w": "like"
+  },
+  {
+   "t": 33.52,
+   "w": "I"
+  },
+  {
+   "t": 33.6,
+   "w": "might"
+  },
+  {
+   "t": 34.0,
+   "w": "get"
+  },
+  {
+   "t": 34.16,
+   "w": "mean"
+  },
+  {
+   "t": 34.88,
+   "w": "Hands"
+  },
+  {
+   "t": 35.28,
+   "w": "on"
+  },
+  {
+   "t": 35.36,
+   "w": "the"
+  },
+  {
+   "t": 35.44,
+   "w": "bar"
+  },
+  {
+   "t": 36.16,
+   "w": "grip"
+  },
+  {
+   "t": 36.4,
+   "w": "chalked"
+  },
+  {
+   "t": 36.8,
+   "w": "white"
+  },
+  {
+   "t": 37.12,
+   "w": "I"
+  },
+  {
+   "t": 37.2,
+   "w": "dont"
+  },
+  {
+   "t": 37.36,
+   "w": "trust"
+  },
+  {
+   "t": 37.68,
+   "w": "motivation"
+  },
+  {
+   "t": 38.4,
+   "w": "I"
+  },
+  {
+   "t": 38.56,
+   "w": "trust"
+  },
+  {
+   "t": 38.88,
+   "w": "what"
+  },
+  {
+   "t": 39.12,
+   "w": "I"
+  },
+  {
+   "t": 39.28,
+   "w": "write"
+  },
+  {
+   "t": 39.84,
+   "w": "Log"
+  },
+  {
+   "t": 40.32,
+   "w": "book"
+  },
+  {
+   "t": 40.56,
+   "w": "open"
+  },
+  {
+   "t": 41.12,
+   "w": "numbers"
+  },
+  {
+   "t": 41.44,
+   "w": "in"
+  },
+  {
+   "t": 41.68,
+   "w": "ink"
+  },
+  {
+   "t": 42.08,
+   "w": "Either"
+  },
+  {
+   "t": 42.56,
+   "w": "add"
+  },
+  {
+   "t": 42.64,
+   "w": "one"
+  },
+  {
+   "t": 42.96,
+   "w": "rep"
+  },
+  {
+   "t": 43.28,
+   "w": "or"
+  },
+  {
+   "t": 43.44,
+   "w": "adjust"
+  },
+  {
+   "t": 43.76,
+   "w": "how"
+  },
+  {
+   "t": 43.92,
+   "w": "I"
+  },
+  {
+   "t": 44.08,
+   "w": "think"
+  },
+  {
+   "t": 44.4,
+   "w": "Im"
+  },
+  {
+   "t": 44.56,
+   "w": "not"
+  },
+  {
+   "t": 44.8,
+   "w": "here"
+  },
+  {
+   "t": 45.12,
+   "w": "flexing"
+  },
+  {
+   "t": 45.92,
+   "w": "Im"
+  },
+  {
+   "t": 46.08,
+   "w": "not"
+  },
+  {
+   "t": 46.32,
+   "w": "here"
+  },
+  {
+   "t": 46.64,
+   "w": "cute"
+  },
+  {
+   "t": 46.88,
+   "w": "I"
+  },
+  {
+   "t": 46.96,
+   "w": "came"
+  },
+  {
+   "t": 47.2,
+   "w": "to"
+  },
+  {
+   "t": 47.28,
+   "w": "tell"
+  },
+  {
+   "t": 47.44,
+   "w": "my"
+  },
+  {
+   "t": 47.52,
+   "w": "softer"
+  },
+  {
+   "t": 47.92,
+   "w": "side"
+  },
+  {
+   "t": 48.32,
+   "w": "shut"
+  },
+  {
+   "t": 48.72,
+   "w": "up"
+  },
+  {
+   "t": 48.96,
+   "w": "and"
+  },
+  {
+   "t": 49.12,
+   "w": "move"
+  },
+  {
+   "t": 49.92,
+   "w": "I"
+  },
+  {
+   "t": 50.08,
+   "w": "keep"
+  },
+  {
+   "t": 50.4,
+   "w": "pushing"
+  },
+  {
+   "t": 50.72,
+   "w": "till"
+  },
+  {
+   "t": 50.88,
+   "w": "the"
+  },
+  {
+   "t": 50.96,
+   "w": "arms"
+  },
+  {
+   "t": 51.36,
+   "w": "lock"
+  },
+  {
+   "t": 51.84,
+   "w": "up"
+  },
+  {
+   "t": 51.92,
+   "w": "Till"
+  },
+  {
+   "t": 52.08,
+   "w": "the"
+  },
+  {
+   "t": 52.32,
+   "w": "lungs"
+  },
+  {
+   "t": 52.48,
+   "w": "burn"
+  },
+  {
+   "t": 52.88,
+   "w": "dry"
+  },
+  {
+   "t": 53.28,
+   "w": "and"
+  },
+  {
+   "t": 53.36,
+   "w": "the"
+  },
+  {
+   "t": 53.44,
+   "w": "heartbeat"
+  },
+  {
+   "t": 54.16,
+   "w": "jump"
+  },
+  {
+   "t": 54.4,
+   "w": "Till"
+  },
+  {
+   "t": 54.56,
+   "w": "the"
+  },
+  {
+   "t": 54.64,
+   "w": "sweat"
+  },
+  {
+   "t": 54.96,
+   "w": "drip"
+  },
+  {
+   "t": 55.36,
+   "w": "down"
+  },
+  {
+   "t": 55.68,
+   "w": "and"
+  },
+  {
+   "t": 55.76,
+   "w": "the"
+  },
+  {
+   "t": 55.84,
+   "w": "vision"
+  },
+  {
+   "t": 56.24,
+   "w": "blur"
+  },
+  {
+   "t": 56.56,
+   "w": "I"
+  },
+  {
+   "t": 57.04,
+   "w": "dont"
+  },
+  {
+   "t": 57.2,
+   "w": "care"
+  },
+  {
+   "t": 57.68,
+   "w": "how"
+  },
+  {
+   "t": 57.76,
+   "w": "bad"
+  },
+  {
+   "t": 58.16,
+   "w": "that"
+  },
+  {
+   "t": 58.4,
+   "w": "pressure"
+  },
+  {
+   "t": 58.72,
+   "w": "hurt"
+  },
+  {
+   "t": 59.2,
+   "w": "Another"
+  },
+  {
+   "t": 59.6,
+   "w": "set"
+  },
+  {
+   "t": 59.84,
+   "w": "another"
+  },
+  {
+   "t": 60.24,
+   "w": "plate"
+  },
+  {
+   "t": 60.48,
+   "w": "another"
+  },
+  {
+   "t": 60.8,
+   "w": "war"
+  },
+  {
+   "t": 61.68,
+   "w": "Another"
+  },
+  {
+   "t": 62.08,
+   "w": "voice"
+  },
+  {
+   "t": 62.48,
+   "w": "in"
+  },
+  {
+   "t": 62.56,
+   "w": "my"
+  },
+  {
+   "t": 62.72,
+   "w": "head"
+  },
+  {
+   "t": 63.36,
+   "w": "I"
+  },
+  {
+   "t": 63.36,
+   "w": "ignore"
+  },
+  {
+   "t": 64.32,
+   "w": "If"
+  },
+  {
+   "t": 64.48,
+   "w": "I"
+  },
+  {
+   "t": 64.56,
+   "w": "came"
+  },
+  {
+   "t": 64.96,
+   "w": "this"
+  },
+  {
+   "t": 65.12,
+   "w": "far"
+  },
+  {
+   "t": 65.36,
+   "w": "I"
+  },
+  {
+   "t": 65.76,
+   "w": "aint"
+  },
+  {
+   "t": 66.32,
+   "w": "slowing"
+  },
+  {
+   "t": 66.32,
+   "w": "down"
+  },
+  {
+   "t": 66.64,
+   "w": "I"
+  },
+  {
+   "t": 66.8,
+   "w": "dont"
+  },
+  {
+   "t": 66.96,
+   "w": "stop"
+  },
+  {
+   "t": 67.36,
+   "w": "I"
+  },
+  {
+   "t": 68.16,
+   "w": "dont"
+  },
+  {
+   "t": 68.32,
+   "w": "quit"
+  },
+  {
+   "t": 68.64,
+   "w": "right"
+  },
+  {
+   "t": 68.8,
+   "w": "now"
+  },
+  {
+   "t": 69.52,
+   "w": "Bench"
+  },
+  {
+   "t": 69.92,
+   "w": "feel"
+  },
+  {
+   "t": 70.16,
+   "w": "heavy"
+  },
+  {
+   "t": 70.48,
+   "w": "good"
+  },
+  {
+   "t": 70.8,
+   "w": "let"
+  },
+  {
+   "t": 71.04,
+   "w": "it"
+  },
+  {
+   "t": 71.2,
+   "w": "be"
+  },
+  {
+   "t": 71.76,
+   "w": "Thats"
+  },
+  {
+   "t": 71.92,
+   "w": "the"
+  },
+  {
+   "t": 72.0,
+   "w": "same"
+  },
+  {
+   "t": 72.4,
+   "w": "weight"
+  },
+  {
+   "t": 72.64,
+   "w": "standing"
+  },
+  {
+   "t": 72.96,
+   "w": "between"
+  },
+  {
+   "t": 73.36,
+   "w": "me"
+  },
+  {
+   "t": 73.6,
+   "w": "and"
+  },
+  {
+   "t": 73.84,
+   "w": "me"
+  },
+  {
+   "t": 74.24,
+   "w": "Two"
+  },
+  {
+   "t": 74.56,
+   "w": "plates"
+  },
+  {
+   "t": 74.88,
+   "w": "talking"
+  },
+  {
+   "t": 75.12,
+   "w": "like"
+  },
+  {
+   "t": 75.52,
+   "w": "you"
+  },
+  {
+   "t": 75.6,
+   "w": "sure"
+  },
+  {
+   "t": 76.08,
+   "w": "you"
+  },
+  {
+   "t": 76.4,
+   "w": "him"
+  },
+  {
+   "t": 76.8,
+   "w": "I"
+  },
+  {
+   "t": 77.2,
+   "w": "unrack"
+  },
+  {
+   "t": 77.6,
+   "w": "slow"
+  },
+  {
+   "t": 78.08,
+   "w": "with"
+  },
+  {
+   "t": 78.16,
+   "w": "a"
+  },
+  {
+   "t": 78.16,
+   "w": "sharkfin"
+  },
+  {
+   "t": 78.88,
+   "w": "grin"
+  },
+  {
+   "t": 79.28,
+   "w": "Elbows"
+  },
+  {
+   "t": 80.16,
+   "w": "tucked"
+  },
+  {
+   "t": 80.56,
+   "w": "chest"
+  },
+  {
+   "t": 80.8,
+   "w": "tight"
+  },
+  {
+   "t": 81.12,
+   "w": "breath"
+  },
+  {
+   "t": 81.44,
+   "w": "held"
+  },
+  {
+   "t": 82.0,
+   "w": "World"
+  },
+  {
+   "t": 82.32,
+   "w": "get"
+  },
+  {
+   "t": 82.56,
+   "w": "quiet"
+  },
+  {
+   "t": 82.96,
+   "w": "when"
+  },
+  {
+   "t": 83.12,
+   "w": "the"
+  },
+  {
+   "t": 83.2,
+   "w": "barbell"
+  },
+  {
+   "t": 83.76,
+   "w": "fell"
+  },
+  {
+   "t": 84.48,
+   "w": "Touch"
+  },
+  {
+   "t": 84.56,
+   "w": "and"
+  },
+  {
+   "t": 84.96,
+   "w": "press"
+  },
+  {
+   "t": 85.28,
+   "w": "no"
+  },
+  {
+   "t": 85.6,
+   "w": "panic"
+  },
+  {
+   "t": 86.0,
+   "w": "no"
+  },
+  {
+   "t": 86.16,
+   "w": "bounce"
+  },
+  {
+   "t": 86.72,
+   "w": "Thats"
+  },
+  {
+   "t": 86.88,
+   "w": "one"
+  },
+  {
+   "t": 87.12,
+   "w": "more"
+  },
+  {
+   "t": 87.6,
+   "w": "reason"
+  },
+  {
+   "t": 87.92,
+   "w": "I"
+  },
+  {
+   "t": 88.08,
+   "w": "dont"
+  },
+  {
+   "t": 88.16,
+   "w": "count"
+  },
+  {
+   "t": 88.4,
+   "w": "myself"
+  },
+  {
+   "t": 88.88,
+   "w": "out"
+  },
+  {
+   "t": 89.36,
+   "w": "Squats"
+  },
+  {
+   "t": 89.92,
+   "w": "on"
+  },
+  {
+   "t": 90.08,
+   "w": "deck"
+  },
+  {
+   "t": 90.48,
+   "w": "legs"
+  },
+  {
+   "t": 90.88,
+   "w": "already"
+  },
+  {
+   "t": 91.2,
+   "w": "mad"
+  },
+  {
+   "t": 91.76,
+   "w": "But"
+  },
+  {
+   "t": 92.0,
+   "w": "I"
+  },
+  {
+   "t": 92.08,
+   "w": "dont"
+  },
+  {
+   "t": 92.24,
+   "w": "negotiate"
+  },
+  {
+   "t": 92.88,
+   "w": "with"
+  },
+  {
+   "t": 92.96,
+   "w": "habits"
+  },
+  {
+   "t": 93.52,
+   "w": "I"
+  },
+  {
+   "t": 94.32,
+   "w": "had"
+  },
+  {
+   "t": 94.4,
+   "w": "Deep"
+  },
+  {
+   "t": 94.72,
+   "w": "breath"
+  },
+  {
+   "t": 95.12,
+   "w": "brace"
+  },
+  {
+   "t": 95.44,
+   "w": "spine"
+  },
+  {
+   "t": 96.0,
+   "w": "locked"
+  },
+  {
+   "t": 96.32,
+   "w": "in"
+  },
+  {
+   "t": 96.88,
+   "w": "Pain"
+  },
+  {
+   "t": 97.28,
+   "w": "in"
+  },
+  {
+   "t": 97.36,
+   "w": "the"
+  },
+  {
+   "t": 97.44,
+   "w": "hole"
+  },
+  {
+   "t": 97.76,
+   "w": "but"
+  },
+  {
+   "t": 98.0,
+   "w": "I"
+  },
+  {
+   "t": 98.08,
+   "w": "drive"
+  },
+  {
+   "t": 98.48,
+   "w": "through"
+  },
+  {
+   "t": 98.72,
+   "w": "it"
+  },
+  {
+   "t": 98.72,
+   "w": "Deadlift"
+  },
+  {
+   "t": 99.12,
+   "w": "day"
+  },
+  {
+   "t": 100.24,
+   "w": "got"
+  },
+  {
+   "t": 100.56,
+   "w": "truth"
+  },
+  {
+   "t": 100.8,
+   "w": "in"
+  },
+  {
+   "t": 100.96,
+   "w": "the"
+  },
+  {
+   "t": 100.96,
+   "w": "steel"
+  },
+  {
+   "t": 101.36,
+   "w": "You"
+  },
+  {
+   "t": 101.52,
+   "w": "cant"
+  },
+  {
+   "t": 101.76,
+   "w": "fake"
+  },
+  {
+   "t": 102.16,
+   "w": "heart"
+  },
+  {
+   "t": 102.64,
+   "w": "when"
+  },
+  {
+   "t": 102.8,
+   "w": "the"
+  },
+  {
+   "t": 102.88,
+   "w": "knurling"
+  },
+  {
+   "t": 103.28,
+   "w": "feel"
+  },
+  {
+   "t": 103.68,
+   "w": "real"
+  },
+  {
+   "t": 104.32,
+   "w": "Bar"
+  },
+  {
+   "t": 104.72,
+   "w": "dont"
+  },
+  {
+   "t": 104.96,
+   "w": "care"
+  },
+  {
+   "t": 105.28,
+   "w": "what"
+  },
+  {
+   "t": 105.52,
+   "w": "excuse"
+  },
+  {
+   "t": 105.92,
+   "w": "you"
+  },
+  {
+   "t": 106.08,
+   "w": "brought"
+  },
+  {
+   "t": 106.4,
+   "w": "It"
+  },
+  {
+   "t": 106.56,
+   "w": "only"
+  },
+  {
+   "t": 106.88,
+   "w": "moves"
+  },
+  {
+   "t": 107.2,
+   "w": "when"
+  },
+  {
+   "t": 107.28,
+   "w": "your"
+  },
+  {
+   "t": 107.44,
+   "w": "whole"
+  },
+  {
+   "t": 107.68,
+   "w": "soul"
+  },
+  {
+   "t": 108.08,
+   "w": "talks"
+  },
+  {
+   "t": 108.64,
+   "w": "I"
+  },
+  {
+   "t": 109.6,
+   "w": "keep"
+  },
+  {
+   "t": 109.92,
+   "w": "pushing"
+  },
+  {
+   "t": 110.24,
+   "w": "till"
+  },
+  {
+   "t": 110.4,
+   "w": "the"
+  },
+  {
+   "t": 110.48,
+   "w": "arms"
+  },
+  {
+   "t": 110.96,
+   "w": "lock"
+  },
+  {
+   "t": 111.2,
+   "w": "up"
+  },
+  {
+   "t": 111.52,
+   "w": "Till"
+  },
+  {
+   "t": 111.68,
+   "w": "the"
+  },
+  {
+   "t": 111.76,
+   "w": "lungs"
+  },
+  {
+   "t": 112.16,
+   "w": "burn"
+  },
+  {
+   "t": 112.4,
+   "w": "dry"
+  },
+  {
+   "t": 112.88,
+   "w": "and"
+  },
+  {
+   "t": 112.96,
+   "w": "the"
+  },
+  {
+   "t": 113.04,
+   "w": "heartbeat"
+  },
+  {
+   "t": 113.76,
+   "w": "jump"
+  },
+  {
+   "t": 114.0,
+   "w": "Till"
+  },
+  {
+   "t": 114.16,
+   "w": "the"
+  },
+  {
+   "t": 114.24,
+   "w": "sweat"
+  },
+  {
+   "t": 114.56,
+   "w": "drip"
+  },
+  {
+   "t": 114.88,
+   "w": "down"
+  },
+  {
+   "t": 115.28,
+   "w": "and"
+  },
+  {
+   "t": 115.44,
+   "w": "the"
+  },
+  {
+   "t": 115.44,
+   "w": "vision"
+  },
+  {
+   "t": 115.92,
+   "w": "blur"
+  },
+  {
+   "t": 116.48,
+   "w": "I"
+  },
+  {
+   "t": 116.64,
+   "w": "dont"
+  },
+  {
+   "t": 116.8,
+   "w": "care"
+  },
+  {
+   "t": 117.28,
+   "w": "how"
+  },
+  {
+   "t": 117.44,
+   "w": "bad"
+  },
+  {
+   "t": 117.84,
+   "w": "that"
+  },
+  {
+   "t": 118.08,
+   "w": "pressure"
+  },
+  {
+   "t": 118.4,
+   "w": "hurt"
+  },
+  {
+   "t": 118.88,
+   "w": "Another"
+  },
+  {
+   "t": 119.2,
+   "w": "set"
+  },
+  {
+   "t": 119.52,
+   "w": "another"
+  },
+  {
+   "t": 119.84,
+   "w": "plate"
+  },
+  {
+   "t": 120.16,
+   "w": "another"
+  },
+  {
+   "t": 120.56,
+   "w": "war"
+  },
+  {
+   "t": 121.36,
+   "w": "Another"
+  },
+  {
+   "t": 121.76,
+   "w": "voice"
+  },
+  {
+   "t": 122.16,
+   "w": "in"
+  },
+  {
+   "t": 122.32,
+   "w": "my"
+  },
+  {
+   "t": 122.4,
+   "w": "head"
+  },
+  {
+   "t": 122.72,
+   "w": "I"
+  },
+  {
+   "t": 123.04,
+   "w": "ignore"
+  },
+  {
+   "t": 124.0,
+   "w": "If"
+  },
+  {
+   "t": 124.16,
+   "w": "I"
+  },
+  {
+   "t": 124.32,
+   "w": "came"
+  },
+  {
+   "t": 124.64,
+   "w": "this"
+  },
+  {
+   "t": 124.8,
+   "w": "far"
+  },
+  {
+   "t": 125.04,
+   "w": "I"
+  },
+  {
+   "t": 125.44,
+   "w": "aint"
+  },
+  {
+   "t": 125.52,
+   "w": "slowing"
+  },
+  {
+   "t": 126.0,
+   "w": "down"
+  },
+  {
+   "t": 126.4,
+   "w": "I"
+  },
+  {
+   "t": 126.56,
+   "w": "dont"
+  },
+  {
+   "t": 126.64,
+   "w": "stop"
+  },
+  {
+   "t": 127.36,
+   "w": "I"
+  },
+  {
+   "t": 127.68,
+   "w": "dont"
+  },
+  {
+   "t": 128.08,
+   "w": "quit"
+  },
+  {
+   "t": 128.4,
+   "w": "right"
+  },
+  {
+   "t": 128.56,
+   "w": "now"
+  },
+  {
+   "t": 129.28,
+   "w": "Whey"
+  },
+  {
+   "t": 129.76,
+   "w": "in"
+  },
+  {
+   "t": 129.84,
+   "w": "the"
+  },
+  {
+   "t": 129.84,
+   "w": "shaker"
+  },
+  {
+   "t": 130.56,
+   "w": "meals"
+  },
+  {
+   "t": 130.96,
+   "w": "in"
+  },
+  {
+   "t": 131.2,
+   "w": "the"
+  },
+  {
+   "t": 131.2,
+   "w": "bag"
+  },
+  {
+   "t": 131.76,
+   "w": "Macros"
+  },
+  {
+   "t": 132.4,
+   "w": "boring"
+  },
+  {
+   "t": 132.72,
+   "w": "but"
+  },
+  {
+   "t": 132.88,
+   "w": "the"
+  },
+  {
+   "t": 132.96,
+   "w": "mirror"
+  },
+  {
+   "t": 133.28,
+   "w": "dont"
+  },
+  {
+   "t": 133.68,
+   "w": "cap"
+  },
+  {
+   "t": 134.32,
+   "w": "Casein"
+  },
+  {
+   "t": 134.64,
+   "w": "late"
+  },
+  {
+   "t": 134.88,
+   "w": "night"
+  },
+  {
+   "t": 135.52,
+   "w": "water"
+  },
+  {
+   "t": 135.76,
+   "w": "all"
+  },
+  {
+   "t": 136.08,
+   "w": "day"
+  },
+  {
+   "t": 136.64,
+   "w": "Stretch"
+  },
+  {
+   "t": 137.12,
+   "w": "when"
+  },
+  {
+   "t": 137.28,
+   "w": "Im"
+  },
+  {
+   "t": 137.36,
+   "w": "stiff"
+  },
+  {
+   "t": 137.68,
+   "w": "so"
+  },
+  {
+   "t": 137.92,
+   "w": "I"
+  },
+  {
+   "t": 138.4,
+   "w": "dont"
+  },
+  {
+   "t": 138.72,
+   "w": "break"
+  },
+  {
+   "t": 139.2,
+   "w": "Skull"
+  },
+  {
+   "t": 139.6,
+   "w": "crushers"
+  },
+  {
+   "t": 139.84,
+   "w": "burn"
+  },
+  {
+   "t": 140.4,
+   "w": "planks"
+  },
+  {
+   "t": 140.72,
+   "w": "make"
+  },
+  {
+   "t": 140.96,
+   "w": "me"
+  },
+  {
+   "t": 141.04,
+   "w": "shake"
+  },
+  {
+   "t": 141.44,
+   "w": "Crunches"
+  },
+  {
+   "t": 142.08,
+   "w": "got"
+  },
+  {
+   "t": 142.32,
+   "w": "fire"
+  },
+  {
+   "t": 142.72,
+   "w": "running"
+  },
+  {
+   "t": 143.04,
+   "w": "under"
+  },
+  {
+   "t": 143.28,
+   "w": "my"
+  },
+  {
+   "t": 143.6,
+   "w": "waist"
+  },
+  {
+   "t": 144.32,
+   "w": "Pushups"
+  },
+  {
+   "t": 144.8,
+   "w": "after"
+  },
+  {
+   "t": 145.2,
+   "w": "just"
+  },
+  {
+   "t": 145.44,
+   "w": "to"
+  },
+  {
+   "t": 145.44,
+   "w": "prove"
+  },
+  {
+   "t": 146.4,
+   "w": "Im"
+  },
+  {
+   "t": 146.4,
+   "w": "sick"
+  },
+  {
+   "t": 146.48,
+   "w": "Not"
+  },
+  {
+   "t": 146.72,
+   "w": "sick"
+  },
+  {
+   "t": 147.12,
+   "w": "like"
+  },
+  {
+   "t": 147.44,
+   "w": "ill"
+  },
+  {
+   "t": 147.68,
+   "w": "sick"
+  },
+  {
+   "t": 148.08,
+   "w": "like"
+  },
+  {
+   "t": 148.32,
+   "w": "disciplined"
+  },
+  {
+   "t": 149.2,
+   "w": "This"
+  },
+  {
+   "t": 149.36,
+   "w": "aint"
+  },
+  {
+   "t": 149.52,
+   "w": "about"
+  },
+  {
+   "t": 150.0,
+   "w": "abs"
+  },
+  {
+   "t": 150.32,
+   "w": "this"
+  },
+  {
+   "t": 150.48,
+   "w": "aint"
+  },
+  {
+   "t": 150.72,
+   "w": "about"
+  },
+  {
+   "t": 151.2,
+   "w": "arms"
+  },
+  {
+   "t": 151.68,
+   "w": "This"
+  },
+  {
+   "t": 152.0,
+   "w": "about"
+  },
+  {
+   "t": 152.48,
+   "w": "keeping"
+  },
+  {
+   "t": 152.8,
+   "w": "one"
+  },
+  {
+   "t": 152.96,
+   "w": "promise"
+  },
+  {
+   "t": 153.36,
+   "w": "through"
+  },
+  {
+   "t": 153.6,
+   "w": "storms"
+  },
+  {
+   "t": 154.24,
+   "w": "This"
+  },
+  {
+   "t": 154.56,
+   "w": "about"
+  },
+  {
+   "t": 154.96,
+   "w": "becoming"
+  },
+  {
+   "t": 155.52,
+   "w": "the"
+  },
+  {
+   "t": 155.52,
+   "w": "proof"
+  },
+  {
+   "t": 155.92,
+   "w": "I"
+  },
+  {
+   "t": 156.16,
+   "w": "need"
+  },
+  {
+   "t": 156.56,
+   "w": "When"
+  },
+  {
+   "t": 156.72,
+   "w": "my"
+  },
+  {
+   "t": 156.88,
+   "w": "own"
+  },
+  {
+   "t": 157.2,
+   "w": "damn"
+  },
+  {
+   "t": 157.52,
+   "w": "mind"
+  },
+  {
+   "t": 157.76,
+   "w": "start"
+  },
+  {
+   "t": 158.16,
+   "w": "testing"
+  },
+  {
+   "t": 158.64,
+   "w": "me"
+  },
+  {
+   "t": 159.04,
+   "w": "No"
+  },
+  {
+   "t": 159.36,
+   "w": "perfect"
+  },
+  {
+   "t": 159.92,
+   "w": "week"
+  },
+  {
+   "t": 160.32,
+   "w": "no"
+  },
+  {
+   "t": 160.64,
+   "w": "perfect"
+  },
+  {
+   "t": 161.12,
+   "w": "mood"
+  },
+  {
+   "t": 161.44,
+   "w": "Just"
+  },
+  {
+   "t": 161.92,
+   "w": "imperfect"
+  },
+  {
+   "t": 162.4,
+   "w": "days"
+  },
+  {
+   "t": 162.72,
+   "w": "where"
+  },
+  {
+   "t": 162.88,
+   "w": "I"
+  },
+  {
+   "t": 162.96,
+   "w": "still"
+  },
+  {
+   "t": 163.12,
+   "w": "follow"
+  },
+  {
+   "t": 163.6,
+   "w": "through"
+  },
+  {
+   "t": 163.92,
+   "w": "I"
+  },
+  {
+   "t": 164.32,
+   "w": "dont"
+  },
+  {
+   "t": 164.48,
+   "w": "need"
+  },
+  {
+   "t": 164.96,
+   "w": "applause"
+  },
+  {
+   "t": 165.52,
+   "w": "I"
+  },
+  {
+   "t": 165.6,
+   "w": "dont"
+  },
+  {
+   "t": 165.76,
+   "w": "need"
+  },
+  {
+   "t": 166.0,
+   "w": "a"
+  },
+  {
+   "t": 166.08,
+   "w": "crown"
+  },
+  {
+   "t": 166.48,
+   "w": "I"
+  },
+  {
+   "t": 166.64,
+   "w": "need"
+  },
+  {
+   "t": 166.96,
+   "w": "one"
+  },
+  {
+   "t": 167.36,
+   "w": "more"
+  },
+  {
+   "t": 167.6,
+   "w": "rep"
+  },
+  {
+   "t": 167.92,
+   "w": "when"
+  },
+  {
+   "t": 168.16,
+   "w": "I"
+  },
+  {
+   "t": 168.24,
+   "w": "wanna"
+  },
+  {
+   "t": 168.48,
+   "w": "sit"
+  },
+  {
+   "t": 168.88,
+   "w": "down"
+  },
+  {
+   "t": 169.2,
+   "w": "I"
+  },
+  {
+   "t": 169.84,
+   "w": "keep"
+  },
+  {
+   "t": 170.16,
+   "w": "pushing"
+  },
+  {
+   "t": 170.48,
+   "w": "till"
+  },
+  {
+   "t": 170.64,
+   "w": "the"
+  },
+  {
+   "t": 170.72,
+   "w": "arms"
+  },
+  {
+   "t": 171.12,
+   "w": "lock"
+  },
+  {
+   "t": 171.44,
+   "w": "up"
+  },
+  {
+   "t": 171.76,
+   "w": "Till"
+  },
+  {
+   "t": 171.92,
+   "w": "the"
+  },
+  {
+   "t": 172.0,
+   "w": "lungs"
+  },
+  {
+   "t": 172.4,
+   "w": "burn"
+  },
+  {
+   "t": 172.72,
+   "w": "dry"
+  },
+  {
+   "t": 173.12,
+   "w": "and"
+  },
+  {
+   "t": 173.2,
+   "w": "the"
+  },
+  {
+   "t": 173.36,
+   "w": "heartbeat"
+  },
+  {
+   "t": 173.92,
+   "w": "jump"
+  },
+  {
+   "t": 174.24,
+   "w": "Till"
+  },
+  {
+   "t": 174.4,
+   "w": "the"
+  },
+  {
+   "t": 174.56,
+   "w": "sweat"
+  },
+  {
+   "t": 174.88,
+   "w": "drip"
+  },
+  {
+   "t": 175.28,
+   "w": "down"
+  },
+  {
+   "t": 175.6,
+   "w": "and"
+  },
+  {
+   "t": 175.84,
+   "w": "the"
+  },
+  {
+   "t": 175.84,
+   "w": "vision"
+  },
+  {
+   "t": 176.24,
+   "w": "blur"
+  },
+  {
+   "t": 176.96,
+   "w": "I"
+  },
+  {
+   "t": 177.12,
+   "w": "dont"
+  },
+  {
+   "t": 177.2,
+   "w": "care"
+  },
+  {
+   "t": 177.52,
+   "w": "how"
+  },
+  {
+   "t": 177.76,
+   "w": "bad"
+  },
+  {
+   "t": 178.16,
+   "w": "that"
+  },
+  {
+   "t": 178.4,
+   "w": "pressure"
+  },
+  {
+   "t": 178.8,
+   "w": "hurt"
+  },
+  {
+   "t": 179.28,
+   "w": "Another"
+  },
+  {
+   "t": 179.6,
+   "w": "set"
+  },
+  {
+   "t": 179.92,
+   "w": "another"
+  },
+  {
+   "t": 180.32,
+   "w": "plate"
+  },
+  {
+   "t": 180.56,
+   "w": "another"
+  },
+  {
+   "t": 180.96,
+   "w": "war"
+  },
+  {
+   "t": 181.84,
+   "w": "Another"
+  },
+  {
+   "t": 182.24,
+   "w": "voice"
+  },
+  {
+   "t": 182.64,
+   "w": "in"
+  },
+  {
+   "t": 182.72,
+   "w": "my"
+  },
+  {
+   "t": 182.88,
+   "w": "head"
+  },
+  {
+   "t": 183.28,
+   "w": "I"
+  },
+  {
+   "t": 183.52,
+   "w": "ignore"
+  },
+  {
+   "t": 184.48,
+   "w": "If"
+  },
+  {
+   "t": 184.72,
+   "w": "I"
+  },
+  {
+   "t": 184.8,
+   "w": "came"
+  },
+  {
+   "t": 185.28,
+   "w": "this"
+  },
+  {
+   "t": 185.44,
+   "w": "far"
+  },
+  {
+   "t": 185.76,
+   "w": "I"
+  },
+  {
+   "t": 185.92,
+   "w": "aint"
+  },
+  {
+   "t": 186.0,
+   "w": "slowing"
+  },
+  {
+   "t": 186.56,
+   "w": "down"
+  },
+  {
+   "t": 186.96,
+   "w": "I"
+  },
+  {
+   "t": 187.04,
+   "w": "dont"
+  },
+  {
+   "t": 187.2,
+   "w": "stop"
+  },
+  {
+   "t": 187.68,
+   "w": "I"
+  },
+  {
+   "t": 188.4,
+   "w": "dont"
+  },
+  {
+   "t": 188.48,
+   "w": "quit"
+  },
+  {
+   "t": 188.96,
+   "w": "right"
+  },
+  {
+   "t": 189.2,
+   "w": "now"
+  },
+  {
+   "t": 189.44,
+   "w": "I"
+  },
+  {
+   "t": 189.52,
+   "w": "picture"
+  },
+  {
+   "t": 189.92,
+   "w": "summer"
+  },
+  {
+   "t": 190.72,
+   "w": "but"
+  },
+  {
+   "t": 190.96,
+   "w": "I"
+  },
+  {
+   "t": 191.04,
+   "w": "dont"
+  },
+  {
+   "t": 191.28,
+   "w": "daydream"
+  },
+  {
+   "t": 192.0,
+   "w": "I"
+  },
+  {
+   "t": 192.08,
+   "w": "put"
+  },
+  {
+   "t": 192.32,
+   "w": "that"
+  },
+  {
+   "t": 192.56,
+   "w": "beach"
+  },
+  {
+   "t": 192.8,
+   "w": "body"
+  },
+  {
+   "t": 193.12,
+   "w": "under"
+  },
+  {
+   "t": 193.36,
+   "w": "a"
+  },
+  {
+   "t": 193.52,
+   "w": "machine"
+  },
+  {
+   "t": 194.56,
+   "w": "I"
+  },
+  {
+   "t": 194.64,
+   "w": "put"
+  },
+  {
+   "t": 194.88,
+   "w": "that"
+  },
+  {
+   "t": 195.04,
+   "w": "cocktail"
+  },
+  {
+   "t": 195.52,
+   "w": "far"
+  },
+  {
+   "t": 196.0,
+   "w": "down"
+  },
+  {
+   "t": 196.48,
+   "w": "the"
+  },
+  {
+   "t": 196.48,
+   "w": "road"
+  },
+  {
+   "t": 197.12,
+   "w": "I"
+  },
+  {
+   "t": 197.2,
+   "w": "put"
+  },
+  {
+   "t": 197.44,
+   "w": "todays"
+  },
+  {
+   "t": 197.92,
+   "w": "work"
+  },
+  {
+   "t": 198.24,
+   "w": "where"
+  },
+  {
+   "t": 198.4,
+   "w": "excuses"
+  },
+  {
+   "t": 199.12,
+   "w": "go"
+  },
+  {
+   "t": 199.44,
+   "w": "Money"
+  },
+  {
+   "t": 199.76,
+   "w": "right"
+  },
+  {
+   "t": 200.08,
+   "w": "mind"
+  },
+  {
+   "t": 200.48,
+   "w": "right"
+  },
+  {
+   "t": 200.72,
+   "w": "body"
+  },
+  {
+   "t": 201.04,
+   "w": "getting"
+  },
+  {
+   "t": 201.36,
+   "w": "sharp"
+  },
+  {
+   "t": 202.08,
+   "w": "Code"
+  },
+  {
+   "t": 202.4,
+   "w": "on"
+  },
+  {
+   "t": 202.56,
+   "w": "the"
+  },
+  {
+   "t": 202.64,
+   "w": "screen"
+  },
+  {
+   "t": 203.12,
+   "w": "after"
+  },
+  {
+   "t": 203.36,
+   "w": "reps"
+  },
+  {
+   "t": 203.68,
+   "w": "in"
+  },
+  {
+   "t": 203.84,
+   "w": "the"
+  },
+  {
+   "t": 203.92,
+   "w": "dark"
+  },
+  {
+   "t": 204.48,
+   "w": "Not"
+  },
+  {
+   "t": 204.64,
+   "w": "trying"
+  },
+  {
+   "t": 204.88,
+   "w": "to"
+  },
+  {
+   "t": 204.96,
+   "w": "be"
+  },
+  {
+   "t": 205.28,
+   "w": "perfect"
+  },
+  {
+   "t": 205.92,
+   "w": "trying"
+  },
+  {
+   "t": 206.16,
+   "w": "to"
+  },
+  {
+   "t": 206.24,
+   "w": "be"
+  },
+  {
+   "t": 206.48,
+   "w": "dangerous"
+  },
+  {
+   "t": 207.52,
+   "w": "Trying"
+  },
+  {
+   "t": 207.76,
+   "w": "to"
+  },
+  {
+   "t": 207.84,
+   "w": "walk"
+  },
+  {
+   "t": 208.32,
+   "w": "in"
+  },
+  {
+   "t": 208.72,
+   "w": "like"
+  },
+  {
+   "t": 209.04,
+   "w": "pressure"
+  },
+  {
+   "t": 209.44,
+   "w": "made"
+  },
+  {
+   "t": 209.76,
+   "w": "sense"
+  },
+  {
+   "t": 210.24,
+   "w": "Some"
+  },
+  {
+   "t": 210.48,
+   "w": "days"
+  },
+  {
+   "t": 210.88,
+   "w": "Im"
+  },
+  {
+   "t": 210.96,
+   "w": "strong"
+  },
+  {
+   "t": 211.68,
+   "w": "some"
+  },
+  {
+   "t": 211.76,
+   "w": "days"
+  },
+  {
+   "t": 212.16,
+   "w": "I"
+  },
+  {
+   "t": 212.4,
+   "w": "crawl"
+  },
+  {
+   "t": 212.72,
+   "w": "Some"
+  },
+  {
+   "t": 213.04,
+   "w": "days"
+  },
+  {
+   "t": 213.36,
+   "w": "just"
+  },
+  {
+   "t": 213.68,
+   "w": "showing"
+  },
+  {
+   "t": 214.08,
+   "w": "up"
+  },
+  {
+   "t": 214.32,
+   "w": "wins"
+  },
+  {
+   "t": 214.72,
+   "w": "it"
+  },
+  {
+   "t": 214.88,
+   "w": "all"
+  },
+  {
+   "t": 215.12,
+   "w": "But"
+  },
+  {
+   "t": 215.36,
+   "w": "skip"
+  },
+  {
+   "t": 216.0,
+   "w": "too"
+  },
+  {
+   "t": 216.32,
+   "w": "much"
+  },
+  {
+   "t": 216.72,
+   "w": "and"
+  },
+  {
+   "t": 216.88,
+   "w": "the"
+  },
+  {
+   "t": 217.04,
+   "w": "old"
+  },
+  {
+   "t": 217.28,
+   "w": "me"
+  },
+  {
+   "t": 217.6,
+   "w": "grows"
+  },
+  {
+   "t": 218.0,
+   "w": "So"
+  },
+  {
+   "t": 218.08,
+   "w": "I"
+  },
+  {
+   "t": 218.32,
+   "w": "cut"
+  },
+  {
+   "t": 218.72,
+   "w": "that"
+  },
+  {
+   "t": 218.96,
+   "w": "off"
+  },
+  {
+   "t": 219.28,
+   "w": "before"
+  },
+  {
+   "t": 219.76,
+   "w": "it"
+  },
+  {
+   "t": 219.92,
+   "w": "gets"
+  },
+  {
+   "t": 220.16,
+   "w": "close"
+  },
+  {
+   "t": 220.64,
+   "w": "I"
+  },
+  {
+   "t": 220.8,
+   "w": "know"
+  },
+  {
+   "t": 221.12,
+   "w": "that"
+  },
+  {
+   "t": 221.2,
+   "w": "voice"
+  },
+  {
+   "t": 222.0,
+   "w": "I"
+  },
+  {
+   "t": 222.16,
+   "w": "know"
+  },
+  {
+   "t": 222.4,
+   "w": "that"
+  },
+  {
+   "t": 222.64,
+   "w": "trap"
+  },
+  {
+   "t": 223.2,
+   "w": "Take"
+  },
+  {
+   "t": 223.52,
+   "w": "one"
+  },
+  {
+   "t": 223.84,
+   "w": "day"
+  },
+  {
+   "t": 224.56,
+   "w": "then"
+  },
+  {
+   "t": 224.72,
+   "w": "the"
+  },
+  {
+   "t": 224.8,
+   "w": "hunger"
+  },
+  {
+   "t": 225.12,
+   "w": "goes"
+  },
+  {
+   "t": 225.44,
+   "w": "flat"
+  },
+  {
+   "t": 225.84,
+   "w": "Nah"
+  },
+  {
+   "t": 226.4,
+   "w": "not"
+  },
+  {
+   "t": 226.64,
+   "w": "today"
+  },
+  {
+   "t": 227.36,
+   "w": "not"
+  },
+  {
+   "t": 227.68,
+   "w": "this"
+  },
+  {
+   "t": 227.84,
+   "w": "round"
+  },
+  {
+   "t": 228.16,
+   "w": "I"
+  },
+  {
+   "t": 228.48,
+   "w": "came"
+  },
+  {
+   "t": 228.88,
+   "w": "in"
+  },
+  {
+   "t": 229.12,
+   "w": "tired"
+  },
+  {
+   "t": 229.36,
+   "w": "I"
+  },
+  {
+   "t": 229.84,
+   "w": "leave"
+  },
+  {
+   "t": 230.16,
+   "w": "with"
+  },
+  {
+   "t": 230.32,
+   "w": "the"
+  },
+  {
+   "t": 230.4,
+   "w": "crown"
+  },
+  {
+   "t": 231.2,
+   "w": "I"
+  },
+  {
+   "t": 231.84,
+   "w": "keep"
+  },
+  {
+   "t": 232.16,
+   "w": "pushing"
+  },
+  {
+   "t": 232.48,
+   "w": "till"
+  },
+  {
+   "t": 232.64,
+   "w": "the"
+  },
+  {
+   "t": 232.88,
+   "w": "arms"
+  },
+  {
+   "t": 233.2,
+   "w": "lock"
+  },
+  {
+   "t": 233.6,
+   "w": "up"
+  },
+  {
+   "t": 233.84,
+   "w": "Till"
+  },
+  {
+   "t": 234.0,
+   "w": "the"
+  },
+  {
+   "t": 234.16,
+   "w": "lungs"
+  },
+  {
+   "t": 234.48,
+   "w": "burn"
+  },
+  {
+   "t": 234.8,
+   "w": "dry"
+  },
+  {
+   "t": 235.28,
+   "w": "and"
+  },
+  {
+   "t": 235.52,
+   "w": "the"
+  },
+  {
+   "t": 235.52,
+   "w": "heartbeat"
+  },
+  {
+   "t": 236.24,
+   "w": "jump"
+  },
+  {
+   "t": 236.56,
+   "w": "Till"
+  },
+  {
+   "t": 236.72,
+   "w": "the"
+  },
+  {
+   "t": 236.8,
+   "w": "sweat"
+  },
+  {
+   "t": 237.28,
+   "w": "drip"
+  },
+  {
+   "t": 237.6,
+   "w": "down"
+  },
+  {
+   "t": 238.24,
+   "w": "and"
+  },
+  {
+   "t": 238.24,
+   "w": "the"
+  },
+  {
+   "t": 238.24,
+   "w": "vision"
+  },
+  {
+   "t": 238.72,
+   "w": "blur"
+  },
+  {
+   "t": 239.36,
+   "w": "I"
+  },
+  {
+   "t": 239.68,
+   "w": "dont"
+  },
+  {
+   "t": 239.76,
+   "w": "care"
+  },
+  {
+   "t": 240.08,
+   "w": "how"
+  },
+  {
+   "t": 240.4,
+   "w": "bad"
+  },
+  {
+   "t": 240.8,
+   "w": "that"
+  },
+  {
+   "t": 241.12,
+   "w": "pressure"
+  },
+  {
+   "t": 241.92,
+   "w": "hurt"
+  },
+  {
+   "t": 242.24,
+   "w": "Another"
+  },
+  {
+   "t": 242.4,
+   "w": "set"
+  },
+  {
+   "t": 242.72,
+   "w": "another"
+  },
+  {
+   "t": 243.04,
+   "w": "plate"
+  },
+  {
+   "t": 243.36,
+   "w": "another"
+  },
+  {
+   "t": 243.84,
+   "w": "war"
+  },
+  {
+   "t": 244.72,
+   "w": "Another"
+  },
+  {
+   "t": 245.12,
+   "w": "voice"
+  },
+  {
+   "t": 245.6,
+   "w": "in"
+  },
+  {
+   "t": 245.76,
+   "w": "my"
+  },
+  {
+   "t": 246.0,
+   "w": "head"
+  },
+  {
+   "t": 246.24,
+   "w": "I"
+  },
+  {
+   "t": 246.56,
+   "w": "ignore"
+  },
+  {
+   "t": 247.12,
+   "w": "If"
+  },
+  {
+   "t": 247.76,
+   "w": "I"
+  },
+  {
+   "t": 248.0,
+   "w": "came"
+  },
+  {
+   "t": 248.32,
+   "w": "this"
+  },
+  {
+   "t": 248.56,
+   "w": "far"
+  },
+  {
+   "t": 248.88,
+   "w": "I"
+  },
+  {
+   "t": 249.04,
+   "w": "aint"
+  },
+  {
+   "t": 249.2,
+   "w": "slowing"
+  },
+  {
+   "t": 249.84,
+   "w": "down"
+  },
+  {
+   "t": 250.08,
+   "w": "I"
+  },
+  {
+   "t": 250.48,
+   "w": "dont"
+  },
+  {
+   "t": 250.8,
+   "w": "stop"
+  },
+  {
+   "t": 251.52,
+   "w": "I"
+  },
+  {
+   "t": 252.0,
+   "w": "dont"
+  },
+  {
+   "t": 252.0,
+   "w": "quit"
+  },
+  {
+   "t": 252.4,
+   "w": "right"
+  },
+  {
+   "t": 252.64,
+   "w": "now"
+  },
+  {
+   "t": 253.2,
+   "w": "No"
+  },
+  {
+   "t": 253.28,
+   "w": "speech"
+  },
+  {
+   "t": 254.08,
+   "w": "No"
+  },
+  {
+   "t": 254.64,
+   "w": "excuse"
+  },
+  {
+   "t": 255.76,
+   "w": "One"
+  },
+  {
+   "t": 256.16,
+   "w": "more"
+  },
+  {
+   "t": 258.08,
+   "w": "rep"
+  },
+  {
+   "t": 258.48,
+   "w": "Then"
+  },
+  {
+   "t": 258.72,
+   "w": "another"
+  }
+ ],
+ "lrc": "[00:00.00]Beat drop, shoes tied, hood up, door slam\n[00:12.56]Still half tired but I move like a grown man\n[00:15.20]No speech, no hype, no coach in my ear\n[00:17.28]Just that old weak voice that I came here to kill\n[00:20.16]I don’t feel ready, that’s the point of it\n[00:22.16]Same cold walk, same joints feeling stiff\n[00:25.04]Gym lights buzzing, bag on the floor\n[00:27.36]I’m not in the mood, so I need it more\n[00:29.92]First set ugly, second set clean\n[00:32.48]Third set looking like I might get mean\n[00:34.88]Hands on the bar, grip chalked white\n[00:37.12]I don’t trust motivation, I trust what I write\n[00:39.84]Log book open, numbers in ink\n[00:42.08]Either add one rep or adjust how I think\n[00:44.40]I’m not here flexing, I’m not here cute\n[00:46.88]I came to tell my softer side, “shut up and move”\n[00:49.92]I keep pushing till the arms lock up\n[00:51.92]Till the lungs burn dry and the heartbeat jump\n[00:54.40]Till the sweat drip down and the vision blur\n[00:56.56]I don’t care how bad that pressure hurt\n[00:59.20]Another set, another plate, another war\n[01:01.68]Another voice in my head I ignore\n[01:04.32]If I came this far, I ain’t slowing down\n[01:06.64]I don’t stop, I don’t quit right now\n[01:09.52]Bench feel heavy, good, let it be\n[01:11.76]That’s the same weight standing between me and me\n[01:14.24]Two plates talking like, “you sure you him?”\n[01:16.80]I unrack slow with a shark-fin grin\n[01:19.28]Elbows tucked, chest tight, breath held\n[01:22.00]World get quiet when the barbell fell\n[01:24.48]Touch and press, no panic, no bounce\n[01:26.72]That’s one more reason I don’t count myself out\n[01:29.36]Squats on deck, legs already mad\n[01:31.76]But I don’t negotiate with habits I had\n[01:34.40]Deep breath, brace, spine locked in\n[01:36.88]Pain in the hole but I drive through it\n[01:38.72]Deadlift day got truth in the steel\n[01:41.36]You can’t fake heart when the knurling feel real\n[01:44.32]Bar don’t care what excuse you brought\n[01:46.40]It only moves when your whole soul talks\n[01:48.64]I keep pushing till the arms lock up\n[01:51.52]Till the lungs burn dry and the heartbeat jump\n[01:54.00]Till the sweat drip down and the vision blur\n[01:56.48]I don’t care how bad that pressure hurt\n[01:58.88]Another set, another plate, another war\n[02:01.36]Another voice in my head I ignore\n[02:04.00]If I came this far, I ain’t slowing down\n[02:06.40]I don’t stop, I don’t quit right now\n[02:09.28]Whey in the shaker, meals in the bag\n[02:11.76]Macros boring, but the mirror don’t cap\n[02:14.32]Casein late night, water all day\n[02:16.64]Stretch when I’m stiff so I don’t break\n[02:19.20]Skull crushers burn, planks make me shake\n[02:21.44]Crunches got fire running under my waist\n[02:24.32]Push-ups after, just to prove I’m sick\n[02:26.48]Not sick like ill, sick like disciplined\n[02:29.20]This ain’t about abs, this ain’t about arms\n[02:31.68]This about keeping one promise through storms\n[02:34.24]This about becoming the proof I need\n[02:36.56]When my own damn mind start testing me\n[02:39.04]No perfect week, no perfect mood\n[02:41.44]Just imperfect days where I still follow through\n[02:43.92]I don’t need applause, I don’t need a crown\n[02:46.48]I need one more rep when I wanna sit down\n[02:49.20]I keep pushing till the arms lock up\n[02:51.76]Till the lungs burn dry and the heartbeat jump\n[02:54.24]Till the sweat drip down and the vision blur\n[02:56.96]I don’t care how bad that pressure hurt\n[02:59.28]Another set, another plate, another war\n[03:01.84]Another voice in my head I ignore\n[03:04.48]If I came this far, I ain’t slowing down\n[03:06.96]I don’t stop, I don’t quit right now\n[03:09.44]I picture summer, but I don’t daydream\n[03:12.00]I put that beach body under a machine\n[03:14.56]I put that cocktail far down the road\n[03:17.12]I put today’s work where excuses go\n[03:19.44]Money right, mind right, body getting sharp\n[03:22.08]Code on the screen after reps in the dark\n[03:24.48]Not trying to be perfect, trying to be dangerous\n[03:27.52]Trying to walk in like pressure made sense\n[03:30.24]Some days I’m strong, some days I crawl\n[03:32.72]Some days just showing up wins it all\n[03:35.12]But skip too much and the old me grows\n[03:38.00]So I cut that off before it gets close\n[03:40.64]I know that voice, I know that trap\n[03:43.20]“Take one day,” then the hunger goes flat\n[03:45.84]Nah, not today, not this round\n[03:48.16]I came in tired, I leave with the crown\n[03:51.20]I keep pushing till the arms lock up\n[03:53.84]Till the lungs burn dry and the heartbeat jump\n[03:56.56]Till the sweat drip down and the vision blur\n[03:59.36]I don’t care how bad that pressure hurt\n[04:02.24]Another set, another plate, another war\n[04:04.72]Another voice in my head I ignore\n[04:07.12]If I came this far, I ain’t slowing down\n[04:10.08]I don’t stop, I don’t quit right now\n[04:13.20]No speech.\n[04:14.08]No excuse.\n[04:15.76]One more rep.\n[04:18.48]Then another.\n"
+}

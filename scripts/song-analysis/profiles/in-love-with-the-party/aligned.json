@@ -1,0 +1,984 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 242,
+  "clumps": [],
+  "clumpedWords": 0,
+  "clumpRatio": 0.0,
+  "span": 105.3,
+  "duration": 121.8,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Were"
+  },
+  {
+   "t": 0.08,
+   "w": "in"
+  },
+  {
+   "t": 0.48,
+   "w": "love"
+  },
+  {
+   "t": 1.12,
+   "w": "with"
+  },
+  {
+   "t": 1.36,
+   "w": "the"
+  },
+  {
+   "t": 1.44,
+   "w": "party"
+  },
+  {
+   "t": 2.56,
+   "w": "Party"
+  },
+  {
+   "t": 3.04,
+   "w": "after"
+  },
+  {
+   "t": 3.36,
+   "w": "midnight"
+  },
+  {
+   "t": 4.16,
+   "w": "Smooth"
+  },
+  {
+   "t": 4.8,
+   "w": "like"
+  },
+  {
+   "t": 4.96,
+   "w": "the"
+  },
+  {
+   "t": 5.2,
+   "w": "chords"
+  },
+  {
+   "t": 5.76,
+   "w": "And"
+  },
+  {
+   "t": 5.92,
+   "w": "the"
+  },
+  {
+   "t": 6.64,
+   "w": "low"
+  },
+  {
+   "t": 7.44,
+   "w": "lights"
+  },
+  {
+   "t": 8.0,
+   "w": "808"
+  },
+  {
+   "t": 8.88,
+   "w": "heartbeat"
+  },
+  {
+   "t": 9.76,
+   "w": "Keeping"
+  },
+  {
+   "t": 10.24,
+   "w": "our"
+  },
+  {
+   "t": 10.4,
+   "w": "souls"
+  },
+  {
+   "t": 11.2,
+   "w": "right"
+  },
+  {
+   "t": 11.84,
+   "w": "We"
+  },
+  {
+   "t": 11.84,
+   "w": "dont"
+  },
+  {
+   "t": 12.08,
+   "w": "wanna"
+  },
+  {
+   "t": 12.56,
+   "w": "leave"
+  },
+  {
+   "t": 12.96,
+   "w": "We"
+  },
+  {
+   "t": 13.2,
+   "w": "just"
+  },
+  {
+   "t": 13.44,
+   "w": "wanna"
+  },
+  {
+   "t": 13.92,
+   "w": "live"
+  },
+  {
+   "t": 14.16,
+   "w": "the"
+  },
+  {
+   "t": 14.24,
+   "w": "nightlife"
+  },
+  {
+   "t": 15.68,
+   "w": "Were"
+  },
+  {
+   "t": 15.76,
+   "w": "in"
+  },
+  {
+   "t": 16.48,
+   "w": "love"
+  },
+  {
+   "t": 17.12,
+   "w": "with"
+  },
+  {
+   "t": 17.76,
+   "w": "the"
+  },
+  {
+   "t": 17.92,
+   "w": "party"
+  },
+  {
+   "t": 18.64,
+   "w": "Bodies"
+  },
+  {
+   "t": 19.36,
+   "w": "in"
+  },
+  {
+   "t": 19.52,
+   "w": "the"
+  },
+  {
+   "t": 19.6,
+   "w": "same"
+  },
+  {
+   "t": 20.32,
+   "w": "wave"
+  },
+  {
+   "t": 20.64,
+   "w": "Calm"
+  },
+  {
+   "t": 21.12,
+   "w": "but"
+  },
+  {
+   "t": 21.36,
+   "w": "the"
+  },
+  {
+   "t": 21.44,
+   "w": "groove"
+  },
+  {
+   "t": 21.92,
+   "w": "Still"
+  },
+  {
+   "t": 22.32,
+   "w": "feels"
+  },
+  {
+   "t": 22.96,
+   "w": "like"
+  },
+  {
+   "t": 23.36,
+   "w": "a"
+  },
+  {
+   "t": 23.44,
+   "w": "heatwave"
+  },
+  {
+   "t": 24.8,
+   "w": "Every"
+  },
+  {
+   "t": 24.8,
+   "w": "little"
+  },
+  {
+   "t": 24.8,
+   "w": "moment"
+  },
+  {
+   "t": 24.8,
+   "w": "That"
+  },
+  {
+   "t": 25.04,
+   "w": "the"
+  },
+  {
+   "t": 25.12,
+   "w": "DJ"
+  },
+  {
+   "t": 25.84,
+   "w": "plays"
+  },
+  {
+   "t": 26.8,
+   "w": "Got"
+  },
+  {
+   "t": 27.28,
+   "w": "us"
+  },
+  {
+   "t": 27.44,
+   "w": "falling"
+  },
+  {
+   "t": 27.92,
+   "w": "deeper"
+  },
+  {
+   "t": 28.24,
+   "w": "In"
+  },
+  {
+   "t": 28.64,
+   "w": "the"
+  },
+  {
+   "t": 28.88,
+   "w": "latenight"
+  },
+  {
+   "t": 29.68,
+   "w": "haze"
+  },
+  {
+   "t": 30.64,
+   "w": "Drums"
+  },
+  {
+   "t": 31.04,
+   "w": "fade"
+  },
+  {
+   "t": 31.6,
+   "w": "out"
+  },
+  {
+   "t": 32.08,
+   "w": "But"
+  },
+  {
+   "t": 32.24,
+   "w": "we"
+  },
+  {
+   "t": 32.32,
+   "w": "still"
+  },
+  {
+   "t": 32.96,
+   "w": "keep"
+  },
+  {
+   "t": 33.28,
+   "w": "swaying"
+  },
+  {
+   "t": 34.32,
+   "w": "Low"
+  },
+  {
+   "t": 34.72,
+   "w": "lights"
+  },
+  {
+   "t": 35.2,
+   "w": "glow"
+  },
+  {
+   "t": 35.52,
+   "w": "While"
+  },
+  {
+   "t": 35.68,
+   "w": "the"
+  },
+  {
+   "t": 35.84,
+   "w": "guitars"
+  },
+  {
+   "t": 36.56,
+   "w": "still"
+  },
+  {
+   "t": 36.88,
+   "w": "playing"
+  },
+  {
+   "t": 37.92,
+   "w": "Soft"
+  },
+  {
+   "t": 38.4,
+   "w": "lead"
+  },
+  {
+   "t": 38.88,
+   "w": "hums"
+  },
+  {
+   "t": 39.36,
+   "w": "Like"
+  },
+  {
+   "t": 39.6,
+   "w": "a"
+  },
+  {
+   "t": 39.6,
+   "w": "secret"
+  },
+  {
+   "t": 40.24,
+   "w": "were"
+  },
+  {
+   "t": 40.56,
+   "w": "saving"
+  },
+  {
+   "t": 41.6,
+   "w": "Heartbeats"
+  },
+  {
+   "t": 42.4,
+   "w": "sync"
+  },
+  {
+   "t": 42.96,
+   "w": "With"
+  },
+  {
+   "t": 43.2,
+   "w": "the"
+  },
+  {
+   "t": 43.28,
+   "w": "night"
+  },
+  {
+   "t": 43.92,
+   "w": "were"
+  },
+  {
+   "t": 44.32,
+   "w": "craving"
+  },
+  {
+   "t": 45.28,
+   "w": "When"
+  },
+  {
+   "t": 45.44,
+   "w": "the"
+  },
+  {
+   "t": 45.44,
+   "w": "snare"
+  },
+  {
+   "t": 46.16,
+   "w": "cuts"
+  },
+  {
+   "t": 46.24,
+   "w": "I"
+  },
+  {
+   "t": 46.8,
+   "w": "can"
+  },
+  {
+   "t": 47.68,
+   "w": "hear"
+  },
+  {
+   "t": 47.68,
+   "w": "your"
+  },
+  {
+   "t": 48.0,
+   "w": "whisper"
+  },
+  {
+   "t": 48.8,
+   "w": "Promise"
+  },
+  {
+   "t": 49.36,
+   "w": "that"
+  },
+  {
+   "t": 49.6,
+   "w": "youll"
+  },
+  {
+   "t": 49.6,
+   "w": "stay"
+  },
+  {
+   "t": 50.24,
+   "w": "Till"
+  },
+  {
+   "t": 50.48,
+   "w": "the"
+  },
+  {
+   "t": 50.88,
+   "w": "dawn"
+  },
+  {
+   "t": 51.28,
+   "w": "gets"
+  },
+  {
+   "t": 51.52,
+   "w": "crisper"
+  },
+  {
+   "t": 52.32,
+   "w": "Even"
+  },
+  {
+   "t": 52.96,
+   "w": "when"
+  },
+  {
+   "t": 53.2,
+   "w": "its"
+  },
+  {
+   "t": 53.36,
+   "w": "quiet"
+  },
+  {
+   "t": 53.92,
+   "w": "We"
+  },
+  {
+   "t": 54.16,
+   "w": "still"
+  },
+  {
+   "t": 54.8,
+   "w": "feel"
+  },
+  {
+   "t": 55.2,
+   "w": "lifted"
+  },
+  {
+   "t": 55.92,
+   "w": "Party"
+  },
+  {
+   "t": 56.64,
+   "w": "in"
+  },
+  {
+   "t": 56.8,
+   "w": "our"
+  },
+  {
+   "t": 56.96,
+   "w": "souls"
+  },
+  {
+   "t": 57.52,
+   "w": "Thats"
+  },
+  {
+   "t": 57.76,
+   "w": "a"
+  },
+  {
+   "t": 58.08,
+   "w": "lifelong"
+  },
+  {
+   "t": 58.8,
+   "w": "ticket"
+  },
+  {
+   "t": 60.0,
+   "w": "Were"
+  },
+  {
+   "t": 60.0,
+   "w": "in"
+  },
+  {
+   "t": 60.0,
+   "w": "love"
+  },
+  {
+   "t": 61.12,
+   "w": "with"
+  },
+  {
+   "t": 61.36,
+   "w": "the"
+  },
+  {
+   "t": 61.52,
+   "w": "party"
+  },
+  {
+   "t": 62.32,
+   "w": "Party"
+  },
+  {
+   "t": 63.04,
+   "w": "after"
+  },
+  {
+   "t": 63.44,
+   "w": "midnight"
+  },
+  {
+   "t": 64.16,
+   "w": "Smooth"
+  },
+  {
+   "t": 64.8,
+   "w": "like"
+  },
+  {
+   "t": 65.04,
+   "w": "the"
+  },
+  {
+   "t": 65.2,
+   "w": "chords"
+  },
+  {
+   "t": 65.76,
+   "w": "And"
+  },
+  {
+   "t": 65.92,
+   "w": "the"
+  },
+  {
+   "t": 66.56,
+   "w": "low"
+  },
+  {
+   "t": 66.88,
+   "w": "lights"
+  },
+  {
+   "t": 68.0,
+   "w": "808"
+  },
+  {
+   "t": 68.88,
+   "w": "heartbeat"
+  },
+  {
+   "t": 69.76,
+   "w": "Keeping"
+  },
+  {
+   "t": 70.08,
+   "w": "our"
+  },
+  {
+   "t": 70.4,
+   "w": "souls"
+  },
+  {
+   "t": 71.2,
+   "w": "right"
+  },
+  {
+   "t": 71.6,
+   "w": "We"
+  },
+  {
+   "t": 71.84,
+   "w": "dont"
+  },
+  {
+   "t": 72.08,
+   "w": "wanna"
+  },
+  {
+   "t": 72.56,
+   "w": "leave"
+  },
+  {
+   "t": 72.96,
+   "w": "We"
+  },
+  {
+   "t": 73.2,
+   "w": "just"
+  },
+  {
+   "t": 73.44,
+   "w": "wanna"
+  },
+  {
+   "t": 73.92,
+   "w": "live"
+  },
+  {
+   "t": 74.08,
+   "w": "the"
+  },
+  {
+   "t": 74.24,
+   "w": "nightlife"
+  },
+  {
+   "t": 75.68,
+   "w": "Were"
+  },
+  {
+   "t": 76.08,
+   "w": "in"
+  },
+  {
+   "t": 76.08,
+   "w": "love"
+  },
+  {
+   "t": 77.6,
+   "w": "with"
+  },
+  {
+   "t": 77.76,
+   "w": "the"
+  },
+  {
+   "t": 77.92,
+   "w": "party"
+  },
+  {
+   "t": 78.64,
+   "w": "Bodies"
+  },
+  {
+   "t": 79.36,
+   "w": "in"
+  },
+  {
+   "t": 79.52,
+   "w": "the"
+  },
+  {
+   "t": 79.6,
+   "w": "same"
+  },
+  {
+   "t": 80.32,
+   "w": "wave"
+  },
+  {
+   "t": 80.64,
+   "w": "Calm"
+  },
+  {
+   "t": 81.2,
+   "w": "but"
+  },
+  {
+   "t": 81.36,
+   "w": "the"
+  },
+  {
+   "t": 81.6,
+   "w": "groove"
+  },
+  {
+   "t": 81.92,
+   "w": "Still"
+  },
+  {
+   "t": 82.48,
+   "w": "feels"
+  },
+  {
+   "t": 83.04,
+   "w": "like"
+  },
+  {
+   "t": 83.2,
+   "w": "a"
+  },
+  {
+   "t": 83.36,
+   "w": "heatwave"
+  },
+  {
+   "t": 83.68,
+   "w": "Every"
+  },
+  {
+   "t": 83.68,
+   "w": "little"
+  },
+  {
+   "t": 84.16,
+   "w": "moment"
+  },
+  {
+   "t": 84.8,
+   "w": "That"
+  },
+  {
+   "t": 85.2,
+   "w": "the"
+  },
+  {
+   "t": 85.2,
+   "w": "DJ"
+  },
+  {
+   "t": 85.84,
+   "w": "plays"
+  },
+  {
+   "t": 86.8,
+   "w": "Got"
+  },
+  {
+   "t": 87.36,
+   "w": "us"
+  },
+  {
+   "t": 87.44,
+   "w": "falling"
+  },
+  {
+   "t": 87.92,
+   "w": "deeper"
+  },
+  {
+   "t": 88.24,
+   "w": "In"
+  },
+  {
+   "t": 88.64,
+   "w": "the"
+  },
+  {
+   "t": 89.36,
+   "w": "latenight"
+  },
+  {
+   "t": 89.92,
+   "w": "haze"
+  },
+  {
+   "t": 90.72,
+   "w": "Drums"
+  },
+  {
+   "t": 91.04,
+   "w": "come"
+  },
+  {
+   "t": 91.6,
+   "w": "back"
+  },
+  {
+   "t": 91.92,
+   "w": "for"
+  },
+  {
+   "t": 92.32,
+   "w": "a"
+  },
+  {
+   "t": 92.4,
+   "w": "second"
+  },
+  {
+   "t": 92.96,
+   "w": "Then"
+  },
+  {
+   "t": 93.2,
+   "w": "they"
+  },
+  {
+   "t": 93.28,
+   "w": "slide"
+  },
+  {
+   "t": 93.68,
+   "w": "away"
+  },
+  {
+   "t": 94.32,
+   "w": "Vinyl"
+  },
+  {
+   "t": 94.72,
+   "w": "crackle"
+  },
+  {
+   "t": 95.28,
+   "w": "holds"
+  },
+  {
+   "t": 95.44,
+   "w": "the"
+  },
+  {
+   "t": 95.52,
+   "w": "memory"
+  },
+  {
+   "t": 96.64,
+   "w": "Of"
+  },
+  {
+   "t": 96.88,
+   "w": "this"
+  },
+  {
+   "t": 96.96,
+   "w": "perfect"
+  },
+  {
+   "t": 97.52,
+   "w": "day"
+  },
+  {
+   "t": 97.92,
+   "w": "Last"
+  },
+  {
+   "t": 98.4,
+   "w": "chord"
+  },
+  {
+   "t": 98.96,
+   "w": "rings"
+  },
+  {
+   "t": 99.2,
+   "w": "While"
+  },
+  {
+   "t": 99.6,
+   "w": "we"
+  },
+  {
+   "t": 99.84,
+   "w": "walk"
+  },
+  {
+   "t": 100.16,
+   "w": "in"
+  },
+  {
+   "t": 100.48,
+   "w": "the"
+  },
+  {
+   "t": 100.56,
+   "w": "city"
+  },
+  {
+   "t": 101.12,
+   "w": "light"
+  },
+  {
+   "t": 101.36,
+   "w": "Still"
+  },
+  {
+   "t": 101.44,
+   "w": "in"
+  },
+  {
+   "t": 101.6,
+   "w": "love"
+  },
+  {
+   "t": 101.92,
+   "w": "with"
+  },
+  {
+   "t": 102.32,
+   "w": "the"
+  },
+  {
+   "t": 102.48,
+   "w": "party"
+  },
+  {
+   "t": 102.96,
+   "w": "Carry"
+  },
+  {
+   "t": 103.44,
+   "w": "it"
+  },
+  {
+   "t": 103.44,
+   "w": "into"
+  },
+  {
+   "t": 103.84,
+   "w": "the"
+  },
+  {
+   "t": 104.24,
+   "w": "night"
+  },
+  {
+   "t": 104.8,
+   "w": "Yeah"
+  }
+ ],
+ "lrc": "[00:00.00]We’re in love with the party\n[00:02.56]Party after midnight\n[00:04.16]Smooth like the chords\n[00:05.76]And the low lights\n[00:08.00]808 heartbeat\n[00:09.76]Keeping our souls right\n[00:11.84]We don’t wanna leave\n[00:12.96]We just wanna live the nightlife\n[00:15.68]We’re in love with the party\n[00:18.64]Bodies in the same wave\n[00:20.64]Calm, but the groove\n[00:21.92]Still feels like a heatwave\n[00:24.80]Every little moment\n[00:24.80]That the DJ plays\n[00:26.80]Got us falling deeper\n[00:28.24]In the late-night haze\n[00:30.64]Drums fade out\n[00:32.08]But we still keep swaying\n[00:34.32]Low lights glow\n[00:35.52]While the guitar’s still playing\n[00:37.92]Soft lead hums\n[00:39.36]Like a secret we’re saving\n[00:41.60]Heartbeats sync\n[00:42.96]With the night we’re craving\n[00:45.28]When the snare cuts\n[00:46.24]I can hear your whisper\n[00:48.80]Promise that you’ll stay\n[00:50.24]Till the dawn gets crisper\n[00:52.32]Even when it’s quiet\n[00:53.92]We still feel lifted\n[00:55.92]Party in our souls\n[00:57.52]That’s a lifelong ticket\n[01:00.00]We’re in love with the party\n[01:02.32]Party after midnight\n[01:04.16]Smooth like the chords\n[01:05.76]And the low lights\n[01:08.00]808 heartbeat\n[01:09.76]Keeping our souls right\n[01:11.60]We don’t wanna leave\n[01:12.96]We just wanna live the nightlife\n[01:15.68]We’re in love with the party\n[01:18.64]Bodies in the same wave\n[01:20.64]Calm, but the groove\n[01:21.92]Still feels like a heatwave\n[01:23.68]Every little moment\n[01:24.80]That the DJ plays\n[01:26.80]Got us falling deeper\n[01:28.24]In the late-night haze\n[01:30.72]Drums come back for a second\n[01:32.96]Then they slide away\n[01:34.32]Vinyl crackle holds the memory\n[01:36.64]Of this perfect day\n[01:37.92]Last chord rings\n[01:39.20]While we walk in the city light\n[01:41.36]Still in love with the party\n[01:42.96]Carry it into the night\n[01:44.80]Yeah\n"
+}

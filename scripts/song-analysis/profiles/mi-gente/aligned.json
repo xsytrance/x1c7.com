@@ -1,0 +1,1985 @@
+{
+ "v": 1,
+ "language": "Spanish",
+ "qa": {
+  "words": 491,
+  "clumps": [
+   {
+    "t": 13.12,
+    "n": 9
+   }
+  ],
+  "clumpedWords": 9,
+  "clumpRatio": 0.018,
+  "span": 180.8,
+  "duration": 182.5,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Yeah"
+  },
+  {
+   "t": 2.24,
+   "w": "Mi"
+  },
+  {
+   "t": 2.32,
+   "w": "gente"
+  },
+  {
+   "t": 4.96,
+   "w": "Desde"
+  },
+  {
+   "t": 5.12,
+   "w": "el"
+  },
+  {
+   "t": 5.28,
+   "w": "bloque"
+  },
+  {
+   "t": 5.68,
+   "w": "hasta"
+  },
+  {
+   "t": 5.92,
+   "w": "la"
+  },
+  {
+   "t": 6.0,
+   "w": "tarima"
+  },
+  {
+   "t": 6.8,
+   "w": "Ya"
+  },
+  {
+   "t": 7.04,
+   "w": "tú"
+  },
+  {
+   "t": 7.2,
+   "w": "sabes"
+  },
+  {
+   "t": 8.08,
+   "w": "Wuh"
+  },
+  {
+   "t": 8.08,
+   "w": "Dímelo"
+  },
+  {
+   "t": 13.12,
+   "w": "Mi"
+  },
+  {
+   "t": 13.12,
+   "w": "gente"
+  },
+  {
+   "t": 13.12,
+   "w": "Mi"
+  },
+  {
+   "t": 13.12,
+   "w": "gente"
+  },
+  {
+   "t": 13.12,
+   "w": "mi"
+  },
+  {
+   "t": 13.12,
+   "w": "gente"
+  },
+  {
+   "t": 13.12,
+   "w": "mi"
+  },
+  {
+   "t": 13.12,
+   "w": "gente"
+  },
+  {
+   "t": 13.12,
+   "w": "mi"
+  },
+  {
+   "t": 14.72,
+   "w": "gente"
+  },
+  {
+   "t": 14.96,
+   "w": "To"
+  },
+  {
+   "t": 15.2,
+   "w": "el"
+  },
+  {
+   "t": 15.28,
+   "w": "mundo"
+  },
+  {
+   "t": 15.6,
+   "w": "conmigo"
+  },
+  {
+   "t": 16.16,
+   "w": "se"
+  },
+  {
+   "t": 16.48,
+   "w": "siente"
+  },
+  {
+   "t": 16.8,
+   "w": "se"
+  },
+  {
+   "t": 16.96,
+   "w": "siente"
+  },
+  {
+   "t": 17.44,
+   "w": "Si"
+  },
+  {
+   "t": 17.68,
+   "w": "llego"
+  },
+  {
+   "t": 17.92,
+   "w": "con"
+  },
+  {
+   "t": 18.0,
+   "w": "los"
+  },
+  {
+   "t": 18.24,
+   "w": "míos"
+  },
+  {
+   "t": 18.4,
+   "w": "la"
+  },
+  {
+   "t": 18.8,
+   "w": "calle"
+  },
+  {
+   "t": 19.2,
+   "w": "se"
+  },
+  {
+   "t": 19.44,
+   "w": "enciende"
+  },
+  {
+   "t": 19.92,
+   "w": "Mi"
+  },
+  {
+   "t": 20.0,
+   "w": "gente"
+  },
+  {
+   "t": 20.48,
+   "w": "mi"
+  },
+  {
+   "t": 20.96,
+   "w": "gente"
+  },
+  {
+   "t": 21.12,
+   "w": "mi"
+  },
+  {
+   "t": 21.28,
+   "w": "gente"
+  },
+  {
+   "t": 21.68,
+   "w": "mi"
+  },
+  {
+   "t": 22.72,
+   "w": "gente"
+  },
+  {
+   "t": 22.72,
+   "w": "Mi"
+  },
+  {
+   "t": 22.72,
+   "w": "gente"
+  },
+  {
+   "t": 22.96,
+   "w": "mi"
+  },
+  {
+   "t": 23.04,
+   "w": "gente"
+  },
+  {
+   "t": 23.52,
+   "w": "mi"
+  },
+  {
+   "t": 24.64,
+   "w": "gente"
+  },
+  {
+   "t": 24.8,
+   "w": "mi"
+  },
+  {
+   "t": 24.8,
+   "w": "gente"
+  },
+  {
+   "t": 24.8,
+   "w": "No"
+  },
+  {
+   "t": 24.96,
+   "w": "cambio"
+  },
+  {
+   "t": 25.44,
+   "w": "a"
+  },
+  {
+   "t": 25.44,
+   "w": "mi"
+  },
+  {
+   "t": 25.6,
+   "w": "coro"
+  },
+  {
+   "t": 26.0,
+   "w": "mi"
+  },
+  {
+   "t": 26.24,
+   "w": "sangre"
+  },
+  {
+   "t": 26.64,
+   "w": "me"
+  },
+  {
+   "t": 26.88,
+   "w": "entiende"
+  },
+  {
+   "t": 27.28,
+   "w": "Del"
+  },
+  {
+   "t": 27.44,
+   "w": "barrio"
+  },
+  {
+   "t": 27.84,
+   "w": "pal"
+  },
+  {
+   "t": 28.08,
+   "w": "mundo"
+  },
+  {
+   "t": 28.48,
+   "w": "la"
+  },
+  {
+   "t": 28.72,
+   "w": "vibra"
+  },
+  {
+   "t": 29.04,
+   "w": "se"
+  },
+  {
+   "t": 29.28,
+   "w": "extiende"
+  },
+  {
+   "t": 29.76,
+   "w": "Mi"
+  },
+  {
+   "t": 29.92,
+   "w": "gente"
+  },
+  {
+   "t": 30.32,
+   "w": "mi"
+  },
+  {
+   "t": 30.56,
+   "w": "gente"
+  },
+  {
+   "t": 30.96,
+   "w": "mi"
+  },
+  {
+   "t": 31.12,
+   "w": "gente"
+  },
+  {
+   "t": 31.6,
+   "w": "mi"
+  },
+  {
+   "t": 31.6,
+   "w": "gente"
+  },
+  {
+   "t": 31.6,
+   "w": "Llegué"
+  },
+  {
+   "t": 32.0,
+   "w": "con"
+  },
+  {
+   "t": 32.08,
+   "w": "la"
+  },
+  {
+   "t": 32.32,
+   "w": "ganga"
+  },
+  {
+   "t": 32.72,
+   "w": "pero"
+  },
+  {
+   "t": 32.96,
+   "w": "no"
+  },
+  {
+   "t": 33.6,
+   "w": "es"
+  },
+  {
+   "t": 33.76,
+   "w": "pa"
+  },
+  {
+   "t": 34.24,
+   "w": "aparentar"
+  },
+  {
+   "t": 34.32,
+   "w": "Esto"
+  },
+  {
+   "t": 34.56,
+   "w": "es"
+  },
+  {
+   "t": 34.64,
+   "w": "familia"
+  },
+  {
+   "t": 35.12,
+   "w": "no"
+  },
+  {
+   "t": 35.28,
+   "w": "se"
+  },
+  {
+   "t": 35.44,
+   "w": "compra"
+  },
+  {
+   "t": 35.76,
+   "w": "con"
+  },
+  {
+   "t": 36.0,
+   "w": "metal"
+  },
+  {
+   "t": 36.8,
+   "w": "Desde"
+  },
+  {
+   "t": 36.96,
+   "w": "la"
+  },
+  {
+   "t": 37.28,
+   "w": "esquina"
+  },
+  {
+   "t": 37.6,
+   "w": "donde"
+  },
+  {
+   "t": 37.84,
+   "w": "aprendí"
+  },
+  {
+   "t": 38.16,
+   "w": "a"
+  },
+  {
+   "t": 38.24,
+   "w": "caminar"
+  },
+  {
+   "t": 38.88,
+   "w": "Hasta"
+  },
+  {
+   "t": 39.44,
+   "w": "los"
+  },
+  {
+   "t": 39.6,
+   "w": "sueños"
+  },
+  {
+   "t": 39.92,
+   "w": "que"
+  },
+  {
+   "t": 40.08,
+   "w": "no"
+  },
+  {
+   "t": 40.24,
+   "w": "nos"
+  },
+  {
+   "t": 40.4,
+   "w": "pudieron"
+  },
+  {
+   "t": 40.88,
+   "w": "quitar"
+  },
+  {
+   "t": 41.44,
+   "w": "Tengo"
+  },
+  {
+   "t": 41.76,
+   "w": "dominicanos"
+  },
+  {
+   "t": 42.64,
+   "w": "boricuas"
+  },
+  {
+   "t": 43.36,
+   "w": "en"
+  },
+  {
+   "t": 43.68,
+   "w": "la"
+  },
+  {
+   "t": 44.0,
+   "w": "fila"
+  },
+  {
+   "t": 44.4,
+   "w": "Mexicanos"
+  },
+  {
+   "t": 44.48,
+   "w": "gritando"
+  },
+  {
+   "t": 45.12,
+   "w": "cubanos"
+  },
+  {
+   "t": 45.6,
+   "w": "con"
+  },
+  {
+   "t": 45.76,
+   "w": "la"
+  },
+  {
+   "t": 45.92,
+   "w": "pila"
+  },
+  {
+   "t": 46.4,
+   "w": "Colombianos"
+  },
+  {
+   "t": 47.12,
+   "w": "activos"
+  },
+  {
+   "t": 47.58,
+   "w": "to"
+  },
+  {
+   "t": 47.71,
+   "w": "el"
+  },
+  {
+   "t": 47.84,
+   "w": "combo"
+  },
+  {
+   "t": 48.24,
+   "w": "vacila"
+  },
+  {
+   "t": 48.8,
+   "w": "Si"
+  },
+  {
+   "t": 48.96,
+   "w": "uno"
+  },
+  {
+   "t": 49.28,
+   "w": "se"
+  },
+  {
+   "t": 49.44,
+   "w": "levanta"
+  },
+  {
+   "t": 49.92,
+   "w": "la"
+  },
+  {
+   "t": 50.08,
+   "w": "mesa"
+  },
+  {
+   "t": 50.32,
+   "w": "se"
+  },
+  {
+   "t": 50.48,
+   "w": "multiplica"
+  },
+  {
+   "t": 51.12,
+   "w": "No"
+  },
+  {
+   "t": 51.28,
+   "w": "me"
+  },
+  {
+   "t": 51.44,
+   "w": "hables"
+  },
+  {
+   "t": 51.68,
+   "w": "de"
+  },
+  {
+   "t": 51.84,
+   "w": "lealtad"
+  },
+  {
+   "t": 52.32,
+   "w": "si"
+  },
+  {
+   "t": 52.48,
+   "w": "no"
+  },
+  {
+   "t": 52.64,
+   "w": "estabas"
+  },
+  {
+   "t": 52.96,
+   "w": "en"
+  },
+  {
+   "t": 53.12,
+   "w": "el"
+  },
+  {
+   "t": 53.2,
+   "w": "frío"
+  },
+  {
+   "t": 53.76,
+   "w": "Cuando"
+  },
+  {
+   "t": 54.0,
+   "w": "faltaba"
+  },
+  {
+   "t": 54.56,
+   "w": "todo"
+  },
+  {
+   "t": 54.88,
+   "w": "y"
+  },
+  {
+   "t": 54.96,
+   "w": "sobraban"
+  },
+  {
+   "t": 55.52,
+   "w": "los"
+  },
+  {
+   "t": 55.76,
+   "w": "líos"
+  },
+  {
+   "t": 56.48,
+   "w": "Ahora"
+  },
+  {
+   "t": 57.04,
+   "w": "ven"
+  },
+  {
+   "t": 57.36,
+   "w": "la"
+  },
+  {
+   "t": 57.36,
+   "w": "luz"
+  },
+  {
+   "t": 57.36,
+   "w": "y"
+  },
+  {
+   "t": 57.44,
+   "w": "quieren"
+  },
+  {
+   "t": 57.76,
+   "w": "ser"
+  },
+  {
+   "t": 57.92,
+   "w": "testigos"
+  },
+  {
+   "t": 58.56,
+   "w": "Pero"
+  },
+  {
+   "t": 59.12,
+   "w": "yo"
+  },
+  {
+   "t": 59.44,
+   "w": "sé"
+  },
+  {
+   "t": 59.76,
+   "w": "quiénes"
+  },
+  {
+   "t": 60.08,
+   "w": "fueron"
+  },
+  {
+   "t": 60.4,
+   "w": "de"
+  },
+  {
+   "t": 60.48,
+   "w": "los"
+  },
+  {
+   "t": 60.8,
+   "w": "míos"
+  },
+  {
+   "t": 60.8,
+   "w": "Quién"
+  },
+  {
+   "t": 61.76,
+   "w": "llegó"
+  },
+  {
+   "t": 62.24,
+   "w": "Mi"
+  },
+  {
+   "t": 63.36,
+   "w": "gente"
+  },
+  {
+   "t": 65.04,
+   "w": "Quién"
+  },
+  {
+   "t": 65.32,
+   "w": "sonó"
+  },
+  {
+   "t": 65.4,
+   "w": "Mi"
+  },
+  {
+   "t": 65.52,
+   "w": "gente"
+  },
+  {
+   "t": 65.6,
+   "w": "Quién"
+  },
+  {
+   "t": 66.32,
+   "w": "prende"
+  },
+  {
+   "t": 66.64,
+   "w": "la"
+  },
+  {
+   "t": 66.88,
+   "w": "calle"
+  },
+  {
+   "t": 67.28,
+   "w": "Mi"
+  },
+  {
+   "t": 68.08,
+   "w": "gente"
+  },
+  {
+   "t": 68.24,
+   "w": "Quién"
+  },
+  {
+   "t": 68.72,
+   "w": "nunca"
+  },
+  {
+   "t": 69.12,
+   "w": "se"
+  },
+  {
+   "t": 69.28,
+   "w": "vende"
+  },
+  {
+   "t": 70.32,
+   "w": "Mi"
+  },
+  {
+   "t": 71.68,
+   "w": "gente"
+  },
+  {
+   "t": 71.68,
+   "w": "Mi"
+  },
+  {
+   "t": 72.56,
+   "w": "gente"
+  },
+  {
+   "t": 72.64,
+   "w": "mi"
+  },
+  {
+   "t": 72.64,
+   "w": "gente"
+  },
+  {
+   "t": 73.2,
+   "w": "mi"
+  },
+  {
+   "t": 73.2,
+   "w": "gente"
+  },
+  {
+   "t": 73.2,
+   "w": "mi"
+  },
+  {
+   "t": 73.28,
+   "w": "gente"
+  },
+  {
+   "t": 74.24,
+   "w": "To"
+  },
+  {
+   "t": 74.32,
+   "w": "el"
+  },
+  {
+   "t": 74.32,
+   "w": "mundo"
+  },
+  {
+   "t": 74.72,
+   "w": "conmigo"
+  },
+  {
+   "t": 75.28,
+   "w": "se"
+  },
+  {
+   "t": 75.44,
+   "w": "siente"
+  },
+  {
+   "t": 75.92,
+   "w": "se"
+  },
+  {
+   "t": 76.08,
+   "w": "siente"
+  },
+  {
+   "t": 76.48,
+   "w": "Si"
+  },
+  {
+   "t": 76.72,
+   "w": "llego"
+  },
+  {
+   "t": 76.96,
+   "w": "con"
+  },
+  {
+   "t": 77.2,
+   "w": "los"
+  },
+  {
+   "t": 77.44,
+   "w": "míos"
+  },
+  {
+   "t": 77.6,
+   "w": "la"
+  },
+  {
+   "t": 77.92,
+   "w": "calle"
+  },
+  {
+   "t": 78.32,
+   "w": "se"
+  },
+  {
+   "t": 78.56,
+   "w": "enciende"
+  },
+  {
+   "t": 78.96,
+   "w": "Mi"
+  },
+  {
+   "t": 79.12,
+   "w": "gente"
+  },
+  {
+   "t": 79.52,
+   "w": "mi"
+  },
+  {
+   "t": 79.68,
+   "w": "gente"
+  },
+  {
+   "t": 80.48,
+   "w": "mi"
+  },
+  {
+   "t": 80.56,
+   "w": "gente"
+  },
+  {
+   "t": 81.36,
+   "w": "mi"
+  },
+  {
+   "t": 81.36,
+   "w": "gente"
+  },
+  {
+   "t": 81.44,
+   "w": "Mi"
+  },
+  {
+   "t": 81.84,
+   "w": "gente"
+  },
+  {
+   "t": 81.92,
+   "w": "mi"
+  },
+  {
+   "t": 81.92,
+   "w": "gente"
+  },
+  {
+   "t": 81.92,
+   "w": "mi"
+  },
+  {
+   "t": 81.92,
+   "w": "gente"
+  },
+  {
+   "t": 82.0,
+   "w": "mi"
+  },
+  {
+   "t": 83.36,
+   "w": "gente"
+  },
+  {
+   "t": 83.84,
+   "w": "No"
+  },
+  {
+   "t": 84.08,
+   "w": "cambio"
+  },
+  {
+   "t": 84.4,
+   "w": "a"
+  },
+  {
+   "t": 84.48,
+   "w": "mi"
+  },
+  {
+   "t": 84.72,
+   "w": "coro"
+  },
+  {
+   "t": 85.12,
+   "w": "mi"
+  },
+  {
+   "t": 85.28,
+   "w": "sangre"
+  },
+  {
+   "t": 85.68,
+   "w": "me"
+  },
+  {
+   "t": 85.84,
+   "w": "entiende"
+  },
+  {
+   "t": 86.32,
+   "w": "Del"
+  },
+  {
+   "t": 86.56,
+   "w": "barrio"
+  },
+  {
+   "t": 86.96,
+   "w": "pal"
+  },
+  {
+   "t": 87.2,
+   "w": "mundo"
+  },
+  {
+   "t": 87.6,
+   "w": "la"
+  },
+  {
+   "t": 87.76,
+   "w": "vibra"
+  },
+  {
+   "t": 88.16,
+   "w": "se"
+  },
+  {
+   "t": 88.32,
+   "w": "extiende"
+  },
+  {
+   "t": 88.8,
+   "w": "Mi"
+  },
+  {
+   "t": 89.04,
+   "w": "gente"
+  },
+  {
+   "t": 89.04,
+   "w": "mi"
+  },
+  {
+   "t": 89.92,
+   "w": "gente"
+  },
+  {
+   "t": 90.08,
+   "w": "mi"
+  },
+  {
+   "t": 90.08,
+   "w": "gente"
+  },
+  {
+   "t": 90.08,
+   "w": "mi"
+  },
+  {
+   "t": 90.64,
+   "w": "gente"
+  },
+  {
+   "t": 90.88,
+   "w": "No"
+  },
+  {
+   "t": 90.96,
+   "w": "somos"
+  },
+  {
+   "t": 91.36,
+   "w": "perfectos"
+  },
+  {
+   "t": 91.92,
+   "w": "pero"
+  },
+  {
+   "t": 92.24,
+   "w": "somos"
+  },
+  {
+   "t": 92.56,
+   "w": "reales"
+  },
+  {
+   "t": 93.04,
+   "w": "Cicatrices"
+  },
+  {
+   "t": 93.6,
+   "w": "brillando"
+  },
+  {
+   "t": 94.08,
+   "w": "como"
+  },
+  {
+   "t": 94.4,
+   "w": "medallas"
+  },
+  {
+   "t": 94.88,
+   "w": "callejeras"
+  },
+  {
+   "t": 95.92,
+   "w": "Hablamos"
+  },
+  {
+   "t": 96.24,
+   "w": "con"
+  },
+  {
+   "t": 96.48,
+   "w": "hechos"
+  },
+  {
+   "t": 97.12,
+   "w": "no"
+  },
+  {
+   "t": 97.28,
+   "w": "con"
+  },
+  {
+   "t": 97.44,
+   "w": "señales"
+  },
+  {
+   "t": 98.56,
+   "w": "Y"
+  },
+  {
+   "t": 98.72,
+   "w": "si"
+  },
+  {
+   "t": 98.8,
+   "w": "caigo"
+  },
+  {
+   "t": 99.12,
+   "w": "me"
+  },
+  {
+   "t": 99.28,
+   "w": "levanta"
+  },
+  {
+   "t": 99.76,
+   "w": "mi"
+  },
+  {
+   "t": 99.92,
+   "w": "bandera"
+  },
+  {
+   "t": 100.64,
+   "w": "Mira"
+  },
+  {
+   "t": 100.96,
+   "w": "cómo"
+  },
+  {
+   "t": 101.28,
+   "w": "suena"
+  },
+  {
+   "t": 101.6,
+   "w": "cuando"
+  },
+  {
+   "t": 101.84,
+   "w": "entra"
+  },
+  {
+   "t": 102.08,
+   "w": "la"
+  },
+  {
+   "t": 102.24,
+   "w": "percusión"
+  },
+  {
+   "t": 103.12,
+   "w": "Bajo"
+  },
+  {
+   "t": 103.44,
+   "w": "retumbando"
+  },
+  {
+   "t": 104.24,
+   "w": "como"
+  },
+  {
+   "t": 104.56,
+   "w": "declaración"
+  },
+  {
+   "t": 105.6,
+   "w": "No"
+  },
+  {
+   "t": 105.68,
+   "w": "es"
+  },
+  {
+   "t": 105.92,
+   "w": "división"
+  },
+  {
+   "t": 106.08,
+   "w": "esto"
+  },
+  {
+   "t": 106.72,
+   "w": "es"
+  },
+  {
+   "t": 107.12,
+   "w": "conexión"
+  },
+  {
+   "t": 107.84,
+   "w": "Mi"
+  },
+  {
+   "t": 108.0,
+   "w": "gente"
+  },
+  {
+   "t": 108.4,
+   "w": "en"
+  },
+  {
+   "t": 108.56,
+   "w": "el"
+  },
+  {
+   "t": 108.72,
+   "w": "pecho"
+  },
+  {
+   "t": 109.36,
+   "w": "como"
+  },
+  {
+   "t": 109.6,
+   "w": "religión"
+  },
+  {
+   "t": 110.24,
+   "w": "Desde"
+  },
+  {
+   "t": 110.32,
+   "w": "Queens"
+  },
+  {
+   "t": 110.8,
+   "w": "hasta"
+  },
+  {
+   "t": 111.12,
+   "w": "Cali"
+  },
+  {
+   "t": 111.44,
+   "w": "de"
+  },
+  {
+   "t": 111.6,
+   "w": "PR"
+  },
+  {
+   "t": 112.08,
+   "w": "hasta"
+  },
+  {
+   "t": 112.16,
+   "w": "DR"
+  },
+  {
+   "t": 113.36,
+   "w": "La"
+  },
+  {
+   "t": 113.36,
+   "w": "sangre"
+  },
+  {
+   "t": 113.36,
+   "w": "caliente"
+  },
+  {
+   "t": 113.92,
+   "w": "no"
+  },
+  {
+   "t": 114.0,
+   "w": "se"
+  },
+  {
+   "t": 114.24,
+   "w": "puede"
+  },
+  {
+   "t": 114.96,
+   "w": "detener"
+  },
+  {
+   "t": 115.28,
+   "w": "No"
+  },
+  {
+   "t": 115.44,
+   "w": "importa"
+  },
+  {
+   "t": 116.0,
+   "w": "el"
+  },
+  {
+   "t": 116.0,
+   "w": "acento"
+  },
+  {
+   "t": 116.56,
+   "w": "se"
+  },
+  {
+   "t": 116.72,
+   "w": "entiende"
+  },
+  {
+   "t": 117.12,
+   "w": "el"
+  },
+  {
+   "t": 117.44,
+   "w": "poder"
+  },
+  {
+   "t": 118.08,
+   "w": "Cuando"
+  },
+  {
+   "t": 118.08,
+   "w": "el"
+  },
+  {
+   "t": 118.08,
+   "w": "barrio"
+  },
+  {
+   "t": 118.56,
+   "w": "canta"
+  },
+  {
+   "t": 118.96,
+   "w": "lo"
+  },
+  {
+   "t": 119.12,
+   "w": "tienes"
+  },
+  {
+   "t": 119.52,
+   "w": "que"
+  },
+  {
+   "t": 119.68,
+   "w": "creer"
+  },
+  {
+   "t": 120.64,
+   "w": "Manos"
+  },
+  {
+   "t": 120.88,
+   "w": "arriba"
+  },
+  {
+   "t": 121.36,
+   "w": "si"
+  },
+  {
+   "t": 121.44,
+   "w": "tú"
+  },
+  {
+   "t": 121.52,
+   "w": "tienes"
+  },
+  {
+   "t": 121.92,
+   "w": "tu"
+  },
+  {
+   "t": 122.0,
+   "w": "gente"
+  },
+  {
+   "t": 122.64,
+   "w": "Los"
+  },
+  {
+   "t": 123.04,
+   "w": "que"
+  },
+  {
+   "t": 123.4,
+   "w": "estuvieron"
+  },
+  {
+   "t": 123.76,
+   "w": "cuando"
+  },
+  {
+   "t": 124.0,
+   "w": "no"
+  },
+  {
+   "t": 124.24,
+   "w": "había"
+  },
+  {
+   "t": 124.64,
+   "w": "suerte"
+  },
+  {
+   "t": 125.44,
+   "w": "Los"
+  },
+  {
+   "t": 125.6,
+   "w": "que"
+  },
+  {
+   "t": 125.92,
+   "w": "se"
+  },
+  {
+   "t": 125.92,
+   "w": "quedan"
+  },
+  {
+   "t": 126.24,
+   "w": "cuando"
+  },
+  {
+   "t": 126.56,
+   "w": "todo"
+  },
+  {
+   "t": 126.8,
+   "w": "se"
+  },
+  {
+   "t": 127.12,
+   "w": "pierde"
+  },
+  {
+   "t": 127.36,
+   "w": "Los"
+  },
+  {
+   "t": 127.76,
+   "w": "que"
+  },
+  {
+   "t": 127.84,
+   "w": "convierten"
+  },
+  {
+   "t": 128.32,
+   "w": "dolor"
+  },
+  {
+   "t": 128.32,
+   "w": "en"
+  },
+  {
+   "t": 129.52,
+   "w": "fuente"
+  },
+  {
+   "t": 129.52,
+   "w": "Manos"
+  },
+  {
+   "t": 129.84,
+   "w": "arriba"
+  },
+  {
+   "t": 130.16,
+   "w": "si"
+  },
+  {
+   "t": 130.32,
+   "w": "tú"
+  },
+  {
+   "t": 130.48,
+   "w": "tienes"
+  },
+  {
+   "t": 130.64,
+   "w": "tu"
+  },
+  {
+   "t": 130.72,
+   "w": "gente"
+  },
+  {
+   "t": 130.72,
+   "w": "Los"
+  },
+  {
+   "t": 130.72,
+   "w": "que"
+  },
+  {
+   "t": 130.72,
+   "w": "te"
+  },
+  {
+   "t": 133.28,
+   "w": "cuidan"
+  },
+  {
+   "t": 133.6,
+   "w": "aunque"
+  },
+  {
+   "t": 133.92,
+   "w": "no"
+  },
+  {
+   "t": 134.34,
+   "w": "estén"
+  },
+  {
+   "t": 134.7,
+   "w": "presentes"
+  },
+  {
+   "t": 135.28,
+   "w": "Los"
+  },
+  {
+   "t": 135.44,
+   "w": "que"
+  },
+  {
+   "t": 135.6,
+   "w": "caminan"
+  },
+  {
+   "t": 136.16,
+   "w": "con"
+  },
+  {
+   "t": 136.4,
+   "w": "fuego"
+  },
+  {
+   "t": 136.8,
+   "w": "en"
+  },
+  {
+   "t": 136.8,
+   "w": "la"
+  },
+  {
+   "t": 137.2,
+   "w": "frente"
+  },
+  {
+   "t": 137.92,
+   "w": "Los"
+  },
+  {
+   "t": 137.92,
+   "w": "que"
+  },
+  {
+   "t": 137.92,
+   "w": "son"
+  },
+  {
+   "t": 138.08,
+   "w": "familia"
+  },
+  {
+   "t": 138.56,
+   "w": "aunque"
+  },
+  {
+   "t": 138.88,
+   "w": "no"
+  },
+  {
+   "t": 139.04,
+   "w": "sean"
+  },
+  {
+   "t": 139.28,
+   "w": "parientes"
+  },
+  {
+   "t": 139.84,
+   "w": "Mi"
+  },
+  {
+   "t": 143.04,
+   "w": "gente"
+  },
+  {
+   "t": 147.12,
+   "w": "Wuh"
+  },
+  {
+   "t": 147.12,
+   "w": "Dale"
+  },
+  {
+   "t": 147.12,
+   "w": "Otra"
+  },
+  {
+   "t": 147.92,
+   "w": "vez"
+  },
+  {
+   "t": 150.88,
+   "w": "Mi"
+  },
+  {
+   "t": 150.88,
+   "w": "gente"
+  },
+  {
+   "t": 151.04,
+   "w": "Mi"
+  },
+  {
+   "t": 152.0,
+   "w": "gente"
+  },
+  {
+   "t": 152.0,
+   "w": "mi"
+  },
+  {
+   "t": 152.0,
+   "w": "gente"
+  },
+  {
+   "t": 152.48,
+   "w": "mi"
+  },
+  {
+   "t": 152.96,
+   "w": "gente"
+  },
+  {
+   "t": 152.99,
+   "w": "mi"
+  },
+  {
+   "t": 153.02,
+   "w": "gente"
+  },
+  {
+   "t": 153.06,
+   "w": "To"
+  },
+  {
+   "t": 153.09,
+   "w": "el"
+  },
+  {
+   "t": 153.12,
+   "w": "mundo"
+  },
+  {
+   "t": 153.44,
+   "w": "conmigo"
+  },
+  {
+   "t": 154.0,
+   "w": "se"
+  },
+  {
+   "t": 154.24,
+   "w": "siente"
+  },
+  {
+   "t": 154.64,
+   "w": "se"
+  },
+  {
+   "t": 154.88,
+   "w": "siente"
+  },
+  {
+   "t": 155.28,
+   "w": "Si"
+  },
+  {
+   "t": 155.52,
+   "w": "llego"
+  },
+  {
+   "t": 155.76,
+   "w": "con"
+  },
+  {
+   "t": 155.92,
+   "w": "los"
+  },
+  {
+   "t": 156.16,
+   "w": "míos"
+  },
+  {
+   "t": 156.48,
+   "w": "la"
+  },
+  {
+   "t": 156.72,
+   "w": "calle"
+  },
+  {
+   "t": 157.04,
+   "w": "se"
+  },
+  {
+   "t": 157.2,
+   "w": "enciende"
+  },
+  {
+   "t": 157.76,
+   "w": "Mi"
+  },
+  {
+   "t": 157.92,
+   "w": "gente"
+  },
+  {
+   "t": 158.88,
+   "w": "mi"
+  },
+  {
+   "t": 159.12,
+   "w": "gente"
+  },
+  {
+   "t": 159.52,
+   "w": "mi"
+  },
+  {
+   "t": 159.68,
+   "w": "gente"
+  },
+  {
+   "t": 160.16,
+   "w": "mi"
+  },
+  {
+   "t": 160.32,
+   "w": "gente"
+  },
+  {
+   "t": 160.32,
+   "w": "Mi"
+  },
+  {
+   "t": 161.12,
+   "w": "gente"
+  },
+  {
+   "t": 161.28,
+   "w": "mi"
+  },
+  {
+   "t": 161.6,
+   "w": "gente"
+  },
+  {
+   "t": 161.92,
+   "w": "mi"
+  },
+  {
+   "t": 162.24,
+   "w": "gente"
+  },
+  {
+   "t": 162.24,
+   "w": "mi"
+  },
+  {
+   "t": 162.24,
+   "w": "gente"
+  },
+  {
+   "t": 162.64,
+   "w": "No"
+  },
+  {
+   "t": 162.88,
+   "w": "cambio"
+  },
+  {
+   "t": 163.2,
+   "w": "a"
+  },
+  {
+   "t": 163.28,
+   "w": "mi"
+  },
+  {
+   "t": 163.44,
+   "w": "coro"
+  },
+  {
+   "t": 163.84,
+   "w": "mi"
+  },
+  {
+   "t": 164.0,
+   "w": "sangre"
+  },
+  {
+   "t": 164.48,
+   "w": "me"
+  },
+  {
+   "t": 164.64,
+   "w": "entiende"
+  },
+  {
+   "t": 165.12,
+   "w": "Del"
+  },
+  {
+   "t": 165.28,
+   "w": "barrio"
+  },
+  {
+   "t": 165.68,
+   "w": "pal"
+  },
+  {
+   "t": 165.92,
+   "w": "mundo"
+  },
+  {
+   "t": 166.32,
+   "w": "la"
+  },
+  {
+   "t": 166.56,
+   "w": "vibra"
+  },
+  {
+   "t": 166.88,
+   "w": "se"
+  },
+  {
+   "t": 167.12,
+   "w": "extiende"
+  },
+  {
+   "t": 167.6,
+   "w": "Mi"
+  },
+  {
+   "t": 167.76,
+   "w": "gente"
+  },
+  {
+   "t": 168.16,
+   "w": "mi"
+  },
+  {
+   "t": 168.32,
+   "w": "gente"
+  },
+  {
+   "t": 168.8,
+   "w": "mi"
+  },
+  {
+   "t": 168.88,
+   "w": "gente"
+  },
+  {
+   "t": 169.44,
+   "w": "mi"
+  },
+  {
+   "t": 169.52,
+   "w": "gente"
+  },
+  {
+   "t": 170.88,
+   "w": "Esto"
+  },
+  {
+   "t": 171.2,
+   "w": "no"
+  },
+  {
+   "t": 173.44,
+   "w": "es"
+  },
+  {
+   "t": 173.44,
+   "w": "moda"
+  },
+  {
+   "t": 173.44,
+   "w": "Esto"
+  },
+  {
+   "t": 173.76,
+   "w": "no"
+  },
+  {
+   "t": 173.92,
+   "w": "es"
+  },
+  {
+   "t": 174.0,
+   "w": "pose"
+  },
+  {
+   "t": 175.92,
+   "w": "Esto"
+  },
+  {
+   "t": 175.92,
+   "w": "es"
+  },
+  {
+   "t": 176.16,
+   "w": "mi"
+  },
+  {
+   "t": 176.4,
+   "w": "gente"
+  },
+  {
+   "t": 177.92,
+   "w": "Desde"
+  },
+  {
+   "t": 178.24,
+   "w": "abajo"
+  },
+  {
+   "t": 179.12,
+   "w": "hasta"
+  },
+  {
+   "t": 179.36,
+   "w": "donde"
+  },
+  {
+   "t": 179.76,
+   "w": "llegue"
+  },
+  {
+   "t": 179.92,
+   "w": "el"
+  },
+  {
+   "t": 180.16,
+   "w": "sonido"
+  }
+ ],
+ "lrc": "[00:00.00]Yeah...\n[00:02.24]Mi gente...\n[00:04.96]Desde el bloque hasta la tarima...\n[00:06.80]Ya tú sabes.\n[00:08.08]¡Wuh!\n[00:08.08]¡Dímelo!\n[00:13.12]¡Mi gente!\n[00:13.12]Mi gente, mi gente, mi gente, mi gente\n[00:14.96]To’ el mundo conmigo, se siente, se siente\n[00:17.44]Si llego con los míos, la calle se enciende\n[00:19.92]Mi gente, mi gente, mi gente, mi gente\n[00:22.72]Mi gente, mi gente, mi gente, mi gente\n[00:24.80]No cambio a mi coro, mi sangre me entiende\n[00:27.28]Del barrio pa’l mundo, la vibra se extiende\n[00:29.76]Mi gente, mi gente, mi gente, mi gente\n[00:31.60]Llegué con la ganga, pero no es pa’ aparentar\n[00:34.32]Esto es familia, no se compra con metal\n[00:36.80]Desde la esquina donde aprendí a caminar\n[00:38.88]Hasta los sueños que no nos pudieron quitar\n[00:41.44]Tengo dominicanos, boricuas en la fila\n[00:44.40]Mexicanos gritando, cubanos con la pila\n[00:46.40]Colombianos activos, to’ el combo vacila\n[00:48.80]Si uno se levanta, la mesa se multiplica\n[00:51.12]No me hables de lealtad si no estabas en el frío\n[00:53.76]Cuando faltaba todo y sobraban los líos\n[00:56.48]Ahora ven la luz y quieren ser testigos\n[00:58.56]Pero yo sé quiénes fueron de los míos\n[01:00.80]¿Quién llegó?\n[01:02.24]Mi gente\n[01:05.04]¿Quién sonó?\n[01:05.40]Mi gente\n[01:05.60]¿Quién prende la calle?\n[01:07.28]Mi gente\n[01:08.24]¿Quién nunca se vende?\n[01:10.32]Mi gente\n[01:11.68]Mi gente, mi gente, mi gente, mi gente\n[01:14.24]To’ el mundo conmigo, se siente, se siente\n[01:16.48]Si llego con los míos, la calle se enciende\n[01:18.96]Mi gente, mi gente, mi gente, mi gente\n[01:21.44]Mi gente, mi gente, mi gente, mi gente\n[01:23.84]No cambio a mi coro, mi sangre me entiende\n[01:26.32]Del barrio pa’l mundo, la vibra se extiende\n[01:28.80]Mi gente, mi gente, mi gente, mi gente\n[01:30.88]No somos perfectos, pero somos reales\n[01:33.04]Cicatrices brillando como medallas callejeras\n[01:35.92]Hablamos con hechos, no con señales\n[01:38.56]Y si caigo, me levanta mi bandera\n[01:40.64]Mira cómo suena cuando entra la percusión\n[01:43.12]Bajo retumbando como declaración\n[01:45.60]No es división, esto es conexión\n[01:47.84]Mi gente en el pecho como religión\n[01:50.24]Desde Queens hasta Cali, de PR hasta DR\n[01:53.36]La sangre caliente, no se puede detener\n[01:55.28]No importa el acento, se entiende el poder\n[01:58.08]Cuando el barrio canta, lo tienes que creer\n[02:00.64]Manos arriba si tú tienes tu gente\n[02:02.64]Los que estuvieron cuando no había suerte\n[02:05.44]Los que se quedan cuando todo se pierde\n[02:07.36]Los que convierten dolor en fuente\n[02:09.52]Manos arriba si tú tienes tu gente\n[02:10.72]Los que te cuidan aunque no estén presentes\n[02:15.28]Los que caminan con fuego en la frente\n[02:17.92]Los que son familia aunque no sean parientes\n[02:19.84]¡Mi gente!\n[02:27.12]¡Wuh!\n[02:27.12]¡Dale!\n[02:27.12]¡Otra vez!\n[02:30.88]¡Mi gente!\n[02:31.04]Mi gente, mi gente, mi gente, mi gente\n[02:33.06]To’ el mundo conmigo, se siente, se siente\n[02:35.28]Si llego con los míos, la calle se enciende\n[02:37.76]Mi gente, mi gente, mi gente, mi gente\n[02:40.32]Mi gente, mi gente, mi gente, mi gente\n[02:42.64]No cambio a mi coro, mi sangre me entiende\n[02:45.12]Del barrio pa’l mundo, la vibra se extiende\n[02:47.60]Mi gente, mi gente, mi gente, mi gente\n[02:50.88]Esto no es moda.\n[02:53.44]Esto no es pose.\n[02:55.92]Esto es mi gente.\n[02:57.92]Desde abajo...\n[02:59.12]hasta donde llegue el sonido.\n"
+}

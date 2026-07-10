@@ -1,0 +1,1661 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 410,
+  "clumps": [
+   {
+    "t": 171.84,
+    "n": 9
+   }
+  ],
+  "clumpedWords": 9,
+  "clumpRatio": 0.022,
+  "span": 181.1,
+  "duration": 195.7,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 2.48,
+   "w": "Yeah"
+  },
+  {
+   "t": 4.4,
+   "w": "one"
+  },
+  {
+   "t": 4.64,
+   "w": "tap"
+  },
+  {
+   "t": 5.12,
+   "w": "away"
+  },
+  {
+   "t": 8.4,
+   "w": "but"
+  },
+  {
+   "t": 8.48,
+   "w": "somehow"
+  },
+  {
+   "t": 9.04,
+   "w": "everybody"
+  },
+  {
+   "t": 9.52,
+   "w": "far"
+  },
+  {
+   "t": 10.0,
+   "w": "now"
+  },
+  {
+   "t": 13.44,
+   "w": "uh"
+  },
+  {
+   "t": 14.64,
+   "w": "check"
+  },
+  {
+   "t": 14.88,
+   "w": "it"
+  },
+  {
+   "t": 15.28,
+   "w": "Backback"
+  },
+  {
+   "t": 15.92,
+   "w": "when"
+  },
+  {
+   "t": 16.16,
+   "w": "the"
+  },
+  {
+   "t": 16.24,
+   "w": "screen"
+  },
+  {
+   "t": 16.64,
+   "w": "made"
+  },
+  {
+   "t": 16.8,
+   "w": "the"
+  },
+  {
+   "t": 16.8,
+   "w": "room"
+  },
+  {
+   "t": 17.2,
+   "w": "glow"
+  },
+  {
+   "t": 18.08,
+   "w": "I"
+  },
+  {
+   "t": 18.24,
+   "w": "thought"
+  },
+  {
+   "t": 18.4,
+   "w": "the"
+  },
+  {
+   "t": 18.48,
+   "w": "whole"
+  },
+  {
+   "t": 18.88,
+   "w": "world"
+  },
+  {
+   "t": 19.36,
+   "w": "would"
+  },
+  {
+   "t": 19.68,
+   "w": "move"
+  },
+  {
+   "t": 19.76,
+   "w": "close"
+  },
+  {
+   "t": 20.4,
+   "w": "old"
+  },
+  {
+   "t": 20.64,
+   "w": "names"
+  },
+  {
+   "t": 21.04,
+   "w": "popping"
+  },
+  {
+   "t": 21.44,
+   "w": "up"
+  },
+  {
+   "t": 21.68,
+   "w": "like"
+  },
+  {
+   "t": 21.92,
+   "w": "whoa"
+  },
+  {
+   "t": 23.36,
+   "w": "though"
+  },
+  {
+   "t": 23.36,
+   "w": "middle"
+  },
+  {
+   "t": 23.52,
+   "w": "school"
+  },
+  {
+   "t": 23.84,
+   "w": "faces"
+  },
+  {
+   "t": 24.32,
+   "w": "in"
+  },
+  {
+   "t": 24.48,
+   "w": "a"
+  },
+  {
+   "t": 24.64,
+   "w": "new"
+  },
+  {
+   "t": 24.88,
+   "w": "post"
+  },
+  {
+   "t": 24.96,
+   "w": "I"
+  },
+  {
+   "t": 25.44,
+   "w": "thought"
+  },
+  {
+   "t": 25.68,
+   "w": "wed"
+  },
+  {
+   "t": 25.84,
+   "w": "talktalk"
+  },
+  {
+   "t": 26.56,
+   "w": "really"
+  },
+  {
+   "t": 26.88,
+   "w": "get"
+  },
+  {
+   "t": 27.12,
+   "w": "honest"
+  },
+  {
+   "t": 27.92,
+   "w": "drop"
+  },
+  {
+   "t": 28.16,
+   "w": "the"
+  },
+  {
+   "t": 28.32,
+   "w": "mask"
+  },
+  {
+   "t": 28.72,
+   "w": "no"
+  },
+  {
+   "t": 28.88,
+   "w": "fake"
+  },
+  {
+   "t": 29.36,
+   "w": "persona"
+  },
+  {
+   "t": 30.16,
+   "w": "find"
+  },
+  {
+   "t": 30.64,
+   "w": "your"
+  },
+  {
+   "t": 30.72,
+   "w": "tribe"
+  },
+  {
+   "t": 31.52,
+   "w": "find"
+  },
+  {
+   "t": 31.92,
+   "w": "your"
+  },
+  {
+   "t": 32.08,
+   "w": "people"
+  },
+  {
+   "t": 32.8,
+   "w": "make"
+  },
+  {
+   "t": 33.04,
+   "w": "the"
+  },
+  {
+   "t": 33.12,
+   "w": "whole"
+  },
+  {
+   "t": 33.52,
+   "w": "cold"
+  },
+  {
+   "t": 33.84,
+   "w": "world"
+  },
+  {
+   "t": 34.32,
+   "w": "feel"
+  },
+  {
+   "t": 35.12,
+   "w": "warmer"
+  },
+  {
+   "t": 35.44,
+   "w": "Ads"
+  },
+  {
+   "t": 35.76,
+   "w": "in"
+  },
+  {
+   "t": 35.92,
+   "w": "the"
+  },
+  {
+   "t": 36.0,
+   "w": "cracks"
+  },
+  {
+   "t": 36.72,
+   "w": "brands"
+  },
+  {
+   "t": 37.04,
+   "w": "in"
+  },
+  {
+   "t": 37.2,
+   "w": "the"
+  },
+  {
+   "t": 37.28,
+   "w": "chat"
+  },
+  {
+   "t": 37.76,
+   "w": "everybody"
+  },
+  {
+   "t": 38.32,
+   "w": "got"
+  },
+  {
+   "t": 38.48,
+   "w": "stats"
+  },
+  {
+   "t": 38.96,
+   "w": "everybody"
+  },
+  {
+   "t": 39.52,
+   "w": "wants"
+  },
+  {
+   "t": 39.84,
+   "w": "claps"
+  },
+  {
+   "t": 40.24,
+   "w": "everybody"
+  },
+  {
+   "t": 40.88,
+   "w": "got"
+  },
+  {
+   "t": 41.68,
+   "w": "reach"
+  },
+  {
+   "t": 41.68,
+   "w": "but"
+  },
+  {
+   "t": 41.76,
+   "w": "dont"
+  },
+  {
+   "t": 42.16,
+   "w": "reach"
+  },
+  {
+   "t": 42.4,
+   "w": "back"
+  },
+  {
+   "t": 42.8,
+   "w": "how"
+  },
+  {
+   "t": 42.96,
+   "w": "we"
+  },
+  {
+   "t": 43.12,
+   "w": "got"
+  },
+  {
+   "t": 43.36,
+   "w": "this"
+  },
+  {
+   "t": 43.6,
+   "w": "close"
+  },
+  {
+   "t": 44.08,
+   "w": "and"
+  },
+  {
+   "t": 44.24,
+   "w": "lost"
+  },
+  {
+   "t": 44.48,
+   "w": "contact"
+  },
+  {
+   "t": 45.28,
+   "w": "You"
+  },
+  {
+   "t": 45.44,
+   "w": "can"
+  },
+  {
+   "t": 45.6,
+   "w": "see"
+  },
+  {
+   "t": 45.76,
+   "w": "me"
+  },
+  {
+   "t": 46.08,
+   "w": "in"
+  },
+  {
+   "t": 46.16,
+   "w": "a"
+  },
+  {
+   "t": 46.16,
+   "w": "second"
+  },
+  {
+   "t": 47.84,
+   "w": "You"
+  },
+  {
+   "t": 48.0,
+   "w": "can"
+  },
+  {
+   "t": 48.16,
+   "w": "call"
+  },
+  {
+   "t": 48.4,
+   "w": "me"
+  },
+  {
+   "t": 48.64,
+   "w": "any"
+  },
+  {
+   "t": 50.08,
+   "w": "day"
+  },
+  {
+   "t": 50.4,
+   "w": "You"
+  },
+  {
+   "t": 50.56,
+   "w": "can"
+  },
+  {
+   "t": 50.88,
+   "w": "love"
+  },
+  {
+   "t": 50.88,
+   "w": "me"
+  },
+  {
+   "t": 51.2,
+   "w": "in"
+  },
+  {
+   "t": 51.36,
+   "w": "private"
+  },
+  {
+   "t": 52.32,
+   "w": "But"
+  },
+  {
+   "t": 52.48,
+   "w": "scroll"
+  },
+  {
+   "t": 53.04,
+   "w": "right"
+  },
+  {
+   "t": 53.28,
+   "w": "past"
+  },
+  {
+   "t": 53.6,
+   "w": "my"
+  },
+  {
+   "t": 54.4,
+   "w": "name"
+  },
+  {
+   "t": 55.36,
+   "w": "Funny"
+  },
+  {
+   "t": 55.84,
+   "w": "how"
+  },
+  {
+   "t": 56.0,
+   "w": "we"
+  },
+  {
+   "t": 56.16,
+   "w": "got"
+  },
+  {
+   "t": 56.32,
+   "w": "connected"
+  },
+  {
+   "t": 57.44,
+   "w": "Then"
+  },
+  {
+   "t": 58.16,
+   "w": "forgot"
+  },
+  {
+   "t": 58.8,
+   "w": "how"
+  },
+  {
+   "t": 58.96,
+   "w": "to"
+  },
+  {
+   "t": 59.04,
+   "w": "stay"
+  },
+  {
+   "t": 60.48,
+   "w": "You're"
+  },
+  {
+   "t": 60.64,
+   "w": "right"
+  },
+  {
+   "t": 60.96,
+   "w": "there"
+  },
+  {
+   "t": 61.12,
+   "w": "in"
+  },
+  {
+   "t": 61.36,
+   "w": "my"
+  },
+  {
+   "t": 61.52,
+   "w": "pocket"
+  },
+  {
+   "t": 62.16,
+   "w": "But"
+  },
+  {
+   "t": 62.56,
+   "w": "you"
+  },
+  {
+   "t": 62.72,
+   "w": "feel"
+  },
+  {
+   "t": 63.44,
+   "w": "a"
+  },
+  {
+   "t": 63.44,
+   "w": "world"
+  },
+  {
+   "t": 63.68,
+   "w": "away"
+  },
+  {
+   "t": 63.68,
+   "w": "One"
+  },
+  {
+   "t": 64.96,
+   "w": "tap"
+  },
+  {
+   "t": 65.04,
+   "w": "away"
+  },
+  {
+   "t": 65.92,
+   "w": "one"
+  },
+  {
+   "t": 66.0,
+   "w": "tap"
+  },
+  {
+   "t": 66.32,
+   "w": "away"
+  },
+  {
+   "t": 68.88,
+   "w": "From"
+  },
+  {
+   "t": 69.12,
+   "w": "a"
+  },
+  {
+   "t": 69.28,
+   "w": "real"
+  },
+  {
+   "t": 69.52,
+   "w": "conversation"
+  },
+  {
+   "t": 70.24,
+   "w": "but"
+  },
+  {
+   "t": 70.32,
+   "w": "we"
+  },
+  {
+   "t": 70.48,
+   "w": "don't"
+  },
+  {
+   "t": 70.72,
+   "w": "say"
+  },
+  {
+   "t": 71.04,
+   "w": "a"
+  },
+  {
+   "t": 71.12,
+   "w": "thing"
+  },
+  {
+   "t": 71.52,
+   "w": "We're"
+  },
+  {
+   "t": 71.68,
+   "w": "one"
+  },
+  {
+   "t": 72.4,
+   "w": "tap"
+  },
+  {
+   "t": 72.8,
+   "w": "away"
+  },
+  {
+   "t": 73.84,
+   "w": "From"
+  },
+  {
+   "t": 74.0,
+   "w": "I"
+  },
+  {
+   "t": 74.16,
+   "w": "see"
+  },
+  {
+   "t": 74.48,
+   "w": "you"
+  },
+  {
+   "t": 74.64,
+   "w": "keep"
+  },
+  {
+   "t": 74.88,
+   "w": "going"
+  },
+  {
+   "t": 75.12,
+   "w": "from"
+  },
+  {
+   "t": 75.6,
+   "w": "I'm"
+  },
+  {
+   "t": 75.6,
+   "w": "proud"
+  },
+  {
+   "t": 75.92,
+   "w": "of"
+  },
+  {
+   "t": 76.0,
+   "w": "your"
+  },
+  {
+   "t": 76.16,
+   "w": "dream"
+  },
+  {
+   "t": 76.72,
+   "w": "Save"
+  },
+  {
+   "t": 76.72,
+   "w": "your"
+  },
+  {
+   "t": 76.96,
+   "w": "likes"
+  },
+  {
+   "t": 77.2,
+   "w": "for"
+  },
+  {
+   "t": 77.36,
+   "w": "the"
+  },
+  {
+   "t": 77.44,
+   "w": "strangers"
+  },
+  {
+   "t": 78.24,
+   "w": "Save"
+  },
+  {
+   "t": 79.2,
+   "w": "your"
+  },
+  {
+   "t": 79.36,
+   "w": "hearts"
+  },
+  {
+   "t": 79.68,
+   "w": "for"
+  },
+  {
+   "t": 79.84,
+   "w": "the"
+  },
+  {
+   "t": 80.0,
+   "w": "stars"
+  },
+  {
+   "t": 81.6,
+   "w": "But"
+  },
+  {
+   "t": 81.84,
+   "w": "the"
+  },
+  {
+   "t": 81.92,
+   "w": "ones"
+  },
+  {
+   "t": 82.16,
+   "w": "who"
+  },
+  {
+   "t": 82.32,
+   "w": "really"
+  },
+  {
+   "t": 82.64,
+   "w": "know"
+  },
+  {
+   "t": 82.72,
+   "w": "you"
+  },
+  {
+   "t": 83.12,
+   "w": "act"
+  },
+  {
+   "t": 83.52,
+   "w": "like"
+  },
+  {
+   "t": 83.6,
+   "w": "loving"
+  },
+  {
+   "t": 84.96,
+   "w": "you"
+  },
+  {
+   "t": 85.44,
+   "w": "is"
+  },
+  {
+   "t": 85.44,
+   "w": "hard"
+  },
+  {
+   "t": 86.16,
+   "w": "One"
+  },
+  {
+   "t": 86.16,
+   "w": "tap"
+  },
+  {
+   "t": 86.16,
+   "w": "away"
+  },
+  {
+   "t": 87.68,
+   "w": "So"
+  },
+  {
+   "t": 88.72,
+   "w": "why"
+  },
+  {
+   "t": 88.96,
+   "w": "do"
+  },
+  {
+   "t": 89.2,
+   "w": "I"
+  },
+  {
+   "t": 89.68,
+   "w": "feel"
+  },
+  {
+   "t": 89.92,
+   "w": "alone"
+  },
+  {
+   "t": 90.64,
+   "w": "in"
+  },
+  {
+   "t": 90.8,
+   "w": "a"
+  },
+  {
+   "t": 90.88,
+   "w": "room"
+  },
+  {
+   "t": 91.2,
+   "w": "full"
+  },
+  {
+   "t": 91.36,
+   "w": "of"
+  },
+  {
+   "t": 91.44,
+   "w": "names"
+  },
+  {
+   "t": 91.84,
+   "w": "Tap"
+  },
+  {
+   "t": 92.16,
+   "w": "tap"
+  },
+  {
+   "t": 92.96,
+   "w": "but"
+  },
+  {
+   "t": 93.12,
+   "w": "you"
+  },
+  {
+   "t": 93.36,
+   "w": "don't"
+  },
+  {
+   "t": 93.6,
+   "w": "reach"
+  },
+  {
+   "t": 93.84,
+   "w": "back"
+  },
+  {
+   "t": 94.32,
+   "w": "Heart"
+  },
+  {
+   "t": 94.72,
+   "w": "heart"
+  },
+  {
+   "t": 95.36,
+   "w": "but"
+  },
+  {
+   "t": 95.52,
+   "w": "it"
+  },
+  {
+   "t": 95.68,
+   "w": "don't"
+  },
+  {
+   "t": 95.92,
+   "w": "feel"
+  },
+  {
+   "t": 96.24,
+   "w": "like"
+  },
+  {
+   "t": 96.64,
+   "w": "that"
+  },
+  {
+   "t": 96.96,
+   "w": "Close"
+  },
+  {
+   "t": 97.12,
+   "w": "close"
+  },
+  {
+   "t": 97.52,
+   "w": "close"
+  },
+  {
+   "t": 98.0,
+   "w": "but"
+  },
+  {
+   "t": 98.16,
+   "w": "we"
+  },
+  {
+   "t": 98.32,
+   "w": "don't"
+  },
+  {
+   "t": 98.64,
+   "w": "connect"
+  },
+  {
+   "t": 99.2,
+   "w": "One"
+  },
+  {
+   "t": 99.44,
+   "w": "tap"
+  },
+  {
+   "t": 99.84,
+   "w": "away"
+  },
+  {
+   "t": 100.72,
+   "w": "and"
+  },
+  {
+   "t": 100.88,
+   "w": "we"
+  },
+  {
+   "t": 100.96,
+   "w": "still"
+  },
+  {
+   "t": 101.36,
+   "w": "forget"
+  },
+  {
+   "t": 102.0,
+   "w": "Click"
+  },
+  {
+   "t": 102.32,
+   "w": "click"
+  },
+  {
+   "t": 102.64,
+   "w": "click"
+  },
+  {
+   "t": 102.96,
+   "w": "everybody"
+  },
+  {
+   "t": 103.6,
+   "w": "got"
+  },
+  {
+   "t": 103.76,
+   "w": "a"
+  },
+  {
+   "t": 103.92,
+   "w": "new"
+  },
+  {
+   "t": 104.0,
+   "w": "rule"
+  },
+  {
+   "t": 104.8,
+   "w": "Don't"
+  },
+  {
+   "t": 105.04,
+   "w": "hype"
+  },
+  {
+   "t": 105.36,
+   "w": "friends"
+  },
+  {
+   "t": 105.84,
+   "w": "that"
+  },
+  {
+   "t": 105.92,
+   "w": "ain't"
+  },
+  {
+   "t": 106.32,
+   "w": "cool"
+  },
+  {
+   "t": 106.72,
+   "w": "cool"
+  },
+  {
+   "t": 107.6,
+   "w": "Save"
+  },
+  {
+   "t": 107.92,
+   "w": "that"
+  },
+  {
+   "t": 108.08,
+   "w": "love"
+  },
+  {
+   "t": 108.32,
+   "w": "for"
+  },
+  {
+   "t": 108.48,
+   "w": "the"
+  },
+  {
+   "t": 108.64,
+   "w": "big"
+  },
+  {
+   "t": 108.88,
+   "w": "names"
+  },
+  {
+   "t": 109.52,
+   "w": "Blue"
+  },
+  {
+   "t": 109.84,
+   "w": "checks"
+  },
+  {
+   "t": 110.16,
+   "w": "big"
+  },
+  {
+   "t": 110.48,
+   "w": "chains"
+  },
+  {
+   "t": 111.12,
+   "w": "big"
+  },
+  {
+   "t": 111.36,
+   "w": "views"
+  },
+  {
+   "t": 112.0,
+   "w": "Then"
+  },
+  {
+   "t": 112.16,
+   "w": "if"
+  },
+  {
+   "t": 112.24,
+   "w": "a"
+  },
+  {
+   "t": 112.4,
+   "w": "stranger"
+  },
+  {
+   "t": 112.72,
+   "w": "blow"
+  },
+  {
+   "t": 112.96,
+   "w": "up"
+  },
+  {
+   "t": 113.12,
+   "w": "overnight"
+  },
+  {
+   "t": 114.72,
+   "w": "Everybody"
+  },
+  {
+   "t": 115.28,
+   "w": "swear"
+  },
+  {
+   "t": 115.44,
+   "w": "they"
+  },
+  {
+   "t": 115.6,
+   "w": "saw"
+  },
+  {
+   "t": 115.76,
+   "w": "the"
+  },
+  {
+   "t": 115.92,
+   "w": "light"
+  },
+  {
+   "t": 116.48,
+   "w": "Same"
+  },
+  {
+   "t": 116.88,
+   "w": "ones"
+  },
+  {
+   "t": 117.12,
+   "w": "quiet"
+  },
+  {
+   "t": 117.76,
+   "w": "when"
+  },
+  {
+   "t": 118.0,
+   "w": "you"
+  },
+  {
+   "t": 118.08,
+   "w": "need"
+  },
+  {
+   "t": 118.32,
+   "w": "a"
+  },
+  {
+   "t": 118.4,
+   "w": "fire"
+  },
+  {
+   "t": 119.28,
+   "w": "Now"
+  },
+  {
+   "t": 119.28,
+   "w": "they"
+  },
+  {
+   "t": 119.52,
+   "w": "in"
+  },
+  {
+   "t": 119.6,
+   "w": "the"
+  },
+  {
+   "t": 119.68,
+   "w": "comments"
+  },
+  {
+   "t": 120.32,
+   "w": "like"
+  },
+  {
+   "t": 120.56,
+   "w": "that's"
+  },
+  {
+   "t": 120.88,
+   "w": "my"
+  },
+  {
+   "t": 121.2,
+   "w": "guy"
+  },
+  {
+   "t": 121.92,
+   "w": "We"
+  },
+  {
+   "t": 122.08,
+   "w": "one"
+  },
+  {
+   "t": 122.24,
+   "w": "tap"
+  },
+  {
+   "t": 123.68,
+   "w": "away"
+  },
+  {
+   "t": 124.48,
+   "w": "one"
+  },
+  {
+   "t": 125.44,
+   "w": "tap"
+  },
+  {
+   "t": 125.44,
+   "w": "away"
+  },
+  {
+   "t": 125.44,
+   "w": "from"
+  },
+  {
+   "t": 126.56,
+   "w": "a"
+  },
+  {
+   "t": 126.56,
+   "w": "real"
+  },
+  {
+   "t": 127.84,
+   "w": "conversation"
+  },
+  {
+   "t": 129.76,
+   "w": "but"
+  },
+  {
+   "t": 129.76,
+   "w": "we"
+  },
+  {
+   "t": 130.16,
+   "w": "dont"
+  },
+  {
+   "t": 131.28,
+   "w": "say"
+  },
+  {
+   "t": 132.16,
+   "w": "a"
+  },
+  {
+   "t": 132.4,
+   "w": "thing"
+  },
+  {
+   "t": 132.64,
+   "w": "Save"
+  },
+  {
+   "t": 132.64,
+   "w": "your"
+  },
+  {
+   "t": 142.4,
+   "w": "likes"
+  },
+  {
+   "t": 142.64,
+   "w": "for"
+  },
+  {
+   "t": 142.8,
+   "w": "the"
+  },
+  {
+   "t": 142.96,
+   "w": "strangers"
+  },
+  {
+   "t": 144.4,
+   "w": "save"
+  },
+  {
+   "t": 145.84,
+   "w": "your"
+  },
+  {
+   "t": 145.92,
+   "w": "hearts"
+  },
+  {
+   "t": 146.0,
+   "w": "for"
+  },
+  {
+   "t": 146.0,
+   "w": "the"
+  },
+  {
+   "t": 146.16,
+   "w": "stars"
+  },
+  {
+   "t": 147.68,
+   "w": "but"
+  },
+  {
+   "t": 147.84,
+   "w": "the"
+  },
+  {
+   "t": 147.92,
+   "w": "ones"
+  },
+  {
+   "t": 148.24,
+   "w": "who"
+  },
+  {
+   "t": 148.56,
+   "w": "really"
+  },
+  {
+   "t": 148.8,
+   "w": "know"
+  },
+  {
+   "t": 149.12,
+   "w": "you"
+  },
+  {
+   "t": 149.92,
+   "w": "act"
+  },
+  {
+   "t": 150.24,
+   "w": "like"
+  },
+  {
+   "t": 150.24,
+   "w": "loving"
+  },
+  {
+   "t": 151.04,
+   "w": "you"
+  },
+  {
+   "t": 151.36,
+   "w": "is"
+  },
+  {
+   "t": 151.52,
+   "w": "hard"
+  },
+  {
+   "t": 152.48,
+   "w": "Maybe"
+  },
+  {
+   "t": 152.8,
+   "w": "I"
+  },
+  {
+   "t": 152.96,
+   "w": "was"
+  },
+  {
+   "t": 153.12,
+   "w": "young"
+  },
+  {
+   "t": 153.44,
+   "w": "thinking"
+  },
+  {
+   "t": 153.76,
+   "w": "wires"
+  },
+  {
+   "t": 154.08,
+   "w": "could"
+  },
+  {
+   "t": 154.24,
+   "w": "heal"
+  },
+  {
+   "t": 154.64,
+   "w": "us"
+  },
+  {
+   "t": 154.96,
+   "w": "thinking"
+  },
+  {
+   "t": 155.36,
+   "w": "all"
+  },
+  {
+   "t": 155.52,
+   "w": "this"
+  },
+  {
+   "t": 155.68,
+   "w": "light"
+  },
+  {
+   "t": 156.0,
+   "w": "would"
+  },
+  {
+   "t": 156.08,
+   "w": "finally"
+  },
+  {
+   "t": 156.56,
+   "w": "reveal"
+  },
+  {
+   "t": 157.28,
+   "w": "us"
+  },
+  {
+   "t": 157.44,
+   "w": "Im"
+  },
+  {
+   "t": 157.6,
+   "w": "not"
+  },
+  {
+   "t": 157.76,
+   "w": "hard"
+  },
+  {
+   "t": 158.08,
+   "w": "to"
+  },
+  {
+   "t": 158.16,
+   "w": "find"
+  },
+  {
+   "t": 158.88,
+   "w": "Im"
+  },
+  {
+   "t": 158.88,
+   "w": "not"
+  },
+  {
+   "t": 159.04,
+   "w": "far"
+  },
+  {
+   "t": 159.28,
+   "w": "away"
+  },
+  {
+   "t": 159.76,
+   "w": "Im"
+  },
+  {
+   "t": 159.92,
+   "w": "still"
+  },
+  {
+   "t": 162.08,
+   "w": "right"
+  },
+  {
+   "t": 162.24,
+   "w": "here"
+  },
+  {
+   "t": 162.4,
+   "w": "one"
+  },
+  {
+   "t": 162.4,
+   "w": "tap"
+  },
+  {
+   "t": 162.96,
+   "w": "away"
+  },
+  {
+   "t": 164.51,
+   "w": "We"
+  },
+  {
+   "t": 166.05,
+   "w": "one"
+  },
+  {
+   "t": 167.6,
+   "w": "tap"
+  },
+  {
+   "t": 167.6,
+   "w": "away"
+  },
+  {
+   "t": 171.68,
+   "w": "one"
+  },
+  {
+   "t": 171.84,
+   "w": "tap"
+  },
+  {
+   "t": 171.84,
+   "w": "away"
+  },
+  {
+   "t": 171.84,
+   "w": "so"
+  },
+  {
+   "t": 171.84,
+   "w": "why"
+  },
+  {
+   "t": 171.84,
+   "w": "do"
+  },
+  {
+   "t": 171.84,
+   "w": "I"
+  },
+  {
+   "t": 171.84,
+   "w": "feel"
+  },
+  {
+   "t": 171.84,
+   "w": "alone"
+  },
+  {
+   "t": 171.84,
+   "w": "in"
+  },
+  {
+   "t": 172.0,
+   "w": "a"
+  },
+  {
+   "t": 172.24,
+   "w": "room"
+  },
+  {
+   "t": 172.48,
+   "w": "full"
+  },
+  {
+   "t": 172.64,
+   "w": "of"
+  },
+  {
+   "t": 172.72,
+   "w": "names"
+  },
+  {
+   "t": 173.76,
+   "w": "one"
+  },
+  {
+   "t": 174.08,
+   "w": "tap"
+  },
+  {
+   "t": 174.4,
+   "w": "away"
+  },
+  {
+   "t": 174.96,
+   "w": "and"
+  },
+  {
+   "t": 175.28,
+   "w": "still"
+  },
+  {
+   "t": 175.28,
+   "w": "so"
+  },
+  {
+   "t": 175.6,
+   "w": "far"
+  },
+  {
+   "t": 176.32,
+   "w": "everybody"
+  },
+  {
+   "t": 179.44,
+   "w": "online"
+  },
+  {
+   "t": 179.52,
+   "w": "nobody"
+  },
+  {
+   "t": 181.04,
+   "w": "where"
+  },
+  {
+   "t": 182.64,
+   "w": "you"
+  },
+  {
+   "t": 182.8,
+   "w": "are"
+  }
+ ],
+ "lrc": "[00:02.48]Yeah\n[00:04.40]one tap away\n[00:08.40]but somehow everybody far now\n[00:13.44]uh\n[00:14.64]check it\n[00:15.28]Back-back when the screen made the room glow\n[00:18.08]I thought the whole world would move close\n[00:20.40]old names popping up like whoa though\n[00:23.36]middle school faces in a new post\n[00:24.96]I thought we’d talk-talk, really get honest\n[00:27.92]drop the mask, no fake persona\n[00:30.16]find your tribe, find your people\n[00:32.80]make the whole cold world feel warmer\n[00:35.44]Ads in the cracks, brands in the chat\n[00:37.76]everybody got stats, everybody wants claps\n[00:40.24]everybody got reach but don’t reach back\n[00:42.80]how we got this close and lost contact?\n[00:45.28]You can see me in a second\n[00:47.84]You can call me any day\n[00:50.40]You can love me in private\n[00:52.32]But scroll right past my name\n[00:55.36]Funny how we got connected\n[00:57.44]Then forgot how to stay\n[01:00.48]You're right there in my pocket\n[01:02.16]But you feel a world away\n[01:03.68]One tap away (one tap away)\n[01:08.88]From a real conversation but we don't say a thing\n[01:11.52]We're one tap away\n[01:13.84]From \"I see you keep going\" from \"I'm proud of your dream\"\n[01:16.72]Save your likes for the strangers\n[01:18.24]Save your hearts for the stars\n[01:21.60]But the ones who really know you act like loving you is hard\n[01:26.16]One tap away\n[01:27.68]So why do I feel alone in a room full of names?\n[01:31.84]Tap, tap, but you don't reach back\n[01:34.32]Heart, heart, but it don't feel like that\n[01:36.96]Close, close, close, but we don't connect\n[01:39.20]One tap away and we still forget\n[01:42.00]Click, click, click, everybody got a new rule\n[01:44.80]Don't hype friends that ain't cool, cool\n[01:47.60]Save that love for the big names\n[01:49.52]Blue checks, big chains, big views\n[01:52.00]Then if a stranger blow up overnight\n[01:54.72]Everybody swear they saw the light\n[01:56.48]Same ones quiet when you need a fire\n[01:59.28]Now they in the comments like \"that's my guy\"\n[02:01.92]We one tap away\n[02:04.48]one tap away\n[02:05.44]from a real conversation\n[02:09.76]but we don’t say a thing\n[02:12.64]Save your likes for the strangers\n[02:24.40]save your hearts for the stars\n[02:27.68]but the ones who really know you\n[02:29.92]act like loving you is hard\n[02:32.48]Maybe I was young\n[02:33.44]thinking wires could heal us\n[02:34.96]thinking all this light\n[02:36.00]would finally reveal us\n[02:37.44]I’m not hard to find\n[02:38.88]I’m not far away\n[02:39.76]I’m still right here\n[02:42.40]one tap away\n[02:44.51]We one tap away\n[02:51.68]one tap away\n[02:51.84]so why do I feel alone\n[02:51.84]in a room full of names?\n[02:53.76]one tap away\n[02:54.96]and still so far\n[02:56.32]everybody online\n[02:59.52]nobody where you are\n"
+}

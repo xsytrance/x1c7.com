@@ -1,0 +1,2761 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 684,
+  "clumps": [
+   {
+    "t": 0.0,
+    "n": 24
+   },
+   {
+    "t": 97.92,
+    "n": 9
+   }
+  ],
+  "clumpedWords": 33,
+  "clumpRatio": 0.048,
+  "span": 271.3,
+  "duration": 277.1,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "Voice"
+  },
+  {
+   "t": 0.0,
+   "w": "1"
+  },
+  {
+   "t": 0.0,
+   "w": "Raspy"
+  },
+  {
+   "t": 0.0,
+   "w": "Ayo"
+  },
+  {
+   "t": 0.0,
+   "w": "Voice"
+  },
+  {
+   "t": 0.0,
+   "w": "1"
+  },
+  {
+   "t": 0.0,
+   "w": "Dont"
+  },
+  {
+   "t": 0.0,
+   "w": "touch"
+  },
+  {
+   "t": 0.0,
+   "w": "that"
+  },
+  {
+   "t": 0.0,
+   "w": "hat"
+  },
+  {
+   "t": 0.0,
+   "w": "Voice"
+  },
+  {
+   "t": 0.0,
+   "w": "2"
+  },
+  {
+   "t": 0.0,
+   "w": "Crazy"
+  },
+  {
+   "t": 0.0,
+   "w": "Whisper"
+  },
+  {
+   "t": 0.0,
+   "w": "Heh"
+  },
+  {
+   "t": 0.0,
+   "w": "too"
+  },
+  {
+   "t": 0.0,
+   "w": "late"
+  },
+  {
+   "t": 0.0,
+   "w": "Both"
+  },
+  {
+   "t": 0.0,
+   "w": "Brooms"
+  },
+  {
+   "t": 0.0,
+   "w": "in"
+  },
+  {
+   "t": 0.0,
+   "w": "the"
+  },
+  {
+   "t": 0.0,
+   "w": "boiler"
+  },
+  {
+   "t": 0.0,
+   "w": "room"
+  },
+  {
+   "t": 0.0,
+   "w": "Brooms"
+  },
+  {
+   "t": 29.44,
+   "w": "in"
+  },
+  {
+   "t": 29.6,
+   "w": "the"
+  },
+  {
+   "t": 29.68,
+   "w": "boiler"
+  },
+  {
+   "t": 30.0,
+   "w": "room"
+  },
+  {
+   "t": 30.32,
+   "w": "water"
+  },
+  {
+   "t": 30.56,
+   "w": "starts"
+  },
+  {
+   "t": 30.88,
+   "w": "to"
+  },
+  {
+   "t": 30.88,
+   "w": "rise"
+  },
+  {
+   "t": 31.52,
+   "w": "little"
+  },
+  {
+   "t": 31.84,
+   "w": "mouse"
+  },
+  {
+   "t": 32.08,
+   "w": "grinning"
+  },
+  {
+   "t": 32.48,
+   "w": "with"
+  },
+  {
+   "t": 32.64,
+   "w": "the"
+  },
+  {
+   "t": 32.72,
+   "w": "stars"
+  },
+  {
+   "t": 33.2,
+   "w": "in"
+  },
+  {
+   "t": 33.28,
+   "w": "his"
+  },
+  {
+   "t": 33.44,
+   "w": "eyes"
+  },
+  {
+   "t": 33.92,
+   "w": "Brooms"
+  },
+  {
+   "t": 34.4,
+   "w": "in"
+  },
+  {
+   "t": 34.48,
+   "w": "the"
+  },
+  {
+   "t": 34.56,
+   "w": "boiler"
+  },
+  {
+   "t": 34.88,
+   "w": "room"
+  },
+  {
+   "t": 35.28,
+   "w": "knocking"
+  },
+  {
+   "t": 35.6,
+   "w": "at"
+  },
+  {
+   "t": 35.76,
+   "w": "the"
+  },
+  {
+   "t": 35.76,
+   "w": "door"
+  },
+  {
+   "t": 36.32,
+   "w": "spell"
+  },
+  {
+   "t": 36.72,
+   "w": "got"
+  },
+  {
+   "t": 37.04,
+   "w": "loose"
+  },
+  {
+   "t": 37.44,
+   "w": "and"
+  },
+  {
+   "t": 37.6,
+   "w": "it"
+  },
+  {
+   "t": 37.68,
+   "w": "hungry"
+  },
+  {
+   "t": 37.92,
+   "w": "for"
+  },
+  {
+   "t": 38.16,
+   "w": "more"
+  },
+  {
+   "t": 38.72,
+   "w": "Blackandwhite"
+  },
+  {
+   "t": 39.52,
+   "w": "world"
+  },
+  {
+   "t": 39.84,
+   "w": "but"
+  },
+  {
+   "t": 40.0,
+   "w": "the"
+  },
+  {
+   "t": 40.08,
+   "w": "money"
+  },
+  {
+   "t": 40.4,
+   "w": "still"
+  },
+  {
+   "t": 40.72,
+   "w": "gold"
+  },
+  {
+   "t": 41.2,
+   "w": "whole"
+  },
+  {
+   "t": 41.44,
+   "w": "tower"
+  },
+  {
+   "t": 41.92,
+   "w": "shaking"
+  },
+  {
+   "t": 42.32,
+   "w": "when"
+  },
+  {
+   "t": 42.48,
+   "w": "the"
+  },
+  {
+   "t": 42.56,
+   "w": "wild"
+  },
+  {
+   "t": 42.88,
+   "w": "drums"
+  },
+  {
+   "t": 43.28,
+   "w": "roll"
+  },
+  {
+   "t": 43.76,
+   "w": "Brooms"
+  },
+  {
+   "t": 44.16,
+   "w": "in"
+  },
+  {
+   "t": 44.32,
+   "w": "the"
+  },
+  {
+   "t": 44.4,
+   "w": "boiler"
+  },
+  {
+   "t": 44.72,
+   "w": "room"
+  },
+  {
+   "t": 45.04,
+   "w": "moon"
+  },
+  {
+   "t": 45.28,
+   "w": "turned"
+  },
+  {
+   "t": 45.68,
+   "w": "blue"
+  },
+  {
+   "t": 46.24,
+   "w": "one"
+  },
+  {
+   "t": 46.56,
+   "w": "wrong"
+  },
+  {
+   "t": 46.8,
+   "w": "spell"
+  },
+  {
+   "t": 47.28,
+   "w": "and"
+  },
+  {
+   "t": 47.36,
+   "w": "the"
+  },
+  {
+   "t": 47.44,
+   "w": "whole"
+  },
+  {
+   "t": 47.84,
+   "w": "crew"
+  },
+  {
+   "t": 48.08,
+   "w": "doomed"
+  },
+  {
+   "t": 48.64,
+   "w": "I"
+  },
+  {
+   "t": 48.72,
+   "w": "came"
+  },
+  {
+   "t": 49.04,
+   "w": "through"
+  },
+  {
+   "t": 49.28,
+   "w": "small"
+  },
+  {
+   "t": 49.68,
+   "w": "with"
+  },
+  {
+   "t": 49.84,
+   "w": "the"
+  },
+  {
+   "t": 50.0,
+   "w": "hat"
+  },
+  {
+   "t": 50.32,
+   "w": "pulled"
+  },
+  {
+   "t": 50.56,
+   "w": "low"
+  },
+  {
+   "t": 51.04,
+   "w": "stars"
+  },
+  {
+   "t": 51.52,
+   "w": "on"
+  },
+  {
+   "t": 51.68,
+   "w": "the"
+  },
+  {
+   "t": 51.76,
+   "w": "brim"
+  },
+  {
+   "t": 52.16,
+   "w": "and"
+  },
+  {
+   "t": 52.32,
+   "w": "the"
+  },
+  {
+   "t": 52.32,
+   "w": "gloves"
+  },
+  {
+   "t": 52.72,
+   "w": "still"
+  },
+  {
+   "t": 52.96,
+   "w": "glow"
+  },
+  {
+   "t": 53.52,
+   "w": "Strings"
+  },
+  {
+   "t": 53.92,
+   "w": "go"
+  },
+  {
+   "t": 54.16,
+   "w": "stab"
+  },
+  {
+   "t": 54.72,
+   "w": "bassoon"
+  },
+  {
+   "t": 55.2,
+   "w": "go"
+  },
+  {
+   "t": 55.44,
+   "w": "low"
+  },
+  {
+   "t": 55.76,
+   "w": "broom"
+  },
+  {
+   "t": 56.4,
+   "w": "got"
+  },
+  {
+   "t": 56.56,
+   "w": "a"
+  },
+  {
+   "t": 56.64,
+   "w": "bucket"
+  },
+  {
+   "t": 57.04,
+   "w": "and"
+  },
+  {
+   "t": 57.2,
+   "w": "it"
+  },
+  {
+   "t": 57.28,
+   "w": "march"
+  },
+  {
+   "t": 57.68,
+   "w": "like"
+  },
+  {
+   "t": 57.92,
+   "w": "woah"
+  },
+  {
+   "t": 58.4,
+   "w": "Told"
+  },
+  {
+   "t": 58.72,
+   "w": "me"
+  },
+  {
+   "t": 58.88,
+   "w": "dont"
+  },
+  {
+   "t": 59.12,
+   "w": "touch"
+  },
+  {
+   "t": 59.52,
+   "w": "so"
+  },
+  {
+   "t": 59.6,
+   "w": "I"
+  },
+  {
+   "t": 59.76,
+   "w": "touched"
+  },
+  {
+   "t": 60.16,
+   "w": "that"
+  },
+  {
+   "t": 60.4,
+   "w": "quick"
+  },
+  {
+   "t": 60.64,
+   "w": "now"
+  },
+  {
+   "t": 60.8,
+   "w": "the"
+  },
+  {
+   "t": 61.04,
+   "w": "whole"
+  },
+  {
+   "t": 61.28,
+   "w": "tower"
+  },
+  {
+   "t": 61.6,
+   "w": "sick"
+  },
+  {
+   "t": 62.0,
+   "w": "and"
+  },
+  {
+   "t": 62.08,
+   "w": "the"
+  },
+  {
+   "t": 62.16,
+   "w": "floorboards"
+  },
+  {
+   "t": 62.8,
+   "w": "shift"
+  },
+  {
+   "t": 63.2,
+   "w": "One"
+  },
+  {
+   "t": 63.44,
+   "w": "broom"
+  },
+  {
+   "t": 63.76,
+   "w": "two"
+  },
+  {
+   "t": 64.08,
+   "w": "brooms"
+  },
+  {
+   "t": 64.72,
+   "w": "three"
+  },
+  {
+   "t": 64.96,
+   "w": "more"
+  },
+  {
+   "t": 65.36,
+   "w": "rise"
+  },
+  {
+   "t": 65.76,
+   "w": "black"
+  },
+  {
+   "t": 66.16,
+   "w": "ink"
+  },
+  {
+   "t": 66.32,
+   "w": "magic"
+  },
+  {
+   "t": 66.88,
+   "w": "in"
+  },
+  {
+   "t": 67.04,
+   "w": "the"
+  },
+  {
+   "t": 67.12,
+   "w": "cartoon"
+  },
+  {
+   "t": 68.24,
+   "w": "eyes"
+  },
+  {
+   "t": 68.32,
+   "w": "Timpani"
+  },
+  {
+   "t": 68.88,
+   "w": "boom"
+  },
+  {
+   "t": 69.44,
+   "w": "when"
+  },
+  {
+   "t": 69.52,
+   "w": "the"
+  },
+  {
+   "t": 69.52,
+   "w": "stairwell"
+  },
+  {
+   "t": 70.16,
+   "w": "crack"
+  },
+  {
+   "t": 70.72,
+   "w": "oboe"
+  },
+  {
+   "t": 71.12,
+   "w": "line"
+  },
+  {
+   "t": 71.44,
+   "w": "howlin"
+  },
+  {
+   "t": 71.76,
+   "w": "and"
+  },
+  {
+   "t": 71.92,
+   "w": "the"
+  },
+  {
+   "t": 72.0,
+   "w": "shadows"
+  },
+  {
+   "t": 72.4,
+   "w": "clap"
+  },
+  {
+   "t": 72.64,
+   "w": "back"
+  },
+  {
+   "t": 73.28,
+   "w": "Moonlight"
+  },
+  {
+   "t": 73.92,
+   "w": "bends"
+  },
+  {
+   "t": 74.24,
+   "w": "when"
+  },
+  {
+   "t": 74.4,
+   "w": "the"
+  },
+  {
+   "t": 74.48,
+   "w": "wand"
+  },
+  {
+   "t": 74.88,
+   "w": "goes"
+  },
+  {
+   "t": 75.12,
+   "w": "snap"
+  },
+  {
+   "t": 75.6,
+   "w": "shadow"
+  },
+  {
+   "t": 76.16,
+   "w": "on"
+  },
+  {
+   "t": 76.24,
+   "w": "the"
+  },
+  {
+   "t": 76.4,
+   "w": "wall"
+  },
+  {
+   "t": 76.72,
+   "w": "with"
+  },
+  {
+   "t": 76.88,
+   "w": "a"
+  },
+  {
+   "t": 76.96,
+   "w": "longeared"
+  },
+  {
+   "t": 77.6,
+   "w": "cap"
+  },
+  {
+   "t": 77.92,
+   "w": "I"
+  },
+  {
+   "t": 78.16,
+   "w": "aint"
+  },
+  {
+   "t": 78.16,
+   "w": "scared"
+  },
+  {
+   "t": 79.04,
+   "w": "Im"
+  },
+  {
+   "t": 79.2,
+   "w": "just"
+  },
+  {
+   "t": 79.44,
+   "w": "deep"
+  },
+  {
+   "t": 79.76,
+   "w": "in"
+  },
+  {
+   "t": 79.92,
+   "w": "the"
+  },
+  {
+   "t": 80.0,
+   "w": "trick"
+  },
+  {
+   "t": 80.64,
+   "w": "too"
+  },
+  {
+   "t": 80.8,
+   "w": "much"
+  },
+  {
+   "t": 81.2,
+   "w": "power"
+  },
+  {
+   "t": 81.6,
+   "w": "for"
+  },
+  {
+   "t": 81.76,
+   "w": "a"
+  },
+  {
+   "t": 81.76,
+   "w": "little"
+  },
+  {
+   "t": 82.16,
+   "w": "dude"
+  },
+  {
+   "t": 82.4,
+   "w": "slick"
+  },
+  {
+   "t": 82.8,
+   "w": "Blackandwhite"
+  },
+  {
+   "t": 83.68,
+   "w": "frame"
+  },
+  {
+   "t": 84.08,
+   "w": "but"
+  },
+  {
+   "t": 84.24,
+   "w": "the"
+  },
+  {
+   "t": 84.32,
+   "w": "gold"
+  },
+  {
+   "t": 84.64,
+   "w": "still"
+  },
+  {
+   "t": 84.88,
+   "w": "gleam"
+  },
+  {
+   "t": 85.52,
+   "w": "money"
+  },
+  {
+   "t": 86.0,
+   "w": "in"
+  },
+  {
+   "t": 86.08,
+   "w": "the"
+  },
+  {
+   "t": 86.16,
+   "w": "fog"
+  },
+  {
+   "t": 86.56,
+   "w": "and"
+  },
+  {
+   "t": 86.72,
+   "w": "the"
+  },
+  {
+   "t": 86.72,
+   "w": "magic"
+  },
+  {
+   "t": 87.2,
+   "w": "in"
+  },
+  {
+   "t": 87.28,
+   "w": "steam"
+  },
+  {
+   "t": 88.24,
+   "w": "Voice"
+  },
+  {
+   "t": 88.4,
+   "w": "1"
+  },
+  {
+   "t": 88.4,
+   "w": "Who"
+  },
+  {
+   "t": 88.4,
+   "w": "cast"
+  },
+  {
+   "t": 88.8,
+   "w": "that"
+  },
+  {
+   "t": 89.6,
+   "w": "Voice"
+  },
+  {
+   "t": 89.92,
+   "w": "2"
+  },
+  {
+   "t": 89.92,
+   "w": "Not"
+  },
+  {
+   "t": 89.97,
+   "w": "me"
+  },
+  {
+   "t": 90.03,
+   "w": "Voice"
+  },
+  {
+   "t": 90.08,
+   "w": "1"
+  },
+  {
+   "t": 90.13,
+   "w": "Who"
+  },
+  {
+   "t": 90.19,
+   "w": "touched"
+  },
+  {
+   "t": 90.24,
+   "w": "the"
+  },
+  {
+   "t": 90.4,
+   "w": "hat"
+  },
+  {
+   "t": 91.04,
+   "w": "Voice"
+  },
+  {
+   "t": 91.36,
+   "w": "2"
+  },
+  {
+   "t": 91.92,
+   "w": "Not"
+  },
+  {
+   "t": 92.0,
+   "w": "me"
+  },
+  {
+   "t": 92.0,
+   "w": "Voice"
+  },
+  {
+   "t": 92.0,
+   "w": "1"
+  },
+  {
+   "t": 93.12,
+   "w": "Who"
+  },
+  {
+   "t": 95.44,
+   "w": "flooded"
+  },
+  {
+   "t": 96.24,
+   "w": "the"
+  },
+  {
+   "t": 96.24,
+   "w": "room"
+  },
+  {
+   "t": 96.24,
+   "w": "Voice"
+  },
+  {
+   "t": 96.24,
+   "w": "2"
+  },
+  {
+   "t": 96.24,
+   "w": "Couldnt"
+  },
+  {
+   "t": 96.48,
+   "w": "be"
+  },
+  {
+   "t": 96.56,
+   "w": "me"
+  },
+  {
+   "t": 97.24,
+   "w": "Both"
+  },
+  {
+   "t": 97.92,
+   "w": "Then"
+  },
+  {
+   "t": 97.92,
+   "w": "why"
+  },
+  {
+   "t": 97.92,
+   "w": "the"
+  },
+  {
+   "t": 97.92,
+   "w": "broom"
+  },
+  {
+   "t": 97.92,
+   "w": "got"
+  },
+  {
+   "t": 97.92,
+   "w": "a"
+  },
+  {
+   "t": 97.92,
+   "w": "whole"
+  },
+  {
+   "t": 97.92,
+   "w": "army"
+  },
+  {
+   "t": 97.92,
+   "w": "Brooms"
+  },
+  {
+   "t": 98.16,
+   "w": "in"
+  },
+  {
+   "t": 98.4,
+   "w": "the"
+  },
+  {
+   "t": 98.48,
+   "w": "boiler"
+  },
+  {
+   "t": 98.8,
+   "w": "room"
+  },
+  {
+   "t": 99.12,
+   "w": "water"
+  },
+  {
+   "t": 99.36,
+   "w": "starts"
+  },
+  {
+   "t": 99.68,
+   "w": "to"
+  },
+  {
+   "t": 99.76,
+   "w": "rise"
+  },
+  {
+   "t": 100.32,
+   "w": "little"
+  },
+  {
+   "t": 100.64,
+   "w": "mouse"
+  },
+  {
+   "t": 100.96,
+   "w": "grinning"
+  },
+  {
+   "t": 101.28,
+   "w": "with"
+  },
+  {
+   "t": 101.44,
+   "w": "the"
+  },
+  {
+   "t": 101.52,
+   "w": "stars"
+  },
+  {
+   "t": 102.0,
+   "w": "in"
+  },
+  {
+   "t": 102.08,
+   "w": "his"
+  },
+  {
+   "t": 102.32,
+   "w": "eyes"
+  },
+  {
+   "t": 102.8,
+   "w": "Brooms"
+  },
+  {
+   "t": 103.2,
+   "w": "in"
+  },
+  {
+   "t": 103.28,
+   "w": "the"
+  },
+  {
+   "t": 103.36,
+   "w": "boiler"
+  },
+  {
+   "t": 103.68,
+   "w": "room"
+  },
+  {
+   "t": 104.08,
+   "w": "knocking"
+  },
+  {
+   "t": 104.4,
+   "w": "at"
+  },
+  {
+   "t": 104.56,
+   "w": "the"
+  },
+  {
+   "t": 104.56,
+   "w": "door"
+  },
+  {
+   "t": 105.12,
+   "w": "spell"
+  },
+  {
+   "t": 105.6,
+   "w": "got"
+  },
+  {
+   "t": 105.92,
+   "w": "loose"
+  },
+  {
+   "t": 106.24,
+   "w": "and"
+  },
+  {
+   "t": 106.4,
+   "w": "it"
+  },
+  {
+   "t": 106.56,
+   "w": "hungry"
+  },
+  {
+   "t": 106.96,
+   "w": "for"
+  },
+  {
+   "t": 107.12,
+   "w": "more"
+  },
+  {
+   "t": 107.68,
+   "w": "Blackandwhite"
+  },
+  {
+   "t": 108.4,
+   "w": "world"
+  },
+  {
+   "t": 108.72,
+   "w": "but"
+  },
+  {
+   "t": 108.88,
+   "w": "the"
+  },
+  {
+   "t": 108.88,
+   "w": "money"
+  },
+  {
+   "t": 109.2,
+   "w": "still"
+  },
+  {
+   "t": 109.52,
+   "w": "gold"
+  },
+  {
+   "t": 110.08,
+   "w": "whole"
+  },
+  {
+   "t": 110.32,
+   "w": "tower"
+  },
+  {
+   "t": 110.72,
+   "w": "shaking"
+  },
+  {
+   "t": 111.2,
+   "w": "when"
+  },
+  {
+   "t": 111.28,
+   "w": "the"
+  },
+  {
+   "t": 111.36,
+   "w": "wild"
+  },
+  {
+   "t": 111.76,
+   "w": "drums"
+  },
+  {
+   "t": 112.08,
+   "w": "roll"
+  },
+  {
+   "t": 112.64,
+   "w": "Brooms"
+  },
+  {
+   "t": 113.04,
+   "w": "in"
+  },
+  {
+   "t": 113.2,
+   "w": "the"
+  },
+  {
+   "t": 113.2,
+   "w": "boiler"
+  },
+  {
+   "t": 113.52,
+   "w": "room"
+  },
+  {
+   "t": 113.84,
+   "w": "moon"
+  },
+  {
+   "t": 114.16,
+   "w": "turned"
+  },
+  {
+   "t": 114.48,
+   "w": "blue"
+  },
+  {
+   "t": 115.04,
+   "w": "one"
+  },
+  {
+   "t": 115.44,
+   "w": "wrong"
+  },
+  {
+   "t": 115.68,
+   "w": "spell"
+  },
+  {
+   "t": 116.08,
+   "w": "and"
+  },
+  {
+   "t": 116.24,
+   "w": "the"
+  },
+  {
+   "t": 116.32,
+   "w": "whole"
+  },
+  {
+   "t": 116.64,
+   "w": "crew"
+  },
+  {
+   "t": 116.96,
+   "w": "doomed"
+  },
+  {
+   "t": 117.12,
+   "w": "I"
+  },
+  {
+   "t": 117.28,
+   "w": "seen"
+  },
+  {
+   "t": 117.44,
+   "w": "the"
+  },
+  {
+   "t": 117.52,
+   "w": "mop"
+  },
+  {
+   "t": 117.92,
+   "w": "grow"
+  },
+  {
+   "t": 118.16,
+   "w": "teeth"
+  },
+  {
+   "t": 118.56,
+   "w": "in"
+  },
+  {
+   "t": 118.72,
+   "w": "the"
+  },
+  {
+   "t": 118.8,
+   "w": "midnight"
+  },
+  {
+   "t": 119.28,
+   "w": "haze"
+  },
+  {
+   "t": 119.68,
+   "w": "seen"
+  },
+  {
+   "t": 120.08,
+   "w": "buckets"
+  },
+  {
+   "t": 120.4,
+   "w": "pour"
+  },
+  {
+   "t": 120.64,
+   "w": "rivers"
+  },
+  {
+   "t": 120.96,
+   "w": "through"
+  },
+  {
+   "t": 121.2,
+   "w": "a"
+  },
+  {
+   "t": 121.28,
+   "w": "hundred"
+  },
+  {
+   "t": 121.52,
+   "w": "stairways"
+  },
+  {
+   "t": 122.4,
+   "w": "Woodwinds"
+  },
+  {
+   "t": 122.8,
+   "w": "laughing"
+  },
+  {
+   "t": 123.6,
+   "w": "trumpets"
+  },
+  {
+   "t": 124.0,
+   "w": "go"
+  },
+  {
+   "t": 124.24,
+   "w": "crooked"
+  },
+  {
+   "t": 124.64,
+   "w": "whole"
+  },
+  {
+   "t": 124.88,
+   "w": "magic"
+  },
+  {
+   "t": 125.44,
+   "w": "tower"
+  },
+  {
+   "t": 125.76,
+   "w": "looking"
+  },
+  {
+   "t": 126.16,
+   "w": "haunted"
+  },
+  {
+   "t": 126.56,
+   "w": "and"
+  },
+  {
+   "t": 126.72,
+   "w": "flooded"
+  },
+  {
+   "t": 127.2,
+   "w": "Old"
+  },
+  {
+   "t": 127.68,
+   "w": "wizard"
+  },
+  {
+   "t": 127.76,
+   "w": "gone"
+  },
+  {
+   "t": 128.32,
+   "w": "but"
+  },
+  {
+   "t": 128.48,
+   "w": "the"
+  },
+  {
+   "t": 128.64,
+   "w": "hat"
+  },
+  {
+   "t": 128.88,
+   "w": "stayed"
+  },
+  {
+   "t": 129.28,
+   "w": "watching"
+  },
+  {
+   "t": 129.92,
+   "w": "every"
+  },
+  {
+   "t": 130.16,
+   "w": "little"
+  },
+  {
+   "t": 130.4,
+   "w": "sparkle"
+  },
+  {
+   "t": 131.36,
+   "w": "turned"
+  },
+  {
+   "t": 131.68,
+   "w": "toxic"
+  },
+  {
+   "t": 132.32,
+   "w": "Broomstick"
+  },
+  {
+   "t": 132.96,
+   "w": "army"
+  },
+  {
+   "t": 133.2,
+   "w": "with"
+  },
+  {
+   "t": 133.44,
+   "w": "the"
+  },
+  {
+   "t": 133.52,
+   "w": "woodenleg"
+  },
+  {
+   "t": 134.08,
+   "w": "stomp"
+  },
+  {
+   "t": 134.56,
+   "w": "tap"
+  },
+  {
+   "t": 134.88,
+   "w": "dance"
+  },
+  {
+   "t": 135.36,
+   "w": "terror"
+  },
+  {
+   "t": 135.68,
+   "w": "when"
+  },
+  {
+   "t": 135.92,
+   "w": "the"
+  },
+  {
+   "t": 135.92,
+   "w": "bassline"
+  },
+  {
+   "t": 136.64,
+   "w": "thump"
+  },
+  {
+   "t": 136.96,
+   "w": "I"
+  },
+  {
+   "t": 137.2,
+   "w": "told"
+  },
+  {
+   "t": 137.6,
+   "w": "little"
+  },
+  {
+   "t": 137.84,
+   "w": "homie"
+  },
+  {
+   "t": 138.16,
+   "w": "You"
+  },
+  {
+   "t": 138.32,
+   "w": "dont"
+  },
+  {
+   "t": 138.48,
+   "w": "know"
+  },
+  {
+   "t": 138.64,
+   "w": "that"
+  },
+  {
+   "t": 138.88,
+   "w": "spell"
+  },
+  {
+   "t": 139.28,
+   "w": "He"
+  },
+  {
+   "t": 139.36,
+   "w": "said"
+  },
+  {
+   "t": 139.6,
+   "w": "I"
+  },
+  {
+   "t": 139.76,
+   "w": "know"
+  },
+  {
+   "t": 139.84,
+   "w": "enough"
+  },
+  {
+   "t": 140.16,
+   "w": "to"
+  },
+  {
+   "t": 140.32,
+   "w": "make"
+  },
+  {
+   "t": 140.48,
+   "w": "the"
+  },
+  {
+   "t": 140.64,
+   "w": "whole"
+  },
+  {
+   "t": 140.96,
+   "w": "room"
+  },
+  {
+   "t": 141.36,
+   "w": "swell"
+  },
+  {
+   "t": 141.84,
+   "w": "Then"
+  },
+  {
+   "t": 142.08,
+   "w": "the"
+  },
+  {
+   "t": 142.08,
+   "w": "strings"
+  },
+  {
+   "t": 142.48,
+   "w": "start"
+  },
+  {
+   "t": 142.8,
+   "w": "chasing"
+  },
+  {
+   "t": 143.36,
+   "w": "ceiling"
+  },
+  {
+   "t": 143.76,
+   "w": "got"
+  },
+  {
+   "t": 144.32,
+   "w": "eyes"
+  },
+  {
+   "t": 144.56,
+   "w": "stars"
+  },
+  {
+   "t": 144.96,
+   "w": "in"
+  },
+  {
+   "t": 145.12,
+   "w": "the"
+  },
+  {
+   "t": 145.2,
+   "w": "robe"
+  },
+  {
+   "t": 145.52,
+   "w": "started"
+  },
+  {
+   "t": 145.84,
+   "w": "falling"
+  },
+  {
+   "t": 146.16,
+   "w": "from"
+  },
+  {
+   "t": 146.32,
+   "w": "the"
+  },
+  {
+   "t": 146.4,
+   "w": "sky"
+  },
+  {
+   "t": 147.12,
+   "w": "Cauldron"
+  },
+  {
+   "t": 147.68,
+   "w": "bubble"
+  },
+  {
+   "t": 148.08,
+   "w": "floorboards"
+  },
+  {
+   "t": 148.88,
+   "w": "split"
+  },
+  {
+   "t": 149.6,
+   "w": "one"
+  },
+  {
+   "t": 149.76,
+   "w": "more"
+  },
+  {
+   "t": 150.08,
+   "w": "chant"
+  },
+  {
+   "t": 150.56,
+   "w": "and"
+  },
+  {
+   "t": 150.64,
+   "w": "the"
+  },
+  {
+   "t": 150.72,
+   "w": "whole"
+  },
+  {
+   "t": 151.04,
+   "w": "place"
+  },
+  {
+   "t": 151.36,
+   "w": "flipped"
+  },
+  {
+   "t": 151.76,
+   "w": "Magic"
+  },
+  {
+   "t": 152.32,
+   "w": "aint"
+  },
+  {
+   "t": 152.64,
+   "w": "cute"
+  },
+  {
+   "t": 152.88,
+   "w": "when"
+  },
+  {
+   "t": 153.12,
+   "w": "the"
+  },
+  {
+   "t": 153.2,
+   "w": "shadows"
+  },
+  {
+   "t": 153.6,
+   "w": "get"
+  },
+  {
+   "t": 153.84,
+   "w": "tall"
+  },
+  {
+   "t": 154.32,
+   "w": "especially"
+  },
+  {
+   "t": 154.72,
+   "w": "when"
+  },
+  {
+   "t": 154.96,
+   "w": "the"
+  },
+  {
+   "t": 155.04,
+   "w": "mouse"
+  },
+  {
+   "t": 155.36,
+   "w": "got"
+  },
+  {
+   "t": 155.52,
+   "w": "control"
+  },
+  {
+   "t": 156.08,
+   "w": "of"
+  },
+  {
+   "t": 156.16,
+   "w": "it"
+  },
+  {
+   "t": 156.32,
+   "w": "all"
+  },
+  {
+   "t": 164.08,
+   "w": "Voice"
+  },
+  {
+   "t": 164.16,
+   "w": "1"
+  },
+  {
+   "t": 164.28,
+   "w": "Raspy"
+  },
+  {
+   "t": 164.36,
+   "w": "They"
+  },
+  {
+   "t": 164.4,
+   "w": "said"
+  },
+  {
+   "t": 164.64,
+   "w": "he"
+  },
+  {
+   "t": 164.72,
+   "w": "was"
+  },
+  {
+   "t": 164.96,
+   "w": "just"
+  },
+  {
+   "t": 165.28,
+   "w": "an"
+  },
+  {
+   "t": 165.44,
+   "w": "apprentice"
+  },
+  {
+   "t": 167.76,
+   "w": "Voice"
+  },
+  {
+   "t": 168.32,
+   "w": "2"
+  },
+  {
+   "t": 168.48,
+   "w": "Laughing"
+  },
+  {
+   "t": 168.48,
+   "w": "Apprentice"
+  },
+  {
+   "t": 169.04,
+   "w": "Voice"
+  },
+  {
+   "t": 169.32,
+   "w": "1"
+  },
+  {
+   "t": 169.56,
+   "w": "Yeah"
+  },
+  {
+   "t": 170.11,
+   "w": "Voice"
+  },
+  {
+   "t": 170.96,
+   "w": "2"
+  },
+  {
+   "t": 171.81,
+   "w": "Then"
+  },
+  {
+   "t": 173.13,
+   "w": "why"
+  },
+  {
+   "t": 174.9,
+   "w": "the"
+  },
+  {
+   "t": 176.68,
+   "w": "broom"
+  },
+  {
+   "t": 178.45,
+   "w": "saluting"
+  },
+  {
+   "t": 180.22,
+   "w": "him"
+  },
+  {
+   "t": 182.0,
+   "w": "Both"
+  },
+  {
+   "t": 182.43,
+   "w": "Brooms"
+  },
+  {
+   "t": 182.82,
+   "w": "in"
+  },
+  {
+   "t": 183.2,
+   "w": "the"
+  },
+  {
+   "t": 183.28,
+   "w": "boiler"
+  },
+  {
+   "t": 183.76,
+   "w": "room"
+  },
+  {
+   "t": 189.36,
+   "w": "Voice"
+  },
+  {
+   "t": 189.76,
+   "w": "1"
+  },
+  {
+   "t": 189.76,
+   "w": "Hat"
+  },
+  {
+   "t": 189.76,
+   "w": "too"
+  },
+  {
+   "t": 190.0,
+   "w": "big"
+  },
+  {
+   "t": 190.72,
+   "w": "Voice"
+  },
+  {
+   "t": 190.72,
+   "w": "2"
+  },
+  {
+   "t": 191.2,
+   "w": "Spell"
+  },
+  {
+   "t": 191.92,
+   "w": "too"
+  },
+  {
+   "t": 192.32,
+   "w": "strong"
+  },
+  {
+   "t": 192.32,
+   "w": "Voice"
+  },
+  {
+   "t": 192.32,
+   "w": "1"
+  },
+  {
+   "t": 192.32,
+   "w": "Broom"
+  },
+  {
+   "t": 192.64,
+   "w": "too"
+  },
+  {
+   "t": 192.64,
+   "w": "wild"
+  },
+  {
+   "t": 193.2,
+   "w": "Voice"
+  },
+  {
+   "t": 193.52,
+   "w": "2"
+  },
+  {
+   "t": 195.68,
+   "w": "Night"
+  },
+  {
+   "t": 195.68,
+   "w": "too"
+  },
+  {
+   "t": 196.0,
+   "w": "long"
+  },
+  {
+   "t": 196.32,
+   "w": "Voice"
+  },
+  {
+   "t": 197.2,
+   "w": "1"
+  },
+  {
+   "t": 197.52,
+   "w": "Water"
+  },
+  {
+   "t": 198.09,
+   "w": "too"
+  },
+  {
+   "t": 198.12,
+   "w": "high"
+  },
+  {
+   "t": 198.15,
+   "w": "Voice"
+  },
+  {
+   "t": 198.16,
+   "w": "2"
+  },
+  {
+   "t": 199.68,
+   "w": "Door"
+  },
+  {
+   "t": 200.0,
+   "w": "wont"
+  },
+  {
+   "t": 200.2,
+   "w": "move"
+  },
+  {
+   "t": 200.4,
+   "w": "Voice"
+  },
+  {
+   "t": 200.71,
+   "w": "1"
+  },
+  {
+   "t": 201.03,
+   "w": "Whole"
+  },
+  {
+   "t": 201.34,
+   "w": "tower"
+  },
+  {
+   "t": 201.65,
+   "w": "drowning"
+  },
+  {
+   "t": 201.97,
+   "w": "Voice"
+  },
+  {
+   "t": 202.28,
+   "w": "2"
+  },
+  {
+   "t": 202.59,
+   "w": "Still"
+  },
+  {
+   "t": 202.9,
+   "w": "in"
+  },
+  {
+   "t": 203.22,
+   "w": "groove"
+  },
+  {
+   "t": 203.53,
+   "w": "Voice"
+  },
+  {
+   "t": 203.84,
+   "w": "1"
+  },
+  {
+   "t": 204.18,
+   "w": "Strings"
+  },
+  {
+   "t": 204.55,
+   "w": "go"
+  },
+  {
+   "t": 204.92,
+   "w": "sharp"
+  },
+  {
+   "t": 205.29,
+   "w": "Voice"
+  },
+  {
+   "t": 205.66,
+   "w": "2"
+  },
+  {
+   "t": 205.87,
+   "w": "Bassoon"
+  },
+  {
+   "t": 205.93,
+   "w": "go"
+  },
+  {
+   "t": 205.99,
+   "w": "doom"
+  },
+  {
+   "t": 206.06,
+   "w": "Voice"
+  },
+  {
+   "t": 206.12,
+   "w": "1"
+  },
+  {
+   "t": 206.18,
+   "w": "Timpani"
+  },
+  {
+   "t": 206.24,
+   "w": "hit"
+  },
+  {
+   "t": 206.72,
+   "w": "Voice"
+  },
+  {
+   "t": 206.79,
+   "w": "2"
+  },
+  {
+   "t": 206.93,
+   "w": "Oboes"
+  },
+  {
+   "t": 207.06,
+   "w": "fill"
+  },
+  {
+   "t": 207.2,
+   "w": "the"
+  },
+  {
+   "t": 207.34,
+   "w": "room"
+  },
+  {
+   "t": 207.47,
+   "w": "Voice"
+  },
+  {
+   "t": 207.61,
+   "w": "1"
+  },
+  {
+   "t": 207.75,
+   "w": "One"
+  },
+  {
+   "t": 207.88,
+   "w": "little"
+  },
+  {
+   "t": 208.02,
+   "w": "mouse"
+  },
+  {
+   "t": 208.16,
+   "w": "Voice"
+  },
+  {
+   "t": 208.3,
+   "w": "2"
+  },
+  {
+   "t": 208.43,
+   "w": "Big"
+  },
+  {
+   "t": 208.57,
+   "w": "mistake"
+  },
+  {
+   "t": 208.71,
+   "w": "Voice"
+  },
+  {
+   "t": 208.84,
+   "w": "1"
+  },
+  {
+   "t": 208.98,
+   "w": "One"
+  },
+  {
+   "t": 209.12,
+   "w": "little"
+  },
+  {
+   "t": 209.26,
+   "w": "wand"
+  },
+  {
+   "t": 209.39,
+   "w": "Voice"
+  },
+  {
+   "t": 209.53,
+   "w": "2"
+  },
+  {
+   "t": 209.67,
+   "w": "Whole"
+  },
+  {
+   "t": 209.81,
+   "w": "world"
+  },
+  {
+   "t": 209.94,
+   "w": "shake"
+  },
+  {
+   "t": 210.08,
+   "w": "Both"
+  },
+  {
+   "t": 210.22,
+   "w": "Blackandwhite"
+  },
+  {
+   "t": 210.35,
+   "w": "world"
+  },
+  {
+   "t": 210.49,
+   "w": "but"
+  },
+  {
+   "t": 210.63,
+   "w": "the"
+  },
+  {
+   "t": 210.76,
+   "w": "money"
+  },
+  {
+   "t": 210.9,
+   "w": "still"
+  },
+  {
+   "t": 211.04,
+   "w": "gold"
+  },
+  {
+   "t": 211.6,
+   "w": "whole"
+  },
+  {
+   "t": 211.84,
+   "w": "crew"
+  },
+  {
+   "t": 212.08,
+   "w": "slipping"
+  },
+  {
+   "t": 212.44,
+   "w": "while"
+  },
+  {
+   "t": 212.8,
+   "w": "the"
+  },
+  {
+   "t": 212.88,
+   "w": "spell"
+  },
+  {
+   "t": 213.2,
+   "w": "takes"
+  },
+  {
+   "t": 213.6,
+   "w": "hold"
+  },
+  {
+   "t": 213.92,
+   "w": "No"
+  },
+  {
+   "t": 214.08,
+   "w": "crown"
+  },
+  {
+   "t": 214.48,
+   "w": "no"
+  },
+  {
+   "t": 214.8,
+   "w": "throne"
+  },
+  {
+   "t": 215.12,
+   "w": "just"
+  },
+  {
+   "t": 215.28,
+   "w": "a"
+  },
+  {
+   "t": 215.44,
+   "w": "hat"
+  },
+  {
+   "t": 215.76,
+   "w": "and"
+  },
+  {
+   "t": 215.92,
+   "w": "a"
+  },
+  {
+   "t": 215.92,
+   "w": "grin"
+  },
+  {
+   "t": 216.32,
+   "w": "then"
+  },
+  {
+   "t": 216.48,
+   "w": "the"
+  },
+  {
+   "t": 216.56,
+   "w": "broomsticks"
+  },
+  {
+   "t": 217.2,
+   "w": "rise"
+  },
+  {
+   "t": 217.6,
+   "w": "and"
+  },
+  {
+   "t": 217.76,
+   "w": "the"
+  },
+  {
+   "t": 217.84,
+   "w": "nightmare"
+  },
+  {
+   "t": 218.4,
+   "w": "begins"
+  },
+  {
+   "t": 221.04,
+   "w": "Brooms"
+  },
+  {
+   "t": 222.56,
+   "w": "in"
+  },
+  {
+   "t": 223.1,
+   "w": "the"
+  },
+  {
+   "t": 223.85,
+   "w": "boiler"
+  },
+  {
+   "t": 224.61,
+   "w": "room"
+  },
+  {
+   "t": 225.36,
+   "w": "water"
+  },
+  {
+   "t": 225.6,
+   "w": "starts"
+  },
+  {
+   "t": 225.84,
+   "w": "to"
+  },
+  {
+   "t": 225.92,
+   "w": "rise"
+  },
+  {
+   "t": 226.48,
+   "w": "little"
+  },
+  {
+   "t": 226.88,
+   "w": "mouse"
+  },
+  {
+   "t": 227.12,
+   "w": "grinning"
+  },
+  {
+   "t": 227.52,
+   "w": "with"
+  },
+  {
+   "t": 227.68,
+   "w": "the"
+  },
+  {
+   "t": 227.76,
+   "w": "stars"
+  },
+  {
+   "t": 228.16,
+   "w": "in"
+  },
+  {
+   "t": 228.32,
+   "w": "his"
+  },
+  {
+   "t": 228.48,
+   "w": "eyes"
+  },
+  {
+   "t": 229.04,
+   "w": "Brooms"
+  },
+  {
+   "t": 229.36,
+   "w": "in"
+  },
+  {
+   "t": 229.52,
+   "w": "the"
+  },
+  {
+   "t": 229.6,
+   "w": "boiler"
+  },
+  {
+   "t": 229.92,
+   "w": "room"
+  },
+  {
+   "t": 230.32,
+   "w": "knocking"
+  },
+  {
+   "t": 230.64,
+   "w": "at"
+  },
+  {
+   "t": 230.72,
+   "w": "the"
+  },
+  {
+   "t": 230.8,
+   "w": "door"
+  },
+  {
+   "t": 231.28,
+   "w": "spell"
+  },
+  {
+   "t": 231.76,
+   "w": "got"
+  },
+  {
+   "t": 232.08,
+   "w": "loose"
+  },
+  {
+   "t": 232.48,
+   "w": "and"
+  },
+  {
+   "t": 232.64,
+   "w": "it"
+  },
+  {
+   "t": 232.72,
+   "w": "hungry"
+  },
+  {
+   "t": 233.2,
+   "w": "for"
+  },
+  {
+   "t": 233.36,
+   "w": "more"
+  },
+  {
+   "t": 234.16,
+   "w": "Blackandwhite"
+  },
+  {
+   "t": 234.56,
+   "w": "world"
+  },
+  {
+   "t": 234.88,
+   "w": "but"
+  },
+  {
+   "t": 235.04,
+   "w": "the"
+  },
+  {
+   "t": 235.12,
+   "w": "money"
+  },
+  {
+   "t": 235.44,
+   "w": "still"
+  },
+  {
+   "t": 235.76,
+   "w": "gold"
+  },
+  {
+   "t": 236.32,
+   "w": "whole"
+  },
+  {
+   "t": 236.56,
+   "w": "tower"
+  },
+  {
+   "t": 236.96,
+   "w": "shaking"
+  },
+  {
+   "t": 237.44,
+   "w": "when"
+  },
+  {
+   "t": 237.52,
+   "w": "the"
+  },
+  {
+   "t": 237.6,
+   "w": "wild"
+  },
+  {
+   "t": 238.0,
+   "w": "drums"
+  },
+  {
+   "t": 238.32,
+   "w": "roll"
+  },
+  {
+   "t": 238.8,
+   "w": "Brooms"
+  },
+  {
+   "t": 239.28,
+   "w": "in"
+  },
+  {
+   "t": 239.44,
+   "w": "the"
+  },
+  {
+   "t": 239.52,
+   "w": "boiler"
+  },
+  {
+   "t": 239.84,
+   "w": "room"
+  },
+  {
+   "t": 240.16,
+   "w": "moon"
+  },
+  {
+   "t": 240.4,
+   "w": "turned"
+  },
+  {
+   "t": 240.8,
+   "w": "blue"
+  },
+  {
+   "t": 241.36,
+   "w": "one"
+  },
+  {
+   "t": 241.6,
+   "w": "wrong"
+  },
+  {
+   "t": 241.92,
+   "w": "spell"
+  },
+  {
+   "t": 242.32,
+   "w": "and"
+  },
+  {
+   "t": 242.48,
+   "w": "the"
+  },
+  {
+   "t": 242.56,
+   "w": "whole"
+  },
+  {
+   "t": 242.88,
+   "w": "crew"
+  },
+  {
+   "t": 243.2,
+   "w": "doomed"
+  },
+  {
+   "t": 248.8,
+   "w": "Brooms"
+  },
+  {
+   "t": 249.2,
+   "w": "in"
+  },
+  {
+   "t": 249.28,
+   "w": "the"
+  },
+  {
+   "t": 249.36,
+   "w": "boiler"
+  },
+  {
+   "t": 249.68,
+   "w": "room"
+  },
+  {
+   "t": 250.16,
+   "w": "still"
+  },
+  {
+   "t": 250.56,
+   "w": "marching"
+  },
+  {
+   "t": 251.44,
+   "w": "still"
+  },
+  {
+   "t": 251.84,
+   "w": "stomping"
+  },
+  {
+   "t": 252.72,
+   "w": "still"
+  },
+  {
+   "t": 253.04,
+   "w": "pouring"
+  },
+  {
+   "t": 253.92,
+   "w": "still"
+  },
+  {
+   "t": 256.08,
+   "w": "watching"
+  },
+  {
+   "t": 258.4,
+   "w": "Voice"
+  },
+  {
+   "t": 263.28,
+   "w": "2"
+  },
+  {
+   "t": 263.28,
+   "w": "You"
+  },
+  {
+   "t": 265.28,
+   "w": "think"
+  },
+  {
+   "t": 265.6,
+   "w": "its"
+  },
+  {
+   "t": 265.68,
+   "w": "over"
+  },
+  {
+   "t": 266.24,
+   "w": "Voice"
+  },
+  {
+   "t": 267.04,
+   "w": "1"
+  },
+  {
+   "t": 267.04,
+   "w": "Nah"
+  },
+  {
+   "t": 268.0,
+   "w": "Voice"
+  },
+  {
+   "t": 269.68,
+   "w": "2"
+  },
+  {
+   "t": 269.74,
+   "w": "Why"
+  },
+  {
+   "t": 269.81,
+   "w": "Voice"
+  },
+  {
+   "t": 269.87,
+   "w": "1"
+  },
+  {
+   "t": 269.94,
+   "w": "The"
+  },
+  {
+   "t": 270.0,
+   "w": "hat"
+  },
+  {
+   "t": 270.24,
+   "w": "still"
+  },
+  {
+   "t": 270.64,
+   "w": "glowing"
+  }
+ ],
+ "lrc": "[00:00.00]Voice 1 - Raspy:\n[00:00.00]Ayo...\n[00:00.00]Voice 1:\n[00:00.00]Don’t touch that hat.\n[00:00.00]Voice 2 - Crazy Whisper:\n[00:00.00]Heh... too late.\n[00:00.00]Both:\n[00:00.00]Brooms in the boiler room.\n[00:00.00]Brooms in the boiler room,\n[00:30.32]water starts to rise,\n[00:31.52]little mouse grinning with the stars in his eyes.\n[00:33.92]Brooms in the boiler room,\n[00:35.28]knocking at the door,\n[00:36.32]spell got loose and it hungry for more.\n[00:38.72]Black-and-white world,\n[00:39.84]but the money still gold,\n[00:41.20]whole tower shaking when the wild drums roll.\n[00:43.76]Brooms in the boiler room,\n[00:45.04]moon turned blue,\n[00:46.24]one wrong spell and the whole crew doomed.\n[00:48.64]I came through small with the hat pulled low,\n[00:51.04]stars on the brim and the gloves still glow.\n[00:53.52]Strings go stab,\n[00:54.72]bassoon go low,\n[00:55.76]broom got a bucket and it march like woah.\n[00:58.40]Told me don’t touch,\n[00:59.52]so I touched that quick,\n[01:00.64]now the whole tower sick and the floorboards shift.\n[01:03.20]One broom, two brooms,\n[01:04.72]three more rise,\n[01:05.76]black ink magic in the cartoon eyes.\n[01:08.32]Timpani boom when the stairwell crack,\n[01:10.72]oboe line howlin’ and the shadows clap back.\n[01:13.28]Moonlight bends when the wand goes snap,\n[01:15.60]shadow on the wall with a long-eared cap.\n[01:17.92]I ain’t scared,\n[01:19.04]I’m just deep in the trick,\n[01:20.64]too much power for a little dude slick.\n[01:22.80]Black-and-white frame,\n[01:24.08]but the gold still gleam,\n[01:25.52]money in the fog and the magic in steam.\n[01:28.24]Voice 1:\n[01:28.40]Who cast that?\n[01:29.60]Voice 2:\n[01:29.92]Not me.\n[01:30.03]Voice 1:\n[01:30.13]Who touched the hat?\n[01:31.04]Voice 2:\n[01:31.92]Not me.\n[01:32.00]Voice 1:\n[01:33.12]Who flooded the room?\n[01:36.24]Voice 2:\n[01:36.24]Couldn’t be me.\n[01:37.24]Both:\n[01:37.92]Then why the broom got a whole army?\n[01:37.92]Brooms in the boiler room,\n[01:39.12]water starts to rise,\n[01:40.32]little mouse grinning with the stars in his eyes.\n[01:42.80]Brooms in the boiler room,\n[01:44.08]knocking at the door,\n[01:45.12]spell got loose and it hungry for more.\n[01:47.68]Black-and-white world,\n[01:48.72]but the money still gold,\n[01:50.08]whole tower shaking when the wild drums roll.\n[01:52.64]Brooms in the boiler room,\n[01:53.84]moon turned blue,\n[01:55.04]one wrong spell and the whole crew doomed.\n[01:57.12]I seen the mop grow teeth in the midnight haze,\n[01:59.68]seen buckets pour rivers through a hundred stairways.\n[02:02.40]Woodwinds laughing,\n[02:03.60]trumpets go crooked,\n[02:04.64]whole magic tower looking haunted and flooded.\n[02:07.20]Old wizard gone,\n[02:08.32]but the hat stayed watching,\n[02:09.92]every little sparkle turned toxic.\n[02:12.32]Broomstick army with the wooden-leg stomp,\n[02:14.56]tap dance terror when the bassline thump.\n[02:16.96]I told little homie,\n[02:18.16]“You don’t know that spell.”\n[02:19.28]He said,\n[02:19.60]“I know enough to make the whole room swell.”\n[02:21.84]Then the strings start chasing,\n[02:23.36]ceiling got eyes,\n[02:24.56]stars in the robe started falling from the sky.\n[02:27.12]Cauldron bubble,\n[02:28.08]floorboards split,\n[02:29.60]one more chant and the whole place flipped.\n[02:31.76]Magic ain’t cute when the shadows get tall,\n[02:34.32]especially when the mouse got control of it all.\n[02:44.08]Voice 1 - Raspy:\n[02:44.36]They said he was just an apprentice.\n[02:47.76]Voice 2 - Laughing:\n[02:48.48]Apprentice?\n[02:49.04]Voice 1:\n[02:49.56]Yeah.\n[02:50.11]Voice 2:\n[02:51.81]Then why the broom saluting him?\n[03:02.00]Both:\n[03:02.43]Brooms...\n[03:02.82]in the boiler room.\n[03:09.36]Voice 1:\n[03:09.76]Hat too big.\n[03:10.72]Voice 2:\n[03:11.20]Spell too strong.\n[03:12.32]Voice 1:\n[03:12.32]Broom too wild.\n[03:13.20]Voice 2:\n[03:15.68]Night too long.\n[03:16.32]Voice 1:\n[03:17.52]Water too high.\n[03:18.15]Voice 2:\n[03:19.68]Door won’t move.\n[03:20.40]Voice 1:\n[03:21.03]Whole tower drowning.\n[03:21.97]Voice 2:\n[03:22.59]Still in groove.\n[03:23.53]Voice 1:\n[03:24.18]Strings go sharp.\n[03:25.29]Voice 2:\n[03:25.87]Bassoon go doom.\n[03:26.06]Voice 1:\n[03:26.18]Timpani hit.\n[03:26.72]Voice 2:\n[03:26.93]Oboes fill the room.\n[03:27.47]Voice 1:\n[03:27.75]One little mouse.\n[03:28.16]Voice 2:\n[03:28.43]Big mistake.\n[03:28.71]Voice 1:\n[03:28.98]One little wand.\n[03:29.39]Voice 2:\n[03:29.67]Whole world shake.\n[03:30.08]Both:\n[03:30.22]Black-and-white world but the money still gold,\n[03:31.60]whole crew slipping while the spell takes hold.\n[03:33.92]No crown, no throne,\n[03:35.12]just a hat and a grin,\n[03:36.32]then the broomsticks rise and the nightmare begins.\n[03:41.04]Brooms in the boiler room,\n[03:45.36]water starts to rise,\n[03:46.48]little mouse grinning with the stars in his eyes.\n[03:49.04]Brooms in the boiler room,\n[03:50.32]knocking at the door,\n[03:51.28]spell got loose and it hungry for more.\n[03:54.16]Black-and-white world,\n[03:54.88]but the money still gold,\n[03:56.32]whole tower shaking when the wild drums roll.\n[03:58.80]Brooms in the boiler room,\n[04:00.16]moon turned blue,\n[04:01.36]one wrong spell and the whole crew doomed.\n[04:08.80]Brooms in the boiler room,\n[04:10.16]still marching,\n[04:11.44]still stomping,\n[04:12.72]still pouring,\n[04:13.92]still watching.\n[04:18.40]Voice 2:\n[04:23.28]You think it’s over?\n[04:26.24]Voice 1:\n[04:27.04]Nah.\n[04:28.00]Voice 2:\n[04:29.74]Why?\n[04:29.81]Voice 1:\n[04:29.94]The hat still glowing.\n"
+}

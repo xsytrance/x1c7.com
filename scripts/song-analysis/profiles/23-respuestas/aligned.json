@@ -1,0 +1,2141 @@
+{
+ "v": 1,
+ "language": "Spanish",
+ "qa": {
+  "words": 530,
+  "clumps": [
+   {
+    "t": 232.72,
+    "n": 9
+   }
+  ],
+  "clumpedWords": 9,
+  "clumpRatio": 0.017,
+  "span": 269.8,
+  "duration": 284.3,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 0.0,
+   "w": "23"
+  },
+  {
+   "t": 8.91,
+   "w": "Respuestas"
+  },
+  {
+   "t": 9.3,
+   "w": "Tú"
+  },
+  {
+   "t": 9.68,
+   "w": "hiciste"
+  },
+  {
+   "t": 10.06,
+   "w": "veintitrés"
+  },
+  {
+   "t": 10.45,
+   "w": "preguntas"
+  },
+  {
+   "t": 10.88,
+   "w": "yo"
+  },
+  {
+   "t": 12.16,
+   "w": "guardé"
+  },
+  {
+   "t": 12.16,
+   "w": "veintitrés"
+  },
+  {
+   "t": 12.16,
+   "w": "respuestas"
+  },
+  {
+   "t": 13.28,
+   "w": "y"
+  },
+  {
+   "t": 14.56,
+   "w": "ninguna"
+  },
+  {
+   "t": 17.32,
+   "w": "dice"
+  },
+  {
+   "t": 17.72,
+   "w": "vuelve"
+  },
+  {
+   "t": 17.92,
+   "w": "Eheh"
+  },
+  {
+   "t": 17.92,
+   "w": "No"
+  },
+  {
+   "t": 17.92,
+   "w": "vuelvo"
+  },
+  {
+   "t": 18.0,
+   "w": "No"
+  },
+  {
+   "t": 18.0,
+   "w": "no"
+  },
+  {
+   "t": 18.92,
+   "w": "Me"
+  },
+  {
+   "t": 19.0,
+   "w": "preguntaste"
+  },
+  {
+   "t": 19.04,
+   "w": "si"
+  },
+  {
+   "t": 29.04,
+   "w": "te"
+  },
+  {
+   "t": 29.36,
+   "w": "extraño"
+  },
+  {
+   "t": 29.68,
+   "w": "sí"
+  },
+  {
+   "t": 30.0,
+   "w": "cuando"
+  },
+  {
+   "t": 30.32,
+   "w": "cae"
+  },
+  {
+   "t": 30.48,
+   "w": "la"
+  },
+  {
+   "t": 30.64,
+   "w": "noche"
+  },
+  {
+   "t": 31.04,
+   "w": "cuando"
+  },
+  {
+   "t": 31.36,
+   "w": "suena"
+  },
+  {
+   "t": 31.76,
+   "w": "aquel"
+  },
+  {
+   "t": 32.08,
+   "w": "ringtone"
+  },
+  {
+   "t": 33.92,
+   "w": "y"
+  },
+  {
+   "t": 34.0,
+   "w": "me"
+  },
+  {
+   "t": 34.24,
+   "w": "tiembla"
+  },
+  {
+   "t": 34.56,
+   "w": "hasta"
+  },
+  {
+   "t": 34.8,
+   "w": "el"
+  },
+  {
+   "t": 35.04,
+   "w": "nombre"
+  },
+  {
+   "t": 35.76,
+   "w": "Pero"
+  },
+  {
+   "t": 36.08,
+   "w": "extrañar"
+  },
+  {
+   "t": 36.56,
+   "w": "no"
+  },
+  {
+   "t": 36.72,
+   "w": "es"
+  },
+  {
+   "t": 36.8,
+   "w": "regresar"
+  },
+  {
+   "t": 37.52,
+   "w": "y"
+  },
+  {
+   "t": 37.68,
+   "w": "llorar"
+  },
+  {
+   "t": 38.08,
+   "w": "no"
+  },
+  {
+   "t": 38.32,
+   "w": "es"
+  },
+  {
+   "t": 38.4,
+   "w": "perder"
+  },
+  {
+   "t": 39.44,
+   "w": "yo"
+  },
+  {
+   "t": 39.6,
+   "w": "también"
+  },
+  {
+   "t": 40.0,
+   "w": "tuve"
+  },
+  {
+   "t": 40.32,
+   "w": "que"
+  },
+  {
+   "t": 40.56,
+   "w": "romperme"
+  },
+  {
+   "t": 41.76,
+   "w": "pa"
+  },
+  {
+   "t": 41.92,
+   "w": "aprender"
+  },
+  {
+   "t": 42.56,
+   "w": "a"
+  },
+  {
+   "t": 43.2,
+   "w": "escoger"
+  },
+  {
+   "t": 45.12,
+   "w": "Dices"
+  },
+  {
+   "t": 45.52,
+   "w": "que"
+  },
+  {
+   "t": 45.68,
+   "w": "quieres"
+  },
+  {
+   "t": 46.16,
+   "w": "hablar"
+  },
+  {
+   "t": 46.8,
+   "w": "pero"
+  },
+  {
+   "t": 47.12,
+   "w": "hablar"
+  },
+  {
+   "t": 47.28,
+   "w": "no"
+  },
+  {
+   "t": 47.44,
+   "w": "repara"
+  },
+  {
+   "t": 48.88,
+   "w": "si"
+  },
+  {
+   "t": 49.04,
+   "w": "después"
+  },
+  {
+   "t": 49.44,
+   "w": "de"
+  },
+  {
+   "t": 49.6,
+   "w": "prometer"
+  },
+  {
+   "t": 50.48,
+   "w": "se"
+  },
+  {
+   "t": 50.72,
+   "w": "te"
+  },
+  {
+   "t": 50.88,
+   "w": "olvida"
+  },
+  {
+   "t": 51.2,
+   "w": "mi"
+  },
+  {
+   "t": 51.36,
+   "w": "cara"
+  },
+  {
+   "t": 51.76,
+   "w": "Yo"
+  },
+  {
+   "t": 51.84,
+   "w": "no"
+  },
+  {
+   "t": 52.16,
+   "w": "niego"
+  },
+  {
+   "t": 52.48,
+   "w": "lo"
+  },
+  {
+   "t": 52.8,
+   "w": "bonito"
+  },
+  {
+   "t": 53.2,
+   "w": "yo"
+  },
+  {
+   "t": 53.36,
+   "w": "no"
+  },
+  {
+   "t": 53.6,
+   "w": "borro"
+  },
+  {
+   "t": 53.92,
+   "w": "lo"
+  },
+  {
+   "t": 54.08,
+   "w": "real"
+  },
+  {
+   "t": 54.64,
+   "w": "pero"
+  },
+  {
+   "t": 54.96,
+   "w": "amor"
+  },
+  {
+   "t": 55.2,
+   "w": "que"
+  },
+  {
+   "t": 55.36,
+   "w": "vive"
+  },
+  {
+   "t": 55.68,
+   "w": "herido"
+  },
+  {
+   "t": 56.0,
+   "w": "no"
+  },
+  {
+   "t": 56.16,
+   "w": "se"
+  },
+  {
+   "t": 56.48,
+   "w": "debe"
+  },
+  {
+   "t": 56.72,
+   "w": "alimentar"
+  },
+  {
+   "t": 58.72,
+   "w": "Te"
+  },
+  {
+   "t": 58.88,
+   "w": "contesté"
+  },
+  {
+   "t": 59.6,
+   "w": "con"
+  },
+  {
+   "t": 59.92,
+   "w": "silencio"
+  },
+  {
+   "t": 61.36,
+   "w": "porque"
+  },
+  {
+   "t": 61.84,
+   "w": "el"
+  },
+  {
+   "t": 62.16,
+   "w": "ruido"
+  },
+  {
+   "t": 62.56,
+   "w": "me"
+  },
+  {
+   "t": 63.44,
+   "w": "mataba"
+  },
+  {
+   "t": 64.64,
+   "w": "tú"
+  },
+  {
+   "t": 64.96,
+   "w": "buscando"
+  },
+  {
+   "t": 65.44,
+   "w": "una"
+  },
+  {
+   "t": 66.08,
+   "w": "puerta"
+  },
+  {
+   "t": 67.12,
+   "w": "yo"
+  },
+  {
+   "t": 67.28,
+   "w": "cerrando"
+  },
+  {
+   "t": 68.16,
+   "w": "la"
+  },
+  {
+   "t": 69.04,
+   "w": "ventana"
+  },
+  {
+   "t": 70.16,
+   "w": "Y"
+  },
+  {
+   "t": 70.24,
+   "w": "aunque"
+  },
+  {
+   "t": 70.56,
+   "w": "duela"
+  },
+  {
+   "t": 72.56,
+   "w": "bebé"
+  },
+  {
+   "t": 72.88,
+   "w": "te"
+  },
+  {
+   "t": 73.2,
+   "w": "lo"
+  },
+  {
+   "t": 73.44,
+   "w": "digo"
+  },
+  {
+   "t": 74.24,
+   "w": "de"
+  },
+  {
+   "t": 75.76,
+   "w": "frente"
+  },
+  {
+   "t": 76.88,
+   "w": "si"
+  },
+  {
+   "t": 76.96,
+   "w": "preguntas"
+  },
+  {
+   "t": 76.96,
+   "w": "si"
+  },
+  {
+   "t": 76.96,
+   "w": "te"
+  },
+  {
+   "t": 77.52,
+   "w": "amo"
+  },
+  {
+   "t": 78.16,
+   "w": "eso"
+  },
+  {
+   "t": 78.4,
+   "w": "no"
+  },
+  {
+   "t": 78.72,
+   "w": "significa"
+  },
+  {
+   "t": 79.92,
+   "w": "vuelve"
+  },
+  {
+   "t": 81.36,
+   "w": "Tengo"
+  },
+  {
+   "t": 82.16,
+   "w": "veintitrés"
+  },
+  {
+   "t": 82.8,
+   "w": "respuestas"
+  },
+  {
+   "t": 82.88,
+   "w": "y"
+  },
+  {
+   "t": 84.64,
+   "w": "ninguna"
+  },
+  {
+   "t": 85.76,
+   "w": "dice"
+  },
+  {
+   "t": 86.16,
+   "w": "vuelve"
+  },
+  {
+   "t": 86.16,
+   "w": "te"
+  },
+  {
+   "t": 87.44,
+   "w": "quise"
+  },
+  {
+   "t": 88.16,
+   "w": "con"
+  },
+  {
+   "t": 88.56,
+   "w": "toda"
+  },
+  {
+   "t": 89.12,
+   "w": "el"
+  },
+  {
+   "t": 89.12,
+   "w": "alma"
+  },
+  {
+   "t": 89.52,
+   "w": "pero"
+  },
+  {
+   "t": 89.68,
+   "w": "el"
+  },
+  {
+   "t": 90.08,
+   "w": "alma"
+  },
+  {
+   "t": 90.64,
+   "w": "también"
+  },
+  {
+   "t": 91.36,
+   "w": "se"
+  },
+  {
+   "t": 92.0,
+   "w": "defiende"
+  },
+  {
+   "t": 92.8,
+   "w": "Tengo"
+  },
+  {
+   "t": 93.12,
+   "w": "veintitrés"
+  },
+  {
+   "t": 93.36,
+   "w": "respuestas"
+  },
+  {
+   "t": 93.52,
+   "w": "pa"
+  },
+  {
+   "t": 93.52,
+   "w": "la"
+  },
+  {
+   "t": 98.25,
+   "w": "herida"
+  },
+  {
+   "t": 98.27,
+   "w": "que"
+  },
+  {
+   "t": 98.29,
+   "w": "no"
+  },
+  {
+   "t": 98.31,
+   "w": "duerme"
+  },
+  {
+   "t": 98.32,
+   "w": "si"
+  },
+  {
+   "t": 98.48,
+   "w": "me"
+  },
+  {
+   "t": 98.88,
+   "w": "preguntas"
+  },
+  {
+   "t": 100.0,
+   "w": "si"
+  },
+  {
+   "t": 100.16,
+   "w": "te"
+  },
+  {
+   "t": 100.32,
+   "w": "extraño"
+  },
+  {
+   "t": 100.88,
+   "w": "sí"
+  },
+  {
+   "t": 101.36,
+   "w": "pero"
+  },
+  {
+   "t": 101.76,
+   "w": "eso"
+  },
+  {
+   "t": 102.32,
+   "w": "no"
+  },
+  {
+   "t": 102.56,
+   "w": "es"
+  },
+  {
+   "t": 102.72,
+   "w": "suficiente"
+  },
+  {
+   "t": 103.92,
+   "w": "Nonono"
+  },
+  {
+   "t": 104.88,
+   "w": "vuelvo"
+  },
+  {
+   "t": 106.08,
+   "w": "nonono"
+  },
+  {
+   "t": 106.48,
+   "w": "vuelvo"
+  },
+  {
+   "t": 106.88,
+   "w": "Te"
+  },
+  {
+   "t": 108.56,
+   "w": "pienso"
+  },
+  {
+   "t": 109.04,
+   "w": "te"
+  },
+  {
+   "t": 109.36,
+   "w": "siento"
+  },
+  {
+   "t": 109.84,
+   "w": "pero"
+  },
+  {
+   "t": 110.32,
+   "w": "no"
+  },
+  {
+   "t": 110.8,
+   "w": "vuelvo"
+  },
+  {
+   "t": 110.96,
+   "w": "Nonono"
+  },
+  {
+   "t": 112.24,
+   "w": "vuelvo"
+  },
+  {
+   "t": 112.88,
+   "w": "nonono"
+  },
+  {
+   "t": 113.12,
+   "w": "vuelvo"
+  },
+  {
+   "t": 114.08,
+   "w": "Fuiste"
+  },
+  {
+   "t": 114.72,
+   "w": "mi"
+  },
+  {
+   "t": 114.96,
+   "w": "cielo"
+  },
+  {
+   "t": 115.44,
+   "w": "pero"
+  },
+  {
+   "t": 115.84,
+   "w": "no"
+  },
+  {
+   "t": 116.08,
+   "w": "mi"
+  },
+  {
+   "t": 116.4,
+   "w": "puerto"
+  },
+  {
+   "t": 117.44,
+   "w": "Preguntaste"
+  },
+  {
+   "t": 118.08,
+   "w": "si"
+  },
+  {
+   "t": 118.24,
+   "w": "hubo"
+  },
+  {
+   "t": 118.64,
+   "w": "alguien"
+  },
+  {
+   "t": 118.88,
+   "w": "que"
+  },
+  {
+   "t": 119.04,
+   "w": "llegó"
+  },
+  {
+   "t": 119.44,
+   "w": "después"
+  },
+  {
+   "t": 119.84,
+   "w": "de"
+  },
+  {
+   "t": 120.0,
+   "w": "ti"
+  },
+  {
+   "t": 120.4,
+   "w": "llegó"
+  },
+  {
+   "t": 120.64,
+   "w": "la"
+  },
+  {
+   "t": 120.8,
+   "w": "paz"
+  },
+  {
+   "t": 121.12,
+   "w": "a"
+  },
+  {
+   "t": 121.2,
+   "w": "mi"
+  },
+  {
+   "t": 121.36,
+   "w": "cuarto"
+  },
+  {
+   "t": 121.68,
+   "w": "y"
+  },
+  {
+   "t": 121.92,
+   "w": "me"
+  },
+  {
+   "t": 121.92,
+   "w": "quedé"
+  },
+  {
+   "t": 122.4,
+   "w": "por"
+  },
+  {
+   "t": 122.72,
+   "w": "ahí"
+  },
+  {
+   "t": 123.2,
+   "w": "Preguntaste"
+  },
+  {
+   "t": 124.0,
+   "w": "si"
+  },
+  {
+   "t": 124.08,
+   "w": "tus"
+  },
+  {
+   "t": 124.24,
+   "w": "besos"
+  },
+  {
+   "t": 124.64,
+   "w": "todavía"
+  },
+  {
+   "t": 125.2,
+   "w": "viven"
+  },
+  {
+   "t": 125.6,
+   "w": "aquí"
+  },
+  {
+   "t": 126.0,
+   "w": "sí"
+  },
+  {
+   "t": 126.16,
+   "w": "pero"
+  },
+  {
+   "t": 126.56,
+   "w": "cambié"
+  },
+  {
+   "t": 126.88,
+   "w": "la"
+  },
+  {
+   "t": 127.36,
+   "w": "llave"
+  },
+  {
+   "t": 127.52,
+   "w": "y"
+  },
+  {
+   "t": 127.52,
+   "w": "ya"
+  },
+  {
+   "t": 127.68,
+   "w": "no"
+  },
+  {
+   "t": 127.92,
+   "w": "entran"
+  },
+  {
+   "t": 128.16,
+   "w": "porque"
+  },
+  {
+   "t": 128.56,
+   "w": "sí"
+  },
+  {
+   "t": 128.88,
+   "w": "No"
+  },
+  {
+   "t": 129.04,
+   "w": "te"
+  },
+  {
+   "t": 129.36,
+   "w": "odio"
+  },
+  {
+   "t": 129.6,
+   "w": "no"
+  },
+  {
+   "t": 129.76,
+   "w": "te"
+  },
+  {
+   "t": 129.92,
+   "w": "miento"
+  },
+  {
+   "t": 130.32,
+   "w": "no"
+  },
+  {
+   "t": 130.48,
+   "w": "te"
+  },
+  {
+   "t": 130.64,
+   "w": "escribo"
+  },
+  {
+   "t": 131.04,
+   "w": "pa"
+  },
+  {
+   "t": 131.2,
+   "w": "pelear"
+  },
+  {
+   "t": 131.76,
+   "w": "yo"
+  },
+  {
+   "t": 131.92,
+   "w": "también"
+  },
+  {
+   "t": 132.32,
+   "w": "fui"
+  },
+  {
+   "t": 132.48,
+   "w": "la"
+  },
+  {
+   "t": 132.64,
+   "w": "culpable"
+  },
+  {
+   "t": 133.2,
+   "w": "de"
+  },
+  {
+   "t": 133.36,
+   "w": "quedarme"
+  },
+  {
+   "t": 133.92,
+   "w": "de"
+  },
+  {
+   "t": 134.16,
+   "w": "más"
+  },
+  {
+   "t": 134.56,
+   "w": "Tú"
+  },
+  {
+   "t": 134.72,
+   "w": "querías"
+  },
+  {
+   "t": 135.28,
+   "w": "mi"
+  },
+  {
+   "t": 135.52,
+   "w": "perdón"
+  },
+  {
+   "t": 136.0,
+   "w": "sin"
+  },
+  {
+   "t": 136.24,
+   "w": "cambiar"
+  },
+  {
+   "t": 136.56,
+   "w": "la"
+  },
+  {
+   "t": 136.8,
+   "w": "historia"
+  },
+  {
+   "t": 137.04,
+   "w": "entera"
+  },
+  {
+   "t": 137.52,
+   "w": "yo"
+  },
+  {
+   "t": 137.6,
+   "w": "quería"
+  },
+  {
+   "t": 138.16,
+   "w": "un"
+  },
+  {
+   "t": 138.32,
+   "w": "amor"
+  },
+  {
+   "t": 138.56,
+   "w": "grande"
+  },
+  {
+   "t": 138.88,
+   "w": "no"
+  },
+  {
+   "t": 139.04,
+   "w": "una"
+  },
+  {
+   "t": 139.28,
+   "w": "guerra"
+  },
+  {
+   "t": 139.6,
+   "w": "pasajera"
+  },
+  {
+   "t": 140.88,
+   "w": "Contéstame"
+  },
+  {
+   "t": 141.44,
+   "w": "no"
+  },
+  {
+   "t": 141.92,
+   "w": "te"
+  },
+  {
+   "t": 142.0,
+   "w": "vayas"
+  },
+  {
+   "t": 142.56,
+   "w": "así"
+  },
+  {
+   "t": 143.36,
+   "w": "dime"
+  },
+  {
+   "t": 143.68,
+   "w": "si"
+  },
+  {
+   "t": 143.92,
+   "w": "queda"
+  },
+  {
+   "t": 144.56,
+   "w": "algo"
+  },
+  {
+   "t": 144.96,
+   "w": "algo"
+  },
+  {
+   "t": 145.36,
+   "w": "de"
+  },
+  {
+   "t": 145.84,
+   "w": "mí"
+  },
+  {
+   "t": 146.08,
+   "w": "Queda"
+  },
+  {
+   "t": 146.4,
+   "w": "mucho"
+  },
+  {
+   "t": 147.44,
+   "w": "pero"
+  },
+  {
+   "t": 147.68,
+   "w": "no"
+  },
+  {
+   "t": 147.84,
+   "w": "todo"
+  },
+  {
+   "t": 148.24,
+   "w": "lo"
+  },
+  {
+   "t": 148.24,
+   "w": "que"
+  },
+  {
+   "t": 148.48,
+   "w": "queda"
+  },
+  {
+   "t": 149.44,
+   "w": "se"
+  },
+  {
+   "t": 149.68,
+   "w": "debe"
+  },
+  {
+   "t": 150.0,
+   "w": "salvar"
+  },
+  {
+   "t": 150.48,
+   "w": "Te"
+  },
+  {
+   "t": 151.04,
+   "w": "contesté"
+  },
+  {
+   "t": 151.04,
+   "w": "con"
+  },
+  {
+   "t": 151.36,
+   "w": "silencio"
+  },
+  {
+   "t": 152.88,
+   "w": "porque"
+  },
+  {
+   "t": 153.28,
+   "w": "el"
+  },
+  {
+   "t": 154.8,
+   "w": "ruido"
+  },
+  {
+   "t": 154.8,
+   "w": "me"
+  },
+  {
+   "t": 154.8,
+   "w": "mataba"
+  },
+  {
+   "t": 156.08,
+   "w": "tú"
+  },
+  {
+   "t": 156.4,
+   "w": "buscando"
+  },
+  {
+   "t": 156.88,
+   "w": "una"
+  },
+  {
+   "t": 157.44,
+   "w": "puerta"
+  },
+  {
+   "t": 158.64,
+   "w": "yo"
+  },
+  {
+   "t": 158.72,
+   "w": "cerrando"
+  },
+  {
+   "t": 160.72,
+   "w": "la"
+  },
+  {
+   "t": 161.36,
+   "w": "ventana"
+  },
+  {
+   "t": 161.52,
+   "w": "Y"
+  },
+  {
+   "t": 162.0,
+   "w": "aunque"
+  },
+  {
+   "t": 162.0,
+   "w": "duela"
+  },
+  {
+   "t": 162.08,
+   "w": "bebé"
+  },
+  {
+   "t": 164.4,
+   "w": "te"
+  },
+  {
+   "t": 164.56,
+   "w": "lo"
+  },
+  {
+   "t": 165.84,
+   "w": "digo"
+  },
+  {
+   "t": 165.84,
+   "w": "de"
+  },
+  {
+   "t": 166.48,
+   "w": "frente"
+  },
+  {
+   "t": 166.56,
+   "w": "si"
+  },
+  {
+   "t": 167.36,
+   "w": "preguntas"
+  },
+  {
+   "t": 168.08,
+   "w": "si"
+  },
+  {
+   "t": 168.48,
+   "w": "te"
+  },
+  {
+   "t": 168.96,
+   "w": "amo"
+  },
+  {
+   "t": 169.6,
+   "w": "eso"
+  },
+  {
+   "t": 169.92,
+   "w": "no"
+  },
+  {
+   "t": 170.16,
+   "w": "significa"
+  },
+  {
+   "t": 170.16,
+   "w": "vuelve"
+  },
+  {
+   "t": 170.16,
+   "w": "Tengo"
+  },
+  {
+   "t": 171.6,
+   "w": "veintitrés"
+  },
+  {
+   "t": 173.2,
+   "w": "respuestas"
+  },
+  {
+   "t": 174.16,
+   "w": "y"
+  },
+  {
+   "t": 174.16,
+   "w": "ninguna"
+  },
+  {
+   "t": 174.72,
+   "w": "dice"
+  },
+  {
+   "t": 174.72,
+   "w": "vuelve"
+  },
+  {
+   "t": 174.72,
+   "w": "te"
+  },
+  {
+   "t": 175.68,
+   "w": "quise"
+  },
+  {
+   "t": 179.6,
+   "w": "con"
+  },
+  {
+   "t": 180.0,
+   "w": "toda"
+  },
+  {
+   "t": 180.32,
+   "w": "el"
+  },
+  {
+   "t": 180.56,
+   "w": "alma"
+  },
+  {
+   "t": 181.04,
+   "w": "pero"
+  },
+  {
+   "t": 181.28,
+   "w": "el"
+  },
+  {
+   "t": 181.44,
+   "w": "alma"
+  },
+  {
+   "t": 182.08,
+   "w": "también"
+  },
+  {
+   "t": 182.72,
+   "w": "se"
+  },
+  {
+   "t": 183.28,
+   "w": "defiende"
+  },
+  {
+   "t": 184.24,
+   "w": "Tengo"
+  },
+  {
+   "t": 185.04,
+   "w": "veintitrés"
+  },
+  {
+   "t": 185.68,
+   "w": "respuestas"
+  },
+  {
+   "t": 187.12,
+   "w": "pa"
+  },
+  {
+   "t": 187.2,
+   "w": "la"
+  },
+  {
+   "t": 188.64,
+   "w": "herida"
+  },
+  {
+   "t": 188.64,
+   "w": "que"
+  },
+  {
+   "t": 189.92,
+   "w": "no"
+  },
+  {
+   "t": 189.92,
+   "w": "duerme"
+  },
+  {
+   "t": 189.92,
+   "w": "si"
+  },
+  {
+   "t": 189.92,
+   "w": "me"
+  },
+  {
+   "t": 190.16,
+   "w": "preguntas"
+  },
+  {
+   "t": 191.44,
+   "w": "si"
+  },
+  {
+   "t": 191.52,
+   "w": "te"
+  },
+  {
+   "t": 191.76,
+   "w": "extraño"
+  },
+  {
+   "t": 192.56,
+   "w": "sí"
+  },
+  {
+   "t": 192.8,
+   "w": "pero"
+  },
+  {
+   "t": 193.28,
+   "w": "eso"
+  },
+  {
+   "t": 193.68,
+   "w": "no"
+  },
+  {
+   "t": 194.08,
+   "w": "es"
+  },
+  {
+   "t": 194.16,
+   "w": "suficiente"
+  },
+  {
+   "t": 195.28,
+   "w": "Una"
+  },
+  {
+   "t": 195.36,
+   "w": "sí"
+  },
+  {
+   "t": 195.89,
+   "w": "te"
+  },
+  {
+   "t": 196.43,
+   "w": "quise"
+  },
+  {
+   "t": 196.96,
+   "w": "Dos"
+  },
+  {
+   "t": 198.16,
+   "w": "no"
+  },
+  {
+   "t": 198.32,
+   "w": "fue"
+  },
+  {
+   "t": 198.64,
+   "w": "juego"
+  },
+  {
+   "t": 199.28,
+   "w": "Tres"
+  },
+  {
+   "t": 199.6,
+   "w": "todavía"
+  },
+  {
+   "t": 200.32,
+   "w": "duele"
+  },
+  {
+   "t": 200.72,
+   "w": "Cuatro"
+  },
+  {
+   "t": 201.04,
+   "w": "ya"
+  },
+  {
+   "t": 201.52,
+   "w": "no"
+  },
+  {
+   "t": 201.84,
+   "w": "ruego"
+  },
+  {
+   "t": 202.0,
+   "w": "Cinco"
+  },
+  {
+   "t": 202.48,
+   "w": "fui"
+  },
+  {
+   "t": 202.64,
+   "w": "tu"
+  },
+  {
+   "t": 202.88,
+   "w": "casa"
+  },
+  {
+   "t": 203.44,
+   "w": "Seis"
+  },
+  {
+   "t": 203.92,
+   "w": "fui"
+  },
+  {
+   "t": 204.08,
+   "w": "tu"
+  },
+  {
+   "t": 204.24,
+   "w": "suerte"
+  },
+  {
+   "t": 204.88,
+   "w": "Siete"
+  },
+  {
+   "t": 205.36,
+   "w": "tú"
+  },
+  {
+   "t": 205.44,
+   "w": "me"
+  },
+  {
+   "t": 205.92,
+   "w": "viste"
+  },
+  {
+   "t": 206.48,
+   "w": "Ocho"
+  },
+  {
+   "t": 206.8,
+   "w": "no"
+  },
+  {
+   "t": 206.88,
+   "w": "supiste"
+  },
+  {
+   "t": 207.6,
+   "w": "verme"
+  },
+  {
+   "t": 208.24,
+   "w": "Nueve"
+  },
+  {
+   "t": 209.2,
+   "w": "hubo"
+  },
+  {
+   "t": 209.2,
+   "w": "fuego"
+  },
+  {
+   "t": 210.0,
+   "w": "Diez"
+  },
+  {
+   "t": 210.32,
+   "w": "hubo"
+  },
+  {
+   "t": 210.64,
+   "w": "frío"
+  },
+  {
+   "t": 211.28,
+   "w": "Once"
+  },
+  {
+   "t": 211.44,
+   "w": "me"
+  },
+  {
+   "t": 211.76,
+   "w": "perdí"
+  },
+  {
+   "t": 211.76,
+   "w": "Doce"
+  },
+  {
+   "t": 212.8,
+   "w": "volví"
+  },
+  {
+   "t": 213.12,
+   "w": "conmigo"
+  },
+  {
+   "t": 214.16,
+   "w": "Trece"
+  },
+  {
+   "t": 214.8,
+   "w": "no"
+  },
+  {
+   "t": 216.48,
+   "w": "te"
+  },
+  {
+   "t": 216.63,
+   "w": "odio"
+  },
+  {
+   "t": 216.78,
+   "w": "Catorce"
+  },
+  {
+   "t": 216.94,
+   "w": "no"
+  },
+  {
+   "t": 217.09,
+   "w": "te"
+  },
+  {
+   "t": 217.24,
+   "w": "espero"
+  },
+  {
+   "t": 217.4,
+   "w": "Quince"
+  },
+  {
+   "t": 217.55,
+   "w": "si"
+  },
+  {
+   "t": 217.7,
+   "w": "me"
+  },
+  {
+   "t": 217.86,
+   "w": "llamas"
+  },
+  {
+   "t": 218.01,
+   "w": "Dieciséis"
+  },
+  {
+   "t": 218.17,
+   "w": "no"
+  },
+  {
+   "t": 218.32,
+   "w": "contesto"
+  },
+  {
+   "t": 219.28,
+   "w": "Diecisiete"
+  },
+  {
+   "t": 219.72,
+   "w": "guardo"
+  },
+  {
+   "t": 220.16,
+   "w": "fotos"
+  },
+  {
+   "t": 220.6,
+   "w": "Dieciocho"
+  },
+  {
+   "t": 221.04,
+   "w": "sin"
+  },
+  {
+   "t": 221.28,
+   "w": "mirarlas"
+  },
+  {
+   "t": 221.32,
+   "w": "Diecinueve"
+  },
+  {
+   "t": 221.36,
+   "w": "tus"
+  },
+  {
+   "t": 221.6,
+   "w": "promesas"
+  },
+  {
+   "t": 221.6,
+   "w": "Veinte"
+  },
+  {
+   "t": 221.88,
+   "w": "ya"
+  },
+  {
+   "t": 222.16,
+   "w": "no"
+  },
+  {
+   "t": 222.44,
+   "w": "hablan"
+  },
+  {
+   "t": 222.72,
+   "w": "Veintiuna"
+  },
+  {
+   "t": 223.17,
+   "w": "te"
+  },
+  {
+   "t": 223.62,
+   "w": "perdono"
+  },
+  {
+   "t": 224.06,
+   "w": "Veintidós"
+  },
+  {
+   "t": 224.51,
+   "w": "me"
+  },
+  {
+   "t": 224.96,
+   "w": "suelto"
+  },
+  {
+   "t": 225.68,
+   "w": "Veintitrés"
+  },
+  {
+   "t": 226.56,
+   "w": "si"
+  },
+  {
+   "t": 229.2,
+   "w": "me"
+  },
+  {
+   "t": 230.98,
+   "w": "amas"
+  },
+  {
+   "t": 231.02,
+   "w": "déjame"
+  },
+  {
+   "t": 231.04,
+   "w": "lejos"
+  },
+  {
+   "t": 231.44,
+   "w": "Déjame"
+  },
+  {
+   "t": 232.72,
+   "w": "lejos"
+  },
+  {
+   "t": 232.72,
+   "w": "déjame"
+  },
+  {
+   "t": 232.72,
+   "w": "en"
+  },
+  {
+   "t": 232.72,
+   "w": "paz"
+  },
+  {
+   "t": 232.72,
+   "w": "lo"
+  },
+  {
+   "t": 232.72,
+   "w": "que"
+  },
+  {
+   "t": 232.72,
+   "w": "fue"
+  },
+  {
+   "t": 232.72,
+   "w": "nuestro"
+  },
+  {
+   "t": 232.72,
+   "w": "no"
+  },
+  {
+   "t": 233.44,
+   "w": "vuelve"
+  },
+  {
+   "t": 233.52,
+   "w": "pa"
+  },
+  {
+   "t": 233.52,
+   "w": "atrás"
+  },
+  {
+   "t": 234.32,
+   "w": "Déjame"
+  },
+  {
+   "t": 235.04,
+   "w": "lejos"
+  },
+  {
+   "t": 235.36,
+   "w": "déjame"
+  },
+  {
+   "t": 236.08,
+   "w": "sanar"
+  },
+  {
+   "t": 236.08,
+   "w": "si"
+  },
+  {
+   "t": 236.88,
+   "w": "tú"
+  },
+  {
+   "t": 237.28,
+   "w": "me"
+  },
+  {
+   "t": 237.52,
+   "w": "quisiste"
+  },
+  {
+   "t": 238.16,
+   "w": "aprende"
+  },
+  {
+   "t": 241.84,
+   "w": "a"
+  },
+  {
+   "t": 242.4,
+   "w": "soltar"
+  },
+  {
+   "t": 242.88,
+   "w": "Tengo"
+  },
+  {
+   "t": 242.96,
+   "w": "veintitrés"
+  },
+  {
+   "t": 242.96,
+   "w": "respuestas"
+  },
+  {
+   "t": 244.32,
+   "w": "y"
+  },
+  {
+   "t": 244.48,
+   "w": "ninguna"
+  },
+  {
+   "t": 245.28,
+   "w": "dice"
+  },
+  {
+   "t": 245.52,
+   "w": "vuelve"
+  },
+  {
+   "t": 246.8,
+   "w": "te"
+  },
+  {
+   "t": 247.44,
+   "w": "quise"
+  },
+  {
+   "t": 248.16,
+   "w": "con"
+  },
+  {
+   "t": 248.56,
+   "w": "toda"
+  },
+  {
+   "t": 248.96,
+   "w": "el"
+  },
+  {
+   "t": 249.04,
+   "w": "alma"
+  },
+  {
+   "t": 249.6,
+   "w": "pero"
+  },
+  {
+   "t": 249.84,
+   "w": "el"
+  },
+  {
+   "t": 250.08,
+   "w": "alma"
+  },
+  {
+   "t": 250.64,
+   "w": "también"
+  },
+  {
+   "t": 251.36,
+   "w": "se"
+  },
+  {
+   "t": 251.76,
+   "w": "defiende"
+  },
+  {
+   "t": 252.8,
+   "w": "Tengo"
+  },
+  {
+   "t": 252.96,
+   "w": "veintitrés"
+  },
+  {
+   "t": 254.24,
+   "w": "respuestas"
+  },
+  {
+   "t": 255.6,
+   "w": "pa"
+  },
+  {
+   "t": 256.24,
+   "w": "la"
+  },
+  {
+   "t": 257.04,
+   "w": "herida"
+  },
+  {
+   "t": 257.68,
+   "w": "que"
+  },
+  {
+   "t": 257.68,
+   "w": "no"
+  },
+  {
+   "t": 257.68,
+   "w": "duerme"
+  },
+  {
+   "t": 257.68,
+   "w": "si"
+  },
+  {
+   "t": 258.48,
+   "w": "me"
+  },
+  {
+   "t": 259.68,
+   "w": "preguntas"
+  },
+  {
+   "t": 260.0,
+   "w": "si"
+  },
+  {
+   "t": 260.16,
+   "w": "te"
+  },
+  {
+   "t": 260.4,
+   "w": "extraño"
+  },
+  {
+   "t": 261.04,
+   "w": "sí"
+  },
+  {
+   "t": 261.36,
+   "w": "pero"
+  },
+  {
+   "t": 261.68,
+   "w": "eso"
+  },
+  {
+   "t": 262.24,
+   "w": "no"
+  },
+  {
+   "t": 262.44,
+   "w": "es"
+  },
+  {
+   "t": 262.64,
+   "w": "suficiente"
+  },
+  {
+   "t": 264.8,
+   "w": "No"
+  },
+  {
+   "t": 264.96,
+   "w": "todas"
+  },
+  {
+   "t": 265.36,
+   "w": "las"
+  },
+  {
+   "t": 265.92,
+   "w": "respuestas"
+  },
+  {
+   "t": 266.16,
+   "w": "son"
+  },
+  {
+   "t": 267.36,
+   "w": "para"
+  },
+  {
+   "t": 267.76,
+   "w": "volver"
+  },
+  {
+   "t": 267.76,
+   "w": "a"
+  },
+  {
+   "t": 267.92,
+   "w": "veces"
+  },
+  {
+   "t": 267.92,
+   "w": "son"
+  },
+  {
+   "t": 267.92,
+   "w": "para"
+  },
+  {
+   "t": 268.48,
+   "w": "cerrar"
+  },
+  {
+   "t": 269.6,
+   "w": "No"
+  },
+  {
+   "t": 269.76,
+   "w": "vuelvo"
+  },
+  {
+   "t": 269.76,
+   "w": "pero"
+  },
+  {
+   "t": 269.76,
+   "w": "te"
+  },
+  {
+   "t": 269.76,
+   "w": "deseo"
+  },
+  {
+   "t": 269.76,
+   "w": "paz"
+  }
+ ],
+ "lrc": "[00:00.00]23 Respuestas\n[00:09.30]Tú hiciste veintitrés preguntas\n[00:10.88]yo guardé veintitrés respuestas\n[00:13.28]y ninguna dice vuelve\n[00:17.92]Eh-eh\n[00:17.92]No vuelvo\n[00:18.00]No, no\n[00:18.92]Me preguntaste si te extraño\n[00:29.68]sí, cuando cae la noche\n[00:31.04]cuando suena aquel ringtone\n[00:33.92]y me tiembla hasta el nombre\n[00:35.76]Pero extrañar no es regresar\n[00:37.52]y llorar no es perder\n[00:39.44]yo también tuve que romperme\n[00:41.76]pa’ aprender a escoger\n[00:45.12]Dices que quieres hablar\n[00:46.80]pero hablar no repara\n[00:48.88]si después de prometer\n[00:50.48]se te olvida mi cara\n[00:51.76]Yo no niego lo bonito\n[00:53.20]yo no borro lo real\n[00:54.64]pero amor que vive herido\n[00:56.00]no se debe alimentar\n[00:58.72]Te contesté con silencio\n[01:01.36]porque el ruido me mataba\n[01:04.64]tú buscando una puerta\n[01:07.12]yo cerrando la ventana\n[01:10.16]Y aunque duela, bebé\n[01:12.88]te lo digo de frente\n[01:16.88]si preguntas si te amo\n[01:18.16]eso no significa vuelve\n[01:21.36]Tengo veintitrés respuestas\n[01:22.88]y ninguna dice vuelve\n[01:26.16]te quise con toda el alma\n[01:29.52]pero el alma también se defiende\n[01:32.80]Tengo veintitrés respuestas\n[01:33.52]pa’ la herida que no duerme\n[01:38.32]si me preguntas si te extraño\n[01:40.88]sí, pero eso no es suficiente\n[01:43.92]No-no-no vuelvo\n[01:46.08]no-no-no vuelvo\n[01:46.88]Te pienso, te siento\n[01:49.84]pero no vuelvo\n[01:50.96]No-no-no vuelvo\n[01:52.88]no-no-no vuelvo\n[01:54.08]Fuiste mi cielo\n[01:55.44]pero no mi puerto\n[01:57.44]Preguntaste si hubo alguien\n[01:58.88]que llegó después de ti\n[02:00.40]llegó la paz a mi cuarto\n[02:01.68]y me quedé por ahí\n[02:03.20]Preguntaste si tus besos\n[02:04.64]todavía viven aquí\n[02:06.00]sí, pero cambié la llave\n[02:07.52]y ya no entran porque sí\n[02:08.88]No te odio, no te miento\n[02:10.32]no te escribo pa’ pelear\n[02:11.76]yo también fui la culpable\n[02:13.20]de quedarme de más\n[02:14.56]Tú querías mi perdón\n[02:16.00]sin cambiar la historia entera\n[02:17.52]yo quería un amor grande\n[02:18.88]no una guerra pasajera\n[02:20.88]Contéstame\n[02:21.44]no te vayas así\n[02:23.36]dime si queda algo\n[02:24.96]algo de mí\n[02:26.08]Queda mucho\n[02:27.44]pero no todo lo que queda\n[02:29.44]se debe salvar\n[02:30.48]Te contesté con silencio\n[02:32.88]porque el ruido me mataba\n[02:36.08]tú buscando una puerta\n[02:38.64]yo cerrando la ventana\n[02:41.52]Y aunque duela, bebé\n[02:44.40]te lo digo de frente\n[02:46.56]si preguntas si te amo\n[02:49.60]eso no significa vuelve\n[02:50.16]Tengo veintitrés respuestas\n[02:54.16]y ninguna dice vuelve\n[02:54.72]te quise con toda el alma\n[03:01.04]pero el alma también se defiende\n[03:04.24]Tengo veintitrés respuestas\n[03:07.12]pa’ la herida que no duerme\n[03:09.92]si me preguntas si te extraño\n[03:12.56]sí, pero eso no es suficiente\n[03:15.28]Una: sí te quise\n[03:16.96]Dos: no fue juego\n[03:19.28]Tres: todavía duele\n[03:20.72]Cuatro: ya no ruego\n[03:22.00]Cinco: fui tu casa\n[03:23.44]Seis: fui tu suerte\n[03:24.88]Siete: tú me viste\n[03:26.48]Ocho: no supiste verme\n[03:28.24]Nueve: hubo fuego\n[03:30.00]Diez: hubo frío\n[03:31.28]Once: me perdí\n[03:31.76]Doce: volví conmigo\n[03:34.16]Trece: no te odio\n[03:36.78]Catorce: no te espero\n[03:37.40]Quince: si me llamas\n[03:38.01]Dieciséis: no contesto\n[03:39.28]Diecisiete: guardo fotos\n[03:40.60]Dieciocho: sin mirarlas\n[03:41.32]Diecinueve: tus promesas\n[03:41.60]Veinte: ya no hablan\n[03:42.72]Veintiuna: te perdono\n[03:44.06]Veintidós: me suelto\n[03:45.68]Veintitrés: si me amas\n[03:51.02]déjame lejos\n[03:51.44]Déjame lejos\n[03:52.72]déjame en paz\n[03:52.72]lo que fue nuestro\n[03:52.72]no vuelve pa’ atrás\n[03:54.32]Déjame lejos\n[03:55.36]déjame sanar\n[03:56.08]si tú me quisiste\n[03:58.16]aprende a soltar\n[04:02.88]Tengo veintitrés respuestas\n[04:04.32]y ninguna dice vuelve\n[04:06.80]te quise con toda el alma\n[04:09.60]pero el alma también se defiende\n[04:12.80]Tengo veintitrés respuestas\n[04:15.60]pa’ la herida que no duerme\n[04:17.68]si me preguntas si te extraño\n[04:21.04]sí, pero eso no es suficiente\n[04:24.80]No todas las respuestas\n[04:26.16]son para volver\n[04:27.76]a veces son para cerrar\n[04:29.60]No vuelvo\n[04:29.76]pero te deseo paz\n"
+}
