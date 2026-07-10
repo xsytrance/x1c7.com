@@ -13,6 +13,7 @@ import { detectLite } from "@/lib/perf";
 import ShareButton from "@/components/ShareButton";
 import Booklet from "@/components/Booklet";
 import { suppressTakeoverFor } from "@/components/CinematicLyrics";
+import { uiStore } from "@/lib/uiStore";
 
 const PREVIEW_LEN = 20;
 
@@ -80,7 +81,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
           if (e.isIntersecting && e.intersectionRatio > 0.6) {
             const id = (e.target as HTMLElement).dataset.trackId!;
             setActiveId(id);
-            if (armedRef.current) {
+            if (armedRef.current && !uiStore.isCinematic()) {
               const t = tracks.find((x) => x.id === id);
               if (t) void preview.start(t);
             }
@@ -194,18 +195,18 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                   <div className="mt-2 flex gap-2">
                     {canPerform(t) ? (
                       <>
-                        <button onClick={() => { preview.stop(false); onPlay(t); }}
+                        <button onClick={() => { armedRef.current = false; preview.stop(false); onPlay(t); }}
                           className="flex-1 rounded-sm py-2.5 text-center font-mono text-sm tracking-[0.16em] text-black"
                           style={{ background: p.accent }}>
                           🪐 START THE SHOW
                         </button>
-                        <button onClick={() => { preview.stop(false); suppressTakeoverFor(t.id); onPlay(t); }}
+                        <button onClick={() => { armedRef.current = false; preview.stop(false); suppressTakeoverFor(t.id); onPlay(t); }}
                           className="rounded-sm border border-white/20 px-3 py-2.5 font-mono text-xs tracking-[0.14em] text-white/70">
                           ▶ JUST PLAY
                         </button>
                       </>
                     ) : (
-                      <button onClick={() => { preview.stop(false); onPlay(t); }}
+                      <button onClick={() => { armedRef.current = false; preview.stop(false); onPlay(t); }}
                         className="flex-1 rounded-sm py-2.5 text-center font-mono text-sm tracking-[0.16em] text-black"
                         style={{ background: p.accent }}>
                         ▶ PLAY FULL TRACK

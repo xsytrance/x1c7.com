@@ -8,6 +8,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { Track } from "@/data/tracks";
 import { loadStems, type StemData } from "@/lib/stemSense";
 import { hotMoment, stemsUrlFor } from "@/lib/collection";
+import { uiStore } from "@/lib/uiStore";
 
 export interface PreviewState {
   id: string | null;      // track currently previewing
@@ -69,8 +70,8 @@ export function usePreview(onStart?: () => void) {
   const sweepIn = useCallback(() => {
     const ctx = ctxRef.current, gain = gainRef.current, filter = filterRef.current;
     const a = audioRef.current;
-    if (ctx && gain && filter) {
-      void ctx.resume();
+    if (ctx && gain && filter && ctx.state !== "closed") {
+      ctx.resume().catch(() => {});
       const t = ctx.currentTime;
       gain.gain.cancelScheduledValues(t);
       gain.gain.setValueAtTime(0.0001, t);
@@ -103,16 +104,21 @@ export function usePreview(onStart?: () => void) {
 
   const start = useCallback(async (track: Track) => {
     if (!track.audioUrl) return;
+    // The cinematic stage owns the audio — a preview here would pause the main
+    // player mid-show and freeze the show clock (heard music, no lyrics).
+    if (uiStore.isCinematic()) return;
     const session = ++sessionRef.current;
     const a = ensureAudio();
     wire(a);
     onStart?.();
     const stems = await stemsFor(track);
     if (sessionRef.current !== session) return; // superseded while loading
+    if (uiStore.isCinematic()) return; // a show opened during the stems fetch
     const at = stems ? hotMoment(stems) : NaN;
     if (a.src !== track.audioUrl) a.src = track.audioUrl;
     const begin = () => {
       if (sessionRef.current !== session) return;
+      if (uiStore.isCinematic()) return; // a show opened while media loaded
       const t0 = Number.isFinite(at) ? at : (a.duration ? a.duration * 0.3 : 30);
       try { a.currentTime = t0; } catch { /* not seekable yet */ }
       sweepIn();
