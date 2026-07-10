@@ -184,29 +184,43 @@ const Booklet = forwardRef<BookletHandle, {
   /** trigger size/spacing classes — ShareButton convention */
   sizing?: string;
   label?: string;
-}>(function Booklet({ slug, accent, sizing = "mt-4 px-5 py-3 text-sm", label = "📖 OPEN THE BOOKLET" }, ref) {
+  /** fires once the booklet exists on R2 — lets a parent show its own affordance */
+  onAvailable?: () => void;
+}>(function Booklet({ slug, accent, sizing = "mt-4 px-5 py-3 text-sm", label = "📖 OPEN THE BOOKLET", onAvailable }, ref) {
   const [data, setData] = useState<BookletData | null>(null);
   const [open, setOpen] = useState(false);
   const [idx, setIdx] = useState(0);
   const [dir, setDir] = useState(1);
-  const [touchX, setTouchX] = useState<number | null>(null);
+  const [hint, setHint] = useState(false);
+
+  const openBook = useCallback(() => {
+    setIdx(0); setOpen(true); setHint(true);
+  }, []);
 
   useImperativeHandle(ref, () => ({
     open: () => {
       if (!data) return false;
-      setIdx(0); setOpen(true);
+      openBook();
       return true;
     },
-  }), [data]);
+  }), [data, openBook]);
 
   useEffect(() => {
     let dead = false;
     fetch(`${PLANET_BASE}/planets/${slug}/booklet.json`)
       .then((r) => (r.ok ? r.json() : null))
-      .then((j) => { if (!dead && j?.pages?.length) setData(j); })
+      .then((j) => { if (!dead && j?.pages?.length) { setData(j); onAvailable?.(); } })
       .catch(() => {});
     return () => { dead = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [slug]);
+
+  // the "swipe" hint shows briefly on every open, then gets out of the way
+  useEffect(() => {
+    if (!hint) return;
+    const h = window.setTimeout(() => setHint(false), 2600);
+    return () => window.clearTimeout(h);
+  }, [hint]);
 
   const pages = useMemo(() => (data ? paginate(data.pages) : []), [data]);
   const turn = useCallback((d: number) => {
@@ -229,42 +243,81 @@ const Booklet = forwardRef<BookletHandle, {
 
   return (
     <>
-      <button onClick={() => { setIdx(0); setOpen(true); }}
-        className={`rounded-sm border border-white/20 font-mono tracking-[0.16em] text-white/70 transition hover:border-white/60 hover:text-white ${sizing}`}>
+      <motion.button onClick={openBook}
+        initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "spring", stiffness: 320, damping: 20 }}
+        whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
+        className={`rounded-sm border border-white/20 font-mono tracking-[0.16em] text-white/70 transition-colors hover:border-white/60 hover:text-white ${sizing}`}>
         {label}
-      </button>
+      </motion.button>
 
       <AnimatePresence>
         {open ? (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             className="fixed inset-0 z-[80] flex items-center justify-center bg-black/85 backdrop-blur-sm"
             onClick={() => setOpen(false)}>
-            <div className="relative w-full max-w-[440px] px-4" onClick={(e) => e.stopPropagation()}
-              onTouchStart={(e) => setTouchX(e.touches[0].clientX)}
-              onTouchEnd={(e) => {
-                if (touchX == null) return;
-                const dx = e.changedTouches[0].clientX - touchX;
-                if (Math.abs(dx) > 40) turn(dx < 0 ? 1 : -1);
-                setTouchX(null);
-              }}>
-              {/* the page */}
+            <motion.div initial={{ scale: 0.92, y: 14 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 260, damping: 24 }}
+              className="relative w-full max-w-[440px] px-4" onClick={(e) => e.stopPropagation()}>
+              {/* the page — drag it like paper */}
               <div className="relative overflow-hidden rounded-lg border border-white/15 bg-[#0c0c10]"
                 style={{ boxShadow: `0 30px 90px -30px ${accent}55`, aspectRatio: "4 / 5" }}>
                 <AnimatePresence mode="popLayout" custom={dir}>
                   <motion.div key={idx}
+                    drag="x" dragConstraints={{ left: 0, right: 0 }} dragElastic={0.16}
+                    onDragEnd={(_, info) => {
+                      if (info.offset.x < -56 || info.velocity.x < -420) turn(1);
+                      else if (info.offset.x > 56 || info.velocity.x > 420) turn(-1);
+                    }}
                     initial={{ rotateY: dir > 0 ? 60 : -60, opacity: 0 }}
                     animate={{ rotateY: 0, opacity: 1 }}
                     exit={{ rotateY: dir > 0 ? -40 : 40, opacity: 0 }}
                     transition={{ type: "spring", stiffness: 220, damping: 26 }}
-                    style={{ transformPerspective: 1100 }}
-                    className="absolute inset-0 overflow-y-auto p-6">
+                    style={{ transformPerspective: 1100, touchAction: "pan-y" }}
+                    className="absolute inset-0 cursor-grab overflow-y-auto p-6 active:cursor-grabbing">
                     <PageBody page={pages[idx]} slug={slug} accent={accent} />
                   </motion.div>
                 </AnimatePresence>
+
+                {/* edge-tap hotspots — always visible, breathing */}
+                {idx > 0 ? (
+                  <button onClick={() => turn(-1)} aria-label="previous page"
+                    className="absolute left-0 top-1/2 z-10 flex h-20 w-9 -translate-y-1/2 items-center justify-start pl-1">
+                    <motion.span animate={{ x: [0, -3, 0], opacity: [0.3, 0.75, 0.3] }}
+                      transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
+                      className="font-display text-2xl text-white">‹</motion.span>
+                  </button>
+                ) : null}
+                {idx < pages.length - 1 ? (
+                  <button onClick={() => turn(1)} aria-label="next page"
+                    className="absolute right-0 top-1/2 z-10 flex h-20 w-9 -translate-y-1/2 items-center justify-end pr-1">
+                    <motion.span animate={{ x: [0, 3, 0], opacity: [0.3, 0.75, 0.3] }}
+                      transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
+                      className="font-display text-2xl text-white">›</motion.span>
+                  </button>
+                ) : null}
+
+                {/* first-moments hint */}
+                <AnimatePresence>
+                  {hint ? (
+                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                      className="pointer-events-none absolute inset-x-0 bottom-5 z-20 flex justify-center">
+                      <motion.p animate={{ x: [0, 7, -7, 0] }} transition={{ repeat: 1, duration: 1.4, ease: "easeInOut", delay: 0.3 }}
+                        className="rounded-full bg-black/70 px-4 py-2 font-mono text-[10px] tracking-[0.24em] text-white/90 backdrop-blur-sm">
+                        ‹ SWIPE OR TAP THE EDGES ›
+                      </motion.p>
+                    </motion.div>
+                  ) : null}
+                </AnimatePresence>
               </div>
 
-              {/* controls */}
-              <div className="mt-3 flex items-center justify-between">
+              {/* progress + controls */}
+              <div className="mx-1 mt-3 h-[3px] overflow-hidden rounded bg-white/10">
+                <motion.div className="h-full rounded" style={{ background: accent }}
+                  animate={{ width: `${((idx + 1) / pages.length) * 100}%` }}
+                  transition={{ type: "spring", stiffness: 200, damping: 26 }} />
+              </div>
+              <div className="mt-2.5 flex items-center justify-between">
                 <button onClick={() => turn(-1)} disabled={idx === 0}
                   className="rounded-sm border border-white/20 px-4 py-2 font-mono text-xs tracking-[0.2em] text-white/70 transition enabled:hover:border-white/60 enabled:hover:text-white disabled:opacity-30">←</button>
                 <p className="font-mono text-[10px] tracking-[0.28em] text-white/40">PAGE {idx + 1} / {pages.length}</p>
@@ -273,7 +326,7 @@ const Booklet = forwardRef<BookletHandle, {
               </div>
               <button onClick={() => setOpen(false)}
                 className="absolute -top-10 right-4 font-mono text-xs tracking-[0.2em] text-white/50 transition hover:text-white">✕ CLOSE</button>
-            </div>
+            </motion.div>
           </motion.div>
         ) : null}
       </AnimatePresence>

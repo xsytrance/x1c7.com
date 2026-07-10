@@ -69,6 +69,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
   const armedId = useRef<string | null>(null);
   const preview = usePreview(onPauseMain);
   const booklet = useRef<BookletHandle>(null);
+  const [insertFor, setInsertFor] = useState<string | null>(null);
 
   const shelf = useMemo(
     () => (filter ? tracks.filter((t) => classifyGenre(t.genre).key === filter) : tracks),
@@ -207,14 +208,25 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                 transition={{ type: "spring", stiffness: 240, damping: 26 }}
                 style={{ transformPerspective: 900 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={cardUrl(focused.id)} alt={focused.title}
-                  className="aspect-square w-full cursor-pointer rounded-md object-cover"
-                  style={{ boxShadow: `0 24px 70px -20px ${pal.accent}55` }}
-                  onError={(e) => { (e.currentTarget as HTMLImageElement).src = focused.cover || focused.art; }}
-                  onClick={() => booklet.current?.open()}
-                  title="open the case"
-                />
+                <div className="relative">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={cardUrl(focused.id)} alt={focused.title}
+                    className="aspect-square w-full cursor-pointer rounded-md object-cover"
+                    style={{ boxShadow: `0 24px 70px -20px ${pal.accent}55` }}
+                    onError={(e) => { (e.currentTarget as HTMLImageElement).src = focused.cover || focused.art; }}
+                    onClick={() => booklet.current?.open()}
+                    title="open the case"
+                  />
+                  {insertFor === focused.id ? (
+                    <motion.span
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: [0, -4, 0] }}
+                      transition={{ opacity: { duration: 0.5 }, y: { repeat: Infinity, duration: 2.4, ease: "easeInOut" } }}
+                      className="pointer-events-none absolute inset-x-0 bottom-2.5 mx-auto w-max rounded-full bg-black/65 px-3 py-1 font-mono text-[9px] tracking-[0.22em] text-white/90 backdrop-blur-sm">
+                      📖 OPEN THE CASE
+                    </motion.span>
+                  ) : null}
+                </div>
                 <div className="mt-4 flex items-center gap-3 font-mono text-xs text-white/60">
                   <span className="rounded-sm px-2 py-0.5 text-black" style={{ background: pal.accent }}>{pal.label}</span>
                   {meta?.bpm ? <span>{Math.round(meta.bpm)} BPM</span> : null}
@@ -234,7 +246,8 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                     </span>
                   )}
                   {/* the insert — chip appears only when this song's booklet exists */}
-                  <Booklet ref={booklet} slug={focused.id} accent={pal.accent} sizing="px-3 py-2 text-xs" label="📖 INSERT" />
+                  <Booklet ref={booklet} slug={focused.id} accent={pal.accent} sizing="px-3 py-2 text-xs" label="📖 INSERT"
+                    onAvailable={() => setInsertFor(focused.id)} />
                   {focused.sunoUrl && (
                     <a href={focused.sunoUrl} target="_blank" rel="noopener noreferrer"
                       className="rounded-sm border border-white/20 px-3 py-2 font-mono text-xs tracking-[0.14em] text-white/70 transition hover:border-white/60 hover:text-white">

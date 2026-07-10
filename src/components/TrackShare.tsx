@@ -26,6 +26,7 @@ export default function TrackShare({ row }: { row: TrackRow }) {
   const [meta, setMeta] = useState<StemData | null>(null);
   const pal = classifyGenre(track.genre);
   const booklet = useRef<BookletHandle>(null);
+  const [hasBooklet, setHasBooklet] = useState(false);
 
   useEffect(() => { void stemsFor(track).then(setMeta); }, [track]);
 
@@ -41,16 +42,29 @@ export default function TrackShare({ row }: { row: TrackRow }) {
         <p className="font-mono text-xs uppercase tracking-[0.45em] text-plasma/80">agenor presents</p>
 
         <motion.div initial={{ opacity: 0, y: 24, rotateY: 18 }} animate={{ opacity: 1, y: 0, rotateY: 0 }}
-          transition={{ type: "spring", stiffness: 180, damping: 22 }} className="mt-6" style={{ transformPerspective: 900 }}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={cardUrl(track.id)} alt={`${track.title} collector cover`}
-            className="mx-auto aspect-square w-full max-w-[480px] cursor-pointer rounded-lg object-cover"
-            style={{ boxShadow: `0 30px 90px -24px ${pal.accent}66` }}
-            onError={(e) => { (e.currentTarget as HTMLImageElement).src = track.cover || track.art; }}
-            onClick={() => booklet.current?.open()}
-            title="open the case"
-          />
+          transition={{ type: "spring", stiffness: 180, damping: 22 }} className="relative mt-6" style={{ transformPerspective: 900 }}>
+          <motion.div whileHover={{ scale: 1.015, rotateY: -3 }} whileTap={{ scale: 0.985 }}
+            className="relative mx-auto w-full max-w-[480px]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={cardUrl(track.id)} alt={`${track.title} collector cover`}
+              className="aspect-square w-full cursor-pointer rounded-lg object-cover"
+              style={{ boxShadow: `0 30px 90px -24px ${pal.accent}66` }}
+              onError={(e) => { (e.currentTarget as HTMLImageElement).src = track.cover || track.art; }}
+              onClick={() => booklet.current?.open()}
+              title="open the case"
+            />
+            {/* the insert's calling card — floats once the booklet exists */}
+            {hasBooklet ? (
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: [0, -5, 0] }}
+                transition={{ opacity: { duration: 0.5 }, y: { repeat: Infinity, duration: 2.4, ease: "easeInOut" } }}
+                className="pointer-events-none absolute inset-x-0 bottom-3 mx-auto w-max rounded-full bg-black/65 px-3.5 py-1.5 font-mono text-[10px] tracking-[0.22em] text-white/90 backdrop-blur-sm">
+                📖 TAP TO OPEN THE CASE
+              </motion.span>
+            ) : null}
+          </motion.div>
         </motion.div>
 
         <h1 className="mt-7 font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl">{track.title}</h1>
@@ -106,7 +120,7 @@ export default function TrackShare({ row }: { row: TrackRow }) {
         ) : null}
 
         {/* the insert — appears only once booklet.json exists on R2; the cover art opens it too */}
-        <Booklet ref={booklet} slug={track.id} accent={pal.accent} />
+        <Booklet ref={booklet} slug={track.id} accent={pal.accent} onAvailable={() => setHasBooklet(true)} />
 
 
         <SonicDossier slug={track.id} accent={pal.accent} bpm={meta?.bpm} duration={meta?.duration} />
