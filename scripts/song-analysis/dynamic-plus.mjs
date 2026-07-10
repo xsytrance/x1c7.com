@@ -15,6 +15,11 @@
 // overlaps dropped, unknown modes/effects/stems filtered. Emits
 // dynamic-plus.sql (apply AFTER shows.sql so every row has a planet).
 //
+// NOTE (2026-07-10): playback no longer runs takeovers or spotlights — the
+// engine renders acts as VISUAL moments only (backdrop lift + the stemSpot
+// label chip). The data shape is unchanged; acts still mark the song's best
+// windows, they just stopped grabbing the stage or the mix.
+//
 //   node scripts/song-analysis/dynamic-plus.mjs [--only slug,slug] [--model m]
 // ═══════════════════════════════════════════════════════════════════════════
 

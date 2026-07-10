@@ -220,7 +220,7 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   tvoff: (w, a) => <WordTVOff word={w} airtime={a} />,
 };
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
@@ -245,6 +245,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   grain    — film-grain overlay opacity (0..1)
    *   vignette — edge-darkening overlay opacity (0..1) */
   deck?: { density?: number; glow?: number; grain?: number; vignette?: number };
+  /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
+  boost?: boolean;
 }) {
   const { getCurrentTime: playerTime, setMuffle } = useMusicPlayer();
   const getCurrentTime = clock ?? playerTime;
@@ -377,11 +379,62 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     }
     return planetUrl(url);
   }, [altArt]);
+  // Backdrop swaps are decode-gated and throttled: the crossfade only starts
+  // once the new photo is fully decoded (no half-loaded pop-in), swaps can't
+  // stack inside one crossfade (the flicker the owner saw), and a missing
+  // -2.webp twin falls back to its base instead of flashing a broken frame.
+  const MIN_SWAP_MS = 2000; // > the 1.6s crossfade, so fades never overlap
+  const swapCtl = useRef<{ shown: string | null; lastAt: number; token: number; timer: number | null; pending: string | null }>(
+    { shown: null, lastAt: 0, token: 0, timer: null, pending: null });
+  const badArt = useRef(new Set<string>());
+  const requestArt = useCallback(function req(url: string) {
+    const ctl = swapCtl.current;
+    if (badArt.current.has(url)) {
+      const base = url.endsWith("-2.webp") ? url.replace(/-2\.webp$/, ".webp") : null;
+      if (!base || badArt.current.has(base)) return;
+      url = base;
+    }
+    if (url === ctl.shown) return;
+    const now = performance.now();
+    if (now - ctl.lastAt < MIN_SWAP_MS) {
+      // Inside the crossfade window — remember the latest ask, land it after.
+      ctl.pending = url;
+      if (ctl.timer == null) {
+        ctl.timer = window.setTimeout(() => {
+          ctl.timer = null;
+          const p = ctl.pending;
+          ctl.pending = null;
+          if (p) req(p);
+        }, MIN_SWAP_MS - (now - ctl.lastAt) + 20);
+      }
+      return;
+    }
+    ctl.lastAt = now;
+    ctl.shown = url;
+    const token = ++ctl.token;
+    const img = new Image();
+    img.src = url;
+    img.decode().then(
+      () => { if (swapCtl.current.token === token) setBgArt(url); },
+      () => {
+        badArt.current.add(url);
+        if (swapCtl.current.token !== token) return;
+        ctl.shown = null;
+        const base = url.endsWith("-2.webp") ? url.replace(/-2\.webp$/, ".webp") : null;
+        if (base && !badArt.current.has(base)) req(base);
+      },
+    );
+  }, []);
   // Load the song's hosted art gallery (grown by the top-up pipeline). Graceful:
   // 404 / offline → null → the engine falls back to single keyword art.
   useEffect(() => {
     setGallery(null); setGuided(null);
     galleryTurn.current.clear(); guidedTurn.current = 0;
+    // New song (or pass): forget the swap throttle/decode state so the first
+    // backdrop of the next planet lands immediately.
+    const ctl = swapCtl.current;
+    if (ctl.timer != null) window.clearTimeout(ctl.timer);
+    swapCtl.current = { shown: null, lastAt: 0, token: ctl.token + 1, timer: null, pending: null };
     if (pass < 3 || !PLANET_BASE) return;
     let on = true;
     fetch(`${PLANET_BASE}/planets/${track.id}/gallery.json`)
@@ -397,9 +450,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const imgs = raw.map((x) => (typeof x === "string" ? x : x?.url)).filter(Boolean) as string[];
         // Anchor the guided star to the album-art event horizon.
         setGuided(imgs.length ? (eventHorizon ? [eventHorizon, ...imgs] : imgs) : null);
+        // Warm the first guided photos so the opening swaps decode instantly.
+        imgs.slice(0, 2).forEach((u) => { const im = new Image(); im.src = planetUrl(u); });
       })
       .catch(() => {});
-    return () => { on = false; };
+    return () => {
+      on = false;
+      if (swapCtl.current.timer != null) { window.clearTimeout(swapCtl.current.timer); swapCtl.current.timer = null; }
+    };
   }, [track.id, eventHorizon, pass]);
   // Rotate through [base, ...gallery variants] for a word so backdrops vary.
   const pooledArt = useCallback((w: string, base: string | null): string | null => {
@@ -884,11 +942,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           const own = pooledArt(w, art?.[w] ?? null);
           const isFinal = words[i + 1] ? lineStarts.has(Math.round(words[i + 1].t * 100)) : true;
           const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
-          if (own) setBgArt(pickArt(own));
+          if (own) requestArt(pickArt(own));
           else if (pass >= 2) {
             const emphasis = isFinal || w in keywordEmotion;
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
-            if (sh) setBgArt(pickArt(sh));
+            if (sh) requestArt(pickArt(sh));
           }
           // Anchor: charged words always take over the sky; line-closing words
           // with presence join them (rate-limited so anchors breathe).
@@ -1085,7 +1143,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             camPush.current = s.intensity;
             stageRef.current?.style.setProperty("--emo", String(s.intensity));
             const mood = sectionArt?.[s.emotion.toLowerCase()];
-            if (mood) setBgArt(pickArt(mood));
+            if (mood) requestArt(pickArt(mood));
             // Pass 2: big scene changes send a shockwave through the stage.
             if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
           }
@@ -1112,7 +1170,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, pooledArt, spawnRing, stems, stutterRuns]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -1172,6 +1230,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Held: a long sung note. The word itself performs the hold — it swells over
   // the note's duration and breathes with the live bass (--beat) underneath.
   const held = pass >= 2 && idx >= 0 && airtime >= 1.3 && !burns;
+  // Lift: the backdrop leans in — for a held note, or a DYNAMIC+ visual
+  // moment (the act windows that used to trigger takeovers now only do this).
+  const lift = held || !!boost;
   // Small out-of-the-way preview of what's coming — the owner likes it.
   // (The BIG word appearing early was the mis-anchor bug, fixed above.)
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -1270,9 +1331,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             key={bgArt}
             className="pointer-events-none fixed inset-0 -z-10"
             initial={{ opacity: 0 }}
-            animate={{ opacity: held ? 0.85 : 0.6 }}
+            animate={{ opacity: lift ? 0.85 : 0.6 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: held ? 0.7 : 1.6, ease: "easeInOut" }}
+            transition={{ duration: lift ? 0.7 : 1.6, ease: "easeInOut" }}
           >
             {/* parallax shell — rides the device tilt / mouse via CSS vars */}
             <div className="h-full w-full" style={{ transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))", willChange: "transform" }}>
@@ -1281,7 +1342,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 src={bgArt}
                 alt=""
                 className="h-full w-full object-cover"
-                style={{ filter: held ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
+                style={lite
+                  // Perf-lite: never animate a full-viewport filter on phones.
+                  ? undefined
+                  : { filter: lift ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
                 initial={{ scale: 1.06 }}
                 animate={{ scale: 1.16 }}
                 transition={{ duration: 24, ease: "linear" }}
