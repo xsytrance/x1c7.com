@@ -1,0 +1,22 @@
+{
+ "tagline": "Step inside the hundred-inch screen of isolation.",
+ "liner": "This gritty East Coast boom bap track runs at roughly one zero eight beats per minute, featuring dusty drums with hard snare cracks and a foghorn bass line mimicking an upright stab. Layered over a dark A minor piano loop and muted trumpet, it creates a sinister yet rubber-hose animated vibe reminiscent of black-and-white nineteen twenties dockside cartoons. The song portrays a wealthy but socially isolated figure who aggressively rejects outsiders despite their admiration for his lifestyle.",
+ "worldCaption": "A foghorn bass line cuts through the static of a hundred-inch TV in this noir-docked world where only Big G plays.",
+ "bios": {
+  "lead": "Projects arrogant disdain with raspy street vocals.",
+  "back": "Echoes every rejection into the hollow void behind.",
+  "drums": "Keeps the floor shaking. Never misses a downbeat.",
+  "perc": "Adds rhythmic texture to the dusty sonic landscape.",
+  "bass": "Provides foghorn stabs that mimic upright bass hits.",
+  "synth": "Weaves dark atmosphere around the piano loop core.",
+  "other": "Layers muted trumpet into the sinister animated vibe."
+ },
+ "levels": {
+  "Intro": "SINISTER START",
+  "Verse 1": "ARROGANT DISPLAY",
+  "Chorus": "COLD NO GO ZONE",
+  "Drop": "DEFIANT DEFENSE",
+  "Bridge": "ISOLATE SELF NOW",
+  "Outro": "HOLLOW END STATE"
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "v": 1,
+ "id": "days-drift-by",
+ "generatedAt": "2026-07-09T18:03:56.183Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Days Drift By",
+   "tagline": "Drift through liquid time in this ethereal journey.",
+   "genre": "Liquid DnB",
+   "bookletNo": "90A"
+  },
+  {
+   "type": "read",
+   "body": "Welcome to the sound of moments dissolving like mist over a quiet river. This track weaves gritty noir aesthetics with dreamy liberation, creating an immersive rainforest-adjacent soundscape where every heartbeat moves slow beneath leaves above and water below. Soft whispers guide you through urgent tenderness before transcending into release. Here, time disappears without a trace as clouds melt into gray only to find the sun again. Breathe tonight while everything feels utterly alive, floating up higher through shimmering guitar textures and evolving ambient pads. It is an invitation to accept passing time with melancholy grace.",
+   "styleSentence": "A liquid drum and bass track at a moderate tempo featuring shimmering guitar textures, evolving ambient pads, and melodic synth leads that create an immersive, rainforest-adjacent soundscape.",
+   "mood": [
+    "ethereal, dreamy, melancholic, atmospheric"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro]\n\nMorning light...\nTake me there...\nTake me there...\n\n(instrumental)\n\n[Verse 1]\n\nLeaves above, the river below\nEvery little heartbeat moving slow\nHands in the breeze\nNothing to chase\nTime disappears without a trace\n\n[Pre-Chorus]\n\nHold me\nDon't let go\nWhere we wander\nFlowers grow\n\n[Chorus]\n\nDays drift by\nWe don't have to know why\nBreathe tonight\nEverything feels alive\n\nDays drift by\nFloating into the sky\nStay with me\nStay with me\nStay...\n\n(Liquid DnB instrumental with melodic lead and guitar textures)\n\n[Verse 2]\n\nClouds roll in\nThen fade away\nEvery color melts into gray\nThen the sun\nFinds its way\nJust like it always does\n\n[Bridge]\n\nCloser...\nCloser...\nInto the light...\n\nHigher...\nHigher...\nThrough the leaves...\n\n(Long instrumental featuring evolving pads, liquid breaks, melodic synth lead, and shimmering guitar)\n\n[Final Chorus]\n\nDays drift by\nWe don't have to know why\nBreathe tonight\nEverything feels alive\n\nDays drift by\nFloating into the sky\nStay with me\nStay with me\n\nDays drift by...\nDays drift by...\nDays drift by...\n\n(Fade into rainforest ambience and distant vocal echoes.)"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "soft, ethereal, whispered",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Whispers soft melodies into the mist."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Echoes distant calls across the canopy."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking gently."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds rhythmic rainforest textures."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Lows rumble through wet earth."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves shimmering atmospheric lines."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers evolving ambient pads deeply."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Plays crisp notes in the gloom."
+    },
+    {
+     "stem": "woodwinds",
+     "name": "WOODWINDS",
+     "bio": "Flutes mimic distant bird songs."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 7,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 212,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "HOPEFUL ANTICIPATION",
+     "start": 0,
+     "end": 46,
+     "intensity": 0.76,
+     "emotion": "Hopeful anticipation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "SLOW DRIFTING",
+     "start": 46,
+     "end": 57,
+     "intensity": 0.63,
+     "emotion": "Slow drifting melancholy",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "URGENT TENDERNESS",
+     "start": 57,
+     "end": 68,
+     "intensity": 0.6,
+     "emotion": "Urgent tenderness",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "TRANSCENDENT RELEASE",
+     "start": 68,
+     "end": 132,
+     "intensity": 0.54,
+     "emotion": "Transcendent release",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "REPETITIVE TRANCE LOOP",
+     "start": 132,
+     "end": 161,
+     "intensity": 0.15,
+     "emotion": "Repetitive trance state",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "SPIRITUAL ASCENT CLIMB",
+     "start": 161,
+     "end": 212,
+     "intensity": 0.24,
+     "emotion": "Spiritual ascent",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 172,
+   "key": "G",
+   "mode": "minor",
+   "camelot": "6A",
+   "duration": 212.32,
+   "energy": "low",
+   "dynamicsDb": 10.1,
+   "brightness": 2938.2,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:03:56.183Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/days-drift-by",
+   "bookletNo": "90A"
+  }
+ ]
+}

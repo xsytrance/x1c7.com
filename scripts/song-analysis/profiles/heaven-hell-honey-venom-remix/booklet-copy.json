@@ -1,0 +1,25 @@
+{
+ "tagline": "Sultry dancehall meets forbidden fire.",
+ "liner": "This hyper-energetic bashment anthem pulses at 136 BPM, driven by massive sound-system bass and aggressive Caribbean drums. The track explores a sultry, dangerous attraction where an alluring figure embodies both divine beauty and temptation. Hypnotic female vocals dominate the neon-soaked atmosphere, delivering seductive lines about loving like hell while looking like heaven. From cinematic breakdowns to intense call-and-response toasting, the journey moves from low-hum anticipation through explosive releases of forbidden passion into exhausted euphoria.",
+ "worldCaption": "Neon-soaked nightclub where bass gets lower and trouble walks in slow motion under strobe lights.",
+ "bios": {
+  "lead": "Sings with sultry power that dominates the floor.",
+  "back": "Weaves harmony lines deep within the mix's soul.",
+  "drums": "Pounds aggressive Caribbean rhythms without missing a beat.",
+  "perc": "Adds intricate layers to keep dancers moving sharp.",
+  "bass": "Delivers massive sound-system weight that shakes foundations.",
+  "synth": "Crafts overdriven 808 waves for cinematic depth.",
+  "other": "Paints atmospheric hues across the sonic landscape."
+ },
+ "levels": {
+  "Intro": "LOW HUM TENSION",
+  "Verse 1": "INNER CONFLICT ZONE",
+  "Chorus": "EXPLOSIVE RELEASE",
+  "Verse 2": "LUXURY HEAT VISIONS",
+  "Pre-Chorus": "PSYCHO SHIFT RISE",
+  "Bridge": "FATE BARGAIN STAGE",
+  "Drop": "SONIC ASSAULT WAVE",
+  "Breakdown/Bridge 2": "TRANCE REPETITION LOOP",
+  "Final Chorus/Outro": "LINGERING INTOXICATION"
+ }
+}

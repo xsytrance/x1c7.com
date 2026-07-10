@@ -1,0 +1,183 @@
+{
+ "v": 1,
+ "id": "honey-n-venom-rude-wine-riddim",
+ "generatedAt": "2026-07-09T18:09:08.573Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Honey N Venom (Rude Wine Riddim)",
+   "tagline": "Taste the sweet before it stings.",
+   "genre": "Dancehall",
+   "bookletNo": "6BE"
+  },
+  {
+   "type": "read",
+   "body": "This high-octane Dancehall anthem juxtaposes seductive allure with dangerous toxicity. Driven by a sharp Afro-Caribbean riddim at blistering speed, the track features chest-rattling overdriven 808s and piercing siren FX. Sultry female vocals trade rapid-fire call-and-response toasts against raw male delivery, painting a picture of lovers who are as sweet as honey but lethal like venom. It captures the gritty, sweaty energy of a peak-time club night where physical desire clashes with emotional peril under strobe lights.",
+   "styleSentence": "A peak-time club anthem driven by a sharp Afro-Caribbean riddim at high tempo featuring chest-rattling overdriven 808s, siren FX, and rapid-fire call-and-response toasting between a sultry female lead and raw male vocals.",
+   "mood": [
+    "Hyper-energetic, sexually charged, gritty, aggressive"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Female, Sultry]\n\nMm-mm...\nYou look sweet from far away...\nTill you get a taste...\n\n[Drop]\n\nHoney n venom...\nHoney n venom...\n\n[Chorus - Female]\n\nHoney n venom, baby that's your style\nKiss me deep while you grind for a while\nHoney n venom, got me losing my head\nBoth hands on my waist, got me wild in your bed\n\nHoney n venom, pressing in the strobe light\nHeart says more while my dress riding up high\nHoney n venom, everybody can tell\nYou look like heaven but we f**king like hell\n\n[Post-Chorus]\n\nAy-ay-ay-ay\nHoney n venom\nAy-ay-ay-ay\nHoney n venom\n\n[Verse 1 - Male Toasting]\n\nShe walk in slow motion\nWhole room freeze up\nGold in the smile\nBut the lips say \"deeper\"\n\nBody got rhythm\nSkin like silk\nSweet when she whining on the waistline milk\n\nBut mi know\nFire burning in the sugar\nPretty little waist\nTurn a king to a lover\n\nOne minute halo\nNext minute torn\nEverybody know she wicked\nStill everybody swarm\n\n[Pre-Chorus - Female]\n\nI know...\nI know...\nBut I still come close\n\nI know...\nI know...\nStill dancing with ghosts\n\n[Chorus - Female]\n\nHoney n venom, baby that's your style\nKiss me deep while you grind for a while\nHoney n venom, got me losing my head\nBoth hands on my waist, got me wild in your bed\n\nHoney n venom, pressing in the strobe light\nHeart says more while my dress riding up high\nHoney n venom, everybody can tell\nYou look like heaven but we f**king like hell\n\n[Dancehall Breakdown]\n\nWine slow...\nDon't stop...\nHands high...\nBass drop...\n\nWine low...\nTick-tock...\nHoney n venom...\nBass knock...\n\n[Verse 2 - Male & Female Back-and-Forth]\n\n(Male)\nYou got the sugar\n\n(Female)\nYou want the taste\n\n(Male)\nBend pon the speaker\n\n(Female)\nHands on my waist\n\n(Male)\nOne more whine\n\n(Female)\nOne more night\n\n(Both)\nThen we do it in the dark and the neon light\n\n(Male)\nGrab pon the bumper\n\n(Female)\nGrip on the thigh\n\n(Male)\nWhy you always make me misbehave?\n\n(Female)\n'Cause you love when I ride\n\n(Male)\nDangerous gyal\n\n(Female)\nDangerous boy\n\n(Male)\nWhy you always playing with fire?\n\n(Female)\nBecause the burn feels good\n\n[Big Chorus - Female Lead + Crowd]\n\nHoney n venom, baby that's your style\nWhole dancehall shouting every dirty line\nHoney n venom, hands up to the sky\nIf loving you is wrong then I still wanna try\n\nHoney n venom, rhythm in my veins\nEverybody sweating in the tropical rain\nHoney n venom, one more time before dawn\nSweet little poison got the whole world on\n\n[Outro]\n\nAy-ay-ay-ay...\nHoney n venom...\n\nAy-ay-ay-ay...\nHoney n venom...\n\nSweet like honey...\nSharp like danger...\n\nHoney...\nN venom..."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Aggressive, teasing, explicit delivery with rapid back-and-forth rap-singing",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sets the sultry tone for every drop."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers depth behind the main vocal hook."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking hard and fast."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds sharp, rhythmic accents to the mix."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers chest-rattling low-end heat."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric textures through the beat."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Sprinkles gritty grit over the whole vibe."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 5,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 201,
+   "levels": [
+    {
+     "section": "Section 1",
+     "name": "MISTY ANTICIPATION",
+     "start": 2,
+     "end": 12,
+     "intensity": 0.76,
+     "emotion": "Mysterious Anticipation",
+     "boss": true
+    },
+    {
+     "section": "Section 2",
+     "name": "EXPLOSIVE RELEASE",
+     "start": 12,
+     "end": 25,
+     "intensity": 0.79,
+     "emotion": "Explosive Release",
+     "boss": false
+    },
+    {
+     "section": "Section 3",
+     "name": "FEVERISH DESIRE",
+     "start": 25,
+     "end": 43,
+     "intensity": 0.77,
+     "emotion": "Feverish Desire",
+     "boss": false
+    },
+    {
+     "section": "Section 4",
+     "name": "HYPNOTIC LOOP",
+     "start": 43,
+     "end": 51,
+     "intensity": 0.96,
+     "emotion": "Hypnotic Repetition",
+     "boss": false
+    },
+    {
+     "section": "Section 5",
+     "name": "TENSE WATCH",
+     "start": 51,
+     "end": 85,
+     "intensity": 0.71,
+     "emotion": "Tense Observation",
+     "boss": true
+    },
+    {
+     "section": "Section 6",
+     "name": "BUILDING TENSION",
+     "start": 85,
+     "end": 90,
+     "intensity": 0.66,
+     "emotion": "Building Tension",
+     "boss": false
+    },
+    {
+     "section": "Section 7",
+     "name": "CHAOTIC PASSION",
+     "start": 90,
+     "end": 147,
+     "intensity": 0.6,
+     "emotion": "Chaotic Passion",
+     "boss": false
+    },
+    {
+     "section": "Section 8",
+     "name": "UNRESTRAINED CHAOS",
+     "start": 147,
+     "end": 160,
+     "intensity": 0.28,
+     "emotion": "Unrestrained Chaos",
+     "boss": false
+    },
+    {
+     "section": "Section 9",
+     "name": "INTOXICATED CONFUSION",
+     "start": 160,
+     "end": 201,
+     "intensity": 0.26,
+     "emotion": "Intoxicated Confusion",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "C",
+   "mode": "major",
+   "camelot": "8B",
+   "duration": 201.04,
+   "energy": "high",
+   "dynamicsDb": 10.8,
+   "brightness": 3220.4,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:09:08.573Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/honey-n-venom-rude-wine-riddim",
+   "bookletNo": "6BE"
+  }
+ ]
+}

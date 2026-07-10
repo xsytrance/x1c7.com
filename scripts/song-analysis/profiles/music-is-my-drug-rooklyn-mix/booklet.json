@@ -1,0 +1,147 @@
+{
+ "v": 1,
+ "id": "music-is-my-drug-rooklyn-mix",
+ "generatedAt": "2026-07-09T18:50:57.890Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Music Is My Drug (Rooklyn Mix)",
+   "tagline": "Turn up now: Music Is My Drug.",
+   "genre": "Pop",
+   "bookletNo": "277"
+  },
+  {
+   "type": "read",
+   "body": "This driving D major dance-pop anthem at 129 bpm explores music as a powerful life-saving substance that transforms pain into euphoria. Starting with intimate verses, the track builds to a massive chorus where strangers unite through rhythm. The rolling bassline and punchy drums create an intense physical sensation, while anthemic vocals deliver catharsis and vitality. As intensity rises from 0.12 to explosive peaks of one pure joy, listeners experience escapism and unity in sound. This journey turns silence into gold and makes broken things shine under the rhythm.",
+   "styleSentence": "A driving D major dance-pop track at 129 bpm featuring a rolling bassline, punchy drums, and an anthemic vocal delivery that builds from intimate verses to a massive, euphoric chorus.",
+   "mood": [
+    "Euphoric",
+    "Uplifting",
+    "Intense"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "Oh baby,\nturn it up now, feel that bass line run\nYeah, I can't get enough\nCome on\nTurn it up now, feel that bass line run\nYeah,\nI can't get enough\nCome on\nFirst note hits my skin\nTurn it up now, feel that bass line run\nBass rollin' through my chest\nGoosebumps rushin' in\nLike I forgot the rest\nOne song can start a fire\nOne hook can stop the pain\nOne beat can make us strangers\nThen bring us back again\nWhen the world gets heavy\nMusic clears my mind\nWhen my heart gets messy\nIt makes the broken shine\nUnder all this rhythm\nSomething comes alive\nMusic is my drug\nFeel it in my body\nFeel it in my mind\nMusic is my drug\nEyes\nshut to the feelings\nSpirit in the sky\nDon't stop now\nMusic is my drug\nIt gives me chills\nChills inside\nIt gets me high\nI'm alive\nI'm alive\nI'm alive\nDa da da da da da\nOh!\nWoo!\nWoo!\nWoo!\nIt\nmakes me laugh in color\nMakes me cry in blue\nMakes me dance with memory\nI thought I never knew\nTurns pain into motion\nTurns silence into gold\nMakes a room of strangers\nFeel like one big soul\nWoo!\nWhen the night gets lonely\nMusic pulls me close\nWhen the road gets crazy\nThe high I need the most\nUnder all this rhythm\nSomething comes alive\nMusic is my drug\nWoo!\nFeel it in my body\nFeel it in my mind\nMusic is my drug\nEyes shut to the feelings\nSpirit in the sky\nDon't stop now\nMusic is my drug\nIt gives me chills inside\nIt gets me high\nI'm alive\nI'm alive\nI'm alive\nIt's the laugh after crying\nIt's the scream in the dark\nIt's the hands in the air\nIt's the beat in my heart\nEvery drop\nEvery drum\nEvery voice\nEvery one\nWhen the bass line comes\nWe become the song\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nWoo!\nMusic is my drug\nFeel it in my body\nMusic is my drug\nFeel it in my mind\nMusic is my drug\nEyes shut to the feelings\nSpirit in the sky\nMusic is my drug\nWoo!\nIt gets me high\nMusic is my job\nTurn it up\nMusic is my job"
+  },
+  {
+   "type": "band",
+   "approx": true,
+   "vocalStyle": "Anthemic",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Voice ignites anthemic fire within every breath taken."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever missing a downbeat."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves atmospheric layers that elevate emotional intensity."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 4,
+   "stems": 3
+  },
+  {
+   "type": "map",
+   "duration": 292,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "LOW INTIMACY ZONE",
+     "start": 1,
+     "end": 35,
+     "intensity": 0.12,
+     "emotion": "Anticipation and low-volume intimacy",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "BASSLINE RISE",
+     "start": 35,
+     "end": 60,
+     "intensity": 0.81,
+     "emotion": "Growing physical sensation of the bassline",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "EUPHORIC RELEASE",
+     "start": 60,
+     "end": 90,
+     "intensity": 0.94,
+     "emotion": "Massive release and emotional fire",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "SPIRITUAL CLARITY",
+     "start": 90,
+     "end": 103,
+     "intensity": 0.62,
+     "emotion": "Clarity and spiritual awakening",
+     "boss": false
+    },
+    {
+     "section": "Verse 1 (Repeat/Build)",
+     "name": "TENSION ESCALATION",
+     "start": 103,
+     "end": 104,
+     "intensity": 0.62,
+     "emotion": "Escalating tension and urgency",
+     "boss": false
+    },
+    {
+     "section": "Chorus (Full)",
+     "name": "CHAOTIC JOY PEAK",
+     "start": 104,
+     "end": 176,
+     "intensity": 0.98,
+     "emotion": "Total euphoria and chaotic joy",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "COLLECTIVE TRANCE",
+     "start": 176,
+     "end": 292,
+     "intensity": 1,
+     "emotion": "Explosive rhythm and collective trance",
+     "boss": true
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "D",
+   "mode": "major",
+   "camelot": "10B",
+   "duration": 291.98,
+   "energy": "high",
+   "dynamicsDb": 8.8,
+   "brightness": 3335.2,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:50:57.890Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/music-is-my-drug-rooklyn-mix",
+   "bookletNo": "277"
+  }
+ ]
+}

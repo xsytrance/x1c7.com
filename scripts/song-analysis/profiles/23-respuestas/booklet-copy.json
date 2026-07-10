@@ -1,0 +1,25 @@
+{
+ "tagline": "Twenty-three answers. One firm boundary.",
+ "liner": "This high-tempo urban anthem transforms heartbreak into a powerful declaration of self-worth over a driving dembow rhythm. The track opens with intimate nostalgia before rising to triumphant closure, where the protagonist refuses to return despite lingering pain. Layered gang vocals swell behind smooth lead melodies that tell a story of emotional defense and silent healing. It is both sensual and melancholic, proving that reclaiming autonomy feels like freedom even when memories remain vivid.",
+ "worldCaption": "A neon-soaked street at night where the rhythm beats as hard as her resolve to walk away forever.",
+ "bios": {
+  "lead": "Sings heartbreak with surgical precision and soaring power.",
+  "back": "Weaves harmonies that lift the lead without losing focus.",
+  "drums": "Keeps the floor shaking at exactly seventeen beats a minute per quarter note",
+  "perc": "Adds syncopated claps that lock into every heartbeat of denial.",
+  "bass": "Grooves deep beneath vocals with unwavering low-end support.",
+  "synth": "Paints atmospheric swells that wrap the whole scene in mood.",
+  "other": "Scatters subtle textures to make the silence feel loud and present.",
+  "guitar": "Plays bright melodic accents that cut through the dense mix cleanly.",
+  "strings": "Swell emotionally behind hooks with dramatic dynamic shifts."
+ },
+ "levels": {
+  "Intro": "NIGHTLINE CALL",
+  "Verse 1": "GENTLE REALIZATION",
+  "Pre-Chorus": "DEFENSIVE RESOLVE",
+  "Chorus": "TRIUMPHANT RELEASE",
+  "Post-Chorus": "RHYTHMIC PAINLOOP",
+  "Verse 2": "DEEP COUNTING",
+  "Pre-Chorus 2": "FINAL BOUNDARIES SET"
+ }
+}

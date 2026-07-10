@@ -1,0 +1,22 @@
+{
+ "tagline": "Noble resolve in a medieval storm.",
+ "liner": "Step into the silent arena where gratitude blooms amidst chaos. This medium-tempo D minor saga weaves tense string ostinatos with a soaring violin lead, supported by aggressive viola and cello rhythms. Restrained French horns build quiet pressure while sharp brass accents punctuate the air like distant warhorns. Militaristic percussion drives the narrative forward through snare rolls and timpani strikes without ever breaking the loopable tactical cadence. It is an orchestral storm that feels ancient yet urgent, capturing the essence of a decisive medieval fantasy battle where every note serves as both shield and sword.",
+ "worldCaption": "A PS1-era cinematic orchestra evoking noble war drama with sparse strings and militaristic snare preparation against a backdrop of fading re",
+ "bios": {
+  "drums": "Keeps the floor shaking. Never misses a downbeat.",
+  "perc": "Rolls out ancient signals for the charge ahead.",
+  "synth": "Paints invisible maps with shimmering digital hues.",
+  "other": "Weaves atmospheric shadows around every heroic step.",
+  "keys": "Chords bloom like flowers in frozen battlefields.",
+  "strings": "Tug at heartstrings with noble, minor-key resolve.",
+  "brass": "Blasts defiant trumpets to rally the weary ranks."
+ },
+ "levels": {
+  "Intro": "SNARE SHADOW",
+  "Verse 1": "MINOR RESOLVE",
+  "Chorus": "VIOLIN SOAR",
+  "Bridge": "HORN PRESSURE",
+  "Drop": "BRASS CLASH",
+  "Outro": "FADE LOOP"
+ }
+}

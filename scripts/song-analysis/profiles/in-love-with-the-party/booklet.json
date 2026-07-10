@@ -1,0 +1,160 @@
+{
+ "v": 1,
+ "id": "in-love-with-the-party",
+ "generatedAt": "2026-07-09T18:13:05.269Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "In Love With The Party",
+   "tagline": "Sync your soul with the night in this intimate Pop House jou",
+   "genre": "Pop House",
+   "bookletNo": "61D"
+  },
+  {
+   "type": "read",
+   "body": "Step into 'In Love With The Party,' a mid-tempo sanctuary where warmth and rhythm collide. This F# major track blends lush synth pads with soft guitar hums to create an atmosphere of pure euphoria, perfect for those seeking nighttime escapism. At its heart lies the enduring connection between two souls syncing their hearts until dawn. As the energy dips gracefully for vocal intimacy before rising again, you'll feel the 808 bassline driving a restrained groove that celebrates life amidst bustling crowds. Every moment is designed to make you fall deeper into the late-night haze, proving that true love can be found even when the drums fade out and only the vinyl crackle remains.",
+   "styleSentence": "A mid-tempo (129 BPM) F# major track blending warm synth pads and soft guitar hums with a driving yet restrained 808 bassline that creates an intimate club atmosphere where the energy dips gracefully for vocal intimacy before rising again.",
+   "mood": [
+    "Euphoric, Intimate, Lush, Nostalgic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "We’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums fade out\nBut we still keep swaying\nLow lights glow\nWhile the guitar’s still playing\nSoft lead hums\nLike a secret we’re saving\nHeartbeats sync\nWith the night we’re craving\nWhen the snare cuts\nI can hear your whisper\nPromise that you’ll stay\nTill the dawn gets crisper\nEven when it’s quiet\nWe still feel lifted\nParty in our souls\nThat’s a lifelong ticket\nWe’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums come back for a second\nThen they slide away\nVinyl crackle holds the memory\nOf this perfect day\nLast chord rings\nWhile we walk in the city light\nStill in love with the party\nCarry it into the night\nYeah"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Smooth, breathy, warm",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings smooth secrets like a hummed melody saved for later."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Adds layered depth to every breathy whisper and soaring note."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Pulses with an eighties heartbeat that keeps spirits dancing right."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers driving yet restrained warmth under the dancefloor floorboards."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves lush pads around vocals like a comforting, glowing blanket."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Sprinkles textures to make every late-night moment feel golden."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 4,
+   "stems": 6
+  },
+  {
+   "type": "map",
+   "duration": 122,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "WARM ANTICIPATION",
+     "start": 0,
+     "end": 0,
+     "intensity": 0.58,
+     "emotion": "Anticipation and warmth",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "GROOVE CONFIDENCE",
+     "start": 0,
+     "end": 16,
+     "intensity": 0.85,
+     "emotion": "Relaxed groove and confidence",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "CLIMACTIC WARMTH",
+     "start": 16,
+     "end": 30,
+     "intensity": 0.98,
+     "emotion": "Climactic warmth with fading rhythm",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "ACOUSTIC VULNERABILITY",
+     "start": 30,
+     "end": 45,
+     "intensity": 0.55,
+     "emotion": "Soft vulnerability and acoustic intimacy",
+     "boss": true
+    },
+    {
+     "section": "Drop",
+     "name": "EMOTIONAL LIFT DRIVE",
+     "start": 45,
+     "end": 59,
+     "intensity": 0.61,
+     "emotion": "Emotional lift with rhythmic drive",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "DEEP NOSTALGIA FLOW",
+     "start": 59,
+     "end": 118,
+     "intensity": 0.2,
+     "emotion": "Deepened nostalgia and flow",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "QUIET LINGERING LOVE",
+     "start": 118,
+     "end": 122,
+     "intensity": 0.14,
+     "emotion": "Quiet acceptance and lingering love",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "F#",
+   "mode": "major",
+   "camelot": "2B",
+   "duration": 121.72,
+   "energy": "medium",
+   "dynamicsDb": 14.2,
+   "brightness": 3165.4,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:13:05.269Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/in-love-with-the-party",
+   "bookletNo": "61D"
+  }
+ ]
+}

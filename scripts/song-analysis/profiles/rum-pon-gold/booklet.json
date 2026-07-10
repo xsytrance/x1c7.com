@@ -1,0 +1,163 @@
+{
+ "v": 1,
+ "id": "rum-pon-gold",
+ "generatedAt": "2026-07-09T18:29:23.214Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Rum Pon Gold",
+   "tagline": "Sweat the riddim in this smoky Brooklyn-to-Kingston fusion.",
+   "genre": "Dancehall",
+   "bookletNo": "A88"
+  },
+  {
+   "type": "read",
+   "body": "Step into a club where air is thick and heat rises off polished gold. The male DJ trades fire with the female vocalist, their call-and-response chants echoing through a room filled with smoke and rhythm. This track blends dirty analog drums with punchy boom-bap kicks, creating an intimate yet sweaty atmosphere perfect for non-stop dancing. Feel the deep rolling sub bass thumping beneath skanking guitar chops and sharp piano stabs. As brass hits crash against organ bubbles, you'll move your waist to a groove that refuses to fade. Whether pouring more water or proving yourself bad in this intense environment, every second is pure intoxicating energy.",
+   "styleSentence": "A high-energy Brooklyn-meets-Kingston dancehall banger running at 172 BPM featuring dirty analog drums with a punchy boom-bap kick layer, deep rolling sub bass, skanking guitar chops, sharp piano stabs, organ bubbles, brass hits, record scratches, and vinyl warmth that creates an intimate yet sweaty nightclub atmosphere.",
+   "mood": [
+    "sweaty, raw, confident, smoky"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[DJ Intro]\nYo\nGold cup crew\nSmoke room massive\nBrooklyn to Kingston\nRun it\n\n[Beat In]\n\n[Male DJ]\nRum pon gold\n\n[Female]\nWine pon me\n\n[Male DJ]\nSmoke inna air\n\n[Female]\nCome find me\n\n[Male DJ]\nRum pon gold\n\n[Female]\nMove that waist\n\n[Male DJ]\nPull up the riddim\n\n[Female]\nDon’t waste taste\n\n[Drop]\n\n[Hook - Call and Response]\nRum pon gold\n\nGold inna cup\n\nSmoke don’t fold\n\nTurn it up\n\nBody too bold\n\nWine it slow\n\nNight getting hot\n\nDon’t let go\n\n[Female]\nWine pon me\nWine pon me\nIf you bad, come prove it\n\n[Male DJ]\nEasy now\nEasy now\nDon’t stop, girl, move it\n\n[Post-Hook]\nLeft side\nBubble\n\nRight side\nTrouble\n\nFront row\nSweating\n\nBack row\nDouble\n\n[Verse - Male DJ]\nRed cup tilt when the bassline knock\nGold chain swing when the waistline drop\nRoom full smoke, and the door stay locked\nDJ pull it back when the whole place rock\n\nBrooklyn hot\n\n[Female]\nKingston hotter\n\n[Male DJ]\nWho bring fire?\n\n[Female]\nWe bring proper\n\n[Male DJ]\nWho got rum?\n\n[Female]\nPour more water\n\n[Male DJ]\nWho bad bad?\n\n[Female]\nDon’t ask, father\n\n[Hook]\nRum pon gold\n\nGold inna cup\n\nSmoke don’t fold\n\nTurn it up\n\nBody too bold\n\nWine it slow\n\nNight getting hot\n\nDon’t let go\n\n[Breakdown]\nOne time\n\n[Female]\nWine pon me\n\n[Male DJ]\nTwo time\n\n[Female]\nWine pon me\n\n[Male DJ]\nThree time\n\n[Female]\nDon’t watch me\n\n[Male DJ]\nFour time\n\n[Both]\nPull up, pull up\n\n[Instrumental Riddim Break]\nHey\nHey\nHey\nForward\n\n[Female Lead]\nDon’t spill the drink\nLight another one\nDJ nah done\nMorning never come\n\nHands on my waist\nBut don’t move dumb\nIf you can’t keep time\nThen you can’t get none\n\n[Male DJ]\nTalk to dem\n\n[Female]\nI like it rough\nBut smooth with the timing\nGold on the skin\nBassline climbing\n\nSmoke in my hair\nRum in the lighting\nIf I say pull up\nYou better rewind it\n\n[Hook]\nRum pon gold\n\nGold inna cup\n\nSmoke don’t fold\n\nTurn it up\n\nBody too bold\n\nWine it slow\n\nNight getting hot\n\nDon’t let go\n\n[Final Chant]\nRum pon gold\nRum pon gold\n\nWine pon me\nWine pon me\n\nSmoke inna air\nSmoke inna air\n\nPull up again\nPull up again\n\n[Outro - DJ Friendly]\nGold cup\nSmoke room\n\nBassline\nBoom boom\n\nBrooklyn\nKingston\n\nRun it\nRun it"
+  },
+  {
+   "type": "band",
+   "approx": true,
+   "vocalStyle": "male ragga deejay trading call-and-response chants with a sexy female dancehall vocalist",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Trades fiery call-and-response chants that heat the room up fast."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Everything you feel but can't name."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 3
+  },
+  {
+   "type": "map",
+   "duration": 182,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "HUSHED ANTICIPATION",
+     "start": 0,
+     "end": 8,
+     "intensity": 0.27,
+     "emotion": "Anticipatory, Hushed Excitement",
+     "boss": false
+    },
+    {
+     "section": "Verse 1 / Call & Response Setup",
+     "name": "VERSE 1 / CALL & RESPONSE SETUP",
+     "start": 8,
+     "end": 24,
+     "intensity": 0.15,
+     "emotion": "Assertive Swagger",
+     "boss": false
+    },
+    {
+     "section": "Chorus (Hook) - First Pass",
+     "name": "CHORUS (HOOK) - FIRST PASS",
+     "start": 24,
+     "end": 41,
+     "intensity": 0.62,
+     "emotion": "Intoxicating Heat",
+     "boss": false
+    },
+    {
+     "section": "Post-Hook / Verse 2 Start",
+     "name": "POST-HOOK / VERSE 2 START",
+     "start": 41,
+     "end": 51,
+     "intensity": 0.6,
+     "emotion": "Kinetic Movement",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "VERSE 2",
+     "start": 51,
+     "end": 116,
+     "intensity": 0.78,
+     "emotion": "Aggressive Dominance",
+     "boss": false
+    },
+    {
+     "section": "Chorus (Hook) - Second Pass",
+     "name": "CHORUS (HOOK) - SECOND PASS",
+     "start": 116,
+     "end": 124,
+     "intensity": 0.82,
+     "emotion": "Climaxing Fire",
+     "boss": false
+    },
+    {
+     "section": "Breakdown / Bridge",
+     "name": "BREAKDOWN / BRIDGE",
+     "start": 124,
+     "end": 137,
+     "intensity": 0.96,
+     "emotion": "Sensory Overload",
+     "boss": false
+    },
+    {
+     "section": "Instrumental Riddim Break / Verse 3 Start",
+     "name": "INSTRUMENTAL RIDDIM BREAK / VERSE 3 START",
+     "start": 137,
+     "end": 148,
+     "intensity": 0.83,
+     "emotion": "Hypnotic Repetition",
+     "boss": false
+    },
+    {
+     "section": "Verse 3",
+     "name": "VERSE 3",
+     "start": 148,
+     "end": 182,
+     "intensity": 0.8,
+     "emotion": "Sated Satisfaction",
+     "boss": true
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 172,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 181.76,
+   "energy": "high",
+   "dynamicsDb": 11.1,
+   "brightness": 3098.2,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:29:23.214Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/rum-pon-gold",
+   "bookletNo": "A88"
+  }
+ ]
+}

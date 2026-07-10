@@ -1,0 +1,25 @@
+{
+ "tagline": "Feel the international heat rising tonight.",
+ "liner": "Step into a sultry world where English whispers blend with Vietnamese allure over a swinging half-time groove. This track is a hypnotic journey through an international club, driven by massive sub bass and wobbly low-end that rattle your trunk while classic southern claps meet reggaeton-flavored percussion. Smooth female vocals float confidently atop lush pads, glossy keys, and atmospheric synth bells, creating a sensual cinematic feel shared with charismatic male call-and-response featuring occasional Dominican Spanish ad-libs. As you lose control to the deep basslines, bodies move together in perfect sync across different cities, capturing the very essence of cultural fusion and late night desire.",
+ "worldCaption": "A seductive global dance floor where English whispers meet Vietnamese allure over massive sub-bass lines that rattle your core while classic",
+ "bios": {
+  "lead": "Floats confident vocals blending languages seamlessly.",
+  "back": "Adds charismatic enunciation and Spanish ad-libs freely.",
+  "drums": "Keeps the floor shaking with classic southern patterns.",
+  "perc": "Delivers hypnotic reggaeton rhythms that drive trance states.",
+  "bass": "Provides massive sub bass for deep, trunk-rattling lows.",
+  "synth": "Creates lush pads and atmospheric bells everywhere.",
+  "other": "Weaves warm cello lines into the sensual cinematic mix.",
+  "guitar": "Adds a subtle layer beneath the glossy keys."
+ },
+ "levels": {
+  "Intro": "WHISPERED CURIOSITY",
+  "Verse 1": "FIERY INVITATION",
+  "Pre-Chorus": "BOUNDARY DISSOLUTION",
+  "Chorus": "SENSORY OVERLOAD",
+  "Drop": "RHYTHMIC ABANDON",
+  "Verse 2": "GLOBAL CONNECTION",
+  "Bridge": "INTENSE SURRENDER",
+  "Outro": "LINGERING ECHOES"
+ }
+}

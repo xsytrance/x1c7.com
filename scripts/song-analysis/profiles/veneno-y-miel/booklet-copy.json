@@ -1,0 +1,22 @@
+{
+ "tagline": "Taste the honey. Swallow the poison.",
+ "liner": "Veneno Y Miel arrives as a sophisticated Latin urban pop track at 99 BPM, weaving smooth dark R&B vocals with heavy 808 basslines and wobble synths over a classic reggaeton dembow rhythm accented by traditional snake-rattle hats. This mid-tempo journey deconstructs toxic relationships by contrasting sweet appearances with hidden dangers, urging listeners to discern loyalty from deception within their social circles. The song navigates observational disappointment into final defiant acceptance of truth over illusion, guiding you through a landscape where pretty words often mask the smell of betrayal.",
+ "worldCaption": "A darkly sophisticated urban world where snake-rattle hats collide with wobble synths and 808 basslines to expose sweet lies beneath golden ",
+ "bios": {
+  "lead": "Sings smooth truth from the shadows of deceit.",
+  "back": "Layers voices until the fake ones vanish completely.",
+  "drums": "Keeps time steady while secrets unravel around us.",
+  "perc": "Snaps traditional hats to puncture every sweet lie told.",
+  "bass": "Rumbles heavy 808 truth beneath deceptive melodies.",
+  "synth": "Wobbles dark tones that reveal hidden dangers clearly.",
+  "other": "Spreads textures of rotting fruit and golden cages alike."
+ },
+ "levels": {
+  "Intro": "SUSPICIOUS",
+  "Verse 1": "DIRTY NAILS",
+  "Pre-Chorus": "GOLDEN LIE TENSION",
+  "Chorus": "DEFIANT TRUTH",
+  "Verse 2": "HYPOCRITICAL SHIFTS",
+  "Bridge": "CUT TIES DECISION"
+ }
+}

@@ -1,0 +1,175 @@
+{
+ "v": 1,
+ "id": "between-the-stations",
+ "generatedAt": "2026-07-09T17:59:58.281Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Between The Stations",
+   "tagline": "Reclaim your identity between the chaotic stops of life.",
+   "genre": "Afro-Caribbean Dancehall",
+   "bookletNo": "3C7"
+  },
+  {
+   "type": "read",
+   "body": "This track transforms gritty city transit into an aggressive yet cathartic dancehall experience where rhythm becomes the mechanism to reclaim one's identity. Driven by chest-rattling sub bass and overdriven 808s, a dominant female lead trades rapid-fire call-and-response lines with a raw male toaster amidst dirty wine motifs and siren FX. The journey uses subway travel as a metaphor for navigating urban exhaustion, finding moments of respite between chaotic stops until the final resolution where breathing syncs perfectly with the beat.",
+   "styleSentence": "A hyper-energetic 136 BPM Afro-Caribbean riddim driven by chest-rattling sub bass and overdriven 808s, featuring a dominant female lead trading rapid-fire call-and-response lines with a raw male toaster amidst dirty wine motifs, siren FX, and Latin-leaning percussion rolls for peak-time dancefloor impact.",
+   "mood": [
+    "Aggressive, sweaty, high-energy, gritty"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Verse 1 - Soft R&B Vocal]\nOld stops\nNew eyes\nBlue light\nPassing by\nWindow black\nFace in glass\nI see me\nThen I pass\nDowntown\nUptown\nUnder every sound\nI keep floating\nI keep finding ground\n\n[Pre-Chorus - Building, Smooth]\nAnd everybody’s going somewhere\nEverybody’s holding something\nEverybody looks so tired\nStill the city keeps on humming\nSo I let the rhythm hold me\nLet the tunnel pull me through\nEvery station feels familiar\nBut I’m waking up brand new\n\n[Chorus - Uplifting, Repetitive Hook]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Post-Chorus - Vocal Loop]\nBreathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found\nBreathe in\nBreathe out\nLet the night slow down\nBreathe in\nBreathe out\nI’m here right now\n\n[Instrumental Break - Ambient House Groove]\n\n[deep warm bass]\n\n[dusty breakbeat shuffle]\n\n[soft subway rumble under beat]\n\n[glowing synth pad]\n\n[filtered vocal chops]\n\n[Verse 2 - More Sultry, Calm]\nA train to Brooklyn\nA dream to Queens\nBronx in the rhythm\nManhattan in the steam\nSomeone’s got roses\nSomeone’s got rain\nSomeone’s got nothing\nBut a song for the pain\nI don’t need answers\nI don’t need signs\nJust one more breath\nAnd a little more time\n\n[Pre-Chorus 2 - Lift]\nAnd everybody’s changing cars\nEverybody’s chasing daylight\nEverybody’s half a scar\nGlowing under tunnel-white\nSo I let the rhythm hold me\nLet the morning come in blue\nEvery station feels familiar\nBut I’m moving into new\n\n[Chorus - Bigger Harmonies]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Bridge - Whispered / Dreamy]\nNo rush now\nNo fear now\nLet it roll\nLet it clear out\nNo rush now\nNo fear now\nLet it move\nLet it clear out\nI was heavy\nI was loud\nNow I’m quiet\nIn the crowd\nI was fading\nIn the sound\nNow I’m breathing\nUnderground\n\n[Final Chorus - Emotional, Uplifting]\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe\n\n[Outro - Vocal Loop Fades]\nBreathe in\nBreathe out\nLet the city move around you\nBreathe in\nBreathe out\nWe’re still here somehow\nBreathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Aggressive teasing delivery alternating between explicit female lead and raw male toaster",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Trades rapid-fire lines with raw power through the haze."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Provides smooth support behind every aggressive front."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever missing a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Rolls dirty Latin rhythms to drive peak-time dancefloors."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Rattles chests deep underground with relentless sub weight."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Glows warmly under filtered vocal chops and ambient pads."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Adds dusty breakbeat shuffles beneath the subway rumble."
+    },
+    {
+     "stem": "strings",
+     "name": "STRINGS",
+     "bio": "Weaves subtle warmth through the aggressive urban chaos."
+    },
+    {
+     "stem": "brass",
+     "name": "BRASS",
+     "bio": "Blasts sharp stabs that cut through the night's haze."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 8,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 238,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "HAZY OBSERVATION",
+     "start": 3,
+     "end": 35,
+     "intensity": 0.85,
+     "emotion": "Disoriented, hazy observation of the city passing by at night.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "PULLED FORWARD",
+     "start": 35,
+     "end": 42,
+     "intensity": 0.88,
+     "emotion": "Physical sensation of being pulled forward by momentum despite mental fatigue.",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "BREATH CONTROL",
+     "start": 42,
+     "end": 58,
+     "intensity": 0.86,
+     "emotion": "Sudden realization of freedom and the ability to control one's own breath.",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "FINAL RESOLUTION",
+     "start": 58,
+     "end": 112,
+     "intensity": 0.73,
+     "emotion": "Final resolution where the journey becomes home, breathing in sync with the beat.",
+     "boss": true
+    },
+    {
+     "section": "Post-Chorus",
+     "name": "REFLECTIVE MOVEMENT",
+     "start": 112,
+     "end": 147,
+     "intensity": 0.42,
+     "emotion": "Reflective movement amidst the crowd, finding clarity through rhythm.",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "INTERNAL QUIETUDE",
+     "start": 147,
+     "end": 186,
+     "intensity": 0.18,
+     "emotion": "Internal quietude replacing previous heaviness, acceptance of the present moment.",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus 2",
+     "name": "HEIGHTENED SENSES",
+     "start": 186,
+     "end": 238,
+     "intensity": 0.24,
+     "emotion": "Heightened sensory awareness of flashing lights and beating hearts.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 136,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 237.56,
+   "energy": "high",
+   "dynamicsDb": 11.4,
+   "brightness": 2825.5,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T17:59:58.281Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/between-the-stations",
+   "bookletNo": "3C7"
+  }
+ ]
+}

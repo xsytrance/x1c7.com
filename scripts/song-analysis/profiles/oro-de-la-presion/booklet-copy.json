@@ -1,0 +1,23 @@
+{
+ "tagline": "Turn pressure into pure gold on this mid-tempo triumph.",
+ "liner": "This F-minor anthem chronicles a powerful journey from deep struggle to triumphant resilience. Starting as a brooding void at 96 BPM, the track blends gritty drums with warm basslines that build toward an explosive brass-heavy climax. The vocal delivery shifts dynamically between introspective whispers in low registers and chest-voice belting during soaring choruses. It transforms personal pain into golden success through relentless creation, celebrating cultural pride while rejecting external validation. Every bar turns doubt into fire, guiding the listener from darkness until they stand tall with a heart that remains pure gold.",
+ "worldCaption": "A mid-tempo F-minor journey transforming pressure and voids into explosive brass-heavy triumph and golden realization.",
+ "bios": {
+  "lead": "Sings Spanish hooks while rapping aggressive English verses about turning",
+  "back": "Layers harmony beneath the lead, providing depth during soaring vocal releases",
+  "drums": "Keeps the floor shaking with gritty trap rhythms that never miss a downbeat.",
+  "perc": "Adds intricate rhythmic texture that complements the main drums without",
+  "bass": "Delivers warm sub-basslines building from quiet anticipation into an explosive",
+  "synth": "Weaves atmospheric pads around brass stabs to create a swelling, emotional",
+  "other": "Scatters subtle sonic dust under the mix for extra grit and vintage warmth.",
+  "guitar": "Plays sparse notes that cut through the trap beat like sharp, focused lightning.",
+  "keys": "Adds melodic flourishes during atmospheric sections to bridge the void with"
+ },
+ "levels": {
+  "Intro": "VOID TO FIRE",
+  "Verse 1": "RISING DEFY",
+  "Chorus": "SOAR TALL NOW",
+  "Bridge": "MASTERY SELF",
+  "Drop": "BRASS GOLDEN"
+ }
+}

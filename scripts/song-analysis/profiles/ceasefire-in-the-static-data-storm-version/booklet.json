@@ -1,0 +1,207 @@
+{
+ "v": 1,
+ "id": "ceasefire-in-the-static-data-storm-version",
+ "generatedAt": "2026-07-09T18:03:00.966Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Ceasefire in the Static (Data Storm Version)",
+   "tagline": "Find peace amidst the digital storm.",
+   "genre": "Gothic R&B",
+   "bookletNo": "799"
+  },
+  {
+   "type": "read",
+   "body": "Ceasefire in the Static (Data Storm Version) invites you into a slow, atmospheric journey where dark gothic orchestration meets late-90s street drums. At an intimate 82 BPM, emotional female rock-opera singing pairs with vulnerable male R&B leads to explore the psychological weight of information overload. Listen as deep piano and ominous violins rise against digital glitch textures and urgent notification pings. The track captures a frustrated resignation that eventually seeks a holy line through broken code. It is a haunting meditation on identity crisis, searching for a quiet room behind the panic where one can finally hear their real voice again.",
+   "styleSentence": "At a slow 82 BPM, this track blends dark gothic orchestration with late-90s street drums and deep piano to create an emotional R&B soundscape punctuated by digital glitch textures and urgent spoken-word verses.",
+   "mood": [
+    "melancholic, ominous, vulnerable, atmospheric"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "Title: Ceasefire in the Static (Data Storm Version)\n\n[Style Notes]\n82 BPM. Dark gothic orchestral R&B with slow pounding drums, ominous violins, deep piano, cellos, choir pads, sub-bass, digital glitches, notification sounds, email pings, ad fragments, and static. Mostly emotional singing. One short rap-rock spoken verse. The song is about searching for peace and order inside modern data chaos. Ending stays ambiguous.\n\n[Intro - Slow Drums / Violins]\nboom... boom...\nstatic in the walls\nviolins rise slowly\nphone light on the ceiling\n\n[Female Vocal - Soft]\nI woke up under flashing skies\na thousand little mouths of light\nThey call my name, they sell me dreams\nthey follow me into the night\n\n[Male Vocal - Low]\nInbox open like a wound\nred numbers climbing in my room\nEverybody needs a piece\nbut nobody asks if I can breathe\n\n[Pre-Chorus - Both]\nScroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means\n\n[Chorus - Big Gothic R&B]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Verse 2 - Female]\nAds in my dreams\nghosts in my feed\nEvery open window\nopens something else in me\n\nMessages stack like stones\non a chest that won’t let go\nI keep answering the world\nbut I don’t answer my own soul\n\n[Male Vocal]\nI tried to name the storm\nfolders for the pain\nTags for every memory\nrules for every flame\n\nBut every time I clear the screen\nanother wave comes back\nAnother voice, another need\nanother signal dressed in black\n\n[Short Rap-Rock Spoken Verse]\nToo many tabs, too many chains\ntoo many faces with borrowed names\nToo many alerts in the bloodstream\ntoo many ghosts in the lockscreen\n\nI’m not lost, I’m overloaded\nheart still here, just overcoded\nTrying to breathe through the interface\ntrying to find one sacred space\n\n[Pre-Chorus - Female Lead]\nScroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means\n\n[Chorus - Bigger]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Bridge - Dark Orchestral Build]\nCellos swell\nviolins sharpen\ndeep piano strikes\nchoir hums under the beat\n\n[Female Vocal - Intense]\nMaybe peace is not a silence\nMaybe peace is choosing one sound\nMaybe order is not escape\nbut what I keep when storms come down\n\n[Male Vocal]\nMaybe I don’t kill the signal\nMaybe I learn what not to save\nMaybe I don’t beat the ocean\nMaybe I just name the waves\n\n[Both - Rising]\nName the fear\nName the need\nName the wound\nName the feed\n\nName the ghosts\nName the flame\nName the noise\nbut keep your name\n\n[Breakdown - Sudden Drop]\nnotification sounds cut off\ndrums stop\nstrings hold one long note\n\n[Whispered Female]\nDid we find it?\n\n[Whispered Male]\nI don’t know.\n\n[Female]\nIs it quiet?\n\n[Male]\nAlmost.\n\n[Final Chorus - Half Hopeful / Half Unresolved]\nI’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\n\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road\n\n[Outro - Ambiguous]\nboom... boom...\nviolins fade\none notification blinks\nthen disappears\n\n[Female Soft]\nI heard silence for a second\n\n[Male Soft]\nOr maybe it was just the storm\n\n[Both]\nBut I kept walking\nI kept walking\n\n[End]\nstatic fades\npiano unresolved"
+  },
+  {
+   "type": "world",
+   "art": [
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/ceasefire-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/chaos-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/noise-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/order-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/silence-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/ceasefire-in-the-static-data-storm-version/gallery/storm-1.webp"
+   ],
+   "caption": "A gothic R&B soundscape blending orchestral strings with digital glitches and notification pings to visualize data anxiety.",
+   "themes": [
+    "Digital Detox",
+    "Information Overload",
+    "Identity Crisis",
+    "Anxiety vs. Peace"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "emotional female rock-opera singing paired with a vulnerable male R&B lead",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings emotional rock opera lines over deep piano."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Harmonizes softly behind the main vocals throughout."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Pounds slow, dark rhythms that anchor the chaos."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds street beats and urgent digital glitch textures."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Drives a sub-bass line through every section."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric pads beneath the orchestral strings."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers notification sounds to simulate data overload."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plays melancholic, dark melodic lines in verses."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Provides deep piano foundations for emotional singing."
+    },
+    {
+     "stem": "strings",
+     "name": "STRINGS",
+     "bio": "Rises slowly with ominous violins and cellos."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 6,
+   "stems": 10
+  },
+  {
+   "type": "map",
+   "duration": 283,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "STATIC RISE",
+     "start": 11,
+     "end": 27,
+     "intensity": 0.79,
+     "emotion": "ominous anticipation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "WOUND OPENED",
+     "start": 27,
+     "end": 50,
+     "intensity": 0.81,
+     "emotion": "vulnerable fatigue",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "LOST SHAPE",
+     "start": 50,
+     "end": 60,
+     "intensity": 0.87,
+     "emotion": "dissolving identity",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "QUIET PLACE",
+     "start": 60,
+     "end": 125,
+     "intensity": 0.82,
+     "emotion": "haunting hope amidst chaos",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "RESIGNATION",
+     "start": 125,
+     "end": 162,
+     "intensity": 0.69,
+     "emotion": "frustrated resignation",
+     "boss": true
+    },
+    {
+     "section": "Rap Verse / Spoken Word",
+     "name": "URGENCY",
+     "start": 162,
+     "end": 209,
+     "intensity": 0.28,
+     "emotion": "urgent realization",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus (Repeat)",
+     "name": "LONGING",
+     "start": 209,
+     "end": 218,
+     "intensity": 0.22,
+     "emotion": "uncertain longing",
+     "boss": false
+    },
+    {
+     "section": "Chorus (Big)",
+     "name": "PERSISTENCE",
+     "start": 218,
+     "end": 283,
+     "intensity": 0.3,
+     "emotion": "resilient persistence",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 81,
+   "key": "A#",
+   "mode": "minor",
+   "camelot": "3A",
+   "duration": 283.2,
+   "energy": "medium",
+   "dynamicsDb": 15.7,
+   "brightness": 2858.7,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:03:00.966Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/ceasefire-in-the-static-data-storm-version",
+   "bookletNo": "799"
+  }
+ ]
+}

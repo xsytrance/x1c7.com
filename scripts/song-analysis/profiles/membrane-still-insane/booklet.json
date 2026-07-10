@@ -1,0 +1,138 @@
+{
+ "v": 1,
+ "id": "membrane-still-insane",
+ "generatedAt": "2026-07-09T18:17:50.816Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Membrane Still Insane",
+   "tagline": "Step aboard a fog-shrouded vessel where reality cracks.",
+   "genre": "Gangsta Rap",
+   "bookletNo": "A02"
+  },
+  {
+   "type": "read",
+   "body": "Welcome to 'Membrane Still Insane,' a gritty hardcore gangsta rap track running at 95 BPM that blends grimy 90s East Coast boom bap drums with cinematic villain energy. This song narrates a dangerous descent into madness aboard a fog-shrouded riverboat where the line between reality and cartoonish villainy blurs perfectly. Expect dirty dockside soundscapes like riverboat whistles and foghorns layered over dusty upright bass stabs, sinister piano loops, muted trumpet riffs, and creepy xylophone hits to create that classic black-and-white rubber-hose animation atmosphere flipped dark. The aggressive male rap duo utilizes raspy street vocals with call-and-response ad-libs to explore themes of fractured sanity, criminal nostalgia, and playful terror through imagery of steam, smoke, and mechanical chains.",
+   "styleSentence": "A gritty hardcore gangsta rap track running at 95 BPM that blends grimy 90s East Coast boom bap drums with a cinematic villain energy, featuring dirty dockside soundscapes like riverboat whistles and foghorns layered over dusty upright bass stabs, sinister piano loops, muted trumpet riffs, and creepy xylophone hits to create a black-and-white rubber-hose animation atmosphere flipped dark.",
+   "mood": [
+    "gritty, sinister, playful-dangerous, noir-cartoonish"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Old Film Projector, Dock Fog] [film reel clicking] [river water sloshing] [foghorn low] [chain dragging] [steamboat whistle screams] Voice 1: Yo... you hear that whistle bending? Voice 2: That ain’t the boat, my guy... that’s your brain talking back. Voice 1: Heh... membrane still insane.\n\n[Chorus - Gang Chant] Membrane still insane, smoke all in the frame, black-and-white night but the madness got a name. Whistle go woo, then the whole dock shake, cartoon eyes wide when the bad boys break. Membrane still insane, brain on a chain, river full of fog and the deck full of flames. Step to the boat, better know what you claim, one wrong knock and the whole bell ring.\n\n[Verse 1 - Rapper 1] I came out the reel with a lean and a grin, ink on my gloves and a storm in my skin. Moon look cracked when the paddle wheel spin, whole dock whisper, “Don’t let him in.” Been up three nights with smoke in my coat, talking to a shadow that been steering the boat. Laughing at the fog like it told me a joke, then the whistle hit hard and the pier just spoke. Mind doing backflips, knees doing swings, rubber-hose arms with the old gold rings. Piano go crooked when the villain bell dings, whole black river start pulling my strings. I ain’t crazy, I’m classic with a scratch in the brain, vintage little menace with a permanent stain. Every thought got teeth, every laugh got pain, every footstep echo like a runaway train.\n\n[Pre-Chorus - Call and Response] Voice 1: Who got the smoke? Voice 2: We got the smoke. Voice 1: Who got the dock? Voice 2: We run the boat. Voice 1: Who lost they mind? Voice 2: Don’t say my name. Both: Too late now, membrane still insane.\n\n[Chorus - Gang Chant] Membrane still insane, smoke all in the frame, black-and-white night but the madness got a name. Whistle go woo, then the whole dock shake, cartoon eyes wide when the bad boys break. Membrane still insane, brain on a chain, river full of fog and the deck full of flames. Step to the boat, better know what you claim, one wrong knock and the whole bell ring.\n\n[Verse 2 - Rapper 2] I’m the crooked little captain with the laugh in stereo, eyes too low but the mind move aerial. Feet on the deck but the thoughts go burial, deep in the hull where the old ghosts carry gold. Smoke curl up like a question mark, piano keys bite when the river get dark. Muted trumpet cry from the mouth of a shark, xylophone bones go click in the park. I got fog in my pocket and rust in my rhyme, crimes doing dances from a much older time. 1928 with a 90s drumline, whole crew blacked out but the whistle still shine. You can call it unstable, I call it the gift, cartoon boat slide with a criminal drift. Mind overboard but the body don’t quit, still throwing up signs from the edge of the script.\n\n[Bridge - Breakdown] [beat cuts] [projector clicking louder] [dock footsteps] [low foghorn] Voice 1: They said, “Don’t go down by the river at night.” Voice 2: I said, “Which one of me you talking to?” Voice 1: Ha ha ha... Voice 2: Nah, for real though. Both: Membrane... still... insane.\n\n[Verse 3 - Trading Bars] Voice 1: Brain in the boiler, thoughts in the steam. Voice 2: Eyes wide open but I’m stuck in a dream. Voice 1: Hands got ink and the gloves ain’t clean. Voice 2: Whole dock jump when we step on scene. Voice 1: Smoke in the cabin, bass in the floor. Voice 2: Three knocks loud then we kick in the door. Voice 1: Who want war with the riverboat corps? Voice 2: They don’t want none, they just talk from shore. Voice 1: I seen a shadow with a face like mine. Voice 2: I seen the clock run backwards in time. Voice 1: I seen the moon turn into a dime. Voice 2: Then I flipped that coin and I called it mine. Both: Ha! Voice 1: That whistle don’t warn, that whistle recruits. Voice 2: That fog don’t hide, that fog got roots. Voice 1: That snare don’t crack, that snare executes. Both: And the whole crew move in the cartoon suits.\n\n[Final Chorus - Bigger Gang Chant] Membrane still insane, smoke all in the frame, black-and-white night but the madness got a name. Whistle go woo, then the whole dock shake, cartoon eyes wide when the bad boys break. Membrane still insane, brain on a chain, river full of fog and the deck full of flames. Step to the boat, better know what you claim, one wrong knock and the whole bell ring. Membrane still insane, still insane, still got fog running all through the veins. Still got drums putting dents in the brain, still got laughs echoing under the rain.\n\n[Outro - Old Film Ending] [beat fades] [river water sloshing] [projector slowing down] [one final steamboat whistle] Voice 2: You still hear it? Voice 1: Yeah. Voice 2: Good. Voice 1: That means it’s working. [film reel snaps]"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "aggressive male rap duo with raspy street vocals utilizing call-and-response ad-libs",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Cuts the vocal line like a jagged blade through smoke."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Echoes the lead while twisting hooks into darker corners."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with 90s boom bap precision."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds ticking gears and mechanical chaos to the rhythm."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Rumbles like a foghorn deep beneath the riverbed."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves sinister loops that haunt every shadowy corner."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Dusts the tracks with steam, smoke, and old film grain."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 272,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "FOGHORN GAUNTLET",
+     "start": 6,
+     "end": 6,
+     "intensity": 0.8,
+     "emotion": "Anticipatory unease, foghorn bass rumble",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "MANIC WHISTLE RUN",
+     "start": 6,
+     "end": 48,
+     "intensity": 0.97,
+     "emotion": "Manic rhythmic chaos, whistle hook driving the madness",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "RUBBER-HOSE SPRINT",
+     "start": 48,
+     "end": 130,
+     "intensity": 0.72,
+     "emotion": "Grimy storytelling with rubber-hose animation energy",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "CLAUSTRAPHOBIA TRAP",
+     "start": 130,
+     "end": 272,
+     "intensity": 0.26,
+     "emotion": "Claustrophobic tension in the dark river hole",
+     "boss": true
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 96,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 272.48,
+   "energy": "medium",
+   "dynamicsDb": 13.1,
+   "brightness": 2880.4,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:17:50.816Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/membrane-still-insane",
+   "bookletNo": "A02"
+  }
+ ]
+}

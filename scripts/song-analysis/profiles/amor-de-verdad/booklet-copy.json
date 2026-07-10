@@ -1,0 +1,24 @@
+{
+ "tagline": "Reject illusions. Demand the truth in this raw confessional.",
+ "liner": "This midtempo Latin alt-R&B track strips away cinematic glamour to reveal a gritty, vulnerable core. A raw female vocal with emotional cracks navigates internal conflict and suppressed fear over edgy dark pop production. Saturated sub-bass anchors punchy trap-inflected drums while stark guitar and Rhodes stabs weave through atmospheric pads. It is an intimate plea rejecting performative gestures in favor of authentic connection that endures beyond the heat of passion. The journey moves from trembling anticipation to explosive rejection, demanding genuine presence over empty promises.",
+ "worldCaption": "Cinematic illusions dissolve into gritty urban reality where only true presence survives the fading light and cooling water.",
+ "bios": {
+  "lead": "Pours emotional cracks through every raw confession with a raspy whisper.",
+  "back": "Layers soft harmonies to widen the intimate space without filling it completely.",
+  "drums": "Delivers punchy trap beats that drive the rhythm forward relentlessly.",
+  "bass": "Saturates low frequencies with deep sub-bass rumble for heavy impact.",
+  "synth": "Weaves atmospheric pads around stark stabs to create moody textures.",
+  "other": "Scatters ambient debris and urban noise across the sonic landscape freely.",
+  "guitar": "Plays sharp, rhythmic chords that cut through the mix with clarity.",
+  "keys": "Adds warm Rhodes tones that blend seamlessly with melodic lines."
+ },
+ "levels": {
+  "Intro": "TREMBLING START",
+  "Verse 1": "SUPPRESSED FEAR",
+  "Pre-Chorus": "RISING TENSION",
+  "Chorus": "EXPLOSIVE TRUTH",
+  "Drop": "DESPERATE PLEA",
+  "Bridge": "ANGRY REALIZATION",
+  "Outro": "FINAL RESIGNATION"
+ }
+}

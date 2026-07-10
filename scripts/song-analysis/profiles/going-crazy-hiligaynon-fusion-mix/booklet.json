@@ -1,0 +1,170 @@
+{
+ "v": 1,
+ "id": "going-crazy-hiligaynon-fusion-mix",
+ "generatedAt": "2026-07-09T18:07:18.711Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Going Crazy (Hiligaynon Fusion Mix)",
+   "tagline": "Ignite your speakers with chaotic K-pop rock fusion.",
+   "genre": "K-pop",
+   "bookletNo": "57E"
+  },
+  {
+   "type": "read",
+   "body": "Step into a volatile world where love and hate dance in the city's neon glow. This high-energy alternative rock track captures the desperate addiction of a relationship spinning out of control. From confused awakenings to cataclysmic releases, every note tells a story of intense desire and emotional chaos. The polished mix delivers intimate vocal details alongside dense harmonies that build tension until they finally burn it all up. Experience the raw honesty of falling through the cracks while rising again in this dramatic journey.",
+   "styleSentence": "A high-energy alternative rock K-pop fusion track at 148 BPM featuring tightly edited saturated guitars with precise double-tracking, a polished drum sound layered with samples and controlled room ambience, focused side-chained synth bass for clean low-end, and a glossy modern vocal mix that emphasizes intimate details on the passionate female lead while delivering expressive male rap-sung sections within densely stacked harmonies.",
+   "mood": [
+    "Passionate, Chaotic, Intense, Dramatic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "You got me going crazy\nLose control, maybe\nCrazy\nYou got me going crazy\nStill this love or hate, don't know why\nAm I just stuck in a race, baby\nOne more call and I might just die\nEvery night I'm falling, I fall through\nGot me going crazy\nBlanket, emo, ghost in a dance\nGot hoonah, hoonah, don't need to boost now\nBetter get up on your dog, I get\nYou got me going crazy\nCrazy\nCrazy\nCrazy\nYeah,\nlate night drive, city glow\nBooking lights and your name on my phone\nI know you're like a poison dose\nWhen I look in your eyes, I can't say no\nGet you closer, then you fade again\nRun away, but you still drag me in\nChange my mind, but I still pretend\nErase you, but I always crave you still\nBass hitting and you're right back fast\nAll my friends telling me fall back\nNoisy nights with the volume up\nIn my ears, I hear you, nigga, say I was slow\nDrunk on you, yes, dangerous\nBut I'm still ego-favorite\nGo break it down, then we save this love\nWake up and I'm shouting this\nRound and round\nWe're like a couple, oh, and yeah\nYou never slow down\nTill we burn, now we just go\nWe burn it up\nMust end, oh, man, then we fall again\nThen we fall back down\nBut we rise in this time\nYou got me going crazy\nStill this love or hate, don't know why\nMuch as I can't erase, baby\nOne more call and I might just die\nEvery night I'm falling, I fall through\nYou got me going crazy\nI've run, got emo, ghost, my dance\nGot who, now, who, not done, it's a pusla\nBut I'll get up, I ain't done, I could get\nYou got me going crazy\nCrazy\nCrazy\nCrazy\nSee my text and you let it stay\nActing fine while I laugh with my friends\nBut when I see your name poppin'\nI know how this will end\nI fall again\nCome a little kicker, where to find me?\nUnder neon, you pull up to me\nHands sliding down my waist so slow\nEvery lie that you tell just fades with the glow\nAll the reasons I still want you\nThat one night, man, I'll holler more\nFinger tracing down my brown skin\nI don't wanna listen to your voice come in\nDon't say you love me, I tell you\nTonight, let me be honest and true\nI don't need forever with you\nJust heart me right now, are you with me?\nYou got me going crazy\nStill this love or hate, don't know why\nHeart is racing, can't stop it, baby\nOne more call and I might just die\nEvery night I fall and I fall for you\nYou got me going crazy\nI'm like a ghost in a dance\nI'm like a ghost in a dance\nI'm like a ghost in a dance\nYou got me going crazy\nCrazy\nCrazy\nCrazy\nYou got me going crazy\nI don't gotta be looking up or gone\nYou got me going crazy\nBrooklyn to Philippines,\nstill you\nYou got me going crazy"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Passionate female lead with wide emotional range and dynamic swells, mixed with clear enunciation on expressive male rap-sung sections.",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings wide emotional swells with passionate clarity."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Stacks dense harmonies to create a wall of sound."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with precise, layered beats."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds controlled room ambience and rhythmic texture."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers clean low-end via focused side-chained synth."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric pads beneath the chaotic melody."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers gritty noise to heighten urban intensity."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plays tightly edited saturated riffs with precision."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 201,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "CHAOS AWAKENS",
+     "start": 0,
+     "end": 6,
+     "intensity": 0.39,
+     "emotion": "Confused awakening, sudden realization of chaos.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "OBSESSION LOOP",
+     "start": 6,
+     "end": 9,
+     "intensity": 0.69,
+     "emotion": "Repetitive obsession, minor panic.",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "EMOTIONAL OVERLOAD",
+     "start": 9,
+     "end": 44,
+     "intensity": 0.99,
+     "emotion": "Cataclysmic release, emotional overload.",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "TOXIC ATTRACTION",
+     "start": 44,
+     "end": 70,
+     "intensity": 0.85,
+     "emotion": "Toxic attraction, noisy intensity.",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus/Hook Transition",
+     "name": "INEVITABLE COLLISION",
+     "start": 70,
+     "end": 113,
+     "intensity": 0.8,
+     "emotion": "Building tension, inevitable collision.",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "SECRET VULNERABILITY",
+     "start": 113,
+     "end": 128,
+     "intensity": 0.52,
+     "emotion": "Secret vulnerability amidst the chaos.",
+     "boss": false
+    },
+    {
+     "section": "Drop/Build-Up",
+     "name": "RAW HONESTY HEAT",
+     "start": 128,
+     "end": 201,
+     "intensity": 0.3,
+     "emotion": "Raw honesty in the heat of the moment.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 144,
+   "key": "G",
+   "mode": "major",
+   "camelot": "9B",
+   "duration": 200.92,
+   "energy": "high",
+   "dynamicsDb": 6.4,
+   "brightness": 3365.4,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:07:18.711Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/going-crazy-hiligaynon-fusion-mix",
+   "bookletNo": "57E"
+  }
+ ]
+}

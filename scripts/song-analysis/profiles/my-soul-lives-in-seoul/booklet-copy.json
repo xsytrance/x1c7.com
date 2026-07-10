@@ -1,0 +1,25 @@
+{
+ "tagline": "Bridging time zones with reggaeton beats and global hearts.",
+ "liner": "Step into a digital romance where signal strength doesn't determine love. 'My Soul Lives In Seoul' is a high-energy anthem blending glossy K-Pop production with the infectious bounce of reggaeton dembow grooves. Navigate thirty-seven waiting messages, red batteries, and confusing camera angles in this playful tale of long-distance devotion. From anxious playfulness to bureaucratic determination at customs, the journey culminates in triumphant global harmony that transcends physical borders. It is a story where multilingual vocals—from Korean greetings to Spanish rhythms—weave a tapestry of connection that thrives even when Wi-Fi drops out.",
+ "worldCaption": "A neon-lit digital world where time zones blur and phone screens become gateways to shared dreams, blending Seoul streetlights with tropical",
+ "bios": {
+  "lead": "Sings smooth pop-rap verses that wake the sleepy city up.",
+  "back": "Layers harmonies so thick they turn distance into a bridge.",
+  "drums": "Keeps the floor shaking. Never misses a downbeat in Seoul or Spain.",
+  "perc": "Adds tropical synth plucks and rhythmic unity to every drop.",
+  "bass": "Slides through time zones with punchy 808s that feel like hugs.",
+  "synth": "Paints glossy soundscapes where melancholic connection meets bright joy.",
+  "other": "Scatters multilingual vocal chops across the digital sky for texture.",
+  "guitar": "Plucks gentle melodies through customs lines and currency confusion.",
+  "keys": "Brings passionate rhythmic unity to the bridge's final stand."
+ },
+ "levels": {
+  "Intro": "SOFT CONNECT",
+  "Verse 1": "BUFFERED HEART",
+  "Pre-Chorus": "CUSTOMS CHARGE",
+  "Chorus": "GLOBAL HARMONY",
+  "Post-Chorus": "TIRELESS LOVE",
+  "Verse 2": "MESSY HOME",
+  "Bridge": "RHYTHM FUSION"
+ }
+}

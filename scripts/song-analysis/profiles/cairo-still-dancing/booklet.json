@@ -1,0 +1,168 @@
+{
+ "v": 1,
+ "id": "cairo-still-dancing",
+ "generatedAt": "2026-07-09T18:01:55.336Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Cairo Still Dancing",
+   "tagline": "Dance defiantly through Cairo's night in this glossy anthem.",
+   "genre": "Egyptian Pop R&B",
+   "bookletNo": "F5F"
+  },
+  {
+   "type": "read",
+   "body": "Step into a soundscape where deep 808 bass meets traditional oud and ney flute, crafting a dark yet glossy world. This polished Egyptian pop track at 104 BPM transforms city struggles into rhythmic defiance. Smooth vocal duets layer over rhythmic Arabic chants like 'heyya' and 'yalla,' building from minor key verses to soaring choruses. Here, music becomes protection for the soul against fear and division. From rooftops to the river's edge, millions of hearts beat with fire in their name. It is a cinematic celebration where dance acts as unity, proving that love finds a way even when the sky turns gray.",
+   "styleSentence": "A polished, radio-ready Egyptian pop R&B track at 104 BPM that fuses deep 808 sub bass and crisp club drums with traditional instrumentation like oud, qanun, darbuka, and ney flute to create a dark yet glossy soundscape; the arrangement features smooth male/female vocal duets layered with rhythmic group chants in Egyptian Arabic (heyya, yalla) over minor key verses that build into an uplifting chorus, capturing modern Cairo nightlife energy without cheesy sentimentality.",
+   "mood": [
+    "Resilient",
+    "Uplifting",
+    "Cinematic",
+    "Proud"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Chorus - Female Lead, Immediate, No Intro]\nWe still dance when the night gets heavy\nStill sing when the sky turns gray\nHands up if your heart stays ready\nLove don’t break, we find a way\n\n[Group Chant - Rhythmic, Egyptian Style]\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nWe rise, we stay\n\n[Male Lead - Smooth R&B]\nThey only see the sand in the story\nThey only see the stone in the frame\nBut we got city lights, street drums, late nights\nMillions of hearts with fire in the name\n\nFrom Cairo rooftops to the river\nFrom Alexandria out to the sea\nWe don’t need the world to understand us\nWe just need the world to breathe\n\n[Female Lead]\nMama said keep your soul protected\nBaba said keep your head up high\nEven when the news gets reckless\nDon’t let the fear move into your eyes\n\n[Pre-Chorus - Male and Female]\nAnd if the whole world shakes\nWe put rhythm in the ground\nIf the dark gets loud\nWe make a brighter sound\n\n[Chorus - Full, Bigger]\nWe still dance when the night gets heavy\nStill sing when the sky turns gray\nHands up if your heart stays ready\nLove don’t break, we find a way\n\nWe still move when the drums start calling\nStill shine when the lights go low\nIf one heart feels like falling\nWe lift it up and let it know\n\n[Group Chant - Bigger]\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nWe rise, we stay\n\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nLove leads the way\n\n[Verse 2 - Male Lead, Confident]\nThis ain’t a postcard, this is people\nThis ain’t a camel in a scene\nThis is bass in the alley, kids in the traffic\nDreams in the dust trying to stay clean\n\nThis is gold in the voice of the aunties\nThis is tea when the night runs deep\nThis is jokes when the pressure gets ugly\nThis is faith when it’s hard to sleep\n\n[Female Lead - Emotional]\nI see mothers holding families together\nI see fathers praying under streetlight glow\nI see young ones building something better\nWith a beat in the blood and a long way to go\n\n[Pre-Chorus - Call and Response]\nWhen the world says break\n[Group] We don’t break\nWhen the fear says bow\n[Group] We don’t bow\nWhen the pain gets loud\n[Group] We sing now\nWe sing now, we sing now\n\n[Chorus - Full Club Drop]\nWe still dance when the night gets heavy\nStill sing when the sky turns gray\nHands up if your heart stays ready\nLove don’t break, we find a way\n\nWe still move when the drums start calling\nStill shine when the lights go low\nIf one heart feels like falling\nWe lift it up and let it know\n\n[Post-Chorus - Chant Hook]\nYa Masr, ya Masr\nHeartbeat in the drum\nYa Masr, ya Masr\nLove for everyone\n\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nWe rise, we stay\n\n[Bridge - Cinematic, Ney Flute and Qanun]\nNo flag should be a reason for sorrow\nNo child should be afraid of tomorrow\nFrom every border, every prayer\nEvery voice in the air\n\nWe are more than what they show you\nMore than war on a screen\nMore than pain in the headlines\nMore than ancient history\n\n[Male Spoken-Sung]\nThis is for the strong ones\nThe tired ones\nThe ones still smiling when life gets wild\nThis is not just pride\nThis is peace with a pulse\nThis is culture with arms open wide\n\n[Female Vocal Rise]\nSo let the oud cry\nLet the drum talk\nLet the whole room move like the Nile walk\nIf your heart hurts\nBring it close\nWe don’t dance alone\n\n[Final Chorus - Biggest, Stacked Vocals]\nWe still dance when the night gets heavy\nStill sing when the sky turns gray\nHands up if your heart stays ready\nLove don’t break, we find a way\n\nWe still move when the drums start calling\nStill shine when the lights go low\nIf one heart feels like falling\nWe lift it up and let it know\n\n[Final Chant - Crowd, Percussive]\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nWe rise, we stay\n\nHeyya, heyya\nYalla, yalla\nSawa, sawa\nLove leads the way\n\n[Outro - Short, No Fade]\nYa Masr, ya Masr\nStill dancing\nStill strong"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Smooth R&B lead vocals with rhythmic group chants and call-and-response crowd elements",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings smooth R&B lines that glide over the track's heavy rhythm."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Harmonizes in thick layers to fill every gap between notes."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with crisp club beats and tight timing."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Pounds traditional rhythms on darbuka that drive the dance energy forward."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Rumbles deep sub frequencies that anchor the entire glossy arrangement."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric textures to bridge modern electronics with heritage sounds."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Scatters ambient details that add depth without cluttering the mix."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 4,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 260,
+   "levels": [
+    {
+     "section": "Section 1",
+     "name": "GATHERING STORM",
+     "start": 21,
+     "end": 21,
+     "intensity": 0.74,
+     "emotion": "Anticipation, gathering energy",
+     "boss": true
+    },
+    {
+     "section": "Section 2",
+     "name": "SOARING DEFYANCE",
+     "start": 21,
+     "end": 31,
+     "intensity": 0.9,
+     "emotion": "Uplifting defiance, soaring hope",
+     "boss": true
+    },
+    {
+     "section": "Section 3",
+     "name": "GROUNDED STORYTELLER",
+     "start": 31,
+     "end": 109,
+     "intensity": 0.8,
+     "emotion": "Narrative storytelling, grounded warmth",
+     "boss": false
+    },
+    {
+     "section": "Section 4",
+     "name": "EUPHORIC RELEASE",
+     "start": 109,
+     "end": 170,
+     "intensity": 0.72,
+     "emotion": "Euphoric release, collective power",
+     "boss": true
+    },
+    {
+     "section": "Section 5",
+     "name": "SPIRITUAL RESOLVE",
+     "start": 170,
+     "end": 193,
+     "intensity": 0.4,
+     "emotion": "Solemn conviction, spiritual resolve",
+     "boss": false
+    },
+    {
+     "section": "Section 6",
+     "name": "RAW CULTURAL HEARTBEAT",
+     "start": 193,
+     "end": 211,
+     "intensity": 0.3,
+     "emotion": "Explosive pride, raw cultural heartbeat",
+     "boss": false
+    },
+    {
+     "section": "Section 7",
+     "name": "ENDURING RHYTHM",
+     "start": 211,
+     "end": 260,
+     "intensity": 0.11,
+     "emotion": "Reflective tenderness, enduring rhythm",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 103,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 259.64,
+   "energy": "high",
+   "dynamicsDb": 12.3,
+   "brightness": 3510.4,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:01:55.336Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/cairo-still-dancing",
+   "bookletNo": "F5F"
+  }
+ ]
+}

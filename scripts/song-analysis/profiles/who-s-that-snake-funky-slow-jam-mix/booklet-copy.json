@@ -1,0 +1,23 @@
+{
+ "tagline": "Dusty boom-bap truth against identity thieves.",
+ "liner": "Step into a dusty lounge where thick electric bass grooves and loose swing set the pace for a witty deconstruction of family trees gone wrong. This track navigates complex circles of clones and corporate wolves, using clean male call-and-response vocals to separate truth from perception. From Rhodes chords sliding through warm melodies to occasional horn stabs cutting through subtle vinyl crackle, every scratch in the hook adds texture to this laid-back East Coast narrative. It is a journey through crumbling history where media manipulation meets generational trauma, inviting you to sort out too many names found in files while keeping that funky slow-jam energy alive.",
+ "worldCaption": "Dusty lounge atmosphere with vinyl crackle and horn stabs visualizing the sprawling family tree of clones versus corporate suits under neon ",
+ "bios": {
+  "lead": "Narrates the crumbling history. Leads the call-and-response truth.",
+  "back": "Supports the lead voice. Adds depth to every harmonic layer.",
+  "drums": "Keeps the floor shaking with loose swing and dusty groove.",
+  "perc": "Adds texture without overpowering the funky bassline rhythms.",
+  "bass": "Grooves thick electric lines through melodic slides always on time.",
+  "synth": "Slides warm chords that define the laid-back slow-jam mood.",
+  "other": "Crackles softly with static to enhance the retro tape vibe.",
+  "guitar": "Plays subtle scratches in the hook for classic boom-bap flavor.",
+  "keys": "Stabs horns occasionally to punctuate the narrative storytelling."
+ },
+ "levels": {
+  "Intro": "DUSTY CURIOSITY",
+  "Chorus": "TWISTED FACTS COOLDOWN",
+  "Verse 1": "CRUMBLING HISTORY",
+  "Verse 2": "CLONE EXPOSITION ZONE",
+  "Bridge": "FRAGMENTED MEMORY"
+ }
+}

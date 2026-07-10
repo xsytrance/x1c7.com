@@ -1,0 +1,24 @@
+{
+ "tagline": "Connect digitally. Feel the distance.",
+ "liner": "One Tap Away captures the bittersweet ache of modern life, where screens glow like old memories and faces from middle school populate our feeds yet remain strangers to our souls. This mid-tempo journey navigates a paradox: we are closer than ever physically, yet emotionally stranded in crowded digital spaces. The track blends organic drums with atmospheric synths to mimic the hum of late-night isolation, critiquing how likes replace love and stats measure human worth. From nostalgic realizations about fake personas to aggressive observations on performative affection, this song asks why we feel alone when surrounded by thousands of names. It is a reflective pause in an endless scroll, reminding us that true connection requires more than just being one tap away.",
+ "worldCaption": "A digital room where glowing screens mask emotional distance amidst crowds of faces and fading memories.",
+ "bios": {
+  "lead": "Sings with raw honesty about the cost of scrolling past real feelings.",
+  "back": "Layers harmonies that weave through the silence between online messages.",
+  "drums": "Keeps the floor shaking without ever missing a downbeat in this melancholic",
+  "perc": "Adds subtle taps that sound like fingers hovering over glass screens.",
+  "bass": "Rumbles deep beneath the surface of our hyper-connected, yet lonely existence.",
+  "synth": "Paints atmospheric textures that mimic the glow and hum of late-night isolation.",
+  "other": "Scatters digital dust to fill the empty spaces between us all.",
+  "keys": "Plays melancholic melodies that sound like memories fading into static noise.",
+  "brass": "Blows warm, organic notes that cut through the cold air of social media."
+ },
+ "levels": {
+  "Intro": "QUIET ANTICIPATION",
+  "Verse 1": "DIGITAL DECAY ZONE",
+  "Chorus": "THE RESIGNATION LOOP",
+  "Bridge": "CROWDED EXISTENTIAL",
+  "Verse 2": "PERFORMATIVE LOVE",
+  "Outro": "FINAL SOLITUDE ECHO"
+ }
+}

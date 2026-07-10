@@ -1,0 +1,20 @@
+{
+ "tagline": "Step aboard a noir riverboat where cartoon physics meet leth",
+ "liner": "Welcome to 'Whistle on the River,' a gritty boom bap journey at ninety-four beats per minute that blends dirty dockside crime narratives with a sinister nineteen-twenties aesthetic. Imagine dusty drums and upright bass stabs weaving through vinyl hiss, all underpinning raspy aggressive male vocals over a dark piano loop. This track masks lethal threats behind playful visuals of cartoon gloves and rubber-hose animation, creating a world where violence disguised as play defines the atmosphere. As you navigate from ominous anticipation to an industrial crescendo, remember that while old school grins feature gangsta leans, steam in the pipes makes the whole boat mean. It is a monochromatic tale where fog on base signals deals going down and rat-tat rhythms shake wooden floors.",
+ "worldCaption": "A noir riverboat meets rubber-hose cartoons; smoke stacks cough dreams while cartoon gloves hide real hammers amidst industrial decay and da",
+ "bios": {
+  "lead": "Raspy vocals narrate the crime story with lethal wit.",
+  "back": "Layers voices to create a sinister, echoing gangster chorus.",
+  "drums": "Dusty kicks keep time like footsteps on wooden planks.",
+  "perc": "Crisp hits mimic rat-tat rhythms and hatch impacts.",
+  "bass": "Upright stabs ground the track with deep, gritty weight.",
+  "synth": "Dark piano loops set a cinematic, monochromatic mood.",
+  "other": "Vinyl hiss and industrial textures fill every shadowed corner."
+ },
+ "levels": {
+  "Intro": "FOG ANTICIPATION",
+  "Verse 1": "DOCKSIDE INTRO",
+  "Chorus": "INDUSTRIAL NOISE",
+  "Verse 2": "DEADLY REALIZATION"
+ }
+}

@@ -1,0 +1,161 @@
+{
+ "v": 1,
+ "id": "one-more-breath-back-to-myself",
+ "generatedAt": "2026-07-09T18:23:06.691Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "One More Breath [Back To Myself]",
+   "tagline": "Slowed, chopped, and hypnotically woozy for the late-night s",
+   "genre": "Chopped and Screwed",
+   "bookletNo": "747"
+  },
+  {
+   "type": "read",
+   "body": "This track slows time itself down to a sultry crawl. With vocals pitched low and broken into fragments, you are invited to sit in the quiet space between heartbeats. Heavy sub-bass rumbles beneath spacious swung drums, while detuned synths create a hazy, dreamlike veil over your introspection. It is an auditory exhale for those staring at their reflection after midnight. Let the Latin guitar loops and cello swells wash away the noise of the day. There is no rush here, only the gentle pressure to return within yourself.",
+   "styleSentence": "At a dramatically slowed tempo of roughly 60 BPM (derived from the measured 123.05), this track features syrupy detuned synths and pitched-down vocal chops gliding over spacious swung 808 drums with heavy sub-bass, creating a thick, hazy southern club atmosphere perfect for late-night car cruises.",
+   "mood": [
+    "hypnotic, woozy, hazy, introspective"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Soft Female Vocal Sample]\nBreathe\nOne more breath\nCome back down\n\n[Slow Breakbeat Enters]\n[Dusty drum break]\n[Deep warm bass]\n[Latin guitar loop]\n\n[Vocal Loop 1]\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\n[Instrumental Break]\n[Latin guitar repeats]\n[Viola and cello swell]\n[Low timpani hit]\n[Filtered synth glow]\n\n[Vocal Chop]\nBreathe in\nBreathe out\nBreathe in\nBreathe out\n\n[Hook Loop]\nI’m coming back\nBack to myself\nI’m coming back\nBack to myself\n\nI’m coming back\nBack to myself\nOne more breath\nNothing else\n\n[Instrumental Drop - Slow and Warm]\n[Heavy bass groove]\n[Chopped breakbeat drums]\n[Cello pulse]\n[Latin guitar melody]\n\n[Vocal Texture]\nLet it move\nLet it fade\nLet it move\nLet it fade\n\n[Bridge - Whispered]\nThe room gets quiet\nThe light gets low\nI hear my heartbeat\nI let it go\n\n[Final Loop]\nOne more breath\nCome back down\nOne more breath\nSlow it down\n\nBreathe in\nBreathe out\nBreathe in\nBreathe out\n\n[Outro]\nI’m coming back\nBack to myself\nOne more breath\nNothing else"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "whispered and chopped",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Whispers that guide you home gently."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers of harmony filling the quiet room softly."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without missing a beat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds dusty texture to every downbeat rhythmically."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Anchors the track with deep, heavy weight always."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints glowing colors in syrupy detuned hues perfectly."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves subtle textures through the hazy atmosphere quietly."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plays warm Latin loops that repeat and soothe."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 1,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 253,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "THE WELCOME DRIFT",
+     "start": 11,
+     "end": 44,
+     "intensity": 0.56,
+     "emotion": "welcoming yet distant",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "MELANCHOLY REFLECTIONS",
+     "start": 44,
+     "end": 44,
+     "intensity": 0.85,
+     "emotion": "melancholic reflection",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "TRANCE ACCEPTANCE ZONE",
+     "start": 44,
+     "end": 150,
+     "intensity": 0.7,
+     "emotion": "trance-like acceptance",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "FRAGILE HOPE SPOT",
+     "start": 150,
+     "end": 207,
+     "intensity": 0.19,
+     "emotion": "fragile hope",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "SUBMERGED BASS WEIGHTS",
+     "start": 207,
+     "end": 207,
+     "intensity": 0.3,
+     "emotion": "submerged bass weight",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FADING REALIZATION END",
+     "start": 207,
+     "end": 253,
+     "intensity": 0.09,
+     "emotion": "fading realization",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 123,
+   "key": "D",
+   "mode": "major",
+   "camelot": "10B",
+   "duration": 252.88,
+   "energy": "low",
+   "dynamicsDb": 14,
+   "brightness": 2744.5,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:23:06.691Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/one-more-breath-back-to-myself",
+   "bookletNo": "747"
+  }
+ ]
+}

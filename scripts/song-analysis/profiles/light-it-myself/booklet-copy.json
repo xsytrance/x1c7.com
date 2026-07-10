@@ -1,0 +1,27 @@
+{
+ "tagline": "Ignite your inner flame in this cathartic anthem of self-suf",
+ "liner": "This is an emotive anthem blending gritty distorted electric guitars with polished trap percussion. The bilingual vocalist transitions from vulnerable melodic rap to explosive stadium-ready singing, charting a journey from toxic reliance on another's fire to finding internal resilience. It captures the raw acceptance of pain as the path to identity reclamation and quiet strength.",
+ "worldCaption": "A cinematic spread featuring rain-soaked cityscapes transforming into warm candlelit interiors where solitary figures finally hold their own",
+ "bios": {
+  "lead": "Cuts through noise with raw, cracked delivery that screams defiance.",
+  "back": "Layers harmonies to soften the grit and widen emotional reach.",
+  "drums": "Keeps a driving half-time pulse beneath every shifting mood.",
+  "perc": "Adds crisp trap hi-hats that click like ticking clocks of anxiety.",
+  "bass": "Grooves deep 808s that rumble with the weight of unspoken pain.",
+  "synth": "Weaves atmospheric pads to paint a melancholic, dreamlike backdrop.",
+  "other": "Scatters textural glitches and ambient rain sounds for immersion.",
+  "guitar": "Distorts into walls of sound before stripping back to six strings.",
+  "keys": "Plays sparse piano melodies that underscore moments of quiet grief.",
+  "strings": "Swells with sorrowful arcs during the bridge's intimate realization.",
+  "woodwinds": "Flutes whisper softly over the outro like gentle evening breezes.",
+  "brass": "Pumps defiant fanfares into the chorus to boost stadium energy."
+ },
+ "levels": {
+  "Intro": "RAIN ISOLATION",
+  "Verse 1": "ANXIETY STRUGGLE",
+  "Chorus": "DEFIANT RELEASE",
+  "Bridge": "SILENT ACCEPTANCE",
+  "Drop": "SELF-ILLUMINATION",
+  "Outro": "CANDLE RESOLUTION"
+ }
+}

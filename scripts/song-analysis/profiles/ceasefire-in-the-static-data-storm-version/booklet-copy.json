@@ -1,0 +1,27 @@
+{
+ "tagline": "Find peace amidst the digital storm.",
+ "liner": "Ceasefire in the Static (Data Storm Version) invites you into a slow, atmospheric journey where dark gothic orchestration meets late-90s street drums. At an intimate 82 BPM, emotional female rock-opera singing pairs with vulnerable male R&B leads to explore the psychological weight of information overload. Listen as deep piano and ominous violins rise against digital glitch textures and urgent notification pings. The track captures a frustrated resignation that eventually seeks a holy line through broken code. It is a haunting meditation on identity crisis, searching for a quiet room behind the panic where one can finally hear their real voice again.",
+ "worldCaption": "A gothic R&B soundscape blending orchestral strings with digital glitches and notification pings to visualize data anxiety.",
+ "bios": {
+  "lead": "Sings emotional rock opera lines over deep piano.",
+  "back": "Harmonizes softly behind the main vocals throughout.",
+  "drums": "Pounds slow, dark rhythms that anchor the chaos.",
+  "perc": "Adds street beats and urgent digital glitch textures.",
+  "bass": "Drives a sub-bass line through every section.",
+  "synth": "Weaves atmospheric pads beneath the orchestral strings.",
+  "other": "Layers notification sounds to simulate data overload.",
+  "guitar": "Plays melancholic, dark melodic lines in verses.",
+  "keys": "Provides deep piano foundations for emotional singing.",
+  "strings": "Rises slowly with ominous violins and cellos."
+ },
+ "levels": {
+  "Intro": "STATIC RISE",
+  "Verse 1": "WOUND OPENED",
+  "Pre-Chorus": "LOST SHAPE",
+  "Chorus": "QUIET PLACE",
+  "Verse 2": "RESIGNATION",
+  "Rap Verse / Spoken Word": "URGENCY",
+  "Pre-Chorus (Repeat)": "LONGING",
+  "Chorus (Big)": "PERSISTENCE"
+ }
+}

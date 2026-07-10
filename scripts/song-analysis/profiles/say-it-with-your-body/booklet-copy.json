@@ -1,0 +1,24 @@
+{
+ "tagline": "Feel the rhythm of silence in this ultra-deep club anthem.",
+ "liner": "This slow-burning international R&B track invites you into a space where words dissolve against the backdrop of shared heartbeats. Imagine massive sub-bass anchors quietly speaking back to lush cinematic strings, while smoky sax fills drift through the air like incense. The vocals start as intimate whispers before swelling into emotive harmonies that bridge diverse cultures without needing translation. It is a journey from quiet anticipation to raw spiritual surrender on the drop, where every rimshot and cello note builds a luxurious atmosphere of non-verbal connection.",
+ "worldCaption": "Luxurious nightclub haze meets global heartbeat resonance in deep sub-bass driven intimacy with cinematic strings and smoky sax fills creati",
+ "bios": {
+  "lead": "LEAD VOX whispers secrets that become soaring harmonies.",
+  "back": "BACKING VOX weaves lush layers beneath the main melody line.",
+  "drums": "Keeps a crisp trap-inspired rhythm with soft rimshots always ready to strike.",
+  "perc": "PERCUSSION adds subtle textures and rhythmic certainty without overpowering the",
+  "bass": "BASS drops deep anchors that speak directly back to every vocal line sung above.",
+  "synth": "SYNTH creates massive long-sustain pads holding the entire sonic stage open",
+  "other": "TEXTURES fills empty spaces with smoky atmosphere and breathing room between",
+  "strings": "STRINGS lead rich cinematic melodies on cello and viola instruments throughout.",
+  "woodwinds": "WOODWINDS offer tiny sax responses that dance around the main vocal performance."
+ },
+ "levels": {
+  "Intro": "WHISPERED INVITE",
+  "Verse 1": "SHARED SOUL",
+  "Pre-Chorus": "RHYTHMIC CERTAINTY",
+  "Chorus": "SENSORY RELEASE",
+  "Verse 2": "GLOBAL RESONANCE ZONE",
+  "Drop": "SUB-BASS SPIRITUAL"
+ }
+}

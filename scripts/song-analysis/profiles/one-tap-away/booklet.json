@@ -1,0 +1,166 @@
+{
+ "v": 1,
+ "id": "one-tap-away",
+ "generatedAt": "2026-07-09T18:23:54.641Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "One Tap Away",
+   "tagline": "Connect digitally. Feel the distance.",
+   "genre": "Hip Hop",
+   "bookletNo": "7E6"
+  },
+  {
+   "type": "read",
+   "body": "One Tap Away captures the bittersweet ache of modern life, where screens glow like old memories and faces from middle school populate our feeds yet remain strangers to our souls. This mid-tempo journey navigates a paradox: we are closer than ever physically, yet emotionally stranded in crowded digital spaces. The track blends organic drums with atmospheric synths to mimic the hum of late-night isolation, critiquing how likes replace love and stats measure human worth. From nostalgic realizations about fake personas to aggressive observations on performative affection, this song asks why we feel alone when surrounded by thousands of names. It is a reflective pause in an endless scroll, reminding us that true connection requires more than just being one tap away.",
+   "styleSentence": "A mid-tempo (96 BPM) A# minor track blending organic drums and brass with atmospheric synths to create a moody, late-night vibe that critiques modern social connectivity.",
+   "mood": [
+    "melancholic, reflective, digital-isolation, introspective"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[singer A]\nYeah\none tap away\nbut somehow everybody far now\nuh\ncheck it\n\nBack-back when the screen made the room glow\nI thought the whole world would move close\nold names popping up like whoa though\nmiddle school faces in a new post\n\nI thought we’d talk-talk, really get honest\ndrop the mask, no fake persona\nfind your tribe, find your people\nmake the whole cold world feel warmer\n\nAds in the cracks, brands in the chat\neverybody got stats, everybody wants claps\neverybody got reach but don’t reach back\nhow we got this close and lost contact?\n\n[transition]\n\n[singer B]\nYou can see me in a second\nYou can call me any day\nYou can love me in private\nBut scroll right past my name\nFunny how we got connected\nThen forgot how to stay\nYou're right there in my pocket\nBut you feel a world away\n\nOne tap away (one tap away)\nFrom a real conversation but we don't say a thing\nWe're one tap away\nFrom \"I see you keep going\" from \"I'm proud of your dream\"\nSave your likes for the strangers\nSave your hearts for the stars\nBut the ones who really know you act like loving you is hard\nOne tap away\nSo why do I feel alone in a room full of names?\n\nTap, tap, but you don't reach back\nHeart, heart, but it don't feel like that\nClose, close, close, but we don't connect\nOne tap away and we still forget\n\nClick, click, click, everybody got a new rule\nDon't hype friends that ain't cool, cool\nSave that love for the big names\nBlue checks, big chains, big views\nThen if a stranger blow up overnight\nEverybody swear they saw the light\nSame ones quiet when you need a fire\nNow they in the comments like \"that's my guy\"\n\n[transition]\n\n[singer A]\nWe one tap away\none tap away\nfrom a real conversation\nbut we don’t say a thing\n\nSave your likes for the strangers\nsave your hearts for the stars\nbut the ones who really know you\nact like loving you is hard\n\nMaybe I was young\nthinking wires could heal us\nthinking all this light\nwould finally reveal us\n\nI’m not hard to find\nI’m not far away\nI’m still right here\none tap away\n\nWe one tap away\none tap away\nso why do I feel alone\nin a room full of names?\n\none tap away\nand still so far\neverybody online\nnobody where you are"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "conversational, emotive, layered harmonies",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings with raw honesty about the cost of scrolling past real feelings."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers harmonies that weave through the silence between online messages."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever missing a downbeat in this melancholic"
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds subtle taps that sound like fingers hovering over glass screens."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Rumbles deep beneath the surface of our hyper-connected, yet lonely existence."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints atmospheric textures that mimic the glow and hum of late-night isolation."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Scatters digital dust to fill the empty spaces between us all."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Plays melancholic melodies that sound like memories fading into static noise."
+    },
+    {
+     "stem": "brass",
+     "name": "BRASS",
+     "bio": "Blows warm, organic notes that cut through the cold air of social media."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 6,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 196,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "QUIET ANTICIPATION",
+     "start": 3,
+     "end": 3,
+     "intensity": 0.7,
+     "emotion": "Quiet anticipation and fading memory",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "DIGITAL DECAY ZONE",
+     "start": 3,
+     "end": 48,
+     "intensity": 0.84,
+     "emotion": "Nostalgic realization of digital decay",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "THE RESIGNATION LOOP",
+     "start": 48,
+     "end": 87,
+     "intensity": 0.94,
+     "emotion": "Deepening resignation and heartache",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "CROWDED EXISTENTIAL",
+     "start": 87,
+     "end": 92,
+     "intensity": 0.64,
+     "emotion": "Existential dread in a crowded space",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "PERFORMATIVE LOVE",
+     "start": 92,
+     "end": 167,
+     "intensity": 0.29,
+     "emotion": "Aggressive observation of performative love",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FINAL SOLITUDE ECHO",
+     "start": 167,
+     "end": 196,
+     "intensity": 0.11,
+     "emotion": "Echoing emptiness and final solitude",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 96,
+   "key": "A#",
+   "mode": "minor",
+   "camelot": "3A",
+   "duration": 195.64,
+   "energy": "medium",
+   "dynamicsDb": 12.6,
+   "brightness": 3059.5,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:23:54.641Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/one-tap-away",
+   "bookletNo": "7E6"
+  }
+ ]
+}

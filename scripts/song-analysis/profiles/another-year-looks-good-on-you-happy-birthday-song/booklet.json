@@ -1,0 +1,157 @@
+{
+ "v": 1,
+ "id": "another-year-looks-good-on-you-happy-birthday-song",
+ "generatedAt": "2026-07-09T18:44:16.752Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Another Year Looks Good on You [Happy Birthday Song]",
+   "tagline": "Turn another year into a celebration of radiant aging.",
+   "genre": "Pop",
+   "bookletNo": "854"
+  },
+  {
+   "type": "read",
+   "body": "This mid-tempo G minor groove arrives as an intimate toast for the partner who needs no spotlight to shine. Driven by syncopated rhythms and warm synth pads, smooth R&B vocals run melismatic over euphoric dance beats that elevate joy itself. The lyrics frame time not as a decline but as enhancement; every new age adds beauty rather than fading it. From anticipatory whispers in the intro to cinematic celebrations in the drop, this anthem honors exclusive devotion while blending conversational intimacy with high-energy radiance.",
+   "styleSentence": "A mid-tempo (143 BPM) G minor groove driven by a syncopated drum kit and warm synth pads that underpin smooth R&B vocal runs, creating an upbeat yet intimate atmosphere perfect for a birthday toast.",
+   "mood": [
+    "celebratory, radiant, intimate, euphoric"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "Yeah,\nthis one's for you\nOn your day\nHappy birthday, baby\nYou already know\nYou don't need a spotlight\nYou walk in, they see you\nSoft air falling down like midnight over you\nPhone lighting up again\nMessages on screen\nVoice know what you're smiling at\nThat's my favorite melody\nYou got that birthday glow\nThat nobody can fake\nTurn it one more year\nYou still look 28\nSalon ready queen\nHands making art move\nEvery color on those nails\nStill ain't pretty as you\nAnd I don't need a wish tonight\nI already got mine\nWrapped in a birthday dress\nLooking way too fine\nTe amo, baby\nCopalanga, it's true\nCada año más bonito\nJust to have more you\nAnother year looks\nGood on you\nGood on you, good on you\nGirl, the way you shine\nGot the whole room watching you\nHappy birthday, my love\nLet the music move\nEverybody deadest\nPero I'm only seeing you\nLet's go\nAnother year looks\nGood on you, good on you\nStill my favorite face\nTill my dream come true\nRaise the glass up high\nLet the candles burn\nIt's looom\nFeliz cumpleanos baby\nAnother year looks good on you\nWhoo-whoo-whoo baby, baby\nOoh, ooh, ooh\nLooks good on you\nOh, my, baby\nEverything you do\nAye, baby, baby\nMe birthday view\nAnother year looks good on you\nOoh, ooh!\nNew phone paid off\nShiny cameras shine\nBut even that camera knows you're the real thing\nheadline playlist on loop now birthday party\ngroove all your bark out around you everybody's\nin the mood you laugh like sunshine dancing to\nthe track tiny queens in every dream but you\ndiscard it can't outmatch gardening on weekends\nflowers in your hand pero we call get them roses\nthat made me\nunderstand and i don't need a wish tonight\ni already got mine wrapped in a birthday\ndress looking way too fine mi vida baby copa\nlonga it's true cada año mas bendita just to live\nwith you another year looks good on you good on\nyou good on you girl the way you shine got the\nwhole room watching you happy birthday my love\nlet the music move everybody dance pero i'm only\nseeing you let's go\nanother\nyear\nlooks good on you good on you still my favorite\nface still my dream come true raise the glass up\nhigh let the candles bloom my lipa yunga\nbirthday baby another year looks good on you"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "smooth, melismatic, conversational",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Front and center. Carries the story."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "The echo that turns a chorus into a crowd."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever missing a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Texture in the pocket, always moving."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "The low end you feel in your chest."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints the sky behind the words."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Everything you feel but can't name."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Strings with an attitude."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Chords that hold the room together."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 5,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 203,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "WHISPER ANTICIPATION",
+     "start": 2,
+     "end": 6,
+     "intensity": 0.47,
+     "emotion": "Anticipatory Whisper",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "VERSE 1",
+     "start": 6,
+     "end": 52,
+     "intensity": 0.65,
+     "emotion": "Admiring Warmth",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "CHORUS",
+     "start": 52,
+     "end": 114,
+     "intensity": 1,
+     "emotion": "Euphoric Release",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "BRIDGE",
+     "start": 114,
+     "end": 128,
+     "intensity": 0.53,
+     "emotion": "Reflective Confidence",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "DROP",
+     "start": 128,
+     "end": 203,
+     "intensity": 0.3,
+     "emotion": "Cinematic Celebration",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 144,
+   "key": "G",
+   "mode": "minor",
+   "camelot": "6A",
+   "duration": 202.76,
+   "energy": "high",
+   "dynamicsDb": 12.7,
+   "brightness": 3564.7,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:44:16.752Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/another-year-looks-good-on-you-happy-birthday-song",
+   "bookletNo": "854"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "tagline": "Dive into the neon-drenched heartbreak of Low Lights Tokyo.",
+ "liner": "Step onto this rainy rooftop where trap rock drums collide with gritty electric guitars. The track navigates a bittersweet tension between partying to forget and the lingering pain of loss. Driving bass synths pulse beneath atmospheric synthesizers as emotive vocals alternate from rhythmic spoken verses to breathy, melodic choruses. It is a journey through urban isolation where every neon light turns blue in reflection of grief that refuses to fade away.",
+ "worldCaption": "A melancholic Tokyo nightlife captured under flickering 808s and rain-slicked streets.",
+ "bios": {
+  "lead": "Sets the tone with breathy, emotive delivery.",
+  "back": "Harmonizes softly behind the main vocal lines.",
+  "drums": "Keeps the floor shaking. Never misses a downbeat.",
+  "guitar": "Weaves gritty riffs through the neon chaos.",
+  "synth": "Paints atmospheric layers over the beat.",
+  "bass": "Drops deep 808 frequencies to anchor the mix.",
+  "other": "Adds subtle urban sounds and rain ambience.",
+  "perc": "Layers crisp hits above the main drum kit."
+ },
+ "levels": {
+  "Intro": "RAINY ANTICIPATION",
+  "Verse 1": "RHYTHMIC NUMBNESS",
+  "Pre-Chorus": "ANXIETY RISE",
+  "Chorus": "NEON RELEASE",
+  "Verse 2": "VOID ACCEPTANCE",
+  "Bridge": "FADE PLEA",
+  "Final Chorus": "ANTHEMIC RESIGNATION"
+ }
+}

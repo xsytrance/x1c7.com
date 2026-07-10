@@ -1,0 +1,24 @@
+{
+ "tagline": "Refuse to be the fire. Claim your peace.",
+ "liner": "This raw anthem weaves distorted electric guitars with heavy trap 808 bass drums, creating a rain-soaked soundscape for a story of toxic dependency and emotional boundaries. The journey begins in soft, conversational vulnerability before soaring into powerful harmonies that reject self-sacrifice. It captures the painful realization that pain is not proof of love, shifting from intimate desperation to explosive rebellion as the narrator decides they will no longer be the source of their partner's destruction.",
+ "worldCaption": "A rain-soaked soundscape where distorted guitars meet heavy 808 bass in a cinematic release of emotional resolve and self-preservation.",
+ "bios": {
+  "lead": "Whispers turn into soaring melodies that refuse to break.",
+  "back": "Layers the vocals until the truth rings clear.",
+  "drums": "Heavy traps anchor the heart under the floorboards.",
+  "perc": "Keeps time on a broken clock, never missing beat.",
+  "guitar": "Distorted strings cut through the rain like sharp words.",
+  "bass": "808 heartbeat pulses beneath every step taken away.",
+  "synth": "Atmospheric pads paint the storm before it breaks.",
+  "other": "Scattered echoes of a hallway light and ghost posters.",
+  "keys": "Piano runs guide the voice through emotional war."
+ },
+ "levels": {
+  "Intro": "RAIN ANTICIPATION",
+  "Verse 1": "TENSE DESPERATION",
+  "Chorus": "EXPLOSIVE REFUSAL",
+  "Post-Chorus": "QUIET AFTERMATH",
+  "Drop": "CINEMATIC RELEASE",
+  "Bridge": "FINALITY HOPE"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "tagline": "Resist the flame. Preserve your peace.",
+ "liner": "This atmospheric ballad weaves warm F# major synth pads with melancholic acoustic guitar and deep 808 bass to craft a cinematic soundscape supporting emotive vocals about resisting destructive passion. The narrator sets firm boundaries against volatile love cycles, choosing self-preservation over toxic dependency. Intimate and breathy, the track guides you through a journey of emotional burnout toward gentle acceptance of leaving for peace. It is a resolute refusal to become another's fuel in the long night.",
+ "worldCaption": "A cinematic soundscape where warm F# major synths meet melancholic guitar over deep 808 bass, painting a quiet world of resisting destructiv",
+ "bios": {
+  "lead": "Cuts through the haze with intimate resolve.",
+  "back": "Weaves harmony to soften the storm's edge.",
+  "drums": "Keeps time steady beneath emotional tremors.",
+  "perc": "Adds subtle texture without overwhelming silence.",
+  "bass": "Anchors the track in deep, resolute lows.",
+  "synth": "Paints warm atmospheric pads for contemplation.",
+  "other": "Layers ambient depth around vocal whispers.",
+  "guitar": "Plays soft acoustic lines with gentle regret.",
+  "keys": "Adds cinematic resonance to every bridge."
+ },
+ "levels": {
+  "Intro": "QUIET REALIZATION",
+  "Verse 1": "RAINY WAITING ROOM",
+  "Chorus": "DEFIANT RESOLVE",
+  "Bridge": "DARKNESS CHECKPOINT",
+  "Drop": "CALM DETERMINATION",
+  "Verse 2": "REGRET REFLECTION POOL",
+  "Pre-Chorus": "NIGHT NOISE RISE",
+  "Verse 3": "GENTLE ACCEPTANCE PATH",
+  "Outro": "LINGERING LIGHT EXIT"
+ }
+}

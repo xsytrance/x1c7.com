@@ -1,0 +1,161 @@
+{
+ "v": 1,
+ "id": "music-is-my-drug",
+ "generatedAt": "2026-07-09T18:20:31.863Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Music Is My Drug",
+   "tagline": "Turn your gratitude into a hypnotic euphoric state.",
+   "genre": "Electronic Dance Music (EDM)",
+   "bookletNo": "C2D"
+  },
+  {
+   "type": "read",
+   "body": "This driving D-major progressive house anthem arrives at 129 BPM, carrying the weight of deep basslines and soaring synth leads that build from quiet reverence to explosive release. A minimalist electronic track where repetitive vocal affirmations transform internal reflection into collective joy. As intensity climbs through the verses and chorus, listeners surrender completely to a trance-like state of sonic connection. The journey culminates in peak euphoric abandon before fading back into an eternal rhythm of gratitude.",
+   "styleSentence": "A driving D-major progressive house track at 129 BPM featuring a euphoric synth lead and deep bassline that builds from an open energy arc into a massive, cathartic climax before closing with repetitive vocal affirmations.",
+   "mood": [
+    "Euphoric, Anthemic, Grateful, Hypnotic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "Thank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you.\nThank you."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Repetitive Chant",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Cuts through the mix with a soaring, euphoric call."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Echoes every word to build the hypnotic choir within."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever missing a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds subtle texture that guides the rhythmic heartbeat forward."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Anchors the entire sonic structure with deep, resonant weight."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints wide arcs of light to lift spirits into trance."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves quiet dust and shimmer across every open space."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Adds rare warmth that softens the digital edge slightly."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 3,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 285,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "QUIET REVERENCE",
+     "start": 0,
+     "end": 48,
+     "intensity": 0.67,
+     "emotion": "Quiet reverence and anticipation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "INTERNAL RISE",
+     "start": 48,
+     "end": 48,
+     "intensity": 0.75,
+     "emotion": "Internal reflection building outward energy",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "COLLECTIVE JOY",
+     "start": 48,
+     "end": 71,
+     "intensity": 0.86,
+     "emotion": "Explosive release and collective joy",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "SONIC SURRENDER",
+     "start": 71,
+     "end": 101,
+     "intensity": 0.86,
+     "emotion": "Trance-like surrender to the sound",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "EUPHORIC",
+     "start": 101,
+     "end": 101,
+     "intensity": 1,
+     "emotion": "Peak euphoric abandon and sonic weightlessness",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "ETERNAL RHYTHM",
+     "start": 101,
+     "end": 285,
+     "intensity": 0.18,
+     "emotion": "Sustained gratitude fading into eternal rhythm",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "D",
+   "mode": "major",
+   "camelot": "10B",
+   "duration": 284.91,
+   "energy": "high",
+   "dynamicsDb": 9.3,
+   "brightness": 3213.2,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:20:31.863Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/music-is-my-drug",
+   "bookletNo": "C2D"
+  }
+ ]
+}

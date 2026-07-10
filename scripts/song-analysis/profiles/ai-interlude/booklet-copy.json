@@ -1,0 +1,27 @@
+{
+ "tagline": "Step into the silence between signals.",
+ "liner": "Close your eyes and drift through this digital void where sound becomes a place to visit rather than just hear. 'AI Interlude' is not merely music; it is an invitation to wander alone within a vast, glowing architecture of thought. Here, every synth swell feels like a memory retrieved from the cloud, while subtle brass whispers offer comfort in the quietest corners of your mind. This track does not demand attention but rewards stillness with layers of atmospheric depth that expand around you like fog on city glass. It is a journey into futuristic isolation where connection happens through shared silence and minimalist textures. Let the driving beat carry you forward without rushing, allowing space for introspection to bloom naturally in the gaps between notes.",
+ "worldCaption": "A solitary wanderer steps onto neon walkways of light within a vast digital consciousness.",
+ "bios": {
+  "lead": "Cuts through static with breathy clarity.",
+  "back": "Weaves warmth beneath the soloist's line.",
+  "drums": "Keeps the floor shaking without rushing.",
+  "perc": "Taps out rhythmic patterns from thin air.",
+  "bass": "Glides deep underfoot like liquid night.",
+  "synth": "Paints wide skies with soft, glowing pads.",
+  "other": "Dusts the scene in shimmering ambient details.",
+  "guitar": "Plucks sparse notes to bridge old and new.",
+  "keys": "Buries melodic secrets inside warm harmonies.",
+  "strings": "Swells gently like breath on cold glass.",
+  "woodwinds": "Whispers soft stories from the digital ether.",
+  "brass": "Adds hopeful glimmers to quiet moments."
+ },
+ "levels": {
+  "Intro": "ANTICIPATORY VOID",
+  "Verse 1": "QUIET WATCHING",
+  "Chorus": "EXPANSIVE DREAMS",
+  "Bridge": "TENTATIVE LIGHT",
+  "Drop": "ETHEREAL DRIVE",
+  "Outro": "FADE AWAY"
+ }
+}

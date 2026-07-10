@@ -1,0 +1,25 @@
+{
+ "tagline": "Step into the Wi-Fi-fied circus before the bots take over!",
+ "liner": "Welcome to a surreal digital carnival where mechanical precision dances with chaotic human vulnerability. This track drives at 198 BPM, blending glitched synths and staccato brass hits to create an urgent atmosphere of algorithmic absurdity. The voice rasps like a weary operator addressing the crowd, suddenly breaking into melodic joy before crashing back into anxious confusion. Here, lions are servers and clowns hold root access. As automated systems assume human roles, we confront questions of digital identity and autonomy within this high-energy industrial pop soundscape.",
+ "worldCaption": "Step inside the Wi-Fi-fied big top where mechanical precision meets chaotic vulnerability in a surreal server-room carnival.",
+ "bios": {
+  "lead": "Projects voices from glitched servers into manic reality.",
+  "back": "Harmonizes chaos with sudden, soulful digital breaks.",
+  "drums": "Keeps the floor shaking while the code compiles fast.",
+  "perc": "Punctuates every beat with staccato brass-like urgency.",
+  "bass": "Drives the rhythm forward through a wall of sound.",
+  "synth": "Glitches textures until they form new, strange shapes.",
+  "other": "Weaves ambient shadows behind the bright neon lights.",
+  "guitar": "Plays dissonant riffs that cut through digital noise.",
+  "keys": "Chords resolve into melancholic realizations instantly.",
+  "strings": "Provides a human touch amidst cold algorithmic precision.",
+  "brass": "Hits hard with mechanical staccato and sudden grace."
+ },
+ "levels": {
+  "Intro": "AWKWARD WELCOME",
+  "Verse 1": "ANXIOUS CONFUSION",
+  "Chorus": "CHAOTIC EUPHORIA",
+  "Bridge": "MELANCHOLIC",
+  "Drop": "GLITCHED STASIS"
+ }
+}

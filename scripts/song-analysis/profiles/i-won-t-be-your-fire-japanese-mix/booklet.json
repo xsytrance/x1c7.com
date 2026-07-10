@@ -1,0 +1,193 @@
+{
+ "v": 1,
+ "id": "i-won-t-be-your-fire-japanese-mix",
+ "generatedAt": "2026-07-09T18:46:17.825Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "I Won’t Be Your Fire (Japanese Mix)",
+   "tagline": "Resist the flame. Preserve your peace.",
+   "genre": "J-Pop",
+   "bookletNo": "4CC"
+  },
+  {
+   "type": "read",
+   "body": "This atmospheric ballad weaves warm F# major synth pads with melancholic acoustic guitar and deep 808 bass to craft a cinematic soundscape supporting emotive vocals about resisting destructive passion. The narrator sets firm boundaries against volatile love cycles, choosing self-preservation over toxic dependency. Intimate and breathy, the track guides you through a journey of emotional burnout toward gentle acceptance of leaving for peace. It is a resolute refusal to become another's fuel in the long night.",
+   "styleSentence": "A mid-tempo (86 BPM) atmospheric ballad blending warm F# major synth pads with melancholic acoustic guitar and deep 808 bass, creating a cinematic soundscape that supports emotive vocals about resisting destructive passion.",
+   "mood": [
+    "Melancholic, Introspective, Gentle, Resolute"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "japanese",
+   "text": "もしもし\nまた同じ時間に名前が光ってた\nでも今日は出ないよ\nお客様がおかけになった電話は\n現在は繋ぎできません\n雨の音だけが残るの\nR\nain on glass\nGuitar comes in slow\n808\nHeartbeat under the floor\nI won't be your fire\nもう燃えたくないの\n痛い言\n葉で\n静きさを壊したくない\nI know you miss the thunder\n夜がうるさすぎるから\n私はもう\n君を壊すリズムになれない\nI won't be your fire\nまだ好き\n寒くなるたび電話してくるね\nポスターだらけの部屋\n幽霊みたいって笑うけど\n本当を感じたいってまた言うんだね\nでも私が返事するたび\n君はもっと壊れていく\nコンビニの白いライト\n濡れた駅のホーム\n優しさだったものが\n戦争になる夜も知ってる\n傷が深いほど愛だと思ってる\nでも痛みだけじゃ幸せにはなれない\n昔はわざと火をつけて泣いてた\n喉が切れるくらい\n酷いことも言った\nでもTonight\nもう戻れない\n君を愛してるなら\nI can be your fire\nI won't be your fire\nもう燃えたくないの\n痛い言葉で\n静きさを壊したくない\nI know you miss the thunder\n夜がうるさすぎるから\nでも私は\nもう\n君を壊す依存になれない\n一人にしないで\n一人にしないで\nこの夜の中で\n消えそうなんだ\n消せないNow my death screenの中\n黒いバーカー\n眠れないまま\n平和なんてどう感じればいい?\n怒った君だけがまだ近くにいた\n静かな夜ほど息ができなくて\nこれを愛だって\n呼んで逃げてた\n冷たい言葉でもいい\nまだここにいるって証明して欲しい\n暗闇が怖いんだ\n聞こえてるよ\nちゃんと\nでももう\n傷つけてまでは愛せない\n夜がまた来たらどうすればいい?\n朝までBreathe\n日には戻らないで\nもし消えたら\n電波も切れたら\n灯りは残すよ\nでも\nファイヤーは上げない\n嫌いって言って\n言わない\n終わりって言って\n言わない\nじゃあ何か言って\n好きだからこそ\nもう傷にはならない\n君を想っても\n電話はしない\n愛していても\n部屋を出るよ\n好きにはなれないけど\n朝を\n願ってる\nI won't be a fire\nもう燃えたくないの\n痛い言葉で\n静きさを壊したくない\nI know you missed that thunder\n夜がうるさすぎるから\nでも私はもう\n君を壊すEasonになれない\nI won't be a fire\nI won't be your love\n君が自分を決めるための\nダークネスにはならない\n小さな灯りだけ\n置いていくから\nもう私は\n君を壊さない\nただいま電話に出ることができません\nピーという音の後に\nメッセージをどうぞ\nI won't be your fire\nBut I'll leave you the light"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Intimate, breathy, restrained",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Cuts through the haze with intimate resolve."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Weaves harmony to soften the storm's edge."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps time steady beneath emotional tremors."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds subtle texture without overwhelming silence."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Anchors the track in deep, resolute lows."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints warm atmospheric pads for contemplation."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers ambient depth around vocal whispers."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plays soft acoustic lines with gentle regret."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Adds cinematic resonance to every bridge."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 6,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 300,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "QUIET REALIZATION",
+     "start": 1,
+     "end": 3,
+     "intensity": 0.43,
+     "emotion": "Quiet realization, soft hesitation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "RAINY WAITING ROOM",
+     "start": 3,
+     "end": 8,
+     "intensity": 0.53,
+     "emotion": "Loneliness, waiting in the rain",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "DEFIANT RESOLVE",
+     "start": 8,
+     "end": 40,
+     "intensity": 0.78,
+     "emotion": "Defiant resolve to end the cycle",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "DARKNESS CHECKPOINT",
+     "start": 40,
+     "end": 53,
+     "intensity": 0.91,
+     "emotion": "Desperate need for proof of existence in darkness",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "CALM DETERMINATION",
+     "start": 53,
+     "end": 101,
+     "intensity": 0.71,
+     "emotion": "Calm determination to stop the fire",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "REGRET REFLECTION POOL",
+     "start": 101,
+     "end": 130,
+     "intensity": 0.65,
+     "emotion": "Regret over past destructive passion",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "NIGHT NOISE RISE",
+     "start": 130,
+     "end": 205,
+     "intensity": 0.5,
+     "emotion": "Rising tension against the noise of night",
+     "boss": true
+    },
+    {
+     "section": "Verse 3",
+     "name": "GENTLE ACCEPTANCE PATH",
+     "start": 205,
+     "end": 292,
+     "intensity": 0.15,
+     "emotion": "Gentle acceptance of leaving for peace",
+     "boss": true
+    },
+    {
+     "section": "Outro",
+     "name": "LINGERING LIGHT EXIT",
+     "start": 292,
+     "end": 300,
+     "intensity": 0.09,
+     "emotion": "Soft hope and lingering light after the storm",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 86,
+   "key": "F#",
+   "mode": "major",
+   "camelot": "2B",
+   "duration": 299.96,
+   "energy": "low",
+   "dynamicsDb": 8.8,
+   "brightness": 2992.5,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:46:17.825Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/i-won-t-be-your-fire-japanese-mix",
+   "bookletNo": "4CC"
+  }
+ ]
+}

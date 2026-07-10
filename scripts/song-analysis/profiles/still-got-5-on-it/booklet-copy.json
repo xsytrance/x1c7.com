@@ -1,0 +1,18 @@
+{
+ "tagline": "Five was enough back then. Now it's just dust.",
+ "liner": "Step into a gritty East Coast boom bap world at 92 BPM, where dusty drums with heavy swing crack against thick vinyl hiss and foghorn sub-bass shadows. A sinister minor-key piano sets the noir mood while bright xylophone melodies doubled on mellow flute weave through raw confessional vocals from a raspy male lead. Gruff call-and-response ad-libs contrast sharply with a smooth, smoky R&B chorus delivering passionate vibrato in layered harmonies against muted trumpet and eerie synth motifs. This track is a melancholic reflection on how inflation devalues money while destroying community bonds, capturing nostalgia for an era where trust mattered more than price.",
+ "worldCaption": "Dusty vinyl hiss meets sinister piano; bright xylophone weaves through smoky R&B harmonies against foghorn bass in this gritty noir landscap",
+ "bios": {
+  "lead": "Raspy voice confesses the cost of inflation with raw honesty.",
+  "drums": "Keeps the floor shaking. Never misses a downbeat or crack.",
+  "other": "Weaves flute, trumpet shadows, and synth motifs into the fog."
+ },
+ "levels": {
+  "Intro": "WEARY WISHES",
+  "Verse 1": "MEMORY MIRROR",
+  "Chorus": "SPIRITLESS FIVE",
+  "Bridge": "HONEST PLEA",
+  "Drop": "CYNICAL ACCEPTANCE",
+  "Verse 2": "ERODING VALUE"
+ }
+}

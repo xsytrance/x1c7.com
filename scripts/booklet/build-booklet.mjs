@@ -86,7 +86,9 @@ function llm(system, user) {
 }
 
 // ── the copy pass (cached) ──────────────────────────────────────────────────
-const sections = (p.analysis?.sections ?? []).filter((s) => typeof s.start === "number");
+const sections = (p.analysis?.sections ?? [])
+  .filter((s) => typeof s.start === "number")
+  .map((s, i) => ({ ...s, name: String(s.name ?? `Section ${i + 1}`) }));
 const stems = p.show?.performs?.stems ?? [];
 const lyricWords = (p.lyrics?.text ?? "").trim().split(/\s+/).filter(Boolean);
 const hasLyrics = lyricWords.length >= 20;

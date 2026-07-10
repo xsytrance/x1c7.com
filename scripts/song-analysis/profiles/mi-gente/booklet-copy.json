@@ -1,0 +1,25 @@
+{
+ "tagline": "The ultimate anthem of loyalty and unity.",
+ "liner": "From the gritty barrio streets to a global stage, this track pulses with an infectious energy that demands you move. It is more than music; it is a declaration of family bloodlines rising against adversity. The confident lead voice weaves Spanglish verses over deep 808s and sharp claps, creating a sound both polished and raw. As the siren risers cut through the night, the crew chants in unison, transforming individual struggle into collective power. This isn't just about posing; it is about authentic identity celebrated under dark brass hits. Whether you are dancing at 98 BPM or feeling the spiritual brotherhood of the bridge, every note reinforces a message simple yet profound: together, we shine brighter than ever before.",
+ "worldCaption": "A bouncy 98 BPM journey through barrio block parties and global unity, where deep bass meets sharp claps under aggressive brass hits.",
+ "bios": {
+  "lead": "Delivers confident Spanglish verses with swaggering pride.",
+  "back": "Layers harmonies to swell the chorus into a massive roar.",
+  "drums": "Keeps the floor shaking at ninety-eight beats per minute.",
+  "perc": "Adds tropical rhythms that make every footstep dance-ready.",
+  "bass": "Pumps deep 808 frequencies through the chest like thunder.",
+  "synth": "Paints dark brass hits with siren-like rising melodies.",
+  "other": "Sprinkles minimal piano stabs to ground the sonic floor."
+ },
+ "levels": {
+  "Intro": "SWAGGER ANTICIPATION",
+  "Chorus 1": "UNITY TRIUMPHANT",
+  "Verse 1": "GRITTY LOYALTY TESTS",
+  "Pre-Chorus / Chant Response": "AGGRESSIVE CHALLENGE",
+  "Chorus 2": "EMPOWERED DECLARATION",
+  "Verse 2": "GLOBAL CONNECTION",
+  "Bridge": "SPIRITUAL BROTHERHOOD",
+  "Drop / Outro Start": "EXPLOSIVE RELEASE",
+  "Outro": "ENDURING PRIDE FINALE"
+ }
+}

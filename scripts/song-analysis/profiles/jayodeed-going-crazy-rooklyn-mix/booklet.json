@@ -1,0 +1,174 @@
+{
+ "v": 1,
+ "id": "jayodeed-going-crazy-rooklyn-mix",
+ "generatedAt": "2026-07-09T18:47:10.440Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Jayodeed - Going Crazy (Rooklyn Mix)",
+   "tagline": "Dive into a chaotic G-major obsession.",
+   "genre": "Pop",
+   "bookletNo": "EEF"
+  },
+  {
+   "type": "read",
+   "body": "Step onto the floor of 'Going Crazy (Rooklyn Mix),' where pulsating basslines collide with atmospheric keys to create an urgent, club-ready atmosphere. This driving synth-pop track captures the raw vulnerability of turbulent romantic addiction, oscillating between screaming desire and cold resignation. As the tempo rockets past 140 beats per minute, confessional vocals weave a narrative of toxic love that blurs into dependency. You will feel the immediate onset of madness triggered by mere presence, followed by the disorienting haze where alcohol masks deep pain. The journey builds from nervous anticipation to pure sonic chaos before settling into the melancholic logic of a broken cycle, leaving you with an echo of obsession that refuses to fade completely.",
+   "styleSentence": "A driving G major synth-pop track at a high-energy 143.5 bpm featuring pulsating basslines and atmospheric keys that build an urgent, club-ready vibe perfect for expressing turbulent romantic obsession.",
+   "mood": [
+    "Chaotic, Intense, Obsessive, Melancholic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "You got me going crazy, crazy, crazy\nYou got me going crazy,\nI don't know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy,\ndancing with your ghost in the room\nI keep saying that I'm dumb,\nbut I still look for you\nYou got me going crazy, crazy, crazy\nI pulled up late with the lights low,\nstill got your name in my iPhone\nYou say I'm poison,\nI know,\nbut you still sip when your eyes close\nWe go back and forth like waves do,\nI run from love but I chase you\nI said I'd change,\nthat ain't true,\nI just hate the way I crave you\nYou hit my line when the day's dry\nI know your friends say I'm bad news\nBut when the night get too loud,\nI'm still the one that you dance to\nI'm faded,\nyou're dangerous,\nstill somehow my favorite\nWe break it,\nthen save it,\nthen wake up and say this\nI\ndon't know if I hate you, or if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy,\ndancing with your ghost in the room\nI keep saying that I'm dumb,\nbut I still look for you\nYou got me going crazy, crazy, crazy, crazy\nI should've left you on read,\nshould've stayed out with my friends\nBut the second that you text,\nI forget how this ends\nYou know where to find me,\nback where the lights bleed\nHands on my waist like you never lied to me\nI hate that I miss it,\nthe chaos that kisses your hands on my skin\nAnd the way that you listen,\ndon't say that you love me\nJust show me tonight, we don't need forever\nJust give me the high\nRound and round, we never slow down\nWe burn it up, then we fall back down\nYou got me going crazy, I\ndon't know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy,\ndancing with your ghost in the room\nI keep saying that I'm dumb,\nbut I still look for you\nYou got me going crazy,\ncrazy,\ncrazy,\ncrazy,\ncrazy\nYou say you're dumb, but you're still outside\nYou say you hate me, but you still reply\nI should leave you where the past lies\nBut we light it up when the glass hides\nYou got a way of making wrongs feel right\nYou got a way of making dark look bright\nI'm losing sleep, I'm losing pace\nI'm losing track of all the plays\nWell, we said this was the last time\nAnd we put up at the same time\nDon't call it love, it's just a dream\nDon't call it love if it keeps breaking\nDon't, don't call it over if we're both waiting\nYou got me going crazy, you got me going crazy\nRound and round, we never slow down\nWe burn it up,\nthen we\nfall back down\nMaybe we're toxic, maybe we're honest\nMaybe the problem is I still want it\nMaybe we lost it\nMaybe we're haunted\nMaybe the truth is\nYou know I love you\nYou got me going crazy\nI don't know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy\nDancing with your ghost in the room\nI keep saying that I'm dumb,\nbut I still look for you\nYou got me going crazy, crazy\nYou got me going crazy\nStill outside if you want me\nDon't tempt me\nYou got me going crazy"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Confessional and breathy with dynamic intensity",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Whispers confessions until they scream desire loud."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers harmonies that deepen the chaotic obsession."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Kicks a frantic heartbeat through every violent downbeat."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Pulsates deep rhythms to drive the urgent groove forward."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric textures into an electric, anxious dreamscape."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Sprinkles dusty echoes over the glossy dance-floor sheen."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Paints melancholic pads that swell with emotional intensity."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 253,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "ANTICIPATION STORM",
+     "start": 2,
+     "end": 2,
+     "intensity": 0.53,
+     "emotion": "Anticipation and nervous energy building a storm.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "MADNESS ONSET",
+     "start": 2,
+     "end": 12,
+     "intensity": 0.6,
+     "emotion": "Conflicted urgency; the immediate onset of madness triggered by presence.",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "SCREAMING DESIRE",
+     "start": 12,
+     "end": 15,
+     "intensity": 0.96,
+     "emotion": "Peak chaotic intensity; screaming desire amidst destruction.",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "HAZE OF PAIN",
+     "start": 15,
+     "end": 42,
+     "intensity": 0.88,
+     "emotion": "Disoriented vulnerability; the haze of alcohol masking pain.",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "RISING TENSION WAVES",
+     "start": 42,
+     "end": 161,
+     "intensity": 0.77,
+     "emotion": "Rising tension and rhythmic oscillation like crashing waves.",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "COLD LOGIC CYCLE",
+     "start": 161,
+     "end": 201,
+     "intensity": 0.17,
+     "emotion": "Melancholic resignation and the cold logic of a broken cycle.",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "SONIC CHAOS NOISE",
+     "start": 201,
+     "end": 209,
+     "intensity": 0.3,
+     "emotion": "Pure sonic chaos; disintegration of self into noise.",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FAADING ECHO LOOP",
+     "start": 209,
+     "end": 253,
+     "intensity": 0.21,
+     "emotion": "Fading echo of obsession refusing to let go completely.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 144,
+   "key": "G",
+   "mode": "major",
+   "camelot": "9B",
+   "duration": 253.28,
+   "energy": "high",
+   "dynamicsDb": 11.7,
+   "brightness": 3476.9,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:47:10.440Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/jayodeed-going-crazy-rooklyn-mix",
+   "bookletNo": "EEF"
+  }
+ ]
+}

@@ -1,0 +1,174 @@
+{
+ "v": 1,
+ "id": "move-over-minimal-groove-mix",
+ "generatedAt": "2026-07-09T18:19:47.477Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Move Over (Minimal Groove Mix)",
+   "tagline": "Step aside for the king of summer heat.",
+   "genre": "Eurodance",
+   "bookletNo": "0D9"
+  },
+  {
+   "type": "read",
+   "body": "This F minor masterpiece at 129 BPM invites you onto a stripped-down dance floor where late-eighties hip-house meets minimal techno. A tight four-on-the-floor kick drives smooth, funky bass riffs alongside sparse synth stabs and dry snares. Confident male rap verses battle cool female lead vocal chops in call-and-response hooks that demand the crowd move with swagger. The track breathes between sections of deep resonance and collective hype, emphasizing a singular presence without overproduced festival elements. It is a confident declaration urging others to clear space for an undeniable summer night energy.",
+   "styleSentence": "A driving F minor track at 129 BPM featuring a stripped-down late-80s/early-90s hip-house and Eurodance groove with a tight four-on-the-floor kick, funky bass riff, sparse synth stabs, dry snare/clap, confident male rap verses, cool female hype vocals, call-and-response hooks, and dance-floor swagger without overproduced festival elements.",
+   "mood": [
+    "stylish, confident, retro-cool, swaggering"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "Title: Move Over (Minimal Groove Mix)\n\n[Intro - Female, Cool Spoken]\nSomebody said the floor already had a king?\nHa.\nMove over.\n\n[Beat Starts - Minimal Kick, Bass, Clap]\n\n[Hook - Female Lead, Cool and Catchy]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Groove 1 - Female Spoken & Ad-Libs]\n(Yeah)\nLet it ride\n\nBassline talking\n(shh, just listen)\n\nSlow steps, low lights\n(so smooth)\n\nKeep it simple\nJust move\n\n[Female Ad-Lib]\nMmm.\nThat’s enough.\nLet it breathe.\n\n[Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Post-Hook - Crowd, Dry Chant]\nMove.\nMove.\nMove over.\nMove.\nMove.\nMove over.\n\n[Groove 2 - Call & Response, Chants]\n[Female Call]\nYou feel that?\n[Crowd Response]\nOh, we do.\n\n[Female Call]\nTurn it up.\n[Crowd Response]\nSlide it through.\n\n[Female Spoken]\nSoft steps.\nDeep bass.\n\n[Crowd Murmur]\n(mmm, yeah, right there)\n\n[Pre-Hook - Female Spoken]\nDon’t rush it.\nDon’t force it.\nJust catch it.\n\n[Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Bridge - Minimal Breakdown]\nKick.\nClap.\nBass.\nBreathe.\n\nKick.\nClap.\nBass.\nBreathe.\n\n[Female Spoken]\nSomebody said the floor had a king?\nCute.\n\n[Final Hook - Female Lead]\nMove over\nWe got heat in the room\nMove over\nSummer came through smooth\n\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip\n\n[Outro - Crowd Chant]\nMove.\nMove.\nMove over.\nThis summer different.\nMove.\nMove.\nMove over."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "confident male rap with cool female lead vocal chops",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "LEAD VOX delivers cool female hype vocal chops with effortless style and"
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "BACKING VOX provides rhythmic support that anchors the track's confident flow"
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps a tight four-on-the-floor kick driving every dance floor step forward"
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "PERCUSSION adds dry snares and claps with precise, funky timing for maximum"
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "BASS riffs deliver deep resonance that shakes the room without ever losing its"
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "SYNTH offers sparse stabs creating an atmospheric backdrop full of retro-cool"
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "TEXTURES weave subtle details into the mix to maintain minimal confidence"
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 7,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 173,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "MISTY ANTICIPATION",
+     "start": 0,
+     "end": 5,
+     "intensity": 0.39,
+     "emotion": "Mysterious anticipation of a new king taking the throne.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1 / Hook A",
+     "name": "SMOOTH DECLARATION",
+     "start": 5,
+     "end": 47,
+     "intensity": 0.75,
+     "emotion": "Smooth declaration with a rhythmic push to clear space.",
+     "boss": true
+    },
+    {
+     "section": "Hook B (Repeat)",
+     "name": "MINIMAL FURY",
+     "start": 47,
+     "end": 61,
+     "intensity": 0.96,
+     "emotion": "Reinforced confidence and catchy minimal groove energy.",
+     "boss": false
+    },
+    {
+     "section": "Post-Hook / Crowd Chant",
+     "name": "COLLECTIVE HYPE",
+     "start": 61,
+     "end": 114,
+     "intensity": 0.72,
+     "emotion": "Collective hype with deep bass resonance and soft swagger.",
+     "boss": true
+    },
+    {
+     "section": "Groove 2 / Call & Response",
+     "name": "BREATHLESS RHYTHM",
+     "start": 114,
+     "end": 135,
+     "intensity": 0.32,
+     "emotion": "Breathless rhythm focusing on kick/clap/bass interplay.",
+     "boss": true
+    },
+    {
+     "section": "Pre-Hook",
+     "name": "BUILDING TENSION",
+     "start": 135,
+     "end": 141,
+     "intensity": 0.24,
+     "emotion": "Building tension before the final heat of the room.",
+     "boss": false
+    },
+    {
+     "section": "Hook C (Repeat)",
+     "name": "COOL FINISH",
+     "start": 141,
+     "end": 158,
+     "intensity": 0.21,
+     "emotion": "Peak confidence with a cool summer night finish.",
+     "boss": false
+    },
+    {
+     "section": "Bridge / Breakdown",
+     "name": "SILENT PAUSE",
+     "start": 158,
+     "end": 173,
+     "intensity": 0.09,
+     "emotion": "Minimalist pause emphasizing the singular presence of 'Move over'.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 172.88,
+   "energy": "medium",
+   "dynamicsDb": 11.7,
+   "brightness": 3176.1,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:19:47.477Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/move-over-minimal-groove-mix",
+   "bookletNo": "0D9"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "tagline": "Step aboard a fog-shrouded vessel where reality cracks.",
+ "liner": "Welcome to 'Membrane Still Insane,' a gritty hardcore gangsta rap track running at 95 BPM that blends grimy 90s East Coast boom bap drums with cinematic villain energy. This song narrates a dangerous descent into madness aboard a fog-shrouded riverboat where the line between reality and cartoonish villainy blurs perfectly. Expect dirty dockside soundscapes like riverboat whistles and foghorns layered over dusty upright bass stabs, sinister piano loops, muted trumpet riffs, and creepy xylophone hits to create that classic black-and-white rubber-hose animation atmosphere flipped dark. The aggressive male rap duo utilizes raspy street vocals with call-and-response ad-libs to explore themes of fractured sanity, criminal nostalgia, and playful terror through imagery of steam, smoke, and mechanical chains.",
+ "worldCaption": "A noir-cartoon world blending 1928 rubber-hose animation with 90s boom bap aboard a fog-shrouded riverboat where cartoon violence meets grit",
+ "bios": {
+  "lead": "Cuts the vocal line like a jagged blade through smoke.",
+  "back": "Echoes the lead while twisting hooks into darker corners.",
+  "drums": "Keeps the floor shaking with 90s boom bap precision.",
+  "perc": "Adds ticking gears and mechanical chaos to the rhythm.",
+  "bass": "Rumbles like a foghorn deep beneath the riverbed.",
+  "synth": "Weaves sinister loops that haunt every shadowy corner.",
+  "other": "Dusts the tracks with steam, smoke, and old film grain."
+ },
+ "levels": {
+  "Intro": "FOGHORN GAUNTLET",
+  "Chorus": "MANIC WHISTLE RUN",
+  "Verse 1": "RUBBER-HOSE SPRINT",
+  "Pre-Chorus": "CLAUSTRAPHOBIA TRAP"
+ }
+}

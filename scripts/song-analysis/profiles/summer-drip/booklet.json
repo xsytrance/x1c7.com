@@ -1,0 +1,147 @@
+{
+ "v": 1,
+ "id": "summer-drip",
+ "generatedAt": "2026-07-09T18:34:31.663Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Summer Drip",
+   "tagline": "Slow-motion confidence meets syrupy summer heat.",
+   "genre": "Chopped & Screwed",
+   "bookletNo": "B2C"
+  },
+  {
+   "type": "read",
+   "body": "Summer Drip is a chopped-and-screwed anthem celebrating slow-motion style and high-class detachment. The track opens in an anticipatory haze before the hard booming bass rattles through your speakers, setting a medium energy that lets every syllable breathe. Raspy melodic hooks with female lead energy float over pitched-down vocal chops, while southern twangs define the flirtatious flex vibe. This is not just music; it is a journey into glowing skin under streetlamp light and luxury fits on the dance floor. Feel the cool detachment from thirsty admirers as the tempo drags you deeper into the South's hottest summer atmosphere.",
+   "styleSentence": "Chopped and screwed Dirty South rap with syrupy tempo, hard booming bass, rattling hi-hats, pitched-down vocal chops, raspy melodic hooks, southern twangs, and a flirtatious summer flex vibe.",
+   "mood": [
+    "syrupy"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "Title: Summer Drip (Her Cut)\n[Style] Chopped & screwed dirty south rap, hard booming bass, slow syrupy tempo, rattling hi-hats, pitched-down vocal chops, clean multi-rapper crew cypher with female lead energy, raspy melodic hook, southern twangs, flirtatious summer flex from her point of view, confident and teasing, loyal but tempted, sexy but frustrated, no profanity. Aim for 4:20 with slow pacing, hook tails, chopped ad-libs, bass drops, and fade outro.\n[Intro] Heat turned up. Every stare feel loud. Slow it down.\n[Ad-Libs] Summer. Drip. Hips. Flip. Walk mean.\n[Hook] I feel this sundress glow under the day light, hips swing slow, moving smooth in the midnight. Heart stay cold but my stride got flame, every little step got a high-class game. Smile so sweet with the timing just right, brown skin shine with the streetlamp light. Perfume thick, got ‘em stuck in a bind, all these hungry eyes got ‘em losing they mind.\n[Verse 1 - Smooth Southern Flow] Walked in the spot, had to savor my tone. Whole room staring like a queen on a throne. Dance floor quiet but the glances loud, every lens locked in, every whisper so proud. Long legs, soft hands, curves on the rise, tiny little waist doing work oversized. Gloss game smooth, neckline sitting real neat, gold chain resting while my laugh so sweet. This dress fit tight, little slit on the side, moving through the crowd with my natural pride. DM count high but I’m trying stay clean, loyal to my peace, steady guard my dream.\n[Hook - Chopped] I feel this sundress glow under the day light, hips swing slow in the midnight. Heart stay cold but my stride got flame, every little step got a high-class game.\n[Verse 2 - Gravelly Dirty South Flow] Hold up, let me speak on my girls for a second, best friend bad, that’s a whole lot of pressure. One got curls that could make time freeze, the other walk by and the streets say please. You like long hair? I like strong mind better, side eye deadly like a hand-penned letter. Bold red lip make the whole block slow, but ring on her hand mean we keep that closed. Tan lines sharp from the beach last night, crop tops sitting with the waistlines laid. Denim shorts fitted, sun caught that crease, we summertime fine but we move with peace.\n[Bridge - Crew Argument] [Rapper 3] Who that in the yellow? [Rapper 1] That glow stay bright, little halo mellow. [Rapper 2] One in the shades got they heartbeat wide. [Rapper 4] One in the jeans got the whole block tied. [Taken Girl] I got vows on paper but I still won’t slide. [Whole Crew] Stand ground.\n[Female Tease Rapper] My phone stay lit, little hearts in a line, whole feed on me when I step outside. Sun hit skin, that’s a natural light, walk so smooth I could glide through the night. Every time I pass, all the heads do a spin, they checking that ring but they still lean in. You talk all day about loyal and pure, but you breathe real hard when I walk through the door.\n[Rapper 2] You post fly pics with a sly little sign.\n[Rapper 1] Pretty little look but you guard that line.\n[Female Tease Rapper] I just like the tease, I don’t cross that line.\n[Whole Crew] Still got ‘em pressed every time.\n[Verse 3 - Fast Crew Rapper] Work fit on point looking too on beat, gym set tight with the steady quad heat. Brunch crew fresh with the selfies on time, club girls ready got the dance floor prime. Beach trip hit with the sundress breeze, rooftop bar with the long hair free. Old crush text with a late-night theme, new like popping in the story stream. Partner at home and they still top tier, but the DMs wild when the summer get near. I stay locked in, yeah I play that strong, but the thoughts run laps like a long song.\n[Hook - Bigger, Slower] I feel this sundress glow under the day light, hips swing slow in the midnight. Heart stay cold but my stride got flame, every little step got a high-class game. Smile so sweet with the timing just right, brown skin shine with the streetlamp light. Perfume thick, got ‘em stuck in a bind, all these hungry eyes got ‘em losing they mind.\n[Verse 4 - Deep Slow Flex] Street so hot but the breeze feel balanced, skirt catch wind like a natural talent. Two-piece low, little wrap tied high, sun hit skin while the clouds roll by. Patio packed, every chair calibrated, playlist loud, whole mood feel nice. Crosswalk flashing, little hips keep swaying, phones in the air but the eyes stay praying. Mind doing pushups, guard keep pace, trying stay loyal in this fine-filled space.\n[Breakdown] Dress game too high. Leg line still fly. Waistline so fine. Power on line.\n[Taken Girl] Can somebody chill out all this thirst, uh?\n[Whole Crew] Hold that crown.\n[Female Tease Rapper] I’ll just walk by.\n[Whole Crew] Of course you will.\n[Outro] Summer drip on the late-night ave, fit so wild got ‘em doing the math. Promise so strong, let the whole thing ride, walking past pressure with my crew outside. Testing my grace. Clear mind. Still yours. Full send. Slow it down. Summer drip."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "raspy melodic hook with female lead energy and confident teasing delivery",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Delivers raspy melodic hooks with confident teasing charm."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Adds depth to the cypher without stealing the spotlight."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with precise, chopped rhythms."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Rattles hi-hats that drive the slow-motion groove forward."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers hard booming low-end drops for maximum impact."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints the sky behind the words."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers textured sounds to enhance the syrupy sonic vibe."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 4,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 292,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "HAZE OPENER",
+     "start": 0,
+     "end": 15,
+     "intensity": 0.82,
+     "emotion": "anticipatory haze",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "SULTRY PEAK",
+     "start": 15,
+     "end": 50,
+     "intensity": 0.91,
+     "emotion": "sultry confidence",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "REGAL POISE",
+     "start": 50,
+     "end": 126,
+     "intensity": 0.81,
+     "emotion": "regal poise",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "COOL DETACH",
+     "start": 126,
+     "end": 149,
+     "intensity": 0.69,
+     "emotion": "cool detachment",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "PLAYFUL FLEX",
+     "start": 149,
+     "end": 292,
+     "intensity": 0.22,
+     "emotion": "playful arrogance",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 117,
+   "key": "D#",
+   "mode": "major",
+   "camelot": "5B",
+   "duration": 292.36,
+   "energy": "medium",
+   "dynamicsDb": 8.5,
+   "brightness": 3247.6,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:34:31.663Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/summer-drip",
+   "bookletNo": "B2C"
+  }
+ ]
+}

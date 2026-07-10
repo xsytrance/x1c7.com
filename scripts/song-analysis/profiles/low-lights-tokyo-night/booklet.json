@@ -1,0 +1,170 @@
+{
+ "v": 1,
+ "id": "low-lights-tokyo-night",
+ "generatedAt": "2026-07-09T18:16:52.747Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Low Lights Tokyo / 君がいないNight",
+   "tagline": "Dive into the neon-drenched heartbreak of Low Lights Tokyo.",
+   "genre": "J-Rock",
+   "bookletNo": "021"
+  },
+  {
+   "type": "read",
+   "body": "Step onto this rainy rooftop where trap rock drums collide with gritty electric guitars. The track navigates a bittersweet tension between partying to forget and the lingering pain of loss. Driving bass synths pulse beneath atmospheric synthesizers as emotive vocals alternate from rhythmic spoken verses to breathy, melodic choruses. It is a journey through urban isolation where every neon light turns blue in reflection of grief that refuses to fade away.",
+   "styleSentence": "A high-energy J-Rock fusion blending trap rock beats and hip-hop elements with cathartic pop sensibilities, featuring driving drums, gritty electric guitars, deep 808 bass synths, and atmospheric neon-lit synthesizers at a fast tempo of 136 BPM.",
+   "mood": [
+    "Bittersweet"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "japanese",
+   "text": "[Intro]\nYeah\nLow lights Tokyo\n君がいない night\n\n[Verse 1]\nヴァイナル揺れて I slide through slow\n同じパーティー but 帰れない home\n808 鳴ってる 心の奥\n君のボイス still stuck in my phone\n笑ってるけど I’m not alright\n青いライトで 踊ってる night\nEverybody moving でも心は ice\n人混みの中 探して your light\n\n[Pre-Chorus]\nもしドラムが fade out しても\nここにいてよ please don’t go\nもしライトが消えても tonight\n君だけは消えないで stay in my sight\n\n[Chorus]\nWe’re in love with the party\nbut I’m still missing you\nLow lights 染まる body\nネオンは turning blue\nまだ帰りたくないね\nbut I can’t say goodbye\n踊ってるふりのままで\nI’m breaking in the night\n\n[Verse 2]\nスムーズなコード 雨のガラスみたい\n終電過ぎても 消えない vibe\n待たないでって 君は言ったけど\nでもまだ君を探してるよ\nクラウドの声は so loud tonight\n同じ song でも痛い inside\n心の中で party が鳴っても\n君がいない night 感じる cold\n\n[Bridge]\nドラム止まっても\nまだ sway, sway\n最後の音よ\nどうか don’t fade away\n鼓動重なって\nまた離れてく\n部屋を出た君\nまだ心にいる\n\n[Final Chorus]\nWe’re in love with the party\nbut I’m still missing you\nLow lights 染まる body\nネオンは turning blue\nまだ帰りたくないね\nbut I can’t say goodbye\nまだ party に恋して\nひとり Tokyo lights\n\n[Outro]\nYeah\nLow lights Tokyo\n君がいない night"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Emotive rap-singing delivery alternating between rhythmic spoken verses and melodic, breathy choruses with Japanese-English bilingual phrasing.",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sets the tone with breathy, emotive delivery."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Harmonizes softly behind the main vocal lines."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Layers crisp hits above the main drum kit."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Drops deep 808 frequencies to anchor the mix."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints atmospheric layers over the beat."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Adds subtle urban sounds and rain ambience."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Weaves gritty riffs through the neon chaos."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 9,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 169,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "RAINY ANTICIPATION",
+     "start": 0,
+     "end": 22,
+     "intensity": 0.61,
+     "emotion": "Atmospheric dread and anticipation of rain",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "RHYTHMIC NUMBNESS",
+     "start": 22,
+     "end": 67,
+     "intensity": 0.69,
+     "emotion": "Rhythmic numbness masking sadness",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "ANXIETY RISE",
+     "start": 67,
+     "end": 67,
+     "intensity": 0.96,
+     "emotion": "Building tension and rising anxiety",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "NEON RELEASE",
+     "start": 67,
+     "end": 119,
+     "intensity": 0.64,
+     "emotion": "Raw emotional release amidst neon chaos",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "VOID ACCEPTANCE",
+     "start": 119,
+     "end": 119,
+     "intensity": 0.33,
+     "emotion": "Resigned acceptance of the void left behind",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "FADE PLEA",
+     "start": 119,
+     "end": 167,
+     "intensity": 0.3,
+     "emotion": "Desperate plea against fading memory",
+     "boss": false
+    },
+    {
+     "section": "Final Chorus",
+     "name": "ANTHEMIC RESIGNATION",
+     "start": 167,
+     "end": 169,
+     "intensity": 0.3,
+     "emotion": "Anthemic resignation and final acceptance of loss",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 136,
+   "key": "F#",
+   "mode": "major",
+   "camelot": "2B",
+   "duration": 169.4,
+   "energy": "high",
+   "dynamicsDb": 7.2,
+   "brightness": 3069.5,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:16:52.747Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/low-lights-tokyo-night",
+   "bookletNo": "021"
+  }
+ ]
+}

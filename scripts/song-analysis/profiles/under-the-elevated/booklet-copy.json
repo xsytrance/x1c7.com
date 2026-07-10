@@ -1,0 +1,23 @@
+{
+ "tagline": "A dark NYC R&B journey through addiction's seductive lie.",
+ "liner": "Under the Elevated is a slow-burning cinematic exploration where late-night New York becomes a character itself. The track blends boom-bap drum patterns with dusty vinyl crackle and subway rumble, supporting vocals that shift from smooth vulnerability to desperate power. Here, success masks internal decay while addiction whispers seductively in the shadows of Queens Boulevard. As the arrangement rises through noir strings and raw piano, we confront the rationalization that keeps us trapped between paying bills and facing our demons. This is not just a song; it is an intimate confession found under the tracks where nobody checks on you.",
+ "worldCaption": "Late-night NYC streets meet cinematic noir strings in this gritty sonic landscape of urban isolation and internal struggle beneath the eleva",
+ "bios": {
+  "lead": "Sings wounded truth with smooth, melodic phrasing that cuts deep.",
+  "back": "Whispers seductive lies from the shadows to tempt the heart away.",
+  "drums": "Keeps a bass-heavy boom-bap pulse without modern synthetic kicks.",
+  "bass": "Grooves low and heavy, anchoring the mood in dark NYC streets.",
+  "synth": "Breathes smoky pads that fill the silence between desperate moments.",
+  "other": "Layers textures of vinyl crackle and subway rumble for atmosphere.",
+  "guitar": "Plays raw notes to support the piano's mournful, lonely melody.",
+  "keys": "Chords swell with cinematic weight behind every vulnerable confession.",
+  "strings": "Cello and viola weave a noir soundtrack through the city night."
+ },
+ "levels": {
+  "Intro": "SUBWAY WHISPER",
+  "Verse 1": "QUEENS PROMISES",
+  "Pre-Chorus": "CONTROL ILLUSION",
+  "Chorus": "SEDUCTION LOOP",
+  "Verse 2": "AWAKENING TRUTH"
+ }
+}

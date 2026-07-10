@@ -1,0 +1,24 @@
+{
+ "tagline": "Step aside for the king of summer heat.",
+ "liner": "This F minor masterpiece at 129 BPM invites you onto a stripped-down dance floor where late-eighties hip-house meets minimal techno. A tight four-on-the-floor kick drives smooth, funky bass riffs alongside sparse synth stabs and dry snares. Confident male rap verses battle cool female lead vocal chops in call-and-response hooks that demand the crowd move with swagger. The track breathes between sections of deep resonance and collective hype, emphasizing a singular presence without overproduced festival elements. It is a confident declaration urging others to clear space for an undeniable summer night energy.",
+ "worldCaption": "A retro-cool Eurodance world where minimal confidence meets funky basslines in the heat of a smooth summer club scene.",
+ "bios": {
+  "lead": "LEAD VOX delivers cool female hype vocal chops with effortless style and",
+  "back": "BACKING VOX provides rhythmic support that anchors the track's confident flow",
+  "drums": "Keeps a tight four-on-the-floor kick driving every dance floor step forward",
+  "perc": "PERCUSSION adds dry snares and claps with precise, funky timing for maximum",
+  "bass": "BASS riffs deliver deep resonance that shakes the room without ever losing its",
+  "synth": "SYNTH offers sparse stabs creating an atmospheric backdrop full of retro-cool",
+  "other": "TEXTURES weave subtle details into the mix to maintain minimal confidence"
+ },
+ "levels": {
+  "Intro": "MISTY ANTICIPATION",
+  "Verse 1 / Hook A": "SMOOTH DECLARATION",
+  "Hook B (Repeat)": "MINIMAL FURY",
+  "Post-Hook / Crowd Chant": "COLLECTIVE HYPE",
+  "Groove 2 / Call & Response": "BREATHLESS RHYTHM",
+  "Pre-Hook": "BUILDING TENSION",
+  "Hook C (Repeat)": "COOL FINISH",
+  "Bridge / Breakdown": "SILENT PAUSE"
+ }
+}

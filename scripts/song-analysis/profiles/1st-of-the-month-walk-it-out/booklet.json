@@ -1,0 +1,173 @@
+{
+ "v": 1,
+ "id": "1st-of-the-month-walk-it-out",
+ "generatedAt": "2026-07-09T17:56:19.649Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "1st of the Month (Walk It Out)",
+   "tagline": "Start fresh with East Coast grit and Latin soul.",
+   "genre": "Hip Hop",
+   "bookletNo": "533"
+  },
+  {
+   "type": "read",
+   "body": "Step into a motivational anthem where self-improvement meets triumphant resilience. This driving boom-bap track blends rapid-fire melodic harmonies with deep, warm bass lines to forge a path of disciplined renewal. Leave past failures behind as the crew chants their way toward ultimate victory. From anxious awakenings in the streets of Queens and Brooklyn to commanding motions that rebuild lives brick by brick, this journey transforms void into gold. It is not just music; it is a declaration that discipline over sympathy shapes destiny.",
+   "styleSentence": "A driving East Coast boom-bap track at 95 BPM featuring rapid-fire melodic harmonies, layered crew chants, and soulful piano stabs over a deep warm bass line with subtle Latin percussion accents.",
+   "mood": [
+    "Motivational",
+    "Triumphant",
+    "Disciplined",
+    "Celebratory"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Crowd]\nAyo...\nNew month.\nNew page.\nSame mission.\n\n[Group Chant]\nFirst of the month!\nFirst of the month!\nFirst of the month!\n\n[Hook - Full Crew]\nIt's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\n\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\n\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.\n\n[Verse 1 - Rapper 1]\nEast Elmhurst kid from the one-oh-three,\nBack when the dream looked bigger than me.\nOne-two-seven, school bell ring,\nTrying to figure out what this life gon' bring.\n\nQueens on my back,\nBrooklyn in my stride,\nNever switched up,\nStill the same inside.\n\nBoricua blood,\nDominican soul,\nVeneno y miel,\nTurn the void into gold.\n\nEverybody got a plan till the work show up,\nEverybody got bars till the hurt show up.\nWord is bond,\nWhat you say gotta stay,\nIf you build it brick by brick,\nYou can change your fate.\n\n[Hook - Full Crew]\nIt's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\n\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\n\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.\n\n[Verse 2 - Rapper 2]\nOkinawa nights,\nMarine Corps days,\nSemper Fi mindset,\nStill living that way.\n\nDiscipline first,\nThen the blessings arrive,\nLoyal to the mission,\nLoyal to the tribe.\n\nCommunity college,\nThen John Jay halls,\nEvery little step made the next one tall.\n\nNursing home systems,\nLate night calls,\nNow I walk through a law firm solving it all.\n\nLevel Ready,\nYeah I'm standing on ten,\nIf I gotta start over,\nI'll build it again.\n\nEx-One-See-Seven,\nThat's the code on the wall,\nIf the dream too small,\nThen it ain't one at all.\n\n[Bridge - Group Harmony]\nCan you keep up?\nCan you move that fast?\n\nCan you keep up?\nCan you make it last?\n\nAre you that somebody?\nRiding to the end?\n\nOr you moving over\nWhen the road get thin?\n\n[Hook - Full Crew]\nIt's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\n\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\n\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.\n\n[Verse 3 - Crew Cypher]\nMove over if you ain't moving forward.\nMove over if you scared of the moment.\n\nFast enough?\nBetter prove it then.\nClock still ticking,\nDon't lose again.\n\nSai trance forever,\nThat's family ties.\nDreams look impossible\nTill they arrive.\n\nFrom the borough blocks\nTo the digital gold,\nWe still got stories\nThat ain't been told.\n\nNo broken promises.\nNo fake displays.\nDeath before dishonor,\nThat's how we was raised.\n\nWork hard.\nPlay harder.\nCelebrate the climb.\nIt's the first of the month,\nNow it's building time.\n\n[Final Hook - Massive Crowd]\nIt's the first of the month!\nWalk it out, walk it out!\n\nIt's the first of the month!\nWalk it out, walk it out!\n\nTurn the void into gold!\nWalk it out, walk it out!\n\nWhole summer looking different now!\n\nFirst of the month!\nFirst of the month!\nFirst of the month!\n\n[Outro]\nNew page.\nNew mission.\nSame dream.\n\nNow go earn it."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Fast-flowing multi-rapper delivery with tight group choruses",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Guides the rapid-fire melodic harmony forward."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "The echo that turns a chorus into a crowd."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Texture in the pocket, always moving."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "The low end you feel in your chest."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints the sky behind the words."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Everything you feel but can't name."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Chords that hold the room together."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 6,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 210,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "ANXIOUS AWAKENING",
+     "start": 0,
+     "end": 7,
+     "intensity": 0.76,
+     "emotion": "Anxious Awakening",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "CHORUS",
+     "start": 7,
+     "end": 29,
+     "intensity": 1,
+     "emotion": "Ultimate Victory",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "VERSE 1",
+     "start": 29,
+     "end": 85,
+     "intensity": 0.89,
+     "emotion": "Grounded Hustle",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "VERSE 2",
+     "start": 85,
+     "end": 110,
+     "intensity": 0.62,
+     "emotion": "Ascension & Focus",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "BRIDGE",
+     "start": 110,
+     "end": 139,
+     "intensity": 0.34,
+     "emotion": "Intense Challenge",
+     "boss": false
+    },
+    {
+     "section": "Verse 3",
+     "name": "VERSE 3",
+     "start": 139,
+     "end": 146,
+     "intensity": 0.27,
+     "emotion": "Commanding Motion",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "OUTRO",
+     "start": 146,
+     "end": 210,
+     "intensity": 0.18,
+     "emotion": "Reflective Resolve",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 96,
+   "key": "G#",
+   "mode": "minor",
+   "camelot": "1A",
+   "duration": 209.76,
+   "energy": "medium",
+   "dynamicsDb": 11.4,
+   "brightness": 3277.1,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T17:56:19.649Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/1st-of-the-month-walk-it-out",
+   "bookletNo": "533"
+  }
+ ]
+}

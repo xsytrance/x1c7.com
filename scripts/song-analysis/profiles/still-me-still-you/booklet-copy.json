@@ -1,0 +1,25 @@
+{
+ "tagline": "A sultry duet for digital dreams and midnight calls.",
+ "liner": "Step into a late-night lounge where text messages ignite quiet flames. This intimate island-world breathes with trip-hop grooves and dark piano, weaving uncertainty through long-distance love. Listen to the male lead question his place in your future while smoky synth pads fill the silence between sent pings. Then, catch the sweet soulful female response, her warmth cutting through digital distance like a gentle reassurance. From breathy doubts to passionate duets, this journey resolves into resolved intimacy. It is a tender exploration of self-doubt versus commitment, proving that even across miles and screens, the connection remains electric.",
+ "worldCaption": "A smoky island-night lounge where text messages spark digital flames over warm trip-hop grooves and dark piano.",
+ "bios": {
+  "lead": "Breathes romance with theatrical charm.",
+  "back": "Swells behind like velvet shadows.",
+  "drums": "Keeps the floor shaking gently but firmly.",
+  "perc": "Shadows dance in time with every beat.",
+  "bass": "Grooves low and deep through the night.",
+  "synth": "Paints smoky clouds around your head.",
+  "other": "Adds texture to every quiet corner.",
+  "guitar": "Plucks warm chords on velvet strings.",
+  "keys": "Pianist sets a dark lounge mood."
+ },
+ "levels": {
+  "Intro": "ANTICIPATION GLOW",
+  "Verse 1": "IDENTITY GAUNTLET",
+  "Chorus (Female Response)": "WARMTH WAVE",
+  "Bridge": "PAUSE POINT",
+  "Verse 2 / Chorus A": "HEAT RISE",
+  "Chorus B (Duet)": "PASSION LOCK",
+  "Outro": "FADE ECHO"
+ }
+}

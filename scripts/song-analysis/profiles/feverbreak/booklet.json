@@ -1,0 +1,164 @@
+{
+ "v": 1,
+ "id": "feverbreak",
+ "generatedAt": "2026-07-09T18:06:06.924Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Feverbreak",
+   "tagline": "Noble resolve in a medieval storm.",
+   "genre": "Video Game Soundtrack",
+   "bookletNo": "042"
+  },
+  {
+   "type": "read",
+   "body": "Step into the silent arena where gratitude blooms amidst chaos. This medium-tempo D minor saga weaves tense string ostinatos with a soaring violin lead, supported by aggressive viola and cello rhythms. Restrained French horns build quiet pressure while sharp brass accents punctuate the air like distant warhorns. Militaristic percussion drives the narrative forward through snare rolls and timpani strikes without ever breaking the loopable tactical cadence. It is an orchestral storm that feels ancient yet urgent, capturing the essence of a decisive medieval fantasy battle where every note serves as both shield and sword.",
+   "styleSentence": "A medium-tempo (99 BPM) D minor orchestral battle theme featuring tense string ostinatos, a dramatic violin lead melody supported by aggressive viola and cello rhythms, restrained French horns, sharp brass accents, and militaristic percussion including snare rolls and timpani strikes to evoke a noble yet dangerous medieval fantasy war drama.",
+   "mood": [
+    "tense",
+    "heroic",
+    "noble",
+    "urgent"
+   ]
+  },
+  {
+   "type": "world",
+   "art": [],
+   "caption": "AN INSTRUMENTAL TRANSMISSION — THE WORLD SPEAKS FOR ITSELF",
+   "themes": [
+    "Gratitude in adversity",
+    "Medieval fantasy warfare",
+    "PS1-era orchestral nostalgia",
+    "Decisive battle tension"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "None",
+   "members": [
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Rolls out ancient signals for the charge ahead."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints invisible maps with shimmering digital hues."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves atmospheric shadows around every heroic step."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Chords bloom like flowers in frozen battlefields."
+    },
+    {
+     "stem": "strings",
+     "name": "STRINGS",
+     "bio": "Tug at heartstrings with noble, minor-key resolve."
+    },
+    {
+     "stem": "brass",
+     "name": "BRASS",
+     "bio": "Blasts defiant trumpets to rally the weary ranks."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 120,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "SNARE SHADOW",
+     "start": 9,
+     "end": 9,
+     "intensity": 0.72,
+     "emotion": "Anticipatory tension with sparse strings and militaristic snare preparation.",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "MINOR RESOLVE",
+     "start": 9,
+     "end": 37,
+     "intensity": 0.85,
+     "emotion": "Noble resolve emerging from the minor-key ostinato foundation.",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "VIOLIN SOAR",
+     "start": 37,
+     "end": 71,
+     "intensity": 0.6,
+     "emotion": "Dramatic violin melody soaring over aggressive viola and cello rhythms.",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "HORN PRESSURE",
+     "start": 71,
+     "end": 71,
+     "intensity": 0.38,
+     "emotion": "Restrained French horns building pressure for the climax without modern drumming.",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "BRASS CLASH",
+     "start": 71,
+     "end": 94,
+     "intensity": 0.36,
+     "emotion": "Aggressive brass accents and timpani strikes hitting peak heroic tension.",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FADE LOOP",
+     "start": 94,
+     "end": 120,
+     "intensity": 0.12,
+     "emotion": "Fading cinematic resolve returning to the loopable tactical theme.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 99,
+   "key": "D",
+   "mode": "minor",
+   "camelot": "7A",
+   "duration": 119.92,
+   "energy": "medium",
+   "dynamicsDb": 7.8,
+   "brightness": 1795.3,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:06:06.924Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/feverbreak",
+   "bookletNo": "042"
+  }
+ ]
+}

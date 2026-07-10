@@ -1,0 +1,189 @@
+{
+ "v": 1,
+ "id": "void-into-gold",
+ "generatedAt": "2026-07-09T18:38:00.994Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Void Into Gold",
+   "tagline": "Turn darkness to light with this sultry summer groove.",
+   "genre": "Afro R&B",
+   "bookletNo": "A7B"
+  },
+  {
+   "type": "read",
+   "body": "Close your eyes and step out of the noise. 'Void Into Gold' is a smooth Afro R&B journey where warm live strings meet hypnotic reggae basslines, creating a sanctuary for healing. As female vocals drift over glitch-hop textures, you release societal pressure and internal alarms to embrace self-love under a summer night sky. This track blends Sade-like elegance with electronic flourishes to guide you from cold walls into radiant light. It is an invitation to close the laptop on your burdens and let the bass roll low until only peace remains.",
+   "styleSentence": "A smooth Afro R&B summer groove driven by a hypnotic reggae-style bassline and warm live strings, featuring female sulty alto vocals over glitch-hop textures, cinematic violins, and relaxed danceable rhythms that blend Sade-like elegance with BT-inspired electronic flourishes.",
+   "mood": [
+    "Sultry, Uplifting, Sensual, Spiritual"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Spoken Female]\nMm\nThis summer feel different\nNo rush\nNo weight\nNo noise in my head tonight\n\n[Intro Chant]\nAh ya ya\nWe outside now\nAh ya ya\nSun going down\nAh ya ya\nLet the bass roll low\nLet the mind let go\n\n[Verse 1]\nI had too much living on my shoulders\nToo many tabs open in my mind\nSame old walls getting colder\nSame old clock stealing time\n\nThen the strings came in like sunlight\nBassline moving through the smoke\nOne deep breath and I felt life\nPull me back before I broke\n\nNow the beach got bottles glowing\nLittle fire by the shore\nLaptop closed but the soul still loading\nI don’t need to chase no more\n\n[Pre-Chorus]\nPour a little something sweet\nRoll a little peace if you need\nEat the fruit, taste the heat\nFind your balance in the feast\n\nNo shame in a joyful body\nNo fear in a healing night\nIf the world gets loud around me\nI’ma dance until it’s light\n\n[Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold\n\n[Post-Chorus - Vocal Chops]\nWine slow\nBass low\nEyes closed\nLet go\n\nNew me\nStill loading\nHeart clean\nStill glowing\n\n[Verse 2]\nCocktails and code on the table\nDreams in the blue screen light\nI was building when I was able\nNow I’m living what I typed\n\nNo more waiting on permission\nNo more saving joy for later\nEvery heartbeat is a rhythm\nEvery breath a little savior\n\nShe got flowers in her hair now\nHe got smoke up in the air\nEverybody got a story\nEverybody needs repair\n\nBut tonight we keep it tender\nNo judgment in the room\nJust the ocean, drums, and violins\nCutting silver through the moon\n\n[Pre-Chorus 2]\nHave a drink but keep your spirit\nTake a puff but keep your name\nTaste the world but don’t disappear in it\nPleasure don’t have to become pain\n\nPass the plate and pass forgiveness\nRaise your glass and bless the air\nWe are only here a minute\nSo be kind while we are here\n\n[Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold\n\n[Bridge - Spoken Over Snare, Bass Wobble, Strings]\nListen\nYou don’t have to answer every alarm\nYou don’t have to carry every ghost\nSome nights are made for healing\nSome nights are made for hands in the air\nSome nights you just thank the sky\nThat your heart still knows how to beat\n\n[Breakdown - Sung / Chopped]\nMind go quiet\nHeart go wide\nBassline rolling\nOcean tide\n\nMind go quiet\nHeart go wide\nThis summer different\nWe still alive\n\n[Final Chorus]\nEmpty your mind\nFill up your heart\nMove with the night\nLet the good life start\n\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\n\n[Outro]\nAh ya ya\nWe outside now\nAh ya ya\nSun going down\n\nWine slow\nBass low\nEyes closed\nLet go\n\nWe came from the void\nNow we turn it into gold"
+  },
+  {
+   "type": "world",
+   "art": [
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/bassline-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/gold-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/healing-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/balance-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/beach-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/void-into-gold/gallery/living-1.webp"
+   ],
+   "caption": "A sultry summer night where warm strings, glowing beach bottles, and a rolling bassline transform mental voids into golden healing moments u",
+   "themes": [
+    "Transformation",
+    "Healing",
+    "Release of Guilt",
+    "Summer Night Ambiance",
+    "Self-Love"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Sultry smoky alto",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Drifts like smoke over the groove with smoky elegance."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Weaves harmony layers that lift the soul higher and deeper."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without ever rushing the beat too fast."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds subtle textures to keep relaxation interesting at every turn."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Rolls low through the smoke with a hypnotic reggae-style hum."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints cinematic violins that bridge electronic and organic sounds perfectly."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Glitches gently around edges like digital fireflies in summer night air."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plucks warm notes to replace cold walls with sunlight instantly."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 0,
+   "wordFx": 4,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 307,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "SUNSET SOFT START",
+     "start": 3,
+     "end": 28,
+     "intensity": 0.4,
+     "emotion": "Anticipation and relaxation as the sun sets, inviting a slow bassline to roll up.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "COLD WALL RELIEF",
+     "start": 28,
+     "end": 90,
+     "intensity": 0.69,
+     "emotion": "Reflective weariness turning into relief as warmth replaces cold walls.",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "BALANCE FEAST RISE",
+     "start": 90,
+     "end": 137,
+     "intensity": 0.9,
+     "emotion": "Awakening joy, finding balance, and preparing for an emotional release.",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "VOID TO GOLD SHINE",
+     "start": 137,
+     "end": 176,
+     "intensity": 0.76,
+     "emotion": "Triumphant transformation and shining brightly after the journey.",
+     "boss": true
+    },
+    {
+     "section": "Post-Chorus",
+     "name": "WINE SLOW BASS LOW",
+     "start": 176,
+     "end": 223,
+     "intensity": 0.3,
+     "emotion": "Tender forgiveness and mindful appreciation of fleeting moments.",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "QUIET GRACE ACCEPTANCE",
+     "start": 223,
+     "end": 264,
+     "intensity": 0.12,
+     "emotion": "Quiet gratitude and acceptance after letting go of internal alarms.",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus 2",
+     "name": "MOMENTUM LOVE LIGHTS",
+     "start": 264,
+     "end": 307,
+     "intensity": 0.22,
+     "emotion": "Building momentum towards transformation with love and light.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 306.88,
+   "energy": "medium",
+   "dynamicsDb": 15.2,
+   "brightness": 2623.2,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:38:00.994Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/void-into-gold",
+   "bookletNo": "A7B"
+  }
+ ]
+}

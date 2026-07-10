@@ -1,0 +1,186 @@
+{
+ "v": 1,
+ "id": "heaven-hell-honey-venom-remix",
+ "generatedAt": "2026-07-09T18:08:12.267Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Heaven & Hell (Honey & Venom Remix)",
+   "tagline": "Sultry dancehall meets forbidden fire.",
+   "genre": "Dancehall",
+   "bookletNo": "662"
+  },
+  {
+   "type": "read",
+   "body": "This hyper-energetic bashment anthem pulses at 136 BPM, driven by massive sound-system bass and aggressive Caribbean drums. The track explores a sultry, dangerous attraction where an alluring figure embodies both divine beauty and temptation. Hypnotic female vocals dominate the neon-soaked atmosphere, delivering seductive lines about loving like hell while looking like heaven. From cinematic breakdowns to intense call-and-response toasting, the journey moves from low-hum anticipation through explosive releases of forbidden passion into exhausted euphoria.",
+   "styleSentence": "A hyper-energetic 136 BPM bashment riddim driven by massive sound-system bass, aggressive Caribbean drums, and overdriven 808s, featuring hypnotic female vocals that dominate a neon-soaked nightclub atmosphere with cinematic breakdowns and intense call-and-response toasting.",
+   "mood": [
+    "Sultry",
+    "Dangerous",
+    "Electric",
+    "Obsessive"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": false,
+   "language": "english",
+   "text": "Mmm,\nmmm,\neverybody got an angel's eye, mmm,\neverybody got a devil's eye, tonight,\nI want\nboth,\nboth,\nboth,\nboth,\nboth,\nboth,\nboth,\nboth,\nheaven,\nhell,\nhoney and venom, honey\nand venom,\nyou look like hell,\nbut we fuckin' like hell,\nhands on my waist while the whole\nroom swell,\nyou look like hell,\nbut we fuckin' like hell,\neverybody watchin' but they know\nus well,\nhoney and venom,\nrunnin' under my skin,\nkiss me deep,\nbaby,\npull me back in,\nyou look like hell,\nbut we fuckin' like hell,\nsweet little danger under your spell,\nheaven,\nhell, honey, venom, hell,\nhoney.\nShe walk in slow motion,\nwhole club freeze up,\ngold on her body,\nbut the ice a deeper,\ndress red in her,\nbass gettin' lower,\none more wine and the room gettin' slower,\nsweet\nlike honey,\nbut the attitude wicked,\none little touch and me whole mind shifted,\npillow in\nthe strobe light,\ndevil in the grin,\neverybody know trouble soon as she walk in me,\nI know\nbetter,\nstill I stay,\nred lights dancin' on your face,\none more warning,\none more spell,\nyou look like heaven,\nbut we love like hell,\nhell.\nYou look like heaven,\nbut we fuckin' like hell,\nhands on my waist while the whole room\nswell,\nyou look like heaven,\nbut we fuckin' like hell,\neverybody watchin' but they know\nus well,\nhoney and venom,\nrunnin' under my skin,\nkiss me deep,\nbaby,\npull me back in,\nyou look like heaven,\nbut we fuckin' like hell,\nsweet little danger under your spell.\nOne,\ntwo,\ndon't stop,\nbass beat,\nheart drop,\nhands high,\neyes shut,\none more kiss,\ntoo\nmuch, you got the sugar.\nEvery time I leave,\nyou pull me back in,\none more night,\none more lie,\none more chance,\nboy,\ndon't lie,\ndangerous God,\ndangerous boy,\nwhy you always playin' with fire,\nbecause\nthe burn feel good,\nwhy you always break the rules,\nbecause I wish you could,\ntell me one\ngood reason, I should walk away.\nDon't walk away!\nDon't walk away!\nYou look like heaven.\nYou look like heaven.\nYou look like heaven.\nYou look like heaven.\nYou look like heaven, but we fuckin' like hell\nWhole dance, all singin', every word we tell\nYou look like heaven, but we fuckin' like hell\nSweet temptation, let me know it well\nHoney and venom, runnin' through my veins\nHoney and venom, dancin' in the rain\nHoney and venom, burnin' through the dawn\nSweet little poison, got the whole world on\nHell\nHoney, venom,\nkiss me deep\nOne more time, honey and venom\nHeaven"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Sultry, powerful, seductive delivery",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings with sultry power that dominates the floor."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Weaves harmony lines deep within the mix's soul."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Pounds aggressive Caribbean rhythms without missing a beat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds intricate layers to keep dancers moving sharp."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers massive sound-system weight that shakes foundations."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Crafts overdriven 808 waves for cinematic depth."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Paints atmospheric hues across the sonic landscape."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 222,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "LOW HUM TENSION",
+     "start": 0,
+     "end": 5,
+     "intensity": 0.63,
+     "emotion": "Anticipation and low hum of tension",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "INNER CONFLICT ZONE",
+     "start": 5,
+     "end": 16,
+     "intensity": 0.85,
+     "emotion": "Internal conflict between desire and morality",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "EXPLOSIVE RELEASE",
+     "start": 16,
+     "end": 58,
+     "intensity": 0.93,
+     "emotion": "Explosive release of forbidden passion",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "LUXURY HEAT VISIONS",
+     "start": 58,
+     "end": 67,
+     "intensity": 0.62,
+     "emotion": "Visualizing the object of desire with luxury and heat",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "PSYCHO SHIFT RISE",
+     "start": 67,
+     "end": 137,
+     "intensity": 0.46,
+     "emotion": "Rising tension and psychological shift",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "FATE BARGAIN STAGE",
+     "start": 137,
+     "end": 143,
+     "intensity": 0.28,
+     "emotion": "Desperate bargaining with fate and desire",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "SONIC ASSAULT WAVE",
+     "start": 143,
+     "end": 166,
+     "intensity": 0.3,
+     "emotion": "Pure sonic assault of the bassline and hypnotic rhythm",
+     "boss": false
+    },
+    {
+     "section": "Breakdown/Bridge 2",
+     "name": "TRANCE REPETITION LOOP",
+     "start": 166,
+     "end": 172,
+     "intensity": 0.24,
+     "emotion": "Hypnotic repetition leading to trance state",
+     "boss": false
+    },
+    {
+     "section": "Final Chorus/Outro",
+     "name": "LINGERING INTOXICATION",
+     "start": 172,
+     "end": 222,
+     "intensity": 0.22,
+     "emotion": "Exhausted euphoria and lingering intoxication",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 136,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 222.08,
+   "energy": "high",
+   "dynamicsDb": 12.1,
+   "brightness": 2952.2,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T18:08:12.267Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/heaven-hell-honey-venom-remix",
+   "bookletNo": "662"
+  }
+ ]
+}

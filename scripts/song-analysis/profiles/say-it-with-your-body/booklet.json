@@ -1,0 +1,166 @@
+{
+ "v": 1,
+ "id": "say-it-with-your-body",
+ "generatedAt": "2026-07-09T18:30:18.365Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Say It With Your Body",
+   "tagline": "Feel the rhythm of silence in this ultra-deep club anthem.",
+   "genre": "R&B",
+   "bookletNo": "C8E"
+  },
+  {
+   "type": "read",
+   "body": "This slow-burning international R&B track invites you into a space where words dissolve against the backdrop of shared heartbeats. Imagine massive sub-bass anchors quietly speaking back to lush cinematic strings, while smoky sax fills drift through the air like incense. The vocals start as intimate whispers before swelling into emotive harmonies that bridge diverse cultures without needing translation. It is a journey from quiet anticipation to raw spiritual surrender on the drop, where every rimshot and cello note builds a luxurious atmosphere of non-verbal connection.",
+   "styleSentence": "A slow-burning ultra-deep international club anthem at 92 BPM featuring massive long-sustain sub-bass anchors, rich cinematic strings led by cello and viola, subtle smoky tenor sax fills, crisp trap-inspired percussion with soft rimshots, lush vocal harmonies, and intimate whispered ad-libs creating a luxurious nightclub atmosphere where the bass quietly speaks back to vocals.",
+   "mood": [
+    "Sensual, intimate, luxurious, emotional"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro]\n(Female, whisper)\nCloser...\nNo words...\nCome here...\n(Bass drops)\n[Verse 1 — Male]\nDifferent streets...\nDifferent names...\nDifferent skies...\nSame heartbeat...\nYou smile...\nI don't know what to say...\nBut somehow...\nYou already know...\n[Pre-Chorus — Female]\nYour language...\nMine too...\nStill...\nWe're moving...\nLike we always knew...\n[Chorus]\n(Both)\nSay it with your body...\nCloser...\nSay it with your body...\nSlower...\nSay it with your body...\nMove me...\nSay it with your body...\nHold me...\nSay it with your body, baby...\nDon't say maybe...\nJust...\nSay it with your body...\n[Verse 2 — Female]\nEvery city's got another rhythm...\nEvery heartbeat finds another home...\nYou reach for me...\nI answer back...\nNo translation on this road...\n[Male]\nOne small step...\nOne slow sway...\nThat's enough...\nTo tell me everything...\n[Pre-Chorus]\n(Together)\nNo dictionary...\nNo explanation...\nJust the music...\nAnd the vibration...\n[Drop]\n(Instrumental)\nDeep sub...\nCello...\nTiny sax response...\nBass wobble...\nStrings...\nBreathing...\n[Chorus 2]\nSay it with your body...\nCloser...\nSay it with your body...\nTighter...\nSay it with your body...\nMove me...\nSay it with your body...\nTouch me...\nSay it with your body, baby...\nJust say it with your body...\n[Bridge]\n(Female)\nWhen the words don't reach...\n(Male)\nI'll meet you halfway...\n(Female)\nWhen the silence speaks...\n(Male)\nI'll feel what you say...\n(Together)\nFrom Brooklyn...\nTo Manila...\nTo Lagos...\nTo Saigon...\nEvery heartbeat...\nSpeaks the same...\n[Final Chorus]\nSay it with your body...\nSlowly...\nSay it with your body...\nHold me...\nSay it with your body...\nShow me...\nSay it with your body...\nKnow me...\nSay it with your body, baby...\nMake me feel...\nEvery little heartbeat...\nSay it with your body...\nJust...\nSay it with your body...\n[Outro]\n(Female whisper over fading cello and sub-bass)\nYou never had to say a word...\nI heard you..."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Intimate whispers transitioning into smooth, emotive singing with layered harmonies",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "LEAD VOX whispers secrets that become soaring harmonies."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "BACKING VOX weaves lush layers beneath the main melody line."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps a crisp trap-inspired rhythm with soft rimshots always ready to strike."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "PERCUSSION adds subtle textures and rhythmic certainty without overpowering the"
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "BASS drops deep anchors that speak directly back to every vocal line sung above."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "SYNTH creates massive long-sustain pads holding the entire sonic stage open"
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "TEXTURES fills empty spaces with smoky atmosphere and breathing room between"
+    },
+    {
+     "stem": "strings",
+     "name": "STRINGS",
+     "bio": "STRINGS lead rich cinematic melodies on cello and viola instruments throughout."
+    },
+    {
+     "stem": "woodwinds",
+     "name": "WOODWINDS",
+     "bio": "WOODWINDS offer tiny sax responses that dance around the main vocal performance."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 4,
+   "wordFx": 9,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 249,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "WHISPERED INVITE",
+     "start": 9,
+     "end": 32,
+     "intensity": 0.76,
+     "emotion": "Anticipation and whispering invitation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "SHARED SOUL",
+     "start": 32,
+     "end": 46,
+     "intensity": 0.57,
+     "emotion": "Quiet realization of shared soul across distances",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "RHYTHMIC CERTAINTY",
+     "start": 46,
+     "end": 58,
+     "intensity": 0.66,
+     "emotion": "Building tension and rhythmic certainty",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "SENSORY RELEASE",
+     "start": 58,
+     "end": 127,
+     "intensity": 0.82,
+     "emotion": "Cinematic release of sensory desire",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "GLOBAL RESONANCE ZONE",
+     "start": 127,
+     "end": 193,
+     "intensity": 0.29,
+     "emotion": "Global resonance and consuming devotion",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "SUB-BASS SPIRITUAL",
+     "start": 193,
+     "end": 249,
+     "intensity": 0.28,
+     "emotion": "Raw, sub-bass driven spiritual surrender",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 136,
+   "key": "A#",
+   "mode": "major",
+   "camelot": "6B",
+   "duration": 249.08,
+   "energy": "medium",
+   "dynamicsDb": 15.6,
+   "brightness": 3104.7,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:30:18.365Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/say-it-with-your-body",
+   "bookletNo": "C8E"
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "v": 1,
+ "id": "i-said-no",
+ "generatedAt": "2026-07-09T18:12:10.785Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "I Said No!",
+   "tagline": "Step inside the hundred-inch screen of isolation.",
+   "genre": "Gangsta Rap",
+   "bookletNo": "49A"
+  },
+  {
+   "type": "read",
+   "body": "This gritty East Coast boom bap track runs at roughly one zero eight beats per minute, featuring dusty drums with hard snare cracks and a foghorn bass line mimicking an upright stab. Layered over a dark A minor piano loop and muted trumpet, it creates a sinister yet rubber-hose animated vibe reminiscent of black-and-white nineteen twenties dockside cartoons. The song portrays a wealthy but socially isolated figure who aggressively rejects outsiders despite their admiration for his lifestyle.",
+   "styleSentence": "A gritty 90s East Coast boom bap track running at roughly 108 BPM featuring dusty drums with hard snare cracks and a foghorn bass line that mimics an upright bass stab, layered over a dark A minor piano loop and muted trumpet to create a sinister yet rubber-hose animated vibe reminiscent of black-and-white 1920s dockside cartoons.",
+   "mood": [
+    "grimy, playful-dangerous, cinematic, sinister-fun"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Verse]\nSo, they call me Big G with the capital G\nI said, \"Step into my crib and check my hundred-inch TV\"\nI got the Rolly with the ice, keep it on the freeze\nAnd I know they ain't got it like this overseas\nHe said, \"Ooh, I like your car\"\nAnd he said, \"Oh, I like your chain\"\nAnd he said, \"Damn, I like your shoes\"\nHe said, \"Yo, Big G, can I ride with you?\"\n[Chorus]\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\n\n[Verse]\nSo, they call me Big G with the capital G\nI said, \"Step into my crib and check my hundred-inch TV\"\nI got the Rolly with the ice, keep it on the freeze\nAnd I know they ain't got it like this overseas\nHe said, \"Ooh, I like your car\"\nAnd he said, \"Oh, I like your chain\"\nAnd he said, \"Damn, I like your shoes\"\nHe said, \"Yo, Big G, can I ride with you?\"\n\n[Chorus]\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\""
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Aggressive male rap duo with raspy street vocals utilizing call-and-response ad-libs",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Projects arrogant disdain with raspy street vocals."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Echoes every rejection into the hollow void behind."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking. Never misses a downbeat."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds rhythmic texture to the dusty sonic landscape."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Provides foghorn stabs that mimic upright bass hits."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves dark atmosphere around the piano loop core."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Layers muted trumpet into the sinister animated vibe."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 127,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "SINISTER START",
+     "start": 1,
+     "end": 1,
+     "intensity": 0.22,
+     "emotion": "sinister anticipation",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "ARROGANT DISPLAY",
+     "start": 1,
+     "end": 25,
+     "intensity": 0.88,
+     "emotion": "conceited arrogance",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "COLD NO GO ZONE",
+     "start": 25,
+     "end": 44,
+     "intensity": 0.94,
+     "emotion": "cold dismissal",
+     "boss": true
+    },
+    {
+     "section": "Drop",
+     "name": "DEFIANT DEFENSE",
+     "start": 44,
+     "end": 55,
+     "intensity": 0.78,
+     "emotion": "aggressive defiance",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "ISOLATE SELF NOW",
+     "start": 55,
+     "end": 126,
+     "intensity": 0.32,
+     "emotion": "obsessive isolation",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "HOLLOW END STATE",
+     "start": 126,
+     "end": 127,
+     "intensity": 0.03,
+     "emotion": "hollow finality",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 108,
+   "key": "A",
+   "mode": "minor",
+   "camelot": "8A",
+   "duration": 126.96,
+   "energy": "medium",
+   "dynamicsDb": 9.9,
+   "brightness": 2743.8,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:12:10.785Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/i-said-no",
+   "bookletNo": "49A"
+  }
+ ]
+}

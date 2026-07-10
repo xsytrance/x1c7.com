@@ -1,0 +1,25 @@
+{
+ "tagline": "Run. Don't turn back.",
+ "liner": "This high-energy pop-rock anthem drives forward at 143 BPM, weaving distorted guitar swells and drill-style hi-hats over deep 808 bass pulses to craft an urgent soundscape of toxic love. It chronicles a relationship doomed from the start, where domestic chaos and emotional neglect mask themselves as passion. Through dynamic duet vocals alternating between intimate female leads and gritty male replies, the song traces a journey from fatalistic resignation in the intro to cathartic release in the final chorus. The lyrics expose red flags on walls and secrets hidden behind phones, capturing the painful realization that love was merely a burden disguised as romance.",
+ "worldCaption": "A neon-lit house of cards collapsing under drill beats, where every sock on the floor marks another step toward self-realization amidst dome",
+ "bios": {
+  "lead": "She sings with close-mic intimacy and fierce clarity.",
+  "back": "Her backing harmonies lift the weary chorus higher still.",
+  "drums": "Keeps the frantic four-on-the-floor shaking violently.",
+  "perc": "Adds sharp drill-style hi-hats to drive urgency forward.",
+  "bass": "Pulsing deep eighteighths anchor this anxious emotional ground.",
+  "synth": "Weaves shimmering pads that soften the gritty reality around.",
+  "other": "Textural layers create a murky, chaotic domestic atmosphere here.",
+  "guitar": "Distorted swells swell up like rising anger and pain inside.",
+  "keys": "Piano lines cut through chaos with melancholic precision."
+ },
+ "levels": {
+  "Intro": "FATALISTIC START",
+  "Verse 1": "CHAOS SCENE",
+  "Pre-Chorus": "DEFENSIVE WARNING",
+  "Chorus": "PAINFUL CLARITY",
+  "Verse 2": "CRUMBLING EGO",
+  "Pre-Chorus (Repeat)": "EMPOWERED SHIFT",
+  "Chorus (Final)": "CATHARTIC END"
+ }
+}

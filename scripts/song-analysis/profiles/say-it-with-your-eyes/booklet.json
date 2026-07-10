@@ -1,0 +1,170 @@
+{
+ "v": 1,
+ "id": "say-it-with-your-eyes",
+ "generatedAt": "2026-07-09T18:31:03.777Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Say It With Your Eyes",
+   "tagline": "Step into the hushed glow of Southern soul.",
+   "genre": "Southern R&B",
+   "bookletNo": "F4E"
+  },
+  {
+   "type": "read",
+   "body": "Imagine standing in a dimly lit room where unspoken glances hold more weight than words. This slow-burning D# major track at 123 BPM invites you to close your eyes and feel the dusty, atmospheric intimacy creeping through every breathy syllable. The chopped vocals loop over heavy sub-bass, creating an underground club vibe that feels both distant and immediate. It captures a tense yet hypnotic moment of visual obsession, where a single clean frame freezes time between two souls connected by silence. As the intensity fades into a quiet afterglow, you are left with only the lingering echo of that connection.",
+   "styleSentence": "A slow-burning D# major track at 123 BPM featuring chopped and screwed vocals over a dusty Southern R&B beat with heavy sub-bass, atmospheric synths, and distant guitar textures that create an underground club vibe.",
+   "mood": [
+    "sultry, intimate, hushed, hypnotic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Verse 1]\nYou [Verse 1]\nYou over over there\nthere\nII’’m m over over here\nhere\nKeep Keep it it on on low\nlow\nKeep Keep it it ununclear\nclear\nI I take take one one step\nstep\nYou You look look away\naway\nThen Then I I catch catch your your face\nface\nFor For one one clean clean frame\n\nframe\n[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across Across the the the room\nroom\nroom\nI I stay\nstay\nI stay\nAcross Across Across the the the room\nroom\nroom\nI I I stay\n\nstay\n\nstay\n\n[Verse 2]\nBlue [Verse 2]\nBlue in in your your glass\nglass\nIce Ice on on yoyour ur hand\nhand\nYou You move move like like you you know\nknow\nI I understand\nunderstand\nI I dondon’t ’t say say much\nmuch\nYou You dondon’t ’t need need much\nmuch\nOne One little little glance\nglance\nThen Then we we both both cut cut up\n\nup\n\n[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust once\nJust once\nLook Look my my way\nway\nJust Just once\nonce\nAAcross cross the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I stay\n\n[Bridge]\n\n[Half-time drop]\nSay [Half-time drop]\nSay it it with with styour your aeyes\ny\n\neyes\nSay Say it it with with your your eyeeyes\ns\nDonDon’’t t make make it it loud\nloud\nDon’t make it loud\nDonDon’’t t make make it it loud\n\nloud[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I staystay"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "breathy, repetitive, close-mic",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Breathes life into every hushed, repetitive note with closeness."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers warmth beneath the lead voice without overpowering it."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with a steady, hypnotic pulse."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Adds subtle texture to maintain tension throughout the journey."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Delivers heavy sub-frequencies that anchor every emotional moment."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints atmospheric skies above the dusty beat and vocals."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves distant guitar sounds into a surreal, dimly lit setting."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Provides faint textures that drift through the darkened room."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 5,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 192,
+   "levels": [
+    {
+     "section": "Section 1",
+     "name": "SHADE RISES",
+     "start": 38,
+     "end": 38,
+     "intensity": 0.79,
+     "emotion": "Anticipation and quiet tension setting the stage for a visual encounter.",
+     "boss": false
+    },
+    {
+     "section": "Section 2",
+     "name": "FOCUS LOCKED IN",
+     "start": 38,
+     "end": 51,
+     "intensity": 0.6,
+     "emotion": "A focused request to capture a fleeting moment of connection amidst distraction.",
+     "boss": true
+    },
+    {
+     "section": "Section 3",
+     "name": "DARK ROOM DANCE",
+     "start": 51,
+     "end": 125,
+     "intensity": 0.54,
+     "emotion": "Hypnotic longing and the surreal sensation of moving through a dark room solely for visual contact.",
+     "boss": true
+    },
+    {
+     "section": "Section 4",
+     "name": "COLD ELEGANCE LOOP",
+     "start": 125,
+     "end": 145,
+     "intensity": 0.22,
+     "emotion": "Reinforced obsession with the subject's cold elegance and knowing distance.",
+     "boss": false
+    },
+    {
+     "section": "Section 5",
+     "name": "FREEZE FRAME NOW",
+     "start": 145,
+     "end": 158,
+     "intensity": 0.15,
+     "emotion": "Sudden stillness that freezes the scene on a single striking detail.",
+     "boss": false
+    },
+    {
+     "section": "Section 6",
+     "name": "QUIET GOODBYE ZONE",
+     "start": 158,
+     "end": 191,
+     "intensity": 0.06,
+     "emotion": "Gratitude mixed with finality after an intense emotional exchange.",
+     "boss": false
+    },
+    {
+     "section": "Section 7",
+     "name": "FADE TO AFTERGLOW",
+     "start": 191,
+     "end": 192,
+     "intensity": 0.18,
+     "emotion": "Lingering echo of the visual connection fading into a quiet afterglow.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 123,
+   "key": "D#",
+   "mode": "major",
+   "camelot": "5B",
+   "duration": 192.08,
+   "energy": "low",
+   "dynamicsDb": 17.5,
+   "brightness": 2393.5,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:31:03.777Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/say-it-with-your-eyes",
+   "bookletNo": "F4E"
+  }
+ ]
+}

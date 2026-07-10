@@ -1,0 +1,24 @@
+{
+ "tagline": "Dive into a chaotic G-major obsession.",
+ "liner": "Step onto the floor of 'Going Crazy (Rooklyn Mix),' where pulsating basslines collide with atmospheric keys to create an urgent, club-ready atmosphere. This driving synth-pop track captures the raw vulnerability of turbulent romantic addiction, oscillating between screaming desire and cold resignation. As the tempo rockets past 140 beats per minute, confessional vocals weave a narrative of toxic love that blurs into dependency. You will feel the immediate onset of madness triggered by mere presence, followed by the disorienting haze where alcohol masks deep pain. The journey builds from nervous anticipation to pure sonic chaos before settling into the melancholic logic of a broken cycle, leaving you with an echo of obsession that refuses to fade completely.",
+ "worldCaption": "A neon-drenched nightmare of toxic romance and pulsating synths in high-energy G major.",
+ "bios": {
+  "lead": "Whispers confessions until they scream desire loud.",
+  "back": "Layers harmonies that deepen the chaotic obsession.",
+  "drums": "Kicks a frantic heartbeat through every violent downbeat.",
+  "bass": "Pulsates deep rhythms to drive the urgent groove forward.",
+  "synth": "Weaves atmospheric textures into an electric, anxious dreamscape.",
+  "other": "Sprinkles dusty echoes over the glossy dance-floor sheen.",
+  "keys": "Paints melancholic pads that swell with emotional intensity."
+ },
+ "levels": {
+  "Intro": "ANTICIPATION STORM",
+  "Verse 1": "MADNESS ONSET",
+  "Chorus": "SCREAMING DESIRE",
+  "Verse 2": "HAZE OF PAIN",
+  "Pre-Chorus": "RISING TENSION WAVES",
+  "Bridge": "COLD LOGIC CYCLE",
+  "Drop": "SONIC CHAOS NOISE",
+  "Outro": "FAADING ECHO LOOP"
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "v": 1,
+ "id": "one-tap-away-riverboat-bad-boys-remix",
+ "generatedAt": "2026-07-09T18:24:47.726Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "One Tap Away (Riverboat Bad Boys Remix)",
+   "tagline": "Tap once. Feel the noir silence between you.",
+   "genre": "Gangsta Rap",
+   "bookletNo": "793"
+  },
+  {
+   "type": "read",
+   "body": "This mid-tempo 95 BPM boom bap track fuses grimy East Coast drums with dusty upright bass and sinister piano to paint a black-and-white 1928 riverboat world. Raspy vocals deliver a gritty critique on digital isolation, where social stats replace genuine intimacy amidst cinematic dockside crime. The song journeys from nostalgic reflection in the intro through cold observations of fractured contact, building into anthemic choruses that question why we feel alone surrounded by names. As intensity drops to resigned acceptance and heartbreaking clarity, the track exposes the vulnerability behind superficial fame and lost connections.",
+   "styleSentence": "A gritty hardcore gangsta rap track running at a mid-tempo 95 BPM that fuses grimy 90s East Coast boom bap drums with dusty upright bass stabs and sinister piano loops to create a black-and-white 1928 riverboat noir atmosphere, featuring raspy aggressive male vocals over an instrumentation palette of muted trumpets, creepy xylophone hits, vinyl hiss, and foghorn-like low-end frequencies.",
+   "mood": [
+    "gritty, noir, playful-dangerous, cinematic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro]\n[strummed acoustic guitar, punchy kick drum]\n\n[Verse 1]\n[rhythmic male rap vocals]\nAds in the cracks, brands in the chat\nEverybody got stats, everybody wants claps\nEverybody got reach but don't reach back\nHow we got this close and lost contact?\n\n[Pre-Chorus]\n[bass enters, melodic delivery]\nYou can see me in a second\nYou can call me any day\nYou can love me in private\nBut scroll right past my name\nFunny how we got connected\nThen forgot how to stay\nYou're right there in my pocket\nBut you feel a world away\n\n[Chorus]\n[full drums, anthemic vocals]\nOne tap away (one tap away)\nFrom a real conversation but we don't say a thing\nWe're one tap away\nFrom \"I see you keep going\" from \"I'm proud of your dream\"\nSave your likes for the strangers\nSave your hearts for the stars\nBut the ones who really know you act like loving you is hard\nOne tap away\nSo why do I feel alone in a room full of names?\n\n[Verse 2]\n[drums continue, rap delivery]\nTap, tap, but you don't reach back\nHeart, heart, but it don't feel like that\nClose, close, close, but we don't connect\nOne tap away and we still forget\n\n[Bridge]\n[acoustic guitar becomes more prominent]\nClick, click, click, everybody got a new rule\nDon't hype friends that ain't cool, cool\nSave that love for the big names\nBlue checks, big chains, big views\nThat if a stranger blow up overnight\nEverybody's where they saw the light\nSame ones quiet when you need a find\nNow they in the comments like \"that's my guy\"\n\n[Outro]\n[drums drop out, fading acoustic guitar]\nOne tap away\nAnd still so far\nEverybody online\nNobody where you are"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "raspy street delivery with call-and-response ad-libs",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Raspy voice that cuts through the static noise."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Harmonies that weave secrets into every line sung."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Kick drums keep the gritty street rhythm alive."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Creepy xylophone hits add playful danger to beats."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Low-end frequencies rumble like a distant foghorn."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Muted trumpets swell with cinematic melancholy."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Textures of vinyl hiss fill the digital void."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 7
+  },
+  {
+   "type": "map",
+   "duration": 251,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "NOIR REFLECTIONS",
+     "start": 0,
+     "end": 30,
+     "intensity": 0.79,
+     "emotion": "nostalgic reflection",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "COLD OBSERVATION",
+     "start": 30,
+     "end": 39,
+     "intensity": 0.85,
+     "emotion": "cold observation",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "FRUSTRATED LONGING",
+     "start": 39,
+     "end": 59,
+     "intensity": 0.87,
+     "emotion": "frustrated longing",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "MELANCHOLIC",
+     "start": 59,
+     "end": 129,
+     "intensity": 0.68,
+     "emotion": "melancholic realization",
+     "boss": true
+    },
+    {
+     "section": "Verse 2",
+     "name": "RESIGNED ACCEPTANCE",
+     "start": 129,
+     "end": 136,
+     "intensity": 0.44,
+     "emotion": "resigned acceptance",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "HEARTBREAKING CLARITY",
+     "start": 136,
+     "end": 152,
+     "intensity": 0.32,
+     "emotion": "heartbreaking clarity",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "CINEMATIC DESPAIR",
+     "start": 152,
+     "end": 251,
+     "intensity": 0.3,
+     "emotion": "cinematic despair",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 96,
+   "key": "A#",
+   "mode": "minor",
+   "camelot": "3A",
+   "duration": 251,
+   "energy": "medium",
+   "dynamicsDb": 10.1,
+   "brightness": 3704.7,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:24:47.726Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/one-tap-away-riverboat-bad-boys-remix",
+   "bookletNo": "793"
+  }
+ ]
+}

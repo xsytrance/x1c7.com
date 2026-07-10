@@ -1,0 +1,23 @@
+{
+ "tagline": "Tap once. Feel the noir silence between you.",
+ "liner": "This mid-tempo 95 BPM boom bap track fuses grimy East Coast drums with dusty upright bass and sinister piano to paint a black-and-white 1928 riverboat world. Raspy vocals deliver a gritty critique on digital isolation, where social stats replace genuine intimacy amidst cinematic dockside crime. The song journeys from nostalgic reflection in the intro through cold observations of fractured contact, building into anthemic choruses that question why we feel alone surrounded by names. As intensity drops to resigned acceptance and heartbreaking clarity, the track exposes the vulnerability behind superficial fame and lost connections.",
+ "worldCaption": "Dirty docks meet rubber-hose chaos under a foggy 1928 noir sky with vinyl hiss rising like ocean mist.",
+ "bios": {
+  "lead": "Raspy voice that cuts through the static noise.",
+  "back": "Harmonies that weave secrets into every line sung.",
+  "drums": "Kick drums keep the gritty street rhythm alive.",
+  "perc": "Creepy xylophone hits add playful danger to beats.",
+  "bass": "Low-end frequencies rumble like a distant foghorn.",
+  "synth": "Muted trumpets swell with cinematic melancholy.",
+  "other": "Textures of vinyl hiss fill the digital void."
+ },
+ "levels": {
+  "Intro": "NOIR REFLECTIONS",
+  "Verse 1": "COLD OBSERVATION",
+  "Pre-Chorus": "FRUSTRATED LONGING",
+  "Chorus": "MELANCHOLIC",
+  "Verse 2": "RESIGNED ACCEPTANCE",
+  "Bridge": "HEARTBREAKING CLARITY",
+  "Drop": "CINEMATIC DESPAIR"
+ }
+}

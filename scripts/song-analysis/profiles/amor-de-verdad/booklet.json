@@ -1,0 +1,188 @@
+{
+ "v": 1,
+ "id": "amor-de-verdad",
+ "generatedAt": "2026-07-09T17:58:46.182Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Amor De Verdad",
+   "tagline": "Reject illusions. Demand the truth in this raw confessional.",
+   "genre": "Latin R&B",
+   "bookletNo": "259"
+  },
+  {
+   "type": "read",
+   "body": "This midtempo Latin alt-R&B track strips away cinematic glamour to reveal a gritty, vulnerable core. A raw female vocal with emotional cracks navigates internal conflict and suppressed fear over edgy dark pop production. Saturated sub-bass anchors punchy trap-inflected drums while stark guitar and Rhodes stabs weave through atmospheric pads. It is an intimate plea rejecting performative gestures in favor of authentic connection that endures beyond the heat of passion. The journey moves from trembling anticipation to explosive rejection, demanding genuine presence over empty promises.",
+   "styleSentence": "A midtempo (100 BPM) Latin alt-R&B track featuring a raw female vocal with emotional cracks over edgy dark pop production, saturated sub-bass, punchy trap-inflected drums, and stark guitar/Rhodes stabs weaving through atmospheric pads.",
+   "mood": [
+    "bittersweet, intimate, gritty, vulnerable"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "spanish",
+   "text": "[Intro]\nMe llamaste a las tres\ny yo también temblé\n\n[Verse 1]\nDijiste que temblabas, que no lo esperabas\nyo sentí lo mismo, pero me callé\nno me hables a las tres si en la mañana te vas\nquédate también cuando salga el sol\n\n[Pre-Chorus]\nNo me amarres con un beso y una piel\nno quiero el poder, quiero saber que vas a volver\n\n[Chorus]\nAy, mi amor, no me preguntes\ncuál es la receta, no hay ninguna, solo ven\nyo no quiero amor de cine\nquiero el que se queda cuando todo se apaga otra vez\neres lindo como el agua, pero el agua se va con el calor\nyo no quiero amor de cine\nquiero amor del de verdad\n\n[Verse 2]\nNo me des mil horas que se inventan\nno me armes desfiles que después se van\nsi soy tu gasolina, no me quemes y ya\ndime si somos dos o solo cuando te conviene a ti\n\n[Bridge]\nNo vendas tu alma, guárdala pa' ti\nno corras diez mil kilómetros por mí\nsolo cruza la calle cuando te llame a las tres\nlos héroes de película no se quedan al final\n\n[Final Chorus]\nyo no quiero amor de cine\nquiero el que se queda...\nquédate\nquédate\n\n[Outro]\nSomos uno... ¿o somos dos?\nquédate y lo sabré"
+  },
+  {
+   "type": "world",
+   "art": [
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/temble-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/amordeverdad-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/te-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/aguas-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/gasolina-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/amor-de-verdad/gallery/quedate-1.webp"
+   ],
+   "caption": "Cinematic illusions dissolve into gritty urban reality where only true presence survives the fading light and cooling water.",
+   "themes": [
+    "Authenticity vs Performance",
+    "Vulnerability",
+    "Fear of Abandonment",
+    "Urban Intimacy"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "confessional, intimate female vocal with slight rasp",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Pours emotional cracks through every raw confession with a raspy whisper."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Layers soft harmonies to widen the intimate space without filling it completely."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Delivers punchy trap beats that drive the rhythm forward relentlessly."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Saturates low frequencies with deep sub-bass rumble for heavy impact."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves atmospheric pads around stark stabs to create moody textures."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Scatters ambient debris and urban noise across the sonic landscape freely."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plays sharp, rhythmic chords that cut through the mix with clarity."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Adds warm Rhodes tones that blend seamlessly with melodic lines."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 5,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 160,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "TREMBLING START",
+     "start": 3,
+     "end": 21,
+     "intensity": 0.76,
+     "emotion": "Trembling anticipation, quiet intimacy",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "SUPPRESSED FEAR",
+     "start": 21,
+     "end": 21,
+     "intensity": 0.69,
+     "emotion": "Internal conflict and suppressed fear",
+     "boss": false
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "RISING TENSION",
+     "start": 21,
+     "end": 59,
+     "intensity": 0.56,
+     "emotion": "Rising tension seeking clarity",
+     "boss": true
+    },
+    {
+     "section": "Chorus",
+     "name": "EXPLOSIVE TRUTH",
+     "start": 59,
+     "end": 59,
+     "intensity": 0.89,
+     "emotion": "Explosive rejection of illusions for truth",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "DESPERATE PLEA",
+     "start": 59,
+     "end": 97,
+     "intensity": 0.54,
+     "emotion": "Melodic release and desperate plea",
+     "boss": true
+    },
+    {
+     "section": "Bridge",
+     "name": "ANGRY REALIZATION",
+     "start": 97,
+     "end": 108,
+     "intensity": 0.22,
+     "emotion": "Angry realization of futility in empty promises",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FINAL RESIGNATION",
+     "start": 108,
+     "end": 160,
+     "intensity": 0.09,
+     "emotion": "Resigned vulnerability and final plea for presence",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 99,
+   "key": "A#",
+   "mode": "minor",
+   "camelot": "3A",
+   "duration": 159.6,
+   "energy": "medium",
+   "dynamicsDb": 16.8,
+   "brightness": 2690,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T17:58:46.182Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/amor-de-verdad",
+   "bookletNo": "259"
+  }
+ ]
+}

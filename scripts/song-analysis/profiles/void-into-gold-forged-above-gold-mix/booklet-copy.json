@@ -1,0 +1,24 @@
+{
+ "tagline": "Forge your void into gold in this high-energy East Coast boo",
+ "liner": "This aggressive hip-hop soul chronicles a transformative journey from inner emptiness and external pressure to becoming forged like gold through resilience. Imagine stomping drums meeting cinematic strings, dusty piano stabs, and brass hits supporting a raw female gospel lead with soaring belts over sharp male rap verses. It is where the void learns its name as rowdy call-and-response crew shouts build momentum for explosive triumph. Feel the cathartic release shifting from battle to healing reflection before landing on ultimate victory and unshakeable golden confidence.",
+ "worldCaption": "Stomp through darkness, rise into fire, and emerge forged in gold within this anthemic East Coast soul landscape where pressure makes diamon",
+ "bios": {
+  "lead": "Soars with gospel grit over every rising chord progression.",
+  "back": "Weaves lush harmonies that lift the raw lead vocals higher.",
+  "drums": "Keeps the floor shaking with a war-call rhythm.",
+  "perc": "Adds dusty stabs and cinematic hits to the beat.",
+  "bass": "Rolls low, grounding the soul strings in deep vibration.",
+  "synth": "Casts shimmering textures that turn shadows into light.",
+  "other": "Dusts the mix with atmospheric pressure and golden warmth.",
+  "guitar": "Plays sharp brass-style hits to cut through the noise.",
+  "keys": "Strikes dusty piano chords that anchor the anthemic mood."
+ },
+ "levels": {
+  "Intro": "TENSE REVELATION",
+  "Verse 1": "GRITTY DETERMINATION",
+  "Pre-Chorus": "CLEANSING FIRE",
+  "Chorus": "EXPLOSIVE TRIUMPH ZONE",
+  "Post-Chorus": "HEALING REFLECTION",
+  "Drop": "GOLDEN VICTORY PEAK"
+ }
+}

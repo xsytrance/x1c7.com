@@ -1,0 +1,24 @@
+{
+ "tagline": "Ignite your speakers with chaotic K-pop rock fusion.",
+ "liner": "Step into a volatile world where love and hate dance in the city's neon glow. This high-energy alternative rock track captures the desperate addiction of a relationship spinning out of control. From confused awakenings to cataclysmic releases, every note tells a story of intense desire and emotional chaos. The polished mix delivers intimate vocal details alongside dense harmonies that build tension until they finally burn it all up. Experience the raw honesty of falling through the cracks while rising again in this dramatic journey.",
+ "worldCaption": "A neon-soaked urban nightscape where chaotic rhythms collide with glossy, emotionally volatile vocals and textured synth waves.",
+ "bios": {
+  "lead": "Sings wide emotional swells with passionate clarity.",
+  "back": "Stacks dense harmonies to create a wall of sound.",
+  "drums": "Keeps the floor shaking with precise, layered beats.",
+  "perc": "Adds controlled room ambience and rhythmic texture.",
+  "bass": "Delivers clean low-end via focused side-chained synth.",
+  "synth": "Weaves atmospheric pads beneath the chaotic melody.",
+  "other": "Layers gritty noise to heighten urban intensity.",
+  "guitar": "Plays tightly edited saturated riffs with precision."
+ },
+ "levels": {
+  "Intro": "CHAOS AWAKENS",
+  "Verse 1": "OBSESSION LOOP",
+  "Chorus": "EMOTIONAL OVERLOAD",
+  "Verse 2": "TOXIC ATTRACTION",
+  "Pre-Chorus/Hook Transition": "INEVITABLE COLLISION",
+  "Bridge": "SECRET VULNERABILITY",
+  "Drop/Build-Up": "RAW HONESTY HEAT"
+ }
+}

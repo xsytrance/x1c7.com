@@ -1,0 +1,179 @@
+{
+ "v": 1,
+ "id": "international-heat",
+ "generatedAt": "2026-07-09T18:14:18.770Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "International Heat",
+   "tagline": "Feel the international heat rising tonight.",
+   "genre": "Dirty South R&B",
+   "bookletNo": "616"
+  },
+  {
+   "type": "read",
+   "body": "Step into a sultry world where English whispers blend with Vietnamese allure over a swinging half-time groove. This track is a hypnotic journey through an international club, driven by massive sub bass and wobbly low-end that rattle your trunk while classic southern claps meet reggaeton-flavored percussion. Smooth female vocals float confidently atop lush pads, glossy keys, and atmospheric synth bells, creating a sensual cinematic feel shared with charismatic male call-and-response featuring occasional Dominican Spanish ad-libs. As you lose control to the deep basslines, bodies move together in perfect sync across different cities, capturing the very essence of cultural fusion and late night desire.",
+   "styleSentence": "A chopped and screwed female lead with confident English–Vietnamese topline floats over a swinging half-time groove featuring massive sub bass, wobbly low-end, trunk-rattling 808s, hypnotic reggaeton-flavored percussion mixed with classic southern clap patterns, hi-hat rolls, deep kick thumps, lush pads, glossy keys, atmospheric synth bells, and warm cello/viola lines for a sensual cinematic feel.",
+   "mood": [
+    "Sultry, Seductive, Hypnotic, Tantalizing"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro]\nFemale\nBoy...\nWhy you leanin' in my ear?\nSay it real clear...\n\nMale\nMami...\nI can feel that body talkin' from here...\n\nFemale\nAnh ơi, nhìn em hoài làm chi?\nLại gần đi... (come see)\n\n[Verse 1]\nFemale\nI caught you staring from across the room\nDon’t play shy, I can read your mood\nOne little touch, now your pulse go boom\nTonight I’m the fire, you the fuel in this world wide room\n\nI see you thinking ‘bout me on your face\nYou want my hips movin’ all those ways\nRight kinda wrong in the perfect place\nNo clothes, just skin, just sweat, just bass\n\nMale\nOh...\nIs that what you like?\nYou been teasing all night?\n\nFemale\nMaybe...\nYou gon’ slide?\n\nMale\nGirl...\nLet me feel that body ride...\n\n[Pre-Chorus]\nFemale\nLại đây... nice and slow...\nĐặt tay lên eo, feel the flow...\n\nMale\nDon’t stop...\nstay close...\n\nFemale\nEm muốn anh mất kiểm soát, you know...\n\nMale\nYeah...\nI already know...\n\n[Chorus]\nFemale\nInternational heat...\nSweat drippin’ down, two hearts off-beat...\nBody on body, deeper in between...\nEm muốn anh say, lost in my scene...\n\nMale\nCome ride...\ndon’t hide...\nRight here by my side...\n\nFemale\nLook in my eyes...\n\nMale\nThat’s all it takes to slide...\n\nBoth\nFrom Hanoi...\nSau Ho Chi Minh...\nWe fuckin’ to the rhythm of this international sin...\n\nFemale\nTouch me right, don’t you ever play tame...\nWe fuckin’ to the rhythm of this chopped-up game...\n\n[Drop]\nFemale\nMove...\nMove...\nMove...\nMove...\n\nMale\nCloser...\nCloser...\n\nFemale\nCứ thế rung, cho em thêm, cho em more...\n\nMale\nDám không? Take it lower than before...\n\n[Verse 2]\nMale\nBrooklyn on my passport, southside in my soul\nBut tonight after Sài Gòn, we lose all control\nYou ain’t gotta talk much, I can read your curves\nEvery little grind say you know what you deserve\n\nFemale\nEm không cần hứa đâu, just pull me near\nWhisper in my neck how you want me here\nNo translation for the way I ache\nJust your hands on my waist while our bodies shake\n\nEm nóng như Sài Gòn trưa tháng Năm\nAnh muốn em, cứ nói thẳng, không cần râm\nI love it when you grab me, kiss me, lay me down\nPut it on me slow, fuck me to the rhythm now\n\n[Bridge]\nFemale\nYou don’t gotta promise me forever, baby, just tonight...\nCho em say trong vòng tay anh đến sáng mai...\n\nMale\nWe can sweat out every secret ‘til the morning light...\n\nFemale\nOne more drink...\nMột nụ hôn...\n\nMale\nOne more dance...\n\nBoth\nOne more chance to lose control...\n\nFemale\nHôn em đi, until my lipstick gone...\nWe fuckin’ to the rhythm khi mà bass còn son...\n\n[Final Chorus]\nBoth\nInternational heat...\nInternational flame...\nEverybody watchin’ when you scream my name...\n\nFemale\nFrom District 1, qua Thủ Đức, still no sleep...\nAnh ôm em chặt, keep it dirty, keep it deep...\n\nMale\nCome ride...\ndon’t hide...\nRight here, let it slide...\n\nFemale\nAnh ơi, đừng dừng lại...\nCho em feel that vibe all night...\n\nBoth\nFrom Hanoi...\nSau Ho Chi Minh...\nTell your friends...\nBring your friends...\nLet this sin begin...\n\nFemale\nBodies talkin’, không cần câu từ...\nWe fuckin’ to the rhythm, every chop, every slur...\n\nMale\nMami, despacito, but the club still loud...\n\nFemale\nUn poquito más, make your queen so proud...\n\nBoth\nInternational heat, international flame...\nWe fuckin’ to the rhythm of that dirty south game..."
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Smooth, sultry female lead with flirtatious delivery; charismatic male call-and-response featuring confident enunciation and occasional Dominican Spanish ad-libs.",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Floats confident vocals blending languages seamlessly."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Adds charismatic enunciation and Spanish ad-libs freely."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with classic southern patterns."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Delivers hypnotic reggaeton rhythms that drive trance states."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Provides massive sub bass for deep, trunk-rattling lows."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Creates lush pads and atmospheric bells everywhere."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves warm cello lines into the sensual cinematic mix."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Adds a subtle layer beneath the glossy keys."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 5,
+   "stems": 8
+  },
+  {
+   "type": "map",
+   "duration": 227,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "WHISPERED CURIOSITY",
+     "start": 4,
+     "end": 28,
+     "intensity": 0.88,
+     "emotion": "Whispered curiosity and tactile anticipation as the listener leans in to hear a secret.",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "FIERY INVITATION",
+     "start": 28,
+     "end": 61,
+     "intensity": 0.84,
+     "emotion": "Confident ownership and fiery invitation to join a worldwide dance floor.",
+     "boss": true
+    },
+    {
+     "section": "Pre-Chorus",
+     "name": "BOUNDARY DISSOLUTION",
+     "start": 61,
+     "end": 139,
+     "intensity": 0.68,
+     "emotion": "Escalating heat and the dissolution of boundaries between two bodies.",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "SENSORY OVERLOAD",
+     "start": 139,
+     "end": 142,
+     "intensity": 0.45,
+     "emotion": "Cathartic release and overwhelming sensory overload as secrets are spilled.",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "RHYTHMIC ABANDON",
+     "start": 142,
+     "end": 154,
+     "intensity": 0.43,
+     "emotion": "Rhythmic abandon and bass-driven trance state.",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "GLOBAL CONNECTION",
+     "start": 154,
+     "end": 208,
+     "intensity": 0.24,
+     "emotion": "Global connection and shared experience across different cities.",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "INTENSE SURRENDER",
+     "start": 208,
+     "end": 208,
+     "intensity": 0.27,
+     "emotion": "Intense vulnerability and surrender to the music's pull.",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "LINGERING ECHOES",
+     "start": 208,
+     "end": 227,
+     "intensity": 0.15,
+     "emotion": "Lingering satisfaction and the echo of fame.",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 99,
+   "key": "F#",
+   "mode": "major",
+   "camelot": "2B",
+   "duration": 227.24,
+   "energy": "medium",
+   "dynamicsDb": 11.8,
+   "brightness": 3179.1,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:14:18.770Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/international-heat",
+   "bookletNo": "616"
+  }
+ ]
+}

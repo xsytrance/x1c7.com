@@ -1,0 +1,25 @@
+{
+ "tagline": "Level up your love at 108 BPM!",
+ "liner": "Fast Enough is a kinetic embrace of late-90s romance where city streets become our racetrack. Imagine cruising through neon-drenched boulevards as bright FM synths cut the air and funky basslines keep you tapping feet in rhythm with bouncy New Jack swing drums. This track blends smooth, confident male R&B leads with catchy harmonies that flirt right alongside crisp snares reminiscent of a classic Sega Genesis adventure. There are no checkpoints here—just an unstoppable surge from curious anticipation to euphoric victory as we navigate the night without hesitation or need to save and quit.",
+ "worldCaption": "A neon-lit city chase blending New Jack Swing beats with arpeggiated game runs for a high-speed futuristic romance.",
+ "bios": {
+  "lead": "Sings smooth confidence over catchy harmonies",
+  "back": "Adds layers of harmony to the main melody",
+  "drums": "Keeps the floor shaking without missing downbeats",
+  "perc": "Bounces off crisp snares and sparkling stabs",
+  "bass": "Grooves with funky lines that drive the beat",
+  "synth": "Leads bright FM runs through futuristic soundscapes",
+  "other": "Weaves ambient textures into the mix seamlessly",
+  "guitar": "Adds subtle licks to support the main groove",
+  "keys": "Plays arpeggiated runs like a game soundtrack"
+ },
+ "levels": {
+  "Intro": "CURIOUS START",
+  "Verse 1": "MISSION MODE",
+  "Pre-Hook": "ELECTRIC URGENCY",
+  "Hook": "TRIUMPHANT RHYTHM",
+  "Verse 2": "SMOOTH CONFIDENCE",
+  "Bridge": "EXPLOSIVE RELEASE",
+  "Final Hook": "JOYFUL VICTORY"
+ }
+}

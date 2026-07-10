@@ -1,0 +1,146 @@
+{
+ "v": 1,
+ "id": "push-it-on-me",
+ "generatedAt": "2026-07-09T18:27:08.440Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Push It On Me",
+   "tagline": "Dive into the smoky, seductive world of 'Push It On Me'.",
+   "genre": "Deep House",
+   "bookletNo": "1D0"
+  },
+  {
+   "type": "read",
+   "body": "Step inside a late-night French Touch sanctuary where intimacy and desire take center stage. This track captures the sultry atmosphere of a dimly lit club, driven by warm analog basslines that pulse beneath filtered disco loops. Sultry female vocals, chopped into hypnotic fragments, guide you through a journey from whispered anticipation to full surrender in the drop. The music wraps around you like smoke, inviting you to keep the feeling alive while side-chained pads swell and fall. It is an invitation to lose yourself in the rhythm of the night.",
+   "styleSentence": "A moody French touch deep house track at 123 BPM featuring a filtered disco loop and warm analog bassline that drives an intimate late-night vibe, underscored by side-chained pads and glitched female vocal chops.",
+   "mood": [
+    "seductive, smoky, hypnotic, sultry"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - filtered, distant vocal]\nfeel it... feel it... (feel-feel-feel it)\n\n[Verse]\nlow lights, slow move, bodies in the dark\nnobody's watchin', give in to the spark\n\n[Hook - chopped & repeated]\npush it on me (push-push-push it on me)\nkeep the feeling, keep the feeling on\n(on-on-on)\n\n[Drop - vocal stutter over bass]\nfeel-feel-feel... it on\nfeel-feel-feel... it on\n\n[Breakdown - whispered]\ndon't stop now... keep it slow\n\n[Hook]\npush it on me (push-push-push it on me)"
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "sultry female vocals with chopped/glitched hooks",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Whispers secrets through glitched hooks that never fade away."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking with relentless, hypnotic rhythms."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Drives the intimate vibe like a warm analog heartbeat."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Weaves side-chained pads into layers of sultry atmosphere."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Adds atmospheric depth to every shadow and silence."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 2,
+   "wordFx": 6,
+   "stems": 5
+  },
+  {
+   "type": "map",
+   "duration": 157,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "DARK WHISPERS",
+     "start": 0,
+     "end": 31,
+     "intensity": 0.7,
+     "emotion": "Anticipation and whispering darkness",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "SHADOW GAZE",
+     "start": 31,
+     "end": 38,
+     "intensity": 0.78,
+     "emotion": "Secretive closeness in shadows",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "SUDDEN DESIRE",
+     "start": 38,
+     "end": 49,
+     "intensity": 0.89,
+     "emotion": "Direct physical craving and surrender",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "TRANCE RHYTHM",
+     "start": 49,
+     "end": 56,
+     "intensity": 1,
+     "emotion": "Hypnotic trance rhythm",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "STUTTER SLOWDOWN",
+     "start": 56,
+     "end": 139,
+     "intensity": 0.49,
+     "emotion": "Stuttering tension and slowing breath",
+     "boss": false
+    },
+    {
+     "section": "Hook",
+     "name": "HYPNOTIC LOOP",
+     "start": 139,
+     "end": 157,
+     "intensity": 0.18,
+     "emotion": "Lingering hypnotic loop",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 123,
+   "key": "F",
+   "mode": "minor",
+   "camelot": "4A",
+   "duration": 157,
+   "energy": "medium",
+   "dynamicsDb": 19.3,
+   "brightness": 2542.9,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:27:08.440Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/push-it-on-me",
+   "bookletNo": "1D0"
+  }
+ ]
+}

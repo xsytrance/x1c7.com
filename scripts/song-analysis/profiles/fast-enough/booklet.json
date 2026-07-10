@@ -1,0 +1,196 @@
+{
+ "v": 1,
+ "id": "fast-enough",
+ "generatedAt": "2026-07-09T18:05:32.236Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "Fast Enough",
+   "tagline": "Level up your love at 108 BPM!",
+   "genre": "R&B/Hip-Hop Fusion",
+   "bookletNo": "19A"
+  },
+  {
+   "type": "read",
+   "body": "Fast Enough is a kinetic embrace of late-90s romance where city streets become our racetrack. Imagine cruising through neon-drenched boulevards as bright FM synths cut the air and funky basslines keep you tapping feet in rhythm with bouncy New Jack swing drums. This track blends smooth, confident male R&B leads with catchy harmonies that flirt right alongside crisp snares reminiscent of a classic Sega Genesis adventure. There are no checkpoints here—just an unstoppable surge from curious anticipation to euphoric victory as we navigate the night without hesitation or need to save and quit.",
+   "styleSentence": "A high-energy late-90s futuristic R&B track at 108 BPM featuring bright FM synth leads, funky basslines, and bouncy New Jack swing drums that evoke a Sega Genesis aesthetic with crisp snares, arpeggiated game-like runs, and sparkling chord stabs.",
+   "mood": [
+    "Energetic",
+    "Playful",
+    "Nostalgic",
+    "Romantic"
+   ]
+  },
+  {
+   "type": "lyrics",
+   "official": true,
+   "language": "english",
+   "text": "[Intro - Immediate Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Verse 1]\nGreen light, go, we on a mission\nHeart in overdrive, no hesitation\nSpin through the night with you\nEverything feels brand new\n\nYou got me moving at the speed of you\nNo checkpoints, we don’t save and quit\nJust keep running through the city lights\nYou and me, yeah, we about to win\n\n[Pre-Hook]\nLoops and turns, we don’t hit the brakes\nSky so blue, no room for mistakes\nIf you with me, then we going all the way\nNo time to waste, it’s our day\n\n[Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Post-Hook]\nRing-ring, heart light\nLevel up all night\nSpring bounce, take flight\nYou and me, we feel right\n\n[Verse 2]\nFrom the block to the boardwalk lights\nWe shine together, everything’s right\nBounce on springs, we rise so high\nNothing can stop us, we touch the sky\n\nYou’re my boost, I’m your invincible\nGolden love, yeah, we collect it\nToo fast, too smooth, they can’t catch us\nYou know how we run it\n\n[Bridge - Dance Breakdown]\nDum da da da dum dum\nMove like that, don’t slow\nDum da da da dum dum\nBaby, let the whole night glow\n\nLevel up, level up\nWe go fast, fast enough\nLevel up, level up\nI could be the one you want\n\n[Final Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Outro]\nGotta go fast\nWith you\nNew level unlocked"
+  },
+  {
+   "type": "world",
+   "art": [
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/fast-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/level-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/golden-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/keep-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/mission-1.webp",
+    "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/fast-enough/gallery/sky-1.webp"
+   ],
+   "caption": "A neon-lit city chase blending New Jack Swing beats with arpeggiated game runs for a high-speed futuristic romance.",
+   "themes": [
+    "Futuristic Romance",
+    "Gaming Nostalgia",
+    "High-Speed Pursuit",
+    "Unstoppable Love"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "Smooth confident male R&B lead with catchy harmonies, flirty swagger, and danceable hip-hop cadence.",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Sings smooth confidence over catchy harmonies"
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Adds layers of harmony to the main melody"
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without missing downbeats"
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Bounces off crisp snares and sparkling stabs"
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Grooves with funky lines that drive the beat"
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Leads bright FM runs through futuristic soundscapes"
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Weaves ambient textures into the mix seamlessly"
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Adds subtle licks to support the main groove"
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Plays arpeggiated runs like a game soundtrack"
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 3,
+   "wordFx": 6,
+   "stems": 9
+  },
+  {
+   "type": "map",
+   "duration": 145,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "CURIOUS START",
+     "start": 2,
+     "end": 20,
+     "intensity": 0.85,
+     "emotion": "Curious and Anticipatory",
+     "boss": false
+    },
+    {
+     "section": "Verse 1",
+     "name": "MISSION MODE",
+     "start": 20,
+     "end": 38,
+     "intensity": 0.7,
+     "emotion": "Focused and Accelerating",
+     "boss": true
+    },
+    {
+     "section": "Pre-Hook",
+     "name": "ELECTRIC URGENCY",
+     "start": 38,
+     "end": 46,
+     "intensity": 0.86,
+     "emotion": "Urgent and Electric",
+     "boss": false
+    },
+    {
+     "section": "Hook",
+     "name": "TRIUMPHANT RHYTHM",
+     "start": 46,
+     "end": 96,
+     "intensity": 0.76,
+     "emotion": "Triumphant and Euphoric",
+     "boss": false
+    },
+    {
+     "section": "Verse 2",
+     "name": "SMOOTH CONFIDENCE",
+     "start": 96,
+     "end": 105,
+     "intensity": 0.3,
+     "emotion": "Smooth and Confident",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "EXPLOSIVE RELEASE",
+     "start": 105,
+     "end": 108,
+     "intensity": 0.28,
+     "emotion": "Explosive Release",
+     "boss": false
+    },
+    {
+     "section": "Final Hook",
+     "name": "JOYFUL VICTORY",
+     "start": 108,
+     "end": 145,
+     "intensity": 0.25,
+     "emotion": "Victorious and Joyful",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 108,
+   "key": "A#",
+   "mode": "minor",
+   "camelot": "3A",
+   "duration": 144.6,
+   "energy": "high",
+   "dynamicsDb": 10.8,
+   "brightness": 3715.8,
+   "officialLyrics": true,
+   "generatedAt": "2026-07-09T18:05:32.236Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/fast-enough",
+   "bookletNo": "19A"
+  }
+ ]
+}

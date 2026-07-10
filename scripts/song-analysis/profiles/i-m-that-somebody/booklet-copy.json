@@ -1,0 +1,25 @@
+{
+ "tagline": "Be the one they've been waiting for.",
+ "liner": "Slide into this glossy late-90s club track where confidence meets chiptune nostalgia. At 96 BPM, smooth male vocals glide over sparse syncopated drums and a rubbery bassline that feels as alive as a living room console from Y2K. The journey begins with playful mystery in the intro, moves through observant caution before exploding into unwavering assurance during the hook. Here, secrets are kept close while bright FM synth riffs evoke classic blue-sky video game worlds. It is an anthem of romantic stability where you reject neediness to embrace the thrill of now. Keep it locked and quiet as we navigate flirty duality until reaching devoted commitment in the bridge.",
+ "worldCaption": "A neon-lit R&B arcade from 1998 featuring rubbery bass, off-grid clicks, and bright FM synth riffs that turn a love song into an interactive",
+ "bios": {
+  "lead": "Slides smoothly over staccato beats with intimate whispered replies.",
+  "back": "Layers harmonies to create depth without stealing the spotlight.",
+  "drums": "Keeps the floor shaking with off-grid percussion clicks.",
+  "perc": "Adds subtle texture between downbeats like a secret heartbeat.",
+  "bass": "Grooves rubbery and deep, anchoring every playful moment in place.",
+  "synth": "Casts bright FM riffs that feel like classic blue-sky game music.",
+  "other": "Weaves atmospheric noise to keep the futuristic mood alive.",
+  "keys": "Plays gentle chords under smooth vocals for a warm finish."
+ },
+ "levels": {
+  "Intro": "MYSTERY STARTUP",
+  "Verse 1": "CAUTIOUS OBSERVATION",
+  "Pre-Chorus": "PROTECTIVE LOCKDOWN",
+  "Hook": "UNWAVERING ASSURANCE",
+  "Post-Hook": "DEVOTION CHOPPED",
+  "Verse 2": "FLIRTY DUALITY",
+  "Pre-Chorus 2": "PLAYFUL REBELLION",
+  "Bridge": "DEVOTED COMMITMENT"
+ }
+}

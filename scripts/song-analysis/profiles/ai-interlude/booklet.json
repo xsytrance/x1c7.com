@@ -1,0 +1,186 @@
+{
+ "v": 1,
+ "id": "ai-interlude",
+ "generatedAt": "2026-07-09T17:58:04.661Z",
+ "pages": [
+  {
+   "type": "cover",
+   "title": "AI Interlude",
+   "tagline": "Step into the silence between signals.",
+   "genre": "Electronic",
+   "bookletNo": "CC8"
+  },
+  {
+   "type": "read",
+   "body": "Close your eyes and drift through this digital void where sound becomes a place to visit rather than just hear. 'AI Interlude' is not merely music; it is an invitation to wander alone within a vast, glowing architecture of thought. Here, every synth swell feels like a memory retrieved from the cloud, while subtle brass whispers offer comfort in the quietest corners of your mind. This track does not demand attention but rewards stillness with layers of atmospheric depth that expand around you like fog on city glass. It is a journey into futuristic isolation where connection happens through shared silence and minimalist textures. Let the driving beat carry you forward without rushing, allowing space for introspection to bloom naturally in the gaps between notes.",
+   "styleSentence": "A mid-tempo (129 BPM) F# major track built on a driving yet spacious electronic beat with layered synth pads and subtle brass/strings swells that create an immersive, futuristic atmosphere.",
+   "mood": [
+    "ethereal, introspective, minimalist, atmospheric"
+   ]
+  },
+  {
+   "type": "world",
+   "art": [],
+   "caption": "AN INSTRUMENTAL TRANSMISSION — THE WORLD SPEAKS FOR ITSELF",
+   "themes": [
+    "Digital Isolation",
+    "Introspective Silence",
+    "Futuristic Atmosphere",
+    "Minimalist Connection"
+   ]
+  },
+  {
+   "type": "band",
+   "approx": false,
+   "vocalStyle": "breathy whisper",
+   "members": [
+    {
+     "stem": "lead",
+     "name": "LEAD VOX",
+     "bio": "Cuts through static with breathy clarity."
+    },
+    {
+     "stem": "back",
+     "name": "BACKING VOX",
+     "bio": "Weaves warmth beneath the soloist's line."
+    },
+    {
+     "stem": "drums",
+     "name": "DRUMS",
+     "bio": "Keeps the floor shaking without rushing."
+    },
+    {
+     "stem": "perc",
+     "name": "PERCUSSION",
+     "bio": "Taps out rhythmic patterns from thin air."
+    },
+    {
+     "stem": "bass",
+     "name": "BASS",
+     "bio": "Glides deep underfoot like liquid night."
+    },
+    {
+     "stem": "synth",
+     "name": "SYNTH",
+     "bio": "Paints wide skies with soft, glowing pads."
+    },
+    {
+     "stem": "other",
+     "name": "TEXTURES",
+     "bio": "Dusts the scene in shimmering ambient details."
+    },
+    {
+     "stem": "guitar",
+     "name": "GUITAR",
+     "bio": "Plucks sparse notes to bridge old and new."
+    },
+    {
+     "stem": "keys",
+     "name": "KEYS",
+     "bio": "Buries melodic secrets inside warm harmonies."
+    },
+    {
+     "stem": "strings",
+     "name": "STRINGS",
+     "bio": "Swells gently like breath on cold glass."
+    },
+    {
+     "stem": "woodwinds",
+     "name": "WOODWINDS",
+     "bio": "Whispers soft stories from the digital ether."
+    },
+    {
+     "stem": "brass",
+     "name": "BRASS",
+     "bio": "Adds hopeful glimmers to quiet moments."
+    }
+   ]
+  },
+  {
+   "type": "howto",
+   "performs": true,
+   "dynamicActs": 1,
+   "wordFx": 4,
+   "stems": 12
+  },
+  {
+   "type": "map",
+   "duration": 73,
+   "levels": [
+    {
+     "section": "Intro",
+     "name": "ANTICIPATORY VOID",
+     "start": 0,
+     "end": 60,
+     "intensity": 0.76,
+     "emotion": "Anticipatory Silence",
+     "boss": true
+    },
+    {
+     "section": "Verse 1",
+     "name": "QUIET WATCHING",
+     "start": 60,
+     "end": 60,
+     "intensity": 0.12,
+     "emotion": "Quiet Observation",
+     "boss": false
+    },
+    {
+     "section": "Chorus",
+     "name": "EXPANSIVE DREAMS",
+     "start": 60,
+     "end": 60,
+     "intensity": 0.21,
+     "emotion": "Expansive Wonder",
+     "boss": false
+    },
+    {
+     "section": "Bridge",
+     "name": "TENTATIVE LIGHT",
+     "start": 60,
+     "end": 60,
+     "intensity": 0.15,
+     "emotion": "Tentative Hope",
+     "boss": false
+    },
+    {
+     "section": "Drop",
+     "name": "ETHEREAL DRIVE",
+     "start": 60,
+     "end": 60,
+     "intensity": 0.3,
+     "emotion": "Ethereal Drive",
+     "boss": false
+    },
+    {
+     "section": "Outro",
+     "name": "FADE AWAY",
+     "start": 60,
+     "end": 73,
+     "intensity": 0.09,
+     "emotion": "Fading Echoes",
+     "boss": false
+    }
+   ]
+  },
+  {
+   "type": "specs",
+   "bpm": 129,
+   "key": "F#",
+   "mode": "major",
+   "camelot": "2B",
+   "duration": 73.23,
+   "energy": "medium",
+   "dynamicsDb": 21.6,
+   "brightness": 1273.4,
+   "officialLyrics": false,
+   "generatedAt": "2026-07-09T17:58:04.661Z"
+  },
+  {
+   "type": "back",
+   "line": "AGENOR · THE COLLECTION",
+   "url": "x1c7.com/t/ai-interlude",
+   "bookletNo": "CC8"
+  }
+ ]
+}

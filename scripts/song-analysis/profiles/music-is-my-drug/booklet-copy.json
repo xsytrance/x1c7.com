@@ -1,0 +1,23 @@
+{
+ "tagline": "Turn your gratitude into a hypnotic euphoric state.",
+ "liner": "This driving D-major progressive house anthem arrives at 129 BPM, carrying the weight of deep basslines and soaring synth leads that build from quiet reverence to explosive release. A minimalist electronic track where repetitive vocal affirmations transform internal reflection into collective joy. As intensity climbs through the verses and chorus, listeners surrender completely to a trance-like state of sonic connection. The journey culminates in peak euphoric abandon before fading back into an eternal rhythm of gratitude.",
+ "worldCaption": "A D-major world built on deep basslines where repetitive affirmations turn quiet reverence into explosive collective joy.",
+ "bios": {
+  "lead": "Cuts through the mix with a soaring, euphoric call.",
+  "back": "Echoes every word to build the hypnotic choir within.",
+  "drums": "Keeps the floor shaking without ever missing a downbeat.",
+  "perc": "Adds subtle texture that guides the rhythmic heartbeat forward.",
+  "bass": "Anchors the entire sonic structure with deep, resonant weight.",
+  "synth": "Paints wide arcs of light to lift spirits into trance.",
+  "other": "Weaves quiet dust and shimmer across every open space.",
+  "guitar": "Adds rare warmth that softens the digital edge slightly."
+ },
+ "levels": {
+  "Intro": "QUIET REVERENCE",
+  "Verse 1": "INTERNAL RISE",
+  "Chorus": "COLLECTIVE JOY",
+  "Bridge": "SONIC SURRENDER",
+  "Drop": "EUPHORIC",
+  "Outro": "ETERNAL RHYTHM"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "tagline": "Fight your limits. Don't quit right now.",
+ "liner": "This gritty hip-hop track captures the raw internal struggle of a dedicated lifter fighting exhaustion and negative self-talk in the gym. At roughly 96 BPM, it features pounding kicks and dirty basslines driving an aggressive male vocal delivery focused on endurance without melodic hooks. The journey portrays discipline not as an act for others but as a solitary war against one's own limiting beliefs. From tense anticipation to cathartic release, every bar screams that motivation is secondary to the ink in your logbook. Whether facing stiff joints or heavy plates questioning you, this track validates the physiology of burn and lock. It rejects excuses entirely, transforming repetition into proof of progress while silencing the inner critic with relentless drive.",
+ "worldCaption": "A solitary war against self-doubt; gritty drums pound a path through sweat, burning lungs, and fading determination in a neon-lit gym sanctu",
+ "bios": {
+  "lead": "Drives the relentless cadence forward.",
+  "back": "Layers depth behind every aggressive bar.",
+  "drums": "Keeps the floor shaking hard.",
+  "perc": "Adds sharp hits for extra grit.",
+  "bass": "Pounds low to fuel internal pressure.",
+  "synth": "Weaves tension into every dirty note.",
+  "other": "Textures add raw, unpolished atmosphere."
+ },
+ "levels": {
+  "Intro": "TENSE ANTICIPATION",
+  "Verse 1": "CONTROLLED AGGRESSION",
+  "Chorus": "OVERWHELMING PRESSURE",
+  "Bridge 1": "MEDITATIVE FOCUS",
+  "Verse 2": "RELENTLESS DRIVE",
+  "Chorus 2": "SUSTAINED INTENSITY",
+  "Bridge 2": "DEFIANT RESILIENCE",
+  "Drop": "CATHARTIC RELEASE",
+  "Outro": "FAADING DETERMINATION"
+ }
+}
