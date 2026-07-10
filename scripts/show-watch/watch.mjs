@@ -64,8 +64,15 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function openShow(page, track) {
   await page.goto(`${BASE}/music`, { waitUntil: "domcontentloaded", timeout: 30000 });
-  const spine = page.locator(`[aria-label^="${track.title.replace(/"/g, '\\"')} —"]`).first();
-  await spine.waitFor({ timeout: 20000 });
+  // The collection prettifies some DB titles (e.g. "A / B" renders as "A: B"),
+  // so try each candidate prefix before giving up.
+  const candidates = [...new Set([track.title, track.title.replace(/ \/ /g, ": ")])];
+  let spine = null;
+  for (const t of candidates) {
+    const loc = page.locator(`[aria-label^="${t.replace(/"/g, '\\"')} —"]`).first();
+    if (await loc.waitFor({ timeout: spine === null && candidates.length > 1 ? 8000 : 20000 }).then(() => true).catch(() => false)) { spine = loc; break; }
+  }
+  if (!spine) throw new Error(`no card matched title candidates: ${candidates.join(" | ")}`);
   const stage = page.locator(".kinetic-stage").first();
   // Click until the takeover mounts: one click plays under a touch UA, two on
   // desktop (arm → play). Never force a click once the overlay is up.
