@@ -7,6 +7,38 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-09 — THE BOOKLET: 54/54 inserts published
+
+CD liner notes × game manual, one per collector edition (plan:
+[`BOOKLET.md`](./BOOKLET.md)). Shipped in one evening session:
+
+**Changes:**
+1. `scripts/booklet/build-booklet.mjs` — per-song insert builder: facts from
+   `profile.json`, world art curated from the planet gallery (keyword buckets
+   first), qwen3.5 writes tagline/liner/band-bios/level-names only. Copy is
+   coverage-scored across two attempts, gaps filled from house bios, cached at
+   `profiles/<id>/booklet-copy.json` (dynamic-plus no-clobber law). Publishes
+   `booklet.json` → R2 `planets/<id>/` via the analyzer's rclone path.
+2. `scripts/booklet/batch-booklets.mjs` — resume-safe catalog runner
+   (mirror of batch-dossiers): R2 HEAD skip, serial, journaled.
+3. `src/lib/booklet.ts` + `src/components/Booklet.tsx` — the flipbook:
+   📖 button on `/t` pages (renders only where booklet.json exists — zero
+   deploys per booklet), page-turn spring, swipe/arrow-keys, lyrics
+   auto-paginated, instrumentals get a second world spread instead.
+   Types deliberately outside `planet.ts` (not in the engine-sync surface).
+4. Also this session: /music got the Suno gratitude box moved above the fold
+   (non-affiliation bolded) + a Kinetica explainer section with links.
+
+**Batch**: 49 clean on the first pass (~9s/song, qwen3.5 warm); 4 crashes
+were unnamed sections hitting the copy validator — normalized
+(`Section N` fallback) and rebuilt; final 54/54 published.
+
+**Verified:** `tsc` + `next build` green; specimen + 4 fixed tracks + one
+instrumental + one Spanish track fetched from R2 and content-checked;
+54/54 HEAD 200; live bundle on x1c7.com serves the button.
+
+---
+
 ## 2026-07-07 — Phase 2.4 SHIPPED: vertical/social frames (kinetica) + engine fix
 
 **Goal:** the roadmap's ★ "biggest single win" — a 9:16/1:1 canvas so Suno
