@@ -294,16 +294,43 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const phrase = pass >= 3 && mode === "phrase";
   const focusMode = pass >= 3 && (mode === "focus" || mode === "focus+"); // one clean word at a time
   const focusFx = pass >= 3 && mode === "focus+";                          // …with an effect on the way out
+  // Word indices that BEGIN a lyric line. Exact stamp-matching broke the day
+  // The Alignment shipped measured word times (a stamp of [00:06.00] vs a word
+  // at 6.02s = zero line breaks = the whole song rendered as one "phrase").
+  // Each LRC stamp now lands on the nearest word onset; songs whose stamps are
+  // missing or hopeless fall back to breath-gap segmentation, so phrase mode
+  // always reads as sentences — never a wall.
+  const phraseStartIdx = useMemo(() => {
+    const starts = new Set<number>();
+    if (!words.length) return starts;
+    const stamps = [...lineStarts].map((c) => c / 100).sort((a, b) => a - b);
+    let i = 0;
+    for (const t of stamps) {
+      while (i < words.length - 1 && words[i + 1].t <= t) i++;
+      const j = i < words.length - 1 && Math.abs(words[i + 1].t - t) < Math.abs(words[i].t - t) ? i + 1 : i;
+      if (Math.abs(words[j].t - t) <= 0.6) starts.add(j);
+    }
+    starts.delete(0);
+    if (starts.size < Math.max(2, Math.floor(words.length / 40))) {
+      starts.clear();
+      let len = 1;
+      for (let k = 1; k < words.length; k++, len++) {
+        if (words[k].t - words[k - 1].t > 1.05 || len >= 12) { starts.add(k); len = 0; }
+      }
+    }
+    starts.add(0);
+    return starts;
+  }, [words, lineStarts]);
   // Line ranges (for phrase mode): consecutive word-index spans per lyric line.
   const lineRanges = useMemo(() => {
     const ranges: { s: number; e: number }[] = [];
     let s = 0;
     for (let i = 1; i < words.length; i++) {
-      if (lineStarts.has(Math.round(words[i].t * 100))) { ranges.push({ s, e: i - 1 }); s = i; }
+      if (phraseStartIdx.has(i)) { ranges.push({ s, e: i - 1 }); s = i; }
     }
     if (words.length) ranges.push({ s, e: words.length - 1 });
     return ranges;
-  }, [words, lineStarts]);
+  }, [words, phraseStartIdx]);
 
   // ── STUTTER RUNS ── when the vocal repeats one word over and over
   // ("push-push-push", "me me me", "on-on-on"), the engine catches the run so
@@ -940,7 +967,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (i >= 0) {
           const w = clean(words[i].w).toLowerCase();
           const own = pooledArt(w, art?.[w] ?? null);
-          const isFinal = words[i + 1] ? lineStarts.has(Math.round(words[i + 1].t * 100)) : true;
+          const isFinal = words[i + 1] ? phraseStartIdx.has(i + 1) : true;
           const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
           if (own) requestArt(pickArt(own));
           else if (pass >= 2) {
@@ -1170,7 +1197,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, lineStarts, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -1226,7 +1253,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     : null;
   // Line-final: the word that CLOSES a lyric line — it owns the stage a beat
   // longer, so it gets extra size, glow, and the backdrop leans in.
-  const final = idx >= 0 && (words[idx + 1] ? lineStarts.has(Math.round(words[idx + 1].t * 100)) : true);
+  const final = idx >= 0 && (words[idx + 1] ? phraseStartIdx.has(idx + 1) : true);
   // Held: a long sung note. The word itself performs the hold — it swells over
   // the note's duration and breathes with the live bass (--beat) underneath.
   const held = pass >= 2 && idx >= 0 && airtime >= 1.3 && !burns;
