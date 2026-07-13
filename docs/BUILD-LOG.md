@@ -7,6 +7,50 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 — The great recovery · phrase-mode alignment fix · Kinetica goes demo-first
+
+Prime was OS-reinstalled (~07-12); this session rebuilt everything the wipe
+took, then shipped a real engine fix and the Kinetica demo push.
+
+**Recovery (ops — see OPERATIONS.md for the serving layout):**
+- Prime re-registered on the tailnet: `100.110.224.126` → **`100.96.211.44`**.
+  Planet Studio app v0.5.1 repointed (+ flush galaxy grid rows), OTA server
+  and `x1c7.service` (:7272) revived as systemd user units, `~/x1c7.com`
+  symlinked to the repo's new home at `~/Hermes/x1c7.com`.
+- Secrets: Supabase service-role key restored (rotated — the old one leaked
+  into recovery dumps); the R2 token was dead and was re-minted, backed up to
+  x1c7-dev. Lesson: a tailscale IP and API tokens survive reboots, not
+  reinstalls.
+- **Collector manifest rebuilt from live data**: `manifest.json`/`tracks.json`
+  (gitignored) died with the old disk, no backup existed. Reconstructed from
+  DB rows + R2 listing + the covers artifact's curated lang/geo: 67/69
+  coverFiles matched (the 2 misses are the /private/ covers-of-covers),
+  bpm/runtime/peaks re-measured from audio. Hand-curated palette pins/
+  series/explicit flags were unrecoverable — engine defaults apply on future
+  re-renders; re-pin via Cover Lab. Covers API verified: 69 covers, 64
+  printed, 18 palettes.
+- Takedowns: `music-is-my-drug` + `one-more-breath-back-to-myself` hidden
+  (broken timings, 20/36 words — awaiting stems re-alignment) in DB + the
+  static first-paint list. Rooklyn Mix stays.
+
+**Engine fix (synced to kinetica):**
+- **Phrase mode survives The Alignment.** Line grouping matched LRC stamps to
+  word times exactly; Tier A measured timings drift a few hundred ms, so
+  aligned songs lost every line break → the whole song rendered as ONE
+  "phrase" (mi-gente matched 1/81 lines). `phraseStartIdx` now lands each
+  stamp on the nearest word onset (±0.6s); songs with no usable stamps
+  segment on breath gaps (>1.05s / 12 words). Line-final emphasis rides the
+  same set. Verified live on both sites, both fallback paths.
+
+**Kinetica demo push (see kinetica's own BUILD-LOG for detail):**
+- The no-install demo now performs a **random x1c7 catalog song** (Supabase
+  anon REST + public R2; 40+ timed words required — near-instrumentals
+  excluded) and is the landing hero. DYNAMIC default, bottom transport
+  (⏭ = another song), hover tooltips + auto-opening coach, landing rebuilt
+  with the Suno gratitude letter / Pro-stems CTA / only-the-beginning teaser.
+
+---
+
 ## 2026-07-10 — DYNAMIC+ v2 (reactor/stem-free) · deck default · the art backfill
 
 Owner's call: "I don't like dynamic+ — back to phase 5, new phase 6 pass without
