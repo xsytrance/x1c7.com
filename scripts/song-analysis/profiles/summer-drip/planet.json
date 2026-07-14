@@ -3,88 +3,132 @@
     "id": "summer-drip",
     "planet": {
       "analysis": {
-        "summary": "A chopped-and-screwed anthem celebrating slow-motion summer confidence and high-class style, where the 'drip' is defined by glowing skin, luxury fits, and a cool detachment from thirsty admirers.",
-        "overallMood": "sultry",
+        "summary": "A confident and playful celebration of summer nights, self-assurance, and luxury, wrapped in a slow, chopped-and-screwed Southern Hip-Hop track that blends sultry vibes with tech-inspired bragging and smooth movements.",
+        "overallMood": "confident, sultry, playful",
         "themes": [
-          "Slow-motion confidence",
-          "Luxury streetwear aesthetic",
-          "Emotional detachment from admirers",
-          "Southern summer atmosphere",
-          "High-class game mentality"
+          "summer nights",
+          "luxury and tech",
+          "confidence and allure",
+          "sultry movement",
+          "late-night vibes",
+          "self-assured femininity"
         ],
         "palette": [
-          "#FFD700",
-          "#C9A45E",
-          "#1F2833",
-          "#6B8E23"
+          "#2E2E2E",
+          "#D4AF37",
+          "#5E5E5E",
+          "#8C6C4C"
         ],
         "sections": [
           {
             "name": "Intro",
-            "emotion": "anticipatory haze",
+            "emotion": "confident",
             "intensity": 0.4,
-            "colorHintHex": "#FFD700",
-            "start": 0.2
+            "colorHint": "#d4af37",
+            "start": 0.22
           },
           {
-            "name": "Chorus",
-            "emotion": "sultry confidence",
-            "intensity": 0.85,
-            "colorHintHex": "#C9A45E",
-            "start": 15.26
+            "name": "Ad-Libs",
+            "emotion": "playful",
+            "intensity": 0.3,
+            "colorHint": "#5e5e5e",
+            "start": 7.64
+          },
+          {
+            "name": "Hook",
+            "emotion": "sultry",
+            "intensity": 0.6,
+            "colorHint": "#8c6c4c",
+            "start": 8.84
           },
           {
             "name": "Verse 1",
-            "emotion": "regal poise",
-            "intensity": 0.7,
-            "colorHintHex": "#FFD700",
-            "start": 49.69
+            "emotion": "confident",
+            "intensity": 0.5,
+            "colorHint": "#2e2e2e",
+            "start": 49.71
           },
           {
-            "name": "Bridge",
-            "emotion": "cool detachment",
-            "intensity": 0.6,
-            "colorHintHex": "#1F2833",
-            "start": 125.9
+            "name": "Hook - Chopped",
+            "emotion": "mysterious",
+            "intensity": 0.5,
+            "colorHint": "#5e5e5e",
+            "start": 125.92
           },
           {
             "name": "Verse 2",
-            "emotion": "playful arrogance",
-            "intensity": 0.75,
-            "colorHintHex": "#FFD700",
-            "start": 148.7
+            "emotion": "playful",
+            "intensity": 0.4,
+            "colorHint": "#d4af37",
+            "start": 130.64
+          },
+          {
+            "name": "Bridge",
+            "emotion": "calm",
+            "intensity": 0.3,
+            "colorHint": "#2e2e2e",
+            "start": 154.74
+          },
+          {
+            "name": "Drop",
+            "emotion": "intense",
+            "intensity": 0.7,
+            "colorHint": "#8c6c4c",
+            "start": 209.84
+          },
+          {
+            "name": "Outro",
+            "emotion": "sultry",
+            "intensity": 0.6,
+            "colorHint": "#5e5e5e",
+            "start": 212.02
           }
         ],
         "keywords": [
           {
-            "word": "sunshine",
-            "emotion": "warmth",
-            "imageryPrompt": "Golden hour sunlight filtering through palm fronds, illuminating glowing skin and shimmering fabric textures."
-          },
-          {
             "word": "drip",
-            "emotion": "luxury pride",
-            "imageryPrompt": "Close up of a high-end gold chain resting on smooth denim shorts with intricate stitching details visible in macro shot."
+            "emotion": "confident",
+            "imageryPrompt": "A glowing neon sign reflecting off a sleek black car, casting a long shadow under the moonlight."
           },
           {
-            "word": "slow",
-            "emotion": "relaxed patience",
-            "imageryPrompt": "Time-lapse effect showing dust motes floating lazily in shafts of light, capturing a suspended moment of stillness."
+            "word": "hips",
+            "emotion": "sultry",
+            "imageryPrompt": "A woman in a flowing dress swaying slowly under a flickering streetlamp, her silhouette dancing with the wind."
+          },
+          {
+            "word": "sun",
+            "emotion": "playful",
+            "imageryPrompt": "A golden sun peeking through the trees, casting dappled light on a woman walking barefoot through a grassy field."
+          },
+          {
+            "word": "cold",
+            "emotion": "calm",
+            "imageryPrompt": "A still lake reflecting a calm, starry night sky, with a lone figure standing at the water's edge."
           },
           {
             "word": "flame",
-            "emotion": "passionate intensity",
-            "imageryPrompt": "Subtle orange and red ember glow reflecting off dark skin against the backdrop of cool blue twilight shadows."
+            "emotion": "intense",
+            "imageryPrompt": "A roaring fire in a darkened room, with flickering shadows dancing on the walls as someone stands at its center."
           },
           {
-            "word": "thirsty",
-            "emotion": "dismissive disdain",
-            "imageryPrompt": "Silhouettes of wide-eyed figures reaching out towards a central figure who stands still and unbothered in golden light."
+            "word": "class",
+            "emotion": "confident",
+            "imageryPrompt": "A woman in an elegant evening gown standing confidently in front of a mirror, her reflection glowing with self-assurance."
           },
           {
-            "word": "midnight",
-            "emotion": "mysterious allure",
-            "imageryPrompt": "Deep indigo night sky with street lamps casting long, dramatic shadows on wet pavement reflecting neon signs."
+            "word": "timing",
+            "emotion": "playful",
+            "imageryPrompt": "A clock face with glowing hands, surrounded by floating notes and a dancer mid-twirl, perfectly in sync with the beat."
+          },
+          {
+            "word": "thick",
+            "emotion": "sultry",
+            "imageryPrompt": "A dark, rich perfume bottle resting on a velvet table, its scent lingering in the air as a candle flickers nearby."
+          },
+          {
+            "word": "mind",
+            "emotion": "calm",
+            "imageryPrompt": "A peaceful lake at dawn, with a single leaf floating on the surface and a calm, meditative figure sitting on the shore."
           }
         ]
       },

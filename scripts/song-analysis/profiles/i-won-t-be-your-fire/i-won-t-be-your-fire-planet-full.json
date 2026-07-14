@@ -1,97 +1,375 @@
 {
   "analysis": {
-    "summary": "A raw anthem about setting boundaries in a toxic relationship where love is intertwined with self-destruction and emotional volatility. The song transitions from intimate vulnerability to explosive rebellion as the narrator refuses to be the source of their partner's pain just because they desperately want them to feel something.",
-    "overallMood": "wounded, rebellious",
+    "summary": "The song is a raw and emotional declaration of self-respect and emotional boundaries in a toxic relationship, expressing the pain of loving someone who repeatedly causes harm, while refusing to be the source of their pain.",
+    "overallMood": "Cinematic, Heartbreaking",
     "themes": [
-      "Toxic dependency",
+      "Self-respect in a toxic relationship",
       "Emotional boundaries",
-      "Self-sacrifice vs. self-preservation",
-      "The illusion of love through pain"
+      "Sacrifice and restraint",
+      "Love without enablement",
+      "Inner conflict and strength"
     ],
     "palette": [
-      "#1a0b0e",
-      "#4a3c35",
-      "#d68f7a",
-      "#2d3b49"
+      "#1a1a1a",
+      "#330033",
+      "#5a005a",
+      "#7f007f"
     ],
     "sections": [
       {
-        "name": "Intro",
-        "emotion": "lonely anticipation, rain-soaked vulnerability",
-        "intensity": 0.43,
-        "colorHint": "#1a0b0e",
-        "start": 0.62
+        "sectionName": "Intro - Voicemail, Soft Female Voice",
+        "emotion": "Melancholic",
+        "intensity": 0.48,
+        "colorHint": "#1a1a1a",
+        "start": 0.64
       },
       {
-        "name": "Verse 1",
-        "emotion": "tense desperation, cracking under pressure",
-        "intensity": 0.84,
-        "colorHint": "#2d3b49",
-        "start": 32.82
+        "sectionName": "Instrumental Intro",
+        "emotion": "Tense",
+        "intensity": 0.85,
+        "colorHint": "#330033",
+        "start": 32.84
       },
       {
-        "name": "Chorus",
-        "emotion": "explosive realization and refusal to break again",
-        "intensity": 0.31,
-        "colorHint": "#d68f7a",
-        "start": 158.1
+        "sectionName": "Chorus - Female Lead",
+        "emotion": "Desperate",
+        "intensity": 0.27,
+        "colorHint": "#5a005a",
+        "start": 158.12
       },
       {
-        "name": "Post-Chorus",
-        "emotion": "confused exhaustion in the quiet aftermath",
-        "intensity": 0.2,
-        "colorHint": "#1a0b0e",
-        "start": 167.8
-      },
-      {
-        "name": "Drop",
-        "emotion": "cinematic release of held-back energy and resolve",
+        "sectionName": "Post-Chorus - Layered Vocals",
+        "emotion": "Haunting",
         "intensity": 0.28,
-        "colorHint": "#4a3c35",
-        "start": 172.04
+        "colorHint": "#330033",
+        "start": 167.82
       },
       {
-        "name": "Bridge",
-        "emotion": "heartbreakingly firm finality with a spark of hope",
-        "intensity": 0.23,
-        "colorHint": "#d68f7a",
-        "start": 178.14
+        "sectionName": "Verse 1 - Female Lead, Melodic",
+        "emotion": "Vulnerable",
+        "intensity": 0.13,
+        "colorHint": "#1a1a1a",
+        "start": 172.06
+      },
+      {
+        "sectionName": "Pre-Chorus - Female Lead",
+        "emotion": "Resolute",
+        "intensity": 0.18,
+        "colorHint": "#330033",
+        "start": 178.16
+      },
+      {
+        "sectionName": "Chorus - Female Lead, Bigger",
+        "emotion": "Empowering",
+        "intensity": 0.24,
+        "colorHint": "#5a005a",
+        "start": 232.54
+      },
+      {
+        "sectionName": "Post-Chorus - Male Ghost Vocal Behind Her",
+        "emotion": "Rebellious",
+        "intensity": 0.22,
+        "colorHint": "#7f007f",
+        "start": 236.18
+      },
+      {
+        "sectionName": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+        "emotion": "Fragile",
+        "intensity": 0.2,
+        "colorHint": "#5a005a",
+        "start": 275.2
       }
     ],
     "keywords": [
       {
-        "word": "fighting",
-        "emotion": "defensive exhaustion",
-        "imageryPrompt": "A lone figure in a dark alley shielding their chest, rain mixing with tears on cracked concrete."
+        "word": "fire",
+        "emotion": "Rebellious",
+        "imageryPrompt": "A flickering flame in the dark, defiant and unyielding, casting long shadows on a cold, empty room."
+      },
+      {
+        "word": "tired",
+        "emotion": "Exhausted",
+        "imageryPrompt": "A person slumped on a rain-soaked bench, eyes closed, the sound of distant thunder echoing in the silence."
+      },
+      {
+        "word": "bruise",
+        "emotion": "Painful",
+        "imageryPrompt": "A deep purple mark on skin, glowing faintly under the dim light of a flickering bulb."
+      },
+      {
+        "word": "ghost",
+        "emotion": "Haunting",
+        "imageryPrompt": "A faint, translucent figure standing in a hallway, watching silently as the lights flicker and die."
+      },
+      {
+        "word": "knife",
+        "emotion": "Destructive",
+        "imageryPrompt": "A silver blade glinting under moonlight, resting on a table with a red cloth, the air thick with tension."
+      },
+      {
+        "word": "light",
+        "emotion": "Hopeful",
+        "imageryPrompt": "A single beam of golden light cutting through a stormy night, illuminating a path through the darkness."
+      },
+      {
+        "word": "hurt",
+        "emotion": "Suffering",
+        "imageryPrompt": "A person clutching their chest, tears streaming down their face, as a storm rages outside."
+      },
+      {
+        "word": "love",
+        "emotion": "Bittersweet",
+        "imageryPrompt": "A couple standing in a rainstorm, arms wrapped around each other, eyes closed, whispering promises to the wind."
+      },
+      {
+        "word": "break",
+        "emotion": "Fragile",
+        "imageryPrompt": "A glass cup perched on the edge of a table, trembling slightly as a shadow passes by, the room silent and still."
       },
       {
         "word": "burn",
-        "emotion": "destructive attraction",
-        "imageryPrompt": "Blackened hands holding onto a dying embers that singes the skin instead of warming it."
+        "emotion": "pain, intensity, sacrifice",
+        "imageryPrompt": "a hand hovering over a lit match, the flame reflecting in the eyes of someone watching"
       },
       {
-        "word": "silence",
-        "emotion": "heavy awkwardness",
-        "imageryPrompt": "A vast, empty hallway with dust motes dancing in dim light where no one speaks for too long."
+        "word": "storm",
+        "emotion": "chaos, turmoil, emotional upheaval",
+        "imageryPrompt": "a dark sky filled with lightning, rain slashing across a windowpane"
       },
       {
-        "word": "thunder",
-        "emotion": "violent release",
-        "imageryPrompt": "Dark storm clouds cracking open above a city skyline as lightning flashes briefly illuminating shattered glass."
+        "word": "cold",
+        "emotion": "isolation, emotional distance, emptiness",
+        "imageryPrompt": "a silent room with a single light on, casting long shadows across the walls"
       },
       {
-        "word": "breaking",
-        "emotion": "shattering despair",
-        "imageryPrompt": "A porcelain heart in slow motion fracturing into jagged shards on a cold bathroom floor."
+        "word": "floor",
+        "emotion": "grounding, vulnerability, pain",
+        "imageryPrompt": "a wet floor reflecting a stormy sky, with a lone figure standing in the center"
       },
       {
-        "word": "wire",
-        "emotion": "tense restraint",
-        "imageryPrompt": "Fingers gripping frayed electrical wires wrapped tightly around knuckles, sparks jumping from the skin."
+        "word": "match",
+        "emotion": "ignition, destruction, choice",
+        "imageryPrompt": "a matchstick held in a trembling hand, flame flickering in the wind"
+      },
+      {
+        "word": "war",
+        "emotion": "conflict, struggle, emotional battle",
+        "imageryPrompt": "two figures standing on opposite sides of a battlefield, weapons raised"
+      },
+      {
+        "word": "pain",
+        "emotion": "suffering, endurance, emotional weight",
+        "imageryPrompt": "a hand clutching a heart-shaped locket, tears streaking down the face"
+      },
+      {
+        "word": "dark",
+        "emotion": "despair, uncertainty, emotional void",
+        "imageryPrompt": "a room swallowed by darkness, with only a faint glow from a distant window"
+      },
+      {
+        "word": "room",
+        "emotion": "isolation, containment, emotional space",
+        "imageryPrompt": "a small, dimly lit room with a single chair and a flickering lamp"
+      },
+      {
+        "word": "moon",
+        "emotion": "guidance, distance, emotional reflection",
+        "imageryPrompt": "a pale moon hanging over a stormy sea, casting silver light on the waves"
+      },
+      {
+        "word": "blade",
+        "emotion": "pain, sharpness, emotional cutting",
+        "imageryPrompt": "a silver blade resting on a table, reflecting the dim light of a single lamp"
+      },
+      {
+        "word": "down",
+        "emotion": "falling, despair, emotional collapse",
+        "imageryPrompt": "a figure kneeling in the rain, arms outstretched toward a distant light"
+      },
+      {
+        "word": "quiet",
+        "emotion": "stillness, tension, emotional silence",
+        "imageryPrompt": "a silent room with a faint hum in the air, the only sound the ticking of a clock"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song is a powerful assertion of self-worth and emotional independence, as the narrator refuses to be a crutch or a source of pain for someone who is emotionally unstable and destructive. It reflects the internal struggle of loving someone who constantly pulls the narrator back into cycles of hurt, while also expressing a quiet hope that the other person might one day find peace without needing the narrator to be their salvation.",
+      "sections": [
+        {
+          "name": "Intro - Voicemail, Soft Female Voice",
+          "interpretation": "The intro sets the tone of a relationship that has become a recurring cycle of pain and return.",
+          "keyLine": "but I can’t keep being the place you go when you wanna fall apart"
+        },
+        {
+          "name": "Chorus - Female Lead",
+          "interpretation": "A declaration of refusal to be the emotional fuel for someone else's turmoil.",
+          "keyLine": "I won’t be your fire just because you miss the burn"
+        },
+        {
+          "name": "Verse 1 - Female Lead, Melodic",
+          "interpretation": "The narrator is aware of the patterns of pain and the role she plays in them.",
+          "keyLine": "every time I answer I become what you can’t heal"
+        },
+        {
+          "name": "Pre-Chorus - Female Lead",
+          "interpretation": "The narrator is shifting from being a source of pain to a guardian of her own emotional boundaries.",
+          "keyLine": "If I love you at all I can’t be your fire"
+        },
+        {
+          "name": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+          "interpretation": "The male voice reveals the internal chaos and emotional dependency that drives the relationship.",
+          "keyLine": "I only feel close when you’re angry at me"
+        },
+        {
+          "name": "Bridge - Duet, Slow Build",
+          "interpretation": "A moment of vulnerability and mutual understanding between the two voices.",
+          "keyLine": "I’m saying no because I love you enough not to become another wound"
+        },
+        {
+          "name": "Breakdown - Half-Time, Big Guitars",
+          "interpretation": "A reflection on the complexity of love, memory, and the desire for emotional freedom.",
+          "keyLine": "I can love you and leave the room"
+        },
+        {
+          "name": "Final Chorus - Full Band, Both Voices",
+          "interpretation": "A unified and powerful resolution to the emotional conflict and a reaffirmation of self-respect.",
+          "keyLine": "but I won’t be your reason to keep breaking down"
+        }
+      ],
+      "keyLines": [
+        "I won’t be your fire just because you miss the burn",
+        "every time I answer I become what you can’t heal",
+        "If I love you at all I can’t be your fire",
+        "I only feel close when you’re angry at me",
+        "I’m saying no because I love you enough not to become another wound",
+        "I can love you and leave the room",
+        "but I won’t be your reason to keep breaking down"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "fire",
+          "emotion": "resistance, pain, destruction",
+          "imageryPrompt": "a flickering flame in a storm, casting long shadows on a rain-slicked pavement",
+          "weight": 0.95
+        },
+        {
+          "word": "burn",
+          "emotion": "pain, intensity, sacrifice",
+          "imageryPrompt": "a hand hovering over a lit match, the flame reflecting in the eyes of someone watching",
+          "weight": 0.9
+        },
+        {
+          "word": "storm",
+          "emotion": "chaos, turmoil, emotional upheaval",
+          "imageryPrompt": "a dark sky filled with lightning, rain slashing across a windowpane",
+          "weight": 0.85
+        },
+        {
+          "word": "cold",
+          "emotion": "isolation, emotional distance, emptiness",
+          "imageryPrompt": "a silent room with a single light on, casting long shadows across the walls",
+          "weight": 0.8
+        },
+        {
+          "word": "light",
+          "emotion": "hope, guidance, presence",
+          "imageryPrompt": "a soft glow from a single lamp in a dark room, illuminating the edges of a chair",
+          "weight": 0.8
+        },
+        {
+          "word": "floor",
+          "emotion": "grounding, vulnerability, pain",
+          "imageryPrompt": "a wet floor reflecting a stormy sky, with a lone figure standing in the center",
+          "weight": 0.75
+        },
+        {
+          "word": "ghost",
+          "emotion": "haunting, memory, presence",
+          "imageryPrompt": "a shadowy figure standing in a doorway, barely visible in the dim light",
+          "weight": 0.7
+        },
+        {
+          "word": "match",
+          "emotion": "ignition, destruction, choice",
+          "imageryPrompt": "a matchstick held in a trembling hand, flame flickering in the wind",
+          "weight": 0.7
+        },
+        {
+          "word": "war",
+          "emotion": "conflict, struggle, emotional battle",
+          "imageryPrompt": "two figures standing on opposite sides of a battlefield, weapons raised",
+          "weight": 0.7
+        },
+        {
+          "word": "pain",
+          "emotion": "suffering, endurance, emotional weight",
+          "imageryPrompt": "a hand clutching a heart-shaped locket, tears streaking down the face",
+          "weight": 0.7
+        },
+        {
+          "word": "dark",
+          "emotion": "despair, uncertainty, emotional void",
+          "imageryPrompt": "a room swallowed by darkness, with only a faint glow from a distant window",
+          "weight": 0.65
+        },
+        {
+          "word": "room",
+          "emotion": "isolation, containment, emotional space",
+          "imageryPrompt": "a small, dimly lit room with a single chair and a flickering lamp",
+          "weight": 0.6
+        },
+        {
+          "word": "love",
+          "emotion": "complexity, sacrifice, emotional depth",
+          "imageryPrompt": "two hands intertwined, one glowing with warmth, the other trembling",
+          "weight": 0.6
+        },
+        {
+          "word": "moon",
+          "emotion": "guidance, distance, emotional reflection",
+          "imageryPrompt": "a pale moon hanging over a stormy sea, casting silver light on the waves",
+          "weight": 0.6
+        },
+        {
+          "word": "blade",
+          "emotion": "pain, sharpness, emotional cutting",
+          "imageryPrompt": "a silver blade resting on a table, reflecting the dim light of a single lamp",
+          "weight": 0.6
+        },
+        {
+          "word": "knife",
+          "emotion": "pain, sharpness, emotional cutting",
+          "imageryPrompt": "a knife glinting in the dark, its edge catching the faintest light",
+          "weight": 0.6
+        },
+        {
+          "word": "light",
+          "emotion": "guidance, presence, hope",
+          "imageryPrompt": "a single light flickering in the dark, casting long shadows on the walls",
+          "weight": 0.6
+        },
+        {
+          "word": "break",
+          "emotion": "fragility, emotional collapse, fracture",
+          "imageryPrompt": "a glass shattering in slow motion, shards glinting in the dim light",
+          "weight": 0.6
+        },
+        {
+          "word": "down",
+          "emotion": "falling, despair, emotional collapse",
+          "imageryPrompt": "a figure kneeling in the rain, arms outstretched toward a distant light",
+          "weight": 0.6
+        },
+        {
+          "word": "quiet",
+          "emotion": "stillness, tension, emotional silence",
+          "imageryPrompt": "a silent room with a faint hum in the air, the only sound the ticking of a clock",
+          "weight": 0.6
+        }
+      ]
+    }
   },
   "styleHint": "Emo-rap pop-punk response anthem, 85 BPM half-time feel with 170 BPM double-time trap hats, dark minor key, huge viral hook, late-night toxic-love voicemail energy. Start intimate: rain ambience, muted electric guitar, distant phone buzz, soft wounded female vocal. Build into distorted guitars, punchy live snare, deep sub bass, glossy trap drums, stadium-size chorus, layered “no no no” gang vocals, male ghost vocal ad-libs in the background. Vocals should feel raw, cracked, melodic, desperate, and instantly singable; verses are vulnerable melodic rap, chorus is explosive pop-punk emo singalong. Dynamic structure: quiet intro, tense verse, pre-chorus lift, massive chorus, stripped bridge, final chorus with stacked harmonies. Theme: refusing to keep hurting someone you still love. Make it cinematic, heartbreaking, rebellious, catchy, modern, and replayable. Short viral singalong chorus, memorable one-line hook: “I won’t be your fire.” No cheesy theater, no happy pop, no over-rapping.",
   "assets": {},
-  "generatedAt": "2026-07-09T17:26:00.900Z"
+  "generatedAt": "2026-07-14T19:39:05.963Z"
 }

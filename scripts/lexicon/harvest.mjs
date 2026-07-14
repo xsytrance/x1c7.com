@@ -48,6 +48,7 @@ const STOPWORDS = new Set(
    "i you he she it we they me my your his her its our their this that these those " +
    "so if then than too very just not no yes do does did will would can could should " +
    "up down out over under again once here there all any some more most " +
+   "dont cant wont aint didnt doesnt isnt im its youre theyre weve ive gonna wanna gotta " +
    "el la los las un una y o de del en con por para que se su tu mi lo al").split(/\s+/),
 );
 

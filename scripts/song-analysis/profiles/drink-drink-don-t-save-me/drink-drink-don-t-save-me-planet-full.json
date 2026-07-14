@@ -1,121 +1,406 @@
 {
   "analysis": {
-    "summary": "A surreal and narcotic exploration of insomnia where the narrator rejects salvation to drown their pain in a hypnotic loop of drinking and dissociation.",
-    "overallMood": "Narcotic Insomnia",
+    "summary": "The song 'Drink Drink [Don’t Save Me]' by xsytrance explores themes of inner turmoil, self-destruction, and the struggle to cope with emotional pain through a hypnotic and eerie soundscape, blending hip-hop and R&B elements with a dreamlike, insomniac atmosphere.",
+    "overallMood": "Eerie, introspective, hypnotic",
     "themes": [
-      "Dissociation",
-      "Chronic Pain",
-      "Rejection of Rescue",
-      "Nightmare Fuel"
+      "Self-destruction",
+      "Emotional isolation",
+      "Insomnia and sleeplessness",
+      "Inner demons",
+      "Surreal dream-state",
+      "Narcotic escapism"
     ],
     "palette": [
-      "#0f0b15",
-      "#4a3b2e",
-      "#8c766d",
-      "#ffccaa"
+      "#1A1A1A",
+      "#2E0854",
+      "#4B0082",
+      "#3A043F"
     ],
     "sections": [
       {
-        "name": "Intro",
-        "emotion": "Desperate Entreaty",
-        "intensity": 0.79,
-        "colorHint": "#4a3b2e",
-        "start": 2.12
-      },
-      {
-        "name": "Verse 1",
-        "emotion": "Hypnotic Dissociation",
-        "intensity": 0.91,
-        "colorHint": "#8c766d",
-        "start": 11.06
-      },
-      {
-        "name": "Chorus",
-        "emotion": "Narcotic Numbness",
-        "intensity": 0.96,
-        "colorHint": "#2b1d3e",
-        "start": 26.2
-      },
-      {
-        "name": "Pre-Chorus",
-        "emotion": "Claustrophobic Surrealism",
+        "name": "Intro - Whispered Male",
+        "emotion": "Desperate",
         "intensity": 0.85,
-        "colorHint": "#2b1d3e",
-        "start": 60.76
+        "colorHint": "#2e0854",
+        "start": 2.14
       },
       {
-        "name": "Verse 1 (Continued)",
-        "emotion": "Fractured Denial",
-        "intensity": 0.6,
-        "colorHint": "#4a3b2e",
-        "start": 94.56
+        "name": "Female Vocal - Airy",
+        "emotion": "Mysterious",
+        "intensity": 0.77,
+        "colorHint": "#3a043f",
+        "start": 70.14
       },
       {
-        "name": "Bridge",
-        "emotion": "Exhausted Realization",
-        "intensity": 0.36,
-        "colorHint": "#8c766d",
-        "start": 145.94
+        "name": "Male Chant - High, Hypnotic",
+        "emotion": "Hypnotic",
+        "intensity": 0.71,
+        "colorHint": "#4b0082",
+        "start": 94.58
       },
       {
-        "name": "Drop",
-        "emotion": "Hypnotic Loop Collapse",
-        "intensity": 0.3,
-        "colorHint": "#ffccaa",
-        "start": 185.12
+        "name": "Beat Drops - Heavy 808",
+        "emotion": "Intense",
+        "intensity": 0.42,
+        "colorHint": "#1a1a1a",
+        "start": 137.4
       },
       {
-        "name": "Outro",
-        "emotion": "Fading Despair",
-        "intensity": 0.12,
-        "colorHint": "#0f0b15",
-        "start": 271.62
+        "name": "Hook - Male Chant",
+        "emotion": "Tormented",
+        "intensity": 0.34,
+        "colorHint": "#2e0854",
+        "start": 145.96
+      },
+      {
+        "name": "Ad-Libs - High, Warped",
+        "emotion": "Disoriented",
+        "intensity": 0.18,
+        "colorHint": "#3a043f",
+        "start": 185.14
+      },
+      {
+        "name": "Verse 1 - Melodic Rap/R&B",
+        "emotion": "Despairing",
+        "intensity": 0.18,
+        "colorHint": "#4b0082",
+        "start": 193.92
+      },
+      {
+        "name": "Pre-Hook - Female Background",
+        "emotion": "Surreal",
+        "intensity": 0.15,
+        "colorHint": "#2e0854",
+        "start": 271.64
+      },
+      {
+        "name": "Hook - Male Chant, Bigger",
+        "emotion": "Tormented",
+        "intensity": 0.22,
+        "colorHint": "#1a1a1a",
+        "start": 271.64
       }
     ],
     "keywords": [
       {
-        "word": "save",
-        "emotion": "Rejected Mercy",
-        "imageryPrompt": "A translucent hand reaching out from a dark void but being slapped away by a shadowy figure, floating debris in the air."
+        "word": "don't",
+        "emotion": "Desperate",
+        "imageryPrompt": "A lone figure standing in a dimly lit room, surrounded by flickering shadows and broken mirrors, whispering into the void as if pleading for release from unseen forces."
       },
       {
         "word": "train",
-        "emotion": "Mental Repetition",
-        "imageryPrompt": "An endless monorail track curving through a smoggy night sky with no destination visible, glowing faintly against black clouds."
+        "emotion": "Restless",
+        "imageryPrompt": "A ghostly train speeding through a tunnel, its lights flickering in time with a pounding bassline, surrounded by a foggy, dreamlike landscape."
       },
       {
-        "word": "bottle",
-        "emotion": "Narcotic Necessity",
-        "imageryPrompt": "A clear glass bottle reflecting the blue light of moonlight on a dusty wooden floor next to an overturned chair."
+        "word": "sorrow",
+        "emotion": "Melancholic",
+        "imageryPrompt": "A dimly lit room with a single glowing bottle on a nightstand, casting long shadows on the walls as a figure sits in silence, eyes closed, lost in thought."
       },
       {
-        "word": "pain",
-        "emotion": "Visceral Agony",
-        "imageryPrompt": "Glowing red veins pulsating rhythmically under pale skin, illuminating the darkness of a room with heavy shadows."
-      },
-      {
-        "word": "smoke",
-        "emotion": "Dissolving Reality",
-        "imageryPrompt": "Thick grey smoke swirling into shapes that look like faces and memories before vanishing instantly in mid-air."
-      },
-      {
-        "word": "drums",
-        "emotion": "Rhythmic Oppression",
-        "imageryPrompt": "Giant mechanical hammers striking a surface made of bone, sending shockwaves through the air that distort vision."
+        "word": "sleep",
+        "emotion": "Drowsy",
+        "imageryPrompt": "A person floating in a deep, dark ocean, surrounded by glowing jellyfish that pulse with a slow, hypnotic rhythm, the water thick and heavy with dreams."
       },
       {
         "word": "ghost",
-        "emotion": "Lonely Spirit",
-        "imageryPrompt": "A faint outline of a person walking alone down an empty hallway where walls bleed black liquid onto the floor."
+        "emotion": "Haunting",
+        "imageryPrompt": "A translucent figure drifting through a crumbling city at night, its form flickering in and out of view as if caught between two worlds."
       },
       {
-        "word": "shame",
-        "emotion": "Heavy Guilt",
-        "imageryPrompt": "A heavy chain made of smoke wrapped around a neck, dragging the figure forward into a mirror that shows nothing but darkness."
+        "word": "insomnia",
+        "emotion": "Tormented",
+        "imageryPrompt": "A person staring at the ceiling of a dark room, the clock ticking louder with each passing second, the walls closing in as if time itself is the enemy."
+      },
+      {
+        "word": "bottle",
+        "emotion": "Desperate",
+        "imageryPrompt": "A glowing bottle perched on a bedside table, its light casting eerie shadows across the room, the air thick with the scent of something both intoxicating and dangerous."
+      },
+      {
+        "word": "drink",
+        "emotion": "desperation",
+        "imageryPrompt": "A glowing bottle of alcohol on a dimly lit bedroom floor, surrounded by shadows and flickering lights"
+      },
+      {
+        "word": "save",
+        "emotion": "resistance",
+        "imageryPrompt": "A person standing in a dark room, arms outstretched, but no one is there to help"
+      },
+      {
+        "word": "ceiling",
+        "emotion": "disconnection",
+        "imageryPrompt": "A cracked ceiling above a bed, with light seeping through the cracks and casting shadows on the floor"
+      },
+      {
+        "word": "smoke",
+        "emotion": "numbness",
+        "imageryPrompt": "A thick cloud of smoke curling from a broken window, filling the room with a hazy, dreamlike atmosphere"
+      },
+      {
+        "word": "pain",
+        "emotion": "relentless",
+        "imageryPrompt": "A pulsing red light in the corner of a room, like a heartbeat, growing louder and louder"
+      },
+      {
+        "word": "light",
+        "emotion": "false hope",
+        "imageryPrompt": "A single flickering bulb hanging from the ceiling, casting long shadows across the floor"
+      },
+      {
+        "word": "storm",
+        "emotion": "chaos",
+        "imageryPrompt": "A swirling storm outside a window, with rain lashing against the glass like a thousand tiny hands"
+      },
+      {
+        "word": "floor",
+        "emotion": "descent",
+        "imageryPrompt": "A cracked and worn floor, with shadows pooling in the corners like spilled ink"
+      },
+      {
+        "word": "head",
+        "emotion": "pressure",
+        "imageryPrompt": "A person's head, surrounded by swirling colors and static, like a broken television"
+      },
+      {
+        "word": "soul",
+        "emotion": "fragmented",
+        "imageryPrompt": "A shattered mirror reflecting countless versions of the same person, each one slightly different"
+      },
+      {
+        "word": "night",
+        "emotion": "endless",
+        "imageryPrompt": "A moonless night, with no stars in the sky and the horizon stretching endlessly into darkness"
+      },
+      {
+        "word": "drum",
+        "emotion": "rhythm of pain",
+        "imageryPrompt": "A massive, ancient drum, its surface cracked and worn, pulsing with a slow, relentless beat"
+      },
+      {
+        "word": "vanish",
+        "emotion": "fleeting",
+        "imageryPrompt": "A shadow flickering in and out of existence, like a mirage in the desert"
+      },
+      {
+        "word": "chain",
+        "emotion": "entrapment",
+        "imageryPrompt": "A rusted chain wrapped around the wrist, with each link heavy and cold"
+      },
+      {
+        "word": "fade",
+        "emotion": "disappearance",
+        "imageryPrompt": "A person slowly dissolving into mist, leaving behind only the echo of their voice"
+      },
+      {
+        "word": "road",
+        "emotion": "uncertainty",
+        "imageryPrompt": "A winding road disappearing into the fog, with no clear destination in sight"
+      },
+      {
+        "word": "tab",
+        "emotion": "escape",
+        "imageryPrompt": "A single tab on a computer screen, glowing faintly in the dark, like a lifeline"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song is a haunting exploration of emotional numbness and the cyclical nature of self-destruction, where the protagonist is trapped in a loop of pain and avoidance, desperately seeking escape through alcohol and disconnection, while pleading not to be rescued from their own suffering.",
+      "sections": [
+        {
+          "name": "Intro - Whispered Male",
+          "interpretation": "A plea for autonomy in the face of helplessness.",
+          "keyLine": "Don’t save me"
+        },
+        {
+          "name": "Female Vocal - Airy",
+          "interpretation": "A surreal invitation to surrender to chaos.",
+          "keyLine": "Fall through the ceiling"
+        },
+        {
+          "name": "Male Chant - High, Hypnotic",
+          "interpretation": "A ritualistic repetition of escape.",
+          "keyLine": "Drink"
+        },
+        {
+          "name": "Hook - Male Chant",
+          "interpretation": "A confession of emotional evasion and isolation.",
+          "keyLine": "Put my sorrow in the light"
+        },
+        {
+          "name": "Verse 1 - Melodic Rap/R&B",
+          "interpretation": "A journey through inner demons and the illusion of peace.",
+          "keyLine": "I just need this buzz to vanish"
+        },
+        {
+          "name": "Pre-Hook - Female Background",
+          "interpretation": "A whisper of surrender and release.",
+          "keyLine": "Let go"
+        },
+        {
+          "name": "Verse 2 - Dark Soul Flow",
+          "interpretation": "A confrontation with shame and the futility of escape.",
+          "keyLine": "Every blessing got a bottle"
+        },
+        {
+          "name": "Breakdown - Stripped, Dreamy",
+          "interpretation": "A moment of fragile hope and release.",
+          "keyLine": "There’s a better road"
+        },
+        {
+          "name": "Build - Chant Layering",
+          "interpretation": "A crescendo of desperation and repetition.",
+          "keyLine": "Drink"
+        },
+        {
+          "name": "Final Hook - Full Energy",
+          "interpretation": "A final surrender to pain and numbness.",
+          "keyLine": "Pain keeps pounding in my head"
+        },
+        {
+          "name": "Outro - Fading Chant",
+          "interpretation": "A fading echo of self-destruction and isolation.",
+          "keyLine": "Don’t save me now"
+        }
+      ],
+      "keyLines": [
+        "Don’t save me",
+        "Drink, drink, drink, drink",
+        "I don’t wanna feel tonight",
+        "Put my sorrow in the light",
+        "Bottle glowing by my bed",
+        "Pain keeps pounding in my head",
+        "I been out with the ghosts again",
+        "I just need this buzz to vanish",
+        "Every blessing got a bottle",
+        "I’m under these drums",
+        "There’s a better road",
+        "Don’t save me now"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "drink",
+          "emotion": "desperation",
+          "imageryPrompt": "A glowing bottle of alcohol on a dimly lit bedroom floor, surrounded by shadows and flickering lights",
+          "weight": 0.95
+        },
+        {
+          "word": "save",
+          "emotion": "resistance",
+          "imageryPrompt": "A person standing in a dark room, arms outstretched, but no one is there to help",
+          "weight": 0.9
+        },
+        {
+          "word": "ghost",
+          "emotion": "haunting",
+          "imageryPrompt": "A translucent figure standing in a mirror, watching silently as the protagonist drinks",
+          "weight": 0.85
+        },
+        {
+          "word": "bottle",
+          "emotion": "isolation",
+          "imageryPrompt": "A single empty bottle on a table, surrounded by scattered pills and a dim lamp",
+          "weight": 0.85
+        },
+        {
+          "word": "ceiling",
+          "emotion": "disconnection",
+          "imageryPrompt": "A cracked ceiling above a bed, with light seeping through the cracks and casting shadows on the floor",
+          "weight": 0.8
+        },
+        {
+          "word": "smoke",
+          "emotion": "numbness",
+          "imageryPrompt": "A thick cloud of smoke curling from a broken window, filling the room with a hazy, dreamlike atmosphere",
+          "weight": 0.8
+        },
+        {
+          "word": "pain",
+          "emotion": "relentless",
+          "imageryPrompt": "A pulsing red light in the corner of a room, like a heartbeat, growing louder and louder",
+          "weight": 0.8
+        },
+        {
+          "word": "light",
+          "emotion": "false hope",
+          "imageryPrompt": "A single flickering bulb hanging from the ceiling, casting long shadows across the floor",
+          "weight": 0.75
+        },
+        {
+          "word": "sorrow",
+          "emotion": "weight",
+          "imageryPrompt": "A heavy, black cloak draped over a chair, slowly sinking into the floor",
+          "weight": 0.75
+        },
+        {
+          "word": "storm",
+          "emotion": "chaos",
+          "imageryPrompt": "A swirling storm outside a window, with rain lashing against the glass like a thousand tiny hands",
+          "weight": 0.7
+        },
+        {
+          "word": "floor",
+          "emotion": "descent",
+          "imageryPrompt": "A cracked and worn floor, with shadows pooling in the corners like spilled ink",
+          "weight": 0.7
+        },
+        {
+          "word": "head",
+          "emotion": "pressure",
+          "imageryPrompt": "A person's head, surrounded by swirling colors and static, like a broken television",
+          "weight": 0.7
+        },
+        {
+          "word": "soul",
+          "emotion": "fragmented",
+          "imageryPrompt": "A shattered mirror reflecting countless versions of the same person, each one slightly different",
+          "weight": 0.65
+        },
+        {
+          "word": "night",
+          "emotion": "endless",
+          "imageryPrompt": "A moonless night, with no stars in the sky and the horizon stretching endlessly into darkness",
+          "weight": 0.65
+        },
+        {
+          "word": "drum",
+          "emotion": "rhythm of pain",
+          "imageryPrompt": "A massive, ancient drum, its surface cracked and worn, pulsing with a slow, relentless beat",
+          "weight": 0.6
+        },
+        {
+          "word": "vanish",
+          "emotion": "fleeting",
+          "imageryPrompt": "A shadow flickering in and out of existence, like a mirage in the desert",
+          "weight": 0.6
+        },
+        {
+          "word": "chain",
+          "emotion": "entrapment",
+          "imageryPrompt": "A rusted chain wrapped around the wrist, with each link heavy and cold",
+          "weight": 0.6
+        },
+        {
+          "word": "fade",
+          "emotion": "disappearance",
+          "imageryPrompt": "A person slowly dissolving into mist, leaving behind only the echo of their voice",
+          "weight": 0.55
+        },
+        {
+          "word": "road",
+          "emotion": "uncertainty",
+          "imageryPrompt": "A winding road disappearing into the fog, with no clear destination in sight",
+          "weight": 0.55
+        },
+        {
+          "word": "tab",
+          "emotion": "escape",
+          "imageryPrompt": "A single tab on a computer screen, glowing faintly in the dark, like a lifeline",
+          "weight": 0.5
+        }
+      ]
+    }
   },
   "styleHint": "Dark hypnotic hip-hop and R&B, 3 minutes, heavy 808 bounce, slow trap drums, eerie soul chords, ghostly vocal chops, distorted choir pads, late-night insomnia atmosphere, sticky repeated chant hook using the word “sleep,” male lead with high-pitched hypnotic ad-libs, female R&B background vocals, minimal lyrics, dark melodic bassline, sparse verses, surreal dream-state energy, narcotic groove, cinematic underground club feel, original vocal tone, no direct artist imitation.",
   "assets": {},
-  "generatedAt": "2026-07-09T18:04:52.690Z"
+  "generatedAt": "2026-07-14T19:33:36.095Z"
 }

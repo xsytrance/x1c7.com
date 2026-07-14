@@ -3,117 +3,125 @@
     "id": "international-heat",
     "planet": {
       "analysis": {
-        "summary": "A sultry, hypnotic Dirty South R&B track blending English and Southeast Asian languages to depict a seductive night in an international club where bodies move together on deep basslines.",
-        "overallMood": "Sultry, Seductive, Hypnotic",
+        "summary": "An electrifying fusion of 90s-inspired Dirty South R&B and reggaeton, 'International Heat' is a sultry, seductive journey through a night of passion and temptation, set against the backdrop of a vibrant Ho Chi Minh City club scene.",
+        "overallMood": "Sensual and intense",
         "themes": [
-          "International Desire",
-          "Body Talk",
-          "Loss of Control",
-          "Cultural Fusion",
-          "Late Night Sin"
+          "Seduction",
+          "Nightlife",
+          "Cultural fusion",
+          "Desire",
+          "Empowerment",
+          "Global connection"
         ],
         "palette": [
-          "#1a0f2e",
-          "#ff3c69",
-          "#d4af37",
-          "#580c0c"
+          "#4B0082",
+          "#8B0000",
+          "#FFD700",
+          "#2E8B57"
         ],
         "sections": [
           {
             "name": "Intro",
-            "emotion": "Whispered curiosity and tactile anticipation as the listener leans in to hear a secret.",
-            "intensity": 0.6,
-            "colorHint": "#ff3c69",
-            "imageryPrompt": "A close-up of two silhouettes standing inches apart in dim red lighting, steam rising from skin touching skin, shallow depth of field focusing on the tension between them.",
-            "start": 3.6
+            "emotion": "Mysterious",
+            "intensity": 0.3,
+            "colorHint": "#4b0082",
+            "start": 3.62
           },
           {
             "name": "Verse 1",
-            "emotion": "Confident ownership and fiery invitation to join a worldwide dance floor.",
-            "intensity": 0.75,
-            "colorHint": "#d4af37",
-            "imageryPrompt": "A woman in shimmering gold attire dancing alone on a dark stage with spotlights cutting through haze, sweat glistening like liquid light, vibrant energy radiating outward.",
-            "start": 28.48
+            "emotion": "Confident",
+            "intensity": 0.6,
+            "colorHint": "#8b0000",
+            "start": 28.5
           },
           {
             "name": "Pre-Chorus",
-            "emotion": "Escalating heat and the dissolution of boundaries between two bodies.",
-            "intensity": 0.85,
-            "colorHint": "#ff3c69",
-            "imageryPrompt": "Two figures locked in a slow-motion embrace against a backdrop of blurred city lights at night, sweat mixing on skin, intimate shadows stretching across the floor.",
-            "start": 61.48
+            "emotion": "Sensual",
+            "intensity": 0.7,
+            "colorHint": "#ffd700",
+            "start": 61.5
           },
           {
             "name": "Chorus",
-            "emotion": "Cathartic release and overwhelming sensory overload as secrets are spilled.",
-            "intensity": 0.95,
-            "colorHint": "#d4af37",
-            "imageryPrompt": "A wide shot of a packed dance floor where hundreds of bodies merge into one glowing mass under strobe lights, heat waves distorting the air above the crowd.",
-            "start": 138.98
+            "emotion": "Passionate",
+            "intensity": 0.8,
+            "colorHint": "#2e8b57",
+            "start": 139
           },
           {
             "name": "Drop",
-            "emotion": "Rhythmic abandon and bass-driven trance state.",
-            "intensity": 1,
-            "colorHint": "#580c0c",
-            "imageryPrompt": "Abstract visualization of massive sub-bass waves shaking the ground, dark voids illuminated by pulsing neon veins, figures moving as a single fluid organism in total darkness.",
-            "start": 141.72
+            "emotion": "Energetic",
+            "intensity": 0.9,
+            "colorHint": "#8b0000",
+            "start": 141.74
           },
           {
             "name": "Verse 2",
-            "emotion": "Global connection and shared experience across different cities.",
-            "intensity": 0.8,
-            "colorHint": "#1a0f2e",
-            "imageryPrompt": "A split view connecting a nightclub in Ho Chi Minh City with one in Brooklyn via digital thread, warm orange hues bleeding into cool blue tones representing the fusion of locations.",
-            "start": 153.55
+            "emotion": "Empowering",
+            "intensity": 0.75,
+            "colorHint": "#ffd700",
+            "start": 153.57
           },
           {
             "name": "Bridge",
-            "emotion": "Intense vulnerability and surrender to the music's pull.",
-            "intensity": 0.9,
-            "colorHint": "#ff3c69",
-            "imageryPrompt": "A single spotlight on a couple spinning slowly in zero gravity, their faces reflecting each other perfectly, surrounded by floating embers of gold and pink light.",
-            "start": 208.4
+            "emotion": "Hypnotic",
+            "intensity": 0.65,
+            "colorHint": "#4b0082",
+            "start": 208.42
           },
           {
             "name": "Outro",
-            "emotion": "Lingering satisfaction and the echo of fame.",
+            "emotion": "Satisfying",
             "intensity": 0.5,
-            "colorHint": "#1a0f2e",
-            "imageryPrompt": "Silhouettes walking away into a deep purple dawn, leaving footprints that glow faintly on the wet pavement, fading atmosphere.",
-            "start": 208.4
+            "colorHint": "#2e8b57",
+            "start": 208.42
           }
         ],
         "keywords": [
           {
-            "word": "Sweat",
-            "emotion": "Physical intimacy and heat.",
-            "imageryPrompt": "Glistening droplets of perspiration catching golden stage lights on pale skin, texture rich with moisture and warmth."
+            "word": "Seductive",
+            "emotion": "Sensual",
+            "imageryPrompt": "A dimly lit club with glowing neon lights reflecting off the bodies of couples entwined in a slow, intimate dance."
+          },
+          {
+            "word": "International",
+            "emotion": "Exotic",
+            "imageryPrompt": "A multicultural crowd under a shimmering ceiling, dancing to a fusion of global rhythms with the scent of incense and sweat in the air."
+          },
+          {
+            "word": "Heat",
+            "emotion": "Passionate",
+            "imageryPrompt": "A red-hot spotlight casting long shadows over a packed dance floor, where the air is thick with desire and the bass is felt in the bones."
           },
           {
             "word": "Rhythm",
-            "emotion": "Hypnotic drive and pulse.",
-            "imageryPrompt": "Visualized sound waves forming a rhythmic heartbeat pattern in the air, glowing red veins pulsing through a dark room."
-          },
-          {
-            "word": "Curves",
-            "emotion": "Admiration and desire.",
-            "imageryPrompt": "Smooth lines of hips accentuated by low lighting, casting soft shadows that suggest movement and allure without revealing too much."
+            "emotion": "Energetic",
+            "imageryPrompt": "A pulsating beat that vibrates through the floor, drawing people into a collective, hypnotic movement that feels unstoppable."
           },
           {
             "word": "Sin",
-            "emotion": "Forbidden thrill and transgression.",
-            "imageryPrompt": "A shadowy alleyway lit only by flickering neon signs, creating a sense of illicit pleasure in the darkness."
+            "emotion": "Tempting",
+            "imageryPrompt": "A velvet curtain drawn back to reveal a secret world of decadence, where every glance and touch is laced with forbidden allure."
+          },
+          {
+            "word": "Desire",
+            "emotion": "Yearning",
+            "imageryPrompt": "A close-up of two people locked in a slow, sultry embrace, their eyes reflecting the fire of unspoken longing and unrelenting passion."
+          },
+          {
+            "word": "Fame",
+            "emotion": "Confident",
+            "imageryPrompt": "A spotlight on a confident woman, her silhouette outlined in gold, as the crowd cheers and claps in admiration of her magnetic presence."
           },
           {
             "word": "Control",
-            "emotion": "Loss of will to music.",
-            "imageryPrompt": "Hands flailing slightly as if caught in an invisible current, eyes rolling back under bright disco lights."
+            "emotion": "Empowering",
+            "imageryPrompt": "A powerful figure standing on a stage, surrounded by swirling lights, commanding the room with a gaze that promises both danger and liberation."
           },
           {
-            "word": "Touch",
-            "emotion": "Sensory connection and grounding.",
-            "imageryPrompt": "Fingers tracing the spine of a partner with high detail on skin texture, warm amber glow highlighting the point of contact."
+            "word": "Bass",
+            "emotion": "Intense",
+            "imageryPrompt": "A deep, rumbling bass that shakes the very foundation of the club, vibrating through the floor and into the core of every dancer."
           }
         ]
       },

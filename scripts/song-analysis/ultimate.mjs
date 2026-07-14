@@ -131,7 +131,7 @@ async function llm(system, user, numPredict = 1600, model = MODEL, images = null
       method: "POST", headers: { "Content-Type": "application/json", "Content-Length": Buffer.byteLength(body) },
     }, (res) => {
       if (res.statusCode !== 200) { reject(new Error(`LLM ${res.statusCode}`)); res.resume(); return; }
-      let out = "", buf = "";
+      let out = "", think = "", buf = "";
       res.setEncoding("utf8");
       res.on("data", (chunk) => {
         buf += chunk;
@@ -140,10 +140,12 @@ async function llm(system, user, numPredict = 1600, model = MODEL, images = null
           const line = buf.slice(0, nl).trim();
           buf = buf.slice(nl + 1);
           if (!line) continue;
-          try { out += JSON.parse(line).message?.content ?? ""; } catch { /* partial line */ }
+          // Some builds route a vision model's format:"json" output into
+          // message.thinking with empty content — accumulate both, prefer content.
+          try { const m = JSON.parse(line).message; out += m?.content ?? ""; think += m?.thinking ?? ""; } catch { /* partial line */ }
         }
       });
-      res.on("end", () => resolve(out));
+      res.on("end", () => resolve(out.trim() ? out : think));
       res.on("error", reject);
     });
     req.on("error", reject);

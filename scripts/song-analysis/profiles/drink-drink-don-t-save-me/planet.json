@@ -3,118 +3,122 @@
     "id": "drink-drink-don-t-save-me",
     "planet": {
       "analysis": {
-        "summary": "A surreal and narcotic exploration of insomnia where the narrator rejects salvation to drown their pain in a hypnotic loop of drinking and dissociation.",
-        "overallMood": "Narcotic Insomnia",
+        "summary": "The song 'Drink Drink [Don’t Save Me]' by xsytrance explores themes of inner turmoil, self-destruction, and the struggle to cope with emotional pain through a hypnotic and eerie soundscape, blending hip-hop and R&B elements with a dreamlike, insomniac atmosphere.",
+        "overallMood": "Eerie, introspective, hypnotic",
         "themes": [
-          "Dissociation",
-          "Chronic Pain",
-          "Rejection of Rescue",
-          "Nightmare Fuel"
+          "Self-destruction",
+          "Emotional isolation",
+          "Insomnia and sleeplessness",
+          "Inner demons",
+          "Surreal dream-state",
+          "Narcotic escapism"
         ],
         "palette": [
-          "#0f0b15",
-          "#4a3b2e",
-          "#8c766d",
-          "#ffccaa"
+          "#1A1A1A",
+          "#2E0854",
+          "#4B0082",
+          "#3A043F"
         ],
         "sections": [
           {
-            "name": "Intro",
-            "emotion": "Desperate Entreaty",
+            "name": "Intro - Whispered Male",
+            "emotion": "Desperate",
             "intensity": 0.5,
-            "colorHint": "#4a3b2e",
-            "start": 2.12
+            "colorHint": "#2e0854",
+            "start": 2.14
           },
           {
-            "name": "Verse 1",
-            "emotion": "Hypnotic Dissociation",
-            "intensity": 0.7,
-            "colorHint": "#8c766d",
-            "start": 11.06
-          },
-          {
-            "name": "Chorus",
-            "emotion": "Narcotic Numbness",
-            "intensity": 0.95,
-            "colorHint": "#2b1d3e",
-            "start": 26.2
-          },
-          {
-            "name": "Pre-Chorus",
-            "emotion": "Claustrophobic Surrealism",
-            "intensity": 0.85,
-            "colorHint": "#2b1d3e",
-            "start": 60.76
-          },
-          {
-            "name": "Verse 1 (Continued)",
-            "emotion": "Fractured Denial",
-            "intensity": 0.6,
-            "colorHint": "#4a3b2e",
-            "start": 94.56
-          },
-          {
-            "name": "Bridge",
-            "emotion": "Exhausted Realization",
-            "intensity": 0.75,
-            "colorHint": "#8c766d",
-            "start": 145.94
-          },
-          {
-            "name": "Drop",
-            "emotion": "Hypnotic Loop Collapse",
-            "intensity": 1,
-            "colorHint": "#ffccaa",
-            "start": 185.12
-          },
-          {
-            "name": "Outro",
-            "emotion": "Fading Despair",
+            "name": "Female Vocal - Airy",
+            "emotion": "Mysterious",
             "intensity": 0.4,
-            "colorHint": "#0f0b15",
-            "start": 271.62
+            "colorHint": "#3a043f",
+            "start": 70.14
+          },
+          {
+            "name": "Male Chant - High, Hypnotic",
+            "emotion": "Hypnotic",
+            "intensity": 0.7,
+            "colorHint": "#4b0082",
+            "start": 94.58
+          },
+          {
+            "name": "Beat Drops - Heavy 808",
+            "emotion": "Intense",
+            "intensity": 0.8,
+            "colorHint": "#1a1a1a",
+            "start": 137.4
+          },
+          {
+            "name": "Hook - Male Chant",
+            "emotion": "Tormented",
+            "intensity": 0.65,
+            "colorHint": "#2e0854",
+            "start": 145.96
+          },
+          {
+            "name": "Ad-Libs - High, Warped",
+            "emotion": "Disoriented",
+            "intensity": 0.6,
+            "colorHint": "#3a043f",
+            "start": 185.14
+          },
+          {
+            "name": "Verse 1 - Melodic Rap/R&B",
+            "emotion": "Despairing",
+            "intensity": 0.6,
+            "colorHint": "#4b0082",
+            "start": 193.92
+          },
+          {
+            "name": "Pre-Hook - Female Background",
+            "emotion": "Surreal",
+            "intensity": 0.5,
+            "colorHint": "#2e0854",
+            "start": 271.64
+          },
+          {
+            "name": "Hook - Male Chant, Bigger",
+            "emotion": "Tormented",
+            "intensity": 0.75,
+            "colorHint": "#1a1a1a",
+            "start": 271.64
           }
         ],
         "keywords": [
           {
-            "word": "Save",
-            "emotion": "Rejected Mercy",
-            "imageryPrompt": "A translucent hand reaching out from a dark void but being slapped away by a shadowy figure, floating debris in the air."
+            "word": "Don't save me",
+            "emotion": "Desperate",
+            "imageryPrompt": "A lone figure standing in a dimly lit room, surrounded by flickering shadows and broken mirrors, whispering into the void as if pleading for release from unseen forces."
           },
           {
             "word": "Train",
-            "emotion": "Mental Repetition",
-            "imageryPrompt": "An endless monorail track curving through a smoggy night sky with no destination visible, glowing faintly against black clouds."
+            "emotion": "Restless",
+            "imageryPrompt": "A ghostly train speeding through a tunnel, its lights flickering in time with a pounding bassline, surrounded by a foggy, dreamlike landscape."
           },
           {
-            "word": "Bottle",
-            "emotion": "Narcotic Necessity",
-            "imageryPrompt": "A clear glass bottle reflecting the blue light of moonlight on a dusty wooden floor next to an overturned chair."
+            "word": "Sorrow",
+            "emotion": "Melancholic",
+            "imageryPrompt": "A dimly lit room with a single glowing bottle on a nightstand, casting long shadows on the walls as a figure sits in silence, eyes closed, lost in thought."
           },
           {
-            "word": "Pain",
-            "emotion": "Visceral Agony",
-            "imageryPrompt": "Glowing red veins pulsating rhythmically under pale skin, illuminating the darkness of a room with heavy shadows."
-          },
-          {
-            "word": "Smoke",
-            "emotion": "Dissolving Reality",
-            "imageryPrompt": "Thick grey smoke swirling into shapes that look like faces and memories before vanishing instantly in mid-air."
-          },
-          {
-            "word": "Drums",
-            "emotion": "Rhythmic Oppression",
-            "imageryPrompt": "Giant mechanical hammers striking a surface made of bone, sending shockwaves through the air that distort vision."
+            "word": "Sleep",
+            "emotion": "Drowsy",
+            "imageryPrompt": "A person floating in a deep, dark ocean, surrounded by glowing jellyfish that pulse with a slow, hypnotic rhythm, the water thick and heavy with dreams."
           },
           {
             "word": "Ghost",
-            "emotion": "Lonely Spirit",
-            "imageryPrompt": "A faint outline of a person walking alone down an empty hallway where walls bleed black liquid onto the floor."
+            "emotion": "Haunting",
+            "imageryPrompt": "A translucent figure drifting through a crumbling city at night, its form flickering in and out of view as if caught between two worlds."
           },
           {
-            "word": "Shame",
-            "emotion": "Heavy Guilt",
-            "imageryPrompt": "A heavy chain made of smoke wrapped around a neck, dragging the figure forward into a mirror that shows nothing but darkness."
+            "word": "Insomnia",
+            "emotion": "Tormented",
+            "imageryPrompt": "A person staring at the ceiling of a dark room, the clock ticking louder with each passing second, the walls closing in as if time itself is the enemy."
+          },
+          {
+            "word": "Bottle",
+            "emotion": "Desperate",
+            "imageryPrompt": "A glowing bottle perched on a bedside table, its light casting eerie shadows across the room, the air thick with the scent of something both intoxicating and dangerous."
           }
         ]
       },

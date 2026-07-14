@@ -3,94 +3,131 @@
     "id": "i-won-t-be-your-fire",
     "planet": {
       "analysis": {
-        "summary": "A raw anthem about setting boundaries in a toxic relationship where love is intertwined with self-destruction and emotional volatility. The song transitions from intimate vulnerability to explosive rebellion as the narrator refuses to be the source of their partner's pain just because they desperately want them to feel something.",
-        "overallMood": "wounded, rebellious",
+        "summary": "The song is a raw and emotional declaration of self-respect and emotional boundaries in a toxic relationship, expressing the pain of loving someone who repeatedly causes harm, while refusing to be the source of their pain.",
+        "overallMood": "Cinematic, Heartbreaking",
         "themes": [
-          "Toxic dependency",
+          "Self-respect in a toxic relationship",
           "Emotional boundaries",
-          "Self-sacrifice vs. self-preservation",
-          "The illusion of love through pain"
+          "Sacrifice and restraint",
+          "Love without enablement",
+          "Inner conflict and strength"
         ],
         "palette": [
-          "#1a0b0e",
-          "#4a3c35",
-          "#d68f7a",
-          "#2d3b49"
+          "#1a1a1a",
+          "#330033",
+          "#5a005a",
+          "#7f007f"
         ],
         "sections": [
           {
-            "name": "Intro",
-            "emotion": "lonely anticipation, rain-soaked vulnerability",
-            "intensity": 0.15,
-            "colorHint": "#1a0b0e",
-            "start": 0.62
+            "sectionName": "Intro - Voicemail, Soft Female Voice",
+            "emotion": "Melancholic",
+            "intensity": 0.3,
+            "colorHint": "#1a1a1a",
+            "start": 0.64
           },
           {
-            "name": "Verse 1",
-            "emotion": "tense desperation, cracking under pressure",
-            "intensity": 0.45,
-            "colorHint": "#2d3b49",
-            "start": 32.82
+            "sectionName": "Instrumental Intro",
+            "emotion": "Tense",
+            "intensity": 0.5,
+            "colorHint": "#330033",
+            "start": 32.84
           },
           {
-            "name": "Chorus",
-            "emotion": "explosive realization and refusal to break again",
-            "intensity": 0.85,
-            "colorHint": "#d68f7a",
-            "start": 158.1
+            "sectionName": "Chorus - Female Lead",
+            "emotion": "Desperate",
+            "intensity": 0.7,
+            "colorHint": "#5a005a",
+            "start": 158.12
           },
           {
-            "name": "Post-Chorus",
-            "emotion": "confused exhaustion in the quiet aftermath",
-            "intensity": 0.35,
-            "colorHint": "#1a0b0e",
-            "start": 167.8
+            "sectionName": "Post-Chorus - Layered Vocals",
+            "emotion": "Haunting",
+            "intensity": 0.6,
+            "colorHint": "#330033",
+            "start": 167.82
           },
           {
-            "name": "Drop",
-            "emotion": "cinematic release of held-back energy and resolve",
-            "intensity": 0.92,
-            "colorHint": "#4a3c35",
-            "start": 172.04
+            "sectionName": "Verse 1 - Female Lead, Melodic",
+            "emotion": "Vulnerable",
+            "intensity": 0.4,
+            "colorHint": "#1a1a1a",
+            "start": 172.06
           },
           {
-            "name": "Bridge",
-            "emotion": "heartbreakingly firm finality with a spark of hope",
-            "intensity": 0.78,
-            "colorHint": "#d68f7a",
-            "start": 178.14
+            "sectionName": "Pre-Chorus - Female Lead",
+            "emotion": "Resolute",
+            "intensity": 0.55,
+            "colorHint": "#330033",
+            "start": 178.16
+          },
+          {
+            "sectionName": "Chorus - Female Lead, Bigger",
+            "emotion": "Empowering",
+            "intensity": 0.8,
+            "colorHint": "#5a005a",
+            "start": 232.54
+          },
+          {
+            "sectionName": "Post-Chorus - Male Ghost Vocal Behind Her",
+            "emotion": "Rebellious",
+            "intensity": 0.75,
+            "colorHint": "#7f007f",
+            "start": 236.18
+          },
+          {
+            "sectionName": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+            "emotion": "Fragile",
+            "intensity": 0.65,
+            "colorHint": "#5a005a",
+            "start": 275.2
           }
         ],
         "keywords": [
           {
-            "word": "fighting",
-            "emotion": "defensive exhaustion",
-            "imageryPrompt": "A lone figure in a dark alley shielding their chest, rain mixing with tears on cracked concrete."
+            "word": "Fire",
+            "emotion": "Rebellious",
+            "imageryPrompt": "A flickering flame in the dark, defiant and unyielding, casting long shadows on a cold, empty room."
           },
           {
-            "word": "burn",
-            "emotion": "destructive attraction",
-            "imageryPrompt": "Blackened hands holding onto a dying embers that singes the skin instead of warming it."
+            "word": "Tired",
+            "emotion": "Exhausted",
+            "imageryPrompt": "A person slumped on a rain-soaked bench, eyes closed, the sound of distant thunder echoing in the silence."
           },
           {
-            "word": "silence",
-            "emotion": "heavy awkwardness",
-            "imageryPrompt": "A vast, empty hallway with dust motes dancing in dim light where no one speaks for too long."
+            "word": "Bruise",
+            "emotion": "Painful",
+            "imageryPrompt": "A deep purple mark on skin, glowing faintly under the dim light of a flickering bulb."
           },
           {
-            "word": "thunder",
-            "emotion": "violent release",
-            "imageryPrompt": "Dark storm clouds cracking open above a city skyline as lightning flashes briefly illuminating shattered glass."
+            "word": "Ghost",
+            "emotion": "Haunting",
+            "imageryPrompt": "A faint, translucent figure standing in a hallway, watching silently as the lights flicker and die."
           },
           {
-            "word": "breaking",
-            "emotion": "shattering despair",
-            "imageryPrompt": "A porcelain heart in slow motion fracturing into jagged shards on a cold bathroom floor."
+            "word": "Knife",
+            "emotion": "Destructive",
+            "imageryPrompt": "A silver blade glinting under moonlight, resting on a table with a red cloth, the air thick with tension."
           },
           {
-            "word": "wire",
-            "emotion": "tense restraint",
-            "imageryPrompt": "Fingers gripping frayed electrical wires wrapped tightly around knuckles, sparks jumping from the skin."
+            "word": "Light",
+            "emotion": "Hopeful",
+            "imageryPrompt": "A single beam of golden light cutting through a stormy night, illuminating a path through the darkness."
+          },
+          {
+            "word": "Hurt",
+            "emotion": "Suffering",
+            "imageryPrompt": "A person clutching their chest, tears streaming down their face, as a storm rages outside."
+          },
+          {
+            "word": "Love",
+            "emotion": "Bittersweet",
+            "imageryPrompt": "A couple standing in a rainstorm, arms wrapped around each other, eyes closed, whispering promises to the wind."
+          },
+          {
+            "word": "Break",
+            "emotion": "Fragile",
+            "imageryPrompt": "A glass cup perched on the edge of a table, trembling slightly as a shadow passes by, the room silent and still."
           }
         ]
       },

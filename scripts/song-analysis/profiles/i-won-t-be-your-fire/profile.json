@@ -1,38 +1,47 @@
 {
   "v": 1,
-  "mode": "full",
+  "mode": "audio-only",
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-09T17:26:00.900Z",
+  "generatedAt": "2026-07-14T19:39:05.963Z",
   "measured": {
     "bpm": 86.13,
     "duration": 308.04
   },
   "identity": {
-    "styleSentence": "A mid-tempo (86 BPM) emo-rap pop-punk fusion featuring distorted electric guitars, heavy trap-style 808 bass drums, atmospheric synths, and a raw female lead vocal with melodic runs over an emotional, rain-soaked soundscape.",
-    "energy": "medium",
-    "vocalStyle": "breathy, vulnerable, and emotionally expressive delivery that shifts from soft conversational tones in the intro to powerful, layered harmonies in the post-chorus and soaring melodies in the verses.",
-    "language": "English",
     "title": "I Won’t Be Your Fire",
     "titleAlternates": [],
     "genre": "Emo-Rap Pop-Punk",
     "subGenres": [
-      "Pop Punk",
-      "Trap Rap",
-      "Alternative Rock"
+      "Alternative Pop",
+      "Emo",
+      "Trap Pop",
+      "Indie Rock"
     ],
-    "mood": "wounded",
-    "cathartic": -1,
-    "rebellious": -2,
-    "sad-but-catchy": -3
+    "mood": "Cinematic, Heartbreaking",
+    "styleSentence": "An 85 BPM half-time emo-rap pop-punk anthem with 170 BPM double-time trap hats, dark minor key, intimate rain ambience, muted electric guitar, and a stadium-sized chorus that builds from a vulnerable, raw vocal to explosive, layered harmonies.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "Raw, cracked, melodic, desperate, and instantly singable"
   },
   "cover": {
-    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/i-won-t-be-your-fire/cover.jpeg",
+    "file": "/home/xsyprime/Hermes/x1c7.com/scripts/song-analysis/profiles/i-won-t-be-your-fire/cover.jpeg",
     "palette": [
       "#080808",
       "#181818",
       "#282828",
       "#081818",
       "#383838"
+    ],
+    "description": "A split visual of two figures with a burning heart between them against a stormy cityscape, featuring text elements like voicemail messages and handwritten notes.",
+    "mood": "Melancholic yet hopeful",
+    "artStyle": "Dark, textured realism with symbolic imagery",
+    "subjects": [
+      "Two people (split view)",
+      "Burning heart",
+      "City skyline",
+      "Voicemail message",
+      "Handwritten notes",
+      "Candle"
     ]
   },
   "mixFeatures": {
@@ -58,99 +67,377 @@
     "official": true,
     "language": "english",
     "text": "[Intro - Voicemail, Soft Female Voice]\nI saw your name light up again\nsame time, same storm\nand I almost answered like always\nbut I can’t keep being the place you go\nwhen you wanna fall apart\n\n[Instrumental Intro]\nRain on glass\nguitar comes in slow\n808 heart under the floor\n\n[Chorus - Female Lead]\nI won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down\n\n[Post-Chorus - Layered Vocals]\nNo, no, no\nI won’t be your fire\nNo, no, no\nI still care, but I’m tired\n\n[Verse 1 - Female Lead, Melodic]\nYou call me when the room gets cold\nwhen the posters on your wall\nstart looking like ghosts\nYou say you need a reason\njust to feel something real\nbut every time I answer\nI become what you can’t heal\n\nI know the hallway lights\nI know the bathroom floor\nI know the kind of love\nthat turns into a war\nI know you think the hurt\nmeans somebody stayed\nbut pain is not proof\nthat love was ever safe\n\n[Pre-Chorus - Female Lead]\nI used to throw the match\nthen cry about the smoke\nI used to say the things\nthat cut into your throat\nBut tonight I’m holding back\nwith both hands on the wire\nIf I love you at all\nI can’t be your fire\n\n[Chorus - Female Lead, Bigger]\nI won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down\n\n[Post-Chorus - Male Ghost Vocal Behind Her]\nDon’t leave me alone\nDon’t leave me alone\nDon’t leave me alone\nwith my head like this\n\n[Verse 2 - Male Ghost Vocal, Fragile Melodic Rap]\nI keep your name in my phone\nlike a bruise I can press\nblack hoodie, dead screen\nbad dreams in my chest\nI don’t want peace\nI don’t know what that means\nI only feel close\nwhen you’re angry at me\n\nI been chasing the crash\ncause the calm feels fake\nI been calling it love\nwhen it’s only escape\nSay something cold\nmake it sound like you care\nI can’t stand the dark\nwhen there’s nobody there\n\n[Female Reply - Spoken-Sung]\nI hear you\nI do\nbut I won’t hurt you\njust to prove I’m still here\n\n[Bridge - Duet, Slow Build]\n[Male]\nWhat am I supposed to do\nwhen the night comes back?\n\n[Female]\nBreathe till the morning\ndon’t run to the match\n\n[Male]\nWhat if I disappear\nwhen the signal dies?\n\n[Female]\nThen I’ll leave one light on\nbut I won’t feed the fire\n\n[Male]\nSay you hate me\n\n[Female]\nNo\n\n[Male]\nSay you’re done\n\n[Female]\nNo\n\n[Male]\nSay anything\n\n[Female]\nI’m saying no because I love you enough\nnot to become another wound\n\n[Breakdown - Half-Time, Big Guitars]\nI can miss you\nand still not answer\nI can love you\nand leave the room\nI can pray that you find daylight\nwithout becoming your moon\n\nI can hold all the good parts\nand still bury the blade\nI can remember your soft voice\nwithout entering the cage\nI can cry for the old us\nwithout pulling you through\nanother night where the worst thing\nI say becomes true\n\n[Final Chorus - Full Band, Both Voices]\nI won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down\n\n[Final Chorus Variation - Female Lead]\nI won’t be your fire\nI won’t be your knife\nI won’t be the dark thing\nthat helps you hate your life\nI’ll leave a little light on\nbut I’m walking out now\nI won’t be your reason\nto keep breaking down\n\n[Outro - Voicemail Texture]\nI hope you get through tonight\nI hope you don’t need pain\nto know somebody loved you\nI hope one day\nquiet feels safe\n\n[Last Whisper]\nI won’t be your fire\nbut I’ll leave you the light",
-    "lrc": "[Intro]\n[00:00.62] I saw your name light up again\n[00:05.38] Same time,\n[00:06.28] same storm\n[00:09.56] And I almost answered like always\n[00:13.82] But I can't keep being the place you go\n[00:18.42] When you wanna fall apart\n[00:22.86] Rain on glass, guitar comes in slow\n[00:27.20] 808, heart under the floor\n[Verse 1]\n[00:32.82] I won't be your fighter\n[00:36.20] Just because you missed the burn\n[00:38.89] I won't say the sharp words Just to make the silence hurt\n[00:44.02] I know you want the thunder When the quiet gets too loud\n[00:49.22] But I won't be your reason I keep breaking down\n[00:55.58] Yeah!\n[00:57.62] No, no, I won't be your fighter\n[01:02.58] No, no, no I still care,\n[01:05.62] but I'm tired\n[01:06.52] You call me when the room gets cold When the\n[01:08.86] posters on your wall start looking like ghosts\n[01:11.32] You say you need a reason just to feel something real\n[01:13.98] But every time I answer I become what you can't heal\n[01:16.82] I know the hallway lights,\n[01:18.20] I know the bathroom floor\n[01:19.54] I know the kind of love that turns into a war\n[01:22.28] I know you think the hurt means somebody's state\n[01:25.12] But pain is not proof that love is real\n[01:27.20] And the world was ever safe\n[01:27.98] I used to throw the mats Then cry about the smoke\n[01:30.68] I used to say the things that cut into your throat\n[01:33.50] But tonight I'm holding back With both hands on the wire\n[01:36.40] If I love you at all I can be your fire\n[01:40.23] I won't be your fighter\n[01:42.95] Just because you missed the burn\n[01:45.87] I won't say the sharp words Just to make the silence hurt\n[01:50.92] I know you want the thunder When the quiet gets too loud\n[01:56.20] But I...\n[01:56.87] Won't be a\n[01:59.02] reason to keep breaking down\n[02:01.36] Don't leave me alone\n[02:10.42] With my head like this\n[02:12.58] I keep your name in my phone like a bruise\n[02:15.44] I can press black hoodie,\n[02:16.80] dead screen,\n[02:17.50] bad dreams in my chest\n[02:18.76] I don't want peace, I don't know what that means\n[02:21.56] I only feel close when you're angry at me\n[02:24.32] I've been chasing the crash,\n[02:25.90] cause the car feels fake\n[02:27.08] I've been calling it love,\n[02:28.66] when it's only a skate\n[02:30.07] Say something cold, make it sound like you care\n[02:32.66] I can't stand the dark when there's nobody there\n[02:35.63] I hear you,\n[Chorus]\n[02:38.10] I do\n[02:38.90] But I won't hurt you\n[02:42.76] Just to prove I'm still here\n[Post-Chorus]\n[02:47.80] What am I supposed to do when the night comes by?\n[Drop]\n[02:52.04] Breathe to the morning\n[02:53.06] Don't run\n[02:54.22] To the match\n[02:55.70] What if I disappear\n[Bridge]\n[02:58.14] When the signal dies\n[03:01.56] Then I'll leave one night on\n[03:04.04] But I won't feed the fire\n[03:06.99] Say you hate me\n[03:08.32] Say you're done\n[03:09.62] Say anything\n[03:10.98] I'm saying no because I love you enough\n[03:16.52] Not to become another one\n[03:19.75] I\n[03:20.88] can miss you and still not answer\n[03:23.29] I can love you and still not answer\n[03:24.20] I can love you and leave the room\n[03:26.10] I can pray that you'll find daylight\n[03:31.85] Without becoming your moon\n[03:33.82] I can hold all the good parts\n[03:35.54] And still bury the blade\n[03:38.18] I can remember your soft voice\n[03:41.26] Without entering the cage\n[03:44.16] I can cry for the old days\n[03:47.43] Without pulling you through\n[03:49.29] Another night, we're the worst thing\n[03:52.52] I say, be kind\n[03:54.18] It comes true\n[03:56.16] I won't be your fire\n[03:59.02] Just because you missed the burn\n[04:01.32] I won't say the sharp words\n[04:04.52] Just to make the silence hurt\n[04:06.72] I know you want the thunder\n[04:08.98] When the quiet gets too loud\n[04:11.94] But I\n[04:13.10] won't be your reason\n[04:14.86] To keep breaking down\n[04:18.22] I won't be your fire\n[04:20.70] I won't be your knife\n[04:22.69] I won't be the dark thing\n[04:25.00] That helps you hate your life\n[04:28.26] I'll leave a little light on\n[04:31.18] But I'm walking out now\n[04:33.49] I\n[04:35.18] won't be your reason\n[04:37.24] To keep breaking down\n[04:39.05] I hope you get through tonight\n[04:41.44] I hope you don't need pain\n[04:44.12] To know somebody loved you\n[04:47.62] I hope one day\n[04:51.88] Quiet feels safe\n[04:56.80] I won't be your fire\n[05:01.94] But I'll leave you the light\n"
+    "lrc": "[Intro - Voicemail, Soft Female Voice]\n[00:00.64] I saw your name light up again\n[00:05.40] Same time,\n[00:06.30] same storm\n[00:09.58] And I almost answered like always\n[00:13.84] But I can't keep being the place you go\n[00:18.44] When you wanna fall apart\n[00:22.88] Rain on glass, guitar comes in slow\n[00:27.22] 808, heart under the floor\n[Instrumental Intro]\n[00:32.84] I won't be your fighter\n[00:36.22] Just because you missed the burn\n[00:38.91] I won't say the sharp words Just to make the silence hurt\n[00:44.04] I know you want the thunder When the quiet gets too loud\n[00:49.25] But I won't be your reason I keep breaking down\n[00:55.60] Yeah!\n[00:57.64] No, no, I won't be your fighter\n[01:02.60] No, no, no I still care,\n[01:05.64] but I'm tired\n[01:06.54] You call me when the room gets cold When the\n[01:08.88] posters on your wall start looking like ghosts\n[01:11.34] You say you need a reason just to feel something real\n[01:14.00] But every time I answer I become what you can't heal\n[01:16.84] I know the hallway lights,\n[01:18.22] I know the bathroom floor\n[01:19.56] I know the kind of love that turns into a war\n[01:22.30] I know you think the hurt means somebody's state\n[01:25.14] But pain is not proof that love is real\n[01:27.22] And the world was ever safe\n[01:28.00] I used to throw the mats Then cry about the smoke\n[01:30.70] I used to say the things that cut into your throat\n[01:33.52] But tonight I'm holding back With both hands on the wire\n[01:36.42] If I love you at all I can be your fire\n[01:40.26] I won't be your fighter\n[01:42.98] Just because you missed the burn\n[01:45.89] I won't say the sharp words Just to make the silence hurt\n[01:50.94] I know you want the thunder When the quiet gets too loud\n[01:56.22] But I...\n[01:56.90] Won't be a\n[01:59.04] reason to keep breaking down\n[02:01.38] Don't leave me alone\n[02:10.44] With my head like this\n[02:12.60] I keep your name in my phone like a bruise\n[02:15.46] I can press black hoodie,\n[02:16.82] dead screen,\n[02:17.52] bad dreams in my chest\n[02:18.78] I don't want peace, I don't know what that means\n[02:21.58] I only feel close when you're angry at me\n[02:24.34] I've been chasing the crash,\n[02:25.92] cause the car feels fake\n[02:27.10] I've been calling it love,\n[02:28.68] when it's only a skate\n[02:30.09] Say something cold, make it sound like you care\n[02:32.68] I can't stand the dark when there's nobody there\n[02:35.65] I hear you,\n[Chorus - Female Lead]\n[02:38.12] I do\n[02:38.92] But I won't hurt you\n[02:42.78] Just to prove I'm still here\n[Post-Chorus - Layered Vocals]\n[02:47.82] What am I supposed to do when the night comes by?\n[Verse 1 - Female Lead, Melodic]\n[02:52.06] Breathe to the morning\n[02:53.08] Don't run\n[02:54.24] To the match\n[02:55.72] What if I disappear\n[Pre-Chorus - Female Lead]\n[02:58.16] When the signal dies\n[03:01.58] Then I'll leave one night on\n[03:04.06] But I won't feed the fire\n[03:07.01] Say you hate me\n[03:08.34] Say you're done\n[03:09.64] Say anything\n[03:11.00] I'm saying no because I love you enough\n[03:16.54] Not to become another one\n[03:19.78] I\n[03:20.90] can miss you and still not answer\n[03:23.31] I can love you and still not answer\n[03:24.22] I can love you and leave the room\n[03:26.12] I can pray that you'll find daylight\n[03:31.87] Without becoming your moon\n[03:33.84] I can hold all the good parts\n[03:35.56] And still bury the blade\n[03:38.20] I can remember your soft voice\n[03:41.28] Without entering the cage\n[03:44.18] I can cry for the old days\n[03:47.46] Without pulling you through\n[03:49.31] Another night, we're the worst thing\n[Chorus - Female Lead, Bigger]\n[03:52.54] I say, be kind\n[03:54.20] It comes true\n[Post-Chorus - Male Ghost Vocal Behind Her]\n[03:56.18] I won't be your fire\n[03:59.04] Just because you missed the burn\n[04:01.34] I won't say the sharp words\n[04:04.54] Just to make the silence hurt\n[04:06.74] I know you want the thunder\n[04:09.00] When the quiet gets too loud\n[04:11.96] But I\n[04:13.12] won't be your reason\n[04:14.88] To keep breaking down\n[04:18.24] I won't be your fire\n[04:20.72] I won't be your knife\n[04:22.71] I won't be the dark thing\n[04:26.02] That helps you hate your life\n[04:28.29] I'll leave a little light on\n[04:31.20] But I'm walking out now\n[04:33.51] I\n[Verse 2 - Male Ghost Vocal, Fragile Melodic Rap]\n[04:35.20] won't be your reason\n[04:37.26] To keep breaking down\n[04:39.07] I hope you get through tonight\n[04:41.46] I hope you don't need pain\n[04:44.14] To know somebody loved you\n[04:47.64] I hope one day\n[04:51.90] Quiet feels safe\n[04:56.82] I won't be your fire\n[05:01.96] But I'll leave you the light\n"
   },
   "analysis": {
-    "summary": "A raw anthem about setting boundaries in a toxic relationship where love is intertwined with self-destruction and emotional volatility. The song transitions from intimate vulnerability to explosive rebellion as the narrator refuses to be the source of their partner's pain just because they desperately want them to feel something.",
-    "overallMood": "wounded, rebellious",
+    "summary": "The song is a raw and emotional declaration of self-respect and emotional boundaries in a toxic relationship, expressing the pain of loving someone who repeatedly causes harm, while refusing to be the source of their pain.",
+    "overallMood": "Cinematic, Heartbreaking",
     "themes": [
-      "Toxic dependency",
+      "Self-respect in a toxic relationship",
       "Emotional boundaries",
-      "Self-sacrifice vs. self-preservation",
-      "The illusion of love through pain"
+      "Sacrifice and restraint",
+      "Love without enablement",
+      "Inner conflict and strength"
     ],
     "palette": [
-      "#1a0b0e",
-      "#4a3c35",
-      "#d68f7a",
-      "#2d3b49"
+      "#1a1a1a",
+      "#330033",
+      "#5a005a",
+      "#7f007f"
     ],
     "sections": [
       {
-        "name": "Intro",
-        "emotion": "lonely anticipation, rain-soaked vulnerability",
-        "intensity": 0.43,
-        "colorHint": "#1a0b0e",
-        "start": 0.62
+        "sectionName": "Intro - Voicemail, Soft Female Voice",
+        "emotion": "Melancholic",
+        "intensity": 0.48,
+        "colorHint": "#1a1a1a",
+        "start": 0.64
       },
       {
-        "name": "Verse 1",
-        "emotion": "tense desperation, cracking under pressure",
-        "intensity": 0.84,
-        "colorHint": "#2d3b49",
-        "start": 32.82
+        "sectionName": "Instrumental Intro",
+        "emotion": "Tense",
+        "intensity": 0.85,
+        "colorHint": "#330033",
+        "start": 32.84
       },
       {
-        "name": "Chorus",
-        "emotion": "explosive realization and refusal to break again",
-        "intensity": 0.31,
-        "colorHint": "#d68f7a",
-        "start": 158.1
+        "sectionName": "Chorus - Female Lead",
+        "emotion": "Desperate",
+        "intensity": 0.27,
+        "colorHint": "#5a005a",
+        "start": 158.12
       },
       {
-        "name": "Post-Chorus",
-        "emotion": "confused exhaustion in the quiet aftermath",
-        "intensity": 0.2,
-        "colorHint": "#1a0b0e",
-        "start": 167.8
-      },
-      {
-        "name": "Drop",
-        "emotion": "cinematic release of held-back energy and resolve",
+        "sectionName": "Post-Chorus - Layered Vocals",
+        "emotion": "Haunting",
         "intensity": 0.28,
-        "colorHint": "#4a3c35",
-        "start": 172.04
+        "colorHint": "#330033",
+        "start": 167.82
       },
       {
-        "name": "Bridge",
-        "emotion": "heartbreakingly firm finality with a spark of hope",
-        "intensity": 0.23,
-        "colorHint": "#d68f7a",
-        "start": 178.14
+        "sectionName": "Verse 1 - Female Lead, Melodic",
+        "emotion": "Vulnerable",
+        "intensity": 0.13,
+        "colorHint": "#1a1a1a",
+        "start": 172.06
+      },
+      {
+        "sectionName": "Pre-Chorus - Female Lead",
+        "emotion": "Resolute",
+        "intensity": 0.18,
+        "colorHint": "#330033",
+        "start": 178.16
+      },
+      {
+        "sectionName": "Chorus - Female Lead, Bigger",
+        "emotion": "Empowering",
+        "intensity": 0.24,
+        "colorHint": "#5a005a",
+        "start": 232.54
+      },
+      {
+        "sectionName": "Post-Chorus - Male Ghost Vocal Behind Her",
+        "emotion": "Rebellious",
+        "intensity": 0.22,
+        "colorHint": "#7f007f",
+        "start": 236.18
+      },
+      {
+        "sectionName": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+        "emotion": "Fragile",
+        "intensity": 0.2,
+        "colorHint": "#5a005a",
+        "start": 275.2
       }
     ],
     "keywords": [
       {
-        "word": "fighting",
-        "emotion": "defensive exhaustion",
-        "imageryPrompt": "A lone figure in a dark alley shielding their chest, rain mixing with tears on cracked concrete."
+        "word": "fire",
+        "emotion": "Rebellious",
+        "imageryPrompt": "A flickering flame in the dark, defiant and unyielding, casting long shadows on a cold, empty room."
+      },
+      {
+        "word": "tired",
+        "emotion": "Exhausted",
+        "imageryPrompt": "A person slumped on a rain-soaked bench, eyes closed, the sound of distant thunder echoing in the silence."
+      },
+      {
+        "word": "bruise",
+        "emotion": "Painful",
+        "imageryPrompt": "A deep purple mark on skin, glowing faintly under the dim light of a flickering bulb."
+      },
+      {
+        "word": "ghost",
+        "emotion": "Haunting",
+        "imageryPrompt": "A faint, translucent figure standing in a hallway, watching silently as the lights flicker and die."
+      },
+      {
+        "word": "knife",
+        "emotion": "Destructive",
+        "imageryPrompt": "A silver blade glinting under moonlight, resting on a table with a red cloth, the air thick with tension."
+      },
+      {
+        "word": "light",
+        "emotion": "Hopeful",
+        "imageryPrompt": "A single beam of golden light cutting through a stormy night, illuminating a path through the darkness."
+      },
+      {
+        "word": "hurt",
+        "emotion": "Suffering",
+        "imageryPrompt": "A person clutching their chest, tears streaming down their face, as a storm rages outside."
+      },
+      {
+        "word": "love",
+        "emotion": "Bittersweet",
+        "imageryPrompt": "A couple standing in a rainstorm, arms wrapped around each other, eyes closed, whispering promises to the wind."
+      },
+      {
+        "word": "break",
+        "emotion": "Fragile",
+        "imageryPrompt": "A glass cup perched on the edge of a table, trembling slightly as a shadow passes by, the room silent and still."
       },
       {
         "word": "burn",
-        "emotion": "destructive attraction",
-        "imageryPrompt": "Blackened hands holding onto a dying embers that singes the skin instead of warming it."
+        "emotion": "pain, intensity, sacrifice",
+        "imageryPrompt": "a hand hovering over a lit match, the flame reflecting in the eyes of someone watching"
       },
       {
-        "word": "silence",
-        "emotion": "heavy awkwardness",
-        "imageryPrompt": "A vast, empty hallway with dust motes dancing in dim light where no one speaks for too long."
+        "word": "storm",
+        "emotion": "chaos, turmoil, emotional upheaval",
+        "imageryPrompt": "a dark sky filled with lightning, rain slashing across a windowpane"
       },
       {
-        "word": "thunder",
-        "emotion": "violent release",
-        "imageryPrompt": "Dark storm clouds cracking open above a city skyline as lightning flashes briefly illuminating shattered glass."
+        "word": "cold",
+        "emotion": "isolation, emotional distance, emptiness",
+        "imageryPrompt": "a silent room with a single light on, casting long shadows across the walls"
       },
       {
-        "word": "breaking",
-        "emotion": "shattering despair",
-        "imageryPrompt": "A porcelain heart in slow motion fracturing into jagged shards on a cold bathroom floor."
+        "word": "floor",
+        "emotion": "grounding, vulnerability, pain",
+        "imageryPrompt": "a wet floor reflecting a stormy sky, with a lone figure standing in the center"
       },
       {
-        "word": "wire",
-        "emotion": "tense restraint",
-        "imageryPrompt": "Fingers gripping frayed electrical wires wrapped tightly around knuckles, sparks jumping from the skin."
+        "word": "match",
+        "emotion": "ignition, destruction, choice",
+        "imageryPrompt": "a matchstick held in a trembling hand, flame flickering in the wind"
+      },
+      {
+        "word": "war",
+        "emotion": "conflict, struggle, emotional battle",
+        "imageryPrompt": "two figures standing on opposite sides of a battlefield, weapons raised"
+      },
+      {
+        "word": "pain",
+        "emotion": "suffering, endurance, emotional weight",
+        "imageryPrompt": "a hand clutching a heart-shaped locket, tears streaking down the face"
+      },
+      {
+        "word": "dark",
+        "emotion": "despair, uncertainty, emotional void",
+        "imageryPrompt": "a room swallowed by darkness, with only a faint glow from a distant window"
+      },
+      {
+        "word": "room",
+        "emotion": "isolation, containment, emotional space",
+        "imageryPrompt": "a small, dimly lit room with a single chair and a flickering lamp"
+      },
+      {
+        "word": "moon",
+        "emotion": "guidance, distance, emotional reflection",
+        "imageryPrompt": "a pale moon hanging over a stormy sea, casting silver light on the waves"
+      },
+      {
+        "word": "blade",
+        "emotion": "pain, sharpness, emotional cutting",
+        "imageryPrompt": "a silver blade resting on a table, reflecting the dim light of a single lamp"
+      },
+      {
+        "word": "down",
+        "emotion": "falling, despair, emotional collapse",
+        "imageryPrompt": "a figure kneeling in the rain, arms outstretched toward a distant light"
+      },
+      {
+        "word": "quiet",
+        "emotion": "stillness, tension, emotional silence",
+        "imageryPrompt": "a silent room with a faint hum in the air, the only sound the ticking of a clock"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song is a powerful assertion of self-worth and emotional independence, as the narrator refuses to be a crutch or a source of pain for someone who is emotionally unstable and destructive. It reflects the internal struggle of loving someone who constantly pulls the narrator back into cycles of hurt, while also expressing a quiet hope that the other person might one day find peace without needing the narrator to be their salvation.",
+      "sections": [
+        {
+          "name": "Intro - Voicemail, Soft Female Voice",
+          "interpretation": "The intro sets the tone of a relationship that has become a recurring cycle of pain and return.",
+          "keyLine": "but I can’t keep being the place you go when you wanna fall apart"
+        },
+        {
+          "name": "Chorus - Female Lead",
+          "interpretation": "A declaration of refusal to be the emotional fuel for someone else's turmoil.",
+          "keyLine": "I won’t be your fire just because you miss the burn"
+        },
+        {
+          "name": "Verse 1 - Female Lead, Melodic",
+          "interpretation": "The narrator is aware of the patterns of pain and the role she plays in them.",
+          "keyLine": "every time I answer I become what you can’t heal"
+        },
+        {
+          "name": "Pre-Chorus - Female Lead",
+          "interpretation": "The narrator is shifting from being a source of pain to a guardian of her own emotional boundaries.",
+          "keyLine": "If I love you at all I can’t be your fire"
+        },
+        {
+          "name": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+          "interpretation": "The male voice reveals the internal chaos and emotional dependency that drives the relationship.",
+          "keyLine": "I only feel close when you’re angry at me"
+        },
+        {
+          "name": "Bridge - Duet, Slow Build",
+          "interpretation": "A moment of vulnerability and mutual understanding between the two voices.",
+          "keyLine": "I’m saying no because I love you enough not to become another wound"
+        },
+        {
+          "name": "Breakdown - Half-Time, Big Guitars",
+          "interpretation": "A reflection on the complexity of love, memory, and the desire for emotional freedom.",
+          "keyLine": "I can love you and leave the room"
+        },
+        {
+          "name": "Final Chorus - Full Band, Both Voices",
+          "interpretation": "A unified and powerful resolution to the emotional conflict and a reaffirmation of self-respect.",
+          "keyLine": "but I won’t be your reason to keep breaking down"
+        }
+      ],
+      "keyLines": [
+        "I won’t be your fire just because you miss the burn",
+        "every time I answer I become what you can’t heal",
+        "If I love you at all I can’t be your fire",
+        "I only feel close when you’re angry at me",
+        "I’m saying no because I love you enough not to become another wound",
+        "I can love you and leave the room",
+        "but I won’t be your reason to keep breaking down"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "fire",
+          "emotion": "resistance, pain, destruction",
+          "imageryPrompt": "a flickering flame in a storm, casting long shadows on a rain-slicked pavement",
+          "weight": 0.95
+        },
+        {
+          "word": "burn",
+          "emotion": "pain, intensity, sacrifice",
+          "imageryPrompt": "a hand hovering over a lit match, the flame reflecting in the eyes of someone watching",
+          "weight": 0.9
+        },
+        {
+          "word": "storm",
+          "emotion": "chaos, turmoil, emotional upheaval",
+          "imageryPrompt": "a dark sky filled with lightning, rain slashing across a windowpane",
+          "weight": 0.85
+        },
+        {
+          "word": "cold",
+          "emotion": "isolation, emotional distance, emptiness",
+          "imageryPrompt": "a silent room with a single light on, casting long shadows across the walls",
+          "weight": 0.8
+        },
+        {
+          "word": "light",
+          "emotion": "hope, guidance, presence",
+          "imageryPrompt": "a soft glow from a single lamp in a dark room, illuminating the edges of a chair",
+          "weight": 0.8
+        },
+        {
+          "word": "floor",
+          "emotion": "grounding, vulnerability, pain",
+          "imageryPrompt": "a wet floor reflecting a stormy sky, with a lone figure standing in the center",
+          "weight": 0.75
+        },
+        {
+          "word": "ghost",
+          "emotion": "haunting, memory, presence",
+          "imageryPrompt": "a shadowy figure standing in a doorway, barely visible in the dim light",
+          "weight": 0.7
+        },
+        {
+          "word": "match",
+          "emotion": "ignition, destruction, choice",
+          "imageryPrompt": "a matchstick held in a trembling hand, flame flickering in the wind",
+          "weight": 0.7
+        },
+        {
+          "word": "war",
+          "emotion": "conflict, struggle, emotional battle",
+          "imageryPrompt": "two figures standing on opposite sides of a battlefield, weapons raised",
+          "weight": 0.7
+        },
+        {
+          "word": "pain",
+          "emotion": "suffering, endurance, emotional weight",
+          "imageryPrompt": "a hand clutching a heart-shaped locket, tears streaking down the face",
+          "weight": 0.7
+        },
+        {
+          "word": "dark",
+          "emotion": "despair, uncertainty, emotional void",
+          "imageryPrompt": "a room swallowed by darkness, with only a faint glow from a distant window",
+          "weight": 0.65
+        },
+        {
+          "word": "room",
+          "emotion": "isolation, containment, emotional space",
+          "imageryPrompt": "a small, dimly lit room with a single chair and a flickering lamp",
+          "weight": 0.6
+        },
+        {
+          "word": "love",
+          "emotion": "complexity, sacrifice, emotional depth",
+          "imageryPrompt": "two hands intertwined, one glowing with warmth, the other trembling",
+          "weight": 0.6
+        },
+        {
+          "word": "moon",
+          "emotion": "guidance, distance, emotional reflection",
+          "imageryPrompt": "a pale moon hanging over a stormy sea, casting silver light on the waves",
+          "weight": 0.6
+        },
+        {
+          "word": "blade",
+          "emotion": "pain, sharpness, emotional cutting",
+          "imageryPrompt": "a silver blade resting on a table, reflecting the dim light of a single lamp",
+          "weight": 0.6
+        },
+        {
+          "word": "knife",
+          "emotion": "pain, sharpness, emotional cutting",
+          "imageryPrompt": "a knife glinting in the dark, its edge catching the faintest light",
+          "weight": 0.6
+        },
+        {
+          "word": "light",
+          "emotion": "guidance, presence, hope",
+          "imageryPrompt": "a single light flickering in the dark, casting long shadows on the walls",
+          "weight": 0.6
+        },
+        {
+          "word": "break",
+          "emotion": "fragility, emotional collapse, fracture",
+          "imageryPrompt": "a glass shattering in slow motion, shards glinting in the dim light",
+          "weight": 0.6
+        },
+        {
+          "word": "down",
+          "emotion": "falling, despair, emotional collapse",
+          "imageryPrompt": "a figure kneeling in the rain, arms outstretched toward a distant light",
+          "weight": 0.6
+        },
+        {
+          "word": "quiet",
+          "emotion": "stillness, tension, emotional silence",
+          "imageryPrompt": "a silent room with a faint hum in the air, the only sound the ticking of a clock",
+          "weight": 0.6
+        }
+      ]
+    }
   },
   "show": {
     "energyArc": {
@@ -160,59 +447,68 @@
     },
     "sectionEnergy": [
       {
-        "name": "Intro",
-        "start": 0.62,
-        "intensity": 0.43
+        "start": 0.64,
+        "intensity": 0.48
       },
       {
-        "name": "Verse 1",
-        "start": 32.82,
-        "intensity": 0.84
+        "start": 32.84,
+        "intensity": 0.85
       },
       {
-        "name": "Chorus",
-        "start": 158.1,
-        "intensity": 0.31
+        "start": 158.12,
+        "intensity": 0.27
       },
       {
-        "name": "Post-Chorus",
-        "start": 167.8,
-        "intensity": 0.2
-      },
-      {
-        "name": "Drop",
-        "start": 172.04,
+        "start": 167.82,
         "intensity": 0.28
       },
       {
-        "name": "Bridge",
-        "start": 178.14,
-        "intensity": 0.23
+        "start": 172.06,
+        "intensity": 0.13
+      },
+      {
+        "start": 178.16,
+        "intensity": 0.18
+      },
+      {
+        "start": 232.54,
+        "intensity": 0.24
+      },
+      {
+        "start": 236.18,
+        "intensity": 0.22
+      },
+      {
+        "start": 275.2,
+        "intensity": 0.2
       }
     ],
     "vocalPresence": [
       {
-        "name": "Intro",
         "presence": 41
       },
       {
-        "name": "Verse 1",
         "presence": 81
       },
       {
-        "name": "Chorus",
         "presence": 29
       },
       {
-        "name": "Post-Chorus",
         "presence": 44
       },
       {
-        "name": "Drop",
         "presence": 0
       },
       {
-        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "presence": 0
+      },
+      {
+        "presence": 0
+      },
+      {
         "presence": 0
       }
     ],
