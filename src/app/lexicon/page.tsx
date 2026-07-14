@@ -16,6 +16,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import type { Lexicon, WordEntry } from "@/lib/lexicon/types";
 import { loadLexicon } from "@/lib/lexicon/lookup";
+import { isPrivateHost } from "@/lib/privateHost";
 import lexiconData from "@/data/lexicon.json";
 
 /* eslint-disable @next/next/no-img-element */
@@ -129,7 +130,9 @@ export default function LexiconPage() {
   // on R2 — so the browser always shows the latest words + generated art as the
   // nightly pipeline grows it, no redeploy.
   const [lex, setLex] = useState<Lexicon>(BUNDLED);
+  const [ownerHost, setOwnerHost] = useState(false);
   useEffect(() => { loadLexicon().then(setLex).catch(() => {}); }, []);
+  useEffect(() => { setOwnerHost(isPrivateHost(window.location.hostname)); }, []);
 
   // Deep-link: open ?word= on load (shareable); reflect selection in the URL.
   useEffect(() => {
@@ -177,6 +180,12 @@ export default function LexiconPage() {
           <span><b className="text-white/80">{legoCount}</b> legos</span>
           <span><b className="text-white/80">{imageCount}</b> images</span>
         </div>
+        {ownerHost && (
+          <a href="/atelier"
+            className="mt-5 inline-block rounded-full border border-white/15 bg-white/[0.03] px-5 py-2 font-mono text-[10px] uppercase tracking-[0.3em] text-white/60 transition hover:border-white/40 hover:text-white">
+            🖼 enter the atelier — the private hanging
+          </a>
+        )}
       </header>
 
       <div className="mx-auto mt-8 flex max-w-md items-center gap-2">
