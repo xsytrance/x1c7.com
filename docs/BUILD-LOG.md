@@ -7,6 +7,17 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (III) — /engine: the showroom
+
+One public page organizing everything the Prism integration shipped —
+"THE SHOW LEARNED TO HEAR ITSELF." Four movements (The Words / The Field /
+The Instrument / The Foundation), a card per feature with a "see it"
+pointer, hero links to a reference song, /music, and the Kinetica demo,
+PRISM credited in the hero, a dedication to Charles in the footer. Static,
+house style, single isolated commit for easy revert.
+
+---
+
 ## 2026-07-14 (II) — The looks picker: the engine work becomes touchable
 
 `KineticLooksPanel` (engine component, synced): a glass card in the house
