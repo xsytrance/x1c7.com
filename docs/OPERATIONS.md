@@ -33,7 +33,10 @@ served from R2 (via `engineHost.PLANET_BASE`), not the repo.
 
 ## What runs itself — the nightly pipeline (cron, 1 AM ET)
 
-`scripts/lexicon/grow-and-publish.sh` (installed in crontab) does, in order:
+`scripts/lexicon/grow-and-publish.sh` — now a **systemd user timer**
+(`lexicon-grow.timer`, 1 AM, `Persistent=true` so a sleeping machine runs it
+on wake; the crontab install died in the 2026-07 OS reinstall and the timer
+replaced it 2026-07-14) — does, in order:
 
 1. **Lexicon grow** — `harvest.mjs` (pull new songs' words) → `dream.mjs` (fill legos) →
    `publish.mjs` (upload `lexicon.json` to R2).

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "galaxy": "xsytrance-canon",
-  "generatedAt": "2026-07-10T05:17:02.838Z",
+  "generatedAt": "2026-07-14T12:21:51.599Z",
   "entries": {
     "circus": {
       "word": "circus",
@@ -557,10 +557,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 6,
+      "freq": 7,
       "sources": [
         "cc",
         "seoul"
@@ -754,10 +754,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 6,
+      "freq": 7,
       "sources": [
         "cc",
         "dts"
@@ -1215,10 +1215,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "dts"
       ],
@@ -1266,7 +1266,7 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         },
         {
           "gloss": "Determined",
@@ -1307,7 +1307,7 @@
           "score": 3
         }
       ],
-      "freq": 6,
+      "freq": 7,
       "sources": [
         "dts",
         "still"
@@ -1359,10 +1359,10 @@
               "flare"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "dts"
       ],
@@ -1411,10 +1411,10 @@
               "blackout"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "dts"
       ],
@@ -1461,10 +1461,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "dts"
       ],
@@ -1511,10 +1511,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "dts"
       ],
@@ -3019,7 +3019,7 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         },
         {
           "gloss": "Intimate",
@@ -3059,7 +3059,7 @@
           "score": 3
         }
       ],
-      "freq": 9,
+      "freq": 10,
       "sources": [
         "quit",
         "seoul",
@@ -3476,10 +3476,10 @@
               "flare"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "seoul"
       ],
@@ -3528,10 +3528,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "seoul"
       ],
@@ -3578,10 +3578,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "seoul"
       ],
@@ -3628,10 +3628,10 @@
               "godrays"
             ]
           },
-          "score": 3
+          "score": 4
         }
       ],
-      "freq": 3,
+      "freq": 4,
       "sources": [
         "seoul"
       ],
@@ -4826,6 +4826,6 @@
     "words": 87,
     "senses": 95,
     "images": 190,
-    "filled": 0
+    "filled": 87
   }
 }
