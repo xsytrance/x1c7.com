@@ -85,6 +85,15 @@ function diatonicRatio(melody) {
   return melody.words.filter((w) => ok.has(w.pc)).length / n;
 }
 
+// rclone from PATH, falling back to the userspace install (~/.local/bin —
+// the OS reinstall took the system rclone; this survives the next one too).
+const RCLONE = (() => {
+  for (const p of ["rclone", path.join(process.env.HOME || "", ".local", "bin", "rclone")]) {
+    try { execFileSync(p, ["version"], { stdio: "ignore" }); return p; } catch { /* next */ }
+  }
+  return null;
+})();
+
 function publishR2(local, remote) {
   const e = env;
   const rcloneEnv = {
@@ -96,7 +105,8 @@ function publishR2(local, remote) {
     RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: e.SECRET_ACCESS_KEY,
     RCLONE_CONFIG_R2_ENDPOINT: e.ENDPOINT,
   };
-  execFileSync("rclone", ["copyto", local, `R2:${e.BUCKET}/${remote}`, "--s3-no-check-bucket", "--no-traverse"], { env: rcloneEnv, stdio: "inherit" });
+  if (!RCLONE) throw new Error("rclone not found (PATH or ~/.local/bin)");
+  execFileSync(RCLONE, ["copyto", local, `R2:${e.BUCKET}/${remote}`, "--s3-no-check-bucket", "--no-traverse"], { env: rcloneEnv, stdio: "inherit" });
 }
 
 async function main() {
@@ -152,8 +162,14 @@ async function main() {
         diatonic: +dia.toFixed(2),
       });
       if (PUBLISH && pass) {
-        publishR2(melodyPath, `planets/${slug}/melody.json`);
-        report[report.length - 1].published = true;
+        // a publish failure marks THIS row — never a duplicate error row
+        try {
+          publishR2(melodyPath, `planets/${slug}/melody.json`);
+          report[report.length - 1].published = true;
+        } catch (e) {
+          report[report.length - 1].status = "publish-error";
+          report[report.length - 1].err = String(e).slice(0, 120);
+        }
       }
     } catch (e) {
       report.push({ slug, status: "error", err: String(e).slice(0, 120) });

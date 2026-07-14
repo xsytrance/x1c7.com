@@ -57,11 +57,16 @@ timed words + a published lead stem — **47 candidates, 43 pass, 4 flagged,
   `scripts/stem-analysis/out/melody-report.json` (out/ is gitignored; it
   caches ~6 MB of lead-stem audio per song).
 
-**Rollout status: NOT yet published.** Eyeball a show first (e.g. /studio on
-light-it-myself — 0.82 coverage, 0.99 diatonic, B major — or under-the-
-elevated), then:
-
-    node scripts/stem-analysis/melody-batch.mjs --publish
+**Rollout: PUBLISHED (owner-run, same day).** All 43 passing melody.json
+files live on R2 (`planets/<slug>/melody.json`, spot-verified: light-it-
+myself B major/494 words, summer-drip, under-the-elevated) — pitch-colored
+words, note-hued ghosts, and melody motion are now live on x1c7.com for
+every passing song, no deploy needed (the engine loads the convention path
+at runtime). The first attempt failed 43/43 with `spawnSync rclone ENOENT`:
+**rclone died in the OS reinstall** — reinstalled as a static binary at
+`~/.local/bin/rclone` (survives the next reinstall), the script now falls
+back to that path, and a publish failure marks the row `publish-error`
+instead of appending a duplicate.
 
 ---
 
