@@ -27,6 +27,8 @@
 import { Program, QUAD_VS, drawQuad, bindRT, createRT, disposeRT, GLSL_NOISE, type RT } from "./gl";
 import { P } from "./params";
 import { featureBus, type EngineFeatures, type WordGhost } from "./features";
+import { stemMixStore } from "@/lib/stemMix";
+import type { StemName } from "@/lib/stemSense";
 
 const SCENE_HEADER = `#version 300 es
 precision highp float;
@@ -160,13 +162,65 @@ void main() {
   fragColor = vec4(uColor * a * uAlpha, a * uAlpha);
 }`;
 
+// ── STEM X-RAY ── when the Lens solos an instrument, the backdrop surfaces
+// that stem's ANATOMY: drums strike expanding impact rings on the real beat
+// grid, bass stands a slow heavy wave, the voice breathes light around the
+// active lyric, the choir raises twin halos, the bed drifts chord curtains.
+// One shader, five families, driven by the (mixer-honest) stem envelopes —
+// so what you soloed is literally the only thing the world is made of.
+const XRAY_FS = `#version 300 es
+precision highp float;
+in vec2 vUv; out vec4 fragColor;
+uniform vec2 uRes, uWord;
+uniform float uTime, uFamily, uEnv, uAmt, uKick, uBeat, uBeatPhase;
+uniform vec3 uPal0, uPal1, uPal2;
+${GLSL_NOISE}
+void main() {
+  float asp = uRes.x / uRes.y;
+  vec2 p = (vUv - 0.5) * vec2(asp, 1.0);
+  vec3 col = vec3(0.0);
+  if (uFamily < 0.5) {
+    // DRUMS — impact rings ride the beat phase; kicks flash the core
+    float r = length(p);
+    float ring = abs(uBeatPhase * 1.1 - r);
+    col += uPal2 * exp(-ring * 34.0) * (0.35 + uKick * 1.6) * (0.3 + uEnv);
+    float ring2 = abs(fract(uBeatPhase + 0.5) * 1.1 - r);
+    col += uPal2 * 0.5 * exp(-ring2 * 44.0) * (0.2 + uEnv * 0.8);
+    col += vec3(1.0) * step(0.996, hash21(floor(p * 42.0) + floor(uTime * 9.0))) * uEnv * 0.8;
+  } else if (uFamily < 1.5) {
+    // BASS — a standing wave with real weight
+    float w = sin(p.x * 5.0 + uTime * 1.1) * cos(p.x * 2.2 - uTime * 0.7);
+    float d = abs(p.y - w * 0.28 * (0.25 + uEnv));
+    col += uPal1 * exp(-d * 11.0) * (0.35 + uEnv * 1.1);
+    col += uPal1 * 0.35 * exp(-abs(p.y) * 2.2) * uEnv;
+  } else if (uFamily < 2.5) {
+    // VOICE — radiance breathing where the lyric lives
+    vec2 w2 = (uWord - 0.5) * vec2(asp, 1.0);
+    float d2 = dot(p - w2, p - w2);
+    col += uPal0 * exp(-d2 * (7.0 - uEnv * 4.0)) * (0.25 + uEnv * 1.3);
+    col += uPal0 * 0.3 * exp(-d2 * 1.6) * uEnv;
+  } else if (uFamily < 3.5) {
+    // CHOIR — twin halos rising in harmony
+    for (int i = 0; i < 2; i++) {
+      vec2 c = vec2(float(i) * 0.9 - 0.45, sin(uTime * 0.35 + float(i) * 2.7) * 0.15);
+      float rr = abs(length(p - c) - (0.22 + uEnv * 0.1));
+      col += mix(uPal0, uPal2, float(i)) * exp(-rr * 26.0) * (0.25 + uEnv);
+    }
+  } else {
+    // BED — slow chord curtains
+    float b = fbm(p * 1.6 + vec2(uTime * 0.12, -uTime * 0.08));
+    col += mix(uPal0, uPal1, 0.5 + 0.5 * sin(uTime * 0.2)) * smoothstep(0.35, 0.9, b) * (0.25 + uEnv * 0.9);
+  }
+  fragColor = vec4(col * uAmt, 1.0);
+}`;
+
 // ── Finishing pass: soft bloom, hue drift, grade, grain, vignette ────────────
 const POST_FS = `#version 300 es
 precision highp float;
 in vec2 vUv; out vec4 fragColor;
 uniform sampler2D uTex;
 uniform vec2 uRes;
-uniform sampler2D uGhost;
+uniform sampler2D uGhost, uXray;
 uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt;
 float hash21(vec2 p) { p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
 vec3 hueRotate(vec3 c, float a) {
@@ -177,6 +231,7 @@ vec3 hueRotate(vec3 c, float a) {
 void main() {
   vec3 col = texture(uTex, vUv).rgb;
   col += texture(uGhost, vUv).rgb * uGhostAmt; // dissolving lyrics join the field
+  col += texture(uXray, vUv).rgb;              // Lens anatomy (amt baked in)
   if (uBloom > 0.001) {
     vec3 acc = vec3(0.0);
     for (int i = 0; i < 8; i++) {
@@ -219,6 +274,8 @@ P.register({ id: "backdrop.saturation", label: "Saturation", group: "BACKDROP", 
 P.register({ id: "backdrop.brightness", label: "Brightness", group: "BACKDROP", min: 0.2, max: 2, value: 1 });
 // How hard the world tenses before a measured drop (0 = ignore the future).
 P.register({ id: "backdrop.anticipation", label: "Anticipation", group: "BACKDROP", min: 0, max: 1, value: 0.8 });
+// Stem X-ray: how strongly a Lens-soloed instrument's anatomy surfaces.
+P.register({ id: "backdrop.xray", label: "Stem X-Ray", group: "BACKDROP", min: 0, max: 1.2, value: 0.8 });
 // Word ghosts: dying lyrics dissolve into the field (0 = off).
 P.register({ id: "backdrop.ghosts", label: "Word Ghosts", group: "BACKDROP", min: 0, max: 1, value: 0.5 });
 P.register({ id: "backdrop.ghostFade", label: "Ghost Fade", group: "BACKDROP", min: 0.9, max: 0.995, value: 0.975 });
@@ -256,7 +313,10 @@ export class BackdropRenderer {
   private post: Program;
   private ghostDecay: Program;
   private stamp: Program;
-  private rts: { a: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT } | null = null;
+  private xray: Program;
+  private rts: { a: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT; xrayRT: RT } | null = null;
+  private xrayAmt = 0;
+  private xrayFamily = 0; // held through the fade-out so the anatomy doesn't flip
   private time = 0;
   private pal: [number, number, number][] = [[0.3, 0.8, 1], [1, 0.3, 0.6], [1, 0.85, 0.4]];
   private seed = 0;
@@ -274,6 +334,7 @@ export class BackdropRenderer {
     this.post = new Program(gl, QUAD_VS, POST_FS);
     this.ghostDecay = new Program(gl, QUAD_VS, GHOST_DECAY_FS);
     this.stamp = new Program(gl, STAMP_VS, STAMP_FS);
+    this.xray = new Program(gl, QUAD_VS, XRAY_FS);
     this.ghostCanvas = document.createElement("canvas");
     this.ghostCanvas.width = 512;
     this.ghostCanvas.height = 192;
@@ -312,6 +373,7 @@ export class BackdropRenderer {
       pong: createRT(gl, w, h),
       ghostPing: createRT(gl, w, h),
       ghostPong: createRT(gl, w, h),
+      xrayRT: createRT(gl, w, h),
     };
   }
 
@@ -416,6 +478,40 @@ export class BackdropRenderer {
     const dying = featureBus.drainGhosts(); // drain even while off — no backlog
     if (ghostAmt > 0.001) for (const g of dying) this.stampGhost(g);
 
+    // ── stem X-ray: the Lens solos an instrument → its anatomy surfaces ──
+    // family: 0 drums 1 bass 2 voice 3 choir 4 bed; the dominant (by live
+    // envelope) soloed family wins; the amount eases in/out so engaging the
+    // Lens feels like focusing an instrument, not flipping a switch.
+    const mixState = stemMixStore.snapshot();
+    const soloed = mixState.active && mixState.solo?.length ? mixState.solo : null;
+    let targetAmt = 0;
+    if (soloed) {
+      const famOf = (s: StemName) => (s === "drums" || s === "perc") ? 0 : s === "bass" ? 1 : s === "lead" ? 2 : s === "back" ? 3 : 4;
+      const envOf = [F.drums, F.bass, F.voice, F.choir, F.bed];
+      let best = -1;
+      for (const s of soloed) {
+        const f = famOf(s);
+        if (best < 0 || envOf[f] > envOf[best]) best = f;
+      }
+      this.xrayFamily = best;
+      targetAmt = P.get("backdrop.xray");
+    }
+    this.xrayAmt += (targetAmt - this.xrayAmt) * Math.min(1, F.dt * 5);
+    const { xrayRT } = this.rts;
+    bindRT(gl, xrayRT);
+    this.xray.use()
+      .v2("uRes", xrayRT.w, xrayRT.h)
+      .f("uTime", this.time)
+      .f("uFamily", this.xrayFamily)
+      .f("uEnv", [F.drums, F.bass, F.voice, F.choir, F.bed][this.xrayFamily] ?? 0)
+      .f("uAmt", this.xrayAmt < 0.004 ? 0 : this.xrayAmt)
+      .f("uKick", F.kick).f("uBeat", F.beat).f("uBeatPhase", F.beatPhase)
+      .v2("uWord", F.wordX, 1 - F.wordY)
+      .v3("uPal0", p0[0], p0[1], p0[2])
+      .v3("uPal1", p1[0], p1[1], p1[2])
+      .v3("uPal2", p2[0], p2[1], p2[2]);
+    drawQuad(gl);
+
     bindRT(gl, null);
     this.post.use()
       .v2("uRes", this.canvas.width, this.canvas.height)
@@ -429,7 +525,8 @@ export class BackdropRenderer {
       .f("uDrop", drop)
       .f("uGhostAmt", ghostAmt)
       .tex("uTex", ping.tex)
-      .tex("uGhost", ghostPing.tex);
+      .tex("uGhost", ghostPing.tex)
+      .tex("uXray", xrayRT.tex);
     drawQuad(gl);
 
     [this.rts.ping, this.rts.pong] = [this.rts.pong, this.rts.ping];
@@ -443,6 +540,7 @@ export class BackdropRenderer {
     this.post.dispose();
     this.ghostDecay.dispose();
     this.stamp.dispose();
+    this.xray.dispose();
     gl.deleteTexture(this.ghostTex);
     if (this.rts) { for (const rt of Object.values(this.rts)) disposeRT(gl, rt); this.rts = null; }
   }

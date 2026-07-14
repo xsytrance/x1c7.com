@@ -19,6 +19,7 @@
 import { envAt, activeRiser, type StemData } from "@/lib/stemSense";
 import { activeSection, type PlanetSection } from "@/lib/planet";
 import { beatClock } from "@/lib/beatClock";
+import { stemMixStore } from "@/lib/stemMix";
 
 export type EnergyTier = "LOW" | "MID" | "PEAK";
 
@@ -167,13 +168,22 @@ export const featureBus = {
     F.sectionPulse = Math.max(0, F.sectionPulse - dt * 1.2);
     F.wordPulse = Math.max(0, F.wordPulse - dt * 3.5);
 
-    // ── stem envelopes: the real instruments, straight off the analysis ──
+    // ── stem envelopes: the real instruments, straight off the analysis —
+    // scaled by the LIVE mixer's solo-aware gains, so a muted instrument
+    // takes its visuals with it everywhere (backdrop, LFO follows, X-ray).
+    // visualGain is 1 for every stem while the mastered mp3 plays. ──
     if (stems) {
-      F.drums = envAt(stems, "drums", t);
-      F.bass = envAt(stems, "bass", t);
-      F.voice = envAt(stems, "lead", t);
-      F.choir = envAt(stems, "back", t);
-      F.bed = Math.max(envAt(stems, "synth", t), envAt(stems, "other", t), envAt(stems, "guitar", t), envAt(stems, "keys", t));
+      const vg = (s: Parameters<typeof stemMixStore.visualGain>[0]) => stemMixStore.visualGain(s);
+      F.drums = envAt(stems, "drums", t) * vg("drums");
+      F.bass = envAt(stems, "bass", t) * vg("bass");
+      F.voice = envAt(stems, "lead", t) * vg("lead");
+      F.choir = envAt(stems, "back", t) * vg("back");
+      F.bed = Math.max(
+        envAt(stems, "synth", t) * vg("synth"),
+        envAt(stems, "other", t) * vg("other"),
+        envAt(stems, "guitar", t) * vg("guitar"),
+        envAt(stems, "keys", t) * vg("keys"),
+      );
     } else {
       // no measured hearing — drift to silence instead of lying
       const k = Math.min(1, dt * 3);

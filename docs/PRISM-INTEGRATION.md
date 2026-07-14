@@ -203,30 +203,39 @@ Known issue (pre-existing, non-blocking): React #418 hydration warning on
 `/dev/perf` in **focus mode** — fires with melody off too; dynamic mode is
 clean. Investigate separately.
 
+**Stem X-ray** also shipped (2026-07-13): the feature bus multiplies every
+stem envelope by the live mixer's solo-aware `visualGain`, so a muted
+instrument takes its visuals with it EVERYWHERE (backdrop scenes, LFO
+follows, X-ray). And when the Lens solos a stem, a dedicated backdrop pass
+surfaces that family's anatomy — drums strike impact rings on the beat
+phase, bass stands a heavy wave, the voice breathes radiance at the active
+lyric, the choir raises twin halos, the bed drifts chord curtains
+(`XRAY_FS`, one shader, five families; `backdrop.xray` gain; eases in/out).
+Verified: soloing LEAD collapsed `bed` 0.81→0 on the bus while `voice`
+kept tracking the real vocal envelope; screenshots confirm the radiance.
+
 Next, roughly in order of jaw-drop per effort:
 
-1. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
-   wired to the existing mixer (mute the drums, their layer dies).
-2. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
+1. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
    (PRISM's deck architecture, driven by structure instead of a human).
-3. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
+2. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
    melody.json.
-4. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
+3. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
    uniform (`uKeyHue`) so the field itself sits in the song's key, not just
    the words.
-5. **Presets/banks with morphing + look filtering**; `.kinetica` files get
+4. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
-6. **Automation recording** — ride the deck live once, bake it into the
+5. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
-7. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
+6. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
    `?` shortcut overlay, SHOW/CHOREOGRAPH/LIBRARY workspaces — in x1c7's
    own palette (#05030b void, #43f7ff plasma, #ff2440 signal).
-8. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
+7. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
     bundled into shareable packs.
-9. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
+8. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
     clock; PRISM follows. Two engines, one tempo, side by side.
-10. **Recording via single-canvas compositing**, **Art-Net room lighting**
+9. **Recording via single-canvas compositing**, **Art-Net room lighting**
     that anticipates the drop, **collector-frame bezels**.
 
 Deliberately not doing: MilkDrop import, MIDI, neural stem separation

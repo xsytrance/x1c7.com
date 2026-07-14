@@ -7,6 +7,35 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (VI) — Stem X-ray: the Lens gets a visual soul
+
+Two halves, both engine-side (synced):
+
+- **The feature bus honors the live mixer.** Every stem envelope is now
+  multiplied by `stemMixStore.visualGain` (solo-aware, 1 while the mp3
+  plays) — so muting an instrument takes its visuals with it EVERYWHERE:
+  backdrop scenes stop reacting to it, stem-follow modulators go quiet,
+  the X-ray reads honest numbers. Verified: soloing LEAD collapsed the
+  bus's `bed` 0.81 → 0 while `voice` kept tracking the real vocal
+  envelope through its phrases and breaths (0.75–0.8 ↔ 0).
+- **The X-ray anatomy pass.** When the Lens solos a stem, a dedicated
+  backdrop pass surfaces that family's anatomy — DRUMS strike expanding
+  impact rings on the beat phase (kicks flash the core), BASS stands a
+  slow heavy wave, VOICE breathes radiance around the active lyric, CHOIR
+  raises twin halos, BED drifts chord curtains. One shader, five families,
+  colored from the song's palette; `backdrop.xray` sets the strength and
+  the amount eases in/out so engaging the Lens feels like focusing an
+  instrument, not flipping a switch. The family holds through the fade-out
+  so the anatomy never flips mid-dissolve.
+
+No UI work needed — the existing mixer/Lens drives it through the store.
+`window.KINETICA` now exposes `stemMixStore` for console play. (Melody
+publish to R2 was attempted per the owner's go-ahead but held by the
+permission gate — the owner runs
+`node scripts/stem-analysis/melody-batch.mjs --publish` directly.)
+
+---
+
 ## 2026-07-13 (V) — Melody batch: the whole catalog analyzed, rollout is one command
 
 `melody-batch.mjs` ran the melody analyzer across every live track with
