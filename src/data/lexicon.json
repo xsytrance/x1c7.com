@@ -4742,7 +4742,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-1.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-2.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-2.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s0-3-word-portrait.webp"
           ],
           "palette": [
             "#FFD700",
@@ -4775,7 +4777,12 @@
           "imageryPrompts": [
             "keep, sinister-fun mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s1-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s1-4-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s1-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s1-1-dark-surreal.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4799,7 +4806,12 @@
           "imageryPrompts": [
             "keep, melancholic and introspective mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s2-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s2-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s2-4-dark-surreal.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s2-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4825,7 +4837,12 @@
           "imageryPrompts": [
             "keep, defiant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s3-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s3-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s3-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s3-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4851,7 +4868,12 @@
           "imageryPrompts": [
             "keep, cathartic urban release mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s4-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s4-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s4-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s4-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4875,7 +4897,12 @@
           "imageryPrompts": [
             "keep, flirtatious mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s5-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s5-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s5-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s5-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4899,7 +4926,12 @@
           "imageryPrompts": [
             "keep, dark seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s6-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s6-2-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s6-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s6-4-noir.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -4925,7 +4957,12 @@
           "imageryPrompts": [
             "keep, flirtatious confidence mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s7-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s7-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s7-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/keep/s7-1-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12593,7 +12630,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-1.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-2.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-2.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s0-4-papercut.webp"
           ],
           "palette": [
             "#FFD700",
@@ -12632,7 +12671,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-1.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-2.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-2.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s1-3-word-portrait.webp"
           ],
           "palette": [
             "#d9d9d9",
@@ -12669,7 +12710,12 @@
           "imageryPrompts": [
             "gold, dark seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s2-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s2-3-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s2-1-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s2-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12695,7 +12741,12 @@
           "imageryPrompts": [
             "gold, sinister playfulness with gritty noir-cartoon atmosphere mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s3-4-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s3-2-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s3-1-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s3-3-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12719,7 +12770,12 @@
           "imageryPrompts": [
             "gold, euphoric, uplifting, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s4-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s4-3-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s4-1-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s4-2-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12746,7 +12802,12 @@
           "imageryPrompts": [
             "gold, flirtatious confidence mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12770,7 +12831,12 @@
           "imageryPrompts": [
             "gold, sultry mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s6-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s6-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s6-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s6-1-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12794,7 +12860,12 @@
           "imageryPrompts": [
             "gold, confident mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s7-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s7-1-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s7-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s7-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12818,7 +12889,12 @@
           "imageryPrompts": [
             "gold, cathartic resilience mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s8-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s8-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s8-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s8-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12842,7 +12918,12 @@
           "imageryPrompts": [
             "gold, defiant celebration mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-3-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-1-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-2-stickers.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12869,7 +12950,12 @@
           "imageryPrompts": [
             "gold, sinister mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s10-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s10-4-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s10-2-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s10-1-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12893,7 +12979,12 @@
           "imageryPrompts": [
             "gold, aggressive, triumphant, raw, anthemic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-1-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-3-noir.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12920,7 +13011,12 @@
           "imageryPrompts": [
             "gold, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-2-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12947,7 +13043,12 @@
           "imageryPrompts": [
             "gold, triumphant discipline mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s13-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s13-3-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s13-1-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s13-2-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -12974,7 +13075,12 @@
           "imageryPrompts": [
             "gold, ominous yet playfully dangerous mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-2-noir.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18750,7 +18856,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-2-cinema.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-1-anime.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-4-dream-collage.webp"
           ],
           "palette": [],
           "legos": {
@@ -18779,7 +18887,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-1-film-still.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-2-concept-art.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-2-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-4-cinema.webp"
           ],
           "palette": [],
           "legos": {
@@ -18807,7 +18917,10 @@
             "every, cathartic urban release mood, cinematic, volumetric light"
           ],
           "images": [
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-2-word-portrait.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-2-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-1-dream-collage.webp"
           ],
           "palette": [],
           "legos": {
@@ -18832,7 +18945,12 @@
           "imageryPrompts": [
             "every, 0.85 mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s4-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s4-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s4-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s4-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18858,7 +18976,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-1-dark-surreal.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-4-pixel.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-4-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-2-film-still.webp"
           ],
           "palette": [],
           "legos": {
@@ -18885,7 +19005,12 @@
           "imageryPrompts": [
             "every, sinister playfulness with gritty noir-cartoon atmosphere mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s6-4-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s6-2-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s6-1-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s6-3-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18910,7 +19035,10 @@
             "every, euphoric, uplifting, intense mood, cinematic, volumetric light"
           ],
           "images": [
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-3-manga-line.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-3-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-1-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-4-cinema.webp"
           ],
           "palette": [],
           "legos": {
@@ -18937,7 +19065,12 @@
           "imageryPrompts": [
             "every, flirtatious confidence mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s8-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s8-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s8-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s8-1-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18961,7 +19094,12 @@
           "imageryPrompts": [
             "every, aching defiant hope mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s9-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s9-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s9-4-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s9-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18990,7 +19128,12 @@
           "imageryPrompts": [
             "every, triumphant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s10-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s10-2-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s10-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s10-4-poster.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19016,7 +19159,12 @@
           "imageryPrompts": [
             "every, sultry mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s11-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s11-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s11-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s11-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19040,7 +19188,12 @@
           "imageryPrompts": [
             "every, aggressively seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s12-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s12-3-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s12-1-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s12-2-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19064,7 +19217,12 @@
           "imageryPrompts": [
             "every, euphoric mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s13-2-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s13-4-3d-toy.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s13-3-papercut.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s13-1-film-still.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19090,7 +19248,12 @@
           "imageryPrompts": [
             "every, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s14-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s14-3-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s14-1-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s14-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19116,7 +19279,12 @@
           "imageryPrompts": [
             "every, confident mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s15-2-3d-toy.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s15-1-papercut.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s15-3-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s15-4-stickers.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19141,7 +19309,10 @@
             "every, intimate and tender mood, cinematic, volumetric light"
           ],
           "images": [
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-4-analog.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-4-analog.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-2-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-1-word-portrait.webp"
           ],
           "palette": [],
           "legos": {
@@ -19168,7 +19339,12 @@
           "imageryPrompts": [
             "every, playful yet eerie mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s17-1-poster.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s17-4-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s17-2-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s17-3-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19192,7 +19368,12 @@
           "imageryPrompts": [
             "every, nostalgic and melancholic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s18-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s18-3-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s18-1-chalkboard.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s18-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19218,7 +19399,12 @@
           "imageryPrompts": [
             "every, defiant celebration mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s19-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s19-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s19-2-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s19-1-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19244,7 +19430,12 @@
           "imageryPrompts": [
             "every, heartbreak mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s20-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s20-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s20-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s20-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19268,7 +19459,12 @@
           "imageryPrompts": [
             "every, aggressive, triumphant, raw, anthemic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s21-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s21-3-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s21-1-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s21-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19294,7 +19490,12 @@
           "imageryPrompts": [
             "every, triumphant discipline mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s22-1-poster.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s22-4-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s22-2-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s22-3-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19320,7 +19521,12 @@
           "imageryPrompts": [
             "every, 0.45 mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s23-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s23-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s23-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s23-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19344,7 +19550,12 @@
           "imageryPrompts": [
             "every, euphoric and intimate mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s24-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s24-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s24-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s24-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19370,7 +19581,12 @@
           "imageryPrompts": [
             "every, sensual mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s25-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s25-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s25-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s25-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19394,7 +19610,12 @@
           "imageryPrompts": [
             "every, ominous yet playfully dangerous mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s26-2-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s26-4-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s26-3-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s26-1-film-still.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22021,7 +22242,12 @@
           "imageryPrompts": [
             "say, bittersweet mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s0-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s0-2-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s0-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s0-4-noir.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22047,7 +22273,12 @@
           "imageryPrompts": [
             "say, melancholic and introspective mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s1-1-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s1-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s1-3-noir.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s1-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22073,7 +22304,12 @@
           "imageryPrompts": [
             "say, 0.85 mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s2-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s2-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s2-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s2-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22097,7 +22333,12 @@
           "imageryPrompts": [
             "say, flirtatious mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s3-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s3-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s3-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s3-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22121,7 +22362,12 @@
           "imageryPrompts": [
             "say, dark seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s4-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s4-2-noir.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s4-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s4-4-neon-night.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22147,7 +22393,12 @@
           "imageryPrompts": [
             "say, sinister playfulness with gritty noir-cartoon atmosphere mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s5-1-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s5-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s5-3-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s5-4-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22171,7 +22422,12 @@
           "imageryPrompts": [
             "say, flirtatious confidence mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s6-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s6-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s6-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s6-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22195,7 +22451,12 @@
           "imageryPrompts": [
             "say, aching defiant hope mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s7-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s7-4-papercut.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s7-3-storybook.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s7-2-watercolor.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22224,7 +22485,12 @@
           "imageryPrompts": [
             "say, sultry mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s8-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s8-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s8-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s8-1-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22248,7 +22514,12 @@
           "imageryPrompts": [
             "say, aggressively seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s9-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s9-4-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s9-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s9-1-dark-surreal.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22272,7 +22543,12 @@
           "imageryPrompts": [
             "say, euphoric mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s10-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s10-2-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s10-1-stickers.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s10-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22298,7 +22574,12 @@
           "imageryPrompts": [
             "say, confident mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s11-2-3d-toy.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s11-1-papercut.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s11-3-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s11-4-stickers.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22322,7 +22603,12 @@
           "imageryPrompts": [
             "say, defiant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s12-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s12-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s12-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s12-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22348,7 +22634,12 @@
           "imageryPrompts": [
             "say, intimate and tender mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s13-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s13-2-chalkboard.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s13-1-papercut.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s13-3-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22374,7 +22665,12 @@
           "imageryPrompts": [
             "say, playful yet eerie mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s14-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s14-2-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s14-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s14-4-poster.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22398,7 +22694,12 @@
           "imageryPrompts": [
             "say, #1a0b2e mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s15-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s15-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s15-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s15-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22422,7 +22723,12 @@
           "imageryPrompts": [
             "say, cathartic resilience mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s16-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s16-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s16-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s16-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22446,7 +22752,12 @@
           "imageryPrompts": [
             "say, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s17-2-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s17-4-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s17-3-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s17-1-film-still.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22472,7 +22783,12 @@
           "imageryPrompts": [
             "say, lonely paranoia mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s18-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s18-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s18-3-analog.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s18-1-dark-surreal.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22498,7 +22814,12 @@
           "imageryPrompts": [
             "say, triumphant discipline mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s19-1-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s19-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s19-3-poster.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s19-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22524,7 +22845,12 @@
           "imageryPrompts": [
             "say, 0.45 mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s20-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s20-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s20-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s20-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22548,7 +22874,12 @@
           "imageryPrompts": [
             "say, sensual mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s21-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s21-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s21-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s21-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -22572,7 +22903,12 @@
           "imageryPrompts": [
             "say, sultry, intimate, hushed, hypnotic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s22-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s22-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s22-3-analog.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/say/s22-1-oil-light.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41520,7 +41856,12 @@
           "imageryPrompts": [
             "little, weightless serene mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s0-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s0-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s0-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s0-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41546,7 +41887,12 @@
           "imageryPrompts": [
             "little, defiant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s1-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s1-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s1-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s1-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41572,7 +41918,12 @@
           "imageryPrompts": [
             "little, cathartic urban release mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s2-4-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s2-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s2-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s2-1-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41596,7 +41947,12 @@
           "imageryPrompts": [
             "little, flirtatious mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s3-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s3-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s3-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s3-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41620,7 +41976,12 @@
           "imageryPrompts": [
             "little, sinister playfulness with gritty noir-cartoon atmosphere mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s4-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s4-3-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s4-2-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s4-4-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41644,7 +42005,12 @@
           "imageryPrompts": [
             "little, flirtatious confidence mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s5-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s5-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s5-1-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s5-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41668,7 +42034,12 @@
           "imageryPrompts": [
             "little, aching defiant hope mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s6-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s6-1-chalkboard.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s6-2-stained-glass.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s6-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41697,7 +42068,12 @@
           "imageryPrompts": [
             "little, triumphant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s7-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s7-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s7-3-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s7-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41723,7 +42099,12 @@
           "imageryPrompts": [
             "little, sultry mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s8-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s8-2-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s8-1-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s8-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41747,7 +42128,12 @@
           "imageryPrompts": [
             "little, aggressively seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s9-4-graphic-novel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s9-2-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s9-1-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s9-3-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41771,7 +42157,12 @@
           "imageryPrompts": [
             "little, euphoric mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s10-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s10-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s10-2-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s10-1-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41797,7 +42188,12 @@
           "imageryPrompts": [
             "little, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s11-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s11-3-neon-sign.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s11-2-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s11-4-stained-glass.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41823,7 +42219,12 @@
           "imageryPrompts": [
             "little, confident mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s12-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s12-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s12-3-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s12-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41847,7 +42248,12 @@
           "imageryPrompts": [
             "little, intimate and tender mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s13-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s13-1-chalkboard.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s13-2-stained-glass.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s13-4-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41873,7 +42279,12 @@
           "imageryPrompts": [
             "little, playful yet eerie mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s14-1-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s14-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s14-3-poster.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s14-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41898,7 +42309,10 @@
             "little, nostalgic and melancholic mood, cinematic, volumetric light"
           ],
           "images": [
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-1-watercolor.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-1-watercolor.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-3-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-4-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-2-chalkboard.webp"
           ],
           "palette": [],
           "legos": {
@@ -41925,7 +42339,12 @@
           "imageryPrompts": [
             "little, heartbreak mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s16-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s16-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s16-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s16-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41949,7 +42368,12 @@
           "imageryPrompts": [
             "little, sinister mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s17-1-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s17-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s17-3-noir.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s17-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41973,7 +42397,12 @@
           "imageryPrompts": [
             "little, aggressive, triumphant, raw, anthemic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s18-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s18-2-manga-line.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s18-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s18-4-noir.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41999,7 +42428,12 @@
           "imageryPrompts": [
             "little, triumphant discipline mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s19-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s19-2-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s19-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s19-4-poster.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -42025,7 +42459,12 @@
           "imageryPrompts": [
             "little, 0.45 mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s20-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s20-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s20-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s20-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -42049,7 +42488,12 @@
           "imageryPrompts": [
             "little, sensual mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s21-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s21-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s21-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s21-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -42073,7 +42517,12 @@
           "imageryPrompts": [
             "little, ominous yet playfully dangerous mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s22-3-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s22-4-pixel.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s22-2-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s22-1-dark-surreal.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -42099,7 +42548,12 @@
           "imageryPrompts": [
             "little, sultry, intimate, hushed, hypnotic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s23-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s23-1-stained-glass.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s23-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s23-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98215,7 +98669,12 @@
           "imageryPrompts": [
             "drink, aching defiant hope mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98247,7 +98706,12 @@
           "imageryPrompts": [
             "drink, sultry mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s1-4-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s1-1-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s1-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s1-3-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98271,7 +98735,12 @@
           "imageryPrompts": [
             "drink, confident mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s2-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s2-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s2-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s2-4-neon-night.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98295,7 +98764,12 @@
           "imageryPrompts": [
             "drink, #1a0b2e mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s3-2-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s3-1-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s3-3-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s3-4-photo.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98319,7 +98793,12 @@
           "imageryPrompts": [
             "drink, cathartic resilience mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s4-1-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s4-2-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s4-3-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s4-4-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98343,7 +98822,12 @@
           "imageryPrompts": [
             "drink, triumphant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s5-4-concept-art.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s5-3-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s5-2-oil-light.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s5-1-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98372,7 +98856,12 @@
           "imageryPrompts": [
             "drink, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-1-neon-night.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-2-dream-collage.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-3-word-portrait.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-4-word-neon.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -98401,7 +98890,12 @@
           "imageryPrompts": [
             "drink, defiant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-1-anime.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-4-dream-collage.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
