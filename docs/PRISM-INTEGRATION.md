@@ -185,34 +185,43 @@ harmony = close color, the tritone strains the palette hardest. Words are
 confidence-gated (≥0.35); charged words keep their accent identity; ghosts
 dissolve in their note's hue. Harness: `/dev/perf?melody=1`.
 
+**Melody motion** also shipped (2026-07-13): `melodicMotion()` reads the
+interval from the previous pitched word (entrance: rising line → the word
+lifts into place from below, ~5.5px/semitone, capped ±64) and to the next
+(exit leads the ear toward where the melody goes), and octave height above
+the singer's home register (`medianMidi`) nudges dynamic word size ±8%.
+Composes over the section-emotion motion; unpitched words are untouched.
+Verified A/B on the harness: control = constant 12px focus entrance, melody
+= interval-sized (23px on a 4-semitone leap).
+
+Known issue (pre-existing, non-blocking): React #418 hydration warning on
+`/dev/perf` in **focus mode** — fires with melody off too; dynamic mode is
+clean. Investigate separately.
+
 Next, roughly in order of jaw-drop per effort:
 
 1. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
    wired to the existing mixer (mute the drums, their layer dies).
 2. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
    (PRISM's deck architecture, driven by structure instead of a human).
-3. **Melody motion** (new idea from the melody work) — melodic *direction*
-   is already in `melody.json` (`midi` per word): rising lines lift word
-   entrances, falling lines sink them; big interval leaps get extra travel.
-   Octave → subtle weight/size nuance.
-4. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
+3. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
    melody.json.
-5. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
+4. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
    uniform (`uKeyHue`) so the field itself sits in the song's key, not just
    the words.
-6. **Presets/banks with morphing + look filtering**; `.kinetica` files get
+5. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
-7. **Automation recording** — ride the deck live once, bake it into the
+6. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
-8. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
+7. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
    `?` shortcut overlay, SHOW/CHOREOGRAPH/LIBRARY workspaces — in x1c7's
    own palette (#05030b void, #43f7ff plasma, #ff2440 signal).
-9. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
+8. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
     bundled into shareable packs.
-10. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
+9. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
     clock; PRISM follows. Two engines, one tempo, side by side.
-11. **Recording via single-canvas compositing**, **Art-Net room lighting**
+10. **Recording via single-canvas compositing**, **Art-Net room lighting**
     that anticipates the drop, **collector-frame bezels**.
 
 Deliberately not doing: MilkDrop import, MIDI, neural stem separation

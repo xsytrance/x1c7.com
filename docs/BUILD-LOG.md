@@ -7,6 +7,38 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (IV) — Melody motion: the words move with the melodic line
+
+melody.json already carried `midi` per word — now it drives motion, not just
+color. `melodicMotion()` (engine, `melody.ts`) reads each word's interval
+from the previous pitched word and to the next:
+
+- **Entrances follow the line**: a rising interval lifts the word into place
+  from below (~5.5px per semitone, capped ±64px), a falling one sinks it in
+  from above. Composes OVER the section-emotion motion (spread-merge of the
+  framer variant), so a "shatter" section still shatters — it just shatters
+  from the melody's direction.
+- **Exits lead the ear**: the word leaves toward where the melody goes NEXT
+  (the interval to the next pitched word, inverted — rising next note pulls
+  the outgoing word upward).
+- **Octave nuance**: height above/below the singer's home register
+  (`medianMidi`) scales dynamic word size ±8%.
+- Unpitched/low-confidence words keep the stock motion exactly.
+
+**Verified A/B on the harness** (focus mode isolates the outer motion):
+control run = constant 12px entrance on every word (stock FOCUS_IN); melody
+run = interval-sized entrances (23px on a ~4-semitone leap, baseline
+elsewhere). The probe needed two fixes worth remembering: sample the LAST
+`.kinetic-word` (AnimatePresence keeps the exiting word first in DOM order)
+and poll at rAF speed (entrances are 300ms).
+
+**Also:** hardened the active word's `style` prop to stay `undefined` when
+empty (hydration hygiene), and logged a **pre-existing** React #418
+hydration warning on `/dev/perf` focus mode (fires with melody off too;
+dynamic mode clean) — parked as a known issue in PRISM-INTEGRATION.md.
+
+---
+
 ## 2026-07-13 (III) — Melody sense: every word wears the note it was sung on
 
 The feature nobody has: word timings (the forced aligner) × the isolated

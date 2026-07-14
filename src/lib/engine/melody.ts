@@ -83,3 +83,42 @@ export function pitchColor(baseHue: number, w: MelodyWord | undefined, tonicPc: 
   if (!w || w.conf < minConf) return null;
   return `hsl(${pitchHue(baseHue, w.pc, tonicPc).toFixed(0)} 82% 66%)`;
 }
+
+/** Median MIDI note of the pitched words — the singer's home register.
+ * Octave nuance (a word's height above/below this) is measured against it. */
+export function medianMidi(m: MelodyData): number {
+  const v = m.words.map((w) => w.midi).sort((a, b) => a - b);
+  return v.length ? v[v.length >> 1] : 60;
+}
+
+/** MELODY MOTION — how the current word sits in the melodic line:
+ *  inDelta  = semitones from the previous pitched word (entrance direction:
+ *             rising line → the word lifts into place from below)
+ *  outDelta = semitones to the NEXT pitched word (exit direction: the word
+ *             leaves leading the ear toward where the melody goes next)
+ *  midi     = the word's own note (octave nuance).
+ * null when the word (or its window) isn't confidently voiced. */
+export function melodicMotion(
+  words: Map<number, MelodyWord>,
+  idx: number,
+  lastIdx: number,
+  minConf = 0.35,
+): { inDelta: number; outDelta: number; midi: number } | null {
+  const cur = words.get(idx);
+  if (!cur || cur.conf < minConf) return null;
+  let prev: MelodyWord | undefined;
+  for (let j = idx - 1; j >= Math.max(0, idx - 6); j--) {
+    const p = words.get(j);
+    if (p && p.conf >= minConf) { prev = p; break; }
+  }
+  let next: MelodyWord | undefined;
+  for (let j = idx + 1; j <= Math.min(lastIdx, idx + 6); j++) {
+    const n = words.get(j);
+    if (n && n.conf >= minConf) { next = n; break; }
+  }
+  return {
+    inDelta: prev ? cur.midi - prev.midi : 0,
+    outDelta: next ? next.midi - cur.midi : 0,
+    midi: cur.midi,
+  };
+}

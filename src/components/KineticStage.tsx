@@ -21,7 +21,7 @@ import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
 import { stemMixStore } from "@/lib/stemMix";
 import { featureBus } from "@/lib/engine/features";
-import { loadMelody, melodyIndex, keyPc, hexHue, pitchColor, pitchHue, type MelodyWord } from "@/lib/engine/melody";
+import { loadMelody, melodyIndex, keyPc, hexHue, pitchColor, pitchHue, medianMidi, melodicMotion, type MelodyWord } from "@/lib/engine/melody";
 import { KineticBackdrop } from "./KineticBackdrop";
 import { usePerfLite } from "@/lib/perf";
 import { PerfHUD } from "./PerfHUD";
@@ -596,7 +596,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // analyze_melody.py from the isolated lead vocal). When present, each word
   // wears the color of the note it was sung on — tonic = the theme's own hue,
   // harmonic distance = hue distance. Absent → words render exactly as before.
-  const [melody, setMelody] = useState<{ tonic: number; words: Map<number, MelodyWord> } | null>(null);
+  const [melody, setMelody] = useState<{ tonic: number; median: number; words: Map<number, MelodyWord> } | null>(null);
   useEffect(() => {
     setMelody(null);
     if (pass < 3) return;
@@ -607,7 +607,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (!url) return;
     let on = true;
     loadMelody(url).then((m) => {
-      if (on && m) setMelody({ tonic: keyPc(m), words: melodyIndex(m) });
+      if (on && m) setMelody({ tonic: keyPc(m), median: medianMidi(m), words: melodyIndex(m) });
     });
     return () => { on = false; };
   }, [track.id, track.planet, pass]);
@@ -1297,11 +1297,29 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     ? pitchColor(themeHue, melody.words.get(idx), melody.tonic)
     : null;
   const treatment: SectionMotion = section ? sectionMotion(section) : "pulse";
+  // ── MELODY MOTION ── the word moves WITH the melodic line: a rising
+  // interval lifts it into place from below, a falling one sinks it in from
+  // above (magnitude follows the leap), and the exit leads the ear toward
+  // where the melody goes NEXT. Octave height above/below the singer's home
+  // register nudges the dynamic word's size a touch (±8%).
+  const melMotion = melody && idx >= 0
+    ? melodicMotion(melody.words, idx, words.length - 1)
+    : null;
+  const melInY = melMotion ? Math.max(-64, Math.min(64, melMotion.inDelta * 5.5)) : 0;
+  const melOutY = melMotion ? -Math.max(-48, Math.min(48, melMotion.outDelta * 4)) : 0;
+  const octScale = melMotion && melody ? 1 + Math.max(-0.08, Math.min(0.08, (melMotion.midi - melody.median) * 0.011)) : 1;
   // Focus modes override the section's motion with a calm entrance + a clean
   // (Focus) or effect (Focus+, seeded per word) exit. Others ride the section.
-  const m = focusMode
+  const m0 = focusMode
     ? { ...FOCUS_IN, exit: focusFx ? FOCUS_EXITS[((idx * 2654435761) >>> 0) % FOCUS_EXITS.length] : FOCUS_EXIT_PLAIN }
     : MOTION[treatment];
+  const m = melInY || melOutY
+    ? {
+        ...m0,
+        ...(melInY ? { initial: { ...(m0.initial as object), y: melInY } } : null),
+        ...(melOutY ? { exit: { ...(m0.exit as object), y: melOutY } } : null),
+      }
+    : m0;
   // Shape-morph: lexicon words morph when they have air; charged words fall back
   // to a glyph chosen from their EMOTION, so the brain's picks always land big.
   const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
@@ -1777,10 +1795,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               <motion.div
                 key={idx}
                 className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`}
-                style={{
-                  ...(dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${dyn.size * delivery})` } : null),
+                style={dyn || pitchCol ? {
+                  ...(dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${(dyn.size * delivery * octScale).toFixed(4)})` } : null),
                   ...(pitchCol ? { color: pitchCol } : null),
-                }}
+                } : undefined}
                 ref={(el) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } }}
                 onPointerDown={pass >= 3 ? (e) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined}
                 onPointerUp={pass >= 3 ? (e) => {
