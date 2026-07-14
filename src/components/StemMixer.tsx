@@ -76,13 +76,13 @@ function ChannelStrips({ stems, data, getTime }: {
               <button
                 onClick={() => toggleMute(s)}
                 aria-label={`Mute ${STEM_INFO[s].label}`}
-                className="rounded border px-1 font-mono text-[8px]"
+                className="grid min-h-[20px] min-w-[20px] place-items-center rounded border font-mono text-[9px]"
                 style={muted ? { borderColor: "var(--inst-signal)", color: "var(--inst-signal)" } : { borderColor: "var(--inst-line)", color: "var(--inst-faint)" }}
               >M</button>
               <button
                 onClick={() => toggleSolo(s)}
                 aria-label={`Solo ${STEM_INFO[s].label} — the X-Ray`}
-                className="rounded border px-1 font-mono text-[8px]"
+                className="grid min-h-[20px] min-w-[20px] place-items-center rounded border font-mono text-[9px]"
                 style={isSolo ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)" } : { borderColor: "var(--inst-line)", color: "var(--inst-faint)" }}
               >S</button>
             </div>

@@ -156,16 +156,26 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   }, [open]);
 
   // Keys: Esc closes (drawer first), ←/→ hop songs, space play/pause.
+  // (`?` is the SITE's help — KeyboardHelp grows a show section when the
+  // takeover is on, so the vocabulary lives in one card, not two.)
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") { if (lensArmed) setLensArmed(false); else if (drawer) setDrawer(false); else onClose(); }
+      if (e.key === "Escape") {
+        // The help card takes this Esc. Capture-phase listener (below) is
+        // load-bearing: the site's bubble handler closes the card and React
+        // flushes at the microtask checkpoint BETWEEN window listeners — a
+        // bubble-phase guard would read help-open as already gone and close
+        // the show underneath the card.
+        if (document.body.classList.contains("help-open")) return;
+        if (lensArmed) setLensArmed(false); else if (drawer) setDrawer(false); else onClose();
+      }
       else if (e.key === "ArrowRight") next();
       else if (e.key === "ArrowLeft") prev();
       else if (e.key === " " && !(e.target as HTMLElement)?.closest("input,textarea")) { e.preventDefault(); togglePlay(); }
     };
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    window.addEventListener("keydown", onKey, true);
+    return () => window.removeEventListener("keydown", onKey, true);
   }, [open, onClose, drawer, lensArmed, next, prev, togglePlay]);
 
   // Karaoke highlight (line-mode fallback only) — rAF + refs, no per-frame re-render.

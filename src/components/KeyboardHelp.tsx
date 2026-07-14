@@ -23,13 +23,43 @@ const PORTALS = [
   { num: "9", label: "Field Notes", route: "/notes" },
 ];
 
+// The show's own gesture vocabulary — listed when the cinematic takeover is
+// on (PRISM's lesson: the fastest gestures are worthless if nobody can find
+// them; ONE card holds them all, not one per surface).
+const SHOW_SHORTCUTS = [
+  { key: "Space", action: "Play / pause" },
+  { key: "← →", action: "Previous / next song" },
+  { key: "tap word", action: "It reacts in the song's own language" },
+  { key: "hold stage", action: "The Lens — x-ray one instrument" },
+  { key: "swipe pile", action: "Scatter stacked words" },
+];
+
 export function KeyboardHelp() {
   const [open, setOpen] = useState(false);
+  const [inShow, setInShow] = useState(false);
+
+  // Mirror open state onto <body> (the cinematic-on convention) so other
+  // Esc handlers — the takeover's — can yield while the card is up.
+  useEffect(() => {
+    document.body.classList.toggle("help-open", open);
+    return () => document.body.classList.remove("help-open");
+  }, [open]);
 
   useEffect(() => {
-    const toggle = () => setOpen((p) => !p);
+    const toggle = () => {
+      // read the takeover state at open time — no coupling to the player
+      setInShow(document.body.classList.contains("cinematic-on"));
+      setOpen((p) => !p);
+    };
+    const close = () => setOpen(false);
     window.addEventListener("x1c7-toggle-help", toggle);
-    return () => window.removeEventListener("x1c7-toggle-help", toggle);
+    // Esc dispatches this site-wide; the help card never listened (manners
+    // pass fix — "Esc: close overlay" is finally true of the card itself).
+    window.addEventListener("x1c7-close-overlay", close);
+    return () => {
+      window.removeEventListener("x1c7-toggle-help", toggle);
+      window.removeEventListener("x1c7-close-overlay", close);
+    };
   }, []);
 
   return (
@@ -70,6 +100,21 @@ export function KeyboardHelp() {
                 </a>
               ))}
             </div>
+
+            {/* During the show — only listed while the takeover is on */}
+            {inShow && (
+              <div className="mt-5 border-t border-white/5 pt-4">
+                <p className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--inst-plasma, #43f7ff)" }}>During the show</p>
+                {SHOW_SHORTCUTS.map((s) => (
+                  <div key={s.key} className="flex items-center justify-between py-1.5">
+                    <span className="font-mono text-xs text-white/50">{s.action}</span>
+                    <span className="rounded-md border border-white/10 bg-white/[0.04] px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-white/70">
+                      {s.key}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {/* Shortcuts */}
             <div className="mt-5 border-t border-white/5 pt-4">

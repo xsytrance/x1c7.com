@@ -7,6 +7,38 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (V) — UI overhaul phases 3–5: the public face joins the instrument
+
+**Phase 3 — the Show HUD** (single revertible commit): the /music takeover
+chrome became the instrument bar — identity, mode+phase as one segmented
+control, LIVE MEASURED TELEMETRY on md+ (real BPM, section tier, a beat
+light on the actual kick), STEMS on plasma / REACTOR on signal, transport
+on instrument surfaces. Verified live: 112.3 BPM · PEAK on a real show.
+
+**Phase 4 — channel strips**: the mixer's band row became an instrument —
+per-stem LIVE MEASURED METERS (offline envelope × the listener's mix),
+M mute / S solo (solo is NEW for this panel; only the Lens could before),
+◉ X-RAY badge lighting when the backdrop surfaces the soloed instrument.
+Presets and the Lens kept their soul.
+
+**Phase 5 — the manners pass**: site-wide `:focus-visible` ring (plasma,
+2px offset); M/S hit targets ≥20px; and the `?` help done the HOUSE way —
+instead of a second card, the existing KeyboardHelp grew a "During the
+show" section (gated on the cinematic-on body class) and FINALLY listens
+to `x1c7-close-overlay`, so "Esc: close overlay" is true of the card
+itself. One real bug fixed en route: Esc was closing the help card AND
+the show beneath it — the site's bubble handler closes the card and React
+flushes at the microtask checkpoint BETWEEN window listeners, so the
+takeover's guard read help-open as already gone. The takeover's key
+listener now runs in the CAPTURE phase and reads the state as it was when
+the key was pressed. Verified: ? opens one unified card with the show
+vocabulary, first Esc closes only the card, second Esc closes the show.
+
+All five phases of the approved UI plan are now live. Phases 3–5 touch
+app-side files only — no engine sync needed.
+
+---
+
 ## 2026-07-14 (IV) — UI overhaul phases 1–2: the Studio becomes the instrument
 
 The owner greenlit the full five-phase UI plan (PRISM's architecture,

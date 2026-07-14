@@ -47,6 +47,14 @@
   box-sizing: border-box;
 }
 
+/* Keyboard navigation gets a visible ring everywhere (UI overhaul phase 5 —
+   PRISM's accessibility homework, ours to do too). Mouse/touch stays clean. */
+:focus-visible {
+  outline: 2px solid var(--inst-plasma, #43f7ff);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
 html {
   scroll-behavior: smooth;
 }
