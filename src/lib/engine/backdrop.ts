@@ -26,6 +26,7 @@
 
 import { Program, QUAD_VS, drawQuad, bindRT, createRT, disposeRT, GLSL_NOISE, type RT } from "./gl";
 import { P } from "./params";
+import { governor } from "./governor";
 import { featureBus, type EngineFeatures, type WordGhost } from "./features";
 import { stemMixStore } from "@/lib/stemMix";
 import { hexHue } from "./melody";
@@ -582,7 +583,12 @@ export class BackdropRenderer {
 
   render(F: EngineFeatures) {
     const gl = this.gl;
-    this.resize(P.get("backdrop.renderScale"));
+    // The governor's multiplier rides OUTSIDE the param registry: the user's
+    // renderScale intent stays untouched (and un-capturable by looks) while a
+    // struggling device quietly renders smaller. floor = also skip the
+    // feedback passes (trails + ghosts), the fill-rate hogs.
+    this.resize(P.get("backdrop.renderScale") * governor.scale);
+    const floor = governor.floor;
     if (!this.rts) return;
     const { a, b, mixRT, ping, pong, ghostPing, ghostPong } = this.rts;
     // Anticipation: 0 far from a drop, →1 over the last 16 beats before a
@@ -619,24 +625,28 @@ export class BackdropRenderer {
       sceneSrc = mixRT;
     }
 
-    bindRT(gl, ping);
-    this.trails.use()
-      .f("uAmount", P.get("backdrop.trails"))
-      .f("uZoom", P.get("backdrop.trailZoom"))
-      .f("uRotate", P.get("backdrop.trailRotate"))
-      .tex("uCur", sceneSrc.tex)
-      .tex("uPrev", pong.tex);
-    drawQuad(gl);
+    if (!floor) {
+      bindRT(gl, ping);
+      this.trails.use()
+        .f("uAmount", P.get("backdrop.trails"))
+        .f("uZoom", P.get("backdrop.trailZoom"))
+        .f("uRotate", P.get("backdrop.trailRotate"))
+        .tex("uCur", sceneSrc.tex)
+        .tex("uPrev", pong.tex);
+      drawQuad(gl);
+    }
 
     // ── word ghosts: decay + drift the buffer upward, then stamp this
     // frame's dying words into it (still bound) ──
-    const ghostAmt = P.get("backdrop.ghosts");
-    bindRT(gl, ghostPing);
-    this.ghostDecay.use()
-      .f("uDecay", P.get("backdrop.ghostFade"))
-      .f("uRise", P.get("backdrop.ghostRise") * 0.0012)
-      .tex("uPrev", ghostPong.tex);
-    drawQuad(gl);
+    const ghostAmt = floor ? 0 : P.get("backdrop.ghosts");
+    if (!floor) {
+      bindRT(gl, ghostPing);
+      this.ghostDecay.use()
+        .f("uDecay", P.get("backdrop.ghostFade"))
+        .f("uRise", P.get("backdrop.ghostRise") * 0.0012)
+        .tex("uPrev", ghostPong.tex);
+      drawQuad(gl);
+    }
     const dying = featureBus.drainGhosts(); // drain even while off — no backlog
     if (ghostAmt > 0.001) for (const g of dying) this.stampGhost(g);
 

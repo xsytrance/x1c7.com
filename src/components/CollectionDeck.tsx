@@ -161,7 +161,10 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={cardUrl(t.id)} alt={t.title} loading="lazy" draggable={false}
+                  src={cardUrl(t.id)} alt={t.title} draggable={false}
+                  loading={isActive ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={isActive ? "high" : "auto"}
                   className="aspect-square w-full object-cover"
                   onError={(e) => { (e.currentTarget as HTMLImageElement).src = t.cover || t.art; }}
                 />

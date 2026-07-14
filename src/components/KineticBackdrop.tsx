@@ -12,6 +12,7 @@
 import { useEffect, useRef } from "react";
 import { initGL } from "@/lib/engine/gl";
 import { BackdropRenderer, fnv1a, setActiveBackdrop } from "@/lib/engine/backdrop";
+import { governor } from "@/lib/engine/governor";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
 import { ensureModEngine } from "@/lib/engine/lfo";
@@ -51,7 +52,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     // Console handle (PRISM's window.PRISM pattern): poke params and read the
     // live feature bus from devtools — KINETICA.P.set("backdrop.trails", 0.9).
     const auto = ensureAutomation();
-    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, looks: looksStore, backdrop: renderer, automation: auto, scenes: customScenes };
+    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, looks: looksStore, backdrop: renderer, automation: auto, scenes: customScenes, governor };
 
     const mod = ensureModEngine();
     // First run ever: one tasteful default routing so the machine visibly
@@ -79,16 +80,26 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     const onLost = (e: Event) => { e.preventDefault(); dead = true; };
     canvas.addEventListener("webglcontextlost", onLost);
 
+    // Idle halt: audio silent + no touch for 20s → park the GL loop (battery).
+    // Any pointer or the music coming back wakes it instantly.
+    let lastAlive = performance.now();
+    const wake = () => { lastAlive = performance.now(); };
+    window.addEventListener("pointerdown", wake, { passive: true });
+
     let raf = 0;
     let lastOpacity = "";
     const loop = () => {
       raf = requestAnimationFrame(loop);
       if (dead || document.hidden) return;
+      const now = performance.now();
+      governor.tick(now);
       const on = P.getBool("backdrop.enabled");
       const op = on ? P.get("backdrop.opacity").toFixed(3) : "0";
       if (op !== lastOpacity) { lastOpacity = op; canvas.style.opacity = op; }
       if (!on) return;
-      P.tickMorphs(performance.now() / 1000);
+      if (featureBus.F.level > 0.004) lastAlive = now;
+      if (now - lastAlive > 20_000) return; // parked — rAF stays, renders stop
+      P.tickMorphs(now / 1000);
       mod.update(featureBus.F);
       auto.update(featureBus.F);
       try {
@@ -102,6 +113,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     return () => {
       cancelAnimationFrame(raf);
       ro.disconnect();
+      window.removeEventListener("pointerdown", wake);
       canvas.removeEventListener("webglcontextlost", onLost);
       renderer.dispose();
       setActiveBackdrop(null);

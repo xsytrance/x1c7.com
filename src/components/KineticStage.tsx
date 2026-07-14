@@ -24,6 +24,7 @@ import { featureBus } from "@/lib/engine/features";
 import { loadMelody, melodyIndex, keyPc, hexHue, pitchColor, pitchHue, medianMidi, melodicMotion, type MelodyWord } from "@/lib/engine/melody";
 import { KineticBackdrop } from "./KineticBackdrop";
 import { usePerfLite } from "@/lib/perf";
+import { beatTarget } from "@/lib/beatTarget";
 import { PerfHUD } from "./PerfHUD";
 import type { Track } from "@/lib/engineHost";
 
@@ -561,6 +562,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const lastStemT = useRef(0);
   // PHASE 5 cinematic camera: the current section's energy drives the dolly push.
   const camPush = useRef(0.35);
+  const frameNo = useRef(0); // lite: half-rate camera writes
   // Quantized grade: a section's color-grade waits for the next bar line of
   // the MEASURED beat grid instead of firing on the LLM's approximate stamp.
   const pendingGrade = useRef<{ at: number; run: () => void } | null>(null);
@@ -868,6 +870,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const rootRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
+  // On perf-lite the per-frame --beat write lands HERE instead of :root, so
+  // the 60fps style recalc is scoped to the stage subtree (beatTarget.ts).
+  useEffect(() => {
+    const r = rootRef.current;
+    if (!r) return;
+    r.style.setProperty("--beat", "0"); // consumers use var(--beat) with no fallback
+    beatTarget.set(r);
+    return () => beatTarget.clear(r);
+  }, []);
   // PHASE 5: when an earlier phase is selected, snap the cinematic camera back
   // to identity (the pass >= 5 tick stops writing --cam, so clear it here).
   useEffect(() => {
@@ -900,7 +911,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       set((0.5 - e.clientX / window.innerWidth) * 22, (0.5 - e.clientY / window.innerHeight) * 14);
     };
     window.addEventListener("deviceorientation", onTilt);
-    window.addEventListener("mousemove", onMouse);
+    // Coarse pointers emit synthetic mousemoves on tap — parallax belongs to
+    // tilt there, and each write is a style recalc we can skip.
+    const coarse = window.matchMedia?.("(pointer: coarse)").matches;
+    if (!coarse) window.addEventListener("mousemove", onMouse);
     // iOS: motion sensors need a permission request from a user gesture —
     // piggyback on the first tap anywhere in the show.
     const askMotion = () => {
@@ -1277,7 +1291,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       // two out-of-phase sines so the frame never sits still. Gated to pass >= 5;
       // a reset effect returns it to identity when an earlier phase is selected.
       const camRoot = rootRef.current;
-      if (camRoot && pass >= 5) {
+      // Lite: half-rate camera writes — the perf-lite CSS reduces the camera
+      // to translate-only anyway, and 30Hz drift is indistinguishable there.
+      if (camRoot && pass >= 5 && !(liteRef.current && (frameNo.current = (frameNo.current + 1) & 1))) {
         const push = camPush.current;                                  // 0..1 section energy
         const beat = liteRef.current ? 0 : kickPulse.current;          // live kick punch
         const scale = 1 + push * 0.13 + beat * 0.03;                   // ~1.00 .. 1.16 push-in

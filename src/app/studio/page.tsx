@@ -352,9 +352,12 @@ export default function StudioPage() {
     setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
     setOwnerHost(isPrivateHost(window.location.hostname));
     // Mobile render profile: the studio carries the FULL engine on phones
-    // (forceBackdrop below) — pay for it in resolution, not features.
+    // (forceBackdrop below) — pay for it in resolution, not features. The
+    // STARTING scale follows viewport size (an S24 Ultra earns more pixels
+    // than an iPhone 12); the frame governor owns the rest from there.
     if (window.matchMedia("(pointer: coarse)").matches) {
-      P.set("backdrop.renderScale", 0.35, "code");
+      const shortSide = Math.min(window.screen.width, window.screen.height);
+      P.set("backdrop.renderScale", shortSide >= 480 ? 0.5 : shortSide >= 410 ? 0.42 : 0.35, "code");
       P.set("backdrop.ghostFade", 0.965, "code"); // shorter ghost tails on small GPUs
     }
     const p = Number(q.get("pass"));
