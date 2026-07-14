@@ -18746,7 +18746,9 @@
           "imageryPrompts": [
             "every, weightless serene mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-2-cinema.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [

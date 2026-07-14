@@ -32,8 +32,10 @@ if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; the
   node scripts/song-art/topup.mjs --target 100 --limit 4000 \
     && echo "$(date -Iseconds) · ✦ song art top-up done" \
     || echo "$(date -Iseconds) · ✗ song art top-up failed"
-  # Lexicon community art — real pixels per word-sense (fills images:[], republishes shelf).
-  node scripts/lexicon/art.mjs --per-sense 2 --limit 4000 \
+  # Lexicon community art — the Atelier fills each sense toward 4 images from
+  # ~25 style recipes across 5 engines. 1200/night ≈ a few hours of GPU (the
+  # heavyweight engines render last, so an interrupted night loses least).
+  node scripts/lexicon/art.mjs --per-sense 4 --limit 1200 \
     && echo "$(date -Iseconds) · ✦ lexicon art done" \
     || echo "$(date -Iseconds) · ✗ lexicon art failed"
   # Gravitational feed — drain any queued feed jobs (safety net for the watcher).
