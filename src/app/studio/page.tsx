@@ -254,9 +254,13 @@ function LyricsInbox() {
         className="mt-2 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] p-3 font-mono text-[11px] leading-5 text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]"
       />
       <button onClick={save} disabled={text.trim().length < 20}
-        className="mt-2 w-full rounded-full py-2.5 font-display text-xs font-black uppercase tracking-[0.2em] text-black transition enabled:hover:scale-[1.01] disabled:opacity-40"
-        style={{ background: "var(--inst-warn)" }}>
-        Save to the inbox
+        className="mt-2 w-full rounded-lg border py-2.5 font-mono text-[10px] uppercase tracking-[0.25em] transition enabled:hover:scale-[1.01] disabled:opacity-40"
+        style={{
+          borderColor: "color-mix(in srgb, var(--inst-warn) 50%, transparent)",
+          background: "color-mix(in srgb, var(--inst-warn) 8%, transparent)",
+          color: "var(--inst-warn)",
+        }}>
+        ＋ Save to the inbox
       </button>
       {msg && <p className="mt-2 font-mono text-[10px] tracking-wide" style={{ color: msg.startsWith("✓") ? "var(--inst-ok)" : "var(--inst-signal)" }}>{msg}</p>}
     </div>
@@ -416,9 +420,14 @@ export default function StudioPage() {
       {selected && canPerform(selected) && (
         <button
           onClick={() => launch(selected)}
-          className="mt-5 w-full rounded-full py-3 font-display text-sm font-black uppercase tracking-[0.2em] text-black transition hover:scale-[1.02]"
-          style={{ background: "var(--inst-plasma)" }}
-        >▶ Launch “{selected.title}”</button>
+          className="mt-5 flex w-full items-center justify-center gap-2.5 rounded-lg border py-3 font-mono text-[11px] uppercase tracking-[0.25em] transition hover:scale-[1.01]"
+          style={{
+            borderColor: "color-mix(in srgb, var(--inst-plasma) 50%, transparent)",
+            background: "color-mix(in srgb, var(--inst-plasma) 8%, transparent)",
+            color: "var(--inst-plasma)",
+            boxShadow: "0 0 18px color-mix(in srgb, var(--inst-plasma) 18%, transparent)",
+          }}
+        >▶ Launch <span className="normal-case tracking-normal text-white/70">“{selected.title}”</span></button>
       )}
       {selected && !canPerform(selected) && (
         <p className="mt-4 font-mono text-[10px] uppercase leading-5 tracking-wider text-[var(--inst-dim)]">
