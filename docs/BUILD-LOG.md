@@ -7,6 +7,35 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (XIII) — The lexicon wakes up: heartbeat, 17× harvest, ComfyUI
+
+"What's up with the lexicon?" — it was healthy but orphaned. Fixed, then
+supercharged:
+
+- **Heartbeat restored**: the nightly grow cron died in the OS reinstall
+  (hosted shelf frozen at 07-05). Replaced with `lexicon-grow.timer`
+  (systemd user, 1 AM, Persistent=true — OPERATIONS' own advice). A
+  catch-up ran and published immediately.
+- **THE LYRICS PASS (harvest.mjs)**: keywords are the LLM's dozen picks
+  per song; the catalog SINGS thousands. Harvest now also mines
+  `lyrics_synced` from the live DB — every word sung ≥ --min-freq times
+  (default 2) becomes a shelf entry sensed by its song's mood, with a
+  LYRIC_NOISE stopword set (interjections/contractions) so "ooh" never
+  gets a sub-planet. Result: **87 → 1,468 words / 5,434 senses** from
+  13,096 sung-word instances (1,410 rare words "left for the songs to
+  earn"). First bounded dream run: 120 words → **+6,217 legos**, and
+  previously-unworn effects (carve, slam, pulse, fall…) finally have
+  words. 1,330 on the frontier for the nightly timer. Shelf published —
+  every x1c7 + Kinetica install picks it up with no redeploy.
+- **ComfyUI revival (reinstall casualty #6)**: the venv survived (torch
+  2.9.1+cu128, cuda ok) but the SDXL Turbo checkpoint died with the
+  disk — and the owner's X10 backups hold code/configs/DBs, not weights
+  (searched all three backup roots). Re-downloaded from HF; ComfyUI now
+  runs as `comfyui.service` on :8188 (enabled), so the nightly art
+  passes fire again.
+
+---
+
 ## 2026-07-14 (XII) — The Pocket Instrument: the Studio goes truly mobile
 
 The owner's brief: "much much much more mobile friendly — not small
