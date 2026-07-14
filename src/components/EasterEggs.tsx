@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 const SIGNAL_WORD = "signal";
 const LOGO_CLICK_THRESHOLD = 7;
@@ -123,7 +123,7 @@ export function EasterEggs() {
       {/* Signal flash overlay */}
       <AnimatePresence>
         {signalFlash && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.15 }}
             exit={{ opacity: 0 }}
@@ -136,7 +136,7 @@ export function EasterEggs() {
       {/* Logo click secret */}
       <AnimatePresence>
         {showSecret && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.8 }}
@@ -150,14 +150,14 @@ export function EasterEggs() {
                 The signal was always here.
               </p>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 
       {/* Page-specific secret flash */}
       <AnimatePresence>
         {konamiTriggered && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 0.1 }}
             exit={{ opacity: 0 }}

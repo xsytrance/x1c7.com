@@ -5,8 +5,8 @@
 // backdrops, live color grading, beat halo, and the scrubbable emotional arc.
 // Shared by the /music cinematic takeover and the /studio playground.
 
-import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { motion, AnimatePresence, type MotionProps } from "framer-motion";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type PointerEvent as ReactPointerEvent, type ReactNode } from "react";
+import { m, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects } from "@/lib/planet";
@@ -633,7 +633,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const pulseId = useRef(0);
   const spawnRing = useCallback((big: boolean) => {
     const id = ++pulseId.current;
-    setPulseRings((r) => [...r.slice(-3), { id, big }]);
+    // Lite caps concurrent rings at 3 (2 old + the newcomer) — each ring is a
+    // full-size compositing layer while it expands.
+    setPulseRings((r) => [...r.slice(liteRef.current ? -2 : -3), { id, big }]);
   }, []);
   const lastBeatSeen = useRef(0);
   const beatN = useRef(0);
@@ -1337,7 +1339,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const m0 = focusMode
     ? { ...FOCUS_IN, exit: focusFx ? FOCUS_EXITS[((idx * 2654435761) >>> 0) % FOCUS_EXITS.length] : FOCUS_EXIT_PLAIN }
     : MOTION[treatment];
-  const m = melInY || melOutY
+  const wm = melInY || melOutY
     ? {
         ...m0,
         ...(melInY ? { initial: { ...(m0.initial as object), y: melInY } } : null),
@@ -1501,7 +1503,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (
-          <motion.div
+          <m.div
             key={bgArt}
             className="pointer-events-none fixed inset-0 -z-10"
             initial={{ opacity: 0 }}
@@ -1512,7 +1514,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             {/* parallax shell — rides the device tilt / mouse via CSS vars */}
             <div className="h-full w-full" style={{ transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))", willChange: "transform" }}>
               { }
-              <motion.img
+              <m.img
                 src={bgArt}
                 alt=""
                 className="h-full w-full object-cover"
@@ -1526,7 +1528,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               />
               <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 42%, rgba(5,3,11,0.72) 100%)" }} />
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 
@@ -1585,8 +1587,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           onPointerMove={(e) => { if (e.buttons || e.pointerType === "touch") pileSwipe(e); }}
         >
           <AnimatePresence>
-            {pile.map((p, k) => (
-              <motion.span
+            {/* Lite caps the stutter pile at the 4 newest chips — each chip is
+                a sprung motion node, and the full 34-chip pile is pure jank on
+                a phone. State still tracks the whole run (swipe/clear logic
+                untouched); we just don't mount the older chips. */}
+            {(lite ? pile.slice(-4) : pile).map((p, k) => (
+              <m.span
                 key={p.id}
                 custom={p}
                 aria-hidden
@@ -1607,7 +1613,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 }}
               >
                 {p.word}
-              </motion.span>
+              </m.span>
             ))}
           </AnimatePresence>
         </div>
@@ -1629,7 +1635,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Beat-cut blackout — the drums vanished; the world holds its breath */}
       <AnimatePresence>
         {cutMode && (
-          <motion.div
+          <m.div
             key="cut"
             className="pointer-events-none fixed inset-0 z-[4] bg-black"
             initial={{ opacity: 0 }}
@@ -1644,7 +1650,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* SUPERNOVA — the riser detonates exactly on the drop */}
       <AnimatePresence>
         {nova > 0 && (
-          <motion.div
+          <m.div
             key={`nova${nova}`}
             className="pointer-events-none fixed inset-0 z-[40]"
             style={{ background: "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.95), color-mix(in srgb, var(--theme-accent) 55%, transparent) 45%, transparent 75%)" }}
@@ -1660,7 +1666,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Title card — the brain's interpretation opens the show */}
       <AnimatePresence>
         {showTitle && (
-          <motion.div
+          <m.div
             key="title"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
@@ -1675,7 +1681,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               </p>
             )}
             {analysis?.summary && <p className="max-w-2xl text-base leading-7 text-white/60 sm:text-lg">{analysis.summary}</p>}
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 
@@ -1719,7 +1725,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               staggered TRIPLE ring, accent/primary/white */}
           <AnimatePresence>
             {pass >= 2 && wave > 0 && [0, 1, 2].map((ri) => (
-              <motion.span
+              <m.span
                 key={`w${wave}-${ri}`}
                 className="pointer-events-none absolute rounded-full"
                 style={{
@@ -1737,7 +1743,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           {/* pulse rings — charged/line-final landings and the live beat
               breathe circles through the stage (self-removing) */}
           {pulseRings.map((r) => (
-            <motion.span
+            <m.span
               key={`p${r.id}`}
               className="pointer-events-none absolute rounded-full"
               style={{
@@ -1755,7 +1761,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
             <AnimatePresence mode="wait">
               {idx >= 0 && lineIdx >= 0 && (
-                <motion.div
+                <m.div
                   key={lineIdx}
                   className="flex max-w-[86vw] flex-wrap items-baseline justify-center gap-x-[1.4vw] gap-y-2 text-center"
                   initial={{ opacity: 0, y: 26 }}
@@ -1768,7 +1774,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     const sung = gi <= idx;
                     const active = gi === idx;
                     return (
-                      <motion.span
+                      <m.span
                         key={gi}
                         className="phrase-word font-display font-black uppercase"
                         animate={{
@@ -1780,10 +1786,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                         style={active ? { filter: "drop-shadow(0 0 18px var(--theme-accent))" } : undefined}
                       >
                         {clean(w.w)}
-                      </motion.span>
+                      </m.span>
                     );
                   })}
-                </motion.div>
+                </m.div>
               )}
             </AnimatePresence>
           ) : (
@@ -1791,8 +1797,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           {/* THE PILE — recent words linger, grabbable and throwable. Lifecycle
               is state-driven (dying → fade → self-remove): AnimatePresence
               exits were silently never completing here, leaking ghosts. */}
-          {residue.map((r) => (
-            <motion.div
+          {/* Lite renders only the 4 newest residue words (3 active + the
+              freshest dying one) — older dying entries still get swept by the
+              12s hard-remove safety net in the rAF tick. */}
+          {(lite ? residue.slice(-4) : residue).map((r) => (
+            <m.div
               key={`res${r.key}`}
               ref={(el) => { if (el) { wordEls.current.set(r.key, el); const pv = phys.current.get(r.key); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } else wordEls.current.delete(r.key); }}
               className={`kinetic-word absolute cursor-grab select-none${r.mono ? " !font-mono" : ""}`}
@@ -1812,39 +1821,42 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               onPointerDown={grabStart(r.key)}
             >
               {r.word}
-            </motion.div>
+            </m.div>
           ))}
           <AnimatePresence>
-            {word && (
-              <motion.div
-                key={idx}
-                className={`kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`}
-                style={dyn || pitchCol ? {
-                  ...(dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${(dyn.size * delivery * octScale).toFixed(4)})` } : null),
-                  ...(pitchCol ? { color: pitchCol } : null),
-                } : undefined}
-                ref={(el) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } }}
-                onPointerDown={pass >= 3 ? (e) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined}
-                onPointerUp={pass >= 3 ? (e) => {
-                  const heldMs = Date.now() - chargeAt.current;
-                  setCharging(false);
-                  if (dragMoved.current) return; // it was a throw, not a tap
-                  if (heldMs >= 650) {
-                    setWave((w) => w + 1);
-                    particles.current?.burst(e.clientX, e.clientY, 60);
-                    navigator.vibrate?.([15, 40, 20]);
-                  } else {
-                    particles.current?.burst(e.clientX, e.clientY, 22);
-                    navigator.vibrate?.(25);
-                  }
-                  setTouchBurn(idx);
-                } : undefined}
-                onPointerLeave={pass >= 3 ? () => setCharging(false) : undefined}
-                {...(m as MotionProps)}
-              >
-                {/* ghost echo — line-final and charged words leave an afterimage (not in focus) */}
-                {pass >= 2 && (final || charged) && !burns && !focusMode && (
-                  <motion.span
+            {word && (() => {
+              // Everything the word element carries, shared verbatim by both the
+              // desktop (framer) and lite (plain-div + CSS keyframe) mounts —
+              // charged/held/final looks stay CSS-class driven on both paths.
+              const wordCls = `kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`;
+              const wordStyle = dyn || pitchCol ? {
+                ...(dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${(dyn.size * delivery * octScale).toFixed(4)})` } : null),
+                ...(pitchCol ? { color: pitchCol } : null),
+              } : undefined;
+              const wordRef = (el: HTMLDivElement | null) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } };
+              const wordDown = pass >= 3 ? (e: ReactPointerEvent<HTMLDivElement>) => { chargeAt.current = Date.now(); setCharging(true); grabStart(idx)(e); } : undefined;
+              const wordUp = pass >= 3 ? (e: ReactPointerEvent<HTMLDivElement>) => {
+                const heldMs = Date.now() - chargeAt.current;
+                setCharging(false);
+                if (dragMoved.current) return; // it was a throw, not a tap
+                if (heldMs >= 650) {
+                  setWave((w) => w + 1);
+                  particles.current?.burst(e.clientX, e.clientY, 60);
+                  navigator.vibrate?.([15, 40, 20]);
+                } else {
+                  particles.current?.burst(e.clientX, e.clientY, 22);
+                  navigator.vibrate?.(25);
+                }
+                setTouchBurn(idx);
+              } : undefined;
+              const wordLeave = pass >= 3 ? () => setCharging(false) : undefined;
+              const wordInner = (
+              <>
+                {/* ghost echo — line-final and charged words leave an afterimage (not in
+                    focus, and not on lite: it's an extra full-word motion node per landing;
+                    the GL ghost buffer is already lite-gated separately) */}
+                {pass >= 2 && (final || charged) && !burns && !focusMode && !lite && (
+                  <m.span
                     className="pointer-events-none absolute inset-0 flex items-center justify-center"
                     initial={{ opacity: 0.35, scale: 1 }}
                     animate={{ opacity: 0, scale: 1.9 }}
@@ -1852,7 +1864,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     aria-hidden
                   >
                     {shown}
-                  </motion.span>
+                  </m.span>
                 )}
                 <span className="kinetic-breathe">
                   {(() => {
@@ -1887,33 +1899,78 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     if (dyn && !slams && !assembles) {
                       const a = (dyn.ang * Math.PI) / 180;
                       inner = (
-                        <motion.span
+                        <m.span
                           className="inline-block"
                           initial={{ x: `${(Math.cos(a) * 24).toFixed(1)}vw`, y: `${(Math.sin(a) * 20).toFixed(1)}vh`, opacity: 0 }}
                           animate={{ x: "0vw", y: "0vh", opacity: 1 }}
                           transition={{ type: "spring", stiffness: 300, damping: 26 }}
                         >
                           {inner}
-                        </motion.span>
+                        </m.span>
                       );
                     }
                     if (held) return (
                       // The held note performs: the word swells for the length of
                       // the note while the beat makes it breathe (CSS --beat scale).
-                      <motion.span
+                      <m.span
                         className="inline-block"
                         initial={{ scale: 1, letterSpacing: "0em" }}
                         animate={{ scale: 1.24, letterSpacing: "0.045em" }}
                         transition={{ duration: Math.min(airtime * 0.92, 4.5), ease: "easeOut" }}
                       >
                         {inner}
-                      </motion.span>
+                      </m.span>
                     );
                     return inner;
                   })()}
                 </span>
-              </motion.div>
-            )}
+              </>
+              );
+              if (lite) {
+                // Lite mount: the same entrance vector the section treatment
+                // would spring in with, replayed as a single compositor-only
+                // CSS animation (.assemble-word, transform+opacity). No framer
+                // node, no per-frame JS. Exit just unmounts — the next word is
+                // already landing. `rotate`/`translate` are independent CSS
+                // properties, so the tilt and drag physics still compose with
+                // the keyframe's transform.
+                const init = (wm as MotionProps).initial as unknown as Record<string, unknown> | undefined;
+                const ax = typeof init?.x === "number" ? `${init.x}px` : typeof init?.x === "string" ? init.x : "0px";
+                const ay = typeof init?.y === "number" ? `${init.y}px` : typeof init?.y === "string" ? init.y : "0px";
+                const asc = typeof init?.scale === "number" ? init.scale : 1;
+                return (
+                  <div
+                    key={idx}
+                    className={`${wordCls} assemble-word`}
+                    style={{
+                      ...wordStyle,
+                      ...(dyn ? { rotate: `${dyn.rot}deg` } : null),
+                      "--ax": ax, "--ay": ay, "--asc": String(asc),
+                    } as CSSProperties}
+                    ref={wordRef}
+                    onPointerDown={wordDown}
+                    onPointerUp={wordUp}
+                    onPointerLeave={wordLeave}
+                  >
+                    {wordInner}
+                  </div>
+                );
+              }
+              return (
+                <m.div
+                  key={idx}
+                  className={wordCls}
+                  style={wordStyle}
+                  ref={wordRef}
+                  onPointerDown={wordDown}
+                  onPointerUp={wordUp}
+                  onPointerLeave={wordLeave}
+                  {...(wm as MotionProps)}
+                >
+                  {wordInner}
+                </m.div>
+              );
+            })()}
           </AnimatePresence>
           </>
           )}
@@ -1924,7 +1981,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Anchor word — a charged word looms huge and translucent OVER the show */}
       <AnimatePresence>
         {dynamic && anchor && (
-          <motion.div
+          <m.div
             key={`a${anchor.key}`}
             className="pointer-events-none fixed inset-0 z-[6] flex items-center justify-center overflow-hidden"
             style={{ transform: "translate3d(calc(var(--par-x, 0px) * 1.7), calc(var(--par-y, 0px) * 1.7), 0)", willChange: "transform" }}
@@ -1932,7 +1989,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             animate={{ opacity: 1 }}
             exit={{ opacity: 0, transition: { duration: 1.1 } }}
           >
-            <motion.span
+            <m.span
               // `kinetic-anchor` carries the soft blur via CSS so perf-lite can
               // drop it: this layer ANIMATES scale on entrance, and scaling a
               // blurred layer forces a full re-raster every frame — the single
@@ -1953,8 +2010,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               transition={{ duration: anchor.mode === 1 ? 1.35 : 1.15, ease: "easeOut" }}
             >
               {anchor.word}
-            </motion.span>
-          </motion.div>
+            </m.span>
+          </m.div>
         )}
       </AnimatePresence>
 
@@ -1970,7 +2027,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         </button>
       )}
       {ripples.map((r) => (
-        <motion.span
+        <m.span
           key={r.id}
           className="pointer-events-none fixed z-20 rounded-full"
           style={{ left: r.x - 30, top: r.y - 30, width: 60, height: 60, border: `2px solid ${r.hit ? "var(--theme-accent)" : "rgba(255,255,255,0.3)"}` }}
@@ -2008,7 +2065,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Choreographed shake moment — shake the phone on cue (tap = fallback) */}
       <AnimatePresence>
         {pass >= 3 && shakeMo && (
-          <motion.button
+          <m.button
             key={shakeMo.prompt}
             onClick={() => setQuake((q) => q + 1)}
             transformTemplate={centerX}
@@ -2019,7 +2076,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             transition={{ rotate: { duration: 0.7, repeat: Infinity, repeatDelay: 0.5 } }}
           >
             📳 {shakeMo.prompt}
-          </motion.button>
+          </m.button>
         )}
       </AnimatePresence>
 
@@ -2032,7 +2089,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* The gust: wind streaks sweep through, the stage dims like a blown flame */}
       <AnimatePresence>
         {gust > 0 && (
-          <motion.div
+          <m.div
             key={`g${gust}`}
             className="pointer-events-none fixed inset-0 z-[34] overflow-hidden"
             initial={{ opacity: 1 }}
@@ -2041,7 +2098,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             onAnimationComplete={() => setTimeout(() => setGust(0), 2400)}
           >
             {Array.from({ length: 26 }).map((_, i) => (
-              <motion.span
+              <m.span
                 key={i}
                 className="absolute h-[2px] rounded-full bg-white/70"
                 style={{ top: `${(i * 89) % 100}%`, width: `${40 + (i * 37) % 120}px`, boxShadow: "0 0 8px var(--theme-accent)" }}
@@ -2050,13 +2107,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 transition={{ duration: 0.7 + ((i * 13) % 10) / 18, delay: ((i * 7) % 12) / 30, ease: "easeIn" }}
               />
             ))}
-            <motion.div
+            <m.div
               className="absolute inset-0 bg-black"
               initial={{ opacity: 0 }}
               animate={{ opacity: [0, 0.72, 0.55, 0] }}
               transition={{ duration: 2.6, times: [0, 0.25, 0.6, 1], ease: "easeInOut" }}
             />
-            <motion.p
+            <m.p
               transformTemplate={centerXY}
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-sm uppercase tracking-[0.5em] text-white/70"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -2064,8 +2121,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               transition={{ duration: 2.4, times: [0, 0.3, 1] }}
             >
               ✨
-            </motion.p>
-          </motion.div>
+            </m.p>
+          </m.div>
         )}
       </AnimatePresence>
 
@@ -2169,7 +2226,7 @@ function WordBurn({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="relative inline-flex items-center justify-center">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ color: "#ffffff", opacity: 1, y: "0em", x: "0em", rotate: 0 }}
@@ -2191,11 +2248,11 @@ function WordBurn({ word, airtime }: { word: string; airtime: number }) {
           transition={{ duration: dur, times: [0, 0.28, 0.45, 0.75, 1], delay: 0.15 + i * (dur * 0.04), ease: "easeIn" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
       {/* rising embers */}
       {Array.from({ length: 14 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={`e${i}`}
           className="pointer-events-none absolute rounded-full"
           style={{
@@ -2225,7 +2282,7 @@ function WordBurn({ word, airtime }: { word: string; airtime: number }) {
 function WordGlitch({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(0.55, Math.max(0.35, airtime * 0.8));
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       initial={{ x: 0 }}
       animate={{
@@ -2245,7 +2302,7 @@ function WordGlitch({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: dur, times: [0, 0.2, 0.4, 0.6, 0.8, 1], ease: "linear" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2257,15 +2314,15 @@ function WordFizz({ word, airtime }: { word: string; airtime: number }) {
   const r = (i: number, m: number) => ((i * 53 + 29) % 97) / 97 * m;
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span
+      <m.span
         className="inline-block"
         animate={{ y: ["0em", "-0.03em", "0em", "-0.02em", "0em"] }}
         transition={{ duration: dur, ease: "easeInOut" }}
       >
         {word}
-      </motion.span>
+      </m.span>
       {Array.from({ length: 12 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="pointer-events-none absolute rounded-full border"
           style={{
@@ -2298,15 +2355,15 @@ function WordType({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="inline-flex items-baseline">
       {letters.map((ch, i) => (
-        <motion.span key={i} className="inline-block"
+        <m.span key={i} className="inline-block"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.08 + i * per, duration: 0.02 }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
-      <motion.span
+      <m.span
         className="ml-[0.06em] inline-block w-[0.45em] self-stretch"
         style={{ background: "var(--theme-accent)" }}
         initial={{ opacity: 1 }}
@@ -2323,7 +2380,7 @@ function WordType({ word, airtime }: { word: string; airtime: number }) {
    flash of light on impact. Fast and violent by design. */
 function WordSlam({ word }: { word: string }) {
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       initial={{ y: "-0.55em", scale: 1.45, opacity: 0 }}
       animate={{
@@ -2343,7 +2400,7 @@ function WordSlam({ word }: { word: string }) {
       transition={{ duration: 0.55, times: [0, 0.22, 0.4, 0.58, 0.78, 1], ease: "easeOut" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2355,14 +2412,14 @@ function WordWave({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           animate={{ y: ["0em", "-0.09em", "0em", "0.05em", "0em"], rotate: [0, -3, 0, 2, 0] }}
           transition={{ duration: dur * 0.7, delay: i * 0.06, repeat: airtime > 1.6 ? 1 : 0, ease: "easeInOut" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2373,7 +2430,7 @@ function WordWave({ word, airtime }: { word: string; airtime: number }) {
    saturated glow that hums for the rest of the word's airtime. */
 function WordNeon({ word, airtime }: { word: string; airtime: number }) {
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       initial={{ opacity: 0.2 }}
       animate={{
@@ -2391,7 +2448,7 @@ function WordNeon({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: Math.min(1.1, Math.max(0.6, airtime * 0.7)), times: [0, 0.12, 0.2, 0.34, 0.42, 0.6, 1], ease: "linear" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2401,7 +2458,7 @@ function WordNeon({ word, airtime }: { word: string; airtime: number }) {
 function WordPulse({ word, airtime }: { word: string; airtime: number }) {
   const beats = Math.max(1, Math.min(3, Math.floor(airtime / 0.9)));
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       animate={{
         scale: [1, 1.14, 1, 1.1, 1, 1],
@@ -2417,7 +2474,7 @@ function WordPulse({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: 0.9, times: [0, 0.14, 0.28, 0.42, 0.56, 1], repeat: beats - 1, ease: "easeOut" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2426,7 +2483,7 @@ function WordPulse({ word, airtime }: { word: string; airtime: number }) {
    the edges, never fully solid. */
 function WordWhisper({ word, airtime }: { word: string; airtime: number }) {
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       style={{ fontWeight: 400 }}
       initial={{ opacity: 0, scale: 0.62, letterSpacing: "0.3em", filter: "blur(6px)" }}
@@ -2434,7 +2491,7 @@ function WordWhisper({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: Math.min(1.2, Math.max(0.5, airtime * 0.6)), ease: "easeOut" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2448,7 +2505,7 @@ function WordShatter({ word }: { word: string }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ x: "0em", y: "0em", rotate: 0, opacity: 1 }}
@@ -2463,7 +2520,7 @@ function WordShatter({ word }: { word: string }) {
           transition={{ duration: 0.75, delay: r(i + 7, 0.08), ease: [0.2, 0.6, 0.4, 1] }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2474,7 +2531,7 @@ function WordDissolve({ word }: { word: string }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ opacity: 1, y: "0em", filter: "blur(0px)" }}
@@ -2482,7 +2539,7 @@ function WordDissolve({ word }: { word: string }) {
           transition={{ duration: 1.1, delay: i * 0.05, ease: "easeOut" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2492,15 +2549,15 @@ function WordBloom({ word }: { word: string }) {
   const r = (i: number, m: number) => ((i * 47 + 13) % 71) / 71 * m;
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span
+      <m.span
         className="inline-block"
         animate={{ color: "#ffb7d5", scale: [1, 1.08, 1.02], textShadow: "0 0 0.5em rgba(255,150,200,0.8)" }}
         transition={{ duration: 0.9, ease: "easeOut" }}
       >
         {word}
-      </motion.span>
+      </m.span>
       {Array.from({ length: 10 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="pointer-events-none absolute"
           style={{
@@ -2532,7 +2589,7 @@ function WordFreeze({ word, airtime }: { word: string; airtime: number }) {
   const r = (i: number, m: number) => ((i * 59 + 23) % 79) / 79 * m;
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span
+      <m.span
         className="inline-block"
         initial={{ color: "#ffffff", x: "0em" }}
         animate={{
@@ -2549,9 +2606,9 @@ function WordFreeze({ word, airtime }: { word: string; airtime: number }) {
         transition={{ duration: dur, times: [0, 0.35, 0.7, 1], ease: "easeOut" }}
       >
         {word}
-      </motion.span>
+      </m.span>
       {Array.from({ length: 8 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="pointer-events-none absolute rounded-full"
           style={{
@@ -2581,7 +2638,7 @@ function WordMelt({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="relative inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block origin-top"
           initial={{ y: "0em", scaleY: 1, color: "#ffffff", opacity: 1 }}
@@ -2595,10 +2652,10 @@ function WordMelt({ word, airtime }: { word: string; airtime: number }) {
           transition={{ duration: dur, times: [0, 0.3, 0.65, 1], delay: r(i + 5, 0.18), ease: "easeIn" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
       {Array.from({ length: 5 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={`d${i}`}
           className="pointer-events-none absolute rounded-full"
           style={{
@@ -2627,7 +2684,7 @@ function WordCarve({ word, airtime }: { word: string; airtime: number }) {
   const settled = Math.min(1.4, Math.max(0.7, airtime * 0.8));
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span
+      <m.span
         className="inline-block"
         initial={{ scale: 1.12, y: "-0.03em", color: "#ffffff" }}
         animate={{
@@ -2645,9 +2702,9 @@ function WordCarve({ word, airtime }: { word: string; airtime: number }) {
         transition={{ duration: settled, times: [0, 0.18, 0.4, 1], ease: "easeOut" }}
       >
         {word}
-      </motion.span>
+      </m.span>
       {Array.from({ length: 10 }).map((_, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="pointer-events-none absolute rounded-full"
           style={{
@@ -2676,7 +2733,7 @@ function WordCarve({ word, airtime }: { word: string; airtime: number }) {
 function WordShimmer({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(2.2, Math.max(1.1, airtime));
   return (
-    <motion.span
+    <m.span
       className="inline-block bg-clip-text"
       style={{
         color: "transparent",
@@ -2690,7 +2747,7 @@ function WordShimmer({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: dur, times: [0, 0.4, 0.8, 1], ease: "easeInOut" }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2704,7 +2761,7 @@ function WordRise({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ y: `${0.5 + r(i, 0.2)}em`, opacity: 0, filter: "blur(2px)" }}
@@ -2712,7 +2769,7 @@ function WordRise({ word, airtime }: { word: string; airtime: number }) {
           transition={{ duration: dur, times: [0, 0.55, 1], delay: i * 0.045, ease: "easeOut" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2728,7 +2785,7 @@ function WordFall({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ y: `-${0.28 + r(i, 0.12)}em`, opacity: 0 }}
@@ -2736,7 +2793,7 @@ function WordFall({ word, airtime }: { word: string; airtime: number }) {
           transition={{ duration: dur, times: [0, 0.28, 0.62, 1], delay: 0.05 + i * 0.05, ease: "easeIn" }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2749,9 +2806,9 @@ function WordEcho({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(2.0, Math.max(1.0, airtime));
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span className="inline-block" initial={{ opacity: 0.9 }} animate={{ opacity: 1 }}>{word}</motion.span>
+      <m.span className="inline-block" initial={{ opacity: 0.9 }} animate={{ opacity: 1 }}>{word}</m.span>
       {[1, 2].map((n) => (
-        <motion.span
+        <m.span
           key={n}
           className="pointer-events-none absolute inset-0 flex items-center justify-center"
           style={{ color: "var(--theme-accent)" }}
@@ -2761,7 +2818,7 @@ function WordEcho({ word, airtime }: { word: string; airtime: number }) {
           aria-hidden
         >
           {word}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -2773,7 +2830,7 @@ function WordEcho({ word, airtime }: { word: string; airtime: number }) {
 function WordTremor({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(1.4, Math.max(0.7, airtime * 0.9));
   return (
-    <motion.span
+    <m.span
       className="inline-block"
       animate={{
         x: ["0em", "0.02em", "-0.025em", "0.018em", "-0.02em", "0.012em", "-0.015em", "0em"],
@@ -2784,7 +2841,7 @@ function WordTremor({ word, airtime }: { word: string; airtime: number }) {
       transition={{ duration: dur, times: [0, 0.14, 0.28, 0.42, 0.56, 0.7, 0.85, 1], ease: "linear", repeat: airtime > 1.4 ? 1 : 0 }}
     >
       {word}
-    </motion.span>
+    </m.span>
   );
 }
 
@@ -2795,11 +2852,11 @@ function WordRedact({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(1.8, Math.max(0.9, airtime));
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span className="inline-block" initial={{ opacity: 0 }}
+      <m.span className="inline-block" initial={{ opacity: 0 }}
         animate={{ opacity: [0, 1, 1, 0.4] }} transition={{ duration: dur, times: [0, 0.2, 0.45, 0.7] }}>
         {word}
-      </motion.span>
-      <motion.span
+      </m.span>
+      <m.span
         className="pointer-events-none absolute -inset-x-[0.1em] inset-y-[0.08em] origin-left rounded-[0.06em]"
         style={{ background: "#0b0b0e", boxShadow: "0 0 0.1em rgba(0,0,0,0.85), inset 0 0 0.06em rgba(255,255,255,0.1)" }}
         initial={{ scaleX: 0, opacity: 0 }}
@@ -2818,23 +2875,23 @@ function WordChromatic({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(1.6, Math.max(0.9, airtime));
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
+      <m.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
         style={{ color: "#ff3b52", mixBlendMode: "screen" }}
         initial={{ x: "-0.07em", y: "0.01em", opacity: 0.85 }}
         animate={{ x: ["-0.07em", "0.05em", "-0.035em", "0.015em", "0em"], y: ["0.01em", "-0.02em", "0.012em", "0em", "0em"], opacity: [0.85, 0.75, 0.6, 0.4, 0] }}
         transition={{ duration: dur, times: [0, 0.3, 0.55, 0.8, 1], ease: "easeOut" }}>
         {word}
-      </motion.span>
-      <motion.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
+      </m.span>
+      <m.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
         style={{ color: "#2ee6ff", mixBlendMode: "screen" }}
         initial={{ x: "0.07em", y: "-0.01em", opacity: 0.85 }}
         animate={{ x: ["0.07em", "-0.05em", "0.035em", "-0.015em", "0em"], y: ["-0.01em", "0.02em", "-0.012em", "0em", "0em"], opacity: [0.85, 0.75, 0.6, 0.4, 0] }}
         transition={{ duration: dur, times: [0, 0.3, 0.55, 0.8, 1], ease: "easeOut" }}>
         {word}
-      </motion.span>
-      <motion.span className="inline-block" initial={{ opacity: 0.55 }} animate={{ opacity: 1 }} transition={{ duration: dur * 0.6 }}>
+      </m.span>
+      <m.span className="inline-block" initial={{ opacity: 0.55 }} animate={{ opacity: 1 }} transition={{ duration: dur * 0.6 }}>
         {word}
-      </motion.span>
+      </m.span>
     </span>
   );
 }
@@ -2847,7 +2904,7 @@ function WordLiquid({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="relative inline-flex items-center justify-center">
       <span className="inline-block opacity-30">{word}</span>
-      <motion.span
+      <m.span
         className="pointer-events-none absolute inset-0 flex items-center justify-center bg-clip-text"
         style={{
           color: "transparent",
@@ -2860,7 +2917,7 @@ function WordLiquid({ word, airtime }: { word: string; airtime: number }) {
         aria-hidden
       >
         {word}
-      </motion.span>
+      </m.span>
     </span>
   );
 }
@@ -2873,15 +2930,15 @@ function WordBleed({ word, airtime }: { word: string; airtime: number }) {
   return (
     <span className="relative inline-flex items-center justify-center">
       <span className="inline-block">{word}</span>
-      <motion.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
+      <m.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
         style={{ color: "#a11620" }}
         initial={{ opacity: 0, y: "0em" }}
         animate={{ opacity: [0, 0.85, 0.92], y: ["0em", "0.008em", "0.014em"], textShadow: ["0 0 0em rgba(190,25,35,0)", "0 0 0.28em rgba(200,30,40,0.55)", "0 0 0.2em rgba(160,20,30,0.45)"] }}
         transition={{ duration: dur * 0.75, times: [0, 0.55, 1], ease: "easeIn" }}>
         {word}
-      </motion.span>
+      </m.span>
       {[0.24, 0.55, 0.78].map((p, n) => (
-        <motion.span key={n} className="pointer-events-none absolute top-[76%] w-[0.045em] origin-top rounded-b-full" aria-hidden
+        <m.span key={n} className="pointer-events-none absolute top-[76%] w-[0.045em] origin-top rounded-b-full" aria-hidden
           style={{ left: `${p * 100}%`, height: `${0.4 + n * 0.14}em`, background: "linear-gradient(to bottom, #a11620, #5c0e12)" }}
           initial={{ scaleY: 0, opacity: 0 }}
           animate={{ scaleY: [0, 0.45 + n * 0.2, 1], opacity: [0, 0.85, 0.7] }}
@@ -2900,13 +2957,13 @@ function WordHandwrite({ word }: { word: string }) {
   return (
     <span className="relative inline-flex items-center justify-center"
       style={{ fontFamily: '"Segoe Script", "Brush Script MT", "Snell Roundhand", cursive' }}>
-      <motion.span className="inline-block"
+      <m.span className="inline-block"
         initial={{ clipPath: "inset(-20% 100% -20% 0)" }}
         animate={{ clipPath: "inset(-20% -5% -20% 0)" }}
         transition={{ duration: dur, ease: "linear" }}>
         {word}
-      </motion.span>
-      <motion.span className="pointer-events-none absolute top-1/2 h-[0.08em] w-[0.08em] -translate-y-1/2 rounded-full" aria-hidden
+      </m.span>
+      <m.span className="pointer-events-none absolute top-1/2 h-[0.08em] w-[0.08em] -translate-y-1/2 rounded-full" aria-hidden
         style={{ background: "currentColor", boxShadow: "0 0 0.35em currentColor" }}
         initial={{ left: "0%", opacity: 0.9 }}
         animate={{ left: "102%", opacity: [0.9, 0.9, 0] }}
@@ -2922,7 +2979,7 @@ function WordTVOff({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(2.2, Math.max(1.1, airtime));
   return (
     <span className="relative inline-flex items-center justify-center">
-      <motion.span className="inline-block"
+      <m.span className="inline-block"
         initial={{ scaleY: 0.03, scaleX: 1.08, opacity: 0 }}
         animate={{
           scaleY: [0.03, 1, 1, 1, 0.02, 0.02],
@@ -2932,9 +2989,9 @@ function WordTVOff({ word, airtime }: { word: string; airtime: number }) {
         }}
         transition={{ duration: dur, times: [0, 0.12, 0.5, 0.74, 0.84, 1], ease: "easeInOut" }}>
         {word}
-      </motion.span>
+      </m.span>
       {/* the dying phosphor dot */}
-      <motion.span className="pointer-events-none absolute h-[0.07em] w-[0.07em] rounded-full bg-white" aria-hidden
+      <m.span className="pointer-events-none absolute h-[0.07em] w-[0.07em] rounded-full bg-white" aria-hidden
         style={{ boxShadow: "0 0 0.3em rgba(255,255,255,0.9)" }}
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0, 0.95, 0] }}
@@ -2980,7 +3037,7 @@ function MicPrimer({ id, active }: { id: string; active: boolean }) {
   return (
     <AnimatePresence>
       {show && (
-        <motion.div
+        <m.div
           transformTemplate={centerX}
           className="fixed left-1/2 top-20 z-[45] w-max max-w-[90vw] -translate-x-1/2 rounded-2xl border border-white/15 bg-black/70 px-6 py-4 text-center backdrop-blur-md"
           initial={{ opacity: 0, y: -14 }}
@@ -2994,7 +3051,7 @@ function MicPrimer({ id, active }: { id: string; active: boolean }) {
             Enable mic
           </button>
           <button onClick={() => setShow(false)} className="mt-2 block w-full font-mono text-[9px] uppercase tracking-widest text-white/40 hover:text-white/70">skip</button>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );
@@ -3045,7 +3102,7 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
   return (
     <AnimatePresence>
       {moment && state !== "done" && (
-        <motion.button
+        <m.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onGust : start}
           transformTemplate={centerX}
@@ -3063,7 +3120,7 @@ function BlowMoment({ moment, onGust }: { moment: { prompt: string } | null; onG
             {state === "listening" && <>{moment.prompt}</>}
             {state === "denied" && <>{moment.prompt} — tap!</>}
           </span>
-        </motion.button>
+        </m.button>
       )}
     </AnimatePresence>
   );
@@ -3115,7 +3172,7 @@ function ScreamMoment({ moment, onScream }: { moment: { prompt: string; shout: s
   return (
     <AnimatePresence>
       {moment && state !== "done" && (
-        <motion.button
+        <m.button
           key={moment.prompt}
           onClick={state === "listening" ? undefined : state === "denied" ? onScream : start}
           transformTemplate={centerX}
@@ -3133,7 +3190,7 @@ function ScreamMoment({ moment, onScream }: { moment: { prompt: string; shout: s
             {state === "listening" && <>{moment.prompt}</>}
             {state === "denied" && <>{moment.prompt} — tap!</>}
           </span>
-        </motion.button>
+        </m.button>
       )}
     </AnimatePresence>
   );
@@ -3223,7 +3280,7 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
   return (
     <AnimatePresence>
       {moment && (
-        <motion.div
+        <m.div
           key={`${moment.layer}${moment.prompt}`}
           className="fixed inset-0 z-[30]"
           // Gradual roll-in (creep + fade) and a slow dissolve on exit. The
@@ -3235,7 +3292,7 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
           style={{ transformOrigin: "50% 46%" }}
         >
           <canvas ref={canvasRef} className="h-full w-full touch-none" />
-          <motion.div
+          <m.div
             className="pointer-events-none absolute inset-x-0 top-[10vh] flex flex-col items-center gap-1.5 px-6"
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -3243,8 +3300,8 @@ function WipeLayer({ moment, onProgress, onReleased, lite = false }: { moment: {
           >
             <span className={`text-3xl sm:text-5xl${lite ? " stage-warn-static" : " stage-warn"}`}>✋ {moment.prompt}</span>
             <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-white/75 sm:text-sm">swipe a third of it away</span>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );
@@ -3303,7 +3360,7 @@ function CascadeWord({ word }: { word: string }) {
   return (
     <span className="inline-flex">
       {letters.map((ch, i) => (
-        <motion.span
+        <m.span
           key={i}
           className="inline-block"
           initial={{ opacity: 0, y: "0.32em", rotate: i % 2 ? 5 : -5, scale: 0.7 }}
@@ -3311,7 +3368,7 @@ function CascadeWord({ word }: { word: string }) {
           transition={{ delay: i * 0.045, type: "spring", stiffness: 480, damping: 22 }}
         >
           {ch}
-        </motion.span>
+        </m.span>
       ))}
     </span>
   );
@@ -3322,15 +3379,15 @@ function WordMorph({ word, glyph, treatment }: { word: string; glyph: Glyph; tre
   return (
     <span className="relative inline-flex items-center justify-center">
       {/* the word: lands, then gives itself to the shape */}
-      <motion.span
+      <m.span
         initial={{ opacity: 1, scale: 1 }}
         animate={{ opacity: [1, 1, 0], scale: [1, 1, treatment === "shatter" ? 1.5 : 0.72] }}
         transition={{ duration: t.hold + t.morph * 0.6, times: [0, t.hold / (t.hold + t.morph * 0.6), 1], ease: "easeIn" }}
       >
         {word}
-      </motion.span>
+      </m.span>
       {/* the glyph: draws itself on, inheriting the word's glow */}
-      <motion.svg
+      <m.svg
         viewBox="0 0 100 100"
         className="absolute"
         style={{ width: "1.2em", height: "1.2em" }}
@@ -3339,7 +3396,7 @@ function WordMorph({ word, glyph, treatment }: { word: string; glyph: Glyph; tre
         transition={{ delay: t.hold, duration: t.morph, ease: t.ease === "backOut" ? [0.34, 1.56, 0.64, 1] : "easeInOut" }}
         aria-label={glyph.id}
       >
-        <motion.path
+        <m.path
           d={glyph.path}
           fillRule={glyph.fillRule}
           stroke="var(--theme-accent)"
@@ -3349,7 +3406,7 @@ function WordMorph({ word, glyph, treatment }: { word: string; glyph: Glyph; tre
           animate={{ pathLength: 1, fillOpacity: 0.9 }}
           transition={{ delay: t.hold, duration: t.morph, ease: "easeInOut", fillOpacity: { delay: t.hold + t.morph * 0.5, duration: t.morph * 0.6 } }}
         />
-      </motion.svg>
+      </m.svg>
     </span>
   );
 }

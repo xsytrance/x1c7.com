@@ -4,7 +4,7 @@
 // after a beat the preview drops you at the hottest bar of the song.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import type { Track } from "@/data/tracks";
 import { canPerform } from "@/components/KineticStage";
 import { classifyGenre, spineUrl, cardUrl, envBars, fmtTime, GENRE_PALETTES, type GenreKey } from "@/lib/collection";
@@ -120,7 +120,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
     <section className="relative" data-testid="collection-shelf">
       {/* ambient genre light */}
       <AnimatePresence>
-        <motion.div
+        <m.div
           key={pal.key}
           className="pointer-events-none absolute inset-[-8%] -z-10"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.7 }}
@@ -165,7 +165,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                   className="group relative shrink-0 outline-none"
                   style={{ width: 52, height: "min(56vh, 540px)" }}
                 >
-                  <motion.div
+                  <m.div
                     className="relative h-full w-full overflow-hidden rounded-[3px]"
                     animate={{ y: isFocus ? -16 : 0, rotateY: isFocus ? -14 : 0, scale: isFocus ? 1.04 : 1 }}
                     transition={{ type: "spring", stiffness: 380, damping: 28 }}
@@ -184,7 +184,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                         {t.title.slice(0, 22).toUpperCase()}
                       </span>
                     </div>
-                  </motion.div>
+                  </m.div>
                 </button>
               );
             })}
@@ -206,7 +206,7 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
         <div className="w-full shrink-0 min-[900px]:w-[380px]">
           <AnimatePresence mode="wait">
             {focused ? (
-              <motion.div
+              <m.div
                 key={focused.id}
                 initial={{ rotateY: 55, opacity: 0, x: 40 }}
                 animate={{ rotateY: 0, opacity: 1, x: 0 }}
@@ -224,13 +224,13 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                     title="open the case"
                   />
                   {insertFor === focused.id ? (
-                    <motion.span
+                    <m.span
                       initial={{ opacity: 0, y: 8 }}
                       animate={{ opacity: 1, y: [0, -4, 0] }}
                       transition={{ opacity: { duration: 0.5 }, y: { repeat: Infinity, duration: 2.4, ease: "easeInOut" } }}
                       className="pointer-events-none absolute inset-x-0 bottom-2.5 mx-auto w-max rounded-full bg-black/65 px-3 py-1 font-mono text-[9px] tracking-[0.22em] text-white/90 backdrop-blur-sm">
                       📖 OPEN THE CASE
-                    </motion.span>
+                    </m.span>
                   ) : null}
                 </div>
                 <div className="mt-4 flex items-center gap-3 font-mono text-xs text-white/60">
@@ -277,12 +277,12 @@ export default function CollectionShelf({ tracks, onPlay, onPauseMain }: {
                     previewing ? `PREVIEWING THE DROP · ${fmtTime(preview.state.startAt)}` :
                     "HOVER OR TAP A SPINE TO PULL A CASE · THE CASE ART OPENS THE INSERT"}
                 </p>
-              </motion.div>
+              </m.div>
             ) : (
-              <motion.div key="empty" initial={{ opacity: 0 }} animate={{ opacity: 1 }}
+              <m.div key="empty" initial={{ opacity: 0 }} animate={{ opacity: 1 }}
                 className="flex aspect-square w-full items-center justify-center rounded-md border border-dashed border-white/10 font-mono text-xs tracking-[0.2em] text-white/30">
                 HOVER THE SHELF
-              </motion.div>
+              </m.div>
             )}
           </AnimatePresence>
         </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 
 const TERMINAL_LINES = [
   { text: "> INITIALIZING SECURITY SCAN...", delay: 300, color: "text-signal" },
@@ -79,7 +79,7 @@ export function TerminalLock() {
         <div className="grid gap-2">
           <AnimatePresence>
             {lines.map((li) => (
-              <motion.p
+              <m.p
                 key={li}
                 initial={reduceMotion ? false : { opacity: 0, x: -8 }}
                 animate={{ opacity: 1, x: 0 }}
@@ -87,12 +87,12 @@ export function TerminalLock() {
                 className={TERMINAL_LINES[li].color}
               >
                 {TERMINAL_LINES[li].text}
-              </motion.p>
+              </m.p>
             ))}
           </AnimatePresence>
 
           {showPrompt && (
-            <motion.form
+            <m.form
               initial={reduceMotion ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               onSubmit={handleSubmit}
@@ -109,19 +109,19 @@ export function TerminalLock() {
                 autoComplete="off"
                 autoFocus
               />
-            </motion.form>
+            </m.form>
           )}
 
           {attempts > 0 && !konamiOn && (
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-2 text-xs text-white/30">
+            <m.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="mt-2 text-xs text-white/30">
               Invalid code. Attempt {attempts} logged.
-            </motion.p>
+            </m.p>
           )}
         </div>
 
         <AnimatePresence>
           {konamiOn && (
-            <motion.div
+            <m.div
               initial={reduceMotion ? false : { opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               className="mt-6 rounded-xl border border-venom/30 bg-venom/10 p-4 text-center"
@@ -138,7 +138,7 @@ export function TerminalLock() {
     who know where to look.
               `}</pre>
               <p className="mt-2 text-xs text-venom/70">Welcome to the inner frequency.</p>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>

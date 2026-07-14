@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -164,7 +164,7 @@ function TerminalLine({
       )}
       <AnimatePresence>
         {showOutput && (
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, y: 4 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3 }}
@@ -175,7 +175,7 @@ function TerminalLine({
               </pre>
             )}
             {children}
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </div>
@@ -201,7 +201,7 @@ function FileEntry({
   const reduceMotion = useReducedMotion();
 
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, x: -12 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.06, duration: 0.35 }}
@@ -235,7 +235,7 @@ function FileEntry({
       {/* hover preview: cat command */}
       <AnimatePresence>
         {hovered && !isExpanded && (
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
@@ -247,14 +247,14 @@ function FileEntry({
               <span>cat</span>
               <span style={{ color: project.color }}>{project.name.toLowerCase().replace(/\s/g, "_")}/README.md</span>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 
       {/* expanded detail */}
       <AnimatePresence>
         {isExpanded && (
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
@@ -282,10 +282,10 @@ function FileEntry({
                 </span>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -453,7 +453,7 @@ export default function ProjectsPage() {
 
         {/* Terminal Window */}
         <ScrollReveal delay={0.2} className="mb-8 flex-1 sm:mb-12">
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, y: 20, scale: 0.98 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
@@ -481,7 +481,7 @@ export default function ProjectsPage() {
               {/* Boot sequence */}
               <AnimatePresence>
                 {showBootSequence && (
-                  <motion.div
+                  <m.div
                     exit={reduceMotion ? undefined : { opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
                     className="mb-4 space-y-1 font-mono text-xs text-white/30"
@@ -494,15 +494,15 @@ export default function ProjectsPage() {
                       <div>{bootLine3}</div>
                     )}
                     {bootLine3 === "mounting project directory..." && (
-                      <motion.div
+                      <m.div
                         className="text-[#8dff4a]/60"
                         animate={{ opacity: [0.4, 1, 0.4] }}
                         transition={{ duration: 1, repeat: Infinity }}
                       >
                         {bootLine4}
-                      </motion.div>
+                      </m.div>
                     )}
-                  </motion.div>
+                  </m.div>
                 )}
               </AnimatePresence>
 
@@ -530,7 +530,7 @@ export default function ProjectsPage() {
                   {/* history */}
                   <AnimatePresence>
                     {history.map((entry, i) => (
-                      <motion.div
+                      <m.div
                         key={i}
                         initial={
                           reduceMotion ? false : { opacity: 0, y: 4 }
@@ -554,7 +554,7 @@ export default function ProjectsPage() {
                             {entry.text}
                           </pre>
                         )}
-                      </motion.div>
+                      </m.div>
                     ))}
                   </AnimatePresence>
 
@@ -594,7 +594,7 @@ export default function ProjectsPage() {
                 </>
               )}
             </div>
-          </motion.div>
+          </m.div>
         </ScrollReveal>
 
         {/* Full project showcase — curated, filterable */}

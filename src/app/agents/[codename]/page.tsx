@@ -3,7 +3,7 @@
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { getAgent, getAllAgents } from "@/data/agents";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
@@ -23,7 +23,7 @@ function StatBar({ label, value, color, delay = 0 }: {
         <span className="font-mono text-[10px]" style={{ color }}>{value}%</span>
       </div>
       <div className="h-2 w-full overflow-hidden rounded-full bg-white/5">
-        <motion.div
+        <m.div
           className="h-full rounded-full"
           style={{ background: `linear-gradient(to right, ${color}, ${color}88)` }}
           initial={reduceMotion ? { width: `${value}%` } : { width: 0 }}
@@ -43,7 +43,7 @@ function AbilityCard({ ability, color, index }: {
 }) {
   const reduceMotion = useReducedMotion();
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, x: -15 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4, delay: 0.5 + index * 0.1 }}
@@ -59,7 +59,7 @@ function AbilityCard({ ability, color, index }: {
         </span>
       </div>
       <p className="mt-2 text-sm leading-6 text-white/55">{ability.description}</p>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -79,7 +79,7 @@ function TimelineEvent({ event, color, index }: {
   const dotColor = typeColors[event.type] || color;
 
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, x: -10 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.35, delay: 0.6 + index * 0.08 }}
@@ -95,7 +95,7 @@ function TimelineEvent({ event, color, index }: {
         </span>
         <p className="mt-0.5 text-sm text-white/65">{event.event}</p>
       </div>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -104,7 +104,7 @@ function TimelineEvent({ event, color, index }: {
 function LoreCard({ text, index, color }: { text: string; index: number; color: string }) {
   const reduceMotion = useReducedMotion();
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.4 + index * 0.1 }}
@@ -112,7 +112,7 @@ function LoreCard({ text, index, color }: { text: string; index: number; color: 
     >
       <span className="absolute -left-1 -top-1 font-mono text-lg font-bold opacity-20" style={{ color }}>#{index + 1}</span>
       <p className="relative text-sm leading-6 text-white/55">{text}</p>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -153,7 +153,7 @@ export default function AgentDetailPage() {
         </nav>
 
         {/* Hero section */}
-        <motion.section
+        <m.section
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -223,14 +223,14 @@ export default function AgentDetailPage() {
           <p className="mt-3 max-w-2xl text-sm leading-7 text-white/55">
             {agent.description}
           </p>
-        </motion.section>
+        </m.section>
 
         {/* Grid layout */}
         <div className="grid gap-8 lg:grid-cols-[1fr_1.2fr]">
           {/* Left column */}
           <div className="space-y-8">
             {/* Stats */}
-            <motion.section
+            <m.section
               initial={reduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.15 }}
@@ -242,10 +242,10 @@ export default function AgentDetailPage() {
                   <StatBar key={s.label} label={s.label} value={s.value} color={agent.color} delay={i * 0.1} />
                 ))}
               </div>
-            </motion.section>
+            </m.section>
 
             {/* Quote */}
-            <motion.div
+            <m.div
               initial={reduceMotion ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -258,10 +258,10 @@ export default function AgentDetailPage() {
               <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/30">
                 — {agent.codename}
               </p>
-            </motion.div>
+            </m.div>
 
             {/* Weakness */}
-            <motion.div
+            <m.div
               initial={reduceMotion ? false : { opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.6 }}
@@ -269,13 +269,13 @@ export default function AgentDetailPage() {
             >
               <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.35em] text-red-400/60">Known Weakness</p>
               <p className="text-sm leading-6 text-white/50">{agent.weakness}</p>
-            </motion.div>
+            </m.div>
           </div>
 
           {/* Right column */}
           <div className="space-y-8">
             {/* Abilities */}
-            <motion.section
+            <m.section
               initial={reduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -286,10 +286,10 @@ export default function AgentDetailPage() {
                   <AbilityCard key={a.name} ability={a} color={agent.color} index={i} />
                 ))}
               </div>
-            </motion.section>
+            </m.section>
 
             {/* Lore */}
-            <motion.section
+            <m.section
               initial={reduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.35 }}
@@ -300,10 +300,10 @@ export default function AgentDetailPage() {
                   <LoreCard key={i} text={l} index={i} color={agent.color} />
                 ))}
               </div>
-            </motion.section>
+            </m.section>
 
             {/* Timeline */}
-            <motion.section
+            <m.section
               initial={reduceMotion ? false : { opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
@@ -314,12 +314,12 @@ export default function AgentDetailPage() {
                   <TimelineEvent key={i} event={t} color={agent.color} index={i} />
                 ))}
               </div>
-            </motion.section>
+            </m.section>
           </div>
         </div>
 
         {/* Agent navigation */}
-        <motion.section
+        <m.section
           initial={reduceMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.7 }}
@@ -355,7 +355,7 @@ export default function AgentDetailPage() {
                 </MagneticCard>
               ))}
           </div>
-        </motion.section>
+        </m.section>
       </div>
     </main>
   );

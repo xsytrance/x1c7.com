@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
@@ -51,14 +51,14 @@ function DashCard({
 }) {
   const reduceMotion = useReducedMotion();
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55, delay, ease: "easeOut" }}
       className={`rounded-[2rem] border border-white/10 bg-white/[0.06] p-6 backdrop-blur transition-shadow duration-300 hover:shadow-lg hover:shadow-cyan-500/10 ${className}`}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -229,14 +229,14 @@ function SystemStatus() {
               <span className="font-mono text-[10px] text-signal/70">{h.value}%</span>
             </div>
             <div className="h-2 w-full overflow-hidden rounded-full bg-white/5">
-              <motion.div
+              <m.div
                 className="h-full rounded-full bg-gradient-to-r from-signal to-signal/50"
                 initial={{ width: 0 }}
                 animate={{ width: `${h.value}%` }}
                 transition={{ duration: 1.2, delay: 0.5, ease: "easeOut" }}
               >
                 <div className="h-full w-full animate-pulse rounded-full bg-gradient-to-r from-signal to-signal/50" />
-              </motion.div>
+              </m.div>
             </div>
           </div>
         ))}

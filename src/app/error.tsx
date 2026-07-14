@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
@@ -15,7 +15,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
       <div className="scanline" aria-hidden />
       <div className="starfield" aria-hidden />
 
-      <motion.section
+      <m.section
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
@@ -77,7 +77,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
             Return to hub
           </Link>
         </div>
-      </motion.section>
+      </m.section>
     </main>
   );
 }

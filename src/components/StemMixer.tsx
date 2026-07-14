@@ -5,7 +5,7 @@
 // chips are the escape hatch for tinkerers. Styled after the Reactor panel.
 
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { useStemMix, stemMixStore, presetsFor, presetGains, STEM_ORDER, STEM_INFO } from "@/lib/stemMix";
 import { stemsFor } from "@/lib/usePreview";
@@ -124,7 +124,7 @@ export function StemMixer({ track, getTime, onClose, lensArmed, onToggleLens }: 
   const fullMix = !mix.active;
 
   return (
-    <motion.div
+    <m.div
       className="absolute right-3 top-16 z-[70] w-[21rem] rounded-2xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_95%,transparent)] p-3 backdrop-blur-md"
       initial={{ opacity: 0, y: -8, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -8, scale: 0.97 }}
     >
@@ -164,6 +164,6 @@ export function StemMixer({ track, getTime, onClose, lensArmed, onToggleLens }: 
         style={lensArmed ? { background: "color-mix(in srgb, var(--theme-primary) 16%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--theme-primary) 40%, transparent)" } : undefined}>
         🔍 The Lens <span className="text-white/35">— {lensArmed ? "armed · hold the stage to x-ray" : "hold the stage, hear one layer"}</span>
       </button>
-    </motion.div>
+    </m.div>
   );
 }

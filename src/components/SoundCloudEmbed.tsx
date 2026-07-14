@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 interface OEmbedResponse {
   html: string;
@@ -124,7 +124,7 @@ export function SoundCloudEmbed({
   /* ── Success: render oEmbed HTML ── */
   return (
     <AnimatePresence mode="wait">
-      <motion.div
+      <m.div
         key="oembed"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -161,7 +161,7 @@ export function SoundCloudEmbed({
             </span>
           </div>
         )}
-      </motion.div>
+      </m.div>
     </AnimatePresence>
   );
 }

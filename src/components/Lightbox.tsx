@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useCallback, useState } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 
 /* offsets (relative to the active piece) whose images get preloaded */
@@ -84,7 +84,7 @@ export function Lightbox({
   return (
     <AnimatePresence>
       {isOpen && (
-        <motion.div
+        <m.div
           className="fixed inset-0 z-[9999] flex items-center justify-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -92,7 +92,7 @@ export function Lightbox({
           transition={{ duration: reduceMotion ? 0 : 0.25 }}
         >
           {/* Dark overlay — click outside to close */}
-          <motion.div
+          <m.div
             className="absolute inset-0 bg-black/90 backdrop-blur-sm"
             onClick={onClose}
             initial={{ opacity: 0 }}
@@ -172,7 +172,7 @@ export function Lightbox({
           </button>
 
           {/* Content — image + info */}
-          <motion.div
+          <m.div
             className="relative z-10 flex max-h-[92vh] w-full max-w-5xl flex-col items-center px-16 sm:px-20"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -192,7 +192,7 @@ export function Lightbox({
               }}
             >
               <AnimatePresence mode="wait">
-                <motion.div
+                <m.div
                   key={activePiece.id}
                   className="absolute inset-0"
                   initial={{ opacity: 0, scale: 1.05 }}
@@ -208,12 +208,12 @@ export function Lightbox({
                     sizes="(max-width: 768px) 90vw, 70vw"
                     priority
                   />
-                </motion.div>
+                </m.div>
               </AnimatePresence>
             </div>
 
             {/* Info bar */}
-            <motion.div
+            <m.div
               className="mt-5 flex w-full flex-col items-center gap-2 text-center"
               key={`info-${activePiece.id}`}
               initial={{ opacity: 0, y: 8 }}
@@ -235,7 +235,7 @@ export function Lightbox({
               <p className="max-w-md text-sm leading-6 text-white/55">
                 {activePiece.description}
               </p>
-            </motion.div>
+            </m.div>
 
             {/* Thumbnail strip */}
             <div className="mt-5 flex max-w-full gap-2 overflow-x-auto px-1 pb-1">
@@ -259,8 +259,8 @@ export function Lightbox({
                 </button>
               ))}
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

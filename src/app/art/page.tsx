@@ -3,7 +3,7 @@
 import { useState, useMemo, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useReducedMotion, AnimatePresence } from "framer-motion";
+import { m, useReducedMotion, AnimatePresence } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -158,7 +158,7 @@ export default function ArtPage() {
         </nav>
 
         {/* ── Header ── */}
-        <motion.header
+        <m.header
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
@@ -182,10 +182,10 @@ export default function ArtPage() {
           <p className="mt-2 max-w-xl text-sm leading-7 text-white/50">
             A bright weird museum is under construction.
           </p>
-        </motion.header>
+        </m.header>
 
         {/* ── Category Filters ── */}
-        <motion.div
+        <m.div
           className="mb-10 flex flex-wrap gap-2"
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -212,12 +212,12 @@ export default function ArtPage() {
               {cat}
             </button>
           ))}
-        </motion.div>
+        </m.div>
 
         {/* ── Gallery Grid ── */}
         <section className="pb-16">
           <AnimatePresence mode="popLayout">
-            <motion.div
+            <m.div
               key={activeCategory}
               className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
               initial={reduceMotion ? false : { opacity: 0 }}
@@ -233,7 +233,7 @@ export default function ArtPage() {
                   onOpen={() => openLightbox(i)}
                 />
               ))}
-            </motion.div>
+            </m.div>
           </AnimatePresence>
 
           {/* Empty state */}

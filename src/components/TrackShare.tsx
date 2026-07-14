@@ -6,7 +6,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import type { TrackRow } from "@/lib/supabase";
 import { trackFromRow } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
@@ -41,9 +41,9 @@ export default function TrackShare({ row }: { row: TrackRow }) {
       <div className="relative z-10 mx-auto max-w-xl px-4 pt-10 text-center sm:pt-16">
         <p className="font-mono text-xs uppercase tracking-[0.45em] text-plasma/80">agenor presents</p>
 
-        <motion.div initial={{ opacity: 0, y: 24, rotateY: 18 }} animate={{ opacity: 1, y: 0, rotateY: 0 }}
+        <m.div initial={{ opacity: 0, y: 24, rotateY: 18 }} animate={{ opacity: 1, y: 0, rotateY: 0 }}
           transition={{ type: "spring", stiffness: 180, damping: 22 }} className="relative mt-6" style={{ transformPerspective: 900 }}>
-          <motion.div whileHover={{ scale: 1.015, rotateY: -3 }} whileTap={{ scale: 0.985 }}
+          <m.div whileHover={{ scale: 1.015, rotateY: -3 }} whileTap={{ scale: 0.985 }}
             className="relative mx-auto w-full max-w-[480px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -56,16 +56,16 @@ export default function TrackShare({ row }: { row: TrackRow }) {
             />
             {/* the insert's calling card — floats once the booklet exists */}
             {hasBooklet ? (
-              <motion.span
+              <m.span
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: [0, -5, 0] }}
                 transition={{ opacity: { duration: 0.5 }, y: { repeat: Infinity, duration: 2.4, ease: "easeInOut" } }}
                 className="pointer-events-none absolute inset-x-0 bottom-3 mx-auto w-max rounded-full bg-black/65 px-3.5 py-1.5 font-mono text-[10px] tracking-[0.22em] text-white/90 backdrop-blur-sm">
                 📖 TAP TO OPEN THE CASE
-              </motion.span>
+              </m.span>
             ) : null}
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
 
         <h1 className="mt-7 font-display text-4xl font-black uppercase tracking-tight text-white sm:text-5xl">{track.title}</h1>
         <div className="mt-3 flex flex-wrap items-center justify-center gap-3 font-mono text-xs text-white/60">

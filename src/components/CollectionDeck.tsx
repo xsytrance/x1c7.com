@@ -4,7 +4,7 @@
 // bar with a progress ring; tap again for the full track.
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import type { Track } from "@/data/tracks";
 import { canPerform } from "@/components/KineticStage";
 import { classifyGenre, cardUrl, fmtTime, GENRE_PALETTES, type GenreKey } from "@/lib/collection";
@@ -117,7 +117,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
   return (
     <section className="relative" data-testid="collection-deck">
       <AnimatePresence>
-        <motion.div
+        <m.div
           key={pal.key}
           className="pointer-events-none fixed inset-0 -z-10"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.8 }}
@@ -151,7 +151,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
           const isPreviewing = preview.state.id === t.id;
           return (
             <div key={t.id} data-track-id={t.id} className="w-[68vw] max-w-[380px] shrink-0 snap-center">
-              <motion.button
+              <m.button
                 onClick={() => tapCard(t)}
                 className="relative block w-full overflow-hidden rounded-lg text-left"
                 animate={{ scale: isActive ? 1 : 0.9, opacity: isActive ? 1 : 0.68 }}
@@ -175,7 +175,7 @@ export default function CollectionDeck({ tracks, onPlay, onPauseMain }: {
                     <span className="text-2xl">⚡</span>
                   </div>
                 )}
-              </motion.button>
+              </m.button>
               <div className={`mt-3 px-1 transition-opacity duration-300 ${isActive ? "opacity-100" : "pointer-events-none opacity-0"}`}>
                 <div className="flex items-center gap-2 font-mono text-[11px] text-white/60">
                   <span className="rounded-sm px-1.5 py-0.5 text-black" style={{ background: p.accent }}>{p.label}</span>

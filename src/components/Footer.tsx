@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { MagneticCard } from "./MagneticCard";
 
 const SOCIALS = [
@@ -59,7 +59,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr_1fr]">
           {/* Brand */}
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -85,10 +85,10 @@ export function Footer() {
             >
               🎬 Kinetica — make a lyric video from your Suno stems ↗
             </a>
-          </motion.div>
+          </m.div>
 
           {/* Portal links */}
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -107,10 +107,10 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Socials */}
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -144,7 +144,7 @@ export function Footer() {
             <p className="mt-4 font-mono text-[10px] uppercase tracking-wider text-white/30">
               xsy@x1c7.com
             </p>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Bottom bar */}

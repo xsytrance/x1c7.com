@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 const SHORTCUTS = [
   { key: "1–9", action: "Jump to portal" },
@@ -65,7 +65,7 @@ export function KeyboardHelp() {
   return (
     <AnimatePresence>
       {open && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -73,7 +73,7 @@ export function KeyboardHelp() {
           className="fixed inset-0 z-[90] flex items-center justify-center bg-black/60 backdrop-blur-sm"
           onClick={() => setOpen(false)}
         >
-          <motion.div
+          <m.div
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
@@ -134,8 +134,8 @@ export function KeyboardHelp() {
             >
               Close
             </button>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

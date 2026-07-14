@@ -12,7 +12,7 @@
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { useEffect, useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import type { Lexicon, WordEntry } from "@/lib/lexicon/types";
 import { loadLexicon } from "@/lib/lexicon/lookup";
@@ -60,12 +60,12 @@ function LegoRow({ kind, modes }: { kind: string; modes: string[] }) {
 
 function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }) {
   return (
-    <motion.div
+    <m.div
       className="fixed inset-0 z-[60] flex items-end justify-center bg-black/60 p-0 backdrop-blur-sm sm:items-center sm:p-6"
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
       onClick={onClose}
     >
-      <motion.div
+      <m.div
         className="max-h-[88vh] w-full max-w-2xl overflow-y-auto rounded-t-3xl border border-white/10 bg-[#0a0714]/95 p-6 sm:rounded-3xl sm:p-8"
         initial={{ y: 40, opacity: 0.6 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 40, opacity: 0 }}
         transition={{ type: "spring", stiffness: 320, damping: 32 }}
@@ -118,8 +118,8 @@ function WordPanel({ entry, onClose }: { entry: WordEntry; onClose: () => void }
         <p className="mt-5 font-mono text-[9px] uppercase tracking-wider text-white/25">
           from: {entry.sources.join(" · ")}
         </p>
-      </motion.div>
-    </motion.div>
+      </m.div>
+    </m.div>
   );
 }
 

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
   projects,
   projectCategories,
@@ -60,7 +60,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <motion.div
+    <m.div
       layout
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -133,7 +133,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         style={{ background: `linear-gradient(90deg, transparent, ${accent}, transparent)` }}
         aria-hidden
       />
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -228,7 +228,7 @@ export function ProjectGrid() {
       <div className="mb-6 min-h-[18px]">
         <AnimatePresence mode="wait">
           {activeMeta && (
-            <motion.p
+            <m.p
               key={activeMeta.id}
               initial={reduceMotion ? false : { opacity: 0, y: -4 }}
               animate={{ opacity: 1, y: 0 }}
@@ -237,19 +237,19 @@ export function ProjectGrid() {
               className="font-mono text-xs text-white/45"
             >
               <span style={{ color: activeMeta.color }}>›</span> {activeMeta.blurb}
-            </motion.p>
+            </m.p>
           )}
         </AnimatePresence>
       </div>
 
       {/* grid */}
-      <motion.div layout className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <m.div layout className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <AnimatePresence mode="popLayout">
           {filtered.map((project, i) => (
             <ProjectCard key={project.id} project={project} index={i} />
           ))}
         </AnimatePresence>
-      </motion.div>
+      </m.div>
     </section>
   );
 }

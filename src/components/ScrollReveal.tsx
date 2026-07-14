@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { type ReactNode } from "react";
 
 interface ScrollRevealProps {
@@ -30,7 +30,7 @@ export function ScrollReveal({
   };
 
   return (
-    <motion.div
+    <m.div
       initial={reduceMotion ? false : { opacity: 0, ...directions[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
@@ -38,6 +38,6 @@ export function ScrollReveal({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

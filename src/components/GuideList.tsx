@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 import {
   guides,
   guideCategories,
@@ -27,7 +27,7 @@ function GuideCard({ guide, index }: { guide: Guide; index: number }) {
   const [open, setOpen] = useState(false);
 
   return (
-    <motion.div
+    <m.div
       layout
       initial={reduceMotion ? false : { opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
@@ -86,7 +86,7 @@ function GuideCard({ guide, index }: { guide: Guide; index: number }) {
       {/* expanded steps */}
       <AnimatePresence initial={false}>
         {open && (
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={reduceMotion ? undefined : { height: 0, opacity: 0 }}
@@ -97,7 +97,7 @@ function GuideCard({ guide, index }: { guide: Guide; index: number }) {
               <div className="border-t border-dashed border-white/10 pt-5">
                 <ol className="space-y-3">
                   {guide.steps.map((step, i) => (
-                    <motion.li
+                    <m.li
                       key={i}
                       initial={reduceMotion ? false : { opacity: 0, x: -10 }}
                       animate={{ opacity: 1, x: 0 }}
@@ -111,7 +111,7 @@ function GuideCard({ guide, index }: { guide: Guide; index: number }) {
                         {i + 1}
                       </span>
                       <span className="text-sm leading-6 text-white/70">{step}</span>
-                    </motion.li>
+                    </m.li>
                   ))}
                 </ol>
 
@@ -131,10 +131,10 @@ function GuideCard({ guide, index }: { guide: Guide; index: number }) {
                 )}
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -197,13 +197,13 @@ export function GuideList() {
       </div>
 
       {/* list */}
-      <motion.div layout className="space-y-4">
+      <m.div layout className="space-y-4">
         <AnimatePresence mode="popLayout">
           {filtered.map((guide, i) => (
             <GuideCard key={guide.id} guide={guide} index={i} />
           ))}
         </AnimatePresence>
-      </motion.div>
+      </m.div>
     </section>
   );
 }

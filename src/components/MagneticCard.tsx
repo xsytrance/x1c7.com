@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState, type ReactNode } from "react";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 interface MagneticCardProps {
   children: ReactNode;
@@ -26,7 +26,7 @@ export function MagneticCard({ children, className = "", strength = 0.15 }: Magn
   };
 
   return (
-    <motion.div
+    <m.div
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -36,6 +36,6 @@ export function MagneticCard({ children, className = "", strength = 0.15 }: Magn
       style={{ willChange: "transform" }}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

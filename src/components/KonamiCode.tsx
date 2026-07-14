@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 const KONAMI = ["ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown", "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight", "b", "a"];
 
@@ -52,7 +52,7 @@ export function KonamiCode() {
       {/* Progress hint */}
       <AnimatePresence>
         {showHint && !activated && progress > 0 && progress < KONAMI.length && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
@@ -76,14 +76,14 @@ export function KonamiCode() {
                 })}
               </div>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 
       {/* Full activation overlay */}
       <AnimatePresence>
         {activated && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -105,7 +105,7 @@ export function KonamiCode() {
             <div className="absolute bottom-4 right-4 h-12 w-12 border-b-2 border-r-2 border-signal/40" />
 
             {/* Center badge */}
-            <motion.div
+            <m.div
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
@@ -132,7 +132,7 @@ export function KonamiCode() {
                   ))}
                 </div>
               </div>
-            </motion.div>
+            </m.div>
 
             {/* Status text */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
@@ -140,7 +140,7 @@ export function KonamiCode() {
                 All systems boosted · Signal enhanced
               </p>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

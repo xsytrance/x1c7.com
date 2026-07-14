@@ -12,6 +12,7 @@ import { KonamiCode } from "@/components/KonamiCode";
 import { UISoundLayer } from "@/components/UISoundLayer";
 import { Footer } from "@/components/Footer";
 import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
+import { LazyMotionProvider } from "@/components/LazyMotionProvider";
 import { MusicPlayerBar } from "@/components/MusicPlayerBar";
 import { ThemeEngine } from "@/components/NowPlayingTheme";
 
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en">
       <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
         <MusicPlayerProvider>
+          <LazyMotionProvider>
           <ThemeEngine />
           <BootSequenceWrapper>
             {children}
@@ -65,6 +67,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <NoiseOverlay />
           <UISoundLayer />
           <MusicPlayerBar />
+          </LazyMotionProvider>
         </MusicPlayerProvider>
       </body>
     </html>

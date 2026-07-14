@@ -393,6 +393,23 @@ body.cinematic-on { overflow: hidden; }
   to { transform: none; opacity: 1; }
 }
 
+/* Perf-lite whole-word entrance — the main kinetic word arrives via ONE
+   compositor-only animation (transform + opacity) instead of a framer spring
+   driven from JS every frame. The entrance vector/scale come from the same
+   section-treatment values the desktop spring would use, handed over as CSS
+   vars (--ax/--ay/--asc). `rotate`/`translate` are independent properties, so
+   the word's tilt and drag physics compose cleanly with this transform. */
+.assemble-word {
+  animation: assemble-word-in 0.5s cubic-bezier(0.2, 0.9, 0.25, 1) both;
+}
+@keyframes assemble-word-in {
+  from {
+    transform: translate(var(--ax, 0), var(--ay, 0)) scale(var(--asc, 1));
+    opacity: 0;
+  }
+  to { transform: none; opacity: 1; }
+}
+
 /* The looming anchor word's soft blur. Kept in CSS (not inline) so perf-lite
    can drop it — the anchor animates scale on entrance, and a scaling blurred
    layer re-rasterizes every frame on a phone GPU. */

@@ -2,7 +2,7 @@
 
 import { useParams, notFound } from "next/navigation";
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import {
@@ -69,7 +69,7 @@ export default function ProjectDossier() {
         </nav>
 
         {/* Division badge */}
-        <motion.div
+        <m.div
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
@@ -83,7 +83,7 @@ export default function ProjectDossier() {
             <span>{meta.glyph}</span>
             {meta.label}
           </Link>
-        </motion.div>
+        </m.div>
 
         {/* Header */}
         <header className="mb-8">
@@ -121,7 +121,7 @@ export default function ProjectDossier() {
         {/* Body grid */}
         <div className="grid gap-6 lg:grid-cols-[1.6fr_1fr]">
           {/* Brief */}
-          <motion.section
+          <m.section
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
@@ -157,10 +157,10 @@ export default function ProjectDossier() {
                 </a>
               )}
             </div>
-          </motion.section>
+          </m.section>
 
           {/* Intel sidebar */}
-          <motion.aside
+          <m.aside
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25 }}
@@ -190,7 +190,7 @@ export default function ProjectDossier() {
             <p className="mt-5 text-[11px] leading-6 text-white/45">
               {meta.blurb}
             </p>
-          </motion.aside>
+          </m.aside>
         </div>
 
         {/* Related */}
@@ -201,7 +201,7 @@ export default function ProjectDossier() {
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               {related.map((r, i) => (
-                <motion.div
+                <m.div
                   key={r.id}
                   initial={reduceMotion ? false : { opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -219,7 +219,7 @@ export default function ProjectDossier() {
                       inspect →
                     </span>
                   </Link>
-                </motion.div>
+                </m.div>
               ))}
             </div>
           </section>

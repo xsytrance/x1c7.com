@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { type ReactNode } from "react";
 
 interface StaggerContainerProps {
@@ -45,7 +45,7 @@ export function StaggerContainer({
   };
 
   return (
-    <motion.div
+    <m.div
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
@@ -54,11 +54,11 @@ export function StaggerContainer({
     >
       {Array.isArray(children)
         ? children.map((child, i) => (
-            <motion.div key={i} variants={itemVariants}>
+            <m.div key={i} variants={itemVariants}>
               {child}
-            </motion.div>
+            </m.div>
           ))
         : children}
-    </motion.div>
+    </m.div>
   );
 }

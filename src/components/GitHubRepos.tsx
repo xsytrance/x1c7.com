@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 
 /* ------------------------------------------------------------------ */
 /*  TYPES                                                              */
@@ -123,7 +123,7 @@ function RepoCard({ repo, index }: { repo: GitHubRepo; index: number }) {
   const langColor = getLanguageColor(repo.language);
 
   return (
-    <motion.a
+    <m.a
       href={repo.html_url}
       target="_blank"
       rel="noopener noreferrer"
@@ -174,7 +174,7 @@ function RepoCard({ repo, index }: { repo: GitHubRepo; index: number }) {
         {/* date */}
         <span className="text-white/25">{formatDate(repo.updated_at)}</span>
       </div>
-    </motion.a>
+    </m.a>
   );
 }
 
@@ -212,7 +212,7 @@ export function GitHubRepos() {
   if (state.status === "loading") {
     return (
       <section className="mb-8 sm:mb-12">
-        <motion.div
+        <m.div
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -232,7 +232,7 @@ export function GitHubRepos() {
               <SkeletonCard key={i} index={i} />
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </section>
     );
   }
@@ -254,7 +254,7 @@ export function GitHubRepos() {
   /* ---- success ---- */
   return (
     <section className="mb-8 sm:mb-12">
-      <motion.div
+      <m.div
         initial={reduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -285,7 +285,7 @@ export function GitHubRepos() {
             <RepoCard key={repo.id} repo={repo} index={i} />
           ))}
         </div>
-      </motion.div>
+      </m.div>
     </section>
   );
 }

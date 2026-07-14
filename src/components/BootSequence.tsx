@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 
 const BOOT_LINES = [
   { text: "> INITIALIZING x1c7 SYSTEM...", delay: 200 },
@@ -82,7 +82,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
   return (
     <AnimatePresence>
       {visible && !exiting && (
-        <motion.div
+        <m.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
@@ -105,7 +105,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
               {/* Boot lines */}
               <div className="grid gap-2 font-mono text-sm">
                 {lines.map((li) => (
-                  <motion.p
+                  <m.p
                     key={li}
                     initial={{ opacity: 0, x: -8 }}
                     animate={{ opacity: 1, x: 0 }}
@@ -121,7 +121,7 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
                     }
                   >
                     {BOOT_LINES[li].text}
-                  </motion.p>
+                  </m.p>
                 ))}
                 {/* Blinking cursor */}
                 {lines.length > 0 && lines.length < BOOT_LINES.length && (
@@ -130,17 +130,17 @@ export function BootSequence({ onComplete }: { onComplete: () => void }) {
               </div>
 
               {/* Skip hint */}
-              <motion.p
+              <m.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 2 }}
                 className="mt-6 text-center font-mono text-[10px] uppercase tracking-wider text-white/20"
               >
                 Click anywhere to skip
-              </motion.p>
+              </m.p>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>
   );

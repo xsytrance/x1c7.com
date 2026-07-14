@@ -29,6 +29,11 @@ interface Profile {
     summary?: string; overallMood?: string | { name?: string }; themes?: string[];
     sections?: { name: string; start?: number; emotion?: string; intensity?: number; colorHint?: string }[];
     keywords?: { word: string; emotion?: string }[];
+    meaning?: {
+      story?: string;
+      sections?: { name?: string; interpretation?: string; keyLine?: string }[];
+      keyLines?: string[];
+    };
   };
   show?: {
     energyArc?: { open: number; mid: number; close: number };
@@ -66,6 +71,15 @@ const STEM_LABEL: Record<string, string> = {
 
 const fmtT = (s: number) => `${Math.floor(s / 60)}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
 
+// The Curator's picture reel — lexicon images the vision pipeline matched to
+// THIS song (planets/<slug>/lexicon-reel.json, published by match-reel.mjs).
+interface Reel {
+  reel?: {
+    img: string; word: string; line?: string; t?: number | null;
+    score: number; reason?: string; recipe?: string; featured?: boolean;
+  }[];
+}
+
 function Tile({ label, value, sub }: { label: string; value: string; sub?: string | null }) {
   return (
     <div className="rounded-lg border border-white/10 bg-black/30 px-3 py-3 text-center">
@@ -80,11 +94,17 @@ export default function SonicDossier({ slug, accent, bpm, duration }: {
   slug: string; accent: string; bpm?: number | null; duration?: number | null;
 }) {
   const [p, setP] = useState<Profile | null>(null);
+  const [reel, setReel] = useState<Reel | null>(null);
   useEffect(() => {
     let dead = false;
     fetch(`${PLANET_BASE}/planets/${slug}/profile.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => { if (!dead && j) setP(j); })
+      .catch(() => {});
+    // 404 = the Curator hasn't matched this song yet — section simply absent.
+    fetch(`${PLANET_BASE}/planets/${slug}/lexicon-reel.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => { if (!dead && j?.reel?.length) setReel(j); })
       .catch(() => {});
     return () => { dead = true; };
   }, [slug]);
@@ -206,6 +226,44 @@ export default function SonicDossier({ slug, accent, bpm, duration }: {
                 ))}
               </div>
             ) : null}
+          </div>
+        ) : null}
+
+        {/* the deep read — the MEANING pass: story + the lines that carry it */}
+        {p.analysis?.meaning?.story ? (
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/35">what it&apos;s really about</p>
+            <p className="mt-2 text-sm leading-7 text-white/65">{p.analysis.meaning.story}</p>
+            {p.analysis.meaning.keyLines?.length ? (
+              <div className="mt-3 space-y-1.5">
+                {p.analysis.meaning.keyLines.slice(0, 4).map((l) => (
+                  <p key={l} className="border-l-2 pl-3 font-display text-sm font-bold leading-6 text-white/70" style={{ borderColor: accent }}>
+                    “{l}”
+                  </p>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        ) : null}
+
+        {/* THE REEL — lexicon paintings the Curator matched to this song */}
+        {reel?.reel?.length ? (
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/35">
+              the reel <span className="text-white/25">· pictures this song sees</span>
+            </p>
+            <div className="mt-2 grid grid-cols-3 gap-1.5 sm:grid-cols-4">
+              {reel.reel.slice(0, 12).map((r) => (
+                <figure key={r.img} className="group relative overflow-hidden rounded-md border border-white/10" title={r.reason ? `${r.word} — ${r.reason}` : r.word}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={r.img} alt={r.word} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-105" />
+                  <figcaption className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/85 to-transparent px-1.5 pb-1 pt-3">
+                    <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-white/80">{r.word}</span>
+                    {r.featured ? <span className="text-[9px]" style={{ color: accent }}>★</span> : null}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
           </div>
         ) : null}
 

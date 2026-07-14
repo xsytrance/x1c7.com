@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { useState } from "react";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
@@ -80,7 +80,7 @@ function CheckDraw({ color, delay = 0 }: { color: string; delay?: number }) {
       fill="none"
       className="mt-[2px] shrink-0"
     >
-      <motion.path
+      <m.path
         d="M4 9l4 4 6-7"
         stroke={color}
         strokeWidth="2"
@@ -101,7 +101,7 @@ function ConnectionLine({ color }: { color: string }) {
   return (
     <div className="relative mx-auto flex h-10 w-px flex-col items-center justify-center overflow-visible sm:h-12">
       <div className="h-full w-px border-l border-dashed" style={{ borderColor: `${color}30` }} />
-      <motion.div
+      <m.div
         className="absolute top-1/2 h-1.5 w-1.5 -translate-y-1/2 rounded-full"
         style={{ backgroundColor: color }}
         animate={{ opacity: [0.3, 1, 0.3] }}
@@ -128,7 +128,7 @@ function LevelCard({
       {index > 0 && <ConnectionLine color={level.color} />}
 
       <ScrollReveal delay={index * 0.1}>
-        <motion.div
+        <m.div
           className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.06] p-5 backdrop-blur transition-colors duration-300 sm:p-6"
           style={{
             boxShadow: hovered
@@ -200,7 +200,7 @@ function LevelCard({
               </span>
             </div>
           </div>
-        </motion.div>
+        </m.div>
       </ScrollReveal>
     </>
   );
@@ -326,22 +326,22 @@ export default function Page() {
               </p>
 
               <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-                <motion.a
+                <m.a
                   href="mailto:hello@levelready.ai"
                   className="inline-flex w-full items-center justify-center rounded-full bg-white px-8 py-4 font-display text-sm font-black uppercase tracking-[0.2em] text-[#05030b] transition-colors duration-300 hover:bg-[#8dff4a] sm:w-auto"
                   whileHover={reduce ? {} : { scale: 1.05 }}
                   whileTap={reduce ? {} : { scale: 0.97 }}
                 >
                   Initialize Setup
-                </motion.a>
-                <motion.a
+                </m.a>
+                <m.a
                   href="#process"
                   className="inline-flex w-full items-center justify-center rounded-full border border-white/20 px-8 py-4 font-display text-sm font-black uppercase tracking-[0.2em] text-white/70 transition-colors duration-300 hover:border-[#8dff4a] hover:text-white sm:w-auto"
                   whileHover={reduce ? {} : { scale: 1.05 }}
                   whileTap={reduce ? {} : { scale: 0.97 }}
                 >
                   Learn More
-                </motion.a>
+                </m.a>
               </div>
             </div>
           </ScrollReveal>

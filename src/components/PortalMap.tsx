@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import { useState, type CSSProperties } from "react";
 import { portals } from "@/data/portals";
@@ -34,7 +34,7 @@ export function PortalMap() {
           {/* Connection lines */}
           <PortalConnections activeIndex={activeIndex} />
 
-          <motion.button
+          <m.button
             type="button"
             onClick={() => setActiveSlug(active.slug)}
             animate={reduceMotion ? undefined : { scale: [1, 1.025, 1] }}
@@ -45,13 +45,13 @@ export function PortalMap() {
             <span className="text-xs uppercase tracking-[0.5em] text-signal/80">x1c7</span>
             <span className="font-display text-5xl font-black">CORE</span>
             <span className="px-8 text-xs uppercase tracking-[0.25em] text-white/55">choose a portal</span>
-          </motion.button>
+          </m.button>
 
           <div className="relative z-20 grid gap-3 md:absolute md:inset-0 md:block">
             {portals.map((portal, index) => {
               const selected = portal.slug === active.slug;
               return (
-                <motion.button
+                <m.button
                   key={portal.slug}
                   type="button"
                   onClick={() => setActiveSlug(portal.slug)}
@@ -78,13 +78,13 @@ export function PortalMap() {
                     <span className="block text-xs uppercase tracking-[0.22em] text-white/45">{portal.status}</span>
                   </span>
                   <span className="absolute inset-x-0 bottom-0 h-1 origin-left scale-x-0 transition group-hover:scale-x-100" style={{ background: portal.color }} />
-                </motion.button>
+                </m.button>
               );
             })}
           </div>
         </div>
 
-        <motion.aside
+        <m.aside
           key={active.slug}
           initial={reduceMotion ? false : { opacity: 0, x: 24 }}
           animate={reduceMotion ? undefined : { opacity: 1, x: 0 }}
@@ -113,7 +113,7 @@ export function PortalMap() {
               Read signal
             </a>
           </div>
-        </motion.aside>
+        </m.aside>
       </div>
     </section>
   );

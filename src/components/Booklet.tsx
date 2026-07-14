@@ -5,7 +5,7 @@
 // deploys. Every page renders defensively: a missing block is simply absent.
 
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, m } from "framer-motion";
 import type { BookletData, BookletPage } from "@/lib/booklet";
 import { InstrumentGlyph } from "@/components/StemGlyphs";
 import type { StemName } from "@/lib/stemSense";
@@ -252,28 +252,28 @@ const Booklet = forwardRef<BookletHandle, {
 
   return (
     <>
-      <motion.button onClick={openBook}
+      <m.button onClick={openBook}
         initial={{ opacity: 0, scale: 0.85 }} animate={{ opacity: 1, scale: 1 }}
         transition={{ type: "spring", stiffness: 320, damping: 20 }}
         whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
         className={`rounded-sm border border-white/20 font-mono tracking-[0.16em] text-white/70 transition-colors hover:border-white/60 hover:text-white ${sizing}`}>
         {label}
-      </motion.button>
+      </m.button>
 
       <AnimatePresence>
         {open ? (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+          <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
             role="dialog" aria-modal="true" aria-label={`${data.id} booklet`}
             className="fixed inset-0 z-[80] flex items-center justify-center bg-black/85 backdrop-blur-sm"
             onClick={() => setOpen(false)}>
-            <motion.div initial={{ scale: 0.92, y: 14 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0 }}
+            <m.div initial={{ scale: 0.92, y: 14 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.95, opacity: 0 }}
               transition={{ type: "spring", stiffness: 260, damping: 24 }}
               className="relative w-full max-w-[440px] px-4" onClick={(e) => e.stopPropagation()}>
               {/* the page — drag it like paper */}
               <div className="relative overflow-hidden rounded-lg border border-white/15 bg-[#0c0c10]"
                 style={{ boxShadow: `0 30px 90px -30px ${accent}55`, aspectRatio: "4 / 5" }}>
                 <AnimatePresence mode="popLayout" custom={dir}>
-                  <motion.div key={idx}
+                  <m.div key={idx}
                     drag="x" dragConstraints={{ left: 0, right: 0 }} dragElastic={0.16}
                     onDragEnd={(_, info) => {
                       if (info.offset.x < -56 || info.velocity.x < -420) turn(1);
@@ -286,44 +286,44 @@ const Booklet = forwardRef<BookletHandle, {
                     style={{ transformPerspective: 1100, touchAction: "pan-y" }}
                     className="absolute inset-0 cursor-grab overflow-y-auto p-6 active:cursor-grabbing">
                     <PageBody page={pages[idx]} slug={slug} accent={accent} />
-                  </motion.div>
+                  </m.div>
                 </AnimatePresence>
 
                 {/* edge-tap hotspots — always visible, breathing */}
                 {idx > 0 ? (
                   <button onClick={() => turn(-1)} aria-label="previous page"
                     className="absolute left-0 top-1/2 z-10 flex h-20 w-9 -translate-y-1/2 items-center justify-start pl-1">
-                    <motion.span animate={{ x: [0, -3, 0], opacity: [0.3, 0.75, 0.3] }}
+                    <m.span animate={{ x: [0, -3, 0], opacity: [0.3, 0.75, 0.3] }}
                       transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-                      className="font-display text-2xl text-white">‹</motion.span>
+                      className="font-display text-2xl text-white">‹</m.span>
                   </button>
                 ) : null}
                 {idx < pages.length - 1 ? (
                   <button onClick={() => turn(1)} aria-label="next page"
                     className="absolute right-0 top-1/2 z-10 flex h-20 w-9 -translate-y-1/2 items-center justify-end pr-1">
-                    <motion.span animate={{ x: [0, 3, 0], opacity: [0.3, 0.75, 0.3] }}
+                    <m.span animate={{ x: [0, 3, 0], opacity: [0.3, 0.75, 0.3] }}
                       transition={{ repeat: Infinity, duration: 2.2, ease: "easeInOut" }}
-                      className="font-display text-2xl text-white">›</motion.span>
+                      className="font-display text-2xl text-white">›</m.span>
                   </button>
                 ) : null}
 
                 {/* first-moments hint */}
                 <AnimatePresence>
                   {hint ? (
-                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+                    <m.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
                       className="pointer-events-none absolute inset-x-0 bottom-5 z-20 flex justify-center">
-                      <motion.p animate={{ x: [0, 7, -7, 0] }} transition={{ repeat: 1, duration: 1.4, ease: "easeInOut", delay: 0.3 }}
+                      <m.p animate={{ x: [0, 7, -7, 0] }} transition={{ repeat: 1, duration: 1.4, ease: "easeInOut", delay: 0.3 }}
                         className="rounded-full bg-black/70 px-4 py-2 font-mono text-[10px] tracking-[0.24em] text-white/90 backdrop-blur-sm">
                         ‹ SWIPE OR TAP THE EDGES ›
-                      </motion.p>
-                    </motion.div>
+                      </m.p>
+                    </m.div>
                   ) : null}
                 </AnimatePresence>
               </div>
 
               {/* progress + controls */}
               <div className="mx-1 mt-3 h-[3px] overflow-hidden rounded bg-white/10">
-                <motion.div className="h-full rounded" style={{ background: accent }}
+                <m.div className="h-full rounded" style={{ background: accent }}
                   animate={{ width: `${((idx + 1) / pages.length) * 100}%` }}
                   transition={{ type: "spring", stiffness: 200, damping: 26 }} />
               </div>
@@ -336,8 +336,8 @@ const Booklet = forwardRef<BookletHandle, {
               </div>
               <button onClick={() => setOpen(false)}
                 className="absolute -top-10 right-4 font-mono text-xs tracking-[0.2em] text-white/50 transition hover:text-white">✕ CLOSE</button>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         ) : null}
       </AnimatePresence>
     </>

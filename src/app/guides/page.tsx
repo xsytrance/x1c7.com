@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -48,7 +48,7 @@ export default function GuidesPage() {
             How-tos, AI playbooks, and field-tested ways to use the machines.
             Declassified protocols from the lab — tap any file to expand the steps.
           </p>
-          <motion.div
+          <m.div
             initial={reduceMotion ? false : { opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
@@ -56,7 +56,7 @@ export default function GuidesPage() {
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-venom" />
             {guides.length} protocols declassified · more incoming
-          </motion.div>
+          </m.div>
         </header>
 
         {/* Guides */}

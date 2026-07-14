@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { MagneticCard } from "@/components/MagneticCard";
@@ -56,7 +56,7 @@ export default function ContactPage() {
         </nav>
 
         {/* Header */}
-        <motion.header
+        <m.header
           initial={reduceMotion ? false : { opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -74,11 +74,11 @@ export default function ContactPage() {
           <p className="mt-4 max-w-lg text-sm leading-7 text-white/55">
             Got a project, idea, collaboration, or just want to say hi? Drop a message into the void.
           </p>
-        </motion.header>
+        </m.header>
 
         {/* Form */}
         {!submitted ? (
-          <motion.form
+          <m.form
             initial={reduceMotion ? false : { opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
@@ -180,10 +180,10 @@ export default function ContactPage() {
             <p className="pt-2 font-mono text-[10px] uppercase tracking-wider text-white/30">
               Or email directly: <a href="mailto:xsy@x1c7.com" className="text-signal/60 transition hover:text-signal">xsy@x1c7.com</a>
             </p>
-          </motion.form>
+          </m.form>
         ) : (
           /* Success state */
-          <motion.div
+          <m.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
@@ -206,11 +206,11 @@ export default function ContactPage() {
             >
               Send Another
             </button>
-          </motion.div>
+          </m.div>
         )}
 
         {/* Social links */}
-        <motion.section
+        <m.section
           initial={reduceMotion ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -252,7 +252,7 @@ export default function ContactPage() {
               </a>
             ))}
           </div>
-        </motion.section>
+        </m.section>
       </div>
     </main>
   );

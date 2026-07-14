@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { createPortal } from "react-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 import { uiStore } from "@/lib/uiStore";
@@ -202,7 +202,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
   return createPortal(
     <AnimatePresence>
       {open && (
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}
           className="fixed inset-0 z-[300] flex flex-col"
           style={{
@@ -270,7 +270,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                     style={labMode || reactorOpen
                       ? { borderColor: "var(--inst-signal)", color: "var(--inst-signal)", background: "color-mix(in srgb, var(--inst-signal) 12%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--inst-signal) 45%, transparent)" }
                       : { borderColor: "var(--inst-line)", color: "var(--inst-signal)", background: "var(--inst-s2)" }}>
-                    <motion.span animate={{ rotate: 360 }} transition={{ duration: 6, repeat: Infinity, ease: "linear" }} className="text-sm leading-none">⚛</motion.span>
+                    <m.span animate={{ rotate: 360 }} transition={{ duration: 6, repeat: Infinity, ease: "linear" }} className="text-sm leading-none">⚛</m.span>
                     <span className="hidden sm:inline">{labMode ? "Reactor ✦" : "Reactor"}</span>
                   </button>
                   {/* custom hover tooltip (desktop) */}
@@ -315,19 +315,19 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
           {/* END SHOW — the always-there exit, thumb-reachable even mid
               Dynamic+ takeover. Stops the music AND closes the stage
               (the top-bar chevron only minimizes; music keeps playing). */}
-          <motion.button
+          <m.button
             initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
             onClick={() => { pause(); onClose(); }}
             aria-label="End the show — stops the music"
             style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
             className="absolute right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-[var(--inst-signal)] hover:text-[var(--inst-signal)]">
             ✕ <span>End show</span>
-          </motion.button>
+          </m.button>
 
           {/* THE REACTOR — experimental mode picker */}
           <AnimatePresence>
             {reactorOpen && (
-              <motion.div
+              <m.div
                 className="absolute right-3 top-16 z-[70] w-72 rounded-2xl border border-white/12 bg-[#0b0810]/95 p-3 backdrop-blur-md"
                 initial={{ opacity: 0, y: -8, scale: 0.97 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: -8, scale: 0.97 }}
               >
@@ -350,14 +350,14 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                   ))}
                   <p className="mt-1 px-1 font-mono text-[9px] uppercase tracking-widest text-white/25">soon · downpour · thread · orbit · crawl · bubbles · matrix · pinball · +more</p>
                 </div>
-              </motion.div>
+              </m.div>
             )}
           </AnimatePresence>
 
           {/* DYNAMIC+ moment billing — the act's marquee line */}
           <AnimatePresence>
             {moment.label && (
-              <motion.div
+              <m.div
                 className="pointer-events-none absolute bottom-24 left-1/2 z-[60] -translate-x-1/2"
                 initial={{ opacity: 0, y: 12, scale: 0.94 }} animate={{ opacity: 1, y: 0, scale: 1 }} exit={{ opacity: 0, y: 12, scale: 0.94 }}
               >
@@ -365,7 +365,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                   style={{ borderColor: "var(--theme-primary)", color: "var(--theme-primary)", background: "#000b", boxShadow: "0 0 18px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
                   ⚡ {moment.label}
                 </span>
-              </motion.div>
+              </m.div>
             )}
           </AnimatePresence>
 
@@ -387,13 +387,13 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
           <AnimatePresence>
             {drawer && (
               <>
-                <motion.div
+                <m.div
                   key="scrim"
                   className="absolute inset-0 z-[5] bg-black/45"
                   initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
                   onClick={() => setDrawer(false)}
                 />
-                <motion.aside
+                <m.aside
                   key="drawer"
                   className="absolute bottom-0 right-0 top-[64px] z-[6] flex w-[min(88vw,360px)] flex-col border-l border-white/10 bg-[#0a0714]/95 backdrop-blur-xl"
                   initial={{ x: "100%" }} animate={{ x: 0 }} exit={{ x: "100%" }}
@@ -444,7 +444,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                       );
                     })}
                   </div>
-                </motion.aside>
+                </m.aside>
               </>
             )}
           </AnimatePresence>
@@ -480,7 +480,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               </>
             )}
           </div>
-        </motion.div>
+        </m.div>
       )}
     </AnimatePresence>,
     document.body,

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { m, useReducedMotion } from "framer-motion";
 import { PortalMap } from "@/components/PortalMap";
 import { MobileNav } from "@/components/MobileNav";
 import { TextScramble } from "@/components/TextScramble";
@@ -42,7 +42,7 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <motion.section
+      <m.section
         initial={reduceMotion ? false : { opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -70,17 +70,17 @@ export default function Home() {
             <GalaxyButton compact />
           </div>
         </div>
-      </motion.section>
+      </m.section>
 
       {/* Portal Map */}
-      <motion.div
+      <m.div
         id="map"
         initial={reduceMotion ? false : { opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
       >
         <PortalMap />
-      </motion.div>
+      </m.div>
 
       {/* Showcase: stats, featured builds, latest track */}
       <HomeShowcase />

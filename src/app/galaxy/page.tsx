@@ -8,7 +8,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { useTracks } from "@/lib/useTracks";
 import { isPrivateHost } from "@/lib/privateHost";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
@@ -167,7 +167,7 @@ export default function GalaxyPage() {
         const small = typeof window !== "undefined" && window.innerWidth < 640;
         const size = (small ? 13 : 8.5) + ((t.planet?.analysis?.sections?.length ?? 8) / 27) * (small ? 7 : 5); // vmin
         return (
-          <motion.button
+          <m.button
             key={t.id}
             onClick={() => setFocus(t)}
             className="galaxy-planet group absolute z-10 -translate-x-1/2 -translate-y-1/2"
@@ -192,7 +192,7 @@ export default function GalaxyPage() {
             <span className="pointer-events-none absolute left-1/2 top-full mt-1.5 -translate-x-1/2 whitespace-nowrap font-mono text-[9px] uppercase tracking-wider text-white/0 transition group-hover:text-white/70">
               {t.title}
             </span>
-          </motion.button>
+          </m.button>
         );
       })}
       </div>
@@ -200,7 +200,7 @@ export default function GalaxyPage() {
       {/* planet card — land on it */}
       <AnimatePresence>
         {focus && (
-          <motion.div
+          <m.div
             className="absolute inset-x-0 bottom-0 z-30 p-4 sm:p-6"
             initial={{ y: 160, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -233,7 +233,7 @@ export default function GalaxyPage() {
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M6 6l12 12M18 6L6 18" /></svg>
               </button>
             </div>
-          </motion.div>
+          </m.div>
         )}
       </AnimatePresence>
 

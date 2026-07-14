@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Link from "next/link";
-import { motion, animate, useInView, useReducedMotion } from "framer-motion";
+import { m, animate, useInView, useReducedMotion } from "framer-motion";
 import { featuredProjects, projects, projectCategories, categoryMeta } from "@/data/projects";
 import { tracks, featuredTracks } from "@/data/tracks";
 import { agentsData } from "@/data/agents";
@@ -62,7 +62,7 @@ function FeaturedCard({ id, index }: { id: string; index: number }) {
   const accent = categoryMeta[project.category].color;
 
   return (
-    <motion.div
+    <m.div
       initial={reduce ? false : { opacity: 0, y: 18 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
@@ -95,7 +95,7 @@ function FeaturedCard({ id, index }: { id: string; index: number }) {
           aria-hidden
         />
       </Link>
-    </motion.div>
+    </m.div>
   );
 }
 
@@ -120,7 +120,7 @@ export function HomeShowcase() {
   return (
     <section className="relative mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
       {/* Stats band */}
-      <motion.div
+      <m.div
         initial={reduce ? false : { opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-40px" }}
@@ -135,7 +135,7 @@ export function HomeShowcase() {
             <Stat key={s.label} value={s.value} label={s.label} color={s.color} />
           ))}
         </div>
-      </motion.div>
+      </m.div>
 
       {/* Featured projects */}
       <div className="mt-12">
@@ -164,7 +164,7 @@ export function HomeShowcase() {
 
       {/* Latest transmission (track teaser) */}
       {track && (
-        <motion.div
+        <m.div
           initial={reduce ? false : { opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-40px" }}
@@ -211,7 +211,7 @@ export function HomeShowcase() {
               Open music ▸
             </span>
           </Link>
-        </motion.div>
+        </m.div>
       )}
     </section>
   );

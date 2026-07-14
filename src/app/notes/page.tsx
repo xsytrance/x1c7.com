@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
+import { m, AnimatePresence, useReducedMotion } from "framer-motion";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 
@@ -106,7 +106,7 @@ function EntryCard({ entry, index, activeTag, onTagClick }: {
   const rotation = index % 2 === 0 ? "rotate-[-0.5deg]" : "rotate-[0.5deg]";
 
   return (
-    <motion.article
+    <m.article
       layout
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
@@ -160,7 +160,7 @@ function EntryCard({ entry, index, activeTag, onTagClick }: {
       <span className="absolute bottom-3 right-4 font-mono text-[9px] text-white/10">
         #{index + 1}
       </span>
-    </motion.article>
+    </m.article>
   );
 }
 
@@ -226,7 +226,7 @@ export default function NotesPage() {
         </header>
 
         {/* Tag Filter Bar */}
-        <motion.div
+        <m.div
           initial={reduceMotion ? false : { opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
@@ -273,7 +273,7 @@ export default function NotesPage() {
           {/* Active filter indicator */}
           <AnimatePresence>
             {activeTag && (
-              <motion.div
+              <m.div
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
@@ -288,13 +288,13 @@ export default function NotesPage() {
                     Clear filter
                   </button>
                 </p>
-              </motion.div>
+              </m.div>
             )}
           </AnimatePresence>
-        </motion.div>
+        </m.div>
 
         {/* Entries */}
-        <motion.section layout className="relative space-y-8">
+        <m.section layout className="relative space-y-8">
           <AnimatePresence mode="popLayout">
             {filteredEntries.map((entry, i) => (
               <EntryCard
@@ -309,7 +309,7 @@ export default function NotesPage() {
 
           {/* Empty state */}
           {filteredEntries.length === 0 && (
-            <motion.div
+            <m.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               className="py-16 text-center"
@@ -323,21 +323,21 @@ export default function NotesPage() {
               >
                 Show all
               </button>
-            </motion.div>
+            </m.div>
           )}
 
           {/* End marker */}
           {filteredEntries.length > 0 && (
-            <motion.div layout className="flex justify-center pt-6">
+            <m.div layout className="flex justify-center pt-6">
               <span
                 className="font-mono text-[10px] text-white/20 underline decoration-white/10 underline-offset-2"
                 style={{ transform: "rotate(-4deg)" }}
               >
                 end of current entries — more soon
               </span>
-            </motion.div>
+            </m.div>
           )}
-        </motion.section>
+        </m.section>
       </div>
     </main>
   );
