@@ -160,7 +160,14 @@ export default function AtelierPage() {
   useEffect(() => { setOwner(isPrivateHost(window.location.hostname)); }, []);
   useEffect(() => { loadLexicon().then(setLex).catch(() => {}); }, []);
 
-  const entries = useMemo(() => Object.values(lex.entries), [lex]);
+  // Light-gravity words are culled from the hanging by default (?all=1 shows
+  // the featherweights too — curator/gravity.mjs decides tiers).
+  const [showAll, setShowAll] = useState(false);
+  useEffect(() => { setShowAll(new URLSearchParams(window.location.search).get("all") === "1"); }, []);
+  const entries = useMemo(() => {
+    const all = Object.values(lex.entries);
+    return showAll ? all : all.filter((e) => e.gravity?.tier !== "light");
+  }, [lex, showAll]);
 
   // gallery-wide ledger: totals + per-recipe counts
   const ledger = useMemo(() => {

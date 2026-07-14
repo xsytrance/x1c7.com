@@ -354,11 +354,52 @@ const analysis = planetRow.planet.analysis;
 // your body"), keep its most salient word; drop dupes that creates.
 const STOP = new Set(["the", "a", "an", "with", "your", "our", "my", "it", "its", "in", "on", "of", "to", "and", "me", "you", "say"]);
 const seenKw = new Set();
-analysis.keywords = (analysis.keywords ?? []).map((k) => {
+const toSingleWord = (k) => {
   let w = String(k.word ?? "").toLowerCase().trim();
   if (w.includes(" ")) w = w.split(/\s+/).filter((x) => !STOP.has(x)).sort((a, b) => b.length - a.length)[0] ?? w.split(/\s+/)[0];
   return { ...k, word: w };
-}).filter((k) => k.word && !seenKw.has(k.word) && seenKw.add(k.word));
+};
+analysis.keywords = (analysis.keywords ?? []).map(toSingleWord)
+  .filter((k) => k.word && !seenKw.has(k.word) && seenKw.add(k.word));
+
+// ── 7b. THE MEANING PASS ────────────────────────────────────────────────────
+// What is this song ABOUT? One deep read over the full lyrics: the story, a
+// per-section interpretation with its key line, and an extended brief of
+// 12–20 HEAVY keywords (concrete, emotionally loaded, actually sung) so the
+// lexicon gets a song's true visual vocabulary instead of six guesses.
+// Rides inside analysis → lands in planet-full + profile.json unchanged.
+if (!args["no-meaning"]) {
+  log("▶ meaning (LLM) …");
+  try {
+    const sectionNames = (analysis.sections ?? []).map((s) => s.name);
+    const meaning = await llm(
+      "You are a song interpreter with a painter's eye. Given a song's lyrics and metadata, respond ONLY with JSON: " +
+      '{"story":"2-4 sentences: what the song is really about — subtext included",' +
+      '"sections":[{"name":"<section>","interpretation":"one sentence","keyLine":"the most loaded lyric line in it"}],' +
+      '"keyLines":["3-6 lines that carry the whole song"],' +
+      '"extendedKeywords":[{"word":"single concrete sung word","emotion":"...","imageryPrompt":"a vivid text-to-image prompt grounded in THIS song\'s world","weight":0.9}]}. ' +
+      "extendedKeywords: 12 to 20 entries. Only words with real weight — emotionally loaded, paintable nouns/verbs that are actually sung (fire, soul, drip, chains). NEVER articles, fillers, or abstract glue words (every, thing, really). weight = how central the word is to this song, 0..1.",
+      `Title: ${identity.title}\nGenre: ${identity.genre} · Mood: ${identity.mood}\nSummary so far: ${analysis.summary ?? ""}\nSections: ${sectionNames.join(", ")}\n\nFULL LYRICS:\n${lyricsText}`,
+      2600,
+    );
+    const extended = (Array.isArray(meaning.extendedKeywords) ? meaning.extendedKeywords : [])
+      .map(toSingleWord)
+      .filter((k) => k.word && k.word.length >= 2 && typeof k.imageryPrompt === "string");
+    for (const k of extended) {
+      if (seenKw.has(k.word)) continue;
+      seenKw.add(k.word);
+      analysis.keywords.push({ word: k.word, emotion: k.emotion, imageryPrompt: k.imageryPrompt });
+    }
+    analysis.meaning = {
+      story: String(meaning.story ?? ""),
+      sections: Array.isArray(meaning.sections) ? meaning.sections : [],
+      keyLines: Array.isArray(meaning.keyLines) ? meaning.keyLines : [],
+      extendedKeywords: extended,
+    };
+    log(`  story: ${analysis.meaning.story.slice(0, 110)}…`);
+    log(`  keywords now ${analysis.keywords.length} (extended +${extended.length})`);
+  } catch (e) { log("  meaning pass failed (profile still valid):", e.message); }
+}
 
 // Measured intensity beats guessed intensity: mean full-band energy per section.
 const ENV_HZ = senses.envHz ?? 12.5;

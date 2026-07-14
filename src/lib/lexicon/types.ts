@@ -38,6 +38,18 @@ export interface WordSense {
   score: number;                 // curation weight (community votes bump this later)
 }
 
+/** How much a word WEIGHS — impact/sentiment/imagery, scored by
+ *  scripts/curator/gravity.mjs. Tiers drive paint budgets (heavy 6 images
+ *  per sense, mid 2, light 0) and browser visibility. */
+export interface WordGravity {
+  score: number;                 // 0..1
+  tier: "heavy" | "mid" | "light";
+  parts?: Record<string, number>;
+  seed?: "heavy" | "light" | null; // human guardrail — never overridden
+  llm?: { grade: number; sent: number; concrete: number; reason: string; model: string; at: string } | null;
+  v: number;
+}
+
 export interface WordEntry {
   word: string;                  // normalized lemma key
   forms: string[];               // surface forms seen: run / running / ran
@@ -45,6 +57,7 @@ export interface WordEntry {
   freq: number;                  // cross-song frequency (drives generation priority)
   sources: string[];             // song ids it appeared in (provenance)
   updatedAt: string | null;      // last dream-loop pass, ISO
+  gravity?: WordGravity;         // absent until the curator has weighed it
 }
 
 export interface Lexicon {

@@ -30,8 +30,14 @@ const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1] && !arr[i + 1].startsWith("--") ? arr[i + 1] : true]); return a;
 }, []));
 const HOST = args.host || "http://localhost:8188";
-const PER = parseInt(args["per-sense"], 10) || 4;
+const PER = parseInt(args["per-sense"], 10) || 0; // explicit override; 0 = gravity budgets
 const LIMIT = parseInt(args.limit, 10) || 300;
+// Word gravity (curator/gravity.mjs) decides how much paint a word deserves.
+const TIER_BUDGET = { heavy: 6, mid: 2, light: 0 };
+const MIN_GRAVITY = args["min-gravity"] ? parseFloat(args["min-gravity"]) : 0;
+const ONLY_WORDS = args.words && args.words !== true ? new Set(String(args.words).split(",").map((w) => w.trim())) : null;
+const SONG = args.song && args.song !== true ? String(args.song) : null;
+const perSense = (e) => (PER > 0 ? PER : TIER_BUDGET[e.gravity?.tier ?? "mid"]);
 const W = 1152, H = 832; // /64 for SDXL, /16 for the DiT engines
 const ROOT = new URL("../..", import.meta.url).pathname;
 const LEX = join(ROOT, "src/data/lexicon.json");
@@ -282,7 +288,10 @@ async function generate(job) {
 // ═══ main ═══
 mkdirSync(TMP, { recursive: true });
 const lex = JSON.parse(readFileSync(LEX, "utf8"));
-const entries = Object.values(lex.entries).sort((a, b) => b.freq - a.freq);
+// Heaviest words first — gravity, then freq. Light words get no budget at all
+// (unless explicitly named via --word/--words, which is the owner insisting).
+const entries = Object.values(lex.entries)
+  .sort((a, b) => (b.gravity?.score ?? 0.5) - (a.gravity?.score ?? 0.5) || b.freq - a.freq);
 let unpublished = 0;
 const save = (publish = false) => {
   writeFileSync(LEX, JSON.stringify(lex, null, 2));
@@ -304,7 +313,13 @@ const takenSlots = (s, i) => {
 const jobs = [];
 for (const e of entries) {
   if (jobs.length >= LIMIT) break;
+  const named = (args.word && e.word === args.word) || ONLY_WORDS?.has(e.word);
   if (args.word && e.word !== args.word) continue;
+  if (ONLY_WORDS && !ONLY_WORDS.has(e.word)) continue;
+  if (SONG && !e.sources.includes(SONG)) continue;
+  if ((e.gravity?.score ?? 0.5) < MIN_GRAVITY && !named) continue;
+  const target = named ? Math.max(perSense(e), 2) : perSense(e);
+  if (target <= 0) continue; // light words earn no paint
   for (let i = 0; i < e.senses.length && jobs.length < LIMIT; i++) {
     const s = e.senses[i];
     s.images ??= [];
@@ -312,8 +327,8 @@ for (const e of entries) {
     if (!prompts.length) prompts.push(`${e.word}, ${s.emotion.toLowerCase()} mood`);
     const pick = recipesFor(e.word, i, s.emotion);
     const taken = takenSlots(s, i);
-    for (let k = 0; k < PER && jobs.length < LIMIT; k++) {
-      if (taken.has(k) || s.images.length >= PER) continue;
+    for (let k = 0; k < target && jobs.length < LIMIT; k++) {
+      if (taken.has(k) || s.images.length >= target) continue;
       const recipe = pick(k);
       if (args.engine && recipe.engine !== args.engine) continue;
       if (args.recipe && recipe.id !== args.recipe) continue;
@@ -330,7 +345,7 @@ jobs.sort((a, b) => modelKey(a).localeCompare(modelKey(b)));
 
 const byRecipe = {};
 jobs.forEach((j) => { byRecipe[j.recipe.id] = (byRecipe[j.recipe.id] || 0) + 1; });
-log(`atelier: ${entries.length} words · ${jobs.length} jobs queued (per-sense ${PER}, limit ${LIMIT})`);
+log(`atelier: ${entries.length} words · ${jobs.length} jobs queued (${PER > 0 ? `per-sense ${PER}` : "gravity budgets h6/m2/l0"}, limit ${LIMIT})`);
 log(`  recipes: ${Object.entries(byRecipe).map(([k, v]) => `${k}×${v}`).join(" · ")}`);
 
 let done = 0, fail = 0;

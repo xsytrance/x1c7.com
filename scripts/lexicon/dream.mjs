@@ -199,10 +199,13 @@ function main() {
   const lex = JSON.parse(fs.readFileSync(LEX, "utf8"));
   const all = Object.values(lex.entries);
 
-  // Priority: unfilled first, then by frequency (× salience via sense score).
+  // Priority: unfilled first, then frequency × salience × word gravity —
+  // heavy words dream first (curator/gravity.mjs; 0.25 floor keeps ungraded
+  // words in the queue rather than starving them).
+  const grav = (e) => 0.25 + (e.gravity?.score ?? 0.5);
   const queue = all
     .filter((e) => FORCE || !e.updatedAt || !filled(e))
-    .sort((a, b) => (b.freq * (b.senses.length || 1)) - (a.freq * (a.senses.length || 1)));
+    .sort((a, b) => (b.freq * (b.senses.length || 1) * grav(b)) - (a.freq * (a.senses.length || 1) * grav(a)));
 
   const todo = queue.slice(0, LIMIT);
   const skipped = queue.length - todo.length;

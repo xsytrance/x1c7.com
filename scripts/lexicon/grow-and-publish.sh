@@ -18,6 +18,7 @@ echo "── $(date -Iseconds) · nightly build ──"
 
 # 1) LEXICON — harvest new songs → dream new legos → publish the shelf to R2.
 if node scripts/lexicon/harvest.mjs \
+   && node scripts/curator/gravity.mjs --grade-limit 60 \
    && node scripts/lexicon/dream.mjs --limit 999 \
    && node scripts/lexicon/publish.mjs; then
   echo "$(date -Iseconds) · ✦ lexicon done"
@@ -32,10 +33,10 @@ if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; the
   node scripts/song-art/topup.mjs --target 100 --limit 4000 \
     && echo "$(date -Iseconds) · ✦ song art top-up done" \
     || echo "$(date -Iseconds) · ✗ song art top-up failed"
-  # Lexicon community art — the Atelier fills each sense toward 4 images from
-  # ~25 style recipes across 5 engines. 1200/night ≈ a few hours of GPU (the
-  # heavyweight engines render last, so an interrupted night loses least).
-  node scripts/lexicon/art.mjs --per-sense 4 --limit 1200 \
+  # Lexicon community art — the Atelier fills senses by WORD GRAVITY
+  # (heavy words 6 images, mid 2, light 0 — curator/gravity.mjs decides).
+  # 1200/night ≈ a few hours of GPU; heavyweight engines render last.
+  node scripts/lexicon/art.mjs --limit 1200 \
     && echo "$(date -Iseconds) · ✦ lexicon art done" \
     || echo "$(date -Iseconds) · ✗ lexicon art failed"
   # Gravitational feed — drain any queued feed jobs (safety net for the watcher).

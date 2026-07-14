@@ -31,6 +31,7 @@ import { createClient } from "@supabase/supabase-js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const SONG_ART = path.join(ROOT, "scripts", "song-art");
+const PROFILES = path.join(ROOT, "scripts", "song-analysis", "profiles");
 const OUT = path.join(ROOT, "src", "data", "lexicon.json");
 
 const args = process.argv.slice(2);
@@ -137,31 +138,65 @@ async function harvestLyrics(entries) {
   return { seen, added, skippedRare };
 }
 
+// Every planet-full.json we know about: the song-art snapshots PLUS the
+// ultimate-analyzer output in song-analysis/profiles/<id>/. Deduped by song
+// id — the newest file wins, so a fresh ultimate re-run supersedes an old
+// snapshot without deleting anything.
+function planetFullFiles() {
+  const bySource = new Map(); // source id -> { path, mtime }
+  const consider = (full, file) => {
+    const source = file.replace(/-planet-full\.json$/, "").replace(/-planet\.json$/, "");
+    let mtime = 0;
+    try { mtime = fs.statSync(full).mtimeMs; } catch { return; }
+    const cur = bySource.get(source);
+    if (!cur || mtime > cur.mtime) bySource.set(source, { path: full, mtime });
+  };
+  if (fs.existsSync(SONG_ART)) {
+    for (const f of fs.readdirSync(SONG_ART).filter((f) => f.endsWith("planet-full.json")))
+      consider(path.join(SONG_ART, f), f);
+  }
+  if (fs.existsSync(PROFILES)) {
+    for (const dir of fs.readdirSync(PROFILES)) {
+      const d = path.join(PROFILES, dir);
+      let inner = [];
+      try { inner = fs.readdirSync(d).filter((f) => f.endsWith("planet-full.json")); } catch { continue; }
+      for (const f of inner) consider(path.join(d, f), f);
+    }
+  }
+  return [...bySource.entries()].map(([source, v]) => ({ source, path: v.path }));
+}
+
 async function main() {
   if (!fs.existsSync(SONG_ART)) { console.error("no song-art dir at", SONG_ART); process.exit(1); }
-  const files = fs.readdirSync(SONG_ART).filter((f) => f.endsWith("planet-full.json"));
+  const files = planetFullFiles();
   const lex = loadLexicon();
   lex.galaxy = GALAXY;
   const entries = lex.entries;
 
   let seen = 0, added = 0;
-  for (const file of files) {
+  for (const { source, path: file } of files) {
     let planet;
-    try { planet = JSON.parse(fs.readFileSync(path.join(SONG_ART, file), "utf8")); }
+    try { planet = JSON.parse(fs.readFileSync(file, "utf8")); }
     catch { continue; }
     const a = planet.analysis || planet;
-    const source = file.replace(/-planet-full\.json$/, "").replace(/-planet\.json$/, "");
     const palette = Array.isArray(a.palette) ? a.palette : [];
-    const mood = a.overallMood || "";
+    // Emotions must be prose. LLM output occasionally leaks numbers/objects
+    // (an intensity where an emotion belongs) — those became "0.85" senses.
+    const asEmotion = (v) => {
+      if (typeof v !== "string") return "";
+      const t = v.trim();
+      return !t || /^[\d.]+$/.test(t) ? "" : t;
+    };
+    const mood = asEmotion(a.overallMood);
     const keywords = Array.isArray(a.keywords) ? a.keywords : [];
 
     for (const kw of keywords) {
-      const form = (kw.word || "").trim();
+      const form = (typeof kw.word === "string" ? kw.word : "").trim();
       const key = norm(form);
       if (!key || key.length < 2 || STOPWORDS.has(key)) continue;
       seen++;
-      const emotion = (kw.emotion || mood || "Neutral").trim();
-      const prompt = (kw.imageryPrompt || "").trim();
+      const emotion = asEmotion(kw.emotion) || mood || "Neutral";
+      const prompt = (typeof kw.imageryPrompt === "string" ? kw.imageryPrompt : "").trim();
 
       let e = entries[key];
       if (!e) { e = entries[key] = { word: key, forms: [], senses: [], freq: 0, sources: [], updatedAt: null }; added++; }

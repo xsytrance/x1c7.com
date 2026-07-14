@@ -124,7 +124,12 @@ async function analyze(t) {
 
   // Normalize colors to #RRGGBB.
   if (analysis.palette) for (const k of ["primary", "secondary", "accent", "bg"]) analysis.palette[k] = hex(analysis.palette[k]) || analysis.palette[k];
-  for (const s of analysis.sections) s.colorHint = hex(s.colorHint) || s.colorHint;
+  // The model sometimes answers colorHintHex/color instead of colorHint; the
+  // app (KineticStage, SonicDossier, VRStage) reads ONLY colorHint — normalize.
+  for (const s of analysis.sections) {
+    s.colorHint = hex(s.colorHint ?? s.colorHintHex ?? s.color) || s.colorHint;
+    delete s.colorHintHex; delete s.color;
+  }
 
   // Attach section start times by name (fallback: positional).
   const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]/g, "");

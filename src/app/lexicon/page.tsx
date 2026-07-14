@@ -147,7 +147,14 @@ export default function LexiconPage() {
   };
   const wander = () => { const ks = Object.keys(lex.entries); if (ks.length) open(ks[(Math.random() * ks.length) | 0]); };
 
-  const entries = useMemo(() => Object.values(lex.entries).sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word)), [lex]);
+  // Featherweight (light-gravity) words stay off the public shelf by default.
+  const [showAll, setShowAll] = useState(false);
+  useEffect(() => { setShowAll(new URLSearchParams(window.location.search).get("all") === "1"); }, []);
+  const entries = useMemo(() => {
+    const all = Object.values(lex.entries);
+    const vis = showAll ? all : all.filter((e) => e.gravity?.tier !== "light");
+    return vis.sort((a, b) => b.freq - a.freq || a.word.localeCompare(b.word));
+  }, [lex, showAll]);
   const filtered = useMemo(() => {
     const t = q.trim().toLowerCase();
     if (!t) return entries;
