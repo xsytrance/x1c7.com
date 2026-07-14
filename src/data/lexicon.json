@@ -18717,7 +18717,10 @@
           "imageryPrompts": [
             "every, bittersweet mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-1.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-2.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [

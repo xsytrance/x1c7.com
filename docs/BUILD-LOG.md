@@ -33,6 +33,12 @@ supercharged:
   (searched all three backup roots). Re-downloaded from HF; ComfyUI now
   runs as `comfyui.service` on :8188 (enabled), so the nightly art
   passes fire again.
+- **Proof of life**: checkpoint landed (6.94 GB), ComfyUI indexed it
+  without a restart, and `art.mjs --limit 2` rendered two images on the
+  5060 Ti, wrote them into lexicon.json, and published — the R2 URL
+  serves 200. Casualty #6 closed; the reinstall ledger is empty.
+  (~10.7k images to reach 2/sense across the new 1,468-word shelf — the
+  nightly art pass chips at that queue on its own.)
 
 ---
 
