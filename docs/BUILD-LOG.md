@@ -7,7 +7,39 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
-## 2026-07-14 (XIII) — The lexicon wakes up: heartbeat, 17× harvest, ComfyUI
+## 2026-07-14 (XIV) — The Atelier: five engines, twenty-five brushes
+
+The lexicon's art pass grew from one hardcoded SDXL-Turbo graph into a
+proper atelier. The owner's brief: equip ComfyUI so the lexicon can grow
+"incredibly large and with a huge variety."
+
+- **ComfyUI upgraded** to latest master (uv-managed venv — no pip binary;
+  `VIRTUAL_ENV=… uv pip install` is the move).
+- **The roster** (~91 GB, all verified against HF before download, all
+  Apache-2.0 or equivalent for the new engines):
+  *Z-Image Turbo* (photoreal at 8 steps), *FLUX.2 klein 4B* (composition/
+  adherence, 4 steps), *Qwen-Image + Lightning 4-step* (typography — it
+  paints THE WORD into the scene), *Chroma1-HD* (painterly wildcard,
+  20 steps, used sparingly), plus an SDXL style stable: *Juggernaut XL v9*,
+  *DreamShaperXL Turbo*, *Animagine XL 4.0*, Lightning 4/8-step LoRAs, and
+  12 style LoRAs (pixel, watercolor, papercut, storybook, stickers, neon
+  sign, stained glass, graphic novel, chalkboard, analog film, line manga,
+  3d render). Two economies discovered: klein shares Z-Image's Qwen3-4B
+  text encoder, and Z-Image's VAE *is* the FLUX.1 VAE Chroma needs.
+- **art.mjs v2 (the Atelier)**: ~25 named style recipes = engine +
+  checkpoint + LoRAs + prompt dressing + sampler math (wired exactly per
+  ComfyUI's bundled templates). Mood-affinity buckets (dark/sad/warm/
+  bright) route each word-sense to suitable recipes; a deterministic
+  word-hash rotation guarantees the sense's N images use N different
+  recipes and re-runs never reshuffle. Jobs sort by engine+checkpoint so
+  the GPU never thrashes reloads; slot indices parse from existing URLs
+  for full idempotency; shelf republish throttled to every 10 renders.
+- **Verified**: one live render per engine and per finetune/LoRA recipe —
+  11 first-contact renders, 0 failures. The Qwen word-portrait of "every"
+  (hand-lettered over a noir alley) is the money shot.
+- **Nightly**: grow-and-publish.sh now runs the Atelier at per-sense 4,
+  1200 images/night (~21k-image shelf lands in ~2½ weeks, then keeps pace
+  with harvest).
 
 "What's up with the lexicon?" — it was healthy but orphaned. Fixed, then
 supercharged:

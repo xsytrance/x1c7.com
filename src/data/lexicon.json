@@ -18719,7 +18719,9 @@
           ],
           "images": [
             "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-1.webp",
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-2.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-2.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-3-photo.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s0-4-dream-collage.webp"
           ],
           "palette": [],
           "legos": {
@@ -18747,7 +18749,8 @@
             "every, weightless serene mood, cinematic, volumetric light"
           ],
           "images": [
-            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-2-cinema.webp"
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-2-cinema.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s1-1-anime.webp"
           ],
           "palette": [],
           "legos": {
@@ -18774,7 +18777,10 @@
           "imageryPrompts": [
             "every, defiant mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-1-film-still.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s2-2-concept-art.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18800,7 +18806,9 @@
           "imageryPrompts": [
             "every, cathartic urban release mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s3-2-word-portrait.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18848,7 +18856,10 @@
           "imageryPrompts": [
             "every, dark seductive mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-1-dark-surreal.webp",
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s5-4-pixel.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -18898,7 +18909,9 @@
           "imageryPrompts": [
             "every, euphoric, uplifting, intense mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s7-3-manga-line.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -19127,7 +19140,9 @@
           "imageryPrompts": [
             "every, intimate and tender mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/every/s16-4-analog.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
@@ -41882,7 +41897,9 @@
           "imageryPrompts": [
             "little, nostalgic and melancholic mood, cinematic, volumetric light"
           ],
-          "images": [],
+          "images": [
+            "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/little/s15-1-watercolor.webp"
+          ],
           "palette": [],
           "legos": {
             "weather": [
