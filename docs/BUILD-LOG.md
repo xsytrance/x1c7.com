@@ -7,6 +7,40 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (XV) — The Curator: gravity, vision, and the reels
+
+The lexicon stopped painting everything equally and started *knowing what
+it painted*. Doctrine: [`CURATOR.md`](./CURATOR.md).
+
+- **Word gravity**: every word weighed 0..1 (keyword membership, idf,
+  freq, title words, seed guardrails; qwen3:14b grades the borderline,
+  cached forever). 295 heavy · 541 mid · 715 light. Atelier budgets by
+  tier (6/2/0) — the gallery target fell 21.7k → ~13k images, all heavy.
+  Owner-approved prune took 374 featherweight images off R2 + the shelf
+  (journaled). /lexicon + /atelier hide light words (?all=1).
+- **The MEANING pass** (ultimate.mjs 7b): per song, one deep read —
+  story, per-section interpretations, key lines, 12–20 heavy sung
+  keywords merged into analysis. The four target songs re-ran with
+  qwen3:14b + qwen3-vl cover reads and published; their vocabularies
+  (fire/cage/knife/insomnia/sundress/…) harvested into the shelf and
+  rendered first. International Heat's mixer wired live (stems were
+  already on R2; only the DB assets were missing).
+- **Vision index**: qwen3-vl:8b reads every painting (subjects, mood,
+  symbols, text-in-image + quality/wordMatch self-QC) → vision-index.json
+  (+ R2). qwen3-embedding:0.6b embeds readings (3× the discrimination of
+  nomic on our probes).
+- **The reels**: per song, cosine-prefilter → qwen3:14b judge (text-only —
+  the hallucination firewall) → planets/<id>/lexicon-reel.json. Dossiers
+  gained "WHAT IT'S REALLY ABOUT" + "THE REEL"; the show gets reel
+  ghosting behind reel.enabled.
+- **Nightly** now ends with a curator block (vision 400/night + reel
+  refresh); gravity runs right after harvest. All Ollama steps unload
+  (keep_alive 0) so ComfyUI keeps its VRAM.
+- Fixed on the way: harvest finally scans song-analysis/profiles (56
+  songs, was 2), non-string emotions coerced (the "0.85" sense), keyword
+  contractions stopped, colorHintHex normalized, ultimate's llm() reads
+  thinking-field JSON.
+
 ## 2026-07-14 (XIV) — The Atelier: five engines, twenty-five brushes
 
 The lexicon's art pass grew from one hardcoded SDXL-Turbo graph into a

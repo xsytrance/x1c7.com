@@ -39,6 +39,22 @@ if curl -sf --max-time 5 http://localhost:8188/system_stats >/dev/null 2>&1; the
   node scripts/lexicon/art.mjs --limit 1200 \
     && echo "$(date -Iseconds) · ✦ lexicon art done" \
     || echo "$(date -Iseconds) · ✗ lexicon art failed"
+  # 3) THE CURATOR — the machine looks at tonight's paintings (vision
+  #    readings, cached forever), grades any new borderline words, and
+  #    rebuilds the reels of songs whose vocabulary gained art. Runs AFTER
+  #    the render batches so Ollama and ComfyUI trade the GPU cleanly;
+  #    every curator step ends by unloading its model (keep_alive 0).
+  node scripts/curator/vision-worker.mjs --limit 400 \
+    && echo "$(date -Iseconds) · ✦ vision readings done" \
+    || echo "$(date -Iseconds) · ✗ vision worker failed"
+  for reel in scripts/song-analysis/profiles/*/lexicon-reel.json; do
+    [ -e "$reel" ] || continue
+    id=$(basename "$(dirname "$reel")")
+    node scripts/curator/match-reel.mjs --song "$id" --publish >/dev/null 2>&1 \
+      && echo "$(date -Iseconds) · ✦ reel refreshed: $id" \
+      || echo "$(date -Iseconds) · ✗ reel failed: $id"
+  done
+
   # Gravitational feed — drain any queued feed jobs (safety net for the watcher).
   node scripts/feed-worker.mjs \
     && echo "$(date -Iseconds) · ✦ feed queue drained" \
