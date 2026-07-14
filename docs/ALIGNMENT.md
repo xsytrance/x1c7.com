@@ -1,5 +1,52 @@
 # THE ALIGNMENT — grand plan
 
+## v2 — PERFECT, EVERY TIME (2026-07-14)
+
+The owner's goal, stated plainly: perfectly aligned lyrics, every song,
+every single time. v1 (the tiers below) gets words CLOSE; v2 makes the
+last 100 ms a MEASUREMENT and the whole thing a gated loop:
+
+    align (Qwen3-ForcedAligner)          ← v1, env rebuilt post-reinstall
+      → REFINE (refine-alignment.py)     ← new: math, no ML
+      → SCORE                            ← new: objective, per-song
+      → GATE (strict improvement only)
+      → apply (journaled, reversible)
+
+**The refiner** (`scripts/alignment/refine-alignment.py`, librosa venv) —
+the isolated lead vocal is ground truth, four measurements, three fixes:
+- **Vocal onsets** (spectral flux on the lead): the only moments a sung
+  word can begin. Every word start SNAPS to the nearest onset within
+  ±150 ms, monotonicity enforced.
+- **Global lag** (median word→onset signed distance): a consistent offset
+  means the whole take is shifted — the "Music Is My Drug" failure class —
+  corrected in one move before snapping.
+- **Clump arbitration**: a run of ≥4 words sharing one timestamp is text
+  the audio sings differently (written echo-doubling). The sung onsets
+  measured inside the window arbitrate: words spread across the onsets
+  that actually exist. This is the flagged-11 fix, automated.
+- **Silence rate**: words starting where the lead stem is silent for
+  180 ms = misplacement, scored before/after.
+
+**The gate**: refined timings apply ONLY on strict improvement (onset
+distance down, silence not up), journaled to refine-backup.jsonl. The
+refiner never adds/removes/reorders words, so melody.json (keyed by word
+index) survives re-timing untouched.
+
+**Batch**: `node scripts/alignment/refine-batch.mjs [--apply]` — live
+words from Supabase, lead stems from the melody-batch cache.
+
+First measurements: light-it-myself (the catalog's best) mean onset
+distance 98 ms → 50 ms; i-said-no clump ratio 0.11 → 0.00. Near-zero
+silence rates across both confirm v1 placed words in the right regions —
+v2 is about the last hundred milliseconds and the pathological cases.
+
+**Environment note**: `~/whisper-venv` (torch cu128 + qwen-asr, RTX 5060
+Ti) rebuilt 2026-07-14 — the OS reinstall had killed it; re-aligns and
+Tier B are unblocked again.
+
+---
+
+
 Lyric timing stops being an AI guess and becomes a measurement. Whisper
 transcribes singing it was never trained on and hallucinates on fade-outs;
 meanwhile 46/54 tracks have **official lyrics** — for them the problem was
