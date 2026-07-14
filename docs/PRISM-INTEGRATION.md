@@ -177,6 +177,11 @@ plus K-S key detection. Output `melody.json v1`:
 335/641 words pitched, histogram almost perfectly diatonic (A# 194, F# 53,
 B 34, G# 30, C# 19).
 
+Catalog rollout: `scripts/stem-analysis/melody-batch.mjs` (live Supabase
+words → analyzer → diatonic-ratio QA gate → optional `--publish` to R2).
+2026-07-13 run: 47 candidates, **43 pass / 4 flagged / 0 failed**; publish
+pending the owner's eyeball.
+
 Engine (`src/lib/engine/melody.ts` + stage): loads by explicit
 `planet.assets.melody` URL or convention path `planets/<id>/melody.json`.
 **Harmonic hue mapping**: tonic wears the theme hue; other notes sit at

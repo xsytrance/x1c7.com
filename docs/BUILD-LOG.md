@@ -7,6 +7,35 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (V) — Melody batch: the whole catalog analyzed, rollout is one command
+
+`melody-batch.mjs` ran the melody analyzer across every live track with
+timed words + a published lead stem — **47 candidates, 43 pass, 4 flagged,
+0 failures**. Design decisions that mattered:
+
+- **Live words from Supabase**, never local aligned.json — the QA-flagged
+  aligner tracks kept whisper timings in production, and melody indices
+  must match what actually plays.
+- **Diatonic-ratio QA gate** (share of pitched words in the detected key's
+  scale, minor admits the raised 7th): real melodies score 0.76–1.0
+  (summer-drip and push-it-on-me hit a perfect 1.0); the gate flagged
+  exactly the right four — i-said-no (0.12 coverage, spoken delivery),
+  membrane-still-insane (0.20), one-tap-away-riverboat-remix (0.21), and
+  amor-de-verdad at 0.74, a hair under the 0.75 bar.
+- Analysis-only by default; `--publish` rclones ONLY passing melody.json
+  files to `planets/<slug>/melody.json` (the engine loads that convention
+  path — zero DB changes). Full table:
+  `scripts/stem-analysis/out/melody-report.json` (out/ is gitignored; it
+  caches ~6 MB of lead-stem audio per song).
+
+**Rollout status: NOT yet published.** Eyeball a show first (e.g. /studio on
+light-it-myself — 0.82 coverage, 0.99 diatonic, B major — or under-the-
+elevated), then:
+
+    node scripts/stem-analysis/melody-batch.mjs --publish
+
+---
+
 ## 2026-07-13 (IV) — Melody motion: the words move with the melodic line
 
 melody.json already carried `midi` per word — now it drives motion, not just
