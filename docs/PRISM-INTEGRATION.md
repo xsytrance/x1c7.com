@@ -214,28 +214,36 @@ lyric, the choir raises twin halos, the bed drifts chord curtains
 Verified: soloing LEAD collapsed `bed` 0.81→0 on the bus while `voice`
 kept tracking the real vocal envelope; screenshots confirm the radiance.
 
-Next, roughly in order of jaw-drop per effort:
+**A/B section decks** also shipped (2026-07-13): each section emotion owns
+a SCENE (same `hash(song, emotion)` determinism as the chorus-memory look,
+so a returning chorus brings back its *world*, not just its grade). A
+change arms deck B and crossfades on the next bar line of the real grid
+over `backdrop.fadeBeats` (default 8), smoothstepped; a mid-fade redirect
+lands the old target first; a backward scrub re-arms at the listener's
+next boundary instead of stalling; the completed fade lands deck B as
+deck A on the same frame (no one-frame flash). Pinning `backdrop.scene`
+disables the decks. Verified: arm → bar-locked start → mix → land, on the
+86.13 BPM test grid.
 
-1. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
-   (PRISM's deck architecture, driven by structure instead of a human).
-2. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
+Next, roughly in order of jaw-drop per effort:
+1. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
    melody.json.
-3. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
+2. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
    uniform (`uKeyHue`) so the field itself sits in the song's key, not just
    the words.
-4. **Presets/banks with morphing + look filtering**; `.kinetica` files get
+3. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
-5. **Automation recording** — ride the deck live once, bake it into the
+4. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
-6. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
+5. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
    `?` shortcut overlay, SHOW/CHOREOGRAPH/LIBRARY workspaces — in x1c7's
    own palette (#05030b void, #43f7ff plasma, #ff2440 signal).
-7. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
+6. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
     bundled into shareable packs.
-8. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
+7. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
     clock; PRISM follows. Two engines, one tempo, side by side.
-9. **Recording via single-canvas compositing**, **Art-Net room lighting**
+8. **Recording via single-canvas compositing**, **Art-Net room lighting**
     that anticipates the drop, **collector-frame bezels**.
 
 Deliberately not doing: MilkDrop import, MIDI, neural stem separation

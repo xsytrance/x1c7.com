@@ -7,6 +7,35 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (VII) — A/B section decks: the world changes with the song's structure
+
+PRISM's center of gravity — two decks and a crossfader — turned toward
+meaning: the backdrop now runs **two live generative scenes**, and the
+song's own sections drive the fader.
+
+- Each section emotion owns a **scene** via the same `hash(song, emotion)`
+  determinism as the chorus-memory look — so a returning chorus brings back
+  its *world*, not just its grade. Verse in the INK tide, chorus in the
+  EMBERS nebula, forever, per song.
+- A section change arms deck B; the crossfade starts **on the next bar line
+  of the measured grid** and rides `backdrop.fadeBeats` (default 8, ~2 bars)
+  on a smoothstep — PRISM's quantized auto-fade with the song's structure
+  for hands.
+- Craft edges handled: a mid-fade redirect lands the old target first; the
+  completed fade lands deck B as deck A **on the same frame** (the mix
+  advances before the deck index is read — no one-frame flash of the old
+  scene); a backward scrub re-arms the bar line at the listener's position
+  instead of stalling (found by the harness's looping clock — its wrap IS a
+  scrub); pinning `backdrop.scene` disables the decks.
+
+**Verified** on the 86.13 BPM test grid: arm on a section emotion → fade
+scheduled exactly at the next bar (startBeat 8 from totalBeats 6.1) → mixes
+through mid-fade with deck A still authoritative → sceneIdx lands the
+target and the fade retires. Zero console errors. `window.KINETICA` gained
+`backdrop` (the renderer) for console driving.
+
+---
+
 ## 2026-07-13 (VI) — Stem X-ray: the Lens gets a visual soul
 
 Two halves, both engine-side (synced):

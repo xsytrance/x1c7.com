@@ -162,6 +162,14 @@ void main() {
   fragColor = vec4(uColor * a * uAlpha, a * uAlpha);
 }`;
 
+// ── Deck crossfade (A/B section decks): two live scenes mixed on the bar ──
+const DECKMIX_FS = `#version 300 es
+precision highp float;
+in vec2 vUv; out vec4 fragColor;
+uniform sampler2D uA, uB;
+uniform float uMix;
+void main() { fragColor = vec4(mix(texture(uA, vUv).rgb, texture(uB, vUv).rgb, uMix), 1.0); }`;
+
 // ── STEM X-RAY ── when the Lens solos an instrument, the backdrop surfaces
 // that stem's ANATOMY: drums strike expanding impact rings on the real beat
 // grid, bass stands a slow heavy wave, the voice breathes light around the
@@ -260,6 +268,8 @@ const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS];
 // ── Registry: the backdrop's whole control surface ──────────────────────────
 P.register({ id: "backdrop.enabled", label: "Enabled", group: "BACKDROP", type: "bool", value: true });
 P.register({ id: "backdrop.scene", label: "Scene", group: "BACKDROP", type: "select", options: ["AUTO", ...BACKDROP_SCENES], value: "AUTO" });
+// A/B section decks: how many beats a section's scene crossfade rides.
+P.register({ id: "backdrop.fadeBeats", label: "Deck Fade (Beats)", group: "BACKDROP", min: 2, max: 16, step: 1, value: 8 });
 P.register({ id: "backdrop.intensity", label: "Intensity", group: "BACKDROP", min: 0, max: 2, value: 1 });
 P.register({ id: "backdrop.flow", label: "Flow", group: "BACKDROP", min: 0, max: 3, value: 1 });
 P.register({ id: "backdrop.opacity", label: "Opacity", group: "BACKDROP", min: 0, max: 1, value: 0.6 });
@@ -314,9 +324,13 @@ export class BackdropRenderer {
   private ghostDecay: Program;
   private stamp: Program;
   private xray: Program;
-  private rts: { a: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT; xrayRT: RT } | null = null;
+  private deckMix: Program;
+  private rts: { a: RT; b: RT; mixRT: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT; xrayRT: RT } | null = null;
   private xrayAmt = 0;
   private xrayFamily = 0; // held through the fade-out so the anatomy doesn't flip
+  private seedStr = "";
+  // A/B section decks: sceneIdx is deck A; a fade carries deck B in on the bar.
+  private fade: { to: number; startBeat: number; beats: number } | null = null;
   private time = 0;
   private pal: [number, number, number][] = [[0.3, 0.8, 1], [1, 0.3, 0.6], [1, 0.85, 0.4]];
   private seed = 0;
@@ -335,6 +349,7 @@ export class BackdropRenderer {
     this.ghostDecay = new Program(gl, QUAD_VS, GHOST_DECAY_FS);
     this.stamp = new Program(gl, STAMP_VS, STAMP_FS);
     this.xray = new Program(gl, QUAD_VS, XRAY_FS);
+    this.deckMix = new Program(gl, QUAD_VS, DECKMIX_FS);
     this.ghostCanvas = document.createElement("canvas");
     this.ghostCanvas.width = 512;
     this.ghostCanvas.height = 192;
@@ -358,7 +373,44 @@ export class BackdropRenderer {
     const h = fnv1a(seedStr);
     this.seed = (h % 1000) / 1000;
     this.sceneIdx = h % SCENE_SOURCES.length;
+    this.seedStr = seedStr;
+    this.fade = null;
     this.time = 0;
+  }
+
+  // ── A/B SECTION DECKS ── each section emotion owns a scene (same
+  // hash(song, emotion) determinism as the chorus-memory look, so a
+  // returning chorus brings back its WORLD, not just its grade). A change
+  // arms deck B and crossfades in on the next bar line of the real grid,
+  // over Deck Fade beats — PRISM's quantized auto-fade, driven by the
+  // song's structure instead of a hand on the crossfader.
+  setSectionScene(emotion: string | null) {
+    if (!emotion || P.getStr("backdrop.scene") !== "AUTO") return;
+    const target = fnv1a(`${this.seedStr}::${emotion.toLowerCase()}`) % SCENE_SOURCES.length;
+    if (this.fade ? target === this.fade.to : target === this.sceneIdx) return;
+    const F = featureBus.F;
+    if (this.fade) this.sceneIdx = this.fade.to; // redirect mid-fade: land the old target
+    this.fade = {
+      to: target,
+      startBeat: featureBus.nextBoundary(4) ?? F.totalBeats,
+      beats: Math.max(2, P.get("backdrop.fadeBeats")),
+    };
+  }
+
+  /** Current deck mix 0..1 (advances/retires the fade against the grid). */
+  private deckMixNow(F: EngineFeatures): number {
+    if (!this.fade) return 0;
+    const x = (F.totalBeats - this.fade.startBeat) / this.fade.beats;
+    if (x >= 1) { this.sceneIdx = this.fade.to; this.fade = null; return 0; }
+    if (x <= 0) {
+      // a backward scrub left the bar line far in the future — re-arm at the
+      // next boundary from where the listener actually is, don't stall
+      if (this.fade.startBeat - F.totalBeats > 16) {
+        this.fade.startBeat = featureBus.nextBoundary(4) ?? F.totalBeats;
+      }
+      return 0;
+    }
+    return x * x * (3 - 2 * x);
   }
 
   private resize(scale: number) {
@@ -369,12 +421,33 @@ export class BackdropRenderer {
     if (this.rts) for (const rt of Object.values(this.rts)) disposeRT(gl, rt);
     this.rts = {
       a: createRT(gl, w, h),
+      b: createRT(gl, w, h),
+      mixRT: createRT(gl, w, h),
       ping: createRT(gl, w, h),
       pong: createRT(gl, w, h),
       ghostPing: createRT(gl, w, h),
       ghostPong: createRT(gl, w, h),
       xrayRT: createRT(gl, w, h),
     };
+  }
+
+  private renderScene(idx: number, rt: RT, F: EngineFeatures) {
+    const [p0, p1, p2] = this.pal;
+    bindRT(this.gl, rt);
+    this.scenes[idx].use()
+      .v2("uRes", rt.w, rt.h)
+      .f("uTime", this.time)
+      .f("uSeed", this.seed)
+      .f("uDrums", F.drums).f("uBass", F.bass).f("uVoice", F.voice).f("uChoir", F.choir).f("uBed", F.bed)
+      .f("uLevel", F.level).f("uKick", F.kick).f("uBeat", F.beat).f("uBeatPhase", F.beatPhase)
+      .f("uCharge", F.charge).f("uEmo", F.sectionIntensity)
+      .f("uWordPulse", F.wordPulse)
+      .f("uIntensity", P.get("backdrop.intensity"))
+      .v2("uWord", F.wordX, 1 - F.wordY) // DOM y-down → GL y-up
+      .v3("uPal0", p0[0], p0[1], p0[2])
+      .v3("uPal1", p1[0], p1[1], p1[2])
+      .v3("uPal2", p2[0], p2[1], p2[2]);
+    drawQuad(this.gl);
   }
 
   // Rasterize a dying word and stamp it into the ghost buffer (additive).
@@ -426,43 +499,47 @@ export class BackdropRenderer {
     const gl = this.gl;
     this.resize(renderScale);
     if (!this.rts) return;
-    const { a, ping, pong, ghostPing, ghostPong } = this.rts;
+    const { a, b, mixRT, ping, pong, ghostPing, ghostPong } = this.rts;
     // Anticipation: 0 far from a drop, →1 over the last 16 beats before a
     // measured riser resolves. Ground truth from the bus — the field knows
     // the drop is coming and holds its breath (time itself slows a little).
     const drop = (F.beatsToDrop === Infinity ? 0 : Math.max(0, Math.min(1, 1 - F.beatsToDrop / 16))) * P.get("backdrop.anticipation");
     this.time += F.dt * P.get("backdrop.flow") * (1 - drop * 0.35);
 
-    // scene select: AUTO = the song's own seeded pick
+    // scene select: AUTO = the song's own seeded pick, deck-crossfaded per
+    // section; a pinned scene disables the decks entirely
     const chosen = P.getStr("backdrop.scene");
-    const idx = chosen === "AUTO" ? this.sceneIdx : Math.max(0, BACKDROP_SCENES.indexOf(chosen as typeof BACKDROP_SCENES[number]));
+    const pinned = chosen !== "AUTO";
     const [p0, p1, p2] = this.pal;
 
     gl.disable(gl.DEPTH_TEST);
     gl.disable(gl.BLEND);
 
-    bindRT(gl, a);
-    this.scenes[idx].use()
-      .v2("uRes", a.w, a.h)
-      .f("uTime", this.time)
-      .f("uSeed", this.seed)
-      .f("uDrums", F.drums).f("uBass", F.bass).f("uVoice", F.voice).f("uChoir", F.choir).f("uBed", F.bed)
-      .f("uLevel", F.level).f("uKick", F.kick).f("uBeat", F.beat).f("uBeatPhase", F.beatPhase)
-      .f("uCharge", F.charge).f("uEmo", F.sectionIntensity)
-      .f("uWordPulse", F.wordPulse)
-      .f("uIntensity", P.get("backdrop.intensity"))
-      .v2("uWord", F.wordX, 1 - F.wordY) // DOM y-down → GL y-up
-      .v3("uPal0", p0[0], p0[1], p0[2])
-      .v3("uPal1", p1[0], p1[1], p1[2])
-      .v3("uPal2", p2[0], p2[1], p2[2]);
-    drawQuad(gl);
+    // ── decks: A always renders; during a section crossfade B renders too
+    // and the mix pass blends them on the bar-locked smoothstep. The mix is
+    // advanced BEFORE idx is read — a completed fade lands deck B as the new
+    // deck A on this very frame (no one-frame flash of the old scene). ──
+    const mix = pinned ? 0 : this.deckMixNow(F);
+    const idx = pinned ? Math.max(0, BACKDROP_SCENES.indexOf(chosen as typeof BACKDROP_SCENES[number])) : this.sceneIdx;
+    this.renderScene(idx, a, F);
+    let sceneSrc: RT = a;
+    if (mix > 0 && this.fade) {
+      this.renderScene(this.fade.to, b, F);
+      bindRT(gl, mixRT);
+      this.deckMix.use()
+        .f("uMix", mix)
+        .tex("uA", a.tex)
+        .tex("uB", b.tex);
+      drawQuad(gl);
+      sceneSrc = mixRT;
+    }
 
     bindRT(gl, ping);
     this.trails.use()
       .f("uAmount", P.get("backdrop.trails"))
       .f("uZoom", P.get("backdrop.trailZoom"))
       .f("uRotate", P.get("backdrop.trailRotate"))
-      .tex("uCur", a.tex)
+      .tex("uCur", sceneSrc.tex)
       .tex("uPrev", pong.tex);
     drawQuad(gl);
 

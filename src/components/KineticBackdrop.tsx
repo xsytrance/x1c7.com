@@ -45,7 +45,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
 
     // Console handle (PRISM's window.PRISM pattern): poke params and read the
     // live feature bus from devtools — KINETICA.P.set("backdrop.trails", 0.9).
-    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore };
+    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, backdrop: renderer };
 
     const mod = ensureModEngine();
     // First run ever: one tasteful default routing so the machine visibly
@@ -114,6 +114,8 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
   // transition itself is musical.
   useEffect(() => {
     if (!sectionEmotion) return;
+    // A/B decks: the section's scene arms deck B (crossfades in on the bar).
+    rendererRef.current?.setSectionScene(sectionEmotion);
     const h = fnv1a(`${seed}::${sectionEmotion.toLowerCase()}`);
     const u = (shift: number, mod: number) => ((h >>> shift) % mod) / (mod - 1); // 0..1, stable
     const bpm = featureBus.F.bpm;
