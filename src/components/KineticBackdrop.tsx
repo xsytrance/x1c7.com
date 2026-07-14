@@ -11,7 +11,7 @@
 
 import { useEffect, useRef } from "react";
 import { initGL } from "@/lib/engine/gl";
-import { BackdropRenderer, fnv1a } from "@/lib/engine/backdrop";
+import { BackdropRenderer, fnv1a, setActiveBackdrop } from "@/lib/engine/backdrop";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
 import { ensureModEngine } from "@/lib/engine/lfo";
@@ -43,6 +43,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
       return; // a shader that won't compile must never take down the stage
     }
     rendererRef.current = renderer;
+    setActiveBackdrop(renderer); // deck strip / studio read deckInfo() off this
 
     // Console handle (PRISM's window.PRISM pattern): poke params and read the
     // live feature bus from devtools — KINETICA.P.set("backdrop.trails", 0.9).
@@ -98,6 +99,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
       ro.disconnect();
       canvas.removeEventListener("webglcontextlost", onLost);
       renderer.dispose();
+      setActiveBackdrop(null);
       rendererRef.current = null;
     };
   }, []);

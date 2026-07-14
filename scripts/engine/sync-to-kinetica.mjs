@@ -70,6 +70,7 @@ const FILES = [
   ["src/components/KineticBackdrop.tsx", "src/engine/KineticBackdrop.tsx"],
   ["src/components/KineticLooksPanel.tsx", "src/engine/KineticLooksPanel.tsx"],
   ["src/components/KineticParamPanel.tsx", "src/engine/KineticParamPanel.tsx"],
+  ["src/components/KineticTelemetry.tsx", "src/engine/KineticTelemetry.tsx"],
   ["src/lib/lexicon/types.ts", "src/lib/lexicon/types.ts"],
   ["src/lib/lexicon/lookup.ts", "src/lib/lexicon/lookup.ts"],
   // The pre-grown shelf travels as data (until it's hosted — see Phase D).

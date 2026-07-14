@@ -328,6 +328,27 @@ export function fnv1a(s: string): number {
   return h >>> 0;
 }
 
+// ── the mounted renderer, for UI (deck strip, studio) ───────────────────────
+let active: BackdropRenderer | null = null;
+export function setActiveBackdrop(r: BackdropRenderer | null) { active = r; }
+/** Deck state for the UI: scene names + the live crossfade mix (pure peek —
+ * never advances/retires the fade; the render loop owns that). */
+export function deckInfo(): { a: string; b: string | null; mix: number; startBeat: number } | null {
+  if (!active) return null;
+  const f = active.fade;
+  let mix = 0;
+  if (f) {
+    const x = (featureBus.F.totalBeats - f.startBeat) / f.beats;
+    mix = x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x);
+  }
+  return {
+    a: BACKDROP_SCENES[active.sceneIdx] ?? "AURORA",
+    b: f ? BACKDROP_SCENES[f.to] ?? null : null,
+    mix,
+    startBeat: f?.startBeat ?? 0,
+  };
+}
+
 export class BackdropRenderer {
   private gl: WebGL2RenderingContext;
   private canvas: HTMLCanvasElement;
@@ -342,13 +363,15 @@ export class BackdropRenderer {
   private xrayAmt = 0;
   private xrayFamily = 0; // held through the fade-out so the anatomy doesn't flip
   private seedStr = "";
-  // A/B section decks: sceneIdx is deck A; a fade carries deck B in on the bar.
-  private fade: { to: number; startBeat: number; beats: number } | null = null;
+  // A/B section decks: sceneIdx is deck A; a fade carries deck B in on the
+  // bar. Public (readonly by convention) so deckInfo() below can report them
+  // to the deck strip UI.
+  sceneIdx = 0;
+  fade: { to: number; startBeat: number; beats: number } | null = null;
   private time = 0;
   private pal: [number, number, number][] = [[0.3, 0.8, 1], [1, 0.3, 0.6], [1, 0.85, 0.4]];
   private pal0Hue = 190; // theme hue (deg) — the tonic wears it, like the words
   private seed = 0;
-  private sceneIdx = 0;
   // one shared rasterizer for ghost words: text → alpha texture, per stamp
   private ghostCanvas: HTMLCanvasElement;
   private ghostCtx: CanvasRenderingContext2D | null;

@@ -7,6 +7,42 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (IV) — UI overhaul phases 1–2: the Studio becomes the instrument
+
+The owner greenlit the full five-phase UI plan (PRISM's architecture,
+x1c7's skin — proposal artifact with mockups reviewed first).
+
+**Phase 1 — the foundation:** instrument tokens in globals (three-tier
+surfaces, plasma=machine / signal=song semantic axis, micro/body/readout
+scale) + `KineticParamPanel` (engine, synced) — PRISM's ui.js in React:
+registry groups render themselves as sliders with live readouts, an amber
+modulation ribbon when an LFO/follow rides the value, locks, ☆ pins
+(persisted), bool chips, selects, collapsible groups. One P.register()
+anywhere → a finished control. Verified: 29 rows self-built, two-way
+binding (first probe confounded by chorus memory re-morphing the test
+param), ribbon live on the LFO'd hue.
+
+**Phase 2 — the flagship:** /studio rebuilt as the instrument. SHOW /
+DIRECT / SETUP workspaces (persisted); top bar carries `KineticTelemetry`
+(engine, synced): real BPM off the grid, detected key, section tier, DROP
+IN countdown, a beat light on the actual kick. DIRECT: looks as a pad
+grid (fire = one-bar morph, right-click deletes, ＋ captures), scenes rail
+with AUTO + pin and LIVE A/B deck chips (via new `deckInfo()` accessor —
+a pure peek that never advances the fade), the param panel down the right,
+and the deck strip along the bottom (swatches, live mix bar, fade-beats
+slider). SETUP holds song/pass/view. Embed/draft/autoplay flows unchanged.
+
+**Verified end-to-end headless** (autoplay-enabled Chromium actually
+LAUNCHED Light It Myself): telemetry read the real song — 112.3 BPM,
+B MAJ, PEAK, drop in 91 beats — scene rail showed INK on deck A / EMBERS
+on deck B, panel + pads + strip all live. The run also surfaced a latent
+crash: a section WITHOUT a colorHint blew up deriveTheme's normalizeHex
+(`undefined.trim()`) when the quantized grade fired — hardened at the
+source in theme.ts (not-a-string → "" → clean fallback), zero errors on
+re-run. Kinetica gets the fix via sync.
+
+---
+
 ## 2026-07-14 (III) — /engine: the showroom
 
 One public page organizing everything the Prism integration shipped —

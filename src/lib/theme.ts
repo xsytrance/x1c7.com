@@ -21,6 +21,9 @@ export const DEFAULT_THEME: Theme = {
 
 // ── hex ⇄ hsl helpers ──────────────────────────────────────────────────────
 function normalizeHex(hex: string): string {
+  // Analysis data isn't always complete — a section without a colorHint used
+  // to crash the grade here. Not-a-string → "" → callers fall back cleanly.
+  if (typeof hex !== "string") return "";
   let h = hex.trim().replace(/^#/, "");
   if (h.length === 3) h = h.split("").map((c) => c + c).join("");
   if (h.length !== 6 || /[^0-9a-fA-F]/.test(h)) return "";
