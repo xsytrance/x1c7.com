@@ -16,6 +16,7 @@ import { KineticParamPanel } from "@/components/KineticParamPanel";
 import { KineticTelemetry } from "@/components/KineticTelemetry";
 import { looksStore, type Look } from "@/lib/engine/looks";
 import { ensureAutomation } from "@/lib/engine/automation";
+import { customScenes } from "@/lib/engine/customScenes";
 import { featureBus } from "@/lib/engine/features";
 import { deckInfo } from "@/lib/engine/backdrop";
 import { P } from "@/lib/engine/params";
@@ -97,15 +98,30 @@ function LooksPads() {
   );
 }
 
-// ── Scenes rail: AUTO decks vs a pinned scene, with live A/B chips ──────────
+// ── Scenes rail: AUTO decks vs a pinned scene, with live A/B chips — plus
+// the Shader SDK loader: drop a .frag, it becomes a scene. ──────────────────
 function ScenesRail() {
   const [, force] = useState(0);
+  const [fragError, setFragError] = useState<string | null>(null);
+  const fragRef = { current: null as HTMLInputElement | null };
   useEffect(() => {
     const id = window.setInterval(() => force((n) => n + 1), 250);
     return () => window.clearInterval(id);
   }, []);
   const pinned = P.getStr("backdrop.scene");
   const info = deckInfo();
+  const customs = customScenes.list();
+  const loadFrag = async (file: File | undefined) => {
+    if (!file) return;
+    setFragError(null);
+    try {
+      const name = customScenes.add(file.name, await file.text());
+      P.set("backdrop.scene", name, "ui"); // pin the fresh scene so it's on stage
+    } catch (e) {
+      // the compiler's line-numbered listing, trimmed to the point
+      setFragError(String(e instanceof Error ? e.message : e).split("\n").slice(0, 4).join("\n"));
+    }
+  };
   return (
     <div>
       <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">Scenes</div>
@@ -117,22 +133,36 @@ function ScenesRail() {
         >
           AUTO<span className="ml-auto text-[8px] text-[var(--inst-faint)]">sections drive the decks</span>
         </button>
-        {Object.entries(SCENE_SWATCH).map(([name, bg]) => (
-          <button
-            key={name}
-            onClick={() => P.set("backdrop.scene", pinned === name ? "AUTO" : name, "ui")}
-            title={pinned === name ? "Pinned — click to release to AUTO" : "Pin this scene (disables the decks)"}
-            className="flex items-center gap-2 rounded-lg border px-2 py-1.5"
-            style={{ borderColor: pinned === name ? "var(--inst-plasma)" : "var(--inst-line)", background: "var(--inst-s2)" }}
-          >
-            <span className="h-6 w-10 flex-none rounded" style={{ background: bg }} />
-            <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--inst-ink)]">{name}</span>
-            <span className="ml-auto flex gap-1">
-              {info?.a === name && <b className="rounded border border-[var(--inst-plasma)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-plasma)]">A</b>}
-              {info?.b === name && <b className="rounded border border-[var(--inst-warn)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-warn)]">B</b>}
-            </span>
-          </button>
-        ))}
+        {[...Object.entries(SCENE_SWATCH), ...customs.map((c) => [c.name, `linear-gradient(135deg, hsl(${(c.name.length * 47) % 360} 60% 22%), hsl(${(c.name.length * 47 + 90) % 360} 70% 40%))`] as [string, string])].map(([name, bg]) => {
+          const custom = !(name in SCENE_SWATCH);
+          return (
+            <button
+              key={name}
+              onClick={() => P.set("backdrop.scene", pinned === name ? "AUTO" : name, "ui")}
+              onContextMenu={(e) => { if (custom) { e.preventDefault(); customScenes.remove(name); } }}
+              title={`${pinned === name ? "Pinned — click to release to AUTO" : "Pin this scene (disables the decks)"}${custom ? " · right-click removes · re-load a .frag with the same @name to hot-replace" : ""}`}
+              className="flex items-center gap-2 rounded-lg border px-2 py-1.5"
+              style={{ borderColor: pinned === name ? "var(--inst-plasma)" : "var(--inst-line)", background: "var(--inst-s2)" }}
+            >
+              <span className="h-6 w-10 flex-none rounded" style={{ background: bg }} />
+              <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--inst-ink)]">{custom ? "⌁ " : ""}{name}</span>
+              <span className="ml-auto flex gap-1">
+                {info?.a === name && <b className="rounded border border-[var(--inst-plasma)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-plasma)]">A</b>}
+                {info?.b === name && <b className="rounded border border-[var(--inst-warn)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-warn)]">B</b>}
+              </span>
+            </button>
+          );
+        })}
+        <button
+          onClick={() => fragRef.current?.click()}
+          title="Shader SDK — load a .frag fragment shader as a live scene (full stem/word/key uniform contract; // @name and // @param directives)"
+          className="flex min-h-[28px] items-center justify-center gap-2 rounded-lg border border-dashed border-[var(--inst-line)] font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--inst-faint)] hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)]"
+        >＋ .frag</button>
+        <input ref={(el) => { fragRef.current = el; }} type="file" accept=".frag,.glsl,text/plain" className="hidden"
+          onChange={(e) => { loadFrag(e.target.files?.[0]); e.target.value = ""; }} />
+        {fragError && (
+          <pre className="max-h-28 overflow-y-auto whitespace-pre-wrap rounded-lg border border-[var(--inst-signal)] bg-black/40 p-2 font-mono text-[8.5px] leading-snug text-[var(--inst-signal)]">{fragError}</pre>
+        )}
       </div>
     </div>
   );

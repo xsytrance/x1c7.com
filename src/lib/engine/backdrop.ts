@@ -277,6 +277,15 @@ void main() {
 
 export const BACKDROP_SCENES = ["AURORA", "EMBERS", "INK"] as const;
 const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS];
+const BUILTIN_COUNT = SCENE_SOURCES.length;
+
+/** A live scene slot: built-in or a loaded .frag (Shader SDK). */
+interface SceneDef {
+  name: string;
+  prog: Program;
+  /** custom @param uniforms: registry id → GLSL uniform name */
+  custom?: { uniform: string; paramId: string }[];
+}
 
 // ── Registry: the backdrop's whole control surface ──────────────────────────
 P.register({ id: "backdrop.enabled", label: "Enabled", group: "BACKDROP", type: "bool", value: true });
@@ -331,6 +340,7 @@ export function fnv1a(s: string): number {
 // ── the mounted renderer, for UI (deck strip, studio) ───────────────────────
 let active: BackdropRenderer | null = null;
 export function setActiveBackdrop(r: BackdropRenderer | null) { active = r; }
+export function getActiveBackdrop(): BackdropRenderer | null { return active; }
 /** Deck state for the UI: scene names + the live crossfade mix (pure peek —
  * never advances/retires the fade; the render loop owns that). */
 export function deckInfo(): { a: string; b: string | null; mix: number; startBeat: number } | null {
@@ -341,9 +351,10 @@ export function deckInfo(): { a: string; b: string | null; mix: number; startBea
     const x = (featureBus.F.totalBeats - f.startBeat) / f.beats;
     mix = x <= 0 ? 0 : x >= 1 ? 1 : x * x * (3 - 2 * x);
   }
+  const names = active.sceneNames();
   return {
-    a: BACKDROP_SCENES[active.sceneIdx] ?? "AURORA",
-    b: f ? BACKDROP_SCENES[f.to] ?? null : null,
+    a: names[active.sceneIdx] ?? "AURORA",
+    b: f ? names[f.to] ?? null : null,
     mix,
     startBeat: f?.startBeat ?? 0,
   };
@@ -352,7 +363,7 @@ export function deckInfo(): { a: string; b: string | null; mix: number; startBea
 export class BackdropRenderer {
   private gl: WebGL2RenderingContext;
   private canvas: HTMLCanvasElement;
-  private scenes: Program[];
+  private sceneDefs: SceneDef[];
   private trails: Program;
   private post: Program;
   private ghostDecay: Program;
@@ -380,7 +391,7 @@ export class BackdropRenderer {
   constructor(gl: WebGL2RenderingContext, canvas: HTMLCanvasElement) {
     this.gl = gl;
     this.canvas = canvas;
-    this.scenes = SCENE_SOURCES.map((src) => new Program(gl, QUAD_VS, src));
+    this.sceneDefs = SCENE_SOURCES.map((src, i) => ({ name: BACKDROP_SCENES[i], prog: new Program(gl, QUAD_VS, src) }));
     this.trails = new Program(gl, QUAD_VS, TRAILS_FS);
     this.post = new Program(gl, QUAD_VS, POST_FS);
     this.ghostDecay = new Program(gl, QUAD_VS, GHOST_DECAY_FS);
@@ -410,7 +421,7 @@ export class BackdropRenderer {
     this.pal0Hue = hexHue(px[0] ?? "#43f7ff");
     const h = fnv1a(seedStr);
     this.seed = (h % 1000) / 1000;
-    this.sceneIdx = h % SCENE_SOURCES.length;
+    this.sceneIdx = h % BUILTIN_COUNT; // AUTO worlds stay stable over the built-ins
     this.seedStr = seedStr;
     this.fade = null;
     this.time = 0;
@@ -424,7 +435,7 @@ export class BackdropRenderer {
   // song's structure instead of a hand on the crossfader.
   setSectionScene(emotion: string | null) {
     if (!emotion || P.getStr("backdrop.scene") !== "AUTO") return;
-    const target = fnv1a(`${this.seedStr}::${emotion.toLowerCase()}`) % SCENE_SOURCES.length;
+    const target = fnv1a(`${this.seedStr}::${emotion.toLowerCase()}`) % BUILTIN_COUNT;
     if (this.fade ? target === this.fade.to : target === this.sceneIdx) return;
     const F = featureBus.F;
     if (this.fade) this.sceneIdx = this.fade.to; // redirect mid-fade: land the old target
@@ -469,10 +480,39 @@ export class BackdropRenderer {
     };
   }
 
+  // ── SHADER SDK ── load a fragment-shader body as a live scene. Compile
+  // errors throw with a line-numbered listing (gl.ts). Re-adding a name
+  // hot-replaces it. Custom scenes are selectable (pin / scenes rail); the
+  // AUTO deck rotation stays over the built-ins so every song's world is
+  // stable no matter how many scenes get loaded.
+  addScene(name: string, body: string, custom?: { uniform: string; paramId: string }[]) {
+    const prog = new Program(this.gl, QUAD_VS, SCENE_HEADER + body); // throws on compile error
+    const existing = this.sceneDefs.findIndex((d) => d.name === name);
+    if (existing >= 0) { this.sceneDefs[existing].prog.dispose(); this.sceneDefs[existing] = { name, prog, custom }; }
+    else this.sceneDefs.push({ name, prog, custom });
+    const opts = P.def("backdrop.scene")?.options;
+    if (opts && !opts.includes(name)) opts.push(name);
+  }
+
+  removeScene(name: string) {
+    const i = this.sceneDefs.findIndex((d) => d.name === name);
+    if (i < BUILTIN_COUNT || i < 0) return; // built-ins are permanent
+    this.sceneDefs[i].prog.dispose();
+    this.sceneDefs.splice(i, 1);
+    const opts = P.def("backdrop.scene")?.options;
+    if (opts) { const oi = opts.indexOf(name); if (oi >= 0) opts.splice(oi, 1); }
+    if (P.getStr("backdrop.scene") === name) P.set("backdrop.scene", "AUTO", "code");
+    if (this.sceneIdx >= this.sceneDefs.length) this.sceneIdx = 0;
+    if (this.fade && this.fade.to >= this.sceneDefs.length) this.fade = null;
+  }
+
+  sceneNames(): string[] { return this.sceneDefs.map((d) => d.name); }
+
   private renderScene(idx: number, rt: RT, F: EngineFeatures) {
+    const def = this.sceneDefs[idx] ?? this.sceneDefs[0];
     const [p0, p1, p2] = this.pal;
     bindRT(this.gl, rt);
-    this.scenes[idx].use()
+    def.prog.use()
       .v2("uRes", rt.w, rt.h)
       .f("uTime", this.time)
       .f("uSeed", this.seed)
@@ -486,6 +526,9 @@ export class BackdropRenderer {
       .v3("uPal0", p0[0], p0[1], p0[2])
       .v3("uPal1", p1[0], p1[1], p1[2])
       .v3("uPal2", p2[0], p2[1], p2[2]);
+    // custom @param uniforms (Shader SDK) — each is a registry param, so it's
+    // already slider-rendered, look-captured, and modulation-targetable
+    if (def.custom) for (const c of def.custom) def.prog.f(c.uniform, P.get(c.paramId));
     drawQuad(this.gl);
   }
 
@@ -559,7 +602,7 @@ export class BackdropRenderer {
     // advanced BEFORE idx is read — a completed fade lands deck B as the new
     // deck A on this very frame (no one-frame flash of the old scene). ──
     const mix = pinned ? 0 : this.deckMixNow(F);
-    const idx = pinned ? Math.max(0, BACKDROP_SCENES.indexOf(chosen as typeof BACKDROP_SCENES[number])) : this.sceneIdx;
+    const idx = pinned ? Math.max(0, this.sceneDefs.findIndex((d) => d.name === chosen)) : this.sceneIdx;
     this.renderScene(idx, a, F);
     let sceneSrc: RT = a;
     if (mix > 0 && this.fade) {
@@ -652,7 +695,7 @@ export class BackdropRenderer {
 
   dispose() {
     const gl = this.gl;
-    for (const s of this.scenes) s.dispose();
+    for (const d of this.sceneDefs) d.prog.dispose();
     this.trails.dispose();
     this.post.dispose();
     this.ghostDecay.dispose();

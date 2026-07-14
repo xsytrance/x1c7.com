@@ -7,6 +7,37 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (VII) — The Shader SDK: Kinetica becomes a platform
+
+PRISM's v0.10 move, made against OUR contract: drop a `.frag` fragment-
+shader BODY into the studio's scenes rail (＋ .FRAG) and it becomes a live
+backdrop scene — with uniforms his SDK can't offer: real stem envelopes
+(uVoice IS the voice), the riser charge, the active word's position, the
+song's key (`keyColor()`).
+
+- `// @name` names the scene; `// @param key min max default` registers a
+  float as `cscene.<slug>.<key>` — instantly a slider in the param panel,
+  look-captured, modulation-targetable. Uniform declarations are prepended
+  automatically (`warp` → `uWarp`).
+- Compile errors surface with the line-numbered listing IN the rail, and a
+  bad shader is rejected BEFORE persist. Scenes persist per browser
+  (localStorage), hot-replace by @name, restore on every backdrop mount —
+  and a scene that stops compiling after an engine change is dropped with
+  a console warning, never a dead show.
+- Custom scenes are pinnable and join the scenes rail (⌁ mark, right-click
+  removes); the AUTO deck rotation stays over the built-ins so every
+  song's deterministic world is stable no matter how many scenes load.
+  Renderer refactored to dynamic sceneDefs (add/remove/hot-replace).
+
+**Verified headless**: PULSE RINGS (a test scene using uBeatPhase, uVoice,
+uKick, uCharge, keyColor + an @param) mounted, its param registered,
+pinned and RENDERING (screenshot); the deliberately broken shader came
+back with "ERROR: 0:37: 'oops_undefined' : undeclared identifier" and was
+not persisted; a full page reload restored the scene from localStorage.
+Zero page errors.
+
+---
+
 ## 2026-07-14 (VI) — Automation: the third modulator remembers
 
 PRISM's automation.js, ported whole (`src/lib/engine/automation.ts`,

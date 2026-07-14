@@ -16,6 +16,7 @@ import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
 import { ensureModEngine } from "@/lib/engine/lfo";
 import { ensureAutomation } from "@/lib/engine/automation";
+import { customScenes } from "@/lib/engine/customScenes";
 import { looksStore } from "@/lib/engine/looks";
 import { stemMixStore } from "@/lib/stemMix";
 
@@ -45,11 +46,12 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     }
     rendererRef.current = renderer;
     setActiveBackdrop(renderer); // deck strip / studio read deckInfo() off this
+    customScenes.restore();      // persisted .frag scenes remount (Shader SDK)
 
     // Console handle (PRISM's window.PRISM pattern): poke params and read the
     // live feature bus from devtools — KINETICA.P.set("backdrop.trails", 0.9).
     const auto = ensureAutomation();
-    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, looks: looksStore, backdrop: renderer, automation: auto };
+    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, looks: looksStore, backdrop: renderer, automation: auto, scenes: customScenes };
 
     const mod = ensureModEngine();
     // First run ever: one tasteful default routing so the machine visibly
