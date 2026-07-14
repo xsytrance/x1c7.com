@@ -20,6 +20,8 @@ import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
 import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
 import { stemMixStore } from "@/lib/stemMix";
+import { featureBus } from "@/lib/engine/features";
+import { KineticBackdrop } from "./KineticBackdrop";
 import { usePerfLite } from "@/lib/perf";
 import { PerfHUD } from "./PerfHUD";
 import type { Track } from "@/lib/engineHost";
@@ -554,6 +556,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const lastStemT = useRef(0);
   // PHASE 5 cinematic camera: the current section's energy drives the dolly push.
   const camPush = useRef(0.35);
+  // Quantized grade: a section's color-grade waits for the next bar line of
+  // the MEASURED beat grid instead of firing on the LLM's approximate stamp.
+  const pendingGrade = useRef<{ at: number; run: () => void } | null>(null);
   const [cutMode, setCutMode] = useState(false);
   const cutRef = useRef<[number, number] | null>(null);
   const riserRef = useRef<{ t: number; end: number } | null>(null);
@@ -576,6 +581,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     });
     return () => { on = false; };
   }, [track.id, track.planet, pass]);
+  // The feature bus: point it at this song's ground truth (measured stems +
+  // the analysis' emotion arc). The generative backdrop, LFOs, and stem-follow
+  // modulators all read the bus; it degrades gracefully when either is absent.
+  useEffect(() => {
+    featureBus.setSong(stems, track.planet?.analysis?.sections);
+    pendingGrade.current = null;
+  }, [stems, track.id, track.planet]);
   // Pulse rings: landing ripples for charged/final words + beat-synced rings.
   const [pulseRings, setPulseRings] = useState<{ id: number; big: boolean }[]>([]);
   const pulseId = useRef(0);
@@ -932,6 +944,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
+        // Feed the word's landing spot to the feature bus (next frame, once
+        // it exists in the DOM) — the backdrop leans toward the active lyric.
+        if (i >= 0) {
+          const wi = i;
+          requestAnimationFrame(() => {
+            const el = wordEls.current.get(wi);
+            if (el && el.offsetParent) {
+              const r = el.getBoundingClientRect();
+              featureBus.setWord(r.left + r.width / 2, r.top + r.height / 2, window.innerWidth, window.innerHeight);
+            } else {
+              featureBus.setWord(window.innerWidth / 2, window.innerHeight * 0.45, window.innerWidth, window.innerHeight);
+            }
+          });
+        }
         // The outgoing word joins the pile (max 3 residues + the live word).
         // Its true on-stage position + font size are measured off the DOM so
         // the residue takes over without a pixel of drift.
@@ -1127,6 +1153,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (!!cut !== !!cutRef.current) {
           cutRef.current = cut;
           setCutMode(!!cut);
+          featureBus.setCut(!!cut);
           particles.current?.freeze(!!cut);
           if (!cut) {
             setWave((w) => w + 1);
@@ -1156,6 +1183,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           }
         }
       }
+      // ── FEATURE BUS ── one ground-truth snapshot per frame. The generative
+      // backdrop's own rAF + the modulation engine read it right after.
+      featureBus.setKick(kickPulse.current);
+      featureBus.update(t);
+      // A grade waiting for its bar line lands the moment the beat arrives.
+      if (pendingGrade.current && featureBus.F.totalBeats >= pendingGrade.current.at) {
+        const g = pendingGrade.current;
+        pendingGrade.current = null;
+        g.run();
+      }
       // Title card: only before the first sung word.
       const titled = words.length > 0 && t < words[0].t - 0.2;
       if (titled !== titleRef.current) { titleRef.current = titled; setShowTitle(titled); }
@@ -1166,13 +1203,22 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           lastSec.current = key;
           setSection(s);
           if (s) {
-            gradeTo(s);
-            camPush.current = s.intensity;
-            stageRef.current?.style.setProperty("--emo", String(s.intensity));
+            // Art starts decoding immediately (the swap is throttled anyway)…
             const mood = sectionArt?.[s.emotion.toLowerCase()];
             if (mood) requestArt(pickArt(mood));
-            // Pass 2: big scene changes send a shockwave through the stage.
-            if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
+            // …but the grade/camera/shockwave land ON the next bar line when
+            // the measured grid is live — a scene change that hits with the
+            // band instead of on the analyst's approximate timestamp.
+            const applyGrade = () => {
+              gradeTo(s);
+              camPush.current = s.intensity;
+              stageRef.current?.style.setProperty("--emo", String(s.intensity));
+              // Pass 2: big scene changes send a shockwave through the stage.
+              if (pass >= 2 && s.intensity >= 0.7) setWave((w) => w + 1);
+            };
+            const at = featureBus.nextBoundary(4);
+            if (at !== null) pendingGrade.current = { at, run: applyGrade };
+            else applyGrade();
           }
         }
       }
@@ -1351,6 +1397,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // timeline) must live here, since the beat-scaled .kinetic-stage would
     // otherwise become their containing block and misplace them.
     <div ref={rootRef} className={`relative flex h-full w-full flex-col items-center justify-center${cutMode ? " stem-cut" : ""}`} onPointerDown={scoreTap} onPointerMove={stageMove}>
+      {/* The living backdrop — a generative field breathing behind (and
+          through) the song art: GL canvas at -z-20, art at -z-10 with 0.6–0.85
+          opacity glows over it. Fed by the feature bus (real stems, riser
+          charge, word position). Skipped on phones with the other heavy layers. */}
+      {pass >= 4 && !lite && (
+        <KineticBackdrop
+          seed={track.id}
+          palette={palette}
+          sectionEmotion={section?.emotion ?? null}
+          sectionIntensity={section?.intensity ?? 0.35}
+        />
+      )}
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
       <AnimatePresence>
         {bgArt && (

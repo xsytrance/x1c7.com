@@ -56,6 +56,16 @@ const FILES = [
   // module store + react hook; the audio engine that drives it stays per-app.
   ["src/lib/stemMix.ts", "src/lib/stemMix.ts"],
   ["src/lib/beatClock.ts", "src/lib/beatClock.ts"],
+  // The PRISM-inspired engine core: param registry, ground-truth feature bus,
+  // beat-synced LFOs + stem-follow modulators, WebGL2 layer, and the living
+  // generative backdrop. Engine-pure: they import only each other + stemSense/
+  // planet/beatClock (all synced above).
+  ["src/lib/engine/params.ts", "src/lib/engine/params.ts"],
+  ["src/lib/engine/features.ts", "src/lib/engine/features.ts"],
+  ["src/lib/engine/lfo.ts", "src/lib/engine/lfo.ts"],
+  ["src/lib/engine/gl.ts", "src/lib/engine/gl.ts"],
+  ["src/lib/engine/backdrop.ts", "src/lib/engine/backdrop.ts"],
+  ["src/components/KineticBackdrop.tsx", "src/engine/KineticBackdrop.tsx"],
   ["src/lib/lexicon/types.ts", "src/lib/lexicon/types.ts"],
   ["src/lib/lexicon/lookup.ts", "src/lib/lexicon/lookup.ts"],
   // The pre-grown shelf travels as data (until it's hosted — see Phase D).
