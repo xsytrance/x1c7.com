@@ -7,6 +7,32 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (X) — Alignment v2 applied: the whole catalog snaps to the voice
+
+The owner's goal: perfectly aligned lyrics, every time. Same day, shipped
+and APPLIED:
+
+- **The refiner ran the catalog**: 48 tracks, 47 improved, 0 failures.
+  Median onset error **85 ms → 46 ms** (mean 111 → 68 ms, excluding the
+  broken-clock pair), and the **clump ratio hit 0.00 on every track** —
+  the flagged-11 arbitration, automated and done. All 47 applied to
+  production (source `aligned-refined`, previous timings journaled to
+  refine-backup.jsonl). The site reads timings live from Supabase, so
+  the improvement was audience-visible the moment it landed.
+- **The two pulled songs, finally diagnosed**: music-is-my-drug and
+  one-more-breath sit at 2.1–2.5 s mean onset error — wrong clock
+  entirely, beyond any snap. With the three ~0.4 s whisper-era stragglers
+  they form the re-align list.
+- **The aligner lives again**: ~/whisper-venv rebuilt (torch cu128 +
+  qwen-asr, RTX 5060 Ti, cuda:true verified) — the OS reinstall had
+  killed it. Re-aligning the worst-5 and Tier B are unblocked.
+
+Next for "perfect, every time": re-align the worst-5 against the cached
+lead stems, then wire refine+score+gate into song onboarding so no track
+can ever ship unmeasured.
+
+---
+
 ## 2026-07-14 (IX) — The studio opens to everyone
 
 Second owner's call, minutes after the password door shipped: "hell yeah

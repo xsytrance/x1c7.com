@@ -35,10 +35,15 @@ index) survives re-timing untouched.
 **Batch**: `node scripts/alignment/refine-batch.mjs [--apply]` — live
 words from Supabase, lead stems from the melody-batch cache.
 
-First measurements: light-it-myself (the catalog's best) mean onset
-distance 98 ms → 50 ms; i-said-no clump ratio 0.11 → 0.00. Near-zero
-silence rates across both confirm v1 placed words in the right regions —
-v2 is about the last hundred milliseconds and the pathological cases.
+**APPLIED 2026-07-14 — 47 songs re-timed in production** (gated, all
+journaled): median onset error 85 ms → 46 ms, mean 111 ms → 68 ms
+(excluding the two broken-clock songs), clump ratio → 0.00 across the
+entire catalog. The report also DIAGNOSED the two pulled songs:
+music-is-my-drug and one-more-breath sit at 2.1–2.5 s mean onset error —
+wrong clock entirely, beyond snapping; with say-it-with-your-body /
+say-it-with-your-eyes / red-flags (~0.4 s, whisper-era) they form the
+re-align list for the fresh Qwen env. Live site reads timings from
+Supabase, so the improvement shipped the moment it applied.
 
 **Environment note**: `~/whisper-venv` (torch cu128 + qwen-asr, RTX 5060
 Ti) rebuilt 2026-07-14 — the OS reinstall had killed it; re-aligns and
