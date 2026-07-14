@@ -73,3 +73,4 @@ scripts/stem-analysis/out/
 
 # lyrics inbox working files (canonical lyrics live in the DB after apply)
 scripts/alignment/inbox/
+scripts/curator/.cache/

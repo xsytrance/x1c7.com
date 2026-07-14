@@ -18,7 +18,7 @@ export const HEAVY_SEED = new Set((
   // riches + vice
   "gold silver diamond money cash crown king queen throne drink whiskey wine liquor poison venom honey sugar drug high smoke pill bottle glass " +
   // dark + light
-  "night midnight dark shadow light dawn sunrise sunset moon moonlight star stars sun eclipse neon glow candle lantern " +
+  "night midnight dark shadow light dawn sunrise sunset moon moonlight star stars sun sky eclipse neon glow candle lantern " +
   // place + motion
   "home road street city skyline train wings fly fall falling rise run running escape chains cage prison door window mirror wall bridge edge cliff gravity " +
   // time + fate
