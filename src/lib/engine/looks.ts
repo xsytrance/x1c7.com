@@ -31,7 +31,9 @@ const FILE_V = 1;
 
 // Controllers a look may never capture or restore.
 const NON_LOOK_IDS = new Set(["backdrop.enabled"]);
-const NON_LOOK_GROUPS = new Set<string>([]); // future: TRANSPORT, MIXER, …
+// AUTOMATION runs the show (arm/play/length are transport, not aesthetics) —
+// PRISM v0.19's exact bug class, fenced here before it can happen.
+const NON_LOOK_GROUPS = new Set<string>(["AUTOMATION"]);
 
 export function isLookParam(id: string): boolean {
   const def = P.def(id);

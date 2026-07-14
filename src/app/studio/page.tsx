@@ -15,6 +15,7 @@ import { KineticStage, canPerform, MODES, type StageMode } from "@/components/Ki
 import { KineticParamPanel } from "@/components/KineticParamPanel";
 import { KineticTelemetry } from "@/components/KineticTelemetry";
 import { looksStore, type Look } from "@/lib/engine/looks";
+import { ensureAutomation } from "@/lib/engine/automation";
 import { featureBus } from "@/lib/engine/features";
 import { deckInfo } from "@/lib/engine/backdrop";
 import { P } from "@/lib/engine/params";
@@ -167,7 +168,62 @@ function DeckStrip() {
         <span className="tabular-nums text-[var(--inst-plasma)]">{fadeBeats} BT</span>
       </label>
       <span className="font-mono text-[8.5px] uppercase tracking-[0.15em] text-[var(--inst-faint)]">quantize · bar</span>
+
+      {/* ── AUTOMATION — arm, ride sliders, it loops forever on the grid ── */}
+      <AutomationCluster />
+
       <span className="ml-auto font-mono text-[8.5px] uppercase tracking-[0.15em] text-[var(--inst-faint)]">the song&apos;s sections drive the fader</span>
+    </div>
+  );
+}
+
+function AutomationCluster() {
+  const [, force] = useState(0);
+  useEffect(() => {
+    const id = window.setInterval(() => force((n) => n + 1), 150);
+    return () => window.clearInterval(id);
+  }, []);
+  const auto = ensureAutomation();
+  const armed = P.getBool("auto.record");
+  const playing = P.getBool("auto.play");
+  const recording = auto.state === "recording";
+  const waiting = auto.state === "waiting";
+  return (
+    <div className="flex items-center gap-2 border-l border-[var(--inst-line)] pl-4">
+      <button
+        onClick={() => P.set("auto.record", !armed, "code")}
+        title={recording ? "Recording the take — disarm to stop early" : waiting ? "Armed — the take starts on the next bar" : "Arm automation: ride sliders for one loop, it replays forever"}
+        className="flex min-h-[24px] items-center gap-1.5 rounded-md border px-2 font-mono text-[9px] uppercase tracking-[0.15em]"
+        style={armed
+          ? { borderColor: "var(--inst-signal)", color: "var(--inst-signal)", boxShadow: recording ? "0 0 12px color-mix(in srgb, var(--inst-signal) 55%, transparent)" : "none" }
+          : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
+      >
+        <span className="inline-block h-2 w-2 rounded-full" style={{ background: armed ? "var(--inst-signal)" : "#241b36", opacity: waiting ? 0.5 : 1 }} />
+        {recording ? "take…" : waiting ? "on the bar" : "● rec"}
+      </button>
+      <select
+        value={P.getStr("auto.length")}
+        onChange={(e) => P.set("auto.length", e.target.value, "code")}
+        title="Loop length of the take"
+        className="h-6 rounded border border-[var(--inst-line)] bg-[var(--inst-s2)] px-1 font-mono text-[9px] uppercase text-[var(--inst-dim)] outline-none focus:border-[var(--inst-plasma)]"
+      >
+        {["1 BAR", "2 BARS", "4 BARS", "8 BARS"].map((o) => <option key={o} value={o}>{o}</option>)}
+      </select>
+      {auto.hasTracks() && (
+        <>
+          <button
+            onClick={() => P.set("auto.play", !playing, "code")}
+            title={playing ? "Automation looping — click to hold" : "Resume the recorded loop"}
+            className="min-h-[24px] rounded-md border px-2 font-mono text-[9px] uppercase tracking-[0.15em]"
+            style={playing ? { borderColor: "var(--inst-warn)", color: "var(--inst-warn)" } : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
+          >{playing ? `▶ ${auto.laneCount()} lane${auto.laneCount() > 1 ? "s" : ""}` : "▶ play"}</button>
+          <button
+            onClick={() => auto.clear()}
+            title="Clear the recorded automation"
+            className="min-h-[24px] rounded-md border border-[var(--inst-line)] px-1.5 font-mono text-[9px] text-[var(--inst-faint)] hover:text-[var(--inst-signal)]"
+          >✕</button>
+        </>
+      )}
     </div>
   );
 }

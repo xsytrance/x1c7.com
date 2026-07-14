@@ -7,6 +7,31 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (VI) — Automation: the third modulator remembers
+
+PRISM's automation.js, ported whole (`src/lib/engine/automation.ts`,
+synced): arm Record → the take starts ON THE NEXT BAR of the measured grid
+(immediately when no grid) → ride any sliders → when the loop length
+elapses (1/2/4/8 bars), recording stops and playback loops automatically
+through the registry's 'auto' modulation channel — stacking with LFOs and
+stem-follows, base values untouched, releasing cleanly on clear. On a
+stems planet the loop is phase-locked to the real bars forever.
+
+The trilogy is complete: LFOs oscillate, stem-follows listen, automation
+REMEMBERS. The studio deck strip grew the transport — ● REC (shows
+"on the bar" while waiting, pulses through the take), loop length,
+▶ lanes counter, ✕ clear. The AUTOMATION group joined looks.ts's NON_LOOK
+fence on day one (arm/play/length are transport, not aesthetics — PRISM
+v0.19's exact bug class, pre-fenced).
+
+**Verified headless on the real 86 BPM grid**: arm → `waiting` →
+`recording` through a simulated slider ride → auto-play with 1 lane → the
+'auto' offset breathed through the recorded curve (.069→.198→.113,
+looping) while the base sat untouched at .05 → clear released to 0.
+Zero page errors.
+
+---
+
 ## 2026-07-14 (V) — UI overhaul phases 3–5: the public face joins the instrument
 
 **Phase 3 — the Show HUD** (single revertible commit): the /music takeover
