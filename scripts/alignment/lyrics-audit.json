@@ -1,20 +1,20 @@
 {
   "v": 1,
-  "updated": "2026-07-14T2",
+  "updated": "2026-07-14T3",
   "note": "Songs whose LYRICS (not timings) need the owner. Measured, not guessed. Submit fixes via the Studio SETUP → Lyrics Inbox (tailnet) — then run: node scripts/alignment/realign-inbox.mjs",
   "flagged": [
-    { "id": "say-it-with-your-body", "reason": "REDIAGNOSED: both the old text AND your new text fail the same way (11–22% of words in vocal silence) — this is probably a STEM problem, not a text problem: the published lead stem likely mismatches the release mix. Needs a listen / stem re-publish.", "severity": "stem-mismatch" },
-    { "id": "light-it-myself", "reason": "your text aligned to only 246 words but the song sings ~600 — the sheet likely writes each chorus once. Paste the FULL sung text (repeat the choruses as they repeat) and resubmit; the gate held the short version.", "severity": "incomplete-text" },
-    { "id": "another-year-looks-good-on-you-happy-birthday-song", "reason": "your lyrics are saved and waiting — the song has no published lead stem to align against. Publish its Suno stems (publish-stems.mjs) and re-run the inbox.", "severity": "awaiting-stems" },
-    { "id": "music-is-my-drug-rooklyn-mix", "reason": "your lyrics are saved and waiting — no published lead stem. Publish its Suno stems and re-run the inbox.", "severity": "awaiting-stems" }
+    { "id": "say-it-with-your-body", "reason": "probably a STEM problem, not text: two different texts fail identically (11–22% of words in vocal silence) — the published lead stem likely mismatches the release mix. Needs a listen / stem re-publish.", "severity": "stem-mismatch" },
+    { "id": "light-it-myself", "reason": "your sheet aligned to 246 words but the song sings ~600 — write out every chorus repeat and resubmit; the gate is protecting the good live timings meanwhile.", "severity": "incomplete-text" },
+    { "id": "music-is-my-drug-rooklyn-mix", "reason": "stems are published now and the mixer is live — but your pasted text fits WORSE than the current whisper-derived words (0.28s/14% silence vs 0.10s/5%). The remix likely rearranges the original's lyrics; re-check the text against the actual mix and resubmit.", "severity": "text-vs-mix" }
   ],
   "fixed": [
+    { "id": "another-year-looks-good-on-you-happy-birthday-song", "was": "no stems, unofficial text", "now": "full pipeline: stems published + mixer live, your lyrics @ 0.038s, melody A# major 0.97" },
     { "id": "music-is-my-drug", "was": "whisper garbage (20 words)", "now": "309 words @ 0.134s — un-hide candidate" },
     { "id": "one-more-breath-back-to-myself", "was": "36 broken words @ 2.4s", "now": "121 words @ 0.158s on your official text" },
-    { "id": "going-crazy-hiligaynon-fusion-mix", "was": "unofficial", "now": "0.009s on your text (Hiligaynon aligned clean)" },
+    { "id": "going-crazy-hiligaynon-fusion-mix", "was": "unofficial", "now": "0.009s on your text" },
     { "id": "heaven-hell-honey-venom-remix", "was": "unofficial", "now": "0.047s on your text" },
     { "id": "whistle-on-the-river", "was": "unofficial", "now": "0.018s on your text" },
-    { "id": "red-flags-from-the-beginning", "was": "suspect text", "now": "your text applied; 0.38s is this song's floor (dense delivery) — best achievable" }
+    { "id": "red-flags-from-the-beginning", "was": "suspect text", "now": "your text applied; 0.38s is this song's floor" }
   ],
   "instrumentals": ["ai-interlude", "feverbreak"]
 }

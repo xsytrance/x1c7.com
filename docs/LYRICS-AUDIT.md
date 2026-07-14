@@ -1,8 +1,11 @@
 # LYRICS AUDIT — status after the owner's big paste (2026-07-14)
 
-> The owner submitted corrected lyrics for all 10 flagged songs; the inbox
-> pipeline (align → refine → gate → apply → melody refresh) ran them all.
-> **6 applied. 4 remain**, each for a specific, measured reason.
+> Round 2 (stems landed): the birthday song went first-class end to end —
+> stems published, mixer live, the owner's lyrics at **0.038s**, melody
+> A# major 0.97. The Rooklyn mix has stems + a live mixer + refined
+> timings + melody now, but its pasted text fit WORSE than the whisper
+> words (the remix rearranges the original) — back to the list.
+> **7 fixed total. 3 remain**, each for a specific, measured reason.
 > Machine twin: `scripts/alignment/lyrics-audit.json` (drives the Studio
 > Lyrics Inbox). Submit fixes there, then:
 > `node scripts/alignment/realign-inbox.mjs`
@@ -27,8 +30,7 @@ diatonic gate).
 |---|---|
 | **say-it-with-your-body** | **Rediagnosed: probably not a text problem.** Your new text failed the same way the old one did (11–22% of words in vocal silence) — the published lead stem likely mismatches the release mix. Give it a listen; may need a stem re-publish. |
 | **light-it-myself** | Your sheet aligned to 246 words but the song sings ~600 — the choruses are probably written once. **Paste the FULL sung text (repeats included)** and resubmit; the gate held the short version, the good live timings are untouched. |
-| **another-year… (birthday song)** | Your lyrics are saved and waiting — the song has **no published lead stem**. Publish its Suno stems, then re-run the inbox. |
-| **music-is-my-drug-rooklyn-mix** | Same — lyrics saved, **awaiting stems**. |
+| **music-is-my-drug-rooklyn-mix** | Stems live now — but your pasted text fits worse than the whisper words (0.28s vs 0.10s): the remix rearranges the original's lyrics. Re-check against the actual mix and resubmit. |
 
 ## Instrumentals (no action)
 
