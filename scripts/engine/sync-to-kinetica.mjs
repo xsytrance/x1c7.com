@@ -64,6 +64,7 @@ const FILES = [
   ["src/lib/engine/features.ts", "src/lib/engine/features.ts"],
   ["src/lib/engine/lfo.ts", "src/lib/engine/lfo.ts"],
   ["src/lib/engine/melody.ts", "src/lib/engine/melody.ts"],
+  ["src/lib/engine/looks.ts", "src/lib/engine/looks.ts"],
   ["src/lib/engine/gl.ts", "src/lib/engine/gl.ts"],
   ["src/lib/engine/backdrop.ts", "src/lib/engine/backdrop.ts"],
   ["src/components/KineticBackdrop.tsx", "src/engine/KineticBackdrop.tsx"],

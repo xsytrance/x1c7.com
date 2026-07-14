@@ -238,8 +238,13 @@ Next, roughly in order of jaw-drop per effort:
 1. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
    melody.json.
-2. **Presets/banks with morphing + look filtering**; `.kinetica` files get
-   versioned migrations (PRISM's `migrate.js` pattern) from day one.
+2. ~~Presets/banks~~ **SHIPPED as `looks.ts`** (2026-07-14): capture/fire
+   (morphed), localStorage persistence, export/import packs with versioned
+   migrations (PRISM's migrate.js pattern) from day one, and the
+   look-vs-controller fence enforced on BOTH capture and fire — verified: a
+   hostile look setting `backdrop.enabled=false` is stripped while its
+   aesthetic params apply. Built-ins: NOCTURNE / FESTIVAL / NEWSPRINT.
+   `KINETICA.looks` in the console; Studio UI still to come.
 3. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
 4. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,

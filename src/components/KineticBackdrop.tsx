@@ -15,6 +15,7 @@ import { BackdropRenderer, fnv1a } from "@/lib/engine/backdrop";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
 import { ensureModEngine } from "@/lib/engine/lfo";
+import { looksStore } from "@/lib/engine/looks";
 import { stemMixStore } from "@/lib/stemMix";
 
 export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionIntensity = 0.35 }: {
@@ -45,7 +46,7 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
 
     // Console handle (PRISM's window.PRISM pattern): poke params and read the
     // live feature bus from devtools — KINETICA.P.set("backdrop.trails", 0.9).
-    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, backdrop: renderer };
+    (window as unknown as Record<string, unknown>).KINETICA = { P, featureBus, stemMixStore, looks: looksStore, backdrop: renderer };
 
     const mod = ensureModEngine();
     // First run ever: one tasteful default routing so the machine visibly

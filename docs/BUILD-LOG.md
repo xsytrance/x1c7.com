@@ -7,6 +7,30 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 — Looks: the show's memory (presets with the controller fence)
+
+`src/lib/engine/looks.ts` (synced): capture the current control surface as
+a named look, fire it back morphed over a musical duration, export/import
+packs. PRISM v0.19's hard-won law is enforced from day one, on BOTH sides:
+a look stores the aesthetic (backdrop grade/FX, modulation routings) and is
+filtered on capture AND on fire — so even a hand-edited or foreign pack
+can't switch the backdrop off or touch a controller. Files are versioned
+with a migrate chain (PRISM's migrate.js pattern), so today's packs survive
+every future schema change; a file from a NEWER build fails honestly.
+Built-ins: NOCTURNE (dim, long trails), FESTIVAL (bright, fast, bloomed),
+NEWSPRINT (desaturated grain). `KINETICA.looks` drives it from the console;
+the Studio picker UI is the natural next step.
+
+**Verified** (single Playwright pass, zero errors): built-ins list; firing
+NOCTURNE morphs trails 0.46→0.82 + vignette to 0.62; the fence strips
+`backdrop.enabled=false` from a hostile look while applying its grain;
+capture→tweak→refire round-trips hueShift exactly; export→remove→import
+restores the look. Also: session pushed — x1c7 main → Vercel, and
+kinetica's engine-sync-prism merged to main → GitHub Pages (the public
+demo now carries the full Prism-integration engine).
+
+---
+
 ## 2026-07-13 (VIII) — Key & mode awareness: the field sits in the song's key
 
 The harmony story melody-sense started, completed backdrop-side:
