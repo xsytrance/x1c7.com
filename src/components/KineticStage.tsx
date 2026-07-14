@@ -559,6 +559,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Quantized grade: a section's color-grade waits for the next bar line of
   // the MEASURED beat grid instead of firing on the LLM's approximate stamp.
   const pendingGrade = useRef<{ at: number; run: () => void } | null>(null);
+  // The last word we measured on stage — when the next word arrives, this one
+  // dissolves into the backdrop's ghost buffer.
+  const lastGhost = useRef<{ word: string; x: number; y: number; fs: number } | null>(null);
   const [cutMode, setCutMode] = useState(false);
   const cutRef = useRef<[number, number] | null>(null);
   const riserRef = useRef<{ t: number; end: number } | null>(null);
@@ -944,6 +947,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
+        // The word that just left dissolves into the backdrop (not in phrase
+        // mode — there the whole line stays on stage; nothing actually left).
+        if (mode !== "phrase" && lastGhost.current) {
+          featureBus.pushGhost(lastGhost.current);
+          lastGhost.current = null;
+        }
         // Feed the word's landing spot to the feature bus (next frame, once
         // it exists in the DOM) — the backdrop leans toward the active lyric.
         if (i >= 0) {
@@ -952,7 +961,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             const el = wordEls.current.get(wi);
             if (el && el.offsetParent) {
               const r = el.getBoundingClientRect();
-              featureBus.setWord(r.left + r.width / 2, r.top + r.height / 2, window.innerWidth, window.innerHeight);
+              const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+              featureBus.setWord(cx, cy, window.innerWidth, window.innerHeight);
+              lastGhost.current = { word: clean(words[wi].w), x: cx, y: cy, fs: parseFloat(getComputedStyle(el).fontSize) || 48 };
             } else {
               featureBus.setWord(window.innerWidth / 2, window.innerHeight * 0.45, window.innerWidth, window.innerHeight);
             }

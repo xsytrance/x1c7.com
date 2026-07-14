@@ -7,6 +7,65 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (II) — The Prism integration: engine core · living backdrop · word ghosts
+
+Charles opened his PRISM repo (rockinthiscity/prism — a browser WebGL2 VJ
+platform, studied end to end this session) and gave the green light to adopt
+its ideas. The strategic read that shaped everything: **PRISM guesses the
+present live (FFT, beat tracker, HPSS stem approximation); Kinetica knows
+the future offline (real Suno stems, word timings, baked sections).** So we
+ported his *infrastructure*, fed it ground truth he can't have, and pointed
+it at emotion instead of math. Full study, contracts, and the 32-idea
+backlog: [`PRISM-INTEGRATION.md`](./PRISM-INTEGRATION.md).
+
+**New engine core (`src/lib/engine/`, all synced to Kinetica, 0 coupling):**
+- **Param registry** (PRISM's keystone): register once → morphable,
+  preset-able, lockable, modulation-targetable. Base vs modulation layers.
+- **Feature bus**: per-frame snapshot fed by measured stems — real per-stem
+  envelopes, transport walked along the real beat grid, riser charge,
+  LOW/MID/PEAK tier, active-word screen position, and `beatsToDrop` — a
+  countdown to the next drop no live tool can have.
+- **Modulators**: 3 beat-synced LFOs + 3 stem-follows (a real instrument
+  riding any param — PRISM's roadmap item, trivial here). LFO 1 on by
+  default: 4-bar sine drifting backdrop hue.
+- **The living backdrop**: WebGL2 canvas at -z-20 under the Ken-Burns art —
+  scene → feedback trails → finishing pass. Three generative scenes
+  (AURORA / EMBERS / INK), seeded per song, painted in the song's palette,
+  leaning toward the active lyric (`uWord`). Fails dark on any GL error.
+  `window.KINETICA = { P, featureBus }` for console tinkering.
+
+**The showpieces:**
+- **Anticipation** — over the last 16 beats before a measured drop the
+  vignette closes, color drains, and the field's time slows ~35%; the drop
+  itself is the release. PRISM reacts to drops; Kinetica *dreads* them.
+- **Quantized grades** — section color-grade/camera/shockwave land on the
+  next bar line of the real grid, not the LLM's approximate stamp.
+- **Chorus memory** — every section emotion owns a deterministic look
+  (hash(song, emotion) → hue/flow/trails/bloom) morphing in over one bar;
+  the chorus always comes back wearing its own colors.
+- **Word ghosts** — a dying word is stamped once into a dedicated buffer
+  that decays and drifts upward: lyrics dissolve into the atmosphere
+  (skipped in phrase mode, where the line never leaves the stage).
+
+**Bugs the verification caught (Playwright driving /dev/perf headless):**
+- `canvas` is a replaced element — `fixed inset-0` didn't stretch it and a
+  ResizeObserver feedback loop locked it at ~290×146. `w-full h-full`.
+- The measured grid starts at the first drum beat, so drum-less intros froze
+  the transport (LFOs parked, quantized actions hung ~20s). The grid now
+  extrapolates at edge tempo — beats are negative before the first kick, and
+  the fix showed immediately: the LFO's hue mod went from a frozen 0 to a
+  live −0.072.
+
+**Verified:** grid locks at 86.13 BPM on the restored test stems
+(`public/planets/i-won-t-be-your-fire/stems.json` — the `/dev/perf?stems=1`
+flag had been silently 404ing since the storage reorg), `beatsToDrop` counts
+15.1 → 7.0 into the real drop at 22.06s, chorus-memory morph lands
+(trails 0.5 → 0.65), and the ghost screenshot shows RISES/WATER/WHILE
+dissolving in palette colors behind the live word. Both builds clean; sync
+dry-run: 6 new engine files, 0 warnings (apply to Kinetica pending).
+
+---
+
 ## 2026-07-13 — The great recovery · phrase-mode alignment fix · Kinetica goes demo-first
 
 Prime was OS-reinstalled (~07-12); this session rebuilt everything the wipe

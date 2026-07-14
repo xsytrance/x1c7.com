@@ -160,34 +160,35 @@ art layer hidden) is the regression recipe.
 ## The backlog (from the 32-idea study, session 2026-07-13)
 
 Shipped: registry · feature bus · backdrop · LFOs · stem-follows ·
-anticipation · quantized grades · chorus memory v1 · `uWord`.
+anticipation · quantized grades · chorus memory v1 · `uWord` ·
+**word ghosts** (dying words stamped into a dedicated decay/rise buffer —
+`featureBus.pushGhost` → `backdrop.ghosts/ghostFade/ghostRise`; skipped in
+phrase mode where nothing actually leaves the stage).
 
 Next, roughly in order of jaw-drop per effort:
 
-1. **Word ghosts** — dying words stamped into a dedicated decay buffer,
-   rising and dissolving into the field.
-2. **Per-word sung pitch → word color** — offline pitch per word window from
+1. **Per-word sung pitch → word color** — offline pitch per word window from
    the vocal stem, mapped through the song's key. Nobody has this.
-3. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
+2. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
    wired to the existing mixer (mute the drums, their layer dies).
-4. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
+3. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
    (PRISM's deck architecture, driven by structure instead of a human).
-5. **Offline PRISM-grade per-stem analysis** — key/chroma/tier baked into
+4. **Offline PRISM-grade per-stem analysis** — key/chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`).
-6. **Key → palette harmony** — circle of fifths onto the color wheel,
+5. **Key → palette harmony** — circle of fifths onto the color wheel,
    blended with the cover palette; key changes shift the world.
-7. **Presets/banks with morphing + look filtering**; `.kinetica` files get
+6. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
-8. **Automation recording** — ride the deck live once, bake it into the
+7. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
-9. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
+8. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
    `?` shortcut overlay, SHOW/CHOREOGRAPH/LIBRARY workspaces — in x1c7's
    own palette (#05030b void, #43f7ff plasma, #ff2440 signal).
-10. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
+9. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
     bundled into shareable packs.
-11. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
+10. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
     clock; PRISM follows. Two engines, one tempo, side by side.
-12. **Recording via single-canvas compositing**, **Art-Net room lighting**
+11. **Recording via single-canvas compositing**, **Art-Net room lighting**
     that anticipates the drop, **collector-frame bezels**.
 
 Deliberately not doing: MilkDrop import, MIDI, neural stem separation

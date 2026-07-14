@@ -26,7 +26,7 @@
 
 import { Program, QUAD_VS, drawQuad, bindRT, createRT, disposeRT, GLSL_NOISE, type RT } from "./gl";
 import { P } from "./params";
-import type { EngineFeatures } from "./features";
+import { featureBus, type EngineFeatures, type WordGhost } from "./features";
 
 const SCENE_HEADER = `#version 300 es
 precision highp float;
@@ -126,13 +126,48 @@ void main() {
   fragColor = vec4(max(cur, prev), 1.0);
 }`;
 
+// ── WORD GHOSTS ── a dying word is stamped once into a dedicated buffer that
+// decays and drifts upward every frame: lyrics dissolve into the atmosphere
+// instead of just unmounting. The buffer feeds the finishing pass, so ghosts
+// inherit bloom, the grade, and the pre-drop dimming like everything else.
+const GHOST_DECAY_FS = `#version 300 es
+precision highp float;
+in vec2 vUv; out vec4 fragColor;
+uniform sampler2D uPrev;
+uniform float uDecay, uRise;
+void main() {
+  vec3 c = texture(uPrev, vUv - vec2(0.0, uRise)).rgb * uDecay;
+  fragColor = vec4(c, 1.0);
+}`;
+
+const STAMP_VS = `#version 300 es
+layout(location=0) in vec2 aPos;
+out vec2 vUv;
+uniform vec2 uOffset, uScale;
+void main() { vUv = aPos * 0.5 + 0.5; gl_Position = vec4(aPos * uScale + uOffset, 0.0, 1.0); }
+`;
+
+const STAMP_FS = `#version 300 es
+precision highp float;
+in vec2 vUv; out vec4 fragColor;
+uniform sampler2D uText;
+uniform vec3 uColor;
+uniform float uAlpha;
+void main() {
+  // the fullscreen-triangle overshoot lands outside 0..1 — clamp reads the
+  // text canvas's transparent padding, so the overshoot stamps nothing
+  float a = texture(uText, clamp(vUv, 0.0, 1.0)).a;
+  fragColor = vec4(uColor * a * uAlpha, a * uAlpha);
+}`;
+
 // ── Finishing pass: soft bloom, hue drift, grade, grain, vignette ────────────
 const POST_FS = `#version 300 es
 precision highp float;
 in vec2 vUv; out vec4 fragColor;
 uniform sampler2D uTex;
 uniform vec2 uRes;
-uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop;
+uniform sampler2D uGhost;
+uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt;
 float hash21(vec2 p) { p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
 vec3 hueRotate(vec3 c, float a) {
   const vec3 W = vec3(0.299, 0.587, 0.114);
@@ -141,6 +176,7 @@ vec3 hueRotate(vec3 c, float a) {
 }
 void main() {
   vec3 col = texture(uTex, vUv).rgb;
+  col += texture(uGhost, vUv).rgb * uGhostAmt; // dissolving lyrics join the field
   if (uBloom > 0.001) {
     vec3 acc = vec3(0.0);
     for (int i = 0; i < 8; i++) {
@@ -183,6 +219,10 @@ P.register({ id: "backdrop.saturation", label: "Saturation", group: "BACKDROP", 
 P.register({ id: "backdrop.brightness", label: "Brightness", group: "BACKDROP", min: 0.2, max: 2, value: 1 });
 // How hard the world tenses before a measured drop (0 = ignore the future).
 P.register({ id: "backdrop.anticipation", label: "Anticipation", group: "BACKDROP", min: 0, max: 1, value: 0.8 });
+// Word ghosts: dying lyrics dissolve into the field (0 = off).
+P.register({ id: "backdrop.ghosts", label: "Word Ghosts", group: "BACKDROP", min: 0, max: 1, value: 0.5 });
+P.register({ id: "backdrop.ghostFade", label: "Ghost Fade", group: "BACKDROP", min: 0.9, max: 0.995, value: 0.975 });
+P.register({ id: "backdrop.ghostRise", label: "Ghost Rise", group: "BACKDROP", min: 0, max: 1, value: 0.35 });
 
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.replace("#", ""), 16);
@@ -206,11 +246,17 @@ export class BackdropRenderer {
   private scenes: Program[];
   private trails: Program;
   private post: Program;
-  private rts: { a: RT; ping: RT; pong: RT } | null = null;
+  private ghostDecay: Program;
+  private stamp: Program;
+  private rts: { a: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT } | null = null;
   private time = 0;
   private pal: [number, number, number][] = [[0.3, 0.8, 1], [1, 0.3, 0.6], [1, 0.85, 0.4]];
   private seed = 0;
   private sceneIdx = 0;
+  // one shared rasterizer for ghost words: text → alpha texture, per stamp
+  private ghostCanvas: HTMLCanvasElement;
+  private ghostCtx: CanvasRenderingContext2D | null;
+  private ghostTex: WebGLTexture;
 
   constructor(gl: WebGL2RenderingContext, canvas: HTMLCanvasElement) {
     this.gl = gl;
@@ -218,6 +264,18 @@ export class BackdropRenderer {
     this.scenes = SCENE_SOURCES.map((src) => new Program(gl, QUAD_VS, src));
     this.trails = new Program(gl, QUAD_VS, TRAILS_FS);
     this.post = new Program(gl, QUAD_VS, POST_FS);
+    this.ghostDecay = new Program(gl, QUAD_VS, GHOST_DECAY_FS);
+    this.stamp = new Program(gl, STAMP_VS, STAMP_FS);
+    this.ghostCanvas = document.createElement("canvas");
+    this.ghostCanvas.width = 512;
+    this.ghostCanvas.height = 192;
+    this.ghostCtx = this.ghostCanvas.getContext("2d");
+    this.ghostTex = gl.createTexture()!;
+    gl.bindTexture(gl.TEXTURE_2D, this.ghostTex);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+    gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
   }
 
   /** Point the renderer at a song: palette hexes + a stable per-song seed. */
@@ -239,15 +297,64 @@ export class BackdropRenderer {
     const w = Math.max(2, Math.round(this.canvas.width * scale));
     const h = Math.max(2, Math.round(this.canvas.height * scale));
     if (this.rts && this.rts.a.w === w && this.rts.a.h === h) return;
-    if (this.rts) { disposeRT(gl, this.rts.a); disposeRT(gl, this.rts.ping); disposeRT(gl, this.rts.pong); }
-    this.rts = { a: createRT(gl, w, h), ping: createRT(gl, w, h), pong: createRT(gl, w, h) };
+    if (this.rts) for (const rt of Object.values(this.rts)) disposeRT(gl, rt);
+    this.rts = {
+      a: createRT(gl, w, h),
+      ping: createRT(gl, w, h),
+      pong: createRT(gl, w, h),
+      ghostPing: createRT(gl, w, h),
+      ghostPong: createRT(gl, w, h),
+    };
+  }
+
+  // Rasterize a dying word and stamp it into the ghost buffer (additive).
+  // Position/size arrive in viewport px; the buffer decays + rises per frame.
+  private stampGhost(g: WordGhost) {
+    const gl = this.gl;
+    const c = this.ghostCtx;
+    if (!c || !this.rts) return;
+    const W = this.ghostCanvas.width, H = this.ghostCanvas.height;
+    c.clearRect(0, 0, W, H);
+    c.fillStyle = "#fff";
+    c.textAlign = "center";
+    c.textBaseline = "middle";
+    c.shadowColor = "rgba(255,255,255,0.9)";
+    c.shadowBlur = 14;
+    let size = 132;
+    const text = g.word.toUpperCase();
+    do {
+      c.font = `900 ${size}px system-ui, sans-serif`;
+      size -= 12;
+    } while (c.measureText(text).width > W * 0.86 && size > 24);
+    c.fillText(text, W / 2, H / 2);
+    gl.bindTexture(gl.TEXTURE_2D, this.ghostTex);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true);
+    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, this.ghostCanvas);
+    gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, false);
+
+    // stamp quad: word height ≈ rendered font size (plus breathing room),
+    // width follows the canvas aspect so the glyphs keep their proportions
+    const vw = this.canvas.width, vh = this.canvas.height;
+    const hPx = Math.min(vh * 0.28, g.fs * 1.5);
+    const wPx = Math.min(vw * 0.7, hPx * (W / H));
+    const color = this.pal[fnv1a(g.word) % 2 === 0 ? 2 : 1];
+    gl.enable(gl.BLEND);
+    gl.blendFunc(gl.ONE, gl.ONE); // additive, premultiplied
+    this.stamp.use()
+      .v2("uOffset", (g.x / vw) * 2 - 1, -((g.y / vh) * 2 - 1))
+      .v2("uScale", wPx / vw, hPx / vh)
+      .v3("uColor", color[0], color[1], color[2])
+      .f("uAlpha", 0.85)
+      .tex("uText", this.ghostTex);
+    drawQuad(gl);
+    gl.disable(gl.BLEND);
   }
 
   render(F: EngineFeatures, renderScale = 0.5) {
     const gl = this.gl;
     this.resize(renderScale);
     if (!this.rts) return;
-    const { a, ping, pong } = this.rts;
+    const { a, ping, pong, ghostPing, ghostPong } = this.rts;
     // Anticipation: 0 far from a drop, →1 over the last 16 beats before a
     // measured riser resolves. Ground truth from the bus — the field knows
     // the drop is coming and holds its breath (time itself slows a little).
@@ -287,6 +394,18 @@ export class BackdropRenderer {
       .tex("uPrev", pong.tex);
     drawQuad(gl);
 
+    // ── word ghosts: decay + drift the buffer upward, then stamp this
+    // frame's dying words into it (still bound) ──
+    const ghostAmt = P.get("backdrop.ghosts");
+    bindRT(gl, ghostPing);
+    this.ghostDecay.use()
+      .f("uDecay", P.get("backdrop.ghostFade"))
+      .f("uRise", P.get("backdrop.ghostRise") * 0.0012)
+      .tex("uPrev", ghostPong.tex);
+    drawQuad(gl);
+    const dying = featureBus.drainGhosts(); // drain even while off — no backlog
+    if (ghostAmt > 0.001) for (const g of dying) this.stampGhost(g);
+
     bindRT(gl, null);
     this.post.use()
       .v2("uRes", this.canvas.width, this.canvas.height)
@@ -298,10 +417,13 @@ export class BackdropRenderer {
       .f("uSaturation", P.get("backdrop.saturation"))
       .f("uBrightness", P.get("backdrop.brightness"))
       .f("uDrop", drop)
-      .tex("uTex", ping.tex);
+      .f("uGhostAmt", ghostAmt)
+      .tex("uTex", ping.tex)
+      .tex("uGhost", ghostPing.tex);
     drawQuad(gl);
 
     [this.rts.ping, this.rts.pong] = [this.rts.pong, this.rts.ping];
+    [this.rts.ghostPing, this.rts.ghostPong] = [this.rts.ghostPong, this.rts.ghostPing];
   }
 
   dispose() {
@@ -309,6 +431,9 @@ export class BackdropRenderer {
     for (const s of this.scenes) s.dispose();
     this.trails.dispose();
     this.post.dispose();
-    if (this.rts) { disposeRT(gl, this.rts.a); disposeRT(gl, this.rts.ping); disposeRT(gl, this.rts.pong); this.rts = null; }
+    this.ghostDecay.dispose();
+    this.stamp.dispose();
+    gl.deleteTexture(this.ghostTex);
+    if (this.rts) { for (const rt of Object.values(this.rts)) disposeRT(gl, rt); this.rts = null; }
   }
 }

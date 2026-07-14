@@ -66,6 +66,16 @@ export interface EngineFeatures {
   wordPulse: number;
 }
 
+/** A word leaving the stage, headed for the backdrop's ghost buffer. */
+export interface WordGhost {
+  word: string;
+  /** center, viewport px */
+  x: number;
+  y: number;
+  /** rendered font size, px */
+  fs: number;
+}
+
 const F: EngineFeatures = {
   t: 0, dt: 0,
   drums: 0, bass: 0, voice: 0, choir: 0, bed: 0, level: 0,
@@ -78,6 +88,9 @@ const F: EngineFeatures = {
 
 let stems: StemData | null = null;
 let sections: PlanetSection[] = [];
+// Ghost hand-off: the stage pushes dying words, the backdrop drains them.
+// Hard cap so an unmounted backdrop can never grow the queue unbounded.
+const ghosts: WordGhost[] = [];
 let beatIdx = 0;          // walking pointer into stems.beats (scrub-safe)
 let lastT = -1;
 let lastWholeBeat = Number.NaN; // NaN = no beat seen yet (beats can be negative in intros)
@@ -96,6 +109,7 @@ export const featureBus = {
   setSong(nextStems: StemData | null, nextSections: PlanetSection[] | undefined) {
     stems = nextStems;
     sections = nextSections ?? [];
+    ghosts.length = 0;
     beatIdx = 0;
     lastT = -1;
     lastWholeBeat = Number.NaN;
@@ -123,6 +137,18 @@ export const featureBus = {
     if (w > 0) F.wordX = Math.min(1, Math.max(0, xPx / w));
     if (h > 0) F.wordY = Math.min(1, Math.max(0, yPx / h));
     F.wordPulse = 1;
+  },
+
+  /** A word just left the stage — offer it to the ghost buffer. */
+  pushGhost(g: WordGhost) {
+    if (!g.word) return;
+    if (ghosts.length >= 6) ghosts.shift();
+    ghosts.push(g);
+  },
+  /** Backdrop-side: take everything queued this frame. */
+  drainGhosts(): WordGhost[] {
+    if (!ghosts.length) return ghosts;
+    return ghosts.splice(0, ghosts.length);
   },
 
   /** Once per frame, from the master rAF, with the song playhead. */
