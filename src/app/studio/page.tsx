@@ -7,7 +7,7 @@
 // A/B deck chips, the self-building param panel, and a deck strip along the
 // bottom. Embed behavior (the Planet Studio WebView) is unchanged.
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
@@ -20,6 +20,12 @@ import { customScenes } from "@/lib/engine/customScenes";
 import { featureBus } from "@/lib/engine/features";
 import { deckInfo } from "@/lib/engine/backdrop";
 import { P } from "@/lib/engine/params";
+import { themeStore } from "@/lib/themeStore";
+import { BottomSheet, type SheetSnap } from "@/components/mobile/BottomSheet";
+import { XYPad } from "@/components/mobile/XYPad";
+import { VibeDial } from "@/components/mobile/VibeDial";
+import { LookStrip } from "@/components/mobile/LookStrip";
+import { useStageGestures } from "@/lib/useStageGestures";
 import { supabase } from "@/lib/supabase";
 import { isPrivateHost } from "@/lib/privateHost";
 import type { Track } from "@/data/tracks";
@@ -34,13 +40,10 @@ const PASSES = [
 ];
 
 type Workspace = "SHOW" | "DIRECT" | "SETUP";
-type Sheet = "LOOKS" | "SCENES" | "PARAMS" | "DECK";
-const SHEET_TABS: { id: Sheet; icon: string; label: string }[] = [
-  { id: "LOOKS", icon: "✦", label: "Looks" },
-  { id: "SCENES", icon: "◫", label: "Scenes" },
-  { id: "PARAMS", icon: "⚙", label: "Params" },
-  { id: "DECK", icon: "▣", label: "Deck" },
-];
+// The pocket instrument's sheet tabs (mobile v2): PLAY = deck + automation,
+// XY = the two-param performance pad, DIAL = looks as a rotary, MORE = depth.
+type PocketTab = "PLAY" | "XY" | "DIAL" | "MORE";
+const POCKET_TABS: PocketTab[] = ["PLAY", "XY", "DIAL", "MORE"];
 const SCENE_SWATCH: Record<string, string> = {
   AURORA: "linear-gradient(120deg,#0a1e33,#155e75,#0a1e33)",
   EMBERS: "radial-gradient(circle at 60% 50%,#7f1d1d,#2d0a14)",
@@ -325,14 +328,83 @@ function AutomationCluster() {
   );
 }
 
+// ── The telemetry jewel (mobile top bar): one dot breathing on --beat + BPM.
+// Perf-lite scopes the global --beat write to the stage subtree, so the
+// jewel mirrors themeStore's JS beat onto itself — it breathes everywhere.
+// Tap it and the full compact telemetry row takes the spot for 4 seconds.
+function BeatJewel({ className = "" }: { className?: string }) {
+  const [full, setFull] = useState(false);
+  const [bpm, setBpm] = useState("—");
+  const timer = useRef(0);
+  const dotRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const id = window.setInterval(() => {
+      const b = featureBus.F.bpm;
+      setBpm(b > 0 ? b.toFixed(0) : "—");
+    }, 500);
+    return () => window.clearInterval(id);
+  }, []);
+  useEffect(() => {
+    if (full) return;
+    let raf = 0;
+    const tickBeat = () => {
+      dotRef.current?.style.setProperty("--beat", themeStore.get().beat.toFixed(3));
+      raf = requestAnimationFrame(tickBeat);
+    };
+    raf = requestAnimationFrame(tickBeat);
+    return () => cancelAnimationFrame(raf);
+  }, [full]);
+  useEffect(() => () => window.clearTimeout(timer.current), []);
+  if (full) {
+    return (
+      <button
+        type="button"
+        aria-label="Hide telemetry"
+        onClick={() => { window.clearTimeout(timer.current); setFull(false); }}
+        className={`flex ${className}`}
+      >
+        <KineticTelemetry compact />
+      </button>
+    );
+  }
+  return (
+    <button
+      ref={dotRef}
+      type="button"
+      aria-label="Show telemetry"
+      onClick={() => {
+        setFull(true);
+        window.clearTimeout(timer.current);
+        timer.current = window.setTimeout(() => setFull(false), 4000);
+      }}
+      className={`flex min-h-[36px] items-center gap-2 ${className}`}
+      data-beat-jewel
+    >
+      <span
+        aria-hidden
+        className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--inst-signal)]"
+        style={{ transform: "scale(calc(1 + var(--beat) * 0.6))" }}
+      />
+      <span className="font-mono text-[11px] tabular-nums text-[var(--inst-plasma)]">
+        {bpm}<span className="ml-1 text-[8px] uppercase tracking-[0.22em] text-[var(--inst-dim)]">bpm</span>
+      </span>
+    </button>
+  );
+}
+
 export default function StudioPage() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
   const [pass, setPass] = useState(5);
   const [mode, setMode] = useState<StageMode>("phrase");
   const [ws, setWs] = useState<Workspace>("DIRECT");
-  // The pocket instrument: which bottom sheet is up (mobile only).
-  const [sheet, setSheet] = useState<Sheet | null>(null);
+  // The pocket instrument (mobile only): sheet tab + snap, and the two
+  // matchMedia facts that pick the chrome — coarse pointer (gestures) and
+  // landscape-coarse (the mini-desktop rails instead of the sheet).
+  const [tab, setTab] = useState<PocketTab>("PLAY");
+  const [snap, setSnap] = useState<SheetSnap>("peek");
+  const [coarse, setCoarse] = useState(false);
+  const [mobileLandscape, setMobileLandscape] = useState(false);
   const [embed, setEmbed] = useState(false);
   const [ownerHost, setOwnerHost] = useState(false);
   const [wantDraft, setWantDraft] = useState(false);
@@ -365,6 +437,17 @@ export default function StudioPage() {
     const m = q.get("mode") as StageMode | null;
     if (m && MODES.some((x) => x.id === m)) setMode(m);
   }, []);
+  // pointer/orientation facts, kept live (fold a phone, rotate a tablet…)
+  useEffect(() => {
+    const mqCoarse = window.matchMedia("(pointer: coarse)");
+    const mqLand = window.matchMedia("(orientation: landscape) and (pointer: coarse)");
+    const sync = () => { setCoarse(mqCoarse.matches); setMobileLandscape(mqLand.matches); };
+    sync();
+    mqCoarse.addEventListener("change", sync);
+    mqLand.addEventListener("change", sync);
+    return () => { mqCoarse.removeEventListener("change", sync); mqLand.removeEventListener("change", sync); };
+  }, []);
+
   const pickWs = (w: Workspace) => { setWs(w); localStorage.setItem("x1c7-studio-ws", w); };
   const pickMode = (m: StageMode) => { setMode(m); localStorage.setItem("x1c7-lyric-style", m); };
 
@@ -404,6 +487,16 @@ export default function StudioPage() {
   const analysis = currentTrack?.planet?.analysis;
   const live = canPerform(currentTrack);
   const direct = ws === "DIRECT" && live && !embed;
+
+  // stage-background gestures (mobile): swipe ←/→ pins prev/next scene,
+  // two-finger tap releases to AUTO, swipe ↑/↓ nudges intensity.
+  const { attach: attachStageGestures, toast: gestureToast } = useStageGestures(coarse && live && !embed);
+  const pickTab = (t: PocketTab) => {
+    if (t === tab && snap !== "peek") { setSnap("peek"); return; } // re-tap the live tab = drop
+    setTab(t);
+    if (t === "MORE") setSnap("full"); // depth wants the whole sheet
+    else if (snap === "peek") setSnap("half");
+  };
 
   // ── SETUP body (also the pre-launch view: pick, then perform) ─────────────
   const setupBody = (
@@ -489,7 +582,7 @@ export default function StudioPage() {
             ))}
           </div>
           <KineticTelemetry className="ml-auto hidden md:flex" />
-          <KineticTelemetry compact className="ml-auto md:hidden" />
+          <BeatJewel className="ml-auto md:hidden" />
           {/* mobile: one ⚙ toggles the setup card over the stage */}
           <button
             onClick={() => pickWs(ws === "SETUP" ? "DIRECT" : "SETUP")}
@@ -521,57 +614,98 @@ export default function StudioPage() {
                 <ScenesRail />
               </aside>
             )}
-            <div className="relative min-w-0 flex-1 overflow-hidden">
+            {/* landscape phone = mini-desktop: the same rails, thumb-width */}
+            {mobileLandscape && (
+              <aside
+                className="z-10 flex w-[180px] flex-none flex-col gap-5 overflow-y-auto border-r border-[var(--inst-line)] p-3 pt-16 md:hidden"
+                style={{ background: "rgba(12,8,22,0.92)", paddingBottom: "calc(var(--player-h) + 12px)" }}
+              >
+                <LooksPads />
+                <ScenesRail />
+              </aside>
+            )}
+            <div
+              ref={(el) => { attachStageGestures(el); }}
+              className="relative min-w-0 flex-1 overflow-hidden"
+            >
               <KineticStage track={currentTrack!} pass={pass} mode={mode} forceBackdrop />
+              {/* gesture toast — the swipe's answer, worn near the top of the stage */}
+              {gestureToast && (
+                <div
+                  className="pointer-events-none absolute left-1/2 top-4 z-20 -translate-x-1/2 whitespace-nowrap rounded-full border border-[var(--inst-line)] px-3 py-1 font-mono text-[9px] uppercase tracking-[0.25em] text-[var(--inst-plasma)] md:hidden"
+                  style={{ background: "rgba(12,8,22,0.92)" }}
+                  data-gesture-toast
+                >{gestureToast}</div>
+              )}
             </div>
             {direct && (
               <aside className="z-10 hidden w-[300px] flex-none overflow-y-auto border-l border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] backdrop-blur-md md:block">
                 <KineticParamPanel groups={["BACKDROP", "LFO 1", "LFO 2", "LFO 3", "FOLLOW 1", "FOLLOW 2", "FOLLOW 3"]} className="rounded-none border-0 bg-transparent" />
               </aside>
             )}
+            {mobileLandscape && (
+              <aside
+                className="z-10 block w-[260px] flex-none overflow-y-auto border-l border-[var(--inst-line)] md:hidden"
+                style={{ background: "rgba(12,8,22,0.92)", paddingBottom: "calc(var(--player-h) + 12px)" }}
+              >
+                <KineticParamPanel touch groups={["BACKDROP", "LFO 1", "FOLLOW 1"]} className="rounded-none border-0 bg-transparent backdrop-blur-none" />
+              </aside>
+            )}
           </div>
           {direct && <div className="relative z-10 hidden flex-none pb-[76px] md:block"><DeckStrip /></div>}
           {ws === "SHOW" && <div className="hidden h-[76px] flex-none md:block" />}
 
-          {/* ── THE POCKET INSTRUMENT (mobile) ── thumb tab bar + bottom sheets */}
-          {live && !embed && (
-            <>
-              {sheet && (
-                <button
-                  aria-label="Close sheet"
-                  onClick={() => setSheet(null)}
-                  className="fixed inset-0 z-30 bg-black/45 md:hidden"
-                />
-              )}
-              {sheet && (
-                <div className="fixed inset-x-0 bottom-[calc(var(--player-h)+52px)] z-40 max-h-[58dvh] overflow-hidden rounded-t-2xl border-x border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_94%,transparent)] backdrop-blur-xl md:hidden">
-                  <button onClick={() => setSheet(null)} aria-label="Close" className="flex w-full justify-center py-2.5">
-                    <span className="h-1 w-10 rounded-full bg-[var(--inst-line)]" />
-                  </button>
-                  <div className="max-h-[calc(58dvh-56px)] overflow-y-auto px-4 pb-6">
-                    {sheet === "LOOKS" && <LooksPads />}
-                    {sheet === "SCENES" && <ScenesRail />}
-                    {sheet === "PARAMS" && (
-                      <KineticParamPanel touch groups={["BACKDROP", "LFO 1", "FOLLOW 1"]} className="rounded-none border-0 bg-transparent p-0 backdrop-blur-none" />
-                    )}
-                    {sheet === "DECK" && <DeckStrip bare />}
+          {/* ── THE POCKET INSTRUMENT v2 (mobile portrait) ──
+              LookStrip riding above the sheet's peek; one draggable
+              BottomSheet with PLAY · XY · DIAL · MORE. Landscape phones
+              get the mini-desktop rails above instead. */}
+          {live && !embed && !mobileLandscape && (
+            <div className="md:hidden">
+              <div
+                className="fixed inset-x-0 z-30"
+                style={{ bottom: "calc(var(--player-h) + 72px)" }}
+              >
+                <LookStrip />
+              </div>
+              <BottomSheet
+                snap={snap}
+                onSnap={setSnap}
+                peek={
+                  <div className="px-3">
+                    <div className="flex h-[46px] w-full overflow-hidden rounded-lg border border-[var(--inst-line)]">
+                      {POCKET_TABS.map((t) => (
+                        <button
+                          key={t}
+                          onClick={() => pickTab(t)}
+                          className="min-h-full min-w-[52px] flex-1 border-l border-[var(--inst-line)] font-mono text-[9px] uppercase tracking-[0.25em] first:border-l-0"
+                          style={tab === t && snap !== "peek"
+                            ? { color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 7%, transparent)" }
+                            : { color: "var(--inst-dim)" }}
+                          data-pocket-tab={t}
+                        >{t}</button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-              <nav className="fixed inset-x-0 bottom-player z-40 grid grid-cols-4 border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_92%,transparent)] backdrop-blur-md md:hidden">
-                {SHEET_TABS.map((t) => (
-                  <button
-                    key={t.id}
-                    onClick={() => setSheet((x) => (x === t.id ? null : t.id))}
-                    className="flex min-h-[52px] flex-col items-center justify-center gap-0.5"
-                    style={sheet === t.id ? { color: "var(--inst-plasma)" } : { color: "var(--inst-dim)" }}
-                  >
-                    <span className="text-base leading-none">{t.icon}</span>
-                    <span className="font-mono text-[8px] uppercase tracking-[0.25em]">{t.label}</span>
-                  </button>
-                ))}
-              </nav>
-            </>
+                }
+              >
+                {(s) => (
+                  // below peek the body is off-screen — skip the heavy children
+                  s === "peek" ? null : (
+                    <div className="pt-3">
+                      {tab === "PLAY" && <DeckStrip bare />}
+                      {tab === "XY" && <XYPad />}
+                      {tab === "DIAL" && <VibeDial className="pt-2" />}
+                      {tab === "MORE" && (
+                        <div className="flex flex-col gap-5">
+                          <ScenesRail />
+                          <KineticParamPanel touch groups={["BACKDROP", "LFO 1", "FOLLOW 1"]} className="rounded-none border-0 bg-transparent p-0 backdrop-blur-none" />
+                        </div>
+                      )}
+                    </div>
+                  )
+                )}
+              </BottomSheet>
+            </div>
           )}
         </>
       )}
