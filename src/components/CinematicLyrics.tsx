@@ -8,6 +8,7 @@ import { useMusicPlayer } from "./MusicPlayerContext";
 import { parseLyrics, activeIndex, headerLabel, type ParsedLine } from "@/lib/lyrics";
 import { uiStore } from "@/lib/uiStore";
 import { KineticStage, canPerform, MODES, type StageMode } from "./KineticStage";
+import { KineticTelemetry } from "./KineticTelemetry";
 import { LabStage, LAB_MODES, type LabMode } from "./LabStage";
 import { StemMixer } from "./StemMixer";
 import { StemLens } from "./StemLens";
@@ -202,9 +203,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               "linear-gradient(160deg, var(--theme-bg), #05030b)",
           }}
         >
-          {/* Player chrome — a glassy title bar lifted above the stage (z-[60] >
-              the stage's z-40 layers) so its controls are never blocked. */}
-          <div className="relative z-[60] flex items-center justify-between gap-2 border-b border-white/10 bg-black/40 px-3 py-2.5 backdrop-blur-md sm:px-8 sm:py-3">
+          {/* Player chrome — THE INSTRUMENT BAR (UI overhaul phase 3): identity,
+              a proper segmented control, live measured telemetry, transport.
+              Instrument tokens; z-[60] > the stage's z-40 layers. */}
+          <div className="relative z-[60] flex items-center justify-between gap-2 border-b border-[var(--inst-line)] px-3 py-2.5 backdrop-blur-md sm:px-8 sm:py-3" style={{ background: "color-mix(in srgb, var(--inst-s1) 82%, transparent)" }}>
             <div className="min-w-0">
               <p className="truncate font-display text-base font-black uppercase tracking-tight text-white sm:text-lg">{track.title}</p>
               <p className="truncate font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>
@@ -212,20 +214,22 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               </p>
             </div>
             <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
-              {/* View controls — phase + mode as one prominent segmented control
-                  (the owner's most-used knobs; enlarged, accented, always on top). */}
+              {/* Live telemetry — the decoration only a measured song can wear:
+                  real BPM, detected key, section tier, the beat itself. */}
+              {performs && <KineticTelemetry compact className="hidden md:flex md:pr-2" />}
+              {/* View controls — phase + mode as one segmented control. */}
               {performs && (
-                <div className="flex items-center gap-1 rounded-2xl border border-white/15 bg-white/[0.06] p-1">
+                <div className="flex items-center overflow-hidden rounded-md border border-[var(--inst-line)]" style={{ background: "var(--inst-s2)" }}>
                   {pass >= 3 && (
                     <button onClick={cycleMode} title="Viewing style — Dynamic / Focus / Phrase. Tap to cycle."
-                      className="rounded-xl px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider text-white/75 transition hover:bg-white/10 hover:text-white">
+                      className="px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-[var(--inst-dim)] transition hover:text-white">
                       {MODES.find((m) => m.id === mode)?.label}
                     </button>
                   )}
                   <button onClick={() => setPass((p) => (p > 1 ? p - 1 : MAX_PASS))}
                     title="Phase — every major upgrade of the show, preserved. Tap to switch. Phase 6 = DYNAMIC+, the LLM-choreographed showcase."
-                    className="rounded-xl px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider text-white transition"
-                    style={{ background: "color-mix(in srgb, var(--theme-primary) 22%, transparent)", boxShadow: "inset 0 0 0 1px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
+                    className="border-l border-[var(--inst-line)] px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider transition"
+                    style={{ background: "color-mix(in srgb, var(--inst-plasma) 88%, white)", color: "#001016" }}>
                     {pass >= 6 ? "⚡ Dynamic+" : `🌙 Phase ${pass}`}
                   </button>
                 </div>
@@ -235,10 +239,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               {performs && hasStems && (
                 <div className="group relative shrink-0">
                   <button onClick={() => setMixerOpen((v) => !v)} aria-label="Stems — the live instrument mixer"
-                    className="flex items-center gap-1.5 rounded-full border px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider transition hover:scale-[1.03]"
+                    className="flex items-center gap-1.5 rounded-md border px-3 py-2 font-mono text-[11px] uppercase tracking-wider transition hover:scale-[1.03]"
                     style={stemMix.active || mixerOpen || lensArmed
-                      ? { borderColor: "var(--theme-secondary)", color: "var(--theme-secondary)", background: "color-mix(in srgb, var(--theme-secondary) 14%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--theme-secondary) 50%, transparent)" }
-                      : { borderColor: "color-mix(in srgb, var(--theme-secondary) 40%, transparent)", color: "var(--theme-secondary)" }}>
+                      ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 12%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--inst-plasma) 45%, transparent)" }
+                      : { borderColor: "var(--inst-line)", color: "var(--inst-plasma)", background: "var(--inst-s2)" }}>
                     <span className="text-sm leading-none">🎚</span>
                     <span className="hidden sm:inline">{stemMix.active ? "Stems ✦" : "Stems"}</span>
                   </button>
@@ -252,10 +256,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               {performs && (
                 <div className="group relative shrink-0">
                   <button onClick={() => setReactorOpen((v) => !v)} aria-label="The Reactor — experimental modes"
-                    className="flex items-center gap-1.5 rounded-full border px-3 py-2 font-mono text-[11px] font-bold uppercase tracking-wider transition hover:scale-[1.03]"
+                    className="flex items-center gap-1.5 rounded-md border px-3 py-2 font-mono text-[11px] uppercase tracking-wider transition hover:scale-[1.03]"
                     style={labMode || reactorOpen
-                      ? { borderColor: "var(--theme-primary)", color: "var(--theme-primary)", background: "color-mix(in srgb, var(--theme-primary) 14%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--theme-primary) 50%, transparent)" }
-                      : { borderColor: "color-mix(in srgb, var(--theme-primary) 40%, transparent)", color: "var(--theme-primary)" }}>
+                      ? { borderColor: "var(--inst-signal)", color: "var(--inst-signal)", background: "color-mix(in srgb, var(--inst-signal) 12%, transparent)", boxShadow: "0 0 14px color-mix(in srgb, var(--inst-signal) 45%, transparent)" }
+                      : { borderColor: "var(--inst-line)", color: "var(--inst-signal)", background: "var(--inst-s2)" }}>
                     <motion.span animate={{ rotate: 360 }} transition={{ duration: 6, repeat: Infinity, ease: "linear" }} className="text-sm leading-none">⚛</motion.span>
                     <span className="hidden sm:inline">{labMode ? "Reactor ✦" : "Reactor"}</span>
                   </button>
@@ -267,7 +271,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               )}
               {/* Transport */}
               <button onClick={prev} aria-label="Previous song" title="Previous song (←)"
-                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
+                className="grid h-9 w-9 place-items-center rounded-full border border-[var(--inst-line)] bg-[var(--inst-s2)] text-white/70 transition hover:scale-105 hover:border-[var(--inst-plasma)] hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z" /></svg>
               </button>
               <button onClick={togglePlay} aria-label={isPlaying ? "Pause" : "Play"}
@@ -277,7 +281,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                   : <svg width="14" height="14" viewBox="0 0 24 24" fill="#05030b"><path d="M8 5v14l11-7z" /></svg>}
               </button>
               <button onClick={next} aria-label="Next song" title="Next song (→)"
-                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
+                className="grid h-9 w-9 place-items-center rounded-full border border-[var(--inst-line)] bg-[var(--inst-s2)] text-white/70 transition hover:scale-105 hover:border-[var(--inst-plasma)] hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 6h2v12h-2zM6 18l8.5-6L6 6z" /></svg>
               </button>
               {/* The playlist — secondary; hidden on the tightest phones. */}
@@ -287,7 +291,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               </button>
               {/* Minimize — drop back to the page; the music keeps playing */}
               <button onClick={onClose} aria-label="Minimize — music keeps playing" title="Minimize (Esc) — music keeps playing"
-                className="grid h-9 w-9 place-items-center rounded-full border border-white/20 text-white/70 transition hover:scale-105 hover:text-white sm:h-10 sm:w-10">
+                className="grid h-9 w-9 place-items-center rounded-full border border-[var(--inst-line)] bg-[var(--inst-s2)] text-white/70 transition hover:scale-105 hover:border-[var(--inst-plasma)] hover:text-white sm:h-10 sm:w-10">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6" /></svg>
               </button>
             </div>
@@ -306,7 +310,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             onClick={() => { pause(); onClose(); }}
             aria-label="End the show — stops the music"
             style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
-            className="absolute right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-red-400/70 hover:text-red-200">
+            className="absolute right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-[var(--inst-signal)] hover:text-[var(--inst-signal)]">
             ✕ <span>End show</span>
           </motion.button>
 
