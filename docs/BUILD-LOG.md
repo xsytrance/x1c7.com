@@ -7,6 +7,23 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (IX) — The studio opens to everyone
+
+Second owner's call, minutes after the password door shipped: "hell yeah
+lets open it." The velvet rope came off — /studio left the proxy gate
+entirely (the password code lived for one commit; honest history). Safe
+because everything on the page is client-side and per-visitor (looks and
+shaders in the visitor's own localStorage; drafts host-gated inside the
+page), while the WRITE APIs stay tailnet-only, same as always. The DIRECT
+rails hide below md so phones get the clean SHOW view.
+
+Signage: /music's hero grew "🎛 The Studio — direct the shows yourself";
+the Kinetica demo landing grew a "want the full instrument?" card linking
+x1c7.com/studio. Verified under VERCEL=1: /studio serves the real page
+(no unlock form), /api/studio still 404s, the /music link renders.
+
+---
+
 ## 2026-07-14 (VIII) — The studio gets a public door (owner's call)
 
 The owner wants the studio ON the live site. The proxy grew a password

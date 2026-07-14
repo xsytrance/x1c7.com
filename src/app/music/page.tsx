@@ -6,6 +6,7 @@
 // Mobile: full-bleed snap deck, tap to preview, tap again to play.
 
 import { useEffect, useMemo, useState } from "react";
+import Link from "next/link";
 import { BackToHub } from "@/components/BackToHub";
 import { TextScramble } from "@/components/TextScramble";
 import { AudioVisualizer } from "@/components/AudioVisualizer";
@@ -89,6 +90,18 @@ export default function Page() {
           <span><b className="text-white/80">{stats.shows}</b> full shows</span>
           {stats.words > 0 && <span><b className="text-white/80">{stats.words.toLocaleString()}</b> synced words</span>}
           {stats.stems > 0 && <span><b className="text-white/80">{stats.stems}</b> live stems</span>}
+        </div>
+        {/* THE STUDIO — the instrument, open to everyone (2026-07-14). Direct
+            the shows yourself: looks, scenes, automation, your own shaders. */}
+        <div className="mt-5 flex items-center justify-center">
+          <Link
+            href="/studio"
+            className="group inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.22em] transition hover:scale-[1.03]"
+            style={{ borderColor: "color-mix(in srgb, var(--inst-plasma, #43f7ff) 45%, transparent)", color: "var(--inst-plasma, #43f7ff)", background: "color-mix(in srgb, var(--inst-plasma, #43f7ff) 7%, transparent)" }}
+          >
+            🎛 The Studio <span className="text-white/45 normal-case tracking-normal">— direct the shows yourself</span>
+            <span className="transition group-hover:translate-x-0.5">→</span>
+          </Link>
         </div>
         <div className="mx-auto mt-6 max-w-md">
           <input

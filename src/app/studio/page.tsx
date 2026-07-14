@@ -418,7 +418,7 @@ export default function StudioPage() {
           <div className="relative z-10 flex min-h-0 flex-1">
             {direct && (
               // pt-20 clears the site's fixed BEAT badge, which floats top-left
-              <aside className="z-10 flex w-[212px] flex-none flex-col gap-5 overflow-y-auto border-r border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-3 pt-20 backdrop-blur-md">
+              <aside className="z-10 hidden w-[212px] flex-none flex-col gap-5 overflow-y-auto border-r border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-3 pt-20 backdrop-blur-md md:flex">
                 <LooksPads />
                 <ScenesRail />
               </aside>
@@ -427,12 +427,12 @@ export default function StudioPage() {
               <KineticStage track={currentTrack!} pass={pass} mode={mode} />
             </div>
             {direct && (
-              <aside className="z-10 w-[300px] flex-none overflow-y-auto border-l border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] backdrop-blur-md">
+              <aside className="z-10 hidden w-[300px] flex-none overflow-y-auto border-l border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] backdrop-blur-md md:block">
                 <KineticParamPanel groups={["BACKDROP", "LFO 1", "LFO 2", "LFO 3", "FOLLOW 1", "FOLLOW 2", "FOLLOW 3"]} className="rounded-none border-0 bg-transparent" />
               </aside>
             )}
           </div>
-          {direct && <div className="relative z-10 flex-none pb-[76px]"><DeckStrip /></div>}
+          {direct && <div className="relative z-10 hidden flex-none pb-[76px] md:block"><DeckStrip /></div>}
           {ws === "SHOW" && <div className="h-[76px] flex-none" />}
         </>
       )}
