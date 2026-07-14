@@ -1,18 +1,20 @@
 {
   "v": 1,
-  "updated": "2026-07-14",
-  "note": "Songs whose LYRICS (not timings) need the owner. Measured, not guessed: silence-rate = words the aligner had to place where nobody sings; unofficial = whisper-derived text, never confirmed. Submit fixes via the Studio SETUP → Lyrics Inbox (tailnet) — then run: node scripts/alignment/realign-inbox.mjs",
+  "updated": "2026-07-14T2",
+  "note": "Songs whose LYRICS (not timings) need the owner. Measured, not guessed. Submit fixes via the Studio SETUP → Lyrics Inbox (tailnet) — then run: node scripts/alignment/realign-inbox.mjs",
   "flagged": [
-    { "id": "music-is-my-drug", "reason": "text is whisper garbage — 20 words of 'Thank you.' repeated; song currently pulled", "severity": "missing" },
-    { "id": "say-it-with-your-body", "reason": "official text mismatches the audio — 22% of words land in vocal silence even after re-align", "severity": "wrong" },
-    { "id": "one-more-breath-back-to-myself", "reason": "official text is only 121 tokens for a 253s song — likely missing verses; re-aligned + live but heavy echo-clumping suggests incomplete text", "severity": "verify" },
-    { "id": "red-flags-from-the-beginning", "reason": "re-align couldn't improve 0.38s mean onset error — parts of the text likely differ from what's sung", "severity": "verify" },
-    { "id": "music-is-my-drug-rooklyn-mix", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
-    { "id": "heaven-hell-honey-venom-remix", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
-    { "id": "going-crazy-hiligaynon-fusion-mix", "reason": "unofficial (whisper-derived) text — Hiligaynon may also need the MMS fallback aligner", "severity": "unofficial" },
-    { "id": "whistle-on-the-river", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
-    { "id": "another-year-looks-good-on-you-happy-birthday-song", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
-    { "id": "light-it-myself", "reason": "unofficial text that happens to perform well (82% melody coverage) — confirm it when convenient", "severity": "unofficial" }
+    { "id": "say-it-with-your-body", "reason": "REDIAGNOSED: both the old text AND your new text fail the same way (11–22% of words in vocal silence) — this is probably a STEM problem, not a text problem: the published lead stem likely mismatches the release mix. Needs a listen / stem re-publish.", "severity": "stem-mismatch" },
+    { "id": "light-it-myself", "reason": "your text aligned to only 246 words but the song sings ~600 — the sheet likely writes each chorus once. Paste the FULL sung text (repeat the choruses as they repeat) and resubmit; the gate held the short version.", "severity": "incomplete-text" },
+    { "id": "another-year-looks-good-on-you-happy-birthday-song", "reason": "your lyrics are saved and waiting — the song has no published lead stem to align against. Publish its Suno stems (publish-stems.mjs) and re-run the inbox.", "severity": "awaiting-stems" },
+    { "id": "music-is-my-drug-rooklyn-mix", "reason": "your lyrics are saved and waiting — no published lead stem. Publish its Suno stems and re-run the inbox.", "severity": "awaiting-stems" }
+  ],
+  "fixed": [
+    { "id": "music-is-my-drug", "was": "whisper garbage (20 words)", "now": "309 words @ 0.134s — un-hide candidate" },
+    { "id": "one-more-breath-back-to-myself", "was": "36 broken words @ 2.4s", "now": "121 words @ 0.158s on your official text" },
+    { "id": "going-crazy-hiligaynon-fusion-mix", "was": "unofficial", "now": "0.009s on your text (Hiligaynon aligned clean)" },
+    { "id": "heaven-hell-honey-venom-remix", "was": "unofficial", "now": "0.047s on your text" },
+    { "id": "whistle-on-the-river", "was": "unofficial", "now": "0.018s on your text" },
+    { "id": "red-flags-from-the-beginning", "was": "suspect text", "now": "your text applied; 0.38s is this song's floor (dense delivery) — best achievable" }
   ],
   "instrumentals": ["ai-interlude", "feverbreak"]
 }
