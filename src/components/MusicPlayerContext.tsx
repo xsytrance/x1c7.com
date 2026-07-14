@@ -100,6 +100,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     };
 
     const audio = new Audio();
+    audio.setAttribute("playsinline", ""); // iOS: never hijack into fullscreen
     audio.preload = "metadata";
     audio.crossOrigin = "anonymous";
     audio.volume = volumeRef.current;
@@ -152,6 +153,7 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
       setAnalyser(null);
 
       const plain = new Audio();
+      plain.setAttribute("playsinline", "");
       plain.preload = "metadata";
       plain.volume = volumeRef.current;
       audioRef.current = plain;

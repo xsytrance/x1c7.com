@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ParticleField } from "@/components/ParticleField";
@@ -17,6 +17,15 @@ import { ThemeEngine } from "@/components/NowPlayingTheme";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+
+// viewport-fit=cover is what makes env(safe-area-inset-*) return real values
+// on iPhone — without it every safe-area rule in the codebase evaluates to 0.
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: "#05030b",
+};
 
 export const metadata: Metadata = {
   title: { default: "x1c7", template: "%s | x1c7" },

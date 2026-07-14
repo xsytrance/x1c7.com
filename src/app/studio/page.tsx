@@ -541,7 +541,7 @@ export default function StudioPage() {
                 />
               )}
               {sheet && (
-                <div className="fixed inset-x-0 bottom-[128px] z-40 max-h-[58dvh] overflow-hidden rounded-t-2xl border-x border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_94%,transparent)] backdrop-blur-xl md:hidden">
+                <div className="fixed inset-x-0 bottom-[calc(var(--player-h)+52px)] z-40 max-h-[58dvh] overflow-hidden rounded-t-2xl border-x border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_94%,transparent)] backdrop-blur-xl md:hidden">
                   <button onClick={() => setSheet(null)} aria-label="Close" className="flex w-full justify-center py-2.5">
                     <span className="h-1 w-10 rounded-full bg-[var(--inst-line)]" />
                   </button>
@@ -555,7 +555,7 @@ export default function StudioPage() {
                   </div>
                 </div>
               )}
-              <nav className="fixed inset-x-0 bottom-[76px] z-40 grid grid-cols-4 border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_92%,transparent)] backdrop-blur-md md:hidden">
+              <nav className="fixed inset-x-0 bottom-player z-40 grid grid-cols-4 border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_92%,transparent)] backdrop-blur-md md:hidden">
                 {SHEET_TABS.map((t) => (
                   <button
                     key={t.id}

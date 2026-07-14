@@ -59,8 +59,17 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  /* iPhone notch/home-indicator insets — live values only because layout.tsx
+     exports viewport-fit=cover. --player-h is the single source of truth for
+     "how tall is the player bar really" (fixed chrome stacks above it). */
+  --safe-t: env(safe-area-inset-top, 0px);
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --player-h: calc(76px + var(--safe-b));
+}
+
 body {
-  min-height: 100vh;
+  min-height: 100dvh; /* dvh: no iOS URL-bar jump */
   margin: 0;
   overflow-x: hidden;
   background: var(--bg);

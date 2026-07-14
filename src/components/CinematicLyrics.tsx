@@ -216,7 +216,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
           {/* Player chrome — THE INSTRUMENT BAR (UI overhaul phase 3): identity,
               a proper segmented control, live measured telemetry, transport.
               Instrument tokens; z-[60] > the stage's z-40 layers. */}
-          <div className="relative z-[60] flex items-center justify-between gap-2 border-b border-[var(--inst-line)] px-3 py-2.5 backdrop-blur-md sm:px-8 sm:py-3" style={{ background: "color-mix(in srgb, var(--inst-s1) 82%, transparent)" }}>
+          <div className="relative z-[60] flex items-center justify-between gap-2 border-b border-[var(--inst-line)] px-3 py-2.5 pt-[max(0.625rem,var(--safe-t))] backdrop-blur-md sm:px-8 sm:py-3" style={{ background: "color-mix(in srgb, var(--inst-s1) 82%, transparent)" }}>
             <div className="min-w-0">
               <p className="truncate font-display text-base font-black uppercase tracking-tight text-white sm:text-lg">{track.title}</p>
               <p className="truncate font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>

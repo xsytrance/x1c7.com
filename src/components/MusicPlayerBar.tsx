@@ -39,7 +39,7 @@ export function MusicPlayerBar() {
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 100, opacity: 0 }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-void/90 backdrop-blur-xl"
+        className="fixed bottom-0 left-0 right-0 z-50 border-t border-white/10 bg-void/90 pb-safe-b backdrop-blur-xl"
       >
         {/* Progress bar */}
         <div
