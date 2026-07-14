@@ -150,8 +150,9 @@ const MP3_FILES = [
   "Heaven & Hell (Honey & Venom Remix)", "Honey N Venom (Rude Wine Riddim)", "I Don't Quit Right Now",
   "I Said No!", "In Love With The Party", "Light It Myself (불은 내가)", "Low Lights Tokyo _ 君がいないNight",
   "Membrane Still Insane", "Mi Gente", "Move Over (Minimal Groove Mix)", "Music Is My Drug (Rooklyn Mix)",
-  // "Music Is My Drug" + "One More Breath [Back To Myself]" pulled 2026-07-13 —
-  // word timings are broken (20/36 words); restore once re-aligned from stems.
+  // Restored 2026-07-14: both re-aligned from stems on the owner's official
+  // lyrics (music-is-my-drug 309w @ 0.134s; one-more-breath 121w @ 0.158s).
+  "Music Is My Drug", "One More Breath [Back To Myself]",
   "One Tap Away (Riverboat Bad Boys Remix)",
   "One Tap Away", "Oro De La Presión", "Push It On Me", "Red Flags From The Beginning",
   "Say It With Your Eyes", "Still Me_ Still You", "The Big Top Has Wi-Fi", "Under the Elevated",
