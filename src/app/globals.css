@@ -21,6 +21,26 @@
   --beat: 0;
   transition: --theme-primary 700ms ease, --theme-secondary 700ms ease,
     --theme-accent 700ms ease, --theme-bg 700ms ease;
+
+  /* ── The instrument tokens (UI overhaul, PRISM-discipline / x1c7 skin) ──
+     Three-tier surfaces: each control panel one step lighter than the void.
+     The two accents are a SEMANTIC axis: plasma = the machine (transport,
+     telemetry, deck A), signal = the song (beat, emotion, deck B);
+     warn = modulation riding a value. Type scale: micro 10 / body 12 /
+     readout 15 — hierarchy by size AND weight. */
+  --inst-s1: #0b0816;
+  --inst-s2: #120c1e;
+  --inst-line: #241b36;
+  --inst-ink: #d9d3ea;
+  --inst-dim: #8b83a6;
+  --inst-faint: #544c6e;
+  --inst-plasma: #43f7ff;
+  --inst-signal: #ff2440;
+  --inst-warn: #ffd166;
+  --inst-ok: #4dff88;
+  --fs-micro: 10px;
+  --fs-body: 12px;
+  --fs-read: 15px;
 }
 
 * {
