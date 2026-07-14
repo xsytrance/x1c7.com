@@ -224,6 +224,14 @@ P.register({ id: "backdrop.ghosts", label: "Word Ghosts", group: "BACKDROP", min
 P.register({ id: "backdrop.ghostFade", label: "Ghost Fade", group: "BACKDROP", min: 0.9, max: 0.995, value: 0.975 });
 P.register({ id: "backdrop.ghostRise", label: "Ghost Rise", group: "BACKDROP", min: 0, max: 1, value: 0.35 });
 
+function hslToRgb(h: number, s: number, l: number): [number, number, number] {
+  const f = (n: number) => {
+    const k = (n + h / 30) % 12;
+    return l - s * Math.min(l, 1 - l) * Math.max(-1, Math.min(k - 3, 9 - k, 1));
+  };
+  return [f(0), f(8), f(4)];
+}
+
 function hexToRgb(hex: string): [number, number, number] {
   const n = parseInt(hex.replace("#", ""), 16);
   if (!isFinite(n)) return [0.5, 0.5, 0.5];
@@ -337,7 +345,9 @@ export class BackdropRenderer {
     const vw = this.canvas.width, vh = this.canvas.height;
     const hPx = Math.min(vh * 0.28, g.fs * 1.5);
     const wPx = Math.min(vw * 0.7, hPx * (W / H));
-    const color = this.pal[fnv1a(g.word) % 2 === 0 ? 2 : 1];
+    // melody sense: the ghost dissolves in its sung note's color; otherwise
+    // it borrows from the song's palette (alternating, seeded by the word)
+    const color = g.hue != null ? hslToRgb(g.hue, 0.82, 0.66) : this.pal[fnv1a(g.word) % 2 === 0 ? 2 : 1];
     gl.enable(gl.BLEND);
     gl.blendFunc(gl.ONE, gl.ONE); // additive, premultiplied
     this.stamp.use()

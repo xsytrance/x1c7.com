@@ -163,20 +163,44 @@ Shipped: registry · feature bus · backdrop · LFOs · stem-follows ·
 anticipation · quantized grades · chorus memory v1 · `uWord` ·
 **word ghosts** (dying words stamped into a dedicated decay/rise buffer —
 `featureBus.pushGhost` → `backdrop.ghosts/ghostFade/ghostRise`; skipped in
-phrase mode where nothing actually leaves the stage).
+phrase mode where nothing actually leaves the stage) ·
+**melody sense** (per-word sung pitch → word color; see below).
+
+### Melody sense (shipped 2026-07-13)
+
+`scripts/stem-analysis/analyze_melody.py` (runs in `~/librosa-venv` —
+recreated post-reinstall): pYIN pitch-tracks the isolated lead vocal, takes
+the median voiced f0 per aligned word window (release clock − `align.lag`),
+plus K-S key detection. Output `melody.json v1`:
+`{ v, key:{root,mode,conf}, words:[{i,t,midi,pc,conf}] }` — `i` indexes
+`lyricsSynced.words`. Validated on i-won-t-be-your-fire: key A# minor,
+335/641 words pitched, histogram almost perfectly diatonic (A# 194, F# 53,
+B 34, G# 30, C# 19).
+
+Engine (`src/lib/engine/melody.ts` + stage): loads by explicit
+`planet.assets.melody` URL or convention path `planets/<id>/melody.json`.
+**Harmonic hue mapping**: tonic wears the theme hue; other notes sit at
+their circle-of-fifths distance mapped onto ±80° (`pitchHue`) — close
+harmony = close color, the tritone strains the palette hardest. Words are
+confidence-gated (≥0.35); charged words keep their accent identity; ghosts
+dissolve in their note's hue. Harness: `/dev/perf?melody=1`.
 
 Next, roughly in order of jaw-drop per effort:
 
-1. **Per-word sung pitch → word color** — offline pitch per word window from
-   the vocal stem, mapped through the song's key. Nobody has this.
-2. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
+1. **Stem X-ray layers** — each stem gets its own visual layer + FX send,
    wired to the existing mixer (mute the drums, their layer dies).
-3. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
+2. **A/B section decks** — verse scene / chorus scene crossfaded on the bar
    (PRISM's deck architecture, driven by structure instead of a human).
-4. **Offline PRISM-grade per-stem analysis** — key/chroma/tier baked into
-   stems.json v2 (extend `scripts/stem-analysis`).
-5. **Key → palette harmony** — circle of fifths onto the color wheel,
-   blended with the cover palette; key changes shift the world.
+3. **Melody motion** (new idea from the melody work) — melodic *direction*
+   is already in `melody.json` (`midi` per word): rising lines lift word
+   entrances, falling lines sink them; big interval leaps get extra travel.
+   Octave → subtle weight/size nuance.
+4. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
+   stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
+   melody.json.
+5. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
+   uniform (`uKeyHue`) so the field itself sits in the song's key, not just
+   the words.
 6. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
 7. **Automation recording** — ride the deck live once, bake it into the

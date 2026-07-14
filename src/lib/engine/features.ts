@@ -74,6 +74,9 @@ export interface WordGhost {
   y: number;
   /** rendered font size, px */
   fs: number;
+  /** hue (0-360) of the note the word was sung on (melody sense) — the ghost
+   * dissolves in its own note's color. null/absent = palette fallback. */
+  hue?: number | null;
 }
 
 const F: EngineFeatures = {

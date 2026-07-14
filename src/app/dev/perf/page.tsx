@@ -84,9 +84,15 @@ export default function PerfHarness() {
   // (--kick/--bass/--voice/--choir) fire. Without it the harness measures the
   // renderer as if every planet were stem-less — which hid the biggest mobile
   // cost (a root custom-property write per frame → tree-wide style recalc).
+  // &melody=1 → attach the same planet's melody.json (per-word sung pitch →
+  // word color). Indices won't match the synthetic lyric semantically — this
+  // is for exercising the pitch-color path, not judging the mapping.
   const synthTrack = useMemo<Track>(() => {
-    if (params.get("stems") !== "1") return TRACK;
-    return { ...TRACK, planet: { ...TRACK.planet!, assets: { ...TRACK.planet!.assets, stems: "/planets/i-won-t-be-your-fire/stems.json" } } };
+    const assets: Record<string, string> = {};
+    if (params.get("stems") === "1") assets.stems = "/planets/i-won-t-be-your-fire/stems.json";
+    if (params.get("melody") === "1") assets.melody = "/planets/i-won-t-be-your-fire/melody.json";
+    if (!Object.keys(assets).length) return TRACK;
+    return { ...TRACK, planet: { ...TRACK.planet!, assets: { ...TRACK.planet!.assets, ...assets } } };
   }, [params]);
 
   // &planet=<slug> → measure a REAL planet's config (its palette, keywords,

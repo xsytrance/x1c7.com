@@ -7,6 +7,51 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (III) — Melody sense: every word wears the note it was sung on
+
+The feature nobody has: word timings (the forced aligner) × the isolated
+lead vocal (Suno stems) = **per-word sung pitch**, computed offline, worn as
+color at show time. PRISM can detect a key live; it can never know which
+*word* carried which *note*.
+
+**Analyzer (`scripts/stem-analysis/analyze_melody.py`, `~/librosa-venv` —
+recreated, the old analysis env died in the OS reinstall):**
+- pYIN pitch track on the lead stem (ffmpeg-decoded — the libsndfile
+  truncation trap from ALIGNMENT.md applies here too), median voiced f0 per
+  aligned word window on the stem clock (`align.lag` honored), K-S key
+  detection, confidence = voiced fraction × mean voicing probability.
+- Output `melody.json v1 { key, words:[{i,t,midi,pc,conf}] }` — third leg of
+  the measured-hearing stack (rhythm = analyze_stems, mix = analyze_audio,
+  **melody = this**).
+- Validated on i-won-t-be-your-fire: **A# minor** (r=0.76), 335/641 words
+  pitched, pitch-class histogram almost perfectly diatonic — A# (tonic) 194,
+  F# 53, B 34, G# 30, C# 19, non-scale notes ≤2 each. That's the real melody.
+
+**Engine (`src/lib/engine/melody.ts` + stage wiring, synced to Kinetica):**
+- **Harmonic hue mapping**, not chromatic: the tonic wears the theme's own
+  hue; every other note sits at its circle-of-fifths distance mapped onto
+  ±80° — close harmony = close color, the tritone strains hardest. So the
+  colors are always *of the song's palette family*, never random rainbow.
+- Active words wear their note's color (confidence ≥0.35; charged words
+  keep the accent; unpitched words unchanged). Phrase mode's active word
+  rides the same color. **Word ghosts inherit the hue** — the field slowly
+  becomes a painting of the melody as lines dissolve into it.
+- Loads via `planet.assets.melody` (explicit) or `planets/<id>/melody.json`
+  (convention). Absent → nothing changes. Harness: `/dev/perf?melody=1`
+  (fixture: `public/planets/i-won-t-be-your-fire/melody.json`).
+
+**Verified:** Playwright watched word colors across 20 word changes — three
+distinct computed colors (two pitch hues + the accent fallback), and the
+ghost-field screenshot shows the harmonic spread (red/violet/periwinkle/
+peach per word) where the pre-melody build alternated two palette colors.
+Zero console errors; both builds clean.
+
+**Logged for later (new ideas from this work):** melody *motion* (rising
+lines lift entrances, falls sink them — `midi` is already in the data),
+octave → weight, `uKeyHue` so the backdrop itself sits in the song's key.
+
+---
+
 ## 2026-07-13 (II) — The Prism integration: engine core · living backdrop · word ghosts
 
 Charles opened his PRISM repo (rockinthiscity/prism — a browser WebGL2 VJ
