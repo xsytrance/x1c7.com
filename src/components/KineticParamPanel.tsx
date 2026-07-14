@@ -22,7 +22,7 @@ const savePins = (ids: string[]) => {
 
 const fmt = (v: number, step: number) => (step >= 1 ? String(Math.round(v)) : v.toFixed(2).replace(/^(-?)0\./, "$1."));
 
-function FloatRow({ p, pinned, onPin }: { p: ParamDef; pinned: boolean; onPin: () => void }) {
+function FloatRow({ p, pinned, onPin, touch }: { p: ParamDef; pinned: boolean; onPin: () => void; touch?: boolean }) {
   const base = P.getBase(p.id) as number;
   const eff = P.get(p.id);
   const span = p.max - p.min || 1;
@@ -31,10 +31,10 @@ function FloatRow({ p, pinned, onPin }: { p: ParamDef; pinned: boolean; onPin: (
   const ribbon = Math.abs(effPct - basePct) > 0.5;
   const locked = P.isLocked(p.id);
   return (
-    <div className="grid grid-cols-[92px_1fr_38px_16px_16px] items-center gap-2 py-1" data-param={p.id}>
+    <div className={`grid items-center gap-2 ${touch ? "grid-cols-[84px_1fr_40px_22px_22px] py-2" : "grid-cols-[92px_1fr_38px_16px_16px] py-1"}`} data-param={p.id}>
       <label className="truncate font-mono text-[10px] uppercase tracking-[0.08em] text-[var(--inst-dim)]" title={p.id}>{p.label}</label>
-      <div className="relative flex h-6 items-center">
-        <div className="relative h-1.5 w-full rounded-full bg-[#221a35]">
+      <div className={`relative flex items-center ${touch ? "h-9" : "h-6"}`}>
+        <div className={`relative w-full rounded-full bg-[#221a35] ${touch ? "h-2" : "h-1.5"}`}>
           <div className="absolute inset-y-0 left-0 rounded-full" style={{ width: `${basePct}%`, background: "color-mix(in srgb, var(--inst-plasma) 55%, #2b3f55)" }} />
           {ribbon && (
             <div
@@ -43,7 +43,7 @@ function FloatRow({ p, pinned, onPin }: { p: ParamDef; pinned: boolean; onPin: (
               title="live modulation (LFO / stem-follow)"
             />
           )}
-          <div className="pointer-events-none absolute top-1/2 h-4 w-4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--inst-ink)] shadow" style={{ left: `${basePct}%` }} />
+          <div className={`pointer-events-none absolute top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[var(--inst-ink)] shadow ${touch ? "h-5 w-5" : "h-4 w-4"}`} style={{ left: `${basePct}%` }} />
         </div>
         <input
           type="range"
@@ -107,10 +107,12 @@ function SelectRow({ p }: { p: ParamDef }) {
   );
 }
 
-export function KineticParamPanel({ groups, className = "" }: {
+export function KineticParamPanel({ groups, className = "", touch = false }: {
   /** Registry groups to render, in order. Omit = every group in the registry. */
   groups?: string[];
   className?: string;
+  /** Touch sizing: taller rows, bigger thumbs and targets (mobile sheets). */
+  touch?: boolean;
 }) {
   const [, force] = useState(0);
   const [pins, setPins] = useState<string[]>([]);
@@ -149,7 +151,7 @@ export function KineticParamPanel({ groups, className = "" }: {
 
   const row = (p: ParamDef) => {
     const pinned = pins.includes(p.id);
-    if (p.type === "float") return <FloatRow key={p.id} p={p} pinned={pinned} onPin={() => togglePin(p.id)} />;
+    if (p.type === "float") return <FloatRow key={p.id} p={p} pinned={pinned} onPin={() => togglePin(p.id)} touch={touch} />;
     if (p.type === "bool") return <BoolRow key={p.id} p={p} />;
     if (p.type === "select") return <SelectRow key={p.id} p={p} />;
     return null;

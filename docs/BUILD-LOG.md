@@ -7,6 +7,34 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (XII) — The Pocket Instrument: the Studio goes truly mobile
+
+The owner's brief: "much much much more mobile friendly — not small
+tweaks; take the lead." Phone-native architecture, not shrunk desktop:
+
+- **Bottom sheets + a thumb tab bar** (✦ Looks · ◫ Scenes · ⚙ Params ·
+  ▣ Deck) riding above the player. A tab slides up a glass sheet — looks
+  pads, the scenes rail with the .frag loader, the param panel in a new
+  TOUCH mode (taller rows, 20px thumbs), deck + automation stacked. Tap
+  the scrim or the handle to dismiss. Desktop is untouched (`md:` split).
+- **Phones get the full engine here — deliberately.** New
+  `forceBackdrop` on KineticStage mounts the GL field even on perf-lite
+  devices, paid for in resolution not features: `backdrop.renderScale`
+  became a registry param and a coarse-pointer profile drops it to 0.35
+  (+ shorter ghost tails). The perf-lite law still governs the ambient
+  /music show; the studio is a user-opened instrument — the trade is the
+  user's.
+- **Mobile top bar**: STUDIO · compact telemetry (BPM + tier + beat
+  light) · ♪ setup toggle · EXIT. The workspace seg is desktop-only now —
+  on the phone, the sheet IS DIRECT.
+
+**Verified on emulated Pixel 7** (real launch, autoplay Chromium): four
+tabs render, KINETICA mounts on a lite device (forceBackdrop working),
+renderScale reads 0.35, the GL canvas is live, sheets open/close, zero
+page errors. Screenshots confirm the instrument reads one-handed.
+
+---
+
 ## 2026-07-14 (XI) — Re-aligns, the lyrics audit, and the owner's inbox
 
 **Worst-5 re-aligned on the fresh GPU env** (realign-one.py — the v1

@@ -34,6 +34,13 @@ const PASSES = [
 ];
 
 type Workspace = "SHOW" | "DIRECT" | "SETUP";
+type Sheet = "LOOKS" | "SCENES" | "PARAMS" | "DECK";
+const SHEET_TABS: { id: Sheet; icon: string; label: string }[] = [
+  { id: "LOOKS", icon: "✦", label: "Looks" },
+  { id: "SCENES", icon: "◫", label: "Scenes" },
+  { id: "PARAMS", icon: "⚙", label: "Params" },
+  { id: "DECK", icon: "▣", label: "Deck" },
+];
 const SCENE_SWATCH: Record<string, string> = {
   AURORA: "linear-gradient(120deg,#0a1e33,#155e75,#0a1e33)",
   EMBERS: "radial-gradient(circle at 60% 50%,#7f1d1d,#2d0a14)",
@@ -169,7 +176,7 @@ function ScenesRail() {
 }
 
 // ── Deck strip: what the section decks are doing, live ──────────────────────
-function DeckStrip() {
+function DeckStrip({ bare = false }: { bare?: boolean }) {
   const [, force] = useState(0);
   useEffect(() => {
     const id = window.setInterval(() => force((n) => n + 1), 150);
@@ -178,7 +185,7 @@ function DeckStrip() {
   const info = deckInfo();
   const fadeBeats = P.get("backdrop.fadeBeats");
   return (
-    <div className="flex items-center gap-4 border-t border-[var(--inst-line)] bg-[var(--inst-s1)] px-4 py-2">
+    <div className={`flex flex-wrap items-center gap-x-4 gap-y-3 px-4 py-2 ${bare ? "" : "border-t border-[var(--inst-line)] bg-[var(--inst-s1)]"}`}>
       <div className="relative h-10 w-[72px] flex-none rounded-md border border-[var(--inst-line)]" style={{ background: SCENE_SWATCH[info?.a ?? "AURORA"] }}>
         <b className="absolute left-1.5 top-1 font-mono text-[8px] font-normal tracking-[0.18em] text-[var(--inst-plasma)]">A · {info?.a ?? "—"}</b>
       </div>
@@ -324,6 +331,8 @@ export default function StudioPage() {
   const [pass, setPass] = useState(5);
   const [mode, setMode] = useState<StageMode>("phrase");
   const [ws, setWs] = useState<Workspace>("DIRECT");
+  // The pocket instrument: which bottom sheet is up (mobile only).
+  const [sheet, setSheet] = useState<Sheet | null>(null);
   const [embed, setEmbed] = useState(false);
   const [ownerHost, setOwnerHost] = useState(false);
   const [wantDraft, setWantDraft] = useState(false);
@@ -342,6 +351,12 @@ export default function StudioPage() {
     setWantAutoplay(q.get("autoplay") === "1");
     setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
     setOwnerHost(isPrivateHost(window.location.hostname));
+    // Mobile render profile: the studio carries the FULL engine on phones
+    // (forceBackdrop below) — pay for it in resolution, not features.
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      P.set("backdrop.renderScale", 0.35, "code");
+      P.set("backdrop.ghostFade", 0.965, "code"); // shorter ghost tails on small GPUs
+    }
     const p = Number(q.get("pass"));
     if ([1, 2, 3, 4, 5, 6].includes(p)) setPass(p);
     const m = q.get("mode") as StageMode | null;
@@ -455,9 +470,10 @@ export default function StudioPage() {
     >
       {/* ── top bar: identity · workspaces · telemetry ── */}
       {!embed && (
-        <header className="relative z-20 flex h-12 flex-none items-center gap-4 border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_85%,transparent)] px-4 backdrop-blur-md">
+        <header className="relative z-20 flex h-12 flex-none items-center gap-3 border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_85%,transparent)] px-3 backdrop-blur-md sm:gap-4 sm:px-4">
           <span className="font-display text-xs font-black uppercase tracking-[0.3em] text-white">Studio</span>
-          <div className="flex overflow-hidden rounded-md border border-[var(--inst-line)]">
+          {/* workspaces are a desktop concept — on the phone, the sheet IS direct */}
+          <div className="hidden overflow-hidden rounded-md border border-[var(--inst-line)] md:flex">
             {(["SHOW", "DIRECT", "SETUP"] as Workspace[]).map((w) => (
               <button
                 key={w}
@@ -469,7 +485,15 @@ export default function StudioPage() {
               >{w}</button>
             ))}
           </div>
-          <KineticTelemetry className="ml-auto" />
+          <KineticTelemetry className="ml-auto hidden md:flex" />
+          <KineticTelemetry compact className="ml-auto md:hidden" />
+          {/* mobile: one ⚙ toggles the setup card over the stage */}
+          <button
+            onClick={() => pickWs(ws === "SETUP" ? "DIRECT" : "SETUP")}
+            aria-label="Song / pass / view setup"
+            className="grid h-9 w-9 place-items-center rounded-lg border border-[var(--inst-line)] font-mono text-sm md:hidden"
+            style={ws === "SETUP" ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)" } : { color: "var(--inst-dim)" }}
+          >♪</button>
           <Link href="/music" className="rounded-lg border border-[var(--inst-line)] px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-[var(--inst-dim)] hover:text-white">Exit</Link>
         </header>
       )}
@@ -495,7 +519,7 @@ export default function StudioPage() {
               </aside>
             )}
             <div className="relative min-w-0 flex-1 overflow-hidden">
-              <KineticStage track={currentTrack!} pass={pass} mode={mode} />
+              <KineticStage track={currentTrack!} pass={pass} mode={mode} forceBackdrop />
             </div>
             {direct && (
               <aside className="z-10 hidden w-[300px] flex-none overflow-y-auto border-l border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] backdrop-blur-md md:block">
@@ -504,7 +528,48 @@ export default function StudioPage() {
             )}
           </div>
           {direct && <div className="relative z-10 hidden flex-none pb-[76px] md:block"><DeckStrip /></div>}
-          {ws === "SHOW" && <div className="h-[76px] flex-none" />}
+          {ws === "SHOW" && <div className="hidden h-[76px] flex-none md:block" />}
+
+          {/* ── THE POCKET INSTRUMENT (mobile) ── thumb tab bar + bottom sheets */}
+          {live && !embed && (
+            <>
+              {sheet && (
+                <button
+                  aria-label="Close sheet"
+                  onClick={() => setSheet(null)}
+                  className="fixed inset-0 z-30 bg-black/45 md:hidden"
+                />
+              )}
+              {sheet && (
+                <div className="fixed inset-x-0 bottom-[128px] z-40 max-h-[58dvh] overflow-hidden rounded-t-2xl border-x border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_94%,transparent)] backdrop-blur-xl md:hidden">
+                  <button onClick={() => setSheet(null)} aria-label="Close" className="flex w-full justify-center py-2.5">
+                    <span className="h-1 w-10 rounded-full bg-[var(--inst-line)]" />
+                  </button>
+                  <div className="max-h-[calc(58dvh-56px)] overflow-y-auto px-4 pb-6">
+                    {sheet === "LOOKS" && <LooksPads />}
+                    {sheet === "SCENES" && <ScenesRail />}
+                    {sheet === "PARAMS" && (
+                      <KineticParamPanel touch groups={["BACKDROP", "LFO 1", "FOLLOW 1"]} className="rounded-none border-0 bg-transparent p-0 backdrop-blur-none" />
+                    )}
+                    {sheet === "DECK" && <DeckStrip bare />}
+                  </div>
+                </div>
+              )}
+              <nav className="fixed inset-x-0 bottom-[76px] z-40 grid grid-cols-4 border-t border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_92%,transparent)] backdrop-blur-md md:hidden">
+                {SHEET_TABS.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setSheet((x) => (x === t.id ? null : t.id))}
+                    className="flex min-h-[52px] flex-col items-center justify-center gap-0.5"
+                    style={sheet === t.id ? { color: "var(--inst-plasma)" } : { color: "var(--inst-dim)" }}
+                  >
+                    <span className="text-base leading-none">{t.icon}</span>
+                    <span className="font-mono text-[8px] uppercase tracking-[0.25em]">{t.label}</span>
+                  </button>
+                ))}
+              </nav>
+            </>
+          )}
         </>
       )}
     </main>

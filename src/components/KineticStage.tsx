@@ -223,7 +223,7 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   tvoff: (w, a) => <WordTVOff word={w} airtime={a} />,
 };
 
-export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost }: {
+export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost, forceBackdrop = false }: {
   track: Track;
   /** Tailwind bottom-offset for the arc timeline (differs when the player bar is covered). */
   timelineBottomClass?: string;
@@ -250,6 +250,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   deck?: { density?: number; glow?: number; grain?: number; vignette?: number };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
+  /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
+   * a user-opened instrument may spend the frames the ambient show can't;
+   * pair with a low backdrop.renderScale). Default: lite skips it. */
+  forceBackdrop?: boolean;
 }) {
   const { getCurrentTime: playerTime, setMuffle } = useMusicPlayer();
   const getCurrentTime = clock ?? playerTime;
@@ -1470,7 +1474,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           through) the song art: GL canvas at -z-20, art at -z-10 with 0.6–0.85
           opacity glows over it. Fed by the feature bus (real stems, riser
           charge, word position). Skipped on phones with the other heavy layers. */}
-      {pass >= 4 && !lite && (
+      {pass >= 4 && (!lite || forceBackdrop) && (
         <KineticBackdrop
           seed={track.id}
           palette={palette}

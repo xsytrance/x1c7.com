@@ -293,6 +293,9 @@ P.register({ id: "backdrop.scene", label: "Scene", group: "BACKDROP", type: "sel
 // A/B section decks: how many beats a section's scene crossfade rides.
 P.register({ id: "backdrop.fadeBeats", label: "Deck Fade (Beats)", group: "BACKDROP", min: 2, max: 16, step: 1, value: 8 });
 P.register({ id: "backdrop.intensity", label: "Intensity", group: "BACKDROP", min: 0, max: 2, value: 1 });
+// Render resolution as a fraction of the canvas — the mobile studio drops
+// this to ~0.35 so phones can carry the full engine.
+P.register({ id: "backdrop.renderScale", label: "Render Scale", group: "BACKDROP", min: 0.25, max: 1, value: 0.5 });
 P.register({ id: "backdrop.flow", label: "Flow", group: "BACKDROP", min: 0, max: 3, value: 1 });
 P.register({ id: "backdrop.opacity", label: "Opacity", group: "BACKDROP", min: 0, max: 1, value: 0.6 });
 P.register({ id: "backdrop.trails", label: "Trails", group: "BACKDROP", min: 0, max: 0.97, value: 0.5 });
@@ -577,9 +580,9 @@ export class BackdropRenderer {
     gl.disable(gl.BLEND);
   }
 
-  render(F: EngineFeatures, renderScale = 0.5) {
+  render(F: EngineFeatures) {
     const gl = this.gl;
-    this.resize(renderScale);
+    this.resize(P.get("backdrop.renderScale"));
     if (!this.rts) return;
     const { a, b, mixRT, ping, pong, ghostPing, ghostPong } = this.rts;
     // Anticipation: 0 far from a drop, →1 over the last 16 beats before a
