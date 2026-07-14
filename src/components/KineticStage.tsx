@@ -21,6 +21,7 @@ import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
 import { stemMixStore } from "@/lib/stemMix";
 import { featureBus } from "@/lib/engine/features";
+import { P } from "@/lib/engine/params";
 import { loadMelody, melodyIndex, keyPc, hexHue, pitchColor, pitchHue, medianMidi, melodicMotion, type MelodyWord } from "@/lib/engine/melody";
 import { KineticBackdrop } from "./KineticBackdrop";
 import { usePerfLite } from "@/lib/perf";
@@ -92,6 +93,12 @@ function screamShout(m: { layer?: string; prompt?: string }): string {
 // Used as a backdrop fallback when a planet has no painting of its own for a
 // charged or line-final word. Neutral palette; the song's grade tints it.
 const SHARED_BASE = `${PLANET_BASE}/planets/_shared`;
+
+// ── THE REEL (Curator) ── lexicon paintings matched to THIS song ghost into
+// the stage when their word is sung. Off by default; NON_LOOK (looks.ts) so
+// a captured look never bakes it. ?reel=1 flips it for a session.
+P.register({ id: "reel.enabled", label: "Reel Ghosts", group: "REEL", type: "bool", value: false });
+interface ReelEntry { img: string; word: string; score: number; featured?: boolean }
 // Planet art asset URLs are stored relative ("/planets/<slug>/<w>.webp"); the
 // storage reorg moved the files to R2, so prefix the host's PLANET_BASE at
 // render. Already-absolute URLs (R2 shared art, Kinetica blobs) pass through.
@@ -475,6 +482,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     fetch(`${PLANET_BASE}/planets/${track.id}/gallery.json`)
       .then((r) => (r.ok ? r.json() : null))
       .then((d) => { if (on) setGallery((d?.art as Record<string, string[]>) ?? null); })
+      .catch(() => {});
+    // The Curator's reel — word → matched painting, keyed by normalized word.
+    fetch(`${PLANET_BASE}/planets/${track.id}/lexicon-reel.json`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => {
+        if (!on || !d?.reel?.length) return;
+        const map = new Map<string, ReelEntry>();
+        for (const e of (d.reel as ReelEntry[]).filter((x) => x.featured)) {
+          if (!map.has(e.word)) map.set(e.word, e);
+        }
+        reelMap.current = map;
+        // Warm the top few so the first ghost decodes instantly.
+        [...map.values()].slice(0, 6).forEach((e) => { const im = new Image(); im.src = e.img; });
+      })
       .catch(() => {});
     fetch(`${PLANET_BASE}/planets/${track.id}/guided.json`)
       .then((r) => (r.ok ? r.json() : null))
@@ -872,6 +893,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const rootRef = useRef<HTMLDivElement>(null);
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
+  // Reel ghosts: word → matched painting (featured only), + the one on stage.
+  const reelMap = useRef<Map<string, ReelEntry> | null>(null);
+  const reelClear = useRef<number | null>(null);
+  const [reelGhost, setReelGhost] = useState<{ img: string; on: boolean } | null>(null);
+  useEffect(() => {
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("reel") === "1")
+      P.set("reel.enabled", true, "code");
+  }, []);
   // On perf-lite the per-frame --beat write lands HERE instead of :root, so
   // the 60fps style recalc is scoped to the stage subtree (beatTarget.ts).
   useEffect(() => {
@@ -998,6 +1027,17 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
       if (i !== lastWord.current) {
         lastWord.current = i; setIdx(i);
+        // THE REEL — the sung word summons its matched painting into the
+        // backdrop for a breath. Featured matches only; param-gated.
+        if (i >= 0 && reelMap.current && P.getBool("reel.enabled")) {
+          const key = clean(words[i].w).toLowerCase();
+          const hit = reelMap.current.get(key);
+          if (hit) {
+            setReelGhost({ img: hit.img, on: true });
+            if (reelClear.current != null) window.clearTimeout(reelClear.current);
+            reelClear.current = window.setTimeout(() => setReelGhost((g) => (g ? { ...g, on: false } : g)), 2800);
+          }
+        }
         // The word that just left dissolves into the backdrop (not in phrase
         // mode — there the whole line stays on stage; nothing actually left).
         if (mode !== "phrase" && lastGhost.current) {
@@ -1498,6 +1538,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           palette={palette}
           sectionEmotion={section?.emotion ?? null}
           sectionIntensity={section?.intensity ?? 0.35}
+        />
+      )}
+      {/* THE REEL — the sung word's matched painting breathes into the
+          backdrop (above the song art, below the words), then lets go. */}
+      {reelGhost && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={reelGhost.img}
+          alt=""
+          aria-hidden
+          className="pointer-events-none fixed inset-0 -z-[5] h-full w-full object-cover"
+          style={{ opacity: reelGhost.on ? 0.24 : 0, transition: "opacity 900ms ease", mixBlendMode: "screen" }}
         />
       )}
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
