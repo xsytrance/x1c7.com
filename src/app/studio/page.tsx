@@ -207,6 +207,62 @@ function DeckStrip() {
   );
 }
 
+// ── LYRICS INBOX (owner, tailnet only — the API 404s on public hosts) ──────
+// The easy way to hand corrected lyrics to the alignment pipeline: pick a
+// flagged song, paste the real words, save. realign-inbox.mjs does the rest
+// (align → refine → gate → apply → melody refresh).
+function LyricsInbox() {
+  const [flagged, setFlagged] = useState<{ id: string; reason: string; severity: string; inbox: boolean }[]>([]);
+  const [sel, setSel] = useState("");
+  const [text, setText] = useState("");
+  const [msg, setMsg] = useState<string | null>(null);
+  const refresh = useCallback(() => {
+    fetch("/api/studio/lyrics").then((r) => (r.ok ? r.json() : null)).then((d) => {
+      if (d?.flagged) { setFlagged(d.flagged); if (!sel && d.flagged.length) setSel(d.flagged[0].id); }
+    }).catch(() => {});
+  }, [sel]);
+  useEffect(refresh, [refresh]);
+  if (!flagged.length) return null;
+  const cur = flagged.find((f) => f.id === sel);
+  const save = async () => {
+    setMsg(null);
+    const r = await fetch("/api/studio/lyrics", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({ id: sel, lyrics: text }),
+    }).catch(() => null);
+    const d = await r?.json().catch(() => null);
+    if (r?.ok) { setMsg(`✓ saved (${d.words} words) — run: node scripts/alignment/realign-inbox.mjs`); setText(""); refresh(); }
+    else setMsg(`✗ ${d?.error ?? "save failed"}`);
+  };
+  return (
+    <div className="relative z-10 mx-auto mt-4 w-full max-w-lg rounded-2xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-5 backdrop-blur-md">
+      <div className="flex items-baseline gap-2">
+        <span className="font-mono text-[9px] uppercase tracking-[0.3em]" style={{ color: "var(--inst-warn)" }}>Lyrics inbox</span>
+        <span className="font-mono text-[9px] uppercase tracking-wider text-[var(--inst-faint)]">{flagged.length} songs need words · owner only</span>
+      </div>
+      <select value={sel} onChange={(e) => { setSel(e.target.value); setText(""); setMsg(null); }}
+        className="mt-2 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]">
+        {flagged.map((f) => <option key={f.id} value={f.id}>{f.inbox ? "📥 " : ""}{f.id} — {f.severity}</option>)}
+      </select>
+      {cur && <p className="mt-2 font-mono text-[10px] leading-4 text-[var(--inst-dim)]">{cur.reason}{cur.inbox ? " · a submission is already waiting in the inbox" : ""}</p>}
+      <textarea
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="paste the real lyrics here — plain text, one line per sung line ([Section] headers are fine, they're stripped)"
+        rows={7}
+        className="mt-2 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] p-3 font-mono text-[11px] leading-5 text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]"
+      />
+      <button onClick={save} disabled={text.trim().length < 20}
+        className="mt-2 w-full rounded-full py-2.5 font-display text-xs font-black uppercase tracking-[0.2em] text-black transition enabled:hover:scale-[1.01] disabled:opacity-40"
+        style={{ background: "var(--inst-warn)" }}>
+        Save to the inbox
+      </button>
+      {msg && <p className="mt-2 font-mono text-[10px] tracking-wide" style={{ color: msg.startsWith("✓") ? "var(--inst-ok)" : "var(--inst-signal)" }}>{msg}</p>}
+    </div>
+  );
+}
+
 function AutomationCluster() {
   const [, force] = useState(0);
   useEffect(() => {
@@ -265,6 +321,7 @@ export default function StudioPage() {
   const [mode, setMode] = useState<StageMode>("phrase");
   const [ws, setWs] = useState<Workspace>("DIRECT");
   const [embed, setEmbed] = useState(false);
+  const [ownerHost, setOwnerHost] = useState(false);
   const [wantDraft, setWantDraft] = useState(false);
   const [wantAutoplay, setWantAutoplay] = useState(false);
   const [draftPlanet, setDraftPlanet] = useState<Track["planet"] | null>(null);
@@ -280,6 +337,7 @@ export default function StudioPage() {
     setEmbed(q.get("embed") === "1");
     setWantAutoplay(q.get("autoplay") === "1");
     setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
+    setOwnerHost(isPrivateHost(window.location.hostname));
     const p = Number(q.get("pass"));
     if ([1, 2, 3, 4, 5, 6].includes(p)) setPass(p);
     const m = q.get("mode") as StageMode | null;
@@ -327,6 +385,7 @@ export default function StudioPage() {
 
   // ── SETUP body (also the pre-launch view: pick, then perform) ─────────────
   const setupBody = (
+    <div className="w-full">
     <div className="relative z-10 mx-auto mt-6 w-full max-w-lg rounded-2xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-5 backdrop-blur-md">
       <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">Song</div>
       <select value={selectedId} onChange={(e) => setSelectedId(e.target.value)}
@@ -371,6 +430,9 @@ export default function StudioPage() {
           🪐 {analysis.overallMood} · {analysis.themes.slice(0, 3).join(" · ")}
         </p>
       )}
+    </div>
+    {/* the owner's lyrics inbox — tailnet only (the API 404s publicly) */}
+    {ownerHost && <LyricsInbox />}
     </div>
   );
 

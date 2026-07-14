@@ -1,0 +1,18 @@
+{
+  "v": 1,
+  "updated": "2026-07-14",
+  "note": "Songs whose LYRICS (not timings) need the owner. Measured, not guessed: silence-rate = words the aligner had to place where nobody sings; unofficial = whisper-derived text, never confirmed. Submit fixes via the Studio SETUP → Lyrics Inbox (tailnet) — then run: node scripts/alignment/realign-inbox.mjs",
+  "flagged": [
+    { "id": "music-is-my-drug", "reason": "text is whisper garbage — 20 words of 'Thank you.' repeated; song currently pulled", "severity": "missing" },
+    { "id": "say-it-with-your-body", "reason": "official text mismatches the audio — 22% of words land in vocal silence even after re-align", "severity": "wrong" },
+    { "id": "one-more-breath-back-to-myself", "reason": "official text is only 121 tokens for a 253s song — likely missing verses; re-aligned + live but heavy echo-clumping suggests incomplete text", "severity": "verify" },
+    { "id": "red-flags-from-the-beginning", "reason": "re-align couldn't improve 0.38s mean onset error — parts of the text likely differ from what's sung", "severity": "verify" },
+    { "id": "music-is-my-drug-rooklyn-mix", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
+    { "id": "heaven-hell-honey-venom-remix", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
+    { "id": "going-crazy-hiligaynon-fusion-mix", "reason": "unofficial (whisper-derived) text — Hiligaynon may also need the MMS fallback aligner", "severity": "unofficial" },
+    { "id": "whistle-on-the-river", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
+    { "id": "another-year-looks-good-on-you-happy-birthday-song", "reason": "unofficial (whisper-derived) text", "severity": "unofficial" },
+    { "id": "light-it-myself", "reason": "unofficial text that happens to perform well (82% melody coverage) — confirm it when convenient", "severity": "unofficial" }
+  ],
+  "instrumentals": ["ai-interlude", "feverbreak"]
+}

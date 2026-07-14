@@ -7,6 +7,41 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (XI) — Re-aligns, the lyrics audit, and the owner's inbox
+
+**Worst-5 re-aligned on the fresh GPU env** (realign-one.py — the v1
+aligner's windowed core pointed at the cached web lead stems, since the
+local WAVs died in the reinstall). The gate separated timing disease from
+LYRICS disease:
+- one-more-breath: 36 broken words → **121 words @ 0.158s** (was 2.4s) —
+  APPLIED; the pulled song may be ready to un-hide.
+- say-it-with-your-eyes: 0.36s → **0.098s, silence 0.003** — APPLIED.
+- say-it-with-your-body: re-align made it WORSE (22% of words in vocal
+  silence) — the official text doesn't match the song. → lyrics audit.
+- red-flags: no gain at 0.38s → text partly suspect. → lyrics audit.
+- music-is-my-drug: its "lyrics" are whisper garbage ("Thank you." × 20).
+  Nothing to align. → lyrics audit, top of the list.
+Both applied songs' melody.json re-run + republished (word indices
+changed): C major 0.97 / F minor 0.90 diatonic.
+
+**The lyrics audit** (the owner suspected missing/wrong lyrics — the
+profiles scan confirmed it): 8 tracks run on unofficial whisper-derived
+text, 2 have provably wrong text. Human list: docs/LYRICS-AUDIT.md;
+machine twin: scripts/alignment/lyrics-audit.json.
+
+**The inbox — the easy way to send corrected lyrics**:
+- `/api/studio/lyrics` (tailnet-only via the proxy, like all write APIs):
+  GET = the audit + inbox state; POST {id, lyrics} → inbox/<slug>.txt.
+- Studio SETUP grew a **Lyrics Inbox** card (private hosts only): pick a
+  flagged song, see WHY it's flagged, paste, save.
+- `realign-inbox.mjs` consumes it end to end: GPU align → refine → GATE
+  (applies only if measurably better than live, journaled) → melody
+  re-run + republish → inbox file moves to done/.
+Verified: GET lists 10, POST lands, the consumer picks it up (dry),
+public hosts get 404.
+
+---
+
 ## 2026-07-14 (X) — Alignment v2 applied: the whole catalog snaps to the voice
 
 The owner's goal: perfectly aligned lyrics, every time. Same day, shipped
