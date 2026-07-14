@@ -47,7 +47,7 @@ while true; do
     made=$((n - last))
     curl -s -m 10 -X POST "$HUB" \
       -H "x-ossicle-token: $TOKEN" -H "Content-Type: application/json" \
-      -d "{\"bee\":\"atelier\",\"name\":\"Atelier\",\"priority\":\"normal\",\"category\":\"info\",\"text\":\"$made new paintings on the shelf — $n total, $need to go for the full gallery.\"}" >/dev/null
+      -d "{\"bee\":\"atelier\",\"name\":\"Atelier\",\"priority\":\"normal\",\"category\":\"info\",\"text\":\"$made new paintings — $n done of the ~$((n + need)) the full 4-per-sense gallery will hold.\"}" >/dev/null
     last=$n
     echo "$last" > "$STATE"
     echo "$(date -Iseconds) whispered at $n ($need remaining)"
