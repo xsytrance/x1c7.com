@@ -67,3 +67,6 @@ scripts/song-analysis/profiles/*/release.mp3
 scripts/song-analysis/profiles/*/cover.jpeg
 scripts/song-analysis/profiles/*/stems-src/
 scripts/song-art/.backfill-tmp/
+
+# melody/stems batch working dir (downloaded stem audio + generated json)
+scripts/stem-analysis/out/
