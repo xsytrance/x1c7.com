@@ -289,6 +289,38 @@ export function MusicPlayerProvider({ children }: { children: React.ReactNode })
     if (audioRef.current) audioRef.current.volume = v;
   }, []);
 
+  // MediaSession — lockscreen / notification / headset transport. Metadata
+  // follows the current track; the handlers are the context's own controls.
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("mediaSession" in navigator)) return;
+    const ms = navigator.mediaSession;
+    if (currentTrack) {
+      try {
+        ms.metadata = new MediaMetadata({
+          title: currentTrack.title,
+          artist: currentTrack.artist,
+          artwork: currentTrack.art ? [{ src: currentTrack.art }] : [],
+        });
+      } catch { /* MediaMetadata unavailable */ }
+    }
+    try { ms.playbackState = currentTrack ? (isPlaying ? "playing" : "paused") : "none"; } catch { /* noop */ }
+    const handlers: [MediaSessionAction, MediaSessionActionHandler][] = [
+      ["play", () => { if (!isPlaying) togglePlay(); }],
+      ["pause", () => { if (isPlaying) togglePlay(); }],
+      ["nexttrack", () => next()],
+      ["previoustrack", () => prev()],
+      ["seekto", (d) => { if (typeof d.seekTime === "number") seek(d.seekTime); }],
+    ];
+    for (const [action, fn] of handlers) {
+      try { ms.setActionHandler(action, fn); } catch { /* action unsupported */ }
+    }
+    return () => {
+      for (const [action] of handlers) {
+        try { ms.setActionHandler(action, null); } catch { /* noop */ }
+      }
+    };
+  }, [currentTrack, isPlaying, togglePlay, next, prev, seek]);
+
   // The stem bus — stable identity; the engine is created lazily on the first
   // engage (that's when the stem audio starts downloading, not before).
   const stemBus = useMemo(() => ({

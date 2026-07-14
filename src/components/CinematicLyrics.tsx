@@ -12,6 +12,7 @@ import { KineticTelemetry } from "./KineticTelemetry";
 import { LabStage, LAB_MODES, type LabMode } from "./LabStage";
 import { StemMixer } from "./StemMixer";
 import { StemLens } from "./StemLens";
+import { ShowDock } from "./mobile/ShowDock";
 import { useStemMix } from "@/lib/stemMix";
 import type { Track } from "@/data/tracks";
 
@@ -227,9 +228,10 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               {/* Live telemetry — the decoration only a measured song can wear:
                   real BPM, detected key, section tier, the beat itself. */}
               {performs && <KineticTelemetry compact className="hidden md:flex md:pr-2" />}
-              {/* View controls — phase + mode as one segmented control. */}
+              {/* View controls — phase + mode as one segmented control.
+                  Hidden on phones — the ShowDock carries them there. */}
               {performs && (
-                <div className="flex items-center overflow-hidden rounded-md border border-[var(--inst-line)]" style={{ background: "var(--inst-s2)" }}>
+                <div className="hidden items-center overflow-hidden rounded-md border border-[var(--inst-line)] md:flex" style={{ background: "var(--inst-s2)" }}>
                   {pass >= 3 && (
                     <button onClick={cycleMode} title="Viewing style — Dynamic / Focus / Phrase. Tap to cycle."
                       className="px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-[var(--inst-dim)] transition hover:text-white">
@@ -247,7 +249,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               {/* THE STEMS — live mixer over the separated Suno stems. Only
                   songs that ship stem audio grow the fader. */}
               {performs && hasStems && (
-                <div className="group relative shrink-0">
+                <div className="group relative hidden shrink-0 md:block">
                   <button onClick={() => setMixerOpen((v) => !v)} aria-label="Stems — the live instrument mixer"
                     className="flex items-center gap-1.5 rounded-md border px-3 py-2 font-mono text-[11px] uppercase tracking-wider transition hover:scale-[1.03]"
                     style={stemMix.active || mixerOpen || lensArmed
@@ -264,7 +266,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
               {/* THE REACTOR — experimental Labs modes (labeled + glowing so it's
                   obvious; native tooltip on hover explains it). */}
               {performs && (
-                <div className="group relative shrink-0">
+                <div className="group relative hidden shrink-0 md:block">
                   <button onClick={() => setReactorOpen((v) => !v)} aria-label="The Reactor — experimental modes"
                     className="flex items-center gap-1.5 rounded-md border px-3 py-2 font-mono text-[11px] uppercase tracking-wider transition hover:scale-[1.03]"
                     style={labMode || reactorOpen
@@ -319,10 +321,29 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
             initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 }}
             onClick={() => { pause(); onClose(); }}
             aria-label="End the show — stops the music"
-            style={{ bottom: "max(1rem, env(safe-area-inset-bottom))" }}
-            className="absolute right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-[var(--inst-signal)] hover:text-[var(--inst-signal)]">
+            className="absolute bottom-[calc(var(--safe-b)+86px)] right-4 z-[60] flex items-center gap-1.5 rounded-full border border-white/20 bg-black/55 px-4 py-2.5 font-mono text-[11px] font-bold uppercase tracking-[0.18em] text-white/75 backdrop-blur-md transition hover:scale-[1.03] hover:border-[var(--inst-signal)] hover:text-[var(--inst-signal)] md:bottom-[max(1rem,var(--safe-b))]">
             ✕ <span>End show</span>
           </m.button>
+
+          {/* SHOW DOCK — the phone thumb bar: transport + phase/mode + the
+              stems/reactor toggles the hidden top-bar controls left behind. */}
+          <ShowDock
+            performs={performs}
+            pass={pass}
+            setPass={setPass}
+            maxPass={MAX_PASS}
+            mode={mode}
+            cycleMode={cycleMode}
+            mixerOpen={mixerOpen}
+            setMixerOpen={setMixerOpen}
+            reactorOpen={reactorOpen}
+            setReactorOpen={setReactorOpen}
+            hasStems={hasStems}
+            isPlaying={isPlaying}
+            togglePlay={togglePlay}
+            next={next}
+            prev={prev}
+          />
 
           {/* THE REACTOR — experimental mode picker */}
           <AnimatePresence>
