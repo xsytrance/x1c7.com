@@ -7,6 +7,31 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (II) — The looks picker: the engine work becomes touchable
+
+`KineticLooksPanel` (engine component, synced): a glass card in the house
+language — fire a look with one click (it morphs in over ONE BAR of the
+real grid), ＋ SAVE captures the current control surface under a typed
+name, ⤓/⤒ export/import packs, right-click deletes a user look. Thin skin
+over looks.ts; the controller fence and migrations live there.
+
+Mounted in **/studio** (owner) — and the studio finally caught up with the
+engine: PASSES now go to 6 (4 = living backdrop, 5 = cinematic — the new
+default, 6 = dynamic+); it had been capped at 3 since before the backdrop
+existed, which silently hid ALL the Prism-integration work from the studio.
+Also mountable on the perf harness via `&looks=1`.
+
+**Verified headless**: chips render (3 built-ins + controls), clicking
+NOCTURNE morphed `backdrop.trails` 0.47 → 0.82 over the bar, the save flow
+produced a MIDNIGHT TEST chip, screenshot confirms the house styling.
+
+**#418 mystery closed**: it fired in dynamic mode with `&looks=1` — proof
+the hydration warning is the harness page's param-driven markup vs its
+static prerender (any non-default param), NOT the engine. Documented as
+harness-only in PRISM-INTEGRATION.md.
+
+---
+
 ## 2026-07-14 — Looks: the show's memory (presets with the controller fence)
 
 `src/lib/engine/looks.ts` (synced): capture the current control surface as

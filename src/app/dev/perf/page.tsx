@@ -13,6 +13,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { KineticStage } from "@/components/KineticStage";
+import { KineticLooksPanel } from "@/components/KineticLooksPanel";
 import type { ParticleMode } from "@/components/KineticParticles";
 import type { Track } from "@/lib/engineHost";
 import { supabase, type TrackRow } from "@/lib/supabase";
@@ -142,6 +143,8 @@ export default function PerfHarness() {
   return (
     <div className="fixed inset-0 bg-black">
       {track && <KineticStage track={track} pass={Number(params.get("pass")) || 4} mode={mode} forceParticle={weather} clock={() => tRef.current} />}
+      {/* &looks=1 → mount the looks picker (exercises fire/capture headlessly) */}
+      {params.get("looks") === "1" && <KineticLooksPanel className="absolute bottom-6 right-4 z-20" />}
     </div>
   );
 }

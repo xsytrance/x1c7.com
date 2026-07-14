@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { KineticStage, canPerform, MODES, type StageMode } from "@/components/KineticStage";
+import { KineticLooksPanel } from "@/components/KineticLooksPanel";
 import { supabase } from "@/lib/supabase";
 import { isPrivateHost } from "@/lib/privateHost";
 import type { Track } from "@/data/tracks";
@@ -12,7 +13,10 @@ import type { Track } from "@/data/tracks";
 // Every show pass is preserved as a "satellite" (moon) orbiting the planet.
 // The newest pass is the main show; older passes stay selectable forever.
 const PASSES = [
-  { id: 3, label: "Pass 3 · main show" },
+  { id: 6, label: "Pass 6 · dynamic+" },
+  { id: 5, label: "Pass 5 · cinematic" },
+  { id: 4, label: "Pass 4 · living backdrop" },
+  { id: 3, label: "Pass 3 · satellite" },
   { id: 2, label: "Pass 2 · satellite" },
   { id: 1, label: "Pass 1 · satellite" },
 ];
@@ -20,7 +24,7 @@ const PASSES = [
 export default function StudioPage() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
-  const [pass, setPass] = useState(3);
+  const [pass, setPass] = useState(5);
   const [mode, setMode] = useState<StageMode>("phrase");
   // Embed params — the Planet Studio app's WebView drives the stage with
   // ?track&draft=1&embed=1&autoplay=1&pass&mode. All additive; a plain visit
@@ -40,7 +44,7 @@ export default function StudioPage() {
     // Drafts are an owner-only concept — never overlay them on a public host.
     setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
     const p = Number(q.get("pass"));
-    if ([1, 2, 3].includes(p)) setPass(p);
+    if ([1, 2, 3, 4, 5, 6].includes(p)) setPass(p);
     const m = q.get("mode") as StageMode | null;
     if (m && MODES.some((x) => x.id === m)) setMode(m);
   }, []);
@@ -142,6 +146,9 @@ export default function StudioPage() {
           )}
         </div>
       )}
+
+      {/* Looks — fire/capture/share the show's saved looks (backdrop lives at pass 4+) */}
+      {!embed && live && pass >= 4 && <KineticLooksPanel className="absolute bottom-32 right-4 z-20" />}
 
       {/* Stage */}
       <div className="relative z-10 flex flex-1 items-center justify-center overflow-hidden px-4 pb-28">

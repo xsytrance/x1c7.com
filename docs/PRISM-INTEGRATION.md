@@ -199,9 +199,12 @@ Composes over the section-emotion motion; unpitched words are untouched.
 Verified A/B on the harness: control = constant 12px focus entrance, melody
 = interval-sized (23px on a 4-semitone leap).
 
-Known issue (pre-existing, non-blocking): React #418 hydration warning on
-`/dev/perf` in **focus mode** — fires with melody off too; dynamic mode is
-clean. Investigate separately.
+Known issue — **root-caused (2026-07-14), harness-only**: the React #418
+hydration warning on `/dev/perf` fires whenever a URL param changes the
+initial markup vs the static prerender (`mode=focus`, `looks=1`, …). It's
+the harness page's param-driven rendering, not the engine; harmless noise
+in headless runs. Fix if it ever matters: gate the page body on a mounted
+flag.
 
 **Stem X-ray** also shipped (2026-07-13): the feature bus multiplies every
 stem envelope by the live mixer's solo-aware `visualGain`, so a muted
