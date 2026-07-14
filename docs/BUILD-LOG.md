@@ -7,6 +7,26 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-14 (VIII) — The studio gets a public door (owner's call)
+
+The owner wants the studio ON the live site. The proxy grew a password
+door for public hosts: `STUDIO_KEY` env → a house-styled unlock form
+(no-JS, noindex) → correct key sets an HttpOnly/Secure cookie (SHA-256 of
+the key, scoped to /studio, 30 days). Wrong key = 401 "that's not it".
+No STUDIO_KEY configured = fail closed (redirect home, exactly as
+before). The tailnet passes untouched, and the WRITE APIs (/api/studio,
+/api/feed, /api/import) remain tailnet-only — the password opens the
+instrument, never the pipelines.
+
+Verified with VERCEL=1 simulation: form 200 → wrong 401 → right 303 +
+cookie → studio 200 → APIs still 404. TO GO LIVE: set STUDIO_KEY in the
+Vercel project env and redeploy. Also restarted prime's x1c7.service onto
+today's build (it had been serving yesterday's — the tailnet studio at
+http://100.96.211.44:7272/studio now carries the full instrument; the
+tailscale-serve HTTPS root belongs to nexus on :8787, untouched).
+
+---
+
 ## 2026-07-14 (VII) — The Shader SDK: Kinetica becomes a platform
 
 PRISM's v0.10 move, made against OUR contract: drop a `.frag` fragment-
