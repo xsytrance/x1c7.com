@@ -65,6 +65,10 @@ export interface EngineFeatures {
   wordX: number;
   wordY: number;
   wordPulse: number;
+  /** The song's measured key (melody.json): tonic pitch class 0-11, or -1
+   * unknown; keyMode 0 = major, 1 = minor, -1 unknown. */
+  keyPc: number;
+  keyMode: number;
 }
 
 /** A word leaving the stage, headed for the backdrop's ghost buffer. */
@@ -88,6 +92,7 @@ const F: EngineFeatures = {
   tier: "LOW", charge: 0, cut: false,
   dropIn: Infinity, beatsToDrop: Infinity,
   wordX: 0.5, wordY: 0.5, wordPulse: 0,
+  keyPc: -1, keyMode: -1,
 };
 
 let stems: StemData | null = null;
@@ -130,6 +135,13 @@ export const featureBus = {
     F.tier = "LOW"; F.charge = 0; F.cut = false;
     F.dropIn = Infinity; F.beatsToDrop = Infinity;
     F.wordX = 0.5; F.wordY = 0.5; F.wordPulse = 0;
+    F.keyPc = -1; F.keyMode = -1;
+  },
+
+  /** The song's measured key arrived (melody.json loads async). */
+  setKey(pc: number, minor: boolean) {
+    F.keyPc = pc;
+    F.keyMode = minor ? 1 : 0;
   },
 
   /** Stage-owned signals, written by the tick that already computes them

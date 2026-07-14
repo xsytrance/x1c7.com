@@ -585,18 +585,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     });
     return () => { on = false; };
   }, [track.id, track.planet, pass]);
-  // The feature bus: point it at this song's ground truth (measured stems +
-  // the analysis' emotion arc). The generative backdrop, LFOs, and stem-follow
-  // modulators all read the bus; it degrades gracefully when either is absent.
-  useEffect(() => {
-    featureBus.setSong(stems, track.planet?.analysis?.sections);
-    pendingGrade.current = null;
-  }, [stems, track.id, track.planet]);
   // ── MELODY SENSE ── the singer's measured notes (melody.json, written by
   // analyze_melody.py from the isolated lead vocal). When present, each word
   // wears the color of the note it was sung on — tonic = the theme's own hue,
   // harmonic distance = hue distance. Absent → words render exactly as before.
-  const [melody, setMelody] = useState<{ tonic: number; median: number; words: Map<number, MelodyWord> } | null>(null);
+  const [melody, setMelody] = useState<{ tonic: number; median: number; minor: boolean; words: Map<number, MelodyWord> } | null>(null);
   useEffect(() => {
     setMelody(null);
     if (pass < 3) return;
@@ -607,10 +600,21 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (!url) return;
     let on = true;
     loadMelody(url).then((m) => {
-      if (on && m) setMelody({ tonic: keyPc(m), median: medianMidi(m), words: melodyIndex(m) });
+      if (on && m) setMelody({ tonic: keyPc(m), median: medianMidi(m), minor: m.key.mode === "minor", words: melodyIndex(m) });
     });
     return () => { on = false; };
   }, [track.id, track.planet, pass]);
+  // The feature bus: point it at this song's ground truth (measured stems +
+  // the analysis' emotion arc). The generative backdrop, LFOs, and stem-follow
+  // modulators all read the bus; it degrades gracefully when either is absent.
+  // (Declared after melody state: the key is re-asserted AFTER the reset —
+  // stems and melody load in a race, and setSong wipes whatever the earlier
+  // fetch already declared.)
+  useEffect(() => {
+    featureBus.setSong(stems, track.planet?.analysis?.sections);
+    pendingGrade.current = null;
+    if (melody) featureBus.setKey(melody.tonic, melody.minor);
+  }, [stems, track.id, track.planet, melody]);
   const themeHue = useMemo(() => hexHue(palette[0] ?? track.color), [palette, track.color]);
   // Refs so the per-frame tick (ghost hand-off) reads current melody state
   // without rebuilding the rAF loop.

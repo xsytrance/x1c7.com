@@ -7,6 +7,29 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-13 (VIII) — Key & mode awareness: the field sits in the song's key
+
+The harmony story melody-sense started, completed backdrop-side:
+
+- The feature bus carries `keyPc`/`keyMode` from melody.json. **Race found
+  and fixed**: stems and melody load concurrently, and `setSong`'s reset
+  (re-run when stems resolve) wiped the key the earlier melody fetch had
+  declared — the key is now re-asserted in the same effect, keyed on both.
+- Scenes gained `keyColor()` — the tonic's hue, byte-identical to the hue
+  melody-sense words wear on the tonic — used where each scene *sings*:
+  AURORA's lead curtain, EMBERS' pre-drop heart, INK's choir sheen. Field
+  accents and word colors are now literally the same note.
+- The finishing pass grades by MODE: major lifts the light ~3%, minor cools
+  the shadows toward blue — a feeling, not a filter. Unknown key touches
+  nothing.
+
+**Verified A/B on the harness**: `melody=1` → bus reads keyPc 10 / keyMode 1
+(the test song's A# minor exactly); `melody=0` → −1/−1 and the grade path
+stays inert. Zero console errors. With 43 songs' melody.json live on R2,
+this is live-audience-visible immediately.
+
+---
+
 ## 2026-07-13 (VII) — A/B section decks: the world changes with the song's structure
 
 PRISM's center of gravity — two decks and a crossfader — turned toward

@@ -28,6 +28,7 @@ import { Program, QUAD_VS, drawQuad, bindRT, createRT, disposeRT, GLSL_NOISE, ty
 import { P } from "./params";
 import { featureBus, type EngineFeatures, type WordGhost } from "./features";
 import { stemMixStore } from "@/lib/stemMix";
+import { hexHue } from "./melody";
 import type { StemName } from "@/lib/stemSense";
 
 const SCENE_HEADER = `#version 300 es
@@ -38,9 +39,15 @@ uniform float uTime, uSeed;
 uniform float uDrums, uBass, uVoice, uChoir, uBed;
 uniform float uLevel, uKick, uBeat, uBeatPhase;
 uniform float uCharge, uEmo, uWordPulse, uIntensity;
+uniform float uKeyHue; // tonic hue 0..1 (matches the words' tonic color), -1 unknown
 uniform vec2 uWord;
 uniform vec3 uPal0, uPal1, uPal2;
 ${GLSL_NOISE}
+// The song's home color: the tonic's hue when the key is known (the same
+// hue melody-sense words wear on the tonic), else the fallback palette slot.
+vec3 keyColor(vec3 fallback) {
+  return uKeyHue < 0.0 ? fallback : hsl2rgb(vec3(uKeyHue, 0.72, 0.62));
+}
 `;
 
 // ── SCENE 1: AURORA — curtains of light over a dark horizon ─────────────────
@@ -61,7 +68,7 @@ void main() {
     float d = abs(x - center);
     float band = exp(-d * d * (70.0 - 30.0 * uCharge));
     float aloft = pow(max(p.y, 0.0), 0.6 + fi * 0.2);
-    vec3 pc = i == 0 ? uPal0 : (i == 1 ? uPal1 : uPal2);
+    vec3 pc = i == 0 ? keyColor(uPal0) : (i == 1 ? uPal1 : uPal2); // lead curtain sings the tonic
     col += pc * band * (0.22 + uVoice * 0.85 + uBeat * 0.18) * aloft;
   }
   col += uPal1 * exp(-p.y * 3.0) * uBass * 0.30;                 // bass ground-haze
@@ -87,7 +94,7 @@ void main() {
   col += uPal2 * ember * (0.5 + uDrums * 0.9 + uKick * 1.8);     // drum-lit embers
   vec2 w = (uWord - 0.5) * vec2(asp, 1.0);
   col += uPal2 * exp(-dot(p - w, p - w) * 7.0) * uWordPulse * 0.35; // the word warms its spot
-  col += uPal2 * exp(-dot(p, p) * 5.0) * (uCharge * 0.7 + uKick * 0.25); // pre-drop heart
+  col += keyColor(uPal2) * exp(-dot(p, p) * 5.0) * (uCharge * 0.7 + uKick * 0.25); // pre-drop heart glows the tonic
   fragColor = vec4(col * uIntensity, 1.0);
 }`;
 
@@ -107,7 +114,7 @@ void main() {
   float r2 = 1.0 - abs(2.0 * fbm(p * 5.5 - vec2(t * 1.7, t)) - 1.0);
   float vein = pow(r1 * 0.65 + r2 * 0.35, 3.0 + 2.0 * (1.0 - uBass));
   vec3 col = mix(uPal0 * 0.22, uPal1, vein);
-  col += uPal2 * pow(r2, 8.0) * (0.25 + uChoir * 1.4 + uBeat * 0.2); // choir sheen
+  col += keyColor(uPal2) * pow(r2, 8.0) * (0.25 + uChoir * 1.4 + uBeat * 0.2); // choir sheen in the tonic
   col *= 0.5 + uLevel * 0.85 + uEmo * 0.2;
   fragColor = vec4(col * uIntensity, 1.0);
 }`;
@@ -229,7 +236,7 @@ in vec2 vUv; out vec4 fragColor;
 uniform sampler2D uTex;
 uniform vec2 uRes;
 uniform sampler2D uGhost, uXray;
-uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt;
+uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt, uKeyMinor;
 float hash21(vec2 p) { p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
 vec3 hueRotate(vec3 c, float a) {
   const vec3 W = vec3(0.299, 0.587, 0.114);
@@ -258,6 +265,12 @@ void main() {
   col *= max(vig, 0.0) * uBrightness * (1.0 - uDrop * 0.18);
   float luma = dot(col, vec3(0.299, 0.587, 0.114));
   col = mix(vec3(luma), col, uSaturation * (1.0 - uDrop * 0.35));
+  // ── MODE GRADE ── the field sits in the song's mode: major lifts the
+  // light a touch, minor cools the shadows. Subtle by design — a feeling,
+  // not a filter. (uKeyMinor: -1 unknown → untouched, 0 major, 1 minor.)
+  if (uKeyMinor >= 0.0) {
+    col = mix(col * 1.03, col * vec3(0.965, 0.99, 1.035), uKeyMinor);
+  }
   col += (hash21(vUv * uRes + fract(uTime) * 100.0) - 0.5) * uGrain;
   fragColor = vec4(col, 1.0);
 }`;
@@ -333,6 +346,7 @@ export class BackdropRenderer {
   private fade: { to: number; startBeat: number; beats: number } | null = null;
   private time = 0;
   private pal: [number, number, number][] = [[0.3, 0.8, 1], [1, 0.3, 0.6], [1, 0.85, 0.4]];
+  private pal0Hue = 190; // theme hue (deg) — the tonic wears it, like the words
   private seed = 0;
   private sceneIdx = 0;
   // one shared rasterizer for ghost words: text → alpha texture, per stamp
@@ -370,6 +384,7 @@ export class BackdropRenderer {
       hexToRgb(px[1] ?? px[0] ?? "#ff2440"),
       hexToRgb(px[2] ?? px[px.length - 1] ?? "#ffd166"),
     ];
+    this.pal0Hue = hexHue(px[0] ?? "#43f7ff");
     const h = fnv1a(seedStr);
     this.seed = (h % 1000) / 1000;
     this.sceneIdx = h % SCENE_SOURCES.length;
@@ -443,6 +458,7 @@ export class BackdropRenderer {
       .f("uCharge", F.charge).f("uEmo", F.sectionIntensity)
       .f("uWordPulse", F.wordPulse)
       .f("uIntensity", P.get("backdrop.intensity"))
+      .f("uKeyHue", F.keyPc >= 0 ? this.pal0Hue / 360 : -1) // tonic = theme hue, like the words
       .v2("uWord", F.wordX, 1 - F.wordY) // DOM y-down → GL y-up
       .v3("uPal0", p0[0], p0[1], p0[2])
       .v3("uPal1", p1[0], p1[1], p1[2])
@@ -601,6 +617,7 @@ export class BackdropRenderer {
       .f("uBrightness", P.get("backdrop.brightness"))
       .f("uDrop", drop)
       .f("uGhostAmt", ghostAmt)
+      .f("uKeyMinor", F.keyMode)
       .tex("uTex", ping.tex)
       .tex("uGhost", ghostPing.tex)
       .tex("uXray", xrayRT.tex);

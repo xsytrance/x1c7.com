@@ -225,25 +225,31 @@ deck A on the same frame (no one-frame flash). Pinning `backdrop.scene`
 disables the decks. Verified: arm → bar-locked start → mix → land, on the
 86.13 BPM test grid.
 
+**Key & mode awareness** also shipped (2026-07-13): the bus carries
+`keyPc`/`keyMode` from melody.json (re-asserted after `setSong` — stems and
+melody load in a race and the reset wiped the earlier fetch's key). Scenes
+get `keyColor()` — the tonic's hue, identical to the hue melody-sense words
+wear on the tonic — used for AURORA's lead curtain, EMBERS' pre-drop heart,
+INK's choir sheen, so field accents and word colors sing the same note. The
+finishing pass grades by MODE: major lifts the light ~3%, minor cools the
+shadows — a feeling, not a filter.
+
 Next, roughly in order of jaw-drop per effort:
 1. **Offline PRISM-grade per-stem analysis** — chroma/tier baked into
    stems.json v2 (extend `scripts/stem-analysis`); key now comes free from
    melody.json.
-2. **Key → palette harmony, backdrop-side** — feed `keyPc` as a scene
-   uniform (`uKeyHue`) so the field itself sits in the song's key, not just
-   the words.
-3. **Presets/banks with morphing + look filtering**; `.kinetica` files get
+2. **Presets/banks with morphing + look filtering**; `.kinetica` files get
    versioned migrations (PRISM's `migrate.js` pattern) from day one.
-4. **Automation recording** — ride the deck live once, bake it into the
+3. **Automation recording** — ride the deck live once, bake it into the
    song's choreography.
-5. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
+4. **Studio adoption of PRISM's craft** — modulation ribbons, ☆ pinning,
    `?` shortcut overlay, SHOW/CHOREOGRAPH/LIBRARY workspaces — in x1c7's
    own palette (#05030b void, #43f7ff plasma, #ff2440 signal).
-6. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
+5. **Shader SDK** — `.frag` scenes against our (richer) uniform contract,
     bundled into shareable packs.
-7. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
+6. **OSC bridge → the B2B set** — Kinetica broadcasts its ground-truth
     clock; PRISM follows. Two engines, one tempo, side by side.
-8. **Recording via single-canvas compositing**, **Art-Net room lighting**
+7. **Recording via single-canvas compositing**, **Art-Net room lighting**
     that anticipates the drop, **collector-frame bezels**.
 
 Deliberately not doing: MilkDrop import, MIDI, neural stem separation
