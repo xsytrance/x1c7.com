@@ -1,26 +1,24 @@
 "use client";
 
-// THE STUDIO — the instrument. UI overhaul phase 2 (PRISM's Direction A in
-// x1c7's skin): three workspaces on one toggle — SHOW (watch, no chrome),
-// DIRECT (the full control surface below), SETUP (song/pass/mode, visited
-// once) — live telemetry in the top bar, looks as a pad grid, scenes with
-// A/B deck chips, the self-building param panel, and a deck strip along the
-// bottom. Embed behavior (the Planet Studio WebView) is unchanged.
+// THE STUDIO — the instrument, 2026-07 redesign: one guided flow instead of
+// workspaces. The Marquee (pick a song, three plain choices, one big button)
+// leads to the stage; an easy play surface (Vibes · Backdrops · Finger paint
+// · Surprise me) covers the core, and the whole pro cockpit — decks, loop
+// recorder, shader loader, the param registry — waits behind one persistent
+// "I know what I'm doing" switch. Helper copy everywhere; jargon only in pro.
+//
+// Contracts kept: /studio?embed=1 (the Planet Studio WebView) renders the
+// bare stage exactly as before, and ?pass= ?mode= ?track= ?draft= ?autoplay=
+// all still steer the engine.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useTracks } from "@/lib/useTracks";
 import { useMusicPlayer } from "@/components/MusicPlayerContext";
 import { KineticStage, canPerform, MODES, type StageMode } from "@/components/KineticStage";
 import { KineticParamPanel } from "@/components/KineticParamPanel";
 import { KineticTelemetry } from "@/components/KineticTelemetry";
-import { looksStore, type Look } from "@/lib/engine/looks";
-import { ensureAutomation } from "@/lib/engine/automation";
-import { customScenes } from "@/lib/engine/customScenes";
-import { featureBus } from "@/lib/engine/features";
-import { deckInfo } from "@/lib/engine/backdrop";
 import { P } from "@/lib/engine/params";
-import { themeStore } from "@/lib/themeStore";
 import { BottomSheet, type SheetSnap } from "@/components/mobile/BottomSheet";
 import { XYPad } from "@/components/mobile/XYPad";
 import { VibeDial } from "@/components/mobile/VibeDial";
@@ -29,7 +27,12 @@ import { useStageGestures } from "@/lib/useStageGestures";
 import { supabase } from "@/lib/supabase";
 import { isPrivateHost } from "@/lib/privateHost";
 import type { Track } from "@/data/tracks";
+import { Marquee } from "@/components/studio/Marquee";
+import { VibeShelf, BackdropShelf, SurpriseButton, HintToast } from "@/components/studio/EasyDock";
+import { VibePads, BackdropRail, DeckStrip, LyricsInbox, BeatJewel } from "@/components/studio/pro";
+import { COPY, LS, VISUAL_LEVELS, passToLevel } from "@/components/studio/copy";
 
+// the engine's native sizes, for the pro header select
 const PASSES = [
   { id: 6, label: "Pass 6 · dynamic+" },
   { id: 5, label: "Pass 5 · cinematic" },
@@ -39,370 +42,30 @@ const PASSES = [
   { id: 1, label: "Pass 1 · satellite" },
 ];
 
-type Workspace = "SHOW" | "DIRECT" | "SETUP";
-// The pocket instrument's sheet tabs (mobile v2): PLAY = deck + automation,
-// XY = the two-param performance pad, DIAL = looks as a rotary, MORE = depth.
-type PocketTab = "PLAY" | "XY" | "DIAL" | "MORE";
-const POCKET_TABS: PocketTab[] = ["PLAY", "XY", "DIAL", "MORE"];
-const SCENE_SWATCH: Record<string, string> = {
-  AURORA: "linear-gradient(120deg,#0a1e33,#155e75,#0a1e33)",
-  EMBERS: "radial-gradient(circle at 60% 50%,#7f1d1d,#2d0a14)",
-  INK: "linear-gradient(160deg,#171226,#3b2a63,#171226)",
-};
-
-const barSec = () => {
-  const bpm = featureBus.F.bpm;
-  return bpm > 0 ? (4 * 60) / bpm : 2.4;
-};
-
-// ── Looks as a 4×4 pad grid (fire = morph in over one bar) ──────────────────
-function LooksPads() {
-  const [looks, setLooks] = useState<Look[]>([]);
-  const [fired, setFired] = useState<string | null>(null);
-  const refresh = useCallback(() => setLooks(looksStore.list()), []);
-  useEffect(refresh, [refresh]);
-  const fire = (l: Look) => {
-    looksStore.fire(l.id, barSec());
-    setFired(l.id);
-    window.setTimeout(() => setFired((x) => (x === l.id ? null : x)), 900);
-  };
-  const save = () => {
-    const name = window.prompt("Name this look:");
-    if (name !== null) { looksStore.capture(name || "untitled"); refresh(); }
-  };
-  const pads = looks.slice(0, 15);
-  return (
-    <div>
-      <div className="flex items-center gap-2 font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">
-        Looks
-      </div>
-      <div className="mt-2 grid grid-cols-4 gap-1.5">
-        {pads.map((l) => {
-          const builtin = l.id.startsWith("builtin:");
-          const hot = fired === l.id;
-          return (
-            <button
-              key={l.id}
-              onClick={() => fire(l)}
-              onContextMenu={(e) => { if (!builtin) { e.preventDefault(); looksStore.remove(l.id); refresh(); } }}
-              title={`${l.name} — click to fire (morphs over one bar)${builtin ? "" : " · right-click deletes"}`}
-              className="flex aspect-square items-end rounded-md border p-1 text-left font-mono text-[7.5px] uppercase leading-tight tracking-wide transition"
-              style={{
-                borderColor: hot ? "var(--inst-plasma)" : "var(--inst-line)",
-                color: hot ? "var(--inst-plasma)" : builtin ? "var(--inst-dim)" : "var(--inst-warn)",
-                background: "var(--inst-s2)",
-                boxShadow: hot ? "0 0 14px color-mix(in srgb, var(--inst-plasma) 40%, transparent)" : "none",
-              }}
-            >
-              {builtin ? "✦ " : ""}{l.name.slice(0, 12)}
-            </button>
-          );
-        })}
-        <button
-          onClick={save}
-          title="Capture the current look"
-          className="grid aspect-square place-items-center rounded-md border border-dashed border-[var(--inst-line)] font-mono text-sm text-[var(--inst-faint)] hover:border-[var(--inst-warn)] hover:text-[var(--inst-warn)]"
-        >＋</button>
-      </div>
-    </div>
-  );
-}
-
-// ── Scenes rail: AUTO decks vs a pinned scene, with live A/B chips — plus
-// the Shader SDK loader: drop a .frag, it becomes a scene. ──────────────────
-function ScenesRail() {
-  const [, force] = useState(0);
-  const [fragError, setFragError] = useState<string | null>(null);
-  const fragRef = { current: null as HTMLInputElement | null };
-  useEffect(() => {
-    const id = window.setInterval(() => force((n) => n + 1), 250);
-    return () => window.clearInterval(id);
-  }, []);
-  const pinned = P.getStr("backdrop.scene");
-  const info = deckInfo();
-  const customs = customScenes.list();
-  const loadFrag = async (file: File | undefined) => {
-    if (!file) return;
-    setFragError(null);
-    try {
-      const name = customScenes.add(file.name, await file.text());
-      P.set("backdrop.scene", name, "ui"); // pin the fresh scene so it's on stage
-    } catch (e) {
-      // the compiler's line-numbered listing, trimmed to the point
-      setFragError(String(e instanceof Error ? e.message : e).split("\n").slice(0, 4).join("\n"));
-    }
-  };
-  return (
-    <div>
-      <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">Scenes</div>
-      <div className="mt-2 flex flex-col gap-1.5">
-        <button
-          onClick={() => P.set("backdrop.scene", "AUTO", "ui")}
-          className="flex items-center gap-2 rounded-lg border px-2 py-1.5 font-mono text-[10px] uppercase tracking-[0.14em]"
-          style={{ borderColor: pinned === "AUTO" ? "var(--inst-plasma)" : "var(--inst-line)", color: pinned === "AUTO" ? "var(--inst-plasma)" : "var(--inst-dim)", background: "var(--inst-s2)" }}
-        >
-          AUTO<span className="ml-auto text-[8px] text-[var(--inst-faint)]">sections drive the decks</span>
-        </button>
-        {[...Object.entries(SCENE_SWATCH), ...customs.map((c) => [c.name, `linear-gradient(135deg, hsl(${(c.name.length * 47) % 360} 60% 22%), hsl(${(c.name.length * 47 + 90) % 360} 70% 40%))`] as [string, string])].map(([name, bg]) => {
-          const custom = !(name in SCENE_SWATCH);
-          return (
-            <button
-              key={name}
-              onClick={() => P.set("backdrop.scene", pinned === name ? "AUTO" : name, "ui")}
-              onContextMenu={(e) => { if (custom) { e.preventDefault(); customScenes.remove(name); } }}
-              title={`${pinned === name ? "Pinned — click to release to AUTO" : "Pin this scene (disables the decks)"}${custom ? " · right-click removes · re-load a .frag with the same @name to hot-replace" : ""}`}
-              className="flex items-center gap-2 rounded-lg border px-2 py-1.5"
-              style={{ borderColor: pinned === name ? "var(--inst-plasma)" : "var(--inst-line)", background: "var(--inst-s2)" }}
-            >
-              <span className="h-6 w-10 flex-none rounded" style={{ background: bg }} />
-              <span className="font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--inst-ink)]">{custom ? "⌁ " : ""}{name}</span>
-              <span className="ml-auto flex gap-1">
-                {info?.a === name && <b className="rounded border border-[var(--inst-plasma)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-plasma)]">A</b>}
-                {info?.b === name && <b className="rounded border border-[var(--inst-warn)] px-1.5 font-mono text-[8px] font-normal text-[var(--inst-warn)]">B</b>}
-              </span>
-            </button>
-          );
-        })}
-        <button
-          onClick={() => fragRef.current?.click()}
-          title="Shader SDK — load a .frag fragment shader as a live scene (full stem/word/key uniform contract; // @name and // @param directives)"
-          className="flex min-h-[28px] items-center justify-center gap-2 rounded-lg border border-dashed border-[var(--inst-line)] font-mono text-[10px] uppercase tracking-[0.14em] text-[var(--inst-faint)] hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)]"
-        >＋ .frag</button>
-        <input ref={(el) => { fragRef.current = el; }} type="file" accept=".frag,.glsl,text/plain" className="hidden"
-          onChange={(e) => { loadFrag(e.target.files?.[0]); e.target.value = ""; }} />
-        {fragError && (
-          <pre className="max-h-28 overflow-y-auto whitespace-pre-wrap rounded-lg border border-[var(--inst-signal)] bg-black/40 p-2 font-mono text-[8.5px] leading-snug text-[var(--inst-signal)]">{fragError}</pre>
-        )}
-      </div>
-    </div>
-  );
-}
-
-// ── Deck strip: what the section decks are doing, live ──────────────────────
-function DeckStrip({ bare = false }: { bare?: boolean }) {
-  const [, force] = useState(0);
-  useEffect(() => {
-    const id = window.setInterval(() => force((n) => n + 1), 150);
-    return () => window.clearInterval(id);
-  }, []);
-  const info = deckInfo();
-  const fadeBeats = P.get("backdrop.fadeBeats");
-  return (
-    <div className={`flex flex-wrap items-center gap-x-4 gap-y-3 px-4 py-2 ${bare ? "" : "border-t border-[var(--inst-line)] bg-[var(--inst-s1)]"}`}>
-      <div className="relative h-10 w-[72px] flex-none rounded-md border border-[var(--inst-line)]" style={{ background: SCENE_SWATCH[info?.a ?? "AURORA"] }}>
-        <b className="absolute left-1.5 top-1 font-mono text-[8px] font-normal tracking-[0.18em] text-[var(--inst-plasma)]">A · {info?.a ?? "—"}</b>
-      </div>
-      <div className="relative h-1.5 w-52 max-w-[24vw] rounded-full bg-[#221a35]">
-        <div className="absolute inset-y-0 left-0 rounded-full bg-[var(--inst-warn)]" style={{ width: `${(info?.mix ?? 0) * 100}%`, opacity: 0.85 }} />
-      </div>
-      <div className="relative h-10 w-[72px] flex-none rounded-md border border-[var(--inst-line)]" style={{ background: info?.b ? SCENE_SWATCH[info.b] : "var(--inst-s2)" }}>
-        <b className="absolute left-1.5 top-1 font-mono text-[8px] font-normal tracking-[0.18em] text-[var(--inst-warn)]">B · {info?.b ?? "—"}</b>
-      </div>
-      <label className="ml-2 flex items-center gap-2 font-mono text-[8.5px] uppercase tracking-[0.15em] text-[var(--inst-dim)]">
-        Fade
-        <input
-          type="range" min={2} max={16} step={1} value={fadeBeats}
-          onChange={(e) => P.set("backdrop.fadeBeats", +e.target.value, "ui")}
-          className="h-1 w-20 accent-[var(--inst-plasma)]"
-        />
-        <span className="tabular-nums text-[var(--inst-plasma)]">{fadeBeats} BT</span>
-      </label>
-      <span className="font-mono text-[8.5px] uppercase tracking-[0.15em] text-[var(--inst-faint)]">quantize · bar</span>
-
-      {/* ── AUTOMATION — arm, ride sliders, it loops forever on the grid ── */}
-      <AutomationCluster />
-
-      <span className="ml-auto font-mono text-[8.5px] uppercase tracking-[0.15em] text-[var(--inst-faint)]">the song&apos;s sections drive the fader</span>
-    </div>
-  );
-}
-
-// ── LYRICS INBOX (owner, tailnet only — the API 404s on public hosts) ──────
-// The easy way to hand corrected lyrics to the alignment pipeline: pick a
-// flagged song, paste the real words, save. realign-inbox.mjs does the rest
-// (align → refine → gate → apply → melody refresh).
-function LyricsInbox() {
-  const [flagged, setFlagged] = useState<{ id: string; reason: string; severity: string; inbox: boolean }[]>([]);
-  const [sel, setSel] = useState("");
-  const [text, setText] = useState("");
-  const [msg, setMsg] = useState<string | null>(null);
-  const refresh = useCallback(() => {
-    fetch("/api/studio/lyrics").then((r) => (r.ok ? r.json() : null)).then((d) => {
-      if (d?.flagged) { setFlagged(d.flagged); if (!sel && d.flagged.length) setSel(d.flagged[0].id); }
-    }).catch(() => {});
-  }, [sel]);
-  useEffect(refresh, [refresh]);
-  if (!flagged.length) return null;
-  const cur = flagged.find((f) => f.id === sel);
-  const save = async () => {
-    setMsg(null);
-    const r = await fetch("/api/studio/lyrics", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify({ id: sel, lyrics: text }),
-    }).catch(() => null);
-    const d = await r?.json().catch(() => null);
-    if (r?.ok) { setMsg(`✓ saved (${d.words} words) — run: node scripts/alignment/realign-inbox.mjs`); setText(""); refresh(); }
-    else setMsg(`✗ ${d?.error ?? "save failed"}`);
-  };
-  return (
-    <div className="relative z-10 mx-auto mt-4 w-full max-w-lg rounded-2xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-5 backdrop-blur-md">
-      <div className="flex items-baseline gap-2">
-        <span className="font-mono text-[9px] uppercase tracking-[0.3em]" style={{ color: "var(--inst-warn)" }}>Lyrics inbox</span>
-        <span className="font-mono text-[9px] uppercase tracking-wider text-[var(--inst-faint)]">{flagged.length} songs need words · owner only</span>
-      </div>
-      <select value={sel} onChange={(e) => { setSel(e.target.value); setText(""); setMsg(null); }}
-        className="mt-2 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]">
-        {flagged.map((f) => <option key={f.id} value={f.id}>{f.inbox ? "📥 " : ""}{f.id} — {f.severity}</option>)}
-      </select>
-      {cur && <p className="mt-2 font-mono text-[10px] leading-4 text-[var(--inst-dim)]">{cur.reason}{cur.inbox ? " · a submission is already waiting in the inbox" : ""}</p>}
-      <textarea
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-        placeholder="paste the real lyrics here — plain text, one line per sung line ([Section] headers are fine, they're stripped)"
-        rows={7}
-        className="mt-2 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] p-3 font-mono text-[11px] leading-5 text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]"
-      />
-      <button onClick={save} disabled={text.trim().length < 20}
-        className="mt-2 w-full rounded-lg border py-2.5 font-mono text-[10px] uppercase tracking-[0.25em] transition enabled:hover:scale-[1.01] disabled:opacity-40"
-        style={{
-          borderColor: "color-mix(in srgb, var(--inst-warn) 50%, transparent)",
-          background: "color-mix(in srgb, var(--inst-warn) 8%, transparent)",
-          color: "var(--inst-warn)",
-        }}>
-        ＋ Save to the inbox
-      </button>
-      {msg && <p className="mt-2 font-mono text-[10px] tracking-wide" style={{ color: msg.startsWith("✓") ? "var(--inst-ok)" : "var(--inst-signal)" }}>{msg}</p>}
-    </div>
-  );
-}
-
-function AutomationCluster() {
-  const [, force] = useState(0);
-  useEffect(() => {
-    const id = window.setInterval(() => force((n) => n + 1), 150);
-    return () => window.clearInterval(id);
-  }, []);
-  const auto = ensureAutomation();
-  const armed = P.getBool("auto.record");
-  const playing = P.getBool("auto.play");
-  const recording = auto.state === "recording";
-  const waiting = auto.state === "waiting";
-  return (
-    <div className="flex items-center gap-2 border-l border-[var(--inst-line)] pl-4">
-      <button
-        onClick={() => P.set("auto.record", !armed, "code")}
-        title={recording ? "Recording the take — disarm to stop early" : waiting ? "Armed — the take starts on the next bar" : "Arm automation: ride sliders for one loop, it replays forever"}
-        className="flex min-h-[24px] items-center gap-1.5 rounded-md border px-2 font-mono text-[9px] uppercase tracking-[0.15em]"
-        style={armed
-          ? { borderColor: "var(--inst-signal)", color: "var(--inst-signal)", boxShadow: recording ? "0 0 12px color-mix(in srgb, var(--inst-signal) 55%, transparent)" : "none" }
-          : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
-      >
-        <span className="inline-block h-2 w-2 rounded-full" style={{ background: armed ? "var(--inst-signal)" : "#241b36", opacity: waiting ? 0.5 : 1 }} />
-        {recording ? "take…" : waiting ? "on the bar" : "● rec"}
-      </button>
-      <select
-        value={P.getStr("auto.length")}
-        onChange={(e) => P.set("auto.length", e.target.value, "code")}
-        title="Loop length of the take"
-        className="h-6 rounded border border-[var(--inst-line)] bg-[var(--inst-s2)] px-1 font-mono text-[9px] uppercase text-[var(--inst-dim)] outline-none focus:border-[var(--inst-plasma)]"
-      >
-        {["1 BAR", "2 BARS", "4 BARS", "8 BARS"].map((o) => <option key={o} value={o}>{o}</option>)}
-      </select>
-      {auto.hasTracks() && (
-        <>
-          <button
-            onClick={() => P.set("auto.play", !playing, "code")}
-            title={playing ? "Automation looping — click to hold" : "Resume the recorded loop"}
-            className="min-h-[24px] rounded-md border px-2 font-mono text-[9px] uppercase tracking-[0.15em]"
-            style={playing ? { borderColor: "var(--inst-warn)", color: "var(--inst-warn)" } : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
-          >{playing ? `▶ ${auto.laneCount()} lane${auto.laneCount() > 1 ? "s" : ""}` : "▶ play"}</button>
-          <button
-            onClick={() => auto.clear()}
-            title="Clear the recorded automation"
-            className="min-h-[24px] rounded-md border border-[var(--inst-line)] px-1.5 font-mono text-[9px] text-[var(--inst-faint)] hover:text-[var(--inst-signal)]"
-          >✕</button>
-        </>
-      )}
-    </div>
-  );
-}
-
-// ── The telemetry jewel (mobile top bar): one dot breathing on --beat + BPM.
-// Perf-lite scopes the global --beat write to the stage subtree, so the
-// jewel mirrors themeStore's JS beat onto itself — it breathes everywhere.
-// Tap it and the full compact telemetry row takes the spot for 4 seconds.
-function BeatJewel({ className = "" }: { className?: string }) {
-  const [full, setFull] = useState(false);
-  const [bpm, setBpm] = useState("—");
-  const timer = useRef(0);
-  const dotRef = useRef<HTMLButtonElement>(null);
-  useEffect(() => {
-    const id = window.setInterval(() => {
-      const b = featureBus.F.bpm;
-      setBpm(b > 0 ? b.toFixed(0) : "—");
-    }, 500);
-    return () => window.clearInterval(id);
-  }, []);
-  useEffect(() => {
-    if (full) return;
-    let raf = 0;
-    const tickBeat = () => {
-      dotRef.current?.style.setProperty("--beat", themeStore.get().beat.toFixed(3));
-      raf = requestAnimationFrame(tickBeat);
-    };
-    raf = requestAnimationFrame(tickBeat);
-    return () => cancelAnimationFrame(raf);
-  }, [full]);
-  useEffect(() => () => window.clearTimeout(timer.current), []);
-  if (full) {
-    return (
-      <button
-        type="button"
-        aria-label="Hide telemetry"
-        onClick={() => { window.clearTimeout(timer.current); setFull(false); }}
-        className={`flex ${className}`}
-      >
-        <KineticTelemetry compact />
-      </button>
-    );
-  }
-  return (
-    <button
-      ref={dotRef}
-      type="button"
-      aria-label="Show telemetry"
-      onClick={() => {
-        setFull(true);
-        window.clearTimeout(timer.current);
-        timer.current = window.setTimeout(() => setFull(false), 4000);
-      }}
-      className={`flex min-h-[36px] items-center gap-2 ${className}`}
-      data-beat-jewel
-    >
-      <span
-        aria-hidden
-        className="inline-block h-2.5 w-2.5 rounded-full bg-[var(--inst-signal)]"
-        style={{ transform: "scale(calc(1 + var(--beat) * 0.6))" }}
-      />
-      <span className="font-mono text-[11px] tabular-nums text-[var(--inst-plasma)]">
-        {bpm}<span className="ml-1 text-[8px] uppercase tracking-[0.22em] text-[var(--inst-dim)]">bpm</span>
-      </span>
-    </button>
-  );
-}
+// easy pocket tabs (mobile portrait): the wheel, the pad, the backdrops, depth
+type EasyTab = "VIBES" | "PAINT" | "SCENE" | "MORE";
+const EASY_TABS: { id: EasyTab; label: string }[] = [
+  { id: "VIBES", label: "vibes" },
+  { id: "PAINT", label: "paint" },
+  { id: "SCENE", label: "backdrop" },
+  { id: "MORE", label: "more" },
+];
+// pro pocket tabs (unchanged from the pocket instrument v2)
+type ProTab = "PLAY" | "XY" | "DIAL" | "MORE";
+const PRO_TABS: ProTab[] = ["PLAY", "XY", "DIAL", "MORE"];
 
 export default function StudioPage() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
   const [pass, setPass] = useState(5);
   const [mode, setMode] = useState<StageMode>("phrase");
-  const [ws, setWs] = useState<Workspace>("DIRECT");
-  // The pocket instrument (mobile only): sheet tab + snap, and the two
-  // matchMedia facts that pick the chrome — coarse pointer (gestures) and
-  // landscape-coarse (the mini-desktop rails instead of the sheet).
-  const [tab, setTab] = useState<PocketTab>("PLAY");
+  const [pro, setPro] = useState(false);
+  const [showSetup, setShowSetup] = useState(false); // "Song" button re-opens the Marquee over a live stage
+  const [hideUI, setHideUI] = useState(false); // "Just watch"
+  const [tab, setTab] = useState<EasyTab>("VIBES");
+  const [proTab, setProTab] = useState<ProTab>("PLAY");
   const [snap, setSnap] = useState<SheetSnap>("peek");
+  const [paint, setPaint] = useState(false); // desktop finger-paint overlay
   const [coarse, setCoarse] = useState(false);
   const [mobileLandscape, setMobileLandscape] = useState(false);
   const [embed, setEmbed] = useState(false);
@@ -414,15 +77,17 @@ export default function StudioPage() {
   const [autoLaunched, setAutoLaunched] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("x1c7-lyric-style") as StageMode | null;
+    const saved = localStorage.getItem(LS.lyricStyle) as StageMode | null;
     if (saved && MODES.some((m) => m.id === saved)) setMode(saved);
-    const savedWs = localStorage.getItem("x1c7-studio-ws") as Workspace | null;
-    if (savedWs === "SHOW" || savedWs === "DIRECT" || savedWs === "SETUP") setWs(savedWs);
+    setPro(localStorage.getItem(LS.pro) === "1");
+    const savedLevel = VISUAL_LEVELS.find((v) => v.id === localStorage.getItem(LS.visualLevel));
+    if (savedLevel) setPass(savedLevel.pass);
     const q = new URLSearchParams(window.location.search);
     setEmbed(q.get("embed") === "1");
     setWantAutoplay(q.get("autoplay") === "1");
     setWantDraft(q.get("draft") === "1" && isPrivateHost(window.location.hostname));
     setOwnerHost(isPrivateHost(window.location.hostname));
+    if (q.get("pro") === "1") setPro(true);
     // Mobile render profile: the studio carries the FULL engine on phones
     // (forceBackdrop below) — pay for it in resolution, not features. The
     // STARTING scale follows viewport size (an S24 Ultra earns more pixels
@@ -448,8 +113,13 @@ export default function StudioPage() {
     return () => { mqCoarse.removeEventListener("change", sync); mqLand.removeEventListener("change", sync); };
   }, []);
 
-  const pickWs = (w: Workspace) => { setWs(w); localStorage.setItem("x1c7-studio-ws", w); };
-  const pickMode = (m: StageMode) => { setMode(m); localStorage.setItem("x1c7-lyric-style", m); };
+  const pickPro = (on: boolean) => { setPro(on); localStorage.setItem(LS.pro, on ? "1" : "0"); };
+  const pickMode = (m: StageMode) => { setMode(m); localStorage.setItem(LS.lyricStyle, m); };
+  const pickLevel = (id: (typeof VISUAL_LEVELS)[number]["id"]) => {
+    const lvl = VISUAL_LEVELS.find((v) => v.id === id)!;
+    setPass(lvl.pass);
+    localStorage.setItem(LS.visualLevel, id);
+  };
 
   const timed = useMemo(() => tracks.filter(canPerform), [tracks]);
   const [selectedId, setSelectedId] = useState<string>("");
@@ -473,87 +143,47 @@ export default function StudioPage() {
     return () => { on = false; };
   }, [wantDraft, selectedId]);
 
-  const launch = (t: Track) => {
+  const launch = useCallback((t: Track) => {
     const show = wantDraft && t.id === selectedId && draftPlanet ? { ...t, planet: draftPlanet } : t;
     playTrack(show, tracks);
-  };
+    setShowSetup(false);
+    setHideUI(false);
+  }, [wantDraft, selectedId, draftPlanet, playTrack, tracks]);
   useEffect(() => {
     if (!wantAutoplay || autoLaunched || !selected || !canPerform(selected) || !draftReady) return;
     setAutoLaunched(true);
     launch(selected);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [wantAutoplay, selected, draftReady, autoLaunched]);
+  }, [wantAutoplay, selected, draftReady, autoLaunched, launch]);
 
-  const analysis = currentTrack?.planet?.analysis;
   const live = canPerform(currentTrack);
-  const direct = ws === "DIRECT" && live && !embed;
+  const onStage = live && !showSetup;
 
-  // stage-background gestures (mobile): swipe ←/→ pins prev/next scene,
+  // stage-background gestures (mobile): swipe ←/→ pins prev/next backdrop,
   // two-finger tap releases to AUTO, swipe ↑/↓ nudges intensity.
   const { attach: attachStageGestures, toast: gestureToast } = useStageGestures(coarse && live && !embed);
-  const pickTab = (t: PocketTab) => {
-    if (t === tab && snap !== "peek") { setSnap("peek"); return; } // re-tap the live tab = drop
-    setTab(t);
-    if (t === "MORE") setSnap("full"); // depth wants the whole sheet
+  const pickTab = <T,>(t: T, cur: T, set: (t: T) => void, fullTabs: T[]) => {
+    if (t === cur && snap !== "peek") { setSnap("peek"); return; } // re-tap the live tab = drop
+    set(t);
+    if (fullTabs.includes(t)) setSnap("full");
     else if (snap === "peek") setSnap("half");
   };
 
-  // ── SETUP body (also the pre-launch view: pick, then perform) ─────────────
-  const setupBody = (
-    <div className="w-full">
-    <div className="relative z-10 mx-auto mt-6 w-full max-w-lg rounded-2xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-5 backdrop-blur-md">
-      <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">Song</div>
-      <select value={selectedId} onChange={(e) => setSelectedId(e.target.value)}
-        className="mt-1.5 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]">
-        <optgroup label="Planets (word-timed)">
-          {timed.map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}
-        </optgroup>
-        <optgroup label="No word data yet">
-          {tracks.filter((t) => !canPerform(t)).map((t) => <option key={t.id} value={t.id}>{t.title}</option>)}
-        </optgroup>
-      </select>
-      <div className="mt-4 grid grid-cols-2 gap-3">
-        <div>
-          <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">Pass</div>
-          <select value={pass} onChange={(e) => setPass(Number(e.target.value))}
-            className="mt-1.5 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]">
-            {PASSES.map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
-          </select>
-        </div>
-        <div>
-          <div className="font-mono text-[9px] uppercase tracking-[0.3em] text-[var(--inst-dim)]">View</div>
-          <select value={mode} onChange={(e) => pickMode(e.target.value as StageMode)}
-            className="mt-1.5 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] outline-none focus:border-[var(--inst-plasma)]">
-            {MODES.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
-          </select>
-        </div>
-      </div>
-      {selected && canPerform(selected) && (
-        <button
-          onClick={() => launch(selected)}
-          className="mt-5 flex w-full items-center justify-center gap-2.5 rounded-lg border py-3 font-mono text-[11px] uppercase tracking-[0.25em] transition hover:scale-[1.01]"
-          style={{
-            borderColor: "color-mix(in srgb, var(--inst-plasma) 50%, transparent)",
-            background: "color-mix(in srgb, var(--inst-plasma) 8%, transparent)",
-            color: "var(--inst-plasma)",
-            boxShadow: "0 0 18px color-mix(in srgb, var(--inst-plasma) 18%, transparent)",
-          }}
-        >▶ Launch <span className="normal-case tracking-normal text-white/70">“{selected.title}”</span></button>
-      )}
-      {selected && !canPerform(selected) && (
-        <p className="mt-4 font-mono text-[10px] uppercase leading-5 tracking-wider text-[var(--inst-dim)]">
-          “{selected.title}” has no word-timed lyrics yet — run it through the aligner first.
-        </p>
-      )}
-      {analysis && (
-        <p className="mt-4 font-mono text-[9px] uppercase leading-5 tracking-wider text-[var(--inst-faint)]">
-          🪐 {analysis.overallMood} · {analysis.themes.slice(0, 3).join(" · ")}
-        </p>
-      )}
-    </div>
-    {/* the owner's lyrics inbox — tailnet only (the API 404s publicly) */}
-    {ownerHost && <LyricsInbox />}
-    </div>
+  // ── the Marquee (start screen / song change) ──────────────────────────────
+  const marquee = (
+    <Marquee
+      tracks={tracks}
+      selectedId={selectedId}
+      onSelect={setSelectedId}
+      level={passToLevel(pass).id}
+      onLevel={pickLevel}
+      lyricStyle={mode}
+      onLyricStyle={pickMode}
+      onStart={() => selected && launch(selected)}
+      mood={selected?.planet?.analysis?.overallMood ?? null}
+      onPro={() => pickPro(!pro)}
+    >
+      {ownerHost && <LyricsInbox />}
+    </Marquee>
   );
 
   return (
@@ -564,71 +194,94 @@ export default function StudioPage() {
           "linear-gradient(160deg, var(--theme-bg), #05030b)",
       }}
     >
-      {/* ── top bar: identity · workspaces · telemetry ── */}
+      {/* ── top bar: identity · song · watch/play · pro · exit ── */}
       {!embed && (
-        <header className="relative z-20 flex h-12 flex-none items-center gap-3 border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_85%,transparent)] px-3 backdrop-blur-md sm:gap-4 sm:px-4">
+        <header className="relative z-20 flex h-12 flex-none items-center gap-2 border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_85%,transparent)] px-3 backdrop-blur-md sm:gap-3 sm:px-4">
           <span className="font-display text-xs font-black uppercase tracking-[0.3em] text-white">Studio</span>
-          {/* workspaces are a desktop concept — on the phone, the sheet IS direct */}
-          <div className="hidden overflow-hidden rounded-md border border-[var(--inst-line)] md:flex">
-            {(["SHOW", "DIRECT", "SETUP"] as Workspace[]).map((w) => (
-              <button
-                key={w}
-                onClick={() => pickWs(w)}
-                className="border-l border-[var(--inst-line)] px-3 py-1.5 font-mono text-[10px] tracking-[0.12em] first:border-l-0"
-                style={ws === w
-                  ? { background: "var(--inst-plasma)", color: "#001016", fontWeight: 700 }
-                  : { color: "var(--inst-dim)" }}
-              >{w}</button>
-            ))}
-          </div>
-          <KineticTelemetry className="ml-auto hidden md:flex" />
+          {live && (
+            <button
+              onClick={() => setShowSetup((s) => !s)}
+              title="Change the song, visuals or lyric style"
+              className="flex min-h-[36px] max-w-[38vw] items-center gap-1.5 truncate rounded-lg border px-2.5 font-mono text-[10px] uppercase tracking-wider sm:max-w-[240px]"
+              style={showSetup ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)" } : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
+            >
+              ♪ <span className="truncate normal-case tracking-normal">{currentTrack?.title ?? COPY.changeSong}</span>
+            </button>
+          )}
+          {/* pro keeps the engine's native size + style selects at hand */}
+          {pro && !coarse && live && (
+            <div className="hidden items-center gap-1.5 lg:flex">
+              <select value={pass} onChange={(e) => setPass(Number(e.target.value))}
+                className="h-8 rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-1.5 font-mono text-[10px] text-[var(--inst-dim)] outline-none focus:border-[var(--inst-plasma)]">
+                {PASSES.map((p) => <option key={p.id} value={p.id}>{p.label}</option>)}
+              </select>
+              <select value={mode} onChange={(e) => pickMode(e.target.value as StageMode)}
+                className="h-8 rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s2)] px-1.5 font-mono text-[10px] text-[var(--inst-dim)] outline-none focus:border-[var(--inst-plasma)]">
+                {MODES.map((m) => <option key={m.id} value={m.id}>{m.label}</option>)}
+              </select>
+            </div>
+          )}
+          {pro
+            ? <KineticTelemetry className="ml-auto hidden md:flex" />
+            : <span className="ml-auto hidden md:flex"><BeatJewel /></span>}
           <BeatJewel className="ml-auto md:hidden" />
-          {/* mobile: one ⚙ toggles the setup card over the stage */}
+          {onStage && !hideUI && (
+            <button
+              onClick={() => { setHideUI(true); setSnap("peek"); }}
+              title="Hide every control — just the show"
+              className="min-h-[36px] whitespace-nowrap rounded-lg border border-[var(--inst-line)] px-2.5 font-mono text-[10px] uppercase tracking-wider text-[var(--inst-dim)] hover:text-white"
+            >◉<span className="hidden sm:inline"> {COPY.hideControls}</span></button>
+          )}
           <button
-            onClick={() => pickWs(ws === "SETUP" ? "DIRECT" : "SETUP")}
-            aria-label="Song / pass / view setup"
-            className="grid h-9 w-9 place-items-center rounded-lg border border-[var(--inst-line)] font-mono text-sm md:hidden"
-            style={ws === "SETUP" ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)" } : { color: "var(--inst-dim)" }}
-          >♪</button>
-          <Link href="/music" className="rounded-lg border border-[var(--inst-line)] px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-[var(--inst-dim)] hover:text-white">Exit</Link>
+            onClick={() => pickPro(!pro)}
+            title={pro ? "Back to the simple studio" : `${COPY.proInvite} — ${COPY.proInviteBlurb}`}
+            className="min-h-[36px] rounded-lg border px-2.5 font-mono text-[10px] font-bold uppercase tracking-wider"
+            style={pro
+              ? { borderColor: "var(--inst-warn)", color: "var(--inst-warn)", background: "color-mix(in srgb, var(--inst-warn) 9%, transparent)" }
+              : { borderColor: "var(--inst-line)", color: "var(--inst-faint)" }}
+          >pro</button>
+          <Link href="/music" className="min-h-[36px] rounded-lg border border-[var(--inst-line)] px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-wider text-[var(--inst-dim)] hover:text-white">Exit</Link>
         </header>
       )}
 
       {/* ── body ── */}
       {!live || embed ? (
         <div className="relative z-10 flex flex-1 items-start justify-center overflow-y-auto px-4 pb-28">
-          {live && embed ? <KineticStage track={currentTrack!} pass={pass} mode={mode} /> : setupBody}
+          {live && embed ? <KineticStage track={currentTrack!} pass={pass} mode={mode} /> : marquee}
           {currentTrack && !isPlaying && !live && (
             <p className="absolute bottom-24 font-mono text-[10px] uppercase tracking-wider text-white/30">Use the player bar below to play.</p>
           )}
         </div>
-      ) : ws === "SETUP" ? (
-        <div className="relative z-10 flex-1 overflow-y-auto px-4 pb-28">{setupBody}</div>
+      ) : showSetup ? (
+        <div className="relative z-10 flex-1 overflow-y-auto px-4 pb-28">{marquee}</div>
       ) : (
         <>
           <div className="relative z-10 flex min-h-0 flex-1">
-            {direct && (
+            {/* ── PRO rails (desktop) ── */}
+            {pro && !hideUI && (
               // pt-20 clears the site's fixed BEAT badge, which floats top-left
               <aside className="z-10 hidden w-[212px] flex-none flex-col gap-5 overflow-y-auto border-r border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-3 pt-20 backdrop-blur-md md:flex">
-                <LooksPads />
-                <ScenesRail />
+                <VibePads />
+                <BackdropRail />
               </aside>
             )}
-            {/* landscape phone = mini-desktop: the same rails, thumb-width */}
-            {mobileLandscape && (
+            {/* landscape phone, pro = mini-desktop: the same rails, thumb-width */}
+            {pro && !hideUI && mobileLandscape && (
               <aside
                 className="z-10 flex w-[180px] flex-none flex-col gap-5 overflow-y-auto border-r border-[var(--inst-line)] p-3 pt-16 md:hidden"
                 style={{ background: "rgba(12,8,22,0.92)", paddingBottom: "calc(var(--player-h) + 12px)" }}
               >
-                <LooksPads />
-                <ScenesRail />
+                <VibePads />
+                <BackdropRail />
               </aside>
             )}
+
             <div
               ref={(el) => { attachStageGestures(el); }}
               className="relative min-w-0 flex-1 overflow-hidden"
             >
               <KineticStage track={currentTrack!} pass={pass} mode={mode} forceBackdrop />
+              {!hideUI && <HintToast coarse={coarse} />}
               {/* gesture toast — the swipe's answer, worn near the top of the stage */}
               {gestureToast && (
                 <div
@@ -637,13 +290,22 @@ export default function StudioPage() {
                   data-gesture-toast
                 >{gestureToast}</div>
               )}
+              {/* "Just watch" leaves one quiet way back */}
+              {hideUI && (
+                <button
+                  onClick={() => setHideUI(false)}
+                  className="absolute bottom-4 right-4 z-20 rounded-full border border-[var(--inst-line)] px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--inst-dim)] transition hover:text-white"
+                  style={{ background: "rgba(12,8,22,0.7)" }}
+                >✨ {COPY.showControls}</button>
+              )}
             </div>
-            {direct && (
+
+            {pro && !hideUI && (
               <aside className="z-10 hidden w-[300px] flex-none overflow-y-auto border-l border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] backdrop-blur-md md:block">
                 <KineticParamPanel groups={["BACKDROP", "LFO 1", "LFO 2", "LFO 3", "FOLLOW 1", "FOLLOW 2", "FOLLOW 3"]} className="rounded-none border-0 bg-transparent" />
               </aside>
             )}
-            {mobileLandscape && (
+            {pro && !hideUI && mobileLandscape && (
               <aside
                 className="z-10 block w-[260px] flex-none overflow-y-auto border-l border-[var(--inst-line)] md:hidden"
                 style={{ background: "rgba(12,8,22,0.92)", paddingBottom: "calc(var(--player-h) + 12px)" }}
@@ -652,19 +314,49 @@ export default function StudioPage() {
               </aside>
             )}
           </div>
-          {direct && <div className="relative z-10 hidden flex-none pb-[76px] md:block"><DeckStrip /></div>}
-          {ws === "SHOW" && <div className="hidden h-[76px] flex-none md:block" />}
+          {pro && !hideUI && <div className="relative z-10 hidden flex-none pb-[76px] md:block"><DeckStrip /></div>}
+          {(hideUI || !pro) && <div className="hidden h-[76px] flex-none md:block" />}
 
-          {/* ── THE POCKET INSTRUMENT v2 (mobile portrait) ──
-              LookStrip riding above the sheet's peek; one draggable
-              BottomSheet with PLAY · XY · DIAL · MORE. Landscape phones
-              get the mini-desktop rails above instead. */}
-          {live && !embed && !mobileLandscape && (
+          {/* ── THE EASY DOCK (desktop + landscape phones): one glass shelf ── */}
+          {!pro && !hideUI && (!coarse || mobileLandscape) && (
+            <div
+              className="fixed inset-x-0 z-30 mx-auto w-full max-w-3xl px-4"
+              style={{ bottom: "calc(var(--player-h) + 14px)" }}
+            >
+              {paint && (
+                <div className="mb-3 ml-auto w-[300px] rounded-2xl border border-[var(--inst-line)] p-3" style={{ background: "rgba(12,8,22,0.94)" }}>
+                  <div className="flex items-baseline justify-between">
+                    <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[var(--inst-dim)]">{COPY.paintLabel}</span>
+                    <button onClick={() => setPaint(false)} className="text-[11px] text-[var(--inst-faint)] hover:text-white">✕</button>
+                  </div>
+                  <p className="mb-2 mt-0.5 text-[10.5px] text-[var(--inst-faint)]">{COPY.paintHint}</p>
+                  <XYPad />
+                </div>
+              )}
+              <div className="rounded-2xl border border-[var(--inst-line)] p-4 backdrop-blur-md" style={{ background: "color-mix(in srgb, var(--inst-s1) 88%, transparent)" }}>
+                <VibeShelf hint={false} />
+                <BackdropShelf hint={false} className="mt-3" />
+                <div className="mt-3 flex flex-wrap items-center gap-2">
+                  <SurpriseButton />
+                  <button
+                    onClick={() => setPaint((v) => !v)}
+                    className="min-h-[44px] rounded-xl border px-4 text-[12px] font-bold uppercase tracking-[0.14em]"
+                    style={paint
+                      ? { borderColor: "var(--inst-plasma)", color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 9%, transparent)" }
+                      : { borderColor: "var(--inst-line)", color: "var(--inst-dim)" }}
+                  >🖌 {COPY.paintLabel}</button>
+                  <span className="ml-auto hidden text-[11px] text-[var(--inst-faint)] sm:block">
+                    tap a vibe · hold a backdrop · nothing here can break the song
+                  </span>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* ── THE POCKET STUDIO (mobile portrait) ── */}
+          {!embed && !hideUI && coarse && !mobileLandscape && (
             <div className="md:hidden">
-              <div
-                className="fixed inset-x-0 z-30"
-                style={{ bottom: "calc(var(--player-h) + 72px)" }}
-              >
+              <div className="fixed inset-x-0 z-30" style={{ bottom: "calc(var(--player-h) + 72px)" }}>
                 <LookStrip />
               </div>
               <BottomSheet
@@ -673,32 +365,84 @@ export default function StudioPage() {
                 peek={
                   <div className="px-3">
                     <div className="flex h-[46px] w-full overflow-hidden rounded-lg border border-[var(--inst-line)]">
-                      {POCKET_TABS.map((t) => (
-                        <button
-                          key={t}
-                          onClick={() => pickTab(t)}
-                          className="min-h-full min-w-[52px] flex-1 border-l border-[var(--inst-line)] font-mono text-[9px] uppercase tracking-[0.25em] first:border-l-0"
-                          style={tab === t && snap !== "peek"
-                            ? { color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 7%, transparent)" }
-                            : { color: "var(--inst-dim)" }}
-                          data-pocket-tab={t}
-                        >{t}</button>
-                      ))}
+                      {pro
+                        ? PRO_TABS.map((t) => (
+                          <button
+                            key={t}
+                            onClick={() => pickTab(t, proTab, setProTab, ["MORE"])}
+                            className="min-h-full min-w-[52px] flex-1 border-l border-[var(--inst-line)] font-mono text-[9px] uppercase tracking-[0.25em] first:border-l-0"
+                            style={proTab === t && snap !== "peek"
+                              ? { color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 7%, transparent)" }
+                              : { color: "var(--inst-dim)" }}
+                            data-pocket-tab={t}
+                          >{t}</button>
+                        ))
+                        : EASY_TABS.map((t) => (
+                          <button
+                            key={t.id}
+                            onClick={() => pickTab(t.id, tab, setTab, ["MORE", "SCENE"])}
+                            className="min-h-full min-w-[52px] flex-1 border-l border-[var(--inst-line)] text-[11px] font-semibold tracking-wide first:border-l-0"
+                            style={tab === t.id && snap !== "peek"
+                              ? { color: "var(--inst-plasma)", background: "color-mix(in srgb, var(--inst-plasma) 7%, transparent)" }
+                              : { color: "var(--inst-dim)" }}
+                            data-pocket-tab={t.id}
+                          >{t.label}</button>
+                        ))}
                     </div>
                   </div>
                 }
               >
                 {(s) => (
                   // below peek the body is off-screen — skip the heavy children
-                  s === "peek" ? null : (
+                  s === "peek" ? null : pro ? (
                     <div className="pt-3">
-                      {tab === "PLAY" && <DeckStrip bare />}
-                      {tab === "XY" && <XYPad />}
-                      {tab === "DIAL" && <VibeDial className="pt-2" />}
-                      {tab === "MORE" && (
+                      {proTab === "PLAY" && <DeckStrip bare />}
+                      {proTab === "XY" && <XYPad />}
+                      {proTab === "DIAL" && <VibeDial className="pt-2" />}
+                      {proTab === "MORE" && (
                         <div className="flex flex-col gap-5">
-                          <ScenesRail />
+                          <BackdropRail />
                           <KineticParamPanel touch groups={["BACKDROP", "LFO 1", "FOLLOW 1"]} className="rounded-none border-0 bg-transparent p-0 backdrop-blur-none" />
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="pt-3">
+                      {tab === "VIBES" && (
+                        <div>
+                          <p className="px-1 pb-1 text-center text-[11px] text-[var(--inst-faint)]">
+                            spin the wheel — every notch is a different feeling
+                          </p>
+                          <VibeDial className="pt-1" />
+                        </div>
+                      )}
+                      {tab === "PAINT" && (
+                        <div>
+                          <p className="px-1 pb-2 text-[11px] text-[var(--inst-faint)]">{COPY.paintHint}</p>
+                          <XYPad />
+                        </div>
+                      )}
+                      {tab === "SCENE" && <BackdropShelf />}
+                      {tab === "MORE" && (
+                        <div className="flex flex-col gap-4 pb-4">
+                          <div className="flex gap-2">
+                            <SurpriseButton className="flex-1" />
+                            <button
+                              onClick={() => { setHideUI(true); setSnap("peek"); }}
+                              className="min-h-[44px] flex-1 rounded-xl border border-[var(--inst-line)] px-4 text-[12px] font-bold uppercase tracking-[0.14em] text-[var(--inst-dim)]"
+                            >◉ {COPY.hideControls}</button>
+                          </div>
+                          <button
+                            onClick={() => { setShowSetup(true); setSnap("peek"); }}
+                            className="min-h-[44px] rounded-xl border border-[var(--inst-line)] px-4 text-left text-[12px] font-semibold text-[var(--inst-dim)]"
+                          >♪ Change the song, visuals or lyric style</button>
+                          <VibeShelf />
+                          <button
+                            onClick={() => { pickPro(true); setSnap("peek"); }}
+                            className="text-left font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--inst-faint)]"
+                          >
+                            {COPY.proInvite} → <span className="normal-case tracking-normal opacity-70">{COPY.proInviteBlurb}</span>
+                          </button>
                         </div>
                       )}
                     </div>
