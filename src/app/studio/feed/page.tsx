@@ -112,7 +112,7 @@ export default function FeedPage() {
             <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6">
               <div className="flex items-center justify-between">
                 <p className="font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">Event horizon</p>
-                <Link href={`/studio?play=${sel.id}`} className="font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white">preview show →</Link>
+                <Link href={`/studio?track=${sel.id}&autoplay=1`} className="font-mono text-[10px] uppercase tracking-wider text-white/40 hover:text-white">preview show →</Link>
               </div>
               {sel.cover ? <img src={sel.cover} alt="" className="mt-2 h-36 w-full rounded-xl object-cover ring-1 ring-white/10" />
                 : <div className="mt-2 grid h-36 place-items-center rounded-xl bg-white/5 text-white/30">no album art</div>}
