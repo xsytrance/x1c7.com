@@ -45,6 +45,24 @@ const args = process.argv.slice(2);
 const has = (f) => args.includes(f);
 const opt = (f) => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : null; };
 
+// ── act like a human ─────────────────────────────────────────────────────────
+// Nothing here moves on a metronome: pauses are drawn from ranges, the mouse
+// wanders before it commits, tracks go in shuffled order, and every dozen or
+// so saves the "person" gets up for a coffee. It's slower. That's the point.
+const rand = (lo, hi) => lo + Math.random() * (hi - lo);
+const nap = (page, lo, hi) => page.waitForTimeout(rand(lo, hi));
+async function wander(page) {
+  // drift the cursor through a couple of arcs, scroll like you're reading
+  for (let i = 0; i < 2 + Math.floor(rand(0, 2)); i++) {
+    await page.mouse.move(rand(200, 1100), rand(150, 750), { steps: Math.floor(rand(12, 30)) });
+    await nap(page, 120, 600);
+  }
+  await page.mouse.wheel(0, rand(120, 900));
+  await nap(page, 400, 1400);
+  if (Math.random() < 0.4) { await page.mouse.wheel(0, -rand(80, 400)); await nap(page, 300, 900); }
+}
+const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
 const norm = (s) =>
   s.toLowerCase()
     .normalize("NFD").replace(/[̀-ͯ]/g, "")
@@ -58,7 +76,9 @@ async function catalog() {
     headers: { apikey: SUPABASE_KEY, authorization: `Bearer ${SUPABASE_KEY}` },
   });
   if (!r.ok) throw new Error(`supabase ${r.status}`);
-  return (await r.json()).filter((t) => t.cover);
+  // site-relative covers (rare) live under the public site itself
+  return (await r.json()).filter((t) => t.cover)
+    .map((t) => ({ ...t, cover: t.cover.startsWith("/") ? `https://x1c7.com${t.cover}` : t.cover }));
 }
 
 const launch = (headless = false) =>
@@ -73,10 +93,33 @@ async function login() {
   const ctx = await launch(false);
   const page = await ctx.newPage();
   await page.goto("https://soundcloud.com/signin");
-  console.log("→ Log in to SoundCloud in the window (approve 2FA etc.).");
-  console.log("→ When you can see your feed / avatar, just CLOSE the window.");
-  await new Promise((res) => ctx.on("close", res));
-  console.log("✓ profile saved — run --scan next");
+  console.log("→ Log in to SoundCloud in the window (Google SSO / 2FA all fine).");
+  console.log("→ I'll notice by myself the moment you're in — no need to close anything.");
+  const authed = () =>
+    ctx.cookies("https://soundcloud.com").then((cs) => cs.some((c) => c.name === "oauth_token" && c.value)).catch(() => null); // null = browser gone
+  for (let i = 0; i < 600; i++) { // up to 10 minutes of patience
+    const a = await authed();
+    if (a === true) {
+      console.log("✓ you're in — profile saved, closing the window. Run --scan next.");
+      await ctx.close().catch(() => {});
+      return;
+    }
+    if (a === null) break; // user closed the browser — verify from disk below
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+  await ctx.close().catch(() => {});
+  console.log(await checkSaved() ? "✓ profile saved — run --scan next" : "✗ never saw a login — run --login again and finish signing in");
+}
+
+/** Ground truth, no window: does the saved profile open /you/tracks without a signin bounce? */
+async function checkSaved() {
+  const ctx = await launch(true);
+  try {
+    const page = await ctx.newPage();
+    await page.goto("https://soundcloud.com/you/tracks", { waitUntil: "domcontentloaded", timeout: 30000 });
+    await page.waitForTimeout(3500);
+    return !page.url().includes("signin");
+  } catch { return false; } finally { await ctx.close().catch(() => {}); }
 }
 
 // ── scan: your tracks ↔ the catalog ─────────────────────────────────────────
@@ -90,11 +133,11 @@ async function scan() {
 
   // scroll until the list stops growing (the manager lazy-loads)
   let last = 0;
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 60; i++) {
     const n = await page.locator('a[href*="soundcloud.com/"] , a[href^="/"]').count();
-    await page.mouse.wheel(0, 4000);
-    await page.waitForTimeout(1200);
-    if (n === last && i > 4) break;
+    await page.mouse.wheel(0, rand(1800, 3600)); // scroll like a thumb, not a crane
+    await nap(page, 900, 2100);
+    if (n === last && i > 6) break;
     last = n;
   }
   // Track links in the manager point at /<user>/<slug> (no extra path segments)
@@ -151,13 +194,13 @@ async function apply() {
   const limit = Number(opt("--limit") ?? Infinity);
   const only = opt("--only")?.toLowerCase() ?? null;
   const map = JSON.parse(readFileSync(MAP_FILE, "utf8"));
-  const todo = map.matches.filter((m) => !m.done && (!only || m.title.toLowerCase().includes(only))).slice(0, limit);
+  const todo = shuffle(map.matches.filter((m) => !m.done && (!only || m.title.toLowerCase().includes(only)))).slice(0, limit);
   if (!todo.length) { console.log("nothing to do — all matched tracks are done"); return; }
   console.log(`${todo.length} track(s) to update${dry ? " (dry run)" : ""}`);
 
   const ctx = await launch(false);
   const page = await ctx.newPage();
-  let ok = 0, fail = 0;
+  let ok = 0, fail = 0, sinceBreak = 0;
 
   for (const m of todo) {
     process.stdout.write(`· ${m.title} … `);
@@ -166,24 +209,37 @@ async function apply() {
       if (dry) { console.log(`would upload ${jpg}`); continue; }
 
       await page.goto(m.sc, { waitUntil: "domcontentloaded" });
-      await page.waitForTimeout(2500);
+      await nap(page, 2200, 5000);
+      await wander(page); // look at the page like a person would
       // your own track page carries an Edit button in the sound actions row
       const edit = page.locator('button:has-text("Edit")').first();
+      await edit.hover({ timeout: 10000 });
+      await nap(page, 250, 900);
       await edit.click({ timeout: 10000 });
       const dialog = page.locator('[role="dialog"], .modal').first();
       await dialog.waitFor({ timeout: 10000 });
+      await nap(page, 800, 2200); // read the dialog
       // the artwork chooser is the dialog's image file input
       const input = dialog.locator('input[type="file"]').first();
       await input.setInputFiles(jpg, { timeout: 10000 });
-      await page.waitForTimeout(2500); // let the preview settle / upload start
+      await nap(page, 2600, 5200); // admire the new cover / let the upload run
       const save = dialog.locator('button:has-text("Save change"), button:has-text("Save")').last();
+      await save.hover({ timeout: 10000 });
+      await nap(page, 200, 700);
       await save.click({ timeout: 10000 });
       await dialog.waitFor({ state: "hidden", timeout: 30000 });
       m.done = true;
       writeFileSync(MAP_FILE, JSON.stringify(map, null, 2)); // checkpoint every win
       ok++;
+      sinceBreak++;
       console.log("✓");
-      await page.waitForTimeout(4000); // human pace
+      await nap(page, 3500, 9000); // between-songs breath, never the same twice
+      if (sinceBreak >= 10 + Math.floor(rand(0, 6))) {
+        sinceBreak = 0;
+        const rest = Math.round(rand(25, 70));
+        console.log(`  ☕ coffee break — ${rest}s`);
+        await page.waitForTimeout(rest * 1000);
+      }
     } catch (e) {
       fail++;
       console.log(`✗ ${String(e.message || e).split("\n")[0]}`);
@@ -193,7 +249,48 @@ async function apply() {
   console.log(`done: ${ok} updated · ${fail} failed · progress saved in soundcloud-map.json`);
 }
 
+// ── prep: make the MANUAL route painless ─────────────────────────────────────
+// No login, no automation against SoundCloud — just every new cover rendered
+// to a 1600px JPEG named after its song in ~/Pictures/soundcloud-covers/,
+// plus a checklist.html with thumbnails and tick-boxes (ticks persist in the
+// browser). You drag files; nothing here touches your account.
+async function prep() {
+  const outDir = join(os.homedir(), "Pictures", "soundcloud-covers");
+  mkdirSync(outDir, { recursive: true });
+  const cat = await catalog();
+  console.log(`${cat.length} covers → ${outDir}`);
+  const rows = [];
+  for (const t of cat) {
+    const file = join(outDir, t.title.replace(/[\\/:*?"<>|]+/g, "·") + ".jpg");
+    try {
+      if (!existsSync(file)) {
+        const r = await fetch(t.cover);
+        if (!r.ok) throw new Error(`fetch ${r.status}`);
+        await sharp(Buffer.from(await r.arrayBuffer())).resize(1600, 1600, { fit: "cover" }).jpeg({ quality: 92 }).toFile(file);
+      }
+      rows.push({ title: t.title, file });
+      process.stdout.write(".");
+    } catch (e) { console.log(`\n✗ ${t.title}: ${e.message}`); }
+  }
+  const html = `<!doctype html><meta charset="utf-8"><title>SoundCloud cover checklist</title>
+<style>body{font:14px system-ui;background:#0d0d12;color:#eee;max-width:860px;margin:2rem auto;padding:0 1rem}
+h1{font-size:18px}p{color:#999}li{display:flex;align-items:center;gap:12px;padding:7px 4px;border-bottom:1px solid #222;list-style:none}
+img{width:52px;height:52px;border-radius:6px;object-fit:cover}code{color:#8fd;font-size:12px}input{width:18px;height:18px}
+li.done{opacity:.35}</style>
+<h1>SoundCloud cover swap — ${rows.length} songs</h1>
+<p>Keep <b>soundcloud.com/you/tracks</b> open beside this. For each song: Edit → drag its file in → Save → tick. Ticks survive reloads.</p>
+<ul>${rows.map((r, i) => `<li id="r${i}"><input type=checkbox onchange="s(${i},this)"><img src="file://${r.file.replace(/"/g, "&quot;")}"><div><b>${r.title.replace(/</g, "&lt;")}</b><br><code>${r.file.replace(/</g, "&lt;")}</code></div></li>`).join("\n")}</ul>
+<script>const K="sc-cover-ticks";const d=JSON.parse(localStorage.getItem(K)||"{}");
+for(const i in d){const li=document.getElementById("r"+i);if(li&&d[i]){li.classList.add("done");li.querySelector("input").checked=true}}
+function s(i,el){d[i]=el.checked;localStorage.setItem(K,JSON.stringify(d));document.getElementById("r"+i).classList.toggle("done",el.checked)}</script>`;
+  const page = join(outDir, "checklist.html");
+  writeFileSync(page, html);
+  console.log(`\n✓ ${rows.length} JPEGs ready · checklist: ${page}`);
+}
+
 if (has("--login")) await login();
+else if (has("--prep")) await prep();
+else if (has("--check")) console.log(await checkSaved() ? "✓ logged in" : "✗ not logged in");
 else if (has("--scan")) await scan();
 else if (has("--apply")) await apply();
-else console.log("usage: --login | --scan | --apply [--dry] [--limit N] [--only <substr>]");
+else console.log("usage: --login | --check | --scan | --apply [--dry] [--limit N] [--only <substr>]");
