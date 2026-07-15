@@ -10,6 +10,9 @@ export function KeyboardShortcuts() {
       // Don't trigger if typing in an input
       const tag = (e.target as HTMLElement).tagName;
       if (tag === "INPUT" || tag === "TEXTAREA") return;
+      // A view that owns the keyboard (e.g. the jukebox keypad) marks its
+      // keys consumed — portal navigation must never steal them.
+      if (e.defaultPrevented) return;
 
       // Number keys 1-9 navigate portals
       const num = parseInt(e.key, 10);

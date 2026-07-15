@@ -19,6 +19,7 @@ import { CinematicLyrics } from "@/components/CinematicLyrics";
 import { canPerform } from "@/components/KineticStage";
 import CollectionShelf from "@/components/CollectionShelf";
 import CollectionDeck from "@/components/CollectionDeck";
+import { JukeboxView } from "@/components/JukeboxView";
 
 function useDeviceMode(): "desktop" | "mobile" | null {
   const [mode, setMode] = useState<"desktop" | "mobile" | null>(null);
@@ -37,13 +38,14 @@ export default function Page() {
   const { currentTrack, isPlaying, analyser, playTrack: playFromCtx, pause } = useMusicPlayer();
   const mode = useDeviceMode();
   const [query, setQuery] = useState("");
-  // Mobile view: the deck is the default; the spine shelf is one tap away.
-  const [view, setView] = useState<"spines" | "deck">("deck");
+  // Views: the deck is the mobile default; the spine shelf and the jukebox
+  // are one tap away. Desktop toggles between the shelf and the jukebox.
+  const [view, setView] = useState<"spines" | "deck" | "jukebox">("deck");
   useEffect(() => {
     const saved = localStorage.getItem("x1c7-collection-view");
-    if (saved === "deck" || saved === "spines") setView(saved);
+    if (saved === "deck" || saved === "spines" || saved === "jukebox") setView(saved);
   }, []);
-  const pickView = (v: "spines" | "deck") => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
+  const pickView = (v: "spines" | "deck" | "jukebox") => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
 
   // Play always seeds the global queue with the full library so the persistent
   // player bar's next/prev traverse every transmission.
@@ -144,23 +146,27 @@ export default function Page() {
 
       {/* ===== THE COLLECTION ===== */}
       <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* mobile view switch — spines are the default, the deck one tap away */}
-        {mode === "mobile" && (
+        {/* view switch — mobile: deck/shelf/jukebox · desktop: shelf/jukebox */}
+        {mode !== null && (
           <div className="mb-5 flex justify-center">
             <div className="inline-flex rounded-full border border-white/15 bg-white/[0.05] p-1">
-              {([["spines", "▮▮ SHELF"], ["deck", "▢ DECK"]] as const).map(([v, label]) => (
+              {(mode === "mobile"
+                ? ([["deck", "▢ DECK"], ["spines", "▮▮ SHELF"], ["jukebox", "◉ JUKEBOX"]] as const)
+                : ([["spines", "▮▮ SHELF"], ["jukebox", "◉ JUKEBOX"]] as const)
+              ).map(([v, label]) => (
                 <button key={v} onClick={() => pickView(v)}
-                  className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-[0.18em] transition ${view === v ? "bg-plasma text-black" : "text-white/55"}`}>
+                  className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-[0.18em] transition ${view === v || (mode === "desktop" && view === "deck" && v === "spines") ? "bg-plasma text-black" : "text-white/55"}`}>
                   {label}
                 </button>
               ))}
             </div>
           </div>
         )}
-        {mode === "desktop" && <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />}
-        {mode === "mobile" && (view === "spines"
-          ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
-          : <CollectionDeck tracks={list} onPlay={playTrack} onPauseMain={pause} />)}
+        {view === "jukebox"
+          ? <JukeboxView tracks={list} />
+          : mode === "desktop" ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
+          : view === "spines" ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
+          : <CollectionDeck tracks={list} onPlay={playTrack} onPauseMain={pause} />}
         {mode === null && (
           <div className="flex h-[50vh] items-center justify-center font-mono text-xs tracking-[0.3em] text-white/30">
             OPENING THE VAULT…
