@@ -891,6 +891,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
+  // Dedup CSS-var writes: a custom-property setProperty invalidates style even
+  // when the value is identical, so skipping unchanged writes drops style
+  // recalcs on every frame the audio envelope plateaus. Keyed by var name
+  // (each var always targets the same element).
+  const lastVar = useRef<Record<string, string>>({});
   const lastWord = useRef(-1);
   const lastSec = useRef<string>("");
   // Reel ghosts: word → matched painting (featured only), + the one on stage.
@@ -1254,10 +1259,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // visual change, the single biggest style cost on a stem'd planet gone.
         // (--charge stays — its riser vignette DOES render on lite.)
         if (root && !liteRef.current) {
-          root.style.setProperty("--kick", kickPulse.current.toFixed(3));
-          root.style.setProperty("--bass", (envAt(stems, "bass", t) * vg("bass")).toFixed(3));
-          root.style.setProperty("--voice", (envAt(stems, "lead", t) * vg("lead")).toFixed(3));
-          root.style.setProperty("--choir", (envAt(stems, "back", t) * vg("back")).toFixed(3));
+          const lv = lastVar.current;
+          const setVar = (k: string, v: string) => { if (lv[k] !== v) { lv[k] = v; root.style.setProperty(k, v); } };
+          setVar("--kick", kickPulse.current.toFixed(3));
+          setVar("--bass", (envAt(stems, "bass", t) * vg("bass")).toFixed(3));
+          setVar("--voice", (envAt(stems, "lead", t) * vg("lead")).toFixed(3));
+          setVar("--choir", (envAt(stems, "back", t) * vg("back")).toFixed(3));
         }
         // Beat-cut blackout: drums vanish → the world freezes to silhouette;
         // drums return → slam back with a shockwave. (Meaningless while the
