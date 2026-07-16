@@ -40,6 +40,12 @@ const TMP = join(os.tmpdir(), "sc-covers");
 
 const SUPABASE_URL = "https://kxbrjmbovjiwwcnepsfh.supabase.co";
 const SUPABASE_KEY = "sb_publishable_W6GH_BAujfZz0KxKr07Wbg_OuQePF7-"; // anon, read-only
+const SC_HANDLE = "rod-agenor"; // your SoundCloud profile (from /music's embed)
+// SoundCloud slugs are usually the title, lowercased and hyphenated — a good
+// first guess that deep-links straight to the track's page (where Edit lives).
+const scSlug = (title) =>
+  title.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 const args = process.argv.slice(2);
 const has = (f) => args.includes(f);
@@ -272,17 +278,31 @@ async function prep() {
       process.stdout.write(".");
     } catch (e) { console.log(`\n✗ ${t.title}: ${e.message}`); }
   }
+  const esc = (s) => s.replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]));
+  const openBtn = (title) => {
+    const track = `https://soundcloud.com/${SC_HANDLE}/${scSlug(title)}`;
+    const search = `https://soundcloud.com/search?q=${encodeURIComponent(title)}`;
+    // primary = guessed track page (Edit lives there); fallback = search if it 404s
+    return `<a class="go" href="${track}" target="_blank">▶ open</a><a class="find" href="${search}" target="_blank">search</a>`;
+  };
   const html = `<!doctype html><meta charset="utf-8"><title>SoundCloud cover checklist</title>
-<style>body{font:14px system-ui;background:#0d0d12;color:#eee;max-width:860px;margin:2rem auto;padding:0 1rem}
-h1{font-size:18px}p{color:#999}li{display:flex;align-items:center;gap:12px;padding:7px 4px;border-bottom:1px solid #222;list-style:none}
-img{width:52px;height:52px;border-radius:6px;object-fit:cover}code{color:#8fd;font-size:12px}input{width:18px;height:18px}
+<style>body{font:14px system-ui;background:#0d0d12;color:#eee;max-width:900px;margin:2rem auto;padding:0 1rem}
+h1{font-size:18px}p{color:#999}.bar{position:sticky;top:0;background:#0d0d12;padding:8px 0;color:#8fd;border-bottom:1px solid #222}
+li{display:flex;align-items:center;gap:12px;padding:7px 4px;border-bottom:1px solid #222;list-style:none}
+img{width:52px;height:52px;border-radius:6px;object-fit:cover}code{color:#777;font-size:11px}input{width:18px;height:18px}
+.grow{flex:1;min-width:0}b{display:block}a{font:600 12px system-ui;text-decoration:none;padding:5px 9px;border-radius:6px;white-space:nowrap}
+a.go{background:#1a3;color:#0d0d12}a.find{color:#8fd;padding-left:4px}
 li.done{opacity:.35}</style>
 <h1>SoundCloud cover swap — ${rows.length} songs</h1>
-<p>Keep <b>soundcloud.com/you/tracks</b> open beside this. For each song: Edit → drag its file in → Save → tick. Ticks survive reloads.</p>
-<ul>${rows.map((r, i) => `<li id="r${i}"><input type=checkbox onchange="s(${i},this)"><img src="file://${r.file.replace(/"/g, "&quot;")}"><div><b>${r.title.replace(/</g, "&lt;")}</b><br><code>${r.file.replace(/</g, "&lt;")}</code></div></li>`).join("\n")}</ul>
-<script>const K="sc-cover-ticks";const d=JSON.parse(localStorage.getItem(K)||"{}");
+<p>Per song: hit <b>▶ open</b> (jumps to the track) → Edit → drag the thumbnail's file in → Save → tick.
+If ▶ open 404s, use <b>search</b>. Ticks survive reloads.</p>
+<div class="bar" id="bar"></div>
+<ul>${rows.map((r, i) => `<li id="r${i}"><input type=checkbox onchange="s(${i},this)"><img src="file://${esc(r.file)}"><div class="grow"><b>${esc(r.title)}</b><code>${esc(r.file)}</code></div>${openBtn(r.title)}</li>`).join("\n")}</ul>
+<script>const K="sc-cover-ticks";const d=JSON.parse(localStorage.getItem(K)||"{}");const N=${rows.length};
+function bar(){const done=Object.values(d).filter(Boolean).length;document.getElementById("bar").textContent=done+" / "+N+" done";}
 for(const i in d){const li=document.getElementById("r"+i);if(li&&d[i]){li.classList.add("done");li.querySelector("input").checked=true}}
-function s(i,el){d[i]=el.checked;localStorage.setItem(K,JSON.stringify(d));document.getElementById("r"+i).classList.toggle("done",el.checked)}</script>`;
+function s(i,el){d[i]=el.checked;localStorage.setItem(K,JSON.stringify(d));document.getElementById("r"+i).classList.toggle("done",el.checked);bar()}
+bar();</script>`;
   const page = join(outDir, "checklist.html");
   writeFileSync(page, html);
   console.log(`\n✓ ${rows.length} JPEGs ready · checklist: ${page}`);
