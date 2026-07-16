@@ -650,13 +650,28 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const themeHueRef = useRef(themeHue);
   themeHueRef.current = themeHue;
   // Pulse rings: landing ripples for charged/final words + beat-synced rings.
-  const [pulseRings, setPulseRings] = useState<{ id: number; big: boolean }[]>([]);
-  const pulseId = useRef(0);
+  // Spawned imperatively into ringLayer — rings fire every snare and every 2nd
+  // beat, and a setState here would reconcile the whole stage tree each time.
+  const ringLayer = useRef<HTMLDivElement>(null);
   const spawnRing = useCallback((big: boolean) => {
-    const id = ++pulseId.current;
+    const host = ringLayer.current;
+    if (!host) return;
     // Lite caps concurrent rings at 3 (2 old + the newcomer) — each ring is a
     // full-size compositing layer while it expands.
-    setPulseRings((r) => [...r.slice(liteRef.current ? -2 : -3), { id, big }]);
+    const cap = liteRef.current ? 3 : 4;
+    while (host.childElementCount >= cap) host.firstElementChild?.remove();
+    const el = document.createElement("span");
+    el.className = "pulse-ring pointer-events-none absolute rounded-full";
+    const s = el.style;
+    s.width = s.height = big ? "26vmin" : "15vmin";
+    s.border = big
+      ? "2px solid var(--theme-accent)"
+      : "1.5px solid color-mix(in srgb, var(--theme-primary) 65%, transparent)";
+    s.setProperty("--pr-op", big ? "0.5" : "0.28");
+    s.setProperty("--pr-scale", big ? "2.7" : "1.9");
+    s.setProperty("--pr-dur", big ? "0.95s" : "0.75s");
+    el.addEventListener("animationend", () => el.remove(), { once: true });
+    host.appendChild(el);
   }, []);
   const lastBeatSeen = useRef(0);
   const beatN = useRef(0);
@@ -1815,22 +1830,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             ))}
           </AnimatePresence>
           {/* pulse rings — charged/line-final landings and the live beat
-              breathe circles through the stage (self-removing) */}
-          {pulseRings.map((r) => (
-            <m.span
-              key={`p${r.id}`}
-              className="pointer-events-none absolute rounded-full"
-              style={{
-                width: r.big ? "26vmin" : "15vmin", height: r.big ? "26vmin" : "15vmin",
-                border: r.big ? "2px solid var(--theme-accent)" : "1.5px solid color-mix(in srgb, var(--theme-primary) 65%, transparent)",
-              }}
-              initial={{ opacity: r.big ? 0.5 : 0.28, scale: 0.3 }}
-              animate={{ opacity: 0, scale: r.big ? 2.7 : 1.9 }}
-              transition={{ duration: r.big ? 0.95 : 0.75, ease: "easeOut" }}
-              onAnimationComplete={() => setPulseRings((rs) => rs.filter((x) => x.id !== r.id))}
-              aria-hidden
-            />
-          ))}
+              breathe circles through the stage. Spawned imperatively by
+              spawnRing (CSS keyframes, self-removing on animationend) so a
+              ring never costs a React reconcile. */}
+          <div ref={ringLayer} className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden />
           {phrase ? (
             /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
             <AnimatePresence mode="wait">
