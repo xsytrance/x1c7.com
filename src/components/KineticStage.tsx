@@ -1260,11 +1260,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // (--charge stays — its riser vignette DOES render on lite.)
         if (root && !liteRef.current) {
           const lv = lastVar.current;
-          const setVar = (k: string, v: string) => { if (lv[k] !== v) { lv[k] = v; root.style.setProperty(k, v); } };
-          setVar("--kick", kickPulse.current.toFixed(3));
-          setVar("--bass", (envAt(stems, "bass", t) * vg("bass")).toFixed(3));
-          setVar("--voice", (envAt(stems, "lead", t) * vg("lead")).toFixed(3));
-          setVar("--choir", (envAt(stems, "back", t) * vg("back")).toFixed(3));
+          // Quantize to 0.02 steps before writing: a 0.02 change is a sub-pixel
+          // difference in every consumer (≤0.5px word-glow blur, ≤0.05deg skew)
+          // — imperceptible — but it lets the dedup skip most frames, so the
+          // audio-reactive style recalc + the giant word's drop-shadow re-raster
+          // fire far less often. Visually identical, materially cheaper.
+          const setVar = (k: string, x: number) => {
+            const v = (Math.round(x / 0.02) * 0.02).toFixed(2);
+            if (lv[k] !== v) { lv[k] = v; root.style.setProperty(k, v); }
+          };
+          setVar("--kick", kickPulse.current);
+          setVar("--bass", envAt(stems, "bass", t) * vg("bass"));
+          setVar("--voice", envAt(stems, "lead", t) * vg("lead"));
+          setVar("--choir", envAt(stems, "back", t) * vg("back"));
         }
         // Beat-cut blackout: drums vanish → the world freezes to silhouette;
         // drums return → slam back with a shockwave. (Meaningless while the

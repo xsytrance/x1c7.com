@@ -7,7 +7,6 @@ import { extractPalette } from "@/lib/palette";
 import { beatClock } from "@/lib/beatClock";
 import { themeStore } from "@/lib/themeStore";
 import { beatTarget } from "@/lib/beatTarget";
-import { detectLite } from "@/lib/perf";
 
 // Writes the resolved theme onto :root as CSS custom properties. The color vars
 // are registered via @property (globals.css) so changing them animates.
@@ -78,6 +77,7 @@ export function ThemeEngine() {
     let freq: Uint8Array<ArrayBuffer> | null = null;
     let energyAvg = 0;
     let lastOnset = 0;
+    let lastBeatStr = ""; // dedup the per-frame --beat write
     const root = document.documentElement;
 
     const tick = () => {
@@ -106,20 +106,24 @@ export function ThemeEngine() {
       }
       // Asymmetric smoothing: snap up on hits, ease down for a natural pulse.
       beat += (target - beat) * (target > beat ? 0.5 : 0.08);
-      // Perf-lite: a :root write forces a tree-wide recalc at 60fps. Every
-      // CSS consumer of --beat lives in the stage subtree, so on lite the
-      // write is scoped there (or skipped entirely when no stage is mounted).
-      // themeStore.setBeat always fires — JS consumers don't care about scope.
-      const dest = detectLite() ? beatTarget.get() : root;
+      // A :root write forces a tree-wide style recalc every frame. Every CSS
+      // consumer of --beat lives in the stage subtree, so ALWAYS scope the
+      // write to the stage when one is mounted (previously only done on lite —
+      // desktop was paying a whole-document recalc 60×/s). themeStore.setBeat
+      // always fires the full-precision value; JS consumers don't care about
+      // scope. The CSS write is quantized to 0.02 (≤1px of word-glow blur) and
+      // deduped so plateaus skip the recalc + drop-shadow re-raster entirely.
+      const dest = beatTarget.get() || root;
       if (!playingRef.current && beat < 0.001) {
         beat = 0;
-        dest?.style.setProperty("--beat", "0");
+        if (lastBeatStr !== "0") { lastBeatStr = "0"; dest?.style.setProperty("--beat", "0"); }
         if (dest !== root) root.style.removeProperty("--beat"); // never strand a stale root value
         themeStore.setBeat(0);
         running = false;
         return;
       }
-      dest?.style.setProperty("--beat", beat.toFixed(3));
+      const bq = (Math.round(beat / 0.02) * 0.02).toFixed(2);
+      if (bq !== lastBeatStr) { lastBeatStr = bq; dest?.style.setProperty("--beat", bq); }
       themeStore.setBeat(beat);
       raf = requestAnimationFrame(tick);
     };
