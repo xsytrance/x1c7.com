@@ -1191,28 +1191,35 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (++beatN.current % 2 === 0) spawnRing(false);
       }
       // Choreographed + synthesized moment windows: enter/leave the moment.
+      // One pass finds the active moment of each kind — was four full-array
+      // scans per frame (windows never overlap within a kind, so last-wins is
+      // identical to the previous per-kind find-first).
       if (pass >= 3 && allMoments.length) {
-        const mo = allMoments.find((mm) => mm.type === "wipe" && t >= mm.t && t < mm.end);
+        let mo = null, bo = null, so = null, cro = null;
+        for (const mm of allMoments) {
+          if (t < mm.t || t >= mm.end) continue;
+          if (mm.type === "wipe") mo = mm;
+          else if (mm.type === "blow") bo = mm;
+          else if (mm.type === "shake") so = mm;
+          else if (mm.type === "scream") cro = mm;
+        }
         const key = mo ? mo.t : -1;
         if (key !== wipeKey.current) {
           wipeKey.current = key;
           // Don't re-raise a veil the listener already wiped away this window.
           setWipe(mo && consumedWipe.current !== key ? { layer: mo.layer, prompt: mo.prompt } : null);
         }
-        const bo = allMoments.find((mm) => mm.type === "blow" && t >= mm.t && t < mm.end);
         const bkey = bo ? bo.t : -1;
         if (bkey !== blowKey.current) {
           blowKey.current = bkey;
           setBlow(bo ? { prompt: bo.prompt } : null);
         }
-        const so = allMoments.find((mm) => mm.type === "shake" && t >= mm.t && t < mm.end);
         const skey = so ? so.t : -1;
         if (skey !== shakeMoKey.current) {
           shakeMoKey.current = skey;
           shakeDone.current = false;
           setShakeMo(so ? { prompt: so.prompt } : null);
         }
-        const cro = allMoments.find((mm) => mm.type === "scream" && t >= mm.t && t < mm.end);
         const crkey = cro ? cro.t : -1;
         if (crkey !== screamKey.current) {
           screamKey.current = crkey;

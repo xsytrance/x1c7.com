@@ -231,13 +231,34 @@ void main() {
 }`;
 
 // ── Finishing pass: soft bloom, hue drift, grade, grain, vignette ────────────
+// BLOOM — the 16-tap gather, extracted into its own pass so it runs at
+// render-scale (¼ the pixels) instead of full canvas res. uRes stays the FULL
+// canvas size so the UV spread of the bloom is unchanged; only the number of
+// output pixels the loop executes for drops. Visually identical, ~4× cheaper.
+const BLOOM_FS = `#version 300 es
+precision highp float;
+in vec2 vUv; out vec4 fragColor;
+uniform sampler2D uTex;
+uniform vec2 uRes;
+uniform float uBloom;
+void main() {
+  vec3 acc = vec3(0.0);
+  for (int i = 0; i < 8; i++) {
+    float a = float(i) * 0.7854;
+    vec2 o = vec2(cos(a), sin(a)) / uRes;
+    acc += max(texture(uTex, vUv + o * 5.0).rgb - 0.35, 0.0);
+    acc += max(texture(uTex, vUv + o * 12.0).rgb - 0.35, 0.0) * 0.6;
+  }
+  fragColor = vec4(acc * (uBloom * 0.13), 1.0);
+}`;
+
 const POST_FS = `#version 300 es
 precision highp float;
 in vec2 vUv; out vec4 fragColor;
 uniform sampler2D uTex;
 uniform vec2 uRes;
-uniform sampler2D uGhost, uXray;
-uniform float uTime, uBloom, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt, uKeyMinor;
+uniform sampler2D uGhost, uXray, uBloomTex;
+uniform float uTime, uHueShift, uGrain, uVignette, uSaturation, uBrightness, uDrop, uGhostAmt, uKeyMinor, uBloomOn, uXrayOn;
 float hash21(vec2 p) { p = fract(p * vec2(234.34, 435.345)); p += dot(p, p + 34.23); return fract(p.x * p.y); }
 vec3 hueRotate(vec3 c, float a) {
   const vec3 W = vec3(0.299, 0.587, 0.114);
@@ -246,18 +267,9 @@ vec3 hueRotate(vec3 c, float a) {
 }
 void main() {
   vec3 col = texture(uTex, vUv).rgb;
-  col += texture(uGhost, vUv).rgb * uGhostAmt; // dissolving lyrics join the field
-  col += texture(uXray, vUv).rgb;              // Lens anatomy (amt baked in)
-  if (uBloom > 0.001) {
-    vec3 acc = vec3(0.0);
-    for (int i = 0; i < 8; i++) {
-      float a = float(i) * 0.7854;
-      vec2 o = vec2(cos(a), sin(a)) / uRes;
-      acc += max(texture(uTex, vUv + o * 5.0).rgb - 0.35, 0.0);
-      acc += max(texture(uTex, vUv + o * 12.0).rgb - 0.35, 0.0) * 0.6;
-    }
-    col += acc * (uBloom * 0.13);
-  }
+  col += texture(uGhost, vUv).rgb * uGhostAmt;   // dissolving lyrics join the field
+  col += texture(uXray, vUv).rgb * uXrayOn;       // Lens anatomy (skipped when idle)
+  col += texture(uBloomTex, vUv).rgb * uBloomOn;  // bloom, precomputed at render-scale
   if (abs(uHueShift) > 0.001) col = hueRotate(col, uHueShift * 6.2831853);
   // ── ANTICIPATION ── the world tenses as the drop approaches (uDrop 0→1
   // over the last bars before a measured riser lands): the vignette closes
@@ -369,12 +381,13 @@ export class BackdropRenderer {
   private canvas: HTMLCanvasElement;
   private sceneDefs: SceneDef[];
   private trails: Program;
+  private bloom: Program;
   private post: Program;
   private ghostDecay: Program;
   private stamp: Program;
   private xray: Program;
   private deckMix: Program;
-  private rts: { a: RT; b: RT; mixRT: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT; xrayRT: RT } | null = null;
+  private rts: { a: RT; b: RT; mixRT: RT; ping: RT; pong: RT; ghostPing: RT; ghostPong: RT; xrayRT: RT; bloomRT: RT } | null = null;
   private xrayAmt = 0;
   private xrayFamily = 0; // held through the fade-out so the anatomy doesn't flip
   private seedStr = "";
@@ -397,6 +410,7 @@ export class BackdropRenderer {
     this.canvas = canvas;
     this.sceneDefs = SCENE_SOURCES.map((src, i) => ({ name: BACKDROP_SCENES[i], prog: new Program(gl, QUAD_VS, src) }));
     this.trails = new Program(gl, QUAD_VS, TRAILS_FS);
+    this.bloom = new Program(gl, QUAD_VS, BLOOM_FS);
     this.post = new Program(gl, QUAD_VS, POST_FS);
     this.ghostDecay = new Program(gl, QUAD_VS, GHOST_DECAY_FS);
     this.stamp = new Program(gl, STAMP_VS, STAMP_FS);
@@ -481,6 +495,7 @@ export class BackdropRenderer {
       ghostPing: createRT(gl, w, h),
       ghostPong: createRT(gl, w, h),
       xrayRT: createRT(gl, w, h),
+      bloomRT: createRT(gl, w, h),
     };
   }
 
@@ -669,26 +684,43 @@ export class BackdropRenderer {
       targetAmt = P.get("backdrop.xray");
     }
     this.xrayAmt += (targetAmt - this.xrayAmt) * Math.min(1, F.dt * 5);
-    const { xrayRT } = this.rts;
-    bindRT(gl, xrayRT);
-    this.xray.use()
-      .v2("uRes", xrayRT.w, xrayRT.h)
-      .f("uTime", this.time)
-      .f("uFamily", this.xrayFamily)
-      .f("uEnv", [F.drums, F.bass, F.voice, F.choir, F.bed][this.xrayFamily] ?? 0)
-      .f("uAmt", this.xrayAmt < 0.004 ? 0 : this.xrayAmt)
-      .f("uKick", F.kick).f("uBeat", F.beat).f("uBeatPhase", F.beatPhase)
-      .v2("uWord", F.wordX, 1 - F.wordY)
-      .v3("uPal0", p0[0], p0[1], p0[2])
-      .v3("uPal1", p1[0], p1[1], p1[2])
-      .v3("uPal2", p2[0], p2[1], p2[2]);
-    drawQuad(gl);
+    const { xrayRT, bloomRT } = this.rts;
+    // The Lens is idle almost always — skip its whole fullscreen pass then.
+    const xrayOn = this.xrayAmt >= 0.004;
+    if (xrayOn) {
+      bindRT(gl, xrayRT);
+      this.xray.use()
+        .v2("uRes", xrayRT.w, xrayRT.h)
+        .f("uTime", this.time)
+        .f("uFamily", this.xrayFamily)
+        .f("uEnv", [F.drums, F.bass, F.voice, F.choir, F.bed][this.xrayFamily] ?? 0)
+        .f("uAmt", this.xrayAmt)
+        .f("uKick", F.kick).f("uBeat", F.beat).f("uBeatPhase", F.beatPhase)
+        .v2("uWord", F.wordX, 1 - F.wordY)
+        .v3("uPal0", p0[0], p0[1], p0[2])
+        .v3("uPal1", p1[0], p1[1], p1[2])
+        .v3("uPal2", p2[0], p2[1], p2[2]);
+      drawQuad(gl);
+    }
+
+    // ── bloom pre-pass: the 16-tap gather runs at render-scale, not full res
+    // (its output is a blur — the reduced resolution is imperceptible, but it
+    // stops the single most expensive pass from ignoring renderScale) ──
+    const bloomAmt = P.get("backdrop.bloom");
+    const bloomOn = bloomAmt > 0.001;
+    if (bloomOn) {
+      bindRT(gl, bloomRT);
+      this.bloom.use()
+        .v2("uRes", this.canvas.width, this.canvas.height)
+        .f("uBloom", bloomAmt)
+        .tex("uTex", ping.tex);
+      drawQuad(gl);
+    }
 
     bindRT(gl, null);
     this.post.use()
       .v2("uRes", this.canvas.width, this.canvas.height)
       .f("uTime", this.time)
-      .f("uBloom", P.get("backdrop.bloom"))
       .f("uHueShift", P.get("backdrop.hueShift"))
       .f("uGrain", P.get("backdrop.grain"))
       .f("uVignette", P.get("backdrop.vignette"))
@@ -697,9 +729,12 @@ export class BackdropRenderer {
       .f("uDrop", drop)
       .f("uGhostAmt", ghostAmt)
       .f("uKeyMinor", F.keyMode)
+      .f("uBloomOn", bloomOn ? 1 : 0)
+      .f("uXrayOn", xrayOn ? 1 : 0)
       .tex("uTex", ping.tex)
       .tex("uGhost", ghostPing.tex)
-      .tex("uXray", xrayRT.tex);
+      .tex("uXray", xrayRT.tex)
+      .tex("uBloomTex", bloomRT.tex);
     drawQuad(gl);
 
     [this.rts.ping, this.rts.pong] = [this.rts.pong, this.rts.ping];

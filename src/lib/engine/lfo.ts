@@ -64,8 +64,12 @@ export function ensureModEngine(): ModEngine {
 }
 
 export class ModEngine {
+  // Reused across frames — this runs every frame, so allocating fresh
+  // Maps/Sets here was steady GC pressure even with nothing routed.
   private lastLfo = new Set<string>();
   private lastFollow = new Set<string>();
+  private lfoSum = new Map<string, number>();
+  private followSum = new Map<string, number>();
 
   /** Register lfoN.* / followN.* AFTER every target param exists, so the
    * target lists are complete (PRISM's ordering rule, same reason). */
@@ -92,7 +96,7 @@ export class ModEngine {
 
   update(F: EngineFeatures) {
     // ── LFOs: summed per target so stacked LFOs compose ──
-    const lfoSum = new Map<string, number>();
+    const lfoSum = this.lfoSum; lfoSum.clear();
     for (let i = 1; i <= LFO_COUNT; i++) {
       if (!P.getBool(`lfo${i}.enabled`)) continue;
       const target = P.getStr(`lfo${i}.target`);
@@ -108,10 +112,11 @@ export class ModEngine {
     }
     for (const [target, offset] of lfoSum) P.setMod(target, offset, "lfo");
     for (const t of this.lastLfo) if (!lfoSum.has(t)) P.setMod(t, 0, "lfo");
-    this.lastLfo = new Set(lfoSum.keys());
+    this.lastLfo.clear();
+    for (const k of lfoSum.keys()) this.lastLfo.add(k);
 
     // ── Stem follows: a real instrument's envelope rides the param ──
-    const followSum = new Map<string, number>();
+    const followSum = this.followSum; followSum.clear();
     for (let i = 1; i <= FOLLOW_COUNT; i++) {
       if (!P.getBool(`follow${i}.enabled`)) continue;
       const target = P.getStr(`follow${i}.target`);
@@ -124,6 +129,7 @@ export class ModEngine {
     }
     for (const [target, offset] of followSum) P.setMod(target, offset, "stem");
     for (const t of this.lastFollow) if (!followSum.has(t)) P.setMod(t, 0, "stem");
-    this.lastFollow = new Set(followSum.keys());
+    this.lastFollow.clear();
+    for (const k of followSum.keys()) this.lastFollow.add(k);
   }
 }
