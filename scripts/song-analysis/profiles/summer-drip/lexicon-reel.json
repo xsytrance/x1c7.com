@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-07-15T00:12:59.223Z",
+  "generatedAt": "2026-07-16T10:41:53.059Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -55,7 +55,7 @@
       "t": 157.257,
       "score": 0.95,
       "cosine": 0.469,
-      "reason": "matches sultry, intense nightclub vibe and heat symbolism",
+      "reason": "matches sultry, intense summer night vibe and nightclub energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 228.04,
       "score": 0.95,
       "cosine": 0.367,
-      "reason": "Confident, intense imagery aligns with sultry, self-assured theme",
+      "reason": "Confident, intense, artistic imagery aligns with sultry, self-assured theme",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 107.218,
       "score": 0.9,
       "cosine": 0.51,
-      "reason": "Matches sultry, confident urban night vibe and modern elegance",
+      "reason": "Confident, sultry, urban night imagery aligns with song's themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 8.86,
       "score": 0.9,
       "cosine": 0.471,
-      "reason": "Sultry urban summer vibe with neon and nightlife aligns well with the song's themes.",
+      "reason": "Sultry, urban summer vibe with neon and nightlife aligns well with the song's themes.",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 63.588,
       "score": 0.9,
       "cosine": 0.467,
-      "reason": "luxurious, opulent, and theatrical imagery aligns with the song's themes of luxury, confid",
+      "reason": "luxurious, opulent stage fits sultry, confident summer vibe",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 228.04,
       "score": 0.9,
       "cosine": 0.45,
-      "reason": "Confident, seductive, and intense imagery fits the sultry, self-assured mood of the song.",
+      "reason": "Confident, seductive, and intense imagery aligns with the song's sultry and self-assured m",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 9.36,
       "score": 0.9,
       "cosine": 0.444,
-      "reason": "luxurious, sultry, urban summer vibe aligns with song",
+      "reason": "luxurious, sultry urban imagery fits summer night vibe",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 9.36,
       "score": 0.9,
       "cosine": 0.437,
-      "reason": "Aligns with luxury, style, and confidence themes",
+      "reason": "Matches summer vibe, luxury, confidence, and fashion symbolism",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -228,18 +228,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
-      "key": "lexicon/heart/s0-2.webp",
-      "word": "heart",
-      "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
-      "t": 24.23,
-      "score": 0.8,
-      "cosine": 0.415,
-      "reason": "matches sultry, vibrant mood and digital luxury theme",
-      "recipe": "2",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-1-dream-collage.webp",
       "key": "lexicon/move/s2-1-dream-collage.webp",
       "word": "move",
@@ -271,7 +259,7 @@
       "t": 217.084,
       "score": 0.7,
       "cosine": 0.446,
-      "reason": "matches summer vibe and serene sky, but lacks sultry confidence",
+      "reason": "matches summer vibe and golden-hour mood, but lacks sultry tension",
       "recipe": "1",
       "featured": true
     },
@@ -288,6 +276,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
+      "key": "lexicon/heart/s0-2.webp",
+      "word": "heart",
+      "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
+      "t": 24.23,
+      "score": 0.7,
+      "cosine": 0.415,
+      "reason": "matches sultry, vibrant mood but lacks direct connection to summer or confidence",
+      "recipe": "2",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2.webp",
       "key": "lexicon/somebody/s0-2.webp",
       "word": "somebody",
@@ -295,7 +295,7 @@
       "t": 249.255,
       "score": 0.7,
       "cosine": 0.414,
-      "reason": "Urban night scene fits sultry, confident summer vibe with neon and anonymity",
+      "reason": "Urban nightlife fits summer vibe, but lacks direct connection to femininity or confidence",
       "recipe": "2",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 24.23,
       "score": 0.6,
       "cosine": 0.388,
-      "reason": "Sultry and confident mood aligns with warm, intimate imagery but lacks direct connection t",
+      "reason": "Sultry and confident mood partially matches; heart symbolizes warmth and connection but la",
       "recipe": "2",
       "featured": false
     },
@@ -401,7 +401,7 @@
     ],
     "walk": [
       4,
-      20
+      19
     ],
     "push": [
       5,
@@ -420,22 +420,22 @@
     "move": [
       14,
       16,
-      19
+      18
     ],
     "dreams": [
       17,
       24
     ],
-    "heart": [
-      18,
-      28
-    ],
     "clouds": [
-      21,
+      20,
       27
     ],
     "smile": [
-      22
+      21
+    ],
+    "heart": [
+      22,
+      28
     ],
     "somebody": [
       23,

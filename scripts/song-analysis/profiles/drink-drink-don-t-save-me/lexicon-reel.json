@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "drink-drink-don-t-save-me",
-  "generatedAt": "2026-07-15T00:11:56.016Z",
+  "generatedAt": "2026-07-16T10:35:58.070Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 453,
-    "judged": 23,
-    "accepted": 20,
-    "kept": 20
+    "candidates": 477,
+    "judged": 26,
+    "accepted": 23,
+    "kept": 23
   },
   "reel": [
     {
@@ -36,15 +36,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s8-4-cinema.webp",
-      "key": "lexicon/drink/s8-4-cinema.webp",
-      "word": "drink",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
-      "t": 69.597,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s3-2-cinema.webp",
+      "key": "lexicon/sorrow/s3-2-cinema.webp",
+      "word": "sorrow",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.865,
       "score": 0.95,
-      "cosine": 0.507,
-      "reason": "Matches mood and themes of solitude, alcohol, and melancholy",
-      "recipe": "4-cinema",
+      "cosine": 0.473,
+      "reason": "Symbolism of emptiness, loneliness, and sorrow aligns with song's themes",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s3-4-photo.webp",
+      "key": "lexicon/sorrow/s3-4-photo.webp",
+      "word": "sorrow",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.865,
+      "score": 0.95,
+      "cosine": 0.473,
+      "reason": "Matches mood, themes of sorrow and isolation, symbolic imagery",
+      "recipe": "4-photo",
       "featured": true
     },
     {
@@ -55,8 +67,20 @@
       "t": 88.687,
       "score": 0.95,
       "cosine": 0.467,
-      "reason": "Captures nighttime solitude and emotional despair",
+      "reason": "Captures nighttime solitude and despair fitting the song's mood",
       "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s2-3-word-portrait.webp",
+      "key": "lexicon/sorrow/s2-3-word-portrait.webp",
+      "word": "sorrow",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.865,
+      "score": 0.95,
+      "cosine": 0.453,
+      "reason": "Matches eerie mood, isolation, and symbolic use of light and text",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -84,6 +108,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s8-4-cinema.webp",
+      "key": "lexicon/drink/s8-4-cinema.webp",
+      "word": "drink",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
+      "t": 69.597,
+      "score": 0.9,
+      "cosine": 0.507,
+      "reason": "Matches mood and themes of solitude, alcohol, and melancholy",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
       "key": "lexicon/storm/s2-1-dream-collage.webp",
       "word": "storm",
@@ -103,7 +139,7 @@
       "t": 173.256,
       "score": 0.9,
       "cosine": 0.463,
-      "reason": "Storm symbolizes inner turmoil; desolation matches emotional isolation and self-destructio",
+      "reason": "Storm symbolizes inner chaos; desolation matches emotional isolation and despair",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -151,7 +187,7 @@
       "t": 164.978,
       "score": 0.85,
       "cosine": 0.438,
-      "reason": "fits mood and themes of isolation and urban melancholy",
+      "reason": "fits mood and themes of isolation and urban despair with neon symbolism",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -199,7 +235,7 @@
       "t": 62.566,
       "score": 0.8,
       "cosine": 0.412,
-      "reason": "captures yearning and plea for help in isolated space",
+      "reason": "captures yearning and plea for help in isolated setting",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -211,7 +247,7 @@
       "t": 69.895,
       "score": 0.7,
       "cosine": 0.34,
-      "reason": "Symbolism of light as escape and guidance fits the song's themes",
+      "reason": "Symbolism of light as guidance contrasts with song's themes of numbness and avoidance",
       "recipe": "1",
       "featured": true
     },
@@ -256,38 +292,43 @@
     "drink": [
       0,
       1,
-      2
-    ],
-    "night": [
-      3,
-      4,
       8
     ],
+    "sorrow": [
+      2,
+      3,
+      5
+    ],
+    "night": [
+      4,
+      6,
+      11
+    ],
     "soul": [
-      5,
-      12,
-      19
+      7,
+      15,
+      22
     ],
     "storm": [
-      6,
-      7,
-      9
+      9,
+      10,
+      12
     ],
     "heart": [
-      10
+      13
     ],
     "walk": [
-      11,
       14,
-      17
+      17,
+      20
     ],
     "save": [
-      13,
-      15,
-      18
+      16,
+      18,
+      21
     ],
     "light": [
-      16
+      19
     ]
   }
 }

@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-14T23:30:52.952Z",
+  "generatedAt": "2026-07-16T10:39:22.362Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 385,
-    "judged": 31,
-    "accepted": 27,
-    "kept": 27
+    "candidates": 421,
+    "judged": 34,
+    "accepted": 30,
+    "kept": 30
   },
   "reel": [
     {
@@ -31,7 +31,7 @@
       "t": 52.48,
       "score": 0.95,
       "cosine": 0.442,
-      "reason": "Symbolizes destructive passion and emotional burnout central to the song",
+      "reason": "Symbolizes destructive passion and emotional burnout in a toxic relationship",
       "recipe": "6-film-still",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 221.333,
       "score": 0.95,
       "cosine": 0.369,
-      "reason": "Cinematic lighting matches song's mood; unspoken voice aligns with lyric",
+      "reason": "Cinematic lighting matches song's mood; unspoken voice aligns with lyric and theme of rest",
       "recipe": "1",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 169.828,
       "score": 0.9,
       "cosine": 0.447,
-      "reason": "Captures nighttime struggle and emotional solitude",
+      "reason": "Captures nighttime struggle and emotional isolation",
       "recipe": "1-photo",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 169.828,
       "score": 0.9,
       "cosine": 0.438,
-      "reason": "Captures melancholy, solitude, and subtle hope aligning with song's mood and themes",
+      "reason": "Serene yet lonely urban night mirrors emotional solitude and quiet hope",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -108,6 +108,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s4-6-word-portrait.webp",
+      "key": "lexicon/lights/s4-6-word-portrait.webp",
+      "word": "lights",
+      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
+      "t": 78.147,
+      "score": 0.9,
+      "cosine": 0.436,
+      "reason": "Cinematic, lonely, and symbolic of emotional isolation and guidance",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
       "key": "lexicon/night/s5-5-word-portrait.webp",
       "word": "night",
@@ -115,7 +127,7 @@
       "t": 169.828,
       "score": 0.9,
       "cosine": 0.429,
-      "reason": "Captures melancholic introspection and urban solitude fitting the song's mood",
+      "reason": "Cinematic, melancholic, and introspective mood matches song's emotional depth and themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -175,8 +187,20 @@
       "t": 268.77,
       "score": 0.9,
       "cosine": 0.332,
-      "reason": "Matches mood and themes of solitude, determination, and emotional resilience",
+      "reason": "Matches mood and themes of solitude, resilience, and emotional strength",
       "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
+      "key": "lexicon/lights/s3-4-word-portrait.webp",
+      "word": "lights",
+      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
+      "t": 78.147,
+      "score": 0.85,
+      "cosine": 0.436,
+      "reason": "Cinematic, melancholic, introspective mood aligns with song's emotional depth and themes.",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -247,7 +271,7 @@
       "t": 221.333,
       "score": 0.85,
       "cosine": 0.291,
-      "reason": "nostalgic isolation matches emotional distance and memory",
+      "reason": "Evokes isolation and memory, aligns with emotional distance and nostalgia in the song",
       "recipe": "1",
       "featured": true
     },
@@ -259,7 +283,7 @@
       "t": 7.175,
       "score": 0.8,
       "cosine": 0.429,
-      "reason": "Apocalyptic storm symbolizes emotional turmoil; lone figure reflects resilience in the fac",
+      "reason": "Apocalyptic storm symbolizes emotional turmoil; lone figure reflects resilience in toxic r",
       "recipe": "2-anime",
       "featured": true
     },
@@ -271,20 +295,20 @@
       "t": 2,
       "score": 0.8,
       "cosine": 0.365,
-      "reason": "Symbolizes hope and guidance in darkness, aligns with emotional resilience and inner stren",
+      "reason": "Symbolizes hope and guidance in darkness, aligns with emotional resilience and cinematic m",
       "recipe": "2",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp",
-      "key": "lexicon/silence/s0-2.webp",
-      "word": "silence",
-      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
-      "t": 66.862,
-      "score": 0.8,
-      "cosine": 0.351,
-      "reason": "Symbolizes quiet strength and hope in darkness, aligns with emotional restraint and self-r",
-      "recipe": "2",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s2-3-film-still.webp",
+      "key": "lexicon/lights/s2-3-film-still.webp",
+      "word": "lights",
+      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
+      "t": 78.147,
+      "score": 0.7,
+      "cosine": 0.445,
+      "reason": "Symbolizes guidance and solitude in emotional struggle",
+      "recipe": "3-film-still",
       "featured": true
     },
     {
@@ -296,6 +320,18 @@
       "score": 0.7,
       "cosine": 0.391,
       "reason": "Symbolizes warmth and hope within emotional struggle",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp",
+      "key": "lexicon/silence/s0-2.webp",
+      "word": "silence",
+      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
+      "t": 66.862,
+      "score": 0.7,
+      "cosine": 0.351,
+      "reason": "Symbolizes hope and solitude in emotional struggle",
       "recipe": "2",
       "featured": true
     },
@@ -319,7 +355,7 @@
       "t": 134.455,
       "score": 0.6,
       "cosine": 0.305,
-      "reason": "Symbolizes emotional entanglement and digital presence in a toxic relationship",
+      "reason": "Digital presence contrasts with emotional distance; fits mood but lacks intensity",
       "recipe": "1",
       "featured": false
     },
@@ -331,7 +367,7 @@
       "t": 134.455,
       "score": 0.6,
       "cosine": 0.29,
-      "reason": "nostalgic and melancholic, ties to memory and communication",
+      "reason": "nostalgic but lacks emotional intensity of song",
       "recipe": "2",
       "featured": false
     }
@@ -339,8 +375,8 @@
   "byWord": {
     "storm": [
       0,
-      14,
-      20
+      16,
+      22
     ],
     "fire": [
       1,
@@ -349,42 +385,47 @@
     ],
     "voice": [
       4,
-      10,
-      19
+      11,
+      21
     ],
     "night": [
       5,
       6,
-      8
+      9
     ],
     "heart": [
       7,
-      16,
-      23
+      18,
+      25
     ],
-    "walking": [
-      9,
-      13
-    ],
-    "cut": [
-      11,
-      12,
-      18
-    ],
-    "light": [
+    "lights": [
+      8,
       15,
-      21
-    ],
-    "silence": [
-      17,
-      22
-    ],
-    "somebody": [
       24
     ],
-    "phone": [
-      25,
+    "walking": [
+      10,
+      14
+    ],
+    "cut": [
+      12,
+      13,
+      20
+    ],
+    "light": [
+      17,
+      23
+    ],
+    "silence": [
+      19,
       26
+    ],
+    "somebody": [
+      27
+    ],
+    "phone": [
+      28,
+      29
     ]
   }
 }
