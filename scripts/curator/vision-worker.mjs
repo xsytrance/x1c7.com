@@ -46,7 +46,8 @@ function loadEnv(file) {
   }
   return out;
 }
-const E = loadEnv(path.join(ROOT, ".env"));
+// .env.local wins over .env (rotated keys land there after a reinstall).
+const E = { ...loadEnv(path.join(ROOT, ".env")), ...loadEnv(path.join(ROOT, ".env.local")) };
 const PUB = (E.PUBLIC_URL || "").replace(/\/$/, "");
 const rcloneEnv = {
   ...process.env, RCLONE_CONFIG_R2_TYPE: "s3", RCLONE_CONFIG_R2_PROVIDER: "Cloudflare", RCLONE_CONFIG_R2_REGION: "auto",

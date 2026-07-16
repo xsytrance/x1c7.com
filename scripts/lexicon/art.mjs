@@ -53,7 +53,8 @@ function loadEnv(file) {
   }
   return out;
 }
-const E = loadEnv(join(ROOT, ".env"));
+// .env.local wins over .env (rotated keys land there after a reinstall).
+const E = { ...loadEnv(join(ROOT, ".env")), ...loadEnv(join(ROOT, ".env.local")) };
 const PUB = (E.PUBLIC_URL || "").replace(/\/$/, "");
 if (!args.dry && !["ACCESS_KEY_ID", "SECRET_ACCESS_KEY", "ENDPOINT", "BUCKET"].every((k) => E[k])) {
   console.error("✗ missing R2 creds in .env"); process.exit(1);

@@ -32,7 +32,8 @@ function loadEnv(file) {
   return out;
 }
 
-const e = loadEnv(ENV);
+// .env.local wins over .env (rotated keys land there after a reinstall).
+const e = { ...loadEnv(ENV), ...loadEnv(path.join(ROOT, ".env.local")) };
 const missing = ["ACCESS_KEY_ID", "SECRET_ACCESS_KEY", "ENDPOINT", "BUCKET"].filter((k) => !e[k]);
 if (missing.length) {
   console.error(`✗ missing in .env: ${missing.join(", ")}`);

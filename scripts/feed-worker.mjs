@@ -28,7 +28,9 @@ const W = 1152, H = 832;
 const log = (...a) => console.error(...a);
 
 function loadEnv(f) { const o = {}; if (!existsSync(f)) return o; for (const l of readFileSync(f, "utf8").split(/\r?\n/)) { const m = l.match(/^\s*([A-Za-z_][A-Za-z0-9_]*)\s*=\s*(.*)\s*$/); if (m) o[m[1]] = m[2].replace(/^["']|["']$/g, ""); } return o; }
-const E = { ...process.env, ...loadEnv(join(ROOT, ".env")) };
+// .env.local wins over .env (rotated keys land there after a reinstall);
+// real process env still trumps both. Keep every script's merge identical.
+const E = { ...loadEnv(join(ROOT, ".env")), ...loadEnv(join(ROOT, ".env.local")), ...process.env };
 const PUB = (E.PUBLIC_URL || "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev").replace(/\/$/, "");
 const BUCKET = E.BUCKET || "x1c7-music";
 const ENDPOINT = (E.ENDPOINT || "").replace(/\/$/, "");

@@ -11,7 +11,7 @@
 # Run it by hand anytime: bash scripts/lexicon/grow-and-publish.sh
 # ═══════════════════════════════════════════════════════════════════════════
 set -uo pipefail
-export PATH="/usr/bin:/usr/local/bin:$PATH"   # cron has a minimal PATH
+export PATH="$HOME/.local/bin:/usr/bin:/usr/local/bin:$PATH"   # systemd/cron PATH lacks ~/.local/bin (where node lives) until a login shell imports it
 cd /home/xsyprime/x1c7.com || exit 1
 
 echo "── $(date -Iseconds) · nightly build ──"
