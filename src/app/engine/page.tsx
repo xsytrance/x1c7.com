@@ -1,14 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { EngineHero } from "@/components/EngineHero";
 
-// THE ENGINE ROOM — everything the Kinetica engine learned in the Prism
-// integration, organized and pointed at. One page, static, house style.
-// The engineering log lives in docs/BUILD-LOG.md; the architecture +
-// backlog in docs/PRISM-INTEGRATION.md. This is the showroom.
+// THE ENGINE ROOM — the Kinetica engine, shown not told. A live catalog show
+// performs behind the hero (EngineHero, client) and funnels to the Kinetica
+// app where anyone can bring their own stems; the deep feature inventory lives
+// below as "under the hood" for the curious. The engineering log lives in
+// docs/BUILD-LOG.md; the architecture + backlog in docs/PRISM-INTEGRATION.md.
 
 export const metadata: Metadata = {
   title: "Engine Room — x1c7",
-  description: "The Kinetica engine's new senses: melody-colored lyrics, a living generative backdrop, and a show that knows the future of the song.",
+  description: "This is what your Suno stems become: melody-colored lyrics, a living generative backdrop, and a show that knows the future of the song — free, in your browser.",
 };
 
 const GROUPS: {
@@ -120,64 +122,32 @@ const GROUPS: {
 export default function EngineRoomPage() {
   return (
     <main
-      className="min-h-screen px-5 pb-24 pt-14 sm:px-10"
+      className="min-h-screen pb-24"
       style={{
         background:
           "radial-gradient(circle at 50% 0%, color-mix(in srgb, var(--theme-primary) 16%, transparent), transparent 55%)," +
           "linear-gradient(170deg, var(--theme-bg, #05030b), #05030b)",
       }}
     >
-      <div className="mx-auto max-w-5xl">
-        {/* Hero */}
-        <p className="font-mono text-[10px] uppercase tracking-[0.45em] text-white/40">x1c7 · engine room</p>
-        <h1 className="mt-3 font-display text-4xl font-black uppercase leading-none tracking-tight text-white sm:text-6xl">
-          The show learned<br />
-          <span style={{ color: "var(--theme-primary)" }}>to hear itself.</span>
-        </h1>
-        <p className="mt-5 max-w-2xl font-mono text-xs leading-6 tracking-wide text-white/60">
-          The Kinetica engine grew a new nervous system: it reads a song&apos;s measured
-          stems, its word-level timings, and its sung melody — offline, as facts —
-          and performs from ground truth a live visualizer can never have. It knows
-          which note every word carries. It knows the drop is coming before it lands.
-        </p>
-        <p className="mt-3 max-w-2xl font-mono text-[10px] uppercase leading-5 tracking-wider text-white/35">
-          Performance-rig architecture inspired by{" "}
-          <a href="https://github.com/rockinthiscity/prism" className="underline decoration-white/30 underline-offset-2 hover:text-white/70" target="_blank" rel="noreferrer">
-            PRISM
-          </a>{" "}
-          — Charles&apos;s browser VJ platform — pointed at lyrics, emotion, and meaning.
-        </p>
+      {/* Hero — the engine, performing live (client) */}
+      <EngineHero />
 
-        {/* See it now */}
-        <div className="mt-8 flex flex-wrap items-center gap-3">
-          <Link
-            href="/t/light-it-myself"
-            className="rounded-full px-5 py-2.5 font-display text-sm font-black uppercase tracking-[0.15em] text-black transition hover:scale-105"
-            style={{ background: "var(--theme-primary)" }}
-          >
-            ▶ Hear it — Light It Myself
-          </Link>
-          <Link
-            href="/music"
-            className="rounded-full border border-white/20 px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.2em] text-white/70 transition hover:border-white/50 hover:text-white"
-          >
-            The full collection
-          </Link>
-          <a
-            href="https://xsytrance.github.io/kinetica/"
-            target="_blank"
-            rel="noreferrer"
-            className="rounded-full border border-white/20 px-5 py-2.5 font-mono text-[10px] uppercase tracking-[0.2em] text-white/70 transition hover:border-white/50 hover:text-white"
-          >
-            Kinetica — bring your own stems ↗
-          </a>
+      <div className="mx-auto max-w-5xl px-5 sm:px-10">
+        {/* Under the hood */}
+        <div className="mb-6 flex items-baseline gap-3">
+          <h2 className="font-display text-2xl font-black uppercase tracking-tight text-white">Under the hood</h2>
+          <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/35">everything measured, nothing guessed</span>
         </div>
-        <p className="mt-3 font-mono text-[9px] uppercase tracking-[0.25em] text-white/30">
-          43 songs sing in color right now · phase 4+ shows carry the living field · phones get the lean show by design
+        <p className="max-w-2xl font-mono text-[11px] uppercase leading-5 tracking-wider text-white/40">
+          The engine reads a song&apos;s measured stems, word-level timings, and sung melody — offline,
+          as facts — and performs from ground truth a live visualizer can never have. Performance-rig
+          architecture inspired by{" "}
+          <a href="https://github.com/rockinthiscity/prism" className="underline decoration-white/30 underline-offset-2 hover:text-white/70" target="_blank" rel="noreferrer">PRISM</a>,
+          Charles&apos;s browser VJ platform — pointed at lyrics, emotion, and meaning.
         </p>
 
         {/* Feature groups */}
-        <div className="mt-14 space-y-12">
+        <div className="mt-10 space-y-12">
           {GROUPS.map((g) => (
             <section key={g.title}>
               <div className="mb-4 flex items-baseline gap-3">
