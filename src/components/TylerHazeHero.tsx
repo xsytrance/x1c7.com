@@ -11,7 +11,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { TYLER, TYLER_LINKS, TYLER_TRACKS } from "@/data/tylerhaze";
+import { TYLER, TYLER_LINKS, TYLER_TRACKS, TYLER_GALLERY } from "@/data/tylerhaze";
 
 function ScrawlTitle({ text }: { text: string }) {
   const [on, setOn] = useState(false);
@@ -128,6 +128,20 @@ export function TylerHazeHero() {
             <p className="font-mono text-[11px] font-bold uppercase tracking-widest text-white/90">Rated Tyler</p>
             <p className="font-mono text-[8.5px] uppercase tracking-wider text-white/55">{TYLER.ratedTyler}</p>
           </div>
+        </div>
+      </div>
+
+      {/* official artwork gallery — all 12, straight from Tyler */}
+      <div className="relative border-t border-white/10 px-6 pb-6 pt-4 sm:px-10">
+        <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+          the visual world — official Tyler Haze artwork
+        </p>
+        <div className="flex gap-3 overflow-x-auto pb-2 [scrollbar-width:thin]">
+          {TYLER_GALLERY.map((u, i) => (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img key={u} src={u} alt={`Tyler Haze artwork ${i + 1}`} loading="lazy"
+              className="h-36 w-36 flex-none rounded-lg border border-white/12 object-cover transition duration-300 hover:scale-[1.05] hover:border-white/40 sm:h-44 sm:w-44" />
+          ))}
         </div>
       </div>
     </section>

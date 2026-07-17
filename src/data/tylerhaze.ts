@@ -46,6 +46,12 @@ export const TYLER_TRACKS = [
   "House Lights", "Storms In November",
 ] as const;
 
+// Official Tyler Haze artwork (from Juan, 2026-07-17) — R2 tyler-haze/gallery/.
+// All 12 ride the hero gallery strip AND the #MADETOBREAK show's guided layer
+// (planets/madetobreak/guided.json).
+export const TYLER_GALLERY = Array.from({ length: 12 }, (_, i) =>
+  `https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/tyler-haze/gallery/${String(i + 1).padStart(2, "0")}.webp`);
+
 // The Tyler Haze edition palette (from the album art), applied in globals.css.
 // Previous site palette (for revert):
 //   --theme-primary #ff2440 · --theme-secondary #43f7ff ·
