@@ -1,0 +1,589 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "madetobreak",
+  "generatedAt": "2026-07-17T11:36:02.728Z",
+  "measured": {
+    "bpm": 92.29,
+    "duration": 232.37
+  },
+  "identity": {
+    "title": "#MADETOBREAK",
+    "titleAlternates": [],
+    "genre": "Alternative Rock",
+    "subGenres": [
+      "Cinematic Rock",
+      "Alternative Metal"
+    ],
+    "mood": "Defiant, Resilient",
+    "styleSentence": "A cinematic alternative-rock anthem with a tempo of 92.29 BPM, layered with gritty guitars, pounding drums, and atmospheric synths, capturing the raw energy of a post-party midnight scene filled with defiance and resilience.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "Aggressive, fast-paced, and emotionally charged with spoken word interludes"
+  },
+  "cover": {
+    "file": "/home/xsyprime/Hermes/x1c7.com/assets/art/tyler-haze-the-party-left-without-me.png",
+    "palette": [
+      "#080808",
+      "#080818",
+      "#181818",
+      "#181828",
+      "#081828"
+    ],
+    "description": "A dimly lit suburban house porch at dusk shows three exhausted people sitting amid scattered party debris like empty cups and bottles.",
+    "mood": "Melancholic and abandoned",
+    "artStyle": "Photorealistic with gritty, atmospheric lighting",
+    "subjects": [
+      "house porch",
+      "three people",
+      "empty cups",
+      "bottles"
+    ]
+  },
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "G",
+      "mode": "minor",
+      "confidence": 0.772
+    },
+    "boundaries": [
+      5.29,
+      22.29,
+      26.84,
+      40.03,
+      121.86,
+      167.46,
+      169.23,
+      230.81
+    ],
+    "brightness": 3152.6,
+    "dynamicsDb": 11.6
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "[Cold Open — spoken, distorted]\n\nYou can stop checking—\nI'm still fucking here.\n\n[Verse 1 — fast, controlled aggression]\n\nThey threw stones, I returned a boulder\nTyler ain't the type to let a little scratch get mulled over\nPressure built, heat meant to burst—I just got colder\nWeight of the world? It's me on my shoulders\n\nEven on my shittiest day, these hands don't shake\nYou get what you give—I get what I take\nHad a knife in my back, still ate off the same plate\nNow I walk in like the building got my name on the gate\n\nBad hand dealt, I made the cards look loaded\nPain came back for what I owed—I told it, \"Account closed\"\nEvery scar got a story, I don't care who knows it\nTurned a life full of cracks into armor—I molded it\n\nThey couldn't shatter my will, now they're chanting my name\nTyyyleeer!\nNo longer playing, now I'm coding the game\nBuilt a throne from the wreckage, let 'em study the frame\nThey were betting on the break, now they're scared of the change\n\n[Chorus — explosive, chantable]\n\nI was made to break\nEvery lock, every limit, every chain in my way\nMade to break\nNot bend, not fold, not fade\n\nPut the pressure on me, watch the pressure obey\nYou can call me damaged—I call it battle-made\nThey were waiting on a body, I became the barricade\nI was made to break\nEverything but me\n\n[Verse 2 — faster, sharper delivery]\n\nYou call it trauma, I call it repetition\nPain kept talking, I stopped giving it permission\nI don't need your pity, I need better opposition\nThey keep praying for the fall like it's some kind of religion\n\nLife kept swinging till its knuckles split\nI got bored of getting hit, made a joke out of it\nFear got old, pain went quiet, doubt lost its grip\nNow the worst days see me coming and they call in sick\n\nEvery shot that they sent only sharpened my aim\nI don't carry my damage—I make damage behave\nTried to bury me alive, I put a stage in the grave\nNow the dirt on my name got 'em screaming my name\n\nI don't wait on luck, I put a boot on fate\nEvery loss came heavy, I just added to the weight\nThey kept aiming for the cracks, trying to widen the breaks\nNow the damage holds me up—motherfucker, I'm reinforced\n\n[Chorus — explosive]\n\nI was made to break\nEvery lock, every limit, every chain in my way\nMade to break\nNot bend, not fold, not fade\n\nPut the pressure on me, watch the pressure obey\nYou can call me damaged—I call it battle-made\nThey were waiting on a body, I became the barricade\nI was made to break\nEverything but me\n\n[Breakdown — heavy half-time, aggressive]\n\nTry to break me—I break back\nPile it on—I adapt\nTurned the pain into a weapon\nTurned the pressure into impact\n\nNo collapse, no retreat\nI don't beg, I don't ask\nI'm the product of the worst shit\nAnd I came out built to last\n\n[Studio gang chant]\n\nTyyyleeeeeer!!!!!!\n\n[Final Chorus — biggest delivery, layered vocals]\n\nI was made to break\nEvery lock, every limit, every chain in my way\nMade to break\nNot bend, not fold, not fade\n\nPut the pressure on me, watch the pressure obey\nYou can call me damaged—I call it battle-made\nThey were waiting on a body, I became the barricade\nI was made to break—\n\n[All instrumentation cuts]\n\nEverything but me.\n\n[Song Ends]",
+    "lrc": "[Cold Open — spoken, distorted]\n[Verse 1 — fast, controlled aggression]\n[00:20.22] Everything but me\n[Chorus — explosive, chantable]\n[00:25.70] But here with stones, I return to boulder\n[Verse 2 — faster, sharper delivery]\n[00:28.36] Tyler ain't the type to let a little scratch get mulled over\n[00:31.48] Pressure built,\n[00:32.28] he meant to burst,\n[00:33.30] I just got colder\n[00:34.34] Weight of the world, it's me on my shoulders\n[00:37.04] Even on my shittiest day,\n[00:38.76] these hands don't shake\n[00:39.74] You get what you give, I get what I take\n[Chorus — explosive]\n[00:42.48] Had a knife in my back,\n[00:43.74] still ate off the same plate\n[00:44.78] Now I walk in like the building,\n[00:46.22] got my name on the gate\n[00:47.40] Bad handle, I made the cars look loaded\n[00:50.04] Pain came back for what I owed,\n[00:51.76] I told it to count close\n[00:52.86] Every scar, I got a story, I don't care\n[00:54.70] Who knows,\n[00:55.42] it turned to life,\n[00:56.12] full of cracks in the armor I molded in\n[00:58.20] They couldn't shed in my will,\n[00:59.48] now they shed in my name\n[01:00.72] No longer playing, now I'm coding the game\n[01:03.24] Built a throne from the wreckage,\n[01:04.84] let them study the frame\n[01:05.86] They were betting on the break,\n[01:07.48] now they're scared of the change\n[01:09.28] I was made to break\n[01:11.72] Every lock, every limit, every chain in my way\n[01:15.71] Made to break\n[01:17.34] Not bend, not fall, not fade\n[01:19.24] Pressure built,\n[01:20.02] he meant to burst,\n[01:20.02] I get what you give\n[01:20.02] It on me, watch the pressure obey\n[01:22.06] You can call me demons, I call it battle made\n[01:24.52] They were waiting on a body,\n[01:26.04] I became the barricade\n[01:27.20] I was made to break\n[01:34.27] Everything but me\n[01:39.60] You call it trauma, I call it repetition\n[01:42.64] Brain kept talking,\n[01:43.98] I'd stop giving it permission\n[01:45.26] I don't need your pity, I need better opposition\n[01:47.50] They keep praying for the fall,\n[01:49.12] like it's some kind of revolution\n[01:50.19] Life kept screaming till it's knuckle split\n[01:52.56] I got bored of getting hit,\n[01:54.02] made a joke out of it\n[01:55.30] Fear got old,\n[01:56.38] pain went quiet,\n[01:57.00] doubt lost its grip\n[01:57.88] Now the worst day,\n[01:58.96] see me coming,\n[01:59.64] then they call and say\n[02:00.78] Every shot that they sent, only sharp in my aim\n[Bridge]\n[02:03.50] I don't carry my damage, I make damage behave\n[02:05.96] Tried to bury me alive,\n[02:07.50] I put a stage in the grave\n[02:08.74] Now the dirt on my name,\n[02:10.24] got them screaming my name\n[02:11.57] I don't wait on luck, I put a boot on fate\n[02:13.98] Every loss came heavy, I just had it to the way\n[02:16.72] They kept aiming for the cracks,\n[02:18.10] trying to widen the break\n[02:19.24] Now the damage,\n[02:20.00] I don't need your pity,\n[02:20.00] I just had it to the way\n[02:20.00] Damage holds me up, motherfucker, I'm reinforced\n[02:22.40] I was made to break\n[02:25.58] Every lock, every limit, every chain in my way\n[02:28.52] Made to break\n[02:31.23] Not bend, not fall, not fade\n[02:33.16] Pressure on me, watch the pressure obey\n[02:35.58] You can call me damage, I call it battle made\n[02:38.40] They were waiting on a body,\n[02:39.90] I became a barricade\n[02:41.04] I was made to break\n[Drop]\n[02:48.00] Everything but me\n[Outro]\n[02:54.21] Tried to break me, I break back\n[02:55.54] Pile it on, now you dab\n[02:56.82] Turn the pain into a weapon,\n[02:58.22] turn the pressure into impact\n[02:59.62] No collapse,\n[03:00.54] no retreat,\n[03:01.22] I don't beg,\n[03:01.90] I don't ask\n[03:02.46] I'm the product of the worst shit\n[03:04.04] And I came out built to last\n[03:12.42] Tyler!\n[03:21.18] Every lock, every limit, every chain in my way\n[03:23.72] Made to break\n[03:25.94] Not bend, not fall, not fade\n[03:28.45] Pressure on me, watch the pressure obey\n[03:30.78] You can call me damage, I call it battle made\n[03:33.56] They were waiting on a body,\n[03:35.00] I became a barricade\n[03:36.18] I was made to break\n[03:43.30] Everything but me\n[03:50.94] They were waiting on a body,\n[03:52.34] I came out built to last\n"
+  },
+  "analysis": {
+    "summary": "The song is a powerful anthem of defiance and resilience, telling the story of overcoming adversity and transforming pain into strength, while rejecting weakness and embracing a battle-hardened identity.",
+    "overallMood": "Defiant, Resilient",
+    "themes": [
+      "Resilience",
+      "Defiance",
+      "Transformation of Pain",
+      "Identity",
+      "Rejection of Weakness",
+      "Empowerment"
+    ],
+    "palette": [
+      "#1A1A2E",
+      "#4B0082",
+      "#8B0000",
+      "#FF4500"
+    ],
+    "sections": [
+      {
+        "name": "Cold Open — spoken, distorted",
+        "emotion": "Anguished",
+        "intensity": 0.46,
+        "colorHint": "#1a1a2e",
+        "start": 20.22
+      },
+      {
+        "name": "Verse 1 — fast, controlled aggression",
+        "emotion": "Fierce",
+        "intensity": 0.94,
+        "colorHint": "#4b0082",
+        "start": 20.22
+      },
+      {
+        "name": "Chorus — explosive, chantable",
+        "emotion": "Defiant",
+        "intensity": 0.87,
+        "colorHint": "#8b0000",
+        "start": 25.7
+      },
+      {
+        "name": "Verse 2 — faster, sharper delivery",
+        "emotion": "Unyielding",
+        "intensity": 0.73,
+        "colorHint": "#ff4500",
+        "start": 28.36
+      },
+      {
+        "name": "Chorus — explosive",
+        "emotion": "Empowered",
+        "intensity": 0.84,
+        "colorHint": "#8b0000",
+        "start": 42.48
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Resolute",
+        "intensity": 0.58,
+        "colorHint": "#4b0082",
+        "start": 123.5
+      },
+      {
+        "name": "Drop",
+        "emotion": "Calm Defiance",
+        "intensity": 0.3,
+        "colorHint": "#1a1a2e",
+        "start": 168
+      },
+      {
+        "name": "Outro",
+        "emotion": "Triumphant",
+        "intensity": 0.28,
+        "colorHint": "#ff4500",
+        "start": 174.21
+      }
+    ],
+    "keywords": [
+      {
+        "word": "break",
+        "emotion": "Defiant",
+        "imageryPrompt": "A shattered mirror reflecting a stormy sky, surrounded by cracks that glow with an inner light"
+      },
+      {
+        "word": "damage",
+        "emotion": "Resilient",
+        "imageryPrompt": "A broken chain fused with steel, glowing in the dark with a fiery glow"
+      },
+      {
+        "word": "pressure",
+        "emotion": "Intense",
+        "imageryPrompt": "A mountain of rubble under a heavy sky, with lightning cracking through the air"
+      },
+      {
+        "word": "barricade",
+        "emotion": "Fierce",
+        "imageryPrompt": "A wall of shattered glass and stone, glowing with a defiant red light"
+      },
+      {
+        "word": "trauma",
+        "emotion": "Anguished",
+        "imageryPrompt": "A figure standing in a field of broken glass, with a storm brewing behind them"
+      },
+      {
+        "word": "reinforced",
+        "emotion": "Empowered",
+        "imageryPrompt": "A fortress made of broken chains and steel, glowing with a golden light"
+      },
+      {
+        "word": "weapon",
+        "emotion": "Defiant",
+        "imageryPrompt": "A sword forged from broken pieces of metal, glowing with a deep crimson light"
+      },
+      {
+        "word": "impact",
+        "emotion": "Intense",
+        "imageryPrompt": "A meteor crashing into the ground, with shockwaves rippling through the sky"
+      },
+      {
+        "word": "built",
+        "emotion": "Resilient",
+        "imageryPrompt": "A statue carved from stone and metal, standing defiantly in a storm"
+      },
+      {
+        "word": "boulder",
+        "emotion": "defiance, strength",
+        "imageryPrompt": "A massive boulder being thrown back at a crowd of people, glowing with an inner light, standing in a stormy field at dusk"
+      },
+      {
+        "word": "chains",
+        "emotion": "defiance, breaking free",
+        "imageryPrompt": "A figure standing in a dark room, chains melting into liquid metal as they rise into the air, forming a glowing barrier around them"
+      },
+      {
+        "word": "armor",
+        "emotion": "strength, transformation",
+        "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons"
+      },
+      {
+        "word": "wreckage",
+        "emotion": "resilience, rebuilding",
+        "imageryPrompt": "A throne made from the wreckage of a battlefield, glowing with the remnants of broken weapons and shattered armor, surrounded by a storm of fire"
+      },
+      {
+        "word": "shattered",
+        "emotion": "transformation, resilience",
+        "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "storm",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A person standing in the middle of a storm, their body glowing with light as the storm bends around them, forming a protective barrier"
+      },
+      {
+        "word": "fire",
+        "emotion": "strength, defiance",
+        "imageryPrompt": "A person standing in a field of fire, their body glowing with light as the flames swirl around them, forming a protective barrier"
+      },
+      {
+        "word": "battle",
+        "emotion": "resilience, defiance",
+        "imageryPrompt": "A battlefield at night, with a lone figure standing in the center, surrounded by glowing fire and the remnants of broken weapons"
+      },
+      {
+        "word": "stormy",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A stormy sky above a battlefield, with a lone figure standing in the center, their body glowing with light as the storm bends around them"
+      },
+      {
+        "word": "cracks",
+        "emotion": "transformation, resilience",
+        "imageryPrompt": "A cracked mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "shatter",
+        "emotion": "defiance, transformation",
+        "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "wounds",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A figure standing in a field of broken glass, their body glowing with the light of wounds turned into armor"
+      },
+      {
+        "word": "battle-made",
+        "emotion": "resilience, strength",
+        "imageryPrompt": "A person standing in a battlefield of broken weapons, their body glowing with the light of battle-made strength"
+      }
+    ],
+    "meaning": {
+      "story": "The song is a battle cry from someone who has been broken and rebuilt, not by others, but by their own unyielding will. It's about transformation through suffering, where pain is not just endured but weaponized, and weakness is rejected as a choice. The narrator turns every wound into a badge of honor, every attack into a catalyst for strength, and every defeat into a foundation for resilience. It's not just about survival—it's about becoming unbreakable through the very forces that sought to destroy them.",
+      "sections": [
+        {
+          "name": "Cold Open — spoken, distorted",
+          "interpretation": "A defiant declaration of presence and resistance.",
+          "keyLine": "You can stop checking—I'm still fucking here."
+        },
+        {
+          "name": "Verse 1 — fast, controlled aggression",
+          "interpretation": "A battle-hardened narrator recounts their journey through adversity and defiance.",
+          "keyLine": "They couldn't shatter my will, now they're chanting my name."
+        },
+        {
+          "name": "Chorus — explosive, chantable",
+          "interpretation": "A rallying cry of defiance and transformation through struggle.",
+          "keyLine": "I was made to break—Not bend, not fold, not fade."
+        },
+        {
+          "name": "Verse 2 — faster, sharper delivery",
+          "interpretation": "The narrator's evolution into a force of unrelenting strength and resistance.",
+          "keyLine": "Now the damage holds me up—motherfucker, I'm reinforced."
+        },
+        {
+          "name": "Breakdown — heavy half-time, aggressive",
+          "interpretation": "A declaration of unbreakable resilience and tactical transformation of pain.",
+          "keyLine": "Turned the pain into a weapon—Turned the pressure into impact."
+        },
+        {
+          "name": "Final Chorus — biggest delivery, layered vocals",
+          "interpretation": "The culmination of the narrator's transformation into an unshakable force.",
+          "keyLine": "I was made to break—Everything but me."
+        }
+      ],
+      "keyLines": [
+        "They threw stones, I returned a boulder",
+        "Weight of the world? It's me on my shoulders",
+        "They couldn't shatter my will, now they're chanting my name",
+        "I was made to break—Not bend, not fold, not fade",
+        "Now the damage holds me up—motherfucker, I'm reinforced",
+        "I was made to break—Everything but me"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "boulder",
+          "emotion": "defiance, strength",
+          "imageryPrompt": "A massive boulder being thrown back at a crowd of people, glowing with an inner light, standing in a stormy field at dusk",
+          "weight": 0.9
+        },
+        {
+          "word": "pressure",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A person standing in the middle of a storm, their body radiating light as the pressure of the storm bends around them",
+          "weight": 0.85
+        },
+        {
+          "word": "chains",
+          "emotion": "defiance, breaking free",
+          "imageryPrompt": "A figure standing in a dark room, chains melting into liquid metal as they rise into the air, forming a glowing barrier around them",
+          "weight": 0.9
+        },
+        {
+          "word": "armor",
+          "emotion": "strength, transformation",
+          "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "wreckage",
+          "emotion": "resilience, rebuilding",
+          "imageryPrompt": "A throne made from the wreckage of a battlefield, glowing with the remnants of broken weapons and shattered armor, surrounded by a storm of fire",
+          "weight": 0.87
+        },
+        {
+          "word": "barricade",
+          "emotion": "defiance, strength",
+          "imageryPrompt": "A massive barricade made of broken weapons and shattered stone, glowing with an inner fire, standing in a battlefield of smoke and lightning",
+          "weight": 0.89
+        },
+        {
+          "word": "damage",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A person standing in a field of shattered glass, their body glowing with the remnants of damage, each shard reflecting their face in a mirror of strength",
+          "weight": 0.86
+        },
+        {
+          "word": "reinforced",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A figure standing in a storm, their body made of reinforced steel and glowing fire, surrounded by a halo of shattered weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "shattered",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.85
+        },
+        {
+          "word": "storm",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A person standing in the middle of a storm, their body glowing with light as the storm bends around them, forming a protective barrier",
+          "weight": 0.87
+        },
+        {
+          "word": "fire",
+          "emotion": "strength, defiance",
+          "imageryPrompt": "A person standing in a field of fire, their body glowing with light as the flames swirl around them, forming a protective barrier",
+          "weight": 0.9
+        },
+        {
+          "word": "battle",
+          "emotion": "resilience, defiance",
+          "imageryPrompt": "A battlefield at night, with a lone figure standing in the center, surrounded by glowing fire and the remnants of broken weapons",
+          "weight": 0.89
+        },
+        {
+          "word": "stormy",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A stormy sky above a battlefield, with a lone figure standing in the center, their body glowing with light as the storm bends around them",
+          "weight": 0.86
+        },
+        {
+          "word": "cracks",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A cracked mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.85
+        },
+        {
+          "word": "shatter",
+          "emotion": "defiance, transformation",
+          "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.87
+        },
+        {
+          "word": "wounds",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A figure standing in a field of broken glass, their body glowing with the light of wounds turned into armor",
+          "weight": 0.86
+        },
+        {
+          "word": "armor",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "reinforced",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A figure standing in a storm, their body made of reinforced steel and glowing fire, surrounded by a halo of shattered weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "battle-made",
+          "emotion": "resilience, strength",
+          "imageryPrompt": "A person standing in a battlefield of broken weapons, their body glowing with the light of battle-made strength",
+          "weight": 0.89
+        }
+      ]
+    }
+  },
+  "show": {
+    "energyArc": {
+      "open": 35,
+      "mid": 37,
+      "close": 20
+    },
+    "sectionEnergy": [
+      {
+        "name": "Cold Open — spoken, distorted",
+        "start": 20.22,
+        "intensity": 0.46
+      },
+      {
+        "name": "Verse 1 — fast, controlled aggression",
+        "start": 20.22,
+        "intensity": 0.94
+      },
+      {
+        "name": "Chorus — explosive, chantable",
+        "start": 25.7,
+        "intensity": 0.87
+      },
+      {
+        "name": "Verse 2 — faster, sharper delivery",
+        "start": 28.36,
+        "intensity": 0.73
+      },
+      {
+        "name": "Chorus — explosive",
+        "start": 42.48,
+        "intensity": 0.84
+      },
+      {
+        "name": "Bridge",
+        "start": 123.5,
+        "intensity": 0.58
+      },
+      {
+        "name": "Drop",
+        "start": 168,
+        "intensity": 0.3
+      },
+      {
+        "name": "Outro",
+        "start": 174.21,
+        "intensity": 0.28
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Cold Open — spoken, distorted",
+        "presence": 82
+      },
+      {
+        "name": "Verse 1 — fast, controlled aggression",
+        "presence": 22
+      },
+      {
+        "name": "Chorus — explosive, chantable",
+        "presence": 69
+      },
+      {
+        "name": "Verse 2 — faster, sharper delivery",
+        "presence": 86
+      },
+      {
+        "name": "Chorus — explosive",
+        "presence": 57
+      },
+      {
+        "name": "Bridge",
+        "presence": 0
+      },
+      {
+        "name": "Drop",
+        "presence": 0
+      },
+      {
+        "name": "Outro",
+        "presence": 0
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          6
+        ],
+        [
+          6.24,
+          7.36
+        ],
+        [
+          7.6,
+          8.64
+        ],
+        [
+          8.88,
+          10
+        ],
+        [
+          20,
+          21.36
+        ],
+        [
+          27.6,
+          28.64
+        ],
+        [
+          28.88,
+          30
+        ],
+        [
+          30.24,
+          31.36
+        ],
+        [
+          31.52,
+          32.64
+        ],
+        [
+          32.88,
+          34
+        ],
+        [
+          34.24,
+          35.36
+        ],
+        [
+          35.52,
+          36.64
+        ],
+        [
+          93.36,
+          95.68
+        ],
+        [
+          167.68,
+          169.44
+        ]
+      ],
+      "risers": [
+        {
+          "t": 2.08,
+          "end": 6
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "madetobreak-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

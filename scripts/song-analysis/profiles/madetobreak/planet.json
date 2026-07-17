@@ -1,0 +1,133 @@
+[
+  {
+    "id": "madetobreak",
+    "planet": {
+      "analysis": {
+        "summary": "The song is a powerful anthem of defiance and resilience, telling the story of overcoming adversity and transforming pain into strength, while rejecting weakness and embracing a battle-hardened identity.",
+        "overallMood": "Defiant, Resilient",
+        "themes": [
+          "Resilience",
+          "Defiance",
+          "Transformation of Pain",
+          "Identity",
+          "Rejection of Weakness",
+          "Empowerment"
+        ],
+        "palette": [
+          "#1A1A2E",
+          "#4B0082",
+          "#8B0000",
+          "#FF4500"
+        ],
+        "sections": [
+          {
+            "name": "Cold Open — spoken, distorted",
+            "emotion": "Anguished",
+            "intensity": 0.6,
+            "colorHint": "#1a1a2e",
+            "start": 20.22
+          },
+          {
+            "name": "Verse 1 — fast, controlled aggression",
+            "emotion": "Fierce",
+            "intensity": 0.8,
+            "colorHint": "#4b0082",
+            "start": 20.22
+          },
+          {
+            "name": "Chorus — explosive, chantable",
+            "emotion": "Defiant",
+            "intensity": 0.9,
+            "colorHint": "#8b0000",
+            "start": 25.7
+          },
+          {
+            "name": "Verse 2 — faster, sharper delivery",
+            "emotion": "Unyielding",
+            "intensity": 0.85,
+            "colorHint": "#ff4500",
+            "start": 28.36
+          },
+          {
+            "name": "Chorus — explosive",
+            "emotion": "Empowered",
+            "intensity": 0.9,
+            "colorHint": "#8b0000",
+            "start": 42.48
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Resolute",
+            "intensity": 0.8,
+            "colorHint": "#4b0082",
+            "start": 123.5
+          },
+          {
+            "name": "Drop",
+            "emotion": "Calm Defiance",
+            "intensity": 0.65,
+            "colorHint": "#1a1a2e",
+            "start": 168
+          },
+          {
+            "name": "Outro",
+            "emotion": "Triumphant",
+            "intensity": 0.95,
+            "colorHint": "#ff4500",
+            "start": 174.21
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Break",
+            "emotion": "Defiant",
+            "imageryPrompt": "A shattered mirror reflecting a stormy sky, surrounded by cracks that glow with an inner light"
+          },
+          {
+            "word": "Damage",
+            "emotion": "Resilient",
+            "imageryPrompt": "A broken chain fused with steel, glowing in the dark with a fiery glow"
+          },
+          {
+            "word": "Pressure",
+            "emotion": "Intense",
+            "imageryPrompt": "A mountain of rubble under a heavy sky, with lightning cracking through the air"
+          },
+          {
+            "word": "Barricade",
+            "emotion": "Fierce",
+            "imageryPrompt": "A wall of shattered glass and stone, glowing with a defiant red light"
+          },
+          {
+            "word": "Trauma",
+            "emotion": "Anguished",
+            "imageryPrompt": "A figure standing in a field of broken glass, with a storm brewing behind them"
+          },
+          {
+            "word": "Reinforced",
+            "emotion": "Empowered",
+            "imageryPrompt": "A fortress made of broken chains and steel, glowing with a golden light"
+          },
+          {
+            "word": "Weapon",
+            "emotion": "Defiant",
+            "imageryPrompt": "A sword forged from broken pieces of metal, glowing with a deep crimson light"
+          },
+          {
+            "word": "Impact",
+            "emotion": "Intense",
+            "imageryPrompt": "A meteor crashing into the ground, with shockwaves rippling through the sky"
+          },
+          {
+            "word": "Built to last",
+            "emotion": "Resilient",
+            "imageryPrompt": "A statue carved from stone and metal, standing defiantly in a storm"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

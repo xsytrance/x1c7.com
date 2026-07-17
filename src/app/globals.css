@@ -4,19 +4,23 @@
 
 /* Registered so the now-playing theme can *animate* between palettes — a plain
    custom property can't be transitioned, a typed @property color can. */
-@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #ff2440; }
-@property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #43f7ff; }
-@property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #8dff4a; }
-@property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #05030b; }
+/* TYLER HAZE EDITION (2026-07-17) — palette honoring "The Party Left Without
+   Me" by Tyler Haze (jayodeed's debut): red-cup crimson, porch-light amber,
+   dusk-indigo glow on a midnight-indigo black. Previous values (revert):
+   primary #ff2440 · secondary #43f7ff · accent #8dff4a · bg #05030b */
+@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #d9342b; }
+@property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #ffb45c; }
+@property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #7c8cff; }
+@property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #080b18; }
 
 :root {
   color-scheme: dark;
   --bg: #05030b;
   /* Now-playing theme (driven by ThemeEngine; defaults = house palette). */
-  --theme-primary: #ff2440;
-  --theme-secondary: #43f7ff;
-  --theme-accent: #8dff4a;
-  --theme-bg: #05030b;
+  --theme-primary: #d9342b;
+  --theme-secondary: #ffb45c;
+  --theme-accent: #7c8cff;
+  --theme-bg: #080b18;
   --theme-intensity: 0.6;
   --beat: 0;
   transition: --theme-primary 700ms ease, --theme-secondary 700ms ease,

@@ -1,0 +1,2217 @@
+{
+ "v": 1,
+ "language": "English",
+ "qa": {
+  "words": 549,
+  "clumps": [
+   {
+    "t": 27.84,
+    "n": 10
+   }
+  ],
+  "clumpedWords": 10,
+  "clumpRatio": 0.018,
+  "span": 193.0,
+  "duration": 232.4,
+  "pass": true
+ },
+ "words": [
+  {
+   "t": 26.24,
+   "w": "You"
+  },
+  {
+   "t": 26.24,
+   "w": "can"
+  },
+  {
+   "t": 26.56,
+   "w": "stop"
+  },
+  {
+   "t": 27.12,
+   "w": "checking"
+  },
+  {
+   "t": 27.84,
+   "w": "I'm"
+  },
+  {
+   "t": 27.84,
+   "w": "still"
+  },
+  {
+   "t": 27.84,
+   "w": "fucking"
+  },
+  {
+   "t": 27.84,
+   "w": "here"
+  },
+  {
+   "t": 27.84,
+   "w": "They"
+  },
+  {
+   "t": 27.84,
+   "w": "threw"
+  },
+  {
+   "t": 27.84,
+   "w": "stones"
+  },
+  {
+   "t": 27.84,
+   "w": "I"
+  },
+  {
+   "t": 27.84,
+   "w": "returned"
+  },
+  {
+   "t": 27.84,
+   "w": "a"
+  },
+  {
+   "t": 27.92,
+   "w": "boulder"
+  },
+  {
+   "t": 28.56,
+   "w": "Tyler"
+  },
+  {
+   "t": 29.04,
+   "w": "ain't"
+  },
+  {
+   "t": 29.2,
+   "w": "the"
+  },
+  {
+   "t": 29.28,
+   "w": "type"
+  },
+  {
+   "t": 29.52,
+   "w": "to"
+  },
+  {
+   "t": 29.6,
+   "w": "let"
+  },
+  {
+   "t": 29.84,
+   "w": "a"
+  },
+  {
+   "t": 30.0,
+   "w": "little"
+  },
+  {
+   "t": 30.16,
+   "w": "scratch"
+  },
+  {
+   "t": 30.64,
+   "w": "get"
+  },
+  {
+   "t": 30.88,
+   "w": "mulled"
+  },
+  {
+   "t": 31.36,
+   "w": "over"
+  },
+  {
+   "t": 31.6,
+   "w": "Pressure"
+  },
+  {
+   "t": 31.92,
+   "w": "built"
+  },
+  {
+   "t": 32.32,
+   "w": "heat"
+  },
+  {
+   "t": 32.64,
+   "w": "meant"
+  },
+  {
+   "t": 32.88,
+   "w": "to"
+  },
+  {
+   "t": 32.96,
+   "w": "burstI"
+  },
+  {
+   "t": 33.52,
+   "w": "just"
+  },
+  {
+   "t": 33.68,
+   "w": "got"
+  },
+  {
+   "t": 33.92,
+   "w": "colder"
+  },
+  {
+   "t": 34.72,
+   "w": "Weight"
+  },
+  {
+   "t": 35.04,
+   "w": "of"
+  },
+  {
+   "t": 35.12,
+   "w": "the"
+  },
+  {
+   "t": 35.2,
+   "w": "world"
+  },
+  {
+   "t": 35.68,
+   "w": "It's"
+  },
+  {
+   "t": 35.92,
+   "w": "me"
+  },
+  {
+   "t": 36.24,
+   "w": "on"
+  },
+  {
+   "t": 36.4,
+   "w": "my"
+  },
+  {
+   "t": 36.56,
+   "w": "shoulders"
+  },
+  {
+   "t": 37.36,
+   "w": "Even"
+  },
+  {
+   "t": 37.68,
+   "w": "on"
+  },
+  {
+   "t": 37.84,
+   "w": "my"
+  },
+  {
+   "t": 37.92,
+   "w": "shittiest"
+  },
+  {
+   "t": 38.48,
+   "w": "day"
+  },
+  {
+   "t": 38.88,
+   "w": "these"
+  },
+  {
+   "t": 38.96,
+   "w": "hands"
+  },
+  {
+   "t": 39.36,
+   "w": "don't"
+  },
+  {
+   "t": 39.52,
+   "w": "shake"
+  },
+  {
+   "t": 40.08,
+   "w": "You"
+  },
+  {
+   "t": 40.16,
+   "w": "get"
+  },
+  {
+   "t": 40.4,
+   "w": "what"
+  },
+  {
+   "t": 40.64,
+   "w": "you"
+  },
+  {
+   "t": 40.96,
+   "w": "giveI"
+  },
+  {
+   "t": 41.44,
+   "w": "get"
+  },
+  {
+   "t": 41.84,
+   "w": "what"
+  },
+  {
+   "t": 41.92,
+   "w": "I"
+  },
+  {
+   "t": 42.24,
+   "w": "take"
+  },
+  {
+   "t": 42.64,
+   "w": "Had"
+  },
+  {
+   "t": 42.88,
+   "w": "a"
+  },
+  {
+   "t": 42.96,
+   "w": "knife"
+  },
+  {
+   "t": 43.6,
+   "w": "in"
+  },
+  {
+   "t": 43.6,
+   "w": "my"
+  },
+  {
+   "t": 43.6,
+   "w": "back"
+  },
+  {
+   "t": 43.84,
+   "w": "still"
+  },
+  {
+   "t": 44.0,
+   "w": "ate"
+  },
+  {
+   "t": 44.16,
+   "w": "off"
+  },
+  {
+   "t": 44.32,
+   "w": "the"
+  },
+  {
+   "t": 44.4,
+   "w": "same"
+  },
+  {
+   "t": 44.64,
+   "w": "plate"
+  },
+  {
+   "t": 44.96,
+   "w": "Now"
+  },
+  {
+   "t": 45.12,
+   "w": "I"
+  },
+  {
+   "t": 45.28,
+   "w": "walk"
+  },
+  {
+   "t": 45.52,
+   "w": "in"
+  },
+  {
+   "t": 45.6,
+   "w": "like"
+  },
+  {
+   "t": 45.84,
+   "w": "the"
+  },
+  {
+   "t": 45.92,
+   "w": "building"
+  },
+  {
+   "t": 46.32,
+   "w": "got"
+  },
+  {
+   "t": 46.4,
+   "w": "my"
+  },
+  {
+   "t": 46.56,
+   "w": "name"
+  },
+  {
+   "t": 46.96,
+   "w": "on"
+  },
+  {
+   "t": 47.12,
+   "w": "the"
+  },
+  {
+   "t": 47.2,
+   "w": "gate"
+  },
+  {
+   "t": 47.6,
+   "w": "Bad"
+  },
+  {
+   "t": 47.76,
+   "w": "hand"
+  },
+  {
+   "t": 48.32,
+   "w": "dealt"
+  },
+  {
+   "t": 48.96,
+   "w": "I"
+  },
+  {
+   "t": 49.04,
+   "w": "made"
+  },
+  {
+   "t": 49.12,
+   "w": "the"
+  },
+  {
+   "t": 49.2,
+   "w": "cards"
+  },
+  {
+   "t": 49.68,
+   "w": "look"
+  },
+  {
+   "t": 49.84,
+   "w": "loaded"
+  },
+  {
+   "t": 50.24,
+   "w": "Pain"
+  },
+  {
+   "t": 50.56,
+   "w": "came"
+  },
+  {
+   "t": 50.96,
+   "w": "back"
+  },
+  {
+   "t": 51.12,
+   "w": "for"
+  },
+  {
+   "t": 51.2,
+   "w": "what"
+  },
+  {
+   "t": 51.44,
+   "w": "I"
+  },
+  {
+   "t": 51.76,
+   "w": "owedI"
+  },
+  {
+   "t": 51.92,
+   "w": "told"
+  },
+  {
+   "t": 52.16,
+   "w": "it"
+  },
+  {
+   "t": 52.32,
+   "w": "Account"
+  },
+  {
+   "t": 52.72,
+   "w": "closed"
+  },
+  {
+   "t": 52.96,
+   "w": "Every"
+  },
+  {
+   "t": 53.44,
+   "w": "scar"
+  },
+  {
+   "t": 53.6,
+   "w": "got"
+  },
+  {
+   "t": 53.76,
+   "w": "a"
+  },
+  {
+   "t": 53.76,
+   "w": "story"
+  },
+  {
+   "t": 54.32,
+   "w": "I"
+  },
+  {
+   "t": 54.4,
+   "w": "don't"
+  },
+  {
+   "t": 54.56,
+   "w": "care"
+  },
+  {
+   "t": 54.96,
+   "w": "who"
+  },
+  {
+   "t": 55.28,
+   "w": "knows"
+  },
+  {
+   "t": 55.44,
+   "w": "it"
+  },
+  {
+   "t": 55.6,
+   "w": "Turned"
+  },
+  {
+   "t": 55.84,
+   "w": "a"
+  },
+  {
+   "t": 56.0,
+   "w": "life"
+  },
+  {
+   "t": 56.24,
+   "w": "full"
+  },
+  {
+   "t": 56.4,
+   "w": "of"
+  },
+  {
+   "t": 56.48,
+   "w": "cracks"
+  },
+  {
+   "t": 56.8,
+   "w": "into"
+  },
+  {
+   "t": 57.04,
+   "w": "armorI"
+  },
+  {
+   "t": 57.52,
+   "w": "molded"
+  },
+  {
+   "t": 58.0,
+   "w": "it"
+  },
+  {
+   "t": 58.16,
+   "w": "They"
+  },
+  {
+   "t": 58.4,
+   "w": "couldn't"
+  },
+  {
+   "t": 58.64,
+   "w": "shatter"
+  },
+  {
+   "t": 59.52,
+   "w": "my"
+  },
+  {
+   "t": 59.6,
+   "w": "will"
+  },
+  {
+   "t": 59.6,
+   "w": "now"
+  },
+  {
+   "t": 59.76,
+   "w": "they're"
+  },
+  {
+   "t": 59.92,
+   "w": "chanting"
+  },
+  {
+   "t": 60.32,
+   "w": "my"
+  },
+  {
+   "t": 60.48,
+   "w": "name"
+  },
+  {
+   "t": 60.88,
+   "w": "Tyyyleeer"
+  },
+  {
+   "t": 61.36,
+   "w": "No"
+  },
+  {
+   "t": 61.68,
+   "w": "longer"
+  },
+  {
+   "t": 61.84,
+   "w": "playing"
+  },
+  {
+   "t": 62.24,
+   "w": "now"
+  },
+  {
+   "t": 62.4,
+   "w": "I'm"
+  },
+  {
+   "t": 62.48,
+   "w": "coding"
+  },
+  {
+   "t": 62.96,
+   "w": "the"
+  },
+  {
+   "t": 63.04,
+   "w": "game"
+  },
+  {
+   "t": 63.52,
+   "w": "Built"
+  },
+  {
+   "t": 63.76,
+   "w": "a"
+  },
+  {
+   "t": 63.84,
+   "w": "throne"
+  },
+  {
+   "t": 64.16,
+   "w": "from"
+  },
+  {
+   "t": 64.4,
+   "w": "the"
+  },
+  {
+   "t": 64.56,
+   "w": "wreckage"
+  },
+  {
+   "t": 64.88,
+   "w": "let"
+  },
+  {
+   "t": 65.04,
+   "w": "'em"
+  },
+  {
+   "t": 65.12,
+   "w": "study"
+  },
+  {
+   "t": 65.52,
+   "w": "the"
+  },
+  {
+   "t": 65.6,
+   "w": "frame"
+  },
+  {
+   "t": 66.24,
+   "w": "They"
+  },
+  {
+   "t": 66.32,
+   "w": "were"
+  },
+  {
+   "t": 66.48,
+   "w": "betting"
+  },
+  {
+   "t": 66.88,
+   "w": "on"
+  },
+  {
+   "t": 67.12,
+   "w": "the"
+  },
+  {
+   "t": 67.2,
+   "w": "break"
+  },
+  {
+   "t": 67.52,
+   "w": "now"
+  },
+  {
+   "t": 67.68,
+   "w": "they're"
+  },
+  {
+   "t": 67.76,
+   "w": "scared"
+  },
+  {
+   "t": 68.16,
+   "w": "of"
+  },
+  {
+   "t": 68.24,
+   "w": "the"
+  },
+  {
+   "t": 68.32,
+   "w": "change"
+  },
+  {
+   "t": 69.2,
+   "w": "I"
+  },
+  {
+   "t": 69.68,
+   "w": "was"
+  },
+  {
+   "t": 69.84,
+   "w": "made"
+  },
+  {
+   "t": 70.48,
+   "w": "to"
+  },
+  {
+   "t": 70.56,
+   "w": "break"
+  },
+  {
+   "t": 71.6,
+   "w": "Every"
+  },
+  {
+   "t": 72.48,
+   "w": "lock"
+  },
+  {
+   "t": 72.88,
+   "w": "every"
+  },
+  {
+   "t": 73.04,
+   "w": "limit"
+  },
+  {
+   "t": 73.52,
+   "w": "every"
+  },
+  {
+   "t": 73.76,
+   "w": "chain"
+  },
+  {
+   "t": 74.0,
+   "w": "in"
+  },
+  {
+   "t": 74.16,
+   "w": "my"
+  },
+  {
+   "t": 74.16,
+   "w": "way"
+  },
+  {
+   "t": 74.4,
+   "w": "Made"
+  },
+  {
+   "t": 76.48,
+   "w": "to"
+  },
+  {
+   "t": 76.72,
+   "w": "break"
+  },
+  {
+   "t": 76.8,
+   "w": "Not"
+  },
+  {
+   "t": 76.88,
+   "w": "bend"
+  },
+  {
+   "t": 77.6,
+   "w": "not"
+  },
+  {
+   "t": 78.32,
+   "w": "fold"
+  },
+  {
+   "t": 78.72,
+   "w": "not"
+  },
+  {
+   "t": 79.04,
+   "w": "fade"
+  },
+  {
+   "t": 79.04,
+   "w": "Put"
+  },
+  {
+   "t": 79.84,
+   "w": "the"
+  },
+  {
+   "t": 79.84,
+   "w": "pressure"
+  },
+  {
+   "t": 80.32,
+   "w": "on"
+  },
+  {
+   "t": 80.4,
+   "w": "me"
+  },
+  {
+   "t": 80.72,
+   "w": "watch"
+  },
+  {
+   "t": 80.96,
+   "w": "the"
+  },
+  {
+   "t": 80.96,
+   "w": "pressure"
+  },
+  {
+   "t": 81.6,
+   "w": "obey"
+  },
+  {
+   "t": 82.16,
+   "w": "You"
+  },
+  {
+   "t": 82.16,
+   "w": "can"
+  },
+  {
+   "t": 82.24,
+   "w": "call"
+  },
+  {
+   "t": 82.8,
+   "w": "me"
+  },
+  {
+   "t": 82.8,
+   "w": "damagedI"
+  },
+  {
+   "t": 82.8,
+   "w": "call"
+  },
+  {
+   "t": 82.8,
+   "w": "it"
+  },
+  {
+   "t": 84.08,
+   "w": "battlemade"
+  },
+  {
+   "t": 84.4,
+   "w": "They"
+  },
+  {
+   "t": 84.88,
+   "w": "were"
+  },
+  {
+   "t": 85.04,
+   "w": "waiting"
+  },
+  {
+   "t": 85.44,
+   "w": "on"
+  },
+  {
+   "t": 85.68,
+   "w": "a"
+  },
+  {
+   "t": 85.68,
+   "w": "body"
+  },
+  {
+   "t": 85.84,
+   "w": "I"
+  },
+  {
+   "t": 86.16,
+   "w": "became"
+  },
+  {
+   "t": 86.64,
+   "w": "the"
+  },
+  {
+   "t": 86.72,
+   "w": "barricade"
+  },
+  {
+   "t": 87.12,
+   "w": "I"
+  },
+  {
+   "t": 87.52,
+   "w": "was"
+  },
+  {
+   "t": 87.52,
+   "w": "made"
+  },
+  {
+   "t": 88.08,
+   "w": "to"
+  },
+  {
+   "t": 88.08,
+   "w": "break"
+  },
+  {
+   "t": 89.44,
+   "w": "Everything"
+  },
+  {
+   "t": 89.65,
+   "w": "but"
+  },
+  {
+   "t": 89.76,
+   "w": "me"
+  },
+  {
+   "t": 89.87,
+   "w": "You"
+  },
+  {
+   "t": 89.92,
+   "w": "call"
+  },
+  {
+   "t": 90.16,
+   "w": "it"
+  },
+  {
+   "t": 90.32,
+   "w": "trauma"
+  },
+  {
+   "t": 90.64,
+   "w": "I"
+  },
+  {
+   "t": 91.6,
+   "w": "call"
+  },
+  {
+   "t": 92.0,
+   "w": "it"
+  },
+  {
+   "t": 92.0,
+   "w": "repetition"
+  },
+  {
+   "t": 102.96,
+   "w": "Pain"
+  },
+  {
+   "t": 103.2,
+   "w": "kept"
+  },
+  {
+   "t": 103.52,
+   "w": "talking"
+  },
+  {
+   "t": 104.18,
+   "w": "I"
+  },
+  {
+   "t": 104.37,
+   "w": "stopped"
+  },
+  {
+   "t": 104.56,
+   "w": "giving"
+  },
+  {
+   "t": 104.88,
+   "w": "it"
+  },
+  {
+   "t": 105.04,
+   "w": "permission"
+  },
+  {
+   "t": 105.6,
+   "w": "I"
+  },
+  {
+   "t": 105.68,
+   "w": "don't"
+  },
+  {
+   "t": 105.92,
+   "w": "need"
+  },
+  {
+   "t": 106.0,
+   "w": "your"
+  },
+  {
+   "t": 106.16,
+   "w": "pity"
+  },
+  {
+   "t": 106.32,
+   "w": "I"
+  },
+  {
+   "t": 106.8,
+   "w": "need"
+  },
+  {
+   "t": 106.88,
+   "w": "better"
+  },
+  {
+   "t": 107.28,
+   "w": "opposition"
+  },
+  {
+   "t": 107.92,
+   "w": "They"
+  },
+  {
+   "t": 108.0,
+   "w": "keep"
+  },
+  {
+   "t": 108.16,
+   "w": "praying"
+  },
+  {
+   "t": 108.48,
+   "w": "for"
+  },
+  {
+   "t": 108.64,
+   "w": "the"
+  },
+  {
+   "t": 108.72,
+   "w": "fall"
+  },
+  {
+   "t": 109.2,
+   "w": "like"
+  },
+  {
+   "t": 109.36,
+   "w": "it's"
+  },
+  {
+   "t": 109.52,
+   "w": "some"
+  },
+  {
+   "t": 109.68,
+   "w": "kind"
+  },
+  {
+   "t": 109.84,
+   "w": "of"
+  },
+  {
+   "t": 110.0,
+   "w": "religion"
+  },
+  {
+   "t": 110.24,
+   "w": "Life"
+  },
+  {
+   "t": 111.12,
+   "w": "kept"
+  },
+  {
+   "t": 111.28,
+   "w": "swinging"
+  },
+  {
+   "t": 111.76,
+   "w": "till"
+  },
+  {
+   "t": 111.92,
+   "w": "its"
+  },
+  {
+   "t": 112.08,
+   "w": "knuckles"
+  },
+  {
+   "t": 112.48,
+   "w": "split"
+  },
+  {
+   "t": 112.88,
+   "w": "I"
+  },
+  {
+   "t": 112.96,
+   "w": "got"
+  },
+  {
+   "t": 113.12,
+   "w": "bored"
+  },
+  {
+   "t": 113.36,
+   "w": "of"
+  },
+  {
+   "t": 113.44,
+   "w": "getting"
+  },
+  {
+   "t": 113.84,
+   "w": "hit"
+  },
+  {
+   "t": 114.08,
+   "w": "made"
+  },
+  {
+   "t": 114.24,
+   "w": "a"
+  },
+  {
+   "t": 114.4,
+   "w": "joke"
+  },
+  {
+   "t": 114.8,
+   "w": "out"
+  },
+  {
+   "t": 114.96,
+   "w": "of"
+  },
+  {
+   "t": 115.12,
+   "w": "it"
+  },
+  {
+   "t": 115.76,
+   "w": "Fear"
+  },
+  {
+   "t": 115.84,
+   "w": "got"
+  },
+  {
+   "t": 116.32,
+   "w": "old"
+  },
+  {
+   "t": 116.48,
+   "w": "pain"
+  },
+  {
+   "t": 116.56,
+   "w": "went"
+  },
+  {
+   "t": 116.72,
+   "w": "quiet"
+  },
+  {
+   "t": 117.12,
+   "w": "doubt"
+  },
+  {
+   "t": 117.44,
+   "w": "lost"
+  },
+  {
+   "t": 117.68,
+   "w": "its"
+  },
+  {
+   "t": 117.76,
+   "w": "grip"
+  },
+  {
+   "t": 118.08,
+   "w": "Now"
+  },
+  {
+   "t": 118.24,
+   "w": "the"
+  },
+  {
+   "t": 118.24,
+   "w": "worst"
+  },
+  {
+   "t": 118.72,
+   "w": "days"
+  },
+  {
+   "t": 119.04,
+   "w": "see"
+  },
+  {
+   "t": 119.2,
+   "w": "me"
+  },
+  {
+   "t": 119.36,
+   "w": "coming"
+  },
+  {
+   "t": 119.84,
+   "w": "and"
+  },
+  {
+   "t": 119.84,
+   "w": "they"
+  },
+  {
+   "t": 120.0,
+   "w": "call"
+  },
+  {
+   "t": 120.08,
+   "w": "in"
+  },
+  {
+   "t": 120.64,
+   "w": "sick"
+  },
+  {
+   "t": 120.8,
+   "w": "Every"
+  },
+  {
+   "t": 121.28,
+   "w": "shot"
+  },
+  {
+   "t": 121.52,
+   "w": "that"
+  },
+  {
+   "t": 121.6,
+   "w": "they"
+  },
+  {
+   "t": 121.92,
+   "w": "sent"
+  },
+  {
+   "t": 122.4,
+   "w": "only"
+  },
+  {
+   "t": 122.64,
+   "w": "sharpened"
+  },
+  {
+   "t": 122.88,
+   "w": "my"
+  },
+  {
+   "t": 123.04,
+   "w": "aim"
+  },
+  {
+   "t": 123.76,
+   "w": "I"
+  },
+  {
+   "t": 123.92,
+   "w": "don't"
+  },
+  {
+   "t": 123.92,
+   "w": "carry"
+  },
+  {
+   "t": 124.32,
+   "w": "my"
+  },
+  {
+   "t": 124.56,
+   "w": "damageI"
+  },
+  {
+   "t": 125.12,
+   "w": "make"
+  },
+  {
+   "t": 125.28,
+   "w": "damage"
+  },
+  {
+   "t": 125.68,
+   "w": "behave"
+  },
+  {
+   "t": 125.92,
+   "w": "Tried"
+  },
+  {
+   "t": 125.92,
+   "w": "to"
+  },
+  {
+   "t": 125.92,
+   "w": "bury"
+  },
+  {
+   "t": 125.92,
+   "w": "me"
+  },
+  {
+   "t": 126.24,
+   "w": "alive"
+  },
+  {
+   "t": 126.64,
+   "w": "I"
+  },
+  {
+   "t": 127.44,
+   "w": "put"
+  },
+  {
+   "t": 127.84,
+   "w": "a"
+  },
+  {
+   "t": 127.84,
+   "w": "stage"
+  },
+  {
+   "t": 128.24,
+   "w": "in"
+  },
+  {
+   "t": 128.32,
+   "w": "the"
+  },
+  {
+   "t": 128.56,
+   "w": "grave"
+  },
+  {
+   "t": 128.64,
+   "w": "Now"
+  },
+  {
+   "t": 129.12,
+   "w": "the"
+  },
+  {
+   "t": 129.2,
+   "w": "dirt"
+  },
+  {
+   "t": 129.36,
+   "w": "on"
+  },
+  {
+   "t": 129.76,
+   "w": "my"
+  },
+  {
+   "t": 130.0,
+   "w": "name"
+  },
+  {
+   "t": 130.16,
+   "w": "got"
+  },
+  {
+   "t": 130.16,
+   "w": "'em"
+  },
+  {
+   "t": 130.56,
+   "w": "screaming"
+  },
+  {
+   "t": 130.96,
+   "w": "my"
+  },
+  {
+   "t": 131.28,
+   "w": "name"
+  },
+  {
+   "t": 131.44,
+   "w": "I"
+  },
+  {
+   "t": 131.52,
+   "w": "don't"
+  },
+  {
+   "t": 132.16,
+   "w": "wait"
+  },
+  {
+   "t": 132.38,
+   "w": "on"
+  },
+  {
+   "t": 132.61,
+   "w": "luck"
+  },
+  {
+   "t": 132.72,
+   "w": "I"
+  },
+  {
+   "t": 132.72,
+   "w": "put"
+  },
+  {
+   "t": 132.96,
+   "w": "a"
+  },
+  {
+   "t": 132.96,
+   "w": "boot"
+  },
+  {
+   "t": 133.44,
+   "w": "on"
+  },
+  {
+   "t": 133.44,
+   "w": "fate"
+  },
+  {
+   "t": 133.68,
+   "w": "Every"
+  },
+  {
+   "t": 133.68,
+   "w": "loss"
+  },
+  {
+   "t": 133.68,
+   "w": "came"
+  },
+  {
+   "t": 133.68,
+   "w": "heavy"
+  },
+  {
+   "t": 133.68,
+   "w": "I"
+  },
+  {
+   "t": 134.3,
+   "w": "just"
+  },
+  {
+   "t": 135.55,
+   "w": "added"
+  },
+  {
+   "t": 136.8,
+   "w": "to"
+  },
+  {
+   "t": 136.8,
+   "w": "the"
+  },
+  {
+   "t": 136.8,
+   "w": "weight"
+  },
+  {
+   "t": 136.8,
+   "w": "They"
+  },
+  {
+   "t": 136.8,
+   "w": "kept"
+  },
+  {
+   "t": 137.28,
+   "w": "aiming"
+  },
+  {
+   "t": 137.52,
+   "w": "for"
+  },
+  {
+   "t": 137.68,
+   "w": "the"
+  },
+  {
+   "t": 137.76,
+   "w": "cracks"
+  },
+  {
+   "t": 138.16,
+   "w": "trying"
+  },
+  {
+   "t": 138.4,
+   "w": "to"
+  },
+  {
+   "t": 138.48,
+   "w": "widen"
+  },
+  {
+   "t": 138.88,
+   "w": "the"
+  },
+  {
+   "t": 139.04,
+   "w": "breaks"
+  },
+  {
+   "t": 139.84,
+   "w": "Now"
+  },
+  {
+   "t": 139.84,
+   "w": "the"
+  },
+  {
+   "t": 139.84,
+   "w": "damage"
+  },
+  {
+   "t": 139.84,
+   "w": "holds"
+  },
+  {
+   "t": 140.32,
+   "w": "me"
+  },
+  {
+   "t": 140.8,
+   "w": "upmotherfucker"
+  },
+  {
+   "t": 141.76,
+   "w": "I'm"
+  },
+  {
+   "t": 141.92,
+   "w": "reinforced"
+  },
+  {
+   "t": 142.56,
+   "w": "I"
+  },
+  {
+   "t": 144.48,
+   "w": "was"
+  },
+  {
+   "t": 144.48,
+   "w": "made"
+  },
+  {
+   "t": 145.2,
+   "w": "to"
+  },
+  {
+   "t": 145.44,
+   "w": "break"
+  },
+  {
+   "t": 146.24,
+   "w": "Every"
+  },
+  {
+   "t": 146.4,
+   "w": "lock"
+  },
+  {
+   "t": 146.8,
+   "w": "every"
+  },
+  {
+   "t": 147.04,
+   "w": "limit"
+  },
+  {
+   "t": 147.52,
+   "w": "every"
+  },
+  {
+   "t": 147.68,
+   "w": "chain"
+  },
+  {
+   "t": 147.92,
+   "w": "in"
+  },
+  {
+   "t": 148.0,
+   "w": "my"
+  },
+  {
+   "t": 148.08,
+   "w": "way"
+  },
+  {
+   "t": 149.44,
+   "w": "Made"
+  },
+  {
+   "t": 149.6,
+   "w": "to"
+  },
+  {
+   "t": 151.36,
+   "w": "break"
+  },
+  {
+   "t": 151.6,
+   "w": "Not"
+  },
+  {
+   "t": 151.68,
+   "w": "bend"
+  },
+  {
+   "t": 152.08,
+   "w": "not"
+  },
+  {
+   "t": 152.24,
+   "w": "fold"
+  },
+  {
+   "t": 152.64,
+   "w": "not"
+  },
+  {
+   "t": 152.96,
+   "w": "fade"
+  },
+  {
+   "t": 153.68,
+   "w": "Put"
+  },
+  {
+   "t": 153.84,
+   "w": "the"
+  },
+  {
+   "t": 153.92,
+   "w": "pressure"
+  },
+  {
+   "t": 154.24,
+   "w": "on"
+  },
+  {
+   "t": 154.32,
+   "w": "me"
+  },
+  {
+   "t": 154.64,
+   "w": "watch"
+  },
+  {
+   "t": 154.88,
+   "w": "the"
+  },
+  {
+   "t": 154.96,
+   "w": "pressure"
+  },
+  {
+   "t": 155.52,
+   "w": "obey"
+  },
+  {
+   "t": 156.0,
+   "w": "You"
+  },
+  {
+   "t": 156.08,
+   "w": "can"
+  },
+  {
+   "t": 156.24,
+   "w": "call"
+  },
+  {
+   "t": 156.64,
+   "w": "me"
+  },
+  {
+   "t": 156.88,
+   "w": "damagedI"
+  },
+  {
+   "t": 157.44,
+   "w": "call"
+  },
+  {
+   "t": 157.84,
+   "w": "it"
+  },
+  {
+   "t": 157.92,
+   "w": "battlemade"
+  },
+  {
+   "t": 158.64,
+   "w": "They"
+  },
+  {
+   "t": 158.72,
+   "w": "were"
+  },
+  {
+   "t": 158.88,
+   "w": "waiting"
+  },
+  {
+   "t": 159.44,
+   "w": "on"
+  },
+  {
+   "t": 159.52,
+   "w": "a"
+  },
+  {
+   "t": 159.52,
+   "w": "body"
+  },
+  {
+   "t": 159.92,
+   "w": "I"
+  },
+  {
+   "t": 160.08,
+   "w": "became"
+  },
+  {
+   "t": 160.48,
+   "w": "the"
+  },
+  {
+   "t": 160.48,
+   "w": "barricade"
+  },
+  {
+   "t": 161.04,
+   "w": "I"
+  },
+  {
+   "t": 162.72,
+   "w": "was"
+  },
+  {
+   "t": 162.8,
+   "w": "made"
+  },
+  {
+   "t": 163.6,
+   "w": "to"
+  },
+  {
+   "t": 163.84,
+   "w": "break"
+  },
+  {
+   "t": 163.84,
+   "w": "Everything"
+  },
+  {
+   "t": 163.84,
+   "w": "but"
+  },
+  {
+   "t": 164.0,
+   "w": "me"
+  },
+  {
+   "t": 164.32,
+   "w": "Try"
+  },
+  {
+   "t": 166.08,
+   "w": "to"
+  },
+  {
+   "t": 166.08,
+   "w": "break"
+  },
+  {
+   "t": 166.08,
+   "w": "meI"
+  },
+  {
+   "t": 168.64,
+   "w": "break"
+  },
+  {
+   "t": 175.36,
+   "w": "back"
+  },
+  {
+   "t": 175.68,
+   "w": "Pile"
+  },
+  {
+   "t": 175.92,
+   "w": "it"
+  },
+  {
+   "t": 176.26,
+   "w": "onI"
+  },
+  {
+   "t": 176.6,
+   "w": "adapt"
+  },
+  {
+   "t": 176.94,
+   "w": "Turned"
+  },
+  {
+   "t": 177.28,
+   "w": "the"
+  },
+  {
+   "t": 177.36,
+   "w": "pain"
+  },
+  {
+   "t": 177.6,
+   "w": "into"
+  },
+  {
+   "t": 177.76,
+   "w": "a"
+  },
+  {
+   "t": 178.04,
+   "w": "weapon"
+  },
+  {
+   "t": 178.32,
+   "w": "Turned"
+  },
+  {
+   "t": 178.56,
+   "w": "the"
+  },
+  {
+   "t": 178.64,
+   "w": "pressure"
+  },
+  {
+   "t": 178.96,
+   "w": "into"
+  },
+  {
+   "t": 179.52,
+   "w": "impact"
+  },
+  {
+   "t": 179.68,
+   "w": "No"
+  },
+  {
+   "t": 180.8,
+   "w": "collapse"
+  },
+  {
+   "t": 180.8,
+   "w": "no"
+  },
+  {
+   "t": 180.8,
+   "w": "retreat"
+  },
+  {
+   "t": 181.28,
+   "w": "I"
+  },
+  {
+   "t": 181.44,
+   "w": "don't"
+  },
+  {
+   "t": 181.6,
+   "w": "beg"
+  },
+  {
+   "t": 181.76,
+   "w": "I"
+  },
+  {
+   "t": 181.92,
+   "w": "don't"
+  },
+  {
+   "t": 182.08,
+   "w": "ask"
+  },
+  {
+   "t": 182.64,
+   "w": "I'm"
+  },
+  {
+   "t": 182.8,
+   "w": "the"
+  },
+  {
+   "t": 183.28,
+   "w": "product"
+  },
+  {
+   "t": 183.28,
+   "w": "of"
+  },
+  {
+   "t": 183.44,
+   "w": "the"
+  },
+  {
+   "t": 183.6,
+   "w": "worst"
+  },
+  {
+   "t": 183.84,
+   "w": "shit"
+  },
+  {
+   "t": 184.8,
+   "w": "And"
+  },
+  {
+   "t": 184.88,
+   "w": "I"
+  },
+  {
+   "t": 185.12,
+   "w": "came"
+  },
+  {
+   "t": 186.4,
+   "w": "out"
+  },
+  {
+   "t": 186.56,
+   "w": "built"
+  },
+  {
+   "t": 186.64,
+   "w": "to"
+  },
+  {
+   "t": 186.64,
+   "w": "last"
+  },
+  {
+   "t": 187.2,
+   "w": "Tyyyleeeeeer"
+  },
+  {
+   "t": 187.36,
+   "w": "I"
+  },
+  {
+   "t": 187.68,
+   "w": "was"
+  },
+  {
+   "t": 188.0,
+   "w": "made"
+  },
+  {
+   "t": 190.71,
+   "w": "to"
+  },
+  {
+   "t": 193.41,
+   "w": "break"
+  },
+  {
+   "t": 196.12,
+   "w": "Every"
+  },
+  {
+   "t": 198.82,
+   "w": "lock"
+  },
+  {
+   "t": 201.53,
+   "w": "every"
+  },
+  {
+   "t": 202.88,
+   "w": "limit"
+  },
+  {
+   "t": 202.88,
+   "w": "every"
+  },
+  {
+   "t": 202.88,
+   "w": "chain"
+  },
+  {
+   "t": 203.12,
+   "w": "in"
+  },
+  {
+   "t": 203.2,
+   "w": "my"
+  },
+  {
+   "t": 203.52,
+   "w": "way"
+  },
+  {
+   "t": 204.4,
+   "w": "Made"
+  },
+  {
+   "t": 204.8,
+   "w": "to"
+  },
+  {
+   "t": 204.88,
+   "w": "break"
+  },
+  {
+   "t": 204.96,
+   "w": "Not"
+  },
+  {
+   "t": 206.32,
+   "w": "bend"
+  },
+  {
+   "t": 207.12,
+   "w": "not"
+  },
+  {
+   "t": 207.44,
+   "w": "fold"
+  },
+  {
+   "t": 207.84,
+   "w": "not"
+  },
+  {
+   "t": 208.08,
+   "w": "fade"
+  },
+  {
+   "t": 208.24,
+   "w": "Put"
+  },
+  {
+   "t": 208.24,
+   "w": "the"
+  },
+  {
+   "t": 208.59,
+   "w": "pressure"
+  },
+  {
+   "t": 209.12,
+   "w": "on"
+  },
+  {
+   "t": 209.65,
+   "w": "me"
+  },
+  {
+   "t": 209.92,
+   "w": "watch"
+  },
+  {
+   "t": 210.08,
+   "w": "the"
+  },
+  {
+   "t": 210.08,
+   "w": "pressure"
+  },
+  {
+   "t": 210.72,
+   "w": "obey"
+  },
+  {
+   "t": 211.2,
+   "w": "You"
+  },
+  {
+   "t": 211.28,
+   "w": "can"
+  },
+  {
+   "t": 211.36,
+   "w": "call"
+  },
+  {
+   "t": 211.76,
+   "w": "me"
+  },
+  {
+   "t": 212.0,
+   "w": "damagedI"
+  },
+  {
+   "t": 212.16,
+   "w": "call"
+  },
+  {
+   "t": 212.96,
+   "w": "it"
+  },
+  {
+   "t": 213.04,
+   "w": "battlemade"
+  },
+  {
+   "t": 213.84,
+   "w": "They"
+  },
+  {
+   "t": 213.92,
+   "w": "were"
+  },
+  {
+   "t": 214.0,
+   "w": "waiting"
+  },
+  {
+   "t": 214.48,
+   "w": "on"
+  },
+  {
+   "t": 214.64,
+   "w": "a"
+  },
+  {
+   "t": 214.72,
+   "w": "body"
+  },
+  {
+   "t": 215.12,
+   "w": "I"
+  },
+  {
+   "t": 215.2,
+   "w": "became"
+  },
+  {
+   "t": 215.6,
+   "w": "the"
+  },
+  {
+   "t": 215.68,
+   "w": "barricade"
+  },
+  {
+   "t": 216.16,
+   "w": "I"
+  },
+  {
+   "t": 217.76,
+   "w": "was"
+  },
+  {
+   "t": 217.84,
+   "w": "made"
+  },
+  {
+   "t": 218.72,
+   "w": "to"
+  },
+  {
+   "t": 218.96,
+   "w": "break"
+  },
+  {
+   "t": 218.96,
+   "w": "Everything"
+  },
+  {
+   "t": 218.96,
+   "w": "but"
+  },
+  {
+   "t": 219.04,
+   "w": "me"
+  }
+ ],
+ "lrc": "[00:26.24]You can stop checking—\n[00:27.84]I'm still fucking here.\n[00:27.84]They threw stones, I returned a boulder\n[00:28.56]Tyler ain't the type to let a little scratch get mulled over\n[00:31.60]Pressure built, heat meant to burst—I just got colder\n[00:34.72]Weight of the world? It's me on my shoulders\n[00:37.36]Even on my shittiest day, these hands don't shake\n[00:40.08]You get what you give—I get what I take\n[00:42.64]Had a knife in my back, still ate off the same plate\n[00:44.96]Now I walk in like the building got my name on the gate\n[00:47.60]Bad hand dealt, I made the cards look loaded\n[00:50.24]Pain came back for what I owed—I told it, \"Account closed\"\n[00:52.96]Every scar got a story, I don't care who knows it\n[00:55.60]Turned a life full of cracks into armor—I molded it\n[00:58.16]They couldn't shatter my will, now they're chanting my name\n[01:00.88]Tyyyleeer!\n[01:01.36]No longer playing, now I'm coding the game\n[01:03.52]Built a throne from the wreckage, let 'em study the frame\n[01:06.24]They were betting on the break, now they're scared of the change\n[01:09.20]I was made to break\n[01:11.60]Every lock, every limit, every chain in my way\n[01:14.40]Made to break\n[01:16.80]Not bend, not fold, not fade\n[01:19.04]Put the pressure on me, watch the pressure obey\n[01:22.16]You can call me damaged—I call it battle-made\n[01:24.40]They were waiting on a body, I became the barricade\n[01:27.12]I was made to break\n[01:29.44]Everything but me\n[01:29.87]You call it trauma, I call it repetition\n[01:42.96]Pain kept talking, I stopped giving it permission\n[01:45.60]I don't need your pity, I need better opposition\n[01:47.92]They keep praying for the fall like it's some kind of religion\n[01:50.24]Life kept swinging till its knuckles split\n[01:52.88]I got bored of getting hit, made a joke out of it\n[01:55.76]Fear got old, pain went quiet, doubt lost its grip\n[01:58.08]Now the worst days see me coming and they call in sick\n[02:00.80]Every shot that they sent only sharpened my aim\n[02:03.76]I don't carry my damage—I make damage behave\n[02:05.92]Tried to bury me alive, I put a stage in the grave\n[02:08.64]Now the dirt on my name got 'em screaming my name\n[02:11.44]I don't wait on luck, I put a boot on fate\n[02:13.68]Every loss came heavy, I just added to the weight\n[02:16.80]They kept aiming for the cracks, trying to widen the breaks\n[02:19.84]Now the damage holds me up—motherfucker, I'm reinforced\n[02:22.56]I was made to break\n[02:26.24]Every lock, every limit, every chain in my way\n[02:29.44]Made to break\n[02:31.60]Not bend, not fold, not fade\n[02:33.68]Put the pressure on me, watch the pressure obey\n[02:36.00]You can call me damaged—I call it battle-made\n[02:38.64]They were waiting on a body, I became the barricade\n[02:41.04]I was made to break\n[02:43.84]Everything but me\n[02:44.32]Try to break me—I break back\n[02:55.68]Pile it on—I adapt\n[02:56.94]Turned the pain into a weapon\n[02:58.32]Turned the pressure into impact\n[02:59.68]No collapse, no retreat\n[03:01.28]I don't beg, I don't ask\n[03:02.64]I'm the product of the worst shit\n[03:04.80]And I came out built to last\n[03:07.20]Tyyyleeeeeer!!!!!!\n[03:07.36]I was made to break\n[03:16.12]Every lock, every limit, every chain in my way\n[03:24.40]Made to break\n[03:24.96]Not bend, not fold, not fade\n[03:28.24]Put the pressure on me, watch the pressure obey\n[03:31.20]You can call me damaged—I call it battle-made\n[03:33.84]They were waiting on a body, I became the barricade\n[03:36.16]I was made to break—\n[03:38.96]Everything but me.\n"
+}

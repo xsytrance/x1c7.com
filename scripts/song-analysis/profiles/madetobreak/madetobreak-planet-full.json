@@ -1,0 +1,352 @@
+{
+  "analysis": {
+    "summary": "The song is a powerful anthem of defiance and resilience, telling the story of overcoming adversity and transforming pain into strength, while rejecting weakness and embracing a battle-hardened identity.",
+    "overallMood": "Defiant, Resilient",
+    "themes": [
+      "Resilience",
+      "Defiance",
+      "Transformation of Pain",
+      "Identity",
+      "Rejection of Weakness",
+      "Empowerment"
+    ],
+    "palette": [
+      "#1A1A2E",
+      "#4B0082",
+      "#8B0000",
+      "#FF4500"
+    ],
+    "sections": [
+      {
+        "name": "Cold Open — spoken, distorted",
+        "emotion": "Anguished",
+        "intensity": 0.46,
+        "colorHint": "#1a1a2e",
+        "start": 20.22
+      },
+      {
+        "name": "Verse 1 — fast, controlled aggression",
+        "emotion": "Fierce",
+        "intensity": 0.94,
+        "colorHint": "#4b0082",
+        "start": 20.22
+      },
+      {
+        "name": "Chorus — explosive, chantable",
+        "emotion": "Defiant",
+        "intensity": 0.87,
+        "colorHint": "#8b0000",
+        "start": 25.7
+      },
+      {
+        "name": "Verse 2 — faster, sharper delivery",
+        "emotion": "Unyielding",
+        "intensity": 0.73,
+        "colorHint": "#ff4500",
+        "start": 28.36
+      },
+      {
+        "name": "Chorus — explosive",
+        "emotion": "Empowered",
+        "intensity": 0.84,
+        "colorHint": "#8b0000",
+        "start": 42.48
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Resolute",
+        "intensity": 0.58,
+        "colorHint": "#4b0082",
+        "start": 123.5
+      },
+      {
+        "name": "Drop",
+        "emotion": "Calm Defiance",
+        "intensity": 0.3,
+        "colorHint": "#1a1a2e",
+        "start": 168
+      },
+      {
+        "name": "Outro",
+        "emotion": "Triumphant",
+        "intensity": 0.28,
+        "colorHint": "#ff4500",
+        "start": 174.21
+      }
+    ],
+    "keywords": [
+      {
+        "word": "break",
+        "emotion": "Defiant",
+        "imageryPrompt": "A shattered mirror reflecting a stormy sky, surrounded by cracks that glow with an inner light"
+      },
+      {
+        "word": "damage",
+        "emotion": "Resilient",
+        "imageryPrompt": "A broken chain fused with steel, glowing in the dark with a fiery glow"
+      },
+      {
+        "word": "pressure",
+        "emotion": "Intense",
+        "imageryPrompt": "A mountain of rubble under a heavy sky, with lightning cracking through the air"
+      },
+      {
+        "word": "barricade",
+        "emotion": "Fierce",
+        "imageryPrompt": "A wall of shattered glass and stone, glowing with a defiant red light"
+      },
+      {
+        "word": "trauma",
+        "emotion": "Anguished",
+        "imageryPrompt": "A figure standing in a field of broken glass, with a storm brewing behind them"
+      },
+      {
+        "word": "reinforced",
+        "emotion": "Empowered",
+        "imageryPrompt": "A fortress made of broken chains and steel, glowing with a golden light"
+      },
+      {
+        "word": "weapon",
+        "emotion": "Defiant",
+        "imageryPrompt": "A sword forged from broken pieces of metal, glowing with a deep crimson light"
+      },
+      {
+        "word": "impact",
+        "emotion": "Intense",
+        "imageryPrompt": "A meteor crashing into the ground, with shockwaves rippling through the sky"
+      },
+      {
+        "word": "built",
+        "emotion": "Resilient",
+        "imageryPrompt": "A statue carved from stone and metal, standing defiantly in a storm"
+      },
+      {
+        "word": "boulder",
+        "emotion": "defiance, strength",
+        "imageryPrompt": "A massive boulder being thrown back at a crowd of people, glowing with an inner light, standing in a stormy field at dusk"
+      },
+      {
+        "word": "chains",
+        "emotion": "defiance, breaking free",
+        "imageryPrompt": "A figure standing in a dark room, chains melting into liquid metal as they rise into the air, forming a glowing barrier around them"
+      },
+      {
+        "word": "armor",
+        "emotion": "strength, transformation",
+        "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons"
+      },
+      {
+        "word": "wreckage",
+        "emotion": "resilience, rebuilding",
+        "imageryPrompt": "A throne made from the wreckage of a battlefield, glowing with the remnants of broken weapons and shattered armor, surrounded by a storm of fire"
+      },
+      {
+        "word": "shattered",
+        "emotion": "transformation, resilience",
+        "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "storm",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A person standing in the middle of a storm, their body glowing with light as the storm bends around them, forming a protective barrier"
+      },
+      {
+        "word": "fire",
+        "emotion": "strength, defiance",
+        "imageryPrompt": "A person standing in a field of fire, their body glowing with light as the flames swirl around them, forming a protective barrier"
+      },
+      {
+        "word": "battle",
+        "emotion": "resilience, defiance",
+        "imageryPrompt": "A battlefield at night, with a lone figure standing in the center, surrounded by glowing fire and the remnants of broken weapons"
+      },
+      {
+        "word": "stormy",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A stormy sky above a battlefield, with a lone figure standing in the center, their body glowing with light as the storm bends around them"
+      },
+      {
+        "word": "cracks",
+        "emotion": "transformation, resilience",
+        "imageryPrompt": "A cracked mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "shatter",
+        "emotion": "defiance, transformation",
+        "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire"
+      },
+      {
+        "word": "wounds",
+        "emotion": "resilience, transformation",
+        "imageryPrompt": "A figure standing in a field of broken glass, their body glowing with the light of wounds turned into armor"
+      },
+      {
+        "word": "battle-made",
+        "emotion": "resilience, strength",
+        "imageryPrompt": "A person standing in a battlefield of broken weapons, their body glowing with the light of battle-made strength"
+      }
+    ],
+    "meaning": {
+      "story": "The song is a battle cry from someone who has been broken and rebuilt, not by others, but by their own unyielding will. It's about transformation through suffering, where pain is not just endured but weaponized, and weakness is rejected as a choice. The narrator turns every wound into a badge of honor, every attack into a catalyst for strength, and every defeat into a foundation for resilience. It's not just about survival—it's about becoming unbreakable through the very forces that sought to destroy them.",
+      "sections": [
+        {
+          "name": "Cold Open — spoken, distorted",
+          "interpretation": "A defiant declaration of presence and resistance.",
+          "keyLine": "You can stop checking—I'm still fucking here."
+        },
+        {
+          "name": "Verse 1 — fast, controlled aggression",
+          "interpretation": "A battle-hardened narrator recounts their journey through adversity and defiance.",
+          "keyLine": "They couldn't shatter my will, now they're chanting my name."
+        },
+        {
+          "name": "Chorus — explosive, chantable",
+          "interpretation": "A rallying cry of defiance and transformation through struggle.",
+          "keyLine": "I was made to break—Not bend, not fold, not fade."
+        },
+        {
+          "name": "Verse 2 — faster, sharper delivery",
+          "interpretation": "The narrator's evolution into a force of unrelenting strength and resistance.",
+          "keyLine": "Now the damage holds me up—motherfucker, I'm reinforced."
+        },
+        {
+          "name": "Breakdown — heavy half-time, aggressive",
+          "interpretation": "A declaration of unbreakable resilience and tactical transformation of pain.",
+          "keyLine": "Turned the pain into a weapon—Turned the pressure into impact."
+        },
+        {
+          "name": "Final Chorus — biggest delivery, layered vocals",
+          "interpretation": "The culmination of the narrator's transformation into an unshakable force.",
+          "keyLine": "I was made to break—Everything but me."
+        }
+      ],
+      "keyLines": [
+        "They threw stones, I returned a boulder",
+        "Weight of the world? It's me on my shoulders",
+        "They couldn't shatter my will, now they're chanting my name",
+        "I was made to break—Not bend, not fold, not fade",
+        "Now the damage holds me up—motherfucker, I'm reinforced",
+        "I was made to break—Everything but me"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "boulder",
+          "emotion": "defiance, strength",
+          "imageryPrompt": "A massive boulder being thrown back at a crowd of people, glowing with an inner light, standing in a stormy field at dusk",
+          "weight": 0.9
+        },
+        {
+          "word": "pressure",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A person standing in the middle of a storm, their body radiating light as the pressure of the storm bends around them",
+          "weight": 0.85
+        },
+        {
+          "word": "chains",
+          "emotion": "defiance, breaking free",
+          "imageryPrompt": "A figure standing in a dark room, chains melting into liquid metal as they rise into the air, forming a glowing barrier around them",
+          "weight": 0.9
+        },
+        {
+          "word": "armor",
+          "emotion": "strength, transformation",
+          "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "wreckage",
+          "emotion": "resilience, rebuilding",
+          "imageryPrompt": "A throne made from the wreckage of a battlefield, glowing with the remnants of broken weapons and shattered armor, surrounded by a storm of fire",
+          "weight": 0.87
+        },
+        {
+          "word": "barricade",
+          "emotion": "defiance, strength",
+          "imageryPrompt": "A massive barricade made of broken weapons and shattered stone, glowing with an inner fire, standing in a battlefield of smoke and lightning",
+          "weight": 0.89
+        },
+        {
+          "word": "damage",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A person standing in a field of shattered glass, their body glowing with the remnants of damage, each shard reflecting their face in a mirror of strength",
+          "weight": 0.86
+        },
+        {
+          "word": "reinforced",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A figure standing in a storm, their body made of reinforced steel and glowing fire, surrounded by a halo of shattered weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "shattered",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.85
+        },
+        {
+          "word": "storm",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A person standing in the middle of a storm, their body glowing with light as the storm bends around them, forming a protective barrier",
+          "weight": 0.87
+        },
+        {
+          "word": "fire",
+          "emotion": "strength, defiance",
+          "imageryPrompt": "A person standing in a field of fire, their body glowing with light as the flames swirl around them, forming a protective barrier",
+          "weight": 0.9
+        },
+        {
+          "word": "battle",
+          "emotion": "resilience, defiance",
+          "imageryPrompt": "A battlefield at night, with a lone figure standing in the center, surrounded by glowing fire and the remnants of broken weapons",
+          "weight": 0.89
+        },
+        {
+          "word": "stormy",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A stormy sky above a battlefield, with a lone figure standing in the center, their body glowing with light as the storm bends around them",
+          "weight": 0.86
+        },
+        {
+          "word": "cracks",
+          "emotion": "transformation, resilience",
+          "imageryPrompt": "A cracked mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.85
+        },
+        {
+          "word": "shatter",
+          "emotion": "defiance, transformation",
+          "imageryPrompt": "A shattered mirror reflecting a person's face, glowing with the light of transformation, surrounded by broken glass and fire",
+          "weight": 0.87
+        },
+        {
+          "word": "wounds",
+          "emotion": "resilience, transformation",
+          "imageryPrompt": "A figure standing in a field of broken glass, their body glowing with the light of wounds turned into armor",
+          "weight": 0.86
+        },
+        {
+          "word": "armor",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A person wearing armor made of shattered glass and metal, glowing with a fiery interior, standing in a battlefield of broken weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "reinforced",
+          "emotion": "strength, resilience",
+          "imageryPrompt": "A figure standing in a storm, their body made of reinforced steel and glowing fire, surrounded by a halo of shattered weapons",
+          "weight": 0.88
+        },
+        {
+          "word": "battle-made",
+          "emotion": "resilience, strength",
+          "imageryPrompt": "A person standing in a battlefield of broken weapons, their body glowing with the light of battle-made strength",
+          "weight": 0.89
+        }
+      ]
+    }
+  },
+  "styleHint": "dusk-lit aftermath of a house party: midnight indigo sky, trashed porch, red cups and empty bottles, torn GOOD TIMES banner, scrawled graffiti, cinematic alternative-rock defiance and resilience",
+  "assets": {},
+  "generatedAt": "2026-07-17T11:36:02.728Z"
+}
