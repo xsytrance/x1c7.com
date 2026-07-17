@@ -156,27 +156,38 @@ export function TylerHazeHero() {
 
       {/* the 13 — every track a card; #MADETOBREAK gets the full-show glow */}
       <div className="relative border-t border-white/10 px-6 pb-2 pt-5 sm:px-10">
-        <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+        <p className="mb-1 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
           the thirteen — track by track
+        </p>
+        <p className="mb-3 max-w-3xl font-mono text-[10.5px] leading-relaxed text-white/50">
+          It&apos;s a concept album — the songs talk to each other. <i>Distorted In Her Eyes</i> quotes{" "}
+          <i>Pretty When I Lie</i>, <i>6th FLR</i> name-drops Jayodeed himself, and the closer lands the thesis:{" "}
+          <span className="text-white/75">&ldquo;Sometimes you lose the love of your life because you loved your damage more.&rdquo;</span>
         </p>
         <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {TYLER_TRACKS.map((t, i) => {
             const d = TYLER_TRACK_DETAILS[t];
             const isShow = t === "#MADETOBREAK";
             const inner = (
-              <>
-                <div className="flex items-baseline gap-2">
-                  <span className="font-mono text-[10px]" style={{ color: "var(--theme-secondary)" }}>{String(i + 1).padStart(2, "0")}</span>
-                  <span className={`font-display text-[15px] font-bold ${isShow ? "" : "text-white/90"}`}
-                    style={isShow ? { color: "var(--theme-primary)" } : undefined}>{t}</span>
-                  {isShow && <span className="pulse ml-auto rounded-full border px-2 py-0.5 font-mono text-[8.5px] font-bold uppercase tracking-wider"
-                    style={{ borderColor: "var(--theme-primary)", color: "var(--theme-primary)" }}>▶ full show</span>}
-                </div>
-                {d?.story && <p className="mt-1.5 font-mono text-[10.5px] leading-relaxed text-white/50">{d.story}</p>}
-                {d?.words && d.words.length > 0 && (
-                  <p className="mt-1.5 font-mono text-[9px] uppercase tracking-wider text-white/35">{d.words.join(" · ")}</p>
+              <div className="flex gap-3">
+                {d?.art && (
+                  /* eslint-disable-next-line @next/next/no-img-element */
+                  <img src={d.art} alt="" loading="lazy" className="h-16 w-16 flex-none rounded-md border border-white/10 object-cover" />
                 )}
-              </>
+                <div className="min-w-0">
+                  <div className="flex items-baseline gap-2">
+                    <span className="font-mono text-[10px]" style={{ color: "var(--theme-secondary)" }}>{String(i + 1).padStart(2, "0")}</span>
+                    <span className={`font-display text-[15px] font-bold ${isShow ? "" : "text-white/90"}`}
+                      style={isShow ? { color: "var(--theme-primary)" } : undefined}>{t}</span>
+                    {isShow && <span className="pulse ml-auto flex-none rounded-full border px-2 py-0.5 font-mono text-[8.5px] font-bold uppercase tracking-wider"
+                      style={{ borderColor: "var(--theme-primary)", color: "var(--theme-primary)" }}>▶ full show</span>}
+                  </div>
+                  {d?.story && <p className="mt-1.5 font-mono text-[10.5px] leading-relaxed text-white/50">{d.story}</p>}
+                  {d?.words && d.words.length > 0 && (
+                    <p className="mt-1.5 font-mono text-[9px] uppercase tracking-wider text-white/35">{d.words.join(" · ")}</p>
+                  )}
+                </div>
+              </div>
             );
             const cls = "block rounded-lg border p-3 transition hover:scale-[1.02] " +
               (isShow ? "border-[color-mix(in_srgb,var(--theme-primary)_55%,transparent)] bg-[color-mix(in_srgb,var(--theme-primary)_9%,transparent)]"

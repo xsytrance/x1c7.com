@@ -23,10 +23,74 @@ export const TYLER = {
     "Watching him do this is one of the proudest moments I've had as a friend. Go listen. He earned it.",
 } as const;
 
-// Per-track stories + heavy words — filled from the lyrics research
-// (Suno pages / captions). Empty until verified; cards render without
-// blurbs when a track is missing here.
-export const TYLER_TRACK_DETAILS: Record<string, { story?: string; words?: string[] }> = {};
+// Per-track stories + heavy words + cover art, from the 2026-07-17 lyrics
+// research: 8 tracks verbatim via Suno's profile API (metadata.prompt), 5
+// (Beautiful Damage → House Lights, minus the closer) whisper-transcribed
+// from the official YouTube audio — stories for those are grounded in real
+// transcripts but the texts have mishearings, so no lyrics are quoted for
+// them. Local archive: assets/lyrics/tyler/ (gitignored).
+export const TYLER_TRACK_DETAILS: Record<string, { story?: string; words?: string[]; art?: string }> = {
+  "Life of the PaRty": {
+    story: "The party-king is only real when she's in the room — pulled back from the edge, a rose in the wreckage.",
+    words: ["broken", "fire", "spark", "wreckage"],
+    art: "https://cdn2.suno.ai/30714ad4-be9d-4df2-8985-69dd8d16bdb8.jpeg",
+  },
+  "Mall Rats": {
+    story: "Walk in wrecked, walk out reborn — one wrong look made iconic while the copycats trail behind.",
+    words: ["wrecked", "reborn", "iconic", "warning"],
+    art: "https://cdn2.suno.ai/2f9d2af8-ab80-48d5-ada6-fb146f46ad24.jpeg",
+  },
+  "Neon Teeth": {
+    story: "He sees the warning and leans inside it — until the last chorus admits they're the same animal.",
+    words: ["poison", "trouble", "ultraviolet", "damned"],
+    art: "https://cdn2.suno.ai/5dea956a-dae9-4ae3-bfce-502b4d604aaf.jpeg",
+  },
+  "The Night Shift": {
+    story: "Addiction and stardom as a graveyard shift — they call it a problem, he calls it overtime.",
+    words: ["overtime", "habits", "bleeding", "breakdown"],
+    art: "https://cdn2.suno.ai/9195cb3b-f86d-46fa-ac1d-ce2e0ffc58ae.jpeg",
+  },
+  "Pretty When I Lie": {
+    story: "She catches every lie and pulls him closer anyway — nobody in this room wants the daylight version.",
+    words: ["lie", "damage", "disaster", "wreck"],
+    art: "https://cdn2.suno.ai/1ae6afe5-6f27-45a4-b303-1f143288d543.jpeg",
+  },
+  "6th FLR": {
+    story: "One wordless elevator ride and she haunts every blonde in every room — until the doors open again. Sixth floor.",
+    words: ["ghost", "possessed", "haze", "froze"],
+    art: "https://cdn2.suno.ai/151751a9-c59c-4474-9b23-4e9e90777304.jpeg",
+  },
+  "#MADETOBREAK": {
+    story: "They were betting on the break. He was made to break everything but himself.",
+    words: ["break", "pressure", "armor", "barricade"],
+    art: "https://cdn2.suno.ai/ebf94b95-fe6f-4917-a886-ef06011299de.jpeg",
+  },
+  "Beautiful Damage": {
+    story: "An elegy for a love that fought like forgiveness was running out of time — two beautiful liars making love out of damage.",
+    words: ["damage", "habit", "withdrawal", "chaos"],
+  },
+  "Never My Fault": {
+    story: "The unapologetic anthem: he never promised anything, and everyone knew the snake before the bite.",
+    words: ["fault", "snake", "bite", "blame"],
+  },
+  "Distorted In Her Eyes": {
+    story: "She loved a rewrite of him; he's neither her hero nor her villain — maybe somewhere in between.",
+    words: ["distorted", "mirror", "strangers", "regret"],
+  },
+  "Sober In My Thoughts": {
+    story: "Sobriety strips the noise and the bill comes due — grief walking beside him is how love lasts.",
+    words: ["sober", "grief", "poison", "lost"],
+  },
+  "House Lights": {
+    story: "The crowd screams for Tyler; the house lights come up on the man who has to drive home as both.",
+    words: ["encore", "armor", "silence", "crash"],
+  },
+  "Storms In November": {
+    story: "The closer and the thesis: sometimes you lose the love of your life because you loved your damage more.",
+    words: ["storm", "thunder", "wreckage", "numb"],
+    art: "https://cdn2.suno.ai/9c5c05e1-5db1-4373-98b9-d537bbbf3cc5.jpeg",
+  },
+};
 
 // Verified streaming links only (each fetched + confirmed 2026-07-17 —
 // release-day propagation is ongoing; Amazon Music & Pandora not indexed yet,

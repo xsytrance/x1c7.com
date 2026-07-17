@@ -100,6 +100,24 @@ track) gets a full x1c7 show with 50+ images and perfect timing.
   Pandora (propagation lag). **SoundCloud**: profile exists but unconfirmed —
   left off the page. All links live in `src/data/tylerhaze.ts`.
 
+## Lyrics & narrative research (2026-07-17, second pass)
+- **8/13 tracks**: exact full lyrics via Suno's public profile API
+  (`metadata.prompt` on each clip of @jc_gomez0311). **5/13** (Beautiful
+  Damage, Never My Fault, Distorted In Her Eyes, Sober In My Thoughts,
+  House Lights) are absent from Suno — whisper-transcribed from the official
+  YouTube Topic audio (real but with mishearings; never quote them).
+  Local archive: `assets/lyrics/tyler/` (gitignored).
+- **It's a concept album**: 6th FLR name-drops "Jay-O-Deed" and foreshadows
+  House Lights; Distorted In Her Eyes quotes Pretty When I Lie; Storms In
+  November carries the thesis — "Sometimes you lose the love of your life
+  because you loved your damage more."
+- Per-track stories + heavy words + Suno cover art now live in
+  `TYLER_TRACK_DETAILS` (src/data/tylerhaze.ts) and render on the
+  track cards. The #MADETOBREAK Suno single art leads the show's
+  guided.json (now 13 images).
+- Suno profile stats at launch: 27 clips, 1057 plays, 53 upvotes,
+  12 followers. Album creation window on Suno: June 15–28, 2026.
+
 ## Status log
 - [x] Plan documented; lyrics saved to `assets/lyrics/madetobreak.txt`
 - [x] Streaming links researched + verified → `src/data/tylerhaze.ts`
