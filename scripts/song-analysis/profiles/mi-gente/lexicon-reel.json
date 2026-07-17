@@ -1,0 +1,58 @@
+{
+  "v": 1,
+  "id": "mi-gente",
+  "generatedAt": "2026-07-17T08:45:22.446Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 12,
+    "judged": 3,
+    "accepted": 3,
+    "kept": 3
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s1-2-cinema.webp",
+      "key": "lexicon/gente/s1-2-cinema.webp",
+      "word": "gente",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "score": 1,
+      "cosine": 0.573,
+      "reason": "Perfectly captures barrio unity, neon energy, and collective 'gente' spirit.",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s1-4-photo.webp",
+      "key": "lexicon/gente/s1-4-photo.webp",
+      "word": "gente",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "score": 1,
+      "cosine": 0.559,
+      "reason": "Perfectly captures unity, nighttime celebration, and community identity",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s1-5-dream-collage.webp",
+      "key": "lexicon/gente/s1-5-dream-collage.webp",
+      "word": "gente",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "score": 1,
+      "cosine": 0.53,
+      "reason": "Perfect fit for unity, nighttime barrio, aggressive swagger",
+      "recipe": "5-dream-collage",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "gente": [
+      0,
+      1,
+      2
+    ]
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "v": 1,
+  "id": "my-soul-lives-in-seoul",
+  "generatedAt": "2026-07-17T09:28:48.972Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 952,
+    "judged": 42,
+    "accepted": 39,
+    "kept": 32
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "we glow My soul lives in Seoul Ohohoh call me",
+      "t": 100.287,
+      "score": 0.95,
+      "cosine": 0.57,
+      "reason": "Intimate glow symbolizes connection; urban setting aligns with Seoul; hopeful mood matches",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-1.webp",
+      "key": "lexicon/dreams/s0-1.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.95,
+      "cosine": 0.556,
+      "reason": "Captures long-distance connection, hope, and digital unity in a romantic setting",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "Yeah My soul lives in Seoul But my heart lives",
+      "t": 2.496,
+      "score": 0.95,
+      "cosine": 0.537,
+      "reason": "Symbolizes soul's presence in Seoul, fits upbeat resilience and global theme",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-3-photo.webp",
+      "key": "lexicon/night/s5-3-photo.webp",
+      "word": "night",
+      "line": "my good night We fight we make up Then we laugh on the phone No matter where you are You never feel",
+      "t": 76.162,
+      "score": 0.95,
+      "cosine": 0.534,
+      "reason": "Intimate nighttime moment aligns with lyric's late-night connection and long-distance them",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-2.webp",
+      "key": "lexicon/dreams/s0-2.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.95,
+      "cosine": 0.525,
+      "reason": "Captures longing, connection, and dreams across distance",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "my good night We fight we make up Then we laugh on the phone No matter where you are You never feel",
+      "t": 76.162,
+      "score": 0.95,
+      "cosine": 0.51,
+      "reason": "Captures urban night, long-distance connection, and hopeful resilience",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s5-1-word-portrait.webp",
+      "key": "lexicon/save/s5-1-word-portrait.webp",
+      "word": "save",
+      "line": "Storage full again from the photos that you send But I still save every selfie like Ill never see you again Shipping takes forever",
+      "t": 45.175,
+      "score": 0.95,
+      "cosine": 0.505,
+      "reason": "Romantic, intimate, and tied to memory preservation in long-distance love",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s1-6-word-portrait.webp",
+      "key": "lexicon/seoul/s1-6-word-portrait.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.95,
+      "cosine": 0.494,
+      "reason": "Cultural identity, emotional warmth, and urban setting align with song's themes and mood.",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s7-4-film-still.webp",
+      "key": "lexicon/crazy/s7-4-film-still.webp",
+      "word": "crazy",
+      "line": "face on my screen makes the distance feel sweet WiFi acting crazy signal dropping low Can you hear me baby then the camera",
+      "t": 29.083,
+      "score": 0.95,
+      "cosine": 0.491,
+      "reason": "glitchy romance, digital turbulence, neon aesthetics match song's themes",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-3-word-portrait.webp",
+      "key": "lexicon/seoul/s0-3-word-portrait.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.95,
+      "cosine": 0.486,
+      "reason": "Symbolizes Seoul as a soulful, nostalgic anchor in a global relationship",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "every continent Dale fuerte dale true Every rhythm brings me back to you 時 差 を 越 えてまた 君 へ 送 信 Jisa wo koete",
+      "t": 289.482,
+      "score": 0.95,
+      "cosine": 0.483,
+      "reason": "Urban Seoul, rhythm as connection, cultural fusion align with song's themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
+      "key": "lexicon/glow/s6-5-word-neon.webp",
+      "word": "glow",
+      "line": "we glow My soul lives in Seoul Ohohoh call me",
+      "t": 100.287,
+      "score": 0.95,
+      "cosine": 0.477,
+      "reason": "Neon glow symbolizes digital connection and resilience in long-distance love",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
+      "key": "lexicon/phone/s0-1.webp",
+      "word": "phone",
+      "line": "One two three go I wake up grab my phone before I even breathe Thirtyseven messages waiting there",
+      "t": 19.737,
+      "score": 0.95,
+      "cosine": 0.477,
+      "reason": "Captures digital connection and loneliness in long-distance love",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
+      "key": "lexicon/smile/s0-1.webp",
+      "word": "smile",
+      "line": "a box it arrives next year Customs got me crying but I smile when its here Tshirts snacks letters little things you",
+      "t": 126.048,
+      "score": 0.95,
+      "cosine": 0.472,
+      "reason": "Captures long-distance intimacy, digital connection, and hopeful resilience",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s3-4-neon-sign.webp",
+      "key": "lexicon/different/s3-4-neon-sign.webp",
+      "word": "different",
+      "line": "now Signals weak But I feel you somehow Time zones touch screens Different skies same dreams One two",
+      "t": 14.722,
+      "score": 0.95,
+      "cosine": 0.472,
+      "reason": "Digital connection, time zones, neon glow align with song's themes",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-4-film-still.webp",
+      "key": "lexicon/save/s6-4-film-still.webp",
+      "word": "save",
+      "line": "Storage full again from the photos that you send But I still save every selfie like Ill never see you again Shipping takes forever",
+      "t": 45.175,
+      "score": 0.95,
+      "cosine": 0.471,
+      "reason": "Captures digital connection, memory, and longing central to the song",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "key": "lexicon/heart/s19-4-dark-surreal.webp",
+      "word": "heart",
+      "line": "My soul lives in Seoul But my heart lives wherever you call",
+      "t": 4.386,
+      "score": 0.95,
+      "cosine": 0.467,
+      "reason": "Symbolizes enduring love across distance, matches song's themes and mood",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s2-5-anime.webp",
+      "key": "lexicon/seoul/s2-5-anime.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.95,
+      "cosine": 0.457,
+      "reason": "Symbolism aligns with Seoul, emotional depth matches song's themes",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-5-word-portrait.webp",
+      "key": "lexicon/soul/s12-5-word-portrait.webp",
+      "word": "soul",
+      "line": "Yeah My soul lives in Seoul But my heart lives",
+      "t": 2.496,
+      "score": 0.95,
+      "cosine": 0.437,
+      "reason": "Symbolizes soul's connection across distances, aligns with cosmic and universal themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s6-3-neon-night.webp",
+      "key": "lexicon/heart/s6-3-neon-night.webp",
+      "word": "heart",
+      "line": "My soul lives in Seoul But my heart lives wherever you call",
+      "t": 4.386,
+      "score": 0.95,
+      "cosine": 0.433,
+      "reason": "Symbolizes longing, connection, and resilience in a global context",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s14-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s14-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "every continent Dale fuerte dale true Every rhythm brings me back to you 時 差 を 越 えてまた 君 へ 送 信 Jisa wo koete",
+      "t": 289.482,
+      "score": 0.95,
+      "cosine": 0.396,
+      "reason": "Cinematic, hopeful, bridges distance with lyrical text",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-2.webp",
+      "key": "lexicon/dreams/s1-2.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.95,
+      "cosine": 0.393,
+      "reason": "Captures long-distance hope, serenity, and digital connection",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
+      "key": "lexicon/different/s6-3-word-neon.webp",
+      "word": "different",
+      "line": "now Signals weak But I feel you somehow Time zones touch screens Different skies same dreams One two",
+      "t": 14.722,
+      "score": 0.95,
+      "cosine": 0.391,
+      "reason": "Cultural contrast, neon lighting, and urban setting align with song's themes and mood.",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s13-2-word-portrait.webp",
+      "key": "lexicon/rhythm/s13-2-word-portrait.webp",
+      "word": "rhythm",
+      "line": "every continent Dale fuerte dale true Every rhythm brings me back to you 時 差 を 越 えてまた 君 へ 送 信 Jisa wo koete",
+      "t": 289.482,
+      "score": 0.95,
+      "cosine": 0.389,
+      "reason": "Cultural harmony, musical connection, and timeless love align with the song's themes of gl",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s7-6-stickers.webp",
+      "key": "lexicon/voice/s7-6-stickers.webp",
+      "word": "voice",
+      "line": "there Tired thumbs from typing all night Tired voice from one more call till daylight Missed calls small fights",
+      "t": 143.244,
+      "score": 0.9,
+      "cosine": 0.531,
+      "reason": "Symbolizes voice strain, digital connection, and emotional resilience in long-distance lov",
+      "recipe": "6-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s3-1-word-portrait.webp",
+      "key": "lexicon/love/s3-1-word-portrait.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.9,
+      "cosine": 0.488,
+      "reason": "Romantic intimacy, staged lighting, and emotional text align with song's themes of love an",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s4-4-dream-collage.webp",
+      "key": "lexicon/crazy/s4-4-dream-collage.webp",
+      "word": "crazy",
+      "line": "face on my screen makes the distance feel sweet WiFi acting crazy signal dropping low Can you hear me baby then the camera",
+      "t": 29.083,
+      "score": 0.9,
+      "cosine": 0.408,
+      "reason": "fits futuristic global love and tech struggles",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-4-dream-collage.webp",
+      "key": "lexicon/voice/s1-4-dream-collage.webp",
+      "word": "voice",
+      "line": "there Tired thumbs from typing all night Tired voice from one more call till daylight Missed calls small fights",
+      "t": 143.244,
+      "score": 0.9,
+      "cosine": 0.4,
+      "reason": "Symbolizes longing, connection, and hope in a digital age",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s15-2-anime.webp",
+      "key": "lexicon/glow/s15-2-anime.webp",
+      "word": "glow",
+      "line": "we glow My soul lives in Seoul Ohohoh call me",
+      "t": 100.287,
+      "score": 0.9,
+      "cosine": 0.352,
+      "reason": "Symbolizes inner light and cosmic connection in a digital relationship",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s18-6-word-portrait.webp",
+      "key": "lexicon/night/s18-6-word-portrait.webp",
+      "word": "night",
+      "line": "my good night We fight we make up Then we laugh on the phone No matter where you are You never feel",
+      "t": 76.162,
+      "score": 0.85,
+      "cosine": 0.479,
+      "reason": "Captures loneliness and hope of long-distance love with cinematic realism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-1-dream-collage.webp",
+      "key": "lexicon/love/s6-1-dream-collage.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "Romantic and tender, but lacks cultural and logistical elements",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.7,
+      "cosine": 0.491,
+      "reason": "Bittersweet imagery fits song's emotional depth, but lacks upbeat resilience",
+      "recipe": "6-word-portrait",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "glow": [
+      0,
+      11,
+      28
+    ],
+    "dreams": [
+      1,
+      4,
+      21
+    ],
+    "soul": [
+      2,
+      18
+    ],
+    "night": [
+      3,
+      5,
+      29
+    ],
+    "save": [
+      6,
+      15
+    ],
+    "seoul": [
+      7,
+      9,
+      17
+    ],
+    "crazy": [
+      8,
+      26
+    ],
+    "rhythm": [
+      10,
+      20,
+      23
+    ],
+    "phone": [
+      12
+    ],
+    "smile": [
+      13
+    ],
+    "different": [
+      14,
+      22
+    ],
+    "heart": [
+      16,
+      19
+    ],
+    "voice": [
+      24,
+      27
+    ],
+    "love": [
+      25,
+      30,
+      31
+    ]
+  }
+}

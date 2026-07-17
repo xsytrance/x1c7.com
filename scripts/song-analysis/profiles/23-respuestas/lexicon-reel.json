@@ -1,0 +1,58 @@
+{
+  "v": 1,
+  "id": "23-respuestas",
+  "generatedAt": "2026-07-17T06:10:34.997Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 9,
+    "judged": 3,
+    "accepted": 3,
+    "kept": 3
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-4-dream-collage.webp",
+      "key": "lexicon/respuestas/s1-4-dream-collage.webp",
+      "word": "respuestas",
+      "line": "Respuestas Tú hiciste veintitrés preguntas yo",
+      "t": 8.893,
+      "score": 0.95,
+      "cosine": 0.392,
+      "reason": "Matches mood and themes with neon symbolism and emotional closure",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-2-cinema.webp",
+      "key": "lexicon/respuestas/s1-2-cinema.webp",
+      "word": "respuestas",
+      "line": "Respuestas Tú hiciste veintitrés preguntas yo",
+      "t": 8.893,
+      "score": 0.85,
+      "cosine": 0.408,
+      "reason": "Digital glitch art reflects unanswered questions and emotional weight",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-6-film-still.webp",
+      "key": "lexicon/respuestas/s1-6-film-still.webp",
+      "word": "respuestas",
+      "line": "Respuestas Tú hiciste veintitrés preguntas yo",
+      "t": 8.893,
+      "score": 0.85,
+      "cosine": 0.327,
+      "reason": "Matches mood and themes of introspection and emotional closure",
+      "recipe": "6-film-still",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "respuestas": [
+      0,
+      1,
+      2
+    ]
+  }
+}

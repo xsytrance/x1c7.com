@@ -1,0 +1,418 @@
+{
+  "v": 1,
+  "id": "1st-of-the-month-walk-it-out",
+  "generatedAt": "2026-07-17T05:28:26.294Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 747,
+    "judged": 42,
+    "accepted": 29,
+    "kept": 29
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s4-6-word-portrait.webp",
+      "key": "lexicon/walk/s4-6-word-portrait.webp",
+      "word": "walk",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "score": 1,
+      "cosine": 0.518,
+      "reason": "Perfect fit for triumphant, disciplined urban renewal imagery",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-3-word-portrait.webp",
+      "key": "lexicon/walk/s5-3-word-portrait.webp",
+      "word": "walk",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "score": 1,
+      "cosine": 0.505,
+      "reason": "Perfect fit for triumphant discipline and renewal themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-5-neon-night.webp",
+      "key": "lexicon/gold/s11-5-neon-night.webp",
+      "word": "gold",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "score": 1,
+      "cosine": 0.497,
+      "reason": "Symbolizes transformation, resilience, and urban renewal aligns with song's themes",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
+      "key": "lexicon/different/s6-2-word-portrait.webp",
+      "word": "different",
+      "line": "wind slowin' down Got the whole summer lookin' different now Walk it out, walk it out, walk",
+      "t": 27.562,
+      "score": 1,
+      "cosine": 0.392,
+      "reason": "Triumphant, self-reinvention, military precision, borough pride, cinematic lighting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-5-word-neon.webp",
+      "key": "lexicon/gold/s12-5-word-neon.webp",
+      "word": "gold",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "score": 0.95,
+      "cosine": 0.519,
+      "reason": "Urban rebirth, transformation, and triumph align with the song's themes of renewal and dis",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s6-4-word-portrait.webp",
+      "key": "lexicon/fast/s6-4-word-portrait.webp",
+      "word": "fast",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "score": 0.95,
+      "cosine": 0.514,
+      "reason": "Urgent, futuristic city aligns with triumph and resilience themes",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s2-6-word-neon.webp",
+      "key": "lexicon/fast/s2-6-word-neon.webp",
+      "word": "fast",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "score": 0.95,
+      "cosine": 0.494,
+      "reason": "Urban neon aligns with borough pride and military precision; urgency matches triumphant di",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-3-word-neon.webp",
+      "key": "lexicon/code/s4-3-word-neon.webp",
+      "word": "code",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "score": 0.95,
+      "cosine": 0.493,
+      "reason": "Urban resilience, neon tech, military precision align with song's themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s3-6-word-neon.webp",
+      "key": "lexicon/code/s3-6-word-neon.webp",
+      "word": "code",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "score": 0.95,
+      "cosine": 0.491,
+      "reason": "Urban neon aligns with borough pride and triumphant mood",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s10-4-photo.webp",
+      "key": "lexicon/soul/s10-4-photo.webp",
+      "word": "soul",
+      "line": "the same inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody",
+      "t": 49.853,
+      "score": 0.95,
+      "cosine": 0.456,
+      "reason": "Powerful embodiment of soul and resilience in a public, triumphant setting",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "the same inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody",
+      "t": 49.853,
+      "score": 0.95,
+      "cosine": 0.454,
+      "reason": "Cultural identity, triumph, and renewal align with song's themes",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-1-pixel.webp",
+      "key": "lexicon/gold/s9-1-pixel.webp",
+      "word": "gold",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "score": 0.95,
+      "cosine": 0.451,
+      "reason": "Symbolizes triumph, discipline, and transformation aligning with song's themes",
+      "recipe": "1-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-5-word-portrait.webp",
+      "key": "lexicon/walk/s9-5-word-portrait.webp",
+      "word": "walk",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "score": 0.95,
+      "cosine": 0.45,
+      "reason": "Strong symbolism of resilience, military precision, and triumph in a cinematic setting",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s5-3-word-neon.webp",
+      "key": "lexicon/fast/s5-3-word-neon.webp",
+      "word": "fast",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "score": 0.95,
+      "cosine": 0.45,
+      "reason": "Urban neon aligns with borough pride and military precision",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s7-6-neon-night.webp",
+      "key": "lexicon/code/s7-6-neon-night.webp",
+      "word": "code",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "score": 0.95,
+      "cosine": 0.435,
+      "reason": "Symbolism aligns with resilience, triumph, and borough pride",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/veneno/s2-2-anime.webp",
+      "key": "lexicon/veneno/s2-2-anime.webp",
+      "word": "veneno",
+      "line": "inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody got",
+      "t": 50.457,
+      "score": 0.95,
+      "cosine": 0.431,
+      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes.",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
+      "key": "lexicon/soul/s1-6-word-portrait.webp",
+      "word": "soul",
+      "line": "the same inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody",
+      "t": 49.853,
+      "score": 0.95,
+      "cosine": 0.423,
+      "reason": "Triumphant, resilient, and cinematic imagery aligns with the song's mood and themes of ren",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s3-2-word-portrait.webp",
+      "key": "lexicon/void/s3-2-word-portrait.webp",
+      "word": "void",
+      "line": "Dominican soul, Veneno email Turn the void into gold Everybody got a plan till the work show up",
+      "t": 52.048,
+      "score": 0.95,
+      "cosine": 0.422,
+      "reason": "Symbolizes transformation, focus, and value align with song's themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
+      "key": "lexicon/different/s8-1-word-neon.webp",
+      "word": "different",
+      "line": "wind slowin' down Got the whole summer lookin' different now Walk it out, walk it out, walk",
+      "t": 27.562,
+      "score": 0.95,
+      "cosine": 0.386,
+      "reason": "Urban resilience, neon symbolism, and self-reinvention align with song's themes.",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s14-5-word-neon.webp",
+      "key": "lexicon/night/s14-5-word-neon.webp",
+      "word": "night",
+      "line": "made the next one tall Nursing home systems, late night calls Now I walk through a law firm, solvin'",
+      "t": 98.79,
+      "score": 0.9,
+      "cosine": 0.52,
+      "reason": "Urban resilience, late-night hustle align with triumph and discipline",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s10-1-word-neon.webp",
+      "key": "lexicon/night/s10-1-word-neon.webp",
+      "word": "night",
+      "line": "made the next one tall Nursing home systems, late night calls Now I walk through a law firm, solvin'",
+      "t": 98.79,
+      "score": 0.9,
+      "cosine": 0.517,
+      "reason": "Urban resilience, triumph over darkness, neon symbolism fit the song's mood and themes.",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s24-6-word-neon.webp",
+      "key": "lexicon/night/s24-6-word-neon.webp",
+      "word": "night",
+      "line": "made the next one tall Nursing home systems, late night calls Now I walk through a law firm, solvin'",
+      "t": 98.79,
+      "score": 0.9,
+      "cosine": 0.509,
+      "reason": "Urban resilience, neon lighting, and triumphant renewal fit the song's mood and themes.",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s2-6-word-neon.webp",
+      "key": "lexicon/void/s2-6-word-neon.webp",
+      "word": "void",
+      "line": "Dominican soul, Veneno email Turn the void into gold Everybody got a plan till the work show up",
+      "t": 52.048,
+      "score": 0.9,
+      "cosine": 0.501,
+      "reason": "Symbolizes transformation, urban grit, and renewal aligns with song's themes",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s7-6-photo.webp",
+      "key": "lexicon/summer/s7-6-photo.webp",
+      "word": "summer",
+      "line": "of the month Sun up, wind slowin' down Got the whole summer lookin' different now Walk it out,",
+      "t": 26.609,
+      "score": 0.9,
+      "cosine": 0.478,
+      "reason": "Triumphant crowd, sweat as hard work, borough pride and discipline align with song's theme",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s5-3-word-neon.webp",
+      "key": "lexicon/void/s5-3-word-neon.webp",
+      "word": "void",
+      "line": "Dominican soul, Veneno email Turn the void into gold Everybody got a plan till the work show up",
+      "t": 52.048,
+      "score": 0.9,
+      "cosine": 0.459,
+      "reason": "Urban renewal, discipline, and transformation align with song's themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-2-stickers.webp",
+      "key": "lexicon/save/s8-2-stickers.webp",
+      "word": "save",
+      "line": "New month, new pain, save me shit First of the month",
+      "t": 4.876,
+      "score": 0.9,
+      "cosine": 0.449,
+      "reason": "Motivational, disciplined, triumphant vibe aligns with song's themes",
+      "recipe": "2-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s4-6-stickers.webp",
+      "key": "lexicon/save/s4-6-stickers.webp",
+      "word": "save",
+      "line": "New month, new pain, save me shit First of the month",
+      "t": 4.876,
+      "score": 0.9,
+      "cosine": 0.431,
+      "reason": "Urgent, vibrant, and hopeful comic-style graphic aligns with triumphant discipline and ren",
+      "recipe": "6-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s5-5-word-portrait.webp",
+      "key": "lexicon/different/s5-5-word-portrait.webp",
+      "word": "different",
+      "line": "wind slowin' down Got the whole summer lookin' different now Walk it out, walk it out, walk",
+      "t": 27.562,
+      "score": 0.9,
+      "cosine": 0.355,
+      "reason": "Triumphant light contrasts darkness, symbolizing renewal and individuality.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-4-cinema.webp",
+      "key": "lexicon/move/s1-4-cinema.webp",
+      "word": "move",
+      "line": "then it ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 113.92,
+      "score": 0.6,
+      "cosine": 0.301,
+      "reason": "Urban solitude contrasts triumphant mood but fits journey/transformation theme",
+      "recipe": "4-cinema",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "walk": [
+      0,
+      1,
+      12
+    ],
+    "gold": [
+      2,
+      4,
+      11
+    ],
+    "different": [
+      3,
+      18,
+      27
+    ],
+    "fast": [
+      5,
+      6,
+      13
+    ],
+    "code": [
+      7,
+      8,
+      14
+    ],
+    "soul": [
+      9,
+      10,
+      16
+    ],
+    "veneno": [
+      15
+    ],
+    "void": [
+      17,
+      22,
+      24
+    ],
+    "night": [
+      19,
+      20,
+      21
+    ],
+    "summer": [
+      23
+    ],
+    "save": [
+      25,
+      26
+    ],
+    "move": [
+      28
+    ]
+  }
+}

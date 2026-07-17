@@ -1,0 +1,1908 @@
+2026-07-17T00:59:04-04:00 · ── night shift begins · goal 1000 images · until 07:15 · GPU 40°C
+✦ lyrics pass: 13069 sung-word instances · 0 new shelf words (min-freq 2; 1408 rare words left for the songs to earn)
+✦ harvested 56 songs · 410 keyword-instances
+✦ lexicon "xsytrance-canon": 1551 words (0 new), 5849 senses
+✦ wrote src/data/lexicon.json
+  next: node scripts/lexicon/dream.mjs   (grow the legos)
+gravity: 1551 words · 308 LLM-picked keywords · 68 songs
+grading 1 borderline words with qwen3:14b…
+  graded 1/1
+✦ gravity written: 306 heavy · 548 mid · 697 light
+✦ full-gallery budget at heavy=6/mid=2/light=0: ~14020 images
+✦ registry loaded: 26 text · 9 weather · 4 light effects
+✦ dreamt 0 words (+0 legos)
+✦ lexicon now 1551/1551 words filled · 5849 senses
+✦ text-effect coverage: dissolve:2780 bloom:1430 burn:1343 rise:243 shatter:158 neon:81 whisper:79 chromatic:73 bleed:68 slam:55 glitch:45 melt:44 shimmer:43 freeze:41 fizz:37 carve:34 type:31 pulse:30 handwrite:30 wave:25 tremor:22 echo:20 redact:14 fall:14 tvoff:12 liquid:12
+  frontier clear — every word has legos ✨
+↑ publishing lexicon.json (5380 KB) → x1c7-music
+2026/07/17 00:59:35 NOTICE: Config file "/home/xsyprime/.config/rclone/rclone.conf" not found - using defaults
+✦ published → https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon.json
+  every x1c7 + Kinetica install now fetches this shelf on next load — no redeploy.
+2026-07-17T00:59:38-04:00 · ✦ text growth done
+2026-07-17T00:59:38-04:00 · song queue: 43 shows
+vision-worker: 1692 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: lights q=0.9 m=1)
+  20/300 (last: lights q=0.8 m=0.7)
+  30/300 (last: lights q=0.85 m=0.9)
+  40/300 (last: lights q=0.9 m=0.8)
+  50/300 (last: lights q=0.9 m=0.9)
+  60/300 (last: lights q=0.9 m=0.8)
+  70/300 (last: lights q=0.9 m=1)
+  80/300 (last: lights q=0.9 m=0.8)
+  90/300 (last: lights q=0.8 m=0.7)
+  100/300 (last: devour q=1 m=0.9)
+  110/300 (last: light q=0.8 m=0.9)
+  120/300 (last: light q=0.9 m=0.9)
+  130/300 (last: light q=0.95 m=1)
+  140/300 (last: light q=0.9 m=0.8)
+  150/300 (last: light q=0.9 m=0.95)
+  160/300 (last: light q=0.9 m=0.9)
+  170/300 (last: light q=0.85 m=0.9)
+  180/300 (last: light q=0.9 m=0.85)
+  190/300 (last: light q=0.8 m=0.9)
+  200/300 (last: light q=0.9 m=0.6)
+  210/300 (last: light q=0.9 m=0.7)
+  220/300 (last: light q=0.9 m=1)
+  230/300 (last: light q=0.7 m=0.9)
+  240/300 (last: light q=0.9 m=0.8)
+  250/300 (last: light q=0.95 m=0.98)
+  260/300 (last: light q=0.95 m=0.98)
+  270/300 (last: sky q=0.3 m=0.9)
+  280/300 (last: sky q=0.95 m=0.98)
+  290/300 (last: sky q=0.85 m=0.95)
+  300/300 (last: sky q=0.95 m=0.9)
+✦ vision index: 2153 readings (300 new, 0 failed) · 5 low-quality flagged
+── audit drink-drink-don-t-save-me: 23 reel images
+✦ audit: 1 shows · 23 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel drink-drink-don-t-save-me: 144 song words · 636 indexed candidates
+  stage A: 27 → judging 27
+✦ reel: 27 images (25 featured) → scripts/song-analysis/profiles/drink-drink-don-t-save-me/lexicon-reel.json
+   ★ night 1 1 — Perfectly aligns with the song's eerie, introspective mood and themes of isolation and sel
+   ★ drink 0.95 2-concept-art — Matches eerie mood, alcohol as escape, emotional exhaustion
+   ★ sorrow 0.95 2-cinema — Matches eerie mood, isolation, and alcohol as escape
+   ★ drink 0.95 5-photo — Matches eerie mood, isolation, and alcohol as escape
+   ★ walk 0.95 5-neon-night — Eerie, introspective mood matches; neon reflections and rain symbolize emotional voids and
+   ★ drink 0.95 4-cinema — Matches eerie mood, isolation, and alcohol as escape
+   ★ storm 0.95 3-word-portrait — Storm symbolizes inner turmoil, ruins reflect emotional wreckage, fits the song's mood and
+   ★ storm 0.95 1-dream-collage — Storm symbolizes emotional turmoil, fits the eerie and hypnotic mood
+   ★ storm 0.95 6-concept-art — Storm symbolizes emotional turmoil, fits eerie and isolated mood
+   ★ save 0.95 3-word-portrait — Powerful imagery matches song's plea, isolation, and hopelessness
+   ★ sorrow 0.95 4-photo — Strong symbolism and mood match song's themes and atmosphere
+   ★ soul 0.95 4-word-neon — Eerie neon 'SOUL' sign fits song's mood and themes of emotional numbness and surrealism.
+✦ published → planets/drink-drink-don-t-save-me/lexicon-reel.json
+── audit international-heat: 24 reel images
+  ≠ misfit lexicon/light/s0-2.webp (q=0.9 wm=0.7 fit=0.4)
+✦ audit: 1 shows · 24 scanned (0 fresh-skipped) · 0 pruned · 1 misfits · 0 timing flags · 0 errors
+match-reel international-heat: 275 song words · 734 indexed candidates
+  stage A: 26 → judging 26
+✦ reel: 25 images (23 featured) → scripts/song-analysis/profiles/international-heat/lexicon-reel.json
+   ★ night 1 5-word-portrait — Perfectly aligns with seductive nightlife and foreign allure
+   ★ fire 1 1-word-neon — Perfectly aligns with seductive, intense, and cultural fusion themes.
+   ★ heat 1 2-word-portrait — Perfectly aligns with seductive nightlife and cultural fusion themes
+   ★ rhythm 1 1 — Image perfectly captures rhythm's sensual, global, and intense essence
+   ★ soul 0.95 4-word-neon — Strong cultural fusion, neon symbolizes desire, cityscape ties to global connection
+   ★ fire 0.95 6-word-portrait — Strong metaphor, sensual mood, urban setting aligns with song's themes
+   ★ fire 0.95 1-photo — Symbolic fire, sensual touch, urban night, cultural fusion
+   ★ soul 0.95 1-word-neon — Strong cultural fusion, neon symbolism, and sensual mood align perfectly with the song's t
+   ★ night 0.95 2-word-portrait — Sensual urban night scene fits seductive, boundary-breaking theme
+   ★ night 0.95 6-word-portrait — Sensual, urban, and aligned with nightlife and cultural fusion
+   ★ body 0.95 3-word-neon — Sensual neon sign fits seductive, intense mood and cultural fusion theme
+   ★ body 0.95 1-word-portrait — Sensual, confident woman in nightclub aligns with song's themes of seduction and nightlife
+✦ published → planets/international-heat/lexicon-reel.json
+── audit i-won-t-be-your-fire: 30 reel images
+✦ audit: 1 shows · 0 scanned (30 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel i-won-t-be-your-fire: 229 song words · 674 indexed candidates
+  stage A: 35 → judging 35
+✦ reel: 31 images (31 featured) → scripts/song-analysis/profiles/i-won-t-be-your-fire/lexicon-reel.json
+   ★ fire 0.95 4-word-portrait — Powerful metaphor, aligns with toxic love and emotional boundaries
+   ★ cut 0.95 1-graphic-novel — Powerful symbolism of defiance and emotional pain aligns with song's themes
+   ★ cut 0.95 3-photo — Powerful depiction of emotional restraint and pain in a toxic relationship
+   ★ storm 0.95 3-word-portrait — Powerful imagery of turmoil and wreckage aligns with song's emotional struggle and self-re
+   ★ fire 0.95 6-film-still — Powerful symbolism of emotional destruction and resilience fits the song's themes
+   ★ phone 0.95 1 — Emotional barriers, memory, solitude match song's themes and mood
+   ★ storm 0.95 6-concept-art — Storm symbolizes turmoil, isolation matches emotional struggle
+   ★ fire 0.95 4-dream-collage — Powerful symbolism of fire and emotional fragmentation fits the song's themes
+   ★ night 0.95 6-word-portrait — Cinematic, melancholic, and symbolic of emotional darkness and hope
+   ★ storm 0.95 1-dream-collage — Powerful storm symbolism matches emotional turmoil and inner chaos
+   ★ walking 0.95 2 — Matches the song's themes of emotional detachment and moving on from pain
+   ★ heart 0.95 1 — Symbolizes emotional fragmentation and inner turmoil
+✦ published → planets/i-won-t-be-your-fire/lexicon-reel.json
+── audit summer-drip: 31 reel images
+✦ audit: 1 shows · 31 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 15 timing flags · 0 errors
+match-reel summer-drip: 351 song words · 683 indexed candidates
+  stage A: 47 → judging 47
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/summer-drip/lexicon-reel.json
+   ★ heat 1 2-word-portrait — Image perfectly captures sultry, confident nightclub energy aligned with song's themes
+   ★ gold 1 2-word-portrait — Perfectly aligns with summer luxury, confidence, and sultry opulence.
+   ★ gold 1 1-dream-collage — Perfectly aligns with luxury, confidence, and summer allure
+   ★ heat 1 4-word-portrait — Perfectly aligns with sultry, confident, and luxurious summer vibe.
+   ★ drip 1 1-word-portrait — Perfectly aligns with summer night luxury and sultry confidence.
+   ★ drip 1 2-word-portrait — Perfectly aligns with summer, confidence, and luxury themes.
+   ★ walk 1 1-word-portrait — Perfectly aligns with confident, sultry, and cinematic themes
+   ★ summer 1 3-word-neon — Perfectly aligns with summer nights, neon, confidence, and sultry allure.
+   ★ clouds 0.95 1 — matches summer vibe, sultry atmosphere, and luxury
+   ★ move 0.95 2-word-portrait — Matches sultry, confident summer vibe with bar setting and bold typography
+   ★ clouds 0.95 2 — matches sultry summer mood, swirling clouds as seductive movement
+   ★ gold 0.95 2-word-portrait — Matches sultry, confident vibe and luxury themes with gold and neon lighting
+✦ published → planets/summer-drip/lexicon-reel.json
+2026-07-17T01:24:52-04:00 · building reel: 1st-of-the-month-walk-it-out
+match-reel 1st-of-the-month-walk-it-out: 225 song words · 748 indexed candidates
+  stage A: 43 → judging 43
+✦ reel: 30 images (23 featured) → scripts/song-analysis/profiles/1st-of-the-month-walk-it-out/lexicon-reel.json
+   ★ walk 0.95 3-word-portrait — Celebratory march aligns with triumphant discipline and unity
+   ★ gold 0.95 1-pixel — Symbolizes triumph and wealth aligning with turning void into gold and celebratory discipl
+   ★ fast 0.95 4-word-portrait — Urgent, dynamic energy matches triumphant discipline and modern borough pride
+   ★ walk 0.95 6-word-portrait — Matches triumphant journey, urban pride, and determination in a disciplined walk
+   ★ different 0.95 2-word-portrait — Triumphant stage moment aligns with song's mood and themes of renewal and pride.
+   ★ gold 0.9 5-neon-night — Symbolizes turning void into gold, urban resilience, opulence in adversity
+   ★ fast 0.9 6-word-neon — Urgent, modern energy aligns with triumphant discipline and urban pride
+   ★ soul 0.9 1-stickers — Symbolism aligns with triumph and renewal; bold, energetic design fits mood.
+   ★ code 0.9 6-neon-night — Cyberpunk neon and defiance align with code's symbolism and triumphant discipline.
+   ★ save 0.9 2-stickers — Motivational, discipline, productivity align with song's themes
+   ★ gold 0.85 5-word-neon — Symbolizes transformation and value aligns with 'turn the void into gold'
+   ★ code 0.85 6-word-neon — fits techy urban vibe and neon symbolism with themes
+✦ published → planets/1st-of-the-month-walk-it-out/lexicon-reel.json
+── audit 1st-of-the-month-walk-it-out: 30 reel images
+  ✕ pruned lexicon/somebody/s0-2.webp (q=0.75 wm=0.3) — reroll s0#2 → bump 1
+✦ audit: 1 shows · 30 scanned (0 fresh-skipped) · 1 pruned · 0 misfits · 3 timing flags · 0 errors
+match-reel 1st-of-the-month-walk-it-out: 225 song words · 747 indexed candidates
+  stage A: 42 → judging 42
+✦ reel: 29 images (28 featured) → scripts/song-analysis/profiles/1st-of-the-month-walk-it-out/lexicon-reel.json
+   ★ walk 1 6-word-portrait — Perfect fit for triumphant, disciplined urban renewal imagery
+   ★ walk 1 3-word-portrait — Perfect fit for triumphant discipline and renewal themes
+   ★ gold 1 5-neon-night — Symbolizes transformation, resilience, and urban renewal aligns with song's themes
+   ★ different 1 2-word-portrait — Triumphant, self-reinvention, military precision, borough pride, cinematic lighting
+   ★ gold 0.95 5-word-neon — Urban rebirth, transformation, and triumph align with the song's themes of renewal and dis
+   ★ fast 0.95 4-word-portrait — Urgent, futuristic city aligns with triumph and resilience themes
+   ★ fast 0.95 6-word-neon — Urban neon aligns with borough pride and military precision; urgency matches triumphant di
+   ★ code 0.95 3-word-neon — Urban resilience, neon tech, military precision align with song's themes
+   ★ code 0.95 6-word-neon — Urban neon aligns with borough pride and triumphant mood
+   ★ soul 0.95 4-photo — Powerful embodiment of soul and resilience in a public, triumphant setting
+   ★ soul 0.95 1-stickers — Cultural identity, triumph, and renewal align with song's themes
+   ★ gold 0.95 1-pixel — Symbolizes triumph, discipline, and transformation aligning with song's themes
+✦ published → planets/1st-of-the-month-walk-it-out/lexicon-reel.json
+2026-07-17T01:28:27-04:00 · regen queue: somebody
+atelier: 1551 words · 19 jobs queued (gravity budgets h6/m2/l0, limit 100)
+  recipes: anime×1 · concept-art×3 · watercolor×1 · film-still×2 · cinema×1 · photo×2 · dream-collage×3 · poster×1 · oil-light×1 · word-portrait×3 · word-neon×1
+  [1/19] somebody s3#1 anime → lexicon/somebody/s3-2-anime.webp
+  [2/19] somebody s3#0 concept-art → lexicon/somebody/s3-1-concept-art.webp
+  [3/19] somebody s4#0 concept-art → lexicon/somebody/s4-1-concept-art.webp
+  [4/19] somebody s8#1 concept-art → lexicon/somebody/s8-2-concept-art.webp
+  [5/19] somebody s4#1 watercolor → lexicon/somebody/s4-2-watercolor.webp
+  [6/19] somebody s2#1 film-still → lexicon/somebody/s2-2-film-still.webp
+  [7/19] somebody s8#0 film-still → lexicon/somebody/s8-1-film-still.webp
+  [8/19] somebody s7#0 cinema → lexicon/somebody/s7-1-cinema.webp
+  [9/19] somebody s0#1 photo → lexicon/somebody/s0-2-photo-r1.webp
+  [10/19] somebody s7#1 photo → lexicon/somebody/s7-2-photo.webp
+  [11/19] somebody s5#0 dream-collage → lexicon/somebody/s5-1-dream-collage.webp
+  [12/19] somebody s6#0 dream-collage → lexicon/somebody/s6-1-dream-collage.webp
+  [13/19] somebody s6#1 poster → lexicon/somebody/s6-2-poster.webp
+  [14/19] somebody s9#0 dream-collage → lexicon/somebody/s9-1-dream-collage.webp
+  [15/19] somebody s10#1 oil-light → lexicon/somebody/s10-2-oil-light.webp
+  [16/19] somebody s2#0 word-portrait → lexicon/somebody/s2-1-word-portrait.webp
+  [17/19] somebody s5#1 word-portrait → lexicon/somebody/s5-2-word-portrait.webp
+  [18/19] somebody s9#1 word-portrait → lexicon/somebody/s9-2-word-portrait.webp
+  [19/19] somebody s10#0 word-neon → lexicon/somebody/s10-1-word-neon.webp
+
+atelier done: 19 rendered, 0 failed → lexicon.json updated + published
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×10 · manga-line×1 · concept-art×13 · 3d-toy×1 · chalkboard×2 · graphic-novel×2 · neon-sign×2 · papercut×3 · pixel×3 · stained-glass×3 · stickers×1 · storybook×1 · watercolor×3 · film-still×11 · analog×3 · cinema×10 · noir×2 · photo×12 · neon-night×4 · dream-collage×11 · poster×2 · oil-light×3 · dark-surreal×2 · word-portrait×12 · word-neon×3
+  [1/120] glow s9#0 anime → lexicon/glow/s9-1-anime.webp
+  [2/120] glow s10#5 anime → lexicon/glow/s10-6-anime.webp
+  [3/120] glow s13#3 anime → lexicon/glow/s13-4-anime.webp
+  [4/120] glow s15#1 anime → lexicon/glow/s15-2-anime.webp
+  [5/120] burn s0#5 anime → lexicon/burn/s0-6-anime.webp
+  [6/120] burn s2#2 anime → lexicon/burn/s2-3-anime.webp
+  [7/120] burn s3#1 anime → lexicon/burn/s3-2-anime.webp
+  [8/120] burn s4#4 anime → lexicon/burn/s4-5-anime.webp
+  [9/120] burn s6#1 anime → lexicon/burn/s6-2-anime.webp
+  [10/120] burn s8#3 anime → lexicon/burn/s8-4-anime.webp
+  [11/120] burn s3#2 manga-line → lexicon/burn/s3-3-manga-line.webp
+  [12/120] glow s7#4 concept-art → lexicon/glow/s7-5-concept-art.webp
+  [13/120] glow s8#1 concept-art → lexicon/glow/s8-2-concept-art.webp
+  [14/120] glow s10#0 concept-art → lexicon/glow/s10-1-concept-art.webp
+  [15/120] glow s11#1 concept-art → lexicon/glow/s11-2-concept-art.webp
+  [16/120] glow s14#4 concept-art → lexicon/glow/s14-5-concept-art.webp
+  [17/120] glow s15#0 concept-art → lexicon/glow/s15-1-concept-art.webp
+  [18/120] burn s0#4 concept-art → lexicon/burn/s0-5-concept-art.webp
+  [19/120] burn s1#2 concept-art → lexicon/burn/s1-3-concept-art.webp
+  [20/120] burn s2#1 concept-art → lexicon/burn/s2-2-concept-art.webp
+  [21/120] burn s4#3 concept-art → lexicon/burn/s4-4-concept-art.webp
+  [22/120] burn s5#5 concept-art → lexicon/burn/s5-6-concept-art.webp
+  [23/120] burn s6#0 concept-art → lexicon/burn/s6-1-concept-art.webp
+  [24/120] burn s8#2 concept-art → lexicon/burn/s8-3-concept-art.webp
+  [25/120] glow s8#3 3d-toy → lexicon/glow/s8-4-3d-toy.webp
+  [26/120] glow s11#5 chalkboard → lexicon/glow/s11-6-chalkboard.webp
+  [27/120] glow s13#1 chalkboard → lexicon/glow/s13-2-chalkboard.webp
+  [28/120] glow s10#4 graphic-novel → lexicon/glow/s10-5-graphic-novel.webp
+  [29/120] burn s3#0 graphic-novel → lexicon/burn/s3-1-graphic-novel.webp
+  [30/120] glow s10#2 neon-sign → lexicon/glow/s10-3-neon-sign.webp
+  [31/120] burn s1#4 neon-sign → lexicon/burn/s1-5-neon-sign.webp
+  [32/120] glow s8#2 papercut → lexicon/glow/s8-3-papercut.webp
+  [33/120] glow s11#4 papercut → lexicon/glow/s11-5-papercut.webp
+  [34/120] glow s13#0 papercut → lexicon/glow/s13-1-papercut.webp
+  [35/120] glow s8#4 pixel → lexicon/glow/s8-5-pixel.webp
+  [36/120] glow s10#1 pixel → lexicon/glow/s10-2-pixel.webp
+  [37/120] burn s1#3 pixel → lexicon/burn/s1-4-pixel.webp
+  [38/120] glow s10#3 stained-glass → lexicon/glow/s10-4-stained-glass.webp
+  [39/120] glow s13#2 stained-glass → lexicon/glow/s13-3-stained-glass.webp
+  [40/120] burn s1#5 stained-glass → lexicon/burn/s1-6-stained-glass.webp
+  [41/120] glow s8#5 stickers → lexicon/glow/s8-6-stickers.webp
+  [42/120] glow s11#3 storybook → lexicon/glow/s11-4-storybook.webp
+  [43/120] glow s7#5 watercolor → lexicon/glow/s7-6-watercolor.webp
+  [44/120] glow s11#2 watercolor → lexicon/glow/s11-3-watercolor.webp
+  [45/120] glow s14#5 watercolor → lexicon/glow/s14-6-watercolor.webp
+  [46/120] glow s7#2 film-still → lexicon/glow/s7-3-film-still.webp
+  [47/120] glow s8#0 film-still → lexicon/glow/s8-1-film-still.webp
+  [48/120] glow s9#5 film-still → lexicon/glow/s9-6-film-still.webp
+  [49/120] glow s12#5 film-still → lexicon/glow/s12-6-film-still.webp
+  [50/120] glow s14#2 film-still → lexicon/glow/s14-3-film-still.webp
+  [51/120] burn s0#3 film-still → lexicon/burn/s0-4-film-still.webp
+  [52/120] burn s1#1 film-still → lexicon/burn/s1-2-film-still.webp
+  [53/120] burn s2#0 film-still → lexicon/burn/s2-1-film-still.webp
+  [54/120] burn s4#2 film-still → lexicon/burn/s4-3-film-still.webp
+  [55/120] burn s5#4 film-still → lexicon/burn/s5-5-film-still.webp
+  [56/120] burn s8#1 film-still → lexicon/burn/s8-2-film-still.webp
+  [57/120] glow s7#3 analog → lexicon/glow/s7-4-analog.webp
+  [58/120] glow s11#0 analog → lexicon/glow/s11-1-analog.webp
+  [59/120] glow s14#3 analog → lexicon/glow/s14-4-analog.webp
+  [60/120] glow s5#1 cinema → lexicon/glow/s5-2-cinema.webp
+  [61/120] glow s9#1 cinema → lexicon/glow/s9-2-cinema.webp
+  [62/120] glow s13#4 cinema → lexicon/glow/s13-5-cinema.webp
+  [63/120] glow s15#2 cinema → lexicon/glow/s15-3-cinema.webp
+  [64/120] burn s2#3 cinema → lexicon/burn/s2-4-cinema.webp
+  [65/120] burn s3#3 cinema → lexicon/burn/s3-4-cinema.webp
+  [66/120] burn s3#4 noir → lexicon/burn/s3-5-noir.webp
+  [67/120] burn s4#5 cinema → lexicon/burn/s4-6-cinema.webp
+  [68/120] burn s5#0 cinema → lexicon/burn/s5-1-cinema.webp
+  [69/120] burn s6#2 cinema → lexicon/burn/s6-3-cinema.webp
+  [70/120] burn s7#0 noir → lexicon/burn/s7-1-noir.webp
+  [71/120] burn s8#4 cinema → lexicon/burn/s8-5-cinema.webp
+  [72/120] glow s5#2 photo → lexicon/glow/s5-3-photo.webp
+  [73/120] glow s5#3 neon-night → lexicon/glow/s5-4-neon-night.webp
+  [74/120] glow s6#0 neon-night → lexicon/glow/s6-1-neon-night.webp
+  [75/120] glow s9#2 photo → lexicon/glow/s9-3-photo.webp
+  [76/120] glow s12#0 neon-night → lexicon/glow/s12-1-neon-night.webp
+  [77/120] glow s13#5 photo → lexicon/glow/s13-6-photo.webp
+  [78/120] glow s15#3 photo → lexicon/glow/s15-4-photo.webp
+  [79/120] burn s0#0 photo → lexicon/burn/s0-1-photo.webp
+  [80/120] burn s2#4 photo → lexicon/burn/s2-5-photo.webp
+  [81/120] burn s3#5 photo → lexicon/burn/s3-6-photo.webp
+  [82/120] burn s5#1 photo → lexicon/burn/s5-2-photo.webp
+  [83/120] burn s6#3 photo → lexicon/burn/s6-4-photo.webp
+  [84/120] burn s7#1 photo → lexicon/burn/s7-2-photo.webp
+  [85/120] burn s7#2 neon-night → lexicon/burn/s7-3-neon-night.webp
+  [86/120] burn s8#5 photo → lexicon/burn/s8-6-photo.webp
+  [87/120] burn s9#0 photo → lexicon/burn/s9-1-photo.webp
+  [88/120] glow s5#4 dream-collage → lexicon/glow/s5-5-dream-collage.webp
+  [89/120] glow s5#5 poster → lexicon/glow/s5-6-poster.webp
+  [90/120] glow s6#1 dream-collage → lexicon/glow/s6-2-dream-collage.webp
+  [91/120] glow s6#2 poster → lexicon/glow/s6-3-poster.webp
+  [92/120] glow s9#3 dream-collage → lexicon/glow/s9-4-dream-collage.webp
+  [93/120] glow s12#1 dream-collage → lexicon/glow/s12-2-dream-collage.webp
+  [94/120] glow s15#4 dream-collage → lexicon/glow/s15-5-dream-collage.webp
+  [95/120] burn s0#1 dream-collage → lexicon/burn/s0-2-dream-collage.webp
+  [96/120] burn s2#5 dream-collage → lexicon/burn/s2-6-dream-collage.webp
+  [97/120] burn s4#0 dream-collage → lexicon/burn/s4-1-dream-collage.webp
+  [98/120] burn s5#2 dream-collage → lexicon/burn/s5-3-dream-collage.webp
+  [99/120] burn s6#4 dream-collage → lexicon/burn/s6-5-dream-collage.webp
+  [100/120] burn s7#3 dream-collage → lexicon/burn/s7-4-dream-collage.webp
+  [101/120] glow s6#5 oil-light → lexicon/glow/s6-6-oil-light.webp
+  [102/120] glow s7#1 oil-light → lexicon/glow/s7-2-oil-light.webp
+  [103/120] glow s12#4 dark-surreal → lexicon/glow/s12-5-dark-surreal.webp
+  [104/120] glow s14#1 oil-light → lexicon/glow/s14-2-oil-light.webp
+  [105/120] burn s1#0 dark-surreal → lexicon/burn/s1-1-dark-surreal.webp
+  [106/120] glow s6#3 word-portrait → lexicon/glow/s6-4-word-portrait.webp
+  [107/120] glow s6#4 word-neon → lexicon/glow/s6-5-word-neon.webp
+  [108/120] glow s7#0 word-portrait → lexicon/glow/s7-1-word-portrait.webp
+  [109/120] glow s9#4 word-portrait → lexicon/glow/s9-5-word-portrait.webp
+  [110/120] glow s12#2 word-portrait → lexicon/glow/s12-3-word-portrait.webp
+  [111/120] glow s12#3 word-neon → lexicon/glow/s12-4-word-neon.webp
+  [112/120] glow s14#0 word-portrait → lexicon/glow/s14-1-word-portrait.webp
+  [113/120] glow s15#5 word-portrait → lexicon/glow/s15-6-word-portrait.webp
+  [114/120] burn s0#2 word-portrait → lexicon/burn/s0-3-word-portrait.webp
+  [115/120] burn s4#1 word-portrait → lexicon/burn/s4-2-word-portrait.webp
+  [116/120] burn s5#3 word-portrait → lexicon/burn/s5-4-word-portrait.webp
+  [117/120] burn s6#5 word-portrait → lexicon/burn/s6-6-word-portrait.webp
+  [118/120] burn s7#4 word-portrait → lexicon/burn/s7-5-word-portrait.webp
+  [119/120] burn s7#5 word-neon → lexicon/burn/s7-6-word-neon.webp
+  [120/120] burn s8#0 word-portrait → lexicon/burn/s8-1-word-portrait.webp
+
+atelier done: 120 rendered, 0 failed → lexicon.json updated + published
+2026-07-17T01:52:25-04:00 · cycle 1: 139/1000 painted · 5 shows audited (1 reels built) · 1 pruned · GPU 48°C 13373MiB
+vision-worker: 1531 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: sky q=0.9 m=0.8)
+  20/300 (last: sky q=0.9 m=0.8)
+  30/300 (last: sky q=0.9 m=0.8)
+  40/300 (last: voice q=0.9 m=0.7)
+  50/300 (last: voice q=0.85 m=0.7)
+  60/300 (last: voice q=0.95 m=1)
+  70/300 (last: voice q=0.95 m=0.85)
+  80/300 (last: voice q=0.9 m=0.8)
+  90/300 (last: voice q=0.8 m=0.7)
+  100/300 (last: voice q=0.9 m=0.8)
+  110/300 (last: voice q=0.7 m=0.8)
+  120/300 (last: voice q=0.9 m=0.95)
+  130/300 (last: heart q=0.9 m=1)
+  140/300 (last: heart q=0.8 m=0.7)
+  150/300 (last: heart q=0.95 m=0.98)
+  160/300 (last: heart q=0.7 m=0.6)
+  170/300 (last: heart q=0.95 m=1)
+  180/300 (last: heart q=0.95 m=0.98)
+  190/300 (last: heart q=0.9 m=0.95)
+  200/300 (last: heart q=0.95 m=0.98)
+  210/300 (last: heart q=0.9 m=0.8)
+  220/300 (last: heart q=0.9 m=0.9)
+  230/300 (last: heart q=0.9 m=0.95)
+  240/300 (last: rhythm q=0.9 m=0.8)
+  250/300 (last: rhythm q=0.95 m=0.85)
+  260/300 (last: rhythm q=0.85 m=0.3)
+  270/300 (last: rhythm q=0.85 m=0.75)
+  280/300 (last: rhythm q=0.9 m=0.3)
+  290/300 (last: rhythm q=0.95 m=0.75)
+  300/300 (last: rhythm q=0.9 m=0.8)
+✦ vision index: 2452 readings (300 new, 0 failed) · 6 low-quality flagged
+2026-07-17T02:09:57-04:00 · building reel: 23-respuestas
+match-reel 23-respuestas: 209 song words · 10 indexed candidates
+  stage A: 3 → judging 3
+✦ reel: 3 images (1 featured) → scripts/song-analysis/profiles/23-respuestas/lexicon-reel.json
+   ★ respuestas 0.7 4-dream-collage — Symbolizes answers and chaos, fits emotional closure theme
+   · respuestas 0.6 2-cinema — Digital chaos contrasts with emotional closure but fits abstract themes
+   · respuestas 0.6 5-word-portrait — Image has hopeful, magical elements that contrast with song's melancholic, empowered mood.
+✦ published → planets/23-respuestas/lexicon-reel.json
+── audit 23-respuestas: 3 reel images
+  ✕ pruned lexicon/respuestas/s1-5-word-portrait.webp (q=0.9 wm=0.3) — reroll s1#5 → bump 1
+✦ audit: 1 shows · 3 scanned (0 fresh-skipped) · 1 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel 23-respuestas: 209 song words · 9 indexed candidates
+  stage A: 3 → judging 3
+✦ reel: 3 images (3 featured) → scripts/song-analysis/profiles/23-respuestas/lexicon-reel.json
+   ★ respuestas 0.95 4-dream-collage — Matches mood and themes with neon symbolism and emotional closure
+   ★ respuestas 0.85 2-cinema — Digital glitch art reflects unanswered questions and emotional weight
+   ★ respuestas 0.85 6-film-still — Matches mood and themes of introspection and emotional closure
+✦ published → planets/23-respuestas/lexicon-reel.json
+2026-07-17T02:10:35-04:00 · building reel: amor-de-verdad
+match-reel amor-de-verdad: 106 song words · 0 indexed candidates
+nothing to match — render + vision-index this song's words first
+· amor-de-verdad: no reel — skip
+✦ audit: 0 shows · 0 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel amor-de-verdad: 106 song words · 0 indexed candidates
+nothing to match — render + vision-index this song's words first
+2026-07-17T02:10:36-04:00 · building reel: between-the-stations
+match-reel between-the-stations: 134 song words · 522 indexed candidates
+  stage A: 17 → judging 17
+✦ reel: 17 images (14 featured) → scripts/song-analysis/profiles/between-the-stations/lexicon-reel.json
+   ★ rhythm 0.92 5-word-portrait — Image captures urban rhythm and contemplative movement aligns with song's subway metaphor 
+   ★ light 0.92 2-film-still — fits urban mood, neon light, fragmented reality align with song's themes
+   ★ light 0.92 3-neon-night — Neon glow and rain align with urban isolation and hope in the song's theme
+   ★ night 0.92 1-word-portrait — Captures nocturnal tranquility and urban solitude fitting the song's nighttime theme and m
+   ★ lights 0.92 2-concept-art — Symbolizes hope and resilience amid urban decay, aligns with song's themes of catharsis an
+   ★ lights 0.92 4-dream-collage — Captures urban isolation, hope in darkness, and city's heartbeat
+   ★ rhythm 0.92 1-word-neon — Neon 'rhythm' in urban alley matches song's urban nightlife and cathartic energy
+   ★ rhythm 0.92 4-manga-line — Chaotic energy and urban symbolism align with rhythm's pulse and subway metaphor.
+   ★ night 0.92 2-cinema — matches urban night theme, serenity amid city chaos, aligns with subway metaphor
+   ★ night 0.92 4-word-neon — fits urban night theme, neon symbolizes modernity, mood matches
+   ★ light 0.8 3-cinema — Captures urban solitude and transient beauty in a melancholic yet serene mood
+   ★ move 0.8 4-cinema — Captures urban solitude and transition aligning with journey and catharsis
+✦ published → planets/between-the-stations/lexicon-reel.json
+── audit between-the-stations: 17 reel images
+  ✕ pruned lexicon/light/s5-3-cinema.webp (q=0.2 wm=0.4) — reroll s5#3 → bump 1
+✦ audit: 1 shows · 17 scanned (0 fresh-skipped) · 1 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel between-the-stations: 134 song words · 521 indexed candidates
+  stage A: 17 → judging 17
+✦ reel: 17 images (17 featured) → scripts/song-analysis/profiles/between-the-stations/lexicon-reel.json
+   ★ rhythm 0.95 4-manga-line — Image captures subway chaos, light as rhythm, aligns with song's themes and mood
+   ★ light 0.95 2-film-still — Urban alley, neon lights, transitional space align with subway journey and cathartic relea
+   ★ rhythm 0.95 1-word-neon — Urban resilience, neon, rhythm, dancehall, transit symbolism align perfectly
+   ★ night 0.95 2-cinema — Bokeh lights and subway tunnel imagery align with nighttime urban exhaustion and respite t
+   ★ lights 0.92 5-word-portrait — Captures urban solitude, subway imagery, and hope amid exhaustion
+   ★ night 0.92 4-word-neon — Urban grit, neon symbolism, and emotional release align with song's themes
+   ★ move 0.92 4-cinema — Urban journey, respite, catharsis align with song's themes
+   ★ lights 0.92 4-dream-collage — Urban isolation, resilience, and stormy cityscape align with song's themes
+   ★ rhythm 0.92 5-word-portrait — Strong urban metaphor, rhythm as guiding force, aligns with song's themes
+   ★ lights 0.92 2-concept-art — Urban decay, flickering lights, resilience align with subway metaphor and cathartic mood
+   ★ move 0.92 5-photo — Captures urban exhaustion and determination in a gritty city setting
+   ★ night 0.92 1-word-portrait — Matches urban night theme, isolation, and respite in subway journey
+✦ published → planets/between-the-stations/lexicon-reel.json
+2026-07-17T02:12:40-04:00 · building reel: brooms-in-the-boiler-room
+match-reel brooms-in-the-boiler-room: 243 song words · 546 indexed candidates
+  stage A: 29 → judging 29
+✦ reel: 16 images (12 featured) → scripts/song-analysis/profiles/brooms-in-the-boiler-room/lexicon-reel.json
+   ★ boiler 0.95 4-dark-surreal — fits noir atmosphere, decay, hidden danger, ancient machinery
+   ★ boiler 0.95 3-dream-collage — Matches industrial decay and surreal elements of the song's corrupted boiler room
+   ★ boiler 0.95 1-dream-collage — Strong industrial decay and mechanical chaos match the song's dark, noir atmosphere and ma
+   ★ brooms 0.95 2-word-portrait — fits dark noir theme, skeletal brooms symbolize corruption and loss of control
+   ★ crazy 0.95 3-word-portrait — fits noir chaos, emotional turmoil, and thematic emphasis
+   ★ gold 0.9 6-word-portrait — Symbolizes greed and corruption in a dark, opulent setting
+   ★ brooms 0.9 1-manga-line — Ghostly broom fits magical corruption and noir chaos
+   ★ gold 0.85 4-graphic-novel — Corruption, greed, and chaos align with song's themes and mood.
+   ★ brooms 0.85 6-dream-collage — Matches magical, ominous tone and brooms as central symbols
+   ★ tap 0.8 4-graphic-novel — fits noir atmosphere, dangerous machinery, intense mood
+   ★ night 0.8 2-concept-art — Dark atmosphere, ancient evil, menacing tone fit the song's mood and themes
+   ★ crazy 0.7 5-word-portrait — Matches chaotic tone but lacks magical or noir elements
+✦ published → planets/brooms-in-the-boiler-room/lexicon-reel.json
+── audit brooms-in-the-boiler-room: 16 reel images
+✦ audit: 1 shows · 16 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 6 timing flags · 0 errors
+match-reel brooms-in-the-boiler-room: 243 song words · 546 indexed candidates
+  stage A: 29 → judging 29
+✦ reel: 17 images (15 featured) → scripts/song-analysis/profiles/brooms-in-the-boiler-room/lexicon-reel.json
+   ★ gold 1 6-word-portrait — Perfect fit with magical corruption, noir atmosphere, and symbolism of gold as corrupting 
+   ★ brooms 1 1-manga-line — Perfectly aligns with magical corruption and ominous atmosphere
+   ★ boiler 0.95 4-dark-surreal — Matches dark, magical corruption and noir atmosphere with cauldron as chaos source
+   ★ boiler 0.95 3-dream-collage — Strong alignment with magical corruption, noir atmosphere, and surreal chaos
+   ★ brooms 0.95 2-word-portrait — Strong alignment with magical corruption and noir atmosphere
+   ★ brooms 0.95 6-dream-collage — Matches magical corruption, ominous tone, and chaotic visuals
+   ★ crazy 0.95 5-word-portrait — fits noir atmosphere, magical chaos, and loss of control
+   ★ tap 0.95 1-word-portrait — fits noir atmosphere, magical corruption, and symbolic lighting
+   ★ boiler 0.95 1-dream-collage — Strongly aligns with magical corruption, noir atmosphere, and chaotic transformation
+   ★ crazy 0.95 3-word-portrait — fits noir atmosphere, corruption, and loss of control
+   ★ night 0.95 2-concept-art — matches noir atmosphere, magical corruption, and ominous tone
+   ★ night 0.95 1-dream-collage — matches noir atmosphere, corruption, and chaos
+✦ published → planets/brooms-in-the-boiler-room/lexicon-reel.json
+2026-07-17T02:14:44-04:00 · building reel: cairo-still-dancing
+match-reel cairo-still-dancing: 213 song words · 1069 indexed candidates
+  stage A: 41 → judging 41
+✦ reel: 32 images (28 featured) → scripts/song-analysis/profiles/cairo-still-dancing/lexicon-reel.json
+   ★ soul 0.95 4-photo — Powerful embodiment of soul and resilience in a public setting
+   ★ rhythm 0.95 3-photo — Powerful imagery of unity and resistance aligns with song's themes of resilience and rhyth
+   ★ rhythm 0.92 1-word-neon — Urban resilience, neon glow, rhythm symbolism align with song's themes
+   ★ lights 0.92 2-dark-surreal — Celebrates unity, hope, and resilience through light and crowd
+   ★ lights 0.92 2-concept-art — Symbolizes resilience, hope, and urban decay aligns with song's themes
+   ★ night 0.92 5-word-neon — Urban resilience, cinematic lighting, defiance in darkness align with song's themes
+   ★ night 0.92 1-word-neon — Urban resilience, neon symbolism, defiance in darkness align with song's themes
+   ★ sky 0.92 5-concept-art — cosmic wonder and connection align with resilience and unity themes
+   ★ fire 0.92 6-word-portrait — Symbolizes passion and resilience, fits Cairo's defiant, vibrant spirit
+   ★ sky 0.92 2-word-portrait — Symbolizes hope and resilience amid adversity, aligns with song's themes and mood
+   ★ sky 0.92 1 — Celestial joy and unity align with song's themes of resilience and defiance
+   ★ fire 0.92 1-photo — Symbolic fire as passion and unity fits Cairo's defiant, rhythmic spirit
+✦ published → planets/cairo-still-dancing/lexicon-reel.json
+── audit cairo-still-dancing: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel cairo-still-dancing: 213 song words · 1069 indexed candidates
+  stage A: 41 → judging 41
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/cairo-still-dancing/lexicon-reel.json
+   ★ lights 0.95 2-word-portrait — Image captures Cairo's night, resilience, unity, and defiance through lights and music
+   ★ rhythm 0.95 5-word-portrait — Image captures rhythm as life force in Cairo's streets, aligns with resilience and unity t
+   ★ lights 0.95 2-dark-surreal — Symbolizes resilience, unity, and defiance through light and community
+   ★ sky 0.95 1 — Defiant dancers under a twilight sky align with resilience, unity, and hope in adversity.
+   ★ rhythm 0.95 1-word-neon — Cinematic neon in Cairo alley aligns with song's themes of resilience, unity, and cultural
+   ★ lights 0.95 2-concept-art — Symbolizes resilience, unity, and hope in Cairo's context
+   ★ soul 0.95 4-photo — Powerful imagery aligns with soul protection, resilience, and cultural pride in Cairo.
+   ★ fire 0.95 6-word-portrait — Symbolizes resilience, defiance, and unity through fire imagery in Cairo's urban setting.
+   ★ walk 0.95 3-word-portrait — Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism
+   ★ sky 0.95 2-word-portrait — Symbolism aligns with resilience, hope, and defiance against adversity.
+   ★ move 0.95 5-photo — Image captures defiance, resilience, and unity in Cairo as described in the song.
+   ★ rhythm 0.95 3-photo — Powerful imagery of unity, resilience, and rhythm aligns perfectly with the song's themes 
+✦ published → planets/cairo-still-dancing/lexicon-reel.json
+2026-07-17T02:18:16-04:00 · regen queue: respuestas,light
+atelier: 1551 words · 2 jobs queued (gravity budgets h6/m2/l0, limit 100)
+  recipes: film-still×1 · photo×1
+  [1/2] respuestas s1#4 film-still → lexicon/respuestas/s1-5-film-still-r1.webp
+  [2/2] light s5#2 photo → lexicon/light/s5-3-photo-r1.webp
+
+atelier done: 2 rendered, 0 failed → lexicon.json updated + published
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×14 · manga-line×3 · concept-art×13 · chalkboard×1 · graphic-novel×3 · neon-sign×6 · papercut×1 · pixel×3 · stained-glass×5 · stickers×2 · film-still×11 · cinema×13 · noir×2 · photo×12 · neon-night×4 · dream-collage×12 · dark-surreal×2 · word-portrait×11 · word-neon×2
+  [1/120] burn s9#5 anime → lexicon/burn/s9-6-anime.webp
+  [2/120] burn s10#1 anime → lexicon/burn/s10-2-anime.webp
+  [3/120] burn s12#4 anime → lexicon/burn/s12-5-anime.webp
+  [4/120] burn s13#2 anime → lexicon/burn/s13-3-anime.webp
+  [5/120] dark s1#0 anime → lexicon/dark/s1-1-anime.webp
+  [6/120] dark s2#3 anime → lexicon/dark/s2-4-anime.webp
+  [7/120] dark s4#2 anime → lexicon/dark/s4-3-anime.webp
+  [8/120] dark s5#4 anime → lexicon/dark/s5-5-anime.webp
+  [9/120] dark s6#5 anime → lexicon/dark/s6-6-anime.webp
+  [10/120] dark s7#3 anime → lexicon/dark/s7-4-anime.webp
+  [11/120] dark s9#4 anime → lexicon/dark/s9-5-anime.webp
+  [12/120] dark s10#2 anime → lexicon/dark/s10-3-anime.webp
+  [13/120] dark s11#2 anime → lexicon/dark/s11-3-anime.webp
+  [14/120] dark s14#1 anime → lexicon/dark/s14-2-anime.webp
+  [15/120] dark s1#1 manga-line → lexicon/dark/s1-2-manga-line.webp
+  [16/120] dark s2#4 manga-line → lexicon/dark/s2-5-manga-line.webp
+  [17/120] dark s5#5 manga-line → lexicon/dark/s5-6-manga-line.webp
+  [18/120] burn s9#4 concept-art → lexicon/burn/s9-5-concept-art.webp
+  [19/120] burn s10#0 concept-art → lexicon/burn/s10-1-concept-art.webp
+  [20/120] burn s11#5 concept-art → lexicon/burn/s11-6-concept-art.webp
+  [21/120] burn s12#3 concept-art → lexicon/burn/s12-4-concept-art.webp
+  [22/120] burn s13#1 concept-art → lexicon/burn/s13-2-concept-art.webp
+  [23/120] dark s3#1 concept-art → lexicon/dark/s3-2-concept-art.webp
+  [24/120] dark s6#4 concept-art → lexicon/dark/s6-5-concept-art.webp
+  [25/120] dark s8#5 concept-art → lexicon/dark/s8-6-concept-art.webp
+  [26/120] dark s9#3 concept-art → lexicon/dark/s9-4-concept-art.webp
+  [27/120] dark s10#1 concept-art → lexicon/dark/s10-2-concept-art.webp
+  [28/120] dark s12#5 concept-art → lexicon/dark/s12-6-concept-art.webp
+  [29/120] dark s13#2 concept-art → lexicon/dark/s13-3-concept-art.webp
+  [30/120] dark s14#0 concept-art → lexicon/dark/s14-1-concept-art.webp
+  [31/120] dark s7#1 chalkboard → lexicon/dark/s7-2-chalkboard.webp
+  [32/120] dark s2#2 graphic-novel → lexicon/dark/s2-3-graphic-novel.webp
+  [33/120] dark s3#5 graphic-novel → lexicon/dark/s3-6-graphic-novel.webp
+  [34/120] dark s5#3 graphic-novel → lexicon/dark/s5-4-graphic-novel.webp
+  [35/120] dark s2#0 neon-sign → lexicon/dark/s2-1-neon-sign.webp
+  [36/120] dark s3#3 neon-sign → lexicon/dark/s3-4-neon-sign.webp
+  [37/120] dark s4#1 neon-sign → lexicon/dark/s4-2-neon-sign.webp
+  [38/120] dark s5#1 neon-sign → lexicon/dark/s5-2-neon-sign.webp
+  [39/120] dark s11#1 neon-sign → lexicon/dark/s11-2-neon-sign.webp
+  [40/120] dark s13#4 neon-sign → lexicon/dark/s13-5-neon-sign.webp
+  [41/120] dark s7#0 papercut → lexicon/dark/s7-1-papercut.webp
+  [42/120] dark s3#2 pixel → lexicon/dark/s3-3-pixel.webp
+  [43/120] dark s5#0 pixel → lexicon/dark/s5-1-pixel.webp
+  [44/120] dark s13#3 pixel → lexicon/dark/s13-4-pixel.webp
+  [45/120] dark s2#1 stained-glass → lexicon/dark/s2-2-stained-glass.webp
+  [46/120] dark s3#4 stained-glass → lexicon/dark/s3-5-stained-glass.webp
+  [47/120] dark s5#2 stained-glass → lexicon/dark/s5-3-stained-glass.webp
+  [48/120] dark s7#2 stained-glass → lexicon/dark/s7-3-stained-glass.webp
+  [49/120] dark s13#5 stained-glass → lexicon/dark/s13-6-stained-glass.webp
+  [50/120] dark s4#0 stickers → lexicon/dark/s4-1-stickers.webp
+  [51/120] dark s11#0 stickers → lexicon/dark/s11-1-stickers.webp
+  [52/120] burn s9#3 film-still → lexicon/burn/s9-4-film-still.webp
+  [53/120] burn s11#4 film-still → lexicon/burn/s11-5-film-still.webp
+  [54/120] burn s12#2 film-still → lexicon/burn/s12-3-film-still.webp
+  [55/120] burn s13#0 film-still → lexicon/burn/s13-1-film-still.webp
+  [56/120] dark s3#0 film-still → lexicon/dark/s3-1-film-still.webp
+  [57/120] dark s6#3 film-still → lexicon/dark/s6-4-film-still.webp
+  [58/120] dark s8#4 film-still → lexicon/dark/s8-5-film-still.webp
+  [59/120] dark s9#2 film-still → lexicon/dark/s9-3-film-still.webp
+  [60/120] dark s10#0 film-still → lexicon/dark/s10-1-film-still.webp
+  [61/120] dark s12#4 film-still → lexicon/dark/s12-5-film-still.webp
+  [62/120] dark s13#1 film-still → lexicon/dark/s13-2-film-still.webp
+  [63/120] burn s10#2 cinema → lexicon/burn/s10-3-cinema.webp
+  [64/120] burn s11#0 cinema → lexicon/burn/s11-1-cinema.webp
+  [65/120] burn s12#5 cinema → lexicon/burn/s12-6-cinema.webp
+  [66/120] burn s13#3 cinema → lexicon/burn/s13-4-cinema.webp
+  [67/120] dark s0#0 noir → lexicon/dark/s0-1-noir.webp
+  [68/120] dark s1#2 cinema → lexicon/dark/s1-3-cinema.webp
+  [69/120] dark s1#3 noir → lexicon/dark/s1-4-noir.webp
+  [70/120] dark s2#5 cinema → lexicon/dark/s2-6-cinema.webp
+  [71/120] dark s4#3 cinema → lexicon/dark/s4-4-cinema.webp
+  [72/120] dark s7#4 cinema → lexicon/dark/s7-5-cinema.webp
+  [73/120] dark s8#0 cinema → lexicon/dark/s8-1-cinema.webp
+  [74/120] dark s9#5 cinema → lexicon/dark/s9-6-cinema.webp
+  [75/120] dark s10#3 cinema → lexicon/dark/s10-4-cinema.webp
+  [76/120] dark s11#3 cinema → lexicon/dark/s11-4-cinema.webp
+  [77/120] dark s14#2 cinema → lexicon/dark/s14-3-cinema.webp
+  [78/120] burn s10#3 photo → lexicon/burn/s10-4-photo.webp
+  [79/120] burn s11#1 photo → lexicon/burn/s11-2-photo.webp
+  [80/120] burn s13#4 photo → lexicon/burn/s13-5-photo.webp
+  [81/120] dark s0#1 photo → lexicon/dark/s0-2-photo.webp
+  [82/120] dark s0#2 neon-night → lexicon/dark/s0-3-neon-night.webp
+  [83/120] dark s1#4 photo → lexicon/dark/s1-5-photo.webp
+  [84/120] dark s1#5 neon-night → lexicon/dark/s1-6-neon-night.webp
+  [85/120] dark s4#4 photo → lexicon/dark/s4-5-photo.webp
+  [86/120] dark s4#5 neon-night → lexicon/dark/s4-6-neon-night.webp
+  [87/120] dark s6#0 photo → lexicon/dark/s6-1-photo.webp
+  [88/120] dark s7#5 photo → lexicon/dark/s7-6-photo.webp
+  [89/120] dark s8#1 photo → lexicon/dark/s8-2-photo.webp
+  [90/120] dark s10#4 photo → lexicon/dark/s10-5-photo.webp
+  [91/120] dark s11#4 photo → lexicon/dark/s11-5-photo.webp
+  [92/120] dark s11#5 neon-night → lexicon/dark/s11-6-neon-night.webp
+  [93/120] dark s14#3 photo → lexicon/dark/s14-4-photo.webp
+  [94/120] burn s9#1 dream-collage → lexicon/burn/s9-2-dream-collage.webp
+  [95/120] burn s10#4 dream-collage → lexicon/burn/s10-5-dream-collage.webp
+  [96/120] burn s11#2 dream-collage → lexicon/burn/s11-3-dream-collage.webp
+  [97/120] burn s12#0 dream-collage → lexicon/burn/s12-1-dream-collage.webp
+  [98/120] burn s13#5 dream-collage → lexicon/burn/s13-6-dream-collage.webp
+  [99/120] dark s0#3 dream-collage → lexicon/dark/s0-4-dream-collage.webp
+  [100/120] dark s6#1 dream-collage → lexicon/dark/s6-2-dream-collage.webp
+  [101/120] dark s8#2 dream-collage → lexicon/dark/s8-3-dream-collage.webp
+  [102/120] dark s9#0 dream-collage → lexicon/dark/s9-1-dream-collage.webp
+  [103/120] dark s10#5 dream-collage → lexicon/dark/s10-6-dream-collage.webp
+  [104/120] dark s12#0 dream-collage → lexicon/dark/s12-1-dream-collage.webp
+  [105/120] dark s14#4 dream-collage → lexicon/dark/s14-5-dream-collage.webp
+  [106/120] dark s12#3 dark-surreal → lexicon/dark/s12-4-dark-surreal.webp
+  [107/120] dark s13#0 dark-surreal → lexicon/dark/s13-1-dark-surreal.webp
+  [108/120] burn s9#2 word-portrait → lexicon/burn/s9-3-word-portrait.webp
+  [109/120] burn s10#5 word-portrait → lexicon/burn/s10-6-word-portrait.webp
+  [110/120] burn s11#3 word-portrait → lexicon/burn/s11-4-word-portrait.webp
+  [111/120] burn s12#1 word-portrait → lexicon/burn/s12-2-word-portrait.webp
+  [112/120] dark s0#4 word-portrait → lexicon/dark/s0-5-word-portrait.webp
+  [113/120] dark s0#5 word-neon → lexicon/dark/s0-6-word-neon.webp
+  [114/120] dark s6#2 word-portrait → lexicon/dark/s6-3-word-portrait.webp
+  [115/120] dark s8#3 word-portrait → lexicon/dark/s8-4-word-portrait.webp
+  [116/120] dark s9#1 word-portrait → lexicon/dark/s9-2-word-portrait.webp
+  [117/120] dark s12#1 word-portrait → lexicon/dark/s12-2-word-portrait.webp
+  [118/120] dark s12#2 word-neon → lexicon/dark/s12-3-word-neon.webp
+  [119/120] dark s14#5 word-portrait → lexicon/dark/s14-6-word-portrait.webp
+  [120/120] dark s15#0 word-portrait → lexicon/dark/s15-1-word-portrait.webp
+
+atelier done: 120 rendered, 0 failed → lexicon.json updated + published
+2026-07-17T02:35:39-04:00 · cycle 2: 261/1000 painted · 10 shows audited (6 reels built) · 3 pruned · GPU 47°C 13339MiB
+vision-worker: 1353 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: rhythm q=0.9 m=0.1)
+  20/300 (last: rhythm q=0.85 m=0.6)
+  30/300 (last: rhythm q=0.95 m=0.98)
+  40/300 (last: rhythm q=0.9 m=0.85)
+  50/300 (last: slow q=0.9 m=0.85)
+  60/300 (last: slow q=0.9 m=0.8)
+  70/300 (last: slow q=0.95 m=0.98)
+  80/300 (last: slow q=0.9 m=0.8)
+  90/300 (last: slow q=0.9 m=0.8)
+  100/300 (last: slow q=0.95 m=0.98)
+  110/300 (last: slow q=0.9 m=0.7)
+  120/300 (last: slow q=0.85 m=0.7)
+  130/300 (last: slow q=1 m=1)
+  140/300 (last: slow q=0.8 m=0.7)
+  150/300 (last: slow q=0.9 m=0.7)
+  160/300 (last: slow q=0.9 m=1)
+  170/300 (last: slow q=0.9 m=0.9)
+  180/300 (last: love q=0.9 m=0.7)
+  190/300 (last: love q=0.95 m=0.95)
+  200/300 (last: love q=0.95 m=1)
+  210/300 (last: love q=0.9 m=0.9)
+  220/300 (last: love q=0.9 m=0.3)
+  230/300 (last: love q=0.95 m=0.9)
+  240/300 (last: love q=0.95 m=0.98)
+  250/300 (last: love q=0.9 m=1)
+  260/300 (last: love q=0.9 m=0.95)
+  270/300 (last: love q=0.95 m=0.9)
+  280/300 (last: love q=1 m=1)
+  290/300 (last: love q=0.95 m=0.98)
+  300/300 (last: cold q=0.85 m=0.9)
+✦ vision index: 2750 readings (300 new, 0 failed) · 6 low-quality flagged
+2026-07-17T02:53:30-04:00 · building reel: ceasefire-in-the-static-data-storm-version
+match-reel ceasefire-in-the-static-data-storm-version: 176 song words · 804 indexed candidates
+  stage A: 37 → judging 37
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/ceasefire-in-the-static-data-storm-version/lexicon-reel.json
+   ★ code 0.95 6-film-still — fits digital themes, surreal and intense mood aligns with anxiety and peace
+   ★ code 0.95 1-dream-collage — fits digital decay, chaos, and surrealism of the song
+   ★ storm 0.95 3-word-portrait — storm symbolizes inner turmoil, ruins reflect emotional wreckage
+   ★ code 0.95 5-photo — fits digital anxiety and code symbolism in a melancholic mood
+   ★ static 0.95 5-cinema — evokes digital decay and melancholy fitting the song's theme
+   ★ storm 0.95 6-concept-art — storm symbolizes emotional turmoil, fits digital anxiety and isolation themes
+   ★ storm 0.95 1-dream-collage — storm symbolizes emotional turmoil, fits digital overload and anxiety themes
+   ★ static 0.95 4-word-portrait — fits mood and themes of isolation and digital noise
+   ★ heart 0.95 1 — fits mood and themes of emotional fragmentation and digital overload
+   ★ heart 0.95 1-photo — evokes emotional vulnerability and hidden identities in a digital context
+   ★ soul 0.95 6-word-portrait — matches melancholic mood, symbolism of soul and rain
+   ★ silence 0.95 2 — matches melancholic mood and themes of hopelessness and silence
+✦ published → planets/ceasefire-in-the-static-data-storm-version/lexicon-reel.json
+── audit ceasefire-in-the-static-data-storm-version: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 17 timing flags · 0 errors
+match-reel ceasefire-in-the-static-data-storm-version: 176 song words · 804 indexed candidates
+  stage A: 37 → judging 37
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/ceasefire-in-the-static-data-storm-version/lexicon-reel.json
+   ★ heart 1 1-photo — perfectly aligns with digital overload and psychological weight
+   ★ storm 1 1-dream-collage — Perfectly aligns with digital chaos and melancholic mood
+   ★ code 1 5-photo — Perfectly aligns with digital decay and anxiety themes
+   ★ ceasefire 0.95 3-word-portrait — Strong symbolism, mood matches, visual ties to themes
+   ★ night 0.95 3-word-portrait — matches digital anxiety, suburban loneliness, and Gothic R&B mood
+   ★ voice 0.95 5-word-portrait — fits digital anxiety, identity, and melancholic mood
+   ★ walking 0.95 2 — matches melancholic mood, isolation, digital chaos symbolism
+   ★ night 0.95 3-word-portrait — matches digital anxiety, melancholy, and Gothic atmosphere
+   ★ walking 0.95 1 — matches melancholic mood, solitude in digital chaos
+   ★ night 0.95 1-word-portrait — matches digital anxiety, urban isolation, and melancholic mood
+   ★ static 0.95 4-word-portrait — fits mood and themes of isolation and digital chaos
+   ★ code 0.95 6-film-still — fits digital anxiety, glitch art, and melancholic mood
+✦ published → planets/ceasefire-in-the-static-data-storm-version/lexicon-reel.json
+2026-07-17T02:56:48-04:00 · building reel: cocktails-and-code
+match-reel cocktails-and-code: 243 song words · 980 indexed candidates
+  stage A: 43 → judging 43
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/cocktails-and-code/lexicon-reel.json
+   ★ code 0.95 2-word-portrait — late-night coding, focus, creative intensity align with song's themes
+   ★ code 0.95 2 — fits late-night coding theme, mood, and digital alchemy
+   ★ gold 0.95 2-anime — Celestial gold aligns with nocturnal transformation and digital alchemy
+   ★ soul 0.95 6-neon-sign — fits nocturnal, urban, soulful, digital themes
+   ★ rhythm 0.95 3-neon-sign — fits nocturnal tech vibe, digital pulse, urban energy
+   ★ soul 0.95 1-word-neon — Neon signs, urban alley, nocturnal mood align with song's themes
+   ★ night 0.9 1-word-portrait — Captures nocturnal mood, urban solitude, and digital glow
+   ★ gold 0.9 5-anime — fits nocturnal, transformative, opulent mood and themes
+   ★ sky 0.9 2-word-neon — fits nocturnal, urban, surreal mood and themes
+   ★ soul 0.9 5-word-portrait — Cosmic unity and digital soul align with nocturnal tech themes and self-empowerment
+   ★ rhythm 0.9 2-oil-light — fits nocturnal, creative energy, light in darkness, abstract digital art
+   ★ rhythm 0.9 6-word-portrait — fits nocturnal focus, rhythm, and sophistication
+✦ published → planets/cocktails-and-code/lexicon-reel.json
+── audit cocktails-and-code: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel cocktails-and-code: 243 song words · 980 indexed candidates
+  stage A: 43 → judging 43
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/cocktails-and-code/lexicon-reel.json
+   ★ fire 0.95 2-dark-surreal — Symbolizes code as fire, fits nocturnal focus and digital alchemy
+   ★ rhythm 0.95 2-oil-light — fits nocturnal focus, digital alchemy, and technological hope
+   ★ gold 0.95 1-dream-collage — Symbolizes transformation, aligns with digital alchemy and late-night focus
+   ★ code 0.95 5-word-portrait — Matches late-night coding, digital alchemy, and empowerment themes
+   ★ night 0.95 3-word-portrait — Captures nocturnal solitude and urban contemplation with cinematic lighting
+   ★ gold 0.95 2-anime — fits nocturnal, transformation, digital alchemy, and hope
+   ★ summer 0.95 3-word-neon — fits nocturnal, urban, digital creativity themes
+   ★ night 0.95 1-word-portrait — Captures nocturnal focus, urban solitude, and digital alchemy
+   ★ code 0.95 2-word-portrait — fits late-night coding theme, mood, and symbolism
+   ★ gold 0.95 5-anime — Symbolizes transformation, aligns with digital alchemy and late-night focus
+   ★ move 0.95 2-word-portrait — fits mood, themes, and visual symbolism of late-night focus and determination
+   ★ code 0.95 2 — fits late-night focus, urban solitude, digital creation
+✦ published → planets/cocktails-and-code/lexicon-reel.json
+2026-07-17T03:00:07-04:00 · building reel: days-drift-by
+match-reel days-drift-by: 73 song words · 376 indexed candidates
+  stage A: 14 → judging 14
+✦ reel: 14 images (13 featured) → scripts/song-analysis/profiles/days-drift-by/lexicon-reel.json
+   ★ sky 0.95 5-photo — matches ethereal mood, melancholic transience, and sky symbolism
+   ★ slow 0.95 1-word-portrait — Calm lake, mist, and slow text match ethereal and melancholic mood
+   ★ slow 0.95 6-watercolor — matches ethereal mood, mist, river, slowness of time
+   ★ drift 0.95 5-watercolor — Ethereal, melancholic, and transient imagery aligns perfectly with the song's themes and m
+   ★ drift 0.95 4-concept-art — Ethereal forest matches song's mood and themes of time and nature
+   ★ sky 0.9 2-photo — Matches ethereal mood, melancholy, and transience of time
+   ★ slow 0.9 5-word-portrait — Matches ethereal mood, time passage theme, calm and contemplative
+   ★ light 0.9 6-cinema — Ethereal light, melancholic mood, and transience align with song's themes
+   ★ drift 0.9 3-cinema — Matches ethereal, melancholic, and transient mood
+   ★ light 0.85 5-word-portrait — Ethereal light in urban noir setting matches song's mood and themes
+   ★ sky 0.85 5-word-portrait — Ethereal and cinematic mood matches with sky imagery and dreamy atmosphere
+   ★ light 0.85 5-cinema — matches ethereal mood, noir urban setting, and melancholic light
+✦ published → planets/days-drift-by/lexicon-reel.json
+── audit days-drift-by: 14 reel images
+  ✕ pruned lexicon/light/s4-5-cinema.webp (q=0.3 wm=0.8) — reroll s4#5 → bump 1
+✦ audit: 1 shows · 14 scanned (0 fresh-skipped) · 1 pruned · 0 misfits · 3 timing flags · 0 errors
+match-reel days-drift-by: 73 song words · 375 indexed candidates
+  stage A: 14 → judging 14
+✦ reel: 14 images (14 featured) → scripts/song-analysis/profiles/days-drift-by/lexicon-reel.json
+   ★ sky 1 5-photo — Perfectly aligns with ethereal, melancholic, and cinematic themes.
+   ★ sky 1 2-photo — Perfectly aligns with song's ethereal, melancholic, cinematic mood and themes.
+   ★ clouds 0.95 2 — matches ethereal, melancholic, and transience themes
+   ★ slow 0.95 1-word-portrait — Ethereal, cinematic, and melancholic atmosphere aligns perfectly with the song's themes.
+   ★ clouds 0.95 1 — matches ethereal, melancholic, and cinematic tone with transience theme
+   ★ sky 0.95 5-word-portrait — Ethereal, cinematic, and symbolic of escape and transience
+   ★ light 0.95 5-word-portrait — Ethereal, melancholic, and cinematic elements align perfectly with the song's themes and m
+   ★ light 0.95 6-cinema — Ethereal light over a misty river matches song's melancholic, cinematic mood and themes
+   ★ slow 0.95 5-word-portrait — matches ethereal, melancholic, and introspective mood
+   ★ light 0.95 3-cinema — Ethereal light, transience, melancholy, and cinematic atmosphere align perfectly.
+   ★ slow 0.95 6-watercolor — matches ethereal mood, mist and river symbolism align with song's themes
+   ★ drift 0.95 5-watercolor — matches ethereal mood, misty river symbolizes time passing, serene natural escape
+✦ published → planets/days-drift-by/lexicon-reel.json
+2026-07-17T03:01:40-04:00 · building reel: different-this-summer
+match-reel different-this-summer: 282 song words · 1050 indexed candidates
+  stage A: 53 → judging 53
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/different-this-summer/lexicon-reel.json
+   ★ light 0.95 5-word-portrait — Symbolizes hope and clarity aligning with self-empowerment and drive
+   ★ sky 0.95 3-word-portrait — Aspirational sky imagery aligns with self-empowerment and optimism
+   ★ light 0.95 4-word-portrait — Symbolizes clarity and guidance in a transformative journey
+   ★ sky 0.95 2-word-portrait — Serene and hopeful sky aligns with optimistic drive and clarity of self-empowerment
+   ★ lights 0.95 2-dark-surreal — glowing lights symbolize motivation and unity align with song's themes
+   ★ night 0.95 1-word-portrait — Aligns with neon lights, discipline at night, urban solitude and hopeful drive
+   ★ lights 0.95 3-word-portrait — Matches neon lights, energy, and creative atmosphere of the song
+   ★ rhythm 0.95 5-neon-sign — Urban neon energy matches summer drive and rhythm theme
+   ★ rhythm 0.95 4-word-neon — fits urban energy, neon symbolism, and rhythm theme
+   ★ different 0.95 2-word-portrait — Triumphant stage image aligns with self-empowerment and transformation themes.
+   ★ different 0.95 5-word-portrait — Symbolizes renewal and individuality through light and typography
+   ★ heat 0.95 5-word-portrait — Matches energetic summer anthem with stage heat and passion
+✦ published → planets/different-this-summer/lexicon-reel.json
+── audit different-this-summer: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel different-this-summer: 282 song words · 1050 indexed candidates
+  stage A: 53 → judging 53
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/different-this-summer/lexicon-reel.json
+   ★ different 1 2-word-portrait — Image aligns with empowerment, optimism, and transformation in the song.
+   ★ lights 0.95 3-word-portrait — Neon lights symbolize urgency and action, aligning with summer transformation and self-emp
+   ★ sky 0.95 3-word-portrait — Matches optimistic drive and aspiration themes
+   ★ sky 0.95 5-word-portrait — Matches summer optimism and freedom themes
+   ★ heart 0.95 6-word-portrait — Symbolizes inner drive and passion aligning with self-empowerment and transformation theme
+   ★ lights 0.95 2-word-portrait — Aligns with neon lights as self-empowerment and energetic summer transformation
+   ★ sky 0.95 2-word-portrait — Optimistic and hopeful imagery aligns with the song's theme of transformation and self-emp
+   ★ light 0.95 4-word-portrait — Symbolizes hope and clarity aligning with self-empowerment and drive
+   ★ heat 0.95 2-word-portrait — Matches summer energy, drive, and transformation through vibrant visuals and red light sym
+   ★ summer 0.95 4-photo — Confident beach imagery aligns with self-empowerment and summer transformation
+   ★ lights 0.95 2-dark-surreal — Neon lights and crowd energy align with summer night motivation and self-empowerment theme
+   ★ light 0.95 5-word-portrait — Symbolizes hope and clarity aligning with self-empowerment and new beginnings
+✦ published → planets/different-this-summer/lexicon-reel.json
+2026-07-17T03:05:41-04:00 · building reel: fast-enough
+match-reel fast-enough: 129 song words · 990 indexed candidates
+  stage A: 31 → judging 31
+✦ reel: 28 images (26 featured) → scripts/song-analysis/profiles/fast-enough/lexicon-reel.json
+   ★ lights 1 1-anime — Perfectly matches futuristic city lights and energetic vibe
+   ★ fast 0.95 5-word-portrait — Matches high-speed energy, urban futuristic vibe, and bold visuals
+   ★ fast 0.95 5-film-still — Matches futuristic city, speed, and energy of the song
+   ★ fast 0.95 4-word-portrait — Futuristic, energetic, and urban elements align perfectly with the song's themes and mood.
+   ★ heart 0.95 6-word-neon — Matches neon urban romance and futuristic energy
+   ★ night 0.95 2-word-portrait — Matches futuristic, nighttime urban vibe and seductive energy of the song
+   ★ night 0.95 6-word-portrait — Matches futuristic urban vibe, neon lights, confident imagery align with song's playful en
+   ★ heart 0.9 3-word-neon — Matches futuristic romance, urban vibe, and neon aesthetics
+   ★ heart 0.9 2-word-neon — Matches neon urban romance and nostalgic vibe
+   ★ sky 0.9 3-word-neon — fits futuristic, vibrant, nostalgic urban mood
+   ★ sky 0.9 5-word-portrait — Matches futuristic, playful, summer sky imagery and mood
+   ★ lights 0.9 4-film-still — matches futuristic city lights, neon, and cosmic wonder
+✦ published → planets/fast-enough/lexicon-reel.json
+── audit fast-enough: 28 reel images
+  ✕ pruned lexicon/slow/s10-2-word-neon.webp (q=0.9 wm=0.3) — reroll s10#2 → bump 1
+✦ audit: 1 shows · 28 scanned (0 fresh-skipped) · 1 pruned · 1 misfits · 0 timing flags · 0 errors
+match-reel fast-enough: 129 song words · 989 indexed candidates
+  stage A: 31 → judging 31
+✦ reel: 27 images (27 featured) → scripts/song-analysis/profiles/fast-enough/lexicon-reel.json
+   ★ lights 1 1-anime — Perfectly aligns with futuristic city lights and high-energy vibe
+   ★ fast 1 4-word-portrait — Perfectly aligns with futuristic city, speed, and playful energy
+   ★ fast 1 5-film-still — Perfectly aligns with futuristic romance and high-speed energy
+   ★ light 1 2-anime — Perfectly aligns with futuristic romance and high-speed energy
+   ★ light 1 1-anime — Perfectly aligns with futuristic romance and high-speed pursuit themes.
+   ★ fast 1 5-word-portrait — Perfectly aligns with futuristic, high-speed romance and energetic mood.
+   ★ night 1 4-film-still — Perfectly matches futuristic romance, high-speed energy, and nostalgic summer vibes.
+   ★ night 0.95 6-word-portrait — Matches futuristic romance, neon gaming vibe, and high-energy urban scene
+   ★ sky 0.95 3-word-neon — matches futuristic city, neon, playful energy, and gaming nostalgia
+   ★ lights 0.95 4-film-still — fits futuristic romance, city lights, nostalgic gaming vibe
+   ★ heart 0.95 3-word-neon — Fits futuristic, energetic, and nostalgic themes with neon heart and urban setting
+   ★ save 0.95 3-anime — fits futuristic romance, high-speed energy, and retro gaming aesthetic
+✦ published → planets/fast-enough/lexicon-reel.json
+2026-07-17T03:08:41-04:00 · regen queue: light,slow
+atelier: 1551 words · 2 jobs queued (gravity budgets h6/m2/l0, limit 100)
+  recipes: photo×1 · oil-light×1
+  [1/2] light s4#4 photo → lexicon/light/s4-5-photo-r1.webp
+  [2/2] slow s10#1 oil-light → lexicon/slow/s10-2-oil-light-r1.webp
+
+atelier done: 2 rendered, 0 failed → lexicon.json updated + published
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×10 · manga-line×2 · concept-art×13 · 3d-toy×2 · chalkboard×2 · neon-sign×3 · papercut×4 · pixel×3 · stickers×2 · storybook×1 · watercolor×2 · film-still×11 · analog×3 · cinema×13 · noir×1 · photo×12 · neon-night×3 · dream-collage×11 · poster×3 · dark-surreal×1 · oil-light×4 · word-portrait×10 · word-neon×4
+  [1/120] dark s15#3 anime → lexicon/dark/s15-4-anime.webp
+  [2/120] fall s0#0 anime → lexicon/fall/s0-1-anime.webp
+  [3/120] fall s1#0 anime → lexicon/fall/s1-1-anime.webp
+  [4/120] fall s2#4 anime → lexicon/fall/s2-5-anime.webp
+  [5/120] fall s5#1 anime → lexicon/fall/s5-2-anime.webp
+  [6/120] sun s1#3 anime → lexicon/sun/s1-4-anime.webp
+  [7/120] sun s3#3 anime → lexicon/sun/s3-4-anime.webp
+  [8/120] glass s0#2 anime → lexicon/glass/s0-3-anime.webp
+  [9/120] glass s3#4 anime → lexicon/glass/s3-5-anime.webp
+  [10/120] glass s4#1 anime → lexicon/glass/s4-2-anime.webp
+  [11/120] sun s2#0 manga-line → lexicon/sun/s2-1-manga-line.webp
+  [12/120] glass s3#5 manga-line → lexicon/glass/s3-6-manga-line.webp
+  [13/120] dark s15#2 concept-art → lexicon/dark/s15-3-concept-art.webp
+  [14/120] fall s2#3 concept-art → lexicon/fall/s2-4-concept-art.webp
+  [15/120] fall s3#5 concept-art → lexicon/fall/s3-6-concept-art.webp
+  [16/120] fall s5#0 concept-art → lexicon/fall/s5-1-concept-art.webp
+  [17/120] fall s6#3 concept-art → lexicon/fall/s6-4-concept-art.webp
+  [18/120] sun s1#2 concept-art → lexicon/sun/s1-3-concept-art.webp
+  [19/120] sun s4#0 concept-art → lexicon/sun/s4-1-concept-art.webp
+  [20/120] sun s5#3 concept-art → lexicon/sun/s5-4-concept-art.webp
+  [21/120] glass s0#1 concept-art → lexicon/glass/s0-2-concept-art.webp
+  [22/120] glass s1#1 concept-art → lexicon/glass/s1-2-concept-art.webp
+  [23/120] glass s2#4 concept-art → lexicon/glass/s2-5-concept-art.webp
+  [24/120] glass s3#1 concept-art → lexicon/glass/s3-2-concept-art.webp
+  [25/120] glass s4#0 concept-art → lexicon/glass/s4-1-concept-art.webp
+  [26/120] sun s4#2 3d-toy → lexicon/sun/s4-3-3d-toy.webp
+  [27/120] sun s5#5 3d-toy → lexicon/sun/s5-6-3d-toy.webp
+  [28/120] glass s1#5 chalkboard → lexicon/glass/s1-6-chalkboard.webp
+  [29/120] glass s3#3 chalkboard → lexicon/glass/s3-4-chalkboard.webp
+  [30/120] fall s6#5 neon-sign → lexicon/fall/s6-6-neon-sign.webp
+  [31/120] sun s3#2 neon-sign → lexicon/sun/s3-3-neon-sign.webp
+  [32/120] sun s4#5 neon-sign → lexicon/sun/s4-6-neon-sign.webp
+  [33/120] sun s4#1 papercut → lexicon/sun/s4-2-papercut.webp
+  [34/120] sun s5#4 papercut → lexicon/sun/s5-5-papercut.webp
+  [35/120] glass s1#4 papercut → lexicon/glass/s1-5-papercut.webp
+  [36/120] glass s2#5 papercut → lexicon/glass/s2-6-papercut.webp
+  [37/120] fall s6#4 pixel → lexicon/fall/s6-5-pixel.webp
+  [38/120] sun s3#0 pixel → lexicon/sun/s3-1-pixel.webp
+  [39/120] sun s4#3 pixel → lexicon/sun/s4-4-pixel.webp
+  [40/120] sun s3#1 stickers → lexicon/sun/s3-2-stickers.webp
+  [41/120] sun s4#4 stickers → lexicon/sun/s4-5-stickers.webp
+  [42/120] glass s1#3 storybook → lexicon/glass/s1-4-storybook.webp
+  [43/120] glass s1#2 watercolor → lexicon/glass/s1-3-watercolor.webp
+  [44/120] glass s3#2 watercolor → lexicon/glass/s3-3-watercolor.webp
+  [45/120] dark s15#1 film-still → lexicon/dark/s15-2-film-still.webp
+  [46/120] fall s0#5 film-still → lexicon/fall/s0-6-film-still.webp
+  [47/120] fall s2#2 film-still → lexicon/fall/s2-3-film-still.webp
+  [48/120] fall s3#4 film-still → lexicon/fall/s3-5-film-still.webp
+  [49/120] fall s6#2 film-still → lexicon/fall/s6-3-film-still.webp
+  [50/120] sun s0#4 film-still → lexicon/sun/s0-5-film-still.webp
+  [51/120] sun s1#1 film-still → lexicon/sun/s1-2-film-still.webp
+  [52/120] sun s5#2 film-still → lexicon/sun/s5-3-film-still.webp
+  [53/120] sun s6#5 film-still → lexicon/sun/s6-6-film-still.webp
+  [54/120] glass s0#0 film-still → lexicon/glass/s0-1-film-still.webp
+  [55/120] glass s2#3 film-still → lexicon/glass/s2-4-film-still.webp
+  [56/120] sun s0#5 analog → lexicon/sun/s0-6-analog.webp
+  [57/120] glass s1#0 analog → lexicon/glass/s1-1-analog.webp
+  [58/120] glass s3#0 analog → lexicon/glass/s3-1-analog.webp
+  [59/120] dark s15#4 cinema → lexicon/dark/s15-5-cinema.webp
+  [60/120] fall s0#1 cinema → lexicon/fall/s0-2-cinema.webp
+  [61/120] fall s1#1 cinema → lexicon/fall/s1-2-cinema.webp
+  [62/120] fall s2#5 cinema → lexicon/fall/s2-6-cinema.webp
+  [63/120] fall s3#0 cinema → lexicon/fall/s3-1-cinema.webp
+  [64/120] fall s4#0 cinema → lexicon/fall/s4-1-cinema.webp
+  [65/120] fall s5#2 cinema → lexicon/fall/s5-3-cinema.webp
+  [66/120] sun s1#4 cinema → lexicon/sun/s1-5-cinema.webp
+  [67/120] sun s2#1 cinema → lexicon/sun/s2-2-cinema.webp
+  [68/120] sun s2#2 noir → lexicon/sun/s2-3-noir.webp
+  [69/120] sun s3#4 cinema → lexicon/sun/s3-5-cinema.webp
+  [70/120] glass s0#3 cinema → lexicon/glass/s0-4-cinema.webp
+  [71/120] glass s4#2 cinema → lexicon/glass/s4-3-cinema.webp
+  [72/120] glass s5#0 cinema → lexicon/glass/s5-1-cinema.webp
+  [73/120] dark s15#5 photo → lexicon/dark/s15-6-photo.webp
+  [74/120] fall s0#2 photo → lexicon/fall/s0-3-photo.webp
+  [75/120] fall s1#2 photo → lexicon/fall/s1-3-photo.webp
+  [76/120] fall s1#3 neon-night → lexicon/fall/s1-4-neon-night.webp
+  [77/120] fall s3#1 photo → lexicon/fall/s3-2-photo.webp
+  [78/120] fall s4#1 photo → lexicon/fall/s4-2-photo.webp
+  [79/120] fall s4#2 neon-night → lexicon/fall/s4-3-neon-night.webp
+  [80/120] fall s5#3 photo → lexicon/fall/s5-4-photo.webp
+  [81/120] sun s0#0 photo → lexicon/sun/s0-1-photo.webp
+  [82/120] sun s1#5 photo → lexicon/sun/s1-6-photo.webp
+  [83/120] sun s2#3 photo → lexicon/sun/s2-4-photo.webp
+  [84/120] sun s2#4 neon-night → lexicon/sun/s2-5-neon-night.webp
+  [85/120] sun s3#5 photo → lexicon/sun/s3-6-photo.webp
+  [86/120] glass s0#4 photo → lexicon/glass/s0-5-photo.webp
+  [87/120] glass s4#3 photo → lexicon/glass/s4-4-photo.webp
+  [88/120] fall s0#3 dream-collage → lexicon/fall/s0-4-dream-collage.webp
+  [89/120] fall s1#4 dream-collage → lexicon/fall/s1-5-dream-collage.webp
+  [90/120] fall s1#5 poster → lexicon/fall/s1-6-poster.webp
+  [91/120] fall s2#0 dream-collage → lexicon/fall/s2-1-dream-collage.webp
+  [92/120] fall s3#2 dream-collage → lexicon/fall/s3-3-dream-collage.webp
+  [93/120] fall s4#3 dream-collage → lexicon/fall/s4-4-dream-collage.webp
+  [94/120] fall s4#4 poster → lexicon/fall/s4-5-poster.webp
+  [95/120] fall s5#4 dream-collage → lexicon/fall/s5-5-dream-collage.webp
+  [96/120] sun s0#1 dream-collage → lexicon/sun/s0-2-dream-collage.webp
+  [97/120] sun s2#5 dream-collage → lexicon/sun/s2-6-dream-collage.webp
+  [98/120] sun s6#0 dream-collage → lexicon/sun/s6-1-dream-collage.webp
+  [99/120] sun s6#1 poster → lexicon/sun/s6-2-poster.webp
+  [100/120] glass s0#5 dream-collage → lexicon/glass/s0-6-dream-collage.webp
+  [101/120] glass s4#4 dream-collage → lexicon/glass/s4-5-dream-collage.webp
+  [102/120] fall s6#1 dark-surreal → lexicon/fall/s6-2-dark-surreal.webp
+  [103/120] sun s0#3 oil-light → lexicon/sun/s0-4-oil-light.webp
+  [104/120] sun s5#1 oil-light → lexicon/sun/s5-2-oil-light.webp
+  [105/120] sun s6#4 oil-light → lexicon/sun/s6-5-oil-light.webp
+  [106/120] glass s2#2 oil-light → lexicon/glass/s2-3-oil-light.webp
+  [107/120] fall s0#4 word-portrait → lexicon/fall/s0-5-word-portrait.webp
+  [108/120] fall s2#1 word-portrait → lexicon/fall/s2-2-word-portrait.webp
+  [109/120] fall s3#3 word-portrait → lexicon/fall/s3-4-word-portrait.webp
+  [110/120] fall s4#5 word-portrait → lexicon/fall/s4-6-word-portrait.webp
+  [111/120] fall s5#5 word-portrait → lexicon/fall/s5-6-word-portrait.webp
+  [112/120] fall s6#0 word-neon → lexicon/fall/s6-1-word-neon.webp
+  [113/120] sun s0#2 word-portrait → lexicon/sun/s0-3-word-portrait.webp
+  [114/120] sun s1#0 word-portrait → lexicon/sun/s1-1-word-portrait.webp
+  [115/120] sun s5#0 word-neon → lexicon/sun/s5-1-word-neon.webp
+  [116/120] sun s6#2 word-portrait → lexicon/sun/s6-3-word-portrait.webp
+  [117/120] sun s6#3 word-neon → lexicon/sun/s6-4-word-neon.webp
+  [118/120] glass s2#0 word-portrait → lexicon/glass/s2-1-word-portrait.webp
+  [119/120] glass s2#1 word-neon → lexicon/glass/s2-2-word-neon.webp
+  [120/120] glass s4#5 word-portrait → lexicon/glass/s4-6-word-portrait.webp
+
+atelier done: 120 rendered, 0 failed → lexicon.json updated + published
+2026-07-17T03:30:04-04:00 · cycle 3: 383/1000 painted · 15 shows audited (11 reels built) · 5 pruned · GPU 48°C 13245MiB
+vision-worker: 1175 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: cold q=0.9 m=0.95)
+  20/300 (last: cold q=0.95 m=0.7)
+  30/300 (last: cold q=0.9 m=1)
+  40/300 (last: cold q=0.95 m=0.85)
+  50/300 (last: cold q=0.9 m=0.7)
+  60/300 (last: cold q=0.9 m=1)
+  70/300 (last: cold q=0.9 m=0.8)
+  80/300 (last: cold q=0.9 m=0.8)
+  90/300 (last: cold q=0.9 m=0.85)
+  100/300 (last: glow q=0.8 m=0.9)
+  110/300 (last: glow q=0.95 m=0.9)
+  120/300 (last: glow q=0.9 m=0.8)
+  130/300 (last: glow q=0.9 m=0.95)
+  140/300 (last: glow q=0.95 m=0.85)
+  150/300 (last: glow q=0.9 m=0.8)
+  160/300 (last: glow q=0.95 m=0.85)
+  170/300 (last: glow q=0.9 m=0.8)
+  180/300 (last: glow q=0.95 m=0.98)
+  190/300 (last: move q=0.9 m=0.95)
+  200/300 (last: move q=0.95 m=0.85)
+  210/300 (last: move q=0.9 m=0.7)
+  220/300 (last: move q=0.9 m=0.8)
+  230/300 (last: move q=0.9 m=0.7)
+  240/300 (last: move q=0.95 m=0.85)
+  250/300 (last: move q=0.9 m=0.7)
+  260/300 (last: move q=0.8 m=0.9)
+  270/300 (last: move q=0.85 m=0.7)
+  280/300 (last: move q=0.9 m=0.8)
+  290/300 (last: move q=0.8 m=0.6)
+  300/300 (last: move q=0.85 m=0.9)
+✦ vision index: 3048 readings (300 new, 0 failed) · 7 low-quality flagged
+2026-07-17T03:47:32-04:00 · building reel: honey-n-venom-rude-wine-riddim
+match-reel honey-n-venom-rude-wine-riddim: 168 song words · 1231 indexed candidates
+  stage A: 41 → judging 41
+✦ reel: 32 images (29 featured) → scripts/song-analysis/profiles/honey-n-venom-rude-wine-riddim/lexicon-reel.json
+   ★ heart 0.95 2 — matches seductive tension and club energy with neon symbolism
+   ★ fire 0.95 1-word-neon — Matches seductive intensity, neon symbolism, and urban energy of the song
+   ★ night 0.95 6-word-portrait — Urban nightlife, neon, confident energy match song's club vibe and mood
+   ★ fire 0.95 3-film-still — matches seductive danger, passion, and destruction
+   ★ rhythm 0.95 1-word-neon — Urban nightlife energy matches club theme; neon aligns with seductive allure
+   ★ walk 0.95 1-word-portrait — Sultry, confident woman fits seductive allure and club energy
+   ★ night 0.9 5-word-portrait — Captures seductive mystery and urban nightlife aligned with song's mood
+   ★ venom 0.9 6-neon-sign — Seductive danger, urban grit, neon symbolism align with song's mood and themes
+   ★ night 0.9 2-word-portrait — Captures neon-lit nightlife energy and seductive danger
+   ★ fire 0.9 3-cinema — Matches fire's intensity, danger, and passion in the song's seductive, toxic theme
+   ★ honey 0.9 2-manga-line — Surreal, seductive, and symbolic of honey's duality
+   ★ wine 0.9 1-neon-sign — Seductive, neon, urban imagery fits the song's mood and themes
+✦ published → planets/honey-n-venom-rude-wine-riddim/lexicon-reel.json
+── audit honey-n-venom-rude-wine-riddim: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 6 timing flags · 0 errors
+match-reel honey-n-venom-rude-wine-riddim: 168 song words · 1231 indexed candidates
+  stage A: 41 → judging 41
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/honey-n-venom-rude-wine-riddim/lexicon-reel.json
+   ★ heart 1 2 — Perfectly aligns with toxic romance and club energy
+   ★ venom 1 4-concept-art — Perfectly aligns with toxic romance, club energy, and seductive menace
+   ★ honey 1 2-manga-line — Perfectly captures duality, seduction, and danger in abstract form.
+   ★ venom 1 4-neon-night — Perfectly aligns with toxic romance, club energy, and seductive danger.
+   ★ rhythm 1 4-word-neon — Perfectly aligns with club energy, seductive allure, and neon symbolism
+   ★ venom 1 6-neon-sign — Perfectly aligns with toxic romance and aggressive seduction
+   ★ wine 1 6-word-neon — Perfectly aligns with club energy, toxic allure, and seductive danger
+   ★ rhythm 1 1-word-neon — Perfectly aligns with club energy, seductive danger, and neon symbolism
+   ★ heart 0.95 3-neon-sign — Matches seductive danger, club vibe, and neon symbolism
+   ★ rhythm 0.95 5-word-portrait — matches club energy, seductive allure, and toxic romance
+   ★ light 0.95 6-word-portrait — Spotlight, black dress, and bold text align with seductive danger and club energy
+   ★ night 0.95 6-word-portrait — matches seductive danger, club energy, neon visuals
+✦ published → planets/honey-n-venom-rude-wine-riddim/lexicon-reel.json
+2026-07-17T03:50:54-04:00 · building reel: i-don-t-quit-right-now
+match-reel i-don-t-quit-right-now: 308 song words · 1372 indexed candidates
+  stage A: 51 → judging 51
+✦ reel: 25 images (22 featured) → scripts/song-analysis/profiles/i-don-t-quit-right-now/lexicon-reel.json
+   ★ pressure 0.95 2 — Strong physical struggle aligns with internal discipline and pressure themes
+   ★ move 0.95 1-film-still — Powerful imagery aligns with relentless grit and internal struggle
+   ★ night 0.9 5-photo — Nighttime sweat and determination fit the relentless grit and solitary struggle theme
+   ★ pressure 0.9 1 — captures grit, struggle, unity in a gym setting
+   ★ move 0.9 3-word-portrait — Urgent movement, determination, cinematic energy match relentless grit and internal discip
+   ★ walk 0.9 5-word-portrait — Boots, wet road, sunset align with grit and determination in the song
+   ★ fire 0.9 5-photo — Symbolizes internal fire, energy, and intensity of the workout
+   ★ crown 0.9 1 — Symbolizes triumph and solitude, aligns with grit and internal struggle
+   ★ crown 0.9 2 — Symbolizes aspiration and solitary struggle; mountain as a crown ties to lyric
+   ★ night 0.85 1-word-portrait — fits gritty mood, neon as discipline, empty street as potential
+   ★ voice 0.85 5-word-portrait — Symbolizes internal struggle and voice as fragile signal in gritty, cyberpunk realism
+   ★ walk 0.85 5-stickers — Determinated traveler aligns with grit and purpose; steam symbolizes effort; casual attire
+✦ published → planets/i-don-t-quit-right-now/lexicon-reel.json
+── audit i-don-t-quit-right-now: 25 reel images
+  ≠ misfit lexicon/night/s13-3-word-portrait.webp (q=0.9 wm=0.95 fit=0.3)
+  ≠ misfit lexicon/soul/s1-6-word-portrait.webp (q=0.9 wm=0.8 fit=0.3)
+✦ audit: 1 shows · 25 scanned (0 fresh-skipped) · 0 pruned · 2 misfits · 0 timing flags · 0 errors
+match-reel i-don-t-quit-right-now: 308 song words · 1372 indexed candidates
+  stage A: 51 → judging 51
+✦ reel: 24 images (24 featured) → scripts/song-analysis/profiles/i-don-t-quit-right-now/lexicon-reel.json
+   ★ pressure 1 2 — image embodies relentless grit and internal struggle through weightlifting
+   ★ drip 0.98 3-photo — Powerful visual of endurance and grit aligns with song's themes
+   ★ move 0.95 2-photo — Gritty gym setting matches song's relentless determination and internal struggle
+   ★ night 0.95 5-photo — late-night gym struggle matches relentless grit and internal battle
+   ★ move 0.95 1-film-still — Powerful imagery matches relentless grit and internal struggle
+   ★ fire 0.95 5-photo — Powerful imagery aligns with grit, fire as inner determination, gym setting matches song's
+   ★ cold 0.95 6-word-portrait — fits gritty mood, cold as emotional numbness, abandoned gym aligns with solitary struggle
+   ★ pressure 0.95 1 — Powerful imagery aligns with internal struggle and external pressure themes
+   ★ fire 0.95 1-photo — Symbolism aligns with fire as inner drive and grit
+   ★ body 0.95 2-word-portrait — Aligns with themes of physical transformation and discipline through effort
+   ★ walk 0.95 5-stickers — Matches gritty gym resolve, backpack as burden, orange jacket symbolizes perseverance
+   ★ cold 0.95 1-word-portrait — Cold aligns with grit, isolation, and internal struggle in a gym setting.
+✦ published → planets/i-don-t-quit-right-now/lexicon-reel.json
+2026-07-17T03:54:01-04:00 · building reel: i-m-that-somebody
+match-reel i-m-that-somebody: 164 song words · 804 indexed candidates
+  stage A: 29 → judging 29
+✦ reel: 25 images (24 featured) → scripts/song-analysis/profiles/i-m-that-somebody/lexicon-reel.json
+   ★ night 0.95 3-word-portrait — Matches urban confidence, sultry allure, and nighttime theme
+   ★ rhythm 0.95 2-poster — Modern geometric design matches playful confidence and futuristic themes
+   ★ lights 0.9 2-word-portrait — Matches playful confidence and vibrant energy of the song
+   ★ night 0.9 5-word-portrait — Matches playful confidence, seductive night imagery, urban energy
+   ★ lights 0.9 3-word-portrait — Neon lights and stage energy match playful confidence and futuristic nostalgia
+   ★ night 0.9 3-word-portrait — Urban grit and neon align with futuristic nostalgia and playful confidence.
+   ★ move 0.9 1-word-portrait — Confident performance aligns with playful self-assurance and dynamic movement
+   ★ move 0.9 2-word-portrait — Playful, confident, and cinematic fit the song's mood and themes
+   ★ move 0.9 5-word-portrait — Intimate, sensual mood matches playful confidence and secretive intimacy
+   ★ love 0.9 5-stickers — Playful, vibrant, matches song's confident and joyful tone
+   ★ party 0.9 6-poster — Matches playful energy and modern celebration vibe
+   ★ different 0.9 2-word-portrait — Confident stage presence matches playful self-assurance and empowerment
+✦ published → planets/i-m-that-somebody/lexicon-reel.json
+── audit i-m-that-somebody: 25 reel images
+✦ audit: 1 shows · 25 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel i-m-that-somebody: 164 song words · 804 indexed candidates
+  stage A: 29 → judging 29
+✦ reel: 25 images (25 featured) → scripts/song-analysis/profiles/i-m-that-somebody/lexicon-reel.json
+   ★ lights 0.95 2-word-portrait — Matches playful confidence, romantic stability, and vibrant energy of the song
+   ★ lights 0.95 3-word-portrait — Matches playful confidence, romantic stability, and futuristic nostalgia
+   ★ move 0.95 5-word-portrait — Confident, intimate, and restrained imagery aligns with the song's playful self-assurance 
+   ★ night 0.95 5-word-portrait — Matches playful confidence, secretive intimacy, and urban mystery
+   ★ move 0.95 1-word-portrait — Confident pose, stage setting, neon accents align with playful confidence and futuristic n
+   ★ night 0.95 3-word-portrait — Urban night scene matches futuristic nostalgia and secretive intimacy
+   ★ night 0.95 3-word-portrait — Matches playful confidence, secretive intimacy, and futuristic nostalgia with neon and cin
+   ★ different 0.95 2-word-portrait — Confident stage presence matches playful self-assurance and individuality themes.
+   ★ soul 0.95 6-word-portrait — Confident stage presence aligns with self-assurance and playful intimacy
+   ★ rhythm 0.95 5-word-portrait — Matches playful confidence and intimate symbolism of rhythm
+   ★ rhythm 0.95 2-word-portrait — Matches playful confidence, musicality, and hidden relationship patterns
+   ★ rhythm 0.95 2-poster — Modern, dynamic, and confident visual matches song's playful self-assurance and futuristic
+✦ published → planets/i-m-that-somebody/lexicon-reel.json
+2026-07-17T03:56:38-04:00 · building reel: in-love-with-the-party
+match-reel in-love-with-the-party: 119 song words · 796 indexed candidates
+  stage A: 24 → judging 24
+✦ reel: 22 images (18 featured) → scripts/song-analysis/profiles/in-love-with-the-party/lexicon-reel.json
+   ★ heat 0.95 6-word-portrait — Intimate, warm, sensual bar scene matches song's mood and themes
+   ★ lights 0.95 1-word-portrait — Matches mood, intimacy, lighting, and ambiance of the song
+   ★ light 0.95 2-anime — Cyberpunk visuals align with nighttime escapism and sensory warmth
+   ★ walk 0.95 4-word-neon — Urban neon fits party mood and city light lyric
+   ★ lights 0.95 2-word-portrait — Matches euphoric mood, intimacy, and sensory warmth with glowing lights and confetti
+   ★ glow 0.95 1-word-portrait — Intimate, warm, and romantic imagery fits the song's theme of connection in a party settin
+   ★ party 0.95 6-word-portrait — Matches neon-lit party vibe, intimacy, celebration, and euphoria
+   ★ party 0.95 6-cinema — Matches nighttime party theme, intimacy in crowd, warm glow and euphoric mood
+   ★ night 0.95 5-word-portrait — Urban night, secretive intimacy, and romantic tension align with the song's nighttime esca
+   ★ love 0.95 3-film-still — Intimate kiss under neon lights fits the song's theme of intimacy amidst crowds and euphor
+   ★ love 0.95 1-word-portrait — Elegant, intimate, cinematic fit the song's mood and themes
+   ★ party 0.95 5-word-portrait — Matches party theme, warmth, and celebratory mood
+✦ published → planets/in-love-with-the-party/lexicon-reel.json
+── audit in-love-with-the-party: 22 reel images
+✦ audit: 1 shows · 22 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel in-love-with-the-party: 119 song words · 796 indexed candidates
+  stage A: 24 → judging 24
+✦ reel: 22 images (22 featured) → scripts/song-analysis/profiles/in-love-with-the-party/lexicon-reel.json
+   ★ lights 1 2-word-portrait — Perfectly aligns with song's mood and themes of intimacy and euphoria under lights
+   ★ love 1 1-word-portrait — Perfectly aligns with intimacy, euphoria, and connection in a party setting.
+   ★ party 1 5-word-portrait — Perfectly captures nighttime party intimacy and euphoria
+   ★ party 1 6-word-portrait — Perfectly captures nighttime escapism, intimacy, and euphoric celebration
+   ★ glow 0.98 1-word-portrait — Perfect fit for intimacy, warm lighting, and euphoric mood
+   ★ heat 0.95 6-word-portrait — Matches song's mood and themes of warmth and intimacy
+   ★ heat 0.95 5-word-portrait — Euphoric, intimate, warm stage imagery aligns with song's mood and themes
+   ★ light 0.95 2-anime — Matches neon, intimacy, city light, and euphoric mood
+   ★ love 0.95 3-film-still — Intimate kiss under neon lights fits euphoric party intimacy theme
+   ★ light 0.95 3-cinema — Matches nighttime escapism, sensory warmth, and urban intimacy
+   ★ glow 0.95 3-word-portrait — Euphoric intimacy through light in a dim setting matches song's mood and themes
+   ★ walk 0.95 4-word-neon — Urban nightlife, intimacy, and neon align with song's mood and themes
+✦ published → planets/in-love-with-the-party/lexicon-reel.json
+2026-07-17T03:58:50-04:00 · building reel: i-said-no
+match-reel i-said-no: 44 song words · 0 indexed candidates
+nothing to match — render + vision-index this song's words first
+· i-said-no: no reel — skip
+✦ audit: 0 shows · 0 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel i-said-no: 44 song words · 0 indexed candidates
+nothing to match — render + vision-index this song's words first
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×13 · manga-line×3 · concept-art×12 · 3d-toy×1 · chalkboard×1 · graphic-novel×2 · neon-sign×6 · papercut×2 · pixel×5 · stained-glass×5 · stickers×2 · storybook×2 · watercolor×2 · film-still×12 · analog×1 · cinema×12 · noir×2 · photo×9 · neon-night×4 · dream-collage×8 · poster×1 · dark-surreal×3 · oil-light×1 · word-portrait×10 · word-neon×1
+  [1/120] glass s7#3 anime → lexicon/glass/s7-4-anime.webp
+  [2/120] glass s10#5 anime → lexicon/glass/s10-6-anime.webp
+  [3/120] skin s0#4 anime → lexicon/skin/s0-5-anime.webp
+  [4/120] skin s2#4 anime → lexicon/skin/s2-5-anime.webp
+  [5/120] skin s3#3 anime → lexicon/skin/s3-4-anime.webp
+  [6/120] skin s4#3 anime → lexicon/skin/s4-4-anime.webp
+  [7/120] skin s5#3 anime → lexicon/skin/s5-4-anime.webp
+  [8/120] skin s6#0 anime → lexicon/skin/s6-1-anime.webp
+  [9/120] skin s7#2 anime → lexicon/skin/s7-3-anime.webp
+  [10/120] skin s8#3 anime → lexicon/skin/s8-4-anime.webp
+  [11/120] skin s9#4 anime → lexicon/skin/s9-5-anime.webp
+  [12/120] run s0#2 anime → lexicon/run/s0-3-anime.webp
+  [13/120] run s1#4 anime → lexicon/run/s1-5-anime.webp
+  [14/120] skin s2#5 manga-line → lexicon/skin/s2-6-manga-line.webp
+  [15/120] skin s5#4 manga-line → lexicon/skin/s5-5-manga-line.webp
+  [16/120] skin s6#1 manga-line → lexicon/skin/s6-2-manga-line.webp
+  [17/120] glass s6#0 concept-art → lexicon/glass/s6-1-concept-art.webp
+  [18/120] glass s7#2 concept-art → lexicon/glass/s7-3-concept-art.webp
+  [19/120] glass s8#2 concept-art → lexicon/glass/s8-3-concept-art.webp
+  [20/120] glass s9#3 concept-art → lexicon/glass/s9-4-concept-art.webp
+  [21/120] skin s0#3 concept-art → lexicon/skin/s0-4-concept-art.webp
+  [22/120] skin s1#2 concept-art → lexicon/skin/s1-3-concept-art.webp
+  [23/120] skin s3#2 concept-art → lexicon/skin/s3-3-concept-art.webp
+  [24/120] skin s4#2 concept-art → lexicon/skin/s4-3-concept-art.webp
+  [25/120] skin s7#1 concept-art → lexicon/skin/s7-2-concept-art.webp
+  [26/120] skin s9#3 concept-art → lexicon/skin/s9-4-concept-art.webp
+  [27/120] run s0#1 concept-art → lexicon/run/s0-2-concept-art.webp
+  [28/120] run s1#3 concept-art → lexicon/run/s1-4-concept-art.webp
+  [29/120] glass s6#2 3d-toy → lexicon/glass/s6-3-3d-toy.webp
+  [30/120] glass s10#3 chalkboard → lexicon/glass/s10-4-chalkboard.webp
+  [31/120] skin s2#3 graphic-novel → lexicon/skin/s2-4-graphic-novel.webp
+  [32/120] skin s5#2 graphic-novel → lexicon/skin/s5-3-graphic-novel.webp
+  [33/120] glass s6#5 neon-sign → lexicon/glass/s6-6-neon-sign.webp
+  [34/120] glass s8#4 neon-sign → lexicon/glass/s8-5-neon-sign.webp
+  [35/120] skin s1#4 neon-sign → lexicon/skin/s1-5-neon-sign.webp
+  [36/120] skin s2#1 neon-sign → lexicon/skin/s2-2-neon-sign.webp
+  [37/120] skin s5#0 neon-sign → lexicon/skin/s5-1-neon-sign.webp
+  [38/120] skin s8#2 neon-sign → lexicon/skin/s8-3-neon-sign.webp
+  [39/120] glass s6#1 papercut → lexicon/glass/s6-2-papercut.webp
+  [40/120] glass s10#2 papercut → lexicon/glass/s10-3-papercut.webp
+  [41/120] glass s6#3 pixel → lexicon/glass/s6-4-pixel.webp
+  [42/120] glass s8#3 pixel → lexicon/glass/s8-4-pixel.webp
+  [43/120] skin s1#3 pixel → lexicon/skin/s1-4-pixel.webp
+  [44/120] skin s2#0 pixel → lexicon/skin/s2-1-pixel.webp
+  [45/120] skin s8#0 pixel → lexicon/skin/s8-1-pixel.webp
+  [46/120] glass s8#5 stained-glass → lexicon/glass/s8-6-stained-glass.webp
+  [47/120] glass s10#4 stained-glass → lexicon/glass/s10-5-stained-glass.webp
+  [48/120] skin s1#5 stained-glass → lexicon/skin/s1-6-stained-glass.webp
+  [49/120] skin s2#2 stained-glass → lexicon/skin/s2-3-stained-glass.webp
+  [50/120] skin s5#1 stained-glass → lexicon/skin/s5-2-stained-glass.webp
+  [51/120] glass s6#4 stickers → lexicon/glass/s6-5-stickers.webp
+  [52/120] skin s8#1 stickers → lexicon/skin/s8-2-stickers.webp
+  [53/120] glass s9#5 storybook → lexicon/glass/s9-6-storybook.webp
+  [54/120] glass s10#1 storybook → lexicon/glass/s10-2-storybook.webp
+  [55/120] glass s9#4 watercolor → lexicon/glass/s9-5-watercolor.webp
+  [56/120] glass s10#0 watercolor → lexicon/glass/s10-1-watercolor.webp
+  [57/120] glass s7#1 film-still → lexicon/glass/s7-2-film-still.webp
+  [58/120] glass s8#1 film-still → lexicon/glass/s8-2-film-still.webp
+  [59/120] glass s9#1 film-still → lexicon/glass/s9-2-film-still.webp
+  [60/120] skin s0#2 film-still → lexicon/skin/s0-3-film-still.webp
+  [61/120] skin s1#1 film-still → lexicon/skin/s1-2-film-still.webp
+  [62/120] skin s3#1 film-still → lexicon/skin/s3-2-film-still.webp
+  [63/120] skin s4#1 film-still → lexicon/skin/s4-2-film-still.webp
+  [64/120] skin s7#0 film-still → lexicon/skin/s7-1-film-still.webp
+  [65/120] skin s9#2 film-still → lexicon/skin/s9-3-film-still.webp
+  [66/120] run s0#0 film-still → lexicon/run/s0-1-film-still.webp
+  [67/120] run s1#2 film-still → lexicon/run/s1-3-film-still.webp
+  [68/120] run s3#5 film-still → lexicon/run/s3-6-film-still.webp
+  [69/120] glass s9#2 analog → lexicon/glass/s9-3-analog.webp
+  [70/120] glass s7#4 cinema → lexicon/glass/s7-5-cinema.webp
+  [71/120] skin s0#5 cinema → lexicon/skin/s0-6-cinema.webp
+  [72/120] skin s3#4 cinema → lexicon/skin/s3-5-cinema.webp
+  [73/120] skin s4#4 cinema → lexicon/skin/s4-5-cinema.webp
+  [74/120] skin s5#5 cinema → lexicon/skin/s5-6-cinema.webp
+  [75/120] skin s6#2 cinema → lexicon/skin/s6-3-cinema.webp
+  [76/120] skin s6#3 noir → lexicon/skin/s6-4-noir.webp
+  [77/120] skin s7#3 cinema → lexicon/skin/s7-4-cinema.webp
+  [78/120] skin s8#4 cinema → lexicon/skin/s8-5-cinema.webp
+  [79/120] skin s9#5 cinema → lexicon/skin/s9-6-cinema.webp
+  [80/120] run s0#3 cinema → lexicon/run/s0-4-cinema.webp
+  [81/120] run s1#5 cinema → lexicon/run/s1-6-cinema.webp
+  [82/120] run s2#0 cinema → lexicon/run/s2-1-cinema.webp
+  [83/120] run s2#1 noir → lexicon/run/s2-2-noir.webp
+  [84/120] glass s5#1 photo → lexicon/glass/s5-2-photo.webp
+  [85/120] glass s5#2 neon-night → lexicon/glass/s5-3-neon-night.webp
+  [86/120] glass s7#5 photo → lexicon/glass/s7-6-photo.webp
+  [87/120] skin s3#5 photo → lexicon/skin/s3-6-photo.webp
+  [88/120] skin s4#5 photo → lexicon/skin/s4-6-photo.webp
+  [89/120] skin s6#4 photo → lexicon/skin/s6-5-photo.webp
+  [90/120] skin s6#5 neon-night → lexicon/skin/s6-6-neon-night.webp
+  [91/120] skin s7#4 photo → lexicon/skin/s7-5-photo.webp
+  [92/120] skin s8#5 photo → lexicon/skin/s8-6-photo.webp
+  [93/120] run s0#4 photo → lexicon/run/s0-5-photo.webp
+  [94/120] run s2#2 photo → lexicon/run/s2-3-photo.webp
+  [95/120] run s2#3 neon-night → lexicon/run/s2-4-neon-night.webp
+  [96/120] run s3#0 neon-night → lexicon/run/s3-1-neon-night.webp
+  [97/120] glass s5#3 dream-collage → lexicon/glass/s5-4-dream-collage.webp
+  [98/120] glass s5#4 poster → lexicon/glass/s5-5-poster.webp
+  [99/120] skin s0#0 dream-collage → lexicon/skin/s0-1-dream-collage.webp
+  [100/120] skin s7#5 dream-collage → lexicon/skin/s7-6-dream-collage.webp
+  [101/120] skin s9#0 dream-collage → lexicon/skin/s9-1-dream-collage.webp
+  [102/120] run s0#5 dream-collage → lexicon/run/s0-6-dream-collage.webp
+  [103/120] run s1#0 dream-collage → lexicon/run/s1-1-dream-collage.webp
+  [104/120] run s2#4 dream-collage → lexicon/run/s2-5-dream-collage.webp
+  [105/120] run s3#1 dream-collage → lexicon/run/s3-2-dream-collage.webp
+  [106/120] glass s8#0 dark-surreal → lexicon/glass/s8-1-dark-surreal.webp
+  [107/120] glass s9#0 oil-light → lexicon/glass/s9-1-oil-light.webp
+  [108/120] skin s1#0 dark-surreal → lexicon/skin/s1-1-dark-surreal.webp
+  [109/120] run s3#4 dark-surreal → lexicon/run/s3-5-dark-surreal.webp
+  [110/120] glass s5#5 word-portrait → lexicon/glass/s5-6-word-portrait.webp
+  [111/120] glass s7#0 word-portrait → lexicon/glass/s7-1-word-portrait.webp
+  [112/120] skin s0#1 word-portrait → lexicon/skin/s0-2-word-portrait.webp
+  [113/120] skin s3#0 word-portrait → lexicon/skin/s3-1-word-portrait.webp
+  [114/120] skin s4#0 word-portrait → lexicon/skin/s4-1-word-portrait.webp
+  [115/120] skin s9#1 word-portrait → lexicon/skin/s9-2-word-portrait.webp
+  [116/120] run s1#1 word-portrait → lexicon/run/s1-2-word-portrait.webp
+  [117/120] run s2#5 word-portrait → lexicon/run/s2-6-word-portrait.webp
+  [118/120] run s3#2 word-portrait → lexicon/run/s3-3-word-portrait.webp
+  [119/120] run s3#3 word-neon → lexicon/run/s3-4-word-neon.webp
+  [120/120] run s4#0 word-portrait → lexicon/run/s4-1-word-portrait.webp
+
+atelier done: 120 rendered, 0 failed → lexicon.json updated + published
+2026-07-17T04:16:40-04:00 · cycle 4: 503/1000 painted · 20 shows audited (16 reels built) · 5 pruned · GPU 48°C 13339MiB
+vision-worker: 995 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: move q=0.9 m=0.85)
+  20/300 (last: hands q=0.9 m=0.9)
+  30/300 (last: hands q=0.95 m=0.98)
+  40/300 (last: hands q=0.9 m=0.95)
+  50/300 (last: hands q=0.9 m=0.9)
+  60/300 (last: hands q=0.95 m=0.9)
+  70/300 (last: hands q=0.95 m=0.98)
+  80/300 (last: hands q=0.95 m=1)
+  90/300 (last: hands q=0.95 m=0.85)
+  100/300 (last: hands q=0.8 m=0.9)
+  110/300 (last: hands q=0.9 m=0.8)
+  120/300 (last: hands q=0.95 m=0.98)
+  130/300 (last: sun q=0.9 m=0.9)
+  140/300 (last: sun q=0.95 m=0.9)
+  150/300 (last: sun q=0.9 m=0.85)
+  160/300 (last: sun q=0.9 m=1)
+  170/300 (last: eyes q=0.85 m=0.95)
+  180/300 (last: eyes q=0.9 m=0.7)
+  190/300 (last: eyes q=0.9 m=1)
+  200/300 (last: eyes q=0.9 m=0.95)
+  210/300 (last: eyes q=0.95 m=0.98)
+  220/300 (last: eyes q=0.95 m=0.98)
+  230/300 (last: eyes q=0.9 m=0.9)
+  240/300 (last: eyes q=0.9 m=0.8)
+  250/300 (last: eyes q=0.9 m=0.9)
+  260/300 (last: eyes q=0.9 m=1)
+  270/300 (last: eyes q=0.85 m=0.95)
+  280/300 (last: glass q=0.9 m=0.3)
+  290/300 (last: glass q=0.9 m=0.8)
+  300/300 (last: glass q=0.8 m=0.9)
+✦ vision index: 3348 readings (300 new, 0 failed) · 7 low-quality flagged
+2026-07-17T04:33:45-04:00 · building reel: i-won-t-be-your-fire-japanese-mix
+match-reel i-won-t-be-your-fire-japanese-mix: 48 song words · 566 indexed candidates
+  stage A: 17 → judging 17
+✦ reel: 15 images (15 featured) → scripts/song-analysis/profiles/i-won-t-be-your-fire-japanese-mix/lexicon-reel.json
+   ★ fire 0.95 6-film-still — Powerful symbolism of emotional destruction and resolute self-preservation
+   ★ light 0.9 5-cinema — Symbolizes fragile hope amid darkness and thorns
+   ★ silence 0.9 1 — Silence as hope and isolation fits the melancholic, resolute mood.
+   ★ light 0.85 2-word-portrait — Symbolizes hope and clarity amidst emotional distance
+   ★ slow 0.85 2-word-portrait — Contemplative solitude matches resolute self-preservation mood
+   ★ glass 0.85 4-cinema — Reflects melancholy and solitude, aligns with emotional themes
+   ★ slow 0.85 2-word-portrait — Matches melancholic mood and introspection of the song
+   ★ silence 0.85 2 — Symbolizes fragile hope and emotional residue in a melancholic, resolute mood.
+   ★ slow 0.8 5-word-portrait — Calm, contemplative imagery aligns with resolute self-preservation and emotional tranquili
+   ★ love 0.8 1-word-portrait — Symbolizes hope and resilience amid abandonment, aligns with self-preservation and melanch
+   ★ love 0.8 4-word-portrait — contrasts decay with hope, aligns with resolute self-preservation and melancholy
+   ★ fire 0.7 1-film-still — Symbolizes solitary warmth and renewal aligns with resolute self-preservation
+✦ published → planets/i-won-t-be-your-fire-japanese-mix/lexicon-reel.json
+── audit i-won-t-be-your-fire-japanese-mix: 15 reel images
+  ≠ misfit lexicon/fire/s5-6-word-portrait.webp (q=0.9 wm=0.7 fit=0.3 tΔ=17.35s)
+✦ audit: 1 shows · 15 scanned (0 fresh-skipped) · 0 pruned · 1 misfits · 5 timing flags · 0 errors
+match-reel i-won-t-be-your-fire-japanese-mix: 48 song words · 566 indexed candidates
+  stage A: 17 → judging 17
+✦ reel: 14 images (14 featured) → scripts/song-analysis/profiles/i-won-t-be-your-fire-japanese-mix/lexicon-reel.json
+   ★ fire 1 6-film-still — Symbolism aligns with toxic love and emotional wreckage
+   ★ fire 0.95 1-film-still — Symbolizes toxic passion and emotional isolation with melancholic, resolute tone
+   ★ light 0.95 2-word-portrait — Symbolism aligns with self-preservation and emotional clarity
+   ★ fire 0.95 6-word-portrait — Symbolizes fire's destructive nature, aligns with themes of emotional burnout and boundari
+   ★ slow 0.95 2-word-portrait — Matches melancholic mood and self-preservation theme
+   ★ light 0.95 4-word-portrait — Symbolizes hope and self-preservation in a decaying space, aligns with song's themes and m
+   ★ light 0.95 5-cinema — Symbolizes fragile hope (light) amid emotional barriers (thorns), matching resolute melanc
+   ★ slow 0.95 2-word-portrait — Matches melancholic mood, resolute theme, and symbolic use of 'slow' as emotional restrain
+   ★ silence 0.95 2 — Symbolizes quiet defiance and inner strength in solitude
+   ★ love 0.95 4-word-portrait — Matches melancholic mood, symbolic of emotional detachment and fragile love
+   ★ glass 0.9 1-analog — Symbolizes fragility, isolation, and emotional barriers
+   ★ silence 0.9 1 — Symbolizes fragile hope and quiet resistance in a dark, isolated space
+✦ published → planets/i-won-t-be-your-fire-japanese-mix/lexicon-reel.json
+2026-07-17T04:35:33-04:00 · building reel: jayodeed-going-crazy-rooklyn-mix
+match-reel jayodeed-going-crazy-rooklyn-mix: 169 song words · 1083 indexed candidates
+  stage A: 33 → judging 33
+✦ reel: 31 images (30 featured) → scripts/song-analysis/profiles/jayodeed-going-crazy-rooklyn-mix/lexicon-reel.json
+   ★ night 0.95 2-word-portrait — fits toxic nightlife, seductive danger, aligns with song's obsession and chaos
+   ★ crazy 0.95 5-word-portrait — fits toxic obsession, chaos, intense mood and symbolism
+   ★ night 0.95 6-word-portrait — fits toxic allure, urban chaos, seductive danger
+   ★ crazy 0.95 5-word-portrait — fits toxic chaos, magical corruption, loss of control
+   ★ drink 0.95 4-neon-night — fits toxic nightlife, indulgence, moody atmosphere
+   ★ crazy 0.95 1-word-portrait — Chaotic, neon-lit scene matches toxic obsession and nightlife chaos
+   ★ eyes 0.95 6-neon-night — fits toxic love, chaos, and intense emotion with cyberpunk visuals
+   ★ love 0.95 6-neon-sign — Toxic love, seductive danger, urban grit align with song's themes
+   ★ eyes 0.95 1-word-portrait — Urban isolation and toxic obsession align with song's themes
+   ★ glass 0.92 4-cinema — Reflects fragility, loneliness, and urban chaos fitting the song's themes
+   ★ drink 0.9 4-dream-collage — fits toxic addiction, solitude, surreal chaos
+   ★ drink 0.9 5-word-portrait — fits toxic allure and nightlife setting
+✦ published → planets/jayodeed-going-crazy-rooklyn-mix/lexicon-reel.json
+── audit jayodeed-going-crazy-rooklyn-mix: 31 reel images
+  ✕ pruned lexicon/slow/s2-6-anime.webp (q=0.9 wm=0.3) — reroll s2#6 → bump 1
+✦ audit: 1 shows · 31 scanned (0 fresh-skipped) · 1 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel jayodeed-going-crazy-rooklyn-mix: 169 song words · 1082 indexed candidates
+  stage A: 33 → judging 33
+✦ reel: 31 images (31 featured) → scripts/song-analysis/profiles/jayodeed-going-crazy-rooklyn-mix/lexicon-reel.json
+   ★ crazy 1 5-word-portrait — Perfectly aligns with toxic obsession, chaos, and addiction themes.
+   ★ crazy 0.98 1-word-portrait — Chaotic, obsessive, and intense visuals match the song's themes and mood
+   ★ glass 0.95 3-anime — Symbolism aligns with toxic love and chaos, neon fits nightlife mood
+   ★ light 0.95 5-anime — Symbolism aligns with chaos, addiction, and obsession in a nightlife setting.
+   ★ glass 0.95 4-cinema — Reflects toxic relationship, addiction, and urban chaos
+   ★ lights 0.95 5-word-portrait — fits toxic obsession, nightlife, digital dependency
+   ★ glass 0.95 3-oil-light — fits toxic love, addiction, and chaos themes with intense lighting and glass symbolism
+   ★ love 0.95 6-neon-sign — Neon heart symbolizes toxic love in chaotic nightlife setting
+   ★ light 0.95 2-anime — fits chaotic, toxic, addicted mood with flickering lights
+   ★ save 0.95 5-anime — Symbolism aligns with toxic love, chaos, and obsession
+   ★ drink 0.95 5-word-portrait — Strong symbolism of addiction and toxic love in a nightlife setting
+   ★ hands 0.95 3-word-neon — Strong symbolism of hands and neon in chaotic, toxic setting
+✦ published → planets/jayodeed-going-crazy-rooklyn-mix/lexicon-reel.json
+2026-07-17T04:38:43-04:00 · building reel: low-lights-tokyo-night
+match-reel low-lights-tokyo-night: 60 song words · 879 indexed candidates
+  stage A: 26 → judging 26
+✦ reel: 22 images (20 featured) → scripts/song-analysis/profiles/low-lights-tokyo-night/lexicon-reel.json
+   ★ light 0.95 5-neon-night — matches neon melancholy, urban isolation, and bittersweet mood
+   ★ light 0.95 3-neon-night — Matches neon melancholy, urban isolation, and bittersweet mood
+   ★ night 0.95 5-word-portrait — Melancholic, urban, symbolic night with emotional depth
+   ★ light 0.95 5-cinema — matches neon melancholy, urban isolation, and rainy nighttime mood
+   ★ night 0.95 6-word-portrait — Matches melancholic mood, suburban loneliness, and symbolic night
+   ★ night 0.95 1-cinema — matches urban isolation, rainy night, melancholic mood
+   ★ cold 0.95 3-neon-night — matches neon melancholy, urban isolation, and emotional coldness
+   ★ lights 0.95 1-film-still — Captures urban solitude, rain, and neon melancholy perfectly
+   ★ lights 0.95 1-cinema — Captures neon melancholy, rain, and urban isolation perfectly
+   ★ cold 0.95 5-cinema — matches melancholy, urban isolation, and emotional coldness
+   ★ party 0.95 3-cinema — Captures neon melancholy, urban isolation, and bittersweet nostalgia
+   ★ cold 0.95 6-word-neon — Matches neon melancholy, isolation, and emotional coldness
+✦ published → planets/low-lights-tokyo-night/lexicon-reel.json
+── audit low-lights-tokyo-night: 22 reel images
+  ≠ misfit lexicon/body/s11-1-photo.webp (q=0.7 wm=0.6 fit=0.4)
+✦ audit: 1 shows · 22 scanned (0 fresh-skipped) · 0 pruned · 1 misfits · 0 timing flags · 0 errors
+match-reel low-lights-tokyo-night: 60 song words · 878 indexed candidates
+  stage A: 26 → judging 26
+✦ reel: 22 images (22 featured) → scripts/song-analysis/profiles/low-lights-tokyo-night/lexicon-reel.json
+   ★ night 1 6-word-portrait — Perfectly captures the song's mood and themes with rain, loneliness, and ghostly memory.
+   ★ lights 1 1-film-still — Perfectly captures the song's mood and themes of neon melancholy and urban isolation.
+   ★ party 1 3-cinema — Perfectly captures the song's mood and themes with rain, neon, and loneliness.
+   ★ night 1 5-word-portrait — Perfectly captures the song's mood and themes with neon melancholy and urban isolation.
+   ★ night 1 1-cinema — Perfectly captures Tokyo's melancholic nightlife and emotional depth
+   ★ cold 1 3-neon-night — Perfectly captures the song's mood and themes with neon melancholy and urban isolation.
+   ★ light 0.98 5-cinema — Perfectly captures neon melancholy and urban isolation
+   ★ lights 0.95 1-cinema — Matches neon melancholy, urban isolation, and bittersweet mood
+   ★ slow 0.95 5-word-portrait — Image captures bittersweet mood, neon melancholy, and urban isolation
+   ★ slow 0.95 5-word-portrait — matches bittersweet mood, urban isolation, nostalgic Tokyo nightlife
+   ★ love 0.95 6-word-portrait — Bittersweet imagery matches song's mood, abandoned objects symbolize lost love, neon and r
+   ★ light 0.95 3-neon-night — matches neon melancholy, urban isolation, and bittersweet mood
+✦ published → planets/low-lights-tokyo-night/lexicon-reel.json
+2026-07-17T04:41:01-04:00 · building reel: membrane-still-insane
+match-reel membrane-still-insane: 286 song words · 852 indexed candidates
+  stage A: 41 → judging 41
+✦ reel: 32 images (28 featured) → scripts/song-analysis/profiles/membrane-still-insane/lexicon-reel.json
+   ★ whistle 0.95 5-word-portrait — fits noir-cartoon mood with mechanical and nostalgic elements
+   ★ whistle 0.95 4-dream-collage — fits noir atmosphere, decay, and sound symbolism
+   ★ boiler 0.95 1-dream-collage — fits noir-steampunk mood, boiler symbolism aligns with song's themes
+   ★ boiler 0.95 4-dark-surreal — Boiler room fits noir atmosphere, steam and chaos align with song's themes
+   ★ night 0.95 2-dream-collage — Apocalyptic night aligns with noir-cartoon madness and chaotic imagery
+   ★ whistle 0.9 2-photo — fits noir-industrial tone, decay, nostalgia, and sound symbolism
+   ★ flames 0.9 4-film-still — Matches noir-cartoon atmosphere, fire and steamboats align with themes
+   ★ boiler 0.9 3-dream-collage — fits noir-industrial surrealism, steam, chaos, and corrupted machinery
+   ★ storm 0.9 6-concept-art — Storm fits noir atmosphere, rain and lightning match mood and themes
+   ★ gold 0.9 6-word-portrait — fits noir-cartoon tone, gold as corrupting force, skeletal figures and brooms align with t
+   ★ night 0.9 1-dream-collage — Surreal noir atmosphere, smoke, chaos, and night align with song's themes
+   ★ drip 0.9 6-neon-sign — Surreal, neon, dripping cartoon face fits noir-cartoon madness and playful terror
+✦ published → planets/membrane-still-insane/lexicon-reel.json
+── audit membrane-still-insane: 32 reel images
+  ≠ misfit lexicon/storm/s2-6-concept-art.webp (q=0.9 wm=0.85 fit=0.3)
+  ✕ pruned lexicon/membrane/s1-3-anime.webp (q=0.9 wm=0.3) — reroll s1#3 → bump 1
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 1 pruned · 2 misfits · 8 timing flags · 0 errors
+match-reel membrane-still-insane: 286 song words · 851 indexed candidates
+  stage A: 40 → judging 40
+✦ reel: 32 images (31 featured) → scripts/song-analysis/profiles/membrane-still-insane/lexicon-reel.json
+   ★ whistle 1 5-word-portrait — Perfectly aligns with song's noir-cartoon aesthetic and themes
+   ★ crazy 1 5-word-portrait — Perfectly aligns with song's noir-cartoon atmosphere and themes of fractured sanity
+   ★ gold 1 6-word-portrait — Perfect fit with noir-cartoon, gold symbolism, and riverboat setting
+   ★ boiler 1 1-dream-collage — Perfectly aligns with song's noir-cartoon, steampunk, and fractured sanity themes.
+   ★ night 1 2-dream-collage — Perfectly aligns with song's noir-cartoon madness and gritty atmosphere
+   ★ crazy 1 5-word-portrait — Perfect fit with cartoon villain, fog, noir-cartoon blend, and madness themes
+   ★ whistle 1 4-dream-collage — Perfectly aligns with song's gritty noir-cartoon atmosphere and themes
+   ★ flames 1 3-word-portrait — Perfect fit with flames, riverboat, and noir-cartoon chaos
+   ★ flames 1 4-film-still — Perfectly aligns with song's noir-cartoon atmosphere and themes
+   ★ hands 1 6-word-neon — Perfect fit with noir-cartoon, skeletal hands, riverboat, and neon sign
+   ★ boiler 1 4-dark-surreal — Perfectly aligns with song's gritty noir-cartoon atmosphere and themes
+   ★ body 1 3-manga-line — Perfectly aligns with song's noir-cartoon atmosphere and themes
+✦ published → planets/membrane-still-insane/lexicon-reel.json
+2026-07-17T04:44:50-04:00 · building reel: mi-gente
+match-reel mi-gente: 165 song words · 12 indexed candidates
+  stage A: 3 → judging 3
+✦ reel: 3 images (3 featured) → scripts/song-analysis/profiles/mi-gente/lexicon-reel.json
+   ★ gente 0.95 4-photo — Strong visual of unity, neon lights match nighttime vibe, crowd reflects community and sha
+   ★ gente 0.95 2-cinema — Energetic unity and collective joy match song's themes of street loyalty and community pow
+   ★ gente 0.95 5-dream-collage — Celebratory crowd aligns with song's unity and nighttime celebration themes.
+✦ published → planets/mi-gente/lexicon-reel.json
+── audit mi-gente: 3 reel images
+✦ audit: 1 shows · 3 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel mi-gente: 165 song words · 12 indexed candidates
+  stage A: 3 → judging 3
+✦ reel: 3 images (3 featured) → scripts/song-analysis/profiles/mi-gente/lexicon-reel.json
+   ★ gente 1 2-cinema — Perfectly captures barrio unity, neon energy, and collective 'gente' spirit.
+   ★ gente 1 4-photo — Perfectly captures unity, nighttime celebration, and community identity
+   ★ gente 1 5-dream-collage — Perfect fit for unity, nighttime barrio, aggressive swagger
+✦ published → planets/mi-gente/lexicon-reel.json
+2026-07-17T04:45:23-04:00 · regen queue: slow,membrane
+atelier: 1551 words · 2 jobs queued (gravity budgets h6/m2/l0, limit 100)
+  recipes: cinema×2
+  [1/2] membrane s1#2 cinema → lexicon/membrane/s1-3-cinema-r1.webp
+  [2/2] slow s2#5 cinema → lexicon/slow/s2-6-cinema-r1.webp
+
+atelier done: 2 rendered, 0 failed → lexicon.json updated + published
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×14 · manga-line×4 · concept-art×12 · 3d-toy×1 · chalkboard×1 · graphic-novel×2 · neon-sign×5 · papercut×1 · pixel×3 · stained-glass×2 · stickers×2 · film-still×11 · analog×2 · cinema×10 · noir×1 · photo×13 · neon-night×3 · dream-collage×13 · poster×2 · oil-light×4 · dark-surreal×1 · word-portrait×11 · word-neon×2
+  [1/120] run s4#3 anime → lexicon/run/s4-4-anime.webp
+  [2/120] run s5#5 anime → lexicon/run/s5-6-anime.webp
+  [3/120] run s6#3 anime → lexicon/run/s6-4-anime.webp
+  [4/120] run s7#0 anime → lexicon/run/s7-1-anime.webp
+  [5/120] run s8#1 anime → lexicon/run/s8-2-anime.webp
+  [6/120] run s10#3 anime → lexicon/run/s10-4-anime.webp
+  [7/120] flame s0#1 anime → lexicon/flame/s0-2-anime.webp
+  [8/120] flame s2#5 anime → lexicon/flame/s2-6-anime.webp
+  [9/120] flame s3#0 anime → lexicon/flame/s3-1-anime.webp
+  [10/120] flame s4#3 anime → lexicon/flame/s4-4-anime.webp
+  [11/120] flame s9#5 anime → lexicon/flame/s9-6-anime.webp
+  [12/120] flame s10#5 anime → lexicon/flame/s10-6-anime.webp
+  [13/120] flame s11#4 anime → lexicon/flame/s11-5-anime.webp
+  [14/120] dream s1#1 anime → lexicon/dream/s1-2-anime.webp
+  [15/120] run s10#4 manga-line → lexicon/run/s10-5-manga-line.webp
+  [16/120] flame s1#0 manga-line → lexicon/flame/s1-1-manga-line.webp
+  [17/120] flame s11#5 manga-line → lexicon/flame/s11-6-manga-line.webp
+  [18/120] dream s1#2 manga-line → lexicon/dream/s1-3-manga-line.webp
+  [19/120] run s4#2 concept-art → lexicon/run/s4-3-concept-art.webp
+  [20/120] run s5#4 concept-art → lexicon/run/s5-5-concept-art.webp
+  [21/120] run s9#5 concept-art → lexicon/run/s9-6-concept-art.webp
+  [22/120] flame s0#0 concept-art → lexicon/flame/s0-1-concept-art.webp
+  [23/120] flame s2#4 concept-art → lexicon/flame/s2-5-concept-art.webp
+  [24/120] flame s4#2 concept-art → lexicon/flame/s4-3-concept-art.webp
+  [25/120] flame s6#5 concept-art → lexicon/flame/s6-6-concept-art.webp
+  [26/120] flame s7#0 concept-art → lexicon/flame/s7-1-concept-art.webp
+  [27/120] flame s8#5 concept-art → lexicon/flame/s8-6-concept-art.webp
+  [28/120] flame s9#4 concept-art → lexicon/flame/s9-5-concept-art.webp
+  [29/120] flame s10#4 concept-art → lexicon/flame/s10-5-concept-art.webp
+  [30/120] dream s0#5 concept-art → lexicon/dream/s0-6-concept-art.webp
+  [31/120] flame s7#2 3d-toy → lexicon/flame/s7-3-3d-toy.webp
+  [32/120] dream s1#0 chalkboard → lexicon/dream/s1-1-chalkboard.webp
+  [33/120] run s10#2 graphic-novel → lexicon/run/s10-3-graphic-novel.webp
+  [34/120] flame s11#3 graphic-novel → lexicon/flame/s11-4-graphic-novel.webp
+  [35/120] run s6#2 neon-sign → lexicon/run/s6-3-neon-sign.webp
+  [36/120] run s8#0 neon-sign → lexicon/run/s8-1-neon-sign.webp
+  [37/120] run s10#0 neon-sign → lexicon/run/s10-1-neon-sign.webp
+  [38/120] flame s7#5 neon-sign → lexicon/flame/s7-6-neon-sign.webp
+  [39/120] flame s11#1 neon-sign → lexicon/flame/s11-2-neon-sign.webp
+  [40/120] flame s7#1 papercut → lexicon/flame/s7-2-papercut.webp
+  [41/120] run s6#0 pixel → lexicon/run/s6-1-pixel.webp
+  [42/120] flame s7#3 pixel → lexicon/flame/s7-4-pixel.webp
+  [43/120] flame s11#0 pixel → lexicon/flame/s11-1-pixel.webp
+  [44/120] run s10#1 stained-glass → lexicon/run/s10-2-stained-glass.webp
+  [45/120] flame s11#2 stained-glass → lexicon/flame/s11-3-stained-glass.webp
+  [46/120] run s6#1 stickers → lexicon/run/s6-2-stickers.webp
+  [47/120] flame s7#4 stickers → lexicon/flame/s7-5-stickers.webp
+  [48/120] run s4#1 film-still → lexicon/run/s4-2-film-still.webp
+  [49/120] run s5#3 film-still → lexicon/run/s5-4-film-still.webp
+  [50/120] run s9#4 film-still → lexicon/run/s9-5-film-still.webp
+  [51/120] flame s2#3 film-still → lexicon/flame/s2-4-film-still.webp
+  [52/120] flame s4#1 film-still → lexicon/flame/s4-2-film-still.webp
+  [53/120] flame s5#5 film-still → lexicon/flame/s5-6-film-still.webp
+  [54/120] flame s6#3 film-still → lexicon/flame/s6-4-film-still.webp
+  [55/120] flame s8#4 film-still → lexicon/flame/s8-5-film-still.webp
+  [56/120] flame s9#3 film-still → lexicon/flame/s9-4-film-still.webp
+  [57/120] flame s10#3 film-still → lexicon/flame/s10-4-film-still.webp
+  [58/120] dream s0#3 film-still → lexicon/dream/s0-4-film-still.webp
+  [59/120] flame s6#4 analog → lexicon/flame/s6-5-analog.webp
+  [60/120] dream s0#4 analog → lexicon/dream/s0-5-analog.webp
+  [61/120] run s4#4 cinema → lexicon/run/s4-5-cinema.webp
+  [62/120] run s6#4 cinema → lexicon/run/s6-5-cinema.webp
+  [63/120] run s7#1 cinema → lexicon/run/s7-2-cinema.webp
+  [64/120] run s8#2 cinema → lexicon/run/s8-3-cinema.webp
+  [65/120] run s9#0 cinema → lexicon/run/s9-1-cinema.webp
+  [66/120] run s10#5 cinema → lexicon/run/s10-6-cinema.webp
+  [67/120] flame s0#2 cinema → lexicon/flame/s0-3-cinema.webp
+  [68/120] flame s1#1 cinema → lexicon/flame/s1-2-cinema.webp
+  [69/120] flame s1#2 noir → lexicon/flame/s1-3-noir.webp
+  [70/120] flame s3#1 cinema → lexicon/flame/s3-2-cinema.webp
+  [71/120] flame s4#4 cinema → lexicon/flame/s4-5-cinema.webp
+  [72/120] run s4#5 photo → lexicon/run/s4-6-photo.webp
+  [73/120] run s5#0 photo → lexicon/run/s5-1-photo.webp
+  [74/120] run s6#5 photo → lexicon/run/s6-6-photo.webp
+  [75/120] run s7#2 photo → lexicon/run/s7-3-photo.webp
+  [76/120] run s7#3 neon-night → lexicon/run/s7-4-neon-night.webp
+  [77/120] run s8#3 photo → lexicon/run/s8-4-photo.webp
+  [78/120] run s8#4 neon-night → lexicon/run/s8-5-neon-night.webp
+  [79/120] run s9#1 photo → lexicon/run/s9-2-photo.webp
+  [80/120] flame s0#3 photo → lexicon/flame/s0-4-photo.webp
+  [81/120] flame s1#3 photo → lexicon/flame/s1-4-photo.webp
+  [82/120] flame s1#4 neon-night → lexicon/flame/s1-5-neon-night.webp
+  [83/120] flame s2#0 photo → lexicon/flame/s2-1-photo.webp
+  [84/120] flame s3#2 photo → lexicon/flame/s3-3-photo.webp
+  [85/120] flame s4#5 photo → lexicon/flame/s4-6-photo.webp
+  [86/120] flame s9#0 photo → lexicon/flame/s9-1-photo.webp
+  [87/120] flame s10#0 photo → lexicon/flame/s10-1-photo.webp
+  [88/120] run s5#1 dream-collage → lexicon/run/s5-2-dream-collage.webp
+  [89/120] run s7#4 dream-collage → lexicon/run/s7-5-dream-collage.webp
+  [90/120] run s7#5 poster → lexicon/run/s7-6-poster.webp
+  [91/120] run s8#5 dream-collage → lexicon/run/s8-6-dream-collage.webp
+  [92/120] run s9#2 dream-collage → lexicon/run/s9-3-dream-collage.webp
+  [93/120] flame s0#4 dream-collage → lexicon/flame/s0-5-dream-collage.webp
+  [94/120] flame s1#5 dream-collage → lexicon/flame/s1-6-dream-collage.webp
+  [95/120] flame s2#1 dream-collage → lexicon/flame/s2-2-dream-collage.webp
+  [96/120] flame s3#3 dream-collage → lexicon/flame/s3-4-dream-collage.webp
+  [97/120] flame s5#0 dream-collage → lexicon/flame/s5-1-dream-collage.webp
+  [98/120] flame s5#1 poster → lexicon/flame/s5-2-poster.webp
+  [99/120] flame s6#0 dream-collage → lexicon/flame/s6-1-dream-collage.webp
+  [100/120] flame s8#0 dream-collage → lexicon/flame/s8-1-dream-collage.webp
+  [101/120] flame s9#1 dream-collage → lexicon/flame/s9-2-dream-collage.webp
+  [102/120] flame s10#1 dream-collage → lexicon/flame/s10-2-dream-collage.webp
+  [103/120] flame s3#5 oil-light → lexicon/flame/s3-6-oil-light.webp
+  [104/120] flame s5#4 oil-light → lexicon/flame/s5-5-oil-light.webp
+  [105/120] flame s6#2 oil-light → lexicon/flame/s6-3-oil-light.webp
+  [106/120] flame s8#3 dark-surreal → lexicon/flame/s8-4-dark-surreal.webp
+  [107/120] dream s0#2 oil-light → lexicon/dream/s0-3-oil-light.webp
+  [108/120] run s5#2 word-portrait → lexicon/run/s5-3-word-portrait.webp
+  [109/120] run s9#3 word-portrait → lexicon/run/s9-4-word-portrait.webp
+  [110/120] flame s0#5 word-portrait → lexicon/flame/s0-6-word-portrait.webp
+  [111/120] flame s2#2 word-portrait → lexicon/flame/s2-3-word-portrait.webp
+  [112/120] flame s3#4 word-portrait → lexicon/flame/s3-5-word-portrait.webp
+  [113/120] flame s4#0 word-portrait → lexicon/flame/s4-1-word-portrait.webp
+  [114/120] flame s5#2 word-portrait → lexicon/flame/s5-3-word-portrait.webp
+  [115/120] flame s5#3 word-neon → lexicon/flame/s5-4-word-neon.webp
+  [116/120] flame s6#1 word-portrait → lexicon/flame/s6-2-word-portrait.webp
+  [117/120] flame s8#1 word-portrait → lexicon/flame/s8-2-word-portrait.webp
+  [118/120] flame s8#2 word-neon → lexicon/flame/s8-3-word-neon.webp
+  [119/120] flame s9#2 word-portrait → lexicon/flame/s9-3-word-portrait.webp
+  [120/120] flame s10#2 word-portrait → lexicon/flame/s10-3-word-portrait.webp
+
+atelier done: 120 rendered, 0 failed → lexicon.json updated + published
+2026-07-17T05:05:53-04:00 · cycle 5: 625/1000 painted · 25 shows audited (21 reels built) · 7 pruned · GPU 47°C 13279MiB
+vision-worker: 817 unread images · reading 300 with qwen3-vl:8b
+  10/300 (last: flame q=0.95 m=0.98)
+  20/300 (last: flame q=0.9 m=0.9)
+  30/300 (last: flame q=0.9 m=0.95)
+  40/300 (last: flame q=0.9 m=0.95)
+  50/300 (last: flame q=0.95 m=0.98)
+  60/300 (last: flame q=0.85 m=0.9)
+  70/300 (last: flame q=0.95 m=0.85)
+  80/300 (last: flame q=0.9 m=0.8)
+  90/300 (last: glass q=0.9 m=0.95)
+  100/300 (last: glass q=0.95 m=0.85)
+  ERROR lexicon/glass/s8-3-concept-art.webp: fetch 503
+  110/300 (last: glass q=0.95 m=0.85)
+  120/300 (last: glass q=0.95 m=0.9)
+  130/300 (last: fall q=0.95 m=0.9)
+  140/300 (last: fall q=0.95 m=0.9)
+  150/300 (last: fall q=0.9 m=0.85)
+  160/300 (last: fall q=0.9 m=0.9)
+  170/300 (last: run q=0.9 m=0.3)
+  180/300 (last: run q=0.85 m=0.9)
+  190/300 (last: run q=0.95 m=0.98)
+  200/300 (last: run q=0.9 m=0.8)
+  210/300 (last: run q=0.95 m=0.98)
+  220/300 (last: run q=0.7 m=0.8)
+  230/300 (last: bass q=0.95 m=0.8)
+  240/300 (last: bass q=0.85 m=0.9)
+  250/300 (last: bass q=0.9 m=0.9)
+  260/300 (last: bass q=0.95 m=0.85)
+  270/300 (last: bass q=0.9 m=0.85)
+  280/300 (last: bass q=0.9 m=0.8)
+  290/300 (last: bass q=0.85 m=0.7)
+✦ vision index: 3645 readings (299 new, 1 failed) · 7 low-quality flagged
+2026-07-17T05:23:12-04:00 · building reel: move-over-minimal-groove-mix
+match-reel move-over-minimal-groove-mix: 75 song words · 664 indexed candidates
+  stage A: 25 → judging 25
+✦ reel: 21 images (19 featured) → scripts/song-analysis/profiles/move-over-minimal-groove-mix/lexicon-reel.json
+   ★ heat 1 2-word-portrait — Perfectly aligns with dance floor energy and summer heat theme
+   ★ bass 1 5-word-portrait — Image aligns with bass theme, stage energy, and summer night vibe.
+   ★ bass 1 3-word-portrait — Image aligns with dance floor dominance and summer night energy
+   ★ heat 0.95 5-word-portrait — Matches summer energy, stage vibe, and emotional intensity
+   ★ lights 0.95 2-word-portrait — matches summer night energy and dance floor vibe with lights and party atmosphere
+   ★ lights 0.95 2-dark-surreal — fits summer night energy, crowd unity, glowing lights match lyric
+   ★ drip 0.95 1-word-portrait — matches summer night energy, luxury, and confident vibe
+   ★ different 0.95 2-word-portrait — Confident stage presence matches song's swagger and summer energy
+   ★ different 0.95 4-word-portrait — Confident, stylish, and cinematic club scene matches song's mood and themes
+   ★ move 0.9 4-word-portrait — Cinematic urban scene with spotlight aligns with retro club aesthetic and confident mood.
+   ★ lights 0.9 1-word-portrait — matches retro club mood, intimate lighting, elegant typography
+   ★ move 0.9 2-word-portrait — Confident, stylish bar scene matches dance floor dominance and retro club vibe.
+✦ published → planets/move-over-minimal-groove-mix/lexicon-reel.json
+── audit move-over-minimal-groove-mix: 21 reel images
+✦ audit: 1 shows · 21 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel move-over-minimal-groove-mix: 75 song words · 664 indexed candidates
+  stage A: 25 → judging 25
+✦ reel: 20 images (20 featured) → scripts/song-analysis/profiles/move-over-minimal-groove-mix/lexicon-reel.json
+   ★ bass 1 2-word-portrait — Perfect fit for retro club, bass focus, summer energy, confident style
+   ★ bass 1 5-word-portrait — Perfect fit for dance floor dominance and retro club aesthetic
+   ★ bass 1 3-word-portrait — image aligns with dance floor dominance and summer night energy
+   ★ different 1 2-word-portrait — Perfect fit for dance floor dominance and retro club aesthetic
+   ★ lights 1 2-word-portrait — perfect fit for retro club and summer night energy
+   ★ heat 1 2-word-portrait — perfectly aligns with summer energy and dance floor dominance
+   ★ move 1 5-word-portrait — Perfect fit for dance floor dominance and retro club aesthetic.
+   ★ heat 1 6-word-portrait — Perfect fit for retro club, summer heat, and dance floor dominance.
+   ★ heat 1 5-word-portrait — Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.
+   ★ move 1 4-word-portrait — perfect fit for dance floor dominance and retro club aesthetic
+   ★ move 1 2-word-portrait — Perfect fit for dance floor dominance and retro club aesthetic
+   ★ different 1 4-word-portrait — Perfect fit for retro club, confidence, and individuality
+✦ published → planets/move-over-minimal-groove-mix/lexicon-reel.json
+2026-07-17T05:25:23-04:00 · building reel: my-soul-lives-in-seoul
+match-reel my-soul-lives-in-seoul: 388 song words · 952 indexed candidates
+  stage A: 42 → judging 42
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/my-soul-lives-in-seoul/lexicon-reel.json
+   ★ seoul 0.95 3-word-portrait — Cinematic, hopeful, and tied to Seoul's identity and longing
+   ★ seoul 0.95 6-word-portrait — Captures Seoul's essence with nostalgia and serenity fitting the song's mood
+   ★ phone 0.95 1 — Captures late-night digital connection and intimacy central to the song
+   ★ glow 0.95 1-word-portrait — Warm intimacy matches upbeat romantic resilience and global love theme
+   ★ heart 0.95 4-dark-surreal — Cosmic heart symbolizes love's transcendence across distance and cultures
+   ★ soul 0.95 5-word-portrait — Cosmic unity, collective touch, and soul symbolism align with the song's themes of connect
+   ★ save 0.95 4-film-still — Captures memory preservation, hope, and longing central to the song
+   ★ love 0.9 1-word-portrait — Romantic intimacy and shared experience align with song's themes of love and connection
+   ★ night 0.9 6-word-portrait — Captures nighttime intimacy and urban connection central to the song
+   ★ glow 0.9 5-word-neon — Neon glow symbolizes hope and connection in urban nightlife
+   ★ rhythm 0.9 2-word-portrait — Matches musical theme, intimate focus, and global connection symbolism
+   ★ dreams 0.9 1 — Modern connection, dreams, and nighttime align with song's themes
+✦ published → planets/my-soul-lives-in-seoul/lexicon-reel.json
+── audit my-soul-lives-in-seoul: 32 reel images
+✦ audit: 1 shows · 32 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel my-soul-lives-in-seoul: 388 song words · 952 indexed candidates
+  stage A: 42 → judging 42
+✦ reel: 32 images (32 featured) → scripts/song-analysis/profiles/my-soul-lives-in-seoul/lexicon-reel.json
+   ★ glow 0.95 1-word-portrait — Intimate glow symbolizes connection; urban setting aligns with Seoul; hopeful mood matches
+   ★ dreams 0.95 1 — Captures long-distance connection, hope, and digital unity in a romantic setting
+   ★ soul 0.95 1-stickers — Symbolizes soul's presence in Seoul, fits upbeat resilience and global theme
+   ★ night 0.95 3-photo — Intimate nighttime moment aligns with lyric's late-night connection and long-distance them
+   ★ dreams 0.95 2 — Captures longing, connection, and dreams across distance
+   ★ night 0.95 6-word-portrait — Captures urban night, long-distance connection, and hopeful resilience
+   ★ save 0.95 1-word-portrait — Romantic, intimate, and tied to memory preservation in long-distance love
+   ★ seoul 0.95 6-word-portrait — Cultural identity, emotional warmth, and urban setting align with song's themes and mood.
+   ★ crazy 0.95 4-film-still — glitchy romance, digital turbulence, neon aesthetics match song's themes
+   ★ seoul 0.95 3-word-portrait — Symbolizes Seoul as a soulful, nostalgic anchor in a global relationship
+   ★ rhythm 0.95 5-word-portrait — Urban Seoul, rhythm as connection, cultural fusion align with song's themes
+   ★ glow 0.95 5-word-neon — Neon glow symbolizes digital connection and resilience in long-distance love
+✦ published → planets/my-soul-lives-in-seoul/lexicon-reel.json
+2026-07-17T05:28:49-04:00 · building reel: one-more-breath-back-to-myself
+match-reel one-more-breath-back-to-myself: 37 song words · 428 indexed candidates
+  stage A: 9 → judging 9
+✦ reel: 9 images (9 featured) → scripts/song-analysis/profiles/one-more-breath-back-to-myself/lexicon-reel.json
+   ★ slow 0.95 2-word-portrait — matches introspective mood, emotional restraint, and self-preservation
+   ★ light 0.95 4-film-still — matches introspective mood, light/dark duality, cinematic realism
+   ★ slow 0.95 5-word-portrait — fits mood, themes, and symbolism of introspection and isolation
+   ★ slow 0.95 6-word-portrait — matches introspective, calm, and melancholic mood
+   ★ light 0.9 2-word-portrait — fits introspective mood with warm, solitary light
+   ★ light 0.9 1-dream-collage — matches mood and themes of isolation and introspection
+   ★ move 0.9 3-cinema — Ephemeral beauty and quiet movement align with introspective, hypnotic mood.
+   ★ move 0.9 5-word-portrait — Intimate, contemplative mood matches song's introspective tone
+   ★ move 0.7 5-word-portrait — Confident stillness contrasts with song's introspection but fits mood and theme
+✦ published → planets/one-more-breath-back-to-myself/lexicon-reel.json
+── audit one-more-breath-back-to-myself: 9 reel images
+✦ audit: 1 shows · 9 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 6 timing flags · 0 errors
+match-reel one-more-breath-back-to-myself: 37 song words · 428 indexed candidates
+  stage A: 9 → judging 9
+✦ reel: 9 images (9 featured) → scripts/song-analysis/profiles/one-more-breath-back-to-myself/lexicon-reel.json
+   ★ slow 1 2-word-portrait — Perfectly matches the song's mood and themes of introspection and isolation.
+   ★ slow 1 5-word-portrait — Perfectly aligns with the song's hypnotic, introspective mood and themes.
+   ★ move 0.95 5-word-portrait — fits mood and themes of introspection and stillness
+   ★ light 0.95 4-film-still — matches hypnotic mood, introspective theme, and late-night setting
+   ★ slow 0.95 6-word-portrait — matches hypnotic, introspective mood and themes
+   ★ move 0.95 5-word-portrait — fits mood and themes of introspection and motion within stillness
+   ★ light 0.95 2-word-portrait — matches mood and themes of introspection and solitude
+   ★ light 0.95 1-dream-collage — matches mood and themes of introspection and isolation
+   ★ move 0.9 3-cinema — matches hypnotic, introspective mood and themes of transience
+✦ published → planets/one-more-breath-back-to-myself/lexicon-reel.json
+2026-07-17T05:30:04-04:00 · building reel: one-tap-away
+match-reel one-tap-away: 179 song words · 954 indexed candidates
+  stage A: 30 → judging 30
+✦ reel: 26 images (25 featured) → scripts/song-analysis/profiles/one-tap-away/lexicon-reel.json
+   ★ tap 0.95 4-word-portrait — captures digital anxiety and emotional distance
+   ★ heart 0.95 1-photo — powerful symbolism of digital overload and emotional distance
+   ★ heart 0.95 1 — Symbolizes digital isolation, emotional distance, and identity fracture
+   ★ cold 0.95 5-word-portrait — evokes digital isolation, emotional coldness, and cinematic mood
+   ★ tap 0.95 2-neon-night — captures isolation, technology, and urban melancholy
+   ★ save 0.95 2-word-portrait — Captures digital isolation, emotional plea, and minimalist melancholy
+   ★ love 0.95 6-word-portrait — fits melancholic mood, symbolizes lost connection and digital isolation
+   ★ fire 0.9 1-film-still — captures isolation, melancholy, and symbolic fire
+   ★ glow 0.9 3-neon-sign — fits digital isolation, eerie glow reflects screen's emotional distance
+   ★ light 0.9 4-neon-sign — evokes digital isolation, artificial light, and melancholy
+   ★ move 0.9 5-word-portrait — captures introspective stillness and digital glow aligning with theme
+   ★ light 0.9 1-cinema — Captures isolation, mood, and transient hope in a digital age
+✦ published → planets/one-tap-away/lexicon-reel.json
+── audit one-tap-away: 26 reel images
+✦ audit: 1 shows · 26 scanned (0 fresh-skipped) · 0 pruned · 0 misfits · 0 timing flags · 0 errors
+match-reel one-tap-away: 179 song words · 954 indexed candidates
+  stage A: 30 → judging 30
+✦ reel: 26 images (26 featured) → scripts/song-analysis/profiles/one-tap-away/lexicon-reel.json
+   ★ heart 1 1 — image perfectly reflects digital isolation and emotional fracture
+   ★ move 0.95 5-word-portrait — captures digital isolation, melancholy, and superficial connection
+   ★ fire 0.95 6-word-portrait — powerful metaphor for digital isolation and superficial connection
+   ★ light 0.95 1-cinema — evokes digital isolation, loneliness, and superficial connectivity
+   ★ fire 0.95 6-pixel — Pixelated campfires symbolize digital isolation and superficial connection
+   ★ fire 0.95 1-film-still — captures digital isolation, melancholy, and contrast between warmth and emptiness
+   ★ tap 0.95 4-word-portrait — captures digital anxiety and emotional distance
+   ★ glow 0.95 3-neon-sign — neon glow reflects digital isolation and melancholic mood
+   ★ cold 0.95 5-word-portrait — captures digital isolation, melancholy, and emotional distance
+   ★ cold 0.95 5-dream-collage — cosmic emptiness mirrors digital isolation, pale blue glow reflects superficial warmth
+   ★ heart 0.95 4-dark-surreal — matches song's themes of emotional distance and digital emptiness
+   ★ save 0.95 3-word-portrait — captures digital isolation, melancholy, and superficial connectivity
+✦ published → planets/one-tap-away/lexicon-reel.json
+2026-07-17T05:32:46-04:00 · building reel: one-tap-away-riverboat-bad-boys-remix
+match-reel one-tap-away-riverboat-bad-boys-remix: 130 song words · 491 indexed candidates
+  stage A: 18 → judging 18
+✦ reel: 16 images (16 featured) → scripts/song-analysis/profiles/one-tap-away-riverboat-bad-boys-remix/lexicon-reel.json
+   ★ tap 0.95 4-word-portrait — captures digital anxiety and isolation central to the song
+   ★ save 0.95 3-neon-sign — fits digital isolation, alienation, and neon visuals of the song's world
+   ★ light 0.95 4-neon-sign — fits noir mood, digital isolation, emotional distance
+   ★ heart 0.95 1-photo — matches digital isolation, melancholy, and emotional void
+   ★ heart 0.95 1 — Symbolizes emotional fracture and digital isolation perfectly
+   ★ save 0.95 3-word-portrait — fits noir mood, digital isolation theme, lonely atmosphere
+   ★ dream 0.95 2-anime — fits noir cyberpunk mood, digital dreams symbolism, lonely atmosphere
+   ★ dream 0.95 3-manga-line — fits noir melancholy and digital chaos themes
+   ★ tap 0.95 2-neon-night — fits noir mood, digital isolation theme, cinematic lighting
+   ★ light 0.9 1-cinema — evokes loneliness and digital isolation with glowing light as false connection
+   ★ heart 0.9 4-dark-surreal — matches digital emptiness, vulnerability, and noir melancholy
+   ★ love 0.9 6-word-portrait — matches lonely paranoia and digital isolation themes
+✦ published → planets/one-tap-away-riverboat-bad-boys-remix/lexicon-reel.json
+── audit one-tap-away-riverboat-bad-boys-remix: 16 reel images
+  ≠ misfit lexicon/dream/s0-4-film-still.webp (q=0.9 wm=0.85 fit=0.3)
+✦ audit: 1 shows · 16 scanned (0 fresh-skipped) · 0 pruned · 1 misfits · 0 timing flags · 0 errors
+match-reel one-tap-away-riverboat-bad-boys-remix: 130 song words · 491 indexed candidates
+  stage A: 18 → judging 18
+✦ reel: 16 images (16 featured) → scripts/song-analysis/profiles/one-tap-away-riverboat-bad-boys-remix/lexicon-reel.json
+   ★ heart 1 4-dark-surreal — Perfectly aligns with digital decay, loneliness, and noir themes
+   ★ tap 1 1-cinema — perfectly aligns with digital isolation and noir mood
+   ★ heart 1 1 — Perfectly aligns with digital isolation and noir melancholy
+   ★ tap 1 4-word-portrait — Perfectly captures digital isolation and vulnerability in a noir setting
+   ★ dream 1 3-manga-line — Perfectly aligns with digital isolation and noir melancholy
+   ★ light 0.95 4-neon-sign — matches digital isolation, noir mood, and superficial identity themes
+   ★ save 0.95 3-neon-sign — matches digital isolation, lonely paranoia, and noir themes
+   ★ heart 0.95 1-photo — matches digital isolation, loneliness, surreal symbolism
+   ★ love 0.95 6-neon-sign — Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them
+   ★ love 0.95 6-word-portrait — fits noir mood, digital chaos, private vs public self
+   ★ save 0.95 3-word-portrait — matches noir mood, digital isolation theme, cinematic visuals
+   ★ tap 0.95 2-neon-night — Strong symbolism of digital disconnection and lonely paranoia fits the song's themes and m
+✦ published → planets/one-tap-away-riverboat-bad-boys-remix/lexicon-reel.json
+atelier: 1551 words · 120 jobs queued (gravity budgets h6/m2/l0, limit 120)
+  recipes: anime×10 · manga-line×2 · concept-art×9 · chalkboard×1 · graphic-novel×3 · neon-sign×3 · papercut×2 · pixel×3 · stained-glass×4 · stickers×1 · storybook×1 · watercolor×1 · film-still×8 · analog×3 · cinema×12 · noir×2 · photo×13 · neon-night×3 · dream-collage×12 · poster×2 · oil-light×5 · dark-surreal×3 · word-portrait×13 · word-neon×4
+  [1/120] dream s2#1 anime → lexicon/dream/s2-2-anime.webp
+  [2/120] dream s3#5 anime → lexicon/dream/s3-6-anime.webp
+  [3/120] dream s4#3 anime → lexicon/dream/s4-4-anime.webp
+  [4/120] dream s5#0 anime → lexicon/dream/s5-1-anime.webp
+  [5/120] heaven s2#2 anime → lexicon/heaven/s2-3-anime.webp
+  [6/120] hell s0#4 anime → lexicon/hell/s0-5-anime.webp
+  [7/120] hell s1#0 anime → lexicon/hell/s1-1-anime.webp
+  [8/120] dreams s1#3 anime → lexicon/dreams/s1-4-anime.webp
+  [9/120] dreams s2#1 anime → lexicon/dreams/s2-2-anime.webp
+  [10/120] dreams s6#0 anime → lexicon/dreams/s6-1-anime.webp
+  [11/120] heaven s2#3 manga-line → lexicon/heaven/s2-4-manga-line.webp
+  [12/120] hell s0#5 manga-line → lexicon/hell/s0-6-manga-line.webp
+  [13/120] dream s2#0 concept-art → lexicon/dream/s2-1-concept-art.webp
+  [14/120] dream s3#0 concept-art → lexicon/dream/s3-1-concept-art.webp
+  [15/120] dream s7#4 concept-art → lexicon/dream/s7-5-concept-art.webp
+  [16/120] heaven s1#5 concept-art → lexicon/heaven/s1-6-concept-art.webp
+  [17/120] hell s2#5 concept-art → lexicon/hell/s2-6-concept-art.webp
+  [18/120] dreams s1#2 concept-art → lexicon/dreams/s1-3-concept-art.webp
+  [19/120] dreams s2#0 concept-art → lexicon/dreams/s2-1-concept-art.webp
+  [20/120] dreams s3#5 concept-art → lexicon/dreams/s3-6-concept-art.webp
+  [21/120] dreams s4#0 concept-art → lexicon/dreams/s4-1-concept-art.webp
+  [22/120] dreams s4#4 chalkboard → lexicon/dreams/s4-5-chalkboard.webp
+  [23/120] dream s3#4 graphic-novel → lexicon/dream/s3-5-graphic-novel.webp
+  [24/120] heaven s2#1 graphic-novel → lexicon/heaven/s2-2-graphic-novel.webp
+  [25/120] hell s0#3 graphic-novel → lexicon/hell/s0-4-graphic-novel.webp
+  [26/120] dream s3#2 neon-sign → lexicon/dream/s3-3-neon-sign.webp
+  [27/120] dream s4#2 neon-sign → lexicon/dream/s4-3-neon-sign.webp
+  [28/120] hell s0#1 neon-sign → lexicon/hell/s0-2-neon-sign.webp
+  [29/120] dream s7#5 papercut → lexicon/dream/s7-6-papercut.webp
+  [30/120] dreams s4#3 papercut → lexicon/dreams/s4-4-papercut.webp
+  [31/120] dream s3#1 pixel → lexicon/dream/s3-2-pixel.webp
+  [32/120] dream s4#0 pixel → lexicon/dream/s4-1-pixel.webp
+  [33/120] hell s0#0 pixel → lexicon/hell/s0-1-pixel.webp
+  [34/120] dream s3#3 stained-glass → lexicon/dream/s3-4-stained-glass.webp
+  [35/120] heaven s2#0 stained-glass → lexicon/heaven/s2-1-stained-glass.webp
+  [36/120] hell s0#2 stained-glass → lexicon/hell/s0-3-stained-glass.webp
+  [37/120] dreams s4#5 stained-glass → lexicon/dreams/s4-6-stained-glass.webp
+  [38/120] dream s4#1 stickers → lexicon/dream/s4-2-stickers.webp
+  [39/120] dreams s4#2 storybook → lexicon/dreams/s4-3-storybook.webp
+  [40/120] dreams s4#1 watercolor → lexicon/dreams/s4-2-watercolor.webp
+  [41/120] dream s6#4 film-still → lexicon/dream/s6-5-film-still.webp
+  [42/120] dream s7#3 film-still → lexicon/dream/s7-4-film-still.webp
+  [43/120] dream s8#5 film-still → lexicon/dream/s8-6-film-still.webp
+  [44/120] heaven s1#4 film-still → lexicon/heaven/s1-5-film-still.webp
+  [45/120] hell s1#5 film-still → lexicon/hell/s1-6-film-still.webp
+  [46/120] hell s2#4 film-still → lexicon/hell/s2-5-film-still.webp
+  [47/120] dreams s0#4 film-still → lexicon/dreams/s0-5-film-still.webp
+  [48/120] dreams s3#4 film-still → lexicon/dreams/s3-5-film-still.webp
+  [49/120] dream s6#5 analog → lexicon/dream/s6-6-analog.webp
+  [50/120] dreams s0#5 analog → lexicon/dreams/s0-6-analog.webp
+  [51/120] dreams s7#0 analog → lexicon/dreams/s7-1-analog.webp
+  [52/120] dream s1#3 cinema → lexicon/dream/s1-4-cinema.webp
+  [53/120] dream s1#4 noir → lexicon/dream/s1-5-noir.webp
+  [54/120] dream s2#2 cinema → lexicon/dream/s2-3-cinema.webp
+  [55/120] dream s4#4 cinema → lexicon/dream/s4-5-cinema.webp
+  [56/120] dream s5#1 cinema → lexicon/dream/s5-2-cinema.webp
+  [57/120] dream s8#0 cinema → lexicon/dream/s8-1-cinema.webp
+  [58/120] heaven s1#0 cinema → lexicon/heaven/s1-1-cinema.webp
+  [59/120] heaven s2#4 cinema → lexicon/heaven/s2-5-cinema.webp
+  [60/120] heaven s2#5 noir → lexicon/heaven/s2-6-noir.webp
+  [61/120] hell s1#1 cinema → lexicon/hell/s1-2-cinema.webp
+  [62/120] dreams s1#4 cinema → lexicon/dreams/s1-5-cinema.webp
+  [63/120] dreams s2#2 cinema → lexicon/dreams/s2-3-cinema.webp
+  [64/120] dreams s3#0 cinema → lexicon/dreams/s3-1-cinema.webp
+  [65/120] dreams s6#1 cinema → lexicon/dreams/s6-2-cinema.webp
+  [66/120] dream s1#5 photo → lexicon/dream/s1-6-photo.webp
+  [67/120] dream s2#3 photo → lexicon/dream/s2-4-photo.webp
+  [68/120] dream s4#5 photo → lexicon/dream/s4-6-photo.webp
+  [69/120] dream s5#2 photo → lexicon/dream/s5-3-photo.webp
+  [70/120] dream s6#0 photo → lexicon/dream/s6-1-photo.webp
+  [71/120] dream s8#1 photo → lexicon/dream/s8-2-photo.webp
+  [72/120] heaven s0#0 photo → lexicon/heaven/s0-1-photo.webp
+  [73/120] heaven s0#1 neon-night → lexicon/heaven/s0-2-neon-night.webp
+  [74/120] heaven s1#1 photo → lexicon/heaven/s1-2-photo.webp
+  [75/120] hell s1#2 photo → lexicon/hell/s1-3-photo.webp
+  [76/120] dreams s1#5 photo → lexicon/dreams/s1-6-photo.webp
+  [77/120] dreams s2#3 photo → lexicon/dreams/s2-4-photo.webp
+  [78/120] dreams s3#1 photo → lexicon/dreams/s3-2-photo.webp
+  [79/120] dreams s5#0 neon-night → lexicon/dreams/s5-1-neon-night.webp
+  [80/120] dreams s6#2 photo → lexicon/dreams/s6-3-photo.webp
+  [81/120] dreams s6#3 neon-night → lexicon/dreams/s6-4-neon-night.webp
+  [82/120] dream s2#4 dream-collage → lexicon/dream/s2-5-dream-collage.webp
+  [83/120] dream s5#3 dream-collage → lexicon/dream/s5-4-dream-collage.webp
+  [84/120] dream s6#1 dream-collage → lexicon/dream/s6-2-dream-collage.webp
+  [85/120] dream s8#2 dream-collage → lexicon/dream/s8-3-dream-collage.webp
+  [86/120] heaven s0#2 dream-collage → lexicon/heaven/s0-3-dream-collage.webp
+  [87/120] heaven s1#2 dream-collage → lexicon/heaven/s1-3-dream-collage.webp
+  [88/120] hell s1#3 dream-collage → lexicon/hell/s1-4-dream-collage.webp
+  [89/120] hell s2#0 dream-collage → lexicon/hell/s2-1-dream-collage.webp
+  [90/120] dreams s2#4 dream-collage → lexicon/dreams/s2-5-dream-collage.webp
+  [91/120] dreams s3#2 dream-collage → lexicon/dreams/s3-3-dream-collage.webp
+  [92/120] dreams s5#1 dream-collage → lexicon/dreams/s5-2-dream-collage.webp
+  [93/120] dreams s5#2 poster → lexicon/dreams/s5-3-poster.webp
+  [94/120] dreams s6#4 dream-collage → lexicon/dreams/s6-5-dream-collage.webp
+  [95/120] dreams s6#5 poster → lexicon/dreams/s6-6-poster.webp
+  [96/120] dream s5#5 oil-light → lexicon/dream/s5-6-oil-light.webp
+  [97/120] dream s6#3 dark-surreal → lexicon/dream/s6-4-dark-surreal.webp
+  ERROR dream s7#2 oil-light: fetch failed
+  ERROR dream s8#4 oil-light: fetch failed
+  ERROR heaven s0#5 dark-surreal: fetch failed
+  ERROR hell s2#3 dark-surreal: fetch failed
+  ERROR dreams s0#3 oil-light: fetch failed
+  ERROR dreams s5#5 oil-light: fetch failed
+  ERROR dream s2#5 word-portrait: fetch failed
+  ERROR dream s5#4 word-portrait: fetch failed
+  ERROR dream s6#2 word-portrait: fetch failed
+  ERROR dream s7#0 word-portrait: fetch failed
+  ERROR dream s7#1 word-neon: fetch failed
+  ERROR dream s8#3 word-portrait: fetch failed
+  ERROR heaven s0#3 word-portrait: fetch failed
+  ERROR heaven s0#4 word-neon: fetch failed
+  ERROR heaven s1#3 word-portrait: fetch failed
+  ERROR hell s1#4 word-portrait: fetch failed
+  ERROR hell s2#1 word-portrait: fetch failed
+  ERROR hell s2#2 word-neon: fetch failed
+  ERROR dreams s0#2 word-portrait: fetch failed
+  ERROR dreams s2#5 word-portrait: fetch failed
+  ERROR dreams s3#3 word-portrait: fetch failed
+  ERROR dreams s5#3 word-portrait: fetch failed
+  ERROR dreams s5#4 word-neon: fetch failed
+
+atelier done: 97 rendered, 23 failed → lexicon.json updated + published
+2026-07-17T05:47:59-04:00 · cycle 6: 722/1000 painted · 30 shows audited (26 reels built) · 7 pruned · GPU 50°C 7573MiB
+vision-worker: 615 unread images · reading 300 with qwen3-vl:8b

@@ -1,0 +1,237 @@
+{
+  "v": 1,
+  "id": "one-tap-away-riverboat-bad-boys-remix",
+  "generatedAt": "2026-07-17T09:34:26.834Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 491,
+    "judged": 18,
+    "accepted": 16,
+    "kept": 16
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "key": "lexicon/heart/s19-4-dark-surreal.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 1,
+      "cosine": 0.724,
+      "reason": "Perfectly aligns with digital decay, loneliness, and noir themes",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-1-cinema.webp",
+      "key": "lexicon/tap/s5-1-cinema.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 1,
+      "cosine": 0.709,
+      "reason": "perfectly aligns with digital isolation and noir mood",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+      "key": "lexicon/heart/s0-1.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 1,
+      "cosine": 0.663,
+      "reason": "Perfectly aligns with digital isolation and noir melancholy",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-4-word-portrait.webp",
+      "key": "lexicon/tap/s5-4-word-portrait.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 1,
+      "cosine": 0.633,
+      "reason": "Perfectly captures digital isolation and vulnerability in a noir setting",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 1,
+      "cosine": 0.63,
+      "reason": "Perfectly aligns with digital isolation and noir melancholy",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "up overnight Everybody's where they saw the light Same ones quiet when you need a find",
+      "t": 109.877,
+      "score": 0.95,
+      "cosine": 0.696,
+      "reason": "matches digital isolation, noir mood, and superficial identity themes",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "key": "lexicon/save/s8-3-neon-sign.webp",
+      "word": "save",
+      "line": "see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.692,
+      "score": 0.95,
+      "cosine": 0.681,
+      "reason": "matches digital isolation, lonely paranoia, and noir themes",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
+      "key": "lexicon/heart/s19-1-photo.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 0.95,
+      "cosine": 0.654,
+      "reason": "matches digital isolation, loneliness, surreal symbolism",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
+      "key": "lexicon/love/s11-6-neon-sign.webp",
+      "word": "love",
+      "line": "You can call me any day You can love me in private But scroll",
+      "t": 19.41,
+      "score": 0.95,
+      "cosine": 0.635,
+      "reason": "Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "You can call me any day You can love me in private But scroll",
+      "t": 19.41,
+      "score": 0.95,
+      "cosine": 0.627,
+      "reason": "fits noir mood, digital chaos, private vs public self",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
+      "key": "lexicon/save/s6-3-word-portrait.webp",
+      "word": "save",
+      "line": "see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.692,
+      "score": 0.95,
+      "cosine": 0.608,
+      "reason": "matches noir mood, digital isolation theme, cinematic visuals",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+      "key": "lexicon/tap/s1-2-neon-night.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 0.95,
+      "cosine": 0.595,
+      "reason": "Strong symbolism of digital disconnection and lonely paranoia fits the song's themes and m",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-2-anime.webp",
+      "key": "lexicon/dream/s1-2-anime.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.95,
+      "cosine": 0.542,
+      "reason": "fits noir cyberpunk mood, digital dreams, fractured connections",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
+      "key": "lexicon/light/s15-1-cinema.webp",
+      "word": "light",
+      "line": "up overnight Everybody's where they saw the light Same ones quiet when you need a find",
+      "t": 109.877,
+      "score": 0.9,
+      "cosine": 0.79,
+      "reason": "matches noir mood, solitary light symbolizes digital isolation, dockside setting fits song",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s16-3-cinema.webp",
+      "key": "lexicon/light/s16-3-cinema.webp",
+      "word": "light",
+      "line": "up overnight Everybody's where they saw the light Same ones quiet when you need a find",
+      "t": 109.877,
+      "score": 0.9,
+      "cosine": 0.589,
+      "reason": "matches lonely paranoia and fragile connection in noir setting",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-4-film-still.webp",
+      "key": "lexicon/dream/s0-4-film-still.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.8,
+      "cosine": 0.501,
+      "reason": "Captures loneliness and longing, ties to digital isolation and private vs public self",
+      "recipe": "4-film-still",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "heart": [
+      0,
+      2,
+      7
+    ],
+    "tap": [
+      1,
+      3,
+      11
+    ],
+    "dream": [
+      4,
+      12,
+      15
+    ],
+    "light": [
+      5,
+      13,
+      14
+    ],
+    "save": [
+      6,
+      10
+    ],
+    "love": [
+      8,
+      9
+    ]
+  }
+}

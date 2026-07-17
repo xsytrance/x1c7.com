@@ -1,0 +1,457 @@
+{
+  "v": 1,
+  "id": "cairo-still-dancing",
+  "generatedAt": "2026-07-17T06:18:15.979Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 1069,
+    "judged": 41,
+    "accepted": 35,
+    "kept": 32
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "word": "lights",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
+      "t": 36.48,
+      "score": 0.95,
+      "cosine": 0.756,
+      "reason": "Image captures Cairo's night, resilience, unity, and defiance through lights and music",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
+      "t": 61.498,
+      "score": 0.95,
+      "cosine": 0.707,
+      "reason": "Image captures rhythm as life force in Cairo's streets, aligns with resilience and unity t",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-2-dark-surreal.webp",
+      "key": "lexicon/lights/s19-2-dark-surreal.webp",
+      "word": "lights",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
+      "t": 36.48,
+      "score": 0.95,
+      "cosine": 0.691,
+      "reason": "Symbolizes resilience, unity, and defiance through light and community",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-1.webp",
+      "key": "lexicon/sky/s0-1.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.95,
+      "cosine": 0.681,
+      "reason": "Defiant dancers under a twilight sky align with resilience, unity, and hope in adversity.",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
+      "key": "lexicon/rhythm/s5-1-word-neon.webp",
+      "word": "rhythm",
+      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
+      "t": 61.498,
+      "score": 0.95,
+      "cosine": 0.673,
+      "reason": "Cinematic neon in Cairo alley aligns with song's themes of resilience, unity, and cultural",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-2-concept-art.webp",
+      "key": "lexicon/lights/s1-2-concept-art.webp",
+      "word": "lights",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
+      "t": 36.48,
+      "score": 0.95,
+      "cosine": 0.666,
+      "reason": "Symbolizes resilience, unity, and hope in Cairo's context",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s10-4-photo.webp",
+      "key": "lexicon/soul/s10-4-photo.webp",
+      "word": "soul",
+      "line": "world to breathe Mama said keep your soul protected Baba said keep your head up high",
+      "t": 50.956,
+      "score": 0.95,
+      "cosine": 0.665,
+      "reason": "Powerful imagery aligns with soul protection, resilience, and cultural pride in Cairo.",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "key": "lexicon/fire/s5-6-word-portrait.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.95,
+      "cosine": 0.657,
+      "reason": "Symbolizes resilience, defiance, and unity through fire imagery in Cairo's urban setting.",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-3-word-portrait.webp",
+      "key": "lexicon/walk/s5-3-word-portrait.webp",
+      "word": "walk",
+      "line": "drum talk Let the whole room move like the Nile walk If your heart hurts Bring it close We dont",
+      "t": 215.656,
+      "score": 0.95,
+      "cosine": 0.64,
+      "reason": "Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s11-2-word-portrait.webp",
+      "key": "lexicon/sky/s11-2-word-portrait.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.95,
+      "cosine": 0.639,
+      "reason": "Symbolism aligns with resilience, hope, and defiance against adversity.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-5-photo.webp",
+      "key": "lexicon/move/s1-5-photo.webp",
+      "word": "move",
+      "line": "Even when the news gets reckless Dont let the fear move into your eyes And if the whole world shakes",
+      "t": 57.423,
+      "score": 0.95,
+      "cosine": 0.615,
+      "reason": "Image captures defiance, resilience, and unity in Cairo as described in the song.",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-3-photo.webp",
+      "key": "lexicon/rhythm/s1-3-photo.webp",
+      "word": "rhythm",
+      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
+      "t": 61.498,
+      "score": 0.95,
+      "cosine": 0.614,
+      "reason": "Powerful imagery of unity, resilience, and rhythm aligns perfectly with the song's themes ",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.95,
+      "cosine": 0.613,
+      "reason": "Symbolism aligns with resilience, defiance, and cultural unity in Cairo",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s12-2-neon-night.webp",
+      "key": "lexicon/heart/s12-2-neon-night.webp",
+      "word": "heart",
+      "line": "when the sky turns gray Hands up if your heart stays ready Love dont break we find a way",
+      "t": 18.609,
+      "score": 0.95,
+      "cosine": 0.596,
+      "reason": "Symbolizes resilience, unity, and hope in Cairo's urban landscape",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-5-concept-art.webp",
+      "key": "lexicon/sky/s0-5-concept-art.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.95,
+      "cosine": 0.592,
+      "reason": "Celestial imagery aligns with defiance and hope, unity in darkness matches song's themes",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s16-4-word-portrait.webp",
+      "key": "lexicon/fire/s16-4-word-portrait.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.95,
+      "cosine": 0.592,
+      "reason": "Symbolizes defiance, resilience, and unity in a cinematic Cairo setting.",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s4-3-neon-night.webp",
+      "key": "lexicon/voice/s4-3-neon-night.webp",
+      "word": "voice",
+      "line": "in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night runs deep",
+      "t": 105.86,
+      "score": 0.95,
+      "cosine": 0.59,
+      "reason": "Resilient, defiant, cultural pride align with song's themes and mood",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s7-4-word-neon.webp",
+      "key": "lexicon/soul/s7-4-word-neon.webp",
+      "word": "soul",
+      "line": "world to breathe Mama said keep your soul protected Baba said keep your head up high",
+      "t": 50.956,
+      "score": 0.95,
+      "cosine": 0.58,
+      "reason": "Neon 'SOUL' symbolizes resilience and cultural identity in Cairo's night scene.",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s11-5-word-portrait.webp",
+      "key": "lexicon/voice/s11-5-word-portrait.webp",
+      "word": "voice",
+      "line": "in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night runs deep",
+      "t": 105.86,
+      "score": 0.95,
+      "cosine": 0.566,
+      "reason": "Symbolizes unity, expression, and resilience through performance and typography",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s13-3-oil-light.webp",
+      "key": "lexicon/heart/s13-3-oil-light.webp",
+      "word": "heart",
+      "line": "when the sky turns gray Hands up if your heart stays ready Love dont break we find a way",
+      "t": 18.609,
+      "score": 0.95,
+      "cosine": 0.538,
+      "reason": "Symbolizes resilience, hope, and defiance perfectly aligned with song's themes",
+      "recipe": "3-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s10-1-word-neon.webp",
+      "key": "lexicon/night/s10-1-word-neon.webp",
+      "word": "night",
+      "line": "still dance when the night gets heavy Still sing when the sky turns gray",
+      "t": 14.07,
+      "score": 0.92,
+      "cosine": 0.63,
+      "reason": "Cinematic neon aligns with Cairo's resilience and defiance in the night",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s11-5-neon-night.webp",
+      "key": "lexicon/gold/s11-5-neon-night.webp",
+      "word": "gold",
+      "line": "traffic Dreams in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night",
+      "t": 105.187,
+      "score": 0.92,
+      "cosine": 0.615,
+      "reason": "Reflects resilience, cultural pride, and defiance through golden imagery in Cairo's urban ",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s14-5-word-neon.webp",
+      "key": "lexicon/night/s14-5-word-neon.webp",
+      "word": "night",
+      "line": "still dance when the night gets heavy Still sing when the sky turns gray",
+      "t": 14.07,
+      "score": 0.92,
+      "cosine": 0.611,
+      "reason": "Symbolizes resilience and defiance through light in darkness, fits Cairo's nocturnal strug",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s3-3-film-still.webp",
+      "key": "lexicon/night/s3-3-film-still.webp",
+      "word": "night",
+      "line": "still dance when the night gets heavy Still sing when the sky turns gray",
+      "t": 14.07,
+      "score": 0.92,
+      "cosine": 0.611,
+      "reason": "Cinematic night scene aligns with resilience, hope, and cultural symbolism in the song",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s4-6-word-portrait.webp",
+      "key": "lexicon/walk/s4-6-word-portrait.webp",
+      "word": "walk",
+      "line": "drum talk Let the whole room move like the Nile walk If your heart hurts Bring it close We dont",
+      "t": 215.656,
+      "score": 0.92,
+      "cosine": 0.597,
+      "reason": "Cinematic, resilient, hopeful, and tied to Cairo's urban life and movement",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s4-3-neon-night.webp",
+      "key": "lexicon/walk/s4-3-neon-night.webp",
+      "word": "walk",
+      "line": "drum talk Let the whole room move like the Nile walk If your heart hurts Bring it close We dont",
+      "t": 215.656,
+      "score": 0.92,
+      "cosine": 0.572,
+      "reason": "Resilient walk in Cairo, neon symbolism, defiance and hope align with song's themes",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s11-2-neon-night.webp",
+      "key": "lexicon/voice/s11-2-neon-night.webp",
+      "word": "voice",
+      "line": "in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night runs deep",
+      "t": 105.86,
+      "score": 0.92,
+      "cosine": 0.559,
+      "reason": "Cinematic, resilient, cultural pride, voice as resistance fit the song's themes",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-4-cinema.webp",
+      "key": "lexicon/move/s1-4-cinema.webp",
+      "word": "move",
+      "line": "Even when the news gets reckless Dont let the fear move into your eyes And if the whole world shakes",
+      "t": 57.423,
+      "score": 0.92,
+      "cosine": 0.514,
+      "reason": "Resilient Cairo, hope in streetlights, unity in urban landscape",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "world to breathe Mama said keep your soul protected Baba said keep your head up high",
+      "t": 50.956,
+      "score": 0.92,
+      "cosine": 0.416,
+      "reason": "Symbolism aligns with soul protection, hope, and cultural identity",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s8-4-dream-collage.webp",
+      "key": "lexicon/heart/s8-4-dream-collage.webp",
+      "word": "heart",
+      "line": "when the sky turns gray Hands up if your heart stays ready Love dont break we find a way",
+      "t": 18.609,
+      "score": 0.9,
+      "cosine": 0.61,
+      "reason": "Hopeful, resilient, and symbolic of love and unity in a bright, dreamy Cairo sky.",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
+      "key": "lexicon/pressure/s0-2.webp",
+      "word": "pressure",
+      "line": "is tea when the night runs deep This is jokes when the pressure gets ugly This is faith when its hard to",
+      "t": 110.341,
+      "score": 0.75,
+      "cosine": 0.406,
+      "reason": "Physical struggle mirrors societal pressure; gym as sanctuary fits resilience theme",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+      "key": "lexicon/pressure/s0-1.webp",
+      "word": "pressure",
+      "line": "is tea when the night runs deep This is jokes when the pressure gets ugly This is faith when its hard to",
+      "t": 110.341,
+      "score": 0.75,
+      "cosine": 0.355,
+      "reason": "Resilience, unity, and defiance align with song themes; however, gym imagery feels less co",
+      "recipe": "1",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "lights": [
+      0,
+      2,
+      5
+    ],
+    "rhythm": [
+      1,
+      4,
+      11
+    ],
+    "sky": [
+      3,
+      9,
+      14
+    ],
+    "soul": [
+      6,
+      17,
+      28
+    ],
+    "fire": [
+      7,
+      12,
+      15
+    ],
+    "walk": [
+      8,
+      24,
+      25
+    ],
+    "move": [
+      10,
+      27
+    ],
+    "heart": [
+      13,
+      19,
+      29
+    ],
+    "voice": [
+      16,
+      18,
+      26
+    ],
+    "night": [
+      20,
+      22,
+      23
+    ],
+    "gold": [
+      21
+    ],
+    "pressure": [
+      30,
+      31
+    ]
+  }
+}

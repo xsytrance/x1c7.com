@@ -1,0 +1,140 @@
+{
+  "v": 1,
+  "id": "one-more-breath-back-to-myself",
+  "generatedAt": "2026-07-17T09:30:03.633Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 428,
+    "judged": 9,
+    "accepted": 9,
+    "kept": 9
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s7-2-word-portrait.webp",
+      "key": "lexicon/slow/s7-2-word-portrait.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 1,
+      "cosine": 0.661,
+      "reason": "Perfectly matches the song's mood and themes of introspection and isolation.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s4-5-word-portrait.webp",
+      "key": "lexicon/slow/s4-5-word-portrait.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 1,
+      "cosine": 0.622,
+      "reason": "Perfectly aligns with the song's hypnotic, introspective mood and themes.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
+      "key": "lexicon/move/s7-5-word-portrait.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.95,
+      "cosine": 0.66,
+      "reason": "fits mood and themes of introspection and stillness",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s7-4-film-still.webp",
+      "key": "lexicon/light/s7-4-film-still.webp",
+      "word": "light",
+      "line": "The room gets quiet The light gets low I hear my heartbeat I let it go One",
+      "t": 217.838,
+      "score": 0.95,
+      "cosine": 0.623,
+      "reason": "matches hypnotic mood, introspective theme, and late-night setting",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s15-6-word-portrait.webp",
+      "key": "lexicon/slow/s15-6-word-portrait.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 0.95,
+      "cosine": 0.613,
+      "reason": "matches hypnotic, introspective mood and themes",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
+      "key": "lexicon/move/s3-5-word-portrait.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.95,
+      "cosine": 0.612,
+      "reason": "fits mood and themes of introspection and motion within stillness",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-2-word-portrait.webp",
+      "key": "lexicon/light/s23-2-word-portrait.webp",
+      "word": "light",
+      "line": "The room gets quiet The light gets low I hear my heartbeat I let it go One",
+      "t": 217.838,
+      "score": 0.95,
+      "cosine": 0.568,
+      "reason": "matches mood and themes of introspection and solitude",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-1-dream-collage.webp",
+      "key": "lexicon/light/s23-1-dream-collage.webp",
+      "word": "light",
+      "line": "The room gets quiet The light gets low I hear my heartbeat I let it go One",
+      "t": 217.838,
+      "score": 0.95,
+      "cosine": 0.545,
+      "reason": "matches mood and themes of introspection and isolation",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
+      "key": "lexicon/move/s17-3-cinema.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.9,
+      "cosine": 0.479,
+      "reason": "matches hypnotic, introspective mood and themes of transience",
+      "recipe": "3-cinema",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "slow": [
+      0,
+      1,
+      4
+    ],
+    "move": [
+      2,
+      5,
+      8
+    ],
+    "light": [
+      3,
+      6,
+      7
+    ]
+  }
+}

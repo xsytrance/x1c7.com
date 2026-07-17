@@ -1,0 +1,250 @@
+{
+  "v": 1,
+  "id": "between-the-stations",
+  "generatedAt": "2026-07-17T06:12:39.458Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 521,
+    "judged": 17,
+    "accepted": 17,
+    "kept": 17
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s3-4-manga-line.webp",
+      "key": "lexicon/rhythm/s3-4-manga-line.webp",
+      "word": "rhythm",
+      "line": "humming So I let the rhythm hold me Let the tunnel pull me through",
+      "t": 34.168,
+      "score": 0.95,
+      "cosine": 0.627,
+      "reason": "Image captures subway chaos, light as rhythm, aligns with song's themes and mood",
+      "recipe": "4-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-2-film-still.webp",
+      "key": "lexicon/light/s24-2-film-still.webp",
+      "word": "light",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "score": 0.95,
+      "cosine": 0.611,
+      "reason": "Urban alley, neon lights, transitional space align with subway journey and cathartic relea",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
+      "key": "lexicon/rhythm/s5-1-word-neon.webp",
+      "word": "rhythm",
+      "line": "humming So I let the rhythm hold me Let the tunnel pull me through",
+      "t": 34.168,
+      "score": 0.95,
+      "cosine": 0.586,
+      "reason": "Urban resilience, neon, rhythm, dancehall, transit symbolism align perfectly",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-2-cinema.webp",
+      "key": "lexicon/night/s5-2-cinema.webp",
+      "word": "night",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
+      "t": 91.008,
+      "score": 0.95,
+      "cosine": 0.584,
+      "reason": "Bokeh lights and subway tunnel imagery align with nighttime urban exhaustion and respite t",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s7-5-word-portrait.webp",
+      "key": "lexicon/lights/s7-5-word-portrait.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.92,
+      "cosine": 0.613,
+      "reason": "Captures urban solitude, subway imagery, and hope amid exhaustion",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-4-word-neon.webp",
+      "key": "lexicon/night/s6-4-word-neon.webp",
+      "word": "night",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
+      "t": 91.008,
+      "score": 0.92,
+      "cosine": 0.571,
+      "reason": "Urban grit, neon symbolism, and emotional release align with song's themes",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-4-cinema.webp",
+      "key": "lexicon/move/s1-4-cinema.webp",
+      "word": "move",
+      "line": "rush now No fear now Let it move Let it clear out I was",
+      "t": 156.431,
+      "score": 0.92,
+      "cosine": 0.56,
+      "reason": "Urban journey, respite, catharsis align with song's themes",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-4-dream-collage.webp",
+      "key": "lexicon/lights/s21-4-dream-collage.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.92,
+      "cosine": 0.559,
+      "reason": "Urban isolation, resilience, and stormy cityscape align with song's themes",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "humming So I let the rhythm hold me Let the tunnel pull me through",
+      "t": 34.168,
+      "score": 0.92,
+      "cosine": 0.557,
+      "reason": "Strong urban metaphor, rhythm as guiding force, aligns with song's themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-2-concept-art.webp",
+      "key": "lexicon/lights/s1-2-concept-art.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.92,
+      "cosine": 0.543,
+      "reason": "Urban decay, flickering lights, resilience align with subway metaphor and cathartic mood",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-5-photo.webp",
+      "key": "lexicon/move/s1-5-photo.webp",
+      "word": "move",
+      "line": "rush now No fear now Let it move Let it clear out I was",
+      "t": 156.431,
+      "score": 0.92,
+      "cosine": 0.52,
+      "reason": "Captures urban exhaustion and determination in a gritty city setting",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
+      "key": "lexicon/night/s15-1-word-portrait.webp",
+      "word": "night",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
+      "t": 91.008,
+      "score": 0.92,
+      "cosine": 0.513,
+      "reason": "Matches urban night theme, isolation, and respite in subway journey",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "score": 0.8,
+      "cosine": 0.554,
+      "reason": "fits urban alienation, neon glow, surreal atmosphere",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-5-word-portrait.webp",
+      "key": "lexicon/light/s21-5-word-portrait.webp",
+      "word": "light",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "score": 0.75,
+      "cosine": 0.562,
+      "reason": "Serene light contrasts urban grit but aligns with respite and guidance themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-1.webp",
+      "key": "lexicon/dream/s0-1.webp",
+      "word": "dream",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
+      "t": 92.392,
+      "score": 0.75,
+      "cosine": 0.388,
+      "reason": "Captures respite and urban isolation but lacks dancehall energy",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-6-dream-collage.webp",
+      "key": "lexicon/move/s1-6-dream-collage.webp",
+      "word": "move",
+      "line": "rush now No fear now Let it move Let it clear out I was",
+      "t": 156.431,
+      "score": 0.7,
+      "cosine": 0.48,
+      "reason": "Cathartic release and chaos match, but sci-fi elements diverge from gritty subway realism.",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-2.webp",
+      "key": "lexicon/dream/s0-2.webp",
+      "word": "dream",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
+      "t": 92.392,
+      "score": 0.7,
+      "cosine": 0.34,
+      "reason": "Serene night imagery contrasts with song's urban intensity but aligns with dream and escap",
+      "recipe": "2",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "rhythm": [
+      0,
+      2,
+      8
+    ],
+    "light": [
+      1,
+      12,
+      13
+    ],
+    "night": [
+      3,
+      5,
+      11
+    ],
+    "lights": [
+      4,
+      7,
+      9
+    ],
+    "move": [
+      6,
+      10,
+      15
+    ],
+    "dream": [
+      14,
+      16
+    ]
+  }
+}

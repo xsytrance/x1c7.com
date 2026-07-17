@@ -1,0 +1,321 @@
+{
+  "v": 1,
+  "id": "low-lights-tokyo-night",
+  "generatedAt": "2026-07-17T08:41:00.609Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 878,
+    "judged": 26,
+    "accepted": 22,
+    "kept": 22
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s18-6-word-portrait.webp",
+      "key": "lexicon/night/s18-6-word-portrait.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 1,
+      "cosine": 0.658,
+      "reason": "Perfectly captures the song's mood and themes with rain, loneliness, and ghostly memory.",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-1-film-still.webp",
+      "key": "lexicon/lights/s1-1-film-still.webp",
+      "word": "lights",
+      "line": "Yeah Low lights Tokyo 君 が い",
+      "t": 1.12,
+      "score": 1,
+      "cosine": 0.655,
+      "reason": "Perfectly captures the song's mood and themes of neon melancholy and urban isolation.",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s3-3-cinema.webp",
+      "key": "lexicon/party/s3-3-cinema.webp",
+      "word": "party",
+      "line": "は so loud tonight 同じ song で も 痛い inside 心 の 中 で party が 鳴っ て も 君 が い ない night 感じる cold",
+      "t": 97.032,
+      "score": 1,
+      "cosine": 0.644,
+      "reason": "Perfectly captures the song's mood and themes with rain, neon, and loneliness.",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
+      "key": "lexicon/night/s5-5-word-portrait.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 1,
+      "cosine": 0.643,
+      "reason": "Perfectly captures the song's mood and themes with neon melancholy and urban isolation.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s2-1-cinema.webp",
+      "key": "lexicon/night/s2-1-cinema.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 1,
+      "cosine": 0.64,
+      "reason": "Perfectly captures Tokyo's melancholic nightlife and emotional depth",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-3-neon-night.webp",
+      "key": "lexicon/cold/s2-3-neon-night.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 1,
+      "cosine": 0.593,
+      "reason": "Perfectly captures the song's mood and themes with neon melancholy and urban isolation.",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-5-cinema.webp",
+      "key": "lexicon/light/s24-5-cinema.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.98,
+      "cosine": 0.671,
+      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-1-cinema.webp",
+      "key": "lexicon/lights/s8-1-cinema.webp",
+      "word": "lights",
+      "line": "Yeah Low lights Tokyo 君 が い",
+      "t": 1.12,
+      "score": 0.95,
+      "cosine": 0.706,
+      "reason": "Matches neon melancholy, urban isolation, and bittersweet mood",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s4-5-word-portrait.webp",
+      "key": "lexicon/slow/s4-5-word-portrait.webp",
+      "word": "slow",
+      "line": "through slow 同じ",
+      "t": 24.938,
+      "score": 0.95,
+      "cosine": 0.702,
+      "reason": "Image captures bittersweet mood, neon melancholy, and urban isolation",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s12-5-word-portrait.webp",
+      "key": "lexicon/slow/s12-5-word-portrait.webp",
+      "word": "slow",
+      "line": "through slow 同じ",
+      "t": 24.938,
+      "score": 0.95,
+      "cosine": 0.695,
+      "reason": "matches bittersweet mood, urban isolation, nostalgic Tokyo nightlife",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "ない で stay in my sightWere in love with the partybut I m still missing youLow",
+      "t": 64.494,
+      "score": 0.95,
+      "cosine": 0.683,
+      "reason": "Bittersweet imagery matches song's mood, abandoned objects symbolize lost love, neon and r",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s18-3-neon-night.webp",
+      "key": "lexicon/light/s18-3-neon-night.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.95,
+      "cosine": 0.679,
+      "reason": "matches neon melancholy, urban isolation, and bittersweet mood",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s6-2-word-portrait.webp",
+      "key": "lexicon/slow/s6-2-word-portrait.webp",
+      "word": "slow",
+      "line": "through slow 同じ",
+      "t": 24.938,
+      "score": 0.95,
+      "cosine": 0.666,
+      "reason": "Image captures bittersweet mood, neon melancholy, and urban isolation",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s12-5-neon-night.webp",
+      "key": "lexicon/light/s12-5-neon-night.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.95,
+      "cosine": 0.649,
+      "reason": "matches neon melancholy, loneliness, and emotional reflections",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-4-cinema.webp",
+      "key": "lexicon/lights/s1-4-cinema.webp",
+      "word": "lights",
+      "line": "Yeah Low lights Tokyo 君 が い",
+      "t": 1.12,
+      "score": 0.95,
+      "cosine": 0.646,
+      "reason": "Evokes Tokyo nightlife, melancholy, and lost love perfectly",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-2.webp",
+      "key": "lexicon/phone/s0-2.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.95,
+      "cosine": 0.638,
+      "reason": "nostalgic, melancholic, urban isolation, symbolic of lost connection",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s8-5-cinema.webp",
+      "key": "lexicon/cold/s8-5-cinema.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 0.95,
+      "cosine": 0.627,
+      "reason": "matches bittersweet mood, urban isolation, hidden grief",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
+      "key": "lexicon/cold/s2-6-word-neon.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 0.95,
+      "cosine": 0.614,
+      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s1-6-neon-night.webp",
+      "key": "lexicon/body/s1-6-neon-night.webp",
+      "word": "body",
+      "line": "m not alright 青い ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て",
+      "t": 46.661,
+      "score": 0.95,
+      "cosine": 0.6,
+      "reason": "fits mood and themes with neon melancholy and isolation",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s0-5-word-portrait.webp",
+      "key": "lexicon/party/s0-5-word-portrait.webp",
+      "word": "party",
+      "line": "は so loud tonight 同じ song で も 痛い inside 心 の 中 で party が 鳴っ て も 君 が い ない night 感じる cold",
+      "t": 97.032,
+      "score": 0.95,
+      "cosine": 0.593,
+      "reason": "Matches bittersweet nightlife, melancholy, and symbolic elements",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s11-1-photo.webp",
+      "key": "lexicon/body/s11-1-photo.webp",
+      "word": "body",
+      "line": "m not alright 青い ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て",
+      "t": 46.661,
+      "score": 0.85,
+      "cosine": 0.534,
+      "reason": "Captures isolation, melancholy, and urban emptiness aligning with song's mood and themes.",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-3-word-neon.webp",
+      "key": "lexicon/body/s7-3-word-neon.webp",
+      "word": "body",
+      "line": "m not alright 青い ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て",
+      "t": 46.661,
+      "score": 0.7,
+      "cosine": 0.488,
+      "reason": "Neon-lit cityscape matches Tokyo nightlife; 'body' ties to lyric, but lacks emotional dept",
+      "recipe": "3-word-neon",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "night": [
+      0,
+      3,
+      4
+    ],
+    "lights": [
+      1,
+      7,
+      14
+    ],
+    "party": [
+      2,
+      19
+    ],
+    "cold": [
+      5,
+      16,
+      17
+    ],
+    "light": [
+      6,
+      11,
+      13
+    ],
+    "slow": [
+      8,
+      9,
+      12
+    ],
+    "love": [
+      10
+    ],
+    "phone": [
+      15
+    ],
+    "body": [
+      18,
+      20,
+      21
+    ]
+  }
+}

@@ -1,0 +1,461 @@
+{
+  "v": 1,
+  "id": "honey-n-venom-rude-wine-riddim",
+  "generatedAt": "2026-07-17T07:50:53.349Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 1231,
+    "judged": 41,
+    "accepted": 35,
+    "kept": 32
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
+      "key": "lexicon/heart/s0-2.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 1,
+      "cosine": 0.696,
+      "reason": "Perfectly aligns with toxic romance and club energy",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s0-4-concept-art.webp",
+      "key": "lexicon/venom/s0-4-concept-art.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 1,
+      "cosine": 0.675,
+      "reason": "Perfectly aligns with toxic romance, club energy, and seductive menace",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s2-2-manga-line.webp",
+      "key": "lexicon/honey/s2-2-manga-line.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 1,
+      "cosine": 0.657,
+      "reason": "Perfectly captures duality, seduction, and danger in abstract form.",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s2-4-neon-night.webp",
+      "key": "lexicon/venom/s2-4-neon-night.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 1,
+      "cosine": 0.627,
+      "reason": "Perfectly aligns with toxic romance, club energy, and seductive danger.",
+      "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-4-word-neon.webp",
+      "key": "lexicon/rhythm/s6-4-word-neon.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 1,
+      "cosine": 0.595,
+      "reason": "Perfectly aligns with club energy, seductive allure, and neon symbolism",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s0-6-neon-sign.webp",
+      "key": "lexicon/venom/s0-6-neon-sign.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 1,
+      "cosine": 0.593,
+      "reason": "Perfectly aligns with toxic romance and aggressive seduction",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s3-6-word-neon.webp",
+      "key": "lexicon/wine/s3-6-word-neon.webp",
+      "word": "wine",
+      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
+      "t": 112.083,
+      "score": 1,
+      "cosine": 0.566,
+      "reason": "Perfectly aligns with club energy, toxic allure, and seductive danger",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
+      "key": "lexicon/rhythm/s5-1-word-neon.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 1,
+      "cosine": 0.543,
+      "reason": "Perfectly aligns with club energy, seductive danger, and neon symbolism",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s10-3-neon-sign.webp",
+      "key": "lexicon/heart/s10-3-neon-sign.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 0.95,
+      "cosine": 0.685,
+      "reason": "Matches seductive danger, club vibe, and neon symbolism",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s14-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s14-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 0.95,
+      "cosine": 0.673,
+      "reason": "matches club energy, seductive allure, and toxic romance",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "bed Honey and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and",
+      "t": 35.295,
+      "score": 0.95,
+      "cosine": 0.624,
+      "reason": "Spotlight, black dress, and bold text align with seductive danger and club energy",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
+      "key": "lexicon/night/s12-6-word-portrait.webp",
+      "word": "night",
+      "line": "on my waist One more wine One more night Then we do it in the dark on the neon light Crap",
+      "t": 129.626,
+      "score": 0.95,
+      "cosine": 0.608,
+      "reason": "matches seductive danger, club energy, neon visuals",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
+      "key": "lexicon/night/s5-5-word-portrait.webp",
+      "word": "night",
+      "line": "on my waist One more wine One more night Then we do it in the dark on the neon light Crap",
+      "t": 129.626,
+      "score": 0.95,
+      "cosine": 0.606,
+      "reason": "Matches club energy, seductive allure, and nighttime danger",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
+      "key": "lexicon/night/s23-2-word-portrait.webp",
+      "word": "night",
+      "line": "on my waist One more wine One more night Then we do it in the dark on the neon light Crap",
+      "t": 129.626,
+      "score": 0.95,
+      "cosine": 0.592,
+      "reason": "Strongly aligns with club energy, nighttime, seductive danger, and urban imagery",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-5-neon-sign.webp",
+      "key": "lexicon/heart/s0-5-neon-sign.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 0.95,
+      "cosine": 0.588,
+      "reason": "matches seductive danger, club vibe, neon symbolism",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s1-1-neon-sign.webp",
+      "key": "lexicon/wine/s1-1-neon-sign.webp",
+      "word": "wine",
+      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
+      "t": 112.083,
+      "score": 0.95,
+      "cosine": 0.584,
+      "reason": "matches seductive danger, club energy, and toxic allure",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s1-2-dream-collage.webp",
+      "key": "lexicon/honey/s1-2-dream-collage.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 0.95,
+      "cosine": 0.581,
+      "reason": "Symbolizes duality, seduction, and danger perfectly aligned with song's themes",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s4-2-word-portrait.webp",
+      "key": "lexicon/honey/s4-2-word-portrait.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 0.95,
+      "cosine": 0.579,
+      "reason": "Symbolizes sweet danger, aligns with seductive toxicity and club energy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
+      "key": "lexicon/light/s25-2-anime.webp",
+      "word": "light",
+      "line": "bed Honey and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and",
+      "t": 35.295,
+      "score": 0.95,
+      "cosine": 0.573,
+      "reason": "Matches club energy, strobe lights, seductive danger, and gritty atmosphere",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
+      "key": "lexicon/love/s11-6-neon-sign.webp",
+      "word": "love",
+      "line": "Why you always make me misspeed it? Is it love or not right? Dangerous cat Dangerous",
+      "t": 137.89,
+      "score": 0.95,
+      "cosine": 0.568,
+      "reason": "Matches seductive danger, toxic love, and club energy",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s18-1-word-neon.webp",
+      "key": "lexicon/fire/s18-1-word-neon.webp",
+      "word": "fire",
+      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
+      "t": 63.878,
+      "score": 0.95,
+      "cosine": 0.565,
+      "reason": "matches toxic allure, club energy, neon symbolism, seductive danger",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s4-3-word-neon.webp",
+      "key": "lexicon/wine/s4-3-word-neon.webp",
+      "word": "wine",
+      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
+      "t": 112.083,
+      "score": 0.95,
+      "cosine": 0.564,
+      "reason": "matches club energy, seductive danger, neon symbolism",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s18-3-film-still.webp",
+      "key": "lexicon/fire/s18-3-film-still.webp",
+      "word": "fire",
+      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
+      "t": 63.878,
+      "score": 0.95,
+      "cosine": 0.555,
+      "reason": "Intense, dangerous passion fits the song's toxic romance and club energy",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s9-6-word-portrait.webp",
+      "key": "lexicon/cold/s9-6-word-portrait.webp",
+      "word": "cold",
+      "line": "she walk in slow motion Whole room freeze up, cold in the smile But the lips say deep But they got rhythm",
+      "t": 55.461,
+      "score": 0.95,
+      "cosine": 0.526,
+      "reason": "matches cold tension, club vibe, hidden toxicity",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-3-word-neon.webp",
+      "key": "lexicon/sky/s2-3-word-neon.webp",
+      "word": "sky",
+      "line": "dirty line Honey and venom Hands up to the sky If loving you is wrong Then I still wanna try Honey",
+      "t": 154.703,
+      "score": 0.95,
+      "cosine": 0.522,
+      "reason": "Matches club energy, neon allure, and toxic romance themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s11-1-neon-sign.webp",
+      "key": "lexicon/cold/s11-1-neon-sign.webp",
+      "word": "cold",
+      "line": "she walk in slow motion Whole room freeze up, cold in the smile But the lips say deep But they got rhythm",
+      "t": 55.461,
+      "score": 0.95,
+      "cosine": 0.506,
+      "reason": "Eerie, frozen expression matches 'cold' and toxic allure of the song",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-3-cinema.webp",
+      "key": "lexicon/fire/s17-3-cinema.webp",
+      "word": "fire",
+      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
+      "t": 63.878,
+      "score": 0.95,
+      "cosine": 0.501,
+      "reason": "Fire's aggressive, seductive energy matches song's toxic romance and club intensity",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s5-6-word-neon.webp",
+      "key": "lexicon/sky/s5-6-word-neon.webp",
+      "word": "sky",
+      "line": "dirty line Honey and venom Hands up to the sky If loving you is wrong Then I still wanna try Honey",
+      "t": 154.703,
+      "score": 0.95,
+      "cosine": 0.489,
+      "reason": "Matches toxic allure, urban grit, and seductive danger",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
+      "key": "lexicon/smile/s0-1.webp",
+      "word": "smile",
+      "line": "in slow motion Whole room freeze up, cold in the smile But the lips say deep But they got rhythm Skin",
+      "t": 56.063,
+      "score": 0.95,
+      "cosine": 0.459,
+      "reason": "Seductive, dangerous, and intense imagery fits the song's toxic allure and club energy.",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-4-neon-night.webp",
+      "key": "lexicon/light/s9-4-neon-night.webp",
+      "word": "light",
+      "line": "bed Honey and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and",
+      "t": 35.295,
+      "score": 0.95,
+      "cosine": 0.443,
+      "reason": "Seductive, dangerous, neon-lit urban setting matches song's mood and themes",
+      "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-1-word-portrait.webp",
+      "key": "lexicon/walk/s3-1-word-portrait.webp",
+      "word": "walk",
+      "line": "aye, aye, aye, aye Honey and venom Yeah, she walk in, she walk in slow motion Whole room freeze",
+      "t": 52.013,
+      "score": 0.95,
+      "cosine": 0.439,
+      "reason": "Confident, seductive walk in a dark club matches song's mood and themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-1-neon-sign.webp",
+      "key": "lexicon/slow/s5-1-neon-sign.webp",
+      "word": "slow",
+      "line": "and venom Yeah, she walk in, she walk in slow motion Whole room freeze up, cold in the smile But",
+      "t": 53.312,
+      "score": 0.9,
+      "cosine": 0.502,
+      "reason": "Unsettling seduction matches toxic allure and dangerous attraction",
+      "recipe": "1-neon-sign",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "heart": [
+      0,
+      8,
+      14
+    ],
+    "venom": [
+      1,
+      3,
+      5
+    ],
+    "honey": [
+      2,
+      16,
+      17
+    ],
+    "rhythm": [
+      4,
+      7,
+      9
+    ],
+    "wine": [
+      6,
+      15,
+      21
+    ],
+    "light": [
+      10,
+      18,
+      29
+    ],
+    "night": [
+      11,
+      12,
+      13
+    ],
+    "love": [
+      19
+    ],
+    "fire": [
+      20,
+      22,
+      26
+    ],
+    "cold": [
+      23,
+      25
+    ],
+    "sky": [
+      24,
+      27
+    ],
+    "smile": [
+      28
+    ],
+    "walk": [
+      30
+    ],
+    "slow": [
+      31
+    ]
+  }
+}

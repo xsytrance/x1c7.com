@@ -1,0 +1,375 @@
+{
+  "v": 1,
+  "id": "one-tap-away",
+  "generatedAt": "2026-07-17T09:32:45.673Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 954,
+    "judged": 30,
+    "accepted": 26,
+    "kept": 26
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+      "key": "lexicon/heart/s0-1.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 94.285,
+      "score": 1,
+      "cosine": 0.49,
+      "reason": "image perfectly reflects digital isolation and emotional fracture",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
+      "key": "lexicon/move/s7-5-word-portrait.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.95,
+      "cosine": 0.685,
+      "reason": "captures digital isolation, melancholy, and superficial connection",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "key": "lexicon/fire/s5-6-word-portrait.webp",
+      "word": "fire",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "score": 0.95,
+      "cosine": 0.66,
+      "reason": "powerful metaphor for digital isolation and superficial connection",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
+      "key": "lexicon/light/s15-1-cinema.webp",
+      "word": "light",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "score": 0.95,
+      "cosine": 0.651,
+      "reason": "evokes digital isolation, loneliness, and superficial connectivity",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s20-6-pixel.webp",
+      "key": "lexicon/fire/s20-6-pixel.webp",
+      "word": "fire",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "score": 0.95,
+      "cosine": 0.645,
+      "reason": "Pixelated campfires symbolize digital isolation and superficial connection",
+      "recipe": "6-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s21-1-film-still.webp",
+      "key": "lexicon/fire/s21-1-film-still.webp",
+      "word": "fire",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "score": 0.95,
+      "cosine": 0.643,
+      "reason": "captures digital isolation, melancholy, and contrast between warmth and emptiness",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-4-word-portrait.webp",
+      "key": "lexicon/tap/s5-4-word-portrait.webp",
+      "word": "tap",
+      "line": "Yeah one tap away",
+      "t": 4.644,
+      "score": 0.95,
+      "cosine": 0.597,
+      "reason": "captures digital anxiety and emotional distance",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s10-3-neon-sign.webp",
+      "key": "lexicon/glow/s10-3-neon-sign.webp",
+      "word": "glow",
+      "line": "check it Backback when the screen made the room glow I thought the whole world would move close",
+      "t": 17.183,
+      "score": 0.95,
+      "cosine": 0.577,
+      "reason": "neon glow reflects digital isolation and melancholic mood",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-5-word-portrait.webp",
+      "key": "lexicon/cold/s2-5-word-portrait.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.95,
+      "cosine": 0.577,
+      "reason": "captures digital isolation, melancholy, and emotional distance",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s0-5-dream-collage.webp",
+      "key": "lexicon/cold/s0-5-dream-collage.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.95,
+      "cosine": 0.556,
+      "reason": "cosmic emptiness mirrors digital isolation, pale blue glow reflects superficial warmth",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "key": "lexicon/heart/s19-4-dark-surreal.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 94.285,
+      "score": 0.95,
+      "cosine": 0.55,
+      "reason": "matches song's themes of emotional distance and digital emptiness",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
+      "key": "lexicon/save/s6-3-word-portrait.webp",
+      "word": "save",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 76.72,
+      "score": 0.95,
+      "cosine": 0.54,
+      "reason": "captures digital isolation, melancholy, and superficial connectivity",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-6-word-neon.webp",
+      "key": "lexicon/move/s3-6-word-neon.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.95,
+      "cosine": 0.512,
+      "reason": "strong visual match for digital isolation and melancholic mood",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "score": 0.95,
+      "cosine": 0.51,
+      "reason": "evokes digital isolation, emotional distance, and urban melancholy",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s5-3-word-neon.webp",
+      "key": "lexicon/cold/s5-3-word-neon.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.95,
+      "cosine": 0.498,
+      "reason": "neon sign captures cold, urban loneliness and digital isolation",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
+      "key": "lexicon/heart/s19-1-photo.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 94.285,
+      "score": 0.95,
+      "cosine": 0.496,
+      "reason": "Powerful symbolism of isolated identities within a hollow heart",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "key": "lexicon/save/s8-3-neon-sign.webp",
+      "word": "save",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 76.72,
+      "score": 0.95,
+      "cosine": 0.49,
+      "reason": "captures digital isolation, melancholy, and alienation",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-2-anime.webp",
+      "key": "lexicon/dream/s1-2-anime.webp",
+      "word": "dream",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
+      "t": 76.22,
+      "score": 0.95,
+      "cosine": 0.468,
+      "reason": "fits digital isolation, melancholic mood, symbolic of superficial connectivity",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+      "key": "lexicon/tap/s1-2-neon-night.webp",
+      "word": "tap",
+      "line": "Yeah one tap away",
+      "t": 4.644,
+      "score": 0.95,
+      "cosine": 0.467,
+      "reason": "captures digital isolation, melancholy, and superficial connectivity",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
+      "key": "lexicon/save/s10-2-word-portrait.webp",
+      "word": "save",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 76.72,
+      "score": 0.95,
+      "cosine": 0.425,
+      "reason": "fits digital isolation, emotional neglect, and introspective mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
+      "key": "lexicon/move/s3-5-word-portrait.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.9,
+      "cosine": 0.657,
+      "reason": "captures digital isolation, melancholic mood, and superficial connectivity",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s14-2-oil-light.webp",
+      "key": "lexicon/glow/s14-2-oil-light.webp",
+      "word": "glow",
+      "line": "check it Backback when the screen made the room glow I thought the whole world would move close",
+      "t": 17.183,
+      "score": 0.9,
+      "cosine": 0.572,
+      "reason": "Symbolizes digital glow vs. emotional coldness, fits theme and mood",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s16-3-cinema.webp",
+      "key": "lexicon/light/s16-3-cinema.webp",
+      "word": "light",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "score": 0.9,
+      "cosine": 0.551,
+      "reason": "Symbolizes hope and isolation in a digital age, fits melancholic mood and themes",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "can call me any day You can love me in private But scroll right past my",
+      "t": 50.933,
+      "score": 0.9,
+      "cosine": 0.533,
+      "reason": "Captures digital isolation, melancholy, and superficiality through lighting and symbolism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
+      "t": 76.22,
+      "score": 0.9,
+      "cosine": 0.487,
+      "reason": "Fragile dream in digital chaos matches song's themes and mood",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-4-film-still.webp",
+      "key": "lexicon/dream/s0-4-film-still.webp",
+      "word": "dream",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
+      "t": 76.22,
+      "score": 0.9,
+      "cosine": 0.432,
+      "reason": "Captures longing and isolation through stars and bed",
+      "recipe": "4-film-still",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "heart": [
+      0,
+      10,
+      15
+    ],
+    "move": [
+      1,
+      12,
+      20
+    ],
+    "fire": [
+      2,
+      4,
+      5
+    ],
+    "light": [
+      3,
+      13,
+      22
+    ],
+    "tap": [
+      6,
+      18
+    ],
+    "glow": [
+      7,
+      21
+    ],
+    "cold": [
+      8,
+      9,
+      14
+    ],
+    "save": [
+      11,
+      16,
+      19
+    ],
+    "dream": [
+      17,
+      24,
+      25
+    ],
+    "love": [
+      23
+    ]
+  }
+}

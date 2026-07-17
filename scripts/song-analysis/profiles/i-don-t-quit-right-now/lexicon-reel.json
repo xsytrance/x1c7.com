@@ -1,0 +1,353 @@
+{
+  "v": 1,
+  "id": "i-don-t-quit-right-now",
+  "generatedAt": "2026-07-17T07:54:01.059Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 1372,
+    "judged": 51,
+    "accepted": 24,
+    "kept": 24
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
+      "key": "lexicon/pressure/s0-2.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 1,
+      "cosine": 0.521,
+      "reason": "image embodies relentless grit and internal struggle through weightlifting",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
+      "key": "lexicon/drip/s2-3-photo.webp",
+      "word": "drip",
+      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
+      "t": 54.927,
+      "score": 0.98,
+      "cosine": 0.602,
+      "reason": "Powerful visual of endurance and grit aligns with song's themes",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s8-2-photo.webp",
+      "key": "lexicon/move/s8-2-photo.webp",
+      "word": "move",
+      "line": "hood up door slam Still half tired but I move like a grown man No speech no hype no coach in my",
+      "t": 13.944,
+      "score": 0.95,
+      "cosine": 0.638,
+      "reason": "Gritty gym setting matches song's relentless determination and internal struggle",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s19-5-photo.webp",
+      "key": "lexicon/night/s19-5-photo.webp",
+      "word": "night",
+      "line": "boring but the mirror dont cap Casein late night water all day Stretch when Im stiff so",
+      "t": 134.838,
+      "score": 0.95,
+      "cosine": 0.619,
+      "reason": "late-night gym struggle matches relentless grit and internal battle",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s13-1-film-still.webp",
+      "key": "lexicon/move/s13-1-film-still.webp",
+      "word": "move",
+      "line": "hood up door slam Still half tired but I move like a grown man No speech no hype no coach in my",
+      "t": 13.944,
+      "score": 0.95,
+      "cosine": 0.611,
+      "reason": "Powerful imagery matches relentless grit and internal struggle",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s10-5-photo.webp",
+      "key": "lexicon/fire/s10-5-photo.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.95,
+      "cosine": 0.572,
+      "reason": "Powerful imagery aligns with grit, fire as inner determination, gym setting matches song's",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s0-6-word-portrait.webp",
+      "key": "lexicon/cold/s0-6-word-portrait.webp",
+      "word": "cold",
+      "line": "to kill I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights",
+      "t": 22.535,
+      "score": 0.95,
+      "cosine": 0.537,
+      "reason": "fits gritty mood, cold as emotional numbness, abandoned gym aligns with solitary struggle",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+      "key": "lexicon/pressure/s0-1.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.95,
+      "cosine": 0.528,
+      "reason": "Powerful imagery aligns with internal struggle and external pressure themes",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.95,
+      "cosine": 0.525,
+      "reason": "Symbolism aligns with fire as inner drive and grit",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-2-word-portrait.webp",
+      "key": "lexicon/body/s7-2-word-portrait.webp",
+      "word": "body",
+      "line": "summer but I dont daydream I put that beach body under a machine I put that cocktail far",
+      "t": 192.807,
+      "score": 0.95,
+      "cosine": 0.519,
+      "reason": "Aligns with themes of physical transformation and discipline through effort",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s7-5-stickers.webp",
+      "key": "lexicon/walk/s7-5-stickers.webp",
+      "word": "walk",
+      "line": "I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights buzzing",
+      "t": 22.849,
+      "score": 0.95,
+      "cosine": 0.518,
+      "reason": "Matches gritty gym resolve, backpack as burden, orange jacket symbolizes perseverance",
+      "recipe": "5-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s10-1-word-portrait.webp",
+      "key": "lexicon/cold/s10-1-word-portrait.webp",
+      "word": "cold",
+      "line": "to kill I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights",
+      "t": 22.535,
+      "score": 0.95,
+      "cosine": 0.512,
+      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
+      "key": "lexicon/summer/s8-2-photo.webp",
+      "word": "summer",
+      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
+      "t": 189.939,
+      "score": 0.95,
+      "cosine": 0.497,
+      "reason": "fits gritty determination, sweat as proof, summer as motivation",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s1-5-photo.webp",
+      "key": "lexicon/body/s1-5-photo.webp",
+      "word": "body",
+      "line": "summer but I dont daydream I put that beach body under a machine I put that cocktail far",
+      "t": 192.807,
+      "score": 0.95,
+      "cosine": 0.486,
+      "reason": "fits gritty gym struggle, sweat as proof of effort",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-1.webp",
+      "key": "lexicon/crown/s0-1.webp",
+      "word": "crown",
+      "line": "still follow through I dont need applause I dont need a crown I need one more rep when I wanna sit down",
+      "t": 166.01,
+      "score": 0.95,
+      "cosine": 0.476,
+      "reason": "Symbolizes solitary triumph, resilience, and internal victory over external validation",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s9-3-word-portrait.webp",
+      "key": "lexicon/move/s9-3-word-portrait.webp",
+      "word": "move",
+      "line": "hood up door slam Still half tired but I move like a grown man No speech no hype no coach in my",
+      "t": 13.944,
+      "score": 0.95,
+      "cosine": 0.473,
+      "reason": "Relentless sprinting, gritty urban setting, and symbolic vintage car align with the song's",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-5-word-portrait.webp",
+      "key": "lexicon/walk/s9-5-word-portrait.webp",
+      "word": "walk",
+      "line": "I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights buzzing",
+      "t": 22.849,
+      "score": 0.95,
+      "cosine": 0.459,
+      "reason": "Matches gritty mood, solitude, and physical struggle of the song",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-5-word-portrait.webp",
+      "key": "lexicon/voice/s14-5-word-portrait.webp",
+      "word": "voice",
+      "line": "No speech no hype no coach in my ear Just that old weak voice that I came here to kill I dont feel ready thats",
+      "t": 18.135,
+      "score": 0.95,
+      "cosine": 0.422,
+      "reason": "Symbolizes internal struggle and voice as a physical force",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s2-1-graphic-novel.webp",
+      "key": "lexicon/cut/s2-1-graphic-novel.webp",
+      "word": "cut",
+      "line": "skip too much and the old me grows So I cut that off before it gets close I know that voice",
+      "t": 218.326,
+      "score": 0.95,
+      "cosine": 0.412,
+      "reason": "Symbolizes cutting off negative thoughts, fits gritty determination and internal struggle",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-2.webp",
+      "key": "lexicon/crown/s0-2.webp",
+      "word": "crown",
+      "line": "still follow through I dont need applause I dont need a crown I need one more rep when I wanna sit down",
+      "t": 166.01,
+      "score": 0.95,
+      "cosine": 0.383,
+      "reason": "Symbolism aligns with solitary struggle and determination",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-4-film-still.webp",
+      "key": "lexicon/walk/s3-4-film-still.webp",
+      "word": "walk",
+      "line": "I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights buzzing",
+      "t": 22.849,
+      "score": 0.9,
+      "cosine": 0.519,
+      "reason": "Matches solitary determination and internal struggle in a gritty setting",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-5-word-portrait.webp",
+      "key": "lexicon/cut/s3-5-word-portrait.webp",
+      "word": "cut",
+      "line": "skip too much and the old me grows So I cut that off before it gets close I know that voice",
+      "t": 218.326,
+      "score": 0.9,
+      "cosine": 0.465,
+      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
+      "key": "lexicon/night/s13-3-word-portrait.webp",
+      "word": "night",
+      "line": "boring but the mirror dont cap Casein late night water all day Stretch when Im stiff so",
+      "t": 134.838,
+      "score": 0.9,
+      "cosine": 0.463,
+      "reason": "fits gritty late-night discipline and urban solitude",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
+      "key": "lexicon/night/s15-1-word-portrait.webp",
+      "word": "night",
+      "line": "boring but the mirror dont cap Casein late night water all day Stretch when Im stiff so",
+      "t": 134.838,
+      "score": 0.9,
+      "cosine": 0.412,
+      "reason": "fits gritty mood, urban isolation mirrors solitary struggle",
+      "recipe": "1-word-portrait",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "pressure": [
+      0,
+      7
+    ],
+    "drip": [
+      1
+    ],
+    "move": [
+      2,
+      4,
+      15
+    ],
+    "night": [
+      3,
+      22,
+      23
+    ],
+    "fire": [
+      5,
+      8
+    ],
+    "cold": [
+      6,
+      11
+    ],
+    "body": [
+      9,
+      13
+    ],
+    "walk": [
+      10,
+      16,
+      20
+    ],
+    "summer": [
+      12
+    ],
+    "crown": [
+      14,
+      19
+    ],
+    "voice": [
+      17
+    ],
+    "cut": [
+      18,
+      21
+    ]
+  }
+}

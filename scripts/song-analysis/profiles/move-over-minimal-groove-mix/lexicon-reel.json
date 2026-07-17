@@ -1,0 +1,295 @@
+{
+  "v": 1,
+  "id": "move-over-minimal-groove-mix",
+  "generatedAt": "2026-07-17T09:25:23.062Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 664,
+    "judged": 25,
+    "accepted": 20,
+    "kept": 20
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s6-2-word-portrait.webp",
+      "key": "lexicon/bass/s6-2-word-portrait.webp",
+      "word": "bass",
+      "line": "steps Deep bass mmm yeah right",
+      "t": 88.445,
+      "score": 1,
+      "cosine": 0.67,
+      "reason": "Perfect fit for retro club, bass focus, summer energy, confident style",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s9-5-word-portrait.webp",
+      "key": "lexicon/bass/s9-5-word-portrait.webp",
+      "word": "bass",
+      "line": "steps Deep bass mmm yeah right",
+      "t": 88.445,
+      "score": 1,
+      "cosine": 0.663,
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
+      "key": "lexicon/bass/s3-3-word-portrait.webp",
+      "word": "bass",
+      "line": "steps Deep bass mmm yeah right",
+      "t": 88.445,
+      "score": 1,
+      "cosine": 0.633,
+      "reason": "image aligns with dance floor dominance and summer night energy",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
+      "key": "lexicon/different/s6-2-word-portrait.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 1,
+      "cosine": 0.616,
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "word": "lights",
+      "line": "just listen Slow steps low lights so smooth Keep it simple Just move",
+      "t": 37.802,
+      "score": 1,
+      "cosine": 0.584,
+      "reason": "perfect fit for retro club and summer night energy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "key": "lexicon/heat/s8-2-word-portrait.webp",
+      "word": "heat",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "score": 1,
+      "cosine": 0.584,
+      "reason": "perfectly aligns with summer energy and dance floor dominance",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
+      "key": "lexicon/move/s3-5-word-portrait.webp",
+      "word": "move",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.047,
+      "score": 1,
+      "cosine": 0.583,
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
+      "key": "lexicon/heat/s3-6-word-portrait.webp",
+      "word": "heat",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "score": 1,
+      "cosine": 0.566,
+      "reason": "Perfect fit for retro club, summer heat, and dance floor dominance.",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-5-word-portrait.webp",
+      "key": "lexicon/heat/s6-5-word-portrait.webp",
+      "word": "heat",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "score": 1,
+      "cosine": 0.565,
+      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s10-4-word-portrait.webp",
+      "key": "lexicon/move/s10-4-word-portrait.webp",
+      "word": "move",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.047,
+      "score": 1,
+      "cosine": 0.534,
+      "reason": "perfect fit for dance floor dominance and retro club aesthetic",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
+      "key": "lexicon/move/s2-2-word-portrait.webp",
+      "word": "move",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.047,
+      "score": 1,
+      "cosine": 0.514,
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s1-4-word-portrait.webp",
+      "key": "lexicon/different/s1-4-word-portrait.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 1,
+      "cosine": 0.487,
+      "reason": "Perfect fit for retro club, confidence, and individuality",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-1-word-portrait.webp",
+      "key": "lexicon/drip/s5-1-word-portrait.webp",
+      "word": "drip",
+      "line": "different You can tell by the drip Yeah Let it ride",
+      "t": 25.565,
+      "score": 1,
+      "cosine": 0.478,
+      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-4-word-portrait.webp",
+      "key": "lexicon/slow/s11-4-word-portrait.webp",
+      "word": "slow",
+      "line": "talking shh just listen Slow steps low lights so smooth Keep it",
+      "t": 36.606,
+      "score": 0.95,
+      "cosine": 0.671,
+      "reason": "Matches summer groove, dance floor dominance, and stylish minimalism",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-2-dark-surreal.webp",
+      "key": "lexicon/lights/s19-2-dark-surreal.webp",
+      "word": "lights",
+      "line": "just listen Slow steps low lights so smooth Keep it simple Just move",
+      "t": 37.802,
+      "score": 0.95,
+      "cosine": 0.56,
+      "reason": "spotlight and retro club align with song's themes and mood",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s15-1-word-portrait.webp",
+      "key": "lexicon/lights/s15-1-word-portrait.webp",
+      "word": "lights",
+      "line": "just listen Slow steps low lights so smooth Keep it simple Just move",
+      "t": 37.802,
+      "score": 0.95,
+      "cosine": 0.498,
+      "reason": "retro club, spotlights, stylish mood align perfectly",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s2-4-photo.webp",
+      "key": "lexicon/summer/s2-4-photo.webp",
+      "word": "summer",
+      "line": "heat in the room Move over Summer came through smooth Dont talk too much",
+      "t": 16.452,
+      "score": 0.9,
+      "cosine": 0.568,
+      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-4-word-portrait.webp",
+      "key": "lexicon/summer/s1-4-word-portrait.webp",
+      "word": "summer",
+      "line": "heat in the room Move over Summer came through smooth Dont talk too much",
+      "t": 16.452,
+      "score": 0.9,
+      "cosine": 0.547,
+      "reason": "Matches summer theme, stylish mood, and retro vibe with beach as dance floor metaphor",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
+      "key": "lexicon/different/s8-1-word-neon.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 0.9,
+      "cosine": 0.393,
+      "reason": "Urban neon aligns with retro club and summer night energy",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.72,
+      "score": 0.9,
+      "cosine": 0.39,
+      "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
+      "recipe": "1",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "bass": [
+      0,
+      1,
+      2
+    ],
+    "different": [
+      3,
+      11,
+      18
+    ],
+    "lights": [
+      4,
+      14,
+      15
+    ],
+    "heat": [
+      5,
+      7,
+      8
+    ],
+    "move": [
+      6,
+      9,
+      10
+    ],
+    "drip": [
+      12
+    ],
+    "slow": [
+      13
+    ],
+    "summer": [
+      16,
+      17
+    ],
+    "somebody": [
+      19
+    ]
+  }
+}

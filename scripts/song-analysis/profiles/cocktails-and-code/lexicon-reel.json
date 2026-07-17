@@ -1,0 +1,461 @@
+{
+  "v": 1,
+  "id": "cocktails-and-code",
+  "generatedAt": "2026-07-17T07:00:07.074Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 980,
+    "judged": 43,
+    "accepted": 34,
+    "kept": 32
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s18-2-dark-surreal.webp",
+      "key": "lexicon/fire/s18-2-dark-surreal.webp",
+      "word": "fire",
+      "line": "Glass on the table with the ice half low Got my mind on fire and my laptop glow I used to scroll",
+      "t": 39.056,
+      "score": 0.95,
+      "cosine": 0.704,
+      "reason": "Symbolizes code as fire, fits nocturnal focus and digital alchemy",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s10-2-oil-light.webp",
+      "key": "lexicon/rhythm/s10-2-oil-light.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.95,
+      "cosine": 0.685,
+      "reason": "fits nocturnal focus, digital alchemy, and technological hope",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-1-dream-collage.webp",
+      "key": "lexicon/gold/s17-1-dream-collage.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.95,
+      "cosine": 0.682,
+      "reason": "Symbolizes transformation, aligns with digital alchemy and late-night focus",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s3-5-word-portrait.webp",
+      "key": "lexicon/code/s3-5-word-portrait.webp",
+      "word": "code",
+      "line": "We working different now Come on Ooh cocktails and code Ooh",
+      "t": 12.527,
+      "score": 0.95,
+      "cosine": 0.674,
+      "reason": "Matches late-night coding, digital alchemy, and empowerment themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
+      "key": "lexicon/night/s13-3-word-portrait.webp",
+      "word": "night",
+      "line": "Summer night laptop glow Little",
+      "t": 4.493,
+      "score": 0.95,
+      "cosine": 0.658,
+      "reason": "Captures nocturnal solitude and urban contemplation with cinematic lighting",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-2-anime.webp",
+      "key": "lexicon/gold/s18-2-anime.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.95,
+      "cosine": 0.654,
+      "reason": "fits nocturnal, transformation, digital alchemy, and hope",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s4-3-word-neon.webp",
+      "key": "lexicon/summer/s4-3-word-neon.webp",
+      "word": "summer",
+      "line": "Uh Summer night laptop glow Little",
+      "t": 4.273,
+      "score": 0.95,
+      "cosine": 0.651,
+      "reason": "fits nocturnal, urban, digital creativity themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
+      "key": "lexicon/night/s15-1-word-portrait.webp",
+      "word": "night",
+      "line": "Summer night laptop glow Little",
+      "t": 4.493,
+      "score": 0.95,
+      "cosine": 0.65,
+      "reason": "Captures nocturnal focus, urban solitude, and digital alchemy",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-2-word-portrait.webp",
+      "key": "lexicon/code/s4-2-word-portrait.webp",
+      "word": "code",
+      "line": "We working different now Come on Ooh cocktails and code Ooh",
+      "t": 12.527,
+      "score": 0.95,
+      "cosine": 0.629,
+      "reason": "fits late-night coding theme, mood, and symbolism",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-5-anime.webp",
+      "key": "lexicon/gold/s17-5-anime.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.95,
+      "cosine": 0.626,
+      "reason": "Symbolizes transformation, aligns with digital alchemy and late-night focus",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
+      "key": "lexicon/move/s2-2-word-portrait.webp",
+      "word": "move",
+      "line": "Ooh we dont move like before",
+      "t": 20.921,
+      "score": 0.95,
+      "cosine": 0.62,
+      "reason": "fits mood, themes, and visual symbolism of late-night focus and determination",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-2.webp",
+      "key": "lexicon/code/s0-2.webp",
+      "word": "code",
+      "line": "We working different now Come on Ooh cocktails and code Ooh",
+      "t": 12.527,
+      "score": 0.95,
+      "cosine": 0.615,
+      "reason": "fits late-night focus, urban solitude, digital creation",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s7-2-word-portrait.webp",
+      "key": "lexicon/slow/s7-2-word-portrait.webp",
+      "word": "slow",
+      "line": "in my head Now I open up a new tab breathe in slow Type one question and the whole world grows",
+      "t": 47.694,
+      "score": 0.95,
+      "cosine": 0.613,
+      "reason": "fits mood, themes of focus and process, urban solitude",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-6-neon-sign.webp",
+      "key": "lexicon/soul/s4-6-neon-sign.webp",
+      "word": "soul",
+      "line": "Got a little fire in the soul Cocktails and code",
+      "t": 87.515,
+      "score": 0.95,
+      "cosine": 0.595,
+      "reason": "Captures nocturnal focus, digital alchemy, and urban solitude",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-5-word-portrait.webp",
+      "key": "lexicon/soul/s12-5-word-portrait.webp",
+      "word": "soul",
+      "line": "Got a little fire in the soul Cocktails and code",
+      "t": 87.515,
+      "score": 0.95,
+      "cosine": 0.591,
+      "reason": "Symbolizes collective creation, cosmic energy, and nocturnal focus",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s16-3-neon-sign.webp",
+      "key": "lexicon/rhythm/s16-3-neon-sign.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.95,
+      "cosine": 0.582,
+      "reason": "fits nocturnal focus, digital alchemy, urban solitude",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s9-2-word-neon.webp",
+      "key": "lexicon/sky/s9-2-word-neon.webp",
+      "word": "sky",
+      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
+      "t": 209.839,
+      "score": 0.95,
+      "cosine": 0.581,
+      "reason": "fits nocturnal urban mood, symbolizes digital hope and creative potential",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-1-film-still.webp",
+      "key": "lexicon/move/s1-1-film-still.webp",
+      "word": "move",
+      "line": "Ooh we dont move like before",
+      "t": 20.921,
+      "score": 0.95,
+      "cosine": 0.557,
+      "reason": "Captures urban solitude, late-night focus, and contemplation",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s3-4-neon-sign.webp",
+      "key": "lexicon/different/s3-4-neon-sign.webp",
+      "word": "different",
+      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
+      "t": 10.159,
+      "score": 0.95,
+      "cosine": 0.55,
+      "reason": "fits nocturnal mood, digital transformation, urban solitude",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-1-word-neon.webp",
+      "key": "lexicon/soul/s4-1-word-neon.webp",
+      "word": "soul",
+      "line": "Got a little fire in the soul Cocktails and code",
+      "t": 87.515,
+      "score": 0.95,
+      "cosine": 0.548,
+      "reason": "fits nocturnal mood, urban solitude, digital symbolism",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
+      "key": "lexicon/different/s6-3-word-neon.webp",
+      "word": "different",
+      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
+      "t": 10.159,
+      "score": 0.95,
+      "cosine": 0.535,
+      "reason": "fits nocturnal, urban, transformation themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
+      "key": "lexicon/night/s1-3-word-portrait.webp",
+      "word": "night",
+      "line": "Summer night laptop glow Little",
+      "t": 4.493,
+      "score": 0.9,
+      "cosine": 0.648,
+      "reason": "Matches nocturnal mood, suburban solitude, and digital creation themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-1-neon-sign.webp",
+      "key": "lexicon/slow/s5-1-neon-sign.webp",
+      "word": "slow",
+      "line": "in my head Now I open up a new tab breathe in slow Type one question and the whole world grows",
+      "t": 47.694,
+      "score": 0.9,
+      "cosine": 0.609,
+      "reason": "fits nocturnal mood, urban solitude, digital transformation",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-1.webp",
+      "key": "lexicon/dream/s0-1.webp",
+      "word": "dream",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold Glass on the table with the ice half",
+      "t": 34.829,
+      "score": 0.9,
+      "cosine": 0.587,
+      "reason": "matches nocturnal mood, dreams, late-night focus, and solitary contemplation",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s7-6-word-portrait.webp",
+      "key": "lexicon/rhythm/s7-6-word-portrait.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.9,
+      "cosine": 0.561,
+      "reason": "fits nocturnal focus, rhythm as creative pulse, vintage ambiance aligns with theme",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-6-cinema.webp",
+      "key": "lexicon/move/s2-6-cinema.webp",
+      "word": "move",
+      "line": "Ooh we dont move like before",
+      "t": 20.921,
+      "score": 0.9,
+      "cosine": 0.559,
+      "reason": "Urban solitude, late-night focus, and cinematic realism align with the song's mood and the",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s3-6-word-neon.webp",
+      "key": "lexicon/summer/s3-6-word-neon.webp",
+      "word": "summer",
+      "line": "Uh Summer night laptop glow Little",
+      "t": 4.273,
+      "score": 0.9,
+      "cosine": 0.553,
+      "reason": "fits nocturnal, urban, contemplative mood with digital nostalgia",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-3-word-neon.webp",
+      "key": "lexicon/sky/s2-3-word-neon.webp",
+      "word": "sky",
+      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
+      "t": 209.839,
+      "score": 0.9,
+      "cosine": 0.547,
+      "reason": "fits nocturnal urban mood with neon and hope symbolism",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "Na na na let it run Na na na here we come Na na na dont you know Cocktails and code I used to think the good life had a gate Somebody at the front saying wait wait wait Now I see",
+      "t": 116.548,
+      "score": 0.9,
+      "cosine": 0.513,
+      "reason": "fits urban solitude, neon, collective journey in night",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drift/s1-5-anime.webp",
+      "key": "lexicon/drift/s1-5-anime.webp",
+      "word": "drift",
+      "line": "clean up my days Automate the noise let the stress drift away Build me a page build me a flow",
+      "t": 127.338,
+      "score": 0.85,
+      "cosine": 0.487,
+      "reason": "fits mood and themes of digital decay and late-night creation",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-1-concept-art.webp",
+      "key": "lexicon/fire/s17-1-concept-art.webp",
+      "word": "fire",
+      "line": "Glass on the table with the ice half low Got my mind on fire and my laptop glow I used to scroll",
+      "t": 39.056,
+      "score": 0.8,
+      "cosine": 0.621,
+      "reason": "Captures late-night intensity and transformational energy",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drift/s0-1-oil-light.webp",
+      "key": "lexicon/drift/s0-1-oil-light.webp",
+      "word": "drift",
+      "line": "clean up my days Automate the noise let the stress drift away Build me a page build me a flow",
+      "t": 127.338,
+      "score": 0.8,
+      "cosine": 0.544,
+      "reason": "fits mood and themes of transformation and hope in a nocturnal setting",
+      "recipe": "1-oil-light",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "fire": [
+      0,
+      30
+    ],
+    "rhythm": [
+      1,
+      15,
+      24
+    ],
+    "gold": [
+      2,
+      5,
+      9
+    ],
+    "code": [
+      3,
+      8,
+      11
+    ],
+    "night": [
+      4,
+      7,
+      21
+    ],
+    "summer": [
+      6,
+      26
+    ],
+    "move": [
+      10,
+      17,
+      25
+    ],
+    "slow": [
+      12,
+      22
+    ],
+    "soul": [
+      13,
+      14,
+      19
+    ],
+    "sky": [
+      16,
+      27
+    ],
+    "different": [
+      18,
+      20
+    ],
+    "dream": [
+      23
+    ],
+    "somebody": [
+      28
+    ],
+    "drift": [
+      29,
+      31
+    ]
+  }
+}

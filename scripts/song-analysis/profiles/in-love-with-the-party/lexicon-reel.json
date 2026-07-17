@@ -1,0 +1,319 @@
+{
+  "v": 1,
+  "id": "in-love-with-the-party",
+  "generatedAt": "2026-07-17T07:58:49.838Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 796,
+    "judged": 24,
+    "accepted": 22,
+    "kept": 22
+  },
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "word": "lights",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "score": 1,
+      "cosine": 0.644,
+      "reason": "Perfectly aligns with song's mood and themes of intimacy and euphoria under lights",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s3-1-word-portrait.webp",
+      "key": "lexicon/love/s3-1-word-portrait.webp",
+      "word": "love",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "score": 1,
+      "cosine": 0.623,
+      "reason": "Perfectly aligns with intimacy, euphoria, and connection in a party setting.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s0-5-word-portrait.webp",
+      "key": "lexicon/party/s0-5-word-portrait.webp",
+      "word": "party",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "score": 1,
+      "cosine": 0.552,
+      "reason": "Perfectly captures nighttime party intimacy and euphoria",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s3-6-word-portrait.webp",
+      "key": "lexicon/party/s3-6-word-portrait.webp",
+      "word": "party",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "score": 1,
+      "cosine": 0.547,
+      "reason": "Perfectly captures nighttime escapism, intimacy, and euphoric celebration",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "score": 0.98,
+      "cosine": 0.65,
+      "reason": "Perfect fit for intimacy, warm lighting, and euphoric mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
+      "key": "lexicon/heat/s3-6-word-portrait.webp",
+      "word": "heat",
+      "line": "heat",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.609,
+      "reason": "Matches song's mood and themes of warmth and intimacy",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-5-word-portrait.webp",
+      "key": "lexicon/heat/s6-5-word-portrait.webp",
+      "word": "heat",
+      "line": "heat",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.6,
+      "reason": "Euphoric, intimate, warm stage imagery aligns with song's mood and themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
+      "key": "lexicon/light/s25-2-anime.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.95,
+      "cosine": 0.584,
+      "reason": "Matches neon, intimacy, city light, and euphoric mood",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-3-film-still.webp",
+      "key": "lexicon/love/s6-3-film-still.webp",
+      "word": "love",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "score": 0.95,
+      "cosine": 0.56,
+      "reason": "Intimate kiss under neon lights fits euphoric party intimacy theme",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "key": "lexicon/light/s25-3-cinema.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.95,
+      "cosine": 0.559,
+      "reason": "Matches nighttime escapism, sensory warmth, and urban intimacy",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s1-3-word-portrait.webp",
+      "key": "lexicon/glow/s1-3-word-portrait.webp",
+      "word": "glow",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "score": 0.95,
+      "cosine": 0.545,
+      "reason": "Euphoric intimacy through light in a dim setting matches song's mood and themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-4-word-neon.webp",
+      "key": "lexicon/walk/s5-4-word-neon.webp",
+      "word": "walk",
+      "line": "this perfect day Last chord rings While we walk in the city light Still in love with the party",
+      "t": 99.823,
+      "score": 0.95,
+      "cosine": 0.545,
+      "reason": "Urban nightlife, intimacy, and neon align with song's mood and themes",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s15-1-word-portrait.webp",
+      "key": "lexicon/lights/s15-1-word-portrait.webp",
+      "word": "lights",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "score": 0.95,
+      "cosine": 0.542,
+      "reason": "Euphoric, intimate, and cinematic imagery aligns with the song's mood and themes.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-1-cinema.webp",
+      "key": "lexicon/night/s7-1-cinema.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.95,
+      "cosine": 0.541,
+      "reason": "Captures nighttime intimacy and urban energy matching song's mood and themes",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.95,
+      "cosine": 0.534,
+      "reason": "Euphoric, urban, intimate, spotlight as emotional connection",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.95,
+      "cosine": 0.52,
+      "reason": "Euphoric urban night scene matches song's mood and theme of intimacy amidst crowds",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
+      "key": "lexicon/night/s5-5-word-portrait.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.95,
+      "cosine": 0.518,
+      "reason": "Euphoric intimacy in urban night, aligns with song's mood and themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-6-word-portrait.webp",
+      "key": "lexicon/lights/s8-6-word-portrait.webp",
+      "word": "lights",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "score": 0.95,
+      "cosine": 0.511,
+      "reason": "Euphoric, intimate bar scene with spotlight aligns with song's mood and theme of connectio",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s1-6-cinema.webp",
+      "key": "lexicon/party/s1-6-cinema.webp",
+      "word": "party",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "score": 0.95,
+      "cosine": 0.506,
+      "reason": "Euphoric, intimate, warm nighttime party scene with crowds and lights matches song's mood ",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-3-neon-night.webp",
+      "key": "lexicon/love/s12-3-neon-night.webp",
+      "word": "love",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "score": 0.95,
+      "cosine": 0.482,
+      "reason": "Euphoric intimacy in urban chaos matches song's theme",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
+      "key": "lexicon/heat/s1-2-word-portrait.webp",
+      "word": "heat",
+      "line": "heat",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.536,
+      "reason": "Matches nighttime intimacy and warmth themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s2-2-cinema.webp",
+      "key": "lexicon/walk/s2-2-cinema.webp",
+      "word": "walk",
+      "line": "this perfect day Last chord rings While we walk in the city light Still in love with the party",
+      "t": 99.823,
+      "score": 0.9,
+      "cosine": 0.516,
+      "reason": "Euphoric intimacy in urban night aligns with song's theme",
+      "recipe": "2-cinema",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "lights": [
+      0,
+      12,
+      17
+    ],
+    "love": [
+      1,
+      8,
+      19
+    ],
+    "party": [
+      2,
+      3,
+      18
+    ],
+    "glow": [
+      4,
+      10
+    ],
+    "heat": [
+      5,
+      6,
+      20
+    ],
+    "light": [
+      7,
+      9,
+      14
+    ],
+    "walk": [
+      11,
+      21
+    ],
+    "night": [
+      13,
+      15,
+      16
+    ]
+  }
+}

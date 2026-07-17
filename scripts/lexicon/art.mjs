@@ -330,13 +330,17 @@ for (const e of entries) {
     const taken = takenSlots(s, i);
     for (let k = 0; k < target && jobs.length < LIMIT; k++) {
       if (taken.has(k) || s.images.length >= target) continue;
-      const recipe = pick(k);
+      // reroll: when the curator prunes a slot it bumps s.reroll["<slot>"], so
+      // the replacement draws a different recipe + prompt + seed + filename —
+      // without a bump the deterministic seed would repaint the exact same image.
+      const bump = s.reroll?.[String(k + 1)] || 0;
+      const recipe = pick(k + bump);
       if (args.engine && recipe.engine !== args.engine) continue;
       if (args.recipe && recipe.id !== args.recipe) continue;
       jobs.push({
-        entry: e, sense: s, senseIdx: i, k, recipe,
-        prompt: recipe.dress(prompts[k % prompts.length], e.word),
-        seed: fnv1a(`${e.word}|${i}|${k}`),
+        entry: e, sense: s, senseIdx: i, k, bump, recipe,
+        prompt: recipe.dress(prompts[(k + bump) % prompts.length], e.word),
+        seed: fnv1a(`${e.word}|${i}|${k}${bump ? `#${bump}` : ""}`),
       });
     }
   }
@@ -355,7 +359,7 @@ for (const job of jobs) {
   if (args.dry) { log(`  [dry] ${e.word} s${i}#${k} ${recipe.id}: ${prompt.slice(0, 100)}`); done++; continue; }
   try {
     const buf = await generate(job);
-    const key = `lexicon/${e.word}/s${i}-${k + 1}-${recipe.id}.webp`;
+    const key = `lexicon/${e.word}/s${i}-${k + 1}-${recipe.id}${job.bump ? `-r${job.bump}` : ""}.webp`;
     const tmp = join(TMP, `lex-${e.word}-${i}-${k + 1}.webp`);
     await sharp(buf).webp({ quality: 82 }).toFile(tmp);
     r2put(tmp, key);
