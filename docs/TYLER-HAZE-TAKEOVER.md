@@ -125,7 +125,7 @@ track) gets a full x1c7 show with 50+ images and perfect timing.
 - [x] /music hero (`TylerHazeHero.tsx`): scrawl title, OUT NOW, proud message, verified links, RATED TYLER badge, tracklist, show CTA (`/t/madetobreak?reel=1`); collection below
 - [x] Palette swapped in globals.css (previous values in comment + this doc)
 - [x] OG share card for /music (`src/app/music/opengraph-image.tsx`)
-- [ ] Show: ultimate profile (venvs rebuilt post-reinstall: stem-analysis uv venv, whisper stable-ts+faster-whisper+torchaudio-cu128) → align QA → row → art → reel ≥50 → timing verified
-- [ ] ComfyUI hero backdrops (after GPU frees up)
-- [ ] Deploy + whisper
+- [x] Show: ultimate profile (venvs rebuilt post-reinstall: stem-analysis uv venv, whisper stable-ts+faster-whisper+torchaudio-cu128) → align QA (549 words, 2% clump, PASS) → row live (sort 0) → ~285 images painted on the song's words → **reel: 64 images, 15 words, all featured** (match-reel gained `--per-word`; cut at --per-word 6 --cap 64) → **timing verified 64/64, zero flags** (show-audit --timing-only)
+- [x] ComfyUI hero backdrops (4 painted → R2 tyler-haze/backdrops/, porch-dusk rides the hero)
+- [x] Deployed + whispered. Owner short-circuited the 600-reading general pass (2026-07-17 morning) — "enough images, make more later"; the song-targeted reader finished in background. A future night-shift pass will deepen coverage naturally.
 - Jukebox guest slot: skipped — the hero IS the guest slot (noted as optional)

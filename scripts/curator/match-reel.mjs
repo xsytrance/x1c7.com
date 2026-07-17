@@ -44,6 +44,7 @@ const EMB_MODEL = "qwen3-embedding:0.6b";
 const ACCEPT = args.accept ? parseFloat(args.accept) : 0.55;
 const FEATURED = 0.7;
 const CAP = parseInt(args.cap, 10) || 32;
+const PER_WORD = parseInt(args["per-word"], 10) || 3; // stage-A survivors per word
 const log = (...a) => console.error(...a);
 
 function loadEnv(file) {
@@ -150,7 +151,7 @@ async function main() {
     const ctx = await embed(`${w}. "${lineOf.get(w) ?? w}". ${songCtxBase}`);
     for (const c of cands) c.cosine = cos(ctx, embs.get(c.key));
     cands.sort((a, b) => b.cosine - a.cosine);
-    pool.push(...cands.slice(0, 3));
+    pool.push(...cands.slice(0, PER_WORD));
   }
   pool.sort((a, b) => b.cosine - a.cosine);
   const judged = pool.slice(0, Math.max(CAP * 2, 48));
