@@ -36,6 +36,7 @@ export const TYLER_LINKS: { service: string; url: string }[] = [
   { service: "YouTube", url: "https://www.youtube.com/playlist?list=OLAK5uy_lVxVxsU5N5dvD4D_4Rok8_9MosmN60bP8" },
   { service: "Tidal", url: "https://tidal.com/album/538050514" },
   { service: "Deezer · #MADETOBREAK single", url: "https://www.deezer.com/album/1025578832" },
+  { service: "Juan on Suno", url: "https://suno.com/@jc_gomez0311" }, // "Home of Tyler Haze and LevelReady Music" — verified
 ];
 
 // Full tracklist (verified via iTunes API — ℗ 2026 LevelReady Music).

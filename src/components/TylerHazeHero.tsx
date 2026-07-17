@@ -75,7 +75,8 @@ export function TylerHazeHero() {
             {TYLER.released} · debut album · {TYLER.genre} · guest of honor
           </p>
           <p className="mt-2 font-display text-lg font-bold" style={{ color: "var(--theme-primary)" }}>
-            TYLER HAZE <span className="text-white/40">· the AI persona of {TYLER.by}</span>
+            TYLER HAZE <span className="text-white/40">· the AI persona of{" "}
+              <a href="https://suno.com/@jc_gomez0311" target="_blank" rel="noreferrer" className="underline decoration-white/30 underline-offset-4 transition hover:text-white hover:decoration-white">{TYLER.by}</a></span>
           </p>
           <div className="mt-1">
             <ScrawlTitle text={TYLER.album} />
