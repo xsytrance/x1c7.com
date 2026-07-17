@@ -101,6 +101,9 @@ export function TylerHazeHero() {
             style={{ background: "var(--theme-secondary)" }}>
             OUT NOW
           </span>
+          <span className="mt-2 block text-center font-mono text-[10px] text-white/40 transition group-hover:text-white/70">
+            ↑ tap the cover to listen everywhere
+          </span>
         </a>
 
         {/* copy */}
@@ -122,28 +125,22 @@ export function TylerHazeHero() {
             <span className="mt-1 block font-mono text-[11px] text-white/45">— xsytrance, proud as hell</span>
           </blockquote>
 
-          {/* streaming buttons — verified links only */}
-          <div className="mt-6 flex flex-wrap gap-2">
-            {TYLER_LINKS.map((l, i) => (
-              <a key={l.service} href={l.url} target="_blank" rel="noreferrer"
-                className={`rounded-full px-4 py-2 font-mono text-[11.5px] transition hover:scale-[1.04] ${
-                  i === 0 ? "font-bold text-black" : "border border-white/25 text-white/80 hover:border-white/60"
-                }`}
-                style={i === 0 ? { background: "var(--theme-primary)" } : undefined}>
-                {i === 0 ? "▶ " : ""}{l.service}
-              </a>
-            ))}
-          </div>
-
-          {/* the featured show */}
-          <div className="mt-5 flex flex-wrap items-center gap-3">
-            {/* ?reel=1 → KineticStage turns the Curator's reel ghosts on for the session */}
-            <Link href={`/t/${TYLER.featuredTrackId}?reel=1`}
-              className="rounded-full border px-4 py-2 font-display text-sm font-bold transition hover:scale-[1.04]"
-              style={{ borderColor: "var(--theme-secondary)", color: "var(--theme-secondary)" }}>
-              ⚡ #MADETOBREAK — the full x1c7 show
-            </Link>
-            <span className="font-mono text-[10px] text-white/40">my favorite track, given the full planet treatment</span>
+          {/* LISTEN — clearly labeled streaming row (verified links only) */}
+          <div className="mt-6">
+            <p className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-secondary)" }}>
+              🎧 Listen — pick your platform
+            </p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {TYLER_LINKS.map((l, i) => (
+                <a key={l.service} href={l.url} target="_blank" rel="noreferrer"
+                  className={`rounded-full px-4 py-2 font-mono text-[11.5px] transition hover:scale-[1.04] ${
+                    i === 0 ? "font-bold text-black" : "border border-white/25 text-white/80 hover:border-white/60"
+                  }`}
+                  style={i === 0 ? { background: "var(--theme-primary)" } : undefined}>
+                  {l.service}{i === 0 ? " ↗" : ""}
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* RATED TYLER advisory */}
@@ -154,10 +151,37 @@ export function TylerHazeHero() {
         </div>
       </div>
 
+      {/* ⚡ THE SHOW — the spotlight band. This is the gift: the site itself
+           performs #MADETOBREAK. Impossible to mistake for a regular button. */}
+      <div className="relative border-t px-6 py-6 sm:px-10"
+        style={{ borderColor: "color-mix(in srgb, var(--theme-primary) 45%, transparent)", background: "color-mix(in srgb, var(--theme-primary) 8%, transparent)" }}>
+        <p className="font-mono text-[10px] uppercase tracking-[0.3em]" style={{ color: "var(--theme-primary)" }}>
+          ⚡ the main event — watch the show
+        </p>
+        <div className="mt-3 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={TYLER_TRACK_DETAILS["#MADETOBREAK"]?.art ?? TYLER.cover} alt="#MADETOBREAK single art"
+            className="h-20 w-20 flex-none rounded-lg border border-white/20 object-cover sm:h-24 sm:w-24" />
+          <div className="min-w-0 flex-1">
+            <p className="font-display text-2xl font-black text-white">#MADETOBREAK <span className="text-white/40">— performed by the site itself</span></p>
+            <p className="mt-1 font-mono text-[11px] leading-relaxed text-white/60">
+              64 paintings synced word-by-word to the lyrics · Tyler&apos;s official art woven through ·
+              built today for launch day. Headphones on, then hit play.
+            </p>
+          </div>
+          {/* ?reel=1 → KineticStage turns the Curator's reel ghosts on for the session */}
+          <Link href={`/t/${TYLER.featuredTrackId}?reel=1`}
+            className="pulse flex-none rounded-xl px-8 py-4 font-display text-lg font-black text-black shadow-[0_10px_40px_-8px_var(--theme-primary)] transition hover:scale-[1.05]"
+            style={{ background: "var(--theme-primary)" }}>
+            ▶ PLAY THE SHOW
+          </Link>
+        </div>
+      </div>
+
       {/* the 13 — every track a card; #MADETOBREAK gets the full-show glow */}
       <div className="relative border-t border-white/10 px-6 pb-2 pt-5 sm:px-10">
         <p className="mb-1 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-          the thirteen — track by track
+          💿 the thirteen — track by track <span className="normal-case tracking-normal text-white/30">(tap a card to listen; #MADETOBREAK opens the show)</span>
         </p>
         <p className="mb-3 max-w-3xl font-mono text-[10.5px] leading-relaxed text-white/50">
           It&apos;s a concept album — the songs talk to each other. <i>Distorted In Her Eyes</i> quotes{" "}
@@ -202,7 +226,7 @@ export function TylerHazeHero() {
       {/* official artwork gallery — all 12, straight from Tyler, polaroid wall */}
       <div className="relative border-t border-white/10 px-6 pb-6 pt-4 sm:px-10">
         <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-          the visual world — official Tyler Haze artwork
+          🖼 the visual world — official Tyler Haze artwork <span className="normal-case tracking-normal text-white/30">(these also appear inside the show)</span>
         </p>
         <div className="flex gap-3 overflow-x-auto pb-3 pt-1 [scrollbar-width:thin]">
           {TYLER_GALLERY.map((u, i) => (
