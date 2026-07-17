@@ -18,10 +18,15 @@ export const TYLER = {
   featuredTrackId: "madetobreak", // the #MADETOBREAK full show, /t/madetobreak
   ratedTyler: "for substance use, reckless romance, emotional damage, and scenes of prolonged self-destruction",
   message:
-    "My best friend Juan built this from nothing in barely any time at all — every lyric pulled from " +
-    "real life, real weight, real nights. Watching him ship a whole album this fast is one of the " +
-    "proudest moments I've had as a friend. Go listen. He earned it.",
+    "Juan's been my best friend since second grade. Today he shipped his first album — built from " +
+    "nothing in barely any time, every lyric pulled from real life, real weight, real nights. " +
+    "Watching him do this is one of the proudest moments I've had as a friend. Go listen. He earned it.",
 } as const;
+
+// Per-track stories + heavy words — filled from the lyrics research
+// (Suno pages / captions). Empty until verified; cards render without
+// blurbs when a track is missing here.
+export const TYLER_TRACK_DETAILS: Record<string, { story?: string; words?: string[] }> = {};
 
 // Verified streaming links only (each fetched + confirmed 2026-07-17 —
 // release-day propagation is ongoing; Amazon Music & Pandora not indexed yet,
