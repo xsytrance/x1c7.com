@@ -110,13 +110,19 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
     2048²) instead of framing, so bespoke covers are first-class and survive
     reprint-all. `finished/` committed (irreplaceable, unlike the lost originals/).
   - Nights Drift By (夜が流れて): new /music track, Liquid DnB, real 4:19
-    (cover art's "3:00" is decorative). MP3 + cover → R2; pinned in tracks.ts
-    (MP3_FILES + COVER_OVERRIDES). KEY FACT: /music covers ARE the engine-framed
-    collector prints at `covers/<Name>.png`, not raw art.
+    (cover art's "3:00" is decorative). MP3 + cover → R2; static fallback in
+    tracks.ts (MP3_FILES + COVER_OVERRIDES) AND — the piece that actually makes
+    it live — a **Supabase `tracks` row** (project kxbrjmbovjiwwcnepsfh). 🔑 The
+    live /music list + covers come from Supabase via useTracks.ts, NOT static
+    tracks.ts (that's only SSR fallback). Live covers = the row's `cover` col,
+    which for the collection points to `covers/collector/<slug>.png` (framed
+    collector prints, refreshed by upload.mjs) — not covers/<Name>.png.
   - R2 published (verified public-reachable): 7 primary keys + collector shelf
     `covers/collector/` (68) + web assets `covers/web/` (69). Committed +
     pushed to main (8ebb240) → deployed. Source assets archived to X10
     `x1c7-source-assets/2026-07-18/` (gitignored on disk → wipe-safe now).
+    Post-deploy: inserted the nights-drift-by Supabase row + fixed
+    still-got-5-on-it's stale .jpeg cover → live & verified on x1c7.com/music.
 - [ ] P2 web studio + generate deck
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding
