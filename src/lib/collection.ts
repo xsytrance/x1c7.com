@@ -12,7 +12,7 @@ export const cardUrl = (id: string) => `${WEB_COVER_BASE}/${id}-card.webp`;
 
 export type GenreKey =
   | "RNB" | "HIPHOP" | "LATIN" | "DANCEHALL" | "HOUSE" | "ELECTRONIC" | "DANCE"
-  | "TECHNO" | "ROCK" | "AFROBEAT" | "POP" | "SYNTHWAVE" | "LOFI" | "AMBIENT"
+  | "DNB" | "TECHNO" | "ROCK" | "AFROBEAT" | "POP" | "SYNTHWAVE" | "LOFI" | "AMBIENT"
   | "CINEMATIC" | "VIDEOGAME" | "ARCHIVE";
 
 export interface GenrePalette {
@@ -32,6 +32,7 @@ export const GENRE_PALETTES: Record<GenreKey, GenrePalette> = {
   HOUSE: P("HOUSE", "HOUSE", ["#2b3138", "#101418"], "#46e08c"),
   ELECTRONIC: P("ELECTRONIC", "ELECTRONIC", ["#07231f", "#03100e"], "#39ffa0"),
   DANCE: P("DANCE", "DANCE", ["#062024", "#030f12"], "#3fd4ff"),
+  DNB: P("DNB", "DRUM & BASS", ["#122a4a", "#050f1f"], "#4d8cff"),
   TECHNO: P("TECHNO", "TECHNO", ["#1d1d21", "#0a0a0c"], "#ff5a1f"),
   ROCK: P("ROCK", "ROCK", ["#57290a", "#2b1206"], "#e8a020"),
   AFROBEAT: P("AFROBEAT", "AFROBEAT", ["#3a2410", "#150d05"], "#c98a2d"),
@@ -52,6 +53,7 @@ export function classifyGenre(genre?: string): GenrePalette {
   if (g.includes("dancehall")) return GENRE_PALETTES.DANCEHALL;
   if (g.includes("reggaeton") || g.includes("latin") || g.includes("dembow")) return GENRE_PALETTES.LATIN;
   if (g.includes("house")) return GENRE_PALETTES.HOUSE;
+  if (g.includes("drum") || g.includes("dnb") || g.includes("d&b") || g.includes("jungle")) return GENRE_PALETTES.DNB;
   if (g.includes("techno") || g.includes("industrial")) return GENRE_PALETTES.TECHNO;
   if (g.includes("rock") || g.includes("alternative")) return GENRE_PALETTES.ROCK;
   if (g.includes("afro")) return GENRE_PALETTES.AFROBEAT;

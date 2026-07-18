@@ -27,6 +27,7 @@ export const COLLECTOR_PALETTES: Record<string, CollectorPalette> = {
   LOFI:       { base: ["#2c3835", "#121b19"], accent: "#e6d7b8", accent2: "#6fbfae", ink: "#efe9da", texture: "paper", label: "LO-FI" },
   AMBIENT:    { base: ["#191f38", "#090c1a"], accent: "#c9d4e8", accent2: "#5f74a8", ink: "#e8edf6", texture: "mist", label: "AMBIENT" },
   CINEMATIC:  { base: ["#25272d", "#0d0e11"], accent: "#d8dce4", accent2: "#7d96b8", ink: "#eef0f4", texture: "brushed", label: "CINEMATIC" },
+  DNB:        { base: ["#122a4a", "#050f1f"], accent: "#4d8cff", accent2: "#46e0ff", ink: "#dbe8ff", texture: "grid", label: "DRUM & BASS" },
   ARCHIVE:    { base: ["#181818", "#040404"], accent: "#d4af37", accent2: "#6a6a6a", ink: "#efe6cf", texture: "leather", label: "AGENOR" },
   ASIA:       { base: ["#4a0d0d", "#120303"], accent: "#e2b64a", accent2: "#a3253a", ink: "#f6e8d2", texture: "satin", label: "ASIA" },
   DANCEHALL:  { base: ["#5f1519", "#2a1607"], accent: "#e2b64a", accent2: "#b0632a", ink: "#f6ecd8", texture: "wood", label: "DANCEHALL" },
@@ -43,6 +44,7 @@ export function classifyCollector(genre: string | null | undefined): { key: stri
   if (g.includes("reggaeton") || g.includes("latin") || g.includes("dembow")) return { key: "LATIN", precise: genre!.replace(/·/g, "/") };
   if (g.includes("deep house")) return { key: "HOUSE", precise: "Deep House" };
   if (g.includes("house")) return { key: "HOUSE", precise: genre! };
+  if (g.includes("drum") || g.includes("dnb") || g.includes("d&b") || g.includes("jungle")) return { key: "DNB", precise: genre! };
   if (g.includes("techno") || g.includes("industrial")) return { key: "TECHNO", precise: genre! };
   if (g.includes("rock") || g.includes("alternative")) return { key: "ROCK", precise: genre! };
   if (g.includes("afro")) return { key: "AFROBEAT", precise: genre! };

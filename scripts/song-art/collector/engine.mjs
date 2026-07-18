@@ -43,6 +43,7 @@ const PALETTES = {
   HOUSE:     { base: ["#2b3138", "#101418"], accent: "#46e08c", accent2: "#9fb2c4", ink: "#e8f2ec", texture: "smoke", label: "HOUSE" },
   ELECTRONIC:{ base: ["#07231f", "#03100e"], accent: "#39ffa0", accent2: "#3fd4ff", ink: "#dcfef0", texture: "grid", label: "ELECTRONIC" },
   DANCE:     { base: ["#062024", "#030f12"], accent: "#3fd4ff", accent2: "#39ffa0", ink: "#dcf6fe", texture: "grid", label: "DANCE" },
+  DNB:       { base: ["#122a4a", "#050f1f"], accent: "#4d8cff", accent2: "#46e0ff", ink: "#dbe8ff", texture: "grid", label: "DRUM & BASS" },
   TECHNO:    { base: ["#1d1d21", "#0a0a0c"], accent: "#ff5a1f", accent2: "#8c8c94", ink: "#f2e9e2", texture: "concrete", label: "TECHNO" },
   ROCK:      { base: ["#57290a", "#2b1206"], accent: "#e8a020", accent2: "#a02010", ink: "#f6e8d2", texture: "distressed", label: "ROCK" },
   AFROBEAT:  { base: ["#3a2410", "#150d05"], accent: "#c98a2d", accent2: "#7d4a1d", ink: "#f2e4c8", texture: "carved", label: "AFROBEAT" },
@@ -67,6 +68,7 @@ function classify(genre) {
   if (g.includes("reggaeton") || g.includes("latin") || g.includes("dembow")) return { key: "LATIN", precise: genre.replace(/·/g, "/") };
   if (g.includes("deep house")) return { key: "HOUSE", precise: "Deep House" };
   if (g.includes("house")) return { key: "HOUSE", precise: genre };
+  if (g.includes("drum") || g.includes("dnb") || g.includes("d&b") || g.includes("jungle")) return { key: "DNB", precise: genre };
   if (g.includes("techno") || g.includes("industrial")) return { key: "TECHNO", precise: genre };
   if (g.includes("rock") || g.includes("alternative")) return { key: "ROCK", precise: genre };
   if (g.includes("afro")) return { key: "AFROBEAT", precise: genre };
