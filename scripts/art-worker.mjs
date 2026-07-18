@@ -17,6 +17,11 @@
 //       → appends planets/<slug>/gallery/<key>-<n>.webp + rewrites gallery.json
 //   oneoff          { prompt, key?, n, style?, negative?, seed? }
 //       → same as topup under one bucket with a freeform prompt
+//   soundcloud-sync { mode:"scan" } | { mode:"push", slugs?, includeStale?, limit?, dry? }
+//       → no GPU: drives soundcloud.com via song-art/soundcloud-covers.mjs
+//         (Playwright, persistent profile). scan rebuilds soundcloud-map.json;
+//         push swaps covers (explicit slugs, or every never-pushed + stale one).
+//         Headed when a DISPLAY exists, headless otherwise.
 //
 // .env needs: SUPABASE_SERVICE_ROLE_KEY + R2 creds. ComfyUI at localhost:8188.
 // ═══════════════════════════════════════════════════════════════════════════
@@ -162,7 +167,64 @@ async function tick(job, entry) {
   }).eq("id", job.id);
 }
 
+// ── soundcloud-sync (Cover Studio 2 P3) — browser job, no GPU ────────────────
+async function processSoundcloud(job) {
+  const p = job.payload || {};
+  const mode = p.mode === "scan" ? "scan" : "push";
+  log(`▶ sc ${job.id.slice(0, 8)} · ${mode}${p.slugs?.length ? ` · ${p.slugs.join(",")}` : ""}`);
+  await sb.from("art_jobs").update({ status: "running", updated_at: new Date().toISOString() }).eq("id", job.id);
+  const sc = await import("./song-art/soundcloud-covers.mjs");
+  const headless = !process.env.DISPLAY; // headed on the desktop, headless under a service
+  const stamp = () => new Date().toISOString();
+
+  if (mode === "scan") {
+    const s = await sc.scan({ headless });
+    await sb.from("art_jobs").update({ status: "done", total: 1, done: 1, progress: [{ kind: "scan", ...s, at: stamp() }], updated_at: stamp() }).eq("id", job.id);
+    log(`✦ sc scan: ${s.matched} matched · ${s.unmatchedSc}+${s.unmatchedCovers} unmatched`);
+    return;
+  }
+
+  // push — explicit slugs repush unconditionally; otherwise drift decides
+  let slugs = Array.isArray(p.slugs) && p.slugs.length ? p.slugs : null;
+  if (!slugs) {
+    const d = await sc.drift();
+    if (!d.scanned) throw new Error("no soundcloud map — run a scan first");
+    slugs = d.matches
+      .filter((m) => m.state === "never" || (p.includeStale !== false && m.state === "stale"))
+      .map((m) => m.slug).filter(Boolean);
+  }
+  if (p.limit) slugs = slugs.slice(0, Math.max(1, Number(p.limit)));
+  if (!slugs.length) {
+    await sb.from("art_jobs").update({ status: "done", total: 0, done: 0, progress: [{ kind: "noop", note: "everything already synced", at: stamp() }], updated_at: stamp() }).eq("id", job.id);
+    log("✦ sc push: nothing to do");
+    return;
+  }
+  await sb.from("art_jobs").update({ total: slugs.length, updated_at: stamp() }).eq("id", job.id);
+
+  const progress = [];
+  let n = 0;
+  const res = await sc.pushTracks({
+    slugs, headless, dry: !!p.dry,
+    shouldStop: () => cancelled(job.id),
+    onItem: async (it) => {
+      if (it.status !== "fail") n++;
+      progress.push({ key: it.slug, title: it.title, status: it.status, ...(it.error ? { error: it.error } : {}), n, at: it.at });
+      await sb.from("art_jobs").update({ done: n, progress, updated_at: stamp() }).eq("id", job.id);
+      log(`  ${it.status === "fail" ? "✗" : "✓"} ${n}/${slugs.length} ${it.slug || it.title}`);
+    },
+  });
+  if (res.stopped) { log(`  ⏹ cancelled at ${n}/${slugs.length}`); return; }
+  const failed = res.fail > 0 && res.ok === 0;
+  await sb.from("art_jobs").update({
+    status: failed ? "error" : "done", done: n, progress,
+    ...(res.fail ? { error: `${res.fail} of ${res.total} failed` } : {}),
+    updated_at: stamp(),
+  }).eq("id", job.id);
+  log(`✦ sc push done: ${res.ok} pushed · ${res.fail} failed`);
+}
+
 async function processJob(job) {
+  if (job.kind === "soundcloud-sync") return processSoundcloud(job);
   log(`▶ art ${job.id.slice(0, 8)} · ${job.slug} · ${job.kind} · ${job.total} image(s)`);
   await sb.from("art_jobs").update({ status: "running", updated_at: new Date().toISOString() }).eq("id", job.id);
   const p = job.payload || {};

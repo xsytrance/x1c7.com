@@ -7,6 +7,29 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (III) — Cover Studio 2 P3: SoundCloud sync as a studio job
+
+The Playwright cover-swapper (`soundcloud-covers.mjs`) is now a studio citizen.
+The script became a library (CLI unchanged, plus `--drift`): `scan` records the
+matched track's slug + `scannedAt` and keeps push history across rescans;
+`pushTracks` takes explicit slugs / progress + cancel callbacks and records the
+pushed art's etag; new `drift()` HEADs each matched cover on R2 and compares
+etags → per-track state `never | stale | synced`. New `soundcloud-sync` job
+kind (`art_jobs` constraint widened by migration `art_jobs_allow_soundcloud_sync`):
+`{mode:"scan"}` rebuilds the map, `{mode:"push", slugs?|includeStale?|limit?|dry?}`
+pushes explicit tracks or everything never-pushed + stale — handled by
+`art-worker.mjs` (no GPU; headed when a DISPLAY exists, headless otherwise;
+honors job cancel; per-track progress into the row). New owner-gated
+`GET /api/studio/soundcloud` = the drift report (reads the map file — prime-
+local). `/studio/covers` grew a **SoundCloud panel** (deck home: counts, stale/
+never list, unmatched, rescan + sync-all) and a per-track **Push cover** row;
+candidate logic now filters to cover-gen jobs. Verified end-to-end minus the
+account itself: scan job errors cleanly ("not logged in" — the saved profile's
+session expired with the reinstall; run `--login` once), drift states verified
+against a synthetic map (stale/never/counts), dry push job through the full
+queue → 1600px JPEG rendered, real 404 covers surface as item-level failures.
+Detail: [`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md).
+
 ## 2026-07-18 (II) — Cover Studio 2 P2: the web studio
 
 Owner-gated `/studio/covers` — the VIP web cover studio, on top of the P1

@@ -146,6 +146,22 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   → **P2 COMPLETE** (shell + generate deck + art director + editor parity +
   lexicon deck). Everything needs the site running LOCALLY + `node
   scripts/art-worker.mjs --watch` + Ollama (qwen3:14b) + ComfyUI (:8188).
-- [ ] P3 soundcloud job
+- [x] P3 soundcloud job — SHIPPED 2026-07-18. `soundcloud-covers.mjs` became a
+  library (CLI unchanged + `--drift`): scan records slug + scannedAt and keeps
+  push history across rescans; `pushTracks({slugs?, dry?, headless?, onItem?,
+  shouldStop?})` records the pushed art's etag per track; `drift()` HEADs each
+  matched cover on R2 vs that etag → `never | stale | synced`. New
+  `soundcloud-sync` job kind (migration `art_jobs_allow_soundcloud_sync`):
+  `{mode:"scan"}` | `{mode:"push", slugs?|includeStale?|limit?|dry?}` — worker
+  runs it browser-side (headed if DISPLAY, else headless), per-track progress +
+  cancellation into the job row; slug-less push = every never-pushed + stale
+  match. `GET /api/studio/soundcloud` (owner-gated, prime-local) = the drift
+  report. Studio UI: SoundCloud panel on the deck home (counts + stale/never
+  list + unmatched + rescan + Sync all) and a per-track "Push cover" row;
+  candidates logic filters to cover-gen. Verified: pipeline end-to-end via
+  scan job (clean "not logged in" error), synthetic-map drift states, dry push
+  → done 1/1 + 1600px JPEG, 404 cover → item-level fail. ⚠ The saved SC
+  profile's session died with the reinstall — run
+  `node scripts/song-art/soundcloud-covers.mjs --login` once, then scan.
 - [ ] P4 onboarding
 - [ ] P5 app embed

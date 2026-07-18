@@ -35,7 +35,17 @@ type Cover = {
   record?: Rec; original?: string; urls?: { card?: string; spine?: string; collector?: string };
 };
 type Prog = { key: string; n: number; url: string; seed?: number; at?: string };
-type Job = { id: string; kind: string; status: string; total: number; done: number; progress?: Prog[]; error?: string; created_at: string };
+type Job = { id: string; kind: string; status: string; total: number; done: number; progress?: Prog[]; error?: string; payload?: { mode?: string }; created_at: string };
+type ScMatch = { slug: string | null; title: string; sc: string; state: "never" | "stale" | "synced"; done: boolean; appliedAt?: string | null };
+type ScReport = {
+  scanned: boolean; scannedAt?: string | null; note?: string; matches?: ScMatch[];
+  unmatchedSc?: { title: string }[]; unmatchedCovers?: { title: string }[];
+  counts?: { synced: number; stale: number; never: number; unmatchedSc: number; unmatchedCovers: number };
+};
+
+const SC_STATE_FACE: Record<ScMatch["state"], string> = {
+  synced: "✓ synced", stale: "⟳ stale — art changed since the push", never: "○ matched, never pushed",
+};
 
 export default function CoverStudioPage() {
   const [covers, setCovers] = useState<Cover[]>([]);
@@ -58,6 +68,12 @@ export default function CoverStudioPage() {
   const [edSpine, setEdSpine] = useState("");
   const [edExplicit, setEdExplicit] = useState(false);
   const promptTouched = useRef(false);
+  const [sc, setSc] = useState<ScReport | null>(null);
+  const [scJobs, setScJobs] = useState<Job[]>([]);
+  const [scBusy, setScBusy] = useState(false);
+  const [scMsg, setScMsg] = useState<string | null>(null);
+  const scActiveRef = useRef(false);
+  const selScActiveRef = useRef(false);
 
   const loadInventory = useCallback(async () => {
     const d = await fetch("/api/studio/covers").then((r) => r.json()).catch(() => null);
@@ -77,11 +93,41 @@ export default function CoverStudioPage() {
     return () => { live = false; clearInterval(t); };
   }, [sel]);
 
+  // SoundCloud drift report (prime-local; /api/studio/soundcloud reads the map file)
+  const loadSc = useCallback(async () => {
+    const d = await fetch("/api/studio/soundcloud").then((r) => r.json()).catch(() => null);
+    if (d?.ok) setSc(d);
+  }, []);
+  useEffect(() => { loadSc(); }, [loadSc]);
+
+  // poll the global soundcloud job lane (slug "soundcloud"); refresh the report when a run lands
+  useEffect(() => {
+    let live = true;
+    const load = () => fetch("/api/studio/jobs?slug=soundcloud").then((r) => r.json()).then((d) => {
+      if (!live || !d?.ok) return;
+      const js: Job[] = d.jobs || [];
+      setScJobs(js);
+      const active = js.some((j) => j.status === "pending" || j.status === "running");
+      if (scActiveRef.current && !active) loadSc();
+      scActiveRef.current = active;
+    }).catch(() => {});
+    load();
+    const t = setInterval(load, 6000);
+    return () => { live = false; clearInterval(t); };
+  }, [loadSc]);
+
   const selCover = useMemo(() => covers.find((c) => c.slug === sel) || null, [covers, sel]);
-  const activeJob = jobs.find((j) => j.status === "pending" || j.status === "running") || null;
-  const latestDone = jobs.find((j) => j.status === "done") || null;
+  // the GENERATE deck only speaks cover-gen — sync jobs live in their own panel
+  const genJobs = jobs.filter((j) => j.kind === "cover-gen");
+  const activeJob = genJobs.find((j) => j.status === "pending" || j.status === "running") || null;
+  const latestDone = genJobs.find((j) => j.status === "done") || null;
   // newest candidates first: prefer an active job's partials, else the last done job
   const candidates: Prog[] = (activeJob?.progress?.length ? activeJob.progress : latestDone?.progress) || [];
+  const selScJob = jobs.find((j) => j.kind === "soundcloud-sync") || null;
+  const selScActive = !!selScJob && (selScJob.status === "pending" || selScJob.status === "running");
+  const scGlobalActive = scJobs.find((j) => j.status === "pending" || j.status === "running") || null;
+  useEffect(() => { if (selScActiveRef.current && !selScActive) loadSc(); selScActiveRef.current = selScActive; }, [selScActive, loadSc]);
+  const selScMatch = sc?.matches?.find((m) => m.slug === sel) || null;
 
   const list = useMemo(() => {
     const s = q.trim().toLowerCase();
@@ -139,6 +185,27 @@ export default function CoverStudioPage() {
     setBusy(false);
     setMsg(r.ok ? `queued ${n} ${lane} candidate${n > 1 ? "s" : ""} — the GPU is on it` : `couldn't queue: ${r.error || "error"}`);
     if (sel) fetch(`/api/studio/jobs?slug=${encodeURIComponent(sel)}`).then((res) => res.json()).then((d) => d?.ok && setJobs(d.jobs || []));
+  }
+
+  async function scEnqueue(mode: "scan" | "push", slugsArg?: string[]) {
+    if (scBusy) return;
+    setScBusy(true);
+    const perTrack = slugsArg?.length === 1;
+    const say = perTrack ? setMsg : setScMsg;
+    // per-track pushes queue under the track's slug (they show in its job feed);
+    // global scan / sync-all under the "soundcloud" lane
+    const body = {
+      slug: perTrack ? slugsArg![0] : "soundcloud",
+      kind: "soundcloud-sync",
+      payload: { mode, ...(slugsArg?.length ? { slugs: slugsArg } : {}) },
+    };
+    const r = await fetch("/api/studio/jobs", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) })
+      .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
+    setScBusy(false);
+    say(r.ok
+      ? mode === "scan" ? "rescan queued — a browser will walk your SoundCloud tracks" : perTrack ? "push queued — the cover heads to SoundCloud" : "sync queued — pushing every stale + never-pushed cover"
+      : `couldn't queue: ${r.error || "error"}`);
+    if (r.ok && perTrack && sel) fetch(`/api/studio/jobs?slug=${encodeURIComponent(sel)}`).then((res) => res.json()).then((d) => d?.ok && setJobs(d.jobs || []));
   }
 
   async function apply(url: string) {
@@ -199,10 +266,64 @@ export default function CoverStudioPage() {
         {/* ── DECK ── */}
         <aside className="lg:sticky lg:top-16 lg:h-fit">
           {!selCover ? (
-            <div className={`${CARD} grid min-h-[300px] place-items-center text-center`}>
-              <div>
-                <p className={LABEL}>Generate deck</p>
-                <p className={`${HINT} mt-2 max-w-[240px]`}>Pick a cover from the wall to generate new art, pick a candidate, and reprint the collector case.</p>
+            <div className="space-y-4">
+              <div className={`${CARD} grid min-h-[140px] place-items-center text-center`}>
+                <div>
+                  <p className={LABEL}>Generate deck</p>
+                  <p className={`${HINT} mt-2 max-w-[240px]`}>Pick a cover from the wall to generate new art, pick a candidate, and reprint the collector case.</p>
+                </div>
+              </div>
+
+              {/* SoundCloud drift report + sync-all (P3) — the browser job runs on prime */}
+              <div className={`${CARD} space-y-3`}>
+                <div className="flex items-center justify-between">
+                  <p className={LABEL}>☁ SoundCloud sync</p>
+                  <button onClick={() => scEnqueue("scan")} disabled={scBusy || !!scGlobalActive}
+                    className="rounded-full border border-[var(--inst-line)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--inst-dim)] transition hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)] disabled:opacity-40">
+                    rescan
+                  </button>
+                </div>
+                {!sc ? <p className={HINT}>reading the drift report…</p> : !sc.scanned ? (
+                  <p className={HINT}>No SoundCloud map yet — rescan walks your track manager in a browser (logged-in profile on prime) and matches every SoundCloud track to the catalog.</p>
+                ) : (
+                  <>
+                    <p className={HINT}>
+                      <span className="text-[var(--inst-ok)]">{sc.counts?.synced ?? 0} synced</span>
+                      {" · "}<span className="text-[var(--inst-warn)]">{sc.counts?.stale ?? 0} stale</span>
+                      {" · "}{sc.counts?.never ?? 0} never pushed
+                      {(sc.counts?.unmatchedSc || sc.counts?.unmatchedCovers) ? ` · ${(sc.counts?.unmatchedSc ?? 0) + (sc.counts?.unmatchedCovers ?? 0)} unmatched` : ""}
+                      {sc.scannedAt ? ` · scanned ${new Date(sc.scannedAt).toLocaleDateString()}` : ""}
+                    </p>
+                    {(sc.matches || []).some((m) => m.state !== "synced") && (
+                      <ul className="max-h-56 space-y-1 overflow-y-auto pr-1">
+                        {(sc.matches || []).filter((m) => m.state !== "synced").map((m) => (
+                          <li key={m.sc} className="flex items-center justify-between gap-2 text-[11px]">
+                            <span className="truncate font-mono text-[var(--inst-ink)]">{m.title}</span>
+                            <span className={`shrink-0 ${m.state === "stale" ? "text-[var(--inst-warn)]" : "text-[var(--inst-faint)]"}`}>{m.state}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {(sc.unmatchedSc?.length || sc.unmatchedCovers?.length) ? (
+                      <details>
+                        <summary className={`${HINT} cursor-pointer select-none`}>unmatched — {sc.unmatchedSc?.length ?? 0} on SoundCloud · {sc.unmatchedCovers?.length ?? 0} in the catalog</summary>
+                        <ul className="mt-1 max-h-32 overflow-y-auto pr-1">
+                          {(sc.unmatchedSc || []).map((u, i) => <li key={`s${i}`} className={`${HINT} truncate`}>SC · {u.title}</li>)}
+                          {(sc.unmatchedCovers || []).map((u, i) => <li key={`c${i}`} className={`${HINT} truncate`}>catalog · {u.title}</li>)}
+                        </ul>
+                      </details>
+                    ) : null}
+                    <button onClick={() => scEnqueue("push")}
+                      disabled={scBusy || !!scGlobalActive || ((sc.counts?.stale ?? 0) + (sc.counts?.never ?? 0)) === 0}
+                      className={`${BTN} w-full`}>
+                      {scGlobalActive ? `${JOB_FACE[scGlobalActive.status]?.mark} ${scGlobalActive.payload?.mode === "scan" ? "scanning" : "pushing"} ${scGlobalActive.total ? `${scGlobalActive.done}/${scGlobalActive.total}` : "…"}`
+                        : `Sync all (${(sc.counts?.stale ?? 0) + (sc.counts?.never ?? 0)})`}
+                    </button>
+                  </>
+                )}
+                {scGlobalActive && sc?.scanned === false && <p className={HINT}>◍ browser job running on prime…</p>}
+                {scMsg && <p className={HINT}>{scMsg}</p>}
+                <p className={HINT}>Pushing drives soundcloud.com at human pace in the prime worker — a full sync takes a while on purpose.</p>
               </div>
             </div>
           ) : (
@@ -328,6 +449,26 @@ export default function CoverStudioPage() {
                   <button onClick={saveEdits} disabled={busy} className={`${BTN} w-full`}>Apply &amp; reprint</button>
                 </div>
               </details>
+
+              {/* SoundCloud — this track's sync state + push (P3) */}
+              <div className={`${CARD} flex items-center justify-between gap-3`}>
+                <div className="min-w-0">
+                  <p className={LABEL}>☁ SoundCloud</p>
+                  <p className={`${HINT} mt-1`}>
+                    {selScActive ? `${JOB_FACE[selScJob!.status]?.mark} pushing this cover…`
+                      : selScJob?.status === "error" ? `✕ last push failed — ${selScJob.error || "see worker log"}`
+                      : !sc ? "…"
+                      : !sc.scanned ? "no SoundCloud map yet — run a rescan from the deck home"
+                      : !selScMatch ? "not matched on SoundCloud — rescan, or match it by hand in the map"
+                      : SC_STATE_FACE[selScMatch.state] + (selScMatch.appliedAt ? ` · pushed ${new Date(selScMatch.appliedAt).toLocaleDateString()}` : "")}
+                  </p>
+                </div>
+                <button onClick={() => sel && scEnqueue("push", [sel])}
+                  disabled={scBusy || selScActive || !!scGlobalActive || !selScMatch}
+                  className={`${BTN} shrink-0`}>
+                  Push cover
+                </button>
+              </div>
 
               {/* candidates */}
               {(activeJob || candidates.length > 0) && (

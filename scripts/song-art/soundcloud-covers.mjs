@@ -21,15 +21,23 @@
 //       file, so it's safe to stop and resume. --dry rehearses without
 //       touching anything.
 //
+//   node scripts/song-art/soundcloud-covers.mjs --drift
+//       No browser: compare each matched cover's current R2 etag against the
+//       etag recorded at push time. never / stale / synced per track.
+//
 // Be a good citizen: it's your own account and your own art, but the script
 // still moves at human pace (4s between saves) and runs headed so you can
 // watch every move and slam Ctrl-C anytime.
+//
+// Also a LIBRARY (Cover Studio 2 P3): art-worker.mjs imports scan / drift /
+// pushTracks to run `soundcloud-sync` studio jobs, and /api/studio/soundcloud
+// reads the map file this writes. CLI behavior is unchanged.
 // ═══════════════════════════════════════════════════════════════════════════
 
 import { chromium } from "playwright";
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import os from "node:os";
 import sharp from "sharp";
 
@@ -77,7 +85,7 @@ const norm = (s) =>
     .replace(/\s+/g, " ")
     .trim();
 
-async function catalog() {
+export async function catalog() {
   const r = await fetch(`${SUPABASE_URL}/rest/v1/tracks?select=id,title,cover&order=sort_order.asc`, {
     headers: { apikey: SUPABASE_KEY, authorization: `Bearer ${SUPABASE_KEY}` },
   });
@@ -118,7 +126,7 @@ async function login() {
 }
 
 /** Ground truth, no window: does the saved profile open /you/tracks without a signin bounce? */
-async function checkSaved() {
+export async function checkSaved() {
   const ctx = await launch(true);
   try {
     const page = await ctx.newPage();
@@ -129,13 +137,13 @@ async function checkSaved() {
 }
 
 // ── scan: your tracks ↔ the catalog ─────────────────────────────────────────
-async function scan() {
+export async function scan({ headless = false } = {}) {
   const cat = await catalog();
-  const ctx = await launch(false);
+  const ctx = await launch(headless);
   const page = await ctx.newPage();
   await page.goto("https://soundcloud.com/you/tracks", { waitUntil: "domcontentloaded" });
   await page.waitForTimeout(4000);
-  if (page.url().includes("signin")) { console.error("✗ not logged in — run --login first"); await ctx.close(); process.exit(1); }
+  if (page.url().includes("signin")) { await ctx.close(); throw new Error("not logged in — run --login first"); }
 
   // scroll until the list stops growing (the manager lazy-loads)
   let last = 0;
@@ -164,6 +172,7 @@ async function scan() {
   await ctx.close();
   console.log(`found ${found.length} tracks on SoundCloud · ${cat.length} covers in the catalog`);
 
+  const prev = readMap(); // keep push history across rescans (done/appliedAt/etag)
   const matches = [];
   const unmatchedSc = [];
   const takenCover = new Set();
@@ -172,87 +181,134 @@ async function scan() {
     const hit =
       cat.find((t) => norm(t.title) === n && !takenCover.has(t.id)) ??
       cat.find((t) => (norm(t.title).includes(n) || n.includes(norm(t.title))) && !takenCover.has(t.id));
-    if (hit) { takenCover.add(hit.id); matches.push({ title: sc.title, sc: sc.url, cover: hit.cover, done: false }); }
+    if (hit) {
+      takenCover.add(hit.id);
+      const old = prev?.matches?.find((m) => m.slug === hit.id || m.sc === sc.url);
+      matches.push({ slug: hit.id, title: sc.title, sc: sc.url, cover: hit.cover, done: old?.done || false, ...(old?.appliedAt ? { appliedAt: old.appliedAt } : {}), ...(old?.etag ? { etag: old.etag } : {}) });
+    }
     else unmatchedSc.push(sc);
   }
-  const unmatchedCovers = cat.filter((t) => !takenCover.has(t.id)).map((t) => ({ title: t.title, cover: t.cover }));
+  const unmatchedCovers = cat.filter((t) => !takenCover.has(t.id)).map((t) => ({ slug: t.id, title: t.title, cover: t.cover }));
 
-  writeFileSync(MAP_FILE, JSON.stringify({ matches, unmatchedSc, unmatchedCovers }, null, 2));
+  writeFileSync(MAP_FILE, JSON.stringify({ scannedAt: new Date().toISOString(), matches, unmatchedSc, unmatchedCovers }, null, 2));
   console.log(`✓ ${matches.length} matched → ${MAP_FILE}`);
   if (unmatchedSc.length) console.log(`  ${unmatchedSc.length} SoundCloud tracks had no cover match (see unmatchedSc)`);
   if (unmatchedCovers.length) console.log(`  ${unmatchedCovers.length} covers had no SoundCloud track (see unmatchedCovers)`);
+  return { scTracks: found.length, matched: matches.length, unmatchedSc: unmatchedSc.length, unmatchedCovers: unmatchedCovers.length };
+}
+
+export function readMap() {
+  try { return JSON.parse(readFileSync(MAP_FILE, "utf8")); } catch { return null; }
+}
+
+/** Compare each matched cover's current R2 etag against the etag recorded at
+ *  push time. No browser, no login — safe to call anywhere the map file lives.
+ *  state per match: never (matched, not yet pushed) · stale (art changed since
+ *  the push, or pre-etag push history) · synced. */
+export async function drift() {
+  const map = readMap();
+  if (!map?.matches) return { scanned: false };
+  const matches = await Promise.all(map.matches.map(async (m) => {
+    let currentEtag = null;
+    try { const r = await fetch(m.cover, { method: "HEAD" }); if (r.ok) currentEtag = (r.headers.get("etag") || "").replace(/"/g, "") || null; } catch { /* unreachable → can't judge, treat as synced */ }
+    const state = !m.done ? "never" : currentEtag && m.etag !== currentEtag ? "stale" : "synced";
+    return { ...m, currentEtag, state };
+  }));
+  return { scanned: true, scannedAt: map.scannedAt || null, matches, unmatchedSc: map.unmatchedSc || [], unmatchedCovers: map.unmatchedCovers || [] };
 }
 
 // ── apply: swap the artwork ──────────────────────────────────────────────────
+// Always fetched fresh (a repush exists precisely because the art changed);
+// the etag of what actually got pushed is returned so drift() can compare.
 async function prepareJpeg(url, slugish) {
   mkdirSync(TMP, { recursive: true });
   const out = join(TMP, slugish.replace(/[^\w-]+/g, "_") + ".jpg");
-  if (existsSync(out)) return out;
-  const r = await fetch(url);
+  const r = await fetch(url, { cache: "no-store" });
   if (!r.ok) throw new Error(`cover fetch ${r.status}`);
+  const etag = (r.headers.get("etag") || "").replace(/"/g, "") || null;
   const buf = Buffer.from(await r.arrayBuffer());
   await sharp(buf).resize(1600, 1600, { fit: "cover" }).jpeg({ quality: 92 }).toFile(out);
-  return out;
+  return { file: out, etag };
 }
 
-async function apply() {
-  const dry = has("--dry");
-  const limit = Number(opt("--limit") ?? Infinity);
-  const only = opt("--only")?.toLowerCase() ?? null;
-  const map = JSON.parse(readFileSync(MAP_FILE, "utf8"));
-  const todo = shuffle(map.matches.filter((m) => !m.done && (!only || m.title.toLowerCase().includes(only)))).slice(0, limit);
-  if (!todo.length) { console.log("nothing to do — all matched tracks are done"); return; }
+/** Push covers to SoundCloud. Selection: explicit `slugs` repush even if done
+ *  (that's the studio's per-track / sync-stale path); otherwise every match
+ *  not yet done (the CLI's resume semantics). Progress is checkpointed into
+ *  the map file after every save (done + appliedAt + pushed etag). `onItem`
+ *  and `shouldStop` let art-worker report progress / honor job cancellation. */
+export async function pushTracks({ slugs = null, only = null, limit = Infinity, dry = false, headless = false, onItem = null, shouldStop = null } = {}) {
+  const map = readMap();
+  if (!map?.matches?.length) throw new Error("no soundcloud-map.json — run a scan first");
+  const todo = shuffle(map.matches.filter((m) =>
+    slugs ? m.slug && slugs.includes(m.slug)
+      : !m.done && (!only || m.title.toLowerCase().includes(only)))).slice(0, limit);
+  const out = { total: todo.length, ok: 0, fail: 0, stopped: false, items: [] };
+  if (!todo.length) { console.log("nothing to do — all matched tracks are done"); return out; }
   console.log(`${todo.length} track(s) to update${dry ? " (dry run)" : ""}`);
 
-  const ctx = await launch(false);
+  const ctx = await launch(headless);
   const page = await ctx.newPage();
-  let ok = 0, fail = 0, sinceBreak = 0;
+  let sinceBreak = 0;
 
-  for (const m of todo) {
-    process.stdout.write(`· ${m.title} … `);
-    try {
-      const jpg = await prepareJpeg(m.cover, m.title);
-      if (dry) { console.log(`would upload ${jpg}`); continue; }
-
-      await page.goto(m.sc, { waitUntil: "domcontentloaded" });
-      await nap(page, 2200, 5000);
-      await wander(page); // look at the page like a person would
-      // your own track page carries an Edit button in the sound actions row
-      const edit = page.locator('button:has-text("Edit")').first();
-      await edit.hover({ timeout: 10000 });
-      await nap(page, 250, 900);
-      await edit.click({ timeout: 10000 });
-      const dialog = page.locator('[role="dialog"], .modal').first();
-      await dialog.waitFor({ timeout: 10000 });
-      await nap(page, 800, 2200); // read the dialog
-      // the artwork chooser is the dialog's image file input
-      const input = dialog.locator('input[type="file"]').first();
-      await input.setInputFiles(jpg, { timeout: 10000 });
-      await nap(page, 2600, 5200); // admire the new cover / let the upload run
-      const save = dialog.locator('button:has-text("Save change"), button:has-text("Save")').last();
-      await save.hover({ timeout: 10000 });
-      await nap(page, 200, 700);
-      await save.click({ timeout: 10000 });
-      await dialog.waitFor({ state: "hidden", timeout: 30000 });
-      m.done = true;
-      writeFileSync(MAP_FILE, JSON.stringify(map, null, 2)); // checkpoint every win
-      ok++;
-      sinceBreak++;
-      console.log("✓");
-      await nap(page, 3500, 9000); // between-songs breath, never the same twice
-      if (sinceBreak >= 10 + Math.floor(rand(0, 6))) {
-        sinceBreak = 0;
-        const rest = Math.round(rand(25, 70));
-        console.log(`  ☕ coffee break — ${rest}s`);
-        await page.waitForTimeout(rest * 1000);
+  try {
+    for (const m of todo) {
+      if (shouldStop && (await shouldStop())) { out.stopped = true; break; }
+      const item = { slug: m.slug, title: m.title, at: new Date().toISOString() };
+      process.stdout.write(`· ${m.title} … `);
+      try {
+        const { file: jpg, etag } = await prepareJpeg(m.cover, m.slug || m.title);
+        if (dry) { console.log(`would upload ${jpg}`); item.status = "dry"; }
+        else {
+          await page.goto(m.sc, { waitUntil: "domcontentloaded" });
+          await nap(page, 2200, 5000);
+          await wander(page); // look at the page like a person would
+          // your own track page carries an Edit button in the sound actions row
+          const edit = page.locator('button:has-text("Edit")').first();
+          await edit.hover({ timeout: 10000 });
+          await nap(page, 250, 900);
+          await edit.click({ timeout: 10000 });
+          const dialog = page.locator('[role="dialog"], .modal').first();
+          await dialog.waitFor({ timeout: 10000 });
+          await nap(page, 800, 2200); // read the dialog
+          // the artwork chooser is the dialog's image file input
+          const input = dialog.locator('input[type="file"]').first();
+          await input.setInputFiles(jpg, { timeout: 10000 });
+          await nap(page, 2600, 5200); // admire the new cover / let the upload run
+          const save = dialog.locator('button:has-text("Save change"), button:has-text("Save")').last();
+          await save.hover({ timeout: 10000 });
+          await nap(page, 200, 700);
+          await save.click({ timeout: 10000 });
+          await dialog.waitFor({ state: "hidden", timeout: 30000 });
+          m.done = true;
+          m.appliedAt = new Date().toISOString();
+          if (etag) m.etag = etag; else delete m.etag;
+          writeFileSync(MAP_FILE, JSON.stringify(map, null, 2)); // checkpoint every win
+          out.ok++;
+          sinceBreak++;
+          item.status = "ok";
+          console.log("✓");
+          await nap(page, 3500, 9000); // between-songs breath, never the same twice
+          if (sinceBreak >= 10 + Math.floor(rand(0, 6))) {
+            sinceBreak = 0;
+            const rest = Math.round(rand(25, 70));
+            console.log(`  ☕ coffee break — ${rest}s`);
+            await page.waitForTimeout(rest * 1000);
+          }
+        }
+      } catch (e) {
+        out.fail++;
+        item.status = "fail";
+        item.error = String(e.message || e).split("\n")[0].slice(0, 200);
+        console.log(`✗ ${item.error}`);
       }
-    } catch (e) {
-      fail++;
-      console.log(`✗ ${String(e.message || e).split("\n")[0]}`);
+      out.items.push(item);
+      if (onItem) await onItem(item);
     }
+  } finally {
+    await ctx.close().catch(() => {});
   }
-  await ctx.close();
-  console.log(`done: ${ok} updated · ${fail} failed · progress saved in soundcloud-map.json`);
+  console.log(`done: ${out.ok} updated · ${out.fail} failed · progress saved in soundcloud-map.json`);
+  return out;
 }
 
 // ── prep: make the MANUAL route painless ─────────────────────────────────────
@@ -308,9 +364,22 @@ bar();</script>`;
   console.log(`\n✓ ${rows.length} JPEGs ready · checklist: ${page}`);
 }
 
-if (has("--login")) await login();
-else if (has("--prep")) await prep();
-else if (has("--check")) console.log(await checkSaved() ? "✓ logged in" : "✗ not logged in");
-else if (has("--scan")) await scan();
-else if (has("--apply")) await apply();
-else console.log("usage: --login | --check | --scan | --apply [--dry] [--limit N] [--only <substr>]");
+// Only run the CLI when executed directly — art-worker imports this as a lib.
+const IS_MAIN = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
+if (IS_MAIN) {
+  if (has("--login")) await login();
+  else if (has("--prep")) await prep();
+  else if (has("--check")) console.log(await checkSaved() ? "✓ logged in" : "✗ not logged in");
+  else if (has("--scan")) await scan();
+  else if (has("--drift")) {
+    const d = await drift();
+    if (!d.scanned) console.log("no map yet — run --scan first");
+    else {
+      const by = (s) => d.matches.filter((m) => m.state === s);
+      console.log(`scanned ${d.scannedAt || "?"} · ${by("synced").length} synced · ${by("stale").length} stale · ${by("never").length} never pushed · ${d.unmatchedSc.length}+${d.unmatchedCovers.length} unmatched`);
+      for (const m of d.matches.filter((x) => x.state !== "synced")) console.log(`  ${m.state.padEnd(6)} ${m.title}`);
+    }
+  }
+  else if (has("--apply")) await pushTracks({ dry: has("--dry"), limit: Number(opt("--limit") ?? Infinity), only: opt("--only")?.toLowerCase() ?? null });
+  else console.log("usage: --login | --check | --scan | --drift | --apply [--dry] [--limit N] [--only <substr>]");
+}

@@ -20,6 +20,11 @@ export const runtime = "nodejs";
 //   cover-gen       { prompt?, lane?: photo|paint|poster|anime, n?, seed? }
 //                   → covers/candidates/<slug>/ (Cover Studio 2; prompt
 //                     defaults to a planet-analysis seed, built worker-side)
+//   soundcloud-sync { mode:"scan" } | { mode:"push", slugs?, includeStale?, limit?, dry? }
+//                   → browser job on prime (no GPU): rescan the SoundCloud↔
+//                     catalog map, or push covers (explicit slugs, else every
+//                     never-pushed + stale match). slug "soundcloud" for
+//                     global runs, the track slug for per-track pushes.
 // ═══════════════════════════════════════════════════════════════════════════
 
 const MAX_IMAGES = 24;
@@ -32,6 +37,7 @@ interface Payload {
   prompt?: string; key?: string; n?: number; seed?: number;
   style?: string; negative?: string;
   lane?: string;
+  mode?: string; slugs?: string[]; includeStale?: boolean; limit?: number; dry?: boolean;
 }
 
 const COVER_LANES = ["photo", "paint", "poster", "anime"];
@@ -64,6 +70,13 @@ function validate(kind: string, p: Payload): { total: number } | { error: string
     const n = Math.max(1, Math.min(8, Number(p.n) || 4));
     p.n = n;
     return { total: n };
+  }
+  if (kind === "soundcloud-sync") {
+    p.mode = p.mode === "scan" ? "scan" : "push";
+    if (p.slugs !== undefined && (!Array.isArray(p.slugs) || !p.slugs.length || p.slugs.some((s) => typeof s !== "string" || !SLUG_RE.test(s))))
+      return { error: "slugs must be a non-empty list of track slugs" };
+    // total for a slug-less push is unknown here (drift decides worker-side)
+    return { total: p.mode === "scan" ? 1 : p.slugs?.length ?? 0 };
   }
   return { error: "unknown kind" };
 }
@@ -108,7 +121,7 @@ export async function POST(req: NextRequest) {
     const payload = b.payload ?? {};
     const v = validate(kind, payload);
     if ("error" in v) return NextResponse.json({ error: v.error }, { status: 400 });
-    if (v.total > MAX_IMAGES) return NextResponse.json({ error: `job too large (${v.total} images, max ${MAX_IMAGES})` }, { status: 400 });
+    if (kind !== "soundcloud-sync" && v.total > MAX_IMAGES) return NextResponse.json({ error: `job too large (${v.total} images, max ${MAX_IMAGES})` }, { status: 400 });
 
     const { data, error } = await supabaseAdmin()
       .from("art_jobs")
