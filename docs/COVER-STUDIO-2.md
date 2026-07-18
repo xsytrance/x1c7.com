@@ -123,7 +123,19 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
     `x1c7-source-assets/2026-07-18/` (gitignored on disk → wipe-safe now).
     Post-deploy: inserted the nights-drift-by Supabase row + fixed
     still-got-5-on-it's stale .jpeg cover → live & verified on x1c7.com/music.
-- [ ] P2 web studio + generate deck
+- [x] P2 web studio shell + GENERATE deck — v1 SHIPPED 2026-07-18 (e09b16f).
+  Owner-gated `/studio/covers` (src/app/studio/covers/page.tsx): wall of all 71
+  covers (GET /api/studio/covers) → pick → GENERATE deck (photo/paint/poster/
+  anime lanes, optional prompt, 1–8 count) → enqueues cover-gen via
+  /api/studio/jobs → art-worker.mjs renders on ComfyUI :8188 → candidates poll
+  in → pick → POST applyCandidate → promote + reprint. Reuses P1 wholesale, no
+  new backend. Page gated in src/proxy.ts (owner → through, else redirect home).
+  Worker fix: cover-gen tolerates a missing Supabase row (collector-only tracks
+  work; seeds from prompt/slug). Verified end-to-end. Needs the site running
+  LOCALLY + `node scripts/art-worker.mjs --watch` (Vercel can't reach ComfyUI).
+  ⏳ P2 stretch (not yet built): LLM art director (qwen3:14b concept fan-out),
+  lexicon idea deck (heavy words → imageryPrompts → prompt seeds), editor parity
+  (palette/spine/lang overrides — the API supports them, no UI yet).
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding
 - [ ] P5 app embed

@@ -7,6 +7,21 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (II) — Cover Studio 2 P2: the web studio
+
+Owner-gated `/studio/covers` — the VIP web cover studio, on top of the P1
+backbone. Wall of every collector cover → pick one → GENERATE deck (photo/paint/
+poster/anime lanes, optional prompt, 1–8 count) → enqueues a cover-gen job →
+`art-worker.mjs` renders on the local ComfyUI (:8188) → candidates stream in →
+pick one → it promotes to `originals/` and reprints the case. Reuses the P1
+`/api/studio/covers` + `/api/studio/jobs` wholesale — no new backend. Gated in
+`src/proxy.ts`; worker fix lets cover-gen run for collector-only tracks (no
+Supabase row). Verified end-to-end (cold-sugar → 2 candidates ~15s). Detail +
+stretch goals in [`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md). Also this day: an
+audit fixed 6 double-framed covers, added a DRUM & BASS bucket, corrected
+i-said-no's genre (Pop→Hip-Hop), and generated correct serene art for Days
+Drift By via `gen-cover.mjs` (SDXL Turbo).
+
 ## 2026-07-18 — Covers recovered, corrected, published; identity across the site
 
 Two threads shipped end to end. Cover detail: [`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md);
