@@ -7,6 +7,21 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (V) — Cover Studio 2 P5: the web studio in the app
+
+The phone gets the whole web studio — generate deck, art director, Lexsycon
+ideas, onboarding, SoundCloud panel — through the existing `?embed=1`
+contract, zero feature reimplementation. Site half: `/studio/covers` hides
+its header (and the WebView-hijacking exit link) under embed. App half
+(planet-studio v0.7.0): new `EmbedScreen`, a plain WebView door for the
+site's owner pages with the piece ShowScreen never needed — a file chooser
+(`onShowFileChooser` → system picker) so the P4 onboard form can pick art +
+MP3 from the phone — plus WebView-history back; "✦ COVER STUDIO 2" chip in
+the galaxy header; native Cover Lab stays for offline. Rebuilt + restarted
+`x1c7.service` so prime :7272 serves P3–P5; APK on the OTA channel (:7273).
+Verified: compile + unit tests, and Playwright against :7272 confirms the
+embed contract both ways. Detail: [`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md).
+
 ## 2026-07-18 (IV) — Cover Studio 2 P4: onboard a track from the studio
 
 A brand-new song becomes a collector citizen in one request instead of the

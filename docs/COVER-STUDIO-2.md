@@ -179,4 +179,15 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   (art+audio, publish off): record + 96 peaks + 0:03 runtime + first print +
   all 4 R2 artifacts 200, wall listing, duplicate → 409; test then fully
   removed (manifest, local files, R2). Nothing touched /music.
-- [ ] P5 app embed
+- [x] P5 app embed — SHIPPED 2026-07-18 (site 12c0ae4 · app v0.7.0/versionCode
+  9, planet-studio 6bef2f4). `/studio/covers` honors `?embed=1` (header +
+  exit link hide; the app brings its own chrome). planet-studio grew
+  `EmbedScreen` (plain WebView door for `?embed=1` owner pages: file-chooser
+  support so the onboard form picks art/MP3 from the phone, WebView-history
+  back) + a "✦ COVER STUDIO 2" chip in the galaxy header →
+  `<prime>/studio/covers?embed=1`; native Cover Lab stays for offline/quick
+  edits; now-playing bar hides on the webstudio route. Prod serve: rebuilt +
+  restarted `x1c7.service` so :7272 carries P3–P5; APK published to OTA
+  :7273 (phone pulls via CHECK FOR APP UPDATES). Verified: app compile +
+  unit tests green; Playwright against :7272 → header present bare /
+  absent under embed=1, wall renders both ways.
