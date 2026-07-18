@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "days-drift-by",
-  "generatedAt": "2026-07-17T07:01:39.776Z",
+  "generatedAt": "2026-07-18T10:30:09.544Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 375,
-    "judged": 14,
-    "accepted": 14,
-    "kept": 14
+    "candidates": 553,
+    "judged": 23,
+    "accepted": 23,
+    "kept": 23
   },
   "reel": [
     {
@@ -31,8 +31,20 @@
       "t": 82.385,
       "score": 1,
       "cosine": 0.649,
-      "reason": "Perfectly aligns with song's ethereal, melancholic, cinematic mood and themes.",
+      "reason": "Perfectly aligns with song's ethereal, melancholic, and cinematic mood.",
       "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drift/s0-4-concept-art.webp",
+      "key": "lexicon/drift/s0-4-concept-art.webp",
+      "word": "drift",
+      "line": "Days drift by, we don't have to",
+      "t": 68.104,
+      "score": 0.98,
+      "cosine": 0.49,
+      "reason": "Perfectly aligns with ethereal, melancholic, and cinematic themes",
+      "recipe": "4-concept-art",
       "featured": true
     },
     {
@@ -72,18 +84,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s1-5-word-portrait.webp",
-      "key": "lexicon/sky/s1-5-word-portrait.webp",
-      "word": "sky",
-      "line": "by, floating into the sky Stay with me, stay,",
-      "t": 82.385,
-      "score": 0.95,
-      "cosine": 0.639,
-      "reason": "Ethereal, cinematic, and symbolic of escape and transience",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-5-word-portrait.webp",
       "key": "lexicon/light/s21-5-word-portrait.webp",
       "word": "light",
@@ -103,8 +103,32 @@
       "t": 2.403,
       "score": 0.95,
       "cosine": 0.585,
-      "reason": "Ethereal light over a misty river matches song's melancholic, cinematic mood and themes",
+      "reason": "Ethereal light over a misty river matches song's melancholic, cinematic mood and themes.",
       "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/river/s3-5-cinema.webp",
+      "key": "lexicon/river/s3-5-cinema.webp",
+      "word": "river",
+      "line": "Leaves above, the river below Every little heartbeat moving slow",
+      "t": 47.543,
+      "score": 0.95,
+      "cosine": 0.578,
+      "reason": "Matches ethereal, melancholic, cinematic river imagery with song's themes",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/river/s3-6-noir.webp",
+      "key": "lexicon/river/s3-6-noir.webp",
+      "word": "river",
+      "line": "Leaves above, the river below Every little heartbeat moving slow",
+      "t": 47.543,
+      "score": 0.95,
+      "cosine": 0.578,
+      "reason": "Matches ethereal, melancholic, and cinematic tone with river and nature imagery",
+      "recipe": "6-noir",
       "featured": true
     },
     {
@@ -115,7 +139,7 @@
       "t": 50.469,
       "score": 0.95,
       "cosine": 0.557,
-      "reason": "matches ethereal, melancholic, and introspective mood",
+      "reason": "matches melancholic mood, urban isolation, time passing",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -127,7 +151,7 @@
       "t": 2.403,
       "score": 0.95,
       "cosine": 0.543,
-      "reason": "Ethereal light, transience, melancholy, and cinematic atmosphere align perfectly.",
+      "reason": "Ethereal light, transience, melancholy, cinematic atmosphere",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -168,15 +192,99 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drift/s0-4-concept-art.webp",
-      "key": "lexicon/drift/s0-4-concept-art.webp",
-      "word": "drift",
-      "line": "Days drift by, we don't have to",
-      "t": 68.104,
-      "score": 0.95,
-      "cosine": 0.49,
-      "reason": "Ethereal, melancholic, and cinematic imagery aligns perfectly with the song's themes and m",
-      "recipe": "4-concept-art",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/river/s0-5-photo.webp",
+      "key": "lexicon/river/s0-5-photo.webp",
+      "word": "river",
+      "line": "Leaves above, the river below Every little heartbeat moving slow",
+      "t": 47.543,
+      "score": 0.9,
+      "cosine": 0.64,
+      "reason": "Matches melancholic river imagery and somber mood",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s1-4-dream-collage.webp",
+      "key": "lexicon/hands/s1-4-dream-collage.webp",
+      "word": "hands",
+      "line": "Every little heartbeat moving slow Hands in the breeze, nothing to chase",
+      "t": 50.991,
+      "score": 0.9,
+      "cosine": 0.523,
+      "reason": "Ethereal lighting, intimacy, and transience align with song's mood and themes.",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s4-6-word-neon.webp",
+      "key": "lexicon/hands/s4-6-word-neon.webp",
+      "word": "hands",
+      "line": "Every little heartbeat moving slow Hands in the breeze, nothing to chase",
+      "t": 50.991,
+      "score": 0.9,
+      "cosine": 0.506,
+      "reason": "matches noir, melancholy, ethereal tension and symbolism",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s0-1-photo.webp",
+      "key": "lexicon/sun/s0-1-photo.webp",
+      "word": "sun",
+      "line": "color melts into gray Then the sun finds its way Just",
+      "t": 117.157,
+      "score": 0.85,
+      "cosine": 0.534,
+      "reason": "Ethereal and melancholic tone matches song's mood; sun as transition symbol fits theme",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s0-6-dream-collage.webp",
+      "key": "lexicon/hands/s0-6-dream-collage.webp",
+      "word": "hands",
+      "line": "Every little heartbeat moving slow Hands in the breeze, nothing to chase",
+      "t": 50.991,
+      "score": 0.85,
+      "cosine": 0.528,
+      "reason": "Ethereal, tender, and symbolic of connection and transience",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s2-4-photo.webp",
+      "key": "lexicon/sun/s2-4-photo.webp",
+      "word": "sun",
+      "line": "color melts into gray Then the sun finds its way Just",
+      "t": 117.157,
+      "score": 0.8,
+      "cosine": 0.611,
+      "reason": "Ethereal light contrasts with melancholy, fits noir and time themes",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-1-dream-collage.webp",
+      "key": "lexicon/sky/s2-1-dream-collage.webp",
+      "word": "sky",
+      "line": "by, floating into the sky Stay with me, stay,",
+      "t": 82.385,
+      "score": 0.8,
+      "cosine": 0.537,
+      "reason": "Ethereal and cinematic with surreal, dreamy elements matching the song's mood and themes",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s3-5-cinema.webp",
+      "key": "lexicon/sun/s3-5-cinema.webp",
+      "word": "sun",
+      "line": "color melts into gray Then the sun finds its way Just",
+      "t": 117.157,
+      "score": 0.7,
+      "cosine": 0.578,
+      "reason": "Ethereal glow fits mood; solitary sun contrasts noir with hope",
+      "recipe": "5-cinema",
       "featured": true
     }
   ],
@@ -184,26 +292,41 @@
     "sky": [
       0,
       1,
-      5
+      21
+    ],
+    "drift": [
+      2,
+      13,
+      14
     ],
     "clouds": [
-      2,
-      4
+      3,
+      5
     ],
     "slow": [
-      3,
-      8,
-      10
+      4,
+      10,
+      12
     ],
     "light": [
       6,
       7,
-      9
+      11
     ],
-    "drift": [
-      11,
-      12,
-      13
+    "river": [
+      8,
+      9,
+      15
+    ],
+    "hands": [
+      16,
+      17,
+      19
+    ],
+    "sun": [
+      18,
+      20,
+      22
     ]
   }
 }

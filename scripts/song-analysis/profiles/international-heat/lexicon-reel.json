@@ -1,124 +1,16 @@
 {
   "v": 1,
   "id": "international-heat",
-  "generatedAt": "2026-07-17T05:21:24.418Z",
+  "generatedAt": "2026-07-18T10:41:30.018Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 734,
-    "judged": 26,
-    "accepted": 25,
-    "kept": 25
+    "candidates": 1564,
+    "judged": 45,
+    "accepted": 39,
+    "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
-      "key": "lexicon/night/s5-5-word-portrait.webp",
-      "word": "night",
-      "line": "what you like You been teasing all night Female Maybe You gon slide",
-      "t": 45.5,
-      "score": 1,
-      "cosine": 0.627,
-      "reason": "Perfectly aligns with seductive nightlife and foreign allure",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s18-1-word-neon.webp",
-      "key": "lexicon/fire/s18-1-word-neon.webp",
-      "word": "fire",
-      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
-      "t": 29.559,
-      "score": 1,
-      "cosine": 0.625,
-      "reason": "Perfectly aligns with seductive, intense, and cultural fusion themes.",
-      "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
-      "key": "lexicon/heat/s8-2-word-portrait.webp",
-      "word": "heat",
-      "line": "Male Yeah I already know Female International heat Sweat drippin down two hearts offbeat Body",
-      "t": 61.44,
-      "score": 1,
-      "cosine": 0.617,
-      "reason": "Perfectly aligns with seductive nightlife and cultural fusion themes",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s0-1.webp",
-      "key": "lexicon/rhythm/s0-1.webp",
-      "word": "rhythm",
-      "line": "We fuckin to the rhythm of this international sin Female Touch me right",
-      "t": 88.2,
-      "score": 1,
-      "cosine": 0.423,
-      "reason": "Image perfectly captures rhythm's sensual, global, and intense essence",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s7-4-word-neon.webp",
-      "key": "lexicon/soul/s7-4-word-neon.webp",
-      "word": "soul",
-      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
-      "t": 107.23,
-      "score": 0.95,
-      "cosine": 0.614,
-      "reason": "Strong cultural fusion, neon symbolizes desire, cityscape ties to global connection",
-      "recipe": "4-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
-      "key": "lexicon/fire/s5-6-word-portrait.webp",
-      "word": "fire",
-      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
-      "t": 29.559,
-      "score": 0.95,
-      "cosine": 0.609,
-      "reason": "Strong metaphor, sensual mood, urban setting aligns with song's themes",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
-      "t": 29.559,
-      "score": 0.95,
-      "cosine": 0.592,
-      "reason": "Symbolic fire, sensual touch, urban night, cultural fusion",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-1-word-neon.webp",
-      "key": "lexicon/soul/s4-1-word-neon.webp",
-      "word": "soul",
-      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
-      "t": 107.23,
-      "score": 0.95,
-      "cosine": 0.573,
-      "reason": "Strong cultural fusion, neon symbolism, and sensual mood align perfectly with the song's t",
-      "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "what you like You been teasing all night Female Maybe You gon slide",
-      "t": 45.5,
-      "score": 0.95,
-      "cosine": 0.562,
-      "reason": "Sensual urban night scene fits seductive, boundary-breaking theme",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
       "key": "lexicon/night/s12-6-word-portrait.webp",
@@ -126,8 +18,8 @@
       "line": "what you like You been teasing all night Female Maybe You gon slide",
       "t": 45.5,
       "score": 0.95,
-      "cosine": 0.562,
-      "reason": "Sensual, urban, and aligned with nightlife and cultural fusion",
+      "cosine": 0.541,
+      "reason": "Seductive, urban, neon lights align with song's themes and mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -144,6 +36,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s2-3-word-portrait.webp",
+      "key": "lexicon/flame/s2-3-word-portrait.webp",
+      "word": "flame",
+      "line": "Both International heat International flame Everybody watchin when you scream my name Female From District",
+      "t": 156.735,
+      "score": 0.95,
+      "cosine": 0.531,
+      "reason": "Sensual, intense, and symbolic of desire and transformation",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s5-1-word-portrait.webp",
       "key": "lexicon/body/s5-1-word-portrait.webp",
       "word": "body",
@@ -151,56 +55,68 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.529,
-      "reason": "Sensual, confident woman in nightclub aligns with song's themes of seduction and nightlife",
+      "reason": "Sensual, confident woman in a slip dress aligns with seduction and nightlife themes.",
       "recipe": "1-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-5-word-portrait.webp",
-      "key": "lexicon/drink/s7-5-word-portrait.webp",
-      "word": "drink",
-      "line": "light Female One more drink Một nụ hôn",
-      "t": 144.057,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s18-1-word-neon.webp",
+      "key": "lexicon/fire/s18-1-word-neon.webp",
+      "word": "fire",
+      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
+      "t": 29.559,
       "score": 0.95,
-      "cosine": 0.527,
-      "reason": "Sensual, tempting, and tied to nightlife and cultural fusion",
-      "recipe": "5-word-portrait",
+      "cosine": 0.523,
+      "reason": "Sensual, intense, and culturally rich with neon and flames",
+      "recipe": "1-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s10-1-word-portrait.webp",
-      "key": "lexicon/body/s10-1-word-portrait.webp",
-      "word": "body",
-      "line": "can feel that body talkin' from here Female Anh ơi nhìn em hoài làm chi",
-      "t": 13.816,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s4-1-word-portrait.webp",
+      "key": "lexicon/flame/s4-1-word-portrait.webp",
+      "word": "flame",
+      "line": "Both International heat International flame Everybody watchin when you scream my name Female From District",
+      "t": 156.735,
       "score": 0.95,
-      "cosine": 0.502,
-      "reason": "Sensual, cultural fusion, and intimate atmosphere align perfectly with the song's themes.",
+      "cosine": 0.518,
+      "reason": "Sensual, intense, urban, symbolic of heat and transformation",
       "recipe": "1-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
-      "key": "lexicon/soul/s1-6-word-portrait.webp",
-      "word": "soul",
-      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
-      "t": 107.23,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s8-3-word-neon.webp",
+      "key": "lexicon/flame/s8-3-word-neon.webp",
+      "word": "flame",
+      "line": "Both International heat International flame Everybody watchin when you scream my name Female From District",
+      "t": 156.735,
       "score": 0.95,
-      "cosine": 0.501,
-      "reason": "Cultural fusion, sensuality, and empowerment align with song's themes and mood",
-      "recipe": "6-word-portrait",
+      "cosine": 0.506,
+      "reason": "Sensual, urban, neon symbolism fits the song's mood and themes",
+      "recipe": "3-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
-      "key": "lexicon/move/s2-2-word-portrait.webp",
-      "word": "move",
-      "line": "Female Touch me right dont you ever play tame We fuckin to the rhythm of this choppedup game Female Move Move Move Move Male Closer Closer Female",
-      "t": 93.038,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
+      "key": "lexicon/night/s8-3-word-portrait.webp",
+      "word": "night",
+      "line": "what you like You been teasing all night Female Maybe You gon slide",
+      "t": 45.5,
       "score": 0.95,
-      "cosine": 0.493,
-      "reason": "Sensual nightclub scene matches song's mood and themes of desire and rhythm",
-      "recipe": "2-word-portrait",
+      "cosine": 0.495,
+      "reason": "Captures urban nightlife, mystery, and seduction perfectly",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s0-4-word-portrait.webp",
+      "key": "lexicon/heat/s0-4-word-portrait.webp",
+      "word": "heat",
+      "line": "Male Yeah I already know Female International heat Sweat drippin down two hearts offbeat Body",
+      "t": 61.44,
+      "score": 0.95,
+      "cosine": 0.492,
+      "reason": "Sultry, confident woman in a black dress under stage lights aligns with seductive, sensual",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -211,7 +127,7 @@
       "t": 88.2,
       "score": 0.95,
       "cosine": 0.49,
-      "reason": "Sensual urban tension matches song's seductive, global rhythm",
+      "reason": "Sensual urban touch, nighttime allure, cultural fusion",
       "recipe": "2",
       "featured": true
     },
@@ -240,15 +156,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s0-4-word-portrait.webp",
-      "key": "lexicon/heat/s0-4-word-portrait.webp",
-      "word": "heat",
-      "line": "Male Yeah I already know Female International heat Sweat drippin down two hearts offbeat Body",
-      "t": 61.44,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
+      "key": "lexicon/rhythm/s5-1-word-neon.webp",
+      "word": "rhythm",
+      "line": "We fuckin to the rhythm of this international sin Female Touch me right",
+      "t": 88.2,
       "score": 0.95,
-      "cosine": 0.468,
-      "reason": "Sensual, confident, and aligned with seduction and global connection",
-      "recipe": "4-word-portrait",
+      "cosine": 0.466,
+      "reason": "Sensual club vibe matches song's seductive, intense mood and cultural fusion theme",
+      "recipe": "1-word-neon",
       "featured": true
     },
     {
@@ -259,102 +175,289 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.454,
-      "reason": "Sensual neon imagery matches song's seductive, intense mood and urban cultural fusion them",
+      "reason": "Sensual neon fits seductive urban nightlife and cultural fusion",
       "recipe": "6-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-3-film-still.webp",
-      "key": "lexicon/move/s2-3-film-still.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-3-neon-night.webp",
+      "key": "lexicon/love/s12-3-neon-night.webp",
+      "word": "love",
+      "line": "em cứ nói thẳng không cần râm I love it when you grab me kiss me lay me down Put it on me slow fuck me to the",
+      "t": 130.21,
+      "score": 0.95,
+      "cosine": 0.437,
+      "reason": "Sensual urban setting matches song's mood and themes of desire and cultural fusion.",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
+      "key": "lexicon/heat/s3-6-word-portrait.webp",
+      "word": "heat",
+      "line": "Male Yeah I already know Female International heat Sweat drippin down two hearts offbeat Body",
+      "t": 61.44,
+      "score": 0.95,
+      "cosine": 0.43,
+      "reason": "Matches seductive, warm, and intense club vibe with cultural fusion",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s22-3-word-neon.webp",
+      "key": "lexicon/move/s22-3-word-neon.webp",
       "word": "move",
       "line": "Female Touch me right dont you ever play tame We fuckin to the rhythm of this choppedup game Female Move Move Move Move Male Closer Closer Female",
       "t": 93.038,
       "score": 0.95,
-      "cosine": 0.446,
-      "reason": "Sensual posture, neon lighting, and seductive tension align with song's themes of desire a",
-      "recipe": "3-film-still",
+      "cosine": 0.392,
+      "reason": "Sensual energy, urban nightlife, and cultural fusion align perfectly with the song's theme",
+      "recipe": "3-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-5-word-portrait.webp",
-      "key": "lexicon/light/s21-5-word-portrait.webp",
-      "word": "light",
-      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
-      "t": 141.421,
-      "score": 0.7,
-      "cosine": 0.466,
-      "reason": "Mysterious light fits the song's sensual and intense mood",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
+      "key": "lexicon/bass/s3-3-word-portrait.webp",
+      "word": "bass",
+      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
+      "t": 41.192,
+      "score": 0.9,
+      "cosine": 0.548,
+      "reason": "Sensual energy, musical dominance, and stage performance align with song's themes of seduc",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s9-5-word-portrait.webp",
+      "key": "lexicon/bass/s9-5-word-portrait.webp",
+      "word": "bass",
+      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
+      "t": 41.192,
+      "score": 0.9,
+      "cosine": 0.546,
+      "reason": "Sensual energy, stage lights, cultural fusion, empowerment",
       "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s18-3-neon-night.webp",
-      "key": "lexicon/light/s18-3-neon-night.webp",
-      "word": "light",
-      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
-      "t": 141.421,
-      "score": 0.6,
-      "cosine": 0.446,
-      "reason": "Sensual mood matches, but lacks explicit cultural fusion or empowerment",
-      "recipe": "3-neon-night",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
+      "t": 29.559,
+      "score": 0.9,
+      "cosine": 0.504,
+      "reason": "Symbolism aligns with fire's role as desire and rhythm in the song",
+      "recipe": "1-photo",
+      "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s5-3-cinema.webp",
-      "key": "lexicon/light/s5-3-cinema.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s10-1-word-portrait.webp",
+      "key": "lexicon/body/s10-1-word-portrait.webp",
+      "word": "body",
+      "line": "can feel that body talkin' from here Female Anh ơi nhìn em hoài làm chi",
+      "t": 13.816,
+      "score": 0.9,
+      "cosine": 0.502,
+      "reason": "Sensual, cultural fusion, and intimate atmosphere align with song's themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
       "word": "light",
       "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
       "t": 141.421,
-      "score": 0.6,
-      "cosine": 0.439,
-      "reason": "Matches nighttime mood, but lacks explicit seduction or cultural fusion",
+      "score": 0.9,
+      "cosine": 0.477,
+      "reason": "Sensual, confident, urban night aligns with song's themes",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "We fuckin to the rhythm of this international sin Female Touch me right",
+      "t": 88.2,
+      "score": 0.9,
+      "cosine": 0.476,
+      "reason": "Urban setting, cultural fusion, and rhythm align with song's themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "key": "lexicon/light/s25-3-cinema.webp",
+      "word": "light",
+      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
+      "t": 141.421,
+      "score": 0.9,
+      "cosine": 0.463,
+      "reason": "Sensual nighttime cityscape aligns with song's themes of seduction and cultural fusion",
       "recipe": "3-cinema",
-      "featured": false
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
+      "key": "lexicon/soul/s1-6-word-portrait.webp",
+      "word": "soul",
+      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
+      "t": 107.23,
+      "score": 0.9,
+      "cosine": 0.455,
+      "reason": "Confident stage presence aligns with seduction and empowerment themes",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s9-2-chalkboard.webp",
+      "key": "lexicon/eyes/s9-2-chalkboard.webp",
+      "word": "eyes",
+      "line": "my side Female Look in my eyes Male Thats all it takes to slide Both",
+      "t": 76.32,
+      "score": 0.9,
+      "cosine": 0.431,
+      "reason": "Sensual, intense, and surreal eyes fit the seductive and transcendent mood of the song.",
+      "recipe": "2-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s0-1-word-portrait.webp",
+      "key": "lexicon/eyes/s0-1-word-portrait.webp",
+      "word": "eyes",
+      "line": "my side Female Look in my eyes Male Thats all it takes to slide Both",
+      "t": 76.32,
+      "score": 0.85,
+      "cosine": 0.499,
+      "reason": "Sensual intensity, urban setting, and metaphorical eyes align with song's themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
+      "key": "lexicon/light/s25-2-anime.webp",
+      "word": "light",
+      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
+      "t": 141.421,
+      "score": 0.85,
+      "cosine": 0.478,
+      "reason": "Sensual chaos, neon lights, urban decay fit the seductive, intense mood and cultural fusio",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s5-6-neon-night.webp",
+      "key": "lexicon/hands/s5-6-neon-night.webp",
+      "word": "hands",
+      "line": "No translation for the way I ache Just your hands on my waist while our bodies shake Em nóng như Sài Gòn trưa",
+      "t": 122.16,
+      "score": 0.85,
+      "cosine": 0.427,
+      "reason": "Sensual mood, urban setting, connection between people",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s4-5-word-portrait.webp",
+      "key": "lexicon/slow/s4-5-word-portrait.webp",
+      "word": "slow",
+      "line": "me feel that body ride Female Lại đây nice and slow Đặt tay lên eo feel the flow Male",
+      "t": 52.72,
+      "score": 0.8,
+      "cosine": 0.465,
+      "reason": "Sensual mood matches; text overlay aligns with lyric emphasis on 'slow'",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s3-1-word-portrait.webp",
+      "key": "lexicon/love/s3-1-word-portrait.webp",
+      "word": "love",
+      "line": "em cứ nói thẳng không cần râm I love it when you grab me kiss me lay me down Put it on me slow fuck me to the",
+      "t": 130.21,
+      "score": 0.8,
+      "cosine": 0.44,
+      "reason": "romantic intimacy aligns with seduction and desire themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s7-4-word-neon.webp",
+      "key": "lexicon/soul/s7-4-word-neon.webp",
+      "word": "soul",
+      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
+      "t": 107.23,
+      "score": 0.7,
+      "cosine": 0.49,
+      "reason": "Cultural fusion and resilience align with song's themes; neon 'soul' ties to identity and ",
+      "recipe": "4-word-neon",
+      "featured": true
     }
   ],
   "byWord": {
     "night": [
       0,
-      8,
-      9
+      7
     ],
-    "fire": [
+    "body": [
       1,
+      3,
+      20
+    ],
+    "flame": [
+      2,
       5,
       6
     ],
+    "fire": [
+      4,
+      19
+    ],
     "heat": [
-      2,
-      19,
-      20
+      8,
+      13,
+      15
     ],
     "rhythm": [
-      3,
-      16
-    ],
-    "soul": [
-      4,
-      7,
-      14
-    ],
-    "body": [
-      10,
-      11,
-      13
+      9,
+      12,
+      22
     ],
     "drink": [
-      12,
+      10,
+      11
+    ],
+    "love": [
+      14,
+      30
+    ],
+    "move": [
+      16
+    ],
+    "bass": [
       17,
       18
     ],
-    "move": [
-      15,
-      21
-    ],
     "light": [
-      22,
+      21,
       23,
-      24
+      27
+    ],
+    "soul": [
+      24,
+      31
+    ],
+    "eyes": [
+      25,
+      26
+    ],
+    "hands": [
+      28
+    ],
+    "slow": [
+      29
     ]
   }
 }

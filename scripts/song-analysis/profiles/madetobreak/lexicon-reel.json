@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-07-17T13:51:42.434Z",
+  "generatedAt": "2026-07-18T10:49:08.652Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 675,
-    "judged": 86,
-    "accepted": 83,
-    "kept": 64
+    "candidates": 843,
+    "judged": 64,
+    "accepted": 63,
+    "kept": 32
   },
   "reel": [
     {
@@ -21,6 +21,42 @@
       "cosine": 0.499,
       "reason": "Image aligns with themes of resilience and defiance in a war-torn setting.",
       "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-1-anime.webp",
+      "key": "lexicon/storm/s5-1-anime.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 1,
+      "cosine": 0.482,
+      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes.",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wounds/s0-1-dream-collage.webp",
+      "key": "lexicon/wounds/s0-1-dream-collage.webp",
+      "word": "wounds",
+      "line": "wounds",
+      "t": null,
+      "score": 1,
+      "cosine": 0.444,
+      "reason": "Image embodies resilience, battle scars, and inner strength perfectly matching the song's ",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
+      "key": "lexicon/boulder/s0-6-anime.webp",
+      "word": "boulder",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
+      "t": 27.92,
+      "score": 0.98,
+      "cosine": 0.444,
+      "reason": "Symbolizes resilience, defiance, and transformation through pain",
+      "recipe": "6-anime",
       "featured": true
     },
     {
@@ -43,7 +79,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.526,
-      "reason": "Symbolism of broken chains aligns with defiance and resilience, fitting the song's themes.",
+      "reason": "Symbolism of broken chains aligns with themes of resilience and defiance; post-apocalyptic",
       "recipe": "1-anime",
       "featured": true
     },
@@ -55,8 +91,20 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and empowerm",
+      "reason": "Symbolism of break as transformation in a desolate yet hopeful setting",
       "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s5-5-anime.webp",
+      "key": "lexicon/chain/s5-5-anime.webp",
+      "word": "chain",
+      "line": "Every lock every limit every chain in my way Made to break",
+      "t": 73.76,
+      "score": 0.95,
+      "cosine": 0.497,
+      "reason": "Symbolizes breaking free from limits, matches defiant resilience theme",
+      "recipe": "5-anime",
       "featured": true
     },
     {
@@ -79,7 +127,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Symbolizes transformation, resilience, and defiance through physicality and light",
+      "reason": "Powerful, defiant imagery matches song's themes of resilience and transformation",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -91,20 +139,8 @@
       "t": 86.72,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolizes defiance and transformation through decay and resilience",
+      "reason": "Symbolizes defiance and transformation through destruction",
       "recipe": "3-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-1-anime.webp",
-      "key": "lexicon/storm/s5-1-anime.webp",
-      "word": "storm",
-      "line": "storm",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.482,
-      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes.",
-      "recipe": "1-anime",
       "featured": true
     },
     {
@@ -127,8 +163,20 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Symbolizes transformation from destruction to power, matches defiant resilience theme",
+      "reason": "Symbolizes resilience, transformation of destruction into power",
       "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/armor/s0-5-anime.webp",
+      "key": "lexicon/armor/s0-5-anime.webp",
+      "word": "armor",
+      "line": "armor",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.478,
+      "reason": "Symbolizes transformation through destruction, aligns with resilience and defiance",
+      "recipe": "5-anime",
       "featured": true
     },
     {
@@ -144,27 +192,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-4-film-still.webp",
-      "key": "lexicon/chains/s0-4-film-still.webp",
-      "word": "chains",
-      "line": "chains",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle/s0-5-dream-collage.webp",
+      "key": "lexicon/battle/s0-5-dream-collage.webp",
+      "word": "battle",
+      "line": "battle",
       "t": null,
       "score": 0.95,
-      "cosine": 0.468,
-      "reason": "Symbolizes confinement and resilience, aligns with defiance and transformation themes",
-      "recipe": "4-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s6-5-film-still.webp",
-      "key": "lexicon/chains/s6-5-film-still.webp",
-      "word": "chains",
-      "line": "chains",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.462,
-      "reason": "Symbolizes breaking free, defiance, industrial transformation",
-      "recipe": "5-film-still",
+      "cosine": 0.465,
+      "reason": "Powerful imagery aligns with defiance, resilience, and transformation through struggle.",
+      "recipe": "5-dream-collage",
       "featured": true
     },
     {
@@ -204,18 +240,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle-made/s0-2-dream-collage.webp",
-      "key": "lexicon/battle-made/s0-2-dream-collage.webp",
-      "word": "battle-made",
-      "line": "battle-made",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.451,
-      "reason": "Symbolizes resilience, defiance, and transformation through struggle",
-      "recipe": "2-dream-collage",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-2-anime.webp",
       "key": "lexicon/fire/s5-2-anime.webp",
       "word": "fire",
@@ -223,20 +247,8 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth central to the song's themes.",
+      "reason": "Symbolizes resilience, destruction, and rebirth; aligns with defiant, resilient mood.",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "fire",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.445,
-      "reason": "Symbolizes inner drive and transformation through fire",
-      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -252,18 +264,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-6-word-portrait.webp",
-      "key": "lexicon/fire/s17-6-word-portrait.webp",
-      "word": "fire",
-      "line": "fire",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.442,
-      "reason": "Symbolizes transformation, resilience, and renewal through destruction",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-4-dream-collage.webp",
       "key": "lexicon/storm/s5-4-dream-collage.webp",
       "word": "storm",
@@ -271,7 +271,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.442,
-      "reason": "Powerful imagery of defiance against chaos aligns with resilience and transformation theme",
+      "reason": "Powerful imagery of defiance against nature mirrors song's themes of resilience and transf",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -283,32 +283,44 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.441,
-      "reason": "Symbolizes destruction and rebirth, aligns with resilience and transformation themes",
+      "reason": "Symbolizes transformation through destruction, resilience, and rebirth",
       "recipe": "3-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-1-dream-collage.webp",
-      "key": "lexicon/break/s8-1-dream-collage.webp",
-      "word": "break",
-      "line": "the wreckage let 'em study the frame They were betting on the break now they're scared of the change I was made",
-      "t": 67.2,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/armor/s0-2-word-portrait.webp",
+      "key": "lexicon/armor/s0-2-word-portrait.webp",
+      "word": "armor",
+      "line": "armor",
+      "t": null,
       "score": 0.95,
-      "cosine": 0.433,
-      "reason": "Symbolizes transformation through destruction, aligns with resilience and defiance",
-      "recipe": "1-dream-collage",
+      "cosine": 0.441,
+      "reason": "Symbolizes resilience, transformation, and defiance through fusion of destruction and stre",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-2-photo.webp",
-      "key": "lexicon/wreckage/s0-2-photo.webp",
-      "word": "wreckage",
-      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
-      "t": 64.56,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/knife/s0-3-anime.webp",
+      "key": "lexicon/knife/s0-3-anime.webp",
+      "word": "knife",
+      "line": "You get what you giveI get what I take Had a knife in my back still ate off the same plate Now I walk in like the building",
+      "t": 42.96,
+      "score": 0.95,
+      "cosine": 0.439,
+      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and themes of tr",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/armor/s0-4-concept-art.webp",
+      "key": "lexicon/armor/s0-4-concept-art.webp",
+      "word": "armor",
+      "line": "armor",
+      "t": null,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Symbolizes triumph over destruction, aligns with resilience and empowerment themes",
-      "recipe": "2-photo",
+      "reason": "Symbolizes resilience, defiance, and rebirth through fire",
+      "recipe": "4-concept-art",
       "featured": true
     },
     {
@@ -321,6 +333,18 @@
       "cosine": 0.429,
       "reason": "Powerful imagery of pain and resilience aligns with song's defiant, resilient mood",
       "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s4-1-anime.webp",
+      "key": "lexicon/chain/s4-1-anime.webp",
+      "word": "chain",
+      "line": "Every lock every limit every chain in my way Made to break",
+      "t": 73.76,
+      "score": 0.95,
+      "cosine": 0.426,
+      "reason": "Symbolism aligns with defiance and transformation through destruction",
+      "recipe": "1-anime",
       "featured": true
     },
     {
@@ -348,30 +372,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barricade/s0-4-anime.webp",
-      "key": "lexicon/barricade/s0-4-anime.webp",
-      "word": "barricade",
-      "line": "battlemade They were waiting on a body I became the barricade I was made to break Everything but",
-      "t": 86.72,
-      "score": 0.95,
-      "cosine": 0.419,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
-      "recipe": "4-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s5-4-dream-collage.webp",
-      "key": "lexicon/break/s5-4-dream-collage.webp",
-      "word": "break",
-      "line": "the wreckage let 'em study the frame They were betting on the break now they're scared of the change I was made",
-      "t": 67.2,
-      "score": 0.95,
-      "cosine": 0.419,
-      "reason": "Symbolizes destruction and transformation through chaos and resilience",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-3-dream-collage.webp",
       "key": "lexicon/shattered/s0-3-dream-collage.webp",
       "word": "shattered",
@@ -379,501 +379,91 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience",
       "recipe": "3-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-5-word-portrait.webp",
-      "key": "lexicon/walk/s9-5-word-portrait.webp",
-      "word": "walk",
-      "line": "Had a knife in my back still ate off the same plate Now I walk in like the building got my name on the gate Bad hand",
-      "t": 45.28,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-2-anime.webp",
+      "key": "lexicon/throne/s0-2-anime.webp",
+      "word": "throne",
+      "line": "Tyyyleeer No longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting",
+      "t": 63.84,
       "score": 0.95,
-      "cosine": 0.395,
-      "reason": "Symbolizes resilience, determination, and journey through struggle",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-5-word-portrait.webp",
-      "key": "lexicon/storm/s5-5-word-portrait.webp",
-      "word": "storm",
-      "line": "storm",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.394,
-      "reason": "Powerful storm imagery aligns with defiant, resilient mood and themes of transformation th",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-5-anime.webp",
-      "key": "lexicon/break/s8-5-anime.webp",
-      "word": "break",
-      "line": "the wreckage let 'em study the frame They were betting on the break now they're scared of the change I was made",
-      "t": 67.2,
-      "score": 0.95,
-      "cosine": 0.388,
-      "reason": "Powerful imagery of brokenness transformed into something intense and defiant",
-      "recipe": "5-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s12-3-dream-collage.webp",
-      "key": "lexicon/body/s12-3-dream-collage.webp",
-      "word": "body",
-      "line": "me damagedI call it battlemade They were waiting on a body I became the barricade I was made to break",
-      "t": 85.68,
-      "score": 0.95,
-      "cosine": 0.387,
-      "reason": "Symbolizes resilience, defiance, and transformation through strength",
-      "recipe": "3-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle-made/s0-1-photo.webp",
-      "key": "lexicon/battle-made/s0-1-photo.webp",
-      "word": "battle-made",
-      "line": "battle-made",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.385,
-      "reason": "Powerful imagery of resilience and defiance in a war-torn setting",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle-made/s0-6-anime.webp",
-      "key": "lexicon/battle-made/s0-6-anime.webp",
-      "word": "battle-made",
-      "line": "battle-made",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.38,
-      "reason": "Powerful post-battle imagery aligns with resilience and defiance themes.",
-      "recipe": "6-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-6-concept-art.webp",
-      "key": "lexicon/shattered/s0-6-concept-art.webp",
-      "word": "shattered",
-      "line": "shattered",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.37,
-      "reason": "Symbolizes destruction and resilience, aligns with themes of transformation and defiance.",
-      "recipe": "6-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-4-poster.webp",
-      "key": "lexicon/heat/s6-4-poster.webp",
-      "word": "heat",
-      "line": "to let a little scratch get mulled over Pressure built heat meant to burstI just got colder Weight of the world",
-      "t": 32.32,
-      "score": 0.95,
-      "cosine": 0.356,
-      "reason": "Dynamic, intense, and symbolic of pressure and transformation",
-      "recipe": "4-poster",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weapon/s0-2-dream-collage.webp",
-      "key": "lexicon/weapon/s0-2-dream-collage.webp",
-      "word": "weapon",
-      "line": "back Pile it onI adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat",
-      "t": 178.04,
-      "score": 0.95,
-      "cosine": 0.356,
-      "reason": "Symbolizes transformation of pain into power, fits defiant, resilient mood",
-      "recipe": "2-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s7-2-manga-line.webp",
-      "key": "lexicon/heat/s7-2-manga-line.webp",
-      "word": "heat",
-      "line": "to let a little scratch get mulled over Pressure built heat meant to burstI just got colder Weight of the world",
-      "t": 32.32,
-      "score": 0.95,
-      "cosine": 0.351,
-      "reason": "Chaotic heat symbolizes pressure and transformation",
-      "recipe": "2-manga-line",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s9-3-anime.webp",
-      "key": "lexicon/heat/s9-3-anime.webp",
-      "word": "heat",
-      "line": "to let a little scratch get mulled over Pressure built heat meant to burstI just got colder Weight of the world",
-      "t": 32.32,
-      "score": 0.95,
-      "cosine": 0.338,
-      "reason": "chaotic energy and destruction align with defiance and transformation",
-      "recipe": "3-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s12-6-concept-art.webp",
-      "key": "lexicon/body/s12-6-concept-art.webp",
-      "word": "body",
-      "line": "me damagedI call it battlemade They were waiting on a body I became the barricade I was made to break",
-      "t": 85.68,
-      "score": 0.95,
-      "cosine": 0.324,
-      "reason": "Defiant warrior embodies resilience and transformation through pain",
-      "recipe": "6-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weapon/s0-5-concept-art.webp",
-      "key": "lexicon/weapon/s0-5-concept-art.webp",
-      "word": "weapon",
-      "line": "back Pile it onI adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat",
-      "t": 178.04,
-      "score": 0.95,
-      "cosine": 0.299,
-      "reason": "Symbolizes transformation of pain into power, fits defiant, resilient mood",
-      "recipe": "5-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weapon/s0-1-photo.webp",
-      "key": "lexicon/weapon/s0-1-photo.webp",
-      "word": "weapon",
-      "line": "back Pile it onI adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat",
-      "t": 178.04,
-      "score": 0.95,
-      "cosine": 0.288,
-      "reason": "Symbolizes weaponizing pain, fits defiant, resilient mood",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
-      "key": "lexicon/pressure/s0-1.webp",
-      "word": "pressure",
-      "line": "ain't the type to let a little scratch get mulled over Pressure built heat meant to burstI just got colder",
-      "t": 31.6,
-      "score": 0.95,
-      "cosine": 0.285,
-      "reason": "Powerful imagery aligns with defiance and resilience themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle-made/s0-5-concept-art.webp",
-      "key": "lexicon/battle-made/s0-5-concept-art.webp",
-      "word": "battle-made",
-      "line": "battle-made",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.486,
-      "reason": "Powerful imagery of resilience and defiance on a battlefield",
-      "recipe": "5-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-2-word-portrait.webp",
-      "key": "lexicon/chains/s0-2-word-portrait.webp",
-      "word": "chains",
-      "line": "chains",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.478,
-      "reason": "Symbolizes bondage and resilience, fits defiant, resilient mood",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s3-2-word-portrait.webp",
-      "key": "lexicon/fire/s3-2-word-portrait.webp",
-      "word": "fire",
-      "line": "fire",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.453,
-      "reason": "Symbolizes transformation, intensity, and renewal aligns with defiant resilience",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barricade/s1-1-dream-collage.webp",
-      "key": "lexicon/barricade/s1-1-dream-collage.webp",
-      "word": "barricade",
-      "line": "battlemade They were waiting on a body I became the barricade I was made to break Everything but",
-      "t": 86.72,
-      "score": 0.9,
-      "cosine": 0.452,
-      "reason": "Symbolizes defiance and resilience in a desolate setting",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-1-cinema.webp",
-      "key": "lexicon/wreckage/s0-1-cinema.webp",
-      "word": "wreckage",
-      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
-      "t": 64.56,
-      "score": 0.9,
-      "cosine": 0.444,
-      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
-      "recipe": "1-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s6-1-dream-collage.webp",
-      "key": "lexicon/hands/s6-1-dream-collage.webp",
-      "word": "hands",
-      "line": "on my shoulders Even on my shittiest day these hands don't shake You get what you giveI get what I",
-      "t": 38.96,
-      "score": 0.9,
-      "cosine": 0.444,
-      "reason": "Symbolizes resilience, unity, and transformation through fragility and interconnectedness",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-2-word-portrait.webp",
-      "key": "lexicon/body/s7-2-word-portrait.webp",
-      "word": "body",
-      "line": "me damagedI call it battlemade They were waiting on a body I became the barricade I was made to break",
-      "t": 85.68,
-      "score": 0.9,
-      "cosine": 0.431,
-      "reason": "Physical transformation, defiance, strength as identity align with song's themes",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-5-film-still.webp",
-      "key": "lexicon/shattered/s0-5-film-still.webp",
-      "word": "shattered",
-      "line": "shattered",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.425,
-      "reason": "Symbolizes brokenness and rebirth, aligns with resilience and defiance",
-      "recipe": "5-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s4-4-dream-collage.webp",
-      "key": "lexicon/hands/s4-4-dream-collage.webp",
-      "word": "hands",
-      "line": "on my shoulders Even on my shittiest day these hands don't shake You get what you giveI get what I",
-      "t": 38.96,
-      "score": 0.9,
-      "cosine": 0.405,
-      "reason": "Symbolizes resilience, connection, and survival in crisis",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barricade/s1-2-word-portrait.webp",
-      "key": "lexicon/barricade/s1-2-word-portrait.webp",
-      "word": "barricade",
-      "line": "battlemade They were waiting on a body I became the barricade I was made to break Everything but",
-      "t": 86.72,
-      "score": 0.9,
-      "cosine": 0.402,
-      "reason": "Symbolizes defiance and transformation through decay and resilience",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s0-1-anime.webp",
-      "key": "lexicon/fall/s0-1-anime.webp",
-      "word": "fall",
-      "line": "need your pity I need better opposition They keep praying for the fall like it's some kind of religion Life kept swinging",
-      "t": 108.72,
-      "score": 0.9,
-      "cosine": 0.396,
-      "reason": "Powerful imagery of collapse and resilience matches defiant, resilient mood",
-      "recipe": "1-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s13-3-anime.webp",
-      "key": "lexicon/hands/s13-3-anime.webp",
-      "word": "hands",
-      "line": "on my shoulders Even on my shittiest day these hands don't shake You get what you giveI get what I",
-      "t": 38.96,
-      "score": 0.9,
-      "cosine": 0.381,
-      "reason": "Symbolism aligns with resilience and transformation through destruction",
-      "recipe": "3-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-3-dream-collage.webp",
-      "key": "lexicon/wreckage/s0-3-dream-collage.webp",
-      "word": "wreckage",
-      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
-      "t": 64.56,
-      "score": 0.9,
-      "cosine": 0.378,
-      "reason": "Symbolizes transformation from destruction to power, fits defiant resilience theme",
-      "recipe": "3-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-4-film-still.webp",
-      "key": "lexicon/walk/s3-4-film-still.webp",
-      "word": "walk",
-      "line": "Had a knife in my back still ate off the same plate Now I walk in like the building got my name on the gate Bad hand",
-      "t": 45.28,
-      "score": 0.9,
-      "cosine": 0.378,
-      "reason": "Determined stride, resilience, defiance, cinematic mood align with song's themes",
-      "recipe": "4-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-6-concept-art.webp",
-      "key": "lexicon/wreckage/s0-6-concept-art.webp",
-      "word": "wreckage",
-      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
-      "t": 64.56,
-      "score": 0.9,
-      "cosine": 0.357,
-      "reason": "Symbolizes transformation through destruction, fits defiant resilience theme",
-      "recipe": "6-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-4-word-portrait.webp",
-      "key": "lexicon/shattered/s0-4-word-portrait.webp",
-      "word": "shattered",
-      "line": "shattered",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.354,
-      "reason": "Symbolizes broken identity and transformation through fire",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s5-2-anime.webp",
-      "key": "lexicon/fall/s5-2-anime.webp",
-      "word": "fall",
-      "line": "need your pity I need better opposition They keep praying for the fall like it's some kind of religion Life kept swinging",
-      "t": 108.72,
-      "score": 0.9,
-      "cosine": 0.354,
-      "reason": "Symbolizes destruction and resilience, fits defiant, resilient mood",
+      "cosine": 0.415,
+      "reason": "Symbolizes power from destruction, fits defiant resilience theme",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weapon/s0-3-word-portrait.webp",
-      "key": "lexicon/weapon/s0-3-word-portrait.webp",
-      "word": "weapon",
-      "line": "back Pile it onI adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat",
-      "t": 178.04,
-      "score": 0.9,
-      "cosine": 0.328,
-      "reason": "Symbolizes weaponizing pain, fits defiant, resilient mood",
-      "recipe": "3-word-portrait",
       "featured": true
     }
   ],
   "byWord": {
     "battle-made": [
       0,
-      10,
-      16,
-      35,
-      36,
-      46
-    ],
-    "weapon": [
-      1,
-      39,
-      43,
-      44,
-      63
-    ],
-    "chains": [
-      2,
-      4,
-      8,
-      11,
-      12,
-      47
-    ],
-    "break": [
-      3,
-      15,
-      22,
-      23,
-      29,
-      33
-    ],
-    "body": [
-      5,
-      25,
-      34,
-      42,
-      52
-    ],
-    "barricade": [
-      6,
-      27,
-      28,
-      49,
-      55
+      14
     ],
     "storm": [
+      1,
+      20,
+      21
+    ],
+    "wounds": [
+      2
+    ],
+    "boulder": [
+      3
+    ],
+    "weapon": [
+      4
+    ],
+    "chains": [
+      5,
+      8,
+      11
+    ],
+    "break": [
+      6,
+      18,
+      22
+    ],
+    "chain": [
       7,
-      19,
-      21,
-      32
+      27
+    ],
+    "body": [
+      9,
+      26
+    ],
+    "barricade": [
+      10,
+      29
     ],
     "wreckage": [
-      9,
-      14,
-      24,
-      50,
-      58,
-      60
+      12,
+      17
+    ],
+    "armor": [
+      13,
+      23,
+      25
+    ],
+    "battle": [
+      15
     ],
     "fire": [
-      13,
-      17,
-      18,
-      20,
-      48
+      16,
+      19
+    ],
+    "knife": [
+      24
     ],
     "hands": [
-      26,
-      51,
-      54,
-      57
+      28
     ],
     "shattered": [
-      30,
-      37,
-      53,
-      61
+      30
     ],
-    "walk": [
-      31,
-      59
-    ],
-    "heat": [
-      38,
-      40,
-      41
-    ],
-    "pressure": [
-      45
-    ],
-    "fall": [
-      56,
-      62
+    "throne": [
+      31
     ]
   }
 }

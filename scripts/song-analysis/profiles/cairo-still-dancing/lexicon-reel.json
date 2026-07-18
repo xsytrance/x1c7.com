@@ -1,52 +1,16 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-07-17T06:18:15.979Z",
+  "generatedAt": "2026-07-18T10:25:37.181Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1069,
-    "judged": 41,
-    "accepted": 35,
+    "candidates": 1934,
+    "judged": 64,
+    "accepted": 56,
     "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
-      "key": "lexicon/lights/s17-2-word-portrait.webp",
-      "word": "lights",
-      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
-      "t": 36.48,
-      "score": 0.95,
-      "cosine": 0.756,
-      "reason": "Image captures Cairo's night, resilience, unity, and defiance through lights and music",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
-      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
-      "word": "rhythm",
-      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
-      "t": 61.498,
-      "score": 0.95,
-      "cosine": 0.707,
-      "reason": "Image captures rhythm as life force in Cairo's streets, aligns with resilience and unity t",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-2-dark-surreal.webp",
-      "key": "lexicon/lights/s19-2-dark-surreal.webp",
-      "word": "lights",
-      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
-      "t": 36.48,
-      "score": 0.95,
-      "cosine": 0.691,
-      "reason": "Symbolizes resilience, unity, and defiance through light and community",
-      "recipe": "2-dark-surreal",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-1.webp",
       "key": "lexicon/sky/s0-1.webp",
@@ -60,18 +24,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
-      "key": "lexicon/rhythm/s5-1-word-neon.webp",
-      "word": "rhythm",
-      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
-      "t": 61.498,
-      "score": 0.95,
-      "cosine": 0.673,
-      "reason": "Cinematic neon in Cairo alley aligns with song's themes of resilience, unity, and cultural",
-      "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-2-concept-art.webp",
       "key": "lexicon/lights/s1-2-concept-art.webp",
       "word": "lights",
@@ -79,7 +31,7 @@
       "t": 36.48,
       "score": 0.95,
       "cosine": 0.666,
-      "reason": "Symbolizes resilience, unity, and hope in Cairo's context",
+      "reason": "Symbolizes resilience, unity, and hope in Cairo's streets",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -96,18 +48,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
-      "key": "lexicon/fire/s5-6-word-portrait.webp",
-      "word": "fire",
-      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
-      "t": 39.381,
-      "score": 0.95,
-      "cosine": 0.657,
-      "reason": "Symbolizes resilience, defiance, and unity through fire imagery in Cairo's urban setting.",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-3-word-portrait.webp",
       "key": "lexicon/walk/s5-3-word-portrait.webp",
       "word": "walk",
@@ -115,7 +55,7 @@
       "t": 215.656,
       "score": 0.95,
       "cosine": 0.64,
-      "reason": "Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism",
+      "reason": "Strong themes of unity, resilience, and pride align with song's message.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -156,18 +96,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
-      "t": 39.381,
-      "score": 0.95,
-      "cosine": 0.613,
-      "reason": "Symbolism aligns with resilience, defiance, and cultural unity in Cairo",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s12-2-neon-night.webp",
       "key": "lexicon/heart/s12-2-neon-night.webp",
       "word": "heart",
@@ -175,7 +103,7 @@
       "t": 18.609,
       "score": 0.95,
       "cosine": 0.596,
-      "reason": "Symbolizes resilience, unity, and hope in Cairo's urban landscape",
+      "reason": "Symbolizes resilience, unity, and hope through heart and neon lights in Cairo",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -223,7 +151,7 @@
       "t": 50.956,
       "score": 0.95,
       "cosine": 0.58,
-      "reason": "Neon 'SOUL' symbolizes resilience and cultural identity in Cairo's night scene.",
+      "reason": "Neon 'SOUL' symbolizes protection and resilience, aligns with Cairo's unity and defiance.",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -235,7 +163,7 @@
       "t": 105.86,
       "score": 0.95,
       "cosine": 0.566,
-      "reason": "Symbolizes unity, expression, and resilience through performance and typography",
+      "reason": "Cinematic concert scene aligns with song's themes of unity, resilience, and expression thr",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -247,8 +175,20 @@
       "t": 18.609,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Symbolizes resilience, hope, and defiance perfectly aligned with song's themes",
+      "reason": "Symbolizes resilience, hope, and defiance against darkness",
       "recipe": "3-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s5-4-word-portrait.webp",
+      "key": "lexicon/peace/s5-4-word-portrait.webp",
+      "word": "peace",
+      "line": "This is not just pride This is peace with a pulse This is culture",
+      "t": 204.475,
+      "score": 0.95,
+      "cosine": 0.517,
+      "reason": "Celebratory unity, light, and collective joy align with song's themes of peace and resilie",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -283,7 +223,7 @@
       "t": 14.07,
       "score": 0.92,
       "cosine": 0.611,
-      "reason": "Symbolizes resilience and defiance through light in darkness, fits Cairo's nocturnal strug",
+      "reason": "Symbolizes resilience and defiance through light in darkness, fits Cairo's nocturnal defia",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -295,7 +235,7 @@
       "t": 14.07,
       "score": 0.92,
       "cosine": 0.611,
-      "reason": "Cinematic night scene aligns with resilience, hope, and cultural symbolism in the song",
+      "reason": "Cinematic night scene aligns with resilience, defiance, and hope in Cairo",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -307,7 +247,7 @@
       "t": 215.656,
       "score": 0.92,
       "cosine": 0.597,
-      "reason": "Cinematic, resilient, hopeful, and tied to Cairo's urban life and movement",
+      "reason": "Cinematic, resilient, Cairo streets, unity through movement",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +271,7 @@
       "t": 105.86,
       "score": 0.92,
       "cosine": 0.559,
-      "reason": "Cinematic, resilient, cultural pride, voice as resistance fit the song's themes",
+      "reason": "Cinematic, resilient, cultural pride, voice as resistance align with song's themes",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -343,113 +283,179 @@
       "t": 57.423,
       "score": 0.92,
       "cosine": 0.514,
-      "reason": "Resilient Cairo, hope in streetlights, unity in urban landscape",
+      "reason": "Resilient Cairo imagery aligns with song's themes of defiance and unity",
       "recipe": "4-cinema",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
-      "key": "lexicon/soul/s9-1-stickers.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s10-1-neon-sign.webp",
+      "key": "lexicon/bass/s10-1-neon-sign.webp",
+      "word": "bass",
+      "line": "This aint a camel in a scene This is bass in the alley kids in the traffic Dreams in the dust",
+      "t": 100.589,
+      "score": 0.92,
+      "cosine": 0.511,
+      "reason": "Urban surrealism, bass symbolism, alley setting align with song's themes",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.92,
+      "cosine": 0.488,
+      "reason": "Symbolizes resilience, unity, and defiance through fire and music",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-5-word-portrait.webp",
+      "key": "lexicon/dreams/s8-5-word-portrait.webp",
+      "word": "dreams",
+      "line": "This is bass in the alley kids in the traffic Dreams in the dust trying to stay clean This is gold in the",
+      "t": 102.853,
+      "score": 0.92,
+      "cosine": 0.479,
+      "reason": "Euphoric celebration aligns with song's themes of resilience and unity.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
+      "key": "lexicon/soul/s1-6-word-portrait.webp",
       "word": "soul",
       "line": "world to breathe Mama said keep your soul protected Baba said keep your head up high",
       "t": 50.956,
       "score": 0.92,
-      "cosine": 0.416,
-      "reason": "Symbolism aligns with soul protection, hope, and cultural identity",
-      "recipe": "1-stickers",
+      "cosine": 0.464,
+      "reason": "Symbolizes soul's protection, stage lights reflect resilience, guitar ties to music theme",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s8-4-dream-collage.webp",
-      "key": "lexicon/heart/s8-4-dream-collage.webp",
-      "word": "heart",
-      "line": "when the sky turns gray Hands up if your heart stays ready Love dont break we find a way",
-      "t": 18.609,
-      "score": 0.9,
-      "cosine": 0.61,
-      "reason": "Hopeful, resilient, and symbolic of love and unity in a bright, dreamy Cairo sky.",
-      "recipe": "4-dream-collage",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-2-poster.webp",
+      "key": "lexicon/rhythm/s6-2-poster.webp",
+      "word": "rhythm",
+      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
+      "t": 61.498,
+      "score": 0.92,
+      "cosine": 0.463,
+      "reason": "Modern geometric abstraction matches song's energetic, defiant rhythm and unity themes.",
+      "recipe": "2-poster",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
-      "key": "lexicon/pressure/s0-2.webp",
-      "word": "pressure",
-      "line": "is tea when the night runs deep This is jokes when the pressure gets ugly This is faith when its hard to",
-      "t": 110.341,
-      "score": 0.75,
-      "cosine": 0.406,
-      "reason": "Physical struggle mirrors societal pressure; gym as sanctuary fits resilience theme",
-      "recipe": "2",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s1-6-neon-sign.webp",
+      "key": "lexicon/peace/s1-6-neon-sign.webp",
+      "word": "peace",
+      "line": "This is not just pride This is peace with a pulse This is culture",
+      "t": 204.475,
+      "score": 0.92,
+      "cosine": 0.454,
+      "reason": "Symbolizes peace, unity, and resilience in an urban setting",
+      "recipe": "6-neon-sign",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
-      "key": "lexicon/pressure/s0-1.webp",
-      "word": "pressure",
-      "line": "is tea when the night runs deep This is jokes when the pressure gets ugly This is faith when its hard to",
-      "t": 110.341,
-      "score": 0.75,
-      "cosine": 0.355,
-      "reason": "Resilience, unity, and defiance align with song themes; however, gym imagery feels less co",
-      "recipe": "1",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s23-2-dream-collage.webp",
+      "key": "lexicon/move/s23-2-dream-collage.webp",
+      "word": "move",
+      "line": "Even when the news gets reckless Dont let the fear move into your eyes And if the whole world shakes",
+      "t": 57.423,
+      "score": 0.92,
+      "cosine": 0.452,
+      "reason": "Dynamic dance, celebration, defiance, cinematic energy align with song's themes",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s6-1-dream-collage.webp",
+      "key": "lexicon/hands/s6-1-dream-collage.webp",
+      "word": "hands",
+      "line": "Still sing when the sky turns gray Hands up if your heart stays ready Love dont break we",
+      "t": 17.752,
+      "score": 0.92,
+      "cosine": 0.449,
+      "reason": "Symbolizes unity, resilience, and hope amid fragility",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s2-2-dream-collage.webp",
+      "key": "lexicon/hands/s2-2-dream-collage.webp",
+      "word": "hands",
+      "line": "Still sing when the sky turns gray Hands up if your heart stays ready Love dont break we",
+      "t": 17.752,
+      "score": 0.92,
+      "cosine": 0.44,
+      "reason": "Symbolizes unity, hope, and resilience through interlocked hands and ethereal imagery",
+      "recipe": "2-dream-collage",
       "featured": true
     }
   ],
   "byWord": {
-    "lights": [
-      0,
-      2,
-      5
-    ],
-    "rhythm": [
-      1,
-      4,
-      11
-    ],
     "sky": [
-      3,
-      9,
-      14
+      0,
+      4,
+      8
+    ],
+    "lights": [
+      1
     ],
     "soul": [
-      6,
-      17,
-      28
-    ],
-    "fire": [
-      7,
-      12,
-      15
+      2,
+      11,
+      26
     ],
     "walk": [
-      8,
-      24,
-      25
+      3,
+      19,
+      20
     ],
     "move": [
-      10,
+      5,
+      22,
+      29
+    ],
+    "rhythm": [
+      6,
       27
     ],
     "heart": [
-      13,
-      19,
-      29
+      7,
+      13
+    ],
+    "fire": [
+      9,
+      24
     ],
     "voice": [
-      16,
-      18,
-      26
-    ],
-    "night": [
-      20,
-      22,
-      23
-    ],
-    "gold": [
+      10,
+      12,
       21
     ],
-    "pressure": [
+    "peace": [
+      14,
+      28
+    ],
+    "night": [
+      15,
+      17,
+      18
+    ],
+    "gold": [
+      16
+    ],
+    "bass": [
+      23
+    ],
+    "dreams": [
+      25
+    ],
+    "hands": [
       30,
       31
     ]

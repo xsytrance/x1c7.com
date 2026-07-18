@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "membrane-still-insane",
-  "generatedAt": "2026-07-17T08:44:49.566Z",
+  "generatedAt": "2026-07-18T10:51:11.370Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 851,
-    "judged": 40,
-    "accepted": 32,
+    "candidates": 1188,
+    "judged": 56,
+    "accepted": 47,
     "kept": 32
   },
   "reel": [
@@ -79,7 +79,7 @@
       "t": 80.26,
       "score": 1,
       "cosine": 0.732,
-      "reason": "Perfect fit with cartoon villain, fog, noir-cartoon blend, and madness themes",
+      "reason": "Perfect fit with cartoon villain, fog, and noir-cartoon hybrid",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 45.047,
       "score": 1,
       "cosine": 0.705,
-      "reason": "Perfect fit with flames, riverboat, and noir-cartoon chaos",
+      "reason": "Perfectly matches song's noir-cartoon, riverboat crime, and sinister playfulness",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -168,18 +168,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s0-1-word-neon.webp",
-      "key": "lexicon/drip/s0-1-word-neon.webp",
-      "word": "drip",
-      "line": "Call it the gift. Cartoon boat slide with the criminal drip. Mind overboard, but the body don't quit.",
-      "t": 157.629,
-      "score": 1,
-      "cosine": 0.625,
-      "reason": "Perfect fit for noir-cartoon mood and themes of madness and criminal allure.",
-      "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s4-2-photo.webp",
       "key": "lexicon/whistle/s4-2-photo.webp",
       "word": "whistle",
@@ -187,7 +175,7 @@
       "t": 8.069,
       "score": 1,
       "cosine": 0.625,
-      "reason": "Perfectly aligns with song's gritty noir-cartoon and mechanical madness",
+      "reason": "Perfect fit with fog, decay, soundwave, and noir-cartoon themes",
       "recipe": "2-photo",
       "featured": true
     },
@@ -223,7 +211,7 @@
       "t": 45.047,
       "score": 0.95,
       "cosine": 0.739,
-      "reason": "Strong noir-cartoon visuals align with song's themes and mood",
+      "reason": "Strong noir-cartoon visuals align with song's mood and themes",
       "recipe": "2-dream-collage",
       "featured": true
     },
@@ -283,7 +271,7 @@
       "t": 73.954,
       "score": 0.95,
       "cosine": 0.629,
-      "reason": "fits noir-cartoon mood, gold as villainy symbol, rain and neon match themes",
+      "reason": "fits noir-cartoon vibe, gold as villainy symbol, rain and neon match themes",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -300,6 +288,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s0-1-word-neon.webp",
+      "key": "lexicon/drip/s0-1-word-neon.webp",
+      "word": "drip",
+      "line": "Call it the gift. Cartoon boat slide with the criminal drip. Mind overboard, but the body don't quit.",
+      "t": 157.629,
+      "score": 0.95,
+      "cosine": 0.625,
+      "reason": "Perfectly aligns with noir-cartoon mood, dripping liquid symbolizes madness, neon sign fit",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s2-3-dream-collage.webp",
       "key": "lexicon/boiler/s2-3-dream-collage.webp",
       "word": "boiler",
@@ -307,7 +307,7 @@
       "t": 174.566,
       "score": 0.95,
       "cosine": 0.622,
-      "reason": "Strong thematic and visual alignment with song's noir-cartoon grit and fractured sanity",
+      "reason": "Strong thematic and visual alignment with song's industrial, noir-cartoon, and fractured s",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 159.858,
       "score": 0.95,
       "cosine": 0.619,
-      "reason": "Strong visual alignment with song's noir-cartoon world and themes of fractured sanity",
+      "reason": "Matches noir-cartoon mood, riverboat setting, and fractured sanity themes",
       "recipe": "5-manga-line",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 178.91,
       "score": 0.95,
       "cosine": 0.564,
-      "reason": "Perfectly aligns with gritty noir-cartoon mood and themes",
+      "reason": "Perfectly aligns with noir-cartoon grit, rain, neon, and fractured sanity",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -384,23 +384,23 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s14-2-neon-sign.webp",
-      "key": "lexicon/move/s14-2-neon-sign.webp",
-      "word": "move",
-      "line": "the laughing stereo. Eyes too low, but the mind move aerial. Feet on the deck, but the thoughts go burial.",
-      "t": 126.909,
-      "score": 0.6,
-      "cosine": 0.459,
-      "reason": "Playful cartoon face fits noir-cartoon vibe but lacks riverboat or madness elements",
-      "recipe": "2-neon-sign",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/river/s1-4-word-portrait.webp",
+      "key": "lexicon/river/s1-4-word-portrait.webp",
+      "word": "river",
+      "line": "the chain river full of fog and the deck full of flames step",
+      "t": 42.702,
+      "score": 0.95,
+      "cosine": 0.539,
+      "reason": "Sinister figure and foggy river match noir-cartoon menace and themes",
+      "recipe": "4-word-portrait",
+      "featured": true
     }
   ],
   "byWord": {
     "whistle": [
       0,
       6,
-      14
+      13
     ],
     "crazy": [
       1,
@@ -408,8 +408,8 @@
     ],
     "gold": [
       2,
-      21,
-      22
+      20,
+      21
     ],
     "boiler": [
       3,
@@ -423,37 +423,39 @@
     "flames": [
       7,
       8,
-      17
+      16
     ],
     "hands": [
       9,
-      19,
+      18,
       28
     ],
     "body": [
       11,
-      16,
+      15,
       25
     ],
     "move": [
       12,
-      26,
-      31
-    ],
-    "drip": [
-      13,
-      23
+      26
     ],
     "eyes": [
-      15,
+      14,
       29
     ],
     "storm": [
-      18,
+      17,
       27
     ],
     "membrane": [
-      20
+      19
+    ],
+    "drip": [
+      22,
+      23
+    ],
+    "river": [
+      31
     ]
   }
 }

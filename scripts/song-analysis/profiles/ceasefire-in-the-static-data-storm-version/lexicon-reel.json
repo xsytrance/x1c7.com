@@ -1,40 +1,16 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-07-17T06:56:47.294Z",
+  "generatedAt": "2026-07-18T10:27:26.734Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 804,
-    "judged": 37,
-    "accepted": 33,
+    "candidates": 1116,
+    "judged": 53,
+    "accepted": 50,
     "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
-      "key": "lexicon/heart/s19-1-photo.webp",
-      "word": "heart",
-      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
-      "t": 118.085,
-      "score": 1,
-      "cosine": 0.687,
-      "reason": "perfectly aligns with digital overload and psychological weight",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
-      "key": "lexicon/storm/s2-1-dream-collage.webp",
-      "word": "storm",
-      "line": "world but I don’t answer my own soul I tried to name the storm folders for the pain Tags for every memory",
-      "t": 98.917,
-      "score": 1,
-      "cosine": 0.684,
-      "reason": "Perfectly aligns with digital chaos and melancholic mood",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s7-5-photo.webp",
       "key": "lexicon/code/s7-5-photo.webp",
@@ -60,30 +36,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
-      "key": "lexicon/night/s1-3-word-portrait.webp",
-      "word": "night",
-      "line": "dreams they follow me into the night Inbox open like a wound",
-      "t": 37.698,
-      "score": 0.95,
-      "cosine": 0.697,
-      "reason": "matches digital anxiety, suburban loneliness, and Gothic R&B mood",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-5-word-portrait.webp",
-      "key": "lexicon/voice/s14-5-word-portrait.webp",
-      "word": "voice",
-      "line": "panic where I can hear my real voice I’m looking for a pattern in the",
-      "t": 72.493,
-      "score": 0.95,
-      "cosine": 0.694,
-      "reason": "fits digital anxiety, identity, and melancholic mood",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp",
       "key": "lexicon/walking/s0-2.webp",
       "word": "walking",
@@ -91,20 +43,8 @@
       "t": 83.244,
       "score": 0.95,
       "cosine": 0.666,
-      "reason": "matches melancholic mood, isolation, digital chaos symbolism",
+      "reason": "fits mood, themes of isolation and anxiety in digital chaos",
       "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
-      "key": "lexicon/night/s13-3-word-portrait.webp",
-      "word": "night",
-      "line": "dreams they follow me into the night Inbox open like a wound",
-      "t": 37.698,
-      "score": 0.95,
-      "cosine": 0.65,
-      "reason": "matches digital anxiety, melancholy, and Gothic atmosphere",
-      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -120,18 +60,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
-      "key": "lexicon/night/s15-1-word-portrait.webp",
-      "word": "night",
-      "line": "dreams they follow me into the night Inbox open like a wound",
-      "t": 37.698,
-      "score": 0.95,
-      "cosine": 0.618,
-      "reason": "matches digital anxiety, urban isolation, and melancholic mood",
-      "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/static/s0-4-word-portrait.webp",
       "key": "lexicon/static/s0-4-word-portrait.webp",
       "word": "static",
@@ -139,8 +67,20 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.615,
-      "reason": "fits mood and themes of isolation and digital chaos",
+      "reason": "Strongly aligns with song's mood and themes of isolation and digital chaos",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "key": "lexicon/heart/s19-4-dark-surreal.webp",
+      "word": "heart",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
+      "t": 118.085,
+      "score": 0.95,
+      "cosine": 0.613,
+      "reason": "fits mood, themes of isolation and digital overload",
+      "recipe": "4-dark-surreal",
       "featured": true
     },
     {
@@ -175,7 +115,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.587,
-      "reason": "strongly aligns with digital overload and melancholic mood",
+      "reason": "Strong symbolism of static, mood matches, themes of overload and peace",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -204,6 +144,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "skies a thousand little mouths of light They call my name, they sell me dreams",
+      "t": 31.881,
+      "score": 0.95,
+      "cosine": 0.579,
+      "reason": "fits digital isolation, melancholy, and artificial light themes",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s7-1-word-portrait.webp",
+      "key": "lexicon/silence/s7-1-word-portrait.webp",
+      "word": "silence",
+      "line": "Ping by ping I forget what silence means I’m looking for a",
+      "t": 59.234,
+      "score": 0.95,
+      "cosine": 0.576,
+      "reason": "matches song's melancholic mood and themes of silence and emptiness",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s6-6-word-portrait.webp",
       "key": "lexicon/soul/s6-6-word-portrait.webp",
       "word": "soul",
@@ -213,30 +177,6 @@
       "cosine": 0.574,
       "reason": "matches melancholic mood, digital static symbolism, and introspective theme",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-6-concept-art.webp",
-      "key": "lexicon/storm/s2-6-concept-art.webp",
-      "word": "storm",
-      "line": "world but I don’t answer my own soul I tried to name the storm folders for the pain Tags for every memory",
-      "t": 98.917,
-      "score": 0.95,
-      "cosine": 0.574,
-      "reason": "storm and digital chaos align with song's themes and mood",
-      "recipe": "6-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
-      "key": "lexicon/save/s8-3-neon-sign.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.95,
-      "cosine": 0.571,
-      "reason": "fits digital anxiety, identity crisis, and melancholic mood",
-      "recipe": "3-neon-sign",
       "featured": true
     },
     {
@@ -252,51 +192,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
-      "key": "lexicon/save/s6-3-word-portrait.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.95,
-      "cosine": 0.57,
-      "reason": "Strong thematic and mood alignment with digital detox and anxiety",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
       "key": "lexicon/heart/s0-1.webp",
       "word": "heart",
       "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
       "t": 118.085,
       "score": 0.95,
-      "cosine": 0.566,
-      "reason": "fits digital overload, anxiety, and melancholic mood with symbolic imagery",
+      "cosine": 0.559,
+      "reason": "matches digital isolation, melancholic mood, and broken connection themes",
       "recipe": "1",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
-      "key": "lexicon/light/s10-4-neon-sign.webp",
-      "word": "light",
-      "line": "skies a thousand little mouths of light They call my name, they sell me dreams",
-      "t": 31.881,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
+      "key": "lexicon/heart/s19-1-photo.webp",
+      "word": "heart",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
+      "t": 118.085,
       "score": 0.95,
-      "cosine": 0.565,
-      "reason": "fits mood and themes of digital anxiety and isolation",
-      "recipe": "4-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
-      "key": "lexicon/save/s10-2-word-portrait.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.95,
-      "cosine": 0.562,
-      "reason": "fits mood and themes of anxiety and digital respite",
-      "recipe": "2-word-portrait",
+      "cosine": 0.556,
+      "reason": "fits digital isolation, melancholy, and surreal symbolism",
+      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -312,15 +228,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s7-6-neon-night.webp",
-      "key": "lexicon/heart/s7-6-neon-night.webp",
-      "word": "heart",
-      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
-      "t": 118.085,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
+      "key": "lexicon/storm/s2-1-dream-collage.webp",
+      "word": "storm",
+      "line": "world but I don’t answer my own soul I tried to name the storm folders for the pain Tags for every memory",
+      "t": 98.917,
       "score": 0.95,
-      "cosine": 0.541,
-      "reason": "matches digital overload, melancholy, and emotional leakage",
-      "recipe": "6-neon-night",
+      "cosine": 0.543,
+      "reason": "chaotic storm imagery matches digital overload and mental breakdown themes",
+      "recipe": "1-dream-collage",
       "featured": true
     },
     {
@@ -336,6 +252,54 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s1-3-word-portrait.webp",
+      "key": "lexicon/silence/s1-3-word-portrait.webp",
+      "word": "silence",
+      "line": "Ping by ping I forget what silence means I’m looking for a",
+      "t": 59.234,
+      "score": 0.95,
+      "cosine": 0.537,
+      "reason": "fits mood and themes of solitude and introspection",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-5-word-portrait.webp",
+      "key": "lexicon/violence/s0-5-word-portrait.webp",
+      "word": "violence",
+      "line": "violence",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.515,
+      "reason": "fits dystopian, anxious, and urgent mood with digital elements",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s1-5-dream-collage.webp",
+      "key": "lexicon/storm/s1-5-dream-collage.webp",
+      "word": "storm",
+      "line": "world but I don’t answer my own soul I tried to name the storm folders for the pain Tags for every memory",
+      "t": 98.917,
+      "score": 0.95,
+      "cosine": 0.514,
+      "reason": "storm and desolation match digital overload and anxiety",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-5-word-portrait.webp",
+      "key": "lexicon/voice/s14-5-word-portrait.webp",
+      "word": "voice",
+      "line": "panic where I can hear my real voice I’m looking for a pattern in the",
+      "t": 72.493,
+      "score": 0.95,
+      "cosine": 0.498,
+      "reason": "Symbolizes voice as a struggle, fits digital anxiety and surreal mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s2-3-noir.webp",
       "key": "lexicon/ceasefire/s2-3-noir.webp",
       "word": "ceasefire",
@@ -343,117 +307,153 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "powerful imagery of chaos and hope aligns with digital overload and search for peace",
+      "reason": "powerful symbolism aligns with digital overload and search for peace",
       "recipe": "3-noir",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp",
-      "key": "lexicon/silence/s0-2.webp",
-      "word": "silence",
-      "line": "Ping by ping I forget what silence means I’m looking for a",
-      "t": 59.234,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-1-anime.webp",
+      "key": "lexicon/violence/s0-1-anime.webp",
+      "word": "violence",
+      "line": "violence",
+      "t": null,
       "score": 0.95,
-      "cosine": 0.441,
-      "reason": "melancholic, contemplative, digital debris symbolism fits",
-      "recipe": "2",
+      "cosine": 0.474,
+      "reason": "fits digital collapse, violent energy, cyberpunk atmosphere",
+      "recipe": "1-anime",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
-      "key": "lexicon/silence/s0-1.webp",
-      "word": "silence",
-      "line": "Ping by ping I forget what silence means I’m looking for a",
-      "t": 59.234,
-      "score": 0.95,
-      "cosine": 0.433,
-      "reason": "Candle in darkness mirrors silence and melancholy of digital overload",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-5-word-portrait.webp",
-      "key": "lexicon/soul/s12-5-word-portrait.webp",
-      "word": "soul",
-      "line": "I keep answering the world but I don’t answer my own soul I tried to name the storm folders for the pain",
-      "t": 97.64,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
+      "key": "lexicon/save/s6-3-word-portrait.webp",
+      "word": "save",
+      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
+      "t": 189.359,
       "score": 0.9,
-      "cosine": 0.551,
-      "reason": "cosmic soul imagery fits digital anxiety and yearning for peace",
-      "recipe": "5-word-portrait",
+      "cosine": 0.555,
+      "reason": "matches melancholic mood, digital isolation, and abandoned space",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-1.webp",
-      "key": "lexicon/dreams/s1-1.webp",
-      "word": "dreams",
-      "line": "light They call my name, they sell me dreams they follow me into the night",
-      "t": 34.819,
-      "score": 0.85,
-      "cosine": 0.467,
-      "reason": "melancholic mood matches; stars symbolize digital noise; bed as sanctuary",
-      "recipe": "1",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s8-3-word-portrait.webp",
+      "key": "lexicon/silence/s8-3-word-portrait.webp",
+      "word": "silence",
+      "line": "Ping by ping I forget what silence means I’m looking for a",
+      "t": 59.234,
+      "score": 0.9,
+      "cosine": 0.539,
+      "reason": "Serene yet lonely image matches song's melancholic mood and theme of silence",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "key": "lexicon/save/s8-3-neon-sign.webp",
+      "word": "save",
+      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
+      "t": 189.359,
+      "score": 0.9,
+      "cosine": 0.521,
+      "reason": "fits digital isolation, urban loneliness, and psychological themes",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
+      "key": "lexicon/night/s23-2-word-portrait.webp",
+      "word": "night",
+      "line": "dreams they follow me into the night Inbox open like a wound",
+      "t": 37.698,
+      "score": 0.9,
+      "cosine": 0.519,
+      "reason": "matches melancholic mood, urban night, digital anxiety symbolism",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
+      "key": "lexicon/save/s10-2-word-portrait.webp",
+      "word": "save",
+      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
+      "t": 189.359,
+      "score": 0.9,
+      "cosine": 0.479,
+      "reason": "fits mood and themes of digital preservation and emotional neglect",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-2-cinema.webp",
+      "key": "lexicon/violence/s0-2-cinema.webp",
+      "word": "violence",
+      "line": "violence",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "chaotic, tense imagery matches digital overload and anxiety",
+      "recipe": "2-cinema",
       "featured": true
     }
   ],
   "byWord": {
-    "heart": [
+    "code": [
       0,
-      21,
-      25
-    ],
-    "storm": [
-      1,
-      17,
+      6,
       19
     ],
-    "code": [
-      2,
-      11,
-      26
-    ],
     "ceasefire": [
-      3,
-      12,
-      27
-    ],
-    "night": [
-      4,
+      1,
       7,
-      9
-    ],
-    "voice": [
-      5,
-      15
-    ],
-    "walking": [
-      6,
-      8
-    ],
-    "static": [
-      10,
-      13,
       24
     ],
-    "soul": [
-      14,
-      16,
-      30
+    "walking": [
+      2,
+      3
     ],
-    "save": [
-      18,
-      20,
+    "static": [
+      4,
+      8,
+      17
+    ],
+    "heart": [
+      5,
+      15,
+      16
+    ],
+    "soul": [
+      9,
+      13
+    ],
+    "voice": [
+      10,
       23
     ],
     "light": [
-      22
+      11
     ],
     "silence": [
-      28,
-      29
+      12,
+      20,
+      27
     ],
-    "dreams": [
+    "storm": [
+      14,
+      18,
+      22
+    ],
+    "violence": [
+      21,
+      25,
       31
+    ],
+    "save": [
+      26,
+      28,
+      30
+    ],
+    "night": [
+      29
     ]
   }
 }

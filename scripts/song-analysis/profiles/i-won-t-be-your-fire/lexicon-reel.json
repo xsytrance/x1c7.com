@@ -1,40 +1,16 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-17T05:21:54.161Z",
+  "generatedAt": "2026-07-18T10:44:17.179Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 674,
-    "judged": 35,
-    "accepted": 31,
-    "kept": 31
+    "candidates": 1753,
+    "judged": 64,
+    "accepted": 60,
+    "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s16-4-word-portrait.webp",
-      "key": "lexicon/fire/s16-4-word-portrait.webp",
-      "word": "fire",
-      "line": "I wont be your fire just because you miss the",
-      "t": 52.48,
-      "score": 0.95,
-      "cosine": 0.578,
-      "reason": "Powerful metaphor, aligns with toxic love and emotional boundaries",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s2-1-graphic-novel.webp",
-      "key": "lexicon/cut/s2-1-graphic-novel.webp",
-      "word": "cut",
-      "line": "cry about the smoke I used to say the things that cut into your throat But tonight Im holding back with both hands",
-      "t": 92.625,
-      "score": 0.95,
-      "cosine": 0.521,
-      "reason": "Powerful symbolism of defiance and emotional pain aligns with song's themes",
-      "recipe": "1-graphic-novel",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-3-photo.webp",
       "key": "lexicon/cut/s3-3-photo.webp",
@@ -48,51 +24,51 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s4-3-word-portrait.webp",
-      "key": "lexicon/storm/s4-3-word-portrait.webp",
-      "word": "storm",
-      "line": "time same storm and I almost answered",
-      "t": 7.175,
-      "score": 0.95,
-      "cosine": 0.485,
-      "reason": "Powerful imagery of turmoil and wreckage aligns with song's emotional struggle and self-re",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s13-6-film-still.webp",
       "key": "lexicon/fire/s13-6-film-still.webp",
       "word": "fire",
       "line": "I wont be your fire just because you miss the",
       "t": 52.48,
       "score": 0.95,
-      "cosine": 0.477,
-      "reason": "Powerful symbolism of emotional destruction and resilience fits the song's themes",
+      "cosine": 0.482,
+      "reason": "Powerful symbolism of destruction and emotional residue fits the song's themes",
       "recipe": "6-film-still",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
-      "key": "lexicon/phone/s0-1.webp",
-      "word": "phone",
-      "line": "leave me alone with my head like this I keep your name in my phone like a bruise I can press black hoodie dead screen",
-      "t": 134.455,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-2-word-portrait.webp",
+      "key": "lexicon/break/s8-2-word-portrait.webp",
+      "word": "break",
+      "line": "break",
+      "t": null,
       "score": 0.95,
-      "cosine": 0.457,
-      "reason": "Emotional barriers, memory, solitude match song's themes and mood",
-      "recipe": "1",
+      "cosine": 0.472,
+      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-6-concept-art.webp",
-      "key": "lexicon/storm/s2-6-concept-art.webp",
-      "word": "storm",
-      "line": "time same storm and I almost answered",
-      "t": 7.175,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-2-word-portrait.webp",
+      "key": "lexicon/cold/s14-2-word-portrait.webp",
+      "word": "cold",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
       "score": 0.95,
-      "cosine": 0.455,
-      "reason": "Storm symbolizes turmoil, isolation matches emotional struggle",
-      "recipe": "6-concept-art",
+      "cosine": 0.459,
+      "reason": "Emotional isolation, coldness, and desolation align with the song's themes of emotional di",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-2-dream-collage.webp",
+      "key": "lexicon/heart/s19-2-dream-collage.webp",
+      "word": "heart",
+      "line": "comes in slow 808 heart under",
+      "t": 28.478,
+      "score": 0.95,
+      "cosine": 0.458,
+      "reason": "Symbolizes emotional damage and loss in a toxic relationship",
+      "recipe": "2-dream-collage",
       "featured": true
     },
     {
@@ -108,75 +84,51 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s18-6-word-portrait.webp",
-      "key": "lexicon/night/s18-6-word-portrait.webp",
-      "word": "night",
-      "line": "What am I supposed to do when the night comes back Breathe till the morning",
-      "t": 169.828,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-5-word-portrait.webp",
+      "key": "lexicon/cold/s2-5-word-portrait.webp",
+      "word": "cold",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
       "score": 0.95,
-      "cosine": 0.444,
-      "reason": "Cinematic, melancholic, and symbolic of emotional darkness and hope",
-      "recipe": "6-word-portrait",
+      "cosine": 0.44,
+      "reason": "Matches mood, themes of emotional distance and isolation",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
-      "key": "lexicon/storm/s2-1-dream-collage.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s1-2-anime.webp",
+      "key": "lexicon/storm/s1-2-anime.webp",
       "word": "storm",
       "line": "time same storm and I almost answered",
       "t": 7.175,
       "score": 0.95,
-      "cosine": 0.442,
-      "reason": "Powerful storm symbolism matches emotional turmoil and inner chaos",
-      "recipe": "1-dream-collage",
+      "cosine": 0.438,
+      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood.",
+      "recipe": "2-anime",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp",
-      "key": "lexicon/walking/s0-2.webp",
-      "word": "walking",
-      "line": "on but Im walking out now I",
-      "t": 268.77,
-      "score": 0.95,
-      "cosine": 0.434,
-      "reason": "Matches the song's themes of emotional detachment and moving on from pain",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
-      "key": "lexicon/heart/s0-1.webp",
-      "word": "heart",
-      "line": "comes in slow 808 heart under",
-      "t": 28.478,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-3-photo.webp",
+      "key": "lexicon/voice/s14-3-photo.webp",
+      "word": "voice",
+      "line": "I can remember your soft voice without entering the cage",
+      "t": 221.333,
       "score": 0.95,
       "cosine": 0.433,
-      "reason": "Symbolizes emotional fragmentation and inner turmoil",
-      "recipe": "1",
+      "reason": "Emotional vulnerability and raw expression align with song's themes and mood",
+      "recipe": "3-photo",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-1.webp",
-      "key": "lexicon/walking/s0-1.webp",
-      "word": "walking",
-      "line": "on but Im walking out now I",
-      "t": 268.77,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-3-cinema.webp",
+      "key": "lexicon/break/s6-3-cinema.webp",
+      "word": "break",
+      "line": "break",
+      "t": null,
       "score": 0.95,
-      "cosine": 0.421,
-      "reason": "Matches the song's themes of emotional detachment and strength in leaving a toxic situatio",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-2.webp",
-      "key": "lexicon/silence/s0-2.webp",
-      "word": "silence",
-      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
-      "t": 66.862,
-      "score": 0.95,
-      "cosine": 0.382,
-      "reason": "Symbolizes emotional void, fragile hope, and quiet despair align with song's themes",
-      "recipe": "2",
+      "cosine": 0.428,
+      "reason": "Symbolizes fragility and brokenness in a toxic relationship",
+      "recipe": "3-cinema",
       "featured": true
     },
     {
@@ -186,21 +138,57 @@
       "line": "cry about the smoke I used to say the things that cut into your throat But tonight Im holding back with both hands",
       "t": 92.625,
       "score": 0.95,
-      "cosine": 0.377,
-      "reason": "Emotional detachment, finality, and cinematic realism align with the song's themes and moo",
+      "cosine": 0.426,
+      "reason": "Symbolizes emotional cutting off, cinematic mood, solitary struggle",
       "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2.webp",
-      "key": "lexicon/somebody/s0-2.webp",
-      "word": "somebody",
-      "line": "turns into a war I know you think the hurt means somebody stayed but pain is not proof that love",
-      "t": 84.161,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s4-3-word-portrait.webp",
+      "key": "lexicon/storm/s4-3-word-portrait.webp",
+      "word": "storm",
+      "line": "time same storm and I almost answered",
+      "t": 7.175,
       "score": 0.95,
-      "cosine": 0.292,
-      "reason": "Cinematic, emotional turmoil, self-erasure in toxic relationships",
-      "recipe": "2",
+      "cosine": 0.425,
+      "reason": "Powerful symbolism of internal chaos and emotional ruin aligns with song's themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s1-3-word-portrait.webp",
+      "key": "lexicon/silence/s1-3-word-portrait.webp",
+      "word": "silence",
+      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
+      "t": 66.862,
+      "score": 0.95,
+      "cosine": 0.42,
+      "reason": "Cinematic, solemn, and introspective mood matches song's emotional depth and themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s2-1-graphic-novel.webp",
+      "key": "lexicon/cut/s2-1-graphic-novel.webp",
+      "word": "cut",
+      "line": "cry about the smoke I used to say the things that cut into your throat But tonight Im holding back with both hands",
+      "t": 92.625,
+      "score": 0.95,
+      "cosine": 0.419,
+      "reason": "Symbolizes cutting off pain, resilience in struggle, cinematic mood matches",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
+      "key": "lexicon/cold/s2-6-word-neon.webp",
+      "word": "cold",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
+      "score": 0.95,
+      "cosine": 0.416,
+      "reason": "Matches song's mood and themes of coldness, isolation, and emotional distance",
+      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -216,14 +204,38 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "key": "lexicon/fire/s5-6-word-portrait.webp",
+      "word": "fire",
+      "line": "I wont be your fire just because you miss the",
+      "t": 52.48,
+      "score": 0.9,
+      "cosine": 0.52,
+      "reason": "Powerful metaphor for emotional connection and destruction",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-3-film-still.webp",
+      "key": "lexicon/break/s8-3-film-still.webp",
+      "word": "break",
+      "line": "break",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.507,
+      "reason": "Symbolizes resilience and hope amid destruction, aligns with themes of emotional strength ",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
       "key": "lexicon/lights/s3-4-word-portrait.webp",
       "word": "lights",
       "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
       "t": 78.147,
       "score": 0.9,
-      "cosine": 0.512,
-      "reason": "Symbolism aligns with emotional vulnerability and self-awareness in a toxic relationship",
+      "cosine": 0.482,
+      "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -240,51 +252,51 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s1-2.webp",
-      "key": "lexicon/heart/s1-2.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "lights I know the bathroom floor I know the kind of love that turns into a war I know you think the hurt",
+      "t": 80.88,
+      "score": 0.9,
+      "cosine": 0.465,
+      "reason": "Symbolizes toxic love, emotional chaos, and contrast between public and private self",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
+      "key": "lexicon/heart/s0-2.webp",
       "word": "heart",
       "line": "comes in slow 808 heart under",
       "t": 28.478,
       "score": 0.9,
-      "cosine": 0.456,
-      "reason": "Symbolizes emotional vulnerability and toxic love in a cinematic, melancholic setting",
+      "cosine": 0.463,
+      "reason": "Symbolizes toxic love, matches song's emotional struggle and cinematic mood",
       "recipe": "2",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-2.webp",
-      "key": "lexicon/phone/s0-2.webp",
-      "word": "phone",
-      "line": "leave me alone with my head like this I keep your name in my phone like a bruise I can press black hoodie dead screen",
-      "t": 134.455,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s20-4-word-portrait.webp",
+      "key": "lexicon/light/s20-4-word-portrait.webp",
+      "word": "light",
+      "line": "I saw your name light up again same",
+      "t": 2,
       "score": 0.9,
-      "cosine": 0.433,
-      "reason": "Symbolizes emotional detachment and lingering pain from a toxic relationship",
-      "recipe": "2",
+      "cosine": 0.462,
+      "reason": "Symbolizes hope in decay, aligns with self-preservation and emotional struggle",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s4-5-photo.webp",
-      "key": "lexicon/night/s4-5-photo.webp",
-      "word": "night",
-      "line": "What am I supposed to do when the night comes back Breathe till the morning",
-      "t": 169.828,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-4-dream-collage.webp",
+      "key": "lexicon/storm/s5-4-dream-collage.webp",
+      "word": "storm",
+      "line": "time same storm and I almost answered",
+      "t": 7.175,
       "score": 0.9,
-      "cosine": 0.421,
-      "reason": "Emotional depth, night symbolism, cinematic mood align",
-      "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s9-6-photo.webp",
-      "key": "lexicon/night/s9-6-photo.webp",
-      "word": "night",
-      "line": "What am I supposed to do when the night comes back Breathe till the morning",
-      "t": 169.828,
-      "score": 0.9,
-      "cosine": 0.421,
-      "reason": "Matches the song's melancholy and introspection in a forest at night",
-      "recipe": "6-photo",
+      "cosine": 0.446,
+      "reason": "Symbolizes inner strength during turmoil, fits song's emotional struggle and cinematic moo",
+      "recipe": "4-dream-collage",
       "featured": true
     },
     {
@@ -294,151 +306,156 @@
       "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
       "t": 66.862,
       "score": 0.9,
-      "cosine": 0.414,
-      "reason": "Symbolizes emotional restraint, isolation, and fragile hope in a toxic relationship",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-2.webp",
-      "key": "lexicon/heart/s2-2.webp",
-      "word": "heart",
-      "line": "comes in slow 808 heart under",
-      "t": 28.478,
-      "score": 0.9,
-      "cosine": 0.377,
-      "reason": "Symbolizes emotional entanglement and fragile hope in a toxic relationship",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-1.webp",
-      "key": "lexicon/voice/s0-1.webp",
-      "word": "voice",
-      "line": "I can remember your soft voice without entering the cage",
-      "t": 221.333,
-      "score": 0.9,
-      "cosine": 0.374,
-      "reason": "Heartbroken, vulnerable, cinematic lighting matches song's mood and themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-1.webp",
-      "key": "lexicon/voice/s1-1.webp",
-      "word": "voice",
-      "line": "I can remember your soft voice without entering the cage",
-      "t": 221.333,
-      "score": 0.9,
-      "cosine": 0.335,
-      "reason": "Symbolizes emotional barriers and quiet strength in a melancholic setting",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s0-2.webp",
-      "key": "lexicon/voice/s0-2.webp",
-      "word": "voice",
-      "line": "I can remember your soft voice without entering the cage",
-      "t": 221.333,
-      "score": 0.9,
-      "cosine": 0.296,
-      "reason": "Emotional vulnerability and inner turmoil match the song's themes and mood",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
-      "key": "lexicon/light/s9-6-word-portrait.webp",
-      "word": "light",
-      "line": "I saw your name light up again same",
-      "t": 2,
-      "score": 0.85,
-      "cosine": 0.483,
-      "reason": "Confident, cinematic image aligns with song's mood and theme of self-respect",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-1-dream-collage.webp",
-      "key": "lexicon/light/s23-1-dream-collage.webp",
-      "word": "light",
-      "line": "I saw your name light up again same",
-      "t": 2,
-      "score": 0.8,
       "cosine": 0.442,
-      "reason": "Symbolizes hope and isolation in a toxic relationship",
-      "recipe": "1-dream-collage",
+      "reason": "Symbolizes fragile hope and quiet resistance in a dark moment",
+      "recipe": "1",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s7-4-film-still.webp",
-      "key": "lexicon/light/s7-4-film-still.webp",
-      "word": "light",
-      "line": "I saw your name light up again same",
-      "t": 2,
-      "score": 0.8,
-      "cosine": 0.44,
-      "reason": "Symbolizes inner self, duality, and cinematic mood align with song's themes",
-      "recipe": "4-film-still",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s5-2-photo.webp",
+      "key": "lexicon/voice/s5-2-photo.webp",
+      "word": "voice",
+      "line": "I can remember your soft voice without entering the cage",
+      "t": 221.333,
+      "score": 0.9,
+      "cosine": 0.442,
+      "reason": "Emotionally raw and vulnerable, fits the song's themes of inner conflict and strength",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
+      "key": "lexicon/night/s23-2-word-portrait.webp",
+      "word": "night",
+      "line": "What am I supposed to do when the night comes back Breathe till the morning",
+      "t": 169.828,
+      "score": 0.9,
+      "cosine": 0.441,
+      "reason": "Captures loneliness and urban melancholy aligning with song's emotional depth",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s14-3-word-portrait.webp",
+      "key": "lexicon/love/s14-3-word-portrait.webp",
+      "word": "love",
+      "line": "lights I know the bathroom floor I know the kind of love that turns into a war I know you think the hurt",
+      "t": 80.88,
+      "score": 0.9,
+      "cosine": 0.431,
+      "reason": "Symbolizes fragile yet persistent love in a decaying space, aligns with song's themes of e",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s3-6-photo.webp",
+      "key": "lexicon/voice/s3-6-photo.webp",
+      "word": "voice",
+      "line": "I can remember your soft voice without entering the cage",
+      "t": 221.333,
+      "score": 0.9,
+      "cosine": 0.426,
+      "reason": "Emotionally resonant, intimate, and melancholic mood matches song's themes",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s7-2-word-portrait.webp",
+      "key": "lexicon/slow/s7-2-word-portrait.webp",
+      "word": "slow",
+      "line": "glass guitar comes in slow 808 heart under",
+      "t": 26.934,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "Cinematic, introspective, and melancholic mood aligns with song's emotional depth and them",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s3-6-dream-collage.webp",
+      "key": "lexicon/silence/s3-6-dream-collage.webp",
+      "word": "silence",
+      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
+      "t": 66.862,
+      "score": 0.9,
+      "cosine": 0.42,
+      "reason": "Emotional pain, fragmentation, and hope align with the song's themes and mood.",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s5-4-photo.webp",
+      "key": "lexicon/fall/s5-4-photo.webp",
+      "word": "fall",
+      "line": "when you wanna fall apart",
+      "t": 19.037,
+      "score": 0.9,
+      "cosine": 0.393,
+      "reason": "Matches melancholy, solitude, and emotional burden of the song",
+      "recipe": "4-photo",
       "featured": true
     }
   ],
   "byWord": {
-    "fire": [
-      0,
-      4,
-      7
-    ],
     "cut": [
-      1,
-      2,
-      14
+      0,
+      10,
+      13
     ],
-    "storm": [
+    "fire": [
+      1,
+      5,
+      16
+    ],
+    "break": [
+      2,
+      9,
+      17
+    ],
+    "cold": [
       3,
       6,
-      9
-    ],
-    "phone": [
-      5,
-      20
-    ],
-    "night": [
-      8,
-      21,
-      22
-    ],
-    "walking": [
-      10,
-      12
+      14
     ],
     "heart": [
-      11,
-      19,
-      24
+      4,
+      21
     ],
-    "silence": [
-      13,
+    "storm": [
+      7,
+      11,
       23
     ],
-    "somebody": [
-      15
+    "voice": [
+      8,
+      25,
+      28
+    ],
+    "silence": [
+      12,
+      24,
+      30
     ],
     "lights": [
-      16,
-      17,
-      18
+      15,
+      18,
+      19
     ],
-    "voice": [
-      25,
-      26,
+    "love": [
+      20,
       27
     ],
     "light": [
-      28,
-      29,
-      30
+      22
+    ],
+    "night": [
+      26
+    ],
+    "slow": [
+      29
+    ],
+    "fall": [
+      31
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-07-17T06:10:34.997Z",
+  "generatedAt": "2026-07-18T10:21:20.364Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 9,
+    "candidates": 10,
     "judged": 3,
     "accepted": 3,
     "kept": 3
@@ -36,15 +36,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-6-film-still.webp",
-      "key": "lexicon/respuestas/s1-6-film-still.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-5-film-still-r1.webp",
+      "key": "lexicon/respuestas/s1-5-film-still-r1.webp",
       "word": "respuestas",
       "line": "Respuestas Tú hiciste veintitrés preguntas yo",
       "t": 8.893,
       "score": 0.85,
-      "cosine": 0.327,
-      "reason": "Matches mood and themes of introspection and emotional closure",
-      "recipe": "6-film-still",
+      "cosine": 0.376,
+      "reason": "Powerful gaze and desert metaphor align with emotional closure and unanswered questions",
+      "recipe": "5-film-still-r1",
       "featured": true
     }
   ],

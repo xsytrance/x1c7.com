@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-07-17T09:28:48.972Z",
+  "generatedAt": "2026-07-18T10:53:29.848Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 952,
-    "judged": 42,
-    "accepted": 39,
+    "candidates": 1031,
+    "judged": 44,
+    "accepted": 41,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 100.287,
       "score": 0.95,
       "cosine": 0.57,
-      "reason": "Intimate glow symbolizes connection; urban setting aligns with Seoul; hopeful mood matches",
+      "reason": "Intimate glow symbolizes connection; golden light aligns with Seoul's urban evening; hopef",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 16.185,
       "score": 0.95,
       "cosine": 0.525,
-      "reason": "Captures longing, connection, and dreams across distance",
+      "reason": "Captures longing, connection, and digital bridge",
       "recipe": "2",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 76.162,
       "score": 0.95,
       "cosine": 0.51,
-      "reason": "Captures urban night, long-distance connection, and hopeful resilience",
+      "reason": "Captures urban night, long-distance connection, and hope",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 100.287,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "Neon glow symbolizes digital connection and resilience in long-distance love",
+      "reason": "Neon glow symbolizes connection, hope, and cultural fusion in Seoul's urban night",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 14.722,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Digital connection, time zones, neon glow align with song's themes",
+      "reason": "Digital connection, time zones, neon symbolism align with song's themes",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -201,18 +201,6 @@
       "cosine": 0.471,
       "reason": "Captures digital connection, memory, and longing central to the song",
       "recipe": "4-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
-      "key": "lexicon/heart/s19-4-dark-surreal.webp",
-      "word": "heart",
-      "line": "My soul lives in Seoul But my heart lives wherever you call",
-      "t": 4.386,
-      "score": 0.95,
-      "cosine": 0.467,
-      "reason": "Symbolizes enduring love across distance, matches song's themes and mood",
-      "recipe": "4-dark-surreal",
       "featured": true
     },
     {
@@ -235,7 +223,7 @@
       "t": 2.496,
       "score": 0.95,
       "cosine": 0.437,
-      "reason": "Symbolizes soul's connection across distances, aligns with cosmic and universal themes",
+      "reason": "Cosmic unity and soul theme align with song's global love and connection",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -252,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s16-5-oil-light.webp",
+      "key": "lexicon/heart/s16-5-oil-light.webp",
+      "word": "heart",
+      "line": "My soul lives in Seoul But my heart lives wherever you call",
+      "t": 4.386,
+      "score": 0.95,
+      "cosine": 0.397,
+      "reason": "Symbolizes emotional connection across distance with warmth and intimacy",
+      "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s14-5-word-portrait.webp",
       "key": "lexicon/rhythm/s14-5-word-portrait.webp",
       "word": "rhythm",
@@ -264,18 +264,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s1-2.webp",
-      "key": "lexicon/dreams/s1-2.webp",
-      "word": "dreams",
-      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
-      "t": 16.185,
-      "score": 0.95,
-      "cosine": 0.393,
-      "reason": "Captures long-distance hope, serenity, and digital connection",
-      "recipe": "2",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
       "key": "lexicon/different/s6-3-word-neon.webp",
       "word": "different",
@@ -283,7 +271,7 @@
       "t": 14.722,
       "score": 0.95,
       "cosine": 0.391,
-      "reason": "Cultural contrast, neon lighting, and urban setting align with song's themes and mood.",
+      "reason": "Reflects cultural contrast, urban setting, and digital connection",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -300,6 +288,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-1.webp",
+      "key": "lexicon/waiting/s0-1.webp",
+      "word": "waiting",
+      "line": "grab my phone before I even breathe Thirtyseven messages waiting there for me Your morning is my midnight my sunrise is your sleep",
+      "t": 22.373,
+      "score": 0.95,
+      "cosine": 0.284,
+      "reason": "Symbolizes waiting, time zones, longing in a global relationship",
+      "recipe": "1",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s7-6-stickers.webp",
       "key": "lexicon/voice/s7-6-stickers.webp",
       "word": "voice",
@@ -307,7 +307,7 @@
       "t": 143.244,
       "score": 0.9,
       "cosine": 0.531,
-      "reason": "Symbolizes voice strain, digital connection, and emotional resilience in long-distance lov",
+      "reason": "Symbolizes voice strain, digital connection, cultural fusion, emotional resilience",
       "recipe": "6-stickers",
       "featured": true
     },
@@ -319,8 +319,20 @@
       "t": 36.781,
       "score": 0.9,
       "cosine": 0.488,
-      "reason": "Romantic intimacy, staged lighting, and emotional text align with song's themes of love an",
+      "reason": "romantic intimacy aligns with song's emotional core and visual storytelling",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-4-poster.webp",
+      "key": "lexicon/dreams/s8-4-poster.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "Abstract digital energy matches song's tech-driven love theme",
+      "recipe": "4-poster",
       "featured": true
     },
     {
@@ -331,7 +343,7 @@
       "t": 29.083,
       "score": 0.9,
       "cosine": 0.408,
-      "reason": "fits futuristic global love and tech struggles",
+      "reason": "fits futuristic global love and tech themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -348,15 +360,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s15-2-anime.webp",
-      "key": "lexicon/glow/s15-2-anime.webp",
-      "word": "glow",
-      "line": "we glow My soul lives in Seoul Ohohoh call me",
-      "t": 100.287,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s0-2.webp",
+      "key": "lexicon/waiting/s0-2.webp",
+      "word": "waiting",
+      "line": "grab my phone before I even breathe Thirtyseven messages waiting there for me Your morning is my midnight my sunrise is your sleep",
+      "t": 22.373,
       "score": 0.9,
-      "cosine": 0.352,
-      "reason": "Symbolizes inner light and cosmic connection in a digital relationship",
-      "recipe": "2-anime",
+      "cosine": 0.281,
+      "reason": "Captures waiting, time zones, longing, and stillness in a romantic context",
+      "recipe": "2",
       "featured": true
     },
     {
@@ -372,49 +384,36 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-1-dream-collage.webp",
-      "key": "lexicon/love/s6-1-dream-collage.webp",
-      "word": "love",
-      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
-      "t": 36.781,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s5-4-dream-collage.webp",
+      "key": "lexicon/different/s5-4-dream-collage.webp",
+      "word": "different",
+      "line": "now Signals weak But I feel you somehow Time zones touch screens Different skies same dreams One two",
+      "t": 14.722,
       "score": 0.8,
-      "cosine": 0.422,
-      "reason": "Romantic and tender, but lacks cultural and logistical elements",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
-      "key": "lexicon/love/s12-6-word-portrait.webp",
-      "word": "love",
-      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
-      "t": 36.781,
-      "score": 0.7,
-      "cosine": 0.491,
-      "reason": "Bittersweet imagery fits song's emotional depth, but lacks upbeat resilience",
-      "recipe": "6-word-portrait",
+      "cosine": 0.333,
+      "reason": "Magical floating islands symbolize uniqueness and connection across distances",
+      "recipe": "4-dream-collage",
       "featured": true
     }
   ],
   "byWord": {
     "glow": [
       0,
-      11,
-      28
+      11
     ],
     "dreams": [
       1,
       4,
-      21
+      26
     ],
     "soul": [
       2,
-      18
+      17
     ],
     "night": [
       3,
       5,
-      29
+      30
     ],
     "save": [
       6,
@@ -423,16 +422,16 @@
     "seoul": [
       7,
       9,
-      17
+      16
     ],
     "crazy": [
       8,
-      26
+      27
     ],
     "rhythm": [
       10,
       20,
-      23
+      22
     ],
     "phone": [
       12
@@ -442,20 +441,23 @@
     ],
     "different": [
       14,
-      22
+      21,
+      31
     ],
     "heart": [
-      16,
+      18,
       19
+    ],
+    "waiting": [
+      23,
+      29
     ],
     "voice": [
       24,
-      27
+      28
     ],
     "love": [
-      25,
-      30,
-      31
+      25
     ]
   }
 }

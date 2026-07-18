@@ -1,62 +1,26 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-07-17T07:56:38.261Z",
+  "generatedAt": "2026-07-18T10:39:13.343Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 804,
-    "judged": 29,
-    "accepted": 25,
-    "kept": 25
+    "candidates": 1146,
+    "judged": 41,
+    "accepted": 31,
+    "kept": 31
   },
   "reel": [
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
-      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-4-film-still.webp",
+      "key": "lexicon/lights/s20-4-film-still.webp",
       "word": "lights",
       "line": "You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the noise down",
       "t": 101.123,
       "score": 0.95,
-      "cosine": 0.58,
-      "reason": "Matches playful confidence, romantic stability, and vibrant energy of the song",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-3-word-portrait.webp",
-      "key": "lexicon/lights/s20-3-word-portrait.webp",
-      "word": "lights",
-      "line": "You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the noise down",
-      "t": 101.123,
-      "score": 0.95,
-      "cosine": 0.552,
-      "reason": "Matches playful confidence, romantic stability, and futuristic nostalgia",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
-      "key": "lexicon/move/s3-5-word-portrait.webp",
-      "word": "move",
-      "line": "if Im steady Girl you know I dont fold I dont move reckless I dont speak what Im told You can test my patience You",
-      "t": 90.291,
-      "score": 0.95,
-      "cosine": 0.545,
-      "reason": "Confident, intimate, and restrained imagery aligns with the song's playful self-assurance ",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
-      "key": "lexicon/night/s5-5-word-portrait.webp",
-      "word": "night",
-      "line": "Like the room got eyes Like the walls might talk Like the night got spies I see how you look When the bassline",
-      "t": 15.859,
-      "score": 0.95,
-      "cosine": 0.527,
-      "reason": "Matches playful confidence, secretive intimacy, and urban mystery",
-      "recipe": "5-word-portrait",
+      "cosine": 0.518,
+      "reason": "fits futuristic nostalgia, playful energy, and urban romance",
+      "recipe": "4-film-still",
       "featured": true
     },
     {
@@ -67,7 +31,7 @@
       "t": 90.291,
       "score": 0.95,
       "cosine": 0.508,
-      "reason": "Confident pose, stage setting, neon accents align with playful confidence and futuristic n",
+      "reason": "Confident stage presence matches playful assurance and stability in the song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -79,7 +43,7 @@
       "t": 15.859,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Urban night scene matches futuristic nostalgia and secretive intimacy",
+      "reason": "Matches urban nightlife, secrecy, and confidence in the song's mood and themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -91,20 +55,8 @@
       "t": 15.859,
       "score": 0.95,
       "cosine": 0.495,
-      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia with neon and cin",
+      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
-      "key": "lexicon/different/s6-2-word-portrait.webp",
-      "word": "different",
-      "line": "you Youre not just anybody Spoken Thats why I move different when Im around you Youre not",
-      "t": 120.145,
-      "score": 0.95,
-      "cosine": 0.481,
-      "reason": "Confident stage presence matches playful self-assurance and individuality themes.",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -120,30 +72,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s14-5-word-portrait.webp",
-      "key": "lexicon/rhythm/s14-5-word-portrait.webp",
-      "word": "rhythm",
-      "line": "Then you tell me stop You got secrets in your rhythm Little warnings in your tone But Im not here to run it Im",
-      "t": 23.313,
-      "score": 0.95,
-      "cosine": 0.468,
-      "reason": "Matches playful confidence and intimate symbolism of rhythm",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s13-2-word-portrait.webp",
-      "key": "lexicon/rhythm/s13-2-word-portrait.webp",
-      "word": "rhythm",
-      "line": "Then you tell me stop You got secrets in your rhythm Little warnings in your tone But Im not here to run it Im",
-      "t": 23.313,
-      "score": 0.95,
-      "cosine": 0.453,
-      "reason": "Matches playful confidence, musicality, and hidden relationship patterns",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-2-poster.webp",
       "key": "lexicon/rhythm/s6-2-poster.webp",
       "word": "rhythm",
@@ -156,27 +84,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s1-4-word-portrait.webp",
-      "key": "lexicon/different/s1-4-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
+      "key": "lexicon/different/s6-2-word-portrait.webp",
       "word": "different",
       "line": "you Youre not just anybody Spoken Thats why I move different when Im around you Youre not",
       "t": 120.145,
       "score": 0.95,
-      "cosine": 0.432,
-      "reason": "Confident posture, dramatic lighting, and individuality align with self-assurance and play",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
-      "key": "lexicon/soul/s9-1-stickers.webp",
-      "word": "soul",
-      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
-      "t": 31.29,
-      "score": 0.95,
-      "cosine": 0.42,
-      "reason": "Playful, confident, and symbolic of emotional core and focus",
-      "recipe": "1-stickers",
+      "cosine": 0.438,
+      "reason": "Confident, stylish, and dominant imagery aligns with the song's playful confidence and sel",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -186,9 +102,21 @@
       "line": "way you got me got me Im not leaving this party party",
       "t": 174.324,
       "score": 0.95,
-      "cosine": 0.419,
-      "reason": "Matches playful confidence, celebration, and futuristic nostalgia",
+      "cosine": 0.433,
+      "reason": "matches playful mood, neon lights align with futuristic nostalgia",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s1-4-word-portrait.webp",
+      "key": "lexicon/different/s1-4-word-portrait.webp",
+      "word": "different",
+      "line": "you Youre not just anybody Spoken Thats why I move different when Im around you Youre not",
+      "t": 120.145,
+      "score": 0.95,
+      "cosine": 0.417,
+      "reason": "Confident, stylish club scene matches playful self-assurance and retro aesthetic",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -204,30 +132,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
-      "key": "lexicon/somebody/s0-1.webp",
-      "word": "somebody",
-      "line": "already know You said you need somebody I said Ill be that somebody",
-      "t": 49.099,
-      "score": 0.95,
-      "cosine": 0.395,
-      "reason": "matches playful confidence and futuristic nostalgia",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
-      "key": "lexicon/smile/s0-1.webp",
-      "word": "smile",
-      "line": "I see how you look When the bassline drops Half a smile on your face Then you tell me stop You got",
-      "t": 19.586,
-      "score": 0.95,
-      "cosine": 0.378,
-      "reason": "Matches playful confidence, romantic stability, and secretive intimacy",
-      "recipe": "1",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s4-6-poster.webp",
       "key": "lexicon/party/s4-6-poster.webp",
       "word": "party",
@@ -240,15 +144,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
-      "key": "lexicon/move/s2-2-word-portrait.webp",
-      "word": "move",
-      "line": "if Im steady Girl you know I dont fold I dont move reckless I dont speak what Im told You can test my patience You",
-      "t": 90.291,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
+      "t": 31.29,
       "score": 0.9,
-      "cosine": 0.492,
-      "reason": "Matches playful confidence, intimacy, and stability themes",
-      "recipe": "2-word-portrait",
+      "cosine": 0.452,
+      "reason": "Matches playful confidence, futuristic nostalgia, and symbolic soul presence",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s14-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s14-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "Then you tell me stop You got secrets in your rhythm Little warnings in your tone But Im not here to run it Im",
+      "t": 23.313,
+      "score": 0.9,
+      "cosine": 0.446,
+      "reason": "Matches playful confidence, lyrical theme, and intimate mood",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -276,6 +192,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s4-4-word-neon.webp",
+      "key": "lexicon/eyes/s4-4-word-neon.webp",
+      "word": "eyes",
+      "line": "You been moving cautious Like the room got eyes Like the walls might talk Like the night got spies I see",
+      "t": 13.99,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "Surreal neon fits playful confidence and futuristic nostalgia",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s1-3-photo.webp",
+      "key": "lexicon/hands/s1-3-photo.webp",
+      "word": "hands",
+      "line": "gets loud Ill turn the noise down low Put your trust in my hands And I wont let it go Youuu knooow",
+      "t": 105.581,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "Intimate, tender hands align with trust and reassurance in the song",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s4-3-neon-sign.webp",
       "key": "lexicon/love/s4-3-neon-sign.webp",
       "word": "love",
@@ -283,19 +223,67 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "Futuristic romance and playful energy align with song's themes and mood",
+      "reason": "Futuristic nostalgia and playful energy align with the song's mood and themes.",
       "recipe": "3-neon-sign",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s5-5-word-portrait.webp",
-      "key": "lexicon/different/s5-5-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s2-1-word-portrait.webp",
+      "key": "lexicon/home/s2-1-word-portrait.webp",
+      "word": "home",
+      "line": "in your tone But Im not here to run it Im here to bring it home Iiii wooont let thiiis shooow",
+      "t": 27.226,
+      "score": 0.9,
+      "cosine": 0.406,
+      "reason": "Cozy, inviting atmosphere matches song's theme of stability and comfort.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s4-4-word-portrait.webp",
+      "key": "lexicon/home/s4-4-word-portrait.webp",
+      "word": "home",
+      "line": "in your tone But Im not here to run it Im here to bring it home Iiii wooont let thiiis shooow",
+      "t": 27.226,
+      "score": 0.9,
+      "cosine": 0.402,
+      "reason": "Matches warm, inviting home theme with song's stability and comfort",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
+      "key": "lexicon/different/s8-1-word-neon.webp",
       "word": "different",
       "line": "you Youre not just anybody Spoken Thats why I move different when Im around you Youre not",
       "t": 120.145,
       "score": 0.9,
-      "cosine": 0.393,
-      "reason": "Matches playful confidence and individuality themes",
+      "cosine": 0.392,
+      "reason": "Urban neon aligns with futuristic nostalgia and self-assurance",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "already know You said you need somebody I said Ill be that somebody",
+      "t": 49.099,
+      "score": 0.9,
+      "cosine": 0.325,
+      "reason": "Confident silhouettes in neon-lit Tokyo match playful confidence and futuristic nostalgia.",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "Then you tell me stop You got secrets in your rhythm Little warnings in your tone But Im not here to run it Im",
+      "t": 23.313,
+      "score": 0.85,
+      "cosine": 0.414,
+      "reason": "Urban rhythm connects to song's playful confidence and futuristic nostalgia",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -310,55 +298,153 @@
       "reason": "Confident, mysterious, stability through unity align with song's themes",
       "recipe": "1",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s7-6-poster.webp",
+      "key": "lexicon/run/s7-6-poster.webp",
+      "word": "run",
+      "line": "in your rhythm Little warnings in your tone But Im not here to run it Im here to bring it home",
+      "t": 25.808,
+      "score": 0.8,
+      "cosine": 0.428,
+      "reason": "Matches playful energy and modern vibe of the song",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s5-6-photo.webp",
+      "key": "lexicon/move/s5-6-photo.webp",
+      "word": "move",
+      "line": "if Im steady Girl you know I dont fold I dont move reckless I dont speak what Im told You can test my patience You",
+      "t": 90.291,
+      "score": 0.8,
+      "cosine": 0.428,
+      "reason": "Confident stance aligns with self-assurance and stability",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s7-2-word-portrait.webp",
+      "key": "lexicon/home/s7-2-word-portrait.webp",
+      "word": "home",
+      "line": "in your tone But Im not here to run it Im here to bring it home Iiii wooont let thiiis shooow",
+      "t": 27.226,
+      "score": 0.8,
+      "cosine": 0.424,
+      "reason": "Matches warmth and safety of 'home' in a stable, confident relationship",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s14-3-pixel.webp",
+      "key": "lexicon/eyes/s14-3-pixel.webp",
+      "word": "eyes",
+      "line": "You been moving cautious Like the room got eyes Like the walls might talk Like the night got spies I see",
+      "t": 13.99,
+      "score": 0.7,
+      "cosine": 0.441,
+      "reason": "Mood matches with intensity and watchfulness; retro aesthetic aligns with futuristic nosta",
+      "recipe": "3-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
+      "key": "lexicon/smile/s0-1.webp",
+      "word": "smile",
+      "line": "I see how you look When the bassline drops Half a smile on your face Then you tell me stop You got",
+      "t": 19.586,
+      "score": 0.7,
+      "cosine": 0.333,
+      "reason": "Captures intimacy and resilience, aligns with playful confidence and secretive intimacy.",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
+      "key": "lexicon/night/s12-6-word-portrait.webp",
+      "word": "night",
+      "line": "Like the room got eyes Like the walls might talk Like the night got spies I see how you look When the bassline",
+      "t": 15.859,
+      "score": 0.6,
+      "cosine": 0.472,
+      "reason": "Seductive and chaotic imagery aligns with playful confidence but leans too dark for romant",
+      "recipe": "6-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
+      "key": "lexicon/eyes/s8-5-neon-sign.webp",
+      "word": "eyes",
+      "line": "You been moving cautious Like the room got eyes Like the walls might talk Like the night got spies I see",
+      "t": 13.99,
+      "score": 0.6,
+      "cosine": 0.427,
+      "reason": "Sinister playfulness and surveillance match the song's mood",
+      "recipe": "5-neon-sign",
+      "featured": false
     }
   ],
   "byWord": {
     "lights": [
-      0,
-      1
+      0
     ],
     "move": [
-      2,
-      4,
-      19
+      1,
+      25
     ],
     "night": [
+      2,
       3,
-      5,
-      6
-    ],
-    "different": [
-      7,
-      12,
-      23
+      29
     ],
     "soul": [
-      8,
-      13
-    ],
-    "rhythm": [
-      9,
-      10,
+      4,
       11
     ],
-    "party": [
-      14,
-      15,
-      18
-    ],
-    "somebody": [
-      16
-    ],
-    "smile": [
-      17
-    ],
-    "love": [
-      20,
-      21,
+    "rhythm": [
+      5,
+      12,
       22
     ],
+    "different": [
+      6,
+      8,
+      20
+    ],
+    "party": [
+      7,
+      9,
+      10
+    ],
+    "love": [
+      13,
+      14,
+      17
+    ],
+    "eyes": [
+      15,
+      27,
+      30
+    ],
+    "hands": [
+      16
+    ],
+    "home": [
+      18,
+      19,
+      26
+    ],
+    "somebody": [
+      21
+    ],
     "steady": [
+      23
+    ],
+    "run": [
       24
+    ],
+    "smile": [
+      28
     ]
   }
 }

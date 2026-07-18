@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-07-17T07:08:41.075Z",
+  "generatedAt": "2026-07-18T10:34:43.640Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 989,
-    "judged": 31,
-    "accepted": 27,
-    "kept": 27
+    "candidates": 1269,
+    "judged": 37,
+    "accepted": 32,
+    "kept": 32
   },
   "reel": [
     {
@@ -48,18 +48,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
-      "key": "lexicon/light/s25-2-anime.webp",
-      "word": "light",
-      "line": "Baby, keep up, don’t stop now Green light, go, we on a mission Heart in overdrive,",
-      "t": 20.805,
-      "score": 1,
-      "cosine": 0.628,
-      "reason": "Perfectly aligns with futuristic romance and high-speed energy",
-      "recipe": "2-anime",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-1-anime.webp",
       "key": "lexicon/light/s21-1-anime.webp",
       "word": "light",
@@ -96,30 +84,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
-      "key": "lexicon/night/s12-6-word-portrait.webp",
-      "word": "night",
-      "line": "Heart in overdrive, no hesitation Spin through the night with you Everything feels brand new",
-      "t": 25.647,
-      "score": 0.95,
-      "cosine": 0.633,
-      "reason": "Matches futuristic romance, neon gaming vibe, and high-energy urban scene",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-3-word-neon.webp",
-      "key": "lexicon/sky/s2-3-word-neon.webp",
-      "word": "sky",
-      "line": "win Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me,",
-      "t": 40.04,
-      "score": 0.95,
-      "cosine": 0.619,
-      "reason": "matches futuristic city, neon, playful energy, and gaming nostalgia",
-      "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-4-film-still.webp",
       "key": "lexicon/lights/s20-4-film-still.webp",
       "word": "lights",
@@ -139,20 +103,8 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.614,
-      "reason": "Fits futuristic, energetic, and nostalgic themes with neon heart and urban setting",
+      "reason": "Matches futuristic, energetic, and nostalgic urban romance vibe",
       "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s3-3-anime.webp",
-      "key": "lexicon/save/s3-3-anime.webp",
-      "word": "save",
-      "line": "me moving at the speed of you No checkpoints, we don’t save and quit Just keep running through the city lights",
-      "t": 32.264,
-      "score": 0.95,
-      "cosine": 0.597,
-      "reason": "fits futuristic romance, high-speed energy, and retro gaming aesthetic",
-      "recipe": "3-anime",
       "featured": true
     },
     {
@@ -180,18 +132,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s5-6-word-neon.webp",
-      "key": "lexicon/sky/s5-6-word-neon.webp",
-      "word": "sky",
-      "line": "win Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me,",
-      "t": 40.04,
-      "score": 0.95,
-      "cosine": 0.578,
-      "reason": "fits futuristic, energetic, urban romance and gaming nostalgia",
-      "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s6-6-word-neon.webp",
       "key": "lexicon/heart/s6-6-word-neon.webp",
       "word": "heart",
@@ -199,7 +139,7 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Matches futuristic romance, neon aesthetics, and high-energy vibe",
+      "reason": "Matches futuristic romance, neon aesthetics, and energetic vibe",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -235,8 +175,20 @@
       "t": 96.27,
       "score": 0.95,
       "cosine": 0.535,
-      "reason": "Matches futuristic, playful energy and symbolism",
+      "reason": "Matches futuristic, playful, and energetic vibe with gaming and floral symbolism",
       "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.95,
+      "cosine": 0.534,
+      "reason": "matches futuristic romance, golden light, intimate connection",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -247,20 +199,8 @@
       "t": 40.04,
       "score": 0.95,
       "cosine": 0.524,
-      "reason": "matches futuristic, playful, and dreamy vibe of the song",
+      "reason": "matches futuristic, playful, and dreamy sky imagery with song's themes",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "Heart in overdrive, no hesitation Spin through the night with you Everything feels brand new",
-      "t": 25.647,
-      "score": 0.95,
-      "cosine": 0.523,
-      "reason": "Matches futuristic city, neon, speed, and playful energy",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -271,56 +211,92 @@
       "t": 32.264,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "fits futuristic city, neon, speed, and playful energy",
+      "reason": "Matches futuristic city, neon, energy, and unstoppable love theme",
       "recipe": "6-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
-      "key": "lexicon/love/s11-6-neon-sign.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-3-neon-night.webp",
+      "key": "lexicon/love/s12-3-neon-night.webp",
       "word": "love",
       "line": "You’re my boost, I’m your invincible Golden love, yeah, we collect it Too fast, too smooth,",
       "t": 87.284,
       "score": 0.95,
-      "cosine": 0.502,
-      "reason": "Fits futuristic romance, neon glow matches energy and playful vibe",
-      "recipe": "6-neon-sign",
+      "cosine": 0.485,
+      "reason": "Futuristic romance, neon lights, urban energy align with song's themes and mood.",
+      "recipe": "3-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
-      "key": "lexicon/move/s2-2-word-portrait.webp",
-      "word": "move",
-      "line": "Dum da da da dum dum Move like that, don’t slow Dum da da",
-      "t": 96.27,
-      "score": 0.9,
-      "cosine": 0.513,
-      "reason": "Matches playful energy, neon aesthetics, and romantic movement",
-      "recipe": "2-word-portrait",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s8-5-neon-night.webp",
+      "key": "lexicon/run/s8-5-neon-night.webp",
+      "word": "run",
+      "line": "too smooth, they can’t catch us You know how we run it Dum da da da dum dum",
+      "t": 92.741,
+      "score": 0.95,
+      "cosine": 0.466,
+      "reason": "matches high-energy urban chase, neon aesthetics, and urgency of the song",
+      "recipe": "5-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
-      "key": "lexicon/somebody/s0-1.webp",
-      "word": "somebody",
-      "line": "Are you that somebody? I could be that",
-      "t": 2.56,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
+      "key": "lexicon/glow/s6-5-word-neon.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
       "score": 0.9,
       "cosine": 0.483,
-      "reason": "Futuristic romance, neon, high-energy urban scene fits song's vibe",
-      "recipe": "1",
+      "reason": "Futuristic glow, urban night, digital connection fit song's vibe",
+      "recipe": "5-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-6-dream-collage.webp",
-      "key": "lexicon/move/s1-6-dream-collage.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s7-6-poster.webp",
+      "key": "lexicon/run/s7-6-poster.webp",
+      "word": "run",
+      "line": "too smooth, they can’t catch us You know how we run it Dum da da da dum dum",
+      "t": 92.741,
+      "score": 0.9,
+      "cosine": 0.481,
+      "reason": "Matches high-energy, futuristic, and playful themes with speed and motion",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-3-word-portrait.webp",
+      "key": "lexicon/sky/s0-3-word-portrait.webp",
+      "word": "sky",
+      "line": "win Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me,",
+      "t": 40.04,
+      "score": 0.85,
+      "cosine": 0.506,
+      "reason": "fits futuristic optimism and playful energy with aspirational sky imagery",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s9-3-word-portrait.webp",
+      "key": "lexicon/move/s9-3-word-portrait.webp",
       "word": "move",
       "line": "Dum da da da dum dum Move like that, don’t slow Dum da da",
       "t": 96.27,
-      "score": 0.9,
-      "cosine": 0.453,
-      "reason": "Matches futuristic chaos, speed, and energy of the song",
-      "recipe": "6-dream-collage",
+      "score": 0.85,
+      "cosine": 0.491,
+      "reason": "Fits futuristic energy, sprinting aligns with high-speed pursuit, neon and vintage car ble",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s4-3-neon-sign.webp",
+      "key": "lexicon/glow/s4-3-neon-sign.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.85,
+      "cosine": 0.487,
+      "reason": "fits futuristic, neon-lit urban vibe and playful energy",
+      "recipe": "3-neon-sign",
       "featured": true
     },
     {
@@ -334,55 +310,148 @@
       "reason": "Fits futuristic and urban themes, neon aligns with energy and nightlife",
       "recipe": "6-word-neon",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "Are you that somebody? I could be that",
+      "t": 2.56,
+      "score": 0.85,
+      "cosine": 0.402,
+      "reason": "Futuristic city, neon, confident silhouettes fit the song's energy and visuals",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-3-word-neon.webp",
+      "key": "lexicon/sky/s2-3-word-neon.webp",
+      "word": "sky",
+      "line": "win Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me,",
+      "t": 40.04,
+      "score": 0.8,
+      "cosine": 0.503,
+      "reason": "fits futuristic city vibe, neon aligns with energy and gaming nostalgia",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s1-2-word-portrait.webp",
+      "key": "lexicon/run/s1-2-word-portrait.webp",
+      "word": "run",
+      "line": "too smooth, they can’t catch us You know how we run it Dum da da da dum dum",
+      "t": 92.741,
+      "score": 0.7,
+      "cosine": 0.46,
+      "reason": "Matches energy and speed but lacks futuristic/gaming elements",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
+      "key": "lexicon/light/s25-2-anime.webp",
+      "word": "light",
+      "line": "Baby, keep up, don’t stop now Green light, go, we on a mission Heart in overdrive,",
+      "t": 20.805,
+      "score": 0.6,
+      "cosine": 0.52,
+      "reason": "Futuristic and chaotic, but lacks the playful energy and gaming nostalgia",
+      "recipe": "2-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-1-anime.webp",
+      "key": "lexicon/night/s5-1-anime.webp",
+      "word": "night",
+      "line": "Heart in overdrive, no hesitation Spin through the night with you Everything feels brand new",
+      "t": 25.647,
+      "score": 0.6,
+      "cosine": 0.464,
+      "reason": "Futuristic and playful elements mismatch with desolate steampunk mood",
+      "recipe": "1-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
+      "key": "lexicon/night/s12-6-word-portrait.webp",
+      "word": "night",
+      "line": "Heart in overdrive, no hesitation Spin through the night with you Everything feels brand new",
+      "t": 25.647,
+      "score": 0.6,
+      "cosine": 0.463,
+      "reason": "Matches urban night theme but lacks futuristic gaming elements",
+      "recipe": "6-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s5-1-word-portrait.webp",
+      "key": "lexicon/save/s5-1-word-portrait.webp",
+      "word": "save",
+      "line": "me moving at the speed of you No checkpoints, we don’t save and quit Just keep running through the city lights",
+      "t": 32.264,
+      "score": 0.6,
+      "cosine": 0.43,
+      "reason": "Romantic but lacks high-energy and futuristic elements",
+      "recipe": "1-word-portrait",
+      "featured": false
     }
   ],
   "byWord": {
     "lights": [
       0,
-      9,
-      13
+      6,
+      9
     ],
     "fast": [
       1,
       2,
-      5
+      4
     ],
     "light": [
       3,
-      4,
-      26
+      24,
+      28
     ],
     "night": [
-      6,
-      7,
-      20
-    ],
-    "sky": [
-      8,
-      14,
-      19
+      5,
+      29,
+      30
     ],
     "heart": [
-      10,
-      12,
-      15
-    ],
-    "save": [
-      11,
-      21
+      7,
+      8,
+      10
     ],
     "love": [
-      16,
-      17,
-      22
+      11,
+      12,
+      17
     ],
     "move": [
+      13,
+      22
+    ],
+    "glow": [
+      14,
+      19,
+      23
+    ],
+    "sky": [
+      15,
+      21,
+      26
+    ],
+    "save": [
+      16,
+      31
+    ],
+    "run": [
       18,
-      23,
-      25
+      20,
+      27
     ],
     "somebody": [
-      24
+      25
     ]
   }
 }

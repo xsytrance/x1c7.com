@@ -1,28 +1,16 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-07-17T05:24:50.941Z",
+  "generatedAt": "2026-07-18T10:58:03.111Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 683,
-    "judged": 47,
-    "accepted": 34,
+    "candidates": 1883,
+    "judged": 64,
+    "accepted": 49,
     "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
-      "key": "lexicon/heat/s8-2-word-portrait.webp",
-      "word": "heat",
-      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
-      "t": 157.257,
-      "score": 1,
-      "cosine": 0.584,
-      "reason": "Image perfectly captures sultry, confident nightclub energy aligned with song's themes",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-2-word-portrait.webp",
       "key": "lexicon/gold/s5-2-word-portrait.webp",
@@ -60,18 +48,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-1-word-portrait.webp",
-      "key": "lexicon/drip/s5-1-word-portrait.webp",
-      "word": "drip",
-      "line": "loud Slow it down Summer drip Summer drip Hips flip, flip,",
-      "t": 9.36,
-      "score": 1,
-      "cosine": 0.535,
-      "reason": "Perfectly aligns with summer night luxury and sultry confidence.",
-      "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s4-2-word-portrait.webp",
       "key": "lexicon/drip/s4-2-word-portrait.webp",
       "word": "drip",
@@ -79,7 +55,7 @@
       "t": 9.36,
       "score": 1,
       "cosine": 0.516,
-      "reason": "Perfectly aligns with summer, confidence, and luxury themes.",
+      "reason": "Perfectly aligns with summer nights, confidence, and luxury themes.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -90,57 +66,45 @@
       "line": "Summer drip Hips flip, flip, walk me",
       "t": 12.504,
       "score": 1,
-      "cosine": 0.502,
-      "reason": "Perfectly aligns with confident, sultry, and cinematic themes",
+      "cosine": 0.488,
+      "reason": "Perfectly aligns with confident, sultry, and controlled imagery",
       "recipe": "1-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s4-3-word-neon.webp",
-      "key": "lexicon/summer/s4-3-word-neon.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-4-word-portrait.webp",
+      "key": "lexicon/slow/s11-4-word-portrait.webp",
+      "word": "slow",
+      "line": "every, every, every step feel loud Slow it down Summer drip Summer drip",
+      "t": 7.38,
+      "score": 0.95,
+      "cosine": 0.583,
+      "reason": "Confident, sultry movement in a summer setting with bold visuals",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "brown, brown skin shine With the street lamp light Perfume thick got",
+      "t": 39.3,
+      "score": 0.95,
+      "cosine": 0.556,
+      "reason": "Confident woman, urban night, spotlight align with song's themes and mood.",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s2-4-photo.webp",
+      "key": "lexicon/summer/s2-4-photo.webp",
       "word": "summer",
       "line": "feel loud Slow it down Summer drip Summer drip Hips flip, flip,",
       "t": 8.86,
-      "score": 1,
-      "cosine": 0.476,
-      "reason": "Perfectly aligns with summer nights, neon, confidence, and sultry allure.",
-      "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-1.webp",
-      "key": "lexicon/clouds/s0-1.webp",
-      "word": "clouds",
-      "line": "-piece low, little wrap tied high Sun hit skin while the clouds roll by Patio packed, every chair calibrated Playlist",
-      "t": 217.084,
       "score": 0.95,
-      "cosine": 0.688,
-      "reason": "matches summer vibe, sultry atmosphere, and luxury",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
-      "key": "lexicon/move/s2-2-word-portrait.webp",
-      "word": "move",
-      "line": "shorts fitted, sun caught that crease We summertime fine but we move with peace Poo, poo, poo, poo, poo that in the yellow",
-      "t": 112.791,
-      "score": 0.95,
-      "cosine": 0.63,
-      "reason": "Matches sultry, confident summer vibe with bar setting and bold typography",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-2.webp",
-      "key": "lexicon/clouds/s0-2.webp",
-      "word": "clouds",
-      "line": "-piece low, little wrap tied high Sun hit skin while the clouds roll by Patio packed, every chair calibrated Playlist",
-      "t": 217.084,
-      "score": 0.95,
-      "cosine": 0.56,
-      "reason": "matches sultry summer mood, swirling clouds as seductive movement",
-      "recipe": "2",
+      "cosine": 0.555,
+      "reason": "Confident, sultry, summer vibe aligns perfectly with the song's themes and mood.",
+      "recipe": "4-photo",
       "featured": true
     },
     {
@@ -156,39 +120,39 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
-      "key": "lexicon/heat/s1-2-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "key": "lexicon/heat/s8-2-word-portrait.webp",
       "word": "heat",
       "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
       "t": 157.257,
       "score": 0.95,
-      "cosine": 0.545,
-      "reason": "Sultry, confident summer vibe with sensual symbolism aligns perfectly.",
+      "cosine": 0.537,
+      "reason": "matches summer energy, dance floor, confidence, and sultry vibe",
       "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-5-word-portrait.webp",
-      "key": "lexicon/walk/s9-5-word-portrait.webp",
-      "word": "walk",
-      "line": "Summer drip Hips flip, flip, walk me",
-      "t": 12.504,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-5-word-portrait.webp",
+      "key": "lexicon/heat/s6-5-word-portrait.webp",
+      "word": "heat",
+      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
+      "t": 157.257,
       "score": 0.95,
-      "cosine": 0.545,
-      "reason": "Confident, sultry movement on a summer night with cinematic flair",
+      "cosine": 0.533,
+      "reason": "Matches sultry club vibe, summer heat, and confident energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
-      "key": "lexicon/night/s8-3-word-portrait.webp",
-      "word": "night",
-      "line": "the hand mean we keep that closed Tan line sharp from the beach last night Crop top sitting with the waistlines laid Denim shorts fitted,",
-      "t": 107.218,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-1-word-portrait.webp",
+      "key": "lexicon/drip/s5-1-word-portrait.webp",
+      "word": "drip",
+      "line": "loud Slow it down Summer drip Summer drip Hips flip, flip,",
+      "t": 9.36,
       "score": 0.95,
-      "cosine": 0.524,
-      "reason": "Matches sultry nighttime vibe, urban confidence, and cinematic allure",
-      "recipe": "3-word-portrait",
+      "cosine": 0.53,
+      "reason": "Matches summer night, luxury, confidence, and retro vibe",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -216,51 +180,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
-      "key": "lexicon/night/s12-6-word-portrait.webp",
-      "word": "night",
-      "line": "the hand mean we keep that closed Tan line sharp from the beach last night Crop top sitting with the waistlines laid Denim shorts fitted,",
-      "t": 107.218,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s2-3-word-portrait.webp",
+      "key": "lexicon/flame/s2-3-word-portrait.webp",
+      "word": "flame",
+      "line": "Heart stay cold But my stride got flame Every, every, every little step got",
+      "t": 27.168,
       "score": 0.95,
-      "cosine": 0.511,
-      "reason": "matches sultry, confident urban summer night vibe",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2.webp",
-      "key": "lexicon/somebody/s0-2.webp",
-      "word": "somebody",
-      "line": "Power on line Can somebody chill out all this thirst,",
-      "t": 249.255,
-      "score": 0.95,
-      "cosine": 0.504,
-      "reason": "Matches neon-luxury, sultry night vibe, and confident movement",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
-      "key": "lexicon/heart/s0-2.webp",
-      "word": "heart",
-      "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
-      "t": 24.23,
-      "score": 0.95,
-      "cosine": 0.482,
-      "reason": "matches sultry mood, neon fits summer luxury, tension aligns with lyric",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s3-6-word-neon.webp",
-      "key": "lexicon/summer/s3-6-word-neon.webp",
-      "word": "summer",
-      "line": "feel loud Slow it down Summer drip Summer drip Hips flip, flip,",
-      "t": 8.86,
-      "score": 0.95,
-      "cosine": 0.479,
-      "reason": "matches neon urban summer vibe and confident sultry mood",
-      "recipe": "6-word-neon",
+      "cosine": 0.475,
+      "reason": "matches sultry mood, allure, and dramatic lighting",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -276,27 +204,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-1-dream-collage.webp",
-      "key": "lexicon/move/s2-1-dream-collage.webp",
-      "word": "move",
-      "line": "shorts fitted, sun caught that crease We summertime fine but we move with peace Poo, poo, poo, poo, poo that in the yellow",
-      "t": 112.791,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s5-3-word-portrait.webp",
+      "key": "lexicon/flame/s5-3-word-portrait.webp",
+      "word": "flame",
+      "line": "Heart stay cold But my stride got flame Every, every, every little step got",
+      "t": 27.168,
       "score": 0.95,
-      "cosine": 0.458,
-      "reason": "Sultry, confident, and playful imagery aligns with the song's mood and themes.",
-      "recipe": "1-dream-collage",
+      "cosine": 0.465,
+      "reason": "Sultry, confident, intense imagery aligns with song's themes and mood",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
-      "key": "lexicon/smile/s0-1.webp",
-      "word": "smile",
-      "line": "little step got a high class game Smile so sweet with the timing",
-      "t": 31.94,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s5-5-word-portrait.webp",
+      "key": "lexicon/eyes/s5-5-word-portrait.webp",
+      "word": "eyes",
+      "line": "stuck in the bind All, all, all these hungry eyes got them losing their mind",
+      "t": 45.535,
       "score": 0.95,
-      "cosine": 0.443,
-      "reason": "Confident posture, nighttime urban setting, tech element align perfectly with song's theme",
-      "recipe": "1",
+      "cosine": 0.418,
+      "reason": "Sultry, intimate, and confident mood matches the song's themes",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -312,152 +240,230 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-5-word-portrait.webp",
-      "key": "lexicon/night/s5-5-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s3-4-word-portrait.webp",
+      "key": "lexicon/dreams/s3-4-word-portrait.webp",
+      "word": "dreams",
+      "line": "but I'm tryna stay clean Loyal to my peace, steady guard my dreams Sun dress glow under the daylight",
+      "t": 73.108,
+      "score": 0.9,
+      "cosine": 0.519,
+      "reason": "matches sultry, confident mood and themes of dreams and escapism",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
+      "key": "lexicon/night/s8-3-word-portrait.webp",
       "word": "night",
       "line": "the hand mean we keep that closed Tan line sharp from the beach last night Crop top sitting with the waistlines laid Denim shorts fitted,",
       "t": 107.218,
       "score": 0.9,
-      "cosine": 0.559,
-      "reason": "Sultry urban night matches summer allure and confident femininity",
-      "recipe": "5-word-portrait",
+      "cosine": 0.51,
+      "reason": "Urban nightlife and confident, mysterious vibe align with summer night allure and sultry m",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
-      "key": "lexicon/phone/s0-1.webp",
-      "word": "phone",
-      "line": "ground, ground, ground, ground My phone stay lit, little hearts in the line Whole feet on",
-      "t": 129.498,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s10-4-word-portrait.webp",
+      "key": "lexicon/move/s10-4-word-portrait.webp",
+      "word": "move",
+      "line": "shorts fitted, sun caught that crease We summertime fine but we move with peace Poo, poo, poo, poo, poo that in the yellow",
+      "t": 112.791,
       "score": 0.9,
-      "cosine": 0.531,
-      "reason": "fits late-night summer vibe, tech, sultry mood",
-      "recipe": "1",
+      "cosine": 0.502,
+      "reason": "fits summer night, confidence, sultry movement, club vibe",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
-      "key": "lexicon/light/s9-6-word-portrait.webp",
-      "word": "light",
-      "line": "brown, brown skin shine With the street lamp light Perfume thick got",
-      "t": 39.3,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-6-word-portrait.webp",
+      "key": "lexicon/throne/s0-6-word-portrait.webp",
+      "word": "throne",
+      "line": "spot, hit the set on my tone Whole room staring like a queen on the throne Dance floor quiet but the glance is loud Every lens locked in,",
+      "t": 53.161,
       "score": 0.9,
-      "cosine": 0.49,
-      "reason": "Confident, sultry, cinematic imagery aligns with song's mood and themes.",
+      "cosine": 0.502,
+      "reason": "Regal, confident imagery aligns with the song's themes of self-assured femininity and allu",
       "recipe": "6-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
-      "key": "lexicon/somebody/s0-1.webp",
-      "word": "somebody",
-      "line": "Power on line Can somebody chill out all this thirst,",
-      "t": 249.255,
-      "score": 0.9,
-      "cosine": 0.469,
-      "reason": "Confident silhouettes, neon-lit urban summer night, sultry energy align with song's themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-1.webp",
-      "key": "lexicon/dreams/s0-1.webp",
-      "word": "dreams",
-      "line": "but I'm tryna stay clean Loyal to my peace, steady guard my dreams Sun dress glow under the daylight",
-      "t": 73.108,
-      "score": 0.9,
-      "cosine": 0.446,
-      "reason": "Modern luxury, starry sky, and confident vibe align with song's themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-2.webp",
-      "key": "lexicon/dreams/s0-2.webp",
-      "word": "dreams",
-      "line": "but I'm tryna stay clean Loyal to my peace, steady guard my dreams Sun dress glow under the daylight",
-      "t": 73.108,
-      "score": 0.9,
-      "cosine": 0.439,
-      "reason": "Sultry, tech-luxury, nighttime beach align with song's themes and mood",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-2.webp",
-      "key": "lexicon/heart/s2-2.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s10-3-neon-sign.webp",
+      "key": "lexicon/heart/s10-3-neon-sign.webp",
       "word": "heart",
       "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
       "t": 24.23,
       "score": 0.9,
-      "cosine": 0.407,
-      "reason": "Symbolizes inner fire and confidence in a sultry, late-night setting",
-      "recipe": "2",
+      "cosine": 0.495,
+      "reason": "matches sultry, dangerous allure and club vibe",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s9-2-film-still.webp",
+      "key": "lexicon/chain/s9-2-film-still.webp",
+      "word": "chain",
+      "line": "Gloves gain smooth, neckline sitting real neat Gold chain resting while my land so sweet This dress fit tight, little slit on",
+      "t": 63.96,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "Confident, luxurious, and assertive imagery fits the song's themes of self-assured feminin",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "key": "lexicon/light/s25-3-cinema.webp",
+      "word": "light",
+      "line": "brown, brown skin shine With the street lamp light Perfume thick got",
+      "t": 39.3,
+      "score": 0.9,
+      "cosine": 0.482,
+      "reason": "Captures sultry nighttime vibe and urban allure aligning with song's mood",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-4-photo.webp",
+      "key": "lexicon/throne/s0-4-photo.webp",
+      "word": "throne",
+      "line": "spot, hit the set on my tone Whole room staring like a queen on the throne Dance floor quiet but the glance is loud Every lens locked in,",
+      "t": 53.161,
+      "score": 0.9,
+      "cosine": 0.468,
+      "reason": "Confident, regal imagery aligns with sultry, self-assured femininity and opulence of the s",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s2-5-word-portrait.webp",
+      "key": "lexicon/glow/s2-5-word-portrait.webp",
+      "word": "glow",
+      "line": "I, I, I, I, I, I, I I feel the sun dress glow under the daylight Hip swing",
+      "t": 18.274,
+      "score": 0.9,
+      "cosine": 0.451,
+      "reason": "matches sultry, confident, and luminous vibe of the song",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
+      "key": "lexicon/night/s12-6-word-portrait.webp",
+      "word": "night",
+      "line": "the hand mean we keep that closed Tan line sharp from the beach last night Crop top sitting with the waistlines laid Denim shorts fitted,",
+      "t": 107.218,
+      "score": 0.85,
+      "cosine": 0.517,
+      "reason": "fits sultry, urban night vibe and allure",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-4-word-portrait.webp",
+      "key": "lexicon/summer/s1-4-word-portrait.webp",
+      "word": "summer",
+      "line": "feel loud Slow it down Summer drip Summer drip Hips flip, flip,",
+      "t": 8.86,
+      "score": 0.85,
+      "cosine": 0.511,
+      "reason": "Captures summer vibe, confidence, and stylish relaxation aligning with song's themes",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "I, I, I, I, I, I, I I feel the sun dress glow under the daylight Hip swing",
+      "t": 18.274,
+      "score": 0.8,
+      "cosine": 0.531,
+      "reason": "Sultry intimacy and golden light align with summer nights and allure",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s5-1-word-neon.webp",
+      "key": "lexicon/sun/s5-1-word-neon.webp",
+      "word": "sun",
+      "line": "I, I, I, I, I, I, I I feel the sun dress glow under the daylight Hip",
+      "t": 17.48,
+      "score": 0.8,
+      "cosine": 0.468,
+      "reason": "fits summer vibe, neon aligns with urban luxury and nightlife",
+      "recipe": "1-word-neon",
       "featured": true
     }
   ],
   "byWord": {
-    "heat": [
-      0,
-      3,
-      12
-    ],
     "gold": [
+      0,
       1,
+      8
+    ],
+    "heat": [
       2,
-      11
+      9,
+      10
     ],
     "drip": [
-      4,
-      5
+      3,
+      11
     ],
     "walk": [
+      4
+    ],
+    "slow": [
+      5
+    ],
+    "light": [
       6,
-      13
+      25
     ],
     "summer": [
       7,
-      20
-    ],
-    "clouds": [
-      8,
-      10
-    ],
-    "move": [
-      9,
-      16,
-      22
-    ],
-    "night": [
-      14,
-      17,
-      25
+      29
     ],
     "push": [
+      12,
       15,
-      21,
-      24
+      18
     ],
-    "somebody": [
-      18,
-      28
+    "move": [
+      13,
+      21
     ],
-    "heart": [
-      19,
-      31
+    "flame": [
+      14,
+      16
     ],
-    "smile": [
-      23
-    ],
-    "phone": [
-      26
-    ],
-    "light": [
-      27
+    "eyes": [
+      17
     ],
     "dreams": [
-      29,
+      19
+    ],
+    "night": [
+      20,
+      28
+    ],
+    "throne": [
+      22,
+      26
+    ],
+    "heart": [
+      23
+    ],
+    "chain": [
+      24
+    ],
+    "glow": [
+      27,
       30
+    ],
+    "sun": [
+      31
     ]
   }
 }

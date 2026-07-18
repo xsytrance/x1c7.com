@@ -1,28 +1,16 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-07-17T06:14:43.940Z",
+  "generatedAt": "2026-07-18T10:23:22.771Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 546,
-    "judged": 29,
-    "accepted": 17,
-    "kept": 17
+    "candidates": 922,
+    "judged": 41,
+    "accepted": 24,
+    "kept": 24
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-6-word-portrait.webp",
-      "key": "lexicon/gold/s14-6-word-portrait.webp",
-      "word": "gold",
-      "line": "for more Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms",
-      "t": 40.774,
-      "score": 1,
-      "cosine": 0.727,
-      "reason": "Perfect fit with magical corruption, noir atmosphere, and symbolism of gold as corrupting ",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/brooms/s0-1-manga-line.webp",
       "key": "lexicon/brooms/s0-1-manga-line.webp",
@@ -36,30 +24,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-4-dark-surreal.webp",
-      "key": "lexicon/boiler/s0-4-dark-surreal.webp",
-      "word": "boiler",
-      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
-      "t": 29.136,
-      "score": 0.95,
-      "cosine": 0.734,
-      "reason": "Matches dark, magical corruption and noir atmosphere with cauldron as chaos source",
-      "recipe": "4-dark-surreal",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s2-3-dream-collage.webp",
-      "key": "lexicon/boiler/s2-3-dream-collage.webp",
-      "word": "boiler",
-      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
-      "t": 29.136,
-      "score": 0.95,
-      "cosine": 0.734,
-      "reason": "Strong alignment with magical corruption, noir atmosphere, and surreal chaos",
-      "recipe": "3-dream-collage",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/brooms/s1-2-word-portrait.webp",
       "key": "lexicon/brooms/s1-2-word-portrait.webp",
       "word": "brooms",
@@ -67,7 +31,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.73,
-      "reason": "Strong alignment with magical corruption and noir atmosphere",
+      "reason": "Strong alignment with magical corruption, noir atmosphere, and surreal elements",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -79,20 +43,8 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Matches magical corruption, ominous tone, and chaotic visuals",
+      "reason": "Strong alignment with magical corruption and ominous atmosphere",
       "recipe": "6-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s4-5-word-portrait.webp",
-      "key": "lexicon/crazy/s4-5-word-portrait.webp",
-      "word": "crazy",
-      "line": "Voice 2 Crazy Whisper Heh too late",
-      "t": 15.024,
-      "score": 0.95,
-      "cosine": 0.682,
-      "reason": "fits noir atmosphere, magical chaos, and loss of control",
-      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -103,7 +55,7 @@
       "t": 134.502,
       "score": 0.95,
       "cosine": 0.673,
-      "reason": "fits noir atmosphere, magical corruption, and symbolic lighting",
+      "reason": "Strong noir atmosphere, magical symbolism, fits the ominous and playful tone",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,8 +67,44 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strongly aligns with magical corruption, noir atmosphere, and chaotic transformation",
+      "reason": "Strong noir-steampunk fit with boiler as central symbol",
       "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-4-dark-surreal.webp",
+      "key": "lexicon/boiler/s0-4-dark-surreal.webp",
+      "word": "boiler",
+      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
+      "t": 29.136,
+      "score": 0.95,
+      "cosine": 0.642,
+      "reason": "Strong noir atmosphere, symbolic elements align with song's themes",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s2-3-dream-collage.webp",
+      "key": "lexicon/boiler/s2-3-dream-collage.webp",
+      "word": "boiler",
+      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
+      "t": 29.136,
+      "score": 0.95,
+      "cosine": 0.626,
+      "reason": "Strong industrial noir atmosphere matches song's theme and mood",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s4-5-word-portrait.webp",
+      "key": "lexicon/crazy/s4-5-word-portrait.webp",
+      "word": "crazy",
+      "line": "Voice 2 Crazy Whisper Heh too late",
+      "t": 15.024,
+      "score": 0.95,
+      "cosine": 0.616,
+      "reason": "fits noir atmosphere, sinister playfulness, and fractured sanity",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -144,27 +132,51 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s3-1-dream-collage.webp",
-      "key": "lexicon/night/s3-1-dream-collage.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-6-word-portrait.webp",
+      "key": "lexicon/gold/s14-6-word-portrait.webp",
+      "word": "gold",
+      "line": "for more Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms",
+      "t": 40.774,
+      "score": 0.95,
+      "cosine": 0.583,
+      "reason": "matches noir atmosphere, corruption symbolism, and thematic elements",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
+      "key": "lexicon/eyes/s8-5-neon-sign.webp",
+      "word": "eyes",
+      "line": "starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at the door",
+      "t": 33.437,
+      "score": 0.95,
+      "cosine": 0.538,
+      "reason": "matches noir atmosphere, sinister playfulness, and magical corruption",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-2-dream-collage.webp",
+      "key": "lexicon/night/s6-2-dream-collage.webp",
       "word": "night",
       "line": "too wild Voice 2 Night too long Voice 1 Water too high Voice 2",
       "t": 195.617,
       "score": 0.95,
-      "cosine": 0.581,
-      "reason": "matches noir atmosphere, corruption, and chaos",
-      "recipe": "1-dream-collage",
+      "cosine": 0.521,
+      "reason": "Aligns with noir atmosphere, magical corruption, and chaotic tension",
+      "recipe": "2-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s5-5-word-portrait.webp",
-      "key": "lexicon/crazy/s5-5-word-portrait.webp",
-      "word": "crazy",
-      "line": "Voice 2 Crazy Whisper Heh too late",
-      "t": 15.024,
-      "score": 0.9,
-      "cosine": 0.68,
-      "reason": "Matches dark noir, magical corruption, and ominous tone with spectral figure and stylized ",
-      "recipe": "5-word-portrait",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s4-2-word-portrait.webp",
+      "key": "lexicon/move/s4-2-word-portrait.webp",
+      "word": "move",
+      "line": "1 Water too high Voice 2 Door wont move Voice 1 Whole tower drowning Voice 2 Still in",
+      "t": 200.145,
+      "score": 0.95,
+      "cosine": 0.504,
+      "reason": "Sinister cartoon villain fits noir-cartoon aesthetic and sinister playfulness of song",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -174,8 +186,8 @@
       "line": "for more Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms",
       "t": 40.774,
       "score": 0.9,
-      "cosine": 0.59,
-      "reason": "Corrupted greed, chaos, and dark atmosphere align with song's themes",
+      "cosine": 0.606,
+      "reason": "fits noir tone, corruption symbolism, and chaotic descent",
       "recipe": "4-graphic-novel",
       "featured": true
     },
@@ -192,61 +204,148 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
-      "key": "lexicon/tap/s1-2-neon-night.webp",
-      "word": "tap",
-      "line": "toxic Broomstick army with the woodenleg stomp tap dance terror when the bassline thump I told",
-      "t": 134.502,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp",
+      "key": "lexicon/gold/s14-4-neon-night.webp",
+      "word": "gold",
+      "line": "for more Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms",
+      "t": 40.774,
+      "score": 0.85,
+      "cosine": 0.566,
+      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
+      "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s12-3-word-portrait.webp",
+      "key": "lexicon/glow/s12-3-word-portrait.webp",
+      "word": "glow",
+      "line": "pulled low stars on the brim and the gloves still glow Strings go stab bassoon go low broom",
+      "t": 53.023,
+      "score": 0.85,
+      "cosine": 0.526,
+      "reason": "fits noir atmosphere, neon glow ties to lyric, industrial setting matches theme",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-1-dark-surreal.webp",
+      "key": "lexicon/eyes/s8-1-dark-surreal.webp",
+      "word": "eyes",
+      "line": "starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at the door",
+      "t": 33.437,
+      "score": 0.85,
+      "cosine": 0.494,
+      "reason": "Glowing eye fits noir atmosphere and hidden danger",
+      "recipe": "1-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s1-2-word-portrait.webp",
+      "key": "lexicon/throne/s1-2-word-portrait.webp",
+      "word": "throne",
+      "line": "crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks rise and the",
+      "t": 214.796,
       "score": 0.6,
-      "cosine": 0.49,
-      "reason": "Futuristic tap fits surreal mood but lacks magical corruption and noir elements",
-      "recipe": "2-neon-night",
+      "cosine": 0.633,
+      "reason": "fits dark fantasy but lacks magical corruption and playful danger",
+      "recipe": "2-word-portrait",
       "featured": false
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-1-film-still.webp",
-      "key": "lexicon/move/s1-1-film-still.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s1-4-dark-surreal.webp",
+      "key": "lexicon/throne/s1-4-dark-surreal.webp",
+      "word": "throne",
+      "line": "crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks rise and the",
+      "t": 214.796,
+      "score": 0.6,
+      "cosine": 0.578,
+      "reason": "fits dark atmosphere but lacks cleaning tools or magical corruption",
+      "recipe": "4-dark-surreal",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s14-2-concept-art.webp",
+      "key": "lexicon/eyes/s14-2-concept-art.webp",
+      "word": "eyes",
+      "line": "starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at the door",
+      "t": 33.437,
+      "score": 0.6,
+      "cosine": 0.516,
+      "reason": "fits dark atmosphere but lacks cleaning tool symbolism",
+      "recipe": "2-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-4-dream-collage.webp",
+      "key": "lexicon/move/s3-4-dream-collage.webp",
       "word": "move",
       "line": "1 Water too high Voice 2 Door wont move Voice 1 Whole tower drowning Voice 2 Still in",
       "t": 200.145,
       "score": 0.6,
-      "cosine": 0.449,
-      "reason": "Urban isolation fits mood but lacks magical corruption",
-      "recipe": "1-film-still",
+      "cosine": 0.484,
+      "reason": "Atmospheric and decayed, but lacks direct ties to magical corruption or greed.",
+      "recipe": "4-dream-collage",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s6-5-dream-collage.webp",
+      "key": "lexicon/stars/s6-5-dream-collage.webp",
+      "word": "stars",
+      "line": "room water starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at",
+      "t": 32.798,
+      "score": 0.6,
+      "cosine": 0.444,
+      "reason": "Atmospheric and moody, but lacks direct connection to magical corruption or brooms.",
+      "recipe": "5-dream-collage",
       "featured": false
     }
   ],
   "byWord": {
-    "gold": [
-      0,
-      13
-    ],
     "brooms": [
+      0,
       1,
-      4,
-      5
-    ],
-    "boiler": [
-      2,
-      3,
-      8
-    ],
-    "crazy": [
-      6,
-      9,
-      12
+      2
     ],
     "tap": [
+      3
+    ],
+    "boiler": [
+      4,
+      5,
+      6
+    ],
+    "crazy": [
       7,
-      15
+      8
     ],
     "night": [
+      9,
+      12,
+      15
+    ],
+    "gold": [
       10,
+      14,
+      16
+    ],
+    "eyes": [
       11,
-      14
+      18,
+      21
     ],
     "move": [
-      16
+      13,
+      22
+    ],
+    "glow": [
+      17
+    ],
+    "throne": [
+      19,
+      20
+    ],
+    "stars": [
+      23
     ]
   }
 }

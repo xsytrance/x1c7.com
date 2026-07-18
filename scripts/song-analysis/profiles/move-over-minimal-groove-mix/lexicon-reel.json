@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-07-17T09:25:23.062Z",
+  "generatedAt": "2026-07-18T10:52:06.348Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 664,
+    "candidates": 670,
     "judged": 25,
-    "accepted": 20,
-    "kept": 20
+    "accepted": 19,
+    "kept": 19
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit for retro club, bass focus, summer energy, confident style",
+      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 37.802,
       "score": 1,
       "cosine": 0.584,
-      "reason": "perfect fit for retro club and summer night energy",
+      "reason": "Perfectly aligns with retro club aesthetic and summer night energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -84,18 +84,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
-      "key": "lexicon/move/s3-5-word-portrait.webp",
-      "word": "move",
-      "line": "Title Move Over Minimal Groove Mix Somebody said the",
-      "t": 0.047,
-      "score": 1,
-      "cosine": 0.583,
-      "reason": "Perfect fit for dance floor dominance and retro club aesthetic.",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
       "key": "lexicon/heat/s3-6-word-portrait.webp",
       "word": "heat",
@@ -103,7 +91,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.566,
-      "reason": "Perfect fit for retro club, summer heat, and dance floor dominance.",
+      "reason": "Perfect fit for retro club, summer heat, and confident style",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
+      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -127,7 +115,7 @@
       "t": 0.047,
       "score": 1,
       "cosine": 0.534,
-      "reason": "perfect fit for dance floor dominance and retro club aesthetic",
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -151,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfect fit for retro club, confidence, and individuality",
+      "reason": "Perfectly aligns with dance floor dominance and retro club aesthetic",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -163,7 +151,7 @@
       "t": 25.565,
       "score": 1,
       "cosine": 0.478,
-      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
+      "reason": "Perfectly aligns with summer night energy and retro club aesthetic",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -187,7 +175,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.56,
-      "reason": "spotlight and retro club align with song's themes and mood",
+      "reason": "spotlight, silhouettes, retro club, smooth energy match song's themes",
       "recipe": "2-dark-surreal",
       "featured": true
     },
@@ -199,7 +187,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "retro club, spotlights, stylish mood align perfectly",
+      "reason": "retro club, spotlights, stylish mood align with song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -211,7 +199,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
+      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -260,36 +248,35 @@
     ],
     "different": [
       3,
-      11,
-      18
+      10,
+      17
     ],
     "lights": [
       4,
-      14,
-      15
+      13,
+      14
     ],
     "heat": [
       5,
-      7,
-      8
+      6,
+      7
     ],
     "move": [
-      6,
-      9,
-      10
+      8,
+      9
     ],
     "drip": [
-      12
+      11
     ],
     "slow": [
-      13
+      12
     ],
     "summer": [
-      16,
-      17
+      15,
+      16
     ],
     "somebody": [
-      19
+      18
     ]
   }
 }

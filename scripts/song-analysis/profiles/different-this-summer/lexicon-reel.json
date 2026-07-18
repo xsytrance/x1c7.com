@@ -1,40 +1,16 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-07-17T07:05:40.516Z",
+  "generatedAt": "2026-07-18T10:32:05.558Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1050,
-    "judged": 53,
-    "accepted": 41,
+    "candidates": 1560,
+    "judged": 64,
+    "accepted": 56,
     "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
-      "key": "lexicon/different/s6-2-word-portrait.webp",
-      "word": "different",
-      "line": "This summer feel different already Come on",
-      "t": 9.729,
-      "score": 1,
-      "cosine": 0.433,
-      "reason": "Image aligns with empowerment, optimism, and transformation in the song.",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-3-word-portrait.webp",
-      "key": "lexicon/lights/s20-3-word-portrait.webp",
-      "word": "lights",
-      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
-      "t": 159.52,
-      "score": 0.95,
-      "cosine": 0.591,
-      "reason": "Neon lights symbolize urgency and action, aligning with summer transformation and self-emp",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-3-word-portrait.webp",
       "key": "lexicon/sky/s0-3-word-portrait.webp",
@@ -43,20 +19,8 @@
       "t": 150.825,
       "score": 0.95,
       "cosine": 0.571,
-      "reason": "Matches optimistic drive and aspiration themes",
+      "reason": "Aligns with summer, ambition, and optimism central to the song",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s1-5-word-portrait.webp",
-      "key": "lexicon/sky/s1-5-word-portrait.webp",
-      "word": "sky",
-      "line": "rain Everybody wants the beach with no pressure Cold drink clean sky time you can measure But that kind of peace dont fall from blue",
-      "t": 150.825,
-      "score": 0.95,
-      "cosine": 0.558,
-      "reason": "Matches summer optimism and freedom themes",
-      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -69,18 +33,6 @@
       "cosine": 0.549,
       "reason": "Symbolizes inner drive and passion aligning with self-empowerment and transformation theme",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
-      "key": "lexicon/lights/s17-2-word-portrait.webp",
-      "word": "lights",
-      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
-      "t": 159.52,
-      "score": 0.95,
-      "cosine": 0.531,
-      "reason": "Aligns with neon lights as self-empowerment and energetic summer transformation",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -108,39 +60,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
-      "key": "lexicon/heat/s8-2-word-portrait.webp",
-      "word": "heat",
-      "line": "outside But the mind on overdrive Na na na feel that heat New world under my feet I aint",
-      "t": 115.84,
-      "score": 0.95,
-      "cosine": 0.518,
-      "reason": "Matches summer energy, drive, and transformation through vibrant visuals and red light sym",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s2-4-photo.webp",
       "key": "lexicon/summer/s2-4-photo.webp",
       "word": "summer",
       "line": "knows something This summer feel different already Come on",
       "t": 9.172,
       "score": 0.95,
-      "cosine": 0.516,
-      "reason": "Confident beach imagery aligns with self-empowerment and summer transformation",
+      "cosine": 0.511,
+      "reason": "Confident beach imagery aligns with summer's transformative energy and self-empowerment th",
       "recipe": "4-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-2-dark-surreal.webp",
-      "key": "lexicon/lights/s19-2-dark-surreal.webp",
-      "word": "lights",
-      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
-      "t": 159.52,
-      "score": 0.95,
-      "cosine": 0.5,
-      "reason": "Neon lights and crowd energy align with summer night motivation and self-empowerment theme",
-      "recipe": "2-dark-surreal",
       "featured": true
     },
     {
@@ -156,18 +84,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s5-5-word-portrait.webp",
-      "key": "lexicon/different/s5-5-word-portrait.webp",
-      "word": "different",
-      "line": "This summer feel different already Come on",
-      "t": 9.729,
-      "score": 0.95,
-      "cosine": 0.491,
-      "reason": "Symbolizes transformation and hope in a minimalist, optimistic setting",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s14-4-dream-collage.webp",
       "key": "lexicon/heart/s14-4-dream-collage.webp",
       "word": "heart",
@@ -175,68 +91,80 @@
       "t": 136.32,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "Symbolism aligns with heart as drive, obstacles as challenges, and cosmic hope as new begi",
+      "reason": "Symbolism aligns with heart as drive, obstacles as challenges, and cosmic hope matches sum",
       "recipe": "4-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
-      "key": "lexicon/night/s15-1-word-portrait.webp",
-      "word": "night",
-      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will in my",
-      "t": 157.279,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s0-4-oil-light.webp",
+      "key": "lexicon/sun/s0-4-oil-light.webp",
+      "word": "sun",
+      "line": "Sun coming up like it knows something",
+      "t": 5.167,
       "score": 0.95,
-      "cosine": 0.476,
-      "reason": "Neon lights and midnight align with summer night theme; empty street symbolizes potential ",
-      "recipe": "1-word-portrait",
+      "cosine": 0.469,
+      "reason": "Matches summer energy, hope, and new beginnings",
+      "recipe": "4-oil-light",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s20-4-word-portrait.webp",
-      "key": "lexicon/light/s20-4-word-portrait.webp",
-      "word": "light",
-      "line": "we been waiting on the light",
-      "t": 17.646,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
+      "key": "lexicon/different/s6-2-word-portrait.webp",
+      "word": "different",
+      "line": "This summer feel different already Come on",
+      "t": 9.729,
       "score": 0.95,
-      "cosine": 0.475,
-      "reason": "Symbolizes hope and guidance in a stagnant space, aligns with theme of transformation and ",
-      "recipe": "4-word-portrait",
+      "cosine": 0.463,
+      "reason": "Confident, stylish imagery aligns with self-empowerment and summer transformation",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s5-1-word-neon.webp",
-      "key": "lexicon/rhythm/s5-1-word-neon.webp",
-      "word": "rhythm",
-      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will",
-      "t": 157.106,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s5-2-oil-light.webp",
+      "key": "lexicon/sun/s5-2-oil-light.webp",
+      "word": "sun",
+      "line": "Sun coming up like it knows something",
+      "t": 5.167,
       "score": 0.95,
-      "cosine": 0.472,
-      "reason": "Urban energy matches song's motivational drive and nighttime rhythm theme",
-      "recipe": "1-word-neon",
+      "cosine": 0.457,
+      "reason": "Symbolizes new beginnings and energy aligning with the song's optimistic drive and transfo",
+      "recipe": "2-oil-light",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-5-word-portrait.webp",
-      "key": "lexicon/heat/s6-5-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "key": "lexicon/heat/s8-2-word-portrait.webp",
       "word": "heat",
       "line": "outside But the mind on overdrive Na na na feel that heat New world under my feet I aint",
       "t": 115.84,
       "score": 0.95,
-      "cosine": 0.454,
-      "reason": "Image aligns with song's motivational tone and themes of internal drive and transformation",
-      "recipe": "5-word-portrait",
+      "cosine": 0.449,
+      "reason": "Matches summer energy, confidence, and dance floor vibe",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-4-word-neon.webp",
-      "key": "lexicon/rhythm/s6-4-word-neon.webp",
-      "word": "rhythm",
-      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will",
-      "t": 157.106,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s15-2-poster.webp",
+      "key": "lexicon/heart/s15-2-poster.webp",
+      "word": "heart",
+      "line": "no perfect start No fancy degree just a hungry heart Prompt by prompt Im learning the flow Ask better questions",
+      "t": 136.32,
       "score": 0.95,
-      "cosine": 0.434,
-      "reason": "Urban neon aligns with summer nightlife and motivational drive",
-      "recipe": "4-word-neon",
+      "cosine": 0.431,
+      "reason": "Symbolizes passion and vitality aligning with self-empowerment and drive",
+      "recipe": "2-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s4-1-word-portrait.webp",
+      "key": "lexicon/flame/s4-1-word-portrait.webp",
+      "word": "flame",
+      "line": "view with your name on it That little idea with flame on it Not chasing luck we make it move We",
+      "t": 222.308,
+      "score": 0.95,
+      "cosine": 0.424,
+      "reason": "Symbolizes energy and transformation in an urban setting",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -247,8 +175,20 @@
       "t": 157.106,
       "score": 0.95,
       "cosine": 0.423,
-      "reason": "Neon glow and rhythm align with song's optimistic drive and urban transformation theme.",
+      "reason": "Neon glow and rhythm align with song's optimistic drive and urban transformation",
       "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s20-5-word-portrait.webp",
+      "key": "lexicon/move/s20-5-word-portrait.webp",
+      "word": "move",
+      "line": "with flame on it Not chasing luck we make it move We make it move we make it move Yeah I used to say Im stuck now I say Im loading Used",
+      "t": 224.95,
+      "score": 0.95,
+      "cosine": 0.415,
+      "reason": "Urgent, dynamic, and inspirational image aligns with song's themes of action and transform",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -259,7 +199,7 @@
       "t": 100.32,
       "score": 0.95,
       "cosine": 0.391,
-      "reason": "Urban glow symbolizes opportunity, rain reflects transition, optimism aligns with song's d",
+      "reason": "Urban glow and rain symbolize transformation and opportunity",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -283,7 +223,7 @@
       "t": 100.32,
       "score": 0.95,
       "cosine": 0.377,
-      "reason": "Luminous path and reflections align with self-empowerment and drive",
+      "reason": "Luminous path and reflections align with self-empowerment and journey themes",
       "recipe": "1-oil-light",
       "featured": true
     },
@@ -324,27 +264,39 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
-      "key": "lexicon/move/s2-2-word-portrait.webp",
-      "word": "move",
-      "line": "with flame on it Not chasing luck we make it move We make it move we make it move Yeah I used to say Im stuck now I say Im loading Used",
-      "t": 224.95,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s20-4-word-portrait.webp",
+      "key": "lexicon/light/s20-4-word-portrait.webp",
+      "word": "light",
+      "line": "we been waiting on the light",
+      "t": 17.646,
       "score": 0.9,
-      "cosine": 0.56,
-      "reason": "Urgent, determined, and optimistic mood aligns with song's theme of action and self-empowe",
-      "recipe": "2-word-portrait",
+      "cosine": 0.458,
+      "reason": "Symbolizes hope in decay, aligns with self-empowerment and transformation",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
-      "key": "lexicon/night/s13-3-word-portrait.webp",
-      "word": "night",
-      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will in my",
-      "t": 157.279,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s1-5-cinema.webp",
+      "key": "lexicon/sun/s1-5-cinema.webp",
+      "word": "sun",
+      "line": "Sun coming up like it knows something",
+      "t": 5.167,
       "score": 0.9,
-      "cosine": 0.534,
-      "reason": "Aligns with night as time for discipline and action",
-      "recipe": "3-word-portrait",
+      "cosine": 0.457,
+      "reason": "Symbolizes growth, hope, and resilience under the sun's light",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "word": "lights",
+      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
+      "t": 159.52,
+      "score": 0.9,
+      "cosine": 0.452,
+      "reason": "Matches neon lights, energy, and summer night vibe with motivational drive",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -360,102 +312,150 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rum/s0-1-dream-collage.webp",
-      "key": "lexicon/rum/s0-1-dream-collage.webp",
-      "word": "rum",
-      "line": "suitcase yet but the plan got motion Laptop open with a rum by the ocean Not there now but I see that scene Gotta",
-      "t": 58.884,
-      "score": 0.85,
-      "cosine": 0.393,
-      "reason": "Ambition and transformation align with song's themes; surreal elements match optimistic dr",
-      "recipe": "1-dream-collage",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s8-4-word-portrait.webp",
+      "key": "lexicon/sky/s8-4-word-portrait.webp",
+      "word": "sky",
+      "line": "rain Everybody wants the beach with no pressure Cold drink clean sky time you can measure But that kind of peace dont fall from blue",
+      "t": 150.825,
+      "score": 0.9,
+      "cosine": 0.442,
+      "reason": "Serene sky aligns with hopeful, peaceful summer transformation",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-1-dream-collage.webp",
-      "key": "lexicon/move/s2-1-dream-collage.webp",
-      "word": "move",
-      "line": "with flame on it Not chasing luck we make it move We make it move we make it move Yeah I used to say Im stuck now I say Im loading Used",
-      "t": 224.95,
-      "score": 0.85,
-      "cosine": 0.366,
-      "reason": "Surreal imagery aligns with motivational drive and self-empowerment themes.",
-      "recipe": "1-dream-collage",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-5-word-portrait.webp",
+      "key": "lexicon/heat/s6-5-word-portrait.webp",
+      "word": "heat",
+      "line": "outside But the mind on overdrive Na na na feel that heat New world under my feet I aint",
+      "t": 115.84,
+      "score": 0.9,
+      "cosine": 0.437,
+      "reason": "Matches summer energy, confidence, and retro club vibe with song's drive and transformatio",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glows/s1-4-concept-art.webp",
-      "key": "lexicon/glows/s1-4-concept-art.webp",
-      "word": "glows",
-      "line": "the fantasy But we working while it glows So the future feels easy This",
-      "t": 100.32,
-      "score": 0.85,
-      "cosine": 0.321,
-      "reason": "Urban resilience and neon hope align with summer drive and ambition",
-      "recipe": "4-concept-art",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s7-5-stickers.webp",
+      "key": "lexicon/flame/s7-5-stickers.webp",
+      "word": "flame",
+      "line": "view with your name on it That little idea with flame on it Not chasing luck we make it move We",
+      "t": 222.308,
+      "score": 0.9,
+      "cosine": 0.429,
+      "reason": "Symbolizes passion and energy aligning with self-empowerment and drive",
+      "recipe": "5-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
+      "key": "lexicon/heat/s3-6-word-portrait.webp",
+      "word": "heat",
+      "line": "outside But the mind on overdrive Na na na feel that heat New world under my feet I aint",
+      "t": 115.84,
+      "score": 0.9,
+      "cosine": 0.428,
+      "reason": "Matches summer heat, club energy, and confident mood",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
+      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
+      "word": "rhythm",
+      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will",
+      "t": 157.106,
+      "score": 0.9,
+      "cosine": 0.422,
+      "reason": "Urban energy aligns with summer drive and rhythm as a motivational force",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-1-anime.webp",
+      "key": "lexicon/lights/s21-1-anime.webp",
+      "word": "lights",
+      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
+      "t": 159.52,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "Futuristic neon lights match song's energetic, motivational vibe and summer theme",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-2-dark-surreal.webp",
+      "key": "lexicon/lights/s19-2-dark-surreal.webp",
+      "word": "lights",
+      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
+      "t": 159.52,
+      "score": 0.9,
+      "cosine": 0.416,
+      "reason": "Retro club energy matches summer night theme; light symbolizes discipline and action",
+      "recipe": "2-dark-surreal",
       "featured": true
     }
   ],
   "byWord": {
-    "different": [
-      0,
-      12,
-      21
-    ],
-    "lights": [
-      1,
-      5,
-      10
-    ],
     "sky": [
+      0,
       2,
-      3,
-      6
+      25
     ],
     "heart": [
-      4,
-      13
+      1,
+      6,
+      11
     ],
     "light": [
-      7,
-      11,
-      15
-    ],
-    "heat": [
-      8,
-      17
+      3,
+      5,
+      21
     ],
     "summer": [
-      9
+      4
     ],
-    "night": [
-      14,
+    "sun": [
+      7,
+      9,
+      22
+    ],
+    "different": [
+      8,
+      16
+    ],
+    "heat": [
+      10,
+      26,
+      28
+    ],
+    "flame": [
+      12,
       27
     ],
     "rhythm": [
-      16,
-      18,
-      19
-    ],
-    "glows": [
-      20,
-      22,
-      31
-    ],
-    "code": [
-      23,
-      24,
-      25
+      13,
+      29
     ],
     "move": [
-      26,
-      30
+      14
+    ],
+    "glows": [
+      15,
+      17
+    ],
+    "code": [
+      18,
+      19,
+      20
+    ],
+    "lights": [
+      23,
+      30,
+      31
     ],
     "drink": [
-      28
-    ],
-    "rum": [
-      29
+      24
     ]
   }
 }
