@@ -19,6 +19,21 @@ const CKPT = "sdxl_turbo_1.0_fp16.safetensors";
 const NEG = "person, people, face, hands, text, words, letters, watermark, logo, signature, low quality, blurry, deformed";
 
 const TRACKS = {
+  // Drum & Bass · Weightless Serene — "leaves above, the river below / days drift by,
+  // floating into the sky." Tranquil daytime nature, the anti-Rooklyn correction.
+  "days-drift-by": {
+    coverName: "Days Drift By.png",
+    style: "serene liquid drum and bass album art, tranquil daytime nature, soft diffused sunlight, sky blue and white and pale gold palette, airy weightless dreamy film photography, gentle peaceful atmosphere, no people",
+    scenes: [
+      "a calm river winding through a lush green valley under a clear bright blue sky, sunlight glinting on the gentle current, soft distant hills, wildflowers on the banks",
+      "vast white clouds drifting slowly across a luminous sky at golden hour, warm light spilling over a mirror-still river, reeds swaying in a soft breeze",
+      "a warm shaft of morning sunlight breaking through pale fog over a quiet forest river, dew on drifting leaves, weightless and serene, soft golden haze",
+    ],
+    title: {
+      lines: ["Days", "Drift By"], font: "Cormorant Garamond", sizes: [220, 150],
+      fill: ["#eef7ff", "#a9d4ee"], y: 0.13, artist: true,
+    },
+  },
   "amor-de-verdad": {
     coverName: "Amor De Verdad.png",
     style: "cinematic still life photography, intimate night bedroom to first dawn light, warm phone-screen and candle glow, gauzy curtains, rumpled linen, terracotta and rose-gold against deep indigo, soft film grain, tender atmosphere, symbolic still life, no people",
