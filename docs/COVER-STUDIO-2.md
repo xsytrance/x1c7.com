@@ -99,6 +99,24 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   files synced back (65 png + 3 jpeg, all integrity-checked); Amor De Verdad
   kept as the 2026-07-18 regen (tar's 6.3MB original staged if ever wanted).
   Verified: all 67 manifest coverFiles present → reprints unblocked.
+- [x] Corrections + bespoke covers PUBLISHED LIVE 2026-07-18. Owner dropped
+  `assets/art/corrections/` (correct art for wrongly-covered songs) +
+  `assets/art/xsytrance/` (brand kit). Applied:
+  - 5 raw-art corrections (amor-de-verdad, veneno-y-miel, membrane-still-
+    insane, who-s-that-snake…, push-it-on-me) → `originals/` → engine-framed.
+  - 2 already-framed finished covers (summer-drip, still-got-5-on-it) + the
+    NEW song `nights-drift-by` via a new engine feature: **`finished/<slug>.png`
+    passthrough** — if present, engine copies it verbatim (auto-normalized to
+    2048²) instead of framing, so bespoke covers are first-class and survive
+    reprint-all. `finished/` committed (irreplaceable, unlike the lost originals/).
+  - Nights Drift By (夜が流れて): new /music track, Liquid DnB, real 4:19
+    (cover art's "3:00" is decorative). MP3 + cover → R2; pinned in tracks.ts
+    (MP3_FILES + COVER_OVERRIDES). KEY FACT: /music covers ARE the engine-framed
+    collector prints at `covers/<Name>.png`, not raw art.
+  - R2 published (verified public-reachable): 7 primary keys + collector shelf
+    `covers/collector/` (68) + web assets `covers/web/` (69). Committed +
+    pushed to main (8ebb240) → deployed. Source assets archived to X10
+    `x1c7-source-assets/2026-07-18/` (gitignored on disk → wipe-safe now).
 - [ ] P2 web studio + generate deck
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding

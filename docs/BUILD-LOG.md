@@ -7,6 +7,32 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 — Covers recovered, corrected, published; identity across the site
+
+Two threads shipped end to end. Cover detail: [`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md);
+identity: [`BRANDING.md`](./BRANDING.md).
+
+- **`collector/originals/` recovered.** The reinstall wiped the (gitignored)
+  source covers — in no git bundle. Found the only copy inside the July-10
+  working-tree tar on the X10 drive; extracted 68, integrity-checked, synced
+  back. All 67 manifest coverFiles present → reprints unblocked; full shelf
+  reprinted (68).
+- **8 corrected covers.** Owner dropped correct art for wrongly-covered songs.
+  5 raw arts → `originals/` → engine-framed. 2 pre-framed finished covers went
+  through a new engine feature — **`finished/<slug>.png` passthrough**: bespoke
+  covers copied verbatim (normalized to 2048²), never re-framed, so reprint-all
+  is safe. `finished/` is committed so these irreplaceable sources can't be lost
+  like `originals/` was.
+- **New track: Nights Drift By (夜が流れて).** Liquid DnB, real 4:19 (the cover's
+  "3:00" is decorative). MP3 + cover → R2; pinned in `tracks.ts`. Note: `/music`
+  covers ARE the engine-framed collector prints at `covers/<Name>.png`.
+- **Published live.** 7 primary R2 keys + collector shelf (68) + web assets (69),
+  all verified public-reachable; committed + deployed.
+- **xsytrance / AGENOR identity kit** across 5 surfaces: neon-✕ favicon,
+  `/music` XsytranceBand, footer AGENOR watermark, homepage "XSY / VG God"
+  band, and a concert backdrop on the Kinetica shows section. Source PNGs
+  optimized 2–3 MB → 24–343 KB webp in `public/brand/`; source archived to X10.
+
 ## 2026-07-14 (XV) — The Curator: gravity, vision, and the reels
 
 The lexicon stopped painting everything equally and started *knowing what
