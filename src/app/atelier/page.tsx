@@ -251,7 +251,7 @@ export default function AtelierPage() {
           The Atelier
         </h1>
         <p className="mt-3 max-w-2xl text-base leading-7 text-white/55">
-          The whole lexicon on one wall. Five engines paint it nightly; every frame is plaqued
+          The whole Lexsycon on one wall. Five engines paint it nightly; every frame is plaqued
           with its sense and the brush that made it.
         </p>
 

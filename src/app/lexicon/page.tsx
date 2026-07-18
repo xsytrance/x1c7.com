@@ -175,7 +175,7 @@ export default function LexiconPage() {
       <header className="mx-auto mt-6 max-w-5xl text-center">
         <p className="font-mono text-[11px] uppercase tracking-[0.4em] text-white/40">Galaxy · {lex.galaxy}</p>
         <h1 className="mt-3 font-display text-5xl font-black uppercase tracking-tight text-white sm:text-7xl glow-text" style={{ color: "var(--theme-primary)" }}>
-          The Lexicon
+          The Lexsycon
         </h1>
         <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-white/55">
           Every word is a little world. A growing shelf of vibes, palettes, imagery, and effect

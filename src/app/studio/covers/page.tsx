@@ -122,12 +122,12 @@ export default function CoverStudioPage() {
 
   async function lexiconIdeas() {
     if (!sel || lexBusy) return;
-    setLexBusy(true); setLexIdeas([]); setMsg("pulling ideas from the song's lexicon…");
+    setLexBusy(true); setLexIdeas([]); setMsg("pulling ideas from the song's Lexsycon…");
     const r = await fetch("/api/studio/lexicon-ideas", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug: sel }) })
       .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
     setLexBusy(false);
-    if (r.ok) { setLexIdeas(r.ideas || []); setMsg(`${r.ideas?.length || 0} lexicon ideas — tap a word to load its prompt`); }
-    else setMsg(`lexicon: ${r.error || "error"}`);
+    if (r.ok) { setLexIdeas(r.ideas || []); setMsg(`${r.ideas?.length || 0} Lexsycon ideas — tap a word to load its prompt`); }
+    else setMsg(`Lexsycon: ${r.error || "error"}`);
   }
 
   async function generate() {
@@ -266,12 +266,12 @@ export default function CoverStudioPage() {
                 {/* lexicon idea deck — the song's heavy words → their sense imagery + the painting the lexicon already made */}
                 <div>
                   <div className="flex items-center justify-between">
-                    <p className={LABEL}>◆ From the lexicon</p>
+                    <p className={LABEL}>◆ From the Lexsycon</p>
                     <button onClick={lexiconIdeas} disabled={lexBusy || !!activeJob} className="rounded-full border border-[var(--inst-line)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--inst-dim)] transition hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)] disabled:opacity-40">
                       {lexBusy ? "pulling…" : "get ideas"}
                     </button>
                   </div>
-                  <p className={`${HINT} mt-1`}>The song&apos;s heavy words, the lyric that summoned each, and the art the lexicon already painted. Tap a word to load its prompt.</p>
+                  <p className={`${HINT} mt-1`}>The song&apos;s heavy words, the lyric that summoned each, and the art the Lexsycon already painted. Tap a word to load its prompt.</p>
                   {lexIdeas.length > 0 && (
                     <div className="mt-2 grid grid-cols-2 gap-2">
                       {lexIdeas.map((x, i) => {

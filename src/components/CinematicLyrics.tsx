@@ -433,7 +433,7 @@ function CinematicTakeover({ open, track, lines, synced, onClose }: {
                       </Link>
                       <Link href="/lexicon" onClick={onClose}
                         className="rounded-full border border-white/15 px-3 py-1.5 font-mono text-[10px] uppercase tracking-wider text-white/60 transition hover:text-white">
-                        📖 Lexicon
+                        📖 Lexsycon
                       </Link>
                     </span>
                   </div>
