@@ -28,16 +28,18 @@ const JOB_FACE: Record<string, { mark: string; text: string }> = {
   cancelled: { mark: "⏹", text: "cancelled" },
 };
 
+type Rec = { palette?: string; spine?: string; explicit?: boolean } | null;
 type Cover = {
   slug: string; title: string; genre?: string; mood?: string; color?: string;
-  hidden?: boolean; paletteKey?: string; hasCard?: boolean; hasSpine?: boolean;
-  original?: string; urls?: { card?: string; spine?: string; collector?: string };
+  hidden?: boolean; paletteKey?: string; autoPaletteKey?: string; hasCard?: boolean; hasSpine?: boolean;
+  record?: Rec; original?: string; urls?: { card?: string; spine?: string; collector?: string };
 };
 type Prog = { key: string; n: number; url: string; seed?: number; at?: string };
 type Job = { id: string; kind: string; status: string; total: number; done: number; progress?: Prog[]; error?: string; created_at: string };
 
 export default function CoverStudioPage() {
   const [covers, setCovers] = useState<Cover[]>([]);
+  const [palettes, setPalettes] = useState<Record<string, { label?: string; accent?: string }>>({});
   const [loaded, setLoaded] = useState(false);
   const [q, setQ] = useState("");
   const [sel, setSel] = useState<string | null>(null);
@@ -50,11 +52,14 @@ export default function CoverStudioPage() {
   const [bust, setBust] = useState(0); // cover-image cache-buster after a reprint
   const [concepts, setConcepts] = useState<{ label: string; prompt: string }[]>([]);
   const [conceptsBusy, setConceptsBusy] = useState(false);
+  const [edPalette, setEdPalette] = useState("auto");
+  const [edSpine, setEdSpine] = useState("");
+  const [edExplicit, setEdExplicit] = useState(false);
   const promptTouched = useRef(false);
 
   const loadInventory = useCallback(async () => {
     const d = await fetch("/api/studio/covers").then((r) => r.json()).catch(() => null);
-    if (d?.ok) { setCovers(d.covers); setLoaded(true); }
+    if (d?.ok) { setCovers(d.covers); setPalettes(d.palettes || {}); setLoaded(true); }
     else { setLoaded(true); setMsg(d?.error ? `inventory: ${d.error}` : "inventory unavailable (owner-only)"); }
   }, []);
   useEffect(() => { loadInventory(); }, [loadInventory]);
@@ -84,6 +89,23 @@ export default function CoverStudioPage() {
 
   function pick(slug: string) {
     setSel(slug); setMsg(null); promptTouched.current = false; setPrompt(""); setConcepts([]);
+    const rec = covers.find((c) => c.slug === slug)?.record || null;
+    setEdPalette(rec?.palette || "auto"); setEdSpine(rec?.spine || ""); setEdExplicit(!!rec?.explicit);
+  }
+
+  async function saveEdits() {
+    if (!sel || busy) return;
+    setBusy(true); setMsg("applying case edits + reprinting…");
+    const overrides: Record<string, unknown> = {
+      palette: edPalette === "auto" ? null : edPalette,
+      spine: edSpine.trim() || null,
+      explicit: edExplicit ? true : null,
+    };
+    const r = await fetch("/api/studio/covers", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug: sel, overrides, render: true }) })
+      .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
+    setBusy(false);
+    if (r.ok) { setMsg("✓ case updated + reprinted"); setBust(Date.now()); loadInventory(); }
+    else setMsg(`edit failed: ${r.error || "error"}`);
   }
 
   async function artDirector() {
@@ -241,6 +263,31 @@ export default function CoverStudioPage() {
                 </div>
                 {msg && <p className={HINT}>{msg}</p>}
               </div>
+
+              {/* adjust the case — palette / spine / explicit → overrides + reprint (no new art) */}
+              <details className={CARD}>
+                <summary className={`${LABEL} cursor-pointer select-none`}>Adjust the case <span className="normal-case tracking-normal text-[var(--inst-faint)]">— frame only, keeps the art</span></summary>
+                <div className="mt-4 space-y-3">
+                  <div>
+                    <p className={HINT}>Palette</p>
+                    <select value={edPalette} onChange={(e) => setEdPalette(e.target.value)}
+                      className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] focus:border-[var(--inst-plasma)] focus:outline-none">
+                      <option value="auto">auto — {selCover.autoPaletteKey || "genre"}</option>
+                      {Object.entries(palettes).map(([k, p]) => <option key={k} value={k}>{p.label || k}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <p className={HINT}>Spine label <span className="text-[var(--inst-faint)]">(blank = auto from genre)</span></p>
+                    <input value={edSpine} onChange={(e) => setEdSpine(e.target.value)} placeholder={selCover.genre || "auto"}
+                      className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                  </div>
+                  <label className="flex items-center gap-2 text-xs text-[var(--inst-dim)]">
+                    <input type="checkbox" checked={edExplicit} onChange={(e) => setEdExplicit(e.target.checked)} className="accent-[var(--inst-plasma)]" />
+                    force PARENTAL ADVISORY
+                  </label>
+                  <button onClick={saveEdits} disabled={busy} className={`${BTN} w-full`}>Apply &amp; reprint</button>
+                </div>
+              </details>
 
               {/* candidates */}
               {(activeJob || candidates.length > 0) && (
