@@ -21,6 +21,7 @@ import CollectionShelf from "@/components/CollectionShelf";
 import CollectionDeck from "@/components/CollectionDeck";
 import { JukeboxView } from "@/components/JukeboxView";
 import { TylerHazeHero } from "@/components/TylerHazeHero";
+import { XsytranceBand } from "@/components/XsytranceBand";
 
 function useDeviceMode(): "desktop" | "mobile" | null {
   const [mode, setMode] = useState<"desktop" | "mobile" | null>(null);
@@ -121,6 +122,9 @@ export default function Page() {
           />
         </div>
       </section>
+
+      {/* ===== xsytrance identity — the artist behind The Collection ===== */}
+      <XsytranceBand />
 
       {/* ===== SUNO GRATITUDE — up top so nobody has to scroll to find it ===== */}
       <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">

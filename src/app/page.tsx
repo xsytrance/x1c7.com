@@ -7,6 +7,7 @@ import { MobileNav } from "@/components/MobileNav";
 import { TextScramble } from "@/components/TextScramble";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { HomeShowcase } from "@/components/HomeShowcase";
+import { IdentityBand } from "@/components/IdentityBand";
 import { GalaxyButton } from "@/components/GalaxyButton";
 
 export default function Home() {
@@ -84,6 +85,9 @@ export default function Home() {
 
       {/* Showcase: stats, featured builds, latest track */}
       <HomeShowcase />
+
+      {/* Identity — the person behind the signal */}
+      <IdentityBand />
 
       {/* Signal Section */}
       <section id="signal" className="relative mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
