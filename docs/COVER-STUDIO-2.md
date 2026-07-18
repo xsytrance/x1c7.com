@@ -42,17 +42,43 @@ save-&-print already work end to end. Cover Studio 2 adds:
   (SDXL turbo + poster dressing), anime (Animagine). 1024×1024, no-text
   negative, mood-bucket routing from planet analysis.
 
+## Two editions, one codebase (owner directive 2026-07-18)
+
+Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
+
+- **VIP edition — the priority.** For the owner + jayodeed (Juan): the
+  owner-gated `/studio/covers` with everything open. Built FOR Juan's
+  album-art workflow: dead-simple flow (pick song → get concepts → pick →
+  variations → print), **lots of variations** (lane × concept fan-out,
+  variation-of-this buttons), an **LLM art director** (local qwen3:14b
+  writes N diverse cover concepts from the song's profile), and the
+  **lexicon tie-in**: the song's heavy words' sense imageryPrompts +
+  vision readings become prompt seeds ("ideas from the lexicon" deck) —
+  everything interconnected. Access for Juan: recommend a Tailscale
+  invite to prime (zero code); alternative is a signed guest link
+  (decide before sharing).
+- **Public edition — later, follows the levels.** FREE: upload/pick art,
+  palette + spine typography, print the collector case (no AI, genuinely
+  complete). KEYED: cloud image-gen candidates via BYO OpenRouter.
+  LOCAL: the full lane roster against the user's own ComfyUI. Same
+  components, capability-gated; no fork.
+
 ## Phases
 
 - **P1 — generation backbone**: `cover-gen` job kind in the jobs API +
   prime worker handler; R2 candidate layout; `apply` endpoint that promotes
   a candidate to `originals/` + reprints. Testable via curl before any UI.
-- **P2 — web studio shell**: owner-gated `/studio/covers` with wall view
-  + editor parity (reuses `/api/studio/covers`), then the GENERATE deck on
-  top of P1.
+- **P2 — web studio shell (VIP)**: owner-gated `/studio/covers` with wall
+  view + editor parity (reuses `/api/studio/covers`), then the GENERATE
+  deck on top of P1 — including the LLM art director (concept fan-out via
+  local qwen3:14b) and the lexicon idea deck (heavy words → imageryPrompts
+  → one-tap prompt seeds).
 - **P3 — SoundCloud job** + drift report in the ISSUES view.
 - **P4 — onboarding flow** (manifest record + first print from the studio).
 - **P5 — app embed** of the web studio behind the existing contract.
+- **P6 — public edition**: the same components released behind the
+  FREE/KEYED/LOCAL gates (docs/THREE-LEVELS.md). FREE tier ships only
+  when it's genuinely demo-proud.
 
 ## Status log
 - [x] Plan reconstructed (Explore agent over repo + surviving transcripts),
