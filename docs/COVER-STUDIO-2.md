@@ -133,9 +133,15 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   Worker fix: cover-gen tolerates a missing Supabase row (collector-only tracks
   work; seeds from prompt/slug). Verified end-to-end. Needs the site running
   LOCALLY + `node scripts/art-worker.mjs --watch` (Vercel can't reach ComfyUI).
-  ⏳ P2 stretch (not yet built): LLM art director (qwen3:14b concept fan-out),
-  lexicon idea deck (heavy words → imageryPrompts → prompt seeds), editor parity
-  (palette/spine/lang overrides — the API supports them, no UI yet).
+  ✓ P2 stretch — LLM ART DIRECTOR shipped (a64590e): /api/studio/concepts →
+  qwen3:14b reads the song's analysis and pitches N distinct cover concepts as
+  one-tap prompt-seed chips in the deck. ✓ EDITOR PARITY shipped (ee295cd):
+  "Adjust the case" panel — palette picker + spine label + explicit toggle →
+  overrides + reprint (frame only, keeps the art). Both verified end-to-end.
+  ⏳ Remaining P2 stretch: the lexicon idea deck (a song's heavy words → their
+  sense imageryPrompts/vision readings → prompt seeds — a second idea source
+  beside the LLM art director). Everything needs the site running LOCALLY +
+  `node scripts/art-worker.mjs --watch` + Ollama (qwen3:14b) + ComfyUI (:8188).
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding
 - [ ] P5 app embed
