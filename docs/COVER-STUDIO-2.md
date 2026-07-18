@@ -138,10 +138,14 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   one-tap prompt-seed chips in the deck. ✓ EDITOR PARITY shipped (ee295cd):
   "Adjust the case" panel — palette picker + spine label + explicit toggle →
   overrides + reprint (frame only, keeps the art). Both verified end-to-end.
-  ⏳ Remaining P2 stretch: the lexicon idea deck (a song's heavy words → their
-  sense imageryPrompts/vision readings → prompt seeds — a second idea source
-  beside the LLM art director). Everything needs the site running LOCALLY +
-  `node scripts/art-worker.mjs --watch` + Ollama (qwen3:14b) + ComfyUI (:8188).
+  ✓ LEXICON IDEA DECK shipped (f43bbe1): /api/studio/lexicon-ideas → a song's
+  heavy words with their lexicon sense imagery prompt, the lyric line that
+  summoned each, and the painting the lexicon already made — as one-tap chips
+  ("◆ From the lexicon"). Fuses Supabase planet.analysis.keywords +
+  planets/<slug>/lexicon-reel.json + lexicon.json senses. Verified end-to-end.
+  → **P2 COMPLETE** (shell + generate deck + art director + editor parity +
+  lexicon deck). Everything needs the site running LOCALLY + `node
+  scripts/art-worker.mjs --watch` + Ollama (qwen3:14b) + ComfyUI (:8188).
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding
 - [ ] P5 app embed
