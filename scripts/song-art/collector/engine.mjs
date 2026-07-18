@@ -337,9 +337,11 @@ function buildOverlay(t) {
   // ── footer ──
   const fy = H - FOOT;
   const cells = [];
+  // Label chrome stays AGENOR; the small artist line is fact-driven so guest
+  // tracks (Tyler Haze, Jayodeed…) credit their actual artist.
   cells.push({ w: 300, svg: (x) => `
     <text x="${x + 30}" y="${fy + 66}" font-family="Bebas Neue" font-size="52" letter-spacing="6" fill="${gold}">AGENOR</text>
-    <text x="${x + 30}" y="${fy + 112}" font-family="Barlow Condensed Medium" font-size="30" letter-spacing="9" fill="#c94a3a">xsytrance</text>` });
+    <text x="${x + 30}" y="${fy + 112}" font-family="Barlow Condensed Medium" font-size="30" letter-spacing="9" fill="#c94a3a">${esc(t.artist || "xsytrance")}</text>` });
   const styleText = precise && precise.toUpperCase() !== spineWord ? precise : (t.mood || null);
   if (styleText) cells.push({ w: 430, svg: (x) => `
     <text x="${x + 30}" y="${fy + 58}" font-family="Barlow Condensed SemiBold" font-size="30" letter-spacing="8" fill="#c94a3a">STYLE</text>

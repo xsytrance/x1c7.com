@@ -75,7 +75,7 @@ const AUDIO = {
 // Slugs whose stems.json exists in R2 (queried from tracks.planet.assets.stems).
 const NO_STEMS = new Set(["feverbreak", "music-is-my-drug-rooklyn-mix", "my-soul-lives-in-seoul", "paper-that-cut-you", "who-s-that-snake-funky-slow-jam-mix", "another-year-looks-good-on-you-happy-birthday-song"]);
 
-const fmtTime = (s) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
+const fmtTime = (s) => { const r = Math.round(s); return `${Math.floor(r / 60)}:${String(r % 60).padStart(2, "0")}`; }; // round FIRST or 299.6s prints "4:60"
 
 async function stemsMeta(slug) {
   if (NO_STEMS.has(slug)) return {};

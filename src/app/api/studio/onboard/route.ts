@@ -35,7 +35,7 @@ const slugify = (s: string) =>
   s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 const safeName = (s: string) => s.replace(/[\\/:*?"<>|]+/g, "·").trim();
-const fmtTime = (s: number) => `${Math.floor(s / 60)}:${String(Math.round(s % 60)).padStart(2, "0")}`;
+const fmtTime = (s: number) => { const r = Math.round(s); return `${Math.floor(r / 60)}:${String(r % 60).padStart(2, "0")}`; }; // round FIRST or 299.6s prints "4:60"
 
 /** mono 8kHz s16le PCM → 96 max-abs buckets, normalized 0..1 (build-manifest.mjs) */
 async function peaksFor(mp3: string): Promise<number[] | null> {
@@ -80,12 +80,14 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    // collisions: one slug, one record, one row
+    // collisions: one collector record per slug. An EXISTING tracks row without
+    // a record is fine — that's the adopt case (a /music track that never got
+    // its collector citizenship, e.g. madetobreak) — we just never insert over it.
     const manifest = readManifest();
     if (manifest.some((r) => r.slug === slug)) return NextResponse.json({ error: `collector record "${slug}" already exists` }, { status: 409 });
     const { data: existing, error: exErr } = await supabaseAdmin().from("tracks").select("id").eq("id", slug).maybeSingle();
     if (exErr) throw new Error(exErr.message);
-    if (existing) return NextResponse.json({ error: `tracks row "${slug}" already exists` }, { status: 409 });
+    const adopting = !!existing;
 
     const genre = str("genre");
     const bpmNum = Number(str("bpm"));
@@ -117,9 +119,11 @@ export async function POST(req: NextRequest) {
     }
 
     // the manifest record — facts only, like build-manifest.mjs
+    const artist = str("artist");
     const rec: ManifestRecord = {
       slug, title,
       genre, mood: str("mood"), lang: str("lang"), geo: str("geo"),
+      ...(artist && artist.toLowerCase() !== "xsytrance" ? { artist } : {}),
       coverFile,
       bpm: Number.isFinite(bpmNum) && bpmNum > 0 ? Math.round(bpmNum) : null,
       runtime, peaks,
@@ -137,9 +141,9 @@ export async function POST(req: NextRequest) {
       rendered = true;
     }
 
-    // go live on /music
+    // go live on /music (adopted rows are already there — nothing to insert)
     let published = false;
-    if (publish) {
+    if (publish && !adopting) {
       const { data: maxRow, error: maxErr } = await supabaseAdmin()
         .from("tracks").select("sort_order").order("sort_order", { ascending: false }).limit(1).maybeSingle();
       if (maxErr) throw new Error(maxErr.message);
