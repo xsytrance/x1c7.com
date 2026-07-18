@@ -152,6 +152,17 @@ export function Footer() {
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/25">
             &copy; {new Date().getFullYear()} x1c7. All signal reserved.
           </p>
+          {/* AGENOR — the studio behind the music */}
+          <a
+            href="/music"
+            className="group flex items-center gap-2.5 opacity-70 transition hover:opacity-100"
+            aria-label="AGENOR — XSYVERSE Studios"
+          >
+            <img src="/brand/agenor-gold-sm.webp" alt="" aria-hidden className="h-6 w-6 object-contain" />
+            <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-[#e8c766]/70 transition group-hover:text-[#e8c766]">
+              AGENOR · XSYVERSE Studios
+            </span>
+          </a>
           <div className="flex items-center gap-2">
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-venom" />
             <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/30">

@@ -21,6 +21,7 @@ import CollectionShelf from "@/components/CollectionShelf";
 import CollectionDeck from "@/components/CollectionDeck";
 import { JukeboxView } from "@/components/JukeboxView";
 import { TylerHazeHero } from "@/components/TylerHazeHero";
+import { XsytranceBand } from "@/components/XsytranceBand";
 
 function useDeviceMode(): "desktop" | "mobile" | null {
   const [mode, setMode] = useState<"desktop" | "mobile" | null>(null);
@@ -122,6 +123,9 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ===== xsytrance identity — the artist behind The Collection ===== */}
+      <XsytranceBand />
+
       {/* ===== SUNO GRATITUDE — up top so nobody has to scroll to find it ===== */}
       <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-6 text-center sm:px-10">
@@ -191,7 +195,11 @@ export default function Page() {
 
       {/* ===== KINETICA — the engine behind the shows ===== */}
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-8 text-center sm:px-10">
+        <div className="relative overflow-hidden rounded-xl border border-white/10 px-6 py-8 text-center sm:px-10">
+          {/* ambient concert backdrop — xsytrance live */}
+          <img src="/brand/rave-club.webp" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover object-center opacity-45" loading="lazy" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#05030b]/80 via-[#05030b]/60 to-[#05030b]/90" />
+          <div className="relative">
           <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">the engine behind the shows</p>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/75">
             Every full show on this shelf is performed live by <a href="https://xsytrance.github.io/kinetica/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Kinetica</a> —
@@ -203,6 +211,7 @@ export default function Page() {
             className="mt-5 inline-block rounded-sm border border-white/20 px-5 py-2.5 font-mono text-xs tracking-[0.2em] text-white/70 transition hover:border-white/60 hover:text-white">
             TRY KINETICA WITH YOUR OWN TRACKS ↗
           </a>
+          </div>
         </div>
       </section>
 
