@@ -191,3 +191,17 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   :7273 (phone pulls via CHECK FOR APP UPDATES). Verified: app compile +
   unit tests green; Playwright against :7272 → header present bare /
   absent under embed=1, wall renders both ways.
+- [x] P6 public edition — FREE tier SHIPPED 2026-07-18 (d6adb00, owner-approved
+  design): **the Case Maker** at public `/covers/make`. The collector engine
+  ported to the browser (`src/lib/collector/webEngine.ts`, faithful twin of
+  engine.mjs; Bebas metrics baked to `bebasWidths.ts`) — canvas composition,
+  fonts embedded in the export SVG, true waveform + runtime decoded from the
+  visitor's audio in-tab (OfflineAudioContext, 96-bucket recipe). FREE doctrine
+  held: zero upload, no account, complete result (2048² PNG). Chrome is
+  PARAMETERIZED — visitor's label/handle/monogram on band/seal/footer (AGENOR
+  chrome stays print-engine-only). Verified via Playwright (form → preview →
+  real downloaded PNG). Keep webEngine.ts in step with engine.mjs on layout
+  changes. Open: P6.2 = KEYED (BYO OpenRouter key, browser-direct, key never
+  touches our servers) + LOCAL (visitor's own ComfyUI, lane roster) behind the
+  same page; discoverability (link from /music?) is an owner call — the page
+  is currently unlinked.

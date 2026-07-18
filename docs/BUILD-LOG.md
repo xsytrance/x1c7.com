@@ -7,6 +7,22 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (VIII) — Cover Studio 2 P6: the Case Maker goes public
+
+The last pillar. `/covers/make` (live on x1c7.com) lets anyone print their
+song as a collector case — the FREE tier of docs/THREE-LEVELS.md, done by the
+book: the whole engine runs **in the visitor's browser** (webEngine.ts, a
+faithful client twin of engine.mjs with baked Bebas metrics), art + audio
+never leave the tab (waveform/runtime via OfflineAudioContext), and the
+output is a real 2048² PNG. The chrome is parameterized — visitor's label,
+handle, monogram — so public prints carry THEIR imprint; AGENOR chrome stays
+exclusive to the print engine. Owner approved design (a: parameterized chrome,
+b: /covers/make + "Case Maker", c: FREE first). P6.2 backlog: KEYED
+(browser-direct OpenRouter) + LOCAL (visitor's ComfyUI). Also fixed on the
+way: who-s-that-snake's /music playback had been 404ing forever — the R2 key
+has a curly apostrophe, the DB URL had a straight one; row fixed, waveform
+backfilled, spine reprinted. **Cover Studio 2: P1–P6 all shipped in one day.**
+
 ## 2026-07-18 (VII) — Spine consistency sweep (#MADETOBREAK joins the shelf)
 
 Owner spotted #MADETOBREAK rendering as a bare fallback strip in the app's
