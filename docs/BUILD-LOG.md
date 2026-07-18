@@ -7,6 +7,23 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (VI) — Spine typography: every title readable (fonts were silently gone)
+
+Owner's screenshot showed some spine titles colliding with the genre block.
+Root cause: the OS reinstall wiped the installed fonts and **librsvg falls
+back silently** — every post-reinstall print rendered in a default sans ~65%
+wider than Bebas Neue (measured: 903px vs 543px for the same string), blowing
+past the layout math. Two fixes in `engine.mjs`: (1) **font self-heal** — the
+repo's `./fonts` install themselves into `~/.local/share/fonts` + `fc-cache`
+whenever fontconfig lost them, so this class of regression can't recur
+silently; (2) **exact fit** — spine title/subtitle/genre sizes are now solved
+with real TTF advance widths (minimal cmap+hmtx reader, verified within 4px
+of rendered ink) instead of a flat per-char guess; genre letter-spacing (8)
+modeled correctly for the first time. Every title now fills its zone fully —
+even the 30-char birthday song — and can never overlap the genre block by
+construction. Reprinted + republished all 68 (shelf, web assets, collector
+PNGs). The 6 `finished/` bespoke covers keep their hand-made spines.
+
 ## 2026-07-18 (V) — Cover Studio 2 P5: the web studio in the app
 
 The phone gets the whole web studio — generate deck, art director, Lexsycon
