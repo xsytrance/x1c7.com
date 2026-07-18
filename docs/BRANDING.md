@@ -4,9 +4,15 @@ How the artist/label identity is expressed across x1c7.com. Deployed
 2026-07-18 (commit `dcb2824`). Three names, one system:
 
 - **x1c7** — the site / hub identity (the owner's creative command hub).
-- **xsytrance** — the music artist name. Mark: the neon **✕**.
-- **AGENOR** — the label / studio ("XSYVERSE Studios"). Mark: the gold "A"
-  emblem. Ethos: *music without borders, vision without limits.*
+- **AGENOR** (all caps) — the **permanent artist name** + studio ("XSYVERSE
+  Studios"). Primary mark: the gold "A" emblem. Ethos: *music without borders,
+  vision without limits.* This is the lead identity.
+- **xsytrance** — the **origin name** (owner has used it since age 12–13) and
+  the **handle everywhere** (Suno/GitHub/socials); kept on the label through
+  the transition. Mark: the neon **✕**. Secondary to AGENOR, not gone.
+
+Hierarchy rule: **AGENOR leads; xsytrance is credited as the origin/handle.**
+See memory `artist-identity-agenor`.
 
 ## The source kit
 
@@ -42,7 +48,7 @@ Then re-archive the source PNGs to the X10 drive (they stay gitignored).
 | Surface | Asset | File |
 |---|---|---|
 | **Favicon** (site-wide) | neon ✕ (authored SVG, elevates x1c7's "x") | `src/app/icon.svg` |
-| **`/music` hero band** | `hero.webp` + `agenor-gold-sm.webp` | `src/components/XsytranceBand.tsx` (placed after the HERO section in `music/page.tsx`) |
+| **`/music` hero band** | `hero.webp` + `agenor-gold-sm.webp` | `src/components/AgenorBand.tsx` — AGENOR leads (gold), xsytrance credited beneath as origin/handle; placed after the HERO section in `music/page.tsx` |
 | **Footer watermark** (site-wide) | `agenor-gold-sm.webp` | `src/components/Footer.tsx` (bottom bar) |
 | **Homepage identity** | `identity-x1c7.webp` (xsy3) | `src/components/IdentityBand.tsx` (between HomeShowcase and Signal) |
 | **`/music` shows backdrop** | `rave-club.webp` | `music/page.tsx` Kinetica section (ambient, opacity-45 under a dark gradient) |

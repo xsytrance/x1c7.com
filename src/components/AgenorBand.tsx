@@ -1,8 +1,9 @@
-// The xsytrance artist signature on /music — the identity behind The Collection.
-// Cinematic hero art (public/brand/hero.webp) under the AGENOR studio mark and
-// the "music without borders" ethos. Presentational; safe in a client page.
+// The AGENOR artist signature on /music — the identity behind The Collection.
+// AGENOR (all caps) is the permanent artist name; xsytrance is where it started
+// (since age 12–13) and is still the handle everywhere. Cinematic hero art
+// (public/brand/hero.webp) under the gold studio mark. Presentational.
 
-export function XsytranceBand() {
+export function AgenorBand() {
   return (
     <section className="relative z-10 mx-auto mb-10 max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="relative overflow-hidden rounded-2xl border border-white/10">
@@ -22,22 +23,12 @@ export function XsytranceBand() {
           {/* studio mark */}
           <div className="flex items-center gap-3">
             <img src="/brand/agenor-gold-sm.webp" alt="AGENOR" className="h-11 w-11 object-contain" loading="lazy" />
-            <div>
-              <span className="block font-display text-sm font-black tracking-[0.3em] text-[#e8c766]">AGENOR</span>
-              <span className="block font-mono text-[9px] uppercase tracking-[0.35em] text-white/45">xsyverse studios</span>
-            </div>
+            <span className="font-mono text-[9px] uppercase tracking-[0.35em] text-white/45">xsyverse studios</span>
           </div>
 
-          {/* wordmark */}
-          <h2 className="font-display text-4xl font-black tracking-[-0.02em] text-white sm:text-6xl">
-            xsy<span className="text-plasma">trance</span>
-            <span
-              aria-hidden
-              className="ml-3 inline-block align-middle text-plasma"
-              style={{ filter: "drop-shadow(0 0 10px rgba(255,61,240,0.7))" }}
-            >
-              ✕
-            </span>
+          {/* artist name — AGENOR leads */}
+          <h2 className="font-display text-5xl font-black tracking-[0.02em] text-[#e8c766] sm:text-7xl" style={{ textShadow: "0 0 30px rgba(232,199,102,0.25)" }}>
+            AGENOR
           </h2>
 
           <p className="max-w-xl text-sm leading-7 text-white/70 sm:text-base">
@@ -45,7 +36,21 @@ export function XsytranceBand() {
             the covers, the collector cases, the live shows.
           </p>
 
-          <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/35">
+          {/* xsytrance — where it started, still the handle */}
+          <div className="flex items-center gap-2.5 font-mono text-[11px] uppercase tracking-[0.2em] text-white/45">
+            <span
+              aria-hidden
+              className="text-plasma"
+              style={{ filter: "drop-shadow(0 0 8px rgba(255,61,240,0.7))" }}
+            >
+              ✕
+            </span>
+            <span>
+              <span className="text-white/70">xsytrance</span> — where it started · still the handle everywhere
+            </span>
+          </div>
+
+          <p className="font-mono text-[10px] uppercase tracking-[0.35em] text-white/30">
             NYC → the world · one world, many sounds
           </p>
         </div>
