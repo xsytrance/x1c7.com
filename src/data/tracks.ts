@@ -109,6 +109,12 @@ const COVER_OVERRIDES: Record<string, { folder: string; name: string }> = {
   "Red Flags From The Beginning": { folder: "covers", name: "Red Flags From The Beginning" },
   "Under the Elevated": { folder: "covers", name: "Under The Elevated" },
   "Veneno Y Miel": { folder: "covers", name: "Veneno Y Miel" },
+  "Nights Drift By (夜が流れて)": { folder: "covers", name: "Nights Drift By" },
+  // Corrected art (2026-07-18) — pinned so each resolves to its own key.
+  "Amor De Verdad": { folder: "covers", name: "Amor De Verdad" },
+  "Membrane Still Insane": { folder: "covers", name: "Membrane Still Insane" },
+  "Push It On Me": { folder: "covers", name: "Push It On Me" },
+  "Who’s That Snake (Funky Slow-Jam Mix)": { folder: "covers", name: "Who's That Snake" },
 };
 
 // Best-effort match a track title to a cover. Explicit overrides win; then an
@@ -153,6 +159,9 @@ const MP3_FILES = [
   // Restored 2026-07-14: both re-aligned from stems on the owner's official
   // lyrics (music-is-my-drug 309w @ 0.134s; one-more-breath 121w @ 0.158s).
   "Music Is My Drug", "One More Breath [Back To Myself]",
+  // New 2026-07-18: Liquid DnB, JP subtitle 夜が流れて (audio 4:19). Cover is a
+  // bespoke finished collector case (finished/ passthrough); pinned above.
+  "Nights Drift By (夜が流れて)",
   "One Tap Away (Riverboat Bad Boys Remix)",
   "One Tap Away", "Oro De La Presión", "Push It On Me", "Red Flags From The Beginning",
   "Say It With Your Eyes", "Still Me_ Still You", "The Big Top Has Wi-Fi", "Under the Elevated",

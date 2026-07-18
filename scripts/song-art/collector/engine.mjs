@@ -12,12 +12,16 @@
 // Usage: node engine.mjs [--only <slug>] [--out <dir>]
 
 import sharp from "sharp";
-import { readFileSync, mkdirSync, existsSync } from "node:fs";
+import { readFileSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ORIG = join(HERE, "originals");
+// Bespoke covers that already carry their own collector-case framing (hand-made
+// in an external tool). If finished/<slug>.png exists it is the final print and
+// is passed through verbatim — never re-framed, so reprint-all is safe.
+const FINISHED = join(HERE, "finished");
 const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
   if (v.startsWith("--")) a.push([v.slice(2), arr[i + 1] && !arr[i + 1].startsWith("--") ? arr[i + 1] : true]); return a;
 }, []));
@@ -387,6 +391,15 @@ const manifest = JSON.parse(readFileSync(join(HERE, "manifest.json"), "utf8"));
 let ok = 0, fail = 0;
 for (const t of manifest) {
   if (args.only && t.slug !== args.only) continue;
+  const finished = join(FINISHED, `${t.slug}.png`);
+  if (existsSync(finished)) {
+    // Normalize to the canonical W×H so bespoke covers slot into the shelf /
+    // spine math like any engine print, whatever size they were authored at.
+    const meta = await sharp(finished).metadata();
+    if (meta.width === W && meta.height === H) copyFileSync(finished, join(OUT, `${t.slug}.png`));
+    else await sharp(finished).resize(W, H, { fit: "cover", position: "centre" }).png({ compressionLevel: 9 }).toFile(join(OUT, `${t.slug}.png`));
+    ok++; console.error(`✔ ${t.slug} (finished passthrough)`); continue;
+  }
   try {
     if (await renderOne(t)) { ok++; console.error(`✔ ${t.slug}`); } else fail++;
   } catch (e) { fail++; console.error(`✘ ${t.slug}: ${e.message}`); }

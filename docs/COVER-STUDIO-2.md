@@ -93,6 +93,12 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   ⚠ Discovered: `collector/originals/` did NOT survive the reinstall —
   no existing cover can reprint until sources are restored (most live in
   assets/art/ + R2 album-art/). Recovery is its own task.
+- [x] `originals/` RESTORED 2026-07-18 from X10 drive backup
+  `PRIME_FINAL_PRE_UBUNTU26_20260710_194034/archives/current-home-priority-preserve.tar`
+  (gitignored dir → in no git bundle; the tar was the only copy). 68 source
+  files synced back (65 png + 3 jpeg, all integrity-checked); Amor De Verdad
+  kept as the 2026-07-18 regen (tar's 6.3MB original staged if ever wanted).
+  Verified: all 67 manifest coverFiles present → reprints unblocked.
 - [ ] P2 web studio + generate deck
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding
