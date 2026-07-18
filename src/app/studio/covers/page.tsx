@@ -48,6 +48,8 @@ export default function CoverStudioPage() {
   const [busy, setBusy] = useState(false);
   const [msg, setMsg] = useState<string | null>(null);
   const [bust, setBust] = useState(0); // cover-image cache-buster after a reprint
+  const [concepts, setConcepts] = useState<{ label: string; prompt: string }[]>([]);
+  const [conceptsBusy, setConceptsBusy] = useState(false);
   const promptTouched = useRef(false);
 
   const loadInventory = useCallback(async () => {
@@ -81,7 +83,17 @@ export default function CoverStudioPage() {
   }, [covers, q]);
 
   function pick(slug: string) {
-    setSel(slug); setMsg(null); promptTouched.current = false; setPrompt("");
+    setSel(slug); setMsg(null); promptTouched.current = false; setPrompt(""); setConcepts([]);
+  }
+
+  async function artDirector() {
+    if (!sel || conceptsBusy) return;
+    setConceptsBusy(true); setConcepts([]); setMsg("the art director is sketching concepts (~30–40s)…");
+    const r = await fetch("/api/studio/concepts", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug: sel, n: 5 }) })
+      .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
+    setConceptsBusy(false);
+    if (r.ok) { setConcepts(r.concepts || []); setMsg(`${r.concepts?.length || 0} concepts — tap one to load it into the prompt`); }
+    else setMsg(`art director: ${r.error || "error"}`);
   }
 
   async function generate() {
@@ -191,6 +203,31 @@ export default function CoverStudioPage() {
                   <textarea value={prompt} onChange={(e) => { promptTouched.current = true; setPrompt(e.target.value); }} rows={3}
                     placeholder="e.g. a serene river winding through a green valley, soft dawn light, no people"
                     className="mt-2 w-full resize-none rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                </div>
+
+                {/* LLM art director — qwen3:14b writes distinct concepts from the song's profile */}
+                <div>
+                  <div className="flex items-center justify-between">
+                    <p className={LABEL}>✦ Art director</p>
+                    <button onClick={artDirector} disabled={conceptsBusy || !!activeJob} className="rounded-full border border-[var(--inst-line)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--inst-dim)] transition hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)] disabled:opacity-40">
+                      {conceptsBusy ? "sketching…" : "get concepts"}
+                    </button>
+                  </div>
+                  <p className={`${HINT} mt-1`}>Local qwen3:14b reads the song and pitches distinct cover ideas. Tap one to load its prompt.</p>
+                  {concepts.length > 0 && (
+                    <div className="mt-2 space-y-1.5">
+                      {concepts.map((c, i) => {
+                        const on = prompt === c.prompt;
+                        return (
+                          <button key={i} onClick={() => { setPrompt(c.prompt); promptTouched.current = true; }}
+                            className={`block w-full rounded-lg border px-3 py-2 text-left transition ${on ? "border-[var(--inst-plasma)] bg-[color-mix(in_srgb,var(--inst-plasma)_8%,transparent)]" : "border-[var(--inst-line)] hover:border-[var(--inst-dim)]"}`}>
+                            <span className="block text-[11px] font-semibold uppercase tracking-wider text-[var(--inst-plasma)]">{c.label}</span>
+                            <span className="mt-0.5 line-clamp-2 block text-[11px] leading-4 text-[var(--inst-faint)]">{c.prompt}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
