@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
-import { readFileSync, writeFileSync, existsSync, statSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, copyFileSync } from "node:fs";
 import { join } from "node:path";
 import { isOwnerRequest } from "@/lib/ownerGate";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
@@ -127,6 +127,7 @@ export async function POST(req: NextRequest) {
     overrides?: Record<string, unknown>;
     track?: Record<string, unknown> & { theme?: Record<string, unknown> | null };
     render?: boolean;
+    applyCandidate?: string; // Cover Studio 2: promote a generated candidate to originals/ (implies render)
   };
   try { b = await req.json(); } catch { return NextResponse.json({ error: "bad JSON" }, { status: 400 }); }
   const slug = b.slug || "";
@@ -181,6 +182,32 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    let applied = false;
+    if (b.applyCandidate) {
+      if (!rec) return NextResponse.json({ error: "no collector record for this slug — onboard it first" }, { status: 404 });
+      const url = String(b.applyCandidate);
+      // only accept candidates this studio generated — no arbitrary-URL fetches
+      if (!url.startsWith(`${PUB}/covers/candidates/${slug}/`)) {
+        return NextResponse.json({ error: "applyCandidate must be one of this slug's covers/candidates URLs" }, { status: 400 });
+      }
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`candidate fetch ${res.status}`);
+      const sharp = (await import("sharp")).default;
+      const png = await sharp(Buffer.from(await res.arrayBuffer())).png().toBuffer();
+      const coverFile = (rec.coverFile as string) || `${(rec.title as string) ?? slug}.png`;
+      const orig = join(COLLECTOR, "originals", coverFile);
+      mkdirSync(join(COLLECTOR, "originals"), { recursive: true }); // reinstall may have taken the dir
+      if (existsSync(orig)) { // applies are undoable — the replaced original is kept
+        const prevDir = join(COLLECTOR, "originals", ".prev");
+        mkdirSync(prevDir, { recursive: true });
+        copyFileSync(orig, join(prevDir, `${Date.now()}-${coverFile}`));
+      }
+      writeFileSync(orig, png);
+      if (!rec.coverFile) { rec.coverFile = coverFile; manifestDirty = true; }
+      applied = true;
+      b.render = true; // a new original always reprints the case
+    }
+
     let rendered = false;
     if (b.render) {
       if (!rec) return NextResponse.json({ error: "no collector record for this slug — onboard it first" }, { status: 404 });
@@ -198,7 +225,7 @@ export async function POST(req: NextRequest) {
       .maybeSingle();
     const webKeys = new Set((await listObjects(`covers/web/${slug}-`)).map((o) => o.key));
     const cover = coverItem((track as Record<string, unknown>) ?? { id: slug, title: rec?.title ?? slug }, rec, webKeys);
-    return NextResponse.json({ ok: true, rendered, cover });
+    return NextResponse.json({ ok: true, rendered, applied, cover });
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message.slice(0, 200) }, { status: 500 });
   }

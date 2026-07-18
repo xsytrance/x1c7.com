@@ -51,6 +51,39 @@ const seedOf = (s) => { let h = 2166136261; for (let i = 0; i < s.length; i++) {
 const HOUSE_STYLE = "cinematic still, moody atmospheric lighting, film grain, shallow depth of field, no text, no watermark, no people";
 const HOUSE_NEG = "person, people, face, faces, portrait, man, woman, body, hands, fingers, text, words, letters, watermark, logo, signature, cartoon, anime, low quality, blurry";
 
+// ── Cover lanes (Cover Studio 2) — album-cover recipes on the Atelier's
+// checkpoints. 1024², text-free (the collector bakes typography), people
+// allowed (unlike planet art). Lane ids are the app/site contract.
+const COVER_NEG = "text, words, letters, typography, watermark, logo, signature, low quality, blurry, deformed, extra fingers";
+const COVER_LANES = {
+  photo: { ckpt: "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors", lora: "sdxl_lightning_8step_lora.safetensors", steps: 8, cfg: 1.5, sampler: "euler", scheduler: "sgm_uniform",
+    dress: (p) => `${p}. Cinematic album cover photograph, anamorphic lens, dramatic lighting, photorealistic, color graded, iconic composition` },
+  paint: { ckpt: "DreamShaperXL_Turbo_v2_1.safetensors", steps: 7, cfg: 2, sampler: "dpmpp_sde", scheduler: "karras",
+    dress: (p) => `${p}. Painterly album cover art, rich brushwork, dramatic light, gallery quality, iconic composition` },
+  poster: { ckpt: CKPT, steps: 4, cfg: 1, sampler: "euler_ancestral", scheduler: "normal",
+    dress: (p) => `${p}. Bold graphic album cover, poster design language, strong shapes, limited palette, high contrast, iconic composition` },
+  anime: { ckpt: "animagine-xl-4.0-opt.safetensors", lora: "sdxl_lightning_8step_lora.safetensors", steps: 8, cfg: 1.5, sampler: "euler", scheduler: "sgm_uniform",
+    negative: "lowres, bad anatomy, bad hands, text, error, missing fingers, cropped, worst quality, low quality, jpeg artifacts, signature, watermark, username, blurry",
+    dress: (p) => `${p}, masterpiece, high score, anime illustration album cover, cinematic lighting, detailed background` },
+};
+function coverGraph(lane, prompt, seed) {
+  const g = { "1": { class_type: "CheckpointLoaderSimple", inputs: { ckpt_name: lane.ckpt } } };
+  let model = ["1", 0], clip = ["1", 1];
+  if (lane.lora) {
+    g["L"] = { class_type: "LoraLoader", inputs: { model, clip, lora_name: lane.lora, strength_model: 1, strength_clip: 1 } };
+    model = ["L", 0]; clip = ["L", 1];
+  }
+  Object.assign(g, {
+    "2": { class_type: "CLIPTextEncode", inputs: { clip, text: prompt } },
+    "3": { class_type: "CLIPTextEncode", inputs: { clip, text: lane.negative || COVER_NEG } },
+    "4": { class_type: "EmptyLatentImage", inputs: { width: 1024, height: 1024, batch_size: 1 } },
+    "5": { class_type: "KSampler", inputs: { model, positive: ["2", 0], negative: ["3", 0], latent_image: ["4", 0], seed, steps: lane.steps, cfg: lane.cfg, sampler_name: lane.sampler, scheduler: lane.scheduler, denoise: 1.0 } },
+    "6": { class_type: "VAEDecode", inputs: { samples: ["5", 0], vae: ["1", 2] } },
+    "7": { class_type: "SaveImage", inputs: { images: ["6", 0], filename_prefix: "coverstudio" } },
+  });
+  return g;
+}
+
 // ── ComfyUI txt2img (the amor-generate graph: 4 steps, cfg 1.0) ─────────────
 function graph(prompt, negative, seed) {
   return {
@@ -63,8 +96,8 @@ function graph(prompt, negative, seed) {
     "7": { class_type: "SaveImage", inputs: { images: ["6", 0], filename_prefix: "studio" } },
   };
 }
-async function comfyGenerate(prompt, negative, seed) {
-  const q = await fetch(`${HOST}/prompt`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt: graph(prompt, negative, seed) }) });
+async function comfyGenerate(prompt, negative, seed, prebuilt) {
+  const q = await fetch(`${HOST}/prompt`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ prompt: prebuilt || graph(prompt, negative, seed) }) });
   if (!q.ok) throw new Error(`comfy queue ${q.status}: ${(await q.text().catch(() => "")).slice(0, 120)}`);
   const { prompt_id } = await q.json();
   for (let i = 0; i < 300; i++) {
@@ -165,6 +198,25 @@ async function processJob(job) {
         work.push({ file: `planets/${job.slug}/gallery/${key}-${num}.webp`, prompt: `${it.scene}, ${style}`, seed: (baseSeed + 104729 * num) >>> 0, galleryKey: key });
       }
     }
+  } else if (job.kind === "cover-gen") {
+    // Cover Studio 2: N album-cover candidates → R2 covers/candidates/<slug>/.
+    // Prompt = payload.prompt, or seeded from the planet analysis.
+    const lane = COVER_LANES[p.lane] || COVER_LANES.photo;
+    const a = planet?.analysis ?? {};
+    const seedText = p.prompt || [
+      `album cover artwork for "${(a.title || job.slug).toString().replace(/-/g, " ")}"`,
+      a.summary, planet?.styleHint,
+      a.overallMood ? `mood: ${a.overallMood}` : "",
+      (a.themes || []).length ? `themes: ${a.themes.join(", ")}` : "",
+    ].filter(Boolean).join(". ");
+    const count = Math.max(1, Math.min(8, Number(p.n) || 4));
+    for (let i = 1; i <= count; i++) {
+      const baseSeed = typeof p.seed === "number" ? p.seed : seedOf(`${job.slug}|cover|${p.lane || "photo"}`);
+      work.push({
+        file: `covers/candidates/${job.slug}/${job.id.slice(0, 8)}-${i}.webp`,
+        prompt: lane.dress(seedText), seed: (baseSeed + 104729 * i) >>> 0, coverLane: lane,
+      });
+    }
   } else {
     throw new Error(`unknown kind ${job.kind}`);
   }
@@ -175,8 +227,8 @@ async function processJob(job) {
     if (i < n) continue; // resumed job — earlier images already landed
     if (await cancelled(job.id)) { log(`  ⏹ cancelled at ${n}/${work.length}`); return; }
     const w = work[i];
-    const buf = await comfyGenerate(w.prompt, negative, w.seed);
-    const webp = await sharp(buf).webp({ quality: 82 }).toBuffer();
+    const buf = await comfyGenerate(w.prompt, negative, w.seed, w.coverLane ? coverGraph(w.coverLane, w.prompt, w.seed) : undefined);
+    const webp = await sharp(buf).webp({ quality: w.coverLane ? 90 : 82 }).toBuffer();
     await r2put(w.file, webp, "image/webp");
 
     if (w.galleryKey) {

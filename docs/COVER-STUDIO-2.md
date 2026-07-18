@@ -57,7 +57,16 @@ save-&-print already work end to end. Cover Studio 2 adds:
 ## Status log
 - [x] Plan reconstructed (Explore agent over repo + surviving transcripts),
   confirmed by owner (all four pillars), memory saved (cover-art-studio.md)
-- [ ] P1 generation backbone
+- [x] P1 generation backbone — VERIFIED end-to-end 2026-07-18: cover-gen
+  kind (route + art_jobs constraint migration `art_jobs_allow_cover_gen`) →
+  worker renders lane recipes (photo/paint/poster/anime, 1024², analysis-
+  seeded prompts) → R2 covers/candidates/<slug>/ → covers route
+  `applyCandidate` promotes to originals/ (with .prev/ undo backup) +
+  reprints + publishes. Test print: amor-de-verdad paint-lane candidate
+  through the full loop.
+  ⚠ Discovered: `collector/originals/` did NOT survive the reinstall —
+  no existing cover can reprint until sources are restored (most live in
+  assets/art/ + R2 album-art/). Recovery is its own task.
 - [ ] P2 web studio + generate deck
 - [ ] P3 soundcloud job
 - [ ] P4 onboarding

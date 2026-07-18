@@ -17,6 +17,9 @@ export const runtime = "nodejs";
 //   regenerate-base { targets:[{key,kind:"keyword"|"section",scene}], style?, negative?, twins? }
 //   topup           { keys:[…], perKey, style?, negative? }
 //   oneoff          { prompt, key?, n, style?, negative?, seed? }
+//   cover-gen       { prompt?, lane?: photo|paint|poster|anime, n?, seed? }
+//                   → covers/candidates/<slug>/ (Cover Studio 2; prompt
+//                     defaults to a planet-analysis seed, built worker-side)
 // ═══════════════════════════════════════════════════════════════════════════
 
 const MAX_IMAGES = 24;
@@ -28,7 +31,10 @@ interface Payload {
   keys?: string[]; perKey?: number;
   prompt?: string; key?: string; n?: number; seed?: number;
   style?: string; negative?: string;
+  lane?: string;
 }
+
+const COVER_LANES = ["photo", "paint", "poster", "anime"];
 
 function validate(kind: string, p: Payload): { total: number } | { error: string } {
   const tooLong = (s?: string) => s && s.length > MAX_PROMPT;
@@ -50,6 +56,12 @@ function validate(kind: string, p: Payload): { total: number } | { error: string
   if (kind === "oneoff") {
     if (!p.prompt) return { error: "prompt required" };
     const n = Math.max(1, Math.min(12, Number(p.n) || 4));
+    p.n = n;
+    return { total: n };
+  }
+  if (kind === "cover-gen") {
+    if (p.lane && !COVER_LANES.includes(p.lane)) return { error: `lane must be one of ${COVER_LANES.join("|")}` };
+    const n = Math.max(1, Math.min(8, Number(p.n) || 4));
     p.n = n;
     return { total: n };
   }
