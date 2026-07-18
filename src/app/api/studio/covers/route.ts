@@ -1,13 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
-import { execFile } from "node:child_process";
-import { promisify } from "node:util";
-import { readFileSync, writeFileSync, existsSync, statSync, mkdirSync, copyFileSync } from "node:fs";
+import { existsSync, mkdirSync, copyFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { isOwnerRequest } from "@/lib/ownerGate";
 import { supabaseAdmin } from "@/lib/supabaseAdmin";
 import { listObjects, PUB } from "@/lib/feed/r2";
 import { SLUG_RE } from "@/lib/studio/shared";
 import { COLLECTOR_PALETTES, classifyCollector } from "@/lib/studio/collectorPalettes";
+import { COLLECTOR, readManifest, writeManifest, renderAndPublish, type ManifestRecord } from "@/lib/studio/collectorPrint";
 
 export const runtime = "nodejs";
 export const maxDuration = 120;
@@ -31,12 +30,6 @@ export const maxDuration = 120;
 //                   spine}.webp to R2. renderedAt is the cache-buster.
 // ═══════════════════════════════════════════════════════════════════════════
 
-const exec = promisify(execFile);
-const COLLECTOR = join(process.cwd(), "scripts", "song-art", "collector");
-const MANIFEST = join(COLLECTOR, "manifest.json");
-
-type ManifestRecord = Record<string, unknown> & { slug: string };
-
 // Only these keys may be patched from outside; everything else in a record
 // (peaks, coverFile, bpm, runtime…) is produced by build-manifest.mjs.
 const OVERRIDE_KEYS = [
@@ -44,10 +37,6 @@ const OVERRIDE_KEYS = [
   "explicit", "unreleased", "artTopCrop", "rooklyn", "instrumental",
 ] as const;
 const TRACK_KEYS = ["title", "artist", "genre", "mood", "color"] as const;
-
-const readManifest = (): ManifestRecord[] => JSON.parse(readFileSync(MANIFEST, "utf8"));
-// 1-space indent — the file's existing format, keeps git diffs honest.
-const writeManifest = (m: ManifestRecord[]) => writeFileSync(MANIFEST, JSON.stringify(m, null, 1) + "\n");
 
 function coverItem(track: Record<string, unknown>, rec: ManifestRecord | undefined, webKeys: Set<string>) {
   const slug = String(track.id);
@@ -104,20 +93,6 @@ export async function GET(req: NextRequest) {
   } catch (e) {
     return NextResponse.json({ error: (e as Error).message.slice(0, 200) }, { status: 500 });
   }
-}
-
-async function renderAndPublish(slug: string): Promise<string> {
-  const out = join(COLLECTOR, "out", `${slug}.png`);
-  const before = existsSync(out) ? statSync(out).mtimeMs : 0;
-  await exec("node", ["engine.mjs", "--only", slug], { cwd: COLLECTOR, timeout: 60_000 });
-  if (!existsSync(out) || statSync(out).mtimeMs <= before) {
-    throw new Error("engine produced no cover (missing original art?)");
-  }
-  // Uploads run in spawned plain node — Next's patched fetch drops
-  // Content-Length on binary PUTs and R2 answers 411.
-  await exec("node", ["make-web-assets.mjs", "--only", slug], { cwd: COLLECTOR, timeout: 60_000 });
-  await exec("node", ["publish-one.mjs", slug], { cwd: COLLECTOR, timeout: 60_000 });
-  return new Date().toISOString();
 }
 
 export async function POST(req: NextRequest) {

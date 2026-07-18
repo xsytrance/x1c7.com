@@ -74,6 +74,14 @@ export default function CoverStudioPage() {
   const [scMsg, setScMsg] = useState<string | null>(null);
   const scActiveRef = useRef(false);
   const selScActiveRef = useRef(false);
+  // onboard form (P4)
+  const [onboard, setOnboard] = useState(false);
+  const [ob, setOb] = useState({ title: "", slug: "", genre: "", mood: "", lang: "", geo: "", bpm: "", explicit: false, unreleased: false, publish: false });
+  const [obArt, setObArt] = useState<File | null>(null);
+  const [obAudio, setObAudio] = useState<File | null>(null);
+  const [obBusy, setObBusy] = useState(false);
+  const [obMsg, setObMsg] = useState<string | null>(null);
+  const obSlugTouched = useRef(false);
 
   const loadInventory = useCallback(async () => {
     const d = await fetch("/api/studio/covers").then((r) => r.json()).catch(() => null);
@@ -136,9 +144,42 @@ export default function CoverStudioPage() {
   }, [covers, q]);
 
   function pick(slug: string) {
-    setSel(slug); setMsg(null); promptTouched.current = false; setPrompt(""); setConcepts([]); setLexIdeas([]);
+    setSel(slug); setMsg(null); setOnboard(false); promptTouched.current = false; setPrompt(""); setConcepts([]); setLexIdeas([]);
     const rec = covers.find((c) => c.slug === slug)?.record || null;
     setEdPalette(rec?.palette || "auto"); setEdSpine(rec?.spine || ""); setEdExplicit(!!rec?.explicit);
+  }
+
+  const slugify = (s: string) =>
+    s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+  const genres = useMemo(() => [...new Set(covers.map((c) => c.genre).filter(Boolean))].sort() as string[], [covers]);
+
+  const hasObArt = !!obArt && obArt.size > 0;
+  const hasObAudio = !!obAudio && obAudio.size > 0;
+
+  async function submitOnboard() {
+    if (obBusy || !ob.title.trim()) return;
+    setObBusy(true); setObMsg(hasObArt ? "onboarding + first print (engine → R2)…" : "onboarding…");
+    const fd = new FormData();
+    fd.set("title", ob.title.trim());
+    fd.set("slug", ob.slug || slugify(ob.title));
+    for (const k of ["genre", "mood", "lang", "geo", "bpm"] as const) if (ob[k].trim()) fd.set(k, ob[k].trim());
+    if (ob.explicit) fd.set("explicit", "1");
+    if (ob.unreleased) fd.set("unreleased", "1");
+    if (ob.publish) fd.set("publish", "1");
+    if (obArt) fd.set("art", obArt);
+    if (obAudio) fd.set("audio", obAudio);
+    const r = await fetch("/api/studio/onboard", { method: "POST", body: fd })
+      .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
+    setObBusy(false);
+    if (r.ok) {
+      setOnboard(false);
+      setOb({ title: "", slug: "", genre: "", mood: "", lang: "", geo: "", bpm: "", explicit: false, unreleased: false, publish: false });
+      setObArt(null); setObAudio(null); obSlugTouched.current = false;
+      await loadInventory();
+      pick(r.slug);
+      setBust(Date.now());
+      setMsg(`✓ onboarded${r.rendered ? " + case printed" : " — generate art in the deck, then apply"}${r.published ? " + live on /music" : ""}`);
+    } else setObMsg(`onboard failed: ${r.error || "error"}`);
   }
 
   async function saveEdits() {
@@ -238,6 +279,10 @@ export default function CoverStudioPage() {
             <input value={q} onChange={(e) => setQ(e.target.value)} placeholder="search title · genre · slug"
               className="w-full rounded-full border border-[var(--inst-line)] bg-[var(--inst-s1)] px-4 py-2 font-mono text-sm text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
             <span className={`${HINT} whitespace-nowrap`}>{list.length} covers</span>
+            <button onClick={() => { setOnboard(true); setSel(null); setObMsg(null); }}
+              className="whitespace-nowrap rounded-full border border-[var(--inst-line)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.15em] text-[var(--inst-dim)] transition hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)]">
+              + Onboard
+            </button>
           </div>
           {!loaded ? <p className={HINT}>loading inventory…</p> : list.length === 0 ? <p className={HINT}>no covers match.</p> : (
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 xl:grid-cols-4">
@@ -265,7 +310,80 @@ export default function CoverStudioPage() {
 
         {/* ── DECK ── */}
         <aside className="lg:sticky lg:top-16 lg:h-fit">
-          {!selCover ? (
+          {onboard ? (
+            /* ── ONBOARD (P4) — a new track becomes a collector citizen ── */
+            <div className={`${CARD} space-y-3`}>
+              <div className="flex items-center justify-between">
+                <p className={LABEL}>Onboard a track</p>
+                <button onClick={() => setOnboard(false)} className={`${HINT} hover:text-[var(--inst-ink)]`}>✕ close</button>
+              </div>
+              <div>
+                <p className={HINT}>Title</p>
+                <input value={ob.title}
+                  onChange={(e) => setOb((o) => ({ ...o, title: e.target.value, slug: obSlugTouched.current ? o.slug : slugify(e.target.value) }))}
+                  placeholder="Nights Drift By (夜が流れて)"
+                  className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+              </div>
+              <div>
+                <p className={HINT}>Slug <span className="text-[var(--inst-faint)]">(the id everywhere — R2, Supabase, manifest)</span></p>
+                <input value={ob.slug} onChange={(e) => { obSlugTouched.current = true; setOb((o) => ({ ...o, slug: e.target.value })); }}
+                  className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <p className={HINT}>Genre <span className="text-[var(--inst-faint)]">(drives the spine)</span></p>
+                  <input value={ob.genre} onChange={(e) => setOb((o) => ({ ...o, genre: e.target.value }))} list="ob-genres" placeholder="Liquid DnB"
+                    className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                  <datalist id="ob-genres">{genres.map((g) => <option key={g} value={g} />)}</datalist>
+                </div>
+                <div>
+                  <p className={HINT}>Mood</p>
+                  <input value={ob.mood} onChange={(e) => setOb((o) => ({ ...o, mood: e.target.value }))} placeholder="Nocturnal"
+                    className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                </div>
+                <div>
+                  <p className={HINT}>Lang</p>
+                  <input value={ob.lang} onChange={(e) => setOb((o) => ({ ...o, lang: e.target.value }))} placeholder="EN/JP"
+                    className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                </div>
+                <div>
+                  <p className={HINT}>BPM <span className="text-[var(--inst-faint)]">(only you know it)</span></p>
+                  <input value={ob.bpm} onChange={(e) => setOb((o) => ({ ...o, bpm: e.target.value }))} inputMode="numeric" placeholder="174"
+                    className="mt-1 w-full rounded-lg border border-[var(--inst-line)] bg-[var(--inst-s1)] px-3 py-2 font-mono text-xs text-[var(--inst-ink)] placeholder:text-[var(--inst-faint)] focus:border-[var(--inst-plasma)] focus:outline-none" />
+                </div>
+              </div>
+              <div className="flex gap-4">
+                <label className="flex items-center gap-2 text-xs text-[var(--inst-dim)]">
+                  <input type="checkbox" checked={ob.explicit} onChange={(e) => setOb((o) => ({ ...o, explicit: e.target.checked }))} className="accent-[var(--inst-plasma)]" />
+                  explicit
+                </label>
+                <label className="flex items-center gap-2 text-xs text-[var(--inst-dim)]">
+                  <input type="checkbox" checked={ob.unreleased} onChange={(e) => setOb((o) => ({ ...o, unreleased: e.target.checked }))} className="accent-[var(--inst-plasma)]" />
+                  unreleased
+                </label>
+              </div>
+              <div>
+                <p className={HINT}>Art <span className="text-[var(--inst-faint)]">(optional — skip and generate in the deck after)</span></p>
+                <input type="file" accept="image/*" onChange={(e) => setObArt(e.target.files?.[0] || null)}
+                  className="mt-1 w-full text-xs text-[var(--inst-dim)] file:mr-3 file:rounded-full file:border file:border-[var(--inst-line)] file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-[var(--inst-dim)]" />
+              </div>
+              <div>
+                <p className={HINT}>Audio MP3 <span className="text-[var(--inst-faint)]">(optional — runtime + waveform come from it)</span></p>
+                <input type="file" accept="audio/mpeg,.mp3" onChange={(e) => setObAudio(e.target.files?.[0] || null)}
+                  className="mt-1 w-full text-xs text-[var(--inst-dim)] file:mr-3 file:rounded-full file:border file:border-[var(--inst-line)] file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-[var(--inst-dim)]" />
+              </div>
+              <label className={`flex items-center gap-2 text-xs ${hasObArt && hasObAudio ? "text-[var(--inst-dim)]" : "text-[var(--inst-faint)]"}`}>
+                <input type="checkbox" checked={ob.publish} disabled={!hasObArt || !hasObAudio}
+                  onChange={(e) => setOb((o) => ({ ...o, publish: e.target.checked }))} className="accent-[var(--inst-plasma)]" />
+                publish on /music now {(!hasObArt || !hasObAudio) && "(needs art + audio)"}
+              </label>
+              <button onClick={submitOnboard} disabled={obBusy || !ob.title.trim()} className={`${BTN} w-full`}>
+                {obBusy ? "onboarding…" : hasObArt ? "Onboard & print" : "Onboard"}
+              </button>
+              {obMsg && <p className={HINT}>{obMsg}</p>}
+              <p className={HINT}>Creates the collector manifest record{hasObArt ? ", prints + publishes the case" : ""}{hasObAudio ? ", publishes the MP3" : ""}{ob.publish ? ", and inserts the /music row" : "."}</p>
+            </div>
+          ) : !selCover ? (
             <div className="space-y-4">
               <div className={`${CARD} grid min-h-[140px] place-items-center text-center`}>
                 <div>

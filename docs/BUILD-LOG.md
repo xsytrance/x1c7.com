@@ -7,6 +7,23 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (IV) — Cover Studio 2 P4: onboard a track from the studio
+
+A brand-new song becomes a collector citizen in one request instead of the
+six-step manual ritual. `POST /api/studio/onboard` (owner-gated, multipart):
+manifest record from the form facts, optional art → `originals/` + first print
+through the shared print path, optional MP3 → runtime + true waveform peaks
+(ffmpeg, the build-manifest recipe) + R2 `music/`, optional publish → the
+Supabase `tracks` row (sort_order max+1, palette-accent color). Collisions
+409. The engine/print plumbing was extracted to `src/lib/studio/
+collectorPrint.ts` (covers route now imports it); `collector/upload-file.mjs`
+is the generic plain-node R2 uploader (Next fetch drops Content-Length on
+binary PUTs). UI: `+ Onboard` by the wall search — art-less onboarding is
+first-class since the GENERATE deck + applyCandidate finish the job. Verified
+with a throwaway track end-to-end (print + 4 R2 artifacts + wall + dup-409),
+then removed without trace; /music untouched. Detail:
+[`COVER-STUDIO-2.md`](./COVER-STUDIO-2.md).
+
 ## 2026-07-18 (III) — Cover Studio 2 P3: SoundCloud sync as a studio job
 
 The Playwright cover-swapper (`soundcloud-covers.mjs`) is now a studio citizen.

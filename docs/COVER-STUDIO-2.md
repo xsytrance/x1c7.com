@@ -163,5 +163,20 @@ Levels per docs/THREE-LEVELS.md (FREE/KEYED/LOCAL):
   → done 1/1 + 1600px JPEG, 404 cover → item-level fail. ⚠ The saved SC
   profile's session died with the reinstall — run
   `node scripts/song-art/soundcloud-covers.mjs --login` once, then scan.
-- [ ] P4 onboarding
+- [x] P4 onboarding — SHIPPED 2026-07-18. New owner-gated
+  `POST /api/studio/onboard` (multipart): title (+auto slug) + genre/mood/
+  lang/geo/bpm/explicit/unreleased, optional art file → `originals/` + first
+  print, optional MP3 → `collector/audio/` + runtime/peaks (build-manifest
+  recipe, ffmpeg) + R2 `music/`, optional publish=1 (needs art+audio) →
+  Supabase row (artist xsytrance, color from the genre palette accent,
+  sort_order max+1, hidden=false). Collision-checked against manifest +
+  tracks. The print path (`renderAndPublish` + manifest IO) moved to shared
+  `src/lib/studio/collectorPrint.ts` (covers route refactored onto it); new
+  generic `collector/upload-file.mjs` for binary R2 PUTs from plain node.
+  Studio UI: `+ Onboard` button by the wall search → form in the deck
+  (art-less onboarding supported — generate in the deck after, applyCandidate
+  already backfills coverFile). Verified end-to-end with a throwaway track
+  (art+audio, publish off): record + 96 peaks + 0:03 runtime + first print +
+  all 4 R2 artifacts 200, wall listing, duplicate → 409; test then fully
+  removed (manifest, local files, R2). Nothing touched /music.
 - [ ] P5 app embed
