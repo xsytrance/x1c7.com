@@ -166,7 +166,13 @@ async function processJob(job) {
   log(`▶ art ${job.id.slice(0, 8)} · ${job.slug} · ${job.kind} · ${job.total} image(s)`);
   await sb.from("art_jobs").update({ status: "running", updated_at: new Date().toISOString() }).eq("id", job.id);
   const p = job.payload || {};
-  const row = await getRow(job.slug);
+  // cover-gen works for any cover (incl. collector-only tracks with no Supabase
+  // row) — it seeds from the prompt or the slug, not the planet. Planet-art
+  // kinds still require the row.
+  const row = await getRow(job.slug).catch((e) => {
+    if (job.kind === "cover-gen") return {};
+    throw e;
+  });
   const planet = row.planet_draft ?? row.planet ?? {};
   const style = p.style || planet.styleHint || HOUSE_STYLE;
   const negative = p.negative || HOUSE_NEG;
