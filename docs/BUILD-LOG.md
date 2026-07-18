@@ -7,6 +7,24 @@ what changed, why, how it was verified. The full forward plan lives in
 
 ---
 
+## 2026-07-18 (VII) — Spine consistency sweep (#MADETOBREAK joins the shelf)
+
+Owner spotted #MADETOBREAK rendering as a bare fallback strip in the app's
+shelf. It had a /music row but no collector record — never printed. Fixes:
+**adopt-onboarding** (`/api/studio/onboard` now accepts an existing tracks row
+with no record instead of 409ing) → #MADETOBREAK onboarded with its real album
+art + MP3 (3:52, 96-bucket waveform), **artist credit** in the engine footer is
+fact-driven (`t.artist`, default xsytrance — the case reads AGENOR / Tyler
+Haze), new **`backfill-facts.mjs`** repaired 12 records whose peaks/runtime
+were lost in the post-reinstall manifest rebuild (bpm from stems.json where it
+exists), and a `fmtTime` rounding bug that printed "4:60" was fixed in all
+three copies. Reprinted + republished 69 cases. App v0.8.1: the SPINES shelf
+shows **printed cases only** (unprinted/hidden tracks live in ISSUES, not as
+gradient impostors). Honestly still open: 13 unreleased collector-only tracks
+have no audio on file (no waveform until their MP3s appear — feed them to
+`backfill-facts.mjs`), who-s-that-snake's audio_url 404s, and 13 spines have
+no LANG/GEO because none was ever curated (facts-only law).
+
 ## 2026-07-18 (VI) — Spine typography: every title readable (fonts were silently gone)
 
 Owner's screenshot showed some spine titles colliding with the genre block.
