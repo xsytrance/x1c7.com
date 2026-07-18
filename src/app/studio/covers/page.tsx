@@ -52,6 +52,8 @@ export default function CoverStudioPage() {
   const [bust, setBust] = useState(0); // cover-image cache-buster after a reprint
   const [concepts, setConcepts] = useState<{ label: string; prompt: string }[]>([]);
   const [conceptsBusy, setConceptsBusy] = useState(false);
+  const [lexIdeas, setLexIdeas] = useState<{ word: string; prompt: string; emotion?: string; line?: string; image?: string }[]>([]);
+  const [lexBusy, setLexBusy] = useState(false);
   const [edPalette, setEdPalette] = useState("auto");
   const [edSpine, setEdSpine] = useState("");
   const [edExplicit, setEdExplicit] = useState(false);
@@ -88,7 +90,7 @@ export default function CoverStudioPage() {
   }, [covers, q]);
 
   function pick(slug: string) {
-    setSel(slug); setMsg(null); promptTouched.current = false; setPrompt(""); setConcepts([]);
+    setSel(slug); setMsg(null); promptTouched.current = false; setPrompt(""); setConcepts([]); setLexIdeas([]);
     const rec = covers.find((c) => c.slug === slug)?.record || null;
     setEdPalette(rec?.palette || "auto"); setEdSpine(rec?.spine || ""); setEdExplicit(!!rec?.explicit);
   }
@@ -116,6 +118,16 @@ export default function CoverStudioPage() {
     setConceptsBusy(false);
     if (r.ok) { setConcepts(r.concepts || []); setMsg(`${r.concepts?.length || 0} concepts — tap one to load it into the prompt`); }
     else setMsg(`art director: ${r.error || "error"}`);
+  }
+
+  async function lexiconIdeas() {
+    if (!sel || lexBusy) return;
+    setLexBusy(true); setLexIdeas([]); setMsg("pulling ideas from the song's lexicon…");
+    const r = await fetch("/api/studio/lexicon-ideas", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ slug: sel }) })
+      .then((res) => res.json().then((d) => ({ ok: res.ok, ...d }))).catch(() => ({ ok: false, error: "network" }));
+    setLexBusy(false);
+    if (r.ok) { setLexIdeas(r.ideas || []); setMsg(`${r.ideas?.length || 0} lexicon ideas — tap a word to load its prompt`); }
+    else setMsg(`lexicon: ${r.error || "error"}`);
   }
 
   async function generate() {
@@ -251,6 +263,34 @@ export default function CoverStudioPage() {
                     </div>
                   )}
                 </div>
+                {/* lexicon idea deck — the song's heavy words → their sense imagery + the painting the lexicon already made */}
+                <div>
+                  <div className="flex items-center justify-between">
+                    <p className={LABEL}>◆ From the lexicon</p>
+                    <button onClick={lexiconIdeas} disabled={lexBusy || !!activeJob} className="rounded-full border border-[var(--inst-line)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--inst-dim)] transition hover:border-[var(--inst-plasma)] hover:text-[var(--inst-plasma)] disabled:opacity-40">
+                      {lexBusy ? "pulling…" : "get ideas"}
+                    </button>
+                  </div>
+                  <p className={`${HINT} mt-1`}>The song&apos;s heavy words, the lyric that summoned each, and the art the lexicon already painted. Tap a word to load its prompt.</p>
+                  {lexIdeas.length > 0 && (
+                    <div className="mt-2 grid grid-cols-2 gap-2">
+                      {lexIdeas.map((x, i) => {
+                        const on = prompt === x.prompt;
+                        return (
+                          <button key={i} onClick={() => { setPrompt(x.prompt); promptTouched.current = true; }}
+                            className={`flex gap-2 rounded-lg border p-1.5 text-left transition ${on ? "border-[var(--inst-plasma)] bg-[color-mix(in_srgb,var(--inst-plasma)_8%,transparent)]" : "border-[var(--inst-line)] hover:border-[var(--inst-dim)]"}`}>
+                            {x.image ? <img src={x.image} alt="" loading="lazy" className="h-10 w-10 shrink-0 rounded object-cover" /> : <span className="grid h-10 w-10 shrink-0 place-items-center rounded bg-[var(--inst-s1)] text-[8px] text-[var(--inst-faint)]">—</span>}
+                            <span className="min-w-0">
+                              <span className="block truncate text-[11px] font-semibold uppercase tracking-wider text-[var(--inst-plasma)]">{x.word}</span>
+                              <span className="line-clamp-2 block text-[10px] leading-3 text-[var(--inst-faint)]">{x.line ? `“${x.line}”` : x.emotion || x.prompt}</span>
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className={LABEL}>Count</span>
