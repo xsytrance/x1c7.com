@@ -74,6 +74,10 @@ export default function CoverStudioPage() {
   const [scMsg, setScMsg] = useState<string | null>(null);
   const scActiveRef = useRef(false);
   const selScActiveRef = useRef(false);
+  // ?embed=1 — the Planet Studio WebView (P5): the app brings its own chrome,
+  // so the site header (and its exit link, which would hijack the WebView) hides
+  const [embed, setEmbed] = useState(false);
+  useEffect(() => { setEmbed(new URLSearchParams(window.location.search).get("embed") === "1"); }, []);
   // onboard form (P4)
   const [onboard, setOnboard] = useState(false);
   const [ob, setOb] = useState({ title: "", slug: "", genre: "", mood: "", lang: "", geo: "", bpm: "", explicit: false, unreleased: false, publish: false });
@@ -263,14 +267,16 @@ export default function CoverStudioPage() {
 
   return (
     <main className="relative min-h-[100dvh] bg-[var(--inst-s2)] text-[var(--inst-ink)]">
-      {/* header */}
-      <header className="sticky top-0 z-20 flex h-12 items-center justify-between border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s2)_92%,transparent)] px-4 backdrop-blur">
-        <div className="flex items-baseline gap-3">
-          <span className="font-display text-sm font-black tracking-[0.28em] text-[#e8c766]">AGENOR</span>
-          <span className={LABEL}>Cover Studio</span>
-        </div>
-        <a href="/music" className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--inst-dim)] transition hover:text-[var(--inst-ink)]">exit → /music</a>
-      </header>
+      {/* header — hidden under the app's embed (it has its own chrome + back) */}
+      {!embed && (
+        <header className="sticky top-0 z-20 flex h-12 items-center justify-between border-b border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s2)_92%,transparent)] px-4 backdrop-blur">
+          <div className="flex items-baseline gap-3">
+            <span className="font-display text-sm font-black tracking-[0.28em] text-[#e8c766]">AGENOR</span>
+            <span className={LABEL}>Cover Studio</span>
+          </div>
+          <a href="/music" className="font-mono text-[11px] uppercase tracking-[0.2em] text-[var(--inst-dim)] transition hover:text-[var(--inst-ink)]">exit → /music</a>
+        </header>
+      )}
 
       <div className="mx-auto grid max-w-[1500px] gap-5 p-4 lg:grid-cols-[minmax(0,1fr)_minmax(360px,460px)]">
         {/* ── WALL ── */}
