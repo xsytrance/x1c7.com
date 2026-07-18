@@ -86,7 +86,8 @@ const norm = (s) =>
     .trim();
 
 export async function catalog() {
-  const r = await fetch(`${SUPABASE_URL}/rest/v1/tracks?select=id,title,cover&order=sort_order.asc`, {
+  // hidden tracks aren't on /music and have no public cover — keep them out of the sync set
+  const r = await fetch(`${SUPABASE_URL}/rest/v1/tracks?select=id,title,cover&hidden=eq.false&order=sort_order.asc`, {
     headers: { apikey: SUPABASE_KEY, authorization: `Bearer ${SUPABASE_KEY}` },
   });
   if (!r.ok) throw new Error(`supabase ${r.status}`);
