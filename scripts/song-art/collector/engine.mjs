@@ -12,11 +12,70 @@
 // Usage: node engine.mjs [--only <slug>] [--out <dir>]
 
 import sharp from "sharp";
-import { readFileSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
+import { readFileSync, readdirSync, mkdirSync, existsSync, copyFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
+import os from "node:os";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
+
+// ── Fonts are load-bearing ───────────────────────────────────────────────────
+// librsvg resolves font-family through fontconfig. A fresh OS (or wiped $HOME)
+// loses the installed fonts SILENTLY: every print falls back to a default sans
+// ~65% wider than Bebas, so long spine titles crash into the genre block
+// (discovered 2026-07-18 — every post-reinstall print had it). Self-heal:
+// install the repo's fonts into the user font dir whenever they're missing.
+const FONT_DIR = join(os.homedir(), ".local", "share", "fonts");
+if (!existsSync(join(FONT_DIR, "BebasNeue-Regular.ttf"))) {
+  mkdirSync(FONT_DIR, { recursive: true });
+  for (const f of readdirSync(join(HERE, "fonts"))) {
+    if (f.endsWith(".ttf")) copyFileSync(join(HERE, "fonts", f), join(FONT_DIR, f));
+  }
+  try { execFileSync("fc-cache", ["-f"], { stdio: "ignore" }); } catch { /* no fc-cache → fontconfig rescans by itself */ }
+  console.error("⚠ fonts were missing from fontconfig — reinstalled from ./fonts (reprint anything printed while they were gone)");
+}
+
+// Exact Bebas advance widths (em units) straight from the TTF — the spine
+// title/genre fit is solved with real glyph metrics, not a guess, so every
+// title fills its zone edge-to-edge and can never overlap the genre block.
+// (Minimal TTF reader: cmap format-4 + hmtx + head.unitsPerEm.)
+function ttfWidths(path) {
+  const b = readFileSync(path);
+  const u16 = (o) => b.readUInt16BE(o), u32 = (o) => b.readUInt32BE(o);
+  const tables = {};
+  for (let i = 0; i < u16(4); i++) {
+    const o = 12 + i * 16;
+    tables[b.toString("ascii", o, o + 4)] = u32(o + 8);
+  }
+  const unitsPerEm = u16(tables.head + 18);
+  const numH = u16(tables.hhea + 34);
+  const advOf = (gid) => u16(tables.hmtx + Math.min(gid, numH - 1) * 4);
+  let sub = null;
+  for (let i = 0; i < u16(tables.cmap + 2); i++) {
+    const off = u32(tables.cmap + 4 + i * 8 + 4);
+    if (u16(tables.cmap + off) === 4) { sub = tables.cmap + off; break; }
+  }
+  const segX2 = u16(sub + 6);
+  const ends = sub + 14, starts = ends + segX2 + 2, deltas = starts + segX2, ranges = deltas + segX2;
+  const gidOf = (code) => {
+    for (let s = 0; s < segX2; s += 2) {
+      if (code <= u16(ends + s)) {
+        const start = u16(starts + s);
+        if (code < start) return 0;
+        const ro = u16(ranges + s);
+        if (ro === 0) return (code + u16(deltas + s)) & 0xffff;
+        const gi = u16(ranges + s + ro + (code - start) * 2);
+        return gi === 0 ? 0 : (gi + u16(deltas + s)) & 0xffff;
+      }
+    }
+    return 0;
+  };
+  return (ch) => advOf(gidOf(ch.codePointAt(0))) / unitsPerEm;
+}
+const bebasAdv = ttfWidths(join(HERE, "fonts", "BebasNeue-Regular.ttf"));
+/** em-width of a string in Bebas Neue (letter-spacing excluded). */
+const bebasEm = (text) => [...String(text)].reduce((a, c) => a + bebasAdv(c), 0);
 const ORIG = join(HERE, "originals");
 // Bespoke covers that already carry their own collector-case framing (hand-made
 // in an external tool). If finished/<slug>.png exists it is the final print and
@@ -196,10 +255,12 @@ function buildOverlay(t) {
   const tm = rawTitle.match(/^([^([:]+)(?:[:([]+\s*([^)\]]*))?/);
   const mainTitle = (tm?.[1] || rawTitle).trim().toUpperCase();
   const subtitle = (tm?.[2] || "").trim().toUpperCase() || null;
-  const lenOf = (text, size) => text.length * size * 0.52 + Math.max(0, text.length - 1) * 4;
+  // Real Bebas metrics (bebasEm) + the actual letter-spacing each text uses in
+  // the SVG below — title/subtitle 4, genre 8.
+  const lenOf = (text, size, ls = 4) => bebasEm(text) * size + Math.max(0, text.length - 1) * ls;
 
   const genreSize = 40;
-  const genreLen = lenOf(spineWord, genreSize);
+  const genreLen = lenOf(spineWord, genreSize, 8);
   const genreStart = H - 690 - genreLen;          // genre ends just above LANG block
   const vTop = 450;
   const zoneEnd = genreStart - 56;
@@ -209,7 +270,7 @@ function buildOverlay(t) {
   // then scale the whole stack down if it still overruns. No floors that can
   // force an overflow into the genre block.
   const capW = (sw - 44) / 0.75;
-  const sizeToFit = (text, room) => (room - Math.max(0, text.length - 1) * 4) / (text.length * 0.52);
+  const sizeToFit = (text, room) => (room - Math.max(0, text.length - 1) * 4) / bebasEm(text);
   let titleSize = Math.min(150, capW, sizeToFit(mainTitle, zone * (subtitle ? 0.68 : 1)));
   let subSize = subtitle ? Math.min(titleSize * 0.45, sizeToFit(subtitle, zone * 0.24)) : 0;
   let titleLen = lenOf(mainTitle, titleSize);
