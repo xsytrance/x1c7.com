@@ -87,6 +87,27 @@ function pageChrome(page: BookletPage, pageNo: number, total: number) {
           <line x1="${px(8)}" y1="${px(15)}" x2="${px(PW - 8)}" y2="${px(15)}" stroke="${GOLD}" stroke-width="${px(0.3)}" opacity="0.7"/>
           ${textBlock(rows, 8, 24, PW - 16, 3.2, px, pal.ink)}${folio}`;
       }
+      case "band": {
+        const roster = p.analysis?.roster ?? [];
+        const rows = roster.length
+          ? roster.map((r) => `${r.role.toUpperCase().padEnd(8, " ")} — ${r.name.replace(/\.(mp3|wav|flac|m4a|ogg|aac)$/i, "")}`).join("\n")
+          : "feed me your stems zip and the band takes the stage";
+        return `
+          <text x="${px(8)}" y="${px(12)}" font-family="Barlow Condensed SemiBold" font-size="${px(3.4)}" fill="${pal.accent}" letter-spacing="4">THE BAND</text>
+          <line x1="${px(8)}" y1="${px(15)}" x2="${px(PW - 8)}" y2="${px(15)}" stroke="${GOLD}" stroke-width="${px(0.3)}" opacity="0.7"/>
+          ${textBlock(rows, 8, 24, PW - 16, 3.1, px, pal.ink)}${folio}`;
+      }
+      case "map": {
+        const secs = p.analysis?.sections ?? [];
+        const fmt = (t: number) => `${Math.floor(t / 60)}:${String(Math.round(t % 60)).padStart(2, "0")}`;
+        const rows = secs.length
+          ? secs.map((sc, i) => `LEVEL ${i + 1} · ${sc.name.padEnd(6, " ")} ${fmt(sc.start)}${typeof sc.intensity === "number" ? `  ${"▮".repeat(Math.max(1, Math.round(sc.intensity * 8)))}` : ""}`).join("\n")
+          : "the map draws itself from your stems";
+        return `
+          <text x="${px(8)}" y="${px(12)}" font-family="Barlow Condensed SemiBold" font-size="${px(3.4)}" fill="${pal.accent}" letter-spacing="4">THE MAP</text>
+          <line x1="${px(8)}" y1="${px(15)}" x2="${px(PW - 8)}" y2="${px(15)}" stroke="${GOLD}" stroke-width="${px(0.3)}" opacity="0.7"/>
+          ${textBlock(rows, 8, 24, PW - 16, 3.1, px, pal.ink)}${folio}`;
+      }
       case "world":
         return `<text x="${px(PW / 2)}" y="${px(PH - 6)}" font-family="Barlow Condensed Medium" font-size="${px(2.6)}" fill="${pal.ink}" opacity="0.6" text-anchor="middle" letter-spacing="2">THE WORLD</text>${folio}`;
       case "back":

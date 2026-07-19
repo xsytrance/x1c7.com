@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-07-18T10:22:13.810Z",
+  "generatedAt": "2026-07-19T10:22:32.620Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1021,
-    "judged": 27,
-    "accepted": 27,
-    "kept": 27
+    "candidates": 1075,
+    "judged": 33,
+    "accepted": 33,
+    "kept": 32
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 34.168,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "Image captures subway chaos, light as rhythm, aligns with song's themes and mood",
+      "reason": "Image captures subway chaos, light as rhythm, aligns with song's themes",
       "recipe": "4-manga-line",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 6.583,
       "score": 0.92,
       "cosine": 0.586,
-      "reason": "Urban decay, intense eyes, foggy alley align with song's mood and themes",
+      "reason": "Urban decay, intense eyes, foggy alley match song's mood and themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 7.802,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Urban nighttime, light, escapism, sensory warmth align with song's themes",
+      "reason": "Urban nighttime, light, escapism, warmth, and connection align with song's themes",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 91.008,
       "score": 0.92,
       "cosine": 0.571,
-      "reason": "Urban grit, neon escape, rain as release fit song's themes",
+      "reason": "Urban grit, neon escape, emotional release align with song's themes",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -105,6 +105,18 @@
       "cosine": 0.559,
       "reason": "Urban isolation, resilience, and stormy cityscape align with song's themes",
       "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-6-word-portrait.webp",
+      "key": "lexicon/song/s1-6-word-portrait.webp",
+      "word": "song",
+      "line": "roses Someones got rain Someones got nothing But a song for the pain I dont need answers I dont need",
+      "t": 99.498,
+      "score": 0.92,
+      "cosine": 0.551,
+      "reason": "Urban solitude, emotional journey, and melancholic mood align with song's themes",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -163,7 +175,7 @@
       "t": 156.431,
       "score": 0.92,
       "cosine": 0.534,
-      "reason": "Neon 'move' sign fits urban energy and transition themes",
+      "reason": "Urban energy, neon, transition align with subway metaphor and cathartic mood",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -175,8 +187,20 @@
       "t": 92.392,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Aligns with urban themes, hope, and transient beauty in city life",
+      "reason": "Aligns with urban themes, dream symbolism, and mood of hope amid exhaustion",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-3-anime.webp",
+      "key": "lexicon/window/s1-3-anime.webp",
+      "word": "window",
+      "line": "Blue light Passing by Window black Face in glass I see",
+      "t": 9.695,
+      "score": 0.92,
+      "cosine": 0.522,
+      "reason": "Urban decay, glowing windows, resilience match song's themes and mood",
+      "recipe": "3-anime",
       "featured": true
     },
     {
@@ -187,20 +211,8 @@
       "t": 34.168,
       "score": 0.92,
       "cosine": 0.511,
-      "reason": "Neon-lit club aligns with urban nightlife and rhythm's energy in the song",
+      "reason": "Neon-lit club aligns with urban nightlife and cathartic energy of the song",
       "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-3-cinema.webp",
-      "key": "lexicon/dream/s2-3-cinema.webp",
-      "word": "dream",
-      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
-      "t": 92.392,
-      "score": 0.92,
-      "cosine": 0.47,
-      "reason": "Dreamy urban atmosphere matches song's subway metaphor and cathartic mood",
-      "recipe": "3-cinema",
       "featured": true
     },
     {
@@ -225,6 +237,42 @@
       "cosine": 0.496,
       "reason": "Calm neon sign fits urban nightlife and slowness theme",
       "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-3-cinema.webp",
+      "key": "lexicon/dream/s2-3-cinema.webp",
+      "word": "dream",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
+      "t": 92.392,
+      "score": 0.9,
+      "cosine": 0.47,
+      "reason": "Urban dream imagery fits subway metaphor and mood",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s2-6-neon-night.webp",
+      "key": "lexicon/song/s2-6-neon-night.webp",
+      "word": "song",
+      "line": "roses Someones got rain Someones got nothing But a song for the pain I dont need answers I dont need",
+      "t": 99.498,
+      "score": 0.8,
+      "cosine": 0.562,
+      "reason": "Cathartic release, urban energy, and emotional expression align with song's themes",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-3-cinema.webp",
+      "key": "lexicon/song/s1-3-cinema.webp",
+      "word": "song",
+      "line": "roses Someones got rain Someones got nothing But a song for the pain I dont need answers I dont need",
+      "t": 99.498,
+      "score": 0.8,
+      "cosine": 0.501,
+      "reason": "Captures urban melancholy and transient beauty aligning with song's themes",
+      "recipe": "3-cinema",
       "featured": true
     },
     {
@@ -259,8 +307,20 @@
       "t": 91.008,
       "score": 0.75,
       "cosine": 0.551,
-      "reason": "Captures urban night, melancholy, and blurred chaos fitting the song's theme",
+      "reason": "Captures urban night, loneliness, and blurred chaos fitting the song's theme",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-5-photo.webp",
+      "key": "lexicon/window/s1-5-photo.webp",
+      "word": "window",
+      "line": "Blue light Passing by Window black Face in glass I see",
+      "t": 9.695,
+      "score": 0.75,
+      "cosine": 0.547,
+      "reason": "Captures urban melancholy and introspection fitting the song's themes",
+      "recipe": "5-photo",
       "featured": true
     },
     {
@@ -271,7 +331,7 @@
       "t": 52.16,
       "score": 0.75,
       "cosine": 0.513,
-      "reason": "Captures urban melancholy and isolation fitting the song's mood and themes",
+      "reason": "Melancholy and urban isolation align with song's themes of exhaustion and escapism.",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -288,6 +348,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-6-dream-collage.webp",
+      "key": "lexicon/window/s1-6-dream-collage.webp",
+      "word": "window",
+      "line": "Blue light Passing by Window black Face in glass I see",
+      "t": 9.695,
+      "score": 0.7,
+      "cosine": 0.521,
+      "reason": "fits urban decay, chaos, but lacks catharsis and dancehall energy",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-4-cinema.webp",
       "key": "lexicon/glass/s0-4-cinema.webp",
       "word": "glass",
@@ -295,7 +367,7 @@
       "t": 11.36,
       "score": 0.65,
       "cosine": 0.596,
-      "reason": "Urban setting fits, but melancholy and addiction themes clash with cathartic release mood",
+      "reason": "Reflects urban grit and melancholy, but lacks catharsis or identity themes",
       "recipe": "4-cinema",
       "featured": false
     },
@@ -307,7 +379,7 @@
       "t": 11.36,
       "score": 0.65,
       "cosine": 0.557,
-      "reason": "Reflects urban chaos and fractured identity, but lacks the respite and dancehall catharsis",
+      "reason": "Reflects urban chaos and fragmented identity, but lacks the respite and dancehall catharsi",
       "recipe": "3-anime",
       "featured": false
     },
@@ -322,65 +394,62 @@
       "reason": "Captures urban nightlife and light obsession, but lacks catharsis and identity themes",
       "recipe": "5-word-portrait",
       "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-3-neon-night.webp",
-      "key": "lexicon/move/s3-3-neon-night.webp",
-      "word": "move",
-      "line": "rush now No fear now Let it move Let it clear out I was",
-      "t": 156.431,
-      "score": 0.65,
-      "cosine": 0.533,
-      "reason": "Captures urban isolation and melancholy fitting the song's themes",
-      "recipe": "3-neon-night",
-      "featured": false
     }
   ],
   "byWord": {
     "rhythm": [
       0,
       4,
-      14
+      16
     ],
     "light": [
       1,
       5,
-      19
+      23
     ],
     "night": [
       2,
       6,
-      20
+      24
     ],
     "eyes": [
       3,
-      9,
-      10
+      10,
+      11
     ],
     "lights": [
       7,
-      21,
-      25
+      26,
+      31
+    ],
+    "song": [
+      8,
+      20,
+      21
     ],
     "glass": [
-      8,
-      23,
-      24
+      9,
+      29,
+      30
     ],
     "move": [
-      11,
       12,
-      26
+      13
     ],
     "dream": [
-      13,
+      14,
+      17,
+      19
+    ],
+    "window": [
       15,
-      16
+      25,
+      28
     ],
     "slow": [
-      17,
       18,
-      22
+      22,
+      27
     ]
   }
 }

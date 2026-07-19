@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-07-18T10:36:28.809Z",
+  "generatedAt": "2026-07-19T10:42:27.389Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1356,
-    "judged": 44,
-    "accepted": 38,
+    "candidates": 1390,
+    "judged": 47,
+    "accepted": 41,
     "kept": 32
   },
   "reel": [
@@ -36,6 +36,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s2-2-manga-line.webp",
+      "key": "lexicon/honey/s2-2-manga-line.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 1,
+      "cosine": 0.657,
+      "reason": "Perfectly captures duality, seduction, and danger in abstract form",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s2-4-neon-night.webp",
       "key": "lexicon/venom/s2-4-neon-night.webp",
       "word": "venom",
@@ -48,6 +60,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-4-word-neon.webp",
+      "key": "lexicon/rhythm/s6-4-word-neon.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 1,
+      "cosine": 0.595,
+      "reason": "Perfectly aligns with club energy, seductive allure, and neon symbolism",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s0-6-neon-sign.webp",
       "key": "lexicon/venom/s0-6-neon-sign.webp",
       "word": "venom",
@@ -55,8 +79,20 @@
       "t": 13.758,
       "score": 1,
       "cosine": 0.593,
-      "reason": "Perfectly aligns with toxic romance and seductive menace",
+      "reason": "Perfectly aligns with toxic romance and aggressive seduction",
       "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s3-6-word-neon.webp",
+      "key": "lexicon/wine/s3-6-word-neon.webp",
+      "word": "wine",
+      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
+      "t": 112.083,
+      "score": 1,
+      "cosine": 0.566,
+      "reason": "Perfectly aligns with club energy, toxic allure, and seductive danger",
+      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -67,7 +103,7 @@
       "t": 58.422,
       "score": 1,
       "cosine": 0.543,
-      "reason": "Perfectly aligns with club energy, seductive allure, and sound system symbolism",
+      "reason": "Perfectly aligns with club energy, seductive danger, and neon symbolism",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -79,20 +115,8 @@
       "t": 35.573,
       "score": 0.95,
       "cosine": 0.685,
-      "reason": "Matches seductive danger, club vibe, and toxic allure",
+      "reason": "Matches seductive danger, club vibe, and neon symbolism",
       "recipe": "3-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s2-2-manga-line.webp",
-      "key": "lexicon/honey/s2-2-manga-line.webp",
-      "word": "honey",
-      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
-      "t": 12.38,
-      "score": 0.95,
-      "cosine": 0.657,
-      "reason": "captures duality, seduction, and danger perfectly",
-      "recipe": "2-manga-line",
       "featured": true
     },
     {
@@ -105,18 +129,6 @@
       "cosine": 0.599,
       "reason": "fits club energy, seductive allure, and toxic obsession",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-4-word-neon.webp",
-      "key": "lexicon/rhythm/s6-4-word-neon.webp",
-      "word": "rhythm",
-      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
-      "t": 58.422,
-      "score": 0.95,
-      "cosine": 0.595,
-      "reason": "Matches club energy, neon symbolism, seductive danger",
-      "recipe": "4-word-neon",
       "featured": true
     },
     {
@@ -163,20 +175,8 @@
       "t": 12.38,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Symbolism aligns with toxic romance and seductive danger.",
+      "reason": "Symbolism aligns with toxic romance and seductive danger; club setting matches song's ener",
       "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s3-6-word-neon.webp",
-      "key": "lexicon/wine/s3-6-word-neon.webp",
-      "word": "wine",
-      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
-      "t": 112.083,
-      "score": 0.95,
-      "cosine": 0.566,
-      "reason": "matches club energy, toxic allure, and seductive danger",
-      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -259,7 +259,7 @@
       "t": 63.878,
       "score": 0.95,
       "cosine": 0.501,
-      "reason": "Matches aggressive seduction, fire as toxic desire, club energy",
+      "reason": "Matches fire's aggressive seduction and club energy with toxic allure",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 129.626,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "Urban nightlife, mystery, and seductive tension align with song's mood and themes",
+      "reason": "Urban nightlife, mystery, and seductive tension align with song's club energy and dangerou",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 154.703,
       "score": 0.95,
       "cosine": 0.489,
-      "reason": "Matches toxic allure, urban grit, and seductive danger",
+      "reason": "matches toxic allure, urban grit, and seductive danger",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 52.013,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Confident, seductive walk in a dark club matches song's mood and themes",
+      "reason": "matches seductive power walk in dark club, aligns with dangerous allure and club energy",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 53.312,
       "score": 0.9,
       "cosine": 0.502,
-      "reason": "Unsettling seduction matches toxic allure and dangerous attraction",
+      "reason": "Seductive menace aligns with toxic allure and club energy",
       "recipe": "1-neon-sign",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 35.295,
       "score": 0.9,
       "cosine": 0.48,
-      "reason": "Matches seductive club energy, spotlight as intimate allure, moody urban backdrop fits son",
+      "reason": "Matches seductive club energy and moody atmosphere with spotlight symbolism",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 30.325,
       "score": 0.85,
       "cosine": 0.433,
-      "reason": "Urban grit and neon match club energy; rain and ink hint at toxicity and allure.",
+      "reason": "Urban grit and neon match club energy; rain and ink hint at toxicity and allure",
       "recipe": "3-neon-night",
       "featured": true
     }
@@ -399,31 +399,31 @@
   "byWord": {
     "heart": [
       0,
-      5,
-      9
+      8,
+      10
     ],
     "venom": [
       1,
+      3,
+      5
+    ],
+    "honey": [
       2,
-      3
+      12,
+      13
     ],
     "rhythm": [
       4,
-      8
-    ],
-    "honey": [
-      6,
-      11,
-      12
-    ],
-    "night": [
-      7,
-      21
+      7
     ],
     "wine": [
-      10,
-      13,
+      6,
+      11,
       15
+    ],
+    "night": [
+      9,
+      21
     ],
     "fire": [
       14,

@@ -94,6 +94,8 @@ export interface AnalysisSummary {
   duration?: number | null;
   peaks?: number[] | null;                    // 96 buckets
   sections?: { name: string; start: number; intensity?: number; emotion?: string }[];
+  roster?: { role: string; name: string }[];  // the band, from stems
+  sideSplit?: number | null;                  // seconds — cassette/vinyl flip point
   keywords?: { word: string; emotion?: string }[];
   styleWords?: string[];                      // parsed style text
   exclusions?: string[];                      // parsed exclusions (R7 soft veto)

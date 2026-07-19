@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-07-18T10:34:43.640Z",
+  "generatedAt": "2026-07-19T10:40:29.146Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -115,7 +115,7 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.594,
-      "reason": "Matches futuristic, energetic, nostalgic themes and visuals",
+      "reason": "Matches futuristic, energetic, nostalgic themes and neon aesthetics",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Matches futuristic romance, neon aesthetics, and energetic vibe",
+      "reason": "Matches futuristic romance, neon aesthetics, and high-energy vibe",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 87.284,
       "score": 0.95,
       "cosine": 0.561,
-      "reason": "Matches futuristic romance, neon, urban, playful energy",
+      "reason": "fits futuristic romance and playful energy with neon and retro gaming elements",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 40.04,
       "score": 0.95,
       "cosine": 0.524,
-      "reason": "matches futuristic, playful, and dreamy sky imagery with song's themes",
+      "reason": "matches futuristic, playful, and dreamy themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 32.264,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Matches futuristic city, neon, energy, and unstoppable love theme",
+      "reason": "matches futuristic city, neon, speed, and playful energy",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -240,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s9-3-word-portrait.webp",
+      "key": "lexicon/move/s9-3-word-portrait.webp",
+      "word": "move",
+      "line": "Dum da da da dum dum Move like that, don’t slow Dum da da",
+      "t": 96.27,
+      "score": 0.9,
+      "cosine": 0.491,
+      "reason": "Relentless sprinting, neon lights, and vintage car align with high-energy, futuristic them",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
       "key": "lexicon/glow/s6-5-word-neon.webp",
       "word": "glow",
@@ -247,7 +259,7 @@
       "t": 101.715,
       "score": 0.9,
       "cosine": 0.483,
-      "reason": "Futuristic glow, urban night, digital connection fit song's vibe",
+      "reason": "Futuristic, neon-lit cityscape matches song's energy and themes",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -272,18 +284,6 @@
       "score": 0.85,
       "cosine": 0.506,
       "reason": "fits futuristic optimism and playful energy with aspirational sky imagery",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s9-3-word-portrait.webp",
-      "key": "lexicon/move/s9-3-word-portrait.webp",
-      "word": "move",
-      "line": "Dum da da da dum dum Move like that, don’t slow Dum da da",
-      "t": 96.27,
-      "score": 0.85,
-      "cosine": 0.491,
-      "reason": "Fits futuristic energy, sprinting aligns with high-speed pursuit, neon and vintage car ble",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 20.805,
       "score": 0.6,
       "cosine": 0.52,
-      "reason": "Futuristic and chaotic, but lacks the playful energy and gaming nostalgia",
+      "reason": "Futuristic and chaotic, but lacks playful energy and gaming nostalgia",
       "recipe": "2-anime",
       "featured": false
     },
@@ -379,7 +379,7 @@
       "t": 25.647,
       "score": 0.6,
       "cosine": 0.463,
-      "reason": "Matches urban night theme but lacks futuristic gaming elements",
+      "reason": "fits urban night theme but lacks futuristic gaming elements",
       "recipe": "6-word-portrait",
       "featured": false
     },
@@ -429,16 +429,16 @@
     ],
     "move": [
       13,
-      22
+      19
     ],
     "glow": [
       14,
-      19,
+      20,
       23
     ],
     "sky": [
       15,
-      21,
+      22,
       26
     ],
     "save": [
@@ -447,7 +447,7 @@
     ],
     "run": [
       18,
-      20,
+      21,
       27
     ],
     "somebody": [

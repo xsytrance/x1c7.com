@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-07-18T10:53:57.329Z",
+  "generatedAt": "2026-07-19T11:06:24.081Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -36,18 +36,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s15-6-word-portrait.webp",
-      "key": "lexicon/slow/s15-6-word-portrait.webp",
-      "word": "slow",
-      "line": "Slow",
-      "t": 49.377,
-      "score": 1,
-      "cosine": 0.613,
-      "reason": "matches hypnotic, introspective mood and themes",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s7-4-film-still.webp",
       "key": "lexicon/light/s7-4-film-still.webp",
       "word": "light",
@@ -57,6 +45,18 @@
       "cosine": 0.623,
       "reason": "matches late-night introspection, light as clarity, cinematic mood",
       "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s15-6-word-portrait.webp",
+      "key": "lexicon/slow/s15-6-word-portrait.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 0.95,
+      "cosine": 0.613,
+      "reason": "matches hypnotic mood and themes of introspection and nostalgia",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -115,7 +115,7 @@
       "t": 214.378,
       "score": 0.85,
       "cosine": 0.575,
-      "reason": "fits introspective mood, aligns with theme of detachment and isolation",
+      "reason": "fits mood and theme of introspection and detachment",
       "recipe": "5-word-portrait",
       "featured": true
     }
@@ -124,10 +124,10 @@
     "slow": [
       0,
       1,
-      2
+      3
     ],
     "light": [
-      3,
+      2,
       4,
       5
     ],

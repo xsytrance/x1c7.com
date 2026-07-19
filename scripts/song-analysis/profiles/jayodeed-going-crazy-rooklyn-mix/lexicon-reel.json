@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-07-18T10:45:57.998Z",
+  "generatedAt": "2026-07-19T10:56:11.673Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -79,7 +79,7 @@
       "t": 160.624,
       "score": 0.95,
       "cosine": 0.602,
-      "reason": "fits toxic love, addiction, and chaos themes with glowing glass symbolism",
+      "reason": "fits toxic love, addiction, and chaos themes with intense lighting and glass symbolism",
       "recipe": "3-oil-light",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "matches toxic obsession, urban chaos, and emotional intensity",
+      "reason": "fits toxic obsession, urban chaos, emotional intensity",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.464,
-      "reason": "matches toxic obsession, chaos, and nightlife themes",
+      "reason": "fits toxic obsession, chaos, and nightlife themes",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, emotional tension",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty despair",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "fits toxic obsession, neon chaos, gritty urban madness",
+      "reason": "matches toxic obsession, neon chaos, gritty urban madness",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 50.051,
       "score": 0.9,
       "cosine": 0.445,
-      "reason": "Neon heart symbolizes toxic, superficial love; urban noir matches chaotic nightlife and is",
+      "reason": "Neon heart symbolizes hollow digital love; urban noir matches toxic nightlife chaos",
       "recipe": "6-neon-sign",
       "featured": true
     },

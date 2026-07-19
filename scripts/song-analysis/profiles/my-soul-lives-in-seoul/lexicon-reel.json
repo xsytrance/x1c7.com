@@ -1,12 +1,12 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-07-18T10:53:29.848Z",
+  "generatedAt": "2026-07-19T11:06:00.301Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1031,
-    "judged": 44,
+    "candidates": 1059,
+    "judged": 45,
     "accepted": 41,
     "kept": 32
   },
@@ -67,7 +67,7 @@
       "t": 16.185,
       "score": 0.95,
       "cosine": 0.525,
-      "reason": "Captures longing, connection, and digital bridge",
+      "reason": "Captures longing, connection, and dreams across distance",
       "recipe": "2",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 76.162,
       "score": 0.95,
       "cosine": 0.51,
-      "reason": "Captures urban night, long-distance connection, and hope",
+      "reason": "Captures urban night, long-distance connection, and hopeful resilience",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 3.855,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "Symbolizes Seoul as a soulful, nostalgic anchor in a global relationship",
+      "reason": "Symbolizes Seoul's cultural identity, urban solitude, and hope in a long-distance relation",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 100.287,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "Neon glow symbolizes connection, hope, and cultural fusion in Seoul's urban night",
+      "reason": "Neon glow symbolizes digital connection and resilience in long-distance love",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 3.855,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "Symbolism aligns with Seoul, emotional depth matches song's themes",
+      "reason": "Symbolism aligns with Seoul, soul, and longing in a modern, cultural context",
       "recipe": "5-anime",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 143.244,
       "score": 0.9,
       "cosine": 0.531,
-      "reason": "Symbolizes voice strain, digital connection, cultural fusion, emotional resilience",
+      "reason": "Symbolizes voice strain, digital connection, emotional resilience",
       "recipe": "6-stickers",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 36.781,
       "score": 0.9,
       "cosine": 0.488,
-      "reason": "romantic intimacy aligns with song's emotional core and visual storytelling",
+      "reason": "Romantic intimacy aligns with song's theme of love across distance",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 29.083,
       "score": 0.9,
       "cosine": 0.408,
-      "reason": "fits futuristic global love and tech themes",
+      "reason": "Cosmic imagery aligns with global love and digital connection themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 143.244,
       "score": 0.9,
       "cosine": 0.4,
-      "reason": "Symbolizes longing, connection, and hope in a digital age",
+      "reason": "Symbolizes longing, connection, and digital struggles in a nostalgic setting",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 14.722,
       "score": 0.8,
       "cosine": 0.333,
-      "reason": "Magical floating islands symbolize uniqueness and connection across distances",
+      "reason": "Magical floating islands symbolize unique connections across distances",
       "recipe": "4-dream-collage",
       "featured": true
     }

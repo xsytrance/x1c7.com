@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-07-18T10:52:06.348Z",
+  "generatedAt": "2026-07-19T11:04:09.810Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -79,7 +79,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.584,
-      "reason": "perfectly aligns with summer energy and dance floor dominance",
+      "reason": "Perfectly aligns with dance floor dominance and summer energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
+      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfectly aligns with dance floor dominance and retro club aesthetic",
+      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 25.565,
       "score": 1,
       "cosine": 0.478,
-      "reason": "Perfectly aligns with summer night energy and retro club aesthetic",
+      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
+      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
       "recipe": "4-photo",
       "featured": true
     },

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-18T10:44:17.179Z",
+  "generatedAt": "2026-07-19T10:54:08.067Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1753,
+    "candidates": 1776,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 92.625,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Powerful depiction of emotional restraint and pain in a toxic relationship",
+      "reason": "Powerful portrayal of emotional restraint and pain in a toxic relationship",
       "recipe": "3-photo",
       "featured": true
     },
@@ -33,6 +33,18 @@
       "cosine": 0.482,
       "reason": "Powerful symbolism of destruction and emotional residue fits the song's themes",
       "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s2-2-word-portrait.webp",
+      "key": "lexicon/escape/s2-2-word-portrait.webp",
+      "word": "escape",
+      "line": "feels fake I been calling it love when its only escape Say something cold make it sound like you",
+      "t": 149.52,
+      "score": 0.95,
+      "cosine": 0.474,
+      "reason": "Symbolizes hope and confinement, matches song's themes of escape and emotional struggle",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -79,7 +91,7 @@
       "t": 52.48,
       "score": 0.95,
       "cosine": 0.451,
-      "reason": "Powerful symbolism of fire and emotional fragmentation fits the song's themes",
+      "reason": "Powerful symbolism of heart and fire, matches song's emotional depth and themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -103,7 +115,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood.",
+      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood",
       "recipe": "2-anime",
       "featured": true
     },
@@ -120,15 +132,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-3-cinema.webp",
-      "key": "lexicon/break/s6-3-cinema.webp",
-      "word": "break",
-      "line": "break",
-      "t": null,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s0-3-word-portrait.webp",
+      "key": "lexicon/escape/s0-3-word-portrait.webp",
+      "word": "escape",
+      "line": "feels fake I been calling it love when its only escape Say something cold make it sound like you",
+      "t": 149.52,
       "score": 0.95,
       "cosine": 0.428,
-      "reason": "Symbolizes fragility and brokenness in a toxic relationship",
-      "recipe": "3-cinema",
+      "reason": "Symbolizes hope and liberation in a confined space, aligns with themes of escape and emoti",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -151,7 +163,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "Powerful symbolism of internal chaos and emotional ruin aligns with song's themes",
+      "reason": "Powerful symbolism of internal chaos and emotional destruction",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -163,7 +175,7 @@
       "t": 66.862,
       "score": 0.95,
       "cosine": 0.42,
-      "reason": "Cinematic, solemn, and introspective mood matches song's emotional depth and themes",
+      "reason": "Cinematic, solitary, and introspective mood matches song's emotional depth and themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -187,8 +199,20 @@
       "t": 67.93,
       "score": 0.95,
       "cosine": 0.416,
-      "reason": "Matches song's mood and themes of coldness, isolation, and emotional distance",
+      "reason": "Cinematic, lonely, emotional void align with song's mood and themes",
       "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wound/s0-4-word-portrait.webp",
+      "key": "lexicon/wound/s0-4-word-portrait.webp",
+      "word": "wound",
+      "line": "I love you enough not to become another wound I can miss",
+      "t": 198.99,
+      "score": 0.95,
+      "cosine": 0.377,
+      "reason": "Powerful symbolism of pain and hope aligns with song's themes",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -223,7 +247,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.507,
-      "reason": "Symbolizes resilience and hope amid destruction, aligns with themes of emotional strength ",
+      "reason": "Symbolizes breaking free, fits toxic relationship theme and cinematic mood",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -235,7 +259,7 @@
       "t": 78.147,
       "score": 0.9,
       "cosine": 0.482,
-      "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
+      "reason": "Cinematic, melancholic, symbolic of toxic nightlife and emotional intensity",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -259,20 +283,8 @@
       "t": 80.88,
       "score": 0.9,
       "cosine": 0.465,
-      "reason": "Symbolizes toxic love, emotional chaos, and contrast between public and private self",
+      "reason": "Symbolism aligns with toxic love, emotional chaos, and self-awareness",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
-      "key": "lexicon/heart/s0-2.webp",
-      "word": "heart",
-      "line": "comes in slow 808 heart under",
-      "t": 28.478,
-      "score": 0.9,
-      "cosine": 0.463,
-      "reason": "Symbolizes toxic love, matches song's emotional struggle and cinematic mood",
-      "recipe": "2",
       "featured": true
     },
     {
@@ -295,7 +307,7 @@
       "t": 7.175,
       "score": 0.9,
       "cosine": 0.446,
-      "reason": "Symbolizes inner strength during turmoil, fits song's emotional struggle and cinematic moo",
+      "reason": "storm symbolizes turmoil, resilience and isolation match song's themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -331,7 +343,7 @@
       "t": 169.828,
       "score": 0.9,
       "cosine": 0.441,
-      "reason": "Captures loneliness and urban melancholy aligning with song's emotional depth",
+      "reason": "Captures loneliness and urban melancholy, aligns with song's emotional depth and toxic rel",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -345,6 +357,18 @@
       "cosine": 0.431,
       "reason": "Symbolizes fragile yet persistent love in a decaying space, aligns with song's themes of e",
       "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-3-cinema.webp",
+      "key": "lexicon/break/s6-3-cinema.webp",
+      "word": "break",
+      "line": "break",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.428,
+      "reason": "Symbolizes fragility and isolation in a toxic relationship",
+      "recipe": "3-cinema",
       "featured": true
     },
     {
@@ -367,94 +391,72 @@
       "t": 26.934,
       "score": 0.9,
       "cosine": 0.421,
-      "reason": "Cinematic, introspective, and melancholic mood aligns with song's emotional depth and them",
+      "reason": "matches melancholic mood and introspective themes",
       "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s3-6-dream-collage.webp",
-      "key": "lexicon/silence/s3-6-dream-collage.webp",
-      "word": "silence",
-      "line": "sharp words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall",
-      "t": 66.862,
-      "score": 0.9,
-      "cosine": 0.42,
-      "reason": "Emotional pain, fragmentation, and hope align with the song's themes and mood.",
-      "recipe": "6-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s5-4-photo.webp",
-      "key": "lexicon/fall/s5-4-photo.webp",
-      "word": "fall",
-      "line": "when you wanna fall apart",
-      "t": 19.037,
-      "score": 0.9,
-      "cosine": 0.393,
-      "reason": "Matches melancholy, solitude, and emotional burden of the song",
-      "recipe": "4-photo",
       "featured": true
     }
   ],
   "byWord": {
     "cut": [
       0,
-      10,
-      13
+      11,
+      14
     ],
     "fire": [
       1,
-      5,
-      16
+      6,
+      18
+    ],
+    "escape": [
+      2,
+      10
     ],
     "break": [
-      2,
-      9,
-      17
-    ],
-    "cold": [
       3,
-      6,
-      14
-    ],
-    "heart": [
-      4,
-      21
-    ],
-    "storm": [
-      7,
-      11,
-      23
-    ],
-    "voice": [
-      8,
-      25,
-      28
-    ],
-    "silence": [
-      12,
-      24,
-      30
-    ],
-    "lights": [
-      15,
-      18,
-      19
-    ],
-    "love": [
-      20,
-      27
-    ],
-    "light": [
-      22
-    ],
-    "night": [
-      26
-    ],
-    "slow": [
+      19,
       29
     ],
-    "fall": [
+    "cold": [
+      4,
+      7,
+      15
+    ],
+    "heart": [
+      5
+    ],
+    "storm": [
+      8,
+      12,
+      24
+    ],
+    "voice": [
+      9,
+      26,
+      30
+    ],
+    "silence": [
+      13,
+      25
+    ],
+    "wound": [
+      16
+    ],
+    "lights": [
+      17,
+      20,
+      21
+    ],
+    "love": [
+      22,
+      28
+    ],
+    "light": [
+      23
+    ],
+    "night": [
+      27
+    ],
+    "slow": [
       31
     ]
   }

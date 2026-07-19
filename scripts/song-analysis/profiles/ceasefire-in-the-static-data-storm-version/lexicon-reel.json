@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-07-18T10:27:26.734Z",
+  "generatedAt": "2026-07-19T10:29:21.984Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1116,
-    "judged": 53,
-    "accepted": 50,
+    "candidates": 1360,
+    "judged": 64,
+    "accepted": 61,
     "kept": 32
   },
   "reel": [
@@ -43,7 +43,7 @@
       "t": 83.244,
       "score": 0.95,
       "cosine": 0.666,
-      "reason": "fits mood, themes of isolation and anxiety in digital chaos",
+      "reason": "matches melancholic mood, isolation, digital chaos symbolism",
       "recipe": "2",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.592,
-      "reason": "melancholic hope in desolate ruins matches song's anxiety and peace themes",
+      "reason": "melancholic, desolate, hope in chaos aligns with song's themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.587,
-      "reason": "Strong symbolism of static, mood matches, themes of overload and peace",
+      "reason": "Strong symbolism of static, mood matches, themes of overload and anxiety",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 59.234,
       "score": 0.95,
       "cosine": 0.576,
-      "reason": "matches song's melancholic mood and themes of silence and emptiness",
+      "reason": "Matches song's melancholic mood and themes of silence and emptiness",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 97.64,
       "score": 0.95,
       "cosine": 0.574,
-      "reason": "matches melancholic mood, digital static symbolism, and introspective theme",
+      "reason": "matches melancholic mood, digital static symbolism, and inner conflict themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 78.484,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "matches digital surrealism, anxiety, fragmented identity, and melancholic mood",
+      "reason": "fits digital surrealism, anxiety, fragmented identity",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -264,6 +264,42 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s0-3-dream-collage.webp",
+      "key": "lexicon/memory/s0-3-dream-collage.webp",
+      "word": "memory",
+      "line": "storm folders for the pain Tags for every memory rules for every flame But every time I",
+      "t": 101.889,
+      "score": 0.95,
+      "cosine": 0.531,
+      "reason": "matches digital overload, fragmented memories, surreal and melancholic mood",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s3-2-neon-night.webp",
+      "key": "lexicon/wave/s3-2-neon-night.webp",
+      "word": "wave",
+      "line": "flame But every time I clear the screen another wave comes back Another voice, another need another",
+      "t": 106.162,
+      "score": 0.95,
+      "cosine": 0.529,
+      "reason": "fits digital overload, urban isolation, cyberpunk melancholy",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s3-2-word-neon.webp",
+      "key": "lexicon/broken/s3-2-word-neon.webp",
+      "word": "broken",
+      "line": "in the madness a holy line through broken code If peace is somewhere in",
+      "t": 77.857,
+      "score": 0.95,
+      "cosine": 0.52,
+      "reason": "fits mood and themes of decay and digital fragmentation",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-5-word-portrait.webp",
       "key": "lexicon/violence/s0-5-word-portrait.webp",
       "word": "violence",
@@ -271,7 +307,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "fits dystopian, anxious, and urgent mood with digital elements",
+      "reason": "fits dystopian mood, symbolizes digital anxiety and emotional distress",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -288,18 +324,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-5-word-portrait.webp",
-      "key": "lexicon/voice/s14-5-word-portrait.webp",
-      "word": "voice",
-      "line": "panic where I can hear my real voice I’m looking for a pattern in the",
-      "t": 72.493,
-      "score": 0.95,
-      "cosine": 0.498,
-      "reason": "Symbolizes voice as a struggle, fits digital anxiety and surreal mood",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s2-3-noir.webp",
       "key": "lexicon/ceasefire/s2-3-noir.webp",
       "word": "ceasefire",
@@ -307,92 +331,68 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "powerful symbolism aligns with digital overload and search for peace",
+      "reason": "powerful symbolism of chaos and hope, fits melancholic mood and themes",
       "recipe": "3-noir",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-1-anime.webp",
-      "key": "lexicon/violence/s0-1-anime.webp",
-      "word": "violence",
-      "line": "violence",
-      "t": null,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wound/s0-3-dream-collage.webp",
+      "key": "lexicon/wound/s0-3-dream-collage.webp",
+      "word": "wound",
+      "line": "night Inbox open like a wound red numbers climbing in my room",
+      "t": 40.425,
       "score": 0.95,
-      "cosine": 0.474,
-      "reason": "fits digital collapse, violent energy, cyberpunk atmosphere",
-      "recipe": "1-anime",
+      "cosine": 0.492,
+      "reason": "fits mood and themes of trauma and digital overload",
+      "recipe": "3-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
-      "key": "lexicon/save/s6-3-word-portrait.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.9,
-      "cosine": 0.555,
-      "reason": "matches melancholic mood, digital isolation, and abandoned space",
-      "recipe": "3-word-portrait",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wound/s0-5-film-still.webp",
+      "key": "lexicon/wound/s0-5-film-still.webp",
+      "word": "wound",
+      "line": "night Inbox open like a wound red numbers climbing in my room",
+      "t": 40.425,
+      "score": 0.95,
+      "cosine": 0.49,
+      "reason": "fits digital trauma, pain, glowing wounds symbolize inbox overload",
+      "recipe": "5-film-still",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s8-3-word-portrait.webp",
-      "key": "lexicon/silence/s8-3-word-portrait.webp",
-      "word": "silence",
-      "line": "Ping by ping I forget what silence means I’m looking for a",
-      "t": 59.234,
-      "score": 0.9,
-      "cosine": 0.539,
-      "reason": "Serene yet lonely image matches song's melancholic mood and theme of silence",
-      "recipe": "3-word-portrait",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wound/s0-4-word-portrait.webp",
+      "key": "lexicon/wound/s0-4-word-portrait.webp",
+      "word": "wound",
+      "line": "night Inbox open like a wound red numbers climbing in my room",
+      "t": 40.425,
+      "score": 0.95,
+      "cosine": 0.487,
+      "reason": "powerful symbolism aligns with digital anxiety and emotional pain",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
-      "key": "lexicon/save/s8-3-neon-sign.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.9,
-      "cosine": 0.521,
-      "reason": "fits digital isolation, urban loneliness, and psychological themes",
-      "recipe": "3-neon-sign",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s2-5-word-neon.webp",
+      "key": "lexicon/broken/s2-5-word-neon.webp",
+      "word": "broken",
+      "line": "in the madness a holy line through broken code If peace is somewhere in",
+      "t": 77.857,
+      "score": 0.95,
+      "cosine": 0.486,
+      "reason": "fits mood and themes of decay and brokenness in digital overload",
+      "recipe": "5-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "dreams they follow me into the night Inbox open like a wound",
-      "t": 37.698,
-      "score": 0.9,
-      "cosine": 0.519,
-      "reason": "matches melancholic mood, urban night, digital anxiety symbolism",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
-      "key": "lexicon/save/s10-2-word-portrait.webp",
-      "word": "save",
-      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
-      "t": 189.359,
-      "score": 0.9,
-      "cosine": 0.479,
-      "reason": "fits mood and themes of digital preservation and emotional neglect",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-2-cinema.webp",
-      "key": "lexicon/violence/s0-2-cinema.webp",
-      "word": "violence",
-      "line": "violence",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.427,
-      "reason": "chaotic, tense imagery matches digital overload and anxiety",
-      "recipe": "2-cinema",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s2-4-anime.webp",
+      "key": "lexicon/memory/s2-4-anime.webp",
+      "word": "memory",
+      "line": "storm folders for the pain Tags for every memory rules for every flame But every time I",
+      "t": 101.889,
+      "score": 0.95,
+      "cosine": 0.481,
+      "reason": "fits mood and themes of memory and decay in digital overload",
+      "recipe": "4-anime",
       "featured": true
     }
   ],
@@ -405,7 +405,7 @@
     "ceasefire": [
       1,
       7,
-      24
+      26
     ],
     "walking": [
       2,
@@ -426,33 +426,37 @@
       13
     ],
     "voice": [
-      10,
-      23
+      10
     ],
     "light": [
       11
     ],
     "silence": [
       12,
-      20,
-      27
+      20
     ],
     "storm": [
       14,
       18,
-      22
+      25
     ],
-    "violence": [
+    "memory": [
       21,
-      25,
       31
     ],
-    "save": [
-      26,
-      28,
+    "wave": [
+      22
+    ],
+    "broken": [
+      23,
       30
     ],
-    "night": [
+    "violence": [
+      24
+    ],
+    "wound": [
+      27,
+      28,
       29
     ]
   }

@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-07-18T10:40:01.399Z",
+  "generatedAt": "2026-07-19T10:48:13.377Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 808,
-    "judged": 24,
-    "accepted": 22,
-    "kept": 22
+    "candidates": 872,
+    "judged": 30,
+    "accepted": 27,
+    "kept": 27
   },
   "reel": [
     {
@@ -31,7 +31,7 @@
       "t": 1.38,
       "score": 1,
       "cosine": 0.452,
-      "reason": "Matches song's nightclub, celebration, and euphoric mood",
+      "reason": "Matches nightclub vibe, celebration, and euphoric mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 101.146,
       "score": 0.95,
       "cosine": 0.559,
-      "reason": "Matches nighttime escapism, urban connection, and sensory warmth",
+      "reason": "Matches nighttime escapism, sensory warmth, and urban intimacy",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 35.225,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "Matches neon glow, intimacy, and warmth in a dim setting",
+      "reason": "Euphoric intimacy through light in a dim setting matches song's mood and themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 99.823,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "Urban nightlife, intimacy, and neon glow align with song's mood and themes.",
+      "reason": "Urban nightlife, intimacy, and euphoria align with the song's theme.",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 43.188,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Matches nighttime intimacy, urban vibe, and sensory warmth of the song",
+      "reason": "Captures nighttime intimacy and urban energy matching song's mood and themes",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Matches party intimacy, retro energy, and summer warmth",
+      "reason": "Matches party atmosphere, warmth, and retro energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 7.44,
       "score": 0.95,
       "cosine": 0.511,
-      "reason": "Euphoric intimacy in a dim bar matches song's nighttime escapism and connection theme.",
+      "reason": "Euphoric, intimate bar scene with spotlight aligns with song's mood and theme of connectio",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 1.38,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Euphoric, intimate, warm nighttime party scene with crowds and lights matches song's mood ",
+      "reason": "Euphoric, intimate, warm crowd under string lights fits the song's nighttime party theme.",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Matches nighttime warmth, intimacy, and escapism",
+      "reason": "Matches nighttime intimacy, warmth, and escapism",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -264,6 +264,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s6-5-dream-collage.webp",
+      "key": "lexicon/wave/s6-5-dream-collage.webp",
+      "word": "wave",
+      "line": "the party Bodies in the same wave Calm but the groove Still feels like",
+      "t": 20.271,
+      "score": 0.9,
+      "cosine": 0.467,
+      "reason": "Ethereal crowd unity under moon aligns with party intimacy and collective motion",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s4-1-dream-collage.webp",
+      "key": "lexicon/wave/s4-1-dream-collage.webp",
+      "word": "wave",
+      "line": "the party Bodies in the same wave Calm but the groove Still feels like",
+      "t": 20.271,
+      "score": 0.9,
+      "cosine": 0.447,
+      "reason": "Surreal wave and hearts match party intimacy and euphoria",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
       "key": "lexicon/light/s25-2-anime.webp",
       "word": "light",
@@ -274,6 +298,42 @@
       "reason": "Fits mood and theme with neon lights and cityscape",
       "recipe": "2-anime",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s3-2-neon-night.webp",
+      "key": "lexicon/wave/s3-2-neon-night.webp",
+      "word": "wave",
+      "line": "the party Bodies in the same wave Calm but the groove Still feels like",
+      "t": 20.271,
+      "score": 0.6,
+      "cosine": 0.479,
+      "reason": "Urban chaos and neon fit the party vibe, but isolation clashes with song's intimacy",
+      "recipe": "2-neon-night",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s1-2-word-neon.webp",
+      "key": "lexicon/memory/s1-2-word-neon.webp",
+      "word": "memory",
+      "line": "Then they slide away Vinyl crackle holds the memory Of this perfect day Last chord",
+      "t": 95.456,
+      "score": 0.6,
+      "cosine": 0.477,
+      "reason": "Nostalgic and urban, but lacks the euphoric intimacy of the song",
+      "recipe": "2-word-neon",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s3-2-word-portrait.webp",
+      "key": "lexicon/memory/s3-2-word-portrait.webp",
+      "word": "memory",
+      "line": "Then they slide away Vinyl crackle holds the memory Of this perfect day Last chord",
+      "t": 95.456,
+      "score": 0.6,
+      "cosine": 0.432,
+      "reason": "Nostalgic but lacks party atmosphere and euphoria",
+      "recipe": "2-word-portrait",
+      "featured": false
     }
   ],
   "byWord": {
@@ -299,7 +359,7 @@
     "light": [
       5,
       10,
-      21
+      23
     ],
     "walk": [
       7,
@@ -314,6 +374,15 @@
       11,
       13,
       14
+    ],
+    "wave": [
+      21,
+      22,
+      24
+    ],
+    "memory": [
+      25,
+      26
     ]
   }
 }

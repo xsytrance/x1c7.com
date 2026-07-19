@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "membrane-still-insane",
-  "generatedAt": "2026-07-18T10:51:11.370Z",
+  "generatedAt": "2026-07-19T11:02:44.559Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -79,7 +79,7 @@
       "t": 80.26,
       "score": 1,
       "cosine": 0.732,
-      "reason": "Perfect fit with cartoon villain, fog, and noir-cartoon hybrid",
+      "reason": "Perfect fit with cartoon villain, fog, noir-cartoon blend, and madness themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 8.069,
       "score": 1,
       "cosine": 0.728,
-      "reason": "Perfectly aligns with song's gritty noir-cartoon atmosphere and themes",
+      "reason": "Perfectly aligns with song's noir-cartoon, gritty, and fractured sanity themes.",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 45.047,
       "score": 1,
       "cosine": 0.705,
-      "reason": "Perfectly matches song's noir-cartoon, riverboat crime, and sinister playfulness",
+      "reason": "Perfect fit for song's noir-cartoon chaos and riverboat flames",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 174.566,
       "score": 1,
       "cosine": 0.679,
-      "reason": "Perfectly aligns with song's gritty noir-cartoon atmosphere and themes",
+      "reason": "Perfect fit with boiler, smoke, and noir-cartoon atmosphere",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -192,18 +192,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
-      "key": "lexicon/body/s4-3-manga-line.webp",
-      "word": "body",
-      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
-      "t": 159.858,
-      "score": 0.98,
-      "cosine": 0.591,
-      "reason": "Perfectly aligns with noir-cartoon grit, fractured sanity, and thematic elements",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flames/s1-2-dream-collage.webp",
       "key": "lexicon/flames/s1-2-dream-collage.webp",
       "word": "flames",
@@ -211,7 +199,7 @@
       "t": 45.047,
       "score": 0.95,
       "cosine": 0.739,
-      "reason": "Strong noir-cartoon visuals align with song's mood and themes",
+      "reason": "matches noir-cartoon mood, flames as torment, eyes as madness",
       "recipe": "2-dream-collage",
       "featured": true
     },
@@ -259,7 +247,7 @@
       "t": 73.954,
       "score": 0.95,
       "cosine": 0.647,
-      "reason": "fits noir-cartoon tone, gold as corruption, skeletal figures align with madness theme",
+      "reason": "fits noir-cartoon vibe, gold as corruption, skeletal figures align with madness theme",
       "recipe": "4-graphic-novel",
       "featured": true
     },
@@ -319,8 +307,20 @@
       "t": 159.858,
       "score": 0.95,
       "cosine": 0.619,
-      "reason": "Matches noir-cartoon mood, riverboat setting, and fractured sanity themes",
+      "reason": "Strong visual alignment with song's noir-cartoon world and themes of fractured sanity",
       "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
+      "key": "lexicon/body/s4-3-manga-line.webp",
+      "word": "body",
+      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
+      "t": 159.858,
+      "score": 0.95,
+      "cosine": 0.591,
+      "reason": "Strong alignment with noir-cartoon, fractured sanity, and gritty tension",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -331,7 +331,7 @@
       "t": 126.909,
       "score": 0.95,
       "cosine": 0.589,
-      "reason": "matches noir-cartoon aesthetic, fractured sanity, urban decay, and neon symbolism",
+      "reason": "fits noir-cartoon aesthetic, fractured sanity, urban decay",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 104.896,
       "score": 0.95,
       "cosine": 0.54,
-      "reason": "fits noir-cartoon chaos, fractured sanity, and sinister playfulness",
+      "reason": "matches noir-cartoon chaos, fractured sanity, and sinister playfulness",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -408,13 +408,13 @@
     ],
     "gold": [
       2,
-      20,
-      21
+      19,
+      20
     ],
     "boiler": [
       3,
       10,
-      24
+      23
     ],
     "night": [
       4,
@@ -423,16 +423,16 @@
     "flames": [
       7,
       8,
-      16
+      15
     ],
     "hands": [
       9,
-      18,
+      17,
       28
     ],
     "body": [
       11,
-      15,
+      24,
       25
     ],
     "move": [
@@ -444,15 +444,15 @@
       29
     ],
     "storm": [
-      17,
+      16,
       27
     ],
     "membrane": [
-      19
+      18
     ],
     "drip": [
-      22,
-      23
+      21,
+      22
     ],
     "river": [
       31

@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-07-18T10:51:21.201Z",
+  "generatedAt": "2026-07-19T11:02:55.786Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {

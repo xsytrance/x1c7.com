@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-07-18T10:42:15.170Z",
+  "generatedAt": "2026-07-19T10:51:16.910Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 659,
-    "judged": 18,
-    "accepted": 17,
-    "kept": 17
+    "candidates": 727,
+    "judged": 21,
+    "accepted": 19,
+    "kept": 19
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 36.711,
       "score": 1,
       "cosine": 0.532,
-      "reason": "Symbolism aligns perfectly with song's themes of emotional burnout and toxic dependency.",
+      "reason": "Symbolism aligns with toxic love, emotional wreckage, and resolute self-preservation.",
       "recipe": "6-film-still",
       "featured": true
     },
@@ -33,6 +33,18 @@
       "cosine": 0.471,
       "reason": "Symbolizes hope and self-preservation in a decaying space, aligns with song's themes and m",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s19-5-cinema.webp",
+      "key": "lexicon/light/s19-5-cinema.webp",
+      "word": "light",
+      "line": "But I 'll leave you the light",
+      "t": 294.139,
+      "score": 0.95,
+      "cosine": 0.462,
+      "reason": "Symbolizes fragile hope (candle) vs. emotional barriers (thorns), fits resolute melancholy",
+      "recipe": "5-cinema",
       "featured": true
     },
     {
@@ -55,7 +67,7 @@
       "t": 36.711,
       "score": 0.9,
       "cosine": 0.555,
-      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood.",
+      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -67,20 +79,8 @@
       "t": 26.088,
       "score": 0.9,
       "cosine": 0.472,
-      "reason": "Symbolizes fragility, isolation, and emotional barriers",
+      "reason": "Symbolizes fragility, isolation, and emotional barriers aligning with song's themes",
       "recipe": "1-analog",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s19-5-cinema.webp",
-      "key": "lexicon/light/s19-5-cinema.webp",
-      "word": "light",
-      "line": "But I 'll leave you the light",
-      "t": 294.139,
-      "score": 0.9,
-      "cosine": 0.462,
-      "reason": "Symbolizes fragile hope (light) amid emotional barriers (thorns), matching resolute melanc",
-      "recipe": "5-cinema",
       "featured": true
     },
     {
@@ -120,6 +120,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s11-4-cinema.webp",
+      "key": "lexicon/beat/s11-4-cinema.webp",
+      "word": "beat",
+      "line": "80 8 He art beat under the floor I won 't",
+      "t": 33.08,
+      "score": 0.9,
+      "cosine": 0.409,
+      "reason": "Echoes heartbeat, solitude, and quiet resilience align with song's mood and themes",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s12-5-word-portrait.webp",
       "key": "lexicon/slow/s12-5-word-portrait.webp",
       "word": "slow",
@@ -151,8 +163,20 @@
       "t": 259.832,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Captures melancholy, boundaries, and digital chaos in love",
+      "reason": "Captures melancholy, digital chaos, and self-boundaries",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-3-word-portrait.webp",
+      "key": "lexicon/beat/s0-3-word-portrait.webp",
+      "word": "beat",
+      "line": "80 8 He art beat under the floor I won 't",
+      "t": 33.08,
+      "score": 0.9,
+      "cosine": 0.362,
+      "reason": "Resonates with resolute mood and themes of boundaries",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -163,7 +187,7 @@
       "t": 26.088,
       "score": 0.85,
       "cosine": 0.497,
-      "reason": "Symbolizes fragility and clarity amid emotional chaos",
+      "reason": "Symbolizes fragility and clarity amidst emotional chaos",
       "recipe": "5-watercolor",
       "featured": true
     },
@@ -175,7 +199,7 @@
       "t": 36.711,
       "score": 0.85,
       "cosine": 0.497,
-      "reason": "Symbolizes defiance and resilience aligns with self-preservation and resolute mood",
+      "reason": "Symbolism aligns with fire as defiance and resilience, matching the song's resolute mood a",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -199,7 +223,7 @@
       "t": 259.832,
       "score": 0.85,
       "cosine": 0.368,
-      "reason": "Captures digital isolation and hollow connections aligning with toxic dependency and emoti",
+      "reason": "Symbolizes hollow digital love, fits melancholic resolute mood",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -211,7 +235,7 @@
       "t": 294.139,
       "score": 0.8,
       "cosine": 0.439,
-      "reason": "Symbolizes hope and warmth amid emotional isolation and resolute self-preservation",
+      "reason": "Symbolizes hope and warmth amidst emotional isolation and resolute self-preservation",
       "recipe": "5-dark-surreal",
       "featured": true
     }
@@ -219,32 +243,36 @@
   "byWord": {
     "fire": [
       0,
-      3,
-      13
+      4,
+      15
     ],
     "light": [
       1,
-      5,
-      16
+      2,
+      18
     ],
     "silence": [
-      2,
+      3,
       7,
       8
     ],
     "glass": [
-      4,
-      12,
-      14
+      5,
+      14,
+      16
     ],
     "slow": [
       6,
+      10,
+      11
+    ],
+    "beat": [
       9,
-      10
+      13
     ],
     "love": [
-      11,
-      15
+      12,
+      17
     ]
   }
 }

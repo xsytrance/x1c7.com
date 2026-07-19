@@ -60,14 +60,14 @@ export function BookletBuilder({ project, artUrl, artDim, artImg }: {
         {read && <p className={`${HINT} text-amber-400/80`}>{read} <span className="text-zinc-700">(our read of your lyrics)</span></p>}
         <div className="space-y-2">
           {(Object.keys(PRESETS) as BookletState["preset"][]).map((k) => {
-            const locked = k === "deluxe";
+            const locked = k === "deluxe" && !project.analysis?.sources?.includes("stems");
             return (
               <button key={k} disabled={locked} onClick={() => setBooklet(newBooklet(k))}
                 className={`block w-full rounded-xl border p-3 text-left transition ${locked ? "cursor-not-allowed border-zinc-800/60 opacity-50" : k === "classic" ? "border-amber-400/40 hover:border-amber-400/80" : "border-zinc-800 hover:border-zinc-600"}`}>
                 <p className={`text-xs font-black uppercase tracking-[0.15em] ${k === "classic" ? "text-amber-300" : "text-zinc-300"}`}>
                   {PRESETS[k].label} {k === "classic" && <span className="ml-1 text-[9px] text-amber-500/70">recommended</span>}
                 </p>
-                <p className={HINT}>{PRESETS[k].blurb}{locked ? " — the Band and Map pages feed on stems; they unlock next expansion" : ""}</p>
+                <p className={HINT}>{PRESETS[k].blurb}{locked ? " — locked: feed me your stems zip and it opens" : ""}</p>
               </button>
             );
           })}
@@ -123,7 +123,7 @@ export function BookletBuilder({ project, artUrl, artDim, artImg }: {
         {busy ? "binding…" : "BIND IT — imposed PDF + fold guide"}
       </button>
       {msg && <p className={`${HINT} text-center`}>{msg}</p>}
-      <p className={HINT}>Print duplex ("flip on short edge"), cut at the marks, fold at the dashed line, two staples on the spine. The last PDF page walks you through it.</p>
+      <p className={HINT}>Print duplex (&quot;flip on short edge&quot;), cut at the marks, fold at the dashed line, two staples on the spine. The last PDF page walks you through it.</p>
     </div>
   );
 }

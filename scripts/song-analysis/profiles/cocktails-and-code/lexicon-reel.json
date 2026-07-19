@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-07-18T10:29:06.384Z",
+  "generatedAt": "2026-07-19T10:32:30.492Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1433,
-    "judged": 58,
-    "accepted": 49,
+    "candidates": 1529,
+    "judged": 64,
+    "accepted": 53,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 39.056,
       "score": 0.95,
       "cosine": 0.704,
-      "reason": "Symbolizes code as fire, fits nocturnal focus and digital alchemy",
+      "reason": "Symbolizes digital alchemy, late-night focus, and empowerment through flame imagery",
       "recipe": "2-dark-surreal",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 73.208,
       "score": 0.95,
       "cosine": 0.685,
-      "reason": "fits nocturnal focus, digital alchemy, and technological hope",
+      "reason": "fits mood, themes, and symbolism of late-night focus and technological hope",
       "recipe": "2-oil-light",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 6.502,
       "score": 0.95,
       "cosine": 0.665,
-      "reason": "Matches nocturnal tech focus, calm glow, and minimalist tech aesthetics",
+      "reason": "Matches nocturnal tech focus, calm glow, and minimalist tech serenity",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.615,
-      "reason": "fits late-night focus, urban solitude, digital creation",
+      "reason": "fits late-night coding, urban solitude, digital creation",
       "recipe": "2",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 87.515,
       "score": 0.95,
       "cosine": 0.595,
-      "reason": "Captures nocturnal focus, digital alchemy, and urban solitude",
+      "reason": "Captures nocturnal focus, urban solitude, and digital creativity",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 209.839,
       "score": 0.95,
       "cosine": 0.581,
-      "reason": "fits nocturnal urban mood, symbolizes digital hope and creative potential",
+      "reason": "fits nocturnal urban mood, symbolizes creative potential and digital hope",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 20.921,
       "score": 0.95,
       "cosine": 0.557,
-      "reason": "fits nocturnal mood, urban solitude, and contemplation",
+      "reason": "fits nocturnal mood, urban solitude, and late-night focus",
       "recipe": "1-film-still",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 87.515,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "fits nocturnal mood, urban solitude, digital symbolism",
+      "reason": "Neon soul imagery fits nocturnal, urban, creative mood",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -216,6 +216,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s8-5-word-neon.webp",
+      "key": "lexicon/sky/s8-5-word-neon.webp",
+      "word": "sky",
+      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
+      "t": 209.839,
+      "score": 0.95,
+      "cosine": 0.533,
+      "reason": "fits nocturnal mood, urban solitude, digital aspiration",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
       "key": "lexicon/night/s1-3-word-portrait.webp",
       "word": "night",
@@ -225,18 +237,6 @@
       "cosine": 0.648,
       "reason": "Matches nocturnal mood, suburban solitude, and digital creation themes",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s14-5-concept-art.webp",
-      "key": "lexicon/glow/s14-5-concept-art.webp",
-      "word": "glow",
-      "line": "Summer night laptop glow Little ice in the glass",
-      "t": 6.502,
-      "score": 0.9,
-      "cosine": 0.645,
-      "reason": "Matches nocturnal tech theme, cool isolation, glow of screen and ice",
-      "recipe": "5-concept-art",
       "featured": true
     },
     {
@@ -271,7 +271,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.591,
-      "reason": "fits nocturnal mood, urban setting, dream symbolism",
+      "reason": "fits nocturnal mood, urban setting, surreal glow aligns with dream theme",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.591,
-      "reason": "fits nocturnal mood, urban setting, neon symbolism aligns with digital alchemy",
+      "reason": "fits nocturnal mood, urban setting, neon symbolism",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 73.208,
       "score": 0.9,
       "cosine": 0.561,
-      "reason": "fits nocturnal focus, rhythm as creative pulse, vintage nostalgia",
+      "reason": "fits nocturnal focus, rhythm as creative pulse, vintage ambiance",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -360,39 +360,39 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s8-5-word-neon.webp",
-      "key": "lexicon/sky/s8-5-word-neon.webp",
-      "word": "sky",
-      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
-      "t": 209.839,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s2-4-word-portrait.webp",
+      "key": "lexicon/ice/s2-4-word-portrait.webp",
+      "word": "ice",
+      "line": "laptop glow Little ice in the glass We working different now Come on",
+      "t": 8.301,
       "score": 0.9,
-      "cosine": 0.533,
-      "reason": "fits nocturnal mood, urban solitude, digital aspiration",
-      "recipe": "5-word-neon",
+      "cosine": 0.542,
+      "reason": "fits nocturnal, digital, fragile beauty of ice in tech context",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
-      "key": "lexicon/different/s6-3-word-neon.webp",
-      "word": "different",
-      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
-      "t": 10.159,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s3-4-neon-sign.webp",
+      "key": "lexicon/beat/s3-4-neon-sign.webp",
+      "word": "beat",
+      "line": "but it feel like that When the idea hits and the beat comes back Bassline walking like it knows my",
+      "t": 136.753,
       "score": 0.9,
-      "cosine": 0.489,
-      "reason": "fits nocturnal urban mood, neon reflects digital alchemy and individuality",
-      "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s3-4-neon-sign.webp",
-      "key": "lexicon/different/s3-4-neon-sign.webp",
-      "word": "different",
-      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
-      "t": 10.159,
-      "score": 0.9,
-      "cosine": 0.484,
-      "reason": "fits nocturnal, digital, urban, hopeful mood and themes",
+      "cosine": 0.523,
+      "reason": "fits nocturnal, urban, digital energy and emotion",
       "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-3-word-portrait.webp",
+      "key": "lexicon/beat/s0-3-word-portrait.webp",
+      "word": "beat",
+      "line": "but it feel like that When the idea hits and the beat comes back Bassline walking like it knows my",
+      "t": 136.753,
+      "score": 0.9,
+      "cosine": 0.522,
+      "reason": "fits nocturnal focus, solitary creation, and symbolic beat",
+      "recipe": "3-word-portrait",
       "featured": true
     }
   ],
@@ -412,7 +412,6 @@
     ],
     "glow": [
       3,
-      18,
       20
     ],
     "summer": [
@@ -430,7 +429,7 @@
     ],
     "sky": [
       12,
-      29
+      17
     ],
     "move": [
       13,
@@ -442,7 +441,7 @@
       28
     ],
     "night": [
-      17,
+      18,
       19
     ],
     "dream": [
@@ -453,7 +452,10 @@
       23,
       25
     ],
-    "different": [
+    "ice": [
+      29
+    ],
+    "beat": [
       30,
       31
     ]

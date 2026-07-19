@@ -1,28 +1,16 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-07-18T10:37:30.758Z",
+  "generatedAt": "2026-07-19T10:45:06.480Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1585,
-    "judged": 60,
-    "accepted": 30,
-    "kept": 30
+    "candidates": 1714,
+    "judged": 64,
+    "accepted": 32,
+    "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
-      "key": "lexicon/pressure/s0-1.webp",
-      "word": "pressure",
-      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
-      "t": 58.364,
-      "score": 1,
-      "cosine": 0.528,
-      "reason": "Image perfectly embodies external pressure and internal struggle in a gritty gym setting.",
-      "recipe": "1",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
       "key": "lexicon/pressure/s0-2.webp",
@@ -79,7 +67,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Powerful imagery matches relentless grit and internal struggle",
+      "reason": "Powerful imagery matches relentless grit and internal determination",
       "recipe": "1-film-still",
       "featured": true
     },
@@ -91,7 +79,7 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, determination, and gym setting",
+      "reason": "Powerful imagery aligns with grit, fire as inner determination, gym setting matches song's",
       "recipe": "5-photo",
       "featured": true
     },
@@ -105,6 +93,30 @@
       "cosine": 0.537,
       "reason": "fits gritty mood, cold as emotional numbness, abandoned gym aligns with solitary struggle",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+      "key": "lexicon/pressure/s0-1.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.95,
+      "cosine": 0.528,
+      "reason": "Powerful imagery aligns with internal struggle and external pressure themes",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.95,
+      "cosine": 0.525,
+      "reason": "Symbolism aligns with fire as inner drive and grit",
+      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -127,7 +139,7 @@
       "t": 22.849,
       "score": 0.95,
       "cosine": 0.518,
-      "reason": "Matches gritty gym determination and solitary struggle",
+      "reason": "Matches gritty gym resolve, backpack as burden, orange jacket symbolizes perseverance",
       "recipe": "5-stickers",
       "featured": true
     },
@@ -153,18 +165,6 @@
       "cosine": 0.505,
       "reason": "Symbolizes inner fire and resilience in a gritty, intense setting",
       "recipe": "4-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
-      "key": "lexicon/summer/s8-2-photo.webp",
-      "word": "summer",
-      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
-      "t": 189.939,
-      "score": 0.95,
-      "cosine": 0.497,
-      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort and transformation",
-      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -199,7 +199,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.473,
-      "reason": "Relentless sprinting, gritty urban setting, and symbolic vintage car align with the song's",
+      "reason": "Relentless effort, gritty urban struggle, and tangible goal align with the song's themes o",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 34.911,
       "score": 0.95,
       "cosine": 0.42,
-      "reason": "Power struggle and intensity match the song's relentless grit and internal battle",
+      "reason": "Tense hands in dark room match gritty determination and internal struggle",
       "recipe": "6-graphic-novel",
       "featured": true
     },
@@ -252,30 +252,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-2.webp",
-      "key": "lexicon/crown/s0-2.webp",
-      "word": "crown",
-      "line": "still follow through I dont need applause I dont need a crown I need one more rep when I wanna sit down",
-      "t": 166.01,
-      "score": 0.95,
-      "cosine": 0.383,
-      "reason": "Symbolism aligns with solitary struggle and determination",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
-      "t": 142.385,
-      "score": 0.9,
-      "cosine": 0.525,
-      "reason": "Symbolizes inner drive and discipline through fire and music",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-4-film-still.webp",
       "key": "lexicon/walk/s3-4-film-still.webp",
       "word": "walk",
@@ -288,6 +264,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
+      "key": "lexicon/summer/s8-2-photo.webp",
+      "word": "summer",
+      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
+      "t": 189.939,
+      "score": 0.9,
+      "cosine": 0.497,
+      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-5-word-portrait.webp",
       "key": "lexicon/cut/s3-5-word-portrait.webp",
       "word": "cut",
@@ -295,8 +283,20 @@
       "t": 218.326,
       "score": 0.9,
       "cosine": 0.465,
-      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit aligns with song",
+      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit aligns with theme",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-3-word-portrait.webp",
+      "key": "lexicon/beat/s0-3-word-portrait.webp",
+      "word": "beat",
+      "line": "Beat drop",
+      "t": 0.023,
+      "score": 0.9,
+      "cosine": 0.432,
+      "reason": "Strong symbolism, solitary figure, industrial setting, dramatic lighting align with grit a",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -312,30 +312,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s1-2-graphic-novel.webp",
-      "key": "lexicon/road/s1-2-graphic-novel.webp",
-      "word": "road",
-      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
-      "t": 196.451,
-      "score": 0.85,
-      "cosine": 0.35,
-      "reason": "Relentless grit, journey, resilience align with song's themes",
-      "recipe": "2-graphic-novel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s0-3-anime.webp",
-      "key": "lexicon/road/s0-3-anime.webp",
-      "word": "road",
-      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
-      "t": 196.451,
-      "score": 0.85,
-      "cosine": 0.347,
-      "reason": "fits gritty mood, journey/resilience align with discipline theme",
-      "recipe": "3-anime",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s17-2-film-still.webp",
       "key": "lexicon/hands/s17-2-film-still.webp",
       "word": "hands",
@@ -348,6 +324,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s5-6-word-portrait.webp",
+      "key": "lexicon/road/s5-6-word-portrait.webp",
+      "word": "road",
+      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
+      "t": 196.451,
+      "score": 0.8,
+      "cosine": 0.423,
+      "reason": "Symbolizes journey and discipline; aligns with grit and determination",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s2-1-word-portrait.webp",
+      "key": "lexicon/road/s2-1-word-portrait.webp",
+      "word": "road",
+      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
+      "t": 196.451,
+      "score": 0.8,
+      "cosine": 0.391,
+      "reason": "Symbolizes journey and perseverance, fits gritty determination and solitary struggle",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-1-neon-sign.webp",
       "key": "lexicon/break/s6-1-neon-sign.webp",
       "word": "break",
@@ -355,9 +355,33 @@
       "t": 138.67,
       "score": 0.7,
       "cosine": 0.407,
-      "reason": "fits gritty mood, emotional release aligns with struggle",
+      "reason": "raw emotion aligns with grit; urban setting fits solitary struggle",
       "recipe": "1-neon-sign",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s6-1-photo.webp",
+      "key": "lexicon/road/s6-1-photo.webp",
+      "word": "road",
+      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
+      "t": 196.451,
+      "score": 0.6,
+      "cosine": 0.401,
+      "reason": "Captures isolation and journey but lacks grit and determination",
+      "recipe": "1-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s11-1-photo.webp",
+      "key": "lexicon/body/s11-1-photo.webp",
+      "word": "body",
+      "line": "summer but I dont daydream I put that beach body under a machine I put that cocktail far",
+      "t": 192.807,
+      "score": 0.6,
+      "cosine": 0.398,
+      "reason": "isolated figure in gym reflects solitary struggle but lacks intensity of relentless grit",
+      "recipe": "1-photo",
+      "featured": false
     },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s9-2-photo.webp",
@@ -367,7 +391,7 @@
       "t": 138.67,
       "score": 0.6,
       "cosine": 0.364,
-      "reason": "Symbolizes fracture and endurance in a gritty urban setting",
+      "reason": "Crack symbolizes breaking, fits gritty urban decay and internal struggle",
       "recipe": "2-photo",
       "featured": false
     }
@@ -375,63 +399,67 @@
   "byWord": {
     "pressure": [
       0,
-      1
+      7
     ],
     "drip": [
-      2
+      1
     ],
     "move": [
-      3,
-      5,
+      2,
+      4,
       15
     ],
     "night": [
-      4,
+      3,
       24
     ],
     "fire": [
-      6,
-      11,
-      21
-    ],
-    "cold": [
-      7,
-      10
-    ],
-    "body": [
+      5,
       8,
-      13
-    ],
-    "walk": [
-      9,
-      16,
-      22
-    ],
-    "summer": [
       12
     ],
-    "crown": [
-      14,
+    "cold": [
+      6,
+      11
+    ],
+    "body": [
+      9,
+      13,
+      30
+    ],
+    "walk": [
+      10,
+      16,
       20
+    ],
+    "crown": [
+      14
     ],
     "voice": [
       17
     ],
     "hands": [
       18,
-      27
+      25
     ],
     "cut": [
       19,
+      22
+    ],
+    "summer": [
+      21
+    ],
+    "beat": [
       23
     ],
     "road": [
-      25,
-      26
+      26,
+      27,
+      29
     ],
     "break": [
       28,
-      29
+      31
     ]
   }
 }

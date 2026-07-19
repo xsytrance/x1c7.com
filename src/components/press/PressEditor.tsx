@@ -15,7 +15,8 @@ import { projectStore, useProject, newProject } from "@/lib/press/state/projectS
 import { loadProject, putAsset, getAsset } from "@/lib/press/state/persist";
 import { audioFacts } from "@/lib/press/analysis/audioFacts";
 import { classifyPaste, descriptorWords, type PasteKind } from "@/lib/press/analysis/intake";
-import { recommend, dominantHue } from "@/lib/press/analysis/recommend";
+import { recommend, dominantHue, isShelved, surpriseMe } from "@/lib/press/analysis/recommend";
+import { SeedDrawer } from "./SeedDrawer";
 import type { AnalysisSummary } from "@/lib/press/types";
 import { BookletBuilder } from "./BookletBuilder";
 import { IntakeLedger } from "./IntakeLedger";
@@ -105,6 +106,53 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
     });
     mergeAnalysis({ bpm: facts.bpm, duration: facts.duration, peaks: facts.peaks, sources: ["audio"] });
     setMsg(`✓ measured: ${facts.runtime}${facts.bpm ? ` · ~${facts.bpm} BPM (estimate)` : ""} — waveform on the spine`);
+  }
+
+  async function onStems(f: File | null) {
+    if (!f) return;
+    setMsg("chewing your stems on this device — nothing leaves…");
+    try {
+      const { loadStemZip } = await import("@/lib/press/analysis/stemZip");
+      const { analyzeStemFacts } = await import("@/lib/press/analysis/stemAnalysis");
+      const stems = await loadStemZip(f, (m) => setMsg(m));
+      const facts = await analyzeStemFacts(stems, (m) => setMsg(m));
+      projectStore.apply((d) => {
+        if (!d.facts.peaks) d.facts.peaks = facts.peaks;
+        d.facts.duration = facts.duration;
+        if (!d.facts.runtime) d.facts.runtime = `${Math.floor(facts.duration / 60)}:${String(Math.round(facts.duration % 60)).padStart(2, "0")}`;
+      });
+      mergeAnalysis({ bpm: facts.bpm, duration: facts.duration, sections: facts.sections, roster: facts.roster, sideSplit: facts.sideSplit, sources: ["stems"] });
+      setMsg(`✓ the band: ${facts.roster.length} stems · ${facts.sections.length} sections · ~${facts.bpm} BPM${facts.sideSplit ? ` · flip at ${Math.floor(facts.sideSplit / 60)}:${String(Math.round(facts.sideSplit % 60)).padStart(2, "0")}` : ""} — the DELUXE booklet just unlocked`);
+    } catch (e) {
+      setMsg(`stems: ${(e as Error).message}`);
+    }
+  }
+
+  const [director, setDirector] = useState<import("@/lib/press/analysis/aiAnalyze").ArtDirection | null>(null);
+  const [directorBusy, setDirectorBusy] = useState(false);
+  async function askDirector() {
+    if (directorBusy) return;
+    setDirectorBusy(true); setMsg("asking the house art director (title + lyrics only)…");
+    try {
+      const { houseKeyLive, artDirectorTaste } = await import("@/lib/press/analysis/aiAnalyze");
+      if (!(await houseKeyLive())) { setMsg("the house key is off right now — the deterministic engine above never sleeps"); setDirectorBusy(false); return; }
+      const out = await artDirectorTaste({ title: project.identity.title, lyrics: project.lyrics, styleWords: project.analysis?.styleWords ?? undefined });
+      setDirector(out);
+      setMsg(`the director pitched ${out.concepts.length} concepts`);
+    } catch (e) {
+      setMsg(`art director: ${(e as Error).message}`);
+    }
+    setDirectorBusy(false);
+  }
+
+  const [surpriseRoll, setSurpriseRoll] = useState(0);
+  const [receipts, setReceipts] = useState<string[] | null>(null);
+  function doSurprise() {
+    const { next, receipts: r } = surpriseMe(project, { artHue }, surpriseRoll);
+    projectStore.apply(() => next);
+    setReceipts(r);
+    setSurpriseRoll((v) => v + 1);
+    setSurfaceId(null);
   }
 
   function onPaste() {
@@ -263,6 +311,8 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
             ))}
           </div>
           <span className="flex gap-1">
+            <button onClick={doSurprise} title="derive everything derivable, with receipts"
+              className="rounded-full border border-amber-400/40 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-300/90 hover:bg-amber-400/10">surprise me</button>
             <button onClick={() => projectStore.undo()} disabled={!projectStore.canUndo()} title="undo (ctrl-z)"
               className="rounded-full border border-zinc-800 px-2.5 py-1 text-xs text-zinc-500 disabled:opacity-30">↺</button>
             <button onClick={() => projectStore.redo()} disabled={!projectStore.canRedo()} title="redo"
@@ -281,6 +331,11 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
             <div>
               <p className={HINT}>Audio → true waveform, runtime, BPM</p>
               <input type="file" accept="audio/*" onChange={(e) => onAudio(e.target.files?.[0] || null)}
+                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
+            </div>
+            <div>
+              <p className={HINT}>Suno stems zip → the band, sections, the tape flip, DELUXE booklet</p>
+              <input type="file" accept=".zip,application/zip" onChange={(e) => onStems(e.target.files?.[0] || null)}
                 className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
             </div>
             <div>
@@ -362,7 +417,12 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
                 <p className={HINT}>Palette</p>
                 <select value={id.paletteKey ?? "auto"} onChange={(e) => setId({ paletteKey: e.target.value === "auto" ? null : e.target.value })} className={FIELD}>
                   <option value="auto">auto — {COLLECTOR_PALETTES[autoKey].label}</option>
-                  {Object.entries(COLLECTOR_PALETTES).map(([k, p]) => <option key={k} value={k}>{p.label}</option>)}
+                  {Object.entries(COLLECTOR_PALETTES).filter(([k]) => !isShelved(k, project.analysis?.exclusions)).map(([k, p]) => <option key={k} value={k}>{p.label}</option>)}
+                  {Object.entries(COLLECTOR_PALETTES).some(([k]) => isShelved(k, project.analysis?.exclusions)) && (
+                    <optgroup label="⊘ shelved by your exclusions">
+                      {Object.entries(COLLECTOR_PALETTES).filter(([k]) => isShelved(k, project.analysis?.exclusions)).map(([k, p]) => <option key={k} value={k}>⊘ {p.label}</option>)}
+                    </optgroup>
+                  )}
                 </select>
               </div>
               <div>
@@ -375,6 +435,39 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
               </div>
             </div>
             <p className={HINT}>The header band, seal monogram, and footer carry your imprint — it&apos;s your case, not ours.</p>
+            <div className="border-t border-zinc-800 pt-3">
+              <SeedDrawer lyrics={project.lyrics} />
+            </div>
+            <div className="border-t border-zinc-800 pt-3">
+              <div className="flex items-center justify-between">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500">✦ Art director</p>
+                <button onClick={askDirector} disabled={directorBusy || !project.identity.title}
+                  className="rounded-full border border-zinc-700 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 transition hover:border-amber-400/60 hover:text-amber-300 disabled:opacity-40">
+                  {directorBusy ? "thinking…" : "a taste, on the house"}
+                </button>
+              </div>
+              <p className={HINT}>Cloud AI, no key needed — the house lends one (free models, fair-use limited). <span className="text-amber-500/70">Only your title + lyrics transit</span>; stems, audio, and art never do. Dead house key? Everything above still works.</p>
+              {director && (
+                <div className="mt-2 space-y-1.5">
+                  {director.mood && <p className={HINT}>the read: <b className="text-zinc-400">{director.mood}</b></p>}
+                  {director.concepts.map((c, i) => (
+                    <button key={i} onClick={() => { void navigator.clipboard.writeText(c.prompt); setMsg(`"${c.name}" prompt copied`); }}
+                      className="block w-full rounded-lg border border-zinc-800 px-3 py-2 text-left transition hover:border-amber-400/50">
+                      <span className="block text-[11px] font-semibold uppercase tracking-wider text-amber-300/90">{c.name}</span>
+                      <span className={`${HINT} line-clamp-2 block`}>{c.prompt}</span>
+                    </button>
+                  ))}
+                  {director.spineWords.length > 0 && (
+                    <p className={HINT}>spine picks:{" "}
+                      {director.spineWords.map((w) => (
+                        <button key={w} onClick={() => projectStore.apply((d) => { d.identity.spineWord = w.toUpperCase(); })}
+                          className="mr-1.5 underline decoration-dotted hover:text-amber-300">{w.toUpperCase()}</button>
+                      ))}
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
         )}
 
@@ -403,6 +496,16 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
                 <input type="checkbox" checked={!!id.unreleased} onChange={(e) => setId({ unreleased: e.target.checked })} className="accent-amber-400" /> unreleased
               </label>
             </div>
+          </div>
+        )}
+
+        {receipts && (
+          <div className="rounded-xl border border-amber-400/25 bg-amber-400/5 p-3">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-300/80">here&apos;s what I chose, and why</p>
+            <ul className="mt-1 space-y-0.5">
+              {receipts.map((r, i) => <li key={i} className={HINT}>· {r}</li>)}
+            </ul>
+            <p className={`${HINT} mt-1 text-zinc-700`}>hit SURPRISE ME again to re-roll · ctrl-z undoes the lot</p>
           </div>
         )}
 

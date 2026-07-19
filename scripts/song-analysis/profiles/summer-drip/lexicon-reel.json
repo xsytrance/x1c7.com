@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-07-18T10:58:03.111Z",
+  "generatedAt": "2026-07-19T11:11:45.918Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1883,
+    "candidates": 2027,
     "judged": 64,
     "accepted": 49,
     "kept": 32
@@ -55,7 +55,7 @@
       "t": 9.36,
       "score": 1,
       "cosine": 0.516,
-      "reason": "Perfectly aligns with summer nights, confidence, and luxury themes.",
+      "reason": "Perfectly aligns with summer, confidence, and luxury themes.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 157.257,
       "score": 0.95,
       "cosine": 0.533,
-      "reason": "Matches sultry club vibe, summer heat, and confident energy",
+      "reason": "matches sultry club vibe, summer heat, confident energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -223,20 +223,8 @@
       "t": 45.535,
       "score": 0.95,
       "cosine": 0.418,
-      "reason": "Sultry, intimate, and confident mood matches the song's themes",
+      "reason": "Sultry, intimate, and confident atmosphere matches the song's mood and themes",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/push/s1-1-word-portrait.webp",
-      "key": "lexicon/push/s1-1-word-portrait.webp",
-      "word": "push",
-      "line": "air but the eyes stay prayin' Mind, mind, doin' push -ups Guard, keep pace",
-      "t": 228.04,
-      "score": 0.95,
-      "cosine": 0.413,
-      "reason": "Confident, sultry presence matches song's mood and themes",
-      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -307,7 +295,7 @@
       "t": 63.96,
       "score": 0.9,
       "cosine": 0.486,
-      "reason": "Confident, luxurious, and assertive imagery fits the song's themes of self-assured feminin",
+      "reason": "Matches sultry confidence, luxury, and fashion statement",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -319,7 +307,7 @@
       "t": 39.3,
       "score": 0.9,
       "cosine": 0.482,
-      "reason": "Captures sultry nighttime vibe and urban allure aligning with song's mood",
+      "reason": "Captures sultry nighttime, urban allure, and sensory warmth",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -348,6 +336,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s3-3-word-portrait.webp",
+      "key": "lexicon/song/s3-3-word-portrait.webp",
+      "word": "song",
+      "line": "in, yeah, I play that strong But the thoughts run laps like a long song I see the sundress glow under the daylight",
+      "t": 177.238,
+      "score": 0.9,
+      "cosine": 0.45,
+      "reason": "Matches sultry, confident vibe and stage presence of the song",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s2-6-word-portrait.webp",
+      "key": "lexicon/beat/s2-6-word-portrait.webp",
+      "word": "beat",
+      "line": "little halo mellow One in the shades got their heart beat wide One in the jeans got the whole block tied I got vows",
+      "t": 119.734,
+      "score": 0.9,
+      "cosine": 0.418,
+      "reason": "Confident, sultry, and tied to rhythm and performance",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
       "key": "lexicon/night/s12-6-word-portrait.webp",
       "word": "night",
@@ -367,7 +379,7 @@
       "t": 8.86,
       "score": 0.85,
       "cosine": 0.511,
-      "reason": "Captures summer vibe, confidence, and stylish relaxation aligning with song's themes",
+      "reason": "Captures summer vibe, confidence, and style but lacks sultry tension and late-night elemen",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 18.274,
       "score": 0.8,
       "cosine": 0.531,
-      "reason": "Sultry intimacy and golden light align with summer nights and allure",
+      "reason": "Captures intimacy and warmth fitting the sultry, confident mood.",
       "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s5-1-word-neon.webp",
-      "key": "lexicon/sun/s5-1-word-neon.webp",
-      "word": "sun",
-      "line": "I, I, I, I, I, I, I I feel the sun dress glow under the daylight Hip",
-      "t": 17.48,
-      "score": 0.8,
-      "cosine": 0.468,
-      "reason": "fits summer vibe, neon aligns with urban luxury and nightlife",
-      "recipe": "1-word-neon",
       "featured": true
     }
   ],
@@ -419,20 +419,19 @@
     ],
     "light": [
       6,
-      25
+      24
     ],
     "summer": [
       7,
-      29
+      30
     ],
     "push": [
       12,
-      15,
-      18
+      15
     ],
     "move": [
       13,
-      21
+      20
     ],
     "flame": [
       14,
@@ -442,28 +441,31 @@
       17
     ],
     "dreams": [
-      19
+      18
     ],
     "night": [
-      20,
-      28
+      19,
+      29
     ],
     "throne": [
-      22,
-      26
+      21,
+      25
     ],
     "heart": [
-      23
+      22
     ],
     "chain": [
-      24
+      23
     ],
     "glow": [
-      27,
-      30
-    ],
-    "sun": [
+      26,
       31
+    ],
+    "song": [
+      27
+    ],
+    "beat": [
+      28
     ]
   }
 }

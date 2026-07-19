@@ -26,6 +26,58 @@ const hueDist = (a: number, b: number) => { const d = Math.abs(a - b) % 360; ret
 /** R8 input: dominant hue of the dropped art, computed by the intake (canvas downsample). */
 export interface RecInputs { artHue?: number | null }
 
+/** R7 — exclusions are a soft veto with receipts: shelved, never blocked. */
+export function isShelved(paletteKey: string, exclusions?: string[] | null): boolean {
+  if (!exclusions?.length) return false;
+  const pal = COLLECTOR_PALETTES[paletteKey];
+  if (!pal) return false;
+  const hay = `${pal.label} ${pal.texture} ${paletteKey}`.toLowerCase();
+  return exclusions.some((x) => x.length > 2 && hay.includes(x.toLowerCase()));
+}
+
+const fmtT = (t: number) => `${Math.floor(t / 60)}:${String(Math.round(t % 60)).padStart(2, "0")}`;
+
+/** SURPRISE ME — derive everything derivable, with receipts. Deterministic
+ *  per (project, roll); re-roll shifts the picks. */
+export function surpriseMe(p: ProjectSpec, inputs: RecInputs, roll = 0): { next: ProjectSpec; receipts: string[] } {
+  const receipts: string[] = [];
+  const d = structuredClone(p);
+  const excl = d.analysis?.exclusions;
+  // palette: style read → art hue → keep auto
+  const styleKey = d.analysis?.styleWords?.length ? classifyCollector(d.analysis.styleWords.join(" ")).key : null;
+  const pool = Object.keys(COLLECTOR_PALETTES).filter((k) => k !== "ARCHIVE" && !isShelved(k, excl));
+  let pick: string | null = null;
+  if (styleKey && styleKey !== "ARCHIVE" && !isShelved(styleKey, excl)) { pick = styleKey; receipts.push(`palette ${COLLECTOR_PALETTES[styleKey].label} — your style text says so`); }
+  else if (inputs.artHue != null) {
+    const ranked = pool
+      .map((k) => ({ k, h: hueOf(COLLECTOR_PALETTES[k].accent) }))
+      .filter((x): x is { k: string; h: number } => x.h != null)
+      .sort((a, b) => hueDist(inputs.artHue!, a.h) - hueDist(inputs.artHue!, b.h));
+    const c = ranked[roll % Math.max(1, Math.min(3, ranked.length))];
+    if (c) { pick = c.k; receipts.push(`palette ${COLLECTOR_PALETTES[c.k].label} — closest chrome to your art's color`); }
+  }
+  if (pick) d.identity.paletteKey = pick;
+  if (excl?.length) receipts.push(`${Object.keys(COLLECTOR_PALETTES).filter((k) => isShelved(k, excl)).length || "no"} palettes shelved by your exclusions`);
+  // facts
+  if (d.analysis?.bpm && !d.facts.bpm) { d.facts.bpm = d.analysis.bpm; receipts.push(`${d.analysis.bpm} BPM stamped (measured on-device)`); }
+  // spine word: loudest non-stop lyric word, else style word
+  const words = (d.lyrics ?? "").toLowerCase().match(/[a-z']{4,}/g) ?? [];
+  const freq = new Map<string, number>();
+  for (const w of words) freq.set(w, (freq.get(w) ?? 0) + 1);
+  const top = [...freq.entries()].sort((a, b) => b[1] - a[1]).map(([w]) => w)
+    .filter((w) => !["that","this","with","your","just","like","dont","cant","wont","from","when","what","been","they","them"].includes(w));
+  const spine = top[roll % Math.max(1, Math.min(3, top.length))];
+  if (spine && !d.identity.spineWord) { d.identity.spineWord = spine.toUpperCase(); receipts.push(`spine word ${spine.toUpperCase()} — your heaviest lyric word`); }
+  // format nudge
+  if (d.analysis?.duration && d.analysis.duration > 360 && !d.templateId.startsWith("vinyl")) {
+    d.templateId = "vinyl-12"; receipts.push(`pressed as vinyl 12" — ${Math.floor(d.analysis.duration / 60)}+ minutes breathes like a single`);
+  }
+  // side-split note
+  if (d.analysis?.sideSplit) receipts.push(`tape flips at ${fmtT(d.analysis.sideSplit)} — the section boundary nearest halfway`);
+  if (!receipts.length) receipts.push("feed me something — even a title — and I'll have opinions");
+  return { next: d, receipts };
+}
+
 export function recommend(p: ProjectSpec, inputs: RecInputs = {}): Recommendation[] {
   const out: Recommendation[] = [];
   const a = p.analysis;
@@ -84,6 +136,19 @@ export function recommend(p: ProjectSpec, inputs: RecInputs = {}): Recommendatio
         });
       }
     }
+  }
+
+  // ── R3 — stems → side-split ───────────────────────────────────────────────
+  if (a?.sideSplit && (p.templateId === "cassette" || p.templateId.startsWith("vinyl"))) {
+    const t = a.sideSplit;
+    out.push({
+      id: "R3-sideflip",
+      read: `Your sections want the flip at ${fmtT(t)}`,
+      suggestion: "that's the boundary nearest halfway — side A ends there",
+      overrideHint: "purely a note on the tray; move it in your head freely",
+      measured: true,
+      apply: (d) => d,
+    });
   }
 
   // ── R9 — runtime → format nudge (only once other formats exist) ───────────

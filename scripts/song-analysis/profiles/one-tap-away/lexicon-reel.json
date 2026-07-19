@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away",
-  "generatedAt": "2026-07-18T10:55:01.935Z",
+  "generatedAt": "2026-07-19T11:08:02.684Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 4.644,
       "score": 0.98,
       "cosine": 0.583,
-      "reason": "Powerful visual of digital isolation and emotional vulnerability",
+      "reason": "Powerful visual of digital isolation and vulnerability",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 19.644,
       "score": 0.95,
       "cosine": 0.685,
-      "reason": "captures digital isolation, melancholy, and superficial connection",
+      "reason": "Captures digital isolation, melancholy, and superficial connection",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 17.183,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "matches digital isolation, glow of screen, melancholic mood",
+      "reason": "fits digital isolation, glow of screen, melancholic mood",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "matches digital isolation, melancholic mood, and emotional distance",
+      "reason": "captures digital isolation, melancholy, and emotional distance",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 94.285,
       "score": 0.95,
       "cosine": 0.554,
-      "reason": "Symbolizes digital isolation, broken connection, and melancholy",
+      "reason": "powerful symbolism of digital isolation and broken connection",
       "recipe": "1-photo",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "Strong visual metaphor for digital isolation and emotional distance",
+      "reason": "matches digital isolation, urban loneliness, and emotional distance",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 4.644,
       "score": 0.95,
       "cosine": 0.479,
-      "reason": "Strong symbolism of digital disconnection and melancholic mood align with song themes",
+      "reason": "Strong symbolism of digital disconnection and melancholic mood",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 76.72,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "fits digital isolation, emotional neglect, and introspective mood",
+      "reason": "captures digital isolation, emotional neglect, and yearning",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 50.933,
       "score": 0.9,
       "cosine": 0.522,
-      "reason": "captures digital isolation, superficiality, and emotional distance",
+      "reason": "captures digital hollowness, neon symbolism, urban loneliness",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 76.72,
       "score": 0.9,
       "cosine": 0.51,
-      "reason": "evokes digital isolation, melancholy, and symbolic 'Save' action in a desolate space",
+      "reason": "evokes isolation, melancholy, and digital themes through setting and symbolism",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 115.937,
       "score": 0.85,
       "cosine": 0.492,
-      "reason": "matches isolation, fragile connection, melancholic mood",
+      "reason": "matches isolation, fragile connection, desolate mood",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 76.22,
       "score": 0.85,
       "cosine": 0.437,
-      "reason": "Captures melancholic mood and urban isolation with hopeful undertones",
+      "reason": "Captures melancholic mood and urban isolation, aligns with themes of aspiration and superf",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 76.22,
       "score": 0.85,
       "cosine": 0.425,
-      "reason": "Captures loneliness and longing in a digital age, aligns with themes of isolation and intr",
+      "reason": "Captures loneliness and longing in a digital age, aligns with theme of isolation and fleet",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 79.981,
       "score": 0.8,
       "cosine": 0.397,
-      "reason": "abstract stars reflect digital isolation and cosmic order",
+      "reason": "abstract stars symbolize distant connections in digital isolation",
       "recipe": "1-poster",
       "featured": true
     },

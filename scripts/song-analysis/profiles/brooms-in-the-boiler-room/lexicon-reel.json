@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-07-18T10:23:22.771Z",
+  "generatedAt": "2026-07-19T10:23:53.043Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 922,
-    "judged": 41,
-    "accepted": 24,
-    "kept": 24
+    "candidates": 950,
+    "judged": 42,
+    "accepted": 25,
+    "kept": 25
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 29.106,
       "score": 1,
       "cosine": 0.697,
-      "reason": "Perfectly aligns with magical corruption and ominous atmosphere",
+      "reason": "Perfect fit for magical corruption and ominous atmosphere",
       "recipe": "1-manga-line",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Strong alignment with magical corruption and ominous atmosphere",
+      "reason": "Matches magical corruption, ominous mood, and noir atmosphere",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 134.502,
       "score": 0.95,
       "cosine": 0.673,
-      "reason": "Strong noir atmosphere, magical symbolism, fits the ominous and playful tone",
+      "reason": "fits noir atmosphere, magical corruption, and symbolic lighting",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strong noir-steampunk fit with boiler as central symbol",
+      "reason": "Strong noir-steampunk fit with magical corruption and ominous mood",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.626,
-      "reason": "Strong industrial noir atmosphere matches song's theme and mood",
+      "reason": "Strong industrial noir atmosphere matches song's mood and themes",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.601,
-      "reason": "matches noir atmosphere, magical corruption, and ominous tone",
+      "reason": "matches dark, magical corruption and ominous atmosphere of the song",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 40.774,
       "score": 0.95,
       "cosine": 0.583,
-      "reason": "matches noir atmosphere, corruption symbolism, and thematic elements",
+      "reason": "matches noir atmosphere, corruption symbolism, and gritty aesthetic",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Aligns with noir atmosphere, magical corruption, and chaotic tension",
+      "reason": "fits noir atmosphere, magical corruption, and chaotic tension",
       "recipe": "2-dream-collage",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
+      "reason": "gold symbolizes villainy, noir atmosphere matches song",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 53.023,
       "score": 0.85,
       "cosine": 0.526,
-      "reason": "fits noir atmosphere, neon glow ties to lyric, industrial setting matches theme",
+      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with boiler room",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,8 +247,20 @@
       "t": 214.796,
       "score": 0.6,
       "cosine": 0.633,
-      "reason": "fits dark fantasy but lacks magical corruption and playful danger",
+      "reason": "fits dark fantasy but lacks connection to cleaning tools or spell corruption",
       "recipe": "2-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s4-5-dream-collage.webp",
+      "key": "lexicon/crown/s4-5-dream-collage.webp",
+      "word": "crown",
+      "line": "whole crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks",
+      "t": 214.1,
+      "score": 0.6,
+      "cosine": 0.58,
+      "reason": "Symbolizes corrupted power, fits dark fantasy and decay themes",
+      "recipe": "5-dream-collage",
       "featured": false
     },
     {
@@ -295,7 +307,7 @@
       "t": 32.798,
       "score": 0.6,
       "cosine": 0.444,
-      "reason": "Atmospheric and moody, but lacks direct connection to magical corruption or brooms.",
+      "reason": "Atmospheric and moody, but lacks direct ties to magical corruption or brooms.",
       "recipe": "5-dream-collage",
       "featured": false
     }
@@ -331,21 +343,24 @@
     "eyes": [
       11,
       18,
-      21
+      22
     ],
     "move": [
       13,
-      22
+      23
     ],
     "glow": [
       17
     ],
     "throne": [
       19,
+      21
+    ],
+    "crown": [
       20
     ],
     "stars": [
-      23
+      24
     ]
   }
 }

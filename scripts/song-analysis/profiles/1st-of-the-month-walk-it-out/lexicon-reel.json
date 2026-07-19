@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-07-18T10:21:10.414Z",
+  "generatedAt": "2026-07-19T10:20:21.176Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1123,
-    "judged": 55,
-    "accepted": 48,
+    "candidates": 1185,
+    "judged": 58,
+    "accepted": 50,
     "kept": 32
   },
   "reel": [
@@ -19,8 +19,20 @@
       "t": 52.512,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Urban rebirth, transformation, and triumph align with song's themes",
+      "reason": "Symbolizes transformation, urban rebirth, and triumph over void",
       "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s5-6-word-portrait.webp",
+      "key": "lexicon/road/s5-6-word-portrait.webp",
+      "word": "road",
+      "line": "ride into the air? Or you movin' over when the road get there? Come on! It's the first of the month Walk",
+      "t": 121.324,
+      "score": 0.95,
+      "cosine": 0.498,
+      "reason": "Symbolizes journey, discipline, and triumph over struggle",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -115,7 +127,7 @@
       "t": 113.92,
       "score": 0.95,
       "cosine": 0.436,
-      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and grit of the song",
+      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and discipline.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -139,7 +151,7 @@
       "t": 50.457,
       "score": 0.95,
       "cosine": 0.431,
-      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes.",
+      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes",
       "recipe": "2-anime",
       "featured": true
     },
@@ -153,18 +165,6 @@
       "cosine": 0.422,
       "reason": "Symbolizes transformation, focus, and value align with song's themes",
       "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s1-2-graphic-novel.webp",
-      "key": "lexicon/road/s1-2-graphic-novel.webp",
-      "word": "road",
-      "line": "ride into the air? Or you movin' over when the road get there? Come on! It's the first of the month Walk",
-      "t": 121.324,
-      "score": 0.95,
-      "cosine": 0.414,
-      "reason": "Urban resilience, dawn hope, journey align with song's themes",
-      "recipe": "2-graphic-novel",
       "featured": true
     },
     {
@@ -187,7 +187,7 @@
       "t": 98.79,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Urban resilience, neon lighting, and triumphant renewal align with song's themes.",
+      "reason": "Urban grit, neon symbolism, and night as a time of resilience fit the song's themes.",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -216,6 +216,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s4-3-word-portrait.webp",
+      "key": "lexicon/road/s4-3-word-portrait.webp",
+      "word": "road",
+      "line": "ride into the air? Or you movin' over when the road get there? Come on! It's the first of the month Walk",
+      "t": 121.324,
+      "score": 0.9,
+      "cosine": 0.47,
+      "reason": "Symbolizes journey and renewal; fits triumphant, disciplined mood.",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-3-word-portrait.webp",
       "key": "lexicon/walk/s5-3-word-portrait.webp",
       "word": "walk",
@@ -235,7 +247,7 @@
       "t": 52.048,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Urban renewal, discipline, and transformation align with the song's themes.",
+      "reason": "Urban renewal, neon symbolism, and resilience align with the song's themes.",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -283,7 +295,7 @@
       "t": 113.92,
       "score": 0.9,
       "cosine": 0.43,
-      "reason": "Urban energy aligns with song's borough pride and triumphant mood",
+      "reason": "Urban energy aligns with borough pride and triumphant discipline",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -307,7 +319,7 @@
       "t": 62.031,
       "score": 0.9,
       "cosine": 0.352,
-      "reason": "Symbolizes new beginnings, purpose, and destiny aligning with triumph and renewal",
+      "reason": "Symbolizes new beginnings, purpose, and destiny aligning with theme of changing fate throu",
       "recipe": "6-pixel",
       "featured": true
     },
@@ -331,7 +343,7 @@
       "t": 24.253,
       "score": 0.85,
       "cosine": 0.454,
-      "reason": "Symbolizes resilience and new beginnings under the sun",
+      "reason": "Symbolizes new beginnings and resilience in a hopeful, serene setting",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -343,7 +355,7 @@
       "t": 114.277,
       "score": 0.85,
       "cosine": 0.441,
-      "reason": "Fits triumphant energy, urgency, and futuristic vibe aligns with discipline and renewal th",
+      "reason": "Fits triumphant urgency, futuristic energy aligns with renewal and discipline",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -355,8 +367,20 @@
       "t": 154.935,
       "score": 0.85,
       "cosine": 0.434,
-      "reason": "optimistic and modern design fits triumphant discipline and reinvention",
+      "reason": "optimistic and playful design aligns with triumphant discipline and reinvention",
       "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s4-6-dream-collage.webp",
+      "key": "lexicon/broken/s4-6-dream-collage.webp",
+      "word": "broken",
+      "line": "We still got stories that ain't been told No broken promises, no fake displays Death before dishonor,",
+      "t": 163.028,
+      "score": 0.85,
+      "cosine": 0.404,
+      "reason": "Symbolizes resilience through brokenness, aligns with triumph over failure and hope in des",
+      "recipe": "6-dream-collage",
       "featured": true
     },
     {
@@ -370,71 +394,47 @@
       "reason": "Symbolism of light and ruins aligns with themes of renewal and past failures",
       "recipe": "2-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fate/s2-3-film-still.webp",
-      "key": "lexicon/fate/s2-3-film-still.webp",
-      "word": "fate",
-      "line": "gotta stay If you build it brick by brick, you can change your fate It's the first of the month Walk it out, walk",
-      "t": 62.031,
-      "score": 0.85,
-      "cosine": 0.345,
-      "reason": "Symbolism of fate and journey aligns with theme of changing fate through discipline",
-      "recipe": "3-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s0-2.webp",
-      "key": "lexicon/different/s0-2.webp",
-      "word": "different",
-      "line": "wind slowin' down Got the whole summer lookin' different now Walk it out, walk it out, walk",
-      "t": 27.562,
-      "score": 0.85,
-      "cosine": 0.331,
-      "reason": "Symbolizes transition and change aligning with 'walk it out' and renewal",
-      "recipe": "2",
-      "featured": true
     }
   ],
   "byWord": {
     "gold": [
       0,
-      5
-    ],
-    "fast": [
-      1,
-      6,
-      27
-    ],
-    "walk": [
-      2,
-      17
-    ],
-    "code": [
-      3,
-      4,
-      9
-    ],
-    "move": [
-      7,
-      8,
-      22
-    ],
-    "veneno": [
-      10
-    ],
-    "void": [
-      11,
-      15,
-      18
+      6
     ],
     "road": [
-      12
+      1,
+      17
+    ],
+    "fast": [
+      2,
+      7,
+      28
+    ],
+    "walk": [
+      3,
+      18
+    ],
+    "code": [
+      4,
+      5,
+      10
+    ],
+    "move": [
+      8,
+      9,
+      23
+    ],
+    "veneno": [
+      11
+    ],
+    "void": [
+      12,
+      15,
+      19
     ],
     "different": [
       13,
-      23,
-      31
+      24
     ],
     "night": [
       14
@@ -443,21 +443,23 @@
       16
     ],
     "sun": [
-      19,
-      25,
-      26
+      20,
+      26,
+      27
     ],
     "save": [
-      20,
-      21
+      21,
+      22
     ],
     "fate": [
-      24,
-      29,
-      30
+      25,
+      31
     ],
     "dreams": [
-      28
+      29
+    ],
+    "broken": [
+      30
     ]
   }
 }

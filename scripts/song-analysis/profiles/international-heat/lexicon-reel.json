@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "international-heat",
-  "generatedAt": "2026-07-18T10:41:30.018Z",
+  "generatedAt": "2026-07-19T10:50:22.426Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -11,6 +11,18 @@
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
+      "key": "lexicon/bass/s3-3-word-portrait.webp",
+      "word": "bass",
+      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
+      "t": 41.192,
+      "score": 0.95,
+      "cosine": 0.548,
+      "reason": "Strong musical and sensual symbolism fits the song's theme and mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
       "key": "lexicon/night/s12-6-word-portrait.webp",
@@ -96,6 +108,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s10-1-word-portrait.webp",
+      "key": "lexicon/body/s10-1-word-portrait.webp",
+      "word": "body",
+      "line": "can feel that body talkin' from here Female Anh ơi nhìn em hoài làm chi",
+      "t": 13.816,
+      "score": 0.95,
+      "cosine": 0.502,
+      "reason": "Sensual, cultural fusion, and intimate atmosphere align perfectly with the song's themes.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
       "key": "lexicon/night/s8-3-word-portrait.webp",
       "word": "night",
@@ -115,7 +139,7 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.492,
-      "reason": "Sultry, confident woman in a black dress under stage lights aligns with seductive, sensual",
+      "reason": "Sultry, confident woman in a black dress under stage lights aligns with the song's sensual",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -175,7 +199,7 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.454,
-      "reason": "Sensual neon fits seductive urban nightlife and cultural fusion",
+      "reason": "Sensual, intense, urban nightlife and cultural fusion align perfectly with the song's them",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -199,7 +223,7 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.43,
-      "reason": "Matches seductive, warm, and intense club vibe with cultural fusion",
+      "reason": "Sensual, stylish, and evocative of nightlife and cultural fusion",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -211,20 +235,8 @@
       "t": 93.038,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Sensual energy, urban nightlife, and cultural fusion align perfectly with the song's theme",
+      "reason": "Urban nightlife, energy, and neon align with song's sensual and intense mood.",
       "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
-      "key": "lexicon/bass/s3-3-word-portrait.webp",
-      "word": "bass",
-      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
-      "t": 41.192,
-      "score": 0.9,
-      "cosine": 0.548,
-      "reason": "Sensual energy, musical dominance, and stage performance align with song's themes of seduc",
-      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -252,18 +264,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s10-1-word-portrait.webp",
-      "key": "lexicon/body/s10-1-word-portrait.webp",
-      "word": "body",
-      "line": "can feel that body talkin' from here Female Anh ơi nhìn em hoài làm chi",
-      "t": 13.816,
-      "score": 0.9,
-      "cosine": 0.502,
-      "reason": "Sensual, cultural fusion, and intimate atmosphere align with song's themes",
-      "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
       "key": "lexicon/light/s9-6-word-portrait.webp",
       "word": "light",
@@ -283,7 +283,7 @@
       "t": 88.2,
       "score": 0.9,
       "cosine": 0.476,
-      "reason": "Urban setting, cultural fusion, and rhythm align with song's themes",
+      "reason": "Urban setting, cultural fusion, and rhythm align with song's themes and mood",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 141.421,
       "score": 0.9,
       "cosine": 0.463,
-      "reason": "Sensual nighttime cityscape aligns with song's themes of seduction and cultural fusion",
+      "reason": "Sensual nighttime cityscape aligns with song's mood and cultural fusion theme",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 76.32,
       "score": 0.9,
       "cosine": 0.431,
-      "reason": "Sensual, intense, and surreal eyes fit the seductive and transcendent mood of the song.",
+      "reason": "Sensual intensity and surreal symbolism align with seduction and cultural fusion themes.",
       "recipe": "2-chalkboard",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 76.32,
       "score": 0.85,
       "cosine": 0.499,
-      "reason": "Sensual intensity, urban setting, and metaphorical eyes align with song's themes",
+      "reason": "Sensual mood, urban setting, intense eyes align with song's themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 141.421,
       "score": 0.85,
       "cosine": 0.478,
-      "reason": "Sensual chaos, neon lights, urban decay fit the seductive, intense mood and cultural fusio",
+      "reason": "Sensual chaos, neon lights, and urban decay align with seductive, intense mood and cultura",
       "recipe": "2-anime",
       "featured": true
     },
@@ -357,6 +357,18 @@
       "cosine": 0.427,
       "reason": "Sensual mood, urban setting, connection between people",
       "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
+      "t": 107.23,
+      "score": 0.8,
+      "cosine": 0.474,
+      "reason": "Cultural fusion, global connection, and symbolic 'soul' align with song's themes",
+      "recipe": "1-stickers",
       "featured": true
     },
     {
@@ -382,62 +394,50 @@
       "reason": "romantic intimacy aligns with seduction and desire themes",
       "recipe": "1-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s7-4-word-neon.webp",
-      "key": "lexicon/soul/s7-4-word-neon.webp",
-      "word": "soul",
-      "line": "Male Brooklyn on my passport southside in my soul But tonight after Sài Gòn we lose all control You",
-      "t": 107.23,
-      "score": 0.7,
-      "cosine": 0.49,
-      "reason": "Cultural fusion and resilience align with song's themes; neon 'soul' ties to identity and ",
-      "recipe": "4-word-neon",
-      "featured": true
     }
   ],
   "byWord": {
-    "night": [
+    "bass": [
       0,
-      7
-    ],
-    "body": [
-      1,
-      3,
-      20
-    ],
-    "flame": [
-      2,
-      5,
-      6
-    ],
-    "fire": [
-      4,
       19
     ],
+    "night": [
+      1,
+      9
+    ],
+    "body": [
+      2,
+      4,
+      8
+    ],
+    "flame": [
+      3,
+      6,
+      7
+    ],
+    "fire": [
+      5,
+      20
+    ],
     "heat": [
-      8,
-      13,
-      15
+      10,
+      15,
+      17
     ],
     "rhythm": [
-      9,
-      12,
+      11,
+      14,
       22
     ],
     "drink": [
-      10,
-      11
+      12,
+      13
     ],
     "love": [
-      14,
-      30
+      16,
+      31
     ],
     "move": [
-      16
-    ],
-    "bass": [
-      17,
       18
     ],
     "light": [
@@ -447,7 +447,7 @@
     ],
     "soul": [
       24,
-      31
+      29
     ],
     "eyes": [
       25,
@@ -457,7 +457,7 @@
       28
     ],
     "slow": [
-      29
+      30
     ]
   }
 }

@@ -14,7 +14,7 @@ import { PrivacyBadge } from "@/components/press/PrivacyBadge";
 // front door stays feather-weight.
 
 const COMING = [
-  { name: "8-Track", era: "1965", blurb: "The cartridge nobody expects." },
+  { name: "The Booth (3D)", era: "next", blurb: "Rotate it, spin it, film it." },
 ];
 
 export default function PressPage() {

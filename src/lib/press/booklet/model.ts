@@ -4,7 +4,7 @@
 
 import type { ProjectSpec } from "../types";
 
-export type BookletPageKind = "cover" | "lyrics" | "read" | "world" | "credits" | "specs" | "back";
+export type BookletPageKind = "cover" | "lyrics" | "read" | "world" | "band" | "map" | "credits" | "specs" | "back";
 
 export interface BookletPage {
   kind: BookletPageKind;

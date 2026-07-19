@@ -8,6 +8,7 @@ import { COLLECTOR_CASE } from "./collectorCase";
 import { CASSETTE } from "./cassette";
 import { makeVinyl } from "./vinyl";
 import { JEWEL_CASE } from "./jewelCase";
+import { EIGHT_TRACK } from "./eightTrack";
 
 export const TEMPLATES: Record<string, TemplateDescriptor> = {
   [COLLECTOR_CASE.id]: COLLECTOR_CASE,
@@ -16,6 +17,7 @@ export const TEMPLATES: Record<string, TemplateDescriptor> = {
   "vinyl-12": makeVinyl(12),
   "vinyl-10": makeVinyl(10),
   "vinyl-7": makeVinyl(7),
+  [EIGHT_TRACK.id]: EIGHT_TRACK,
 };
 
 export const getTemplate = (id: string): TemplateDescriptor => TEMPLATES[id] ?? COLLECTOR_CASE;

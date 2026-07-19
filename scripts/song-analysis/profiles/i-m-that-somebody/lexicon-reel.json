@@ -1,16 +1,28 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-07-18T10:39:13.343Z",
+  "generatedAt": "2026-07-19T10:46:59.127Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1146,
     "judged": 41,
-    "accepted": 31,
-    "kept": 31
+    "accepted": 34,
+    "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-3-word-portrait.webp",
+      "key": "lexicon/lights/s20-3-word-portrait.webp",
+      "word": "lights",
+      "line": "You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the noise down",
+      "t": 101.123,
+      "score": 0.95,
+      "cosine": 0.552,
+      "reason": "Matches playful confidence, romantic stability, and futuristic nostalgia",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s20-4-film-still.webp",
       "key": "lexicon/lights/s20-4-film-still.webp",
@@ -19,7 +31,7 @@
       "t": 101.123,
       "score": 0.95,
       "cosine": 0.518,
-      "reason": "fits futuristic nostalgia, playful energy, and urban romance",
+      "reason": "fits futuristic nostalgia and playful energy of the song",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -31,7 +43,7 @@
       "t": 90.291,
       "score": 0.95,
       "cosine": 0.508,
-      "reason": "Confident stage presence matches playful assurance and stability in the song",
+      "reason": "Confident stage presence aligns with self-assurance and playful stability",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -55,7 +67,7 @@
       "t": 15.859,
       "score": 0.95,
       "cosine": 0.495,
-      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia",
+      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia with neon and cin",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -144,15 +156,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
-      "key": "lexicon/soul/s9-1-stickers.webp",
-      "word": "soul",
-      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
-      "t": 31.29,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "key": "lexicon/lights/s17-2-word-portrait.webp",
+      "word": "lights",
+      "line": "You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the noise down",
+      "t": 101.123,
       "score": 0.9,
-      "cosine": 0.452,
-      "reason": "Matches playful confidence, futuristic nostalgia, and symbolic soul presence",
-      "recipe": "1-stickers",
+      "cosine": 0.542,
+      "reason": "Matches retro energy, confidence, and playful stability",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -163,7 +175,7 @@
       "t": 23.313,
       "score": 0.9,
       "cosine": 0.446,
-      "reason": "Matches playful confidence, lyrical theme, and intimate mood",
+      "reason": "Matches playful confidence, lyrical bridge, and hopeful intimacy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -223,7 +235,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "Futuristic nostalgia and playful energy align with the song's mood and themes.",
+      "reason": "Futuristic romance and playful energy align with song's themes and mood",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -235,7 +247,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.406,
-      "reason": "Cozy, inviting atmosphere matches song's theme of stability and comfort.",
+      "reason": "Cozy, inviting home matches song's theme of stability and comfort",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -247,7 +259,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Matches warm, inviting home theme with song's stability and comfort",
+      "reason": "Matches warm, inviting theme and mood of stability and comfort",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -273,6 +285,18 @@
       "cosine": 0.325,
       "reason": "Confident silhouettes in neon-lit Tokyo match playful confidence and futuristic nostalgia.",
       "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
+      "t": 31.29,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "Matches playful confidence and futuristic nostalgia with abstract, upbeat imagery",
+      "recipe": "1-stickers",
       "featured": true
     },
     {
@@ -319,7 +343,7 @@
       "t": 90.291,
       "score": 0.8,
       "cosine": 0.428,
-      "reason": "Confident stance aligns with self-assurance and stability",
+      "reason": "Confident stance matches self-assurance; calm domestic setting aligns with stability",
       "recipe": "6-photo",
       "featured": true
     },
@@ -331,7 +355,7 @@
       "t": 27.226,
       "score": 0.8,
       "cosine": 0.424,
-      "reason": "Matches warmth and safety of 'home' in a stable, confident relationship",
+      "reason": "Matches warmth and safety of home, aligns with stability and comfort themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -367,84 +391,73 @@
       "t": 15.859,
       "score": 0.6,
       "cosine": 0.472,
-      "reason": "Seductive and chaotic imagery aligns with playful confidence but leans too dark for romant",
+      "reason": "Seductive and chaotic imagery aligns with playful confidence but may clash with romantic s",
       "recipe": "6-word-portrait",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
-      "key": "lexicon/eyes/s8-5-neon-sign.webp",
-      "word": "eyes",
-      "line": "You been moving cautious Like the room got eyes Like the walls might talk Like the night got spies I see",
-      "t": 13.99,
-      "score": 0.6,
-      "cosine": 0.427,
-      "reason": "Sinister playfulness and surveillance match the song's mood",
-      "recipe": "5-neon-sign",
       "featured": false
     }
   ],
   "byWord": {
     "lights": [
-      0
+      0,
+      1,
+      12
     ],
     "move": [
-      1,
-      25
+      2,
+      27
     ],
     "night": [
-      2,
       3,
-      29
+      4,
+      31
     ],
     "soul": [
-      4,
-      11
-    ],
-    "rhythm": [
       5,
-      12,
-      22
-    ],
-    "different": [
-      6,
-      8,
-      20
-    ],
-    "party": [
-      7,
-      9,
-      10
-    ],
-    "love": [
-      13,
-      14,
-      17
-    ],
-    "eyes": [
-      15,
-      27,
-      30
-    ],
-    "hands": [
-      16
-    ],
-    "home": [
-      18,
-      19,
-      26
-    ],
-    "somebody": [
-      21
-    ],
-    "steady": [
       23
     ],
-    "run": [
+    "rhythm": [
+      6,
+      13,
       24
     ],
-    "smile": [
+    "different": [
+      7,
+      9,
+      21
+    ],
+    "party": [
+      8,
+      10,
+      11
+    ],
+    "love": [
+      14,
+      15,
+      18
+    ],
+    "eyes": [
+      16,
+      29
+    ],
+    "hands": [
+      17
+    ],
+    "home": [
+      19,
+      20,
       28
+    ],
+    "somebody": [
+      22
+    ],
+    "steady": [
+      25
+    ],
+    "run": [
+      26
+    ],
+    "smile": [
+      30
     ]
   }
 }

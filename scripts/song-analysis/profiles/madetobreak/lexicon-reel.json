@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-07-18T10:49:08.652Z",
+  "generatedAt": "2026-07-19T11:00:13.405Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -24,18 +24,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-1-anime.webp",
-      "key": "lexicon/storm/s5-1-anime.webp",
-      "word": "storm",
-      "line": "storm",
-      "t": null,
-      "score": 1,
-      "cosine": 0.482,
-      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes.",
-      "recipe": "1-anime",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wounds/s0-1-dream-collage.webp",
       "key": "lexicon/wounds/s0-1-dream-collage.webp",
       "word": "wounds",
@@ -43,20 +31,8 @@
       "t": null,
       "score": 1,
       "cosine": 0.444,
-      "reason": "Image embodies resilience, battle scars, and inner strength perfectly matching the song's ",
+      "reason": "Image embodies resilience, battle scars as identity, inner strength through injury",
       "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
-      "key": "lexicon/boulder/s0-6-anime.webp",
-      "word": "boulder",
-      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
-      "t": 27.92,
-      "score": 0.98,
-      "cosine": 0.444,
-      "reason": "Symbolizes resilience, defiance, and transformation through pain",
-      "recipe": "6-anime",
       "featured": true
     },
     {
@@ -91,7 +67,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Symbolism of break as transformation in a desolate yet hopeful setting",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and empowerm",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -127,7 +103,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Powerful, defiant imagery matches song's themes of resilience and transformation",
+      "reason": "Symbolizes transformation, resilience, and defiance through physical and inner strength",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -139,8 +115,20 @@
       "t": 86.72,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolizes defiance and transformation through destruction",
+      "reason": "Symbolizes defiance and transformation through decay and resilience",
       "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-1-anime.webp",
+      "key": "lexicon/storm/s5-1-anime.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.482,
+      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes",
+      "recipe": "1-anime",
       "featured": true
     },
     {
@@ -163,7 +151,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Symbolizes resilience, transformation of destruction into power",
+      "reason": "Symbolizes transformation from destruction to power, matches defiant resilience theme",
       "recipe": "5-film-still",
       "featured": true
     },
@@ -199,7 +187,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "Powerful imagery aligns with defiance, resilience, and transformation through struggle.",
+      "reason": "Powerful imagery of resilience and defiance fits the song's themes",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -223,7 +211,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes transformation of destruction into power, fits defiant, resilient mood",
+      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -247,8 +235,20 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth; aligns with defiant, resilient mood.",
+      "reason": "Symbolizes resilience, destruction, and rebirth aligns with song's themes",
       "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
+      "key": "lexicon/boulder/s0-6-anime.webp",
+      "word": "boulder",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
+      "t": 27.92,
+      "score": 0.95,
+      "cosine": 0.444,
+      "reason": "Symbolizes resilience, defiance, and transformation through adversity",
+      "recipe": "6-anime",
       "featured": true
     },
     {
@@ -271,7 +271,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.442,
-      "reason": "Powerful imagery of defiance against nature mirrors song's themes of resilience and transf",
+      "reason": "Powerful imagery of defiance against chaos aligns with resilience and transformation theme",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Symbolizes resilience, defiance, and rebirth through fire",
+      "reason": "Symbolizes resilience, defiance, and transformation through fire",
       "recipe": "4-concept-art",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -399,58 +399,58 @@
   "byWord": {
     "battle-made": [
       0,
-      14
-    ],
-    "storm": [
-      1,
-      20,
-      21
+      13
     ],
     "wounds": [
-      2
-    ],
-    "boulder": [
-      3
+      1
     ],
     "weapon": [
-      4
+      2
     ],
     "chains": [
-      5,
-      8,
-      11
+      3,
+      6,
+      10
     ],
     "break": [
-      6,
-      18,
+      4,
+      17,
       22
     ],
     "chain": [
-      7,
+      5,
       27
     ],
     "body": [
-      9,
+      7,
       26
     ],
     "barricade": [
-      10,
+      8,
       29
     ],
+    "storm": [
+      9,
+      20,
+      21
+    ],
     "wreckage": [
-      12,
-      17
+      11,
+      16
     ],
     "armor": [
-      13,
+      12,
       23,
       25
     ],
     "battle": [
-      15
+      14
     ],
     "fire": [
-      16,
+      15,
+      18
+    ],
+    "boulder": [
       19
     ],
     "knife": [
