@@ -17,6 +17,8 @@ import { audioFacts } from "@/lib/press/analysis/audioFacts";
 import { classifyPaste, descriptorWords, type PasteKind } from "@/lib/press/analysis/intake";
 import { recommend, dominantHue, isShelved, surpriseMe } from "@/lib/press/analysis/recommend";
 import { SeedDrawer } from "./SeedDrawer";
+import { UpgradePath, postureOf, applyDirectionToBooklet } from "./UpgradePath";
+import type { Engine } from "@/lib/press/analysis/aiAnalyze";
 import type { AnalysisSummary } from "@/lib/press/types";
 import { BookletBuilder } from "./BookletBuilder";
 import { IntakeLedger } from "./IntakeLedger";
@@ -129,21 +131,7 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
   }
 
   const [director, setDirector] = useState<import("@/lib/press/analysis/aiAnalyze").ArtDirection | null>(null);
-  const [directorBusy, setDirectorBusy] = useState(false);
-  async function askDirector() {
-    if (directorBusy) return;
-    setDirectorBusy(true); setMsg("asking the house art director (title + lyrics only)…");
-    try {
-      const { houseKeyLive, artDirectorTaste } = await import("@/lib/press/analysis/aiAnalyze");
-      if (!(await houseKeyLive())) { setMsg("the house key is off right now — the deterministic engine above never sleeps"); setDirectorBusy(false); return; }
-      const out = await artDirectorTaste({ title: project.identity.title, lyrics: project.lyrics, styleWords: project.analysis?.styleWords ?? undefined });
-      setDirector(out);
-      setMsg(`the director pitched ${out.concepts.length} concepts`);
-    } catch (e) {
-      setMsg(`art director: ${(e as Error).message}`);
-    }
-    setDirectorBusy(false);
-  }
+  const [engine, setEngine] = useState<Engine | null>(null);
 
   const [surpriseRoll, setSurpriseRoll] = useState(0);
   const [receipts, setReceipts] = useState<string[] | null>(null);
@@ -319,6 +307,10 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
               className="rounded-full border border-zinc-800 px-2.5 py-1 text-xs text-zinc-500 disabled:opacity-30">↻</button>
           </span>
         </div>
+        <p title={postureOf(engine).blurb}
+          className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.15em] ${postureOf(engine).tone}`}>
+          {postureOf(engine).label}
+        </p>
 
         {room === "THE DROP" && (
           <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
@@ -439,14 +431,8 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
               <SeedDrawer lyrics={project.lyrics} />
             </div>
             <div className="border-t border-zinc-800 pt-3">
-              <div className="flex items-center justify-between">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500">✦ Art director</p>
-                <button onClick={askDirector} disabled={directorBusy || !project.identity.title}
-                  className="rounded-full border border-zinc-700 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 transition hover:border-amber-400/60 hover:text-amber-300 disabled:opacity-40">
-                  {directorBusy ? "thinking…" : "a taste, on the house"}
-                </button>
-              </div>
-              <p className={HINT}>Cloud AI, no key needed — the house lends one (free models, fair-use limited). <span className="text-amber-500/70">Only your title + lyrics transit</span>; stems, audio, and art never do. Dead house key? Everything above still works.</p>
+              <UpgradePath project={project} onEngine={setEngine} onDirection={setDirector}
+                onArt={(blob) => { attachArt(blob); }} />
               {director && (
                 <div className="mt-2 space-y-1.5">
                   {director.mood && <p className={HINT}>the read: <b className="text-zinc-400">{director.mood}</b></p>}
@@ -465,6 +451,16 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
                       ))}
                     </p>
                   )}
+                  <span className="flex gap-2">
+                    {director.linerNotes && (
+                      <button onClick={() => { if (project.booklet) { applyDirectionToBooklet(director); setMsg("liner notes drafted onto the READ page — labeled a read, not a fact; edit freely"); } else setMsg("open THE BINDERY (jewel case) first — then I can draft the READ page"); }}
+                        className="rounded-full border border-zinc-700 px-3 py-1 text-[9px] font-bold uppercase tracking-wider text-zinc-400 hover:text-amber-300">use as liner notes</button>
+                    )}
+                    {director.levelNames && director.levelNames.length > 0 && (project.analysis?.sections?.length ?? 0) > 0 && (
+                      <button onClick={() => { projectStore.apply((d) => { d.analysis!.sections = d.analysis!.sections!.map((sc, i) => ({ ...sc, name: (director.levelNames![i] ?? sc.name).toUpperCase() })); }); setMsg("map levels named — see the DELUXE booklet"); }}
+                        className="rounded-full border border-zinc-700 px-3 py-1 text-[9px] font-bold uppercase tracking-wider text-zinc-400 hover:text-amber-300">name the map levels</button>
+                    )}
+                  </span>
                 </div>
               )}
             </div>

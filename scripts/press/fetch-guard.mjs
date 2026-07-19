@@ -15,7 +15,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 const SCAN = ["src/lib/press", "src/lib/collector"];
 const ALLOW = new Set([
   "src/lib/press/kit/fonts.ts",          // GET /fonts/*.ttf — same-origin static
-  "src/lib/press/analysis/aiAnalyze.ts", // KEYED/house-key — the ONLY escalation door
+  "src/lib/press/analysis/aiAnalyze.ts", // KEYED/house/local direction — an escalation door
+  "src/lib/press/analysis/comfyGen.ts",  // LOCAL lane — visitor's own ComfyUI at localhost
   "src/lib/press/seeds/lexiconSeeds.ts", // GET public lexicon.json — carries no user data
 ]);
 
