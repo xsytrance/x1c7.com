@@ -115,7 +115,10 @@ export default function CaseMakerPage() {
             <span className="text-emerald-500"> Everything happens in this tab: your art and audio never leave your machine.</span>
           </p>
         </div>
-        <a href="/music" className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600 transition hover:text-zinc-300">the shelf →</a>
+        <span className="flex flex-col items-end gap-1">
+          <a href="/music" className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600 transition hover:text-zinc-300">the shelf →</a>
+          <a href="/press" className="font-mono text-[11px] uppercase tracking-[0.2em] text-amber-400/70 transition hover:text-amber-300">more formats → the pressing plant</a>
+        </span>
       </header>
 
       <div className="mx-auto grid max-w-[1400px] gap-6 p-5 lg:grid-cols-[minmax(0,1fr)_400px]">
