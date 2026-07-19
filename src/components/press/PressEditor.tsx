@@ -8,6 +8,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { COLLECTOR_PALETTES, classifyCollector } from "@/lib/studio/collectorPalettes";
 import { buildOverlaySVG, artPlacement, renderCasePNG, W, H } from "@/lib/collector/webEngine";
 import { caseSpecFrom } from "@/lib/press/templates/collectorCase";
+import { getTemplate, templateList } from "@/lib/press/templates/registry";
+import { renderSurfaceSVG } from "@/lib/press/render/renderSurface";
+import { exportSurfacePNG } from "@/lib/press/render/exportPng";
 import { projectStore, useProject, newProject } from "@/lib/press/state/projectStore";
 import { loadProject, putAsset, getAsset } from "@/lib/press/state/persist";
 import { audioFacts } from "@/lib/press/analysis/audioFacts";
@@ -20,11 +23,12 @@ import { PrivacyBadge } from "./PrivacyBadge";
 const LABEL = "text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500";
 const HINT = "text-[11px] leading-4 text-zinc-600";
 const FIELD = "mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 font-mono text-xs text-zinc-200 placeholder:text-zinc-700 focus:border-amber-400/60 focus:outline-none";
-const ROOMS = ["THE DROP", "THE LOOK", "THE FACTS"] as const;
+type Room = "THE DROP" | "THE LOOK" | "THE PRINT SHOP" | "THE FACTS";
 
-export default function PressEditor() {
+export default function PressEditor({ templateId }: { templateId?: string }) {
   const project = useProject();
-  const [room, setRoom] = useState<(typeof ROOMS)[number]>("THE DROP");
+  const [room, setRoom] = useState<Room>("THE DROP");
+  const [surfaceId, setSurfaceId] = useState<string | null>(null);
   const [artUrl, setArtUrl] = useState<string | null>(null);
   const [artDim, setArtDim] = useState<{ w: number; h: number } | null>(null);
   const [artHue, setArtHue] = useState<number | null>(null);
@@ -39,7 +43,10 @@ export default function PressEditor() {
   useEffect(() => {
     const saved = loadProject();
     if (saved) projectStore.load(saved);
-    else projectStore.load(newProject("collector"));
+    else projectStore.load(newProject(templateId ?? "collector"));
+    if (templateId && projectStore.get().templateId !== templateId) {
+      projectStore.apply((d) => { d.templateId = templateId; });
+    }
     const ref = (saved ?? projectStore.get()).art.slots.cover;
     if (ref) {
       getAsset(ref.assetId).then((blob) => { if (blob) attachArt(blob, false); });
@@ -122,19 +129,45 @@ export default function PressEditor() {
     setPaste("");
   }
 
+  const template = getTemplate(project.templateId);
+  const legacy = !!template.legacy;
+  const activeSurface = !legacy
+    ? template.surfaces.find((s) => s.id === surfaceId) ?? template.surfaces[0]
+    : null;
+  const slug = () => (project.identity.title || "untitled").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "untitled";
+
+  function download(blob: Blob, name: string) {
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = name;
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
   async function printIt() {
     if (busy) return;
-    const ref = project.art.slots.cover;
-    if (!ref || !artImgRef.current) { setMsg("drop your art first — that's the one thing the press needs"); return; }
-    setBusy(true); setMsg("pressing 2048² PNG on your device…");
+    const needsArt = legacy || template.surfaces.some((s) => s.layers.some((l) => l.kind === "art"));
+    if (needsArt && (!project.art.slots.cover || !artImgRef.current)) {
+      setMsg("drop your art first — that's the one thing the press needs");
+      return;
+    }
+    setBusy(true);
     try {
-      const blob = await renderCasePNG(artImgRef.current, caseSpecFrom(project));
-      const a = document.createElement("a");
-      a.href = URL.createObjectURL(blob);
-      a.download = `${(project.identity.title || "untitled").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "case"}-collector.png`;
-      a.click();
-      URL.revokeObjectURL(a.href);
-      setMsg("✓ pressed — check your downloads");
+      if (legacy) {
+        setMsg("pressing 2048² PNG on your device…");
+        download(await renderCasePNG(artImgRef.current!, caseSpecFrom(project)), `${slug()}-collector.png`);
+        setMsg("✓ pressed — check your downloads");
+      } else {
+        // full press run: every surface, sequentially (one canvas alive at a time)
+        const notes: string[] = [];
+        for (const s of template.surfaces) {
+          setMsg(`pressing ${s.name.toLowerCase()}…`);
+          const out = await exportSurfacePNG(s, project, artImgRef.current);
+          download(out.blob, `${slug()}-${template.id}-${s.id}.png`);
+          notes.push(`${s.id} ${out.widthPx}×${out.heightPx}@${out.dpi}dpi`);
+        }
+        setMsg(`✓ pressed ${template.surfaces.length} surfaces — ${notes.join(" · ")}`);
+      }
     } catch (e) {
       setMsg(`press failed: ${(e as Error).message}`);
     }
@@ -143,6 +176,13 @@ export default function PressEditor() {
 
   const spec = useMemo(() => caseSpecFrom(project), [project]);
   const overlaySVG = useMemo(() => buildOverlaySVG(spec), [spec]);
+  const surfaceSVG = useMemo(() => {
+    if (legacy || !activeSurface) return null;
+    return renderSurfaceSVG(activeSurface, project, {
+      pxPerMm: 96 / 25.4, mode: "all", bleed: false, guides: true,
+      artUrl, artDim,
+    });
+  }, [legacy, activeSurface, project, artUrl, artDim]);
   const place = artDim ? artPlacement(artDim.w, artDim.h) : null;
   const recs = useMemo(() => recommend(project, { artHue }).filter((r) => !dismissed.includes(r.id)), [project, artHue, dismissed]);
   const rec = recs[0] ?? null;
@@ -155,23 +195,39 @@ export default function PressEditor() {
       {/* preview */}
       <section className="lg:sticky lg:top-6 lg:h-fit">
         <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-black">
-          <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full">
-            <rect width={W} height={H} fill="#050505" />
-            {artUrl && place && artDim && (
-              <>
-                <defs><clipPath id="pArtClip"><rect x={place.dx} y={place.dy} width={place.dw} height={place.dh} /></clipPath></defs>
-                <image href={artUrl}
-                  x={place.dx - (place.sx * place.dw) / place.sw}
-                  y={place.dy - (place.sy * place.dh) / place.sh}
-                  width={(artDim.w * place.dw) / place.sw}
-                  height={(artDim.h * place.dh) / place.sh}
-                  clipPath="url(#pArtClip)" preserveAspectRatio="none" />
-              </>
-            )}
-            {!artUrl && <text x={W / 2 + 130} y={H / 2} fontFamily="Bebas Neue" fontSize="72" fill="#26262e" textAnchor="middle">FEED ME YOUR SONG</text>}
-            <g dangerouslySetInnerHTML={{ __html: overlaySVG.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "") }} />
-          </svg>
+          {legacy ? (
+            <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full">
+              <rect width={W} height={H} fill="#050505" />
+              {artUrl && place && artDim && (
+                <>
+                  <defs><clipPath id="pArtClip"><rect x={place.dx} y={place.dy} width={place.dw} height={place.dh} /></clipPath></defs>
+                  <image href={artUrl}
+                    x={place.dx - (place.sx * place.dw) / place.sw}
+                    y={place.dy - (place.sy * place.dh) / place.sh}
+                    width={(artDim.w * place.dw) / place.sw}
+                    height={(artDim.h * place.dh) / place.sh}
+                    clipPath="url(#pArtClip)" preserveAspectRatio="none" />
+                </>
+              )}
+              {!artUrl && <text x={W / 2 + 130} y={H / 2} fontFamily="Bebas Neue" fontSize="72" fill="#26262e" textAnchor="middle">FEED ME YOUR SONG</text>}
+              <g dangerouslySetInnerHTML={{ __html: overlaySVG.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "") }} />
+            </svg>
+          ) : (
+            <div className="grid place-items-center p-4 [&>svg]:h-auto [&>svg]:max-h-[78vh] [&>svg]:w-auto [&>svg]:max-w-full"
+              dangerouslySetInnerHTML={{ __html: surfaceSVG ?? "" }} />
+          )}
         </div>
+        {!legacy && activeSurface && (
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-1">
+            {template.surfaces.map((s) => (
+              <button key={s.id} onClick={() => setSurfaceId(s.id)}
+                className={`rounded-full border px-3 py-1 text-[10px] font-semibold uppercase tracking-wider transition ${activeSurface.id === s.id ? "border-amber-400/60 text-amber-300" : "border-zinc-800 text-zinc-600 hover:text-zinc-400"}`}>
+                {s.name}
+              </button>
+            ))}
+            <span className={`${HINT} ml-2`}>{activeSurface.size.w}×{activeSurface.size.h}mm{activeSurface.folds?.length ? " · fold guides shown" : ""}</span>
+          </div>
+        )}
         {/* recommendation strip — one at a time, read → suggestion → override */}
         {rec && (
           <div className="mt-3 flex items-start justify-between gap-3 rounded-xl border border-amber-400/25 bg-amber-400/5 p-3">
@@ -193,8 +249,8 @@ export default function PressEditor() {
       {/* rail + rooms */}
       <aside className="space-y-4">
         <div className="flex items-center justify-between gap-2">
-          <div className="flex gap-1">
-            {ROOMS.map((r) => (
+          <div className="flex flex-wrap gap-1">
+            {(legacy ? ["THE DROP", "THE LOOK", "THE FACTS"] as Room[] : ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE FACTS"] as Room[]).map((r) => (
               <button key={r} onClick={() => setRoom(r)}
                 className={`rounded-full border px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] transition ${room === r ? "border-amber-400/60 text-amber-300" : "border-zinc-800 text-zinc-600 hover:text-zinc-400"}`}>
                 {r}
@@ -246,7 +302,45 @@ export default function PressEditor() {
                 <input value={id.label} onChange={(e) => setId({ label: e.target.value })} placeholder="YOUR LABEL" className={FIELD} />
               </div>
             </div>
+            <div>
+              <p className={HINT}>The press — switch formats anytime, your song rides along</p>
+              <div className="mt-1 grid grid-cols-3 gap-1.5">
+                {templateList().map((t) => {
+                  const active = project.templateId === t.id;
+                  const thumbSurface = t.legacy ? null : t.surfaces[0];
+                  return (
+                    <button key={t.id} onClick={() => { projectStore.apply((d) => { d.templateId = t.id; }); setSurfaceId(null); }}
+                      className={`overflow-hidden rounded-lg border p-1 text-left transition ${active ? "border-amber-400/60" : "border-zinc-800 hover:border-zinc-600"}`}>
+                      <div className="pointer-events-none h-14 overflow-hidden rounded bg-black [&>svg]:h-full [&>svg]:w-full [&>svg]:object-contain"
+                        dangerouslySetInnerHTML={{
+                          __html: thumbSurface
+                            ? renderSurfaceSVG(thumbSurface, { ...project, templateId: t.id }, { pxPerMm: 1.4, mode: "all", artUrl, artDim })
+                            : overlaySVG.replace("<svg ", `<svg preserveAspectRatio="xMidYMid meet" `),
+                        }} />
+                      <p className={`mt-1 truncate text-[9px] font-bold uppercase tracking-wider ${active ? "text-amber-300" : "text-zinc-500"}`}>{t.name}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
             <p className={HINT}>Coming from Suno? Grab the mp3, lyrics, and style text from your library page — feed me any or all. Stems zips get a seat at the table in the next expansion.</p>
+          </div>
+        )}
+
+        {room === "THE PRINT SHOP" && !legacy && (
+          <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
+            <p className={LABEL}>The print shop <span className="normal-case tracking-normal text-zinc-700">— every surface has a sane default</span></p>
+            <ul className="space-y-1.5">
+              {template.surfaces.map((s) => (
+                <li key={s.id} className="flex items-center justify-between gap-2">
+                  <button onClick={() => setSurfaceId(s.id)} className={`text-left text-xs ${activeSurface?.id === s.id ? "text-amber-300" : "text-zinc-400 hover:text-zinc-200"}`}>
+                    {activeSurface?.id === s.id ? "●" : "○"} {s.name}
+                  </button>
+                  <span className={HINT}>{s.size.w}×{s.size.h}mm{s.shape === "circle" ? " · disc" : ""}{s.holes?.length ? ` · ${s.holes.length} hole${s.holes.length > 1 ? "s" : ""}` : ""}{s.folds?.length ? ` · ${s.folds.length} folds` : ""}</span>
+                </li>
+              ))}
+            </ul>
+            <p className={HINT}>Tap a surface to see it on the bench. PRINT IT presses the whole run — one file per surface, fold guides excluded from exports, holes punched to true transparency. Per-surface fine-tuning (move the type, swap the art) opens up in the next expansion.</p>
           </div>
         )}
 

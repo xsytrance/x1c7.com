@@ -4,24 +4,32 @@
 // privacy stance load instantly; the editor (and later the 3D Booth, the
 // zip cruncher, the idea shelf) are separate lazy chunks.
 
-import { useState } from "react";
-import dynamic from "next/dynamic";
+import { useState, type ComponentType } from "react";
 import { templateList } from "@/lib/press/templates/registry";
 import { PrivacyBadge } from "@/components/press/PrivacyBadge";
 
-const PressEditor = dynamic(() => import("@/components/press/PressEditor"), {
-  ssr: false,
-  loading: () => <p className="p-8 text-center font-mono text-xs text-zinc-600">warming up the press…</p>,
-});
+// The editor loads ONLY on interaction (a handler-level import()) — a
+// module-scope next/dynamic gets preloaded on landing, which blew the
+// light-landing budget in P1 (~+700KB at networkidle). Doctrine: the FREE
+// front door stays feather-weight.
 
 const COMING = [
-  { name: "Cassette", era: "1979", blurb: "J-card and shell labels A/B." },
-  { name: "Vinyl 12\" · 10\" · 7\"", era: "1948", blurb: "Sleeves and labels, both sides." },
   { name: "CD Jewel Case", era: "1985", blurb: "Front insert, tray, disc — and the booklet." },
+  { name: "8-Track", era: "1965", blurb: "The cartridge nobody expects." },
 ];
 
 export default function PressPage() {
+  const [Editor, setEditor] = useState<ComponentType<{ templateId?: string }> | null>(null);
   const [pressing, setPressing] = useState(false);
+  const [pickedId, setPickedId] = useState<string>("collector");
+  async function enter(templateId: string) {
+    setPickedId(templateId);
+    setPressing(true);
+    if (!Editor) {
+      const m = await import("@/components/press/PressEditor");
+      setEditor(() => m.default);
+    }
+  }
   return (
     <main className="min-h-[100dvh] bg-[#050510] text-zinc-200">
       <style>{`
@@ -50,7 +58,7 @@ export default function PressPage() {
           <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.25em] text-zinc-600">The press — pick your format</p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {templateList().map((t) => (
-              <button key={t.id} onClick={() => setPressing(true)}
+              <button key={t.id} onClick={() => enter(t.id)}
                 className="group rounded-2xl border border-amber-400/30 bg-zinc-900/40 p-5 text-left transition hover:border-amber-400/70">
                 <p className="font-display text-lg font-black tracking-widest text-zinc-100 group-hover:text-amber-300">{t.name.toUpperCase()}</p>
                 <p className="mt-1 text-[11px] text-zinc-600">est. {t.era} · {t.blurb}</p>
@@ -66,8 +74,10 @@ export default function PressPage() {
             ))}
           </div>
         </section>
+      ) : Editor ? (
+        <Editor templateId={pickedId} />
       ) : (
-        <PressEditor />
+        <p className="p-8 text-center font-mono text-xs text-zinc-600">warming up the press…</p>
       )}
     </main>
   );
