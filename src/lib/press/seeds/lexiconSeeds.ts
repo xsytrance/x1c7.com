@@ -49,3 +49,79 @@ export async function lexiconSeeds(lyrics: string, max = 12): Promise<LexSeed[]>
     .sort((a, b) => (b.gravity === "heavy" ? 1 : 0) - (a.gravity === "heavy" ? 1 : 0) || (b.image ? 1 : 0) - (a.image ? 1 : 0))
     .slice(0, max);
 }
+
+// ── PRESSINGS — Lexsycon-driven full variants ────────────────────────────────
+// Each heavy word becomes a complete alternate look: the sense's own painted
+// palette worn verbatim (base/accent synthesized from its hexes), the word on
+// the spine, its painting on the chip. Variety straight from the dictionary.
+
+import { COLLECTOR_PALETTES, type CollectorPalette } from "@/lib/studio/collectorPalettes";
+
+export interface Pressing {
+  word: string;
+  emotion?: string;
+  image?: string;
+  custom: CollectorPalette;
+  nearestKey: string;   // legacy engine + fallback bucket
+}
+
+const hexRgb = (h: string) => {
+  const m = h.replace("#", "");
+  return [parseInt(m.slice(0, 2), 16), parseInt(m.slice(2, 4), 16), parseInt(m.slice(4, 6), 16)] as const;
+};
+const rgbHex = (r: number, g: number, b: number) =>
+  `#${[r, g, b].map((v) => Math.max(0, Math.min(255, Math.round(v))).toString(16).padStart(2, "0")).join("")}`;
+const shade = (hex: string, k: number) => { const [r, g, b] = hexRgb(hex); return rgbHex(r * k, g * k, b * k); };
+const lum = (hex: string) => { const [r, g, b] = hexRgb(hex); return 0.2126 * r + 0.7152 * g + 0.0722 * b; };
+const hueOfHex = (hex: string): number | null => {
+  const [r8, g8, b8] = hexRgb(hex);
+  const r = r8 / 255, g = g8 / 255, b = b8 / 255;
+  const max = Math.max(r, g, b), min = Math.min(r, g, b), d = max - min;
+  if (d < 0.08) return null;
+  let h = 0;
+  if (max === r) h = ((g - b) / d) % 6; else if (max === g) h = (b - r) / d + 2; else h = (r - g) / d + 4;
+  return ((h * 60) + 360) % 360;
+};
+const hueDist = (a: number, b: number) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
+
+function nearestBucket(hexes: string[]): string {
+  const target = hexes.map(hueOfHex).find((h) => h != null);
+  if (target == null) return "ARCHIVE";
+  let best = "ARCHIVE", bestD = 361;
+  for (const [k, pal] of Object.entries(COLLECTOR_PALETTES)) {
+    if (k === "ARCHIVE") continue;
+    const h = hueOfHex(pal.accent);
+    if (h == null) continue;
+    const d = hueDist(target, h);
+    if (d < bestD) { bestD = d; best = k; }
+  }
+  return best;
+}
+
+/** Synthesize a wearable palette from a sense's raw hexes. */
+export function paletteFromSense(word: string, hexes: string[], texture: string): CollectorPalette {
+  const sorted = [...hexes].sort((a, b) => lum(b) - lum(a));
+  const accent = sorted[0] ?? "#d4af37";
+  const accent2 = sorted[1] ?? shade(accent, 0.7);
+  const deep = sorted[sorted.length - 1] ?? "#101018";
+  return {
+    base: [shade(deep, 0.55), shade(deep, 0.22)],
+    accent, accent2,
+    ink: "#efeadd",
+    texture,
+    label: word.toUpperCase(),
+  };
+}
+
+/** Build up to `max` full pressings from lyrics — heavy painted words first. */
+export async function lexiconPressings(lyrics: string, max = 5): Promise<Pressing[]> {
+  const seeds = await lexiconSeeds(lyrics, max * 2);
+  return seeds
+    .filter((s) => s.palette && s.palette.length >= 2)
+    .slice(0, max)
+    .map((s) => {
+      const nearestKey = nearestBucket(s.palette!);
+      const texture = COLLECTOR_PALETTES[nearestKey]?.texture ?? "leather";
+      return { word: s.word, emotion: s.emotion, image: s.image, nearestKey, custom: paletteFromSense(s.word, s.palette!, texture) };
+    });
+}

@@ -308,6 +308,32 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
     }));
   }, [legacy, template, project, artUrl, artDim]);
 
+  // PRESSINGS — Lexsycon variants, auto-built the moment lyrics land (EASY).
+  const [pressings, setPressings] = useState<import("@/lib/press/seeds/lexiconSeeds").Pressing[] | null>(null);
+  const [activePressing, setActivePressing] = useState<string | null>(null);
+  const pressingSig = useRef("");
+  useEffect(() => {
+    if (mode !== "easy" || !project.lyrics?.trim()) return;
+    const sig = project.lyrics.slice(0, 400);
+    if (sig === pressingSig.current) return;
+    pressingSig.current = sig;
+    void import("@/lib/press/seeds/lexiconSeeds").then(async ({ lexiconPressings }) => {
+      try { setPressings(await lexiconPressings(project.lyrics!)); } catch { setPressings([]); }
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, project.lyrics]);
+
+  function wearPressing(pr: import("@/lib/press/seeds/lexiconSeeds").Pressing | null) {
+    projectStore.apply((d) => {
+      if (!pr) { d.identity.customPalette = null; d.identity.spineWord = null; d.identity.paletteKey = null; }
+      else { d.identity.customPalette = pr.custom; d.identity.paletteKey = pr.nearestKey; d.identity.spineWord = pr.word.toUpperCase(); }
+    });
+    setActivePressing(pr?.word ?? null);
+    setMsg(pr
+      ? `wearing the ${pr.word.toUpperCase()} pressing — the Lexsycon's own colors for your word${pr.emotion ? ` (${pr.emotion.toLowerCase()})` : ""}`
+      : "back to the original pressing");
+  }
+
   // auto-derive: the moment new food lands, choices are MADE (receipts shown),
   // never asked. The user's chosen format is sacred.
   const autoSig = useRef("");
@@ -389,6 +415,28 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
           <IntakeLedger project={project} />
         </aside>
         <section className="space-y-4">
+          {pressings && pressings.length > 0 && (
+            <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-3">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-zinc-500">Pressings <span className="normal-case tracking-normal text-zinc-700">— your words, as the Lexsycon painted them; tap to re-dress everything</span></p>
+              <div className="mt-2 flex gap-2 overflow-x-auto pb-1">
+                <button onClick={() => wearPressing(null)}
+                  className={`w-20 shrink-0 rounded-lg border p-1.5 text-left transition ${!activePressing ? "border-amber-400/70" : "border-zinc-800 hover:border-zinc-600"}`}>
+                  <span className="block h-10 w-full rounded bg-gradient-to-br from-zinc-700 to-zinc-900" />
+                  <span className="mt-1 block truncate text-[9px] font-bold uppercase tracking-wider text-zinc-400">original</span>
+                </button>
+                {pressings.map((pr) => (
+                  <button key={pr.word} onClick={() => wearPressing(pr)}
+                    className={`w-20 shrink-0 rounded-lg border p-1.5 text-left transition ${activePressing === pr.word ? "border-amber-400/70" : "border-zinc-800 hover:border-zinc-600"}`}>
+                    {pr.image
+                      ? /* eslint-disable-next-line @next/next/no-img-element */
+                        <img src={pr.image} alt="" loading="lazy" className="h-10 w-full rounded object-cover" />
+                      : <span className="block h-10 w-full rounded" style={{ background: `linear-gradient(135deg, ${pr.custom.base[0]}, ${pr.custom.accent})` }} />}
+                    <span className="mt-1 block truncate text-[9px] font-bold uppercase tracking-wider" style={{ color: pr.custom.accent }}>{pr.word}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
           {legacy ? (
             <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-black">
               <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full">

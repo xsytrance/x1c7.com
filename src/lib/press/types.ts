@@ -126,6 +126,8 @@ export interface ProjectSpec {
     series?: string | null;
     explicit?: boolean;
     unreleased?: boolean;
+    /** A Lexsycon-sense palette worn verbatim (variety beyond the 19 buckets). */
+    customPalette?: import("@/lib/studio/collectorPalettes").CollectorPalette | null;
   };
   facts: {
     bpm?: number | null;

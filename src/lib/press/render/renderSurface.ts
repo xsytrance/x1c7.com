@@ -24,6 +24,7 @@ export interface SurfaceRenderCtx {
 
 export function paletteOf(p: ProjectSpec, surfaceId?: string): { key: string; pal: CollectorPalette } {
   const over = surfaceId ? p.surfaces[surfaceId]?.paletteKey : undefined;
+  if (!over && p.identity.customPalette) return { key: "CUSTOM", pal: p.identity.customPalette };
   const key = over || p.identity.paletteKey || classifyCollector(p.identity.genre).key;
   return { key, pal: COLLECTOR_PALETTES[key] ?? COLLECTOR_PALETTES.ARCHIVE };
 }
@@ -35,6 +36,7 @@ export const GOLD = "#d4af37", GOLD_HI = "#f0d878", GOLD_LO = "#8a6d1e";
 export function publicWord(p: ProjectSpec, surfaceId?: string): string {
   if (p.identity.spineWord) return p.identity.spineWord.toUpperCase();
   const { key, pal } = paletteOf(p, surfaceId);
+  if (key === "CUSTOM") return pal.label;
   return key === "ARCHIVE" && !p.identity.paletteKey ? "" : pal.label;
 }
 
