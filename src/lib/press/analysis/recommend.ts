@@ -39,7 +39,7 @@ const fmtT = (t: number) => `${Math.floor(t / 60)}:${String(Math.round(t % 60)).
 
 /** SURPRISE ME — derive everything derivable, with receipts. Deterministic
  *  per (project, roll); re-roll shifts the picks. */
-export function surpriseMe(p: ProjectSpec, inputs: RecInputs, roll = 0): { next: ProjectSpec; receipts: string[] } {
+export function surpriseMe(p: ProjectSpec, inputs: RecInputs, roll = 0, opts?: { keepFormat?: boolean }): { next: ProjectSpec; receipts: string[] } {
   const receipts: string[] = [];
   const d = structuredClone(p);
   const excl = d.analysis?.exclusions;
@@ -68,8 +68,8 @@ export function surpriseMe(p: ProjectSpec, inputs: RecInputs, roll = 0): { next:
     .filter((w) => !["that","this","with","your","just","like","dont","cant","wont","from","when","what","been","they","them"].includes(w));
   const spine = top[roll % Math.max(1, Math.min(3, top.length))];
   if (spine && !d.identity.spineWord) { d.identity.spineWord = spine.toUpperCase(); receipts.push(`spine word ${spine.toUpperCase()} — your heaviest lyric word`); }
-  // format nudge
-  if (d.analysis?.duration && d.analysis.duration > 360 && !d.templateId.startsWith("vinyl")) {
+  // format nudge (EASY auto-derive keeps the user's chosen format sacred)
+  if (!opts?.keepFormat && d.analysis?.duration && d.analysis.duration > 360 && !d.templateId.startsWith("vinyl")) {
     d.templateId = "vinyl-12"; receipts.push(`pressed as vinyl 12" — ${Math.floor(d.analysis.duration / 60)}+ minutes breathes like a single`);
   }
   // side-split note

@@ -43,6 +43,9 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
   const [lastPaste, setLastPaste] = useState<PasteKind | null>(null);
   const [dismissed, setDismissed] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
+  const [mode, setMode] = useState<"easy" | "pro">("easy");
+  useEffect(() => { try { if (localStorage.getItem("press:mode") === "pro") setMode("pro"); } catch { /* fine */ } }, []);
+  const setModePersist = (m: "easy" | "pro") => { setMode(m); try { localStorage.setItem("press:mode", m); } catch { /* fine */ } };
   const [msg, setMsg] = useState<string | null>(null);
 
   // restore the draft (JSON from localStorage, art blob from IndexedDB)
@@ -229,6 +232,206 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
   const id = project.identity;
   const setId = (patch: Partial<typeof id>) => projectStore.apply((d) => { Object.assign(d.identity, patch); });
 
+  const dropPanel = (
+    <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
+            <p className={LABEL}>Feed me your song <span className="normal-case tracking-normal text-zinc-700">— any of it, in any order</span></p>
+            <div>
+              <p className={HINT}>Art (the one thing the press needs)</p>
+              <input type="file" accept="image/*" onChange={(e) => e.target.files?.[0] && attachArt(e.target.files[0])}
+                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
+            </div>
+            <div>
+              <p className={HINT}>Audio → true waveform, runtime, BPM</p>
+              <input type="file" accept="audio/*" onChange={(e) => onAudio(e.target.files?.[0] || null)}
+                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
+            </div>
+            <div>
+              <p className={HINT}>Suno stems zip → the band, sections, the tape flip, DELUXE booklet</p>
+              <input type="file" accept=".zip,application/zip" onChange={(e) => onStems(e.target.files?.[0] || null)}
+                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
+            </div>
+            <div>
+              <p className={HINT}>Paste lyrics, style text, or exclusions — I&apos;ll sort out which is which</p>
+              <textarea value={paste} onChange={(e) => setPaste(e.target.value)} rows={3}
+                placeholder={"lyrics…\nor: dreamy liquid dnb, female vocal\nor: no synthwave, avoid neon"} className={`${FIELD} resize-none`} />
+              <div className="mt-1 flex items-center gap-2">
+                <button onClick={onPaste} disabled={!paste.trim()}
+                  className="rounded-full border border-zinc-700 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 disabled:opacity-30">feed it</button>
+                {lastPaste && <span className={HINT}>read as <b className="text-zinc-400">{lastPaste}</b> — wrong?{" "}
+                  {(["lyrics", "style", "exclusions"] as PasteKind[]).filter((k) => k !== lastPaste).map((k) => (
+                    <button key={k} onClick={() => { const t = project.lyrics; void t; setLastPaste(k); setMsg(`re-read as ${k} — paste it again and I'll file it there`); }}
+                      className="mr-1 underline decoration-dotted">{k}</button>
+                  ))}</span>}
+              </div>
+            </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <p className={HINT}>Title</p>
+                <input value={id.title} onChange={(e) => setId({ title: e.target.value })} placeholder="Neon Rain (Night Drive Mix)" className={FIELD} />
+              </div>
+              <div>
+                <p className={HINT}>Your label</p>
+                <input value={id.label} onChange={(e) => setId({ label: e.target.value })} placeholder="YOUR LABEL" className={FIELD} />
+              </div>
+            </div>
+            <div>
+              <p className={HINT}>The press — switch formats anytime, your song rides along</p>
+              <div className="mt-1 grid grid-cols-3 gap-1.5">
+                {templateList().map((t) => {
+                  const active = project.templateId === t.id;
+                  const thumbSurface = t.legacy ? null : t.surfaces[0];
+                  return (
+                    <button key={t.id} onClick={() => { projectStore.apply((d) => { d.templateId = t.id; }); setSurfaceId(null); }}
+                      className={`overflow-hidden rounded-lg border p-1 text-left transition ${active ? "border-amber-400/60" : "border-zinc-800 hover:border-zinc-600"}`}>
+                      <div className="pointer-events-none h-14 overflow-hidden rounded bg-black [&>svg]:h-full [&>svg]:w-full [&>svg]:object-contain"
+                        dangerouslySetInnerHTML={{
+                          __html: thumbSurface
+                            ? renderSurfaceSVG(thumbSurface, { ...project, templateId: t.id }, { pxPerMm: 1.4, mode: "all", artUrl, artDim })
+                            : overlaySVG.replace("<svg ", `<svg preserveAspectRatio="xMidYMid meet" `),
+                        }} />
+                      <p className={`mt-1 truncate text-[9px] font-bold uppercase tracking-wider ${active ? "text-amber-300" : "text-zinc-500"}`}>{t.name}</p>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+            <p className={HINT}>Coming from Suno? Grab the mp3, lyrics, and style text from your library page — feed me any or all. Stems zips get a seat at the table in the next expansion.</p>
+          </div>
+  );
+
+  // ── EASY PRESS (the spoonfeed-first law, owner 2026-07-19) ────────────────
+  const spread = useMemo(() => {
+    if (legacy) return null;
+    return template.surfaces.map((sf) => ({
+      sf,
+      svg: renderSurfaceSVG(sf, project, { pxPerMm: 2.6, mode: "all", artUrl, artDim }),
+    }));
+  }, [legacy, template, project, artUrl, artDim]);
+
+  // auto-derive: the moment new food lands, choices are MADE (receipts shown),
+  // never asked. The user's chosen format is sacred.
+  const autoSig = useRef("");
+  useEffect(() => {
+    if (mode !== "easy") return;
+    const sig = `${project.templateId}|${artHue != null}|${(project.analysis?.sources ?? []).join(",")}`;
+    if (sig === autoSig.current) return;
+    autoSig.current = sig;
+    if (artHue == null && !(project.analysis?.sources?.length)) return;
+    const { next, receipts: r } = surpriseMe(project, { artHue }, 0, { keepFormat: true });
+    projectStore.apply(() => next);
+    setReceipts(r);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [mode, artHue, project.templateId, project.analysis?.sources?.length]);
+
+  async function pressKit() {
+    if (busy) return;
+    if (!project.art.slots.cover || !artImgRef.current) { setMsg("drop your art — that's the one thing the press needs"); return; }
+    setBusy(true);
+    try {
+      const JSZip = (await import("jszip")).default;
+      const zip = new JSZip();
+      const lines: string[] = [`${(project.identity.title || "UNTITLED").toUpperCase()} — pressed at the pressing plant`, ""];
+      if (legacy) {
+        setMsg("pressing the case…");
+        zip.file(`${slug()}-collector-case.png`, await renderCasePNG(artImgRef.current, caseSpecFrom(project)));
+        lines.push("collector-case.png — 2048×2048, the whole case");
+      } else {
+        for (const sf of template.surfaces) {
+          setMsg(`pressing ${sf.name.toLowerCase()}…`);
+          const out = await exportSurfacePNG(sf, project, artImgRef.current);
+          zip.file(`${slug()}-${sf.id}.png`, out.blob);
+          lines.push(`${sf.id}.png — ${sf.name}, ${out.widthPx}×${out.heightPx} @ ${out.dpi}dpi`);
+        }
+      }
+      if (template.id === "jewel") {
+        setMsg("binding the booklet…");
+        const { newBooklet } = await import("@/lib/press/booklet/model");
+        const { imposeBooklet } = await import("@/lib/press/booklet/impose");
+        const b = projectStore.get().booklet ?? newBooklet("classic");
+        if (!projectStore.get().booklet) projectStore.apply((d) => { d.booklet = b; });
+        zip.file(`${slug()}-booklet.pdf`, await imposeBooklet(b, projectStore.get(), artImgRef.current, (m) => setMsg(m)));
+        lines.push("booklet.pdf — print duplex (flip on short edge), cut, fold, two staples");
+      }
+      lines.push("", "everything was rendered on your device. nothing was uploaded. — the pressing plant");
+      zip.file("WHATS-IN-THE-BOX.txt", lines.join("\n"));
+      setMsg("zipping the kit…");
+      download(await zip.generateAsync({ type: "blob" }), `${slug()}-${template.id}-kit.zip`);
+      setMsg(`✓ the whole kit — ${legacy ? 1 : template.surfaces.length}${template.id === "jewel" ? " pieces + booklet" : " pieces"}, one zip`);
+    } catch (e) {
+      setMsg(`kit failed: ${(e as Error).message}`);
+    }
+    setBusy(false);
+  }
+
+  if (mode === "easy") return (
+    <div className="mx-auto max-w-[1400px] space-y-4 p-5">
+      <div className="flex items-center justify-between">
+        <p className={LABEL}>Easy press <span className="normal-case tracking-normal text-zinc-700">— feed it once, get every piece</span></p>
+        <span className="flex items-center gap-2">
+          <p title={postureOf(engine).blurb}
+            className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[9px] font-bold uppercase tracking-[0.15em] ${postureOf(engine).tone}`}>
+            {postureOf(engine).label}
+          </p>
+          <button onClick={() => setModePersist("pro")}
+            className="rounded-full border border-zinc-800 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300">⚙ pro mode</button>
+        </span>
+      </div>
+      <div className="grid gap-5 lg:grid-cols-[400px_minmax(0,1fr)]">
+        <aside className="space-y-4">
+          {dropPanel}
+          {receipts && (
+            <div className="rounded-xl border border-amber-400/25 bg-amber-400/5 p-3">
+              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-amber-300/80">choices made for you</p>
+              <ul className="mt-1 space-y-0.5">{receipts.map((r, i) => <li key={i} className={HINT}>· {r}</li>)}</ul>
+              <p className={`${HINT} mt-1 text-zinc-700`}>change anything in ⚙ pro mode · ctrl-z undoes</p>
+            </div>
+          )}
+          <IntakeLedger project={project} />
+        </aside>
+        <section className="space-y-4">
+          {legacy ? (
+            <div className="overflow-hidden rounded-2xl border border-zinc-800 bg-black">
+              <svg viewBox={`0 0 ${W} ${H}`} className="block h-auto w-full">
+                <rect width={W} height={H} fill="#050505" />
+                {artUrl && place && artDim && (
+                  <>
+                    <defs><clipPath id="ezArtClip"><rect x={place.dx} y={place.dy} width={place.dw} height={place.dh} /></clipPath></defs>
+                    <image href={artUrl}
+                      x={place.dx - (place.sx * place.dw) / place.sw}
+                      y={place.dy - (place.sy * place.dh) / place.sh}
+                      width={(artDim.w * place.dw) / place.sw}
+                      height={(artDim.h * place.dh) / place.sh}
+                      clipPath="url(#ezArtClip)" preserveAspectRatio="none" />
+                  </>
+                )}
+                {!artUrl && <text x={W / 2 + 130} y={H / 2} fontFamily="Bebas Neue" fontSize="72" fill="#26262e" textAnchor="middle">FEED ME YOUR SONG</text>}
+                <g dangerouslySetInnerHTML={{ __html: overlaySVG.replace(/^<svg[^>]*>/, "").replace(/<\/svg>$/, "") }} />
+              </svg>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {spread?.map(({ sf, svg }) => (
+                <figure key={sf.id} className="overflow-hidden rounded-2xl border border-zinc-800 bg-black p-2">
+                  <div className="grid place-items-center [&>svg]:h-auto [&>svg]:max-h-[360px] [&>svg]:w-auto [&>svg]:max-w-full" dangerouslySetInnerHTML={{ __html: svg }} />
+                  <figcaption className={`${HINT} mt-1.5 text-center`}>{sf.name} · {sf.size.w}×{sf.size.h}mm</figcaption>
+                </figure>
+              ))}
+            </div>
+          )}
+          <button onClick={pressKit} disabled={busy}
+            className="w-full rounded-full border border-amber-400/50 px-4 py-3 text-xs font-black uppercase tracking-[0.2em] text-amber-300 transition hover:bg-amber-400/10 disabled:opacity-40">
+            {busy ? "pressing…" : `PRESS THE WHOLE KIT — every piece${template.id === "jewel" ? " + booklet" : ""}, one zip`}
+          </button>
+          {msg && <p className={`${HINT} text-center`}>{msg}</p>}
+          <details className="rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
+            <summary className={`${LABEL} cursor-pointer select-none`}>See it in 3D <span className="normal-case tracking-normal text-zinc-700">— spin it, film it</span></summary>
+            <div className="mt-3"><StudioScene project={project} artImg={artImgRef.current} /></div>
+          </details>
+        </section>
+      </div>
+    </div>
+  );
+
   return (
     <div className="mx-auto grid max-w-[1400px] gap-6 p-5 lg:grid-cols-[minmax(0,1fr)_400px]">
       {/* preview */}
@@ -301,6 +504,8 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
             ))}
           </div>
           <span className="flex gap-1">
+            <button onClick={() => setModePersist("easy")} title="back to the spoonfed spread"
+              className="rounded-full border border-zinc-800 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-zinc-500 hover:text-zinc-300">← easy</button>
             <button onClick={doSurprise} title="derive everything derivable, with receipts"
               className="rounded-full border border-amber-400/40 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-amber-300/90 hover:bg-amber-400/10">surprise me</button>
             <button onClick={() => projectStore.undo()} disabled={!projectStore.canUndo()} title="undo (ctrl-z)"
@@ -314,72 +519,7 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
           {postureOf(engine).label}
         </p>
 
-        {room === "THE DROP" && (
-          <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
-            <p className={LABEL}>Feed me your song <span className="normal-case tracking-normal text-zinc-700">— any of it, in any order</span></p>
-            <div>
-              <p className={HINT}>Art (the one thing the press needs)</p>
-              <input type="file" accept="image/*" onChange={(e) => e.target.files?.[0] && attachArt(e.target.files[0])}
-                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
-            </div>
-            <div>
-              <p className={HINT}>Audio → true waveform, runtime, BPM</p>
-              <input type="file" accept="audio/*" onChange={(e) => onAudio(e.target.files?.[0] || null)}
-                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
-            </div>
-            <div>
-              <p className={HINT}>Suno stems zip → the band, sections, the tape flip, DELUXE booklet</p>
-              <input type="file" accept=".zip,application/zip" onChange={(e) => onStems(e.target.files?.[0] || null)}
-                className="mt-1 w-full text-xs text-zinc-500 file:mr-3 file:rounded-full file:border file:border-zinc-700 file:bg-transparent file:px-3 file:py-1 file:text-[10px] file:font-semibold file:uppercase file:tracking-wider file:text-zinc-400" />
-            </div>
-            <div>
-              <p className={HINT}>Paste lyrics, style text, or exclusions — I&apos;ll sort out which is which</p>
-              <textarea value={paste} onChange={(e) => setPaste(e.target.value)} rows={3}
-                placeholder={"lyrics…\nor: dreamy liquid dnb, female vocal\nor: no synthwave, avoid neon"} className={`${FIELD} resize-none`} />
-              <div className="mt-1 flex items-center gap-2">
-                <button onClick={onPaste} disabled={!paste.trim()}
-                  className="rounded-full border border-zinc-700 px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-zinc-400 disabled:opacity-30">feed it</button>
-                {lastPaste && <span className={HINT}>read as <b className="text-zinc-400">{lastPaste}</b> — wrong?{" "}
-                  {(["lyrics", "style", "exclusions"] as PasteKind[]).filter((k) => k !== lastPaste).map((k) => (
-                    <button key={k} onClick={() => { const t = project.lyrics; void t; setLastPaste(k); setMsg(`re-read as ${k} — paste it again and I'll file it there`); }}
-                      className="mr-1 underline decoration-dotted">{k}</button>
-                  ))}</span>}
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-2">
-              <div>
-                <p className={HINT}>Title</p>
-                <input value={id.title} onChange={(e) => setId({ title: e.target.value })} placeholder="Neon Rain (Night Drive Mix)" className={FIELD} />
-              </div>
-              <div>
-                <p className={HINT}>Your label</p>
-                <input value={id.label} onChange={(e) => setId({ label: e.target.value })} placeholder="YOUR LABEL" className={FIELD} />
-              </div>
-            </div>
-            <div>
-              <p className={HINT}>The press — switch formats anytime, your song rides along</p>
-              <div className="mt-1 grid grid-cols-3 gap-1.5">
-                {templateList().map((t) => {
-                  const active = project.templateId === t.id;
-                  const thumbSurface = t.legacy ? null : t.surfaces[0];
-                  return (
-                    <button key={t.id} onClick={() => { projectStore.apply((d) => { d.templateId = t.id; }); setSurfaceId(null); }}
-                      className={`overflow-hidden rounded-lg border p-1 text-left transition ${active ? "border-amber-400/60" : "border-zinc-800 hover:border-zinc-600"}`}>
-                      <div className="pointer-events-none h-14 overflow-hidden rounded bg-black [&>svg]:h-full [&>svg]:w-full [&>svg]:object-contain"
-                        dangerouslySetInnerHTML={{
-                          __html: thumbSurface
-                            ? renderSurfaceSVG(thumbSurface, { ...project, templateId: t.id }, { pxPerMm: 1.4, mode: "all", artUrl, artDim })
-                            : overlaySVG.replace("<svg ", `<svg preserveAspectRatio="xMidYMid meet" `),
-                        }} />
-                      <p className={`mt-1 truncate text-[9px] font-bold uppercase tracking-wider ${active ? "text-amber-300" : "text-zinc-500"}`}>{t.name}</p>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-            <p className={HINT}>Coming from Suno? Grab the mp3, lyrics, and style text from your library page — feed me any or all. Stems zips get a seat at the table in the next expansion.</p>
-          </div>
-        )}
+        {room === "THE DROP" && dropPanel}
 
         {room === "THE PRINT SHOP" && !legacy && (
           <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
