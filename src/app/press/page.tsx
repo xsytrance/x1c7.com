@@ -14,7 +14,6 @@ import { PrivacyBadge } from "@/components/press/PrivacyBadge";
 // front door stays feather-weight.
 
 const COMING = [
-  { name: "CD Jewel Case", era: "1985", blurb: "Front insert, tray, disc — and the booklet." },
   { name: "8-Track", era: "1965", blurb: "The cartridge nobody expects." },
 ];
 

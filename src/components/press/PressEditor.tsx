@@ -17,13 +17,14 @@ import { audioFacts } from "@/lib/press/analysis/audioFacts";
 import { classifyPaste, descriptorWords, type PasteKind } from "@/lib/press/analysis/intake";
 import { recommend, dominantHue } from "@/lib/press/analysis/recommend";
 import type { AnalysisSummary } from "@/lib/press/types";
+import { BookletBuilder } from "./BookletBuilder";
 import { IntakeLedger } from "./IntakeLedger";
 import { PrivacyBadge } from "./PrivacyBadge";
 
 const LABEL = "text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500";
 const HINT = "text-[11px] leading-4 text-zinc-600";
 const FIELD = "mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 font-mono text-xs text-zinc-200 placeholder:text-zinc-700 focus:border-amber-400/60 focus:outline-none";
-type Room = "THE DROP" | "THE LOOK" | "THE PRINT SHOP" | "THE FACTS";
+type Room = "THE DROP" | "THE LOOK" | "THE PRINT SHOP" | "THE BINDERY" | "THE FACTS";
 
 export default function PressEditor({ templateId }: { templateId?: string }) {
   const project = useProject();
@@ -250,7 +251,11 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
       <aside className="space-y-4">
         <div className="flex items-center justify-between gap-2">
           <div className="flex flex-wrap gap-1">
-            {(legacy ? ["THE DROP", "THE LOOK", "THE FACTS"] as Room[] : ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE FACTS"] as Room[]).map((r) => (
+            {(legacy
+              ? ["THE DROP", "THE LOOK", "THE FACTS"] as Room[]
+              : template.id === "jewel"
+                ? ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE BINDERY", "THE FACTS"] as Room[]
+                : ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE FACTS"] as Room[]).map((r) => (
               <button key={r} onClick={() => setRoom(r)}
                 className={`rounded-full border px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] transition ${room === r ? "border-amber-400/60 text-amber-300" : "border-zinc-800 text-zinc-600 hover:text-zinc-400"}`}>
                 {r}
@@ -371,6 +376,10 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
             </div>
             <p className={HINT}>The header band, seal monogram, and footer carry your imprint — it&apos;s your case, not ours.</p>
           </div>
+        )}
+
+        {room === "THE BINDERY" && template.id === "jewel" && (
+          <BookletBuilder project={project} artUrl={artUrl} artDim={artDim} artImg={artImgRef.current} />
         )}
 
         {room === "THE FACTS" && (

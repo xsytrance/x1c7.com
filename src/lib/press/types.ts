@@ -136,6 +136,7 @@ export interface ProjectSpec {
   surfaces: Record<string, SurfaceOverride>;   // SPARSE — depth = opting in
   analysis?: AnalysisSummary | null;
   lyrics?: string | null;                      // kept locally for recs/booklet
+  booklet?: import("./booklet/model").BookletState | null;
   seeds?: { word: string; senseIdx: number; why?: string }[];
   updatedAt: string;
 }

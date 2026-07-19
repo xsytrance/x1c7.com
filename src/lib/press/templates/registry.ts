@@ -7,10 +7,12 @@ import type { TemplateDescriptor } from "../types";
 import { COLLECTOR_CASE } from "./collectorCase";
 import { CASSETTE } from "./cassette";
 import { makeVinyl } from "./vinyl";
+import { JEWEL_CASE } from "./jewelCase";
 
 export const TEMPLATES: Record<string, TemplateDescriptor> = {
   [COLLECTOR_CASE.id]: COLLECTOR_CASE,
   [CASSETTE.id]: CASSETTE,
+  [JEWEL_CASE.id]: JEWEL_CASE,
   "vinyl-12": makeVinyl(12),
   "vinyl-10": makeVinyl(10),
   "vinyl-7": makeVinyl(7),
