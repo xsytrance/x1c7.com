@@ -27,7 +27,9 @@ import { PrivacyBadge } from "./PrivacyBadge";
 const LABEL = "text-[11px] font-semibold uppercase tracking-[0.2em] text-zinc-500";
 const HINT = "text-[11px] leading-4 text-zinc-600";
 const FIELD = "mt-1 w-full rounded-lg border border-zinc-800 bg-zinc-950 px-3 py-2 font-mono text-xs text-zinc-200 placeholder:text-zinc-700 focus:border-amber-400/60 focus:outline-none";
-type Room = "THE DROP" | "THE LOOK" | "THE PRINT SHOP" | "THE BINDERY" | "THE FACTS";
+type Room = "THE DROP" | "THE LOOK" | "THE PRINT SHOP" | "THE BINDERY" | "THE FACTS" | "THE BOOTH";
+import dynamic from "next/dynamic";
+const StudioScene = dynamic(() => import("./three/StudioScene"), { ssr: false, loading: () => <p className="p-6 text-center font-mono text-xs text-zinc-600">warming up the booth (3D loads only here)…</p> });
 
 export default function PressEditor({ templateId }: { templateId?: string }) {
   const project = useProject();
@@ -288,10 +290,10 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
         <div className="flex items-center justify-between gap-2">
           <div className="flex flex-wrap gap-1">
             {(legacy
-              ? ["THE DROP", "THE LOOK", "THE FACTS"] as Room[]
+              ? ["THE DROP", "THE LOOK", "THE FACTS", "THE BOOTH"] as Room[]
               : template.id === "jewel"
-                ? ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE BINDERY", "THE FACTS"] as Room[]
-                : ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE FACTS"] as Room[]).map((r) => (
+                ? ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE BINDERY", "THE FACTS", "THE BOOTH"] as Room[]
+                : ["THE DROP", "THE LOOK", "THE PRINT SHOP", "THE FACTS", "THE BOOTH"] as Room[]).map((r) => (
               <button key={r} onClick={() => setRoom(r)}
                 className={`rounded-full border px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.15em] transition ${room === r ? "border-amber-400/60 text-amber-300" : "border-zinc-800 text-zinc-600 hover:text-zinc-400"}`}>
                 {r}
@@ -469,6 +471,13 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
 
         {room === "THE BINDERY" && template.id === "jewel" && (
           <BookletBuilder project={project} artUrl={artUrl} artDim={artDim} artImg={artImgRef.current} />
+        )}
+
+        {room === "THE BOOTH" && (
+          <div className="space-y-3 rounded-2xl border border-zinc-800 bg-zinc-900/40 p-4">
+            <p className={LABEL}>The booth <span className="normal-case tracking-normal text-zinc-700">— your print is done; this room is for showing it off</span></p>
+            <StudioScene project={project} artImg={artImgRef.current} />
+          </div>
         )}
 
         {room === "THE FACTS" && (
