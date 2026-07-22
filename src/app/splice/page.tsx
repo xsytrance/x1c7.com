@@ -28,6 +28,32 @@ async function fetchSong(id: string): Promise<SongLegos> {
   return s;
 }
 
+// A flow is small (song ids + section ids + knobs) — encode it into the URL
+// hash so sharing a mashup is just copying the link. No backend, still in-tab.
+type ShareFlow = { from: string; arr: { ref: string; as?: string }[]; k: FlowKnobs; ex: string[] };
+function encodeFlow(flow: Flow, knobs: FlowKnobs): string {
+  const payload: ShareFlow = {
+    from: flow.style.from,
+    arr: flow.arrangement.map((a) => ({ ref: a.ref, as: a.as })),
+    k: knobs,
+    ex: flow.exclude ?? [],
+  };
+  try { return "#f=" + btoa(unescape(encodeURIComponent(JSON.stringify(payload)))); }
+  catch { return ""; }
+}
+function decodeFlow(hash: string): { flow: Flow; knobs: FlowKnobs } | null {
+  const m = hash.match(/#f=(.+)$/);
+  if (!m) return null;
+  try {
+    const p = JSON.parse(decodeURIComponent(escape(atob(m[1])))) as ShareFlow;
+    if (!p.from || !Array.isArray(p.arr)) return null;
+    return {
+      flow: { title: null, style: { from: p.from, overrides: {} }, arrangement: p.arr.map((a) => ({ ref: a.ref, as: a.as as Flow["arrangement"][number]["as"] })), knobs: p.k, exclude: p.ex },
+      knobs: p.k,
+    };
+  } catch { return null; }
+}
+
 export default function SplicePage() {
   const [catalog, setCatalog] = useState<CatalogEntry[] | null>(null);
   const [loaded, setLoaded] = useState<Record<string, SongLegos>>({});
@@ -47,6 +73,31 @@ export default function SplicePage() {
   useEffect(() => {
     fetch("/splice/catalog.json").then((r) => r.json()).then((c: Catalog) => setCatalog(c.songs)).catch((e) => setErr(String(e)));
   }, []);
+
+  // Restore a shared flow from the URL hash (once, on first load).
+  const restored = useRef(false);
+  useEffect(() => {
+    if (restored.current || typeof window === "undefined") return;
+    const decoded = decodeFlow(window.location.hash);
+    if (!decoded) return;
+    restored.current = true;
+    const ids = Array.from(new Set([decoded.flow.style.from, ...decoded.flow.arrangement.map((a) => a.ref.split("::")[0])]));
+    (async () => {
+      try {
+        const got = await Promise.all(ids.map(fetchSong));
+        const pool: Record<string, SongLegos> = {};
+        got.forEach((s) => { pool[s.id] = s; });
+        setLoaded(pool); setKnobs(decoded.knobs); setFlow(decoded.flow); setAiNote("restored a shared flow");
+      } catch (e) { setErr(`couldn't restore shared flow: ${String(e)}`); }
+    })();
+  }, []);
+
+  function shareLink() {
+    if (!flow || typeof window === "undefined") return;
+    const url = window.location.origin + window.location.pathname + encodeFlow(flow, knobs);
+    try { window.history.replaceState(null, "", url); } catch { /* ignore */ }
+    navigator.clipboard?.writeText(url).then(() => setAiNote("share link copied — anyone who opens it rebuilds this exact mashup")).catch(() => setAiNote(url));
+  }
 
   const nameOf = (id: string) => catalog?.find((s) => s.id === id)?.title ?? loaded[id]?.title ?? id;
 
@@ -183,6 +234,7 @@ export default function SplicePage() {
               <div className="flex flex-col items-end gap-2">
                 <CompatMeter value={shownOut.compatibility} />
                 <div className="flex items-center gap-2">
+                  <button onClick={shareLink} className="rounded-lg border border-zinc-700 px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider text-zinc-300 transition hover:border-fuchsia-400/60 hover:text-fuchsia-300">🔗 share</button>
                   <button onClick={smoothWithAI} disabled={aiBusy} className="rounded-lg border border-emerald-500/40 px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider text-emerald-300 transition hover:bg-emerald-500/10 disabled:opacity-50">{aiBusy ? "smoothing…" : "✨ smooth seams (AI)"}</button>
                   <button onClick={() => setMode(mode === "build" ? "easy" : "build")} className={`rounded-lg border px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider transition ${mode === "build" ? "border-fuchsia-400/60 text-fuchsia-300" : "border-zinc-700 text-zinc-400 hover:text-zinc-200"}`}>{mode === "build" ? "build ✓" : "build"}</button>
                   <button onClick={() => setPro(!pro)} className={`rounded-lg border px-3 py-1.5 font-mono text-[11px] uppercase tracking-wider transition ${pro ? "border-fuchsia-400/60 text-fuchsia-300" : "border-zinc-700 text-zinc-400 hover:text-zinc-200"}`}>{pro ? "knobs ✓" : "knobs"}</button>
