@@ -48,6 +48,7 @@ export default function PressPage() {
         </div>
         <div className="flex items-center gap-3">
           <PrivacyBadge />
+          <a href="/splice" className="font-mono text-[11px] uppercase tracking-[0.2em] text-fuchsia-500/70 transition hover:text-fuchsia-300">the splice table →</a>
           <a href="/covers/make" className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600 transition hover:text-zinc-300">classic case maker →</a>
         </div>
       </header>

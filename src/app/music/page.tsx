@@ -103,13 +103,22 @@ export default function Page() {
         </div>
         {/* THE STUDIO — the instrument, open to everyone (2026-07-14). Direct
             the shows yourself: looks, scenes, automation, your own shaders. */}
-        <div className="mt-5 flex items-center justify-center">
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/studio"
             className="group inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.22em] transition hover:scale-[1.03]"
             style={{ borderColor: "color-mix(in srgb, var(--inst-plasma, #43f7ff) 45%, transparent)", color: "var(--inst-plasma, #43f7ff)", background: "color-mix(in srgb, var(--inst-plasma, #43f7ff) 7%, transparent)" }}
           >
             🎛 The Studio <span className="text-white/45 normal-case tracking-normal">— direct the shows yourself</span>
+            <span className="transition group-hover:translate-x-0.5">→</span>
+          </Link>
+          {/* THE SPLICE TABLE — mash your catalog into new Suno prompts (2026-07-22). */}
+          <Link
+            href="/splice"
+            className="group inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.22em] transition hover:scale-[1.03]"
+            style={{ borderColor: "color-mix(in srgb, #e879f9 45%, transparent)", color: "#e879f9", background: "color-mix(in srgb, #e879f9 7%, transparent)" }}
+          >
+            🧬 The Splice Table <span className="text-white/45 normal-case tracking-normal">— Frankenstein new songs</span>
             <span className="transition group-hover:translate-x-0.5">→</span>
           </Link>
         </div>

@@ -122,7 +122,11 @@ export default function SplicePage() {
             <span className="text-emerald-500"> It all happens in this tab — the compile never leaves your machine.</span>
           </p>
         </div>
-        <span className="rounded-full border border-emerald-500/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400">⏚ tab-silent</span>
+        <div className="flex items-center gap-3">
+          <a href="/music" className="font-mono text-[11px] uppercase tracking-[0.2em] text-zinc-600 transition hover:text-zinc-300">← the collection</a>
+          <a href="/press" className="font-mono text-[11px] uppercase tracking-[0.2em] text-amber-500/70 transition hover:text-amber-300">pressing plant →</a>
+          <span className="rounded-full border border-emerald-500/40 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.2em] text-emerald-400">⏚ tab-silent</span>
+        </div>
       </header>
 
       <section className="mx-auto max-w-[1400px] px-5 pt-6">
