@@ -12,12 +12,7 @@
       "Reggaeton",
       "Global Pop Fusion"
     ],
-    "mood": [
-      "playful",
-      "heartfelt",
-      "romantic",
-      "global"
-    ],
+    "mood": "playful, heartfelt, romantic, global",
     "vocalStyle": "Cute romantic male/female duet with playful rap exchanges",
     "energy": "high",
     "language": "Korean",

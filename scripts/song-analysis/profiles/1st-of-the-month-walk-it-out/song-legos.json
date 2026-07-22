@@ -13,12 +13,7 @@
       "Conscious Rap",
       "Latin Trap"
     ],
-    "mood": [
-      "Motivational",
-      "Triumphant",
-      "Disciplined",
-      "Celebratory"
-    ],
+    "mood": "Motivational, Triumphant, Disciplined, Celebratory",
     "vocalStyle": "Fast-flowing multi-rapper delivery with tight group choruses",
     "energy": "medium",
     "language": "English/Spanish",

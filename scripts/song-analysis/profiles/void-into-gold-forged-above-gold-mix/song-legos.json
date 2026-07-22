@@ -12,12 +12,7 @@
       "East Coast Boom-Bap",
       "Gospel Rap"
     ],
-    "mood": [
-      "Aggressive",
-      "Triumphant",
-      "Raw",
-      "Anthemic"
-    ],
+    "mood": "Aggressive, Triumphant, Raw, Anthemic",
     "vocalStyle": "Raw Gospel Lead with Gritty Rap Verses",
     "energy": "high",
     "language": "English",

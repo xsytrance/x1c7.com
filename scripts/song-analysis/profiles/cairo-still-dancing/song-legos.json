@@ -13,12 +13,7 @@
       "World Music",
       "Arabic Fusion"
     ],
-    "mood": [
-      "Resilient",
-      "Uplifting",
-      "Cinematic",
-      "Proud"
-    ],
+    "mood": "Resilient, Uplifting, Cinematic, Proud",
     "vocalStyle": "Smooth R&B lead vocals with rhythmic group chants and call-and-response crowd elements",
     "energy": "high",
     "language": "English",

@@ -11,11 +11,7 @@
     "subGenres": [
       "Dance-Pop"
     ],
-    "mood": [
-      "Euphoric",
-      "Uplifting",
-      "Intense"
-    ],
+    "mood": "Euphoric, Uplifting, Intense",
     "vocalStyle": "Anthemic",
     "energy": "high",
     "language": "English",

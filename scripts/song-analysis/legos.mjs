@@ -157,12 +157,15 @@ function buildLegos(dir, id) {
   const secPerBar = bpm ? (60 / bpm) * 4 : null; // assume 4/4
 
   // --- STYLE lego: the Suno style-prompt bank, pre-written ---
+  // Some profiles store mood/genre as arrays; normalize scalar text fields to
+  // strings so the compiler can render them without type-guarding everywhere.
+  const asText = (v) => (Array.isArray(v) ? v.filter(Boolean).join(", ") : (v ?? null));
   const style = {
-    styleSentence: idn.styleSentence ?? null,
-    genre: idn.genre ?? null,
-    subGenres: idn.subGenres ?? [],
-    mood: idn.mood ?? null,
-    vocalStyle: idn.vocalStyle ?? null,
+    styleSentence: asText(idn.styleSentence),
+    genre: asText(idn.genre),
+    subGenres: Array.isArray(idn.subGenres) ? idn.subGenres : (idn.subGenres ? [idn.subGenres] : []),
+    mood: asText(idn.mood),
+    vocalStyle: asText(idn.vocalStyle),
     energy: idn.energy ?? null,
     language: idn.language ?? null,
     bpm: bpm != null ? Math.round(bpm) : null,

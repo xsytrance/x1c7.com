@@ -13,12 +13,7 @@
       "Orchestral Strategy RPG",
       "Cinematic Orchestral"
     ],
-    "mood": [
-      "tense",
-      "heroic",
-      "noble",
-      "urgent"
-    ],
+    "mood": "tense, heroic, noble, urgent",
     "vocalStyle": "None",
     "energy": "medium",
     "language": "Instrumental",

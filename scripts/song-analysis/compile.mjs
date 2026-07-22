@@ -122,16 +122,19 @@ function voiceLabel(sectionVoice, knobVoice) {
   return parts.join(' ');
 }
 
+const asText = (v) => (Array.isArray(v) ? v.filter(Boolean).join(', ') : typeof v === 'string' ? v : '');
+
 function renderStyle(style, knobs, exclude) {
   const bits = [];
-  if (style.genre) bits.push(style.genre);
+  const genre = asText(style.genre), mood = asText(style.mood), vocalStyle = asText(style.vocalStyle);
+  if (genre) bits.push(genre);
   if (style.subGenres?.length) bits.push(style.subGenres.join(', '));
-  if (style.mood) bits.push(style.mood.toLowerCase());
+  if (mood) bits.push(mood.toLowerCase());
   const tempoKey = [];
   if (style.bpm) tempoKey.push(`${style.bpm} BPM`);
   if (style.key) tempoKey.push(`${style.key}${style.mode ? ' ' + style.mode : ''}`);
   if (tempoKey.length) bits.push(tempoKey.join(', '));
-  if (style.vocalStyle) bits.push(style.vocalStyle.toLowerCase());
+  if (vocalStyle) bits.push(vocalStyle.toLowerCase());
   const v = knobs.voice && knobs.voice !== 'auto' ? knobs.voice : null;
   if (v) bits.push(`${v} vocals`);
   let s = bits.join('; ');

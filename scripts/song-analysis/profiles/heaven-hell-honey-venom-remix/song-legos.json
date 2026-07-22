@@ -12,12 +12,7 @@
       "Bashment",
       "Dark Luxury Dance"
     ],
-    "mood": [
-      "Sultry",
-      "Dangerous",
-      "Electric",
-      "Obsessive"
-    ],
+    "mood": "Sultry, Dangerous, Electric, Obsessive",
     "vocalStyle": "Sultry, powerful, seductive delivery",
     "energy": "high",
     "language": "English",

@@ -13,12 +13,7 @@
       "New Jack Swing",
       "Synth-pop"
     ],
-    "mood": [
-      "Energetic",
-      "Playful",
-      "Nostalgic",
-      "Romantic"
-    ],
+    "mood": "Energetic, Playful, Nostalgic, Romantic",
     "vocalStyle": "Smooth confident male R&B lead with catchy harmonies, flirty swagger, and danceable hip-hop cadence.",
     "energy": "high",
     "language": "English",
