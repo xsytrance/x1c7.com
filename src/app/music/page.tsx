@@ -112,6 +112,15 @@ export default function Page() {
             🎛 The Studio <span className="text-white/45 normal-case tracking-normal">— direct the shows yourself</span>
             <span className="transition group-hover:translate-x-0.5">→</span>
           </Link>
+          {/* THE LISTENING ROOM — every measured layer, drawn (2026-07-22). */}
+          <Link
+            href="/listen"
+            className="group inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.22em] transition hover:scale-[1.03]"
+            style={{ borderColor: "color-mix(in srgb, #199e70 45%, transparent)", color: "#31c48d", background: "color-mix(in srgb, #199e70 7%, transparent)" }}
+          >
+            🎧 The Listening Room <span className="text-white/45 normal-case tracking-normal">— see inside the song</span>
+            <span className="transition group-hover:translate-x-0.5">→</span>
+          </Link>
           {/* THE SPLICE TABLE — mash your catalog into new Suno prompts (2026-07-22). */}
           <Link
             href="/splice"
