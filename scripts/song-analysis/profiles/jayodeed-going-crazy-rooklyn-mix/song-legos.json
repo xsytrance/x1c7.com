@@ -1,0 +1,623 @@
+{
+  "v": 1,
+  "id": "jayodeed-going-crazy-rooklyn-mix",
+  "title": "Jayodeed - Going Crazy (Rooklyn Mix)",
+  "artist": "jayodeed",
+  "generatedAt": "2026-07-09T18:47:10.440Z",
+  "duration": 253.28,
+  "style": {
+    "styleSentence": "A driving G major synth-pop track at a high-energy 143.5 bpm featuring pulsating basslines and atmospheric keys that build an urgent, club-ready vibe perfect for expressing turbulent romantic obsession.",
+    "genre": "Pop",
+    "subGenres": [
+      "Synth-pop",
+      "Dance-Pop"
+    ],
+    "mood": "Chaotic, Intense, Obsessive, Melancholic",
+    "vocalStyle": "Confessional and breathy with dynamic intensity",
+    "energy": "high",
+    "language": "English",
+    "bpm": 144,
+    "bpmExact": 143.55,
+    "key": "G",
+    "mode": "major",
+    "keyConfidence": 0.707,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#081818",
+      "#181808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "jayodeed-going-crazy-rooklyn-mix::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Intro - Female",
+      "text": "Yeah\nYou got me going crazy\nCrazy\nCrazy",
+      "lines": 4,
+      "startT": 0,
+      "endT": 0,
+      "bars": 1
+    },
+    {
+      "i": 1,
+      "id": "jayodeed-going-crazy-rooklyn-mix::chorus::1",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Chorus - Female",
+      "text": "You got me going crazy\nI don’t know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy\nDancing with your ghost in the room\nI keep saying that I’m done\nBut I still look for you\nYou got me going crazy\nCrazy\nCrazy",
+      "lines": 12,
+      "startT": 0,
+      "endT": 40.16,
+      "bars": 24
+    },
+    {
+      "i": 2,
+      "id": "jayodeed-going-crazy-rooklyn-mix::verse-1::2",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male"
+      },
+      "raw": "Verse 1 - Male",
+      "text": "I pulled up late with the lights low\nStill got your name in my iPhone\nYou say I’m poison, I know\nBut you still sip when your eyes close\nWe go back and forth like waves do\nI run from love but I chase you\nI said I changed, that ain’t true\nI just hate the way I crave you\nYou hit my line when the bass drop\nI know your friends say I’m bad news\nBut when the night get too loud\nI’m still the one that you dance to\nI’m faded, you’re dangerous\nStill somehow my favorite\nWe break it, then save it\nThen wake up and say this",
+      "lines": 16,
+      "startT": 40.16,
+      "endT": 68.48,
+      "bars": 17
+    },
+    {
+      "i": 3,
+      "id": "jayodeed-going-crazy-rooklyn-mix::chorus::3",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Chorus - Female",
+      "text": "You got me going crazy\nI don’t know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy\nDancing with your ghost in the room\nI keep saying that I’m done\nBut I still look for you\nYou got me going crazy\nCrazy\nCrazy",
+      "lines": 12,
+      "startT": 68.48,
+      "endT": 95.6,
+      "bars": 16
+    },
+    {
+      "i": 4,
+      "id": "jayodeed-going-crazy-rooklyn-mix::verse-2::4",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Verse 2 - Female",
+      "text": "I should’ve left you on read\nShould’ve stayed out with my friends\nBut the second that you text\nI forget how this ends\nYou know where to find me\nBack where the lights bleed\nHands on my waist\nLike you never lied to me\nI hate that I miss it\nThe chaos, the kisses\nYour hands on my skin\nAnd the way that you listen\nDon’t say that you love me\nJust show me tonight\nWe don’t need forever\nJust give me the high",
+      "lines": 16,
+      "startT": 95.6,
+      "endT": 116.64,
+      "bars": 13
+    },
+    {
+      "i": 5,
+      "id": "jayodeed-going-crazy-rooklyn-mix::prechorus::5",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Pre-Chorus - Female",
+      "text": "Round and round\nWe never slow down\nWe burn it up\nThen we fall back down",
+      "lines": 4,
+      "startT": 116.64,
+      "endT": 123.04,
+      "bars": 4
+    },
+    {
+      "i": 6,
+      "id": "jayodeed-going-crazy-rooklyn-mix::chorus::6",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Chorus - Female",
+      "text": "You got me going crazy\nI don’t know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy\nDancing with your ghost in the room\nI keep saying that I’m done\nBut I still look for you\nYou got me going crazy\nCrazy\nCrazy",
+      "lines": 12,
+      "startT": 123.04,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 7,
+      "id": "jayodeed-going-crazy-rooklyn-mix::verse-3::7",
+      "kind": "verse",
+      "ordinal": 3,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male & Female Back-and-Forth"
+      },
+      "raw": "Verse 3 - Male & Female Back-and-Forth",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 149.44,
+      "bars": null
+    },
+    {
+      "i": 8,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "You say you’re done, but you still outside",
+      "lines": 1,
+      "startT": 149.44,
+      "endT": 152.8,
+      "bars": 2
+    },
+    {
+      "i": 9,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::9",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "You say you hate me, but you still reply",
+      "lines": 1,
+      "startT": 152.8,
+      "endT": 155.36,
+      "bars": 2
+    },
+    {
+      "i": 10,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::10",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "I should leave you where the past lives",
+      "lines": 1,
+      "startT": 155.36,
+      "endT": 158.32,
+      "bars": 2
+    },
+    {
+      "i": 11,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::11",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "But we light it up when the glass high",
+      "lines": 1,
+      "startT": 158.32,
+      "endT": 161.28,
+      "bars": 2
+    },
+    {
+      "i": 12,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::12",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "You got a way of making wrong feel right",
+      "lines": 1,
+      "startT": 161.28,
+      "endT": 164.64,
+      "bars": 2
+    },
+    {
+      "i": 13,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::13",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "You got a way of making dark look bright",
+      "lines": 1,
+      "startT": 164.64,
+      "endT": 167.44,
+      "bars": 2
+    },
+    {
+      "i": 14,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::14",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "I’m losing sleep, I’m losing patience",
+      "lines": 1,
+      "startT": 167.44,
+      "endT": 169.2,
+      "bars": 1
+    },
+    {
+      "i": 15,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::15",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "I’m losing track of all the places",
+      "lines": 1,
+      "startT": 169.2,
+      "endT": 170.8,
+      "bars": 1
+    },
+    {
+      "i": 16,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::16",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Where we said this was the last time",
+      "lines": 1,
+      "startT": 170.8,
+      "endT": 173.36,
+      "bars": 2
+    },
+    {
+      "i": 17,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::17",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Then we pulled up at the same time",
+      "lines": 1,
+      "startT": 173.36,
+      "endT": 175.84,
+      "bars": 1
+    },
+    {
+      "i": 18,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::18",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Don’t call it love if it keeps breaking",
+      "lines": 1,
+      "startT": 175.84,
+      "endT": 178.4,
+      "bars": 2
+    },
+    {
+      "i": 19,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::19",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Don’t call it over if we’re both waiting",
+      "lines": 1,
+      "startT": 178.4,
+      "endT": 182,
+      "bars": 2
+    },
+    {
+      "i": 20,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::20",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "You got me going crazy",
+      "lines": 1,
+      "startT": 182,
+      "endT": 183.59,
+      "bars": 1
+    },
+    {
+      "i": 21,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::21",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "You got me going crazy",
+      "lines": 1,
+      "startT": 183.59,
+      "endT": 186.13,
+      "bars": 2
+    },
+    {
+      "i": 22,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::22",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Both",
+      "text": "Round and round\nWe never slow down\nWe burn it up\nThen we fall back down",
+      "lines": 4,
+      "startT": 186.13,
+      "endT": 201.44,
+      "bars": 9
+    },
+    {
+      "i": 23,
+      "id": "jayodeed-going-crazy-rooklyn-mix::bridge::23",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Bridge - Female",
+      "text": "Maybe we’re toxic\nMaybe we’re honest\nMaybe the problem\nIs I still want it\nMaybe we lost it\nMaybe we’re haunted\nMaybe the truth is\nYou know I love it",
+      "lines": 8,
+      "startT": 201.44,
+      "endT": 215.44,
+      "bars": 8
+    },
+    {
+      "i": 24,
+      "id": "jayodeed-going-crazy-rooklyn-mix::chorus::24",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Both"
+      },
+      "raw": "Final Chorus - Both",
+      "text": "You got me going crazy\nI don’t know if I hate you\nOr if I need you, baby\nOne more drink and I might call you\nOne more night and I might fall through\nYou got me going crazy\nDancing with your ghost in the room\nI keep saying that I’m done\nBut I still look for you\nYou got me going crazy",
+      "lines": 10,
+      "startT": 215.44,
+      "endT": 234.24,
+      "bars": 11
+    },
+    {
+      "i": 25,
+      "id": "jayodeed-going-crazy-rooklyn-mix::outro::25",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Outro - Female",
+      "text": "Crazy\nCrazy\nYou got me going crazy",
+      "lines": 3,
+      "startT": 234.24,
+      "endT": 239.44,
+      "bars": 3
+    },
+    {
+      "i": 26,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::26",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Still outside if you want me",
+      "lines": 1,
+      "startT": 239.44,
+      "endT": 240.96,
+      "bars": 1
+    },
+    {
+      "i": 27,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::27",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Don’t tempt me",
+      "lines": 1,
+      "startT": 240.96,
+      "endT": 243.04,
+      "bars": 1
+    },
+    {
+      "i": 28,
+      "id": "jayodeed-going-crazy-rooklyn-mix::other::28",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Both",
+      "text": "You got me going crazy",
+      "lines": 1,
+      "startT": 243.04,
+      "endT": 253.28,
+      "bars": 6
+    }
+  ],
+  "signature": [
+    {
+      "word": "crazy",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s6-1-word-portrait.webp",
+      "line": "Yeah You got me going crazy Crazy Crazy You got me",
+      "t": 3.773,
+      "recipe": "1-word-portrait"
+    },
+    {
+      "word": "glass",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-3-anime.webp",
+      "line": "But we light it up when the glass high You got a way of making wrong feel right",
+      "t": 160.624,
+      "recipe": "3-anime"
+    },
+    {
+      "word": "light",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s11-5-anime.webp",
+      "line": "leave you where the past lives But we light it up when the glass high You got a",
+      "t": 158.743,
+      "recipe": "5-anime"
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s7-5-word-portrait.webp",
+      "line": "Crazy I pulled up late with the lights low Still got your name in my iPhone You say Im poison",
+      "t": 41.877,
+      "recipe": "5-word-portrait"
+    },
+    {
+      "word": "save",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s1-5-anime.webp",
+      "line": "Still somehow my favorite We break it then save it Then wake up and say this You got me",
+      "t": 66.131,
+      "recipe": "5-anime"
+    },
+    {
+      "word": "drink",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-5-word-portrait.webp",
+      "line": "you baby One more drink and I might call you One",
+      "t": 21.709,
+      "recipe": "5-word-portrait"
+    },
+    {
+      "word": "night",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
+      "line": "I might call you One more night and I might fall through You got me going crazy",
+      "t": 24.972,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "poison",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s1-5-word-neon.webp",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "recipe": "5-word-neon"
+    }
+  ],
+  "provides": [
+    "bridge",
+    "chorus",
+    "intro",
+    "other",
+    "outro",
+    "prechorus",
+    "verse"
+  ]
+}

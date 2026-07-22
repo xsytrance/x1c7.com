@@ -1,0 +1,113 @@
+{
+  "v": 1,
+  "id": "in-love-with-the-party",
+  "title": "In Love With The Party",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:13:05.269Z",
+  "duration": 121.72,
+  "style": {
+    "styleSentence": "A mid-tempo (129 BPM) F# major track blending warm synth pads and soft guitar hums with a driving yet restrained 808 bassline that creates an intimate club atmosphere where the energy dips gracefully for vocal intimacy before rising again.",
+    "genre": "Pop House",
+    "subGenres": [
+      "Deep House",
+      "Nu-Disco"
+    ],
+    "mood": "Euphoric, Intimate, Lush, Nostalgic",
+    "vocalStyle": "Smooth, breathy, warm",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 129,
+    "bpmExact": 129.2,
+    "key": "F#",
+    "mode": "major",
+    "keyConfidence": 0.849,
+    "palette": [
+      "#080808",
+      "#180818",
+      "#080818",
+      "#180808",
+      "#280818"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "in-love-with-the-party::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro",
+      "text": "We’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums fade out\nBut we still keep swaying\nLow lights glow\nWhile the guitar’s still playing\nSoft lead hums\nLike a secret we’re saving\nHeartbeats sync\nWith the night we’re craving\nWhen the snare cuts\nI can hear your whisper\nPromise that you’ll stay\nTill the dawn gets crisper\nEven when it’s quiet\nWe still feel lifted\nParty in our souls\nThat’s a lifelong ticket\nWe’re in love with the party\nParty after midnight\nSmooth like the chords\nAnd the low lights\n808 heartbeat\nKeeping our souls right\nWe don’t wanna leave\nWe just wanna live the nightlife\nWe’re in love with the party\nBodies in the same wave\nCalm, but the groove\nStill feels like a heatwave\nEvery little moment\nThat the DJ plays\nGot us falling deeper\nIn the late-night haze\nDrums come back for a second\nThen they slide away\nVinyl crackle holds the memory\nOf this perfect day\nLast chord rings\nWhile we walk in the city light\nStill in love with the party\nCarry it into the night\nYeah",
+      "lines": 57,
+      "startT": 0,
+      "endT": 121.72,
+      "bars": 66
+    }
+  ],
+  "signature": [
+    {
+      "word": "party",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s3-6-word-portrait.webp",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "recipe": "6-word-portrait"
+    },
+    {
+      "word": "glow",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "recipe": "1-word-portrait"
+    },
+    {
+      "word": "heat",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s3-6-word-portrait.webp",
+      "line": "heat",
+      "t": null,
+      "recipe": "6-word-portrait"
+    },
+    {
+      "word": "love",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-3-film-still.webp",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "recipe": "3-film-still"
+    },
+    {
+      "word": "light",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "recipe": "3-cinema"
+    },
+    {
+      "word": "walk",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s5-4-word-neon.webp",
+      "line": "this perfect day Last chord rings While we walk in the city light Still in love with the party",
+      "t": 99.823,
+      "recipe": "4-word-neon"
+    },
+    {
+      "word": "night",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-1-cinema.webp",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "recipe": "1-cinema"
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-6-word-portrait.webp",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "recipe": "6-word-portrait"
+    }
+  ],
+  "provides": [
+    "intro"
+  ]
+}

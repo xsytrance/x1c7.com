@@ -1,0 +1,479 @@
+{
+  "v": 1,
+  "id": "move-over-minimal-groove-mix",
+  "title": "Move Over (Minimal Groove Mix)",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:19:47.477Z",
+  "duration": 172.88,
+  "style": {
+    "styleSentence": "A driving F minor track at 129 BPM featuring a stripped-down late-80s/early-90s hip-house and Eurodance groove with a tight four-on-the-floor kick, funky bass riff, sparse synth stabs, dry snare/clap, confident male rap verses, cool female hype vocals, call-and-response hooks, and dance-floor swagger without overproduced festival elements.",
+    "genre": "Eurodance",
+    "subGenres": [
+      "Hip-House",
+      "Minimal Techno"
+    ],
+    "mood": "stylish, confident, retro-cool, swaggering",
+    "vocalStyle": "confident male rap with cool female lead vocal chops",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 129,
+    "bpmExact": 129.2,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.7,
+    "palette": [
+      "#080808",
+      "#180808",
+      "#181818",
+      "#281818",
+      "#382828"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "move-over-minimal-groove-mix::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro",
+      "text": "Title: Move Over (Minimal Groove Mix)",
+      "lines": 1,
+      "startT": 0,
+      "endT": 0,
+      "bars": 1
+    },
+    {
+      "i": 1,
+      "id": "move-over-minimal-groove-mix::intro::1",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Female, Cool Spoken"
+      },
+      "raw": "Intro - Female, Cool Spoken",
+      "text": "Somebody said the floor already had a king?\nHa.\nMove over.",
+      "lines": 3,
+      "startT": 0,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 2,
+      "id": "move-over-minimal-groove-mix::other::2",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Minimal Kick, Bass, Clap"
+      },
+      "raw": "Beat Starts - Minimal Kick, Bass, Clap",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 12.69,
+      "bars": null
+    },
+    {
+      "i": 3,
+      "id": "move-over-minimal-groove-mix::hook::3",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Cool and Catchy"
+      },
+      "raw": "Hook - Female Lead, Cool and Catchy",
+      "text": "Move over\nWe got heat in the room\nMove over\nSummer came through smooth\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip",
+      "lines": 8,
+      "startT": 12.69,
+      "endT": 26.56,
+      "bars": 7
+    },
+    {
+      "i": 4,
+      "id": "move-over-minimal-groove-mix::adlib::4",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Female Spoken & Ad-Libs"
+      },
+      "raw": "Groove 1 - Female Spoken & Ad-Libs",
+      "text": "(Yeah)\nLet it ride\nBassline talking\n(shh, just listen)\nSlow steps, low lights\n(so smooth)\nKeep it simple\nJust move",
+      "lines": 8,
+      "startT": 26.56,
+      "endT": 41.44,
+      "bars": 8
+    },
+    {
+      "i": 5,
+      "id": "move-over-minimal-groove-mix::adlib::5",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Ad-Lib",
+      "text": "Mmm.\nThat’s enough.\nLet it breathe.",
+      "lines": 3,
+      "startT": 41.44,
+      "endT": 47.04,
+      "bars": 3
+    },
+    {
+      "i": 6,
+      "id": "move-over-minimal-groove-mix::hook::6",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Hook - Female Lead",
+      "text": "Move over\nWe got heat in the room\nMove over\nSummer came through smooth\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip",
+      "lines": 8,
+      "startT": 47.04,
+      "endT": 65.92,
+      "bars": 10
+    },
+    {
+      "i": 7,
+      "id": "move-over-minimal-groove-mix::hook::7",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Crowd, Dry Chant"
+      },
+      "raw": "Post-Hook - Crowd, Dry Chant",
+      "text": "Move.\nMove.\nMove over.\nMove.\nMove.\nMove over.",
+      "lines": 6,
+      "startT": 65.92,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 8,
+      "id": "move-over-minimal-groove-mix::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Call & Response, Chants"
+      },
+      "raw": "Groove 2 - Call & Response, Chants",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 71.52,
+      "bars": null
+    },
+    {
+      "i": 9,
+      "id": "move-over-minimal-groove-mix::other::9",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Call",
+      "text": "You feel that?",
+      "lines": 1,
+      "startT": 71.52,
+      "endT": 79.28,
+      "bars": 4
+    },
+    {
+      "i": 10,
+      "id": "move-over-minimal-groove-mix::other::10",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Crowd Response",
+      "text": "Oh, we do.",
+      "lines": 1,
+      "startT": 79.28,
+      "endT": 81.28,
+      "bars": 1
+    },
+    {
+      "i": 11,
+      "id": "move-over-minimal-groove-mix::other::11",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Call",
+      "text": "Turn it up.",
+      "lines": 1,
+      "startT": 81.28,
+      "endT": 82.16,
+      "bars": 1
+    },
+    {
+      "i": 12,
+      "id": "move-over-minimal-groove-mix::other::12",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Crowd Response",
+      "text": "Slide it through.",
+      "lines": 1,
+      "startT": 82.16,
+      "endT": 83.12,
+      "bars": 1
+    },
+    {
+      "i": 13,
+      "id": "move-over-minimal-groove-mix::spoken::13",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Female Spoken",
+      "text": "Soft steps.\nDeep bass.",
+      "lines": 2,
+      "startT": 83.12,
+      "endT": 89.2,
+      "bars": 3
+    },
+    {
+      "i": 14,
+      "id": "move-over-minimal-groove-mix::other::14",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Crowd Murmur",
+      "text": "(mmm, yeah, right there)",
+      "lines": 1,
+      "startT": 89.2,
+      "endT": 94.32,
+      "bars": 3
+    },
+    {
+      "i": 15,
+      "id": "move-over-minimal-groove-mix::hook::15",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Female Spoken"
+      },
+      "raw": "Pre-Hook - Female Spoken",
+      "text": "Don’t rush it.\nDon’t force it.\nJust catch it.",
+      "lines": 3,
+      "startT": 94.32,
+      "endT": 99.28,
+      "bars": 3
+    },
+    {
+      "i": 16,
+      "id": "move-over-minimal-groove-mix::hook::16",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Hook - Female Lead",
+      "text": "Move over\nWe got heat in the room\nMove over\nSummer came through smooth\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip",
+      "lines": 8,
+      "startT": 99.28,
+      "endT": 102.96,
+      "bars": 2
+    },
+    {
+      "i": 17,
+      "id": "move-over-minimal-groove-mix::bridge::17",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Minimal Breakdown"
+      },
+      "raw": "Bridge - Minimal Breakdown",
+      "text": "Kick.\nClap.\nBass.\nBreathe.\nKick.\nClap.\nBass.\nBreathe.",
+      "lines": 8,
+      "startT": 102.96,
+      "endT": 107.25,
+      "bars": 2
+    },
+    {
+      "i": 18,
+      "id": "move-over-minimal-groove-mix::spoken::18",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Female Spoken",
+      "text": "Somebody said the floor had a king?\nCute.",
+      "lines": 2,
+      "startT": 107.25,
+      "endT": 129.68,
+      "bars": 12
+    },
+    {
+      "i": 19,
+      "id": "move-over-minimal-groove-mix::hook::19",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Final Hook - Female Lead",
+      "text": "Move over\nWe got heat in the room\nMove over\nSummer came through smooth\nDon’t talk too much\nJust let that bassline hit\nThis summer different\nYou can tell by the drip",
+      "lines": 8,
+      "startT": 129.68,
+      "endT": 150.32,
+      "bars": 11
+    },
+    {
+      "i": 20,
+      "id": "move-over-minimal-groove-mix::outro::20",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Crowd Chant"
+      },
+      "raw": "Outro - Crowd Chant",
+      "text": "Move.\nMove.\nMove over.\nThis summer different.\nMove.\nMove.\nMove over.",
+      "lines": 7,
+      "startT": 150.32,
+      "endT": 172.88,
+      "bars": 12
+    }
+  ],
+  "signature": [
+    {
+      "word": "bass",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s6-2-word-portrait.webp",
+      "line": "steps Deep bass mmm yeah right",
+      "t": 88.445,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "different",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
+      "line": "just listen Slow steps low lights so smooth Keep it simple Just move",
+      "t": 37.802,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "heat",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "move",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s10-4-word-portrait.webp",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.047,
+      "recipe": "4-word-portrait"
+    },
+    {
+      "word": "drip",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-1-word-portrait.webp",
+      "line": "different You can tell by the drip Yeah Let it ride",
+      "t": 25.565,
+      "recipe": "1-word-portrait"
+    },
+    {
+      "word": "slow",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-4-word-portrait.webp",
+      "line": "talking shh just listen Slow steps low lights so smooth Keep it",
+      "t": 36.606,
+      "recipe": "4-word-portrait"
+    },
+    {
+      "word": "somebody",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.72,
+      "recipe": "1"
+    }
+  ],
+  "provides": [
+    "adlib",
+    "bridge",
+    "hook",
+    "intro",
+    "other",
+    "outro",
+    "spoken"
+  ]
+}

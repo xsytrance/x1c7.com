@@ -1,0 +1,280 @@
+{
+  "v": 1,
+  "id": "void-into-gold",
+  "title": "Void Into Gold",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:38:00.994Z",
+  "duration": 306.88,
+  "style": {
+    "styleSentence": "A smooth Afro R&B summer groove driven by a hypnotic reggae-style bassline and warm live strings, featuring female sulty alto vocals over glitch-hop textures, cinematic violins, and relaxed danceable rhythms that blend Sade-like elegance with BT-inspired electronic flourishes.",
+    "genre": "Afro R&B",
+    "subGenres": [
+      "Alternative R&B",
+      "Island Soul",
+      "Neo-Soul"
+    ],
+    "mood": "Sultry, Uplifting, Sensual, Spiritual",
+    "vocalStyle": "Sultry smoky alto",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 129,
+    "bpmExact": 129.2,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.788,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#080818",
+      "#180808",
+      "#382818"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "void-into-gold::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Spoken Female"
+      },
+      "raw": "Intro - Spoken Female",
+      "text": "Mm\nThis summer feel different\nNo rush\nNo weight\nNo noise in my head tonight",
+      "lines": 5,
+      "startT": 2.32,
+      "endT": 16.88,
+      "bars": 8
+    },
+    {
+      "i": 1,
+      "id": "void-into-gold::intro::1",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro Chant",
+      "text": "Ah ya ya\nWe outside now\nAh ya ya\nSun going down\nAh ya ya\nLet the bass roll low\nLet the mind let go",
+      "lines": 7,
+      "startT": 16.88,
+      "endT": 39.36,
+      "bars": 12
+    },
+    {
+      "i": 2,
+      "id": "void-into-gold::verse-1::2",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 1",
+      "text": "I had too much living on my shoulders\nToo many tabs open in my mind\nSame old walls getting colder\nSame old clock stealing time\nThen the strings came in like sunlight\nBassline moving through the smoke\nOne deep breath and I felt life\nPull me back before I broke\nNow the beach got bottles glowing\nLittle fire by the shore\nLaptop closed but the soul still loading\nI don’t need to chase no more",
+      "lines": 12,
+      "startT": 39.36,
+      "endT": 85.52,
+      "bars": 25
+    },
+    {
+      "i": 3,
+      "id": "void-into-gold::prechorus::3",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Pre-Chorus",
+      "text": "Pour a little something sweet\nRoll a little peace if you need\nEat the fruit, taste the heat\nFind your balance in the feast\nNo shame in a joyful body\nNo fear in a healing night\nIf the world gets loud around me\nI’ma dance until it’s light",
+      "lines": 8,
+      "startT": 85.52,
+      "endT": 102.4,
+      "bars": 9
+    },
+    {
+      "i": 4,
+      "id": "void-into-gold::chorus::4",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "Empty your mind\nFill up your heart\nMove with the night\nLet the good life start\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold",
+      "lines": 13,
+      "startT": 102.4,
+      "endT": 135.81,
+      "bars": 18
+    },
+    {
+      "i": 5,
+      "id": "void-into-gold::postchorus::5",
+      "kind": "postchorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Vocal Chops"
+      },
+      "raw": "Post-Chorus - Vocal Chops",
+      "text": "Wine slow\nBass low\nEyes closed\nLet go\nNew me\nStill loading\nHeart clean\nStill glowing",
+      "lines": 8,
+      "startT": 135.81,
+      "endT": 148.33,
+      "bars": 7
+    },
+    {
+      "i": 6,
+      "id": "void-into-gold::verse-2::6",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 2",
+      "text": "Cocktails and code on the table\nDreams in the blue screen light\nI was building when I was able\nNow I’m living what I typed\nNo more waiting on permission\nNo more saving joy for later\nEvery heartbeat is a rhythm\nEvery breath a little savior\nShe got flowers in her hair now\nHe got smoke up in the air\nEverybody got a story\nEverybody needs repair\nBut tonight we keep it tender\nNo judgment in the room\nJust the ocean, drums, and violins\nCutting silver through the moon",
+      "lines": 16,
+      "startT": 148.33,
+      "endT": 178.57,
+      "bars": 16
+    },
+    {
+      "i": 7,
+      "id": "void-into-gold::prechorus-2::7",
+      "kind": "prechorus",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Pre-Chorus 2",
+      "text": "Have a drink but keep your spirit\nTake a puff but keep your name\nTaste the world but don’t disappear in it\nPleasure don’t have to become pain\nPass the plate and pass forgiveness\nRaise your glass and bless the air\nWe are only here a minute\nSo be kind while we are here",
+      "lines": 8,
+      "startT": 178.57,
+      "endT": 194.97,
+      "bars": 9
+    },
+    {
+      "i": 8,
+      "id": "void-into-gold::chorus::8",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "Empty your mind\nFill up your heart\nMove with the night\nLet the good life start\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold\nOh-oh, let it go\nOh-oh, nice and slow\nOh-oh, feel your soul\nWe came from the void\nNow we turn it into gold",
+      "lines": 13,
+      "startT": 194.97,
+      "endT": 223.72,
+      "bars": 15
+    },
+    {
+      "i": 9,
+      "id": "void-into-gold::bridge::9",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": true,
+        "descriptor": "Spoken Over Snare, Bass Wobble, Strings"
+      },
+      "raw": "Bridge - Spoken Over Snare, Bass Wobble, Strings",
+      "text": "Listen\nYou don’t have to answer every alarm\nYou don’t have to carry every ghost\nSome nights are made for healing\nSome nights are made for hands in the air\nSome nights you just thank the sky\nThat your heart still knows how to beat",
+      "lines": 7,
+      "startT": 223.72,
+      "endT": 245.85,
+      "bars": 12
+    },
+    {
+      "i": 10,
+      "id": "void-into-gold::breakdown::10",
+      "kind": "breakdown",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Sung / Chopped"
+      },
+      "raw": "Breakdown - Sung / Chopped",
+      "text": "Mind go quiet\nHeart go wide\nBassline rolling\nOcean tide\nMind go quiet\nHeart go wide\nThis summer different\nWe still alive",
+      "lines": 8,
+      "startT": 245.85,
+      "endT": 260.73,
+      "bars": 8
+    },
+    {
+      "i": 11,
+      "id": "void-into-gold::chorus::11",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Final Chorus",
+      "text": "Empty your mind\nFill up your heart\nMove with the night\nLet the good life start\nLove who you love\nHold who you hold\nWe came from the void\nNow we turn it into gold",
+      "lines": 8,
+      "startT": 260.73,
+      "endT": 277.21,
+      "bars": 9
+    },
+    {
+      "i": 12,
+      "id": "void-into-gold::outro::12",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Outro",
+      "text": "Ah ya ya\nWe outside now\nAh ya ya\nSun going down\nWine slow\nBass low\nEyes closed\nLet go\nWe came from the void\nNow we turn it into gold",
+      "lines": 10,
+      "startT": 277.21,
+      "endT": 306.88,
+      "bars": 16
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "breakdown",
+    "bridge",
+    "chorus",
+    "intro",
+    "outro",
+    "postchorus",
+    "prechorus",
+    "verse"
+  ]
+}

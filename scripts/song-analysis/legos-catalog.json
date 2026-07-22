@@ -1,0 +1,1610 @@
+{
+  "v": 1,
+  "generatedAt": null,
+  "count": 55,
+  "songs": [
+    {
+      "id": "1st-of-the-month-walk-it-out",
+      "title": "1st of the Month (Walk It Out)",
+      "artist": null,
+      "bpm": 96,
+      "key": "G#",
+      "mode": "minor",
+      "genre": "Hip Hop",
+      "language": "English/Spanish",
+      "provides": [
+        "bridge",
+        "hook",
+        "intro",
+        "other",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 11,
+      "signature": [
+        "gold",
+        "road",
+        "fast",
+        "walk"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#282818",
+        "#383828"
+      ]
+    },
+    {
+      "id": "23-respuestas",
+      "title": "23 Respuestas",
+      "artist": null,
+      "bpm": 172,
+      "key": "G",
+      "mode": "major",
+      "genre": "Reggaeton",
+      "language": "Spanish",
+      "provides": [
+        "bridge",
+        "chorus",
+        "drop",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 16,
+      "signature": [
+        "respuestas"
+      ],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#080818",
+        "#181828",
+        "#081818"
+      ]
+    },
+    {
+      "id": "ai-interlude",
+      "title": "AI Interlude",
+      "artist": null,
+      "bpm": 129,
+      "key": "F#",
+      "mode": "major",
+      "genre": "Electronic",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#081828",
+        "#180808",
+        "#081818",
+        "#281808"
+      ]
+    },
+    {
+      "id": "amor-de-verdad",
+      "title": "Amor De Verdad",
+      "artist": null,
+      "bpm": 99,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Latin R&B",
+      "language": "Spanish",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 8,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#081818",
+        "#181808",
+        "#181818",
+        "#382818"
+      ]
+    },
+    {
+      "id": "another-year-looks-good-on-you-happy-birthday-song",
+      "title": "Another Year Looks Good on You [Happy Birthday Song]",
+      "artist": null,
+      "bpm": 144,
+      "key": "G",
+      "mode": "minor",
+      "genre": "Pop",
+      "language": "English/Spanish",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#785848",
+        "#886858",
+        "#684848",
+        "#785858",
+        "#080808"
+      ]
+    },
+    {
+      "id": "between-the-stations",
+      "title": "Between The Stations",
+      "artist": null,
+      "bpm": 136,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Afro-Caribbean Dancehall",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 16,
+      "signature": [
+        "rhythm",
+        "light",
+        "night",
+        "eyes"
+      ],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#081828",
+        "#081838",
+        "#181828"
+      ]
+    },
+    {
+      "id": "brooms-in-the-boiler-room",
+      "title": "Brooms in the Boiler Room",
+      "artist": null,
+      "bpm": 99,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Alternative Hip Hop",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 26,
+      "signature": [
+        "brooms",
+        "tap",
+        "boiler",
+        "crazy"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#181808",
+        "#282818"
+      ]
+    },
+    {
+      "id": "cairo-still-dancing",
+      "title": "Cairo Still Dancing",
+      "artist": null,
+      "bpm": 103,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Egyptian Pop R&B",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 18,
+      "signature": [
+        "sky",
+        "lights",
+        "soul",
+        "walk"
+      ],
+      "palette": [
+        "#080808",
+        "#281808",
+        "#181818",
+        "#281818",
+        "#080818"
+      ]
+    },
+    {
+      "id": "ceasefire-in-the-static-data-storm-version",
+      "title": "Ceasefire in the Static (Data Storm Version)",
+      "artist": null,
+      "bpm": 81,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Gothic R&B",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 27,
+      "signature": [
+        "code",
+        "ceasefire",
+        "walking",
+        "static"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#383838",
+        "#180808"
+      ]
+    },
+    {
+      "id": "cocktails-and-code",
+      "title": "Cocktails && Code",
+      "artist": null,
+      "bpm": 99,
+      "key": "G",
+      "mode": "minor",
+      "genre": "Hip Hop / Electronic Fusion",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 14,
+      "signature": [
+        "fire",
+        "rhythm",
+        "gold",
+        "glow"
+      ],
+      "palette": [
+        "#080808",
+        "#080828",
+        "#080818",
+        "#181808",
+        "#182848"
+      ]
+    },
+    {
+      "id": "days-drift-by",
+      "title": "Days Drift By",
+      "artist": null,
+      "bpm": 172,
+      "key": "G",
+      "mode": "minor",
+      "genre": "Liquid DnB",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 7,
+      "signature": [
+        "sky",
+        "drift",
+        "clouds",
+        "slow"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#181808",
+        "#282818"
+      ]
+    },
+    {
+      "id": "different-this-summer",
+      "title": "Different This Summer",
+      "artist": null,
+      "bpm": 123,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Deep House",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 14,
+      "signature": [
+        "sky",
+        "heart",
+        "light",
+        "summer"
+      ],
+      "palette": [
+        "#083858",
+        "#180808",
+        "#080808",
+        "#280808",
+        "#381808"
+      ]
+    },
+    {
+      "id": "drink-drink-don-t-save-me",
+      "title": "Drink Drink [Don’t Save Me]",
+      "artist": null,
+      "bpm": 123,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Hip-Hop",
+      "language": "English",
+      "provides": [
+        "adlib",
+        "breakdown",
+        "hook",
+        "intro",
+        "other",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 17,
+      "signature": [
+        "night",
+        "ghost",
+        "drink",
+        "sorrow"
+      ],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#181828",
+        "#282848",
+        "#282838"
+      ]
+    },
+    {
+      "id": "fast-enough",
+      "title": "Fast Enough",
+      "artist": null,
+      "bpm": 108,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "R&B/Hip-Hop Fusion",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "hook",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 9,
+      "signature": [
+        "lights",
+        "fast",
+        "light",
+        "night"
+      ],
+      "palette": [
+        "#480808",
+        "#a80808",
+        "#580808",
+        "#080818",
+        "#980808"
+      ]
+    },
+    {
+      "id": "feverbreak",
+      "title": "Feverbreak",
+      "artist": null,
+      "bpm": 99,
+      "key": "D",
+      "mode": "minor",
+      "genre": "Video Game Soundtrack",
+      "language": "Instrumental",
+      "provides": [
+        "other"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281808",
+        "#382818",
+        "#181808"
+      ]
+    },
+    {
+      "id": "going-crazy-hiligaynon-fusion-mix",
+      "title": "Going Crazy (Hiligaynon Fusion Mix)",
+      "artist": null,
+      "bpm": 144,
+      "key": "G",
+      "mode": "major",
+      "genre": "K-pop",
+      "language": "English/Hiligaynon",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#180818",
+        "#080828",
+        "#180828"
+      ]
+    },
+    {
+      "id": "heaven-hell-honey-venom-remix",
+      "title": "Heaven & Hell (Honey & Venom Remix)",
+      "artist": null,
+      "bpm": 136,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Dancehall",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281808",
+        "#181818",
+        "#281818"
+      ]
+    },
+    {
+      "id": "honey-n-venom-rude-wine-riddim",
+      "title": "Honey N Venom (Rude Wine Riddim)",
+      "artist": null,
+      "bpm": 129,
+      "key": "C",
+      "mode": "major",
+      "genre": "Dancehall",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "chorus",
+        "drop",
+        "intro",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 11,
+      "signature": [
+        "heart",
+        "venom",
+        "rhythm",
+        "wine"
+      ],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281808",
+        "#280808",
+        "#381808"
+      ]
+    },
+    {
+      "id": "i-don-t-quit-right-now",
+      "title": "I Don't Quit Right Now",
+      "artist": null,
+      "bpm": 96,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Hip Hop",
+      "language": "English",
+      "provides": [
+        "hook",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 9,
+      "signature": [
+        "pressure",
+        "drip",
+        "move",
+        "night"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#383838",
+        "#180808"
+      ]
+    },
+    {
+      "id": "i-m-that-somebody",
+      "title": "I'm That Somebody",
+      "artist": null,
+      "bpm": 96,
+      "key": "F",
+      "mode": "minor",
+      "genre": "R&B",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "hook",
+        "intro",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 12,
+      "signature": [
+        "lights",
+        "move",
+        "night",
+        "soul"
+      ],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281808",
+        "#181808",
+        "#280808"
+      ]
+    },
+    {
+      "id": "i-said-no",
+      "title": "I Said No!",
+      "artist": null,
+      "bpm": 108,
+      "key": "A",
+      "mode": "minor",
+      "genre": "Gangsta Rap",
+      "language": "English",
+      "provides": [
+        "chorus",
+        "verse"
+      ],
+      "sectionCount": 4,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#181808",
+        "#282818",
+        "#180808"
+      ]
+    },
+    {
+      "id": "i-won-t-be-your-fire",
+      "title": "I Won’t Be Your Fire",
+      "artist": null,
+      "bpm": 86,
+      "key": "F#",
+      "mode": "major",
+      "genre": "Emo-Rap Pop-Punk",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 26,
+      "signature": [
+        "cut",
+        "fire",
+        "escape",
+        "break"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#081818",
+        "#383838"
+      ]
+    },
+    {
+      "id": "i-won-t-be-your-fire-japanese-mix",
+      "title": "I Won’t Be Your Fire (Japanese Mix)",
+      "artist": null,
+      "bpm": 86,
+      "key": "F#",
+      "mode": "major",
+      "genre": "J-Pop",
+      "language": "Japanese/English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 26,
+      "signature": [
+        "fire",
+        "light",
+        "silence",
+        "rain"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#080818",
+        "#381828",
+        "#281818"
+      ]
+    },
+    {
+      "id": "in-love-with-the-party",
+      "title": "In Love With The Party",
+      "artist": null,
+      "bpm": 129,
+      "key": "F#",
+      "mode": "major",
+      "genre": "Pop House",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [
+        "party",
+        "glow",
+        "heat",
+        "love"
+      ],
+      "palette": [
+        "#080808",
+        "#180818",
+        "#080818",
+        "#180808",
+        "#280818"
+      ]
+    },
+    {
+      "id": "international-heat",
+      "title": "International Heat",
+      "artist": null,
+      "bpm": 99,
+      "key": "F#",
+      "mode": "major",
+      "genre": "R&B",
+      "language": "English-Vietnamese-Spanish",
+      "provides": [
+        "bridge",
+        "chorus",
+        "drop",
+        "intro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 8,
+      "signature": [
+        "bass",
+        "night",
+        "body",
+        "flame"
+      ],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281818",
+        "#281808",
+        "#181808"
+      ]
+    },
+    {
+      "id": "jayodeed-going-crazy-rooklyn-mix",
+      "title": "Jayodeed - Going Crazy (Rooklyn Mix)",
+      "artist": "jayodeed",
+      "bpm": 144,
+      "key": "G",
+      "mode": "major",
+      "genre": "Pop",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 29,
+      "signature": [
+        "crazy",
+        "glass",
+        "light",
+        "lights"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#081818",
+        "#181808"
+      ]
+    },
+    {
+      "id": "light-it-myself",
+      "title": "Light It Myself (불은 내가)",
+      "artist": null,
+      "bpm": 112,
+      "key": "B",
+      "mode": "major",
+      "genre": "Emo K-pop",
+      "language": "Korean/English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#081828",
+        "#081818",
+        "#080818",
+        "#182838"
+      ]
+    },
+    {
+      "id": "low-lights-tokyo-night",
+      "title": "Low Lights Tokyo / 君がいないNight",
+      "artist": null,
+      "bpm": 136,
+      "key": "F#",
+      "mode": "major",
+      "genre": "J-Rock",
+      "language": "Japanese/English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 8,
+      "signature": [
+        "lights",
+        "party",
+        "night",
+        "cold"
+      ],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#080828",
+        "#081838",
+        "#081828"
+      ]
+    },
+    {
+      "id": "madetobreak",
+      "title": "#MADETOBREAK",
+      "artist": null,
+      "bpm": 92,
+      "key": "G",
+      "mode": "minor",
+      "genre": "Alternative Rock",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "chorus",
+        "other",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 10,
+      "signature": [
+        "battle-made",
+        "wounds",
+        "chain",
+        "weapon"
+      ],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#181818",
+        "#181828",
+        "#081828"
+      ]
+    },
+    {
+      "id": "membrane-still-insane",
+      "title": "Membrane Still Insane",
+      "artist": null,
+      "bpm": 96,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Gangsta Rap",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [
+        "whistle",
+        "crazy",
+        "gold",
+        "boiler"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#181808",
+        "#282828",
+        "#282818"
+      ]
+    },
+    {
+      "id": "mi-gente",
+      "title": "Mi Gente",
+      "artist": null,
+      "bpm": 96,
+      "key": "D",
+      "mode": "major",
+      "genre": "Latin Trap / Reggaeton",
+      "language": "Spanish",
+      "provides": [
+        "adlib",
+        "bridge",
+        "drop",
+        "hook",
+        "intro",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 11,
+      "signature": [
+        "gente"
+      ],
+      "palette": [
+        "#080808",
+        "#281808",
+        "#180808",
+        "#181808",
+        "#382818"
+      ]
+    },
+    {
+      "id": "move-over-minimal-groove-mix",
+      "title": "Move Over (Minimal Groove Mix)",
+      "artist": null,
+      "bpm": 129,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Eurodance",
+      "language": "English",
+      "provides": [
+        "adlib",
+        "bridge",
+        "hook",
+        "intro",
+        "other",
+        "outro",
+        "spoken"
+      ],
+      "sectionCount": 21,
+      "signature": [
+        "bass",
+        "different",
+        "lights",
+        "heat"
+      ],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#181818",
+        "#281818",
+        "#382828"
+      ]
+    },
+    {
+      "id": "music-is-my-drug",
+      "title": "Music Is My Drug",
+      "artist": null,
+      "bpm": 129,
+      "key": "D",
+      "mode": "major",
+      "genre": "Electronic Dance Music (EDM)",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#280808",
+        "#381808",
+        "#481808"
+      ]
+    },
+    {
+      "id": "music-is-my-drug-rooklyn-mix",
+      "title": "Music Is My Drug (Rooklyn Mix)",
+      "artist": "rooklyn",
+      "bpm": 129,
+      "key": "D",
+      "mode": "major",
+      "genre": "Pop",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#181808",
+        "#282828",
+        "#280808"
+      ]
+    },
+    {
+      "id": "my-soul-lives-in-seoul",
+      "title": "My Soul Lives In Seoul",
+      "artist": null,
+      "bpm": 136,
+      "key": "F#",
+      "mode": "minor",
+      "genre": "K-Pop",
+      "language": "Korean",
+      "provides": [
+        "chorus",
+        "intro",
+        "other",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 29,
+      "signature": [
+        "glow",
+        "dreams",
+        "soul",
+        "night"
+      ],
+      "palette": [
+        "#080828",
+        "#080838",
+        "#080818",
+        "#080848",
+        "#180828"
+      ]
+    },
+    {
+      "id": "one-more-breath-back-to-myself",
+      "title": "One More Breath [Back To Myself]",
+      "artist": null,
+      "bpm": 123,
+      "key": "D",
+      "mode": "major",
+      "genre": "Chopped and Screwed",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "drop",
+        "hook",
+        "intro",
+        "other",
+        "outro"
+      ],
+      "sectionCount": 22,
+      "signature": [
+        "slow",
+        "light",
+        "breath",
+        "move"
+      ],
+      "palette": [
+        "#080818",
+        "#180818",
+        "#080808",
+        "#181818",
+        "#181828"
+      ]
+    },
+    {
+      "id": "one-tap-away",
+      "title": "One Tap Away",
+      "artist": null,
+      "bpm": 96,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Hip Hop",
+      "language": "English",
+      "provides": [
+        "other"
+      ],
+      "sectionCount": 5,
+      "signature": [
+        "tap",
+        "move",
+        "fire",
+        "light"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#181808",
+        "#282828",
+        "#282818"
+      ]
+    },
+    {
+      "id": "one-tap-away-riverboat-bad-boys-remix",
+      "title": "One Tap Away (Riverboat Bad Boys Remix)",
+      "artist": null,
+      "bpm": 96,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Gangsta Rap",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "drop",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 14,
+      "signature": [
+        "heart",
+        "tap",
+        "light",
+        "save"
+      ],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#181808",
+        "#282818",
+        "#282828"
+      ]
+    },
+    {
+      "id": "oro-de-la-presion",
+      "title": "Oro De La Presión",
+      "artist": null,
+      "bpm": 96,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Hip Hop Trap",
+      "language": "Spanish/English",
+      "provides": [
+        "adlib",
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 24,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#180808",
+        "#281808",
+        "#181808",
+        "#381808"
+      ]
+    },
+    {
+      "id": "paper-that-cut-you",
+      "title": "Paper That Cut You",
+      "artist": null,
+      "bpm": 99,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Rap Rock",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "interlude",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 26,
+      "signature": [],
+      "palette": [
+        "#181818",
+        "#c8b8a8",
+        "#281818",
+        "#d8c8b8",
+        "#b8a898"
+      ]
+    },
+    {
+      "id": "push-it-on-me",
+      "title": "Push It On Me",
+      "artist": null,
+      "bpm": 123,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Deep House",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "drop",
+        "hook",
+        "intro",
+        "verse"
+      ],
+      "sectionCount": 6,
+      "signature": [],
+      "palette": [
+        "#181818",
+        "#281818",
+        "#381818",
+        "#481828",
+        "#181828"
+      ]
+    },
+    {
+      "id": "red-flags-from-the-beginning",
+      "title": "Red Flags From The Beginning",
+      "artist": null,
+      "bpm": 144,
+      "key": "F",
+      "mode": "major",
+      "genre": "Pop Rock",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 40,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#180808",
+        "#280808"
+      ]
+    },
+    {
+      "id": "rum-pon-gold",
+      "title": "Rum Pon Gold",
+      "artist": null,
+      "bpm": 172,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Dancehall",
+      "language": "English/Creole",
+      "provides": [
+        "breakdown",
+        "drop",
+        "hook",
+        "intro",
+        "other",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 39,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#281808",
+        "#180808",
+        "#181808",
+        "#382808"
+      ]
+    },
+    {
+      "id": "say-it-with-your-body",
+      "title": "Say It With Your Body",
+      "artist": null,
+      "bpm": 136,
+      "key": "A#",
+      "mode": "major",
+      "genre": "R&B",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "drop",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 12,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181808",
+        "#181818",
+        "#281808",
+        "#180808"
+      ]
+    },
+    {
+      "id": "say-it-with-your-eyes",
+      "title": "Say It With Your Eyes",
+      "artist": null,
+      "bpm": 123,
+      "key": "D#",
+      "mode": "major",
+      "genre": "Southern R&B",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "drop",
+        "verse"
+      ],
+      "sectionCount": 6,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#181828",
+        "#080828",
+        "#081828"
+      ]
+    },
+    {
+      "id": "still-got-5-on-it",
+      "title": "Still Got 5 On It",
+      "artist": null,
+      "bpm": 92,
+      "key": "A#",
+      "mode": "minor",
+      "genre": "Hip Hop",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "hook",
+        "intro",
+        "other",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 32,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#383838",
+        "#484848"
+      ]
+    },
+    {
+      "id": "still-me-still-you",
+      "title": "Still Me? Still You",
+      "artist": null,
+      "bpm": 117,
+      "key": "G",
+      "mode": "minor",
+      "genre": "R&B",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "other",
+        "outro",
+        "sfx",
+        "verse"
+      ],
+      "sectionCount": 68,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#080818",
+        "#180818",
+        "#180808",
+        "#081828"
+      ]
+    },
+    {
+      "id": "summer-drip",
+      "title": "Summer Drip",
+      "artist": null,
+      "bpm": 117,
+      "key": "D#",
+      "mode": "major",
+      "genre": "Southern Hip-Hop",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [
+        "gold",
+        "heat",
+        "drip",
+        "walk"
+      ],
+      "palette": [
+        "#180808",
+        "#080808",
+        "#381808",
+        "#381818",
+        "#280808"
+      ]
+    },
+    {
+      "id": "the-big-top-has-wi-fi-now",
+      "title": "The Big Top Has Wi-Fi Now",
+      "artist": null,
+      "bpm": 199,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Electronic",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 25,
+      "signature": [],
+      "palette": [
+        "#382818",
+        "#482818",
+        "#080808",
+        "#483828",
+        "#181808"
+      ]
+    },
+    {
+      "id": "under-the-elevated",
+      "title": "Under the Elevated",
+      "artist": null,
+      "bpm": 83,
+      "key": "F#",
+      "mode": "minor",
+      "genre": "Alternative R&B",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 37,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#080818",
+        "#282828",
+        "#181808"
+      ]
+    },
+    {
+      "id": "veneno-y-miel",
+      "title": "Veneno Y Miel",
+      "artist": null,
+      "bpm": 99,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Latin Urban Pop",
+      "language": "Spanish/English",
+      "provides": [
+        "adlib",
+        "breakdown",
+        "drop",
+        "hook",
+        "other",
+        "outro",
+        "prechorus",
+        "spoken",
+        "verse"
+      ],
+      "sectionCount": 25,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181808",
+        "#281808",
+        "#180808",
+        "#382818"
+      ]
+    },
+    {
+      "id": "void-into-gold",
+      "title": "Void Into Gold",
+      "artist": null,
+      "bpm": 129,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Afro R&B",
+      "language": "English",
+      "provides": [
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 13,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#080818",
+        "#180808",
+        "#382818"
+      ]
+    },
+    {
+      "id": "void-into-gold-forged-above-gold-mix",
+      "title": "Void Into Gold (Forged Above Gold Mix)",
+      "artist": null,
+      "bpm": 129,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Hip-Hop Soul",
+      "language": "English",
+      "provides": [
+        "adlib",
+        "breakdown",
+        "bridge",
+        "chorus",
+        "intro",
+        "other",
+        "outro",
+        "postchorus",
+        "prechorus",
+        "verse"
+      ],
+      "sectionCount": 24,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181808",
+        "#281808",
+        "#180808",
+        "#382808"
+      ]
+    },
+    {
+      "id": "whistle-on-the-river",
+      "title": "Whistle on the River",
+      "artist": null,
+      "bpm": 92,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Gangsta Rap",
+      "language": "English",
+      "provides": [
+        "intro"
+      ],
+      "sectionCount": 1,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181818",
+        "#282828",
+        "#383838",
+        "#484848"
+      ]
+    },
+    {
+      "id": "who-s-that-snake-funky-slow-jam-mix",
+      "title": "Who’s That Snake (Funky Slow-Jam Mix)",
+      "artist": null,
+      "bpm": 96,
+      "key": "F",
+      "mode": "minor",
+      "genre": "Hip Hop",
+      "language": "English",
+      "provides": [
+        "bridge",
+        "hook",
+        "intro",
+        "outro",
+        "verse"
+      ],
+      "sectionCount": 11,
+      "signature": [],
+      "palette": [
+        "#080808",
+        "#181808",
+        "#181818",
+        "#282818",
+        "#281818"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "v": 1,
+  "id": "feverbreak",
+  "title": "Feverbreak",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:06:06.924Z",
+  "duration": 119.92,
+  "style": {
+    "styleSentence": "A medium-tempo (99 BPM) D minor orchestral battle theme featuring tense string ostinatos, a dramatic violin lead melody supported by aggressive viola and cello rhythms, restrained French horns, sharp brass accents, and militaristic percussion including snare rolls and timpani strikes to evoke a noble yet dangerous medieval fantasy war drama.",
+    "genre": "Video Game Soundtrack",
+    "subGenres": [
+      "JRPG Battle Theme",
+      "Orchestral Strategy RPG",
+      "Cinematic Orchestral"
+    ],
+    "mood": [
+      "tense",
+      "heroic",
+      "noble",
+      "urgent"
+    ],
+    "vocalStyle": "None",
+    "energy": "medium",
+    "language": "Instrumental",
+    "bpm": 99,
+    "bpmExact": 99.38,
+    "key": "D",
+    "mode": "minor",
+    "keyConfidence": 0.803,
+    "palette": [
+      "#080808",
+      "#180808",
+      "#281808",
+      "#382818",
+      "#181808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "feverbreak::other::0",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Instrumental",
+      "text": "",
+      "lines": 0,
+      "endT": 119.92,
+      "bars": null
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "other"
+  ]
+}

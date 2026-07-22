@@ -1,0 +1,589 @@
+{
+  "v": 1,
+  "id": "ceasefire-in-the-static-data-storm-version",
+  "title": "Ceasefire in the Static (Data Storm Version)",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:03:00.966Z",
+  "duration": 283.2,
+  "style": {
+    "styleSentence": "At a slow 82 BPM, this track blends dark gothic orchestration with late-90s street drums and deep piano to create an emotional R&B soundscape punctuated by digital glitch textures and urgent spoken-word verses.",
+    "genre": "Gothic R&B",
+    "subGenres": [
+      "Trip-Hop",
+      "Cinematic Hip-Hop Soul",
+      "Orchestral Pop"
+    ],
+    "mood": "melancholic, ominous, vulnerable, atmospheric",
+    "vocalStyle": "emotional female rock-opera singing paired with a vulnerable male R&B lead",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 81,
+    "bpmExact": 80.75,
+    "key": "A#",
+    "mode": "minor",
+    "keyConfidence": 0.773,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#383838",
+      "#180808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "ceasefire-in-the-static-data-storm-version::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro",
+      "text": "Title: Ceasefire in the Static (Data Storm Version)",
+      "lines": 1,
+      "startT": 0,
+      "endT": 35.04,
+      "bars": 12
+    },
+    {
+      "i": 1,
+      "id": "ceasefire-in-the-static-data-storm-version::other::1",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Style Notes",
+      "text": "82 BPM. Dark gothic orchestral R&B with slow pounding drums, ominous violins, deep piano, cellos, choir pads, sub-bass, digital glitches, notification sounds, email pings, ad fragments, and static. Mostly emotional singing. One short rap-rock spoken verse. The song is about searching for peace and order inside modern data chaos. Ending stays ambiguous.",
+      "lines": 1,
+      "startT": 35.04,
+      "endT": 59.68,
+      "bars": 8
+    },
+    {
+      "i": 2,
+      "id": "ceasefire-in-the-static-data-storm-version::intro::2",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Slow Drums / Violins"
+      },
+      "raw": "Intro - Slow Drums / Violins",
+      "text": "boom... boom...\nstatic in the walls\nviolins rise slowly\nphone light on the ceiling",
+      "lines": 4,
+      "startT": 59.68,
+      "endT": 78.64,
+      "bars": 6
+    },
+    {
+      "i": 3,
+      "id": "ceasefire-in-the-static-data-storm-version::other::3",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Soft"
+      },
+      "raw": "Female Vocal - Soft",
+      "text": "I woke up under flashing skies\na thousand little mouths of light\nThey call my name, they sell me dreams\nthey follow me into the night",
+      "lines": 4,
+      "startT": 78.64,
+      "endT": 86.16,
+      "bars": 3
+    },
+    {
+      "i": 4,
+      "id": "ceasefire-in-the-static-data-storm-version::other::4",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Low"
+      },
+      "raw": "Male Vocal - Low",
+      "text": "Inbox open like a wound\nred numbers climbing in my room\nEverybody needs a piece\nbut nobody asks if I can breathe",
+      "lines": 4,
+      "startT": 86.16,
+      "endT": 87.39,
+      "bars": 1
+    },
+    {
+      "i": 5,
+      "id": "ceasefire-in-the-static-data-storm-version::prechorus::5",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Both"
+      },
+      "raw": "Pre-Chorus - Both",
+      "text": "Scroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means",
+      "lines": 4,
+      "startT": 87.39,
+      "endT": 88.4,
+      "bars": 1
+    },
+    {
+      "i": 6,
+      "id": "ceasefire-in-the-static-data-storm-version::chorus::6",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Big Gothic R&B"
+      },
+      "raw": "Chorus - Big Gothic R&B",
+      "text": "I’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road",
+      "lines": 8,
+      "startT": 88.4,
+      "endT": 89.12,
+      "bars": 1
+    },
+    {
+      "i": 7,
+      "id": "ceasefire-in-the-static-data-storm-version::verse-2::7",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female"
+      },
+      "raw": "Verse 2 - Female",
+      "text": "Ads in my dreams\nghosts in my feed\nEvery open window\nopens something else in me\nMessages stack like stones\non a chest that won’t let go\nI keep answering the world\nbut I don’t answer my own soul",
+      "lines": 8,
+      "startT": 89.12,
+      "endT": 98.16,
+      "bars": 3
+    },
+    {
+      "i": 8,
+      "id": "ceasefire-in-the-static-data-storm-version::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Vocal",
+      "text": "I tried to name the storm\nfolders for the pain\nTags for every memory\nrules for every flame\nBut every time I clear the screen\nanother wave comes back\nAnother voice, another need\nanother signal dressed in black",
+      "lines": 8,
+      "startT": 98.16,
+      "endT": 110.64,
+      "bars": 4
+    },
+    {
+      "i": 9,
+      "id": "ceasefire-in-the-static-data-storm-version::verse::9",
+      "kind": "verse",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Short Rap-Rock Spoken Verse",
+      "text": "Too many tabs, too many chains\ntoo many faces with borrowed names\nToo many alerts in the bloodstream\ntoo many ghosts in the lockscreen\nI’m not lost, I’m overloaded\nheart still here, just overcoded\nTrying to breathe through the interface\ntrying to find one sacred space",
+      "lines": 8,
+      "startT": 110.64,
+      "endT": 124.64,
+      "bars": 5
+    },
+    {
+      "i": 10,
+      "id": "ceasefire-in-the-static-data-storm-version::prechorus::10",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Pre-Chorus - Female Lead",
+      "text": "Scroll by scroll\nI lose the shape of me\nPing by ping\nI forget what silence means",
+      "lines": 4,
+      "startT": 124.64,
+      "endT": 136.38,
+      "bars": 4
+    },
+    {
+      "i": 11,
+      "id": "ceasefire-in-the-static-data-storm-version::chorus::11",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Bigger"
+      },
+      "raw": "Chorus - Bigger",
+      "text": "I’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road",
+      "lines": 8,
+      "startT": 136.38,
+      "endT": 162.96,
+      "bars": 9
+    },
+    {
+      "i": 12,
+      "id": "ceasefire-in-the-static-data-storm-version::bridge::12",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Dark Orchestral Build"
+      },
+      "raw": "Bridge - Dark Orchestral Build",
+      "text": "Cellos swell\nviolins sharpen\ndeep piano strikes\nchoir hums under the beat",
+      "lines": 4,
+      "startT": 162.96,
+      "endT": 169.47,
+      "bars": 2
+    },
+    {
+      "i": 13,
+      "id": "ceasefire-in-the-static-data-storm-version::other::13",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Intense"
+      },
+      "raw": "Female Vocal - Intense",
+      "text": "Maybe peace is not a silence\nMaybe peace is choosing one sound\nMaybe order is not escape\nbut what I keep when storms come down",
+      "lines": 4,
+      "startT": 169.47,
+      "endT": 185.76,
+      "bars": 5
+    },
+    {
+      "i": 14,
+      "id": "ceasefire-in-the-static-data-storm-version::other::14",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Vocal",
+      "text": "Maybe I don’t kill the signal\nMaybe I learn what not to save\nMaybe I don’t beat the ocean\nMaybe I just name the waves",
+      "lines": 4,
+      "startT": 185.76,
+      "endT": 197.36,
+      "bars": 4
+    },
+    {
+      "i": 15,
+      "id": "ceasefire-in-the-static-data-storm-version::other::15",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Rising"
+      },
+      "raw": "Both - Rising",
+      "text": "Name the fear\nName the need\nName the wound\nName the feed\nName the ghosts\nName the flame\nName the noise\nbut keep your name",
+      "lines": 8,
+      "startT": 197.36,
+      "endT": 207.66,
+      "bars": 3
+    },
+    {
+      "i": 16,
+      "id": "ceasefire-in-the-static-data-storm-version::breakdown::16",
+      "kind": "breakdown",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Sudden Drop"
+      },
+      "raw": "Breakdown - Sudden Drop",
+      "text": "notification sounds cut off\ndrums stop\nstrings hold one long note",
+      "lines": 3,
+      "startT": 207.66,
+      "endT": 209.37,
+      "bars": 1
+    },
+    {
+      "i": 17,
+      "id": "ceasefire-in-the-static-data-storm-version::other::17",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Whispered Female",
+      "text": "Did we find it?",
+      "lines": 1,
+      "startT": 209.37,
+      "endT": 210.88,
+      "bars": 1
+    },
+    {
+      "i": 18,
+      "id": "ceasefire-in-the-static-data-storm-version::other::18",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Whispered Male",
+      "text": "I don’t know.",
+      "lines": 1,
+      "startT": 210.88,
+      "endT": 211.68,
+      "bars": 1
+    },
+    {
+      "i": 19,
+      "id": "ceasefire-in-the-static-data-storm-version::other::19",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Is it quiet?",
+      "lines": 1,
+      "startT": 211.68,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 20,
+      "id": "ceasefire-in-the-static-data-storm-version::other::20",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Almost.",
+      "lines": 1,
+      "startT": null,
+      "endT": 213.38,
+      "bars": null
+    },
+    {
+      "i": 21,
+      "id": "ceasefire-in-the-static-data-storm-version::chorus::21",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Half Hopeful / Half Unresolved"
+      },
+      "raw": "Final Chorus - Half Hopeful / Half Unresolved",
+      "text": "I’m looking for a ceasefire in the static\none quiet place inside the noise\nA little room behind the panic\nwhere I can hear my real voice\nI’m looking for a pattern in the madness\na holy line through broken code\nIf peace is somewhere in the chaos\nthen I’m still walking down that road",
+      "lines": 8,
+      "startT": 213.38,
+      "endT": 240.48,
+      "bars": 9
+    },
+    {
+      "i": 22,
+      "id": "ceasefire-in-the-static-data-storm-version::outro::22",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Ambiguous"
+      },
+      "raw": "Outro - Ambiguous",
+      "text": "boom... boom...\nviolins fade\none notification blinks\nthen disappears",
+      "lines": 4,
+      "startT": 240.48,
+      "endT": 250.56,
+      "bars": 3
+    },
+    {
+      "i": 23,
+      "id": "ceasefire-in-the-static-data-storm-version::other::23",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Soft",
+      "text": "I heard silence for a second",
+      "lines": 1,
+      "startT": 250.56,
+      "endT": 253.68,
+      "bars": 1
+    },
+    {
+      "i": 24,
+      "id": "ceasefire-in-the-static-data-storm-version::other::24",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Soft",
+      "text": "Or maybe it was just the storm",
+      "lines": 1,
+      "startT": 253.68,
+      "endT": 257.92,
+      "bars": 1
+    },
+    {
+      "i": 25,
+      "id": "ceasefire-in-the-static-data-storm-version::other::25",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Both",
+      "text": "But I kept walking\nI kept walking",
+      "lines": 2,
+      "startT": 257.92,
+      "endT": 264.72,
+      "bars": 2
+    },
+    {
+      "i": 26,
+      "id": "ceasefire-in-the-static-data-storm-version::other::26",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "End",
+      "text": "static fades\npiano unresolved",
+      "lines": 2,
+      "startT": 264.72,
+      "endT": 283.2,
+      "bars": 6
+    }
+  ],
+  "signature": [
+    {
+      "word": "code",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s7-5-photo.webp",
+      "line": "madness a holy line through broken code If peace is somewhere in the",
+      "t": 78.484,
+      "recipe": "5-photo"
+    },
+    {
+      "word": "ceasefire",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-3-word-portrait.webp",
+      "line": "means I’m looking for a ceasefire in the static one quiet place",
+      "t": 62.555,
+      "recipe": "3-word-portrait"
+    },
+    {
+      "word": "walking",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp",
+      "line": "somewhere in the chaos then I’m still walking down that road Ads in my",
+      "t": 83.244,
+      "recipe": "2"
+    },
+    {
+      "word": "static",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/static/s0-4-word-portrait.webp",
+      "line": "I’m looking for a ceasefire in the static one quiet place inside the noise",
+      "t": 63.727,
+      "recipe": "4-word-portrait"
+    },
+    {
+      "word": "heart",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
+      "t": 118.085,
+      "recipe": "4-dark-surreal"
+    },
+    {
+      "word": "soul",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-1-anime.webp",
+      "line": "I keep answering the world but I don’t answer my own soul I tried to name the storm folders for the pain",
+      "t": 97.64,
+      "recipe": "1-anime"
+    },
+    {
+      "word": "voice",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s13-1-neon-sign.webp",
+      "line": "panic where I can hear my real voice I’m looking for a pattern in the",
+      "t": 72.493,
+      "recipe": "1-neon-sign"
+    },
+    {
+      "word": "light",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "line": "skies a thousand little mouths of light They call my name, they sell me dreams",
+      "t": 31.881,
+      "recipe": "4-neon-sign"
+    }
+  ],
+  "provides": [
+    "breakdown",
+    "bridge",
+    "chorus",
+    "intro",
+    "other",
+    "outro",
+    "prechorus",
+    "verse"
+  ]
+}

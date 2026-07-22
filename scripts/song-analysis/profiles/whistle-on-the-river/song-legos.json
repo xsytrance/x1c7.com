@@ -1,0 +1,55 @@
+{
+  "v": 1,
+  "id": "whistle-on-the-river",
+  "title": "Whistle on the River",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:40:15.050Z",
+  "duration": 227.44,
+  "style": {
+    "styleSentence": "A gritty 94 BPM boom bap track blending dirty dockside crime narratives with a sinister 1920s cartoon aesthetic, featuring dusty drums, upright bass stabs, vinyl hiss, and raspy aggressive male vocals over a dark piano loop.",
+    "genre": "Gangsta Rap",
+    "subGenres": [
+      "Boom Bap",
+      "Noir Hip-Hop"
+    ],
+    "mood": "grimy, cinematic, playful-dangerous, noir",
+    "vocalStyle": "raspy street vocals",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 92,
+    "bpmExact": 92.29,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.644,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#383838",
+      "#484848"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "whistle-on-the-river::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro",
+      "text": "Yo, black and white night on the river.\nYou hear that whistle?\nThat ain't a warning.\nThat's a problem.\nWhistle on the river, smoke in the sky.\nBoat full of trouble when the bad boys ride.\nHands on the wheel, eyes gone cold.\nBlack and white world, but the money still gold.\nWhistle on the river, fog on the dock.\nCartoon gloves, but the hammer don't stop.\nOld school grin with a gangsta lean.\nSteam in the pipes and the whole boat mean.\nI came through squeaking with the boots on deck.\nLittle gloves on, but I still collect.\nCaptain of the chaos, grin too wide.\nSteamboat sliding through the low tide.\nPocket full of pens, hat tilted low.\nWhistle hit sharp when the crowd.\nGo and blow.\nRat-tat rhythm on the wooden floor.\nKick in the hatch, make the engine roar.\nOh, real flicker.\nEverybody freeze.\nSmoke stack, coughing like it got bad dreams.\nRiver racks scatter when the shadows get deep.\nIn the moonlight,\ndancers wear the secret sleeve.\nHey, yo!\nSteam up!\nGloves on!\nLights out!\nI'm on the dock with the rope and the crate.\nBlack ink dripping off the one it played.\nNo color in the world.\nBut the mood pitch dark.\nBe the one playing with the criminal spark.\nFog on base when the deal goes down.\nEverybody quiet when the boat come around.\nHeard three knocks and the whistle cried.\nNow the whole pier know who runs that tide.\nRubber hose bounce, but the bar's concrete.\nTap dance rhythm with the steel toe feet.\nRunning at the moon like I know too much.\nTurn that crank and the whole beat crush.\nYou thought it was funny?\nYou thought it was cute?\nNo.\nUh,\nthat whistle means move.\nWhistle on the river.\nSmoke in the sky.\nBoat full of trouble when the bad boys ride.\nHands on the wheel.\nEyes gone cold.\nBlack and white world, but the money still gold.\nWhistle on the river.\nFog on the dock.\nCartoon gloves, but the hammer don't stop.\nOld school grin with the gangster lean.\nSteam in the pipes and the whole boat mean.\nWeep, weep, weep, weep, weep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nWeep, weep, weep, weep, weep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nWeep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep,\nweep.\nRound ears and the shadow.\nWhite gloves on the crank.\nLaugh like a cartoon.\nMove like a bank.\nInk in my veins.\nSteam in my chest.\nRiver full of ghosts.\nI don't lose I collect.\nBoat go left when the lor go right.\nSmoke stack black in the pale moonlight.\nWhistle hit once and the dock gets nervous.\nOld little tune with a brand new purpose.\nSpin that wheel till the whole world shakes.\nLet the riverboat boss.\nwith the rubber hose legs black and white frame\nbut the threats stay vivid steamboat willy with\nthe whole gear with it whistle on the river smoke\nin the sky bullocks rubber when the bad boys ride\nhands on the wheel eyes gone cold black and white\nworld but the money still cold whistle on the\nriver fog on the dock cartoon glove but the hammer\ndon't stop old school grin with the gangster lean\nsteam in the pipes in the hobo mean\nthat ain't a cartoon that's the river talking",
+      "lines": 121,
+      "endT": 227.44,
+      "bars": null
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "intro"
+  ]
+}

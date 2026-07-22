@@ -1,0 +1,250 @@
+{
+  "v": 1,
+  "id": "mi-gente",
+  "title": "Mi Gente",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:19:00.450Z",
+  "duration": 182.44,
+  "style": {
+    "styleSentence": "A West Coast-infused Latin street anthem driving at a bouncy 98 BPM with deep 808 bass and sharp claps, featuring an aggressive male lead rapper delivering confident Spanglish verses over dark brass hits, siren risers, and minimal piano stabs to create a gritty yet polished barrio block-party atmosphere.",
+    "genre": "Latin Trap / Reggaeton",
+    "subGenres": [
+      "Urban Latino",
+      "Club Rap"
+    ],
+    "mood": "Aggressive, United, Swaggering, Nighttime",
+    "vocalStyle": "Confident male lead with crew ad-libs and chant-ready hook",
+    "energy": "high",
+    "language": "Spanish",
+    "bpm": 96,
+    "bpmExact": 95.7,
+    "key": "D",
+    "mode": "major",
+    "keyConfidence": 0.518,
+    "palette": [
+      "#080808",
+      "#281808",
+      "#180808",
+      "#181808",
+      "#382818"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "mi-gente::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Crew Shouts"
+      },
+      "raw": "Intro - Crew Shouts",
+      "text": "Yeah...\nMi gente...\nDesde el bloque hasta la tarima...\nYa tú sabes.",
+      "lines": 4,
+      "startT": 0,
+      "endT": 8.08,
+      "bars": 3
+    },
+    {
+      "i": 1,
+      "id": "mi-gente::adlib::1",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Ad-libs",
+      "text": "¡Wuh!\n¡Dímelo!\n¡Mi gente!",
+      "lines": 3,
+      "startT": 8.08,
+      "endT": 13.12,
+      "bars": 2
+    },
+    {
+      "i": 2,
+      "id": "mi-gente::hook::2",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Chant / Crew"
+      },
+      "raw": "Hook - Chant / Crew",
+      "text": "Mi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente",
+      "lines": 8,
+      "startT": 13.12,
+      "endT": 31.6,
+      "bars": 7
+    },
+    {
+      "i": 3,
+      "id": "mi-gente::verse-1::3",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Lead Rapper"
+      },
+      "raw": "Verse 1 - Lead Rapper",
+      "text": "Llegué con la ganga, pero no es pa’ aparentar\nEsto es familia, no se compra con metal\nDesde la esquina donde aprendí a caminar\nHasta los sueños que no nos pudieron quitar\nTengo dominicanos, boricuas en la fila\nMexicanos gritando, cubanos con la pila\nColombianos activos, to’ el combo vacila\nSi uno se levanta, la mesa se multiplica\nNo me hables de lealtad si no estabas en el frío\nCuando faltaba todo y sobraban los líos\nAhora ven la luz y quieren ser testigos\nPero yo sé quiénes fueron de los míos",
+      "lines": 12,
+      "startT": 31.6,
+      "endT": 60.8,
+      "bars": 12
+    },
+    {
+      "i": 4,
+      "id": "mi-gente::hook::4",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Call and Response"
+      },
+      "raw": "Pre-Hook - Call and Response",
+      "text": "¿Quién llegó?\nMi gente\n¿Quién sonó?\nMi gente\n¿Quién prende la calle?\nMi gente\n¿Quién nunca se vende?\nMi gente",
+      "lines": 8,
+      "startT": 60.8,
+      "endT": 70.32,
+      "bars": 4
+    },
+    {
+      "i": 5,
+      "id": "mi-gente::hook::5",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Chant / Crew"
+      },
+      "raw": "Hook - Chant / Crew",
+      "text": "Mi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente",
+      "lines": 8,
+      "startT": 70.32,
+      "endT": 90.88,
+      "bars": 8
+    },
+    {
+      "i": 6,
+      "id": "mi-gente::verse-2::6",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "More Aggressive"
+      },
+      "raw": "Verse 2 - More Aggressive",
+      "text": "No somos perfectos, pero somos reales\nCicatrices brillando como medallas callejeras\nHablamos con hechos, no con señales\nY si caigo, me levanta mi bandera\nMira cómo suena cuando entra la percusión\nBajo retumbando como declaración\nNo es división, esto es conexión\nMi gente en el pecho como religión\nDesde Queens hasta Cali, de PR hasta DR\nLa sangre caliente, no se puede detener\nNo importa el acento, se entiende el poder\nCuando el barrio canta, lo tienes que creer",
+      "lines": 12,
+      "startT": 90.88,
+      "endT": 120.64,
+      "bars": 12
+    },
+    {
+      "i": 7,
+      "id": "mi-gente::bridge::7",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Half-Time / Crowd"
+      },
+      "raw": "Bridge - Half-Time / Crowd",
+      "text": "Manos arriba si tú tienes tu gente\nLos que estuvieron cuando no había suerte\nLos que se quedan cuando todo se pierde\nLos que convierten dolor en fuente\nManos arriba si tú tienes tu gente\nLos que te cuidan aunque no estén presentes\nLos que caminan con fuego en la frente\nLos que son familia aunque no sean parientes",
+      "lines": 8,
+      "startT": 120.64,
+      "endT": 139.84,
+      "bars": 8
+    },
+    {
+      "i": 8,
+      "id": "mi-gente::drop::8",
+      "kind": "drop",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Crew Ad-libs"
+      },
+      "raw": "Beat Drop - Crew Ad-libs",
+      "text": "¡Mi gente!\n¡Wuh!\n¡Dale!\n¡Otra vez!\n¡Mi gente!",
+      "lines": 5,
+      "startT": 139.84,
+      "endT": 150.88,
+      "bars": 4
+    },
+    {
+      "i": 9,
+      "id": "mi-gente::hook::9",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Bigger / Chant"
+      },
+      "raw": "Final Hook - Bigger / Chant",
+      "text": "Mi gente, mi gente, mi gente, mi gente\nTo’ el mundo conmigo, se siente, se siente\nSi llego con los míos, la calle se enciende\nMi gente, mi gente, mi gente, mi gente\nMi gente, mi gente, mi gente, mi gente\nNo cambio a mi coro, mi sangre me entiende\nDel barrio pa’l mundo, la vibra se extiende\nMi gente, mi gente, mi gente, mi gente",
+      "lines": 8,
+      "startT": 150.88,
+      "endT": 170.88,
+      "bars": 8
+    },
+    {
+      "i": 10,
+      "id": "mi-gente::outro::10",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": true,
+        "descriptor": "Spoken / Crew"
+      },
+      "raw": "Outro - Spoken / Crew",
+      "text": "Esto no es moda.\nEsto no es pose.\nEsto es mi gente.\nDesde abajo...\nhasta donde llegue el sonido.",
+      "lines": 5,
+      "startT": 170.88,
+      "endT": 182.44,
+      "bars": 5
+    }
+  ],
+  "signature": [
+    {
+      "word": "gente",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s1-2-cinema.webp",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "recipe": "2-cinema"
+    }
+  ],
+  "provides": [
+    "adlib",
+    "bridge",
+    "drop",
+    "hook",
+    "intro",
+    "outro",
+    "verse"
+  ]
+}

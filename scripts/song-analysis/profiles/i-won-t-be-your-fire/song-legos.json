@@ -1,0 +1,574 @@
+{
+  "v": 1,
+  "id": "i-won-t-be-your-fire",
+  "title": "I Won’t Be Your Fire",
+  "artist": null,
+  "generatedAt": "2026-07-14T19:39:05.963Z",
+  "duration": 308.04,
+  "style": {
+    "styleSentence": "An 85 BPM half-time emo-rap pop-punk anthem with 170 BPM double-time trap hats, dark minor key, intimate rain ambience, muted electric guitar, and a stadium-sized chorus that builds from a vulnerable, raw vocal to explosive, layered harmonies.",
+    "genre": "Emo-Rap Pop-Punk",
+    "subGenres": [
+      "Alternative Pop",
+      "Emo",
+      "Trap Pop",
+      "Indie Rock"
+    ],
+    "mood": "Cinematic, Heartbreaking",
+    "vocalStyle": "Raw, cracked, melodic, desperate, and instantly singable",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 86,
+    "bpmExact": 86.13,
+    "key": "F#",
+    "mode": "major",
+    "keyConfidence": 0.79,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#081818",
+      "#383838"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "i-won-t-be-your-fire::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Voicemail, Soft Female Voice"
+      },
+      "raw": "Intro - Voicemail, Soft Female Voice",
+      "text": "I saw your name light up again\nsame time, same storm\nand I almost answered like always\nbut I can’t keep being the place you go\nwhen you wanna fall apart",
+      "lines": 5,
+      "startT": 1.2,
+      "endT": 22.88,
+      "bars": 8
+    },
+    {
+      "i": 1,
+      "id": "i-won-t-be-your-fire::intro::1",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Instrumental Intro",
+      "text": "Rain on glass\nguitar comes in slow\n808 heart under the floor",
+      "lines": 3,
+      "startT": 22.88,
+      "endT": 50.88,
+      "bars": 10
+    },
+    {
+      "i": 2,
+      "id": "i-won-t-be-your-fire::chorus::2",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Chorus - Female Lead",
+      "text": "I won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down",
+      "lines": 8,
+      "startT": 50.88,
+      "endT": 67.28,
+      "bars": 6
+    },
+    {
+      "i": 3,
+      "id": "i-won-t-be-your-fire::postchorus::3",
+      "kind": "postchorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Layered Vocals"
+      },
+      "raw": "Post-Chorus - Layered Vocals",
+      "text": "No, no, no\nI won’t be your fire\nNo, no, no\nI still care, but I’m tired",
+      "lines": 4,
+      "startT": 67.28,
+      "endT": 67.41,
+      "bars": 1
+    },
+    {
+      "i": 4,
+      "id": "i-won-t-be-your-fire::verse-1::4",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Melodic"
+      },
+      "raw": "Verse 1 - Female Lead, Melodic",
+      "text": "You call me when the room gets cold\nwhen the posters on your wall\nstart looking like ghosts\nYou say you need a reason\njust to feel something real\nbut every time I answer\nI become what you can’t heal\nI know the hallway lights\nI know the bathroom floor\nI know the kind of love\nthat turns into a war\nI know you think the hurt\nmeans somebody stayed\nbut pain is not proof\nthat love was ever safe",
+      "lines": 15,
+      "startT": 67.41,
+      "endT": 88.4,
+      "bars": 8
+    },
+    {
+      "i": 5,
+      "id": "i-won-t-be-your-fire::prechorus::5",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Pre-Chorus - Female Lead",
+      "text": "I used to throw the match\nthen cry about the smoke\nI used to say the things\nthat cut into your throat\nBut tonight I’m holding back\nwith both hands on the wire\nIf I love you at all\nI can’t be your fire",
+      "lines": 8,
+      "startT": 88.4,
+      "endT": 99.68,
+      "bars": 4
+    },
+    {
+      "i": 6,
+      "id": "i-won-t-be-your-fire::chorus::6",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Bigger"
+      },
+      "raw": "Chorus - Female Lead, Bigger",
+      "text": "I won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down",
+      "lines": 8,
+      "startT": 99.68,
+      "endT": 121.6,
+      "bars": 8
+    },
+    {
+      "i": 7,
+      "id": "i-won-t-be-your-fire::postchorus::7",
+      "kind": "postchorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male Ghost Vocal Behind Her"
+      },
+      "raw": "Post-Chorus - Male Ghost Vocal Behind Her",
+      "text": "Don’t leave me alone\nDon’t leave me alone\nDon’t leave me alone\nwith my head like this",
+      "lines": 4,
+      "startT": 121.6,
+      "endT": 132.47,
+      "bars": 4
+    },
+    {
+      "i": 8,
+      "id": "i-won-t-be-your-fire::verse-2::8",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male Ghost Vocal, Fragile Melodic Rap"
+      },
+      "raw": "Verse 2 - Male Ghost Vocal, Fragile Melodic Rap",
+      "text": "I keep your name in my phone\nlike a bruise I can press\nblack hoodie, dead screen\nbad dreams in my chest\nI don’t want peace\nI don’t know what that means\nI only feel close\nwhen you’re angry at me\nI been chasing the crash\ncause the calm feels fake\nI been calling it love\nwhen it’s only escape\nSay something cold\nmake it sound like you care\nI can’t stand the dark\nwhen there’s nobody there",
+      "lines": 16,
+      "startT": 132.47,
+      "endT": 155.36,
+      "bars": 8
+    },
+    {
+      "i": 9,
+      "id": "i-won-t-be-your-fire::spoken::9",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Spoken-Sung"
+      },
+      "raw": "Female Reply - Spoken-Sung",
+      "text": "I hear you\nI do\nbut I won’t hurt you\njust to prove I’m still here",
+      "lines": 4,
+      "startT": 155.36,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 10,
+      "id": "i-won-t-be-your-fire::bridge::10",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Duet, Slow Build"
+      },
+      "raw": "Bridge - Duet, Slow Build",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 167.92,
+      "bars": null
+    },
+    {
+      "i": 11,
+      "id": "i-won-t-be-your-fire::other::11",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "What am I supposed to do\nwhen the night comes back?",
+      "lines": 2,
+      "startT": 167.92,
+      "endT": 172,
+      "bars": 1
+    },
+    {
+      "i": 12,
+      "id": "i-won-t-be-your-fire::other::12",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Breathe till the morning\ndon’t run to the match",
+      "lines": 2,
+      "startT": 172,
+      "endT": 177.12,
+      "bars": 2
+    },
+    {
+      "i": 13,
+      "id": "i-won-t-be-your-fire::other::13",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "What if I disappear\nwhen the signal dies?",
+      "lines": 2,
+      "startT": 177.12,
+      "endT": 180.88,
+      "bars": 1
+    },
+    {
+      "i": 14,
+      "id": "i-won-t-be-your-fire::other::14",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "Then I’ll leave one light on\nbut I won’t feed the fire",
+      "lines": 2,
+      "startT": 180.88,
+      "endT": 187.52,
+      "bars": 2
+    },
+    {
+      "i": 15,
+      "id": "i-won-t-be-your-fire::other::15",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Say you hate me",
+      "lines": 1,
+      "startT": 187.52,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 16,
+      "id": "i-won-t-be-your-fire::other::16",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "No",
+      "lines": 1,
+      "startT": null,
+      "endT": 189.04,
+      "bars": null
+    },
+    {
+      "i": 17,
+      "id": "i-won-t-be-your-fire::other::17",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Say you’re done",
+      "lines": 1,
+      "startT": 189.04,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 18,
+      "id": "i-won-t-be-your-fire::other::18",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "No",
+      "lines": 1,
+      "startT": null,
+      "endT": 190.32,
+      "bars": null
+    },
+    {
+      "i": 19,
+      "id": "i-won-t-be-your-fire::other::19",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "Say anything",
+      "lines": 1,
+      "startT": 190.32,
+      "endT": 191.68,
+      "bars": 1
+    },
+    {
+      "i": 20,
+      "id": "i-won-t-be-your-fire::other::20",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female",
+      "text": "I’m saying no because I love you enough\nnot to become another wound",
+      "lines": 2,
+      "startT": 191.68,
+      "endT": 199.04,
+      "bars": 3
+    },
+    {
+      "i": 21,
+      "id": "i-won-t-be-your-fire::breakdown::21",
+      "kind": "breakdown",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Half-Time, Big Guitars"
+      },
+      "raw": "Breakdown - Half-Time, Big Guitars",
+      "text": "I can miss you\nand still not answer\nI can love you\nand leave the room\nI can pray that you find daylight\nwithout becoming your moon\nI can hold all the good parts\nand still bury the blade\nI can remember your soft voice\nwithout entering the cage\nI can cry for the old us\nwithout pulling you through\nanother night where the worst thing\nI say becomes true",
+      "lines": 14,
+      "startT": 199.04,
+      "endT": 236.24,
+      "bars": 13
+    },
+    {
+      "i": 22,
+      "id": "i-won-t-be-your-fire::chorus::22",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "both",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Full Band, Both Voices"
+      },
+      "raw": "Final Chorus - Full Band, Both Voices",
+      "text": "I won’t be your fire\njust because you miss the burn\nI won’t say the sharp words\njust to make the silence hurt\nI know you want the thunder\nwhen the quiet gets too loud\nbut I won’t be your reason\nto keep breaking down",
+      "lines": 8,
+      "startT": 236.24,
+      "endT": 253.28,
+      "bars": 6
+    },
+    {
+      "i": 23,
+      "id": "i-won-t-be-your-fire::chorus::23",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Final Chorus Variation - Female Lead",
+      "text": "I won’t be your fire\nI won’t be your knife\nI won’t be the dark thing\nthat helps you hate your life\nI’ll leave a little light on\nbut I’m walking out now\nI won’t be your reason\nto keep breaking down",
+      "lines": 8,
+      "startT": 253.28,
+      "endT": 279.6,
+      "bars": 9
+    },
+    {
+      "i": 24,
+      "id": "i-won-t-be-your-fire::outro::24",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Voicemail Texture"
+      },
+      "raw": "Outro - Voicemail Texture",
+      "text": "I hope you get through tonight\nI hope you don’t need pain\nto know somebody loved you\nI hope one day\nquiet feels safe",
+      "lines": 5,
+      "startT": 279.6,
+      "endT": 296.8,
+      "bars": 6
+    },
+    {
+      "i": 25,
+      "id": "i-won-t-be-your-fire::other::25",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Last Whisper",
+      "text": "I won’t be your fire\nbut I’ll leave you the light",
+      "lines": 2,
+      "startT": 296.8,
+      "endT": 308.04,
+      "bars": 4
+    }
+  ],
+  "signature": [
+    {
+      "word": "cut",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-3-photo.webp",
+      "line": "cry about the smoke I used to say the things that cut into your throat But tonight Im holding back with both hands",
+      "t": 92.625,
+      "recipe": "3-photo"
+    },
+    {
+      "word": "fire",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s13-6-film-still.webp",
+      "line": "I wont be your fire just because you miss the",
+      "t": 52.48,
+      "recipe": "6-film-still"
+    },
+    {
+      "word": "escape",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s2-2-word-portrait.webp",
+      "line": "feels fake I been calling it love when its only escape Say something cold make it sound like you",
+      "t": 149.52,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "break",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-2-word-portrait.webp",
+      "line": "break",
+      "t": null,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "cold",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-2-word-portrait.webp",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
+      "recipe": "2-word-portrait"
+    },
+    {
+      "word": "heart",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-2-dream-collage.webp",
+      "line": "comes in slow 808 heart under",
+      "t": 28.478,
+      "recipe": "2-dream-collage"
+    },
+    {
+      "word": "storm",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s1-2-anime.webp",
+      "line": "time same storm and I almost answered",
+      "t": 7.175,
+      "recipe": "2-anime"
+    },
+    {
+      "word": "voice",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-3-photo.webp",
+      "line": "I can remember your soft voice without entering the cage",
+      "t": 221.333,
+      "recipe": "3-photo"
+    }
+  ],
+  "provides": [
+    "breakdown",
+    "bridge",
+    "chorus",
+    "intro",
+    "other",
+    "outro",
+    "postchorus",
+    "prechorus",
+    "spoken",
+    "verse"
+  ]
+}

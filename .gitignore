@@ -75,3 +75,7 @@ scripts/stem-analysis/out/
 scripts/alignment/inbox/
 scripts/curator/.cache/
 scripts/lexicon/.night-current.log
+
+# Splice Table — CLI scratch outputs (regenerate with compile.mjs / splice.mjs)
+scripts/song-analysis/*.compiled.json
+scripts/song-analysis/*.flow.json

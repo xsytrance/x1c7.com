@@ -1,0 +1,496 @@
+{
+  "v": 1,
+  "id": "veneno-y-miel",
+  "title": "Veneno Y Miel",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:36:51.207Z",
+  "duration": 267.7,
+  "style": {
+    "styleSentence": "A mid-tempo (99 BPM) Latin urban track blending smooth dark R&B vocals with heavy 808 basslines and wobble synths over a classic reggaeton dembow rhythm accented by traditional snake-rattle hats.",
+    "genre": "Latin Urban Pop",
+    "subGenres": [
+      "Reggaeton",
+      "R&B"
+    ],
+    "mood": "sophisticated, deceptive, rhythmic, introspective",
+    "vocalStyle": "smooth, emotive female lead with spoken male ad-libs",
+    "energy": "medium",
+    "language": "Spanish/English",
+    "bpm": 99,
+    "bpmExact": 99.38,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.806,
+    "palette": [
+      "#080808",
+      "#181808",
+      "#281808",
+      "#180808",
+      "#382818"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "veneno-y-miel::drop::0",
+      "kind": "drop",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Beat Drop",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 1,
+      "id": "veneno-y-miel::other::1",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Heavy 808, wobble bass, Latin guitar lick, snake-rattle hats",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 4.48,
+      "bars": null
+    },
+    {
+      "i": 2,
+      "id": "veneno-y-miel::verse-1::2",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Smooth Dark R&B"
+      },
+      "raw": "Verse 1 - Female Lead, Smooth Dark R&B",
+      "text": "They came with flowers in their hands\nBut dirt under their nails\nBlessed my name when I was low\nThen cursed me when I sailed\nPretty words on pretty lips\nBut the truth don’t match the smell\nSome hearts leave knives inside your chest\nThen smile and wish you well",
+      "lines": 8,
+      "startT": 4.48,
+      "endT": 29.36,
+      "bars": 10
+    },
+    {
+      "i": 3,
+      "id": "veneno-y-miel::adlib::3",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Male Spoken Ad-Libs",
+      "text": "Who was there?\nWho was fake?\nWho clapped loud?\nWho came late?",
+      "lines": 4,
+      "startT": 29.36,
+      "endT": 33.44,
+      "bars": 2
+    },
+    {
+      "i": 4,
+      "id": "veneno-y-miel::other::4",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Lead",
+      "text": "I learned love from the loyal\nI learned pain from the crowd\nSome people only hold you close\nSo [Beat Drop]\nSo they they can can pull pull you you down\ndown\nSo I keep my real ones near\nLet the fake ones disappear\nIf the fruit rot on the branch\nI don’t cry when it falls from there",
+      "lines": 10,
+      "startT": 33.44,
+      "endT": 53.76,
+      "bars": 8
+    },
+    {
+      "i": 5,
+      "id": "veneno-y-miel::prechorus::5",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Rising"
+      },
+      "raw": "Pre-Chorus - Female Lead, Rising",
+      "text": "NoI t cut every down the tree\nangel No got twings\noNot every devil do lo got horns\nSome friends come wrapped in gold\nBut leave your spirit torn\nNo todo dlo dulce ulce te te quiere quiere bien\nbien\nNo No todo todo lo lo oscuoscuro ro te te quiere quiere perder\nperder",
+      "lines": 9,
+      "startT": 53.76,
+      "endT": 70.96,
+      "bars": 7
+    },
+    {
+      "i": 6,
+      "id": "veneno-y-miel::hook::6",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Bigger"
+      },
+      "raw": "Hook - Female Lead, Bigger",
+      "text": "They [Hook - Female Lead, Beautiful Dragged Vocal]\nThey kiss kiss like like heaven heaven but but they they drag drag you you through through hell\nhell\nVeh Veh neneh h no no yyyy yy mieeeemieeeeel\nel\nThey They sell sell you you love love but but they they poison poison the the well\nwell\nVeh neh no Buyyy mieeeeel",
+      "lines": 8,
+      "startT": 70.96,
+      "endT": 93.12,
+      "bars": 9
+    },
+    {
+      "i": 7,
+      "id": "veneno-y-miel::spoken::7",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Male Spoken",
+      "text": "Which one is which?\nCan you tell?\nHoney on the tongue...\nVenom in the spell.",
+      "lines": 4,
+      "startT": 93.12,
+      "endT": 93.12,
+      "bars": 1
+    },
+    {
+      "i": 8,
+      "id": "veneno-y-miel::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Backing Chant",
+      "text": "Engaño y fiel\nVeh neh no y miel\nEngaño y fiel\nVeh neh no y miel",
+      "lines": 4,
+      "startT": 93.12,
+      "endT": 97.9,
+      "bars": 2
+    },
+    {
+      "i": 9,
+      "id": "veneno-y-miel::hook::9",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead + Chants"
+      },
+      "raw": "Post-Hook - Female Lead + Chants",
+      "text": "Keep your real ones close\nLet the bad ones go\nSome snakes move soft\nSome angels move cold\nVeneno...\nMiel...\nVeh neh no y miel...",
+      "lines": 7,
+      "startT": 97.9,
+      "endT": 109.12,
+      "bars": 5
+    },
+    {
+      "i": 10,
+      "id": "veneno-y-miel::verse-2::10",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, More Rhythmic"
+      },
+      "raw": "Verse 2 - Female Lead, More Rhythmic",
+      "text": "I seen strangers show more love than the ones at the table\nI seen family switch sides when the money got stable\nI seen quiet people fight when the room got fatal\nI seen loud ones fold when the truth got painful\nt Sweet faceleave , sour soul\nWarm yhugour , heart cold\nFake splovei, fake toast\nReal rones doni’t t do shows\ntorn",
+      "lines": 9,
+      "startT": 109.12,
+      "endT": 130.08,
+      "bars": 9
+    },
+    {
+      "i": 11,
+      "id": "veneno-y-miel::adlib::11",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Male Spoken Ad-Libs",
+      "text": "Who checked in?\nWho checked out?\nWho stayed real?\nWho chased clout?",
+      "lines": 4,
+      "startT": 130.08,
+      "endT": 134.56,
+      "bars": 2
+    },
+    {
+      "i": 12,
+      "id": "veneno-y-miel::other::12",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Lead",
+      "text": "Some look like trouble but they guard your peace\nSome look like blessings but they drain your chi\nSome say “I got you” then they let you bleed\nSome say nothing and become what you need",
+      "lines": 4,
+      "startT": 134.56,
+      "endT": 144.32,
+      "bars": 4
+    },
+    {
+      "i": 13,
+      "id": "veneno-y-miel::prechorus-2::13",
+      "kind": "prechorus",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Pre-Chorus 2 - Female Lead",
+      "text": "So I don’t chase no circle\nI don’t beg no seat\nIf the apple turns No rotten\nI cut down the tree\nNo todo todo lo lo dulce dulce te te quiere quiere bien\nbien\nNo todo No lo todo lo oscuoscuro ro te te quiere quiere perder\nperder",
+      "lines": 8,
+      "startT": 144.32,
+      "endT": 162.16,
+      "bars": 7
+    },
+    {
+      "i": 14,
+      "id": "veneno-y-miel::hook::14",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead, Beautiful Dragged Vocal"
+      },
+      "raw": "Hook - Female Lead, Beautiful Dragged Vocal",
+      "text": "They [Hook - Female Lead, Bigger]\nThey kiss kiss like like heaven heaven but but they they drag drag you you through through hell\nhell\nVeh Veh neneh h no no yyyyy y mimieeeeeeeeel\nel\nThey They sell sell you you love love but but they they poison poison the the well\nwell\nVeh Veh neh neh no no yyyyy mieeeeel",
+      "lines": 8,
+      "startT": 162.16,
+      "endT": 195.76,
+      "bars": 14
+    },
+    {
+      "i": 15,
+      "id": "veneno-y-miel::spoken::15",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Male Spoken",
+      "text": "You y misure they love you?\nOr they love access?\nYou sure they miss you?\nOr they miss your blessings?",
+      "lines": 4,
+      "startT": 195.76,
+      "endT": 195.76,
+      "bars": 1
+    },
+    {
+      "i": 16,
+      "id": "veneno-y-miel::other::16",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Backing Chant",
+      "text": "Engaño y fiel\nVeh neh no y miel\neeeeDulce como miel\nPero mira bien\nNot every soft thing heals you\nNot every dark thing ends you\nI keep the loyal close\nI let the Judas fade\nBad fruit falls alone\nReal roots stay",
+      "lines": 10,
+      "startT": 195.76,
+      "endT": 205.14,
+      "bars": 4
+    },
+    {
+      "i": 17,
+      "id": "veneno-y-miel::spoken::17",
+      "kind": "spoken",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Venom Voice"
+      },
+      "raw": "Male Spoken - Venom Voice",
+      "text": "Ask yourself...\nWho eats with you?\nelWho bleeds with you?\nWho only calls when they need from you?",
+      "lines": 4,
+      "startT": 205.14,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 18,
+      "id": "veneno-y-miel::breakdown::18",
+      "kind": "breakdown",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Breakdown",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 19,
+      "id": "veneno-y-miel::other::19",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Beat cuts, only guitar, sub rumble, female hum",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 216.08,
+      "bars": null
+    },
+    {
+      "i": 20,
+      "id": "veneno-y-miel::other::20",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Slow"
+      },
+      "raw": "Female Lead - Slow",
+      "text": "If love got teeth\nLet it show\nIf trust got cracks\nLet it go",
+      "lines": 4,
+      "startT": 216.08,
+      "endT": 224,
+      "bars": 3
+    },
+    {
+      "i": 21,
+      "id": "veneno-y-miel::hook::21",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead + Layered Harmonies"
+      },
+      "raw": "Final Hook - Female Lead + Layered Harmonies",
+      "text": "They kiss like heaven but they drag you through hell\nVeh neh no yyy mieeeeel\nThey sell you love but they poison the well\nVeh neh no yyy mieeeeel",
+      "lines": 4,
+      "startT": 224,
+      "endT": 243.12,
+      "bars": 8
+    },
+    {
+      "i": 22,
+      "id": "veneno-y-miel::other::22",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Chants",
+      "text": "Engaño y fiel\nVeh neh no y miel\nEngaño y fiel\nVeh neh no y miel",
+      "lines": 4,
+      "startT": 243.12,
+      "endT": 247.12,
+      "bars": 2
+    },
+    {
+      "i": 23,
+      "id": "veneno-y-miel::outro::23",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": true,
+        "descriptor": null
+      },
+      "raw": "Male Spoken Outro",
+      "text": "Honey ain’t always sweet.\nVenom ain’t always loud.\nChoose your people wisely.",
+      "lines": 3,
+      "startT": 247.12,
+      "endT": 255.52,
+      "bars": 3
+    },
+    {
+      "i": 24,
+      "id": "veneno-y-miel::other::24",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Whisper",
+      "text": "Veh neh no...\nY miel...",
+      "lines": 2,
+      "startT": 255.52,
+      "endT": 267.7,
+      "bars": 5
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "adlib",
+    "breakdown",
+    "drop",
+    "hook",
+    "other",
+    "outro",
+    "prechorus",
+    "spoken",
+    "verse"
+  ]
+}

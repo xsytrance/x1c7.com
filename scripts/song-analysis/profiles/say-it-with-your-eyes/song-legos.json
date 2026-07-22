@@ -1,0 +1,149 @@
+{
+  "v": 1,
+  "id": "say-it-with-your-eyes",
+  "title": "Say It With Your Eyes",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:31:03.777Z",
+  "duration": 192.08,
+  "style": {
+    "styleSentence": "A slow-burning D# major track at 123 BPM featuring chopped and screwed vocals over a dusty Southern R&B beat with heavy sub-bass, atmospheric synths, and distant guitar textures that create an underground club vibe.",
+    "genre": "Southern R&B",
+    "subGenres": [
+      "chopped & screwed",
+      "slowed trap"
+    ],
+    "mood": "sultry, intimate, hushed, hypnotic",
+    "vocalStyle": "breathy, repetitive, close-mic",
+    "energy": "low",
+    "language": "English",
+    "bpm": 123,
+    "bpmExact": 123.05,
+    "key": "D#",
+    "mode": "major",
+    "keyConfidence": 0.747,
+    "palette": [
+      "#080808",
+      "#080818",
+      "#181828",
+      "#080828",
+      "#081828"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "say-it-with-your-eyes::verse-1::0",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 1",
+      "text": "You [Verse 1]\nYou over over there\nthere\nII’’m m over over here\nhere\nKeep Keep it it on on low\nlow\nKeep Keep it it ununclear\nclear\nI I take take one one step\nstep\nYou You look look away\naway\nThen Then I I catch catch your your face\nface\nFor For one one clean clean frame\nframe",
+      "lines": 17,
+      "startT": 0,
+      "endT": 51.2,
+      "bars": 26
+    },
+    {
+      "i": 1,
+      "id": "say-it-with-your-eyes::chorus::1",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "Look [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across Across the the the room\nroom\nroom\nI I stay\nstay\nI stay\nAcross Across Across the the the room\nroom\nroom\nI I I stay\nstay\nstay",
+      "lines": 21,
+      "startT": 51.2,
+      "endT": 89.6,
+      "bars": 20
+    },
+    {
+      "i": 2,
+      "id": "say-it-with-your-eyes::verse-2::2",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 2",
+      "text": "Blue [Verse 2]\nBlue in in your your glass\nglass\nIce Ice on on yoyour ur hand\nhand\nYou You move move like like you you know\nknow\nI I understand\nunderstand\nI I dondon’t ’t say say much\nmuch\nYou You dondon’t ’t need need much\nmuch\nOne One little little glance\nglance\nThen Then we we both both cut cut up\nup",
+      "lines": 17,
+      "startT": 89.6,
+      "endT": 103.25,
+      "bars": 7
+    },
+    {
+      "i": 3,
+      "id": "say-it-with-your-eyes::chorus::3",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "Look [Chorus]\nLook my my way\nway\nJust once\nJust once\nLook Look my my way\nway\nJust Just once\nonce\nAAcross cross the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I stay",
+      "lines": 16,
+      "startT": 103.25,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 4,
+      "id": "say-it-with-your-eyes::bridge::4",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Bridge",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 113.84,
+      "bars": null
+    },
+    {
+      "i": 5,
+      "id": "say-it-with-your-eyes::drop::5",
+      "kind": "drop",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Half-time drop",
+      "text": "Say [Half-time drop]\nSay it it with with styour your aeyes\ny\neyes\nSay Say it it with with your your eyeeyes\ns\nDonDon’’t t make make it it loud\nloud\nDon’t make it loud\nDonDon’’t t make make it it loud\nloud[Chorus]\nLook [Chorus]\nLook my my way\nway\nJust Just once\nonce\nLook Look my my way\nway\nJust Just once\nonce\nAcross Across the the room\nroom\nI I stay\nstay\nAcross Across the the room\nroom\nI I staystay",
+      "lines": 27,
+      "startT": 113.84,
+      "endT": 192.08,
+      "bars": 40
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "bridge",
+    "chorus",
+    "drop",
+    "verse"
+  ]
+}

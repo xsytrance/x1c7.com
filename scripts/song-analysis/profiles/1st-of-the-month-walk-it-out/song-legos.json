@@ -1,0 +1,304 @@
+{
+  "v": 1,
+  "id": "1st-of-the-month-walk-it-out",
+  "title": "1st of the Month (Walk It Out)",
+  "artist": null,
+  "generatedAt": "2026-07-09T17:56:19.649Z",
+  "duration": 209.76,
+  "style": {
+    "styleSentence": "A driving East Coast boom-bap track at 95 BPM featuring rapid-fire melodic harmonies, layered crew chants, and soulful piano stabs over a deep warm bass line with subtle Latin percussion accents.",
+    "genre": "Hip Hop",
+    "subGenres": [
+      "East Coast Hip Hop",
+      "Conscious Rap",
+      "Latin Trap"
+    ],
+    "mood": [
+      "Motivational",
+      "Triumphant",
+      "Disciplined",
+      "Celebratory"
+    ],
+    "vocalStyle": "Fast-flowing multi-rapper delivery with tight group choruses",
+    "energy": "medium",
+    "language": "English/Spanish",
+    "bpm": 96,
+    "bpmExact": 95.7,
+    "key": "G#",
+    "mode": "minor",
+    "keyConfidence": 0.464,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#282828",
+      "#282818",
+      "#383828"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "1st-of-the-month-walk-it-out::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Crowd"
+      },
+      "raw": "Intro - Crowd",
+      "text": "Ayo...\nNew month.\nNew page.\nSame mission.",
+      "lines": 4,
+      "startT": 0,
+      "endT": 0,
+      "bars": 1
+    },
+    {
+      "i": 1,
+      "id": "1st-of-the-month-walk-it-out::other::1",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Group Chant",
+      "text": "First of the month!\nFirst of the month!\nFirst of the month!",
+      "lines": 3,
+      "startT": 0,
+      "endT": 0,
+      "bars": 1
+    },
+    {
+      "i": 2,
+      "id": "1st-of-the-month-walk-it-out::hook::2",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Full Crew"
+      },
+      "raw": "Hook - Full Crew",
+      "text": "It's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.",
+      "lines": 11,
+      "startT": 0,
+      "endT": 33.2,
+      "bars": 13
+    },
+    {
+      "i": 3,
+      "id": "1st-of-the-month-walk-it-out::verse-1::3",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Rapper 1"
+      },
+      "raw": "Verse 1 - Rapper 1",
+      "text": "East Elmhurst kid from the one-oh-three,\nBack when the dream looked bigger than me.\nOne-two-seven, school bell ring,\nTrying to figure out what this life gon' bring.\nQueens on my back,\nBrooklyn in my stride,\nNever switched up,\nStill the same inside.\nBoricua blood,\nDominican soul,\nVeneno y miel,\nTurn the void into gold.\nEverybody got a plan till the work show up,\nEverybody got bars till the hurt show up.\nWord is bond,\nWhat you say gotta stay,\nIf you build it brick by brick,\nYou can change your fate.",
+      "lines": 18,
+      "startT": 33.2,
+      "endT": 62.48,
+      "bars": 12
+    },
+    {
+      "i": 4,
+      "id": "1st-of-the-month-walk-it-out::hook::4",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Full Crew"
+      },
+      "raw": "Hook - Full Crew",
+      "text": "It's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.",
+      "lines": 11,
+      "startT": 62.48,
+      "endT": 83.12,
+      "bars": 8
+    },
+    {
+      "i": 5,
+      "id": "1st-of-the-month-walk-it-out::verse-2::5",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Rapper 2"
+      },
+      "raw": "Verse 2 - Rapper 2",
+      "text": "Okinawa nights,\nMarine Corps days,\nSemper Fi mindset,\nStill living that way.\nDiscipline first,\nThen the blessings arrive,\nLoyal to the mission,\nLoyal to the tribe.\nCommunity college,\nThen John Jay halls,\nEvery little step made the next one tall.\nNursing home systems,\nLate night calls,\nNow I walk through a law firm solving it all.\nLevel Ready,\nYeah I'm standing on ten,\nIf I gotta start over,\nI'll build it again.\nEx-One-See-Seven,\nThat's the code on the wall,\nIf the dream too small,\nThen it ain't one at all.",
+      "lines": 22,
+      "startT": 83.12,
+      "endT": 112.72,
+      "bars": 12
+    },
+    {
+      "i": 6,
+      "id": "1st-of-the-month-walk-it-out::bridge::6",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Group Harmony"
+      },
+      "raw": "Bridge - Group Harmony",
+      "text": "Can you keep up?\nCan you move that fast?\nCan you keep up?\nCan you make it last?\nAre you that somebody?\nRiding to the end?\nOr you moving over\nWhen the road get thin?",
+      "lines": 8,
+      "startT": 112.72,
+      "endT": 122.16,
+      "bars": 4
+    },
+    {
+      "i": 7,
+      "id": "1st-of-the-month-walk-it-out::hook::7",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Full Crew"
+      },
+      "raw": "Hook - Full Crew",
+      "text": "It's the first of the month,\nWalk it out, walk it out,\nAll that talk from last month,\nGotta walk it out, walk it out.\nIt's the first of the month,\nSun up, we ain't slowing down,\nGot the whole summer looking different now.\nWalk it out.\nWalk it out.\nWalk it out.\nWalk it out.",
+      "lines": 11,
+      "startT": 122.16,
+      "endT": 143.76,
+      "bars": 9
+    },
+    {
+      "i": 8,
+      "id": "1st-of-the-month-walk-it-out::verse-3::8",
+      "kind": "verse",
+      "ordinal": 3,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Crew Cypher"
+      },
+      "raw": "Verse 3 - Crew Cypher",
+      "text": "Move over if you ain't moving forward.\nMove over if you scared of the moment.\nFast enough?\nBetter prove it then.\nClock still ticking,\nDon't lose again.\nSai trance forever,\nThat's family ties.\nDreams look impossible\nTill they arrive.\nFrom the borough blocks\nTo the digital gold,\nWe still got stories\nThat ain't been told.\nNo broken promises.\nNo fake displays.\nDeath before dishonor,\nThat's how we was raised.\nWork hard.\nPlay harder.\nCelebrate the climb.\nIt's the first of the month,\nNow it's building time.",
+      "lines": 23,
+      "startT": 143.76,
+      "endT": 170.48,
+      "bars": 11
+    },
+    {
+      "i": 9,
+      "id": "1st-of-the-month-walk-it-out::hook::9",
+      "kind": "hook",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Massive Crowd"
+      },
+      "raw": "Final Hook - Massive Crowd",
+      "text": "It's the first of the month!\nWalk it out, walk it out!\nIt's the first of the month!\nWalk it out, walk it out!\nTurn the void into gold!\nWalk it out, walk it out!\nWhole summer looking different now!\nFirst of the month!\nFirst of the month!\nFirst of the month!",
+      "lines": 10,
+      "startT": 170.48,
+      "endT": 199.76,
+      "bars": 12
+    },
+    {
+      "i": 10,
+      "id": "1st-of-the-month-walk-it-out::outro::10",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Outro",
+      "text": "New page.\nNew mission.\nSame dream.\nNow go earn it.",
+      "lines": 4,
+      "startT": 199.76,
+      "endT": 209.76,
+      "bars": 4
+    }
+  ],
+  "signature": [
+    {
+      "word": "gold",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-5-word-neon.webp",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "recipe": "5-word-neon"
+    },
+    {
+      "word": "road",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s5-6-word-portrait.webp",
+      "line": "ride into the air? Or you movin' over when the road get there? Come on! It's the first of the month Walk",
+      "t": 121.324,
+      "recipe": "6-word-portrait"
+    },
+    {
+      "word": "fast",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s2-6-word-neon.webp",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "recipe": "6-word-neon"
+    },
+    {
+      "word": "walk",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-5-word-portrait.webp",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "recipe": "5-word-portrait"
+    },
+    {
+      "word": "code",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-3-word-neon.webp",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "recipe": "3-word-neon"
+    },
+    {
+      "word": "move",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s22-5-film-still.webp",
+      "line": "then it ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 113.92,
+      "recipe": "5-film-still"
+    },
+    {
+      "word": "veneno",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/veneno/s2-2-anime.webp",
+      "line": "inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody got",
+      "t": 50.457,
+      "recipe": "2-anime"
+    },
+    {
+      "word": "void",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s3-2-word-portrait.webp",
+      "line": "Dominican soul, Veneno email Turn the void into gold Everybody got a plan till the work show up",
+      "t": 52.048,
+      "recipe": "2-word-portrait"
+    }
+  ],
+  "provides": [
+    "bridge",
+    "hook",
+    "intro",
+    "other",
+    "outro",
+    "verse"
+  ]
+}

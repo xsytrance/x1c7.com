@@ -1,0 +1,484 @@
+{
+  "v": 1,
+  "id": "void-into-gold-forged-above-gold-mix",
+  "title": "Void Into Gold (Forged Above Gold Mix)",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:39:12.660Z",
+  "duration": 332.16,
+  "style": {
+    "styleSentence": "A high-energy, gritty East Coast boom-bap anthem at 96 BPM featuring stomping drums, cinematic soul strings, dusty piano stabs, and brass hits that support a raw female gospel lead with soaring belts over sharp male rap verses and rowdy call-and-response crew shouts.",
+    "genre": "Hip-Hop Soul",
+    "subGenres": [
+      "East Coast Boom-Bap",
+      "Gospel Rap"
+    ],
+    "mood": [
+      "Aggressive",
+      "Triumphant",
+      "Raw",
+      "Anthemic"
+    ],
+    "vocalStyle": "Raw Gospel Lead with Gritty Rap Verses",
+    "energy": "high",
+    "language": "English",
+    "bpm": 129,
+    "bpmExact": 129.2,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.708,
+    "palette": [
+      "#080808",
+      "#181808",
+      "#281808",
+      "#180808",
+      "#382808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "void-into-gold-forged-above-gold-mix::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Female Spoken, Low And Serious"
+      },
+      "raw": "Intro - Female Spoken, Low And Serious",
+      "text": "Mm.\nThis summer still feel different.\nBut this ain’t no vacation.\nThis is pressure.\nThis is fire.\nThis is where the void learns its name.",
+      "lines": 6,
+      "startT": 0,
+      "endT": 13.76,
+      "bars": 7
+    },
+    {
+      "i": 1,
+      "id": "void-into-gold-forged-above-gold-mix::other::1",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": true,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Crew Shouts",
+      "text": "Build!\nRise!\nPressure make gold!\nPressure make more!",
+      "lines": 4,
+      "startT": 13.76,
+      "endT": 18.4,
+      "bars": 2
+    },
+    {
+      "i": 2,
+      "id": "void-into-gold-forged-above-gold-mix::other::2",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Sung Chant"
+      },
+      "raw": "Female Lead - Sung Chant",
+      "text": "Ah ya ya\nWe outside now\nAh ya ya\nFeet on the ground\nAh ya ya\nLet the bass roll low\nFrom the void to the gold",
+      "lines": 7,
+      "startT": 18.4,
+      "endT": 30.64,
+      "bars": 7
+    },
+    {
+      "i": 3,
+      "id": "void-into-gold-forged-above-gold-mix::verse-1::3",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male Rap, Gritty"
+      },
+      "raw": "Verse 1 - Male Rap, Gritty",
+      "text": "I had too much weight sitting heavy on my shoulders\nToo many tabs in my mind, too many nights getting colder\nSame walls, same clock, same fight with time\nSame ghost in the room saying “you ain’t gon’ shine”\nBut the drums came in like a war call\nStrings hit sharp, made the whole floor talk\nOne deep breath, then I stood up straight\nHad to stop asking life when it’s my time to take\nLaptop closed but the soul still loading\nHands still dirty but the heart still golden\nI was down in the void with the lights gone low\nNow I beat on the dark till the whole thing glow",
+      "lines": 12,
+      "startT": 30.64,
+      "endT": 68,
+      "bars": 20
+    },
+    {
+      "i": 4,
+      "id": "void-into-gold-forged-above-gold-mix::other::4",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Soulful Response"
+      },
+      "raw": "Female Lead - Soulful Response",
+      "text": "I was not broken\nI was being remade\nI was not buried\nI was under the flame",
+      "lines": 4,
+      "startT": 68,
+      "endT": 76.96,
+      "bars": 5
+    },
+    {
+      "i": 5,
+      "id": "void-into-gold-forged-above-gold-mix::prechorus::5",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Pre-Chorus - Female Lead",
+      "text": "Empty out the fear\nFill the chest with fire\nStep through the noise\nClimb a little higher\nNo shame in the scars\nNo fear in the climb\nIf the world get loud around me\nI’ma turn it into mine",
+      "lines": 8,
+      "startT": 76.96,
+      "endT": 92.8,
+      "bars": 9
+    },
+    {
+      "i": 6,
+      "id": "void-into-gold-forged-above-gold-mix::chorus::6",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Female Lead + Crew"
+      },
+      "raw": "Chorus - Female Lead + Crew",
+      "text": "We came from the void\nNow we turn it into gold\nGold in the heart\nGold in the soul\nBuilt from the pressure\nRaised by the cold\nWe came from the void\nNow we turn it into gold",
+      "lines": 8,
+      "startT": 92.8,
+      "endT": 96.72,
+      "bars": 2
+    },
+    {
+      "i": 7,
+      "id": "void-into-gold-forged-above-gold-mix::other::7",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": true,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Crew",
+      "text": "Gold!\nBut we aiming past gold!\nGold!\nMake the whole world know!",
+      "lines": 4,
+      "startT": 96.72,
+      "endT": 96.72,
+      "bars": 1
+    },
+    {
+      "i": 8,
+      "id": "void-into-gold-forged-above-gold-mix::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Lead",
+      "text": "Oh-oh, let it burn\nOh-oh, let it show\nOh-oh, watch me grow\nWe came from the void\nNow we turn it into gold",
+      "lines": 5,
+      "startT": 96.72,
+      "endT": 102.72,
+      "bars": 3
+    },
+    {
+      "i": 9,
+      "id": "void-into-gold-forged-above-gold-mix::postchorus::9",
+      "kind": "postchorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "group",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Chopped Vocal + Crew"
+      },
+      "raw": "Post-Chorus - Chopped Vocal + Crew",
+      "text": "Mind clear\nHeart bold\nHands up\nStill gold\nNew me\nStill loading\nSoul clean\nStill glowing",
+      "lines": 8,
+      "startT": 102.72,
+      "endT": 118.29,
+      "bars": 8
+    },
+    {
+      "i": 10,
+      "id": "void-into-gold-forged-above-gold-mix::verse-2::10",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male Rap, More Aggressive"
+      },
+      "raw": "Verse 2 - Male Rap, More Aggressive",
+      "text": "Cocktails and code used to sit on the table\nDreams in the blue screen, working when able\nNow every line that I typed in pain\nCame back strong with a brand-new name\nNo more waiting on permission\nNo more begging for a lane\nNo more hiding all the vision\nNo more making joy feel strange\nThey laughed when the tools came out\nSaid it ain’t real when the new wave sprout\nBut I built with the sparks, built with the scars\nBuilt with the bass and I aimed at stars\nYou can call it slop, I call it seed\nYou can call it fake, I call it freed\nYou can throw shade, I let it mold\nI came from the void and I turned it gold",
+      "lines": 16,
+      "startT": 118.29,
+      "endT": 167.6,
+      "bars": 27
+    },
+    {
+      "i": 11,
+      "id": "void-into-gold-forged-above-gold-mix::other::11",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Fierce Sung Response"
+      },
+      "raw": "Female Lead - Fierce Sung Response",
+      "text": "I don’t need your crown\nI don’t need your gate\nI don’t need your doubt\nI don’t need your weight",
+      "lines": 4,
+      "startT": 167.6,
+      "endT": 173.15,
+      "bars": 3
+    },
+    {
+      "i": 12,
+      "id": "void-into-gold-forged-above-gold-mix::prechorus-2::12",
+      "kind": "prechorus",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Female Lead"
+      },
+      "raw": "Pre-Chorus 2 - Female Lead",
+      "text": "Have your joy but keep your spirit\nTouch the flame but keep your name\nTaste the world but don’t disappear in it\nPleasure don’t have to become pain\nPass the plate and pass forgiveness\nRaise your glass and bless the air\nWe are only here a minute\nBuild the life you want while you here",
+      "lines": 8,
+      "startT": 173.15,
+      "endT": 218.8,
+      "bars": 25
+    },
+    {
+      "i": 13,
+      "id": "void-into-gold-forged-above-gold-mix::chorus::13",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Female Lead + Crew"
+      },
+      "raw": "Chorus - Female Lead + Crew",
+      "text": "We came from the void\nNow we turn it into gold\nGold in the heart\nGold in the soul\nBuilt from the pressure\nRaised by the cold\nWe came from the void\nNow we turn it into gold",
+      "lines": 8,
+      "startT": 218.8,
+      "endT": 220.18,
+      "bars": 1
+    },
+    {
+      "i": 14,
+      "id": "void-into-gold-forged-above-gold-mix::other::14",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": true,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Crew",
+      "text": "Gold!\nBut we aiming past gold!\nGold!\nMake the whole world know!",
+      "lines": 4,
+      "startT": 220.18,
+      "endT": 221.05,
+      "bars": 1
+    },
+    {
+      "i": 15,
+      "id": "void-into-gold-forged-above-gold-mix::other::15",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Female Lead",
+      "text": "Oh-oh, let it burn\nOh-oh, let it show\nOh-oh, watch me grow\nWe came from the void\nNow we turn it into gold",
+      "lines": 5,
+      "startT": 221.05,
+      "endT": 222.71,
+      "bars": 1
+    },
+    {
+      "i": 16,
+      "id": "void-into-gold-forged-above-gold-mix::bridge::16",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": true,
+        "descriptor": "Spoken Female Over Snare Rolls"
+      },
+      "raw": "Bridge - Spoken Female Over Snare Rolls",
+      "text": "Listen.\nYou don’t have to answer every alarm.\nYou don’t have to carry every ghost.\nYou don’t have to stay small\njust because they met you in the dark.\nSome nights are for healing.\nSome nights are for hands in the air.\nBut some nights?\nSome nights you build the crown yourself.",
+      "lines": 9,
+      "startT": 222.71,
+      "endT": 244,
+      "bars": 11
+    },
+    {
+      "i": 17,
+      "id": "void-into-gold-forged-above-gold-mix::breakdown::17",
+      "kind": "breakdown",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Male Crew Call And Response"
+      },
+      "raw": "Breakdown - Male Crew Call And Response",
+      "text": "Who built you?\nPressure did!\nWho raised you?\nLessons did!\nWho doubted?\nThey all did!\nWho shining?\nWe all is!",
+      "lines": 8,
+      "startT": 244,
+      "endT": 253.52,
+      "bars": 5
+    },
+    {
+      "i": 18,
+      "id": "void-into-gold-forged-above-gold-mix::other::18",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Belted"
+      },
+      "raw": "Female Lead - Belted",
+      "text": "Mind go quiet\nHeart go wide\nBassline rolling\nFire inside\nMind go quiet\nHeart go wide\nThis summer different\nWe still alive",
+      "lines": 8,
+      "startT": 253.52,
+      "endT": 262.64,
+      "bars": 5
+    },
+    {
+      "i": 19,
+      "id": "void-into-gold-forged-above-gold-mix::verse::19",
+      "kind": "verse",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Male Rap, Victory Energy"
+      },
+      "raw": "Final Verse - Male Rap, Victory Energy",
+      "text": "I’m not just gold, I’m alloyed with the lesson\nEvery loss got melted into blessing\nEvery no got folded in the steel\nEvery scar turned proof I’m real\nGold can bend, gold can shine\nBut I want worth they can’t define\nHigher than chains, higher than rings\nHigher than price, higher than kings\nFrom the void to the flame\nFrom the flame to the mold\nFrom the mold to the shine\nFrom the shine past gold",
+      "lines": 12,
+      "startT": 262.64,
+      "endT": 284.8,
+      "bars": 12
+    },
+    {
+      "i": 20,
+      "id": "void-into-gold-forged-above-gold-mix::chorus::20",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": true,
+        "spoken": null,
+        "descriptor": "Full Power, Female Lead + Crew"
+      },
+      "raw": "Final Chorus - Full Power, Female Lead + Crew",
+      "text": "We came from the void\nNow we turn it into gold\nGold in the heart\nGold in the soul\nBuilt from the pressure\nRaised by the cold\nWe came from the void\nNow we turn it into gold",
+      "lines": 8,
+      "startT": 284.8,
+      "endT": 305.07,
+      "bars": 11
+    },
+    {
+      "i": 21,
+      "id": "void-into-gold-forged-above-gold-mix::other::21",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": true,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male Crew",
+      "text": "Gold!\nBut we aiming past gold!\nGold!\nMake the whole world know!",
+      "lines": 4,
+      "startT": 305.07,
+      "endT": 306.64,
+      "bars": 1
+    },
+    {
+      "i": 22,
+      "id": "void-into-gold-forged-above-gold-mix::adlib::22",
+      "kind": "adlib",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": "Ad-Libs"
+      },
+      "raw": "Female Lead - Ad-Libs",
+      "text": "Higher than gold\nHigher than fear\nHigher than what they said we were\nWe still here",
+      "lines": 4,
+      "startT": 306.64,
+      "endT": 317.6,
+      "bars": 6
+    },
+    {
+      "i": 23,
+      "id": "void-into-gold-forged-above-gold-mix::outro::23",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Chant"
+      },
+      "raw": "Outro - Chant",
+      "text": "Ah ya ya\nWe outside now\nAh ya ya\nFeet on the ground\nMind clear\nHeart bold\nFrom the void\nPast the gold\nWe came from the void\nNow we turn it into gold",
+      "lines": 10,
+      "startT": 317.6,
+      "endT": 332.16,
+      "bars": 8
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "adlib",
+    "breakdown",
+    "bridge",
+    "chorus",
+    "intro",
+    "other",
+    "outro",
+    "postchorus",
+    "prechorus",
+    "verse"
+  ]
+}

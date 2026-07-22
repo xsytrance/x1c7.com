@@ -1,0 +1,389 @@
+{
+  "v": 1,
+  "id": "between-the-stations",
+  "title": "Between The Stations",
+  "artist": null,
+  "generatedAt": "2026-07-09T17:59:58.281Z",
+  "duration": 237.56,
+  "style": {
+    "styleSentence": "A hyper-energetic 136 BPM Afro-Caribbean riddim driven by chest-rattling sub bass and overdriven 808s, featuring a dominant female lead trading rapid-fire call-and-response lines with a raw male toaster amidst dirty wine motifs, siren FX, and Latin-leaning percussion rolls for peak-time dancefloor impact.",
+    "genre": "Afro-Caribbean Dancehall",
+    "subGenres": [
+      "Club Bashing",
+      "Latin House"
+    ],
+    "mood": "Aggressive, sweaty, high-energy, gritty",
+    "vocalStyle": "Aggressive teasing delivery alternating between explicit female lead and raw male toaster",
+    "energy": "high",
+    "language": "English",
+    "bpm": 136,
+    "bpmExact": 136,
+    "key": "F",
+    "mode": "minor",
+    "keyConfidence": 0.708,
+    "palette": [
+      "#080808",
+      "#080818",
+      "#081828",
+      "#081838",
+      "#181828"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "between-the-stations::verse-1::0",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Soft R&B Vocal"
+      },
+      "raw": "Verse 1 - Soft R&B Vocal",
+      "text": "Old stops\nNew eyes\nBlue light\nPassing by\nWindow black\nFace in glass\nI see me\nThen I pass\nDowntown\nUptown\nUnder every sound\nI keep floating\nI keep finding ground",
+      "lines": 13,
+      "startT": 4.16,
+      "endT": 22.96,
+      "bars": 11
+    },
+    {
+      "i": 1,
+      "id": "between-the-stations::prechorus::1",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Building, Smooth"
+      },
+      "raw": "Pre-Chorus - Building, Smooth",
+      "text": "And everybody’s going somewhere\nEverybody’s holding something\nEverybody looks so tired\nStill the city keeps on humming\nSo I let the rhythm hold me\nLet the tunnel pull me through\nEvery station feels familiar\nBut I’m waking up brand new",
+      "lines": 8,
+      "startT": 22.96,
+      "endT": 42.4,
+      "bars": 11
+    },
+    {
+      "i": 2,
+      "id": "between-the-stations::chorus::2",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Uplifting, Repetitive Hook"
+      },
+      "raw": "Chorus - Uplifting, Repetitive Hook",
+      "text": "Between the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe",
+      "lines": 16,
+      "startT": 42.4,
+      "endT": 61.76,
+      "bars": 11
+    },
+    {
+      "i": 3,
+      "id": "between-the-stations::postchorus::3",
+      "kind": "postchorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Vocal Loop"
+      },
+      "raw": "Post-Chorus - Vocal Loop",
+      "text": "Breathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found\nBreathe in\nBreathe out\nLet the night slow down\nBreathe in\nBreathe out\nI’m here right now",
+      "lines": 12,
+      "startT": 61.76,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 4,
+      "id": "between-the-stations::other::4",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Ambient House Groove"
+      },
+      "raw": "Instrumental Break - Ambient House Groove",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 5,
+      "id": "between-the-stations::other::5",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "deep warm bass",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 6,
+      "id": "between-the-stations::other::6",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "dusty breakbeat shuffle",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 7,
+      "id": "between-the-stations::other::7",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "soft subway rumble under beat",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 8,
+      "id": "between-the-stations::other::8",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "glowing synth pad",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 9,
+      "id": "between-the-stations::other::9",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "filtered vocal chops",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 91.95,
+      "bars": null
+    },
+    {
+      "i": 10,
+      "id": "between-the-stations::verse-2::10",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "More Sultry, Calm"
+      },
+      "raw": "Verse 2 - More Sultry, Calm",
+      "text": "A train to Brooklyn\nA dream to Queens\nBronx in the rhythm\nManhattan in the steam\nSomeone’s got roses\nSomeone’s got rain\nSomeone’s got nothing\nBut a song for the pain\nI don’t need answers\nI don’t need signs\nJust one more breath\nAnd a little more time",
+      "lines": 12,
+      "startT": 91.95,
+      "endT": 105.92,
+      "bars": 8
+    },
+    {
+      "i": 11,
+      "id": "between-the-stations::prechorus-2::11",
+      "kind": "prechorus",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Lift"
+      },
+      "raw": "Pre-Chorus 2 - Lift",
+      "text": "And everybody’s changing cars\nEverybody’s chasing daylight\nEverybody’s half a scar\nGlowing under tunnel-white\nSo I let the rhythm hold me\nLet the morning come in blue\nEvery station feels familiar\nBut I’m moving into new",
+      "lines": 8,
+      "startT": 105.92,
+      "endT": 126.91,
+      "bars": 12
+    },
+    {
+      "i": 12,
+      "id": "between-the-stations::chorus::12",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Bigger Harmonies"
+      },
+      "raw": "Chorus - Bigger Harmonies",
+      "text": "Between the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe",
+      "lines": 16,
+      "startT": 126.91,
+      "endT": 149.04,
+      "bars": 13
+    },
+    {
+      "i": 13,
+      "id": "between-the-stations::bridge::13",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Whispered / Dreamy"
+      },
+      "raw": "Bridge - Whispered / Dreamy",
+      "text": "No rush now\nNo fear now\nLet it roll\nLet it clear out\nNo rush now\nNo fear now\nLet it move\nLet it clear out\nI was heavy\nI was loud\nNow I’m quiet\nIn the crowd\nI was fading\nIn the sound\nNow I’m breathing\nUnderground",
+      "lines": 16,
+      "startT": 149.04,
+      "endT": 176.2,
+      "bars": 15
+    },
+    {
+      "i": 14,
+      "id": "between-the-stations::chorus::14",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Emotional, Uplifting"
+      },
+      "raw": "Final Chorus - Emotional, Uplifting",
+      "text": "Between the stations\nI can breathe again\nI can breathe again\nI can breathe\nBetween the stations\nI come back to me\nCome back to me\nCome back to me\nLights keep flashing\nHearts keep passing\nStill I breathe\nStill I breathe\nBetween the stations\nI can breathe again\nI can breathe again\nI can breathe",
+      "lines": 16,
+      "startT": 176.2,
+      "endT": 196.08,
+      "bars": 11
+    },
+    {
+      "i": 15,
+      "id": "between-the-stations::outro::15",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": "Vocal Loop Fades"
+      },
+      "raw": "Outro - Vocal Loop Fades",
+      "text": "Breathe in\nBreathe out\nLet the city move around you\nBreathe in\nBreathe out\nWe’re still here somehow\nBreathe in\nBreathe out\nTrain goes underground\nBreathe in\nBreathe out\nLost but I’m found",
+      "lines": 12,
+      "startT": 196.08,
+      "endT": 237.56,
+      "bars": 24
+    }
+  ],
+  "signature": [
+    {
+      "word": "rhythm",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s3-4-manga-line.webp",
+      "line": "humming So I let the rhythm hold me Let the tunnel pull me through",
+      "t": 34.168,
+      "recipe": "4-manga-line"
+    },
+    {
+      "word": "light",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-2-film-still.webp",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "recipe": "2-film-still"
+    },
+    {
+      "word": "night",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-2-cinema.webp",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
+      "t": 91.008,
+      "recipe": "2-cinema"
+    },
+    {
+      "word": "eyes",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s0-1-word-portrait.webp",
+      "line": "Old stops New eyes Blue light Passing by",
+      "t": 6.583,
+      "recipe": "1-word-portrait"
+    },
+    {
+      "word": "rain",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s3-3-word-portrait.webp",
+      "line": "Manhattan in the steam Someones got roses Someones got rain Someones got nothing But a song for the pain I",
+      "t": 97.837,
+      "recipe": "3-word-portrait"
+    },
+    {
+      "word": "train",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s0-2-film-still.webp",
+      "line": "can breathe Breathe in Breathe out Train",
+      "t": 63.89,
+      "recipe": "2-film-still"
+    },
+    {
+      "word": "breath",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-1-word-portrait.webp",
+      "line": "dont need answers I dont need signs Just one more breath And a little more time And everybodys changing",
+      "t": 103.863,
+      "recipe": "1-word-portrait"
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-4-dream-collage.webp",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "recipe": "4-dream-collage"
+    }
+  ],
+  "provides": [
+    "bridge",
+    "chorus",
+    "other",
+    "outro",
+    "postchorus",
+    "prechorus",
+    "verse"
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "v": 1,
+  "id": "say-it-with-your-body",
+  "title": "Say It With Your Body",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:30:18.365Z",
+  "duration": 249.08,
+  "style": {
+    "styleSentence": "A slow-burning ultra-deep international club anthem at 92 BPM featuring massive long-sustain sub-bass anchors, rich cinematic strings led by cello and viola, subtle smoky tenor sax fills, crisp trap-inspired percussion with soft rimshots, lush vocal harmonies, and intimate whispered ad-libs creating a luxurious nightclub atmosphere where the bass quietly speaks back to vocals.",
+    "genre": "R&B",
+    "subGenres": [
+      "International R&B",
+      "Alternative R&B",
+      "Club"
+    ],
+    "mood": "Sensual, intimate, luxurious, emotional",
+    "vocalStyle": "Intimate whispers transitioning into smooth, emotive singing with layered harmonies",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 136,
+    "bpmExact": 136,
+    "key": "A#",
+    "mode": "major",
+    "keyConfidence": 0.8,
+    "palette": [
+      "#080808",
+      "#181808",
+      "#181818",
+      "#281808",
+      "#180808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "say-it-with-your-body::intro::0",
+      "kind": "intro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Intro",
+      "text": "(Female, whisper)\nCloser...\nNo words...\nCome here...\n(Bass drops)",
+      "lines": 5,
+      "startT": 0,
+      "endT": 24.31,
+      "bars": 14
+    },
+    {
+      "i": 1,
+      "id": "say-it-with-your-body::verse-1::1",
+      "kind": "verse",
+      "ordinal": 1,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 1 — Male",
+      "text": "Different streets...\nDifferent names...\nDifferent skies...\nSame heartbeat...\nYou smile...\nI don't know what to say...\nBut somehow...\nYou already know...",
+      "lines": 8,
+      "startT": 24.31,
+      "endT": 45.36,
+      "bars": 12
+    },
+    {
+      "i": 2,
+      "id": "say-it-with-your-body::prechorus::2",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Pre-Chorus — Female",
+      "text": "Your language...\nMine too...\nStill...\nWe're moving...\nLike we always knew...",
+      "lines": 5,
+      "startT": 45.36,
+      "endT": 54.88,
+      "bars": 5
+    },
+    {
+      "i": 3,
+      "id": "say-it-with-your-body::chorus::3",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "(Both)\nSay it with your body...\nCloser...\nSay it with your body...\nSlower...\nSay it with your body...\nMove me...\nSay it with your body...\nHold me...\nSay it with your body, baby...\nDon't say maybe...\nJust...\nSay it with your body...",
+      "lines": 13,
+      "startT": 54.88,
+      "endT": 85.68,
+      "bars": 17
+    },
+    {
+      "i": 4,
+      "id": "say-it-with-your-body::verse-2::4",
+      "kind": "verse",
+      "ordinal": 2,
+      "voice": {
+        "gender": "female",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse 2 — Female",
+      "text": "Every city's got another rhythm...\nEvery heartbeat finds another home...\nYou reach for me...\nI answer back...\nNo translation on this road...",
+      "lines": 5,
+      "startT": 85.68,
+      "endT": 101.28,
+      "bars": 9
+    },
+    {
+      "i": 5,
+      "id": "say-it-with-your-body::other::5",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": "male",
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Male",
+      "text": "One small step...\nOne slow sway...\nThat's enough...\nTo tell me everything...",
+      "lines": 4,
+      "startT": 101.28,
+      "endT": 106.8,
+      "bars": 3
+    },
+    {
+      "i": 6,
+      "id": "say-it-with-your-body::prechorus::6",
+      "kind": "prechorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Pre-Chorus",
+      "text": "(Together)\nNo dictionary...\nNo explanation...\nJust the music...\nAnd the vibration...",
+      "lines": 5,
+      "startT": 106.8,
+      "endT": 113.44,
+      "bars": 4
+    },
+    {
+      "i": 7,
+      "id": "say-it-with-your-body::drop::7",
+      "kind": "drop",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Drop",
+      "text": "(Instrumental)\nDeep sub...\nCello...\nTiny sax response...\nBass wobble...\nStrings...\nBreathing...",
+      "lines": 7,
+      "startT": 113.44,
+      "endT": 116.4,
+      "bars": 2
+    },
+    {
+      "i": 8,
+      "id": "say-it-with-your-body::chorus-2::8",
+      "kind": "chorus",
+      "ordinal": 2,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus 2",
+      "text": "Say it with your body...\nCloser...\nSay it with your body...\nTighter...\nSay it with your body...\nMove me...\nSay it with your body...\nTouch me...\nSay it with your body, baby...\nJust say it with your body...",
+      "lines": 10,
+      "startT": 116.4,
+      "endT": 163.59,
+      "bars": 27
+    },
+    {
+      "i": 9,
+      "id": "say-it-with-your-body::bridge::9",
+      "kind": "bridge",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Bridge",
+      "text": "(Female)\nWhen the words don't reach...\n(Male)\nI'll meet you halfway...\n(Female)\nWhen the silence speaks...\n(Male)\nI'll feel what you say...\n(Together)\nFrom Brooklyn...\nTo Manila...\nTo Lagos...\nTo Saigon...\nEvery heartbeat...\nSpeaks the same...",
+      "lines": 15,
+      "startT": 163.59,
+      "endT": 190.07,
+      "bars": 15
+    },
+    {
+      "i": 10,
+      "id": "say-it-with-your-body::chorus::10",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Final Chorus",
+      "text": "Say it with your body...\nSlowly...\nSay it with your body...\nHold me...\nSay it with your body...\nShow me...\nSay it with your body...\nKnow me...\nSay it with your body, baby...\nMake me feel...\nEvery little heartbeat...\nSay it with your body...\nJust...\nSay it with your body...",
+      "lines": 14,
+      "startT": 190.07,
+      "endT": 222.55,
+      "bars": 18
+    },
+    {
+      "i": 11,
+      "id": "say-it-with-your-body::outro::11",
+      "kind": "outro",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Outro",
+      "text": "(Female whisper over fading cello and sub-bass)\nYou never had to say a word...\nI heard you...",
+      "lines": 3,
+      "startT": 222.55,
+      "endT": 249.08,
+      "bars": 15
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "bridge",
+    "chorus",
+    "drop",
+    "intro",
+    "other",
+    "outro",
+    "prechorus",
+    "verse"
+  ]
+}

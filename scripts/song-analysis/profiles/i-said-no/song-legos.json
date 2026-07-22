@@ -1,0 +1,112 @@
+{
+  "v": 1,
+  "id": "i-said-no",
+  "title": "I Said No!",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:12:10.785Z",
+  "duration": 126.96,
+  "style": {
+    "styleSentence": "A gritty 90s East Coast boom bap track running at roughly 108 BPM featuring dusty drums with hard snare cracks and a foghorn bass line that mimics an upright bass stab, layered over a dark A minor piano loop and muted trumpet to create a sinister yet rubber-hose animated vibe reminiscent of black-and-white 1920s dockside cartoons.",
+    "genre": "Gangsta Rap",
+    "subGenres": [
+      "Boom Bap",
+      "Hardcore Hip Hop",
+      "Cartoon Noir"
+    ],
+    "mood": "grimy, playful-dangerous, cinematic, sinister-fun",
+    "vocalStyle": "Aggressive male rap duo with raspy street vocals utilizing call-and-response ad-libs",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 108,
+    "bpmExact": 107.67,
+    "key": "A",
+    "mode": "minor",
+    "keyConfidence": 0.644,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#181808",
+      "#282818",
+      "#180808"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "i-said-no::verse::0",
+      "kind": "verse",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse",
+      "text": "So, they call me Big G with the capital G\nI said, \"Step into my crib and check my hundred-inch TV\"\nI got the Rolly with the ice, keep it on the freeze\nAnd I know they ain't got it like this overseas\nHe said, \"Ooh, I like your car\"\nAnd he said, \"Oh, I like your chain\"\nAnd he said, \"Damn, I like your shoes\"\nHe said, \"Yo, Big G, can I ride with you?\"",
+      "lines": 8,
+      "startT": 1.12,
+      "endT": 27.6,
+      "bars": 12
+    },
+    {
+      "i": 1,
+      "id": "i-said-no::chorus::1",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "And I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"",
+      "lines": 4,
+      "startT": 27.6,
+      "endT": 44.24,
+      "bars": 7
+    },
+    {
+      "i": 2,
+      "id": "i-said-no::verse::2",
+      "kind": "verse",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Verse",
+      "text": "So, they call me Big G with the capital G\nI said, \"Step into my crib and check my hundred-inch TV\"\nI got the Rolly with the ice, keep it on the freeze\nAnd I know they ain't got it like this overseas\nHe said, \"Ooh, I like your car\"\nAnd he said, \"Oh, I like your chain\"\nAnd he said, \"Damn, I like your shoes\"\nHe said, \"Yo, Big G, can I ride with you?\"",
+      "lines": 8,
+      "startT": 44.24,
+      "endT": 71.04,
+      "bars": 12
+    },
+    {
+      "i": 3,
+      "id": "i-said-no::chorus::3",
+      "kind": "chorus",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "Chorus",
+      "text": "And I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"\nAnd I said, \"No\"",
+      "lines": 8,
+      "startT": 71.04,
+      "endT": 126.96,
+      "bars": 25
+    }
+  ],
+  "signature": [],
+  "provides": [
+    "chorus",
+    "verse"
+  ]
+}

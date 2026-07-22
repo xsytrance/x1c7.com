@@ -1,0 +1,185 @@
+{
+  "v": 1,
+  "id": "one-tap-away",
+  "title": "One Tap Away",
+  "artist": null,
+  "generatedAt": "2026-07-09T18:23:54.641Z",
+  "duration": 195.64,
+  "style": {
+    "styleSentence": "A mid-tempo (96 BPM) A# minor track blending organic drums and brass with atmospheric synths to create a moody, late-night vibe that critiques modern social connectivity.",
+    "genre": "Hip Hop",
+    "subGenres": [
+      "Pop Rap",
+      "Conscious Hip Hop"
+    ],
+    "mood": "melancholic, reflective, digital-isolation, introspective",
+    "vocalStyle": "conversational, emotive, layered harmonies",
+    "energy": "medium",
+    "language": "English",
+    "bpm": 96,
+    "bpmExact": 95.7,
+    "key": "A#",
+    "mode": "minor",
+    "keyConfidence": 0.853,
+    "palette": [
+      "#080808",
+      "#181818",
+      "#181808",
+      "#282828",
+      "#282818"
+    ]
+  },
+  "sections": [
+    {
+      "i": 0,
+      "id": "one-tap-away::other::0",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "singer A",
+      "text": "Yeah\none tap away\nbut somehow everybody far now\nuh\ncheck it\nBack-back when the screen made the room glow\nI thought the whole world would move close\nold names popping up like whoa though\nmiddle school faces in a new post\nI thought we’d talk-talk, really get honest\ndrop the mask, no fake persona\nfind your tribe, find your people\nmake the whole cold world feel warmer\nAds in the cracks, brands in the chat\neverybody got stats, everybody wants claps\neverybody got reach but don’t reach back\nhow we got this close and lost contact?",
+      "lines": 17,
+      "startT": 2.48,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 1,
+      "id": "one-tap-away::other::1",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "transition",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 45.28,
+      "bars": null
+    },
+    {
+      "i": 2,
+      "id": "one-tap-away::other::2",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "singer B",
+      "text": "You can see me in a second\nYou can call me any day\nYou can love me in private\nBut scroll right past my name\nFunny how we got connected\nThen forgot how to stay\nYou're right there in my pocket\nBut you feel a world away\nOne tap away (one tap away)\nFrom a real conversation but we don't say a thing\nWe're one tap away\nFrom \"I see you keep going\" from \"I'm proud of your dream\"\nSave your likes for the strangers\nSave your hearts for the stars\nBut the ones who really know you act like loving you is hard\nOne tap away\nSo why do I feel alone in a room full of names?\nTap, tap, but you don't reach back\nHeart, heart, but it don't feel like that\nClose, close, close, but we don't connect\nOne tap away and we still forget\nClick, click, click, everybody got a new rule\nDon't hype friends that ain't cool, cool\nSave that love for the big names\nBlue checks, big chains, big views\nThen if a stranger blow up overnight\nEverybody swear they saw the light\nSame ones quiet when you need a fire\nNow they in the comments like \"that's my guy\"",
+      "lines": 29,
+      "startT": 45.28,
+      "endT": null,
+      "bars": null
+    },
+    {
+      "i": 3,
+      "id": "one-tap-away::other::3",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "transition",
+      "text": "",
+      "lines": 0,
+      "startT": null,
+      "endT": 121.92,
+      "bars": null
+    },
+    {
+      "i": 4,
+      "id": "one-tap-away::other::4",
+      "kind": "other",
+      "ordinal": null,
+      "voice": {
+        "gender": null,
+        "group": null,
+        "spoken": null,
+        "descriptor": null
+      },
+      "raw": "singer A",
+      "text": "We one tap away\none tap away\nfrom a real conversation\nbut we don’t say a thing\nSave your likes for the strangers\nsave your hearts for the stars\nbut the ones who really know you\nact like loving you is hard\nMaybe I was young\nthinking wires could heal us\nthinking all this light\nwould finally reveal us\nI’m not hard to find\nI’m not far away\nI’m still right here\none tap away\nWe one tap away\none tap away\nso why do I feel alone\nin a room full of names?\none tap away\nand still so far\neverybody online\nnobody where you are",
+      "lines": 24,
+      "startT": 121.92,
+      "endT": 195.64,
+      "bars": 29
+    }
+  ],
+  "signature": [
+    {
+      "word": "tap",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-4-word-portrait.webp",
+      "line": "Yeah one tap away",
+      "t": 4.644,
+      "recipe": "4-word-portrait"
+    },
+    {
+      "word": "move",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "recipe": "5-word-portrait"
+    },
+    {
+      "word": "fire",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "recipe": "6-word-portrait"
+    },
+    {
+      "word": "light",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "recipe": "4-neon-sign"
+    },
+    {
+      "word": "glow",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s10-3-neon-sign.webp",
+      "line": "check it Backback when the screen made the room glow I thought the whole world would move close",
+      "t": 17.183,
+      "recipe": "3-neon-sign"
+    },
+    {
+      "word": "cold",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-5-word-portrait.webp",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "recipe": "5-word-portrait"
+    },
+    {
+      "word": "heart",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 94.285,
+      "recipe": "1-photo"
+    },
+    {
+      "word": "save",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 76.72,
+      "recipe": "3-neon-sign"
+    }
+  ],
+  "provides": [
+    "other"
+  ]
+}
