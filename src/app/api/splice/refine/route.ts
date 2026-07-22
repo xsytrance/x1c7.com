@@ -15,7 +15,9 @@ export const runtime = "nodejs";
 // ═══════════════════════════════════════════════════════════════════════════
 
 const OLLAMA = process.env.SPLICE_OLLAMA_HOST || "http://127.0.0.1:11434";
-const MODEL = process.env.SPLICE_OLLAMA_MODEL || "qwen3:14b";
+// A fast instruct model that doesn't emit reasoning tokens (which fight
+// format:json and blow the timeout). Override with SPLICE_OLLAMA_MODEL.
+const MODEL = process.env.SPLICE_OLLAMA_MODEL || "llama3.1:8b";
 
 export async function POST(req: NextRequest) {
   let body: { compiled?: Compiled };
@@ -45,7 +47,7 @@ export async function POST(req: NextRequest) {
         options: { temperature: 0.7 },
         messages: [{ role: "system", content: sys }, { role: "user", content: user }],
       }),
-      signal: AbortSignal.timeout(30000),
+      signal: AbortSignal.timeout(60000),
     });
     if (!r.ok) return NextResponse.json({ error: `local model unavailable (${r.status}) — deterministic prompt still works` }, { status: 200 });
     const data = await r.json();
