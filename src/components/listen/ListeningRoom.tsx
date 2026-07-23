@@ -101,7 +101,7 @@ export function ListeningRoom({ slug }: { slug: string }) {
         <p className="mt-2 rounded-lg border border-amber-500/30 bg-amber-500/5 px-3 py-2 font-mono text-[11px] leading-5 text-amber-300/90">
           ⚠ stem analysis covers only {Math.round(bundle.coverage * 100)}% of this song
           (ends at {fmtTime(bundle.stemsTo ?? 0)} of {fmtTime(bundle.duration ?? 0)}).
-          <span className="text-zinc-500"> The hatched region is unmeasured, not silent — the melodic contour, which comes from a separate pipeline, still runs to the end. Anything reading senses.json (dossier anatomy, Kinetica stem visuals) is blind there too.</span>
+          <span className="text-zinc-500"> The hatched region is unmeasured, not silent. Cause found: libsndfile silently truncated Suno&apos;s malformed-header MP3s during analysis — fixed in analyze_stems.py (2026-07-22), but this song still needs re-analysis to fill in. Until then anything reading senses.json (dossier anatomy, Kinetica stem visuals) is blind there too.</span>
         </p>
       )}
 

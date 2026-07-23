@@ -13,7 +13,7 @@ engine performs from. Everything is measured, nothing guessed:
 
 Usage: analyze_stems.py --stems <dir> --release <audio.mp3> --out stems.json
 """
-import argparse, json, os, sys
+import argparse, json, os, subprocess, sys, tempfile
 import numpy as np
 import librosa
 
@@ -24,7 +24,25 @@ ENV_HZ = 12.5
 def log(*a): print(*a, file=sys.stderr, flush=True)
 
 def load(path, sr=SR):
-    y, _ = librosa.load(path, sr=sr, mono=True)
+    """Decode via ffmpeg — libsndfile silently truncates Suno MP3s/M4As.
+
+    Suno's stem/release MP3s carry malformed VBR headers (ffprobe's
+    header-estimated duration is wildly wrong: 814s for a 203s file).
+    libsndfile — which librosa.load uses via soundfile — stops decoding early
+    on them: it returned 119.37s of a file ffmpeg decodes to 202.80s. Every
+    analysis built on that read roughly the first ~64% of the song and
+    zero-padded the rest, which looked exactly like a quiet outro.
+
+    analyze_melody.py already decoded through ffmpeg for this reason; this is
+    that same fix, back-ported. analyze_audio.py imports this loader too, so
+    key/brightness/dynamics/boundaries are covered by the same change.
+    """
+    with tempfile.NamedTemporaryFile(suffix=".wav") as tmp:
+        subprocess.run(
+            ["ffmpeg", "-y", "-v", "error", "-i", path, "-ac", "1", "-ar", str(sr), tmp.name],
+            check=True,
+        )
+        y, _ = librosa.load(tmp.name, sr=sr, mono=True)
     return y
 
 def envelope(y, sr=SR, hz=ENV_HZ):
