@@ -1407,3 +1407,37 @@ render). `lint --max-warnings=0` was already red before this session. Candidate 
 **Next (Phase 2.1):** build `freeze/melt/carve` components (close the drift), add Met +
 NASA photo sources, add the "never blank" photo fallback chain.
 </content>
+
+## 2026-07-24 — Directed cuts, the pixel-clock rig, and four songs re-analysed
+
+**The Mode Conductor (engine).** `dynamicPlus.modes` gives a show a TIMED
+phrase↔dynamic schedule, run inside `KineticStage` (250ms conductor poll, like
+acts). Every switch fires a one-shot tape-warp (`stage-modewarp` /
+`stage-warpflash` in globals.css — composable scale/translate/filter, never the
+transform shorthand). `dynamicPlus.scene` pins a backdrop world per song.
+Studio embed grew the acts conductor + billing chip + `?t=` start-seek.
+
+**New word FX**: `chop` (DJ re-trigger slices, built for sub-0.5s stutter
+airtimes) and `drip` (the word STAYS — sheen sweep + falling beads). New
+backdrop scene **SYRUP** (chopped & screwed world) — pin-only; `AUTO_POOL`
+stays 3 so no existing song's world reshuffles.
+
+**The pixel-clock render rig** (`scripts/perf/render-cut.mjs`): records the
+embed stage on the real GPU; every frame carries its own timestamp painted in
+pixels (audio ms as binary cells, same rAF the engine draws in), decoded back
+per frame, strip cropped from output, audio cut sample-accurately, 60fps out,
+plus a closed-loop VERIFY that decodes the finished timeline's residual A/V
+error. Why: CDP screencast timestamps measured 180–580ms ahead of content
+(varies per run) — the owner heard it as "lyrics ahead of the audio". Shipped
+cuts verify at 9–11ms median. `--both` renders 16:9 + native 9:16 per the
+both-aspects rule. Playbook: `docs/VIDEO-RENDER-PLAYBOOK.md`.
+
+**Four directed 60s cuts** (each with a distinct scene-art voice, per the
+illustrate-the-scene law): Summer Drip (purple-gold comic noir), Different
+This Summer (coral sunrise comic), Fast Enough (16-bit pixel + cars), and
+Cocktails && Code ('80s airbrush chrome/glass). Per song: full offline
+re-analysis (the stem-truncation fix finally applied — beats now reach the
+true end), hand-authored dynamic-plus (acts/modes/words/scene), scene
+paintings per lyric line wired via `planet.assets.keywords` +
+`assets.sections`, gallery.json variant pools emptied (they bypass keyword
+art replacements — backups in each profile's `pre-refix-backup/`).

@@ -79,3 +79,9 @@ scripts/lexicon/.night-current.log
 # Splice Table — CLI scratch outputs (regenerate with compile.mjs / splice.mjs)
 scripts/song-analysis/*.compiled.json
 scripts/song-analysis/*.flow.json
+
+# directed-cut render artifacts (masters/shares live in the profile dirs, not git)
+scripts/song-analysis/profiles/*/*-60*.mp4
+scripts/song-analysis/profiles/*/.render-*/
+scripts/song-analysis/profiles/*/pre-refix-backup/
+scripts/song-art/*-out/
