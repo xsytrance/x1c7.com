@@ -1,37 +1,29 @@
 {
   "v": 1,
-  "mode": "full",
+  "mode": "audio-only",
   "id": "different-this-summer",
-  "generatedAt": "2026-07-09T17:21:16.548Z",
+  "generatedAt": "2026-07-24T00:41:31.748Z",
   "measured": {
     "bpm": 123.05,
     "duration": 304.92
   },
   "identity": {
-    "styleSentence": "A warm, breezy Deep House track at 123 BPM featuring smooth male rap verses over gospel-pop inspired female group harmonies, driven by organic drums and lush synth pads with a confident, optimistic vibe.",
-    "energy": "medium",
-    "vocalStyle": "Smooth melodic rap alternating with layered soulful female group vocals",
-    "language": "English",
     "title": "Different This Summer",
     "titleAlternates": [],
     "genre": "Deep House",
     "subGenres": [
-      "Hip-Hop Soul",
-      "Sung-Rap",
-      "Gospel Pop"
+      "Vocal House",
+      "Progressive House",
+      "Pop-Rap",
+      "R&B"
     ],
-    "mood": "warm, optimistic, breezy, confident"
+    "mood": "Feel-good, motivational",
+    "styleSentence": "A 123 BPM deep house track with a hip-hop groove, featuring a smooth male rap verse, catchy female group vocal hook, warm Rhodes chords, deep sub-bass, 808 snare drums, and breezy percussion, evoking a beach sunset vibe with glossy 2000s R&B polish.",
+    "language": "English",
+    "energy": "medium",
+    "vocalStyle": "Smooth melodic male rap (sung rap) with catchy female group vocal hook"
   },
-  "cover": {
-    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/different-this-summer/cover.jpeg",
-    "palette": [
-      "#083858",
-      "#180808",
-      "#080808",
-      "#280808",
-      "#381808"
-    ]
-  },
+  "cover": null,
   "mixFeatures": {
     "keyEstimate": {
       "key": "A#",
@@ -48,283 +40,496 @@
       242.14,
       248.64
     ],
-    "brightness": 3191.8,
-    "dynamicsDb": 12
+    "brightness": 3196.8,
+    "dynamicsDb": 12.1
   },
   "lyrics": {
     "official": true,
     "language": "english",
-    "text": "[Intro]\nYeah\nUh\nSun coming up like it knows something\nThis summer feel different already\nCome on\n\n[Female Group Vocals]\nOoh, we been waiting on the light\nOoh, we gon’ get it right\nOoh, no more losing time\nThis summer, this summer\n\n[Verse 1 - Male Smooth Rap]\nSame desk, same chair, same old ceiling\nBoss man talking, but I lost that feeling\nTwo weeks off if the stars line up\nBut the flight costs more than the whole damn check\n\nEverybody saying hold on, stay safe\nClock keep eating up another good day\nI used to let July just slide right by\nLike the sun was free but it wasn’t mine\n\nScrolling on the phone while the world got loud\nEverybody building, I was sitting in doubt\nHeard all that AI talk, thought it wasn’t for me\nNow I’m looking at the wave like wait, that’s a key\n\nNo suitcase yet, but the plan got motion\nLaptop open with a rum by the ocean\nNot there now, but I see that scene\nGotta build that life before I live that dream\n\n[Pre-Chorus - Female Group Vocals]\nWe don’t wanna waste no weather\nWe don’t wanna wait forever\nOne more spark and we come alive\nOne more step and we change the vibe\n\n[Chorus - Female Group Vocals]\nThis summer gon’ be different\nWe ain’t letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon’ be different\nNo more waiting on someday\nWe gon’ learn a little something\nWe gon’ build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon’ be different\nDifferent, different, different\nThis summer gon’ be different\nAnd I’m different too\n\n[Post-Chorus - Female Group Vocals]\nNa na na, we outside\nBut the mind on overdrive\nNa na na, feel that heat\nNew world under my feet\n\n[Verse 2 - Male Smooth Rap]\nI ain’t tryna be another tired face\nCounting down Friday like an escape\nI want Monday feeling like my own damn lane\nNot a locked up loop with a different name\n\nSo I’m diving in, no perfect start\nNo fancy degree, just a hungry heart\nPrompt by prompt, I’m learning the flow\nAsk better questions, watch better doors show\n\nBuild me a bot, build me a site\nBuild me a plan for a better life\nAutomate the boring, sharpen the brain\nTurn small sparks into summer rain\n\nEverybody wants the beach with no pressure\nCold drink, clean sky, time you can measure\nBut that kind of peace don’t fall from blue\nYou gotta make the machine start working for you\n\nFocus in the morning, rhythm at night\nDiscipline dancing with neon lights\nWill in my chest, hunger in my shoes\nThis ain’t motivation, this is something to prove\n\n[Pre-Chorus - Female Group Vocals]\nWe don’t wanna waste no weather\nWe don’t wanna wait forever\nOne more spark and we come alive\nOne more step and we change the vibe\n\n[Chorus - Female Group Vocals]\nThis summer gon’ be different\nWe ain’t letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon’ be different\nNo more waiting on someday\nWe gon’ learn a little something\nWe gon’ build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon’ be different\nDifferent, different, different\nThis summer gon’ be different\nAnd I’m different too\n\n[Bridge - Female Lead with Group Harmonies]\nImagine no alarm with a panic in it\nNo boss in your head every single minute\nJust waves, good friends, and the room to breathe\nBut first we plant the seed\n\nImagine that view with your name on it\nThat little idea with flame on it\nNot chasing luck, we make it move\nWe make it move, we make it move\n\n[Rap Bridge - Male]\nYeah\nI used to say I’m stuck, now I say I’m loading\nUsed to watch the door, now the code is opening\nUsed to call it noise, now I hear the signal\nLittle by little, the vision gets official\n\nNo more sleepwalking through the sunshine\nNo more waiting for the right time\nThis is the right time, right here\nCold drink, clear mind, new gear\n\n[Final Chorus - Female Group Vocals + Male Ad-libs]\nThis summer gon’ be different\nWe ain’t letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon’ be different\nNo more waiting on someday\nWe gon’ learn a little something\nWe gon’ build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon’ be different\nDifferent, different, different\nThis summer gon’ be different\nAnd I’m different too\n\n[Outro - Female Group Vocals]\nOoh, we been waiting on the light\nOoh, we gon’ get it right\nOoh, no more losing time\nThis summer, this summer\n\n[Male Spoken Outro]\nYeah\nSame sun\nNew me",
-    "lrc": "[Intro]\n[00:00.00] Ooh,\n[00:00.94] yeah\n[00:03.83] Uh, the sun comin' up like it know something\n[00:08.43] This summer feel different already\n[00:10.40] Come on\n[00:13.04] Ooh,\n[00:13.92] mm-mm-mm\n[00:15.60] We been waitin' on the light\n[00:20.74] We gon' get it right\n[00:23.62] No more losin' time\n[00:25.82] This summer\n[00:27.32] This summer\n[Verse 1]\n[00:29.96] Yeah, yeah, yeah, yeah, yeah\n[00:32.22] Same desk, same chair, same old ceiling\n[00:34.46] Boss man talkin', but I lost that feelin'\n[00:36.50] Two weeks off, if the stars line up\n[00:38.32] But the flight cost more than the whole damn check\n[00:40.20] Everybody sayin', hold on, stay safe\n[00:42.26] Clock keep beatin' up another good day\n[00:44.08] I used to let you lie, just slide right by\n[00:45.96] Like the sun was free, but it wasn't mine\n[00:48.16] Scrollin' on the phone while the world got loud\n[00:49.90] Everybody buildin', I was sittin' in doubt\n[00:51.80] Heard all that A.I.\n[00:52.64] talk, thought it wasn't for me\n[00:53.70] Now I'm lookin' at the wave like,\n[00:55.02] wait,\n[00:55.24] that's a key\n[00:55.68] No suitcase yet, but the plane got motion\n[Pre-Chorus]\n[00:57.72] Laptop open with a rumble\n[00:59.18] I'm by the ocean,\n[00:59.82] not there now,\n[01:00.60] but I see that scene\n[01:01.48] Gotta build that life before I leave that dream\n[Chorus]\n[01:03.46] We don't wanna waste no weather\n[01:07.47] We don't wanna wait forever\n[01:10.89] One more spark and we come alive\n[01:14.86] One more step and we change the vibe\n[01:18.56] This summer gon' be different\n[01:21.04] We ain't need fade away\n[01:22.72] Got the sun on our shoulders\n[01:24.82] Got a friend who gave me flame\n[01:26.66] This summer gon' be different\n[01:29.18] One more waitin' on some day\n[01:30.54] We gon' learn a little something\n[01:32.54] We gon' build our own way\n[01:35.02] Pour it up, let it breathe\n[01:36.42] Palm trees and the fantasy\n[01:37.98] But we workin' while it glows\n[01:40.34] So the future feels easy\n[01:43.62] This summer gon' be different\n[01:45.26] Different, different, different\n[01:46.74] This summer gon' be different\n[01:49.04] And I'm different too\n[01:50.36] Na-na-na-na-na-na-na\n[01:52.28] We outside\n[01:53.37] Na-na-na-na-na-na-na\n[01:56.12] But the mind don't know the drive\n[01:58.27] Na-na-na-na-na-na-na\n[Post-Chorus]\n[01:59.18] Na-na-na-na-na-na-na\n[02:00.34] Feel that heat\n[02:01.50] Ooh,\n[02:02.94] new world under my feet\n[02:05.04] I ain't tryna be an appetite face\n[02:06.82] Calm down Friday like an escape\n[02:08.60] But one Monday feelin' like my own damn lane\n[02:10.62] Not a locked up loop with a different name\n[02:12.54] So I'm divin' in, no perfect start\n[02:14.46] No fancy degree, just a hungry heart\n[02:16.50] Prompt by prompt, I'm learnin' the flow\n[02:18.22] Ask better questions, watch better door show\n[02:20.33] Build me a buy, build me a site\n[02:22.24] Build me a plan for a better life\n[02:24.20] Automate the boring, sharpen the brain\n[02:26.16] Turn small sparks into summer rain\n[02:28.04] Everybody wants to be a star in the sky\n[02:29.18] On the beach with no pressure code\n[02:30.18] Drank clean sky time, you can measure\n[02:31.84] But that kind of beast don't fall from blue\n[02:33.74] You gotta make the machine start workin' for you\n[02:35.66] Focus in the morning, rhythm at night\n[02:37.72] Discipline wasn't with me on life\n[02:39.64] Will in my chest, hunger in my shoes\n[02:41.52] The same motivation, this is somethin' to prove\n[02:43.46] We don't wanna waste no weather\n[02:47.48] We don't wanna wait forever\n[02:51.52] One more spark and we come alive\n[02:55.18] One more step and we change the vibe\n[02:58.22] This is the time to be a star in the sky\n[02:59.18] This summer gon' be different\n[Verse 2]\n[03:00.54] We ain't lettin' it fade away\n[03:03.60] Got the sun on our shoulders\n[03:05.24] Got a brand new bling to slay\n[03:07.08] This summer gon' be different\n[03:09.12] Number waitin' on some day\n[03:10.94] Gon' learn a little somethin'\n[03:13.06] We gon' build our own way\n[03:15.37] Pour it up, up, let it breathe\n[03:17.29] Palm trees in the fantasy\n[03:18.32] But we workin' while it glows\n[03:20.70] So the future feels easy\n[Pre-Chorus]\n[03:23.96] This summer gon' be different\n[03:25.64] Different, different, different\n[03:27.02] Uh\n[03:27.44] This summer gon' be different\n[03:29.16] And I'm different too\n[03:30.66] Imagine all along with a panic\n[Chorus]\n[03:32.22] And ain't no boss in your head every single minute\n[03:34.50] Just waste good friends in the room to breathe\n[03:36.48] But first we plant the seed\n[03:38.40] Imagine that view with your name on it\n[03:40.26] That little idea with flame on it\n[03:42.20] Not chasing luck, we make it move\n[03:44.08] We make it move\n[03:45.02] I used to say I'm stuck, now I say I'm loaded\n[03:47.55] Used to watch the door, now the code is opening\n[03:49.40] Used to call the noise, now I hear the signal\n[03:51.08] Little by little the vision gets official\n[03:52.96] No more sleep walking through the sunshine\n[03:57.12] No more waiting for the right time\n[03:59.88] Yeah, this is the right time\n[04:01.00] Right here\n[04:04.86] Cold dream, clear mind, new gear\n[04:07.28] This summer gon' be different\n[Bridge]\n[04:10.54] We letting it fade away\n[04:12.40] Got the sun on our shoulders\n[04:14.48] Got a brand new game to swing\n[04:16.28] This summer gon' be different\n[04:17.52] No more waiting on someday\n[04:19.00] We gon' learn a little something\n[04:22.10] We gon' build our own way\n[04:24.55] Put up\n[04:24.90] Woo\n[04:25.08] Woo\n[04:25.38] Woo\n[04:25.48] Let it breathe\n[04:25.88] Woo\n[04:26.38] Palm trees in the fantasy\n[04:27.54] But we working while it glows\n[04:29.86] So the future feels easy\n[04:32.24] This summer gon' be different\n[04:34.74] Different, different, different\n[04:36.10] This summer gon' be different\n[04:38.50] And I'm different too\n[04:41.28] We\n[04:42.57] been waiting on the light\n[04:44.37] We gon'\n[04:47.18] get it right\n[04:50.38] No more losing sight\n[04:51.76] This summer\n[04:53.28] This summer\n[04:54.24] Yeah\n[04:54.78] This summer\n[04:56.62] Scythes One\n[04:58.28] New me\n[04:59.78] Woo\n[05:01.96] Woo\n[05:02.56] Woo\n[05:02.72] Woo\n[05:03.10] Jest\n"
+    "text": "[Intro]\nYeah\nUh\nSun coming up like it knows something\nThis summer feel different already\nCome on\n\n[Female Group Vocals]\nOoh, we been waiting on the light\nOoh, we gon' get it right\nOoh, no more losing time\nThis summer, this summer\n\n[Verse 1 - Male Smooth Rap]\nSame desk, same chair, same old ceiling\nBoss man talking, but I lost that feeling\nTwo weeks off if the stars line up\nBut the flight costs more than the whole damn check\n\nEverybody saying hold on, stay safe\nClock keep eating up another good day\nI used to let July just slide right by\nLike the sun was free but it wasn't mine\n\nScrolling on the phone while the world got loud\nEverybody building, I was sitting in doubt\nHeard all that AI talk, thought it wasn't for me\nNow I'm looking at the wave like wait, that's a key\n\nNo suitcase yet, but the plan got motion\nLaptop open with a rum by the ocean\nNot there now, but I see that scene\nGotta build that life before I live that dream\n\n[Pre-Chorus - Female Group Vocals]\nWe don't wanna waste no weather\nWe don't wanna wait forever\nOne more spark and we come alive\nOne more step and we change the vibe\n\n[Chorus - Female Group Vocals]\nThis summer gon' be different\nWe ain't letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon' be different\nNo more waiting on someday\nWe gon' learn a little something\nWe gon' build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon' be different\nDifferent, different, different\nThis summer gon' be different\nAnd I'm different too\n\n[Post-Chorus - Female Group Vocals]\nNa na na, we outside\nBut the mind on overdrive\nNa na na, feel that heat\nNew world under my feet\n\n[Verse 2 - Male Smooth Rap]\nI ain't tryna be another tired face\nCounting down Friday like an escape\nI want Monday feeling like my own damn lane\nNot a locked up loop with a different name\n\nSo I'm diving in, no perfect start\nNo fancy degree, just a hungry heart\nPrompt by prompt, I'm learning the flow\nAsk better questions, watch better doors show\n\nBuild me a bot, build me a site\nBuild me a plan for a better life\nAutomate the boring, sharpen the brain\nTurn small sparks into summer rain\n\nEverybody wants the beach with no pressure\nCold drink, clean sky, time you can measure\nBut that kind of peace don't fall from blue\nYou gotta make the machine start working for you\n\nFocus in the morning, rhythm at night\nDiscipline dancing with neon lights\nWill in my chest, hunger in my shoes\nThis ain't motivation, this is something to prove\n\n[Pre-Chorus - Female Group Vocals]\nWe don't wanna waste no weather\nWe don't wanna wait forever\nOne more spark and we come alive\nOne more step and we change the vibe\n\n[Chorus - Female Group Vocals]\nThis summer gon' be different\nWe ain't letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon' be different\nNo more waiting on someday\nWe gon' learn a little something\nWe gon' build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon' be different\nDifferent, different, different\nThis summer gon' be different\nAnd I'm different too\n\n[Bridge - Female Lead with Group Harmonies]\nImagine no alarm with a panic in it\nNo boss in your head every single minute\nJust waves, good friends, and the room to breathe\nBut first we plant the seed\n\nImagine that view with your name on it\nThat little idea with flame on it\nNot chasing luck, we make it move\nWe make it move, we make it move\n\n[Rap Bridge - Male]\nYeah\nI used to say I'm stuck, now I say I'm loading\nUsed to watch the door, now the code is opening\nUsed to call it noise, now I hear the signal\nLittle by little, the vision gets official\n\nNo more sleepwalking through the sunshine\nNo more waiting for the right time\nThis is the right time, right here\nCold drink, clear mind, new gear\n\n[Final Chorus - Female Group Vocals + Male Ad-libs]\nThis summer gon' be different\nWe ain't letting it fade away\nGot the sun on our shoulders\nGot a brand new game to play\n\nThis summer gon' be different\nNo more waiting on someday\nWe gon' learn a little something\nWe gon' build our own way\n\nPour it up, let it breathe\nPalm trees in the fantasy\nBut we working while it glows\nSo the future feels easy\n\nThis summer gon' be different\nDifferent, different, different\nThis summer gon' be different\nAnd I'm different too\n\n[Outro - Female Group Vocals]\nOoh, we been waiting on the light\nOoh, we gon' get it right\nOoh, no more losing time\nThis summer, this summer\n\n[Male Spoken Outro]\nYeah\nSame sun\nNew me",
+    "lrc": "[Intro]\n[00:00.00] Ooh,\n[00:00.96] yeah\n[00:03.85] Uh, the sun comin' up like it know something\n[00:08.45] This summer feel different already\n[00:10.42] Come on\n[00:13.06] Ooh,\n[00:13.94] mm-mm-mm\n[00:15.62] We been waitin' on the light\n[00:20.76] We gon' get it right\n[00:23.64] No more losin' time\n[00:25.84] This summer\n[00:27.34] This summer\n[00:29.98] Yeah, yeah, yeah, yeah, yeah\n[00:32.24] Same desk, same chair, same old ceiling\n[Verse 1]\n[00:34.48] Boss man talkin', but I lost that feelin'\n[00:36.52] Two weeks off, if the stars line up\n[00:38.34] But the flight cost more than the whole damn check\n[00:40.22] Everybody sayin', hold on, stay safe\n[00:42.28] Clock keep beatin' up another good day\n[00:44.10] I used to let you lie, just slide right by\n[00:45.98] Like the sun was free, but it wasn't mine\n[00:48.18] Scrollin' on the phone while the world got loud\n[00:49.92] Everybody buildin', I was sittin' in doubt\n[00:51.82] Heard all that A.I.\n[00:52.66] talk, thought it wasn't for me\n[00:53.72] Now I'm lookin' at the wave like,\n[00:55.04] wait,\n[00:55.26] that's a key\n[00:55.70] No suitcase yet, but the plane got motion\n[00:57.74] Laptop open with a rumble\n[00:59.20] I'm by the ocean,\n[00:59.84] not there now,\n[01:00.62] but I see that scene\n[01:01.50] Gotta build that life before I leave that dream\n[01:03.48] We don't wanna waste no weather\n[Pre-Chorus]\n[01:07.49] We don't wanna wait forever\n[01:10.91] One more spark and we come alive\n[01:14.88] One more step and we change the vibe\n[01:18.58] This summer gon' be different\n[Chorus]\n[01:21.06] We ain't need fade away\n[01:22.74] Got the sun on our shoulders\n[01:24.84] Got a friend who gave me flame\n[01:26.68] This summer gon' be different\n[01:29.20] One more waitin' on some day\n[01:30.56] We gon' learn a little something\n[01:32.56] We gon' build our own way\n[01:35.04] Pour it up, let it breathe\n[01:36.44] Palm trees and the fantasy\n[01:38.00] But we workin' while it glows\n[01:40.36] So the future feels easy\n[01:43.64] This summer gon' be different\n[01:45.28] Different, different, different\n[01:46.76] This summer gon' be different\n[01:49.06] And I'm different too\n[01:50.38] Na-na-na-na-na-na-na\n[01:52.30] We outside\n[01:53.39] Na-na-na-na-na-na-na\n[01:56.14] But the mind don't know the drive\n[01:58.29] Na-na-na-na-na-na-na\n[01:59.20] Na-na-na-na-na-na-na\n[02:00.36] Feel that heat\n[02:01.52] Ooh,\n[02:02.96] new world under my feet\n[02:05.06] I ain't tryna be an appetite face\n[02:06.84] Calm down Friday like an escape\n[02:08.62] But one Monday feelin' like my own damn lane\n[02:10.64] Not a locked up loop with a different name\n[02:12.56] So I'm divin' in, no perfect start\n[02:14.48] No fancy degree, just a hungry heart\n[02:16.52] Prompt by prompt, I'm learnin' the flow\n[02:18.24] Ask better questions, watch better door show\n[02:20.35] Build me a buy, build me a site\n[02:22.26] Build me a plan for a better life\n[02:24.22] Automate the boring, sharpen the brain\n[02:26.18] Turn small sparks into summer rain\n[02:28.06] Everybody wants to be a star in the sky\n[02:29.20] On the beach with no pressure code\n[02:30.20] Drank clean sky time, you can measure\n[02:31.86] But that kind of beast don't fall from blue\n[02:33.76] You gotta make the machine start workin' for you\n[02:35.68] Focus in the morning, rhythm at night\n[02:37.74] Discipline wasn't with me on life\n[02:39.66] Will in my chest, hunger in my shoes\n[02:41.54] The same motivation, this is somethin' to prove\n[02:43.48] We don't wanna waste no weather\n[02:47.50] We don't wanna wait forever\n[02:51.54] One more spark and we come alive\n[02:55.20] One more step and we change the vibe\n[02:58.24] This is the time to be a star in the sky\n[02:59.20] This summer gon' be different\n[Post-Chorus]\n[03:00.56] We ain't lettin' it fade away\n[03:03.62] Got the sun on our shoulders\n[03:05.26] Got a brand new bling to slay\n[03:07.10] This summer gon' be different\n[03:09.14] Number waitin' on some day\n[03:10.96] Gon' learn a little somethin'\n[03:13.08] We gon' build our own way\n[03:15.39] Pour it up, up, let it breathe\n[03:17.31] Palm trees in the fantasy\n[03:18.34] But we workin' while it glows\n[03:20.72] So the future feels easy\n[03:23.98] This summer gon' be different\n[03:25.66] Different, different, different\n[03:27.04] Uh\n[03:27.46] This summer gon' be different\n[03:29.18] And I'm different too\n[03:30.68] Imagine all along with a panic\n[Verse 2]\n[03:32.24] And ain't no boss in your head every single minute\n[03:34.52] Just waste good friends in the room to breathe\n[03:36.50] But first we plant the seed\n[03:38.42] Imagine that view with your name on it\n[Pre-Chorus]\n[03:40.28] That little idea with flame on it\n[03:42.22] Not chasing luck, we make it move\n[03:44.10] We make it move\n[03:45.04] I used to say I'm stuck, now I say I'm loaded\n[03:47.57] Used to watch the door, now the code is opening\n[03:49.42] Used to call the noise, now I hear the signal\n[03:51.10] Little by little the vision gets official\n[03:52.98] No more sleep walking through the sunshine\n[03:57.14] No more waiting for the right time\n[03:59.90] Yeah, this is the right time\n[04:02.02] Right here\n[Chorus]\n[04:04.88] Cold dream, clear mind, new gear\n[04:07.30] This summer gon' be different\n[Post-Chorus]\n[04:10.56] We letting it fade away\n[04:12.42] Got the sun on our shoulders\n[04:14.50] Got a brand new game to swing\n[04:16.30] This summer gon' be different\n[04:17.54] No more waiting on someday\n[04:20.02] We gon' learn a little something\n[04:22.12] We gon' build our own way\n[04:24.58] Put up\n[04:24.92] Woo\n[04:25.10] Woo\n[04:25.40] Woo\n[04:25.50] Let it breathe\n[04:25.90] Woo\n[04:26.40] Palm trees in the fantasy\n[04:27.56] But we working while it glows\n[04:29.88] So the future feels easy\n[04:32.26] This summer gon' be different\n[04:34.76] Different, different, different\n[04:36.12] This summer gon' be different\n[04:38.52] And I'm different too\n[04:41.30] We\n[04:42.59] been waiting on the light\n[04:44.39] We gon'\n[04:47.20] get it right\n[04:50.40] No more losing sight\n[04:51.78] This summer\n[04:53.30] This summer\n[04:54.26] Yeah\n[04:54.80] This summer\n[04:56.64] Scythes One\n[04:58.30] New me\n[04:59.80] Woo\n[05:01.98] Woo\n[05:02.58] Woo\n[05:02.74] Woo\n[05:03.12] Jest\n"
   },
   "analysis": {
-    "summary": "\"Different This Summer\" is a motivational anthem about transforming hesitation into action during summer break, blending deep house beats with hip-hop storytelling to advocate for building one's own path rather than waiting for external validation.",
-    "overallMood": "Optimistic Drive",
+    "summary": "The song 'Different This Summer' is an uplifting anthem of transformation and self-improvement, celebrating the potential for change and growth during the summer season. It blends deep house and hip-hop elements to reflect a journey of personal empowerment and motivation.",
+    "overallMood": "Feel-good, motivational, and hopeful",
     "themes": [
-      "Self-empowerment and agency",
-      "Overcoming procrastination",
-      "Transition from stagnation to action",
-      "Discipline amidst leisure"
+      "Self-improvement",
+      "Change",
+      "Empowerment",
+      "Summer transformation",
+      "Ambition",
+      "Personal growth"
     ],
     "palette": [
       "#FFD700",
-      "#2C3E50",
-      "#8B4513",
-      "#F0E68C"
+      "#00BFFF",
+      "#8A2BE2",
+      "#20B2AA"
     ],
     "sections": [
       {
-        "name": "Intro",
-        "emotion": "Anticipatory warmth and realization of a new beginning.",
-        "intensity": 0.5,
+        "section": "Intro",
+        "emotion": "Hopeful",
+        "intensity": 0.12,
         "colorHint": "#ffd700",
-        "imageryPrompt": "Golden hour sunlight breaking through palm fronds over the ocean horizon.",
         "start": 0
       },
       {
-        "name": "Verse 1",
-        "emotion": "Realistic introspection mixed with growing determination.",
+        "section": "Verse 1",
+        "emotion": "Reflective",
         "intensity": 0.69,
-        "colorHint": "#8b4513",
-        "imageryPrompt": "A cluttered office desk transitioning into a view of blue ocean waves and rising sun.",
-        "start": 29.96
+        "colorHint": "#00bfff",
+        "start": 34.48
       },
       {
-        "name": "Pre-Chorus",
-        "emotion": "Building tension between current reality and dream destination.",
-        "intensity": 0.88,
-        "colorHint": "#2c3e50",
-        "imageryPrompt": "A glowing laptop screen reflecting on rippling water with a silhouette of an airplane wing.",
-        "start": 57.72
-      },
-      {
-        "name": "Chorus",
-        "emotion": "Explosive confidence and collective energy.",
-        "intensity": 0.93,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "Vibrant beach party scene with people dancing under a massive setting sun.",
-        "start": 63.46
-      },
-      {
-        "name": "Post-Chorus",
-        "emotion": "Focused ambition and strategic planning.",
-        "intensity": 0.6,
-        "colorHint": "#8b4513",
-        "imageryPrompt": "Close up of hands typing on a keyboard with palm trees blurred in the background.",
-        "start": 119.18
-      },
-      {
-        "name": "Verse 2",
-        "emotion": "Triumphant self-assurance and celebration.",
+        "section": "Pre-Chorus",
+        "emotion": "Energetic",
         "intensity": 0.41,
-        "colorHint": "#f0e68c",
-        "imageryPrompt": "Sparkling jewelry reflecting sunlight on a calm turquoise sea surface.",
-        "start": 180.54
+        "colorHint": "#8a2be2",
+        "start": 67.49
       },
       {
-        "name": "Pre-Chorus (2)",
-        "emotion": "Urgent push towards the final realization.",
+        "section": "Chorus",
+        "emotion": "Uplifting",
+        "intensity": 0.82,
+        "colorHint": "#20b2aa",
+        "start": 81.06
+      },
+      {
+        "section": "Post-Chorus",
+        "emotion": "Motivational",
+        "intensity": 0.91,
+        "colorHint": "#ffd700",
+        "start": 180.56
+      },
+      {
+        "section": "Verse 2",
+        "emotion": "Determined",
         "intensity": 0.21,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "Abstract geometric shapes forming a path leading to a bright light on water.",
-        "start": 203.96
+        "colorHint": "#00bfff",
+        "start": 212.24
       },
       {
-        "name": "Chorus (2)",
-        "emotion": "Empowering clarity and breaking free from constraints.",
-        "intensity": 0.26,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "A powerful figure standing confidently on a cliff overlooking the ocean at sunset.",
-        "start": 212.22
+        "section": "Pre-Chorus",
+        "emotion": "Energetic",
+        "intensity": 0.68,
+        "colorHint": "#8a2be2",
+        "start": 220.28
       },
       {
-        "name": "Bridge",
-        "emotion": "Climactic release and total transformation.",
-        "intensity": 0.3,
-        "colorHint": "#f0e68c",
-        "imageryPrompt": "A massive explosion of golden light filling the sky over a serene beach.",
-        "start": 250.54
+        "section": "Chorus",
+        "emotion": "Uplifting",
+        "intensity": 0.64,
+        "colorHint": "#20b2aa",
+        "start": 244.88
+      },
+      {
+        "section": "Post-Chorus",
+        "emotion": "Motivational",
+        "intensity": 0.88,
+        "colorHint": "#ffd700",
+        "start": 250.56
       }
     ],
     "keywords": [
       {
-        "word": "spark",
-        "emotion": "Ignition and sudden inspiration.",
-        "imageryPrompt": "A tiny flame igniting into a roaring fire against a dark background, turning bright orange to yellow rapidly."
+        "word": "different",
+        "emotion": "Transformative",
+        "imageryPrompt": "A person standing at the edge of a vast, sunlit ocean, the horizon shimmering with new possibilities."
+      },
+      {
+        "word": "summer",
+        "emotion": "Vibrant",
+        "imageryPrompt": "A golden sunset over a beach, with palm trees swaying in the warm breeze and people dancing under the stars."
+      },
+      {
+        "word": "build",
+        "emotion": "Determined",
+        "imageryPrompt": "A person constructing a dream home on a cliff overlooking the ocean, tools in hand and a determined look on their face."
       },
       {
         "word": "fade",
-        "emotion": "Loss of momentum or hopelessness.",
-        "imageryPrompt": "Colors draining away from an object leaving only grayscale shadows on sand."
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A fading sunset, with the last rays of light reflecting off the water as the sky turns deep blue."
       },
       {
-        "word": "weather",
-        "emotion": "The passage of time and opportunity.",
-        "imageryPrompt": "Clouds moving quickly across a blue sky revealing patches of intense sunlight."
+        "word": "glow",
+        "emotion": "Inspiring",
+        "imageryPrompt": "A city skyline glowing in the evening, illuminated by the lights of progress and possibility."
+      },
+      {
+        "word": "life",
+        "emotion": "Hopeful",
+        "imageryPrompt": "A person standing on a cliff with the ocean in front of them, looking out at the horizon with a sense of purpose and excitement."
+      },
+      {
+        "word": "dream",
+        "emotion": "Aspirational",
+        "imageryPrompt": "A person floating on a balloon above a city, looking down at the lights and imagining a future full of opportunities."
+      },
+      {
+        "word": "change",
+        "emotion": "Dynamic",
+        "imageryPrompt": "A city skyline at dawn, with the sun rising over the buildings and casting long shadows as the world wakes up to a new day."
       },
       {
         "word": "vibe",
-        "emotion": "Atmospheric shift in energy levels.",
-        "imageryPrompt": "Ripples spreading through water changing the color from deep blue to shimmering turquoise instantly."
+        "emotion": "Energetic",
+        "imageryPrompt": "A crowded beach at sunset, with people dancing, laughing, and enjoying the energy of the moment."
       },
       {
-        "word": "glows",
-        "emotion": "Sustained warmth and success.",
-        "imageryPrompt": "A city skyline or beach party illuminated by warm artificial lights reflecting on wet pavement at night."
+        "word": "sun",
+        "emotion": "hope, renewal",
+        "imageryPrompt": "a golden sun rising over a quiet beach, casting long shadows on the sand"
       },
       {
-        "word": "hunger",
-        "emotion": "Deep drive and necessity for growth.",
-        "imageryPrompt": "Strong muscles tensing in silhouette against a rising sun, radiating raw energy."
+        "word": "wave",
+        "emotion": "opportunity, movement",
+        "imageryPrompt": "a powerful wave crashing on a rocky shore, symbolizing the momentum of change"
+      },
+      {
+        "word": "key",
+        "emotion": "realization, insight",
+        "imageryPrompt": "a shimmering key hanging from a wooden door, glowing with light"
+      },
+      {
+        "word": "weather",
+        "emotion": "urgency, time",
+        "imageryPrompt": "a stormy sky with dark clouds and lightning, contrasting with a bright sunset"
+      },
+      {
+        "word": "plan",
+        "emotion": "vision, strategy",
+        "imageryPrompt": "a detailed blueprint on a table, surrounded by laptops and coffee cups"
+      },
+      {
+        "word": "flow",
+        "emotion": "movement, rhythm",
+        "imageryPrompt": "a river flowing through a lush green valley, reflecting the sky"
+      },
+      {
+        "word": "rain",
+        "emotion": "growth, renewal",
+        "imageryPrompt": "a summer rainstorm pouring over a city skyline, with people walking with umbrellas"
+      },
+      {
+        "word": "machine",
+        "emotion": "control, progress",
+        "imageryPrompt": "a futuristic machine with glowing lights and moving parts, surrounded by people working on it"
+      },
+      {
+        "word": "vision",
+        "emotion": "clarity, purpose",
+        "imageryPrompt": "a person looking through a telescope at the stars, with a notebook in hand"
+      },
+      {
+        "word": "seed",
+        "emotion": "beginning, potential",
+        "imageryPrompt": "a small seed planted in the ground, with a sun shining above it"
+      },
+      {
+        "word": "signal",
+        "emotion": "clarity, opportunity",
+        "imageryPrompt": "a radio tuning in to a clear signal, with a person smiling in the background"
+      },
+      {
+        "word": "alarm",
+        "emotion": "stress, urgency",
+        "imageryPrompt": "a red alarm clock with a broken face, lying on a messy desk"
+      },
+      {
+        "word": "code",
+        "emotion": "innovation, progress",
+        "imageryPrompt": "a glowing computer screen with lines of code, surrounded by coffee cups and books"
+      },
+      {
+        "word": "gear",
+        "emotion": "preparation, readiness",
+        "imageryPrompt": "a set of shiny gears turning in a mechanical box, with light reflecting off them"
+      },
+      {
+        "word": "neon",
+        "emotion": "energy, vibrancy",
+        "imageryPrompt": "a city skyline lit up with neon lights, reflecting on wet pavement"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song 'Different This Summer' is a journey of personal transformation and empowerment, capturing the shift from stagnation to action. It reflects the internal struggle of someone ready to break free from routine and embrace a future shaped by their own efforts, using summer as a metaphor for change and growth.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "The intro sets a tone of anticipation and change, with the sun symbolizing the beginning of a new chapter.",
+          "keyLine": "Sun coming up like it knows something"
+        },
+        {
+          "name": "Verse 1 - Male Smooth Rap",
+          "interpretation": "This verse highlights the struggle with routine and the realization that change is necessary for growth.",
+          "keyLine": "Now I'm looking at the wave like wait, that's a key"
+        },
+        {
+          "name": "Pre-Chorus - Female Group Vocals",
+          "interpretation": "The pre-chorus emphasizes urgency and the importance of taking action to seize the moment.",
+          "keyLine": "We don't wanna waste no weather"
+        },
+        {
+          "name": "Chorus - Female Group Vocals",
+          "interpretation": "The chorus is a declaration of transformation and a commitment to building a better future.",
+          "keyLine": "This summer gon' be different"
+        },
+        {
+          "name": "Verse 2 - Male Smooth Rap",
+          "interpretation": "This verse shows a shift from passivity to proactive change, focusing on self-improvement and innovation.",
+          "keyLine": "Turn small sparks into summer rain"
+        },
+        {
+          "name": "Bridge - Female Lead with Group Harmonies",
+          "interpretation": "The bridge reflects on the vision of a future free from constraints and the importance of taking the first step.",
+          "keyLine": "But first we plant the seed"
+        },
+        {
+          "name": "Rap Bridge - Male",
+          "interpretation": "This bridge marks a turning point, showing the transition from feeling stuck to taking control of one's destiny.",
+          "keyLine": "Used to call it noise, now I hear the signal"
+        },
+        {
+          "name": "Final Chorus - Female Group Vocals + Male Ad-libs",
+          "interpretation": "The final chorus reinforces the theme of transformation and the collective effort to build a new future.",
+          "keyLine": "This summer gon' be different"
+        },
+        {
+          "name": "Outro - Female Group Vocals",
+          "interpretation": "The outro brings the song full circle, emphasizing the commitment to change and the promise of a new beginning.",
+          "keyLine": "Ooh, we gon' get it right"
+        },
+        {
+          "name": "Male Spoken Outro",
+          "interpretation": "The spoken outro serves as a personal affirmation of growth and renewal.",
+          "keyLine": "Same sun, New me"
+        }
+      ],
+      "keyLines": [
+        "Sun coming up like it knows something",
+        "This summer feel different already",
+        "Now I'm looking at the wave like wait, that's a key",
+        "We don't wanna waste no weather",
+        "This summer gon' be different",
+        "Turn small sparks into summer rain",
+        "But first we plant the seed",
+        "Used to call it noise, now I hear the signal",
+        "Same sun, New me"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "sun",
+          "emotion": "hope, renewal",
+          "imageryPrompt": "a golden sun rising over a quiet beach, casting long shadows on the sand",
+          "weight": 0.95
+        },
+        {
+          "word": "summer",
+          "emotion": "change, energy",
+          "imageryPrompt": "a vibrant summer day with palm trees swaying in the breeze and people working on laptops under the shade",
+          "weight": 0.92
+        },
+        {
+          "word": "wave",
+          "emotion": "opportunity, movement",
+          "imageryPrompt": "a powerful wave crashing on a rocky shore, symbolizing the momentum of change",
+          "weight": 0.91
+        },
+        {
+          "word": "key",
+          "emotion": "realization, insight",
+          "imageryPrompt": "a shimmering key hanging from a wooden door, glowing with light",
+          "weight": 0.89
+        },
+        {
+          "word": "weather",
+          "emotion": "urgency, time",
+          "imageryPrompt": "a stormy sky with dark clouds and lightning, contrasting with a bright sunset",
+          "weight": 0.88
+        },
+        {
+          "word": "different",
+          "emotion": "transformation, identity",
+          "imageryPrompt": "a person standing at the edge of a cliff, looking out at a vast ocean and a new horizon",
+          "weight": 0.87
+        },
+        {
+          "word": "build",
+          "emotion": "creation, effort",
+          "imageryPrompt": "a person constructing a house on a beach, with the sun setting behind them",
+          "weight": 0.86
+        },
+        {
+          "word": "plan",
+          "emotion": "vision, strategy",
+          "imageryPrompt": "a detailed blueprint on a table, surrounded by laptops and coffee cups",
+          "weight": 0.85
+        },
+        {
+          "word": "dream",
+          "emotion": "aspiration, longing",
+          "imageryPrompt": "a person lying on a beach, gazing at the stars and a distant island",
+          "weight": 0.84
+        },
+        {
+          "word": "flow",
+          "emotion": "movement, rhythm",
+          "imageryPrompt": "a river flowing through a lush green valley, reflecting the sky",
+          "weight": 0.83
+        },
+        {
+          "word": "rain",
+          "emotion": "growth, renewal",
+          "imageryPrompt": "a summer rainstorm pouring over a city skyline, with people walking with umbrellas",
+          "weight": 0.82
+        },
+        {
+          "word": "machine",
+          "emotion": "control, progress",
+          "imageryPrompt": "a futuristic machine with glowing lights and moving parts, surrounded by people working on it",
+          "weight": 0.81
+        },
+        {
+          "word": "vision",
+          "emotion": "clarity, purpose",
+          "imageryPrompt": "a person looking through a telescope at the stars, with a notebook in hand",
+          "weight": 0.8
+        },
+        {
+          "word": "seed",
+          "emotion": "beginning, potential",
+          "imageryPrompt": "a small seed planted in the ground, with a sun shining above it",
+          "weight": 0.79
+        },
+        {
+          "word": "signal",
+          "emotion": "clarity, opportunity",
+          "imageryPrompt": "a radio tuning in to a clear signal, with a person smiling in the background",
+          "weight": 0.78
+        },
+        {
+          "word": "alarm",
+          "emotion": "stress, urgency",
+          "imageryPrompt": "a red alarm clock with a broken face, lying on a messy desk",
+          "weight": 0.77
+        },
+        {
+          "word": "code",
+          "emotion": "innovation, progress",
+          "imageryPrompt": "a glowing computer screen with lines of code, surrounded by coffee cups and books",
+          "weight": 0.76
+        },
+        {
+          "word": "gear",
+          "emotion": "preparation, readiness",
+          "imageryPrompt": "a set of shiny gears turning in a mechanical box, with light reflecting off them",
+          "weight": 0.75
+        },
+        {
+          "word": "neon",
+          "emotion": "energy, vibrancy",
+          "imageryPrompt": "a city skyline lit up with neon lights, reflecting on wet pavement",
+          "weight": 0.74
+        }
+      ]
+    }
   },
   "show": {
     "energyArc": {
-      "open": 31,
-      "mid": 43,
-      "close": 21
+      "open": 74,
+      "mid": 80,
+      "close": 79
     },
     "sectionEnergy": [
       {
-        "name": "Intro",
         "start": 0,
-        "intensity": 0.5
+        "intensity": 0.12
       },
       {
-        "name": "Verse 1",
-        "start": 29.96,
+        "start": 34.48,
         "intensity": 0.69
       },
       {
-        "name": "Pre-Chorus",
-        "start": 57.72,
-        "intensity": 0.88
-      },
-      {
-        "name": "Chorus",
-        "start": 63.46,
-        "intensity": 0.93
-      },
-      {
-        "name": "Post-Chorus",
-        "start": 119.18,
-        "intensity": 0.6
-      },
-      {
-        "name": "Verse 2",
-        "start": 180.54,
+        "start": 67.49,
         "intensity": 0.41
       },
       {
-        "name": "Pre-Chorus (2)",
-        "start": 203.96,
+        "start": 81.06,
+        "intensity": 0.82
+      },
+      {
+        "start": 180.56,
+        "intensity": 0.91
+      },
+      {
+        "start": 212.24,
         "intensity": 0.21
       },
       {
-        "name": "Chorus (2)",
-        "start": 212.22,
-        "intensity": 0.26
+        "start": 220.28,
+        "intensity": 0.68
       },
       {
-        "name": "Bridge",
-        "start": 250.54,
-        "intensity": 0.3
+        "start": 244.88,
+        "intensity": 0.64
+      },
+      {
+        "start": 250.56,
+        "intensity": 0.88
       }
     ],
     "vocalPresence": [
       {
-        "name": "Intro",
-        "presence": 71
+        "presence": 74
       },
       {
-        "name": "Verse 1",
-        "presence": 83
+        "presence": 81
       },
       {
-        "name": "Pre-Chorus",
-        "presence": 84
+        "presence": 77
       },
       {
-        "name": "Chorus",
         "presence": 82
       },
       {
-        "name": "Post-Chorus",
-        "presence": 83
+        "presence": 87
       },
       {
-        "name": "Verse 2",
-        "presence": 51
+        "presence": 71
       },
       {
-        "name": "Pre-Chorus (2)",
-        "presence": 0
+        "presence": 80
       },
       {
-        "name": "Chorus (2)",
-        "presence": 0
+        "presence": 76
       },
       {
-        "name": "Bridge",
-        "presence": 0
+        "presence": 86
       }
     ],
     "dropMap": {
       "cuts": [
         [
           0,
-          2.86
+          1.92
         ],
         [
-          9.82,
-          10.62
-        ],
-        [
-          11.74,
-          12.54
-        ],
-        [
-          20.46,
-          21.26
-        ],
-        [
-          32.14,
-          33.34
-        ],
-        [
-          78.78,
-          79.74
-        ],
-        [
-          109.82,
-          110.7
-        ],
-        [
-          124.3,
-          126.14
+          303.44,
+          304.96
         ]
       ],
-      "risers": [
-        {
-          "t": 0,
-          "end": 2.86
-        }
-      ],
+      "risers": [],
       "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
     },
     "performs": {
       "stems": [
         "lead",
-        "back",
         "drums",
-        "perc",
-        "bass",
-        "synth",
-        "other",
-        "keys"
+        "other"
       ],
-      "approx": false
+      "approx": true
     }
   },
   "files": {

@@ -1,101 +1,103 @@
 {
   "analysis": {
-    "summary": "A nocturnal fusion of hip-hop flow and electronic textures that chronicles an artist's transformation from passive worry to active creation through late-night coding sessions paired with contemplative cocktail culture.",
-    "overallMood": "Nocturnal Contemplation",
+    "summary": "The song 'Cocktails && Code' is an energetic and motivational anthem celebrating personal growth, technological empowerment, and the fusion of summer vibes with the pursuit of success through innovation and self-improvement. It blends the atmosphere of a summer night with the drive of coding and building a better future.",
+    "overallMood": "Energetic and Motivational",
     "themes": [
-      "Digital Alchemy",
-      "Late Night Focus",
-      "Self-Empowerment",
-      "Process over Outcome",
-      "Urban Solitude",
-      "Technological Hope"
+      "Personal Growth",
+      "Technology and Innovation",
+      "Summer Night Vibes",
+      "Empowerment and Self-Improvement",
+      "Work-Life Balance"
     ],
     "palette": [
-      "#0f172a",
-      "#64748b",
-      "#38bdf8",
-      "#eab308"
+      "#FFD700",
+      "#00BFFF",
+      "#228B22",
+      "#FFA07A"
     ],
     "sections": [
       {
         "name": "Intro",
-        "emotion": "Anticipatory Whisper",
-        "intensity": 0.39,
-        "colorHintHex": "#1e293b",
+        "emotion": "Calm and Reflective",
+        "intensity": 0.09,
+        "colorHint": "#00bfff",
         "start": 0
       },
       {
         "name": "Verse 1",
-        "emotion": "Quiet Realization",
-        "intensity": 0.63,
-        "colorHintHex": "#38bdf8",
-        "start": 3.44
+        "emotion": "Energetic and Motivational",
+        "intensity": 0.68,
+        "colorHint": "#ffd700",
+        "start": 31.16
+      },
+      {
+        "name": "Pre-Chorus",
+        "emotion": "Uplifting and Positive",
+        "intensity": 0.56,
+        "colorHint": "#228b22",
+        "start": 72.16
       },
       {
         "name": "Chorus",
-        "emotion": "Cinematic Expansion",
-        "intensity": 0.96,
-        "colorHintHex": "#fbbf24",
-        "start": 52.42
+        "emotion": "Energetic and Empowering",
+        "intensity": 0.94,
+        "colorHint": "#ffa07a",
+        "start": 82.76
       },
       {
-        "name": "Bridge",
-        "emotion": "Strategic Breakthrough",
-        "intensity": 0.82,
-        "colorHintHex": "#14b8a6",
-        "start": 72.14
-      },
-      {
-        "name": "Drop",
-        "emotion": "Rhythmic Triumph",
-        "intensity": 0.92,
-        "colorHintHex": "#facc15",
-        "start": 82.74
+        "name": "Post-Chorus",
+        "emotion": "Uplifting and Positive",
+        "intensity": 0.55,
+        "colorHint": "#228b22",
+        "start": 154.47
       },
       {
         "name": "Verse 2",
-        "emotion": "Confident Resolve",
-        "intensity": 0.38,
-        "colorHintHex": "#4ade80",
-        "start": 154.45
-      },
-      {
-        "name": "Outro",
-        "emotion": "Tranquil Future-Viewing",
-        "intensity": 0.11,
-        "colorHintHex": "#1e293b",
-        "start": 237.54
+        "emotion": "Energetic and Motivational",
+        "intensity": 0.89,
+        "colorHint": "#ffd700",
+        "start": 161.8
       }
     ],
     "keywords": [
       {
+        "word": "cocktails",
+        "emotion": "Relaxing and Enjoyable",
+        "imageryPrompt": "A summer night with a cocktail in hand, tropical sunset in the background, soft music playing in the distance."
+      },
+      {
+        "word": "code",
+        "emotion": "Innovative and Focused",
+        "imageryPrompt": "A glowing laptop screen with lines of code, soft neon lights reflecting off a dark room, a focused individual typing with determination."
+      },
+      {
         "word": "glow",
-        "emotion": "Warm Digital Intimacy",
-        "imageryPrompt": "Soft cyan light reflecting off a laptop screen and glass ice cubes in a dark room, volumetric lighting creating floating dust particles."
-      },
-      {
-        "word": "logic",
-        "emotion": "Structured Clarity",
-        "imageryPrompt": "Invisible geometric grids forming over a cluttered desk, clean lines connecting to the outside sunset, sharp focus on keyboard keys."
-      },
-      {
-        "word": "focus",
-        "emotion": "Deep Concentration",
-        "imageryPrompt": "A single beam of moonlight illuminating only hands typing rapidly while the rest of the room fades into soft bokeh shadows."
-      },
-      {
-        "word": "debug",
-        "emotion": "Painful Correction",
-        "imageryPrompt": "Red error symbols dissolving into green checkmarks, visualizing mental noise turning clear as liquid drains from a glass."
+        "emotion": "Inspiring and Energetic",
+        "imageryPrompt": "A glowing neon sign in the distance, casting a warm light over a city skyline at night, surrounded by the buzz of city life."
       },
       {
         "word": "future",
-        "emotion": "Hopeful Anticipation",
-        "imageryPrompt": "A digital horizon line rising above the skyline, composed of binary code transforming into architectural blueprints and palm tree silhouettes."
+        "emotion": "Hopeful and Aspirational",
+        "imageryPrompt": "A person standing on a cliff overlooking the ocean at sunrise, the horizon glowing with the promise of a new day."
+      },
+      {
+        "word": "load",
+        "emotion": "Powerful and Motivating",
+        "imageryPrompt": "A rocket launching into space, engines blazing with fire, the sky glowing with the light of the takeoff."
+      },
+      {
+        "word": "build",
+        "emotion": "Determined and Creative",
+        "imageryPrompt": "A construction site at sunset, cranes lifting steel beams, workers moving with purpose, the sun casting golden light across the scene."
+      },
+      {
+        "word": "night",
+        "emotion": "Mysterious and Reflective",
+        "imageryPrompt": "A quiet night on a beach, the moon casting silver light over the waves, the sound of waves gently crashing against the shore."
       }
     ]
   },
-  "styleHint": "A mid-tempo (99 BPM) G minor track blending smooth synth pads and crisp drum programming with a laid-back hip-hop vocal flow that balances late-night cocktail lounge vibes with the rhythmic precision of coding logic.",
+  "styleHint": "Smooth funky R&B hip-hop summer groove, slap bassline, warm Rhodes keys, 808 snare, crisp claps, breezy percussion, glossy female group vocal hook, smooth melodic male rap verses, late-night balcony vibe, laptop glow, beach cocktail atmosphere, motivational tech glow-up theme, catchy American pop-rap anthem, polished radio mix, no foreign vocals",
   "assets": {},
-  "generatedAt": "2026-07-09T18:45:17.271Z"
+  "generatedAt": "2026-07-24T10:02:18.866Z"
 }

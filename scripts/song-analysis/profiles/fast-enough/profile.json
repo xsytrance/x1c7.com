@@ -1,8 +1,8 @@
 {
   "v": 1,
-  "mode": "full",
+  "mode": "audio-only",
   "id": "fast-enough",
-  "generatedAt": "2026-07-09T18:05:32.236Z",
+  "generatedAt": "2026-07-24T08:41:32.624Z",
   "measured": {
     "bpm": 107.67,
     "duration": 144.6
@@ -10,33 +10,19 @@
   "identity": {
     "title": "Fast Enough",
     "titleAlternates": [],
-    "genre": "R&B/Hip-Hop Fusion",
+    "genre": "R&B",
     "subGenres": [
-      902,
-      "New Jack Swing",
-      "Synth-pop"
+      "Hip-Hop",
+      "Futuristic R&B",
+      "Synthwave"
     ],
-    "mood": [
-      "Energetic",
-      "Playful",
-      "Nostalgic",
-      "Romantic"
-    ],
-    "styleSentence": "A high-energy late-90s futuristic R&B track at 108 BPM featuring bright FM synth leads, funky basslines, and bouncy New Jack swing drums that evoke a Sega Genesis aesthetic with crisp snares, arpeggiated game-like runs, and sparkling chord stabs.",
+    "mood": "Energetic, playful, romantic, nostalgic",
+    "styleSentence": "A high-energy late-90s futuristic R&B/hip-hop summer jam with bright FM synth leads, funky bassline, bouncy New Jack swing drums, crisp snares, syncopated percussion, and fast melodic hooks, inspired by Sega Genesis and Sonic 1 & 2, at a tempo of around 116 BPM.",
     "language": "English",
     "energy": "high",
-    "vocalStyle": "Smooth confident male R&B lead with catchy harmonies, flirty swagger, and danceable hip-hop cadence."
+    "vocalStyle": "Smooth confident male R&B lead with catchy harmonies, flirty swagger, and danceable hip-hop cadence"
   },
-  "cover": {
-    "file": "/home/xsyprime/x1c7.com/scripts/song-analysis/profiles/fast-enough/cover.jpeg",
-    "palette": [
-      "#480808",
-      "#a80808",
-      "#580808",
-      "#080818",
-      "#980808"
-    ]
-  },
+  "cover": null,
   "mixFeatures": {
     "keyEstimate": {
       "key": "A#",
@@ -53,210 +39,457 @@
       104.21,
       107.18
     ],
-    "brightness": 3715.8,
+    "brightness": 3729.7,
     "dynamicsDb": 10.8
   },
   "lyrics": {
     "official": true,
     "language": "english",
     "text": "[Intro - Immediate Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Verse 1]\nGreen light, go, we on a mission\nHeart in overdrive, no hesitation\nSpin through the night with you\nEverything feels brand new\n\nYou got me moving at the speed of you\nNo checkpoints, we don’t save and quit\nJust keep running through the city lights\nYou and me, yeah, we about to win\n\n[Pre-Hook]\nLoops and turns, we don’t hit the brakes\nSky so blue, no room for mistakes\nIf you with me, then we going all the way\nNo time to waste, it’s our day\n\n[Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Post-Hook]\nRing-ring, heart light\nLevel up all night\nSpring bounce, take flight\nYou and me, we feel right\n\n[Verse 2]\nFrom the block to the boardwalk lights\nWe shine together, everything’s right\nBounce on springs, we rise so high\nNothing can stop us, we touch the sky\n\nYou’re my boost, I’m your invincible\nGolden love, yeah, we collect it\nToo fast, too smooth, they can’t catch us\nYou know how we run it\n\n[Bridge - Dance Breakdown]\nDum da da da dum dum\nMove like that, don’t slow\nDum da da da dum dum\nBaby, let the whole night glow\n\nLevel up, level up\nWe go fast, fast enough\nLevel up, level up\nI could be the one you want\n\n[Final Hook]\nAre you that somebody?\nI could be that somebody\nWe can do it like nobody\nBaby, keep up, don’t stop now\n\nAre you that somebody?\nI could be that somebody\nFast enough, we can’t get caught now\nBaby, keep up, don’t stop now\n\n[Outro]\nGotta go fast\nWith you\nNew level unlocked",
-    "lrc": "[Intro]\n[00:01.62] Oh, you're that somebody, I\n[00:04.84] could be that somebody\n[00:06.59] Can't do it like nobody,\n[00:09.02] girl,\n[00:09.26] we keep up,\n[00:09.96] don't stop now\n[00:10.90] Oh, you're that somebody,\n[00:13.50] I could be that somebody\n[00:15.26] Fast enough,\n[00:16.62] we can't get caught now,\n[00:17.88] girl,\n[00:18.14] we keep up,\n[00:18.74] don't stop now\n[Verse 1]\n[00:20.16] Green light,\n[00:21.32] dirty on the mission,\n[00:22.86] heart in overdrive,\n[00:24.04] no hesitation\n[00:25.08] Spinning through the net with you,\n[00:26.88] everything feels brand new\n[00:28.80] You got me moving like a theater,\n[00:30.50] you,\n[00:31.24] no checkpoints,\n[00:32.10] we don't save and quit\n[00:33.10] Just keep running through the city lights,\n[00:35.72] I mean,\n[00:36.18] yeah,\n[00:36.52] we about to win\n[Pre-Hook]\n[00:37.64] Two sensors,\n[00:38.94] get off the brakes,\n[00:40.04] sky so blue,\n[00:41.02] no room for mistake\n[00:41.92] If you with me,\n[00:43.20] then we going all the way,\n[00:44.32] no time to waste,\n[Hook]\n[00:45.64] it's our day\n[00:46.54] Oh,\n[00:46.78] you're that somebody,\n[00:47.86] I could be that somebody\n[00:50.78] Can't do it like nobody,\n[00:53.46] girl,\n[00:53.88] we keep up,\n[00:54.26] don't stop now\n[00:55.30] Oh, you're that somebody\n[00:56.38] Oh,\n[00:57.52] you're that somebody\n[00:58.73] Can't do it like nobody,\n[01:02.28] girl,\n[01:02.60] we keep up,\n[01:03.16] don't stop now\n[01:04.22] Green light,\n[01:05.60] dirty on the mission,\n[01:09.38] heart in overdrive,\n[01:09.38] no hesitation\n[01:09.42] Spinning through the net with you,\n[01:11.86] everything feels brand new\n[01:15.02] From the black to the boardwalk lights,\n[01:17.90] we shine together,\n[01:18.80] everything's bright\n[01:19.82] Down some springs,\n[01:20.00] we fly so high,\n[01:22.26] nothing can stop us,\n[01:23.34] we touch the sky\n[01:24.24] You're my boost,\n[01:25.44] I'm dark,\n[01:25.96] invincible,\n[01:26.88] go to love,\n[01:27.66] y'all be good\n[01:28.72] Too fast,\n[01:29.84] too smooth,\n[01:30.38] they can't catch us,\n[01:31.60] you know how we run it\n[Verse 2]\n[01:35.72] Move like that, don't slow\n[01:39.42] Baby,\n[01:40.92] let the whole night glow\n[Bridge]\n[01:44.54] We go fast\n[Final Hook]\n[01:48.30] I could be the one you want\n[01:50.94] Can't do it like nobody,\n[01:57.76] girl,\n[01:58.24] we keep up,\n[01:58.68] don't stop now\n[01:58.72] You got somebody\n[02:00.72] Ooh, ooh, ooh, ooh\n[02:02.60] I could be that somebody\n[02:04.44] Fast enough, you can't get caught now\n[02:06.40] Ready to keep up, don't stop now\n[02:08.60] Gotta\n[02:10.50] go fast\n[02:13.22] With you\n[02:13.66] New level\n[02:15.42] Unlocked\n"
+    "lrc": "[Intro]\n[00:01.64] Oh, you're that somebody, I\n[00:04.86] could be that somebody\n[00:06.61] Can't do it like nobody,\n[00:09.04] girl,\n[00:09.28] we keep up,\n[00:09.98] don't stop now\n[00:10.92] Oh, you're that somebody,\n[00:13.52] I could be that somebody\n[00:15.28] Fast enough,\n[00:16.64] we can't get caught now,\n[00:17.90] girl,\n[00:18.16] we keep up,\n[00:18.76] don't stop now\n[00:20.18] Green light,\n[00:21.34] dirty on the mission,\n[Verse 1]\n[00:22.88] heart in overdrive,\n[00:24.06] no hesitation\n[00:25.10] Spinning through the net with you,\n[00:26.90] everything feels brand new\n[00:28.82] You got me moving like a theater,\n[00:30.52] you,\n[00:31.26] no checkpoints,\n[00:32.12] we don't save and quit\n[00:33.12] Just keep running through the city lights,\n[00:35.74] I mean,\n[00:36.20] yeah,\n[00:36.54] we about to win\n[00:37.66] Two sensors,\n[00:38.96] get off the brakes,\n[00:40.06] sky so blue,\n[00:41.04] no room for mistake\n[00:41.94] If you with me,\n[00:43.22] then we going all the way,\n[00:44.34] no time to waste,\n[Pre-Hook]\n[00:45.66] it's our day\n[00:46.56] Oh,\n[00:46.80] you're that somebody,\n[Hook]\n[00:47.88] I could be that somebody\n[00:50.80] Can't do it like nobody,\n[00:53.48] girl,\n[00:53.90] we keep up,\n[00:54.28] don't stop now\n[00:55.32] Oh, you're that somebody\n[00:56.40] Oh,\n[00:57.54] you're that somebody\n[00:58.75] Can't do it like nobody,\n[01:02.30] girl,\n[01:02.62] we keep up,\n[01:03.18] don't stop now\n[01:04.24] Green light,\n[01:05.62] dirty on the mission,\n[01:09.40] heart in overdrive,\n[01:09.40] no hesitation\n[01:09.44] Spinning through the net with you,\n[01:11.88] everything feels brand new\n[01:15.04] From the black to the boardwalk lights,\n[01:17.92] we shine together,\n[01:18.82] everything's bright\n[01:19.84] Down some springs,\n[01:21.02] we fly so high,\n[01:22.28] nothing can stop us,\n[01:23.36] we touch the sky\n[01:24.26] You're my boost,\n[01:25.46] I'm dark,\n[01:25.98] invincible,\n[01:26.90] go to love,\n[01:27.68] y'all be good\n[01:28.74] Too fast,\n[01:29.86] too smooth,\n[01:30.40] they can't catch us,\n[01:31.62] you know how we run it\n[Post-Hook]\n[01:35.74] Move like that, don't slow\n[01:39.44] Baby,\n[01:40.94] let the whole night glow\n[Verse 2]\n[Bridge]\n[01:44.56] We go fast\n[Final Hook]\n[01:48.32] I could be the one you want\n[01:50.96] Can't do it like nobody,\n[01:57.78] girl,\n[01:58.26] we keep up,\n[01:58.70] don't stop now\n[01:58.74] You got somebody\n[02:00.74] Ooh, ooh, ooh, ooh\n[02:02.62] I could be that somebody\n[02:04.46] Fast enough, you can't get caught now\n[02:06.42] Ready to keep up, don't stop now\n[02:08.62] Gotta\n[02:10.53] go fast\n[02:13.24] With you\n[02:13.68] New level\n[02:15.44] Unlocked\n"
   },
   "analysis": {
-    "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
-    "overallMood": "Energetic and Playful",
+    "summary": "A high-energy, nostalgic R&B track celebrating a fast-paced, flirtatious relationship filled with playful confidence and a sense of invincibility, inspired by retro gaming and summer nights.",
+    "overallMood": "Energetic, playful, romantic, nostalgic",
     "themes": [
-      "Futuristic Romance",
-      "Gaming Nostalgia",
-      "High-Speed Pursuit",
-      "Unstoppable Love"
+      "Nostalgia",
+      "Playful romance",
+      "Speed and motion",
+      "Confidence and swagger",
+      "Summer vibes",
+      "Retro-futurism"
     ],
     "palette": [
       "#FFD700",
-      "#4B0082",
-      "#C91E36",
-      "#FFEBCD"
+      "#00BFFF",
+      "#FF6347",
+      "#20B2AA"
     ],
     "sections": [
       {
         "name": "Intro",
-        "emotion": "Curious and Anticipatory",
-        "intensity": 0.85,
-        "colorHintHex": "#FFD700",
-        "start": 1.62
+        "emotion": "Energetic",
+        "intensity": 0.5,
+        "colorHint": "#ffd700",
+        "start": 1.6400000000000001
       },
       {
         "name": "Verse 1",
-        "emotion": "Focused and Accelerating",
-        "intensity": 0.7,
-        "colorHintHex": "#4B0082",
-        "start": 20.16
+        "emotion": "Playful",
+        "intensity": 0.48,
+        "colorHint": "#00bfff",
+        "start": 22.88
       },
       {
         "name": "Pre-Hook",
-        "emotion": "Urgent and Electric",
-        "intensity": 0.86,
-        "colorHintHex": "#C91E36",
-        "start": 37.64
+        "emotion": "Romantic",
+        "intensity": 0.82,
+        "colorHint": "#ff6347",
+        "start": 45.66
       },
       {
         "name": "Hook",
-        "emotion": "Triumphant and Euphoric",
-        "intensity": 0.76,
-        "colorHintHex": "#FFEBCD",
-        "start": 45.64
+        "emotion": "Confident",
+        "intensity": 0.85,
+        "colorHint": "#20b2aa",
+        "start": 47.88
+      },
+      {
+        "name": "Post-Hook",
+        "emotion": "Energetic",
+        "intensity": 0.61,
+        "colorHint": "#ffd700",
+        "start": 95.74
       },
       {
         "name": "Verse 2",
-        "emotion": "Smooth and Confident",
-        "intensity": 0.3,
-        "colorHintHex": "#4B0082",
-        "start": 95.72
+        "emotion": "Nostalgic",
+        "intensity": 0.18,
+        "colorHint": "#00bfff",
+        "start": 104.56
       },
       {
         "name": "Bridge",
-        "emotion": "Explosive Release",
-        "intensity": 0.28,
-        "colorHintHex": "#FFD700",
-        "start": 104.54
+        "emotion": "Fast-paced",
+        "intensity": 0.67,
+        "colorHint": "#ff6347",
+        "start": 104.56
       },
       {
         "name": "Final Hook",
-        "emotion": "Victorious and Joyful",
-        "intensity": 0.25,
-        "colorHintHex": "#FFEBCD",
-        "start": 108.3
+        "emotion": "Infectious",
+        "intensity": 0.97,
+        "colorHint": "#20b2aa",
+        "start": 108.32
       }
     ],
     "keywords": [
       {
-        "word": "fast",
-        "emotion": "Urgent Thrill",
-        "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+        "word": "enough",
+        "emotion": "Energetic",
+        "imageryPrompt": "A glowing neon-lit cityscape with two silhouettes sprinting through the streets, their movements leaving trails of light behind them."
       },
       {
-        "word": "boost",
-        "emotion": "Empowered Lift",
-        "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+        "word": "mission",
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A retro arcade cabinet flickering with pixelated graphics, surrounded by a vibrant summer night filled with glowing signs and laughter."
       },
       {
-        "word": "caught",
-        "emotion": "Playful Fearlessness",
-        "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
-      },
-      {
-        "word": "lights",
-        "emotion": "Vibrant Wonder",
-        "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
-      },
-      {
-        "word": "level",
-        "emotion": "Achievement Joy",
-        "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+        "word": "overdrive",
+        "emotion": "Romantic",
+        "imageryPrompt": "A glowing heart pulsating in the center of a starry night, surrounded by swirling colors and soft, glowing particles."
       },
       {
         "word": "invincible",
-        "emotion": "Confident Power",
-        "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+        "emotion": "Confident",
+        "imageryPrompt": "A shadowy figure standing on top of a skyscraper, surrounded by a halo of light and floating power-ups from a retro video game."
+      },
+      {
+        "word": "touch",
+        "emotion": "Playful",
+        "imageryPrompt": "Two people jumping together on a sunny beach, their shadows stretching long into the sky as the sun dips below the horizon."
+      },
+      {
+        "word": "waste",
+        "emotion": "Energetic",
+        "imageryPrompt": "A ticking clock with glowing red numbers, surrounded by a blur of motion and vibrant, fast-moving shapes."
+      },
+      {
+        "word": "level",
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A pixelated screen displaying 'Level Unlocked' with a glowing progress bar and a retro game character standing triumphantly in the center."
+      },
+      {
+        "word": "speed",
+        "emotion": "excitement",
+        "imageryPrompt": "Two people racing through a neon-lit city at night, their silhouettes blurred with motion"
+      },
+      {
+        "word": "boost",
+        "emotion": "energy",
+        "imageryPrompt": "A car speeding down a highway, the driver leaning forward with a grin, the passenger laughing beside them"
+      },
+      {
+        "word": "lights",
+        "emotion": "vibrancy",
+        "imageryPrompt": "A city skyline at night, with neon signs flickering and the couple walking hand in hand through the glow"
+      },
+      {
+        "word": "win",
+        "emotion": "triumph",
+        "imageryPrompt": "A couple standing on a rooftop, arms raised in victory as fireworks explode in the sky behind them"
+      },
+      {
+        "word": "glow",
+        "emotion": "passion",
+        "imageryPrompt": "A couple dancing in a dimly lit club, their faces lit by the pulsing lights and the glow of their connection"
+      },
+      {
+        "word": "bounce",
+        "emotion": "playfulness",
+        "imageryPrompt": "A couple jumping on a trampoline in a backyard, laughing as they soar into the air"
+      },
+      {
+        "word": "game",
+        "emotion": "competition",
+        "imageryPrompt": "Two players on a retro gaming console, their eyes locked in a fierce but playful match"
+      },
+      {
+        "word": "drive",
+        "emotion": "passion",
+        "imageryPrompt": "A couple driving through a summer night, the car's headlights cutting through the darkness as they share a kiss"
+      },
+      {
+        "word": "city",
+        "emotion": "energy",
+        "imageryPrompt": "A bustling city at night, with the couple walking through the streets, their silhouettes framed by the glow of streetlights"
+      },
+      {
+        "word": "sky",
+        "emotion": "freedom",
+        "imageryPrompt": "A couple standing on a cliff overlooking the ocean, the sky painted in hues of orange and pink as the sun sets"
+      },
+      {
+        "word": "drip",
+        "emotion": "confidence",
+        "imageryPrompt": "A couple walking through a rain-soaked city, their clothes glistening with water as they laugh and embrace"
+      },
+      {
+        "word": "fast",
+        "emotion": "urgency",
+        "imageryPrompt": "A couple running through a forest at sunrise, their silhouettes blurred as they race against the rising sun"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song is a celebration of a relationship that moves like a game — fast, unpredictable, and full of high stakes and high rewards. Beneath the playful energy lies a deep sense of connection and the thrill of chasing something bigger than oneself, where the partner becomes both the goal and the fuel for the journey.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "A call to action that sets the tone of the relationship as a high-stakes, fast-moving game.",
+          "keyLine": "Are you that somebody? I could be that somebody"
+        },
+        {
+          "name": "Verse 1",
+          "interpretation": "The relationship is portrayed as a mission, driven by passion and urgency.",
+          "keyLine": "You got me moving at the speed of you"
+        },
+        {
+          "name": "Pre-Hook",
+          "interpretation": "A moment of reflection on the journey they are on together, emphasizing unity and purpose.",
+          "keyLine": "If you with me, then we going all the way"
+        },
+        {
+          "name": "Hook",
+          "interpretation": "A reiteration of the central theme — the push and pull of a fast-paced, flirtatious connection.",
+          "keyLine": "Fast enough, we can’t get caught now"
+        },
+        {
+          "name": "Post-Hook",
+          "interpretation": "A playful, upbeat interlude that reinforces the idea of leveling up together.",
+          "keyLine": "Ring-ring, heart light"
+        },
+        {
+          "name": "Verse 2",
+          "interpretation": "An expansion of the relationship’s impact, showing how they elevate each other.",
+          "keyLine": "You’re my boost, I’m your invincible"
+        },
+        {
+          "name": "Bridge",
+          "interpretation": "A rhythmic, dance-driven moment that emphasizes the energy and chemistry between the two.",
+          "keyLine": "Move like that, don’t slow"
+        },
+        {
+          "name": "Final Hook",
+          "interpretation": "A powerful closing that reiterates the central theme with heightened intensity.",
+          "keyLine": "Fast enough, we can’t get caught now"
+        }
+      ],
+      "keyLines": [
+        "Are you that somebody? I could be that somebody",
+        "We can do it like nobody",
+        "You got me moving at the speed of you",
+        "No checkpoints, we don’t save and quit",
+        "If you with me, then we going all the way",
+        "Fast enough, we can’t get caught now",
+        "Ring-ring, heart light",
+        "You’re my boost, I’m your invincible",
+        "Move like that, don’t slow",
+        "Level up, level up",
+        "Gotta go fast",
+        "New level unlocked"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "speed",
+          "emotion": "excitement",
+          "imageryPrompt": "Two people racing through a neon-lit city at night, their silhouettes blurred with motion",
+          "weight": 0.95
+        },
+        {
+          "word": "mission",
+          "emotion": "urgency",
+          "imageryPrompt": "A couple driving through a desert highway under a glowing sunset, their eyes locked in determination",
+          "weight": 0.9
+        },
+        {
+          "word": "invincible",
+          "emotion": "confidence",
+          "imageryPrompt": "A couple standing atop a skyscraper, arms around each other, the city lights reflecting in their eyes",
+          "weight": 0.88
+        },
+        {
+          "word": "level",
+          "emotion": "progress",
+          "imageryPrompt": "A glowing game controller with a rising score, surrounded by a couple dancing in a retro arcade",
+          "weight": 0.85
+        },
+        {
+          "word": "boost",
+          "emotion": "energy",
+          "imageryPrompt": "A car speeding down a highway, the driver leaning forward with a grin, the passenger laughing beside them",
+          "weight": 0.84
+        },
+        {
+          "word": "mission",
+          "emotion": "determination",
+          "imageryPrompt": "A couple on a motorcycle, wind blowing through their hair as they race toward the horizon",
+          "weight": 0.83
+        },
+        {
+          "word": "lights",
+          "emotion": "vibrancy",
+          "imageryPrompt": "A city skyline at night, with neon signs flickering and the couple walking hand in hand through the glow",
+          "weight": 0.82
+        },
+        {
+          "word": "win",
+          "emotion": "triumph",
+          "imageryPrompt": "A couple standing on a rooftop, arms raised in victory as fireworks explode in the sky behind them",
+          "weight": 0.81
+        },
+        {
+          "word": "glow",
+          "emotion": "passion",
+          "imageryPrompt": "A couple dancing in a dimly lit club, their faces lit by the pulsing lights and the glow of their connection",
+          "weight": 0.8
+        },
+        {
+          "word": "bounce",
+          "emotion": "playfulness",
+          "imageryPrompt": "A couple jumping on a trampoline in a backyard, laughing as they soar into the air",
+          "weight": 0.79
+        },
+        {
+          "word": "game",
+          "emotion": "competition",
+          "imageryPrompt": "Two players on a retro gaming console, their eyes locked in a fierce but playful match",
+          "weight": 0.78
+        },
+        {
+          "word": "drive",
+          "emotion": "passion",
+          "imageryPrompt": "A couple driving through a summer night, the car's headlights cutting through the darkness as they share a kiss",
+          "weight": 0.77
+        },
+        {
+          "word": "city",
+          "emotion": "energy",
+          "imageryPrompt": "A bustling city at night, with the couple walking through the streets, their silhouettes framed by the glow of streetlights",
+          "weight": 0.76
+        },
+        {
+          "word": "win",
+          "emotion": "victory",
+          "imageryPrompt": "A couple standing together on a podium, medals around their necks, the crowd cheering in the background",
+          "weight": 0.75
+        },
+        {
+          "word": "sky",
+          "emotion": "freedom",
+          "imageryPrompt": "A couple standing on a cliff overlooking the ocean, the sky painted in hues of orange and pink as the sun sets",
+          "weight": 0.74
+        },
+        {
+          "word": "drip",
+          "emotion": "confidence",
+          "imageryPrompt": "A couple walking through a rain-soaked city, their clothes glistening with water as they laugh and embrace",
+          "weight": 0.73
+        },
+        {
+          "word": "glow",
+          "emotion": "connection",
+          "imageryPrompt": "A couple sitting under a tree at night, their faces illuminated by the soft glow of a lantern between them",
+          "weight": 0.72
+        },
+        {
+          "word": "level",
+          "emotion": "growth",
+          "imageryPrompt": "A couple standing in front of a glowing screen, their hands together as the screen displays a rising level number",
+          "weight": 0.71
+        },
+        {
+          "word": "fast",
+          "emotion": "urgency",
+          "imageryPrompt": "A couple running through a forest at sunrise, their silhouettes blurred as they race against the rising sun",
+          "weight": 0.7
+        }
+      ]
+    }
   },
   "show": {
     "energyArc": {
-      "open": 42,
-      "mid": 45,
-      "close": 22
+      "open": 75,
+      "mid": 79,
+      "close": 80
     },
     "sectionEnergy": [
       {
         "name": "Intro",
-        "start": 1.62,
-        "intensity": 0.85
+        "start": 1.6400000000000001,
+        "intensity": 0.5
       },
       {
         "name": "Verse 1",
-        "start": 20.16,
-        "intensity": 0.7
+        "start": 22.88,
+        "intensity": 0.48
       },
       {
         "name": "Pre-Hook",
-        "start": 37.64,
-        "intensity": 0.86
+        "start": 45.66,
+        "intensity": 0.82
       },
       {
         "name": "Hook",
-        "start": 45.64,
-        "intensity": 0.76
+        "start": 47.88,
+        "intensity": 0.85
+      },
+      {
+        "name": "Post-Hook",
+        "start": 95.74,
+        "intensity": 0.61
       },
       {
         "name": "Verse 2",
-        "start": 95.72,
-        "intensity": 0.3
+        "start": 104.56,
+        "intensity": 0.18
       },
       {
         "name": "Bridge",
-        "start": 104.54,
-        "intensity": 0.28
+        "start": 104.56,
+        "intensity": 0.67
       },
       {
         "name": "Final Hook",
-        "start": 108.3,
-        "intensity": 0.25
+        "start": 108.32,
+        "intensity": 0.97
       }
     ],
     "vocalPresence": [
       {
         "name": "Intro",
-        "presence": 86
+        "presence": 78
       },
       {
         "name": "Verse 1",
-        "presence": 84
+        "presence": 78
       },
       {
         "name": "Pre-Hook",
-        "presence": 88
+        "presence": 82
       },
       {
         "name": "Hook",
         "presence": 82
       },
       {
+        "name": "Post-Hook",
+        "presence": 81
+      },
+      {
         "name": "Verse 2",
-        "presence": 47
+        "presence": 75
       },
       {
         "name": "Bridge",
-        "presence": 0
+        "presence": 81
       },
       {
         "name": "Final Hook",
-        "presence": 0
+        "presence": 84
       }
     ],
     "dropMap": {
-      "cuts": [
-        [
-          22.22,
-          25.26
-        ]
-      ],
+      "cuts": [],
       "risers": [],
       "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
     },
     "performs": {
       "stems": [
         "lead",
-        "back",
         "drums",
-        "perc",
-        "bass",
-        "synth",
-        "other",
-        "guitar",
-        "keys"
+        "other"
       ],
-      "approx": false
+      "approx": true
     }
   },
   "files": {

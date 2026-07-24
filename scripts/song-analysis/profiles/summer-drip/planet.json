@@ -3,132 +3,139 @@
     "id": "summer-drip",
     "planet": {
       "analysis": {
-        "summary": "A confident and playful celebration of summer nights, self-assurance, and luxury, wrapped in a slow, chopped-and-screwed Southern Hip-Hop track that blends sultry vibes with tech-inspired bragging and smooth movements.",
-        "overallMood": "confident, sultry, playful",
+        "summary": "Summer Drip is a sultry, confident anthem that captures the allure and power of a woman in the summer heat, blending seduction with self-assuredness as she navigates attraction and loyalty.",
+        "overallMood": "Confident, seductive, sultry, playful",
         "themes": [
-          "summer nights",
-          "luxury and tech",
-          "confidence and allure",
-          "sultry movement",
-          "late-night vibes",
-          "self-assured femininity"
+          "Female empowerment",
+          "Summer seduction",
+          "Loyalty and temptation",
+          "Fashion and allure",
+          "Urban confidence",
+          "Summer nights"
         ],
         "palette": [
-          "#2E2E2E",
-          "#D4AF37",
-          "#5E5E5E",
-          "#8C6C4C"
+          "#D19E6B",
+          "#4B2E2E",
+          "#C3B8A7",
+          "#8A4B3B"
         ],
         "sections": [
           {
             "name": "Intro",
-            "emotion": "confident",
-            "intensity": 0.4,
-            "colorHint": "#d4af37",
+            "emotion": "Confident",
+            "intensity": 0.3,
+            "colorHint": "#d19e6b",
             "start": 0.22
           },
           {
             "name": "Ad-Libs",
-            "emotion": "playful",
-            "intensity": 0.3,
-            "colorHint": "#5e5e5e",
+            "emotion": "Sultry",
+            "intensity": 0.2,
+            "colorHint": "#c3b8a7",
             "start": 7.64
           },
           {
             "name": "Hook",
-            "emotion": "sultry",
-            "intensity": 0.6,
-            "colorHint": "#8c6c4c",
+            "emotion": "Seductive",
+            "intensity": 0.5,
+            "colorHint": "#8a4b3b",
             "start": 8.84
           },
           {
             "name": "Verse 1",
-            "emotion": "confident",
-            "intensity": 0.5,
-            "colorHint": "#2e2e2e",
+            "emotion": "Confident",
+            "intensity": 0.4,
+            "colorHint": "#d19e6b",
             "start": 49.71
           },
           {
             "name": "Hook - Chopped",
-            "emotion": "mysterious",
-            "intensity": 0.5,
-            "colorHint": "#5e5e5e",
+            "emotion": "Playful",
+            "intensity": 0.3,
+            "colorHint": "#c3b8a7",
             "start": 125.92
           },
           {
             "name": "Verse 2",
-            "emotion": "playful",
+            "emotion": "Sultry",
             "intensity": 0.4,
-            "colorHint": "#d4af37",
+            "colorHint": "#8a4b3b",
             "start": 130.64
           },
           {
             "name": "Bridge",
-            "emotion": "calm",
+            "emotion": "Confident",
             "intensity": 0.3,
-            "colorHint": "#2e2e2e",
+            "colorHint": "#d19e6b",
             "start": 154.74
           },
           {
-            "name": "Drop",
-            "emotion": "intense",
-            "intensity": 0.7,
-            "colorHint": "#8c6c4c",
+            "name": "Female Tease Rapper",
+            "emotion": "Seductive",
+            "intensity": 0.5,
+            "colorHint": "#8a4b3b",
+            "start": 154.74
+          },
+          {
+            "name": "Rappe",
+            "emotion": "Playful",
+            "intensity": 0.3,
+            "colorHint": "#c3b8a7",
             "start": 209.84
           },
           {
             "name": "Outro",
-            "emotion": "sultry",
-            "intensity": 0.6,
-            "colorHint": "#5e5e5e",
+            "emotion": "Sultry",
+            "intensity": 0.4,
+            "colorHint": "#8a4b3b",
             "start": 212.02
           }
         ],
         "keywords": [
           {
-            "word": "drip",
-            "emotion": "confident",
-            "imageryPrompt": "A glowing neon sign reflecting off a sleek black car, casting a long shadow under the moonlight."
+            "word": "Drip",
+            "emotion": "Confident",
+            "imageryPrompt": "A shimmering dress catching the summer sun, flowing in the breeze with the allure of a confident woman walking through a crowded street."
           },
           {
-            "word": "hips",
-            "emotion": "sultry",
-            "imageryPrompt": "A woman in a flowing dress swaying slowly under a flickering streetlamp, her silhouette dancing with the wind."
+            "word": "Sultry",
+            "emotion": "Seductive",
+            "imageryPrompt": "A woman with smooth, confident movements under the glow of a streetlight, her silhouette casting a sultry shadow on the pavement."
           },
           {
-            "word": "sun",
-            "emotion": "playful",
-            "imageryPrompt": "A golden sun peeking through the trees, casting dappled light on a woman walking barefoot through a grassy field."
+            "word": "Loyal",
+            "emotion": "Confident",
+            "imageryPrompt": "A woman standing tall in a sunlit room, her posture strong and unwavering, with a quiet intensity in her gaze."
           },
           {
-            "word": "cold",
-            "emotion": "calm",
-            "imageryPrompt": "A still lake reflecting a calm, starry night sky, with a lone figure standing at the water's edge."
+            "word": "Flame",
+            "emotion": "Passionate",
+            "imageryPrompt": "A slow-motion flame flickering on a summer night, mirroring the heat and passion in a woman's stride as she walks through a neon-lit city."
           },
           {
-            "word": "flame",
-            "emotion": "intense",
-            "imageryPrompt": "A roaring fire in a darkened room, with flickering shadows dancing on the walls as someone stands at its center."
+            "word": "Tease",
+            "emotion": "Playful",
+            "imageryPrompt": "A woman with a sly smile, her eyes sparkling with mischief as she leans slightly, teasing the air with a confident wink."
           },
           {
-            "word": "class",
-            "emotion": "confident",
-            "imageryPrompt": "A woman in an elegant evening gown standing confidently in front of a mirror, her reflection glowing with self-assurance."
+            "word": "Summer",
+            "emotion": "Sultry",
+            "imageryPrompt": "A golden summer sunset casting long shadows over a city street, with the scent of warm air and the distant sound of laughter."
           },
           {
-            "word": "timing",
-            "emotion": "playful",
-            "imageryPrompt": "A clock face with glowing hands, surrounded by floating notes and a dancer mid-twirl, perfectly in sync with the beat."
+            "word": "Midnight",
+            "emotion": "Mysterious",
+            "imageryPrompt": "A moonlit cityscape with glowing neon signs reflecting on wet pavement, as a woman walks with slow, deliberate steps under the cover of night."
           },
           {
-            "word": "thick",
-            "emotion": "sultry",
-            "imageryPrompt": "A dark, rich perfume bottle resting on a velvet table, its scent lingering in the air as a candle flickers nearby."
+            "word": "Seductive",
+            "emotion": "Sultry",
+            "imageryPrompt": "A woman with a slow, deliberate sway, her gaze locked with someone across a crowded club, the air thick with unspoken desire."
           },
           {
-            "word": "mind",
-            "emotion": "calm",
-            "imageryPrompt": "A peaceful lake at dawn, with a single leaf floating on the surface and a calm, meditative figure sitting on the shore."
+            "word": "Confident",
+            "emotion": "Strong",
+            "imageryPrompt": "A woman standing in the center of a stage, arms crossed, her presence commanding the room as the lights flash and the crowd watches in awe."
           }
         ]
       },

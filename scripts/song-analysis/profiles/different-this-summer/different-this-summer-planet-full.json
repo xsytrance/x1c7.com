@@ -1,127 +1,392 @@
 {
   "analysis": {
-    "summary": "\"Different This Summer\" is a motivational anthem about transforming hesitation into action during summer break, blending deep house beats with hip-hop storytelling to advocate for building one's own path rather than waiting for external validation.",
-    "overallMood": "Optimistic Drive",
+    "summary": "The song 'Different This Summer' is an uplifting anthem of transformation and self-improvement, celebrating the potential for change and growth during the summer season. It blends deep house and hip-hop elements to reflect a journey of personal empowerment and motivation.",
+    "overallMood": "Feel-good, motivational, and hopeful",
     "themes": [
-      "Self-empowerment and agency",
-      "Overcoming procrastination",
-      "Transition from stagnation to action",
-      "Discipline amidst leisure"
+      "Self-improvement",
+      "Change",
+      "Empowerment",
+      "Summer transformation",
+      "Ambition",
+      "Personal growth"
     ],
     "palette": [
       "#FFD700",
-      "#2C3E50",
-      "#8B4513",
-      "#F0E68C"
+      "#00BFFF",
+      "#8A2BE2",
+      "#20B2AA"
     ],
     "sections": [
       {
-        "name": "Intro",
-        "emotion": "Anticipatory warmth and realization of a new beginning.",
-        "intensity": 0.5,
+        "section": "Intro",
+        "emotion": "Hopeful",
+        "intensity": 0.12,
         "colorHint": "#ffd700",
-        "imageryPrompt": "Golden hour sunlight breaking through palm fronds over the ocean horizon.",
         "start": 0
       },
       {
-        "name": "Verse 1",
-        "emotion": "Realistic introspection mixed with growing determination.",
+        "section": "Verse 1",
+        "emotion": "Reflective",
         "intensity": 0.69,
-        "colorHint": "#8b4513",
-        "imageryPrompt": "A cluttered office desk transitioning into a view of blue ocean waves and rising sun.",
-        "start": 29.96
+        "colorHint": "#00bfff",
+        "start": 34.48
       },
       {
-        "name": "Pre-Chorus",
-        "emotion": "Building tension between current reality and dream destination.",
-        "intensity": 0.88,
-        "colorHint": "#2c3e50",
-        "imageryPrompt": "A glowing laptop screen reflecting on rippling water with a silhouette of an airplane wing.",
-        "start": 57.72
-      },
-      {
-        "name": "Chorus",
-        "emotion": "Explosive confidence and collective energy.",
-        "intensity": 0.93,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "Vibrant beach party scene with people dancing under a massive setting sun.",
-        "start": 63.46
-      },
-      {
-        "name": "Post-Chorus",
-        "emotion": "Focused ambition and strategic planning.",
-        "intensity": 0.6,
-        "colorHint": "#8b4513",
-        "imageryPrompt": "Close up of hands typing on a keyboard with palm trees blurred in the background.",
-        "start": 119.18
-      },
-      {
-        "name": "Verse 2",
-        "emotion": "Triumphant self-assurance and celebration.",
+        "section": "Pre-Chorus",
+        "emotion": "Energetic",
         "intensity": 0.41,
-        "colorHint": "#f0e68c",
-        "imageryPrompt": "Sparkling jewelry reflecting sunlight on a calm turquoise sea surface.",
-        "start": 180.54
+        "colorHint": "#8a2be2",
+        "start": 67.49
       },
       {
-        "name": "Pre-Chorus (2)",
-        "emotion": "Urgent push towards the final realization.",
+        "section": "Chorus",
+        "emotion": "Uplifting",
+        "intensity": 0.82,
+        "colorHint": "#20b2aa",
+        "start": 81.06
+      },
+      {
+        "section": "Post-Chorus",
+        "emotion": "Motivational",
+        "intensity": 0.91,
+        "colorHint": "#ffd700",
+        "start": 180.56
+      },
+      {
+        "section": "Verse 2",
+        "emotion": "Determined",
         "intensity": 0.21,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "Abstract geometric shapes forming a path leading to a bright light on water.",
-        "start": 203.96
+        "colorHint": "#00bfff",
+        "start": 212.24
       },
       {
-        "name": "Chorus (2)",
-        "emotion": "Empowering clarity and breaking free from constraints.",
-        "intensity": 0.26,
-        "colorHint": "#ffd700",
-        "imageryPrompt": "A powerful figure standing confidently on a cliff overlooking the ocean at sunset.",
-        "start": 212.22
+        "section": "Pre-Chorus",
+        "emotion": "Energetic",
+        "intensity": 0.68,
+        "colorHint": "#8a2be2",
+        "start": 220.28
       },
       {
-        "name": "Bridge",
-        "emotion": "Climactic release and total transformation.",
-        "intensity": 0.3,
-        "colorHint": "#f0e68c",
-        "imageryPrompt": "A massive explosion of golden light filling the sky over a serene beach.",
-        "start": 250.54
+        "section": "Chorus",
+        "emotion": "Uplifting",
+        "intensity": 0.64,
+        "colorHint": "#20b2aa",
+        "start": 244.88
+      },
+      {
+        "section": "Post-Chorus",
+        "emotion": "Motivational",
+        "intensity": 0.88,
+        "colorHint": "#ffd700",
+        "start": 250.56
       }
     ],
     "keywords": [
       {
-        "word": "spark",
-        "emotion": "Ignition and sudden inspiration.",
-        "imageryPrompt": "A tiny flame igniting into a roaring fire against a dark background, turning bright orange to yellow rapidly."
+        "word": "different",
+        "emotion": "Transformative",
+        "imageryPrompt": "A person standing at the edge of a vast, sunlit ocean, the horizon shimmering with new possibilities."
+      },
+      {
+        "word": "summer",
+        "emotion": "Vibrant",
+        "imageryPrompt": "A golden sunset over a beach, with palm trees swaying in the warm breeze and people dancing under the stars."
+      },
+      {
+        "word": "build",
+        "emotion": "Determined",
+        "imageryPrompt": "A person constructing a dream home on a cliff overlooking the ocean, tools in hand and a determined look on their face."
       },
       {
         "word": "fade",
-        "emotion": "Loss of momentum or hopelessness.",
-        "imageryPrompt": "Colors draining away from an object leaving only grayscale shadows on sand."
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A fading sunset, with the last rays of light reflecting off the water as the sky turns deep blue."
       },
       {
-        "word": "weather",
-        "emotion": "The passage of time and opportunity.",
-        "imageryPrompt": "Clouds moving quickly across a blue sky revealing patches of intense sunlight."
+        "word": "glow",
+        "emotion": "Inspiring",
+        "imageryPrompt": "A city skyline glowing in the evening, illuminated by the lights of progress and possibility."
+      },
+      {
+        "word": "life",
+        "emotion": "Hopeful",
+        "imageryPrompt": "A person standing on a cliff with the ocean in front of them, looking out at the horizon with a sense of purpose and excitement."
+      },
+      {
+        "word": "dream",
+        "emotion": "Aspirational",
+        "imageryPrompt": "A person floating on a balloon above a city, looking down at the lights and imagining a future full of opportunities."
+      },
+      {
+        "word": "change",
+        "emotion": "Dynamic",
+        "imageryPrompt": "A city skyline at dawn, with the sun rising over the buildings and casting long shadows as the world wakes up to a new day."
       },
       {
         "word": "vibe",
-        "emotion": "Atmospheric shift in energy levels.",
-        "imageryPrompt": "Ripples spreading through water changing the color from deep blue to shimmering turquoise instantly."
+        "emotion": "Energetic",
+        "imageryPrompt": "A crowded beach at sunset, with people dancing, laughing, and enjoying the energy of the moment."
       },
       {
-        "word": "glows",
-        "emotion": "Sustained warmth and success.",
-        "imageryPrompt": "A city skyline or beach party illuminated by warm artificial lights reflecting on wet pavement at night."
+        "word": "sun",
+        "emotion": "hope, renewal",
+        "imageryPrompt": "a golden sun rising over a quiet beach, casting long shadows on the sand"
       },
       {
-        "word": "hunger",
-        "emotion": "Deep drive and necessity for growth.",
-        "imageryPrompt": "Strong muscles tensing in silhouette against a rising sun, radiating raw energy."
+        "word": "wave",
+        "emotion": "opportunity, movement",
+        "imageryPrompt": "a powerful wave crashing on a rocky shore, symbolizing the momentum of change"
+      },
+      {
+        "word": "key",
+        "emotion": "realization, insight",
+        "imageryPrompt": "a shimmering key hanging from a wooden door, glowing with light"
+      },
+      {
+        "word": "weather",
+        "emotion": "urgency, time",
+        "imageryPrompt": "a stormy sky with dark clouds and lightning, contrasting with a bright sunset"
+      },
+      {
+        "word": "plan",
+        "emotion": "vision, strategy",
+        "imageryPrompt": "a detailed blueprint on a table, surrounded by laptops and coffee cups"
+      },
+      {
+        "word": "flow",
+        "emotion": "movement, rhythm",
+        "imageryPrompt": "a river flowing through a lush green valley, reflecting the sky"
+      },
+      {
+        "word": "rain",
+        "emotion": "growth, renewal",
+        "imageryPrompt": "a summer rainstorm pouring over a city skyline, with people walking with umbrellas"
+      },
+      {
+        "word": "machine",
+        "emotion": "control, progress",
+        "imageryPrompt": "a futuristic machine with glowing lights and moving parts, surrounded by people working on it"
+      },
+      {
+        "word": "vision",
+        "emotion": "clarity, purpose",
+        "imageryPrompt": "a person looking through a telescope at the stars, with a notebook in hand"
+      },
+      {
+        "word": "seed",
+        "emotion": "beginning, potential",
+        "imageryPrompt": "a small seed planted in the ground, with a sun shining above it"
+      },
+      {
+        "word": "signal",
+        "emotion": "clarity, opportunity",
+        "imageryPrompt": "a radio tuning in to a clear signal, with a person smiling in the background"
+      },
+      {
+        "word": "alarm",
+        "emotion": "stress, urgency",
+        "imageryPrompt": "a red alarm clock with a broken face, lying on a messy desk"
+      },
+      {
+        "word": "code",
+        "emotion": "innovation, progress",
+        "imageryPrompt": "a glowing computer screen with lines of code, surrounded by coffee cups and books"
+      },
+      {
+        "word": "gear",
+        "emotion": "preparation, readiness",
+        "imageryPrompt": "a set of shiny gears turning in a mechanical box, with light reflecting off them"
+      },
+      {
+        "word": "neon",
+        "emotion": "energy, vibrancy",
+        "imageryPrompt": "a city skyline lit up with neon lights, reflecting on wet pavement"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song 'Different This Summer' is a journey of personal transformation and empowerment, capturing the shift from stagnation to action. It reflects the internal struggle of someone ready to break free from routine and embrace a future shaped by their own efforts, using summer as a metaphor for change and growth.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "The intro sets a tone of anticipation and change, with the sun symbolizing the beginning of a new chapter.",
+          "keyLine": "Sun coming up like it knows something"
+        },
+        {
+          "name": "Verse 1 - Male Smooth Rap",
+          "interpretation": "This verse highlights the struggle with routine and the realization that change is necessary for growth.",
+          "keyLine": "Now I'm looking at the wave like wait, that's a key"
+        },
+        {
+          "name": "Pre-Chorus - Female Group Vocals",
+          "interpretation": "The pre-chorus emphasizes urgency and the importance of taking action to seize the moment.",
+          "keyLine": "We don't wanna waste no weather"
+        },
+        {
+          "name": "Chorus - Female Group Vocals",
+          "interpretation": "The chorus is a declaration of transformation and a commitment to building a better future.",
+          "keyLine": "This summer gon' be different"
+        },
+        {
+          "name": "Verse 2 - Male Smooth Rap",
+          "interpretation": "This verse shows a shift from passivity to proactive change, focusing on self-improvement and innovation.",
+          "keyLine": "Turn small sparks into summer rain"
+        },
+        {
+          "name": "Bridge - Female Lead with Group Harmonies",
+          "interpretation": "The bridge reflects on the vision of a future free from constraints and the importance of taking the first step.",
+          "keyLine": "But first we plant the seed"
+        },
+        {
+          "name": "Rap Bridge - Male",
+          "interpretation": "This bridge marks a turning point, showing the transition from feeling stuck to taking control of one's destiny.",
+          "keyLine": "Used to call it noise, now I hear the signal"
+        },
+        {
+          "name": "Final Chorus - Female Group Vocals + Male Ad-libs",
+          "interpretation": "The final chorus reinforces the theme of transformation and the collective effort to build a new future.",
+          "keyLine": "This summer gon' be different"
+        },
+        {
+          "name": "Outro - Female Group Vocals",
+          "interpretation": "The outro brings the song full circle, emphasizing the commitment to change and the promise of a new beginning.",
+          "keyLine": "Ooh, we gon' get it right"
+        },
+        {
+          "name": "Male Spoken Outro",
+          "interpretation": "The spoken outro serves as a personal affirmation of growth and renewal.",
+          "keyLine": "Same sun, New me"
+        }
+      ],
+      "keyLines": [
+        "Sun coming up like it knows something",
+        "This summer feel different already",
+        "Now I'm looking at the wave like wait, that's a key",
+        "We don't wanna waste no weather",
+        "This summer gon' be different",
+        "Turn small sparks into summer rain",
+        "But first we plant the seed",
+        "Used to call it noise, now I hear the signal",
+        "Same sun, New me"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "sun",
+          "emotion": "hope, renewal",
+          "imageryPrompt": "a golden sun rising over a quiet beach, casting long shadows on the sand",
+          "weight": 0.95
+        },
+        {
+          "word": "summer",
+          "emotion": "change, energy",
+          "imageryPrompt": "a vibrant summer day with palm trees swaying in the breeze and people working on laptops under the shade",
+          "weight": 0.92
+        },
+        {
+          "word": "wave",
+          "emotion": "opportunity, movement",
+          "imageryPrompt": "a powerful wave crashing on a rocky shore, symbolizing the momentum of change",
+          "weight": 0.91
+        },
+        {
+          "word": "key",
+          "emotion": "realization, insight",
+          "imageryPrompt": "a shimmering key hanging from a wooden door, glowing with light",
+          "weight": 0.89
+        },
+        {
+          "word": "weather",
+          "emotion": "urgency, time",
+          "imageryPrompt": "a stormy sky with dark clouds and lightning, contrasting with a bright sunset",
+          "weight": 0.88
+        },
+        {
+          "word": "different",
+          "emotion": "transformation, identity",
+          "imageryPrompt": "a person standing at the edge of a cliff, looking out at a vast ocean and a new horizon",
+          "weight": 0.87
+        },
+        {
+          "word": "build",
+          "emotion": "creation, effort",
+          "imageryPrompt": "a person constructing a house on a beach, with the sun setting behind them",
+          "weight": 0.86
+        },
+        {
+          "word": "plan",
+          "emotion": "vision, strategy",
+          "imageryPrompt": "a detailed blueprint on a table, surrounded by laptops and coffee cups",
+          "weight": 0.85
+        },
+        {
+          "word": "dream",
+          "emotion": "aspiration, longing",
+          "imageryPrompt": "a person lying on a beach, gazing at the stars and a distant island",
+          "weight": 0.84
+        },
+        {
+          "word": "flow",
+          "emotion": "movement, rhythm",
+          "imageryPrompt": "a river flowing through a lush green valley, reflecting the sky",
+          "weight": 0.83
+        },
+        {
+          "word": "rain",
+          "emotion": "growth, renewal",
+          "imageryPrompt": "a summer rainstorm pouring over a city skyline, with people walking with umbrellas",
+          "weight": 0.82
+        },
+        {
+          "word": "machine",
+          "emotion": "control, progress",
+          "imageryPrompt": "a futuristic machine with glowing lights and moving parts, surrounded by people working on it",
+          "weight": 0.81
+        },
+        {
+          "word": "vision",
+          "emotion": "clarity, purpose",
+          "imageryPrompt": "a person looking through a telescope at the stars, with a notebook in hand",
+          "weight": 0.8
+        },
+        {
+          "word": "seed",
+          "emotion": "beginning, potential",
+          "imageryPrompt": "a small seed planted in the ground, with a sun shining above it",
+          "weight": 0.79
+        },
+        {
+          "word": "signal",
+          "emotion": "clarity, opportunity",
+          "imageryPrompt": "a radio tuning in to a clear signal, with a person smiling in the background",
+          "weight": 0.78
+        },
+        {
+          "word": "alarm",
+          "emotion": "stress, urgency",
+          "imageryPrompt": "a red alarm clock with a broken face, lying on a messy desk",
+          "weight": 0.77
+        },
+        {
+          "word": "code",
+          "emotion": "innovation, progress",
+          "imageryPrompt": "a glowing computer screen with lines of code, surrounded by coffee cups and books",
+          "weight": 0.76
+        },
+        {
+          "word": "gear",
+          "emotion": "preparation, readiness",
+          "imageryPrompt": "a set of shiny gears turning in a mechanical box, with light reflecting off them",
+          "weight": 0.75
+        },
+        {
+          "word": "neon",
+          "emotion": "energy, vibrancy",
+          "imageryPrompt": "a city skyline lit up with neon lights, reflecting on wet pavement",
+          "weight": 0.74
+        }
+      ]
+    }
   },
-  "styleHint": "deep house, summer vocal house song with a hip-hop groove, a deep sub-bass bassline, warm Rhodes chords, 808 snare drums, breezy percussion, smooth melodic male rap verses (sung rap), catchy female group vocal hook, feel-good cookout energy, beach sunset vibe, glossy 2000s R&B polish with a deep house and progressive house flavor,, confident motivational undertone, danceable, clean American pop-rap anthem, no foreign vocals, chill",
+  "styleHint": "deep house, summer vocal house song with a hip-hop groove, a deep sub-bass bassline, warm Rhodes chords, 808 snare drums, breezy percussion, smooth melodic male rap verses (sung rap), catchy female group vocal hook, feel-good cookout energy, beach sunset vibe, glossy 2000s R&B polish with a deep house and progressive house flavor, confident motivational undertone, danceable, clean American pop-rap anthem, chill",
   "assets": {},
-  "generatedAt": "2026-07-09T17:21:16.548Z"
+  "generatedAt": "2026-07-24T00:41:31.748Z"
 }

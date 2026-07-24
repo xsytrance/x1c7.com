@@ -3,101 +3,115 @@
     "id": "fast-enough",
     "planet": {
       "analysis": {
-        "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
-        "overallMood": "Energetic and Playful",
+        "summary": "A high-energy, nostalgic R&B track celebrating a fast-paced, flirtatious relationship filled with playful confidence and a sense of invincibility, inspired by retro gaming and summer nights.",
+        "overallMood": "Energetic, playful, romantic, nostalgic",
         "themes": [
-          "Futuristic Romance",
-          "Gaming Nostalgia",
-          "High-Speed Pursuit",
-          "Unstoppable Love"
+          "Nostalgia",
+          "Playful romance",
+          "Speed and motion",
+          "Confidence and swagger",
+          "Summer vibes",
+          "Retro-futurism"
         ],
         "palette": [
           "#FFD700",
-          "#4B0082",
-          "#C91E36",
-          "#FFEBCD"
+          "#00BFFF",
+          "#FF6347",
+          "#20B2AA"
         ],
         "sections": [
           {
             "name": "Intro",
-            "emotion": "Curious and Anticipatory",
-            "intensity": 0.5,
-            "colorHintHex": "#FFD700",
-            "start": 1.62
+            "emotion": "Energetic",
+            "intensity": 0.7,
+            "colorHint": "#ffd700",
+            "start": 1.6400000000000001
           },
           {
             "name": "Verse 1",
-            "emotion": "Focused and Accelerating",
-            "intensity": 0.65,
-            "colorHintHex": "#4B0082",
-            "start": 20.16
+            "emotion": "Playful",
+            "intensity": 0.6,
+            "colorHint": "#00bfff",
+            "start": 22.88
           },
           {
             "name": "Pre-Hook",
-            "emotion": "Urgent and Electric",
-            "intensity": 0.75,
-            "colorHintHex": "#C91E36",
-            "start": 37.64
+            "emotion": "Romantic",
+            "intensity": 0.5,
+            "colorHint": "#ff6347",
+            "start": 45.66
           },
           {
             "name": "Hook",
-            "emotion": "Triumphant and Euphoric",
-            "intensity": 0.88,
-            "colorHintHex": "#FFEBCD",
-            "start": 45.64
+            "emotion": "Confident",
+            "intensity": 0.8,
+            "colorHint": "#20b2aa",
+            "start": 47.88
+          },
+          {
+            "name": "Post-Hook",
+            "emotion": "Energetic",
+            "intensity": 0.7,
+            "colorHint": "#ffd700",
+            "start": 95.74
           },
           {
             "name": "Verse 2",
-            "emotion": "Smooth and Confident",
+            "emotion": "Nostalgic",
             "intensity": 0.6,
-            "colorHintHex": "#4B0082",
-            "start": 95.72
+            "colorHint": "#00bfff",
+            "start": 104.56
           },
           {
             "name": "Bridge",
-            "emotion": "Explosive Release",
-            "intensity": 0.95,
-            "colorHintHex": "#FFD700",
-            "start": 104.54
+            "emotion": "Fast-paced",
+            "intensity": 0.8,
+            "colorHint": "#ff6347",
+            "start": 104.56
           },
           {
             "name": "Final Hook",
-            "emotion": "Victorious and Joyful",
-            "intensity": 0.82,
-            "colorHintHex": "#FFEBCD",
-            "start": 108.3
+            "emotion": "Infectious",
+            "intensity": 0.9,
+            "colorHint": "#20b2aa",
+            "start": 108.32
           }
         ],
         "keywords": [
           {
-            "word": "Fast",
-            "emotion": "Urgent Thrill",
-            "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+            "word": "Fast enough",
+            "emotion": "Energetic",
+            "imageryPrompt": "A glowing neon-lit cityscape with two silhouettes sprinting through the streets, their movements leaving trails of light behind them."
           },
           {
-            "word": "Boost",
-            "emotion": "Empowered Lift",
-            "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+            "word": "Mission",
+            "emotion": "Nostalgic",
+            "imageryPrompt": "A retro arcade cabinet flickering with pixelated graphics, surrounded by a vibrant summer night filled with glowing signs and laughter."
           },
           {
-            "word": "Caught",
-            "emotion": "Playful Fearlessness",
-            "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
-          },
-          {
-            "word": "Lights",
-            "emotion": "Vibrant Wonder",
-            "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
-          },
-          {
-            "word": "Level",
-            "emotion": "Achievement Joy",
-            "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+            "word": "Heart in overdrive",
+            "emotion": "Romantic",
+            "imageryPrompt": "A glowing heart pulsating in the center of a starry night, surrounded by swirling colors and soft, glowing particles."
           },
           {
             "word": "Invincible",
-            "emotion": "Confident Power",
-            "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+            "emotion": "Confident",
+            "imageryPrompt": "A shadowy figure standing on top of a skyscraper, surrounded by a halo of light and floating power-ups from a retro video game."
+          },
+          {
+            "word": "Touch the sky",
+            "emotion": "Playful",
+            "imageryPrompt": "Two people jumping together on a sunny beach, their shadows stretching long into the sky as the sun dips below the horizon."
+          },
+          {
+            "word": "No time to waste",
+            "emotion": "Energetic",
+            "imageryPrompt": "A ticking clock with glowing red numbers, surrounded by a blur of motion and vibrant, fast-moving shapes."
+          },
+          {
+            "word": "New level",
+            "emotion": "Nostalgic",
+            "imageryPrompt": "A pixelated screen displaying 'Level Unlocked' with a glowing progress bar and a retro game character standing triumphantly in the center."
           }
         ]
       },

@@ -1,25 +1,51 @@
 {
- "v": 2,
- "acts": [
-  {
-   "start": 150,
-   "end": 173,
-   "label": "THE FLAME RISES",
-   "why": "Captures the 'flame' and confident strut from Verse 2 where intensity shifts to playful ar"
-  },
-  {
-   "start": 205,
-   "end": 230,
-   "label": "MIDNIGHT ALLURE",
-   "why": "Highlights the sultry confidence of moving smooth in the midnight section before the outro"
+  "v": 2,
+  "directed": "SUMMER DRIP 60s cut — hand-choreographed 2026-07-23 (window 176.4–236.9)",
+  "acts": [
+    {
+      "start": 177.3,
+      "end": 192.2,
+      "label": "BIGGER · SLOWER",
+      "why": "the hook arrives pitched down — hold the world up for it"
+    },
+    {
+      "start": 204.2,
+      "end": 207.9,
+      "label": "HUNGRY EYES",
+      "why": "the all-all-all chop run — every stare in the room at once"
+    },
+    {
+      "start": 233.9,
+      "end": 237.6,
+      "label": "SUMMER DRIP",
+      "why": "the title chop finale — drip it, drip it, drip it"
+    }
+  ],
+  "modes": [
+    { "start": 177.3, "end": 192.2, "mode": "phrase" },
+    { "start": 192.2, "end": 209.6, "mode": "dynamic" },
+    { "start": 209.6, "end": 217.6, "mode": "phrase" },
+    { "start": 217.6, "end": 226.4, "mode": "dynamic" },
+    { "start": 226.4, "end": 233.9, "mode": "phrase" },
+    { "start": 233.9, "end": 238.0, "mode": "dynamic" }
+  ],
+  "scene": "SYRUP",
+  "words": {
+    "cold": "freeze",
+    "slow": "melt",
+    "sweet": "bloom",
+    "hotter": "burn",
+    "drip": "drip",
+    "heart": "chop",
+    "brown": "chop",
+    "all": "chop",
+    "mind": "chop",
+    "midnight": "chromatic",
+    "sundress": "shimmer",
+    "perfume": "dissolve",
+    "eyes": "echo",
+    "hips": "wave",
+    "game": "slam",
+    "dress": "shimmer"
   }
- ],
- "words": {
-  "slow": "melt",
-  "flame": "pulse",
-  "hotter": "burn",
-  "drip": "shimmer",
-  "cold": "freeze",
-  "sweet": "bloom"
- }
 }

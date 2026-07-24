@@ -1,405 +1,432 @@
 {
   "analysis": {
-    "summary": "A confident and playful celebration of summer nights, self-assurance, and luxury, wrapped in a slow, chopped-and-screwed Southern Hip-Hop track that blends sultry vibes with tech-inspired bragging and smooth movements.",
-    "overallMood": "confident, sultry, playful",
+    "summary": "Summer Drip is a sultry, confident anthem that captures the allure and power of a woman in the summer heat, blending seduction with self-assuredness as she navigates attraction and loyalty.",
+    "overallMood": "Confident, seductive, sultry, playful",
     "themes": [
-      "summer nights",
-      "luxury and tech",
-      "confidence and allure",
-      "sultry movement",
-      "late-night vibes",
-      "self-assured femininity"
+      "Female empowerment",
+      "Summer seduction",
+      "Loyalty and temptation",
+      "Fashion and allure",
+      "Urban confidence",
+      "Summer nights"
     ],
     "palette": [
-      "#2E2E2E",
-      "#D4AF37",
-      "#5E5E5E",
-      "#8C6C4C"
+      "#D19E6B",
+      "#4B2E2E",
+      "#C3B8A7",
+      "#8A4B3B"
     ],
     "sections": [
       {
         "name": "Intro",
-        "emotion": "confident",
-        "intensity": 0.8,
-        "colorHint": "#d4af37",
+        "emotion": "Confident",
+        "intensity": 0.44,
+        "colorHint": "#d19e6b",
         "start": 0.22
       },
       {
         "name": "Ad-Libs",
-        "emotion": "playful",
-        "intensity": 0.79,
-        "colorHint": "#5e5e5e",
+        "emotion": "Sultry",
+        "intensity": 0.06,
+        "colorHint": "#c3b8a7",
         "start": 7.64
       },
       {
         "name": "Hook",
-        "emotion": "sultry",
-        "intensity": 0.85,
-        "colorHint": "#8c6c4c",
+        "emotion": "Seductive",
+        "intensity": 0.68,
+        "colorHint": "#8a4b3b",
         "start": 8.84
       },
       {
         "name": "Verse 1",
-        "emotion": "confident",
-        "intensity": 0.76,
-        "colorHint": "#2e2e2e",
+        "emotion": "Confident",
+        "intensity": 0.66,
+        "colorHint": "#d19e6b",
         "start": 49.71
       },
       {
         "name": "Hook - Chopped",
-        "emotion": "mysterious",
-        "intensity": 0.79,
-        "colorHint": "#5e5e5e",
+        "emotion": "Playful",
+        "intensity": 0.63,
+        "colorHint": "#c3b8a7",
         "start": 125.92
       },
       {
         "name": "Verse 2",
-        "emotion": "playful",
-        "intensity": 0.59,
-        "colorHint": "#d4af37",
+        "emotion": "Sultry",
+        "intensity": 0.64,
+        "colorHint": "#8a4b3b",
         "start": 130.64
       },
       {
         "name": "Bridge",
-        "emotion": "calm",
-        "intensity": 0.16,
-        "colorHint": "#2e2e2e",
+        "emotion": "Confident",
+        "intensity": 0.69,
+        "colorHint": "#d19e6b",
         "start": 154.74
       },
       {
-        "name": "Drop",
-        "emotion": "intense",
-        "intensity": 0.21,
-        "colorHint": "#8c6c4c",
+        "name": "Female Tease Rapper",
+        "emotion": "Seductive",
+        "intensity": 0.62,
+        "colorHint": "#8a4b3b",
+        "start": 154.74
+      },
+      {
+        "name": "Rappe",
+        "emotion": "Playful",
+        "intensity": 0.79,
+        "colorHint": "#c3b8a7",
         "start": 209.84
       },
       {
         "name": "Outro",
-        "emotion": "sultry",
-        "intensity": 0.18,
-        "colorHint": "#5e5e5e",
+        "emotion": "Sultry",
+        "intensity": 0.51,
+        "colorHint": "#8a4b3b",
         "start": 212.02
       }
     ],
     "keywords": [
       {
         "word": "drip",
-        "emotion": "confident",
-        "imageryPrompt": "A glowing neon sign reflecting off a sleek black car, casting a long shadow under the moonlight."
+        "emotion": "Confident",
+        "imageryPrompt": "A shimmering dress catching the summer sun, flowing in the breeze with the allure of a confident woman walking through a crowded street."
       },
       {
-        "word": "hips",
-        "emotion": "sultry",
-        "imageryPrompt": "A woman in a flowing dress swaying slowly under a flickering streetlamp, her silhouette dancing with the wind."
+        "word": "sultry",
+        "emotion": "Seductive",
+        "imageryPrompt": "A woman with smooth, confident movements under the glow of a streetlight, her silhouette casting a sultry shadow on the pavement."
       },
       {
-        "word": "sun",
-        "emotion": "playful",
-        "imageryPrompt": "A golden sun peeking through the trees, casting dappled light on a woman walking barefoot through a grassy field."
-      },
-      {
-        "word": "cold",
-        "emotion": "calm",
-        "imageryPrompt": "A still lake reflecting a calm, starry night sky, with a lone figure standing at the water's edge."
+        "word": "loyal",
+        "emotion": "Confident",
+        "imageryPrompt": "A woman standing tall in a sunlit room, her posture strong and unwavering, with a quiet intensity in her gaze."
       },
       {
         "word": "flame",
-        "emotion": "intense",
-        "imageryPrompt": "A roaring fire in a darkened room, with flickering shadows dancing on the walls as someone stands at its center."
+        "emotion": "Passionate",
+        "imageryPrompt": "A slow-motion flame flickering on a summer night, mirroring the heat and passion in a woman's stride as she walks through a neon-lit city."
       },
       {
-        "word": "class",
-        "emotion": "confident",
-        "imageryPrompt": "A woman in an elegant evening gown standing confidently in front of a mirror, her reflection glowing with self-assurance."
+        "word": "tease",
+        "emotion": "Playful",
+        "imageryPrompt": "A woman with a sly smile, her eyes sparkling with mischief as she leans slightly, teasing the air with a confident wink."
       },
       {
-        "word": "timing",
-        "emotion": "playful",
-        "imageryPrompt": "A clock face with glowing hands, surrounded by floating notes and a dancer mid-twirl, perfectly in sync with the beat."
+        "word": "summer",
+        "emotion": "Sultry",
+        "imageryPrompt": "A golden summer sunset casting long shadows over a city street, with the scent of warm air and the distant sound of laughter."
       },
       {
-        "word": "thick",
-        "emotion": "sultry",
-        "imageryPrompt": "A dark, rich perfume bottle resting on a velvet table, its scent lingering in the air as a candle flickers nearby."
+        "word": "midnight",
+        "emotion": "Mysterious",
+        "imageryPrompt": "A moonlit cityscape with glowing neon signs reflecting on wet pavement, as a woman walks with slow, deliberate steps under the cover of night."
       },
       {
-        "word": "mind",
-        "emotion": "calm",
-        "imageryPrompt": "A peaceful lake at dawn, with a single leaf floating on the surface and a calm, meditative figure sitting on the shore."
+        "word": "seductive",
+        "emotion": "Sultry",
+        "imageryPrompt": "A woman with a slow, deliberate sway, her gaze locked with someone across a crowded club, the air thick with unspoken desire."
+      },
+      {
+        "word": "confident",
+        "emotion": "Strong",
+        "imageryPrompt": "A woman standing in the center of a stage, arms crossed, her presence commanding the room as the lights flash and the crowd watches in awe."
       },
       {
         "word": "sundress",
-        "emotion": "elegance, allure, confidence",
-        "imageryPrompt": "A woman in a flowing sundress walking through a summer night under the glow of streetlights, her silhouette glowing softly in the heat."
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman in a flowing sundress walking through a city at night, her silhouette glowing under the streetlights"
+      },
+      {
+        "word": "hips",
+        "emotion": "seduction, movement",
+        "imageryPrompt": "A woman swaying her hips as she walks, the fabric of her dress flowing with her motion"
       },
       {
         "word": "glow",
-        "emotion": "radiance, allure, presence",
-        "imageryPrompt": "A woman's skin glowing under the summer sun, her silhouette lit from behind by the light of a streetlamp."
-      },
-      {
-        "word": "smile",
-        "emotion": "confidence, allure, charm",
-        "imageryPrompt": "A woman with a slow, knowing smile, her eyes locked on someone across the room, the light catching the curve of her lips."
-      },
-      {
-        "word": "skin",
-        "emotion": "confidence, allure, presence",
-        "imageryPrompt": "A woman's skin glowing under the summer sun, the light catching the curve of her arms and shoulders."
+        "emotion": "allure, confidence",
+        "imageryPrompt": "A woman's skin glowing under the sun, her silhouette outlined by the light"
       },
       {
         "word": "perfume",
-        "emotion": "allure, presence, magnetism",
-        "imageryPrompt": "A woman walking through a crowded room, the scent of her perfume lingering in the air, drawing people toward her."
+        "emotion": "allure, sensuality",
+        "imageryPrompt": "A woman walking through a crowded room, her perfume lingering in the air, drawing attention"
       },
       {
-        "word": "dress",
-        "emotion": "elegance, confidence, allure",
-        "imageryPrompt": "A woman in a tight-fitting summer dress, the fabric catching the light as she moves through the crowd."
-      },
-      {
-        "word": "slit",
-        "emotion": "confidence, allure, movement",
-        "imageryPrompt": "A woman walking with a slow, deliberate gait, the slit on the side of her dress revealing just enough to draw attention."
-      },
-      {
-        "word": "vows",
-        "emotion": "loyalty, commitment, tension",
-        "imageryPrompt": "A woman standing with her hands on her hips, a look of quiet determination on her face as she holds a piece of paper in her hand."
-      },
-      {
-        "word": "thighs",
-        "emotion": "confidence, allure, movement",
-        "imageryPrompt": "A woman walking with a slow, deliberate gait, her thighs visible beneath the hem of her dress, drawing eyes as she moves."
+        "word": "skin",
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman's brown skin glowing under the light, her presence commanding the room"
       },
       {
         "word": "curve",
-        "emotion": "confidence, allure, shape",
-        "imageryPrompt": "A woman with a curvy figure walking through a dimly lit room, the light catching the curve of her hips and waist."
-      },
-      {
-        "word": "chain",
-        "emotion": "confidence, presence, power",
-        "imageryPrompt": "A woman wearing a gold chain around her neck, the light catching the links as she moves through the crowd."
-      },
-      {
-        "word": "heat",
-        "emotion": "intensity, presence, allure",
-        "imageryPrompt": "A woman standing in the middle of a hot summer night, the heat around her creating a magnetic pull that draws people in."
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman's curves on display, her silhouette outlined by the light as she walks"
       },
       {
         "word": "glance",
-        "emotion": "allure, presence, attention",
-        "imageryPrompt": "A woman turning her head slightly, a slow glance that captures the attention of everyone in the room."
+        "emotion": "attention, allure",
+        "imageryPrompt": "A woman's glance locking eyes with someone across the room, her presence commanding their attention"
       },
       {
-        "word": "glide",
-        "emotion": "grace, confidence, movement",
-        "imageryPrompt": "A woman walking with a slow, smooth glide, her movements effortless and full of grace."
+        "word": "smile",
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman's smile lighting up the room, her presence drawing others in with its warmth"
+      },
+      {
+        "word": "step",
+        "emotion": "movement, confidence",
+        "imageryPrompt": "A woman taking a slow, deliberate step, her presence commanding the space around her"
+      },
+      {
+        "word": "light",
+        "emotion": "allure, confidence",
+        "imageryPrompt": "A woman glowing under the light, her silhouette outlined in gold as she walks"
+      },
+      {
+        "word": "gold",
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman wearing a gold chain, her presence radiating power and confidence"
+      },
+      {
+        "word": "chain",
+        "emotion": "power, confidence",
+        "imageryPrompt": "A woman wearing a gold chain, her presence radiating power and confidence"
+      },
+      {
+        "word": "dress",
+        "emotion": "confidence, allure",
+        "imageryPrompt": "A woman in a tight-fitting dress, her silhouette outlined by the light as she walks"
+      },
+      {
+        "word": "slit",
+        "emotion": "allure, confidence",
+        "imageryPrompt": "A woman walking with a slit in her dress, her legs on display as she moves with confidence"
       }
     ],
     "meaning": {
-      "story": "The song is a sultry, confident ode to summer nights and the allure of a woman who commands attention with her presence, style, and self-assurance. Beneath the playful and teasing surface lies a tension between loyalty and temptation, as she navigates the pull of desire while maintaining control and pride in her choices.",
+      "story": "Summer Drip is a sly, confident declaration of female power and allure, where seduction is a calculated move and self-assurance is armor. Beneath the sultry surface lies a narrative of loyalty, control, and the art of keeping others on edge — a woman who wields her beauty and presence like a weapon, never losing her grip on her own desires or boundaries.",
       "sections": [
         {
           "name": "Intro",
-          "interpretation": "A slow, sultry setup that introduces the heat and intensity of the summer night.",
+          "interpretation": "A sultry prelude that sets the tone with heat and allure.",
           "keyLine": "Heat turned up. Every stare feel loud."
         },
         {
           "name": "Ad-Libs",
-          "interpretation": "Playful, teasing phrases that highlight the summer vibe and the woman's confident walk.",
+          "interpretation": "Playful, teasing interjections that highlight the song's seductive energy.",
           "keyLine": "Summer. Drip. Hips. Flip. Walk mean."
         },
         {
           "name": "Hook",
-          "interpretation": "A sultry, confident declaration of her presence and allure under the summer light.",
+          "interpretation": "A confident, seductive anthem that captures the essence of the song.",
           "keyLine": "Heart stay cold but my stride got flame."
         },
         {
           "name": "Verse 1",
-          "interpretation": "A confident portrayal of her commanding presence and elegance in a social setting.",
-          "keyLine": "This dress fit tight, little slit on the side, moving through the crowd with my natural pride."
+          "interpretation": "A portrayal of a woman commanding attention with her presence and poise.",
+          "keyLine": "Whole room staring like a queen on a throne."
         },
         {
           "name": "Hook - Chopped",
-          "interpretation": "A slower, more deliberate version of the hook emphasizing her controlled, high-class movement.",
-          "keyLine": "Every little step got a high-class game."
+          "interpretation": "A condensed version of the hook that retains its sultry and confident tone.",
+          "keyLine": "Heart stay cold but my stride got flame."
         },
         {
           "name": "Verse 2",
-          "interpretation": "A celebration of her friends and the power of their presence, highlighting strength and allure.",
-          "keyLine": "Bold red lip make the whole block slow."
+          "interpretation": "A celebration of sisterhood and strength, with a focus on boldness and loyalty.",
+          "keyLine": "Side eye deadly like a hand-penned letter."
         },
         {
-          "name": "Bridge - Crew Argument",
-          "interpretation": "A dynamic exchange that reinforces loyalty, pride, and the power of the group.",
-          "keyLine": "I got vows on paper but I still won’t slide."
+          "name": "Bridge",
+          "interpretation": "A moment of defiance and resolve, emphasizing loyalty and self-control.",
+          "keyLine": "I got vows on paper but I still won't slide."
         },
         {
           "name": "Female Tease Rapper",
-          "interpretation": "A playful and confident tease that highlights her allure and the effect she has on others.",
+          "interpretation": "A playful yet commanding verse that highlights the allure and confidence of the woman.",
           "keyLine": "You talk all day about loyal and pure, but you breathe real hard when I walk through the door."
         },
         {
-          "name": "Verse 3 - Fast Crew Rapper",
-          "interpretation": "A fast-paced reflection on her life, style, and the balance between commitment and temptation.",
-          "keyLine": "Partner at home and they still top tier, but the DMs wild when the summer get near."
+          "name": "Rapper 2",
+          "interpretation": "A subtle challenge that reinforces the theme of control and allure.",
+          "keyLine": "You post fly pics with a sly little sign."
+        },
+        {
+          "name": "Rapper 1",
+          "interpretation": "A response that reinforces the theme of guarding one's boundaries.",
+          "keyLine": "Pretty little look but you guard that line."
+        },
+        {
+          "name": "Verse 3",
+          "interpretation": "A fast-paced look at the woman's life, filled with confidence and allure.",
+          "keyLine": "Partner at home and they still top tier."
         },
         {
           "name": "Hook - Bigger, Slower",
-          "interpretation": "A more expansive and slower version of the hook, emphasizing her confidence and allure.",
-          "keyLine": "Perfume thick, got ‘em stuck in a bind."
+          "interpretation": "A slower, more deliberate version of the hook that emphasizes the song's core message.",
+          "keyLine": "Heart stay cold but my stride got flame."
         },
         {
-          "name": "Verse 4 - Deep Slow Flex",
-          "interpretation": "A slow, deliberate flex on her presence, style, and ability to command attention.",
-          "keyLine": "Sun hit skin while the clouds roll by."
+          "name": "Verse 4",
+          "interpretation": "A slow, sultry reflection on power, presence, and control.",
+          "keyLine": "Mind doing pushups, guard keep pace."
         },
         {
           "name": "Breakdown",
-          "interpretation": "A concise, powerful summary of her allure and the impact she has on others.",
+          "interpretation": "A moment of emphasis on the woman's confidence and allure.",
           "keyLine": "Dress game too high. Leg line still fly."
         },
         {
+          "name": "Taken Girl",
+          "interpretation": "A moment of defiance and control, reinforcing the theme of loyalty.",
+          "keyLine": "Can somebody chill out all this thirst, uh?"
+        },
+        {
+          "name": "Whole Crew",
+          "interpretation": "A collective affirmation of the woman's power and allure.",
+          "keyLine": "Hold that crown."
+        },
+        {
           "name": "Outro",
-          "interpretation": "A confident, slow fade-out that leaves the listener with the lingering presence of summer and her allure.",
-          "keyLine": "Summer drip on the late-night ave."
+          "interpretation": "A confident, sultry conclusion that reinforces the song's core message.",
+          "keyLine": "Testing my grace. Clear mind. Still yours."
         }
       ],
       "keyLines": [
-        "I feel this sundress glow under the day light, hips swing slow, moving smooth in the midnight.",
-        "Heart stay cold but my stride got flame, every little step got a high-class game.",
-        "Smile so sweet with the timing just right, brown skin shine with the streetlamp light.",
-        "Perfume thick, got ‘em stuck in a bind, all these hungry eyes got ‘em losing they mind.",
-        "This dress fit tight, little slit on the side, moving through the crowd with my natural pride.",
-        "I got vows on paper but I still won’t slide."
+        "Heart stay cold but my stride got flame",
+        "I feel this sundress glow under the day light",
+        "Perfume thick, got 'em stuck in a bind",
+        "Every little step got a high-class game",
+        "Smile so sweet with the timing just right",
+        "Brown skin shine with the streetlamp light"
       ],
       "extendedKeywords": [
         {
           "word": "sundress",
-          "emotion": "elegance, allure, confidence",
-          "imageryPrompt": "A woman in a flowing sundress walking through a summer night under the glow of streetlights, her silhouette glowing softly in the heat.",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman in a flowing sundress walking through a city at night, her silhouette glowing under the streetlights",
           "weight": 0.9
         },
         {
           "word": "hips",
-          "emotion": "confidence, allure, movement",
-          "imageryPrompt": "A woman swaying her hips slowly in a dimly lit club, the movement drawing all eyes to her.",
+          "emotion": "seduction, movement",
+          "imageryPrompt": "A woman swaying her hips as she walks, the fabric of her dress flowing with her motion",
           "weight": 0.85
         },
         {
           "word": "glow",
-          "emotion": "radiance, allure, presence",
-          "imageryPrompt": "A woman's skin glowing under the summer sun, her silhouette lit from behind by the light of a streetlamp.",
+          "emotion": "allure, confidence",
+          "imageryPrompt": "A woman's skin glowing under the sun, her silhouette outlined by the light",
           "weight": 0.9
-        },
-        {
-          "word": "cold",
-          "emotion": "calm, control, confidence",
-          "imageryPrompt": "A woman standing in the center of a room, her expression calm and unreadable, surrounded by people watching her.",
-          "weight": 0.8
         },
         {
           "word": "flame",
-          "emotion": "passion, energy, allure",
-          "imageryPrompt": "A woman walking through a crowded street, her presence like a flame that draws people in and warms the air around her.",
-          "weight": 0.85
-        },
-        {
-          "word": "smile",
-          "emotion": "confidence, allure, charm",
-          "imageryPrompt": "A woman with a slow, knowing smile, her eyes locked on someone across the room, the light catching the curve of her lips.",
-          "weight": 0.8
-        },
-        {
-          "word": "skin",
-          "emotion": "confidence, allure, presence",
-          "imageryPrompt": "A woman's skin glowing under the summer sun, the light catching the curve of her arms and shoulders.",
-          "weight": 0.85
-        },
-        {
-          "word": "perfume",
-          "emotion": "allure, presence, magnetism",
-          "imageryPrompt": "A woman walking through a crowded room, the scent of her perfume lingering in the air, drawing people toward her.",
-          "weight": 0.8
-        },
-        {
-          "word": "dress",
-          "emotion": "elegance, confidence, allure",
-          "imageryPrompt": "A woman in a tight-fitting summer dress, the fabric catching the light as she moves through the crowd.",
+          "emotion": "passion, power",
+          "imageryPrompt": "A woman's stride leaving a trail of fire behind her, her presence burning through the air",
           "weight": 0.9
         },
         {
-          "word": "slit",
-          "emotion": "confidence, allure, movement",
-          "imageryPrompt": "A woman walking with a slow, deliberate gait, the slit on the side of her dress revealing just enough to draw attention.",
-          "weight": 0.8
+          "word": "perfume",
+          "emotion": "allure, sensuality",
+          "imageryPrompt": "A woman walking through a crowded room, her perfume lingering in the air, drawing attention",
+          "weight": 0.85
         },
         {
-          "word": "vows",
-          "emotion": "loyalty, commitment, tension",
-          "imageryPrompt": "A woman standing with her hands on her hips, a look of quiet determination on her face as she holds a piece of paper in her hand.",
-          "weight": 0.75
+          "word": "skin",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman's brown skin glowing under the light, her presence commanding the room",
+          "weight": 0.9
         },
         {
-          "word": "thighs",
-          "emotion": "confidence, allure, movement",
-          "imageryPrompt": "A woman walking with a slow, deliberate gait, her thighs visible beneath the hem of her dress, drawing eyes as she moves.",
-          "weight": 0.8
+          "word": "drip",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman dripping in confidence, her style and presence radiating power",
+          "weight": 0.9
         },
         {
-          "word": "glow",
-          "emotion": "radiance, presence, allure",
-          "imageryPrompt": "A woman standing in the middle of a summer night, her skin glowing under the light of the moon and streetlamps.",
+          "word": "sultry",
+          "emotion": "seduction, allure",
+          "imageryPrompt": "A woman with a sultry gaze, her presence drawing others in with a slow, deliberate motion",
           "weight": 0.85
         },
         {
           "word": "curve",
-          "emotion": "confidence, allure, shape",
-          "imageryPrompt": "A woman with a curvy figure walking through a dimly lit room, the light catching the curve of her hips and waist.",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman's curves on display, her silhouette outlined by the light as she walks",
+          "weight": 0.85
+        },
+        {
+          "word": "glance",
+          "emotion": "attention, allure",
+          "imageryPrompt": "A woman's glance locking eyes with someone across the room, her presence commanding their attention",
+          "weight": 0.8
+        },
+        {
+          "word": "smile",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman's smile lighting up the room, her presence drawing others in with its warmth",
+          "weight": 0.85
+        },
+        {
+          "word": "step",
+          "emotion": "movement, confidence",
+          "imageryPrompt": "A woman taking a slow, deliberate step, her presence commanding the space around her",
+          "weight": 0.8
+        },
+        {
+          "word": "light",
+          "emotion": "allure, confidence",
+          "imageryPrompt": "A woman glowing under the light, her silhouette outlined in gold as she walks",
+          "weight": 0.85
+        },
+        {
+          "word": "gold",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman wearing a gold chain, her presence radiating power and confidence",
           "weight": 0.8
         },
         {
           "word": "chain",
-          "emotion": "confidence, presence, power",
-          "imageryPrompt": "A woman wearing a gold chain around her neck, the light catching the links as she moves through the crowd.",
+          "emotion": "power, confidence",
+          "imageryPrompt": "A woman wearing a gold chain, her presence radiating power and confidence",
           "weight": 0.8
         },
         {
-          "word": "sun",
-          "emotion": "warmth, presence, allure",
-          "imageryPrompt": "A woman standing in the middle of a summer day, the sun casting a golden glow over her skin and dress.",
-          "weight": 0.85
-        },
-        {
-          "word": "drip",
-          "emotion": "confidence, allure, style",
-          "imageryPrompt": "A woman walking through a summer night, her outfit dripping with style and confidence, every movement drawing attention.",
+          "word": "dress",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman in a tight-fitting dress, her silhouette outlined by the light as she walks",
           "weight": 0.9
         },
         {
-          "word": "heat",
-          "emotion": "intensity, presence, allure",
-          "imageryPrompt": "A woman standing in the middle of a hot summer night, the heat around her creating a magnetic pull that draws people in.",
+          "word": "slit",
+          "emotion": "allure, confidence",
+          "imageryPrompt": "A woman walking with a slit in her dress, her legs on display as she moves with confidence",
           "weight": 0.8
         },
         {
-          "word": "glance",
-          "emotion": "allure, presence, attention",
-          "imageryPrompt": "A woman turning her head slightly, a slow glance that captures the attention of everyone in the room.",
-          "weight": 0.8
+          "word": "curve",
+          "emotion": "confidence, allure",
+          "imageryPrompt": "A woman's curves on display, her silhouette outlined by the light as she walks",
+          "weight": 0.85
         },
         {
-          "word": "glide",
-          "emotion": "grace, confidence, movement",
-          "imageryPrompt": "A woman walking with a slow, smooth glide, her movements effortless and full of grace.",
+          "word": "glow",
+          "emotion": "allure, confidence",
+          "imageryPrompt": "A woman's skin glowing under the sun, her silhouette outlined by the light",
+          "weight": 0.9
+        },
+        {
+          "word": "step",
+          "emotion": "movement, confidence",
+          "imageryPrompt": "A woman taking a slow, deliberate step, her presence commanding the space around her",
           "weight": 0.8
         }
       ]
     }
   },
-  "styleHint": "Chopped & screwed dirty south rap, hard booming bass, slow syrupy tempo, heavy sub-bass, dark southern trap drums, trunk-rattling kick, rattling hi-hats, chopped vocal ad-libs, slowed hook, deep pitched-down backing vocals, multiple male rappers with different southern twangs and flows, one melodic raspy hook vocalist, gritty but playful tech-rap energy, luxury computer hardware flex anthem, funny but not cheesy, clean lyrics, no profanity, no explicit metaphors, no artist names, no copycat vocals. Crew cypher about exotic computer parts, expensive GPUs, CPUs, RAM, motherboards, Linux kernels, Windows frustration, arrogant Apple user, booming car-speaker mix, late-night computer lab atmosphere. Aim for 4:20. Do not rush. Slow chopped-and-screwed pacing, extended hook tails, repeated ad-libs, stretched pauses between verses, and a slow fade outro.",
+  "styleHint": "Chopped & screwed dirty south rap, hard booming bass, slow syrupy tempo, rattling hi-hats, pitched-down vocal chops, clean multi-rapper crew cypher with female lead energy, raspy melodic hook, southern twangs, flirtatious summer flex from her point of view, confident and teasing, loyal but tempted, sexy but frustrated, no profanity. Slow pacing, hook tails, chopped ad-libs, bass drops, and fade outro.",
   "assets": {},
-  "generatedAt": "2026-07-14T19:36:30.858Z"
+  "generatedAt": "2026-07-23T22:48:58.738Z"
 }

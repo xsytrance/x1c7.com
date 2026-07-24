@@ -1,104 +1,353 @@
 {
   "analysis": {
-    "summary": "This high-energy R&B/hip-hop fusion track captures a playful, futuristic romance where two lovers navigate city streets at breakneck speed, blending nostalgic Sega Genesis gaming aesthetics with smooth late-90s summer vibes.",
-    "overallMood": "Energetic and Playful",
+    "summary": "A high-energy, nostalgic R&B track celebrating a fast-paced, flirtatious relationship filled with playful confidence and a sense of invincibility, inspired by retro gaming and summer nights.",
+    "overallMood": "Energetic, playful, romantic, nostalgic",
     "themes": [
-      "Futuristic Romance",
-      "Gaming Nostalgia",
-      "High-Speed Pursuit",
-      "Unstoppable Love"
+      "Nostalgia",
+      "Playful romance",
+      "Speed and motion",
+      "Confidence and swagger",
+      "Summer vibes",
+      "Retro-futurism"
     ],
     "palette": [
       "#FFD700",
-      "#4B0082",
-      "#C91E36",
-      "#FFEBCD"
+      "#00BFFF",
+      "#FF6347",
+      "#20B2AA"
     ],
     "sections": [
       {
         "name": "Intro",
-        "emotion": "Curious and Anticipatory",
-        "intensity": 0.85,
-        "colorHintHex": "#FFD700",
-        "start": 1.62
+        "emotion": "Energetic",
+        "intensity": 0.5,
+        "colorHint": "#ffd700",
+        "start": 1.6400000000000001
       },
       {
         "name": "Verse 1",
-        "emotion": "Focused and Accelerating",
-        "intensity": 0.7,
-        "colorHintHex": "#4B0082",
-        "start": 20.16
+        "emotion": "Playful",
+        "intensity": 0.48,
+        "colorHint": "#00bfff",
+        "start": 22.88
       },
       {
         "name": "Pre-Hook",
-        "emotion": "Urgent and Electric",
-        "intensity": 0.86,
-        "colorHintHex": "#C91E36",
-        "start": 37.64
+        "emotion": "Romantic",
+        "intensity": 0.82,
+        "colorHint": "#ff6347",
+        "start": 45.66
       },
       {
         "name": "Hook",
-        "emotion": "Triumphant and Euphoric",
-        "intensity": 0.76,
-        "colorHintHex": "#FFEBCD",
-        "start": 45.64
+        "emotion": "Confident",
+        "intensity": 0.85,
+        "colorHint": "#20b2aa",
+        "start": 47.88
+      },
+      {
+        "name": "Post-Hook",
+        "emotion": "Energetic",
+        "intensity": 0.61,
+        "colorHint": "#ffd700",
+        "start": 95.74
       },
       {
         "name": "Verse 2",
-        "emotion": "Smooth and Confident",
-        "intensity": 0.3,
-        "colorHintHex": "#4B0082",
-        "start": 95.72
+        "emotion": "Nostalgic",
+        "intensity": 0.18,
+        "colorHint": "#00bfff",
+        "start": 104.56
       },
       {
         "name": "Bridge",
-        "emotion": "Explosive Release",
-        "intensity": 0.28,
-        "colorHintHex": "#FFD700",
-        "start": 104.54
+        "emotion": "Fast-paced",
+        "intensity": 0.67,
+        "colorHint": "#ff6347",
+        "start": 104.56
       },
       {
         "name": "Final Hook",
-        "emotion": "Victorious and Joyful",
-        "intensity": 0.25,
-        "colorHintHex": "#FFEBCD",
-        "start": 108.3
+        "emotion": "Infectious",
+        "intensity": 0.97,
+        "colorHint": "#20b2aa",
+        "start": 108.32
       }
     ],
     "keywords": [
       {
-        "word": "fast",
-        "emotion": "Urgent Thrill",
-        "imageryPrompt": "A glowing neon speed line streaking through a futuristic city skyline at night, leaving light trails behind like digital brushstrokes."
+        "word": "enough",
+        "emotion": "Energetic",
+        "imageryPrompt": "A glowing neon-lit cityscape with two silhouettes sprinting through the streets, their movements leaving trails of light behind them."
       },
       {
-        "word": "boost",
-        "emotion": "Empowered Lift",
-        "imageryPrompt": "Golden energy particles swirling around a figure's feet as they leap upward against gravity, surrounded by floating geometric shapes."
+        "word": "mission",
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A retro arcade cabinet flickering with pixelated graphics, surrounded by a vibrant summer night filled with glowing signs and laughter."
       },
       {
-        "word": "caught",
-        "emotion": "Playful Fearlessness",
-        "imageryPrompt": "A translucent police car with flashing lights speeding past in the background while two silhouettes laugh and run ahead freely."
-      },
-      {
-        "word": "lights",
-        "emotion": "Vibrant Wonder",
-        "imageryPrompt": "Bokeh orbs of blue, purple, and gold reflecting off wet asphalt under a summer night sky filled with stars and city glow."
-      },
-      {
-        "word": "level",
-        "emotion": "Achievement Joy",
-        "imageryPrompt": "A retro 16-bit pixel heart icon shattering into confetti as it reaches the top of an invisible mountain peak."
+        "word": "overdrive",
+        "emotion": "Romantic",
+        "imageryPrompt": "A glowing heart pulsating in the center of a starry night, surrounded by swirling colors and soft, glowing particles."
       },
       {
         "word": "invincible",
-        "emotion": "Confident Power",
-        "imageryPrompt": "Two figures standing back-to-back with a shimmering force field made of digital circuitry protecting them from falling debris."
+        "emotion": "Confident",
+        "imageryPrompt": "A shadowy figure standing on top of a skyscraper, surrounded by a halo of light and floating power-ups from a retro video game."
+      },
+      {
+        "word": "touch",
+        "emotion": "Playful",
+        "imageryPrompt": "Two people jumping together on a sunny beach, their shadows stretching long into the sky as the sun dips below the horizon."
+      },
+      {
+        "word": "waste",
+        "emotion": "Energetic",
+        "imageryPrompt": "A ticking clock with glowing red numbers, surrounded by a blur of motion and vibrant, fast-moving shapes."
+      },
+      {
+        "word": "level",
+        "emotion": "Nostalgic",
+        "imageryPrompt": "A pixelated screen displaying 'Level Unlocked' with a glowing progress bar and a retro game character standing triumphantly in the center."
+      },
+      {
+        "word": "speed",
+        "emotion": "excitement",
+        "imageryPrompt": "Two people racing through a neon-lit city at night, their silhouettes blurred with motion"
+      },
+      {
+        "word": "boost",
+        "emotion": "energy",
+        "imageryPrompt": "A car speeding down a highway, the driver leaning forward with a grin, the passenger laughing beside them"
+      },
+      {
+        "word": "lights",
+        "emotion": "vibrancy",
+        "imageryPrompt": "A city skyline at night, with neon signs flickering and the couple walking hand in hand through the glow"
+      },
+      {
+        "word": "win",
+        "emotion": "triumph",
+        "imageryPrompt": "A couple standing on a rooftop, arms raised in victory as fireworks explode in the sky behind them"
+      },
+      {
+        "word": "glow",
+        "emotion": "passion",
+        "imageryPrompt": "A couple dancing in a dimly lit club, their faces lit by the pulsing lights and the glow of their connection"
+      },
+      {
+        "word": "bounce",
+        "emotion": "playfulness",
+        "imageryPrompt": "A couple jumping on a trampoline in a backyard, laughing as they soar into the air"
+      },
+      {
+        "word": "game",
+        "emotion": "competition",
+        "imageryPrompt": "Two players on a retro gaming console, their eyes locked in a fierce but playful match"
+      },
+      {
+        "word": "drive",
+        "emotion": "passion",
+        "imageryPrompt": "A couple driving through a summer night, the car's headlights cutting through the darkness as they share a kiss"
+      },
+      {
+        "word": "city",
+        "emotion": "energy",
+        "imageryPrompt": "A bustling city at night, with the couple walking through the streets, their silhouettes framed by the glow of streetlights"
+      },
+      {
+        "word": "sky",
+        "emotion": "freedom",
+        "imageryPrompt": "A couple standing on a cliff overlooking the ocean, the sky painted in hues of orange and pink as the sun sets"
+      },
+      {
+        "word": "drip",
+        "emotion": "confidence",
+        "imageryPrompt": "A couple walking through a rain-soaked city, their clothes glistening with water as they laugh and embrace"
+      },
+      {
+        "word": "fast",
+        "emotion": "urgency",
+        "imageryPrompt": "A couple running through a forest at sunrise, their silhouettes blurred as they race against the rising sun"
       }
-    ]
+    ],
+    "meaning": {
+      "story": "The song is a celebration of a relationship that moves like a game — fast, unpredictable, and full of high stakes and high rewards. Beneath the playful energy lies a deep sense of connection and the thrill of chasing something bigger than oneself, where the partner becomes both the goal and the fuel for the journey.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "A call to action that sets the tone of the relationship as a high-stakes, fast-moving game.",
+          "keyLine": "Are you that somebody? I could be that somebody"
+        },
+        {
+          "name": "Verse 1",
+          "interpretation": "The relationship is portrayed as a mission, driven by passion and urgency.",
+          "keyLine": "You got me moving at the speed of you"
+        },
+        {
+          "name": "Pre-Hook",
+          "interpretation": "A moment of reflection on the journey they are on together, emphasizing unity and purpose.",
+          "keyLine": "If you with me, then we going all the way"
+        },
+        {
+          "name": "Hook",
+          "interpretation": "A reiteration of the central theme — the push and pull of a fast-paced, flirtatious connection.",
+          "keyLine": "Fast enough, we can’t get caught now"
+        },
+        {
+          "name": "Post-Hook",
+          "interpretation": "A playful, upbeat interlude that reinforces the idea of leveling up together.",
+          "keyLine": "Ring-ring, heart light"
+        },
+        {
+          "name": "Verse 2",
+          "interpretation": "An expansion of the relationship’s impact, showing how they elevate each other.",
+          "keyLine": "You’re my boost, I’m your invincible"
+        },
+        {
+          "name": "Bridge",
+          "interpretation": "A rhythmic, dance-driven moment that emphasizes the energy and chemistry between the two.",
+          "keyLine": "Move like that, don’t slow"
+        },
+        {
+          "name": "Final Hook",
+          "interpretation": "A powerful closing that reiterates the central theme with heightened intensity.",
+          "keyLine": "Fast enough, we can’t get caught now"
+        }
+      ],
+      "keyLines": [
+        "Are you that somebody? I could be that somebody",
+        "We can do it like nobody",
+        "You got me moving at the speed of you",
+        "No checkpoints, we don’t save and quit",
+        "If you with me, then we going all the way",
+        "Fast enough, we can’t get caught now",
+        "Ring-ring, heart light",
+        "You’re my boost, I’m your invincible",
+        "Move like that, don’t slow",
+        "Level up, level up",
+        "Gotta go fast",
+        "New level unlocked"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "speed",
+          "emotion": "excitement",
+          "imageryPrompt": "Two people racing through a neon-lit city at night, their silhouettes blurred with motion",
+          "weight": 0.95
+        },
+        {
+          "word": "mission",
+          "emotion": "urgency",
+          "imageryPrompt": "A couple driving through a desert highway under a glowing sunset, their eyes locked in determination",
+          "weight": 0.9
+        },
+        {
+          "word": "invincible",
+          "emotion": "confidence",
+          "imageryPrompt": "A couple standing atop a skyscraper, arms around each other, the city lights reflecting in their eyes",
+          "weight": 0.88
+        },
+        {
+          "word": "level",
+          "emotion": "progress",
+          "imageryPrompt": "A glowing game controller with a rising score, surrounded by a couple dancing in a retro arcade",
+          "weight": 0.85
+        },
+        {
+          "word": "boost",
+          "emotion": "energy",
+          "imageryPrompt": "A car speeding down a highway, the driver leaning forward with a grin, the passenger laughing beside them",
+          "weight": 0.84
+        },
+        {
+          "word": "mission",
+          "emotion": "determination",
+          "imageryPrompt": "A couple on a motorcycle, wind blowing through their hair as they race toward the horizon",
+          "weight": 0.83
+        },
+        {
+          "word": "lights",
+          "emotion": "vibrancy",
+          "imageryPrompt": "A city skyline at night, with neon signs flickering and the couple walking hand in hand through the glow",
+          "weight": 0.82
+        },
+        {
+          "word": "win",
+          "emotion": "triumph",
+          "imageryPrompt": "A couple standing on a rooftop, arms raised in victory as fireworks explode in the sky behind them",
+          "weight": 0.81
+        },
+        {
+          "word": "glow",
+          "emotion": "passion",
+          "imageryPrompt": "A couple dancing in a dimly lit club, their faces lit by the pulsing lights and the glow of their connection",
+          "weight": 0.8
+        },
+        {
+          "word": "bounce",
+          "emotion": "playfulness",
+          "imageryPrompt": "A couple jumping on a trampoline in a backyard, laughing as they soar into the air",
+          "weight": 0.79
+        },
+        {
+          "word": "game",
+          "emotion": "competition",
+          "imageryPrompt": "Two players on a retro gaming console, their eyes locked in a fierce but playful match",
+          "weight": 0.78
+        },
+        {
+          "word": "drive",
+          "emotion": "passion",
+          "imageryPrompt": "A couple driving through a summer night, the car's headlights cutting through the darkness as they share a kiss",
+          "weight": 0.77
+        },
+        {
+          "word": "city",
+          "emotion": "energy",
+          "imageryPrompt": "A bustling city at night, with the couple walking through the streets, their silhouettes framed by the glow of streetlights",
+          "weight": 0.76
+        },
+        {
+          "word": "win",
+          "emotion": "victory",
+          "imageryPrompt": "A couple standing together on a podium, medals around their necks, the crowd cheering in the background",
+          "weight": 0.75
+        },
+        {
+          "word": "sky",
+          "emotion": "freedom",
+          "imageryPrompt": "A couple standing on a cliff overlooking the ocean, the sky painted in hues of orange and pink as the sun sets",
+          "weight": 0.74
+        },
+        {
+          "word": "drip",
+          "emotion": "confidence",
+          "imageryPrompt": "A couple walking through a rain-soaked city, their clothes glistening with water as they laugh and embrace",
+          "weight": 0.73
+        },
+        {
+          "word": "glow",
+          "emotion": "connection",
+          "imageryPrompt": "A couple sitting under a tree at night, their faces illuminated by the soft glow of a lantern between them",
+          "weight": 0.72
+        },
+        {
+          "word": "level",
+          "emotion": "growth",
+          "imageryPrompt": "A couple standing in front of a glowing screen, their hands together as the screen displays a rising level number",
+          "weight": 0.71
+        },
+        {
+          "word": "fast",
+          "emotion": "urgency",
+          "imageryPrompt": "A couple running through a forest at sunrise, their silhouettes blurred as they race against the rising sun",
+          "weight": 0.7
+        }
+      ]
+    }
   },
   "styleHint": "High-energy late-90s futuristic R&B/hip-hop summer jam with strong Sega Genesis / Sonic 1 & 2 inspiration: bright FM synth leads, funky bassline, bouncy New Jack swing drums, crisp snares, syncopated percussion, arpeggiated game-like synth runs, sparkling chord stabs, and fast melodic hooks. No camera clicks, no baby sample. Signature sound: ring-collect sparkle, spring bounce, and quick “level up” synth flourish used as rhythmic ear candy. Smooth confident male R&B lead with catchy harmonies, flirty swagger, danceable hip-hop cadence, and instant hook in the first 5 seconds. Tempo around 116 BPM. Runtime around 3:00. Summer, energetic, playful, romantic, nostalgic but modern, radio-ready.",
   "assets": {},
-  "generatedAt": "2026-07-09T18:05:32.236Z"
+  "generatedAt": "2026-07-24T08:41:32.624Z"
 }
