@@ -42,7 +42,9 @@ export type TextEffect =
   // Tranche 3 (Pillar 1): secrecy, analog memory, water, and blood.
   | "redact" | "chromatic" | "liquid" | "bleed"
   // Tranche 4 (Pillar 1 complete): the written word, and the final cut to dark.
-  | "handwrite" | "tvoff";
+  | "handwrite" | "tvoff"
+  // Tranche 5 (the SUMMER DRIP cut): the DJ's chop and the glossy drip.
+  | "chop" | "drip";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -52,6 +54,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "shimmer", "rise", "fall", "echo", "tremor",
   "redact", "chromatic", "liquid", "bleed",
   "handwrite", "tvoff",
+  "chop", "drip",
 ];
 
 export interface EffectLego {
@@ -158,6 +161,8 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.bleed", class: "textbound", mode: "bleed", blurb: "Red ink weeps down from the word.", tags: ["blood", "bleed", "wound", "scar", "vein", "bruise", "hurt", "pain", "ache", "sangre"] },
   { id: "text.handwrite", class: "textbound", mode: "handwrite", blurb: "The word writes itself on in script.", tags: ["write", "letter", "vow", "promise", "sign", "ink", "pen", "poem", "diary", "journal"] },
   { id: "text.tvoff", class: "textbound", mode: "tvoff", blurb: "The word switches off like an old TV — line, dot, dark.", tags: ["end", "goodbye", "farewell", "dead", "death", "die", "dying"] },
+  { id: "text.chop", class: "textbound", mode: "chop", blurb: "The word re-triggers in sliced stutters — a DJ's chop.", tags: ["chop", "chopped", "screwed", "stutter", "skip", "remix", "again"] },
+  { id: "text.drip", class: "textbound", mode: "drip", blurb: "Glossy droplets swell off the letters and fall — the word stays, dripping.", tags: ["drip", "dripping", "wet", "gloss", "glossy", "honey", "syrup", "sauce"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────
@@ -216,7 +221,9 @@ const TEXT_MATCHERS: [RegExp, TextEffect][] = [
   [/\b(bloom|love|hope|joy|grow|flower)\b/, "bloom"],
   [/\b(glitch|error|signal|digital|static)\b/, "glitch"],
   [/\b(cold|freeze|frost|numb|ice)\b/, "freeze"],
-  [/\b(melt|heat|sweat|drip|summer)\b/, "melt"],
+  [/\b(chop|chopped|screwed|stutter)\b/, "chop"],
+  [/\b(drip|drips|dripping|glossy|syrup)\b/, "drip"],
+  [/\b(melt|heat|sweat|summer)\b/, "melt"],
   [/\b(stone|carve|forever|name|monument)\b/, "carve"],
   // Signature treatments — appended so the matchers above keep first-match priority.
   [/\b(boom|slam|crash|bang|stomp|hammer|kick|punch)\b/, "slam"],

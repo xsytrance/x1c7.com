@@ -98,11 +98,26 @@ export interface DynamicPlusAct {
   /** the choreographer's one-line reason — debugging + Studio display */
   why?: string;
 }
+/** A timed viewing-style window — the director's cut. Between windows the
+ * viewer's own mode choice stands; inside one, the schedule drives the stage.
+ * (Mirrors StageMode in KineticStage; duplicated as literals to keep planet.ts
+ * dependency-free of components.) */
+export interface DynamicPlusModeWindow {
+  start: number; // seconds
+  end: number;
+  mode: "dynamic" | "focus" | "focus+" | "phrase";
+}
 export interface PlanetDynamicPlus {
   v: 2;
   acts?: DynamicPlusAct[];
   /** lowercased word -> text effect; merged under effects.overrides at pass 6 */
   words?: Record<string, TextEffect>;
+  /** timed phrase↔dynamic switching (the MODE CONDUCTOR) — pass 6 only.
+   * Each switch lands with a tape-warp transition on the stage. */
+  modes?: DynamicPlusModeWindow[];
+  /** pin the backdrop to a named scene for this song's show (e.g. "SYRUP") —
+   * a directed world instead of the AUTO hash pick. Unknown names no-op. */
+  scene?: string;
 }
 
 export interface Planet {

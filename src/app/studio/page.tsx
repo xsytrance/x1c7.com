@@ -56,7 +56,7 @@ const PRO_TABS: ProTab[] = ["PLAY", "XY", "DIAL", "MORE"];
 
 export default function StudioPage() {
   const { tracks } = useTracks();
-  const { currentTrack, isPlaying, playTrack } = useMusicPlayer();
+  const { currentTrack, isPlaying, playTrack, seek, getCurrentTime } = useMusicPlayer();
   const [pass, setPass] = useState(5);
   const [mode, setMode] = useState<StageMode>("phrase");
   const [pro, setPro] = useState(false);
@@ -75,6 +75,9 @@ export default function StudioPage() {
   const [draftPlanet, setDraftPlanet] = useState<Track["planet"] | null>(null);
   const [draftReady, setDraftReady] = useState(false);
   const [autoLaunched, setAutoLaunched] = useState(false);
+  // ?t= — open the show at a timestamp (embed/deep-link contract; the render
+  // rig uses it to start a directed cut mid-song).
+  const [startAt, setStartAt] = useState<number | null>(null);
 
   useEffect(() => {
     const saved = localStorage.getItem(LS.lyricStyle) as StageMode | null;
@@ -101,6 +104,8 @@ export default function StudioPage() {
     if ([1, 2, 3, 4, 5, 6].includes(p)) setPass(p);
     const m = q.get("mode") as StageMode | null;
     if (m && MODES.some((x) => x.id === m)) setMode(m);
+    const tq = Number(q.get("t"));
+    if (isFinite(tq) && tq > 0) setStartAt(tq);
   }, []);
   // pointer/orientation facts, kept live (fold a phone, rotate a tablet…)
   useEffect(() => {
@@ -157,6 +162,39 @@ export default function StudioPage() {
 
   const live = canPerform(currentTrack);
   const onStage = live && !showSetup;
+
+  // Land the ?t= start-seek once the show is actually rolling. The audio may
+  // still be loading when isPlaying flips, so keep nudging until the playhead
+  // reports inside the window (or give up quietly).
+  useEffect(() => {
+    if (startAt == null || !live || !isPlaying) return;
+    let tries = 0;
+    const iv = window.setInterval(() => {
+      seek(startAt);
+      if (Math.abs(getCurrentTime() - startAt) < 2 || ++tries > 25) {
+        window.clearInterval(iv);
+        setStartAt(null);
+      }
+    }, 200);
+    return () => window.clearInterval(iv);
+  }, [startAt, live, isPlaying, seek, getCurrentTime]);
+
+  // ── THE CONDUCTOR, embed edition ── the takeover runs the DYNAMIC+ acts in
+  // CinematicLyrics; the bare embed stage deserves the same show. Walks the
+  // acts against the playhead: backdrop boost + the billing chip.
+  const dynPlus = currentTrack?.planet?.dynamicPlus;
+  const [moment, setMoment] = useState<{ on: boolean; label: string | null }>({ on: false, label: null });
+  useEffect(() => {
+    if (!embed || !live || pass < 6 || !dynPlus?.acts?.length) return;
+    const acts = dynPlus.acts;
+    const iv = window.setInterval(() => {
+      const t = getCurrentTime();
+      const act = acts.find((a) => t >= a.start && t < a.end) ?? null;
+      const label = act?.label ?? null;
+      setMoment((prev) => (prev.on === !!act && prev.label === label ? prev : { on: !!act, label }));
+    }, 400);
+    return () => { window.clearInterval(iv); setMoment({ on: false, label: null }); };
+  }, [embed, live, pass, dynPlus, getCurrentTime]);
 
   // stage-background gestures (mobile): swipe ←/→ pins prev/next backdrop,
   // two-finger tap releases to AUTO, swipe ↑/↓ nudges intensity.
@@ -247,7 +285,20 @@ export default function StudioPage() {
       {/* ── body ── */}
       {!live || embed ? (
         <div className="relative z-10 flex flex-1 items-start justify-center overflow-y-auto px-4 pb-28">
-          {live && embed ? <KineticStage track={currentTrack!} pass={pass} mode={mode} /> : marquee}
+          {live && embed ? (
+            <>
+              <KineticStage track={currentTrack!} pass={pass} mode={mode} boost={pass >= 6 && moment.on} />
+              {/* DYNAMIC+ moment billing — same chip the takeover wears */}
+              {moment.label && (
+                <div className="pointer-events-none absolute bottom-16 left-1/2 z-[60] -translate-x-1/2">
+                  <span className="rounded-full border px-4 py-2 font-mono text-xs font-bold uppercase tracking-[0.22em]"
+                    style={{ borderColor: "var(--theme-primary)", color: "var(--theme-primary)", background: "#000b", boxShadow: "0 0 18px color-mix(in srgb, var(--theme-primary) 55%, transparent)" }}>
+                    ⚡ {moment.label}
+                  </span>
+                </div>
+              )}
+            </>
+          ) : marquee}
           {currentTrack && !isPlaying && !live && (
             <p className="absolute bottom-24 font-mono text-[10px] uppercase tracking-wider text-white/30">Use the player bar below to play.</p>
           )}

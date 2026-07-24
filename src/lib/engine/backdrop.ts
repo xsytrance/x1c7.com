@@ -120,6 +120,49 @@ void main() {
   fragColor = vec4(col * uIntensity, 1.0);
 }`;
 
+// ── SCENE 4: SYRUP — the chopped & screwed world (pin-only, never AUTO) ─────
+// Thick amber-to-violet syrup sheets pour downward in half-time; a kick sends
+// a slow viscous ripple through the pour, heat-shimmer wobbles the floor, and
+// a worn tape line drifts down the frame dragging a faint chroma split. The
+// bass DEEPENS the purple (the pitched-down low end, colored); a riser pulls
+// the whole pour taut before the drop lets it run again.
+const SYRUP_FS = SCENE_HEADER + `
+void main() {
+  float asp = uRes.x / uRes.y;
+  vec2 p = (vUv - 0.5) * vec2(asp, 1.0);
+  // half-time clock — everything here moves screwed-slow
+  float t = uTime * 0.028 * (0.7 + uBed * 0.5) + uSeed * 31.7;
+  // heat shimmer: a fine wobble that grows toward the floor of the frame
+  float floorAmt = smoothstep(0.15, -0.5, p.y);
+  p.x += sin(p.y * 34.0 + uTime * 0.9) * 0.006 * (0.4 + uEmo) * floorAmt;
+  // kick ripple: one slow, thick ring spreading from the low center
+  float kr = length(p - vec2(0.0, -0.15));
+  p += normalize(p - vec2(0.0, -0.15) + 1e-4) * exp(-abs(kr - fract(uBeatPhase) * 0.9) * 9.0) * uKick * 0.035;
+  // the pour: domain-warped sheets flowing DOWN, stretched tall like syrup;
+  // a riser pulls the sheets taut (less warp) before the release
+  vec2 q = vec2(fbm(vec2(p.x * 2.6, p.y * 1.1 + t * 2.2)), fbm(vec2(p.x * 2.2 - 7.3, p.y * 0.9 + t * 1.7)));
+  float pour = fbm(vec2(p.x * 3.2 + q.x * (1.4 - uCharge * 0.8), p.y * 1.3 + t * 3.0 + q.y * 0.9));
+  float sheet = smoothstep(0.32, 0.78, pour);
+  // dusk grade: amber high, violet low — the bass sinks the whole field purple
+  vec3 amber = mix(uPal2, vec3(1.0, 0.62, 0.24), 0.45);
+  vec3 violet = mix(uPal0, vec3(0.42, 0.16, 0.72), 0.55 + uBass * 0.3);
+  vec3 col = mix(violet * 0.55, amber, sheet * (0.5 + uVoice * 0.5));
+  // glossy highlight rolling along the sheet edges (the wet sheen)
+  float edge = abs(pour - 0.55);
+  col += mix(vec3(1.0, 0.8, 0.9), keyColor(uPal2), 0.4) * exp(-edge * 26.0) * (0.16 + uVoice * 0.5 + uBeat * 0.12);
+  // the word warms its spot in the pour
+  vec2 w = (uWord - 0.5) * vec2(asp, 1.0);
+  col += amber * exp(-dot(p - w, p - w) * 6.0) * uWordPulse * 0.3;
+  // worn tape line: drifts down slowly, dips the light, drags a chroma split
+  float lineY = fract(vUv.y + uTime * 0.045);
+  float tape = exp(-abs(lineY - 0.5) * 90.0);
+  col *= 1.0 - tape * 0.35;
+  col.r += tape * 0.06; col.b += tape * 0.10;
+  // trunk rattle: the deepest bass shakes a faint grain into the shadows
+  col += (hash21(floor(vUv * uRes / 3.0) + floor(uTime * 6.0)) - 0.5) * 0.05 * uBass;
+  fragColor = vec4(col * uIntensity * (0.55 + uLevel * 0.6), 1.0);
+}`;
+
 // ── Feedback trails (PRISM's TRAILS_FS): echoes swim through the field ──────
 const TRAILS_FS = `#version 300 es
 precision highp float;
@@ -288,9 +331,13 @@ void main() {
   fragColor = vec4(col, 1.0);
 }`;
 
-export const BACKDROP_SCENES = ["AURORA", "EMBERS", "INK"] as const;
-const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS];
+export const BACKDROP_SCENES = ["AURORA", "EMBERS", "INK", "SYRUP"] as const;
+const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS, SYRUP_FS];
 const BUILTIN_COUNT = SCENE_SOURCES.length;
+// AUTO's hash pool stays at the original three — appending a scene must NEVER
+// reshuffle the stable world every existing song already owns. New scenes are
+// directed choices: pinned via backdrop.scene or a planet's dynamicPlus.scene.
+const AUTO_POOL = 3;
 
 /** A live scene slot: built-in or a loaded .frag (Shader SDK). */
 interface SceneDef {
@@ -439,7 +486,7 @@ export class BackdropRenderer {
     this.pal0Hue = hexHue(px[0] ?? "#43f7ff");
     const h = fnv1a(seedStr);
     this.seed = (h % 1000) / 1000;
-    this.sceneIdx = h % BUILTIN_COUNT; // AUTO worlds stay stable over the built-ins
+    this.sceneIdx = h % AUTO_POOL; // AUTO worlds stay stable over the original trio
     this.seedStr = seedStr;
     this.fade = null;
     this.time = 0;
@@ -453,7 +500,7 @@ export class BackdropRenderer {
   // song's structure instead of a hand on the crossfader.
   setSectionScene(emotion: string | null) {
     if (!emotion || P.getStr("backdrop.scene") !== "AUTO") return;
-    const target = fnv1a(`${this.seedStr}::${emotion.toLowerCase()}`) % BUILTIN_COUNT;
+    const target = fnv1a(`${this.seedStr}::${emotion.toLowerCase()}`) % AUTO_POOL;
     if (this.fade ? target === this.fade.to : target === this.sceneIdx) return;
     const F = featureBus.F;
     if (this.fade) this.sceneIdx = this.fade.to; // redirect mid-fade: land the old target

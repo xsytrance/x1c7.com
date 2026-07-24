@@ -54,7 +54,9 @@ const WHISPER_WORDS = new Set(["whisper", "whispers", "whispering", "whispered",
 // ── Auto-triggers for the newer treatments (lower priority than everything above,
 //    so shared words keep their existing effect; a per-word override still wins). ──
 const COLD_WORDS = new Set(["cold", "colder", "freeze", "freezing", "frost", "numb", "shiver", "shivers", "chill", "chills", "winter", "icy", "frostbite"]);           // → freeze
-const HEAT_WORDS = new Set(["melt", "melts", "melting", "heat", "heats", "sweat", "sweats", "drip", "drips", "dripping", "humid", "molten", "summer"]);                  // → melt
+const HEAT_WORDS = new Set(["melt", "melts", "melting", "heat", "heats", "sweat", "sweats", "humid", "molten", "summer"]);                  // → melt
+const CHOP_WORDS = new Set(["chop", "chopped", "chopping", "screwed", "stutter", "stutters", "skip", "skips", "rewound"]);                  // → chop (DJ re-trigger)
+const DRIP_WORDS = new Set(["drip", "drips", "dripping", "dripped", "wet", "gloss", "glossy", "syrup", "honey", "sauce"]);                  // → drip (stays, glistens, drips)
 const STONE_WORDS = new Set(["stone", "stones", "carve", "carved", "marble", "monument", "statue", "granite", "engrave", "engraved", "eternal", "forever", "chiseled", "permanent"]); // → carve
 const GOLD_WORDS = new Set(["gold", "golden", "crown", "crowns", "rich", "riches", "luxury", "luxe", "diamond", "diamonds", "jewel", "jewels", "glitter", "treasure", "royal", "shimmer", "sparkle"]);  // → shimmer
 const RISE_WORDS = new Set(["rise", "rises", "rising", "soar", "soars", "soaring", "fly", "flies", "flying", "lift", "lifts", "lifted", "float", "floats", "floating", "higher", "ascend", "heaven", "wings", "uplift"]);  // → rise
@@ -229,6 +231,8 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   bleed: (w, a) => <WordBleed word={w} airtime={a} />,
   handwrite: (w) => <WordHandwrite word={w} />,
   tvoff: (w, a) => <WordTVOff word={w} airtime={a} />,
+  chop: (w, a) => <WordChop word={w} airtime={a} />,
+  drip: (w, a) => <WordDrip word={w} airtime={a} />,
 };
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost, forceBackdrop = false }: {
@@ -305,10 +309,52 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     return s;
   }, [track.lyrics]);
 
-  const dynamic = pass >= 3 && mode === "dynamic";
-  const phrase = pass >= 3 && mode === "phrase";
-  const focusMode = pass >= 3 && (mode === "focus" || mode === "focus+"); // one clean word at a time
-  const focusFx = pass >= 3 && mode === "focus+";                          // …with an effect on the way out
+  // ── THE MODE CONDUCTOR (DYNAMIC+ · the directed cut) ──────────────────────
+  // dynamicPlus.modes gives a show a TIMED viewing-style schedule — verses in
+  // dynamic stagecraft, hooks snapping into phrase — authored offline like the
+  // acts. Inside a window the schedule drives the stage; outside it the
+  // viewer's own mode stands. Every switch lands with a one-shot tape-warp on
+  // the words layer (the pitch-wheel bend, drawn) plus a purple flash overlay.
+  // Polls at 250ms like the acts conductor: a mode boundary is a musical
+  // boundary, not a frame event.
+  const modeSchedule = pass >= 6 ? track.planet?.dynamicPlus?.modes : undefined;
+  const [schedMode, setSchedMode] = useState<StageMode | null>(null);
+  const [warpTick, setWarpTick] = useState(0);
+  const schedRef = useRef<StageMode | null>(null);
+  useEffect(() => {
+    schedRef.current = null; setSchedMode(null); setWarpTick(0);
+    if (!modeSchedule?.length) return;
+    const iv = window.setInterval(() => {
+      const t = getCurrentTime();
+      const w = modeSchedule.find((x) => t >= x.start && t < x.end);
+      const next = (w?.mode as StageMode | undefined) ?? null;
+      if (next === schedRef.current) return;
+      schedRef.current = next;
+      setSchedMode(next);
+      setWarpTick((v) => v + 1);
+      // tape-warp the words layer imperatively — remove/reflow/add so a
+      // switch mid-animation restarts the one-shot instead of being eaten
+      const el = stageRef.current;
+      if (el) { el.classList.remove("stage-modewarp"); void el.offsetWidth; el.classList.add("stage-modewarp"); }
+    }, 250);
+    return () => window.clearInterval(iv);
+  }, [modeSchedule, getCurrentTime, track.id]);
+  // The schedule wins inside a window; the viewer's pick is the resting state.
+  const liveMode: StageMode = schedMode ?? mode;
+  // A directed backdrop world: dynamicPlus.scene pins the scene for this show
+  // (e.g. "SYRUP") and hands the deck back when the song leaves the stage.
+  const dirScene = pass >= 6 ? track.planet?.dynamicPlus?.scene : undefined;
+  useEffect(() => {
+    if (!dirScene) return;
+    if (!P.def("backdrop.scene")?.options?.includes(dirScene)) return;
+    P.set("backdrop.scene", dirScene, "code");
+    return () => { if (P.getStr("backdrop.scene") === dirScene) P.set("backdrop.scene", "AUTO", "code"); };
+  }, [dirScene, track.id]);
+
+  const dynamic = pass >= 3 && liveMode === "dynamic";
+  const phrase = pass >= 3 && liveMode === "phrase";
+  const focusMode = pass >= 3 && (liveMode === "focus" || liveMode === "focus+"); // one clean word at a time
+  const focusFx = pass >= 3 && liveMode === "focus+";                              // …with an effect on the way out
   // Word indices that BEGIN a lyric line. Exact stamp-matching broke the day
   // The Alignment shipped measured word times (a stamp of [00:06.00] vs a word
   // at 6.02s = zero line breaks = the whole song rendered as one "phrase").
@@ -1060,7 +1106,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         }
         // The word that just left dissolves into the backdrop (not in phrase
         // mode — there the whole line stays on stage; nothing actually left).
-        if (mode !== "phrase" && lastGhost.current) {
+        if (liveMode !== "phrase" && lastGhost.current) {
           featureBus.pushGhost(lastGhost.current);
           lastGhost.current = null;
         }
@@ -1087,7 +1133,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // The outgoing word joins the pile (max 3 residues + the live word).
         // Its true on-stage position + font size are measured off the DOM so
         // the residue takes over without a pixel of drift.
-        if (pass >= 3 && mode === "dynamic" && lastRendered.current && lastRendered.current.key !== i) {
+        if (pass >= 3 && liveMode === "dynamic" && lastRendered.current && lastRendered.current.key !== i) {
           const lr = lastRendered.current;
           lastRendered.current = null;
           const el = wordEls.current.get(lr.key);
@@ -1129,7 +1175,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           }
           // Anchor: charged words always take over the sky; line-closing words
           // with presence join them (rate-limited so anchors breathe).
-          if (pass >= 3 && mode === "dynamic") {
+          if (pass >= 3 && liveMode === "dynamic") {
             const charged = w in keywordEmotion;
             const worthy = isFinal && air >= 0.75 && clean(words[i].w).length >= 4 && t - anchorAt.current > 3.5;
             if (charged || worthy) {
@@ -1388,7 +1434,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, mode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   const shown = word ? clean(word) : "";
@@ -1447,6 +1493,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // passes 1-3 stay exactly as they were before it.
   const extraFx: TextEffect | null = (pass >= 4 && !priorEffect && !fizzes && !types && airtime >= 0.5)
     ? (COLD_WORDS.has(ek) ? "freeze"
+      : CHOP_WORDS.has(ek) ? "chop"
+      : DRIP_WORDS.has(ek) ? "drip"
       : HEAT_WORDS.has(ek) ? "melt"
       : STONE_WORDS.has(ek) ? "carve"
       : GOLD_WORDS.has(ek) ? "shimmer"
@@ -1565,6 +1613,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // timeline) must live here, since the beat-scaled .kinetic-stage would
     // otherwise become their containing block and misplace them.
     <div ref={rootRef} className={`relative flex h-full w-full flex-col items-center justify-center${cutMode ? " stem-cut" : ""}`} onPointerDown={scoreTap} onPointerMove={stageMove}>
+      {/* MODE WARP flash — the conductor's switch worn for one beat: a purple
+          tape-drag sweep over the whole frame. Keyed remount replays the
+          one-shot CSS animation; it rests at opacity 0. */}
+      {warpTick > 0 && <div key={warpTick} className="stage-warpflash pointer-events-none fixed inset-0 z-40" aria-hidden />}
       {/* The living backdrop — a generative field breathing behind (and
           through) the song art: GL canvas at -z-20, art at -z-10 with 0.6–0.85
           opacity glows over it. Fed by the feature bus (real stems, riser
@@ -2116,7 +2168,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       ))}
 
       {/* Pressure gauge — the emotional intensity as a living instrument */}
-      {pass >= 3 && mode !== "focus" && <PressureGauge section={section} />}
+      {pass >= 3 && liveMode !== "focus" && <PressureGauge section={section} />}
 
       {/* Choreographed wipe moment — wipe the song's veil away (sound too) */}
       {pass >= 3 && <WipeLayer moment={wipe} onProgress={onWipeProgress} onReleased={onWipeReleased} lite={lite} />}
@@ -3073,6 +3125,110 @@ function WordTVOff({ word, airtime }: { word: string; airtime: number }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0, 0.95, 0] }}
         transition={{ duration: dur, times: [0, 0.86, 0.93, 1] }} />
+    </span>
+  );
+}
+
+/* ========== CHOP ==========
+   The DJ's re-trigger: the word slices into a top and bottom half that snap
+   apart in opposite directions and slam back — twice, in hard steps — while a
+   pitched-down purple ghost drags a beat behind. Built for SHORT airtimes:
+   chopped ad-libs re-fire every ~0.3s, so the whole figure lands in one hit
+   and the second slice only plays when the word has the air for it.
+   (Transform/opacity/clip-path only — no held blurs.) */
+function WordChop({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(0.9, Math.max(0.28, airtime * 0.92));
+  const two = airtime >= 0.55; // enough air → the chop strikes twice
+  const t = two ? [0, 0.16, 0.3, 0.46, 0.6, 0.78, 1] : [0, 0.3, 0.55, 0.8, 1, 1, 1];
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      {/* the pitched-down ghost — a slowed copy stretched tall, dragging late */}
+      <m.span className="pointer-events-none absolute inset-0 flex origin-bottom items-center justify-center" aria-hidden
+        style={{ color: "#b48cff", mixBlendMode: "screen" }}
+        initial={{ opacity: 0, scaleY: 1, y: "0em" }}
+        animate={{ opacity: [0, 0.55, 0.3, 0.45, 0.2, 0.3, 0], scaleY: [1, 1.18, 1.06, 1.22, 1.08, 1.15, 1.02], y: ["0em", "0.05em", "0.02em", "0.06em", "0.02em", "0.04em", "0em"] }}
+        transition={{ duration: dur, times: t, ease: "linear" }}>
+        {word}
+      </m.span>
+      {/* top slice — snaps left, slams back; hard linear steps, no easing curves */}
+      <m.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
+        style={{ clipPath: "inset(0 0 46% 0)" }}
+        initial={{ x: "0em", opacity: 1 }}
+        animate={{ x: ["0em", "-0.14em", "0em", "0.1em", "0em", "-0.06em", "0em"], opacity: [1, 1, 1, 1, 1, 1, 1] }}
+        transition={{ duration: dur, times: t, ease: "linear" }}>
+        {word}
+      </m.span>
+      {/* bottom slice — the counter-snap */}
+      <m.span className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden
+        style={{ clipPath: "inset(54% 0 0 0)" }}
+        initial={{ x: "0em", opacity: 1 }}
+        animate={{ x: ["0em", "0.14em", "0em", "-0.1em", "0em", "0.06em", "0em"] }}
+        transition={{ duration: dur, times: t, ease: "linear" }}>
+        {word}
+      </m.span>
+      {/* the base word carries the layout; visible only in the seam gap */}
+      <m.span className="inline-block"
+        initial={{ opacity: 0.25 }}
+        animate={{ opacity: [0.25, 0.1, 0.25, 0.12, 0.25, 0.18, 1] }}
+        transition={{ duration: dur, times: t, ease: "linear" }}>
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+/* ========== DRIP ==========
+   The word STAYS — that's the difference from melt. A wet sheen sweeps the
+   letterforms while glossy beads swell along the baseline, elongate, detach
+   and fall, each on its own delay. Luxe-wet, not destroyed. */
+function WordDrip({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.2, Math.max(1.0, airtime));
+  const r = (i: number, m: number) => ((i * 71 + 37) % 97) / 97 * m;
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <m.span
+        className="inline-block bg-clip-text"
+        style={{
+          color: "transparent",
+          backgroundImage: "linear-gradient(115deg, #e9d8ff 0%, #ffffff 34%, #ffd9ec 48%, #ffffff 62%, #cfa8ff 100%)",
+          backgroundSize: "260% 100%",
+          WebkitBackgroundClip: "text",
+
+        } as any}
+        initial={{ backgroundPositionX: "115%" }}
+        animate={{
+          backgroundPositionX: ["115%", "-15%", "60%"],
+          textShadow: [
+            "0 0.02em 0.12em rgba(200,150,255,0.25)",
+            "0 0.03em 0.22em rgba(255,200,235,0.6)",
+            "0 0.02em 0.16em rgba(200,150,255,0.4)",
+          ],
+        }}
+        transition={{ duration: dur, times: [0, 0.55, 1], ease: "easeInOut" }}
+      >
+        {word}
+      </m.span>
+      {/* beads: swell on the baseline, stretch, let go, fall */}
+      {Array.from({ length: 5 }).map((_, i) => (
+        <m.span
+          key={i}
+          className="pointer-events-none absolute origin-top rounded-[45%_55%_60%_40%]"
+          aria-hidden
+          style={{
+            left: `${14 + ((i * 67) % 72)}%`, top: "68%",
+            width: `${0.045 + r(i, 0.03)}em`, height: `${0.06 + r(i, 0.04)}em`,
+            background: "linear-gradient(to bottom, #fbeaff, #d9a8ff)",
+            boxShadow: "0 0 0.08em rgba(233,190,255,0.8)",
+          }}
+          initial={{ opacity: 0, y: "0em", scaleY: 0.4 }}
+          animate={{
+            opacity: [0, 0.95, 0.95, 0.7, 0],
+            y: ["0em", "0.02em", "0.08em", `${0.55 + r(i + 3, 0.45)}em`, `${0.8 + r(i + 3, 0.5)}em`],
+            scaleY: [0.4, 1, 1.7, 1.25, 1],
+          }}
+          transition={{ duration: dur * 0.9, times: [0, 0.25, 0.55, 0.88, 1], delay: r(i + 5, dur * 0.4), ease: "easeIn" }}
+        />
+      ))}
     </span>
   );
 }
