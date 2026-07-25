@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useIsTylerSite } from "@/components/X1c7Chrome";
 import { useEffect, useState } from "react";
 
 // ═══════════════════════════════════════════════════════════════════════════
@@ -22,7 +22,7 @@ const KEY = "x1c7:tyler-door";
 const WEEK = 7 * 24 * 60 * 60 * 1000;
 
 export function TylerDoor() {
-  const path = usePathname();
+  const onTylersSite = useIsTylerSite();
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -34,12 +34,13 @@ export function TylerDoor() {
     }
   }, []);
 
-  // Never on Tyler's own site — you're already there.
-  if (!show || path?.startsWith("/tyler")) return null;
+  // Never on Tyler's own site — you're already there. (The hook checks the
+  // HOST as well as the path; on tyler.x1c7.com the path is just "/".)
+  if (!show || onTylersSite) return null;
 
   return (
     <div
-      className="relative z-[60] w-full"
+      className="x1c7-chrome relative z-[60] w-full"
       style={{ background: `linear-gradient(90deg, ${CRIMSON}, #7c8cff)`, paddingTop: "env(safe-area-inset-top)" }}
     >
       <div className="mx-auto flex max-w-7xl items-center gap-3 px-3 py-2 md:px-6">

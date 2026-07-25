@@ -20,9 +20,9 @@ export function BootSequenceWrapper({ children }: { children: React.ReactNode })
 
   return (
     <>
-      {!booted && <BootSequence onComplete={handleComplete} />}
+      <div className="x1c7-chrome">{!booted && <BootSequence onComplete={handleComplete} />}</div>
       {children}
-      <Vignette />
+      <div className="x1c7-chrome"><Vignette /></div>
     </>
   );
 }

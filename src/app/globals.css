@@ -52,6 +52,17 @@
   box-sizing: border-box;
 }
 
+/* Tyler's site is Juan's, and none of x1c7's furniture belongs on it. The
+   React check needs the hostname, which is only knowable after mount — on
+   tyler.x1c7.com the rewrite is internal so the PATH is just "/" — and that
+   would leave a frame of boot sequence, particles and promo bar sitting on
+   his nav. This rule costs nothing and lands on the very first paint:
+   the Tyler layout renders `.tyler-root`, so its presence in the document
+   IS the signal. */
+body:has(.tyler-root) .x1c7-chrome {
+  display: none !important;
+}
+
 /* Keyboard navigation gets a visible ring everywhere (UI overhaul phase 5 —
    PRISM's accessibility homework, ours to do too). Mouse/touch stays clean. */
 :focus-visible {
