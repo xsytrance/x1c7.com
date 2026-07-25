@@ -4,23 +4,24 @@
 
 /* Registered so the now-playing theme can *animate* between palettes — a plain
    custom property can't be transitioned, a typed @property color can. */
-/* TYLER HAZE EDITION (2026-07-17) — palette honoring "The Party Left Without
-   Me" by Tyler Haze (jayodeed's debut): red-cup crimson, porch-light amber,
-   dusk-indigo glow on a midnight-indigo black. Previous values (revert):
-   primary #ff2440 · secondary #43f7ff · accent #8dff4a · bg #05030b */
-@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #d9342b; }
-@property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #ffb45c; }
-@property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #7c8cff; }
-@property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #080b18; }
+/* AGENOR / xsytrance house palette — restored 2026-07-25, when Tyler Haze
+   moved off this site onto his own at tyler.x1c7.com. The album's indigo /
+   crimson / amber now lives in Juan's `tyler_site.palette` row, where he can
+   change it himself. (For the record, the 2026-07-17 takeover values were:
+   primary #d9342b · secondary #ffb45c · accent #7c8cff · bg #080b18.) */
+@property --theme-primary { syntax: "<color>"; inherits: true; initial-value: #ff2440; }
+@property --theme-secondary { syntax: "<color>"; inherits: true; initial-value: #43f7ff; }
+@property --theme-accent { syntax: "<color>"; inherits: true; initial-value: #8dff4a; }
+@property --theme-bg { syntax: "<color>"; inherits: true; initial-value: #05030b; }
 
 :root {
   color-scheme: dark;
   --bg: #05030b;
   /* Now-playing theme (driven by ThemeEngine; defaults = house palette). */
-  --theme-primary: #d9342b;
-  --theme-secondary: #ffb45c;
-  --theme-accent: #7c8cff;
-  --theme-bg: #080b18;
+  --theme-primary: #ff2440;
+  --theme-secondary: #43f7ff;
+  --theme-accent: #8dff4a;
+  --theme-bg: #05030b;
   --theme-intensity: 0.6;
   --beat: 0;
   transition: --theme-primary 700ms ease, --theme-secondary 700ms ease,

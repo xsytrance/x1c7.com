@@ -15,6 +15,8 @@ import { MusicPlayerProvider } from "@/components/MusicPlayerContext";
 import { LazyMotionProvider } from "@/components/LazyMotionProvider";
 import { MusicPlayerBar } from "@/components/MusicPlayerBar";
 import { ThemeEngine } from "@/components/NowPlayingTheme";
+import { X1c7Chrome } from "@/components/X1c7Chrome";
+import { TylerDoor } from "@/components/TylerDoor";
 
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -53,20 +55,28 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <MusicPlayerProvider>
           <LazyMotionProvider>
           <ThemeEngine />
+          {/* Unmissable, top of every page: the way to Tyler's site. */}
+          <TylerDoor />
           <BootSequenceWrapper>
             {children}
-            <Footer />
+            <X1c7Chrome>
+              <Footer />
+            </X1c7Chrome>
           </BootSequenceWrapper>
-          <KeyboardShortcuts />
-          <KeyboardHelp />
-          <PerformanceGate>
-            <ParticleField />
-          </PerformanceGate>
-          <EasterEggs />
-          <KonamiCode />
-          <NoiseOverlay />
-          <UISoundLayer />
-          <MusicPlayerBar />
+          {/* x1c7's own furniture — switched off on tyler.x1c7.com, which is
+              Juan's site rather than a page of this one. */}
+          <X1c7Chrome>
+            <KeyboardShortcuts />
+            <KeyboardHelp />
+            <PerformanceGate>
+              <ParticleField />
+            </PerformanceGate>
+            <EasterEggs />
+            <KonamiCode />
+            <NoiseOverlay />
+            <UISoundLayer />
+            <MusicPlayerBar />
+          </X1c7Chrome>
           </LazyMotionProvider>
         </MusicPlayerProvider>
       </body>

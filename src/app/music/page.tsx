@@ -20,7 +20,8 @@ import { canPerform } from "@/components/KineticStage";
 import CollectionShelf from "@/components/CollectionShelf";
 import CollectionDeck from "@/components/CollectionDeck";
 import { JukeboxView } from "@/components/JukeboxView";
-import { TylerHazeHero } from "@/components/TylerHazeHero";
+import { TylerPromo } from "@/components/TylerPromo";
+import { ZeroChallenger } from "@/components/ZeroChallenger";
 import { AgenorBand } from "@/components/AgenorBand";
 
 function useDeviceMode(): "desktop" | "mobile" | null {
@@ -74,12 +75,6 @@ export default function Page() {
 
       <div className="relative z-10 px-4 pb-6 pt-6 sm:px-6 lg:px-8">
         <BackToHub />
-      </div>
-
-      {/* ===== GUEST OF HONOR — Tyler Haze takeover (2026-07-17). The owner's
-           collection steps back while Juan's debut album holds the spotlight. */}
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <TylerHazeHero />
       </div>
 
       {/* ===== HERO ===== */}
@@ -237,6 +232,16 @@ export default function Page() {
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
         <SoundCloudEmbed url="https://soundcloud.com/rod-agenor" />
       </section>
+
+      {/* ===== FRIEND OF THE HOUSE — Tyler Haze lives at tyler.x1c7.com now
+           (2026-07-25). The collection leads again; this is the standing door
+           to Juan's site, and the owner's message stays with it. ===== */}
+      <TylerPromo />
+
+      {/* ===== the crew's next announcement ===== */}
+      <div className="relative z-10 mt-20">
+        <ZeroChallenger compact />
+      </div>
     </main>
   );
 }
