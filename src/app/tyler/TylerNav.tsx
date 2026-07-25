@@ -48,6 +48,8 @@ export function TylerNav({ site }: { site: TylerSite }) {
           {has("tracks") && <a className="transition-colors hover:text-white" href="#tracks">Songs</a>}
           {has("photos") && <a className="transition-colors hover:text-white" href="#photos">Photos</a>}
           {has("press") && <a className="transition-colors hover:text-white" href="#press">Press</a>}
+          {/* Juan's permanent door — small, but always in the same place. */}
+          <Link href="/tyler/admin" className="transition-colors hover:text-white">My site</Link>
         </div>
 
         {/* The one action that matters, thumb-reachable on every screen. */}

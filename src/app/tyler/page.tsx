@@ -3,6 +3,7 @@ import { getTylerPage } from "@/lib/tyler/read";
 import { ZeroChallenger } from "@/components/ZeroChallenger";
 import { TylerHero } from "./TylerHero";
 import { Photos, Press, TrackList } from "./Sections";
+import { SignInDoor } from "./SignInDoor";
 
 // Juan edits from his phone and expects to see it. The page is cached for a
 // minute, so a stranger gets static HTML from the CDN and Juan never waits
@@ -18,6 +19,11 @@ export default async function TylerPage() {
 
   return (
     <main className="pb-20">
+      {/* Juan's way in, while the site is still unclaimed: the first thing
+          on the page, because he is the one person who needs it and he needs
+          it exactly once. It removes itself the moment he claims. */}
+      <SignInDoor variant="invite" />
+
       {sections.map(({ id }) => {
         switch (id) {
           case "hero":
@@ -45,9 +51,7 @@ export default async function TylerPage() {
           <Link href="/" className="transition-colors hover:text-white/70">
             built at x1c7
           </Link>
-          <Link href="/tyler/admin" className="transition-colors hover:text-white/70">
-            manage
-          </Link>
+          <SignInDoor variant="link" />
         </div>
       </footer>
     </main>
