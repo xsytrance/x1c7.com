@@ -294,11 +294,27 @@ his content.
 ## 11. Status log
 
 - [x] Plan written (this file), after scouting the live repo
-- [ ] Phase 1 — skeleton + data
-- [ ] Phase 2 — the public page
-- [ ] Phase 3 — auth
-- [ ] Phase 4 — the toolkit  ← **the "tell Juan" line**
-- [ ] Phase 5 — the lab bridge
-- [ ] Phase 6 — AGENOR restoration
-- [ ] Phase 7 — zer0
-- [ ] Phase 8 — polish on Juan's real phone
+- [x] Phase 1 — skeleton + data (5 tables + RLS applied; seeded 13 tracks,
+      8 verified links, 12 gallery images; host rewrite in `src/proxy.ts`)
+- [x] Phase 2 — the public page (mobile + desktop verified by screenshot at
+      390px and 1440px; the rotation demonstrably picks a different track)
+- [x] Phase 3 — auth (claim/login/logout/change; end-to-end proven locally:
+      wrong code, short password, mismatch, bad username, double-claim,
+      wrong password all refused; a public host with no cookie gets 401 on
+      read, write AND upload)
+- [x] Phase 4 — the toolkit  ← **the "tell Juan" line**
+- [x] Phase 5 — the lab bridge (tiles + tailnet detection + stem uploads)
+- [x] Phase 6 — AGENOR restoration (palette reverted, collection leads
+      /music again, top bar + promo block + portal pending)
+- [x] Phase 7 — zer0 (on both sites)
+- [ ] Phase 8 — polish on Juan's real phone, and on Rod's
+
+## Left for the next session
+- The homepage portal node for Tyler (the top bar + /music block are in;
+  the constellation node from §7 is not).
+- `/music`'s OG card still renders the Tyler takeover art — it should go
+  back to AGENOR, and Tyler's should move to his own route.
+- Audio preview on the Tyler hero: the play button links out to streaming;
+  in-page playback needs `audio_url` populated per track (the column and
+  the admin field exist, the files don't yet).
+- Real-device rounds on Juan's phone.
