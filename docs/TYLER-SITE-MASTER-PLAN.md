@@ -305,16 +305,30 @@ his content.
 - [x] Phase 4 — the toolkit  ← **the "tell Juan" line**
 - [x] Phase 5 — the lab bridge (tiles + tailnet detection + stem uploads)
 - [x] Phase 6 — AGENOR restoration (palette reverted, collection leads
-      /music again, top bar + promo block + portal pending)
+      /music again, top bar + promo block + portal node all live)
 - [x] Phase 7 — zer0 (on both sites)
 - [ ] Phase 8 — polish on Juan's real phone, and on Rod's
 
-## Left for the next session
-- The homepage portal node for Tyler (the top bar + /music block are in;
-  the constellation node from §7 is not).
-- `/music`'s OG card still renders the Tyler takeover art — it should go
-  back to AGENOR, and Tyler's should move to his own route.
-- Audio preview on the Tyler hero: the play button links out to streaming;
-  in-page playback needs `audio_url` populated per track (the column and
-  the admin field exist, the files don't yet).
-- Real-device rounds on Juan's phone.
+## Live as of 2026-07-25 evening
+
+Everything below is verified against the real domains, not localhost:
+
+| | |
+|---|---|
+| `tyler.x1c7.com` | 200, DNS valid, Vercel env vars set |
+| Juan's login | unclaimed; code minted and waiting with Rod |
+| Writes without a session | 401 on read, write and upload |
+| Tyler's OG card | `/opengraph-image` serves a real PNG |
+| `/music` share card | back to the AGENOR `_music.png` |
+| `x1c7.com` | house palette, Tyler bar on top, portal node present |
+
+## Left to do
+
+1. **Phase 8 — real devices.** Nothing has been on Juan's phone. Watch the
+   fixed nav over a notch, the photo filmstrip's snap, whether the admin tab
+   bar is reachable one-handed, and iOS Safari's safe-area insets.
+2. **Audio files.** The one-tap player (PR #72) only appears on a track with
+   an `audio_url`, and none of the 13 have one. This needs uploads, not code.
+3. **Juan's first session.** Watch what he reaches for and what he can't
+   find — the login being invisible was exactly that class of miss, and it
+   took the owner opening the page to catch it.

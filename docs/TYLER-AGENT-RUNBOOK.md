@@ -1,5 +1,11 @@
 # tyler.x1c7.com — agent runbook
 
+> **STATUS 2026-07-25 evening: steps 1–5 are DONE.** The site is live, the
+> env vars are set, DNS is valid, PR #72 is merged, and the only thing
+> standing between Juan and his site is the setup code sitting with Rod.
+> What remains is §5.5 (real devices) and audio files. **Sections 6 and 7
+> are still worth reading — the traps are real and two of them bit.**
+
 **For whoever picks this up next.** Everything needed to finish Juan's site and
 hand him the keys. Written 2026-07-25, immediately after the build session that
 shipped phases 1–7 (see `TYLER-SITE-MASTER-PLAN.md` for the why; this file is
@@ -187,20 +193,32 @@ Traps this session actually hit — all of them cost real time:
    bash command line running it. Kill by PID from `ss -ltnp` instead.
 3. **There are other long-running `next-server` processes on this box** that
    are Rod's, not yours. Never blanket-kill node/next.
-4. **localhost counts as the owner.** `isOwnerRequest` treats
+4. **A rewritten subdomain is NOT the path you tested.** `tyler.x1c7.com`
+   rewrites INTERNALLY to `/tyler`, so `usePathname()` returns `/` — every
+   `path.startsWith("/tyler")` check is false on the real domain and true
+   only at `x1c7.com/tyler`. This shipped x1c7's entire chrome onto Juan's
+   site, promo bar sitting on his nav, and no amount of local testing at
+   `/tyler` would ever have shown it. **Test the real host shape:**
+   ```bash
+   google-chrome --headless=new --host-resolver-rules="MAP tyler.x1c7.com 127.0.0.1" \
+     --screenshot=out.png "http://tyler.x1c7.com:3000/"
+   ```
+   That gives you the true Host header AND the true
+   `window.location.hostname`.
+5. **localhost counts as the owner.** `isOwnerRequest` treats
    localhost/`prime`/`*.ts.net`/`100.64/10` as the tailnet, so a local curl is
    always authenticated. To test the public path, send a public Host header:
    `curl -H 'Host: tyler.x1c7.com' ...`.
-5. **The service role key must never reach a browser.** `supabaseAdmin()` is
+6. **The service role key must never reach a browser.** `supabaseAdmin()` is
    server-only; if you find yourself importing it into a `"use client"` file,
    the design is wrong — add a route to `/api/tyler/content` instead.
-6. **Writes are allowlisted per column** (`WRITABLE` in
+7. **Writes are allowlisted per column** (`WRITABLE` in
    `src/app/api/tyler/content/route.ts`). A new admin field needs its column
    added there or the save silently does nothing.
-7. **Juan must never be able to break the public page.** `normalizeSite()` in
+8. **Juan must never be able to break the public page.** `normalizeSite()` in
    `src/lib/tyler/types.ts` is what guarantees that. Extend it when you add a
    field.
-8. **Never fabricate a streaming link.** Inherited from the takeover doc and
+9. **Never fabricate a streaming link.** Inherited from the takeover doc and
    still binding: only URLs that have been fetched and confirmed ship.
 
 Where things are:
