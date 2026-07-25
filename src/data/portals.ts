@@ -110,6 +110,17 @@ export const portals: Portal[] = [
     glyph: "?",
     status: "locked",
   },
+  {
+    slug: "tyler",
+    title: "Tyler Haze",
+    signal: "The Party Left Without Me.",
+    description: "A guest artist transmission: thirteen alternative-rock songs, photos, and the full story behind the record.",
+    details: ["Artist-owned page", "The Party Left Without Me", "Listen, watch, and connect"],
+    cta: "Enter Tyler's room",
+    color: "#d9342b",
+    glyph: "✹",
+    status: "live",
+  },
 ];
 
 export function getPortal(slug: string) {

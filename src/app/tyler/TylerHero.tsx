@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { TylerSite, TylerTrack } from "@/lib/tyler/types";
 
 const LAST_KEY = "tyler:last-spotlight";
@@ -42,13 +42,36 @@ export function TylerHero({ site, tracks }: { site: TylerSite; tracks: TylerTrac
   // a frame later. Nobody sees a flash of nothing, and the HTML stays cacheable.
   const [track, setTrack] = useState<TylerTrack | null>(null);
   const [rolling, setRolling] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const player = useRef<HTMLAudioElement>(null);
 
   useEffect(() => setTrack(pickSpotlight(pool)), [pool]);
+  useEffect(() => {
+    player.current?.pause();
+    setPlaying(false);
+  }, [track?.id]);
 
   const reroll = () => {
     setRolling(true);
     setTrack(pickSpotlight(pool));
     window.setTimeout(() => setRolling(false), 420);
+  };
+
+  const togglePlayback = async () => {
+    const audio = player.current;
+    if (!audio) return;
+    if (audio.paused) {
+      try {
+        await audio.play();
+        setPlaying(true);
+      } catch {
+        // Keep the button truthful if a browser declines playback.
+        setPlaying(false);
+      }
+    } else {
+      audio.pause();
+      setPlaying(false);
+    }
   };
 
   const art = track?.art || site.cover;
@@ -150,6 +173,17 @@ export function TylerHero({ site, tracks }: { site: TylerSite; tracks: TylerTrac
             </div>
 
             <div className="mt-4 flex flex-wrap gap-2">
+              {track?.audio_url && (
+                <button
+                  type="button"
+                  onClick={togglePlayback}
+                  className="rounded-full px-4 py-2.5 text-xs font-bold uppercase tracking-[0.15em] transition-transform active:scale-95"
+                  style={{ background: "var(--t-secondary)", color: "#1b1111" }}
+                  aria-label={playing ? `Pause ${track.title}` : `Play ${track.title}`}
+                >
+                  {playing ? "❚❚ Pause track" : "▶ Play track"}
+                </button>
+              )}
               {track?.show_slug && (
                 <Link
                   href={`/t/${track.show_slug}?reel=1`}
@@ -187,6 +221,16 @@ export function TylerHero({ site, tracks }: { site: TylerSite; tracks: TylerTrac
             <blockquote className="mt-6 border-l-2 pl-4 text-sm leading-relaxed text-white/55" style={{ borderColor: "var(--t-accent)" }}>
               {site.message}
             </blockquote>
+          )}
+          {track?.audio_url && (
+            <audio
+              ref={player}
+              src={track.audio_url}
+              preload="metadata"
+              onEnded={() => setPlaying(false)}
+              onPause={() => setPlaying(false)}
+              onPlay={() => setPlaying(true)}
+            />
           )}
         </div>
       </div>
