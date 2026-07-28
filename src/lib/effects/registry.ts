@@ -44,7 +44,10 @@ export type TextEffect =
   // Tranche 4 (Pillar 1 complete): the written word, and the final cut to dark.
   | "handwrite" | "tvoff"
   // Tranche 5 (the SUMMER DRIP cut): the DJ's chop and the glossy drip.
-  | "chop" | "drip";
+  | "chop" | "drip"
+  // Tranche 6 (SAY IT WITH YOUR BODY): the physical vocabulary — a violent
+  // shake, an off-axis swing, an embrace-pinch, and the long held note.
+  | "quake" | "tilt" | "squeeze" | "cling";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -55,6 +58,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "redact", "chromatic", "liquid", "bleed",
   "handwrite", "tvoff",
   "chop", "drip",
+  "quake", "tilt", "squeeze", "cling",
 ];
 
 export interface EffectLego {

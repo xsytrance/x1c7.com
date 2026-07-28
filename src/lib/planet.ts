@@ -118,6 +118,64 @@ export interface PlanetDynamicPlus {
   /** pin the backdrop to a named scene for this song's show (e.g. "SYRUP") —
    * a directed world instead of the AUTO hash pick. Unknown names no-op. */
   scene?: string;
+  /** director's-deck intensity knobs applied whenever this song plays at
+   * pass 6 (mirrors KineticStage's deck prop): density = particle population
+   * multiplier, glow = extra word bloom 0..1, grain/vignette = overlays 0..1. */
+  deck?: {
+    density?: number; glow?: number; grain?: number; vignette?: number;
+    motion?: DeckMotion; giant?: DeckGiant;
+    /** TYPOGRAPHY-ONLY when false: the stage never loads or shows scene art at
+     * all — no keyword paintings, no section moods, and none of the `_shared`
+     * fallback frames that common words like "night" or "love" otherwise pull
+     * in. The generative backdrop and the weather particles still run, since
+     * those are drawn rather than photographed, so the frame keeps its fire
+     * and its embers without a single image in it. Absent/true = normal. */
+    art?: boolean;
+    /** Pin the generative backdrop's hue lean, -0.5..0.5 turns. Absent = each
+     * section rolls its own from hash(song, emotion), which is lovely on a
+     * varied record and wrong on a song that is about ONE colour. */
+    backdropHue?: number;
+  };
+}
+
+/** GIANT WORDS — how `dynamic` mode stages one huge word at a time.
+ *
+ * Stock behaviour builds a PILE: the outgoing word stays on stage as a residue
+ * (up to 3, ~8s each) so a sung phrase accumulates into a poster. That is the
+ * right look for a continuous dynamic passage, and the wrong one for a directed
+ * cut that dips into dynamic for a single punch word every few seconds — there
+ * the pile fills with unrelated words from ten seconds ago and the stage turns
+ * to mush. These knobs make the treatment choosable per song instead of fixed. */
+export interface DeckGiant {
+  /** how many outgoing words stay on stage: 0 = SOLO (one giant word, clean
+   * stage), 1–2 = light echo, 3 = the stock pile. Default 3. */
+  pile?: number;
+  /** ms a residue lives before it starts fading. Default 8000. */
+  life?: number;
+  /** clear the pile whenever the mode conductor switches, so each dynamic
+   * window is a self-contained moment. Default true when `pile` is set. */
+  clearOnSwitch?: boolean;
+}
+
+/** MOTION SHOTS — turns the backdrop from a slideshow into cut footage. The
+ * stage's stock ken-burns is one 24s creep sized for a scene that lives half a
+ * minute; in a directed cut a scene lives 1–2s, so ~1% of that move ever shows
+ * and every image reads as a still. With this present each scene instead gets
+ * its own short camera move (push in, pull out, track, crane), picked per image
+ * and completed inside the shot. Absent = the stock behaviour, untouched. */
+export interface DeckMotion {
+  /** seconds a camera move takes end to end (default 2.2) */
+  dur?: number;
+  /** move amplitude multiplier, 0..2 (default 1) */
+  amp?: number;
+  /** floor between backdrop swaps in ms — the stage's default is 2000, which
+   * silently swallows any cut faster than that (default 1000 when motion is on) */
+  swapMs?: number;
+  /** crossfade seconds; keep well under swapMs or fades overlap (default 0.42) */
+  fade?: number;
+  /** psychedelic grade on the scene photo only, 0..1: a slow hue drift +
+   * saturation swell. 0 / absent = no grade. */
+  trip?: number;
 }
 
 export interface Planet {

@@ -686,3 +686,17 @@ body.perf-lite .stage-warn-pill {
   animation: stage-warpflash 0.7s ease-out both;
 }
 body.perf-lite .stage-warpflash { display: none; }
+
+/* THE TRIP — a slow spectral drift over the scene photo only, so the painting
+   keeps breathing through a 1–2s motion shot while the words hold their true
+   palette colours. Amplitude comes from dynamicPlus.deck.motion.trip via the
+   --trip-hue / --trip-sat custom properties; absent = the class is never
+   applied and nothing animates. */
+@keyframes stage-trip {
+  0%   { filter: hue-rotate(0deg) saturate(1); }
+  33%  { filter: hue-rotate(var(--trip-hue, 0deg)) saturate(var(--trip-sat, 1)); }
+  66%  { filter: hue-rotate(calc(var(--trip-hue, 0deg) * -0.7)) saturate(calc((var(--trip-sat, 1) + 1) / 2)); }
+  100% { filter: hue-rotate(0deg) saturate(1); }
+}
+.stage-trip { animation: stage-trip var(--trip-dur, 7.5s) ease-in-out infinite; }
+body.perf-lite .stage-trip { animation: none; }

@@ -9,7 +9,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, typ
 import { m, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
-import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects } from "@/lib/planet";
+import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
@@ -30,6 +30,13 @@ import { PerfHUD } from "./PerfHUD";
 import type { Track } from "@/lib/engineHost";
 
 export const clean = (w: string) => w.replace(/^[^\p{L}\p{N}'’]+|[^\p{L}\p{N}'’]+$/gu, "") || w;
+// What the stage PAINTS. Same trim as clean(), except a terminal run of ! or ?
+// survives: those are performance, not punctuation — a lyric that screams
+// "NO!!!" should scream it on screen. Commas, periods and quotes still go.
+// Keys, art lookups and effect resolution keep using clean(), so "NO!!!" is
+// still "no" to everything that has to match it.
+export const cleanDisplay = (w: string) =>
+  (w.replace(/^[^\p{L}\p{N}'’]+/gu, "").replace(/[^\p{L}\p{N}'’!?]+$/gu, "")) || w;
 
 // ── Signature word effects ─────────────────────────────────────────────────
 // Global lexicons: any song triggers them, so every planet gets the drama that
@@ -233,7 +240,34 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   tvoff: (w, a) => <WordTVOff word={w} airtime={a} />,
   chop: (w, a) => <WordChop word={w} airtime={a} />,
   drip: (w, a) => <WordDrip word={w} airtime={a} />,
+  quake: (w, a) => <WordQuake word={w} airtime={a} />,
+  tilt: (w, a) => <WordTilt word={w} airtime={a} />,
+  squeeze: (w, a) => <WordSqueeze word={w} airtime={a} />,
+  cling: (w, a) => <WordCling word={w} airtime={a} />,
 };
+
+// MOTION SHOTS — the camera moves a director can put under a 1–2s scene. Each
+// is a start/end pose in percent-of-frame; every scale stays >= 1.10 so the
+// largest drift (3.2%) can never expose an edge. Picked per image, not per
+// song, so consecutive scenes cut against each other instead of all creeping
+// the same way. Used only when dynamicPlus.deck.motion is present.
+const ART_MOVES: Array<{ s0: number; s1: number; x0: number; x1: number; y0: number; y1: number }> = [
+  { s0: 1.10, s1: 1.27, x0: -2.4, x1: 1.4, y0: 0.6, y1: -1.4 },  // push in, easing right
+  { s0: 1.28, s1: 1.11, x0: 2.0, x1: -0.6, y0: -1.0, y1: 0.6 },  // pull out, settling left
+  { s0: 1.19, s1: 1.19, x0: 3.2, x1: -3.2, y0: 0.0, y1: 0.0 },   // lateral track
+  { s0: 1.12, s1: 1.25, x0: 0.0, x1: 0.0, y0: 3.0, y1: -2.0 },   // crane up into it
+  { s0: 1.27, s1: 1.12, x0: -2.6, x1: 2.2, y0: -1.6, y1: 1.4 },  // pull out, drift down-right
+  { s0: 1.12, s1: 1.29, x0: 2.6, x1: -2.0, y0: 1.6, y1: -1.4 },  // push in on the diagonal
+  { s0: 1.24, s1: 1.13, x0: 0.0, x1: 0.0, y0: -2.6, y1: 2.4 },   // crane down, releasing
+  { s0: 1.13, s1: 1.13, x0: -3.0, x1: 3.0, y0: 1.2, y1: -1.2 },  // counter-track
+];
+// Hash the URL so a scene's move is stable across re-renders (a re-roll
+// mid-shot would visibly snap the frame) while still varying image to image.
+function artMoveFor(url: string) {
+  let h = 2166136261;
+  for (let i = 0; i < url.length; i++) { h = Math.imul(h ^ url.charCodeAt(i), 16777619); }
+  return ART_MOVES[Math.abs(h) % ART_MOVES.length];
+}
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost, forceBackdrop = false }: {
   track: Track;
@@ -258,8 +292,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   density  — particle population multiplier (1 = normal)
    *   glow     — extra bloom on the words (0..1 → up to ~0.6em accent drop-shadow)
    *   grain    — film-grain overlay opacity (0..1)
-   *   vignette — edge-darkening overlay opacity (0..1) */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number };
+   *   vignette — edge-darkening overlay opacity (0..1)
+   *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
+   *   giant    — how dynamic mode stages its huge words (see DeckGiant)
+   *   art      — false = typography only, no scene images at all */
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -287,7 +324,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const words = useMemo(() => {
     const out = rawWords.map((w) => ({ ...w }));
     for (let i = 0; i < out.length - 1; i++) {
-      if (out[i + 1].t - out[i].t > MAX_HOLD) out[i] = { ...out[i], t: out[i + 1].t - 0.45 };
+      if (out[i + 1].t - out[i].t > MAX_HOLD) {
+        // Line-dumped lyrics stamp several words with one time, which strands
+        // a line's tail word far from its true moment — snap those up against
+        // the next line. But a word with its OWN distinct stamp is word-synced:
+        // a held note ("saaaame…") starts exactly where it says. Leave it.
+        const lineDumped = i > 0 && out[i].t - out[i - 1].t < 0.15;
+        if (lineDumped) out[i] = { ...out[i], t: out[i + 1].t - 0.45 };
+      }
     }
     return out;
   }, [rawWords]);
@@ -321,6 +365,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [schedMode, setSchedMode] = useState<StageMode | null>(null);
   const [warpTick, setWarpTick] = useState(0);
   const schedRef = useRef<StageMode | null>(null);
+  // Default ON whenever a song configures the giant-word treatment at all;
+  // songs with no deck.giant keep the historic accumulating pile untouched.
+  const clearOnSwitchRef = useRef(false);
+  clearOnSwitchRef.current = deck?.giant ? (deck.giant.clearOnSwitch ?? true) : false;
   useEffect(() => {
     schedRef.current = null; setSchedMode(null); setWarpTick(0);
     if (!modeSchedule?.length) return;
@@ -332,11 +380,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       schedRef.current = next;
       setSchedMode(next);
       setWarpTick((v) => v + 1);
+      // A dynamic window is a self-contained statement: drop the giant-word
+      // pile on every switch so the previous burst's words can't still be
+      // sitting on stage under the next one seconds later. Opt out with
+      // deck.giant.clearOnSwitch = false to keep the old accumulating look.
+      if (clearOnSwitchRef.current) setResidue([]);
       // tape-warp the words layer imperatively — remove/reflow/add so a
       // switch mid-animation restarts the one-shot instead of being eaten
       const el = stageRef.current;
       if (el) { el.classList.remove("stage-modewarp"); void el.offsetWidth; el.classList.add("stage-modewarp"); }
-    }, 250);
+      // 80ms, not 250: at a quarter-second the conductor simply never saw a
+      // window shorter than ~0.6s, so directed sub-beat punches silently
+      // never fired. Cost is one find() over a handful of windows.
+    }, 80);
     return () => window.clearInterval(iv);
   }, [modeSchedule, getCurrentTime, track.id]);
   // The schedule wins inside a window; the viewer's pick is the resting state.
@@ -471,11 +527,30 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // once the new photo is fully decoded (no half-loaded pop-in), swaps can't
   // stack inside one crossfade (the flicker the owner saw), and a missing
   // -2.webp twin falls back to its base instead of flashing a broken frame.
-  const MIN_SWAP_MS = 2000; // > the 1.6s crossfade, so fades never overlap
+  // Default floor is 2000ms — > the 1.6s crossfade, so fades never overlap. A
+  // directed cut running MOTION SHOTS cuts faster than that and shortens the
+  // fade to match; read through a ref so requestArt's stable identity survives.
+  const motionCfg = deck?.motion;
+  // GIANT WORDS — pile depth and residue lifetime. Read through refs because the
+  // master rAF tick closes over them. 0 = SOLO: the live word is still huge, but
+  // nothing is left behind, so each dynamic window is a clean single statement.
+  const giantCfg = deck?.giant;
+  const pileMaxRef = useRef(3);
+  const pileLifeRef = useRef(8000);
+  pileMaxRef.current = Math.max(0, Math.min(3, giantCfg?.pile ?? 3));
+  pileLifeRef.current = Math.max(400, giantCfg?.life ?? 8000);
+  const swapMsRef = useRef(2000);
+  swapMsRef.current = motionCfg ? Math.max(350, motionCfg.swapMs ?? 1000) : 2000;
   const swapCtl = useRef<{ shown: string | null; lastAt: number; token: number; timer: number | null; pending: string | null }>(
     { shown: null, lastAt: 0, token: 0, timer: null, pending: null });
   const badArt = useRef(new Set<string>());
+  // Typography-only cuts gate here, at the single funnel every scene image has
+  // to pass through — keyword art, section moods and the _shared fallbacks all
+  // call requestArt, so one guard is enough to guarantee no image ever lands.
+  const artOffRef = useRef(false);
+  artOffRef.current = deck?.art === false;
   const requestArt = useCallback(function req(url: string) {
+    if (artOffRef.current) return;
     const ctl = swapCtl.current;
     if (badArt.current.has(url)) {
       const base = url.endsWith("-2.webp") ? url.replace(/-2\.webp$/, ".webp") : null;
@@ -484,7 +559,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     }
     if (url === ctl.shown) return;
     const now = performance.now();
-    if (now - ctl.lastAt < MIN_SWAP_MS) {
+    const minSwap = swapMsRef.current;
+    if (now - ctl.lastAt < minSwap) {
       // Inside the crossfade window — remember the latest ask, land it after.
       ctl.pending = url;
       if (ctl.timer == null) {
@@ -493,7 +569,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           const p = ctl.pending;
           ctl.pending = null;
           if (p) req(p);
-        }, MIN_SWAP_MS - (now - ctl.lastAt) + 20);
+        }, minSwap - (now - ctl.lastAt) + 20);
       }
       return;
     }
@@ -1133,7 +1209,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // The outgoing word joins the pile (max 3 residues + the live word).
         // Its true on-stage position + font size are measured off the DOM so
         // the residue takes over without a pixel of drift.
-        if (pass >= 3 && liveMode === "dynamic" && lastRendered.current && lastRendered.current.key !== i) {
+        if (pass >= 3 && liveMode === "dynamic" && pileMaxRef.current > 0 && lastRendered.current && lastRendered.current.key !== i) {
           const lr = lastRendered.current;
           lastRendered.current = null;
           const el = wordEls.current.get(lr.key);
@@ -1146,13 +1222,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               layer: layerSeq.current++ % 3,
               bornAt: performance.now(),
             };
-            // Beyond 3 layers, the oldest fades out (marked dying, removed
-            // when its fade completes) — never an instant pop.
+            // Beyond `pileMax` layers, the oldest fades out (marked dying,
+            // removed when its fade completes) — never an instant pop.
             setResidue((old) => {
               const next = [...old.filter((o) => o.key !== r.key), r];
               const active = next.filter((x) => !x.dying);
-              if (active.length <= 3) return next;
-              const drop = new Set(active.slice(0, active.length - 3).map((x) => x.key));
+              if (active.length <= pileMaxRef.current) return next;
+              const drop = new Set(active.slice(0, active.length - pileMaxRef.current).map((x) => x.key));
               return next.map((x) => (drop.has(x.key) ? { ...x, dying: true } : x));
             });
           }
@@ -1237,7 +1313,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           let changed = false;
           const next = old
             .filter((r) => {
-              const gone = nowP - r.bornAt > 12000;
+              const gone = nowP - r.bornAt > pileLifeRef.current + 4000;
               if (gone) changed = true;
               return !gone;
             })
@@ -1245,7 +1321,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               if (r.dying) return r;
               const pv = phys.current.get(r.key);
               const busy = pv && (pv.grab || Math.abs(pv.vx) + Math.abs(pv.vy) > 20);
-              if (!busy && nowP - r.bornAt > 8000) { changed = true; return { ...r, dying: true }; }
+              if (!busy && nowP - r.bornAt > pileLifeRef.current) { changed = true; return { ...r, dying: true }; }
               return r;
             });
           return changed ? next : old;
@@ -1437,8 +1513,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
-  const shown = word ? clean(word) : "";
-  const lower = shown.toLowerCase();
+  // Display keeps terminal ! and ? — the lookup key never does, so "NO!!!"
+  // still resolves its art and effect as "no".
+  const shown = word ? cleanDisplay(word) : "";
+  const lower = (word ? clean(word) : "").toLowerCase();
   const charged = !!word && lower in keywordEmotion;
   // The sung note colors the word (melody sense): tonic wears the theme hue,
   // harmonic distance bends it. Charged words keep their accent identity.
@@ -1522,6 +1600,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Lift: the backdrop leans in — for a held note, or a DYNAMIC+ visual
   // moment (the act windows that used to trigger takeovers now only do this).
   const lift = held || !!boost;
+  // The camera move this scene gets, scaled by the director's amplitude. Null
+  // unless the planet asked for motion shots, so every other song keeps the
+  // stock 24s creep.
+  const motionShot = useMemo(() => {
+    if (!motionCfg || !bgArt || lite) return null;
+    const m = artMoveFor(bgArt);
+    const amp = Math.max(0, Math.min(2, motionCfg.amp ?? 1));
+    return {
+      s0: 1 + (m.s0 - 1) * amp, s1: 1 + (m.s1 - 1) * amp,
+      x0: m.x0 * amp, x1: m.x1 * amp,
+      y0: m.y0 * amp, y1: m.y1 * amp,
+      dur: Math.max(0.4, motionCfg.dur ?? 2.2),
+    };
+  }, [motionCfg, bgArt, lite]);
   // Small out-of-the-way preview of what's coming — the owner likes it.
   // (The BIG word appearing early was the mis-anchor bug, fixed above.)
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -1541,12 +1633,39 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const delivery = stems && idx >= 0
     ? 0.82 + envAt(stems, "lead", words[idx].t + 0.18) * 0.42
     : 1;
-  let estW = 0, estH = 0;
+  // FIT AT RENDER TIME, not after. The measured fit() below writes fontSize
+  // imperatively, but this element's inline style re-applies the calc() on
+  // every React render (and the stage re-renders on the beat), so the measured
+  // shrink was being clobbered within a frame or two — which is why a long word
+  // still ran off both edges of a 1080-wide portrait frame. Pre-scaling the
+  // font here means the size React paints is already inside the frame; fit()
+  // is left to do the fine positioning it was always good at.
+  let estW = 0, estH = 0, fitScale = 1, dynX = dynRaw?.x ?? 0;
   if (dynRaw && shown) {
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
-    estH = basePx * dynRaw.size * delivery;
-    estW = Math.min(shown.length * basePx * dynRaw.size * delivery * 0.62, vwPx * 0.95);
+    // 0.68 not 0.62: the estimate has to err WIDE. Under-estimating the width
+    // lets a word think it fits and then clip, which is the one failure the
+    // viewer actually notices.
+    const rawW = shown.length * basePx * dynRaw.size * delivery * octScale * 0.68;
+    // Target 78% of the frame, not 90%: entrance effects (cling, rise, slam)
+    // scale the word up on the way in, and a CSS transform grows what the
+    // viewer sees without changing the layout width this clamp can measure.
+    // The headroom is what stops a long word overshooting the edge mid-entrance.
+    // Short words are unaffected — fitScale only ever drops below 1 when the
+    // word genuinely does not fit.
+    fitScale = Math.min(1, (vwPx * 0.78) / Math.max(1, rawW));
+    estH = basePx * dynRaw.size * delivery * fitScale;
+    estW = Math.min(rawW * fitScale, vwPx * 0.95);
+    // Stagecraft offsets the word off-centre for composition — great at 1920,
+    // fatal at 1080 where a wide word plus a 10vw shove hangs off the frame.
+    // Clamp the offset to whatever room the word actually leaves. This is the
+    // positional twin of fitScale: fit() computes the same correction, but its
+    // imperative marginLeft is overwritten by this element's inline style on
+    // the very next render, so the clamp has to happen HERE to survive.
+    const padPx = Math.max(10, vwPx * 0.03);
+    const maxXvw = Math.max(0, ((vwPx - estW) / 2 - padPx) / vwPx * 100);
+    dynX = Math.max(-maxXvw, Math.min(maxXvw, dynRaw.x));
   }
   // FIT-FIRST, now MEASURED: before the browser paints, read the word's real
   // laid-out size (offset* — immune to entrance transforms), shrink the font
@@ -1581,6 +1700,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       parked = parked || Math.abs(want) > maxOff + 1;
     };
     fit();
+    // Re-fit once the entrance has actually laid out. Per-letter effects (rise,
+    // cling, drip…) mount their spans after this layout pass, so the first
+    // measurement can read a width that is still growing — which is how a long
+    // word like ELEVATED got past the clamp and clipped at the frame edge.
+    const raf = requestAnimationFrame(fit);
+    const settle = setTimeout(fit, 140);
     // Held notes swell their letter-spacing over seconds — re-clamp whenever
     // the word's layout size changes. (Margins don't retrigger the observer.)
     const ro = new ResizeObserver(fit);
@@ -1589,15 +1714,29 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (parked && idx % 5 === 0) {
       to = setTimeout(() => { setTouchBurn(idx); navigator.vibrate?.(20); }, 430);
     }
-    return () => { ro.disconnect(); if (to) clearTimeout(to); };
+    return () => { ro.disconnect(); cancelAnimationFrame(raf); clearTimeout(settle); if (to) clearTimeout(to); };
      
   }, [idx, dynamic]);
-  // Residues center themselves the same way: measured negative margins.
+  // Residues center themselves the same way: measured negative margins — and,
+  // like the live word, must FIT. A residue captures the font size it had when
+  // it left the stage and never re-measures, so a word sized for a 1920 frame
+  // sat 40% wider than a 1080 portrait one and clipped at both edges. Shrink to
+  // the frame, then clamp the centre into the safe band.
   useLayoutEffect(() => {
     for (const r of residue) {
       const el = wordEls.current.get(r.key);
       if (el) {
-        el.style.marginLeft = `${-el.offsetWidth / 2}px`;
+        const vw = window.innerWidth;
+        const pad = Math.max(10, vw * 0.03);
+        if (el.offsetWidth > vw - pad * 2) {
+          const fs = parseFloat(getComputedStyle(el).fontSize);
+          el.style.fontSize = `${Math.max(18, fs * ((vw - pad * 2) / el.offsetWidth))}px`;
+        }
+        const w = el.offsetWidth;
+        const maxOff = Math.max(0, (vw - w) / 2 - pad);
+        const off = Math.max(-maxOff, Math.min(maxOff, r.cx - vw / 2));
+        el.style.left = `${vw / 2 + off}px`;
+        el.style.marginLeft = `${-w / 2}px`;
         el.style.marginTop = `${-el.offsetHeight / 2}px`;
       }
     }
@@ -1627,6 +1766,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           palette={palette}
           sectionEmotion={section?.emotion ?? null}
           sectionIntensity={section?.intensity ?? 0.35}
+          hue={deck?.backdropHue}
         />
       )}
       {/* THE REEL — the sung word's matched painting breathes into the
@@ -1641,7 +1781,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           style={{ opacity: reelGhost.on ? 0.24 : 0, transition: "opacity 900ms ease", mixBlendMode: "screen" }}
         />
       )}
-      {/* Generated song art — crossfading Ken-Burns backdrop behind the words */}
+      {/* Generated song art — crossfading Ken-Burns backdrop behind the words.
+          With deck.motion the creep becomes a per-scene camera move that
+          finishes inside the shot (see ART_MOVES). */}
       <AnimatePresence>
         {bgArt && (
           <m.div
@@ -1650,10 +1792,21 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             initial={{ opacity: 0 }}
             animate={{ opacity: lift ? 0.85 : 0.6 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: lift ? 0.7 : 1.6, ease: "easeInOut" }}
+            transition={{ duration: motionCfg ? (motionCfg.fade ?? 0.42) : (lift ? 0.7 : 1.6), ease: "easeInOut" }}
           >
-            {/* parallax shell — rides the device tilt / mouse via CSS vars */}
-            <div className="h-full w-full" style={{ transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))", willChange: "transform" }}>
+            {/* parallax shell — rides the device tilt / mouse via CSS vars, and
+                carries THE TRIP grade (a CSS animation would outrank the img's
+                own inline lift filter, so the two live on separate elements). */}
+            <div
+              className={`h-full w-full${motionCfg?.trip && !lite ? " stage-trip" : ""}`}
+              style={{
+                transform: "translate3d(calc(var(--par-x, 0px) + var(--cam-x, 0px) * 1.4), calc(var(--par-y, 0px) + var(--cam-y, 0px) * 1.4), 0) rotate(var(--cam-rot, 0deg)) scale(calc(1.05 * var(--cam-scale, 1)))",
+                willChange: "transform",
+                ...(motionCfg?.trip
+                  ? { ["--trip-sat" as string]: String(1 + motionCfg.trip * 0.5), ["--trip-hue" as string]: `${Math.round(motionCfg.trip * 34)}deg` }
+                  : null),
+              }}
+            >
               { }
               <m.img
                 src={bgArt}
@@ -1663,9 +1816,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                   // Perf-lite: never animate a full-viewport filter on phones.
                   ? undefined
                   : { filter: lift ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
-                initial={{ scale: 1.06 }}
-                animate={{ scale: 1.16 }}
-                transition={{ duration: 24, ease: "linear" }}
+                initial={motionShot ? { scale: motionShot.s0, x: `${motionShot.x0}%`, y: `${motionShot.y0}%` } : { scale: 1.06 }}
+                animate={motionShot ? { scale: motionShot.s1, x: `${motionShot.x1}%`, y: `${motionShot.y1}%` } : { scale: 1.16 }}
+                transition={{ duration: motionShot ? motionShot.dur : 24, ease: motionShot ? "easeOut" : "linear" }}
               />
               <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 42%, rgba(5,3,11,0.72) 100%)" }} />
             </div>
@@ -1959,7 +2112,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               // charged/held/final looks stay CSS-class driven on both paths.
               const wordCls = `kinetic-word absolute${charged ? " kinetic-word--charged" : ""}${pass >= 2 && final ? " kinetic-word--final" : ""}${held ? " kinetic-word--held" : ""}${dyn?.mono ? " !font-mono" : ""}${pass >= 3 ? " cursor-pointer select-none" : ""}${charging ? " kinetic-charging" : ""}`;
               const wordStyle = dyn || pitchCol ? {
-                ...(dyn ? { left: `calc(50% + ${dyn.x}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${(dyn.size * delivery * octScale).toFixed(4)})` } : null),
+                ...(dyn ? { left: `calc(50% + ${dynX}vw)`, top: `calc(50% + ${dyn.y}vh)`, marginLeft: -estW / 2, marginTop: -estH / 2, rotate: dyn.rot, fontSize: `calc(clamp(3rem, 16vw, 14rem) * ${(dyn.size * delivery * octScale * fitScale).toFixed(4)})` } : null),
                 ...(pitchCol ? { color: pitchCol } : null),
               } : undefined;
               const wordRef = (el: HTMLDivElement | null) => { if (el) { wordEls.current.set(idx, el); const pv = phys.current.get(idx); if (pv) el.style.translate = `${pv.x}px ${pv.y}px`; } };
@@ -3230,6 +3383,91 @@ function WordDrip({ word, airtime }: { word: string; airtime: number }) {
         />
       ))}
     </span>
+  );
+}
+
+/* Tranche 6 — the physical vocabulary (SAY IT WITH YOUR BODY).
+   Four treatments that move like a body: a violent shake, an off-axis swing,
+   an embrace-pinch, and the long held note that refuses to let go. */
+
+function WordQuake({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.6, Math.max(0.8, airtime * 0.9));
+  return (
+    <m.span
+      className="inline-block"
+      animate={{
+        x: ["0em", "0.07em", "-0.08em", "0.06em", "-0.07em", "0.045em", "-0.05em", "0.025em", "0em"],
+        y: ["0em", "-0.05em", "0.06em", "-0.045em", "0.05em", "-0.03em", "0.035em", "-0.015em", "0em"],
+        rotate: [0, 2.2, -2.6, 1.9, -2.2, 1.3, -1.5, 0.6, 0],
+        scale: [1.12, 1.1, 1.08, 1.06, 1.04, 1.03, 1.02, 1.01, 1],
+      }}
+      transition={{ duration: dur, times: [0, 0.1, 0.22, 0.34, 0.46, 0.6, 0.74, 0.88, 1], ease: "linear", repeat: airtime > 1.8 ? 1 : 0 }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
+function WordTilt({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.8, Math.max(0.9, airtime));
+  return (
+    <m.span
+      className="inline-block"
+      style={{ transformOrigin: "45% 100%" }}
+      initial={{ rotate: -11, scale: 0.92, opacity: 0 }}
+      animate={{
+        rotate: [-11, 7, -4, 2.5, -1, 0],
+        scale: [0.92, 1.08, 1.03, 1.01, 1, 1],
+        opacity: [0, 1, 1, 1, 1, 1],
+      }}
+      transition={{ duration: dur, times: [0, 0.22, 0.45, 0.65, 0.85, 1], ease: "easeOut" }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
+function WordSqueeze({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(1.5, Math.max(0.7, airtime * 0.85));
+  return (
+    <m.span
+      className="inline-block"
+      style={{ transformOrigin: "50% 62%" }}
+      animate={{
+        scaleX: [1.12, 0.68, 1.1, 0.94, 1.02, 1],
+        scaleY: [0.94, 1.22, 0.92, 1.05, 0.99, 1],
+        rotate: [0, 0, -1.2, 0.8, 0, 0],
+      }}
+      transition={{ duration: dur, times: [0, 0.3, 0.52, 0.72, 0.88, 1], ease: "easeInOut" }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
+function WordCling({ word, airtime }: { word: string; airtime: number }) {
+  // A held note holds the frame: enter big and slightly loose, settle almost
+  // imperceptibly for the WHOLE airtime, breathing a soft glow — never a pop.
+  const dur = Math.max(1.2, airtime);
+  return (
+    <m.span
+      className="inline-block"
+      animate={{
+        scale: [1.28, 1.16, 1.09, 1.045, 1.02, 1],
+        letterSpacing: ["0.06em", "0.045em", "0.03em", "0.02em", "0.01em", "0em"],
+        filter: [
+          "brightness(1.35) drop-shadow(0 0 0.35em currentColor)",
+          "brightness(1.24) drop-shadow(0 0 0.26em currentColor)",
+          "brightness(1.15) drop-shadow(0 0 0.18em currentColor)",
+          "brightness(1.09) drop-shadow(0 0 0.12em currentColor)",
+          "brightness(1.04) drop-shadow(0 0 0.07em currentColor)",
+          "brightness(1) drop-shadow(0 0 0em currentColor)",
+        ],
+      }}
+      transition={{ duration: dur, times: [0, 0.18, 0.38, 0.58, 0.78, 1], ease: "easeOut" }}
+    >
+      {word}
+    </m.span>
   );
 }
 

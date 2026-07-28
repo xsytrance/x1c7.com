@@ -287,7 +287,7 @@ export default function StudioPage() {
         <div className="relative z-10 flex flex-1 items-start justify-center overflow-y-auto px-4 pb-28">
           {live && embed ? (
             <>
-              <KineticStage track={currentTrack!} pass={pass} mode={mode} boost={pass >= 6 && moment.on} />
+              <KineticStage track={currentTrack!} pass={pass} mode={mode} boost={pass >= 6 && moment.on} deck={pass >= 6 ? currentTrack?.planet?.dynamicPlus?.deck : undefined} />
               {/* DYNAMIC+ moment billing — same chip the takeover wears */}
               {moment.label && (
                 <div className="pointer-events-none absolute bottom-16 left-1/2 z-[60] -translate-x-1/2">
@@ -331,7 +331,7 @@ export default function StudioPage() {
               ref={(el) => { attachStageGestures(el); }}
               className="relative min-w-0 flex-1 overflow-hidden"
             >
-              <KineticStage track={currentTrack!} pass={pass} mode={mode} forceBackdrop />
+              <KineticStage track={currentTrack!} pass={pass} mode={mode} forceBackdrop deck={pass >= 6 ? currentTrack?.planet?.dynamicPlus?.deck : undefined} />
               {!hideUI && <HintToast coarse={coarse} />}
               {/* gesture toast — the swipe's answer, worn near the top of the stage */}
               {gestureToast && (

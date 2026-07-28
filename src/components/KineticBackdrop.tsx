@@ -21,13 +21,16 @@ import { customScenes } from "@/lib/engine/customScenes";
 import { looksStore } from "@/lib/engine/looks";
 import { stemMixStore } from "@/lib/stemMix";
 
-export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionIntensity = 0.35 }: {
+export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionIntensity = 0.35, hue }: {
   /** Stable per-song seed (track id) — picks the AUTO scene + noise offsets. */
   seed: string;
   /** The song's palette hexes (planet analysis or track color). */
   palette: string[];
   /** The current section's emotion — keys the CHORUS-MEMORY look (below). */
   sectionEmotion?: string | null;
+  /** Pin the backdrop hue lean (-0.5..0.5 turns) instead of rolling one per
+   * section. Set by a song via dynamicPlus.deck.backdropHue. */
+  hue?: number;
   /** The current section's emotional intensity 0..1. */
   sectionIntensity?: number;
 }) {
@@ -132,6 +135,14 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
   // PRISM's sticky autopilot idea, but computed from the analysis instead of
   // guessed live. The look morphs in over one bar of the real grid, so the
   // transition itself is musical.
+  // A pinned hue also has to survive the default modulation: on a first run the
+  // mount above routes LFO 1 onto backdrop.hueShift at depth 0.22 (~80° of
+  // drift), which walks a pinned colour straight back out of the song.
+  useEffect(() => {
+    if (hue === undefined) return;
+    if (P.getStr("lfo1.target") === "backdrop.hueShift") P.set("lfo1.enabled", false, "code");
+  }, [hue]);
+
   useEffect(() => {
     if (!sectionEmotion) return;
     // A/B decks: the section's scene arms deck B (crossfades in on the bar).
@@ -141,13 +152,18 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     const bpm = featureBus.F.bpm;
     const barSec = bpm > 0 ? (4 * 60) / bpm : 2.4;
     P.morphTo({
-      "backdrop.hueShift": (u(0, 41) - 0.5) * 0.44,
+      // Each section normally leans its own hue, picked from hash(song, emotion).
+      // A song can PIN that lean instead: a fire song whose every section rolled
+      // a different hue came out lilac and teal with nothing warm in it. When
+      // `hue` is given the sections still change flow, trails and bloom — they
+      // just all stay inside the song's colour.
+      "backdrop.hueShift": hue ?? (u(0, 41) - 0.5) * 0.44,
       "backdrop.flow": (0.7 + u(3, 17) * 0.9) * (0.75 + sectionIntensity * 0.5),
       "backdrop.trails": 0.35 + u(6, 13) * 0.45,
       "backdrop.bloom": 0.22 + u(9, 11) * 0.5 + sectionIntensity * 0.25,
       "backdrop.intensity": 0.8 + sectionIntensity * 0.55,
     }, barSec, performance.now() / 1000);
-  }, [seed, sectionEmotion, sectionIntensity]);
+  }, [seed, sectionEmotion, sectionIntensity, hue]);
 
   return (
     <canvas
