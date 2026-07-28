@@ -57,6 +57,12 @@ const PASS = args.pass ?? "6";
 const BASE = args.base ?? "http://localhost:7272";
 const VERT = !!args.vertical;
 const W = Number(args.w ?? (VERT ? 1080 : 1920)), H = Number(args.h ?? (VERT ? 1920 : 1080));
+// Supersample: capture at SS× device pixels, downscale to W×H in assembly.
+// Text/edge AA gets baked into LUMA before yuv420p chroma subsampling — at
+// SS=1, saturated text on a mid background (hot pink on sage) keeps its edges
+// only in quarter-res chroma and comes out stair-stepped (owner: "why is
+// everything so jagged"). Integer values only; --ss 1 restores the old path.
+const SS = Math.max(1, Math.round(Number(args.ss ?? 2)));
 const SHOTS = Number(args.shots ?? 0);
 const AUDIO = args.audio && args.audio !== true ? resolve(args.audio)
   : join(REPO, "scripts/song-analysis/profiles", TRACK, "release.mp3");
@@ -79,16 +85,24 @@ if (args.both) {
 rmSync(WORK, { recursive: true, force: true });
 mkdirSync(WORK, { recursive: true });
 
+// Headless BY DEFAULT since 2026-07-24: --use-angle=vulkan reaches the real
+// NVIDIA GPU with no desktop session at all (probed: "ANGLE (NVIDIA ... RTX
+// 5060 Ti)"), so renders survive a locked/absent display. --headful restores
+// the old on-screen behavior for eyeball debugging.
 const browser = await chromium.launch({
-  headless: false,
+  headless: !args.headful,
   args: [
-    `--window-size=${W},${H + PROBE_H + 90}`,
+    `--window-size=${W * SS},${(H + PROBE_H) * SS + 90}`,
     "--autoplay-policy=no-user-gesture-required",
     "--hide-scrollbars",
     "--disable-infobars",
     "--no-first-run",
+    ...(SS > 1 ? [`--force-device-scale-factor=${SS}`] : []),
+    ...(args.headful ? [] : ["--use-angle=vulkan", "--enable-gpu", "--ignore-gpu-blocklist"]),
   ],
 });
+// NOTE: supersampling comes from --force-device-scale-factor alone. Setting
+// deviceScaleFactor here TOO makes the two multiply (4× cells in a 2× frame).
 const ctx = await browser.newContext({ viewport: { width: W, height: H + PROBE_H }, deviceScaleFactor: 1 });
 await ctx.grantPermissions(["microphone"], { origin: BASE }); // keeps the MicPrimer banner away
 const page = await ctx.newPage();
@@ -196,7 +210,7 @@ const anchor = () => page.evaluate(`(() => {
 // roll a touch early so the first in-window frame exists
 for (;;) { const a = await audioTime(); if (a.t >= FROM - 0.25) break; await new Promise((r) => setTimeout(r, 50)); }
 const a0 = await anchor();
-await cdp.send("Page.startScreencast", { format: "jpeg", quality: 88, maxWidth: W, maxHeight: H + PROBE_H, everyNthFrame: 1 });
+await cdp.send("Page.startScreencast", { format: "jpeg", quality: 88, maxWidth: W * SS, maxHeight: (H + PROBE_H) * SS, everyNthFrame: 1 });
 log("● recording …");
 for (;;) {
   const a = await audioTime();
@@ -219,17 +233,18 @@ const decodeClock = async (file, checkSize = false) => {
     // and must not enter the timeline. If many are lost, the whole take is
     // suspect: re-run with the capture window left alone.
     const m = await sharp(file).metadata();
-    if (m.width !== W || m.height !== H + PROBE_H) { wrongSize++; return null; }
+    if (m.width !== W * SS || m.height !== (H + PROBE_H) * SS) { wrongSize++; return null; }
   }
+  // the strip is painted in CSS px but captured at SS× device px
   const buf = await sharp(file)
-    .extract({ left: 0, top: 0, width: PROBE_BITS * PROBE_CELL, height: PROBE_H })
+    .extract({ left: 0, top: 0, width: PROBE_BITS * PROBE_CELL * SS, height: PROBE_H * SS })
     .greyscale().raw().toBuffer();
-  const rowW = PROBE_BITS * PROBE_CELL;
+  const rowW = PROBE_BITS * PROBE_CELL * SS;
   let ms = 0, ok = true;
   for (let i = 0; i < PROBE_BITS; i++) {
-    const x = i * PROBE_CELL + (PROBE_CELL >> 1);
+    const x = (i * PROBE_CELL + (PROBE_CELL >> 1)) * SS;
     // sample a 3-point column mid-cell; jpeg ringing can't flip all three
-    const ys = [8, PROBE_H >> 1, PROBE_H - 8];
+    const ys = [8 * SS, (PROBE_H >> 1) * SS, (PROBE_H - 8) * SS];
     const v = ys.reduce((s, y) => s + buf[y * rowW + x], 0) / ys.length;
     if (v > 90 && v < 165) ok = false; // ambiguous — partial paint
     if (v >= 165) ms |= 1 << i;
@@ -288,7 +303,7 @@ execFileSync("ffmpeg", [
   "-i", AUDIO,
   "-filter_complex",
   // crop the pixel-clock strip out; atrim decodes and cuts on the exact sample
-  `[0:v]crop=${W}:${H}:0:${PROBE_H},fps=60,scale=${W}:${H}:flags=lanczos,format=yuv420p[v];` +
+  `[0:v]crop=${W * SS}:${H * SS}:0:${PROBE_H * SS},fps=60,scale=${W}:${H}:flags=lanczos,format=yuv420p[v];` +
   `[1:a]atrim=start=${first.toFixed(3)}:end=${(first + D).toFixed(3)},asetpts=PTS-STARTPTS,` +
   `afade=t=in:st=0:d=0.35,afade=t=out:st=${(D - 0.4).toFixed(2)}:d=0.4[a]`,
   "-map", "[v]", "-map", "[a]",
@@ -306,7 +321,7 @@ log(`✦ ${OUT}`);
 // milliseconds (median), something upstream regressed.
 const proof = join(WORK, "proof.mp4");
 execFileSync("ffmpeg", ["-y", "-v", "error", "-f", "concat", "-safe", "0", "-i", list,
-  "-vf", `crop=${PROBE_BITS * PROBE_CELL}:${PROBE_H}:0:0,fps=60`, "-c:v", "libx264", "-preset", "veryfast", "-crf", "10", proof]);
+  "-vf", `crop=${PROBE_BITS * PROBE_CELL * SS}:${PROBE_H * SS}:0:0,fps=60`, "-c:v", "libx264", "-preset", "veryfast", "-crf", "10", proof]);
 const proofDir = join(WORK, "proof-frames");
 mkdirSync(proofDir, { recursive: true });
 // select every 30th frame VERBATIM (passthrough, no fps resample — fps=2

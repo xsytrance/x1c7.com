@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-07-19T11:08:58.678Z",
+  "generatedAt": "2026-07-25T11:27:01.569Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 614,
+    "candidates": 655,
     "judged": 24,
     "accepted": 21,
     "kept": 21
@@ -60,18 +60,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
-      "t": 70.682,
-      "score": 1,
-      "cosine": 0.63,
-      "reason": "Perfectly aligns with digital isolation and noir melancholy",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
       "key": "lexicon/light/s10-4-neon-sign.webp",
       "word": "light",
@@ -115,8 +103,20 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.635,
-      "reason": "Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them",
+      "reason": "fits noir mood, digital isolation, hollow connections",
       "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.95,
+      "cosine": 0.63,
+      "reason": "fits noir mood, digital isolation, fragmented faces",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -175,7 +175,7 @@
       "t": 70.682,
       "score": 0.95,
       "cosine": 0.542,
-      "reason": "fits noir cyberpunk mood, digital dreams, fractured connections",
+      "reason": "fits cyberpunk noir, digital dreams, fractured connections",
       "recipe": "2-anime",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 104.455,
       "score": 0.95,
       "cosine": 0.536,
-      "reason": "Symbolizes broken bonds, decay, urban loneliness fitting the song's themes",
+      "reason": "Symbolizes broken bonds, decay, and urban loneliness fitting the song's themes",
       "recipe": "2-cinema",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 74.153,
       "score": 0.7,
       "cosine": 0.504,
-      "reason": "Melancholic and hopeful star imagery fits the song's lonely paranoia and urban themes.",
+      "reason": "Melancholic and hopeful star reflects song's themes of loneliness and digital longing",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 74.153,
       "score": 0.6,
       "cosine": 0.448,
-      "reason": "Symbolizes hope and resilience against darkness, fits celestial wonder but lacks noir grit",
+      "reason": "Symbolizes hope in a bleak world, fits noir melancholy and digital isolation themes",
       "recipe": "2-film-still",
       "featured": false
     }
@@ -268,30 +268,30 @@
     "heart": [
       0,
       2,
-      7
+      6
     ],
     "tap": [
       1,
       3,
       11
     ],
-    "dream": [
-      4,
-      13,
-      18
-    ],
     "light": [
-      5,
+      4,
       16,
       17
     ],
     "save": [
-      6,
+      5,
       10
     ],
     "love": [
-      8,
+      7,
       9
+    ],
+    "dream": [
+      8,
+      13,
+      18
     ],
     "chains": [
       12,

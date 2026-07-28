@@ -1,0 +1,251 @@
+{
+  "analysis": {
+    "summary": "A dangerous, magnetic attraction between two individuals who are drawn to each other's intensity despite knowing the risks, symbolized by neon teeth and ultraviolet glow.",
+    "overallMood": "dangerous sexy nocturnal intense",
+    "themes": [
+      "magnetic attraction",
+      "self-destructive allure",
+      "neon symbolism",
+      "ultraviolet vulnerability",
+      "control vs surrender",
+      "nocturnal intensity"
+    ],
+    "palette": [
+      "#0f0c1b",
+      "#1a1a2e",
+      "#ff00ff",
+      "#00ff00"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "mysterious",
+        "intensity": 0.09,
+        "colorHint": "#0f0c1b",
+        "start": 11.92
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "intense",
+        "intensity": 0.53,
+        "colorHint": "#1a1a2e",
+        "start": 11.92
+      },
+      {
+        "name": "Chorus",
+        "emotion": "dangerous",
+        "intensity": 0.97,
+        "colorHint": "#ff00ff",
+        "start": 44.56
+      },
+      {
+        "name": "Bridge",
+        "emotion": "anxious",
+        "intensity": 0.78,
+        "colorHint": "#00ff00",
+        "start": 140.2
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "conflicted",
+        "intensity": 0.87,
+        "colorHint": "#1a1a2e",
+        "start": 167.26
+      }
+    ],
+    "keywords": [
+      {
+        "word": "teeth",
+        "emotion": "intense",
+        "imageryPrompt": "glowing electric blue teeth against black velvet, sharp and dangerous"
+      },
+      {
+        "word": "ultraviolet",
+        "emotion": "mysterious",
+        "imageryPrompt": "violet light filtering through smoke, revealing hidden textures"
+      },
+      {
+        "word": "poison",
+        "emotion": "dangerous",
+        "imageryPrompt": "liquid silver on a black surface, shimmering with hidden toxicity"
+      },
+      {
+        "word": "chem",
+        "emotion": "intense",
+        "imageryPrompt": "chemical reaction in neon tubes, electric blue and violet hues"
+      },
+      {
+        "word": "neon",
+        "emotion": "sexy",
+        "imageryPrompt": "glowing pink and purple neon signs reflecting on wet pavement"
+      },
+      {
+        "word": "bass",
+        "emotion": "intense",
+        "imageryPrompt": "deep bass vibrations in the air, making the floor tremble"
+      },
+      {
+        "word": "smile",
+        "emotion": "dangerous charm",
+        "imageryPrompt": "a crooked smile with glowing teeth in the dark"
+      },
+      {
+        "word": "dark",
+        "emotion": "magnetic tension",
+        "imageryPrompt": "a city at night with neon lights reflecting off wet streets"
+      },
+      {
+        "word": "bite",
+        "emotion": "destructive pull",
+        "imageryPrompt": "a sharp bite on the skin with neon lights"
+      },
+      {
+        "word": "curves",
+        "emotion": "magnetic attraction",
+        "imageryPrompt": "a woman’s curves under neon lights in a city street"
+      },
+      {
+        "word": "lips",
+        "emotion": "intoxicating danger",
+        "imageryPrompt": "glowing lips with neon teeth in the dark"
+      }
+    ],
+    "meaning": {
+      "story": "This song explores a high-stakes, mutual obsession between two people who are drawn to each other’s dangerous allure despite knowing the consequences. The subtext reveals a toxic intimacy where both parties are complicit in their own destruction, symbolized by neon teeth representing the addictive, destructive pull of their connection.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "Sets the stage for a nocturnal, high-intensity encounter with ultraviolet glow and magnetic tension",
+          "keyLine": "Black dress glowing underneath ultraviolet"
+        },
+        {
+          "name": "Verse 1",
+          "interpretation": "The narrator acknowledges their attraction to the other person’s physical presence and magnetic pull, despite the risk of being destroyed",
+          "keyLine": "Already hers before the end of the night"
+        },
+        {
+          "name": "Chorus",
+          "interpretation": "The mutual pull between the two characters is described as both alluring and destructive, with neon teeth symbolizing the inevitable damage",
+          "keyLine": "Just to feel the bite of those neon teeth"
+        },
+        {
+          "name": "Bridge",
+          "interpretation": "Highlights the aftermath of the relationship, where both have left but the emotional damage remains",
+          "keyLine": "Just the taste of the words that we never said"
+        },
+        {
+          "name": "Verse 2",
+          "interpretation": "The narrator reflects on the other person’s power over them, with the relationship being both intoxicating and destructive",
+          "keyLine": "I swear I’m in control while she pulls me beneath her"
+        }
+      ],
+      "keyLines": [
+        "You shine like trouble lighting up the dark",
+        "One crooked smile and you’re pulling me apart",
+        "Sweet little poison sitting on your lips",
+        "Just to feel the bite of those neon teeth"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "neon",
+          "emotion": "dangerous allure",
+          "imageryPrompt": "glowing purple and electric blue teeth against a dark city skyline",
+          "weight": 0.95
+        },
+        {
+          "word": "teeth",
+          "emotion": "destructive intimacy",
+          "imageryPrompt": "sharp, glowing teeth cutting through smoke in a neon-lit alley",
+          "weight": 0.9
+        },
+        {
+          "word": "ultraviolet",
+          "emotion": "transient beauty",
+          "imageryPrompt": "sunset in a city with a purple and blue glow",
+          "weight": 0.85
+        },
+        {
+          "word": "poison",
+          "emotion": "toxic attraction",
+          "imageryPrompt": "a drop of liquid poison on a dark surface",
+          "weight": 0.8
+        },
+        {
+          "word": "smile",
+          "emotion": "dangerous charm",
+          "imageryPrompt": "a crooked smile with glowing teeth in the dark",
+          "weight": 0.75
+        },
+        {
+          "word": "dark",
+          "emotion": "magnetic tension",
+          "imageryPrompt": "a city at night with neon lights reflecting off wet streets",
+          "weight": 0.7
+        },
+        {
+          "word": "bite",
+          "emotion": "destructive pull",
+          "imageryPrompt": "a sharp bite on the skin with neon lights",
+          "weight": 0.85
+        },
+        {
+          "word": "curves",
+          "emotion": "magnetic attraction",
+          "imageryPrompt": "a woman’s curves under neon lights in a city street",
+          "weight": 0.65
+        },
+        {
+          "word": "lips",
+          "emotion": "intoxicating danger",
+          "imageryPrompt": "glowing lips with neon teeth in the dark",
+          "weight": 0.8
+        },
+        {
+          "word": "teeth",
+          "emotion": "destructive intimacy",
+          "imageryPrompt": "sharp, glowing teeth cutting through smoke in a neon-lit alley",
+          "weight": 0.9
+        },
+        {
+          "word": "poison",
+          "emotion": "toxic attraction",
+          "imageryPrompt": "a drop of liquid poison on a dark surface",
+          "weight": 0.8
+        },
+        {
+          "word": "smile",
+          "emotion": "dangerous charm",
+          "imageryPrompt": "a crooked smile with glowing teeth in the dark",
+          "weight": 0.75
+        },
+        {
+          "word": "dark",
+          "emotion": "magnetic tension",
+          "imageryPrompt": "a city at night with neon lights reflecting off wet streets",
+          "weight": 0.7
+        },
+        {
+          "word": "bite",
+          "emotion": "destructive pull",
+          "imageryPrompt": "a sharp bite on the skin with neon lights",
+          "weight": 0.85
+        },
+        {
+          "word": "curves",
+          "emotion": "magnetic attraction",
+          "imageryPrompt": "a woman’s curves under neon lights in a city street",
+          "weight": 0.65
+        },
+        {
+          "word": "lips",
+          "emotion": "intoxicating danger",
+          "imageryPrompt": "glowing lips with neon teeth in the dark",
+          "weight": 0.8
+        }
+      ]
+    }
+  },
+  "styleHint": "Uptempo dark alternative club anthem, emo-trap, melodic rap, pop-punk, alternative-rock; sexy dangerous nocturnal; synth-bass pulse, clean 808s, trap drums, distorted electric guitar",
+  "assets": {},
+  "generatedAt": "2026-07-25T18:08:29.394Z"
+}

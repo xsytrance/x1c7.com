@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-07-19T10:20:39.239Z",
+  "generatedAt": "2026-07-25T10:45:20.823Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 10,
-    "judged": 3,
-    "accepted": 3,
-    "kept": 3
+    "candidates": 40,
+    "judged": 6,
+    "accepted": 6,
+    "kept": 6
   },
   "reel": [
     {
@@ -21,6 +21,30 @@
       "cosine": 0.392,
       "reason": "Matches mood and themes with neon symbolism and emotional closure",
       "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s1-6-word-portrait.webp",
+      "key": "lexicon/sin/s1-6-word-portrait.webp",
+      "word": "sin",
+      "line": "de quedarme de más Tú querías mi perdón sin cambiar la historia entera yo quería un amor grande no",
+      "t": 136.023,
+      "score": 0.95,
+      "cosine": 0.369,
+      "reason": "Matches sensual, melancholic mood and themes of emotional closure and hidden desires",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s0-1-word-portrait.webp",
+      "key": "lexicon/sin/s0-1-word-portrait.webp",
+      "word": "sin",
+      "line": "de quedarme de más Tú querías mi perdón sin cambiar la historia entera yo quería un amor grande no",
+      "t": 136.023,
+      "score": 0.9,
+      "cosine": 0.378,
+      "reason": "Sensual, mysterious, and empowering imagery aligns with the song's themes.",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -46,13 +70,30 @@
       "reason": "Powerful gaze and desert metaphor align with emotional closure and unanswered questions",
       "recipe": "5-film-still-r1",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s2-2-photo.webp",
+      "key": "lexicon/sin/s2-2-photo.webp",
+      "word": "sin",
+      "line": "de quedarme de más Tú querías mi perdón sin cambiar la historia entera yo quería un amor grande no",
+      "t": 136.023,
+      "score": 0.6,
+      "cosine": 0.358,
+      "reason": "Image captures emotional struggle but lacks empowerment and closure central to the song",
+      "recipe": "2-photo",
+      "featured": false
     }
   ],
   "byWord": {
     "respuestas": [
       0,
+      3,
+      4
+    ],
+    "sin": [
       1,
-      2
+      2,
+      5
     ]
   }
 }

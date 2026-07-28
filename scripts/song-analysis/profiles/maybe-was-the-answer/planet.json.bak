@@ -1,0 +1,116 @@
+[
+  {
+    "id": "maybe-was-the-answer",
+    "planet": {
+      "analysis": {
+        "summary": "The song chronicles a relationship reversal where a former pursuer becomes obsessed after being rejected, shifting from playful confidence to an ominous warning about setting boundaries. It explores themes of power dynamics, the volatility of love, and the eerie persistence of someone who knows too much.",
+        "overallMood": "Confident yet haunted by obsessive attention",
+        "themes": [
+          "Power Dynamics",
+          "Obsession vs. Safety",
+          "Relationship Reversal",
+          "Eerie Persistence"
+        ],
+        "palette": [
+          "#1a1a2e",
+          "#c9b037",
+          "#ff4d6d",
+          "#5eead4"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Playful anticipation turning mysterious",
+            "intensity": 0.4,
+            "colorHint": "#1a1a2e",
+            "start": 18.5
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Heightened confidence with underlying unease at the obsession",
+            "intensity": 0.78,
+            "colorHint": "#ff4d6d",
+            "start": 18.5
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Observational and slightly amused by the shift in energy",
+            "intensity": 0.35,
+            "colorHint": "#c9b037",
+            "start": 39.2
+          },
+          {
+            "name": "Pre-Chorus",
+            "emotion": "Calm realization of growth and boundary setting",
+            "intensity": 0.25,
+            "colorHint": "#5eead4",
+            "start": 54.7
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "Amused detachment as boundaries are breached",
+            "intensity": 0.5,
+            "colorHint": "#c9b037",
+            "start": 109.5
+          },
+          {
+            "name": "The Flip",
+            "emotion": "Intense warning and defensive confrontation",
+            "intensity": 0.85,
+            "colorHint": "#ff4d6d",
+            "start": 125.99
+          },
+          {
+            "name": "Verse 3",
+            "emotion": "Resolute finality and emotional exhaustion",
+            "intensity": 0.72,
+            "colorHint": "#1a1a2e",
+            "start": 130.38
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Vulnerable plea for peace amidst the chaos",
+            "intensity": 0.6,
+            "colorHint": "#5eead4",
+            "start": 146.46
+          }
+        ],
+        "keywords": [
+          {
+            "word": "confident",
+            "emotion": "Empowered and amused",
+            "imageryPrompt": "A silhouette standing tall under a streetlamp at night, posture relaxed but firm, glowing with an inner golden light that pushes back shadows."
+          },
+          {
+            "word": "haunted",
+            "emotion": "Uneasy and vigilant",
+            "imageryPrompt": "Faint, ghostly footprints trailing behind a figure in a dark alleyway, the air shimmering with cold mist where they walked hours ago."
+          },
+          {
+            "word": "playful",
+            "emotion": "Light-hearted but sharp-edged",
+            "imageryPrompt": "A cat sitting on a windowsill watching rain streak glass, tail twitching rhythmically while ignoring the storm outside."
+          },
+          {
+            "word": "ominous",
+            "emotion": "Threatening and heavy",
+            "imageryPrompt": "Car headlights cutting through thick fog in an empty parking lot, casting long, distorted shadows that seem to move independently of objects."
+          },
+          {
+            "word": "warning",
+            "emotion": "Serious and final",
+            "imageryPrompt": "A red neon sign flickering against a brick wall, casting stark warnings on the pavement where wet footprints are being erased by rain."
+          },
+          {
+            "word": "obsession",
+            "emotion": "Intense and suffocating",
+            "imageryPrompt": "Dozens of identical phone notifications stacking up like a tower blocking out sunlight, creating an impenetrable wall of digital noise."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

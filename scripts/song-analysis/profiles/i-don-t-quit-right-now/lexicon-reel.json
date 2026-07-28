@@ -1,16 +1,40 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-07-19T10:45:06.480Z",
+  "generatedAt": "2026-07-25T11:09:49.624Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1714,
+    "candidates": 2405,
     "judged": 64,
-    "accepted": 32,
+    "accepted": 45,
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s1-5-photo.webp",
+      "key": "lexicon/sweat/s1-5-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 1,
+      "cosine": 0.58,
+      "reason": "Perfectly captures sweat's role in endurance and grit",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-2-photo.webp",
+      "key": "lexicon/sweat/s3-2-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 1,
+      "cosine": 0.562,
+      "reason": "Perfectly captures sweat's role in endurance and vulnerability",
+      "recipe": "2-photo",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
       "key": "lexicon/pressure/s0-2.webp",
@@ -19,20 +43,8 @@
       "t": 58.364,
       "score": 1,
       "cosine": 0.521,
-      "reason": "Image embodies relentless grit and internal struggle through weightlifting",
+      "reason": "Image embodies grit, struggle, and determination central to the song's theme.",
       "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
-      "key": "lexicon/drip/s2-3-photo.webp",
-      "word": "drip",
-      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
-      "t": 54.927,
-      "score": 0.98,
-      "cosine": 0.602,
-      "reason": "Powerful visual of endurance and grit aligns with song's themes",
-      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -67,8 +79,32 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Powerful imagery matches relentless grit and internal determination",
+      "reason": "Powerful imagery matches relentless grit and internal struggle",
       "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s0-4-photo.webp",
+      "key": "lexicon/sweat/s0-4-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.95,
+      "cosine": 0.605,
+      "reason": "authentic portrayal of physical exertion and resilience",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
+      "key": "lexicon/drip/s2-3-photo.webp",
+      "word": "drip",
+      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
+      "t": 54.927,
+      "score": 0.95,
+      "cosine": 0.602,
+      "reason": "Powerful visual of endurance and grit aligns with song's themes of physical and mental str",
+      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -79,7 +115,7 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, fire as inner determination, gym setting matches song's",
+      "reason": "Powerful imagery aligns with grit, determination, and physical struggle",
       "recipe": "5-photo",
       "featured": true
     },
@@ -105,18 +141,6 @@
       "cosine": 0.528,
       "reason": "Powerful imagery aligns with internal struggle and external pressure themes",
       "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
-      "t": 142.385,
-      "score": 0.95,
-      "cosine": 0.525,
-      "reason": "Symbolism aligns with fire as inner drive and grit",
-      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -151,7 +175,7 @@
       "t": 22.535,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Cold gym atmosphere matches relentless grit and internal struggle",
+      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +199,7 @@
       "t": 192.807,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "fits gritty gym struggle, sweat as proof of effort",
+      "reason": "matches gritty gym struggle and sweat as proof of effort",
       "recipe": "5-photo",
       "featured": true
     },
@@ -199,7 +223,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.473,
-      "reason": "Relentless effort, gritty urban struggle, and tangible goal align with the song's themes o",
+      "reason": "Relentless sprinting, gritty urban setting, and symbolic vintage car align with the song's",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -211,7 +235,31 @@
       "t": 22.849,
       "score": 0.95,
       "cosine": 0.459,
-      "reason": "Matches gritty mood, solitude, physical struggle, and determination",
+      "reason": "Matches gritty mood, solitude, and physical struggle of the song",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s3-3-film-still.webp",
+      "key": "lexicon/breath/s3-3-film-still.webp",
+      "word": "breath",
+      "line": "with a sharkfin grin Elbows tucked chest tight breath held World get quiet when the barbell fell",
+      "t": 81.108,
+      "score": 0.95,
+      "cosine": 0.447,
+      "reason": "Powerful exertion matches relentless grit and internal struggle",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s7-5-word-portrait.webp",
+      "key": "lexicon/burn/s7-5-word-portrait.webp",
+      "word": "burn",
+      "line": "I keep pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down",
+      "t": 52.57,
+      "score": 0.95,
+      "cosine": 0.432,
+      "reason": "Powerful imagery matches the song's relentless grit and themes of endurance and defiance.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -235,7 +283,7 @@
       "t": 34.911,
       "score": 0.95,
       "cosine": 0.42,
-      "reason": "Tense hands in dark room match gritty determination and internal struggle",
+      "reason": "Power struggle and intensity match the song's relentless grit and internal battle",
       "recipe": "6-graphic-novel",
       "featured": true
     },
@@ -249,6 +297,18 @@
       "cosine": 0.412,
       "reason": "Symbolizes cutting off negative thoughts, fits gritty determination and internal struggle",
       "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.9,
+      "cosine": 0.525,
+      "reason": "Symbolizes inner drive and discipline through fire and music",
+      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -271,8 +331,20 @@
       "t": 189.939,
       "score": 0.9,
       "cosine": 0.497,
-      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort",
+      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort and transformation",
       "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s2-5-photo.webp",
+      "key": "lexicon/burn/s2-5-photo.webp",
+      "word": "burn",
+      "line": "I keep pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down",
+      "t": 52.57,
+      "score": 0.9,
+      "cosine": 0.494,
+      "reason": "Symbolizes pain and transformation through burn and drips; fits gritty, resilient mood",
+      "recipe": "5-photo",
       "featured": true
     },
     {
@@ -288,6 +360,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
+      "key": "lexicon/dark/s9-2-word-portrait.webp",
+      "word": "dark",
+      "line": "getting sharp Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous",
+      "t": 203.858,
+      "score": 0.9,
+      "cosine": 0.441,
+      "reason": "fits gritty mood, solitary struggle, dim lighting matches internal battle",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s12-2-word-portrait.webp",
+      "key": "lexicon/dark/s12-2-word-portrait.webp",
+      "word": "dark",
+      "line": "getting sharp Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous",
+      "t": 203.858,
+      "score": 0.9,
+      "cosine": 0.436,
+      "reason": "fits gritty mood, solitary struggle, symbolic darkness as introspection",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-3-word-portrait.webp",
       "key": "lexicon/beat/s0-3-word-portrait.webp",
       "word": "beat",
@@ -295,170 +391,78 @@
       "t": 0.023,
       "score": 0.9,
       "cosine": 0.432,
-      "reason": "Strong symbolism, solitary figure, industrial setting, dramatic lighting align with grit a",
+      "reason": "Strong symbolism, mood matches relentless grit and solitary struggle",
       "recipe": "3-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s15-1-word-portrait.webp",
-      "key": "lexicon/night/s15-1-word-portrait.webp",
-      "word": "night",
-      "line": "boring but the mirror dont cap Casein late night water all day Stretch when Im stiff so",
-      "t": 134.838,
-      "score": 0.9,
-      "cosine": 0.412,
-      "reason": "fits gritty mood, urban isolation mirrors solitary struggle",
-      "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s17-2-film-still.webp",
-      "key": "lexicon/hands/s17-2-film-still.webp",
-      "word": "hands",
-      "line": "Third set looking like I might get mean Hands on the bar grip chalked white I dont trust motivation",
-      "t": 34.911,
-      "score": 0.8,
-      "cosine": 0.443,
-      "reason": "Symbolizes grip and determination, fits gritty theme but lacks gym context",
-      "recipe": "2-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s5-6-word-portrait.webp",
-      "key": "lexicon/road/s5-6-word-portrait.webp",
-      "word": "road",
-      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
-      "t": 196.451,
-      "score": 0.8,
-      "cosine": 0.423,
-      "reason": "Symbolizes journey and discipline; aligns with grit and determination",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s2-1-word-portrait.webp",
-      "key": "lexicon/road/s2-1-word-portrait.webp",
-      "word": "road",
-      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
-      "t": 196.451,
-      "score": 0.8,
-      "cosine": 0.391,
-      "reason": "Symbolizes journey and perseverance, fits gritty determination and solitary struggle",
-      "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-1-neon-sign.webp",
-      "key": "lexicon/break/s6-1-neon-sign.webp",
-      "word": "break",
-      "line": "all day Stretch when Im stiff so I dont break Skull crushers burn planks make me shake Crunches",
-      "t": 138.67,
-      "score": 0.7,
-      "cosine": 0.407,
-      "reason": "raw emotion aligns with grit; urban setting fits solitary struggle",
-      "recipe": "1-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s6-1-photo.webp",
-      "key": "lexicon/road/s6-1-photo.webp",
-      "word": "road",
-      "line": "machine I put that cocktail far down the road I put todays work where excuses go Money",
-      "t": 196.451,
-      "score": 0.6,
-      "cosine": 0.401,
-      "reason": "Captures isolation and journey but lacks grit and determination",
-      "recipe": "1-photo",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s11-1-photo.webp",
-      "key": "lexicon/body/s11-1-photo.webp",
-      "word": "body",
-      "line": "summer but I dont daydream I put that beach body under a machine I put that cocktail far",
-      "t": 192.807,
-      "score": 0.6,
-      "cosine": 0.398,
-      "reason": "isolated figure in gym reflects solitary struggle but lacks intensity of relentless grit",
-      "recipe": "1-photo",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s9-2-photo.webp",
-      "key": "lexicon/break/s9-2-photo.webp",
-      "word": "break",
-      "line": "all day Stretch when Im stiff so I dont break Skull crushers burn planks make me shake Crunches",
-      "t": 138.67,
-      "score": 0.6,
-      "cosine": 0.364,
-      "reason": "Crack symbolizes breaking, fits gritty urban decay and internal struggle",
-      "recipe": "2-photo",
-      "featured": false
     }
   ],
   "byWord": {
-    "pressure": [
+    "sweat": [
       0,
-      7
+      1,
+      6
     ],
-    "drip": [
-      1
+    "pressure": [
+      2,
+      10
     ],
     "move": [
-      2,
-      4,
-      15
-    ],
-    "night": [
       3,
-      24
-    ],
-    "fire": [
       5,
-      8,
-      12
-    ],
-    "cold": [
-      6,
-      11
-    ],
-    "body": [
-      9,
-      13,
-      30
-    ],
-    "walk": [
-      10,
-      16,
-      20
-    ],
-    "crown": [
-      14
-    ],
-    "voice": [
       17
     ],
-    "hands": [
+    "night": [
+      4
+    ],
+    "drip": [
+      7
+    ],
+    "fire": [
+      8,
+      14,
+      24
+    ],
+    "cold": [
+      9,
+      13
+    ],
+    "body": [
+      11,
+      15
+    ],
+    "walk": [
+      12,
       18,
       25
     ],
-    "cut": [
-      19,
-      22
+    "crown": [
+      16
     ],
-    "summer": [
+    "breath": [
+      19
+    ],
+    "burn": [
+      20,
+      27
+    ],
+    "voice": [
       21
     ],
+    "hands": [
+      22
+    ],
+    "cut": [
+      23,
+      28
+    ],
+    "summer": [
+      26
+    ],
+    "dark": [
+      29,
+      30
+    ],
     "beat": [
-      23
-    ],
-    "road": [
-      26,
-      27,
-      29
-    ],
-    "break": [
-      28,
       31
     ]
   }

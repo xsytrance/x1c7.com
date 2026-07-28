@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-07-19T10:56:11.673Z",
+  "generatedAt": "2026-07-25T11:20:27.398Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1364,
-    "judged": 47,
-    "accepted": 44,
+    "candidates": 1989,
+    "judged": 64,
+    "accepted": 60,
     "kept": 32
   },
   "reel": [
@@ -43,7 +43,7 @@
       "t": 158.743,
       "score": 0.95,
       "cosine": 0.624,
-      "reason": "Symbolism aligns with chaos, addiction, and obsession in a nightlife setting.",
+      "reason": "Symbolizes chaos, addiction, and obsession through fragmented faces and blazing core",
       "recipe": "5-anime",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 24.972,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits toxic, chaotic nightlife and addiction themes",
+      "reason": "fits toxic, chaotic nightlife and obsession themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -168,6 +168,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s1-5-word-neon.webp",
+      "key": "lexicon/poison/s1-5-word-neon.webp",
+      "word": "poison",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "score": 0.95,
+      "cosine": 0.516,
+      "reason": "fits toxic love, nightlife, danger, seduction",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s0-1-cinema.webp",
+      "key": "lexicon/poison/s0-1-cinema.webp",
+      "word": "poison",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "score": 0.95,
+      "cosine": 0.511,
+      "reason": "Symbolizes toxic love and hidden danger in a moody urban setting",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
       "key": "lexicon/lights/s3-4-word-portrait.webp",
       "word": "lights",
@@ -180,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s1-5-neon-night.webp",
+      "key": "lexicon/ghost/s1-5-neon-night.webp",
+      "word": "ghost",
+      "line": "me going crazy Dancing with your ghost in the room I keep saying that Im done But",
+      "t": 30.291,
+      "score": 0.95,
+      "cosine": 0.5,
+      "reason": "Evokes haunting loneliness and urban decay fitting the song's obsession and chaos",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-4-dream-collage.webp",
       "key": "lexicon/drink/s0-4-dream-collage.webp",
       "word": "drink",
@@ -189,6 +225,42 @@
       "cosine": 0.486,
       "reason": "chaotic storm, addiction symbols, obsessive elements match song's themes",
       "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s7-6-word-neon.webp",
+      "key": "lexicon/burn/s7-6-word-neon.webp",
+      "word": "burn",
+      "line": "and round We never slow down We burn it up Then we fall back down You got me",
+      "t": 120.523,
+      "score": 0.95,
+      "cosine": 0.485,
+      "reason": "fits toxic, chaotic, neon-lit urban obsession",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
+      "key": "lexicon/dark/s9-2-word-portrait.webp",
+      "word": "dark",
+      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
+      "t": 166.174,
+      "score": 0.95,
+      "cosine": 0.48,
+      "reason": "matches toxic mood, decay, and dramatic lighting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s6-3-word-portrait.webp",
+      "key": "lexicon/dark/s6-3-word-portrait.webp",
+      "word": "dark",
+      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
+      "t": 166.174,
+      "score": 0.95,
+      "cosine": 0.477,
+      "reason": "evokes darkness and hope, fits toxic obsession and chaos",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -211,7 +283,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "fits toxic obsession, urban chaos, emotional intensity",
+      "reason": "matches toxic obsession, urban chaos, and emotional intensity",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -228,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bleed/s1-2-word-portrait.webp",
+      "key": "lexicon/bleed/s1-2-word-portrait.webp",
+      "word": "bleed",
+      "line": "how this ends You know where to find me Back where the lights bleed Hands on my waist Like you never lied to me I hate that I miss it The",
+      "t": 104.246,
+      "score": 0.95,
+      "cosine": 0.457,
+      "reason": "Emotional pain, dim lighting, turmoil match song's mood and themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s4-3-neon-night.webp",
       "key": "lexicon/hands/s4-3-neon-night.webp",
       "word": "hands",
@@ -240,6 +324,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s9-3-word-portrait.webp",
+      "key": "lexicon/burn/s9-3-word-portrait.webp",
+      "word": "burn",
+      "line": "and round We never slow down We burn it up Then we fall back down You got me",
+      "t": 120.523,
+      "score": 0.95,
+      "cosine": 0.453,
+      "reason": "Powerful imagery matches toxic obsession and chaos",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s3-2-neon-night.webp",
       "key": "lexicon/eyes/s3-2-neon-night.webp",
       "word": "eyes",
@@ -247,8 +343,20 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "matches toxic obsession, neon chaos, gritty urban madness",
+      "reason": "fits toxic obsession, neon chaos, gritty urban madness",
       "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/truth/s6-2-word-portrait.webp",
+      "key": "lexicon/truth/s6-2-word-portrait.webp",
+      "word": "truth",
+      "line": "it Maybe were haunted Maybe the truth is You know I love it",
+      "t": 208.572,
+      "score": 0.95,
+      "cosine": 0.442,
+      "reason": "Powerful symbolism aligns with toxic love and emotional intensity",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -259,8 +367,20 @@
       "t": 3.773,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
+      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s5-5-word-neon.webp",
+      "key": "lexicon/high/s5-5-word-neon.webp",
+      "word": "high",
+      "line": "We dont need forever Just give me the high Round and round We",
+      "t": 115.82,
+      "score": 0.95,
+      "cosine": 0.426,
+      "reason": "fits toxic nightlife, addiction, moody urban vibe",
+      "recipe": "5-word-neon",
       "featured": true
     },
     {
@@ -274,133 +394,13 @@
       "reason": "Skeletal hands, neon, gritty noir match toxic obsession and chaos",
       "recipe": "6-word-neon",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s5-4-word-portrait.webp",
-      "key": "lexicon/love/s5-4-word-portrait.webp",
-      "word": "love",
-      "line": "close We go back and forth like waves do I run from love but I chase you I said I changed that aint true I",
-      "t": 50.051,
-      "score": 0.95,
-      "cosine": 0.421,
-      "reason": "Image captures toxic love, chaos, and emotional desolation matching song's themes and mood",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s2-6-manga-line.webp",
-      "key": "lexicon/break/s2-6-manga-line.webp",
-      "word": "break",
-      "line": "youre dangerous Still somehow my favorite We break it then save it Then wake up and say this",
-      "t": 65.422,
-      "score": 0.95,
-      "cosine": 0.418,
-      "reason": "Chaotic, fractured imagery matches toxic love and breaking point themes",
-      "recipe": "6-manga-line",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s8-5-neon-night.webp",
-      "key": "lexicon/run/s8-5-neon-night.webp",
-      "word": "run",
-      "line": "when your eyes close We go back and forth like waves do I run from love but I chase you I said I changed that aint true",
-      "t": 49.644,
-      "score": 0.95,
-      "cosine": 0.399,
-      "reason": "fits toxic obsession, urban chaos, neon desperation",
-      "recipe": "5-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s3-3-anime.webp",
-      "key": "lexicon/save/s3-3-anime.webp",
-      "word": "save",
-      "line": "Still somehow my favorite We break it then save it Then wake up and say this You got me",
-      "t": 66.131,
-      "score": 0.95,
-      "cosine": 0.389,
-      "reason": "Chaotic, toxic, and obsessive imagery aligns with the song's themes and mood.",
-      "recipe": "3-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s2-6-word-portrait.webp",
-      "key": "lexicon/run/s2-6-word-portrait.webp",
-      "word": "run",
-      "line": "when your eyes close We go back and forth like waves do I run from love but I chase you I said I changed that aint true",
-      "t": 49.644,
-      "score": 0.95,
-      "cosine": 0.377,
-      "reason": "Urgent, threatening atmosphere matches toxic obsession and chaos",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-4-word-neon.webp",
-      "key": "lexicon/night/s6-4-word-neon.webp",
-      "word": "night",
-      "line": "I might call you One more night and I might fall through You got me going crazy",
-      "t": 24.972,
-      "score": 0.9,
-      "cosine": 0.449,
-      "reason": "Urban chaos, neon glow, emotional release fit toxic nightlife theme",
-      "recipe": "4-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s1-4-neon-night.webp",
-      "key": "lexicon/fall/s1-4-neon-night.webp",
-      "word": "fall",
-      "line": "you One more night and I might fall through You got me going crazy",
-      "t": 26.099,
-      "score": 0.9,
-      "cosine": 0.448,
-      "reason": "fits toxic obsession, loneliness, urban chaos",
-      "recipe": "4-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
-      "key": "lexicon/love/s11-6-neon-sign.webp",
-      "word": "love",
-      "line": "close We go back and forth like waves do I run from love but I chase you I said I changed that aint true I",
-      "t": 50.051,
-      "score": 0.9,
-      "cosine": 0.445,
-      "reason": "Neon heart symbolizes hollow digital love; urban noir matches toxic nightlife chaos",
-      "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-2-word-portrait.webp",
-      "key": "lexicon/break/s8-2-word-portrait.webp",
-      "word": "break",
-      "line": "youre dangerous Still somehow my favorite We break it then save it Then wake up and say this",
-      "t": 65.422,
-      "score": 0.9,
-      "cosine": 0.433,
-      "reason": "Symbolizes brokenness and healing, aligns with toxic love and resilience themes",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-1-neon-sign.webp",
-      "key": "lexicon/break/s6-1-neon-sign.webp",
-      "word": "break",
-      "line": "youre dangerous Still somehow my favorite We break it then save it Then wake up and say this",
-      "t": 65.422,
-      "score": 0.9,
-      "cosine": 0.419,
-      "reason": "fits toxic emotion, urban chaos, emotional intensity",
-      "recipe": "1-neon-sign",
-      "featured": true
     }
   ],
   "byWord": {
     "crazy": [
       0,
       9,
-      20
+      29
     ],
     "glass": [
       1,
@@ -413,47 +413,55 @@
     ],
     "lights": [
       4,
-      13
+      15
     ],
     "save": [
-      7,
-      25
+      7
     ],
     "drink": [
       8,
       11,
-      14
+      17
     ],
     "night": [
       10,
-      12,
-      27
+      12
     ],
-    "love": [
-      15,
-      22,
-      29
+    "poison": [
+      13,
+      14
     ],
-    "eyes": [
-      16,
-      17,
-      19
+    "ghost": [
+      16
     ],
-    "hands": [
+    "burn": [
       18,
-      21
-    ],
-    "break": [
-      23,
-      30,
-      31
-    ],
-    "run": [
-      24,
       26
     ],
-    "fall": [
+    "dark": [
+      19,
+      20
+    ],
+    "love": [
+      21
+    ],
+    "eyes": [
+      22,
+      23,
+      27
+    ],
+    "bleed": [
+      24
+    ],
+    "hands": [
+      25,
+      31
+    ],
+    "truth": [
       28
+    ],
+    "high": [
+      30
     ]
   }
 }

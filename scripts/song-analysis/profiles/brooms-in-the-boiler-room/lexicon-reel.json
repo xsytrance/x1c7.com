@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-07-19T10:23:53.043Z",
+  "generatedAt": "2026-07-25T10:50:09.660Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 950,
-    "judged": 42,
-    "accepted": 25,
-    "kept": 25
+    "candidates": 1521,
+    "judged": 64,
+    "accepted": 42,
+    "kept": 32
   },
   "reel": [
     {
@@ -31,7 +31,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.73,
-      "reason": "Strong alignment with magical corruption, noir atmosphere, and surreal elements",
+      "reason": "Strong alignment with magical corruption and noir atmosphere",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Matches magical corruption, ominous mood, and noir atmosphere",
+      "reason": "Matches magical corruption, ominous tone, and chaotic visuals",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strong noir-steampunk fit with magical corruption and ominous mood",
+      "reason": "Strong noir-steampunk fit with boiler as central symbol",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.642,
-      "reason": "Strong noir atmosphere, symbolic elements align with song's themes",
+      "reason": "Strong noir atmosphere, cauldron as magical corruption, fits the ominous and playful tone",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.626,
-      "reason": "Strong industrial noir atmosphere matches song's mood and themes",
+      "reason": "Strong industrial noir atmosphere matches song's theme and mood",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -120,6 +120,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-2-word-portrait.webp",
+      "key": "lexicon/money/s5-2-word-portrait.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.95,
+      "cosine": 0.605,
+      "reason": "fits dark, sinister tone and greed symbolism",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s19-2-concept-art.webp",
       "key": "lexicon/night/s19-2-concept-art.webp",
       "word": "night",
@@ -127,7 +139,7 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.601,
-      "reason": "matches dark, magical corruption and ominous atmosphere of the song",
+      "reason": "fits noir atmosphere, magical corruption, and ominous tone",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -156,6 +168,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s3-1-dream-collage.webp",
+      "key": "lexicon/door/s3-1-dream-collage.webp",
+      "word": "door",
+      "line": "in his eyes Brooms in the boiler room knocking at the door spell got loose and it hungry for more Blackandwhite",
+      "t": 35.85,
+      "score": 0.95,
+      "cosine": 0.535,
+      "reason": "fits noir atmosphere, decay, and magical chaos",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-2-dream-collage.webp",
       "key": "lexicon/night/s6-2-dream-collage.webp",
       "word": "night",
@@ -163,7 +187,7 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "fits noir atmosphere, magical corruption, and chaotic tension",
+      "reason": "Matches noir atmosphere, magical corruption, and chaotic tension",
       "recipe": "2-dream-collage",
       "featured": true
     },
@@ -192,6 +216,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-6-concept-art.webp",
+      "key": "lexicon/money/s5-6-concept-art.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.9,
+      "cosine": 0.572,
+      "reason": "fits noir atmosphere, greed symbolism, and magical chaos",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-4-dark-surreal.webp",
+      "key": "lexicon/money/s5-4-dark-surreal.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.9,
+      "cosine": 0.562,
+      "reason": "fits noir atmosphere, greed symbolism, dark surrealism",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s4-2-concept-art.webp",
       "key": "lexicon/night/s4-2-concept-art.webp",
       "word": "night",
@@ -204,6 +252,54 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s0-5-noir.webp",
+      "key": "lexicon/door/s0-5-noir.webp",
+      "word": "door",
+      "line": "in his eyes Brooms in the boiler room knocking at the door spell got loose and it hungry for more Blackandwhite",
+      "t": 35.85,
+      "score": 0.9,
+      "cosine": 0.55,
+      "reason": "fits noir atmosphere, ominous threshold, aligns with spell's hunger and isolation",
+      "recipe": "5-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whisper/s1-3-word-portrait.webp",
+      "key": "lexicon/whisper/s1-3-word-portrait.webp",
+      "word": "whisper",
+      "line": "Voice 2 Crazy Whisper Heh too late",
+      "t": 15.233,
+      "score": 0.9,
+      "cosine": 0.542,
+      "reason": "Mysterious, noir atmosphere matches song's tone and themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s0-1-graphic-novel.webp",
+      "key": "lexicon/door/s0-1-graphic-novel.webp",
+      "word": "door",
+      "line": "in his eyes Brooms in the boiler room knocking at the door spell got loose and it hungry for more Blackandwhite",
+      "t": 35.85,
+      "score": 0.9,
+      "cosine": 0.502,
+      "reason": "fits noir atmosphere, decay, hidden secrets, and eerie mood",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s8-5-word-portrait.webp",
+      "key": "lexicon/high/s8-5-word-portrait.webp",
+      "word": "high",
+      "line": "Night too long Voice 1 Water too high Voice 2 Door wont move Voice 1",
+      "t": 198.007,
+      "score": 0.85,
+      "cosine": 0.577,
+      "reason": "Matches dark, eerie mood and themes of decay and revelation",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp",
       "key": "lexicon/gold/s14-4-neon-night.webp",
       "word": "gold",
@@ -211,8 +307,20 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "gold symbolizes villainy, noir atmosphere matches song",
+      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
       "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s4-2-pixel.webp",
+      "key": "lexicon/shadow/s4-2-pixel.webp",
+      "word": "shadow",
+      "line": "back Moonlight bends when the wand goes snap shadow on the wall with a longeared cap I aint scared",
+      "t": 75.628,
+      "score": 0.85,
+      "cosine": 0.532,
+      "reason": "fits noir atmosphere and ominous tone with pixel art",
+      "recipe": "2-pixel",
       "featured": true
     },
     {
@@ -228,6 +336,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s0-2-graphic-novel.webp",
+      "key": "lexicon/moon/s0-2-graphic-novel.webp",
+      "word": "moon",
+      "line": "when the wild drums roll Brooms in the boiler room moon turned blue one wrong spell and the whole crew",
+      "t": 45.04,
+      "score": 0.85,
+      "cosine": 0.519,
+      "reason": "fits noir atmosphere, magical corruption, and ominous mood with surreal moon imagery",
+      "recipe": "2-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s6-3-film-still.webp",
+      "key": "lexicon/falling/s6-3-film-still.webp",
+      "word": "falling",
+      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
+      "t": 145.88,
+      "score": 0.85,
+      "cosine": 0.518,
+      "reason": "Chaotic explosion and falling debris fit the ominous, dangerous mood and magical corruptio",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-1-dark-surreal.webp",
       "key": "lexicon/eyes/s8-1-dark-surreal.webp",
       "word": "eyes",
@@ -240,76 +372,28 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s1-2-word-portrait.webp",
-      "key": "lexicon/throne/s1-2-word-portrait.webp",
-      "word": "throne",
-      "line": "crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks rise and the",
-      "t": 214.796,
-      "score": 0.6,
-      "cosine": 0.633,
-      "reason": "fits dark fantasy but lacks connection to cleaning tools or spell corruption",
-      "recipe": "2-word-portrait",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s4-1-film-still.webp",
+      "key": "lexicon/falling/s4-1-film-still.webp",
+      "word": "falling",
+      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
+      "t": 145.88,
+      "score": 0.85,
+      "cosine": 0.489,
+      "reason": "fits noir atmosphere, debris and liminal space match falling and corruption",
+      "recipe": "1-film-still",
+      "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s4-5-dream-collage.webp",
-      "key": "lexicon/crown/s4-5-dream-collage.webp",
-      "word": "crown",
-      "line": "whole crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks",
-      "t": 214.1,
-      "score": 0.6,
-      "cosine": 0.58,
-      "reason": "Symbolizes corrupted power, fits dark fantasy and decay themes",
-      "recipe": "5-dream-collage",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s1-4-dark-surreal.webp",
-      "key": "lexicon/throne/s1-4-dark-surreal.webp",
-      "word": "throne",
-      "line": "crew slipping while the spell takes hold No crown no throne just a hat and a grin then the broomsticks rise and the",
-      "t": 214.796,
-      "score": 0.6,
-      "cosine": 0.578,
-      "reason": "fits dark atmosphere but lacks cleaning tools or magical corruption",
-      "recipe": "4-dark-surreal",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s14-2-concept-art.webp",
-      "key": "lexicon/eyes/s14-2-concept-art.webp",
-      "word": "eyes",
-      "line": "starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at the door",
-      "t": 33.437,
-      "score": 0.6,
-      "cosine": 0.516,
-      "reason": "fits dark atmosphere but lacks cleaning tool symbolism",
-      "recipe": "2-concept-art",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-4-dream-collage.webp",
-      "key": "lexicon/move/s3-4-dream-collage.webp",
-      "word": "move",
-      "line": "1 Water too high Voice 2 Door wont move Voice 1 Whole tower drowning Voice 2 Still in",
-      "t": 200.145,
-      "score": 0.6,
-      "cosine": 0.484,
-      "reason": "Atmospheric and decayed, but lacks direct ties to magical corruption or greed.",
-      "recipe": "4-dream-collage",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s6-5-dream-collage.webp",
-      "key": "lexicon/stars/s6-5-dream-collage.webp",
-      "word": "stars",
-      "line": "room water starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at",
-      "t": 32.798,
-      "score": 0.6,
-      "cosine": 0.444,
-      "reason": "Atmospheric and moody, but lacks direct ties to magical corruption or brooms.",
-      "recipe": "5-dream-collage",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s6-3-word-portrait.webp",
+      "key": "lexicon/midnight/s6-3-word-portrait.webp",
+      "word": "midnight",
+      "line": "and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a hundred stairways",
+      "t": 118.852,
+      "score": 0.8,
+      "cosine": 0.547,
+      "reason": "Matches noir mood and midnight theme, but lacks magical corruption elements",
+      "recipe": "3-word-portrait",
+      "featured": true
     }
   ],
   "byWord": {
@@ -330,37 +414,54 @@
       7,
       8
     ],
-    "night": [
+    "money": [
       9,
-      12,
-      15
+      17,
+      18
     ],
-    "gold": [
+    "night": [
       10,
       14,
-      16
+      19
+    ],
+    "gold": [
+      11,
+      16,
+      24
     ],
     "eyes": [
-      11,
-      18,
+      12,
+      29
+    ],
+    "door": [
+      13,
+      20,
       22
     ],
     "move": [
-      13,
-      23
+      15
     ],
-    "glow": [
-      17
-    ],
-    "throne": [
-      19,
+    "whisper": [
       21
     ],
-    "crown": [
-      20
+    "high": [
+      23
     ],
-    "stars": [
-      24
+    "shadow": [
+      25
+    ],
+    "glow": [
+      26
+    ],
+    "moon": [
+      27
+    ],
+    "falling": [
+      28,
+      30
+    ],
+    "midnight": [
+      31
     ]
   }
 }

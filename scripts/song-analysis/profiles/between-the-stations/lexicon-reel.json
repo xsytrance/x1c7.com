@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-07-19T10:22:32.620Z",
+  "generatedAt": "2026-07-25T10:46:50.854Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1075,
-    "judged": 33,
-    "accepted": 33,
+    "candidates": 1310,
+    "judged": 45,
+    "accepted": 45,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 7.802,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Urban alley, neon lights, transitional space align with subway journey and cathartic relea",
+      "reason": "Urban alley, neon lights, transitional space align with song's subway metaphor and sensory",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 91.008,
       "score": 0.95,
       "cosine": 0.584,
-      "reason": "Matches subway night theme, bokeh lights symbolize respite and catharsis",
+      "reason": "Nighttime subway, urban exhaustion, catharsis, and respite align perfectly with the song's",
       "recipe": "2-cinema",
       "featured": true
     },
@@ -57,6 +57,18 @@
       "cosine": 0.586,
       "reason": "Urban decay, intense eyes, foggy alley match song's mood and themes",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s3-3-word-portrait.webp",
+      "key": "lexicon/rain/s3-3-word-portrait.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someones got roses Someones got rain Someones got nothing But a song for the pain I",
+      "t": 97.837,
+      "score": 0.92,
+      "cosine": 0.586,
+      "reason": "Cleansing rain in urban setting matches song's themes of respite and catharsis",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -79,7 +91,7 @@
       "t": 7.802,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Urban nighttime, light, escapism, warmth, and connection align with song's themes",
+      "reason": "Urban nighttime, light, escapism, warmth, connection align with song's themes",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -93,6 +105,30 @@
       "cosine": 0.571,
       "reason": "Urban grit, neon escape, emotional release align with song's themes",
       "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s0-2-film-still.webp",
+      "key": "lexicon/train/s0-2-film-still.webp",
+      "word": "train",
+      "line": "can breathe Breathe in Breathe out Train",
+      "t": 63.89,
+      "score": 0.92,
+      "cosine": 0.568,
+      "reason": "Captures urban isolation and transition central to the song's journey and mood",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-1-word-portrait.webp",
+      "key": "lexicon/breath/s0-1-word-portrait.webp",
+      "word": "breath",
+      "line": "dont need answers I dont need signs Just one more breath And a little more time And everybodys changing",
+      "t": 103.863,
+      "score": 0.92,
+      "cosine": 0.567,
+      "reason": "Serene urban moment aligns with respite in chaos and breath as a life force",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -115,7 +151,7 @@
       "t": 99.498,
       "score": 0.92,
       "cosine": 0.551,
-      "reason": "Urban solitude, emotional journey, and melancholic mood align with song's themes",
+      "reason": "Urban solitude, emotional journey, and nighttime introspection align with the song's theme",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -151,8 +187,20 @@
       "t": 6.583,
       "score": 0.92,
       "cosine": 0.543,
-      "reason": "fits urban decay, neon lighting, and watchfulness theme",
+      "reason": "matches urban decay, neon lighting, and introspective mood",
       "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s1-4-neon-night.webp",
+      "key": "lexicon/breath/s1-4-neon-night.webp",
+      "word": "breath",
+      "line": "dont need answers I dont need signs Just one more breath And a little more time And everybodys changing",
+      "t": 103.863,
+      "score": 0.92,
+      "cosine": 0.539,
+      "reason": "Captures urban isolation and transience aligning with song's themes",
+      "recipe": "4-neon-night",
       "featured": true
     },
     {
@@ -175,8 +223,32 @@
       "t": 156.431,
       "score": 0.92,
       "cosine": 0.534,
-      "reason": "Urban energy, neon, transition align with subway metaphor and cathartic mood",
+      "reason": "Neon 'move' sign fits urban energy and transition themes",
       "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-4-cinema.webp",
+      "key": "lexicon/city/s5-4-cinema.webp",
+      "word": "city",
+      "line": "looks so tired Still the city keeps on humming So I let",
+      "t": 30.604,
+      "score": 0.92,
+      "cosine": 0.528,
+      "reason": "Captures urban melancholy and transient city life aligning with song's themes",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s0-2-cinema.webp",
+      "key": "lexicon/city/s0-2-cinema.webp",
+      "word": "city",
+      "line": "looks so tired Still the city keeps on humming So I let",
+      "t": 30.604,
+      "score": 0.92,
+      "cosine": 0.524,
+      "reason": "Captures urban exhaustion, melancholy, and city's relentless rhythm",
+      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -187,7 +259,7 @@
       "t": 92.392,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Aligns with urban themes, dream symbolism, and mood of hope amid exhaustion",
+      "reason": "Captures urban melancholy and hope, aligns with dream and subway metaphor",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -199,7 +271,7 @@
       "t": 9.695,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Urban decay, glowing windows, resilience match song's themes and mood",
+      "reason": "Urban decay, glowing windows, resilience fit song's gritty, cathartic theme",
       "recipe": "3-anime",
       "featured": true
     },
@@ -211,8 +283,32 @@
       "t": 34.168,
       "score": 0.92,
       "cosine": 0.511,
-      "reason": "Neon-lit club aligns with urban nightlife and cathartic energy of the song",
+      "reason": "Neon-lit club aligns with urban nightlife and rhythm's energy in the song",
       "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s16-4-word-neon.webp",
+      "key": "lexicon/slow/s16-4-word-neon.webp",
+      "word": "slow",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
+      "t": 91.162,
+      "score": 0.92,
+      "cosine": 0.496,
+      "reason": "Calm neon sign fits urban nightlife and slowness theme",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-3-cinema.webp",
+      "key": "lexicon/dream/s2-3-cinema.webp",
+      "word": "dream",
+      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
+      "t": 92.392,
+      "score": 0.92,
+      "cosine": 0.47,
+      "reason": "Urban dream imagery fits subway metaphor and mood",
+      "recipe": "3-cinema",
       "featured": true
     },
     {
@@ -228,27 +324,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s16-4-word-neon.webp",
-      "key": "lexicon/slow/s16-4-word-neon.webp",
-      "word": "slow",
-      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
-      "t": 91.162,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s6-2-photo.webp",
+      "key": "lexicon/rain/s6-2-photo.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someones got roses Someones got rain Someones got nothing But a song for the pain I",
+      "t": 97.837,
       "score": 0.9,
-      "cosine": 0.496,
-      "reason": "Calm neon sign fits urban nightlife and slowness theme",
-      "recipe": "4-word-neon",
+      "cosine": 0.568,
+      "reason": "Urban melancholy, rain as cleansing and isolating, fits song's mood and themes",
+      "recipe": "2-photo",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-3-cinema.webp",
-      "key": "lexicon/dream/s2-3-cinema.webp",
-      "word": "dream",
-      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the rhythm Manhattan in the",
-      "t": 92.392,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s0-1-word-portrait.webp",
+      "key": "lexicon/rain/s0-1-word-portrait.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someones got roses Someones got rain Someones got nothing But a song for the pain I",
+      "t": 97.837,
       "score": 0.9,
-      "cosine": 0.47,
-      "reason": "Urban dream imagery fits subway metaphor and mood",
-      "recipe": "3-cinema",
+      "cosine": 0.56,
+      "reason": "Captures urban melancholy and rain's symbolic role in the song's narrative",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -264,15 +360,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-3-cinema.webp",
-      "key": "lexicon/song/s1-3-cinema.webp",
-      "word": "song",
-      "line": "roses Someones got rain Someones got nothing But a song for the pain I dont need answers I dont need",
-      "t": 99.498,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-6-photo.webp",
+      "key": "lexicon/breath/s0-6-photo.webp",
+      "word": "breath",
+      "line": "dont need answers I dont need signs Just one more breath And a little more time And everybodys changing",
+      "t": 103.863,
       "score": 0.8,
-      "cosine": 0.501,
-      "reason": "Captures urban melancholy and transient beauty aligning with song's themes",
-      "recipe": "3-cinema",
+      "cosine": 0.546,
+      "reason": "Contemplative release fits urban exhaustion and catharsis",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-2-anime.webp",
+      "key": "lexicon/lights/s22-2-anime.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.8,
+      "cosine": 0.516,
+      "reason": "fits urban decay, hope, and resilience in a gritty setting",
+      "recipe": "2-anime",
       "featured": true
     },
     {
@@ -283,173 +391,73 @@
       "t": 91.162,
       "score": 0.8,
       "cosine": 0.494,
-      "reason": "Urban isolation, neon alienation, and motion blur align with subway journey and cathartic ",
+      "reason": "fits urban mood, rain as cleansing, neon as alienation",
       "recipe": "1-neon-night",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
-      "key": "lexicon/light/s25-2-anime.webp",
-      "word": "light",
-      "line": "stops New eyes Blue light Passing by Window black Face",
-      "t": 7.802,
-      "score": 0.75,
-      "cosine": 0.565,
-      "reason": "fits urban chaos, neon lights align with lyric's 'blue light', industrial textures match s",
-      "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
-      "t": 91.008,
-      "score": 0.75,
-      "cosine": 0.551,
-      "reason": "Captures urban night, loneliness, and blurred chaos fitting the song's theme",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-5-photo.webp",
-      "key": "lexicon/window/s1-5-photo.webp",
-      "word": "window",
-      "line": "Blue light Passing by Window black Face in glass I see",
-      "t": 9.695,
-      "score": 0.75,
-      "cosine": 0.547,
-      "reason": "Captures urban melancholy and introspection fitting the song's themes",
-      "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-1-cinema.webp",
-      "key": "lexicon/lights/s8-1-cinema.webp",
-      "word": "lights",
-      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
-      "t": 52.16,
-      "score": 0.75,
-      "cosine": 0.513,
-      "reason": "Melancholy and urban isolation align with song's themes of exhaustion and escapism.",
-      "recipe": "1-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s12-5-word-portrait.webp",
-      "key": "lexicon/slow/s12-5-word-portrait.webp",
-      "word": "slow",
-      "line": "goes underground Breathe in Breathe out Lost but Im found Breathe in Breathe out Let the night slow down Breathe in Breathe out Im here right now A train to Brooklyn A dream to Queens Bronx in the",
-      "t": 91.162,
-      "score": 0.75,
-      "cosine": 0.49,
-      "reason": "fits mood but lacks dancehall energy",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-6-dream-collage.webp",
-      "key": "lexicon/window/s1-6-dream-collage.webp",
-      "word": "window",
-      "line": "Blue light Passing by Window black Face in glass I see",
-      "t": 9.695,
-      "score": 0.7,
-      "cosine": 0.521,
-      "reason": "fits urban decay, chaos, but lacks catharsis and dancehall energy",
-      "recipe": "6-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-4-cinema.webp",
-      "key": "lexicon/glass/s0-4-cinema.webp",
-      "word": "glass",
-      "line": "Passing by Window black Face in glass I see me Then I pass",
-      "t": 11.36,
-      "score": 0.65,
-      "cosine": 0.596,
-      "reason": "Reflects urban grit and melancholy, but lacks catharsis or identity themes",
-      "recipe": "4-cinema",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-3-anime.webp",
-      "key": "lexicon/glass/s0-3-anime.webp",
-      "word": "glass",
-      "line": "Passing by Window black Face in glass I see me Then I pass",
-      "t": 11.36,
-      "score": 0.65,
-      "cosine": 0.557,
-      "reason": "Reflects urban chaos and fragmented identity, but lacks the respite and dancehall catharsi",
-      "recipe": "3-anime",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s7-5-word-portrait.webp",
-      "key": "lexicon/lights/s7-5-word-portrait.webp",
-      "word": "lights",
-      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
-      "t": 52.16,
-      "score": 0.65,
-      "cosine": 0.535,
-      "reason": "Captures urban nightlife and light obsession, but lacks catharsis and identity themes",
-      "recipe": "5-word-portrait",
-      "featured": false
     }
   ],
   "byWord": {
     "rhythm": [
       0,
-      4,
-      16
+      5,
+      22
     ],
     "light": [
       1,
-      5,
-      23
+      6
     ],
     "night": [
       2,
-      6,
-      24
+      7
     ],
     "eyes": [
       3,
-      10,
-      11
+      13,
+      14
+    ],
+    "rain": [
+      4,
+      26,
+      27
+    ],
+    "train": [
+      8
+    ],
+    "breath": [
+      9,
+      15,
+      29
     ],
     "lights": [
-      7,
-      26,
-      31
-    ],
-    "song": [
-      8,
-      20,
-      21
-    ],
-    "glass": [
-      9,
-      29,
+      10,
       30
     ],
-    "move": [
-      12,
-      13
-    ],
-    "dream": [
-      14,
-      17,
-      19
-    ],
-    "window": [
-      15,
-      25,
+    "song": [
+      11,
       28
     ],
-    "slow": [
+    "glass": [
+      12
+    ],
+    "move": [
+      16,
+      17
+    ],
+    "city": [
       18,
-      22,
-      27
+      19
+    ],
+    "dream": [
+      20,
+      24,
+      25
+    ],
+    "window": [
+      21
+    ],
+    "slow": [
+      23,
+      31
     ]
   }
 }

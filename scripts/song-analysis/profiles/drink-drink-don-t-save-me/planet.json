@@ -3,122 +3,132 @@
     "id": "drink-drink-don-t-save-me",
     "planet": {
       "analysis": {
-        "summary": "The song 'Drink Drink [Don’t Save Me]' by xsytrance explores themes of inner turmoil, self-destruction, and the struggle to cope with emotional pain through a hypnotic and eerie soundscape, blending hip-hop and R&B elements with a dreamlike, insomniac atmosphere.",
-        "overallMood": "Eerie, introspective, hypnotic",
+        "summary": "The song 'Drink Drink [Don't Save Me]' by xsytrance explores themes of self-destruction, emotional numbness, and the struggle to escape inner turmoil, wrapped in a hypnotic, dark hip-hop and R&B atmosphere.",
+        "overallMood": "hauntingly seductive, introspective",
         "themes": [
-          "Self-destruction",
-          "Emotional isolation",
-          "Insomnia and sleeplessness",
-          "Inner demons",
-          "Surreal dream-state",
-          "Narcotic escapism"
+          "self-destruction",
+          "emotional numbness",
+          "inner turmoil",
+          "escape",
+          "isolation",
+          "addiction"
         ],
         "palette": [
           "#1A1A1A",
           "#2E0854",
-          "#4B0082",
-          "#3A043F"
+          "#5A189A",
+          "#9E4C8C"
         ],
         "sections": [
           {
-            "name": "Intro - Whispered Male",
-            "emotion": "Desperate",
-            "intensity": 0.5,
+            "name": "Intro",
+            "emotion": "haunting",
+            "intensity": 0.6,
             "colorHint": "#2e0854",
             "start": 2.14
           },
           {
-            "name": "Female Vocal - Airy",
-            "emotion": "Mysterious",
-            "intensity": 0.4,
-            "colorHint": "#3a043f",
+            "name": "Verse 1",
+            "emotion": "despair",
+            "intensity": 0.7,
+            "colorHint": "#1a1a1a",
             "start": 70.14
           },
           {
-            "name": "Male Chant - High, Hypnotic",
-            "emotion": "Hypnotic",
-            "intensity": 0.7,
-            "colorHint": "#4b0082",
+            "name": "Chorus",
+            "emotion": "seductive",
+            "intensity": 0.8,
+            "colorHint": "#5a189a",
             "start": 94.58
           },
           {
-            "name": "Beat Drops - Heavy 808",
-            "emotion": "Intense",
-            "intensity": 0.8,
-            "colorHint": "#1a1a1a",
+            "name": "Bridge",
+            "emotion": "uncanny",
+            "intensity": 0.5,
+            "colorHint": "#3b1e5a",
             "start": 137.4
           },
           {
-            "name": "Hook - Male Chant",
-            "emotion": "Tormented",
-            "intensity": 0.65,
-            "colorHint": "#2e0854",
+            "name": "Drop",
+            "emotion": "intense",
+            "intensity": 0.9,
+            "colorHint": "#9e4c8c",
             "start": 145.96
           },
           {
-            "name": "Ad-Libs - High, Warped",
-            "emotion": "Disoriented",
-            "intensity": 0.6,
-            "colorHint": "#3a043f",
+            "name": "Verse 2",
+            "emotion": "despair",
+            "intensity": 0.7,
+            "colorHint": "#2e0854",
             "start": 185.14
           },
           {
-            "name": "Verse 1 - Melodic Rap/R&B",
-            "emotion": "Despairing",
+            "name": "Breakdown",
+            "emotion": "haunting",
             "intensity": 0.6,
-            "colorHint": "#4b0082",
+            "colorHint": "#1a1a1a",
             "start": 193.92
           },
           {
-            "name": "Pre-Hook - Female Background",
-            "emotion": "Surreal",
-            "intensity": 0.5,
-            "colorHint": "#2e0854",
+            "name": "Build",
+            "emotion": "tense",
+            "intensity": 0.8,
+            "colorHint": "#5a189a",
             "start": 271.64
           },
           {
-            "name": "Hook - Male Chant, Bigger",
-            "emotion": "Tormented",
-            "intensity": 0.75,
-            "colorHint": "#1a1a1a",
+            "name": "Final Hook",
+            "emotion": "desperate",
+            "intensity": 0.9,
+            "colorHint": "#9e4c8c",
             "start": 271.64
           }
         ],
         "keywords": [
           {
             "word": "Don't save me",
-            "emotion": "Desperate",
-            "imageryPrompt": "A lone figure standing in a dimly lit room, surrounded by flickering shadows and broken mirrors, whispering into the void as if pleading for release from unseen forces."
+            "emotion": "desperate",
+            "imageryPrompt": "A shadowy figure standing at the edge of a cliff, arms outstretched as if begging for help, but no one is there, surrounded by a stormy, midnight sky."
           },
           {
-            "word": "Train",
-            "emotion": "Restless",
-            "imageryPrompt": "A ghostly train speeding through a tunnel, its lights flickering in time with a pounding bassline, surrounded by a foggy, dreamlike landscape."
+            "word": "sleep",
+            "emotion": "haunting",
+            "imageryPrompt": "A dimly lit bedroom with a flickering nightlight, a person lying motionless on the bed, eyes closed but not sleeping, surrounded by empty bottles and scattered pills."
           },
           {
-            "word": "Sorrow",
-            "emotion": "Melancholic",
-            "imageryPrompt": "A dimly lit room with a single glowing bottle on a nightstand, casting long shadows on the walls as a figure sits in silence, eyes closed, lost in thought."
+            "word": "train",
+            "emotion": "drifting",
+            "imageryPrompt": "An old, rusted train slowly moving through a fog-covered tunnel, the lights flickering, with no passengers on board, just echoes of distant voices."
           },
           {
-            "word": "Sleep",
-            "emotion": "Drowsy",
-            "imageryPrompt": "A person floating in a deep, dark ocean, surrounded by glowing jellyfish that pulse with a slow, hypnotic rhythm, the water thick and heavy with dreams."
+            "word": "sorrow",
+            "emotion": "melancholic",
+            "imageryPrompt": "A single tear rolling down a cracked mirror in a dimly lit room, reflecting a shadowy figure with a hollow gaze, surrounded by broken glass and fading photographs."
           },
           {
-            "word": "Ghost",
-            "emotion": "Haunting",
-            "imageryPrompt": "A translucent figure drifting through a crumbling city at night, its form flickering in and out of view as if caught between two worlds."
+            "word": "ghost",
+            "emotion": "haunting",
+            "imageryPrompt": "A faint, translucent figure standing in the corner of a dark room, watching silently as a person sits on the floor, surrounded by empty bottles and flickering candlelight."
           },
           {
-            "word": "Insomnia",
-            "emotion": "Tormented",
-            "imageryPrompt": "A person staring at the ceiling of a dark room, the clock ticking louder with each passing second, the walls closing in as if time itself is the enemy."
+            "word": "pain",
+            "emotion": "intense",
+            "imageryPrompt": "A person clutching their head in a dimly lit room, their face contorted in agony, with a glowing bottle on the floor and shadows crawling up the walls."
           },
           {
-            "word": "Bottle",
-            "emotion": "Desperate",
-            "imageryPrompt": "A glowing bottle perched on a bedside table, its light casting eerie shadows across the room, the air thick with the scent of something both intoxicating and dangerous."
+            "word": "bottle",
+            "emotion": "numb",
+            "imageryPrompt": "A shattered glass bottle lying on a cold floor, its contents spilled across the tiles, with a faint glow reflecting off the broken shards in a dimly lit room."
+          },
+          {
+            "word": "storm",
+            "emotion": "chaotic",
+            "imageryPrompt": "A dark, thunderous sky with lightning splitting the clouds, a lone figure standing on a cliff, arms raised as if trying to control the storm, but the wind is too strong."
+          },
+          {
+            "word": "insomnia",
+            "emotion": "restless",
+            "imageryPrompt": "A person sitting on the edge of a bed, eyes wide open in the middle of the night, surrounded by empty pill bottles and a glowing laptop screen, with shadows stretching across the room."
           }
         ]
       },

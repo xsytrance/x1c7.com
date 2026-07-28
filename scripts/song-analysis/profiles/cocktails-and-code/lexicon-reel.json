@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-07-24T10:06:42.750Z",
+  "generatedAt": "2026-07-25T10:58:07.680Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1768,
+    "candidates": 1818,
     "judged": 64,
-    "accepted": 51,
+    "accepted": 50,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 209.839,
       "score": 0.95,
       "cosine": 0.523,
-      "reason": "matches summer vibe, ambition, and motivational tone",
+      "reason": "matches summer vibe, ambition, and motivational energy",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 4.273,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "Captures summer night, coding, urban energy, and hope",
+      "reason": "fits summer night, coding, urban energy, and motivation",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.47,
-      "reason": "Modern, inspiring, ties to code and innovation",
+      "reason": "Modern, focused, and inspiring image fits the tech and summer vibe",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.46,
-      "reason": "Aligns with tech, empowerment, and summer-night energy",
+      "reason": "Aligns with tech, empowerment, and summer night energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 34.829,
       "score": 0.95,
       "cosine": 0.428,
-      "reason": "Surreal cityscape aligns with dreams, innovation, and ambition in the song",
+      "reason": "Surreal cityscape aligns with tech innovation and bold dreams in the song",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, urban, dream symbolism, neon aligns with energy",
+      "reason": "fits summer night, dream theme, neon aligns with energy and urban vibe",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 4.493,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "fits summer night, urban, hopeful, digital",
+      "reason": "fits summer night, urban, digital, hopeful vibe",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -264,6 +264,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bridge/s0-6-chalkboard.webp",
+      "key": "lexicon/bridge/s0-6-chalkboard.webp",
+      "word": "bridge",
+      "line": "me a page build me a flow Build me a bridge where the old me wont go It aint magic but",
+      "t": 131.344,
+      "score": 0.9,
+      "cosine": 0.395,
+      "reason": "Symbolizes connection and growth under a hopeful sky",
+      "recipe": "6-chalkboard",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
       "key": "lexicon/soul/s1-6-word-portrait.webp",
       "word": "soul",
@@ -283,7 +295,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.391,
-      "reason": "Energetic, hopeful, and symbolic of progress and change",
+      "reason": "Energetic, hopeful, and cinematic fit the song's theme of growth and innovation.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -295,7 +307,7 @@
       "t": 136.753,
       "score": 0.9,
       "cosine": 0.38,
-      "reason": "Energetic, urban, neon lights align with song's summer night and tech vibes",
+      "reason": "Energetic triumph in a neon-lit urban setting aligns with the song's motivational and tech",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -319,7 +331,7 @@
       "t": 44.385,
       "score": 0.9,
       "cosine": 0.357,
-      "reason": "Futuristic city aligns with tech themes, running reflects urgency in lyrics, temple adds t",
+      "reason": "Futuristic city aligns with tech themes, running reflects urgency in lyric, temple adds tr",
       "recipe": "6-anime",
       "featured": true
     },
@@ -331,20 +343,8 @@
       "t": 136.753,
       "score": 0.9,
       "cosine": 0.355,
-      "reason": "Urban neon fits song's energetic, nighttime vibe and tech themes",
+      "reason": "Urban neon fits tech/night vibe and energy of the song",
       "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-2-word-portrait.webp",
-      "key": "lexicon/different/s6-2-word-portrait.webp",
-      "word": "different",
-      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
-      "t": 10.159,
-      "score": 0.9,
-      "cosine": 0.348,
-      "reason": "Confident, stylish imagery fits summer night and empowerment themes",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -360,6 +360,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s2-5-word-neon.webp",
+      "key": "lexicon/ice/s2-5-word-neon.webp",
+      "word": "ice",
+      "line": "laptop glow Little ice in the glass We working different now Come on",
+      "t": 8.301,
+      "score": 0.85,
+      "cosine": 0.399,
+      "reason": "fits urban vibe, neon aligns with tech, coolness matches theme",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s22-3-word-neon.webp",
       "key": "lexicon/move/s22-3-word-neon.webp",
       "word": "move",
@@ -367,7 +379,7 @@
       "t": 20.921,
       "score": 0.85,
       "cosine": 0.378,
-      "reason": "Urban neon fits energetic vibe and tech themes",
+      "reason": "Urban nightlife and energy align with song's vibe and theme",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 44.385,
       "score": 0.85,
       "cosine": 0.363,
-      "reason": "Urban nightlife and neon align with tech and summer vibes; surreal lighting fits energetic",
+      "reason": "Urban nightlife and neon align with summer vibes and tech themes",
       "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
-      "key": "lexicon/different/s6-3-word-neon.webp",
-      "word": "different",
-      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
-      "t": 10.159,
-      "score": 0.85,
-      "cosine": 0.341,
-      "reason": "fits urban vibe, neon reflects energy, aligns with individuality and innovation",
-      "recipe": "3-word-neon",
       "featured": true
     }
   ],
@@ -418,9 +418,7 @@
       15
     ],
     "different": [
-      7,
-      27,
-      31
+      7
     ],
     "glow": [
       8
@@ -443,21 +441,27 @@
     ],
     "soul": [
       18,
-      21
+      22
     ],
     "move": [
       20,
-      22,
-      29
+      23,
+      30
+    ],
+    "bridge": [
+      21
     ],
     "beat": [
-      23,
       24,
-      26
+      25,
+      27
     ],
     "running": [
-      25,
-      30
+      26,
+      31
+    ],
+    "ice": [
+      29
     ]
   }
 }

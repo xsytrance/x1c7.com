@@ -1,0 +1,97 @@
+{
+  "slug": "under-the-elevated",
+  "model": "sdxl_turbo_1.0_fp16.safetensors",
+  "art": {
+    "heart": [
+      "/planets/under-the-elevated/gallery/heart-1.webp",
+      "/planets/under-the-elevated/gallery/heart-2.webp",
+      "/planets/under-the-elevated/gallery/heart-3.webp",
+      "/planets/under-the-elevated/gallery/heart-4.webp",
+      "/planets/under-the-elevated/gallery/heart-5.webp",
+      "/planets/under-the-elevated/gallery/heart-6.webp",
+      "/planets/under-the-elevated/gallery/heart-7.webp",
+      "/planets/under-the-elevated/gallery/heart-8.webp",
+      "/planets/under-the-elevated/gallery/heart-9.webp",
+      "/planets/under-the-elevated/gallery/heart-10.webp"
+    ],
+    "light": [
+      "/planets/under-the-elevated/gallery/light-1.webp",
+      "/planets/under-the-elevated/gallery/light-2.webp",
+      "/planets/under-the-elevated/gallery/light-3.webp",
+      "/planets/under-the-elevated/gallery/light-4.webp"
+    ],
+    "bottle": [
+      "/planets/under-the-elevated/gallery/bottle-1.webp"
+    ],
+    "bridge": [
+      "/planets/under-the-elevated/gallery/bridge-1.webp"
+    ],
+    "cage": [
+      "/planets/under-the-elevated/gallery/cage-1.webp"
+    ],
+    "chain": [
+      "/planets/under-the-elevated/gallery/chain-1.webp"
+    ],
+    "chapel": [
+      "/planets/under-the-elevated/gallery/chapel-1.webp"
+    ],
+    "craving": [
+      "/planets/under-the-elevated/gallery/craving-1.webp"
+    ],
+    "dragon": [
+      "/planets/under-the-elevated/gallery/dragon-1.webp"
+    ],
+    "drink": [
+      "/planets/under-the-elevated/gallery/drink-1.webp"
+    ],
+    "elevated": [
+      "/planets/under-the-elevated/gallery/elevated-1.webp"
+    ],
+    "fire": [
+      "/planets/under-the-elevated/gallery/fire-1.webp"
+    ],
+    "free": [
+      "/planets/under-the-elevated/gallery/free-1.webp"
+    ],
+    "ghost": [
+      "/planets/under-the-elevated/gallery/ghost-1.webp"
+    ],
+    "glass": [
+      "/planets/under-the-elevated/gallery/glass-1.webp"
+    ],
+    "home": [
+      "/planets/under-the-elevated/gallery/home-1.webp"
+    ],
+    "liar": [
+      "/planets/under-the-elevated/gallery/liar-1.webp"
+    ],
+    "money": [
+      "/planets/under-the-elevated/gallery/money-1.webp"
+    ],
+    "morning": [
+      "/planets/under-the-elevated/gallery/morning-1.webp"
+    ],
+    "pain": [
+      "/planets/under-the-elevated/gallery/pain-1.webp"
+    ],
+    "poison": [
+      "/planets/under-the-elevated/gallery/poison-1.webp"
+    ],
+    "prison": [
+      "/planets/under-the-elevated/gallery/prison-1.webp"
+    ],
+    "rain": [
+      "/planets/under-the-elevated/gallery/rain-1.webp"
+    ],
+    "secbreaking": [
+      "/planets/under-the-elevated/gallery/secbreaking-1.webp"
+    ]
+  },
+  "pass": "BLITZ1",
+  "passes": {
+    "BLITZ1": {
+      "added": 36,
+      "at": "2026-07-10T14:49:03.230Z"
+    }
+  }
+}

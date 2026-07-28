@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-07-24T10:50:49.505Z",
+  "generatedAt": "2026-07-25T11:28:21.309Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2598,
+    "candidates": 2635,
     "judged": 64,
     "accepted": 57,
     "kept": 32
@@ -36,18 +36,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
-      "key": "lexicon/heat/s8-2-word-portrait.webp",
-      "word": "heat",
-      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
-      "t": 157.257,
-      "score": 1,
-      "cosine": 0.526,
-      "reason": "Matches summer seduction, confidence, and vibrant energy of the song",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-1-word-portrait.webp",
       "key": "lexicon/walk/s3-1-word-portrait.webp",
       "word": "walk",
@@ -55,7 +43,7 @@
       "t": 12.504,
       "score": 1,
       "cosine": 0.444,
-      "reason": "Confident, seductive walk in a dark club matches the song's themes and mood.",
+      "reason": "Confident, seductive walk in a dark club aligns with song's themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -79,7 +67,7 @@
       "t": 7.38,
       "score": 0.95,
       "cosine": 0.555,
-      "reason": "Confident, stylish dancers in a sunlit studio match the song's summer seduction and urban ",
+      "reason": "Confident, stylish dancers in a sunlit studio align with summer seduction and urban confid",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -108,6 +96,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "key": "lexicon/heat/s8-2-word-portrait.webp",
+      "word": "heat",
+      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
+      "t": 157.257,
+      "score": 0.95,
+      "cosine": 0.526,
+      "reason": "Matches summer seduction, confidence, and vibrant energy of the song",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
       "key": "lexicon/light/s9-6-word-portrait.webp",
       "word": "light",
@@ -127,7 +127,7 @@
       "t": 8.86,
       "score": 0.95,
       "cosine": 0.522,
-      "reason": "Confident, sultry summer imagery aligns with song's themes and mood.",
+      "reason": "Confident, assertive beach imagery aligns with summer seduction and female empowerment.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -153,18 +153,6 @@
       "cosine": 0.518,
       "reason": "Sultry, confident, and playful imagery aligns with the song's themes of allure and summer ",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/street/s0-4-word-portrait.webp",
-      "key": "lexicon/street/s0-4-word-portrait.webp",
-      "word": "street",
-      "line": "Brown, brown, brown skin shine With the street lamp light Perfume thick",
-      "t": 38.418,
-      "score": 0.95,
-      "cosine": 0.515,
-      "reason": "Confident urban imagery aligns with song's themes of city seduction and female power.",
-      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -211,7 +199,7 @@
       "t": 23.487,
       "score": 0.95,
       "cosine": 0.503,
-      "reason": "matches sultry, mysterious, and elegant midnight imagery",
+      "reason": "Matches sultry, confident, mysterious vibe of the song",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +319,7 @@
       "t": 39.3,
       "score": 0.95,
       "cosine": 0.447,
-      "reason": "Sultry, urban, confident mood aligns with song's themes",
+      "reason": "Sultry, urban, confident, neon lighting, leather, rain align with song's themes",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -367,8 +355,20 @@
       "t": 107.218,
       "score": 0.9,
       "cosine": 0.524,
-      "reason": "Sultry, urban, seductive imagery aligns with song's themes and mood",
+      "reason": "Seductive, urban, and aligned with summer night themes",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/street/s0-4-word-portrait.webp",
+      "key": "lexicon/street/s0-4-word-portrait.webp",
+      "word": "street",
+      "line": "Brown, brown, brown skin shine With the street lamp light Perfume thick",
+      "t": 38.418,
+      "score": 0.9,
+      "cosine": 0.515,
+      "reason": "Confident urban imagery aligns with song's themes of city seduction and female power.",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -379,7 +379,7 @@
       "t": 73.108,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Elegant, mysterious vibe aligns with seductive confidence and allure",
+      "reason": "Elegant, mysterious, and aligned with themes of allure and self-control",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -399,72 +399,72 @@
   "byWord": {
     "gold": [
       0,
-      6,
+      5,
       10
     ],
     "heat": [
       1,
-      2,
-      17
+      7,
+      16
     ],
     "walk": [
-      3
+      2
     ],
     "push": [
-      4,
+      3,
       11,
-      23
+      22
     ],
     "slow": [
-      5
+      4
     ],
     "skin": [
-      7
+      6
     ],
     "light": [
       8,
-      26
+      25
     ],
     "summer": [
       9
     ],
-    "street": [
-      12
-    ],
     "night": [
-      13,
-      29
+      12,
+      28
     ],
     "sin": [
-      14,
+      13,
       31
     ],
     "drip": [
-      15
+      14
     ],
     "midnight": [
-      16,
-      25
-    ],
-    "flame": [
-      18,
-      21,
-      22
-    ],
-    "high": [
-      19
-    ],
-    "move": [
-      20
-    ],
-    "throne": [
+      15,
       24
     ],
+    "flame": [
+      17,
+      20,
+      21
+    ],
+    "high": [
+      18
+    ],
+    "move": [
+      19
+    ],
+    "throne": [
+      23
+    ],
     "whisper": [
-      27
+      26
     ],
     "heart": [
-      28
+      27
+    ],
+    "street": [
+      29
     ],
     "dreams": [
       30

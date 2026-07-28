@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-07-19T11:06:24.081Z",
+  "generatedAt": "2026-07-25T11:25:18.369Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 428,
-    "judged": 9,
-    "accepted": 9,
-    "kept": 9
+    "candidates": 475,
+    "judged": 12,
+    "accepted": 12,
+    "kept": 12
   },
   "reel": [
     {
@@ -55,7 +55,7 @@
       "t": 49.377,
       "score": 0.95,
       "cosine": 0.613,
-      "reason": "matches hypnotic mood and themes of introspection and nostalgia",
+      "reason": "matches hypnotic, introspective mood and themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -84,6 +84,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s4-2-word-portrait.webp",
+      "key": "lexicon/breath/s4-2-word-portrait.webp",
+      "word": "breath",
+      "line": "Breathe One more breath",
+      "t": 7.907,
+      "score": 0.95,
+      "cosine": 0.418,
+      "reason": "matches hypnotic, introspective, serene mood and themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
       "key": "lexicon/move/s7-5-word-portrait.webp",
       "word": "move",
@@ -108,6 +120,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s3-1-word-neon.webp",
+      "key": "lexicon/breath/s3-1-word-neon.webp",
+      "word": "breath",
+      "line": "Breathe One more breath",
+      "t": 7.907,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "Urban isolation and neon glow match hypnotic, introspective mood",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
       "key": "lexicon/move/s3-5-word-portrait.webp",
       "word": "move",
@@ -115,8 +139,20 @@
       "t": 214.378,
       "score": 0.85,
       "cosine": 0.575,
-      "reason": "fits mood and theme of introspection and detachment",
+      "reason": "fits introspective mood, aligns with theme of detachment and isolation",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-1-word-portrait.webp",
+      "key": "lexicon/breath/s0-1-word-portrait.webp",
+      "word": "breath",
+      "line": "Breathe One more breath",
+      "t": 7.907,
+      "score": 0.7,
+      "cosine": 0.445,
+      "reason": "Urban solitude and contemplative mood align with song's introspection",
+      "recipe": "1-word-portrait",
       "featured": true
     }
   ],
@@ -131,10 +167,15 @@
       4,
       5
     ],
-    "move": [
+    "breath": [
       6,
+      9,
+      11
+    ],
+    "move": [
       7,
-      8
+      8,
+      10
     ]
   }
 }

@@ -1,99 +1,121 @@
 {
   "analysis": {
-    "summary": "An intimate R&B anthem exploring universal connection through physical touch and silent understanding across diverse cultures.",
-    "overallMood": "Sensual & Luxurious",
+    "summary": "A sensual and cinematic R&B anthem exploring intimacy and connection through physical and emotional language, emphasizing the power of nonverbal communication in a global, romantic journey.",
+    "overallMood": "Sensual, cinematic, intimate",
     "themes": [
-      "Non-verbal communication",
-      "Intimate connection",
-      "Cultural unity through heartbeat",
-      "Sensual tension",
-      "Emotional vulnerability",
-      "Luxurious atmosphere"
+      "Intimacy through movement",
+      "Global connection",
+      "Nonverbal communication",
+      "Emotional resonance",
+      "Sensual allure",
+      "Cinematic storytelling"
     ],
     "palette": [
-      "#2c0e18",
-      "#5d3a46",
-      "#9b7f7f",
-      "#f4ece5"
+      "#2E1B4B",
+      "#4A2B6D",
+      "#8C5D9D",
+      "#D4A5A5"
     ],
     "sections": [
       {
         "name": "Intro",
-        "emotion": "Anticipation and whispering invitation",
-        "intensity": 0.76,
-        "colorHintHex": "#1a1824",
-        "start": 8.58
+        "emotion": "Mysterious anticipation",
+        "intensity": 0.08,
+        "colorHint": "#2e1b4b",
+        "start": 8.6
       },
       {
         "name": "Verse 1",
-        "emotion": "Quiet realization of shared soul across distances",
-        "intensity": 0.57,
-        "colorHintHex": "#2c0e18",
-        "start": 32.14
+        "emotion": "Sensual exploration",
+        "intensity": 0.4,
+        "colorHint": "#4a2b6d",
+        "start": 32.16
       },
       {
         "name": "Pre-Chorus",
-        "emotion": "Building tension and rhythmic certainty",
-        "intensity": 0.66,
-        "colorHintHex": "#5d3a46",
-        "start": 46.46
+        "emotion": "Building tension",
+        "intensity": 0.85,
+        "colorHint": "#5f3f7a",
+        "start": 112.24
       },
       {
         "name": "Chorus",
-        "emotion": "Cinematic release of sensory desire",
-        "intensity": 0.82,
-        "colorHintHex": "#9b7f7f",
-        "start": 57.61
+        "emotion": "Passionate climax",
+        "intensity": 0.83,
+        "colorHint": "#8c5d9d",
+        "start": 119.78
       },
       {
         "name": "Verse 2",
-        "emotion": "Global resonance and consuming devotion",
-        "intensity": 0.29,
-        "colorHintHex": "#3e1c28",
-        "start": 126.82
+        "emotion": "Global intimacy",
+        "intensity": 0.75,
+        "colorHint": "#6d4a7d",
+        "start": 148.19
       },
       {
         "name": "Drop",
-        "emotion": "Raw, sub-bass driven spiritual surrender",
-        "intensity": 0.28,
-        "colorHintHex": "#f4ece5",
-        "start": 192.96
+        "emotion": "Sensual release",
+        "intensity": 0.59,
+        "colorHint": "#a57d9d",
+        "start": 192.98
+      },
+      {
+        "name": "Chorus 2",
+        "emotion": "Emotional fulfillment",
+        "intensity": 0.7,
+        "colorHint": "#d4a5a5",
+        "start": 194.62
       }
     ],
     "keywords": [
       {
-        "word": "closer",
-        "emotion": "Urgent physical yearning",
-        "imageryPrompt": "Two silhouettes shrinking into a single point of light in a dimly lit luxury lounge, depth of field blurring the background city lights."
+        "word": "sensual",
+        "emotion": "Desire",
+        "imageryPrompt": "A dimly lit room with soft shadows, a couple slowly moving in sync, their bodies close, the air thick with unspoken emotion."
       },
       {
-        "word": "heartbeat",
-        "emotion": "Rhythmic unity and life force",
-        "imageryPrompt": "A glowing red pulse wave expanding across a dark map connecting Brooklyn to Manila, visualizing sound as light."
+        "word": "intimate",
+        "emotion": "Closeness",
+        "imageryPrompt": "Two people whispering in a quiet, moonlit park, the sound of their breaths blending with the rustle of leaves."
       },
       {
-        "word": "body",
-        "emotion": "Tactile sensation without sight",
-        "imageryPrompt": "Soft focus on fabric textures and skin tones in warm candlelight, capturing the feeling of touch rather than seeing a face."
-      },
-      {
-        "word": "silence",
-        "emotion": "Comfortable void filled with meaning",
-        "imageryPrompt": "A vast empty space where sound waves are visible as gentle ripples in dark water, representing unspoken understanding."
+        "word": "cinematic",
+        "emotion": "Grandeur",
+        "imageryPrompt": "A sweeping aerial view of a city at night, neon lights reflecting on rain-slicked streets, a lone figure walking through the glow."
       },
       {
         "word": "vibration",
-        "emotion": "Resonant emotional frequency",
-        "imageryPrompt": "Dust motes dancing intensely to an invisible low-frequency hum inside a cathedral-like room with velvet drapes."
+        "emotion": "Resonance",
+        "imageryPrompt": "A deep bass note echoing through a dark nightclub, the walls shimmering with light, bodies swaying in unison."
       },
       {
-        "word": "devour",
-        "emotion": "Intense, consuming love",
-        "imageryPrompt": "A mouth gently closing around a glowing orb of energy in slow motion, capturing the act of taking something precious into oneself."
+        "word": "heartbeat",
+        "emotion": "Connection",
+        "imageryPrompt": "Two heartbeats in sync, glowing softly in the dark, surrounded by a field of stars and silence."
+      },
+      {
+        "word": "move",
+        "emotion": "Longing",
+        "imageryPrompt": "A dancer in a spotlight, their body flowing with emotion, the music guiding every step with a magnetic pull."
+      },
+      {
+        "word": "hold",
+        "emotion": "Comfort",
+        "imageryPrompt": "A warm embrace in a rainstorm, the sound of thunder echoing softly as the world fades away."
+      },
+      {
+        "word": "show",
+        "emotion": "Revelation",
+        "imageryPrompt": "A doorway opening to a vast, glowing landscape, the light revealing hidden paths and unspoken truths."
+      },
+      {
+        "word": "feel",
+        "emotion": "Empathy",
+        "imageryPrompt": "A person standing in a field of glowing flowers, the petals trembling with emotion as the wind carries their feelings."
       }
     ]
   },
   "styleHint": "Ultra-deep international R&B club anthem with massive long-sustain sub-bass that anchors the entire song, pure clean low-end tones with extended decay, 92 BPM, slow confident groove, intimate male and female call-and-response vocals, modern alternative R&B fused with late-night hip-hop production. Rich cinematic strings led by expressive cello and warm viola throughout, subtle smoky tenor sax fills only between vocal phrases, never overpowering. Crisp trap-inspired percussion with soft rimshots, sparse hi-hats, deep kick, atmospheric pads, reverse textures, lush vocal harmonies, intimate whispered ad-libs, emotional tension, luxurious nightclub ambience, immersive headphones mix, smooth dynamic build, unforgettable hook, radio-ready, sensual without explicit lyrics. After each “Say it with your body” vocal phrase, leave a tight pocket for the deep sub-bass to answer with a slow descending sustained tone, like the bass is quietly speaking back in one long breath.",
   "assets": {},
-  "generatedAt": "2026-07-09T18:30:18.365Z"
+  "generatedAt": "2026-07-25T10:48:45.837Z"
 }

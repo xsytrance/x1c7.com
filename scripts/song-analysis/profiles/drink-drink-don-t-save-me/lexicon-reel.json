@@ -1,74 +1,38 @@
 {
   "v": 1,
   "id": "drink-drink-don-t-save-me",
-  "generatedAt": "2026-07-19T10:38:42.050Z",
+  "generatedAt": "2026-07-25T11:02:15.539Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1050,
-    "judged": 45,
-    "accepted": 41,
+    "candidates": 1693,
+    "judged": 64,
+    "accepted": 61,
     "kept": 32
   },
   "reel": [
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-1.webp",
-      "key": "lexicon/night/s0-1.webp",
-      "word": "night",
-      "line": "Heart doing laps Moving lazily I keep saying Im fine But the night wont believe me So I tell my soul Sink down",
-      "t": 88.687,
-      "score": 1,
-      "cosine": 0.492,
-      "reason": "Perfectly aligns with the song's eerie, introspective mood and themes of isolation and sel",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s8-2-concept-art.webp",
-      "key": "lexicon/drink/s8-2-concept-art.webp",
-      "word": "drink",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
-      "t": 69.597,
-      "score": 0.95,
-      "cosine": 0.551,
-      "reason": "matches eerie mood, alcohol as escape, emotional exhaustion",
-      "recipe": "2-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s3-2-cinema.webp",
-      "key": "lexicon/sorrow/s3-2-cinema.webp",
-      "word": "sorrow",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
-      "t": 69.865,
-      "score": 0.95,
-      "cosine": 0.55,
-      "reason": "matches eerie mood, isolation, alcohol as escape",
-      "recipe": "2-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-5-word-portrait.webp",
-      "key": "lexicon/drink/s7-5-word-portrait.webp",
-      "word": "drink",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
-      "t": 69.597,
-      "score": 0.95,
-      "cosine": 0.538,
-      "reason": "Strong symbolism of addiction and self-destruction, fits eerie and introspective mood",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s8-5-photo.webp",
-      "key": "lexicon/drink/s8-5-photo.webp",
-      "word": "drink",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
-      "t": 69.597,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s2-5-cinema.webp",
+      "key": "lexicon/ghost/s2-5-cinema.webp",
+      "word": "ghost",
+      "line": "ghost",
+      "t": null,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Matches eerie mood, isolation, and alcohol as escape",
-      "recipe": "5-photo",
+      "reason": "haunting, spectral imagery fits the song's themes of inner turmoil and isolation",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s10-2-word-portrait.webp",
+      "key": "lexicon/smoke/s10-2-word-portrait.webp",
+      "word": "smoke",
+      "line": "to my face City bleeding through the window Smoke caught in the bass I dont need another promise",
+      "t": 74.083,
+      "score": 0.95,
+      "cosine": 0.519,
+      "reason": "Symbolism aligns with addiction and isolation; mood matches haunting introspection",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -78,21 +42,21 @@
       "line": "Dont call me lost I just walk with this hole And if tomorrow wants me",
       "t": 164.978,
       "score": 0.95,
-      "cosine": 0.527,
-      "reason": "Eerie, introspective mood matches; neon reflections and rain symbolize emotional voids and",
+      "cosine": 0.504,
+      "reason": "Urban decay, neon, walking as cyclical destruction fit the song's mood and themes",
       "recipe": "5-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s2-3-oil-light.webp",
-      "key": "lexicon/glass/s2-3-oil-light.webp",
-      "word": "glass",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through the window",
-      "t": 70.67,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s5-4-dream-collage.webp",
+      "key": "lexicon/train/s5-4-dream-collage.webp",
+      "word": "train",
+      "line": "train",
+      "t": null,
       "score": 0.95,
-      "cosine": 0.508,
-      "reason": "Strong visual of addiction and isolation matches song's themes",
-      "recipe": "3-oil-light",
+      "cosine": 0.492,
+      "reason": "Symbolizes journey through decay and isolation, matches song's themes of inner turmoil and",
+      "recipe": "4-dream-collage",
       "featured": true
     },
     {
@@ -102,21 +66,105 @@
       "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through the window",
       "t": 70.67,
       "score": 0.95,
-      "cosine": 0.507,
-      "reason": "Captures urban melancholy, addiction, and emotional isolation",
+      "cosine": 0.491,
+      "reason": "Captures addiction, isolation, and urban melancholy",
       "recipe": "4-cinema",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
-      "key": "lexicon/storm/s2-1-dream-collage.webp",
-      "word": "storm",
-      "line": "Im under these drums Trying to sway this storm",
-      "t": 173.256,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s10-1-cinema.webp",
+      "key": "lexicon/drink/s10-1-cinema.webp",
+      "word": "drink",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
+      "t": 69.597,
       "score": 0.95,
-      "cosine": 0.5,
-      "reason": "Surreal chaos and storm symbolism align with song's mental breakdown and emotional turmoil",
-      "recipe": "1-dream-collage",
+      "cosine": 0.487,
+      "reason": "Captures isolation, despair, and alcohol's role in numbness",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s10-4-word-portrait.webp",
+      "key": "lexicon/drink/s10-4-word-portrait.webp",
+      "word": "drink",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
+      "t": 69.597,
+      "score": 0.95,
+      "cosine": 0.481,
+      "reason": "matches isolation, addiction, and introspective mood",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-5-word-portrait.webp",
+      "key": "lexicon/drink/s7-5-word-portrait.webp",
+      "word": "drink",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City",
+      "t": 69.597,
+      "score": 0.95,
+      "cosine": 0.478,
+      "reason": "Strong symbolism of addiction, chaos, and self-destruction",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bottle/s2-3-cinema.webp",
+      "key": "lexicon/bottle/s2-3-cinema.webp",
+      "word": "bottle",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.945,
+      "score": 0.95,
+      "cosine": 0.474,
+      "reason": "matches isolation, addiction, melancholy",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bottle/s3-4-word-portrait.webp",
+      "key": "lexicon/bottle/s3-4-word-portrait.webp",
+      "word": "bottle",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.945,
+      "score": 0.95,
+      "cosine": 0.467,
+      "reason": "fits mood and themes of isolation and addiction",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-6-dream-collage.webp",
+      "key": "lexicon/window/s1-6-dream-collage.webp",
+      "word": "window",
+      "line": "glass to my face City bleeding through the window Smoke caught in the bass I dont need",
+      "t": 73.594,
+      "score": 0.95,
+      "cosine": 0.466,
+      "reason": "fits mood and themes of decay and emotional fragility",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s3-2-cinema.webp",
+      "key": "lexicon/sorrow/s3-2-cinema.webp",
+      "word": "sorrow",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
+      "t": 69.865,
+      "score": 0.95,
+      "cosine": 0.465,
+      "reason": "matches isolation, inner turmoil, and alcohol as escape",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s2-3-oil-light.webp",
+      "key": "lexicon/glass/s2-3-oil-light.webp",
+      "word": "glass",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through the window",
+      "t": 70.67,
+      "score": 0.95,
+      "cosine": 0.464,
+      "reason": "fits addiction, isolation, haunting mood",
+      "recipe": "3-oil-light",
       "featured": true
     },
     {
@@ -126,8 +174,8 @@
       "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
       "t": 69.865,
       "score": 0.95,
-      "cosine": 0.499,
-      "reason": "Strong symbolism and mood match song's themes and atmosphere",
+      "cosine": 0.461,
+      "reason": "Powerful symbolism aligns with themes of sorrow, isolation, and escapism",
       "recipe": "4-photo",
       "featured": true
     },
@@ -138,57 +186,69 @@
       "line": "Im under these drums Trying to sway this storm",
       "t": 173.256,
       "score": 0.95,
-      "cosine": 0.479,
-      "reason": "Powerful imagery matches song's storm as internal chaos and desolation",
+      "cosine": 0.46,
+      "reason": "Powerful imagery matches song's themes of chaos and inner turmoil",
       "recipe": "3-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-4-dream-collage.webp",
-      "key": "lexicon/walk/s9-4-dream-collage.webp",
-      "word": "walk",
-      "line": "Dont call me lost I just walk with this hole And if tomorrow wants me",
-      "t": 164.978,
-      "score": 0.95,
-      "cosine": 0.455,
-      "reason": "Symbolism aligns with themes of cyclical destruction and emotional detachment",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sorrow/s3-5-dream-collage.webp",
-      "key": "lexicon/sorrow/s3-5-dream-collage.webp",
-      "word": "sorrow",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bottle/s4-6-cinema.webp",
+      "key": "lexicon/bottle/s4-6-cinema.webp",
+      "word": "bottle",
       "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
-      "t": 69.865,
+      "t": 69.945,
       "score": 0.95,
-      "cosine": 0.452,
-      "reason": "Matches mood, themes of isolation and emotional burden",
-      "recipe": "5-dream-collage",
+      "cosine": 0.451,
+      "reason": "captures isolation, numbness, and haunting mood",
+      "recipe": "6-cinema",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-5-cinema.webp",
-      "key": "lexicon/night/s0-5-cinema.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-1.webp",
+      "key": "lexicon/night/s0-1.webp",
       "word": "night",
       "line": "Heart doing laps Moving lazily I keep saying Im fine But the night wont believe me So I tell my soul Sink down",
       "t": 88.687,
       "score": 0.95,
-      "cosine": 0.451,
-      "reason": "Matches eerie mood, isolation, and cyclical despair",
-      "recipe": "5-cinema",
+      "cosine": 0.449,
+      "reason": "Matches isolation, emotional numbness, and haunting mood",
+      "recipe": "1",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s6-4-word-portrait.webp",
-      "key": "lexicon/walk/s6-4-word-portrait.webp",
-      "word": "walk",
-      "line": "Dont call me lost I just walk with this hole And if tomorrow wants me",
-      "t": 164.978,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-1-dream-collage.webp",
+      "key": "lexicon/storm/s2-1-dream-collage.webp",
+      "word": "storm",
+      "line": "Im under these drums Trying to sway this storm",
+      "t": 173.256,
       "score": 0.95,
-      "cosine": 0.45,
-      "reason": "Matches eerie mood, urban isolation, and introspective themes",
-      "recipe": "4-word-portrait",
+      "cosine": 0.447,
+      "reason": "Surreal storm imagery matches song's inner turmoil and chaos",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-5-photo.webp",
+      "key": "lexicon/window/s1-5-photo.webp",
+      "word": "window",
+      "line": "glass to my face City bleeding through the window Smoke caught in the bass I dont need",
+      "t": 73.594,
+      "score": 0.95,
+      "cosine": 0.446,
+      "reason": "fits mood and themes of isolation and emotional turmoil",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-2-dream-collage.webp",
+      "key": "lexicon/heart/s19-2-dream-collage.webp",
+      "word": "heart",
+      "line": "Voices in the walls But they sound like me Heart doing laps Moving lazily I keep saying Im fine But the night",
+      "t": 85.926,
+      "score": 0.95,
+      "cosine": 0.433,
+      "reason": "Symbolizes emotional damage and vulnerability in a haunting, introspective mood",
+      "recipe": "2-dream-collage",
       "featured": true
     },
     {
@@ -198,9 +258,129 @@
       "line": "saying Im fine But the night wont believe me So I tell my soul Sink down Sink deep Let go",
       "t": 90.709,
       "score": 0.95,
-      "cosine": 0.443,
-      "reason": "Matches eerie mood, emotional isolation, and inner voice symbolism",
+      "cosine": 0.422,
+      "reason": "fits mood and themes of inner turmoil and isolation",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s15-1-word-portrait.webp",
+      "key": "lexicon/dark/s15-1-word-portrait.webp",
+      "word": "dark",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through",
+      "t": 70.426,
+      "score": 0.95,
+      "cosine": 0.416,
+      "reason": "matches isolation, desolation, and haunting mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s9-4-dream-collage.webp",
+      "key": "lexicon/walk/s9-4-dream-collage.webp",
+      "word": "walk",
+      "line": "Dont call me lost I just walk with this hole And if tomorrow wants me",
+      "t": 164.978,
+      "score": 0.95,
+      "cosine": 0.414,
+      "reason": "Powerful symbolism aligns with themes of isolation and cyclical self-destruction",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s5-2-photo.webp",
+      "key": "lexicon/voice/s5-2-photo.webp",
+      "word": "voice",
+      "line": "voice",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.407,
+      "reason": "raw emotion, vulnerability, and intensity match the song's themes",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s10-4-cinema.webp",
+      "key": "lexicon/dark/s10-4-cinema.webp",
+      "word": "dark",
+      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through",
+      "t": 70.426,
+      "score": 0.95,
+      "cosine": 0.405,
+      "reason": "fits isolation, fragility, dim hope in a hauntingly seductive mood",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s6-3-film-still.webp",
+      "key": "lexicon/ghost/s6-3-film-still.webp",
+      "word": "ghost",
+      "line": "ghost",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.568,
+      "reason": "haunting, supernatural, emotional depth aligns with song's themes",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s0-2-photo.webp",
+      "key": "lexicon/ghost/s0-2-photo.webp",
+      "word": "ghost",
+      "line": "ghost",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.543,
+      "reason": "haunting, spectral imagery fits the song's themes of inner turmoil and isolation",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s1-5-word-portrait.webp",
+      "key": "lexicon/smoke/s1-5-word-portrait.webp",
+      "word": "smoke",
+      "line": "to my face City bleeding through the window Smoke caught in the bass I dont need another promise",
+      "t": 74.083,
+      "score": 0.9,
+      "cosine": 0.52,
+      "reason": "Smoke fits the theme of addiction and emotional numbness, with a melancholic and introspec",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s14-6-photo.webp",
+      "key": "lexicon/smoke/s14-6-photo.webp",
+      "word": "smoke",
+      "line": "to my face City bleeding through the window Smoke caught in the bass I dont need another promise",
+      "t": 74.083,
+      "score": 0.9,
+      "cosine": 0.513,
+      "reason": "Smoke symbolizes addiction and emotional burden; fits haunting, introspective mood.",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s5-5-word-portrait.webp",
+      "key": "lexicon/train/s5-5-word-portrait.webp",
+      "word": "train",
+      "line": "train",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.49,
+      "reason": "Symbolizes journey and transition amid melancholy and isolation",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s4-4-cinema.webp",
+      "key": "lexicon/train/s4-4-cinema.webp",
+      "word": "train",
+      "line": "train",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "evokes isolation, journey, and melancholy fitting the song's themes",
+      "recipe": "4-cinema",
       "featured": true
     },
     {
@@ -210,252 +390,76 @@
       "line": "save me Dont",
       "t": 62.566,
       "score": 0.9,
-      "cosine": 0.51,
-      "reason": "matches eerie mood, isolation, and symbolic hope in darkness",
+      "cosine": 0.485,
+      "reason": "fits mood, themes of isolation and hope in darkness",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-6-dream-collage.webp",
-      "key": "lexicon/window/s1-6-dream-collage.webp",
-      "word": "window",
-      "line": "glass to my face City bleeding through the window Smoke caught in the bass I dont need",
-      "t": 73.594,
-      "score": 0.9,
-      "cosine": 0.49,
-      "reason": "fits mood and themes of decay and emotional isolation",
-      "recipe": "6-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s0-1-dream-collage.webp",
-      "key": "lexicon/window/s0-1-dream-collage.webp",
-      "word": "window",
-      "line": "glass to my face City bleeding through the window Smoke caught in the bass I dont need",
-      "t": 73.594,
-      "score": 0.9,
-      "cosine": 0.49,
-      "reason": "Matches eerie, surreal mood and themes of decay and fractured reality",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-2.webp",
-      "key": "lexicon/heart/s0-2.webp",
-      "word": "heart",
-      "line": "Voices in the walls But they sound like me Heart doing laps Moving lazily I keep saying Im fine But the night",
-      "t": 85.926,
-      "score": 0.9,
-      "cosine": 0.484,
-      "reason": "Symbolizes emotional fracture and toxic allure matching song's themes",
-      "recipe": "2",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s3-3-concept-art.webp",
-      "key": "lexicon/chain/s3-3-concept-art.webp",
-      "word": "chain",
-      "line": "Drink Female Dont save me Male Drink Female Dont chain me Male",
-      "t": 131.56,
-      "score": 0.9,
-      "cosine": 0.476,
-      "reason": "Symbolizes confinement and struggle, fits the song's themes of entrapment and self-destruc",
-      "recipe": "3-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s11-2-dream-collage.webp",
-      "key": "lexicon/heart/s11-2-dream-collage.webp",
-      "word": "heart",
-      "line": "Voices in the walls But they sound like me Heart doing laps Moving lazily I keep saying Im fine But the night",
-      "t": 85.926,
-      "score": 0.9,
-      "cosine": 0.471,
-      "reason": "Symbolizes emotional vulnerability, addiction, and brokenness in line with song's themes",
-      "recipe": "2-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
-      "key": "lexicon/save/s10-2-word-portrait.webp",
-      "word": "save",
-      "line": "save me Dont",
-      "t": 62.566,
-      "score": 0.9,
-      "cosine": 0.464,
-      "reason": "fits mood and themes of emotional neglect and yearning",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s6-1-photo.webp",
-      "key": "lexicon/road/s6-1-photo.webp",
-      "word": "road",
-      "line": "Drink Drink Theres a better road Dont save me now Dont save me",
-      "t": 183.519,
-      "score": 0.9,
-      "cosine": 0.461,
-      "reason": "Matches the song's themes of isolation and journey into self-destruction",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "Heart doing laps Moving lazily I keep saying Im fine But the night wont believe me So I tell my soul Sink down",
-      "t": 88.687,
-      "score": 0.9,
-      "cosine": 0.461,
-      "reason": "Captures night's loneliness and addiction, aligns with song's mood and themes",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s3-4-concept-art.webp",
-      "key": "lexicon/storm/s3-4-concept-art.webp",
-      "word": "storm",
-      "line": "Im under these drums Trying to sway this storm",
-      "t": 173.256,
-      "score": 0.9,
-      "cosine": 0.446,
-      "reason": "Storm evokes emotional turmoil and isolation matching the song's mood",
-      "recipe": "4-concept-art",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
-      "key": "lexicon/save/s8-3-neon-sign.webp",
-      "word": "save",
-      "line": "save me Dont",
-      "t": 62.566,
-      "score": 0.9,
-      "cosine": 0.437,
-      "reason": "Reflects isolation, vulnerability, and digital disconnection in the song's theme",
-      "recipe": "3-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fall/s1-4-neon-night.webp",
-      "key": "lexicon/fall/s1-4-neon-night.webp",
-      "word": "fall",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face",
-      "t": 69.445,
-      "score": 0.9,
-      "cosine": 0.402,
-      "reason": "Matches eerie mood, isolation, and urban melancholy",
-      "recipe": "4-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s11-5-anime.webp",
-      "key": "lexicon/light/s11-5-anime.webp",
-      "word": "light",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding",
-      "t": 69.895,
-      "score": 0.85,
-      "cosine": 0.491,
-      "reason": "Symbolizes fragmentation and addiction in a surreal, chaotic setting",
-      "recipe": "5-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s4-4-word-neon.webp",
-      "key": "lexicon/road/s4-4-word-neon.webp",
-      "word": "road",
-      "line": "Drink Drink Theres a better road Dont save me now Dont save me",
-      "t": 183.519,
-      "score": 0.85,
-      "cosine": 0.471,
-      "reason": "Surreal, isolated, neon-lit highway matches song's mood and themes of escapism and isolati",
-      "recipe": "4-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s3-4-watercolor.webp",
-      "key": "lexicon/chain/s3-4-watercolor.webp",
-      "word": "chain",
-      "line": "Drink Female Dont save me Male Drink Female Dont chain me Male",
-      "t": 131.56,
-      "score": 0.85,
-      "cosine": 0.462,
-      "reason": "Symbolizes broken bonds and freedom, fits the song's themes of escape and self-destruction",
-      "recipe": "4-watercolor",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s1-4-cinema.webp",
-      "key": "lexicon/chain/s1-4-cinema.webp",
-      "word": "chain",
-      "line": "Drink Female Dont save me Male Drink Female Dont chain me Male",
-      "t": 131.56,
-      "score": 0.85,
-      "cosine": 0.447,
-      "reason": "Symbolizes confinement and emotional weight, fits the song's themes of self-destruction an",
-      "recipe": "4-cinema",
       "featured": true
     }
   ],
   "byWord": {
-    "night": [
+    "ghost": [
       0,
-      13,
-      24
+      25,
+      26
     ],
-    "drink": [
+    "smoke": [
       1,
-      3,
-      4
-    ],
-    "sorrow": [
-      2,
-      9,
-      12
+      27,
+      28
     ],
     "walk": [
-      5,
-      11,
-      14
+      2,
+      22
+    ],
+    "train": [
+      3,
+      29,
+      30
     ],
     "glass": [
+      4,
+      12
+    ],
+    "drink": [
+      5,
       6,
       7
     ],
-    "storm": [
+    "bottle": [
       8,
-      10,
-      25
-    ],
-    "soul": [
+      9,
       15
     ],
-    "save": [
-      16,
-      22,
-      26
-    ],
     "window": [
-      17,
+      10,
       18
     ],
+    "sorrow": [
+      11,
+      13
+    ],
+    "storm": [
+      14,
+      17
+    ],
+    "night": [
+      16
+    ],
     "heart": [
-      19,
-      21
+      19
     ],
-    "chain": [
-      20,
-      30,
+    "soul": [
+      20
+    ],
+    "dark": [
+      21,
+      24
+    ],
+    "voice": [
+      23
+    ],
+    "save": [
       31
-    ],
-    "road": [
-      23,
-      29
-    ],
-    "fall": [
-      27
-    ],
-    "light": [
-      28
     ]
   }
 }

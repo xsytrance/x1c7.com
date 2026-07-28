@@ -1,0 +1,465 @@
+{
+  "v": 1,
+  "mode": "full",
+  "id": "neon-teeth",
+  "generatedAt": "2026-07-25T18:08:29.394Z",
+  "measured": {
+    "bpm": 89.1,
+    "duration": 204.92
+  },
+  "identity": {
+    "title": "Neon Teeth",
+    "titleAlternates": [],
+    "genre": "alternative-rock",
+    "subGenres": [
+      "emo-trap",
+      "melodic rap",
+      "pop-punk",
+      "dark alternative club"
+    ],
+    "mood": "dangerous sexy nocturnal intense",
+    "styleSentence": "Uptempo alternative-rock anthem with a driving synth-bass pulse, crisp trap drums, and distorted electric guitar accents, creating a dark, sexy, and intense nocturnal vibe at 89 BPM.",
+    "language": "English",
+    "energy": "high",
+    "vocalStyle": "melodic rap"
+  },
+  "cover": null,
+  "mixFeatures": {
+    "keyEstimate": {
+      "key": "A#",
+      "mode": "major",
+      "confidence": 0.815
+    },
+    "boundaries": [
+      13.37,
+      48.58,
+      77.37,
+      103.65,
+      128.08,
+      153.81,
+      168.67,
+      200.34
+    ],
+    "brightness": 3473.4,
+    "dynamicsDb": 12.4
+  },
+  "lyrics": {
+    "official": true,
+    "language": "english",
+    "text": "TITLE: Neon Teeth\nID: 4fca7c9d-1b40-4592-ae0f-bd1a9488a824\nURL: https://suno.com/song/4fca7c9d-1b40-4592-ae0f-bd1a9488a824\nIMAGE: https://cdn2.suno.ai/5dea956a-dae9-4ae3-bfce-502b4d604aaf.jpeg\nCREATED: 2026-06-27T05:05:59.075Z\nPLAYS: 36 UPVOTES: 1\nTAGS: Uptempo dark alternative club anthem with Tyler's signature emo-trap, melodic rap, pop-punk, and alternative-rock energy. Sexy, dangerous, nocturnal atmosphere with a driving synth-bass pulse, heavy clean 808s, crisp trap drums, sharp claps, electronic percussion, and distorted electric-guitar accen\n\n=== LYRICS (prompt) ===\n[Verse 1 — 12 Bars]\n\nI know my type, I know what I like\nSometimes it’s the eyes, sometimes it’s the curves\nNine times outta ten, it’s the shape of her lips\nHow they pull me under before she says a word\nI could walk away, but her hips press into me\nShe persuades by the way that she sways\nI tell myself no while I’m closing the distance\nAlready hers before the end of the night\nBlack dress glowing underneath ultraviolet\nThat smile cuts clean through the smoke and the heat\nI know she’s the kind that could fuck up my life\nStill I lean in close to those neon teeth\n\n[Chorus — 8 Bars]\n\nYou shine like trouble lighting up the dark\nOne crooked smile and you’re pulling me apart\nYou look like heaven under ultraviolet\nI see the warning, but I lean inside it\nSweet little poison sitting on your lips\nYou make bad decisions feel like chemistry\nI know what you are, still I move in close\nJust to feel the bite of those neon teeth\n\n[Verse 2 — 8 Bars]\n\nShe moves like the bass was built for her body\nOne hand on my chest, one drink in her hand\nSays she hates love, but she loves being wanted\nI tell her I’m different—she knows that I’m damned\nHer perfume stays where her fingertips touched me\nHer lipstick stains every lie that I make\nI swear I’m in control while she pulls me beneath her\nAnd I’m hers before the first light breaks\n\n[Bridge — 4 Bars]\n\nLight in the morning, I’m fast asleep\nShe’s gone with the rhythm, still trapped in the sheets\nNo name on my phone, no note by the bed\nJust the taste of the words that we never said\n\n[Chorus — 8 Bars]\n\nYou shine like trouble lighting up the dark\nOne crooked smile and you’re pulling me apart\nYou look like heaven under ultraviolet\nI see the warning, but I lean inside it\nSweet little poison sitting on your lips\nYou make bad decisions feel like chemistry\nI know what you are, still I move in close\nJust to feel the bite of those neon teeth\n\n[Verse 3 — 8 Bars]\n\nMaybe I stay home ’cause I know she’s out there\nWaiting in a room where the blue lights bleed\nMaybe I fear how fast I would follow\nThe first bad angel who looks like my need\nBut I’m not innocent, I smile when I’m lying\nLeave before daylight, disappear clean\nI keep looking for monsters wearing red lipstick\nWhile I’m hiding a mouth full of neon teeth\n\n[Final Chorus — 8 Bars]\n\nWe shine like trouble lighting up the dark\nTwo crooked smiles trying to tear us apart\nWe look like heaven under ultraviolet\nWe see the warning, but we lean inside it\nSweet little poison sitting on our lips\nWe make bad decisions feel like chemistry\nI know what you are ’cause you’re just like me\nBoth hiding behind those neon teeth",
+    "lrc": "[Intro]\n[Verse 1]\n[00:11.92] I know my type, I know what I like\n[00:15.12] Sometimes it's the eyes,\n[00:16.56] sometimes it's the curves\n[00:17.80] Nine times out of ten,\n[00:19.26] it's the shape of her lips\n[00:20.50] How they pull me under before she says a word\n[00:23.14] I could walk away, but her hips press into me\n[00:26.44] She persuades by the way that she sways\n[00:28.62] I tell myself no while I'm closing the distance\n[00:31.26] Already hers before the end of the night\n[00:33.90] Black dress glowing underneath, ultraviolet\n[00:36.76] The smile cuts clean through the smoke and the heat\n[00:39.24] I know she's the kind that could fuck up my life\n[00:41.96] Still I lean in close to those neon teeth\n[Chorus]\n[00:44.56] You shine like trouble lighting up the dark\n[00:47.36] One crooked smile and you're pulling me apart\n[00:49.88] You look like heaven under ultraviolet\n[00:52.96] I see the warning but I lean inside, yeah\n[00:55.66] Sweet little poison sitting on your lips\n[00:57.88] She make bad decisions feel like chemistry\n[01:00.20] I know what you are, still I'm moving close\n[01:03.30] Just to feel the bite of those neon teeth\n[01:16.20] She moves like the bass was built for her body\n[01:19.36] One hand on my chest, one drink in her hand\n[01:22.06] Sex, she hates love, but she loves being wanted\n[01:24.78] I tell her I'm different,\n[01:26.18] she knows that I'm damned\n[01:27.88] Perfume stays where her fingertips touch me\n[01:30.32] Her lipstick stains every lie that I make\n[01:32.78] I swear I'm in control while she pulls me beneath her\n[01:35.58] And I'm hers before the first light breaks\n[01:38.20] Light in the morning, I'm fast asleep\n[01:40.66] She's gone with the rhythm,\n[01:42.16] still trapped in the sheets\n[01:43.38] No name on my phone, no note by the bed\n[01:46.06] Just a taste of the words that we never said\n[01:48.74] You shine like trouble lighting up the dark\n[01:51.50] One crooked smile and you're pulling me apart\n[01:54.00] You look like heaven under ultraviolet\n[01:57.88] But I lean inside it\n[01:59.84] Sweet little poison sitting on your lips\n[02:02.00] She make bad decisions feel like chemistry\n[02:04.24] I know what you are, still I'm moving close\n[02:07.36] Just to feel the bite of those neon teeth\n[Bridge]\n[02:20.20] Maybe I stay home cause I know she's out there\n[02:23.40] Waiting in a room where the blue lights bleed\n[02:25.98] Maybe I fear how far she'll take me\n[02:27.88] Fast, I would follow the first bad angel\n[Chorus]\n[02:30.08] Who looks like my knee, but I'm not\n[02:32.42] I miss and I smile when I'm lying\n[02:34.14] Leave before daylight, disappear clean\n[02:36.54] I keep looking for monsters wearing red lipstick\n[02:39.42] While I'm hiding a mouth full of neon teeth\n[Verse 2]\n[02:47.26] We shine like trouble lighting up the dark\n[02:50.00] Two crooked smiles trying to tear us apart\n[02:52.52] We look like heaven under ultraviolet\n[02:55.58] I see the warning but we lean inside it\n[02:57.88] Sweet little poison sitting on our lips\n[03:00.52] We make bad decisions feel like chemistry\n[03:02.78] I know what you are cause you're just like me\n[03:05.90] Both hiding behind those neon teeth\n"
+  },
+  "analysis": {
+    "summary": "A dangerous, magnetic attraction between two individuals who are drawn to each other's intensity despite knowing the risks, symbolized by neon teeth and ultraviolet glow.",
+    "overallMood": "dangerous sexy nocturnal intense",
+    "themes": [
+      "magnetic attraction",
+      "self-destructive allure",
+      "neon symbolism",
+      "ultraviolet vulnerability",
+      "control vs surrender",
+      "nocturnal intensity"
+    ],
+    "palette": [
+      "#0f0c1b",
+      "#1a1a2e",
+      "#ff00ff",
+      "#00ff00"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "mysterious",
+        "intensity": 0.09,
+        "colorHint": "#0f0c1b",
+        "start": 11.92
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "intense",
+        "intensity": 0.53,
+        "colorHint": "#1a1a2e",
+        "start": 11.92
+      },
+      {
+        "name": "Chorus",
+        "emotion": "dangerous",
+        "intensity": 0.97,
+        "colorHint": "#ff00ff",
+        "start": 44.56
+      },
+      {
+        "name": "Bridge",
+        "emotion": "anxious",
+        "intensity": 0.78,
+        "colorHint": "#00ff00",
+        "start": 140.2
+      },
+      {
+        "name": "Verse 2",
+        "emotion": "conflicted",
+        "intensity": 0.87,
+        "colorHint": "#1a1a2e",
+        "start": 167.26
+      }
+    ],
+    "keywords": [
+      {
+        "word": "teeth",
+        "emotion": "intense",
+        "imageryPrompt": "glowing electric blue teeth against black velvet, sharp and dangerous"
+      },
+      {
+        "word": "ultraviolet",
+        "emotion": "mysterious",
+        "imageryPrompt": "violet light filtering through smoke, revealing hidden textures"
+      },
+      {
+        "word": "poison",
+        "emotion": "dangerous",
+        "imageryPrompt": "liquid silver on a black surface, shimmering with hidden toxicity"
+      },
+      {
+        "word": "chem",
+        "emotion": "intense",
+        "imageryPrompt": "chemical reaction in neon tubes, electric blue and violet hues"
+      },
+      {
+        "word": "neon",
+        "emotion": "sexy",
+        "imageryPrompt": "glowing pink and purple neon signs reflecting on wet pavement"
+      },
+      {
+        "word": "bass",
+        "emotion": "intense",
+        "imageryPrompt": "deep bass vibrations in the air, making the floor tremble"
+      },
+      {
+        "word": "smile",
+        "emotion": "dangerous charm",
+        "imageryPrompt": "a crooked smile with glowing teeth in the dark"
+      },
+      {
+        "word": "dark",
+        "emotion": "magnetic tension",
+        "imageryPrompt": "a city at night with neon lights reflecting off wet streets"
+      },
+      {
+        "word": "bite",
+        "emotion": "destructive pull",
+        "imageryPrompt": "a sharp bite on the skin with neon lights"
+      },
+      {
+        "word": "curves",
+        "emotion": "magnetic attraction",
+        "imageryPrompt": "a woman’s curves under neon lights in a city street"
+      },
+      {
+        "word": "lips",
+        "emotion": "intoxicating danger",
+        "imageryPrompt": "glowing lips with neon teeth in the dark"
+      }
+    ],
+    "meaning": {
+      "story": "This song explores a high-stakes, mutual obsession between two people who are drawn to each other’s dangerous allure despite knowing the consequences. The subtext reveals a toxic intimacy where both parties are complicit in their own destruction, symbolized by neon teeth representing the addictive, destructive pull of their connection.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "Sets the stage for a nocturnal, high-intensity encounter with ultraviolet glow and magnetic tension",
+          "keyLine": "Black dress glowing underneath ultraviolet"
+        },
+        {
+          "name": "Verse 1",
+          "interpretation": "The narrator acknowledges their attraction to the other person’s physical presence and magnetic pull, despite the risk of being destroyed",
+          "keyLine": "Already hers before the end of the night"
+        },
+        {
+          "name": "Chorus",
+          "interpretation": "The mutual pull between the two characters is described as both alluring and destructive, with neon teeth symbolizing the inevitable damage",
+          "keyLine": "Just to feel the bite of those neon teeth"
+        },
+        {
+          "name": "Bridge",
+          "interpretation": "Highlights the aftermath of the relationship, where both have left but the emotional damage remains",
+          "keyLine": "Just the taste of the words that we never said"
+        },
+        {
+          "name": "Verse 2",
+          "interpretation": "The narrator reflects on the other person’s power over them, with the relationship being both intoxicating and destructive",
+          "keyLine": "I swear I’m in control while she pulls me beneath her"
+        }
+      ],
+      "keyLines": [
+        "You shine like trouble lighting up the dark",
+        "One crooked smile and you’re pulling me apart",
+        "Sweet little poison sitting on your lips",
+        "Just to feel the bite of those neon teeth"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "neon",
+          "emotion": "dangerous allure",
+          "imageryPrompt": "glowing purple and electric blue teeth against a dark city skyline",
+          "weight": 0.95
+        },
+        {
+          "word": "teeth",
+          "emotion": "destructive intimacy",
+          "imageryPrompt": "sharp, glowing teeth cutting through smoke in a neon-lit alley",
+          "weight": 0.9
+        },
+        {
+          "word": "ultraviolet",
+          "emotion": "transient beauty",
+          "imageryPrompt": "sunset in a city with a purple and blue glow",
+          "weight": 0.85
+        },
+        {
+          "word": "poison",
+          "emotion": "toxic attraction",
+          "imageryPrompt": "a drop of liquid poison on a dark surface",
+          "weight": 0.8
+        },
+        {
+          "word": "smile",
+          "emotion": "dangerous charm",
+          "imageryPrompt": "a crooked smile with glowing teeth in the dark",
+          "weight": 0.75
+        },
+        {
+          "word": "dark",
+          "emotion": "magnetic tension",
+          "imageryPrompt": "a city at night with neon lights reflecting off wet streets",
+          "weight": 0.7
+        },
+        {
+          "word": "bite",
+          "emotion": "destructive pull",
+          "imageryPrompt": "a sharp bite on the skin with neon lights",
+          "weight": 0.85
+        },
+        {
+          "word": "curves",
+          "emotion": "magnetic attraction",
+          "imageryPrompt": "a woman’s curves under neon lights in a city street",
+          "weight": 0.65
+        },
+        {
+          "word": "lips",
+          "emotion": "intoxicating danger",
+          "imageryPrompt": "glowing lips with neon teeth in the dark",
+          "weight": 0.8
+        },
+        {
+          "word": "teeth",
+          "emotion": "destructive intimacy",
+          "imageryPrompt": "sharp, glowing teeth cutting through smoke in a neon-lit alley",
+          "weight": 0.9
+        },
+        {
+          "word": "poison",
+          "emotion": "toxic attraction",
+          "imageryPrompt": "a drop of liquid poison on a dark surface",
+          "weight": 0.8
+        },
+        {
+          "word": "smile",
+          "emotion": "dangerous charm",
+          "imageryPrompt": "a crooked smile with glowing teeth in the dark",
+          "weight": 0.75
+        },
+        {
+          "word": "dark",
+          "emotion": "magnetic tension",
+          "imageryPrompt": "a city at night with neon lights reflecting off wet streets",
+          "weight": 0.7
+        },
+        {
+          "word": "bite",
+          "emotion": "destructive pull",
+          "imageryPrompt": "a sharp bite on the skin with neon lights",
+          "weight": 0.85
+        },
+        {
+          "word": "curves",
+          "emotion": "magnetic attraction",
+          "imageryPrompt": "a woman’s curves under neon lights in a city street",
+          "weight": 0.65
+        },
+        {
+          "word": "lips",
+          "emotion": "intoxicating danger",
+          "imageryPrompt": "glowing lips with neon teeth in the dark",
+          "weight": 0.8
+        }
+      ]
+    }
+  },
+  "show": {
+    "energyArc": {
+      "open": 32,
+      "mid": 44,
+      "close": 40
+    },
+    "sectionEnergy": [
+      {
+        "name": "Intro",
+        "start": 11.92,
+        "intensity": 0.09
+      },
+      {
+        "name": "Verse 1",
+        "start": 11.92,
+        "intensity": 0.53
+      },
+      {
+        "name": "Chorus",
+        "start": 44.56,
+        "intensity": 0.97
+      },
+      {
+        "name": "Bridge",
+        "start": 140.2,
+        "intensity": 0.78
+      },
+      {
+        "name": "Verse 2",
+        "start": 167.26,
+        "intensity": 0.87
+      }
+    ],
+    "vocalPresence": [
+      {
+        "name": "Intro",
+        "presence": 86
+      },
+      {
+        "name": "Verse 1",
+        "presence": 89
+      },
+      {
+        "name": "Chorus",
+        "presence": 73
+      },
+      {
+        "name": "Bridge",
+        "presence": 75
+      },
+      {
+        "name": "Verse 2",
+        "presence": 52
+      }
+    ],
+    "dropMap": {
+      "cuts": [
+        [
+          0,
+          3.52
+        ],
+        [
+          3.76,
+          4.8
+        ],
+        [
+          5.04,
+          6.16
+        ],
+        [
+          6.4,
+          7.52
+        ],
+        [
+          7.76,
+          8.88
+        ],
+        [
+          9.12,
+          10.24
+        ],
+        [
+          10.48,
+          11.6
+        ],
+        [
+          11.84,
+          12.96
+        ],
+        [
+          17.44,
+          18.32
+        ],
+        [
+          22.88,
+          23.68
+        ],
+        [
+          44.88,
+          45.76
+        ],
+        [
+          64.24,
+          66.56
+        ],
+        [
+          128.32,
+          130.56
+        ],
+        [
+          144.08,
+          145.2
+        ],
+        [
+          145.44,
+          146.24
+        ],
+        [
+          148.08,
+          149.04
+        ],
+        [
+          149.44,
+          150.56
+        ],
+        [
+          187.12,
+          189.04
+        ],
+        [
+          200.72,
+          204.96
+        ]
+      ],
+      "risers": [
+        {
+          "t": 0,
+          "end": 3.52
+        }
+      ],
+      "hint": "cuts → blackout/cut-mode moments; risers → supernova build-ups (stemSense activeCut/activeRiser fire these automatically)"
+    },
+    "performs": {
+      "stems": [
+        "lead",
+        "back",
+        "drums",
+        "perc",
+        "bass",
+        "synth",
+        "other",
+        "guitar"
+      ],
+      "approx": false
+    }
+  },
+  "files": {
+    "senses": "senses.json",
+    "planetFull": "neon-teeth-planet-full.json",
+    "lrc": "lyrics.lrc",
+    "transcript": "transcript.json"
+  },
+  "next": [
+    "lexicon: node scripts/lexicon/harvest.mjs (reads the planet-full.json), then dream + publish",
+    "stems live: node scripts/stem-analysis/publish-stems.mjs --stems <dir> --slug <id> --stems-json <out>/senses.json",
+    "full show: merge analysis+interactions into tracks.planet; lyrics_synced from transcript words"
+  ]
+}

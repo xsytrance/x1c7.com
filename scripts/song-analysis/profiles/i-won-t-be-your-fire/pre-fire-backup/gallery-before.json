@@ -1,0 +1,106 @@
+{
+  "slug": "i-won-t-be-your-fire",
+  "model": "sdxl_turbo_1.0_fp16.safetensors",
+  "art": {
+    "light": [
+      "/planets/i-won-t-be-your-fire/gallery/light-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/light-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/light-3.webp",
+      "/planets/i-won-t-be-your-fire/gallery/light-4.webp",
+      "/planets/i-won-t-be-your-fire/gallery/light-5.webp",
+      "/planets/i-won-t-be-your-fire/gallery/light-6.webp"
+    ],
+    "silence": [
+      "/planets/i-won-t-be-your-fire/gallery/silence-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/silence-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/silence-3.webp",
+      "/planets/i-won-t-be-your-fire/gallery/silence-4.webp",
+      "/planets/i-won-t-be-your-fire/gallery/silence-5.webp"
+    ],
+    "bruise": [
+      "/planets/i-won-t-be-your-fire/gallery/bruise-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/bruise-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/bruise-3.webp"
+    ],
+    "burn": [
+      "/planets/i-won-t-be-your-fire/gallery/burn-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/burn-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/burn-3.webp"
+    ],
+    "decisive": [
+      "/planets/i-won-t-be-your-fire/gallery/decisive-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/decisive-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/decisive-3.webp"
+    ],
+    "empathetic": [
+      "/planets/i-won-t-be-your-fire/gallery/empathetic-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/empathetic-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/empathetic-3.webp"
+    ],
+    "fire": [
+      "/planets/i-won-t-be-your-fire/gallery/fire-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/fire-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/fire-3.webp"
+    ],
+    "hopeless": [
+      "/planets/i-won-t-be-your-fire/gallery/hopeless-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/hopeless-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/hopeless-3.webp"
+    ],
+    "match": [
+      "/planets/i-won-t-be-your-fire/gallery/match-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/match-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/match-3.webp"
+    ],
+    "reason": [
+      "/planets/i-won-t-be-your-fire/gallery/reason-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/reason-2.webp",
+      "/planets/i-won-t-be-your-fire/gallery/reason-3.webp"
+    ],
+    "signal": [
+      "/planets/i-won-t-be-your-fire/gallery/signal-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/signal-2.webp"
+    ],
+    "thunder": [
+      "/planets/i-won-t-be-your-fire/gallery/thunder-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/thunder-2.webp"
+    ],
+    "defiant": [
+      "/planets/i-won-t-be-your-fire/gallery/defiant-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/defiant-2.webp"
+    ],
+    "despairing": [
+      "/planets/i-won-t-be-your-fire/gallery/despairing-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/despairing-2.webp"
+    ],
+    "desperate": [
+      "/planets/i-won-t-be-your-fire/gallery/desperate-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/desperate-2.webp"
+    ],
+    "heartbroken": [
+      "/planets/i-won-t-be-your-fire/gallery/heartbroken-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/heartbroken-2.webp"
+    ],
+    "hopeful": [
+      "/planets/i-won-t-be-your-fire/gallery/hopeful-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/hopeful-2.webp"
+    ],
+    "melancholic": [
+      "/planets/i-won-t-be-your-fire/gallery/melancholic-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/melancholic-2.webp"
+    ],
+    "pensive": [
+      "/planets/i-won-t-be-your-fire/gallery/pensive-1.webp",
+      "/planets/i-won-t-be-your-fire/gallery/pensive-2.webp"
+    ],
+    "resolute": [
+      "/planets/i-won-t-be-your-fire/gallery/resolute-1.webp"
+    ],
+    "torn": [
+      "/planets/i-won-t-be-your-fire/gallery/torn-1.webp"
+    ],
+    "wistful": [
+      "/planets/i-won-t-be-your-fire/gallery/wistful-1.webp"
+    ]
+  }
+}

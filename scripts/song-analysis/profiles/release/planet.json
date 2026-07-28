@@ -1,0 +1,133 @@
+[
+  {
+    "id": "release",
+    "planet": {
+      "analysis": {
+        "summary": "The song 'Between the Stations' reflects on personal transformation and introspection amidst the rhythm of urban life, capturing the emotional journey of finding oneself while navigating the monotony and movement of a city subway.",
+        "overallMood": "Reflective and introspective with a touch of hope and calm acceptance",
+        "themes": [
+          "Transformation",
+          "Urban Isolation",
+          "Self-Discovery",
+          "Rhythm and Movement",
+          "Emotional Resilience",
+          "Existential Reflection"
+        ],
+        "palette": [
+          "#1A1A2E",
+          "#3A3A5A",
+          "#5A5A7A",
+          "#7A7A9A"
+        ],
+        "sections": [
+          {
+            "section": "Intro",
+            "emotion": "Calm",
+            "intensity": 0.3,
+            "colorHint": "#1a1a2e",
+            "start": 3.62
+          },
+          {
+            "section": "Verse 1",
+            "emotion": "Mysterious",
+            "intensity": 0.4,
+            "colorHint": "#3a3a5a",
+            "start": 34.67
+          },
+          {
+            "section": "Chorus",
+            "emotion": "Hopeful",
+            "intensity": 0.6,
+            "colorHint": "#5a5a7a",
+            "start": 43.48
+          },
+          {
+            "section": "Verse 2",
+            "emotion": "Introspective",
+            "intensity": 0.5,
+            "colorHint": "#3a3a5a",
+            "start": 114.3
+          },
+          {
+            "section": "Bridge",
+            "emotion": "Calm",
+            "intensity": 0.4,
+            "colorHint": "#1a1a2e",
+            "start": 133.28
+          },
+          {
+            "section": "Chorus",
+            "emotion": "Hopeful",
+            "intensity": 0.6,
+            "colorHint": "#5a5a7a",
+            "start": 177.84
+          },
+          {
+            "section": "Verse 3",
+            "emotion": "Calm",
+            "intensity": 0.3,
+            "colorHint": "#3a3a5a",
+            "start": 199.66
+          },
+          {
+            "section": "Outro",
+            "emotion": "Accepting",
+            "intensity": 0.3,
+            "colorHint": "#1a1a2e",
+            "start": 230.32
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Breath",
+            "emotion": "Hopeful",
+            "imageryPrompt": "A glowing breath in the dark tunnel, illuminating the path ahead as the train moves through the city."
+          },
+          {
+            "word": "Found",
+            "emotion": "Accepting",
+            "imageryPrompt": "A person standing alone on a subway platform, surrounded by flickering lights, but looking at peace with themselves."
+          },
+          {
+            "word": "Tunnel",
+            "emotion": "Mysterious",
+            "imageryPrompt": "A long, dark tunnel with distant lights flickering in the distance, echoing with the sound of a train approaching."
+          },
+          {
+            "word": "Rhythm",
+            "emotion": "Calm",
+            "imageryPrompt": "A slow, steady heartbeat echoing through a city subway, blending with the hum of the train and the silence of the passengers."
+          },
+          {
+            "word": "City",
+            "emotion": "Introspective",
+            "imageryPrompt": "A vast, glowing cityscape at night, with trains moving underground and people walking alone on the streets, lost in thought."
+          },
+          {
+            "word": "Passing",
+            "emotion": "Reflective",
+            "imageryPrompt": "A train passing through a dark tunnel, with blurred figures inside the windows, each one lost in their own world."
+          },
+          {
+            "word": "Ground",
+            "emotion": "Grounded",
+            "imageryPrompt": "A person standing on a subway platform, looking down at the tracks, the city lights reflecting in their eyes as they find their balance."
+          },
+          {
+            "word": "Breathing",
+            "emotion": "Calm",
+            "imageryPrompt": "A person sitting alone on a train, eyes closed, breathing deeply as the city hums around them, finding peace in the rhythm of the journey."
+          },
+          {
+            "word": "Lost",
+            "emotion": "Reflective",
+            "imageryPrompt": "A person walking through a dark, empty subway station, the only light coming from the distant train, feeling both alone and searching for something deeper within themselves."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

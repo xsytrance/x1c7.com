@@ -91,3 +91,7 @@ scripts/song-analysis/profiles/*/.render-*/
 scripts/song-analysis/profiles/*/pre-refix-backup/
 scripts/song-art/*-out/
 .env*
+
+# python bytecode
+__pycache__/
+*.pyc

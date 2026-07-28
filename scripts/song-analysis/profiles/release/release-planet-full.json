@@ -1,0 +1,422 @@
+{
+  "analysis": {
+    "summary": "The song 'Between the Stations' reflects on personal transformation and introspection amidst the rhythm of urban life, capturing the emotional journey of finding oneself while navigating the monotony and movement of a city subway.",
+    "overallMood": "Reflective and introspective with a touch of hope and calm acceptance",
+    "themes": [
+      "Transformation",
+      "Urban Isolation",
+      "Self-Discovery",
+      "Rhythm and Movement",
+      "Emotional Resilience",
+      "Existential Reflection"
+    ],
+    "palette": [
+      "#1A1A2E",
+      "#3A3A5A",
+      "#5A5A7A",
+      "#7A7A9A"
+    ],
+    "sections": [
+      {
+        "section": "Intro",
+        "emotion": "Calm",
+        "intensity": 0.67,
+        "colorHint": "#1a1a2e",
+        "start": 3.62
+      },
+      {
+        "section": "Verse 1",
+        "emotion": "Mysterious",
+        "intensity": 0.48,
+        "colorHint": "#3a3a5a",
+        "start": 34.67
+      },
+      {
+        "section": "Chorus",
+        "emotion": "Hopeful",
+        "intensity": 0.87,
+        "colorHint": "#5a5a7a",
+        "start": 43.48
+      },
+      {
+        "section": "Verse 2",
+        "emotion": "Introspective",
+        "intensity": 0.65,
+        "colorHint": "#3a3a5a",
+        "start": 114.3
+      },
+      {
+        "section": "Bridge",
+        "emotion": "Calm",
+        "intensity": 0.81,
+        "colorHint": "#1a1a2e",
+        "start": 133.28
+      },
+      {
+        "section": "Chorus",
+        "emotion": "Hopeful",
+        "intensity": 0.63,
+        "colorHint": "#5a5a7a",
+        "start": 177.84
+      },
+      {
+        "section": "Verse 3",
+        "emotion": "Calm",
+        "intensity": 0.79,
+        "colorHint": "#3a3a5a",
+        "start": 199.66
+      },
+      {
+        "section": "Outro",
+        "emotion": "Accepting",
+        "intensity": 0.09,
+        "colorHint": "#1a1a2e",
+        "start": 230.32
+      }
+    ],
+    "keywords": [
+      {
+        "word": "breath",
+        "emotion": "Hopeful",
+        "imageryPrompt": "A glowing breath in the dark tunnel, illuminating the path ahead as the train moves through the city."
+      },
+      {
+        "word": "found",
+        "emotion": "Accepting",
+        "imageryPrompt": "A person standing alone on a subway platform, surrounded by flickering lights, but looking at peace with themselves."
+      },
+      {
+        "word": "tunnel",
+        "emotion": "Mysterious",
+        "imageryPrompt": "A long, dark tunnel with distant lights flickering in the distance, echoing with the sound of a train approaching."
+      },
+      {
+        "word": "rhythm",
+        "emotion": "Calm",
+        "imageryPrompt": "A slow, steady heartbeat echoing through a city subway, blending with the hum of the train and the silence of the passengers."
+      },
+      {
+        "word": "city",
+        "emotion": "Introspective",
+        "imageryPrompt": "A vast, glowing cityscape at night, with trains moving underground and people walking alone on the streets, lost in thought."
+      },
+      {
+        "word": "passing",
+        "emotion": "Reflective",
+        "imageryPrompt": "A train passing through a dark tunnel, with blurred figures inside the windows, each one lost in their own world."
+      },
+      {
+        "word": "ground",
+        "emotion": "Grounded",
+        "imageryPrompt": "A person standing on a subway platform, looking down at the tracks, the city lights reflecting in their eyes as they find their balance."
+      },
+      {
+        "word": "breathing",
+        "emotion": "Calm",
+        "imageryPrompt": "A person sitting alone on a train, eyes closed, breathing deeply as the city hums around them, finding peace in the rhythm of the journey."
+      },
+      {
+        "word": "lost",
+        "emotion": "Reflective",
+        "imageryPrompt": "A person walking through a dark, empty subway station, the only light coming from the distant train, feeling both alone and searching for something deeper within themselves."
+      },
+      {
+        "word": "stations",
+        "emotion": "transition, liminality",
+        "imageryPrompt": "a dimly lit subway tunnel with flickering lights and blurred silhouettes of people walking through it"
+      },
+      {
+        "word": "breathe",
+        "emotion": "release, renewal",
+        "imageryPrompt": "a person standing in a quiet subway car, eyes closed, chest rising and falling with deep breaths"
+      },
+      {
+        "word": "light",
+        "emotion": "clarity, hope",
+        "imageryPrompt": "a single beam of blue light cutting through a dark subway tunnel, illuminating a person's face"
+      },
+      {
+        "word": "train",
+        "emotion": "movement, journey",
+        "imageryPrompt": "a train moving through a tunnel, its lights flickering and casting long shadows on the walls"
+      },
+      {
+        "word": "me",
+        "emotion": "self-awareness, reclamation",
+        "imageryPrompt": "a person looking at their reflection in a subway window, with a sense of clarity and peace"
+      },
+      {
+        "word": "glass",
+        "emotion": "reflection, clarity",
+        "imageryPrompt": "a subway window reflecting a person's face, with the city outside blurred in the background"
+      },
+      {
+        "word": "night",
+        "emotion": "stillness, introspection",
+        "imageryPrompt": "a quiet subway station at night, with only the sound of a distant train and the glow of a single light"
+      },
+      {
+        "word": "sound",
+        "emotion": "noise, meaning",
+        "imageryPrompt": "a person listening to the distant sounds of the city, with their eyes closed and head tilted"
+      },
+      {
+        "word": "steam",
+        "emotion": "movement, energy",
+        "imageryPrompt": "a train moving through a tunnel, with steam rising from the tracks and fog filling the air"
+      },
+      {
+        "word": "roses",
+        "emotion": "beauty, contrast",
+        "imageryPrompt": "a person holding a single rose in a subway station, surrounded by the chaos of the city"
+      },
+      {
+        "word": "rain",
+        "emotion": "purity, cleansing",
+        "imageryPrompt": "a person standing in a subway station, with rain falling outside the window and their face reflecting the light"
+      },
+      {
+        "word": "pain",
+        "emotion": "struggle, endurance",
+        "imageryPrompt": "a person holding a small object, with a look of quiet determination on their face"
+      },
+      {
+        "word": "time",
+        "emotion": "urgency, patience",
+        "imageryPrompt": "a person standing on a subway platform, looking at their watch and taking a deep breath"
+      }
+    ],
+    "meaning": {
+      "story": "The song 'Between the Stations' is a journey through self-reclamation and renewal in the heart of a city that never sleeps. It captures the tension between the monotony of urban life and the quiet moments of introspection that allow the soul to reset, reawaken, and find a new sense of purpose amid the chaos.",
+      "sections": [
+        {
+          "name": "Old stops, new eyes",
+          "interpretation": "A reflection on past experiences viewed with fresh perspective.",
+          "keyLine": "Old stops, new eyes"
+        },
+        {
+          "name": "Blue light, passing by",
+          "interpretation": "The fleeting nature of moments under the city's artificial glow.",
+          "keyLine": "Blue light, passing by"
+        },
+        {
+          "name": "Window black, facing glass",
+          "interpretation": "A moment of self-confrontation and acceptance.",
+          "keyLine": "Window black, facing glass"
+        },
+        {
+          "name": "I see me, then I pass",
+          "interpretation": "A fleeting glimpse of self before moving on.",
+          "keyLine": "I see me, then I pass"
+        },
+        {
+          "name": "Downtown, uptown",
+          "interpretation": "Navigating the physical and emotional landscapes of the city.",
+          "keyLine": "Downtown, uptown"
+        },
+        {
+          "name": "Under every sound",
+          "interpretation": "Finding meaning in the city's constant noise.",
+          "keyLine": "Under every sound"
+        },
+        {
+          "name": "I keep floating",
+          "interpretation": "A sense of drifting through life without direction.",
+          "keyLine": "I keep floating"
+        },
+        {
+          "name": "I keep finding the ground",
+          "interpretation": "A return to stability and self-awareness.",
+          "keyLine": "I keep finding the ground"
+        },
+        {
+          "name": "Everybody's going somewhere",
+          "interpretation": "The collective movement of people with hidden burdens.",
+          "keyLine": "Everybody's going somewhere"
+        },
+        {
+          "name": "Everybody's holding something",
+          "interpretation": "The weight of unspoken emotions and expectations.",
+          "keyLine": "Everybody's holding something"
+        },
+        {
+          "name": "Everybody looks so tired",
+          "interpretation": "The exhaustion of urban existence and inner struggle.",
+          "keyLine": "Everybody looks so tired"
+        },
+        {
+          "name": "So I let the rhythm hold me",
+          "interpretation": "Surrendering to the city's pulse for emotional release.",
+          "keyLine": "So I let the rhythm hold me"
+        },
+        {
+          "name": "Let the tunnel pull me through",
+          "interpretation": "A metaphor for being drawn into deeper self-reflection.",
+          "keyLine": "Let the tunnel pull me through"
+        },
+        {
+          "name": "Every station feels familiar",
+          "interpretation": "The repetition of life's journey, yet with new understanding.",
+          "keyLine": "Every station feels familiar"
+        },
+        {
+          "name": "But I'm waking up brand new",
+          "interpretation": "A moment of rebirth and transformation.",
+          "keyLine": "But I'm waking up brand new"
+        },
+        {
+          "name": "Between the stations",
+          "interpretation": "The liminal space where personal renewal occurs.",
+          "keyLine": "Between the stations"
+        },
+        {
+          "name": "I can breathe again",
+          "interpretation": "A return to emotional and physical freedom.",
+          "keyLine": "I can breathe again"
+        },
+        {
+          "name": "I come back to me",
+          "interpretation": "A reconnection with one's true self.",
+          "keyLine": "I come back to me"
+        },
+        {
+          "name": "Let the night slow down",
+          "interpretation": "A plea for stillness in a fast-paced world.",
+          "keyLine": "Let the night slow down"
+        },
+        {
+          "name": "I'm here right now",
+          "interpretation": "A grounding moment of presence and acceptance.",
+          "keyLine": "I'm here right now"
+        }
+      ],
+      "keyLines": [
+        "Between the stations I can breathe again",
+        "I come back to me",
+        "Everybody's holding something",
+        "Let the rhythm hold me",
+        "I was heavy, I was loud, now I'm quiet, in the ground",
+        "I don't need answers I don't need signs"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "stations",
+          "emotion": "transition, liminality",
+          "imageryPrompt": "a dimly lit subway tunnel with flickering lights and blurred silhouettes of people walking through it",
+          "weight": 0.95
+        },
+        {
+          "word": "breathe",
+          "emotion": "release, renewal",
+          "imageryPrompt": "a person standing in a quiet subway car, eyes closed, chest rising and falling with deep breaths",
+          "weight": 0.92
+        },
+        {
+          "word": "city",
+          "emotion": "chaos, movement",
+          "imageryPrompt": "a bustling city skyline with trains moving underground and people walking in the rain",
+          "weight": 0.91
+        },
+        {
+          "word": "rhythm",
+          "emotion": "surrender, pulse",
+          "imageryPrompt": "a glowing subway track with rhythmic lights pulsing in time with a heartbeat",
+          "weight": 0.89
+        },
+        {
+          "word": "tunnel",
+          "emotion": "isolation, introspection",
+          "imageryPrompt": "a long, dark tunnel with glowing lights on the walls and a train approaching in the distance",
+          "weight": 0.88
+        },
+        {
+          "word": "ground",
+          "emotion": "stability, grounding",
+          "imageryPrompt": "a person standing on a subway platform, feet planted firmly on the ground, looking up at the train",
+          "weight": 0.87
+        },
+        {
+          "word": "light",
+          "emotion": "clarity, hope",
+          "imageryPrompt": "a single beam of blue light cutting through a dark subway tunnel, illuminating a person's face",
+          "weight": 0.86
+        },
+        {
+          "word": "breath",
+          "emotion": "life, renewal",
+          "imageryPrompt": "a person exhaling slowly in a quiet subway car, with steam rising from their mouth",
+          "weight": 0.85
+        },
+        {
+          "word": "train",
+          "emotion": "movement, journey",
+          "imageryPrompt": "a train moving through a tunnel, its lights flickering and casting long shadows on the walls",
+          "weight": 0.84
+        },
+        {
+          "word": "me",
+          "emotion": "self-awareness, reclamation",
+          "imageryPrompt": "a person looking at their reflection in a subway window, with a sense of clarity and peace",
+          "weight": 0.83
+        },
+        {
+          "word": "passing",
+          "emotion": "transience, movement",
+          "imageryPrompt": "a crowd of people walking through a subway station, faces blurred and moving in different directions",
+          "weight": 0.82
+        },
+        {
+          "word": "glass",
+          "emotion": "reflection, clarity",
+          "imageryPrompt": "a subway window reflecting a person's face, with the city outside blurred in the background",
+          "weight": 0.81
+        },
+        {
+          "word": "night",
+          "emotion": "stillness, introspection",
+          "imageryPrompt": "a quiet subway station at night, with only the sound of a distant train and the glow of a single light",
+          "weight": 0.8
+        },
+        {
+          "word": "sound",
+          "emotion": "noise, meaning",
+          "imageryPrompt": "a person listening to the distant sounds of the city, with their eyes closed and head tilted",
+          "weight": 0.79
+        },
+        {
+          "word": "steam",
+          "emotion": "movement, energy",
+          "imageryPrompt": "a train moving through a tunnel, with steam rising from the tracks and fog filling the air",
+          "weight": 0.78
+        },
+        {
+          "word": "roses",
+          "emotion": "beauty, contrast",
+          "imageryPrompt": "a person holding a single rose in a subway station, surrounded by the chaos of the city",
+          "weight": 0.77
+        },
+        {
+          "word": "rain",
+          "emotion": "purity, cleansing",
+          "imageryPrompt": "a person standing in a subway station, with rain falling outside the window and their face reflecting the light",
+          "weight": 0.76
+        },
+        {
+          "word": "pain",
+          "emotion": "struggle, endurance",
+          "imageryPrompt": "a person holding a small object, with a look of quiet determination on their face",
+          "weight": 0.75
+        },
+        {
+          "word": "time",
+          "emotion": "urgency, patience",
+          "imageryPrompt": "a person standing on a subway platform, looking at their watch and taking a deep breath",
+          "weight": 0.74
+        }
+      ]
+    }
+  },
+  "styleHint": "A mid-tempo (136 BPM) electronica track with a moody F minor key, layered with atmospheric textures, subtle percussion, and a brooding lead instrument, evoking the somber yet rhythmic pulse of a city subway ride.",
+  "assets": {},
+  "generatedAt": "2026-07-25T14:08:50.037Z"
+}

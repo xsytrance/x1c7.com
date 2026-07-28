@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "membrane-still-insane",
-  "generatedAt": "2026-07-19T11:02:44.559Z",
+  "generatedAt": "2026-07-25T11:23:48.983Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1188,
-    "judged": 56,
-    "accepted": 47,
+    "candidates": 2028,
+    "judged": 64,
+    "accepted": 60,
     "kept": 32
   },
   "reel": [
@@ -79,7 +79,7 @@
       "t": 80.26,
       "score": 1,
       "cosine": 0.732,
-      "reason": "Perfect fit with cartoon villain, fog, noir-cartoon blend, and madness themes",
+      "reason": "Perfect fit with cartoon villain, fog, and noir-cartoon hybrid",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 8.069,
       "score": 1,
       "cosine": 0.728,
-      "reason": "Perfectly aligns with song's noir-cartoon, gritty, and fractured sanity themes.",
+      "reason": "Perfectly aligns with song's noir-cartoon atmosphere and themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 45.047,
       "score": 1,
       "cosine": 0.705,
-      "reason": "Perfect fit for song's noir-cartoon chaos and riverboat flames",
+      "reason": "Perfectly aligns with song's noir-cartoon, riverboat crime, and sinister playfulness",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 174.566,
       "score": 1,
       "cosine": 0.679,
-      "reason": "Perfect fit with boiler, smoke, and noir-cartoon atmosphere",
+      "reason": "Perfectly aligns with song's gritty noir-cartoon atmosphere and themes",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 8.069,
       "score": 1,
       "cosine": 0.625,
-      "reason": "Perfect fit with fog, decay, soundwave, and noir-cartoon themes",
+      "reason": "Perfectly aligns with song's gritty noir-cartoon and mechanical madness",
       "recipe": "2-photo",
       "featured": true
     },
@@ -189,6 +189,18 @@
       "cosine": 0.622,
       "reason": "Perfectly aligns with noir-cartoon atmosphere and themes of fractured sanity and cartoonis",
       "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
+      "key": "lexicon/body/s4-3-manga-line.webp",
+      "word": "body",
+      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
+      "t": 159.858,
+      "score": 0.98,
+      "cosine": 0.591,
+      "reason": "Perfectly aligns with noir-cartoon grit, fractured sanity, and thematic elements",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -252,6 +264,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s13-4-word-portrait.webp",
+      "key": "lexicon/smoke/s13-4-word-portrait.webp",
+      "word": "smoke",
+      "line": "let him in been up three nights with smoke in my coat talking to a shadow that been steering the",
+      "t": 61.555,
+      "score": 0.95,
+      "cosine": 0.642,
+      "reason": "Strong noir-cartoon atmosphere, smoke, riverboat, mystery",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp",
       "key": "lexicon/gold/s14-4-neon-night.webp",
       "word": "gold",
@@ -259,7 +283,7 @@
       "t": 73.954,
       "score": 0.95,
       "cosine": 0.629,
-      "reason": "fits noir-cartoon vibe, gold as villainy symbol, rain and neon match themes",
+      "reason": "fits noir-cartoon vibe, gold as villainy symbol, rain and neon match song's atmosphere",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -307,20 +331,8 @@
       "t": 159.858,
       "score": 0.95,
       "cosine": 0.619,
-      "reason": "Strong visual alignment with song's noir-cartoon world and themes of fractured sanity",
+      "reason": "Strong noir-cartoon visuals match song's mood and themes",
       "recipe": "5-manga-line",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
-      "key": "lexicon/body/s4-3-manga-line.webp",
-      "word": "body",
-      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
-      "t": 159.858,
-      "score": 0.95,
-      "cosine": 0.591,
-      "reason": "Strong alignment with noir-cartoon, fractured sanity, and gritty tension",
-      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -331,7 +343,7 @@
       "t": 126.909,
       "score": 0.95,
       "cosine": 0.589,
-      "reason": "fits noir-cartoon aesthetic, fractured sanity, urban decay",
+      "reason": "matches noir-cartoon aesthetic, fractured sanity, urban decay, and neon symbolism",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 178.91,
       "score": 0.95,
       "cosine": 0.564,
-      "reason": "Perfectly aligns with noir-cartoon grit, rain, neon, and fractured sanity",
+      "reason": "Perfectly fits gritty noir-cartoon mood and themes",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -367,32 +379,20 @@
       "t": 36.897,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "Sinister neon eyes fit noir-cartoon madness and gritty violence",
+      "reason": "Sinister neon eyes fit noir-cartoon madness and gritty urban violence",
       "recipe": "2-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s3-1-dream-collage.webp",
-      "key": "lexicon/night/s3-1-dream-collage.webp",
-      "word": "night",
-      "line": "insane smoke all in the frame black and white night but the madness got a name whistle go whoo Then",
-      "t": 104.896,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s5-1-word-neon.webp",
+      "key": "lexicon/shadow/s5-1-word-neon.webp",
+      "word": "shadow",
+      "line": "nights with smoke in my coat talking to a shadow that been steering the boat laughing at the fog",
+      "t": 63.542,
       "score": 0.95,
-      "cosine": 0.54,
-      "reason": "matches noir-cartoon chaos, fractured sanity, and sinister playfulness",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/river/s1-4-word-portrait.webp",
-      "key": "lexicon/river/s1-4-word-portrait.webp",
-      "word": "river",
-      "line": "the chain river full of fog and the deck full of flames step",
-      "t": 42.702,
-      "score": 0.95,
-      "cosine": 0.539,
-      "reason": "Sinister figure and foggy river match noir-cartoon menace and themes",
-      "recipe": "4-word-portrait",
+      "cosine": 0.548,
+      "reason": "fits noir mood, shadow symbolism, foggy atmosphere",
+      "recipe": "1-word-neon",
       "featured": true
     }
   ],
@@ -408,53 +408,55 @@
     ],
     "gold": [
       2,
-      19,
-      20
+      20,
+      22
     ],
     "boiler": [
       3,
       10,
-      23
+      25
     ],
     "night": [
-      4,
-      30
+      4
     ],
     "flames": [
       7,
       8,
-      15
+      16
     ],
     "hands": [
       9,
-      17,
-      28
+      18,
+      29
     ],
     "body": [
       11,
-      24,
-      25
+      15,
+      26
     ],
     "move": [
       12,
-      26
+      27
     ],
     "eyes": [
       14,
-      29
+      30
     ],
     "storm": [
-      16,
-      27
+      17,
+      28
     ],
     "membrane": [
-      18
+      19
+    ],
+    "smoke": [
+      21
     ],
     "drip": [
-      21,
-      22
+      23,
+      24
     ],
-    "river": [
+    "shadow": [
       31
     ]
   }

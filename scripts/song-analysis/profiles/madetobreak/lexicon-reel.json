@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-07-19T11:00:13.405Z",
+  "generatedAt": "2026-07-25T11:22:55.874Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 843,
+    "candidates": 861,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -29,9 +29,9 @@
       "word": "wounds",
       "line": "wounds",
       "t": null,
-      "score": 1,
+      "score": 0.98,
       "cosine": 0.444,
-      "reason": "Image embodies resilience, battle scars as identity, inner strength through injury",
+      "reason": "Symbolizes resilience, battle scars as identity, inner strength through injury",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and empowerm",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and renewal",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 73.76,
       "score": 0.95,
       "cosine": 0.497,
-      "reason": "Symbolizes breaking free from limits, matches defiant resilience theme",
+      "reason": "Symbolizes breaking free from limits, matches defiant resilience and transformation",
       "recipe": "5-anime",
       "featured": true
     },
@@ -96,6 +96,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s6-1-concept-art.webp",
+      "key": "lexicon/storm/s6-1-concept-art.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.488,
+      "reason": "storm symbolizes turmoil; figure shows resilience against nature",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s2-3-graphic-novel.webp",
       "key": "lexicon/body/s2-3-graphic-novel.webp",
       "word": "body",
@@ -103,7 +115,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Symbolizes transformation, resilience, and defiance through physical and inner strength",
+      "reason": "Symbolizes transformation, resilience, and defiance through physicality and light",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -127,7 +139,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes",
+      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes.",
       "recipe": "1-anime",
       "featured": true
     },
@@ -139,7 +151,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolizes defiance and resilience against oppression, aligns with transformation and empo",
+      "reason": "Symbolism of chains as both constraint and strength fits defiant resilience theme",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -187,7 +199,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "Powerful imagery of resilience and defiance fits the song's themes",
+      "reason": "Powerful imagery of resilience and defiance on a battlefield",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -211,7 +223,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
+      "reason": "Symbolizes transformation of destruction into power, fits defiant, resilient mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -240,6 +252,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s6-2-anime.webp",
+      "key": "lexicon/storm/s6-2-anime.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.448,
+      "reason": "Powerful imagery matches defiant, resilient mood and themes of transformation through chao",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
       "key": "lexicon/boulder/s0-6-anime.webp",
       "word": "boulder",
@@ -249,30 +273,6 @@
       "cosine": 0.444,
       "reason": "Symbolizes resilience, defiance, and transformation through adversity",
       "recipe": "6-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s1-6-word-portrait.webp",
-      "key": "lexicon/storm/s1-6-word-portrait.webp",
-      "word": "storm",
-      "line": "storm",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.443,
-      "reason": "storm symbolizes struggle and resilience, light represents hope and transformation",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s5-4-dream-collage.webp",
-      "key": "lexicon/storm/s5-4-dream-collage.webp",
-      "word": "storm",
-      "line": "storm",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.442,
-      "reason": "Powerful imagery of defiance against chaos aligns with resilience and transformation theme",
-      "recipe": "4-dream-collage",
       "featured": true
     },
     {
@@ -307,7 +307,7 @@
       "t": 42.96,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and themes of tr",
+      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and transformati",
       "recipe": "3-anime",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 38.96,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "Symbolizes defiance and strength through clenched fists",
+      "reason": "Symbolizes defiance and strength through raised fists, fits song's themes of resilience an",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -399,7 +399,7 @@
   "byWord": {
     "battle-made": [
       0,
-      13
+      14
     ],
     "wounds": [
       1
@@ -410,48 +410,48 @@
     "chains": [
       3,
       6,
-      10
+      11
     ],
     "break": [
       4,
-      17,
+      18,
       22
     ],
     "chain": [
       5,
       27
     ],
-    "body": [
+    "storm": [
       7,
+      10,
+      20
+    ],
+    "body": [
+      8,
       26
     ],
     "barricade": [
-      8,
+      9,
       29
     ],
-    "storm": [
-      9,
-      20,
-      21
-    ],
     "wreckage": [
-      11,
-      16
+      12,
+      17
     ],
     "armor": [
-      12,
+      13,
       23,
       25
     ],
     "battle": [
-      14
+      15
     ],
     "fire": [
-      15,
-      18
+      16,
+      19
     ],
     "boulder": [
-      19
+      21
     ],
     "knife": [
       24

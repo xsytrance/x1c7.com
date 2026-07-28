@@ -1,25 +1,46 @@
 {
- "v": 2,
- "acts": [
-  {
-   "start": 53,
-   "end": 78,
-   "label": "EL FALLO DE CINE",
-   "why": "The Pre-Chorus tension culminates into the Chorus where the artist explicitly rejects 'amo"
+  "v": 2,
+  "acts": [
+    {
+      "start": 58.5,
+      "end": 69.6,
+      "label": "SIN RECETA",
+      "why": "She rejects a formula and asks for simple presence: no performance, only come." 
+    },
+    {
+      "start": 69.68,
+      "end": 95.6,
+      "label": "NO AMOR DE CINE",
+      "why": "The central hook contrasts theatrical romance with the person who remains after the lights go out." 
+    },
+    {
+      "start": 96.6,
+      "end": 103.5,
+      "label": "AMOR DE VERDAD",
+      "why": "The close turns the thesis into a boundary: no invented hours, no disappearing parade, no burning her out." 
+    }
+  ],
+  "modes": [
+    { "start": 58.5, "end": 69.55, "mode": "phrase" },
+    { "start": 69.68, "end": 72.5, "mode": "dynamic" },
+    { "start": 73.55, "end": 88.6, "mode": "phrase" },
+    { "start": 88.8, "end": 95.7, "mode": "dynamic" },
+    { "start": 96.55, "end": 103.5, "mode": "phrase" }
+  ],
+  "words": {
+    "cine": "glitch",
+    "queda": "cling",
+    "apaga": "tvoff",
+    "agua": "liquid",
+    "calor": "melt",
+    "verdad": "slam",
+    "horas": "echo",
+    "gasolina": "burn"
   },
-  {
-   "start": 97,
-   "end": 120,
-   "label": "LA VERDAD CRUDA",
-   "why": "The Bridge section hits an angry realization of futility. The lyrics demand self-preservat"
+  "deck": {
+    "density": 1.65,
+    "glow": 0.4,
+    "grain": 0.38,
+    "vignette": 0.42
   }
- ],
- "words": {
-  "temblé": "tremor",
-  "cine": "glitch",
-  "agua": "melt",
-  "verdad": "slam",
-  "guárdala": "freeze",
-  "porco": "redact"
- }
 }

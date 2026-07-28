@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-07-19T10:51:16.910Z",
+  "generatedAt": "2026-07-25T11:16:05.265Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 727,
-    "judged": 21,
-    "accepted": 19,
-    "kept": 19
+    "candidates": 809,
+    "judged": 27,
+    "accepted": 25,
+    "kept": 25
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 36.711,
       "score": 1,
       "cosine": 0.532,
-      "reason": "Symbolism aligns with toxic love, emotional wreckage, and resolute self-preservation.",
+      "reason": "Symbolism aligns with toxic love and emotional wreckage",
       "recipe": "6-film-still",
       "featured": true
     },
@@ -60,6 +60,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
+      "key": "lexicon/silence/s0-1.webp",
+      "word": "silence",
+      "line": "silence",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.42,
+      "reason": "Symbolizes fragile hope and quiet resistance in a dark, isolated space",
+      "recipe": "1",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
       "key": "lexicon/fire/s5-6-word-portrait.webp",
       "word": "fire",
@@ -72,6 +84,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s3-3-word-portrait.webp",
+      "key": "lexicon/rain/s3-3-word-portrait.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.515,
+      "reason": "Melancholic mood and urban solitude align with song's themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s3-1-analog.webp",
       "key": "lexicon/glass/s3-1-analog.webp",
       "word": "glass",
@@ -81,6 +105,42 @@
       "cosine": 0.472,
       "reason": "Symbolizes fragility, isolation, and emotional barriers aligning with song's themes",
       "recipe": "1-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/thunder/s0-6-word-portrait.webp",
+      "key": "lexicon/thunder/s0-6-word-portrait.webp",
+      "word": "thunder",
+      "line": "く ない I know you miss the thunder 夜 が う る さ す ぎ る から",
+      "t": 47.903,
+      "score": 0.9,
+      "cosine": 0.456,
+      "reason": "Powerful storm imagery matches song's intense emotional themes and resolute mood",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/thunder/s1-6-word-portrait.webp",
+      "key": "lexicon/thunder/s1-6-word-portrait.webp",
+      "word": "thunder",
+      "line": "く ない I know you miss the thunder 夜 が う る さ す ぎ る から",
+      "t": 47.903,
+      "score": 0.9,
+      "cosine": 0.434,
+      "reason": "Storm imagery matches emotional intensity and themes of turmoil and boundaries",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/thunder/s2-4-word-portrait.webp",
+      "key": "lexicon/thunder/s2-4-word-portrait.webp",
+      "word": "thunder",
+      "line": "く ない I know you miss the thunder 夜 が う る さ す ぎ る から",
+      "t": 47.903,
+      "score": 0.9,
+      "cosine": 0.431,
+      "reason": "Stormy imagery matches emotional intensity and themes of danger and power",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -105,18 +165,6 @@
       "cosine": 0.426,
       "reason": "Matches melancholic mood and themes of silence and introspection",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
-      "key": "lexicon/silence/s0-1.webp",
-      "word": "silence",
-      "line": "silence",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.42,
-      "reason": "Symbolizes fragile hope and quiet resistance in a dark, isolated space",
-      "recipe": "1",
       "featured": true
     },
     {
@@ -175,7 +223,7 @@
       "t": 33.08,
       "score": 0.9,
       "cosine": 0.362,
-      "reason": "Resonates with resolute mood and themes of boundaries",
+      "reason": "Resolute, melancholic mood matches solitary figure in industrial space",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -199,7 +247,19 @@
       "t": 36.711,
       "score": 0.85,
       "cosine": 0.497,
-      "reason": "Symbolism aligns with fire as defiance and resilience, matching the song's resolute mood a",
+      "reason": "Symbolism aligns with fire's duality, resilience matches theme, mood fits melancholic defi",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s6-4-word-portrait.webp",
+      "key": "lexicon/rain/s6-4-word-portrait.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.85,
+      "cosine": 0.496,
+      "reason": "Melancholic and reflective, aligns with song's mood and themes of emotional distance.",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -223,8 +283,20 @@
       "t": 259.832,
       "score": 0.85,
       "cosine": 0.368,
-      "reason": "Symbolizes hollow digital love, fits melancholic resolute mood",
+      "reason": "Matches melancholic mood, digital isolation, and hollow connections",
       "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s2-5-word-portrait.webp",
+      "key": "lexicon/rain/s2-5-word-portrait.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.536,
+      "reason": "Serene rain aligns with melancholic mood and self-preservation theme.",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -235,7 +307,7 @@
       "t": 294.139,
       "score": 0.8,
       "cosine": 0.439,
-      "reason": "Symbolizes hope and warmth amidst emotional isolation and resolute self-preservation",
+      "reason": "Symbolizes hope and warmth amid emotional isolation and resolute self-preservation",
       "recipe": "5-dark-surreal",
       "featured": true
     }
@@ -243,36 +315,46 @@
   "byWord": {
     "fire": [
       0,
-      4,
-      15
+      5,
+      19
     ],
     "light": [
       1,
       2,
-      18
+      24
     ],
     "silence": [
       3,
-      7,
-      8
+      4,
+      12
+    ],
+    "rain": [
+      6,
+      20,
+      23
     ],
     "glass": [
-      5,
-      14,
-      16
+      7,
+      18,
+      21
+    ],
+    "thunder": [
+      8,
+      9,
+      10
     ],
     "slow": [
-      6,
-      10,
-      11
+      11,
+      14,
+      15
     ],
     "beat": [
-      9,
-      13
+      13,
+      17
     ],
     "love": [
-      12,
-      17
+      16,
+      22
     ]
   }
 }

@@ -1,16 +1,28 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-07-24T10:16:22.919Z",
+  "generatedAt": "2026-07-25T11:04:37.074Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1576,
-    "judged": 52,
-    "accepted": 44,
+    "candidates": 1696,
+    "judged": 55,
+    "accepted": 48,
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s23-1-word-portrait.webp",
+      "key": "lexicon/lights/s23-1-word-portrait.webp",
+      "word": "lights",
+      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
+      "t": 34.853,
+      "score": 0.95,
+      "cosine": 0.567,
+      "reason": "Matches city lights lyric, romantic urban energy, neon fits retro-futurism",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
       "key": "lexicon/glow/s7-1-word-portrait.webp",
@@ -19,7 +31,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.55,
-      "reason": "Matches playful intimacy, golden light, urban setting, and connection",
+      "reason": "Matches glow, intimacy, and golden light with song's playful, romantic mood",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -31,8 +43,20 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Matches neon, speed, retro-futurism, and playful energy",
+      "reason": "Matches neon, speed, retro-futurism, and playful energy of the song",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s2-6-word-neon.webp",
+      "key": "lexicon/fast/s2-6-word-neon.webp",
+      "word": "fast",
+      "line": "I could be that somebody Fast enough, we can’t get caught now Baby, keep",
+      "t": 15.569,
+      "score": 0.95,
+      "cosine": 0.531,
+      "reason": "Urban neon aligns with retro-futurism and speed themes",
+      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -55,7 +79,7 @@
       "t": 34.853,
       "score": 0.95,
       "cosine": 0.527,
-      "reason": "Matches city lights, nostalgia, and playful energy with retro-futurism",
+      "reason": "Matches city lights, nostalgia, energy, and retro-futurism",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -91,8 +115,20 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Matches speed, urban energy, and romantic pursuit themes",
+      "reason": "Matches speed, urban energy, and playful romance with neon and motion",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-2-concept-art.webp",
+      "key": "lexicon/glow/s19-2-concept-art.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.95,
+      "cosine": 0.493,
+      "reason": "Matches playful romance, neon lights fit retro-futurism and summer vibe",
+      "recipe": "2-concept-art",
       "featured": true
     },
     {
@@ -105,6 +141,30 @@
       "cosine": 0.492,
       "reason": "Matches soaring energy, upward motion, and adventurous spirit of the song",
       "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s2-1-word-neon.webp",
+      "key": "lexicon/running/s2-1-word-neon.webp",
+      "word": "running",
+      "line": "No checkpoints, we don’t save and quit Just keep running through the city lights You and me, yeah, we about",
+      "t": 33.867,
+      "score": 0.95,
+      "cosine": 0.487,
+      "reason": "Urban neon fits the fast, energetic, retro-futurist vibe",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-1-film-still.webp",
+      "key": "lexicon/glow/s19-1-film-still.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.95,
+      "cosine": 0.481,
+      "reason": "Matches playful romance, intimacy, and vibrant energy of the song",
+      "recipe": "1-film-still",
       "featured": true
     },
     {
@@ -127,31 +187,7 @@
       "t": 96.27,
       "score": 0.95,
       "cosine": 0.467,
-      "reason": "Matches energetic, retro club vibe and confident movement in the song",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s8-6-stickers.webp",
-      "key": "lexicon/glow/s8-6-stickers.webp",
-      "word": "glow",
-      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
-      "t": 101.715,
-      "score": 0.95,
-      "cosine": 0.46,
-      "reason": "Matches playful, vibrant, and retro-futuristic energy of the song",
-      "recipe": "6-stickers",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-4-word-portrait.webp",
-      "key": "lexicon/glow/s6-4-word-portrait.webp",
-      "word": "glow",
-      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
-      "t": 101.715,
-      "score": 0.95,
-      "cosine": 0.454,
-      "reason": "Matches neon energy, performance vibe, and retro-futurism",
+      "reason": "Matches energetic, stylish club vibe and retro-futurism",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -175,7 +211,7 @@
       "t": 87.284,
       "score": 0.95,
       "cosine": 0.448,
-      "reason": "Matches neon, energy, romance, and retro-futurism",
+      "reason": "Matches neon, urban, playful, and futuristic romance themes",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -252,18 +288,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s2-6-word-neon.webp",
-      "key": "lexicon/fast/s2-6-word-neon.webp",
-      "word": "fast",
-      "line": "I could be that somebody Fast enough, we can’t get caught now Baby, keep",
-      "t": 15.569,
-      "score": 0.9,
-      "cosine": 0.531,
-      "reason": "Urban neon aligns with retro-futurism and speed themes",
-      "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s5-2-cinema.webp",
       "key": "lexicon/running/s5-2-cinema.webp",
       "word": "running",
@@ -285,18 +309,6 @@
       "cosine": 0.498,
       "reason": "Matches summer, sky, freedom, and optimism in the song's playful, nostalgic mood.",
       "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s2-1-word-neon.webp",
-      "key": "lexicon/running/s2-1-word-neon.webp",
-      "word": "running",
-      "line": "No checkpoints, we don’t save and quit Just keep running through the city lights You and me, yeah, we about",
-      "t": 33.867,
-      "score": 0.9,
-      "cosine": 0.487,
-      "reason": "Urban energy, neon, motion align with song's vibe and themes",
-      "recipe": "1-word-neon",
       "featured": true
     },
     {
@@ -343,7 +355,7 @@
       "t": 34.538,
       "score": 0.9,
       "cosine": 0.448,
-      "reason": "Celebratory urban scene matches song's energetic, playful mood and city lyric",
+      "reason": "Celebratory urban scene matches song's energetic, playful mood and city theme",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 87.284,
       "score": 0.9,
       "cosine": 0.445,
-      "reason": "Playful, joyful, and celebratory imagery fits the song's energetic and nostalgic vibe.",
+      "reason": "Playful, joyful, and celebratory image fits the song's upbeat and romantic tone.",
       "recipe": "4-stickers",
       "featured": true
     },
@@ -367,96 +379,86 @@
       "t": 25.647,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "Nostalgic, adventurous night scene fits song's retro-futurism and journey themes",
+      "reason": "Nostalgic, adventurous night scene fits the song's retro-futurism and journey themes.",
       "recipe": "6-film-still",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s14-6-word-portrait.webp",
-      "key": "lexicon/heart/s14-6-word-portrait.webp",
-      "word": "heart",
-      "line": "Green light, go, we on a mission Heart in overdrive, no hesitation Spin through the night with",
-      "t": 22.918,
-      "score": 0.85,
-      "cosine": 0.534,
-      "reason": "Matches playful energy, passion, and motion; fits summer and stage vibe",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s4-1-word-portrait.webp",
-      "key": "lexicon/run/s4-1-word-portrait.webp",
-      "word": "run",
-      "line": "too smooth, they can’t catch us You know how we run it Dum da da da dum dum",
-      "t": 92.741,
-      "score": 0.85,
-      "cosine": 0.476,
-      "reason": "Matches energy, motion, and determination in a playful, fast-paced context",
-      "recipe": "1-word-portrait",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/touch/s1-2-dream-collage.webp",
+      "key": "lexicon/touch/s1-2-dream-collage.webp",
+      "word": "touch",
+      "line": "on springs, we rise so high Nothing can stop us, we touch the sky You’re my boost, I’m your invincible",
+      "t": 83.381,
+      "score": 0.9,
+      "cosine": 0.418,
+      "reason": "Dreamy and hopeful imagery fits the playful, romantic, and nostalgic mood of the song.",
+      "recipe": "2-dream-collage",
       "featured": true
     }
   ],
   "byWord": {
-    "glow": [
+    "lights": [
       0,
-      10,
-      11
+      4,
+      5
+    ],
+    "glow": [
+      1,
+      9,
+      12
     ],
     "fast": [
-      1,
-      6,
-      20
-    ],
-    "lights": [
       2,
-      3
-    ],
-    "heart": [
-      4,
-      5,
-      30
-    ],
-    "rise": [
-      7,
-      25
-    ],
-    "save": [
+      3,
       8
     ],
-    "move": [
-      9
+    "heart": [
+      6,
+      7
     ],
-    "city": [
-      12,
-      26,
-      27
-    ],
-    "love": [
-      13,
-      14,
-      28
-    ],
-    "night": [
-      15,
-      29
-    ],
-    "light": [
-      16
-    ],
-    "high": [
-      17,
-      18
-    ],
-    "sky": [
-      19,
-      22
+    "rise": [
+      10,
+      26
     ],
     "running": [
-      21,
+      11,
       23
     ],
+    "save": [
+      13
+    ],
+    "move": [
+      14
+    ],
+    "city": [
+      15,
+      27,
+      28
+    ],
+    "love": [
+      16,
+      17,
+      29
+    ],
+    "night": [
+      18,
+      30
+    ],
+    "light": [
+      19
+    ],
+    "high": [
+      20,
+      21
+    ],
+    "sky": [
+      22,
+      24
+    ],
     "run": [
-      24,
+      25
+    ],
+    "touch": [
       31
     ]
   }

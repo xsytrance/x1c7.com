@@ -1,0 +1,97 @@
+[
+  {
+    "id": "neon-teeth",
+    "planet": {
+      "analysis": {
+        "summary": "A dangerous, magnetic attraction between two individuals who are drawn to each other's intensity despite knowing the risks, symbolized by neon teeth and ultraviolet glow.",
+        "overallMood": "dangerous sexy nocturnal intense",
+        "themes": [
+          "magnetic attraction",
+          "self-destructive allure",
+          "neon symbolism",
+          "ultraviolet vulnerability",
+          "control vs surrender",
+          "nocturnal intensity"
+        ],
+        "palette": [
+          "#0f0c1b",
+          "#1a1a2e",
+          "#ff00ff",
+          "#00ff00"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "mysterious",
+            "intensity": 0.3,
+            "colorHint": "#0f0c1b",
+            "start": 11.92
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "intense",
+            "intensity": 0.8,
+            "colorHint": "#1a1a2e",
+            "start": 11.92
+          },
+          {
+            "name": "Chorus",
+            "emotion": "dangerous",
+            "intensity": 0.9,
+            "colorHint": "#ff00ff",
+            "start": 44.56
+          },
+          {
+            "name": "Bridge",
+            "emotion": "anxious",
+            "intensity": 0.6,
+            "colorHint": "#00ff00",
+            "start": 140.2
+          },
+          {
+            "name": "Verse 2",
+            "emotion": "conflicted",
+            "intensity": 0.7,
+            "colorHint": "#1a1a2e",
+            "start": 167.26
+          }
+        ],
+        "keywords": [
+          {
+            "word": "neon teeth",
+            "emotion": "intense",
+            "imageryPrompt": "glowing electric blue teeth against black velvet, sharp and dangerous"
+          },
+          {
+            "word": "ultraviolet",
+            "emotion": "mysterious",
+            "imageryPrompt": "violet light filtering through smoke, revealing hidden textures"
+          },
+          {
+            "word": "poison",
+            "emotion": "dangerous",
+            "imageryPrompt": "liquid silver on a black surface, shimmering with hidden toxicity"
+          },
+          {
+            "word": "chem",
+            "emotion": "intense",
+            "imageryPrompt": "chemical reaction in neon tubes, electric blue and violet hues"
+          },
+          {
+            "word": "neon",
+            "emotion": "sexy",
+            "imageryPrompt": "glowing pink and purple neon signs reflecting on wet pavement"
+          },
+          {
+            "word": "bass",
+            "emotion": "intense",
+            "imageryPrompt": "deep bass vibrations in the air, making the floor tremble"
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]

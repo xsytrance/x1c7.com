@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-07-24T10:11:29.806Z",
+  "generatedAt": "2026-07-25T11:00:22.524Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2091,
+    "candidates": 2148,
     "judged": 64,
     "accepted": 64,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 5.167,
       "score": 1,
       "cosine": 0.436,
-      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope",
+      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope.",
       "recipe": "4-oil-light",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 136.32,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes.",
+      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.461,
-      "reason": "Intimate glow aligns with empowerment and hope in summer transformation",
+      "reason": "Intimate glow symbolizes connection and hope, fits summer transformation and empowerment.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolizes hope and clarity in transformation journey",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 150.825,
       "score": 0.95,
       "cosine": 0.435,
-      "reason": "Matches summer, hope, and clarity in the song's transformation theme",
+      "reason": "Matches the hopeful, open, and transformative mood of the song",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -187,8 +187,20 @@
       "t": 222.308,
       "score": 0.95,
       "cosine": 0.421,
-      "reason": "Symbolizes energy, renewal, and empowerment fitting the song's theme",
+      "reason": "Symbolizes energy, renewal, and ambition fitting the song's theme",
       "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s4-2-oil-light.webp",
+      "key": "lexicon/neon/s4-2-oil-light.webp",
+      "word": "neon",
+      "line": "in the morning rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint",
+      "t": 158.96,
+      "score": 0.95,
+      "cosine": 0.414,
+      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth themes",
+      "recipe": "2-oil-light",
       "featured": true
     },
     {
@@ -199,7 +211,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.397,
-      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes.",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +259,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Symbolizes hope, transformation, and light aligning with song's themes",
+      "reason": "Symbolizes hope, transformation, and light aligning with summer and empowerment",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -276,6 +288,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s10-1-word-portrait.webp",
+      "key": "lexicon/different/s10-1-word-portrait.webp",
+      "word": "different",
+      "line": "This summer feel different already Come on",
+      "t": 9.729,
+      "score": 0.95,
+      "cosine": 0.378,
+      "reason": "Reflective, solitary, and symbolic of transformation and new perspective.",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s9-6-word-portrait.webp",
       "key": "lexicon/dream/s9-6-word-portrait.webp",
       "word": "dream",
@@ -295,7 +319,7 @@
       "t": 228.821,
       "score": 0.95,
       "cosine": 0.368,
-      "reason": "Digital transformation and empowerment align with the song's themes of change and self-imp",
+      "reason": "Digital transformation and empowerment align with the song's themes of growth and change.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -307,7 +331,7 @@
       "t": 100.32,
       "score": 0.95,
       "cosine": 0.36,
-      "reason": "Urban glow symbolizes opportunity, rain signifies transformation, and nighttime energy mat",
+      "reason": "Urban glow symbolizes opportunity, rain signifies transformation, and night reflects self-",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -319,20 +343,8 @@
       "t": 9.172,
       "score": 0.9,
       "cosine": 0.418,
-      "reason": "Captures summer's vibrancy and transformational energy",
+      "reason": "Captures summer's energy and transformational mood",
       "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s4-2-oil-light.webp",
-      "key": "lexicon/neon/s4-2-oil-light.webp",
-      "word": "neon",
-      "line": "in the morning rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint",
-      "t": 158.96,
-      "score": 0.9,
-      "cosine": 0.414,
-      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth.",
-      "recipe": "2-oil-light",
       "featured": true
     },
     {
@@ -355,7 +367,7 @@
       "t": 159.52,
       "score": 0.9,
       "cosine": 0.403,
-      "reason": "Retro club scene matches summer energy and transformation theme",
+      "reason": "fits summer energy, transformation, and empowerment",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 136.32,
       "score": 0.9,
       "cosine": 0.396,
-      "reason": "Symbolism aligns with transformation and ambition",
+      "reason": "Symbolizes passion, obstacles, and hope align with transformation and empowerment",
       "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s2-3-stickers.webp",
-      "key": "lexicon/neon/s2-3-stickers.webp",
-      "word": "neon",
-      "line": "in the morning rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint",
-      "t": 158.96,
-      "score": 0.9,
-      "cosine": 0.394,
-      "reason": "Neon energy matches summer transformation and empowerment vibe",
-      "recipe": "3-stickers",
       "featured": true
     }
   ],
@@ -409,57 +409,57 @@
     ],
     "heart": [
       3,
-      30
+      31
     ],
     "glow": [
       4,
-      19,
-      27
+      20,
+      28
     ],
     "summer": [
       5,
       6,
-      25
+      27
     ],
     "light": [
       8,
       12,
-      15
+      16
     ],
     "flame": [
       11,
       13,
       14
     ],
+    "neon": [
+      15
+    ],
     "move": [
-      16,
       17,
-      20
-    ],
-    "different": [
-      18
-    ],
-    "wave": [
+      18,
       21
     ],
-    "dream": [
-      22
-    ],
-    "code": [
+    "different": [
+      19,
       23
     ],
-    "glows": [
+    "wave": [
+      22
+    ],
+    "dream": [
       24
     ],
-    "neon": [
-      26,
-      31
+    "code": [
+      25
+    ],
+    "glows": [
+      26
     ],
     "lights": [
-      28
+      29
     ],
     "ocean": [
-      29
+      30
     ]
   }
 }

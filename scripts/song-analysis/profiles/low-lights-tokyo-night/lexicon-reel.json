@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-07-19T10:57:35.997Z",
+  "generatedAt": "2026-07-25T11:21:20.918Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1005,
+    "candidates": 1051,
     "judged": 35,
     "accepted": 32,
     "kept": 32
@@ -60,6 +60,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
+      "key": "lexicon/cold/s2-6-word-neon.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 1,
+      "cosine": 0.614,
+      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-3-neon-night.webp",
       "key": "lexicon/cold/s2-3-neon-night.webp",
       "word": "cold",
@@ -91,7 +103,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.695,
-      "reason": "matches bittersweet mood, urban isolation, and nostalgic Tokyo nightlife",
+      "reason": "matches bittersweet mood, Tokyo nightlife, emotional weight",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -103,7 +115,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.679,
-      "reason": "matches neon melancholy, loneliness, and bittersweet mood",
+      "reason": "matches neon melancholy, urban isolation, and bittersweet mood",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -115,7 +127,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.671,
-      "reason": "Captures melancholy, neon, and loneliness of Tokyo nightlife",
+      "reason": "Captures melancholy, neon reflections, and loneliness in Tokyo rain",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -163,7 +175,7 @@
       "t": 41.378,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "nostalgic, melancholic, urban isolation, bittersweet",
+      "reason": "nostalgic, melancholic, urban isolation, symbolic of lost connection",
       "recipe": "2",
       "featured": true
     },
@@ -177,18 +189,6 @@
       "cosine": 0.627,
       "reason": "matches bittersweet mood, urban isolation, hidden grief",
       "recipe": "5-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
-      "key": "lexicon/cold/s2-6-word-neon.webp",
-      "word": "cold",
-      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
-      "t": 100.02,
-      "score": 0.95,
-      "cosine": 0.614,
-      "reason": "matches neon melancholy, urban isolation, and cold symbolism",
-      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -211,7 +211,7 @@
       "t": 46.661,
       "score": 0.95,
       "cosine": 0.6,
-      "reason": "fits mood and themes with neon melancholy and isolation",
+      "reason": "Matches neon melancholy, isolation, and hidden grief in a rainy Tokyo setting.",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 95.469,
       "score": 0.95,
       "cosine": 0.49,
-      "reason": "Matches urban isolation, melancholy, and neon atmosphere of the song",
+      "reason": "Captures urban isolation, melancholy, and transient beauty",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Captures urban melancholy, loneliness, and nighttime symbolism",
+      "reason": "Matches melancholic urban night, loneliness, and symbolic use of night",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 64.494,
       "score": 0.9,
       "cosine": 0.524,
-      "reason": "Captures neon melancholy, loneliness, and symbolic tension between public and private self",
+      "reason": "Captures melancholy, neon, isolation, and symbolic tension",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -324,6 +324,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
+      "key": "lexicon/phone/s0-1.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.85,
+      "cosine": 0.483,
+      "reason": "Captures loneliness and digital connection in a nighttime setting",
+      "recipe": "1",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s0-2-dark-surreal.webp",
       "key": "lexicon/home/s0-2-dark-surreal.webp",
       "word": "home",
@@ -343,20 +355,8 @@
       "t": 34.424,
       "score": 0.85,
       "cosine": 0.434,
-      "reason": "Matches melancholy, abandonment, and nostalgia of the song",
+      "reason": "Nostalgic, desolate interior fits bittersweet mood and themes of hidden grief",
       "recipe": "1-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
-      "key": "lexicon/phone/s0-1.webp",
-      "word": "phone",
-      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
-      "t": 41.378,
-      "score": 0.8,
-      "cosine": 0.483,
-      "reason": "Captures loneliness and digital connection in a nighttime setting",
-      "recipe": "1",
       "featured": true
     },
     {
@@ -367,7 +367,7 @@
       "t": 46.661,
       "score": 0.7,
       "cosine": 0.488,
-      "reason": "Neon-lit cityscape matches Tokyo nightlife; 'body' ties to lyric, but lacks emotional dept",
+      "reason": "Neon and urban setting fit, but lacks emotional depth of grief and isolation",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 47.88,
       "score": 0.7,
       "cosine": 0.477,
-      "reason": "Matches melancholy and coldness, but lacks urban Tokyo context",
+      "reason": "Matches melancholic mood and symbolism of coldness, but lacks urban Tokyo setting",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -399,8 +399,8 @@
   "byWord": {
     "lights": [
       0,
-      5,
-      11
+      6,
+      12
     ],
     "party": [
       1,
@@ -413,22 +413,22 @@
     ],
     "cold": [
       4,
-      13,
+      5,
       14
     ],
     "slow": [
-      6,
-      9,
+      7,
+      10,
       17
     ],
     "light": [
-      7,
       8,
-      10
+      9,
+      11
     ],
     "phone": [
-      12,
-      28
+      13,
+      26
     ],
     "ice": [
       15,
@@ -450,8 +450,8 @@
       24
     ],
     "home": [
-      26,
-      27
+      27,
+      28
     ]
   }
 }

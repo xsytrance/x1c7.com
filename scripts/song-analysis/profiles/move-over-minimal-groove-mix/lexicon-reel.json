@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-07-19T11:04:09.810Z",
+  "generatedAt": "2026-07-25T11:24:15.762Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 670,
+    "candidates": 749,
     "judged": 25,
     "accepted": 19,
     "kept": 19
@@ -67,7 +67,7 @@
       "t": 37.802,
       "score": 1,
       "cosine": 0.584,
-      "reason": "Perfectly aligns with retro club aesthetic and summer night energy",
+      "reason": "Perfect fit with retro club, lights, and confident energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.584,
-      "reason": "Perfectly aligns with dance floor dominance and summer energy",
+      "reason": "perfectly aligns with summer energy and dance floor dominance",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
+      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
+      "reason": "Perfect fit for retro club, confidence, and individuality",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 25.565,
       "score": 1,
       "cosine": 0.478,
-      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
+      "reason": "Perfectly aligns with summer night energy and retro club aesthetic",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.56,
-      "reason": "spotlight, silhouettes, retro club, smooth energy match song's themes",
+      "reason": "spotlight and retro club align with song's themes and mood",
       "recipe": "2-dark-surreal",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "retro club, spotlights, stylish mood align with song",
+      "reason": "retro club, spotlights, stylish mood align perfectly",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
+      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -216,18 +216,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
-      "key": "lexicon/different/s8-1-word-neon.webp",
-      "word": "different",
-      "line": "Just let that bassline hit This summer different You can tell by the drip",
-      "t": 22.767,
-      "score": 0.9,
-      "cosine": 0.393,
-      "reason": "Urban neon aligns with retro club and summer night energy",
-      "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
       "key": "lexicon/somebody/s0-1.webp",
       "word": "somebody",
@@ -237,6 +225,18 @@
       "cosine": 0.39,
       "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
       "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s10-5-cinema.webp",
+      "key": "lexicon/summer/s10-5-cinema.webp",
+      "word": "summer",
+      "line": "heat in the room Move over Summer came through smooth Dont talk too much",
+      "t": 16.452,
+      "score": 0.7,
+      "cosine": 0.472,
+      "reason": "Captures summer warmth and urban vibe but lacks dance floor energy",
+      "recipe": "5-cinema",
       "featured": true
     }
   ],
@@ -248,8 +248,7 @@
     ],
     "different": [
       3,
-      10,
-      17
+      10
     ],
     "lights": [
       4,
@@ -273,10 +272,11 @@
     ],
     "summer": [
       15,
-      16
+      16,
+      18
     ],
     "somebody": [
-      18
+      17
     ]
   }
 }

@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-07-19T10:48:13.377Z",
+  "generatedAt": "2026-07-25T11:12:33.369Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 872,
-    "judged": 30,
-    "accepted": 27,
-    "kept": 27
+    "candidates": 1194,
+    "judged": 48,
+    "accepted": 42,
+    "kept": 32
   },
   "reel": [
     {
@@ -31,8 +31,20 @@
       "t": 1.38,
       "score": 1,
       "cosine": 0.452,
-      "reason": "Matches nightclub vibe, celebration, and euphoric mood",
+      "reason": "Matches nightclub vibe, celebration, and nighttime intimacy",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-1-film-still.webp",
+      "key": "lexicon/glow/s19-1-film-still.webp",
+      "word": "glow",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "score": 0.98,
+      "cosine": 0.558,
+      "reason": "Matches intimate dance, nightclub, glowing lights, euphoric mood",
+      "recipe": "1-film-still",
       "featured": true
     },
     {
@@ -43,7 +55,7 @@
       "t": 35.225,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Intimate, warm, and cinematic; aligns with nighttime escapism and shared connection.",
+      "reason": "Intimate, warm, and cinematic; aligns with nighttime connection and glow symbolism",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -84,15 +96,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s1-3-word-portrait.webp",
-      "key": "lexicon/glow/s1-3-word-portrait.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-5-photo.webp",
+      "key": "lexicon/glow/s19-5-photo.webp",
       "word": "glow",
       "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
       "t": 35.225,
       "score": 0.95,
-      "cosine": 0.545,
-      "reason": "Euphoric intimacy through light in a dim setting matches song's mood and themes",
-      "recipe": "3-word-portrait",
+      "cosine": 0.558,
+      "reason": "Intimate club embrace matches song's nighttime intimacy and glow theme",
+      "recipe": "5-photo",
       "featured": true
     },
     {
@@ -103,7 +115,7 @@
       "t": 99.823,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "Urban nightlife, intimacy, and euphoria align with the song's theme.",
+      "reason": "Urban nightlife, intimacy, and neon glow align with song's mood and themes",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -127,7 +139,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Matches party atmosphere, warmth, and retro energy",
+      "reason": "Matches party mood, heat symbolism, retro club vibe",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -163,7 +175,7 @@
       "t": 1.38,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Euphoric, intimate, warm crowd under string lights fits the song's nighttime party theme.",
+      "reason": "Euphoric, intimate, warm nighttime party scene with crowds and lights matches song's mood ",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -192,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s4-5-word-portrait.webp",
+      "key": "lexicon/midnight/s4-5-word-portrait.webp",
+      "word": "midnight",
+      "line": "with the party Party after midnight Smooth like the chords And the",
+      "t": 3.402,
+      "score": 0.95,
+      "cosine": 0.502,
+      "reason": "Intimate moment under spotlight fits midnight lyric and euphoric mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s3-1-word-portrait.webp",
       "key": "lexicon/love/s3-1-word-portrait.webp",
       "word": "love",
@@ -216,6 +240,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dawn/s2-6-neon-sign.webp",
+      "key": "lexicon/dawn/s2-6-neon-sign.webp",
+      "word": "dawn",
+      "line": "whisper Promise that youll stay Till the dawn gets crisper Even when its quiet",
+      "t": 50.875,
+      "score": 0.95,
+      "cosine": 0.481,
+      "reason": "Captures dawn's electric hope in urban nightlife",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whisper/s5-5-word-neon.webp",
+      "key": "lexicon/whisper/s5-5-word-neon.webp",
+      "word": "whisper",
+      "line": "When the snare cuts I can hear your whisper Promise that youll stay Till the dawn",
+      "t": 47.996,
+      "score": 0.9,
+      "cosine": 0.541,
+      "reason": "Matches nighttime intimacy, urban seduction, and whispered promises",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
       "key": "lexicon/heat/s1-2-word-portrait.webp",
       "word": "heat",
@@ -223,7 +271,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Matches nighttime intimacy, warmth, and escapism",
+      "reason": "Matches nighttime warmth, intimacy, and escapism",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -240,6 +288,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s4-6-word-portrait.webp",
+      "key": "lexicon/city/s4-6-word-portrait.webp",
+      "word": "city",
+      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
+      "t": 100.531,
+      "score": 0.9,
+      "cosine": 0.514,
+      "reason": "Matches urban romance, golden hour, and city intimacy",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s8-5-concept-art.webp",
+      "key": "lexicon/city/s8-5-concept-art.webp",
+      "word": "city",
+      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
+      "t": 100.531,
+      "score": 0.9,
+      "cosine": 0.512,
+      "reason": "Urban intimacy, twilight mood, connection in city light",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
       "key": "lexicon/night/s7-6-word-portrait.webp",
       "word": "night",
@@ -247,7 +319,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.475,
-      "reason": "Urban night, hope, connection fit song's mood and themes",
+      "reason": "Captures nighttime intimacy and urban connection",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -283,106 +355,107 @@
       "t": 20.271,
       "score": 0.9,
       "cosine": 0.447,
-      "reason": "Surreal wave and hearts match party intimacy and euphoria",
+      "reason": "Surreal wave and hearts match euphoric, emotional party theme",
       "recipe": "1-dream-collage",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
-      "key": "lexicon/light/s25-2-anime.webp",
-      "word": "light",
-      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
-      "t": 101.146,
-      "score": 0.7,
-      "cosine": 0.521,
-      "reason": "Fits mood and theme with neon lights and cityscape",
-      "recipe": "2-anime",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s4-4-photo.webp",
+      "key": "lexicon/city/s4-4-photo.webp",
+      "word": "city",
+      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
+      "t": 100.531,
+      "score": 0.85,
+      "cosine": 0.547,
+      "reason": "Urban intimacy matches song's theme of connection in crowds",
+      "recipe": "4-photo",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s3-2-neon-night.webp",
-      "key": "lexicon/wave/s3-2-neon-night.webp",
-      "word": "wave",
-      "line": "the party Bodies in the same wave Calm but the groove Still feels like",
-      "t": 20.271,
-      "score": 0.6,
-      "cosine": 0.479,
-      "reason": "Urban chaos and neon fit the party vibe, but isolation clashes with song's intimacy",
-      "recipe": "2-neon-night",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dawn/s0-1-cinema.webp",
+      "key": "lexicon/dawn/s0-1-cinema.webp",
+      "word": "dawn",
+      "line": "whisper Promise that youll stay Till the dawn gets crisper Even when its quiet",
+      "t": 50.875,
+      "score": 0.85,
+      "cosine": 0.457,
+      "reason": "Matches dawn theme, serene mood, and intimate atmosphere",
+      "recipe": "1-cinema",
+      "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s1-2-word-neon.webp",
-      "key": "lexicon/memory/s1-2-word-neon.webp",
-      "word": "memory",
-      "line": "Then they slide away Vinyl crackle holds the memory Of this perfect day Last chord",
-      "t": 95.456,
-      "score": 0.6,
-      "cosine": 0.477,
-      "reason": "Nostalgic and urban, but lacks the euphoric intimacy of the song",
-      "recipe": "2-word-neon",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s3-2-word-portrait.webp",
-      "key": "lexicon/memory/s3-2-word-portrait.webp",
-      "word": "memory",
-      "line": "Then they slide away Vinyl crackle holds the memory Of this perfect day Last chord",
-      "t": 95.456,
-      "score": 0.6,
-      "cosine": 0.432,
-      "reason": "Nostalgic but lacks party atmosphere and euphoria",
-      "recipe": "2-word-portrait",
-      "featured": false
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/promise/s1-6-word-neon.webp",
+      "key": "lexicon/promise/s1-6-word-neon.webp",
+      "word": "promise",
+      "line": "cuts I can hear your whisper Promise that youll stay Till the dawn gets crisper",
+      "t": 48.82,
+      "score": 0.8,
+      "cosine": 0.507,
+      "reason": "Urban neon fits nighttime mood and theme of unkept promise",
+      "recipe": "6-word-neon",
+      "featured": true
     }
   ],
   "byWord": {
     "party": [
       0,
       1,
-      12
+      13
     ],
     "glow": [
       2,
-      6
+      3,
+      7
     ],
     "heat": [
-      3,
-      9,
-      17
+      4,
+      10,
+      21
     ],
     "love": [
-      4,
-      15,
-      16
-    ],
-    "light": [
       5,
-      10,
-      23
-    ],
-    "walk": [
-      7,
+      17,
       18
     ],
-    "night": [
+    "light": [
+      6,
+      11
+    ],
+    "walk": [
       8,
-      19,
-      20
+      22
     ],
-    "lights": [
-      11,
-      13,
-      14
-    ],
-    "wave": [
-      21,
-      22,
-      24
-    ],
-    "memory": [
+    "night": [
+      9,
       25,
       26
+    ],
+    "lights": [
+      12,
+      14,
+      15
+    ],
+    "midnight": [
+      16
+    ],
+    "dawn": [
+      19,
+      30
+    ],
+    "whisper": [
+      20
+    ],
+    "city": [
+      23,
+      24,
+      29
+    ],
+    "wave": [
+      27,
+      28
+    ],
+    "promise": [
+      31
     ]
   }
 }

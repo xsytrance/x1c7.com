@@ -1,0 +1,137 @@
+[
+ {
+  "id": "maybe-was-the-answer",
+  "planet": {
+   "analysis": {
+    "summary": "The song chronicles a relationship reversal where a former pursuer becomes obsessed after being rejected, shifting from playful confidence to an ominous warning about setting boundaries. It explores themes of power dynamics, the volatility of love, and the eerie persistence of someone who knows too much.",
+    "overallMood": "Confident yet haunted by obsessive attention",
+    "themes": [
+     "Power Dynamics",
+     "Obsession vs. Safety",
+     "Relationship Reversal",
+     "Eerie Persistence"
+    ],
+    "palette": [
+     "#2FC2E8",
+     "#F5E6D3",
+     "#FF4D6D",
+     "#0B1E3A"
+    ],
+    "sections": [
+     {
+      "name": "Intro",
+      "start": 0,
+      "emotion": "anticipation",
+      "intensity": 0.4,
+      "colorHint": "#3BA3FF"
+     },
+     {
+      "name": "Chorus",
+      "start": 18.5,
+      "emotion": "infatuation",
+      "intensity": 0.68,
+      "colorHint": "#3BA3FF"
+     },
+     {
+      "name": "Verse 1",
+      "start": 39.2,
+      "emotion": "amusement",
+      "intensity": 0.58,
+      "colorHint": "#3BA3FF"
+     },
+     {
+      "name": "Pre-Chorus",
+      "start": 54.7,
+      "emotion": "closure",
+      "intensity": 0.5,
+      "colorHint": "#3BA3FF"
+     },
+     {
+      "name": "Chorus",
+      "start": 59.4,
+      "emotion": "swagger",
+      "intensity": 0.7,
+      "colorHint": "#3BA3FF"
+     },
+     {
+      "name": "Verse 2",
+      "start": 69.3,
+      "emotion": "unease",
+      "intensity": 0.66,
+      "colorHint": "#FFD2B0"
+     },
+     {
+      "name": "The Flip",
+      "start": 84.6,
+      "emotion": "reversal",
+      "intensity": 0.71,
+      "colorHint": "#FFD2B0"
+     },
+     {
+      "name": "Verse 3",
+      "start": 89.4,
+      "emotion": "menace",
+      "intensity": 0.68,
+      "colorHint": "#0E2A47"
+     },
+     {
+      "name": "Bridge",
+      "start": 99.7,
+      "emotion": "clarity",
+      "intensity": 0.55,
+      "colorHint": "#0E2A47"
+     },
+     {
+      "name": "Final Chorus",
+      "start": 119.4,
+      "emotion": "panic",
+      "intensity": 0.7,
+      "colorHint": "#FFD2B0"
+     },
+     {
+      "name": "Outro",
+      "start": 146.4,
+      "emotion": "exhaustion",
+      "intensity": 0.3,
+      "colorHint": "#FFD2B0"
+     }
+    ],
+    "keywords": [
+     {
+      "word": "confident",
+      "emotion": "Empowered and amused",
+      "imageryPrompt": "A silhouette standing tall under a streetlamp at night, posture relaxed but firm, glowing with an inner golden light that pushes back shadows."
+     },
+     {
+      "word": "haunted",
+      "emotion": "Uneasy and vigilant",
+      "imageryPrompt": "Faint, ghostly footprints trailing behind a figure in a dark alleyway, the air shimmering with cold mist where they walked hours ago."
+     },
+     {
+      "word": "playful",
+      "emotion": "Light-hearted but sharp-edged",
+      "imageryPrompt": "A cat sitting on a windowsill watching rain streak glass, tail twitching rhythmically while ignoring the storm outside."
+     },
+     {
+      "word": "ominous",
+      "emotion": "Threatening and heavy",
+      "imageryPrompt": "Car headlights cutting through thick fog in an empty parking lot, casting long, distorted shadows that seem to move independently of objects."
+     },
+     {
+      "word": "warning",
+      "emotion": "Serious and final",
+      "imageryPrompt": "A red neon sign flickering against a brick wall, casting stark warnings on the pavement where wet footprints are being erased by rain."
+     },
+     {
+      "word": "obsession",
+      "emotion": "Intense and suffocating",
+      "imageryPrompt": "Dozens of identical phone notifications stacking up like a tower blocking out sunlight, creating an impenetrable wall of digital noise."
+     }
+    ]
+   },
+   "generatedAt": null
+  },
+  "ok": true,
+  "error": null
+ }
+]

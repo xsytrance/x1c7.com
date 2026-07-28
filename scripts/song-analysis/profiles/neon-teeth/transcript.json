@@ -1,0 +1,2328 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 11.92,
+      "end": 15.12,
+      "text": "I know my type, I know what I like",
+      "words": [
+        {
+          "t": 11.92,
+          "text": "I"
+        },
+        {
+          "t": 12.44,
+          "text": "know"
+        },
+        {
+          "t": 12.96,
+          "text": "my"
+        },
+        {
+          "t": 13.32,
+          "text": "type,"
+        },
+        {
+          "t": 13.88,
+          "text": "I"
+        },
+        {
+          "t": 14.02,
+          "text": "know"
+        },
+        {
+          "t": 14.2,
+          "text": "what"
+        },
+        {
+          "t": 14.44,
+          "text": "I"
+        },
+        {
+          "t": 14.74,
+          "text": "like"
+        }
+      ]
+    },
+    {
+      "start": 15.12,
+      "end": 16.44,
+      "text": "Sometimes it's the eyes,",
+      "words": [
+        {
+          "t": 15.12,
+          "text": "Sometimes"
+        },
+        {
+          "t": 15.42,
+          "text": "it's"
+        },
+        {
+          "t": 15.94,
+          "text": "the"
+        },
+        {
+          "t": 16.0,
+          "text": "eyes,"
+        }
+      ]
+    },
+    {
+      "start": 16.56,
+      "end": 17.8,
+      "text": "sometimes it's the curves",
+      "words": [
+        {
+          "t": 16.56,
+          "text": "sometimes"
+        },
+        {
+          "t": 16.74,
+          "text": "it's"
+        },
+        {
+          "t": 17.28,
+          "text": "the"
+        },
+        {
+          "t": 17.38,
+          "text": "curves"
+        }
+      ]
+    },
+    {
+      "start": 17.8,
+      "end": 19.12,
+      "text": "Nine times out of ten,",
+      "words": [
+        {
+          "t": 17.8,
+          "text": "Nine"
+        },
+        {
+          "t": 18.14,
+          "text": "times"
+        },
+        {
+          "t": 18.4,
+          "text": "out"
+        },
+        {
+          "t": 18.72,
+          "text": "of"
+        },
+        {
+          "t": 18.86,
+          "text": "ten,"
+        }
+      ]
+    },
+    {
+      "start": 19.26,
+      "end": 20.5,
+      "text": "it's the shape of her lips",
+      "words": [
+        {
+          "t": 19.26,
+          "text": "it's"
+        },
+        {
+          "t": 19.46,
+          "text": "the"
+        },
+        {
+          "t": 19.48,
+          "text": "shape"
+        },
+        {
+          "t": 19.76,
+          "text": "of"
+        },
+        {
+          "t": 19.9,
+          "text": "her"
+        },
+        {
+          "t": 20.1,
+          "text": "lips"
+        }
+      ]
+    },
+    {
+      "start": 20.5,
+      "end": 23.14,
+      "text": "How they pull me under before she says a word",
+      "words": [
+        {
+          "t": 20.5,
+          "text": "How"
+        },
+        {
+          "t": 20.74,
+          "text": "they"
+        },
+        {
+          "t": 20.86,
+          "text": "pull"
+        },
+        {
+          "t": 21.06,
+          "text": "me"
+        },
+        {
+          "t": 21.24,
+          "text": "under"
+        },
+        {
+          "t": 21.78,
+          "text": "before"
+        },
+        {
+          "t": 22.2,
+          "text": "she"
+        },
+        {
+          "t": 22.48,
+          "text": "says"
+        },
+        {
+          "t": 22.78,
+          "text": "a"
+        },
+        {
+          "t": 22.9,
+          "text": "word"
+        }
+      ]
+    },
+    {
+      "start": 23.14,
+      "end": 26.44,
+      "text": "I could walk away, but her hips press into me",
+      "words": [
+        {
+          "t": 23.14,
+          "text": "I"
+        },
+        {
+          "t": 23.46,
+          "text": "could"
+        },
+        {
+          "t": 23.54,
+          "text": "walk"
+        },
+        {
+          "t": 23.86,
+          "text": "away,"
+        },
+        {
+          "t": 24.7,
+          "text": "but"
+        },
+        {
+          "t": 25.12,
+          "text": "her"
+        },
+        {
+          "t": 25.24,
+          "text": "hips"
+        },
+        {
+          "t": 25.52,
+          "text": "press"
+        },
+        {
+          "t": 25.78,
+          "text": "into"
+        },
+        {
+          "t": 26.18,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 26.44,
+      "end": 28.62,
+      "text": "She persuades by the way that she sways",
+      "words": [
+        {
+          "t": 26.44,
+          "text": "She"
+        },
+        {
+          "t": 26.72,
+          "text": "persuades"
+        },
+        {
+          "t": 27.28,
+          "text": "by"
+        },
+        {
+          "t": 27.44,
+          "text": "the"
+        },
+        {
+          "t": 27.58,
+          "text": "way"
+        },
+        {
+          "t": 27.82,
+          "text": "that"
+        },
+        {
+          "t": 27.92,
+          "text": "she"
+        },
+        {
+          "t": 28.12,
+          "text": "sways"
+        }
+      ]
+    },
+    {
+      "start": 28.62,
+      "end": 31.26,
+      "text": "I tell myself no while I'm closing the distance",
+      "words": [
+        {
+          "t": 28.62,
+          "text": "I"
+        },
+        {
+          "t": 28.94,
+          "text": "tell"
+        },
+        {
+          "t": 29.06,
+          "text": "myself"
+        },
+        {
+          "t": 29.34,
+          "text": "no"
+        },
+        {
+          "t": 29.76,
+          "text": "while"
+        },
+        {
+          "t": 30.12,
+          "text": "I'm"
+        },
+        {
+          "t": 30.3,
+          "text": "closing"
+        },
+        {
+          "t": 30.56,
+          "text": "the"
+        },
+        {
+          "t": 30.8,
+          "text": "distance"
+        }
+      ]
+    },
+    {
+      "start": 31.26,
+      "end": 33.9,
+      "text": "Already hers before the end of the night",
+      "words": [
+        {
+          "t": 31.26,
+          "text": "Already"
+        },
+        {
+          "t": 31.9,
+          "text": "hers"
+        },
+        {
+          "t": 32.4,
+          "text": "before"
+        },
+        {
+          "t": 32.64,
+          "text": "the"
+        },
+        {
+          "t": 32.94,
+          "text": "end"
+        },
+        {
+          "t": 33.22,
+          "text": "of"
+        },
+        {
+          "t": 33.34,
+          "text": "the"
+        },
+        {
+          "t": 33.44,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 33.9,
+      "end": 36.7,
+      "text": "Black dress glowing underneath, ultraviolet",
+      "words": [
+        {
+          "t": 33.9,
+          "text": "Black"
+        },
+        {
+          "t": 34.22,
+          "text": "dress"
+        },
+        {
+          "t": 34.52,
+          "text": "glowing"
+        },
+        {
+          "t": 34.92,
+          "text": "underneath,"
+        },
+        {
+          "t": 35.7,
+          "text": "ultraviolet"
+        }
+      ]
+    },
+    {
+      "start": 36.76,
+      "end": 39.24,
+      "text": "The smile cuts clean through the smoke and the heat",
+      "words": [
+        {
+          "t": 36.76,
+          "text": "The"
+        },
+        {
+          "t": 36.94,
+          "text": "smile"
+        },
+        {
+          "t": 37.2,
+          "text": "cuts"
+        },
+        {
+          "t": 37.46,
+          "text": "clean"
+        },
+        {
+          "t": 37.86,
+          "text": "through"
+        },
+        {
+          "t": 38.18,
+          "text": "the"
+        },
+        {
+          "t": 38.28,
+          "text": "smoke"
+        },
+        {
+          "t": 38.5,
+          "text": "and"
+        },
+        {
+          "t": 38.7,
+          "text": "the"
+        },
+        {
+          "t": 38.84,
+          "text": "heat"
+        }
+      ]
+    },
+    {
+      "start": 39.24,
+      "end": 41.96,
+      "text": "I know she's the kind that could fuck up my life",
+      "words": [
+        {
+          "t": 39.24,
+          "text": "I"
+        },
+        {
+          "t": 39.5,
+          "text": "know"
+        },
+        {
+          "t": 39.74,
+          "text": "she's"
+        },
+        {
+          "t": 40.2,
+          "text": "the"
+        },
+        {
+          "t": 40.3,
+          "text": "kind"
+        },
+        {
+          "t": 40.64,
+          "text": "that"
+        },
+        {
+          "t": 40.86,
+          "text": "could"
+        },
+        {
+          "t": 41.0,
+          "text": "fuck"
+        },
+        {
+          "t": 41.24,
+          "text": "up"
+        },
+        {
+          "t": 41.36,
+          "text": "my"
+        },
+        {
+          "t": 41.54,
+          "text": "life"
+        }
+      ]
+    },
+    {
+      "start": 41.96,
+      "end": 44.56,
+      "text": "Still I lean in close to those neon teeth",
+      "words": [
+        {
+          "t": 41.96,
+          "text": "Still"
+        },
+        {
+          "t": 42.14,
+          "text": "I"
+        },
+        {
+          "t": 42.34,
+          "text": "lean"
+        },
+        {
+          "t": 42.62,
+          "text": "in"
+        },
+        {
+          "t": 42.78,
+          "text": "close"
+        },
+        {
+          "t": 43.06,
+          "text": "to"
+        },
+        {
+          "t": 43.3,
+          "text": "those"
+        },
+        {
+          "t": 43.56,
+          "text": "neon"
+        },
+        {
+          "t": 44.0,
+          "text": "teeth"
+        }
+      ]
+    },
+    {
+      "start": 44.56,
+      "end": 47.36,
+      "text": "You shine like trouble lighting up the dark",
+      "words": [
+        {
+          "t": 44.56,
+          "text": "You"
+        },
+        {
+          "t": 44.86,
+          "text": "shine"
+        },
+        {
+          "t": 45.26,
+          "text": "like"
+        },
+        {
+          "t": 45.62,
+          "text": "trouble"
+        },
+        {
+          "t": 45.9,
+          "text": "lighting"
+        },
+        {
+          "t": 46.3,
+          "text": "up"
+        },
+        {
+          "t": 46.66,
+          "text": "the"
+        },
+        {
+          "t": 46.94,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 47.36,
+      "end": 49.88,
+      "text": "One crooked smile and you're pulling me apart",
+      "words": [
+        {
+          "t": 47.36,
+          "text": "One"
+        },
+        {
+          "t": 47.66,
+          "text": "crooked"
+        },
+        {
+          "t": 48.12,
+          "text": "smile"
+        },
+        {
+          "t": 48.42,
+          "text": "and"
+        },
+        {
+          "t": 48.92,
+          "text": "you're"
+        },
+        {
+          "t": 49.04,
+          "text": "pulling"
+        },
+        {
+          "t": 49.3,
+          "text": "me"
+        },
+        {
+          "t": 49.56,
+          "text": "apart"
+        }
+      ]
+    },
+    {
+      "start": 49.88,
+      "end": 52.62,
+      "text": "You look like heaven under ultraviolet",
+      "words": [
+        {
+          "t": 49.88,
+          "text": "You"
+        },
+        {
+          "t": 50.24,
+          "text": "look"
+        },
+        {
+          "t": 50.66,
+          "text": "like"
+        },
+        {
+          "t": 51.0,
+          "text": "heaven"
+        },
+        {
+          "t": 51.36,
+          "text": "under"
+        },
+        {
+          "t": 51.72,
+          "text": "ultraviolet"
+        }
+      ]
+    },
+    {
+      "start": 52.96,
+      "end": 55.66,
+      "text": "I see the warning but I lean inside, yeah",
+      "words": [
+        {
+          "t": 52.96,
+          "text": "I"
+        },
+        {
+          "t": 53.2,
+          "text": "see"
+        },
+        {
+          "t": 53.44,
+          "text": "the"
+        },
+        {
+          "t": 53.6,
+          "text": "warning"
+        },
+        {
+          "t": 54.0,
+          "text": "but"
+        },
+        {
+          "t": 54.24,
+          "text": "I"
+        },
+        {
+          "t": 54.42,
+          "text": "lean"
+        },
+        {
+          "t": 54.66,
+          "text": "inside,"
+        },
+        {
+          "t": 55.48,
+          "text": "yeah"
+        }
+      ]
+    },
+    {
+      "start": 55.66,
+      "end": 57.88,
+      "text": "Sweet little poison sitting on your lips",
+      "words": [
+        {
+          "t": 55.66,
+          "text": "Sweet"
+        },
+        {
+          "t": 55.94,
+          "text": "little"
+        },
+        {
+          "t": 56.36,
+          "text": "poison"
+        },
+        {
+          "t": 56.72,
+          "text": "sitting"
+        },
+        {
+          "t": 57.02,
+          "text": "on"
+        },
+        {
+          "t": 57.3,
+          "text": "your"
+        },
+        {
+          "t": 57.42,
+          "text": "lips"
+        }
+      ]
+    },
+    {
+      "start": 57.88,
+      "end": 60.2,
+      "text": "She make bad decisions feel like chemistry",
+      "words": [
+        {
+          "t": 57.88,
+          "text": "She"
+        },
+        {
+          "t": 58.3,
+          "text": "make"
+        },
+        {
+          "t": 58.48,
+          "text": "bad"
+        },
+        {
+          "t": 58.86,
+          "text": "decisions"
+        },
+        {
+          "t": 59.22,
+          "text": "feel"
+        },
+        {
+          "t": 59.6,
+          "text": "like"
+        },
+        {
+          "t": 59.78,
+          "text": "chemistry"
+        }
+      ]
+    },
+    {
+      "start": 60.2,
+      "end": 63.3,
+      "text": "I know what you are, still I'm moving close",
+      "words": [
+        {
+          "t": 60.2,
+          "text": "I"
+        },
+        {
+          "t": 60.9,
+          "text": "know"
+        },
+        {
+          "t": 61.22,
+          "text": "what"
+        },
+        {
+          "t": 61.42,
+          "text": "you"
+        },
+        {
+          "t": 61.62,
+          "text": "are,"
+        },
+        {
+          "t": 62.1,
+          "text": "still"
+        },
+        {
+          "t": 62.26,
+          "text": "I'm"
+        },
+        {
+          "t": 62.68,
+          "text": "moving"
+        },
+        {
+          "t": 62.88,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 63.3,
+      "end": 65.98,
+      "text": "Just to feel the bite of those neon teeth",
+      "words": [
+        {
+          "t": 63.3,
+          "text": "Just"
+        },
+        {
+          "t": 63.82,
+          "text": "to"
+        },
+        {
+          "t": 64.08,
+          "text": "feel"
+        },
+        {
+          "t": 64.34,
+          "text": "the"
+        },
+        {
+          "t": 64.46,
+          "text": "bite"
+        },
+        {
+          "t": 64.68,
+          "text": "of"
+        },
+        {
+          "t": 64.84,
+          "text": "those"
+        },
+        {
+          "t": 65.1,
+          "text": "neon"
+        },
+        {
+          "t": 65.42,
+          "text": "teeth"
+        }
+      ]
+    },
+    {
+      "start": 76.2,
+      "end": 79.36,
+      "text": "She moves like the bass was built for her body",
+      "words": [
+        {
+          "t": 76.2,
+          "text": "She"
+        },
+        {
+          "t": 76.72,
+          "text": "moves"
+        },
+        {
+          "t": 77.24,
+          "text": "like"
+        },
+        {
+          "t": 77.54,
+          "text": "the"
+        },
+        {
+          "t": 77.8,
+          "text": "bass"
+        },
+        {
+          "t": 78.14,
+          "text": "was"
+        },
+        {
+          "t": 78.32,
+          "text": "built"
+        },
+        {
+          "t": 78.56,
+          "text": "for"
+        },
+        {
+          "t": 78.8,
+          "text": "her"
+        },
+        {
+          "t": 79.04,
+          "text": "body"
+        }
+      ]
+    },
+    {
+      "start": 79.36,
+      "end": 82.06,
+      "text": "One hand on my chest, one drink in her hand",
+      "words": [
+        {
+          "t": 79.36,
+          "text": "One"
+        },
+        {
+          "t": 79.64,
+          "text": "hand"
+        },
+        {
+          "t": 80.08,
+          "text": "on"
+        },
+        {
+          "t": 80.34,
+          "text": "my"
+        },
+        {
+          "t": 80.46,
+          "text": "chest,"
+        },
+        {
+          "t": 80.88,
+          "text": "one"
+        },
+        {
+          "t": 81.04,
+          "text": "drink"
+        },
+        {
+          "t": 81.4,
+          "text": "in"
+        },
+        {
+          "t": 81.52,
+          "text": "her"
+        },
+        {
+          "t": 81.7,
+          "text": "hand"
+        }
+      ]
+    },
+    {
+      "start": 82.06,
+      "end": 84.78,
+      "text": "Sex, she hates love, but she loves being wanted",
+      "words": [
+        {
+          "t": 82.06,
+          "text": "Sex,"
+        },
+        {
+          "t": 82.64,
+          "text": "she"
+        },
+        {
+          "t": 82.86,
+          "text": "hates"
+        },
+        {
+          "t": 83.12,
+          "text": "love,"
+        },
+        {
+          "t": 83.5,
+          "text": "but"
+        },
+        {
+          "t": 83.66,
+          "text": "she"
+        },
+        {
+          "t": 83.8,
+          "text": "loves"
+        },
+        {
+          "t": 84.12,
+          "text": "being"
+        },
+        {
+          "t": 84.4,
+          "text": "wanted"
+        }
+      ]
+    },
+    {
+      "start": 84.78,
+      "end": 86.08,
+      "text": "I tell her I'm different,",
+      "words": [
+        {
+          "t": 84.78,
+          "text": "I"
+        },
+        {
+          "t": 85.04,
+          "text": "tell"
+        },
+        {
+          "t": 85.26,
+          "text": "her"
+        },
+        {
+          "t": 85.54,
+          "text": "I'm"
+        },
+        {
+          "t": 85.84,
+          "text": "different,"
+        }
+      ]
+    },
+    {
+      "start": 86.18,
+      "end": 87.46,
+      "text": "she knows that I'm damned",
+      "words": [
+        {
+          "t": 86.18,
+          "text": "she"
+        },
+        {
+          "t": 86.3,
+          "text": "knows"
+        },
+        {
+          "t": 86.6,
+          "text": "that"
+        },
+        {
+          "t": 86.88,
+          "text": "I'm"
+        },
+        {
+          "t": 87.18,
+          "text": "damned"
+        }
+      ]
+    },
+    {
+      "start": 87.88,
+      "end": 90.32,
+      "text": "Perfume stays where her fingertips touch me",
+      "words": [
+        {
+          "t": 87.88,
+          "text": "Perfume"
+        },
+        {
+          "t": 88.38,
+          "text": "stays"
+        },
+        {
+          "t": 88.66,
+          "text": "where"
+        },
+        {
+          "t": 89.04,
+          "text": "her"
+        },
+        {
+          "t": 89.18,
+          "text": "fingertips"
+        },
+        {
+          "t": 89.58,
+          "text": "touch"
+        },
+        {
+          "t": 90.06,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 90.32,
+      "end": 92.78,
+      "text": "Her lipstick stains every lie that I make",
+      "words": [
+        {
+          "t": 90.32,
+          "text": "Her"
+        },
+        {
+          "t": 90.48,
+          "text": "lipstick"
+        },
+        {
+          "t": 90.9,
+          "text": "stains"
+        },
+        {
+          "t": 91.32,
+          "text": "every"
+        },
+        {
+          "t": 91.78,
+          "text": "lie"
+        },
+        {
+          "t": 92.04,
+          "text": "that"
+        },
+        {
+          "t": 92.2,
+          "text": "I"
+        },
+        {
+          "t": 92.4,
+          "text": "make"
+        }
+      ]
+    },
+    {
+      "start": 92.78,
+      "end": 95.58,
+      "text": "I swear I'm in control while she pulls me beneath her",
+      "words": [
+        {
+          "t": 92.78,
+          "text": "I"
+        },
+        {
+          "t": 92.98,
+          "text": "swear"
+        },
+        {
+          "t": 93.22,
+          "text": "I'm"
+        },
+        {
+          "t": 93.6,
+          "text": "in"
+        },
+        {
+          "t": 93.7,
+          "text": "control"
+        },
+        {
+          "t": 93.92,
+          "text": "while"
+        },
+        {
+          "t": 94.36,
+          "text": "she"
+        },
+        {
+          "t": 94.48,
+          "text": "pulls"
+        },
+        {
+          "t": 94.7,
+          "text": "me"
+        },
+        {
+          "t": 94.84,
+          "text": "beneath"
+        },
+        {
+          "t": 95.18,
+          "text": "her"
+        }
+      ]
+    },
+    {
+      "start": 95.58,
+      "end": 98.2,
+      "text": "And I'm hers before the first light breaks",
+      "words": [
+        {
+          "t": 95.58,
+          "text": "And"
+        },
+        {
+          "t": 95.98,
+          "text": "I'm"
+        },
+        {
+          "t": 96.4,
+          "text": "hers"
+        },
+        {
+          "t": 96.6,
+          "text": "before"
+        },
+        {
+          "t": 96.88,
+          "text": "the"
+        },
+        {
+          "t": 97.14,
+          "text": "first"
+        },
+        {
+          "t": 97.46,
+          "text": "light"
+        },
+        {
+          "t": 97.74,
+          "text": "breaks"
+        }
+      ]
+    },
+    {
+      "start": 98.2,
+      "end": 100.66,
+      "text": "Light in the morning, I'm fast asleep",
+      "words": [
+        {
+          "t": 98.2,
+          "text": "Light"
+        },
+        {
+          "t": 98.66,
+          "text": "in"
+        },
+        {
+          "t": 98.94,
+          "text": "the"
+        },
+        {
+          "t": 99.08,
+          "text": "morning,"
+        },
+        {
+          "t": 99.58,
+          "text": "I'm"
+        },
+        {
+          "t": 99.82,
+          "text": "fast"
+        },
+        {
+          "t": 100.1,
+          "text": "asleep"
+        }
+      ]
+    },
+    {
+      "start": 100.66,
+      "end": 102.14,
+      "text": "She's gone with the rhythm,",
+      "words": [
+        {
+          "t": 100.66,
+          "text": "She's"
+        },
+        {
+          "t": 101.18,
+          "text": "gone"
+        },
+        {
+          "t": 101.44,
+          "text": "with"
+        },
+        {
+          "t": 101.62,
+          "text": "the"
+        },
+        {
+          "t": 101.8,
+          "text": "rhythm,"
+        }
+      ]
+    },
+    {
+      "start": 102.16,
+      "end": 103.38,
+      "text": "still trapped in the sheets",
+      "words": [
+        {
+          "t": 102.16,
+          "text": "still"
+        },
+        {
+          "t": 102.32,
+          "text": "trapped"
+        },
+        {
+          "t": 102.72,
+          "text": "in"
+        },
+        {
+          "t": 102.98,
+          "text": "the"
+        },
+        {
+          "t": 103.08,
+          "text": "sheets"
+        }
+      ]
+    },
+    {
+      "start": 103.38,
+      "end": 106.06,
+      "text": "No name on my phone, no note by the bed",
+      "words": [
+        {
+          "t": 103.38,
+          "text": "No"
+        },
+        {
+          "t": 103.68,
+          "text": "name"
+        },
+        {
+          "t": 104.06,
+          "text": "on"
+        },
+        {
+          "t": 104.26,
+          "text": "my"
+        },
+        {
+          "t": 104.44,
+          "text": "phone,"
+        },
+        {
+          "t": 104.86,
+          "text": "no"
+        },
+        {
+          "t": 105.02,
+          "text": "note"
+        },
+        {
+          "t": 105.34,
+          "text": "by"
+        },
+        {
+          "t": 105.58,
+          "text": "the"
+        },
+        {
+          "t": 105.78,
+          "text": "bed"
+        }
+      ]
+    },
+    {
+      "start": 106.06,
+      "end": 108.74,
+      "text": "Just a taste of the words that we never said",
+      "words": [
+        {
+          "t": 106.06,
+          "text": "Just"
+        },
+        {
+          "t": 106.24,
+          "text": "a"
+        },
+        {
+          "t": 106.44,
+          "text": "taste"
+        },
+        {
+          "t": 106.76,
+          "text": "of"
+        },
+        {
+          "t": 106.94,
+          "text": "the"
+        },
+        {
+          "t": 107.1,
+          "text": "words"
+        },
+        {
+          "t": 107.48,
+          "text": "that"
+        },
+        {
+          "t": 107.7,
+          "text": "we"
+        },
+        {
+          "t": 107.82,
+          "text": "never"
+        },
+        {
+          "t": 108.22,
+          "text": "said"
+        }
+      ]
+    },
+    {
+      "start": 108.74,
+      "end": 111.5,
+      "text": "You shine like trouble lighting up the dark",
+      "words": [
+        {
+          "t": 108.74,
+          "text": "You"
+        },
+        {
+          "t": 109.0,
+          "text": "shine"
+        },
+        {
+          "t": 109.36,
+          "text": "like"
+        },
+        {
+          "t": 109.74,
+          "text": "trouble"
+        },
+        {
+          "t": 110.0,
+          "text": "lighting"
+        },
+        {
+          "t": 110.42,
+          "text": "up"
+        },
+        {
+          "t": 110.76,
+          "text": "the"
+        },
+        {
+          "t": 111.0,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 111.5,
+      "end": 114.0,
+      "text": "One crooked smile and you're pulling me apart",
+      "words": [
+        {
+          "t": 111.5,
+          "text": "One"
+        },
+        {
+          "t": 111.74,
+          "text": "crooked"
+        },
+        {
+          "t": 112.16,
+          "text": "smile"
+        },
+        {
+          "t": 112.56,
+          "text": "and"
+        },
+        {
+          "t": 113.0,
+          "text": "you're"
+        },
+        {
+          "t": 113.16,
+          "text": "pulling"
+        },
+        {
+          "t": 113.42,
+          "text": "me"
+        },
+        {
+          "t": 113.68,
+          "text": "apart"
+        }
+      ]
+    },
+    {
+      "start": 114.0,
+      "end": 116.7,
+      "text": "You look like heaven under ultraviolet",
+      "words": [
+        {
+          "t": 114.0,
+          "text": "You"
+        },
+        {
+          "t": 114.36,
+          "text": "look"
+        },
+        {
+          "t": 114.72,
+          "text": "like"
+        },
+        {
+          "t": 115.08,
+          "text": "heaven"
+        },
+        {
+          "t": 115.46,
+          "text": "under"
+        },
+        {
+          "t": 115.8,
+          "text": "ultraviolet"
+        }
+      ]
+    },
+    {
+      "start": 117.88,
+      "end": 119.84,
+      "text": "But I lean inside it",
+      "words": [
+        {
+          "t": 117.88,
+          "text": "But"
+        },
+        {
+          "t": 118.3,
+          "text": "I"
+        },
+        {
+          "t": 118.5,
+          "text": "lean"
+        },
+        {
+          "t": 118.74,
+          "text": "inside"
+        },
+        {
+          "t": 119.14,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 119.84,
+      "end": 122.0,
+      "text": "Sweet little poison sitting on your lips",
+      "words": [
+        {
+          "t": 119.84,
+          "text": "Sweet"
+        },
+        {
+          "t": 120.04,
+          "text": "little"
+        },
+        {
+          "t": 120.48,
+          "text": "poison"
+        },
+        {
+          "t": 120.78,
+          "text": "sitting"
+        },
+        {
+          "t": 121.1,
+          "text": "on"
+        },
+        {
+          "t": 121.32,
+          "text": "your"
+        },
+        {
+          "t": 121.58,
+          "text": "lips"
+        }
+      ]
+    },
+    {
+      "start": 122.0,
+      "end": 124.24,
+      "text": "She make bad decisions feel like chemistry",
+      "words": [
+        {
+          "t": 122.0,
+          "text": "She"
+        },
+        {
+          "t": 122.3,
+          "text": "make"
+        },
+        {
+          "t": 122.52,
+          "text": "bad"
+        },
+        {
+          "t": 122.94,
+          "text": "decisions"
+        },
+        {
+          "t": 123.28,
+          "text": "feel"
+        },
+        {
+          "t": 123.64,
+          "text": "like"
+        },
+        {
+          "t": 123.82,
+          "text": "chemistry"
+        }
+      ]
+    },
+    {
+      "start": 124.24,
+      "end": 127.36,
+      "text": "I know what you are, still I'm moving close",
+      "words": [
+        {
+          "t": 124.24,
+          "text": "I"
+        },
+        {
+          "t": 124.96,
+          "text": "know"
+        },
+        {
+          "t": 125.26,
+          "text": "what"
+        },
+        {
+          "t": 125.48,
+          "text": "you"
+        },
+        {
+          "t": 125.68,
+          "text": "are,"
+        },
+        {
+          "t": 126.16,
+          "text": "still"
+        },
+        {
+          "t": 126.32,
+          "text": "I'm"
+        },
+        {
+          "t": 126.72,
+          "text": "moving"
+        },
+        {
+          "t": 127.0,
+          "text": "close"
+        }
+      ]
+    },
+    {
+      "start": 127.36,
+      "end": 130.02,
+      "text": "Just to feel the bite of those neon teeth",
+      "words": [
+        {
+          "t": 127.36,
+          "text": "Just"
+        },
+        {
+          "t": 127.86,
+          "text": "to"
+        },
+        {
+          "t": 128.12,
+          "text": "feel"
+        },
+        {
+          "t": 128.36,
+          "text": "the"
+        },
+        {
+          "t": 128.48,
+          "text": "bite"
+        },
+        {
+          "t": 128.72,
+          "text": "of"
+        },
+        {
+          "t": 128.86,
+          "text": "those"
+        },
+        {
+          "t": 129.1,
+          "text": "neon"
+        },
+        {
+          "t": 129.48,
+          "text": "teeth"
+        }
+      ]
+    },
+    {
+      "start": 140.2,
+      "end": 143.4,
+      "text": "Maybe I stay home cause I know she's out there",
+      "words": [
+        {
+          "t": 140.2,
+          "text": "Maybe"
+        },
+        {
+          "t": 140.8,
+          "text": "I"
+        },
+        {
+          "t": 141.32,
+          "text": "stay"
+        },
+        {
+          "t": 141.52,
+          "text": "home"
+        },
+        {
+          "t": 142.08,
+          "text": "cause"
+        },
+        {
+          "t": 142.32,
+          "text": "I"
+        },
+        {
+          "t": 142.44,
+          "text": "know"
+        },
+        {
+          "t": 142.58,
+          "text": "she's"
+        },
+        {
+          "t": 142.86,
+          "text": "out"
+        },
+        {
+          "t": 143.12,
+          "text": "there"
+        }
+      ]
+    },
+    {
+      "start": 143.4,
+      "end": 145.98,
+      "text": "Waiting in a room where the blue lights bleed",
+      "words": [
+        {
+          "t": 143.4,
+          "text": "Waiting"
+        },
+        {
+          "t": 144.06,
+          "text": "in"
+        },
+        {
+          "t": 144.32,
+          "text": "a"
+        },
+        {
+          "t": 144.42,
+          "text": "room"
+        },
+        {
+          "t": 144.7,
+          "text": "where"
+        },
+        {
+          "t": 145.0,
+          "text": "the"
+        },
+        {
+          "t": 145.12,
+          "text": "blue"
+        },
+        {
+          "t": 145.3,
+          "text": "lights"
+        },
+        {
+          "t": 145.66,
+          "text": "bleed"
+        }
+      ]
+    },
+    {
+      "start": 145.98,
+      "end": 147.86,
+      "text": "Maybe I fear how far she'll take me",
+      "words": [
+        {
+          "t": 145.98,
+          "text": "Maybe"
+        },
+        {
+          "t": 146.68,
+          "text": "I"
+        },
+        {
+          "t": 147.0,
+          "text": "fear"
+        },
+        {
+          "t": 147.34,
+          "text": "how"
+        },
+        {
+          "t": 147.62,
+          "text": "far"
+        },
+        {
+          "t": 147.8,
+          "text": "she'll"
+        },
+        {
+          "t": 147.86,
+          "text": "take"
+        },
+        {
+          "t": 147.86,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 147.88,
+      "end": 150.08,
+      "text": "Fast, I would follow the first bad angel",
+      "words": [
+        {
+          "t": 147.88,
+          "text": "Fast,"
+        },
+        {
+          "t": 148.18,
+          "text": "I"
+        },
+        {
+          "t": 148.32,
+          "text": "would"
+        },
+        {
+          "t": 148.4,
+          "text": "follow"
+        },
+        {
+          "t": 148.74,
+          "text": "the"
+        },
+        {
+          "t": 149.08,
+          "text": "first"
+        },
+        {
+          "t": 149.34,
+          "text": "bad"
+        },
+        {
+          "t": 149.66,
+          "text": "angel"
+        }
+      ]
+    },
+    {
+      "start": 150.08,
+      "end": 152.42,
+      "text": "Who looks like my knee, but I'm not",
+      "words": [
+        {
+          "t": 150.08,
+          "text": "Who"
+        },
+        {
+          "t": 150.22,
+          "text": "looks"
+        },
+        {
+          "t": 150.56,
+          "text": "like"
+        },
+        {
+          "t": 150.76,
+          "text": "my"
+        },
+        {
+          "t": 150.94,
+          "text": "knee,"
+        },
+        {
+          "t": 151.52,
+          "text": "but"
+        },
+        {
+          "t": 151.82,
+          "text": "I'm"
+        },
+        {
+          "t": 152.08,
+          "text": "not"
+        }
+      ]
+    },
+    {
+      "start": 152.42,
+      "end": 154.14,
+      "text": "I miss and I smile when I'm lying",
+      "words": [
+        {
+          "t": 152.42,
+          "text": "I"
+        },
+        {
+          "t": 152.54,
+          "text": "miss"
+        },
+        {
+          "t": 152.7,
+          "text": "and"
+        },
+        {
+          "t": 152.96,
+          "text": "I"
+        },
+        {
+          "t": 153.06,
+          "text": "smile"
+        },
+        {
+          "t": 153.3,
+          "text": "when"
+        },
+        {
+          "t": 153.68,
+          "text": "I'm"
+        },
+        {
+          "t": 153.86,
+          "text": "lying"
+        }
+      ]
+    },
+    {
+      "start": 154.14,
+      "end": 156.54,
+      "text": "Leave before daylight, disappear clean",
+      "words": [
+        {
+          "t": 154.14,
+          "text": "Leave"
+        },
+        {
+          "t": 154.6,
+          "text": "before"
+        },
+        {
+          "t": 154.84,
+          "text": "daylight,"
+        },
+        {
+          "t": 155.74,
+          "text": "disappear"
+        },
+        {
+          "t": 156.04,
+          "text": "clean"
+        }
+      ]
+    },
+    {
+      "start": 156.54,
+      "end": 159.42,
+      "text": "I keep looking for monsters wearing red lipstick",
+      "words": [
+        {
+          "t": 156.54,
+          "text": "I"
+        },
+        {
+          "t": 156.92,
+          "text": "keep"
+        },
+        {
+          "t": 157.1,
+          "text": "looking"
+        },
+        {
+          "t": 157.34,
+          "text": "for"
+        },
+        {
+          "t": 157.58,
+          "text": "monsters"
+        },
+        {
+          "t": 158.1,
+          "text": "wearing"
+        },
+        {
+          "t": 158.66,
+          "text": "red"
+        },
+        {
+          "t": 158.94,
+          "text": "lipstick"
+        }
+      ]
+    },
+    {
+      "start": 159.42,
+      "end": 163.14,
+      "text": "While I'm hiding a mouth full of neon teeth",
+      "words": [
+        {
+          "t": 159.42,
+          "text": "While"
+        },
+        {
+          "t": 159.98,
+          "text": "I'm"
+        },
+        {
+          "t": 160.26,
+          "text": "hiding"
+        },
+        {
+          "t": 160.68,
+          "text": "a"
+        },
+        {
+          "t": 160.9,
+          "text": "mouth"
+        },
+        {
+          "t": 161.18,
+          "text": "full"
+        },
+        {
+          "t": 161.42,
+          "text": "of"
+        },
+        {
+          "t": 161.58,
+          "text": "neon"
+        },
+        {
+          "t": 162.44,
+          "text": "teeth"
+        }
+      ]
+    },
+    {
+      "start": 167.264,
+      "end": 170.0,
+      "text": "We shine like trouble lighting up the dark",
+      "words": [
+        {
+          "t": 167.264,
+          "text": "We"
+        },
+        {
+          "t": 167.54,
+          "text": "shine"
+        },
+        {
+          "t": 167.9,
+          "text": "like"
+        },
+        {
+          "t": 168.26,
+          "text": "trouble"
+        },
+        {
+          "t": 168.58,
+          "text": "lighting"
+        },
+        {
+          "t": 169.0,
+          "text": "up"
+        },
+        {
+          "t": 169.36,
+          "text": "the"
+        },
+        {
+          "t": 169.54,
+          "text": "dark"
+        }
+      ]
+    },
+    {
+      "start": 170.0,
+      "end": 172.52,
+      "text": "Two crooked smiles trying to tear us apart",
+      "words": [
+        {
+          "t": 170.0,
+          "text": "Two"
+        },
+        {
+          "t": 170.26,
+          "text": "crooked"
+        },
+        {
+          "t": 170.7,
+          "text": "smiles"
+        },
+        {
+          "t": 171.1,
+          "text": "trying"
+        },
+        {
+          "t": 171.6,
+          "text": "to"
+        },
+        {
+          "t": 171.76,
+          "text": "tear"
+        },
+        {
+          "t": 172.08,
+          "text": "us"
+        },
+        {
+          "t": 172.26,
+          "text": "apart"
+        }
+      ]
+    },
+    {
+      "start": 172.52,
+      "end": 175.22,
+      "text": "We look like heaven under ultraviolet",
+      "words": [
+        {
+          "t": 172.52,
+          "text": "We"
+        },
+        {
+          "t": 172.94,
+          "text": "look"
+        },
+        {
+          "t": 173.28,
+          "text": "like"
+        },
+        {
+          "t": 173.62,
+          "text": "heaven"
+        },
+        {
+          "t": 173.98,
+          "text": "under"
+        },
+        {
+          "t": 174.32,
+          "text": "ultraviolet"
+        }
+      ]
+    },
+    {
+      "start": 175.58,
+      "end": 177.86,
+      "text": "I see the warning but we lean inside it",
+      "words": [
+        {
+          "t": 175.58,
+          "text": "I"
+        },
+        {
+          "t": 175.7,
+          "text": "see"
+        },
+        {
+          "t": 175.98,
+          "text": "the"
+        },
+        {
+          "t": 176.2,
+          "text": "warning"
+        },
+        {
+          "t": 176.6,
+          "text": "but"
+        },
+        {
+          "t": 176.84,
+          "text": "we"
+        },
+        {
+          "t": 176.96,
+          "text": "lean"
+        },
+        {
+          "t": 177.24,
+          "text": "inside"
+        },
+        {
+          "t": 177.64,
+          "text": "it"
+        }
+      ]
+    },
+    {
+      "start": 177.88,
+      "end": 180.52,
+      "text": "Sweet little poison sitting on our lips",
+      "words": [
+        {
+          "t": 177.88,
+          "text": "Sweet"
+        },
+        {
+          "t": 178.5,
+          "text": "little"
+        },
+        {
+          "t": 179.0,
+          "text": "poison"
+        },
+        {
+          "t": 179.3,
+          "text": "sitting"
+        },
+        {
+          "t": 179.62,
+          "text": "on"
+        },
+        {
+          "t": 179.88,
+          "text": "our"
+        },
+        {
+          "t": 180.14,
+          "text": "lips"
+        }
+      ]
+    },
+    {
+      "start": 180.52,
+      "end": 182.72,
+      "text": "We make bad decisions feel like chemistry",
+      "words": [
+        {
+          "t": 180.52,
+          "text": "We"
+        },
+        {
+          "t": 180.82,
+          "text": "make"
+        },
+        {
+          "t": 181.12,
+          "text": "bad"
+        },
+        {
+          "t": 181.42,
+          "text": "decisions"
+        },
+        {
+          "t": 181.82,
+          "text": "feel"
+        },
+        {
+          "t": 182.18,
+          "text": "like"
+        },
+        {
+          "t": 182.34,
+          "text": "chemistry"
+        }
+      ]
+    },
+    {
+      "start": 182.78,
+      "end": 185.9,
+      "text": "I know what you are cause you're just like me",
+      "words": [
+        {
+          "t": 182.78,
+          "text": "I"
+        },
+        {
+          "t": 183.48,
+          "text": "know"
+        },
+        {
+          "t": 183.74,
+          "text": "what"
+        },
+        {
+          "t": 184.0,
+          "text": "you"
+        },
+        {
+          "t": 184.18,
+          "text": "are"
+        },
+        {
+          "t": 184.56,
+          "text": "cause"
+        },
+        {
+          "t": 184.84,
+          "text": "you're"
+        },
+        {
+          "t": 185.16,
+          "text": "just"
+        },
+        {
+          "t": 185.32,
+          "text": "like"
+        },
+        {
+          "t": 185.62,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 185.9,
+      "end": 188.54,
+      "text": "Both hiding behind those neon teeth",
+      "words": [
+        {
+          "t": 185.9,
+          "text": "Both"
+        },
+        {
+          "t": 186.4,
+          "text": "hiding"
+        },
+        {
+          "t": 186.96,
+          "text": "behind"
+        },
+        {
+          "t": 187.24,
+          "text": "those"
+        },
+        {
+          "t": 187.66,
+          "text": "neon"
+        },
+        {
+          "t": 187.96,
+          "text": "teeth"
+        }
+      ]
+    }
+  ]
+}

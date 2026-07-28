@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-07-19T10:26:44.368Z",
+  "generatedAt": "2026-07-25T10:53:32.950Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2002,
+    "candidates": 2547,
     "judged": 64,
-    "accepted": 57,
+    "accepted": 58,
     "kept": 32
   },
   "reel": [
@@ -55,7 +55,7 @@
       "t": 215.656,
       "score": 0.95,
       "cosine": 0.64,
-      "reason": "Image captures unity, resilience, and pride in Cairo with cinematic style matching song's ",
+      "reason": "Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 50.956,
       "score": 0.95,
       "cosine": 0.58,
-      "reason": "Neon 'SOUL' symbolizes protection and resilience, aligns with Cairo's unity and defiance i",
+      "reason": "Symbolizes soul's protection, neon reflects resilience, ties to Cairo's unity and defiance",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 18.609,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Symbolizes resilience, hope, and defiance against darkness",
+      "reason": "Symbolizes resilience, hope, and defiance perfectly aligned with song's themes",
       "recipe": "3-oil-light",
       "featured": true
     },
@@ -180,15 +180,63 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-5-word-portrait.webp",
-      "key": "lexicon/dreams/s8-5-word-portrait.webp",
-      "word": "dreams",
-      "line": "This is bass in the alley kids in the traffic Dreams in the dust trying to stay clean This is gold in the",
-      "t": 102.853,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rise/s1-1-word-portrait.webp",
+      "key": "lexicon/rise/s1-1-word-portrait.webp",
+      "word": "rise",
+      "line": "Heyya heyya Yalla yalla Sawa sawa We rise we stay They only",
+      "t": 25.947,
       "score": 0.95,
-      "cosine": 0.479,
-      "reason": "Euphoric celebration aligns with song's themes of resilience and unity.",
-      "recipe": "5-word-portrait",
+      "cosine": 0.504,
+      "reason": "Powerful imagery aligns with themes of resilience and defiance through music",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s6-1-poster.webp",
+      "key": "lexicon/city/s6-1-poster.webp",
+      "word": "city",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with",
+      "t": 36.281,
+      "score": 0.95,
+      "cosine": 0.504,
+      "reason": "Celebrates city unity, energy, and resilience through vibrant imagery",
+      "recipe": "1-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drum/s2-1-word-portrait.webp",
+      "key": "lexicon/drum/s2-1-word-portrait.webp",
+      "word": "drum",
+      "line": "Ya Masr ya Masr Heartbeat in the drum Ya",
+      "t": 155.365,
+      "score": 0.95,
+      "cosine": 0.488,
+      "reason": "Symbolizes resilience, cultural heritage, and rhythm central to the song's theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rise/s3-1-word-portrait.webp",
+      "key": "lexicon/rise/s3-1-word-portrait.webp",
+      "word": "rise",
+      "line": "Heyya heyya Yalla yalla Sawa sawa We rise we stay They only",
+      "t": 25.947,
+      "score": 0.95,
+      "cosine": 0.467,
+      "reason": "Celebrates unity, triumph, and collective empowerment through dynamic visuals",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drum/s1-2-oil-light.webp",
+      "key": "lexicon/drum/s1-2-oil-light.webp",
+      "word": "drum",
+      "line": "Ya Masr ya Masr Heartbeat in the drum Ya",
+      "t": 155.365,
+      "score": 0.95,
+      "cosine": 0.462,
+      "reason": "Powerful, energetic image aligns with song's themes of music as defiance and unity",
+      "recipe": "2-oil-light",
       "featured": true
     },
     {
@@ -247,7 +295,7 @@
       "t": 215.656,
       "score": 0.92,
       "cosine": 0.597,
-      "reason": "Cinematic, resilient, hopeful, and tied to Cairo's urban life and movement",
+      "reason": "Cinematic, resilient, Cairo streets, unity through movement",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -283,7 +331,7 @@
       "t": 105.86,
       "score": 0.92,
       "cosine": 0.559,
-      "reason": "Cinematic, resilient, cultural pride, voice as resistance fit the song's themes",
+      "reason": "Cinematic, resilient, cultural pride, voice as resistance align with song's themes",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -295,7 +343,7 @@
       "t": 57.423,
       "score": 0.92,
       "cosine": 0.514,
-      "reason": "Resilient Cairo streets, hope, unity, cinematic mood match song",
+      "reason": "Resilient cityscape mirrors song's themes of defiance and hope.",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -324,75 +372,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
-      "key": "lexicon/soul/s1-6-word-portrait.webp",
-      "word": "soul",
-      "line": "world to breathe Mama said keep your soul protected Baba said keep your head up high",
-      "t": 50.956,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-5-photo.webp",
+      "key": "lexicon/city/s5-5-photo.webp",
+      "word": "city",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with",
+      "t": 36.281,
       "score": 0.92,
-      "cosine": 0.464,
-      "reason": "Symbolizes soul's protection, stage lights reflect resilience, guitar ties to music's heal",
-      "recipe": "6-word-portrait",
+      "cosine": 0.486,
+      "reason": "Celebrates unity, resilience, and city pride with cinematic energy",
+      "recipe": "5-photo",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-2-poster.webp",
-      "key": "lexicon/rhythm/s6-2-poster.webp",
-      "word": "rhythm",
-      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
-      "t": 61.498,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s6-2-word-portrait.webp",
+      "key": "lexicon/city/s6-2-word-portrait.webp",
+      "word": "city",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with",
+      "t": 36.281,
       "score": 0.92,
-      "cosine": 0.463,
-      "reason": "Modern geometric abstraction matches song's energetic, defiant rhythm and unity themes.",
-      "recipe": "2-poster",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s1-6-neon-sign.webp",
-      "key": "lexicon/peace/s1-6-neon-sign.webp",
-      "word": "peace",
-      "line": "This is not just pride This is peace with a pulse This is culture",
-      "t": 204.475,
-      "score": 0.92,
-      "cosine": 0.454,
-      "reason": "Symbolizes peace, unity, and resilience in an urban setting",
-      "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s23-2-dream-collage.webp",
-      "key": "lexicon/move/s23-2-dream-collage.webp",
-      "word": "move",
-      "line": "Even when the news gets reckless Dont let the fear move into your eyes And if the whole world shakes",
-      "t": 57.423,
-      "score": 0.92,
-      "cosine": 0.452,
-      "reason": "Dynamic dance, defiance, celebration align with song's themes",
-      "recipe": "2-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s6-1-dream-collage.webp",
-      "key": "lexicon/hands/s6-1-dream-collage.webp",
-      "word": "hands",
-      "line": "Still sing when the sky turns gray Hands up if your heart stays ready Love dont break we",
-      "t": 17.752,
-      "score": 0.92,
-      "cosine": 0.449,
-      "reason": "Symbolizes unity, resilience, and hope amid fragility",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s8-5-stickers.webp",
-      "key": "lexicon/beat/s8-5-stickers.webp",
-      "word": "beat",
-      "line": "glow I see young ones building something better With a beat in the blood and a long way to go When",
-      "t": 120.767,
-      "score": 0.92,
-      "cosine": 0.447,
-      "reason": "Energetic, youthful, and vibrant imagery aligns with the song's themes of resilience, unit",
-      "recipe": "5-stickers",
+      "cosine": 0.48,
+      "reason": "Celebratory urban scene matches Cairo's resilience and unity themes",
+      "recipe": "2-word-portrait",
       "featured": true
     }
   ],
@@ -400,29 +400,26 @@
     "sky": [
       0,
       4,
-      20
+      24
     ],
     "lights": [
       1
     ],
     "soul": [
       2,
-      10,
-      26
+      10
     ],
     "walk": [
       3,
-      19,
-      21
+      23,
+      25
     ],
     "move": [
       5,
-      23,
-      29
+      27
     ],
     "rhythm": [
-      6,
-      27
+      6
     ],
     "heart": [
       7,
@@ -430,36 +427,39 @@
     ],
     "fire": [
       8,
-      25
+      29
     ],
     "voice": [
       9,
       11,
-      22
+      26
     ],
     "peace": [
-      13,
-      28
+      13
     ],
-    "dreams": [
-      14
+    "rise": [
+      14,
+      17
     ],
-    "night": [
+    "city": [
       15,
-      17,
+      30,
+      31
+    ],
+    "drum": [
+      16,
       18
     ],
+    "night": [
+      19,
+      21,
+      22
+    ],
     "gold": [
-      16
+      20
     ],
     "bass": [
-      24
-    ],
-    "hands": [
-      30
-    ],
-    "beat": [
-      31
+      28
     ]
   }
 }
