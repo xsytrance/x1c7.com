@@ -81,7 +81,13 @@ scripts/song-analysis/*.compiled.json
 scripts/song-analysis/*.flow.json
 
 # directed-cut render artifacts (masters/shares live in the profile dirs, not git)
+# Broadened 2026-07-27: the -60 glob only caught one naming scheme, so 30/45/59s
+# masters, share encodes and QA stills were all showing up as untracked.
+scripts/song-analysis/profiles/*/*.mp4
+scripts/song-analysis/profiles/*/qa-*.jpg
+scripts/song-analysis/profiles/*/*-check*.jpg
 scripts/song-analysis/profiles/*/*-60*.mp4
 scripts/song-analysis/profiles/*/.render-*/
 scripts/song-analysis/profiles/*/pre-refix-backup/
 scripts/song-art/*-out/
+.env*
