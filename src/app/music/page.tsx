@@ -1,9 +1,15 @@
 "use client";
 
-// /music — THE COLLECTION.
-// Every track is a collector edition; the page is the shelf it lives on.
-// Desktop: spine shelf, hover pulls the case and previews the drop.
-// Mobile: full-bleed snap deck, tap to preview, tap again to play.
+// /music — THE WALL.
+// The front door to the catalogue. First paint is album art, edge to edge:
+// hover a tile to cue the song at its hottest bar, click it and the full show
+// takes the screen. One click, no reading, no scrolling.
+//
+// Everything that used to sit ABOVE the music — the hero, the AGENOR band, the
+// Suno gratitude note, the Studio/Listening Room/Splice doors — still ships, in
+// full, immediately BELOW the wall. Nothing was cut, it just stopped being a
+// gate. The old collector views (shelf, deck, jukebox) live on behind the view
+// switch under the wall. See docs/WALL-REDESIGN.md.
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
@@ -20,9 +26,12 @@ import { canPerform } from "@/components/KineticStage";
 import CollectionShelf from "@/components/CollectionShelf";
 import CollectionDeck from "@/components/CollectionDeck";
 import { JukeboxView } from "@/components/JukeboxView";
+import Wall from "@/components/wall/Wall";
 import { TylerPromo } from "@/components/TylerPromo";
 import { ZeroChallenger } from "@/components/ZeroChallenger";
 import { AgenorBand } from "@/components/AgenorBand";
+
+type View = "wall" | "spines" | "deck" | "jukebox";
 
 function useDeviceMode(): "desktop" | "mobile" | null {
   const [mode, setMode] = useState<"desktop" | "mobile" | null>(null);
@@ -40,26 +49,18 @@ export default function Page() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, analyser, playTrack: playFromCtx, pause } = useMusicPlayer();
   const mode = useDeviceMode();
-  const [query, setQuery] = useState("");
-  // Views: the deck is the mobile default; the spine shelf and the jukebox
-  // are one tap away. Desktop toggles between the shelf and the jukebox.
-  const [view, setView] = useState<"spines" | "deck" | "jukebox">("deck");
+  // The wall is the default for everyone now; the collector views are one tap
+  // away under it and a returning visitor's choice is remembered.
+  const [view, setView] = useState<View>("wall");
   useEffect(() => {
     const saved = localStorage.getItem("x1c7-collection-view");
-    if (saved === "deck" || saved === "spines" || saved === "jukebox") setView(saved);
+    if (saved === "wall" || saved === "deck" || saved === "spines" || saved === "jukebox") setView(saved);
   }, []);
-  const pickView = (v: "spines" | "deck" | "jukebox") => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
+  const pickView = (v: View) => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
 
   // Play always seeds the global queue with the full library so the persistent
   // player bar's next/prev traverse every transmission.
   const playTrack = (track: Track) => playFromCtx(track, tracks);
-
-  const list = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return tracks;
-    return tracks.filter((t) =>
-      t.title.toLowerCase().includes(q) || t.genre.toLowerCase().includes(q) || (t.mood || "").toLowerCase().includes(q));
-  }, [tracks, query]);
 
   const stats = useMemo(() => ({
     tracks: tracks.length,
@@ -68,26 +69,72 @@ export default function Page() {
     stems: tracks.reduce((a, t) => a + Object.keys(t.planet?.assets?.stemAudio || {}).length, 0),
   }), [tracks]);
 
-  return (
-    <main className="relative min-h-screen overflow-hidden pb-32">
-      <div className="scanline" aria-hidden />
-      <div className="starfield" aria-hidden />
+  const views: [View, string][] = [
+    ["wall", "▦ WALL"],
+    ...(mode === "mobile" ? ([["deck", "▢ DECK"]] as [View, string][]) : ([["spines", "▮▮ SHELF"]] as [View, string][])),
+    ["jukebox", "◉ JUKEBOX"],
+  ];
 
-      <div className="relative z-10 px-4 pb-6 pt-6 sm:px-6 lg:px-8">
-        <BackToHub />
+  return (
+    // NOTE: no `overflow-hidden` here — it would make <main> a scroll container
+    // and silently break the wall's sticky control bar. The wall measures its
+    // own width, so nothing on this page overflows horizontally.
+    <main className="relative min-h-screen pb-32">
+      <div className="scanline" aria-hidden />
+      <div className="starfield pointer-events-none" aria-hidden />
+
+      {/* ═══ THE WALL — first paint, full bleed, no gate ═══ */}
+      <div className="relative z-10">
+        {view === "wall" ? (
+          <Wall tracks={tracks} onPlay={playTrack} onPauseMain={pause} />
+        ) : (
+          <section className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
+            {view === "jukebox" ? <JukeboxView tracks={tracks} />
+              : view === "deck" ? <CollectionDeck tracks={tracks} onPlay={playTrack} onPauseMain={pause} />
+              : <CollectionShelf tracks={tracks} onPlay={playTrack} onPauseMain={pause} />}
+          </section>
+        )}
       </div>
 
-      {/* ===== HERO ===== */}
-      <section className="relative z-10 mx-auto max-w-7xl px-4 pb-8 pt-2 text-center sm:px-6 lg:px-8">
+      {/* view switch — the collector views live on, just under the wall */}
+      {mode !== null && (
+        <div className="relative z-10 mt-4 flex justify-center">
+          <div className="inline-flex rounded-full border border-white/12 bg-white/[0.04] p-1">
+            {views.map(([v, label]) => (
+              <button key={v} onClick={() => pickView(v)}
+                className={`rounded-full px-4 py-1.5 font-mono text-[10px] tracking-[0.18em] transition ${view === v ? "bg-plasma text-black" : "text-white/50 hover:text-white"}`}>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Cinematic takeover mounts here — auto-opens on play for synced tracks */}
+      <CinematicLyrics />
+
+      {/* ═══ everything below the music ═══════════════════════════════════ */}
+
+      {/* ===== LIVE VISUALIZER (only while the real player runs) ===== */}
+      {isPlaying && (
+        <section className="relative z-10 mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="relative h-32 overflow-hidden rounded-xl border border-white/10 sm:h-44">
+            <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2440"} mode="wave" className="absolute inset-0" />
+            <div className="absolute bottom-2 left-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
+              now playing · {currentTrack?.title}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ===== THE COLLECTION — the masthead, now AFTER the music ===== */}
+      <section className="relative z-10 mx-auto max-w-7xl px-4 pt-16 text-center sm:px-6 lg:px-8">
         <p className="font-mono text-xs uppercase tracking-[0.45em] text-plasma/80">agenor presents</p>
         <div className="mt-4">
-          <TextScramble text="The Collection" as="h1" className="font-display text-5xl font-black uppercase tracking-[-0.05em] glow-text sm:text-7xl lg:text-8xl" delay={200} />
+          <TextScramble text="The Collection" as="h1" className="font-display text-5xl font-black uppercase tracking-[-0.05em] glow-text sm:text-7xl" delay={200} />
         </div>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
           Every track a collector edition — genre-coded spines, verified metadata, the song&apos;s own waveform on the case.
-          {mode === "desktop" ? " Hover a spine to hear the drop."
-            : view === "spines" ? " Tap a spine to pull the case, tap again to play."
-            : " Swipe the deck, tap a case to hear the drop."}
         </p>
         {/* data-driven stats — every number is real */}
         <div className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-x-8 gap-y-2 font-mono text-[11px] uppercase tracking-[0.25em] text-white/40">
@@ -98,7 +145,7 @@ export default function Page() {
         </div>
         {/* THE STUDIO — the instrument, open to everyone (2026-07-14). Direct
             the shows yourself: looks, scenes, automation, your own shaders. */}
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="/studio"
             className="group inline-flex items-center gap-2.5 rounded-full border px-5 py-2.5 font-mono text-[11px] uppercase tracking-[0.22em] transition hover:scale-[1.03]"
@@ -126,20 +173,12 @@ export default function Page() {
             <span className="transition group-hover:translate-x-0.5">→</span>
           </Link>
         </div>
-        <div className="mx-auto mt-6 max-w-md">
-          <input
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            placeholder="search title · genre · vibe"
-            className="w-full rounded-sm border border-white/15 bg-white/[0.04] px-4 py-2.5 text-center font-mono text-sm tracking-widest text-white placeholder:text-white/25 focus:border-plasma/60 focus:outline-none"
-          />
-        </div>
       </section>
 
       {/* ===== AGENOR identity — the artist behind The Collection ===== */}
       <AgenorBand />
 
-      {/* ===== SUNO GRATITUDE — up top so nobody has to scroll to find it ===== */}
+      {/* ===== SUNO GRATITUDE — the first thing after the music ===== */}
       <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="rounded-xl border border-white/10 bg-white/[0.03] px-6 py-6 text-center sm:px-10">
           <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">a note on origins</p>
@@ -156,51 +195,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ===== LIVE VISUALIZER (only while the real player runs) ===== */}
-      {isPlaying && (
-        <section className="relative z-10 mx-auto mb-8 max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="relative h-32 overflow-hidden rounded-xl border border-white/10 sm:h-44">
-            <AudioVisualizer analyser={analyser} active={isPlaying} color={currentTrack?.color || "#ff2440"} mode="wave" className="absolute inset-0" />
-            <div className="absolute bottom-2 left-3 font-mono text-[10px] uppercase tracking-[0.3em] text-white/40">
-              now playing · {currentTrack?.title}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* ===== THE COLLECTION ===== */}
-      <section className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* view switch — mobile: deck/shelf/jukebox · desktop: shelf/jukebox */}
-        {mode !== null && (
-          <div className="mb-5 flex justify-center">
-            <div className="inline-flex rounded-full border border-white/15 bg-white/[0.05] p-1">
-              {(mode === "mobile"
-                ? ([["deck", "▢ DECK"], ["spines", "▮▮ SHELF"], ["jukebox", "◉ JUKEBOX"]] as const)
-                : ([["spines", "▮▮ SHELF"], ["jukebox", "◉ JUKEBOX"]] as const)
-              ).map(([v, label]) => (
-                <button key={v} onClick={() => pickView(v)}
-                  className={`rounded-full px-4 py-2 font-mono text-[11px] tracking-[0.18em] transition ${view === v || (mode === "desktop" && view === "deck" && v === "spines") ? "bg-plasma text-black" : "text-white/55"}`}>
-                  {label}
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-        {view === "jukebox"
-          ? <JukeboxView tracks={list} />
-          : mode === "desktop" ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
-          : view === "spines" ? <CollectionShelf tracks={list} onPlay={playTrack} onPauseMain={pause} />
-          : <CollectionDeck tracks={list} onPlay={playTrack} onPauseMain={pause} />}
-        {mode === null && (
-          <div className="flex h-[50vh] items-center justify-center font-mono text-xs tracking-[0.3em] text-white/30">
-            OPENING THE VAULT…
-          </div>
-        )}
-      </section>
-
-      {/* Cinematic takeover mounts here — auto-opens on play for synced tracks */}
-      <CinematicLyrics />
-
       {/* ===== THE GALAXY — the other front door ===== */}
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
         <GalaxyButton />
@@ -210,12 +204,13 @@ export default function Page() {
       <section className="relative z-10 mx-auto mt-14 max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-xl border border-white/10 px-6 py-8 text-center sm:px-10">
           {/* ambient concert backdrop — xsytrance live */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/brand/rave-club.webp" alt="" aria-hidden className="absolute inset-0 h-full w-full object-cover object-center opacity-45" loading="lazy" />
           <div className="absolute inset-0 bg-gradient-to-b from-[#05030b]/80 via-[#05030b]/60 to-[#05030b]/90" />
           <div className="relative">
           <p className="font-mono text-[11px] uppercase tracking-[0.35em] text-white/40">the engine behind the shows</p>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-8 text-white/75">
-            Every full show on this shelf is performed live by <a href="https://xsytrance.github.io/kinetica/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Kinetica</a> —
+            Every full show on this wall is performed live by <a href="https://xsytrance.github.io/kinetica/" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">Kinetica</a> —
             our free, <a href="https://github.com/xsytrance/kinetica" target="_blank" rel="noopener noreferrer" className="text-white underline decoration-white/30 underline-offset-4 transition hover:decoration-white">open-source</a> lyric-video
             engine. Drop a Suno stem zip and it listens to the actual drums and bass, igniting every word in time with the
             music. It runs entirely in your browser — your song never leaves your machine.
@@ -241,6 +236,11 @@ export default function Page() {
       {/* ===== the crew's next announcement ===== */}
       <div className="relative z-10 mt-20">
         <ZeroChallenger compact />
+      </div>
+
+      {/* the way back to the hub — at the bottom now, where an exit belongs */}
+      <div className="relative z-10 px-4 pb-6 pt-10 sm:px-6 lg:px-8">
+        <BackToHub />
       </div>
     </main>
   );

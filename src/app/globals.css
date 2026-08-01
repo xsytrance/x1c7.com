@@ -729,3 +729,55 @@ body.perf-lite .stage-warpflash { display: none; }
 }
 .stage-trip { animation: stage-trip var(--trip-dur, 7.5s) ease-in-out infinite; }
 body.perf-lite .stage-trip { animation: none; }
+
+/* ═══ THE WALL ══════════════════════════════════════════════════════════════
+   /music's front door: a mosaic of collector covers, one click into the show.
+   Every hover/focus state here is pure CSS on purpose — with ~56 tiles on
+   screen, routing these through React re-renders the whole wall on every
+   pointer move. See docs/WALL-REDESIGN.md. */
+
+.wall-tile {
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1),
+              opacity 0.28s ease,
+              filter 0.28s ease;
+}
+.wall-tile:hover,
+.wall-tile:focus-visible {
+  transform: scale(1.035);
+  z-index: 2;
+}
+
+/* the tile's own genre colour, lit only while it leads */
+.wall-tile__glow {
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  background: radial-gradient(120% 90% at 50% 100%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 65%);
+  box-shadow: inset 0 0 0 2px var(--accent),
+              0 18px 50px -14px color-mix(in srgb, var(--accent) 60%, transparent);
+}
+.wall-tile:hover .wall-tile__glow,
+.wall-tile:focus-visible .wall-tile__glow { opacity: 1; }
+
+/* the title, the vibe and "START THE SHOW" — revealed only on the tile you're
+   on, so the wall at rest is pure album art (the collector card already prints
+   the title into the artwork; overlaying our own would double every title) */
+.wall-tile__reveal { opacity: 0; transition: opacity 0.2s ease; }
+.wall-tile:hover .wall-tile__reveal,
+.wall-tile:focus-visible .wall-tile__reveal { opacity: 1; }
+
+/* the wall dims around whichever tile you're on, so one song leads at a time.
+   :has() keeps this at zero React cost; browsers without it simply don't dim.
+   NOTE: dim with brightness, NOT opacity — opacity lets the page's own
+   background gradient bleed through 60 tiles and the whole wall goes maroon. */
+.wall-grid:has(.wall-tile:hover) .wall-tile:not(:hover),
+.wall-grid:has(.wall-tile:focus-visible) .wall-tile:not(:focus-visible) {
+  filter: brightness(0.4) saturate(0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wall-tile,
+  .wall-tile img { transition: none !important; transform: none !important; }
+  .wall-tile:hover, .wall-tile:focus-visible { transform: none; }
+}
+body.perf-lite .wall-tile img { transition: none; }
+body.perf-lite .wall-tile:hover img { transform: none; }
