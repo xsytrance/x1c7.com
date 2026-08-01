@@ -1,0 +1,240 @@
+{
+ "assets": {
+  "keywords": {
+   "keeping": "/planets/dont-tap-the-glass/scene-keeping.webp",
+   "palms": "/planets/dont-tap-the-glass/scene-palms.webp",
+   "framed": "/planets/dont-tap-the-glass/scene-framed.webp",
+   "cracks": "/planets/dont-tap-the-glass/scene-cracks.webp",
+   "cage": "/planets/dont-tap-the-glass/scene-cage.webp",
+   "exhibit": "/planets/dont-tap-the-glass/scene-exhibit.webp",
+   "collapses": "/planets/dont-tap-the-glass/scene-collapses.webp",
+   "overreaction": "/planets/dont-tap-the-glass/scene-overreaction.webp",
+   "glass": "/planets/dont-tap-the-glass/scene-glass.webp",
+   "admission": "/planets/dont-tap-the-glass/scene-admission.webp",
+   "stares": "/planets/dont-tap-the-glass/scene-stares.webp",
+   "monster": "/planets/dont-tap-the-glass/scene-monster.webp",
+   "hands": "/planets/dont-tap-the-glass/scene-hands.webp",
+   "possess": "/planets/dont-tap-the-glass/scene-possess.webp",
+   "reaction": "/planets/dont-tap-the-glass/scene-reaction.webp",
+   "answer": "/planets/dont-tap-the-glass/scene-answer.webp"
+  },
+  "shots": {
+   "/planets/dont-tap-the-glass/scene-keeping.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-palms.webp": "MACRO",
+   "/planets/dont-tap-the-glass/scene-framed.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-cracks.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-cage.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-exhibit.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-collapses.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-overreaction.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-glass.webp": "MACRO",
+   "/planets/dont-tap-the-glass/scene-admission.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-stares.webp": "CLOSE",
+   "/planets/dont-tap-the-glass/scene-monster.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-hands.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-possess.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-reaction.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-answer.webp": "WIDE"
+  },
+  "broll": [
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s0-6-noir.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-4-dream-collage.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scream/s1-4-anime.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s14-3-pixel.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   }
+  ],
+  "sections": {
+   "defiant": "/planets/dont-tap-the-glass/scene-keeping.webp",
+   "trapped": "/planets/dont-tap-the-glass/scene-cage.webp",
+   "exposed": "/planets/dont-tap-the-glass/scene-hands.webp",
+   "furious": "/planets/dont-tap-the-glass/scene-overreaction.webp",
+   "empty": "/planets/dont-tap-the-glass/scene-answer.webp"
+  },
+  "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/dont-tap-the-glass/stems/stems.json",
+  "stemLag": 0.0
+ },
+ "analysis": {
+  "overallMood": "defiant",
+  "palette": [
+   "#EAF6FF",
+   "#9FD8F2",
+   "#3E5A6B",
+   "#C4342A"
+  ],
+  "summary": "A man in an exhibit and the pane between him and the people tapping on it.",
+  "themes": [
+   "exhibit",
+   "glass",
+   "surveillance",
+   "defiance",
+   "spectacle"
+  ],
+  "keywords": [
+   {
+    "word": "cage",
+    "emotion": "defiant"
+   },
+   {
+    "word": "monster",
+    "emotion": "defiant"
+   },
+   {
+    "word": "glass",
+    "emotion": "defiant"
+   },
+   {
+    "word": "cracks",
+    "emotion": "defiant"
+   },
+   {
+    "word": "exhibit",
+    "emotion": "defiant"
+   }
+  ],
+  "sections": []
+ },
+ "styleHint": "Alternative rock / emo-trap. Cold institutional glass-case light against warm skin, black surround, red emergency bleed.",
+ "generatedAt": "2026-08-01T17:45:00.000Z",
+ "interactions": {
+  "moments": [],
+  "tapEffect": "tap"
+ },
+ "dynamicPlus": {
+  "v": 2,
+  "scene": "EMBERS",
+  "deck": {
+   "glow": 1.45,
+   "grain": 0.42,
+   "density": 2,
+   "vignette": 0.55,
+   "giant": {
+    "pile": 0,
+    "life": 2200,
+    "clearOnSwitch": true
+   }
+  },
+  "words": {
+   "tap": "tap",
+   "glass": "refract",
+   "see": "refract",
+   "cracks": "fracture",
+   "surface": "fracture",
+   "collapses": "fracture",
+   "spreading": "fracture",
+   "exhibit": "vitrine",
+   "framed": "vitrine",
+   "hands": "smudge",
+   "grab": "smudge",
+   "answer": "fogbreath",
+   "whispered": "fogbreath",
+   "fast": "flashbulb",
+   "look": "flashbulb",
+   "palms": "press",
+   "possess": "press",
+   "pressing": "press",
+   "admission": "placard",
+   "name": "placard",
+   "access": "placard",
+   "stares": "mirror",
+   "back": "mirror",
+   "love": "mirror",
+   "cage": "bars",
+   "contained": "bars",
+   "keeping": "bars",
+   "trap": "bars",
+   "overreaction": "overreact",
+   "monster": "overreact",
+   "scream": "overreact"
+  },
+  "acts": [
+   {
+    "start": 148.3,
+    "end": 174.88,
+    "label": "I WAS NEVER THE CAGE",
+    "why": "the bridge, stripped — he hands the accusation back"
+   },
+   {
+    "start": 174.9,
+    "end": 185.4,
+    "label": "DON'T TAP THE GLASS",
+    "why": "the drums drop out for 6.2s and the hook is whispered alone in the dark"
+   },
+   {
+    "start": 185.42,
+    "end": 208.2,
+    "label": "NOW LIVE WITH THE ANSWER",
+    "why": "the final chorus at full weight, and the last word is his"
+   }
+  ],
+  "modes": [
+   {
+    "start": 148.3,
+    "end": 174.88,
+    "mode": "phrase"
+   },
+   {
+    "start": 174.9,
+    "end": 185.4,
+    "mode": "dynamic"
+   },
+   {
+    "start": 185.42,
+    "end": 196.3,
+    "mode": "phrase"
+   },
+   {
+    "start": 196.32,
+    "end": 204.4,
+    "mode": "phrase"
+   },
+   {
+    "start": 204.42,
+    "end": 208.2,
+    "mode": "dynamic"
+   }
+  ],
+  "rolls": [
+   {
+    "start": 148.3,
+    "end": 208.2,
+    "pattern": "bleed",
+    "mix": 0.24,
+    "blend": "screen"
+   }
+  ],
+  "hits": [
+   {
+    "t": 185.54,
+    "dur": 1.2
+   }
+  ],
+  "holds": [
+   {
+    "start": 204.42,
+    "end": 208.2,
+    "art": "/planets/dont-tap-the-glass/scene-answer.webp"
+   }
+  ],
+  "directed": "DON'T TAP THE GLASS — teaser, 9:16 only, VITRINE NOIR, Tranche-8 glass FX (window 148.30-208.20)"
+ }
+}

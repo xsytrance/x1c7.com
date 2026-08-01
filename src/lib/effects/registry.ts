@@ -52,7 +52,14 @@ export type TextEffect =
   // table. `draft` builds the word as cyan blueprint linework and then inks
   // it solid — a plan becoming a fact. `wake` arrives out of focus and
   // spread apart, then snaps sharp — sleepwalking, then not.
-  | "draft" | "wake";
+  | "draft" | "wake"
+  // Tranche 8 (DON'T TAP THE GLASS — Tyler Haze). The whole song is one image:
+  // a man in an exhibit and the glass between him and the people tapping on it.
+  // So the vocabulary is the vitrine — the strike, the crack it leaves, the
+  // greasy handprints, the fogged breath, the flashbulbs, and the moment the
+  // surface finally goes. Built for Juan.
+  | "tap" | "fracture" | "vitrine" | "smudge" | "refract" | "fogbreath"
+  | "flashbulb" | "press" | "placard" | "mirror" | "bars" | "overreact";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -65,6 +72,8 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "chop", "drip",
   "quake", "tilt", "squeeze", "cling",
   "draft", "wake",
+  "tap", "fracture", "vitrine", "smudge", "refract", "fogbreath",
+  "flashbulb", "press", "placard", "mirror", "bars", "overreact",
 ];
 
 export interface EffectLego {
@@ -144,6 +153,21 @@ const SURFACE: EffectLego[] = (Object.keys(SURFACE_SPECS) as SurfaceMode[]).map(
 
 // ── TEXTBOUND (attach to words) ──────────────────────────────────────────────
 const TEXTBOUND: EffectLego[] = [
+  // ── Tranche 8 · DON'T TAP THE GLASS (Tyler Haze) ────────────────────────
+  // The exhibit vocabulary. Every one of these is something that happens to a
+  // pane of glass with a person behind it.
+  { id: "text.tap", class: "textbound", mode: "tap", blurb: "A fingernail strikes the pane — the word rings and a ripple runs out.", tags: ["tap", "knock", "strike", "hit", "glass", "attention", "provoke", "poke"] },
+  { id: "text.fracture", class: "textbound", mode: "fracture", blurb: "A hairline crack runs through the word and branches. Still legible, no longer whole.", tags: ["crack", "cracks", "fracture", "break", "split", "damage", "surface", "collapse"] },
+  { id: "text.vitrine", class: "textbound", mode: "vitrine", blurb: "Museum-case lighting: a hard bar rakes down the word, the rest sits in cold display glow.", tags: ["exhibit", "display", "museum", "specimen", "showcase", "gallery", "art", "show"] },
+  { id: "text.smudge", class: "textbound", mode: "smudge", blurb: "Greasy fingerprints bloom across the word and wipe away, leaving a film.", tags: ["touch", "grab", "hands", "palms", "fingerprints", "reach", "paw", "grope"] },
+  { id: "text.refract", class: "textbound", mode: "refract", blurb: "The word arrives split through thick glass and converges into one.", tags: ["glass", "refract", "distort", "warp", "lens", "vivid", "clear", "see"] },
+  { id: "text.fogbreath", class: "textbound", mode: "fogbreath", blurb: "Written in the condensation of a breath, then a drip clears it.", tags: ["breath", "fog", "whisper", "cold", "close", "secret", "quiet"] },
+  { id: "text.flashbulb", class: "textbound", mode: "flashbulb", blurb: "Crowd cameras go off — hard white pops blow the word out.", tags: ["flash", "camera", "photo", "photos", "press", "paparazzi", "famous", "exposed"] },
+  { id: "text.press", class: "textbound", mode: "press", blurb: "A palm pushes on the pane and the word bulges out toward you, then snaps back.", tags: ["press", "push", "palms", "pressure", "lean", "force", "against"] },
+  { id: "text.placard", class: "textbound", mode: "placard", blurb: "The word types itself out like a specimen label under a rule.", tags: ["label", "name", "sign", "warning", "placard", "tag", "admission", "rules"] },
+  { id: "text.mirror", class: "textbound", mode: "mirror", blurb: "A flipped ghost of the word rises beneath it — you, looking back at yourself.", tags: ["mirror", "reflection", "stare", "stares", "watch", "look", "eyes", "yourself"] },
+  { id: "text.bars", class: "textbound", mode: "bars", blurb: "Cage-bar shadows slide across the word.", tags: ["cage", "trap", "bars", "contained", "keeping", "locked", "captive", "prison"] },
+  { id: "text.overreact", class: "textbound", mode: "overreact", blurb: "Red emergency wash and a violent judder — the crowd loses it.", tags: ["react", "reaction", "overreaction", "scream", "panic", "monster", "freak", "alarm"] },
   { id: "text.burn", class: "textbound", mode: "burn", blurb: "The word chars and flakes to ash.", tags: ["fire", "burn", "rage", "anger", "desire"] },
   { id: "text.shatter", class: "textbound", mode: "shatter", blurb: "The word cracks and flies apart.", tags: ["break", "shatter", "glass", "heartbreak", "goodbye", "shatter"] },
   { id: "text.dissolve", class: "textbound", mode: "dissolve", blurb: "The word blurs and fades to nothing.", tags: ["fade", "forget", "ghost", "memory", "gone"] },

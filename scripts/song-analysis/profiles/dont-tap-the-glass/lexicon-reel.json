@@ -1,0 +1,56 @@
+{
+ "v": 1,
+ "id": "dont-tap-the-glass",
+ "generatedAt": "2026-08-01T17:35:00.000Z",
+ "method": "cloud-judged from cached vision readings (no GPU)",
+ "counts": {
+  "picks": 5
+ },
+ "reel": [
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s0-6-noir.webp",
+   "key": "save/s0-6-noir.webp",
+   "word": "save",
+   "t": 155.6,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-4-dream-collage.webp",
+   "key": "cage/s2-4-dream-collage.webp",
+   "word": "cage",
+   "t": 162.4,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+   "key": "tap/s1-2-neon-night.webp",
+   "word": "tap",
+   "t": 177.9,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scream/s1-4-anime.webp",
+   "key": "scream/s1-4-anime.webp",
+   "word": "scream",
+   "t": 194.0,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s14-3-pixel.webp",
+   "key": "hands/s14-3-pixel.webp",
+   "word": "hands",
+   "t": 199.1,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  }
+ ]
+}

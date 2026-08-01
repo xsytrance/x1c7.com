@@ -1,0 +1,59 @@
+{
+ "v": 1,
+ "id": "dont-tap-the-glass",
+ "kind": "lexicon-broll",
+ "window": {
+  "start": 148.3,
+  "end": 208.2
+ },
+ "method": {
+  "gpu": false,
+  "note": "cloud-judged from cached vision readings; rejected human faces and any textInImage",
+  "curation": "Kept only picks that sit inside the VITRINE NOIR voice. Dropped ['glass', 'love', 'fast'] — a paper-cut bride, a knight and noblewoman and a pixelated road do not belong in a cold glass-case film, and padding the count would have cost more than the extra coverage was worth. The A-roll already carries 9 no-person plates."
+ },
+ "counts": {
+  "picks": 5
+ },
+ "picks": [
+  {
+   "word": "save",
+   "t": 155.6,
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s0-6-noir.webp",
+   "emotion": "melancholic and introspective",
+   "caption": "A dimly lit, abandoned study with two lamps casting stark shadows over a desk and chairs, evoking th",
+   "crop": "safe"
+  },
+  {
+   "word": "cage",
+   "t": 162.4,
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-4-dream-collage.webp",
+   "emotion": "0.45",
+   "caption": "A weathered wooden cage floats amidst stormy clouds, with birds escaping and floating objects drifti",
+   "crop": "safe"
+  },
+  {
+   "word": "tap",
+   "t": 177.9,
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+   "emotion": "Playful yet eerie",
+   "caption": "A rain-slicked urban alley at night reflects neon lights as a lone chrome faucet drips water onto th",
+   "crop": "safe"
+  },
+  {
+   "word": "scream",
+   "t": 194.0,
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scream/s1-4-anime.webp",
+   "emotion": "Sultry",
+   "caption": "A lone figure stands amidst a burning, crumbling cityscape where fire and smoke twist through broken",
+   "crop": "safe"
+  },
+  {
+   "word": "hands",
+   "t": 199.1,
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s14-3-pixel.webp",
+   "emotion": "Defiant Celebration",
+   "caption": "Three pixelated hands reach upward with one palm open and two fists clenched, surrounded by glowing ",
+   "crop": "safe"
+  }
+ ]
+}

@@ -246,6 +246,19 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   cling: (w, a) => <WordCling word={w} airtime={a} />,
   draft: (w, a) => <WordDraft word={w} airtime={a} />,
   wake: (w, a) => <WordWake word={w} airtime={a} />,
+  // Tranche 8 — the exhibit vocabulary (Tyler Haze, DON'T TAP THE GLASS).
+  tap: (w, a) => <WordTap word={w} airtime={a} />,
+  fracture: (w, a) => <WordFracture word={w} airtime={a} />,
+  vitrine: (w, a) => <WordVitrine word={w} airtime={a} />,
+  smudge: (w, a) => <WordSmudge word={w} airtime={a} />,
+  refract: (w, a) => <WordRefract word={w} airtime={a} />,
+  fogbreath: (w, a) => <WordFogbreath word={w} airtime={a} />,
+  flashbulb: (w, a) => <WordFlashbulb word={w} airtime={a} />,
+  press: (w, a) => <WordPress word={w} airtime={a} />,
+  placard: (w, a) => <WordPlacard word={w} airtime={a} />,
+  mirror: (w, a) => <WordMirror word={w} airtime={a} />,
+  bars: (w, a) => <WordBars word={w} airtime={a} />,
+  overreact: (w, a) => <WordOverreact word={w} airtime={a} />,
 };
 
 // MOTION SHOTS — the camera moves a director can put under a 1–2s scene. Each
@@ -1786,7 +1799,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // The headroom is what stops a long word overshooting the edge mid-entrance.
     // Short words are unaffected — fitScale only ever drops below 1 when the
     // word genuinely does not fit.
-    fitScale = Math.min(1, (vwPx * 0.78) / Math.max(1, rawW));
+    // 78% is right on a 1920 master. At 1080 portrait it is not: the same word
+    // occupies proportionally more of a narrower frame, and the entrance
+    // transforms (slam/cling/rise) plus the glow halo grow what the viewer sees
+    // without changing the layout width this clamp can measure. Portrait gets a
+    // tighter target so a giant word lands inside the frame instead of parking
+    // on — and bleeding over — the wall. This is why §11 concluded dynamic mode
+    // "clips at loud moments" and told you to ship phrase throughout in 9:16.
+    const portrait = typeof window !== "undefined" && window.innerHeight > window.innerWidth * 1.2;
+    fitScale = Math.min(1, (vwPx * (portrait ? 0.56 : 0.78)) / Math.max(1, rawW));
     estH = basePx * dynRaw.size * delivery * fitScale;
     estW = Math.min(rawW * fitScale, vwPx * 0.95);
     // Stagecraft offsets the word off-centre for composition — great at 1920,
@@ -1798,6 +1819,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const padPx = Math.max(10, vwPx * 0.03);
     const maxXvw = Math.max(0, ((vwPx - estW) / 2 - padPx) / vwPx * 100);
     dynX = Math.max(-maxXvw, Math.min(maxXvw, dynRaw.x));
+    // In portrait, centre it and stop arguing. The off-centre shove is
+    // composition for a 1920 frame; at 1080 the room it needs does not exist,
+    // and every giant word that clipped in 9:16 was a word that fit but had
+    // been pushed. maxXvw already clamps this, but it clamps against `estW`,
+    // an ESTIMATE — and the estimate cannot see the entrance transform or the
+    // glow halo, so it keeps handing back a few vw of headroom that isn't real.
+    if (portrait) dynX = 0;
   }
   // FIT-FIRST, now MEASURED: before the browser paints, read the word's real
   // laid-out size (offset* — immune to entrance transforms), shrink the font
@@ -3761,6 +3789,340 @@ async function micPermissionGranted(): Promise<boolean> {
     return st.state === "granted";
   } catch { return false; }
 }
+
+// ═══════════════════════════════════════════════════════════════════════════
+// TRANCHE 8 — DON'T TAP THE GLASS (Tyler Haze, for Juan).
+// The whole song is one image: a man in an exhibit, and the pane between him
+// and the people tapping on it. So every effect here is something that happens
+// to glass with a person behind it — the strike, the crack it leaves, the
+// greasy handprints, the fogged breath, the flashbulbs, and the surface going.
+// ═══════════════════════════════════════════════════════════════════════════
+
+function WordTap({ word, airtime }: { word: string; airtime: number }) {
+  // A fingernail hits the pane. The word takes the hit (a hard scale punch that
+  // settles) and a ring runs out from the strike point. "Give a tap, I react."
+  const dur = Math.min(1.4, Math.max(0.7, airtime * 0.8));
+  return (
+    <span className="relative inline-block">
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-1/2 rounded-full"
+        style={{ width: "1.2em", height: "1.2em", marginLeft: "-0.6em", marginTop: "-0.6em", border: "0.045em solid currentColor" }}
+        initial={{ scale: 0.12, opacity: 0.85 }}
+        animate={{ scale: 3.4, opacity: 0 }}
+        transition={{ duration: dur * 0.8, ease: "easeOut" }}
+      />
+      <m.span
+        className="inline-block whitespace-pre"
+        initial={{ scale: 1.16 }}
+        animate={{ scale: [1.16, 0.965, 1.012, 1] }}
+        transition={{ duration: dur * 0.55, times: [0, 0.4, 0.75, 1], ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+function WordFracture({ word, airtime }: { word: string; airtime: number }) {
+  // A hairline runs through the word and branches. It stays readable — the
+  // point is that it is no longer whole. "when the surface cracks".
+  const dur = Math.min(1.8, Math.max(0.9, airtime * 0.9));
+  const legs = [
+    { rot: -12, top: "46%", w: "104%", d: 0 },
+    { rot: 26, top: "38%", w: "44%", d: 0.16 },
+    { rot: -38, top: "58%", w: "34%", d: 0.26 },
+  ];
+  return (
+    <span className="relative inline-block">
+      <span className="inline-block whitespace-pre">{word}</span>
+      {legs.map((l, i) => (
+        <m.span
+          key={i}
+          aria-hidden
+          className="pointer-events-none absolute left-0"
+          style={{
+            top: l.top, height: "0.02em", background: "currentColor",
+            transform: `rotate(${l.rot}deg)`, transformOrigin: "0% 50%",
+            filter: "drop-shadow(0 0 0.05em currentColor)", mixBlendMode: "screen",
+          }}
+          initial={{ width: 0, opacity: 0 }}
+          animate={{ width: l.w, opacity: [0, 1, 0.72] }}
+          transition={{ duration: dur * 0.5, delay: dur * l.d, ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+function WordVitrine({ word, airtime }: { word: string; airtime: number }) {
+  // Museum-case light: a hard bar rakes down the word while the rest of it sits
+  // in the cold glow of a display. The word is a specimen.
+  const dur = Math.min(2.2, Math.max(1.0, airtime));
+  return (
+    <span className="relative inline-block overflow-hidden">
+      <m.span
+        className="inline-block whitespace-pre"
+        initial={{ filter: "brightness(0.55) saturate(0.7)" }}
+        animate={{ filter: ["brightness(0.55) saturate(0.7)", "brightness(1.25) saturate(1)", "brightness(0.8) saturate(0.85)"] }}
+        transition={{ duration: dur, times: [0, 0.42, 1], ease: "easeInOut" }}
+      >
+        {word}
+      </m.span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute inset-x-[-10%]"
+        style={{ height: "34%", background: "linear-gradient(180deg, transparent, rgba(255,255,255,0.55), transparent)", mixBlendMode: "screen" }}
+        initial={{ top: "-40%" }}
+        animate={{ top: "120%" }}
+        transition={{ duration: dur * 0.7, ease: "easeInOut" }}
+      />
+    </span>
+  );
+}
+
+function WordSmudge({ word, airtime }: { word: string; airtime: number }) {
+  // Greasy prints bloom where hands have been, then wipe, leaving a film.
+  // "They can reach, pull, and grab."
+  const dur = Math.min(2.0, Math.max(0.9, airtime * 0.95));
+  const marks = [
+    { x: "18%", y: "34%", s: 0.9, d: 0 },
+    { x: "62%", y: "56%", s: 1.15, d: 0.18 },
+    { x: "40%", y: "22%", s: 0.7, d: 0.32 },
+  ];
+  return (
+    <span className="relative inline-block">
+      <m.span
+        className="inline-block whitespace-pre"
+        animate={{ filter: ["blur(0px)", "blur(0.012em)", "blur(0px)"] }}
+        transition={{ duration: dur, ease: "easeInOut" }}
+      >
+        {word}
+      </m.span>
+      {marks.map((mk, i) => (
+        <m.span
+          key={i}
+          aria-hidden
+          className="pointer-events-none absolute rounded-full"
+          style={{
+            left: mk.x, top: mk.y, width: `${0.5 * mk.s}em`, height: `${0.62 * mk.s}em`,
+            background: "radial-gradient(circle, rgba(255,255,255,0.30), rgba(255,255,255,0.06) 62%, transparent 74%)",
+            filter: "blur(0.05em)", mixBlendMode: "screen",
+          }}
+          initial={{ opacity: 0, scale: 0.6 }}
+          animate={{ opacity: [0, 0.95, 0.18], scale: [0.6, 1.05, 1.1] }}
+          transition={{ duration: dur * 0.8, delay: dur * mk.d, ease: "easeOut" }}
+        />
+      ))}
+    </span>
+  );
+}
+
+function WordRefract({ word, airtime }: { word: string; airtime: number }) {
+  // Seen through the thickness of the pane: three offset copies that converge
+  // into one as your eye finds the true edge. "Let's be clear, let's be vivid."
+  const dur = Math.min(1.6, Math.max(0.7, airtime * 0.8));
+  const ghosts = [
+    { dx: -0.07, col: "rgba(120,200,255,0.85)" },
+    { dx: 0.07, col: "rgba(255,140,180,0.85)" },
+  ];
+  return (
+    <span className="relative inline-block">
+      {ghosts.map((g, i) => (
+        <m.span
+          key={i}
+          aria-hidden
+          className="absolute inset-0 inline-block whitespace-pre"
+          style={{ color: g.col, mixBlendMode: "screen" }}
+          initial={{ x: `${g.dx * 100}%`, opacity: 0.9 }}
+          animate={{ x: "0%", opacity: 0 }}
+          transition={{ duration: dur, ease: [0.16, 1, 0.3, 1] }}
+        >
+          {word}
+        </m.span>
+      ))}
+      <m.span
+        className="inline-block whitespace-pre"
+        initial={{ opacity: 0.45, filter: "blur(0.035em)" }}
+        animate={{ opacity: 1, filter: "blur(0px)" }}
+        transition={{ duration: dur * 0.8, ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+function WordFogbreath({ word, airtime }: { word: string; airtime: number }) {
+  // Written in the condensation of a breath on the inside of the pane, then a
+  // drip runs and takes it. The whispered hook lives here.
+  const dur = Math.min(2.6, Math.max(1.2, airtime));
+  return (
+    <span className="relative inline-block">
+      <m.span
+        className="inline-block whitespace-pre"
+        initial={{ opacity: 0, filter: "blur(0.09em)", letterSpacing: "0.06em" }}
+        animate={{ opacity: [0, 0.92, 0.7], filter: ["blur(0.09em)", "blur(0.012em)", "blur(0.05em)"], letterSpacing: ["0.06em", "0.01em", "0.02em"] }}
+        transition={{ duration: dur, times: [0, 0.45, 1], ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute"
+        style={{ left: "37%", top: "8%", width: "0.03em", background: "linear-gradient(180deg, rgba(255,255,255,0.55), transparent)", filter: "blur(0.01em)" }}
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: ["0em", "1.05em"], opacity: [0, 0.8, 0] }}
+        transition={{ duration: dur * 0.65, delay: dur * 0.42, ease: "easeIn" }}
+      />
+    </span>
+  );
+}
+
+function WordFlashbulb({ word, airtime }: { word: string; airtime: number }) {
+  // The crowd's cameras go off. Hard white pops blow the word out and leave it
+  // over-exposed for a beat. "photos exposing all my opps."
+  const dur = Math.min(1.5, Math.max(0.7, airtime * 0.8));
+  return (
+    <span className="relative inline-block">
+      <m.span
+        className="inline-block whitespace-pre"
+        animate={{
+          filter: ["brightness(1)", "brightness(3.4)", "brightness(1)", "brightness(2.6)", "brightness(1.05)"],
+          scale: [1, 1.035, 1, 1.02, 1],
+        }}
+        transition={{ duration: dur, times: [0, 0.1, 0.3, 0.44, 1], ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute inset-[-45%]"
+        style={{ background: "radial-gradient(circle, rgba(255,255,255,0.9), transparent 62%)", mixBlendMode: "screen" }}
+        animate={{ opacity: [0, 0.95, 0, 0.7, 0] }}
+        transition={{ duration: dur, times: [0, 0.1, 0.3, 0.44, 0.62], ease: "easeOut" }}
+      />
+    </span>
+  );
+}
+
+function WordPress({ word, airtime }: { word: string; airtime: number }) {
+  // A palm leans on the pane from your side and the word bulges out toward you
+  // before the glass pushes back. "You keep pressing your palms."
+  const dur = Math.min(1.9, Math.max(0.9, airtime * 0.9));
+  return (
+    <m.span
+      className="inline-block whitespace-pre"
+      style={{ transformOrigin: "50% 50%" }}
+      animate={{ scaleX: [1, 1.14, 0.985, 1], scaleY: [1, 0.9, 1.02, 1], filter: ["blur(0px)", "blur(0.02em)", "blur(0px)", "blur(0px)"] }}
+      transition={{ duration: dur, times: [0, 0.42, 0.72, 1], ease: "easeInOut" }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
+function WordPlacard({ word, airtime }: { word: string; airtime: number }) {
+  // The specimen label under the case: the word types itself out and a thin
+  // rule draws under it. "You paid admission — that ain't access."
+  const dur = Math.min(2.0, Math.max(0.9, airtime * 0.9));
+  const letters = [...word];
+  const step = (dur * 0.55) / Math.max(1, letters.length);
+  return (
+    <span className="relative inline-block">
+      <span className="inline-block whitespace-pre" style={{ letterSpacing: "0.05em" }}>
+        {letters.map((ch, i) => (
+          <m.span
+            key={i}
+            className="inline-block"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.001, delay: i * step }}
+          >
+            {ch === " " ? " " : ch}
+          </m.span>
+        ))}
+      </span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute left-0"
+        style={{ bottom: "-0.14em", height: "0.022em", background: "currentColor", opacity: 0.75 }}
+        initial={{ width: 0 }}
+        animate={{ width: "100%" }}
+        transition={{ duration: dur * 0.6, ease: "easeOut" }}
+      />
+    </span>
+  );
+}
+
+function WordMirror({ word, airtime }: { word: string; airtime: number }) {
+  // A flipped ghost rises under the word — the pane handing you your own
+  // reflection. "Love what you see till it stares right back."
+  const dur = Math.min(2.2, Math.max(1.0, airtime));
+  return (
+    <span className="relative inline-block">
+      <span className="inline-block whitespace-pre">{word}</span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute left-0 inline-block whitespace-pre"
+        style={{
+          top: "98%", transform: "scaleY(-1)", transformOrigin: "50% 0%",
+          WebkitMaskImage: "linear-gradient(180deg, rgba(0,0,0,0.55), transparent 72%)",
+          maskImage: "linear-gradient(180deg, rgba(0,0,0,0.55), transparent 72%)",
+        }}
+        initial={{ opacity: 0, y: "0.1em" }}
+        animate={{ opacity: [0, 0.5, 0.34], y: "0em" }}
+        transition={{ duration: dur, times: [0, 0.5, 1], ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+function WordBars({ word, airtime }: { word: string; airtime: number }) {
+  // Cage-bar shadows travel across the word. "I was never the cage."
+  const dur = Math.min(2.4, Math.max(1.1, airtime));
+  return (
+    <span className="relative inline-block overflow-hidden">
+      <span className="inline-block whitespace-pre">{word}</span>
+      <m.span
+        aria-hidden
+        className="pointer-events-none absolute inset-y-[-20%]"
+        style={{
+          width: "220%",
+          background: "repeating-linear-gradient(90deg, rgba(0,0,0,0.72) 0 0.09em, transparent 0.09em 0.42em)",
+          mixBlendMode: "multiply",
+        }}
+        initial={{ left: "-120%" }}
+        animate={{ left: "100%" }}
+        transition={{ duration: dur, ease: "linear" }}
+      />
+    </span>
+  );
+}
+
+function WordOverreact({ word, airtime }: { word: string; airtime: number }) {
+  // The room loses it. Red emergency wash and a violent multi-axis judder.
+  // "Look at 'em all… cue the overreaction."
+  const dur = Math.min(1.5, Math.max(0.6, airtime * 0.75));
+  return (
+    <m.span
+      className="inline-block whitespace-pre"
+      animate={{
+        x: [0, -6, 7, -5, 3, -2, 0],
+        y: [0, 3, -4, 2, -2, 1, 0],
+        rotate: [0, -1.4, 1.6, -1, 0.6, -0.3, 0],
+        color: ["currentColor", "#ff2d2d", "currentColor", "#ff5a3c", "currentColor"],
+        filter: ["brightness(1)", "brightness(1.5)", "brightness(1)", "brightness(1.35)", "brightness(1)"],
+      }}
+      transition={{ duration: dur, ease: "easeInOut" }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
 // Once per song per page-load — module scope because the primer UNMOUNTS
 // during a blow/scream moment and remounts after; any in-component guard
 // would reset and resurrect a banner the listener already dismissed.
