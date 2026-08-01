@@ -1,58 +1,89 @@
 {
- "v": 1,
+ "v": 2,
  "id": "dont-tap-the-glass",
- "kind": "lexicon-broll",
  "window": {
-  "start": 148.3,
-  "end": 208.2
+  "start": 124.14,
+  "end": 183.14
  },
  "method": {
   "gpu": false,
-  "note": "cloud-judged from cached vision readings; rejected human faces and any textInImage",
-  "curation": "Kept only picks that sit inside the VITRINE NOIR voice. Dropped ['glass', 'love', 'fast'] — a paper-cut bride, a knight and noblewoman and a pixelated road do not belong in a cold glass-case film, and padding the count would have cost more than the extra coverage was worth. The A-roll already carries 9 no-person plates."
+  "note": "theme-matched across 49 lexicon words (1524 candidates); faces and textInImage rejected; dark/cold readings preferred",
+  "curation": "Kept 8 of 21. Dropped ['glass', 'scream', 'glass', 'hands', 'rage', 'panic', 'press', 'window', 'crack', 'free', 'stage', 'crowd', 'empty']: the lexicon's art for those words is chalk-drawn, rainbow, sunlit or Gothic-warm — it would fight a cold glass-case film. The lexicon has very little dark/institutional/glass imagery; this is a genuine coverage gap, not a curation preference."
  },
  "counts": {
-  "picks": 5
+  "picks": 8
  },
  "picks": [
   {
-   "word": "save",
-   "t": 155.6,
-   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s0-6-noir.webp",
-   "emotion": "melancholic and introspective",
-   "caption": "A dimly lit, abandoned study with two lamps casting stark shadows over a desk and chairs, evoking th",
+   "t": 126.52,
+   "word": "door",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s0-1-graphic-novel.webp",
+   "emotion": "Sinister playfulness with gritty noir-cartoon atmosphere",
+   "line": "You paid admission — that ain't access",
+   "caption": "A dilapidated hallway with a double wooden door slightly ajar, casting stark shadows on cr",
    "crop": "safe"
   },
   {
+   "t": 129.06,
+   "word": "mirror",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mirror/s2-6-film-still.webp",
+   "emotion": "Heartbreak",
+   "line": "Love what you see till it stares right back",
+   "caption": "A glowing lighted mirror reflects a crimson heart and flickering candles in an empty, diml",
+   "crop": "safe"
+  },
+  {
+   "t": 132.9,
+   "word": "shatter",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shatter/s0-6-cinema.webp",
+   "emotion": "defiance, transformation",
+   "line": "when the surface cracks",
+   "caption": "A burst of golden shards explodes upward against a dark backdrop, illuminated by a soft gl",
+   "crop": "safe"
+  },
+  {
+   "t": 148.66,
+   "word": "dark",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s0-3-neon-night.webp",
+   "emotion": "Dark Seductive",
+   "line": "Don't tap the glass (whispered)",
+   "caption": "Rain-slicked urban street at night reflects neon lights in a moody, empty alleyway.",
+   "crop": "safe"
+  },
+  {
+   "t": 150.72,
    "word": "cage",
-   "t": 162.4,
-   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-4-dream-collage.webp",
-   "emotion": "0.45",
-   "caption": "A weathered wooden cage floats amidst stormy clouds, with birds escaping and floating objects drifti",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s0-3-chalkboard.webp",
+   "emotion": "Aching Defiant Hope",
+   "line": "Is it keeping me in, or keeping you safe?",
+   "caption": "A vibrant, multi-colored cage structure stands alone against a dark background, its geomet",
    "crop": "safe"
   },
   {
-   "word": "tap",
-   "t": 177.9,
-   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
-   "emotion": "Playful yet eerie",
-   "caption": "A rain-slicked urban alley at night reflects neon lights as a lone chrome faucet drips water onto th",
+   "t": 160.9,
+   "word": "run",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s0-4-cinema.webp",
+   "emotion": "0.85",
+   "line": "then you ran from my name",
+   "caption": "A rain-slicked path glows under a distant streetlight, leading into the foggy night.",
    "crop": "safe"
   },
   {
-   "word": "scream",
-   "t": 194.0,
-   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scream/s1-4-anime.webp",
-   "emotion": "Sultry",
-   "caption": "A lone figure stands amidst a burning, crumbling cityscape where fire and smoke twist through broken",
+   "t": 167.04,
+   "word": "broken",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s1-2-cinema.webp",
+   "emotion": "Euphoric, Uplifting, Intense",
+   "line": "when the whole thing collapses",
+   "caption": "A lone sun casts a warm glow over shattered glass fragments scattered across a dark, blurr",
    "crop": "safe"
   },
   {
-   "word": "hands",
-   "t": 199.1,
-   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s14-3-pixel.webp",
-   "emotion": "Defiant Celebration",
-   "caption": "Three pixelated hands reach upward with one palm open and two fists clenched, surrounded by glowing ",
+   "t": 177.8,
+   "word": "silence",
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
+   "emotion": "peaceful",
+   "line": "[the drop — the hook alone in the dark]",
+   "caption": "A single candle flickers with fragile warmth against a pitch-black void, its flame casting",
    "crop": "safe"
   }
  ]

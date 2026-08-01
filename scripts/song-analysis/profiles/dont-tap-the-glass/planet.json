@@ -1,73 +1,41 @@
 {
  "assets": {
   "keywords": {
-   "keeping": "/planets/dont-tap-the-glass/scene-keeping.webp",
-   "palms": "/planets/dont-tap-the-glass/scene-palms.webp",
-   "framed": "/planets/dont-tap-the-glass/scene-framed.webp",
-   "cracks": "/planets/dont-tap-the-glass/scene-cracks.webp",
-   "cage": "/planets/dont-tap-the-glass/scene-cage.webp",
-   "exhibit": "/planets/dont-tap-the-glass/scene-exhibit.webp",
-   "collapses": "/planets/dont-tap-the-glass/scene-collapses.webp",
-   "overreaction": "/planets/dont-tap-the-glass/scene-overreaction.webp",
    "glass": "/planets/dont-tap-the-glass/scene-glass.webp",
-   "admission": "/planets/dont-tap-the-glass/scene-admission.webp",
+   "cage": "/planets/dont-tap-the-glass/scene-cage.webp",
    "stares": "/planets/dont-tap-the-glass/scene-stares.webp",
    "monster": "/planets/dont-tap-the-glass/scene-monster.webp",
    "hands": "/planets/dont-tap-the-glass/scene-hands.webp",
-   "possess": "/planets/dont-tap-the-glass/scene-possess.webp",
+   "keeping": "/planets/dont-tap-the-glass/scene-keeping.webp",
+   "exhibit": "/planets/dont-tap-the-glass/scene-exhibit.webp",
+   "answer": "/planets/dont-tap-the-glass/scene-answer.webp",
+   "name": "/planets/dont-tap-the-glass/scene-name.webp",
    "reaction": "/planets/dont-tap-the-glass/scene-reaction.webp",
-   "answer": "/planets/dont-tap-the-glass/scene-answer.webp"
+   "access": "/planets/dont-tap-the-glass/scene-keeping.webp",
+   "act": "/planets/dont-tap-the-glass/scene-exhibit.webp",
+   "trap": "/planets/dont-tap-the-glass/scene-cage.webp",
+   "possess": "/planets/dont-tap-the-glass/scene-hands.webp",
+   "cracks": "/planets/dont-tap-the-glass/scene-monster.webp",
+   "safe": "/planets/dont-tap-the-glass/scene-keeping.webp"
   },
   "shots": {
-   "/planets/dont-tap-the-glass/scene-keeping.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-palms.webp": "MACRO",
-   "/planets/dont-tap-the-glass/scene-framed.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-cracks.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-glass.webp": "CLOSE",
    "/planets/dont-tap-the-glass/scene-cage.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-exhibit.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-collapses.webp": "MED",
-   "/planets/dont-tap-the-glass/scene-overreaction.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-glass.webp": "MACRO",
-   "/planets/dont-tap-the-glass/scene-admission.webp": "MED",
    "/planets/dont-tap-the-glass/scene-stares.webp": "CLOSE",
-   "/planets/dont-tap-the-glass/scene-monster.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-monster.webp": "MED",
    "/planets/dont-tap-the-glass/scene-hands.webp": "MED",
-   "/planets/dont-tap-the-glass/scene-possess.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-reaction.webp": "WIDE",
-   "/planets/dont-tap-the-glass/scene-answer.webp": "WIDE"
+   "/planets/dont-tap-the-glass/scene-keeping.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-exhibit.webp": "WIDE",
+   "/planets/dont-tap-the-glass/scene-answer.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-name.webp": "MED",
+   "/planets/dont-tap-the-glass/scene-reaction.webp": "MED"
   },
-  "broll": [
-   {
-    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s0-6-noir.webp",
-    "crop": "safe",
-    "shot": "WIDE"
-   },
-   {
-    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-4-dream-collage.webp",
-    "crop": "safe",
-    "shot": "WIDE"
-   },
-   {
-    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
-    "crop": "safe",
-    "shot": "WIDE"
-   },
-   {
-    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scream/s1-4-anime.webp",
-    "crop": "safe",
-    "shot": "WIDE"
-   },
-   {
-    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s14-3-pixel.webp",
-    "crop": "safe",
-    "shot": "WIDE"
-   }
-  ],
+  "broll": [],
   "sections": {
-   "defiant": "/planets/dont-tap-the-glass/scene-keeping.webp",
+   "defiant": "/planets/dont-tap-the-glass/scene-glass.webp",
    "trapped": "/planets/dont-tap-the-glass/scene-cage.webp",
-   "exposed": "/planets/dont-tap-the-glass/scene-hands.webp",
-   "furious": "/planets/dont-tap-the-glass/scene-overreaction.webp",
+   "exposed": "/planets/dont-tap-the-glass/scene-stares.webp",
+   "furious": "/planets/dont-tap-the-glass/scene-monster.webp",
    "empty": "/planets/dont-tap-the-glass/scene-answer.webp"
   },
   "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/dont-tap-the-glass/stems/stems.json",
@@ -168,73 +136,49 @@
   },
   "acts": [
    {
-    "start": 148.3,
+    "start": 124.14,
+    "end": 145.9,
+    "label": "THAT AIN'T ACCESS",
+    "why": "the chorus at full weight"
+   },
+   {
+    "start": 146.0,
     "end": 174.88,
     "label": "I WAS NEVER THE CAGE",
     "why": "the bridge, stripped — he hands the accusation back"
    },
    {
     "start": 174.9,
-    "end": 185.4,
+    "end": 183.14,
     "label": "DON'T TAP THE GLASS",
-    "why": "the drums drop out for 6.2s and the hook is whispered alone in the dark"
-   },
-   {
-    "start": 185.42,
-    "end": 208.2,
-    "label": "NOW LIVE WITH THE ANSWER",
-    "why": "the final chorus at full weight, and the last word is his"
+    "why": "the riser, then the drums vanish and it ends in the dark"
    }
   ],
   "modes": [
    {
-    "start": 148.3,
-    "end": 174.88,
-    "mode": "phrase"
-   },
-   {
-    "start": 174.9,
-    "end": 185.4,
+    "start": 124.14,
+    "end": 145.9,
     "mode": "dynamic"
    },
    {
-    "start": 185.42,
-    "end": 196.3,
+    "start": 146.0,
+    "end": 158.8,
     "mode": "phrase"
    },
    {
-    "start": 196.32,
-    "end": 204.4,
-    "mode": "phrase"
-   },
-   {
-    "start": 204.42,
-    "end": 208.2,
+    "start": 158.86,
+    "end": 183.14,
     "mode": "dynamic"
    }
   ],
-  "rolls": [
-   {
-    "start": 148.3,
-    "end": 208.2,
-    "pattern": "bleed",
-    "mix": 0.24,
-    "blend": "screen"
-   }
-  ],
+  "rolls": [],
   "hits": [
    {
-    "t": 185.54,
-    "dur": 1.2
+    "t": 172.4,
+    "dur": 1.1
    }
   ],
-  "holds": [
-   {
-    "start": 204.42,
-    "end": 208.2,
-    "art": "/planets/dont-tap-the-glass/scene-answer.webp"
-   }
-  ],
-  "directed": "DON'T TAP THE GLASS — teaser, 9:16 only, VITRINE NOIR, Tranche-8 glass FX (window 148.30-208.20)"
+  "holds": [],
+  "directed": "DON'T TAP THE GLASS teaser v3 — his real photographs matted out (u2net) and composited into Lexsycon worlds; nothing of him generated (window 124.14-183.14)"
  }
 }

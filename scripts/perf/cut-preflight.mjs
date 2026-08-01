@@ -48,6 +48,33 @@ const words = (row.lyrics_synced?.words ?? []).filter((w) => w.t >= FROM && w.t 
 if (!words.length) FAIL("no lyrics_synced words inside the window");
 else OK(`${words.length} words in window (${(words.length / (TO - FROM) * 60).toFixed(0)}/min)`);
 
+// ── 1b. THE SECOND ONE THAT BIT US — words must SPAN the window, not just
+// exist in it. A cut shipped where the first 24.5s (41% of the video) had no
+// lyric at all: the window had been moved earlier without rebuilding the
+// alignment, so every word sat in the back half and the stage fell back to the
+// title card for the whole opening. The total-count check above passed
+// happily — 83 words looked healthy. Density is not coverage. Measure the
+// silence: the lead-in before the first word, the tail after the last, and the
+// widest hole between any two.
+if (words.length) {
+  const HOLE = 6;   // seconds of dead air a viewer reads as "it's broken"
+  const lead = words[0].t - FROM;
+  const tail = TO - words[words.length - 1].t;
+  let gap = 0, gapAt = 0;
+  for (let i = 1; i < words.length; i++) {
+    const g = words[i].t - words[i - 1].t;
+    if (g > gap) { gap = g; gapAt = words[i - 1].t; }
+  }
+  const say = (label, secs, at) =>
+    `${label} ${secs.toFixed(1)}s${at != null ? ` at ${at.toFixed(2)}` : ""} (${(secs / (TO - FROM) * 100).toFixed(0)}% of the cut)`;
+  if (lead > HOLE) FAIL(say("DEAD AIR before the first word:", lead) + " — the window very likely moved without rebuilding aligned.json");
+  else OK(`lead-in ${lead.toFixed(1)}s`);
+  if (tail > HOLE) FAIL(say("DEAD AIR after the last word:", tail));
+  else OK(`tail ${tail.toFixed(1)}s`);
+  if (gap > HOLE) FAIL(say("DEAD AIR mid-window:", gap, gapAt));
+  else OK(`largest mid-window gap ${gap.toFixed(1)}s`);
+}
+
 // ── 2. THE ONE THAT BIT US — stem energy across the whole window ───────────
 // The engine scales word size by measured lead-vocal energy and drives the
 // backdrop off the same envelopes. A window sitting past the end of the data

@@ -96,6 +96,12 @@ scripts/song-analysis/profiles/*/stems/
 # transcripts beside them are the part worth keeping.
 scripts/song-analysis/profiles/*/whisper*/*.log
 scripts/song-art/*-out/
+# Art intermediates: mattes, blur-extended plates and composites. The webp that
+# actually ships is published to public/planets/<slug>/; these are ~30MB of
+# working PNGs, regenerable from extract-subject.py + the source photos.
+scripts/song-art/*-cut/
+scripts/song-art/*-real/
+scripts/song-art/*-comp/
 .env*
 
 # python bytecode
