@@ -320,7 +320,6 @@ export default function PressEditor({ templateId }: { templateId?: string }) {
     void import("@/lib/press/seeds/lexiconSeeds").then(async ({ lexiconPressings }) => {
       try { setPressings(await lexiconPressings(project.lyrics!)); } catch { setPressings([]); }
     });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode, project.lyrics]);
 
   function wearPressing(pr: import("@/lib/press/seeds/lexiconSeeds").Pressing | null) {

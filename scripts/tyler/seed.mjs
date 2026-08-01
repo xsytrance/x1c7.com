@@ -72,7 +72,6 @@ function block(name) {
   throw new Error(`unbalanced ${name}`);
 }
 
-// eslint-disable-next-line no-eval
 const evalBlock = (name) => eval(`(${block(name).replace(/,(\s*[}\]])/g, "$1")})`);
 
 const TYLER = evalBlock("export const TYLER =");

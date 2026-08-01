@@ -1,5 +1,7 @@
 "use client";
 
+/* eslint-disable @next/next/no-img-element */
+
 import Link from "next/link";
 import { m, useReducedMotion } from "framer-motion";
 import { MagneticCard } from "./MagneticCard";

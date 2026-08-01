@@ -30,7 +30,9 @@ export function BookletBuilder({ project, artUrl, artDim, artImg }: {
   const setBooklet = (b: BookletState | null) => projectStore.apply((d) => { d.booklet = b; });
   const read = lyricsRead(project.lyrics);
 
-  const pages = booklet ? livePages(booklet) : [];
+  // Memoised on purpose: a fresh array here defeats the thumbs memo below and
+  // re-renders every page's SVG on every keystroke.
+  const pages = useMemo(() => (booklet ? livePages(booklet) : []), [booklet]);
   const thumbs = useMemo(() => pages.map((pg, i) =>
     renderSurfaceSVG(pageSurface(pg, i + 1, pages.length), project, { pxPerMm: 1.1, mode: "all", artUrl, artDim })), [pages, project, artUrl, artDim]);
   const selPage = booklet?.pages.filter((p) => !p.skip)[sel];

@@ -3,6 +3,8 @@
 // (since age 12–13) and is still the handle everywhere. Cinematic hero art
 // (public/brand/hero.webp) under the gold studio mark. Presentational.
 
+/* eslint-disable @next/next/no-img-element */
+
 export function AgenorBand() {
   return (
     <section className="relative z-10 mx-auto mb-10 max-w-7xl px-4 sm:px-6 lg:px-8">

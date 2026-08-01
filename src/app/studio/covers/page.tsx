@@ -6,6 +6,8 @@
 // it promotes to originals/ and reprints the case. All data flows through the
 // already-gated /api/studio/covers + /api/studio/jobs; nothing new server-side.
 
+/* eslint-disable @next/next/no-img-element */
+
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const CARD = "rounded-3xl border border-[var(--inst-line)] bg-[color-mix(in_srgb,var(--inst-s1)_88%,transparent)] p-5 backdrop-blur-md";

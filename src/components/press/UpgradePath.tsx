@@ -150,9 +150,9 @@ export function UpgradePath({ project, onEngine, onDirection, onArt }: {
           {candidates.length > 0 && (
             <div className="mt-2 grid grid-cols-2 gap-2">
               {candidates.map((u, i) => (
-                /* eslint-disable-next-line @next/next/no-img-element */
                 <button key={u} onClick={() => { onArt?.(candBlobs[i]); setMsg("✓ candidate is now the art — every surface re-dressed"); }}
                   className="overflow-hidden rounded-lg border border-zinc-800 transition hover:border-emerald-500/60">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src={u} alt="" className="aspect-square w-full object-cover" />
                 </button>
               ))}

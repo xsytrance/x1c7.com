@@ -4,6 +4,8 @@
 // identity-x1c7.webp) carries the story: Queens → Brooklyn, USMC, code + music +
 // anime, build the system. Presented big with a thin caption.
 
+/* eslint-disable @next/next/no-img-element */
+
 import { ScrollReveal } from "./ScrollReveal";
 
 export function IdentityBand() {
