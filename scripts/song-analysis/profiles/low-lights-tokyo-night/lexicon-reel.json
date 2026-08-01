@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-07-25T11:21:20.918Z",
+  "generatedAt": "2026-07-31T05:46:33.120Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1051,
-    "judged": 35,
-    "accepted": 32,
+    "candidates": 1081,
+    "judged": 38,
+    "accepted": 35,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 97.032,
       "score": 1,
       "cosine": 0.644,
-      "reason": "Perfectly captures the song's mood and themes with rain, neon, and loneliness.",
+      "reason": "Perfectly captures the song's mood and themes of neon melancholy and urban isolation.",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -60,18 +60,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
-      "key": "lexicon/cold/s2-6-word-neon.webp",
-      "word": "cold",
-      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
-      "t": 100.02,
-      "score": 1,
-      "cosine": 0.614,
-      "reason": "Perfectly captures neon melancholy and urban isolation",
-      "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-3-neon-night.webp",
       "key": "lexicon/cold/s2-3-neon-night.webp",
       "word": "cold",
@@ -91,7 +79,7 @@
       "t": 1.12,
       "score": 0.95,
       "cosine": 0.706,
-      "reason": "Matches neon melancholy, urban isolation, and bittersweet mood",
+      "reason": "Perfectly captures neon melancholy and urban isolation",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -103,7 +91,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.695,
-      "reason": "matches bittersweet mood, Tokyo nightlife, emotional weight",
+      "reason": "matches bittersweet mood, urban isolation, and nostalgic Tokyo nightlife",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -127,7 +115,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.671,
-      "reason": "Captures melancholy, neon reflections, and loneliness in Tokyo rain",
+      "reason": "Captures neon melancholy, loneliness, and fleeting hope in rainy Tokyo",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -151,7 +139,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.649,
-      "reason": "matches neon melancholy, loneliness, and emotional echoes",
+      "reason": "matches neon melancholy, loneliness, and emotional reflections",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -192,6 +180,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s2-6-word-neon.webp",
+      "key": "lexicon/cold/s2-6-word-neon.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 0.95,
+      "cosine": 0.614,
+      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s2-1-neon-night.webp",
       "key": "lexicon/ice/s2-1-neon-night.webp",
       "word": "ice",
@@ -211,7 +211,7 @@
       "t": 46.661,
       "score": 0.95,
       "cosine": 0.6,
-      "reason": "Matches neon melancholy, isolation, and hidden grief in a rainy Tokyo setting.",
+      "reason": "fits mood and themes with neon melancholy and isolation",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.595,
-      "reason": "matches melancholic mood, isolation, and introspection",
+      "reason": "matches melancholic mood, isolation, introspection",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -252,6 +252,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s2-6-cinema.webp",
+      "key": "lexicon/breaking/s2-6-cinema.webp",
+      "word": "breaking",
+      "line": "goodbye 踊っ てる ふりのま まで I m breaking in the night スムーズ な コード 雨",
+      "t": 77.706,
+      "score": 0.95,
+      "cosine": 0.548,
+      "reason": "Matches melancholy, brokenness, and urban nighttime mood",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s4-1-cinema.webp",
+      "key": "lexicon/breaking/s4-1-cinema.webp",
+      "word": "breaking",
+      "line": "goodbye 踊っ てる ふりのま まで I m breaking in the night スムーズ な コード 雨",
+      "t": 77.706,
+      "score": 0.95,
+      "cosine": 0.531,
+      "reason": "Melancholic urban scene matches song's neon melancholy and isolation themes",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-3-cinema.webp",
       "key": "lexicon/song/s1-3-cinema.webp",
       "word": "song",
@@ -259,7 +283,7 @@
       "t": 95.469,
       "score": 0.95,
       "cosine": 0.49,
-      "reason": "Captures urban isolation, melancholy, and transient beauty",
+      "reason": "Matches urban isolation, melancholy, and neon atmosphere of the song",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -271,8 +295,20 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Matches melancholic urban night, loneliness, and symbolic use of night",
+      "reason": "Captures urban melancholy, loneliness, and nighttime symbolism",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s1-4-cinema.webp",
+      "key": "lexicon/breaking/s1-4-cinema.webp",
+      "word": "breaking",
+      "line": "goodbye 踊っ てる ふりのま まで I m breaking in the night スムーズ な コード 雨",
+      "t": 77.706,
+      "score": 0.9,
+      "cosine": 0.553,
+      "reason": "fragile light amid brokenness mirrors bittersweet nightlife grief",
+      "recipe": "4-cinema",
       "featured": true
     },
     {
@@ -283,7 +319,7 @@
       "t": 64.494,
       "score": 0.9,
       "cosine": 0.524,
-      "reason": "Captures melancholy, neon, isolation, and symbolic tension",
+      "reason": "Captures neon melancholy, loneliness, and symbolic tension between public and private self",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -319,7 +355,7 @@
       "t": 46.661,
       "score": 0.85,
       "cosine": 0.534,
-      "reason": "Captures isolation, melancholy, and urban emptiness fitting the song's mood",
+      "reason": "Captures isolation, melancholy, and urban emptiness aligning with song's mood and themes.",
       "recipe": "1-photo",
       "featured": true
     },
@@ -355,52 +391,16 @@
       "t": 34.424,
       "score": 0.85,
       "cosine": 0.434,
-      "reason": "Nostalgic, desolate interior fits bittersweet mood and themes of hidden grief",
+      "reason": "Nostalgic, desolate interior fits bittersweet mood and themes of loss",
       "recipe": "1-cinema",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-3-word-neon.webp",
-      "key": "lexicon/body/s7-3-word-neon.webp",
-      "word": "body",
-      "line": "m not alright 青い ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て",
-      "t": 46.661,
-      "score": 0.7,
-      "cosine": 0.488,
-      "reason": "Neon and urban setting fit, but lacks emotional depth of grief and isolation",
-      "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s1-5-word-portrait.webp",
-      "key": "lexicon/ice/s1-5-word-portrait.webp",
-      "word": "ice",
-      "line": "ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て your light",
-      "t": 47.88,
-      "score": 0.7,
-      "cosine": 0.477,
-      "reason": "Matches melancholic mood and symbolism of coldness, but lacks urban Tokyo setting",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s2-6-neon-night.webp",
-      "key": "lexicon/song/s2-6-neon-night.webp",
-      "word": "song",
-      "line": "の 声 は so loud tonight 同じ song で も 痛い inside 心 の 中 で party が 鳴っ て も 君",
-      "t": 95.469,
-      "score": 0.6,
-      "cosine": 0.521,
-      "reason": "Joyful singing contrasts with song's melancholy, but neon rain fits mood",
-      "recipe": "6-neon-night",
-      "featured": false
     }
   ],
   "byWord": {
     "lights": [
       0,
-      6,
-      12
+      5,
+      11
     ],
     "party": [
       1,
@@ -409,49 +409,51 @@
     "night": [
       2,
       3,
-      21
+      23
     ],
     "cold": [
       4,
-      5,
+      13,
       14
     ],
     "slow": [
-      7,
-      10,
+      6,
+      9,
       17
     ],
     "light": [
+      7,
       8,
-      9,
-      11
+      10
     ],
     "phone": [
-      13,
-      26
+      12,
+      29
     ],
     "ice": [
       15,
-      23,
-      30
+      26
     ],
     "body": [
       16,
-      25,
-      29
+      28
     ],
     "song": [
       19,
-      20,
-      31
+      22
     ],
-    "love": [
-      22,
+    "breaking": [
+      20,
+      21,
       24
     ],
+    "love": [
+      25,
+      27
+    ],
     "home": [
-      27,
-      28
+      30,
+      31
     ]
   }
 }

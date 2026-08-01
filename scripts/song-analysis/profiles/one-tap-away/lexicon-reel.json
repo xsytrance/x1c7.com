@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "one-tap-away",
-  "generatedAt": "2026-07-25T11:26:32.992Z",
+  "generatedAt": "2026-07-31T05:50:43.086Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1158,
-    "judged": 36,
-    "accepted": 32,
+    "candidates": 1175,
+    "judged": 39,
+    "accepted": 37,
     "kept": 32
   },
   "reel": [
@@ -24,6 +24,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
+      "key": "lexicon/move/s7-5-word-portrait.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.95,
+      "cosine": 0.685,
+      "reason": "captures digital isolation, melancholy, and superficial connection",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "key": "lexicon/fire/s5-6-word-portrait.webp",
+      "word": "fire",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "score": 0.95,
+      "cosine": 0.66,
+      "reason": "powerful metaphor for digital isolation and superficial connection",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s20-6-pixel.webp",
       "key": "lexicon/fire/s20-6-pixel.webp",
       "word": "fire",
@@ -31,7 +55,7 @@
       "t": 118.468,
       "score": 0.95,
       "cosine": 0.645,
-      "reason": "pixelated campfires symbolize digital isolation and superficial connection",
+      "reason": "Pixelated campfires symbolize digital isolation and superficial connection",
       "recipe": "6-pixel",
       "featured": true
     },
@@ -79,7 +103,7 @@
       "t": 17.183,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "neon glow reflects digital isolation, urban setting matches song's mood",
+      "reason": "matches digital isolation, glow of screen, melancholic mood",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -91,7 +115,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "captures digital isolation, melancholy, and emotional distance",
+      "reason": "matches digital isolation, melancholic mood, and emotional distance",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -187,8 +211,20 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "matches digital isolation, urban loneliness, and emotional distance",
+      "reason": "Strong visual match for digital isolation and urban loneliness",
       "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mask/s0-6-photo.webp",
+      "key": "lexicon/mask/s0-6-photo.webp",
+      "word": "mask",
+      "line": "thought wed talktalk really get honest drop the mask no fake persona find your tribe",
+      "t": 28.259,
+      "score": 0.95,
+      "cosine": 0.494,
+      "reason": "mask symbolizes hidden identity and emotional void in digital isolation",
+      "recipe": "6-photo",
       "featured": true
     },
     {
@@ -211,7 +247,7 @@
       "t": 76.72,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "captures digital isolation, emotional neglect, and yearning",
+      "reason": "fits digital isolation, emotional neglect, and introspective mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -264,6 +300,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mask/s1-4-dream-collage.webp",
+      "key": "lexicon/mask/s1-4-dream-collage.webp",
+      "word": "mask",
+      "line": "thought wed talktalk really get honest drop the mask no fake persona find your tribe",
+      "t": 28.259,
+      "score": 0.9,
+      "cosine": 0.504,
+      "reason": "reflects identity fragmentation and melancholy in digital isolation",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mask/s2-2-dream-collage.webp",
+      "key": "lexicon/mask/s2-2-dream-collage.webp",
+      "word": "mask",
+      "line": "thought wed talktalk really get honest drop the mask no fake persona find your tribe",
+      "t": 28.259,
+      "score": 0.9,
+      "cosine": 0.499,
+      "reason": "Symbolizes hidden identity and media scrutiny in digital isolation",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-4-dream-collage.webp",
       "key": "lexicon/chains/s5-4-dream-collage.webp",
       "word": "chains",
@@ -307,7 +367,7 @@
       "t": 115.937,
       "score": 0.85,
       "cosine": 0.492,
-      "reason": "matches melancholic mood, isolation, fragile connection",
+      "reason": "fragile light in isolation matches song's themes",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -319,7 +379,7 @@
       "t": 76.22,
       "score": 0.85,
       "cosine": 0.437,
-      "reason": "Captures melancholic mood and urban isolation with hopeful undertones",
+      "reason": "Captures melancholic mood and urban isolation while hinting at aspiration",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,126 +391,66 @@
       "t": 76.22,
       "score": 0.85,
       "cosine": 0.425,
-      "reason": "Captures loneliness and longing in a digital age, aligns with theme of superficial connect",
+      "reason": "Captures loneliness and longing in a digital age, aligns with theme of isolation and fleet",
       "recipe": "4-film-still",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s5-3-neon-night.webp",
-      "key": "lexicon/stars/s5-3-neon-night.webp",
-      "word": "stars",
-      "line": "for the strangers Save your hearts for the stars But the ones who really know you",
-      "t": 79.981,
-      "score": 0.85,
-      "cosine": 0.394,
-      "reason": "Captures melancholic urban loneliness and digital glow",
-      "recipe": "3-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s2-1-poster.webp",
-      "key": "lexicon/stars/s2-1-poster.webp",
-      "word": "stars",
-      "line": "for the strangers Save your hearts for the stars But the ones who really know you",
-      "t": 79.981,
-      "score": 0.8,
-      "cosine": 0.397,
-      "reason": "abstract stars reflect digital isolation and cosmic order",
-      "recipe": "1-poster",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s2-5-word-portrait.webp",
-      "key": "lexicon/chains/s2-5-word-portrait.webp",
-      "word": "chains",
-      "line": "Save that love for the big names Blue checks big chains big views Then if a stranger blow up overnight",
-      "t": 110.458,
-      "score": 0.7,
-      "cosine": 0.479,
-      "reason": "Symbolizes restraint and superficial connections in digital isolation",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s2-4-poster.webp",
-      "key": "lexicon/chains/s2-4-poster.webp",
-      "word": "chains",
-      "line": "Save that love for the big names Blue checks big chains big views Then if a stranger blow up overnight",
-      "t": 110.458,
-      "score": 0.7,
-      "cosine": 0.475,
-      "reason": "Symbolizes digital constraints and superficial connections",
-      "recipe": "4-poster",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s5-1-noir.webp",
-      "key": "lexicon/stars/s5-1-noir.webp",
-      "word": "stars",
-      "line": "for the strangers Save your hearts for the stars But the ones who really know you",
-      "t": 79.981,
-      "score": 0.6,
-      "cosine": 0.407,
-      "reason": "Celestial imagery contrasts with song's digital isolation theme",
-      "recipe": "1-noir",
-      "featured": false
     }
   ],
   "byWord": {
     "tap": [
       0,
-      3,
-      15
-    ],
-    "fire": [
-      1,
-      2
-    ],
-    "light": [
-      4,
-      23,
-      24
-    ],
-    "glow": [
       5,
       18
     ],
-    "cold": [
-      6,
-      7,
-      14
-    ],
-    "heart": [
-      8,
-      9,
-      10
-    ],
-    "save": [
-      11,
-      16,
+    "move": [
+      1,
+      14,
       20
     ],
-    "move": [
-      12,
-      17
+    "fire": [
+      2,
+      3,
+      4
+    ],
+    "light": [
+      6,
+      28,
+      29
+    ],
+    "glow": [
+      7,
+      21
+    ],
+    "cold": [
+      8,
+      9,
+      16
+    ],
+    "heart": [
+      10,
+      11,
+      12
+    ],
+    "save": [
+      13,
+      19,
+      23
     ],
     "love": [
-      13,
-      19
+      15,
+      22
+    ],
+    "mask": [
+      17,
+      24,
+      25
     ],
     "chains": [
-      21,
-      29,
-      30
-    ],
-    "dream": [
-      22,
-      25,
       26
     ],
-    "stars": [
+    "dream": [
       27,
-      28,
+      30,
       31
     ]
   }

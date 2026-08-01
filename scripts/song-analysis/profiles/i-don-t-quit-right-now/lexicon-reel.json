@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-07-25T11:09:49.624Z",
+  "generatedAt": "2026-07-31T05:41:53.466Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2405,
+    "candidates": 2464,
     "judged": 64,
-    "accepted": 45,
+    "accepted": 50,
     "kept": 32
   },
   "reel": [
@@ -24,18 +24,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-2-photo.webp",
-      "key": "lexicon/sweat/s3-2-photo.webp",
-      "word": "sweat",
-      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
-      "t": 54.672,
-      "score": 1,
-      "cosine": 0.562,
-      "reason": "Perfectly captures sweat's role in endurance and vulnerability",
-      "recipe": "2-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
       "key": "lexicon/pressure/s0-2.webp",
       "word": "pressure",
@@ -43,8 +31,20 @@
       "t": 58.364,
       "score": 1,
       "cosine": 0.521,
-      "reason": "Image embodies grit, struggle, and determination central to the song's theme.",
+      "reason": "image embodies relentless grit and internal struggle through weight and sweat",
       "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
+      "key": "lexicon/drip/s2-3-photo.webp",
+      "word": "drip",
+      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
+      "t": 54.927,
+      "score": 0.98,
+      "cosine": 0.602,
+      "reason": "Powerful visual of endurance and grit aligns with song's themes",
+      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -55,7 +55,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "Gritty gym setting matches song's relentless determination and solitary struggle",
+      "reason": "Gritty gym setting matches song's relentless determination and internal struggle",
       "recipe": "2-photo",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Powerful imagery matches relentless grit and internal struggle",
+      "reason": "Powerful imagery aligns with grit, determination, and internal struggle",
       "recipe": "1-film-still",
       "featured": true
     },
@@ -96,18 +96,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
-      "key": "lexicon/drip/s2-3-photo.webp",
-      "word": "drip",
-      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
-      "t": 54.927,
-      "score": 0.95,
-      "cosine": 0.602,
-      "reason": "Powerful visual of endurance and grit aligns with song's themes of physical and mental str",
-      "recipe": "3-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s10-5-photo.webp",
       "key": "lexicon/fire/s10-5-photo.webp",
       "word": "fire",
@@ -115,8 +103,20 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, determination, and physical struggle",
+      "reason": "Powerful imagery aligns with grit, determination, and physical transformation in the gym.",
       "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-2-photo.webp",
+      "key": "lexicon/sweat/s3-2-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.95,
+      "cosine": 0.562,
+      "reason": "Authentic portrayal of physical exertion and vulnerability aligns with the song's relentle",
+      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -129,6 +129,18 @@
       "cosine": 0.537,
       "reason": "fits gritty mood, cold as emotional numbness, abandoned gym aligns with solitary struggle",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hurt/s3-5-photo.webp",
+      "key": "lexicon/hurt/s3-5-photo.webp",
+      "word": "hurt",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.619,
+      "score": 0.95,
+      "cosine": 0.537,
+      "reason": "authentic portrayal of physical and emotional struggle in the gym",
+      "recipe": "5-photo",
       "featured": true
     },
     {
@@ -175,7 +187,7 @@
       "t": 22.535,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting",
+      "reason": "Cold gym atmosphere matches relentless grit and internal struggle",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -192,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
+      "key": "lexicon/summer/s8-2-photo.webp",
+      "word": "summer",
+      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
+      "t": 189.939,
+      "score": 0.95,
+      "cosine": 0.497,
+      "reason": "fits gritty determination, sweat as proof, summer as motivation",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s1-5-photo.webp",
       "key": "lexicon/body/s1-5-photo.webp",
       "word": "body",
@@ -199,7 +223,7 @@
       "t": 192.807,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "matches gritty gym struggle and sweat as proof of effort",
+      "reason": "fits gritty gym struggle, sweat as proof of effort",
       "recipe": "5-photo",
       "featured": true
     },
@@ -235,7 +259,7 @@
       "t": 22.849,
       "score": 0.95,
       "cosine": 0.459,
-      "reason": "Matches gritty mood, solitude, and physical struggle of the song",
+      "reason": "Matches gritty mood, solitude, physical struggle, and determination in a gym context",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -300,6 +324,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burns/s0-1-word-portrait.webp",
+      "key": "lexicon/burns/s0-1-word-portrait.webp",
+      "word": "burns",
+      "line": "burns",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.409,
+      "reason": "Symbolizes internal struggle, pain, and passion align with song's themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
       "key": "lexicon/fire/s15-1-photo.webp",
       "word": "fire",
@@ -324,18 +360,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
-      "key": "lexicon/summer/s8-2-photo.webp",
-      "word": "summer",
-      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
-      "t": 189.939,
-      "score": 0.9,
-      "cosine": 0.497,
-      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort and transformation",
-      "recipe": "2-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s2-5-photo.webp",
       "key": "lexicon/burn/s2-5-photo.webp",
       "word": "burn",
@@ -355,7 +379,7 @@
       "t": 218.326,
       "score": 0.9,
       "cosine": 0.465,
-      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit aligns with theme",
+      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -370,99 +394,77 @@
       "reason": "fits gritty mood, solitary struggle, dim lighting matches internal battle",
       "recipe": "2-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s12-2-word-portrait.webp",
-      "key": "lexicon/dark/s12-2-word-portrait.webp",
-      "word": "dark",
-      "line": "getting sharp Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous",
-      "t": 203.858,
-      "score": 0.9,
-      "cosine": 0.436,
-      "reason": "fits gritty mood, solitary struggle, symbolic darkness as introspection",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-3-word-portrait.webp",
-      "key": "lexicon/beat/s0-3-word-portrait.webp",
-      "word": "beat",
-      "line": "Beat drop",
-      "t": 0.023,
-      "score": 0.9,
-      "cosine": 0.432,
-      "reason": "Strong symbolism, mood matches relentless grit and solitary struggle",
-      "recipe": "3-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "sweat": [
       0,
-      1,
-      6
+      6,
+      8
     ],
     "pressure": [
-      2,
-      10
+      1,
+      11
+    ],
+    "drip": [
+      2
     ],
     "move": [
       3,
       5,
-      17
+      19
     ],
     "night": [
       4
     ],
-    "drip": [
-      7
-    ],
     "fire": [
-      8,
-      14,
-      24
+      7,
+      15,
+      27
     ],
     "cold": [
       9,
-      13
+      14
+    ],
+    "hurt": [
+      10
     ],
     "body": [
-      11,
-      15
+      12,
+      17
     ],
     "walk": [
-      12,
-      18,
-      25
-    ],
-    "crown": [
-      16
-    ],
-    "breath": [
-      19
-    ],
-    "burn": [
+      13,
       20,
-      27
-    ],
-    "voice": [
-      21
-    ],
-    "hands": [
-      22
-    ],
-    "cut": [
-      23,
       28
     ],
     "summer": [
+      16
+    ],
+    "crown": [
+      18
+    ],
+    "breath": [
+      21
+    ],
+    "burn": [
+      22,
+      29
+    ],
+    "voice": [
+      23
+    ],
+    "hands": [
+      24
+    ],
+    "cut": [
+      25,
+      30
+    ],
+    "burns": [
       26
     ],
     "dark": [
-      29,
-      30
-    ],
-    "beat": [
       31
     ]
   }

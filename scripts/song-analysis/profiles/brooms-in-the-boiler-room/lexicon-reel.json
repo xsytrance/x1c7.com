@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-07-25T10:50:09.660Z",
+  "generatedAt": "2026-07-31T05:34:57.414Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1521,
+    "candidates": 1587,
     "judged": 64,
-    "accepted": 42,
+    "accepted": 48,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 29.106,
       "score": 1,
       "cosine": 0.697,
-      "reason": "Perfect fit for magical corruption and ominous atmosphere",
+      "reason": "Perfectly aligns with magical corruption and ominous atmosphere",
       "recipe": "1-manga-line",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 134.502,
       "score": 0.95,
       "cosine": 0.673,
-      "reason": "fits noir atmosphere, magical corruption, and symbolic lighting",
+      "reason": "Strong noir atmosphere, magical symbolism, and thematic fit with the song's chaos and tens",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strong noir-steampunk fit with boiler as central symbol",
+      "reason": "Strong noir-steampunk fit with magical corruption and ominous mood",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 15.024,
       "score": 0.95,
       "cosine": 0.616,
-      "reason": "fits noir atmosphere, sinister playfulness, and fractured sanity",
+      "reason": "matches noir atmosphere, fractured sanity, and sinister playfulness",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -187,8 +187,20 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Matches noir atmosphere, magical corruption, and chaotic tension",
+      "reason": "Aligns with noir atmosphere, magical corruption, and chaotic tension",
       "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s1-3-dream-collage.webp",
+      "key": "lexicon/teeth/s1-3-dream-collage.webp",
+      "word": "teeth",
+      "line": "wrong spell and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a",
+      "t": 118.19,
+      "score": 0.95,
+      "cosine": 0.519,
+      "reason": "fits the grotesque, chaotic, and surreal tone of the song's magical corruption and loss of",
+      "recipe": "3-dream-collage",
       "featured": true
     },
     {
@@ -211,20 +223,8 @@
       "t": 40.774,
       "score": 0.9,
       "cosine": 0.606,
-      "reason": "fits noir tone, corruption symbolism, and chaotic descent",
+      "reason": "fits noir-corruption theme, gold as corruption, villain and skeletal figures align with ma",
       "recipe": "4-graphic-novel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-6-concept-art.webp",
-      "key": "lexicon/money/s5-6-concept-art.webp",
-      "word": "money",
-      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
-      "t": 40.171,
-      "score": 0.9,
-      "cosine": 0.572,
-      "reason": "fits noir atmosphere, greed symbolism, and magical chaos",
-      "recipe": "6-concept-art",
       "featured": true
     },
     {
@@ -235,7 +235,7 @@
       "t": 40.171,
       "score": 0.9,
       "cosine": 0.562,
-      "reason": "fits noir atmosphere, greed symbolism, dark surrealism",
+      "reason": "Symbolizes greed's destruction, fits dark surrealism and urgency",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 35.85,
       "score": 0.9,
       "cosine": 0.55,
-      "reason": "fits noir atmosphere, ominous threshold, aligns with spell's hunger and isolation",
+      "reason": "fits noir atmosphere, ominous tone, and threshold symbolism",
       "recipe": "5-noir",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 15.233,
       "score": 0.9,
       "cosine": 0.542,
-      "reason": "Mysterious, noir atmosphere matches song's tone and themes",
+      "reason": "Elegant noir atmosphere matches song's mood and themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -300,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-6-concept-art.webp",
+      "key": "lexicon/money/s5-6-concept-art.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.85,
+      "cosine": 0.572,
+      "reason": "fits noir atmosphere, greed symbolism, and magical chaos",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp",
       "key": "lexicon/gold/s14-4-neon-night.webp",
       "word": "gold",
@@ -307,7 +319,7 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
+      "reason": "gold symbolizes villainy, noir atmosphere matches song",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -331,7 +343,7 @@
       "t": 53.023,
       "score": 0.85,
       "cosine": 0.526,
-      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with boiler room",
+      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with corruption t",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -360,6 +372,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s2-6-cinema.webp",
+      "key": "lexicon/wall/s2-6-cinema.webp",
+      "word": "wall",
+      "line": "bends when the wand goes snap shadow on the wall with a longeared cap I aint scared Im just",
+      "t": 76.405,
+      "score": 0.85,
+      "cosine": 0.495,
+      "reason": "decaying wall fits noir atmosphere and magical corruption theme",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-1-dark-surreal.webp",
       "key": "lexicon/eyes/s8-1-dark-surreal.webp",
       "word": "eyes",
@@ -369,30 +393,6 @@
       "cosine": 0.494,
       "reason": "Glowing eye fits noir atmosphere and hidden danger",
       "recipe": "1-dark-surreal",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s4-1-film-still.webp",
-      "key": "lexicon/falling/s4-1-film-still.webp",
-      "word": "falling",
-      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
-      "t": 145.88,
-      "score": 0.85,
-      "cosine": 0.489,
-      "reason": "fits noir atmosphere, debris and liminal space match falling and corruption",
-      "recipe": "1-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s6-3-word-portrait.webp",
-      "key": "lexicon/midnight/s6-3-word-portrait.webp",
-      "word": "midnight",
-      "line": "and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a hundred stairways",
-      "t": 118.852,
-      "score": 0.8,
-      "cosine": 0.547,
-      "reason": "Matches noir mood and midnight theme, but lacks magical corruption elements",
-      "recipe": "3-word-portrait",
       "featured": true
     }
   ],
@@ -416,8 +416,8 @@
     ],
     "money": [
       9,
-      17,
-      18
+      18,
+      24
     ],
     "night": [
       10,
@@ -426,20 +426,23 @@
     ],
     "gold": [
       11,
-      16,
-      24
+      17,
+      25
     ],
     "eyes": [
       12,
-      29
+      31
     ],
     "door": [
       13,
       20,
       22
     ],
-    "move": [
+    "teeth": [
       15
+    ],
+    "move": [
+      16
     ],
     "whisper": [
       21
@@ -448,20 +451,19 @@
       23
     ],
     "shadow": [
-      25
-    ],
-    "glow": [
       26
     ],
-    "moon": [
+    "glow": [
       27
     ],
-    "falling": [
-      28,
-      30
+    "moon": [
+      28
     ],
-    "midnight": [
-      31
+    "falling": [
+      29
+    ],
+    "wall": [
+      30
     ]
   }
 }

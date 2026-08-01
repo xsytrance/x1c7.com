@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-07-25T10:58:07.680Z",
+  "generatedAt": "2026-07-31T05:37:26.702Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1818,
+    "candidates": 1842,
     "judged": 64,
-    "accepted": 50,
+    "accepted": 51,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 209.839,
       "score": 0.95,
       "cosine": 0.523,
-      "reason": "matches summer vibe, ambition, and motivational energy",
+      "reason": "matches summer vibe, ambition, and motivational themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 4.273,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "fits summer night, coding, urban energy, and motivation",
+      "reason": "Matches summer, urban coding, neon glow, late-night productivity",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.46,
-      "reason": "Aligns with tech, empowerment, and summer night energy",
+      "reason": "Aligns with tech, empowerment, and summer-night energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -93,18 +93,6 @@
       "cosine": 0.428,
       "reason": "Surreal cityscape aligns with tech innovation and bold dreams in the song",
       "recipe": "5-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
-      "key": "lexicon/different/s8-1-word-neon.webp",
-      "word": "different",
-      "line": "ice in the glass We working different now Come on Ooh cocktails and code Ooh",
-      "t": 10.159,
-      "score": 0.95,
-      "cosine": 0.354,
-      "reason": "Urban neon aligns with tech and summer night vibes; symbolizes individuality and empowerme",
-      "recipe": "1-word-neon",
       "featured": true
     },
     {
@@ -144,6 +132,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moonlight/s3-6-word-neon.webp",
+      "key": "lexicon/moonlight/s3-6-word-neon.webp",
+      "word": "moonlight",
+      "line": "in the machine Mix a little focus with the moonlight Add a little rhythm to the grind",
+      "t": 71.367,
+      "score": 0.9,
+      "cosine": 0.471,
+      "reason": "fits summer night, urban, neon, and tech themes",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s15-1-anime.webp",
       "key": "lexicon/gold/s15-1-anime.webp",
       "word": "gold",
@@ -163,7 +163,7 @@
       "t": 33.158,
       "score": 0.9,
       "cosine": 0.466,
-      "reason": "fits summer luxury and empowerment themes",
+      "reason": "Matches summer luxury, opulence, and confidence in the song's theme",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, dream theme, neon aligns with energy and urban vibe",
+      "reason": "fits summer night, dream, neon, urban fantasy",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 75.463,
       "score": 0.9,
       "cosine": 0.433,
-      "reason": "Energetic runner fits summer and tech themes with modern, determined vibe",
+      "reason": "Energetic runner fits summer and tech themes with modern, focused vibe",
       "recipe": "6-poster",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Urban neon fits energetic summer night and progress themes",
+      "reason": "Urban neon aligns with energy and progress themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.391,
-      "reason": "Energetic, hopeful, and cinematic fit the song's theme of growth and innovation.",
+      "reason": "Energetic, hopeful, and dynamic imagery aligns with the song's themes of growth and innova",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -331,20 +331,8 @@
       "t": 44.385,
       "score": 0.9,
       "cosine": 0.357,
-      "reason": "Futuristic city aligns with tech themes, running reflects urgency in lyric, temple adds tr",
+      "reason": "Futuristic city aligns with tech themes, running reflects urgency in lyrics, temple adds t",
       "recipe": "6-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s9-1-word-neon.webp",
-      "key": "lexicon/beat/s9-1-word-neon.webp",
-      "word": "beat",
-      "line": "but it feel like that When the idea hits and the beat comes back Bassline walking like it knows my",
-      "t": 136.753,
-      "score": 0.9,
-      "cosine": 0.355,
-      "reason": "Urban neon fits tech/night vibe and energy of the song",
-      "recipe": "1-word-neon",
       "featured": true
     },
     {
@@ -379,7 +367,7 @@
       "t": 20.921,
       "score": 0.85,
       "cosine": 0.378,
-      "reason": "Urban nightlife and energy align with song's vibe and theme",
+      "reason": "Urban neon fits energetic vibe and tech themes",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -394,6 +382,18 @@
       "reason": "Urban nightlife and neon align with summer vibes and tech themes",
       "recipe": "1-word-neon",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s11-5-dream-collage.webp",
+      "key": "lexicon/summer/s11-5-dream-collage.webp",
+      "word": "summer",
+      "line": "Uh Summer night laptop glow Little",
+      "t": 4.273,
+      "score": 0.8,
+      "cosine": 0.487,
+      "reason": "Matches summer vibe and whimsical imagination",
+      "recipe": "5-dream-collage",
+      "featured": true
     }
   ],
   "byWord": {
@@ -402,7 +402,8 @@
       13
     ],
     "summer": [
-      1
+      1,
+      31
     ],
     "code": [
       2,
@@ -417,21 +418,21 @@
       6,
       15
     ],
-    "different": [
+    "glow": [
       7
     ],
-    "glow": [
-      8
-    ],
     "rhythm": [
-      9,
+      8,
       19,
-      28
+      27
     ],
     "gold": [
-      10,
+      9,
       11,
       12
+    ],
+    "moonlight": [
+      10
     ],
     "night": [
       16
@@ -446,22 +447,21 @@
     "move": [
       20,
       23,
-      30
+      29
     ],
     "bridge": [
       21
     ],
     "beat": [
       24,
-      25,
-      27
+      25
     ],
     "running": [
       26,
-      31
+      30
     ],
     "ice": [
-      29
+      28
     ]
   }
 }

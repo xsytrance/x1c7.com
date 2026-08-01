@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-07-25T11:16:05.265Z",
+  "generatedAt": "2026-07-31T05:42:49.936Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 294.139,
       "score": 0.95,
       "cosine": 0.462,
-      "reason": "Symbolizes fragile hope (candle) vs. emotional barriers (thorns), fits resolute melancholy",
+      "reason": "Symbolizes fragile hope (light) amid emotional barriers (thorns), matching resolute melanc",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -60,18 +60,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
-      "key": "lexicon/silence/s0-1.webp",
-      "word": "silence",
-      "line": "silence",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.42,
-      "reason": "Symbolizes fragile hope and quiet resistance in a dark, isolated space",
-      "recipe": "1",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
       "key": "lexicon/fire/s5-6-word-portrait.webp",
       "word": "fire",
@@ -79,7 +67,7 @@
       "t": 36.711,
       "score": 0.9,
       "cosine": 0.555,
-      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood",
+      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -127,7 +115,7 @@
       "t": 47.903,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "Storm imagery matches emotional intensity and themes of turmoil and boundaries",
+      "reason": "Storm symbolizes emotional turmoil and power of nature mirrors toxic dependency",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -151,7 +139,7 @@
       "t": 29.118,
       "score": 0.9,
       "cosine": 0.43,
-      "reason": "matches melancholic mood and introspective theme",
+      "reason": "Matches melancholic mood and introspective theme",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -165,6 +153,18 @@
       "cosine": 0.426,
       "reason": "Matches melancholic mood and themes of silence and introspection",
       "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s0-1.webp",
+      "key": "lexicon/silence/s0-1.webp",
+      "word": "silence",
+      "line": "silence",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.42,
+      "reason": "Symbolizes fragile hope and quiet resistance in a dark, isolated space",
+      "recipe": "1",
       "featured": true
     },
     {
@@ -199,7 +199,7 @@
       "t": 29.118,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Melancholic mood, urban isolation, emotional weight align with song's themes",
+      "reason": "Melancholic mood matches song, Tokyo adds emotional weight",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 259.832,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Captures melancholy, digital chaos, and self-boundaries",
+      "reason": "Captures melancholy, boundaries, and digital chaos in love",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 33.08,
       "score": 0.9,
       "cosine": 0.362,
-      "reason": "Resolute, melancholic mood matches solitary figure in industrial space",
+      "reason": "Resonates with resolute mood and themes of boundaries",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 36.711,
       "score": 0.85,
       "cosine": 0.497,
-      "reason": "Symbolism aligns with fire's duality, resilience matches theme, mood fits melancholic defi",
+      "reason": "Symbolizes defiance and resilience aligns with self-preservation and resolute mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 259.832,
       "score": 0.85,
       "cosine": 0.368,
-      "reason": "Matches melancholic mood, digital isolation, and hollow connections",
+      "reason": "Captures digital isolation and hollow connections aligning with toxic dependency theme",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -315,7 +315,7 @@
   "byWord": {
     "fire": [
       0,
-      5,
+      4,
       19
     ],
     "light": [
@@ -325,26 +325,26 @@
     ],
     "silence": [
       3,
-      4,
+      11,
       12
     ],
     "rain": [
-      6,
+      5,
       20,
       23
     ],
     "glass": [
-      7,
+      6,
       18,
       21
     ],
     "thunder": [
+      7,
       8,
-      9,
-      10
+      9
     ],
     "slow": [
-      11,
+      10,
       14,
       15
     ],

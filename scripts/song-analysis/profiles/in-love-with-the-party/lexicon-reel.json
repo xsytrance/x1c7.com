@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-07-25T11:12:33.369Z",
+  "generatedAt": "2026-07-31T05:44:20.071Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 1.38,
       "score": 1,
       "cosine": 0.452,
-      "reason": "Matches nightclub vibe, celebration, and nighttime intimacy",
+      "reason": "Matches song's nightclub, celebration, and euphoric mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 35.225,
       "score": 0.95,
       "cosine": 0.558,
-      "reason": "Intimate club embrace matches song's nighttime intimacy and glow theme",
+      "reason": "Intimate club embrace matches lyric's glow and nighttime connection",
       "recipe": "5-photo",
       "featured": true
     },
@@ -117,6 +117,18 @@
       "cosine": 0.545,
       "reason": "Urban nightlife, intimacy, and neon glow align with song's mood and themes",
       "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whisper/s5-5-word-neon.webp",
+      "key": "lexicon/whisper/s5-5-word-neon.webp",
+      "word": "whisper",
+      "line": "When the snare cuts I can hear your whisper Promise that youll stay Till the dawn",
+      "t": 47.996,
+      "score": 0.95,
+      "cosine": 0.541,
+      "reason": "Matches nighttime intimacy, urban seduction, and whispered promises",
+      "recipe": "5-word-neon",
       "featured": true
     },
     {
@@ -139,7 +151,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Matches party mood, heat symbolism, retro club vibe",
+      "reason": "Matches party atmosphere, warmth, and retro energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -163,7 +175,7 @@
       "t": 7.44,
       "score": 0.95,
       "cosine": 0.511,
-      "reason": "Euphoric, intimate bar scene with spotlight aligns with song's mood and theme of connectio",
+      "reason": "Euphoric, intimate bar scene with spotlight aligns with song's nighttime escapism and inti",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -252,18 +264,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whisper/s5-5-word-neon.webp",
-      "key": "lexicon/whisper/s5-5-word-neon.webp",
-      "word": "whisper",
-      "line": "When the snare cuts I can hear your whisper Promise that youll stay Till the dawn",
-      "t": 47.996,
-      "score": 0.9,
-      "cosine": 0.541,
-      "reason": "Matches nighttime intimacy, urban seduction, and whispered promises",
-      "recipe": "5-word-neon",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
       "key": "lexicon/heat/s1-2-word-portrait.webp",
       "word": "heat",
@@ -295,7 +295,7 @@
       "t": 100.531,
       "score": 0.9,
       "cosine": 0.514,
-      "reason": "Matches urban romance, golden hour, and city intimacy",
+      "reason": "Matches urban romance, golden hour, and city light imagery",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.475,
-      "reason": "Captures nighttime intimacy and urban connection",
+      "reason": "Urban night scene matches song's nighttime escapism and intimacy",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.474,
-      "reason": "Captures nighttime urban mood and mysterious serenity",
+      "reason": "Captures nighttime urban serenity and mystery aligning with song's mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -372,6 +372,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/promise/s1-6-word-neon.webp",
+      "key": "lexicon/promise/s1-6-word-neon.webp",
+      "word": "promise",
+      "line": "cuts I can hear your whisper Promise that youll stay Till the dawn gets crisper",
+      "t": 48.82,
+      "score": 0.85,
+      "cosine": 0.507,
+      "reason": "Urban neon fits nighttime mood and theme of unkept promise",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dawn/s0-1-cinema.webp",
       "key": "lexicon/dawn/s0-1-cinema.webp",
       "word": "dawn",
@@ -382,25 +394,13 @@
       "reason": "Matches dawn theme, serene mood, and intimate atmosphere",
       "recipe": "1-cinema",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/promise/s1-6-word-neon.webp",
-      "key": "lexicon/promise/s1-6-word-neon.webp",
-      "word": "promise",
-      "line": "cuts I can hear your whisper Promise that youll stay Till the dawn gets crisper",
-      "t": 48.82,
-      "score": 0.8,
-      "cosine": 0.507,
-      "reason": "Urban neon fits nighttime mood and theme of unkept promise",
-      "recipe": "6-word-neon",
-      "featured": true
     }
   ],
   "byWord": {
     "party": [
       0,
       1,
-      13
+      14
     ],
     "glow": [
       2,
@@ -409,41 +409,41 @@
     ],
     "heat": [
       4,
-      10,
+      11,
       21
     ],
     "love": [
       5,
-      17,
-      18
+      18,
+      19
     ],
     "light": [
       6,
-      11
+      12
     ],
     "walk": [
       8,
       22
     ],
+    "whisper": [
+      9
+    ],
     "night": [
-      9,
+      10,
       25,
       26
     ],
     "lights": [
-      12,
-      14,
-      15
-    ],
-    "midnight": [
+      13,
+      15,
       16
     ],
-    "dawn": [
-      19,
-      30
+    "midnight": [
+      17
     ],
-    "whisper": [
-      20
+    "dawn": [
+      20,
+      31
     ],
     "city": [
       23,
@@ -455,7 +455,7 @@
       28
     ],
     "promise": [
-      31
+      30
     ]
   }
 }

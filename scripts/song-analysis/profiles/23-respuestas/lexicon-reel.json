@@ -1,16 +1,28 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-07-25T10:45:20.823Z",
+  "generatedAt": "2026-07-31T05:33:29.153Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 40,
-    "judged": 6,
-    "accepted": 6,
-    "kept": 6
+    "candidates": 70,
+    "judged": 12,
+    "accepted": 12,
+    "kept": 12
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s1-3-word-portrait.webp",
+      "key": "lexicon/herida/s1-3-word-portrait.webp",
+      "word": "herida",
+      "line": "herida que no duerme si me preguntas si te extraño sí pero",
+      "t": 98.279,
+      "score": 0.95,
+      "cosine": 0.412,
+      "reason": "Powerful visual matches the song's emotional depth and theatrical mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/respuestas/s1-4-dream-collage.webp",
       "key": "lexicon/respuestas/s1-4-dream-collage.webp",
@@ -31,7 +43,7 @@
       "t": 136.023,
       "score": 0.95,
       "cosine": 0.369,
-      "reason": "Matches sensual, melancholic mood and themes of emotional closure and hidden desires",
+      "reason": "matches sensual, melancholic mood and themes of emotional closure and hidden desires",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -45,6 +57,18 @@
       "cosine": 0.378,
       "reason": "Sensual, mysterious, and empowering imagery aligns with the song's themes.",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s1-5-neon-sign.webp",
+      "key": "lexicon/fuego/s1-5-neon-sign.webp",
+      "word": "fuego",
+      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
+      "t": 209.164,
+      "score": 0.85,
+      "cosine": 0.408,
+      "reason": "Matches sensual energy and fire symbolism, fits urban mood",
+      "recipe": "5-neon-sign",
       "featured": true
     },
     {
@@ -72,6 +96,54 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s2-5-word-portrait.webp",
+      "key": "lexicon/herida/s2-5-word-portrait.webp",
+      "word": "herida",
+      "line": "herida que no duerme si me preguntas si te extraño sí pero",
+      "t": 98.279,
+      "score": 0.8,
+      "cosine": 0.425,
+      "reason": "Matches the song's themes of pain and closure, but lacks empowerment",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/herida/s0-6-photo.webp",
+      "key": "lexicon/herida/s0-6-photo.webp",
+      "word": "herida",
+      "line": "herida que no duerme si me preguntas si te extraño sí pero",
+      "t": 98.279,
+      "score": 0.8,
+      "cosine": 0.372,
+      "reason": "Emotional wound aligns with lyric, fits melancholic and vulnerable mood",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-5-photo.webp",
+      "key": "lexicon/fuego/s0-5-photo.webp",
+      "word": "fuego",
+      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
+      "t": 209.164,
+      "score": 0.7,
+      "cosine": 0.403,
+      "reason": "Fire symbolizes emotional intensity and purification, aligns with themes of closure and re",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
+      "key": "lexicon/fuego/s0-4-cinema.webp",
+      "word": "fuego",
+      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
+      "t": 209.164,
+      "score": 0.6,
+      "cosine": 0.408,
+      "reason": "Fire symbolizes past passion and warmth, fits melancholic and sensual mood",
+      "recipe": "4-cinema",
+      "featured": false
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s2-2-photo.webp",
       "key": "lexicon/sin/s2-2-photo.webp",
       "word": "sin",
@@ -85,15 +157,25 @@
     }
   ],
   "byWord": {
-    "respuestas": [
+    "herida": [
       0,
-      3,
-      4
+      7,
+      8
+    ],
+    "respuestas": [
+      1,
+      5,
+      6
     ],
     "sin": [
-      1,
       2,
-      5
+      3,
+      11
+    ],
+    "fuego": [
+      4,
+      9,
+      10
     ]
   }
 }

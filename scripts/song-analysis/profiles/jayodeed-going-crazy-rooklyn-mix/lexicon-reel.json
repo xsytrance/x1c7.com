@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-07-25T11:20:27.398Z",
+  "generatedAt": "2026-07-31T05:46:01.622Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1989,
+    "candidates": 2019,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -43,7 +43,7 @@
       "t": 158.743,
       "score": 0.95,
       "cosine": 0.624,
-      "reason": "Symbolizes chaos, addiction, and obsession through fragmented faces and blazing core",
+      "reason": "Symbolism aligns with chaos, addiction, and obsession in a nightlife setting.",
       "recipe": "5-anime",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 158.743,
       "score": 0.95,
       "cosine": 0.59,
-      "reason": "fits chaotic, toxic, addicted mood with flickering lights",
+      "reason": "fits chaotic, toxic, addicted mood with flickering lights and urban decay",
       "recipe": "2-anime",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 44.815,
       "score": 0.95,
       "cosine": 0.516,
-      "reason": "fits toxic love, nightlife, danger, seduction",
+      "reason": "fits toxic love, nightlife, danger, and allure",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 30.291,
       "score": 0.95,
       "cosine": 0.5,
-      "reason": "Evokes haunting loneliness and urban decay fitting the song's obsession and chaos",
+      "reason": "Evokes haunting loneliness and urban decay fitting the song's toxic obsession and chaos",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 21.709,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "chaotic storm, addiction symbols, obsessive elements match song's themes",
+      "reason": "chaotic storm, addiction symbols, obsessive elements align with song",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 166.174,
       "score": 0.95,
       "cosine": 0.48,
-      "reason": "matches toxic mood, decay, and dramatic lighting",
+      "reason": "fits toxic mood, decay, and dramatic lighting",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "matches toxic obsession, urban chaos, and emotional intensity",
+      "reason": "Eyes as metaphor for obsession, urban decay, toxic love, and emotional chaos align perfect",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.464,
-      "reason": "fits toxic obsession, chaos, and nightlife themes",
+      "reason": "Eyes as metaphor, chaotic urban setting, toxic obsession",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 104.246,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "Emotional pain, dim lighting, turmoil match song's mood and themes",
+      "reason": "matches toxic love, emotional pain, and chaotic nightlife",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty despair",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty emotion",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 120.523,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "Powerful imagery matches toxic obsession and chaos",
+      "reason": "burning, chaos, intense emotion, transformation, cinematic",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 3.773,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness",
+      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 115.82,
       "score": 0.95,
       "cosine": 0.426,
-      "reason": "fits toxic nightlife, addiction, moody urban vibe",
+      "reason": "Surreal neon imagery fits toxic nightlife and addiction themes",
       "recipe": "5-word-neon",
       "featured": true
     },

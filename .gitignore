@@ -103,3 +103,8 @@ scripts/dts2/art-out/
 scripts/dts2/*.log
 scripts/dts2/measure-*.txt
 scripts/song-analysis/profiles/*/qa-*/
+
+# Conformed stem exports live on R2 like every other master — no profile has
+# ever tracked audio (release.mp3 is already ignored above) and hajimemashite's
+# conformed set alone is 46MB.
+scripts/song-analysis/profiles/*/stems_aligned/

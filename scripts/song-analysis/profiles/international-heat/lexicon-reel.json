@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "international-heat",
-  "generatedAt": "2026-07-25T11:14:46.637Z",
+  "generatedAt": "2026-07-31T05:45:13.112Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 156.735,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Sensual, confident, urban, flame as passion and danger",
+      "reason": "Sensual, confident, urban flame aligns with seduction and cultural fusion",
       "recipe": "4-photo",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.529,
-      "reason": "Sensual, confident woman in a slip dress aligns with seduction and nightlife themes.",
+      "reason": "Sensual, confident woman in nightclub aligns with song's themes of seduction and nightlife",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.502,
-      "reason": "Sensual, cultural fusion, and intimate atmosphere align with song's themes",
+      "reason": "Sensual, cultural fusion, and intimate atmosphere align perfectly with the song's themes a",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 88.2,
       "score": 0.95,
       "cosine": 0.466,
-      "reason": "Sensual club vibe matches song's seductive, intense mood and cultural fusion theme",
+      "reason": "Sensual club vibe matches song's seductive, intense mood and cultural fusion themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -228,6 +228,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/touch/s0-3-word-neon.webp",
+      "key": "lexicon/touch/s0-3-word-neon.webp",
+      "word": "touch",
+      "line": "can read your mood One little touch now your pulse go boom Tonight Im the fire you the fuel",
+      "t": 27.11,
+      "score": 0.95,
+      "cosine": 0.457,
+      "reason": "Sensual neon fits seductive nightlife and cultural fusion",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-6-word-neon.webp",
       "key": "lexicon/heat/s6-6-word-neon.webp",
       "word": "heat",
@@ -235,7 +247,7 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.454,
-      "reason": "Sensual neon lighting and urban setting align with song's themes of desire and cultural fu",
+      "reason": "Sensual neon imagery matches song's seductive, intense mood and urban cultural fusion them",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -271,7 +283,7 @@
       "t": 130.21,
       "score": 0.95,
       "cosine": 0.437,
-      "reason": "Sensual urban setting matches song's mood and themes of desire and cultural fusion",
+      "reason": "Sensual urban setting matches song's mood and themes of desire and cultural fusion.",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -307,7 +319,7 @@
       "t": 61.44,
       "score": 0.95,
       "cosine": 0.43,
-      "reason": "Matches seductive, warm, and intense club vibe with cultural fusion",
+      "reason": "Sensual, stylish, and evocative of nightlife and cultural fusion",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +343,7 @@
       "t": 41.192,
       "score": 0.9,
       "cosine": 0.548,
-      "reason": "Matches sensual energy, musical dominance, and stage performance",
+      "reason": "Sensual energy, stage performance, cultural fusion symbolism",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -343,7 +355,7 @@
       "t": 41.192,
       "score": 0.9,
       "cosine": 0.546,
-      "reason": "Matches sensual energy, nightlife, and musical dominance",
+      "reason": "Sensual energy, stage lights, cultural fusion, empowerment",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 29.559,
       "score": 0.9,
       "cosine": 0.504,
-      "reason": "Symbolism aligns with fire's role as desire and rhythm in the song",
+      "reason": "Symbolism aligns with fire's seductive, intense energy and cultural fusion",
       "recipe": "1-photo",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 141.421,
       "score": 0.9,
       "cosine": 0.477,
-      "reason": "Sensual, confident, urban night aligns with song's themes",
+      "reason": "Sensual, confident, urban night aligns with song's mood and themes",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
-      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
-      "word": "rhythm",
-      "line": "We fuckin to the rhythm of this international sin Female Touch me right",
-      "t": 88.2,
-      "score": 0.9,
-      "cosine": 0.476,
-      "reason": "Urban setting, cultural fusion, and rhythm align with song's themes",
-      "recipe": "5-word-portrait",
       "featured": true
     }
   ],
@@ -413,26 +413,25 @@
     ],
     "fire": [
       5,
-      28
+      29
     ],
     "heat": [
       9,
-      18,
-      24
+      19,
+      25
     ],
     "rhythm": [
       10,
-      16,
-      31
+      16
     ],
     "burn": [
       11,
-      29
+      30
     ],
     "kiss": [
       12,
-      20,
-      25
+      21,
+      26
     ],
     "whisper": [
       13,
@@ -442,24 +441,25 @@
       14,
       15
     ],
+    "touch": [
+      18,
+      24
+    ],
     "skin": [
-      19
+      20
     ],
     "love": [
-      21
-    ],
-    "sin": [
       22
     ],
-    "touch": [
+    "sin": [
       23
     ],
     "bass": [
-      26,
-      27
+      27,
+      28
     ],
     "light": [
-      30
+      31
     ]
   }
 }

@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "days-drift-by",
-  "generatedAt": "2026-07-25T10:58:49.992Z",
+  "generatedAt": "2026-07-31T05:37:49.777Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 588,
-    "judged": 23,
-    "accepted": 23,
-    "kept": 23
+    "candidates": 611,
+    "judged": 26,
+    "accepted": 26,
+    "kept": 26
   },
   "reel": [
     {
@@ -79,7 +79,7 @@
       "t": 110.4,
       "score": 0.95,
       "cosine": 0.657,
-      "reason": "matches ethereal, melancholic, and cinematic tone",
+      "reason": "matches ethereal, melancholic, and cinematic tone with transience theme",
       "recipe": "1",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 2.403,
       "score": 0.95,
       "cosine": 0.585,
-      "reason": "Ethereal light over a misty river matches song's melancholic, cinematic mood and themes.",
+      "reason": "Ethereal light over a misty river matches song's melancholic, cinematic mood and themes",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 47.543,
       "score": 0.95,
       "cosine": 0.578,
-      "reason": "Matches ethereal, melancholic river imagery with cinematic mood",
+      "reason": "Matches ethereal, melancholic, cinematic river imagery with song's themes",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -127,8 +127,20 @@
       "t": 47.543,
       "score": 0.95,
       "cosine": 0.578,
-      "reason": "Matches ethereal, melancholic river imagery with noir and natural elements",
+      "reason": "Matches ethereal, melancholic, and cinematic tone with river and nature imagery",
       "recipe": "6-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gray/s0-5-watercolor.webp",
+      "key": "lexicon/gray/s0-5-watercolor.webp",
+      "word": "gray",
+      "line": "away Every color melts into gray Then the sun finds its way",
+      "t": 116.08,
+      "score": 0.95,
+      "cosine": 0.576,
+      "reason": "matches ethereal melancholy and transience of the song",
+      "recipe": "5-watercolor",
       "featured": true
     },
     {
@@ -144,6 +156,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gray/s2-3-word-portrait.webp",
+      "key": "lexicon/gray/s2-3-word-portrait.webp",
+      "word": "gray",
+      "line": "away Every color melts into gray Then the sun finds its way",
+      "t": 116.08,
+      "score": 0.95,
+      "cosine": 0.542,
+      "reason": "matches melancholy, industrial decay, and ethereal lighting",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s1-6-watercolor.webp",
       "key": "lexicon/slow/s1-6-watercolor.webp",
       "word": "slow",
@@ -153,6 +177,18 @@
       "cosine": 0.532,
       "reason": "matches ethereal mood, mist and river symbolism align with song's themes",
       "recipe": "6-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gray/s3-1-film-still.webp",
+      "key": "lexicon/gray/s3-1-film-still.webp",
+      "word": "gray",
+      "line": "away Every color melts into gray Then the sun finds its way",
+      "t": 116.08,
+      "score": 0.95,
+      "cosine": 0.517,
+      "reason": "Matches melancholic mood, transience, and noir-ethereal blend",
+      "recipe": "1-film-still",
       "featured": true
     },
     {
@@ -211,7 +247,7 @@
       "t": 50.991,
       "score": 0.9,
       "cosine": 0.523,
-      "reason": "Ethereal, intimate, and transient imagery aligns with the song's mood and themes.",
+      "reason": "Ethereal lighting, intimacy, and transience align with song's mood and themes.",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -235,7 +271,7 @@
       "t": 50.991,
       "score": 0.85,
       "cosine": 0.528,
-      "reason": "Ethereal lighting and tender connection match song's mood and themes",
+      "reason": "Ethereal and tender imagery fits the song's mood and themes of transience and connection.",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -247,7 +283,7 @@
       "t": 117.157,
       "score": 0.8,
       "cosine": 0.611,
-      "reason": "Ethereal light contrasts with melancholy, fits noir and transience themes",
+      "reason": "Ethereal light contrasts with melancholy, fits noir and escapism themes",
       "recipe": "4-photo",
       "featured": true
     },
@@ -292,12 +328,12 @@
     "sky": [
       0,
       1,
-      21
+      24
     ],
     "drift": [
       2,
-      12,
-      13
+      15,
+      16
     ],
     "clouds": [
       3,
@@ -305,28 +341,33 @@
     ],
     "slow": [
       4,
-      10,
-      11
+      11,
+      13
     ],
     "light": [
       6,
       7,
-      15
+      18
     ],
     "river": [
       8,
       9,
+      17
+    ],
+    "gray": [
+      10,
+      12,
       14
     ],
     "hands": [
-      16,
-      17,
-      18
-    ],
-    "sun": [
       19,
       20,
-      22
+      21
+    ],
+    "sun": [
+      22,
+      23,
+      25
     ]
   }
 }

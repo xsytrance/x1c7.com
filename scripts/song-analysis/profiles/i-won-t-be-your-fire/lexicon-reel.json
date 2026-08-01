@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-25T11:18:58.047Z",
+  "generatedAt": "2026-07-31T05:43:41.991Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2411,
+    "candidates": 2506,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -31,7 +31,7 @@
       "t": 92.625,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Powerful portrayal of emotional restraint and pain in a toxic relationship",
+      "reason": "Powerful depiction of emotional restraint and pain in a toxic relationship",
       "recipe": "3-photo",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.481,
-      "reason": "storm symbolizes turmoil, figure shows resilience and defiance",
+      "reason": "storm symbolizes turmoil, defiance matches self-respect theme",
       "recipe": "1-concept-art",
       "featured": true
     },
@@ -81,6 +81,18 @@
       "cosine": 0.479,
       "reason": "Powerful symbolism of destruction and toxicity aligns with song's themes",
       "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s3-2-word-portrait.webp",
+      "key": "lexicon/hate/s3-2-word-portrait.webp",
+      "word": "hate",
+      "line": "wont feed the fire Say you hate me NO!!! Say youre done NO!!! Say anything",
+      "t": 187.88,
+      "score": 0.95,
+      "cosine": 0.475,
+      "reason": "Powerful contrast of hate and hope fits the song's emotional conflict and cinematic mood.",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -103,8 +115,20 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing.",
+      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-6-film-still.webp",
+      "key": "lexicon/cage/s2-6-film-still.webp",
+      "word": "cage",
+      "line": "without entering the cage I can cry for the old",
+      "t": 223.62,
+      "score": 0.95,
+      "cosine": 0.472,
+      "reason": "Symbolizes emotional confinement and longing for freedom, aligns with song's themes",
+      "recipe": "6-film-still",
       "featured": true
     },
     {
@@ -115,7 +139,7 @@
       "t": 153.808,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "evokes melancholy and desolation fitting the song's mood and themes",
+      "reason": "evokes isolation, decay, and emotional weight aligning with song's themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -127,7 +151,7 @@
       "t": 67.93,
       "score": 0.95,
       "cosine": 0.459,
-      "reason": "Emotional isolation, coldness, and desolation align with the song's themes of emotional st",
+      "reason": "Emotional isolation, coldness, and desolation align with the song's themes of emotional di",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -144,15 +168,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-6-film-still.webp",
-      "key": "lexicon/cage/s2-6-film-still.webp",
-      "word": "cage",
-      "line": "voice without entering the cage I can cry",
-      "t": 223.817,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s0-6-word-portrait.webp",
+      "key": "lexicon/breaking/s0-6-word-portrait.webp",
+      "word": "breaking",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking",
+      "t": 67.46,
       "score": 0.95,
-      "cosine": 0.457,
-      "reason": "Symbolizes emotional confinement and isolation central to the song's themes",
-      "recipe": "6-film-still",
+      "cosine": 0.456,
+      "reason": "Captures inner turmoil and fragility in a cinematic, melancholic setting",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -163,7 +187,7 @@
       "t": 52.48,
       "score": 0.95,
       "cosine": 0.451,
-      "reason": "Powerful symbolism of heart and fire, matches song's emotional depth and themes",
+      "reason": "Powerful symbolism of fire and emotional fragmentation fits the song's themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -180,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-4-dream-collage.webp",
+      "key": "lexicon/bruise/s0-4-dream-collage.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.95,
+      "cosine": 0.438,
+      "reason": "Emotional wound, fragile hope, fragmented memories align with song's themes",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s1-2-anime.webp",
       "key": "lexicon/storm/s1-2-anime.webp",
       "word": "storm",
@@ -189,18 +225,6 @@
       "cosine": 0.438,
       "reason": "Powerful imagery matches emotional turmoil and resilience in the song",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-3-photo.webp",
-      "key": "lexicon/voice/s14-3-photo.webp",
-      "word": "voice",
-      "line": "I can remember your soft voice without entering the cage",
-      "t": 221.333,
-      "score": 0.95,
-      "cosine": 0.433,
-      "reason": "Emotional vulnerability and raw expression align with song's themes and mood",
-      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -240,6 +264,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s3-2-photo.webp",
+      "key": "lexicon/breaking/s3-2-photo.webp",
+      "word": "breaking",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking",
+      "t": 67.46,
+      "score": 0.95,
+      "cosine": 0.425,
+      "reason": "Powerful imagery of heartbreak and fragility matches song's emotional depth and themes",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s2-3-film-still.webp",
       "key": "lexicon/lights/s2-3-film-still.webp",
       "word": "lights",
@@ -267,8 +303,8 @@
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s2-3-photo.webp",
       "key": "lexicon/cage/s2-3-photo.webp",
       "word": "cage",
-      "line": "voice without entering the cage I can cry",
-      "t": 223.817,
+      "line": "without entering the cage I can cry for the old",
+      "t": 223.62,
       "score": 0.9,
       "cosine": 0.515,
       "reason": "Symbolizes emotional confinement and isolation central to the song's theme",
@@ -283,7 +319,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.513,
-      "reason": "Symbolizes lingering pain and haunting past in a toxic relationship",
+      "reason": "Symbolizes lingering emotional presence, fits haunting mood and themes of unresolved past",
       "recipe": "2-photo",
       "featured": true
     },
@@ -295,7 +331,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.507,
-      "reason": "Symbolizes breaking free, fits toxic relationship theme and cinematic mood",
+      "reason": "Symbolizes breaking free, fits themes of resilience and emotional independence",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -315,8 +351,8 @@
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cage/s1-5-photo.webp",
       "key": "lexicon/cage/s1-5-photo.webp",
       "word": "cage",
-      "line": "voice without entering the cage I can cry",
-      "t": 223.817,
+      "line": "without entering the cage I can cry for the old",
+      "t": 223.62,
       "score": 0.9,
       "cosine": 0.497,
       "reason": "Powerful imagery of confinement and emotional struggle aligns with song's themes",
@@ -327,11 +363,11 @@
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s0-5-cinema.webp",
       "key": "lexicon/moon/s0-5-cinema.webp",
       "word": "moon",
-      "line": "without becoming your moon I can hold all the good parts",
-      "t": 213.47,
+      "line": "without becoming your moon I can hold all the good parts and still",
+      "t": 213.72,
       "score": 0.9,
-      "cosine": 0.487,
-      "reason": "Symbolizes isolation, emotional distance, and desolation align with song's themes",
+      "cosine": 0.485,
+      "reason": "Symbolizes emotional distance, isolation, and the coldness of the relationship",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -358,52 +394,16 @@
       "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
       "recipe": "4-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s7-5-chalkboard.webp",
-      "key": "lexicon/moon/s7-5-chalkboard.webp",
-      "word": "moon",
-      "line": "without becoming your moon I can hold all the good parts",
-      "t": 213.47,
-      "score": 0.9,
-      "cosine": 0.48,
-      "reason": "Symbolizes emotional guidance and serenity amid turmoil",
-      "recipe": "5-chalkboard",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s4-6-word-portrait.webp",
-      "key": "lexicon/lights/s4-6-word-portrait.webp",
-      "word": "lights",
-      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
-      "t": 78.147,
-      "score": 0.9,
-      "cosine": 0.468,
-      "reason": "Symbolism aligns with emotional vulnerability and hope in a toxic relationship",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
-      "key": "lexicon/love/s12-6-word-portrait.webp",
-      "word": "love",
-      "line": "lights I know the bathroom floor I know the kind of love that turns into a war I know you think the hurt",
-      "t": 80.88,
-      "score": 0.9,
-      "cosine": 0.465,
-      "reason": "Symbolizes toxic love, emotional chaos, and cinematic mood",
-      "recipe": "6-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "dark": [
       0,
-      8
+      10
     ],
     "cut": [
       1,
-      18
+      20
     ],
     "smoke": [
       2,
@@ -411,57 +411,59 @@
     ],
     "fire": [
       3,
-      12,
-      20
+      14,
+      23
     ],
     "storm": [
       4,
-      14
-    ],
-    "escape": [
-      6,
       17
     ],
-    "break": [
+    "hate": [
+      6
+    ],
+    "escape": [
       7,
-      16,
-      23
+      19
     ],
-    "cold": [
-      9,
-      13
-    ],
-    "heart": [
-      10
+    "break": [
+      8,
+      18,
+      26
     ],
     "cage": [
-      11,
-      21,
-      25
+      9,
+      24,
+      28
     ],
-    "voice": [
+    "cold": [
+      11,
       15
     ],
+    "heart": [
+      12
+    ],
+    "breaking": [
+      13,
+      21
+    ],
+    "bruise": [
+      16
+    ],
     "lights": [
-      19,
-      28,
-      30
+      22,
+      31
     ],
     "ghost": [
-      22
+      25
     ],
     "burn": [
-      24
+      27
     ],
     "moon": [
-      26,
       29
     ],
     "rain": [
-      27
-    ],
-    "love": [
-      31
+      30
     ]
   }
 }

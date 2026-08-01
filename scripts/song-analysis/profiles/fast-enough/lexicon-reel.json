@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-07-25T11:04:37.074Z",
+  "generatedAt": "2026-07-31T05:40:14.749Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.55,
-      "reason": "Matches glow, intimacy, and golden light with song's playful, romantic mood",
+      "reason": "Matches playful romance, golden light, intimacy, and shared connection",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Urban neon aligns with retro-futurism and speed themes",
+      "reason": "Urban neon aligns with retro-futurism and speed themes; mood matches energy and urgency",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 34.853,
       "score": 0.95,
       "cosine": 0.527,
-      "reason": "Matches city lights, nostalgia, energy, and retro-futurism",
+      "reason": "Matches city lights, nostalgia, and playful energy with retro-futurism",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.525,
-      "reason": "Matches neon, speed, nostalgia, and playful energy of the song",
+      "reason": "Matches neon, speed, nostalgia, and playful romance",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.493,
-      "reason": "Matches playful romance, neon lights fit retro-futurism and summer vibe",
+      "reason": "Matches neon, intimacy, and energy of the song's theme",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 33.867,
       "score": 0.95,
       "cosine": 0.487,
-      "reason": "Urban neon fits the fast, energetic, retro-futurist vibe",
+      "reason": "Urban neon fits the fast, energetic, nostalgic mood and themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 87.284,
       "score": 0.95,
       "cosine": 0.448,
-      "reason": "Matches neon, urban, playful, and futuristic romance themes",
+      "reason": "Matches neon, energy, romance, and retro-futurism",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 40.04,
       "score": 0.9,
       "cosine": 0.564,
-      "reason": "Matches summer, optimism, and aspiration in the song's playful, nostalgic energy.",
+      "reason": "Matches summer, optimism, and aspiration in the song's playful, fast-paced energy.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 33.867,
       "score": 0.9,
       "cosine": 0.516,
-      "reason": "Captures motion, urban energy, and determination aligning with song's theme",
+      "reason": "Captures motion, urban energy, and determination aligning with song's themes",
       "recipe": "2-cinema",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 87.284,
       "score": 0.9,
       "cosine": 0.445,
-      "reason": "Playful, joyful, and celebratory image fits the song's upbeat and romantic tone.",
+      "reason": "Playful, joyful, and celebratory imagery fits the song's energetic and romantic vibe.",
       "recipe": "4-stickers",
       "featured": true
     },

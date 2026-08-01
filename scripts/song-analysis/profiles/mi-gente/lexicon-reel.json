@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-07-25T11:23:55.107Z",
+  "generatedAt": "2026-07-31T05:48:28.736Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 12,
-    "judged": 3,
-    "accepted": 3,
-    "kept": 3
+    "candidates": 69,
+    "judged": 15,
+    "accepted": 13,
+    "kept": 13
   },
   "reel": [
     {
@@ -36,6 +36,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-5-word-portrait.webp",
+      "key": "lexicon/barrio/s0-5-word-portrait.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 1,
+      "cosine": 0.558,
+      "reason": "Perfectly captures nighttime barrio celebration and community unity",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s1-5-dream-collage.webp",
       "key": "lexicon/gente/s1-5-dream-collage.webp",
       "word": "gente",
@@ -46,13 +58,139 @@
       "reason": "Perfect fit for unity, nighttime barrio, aggressive swagger",
       "recipe": "5-dream-collage",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s2-1-dream-collage.webp",
+      "key": "lexicon/barrio/s2-1-dream-collage.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 1,
+      "cosine": 0.498,
+      "reason": "Perfectly captures barrio celebration and community unity in vibrant, lively scene",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s2-4-word-portrait.webp",
+      "key": "lexicon/calle/s2-4-word-portrait.webp",
+      "word": "calle",
+      "line": "se siente se siente Si llego con los míos la calle se enciende Mi gente mi gente mi gente mi",
+      "t": 18.866,
+      "score": 0.95,
+      "cosine": 0.436,
+      "reason": "Urban alley fits song's nighttime barrio celebration and street unity themes",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s2-2-word-portrait.webp",
+      "key": "lexicon/sangre/s2-2-word-portrait.webp",
+      "word": "sangre",
+      "line": "mi gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se",
+      "t": 26.262,
+      "score": 0.95,
+      "cosine": 0.427,
+      "reason": "Symbolizes 'sangre' as life force, connects to loyalty and identity themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s2-2-photo.webp",
+      "key": "lexicon/calle/s2-2-photo.webp",
+      "word": "calle",
+      "line": "se siente se siente Si llego con los míos la calle se enciende Mi gente mi gente mi gente mi",
+      "t": 18.866,
+      "score": 0.95,
+      "cosine": 0.414,
+      "reason": "Urban alley aligns with calle, graffiti reflects community creativity and rebellion",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-5-photo.webp",
+      "key": "lexicon/fuego/s0-5-photo.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.9,
+      "cosine": 0.479,
+      "reason": "Symbolizes resilience, fire as purification, street imagery aligns with song's themes",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s1-4-stickers.webp",
+      "key": "lexicon/fuego/s1-4-stickers.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.85,
+      "cosine": 0.453,
+      "reason": "Symbolizes fire as life force and unity under the stars",
+      "recipe": "4-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s1-6-cinema.webp",
+      "key": "lexicon/barrio/s1-6-cinema.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 0.8,
+      "cosine": 0.517,
+      "reason": "Captures barrio essence with warmth and resilience",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
+      "key": "lexicon/fuego/s0-4-cinema.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.7,
+      "cosine": 0.467,
+      "reason": "Symbolizes unity and warmth but lacks aggressive swagger",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s0-1-film-still.webp",
+      "key": "lexicon/calle/s0-1-film-still.webp",
+      "word": "calle",
+      "line": "se siente se siente Si llego con los míos la calle se enciende Mi gente mi gente mi gente mi",
+      "t": 18.866,
+      "score": 0.7,
+      "cosine": 0.425,
+      "reason": "Cobblestone street and community vibe align with 'calle' and song's themes.",
+      "recipe": "1-film-still",
+      "featured": true
     }
   ],
   "byWord": {
     "gente": [
       0,
       1,
-      2
+      3
+    ],
+    "barrio": [
+      2,
+      4,
+      10
+    ],
+    "calle": [
+      5,
+      7,
+      12
+    ],
+    "sangre": [
+      6
+    ],
+    "fuego": [
+      8,
+      9,
+      11
     ]
   }
 }

@@ -1,16 +1,28 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-07-25T11:25:04.901Z",
+  "generatedAt": "2026-07-31T05:49:41.359Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1401,
-    "judged": 60,
-    "accepted": 54,
+    "candidates": 1437,
+    "judged": 64,
+    "accepted": 58,
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-4-word-portrait.webp",
+      "key": "lexicon/worldwide/s0-4-word-portrait.webp",
+      "word": "worldwide",
+      "line": "in Seoul But my love goes worldwide From your good morning To",
+      "t": 70.171,
+      "score": 1,
+      "cosine": 0.486,
+      "reason": "Global love theme, vibrant connections, matches song's worldwide sentiment",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
       "key": "lexicon/glow/s7-1-word-portrait.webp",
@@ -31,7 +43,7 @@
       "t": 16.185,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "Captures long-distance connection, digital resilience, and global unity",
+      "reason": "Captures long-distance connection, hope, and digital unity in a romantic setting",
       "recipe": "1",
       "featured": true
     },
@@ -55,7 +67,7 @@
       "t": 76.162,
       "score": 0.95,
       "cosine": 0.534,
-      "reason": "Intimate nighttime moment aligns with lyric's late-night connection and long-distance them",
+      "reason": "Intimate nighttime moment fits long-distance theme, mood aligns with romantic resilience",
       "recipe": "3-photo",
       "featured": true
     },
@@ -67,7 +79,7 @@
       "t": 16.185,
       "score": 0.95,
       "cosine": 0.525,
-      "reason": "Cinematic beach scene with laptop bridges distance, stars symbolize dreams, aligns with Se",
+      "reason": "Captures longing, connection, and dreams across distance",
       "recipe": "2",
       "featured": true
     },
@@ -79,7 +91,7 @@
       "t": 76.162,
       "score": 0.95,
       "cosine": 0.51,
-      "reason": "Captures urban night, long-distance connection, hope and resilience",
+      "reason": "Captures urban night, long-distance connection, and hopeful resilience",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -93,6 +105,18 @@
       "cosine": 0.505,
       "reason": "Romantic, intimate, and tied to memory preservation in long-distance love",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-2.webp",
+      "key": "lexicon/worldwide/s0-2.webp",
+      "word": "worldwide",
+      "line": "in Seoul But my love goes worldwide From your good morning To",
+      "t": 70.171,
+      "score": 0.95,
+      "cosine": 0.499,
+      "reason": "Symbolizes global love, matches song's theme of worldwide connection",
+      "recipe": "2",
       "featured": true
     },
     {
@@ -115,7 +139,7 @@
       "t": 29.083,
       "score": 0.95,
       "cosine": 0.491,
-      "reason": "glitchy romance, digital turbulence, neon aesthetics match song's themes",
+      "reason": "glitchy romance, digital turbulence, neon aesthetics match song's theme",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -163,7 +187,7 @@
       "t": 19.737,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "Captures late-night digital connection and loneliness in a long-distance relationship",
+      "reason": "Captures digital connection and loneliness in long-distance love",
       "recipe": "1",
       "featured": true
     },
@@ -216,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/worldwide/s0-1.webp",
+      "key": "lexicon/worldwide/s0-1.webp",
+      "word": "worldwide",
+      "line": "in Seoul But my love goes worldwide From your good morning To",
+      "t": 70.171,
+      "score": 0.95,
+      "cosine": 0.446,
+      "reason": "Symbolizes global love, matches song's theme of worldwide connection",
+      "recipe": "1",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-5-word-portrait.webp",
       "key": "lexicon/soul/s12-5-word-portrait.webp",
       "word": "soul",
@@ -223,7 +259,7 @@
       "t": 2.496,
       "score": 0.95,
       "cosine": 0.437,
-      "reason": "Cosmic unity and soul theme align with song's global love and connection",
+      "reason": "Symbolizes soul connection across distances, fits cosmic and universal themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -264,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/border/s3-1-cinema.webp",
+      "key": "lexicon/border/s3-1-cinema.webp",
+      "word": "border",
+      "line": "why Forms on the table stamps in a line But Id cross every border just to call you mine K1 K2 CR1",
+      "t": 55.032,
+      "score": 0.95,
+      "cosine": 0.395,
+      "reason": "Symbolizes triumph over borders, aligns with global love and cultural fusion themes",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
       "key": "lexicon/different/s6-3-word-neon.webp",
       "word": "different",
@@ -295,7 +343,7 @@
       "t": 14.141,
       "score": 0.95,
       "cosine": 0.388,
-      "reason": "Intimate, tender, and cinematic image aligns with song's romantic resilience and emotional",
+      "reason": "Intimate, tender, and cinematic; aligns with romantic resilience and digital connection",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -307,7 +355,7 @@
       "t": 143.244,
       "score": 0.9,
       "cosine": 0.531,
-      "reason": "Symbolizes voice strain, digital connection, cultural fusion, emotional resilience",
+      "reason": "Symbolizes voice strain, digital connection, and emotional resilience in long-distance lov",
       "recipe": "6-stickers",
       "featured": true
     },
@@ -319,7 +367,7 @@
       "t": 36.781,
       "score": 0.9,
       "cosine": 0.488,
-      "reason": "Romantic intimacy and emotional anchor fit the song's themes of love and connection.",
+      "reason": "Romantic intimacy aligns with song's theme of love across distance",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -331,7 +379,7 @@
       "t": 16.185,
       "score": 0.9,
       "cosine": 0.458,
-      "reason": "Modern, dynamic, and abstract imagery aligns with digital connection and global themes",
+      "reason": "Abstract digital energy matches song's tech-driven love theme",
       "recipe": "4-poster",
       "featured": true
     },
@@ -346,119 +394,73 @@
       "reason": "Romantic intimacy under neon fits Seoul nightlife and glowing love",
       "recipe": "2-concept-art",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s4-4-dream-collage.webp",
-      "key": "lexicon/crazy/s4-4-dream-collage.webp",
-      "word": "crazy",
-      "line": "face on my screen makes the distance feel sweet WiFi acting crazy signal dropping low Can you hear me baby then the camera",
-      "t": 29.083,
-      "score": 0.9,
-      "cosine": 0.408,
-      "reason": "fits futuristic global love and tech struggles",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s8-4-anime.webp",
-      "key": "lexicon/midnight/s8-4-anime.webp",
-      "word": "midnight",
-      "line": "Thirtyseven messages waiting there for me Your morning is my midnight my sunrise is your sleep But your face on my screen",
-      "t": 23.894,
-      "score": 0.9,
-      "cosine": 0.402,
-      "reason": "Matches midnight theme, cultural fusion, and emotional tone",
-      "recipe": "4-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s1-4-dream-collage.webp",
-      "key": "lexicon/voice/s1-4-dream-collage.webp",
-      "word": "voice",
-      "line": "there Tired thumbs from typing all night Tired voice from one more call till daylight Missed calls small fights",
-      "t": 143.244,
-      "score": 0.9,
-      "cosine": 0.4,
-      "reason": "Symbolizes longing, connection, and digital struggles in a nostalgic setting",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/touch/s0-3-word-neon.webp",
-      "key": "lexicon/touch/s0-3-word-neon.webp",
-      "word": "touch",
-      "line": "me now Signals weak But I feel you somehow Time zones touch screens Different skies same dreams One",
-      "t": 14.141,
-      "score": 0.9,
-      "cosine": 0.38,
-      "reason": "Surreal neon 'touch' symbolizes digital connection and urban longing in a global love stor",
-      "recipe": "3-word-neon",
-      "featured": true
     }
   ],
   "byWord": {
-    "glow": [
+    "worldwide": [
       0,
-      11,
-      27
-    ],
-    "dreams": [
-      1,
-      4,
-      26
-    ],
-    "soul": [
-      2,
-      17
-    ],
-    "night": [
-      3,
-      5
-    ],
-    "save": [
-      6,
-      15
-    ],
-    "seoul": [
-      7,
-      9,
-      16
-    ],
-    "crazy": [
       8,
-      28
-    ],
-    "rhythm": [
-      10,
-      20,
-      22
-    ],
-    "phone": [
-      12
-    ],
-    "smile": [
-      13
-    ],
-    "different": [
-      14,
-      21
-    ],
-    "heart": [
-      18,
       19
     ],
-    "touch": [
-      23,
+    "glow": [
+      1,
+      13,
       31
     ],
-    "voice": [
-      24,
+    "dreams": [
+      2,
+      5,
       30
     ],
-    "love": [
+    "soul": [
+      3,
+      20
+    ],
+    "night": [
+      4,
+      6
+    ],
+    "save": [
+      7,
+      17
+    ],
+    "seoul": [
+      9,
+      11,
+      18
+    ],
+    "crazy": [
+      10
+    ],
+    "rhythm": [
+      12,
+      23,
+      26
+    ],
+    "phone": [
+      14
+    ],
+    "smile": [
+      15
+    ],
+    "different": [
+      16,
       25
     ],
-    "midnight": [
+    "heart": [
+      21,
+      22
+    ],
+    "border": [
+      24
+    ],
+    "touch": [
+      27
+    ],
+    "voice": [
+      28
+    ],
+    "love": [
       29
     ]
   }

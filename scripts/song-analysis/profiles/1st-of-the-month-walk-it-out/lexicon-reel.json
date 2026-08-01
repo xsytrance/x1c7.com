@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-07-25T10:45:04.533Z",
+  "generatedAt": "2026-07-31T05:33:15.819Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1353,
+    "candidates": 1413,
     "judged": 64,
-    "accepted": 55,
+    "accepted": 56,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 52.512,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Urban neon symbolizes transformation and triumph over void",
+      "reason": "Urban rebirth, transformation, and triumph align with song's themes of renewal and discipl",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 114.277,
       "score": 0.95,
       "cosine": 0.494,
-      "reason": "Urban neon aligns with borough pride and military precision",
+      "reason": "Urban neon aligns with borough pride and military precision; urgency matches triumphant di",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 15.4,
       "score": 0.95,
       "cosine": 0.466,
-      "reason": "Strong symbolism of resilience, solitude, and renewal aligns with song's triumphant discip",
+      "reason": "Matches triumphant discipline, resilience, and solitary determination",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.455,
-      "reason": "Symbolizes transformation and determination in a gritty, industrial setting",
+      "reason": "Symbolizes transformation and determination in a gritty setting",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.452,
-      "reason": "Urban neon aligns with borough pride and self-determination themes",
+      "reason": "Urban neon aligns with borough pride and triumphant discipline",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 113.92,
       "score": 0.95,
       "cosine": 0.436,
-      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and discipline.",
+      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and grit of the song",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 52.048,
       "score": 0.95,
       "cosine": 0.422,
-      "reason": "Symbolizes transformation, focus, and value align with song's themes",
+      "reason": "Symbolizes transformation, focus, and value align with song's themes of turning void into ",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 98.79,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Urban resilience, neon lighting, and triumphant renewal align with the song's themes.",
+      "reason": "Urban resilience, neon lighting, and triumphant renewal fit the song's mood and themes.",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -204,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s7-6-photo.webp",
+      "key": "lexicon/summer/s7-6-photo.webp",
+      "word": "summer",
+      "line": "of the month Sun up, wind slowin' down Got the whole summer lookin' different now Walk it out,",
+      "t": 26.609,
+      "score": 0.9,
+      "cosine": 0.478,
+      "reason": "Triumphant crowd, sweat as hard work, urban setting align",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s4-3-word-portrait.webp",
       "key": "lexicon/road/s4-3-word-portrait.webp",
       "word": "road",
@@ -211,7 +223,7 @@
       "t": 121.324,
       "score": 0.9,
       "cosine": 0.47,
-      "reason": "Symbolizes journey, hope, and direction align with triumph and renewal",
+      "reason": "Symbolizes journey and hope aligns with triumph and renewal",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -235,7 +247,7 @@
       "t": 52.048,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Urban renewal, discipline, and transformation align with song's themes",
+      "reason": "Urban renewal, discipline, and transformation align with the song's themes.",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -271,8 +283,20 @@
       "t": 4.876,
       "score": 0.9,
       "cosine": 0.449,
-      "reason": "Motivational, disciplined, and triumphant imagery aligns with song's themes",
+      "reason": "Motivational, disciplined, and triumphant imagery fits the song's themes",
       "recipe": "2-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blood/s1-3-neon-night.webp",
+      "key": "lexicon/blood/s1-3-neon-night.webp",
+      "word": "blood",
+      "line": "switched up, still the same inside Boricua blood, Dominican soul, Veneno email Turn",
+      "t": 48.727,
+      "score": 0.9,
+      "cosine": 0.44,
+      "reason": "Symbolism of blood as resilience, fists as solidarity, urban grit aligns with song's theme",
+      "recipe": "3-neon-night",
       "featured": true
     },
     {
@@ -312,30 +336,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fate/s0-6-pixel.webp",
-      "key": "lexicon/fate/s0-6-pixel.webp",
-      "word": "fate",
-      "line": "gotta stay If you build it brick by brick, you can change your fate It's the first of the month Walk it out, walk",
-      "t": 62.031,
-      "score": 0.9,
-      "cosine": 0.352,
-      "reason": "Symbolizes new beginnings, purpose, and destiny aligning with theme of changing fate throu",
-      "recipe": "6-pixel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s7-6-photo.webp",
-      "key": "lexicon/summer/s7-6-photo.webp",
-      "word": "summer",
-      "line": "of the month Sun up, wind slowin' down Got the whole summer lookin' different now Walk it out,",
-      "t": 26.609,
-      "score": 0.85,
-      "cosine": 0.478,
-      "reason": "Triumphant crowd, sweat as hard work, urban setting align",
-      "recipe": "6-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s4-5-stickers.webp",
       "key": "lexicon/sun/s4-5-stickers.webp",
       "word": "sun",
@@ -343,7 +343,7 @@
       "t": 24.253,
       "score": 0.85,
       "cosine": 0.454,
-      "reason": "Symbolizes renewal and clarity aligning with triumph and discipline",
+      "reason": "Symbolizes renewal and clarity aligning with triumphant discipline and resilience",
       "recipe": "5-stickers",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 114.277,
       "score": 0.85,
       "cosine": 0.441,
-      "reason": "Fits triumphant urgency, futuristic energy aligns with renewal and discipline",
+      "reason": "Fits triumphant energy, urgency, and futuristic vibe aligns with discipline and renewal th",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -384,15 +384,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s4-6-dream-collage.webp",
-      "key": "lexicon/broken/s4-6-dream-collage.webp",
-      "word": "broken",
-      "line": "We still got stories that ain't been told No broken promises, no fake displays Death before dishonor,",
-      "t": 163.028,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s1-5-neon-night.webp",
+      "key": "lexicon/wall/s1-5-neon-night.webp",
+      "word": "wall",
+      "line": "build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all Can",
+      "t": 109.33,
       "score": 0.85,
-      "cosine": 0.404,
-      "reason": "Symbolizes resilience through brokenness, aligns with triumph over failure and hope",
-      "recipe": "6-dream-collage",
+      "cosine": 0.422,
+      "reason": "Urban grit, order vs chaos, resilience fit the song's themes",
+      "recipe": "5-neon-night",
       "featured": true
     }
   ],
@@ -403,7 +403,7 @@
     ],
     "road": [
       1,
-      16
+      17
     ],
     "fast": [
       2,
@@ -412,7 +412,7 @@
     ],
     "walk": [
       3,
-      17
+      18
     ],
     "code": [
       4,
@@ -422,7 +422,7 @@
     "move": [
       8,
       9,
-      23
+      25
     ],
     "veneno": [
       11
@@ -430,29 +430,29 @@
     "void": [
       12,
       15,
-      18
+      19
     ],
     "different": [
       13,
-      24
+      26
     ],
     "night": [
       14
     ],
+    "summer": [
+      16
+    ],
     "sun": [
-      19,
       20,
+      21,
       27
     ],
     "save": [
-      21,
-      22
+      22,
+      24
     ],
-    "fate": [
-      25
-    ],
-    "summer": [
-      26
+    "blood": [
+      23
     ],
     "forever": [
       28
@@ -460,7 +460,7 @@
     "dreams": [
       30
     ],
-    "broken": [
+    "wall": [
       31
     ]
   }

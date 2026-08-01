@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-07-25T11:25:18.369Z",
+  "generatedAt": "2026-07-31T05:49:53.190Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -84,6 +84,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
+      "key": "lexicon/move/s17-3-cinema.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.95,
+      "cosine": 0.479,
+      "reason": "matches hypnotic, introspective mood and themes of transience",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s4-2-word-portrait.webp",
       "key": "lexicon/breath/s4-2-word-portrait.webp",
       "word": "breath",
@@ -108,18 +120,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
-      "key": "lexicon/move/s17-3-cinema.webp",
-      "word": "move",
-      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
-      "t": 214.378,
-      "score": 0.9,
-      "cosine": 0.479,
-      "reason": "matches hypnotic, introspective mood and themes of transience",
-      "recipe": "3-cinema",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s3-1-word-neon.webp",
       "key": "lexicon/breath/s3-1-word-neon.webp",
       "word": "breath",
@@ -127,7 +127,7 @@
       "t": 7.907,
       "score": 0.9,
       "cosine": 0.427,
-      "reason": "Urban isolation and neon glow match hypnotic, introspective mood",
+      "reason": "Urban isolation and neon symbolism align with the song's mood and themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -167,15 +167,15 @@
       4,
       5
     ],
-    "breath": [
-      6,
-      9,
-      11
-    ],
     "move": [
-      7,
+      6,
       8,
       10
+    ],
+    "breath": [
+      7,
+      9,
+      11
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-07-25T11:07:24.730Z",
+  "generatedAt": "2026-07-31T05:41:03.961Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1984,
+    "candidates": 2011,
     "judged": 64,
     "accepted": 59,
     "kept": 32
@@ -79,7 +79,7 @@
       "t": 13.758,
       "score": 1,
       "cosine": 0.593,
-      "reason": "Perfectly aligns with toxic romance and aggressive seduction",
+      "reason": "Perfectly aligns with toxic romance and seductive menace",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 35.573,
       "score": 0.95,
       "cosine": 0.588,
-      "reason": "Matches seductive danger, club energy, and toxic allure",
+      "reason": "matches seductive danger, club vibe, neon symbolism",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 165.953,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "matches toxic allure, urban decay, and dangerous seduction",
+      "reason": "matches toxic allure, urban decay, and hidden danger",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 154.703,
       "score": 0.95,
       "cosine": 0.522,
-      "reason": "Matches club energy, neon allure, and toxic romance themes",
+      "reason": "matches club energy, neon allure, and toxic romance",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 129.626,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "Urban nightlife, mystery, and bold typography align with club energy and seductive tension",
+      "reason": "Urban nightlife, mystery, and seductive tension align with song's themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 154.703,
       "score": 0.95,
       "cosine": 0.489,
-      "reason": "matches toxic allure, urban grit, and seductive danger",
+      "reason": "Matches toxic allure, urban grit, and seductive danger",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.485,
-      "reason": "matches toxic allure, urban decay, and dangerous energy of the song",
+      "reason": "Urban decay and neon danger match the song's toxic allure and club energy",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "matches seductive danger, moody atmosphere, fire symbolism",
+      "reason": "matches seductive danger, moody lighting, fire symbolism",
       "recipe": "4-word-portrait",
       "featured": true
     },

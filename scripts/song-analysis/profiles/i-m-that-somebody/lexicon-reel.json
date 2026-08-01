@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-07-25T11:11:12.348Z",
+  "generatedAt": "2026-07-31T05:42:26.553Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1199,
-    "judged": 41,
-    "accepted": 33,
+    "candidates": 1220,
+    "judged": 42,
+    "accepted": 35,
     "kept": 32
   },
   "reel": [
@@ -36,6 +36,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s1-5-word-portrait.webp",
+      "key": "lexicon/steady/s1-5-word-portrait.webp",
+      "word": "steady",
+      "line": "wont tell nobody You asked if Im steady Girl you know I dont fold I dont move reckless I",
+      "t": 87.992,
+      "score": 0.95,
+      "cosine": 0.514,
+      "reason": "Matches calm confidence and stability themes with cinematic lighting",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s5-1-word-portrait.webp",
       "key": "lexicon/move/s5-1-word-portrait.webp",
       "word": "move",
@@ -43,7 +55,7 @@
       "t": 90.291,
       "score": 0.95,
       "cosine": 0.508,
-      "reason": "Confident stage presence matches playful assurance and stability in the song",
+      "reason": "Confident pose, stage setting, neon accents align with playful confidence and futuristic n",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,8 +127,20 @@
       "t": 174.324,
       "score": 0.95,
       "cosine": 0.433,
-      "reason": "matches playful mood, neon lights align with futuristic nostalgia",
+      "reason": "matches playful mood, nightlife, celebration, and intimacy",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s2-4-word-portrait.webp",
+      "key": "lexicon/steady/s2-4-word-portrait.webp",
+      "word": "steady",
+      "line": "wont tell nobody You asked if Im steady Girl you know I dont fold I dont move reckless I",
+      "t": 87.992,
+      "score": 0.95,
+      "cosine": 0.42,
+      "reason": "Confident posture and calm assurance align with self-assurance and stability themes.",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -129,6 +153,18 @@
       "cosine": 0.417,
       "reason": "Confident, stylish club scene matches playful self-assurance and retro aesthetic",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s3-2-word-portrait.webp",
+      "key": "lexicon/steady/s3-2-word-portrait.webp",
+      "word": "steady",
+      "line": "wont tell nobody You asked if Im steady Girl you know I dont fold I dont move reckless I",
+      "t": 87.992,
+      "score": 0.95,
+      "cosine": 0.399,
+      "reason": "Symbolizes stability and resilience in a futuristic setting",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -223,7 +259,7 @@
       "t": 105.581,
       "score": 0.9,
       "cosine": 0.424,
-      "reason": "Intimate, tender hands convey trust and support aligning with song's themes",
+      "reason": "Intimate, tender hands align with trust and reassurance in the song",
       "recipe": "3-photo",
       "featured": true
     },
@@ -235,7 +271,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "Futuristic romance and playful energy match song's mood and themes",
+      "reason": "Futuristic romance and playful energy align with song's themes and mood",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -247,7 +283,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.406,
-      "reason": "Cozy, inviting home matches song's theme of stability and comfort",
+      "reason": "Cozy, inviting space aligns with home's theme of comfort and stability",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,7 +331,7 @@
       "t": 31.29,
       "score": 0.85,
       "cosine": 0.452,
-      "reason": "Matches playful confidence and futuristic nostalgia with abstract, upbeat imagery",
+      "reason": "Matches playful confidence and futuristic nostalgia with abstract, vibrant imagery",
       "recipe": "1-stickers",
       "featured": true
     },
@@ -312,18 +348,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steady/s0-1.webp",
-      "key": "lexicon/steady/s0-1.webp",
-      "word": "steady",
-      "line": "wont tell nobody You asked if Im steady Girl you know I dont fold I dont move reckless I",
-      "t": 87.992,
-      "score": 0.85,
-      "cosine": 0.293,
-      "reason": "Confident, mysterious, stability through unity align with song's themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s7-6-poster.webp",
       "key": "lexicon/run/s7-6-poster.webp",
       "word": "run",
@@ -331,7 +355,7 @@
       "t": 25.808,
       "score": 0.8,
       "cosine": 0.428,
-      "reason": "Matches energy and modernity; aligns with confidence and movement",
+      "reason": "Matches energy and modernity; aligns with confidence and rhythm",
       "recipe": "6-poster",
       "featured": true
     },
@@ -343,7 +367,7 @@
       "t": 90.291,
       "score": 0.8,
       "cosine": 0.428,
-      "reason": "Confident stance matches self-assurance; calm domestic setting aligns with stability",
+      "reason": "Confident stance aligns with self-assurance and stability",
       "recipe": "6-photo",
       "featured": true
     },
@@ -355,7 +379,7 @@
       "t": 27.226,
       "score": 0.8,
       "cosine": 0.424,
-      "reason": "Matches warmth and safety of 'home' in a stable, confident relationship",
+      "reason": "Matches warmth and safety of home, aligns with stability and comfort themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -367,97 +391,71 @@
       "t": 13.99,
       "score": 0.7,
       "cosine": 0.441,
-      "reason": "Mood matches with watchful, intense eyes; retro aesthetic fits futuristic nostalgia",
+      "reason": "Mood matches with watchful, intense eyes; retro aesthetic fits futuristic nostalgia.",
       "recipe": "3-pixel",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smile/s0-1.webp",
-      "key": "lexicon/smile/s0-1.webp",
-      "word": "smile",
-      "line": "I see how you look When the bassline drops Half a smile on your face Then you tell me stop You got",
-      "t": 19.586,
-      "score": 0.7,
-      "cosine": 0.333,
-      "reason": "Captures intimacy and resilience, aligns with playful confidence and futuristic nostalgia.",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
-      "key": "lexicon/night/s12-6-word-portrait.webp",
-      "word": "night",
-      "line": "Like the room got eyes Like the walls might talk Like the night got spies I see how you look When the bassline",
-      "t": 15.859,
-      "score": 0.6,
-      "cosine": 0.472,
-      "reason": "Seductive and chaotic imagery aligns with playful confidence but may clash with romantic s",
-      "recipe": "6-word-portrait",
-      "featured": false
     }
   ],
   "byWord": {
     "lights": [
       0,
       1,
+      15
+    ],
+    "steady": [
+      2,
+      10,
       12
     ],
     "move": [
-      2,
-      27
-    ],
-    "night": [
       3,
-      4,
-      31
-    ],
-    "soul": [
-      5,
-      23
-    ],
-    "rhythm": [
-      6,
-      13,
-      24
-    ],
-    "different": [
-      7,
-      9,
-      21
-    ],
-    "party": [
-      8,
-      10,
-      11
-    ],
-    "love": [
-      14,
-      15,
-      18
-    ],
-    "eyes": [
-      16,
       29
     ],
+    "night": [
+      4,
+      5
+    ],
+    "soul": [
+      6,
+      26
+    ],
+    "rhythm": [
+      7,
+      16,
+      27
+    ],
+    "different": [
+      8,
+      11,
+      24
+    ],
+    "party": [
+      9,
+      13,
+      14
+    ],
+    "love": [
+      17,
+      18,
+      21
+    ],
+    "eyes": [
+      19,
+      31
+    ],
     "hands": [
-      17
+      20
     ],
     "home": [
-      19,
-      20,
-      28
+      22,
+      23,
+      30
     ],
     "somebody": [
-      22
-    ],
-    "steady": [
       25
     ],
     "run": [
-      26
-    ],
-    "smile": [
-      30
+      28
     ]
   }
 }

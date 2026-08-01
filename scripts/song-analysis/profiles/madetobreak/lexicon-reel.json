@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-07-25T11:22:55.874Z",
+  "generatedAt": "2026-07-31T05:47:22.945Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -67,7 +67,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and renewal",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and empowerm",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 73.76,
       "score": 0.95,
       "cosine": 0.497,
-      "reason": "Symbolizes breaking free from limits, matches defiant resilience and transformation",
+      "reason": "Symbolizes breaking free from limits, matches defiant resilience theme",
       "recipe": "5-anime",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Symbolizes transformation, resilience, and defiance through physicality and light",
+      "reason": "Symbolizes transformation, resilience, and defiance through physical and inner strength",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes.",
+      "reason": "Symbolizes defiance against chaos, aligns with resilience and transformation themes",
       "recipe": "1-anime",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolism of chains as both constraint and strength fits defiant resilience theme",
+      "reason": "Symbolism of chains as both constraint and strength aligns with defiance and resilience th",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "Powerful imagery of resilience and defiance on a battlefield",
+      "reason": "Powerful imagery of resilience and defiance on a post-battle field",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes transformation of destruction into power, fits defiant, resilient mood",
+      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth aligns with song's themes",
+      "reason": "Symbolizes resilience, destruction, and rebirth through fire",
       "recipe": "2-anime",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 42.96,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and transformati",
+      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and themes of tr",
       "recipe": "3-anime",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 38.96,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "Symbolizes defiance and strength through raised fists, fits song's themes of resilience an",
+      "reason": "Symbolizes defiance and strength through raised fists, aligns with themes of resilience an",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
       "recipe": "3-dream-collage",
       "featured": true
     },

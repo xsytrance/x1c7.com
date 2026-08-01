@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-07-25T11:27:01.569Z",
+  "generatedAt": "2026-07-31T05:50:13.169Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -60,6 +60,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 1,
+      "cosine": 0.63,
+      "reason": "Perfectly aligns with digital isolation and noir melancholy",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
       "key": "lexicon/light/s10-4-neon-sign.webp",
       "word": "light",
@@ -103,20 +115,8 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.635,
-      "reason": "fits noir mood, digital isolation, hollow connections",
+      "reason": "Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them",
       "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
-      "t": 70.682,
-      "score": 0.95,
-      "cosine": 0.63,
-      "reason": "fits noir mood, digital isolation, fragmented faces",
-      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -127,7 +127,7 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "fits noir mood, digital chaos, private vs public self",
+      "reason": "fits noir mood, digital chaos, private vs public",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 70.692,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "fits noir mood, digital isolation theme, cinematic visuals",
+      "reason": "matches noir mood, digital isolation theme, cinematic visuals",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -175,20 +175,8 @@
       "t": 70.682,
       "score": 0.95,
       "cosine": 0.542,
-      "reason": "fits cyberpunk noir, digital dreams, fractured connections",
+      "reason": "fits noir cyberpunk mood and themes of digital isolation and fractured connections",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-2-cinema.webp",
-      "key": "lexicon/chains/s5-2-cinema.webp",
-      "word": "chains",
-      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
-      "t": 104.455,
-      "score": 0.95,
-      "cosine": 0.536,
-      "reason": "Symbolizes broken bonds, decay, and urban loneliness fitting the song's themes",
-      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -228,6 +216,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-2-cinema.webp",
+      "key": "lexicon/chains/s5-2-cinema.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
+      "t": 104.455,
+      "score": 0.9,
+      "cosine": 0.536,
+      "reason": "Symbolizes broken bonds, decay, urban loneliness aligns with song's themes",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
       "key": "lexicon/dream/s2-6-word-portrait.webp",
       "word": "dream",
@@ -247,7 +247,7 @@
       "t": 74.153,
       "score": 0.7,
       "cosine": 0.504,
-      "reason": "Melancholic and hopeful star reflects song's themes of loneliness and digital longing",
+      "reason": "melancholic and urban imagery fits the song's mood and themes",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -268,35 +268,35 @@
     "heart": [
       0,
       2,
-      6
+      7
     ],
     "tap": [
       1,
       3,
       11
     ],
-    "light": [
+    "dream": [
       4,
-      16,
-      17
+      13,
+      18
+    ],
+    "light": [
+      5,
+      15,
+      16
     ],
     "save": [
-      5,
+      6,
       10
     ],
     "love": [
-      7,
-      9
-    ],
-    "dream": [
       8,
-      13,
-      18
+      9
     ],
     "chains": [
       12,
       14,
-      15
+      17
     ],
     "stars": [
       19,

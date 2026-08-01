@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-07-25T11:24:15.762Z",
+  "generatedAt": "2026-07-31T05:48:51.104Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 749,
-    "judged": 25,
-    "accepted": 19,
-    "kept": 19
+    "candidates": 776,
+    "judged": 28,
+    "accepted": 22,
+    "kept": 22
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
+      "reason": "Perfect fit for retro club, bass focus, summer energy, confident style",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 37.802,
       "score": 1,
       "cosine": 0.584,
-      "reason": "Perfect fit with retro club, lights, and confident energy",
+      "reason": "Perfectly aligns with retro club aesthetic and summer night energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 25.565,
       "score": 1,
       "cosine": 0.478,
-      "reason": "Perfectly aligns with summer night energy and retro club aesthetic",
+      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.56,
-      "reason": "spotlight and retro club align with song's themes and mood",
+      "reason": "spotlight and club atmosphere match song's retro and stylish mood",
       "recipe": "2-dark-surreal",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
+      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -216,6 +216,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/king/s3-6-cinema.webp",
+      "key": "lexicon/king/s3-6-cinema.webp",
+      "word": "king",
+      "line": "already had a king Ha Move over Move over We got heat in the room",
+      "t": 12.398,
+      "score": 0.9,
+      "cosine": 0.412,
+      "reason": "royal imagery fits dance floor dominance and summer swagger",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
       "key": "lexicon/somebody/s0-1.webp",
       "word": "somebody",
@@ -225,6 +237,18 @@
       "cosine": 0.39,
       "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
       "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/king/s4-2-manga-line.webp",
+      "key": "lexicon/king/s4-2-manga-line.webp",
+      "word": "king",
+      "line": "already had a king Ha Move over Move over We got heat in the room",
+      "t": 12.398,
+      "score": 0.85,
+      "cosine": 0.426,
+      "reason": "Regal authority and chaotic nature align with dance floor dominance and summer energy.",
+      "recipe": "2-manga-line",
       "featured": true
     },
     {
@@ -238,6 +262,18 @@
       "reason": "Captures summer warmth and urban vibe but lacks dance floor energy",
       "recipe": "5-cinema",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/king/s1-3-word-portrait.webp",
+      "key": "lexicon/king/s1-3-word-portrait.webp",
+      "word": "king",
+      "line": "already had a king Ha Move over Move over We got heat in the room",
+      "t": 12.398,
+      "score": 0.6,
+      "cosine": 0.461,
+      "reason": "Regal imagery contrasts with dance floor swagger and summer energy",
+      "recipe": "3-word-portrait",
+      "featured": false
     }
   ],
   "byWord": {
@@ -273,10 +309,15 @@
     "summer": [
       15,
       16,
-      18
+      20
+    ],
+    "king": [
+      17,
+      19,
+      21
     ],
     "somebody": [
-      17
+      18
     ]
   }
 }

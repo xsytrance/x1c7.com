@@ -1,16 +1,28 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-07-25T11:00:22.524Z",
+  "generatedAt": "2026-07-31T05:38:40.103Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2148,
+    "candidates": 2272,
     "judged": 64,
     "accepted": 64,
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s3-5-word-portrait.webp",
+      "key": "lexicon/seed/s3-5-word-portrait.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 1,
+      "cosine": 0.461,
+      "reason": "Symbolizes growth, new beginnings, and potential align with song's themes of transformatio",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s0-4-oil-light.webp",
       "key": "lexicon/sun/s0-4-oil-light.webp",
@@ -55,7 +67,7 @@
       "t": 136.32,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes",
+      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -67,8 +79,20 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.461,
-      "reason": "Intimate glow symbolizes connection and hope, fits summer transformation and empowerment.",
+      "reason": "Intimate glow aligns with empowerment and hope in summer transformation",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s0-4-dream-collage.webp",
+      "key": "lexicon/seed/s0-4-dream-collage.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 0.95,
+      "cosine": 0.46,
+      "reason": "Symbolizes growth, renewal, and potential aligning with transformation and empowerment the",
+      "recipe": "4-dream-collage",
       "featured": true
     },
     {
@@ -81,6 +105,18 @@
       "cosine": 0.459,
       "reason": "Captures summer's energy and personal empowerment perfectly",
       "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s3-4-dream-collage.webp",
+      "key": "lexicon/seed/s3-4-dream-collage.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 0.95,
+      "cosine": 0.456,
+      "reason": "Symbolizes growth, hope, and potential aligning with summer transformation and empowerment",
+      "recipe": "4-dream-collage",
       "featured": true
     },
     {
@@ -103,7 +139,7 @@
       "t": 5.167,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes new beginnings and warmth aligning with transformation and hope",
+      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope",
       "recipe": "6-oil-light",
       "featured": true
     },
@@ -175,7 +211,7 @@
       "t": 222.308,
       "score": 0.95,
       "cosine": 0.423,
-      "reason": "Symbolizes transformation, determination, and empowerment in a dramatic setting",
+      "reason": "Symbolizes transformation, resilience, and empowerment in a dramatic, hopeful setting",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -204,6 +240,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-5-word-portrait.webp",
+      "key": "lexicon/motivation/s0-5-word-portrait.webp",
+      "word": "motivation",
+      "line": "lights Will in my chest hunger in my shoes This aint motivation this is something to prove We dont wanna waste",
+      "t": 162.08,
+      "score": 0.95,
+      "cosine": 0.409,
+      "reason": "Athletic imagery aligns with empowerment and ambition; sunlight and determination match ho",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spark/s4-5-word-portrait.webp",
+      "key": "lexicon/spark/s4-5-word-portrait.webp",
+      "word": "spark",
+      "line": "dont wanna wait forever One more spark and we come alive",
+      "t": 69.45,
+      "score": 0.95,
+      "cosine": 0.405,
+      "reason": "Symbolizes ignition and new beginnings, aligns with transformation and empowerment themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s27-3-word-portrait.webp",
       "key": "lexicon/light/s27-3-word-portrait.webp",
       "word": "light",
@@ -211,7 +271,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.397,
-      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +307,7 @@
       "t": 9.729,
       "score": 0.95,
       "cosine": 0.394,
-      "reason": "Confident, stylish imagery aligns with empowerment and summer transformation",
+      "reason": "Confident, stylish imagery aligns with empowerment and transformation themes.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -259,7 +319,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Symbolizes hope, transformation, and light aligning with summer and empowerment",
+      "reason": "Symbolizes hope, transformation, and light aligning with song's themes",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -273,6 +333,30 @@
       "cosine": 0.391,
       "reason": "Symbolizes transformation, energy, and hope aligning with the song's themes",
       "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spark/s2-5-photo.webp",
+      "key": "lexicon/spark/s2-5-photo.webp",
+      "word": "spark",
+      "line": "dont wanna wait forever One more spark and we come alive",
+      "t": 69.45,
+      "score": 0.95,
+      "cosine": 0.389,
+      "reason": "Symbolizes transformation and fleeting joy aligning with summer change and empowerment",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-2.webp",
+      "key": "lexicon/motivation/s0-2.webp",
+      "word": "motivation",
+      "line": "lights Will in my chest hunger in my shoes This aint motivation this is something to prove We dont wanna waste",
+      "t": 162.08,
+      "score": 0.95,
+      "cosine": 0.385,
+      "reason": "Strongly aligns with themes of determination and personal growth",
+      "recipe": "2",
       "featured": true
     },
     {
@@ -310,156 +394,70 @@
       "reason": "Symbolism aligns with transformation and hope; nature reflects journey and dreams",
       "recipe": "6-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s3-5-word-portrait.webp",
-      "key": "lexicon/code/s3-5-word-portrait.webp",
-      "word": "code",
-      "line": "move Yeah I used to say Im stuck now I say Im loading Used to watch the door now the code is opening Used to call it noise now I hear the signal Little by little",
-      "t": 228.821,
-      "score": 0.95,
-      "cosine": 0.368,
-      "reason": "Digital transformation and empowerment align with the song's themes of growth and change.",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glows/s1-2-film-still.webp",
-      "key": "lexicon/glows/s1-2-film-still.webp",
-      "word": "glows",
-      "line": "the fantasy But we working while it glows So the future feels easy This",
-      "t": 100.32,
-      "score": 0.95,
-      "cosine": 0.36,
-      "reason": "Urban glow symbolizes opportunity, rain signifies transformation, and night reflects self-",
-      "recipe": "2-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-4-word-portrait.webp",
-      "key": "lexicon/summer/s1-4-word-portrait.webp",
-      "word": "summer",
-      "line": "knows something This summer feel different already Come on",
-      "t": 9.172,
-      "score": 0.9,
-      "cosine": 0.418,
-      "reason": "Captures summer's energy and transformational mood",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s8-6-stickers.webp",
-      "key": "lexicon/glow/s8-6-stickers.webp",
-      "word": "glow",
-      "line": "glow",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.406,
-      "reason": "Matches glow's energy and summer transformation theme",
-      "recipe": "6-stickers",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-2-word-portrait.webp",
-      "key": "lexicon/lights/s17-2-word-portrait.webp",
-      "word": "lights",
-      "line": "rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint motivation",
-      "t": 159.52,
-      "score": 0.9,
-      "cosine": 0.403,
-      "reason": "fits summer energy, transformation, and empowerment",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ocean/s1-6-oil-light.webp",
-      "key": "lexicon/ocean/s1-6-oil-light.webp",
-      "word": "ocean",
-      "line": "yet but the plan got motion Laptop open with a rum by the ocean Not there now but I see that scene Gotta build that",
-      "t": 59.372,
-      "score": 0.9,
-      "cosine": 0.399,
-      "reason": "Symbolizes transformation and resilience; fits summer and empowerment theme",
-      "recipe": "6-oil-light",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s14-4-dream-collage.webp",
-      "key": "lexicon/heart/s14-4-dream-collage.webp",
-      "word": "heart",
-      "line": "no perfect start No fancy degree just a hungry heart Prompt by prompt Im learning the flow Ask better questions",
-      "t": 136.32,
-      "score": 0.9,
-      "cosine": 0.396,
-      "reason": "Symbolizes passion, obstacles, and hope align with transformation and empowerment",
-      "recipe": "4-dream-collage",
-      "featured": true
     }
   ],
   "byWord": {
-    "sun": [
+    "seed": [
       0,
+      6,
+      8
+    ],
+    "sun": [
+      1,
+      10,
+      12
+    ],
+    "sky": [
+      2,
+      3,
+      13
+    ],
+    "heart": [
+      4
+    ],
+    "glow": [
+      5,
+      25
+    ],
+    "summer": [
       7,
       9
     ],
-    "sky": [
-      1,
-      2,
-      10
-    ],
-    "heart": [
-      3,
-      31
-    ],
-    "glow": [
-      4,
-      20,
-      28
-    ],
-    "summer": [
-      5,
-      6,
-      27
-    ],
     "light": [
-      8,
-      12,
-      16
-    ],
-    "flame": [
       11,
-      13,
-      14
-    ],
-    "neon": [
-      15
-    ],
-    "move": [
-      17,
-      18,
+      15,
       21
     ],
-    "different": [
+    "flame": [
+      14,
+      16,
+      17
+    ],
+    "neon": [
+      18
+    ],
+    "motivation": [
       19,
-      23
+      28
     ],
-    "wave": [
-      22
+    "spark": [
+      20,
+      27
     ],
-    "dream": [
-      24
-    ],
-    "code": [
-      25
-    ],
-    "glows": [
+    "move": [
+      22,
+      23,
       26
     ],
-    "lights": [
+    "different": [
+      24,
+      30
+    ],
+    "wave": [
       29
     ],
-    "ocean": [
-      30
+    "dream": [
+      31
     ]
   }
 }

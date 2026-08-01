@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-07-25T10:53:32.950Z",
+  "generatedAt": "2026-07-31T05:35:50.864Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2547,
+    "candidates": 2606,
     "judged": 64,
     "accepted": 58,
     "kept": 32
@@ -55,7 +55,7 @@
       "t": 215.656,
       "score": 0.95,
       "cosine": 0.64,
-      "reason": "Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism",
+      "reason": "Strong themes of unity, resilience, and pride align with song's message.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 105.86,
       "score": 0.95,
       "cosine": 0.566,
-      "reason": "Cinematic concert scene aligns with song's themes of unity, resilience, and expression thr",
+      "reason": "Symbolizes unity, resilience, and expression central to the song's themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 18.609,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "Symbolizes resilience, hope, and defiance perfectly aligned with song's themes",
+      "reason": "Symbolizes resilience, hope, and defiance against darkness",
       "recipe": "3-oil-light",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 155.365,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes resilience, cultural heritage, and rhythm central to the song's theme",
+      "reason": "Symbolizes resilience, cultural heritage, and rhythm central to the song's themes.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 25.947,
       "score": 0.95,
       "cosine": 0.467,
-      "reason": "Celebrates unity, triumph, and collective empowerment through dynamic visuals",
+      "reason": "Celebrates unity, triumph, and empowerment through collective action and celebration.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 14.07,
       "score": 0.92,
       "cosine": 0.611,
-      "reason": "Symbolizes resilience and defiance through light in darkness, fits Cairo's nocturnal strug",
+      "reason": "Symbolizes resilience and defiance through light in darkness, fits Cairo's nocturnal defia",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 215.656,
       "score": 0.92,
       "cosine": 0.597,
-      "reason": "Cinematic, resilient, Cairo streets, unity through movement",
+      "reason": "Cinematic, resilient, hopeful, and tied to Cairo's urban life and movement",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 105.86,
       "score": 0.92,
       "cosine": 0.559,
-      "reason": "Cinematic, resilient, cultural pride, voice as resistance align with song's themes",
+      "reason": "Cinematic, resilient, cultural pride, voice as resistance fit the song's themes",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 57.423,
       "score": 0.92,
       "cosine": 0.514,
-      "reason": "Resilient cityscape mirrors song's themes of defiance and hope.",
+      "reason": "Resilient urban imagery aligns with song's themes of defiance and unity.",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 36.281,
       "score": 0.92,
       "cosine": 0.486,
-      "reason": "Celebrates unity, resilience, and city pride with cinematic energy",
+      "reason": "Celebrates unity, resilience, and city pride with vibrant imagery",
       "recipe": "5-photo",
       "featured": true
     },
