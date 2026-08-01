@@ -1,0 +1,19 @@
+{
+ "sleepwalking": "scripts/dts2/art-out/sleepwalking.png",
+ "here": "scripts/dts2/art-out/here.png",
+ "gear": "scripts/dts2/art-out/gear.png",
+ "away": "scripts/dts2/art-out/away.png",
+ "shoulders": "scripts/dts2/art-out/shoulders.png",
+ "play": "scripts/dts2/art-out/play.png",
+ "someday": "scripts/dts2/art-out/someday.png",
+ "learn": "scripts/dts2/art-out/learn.png",
+ "build": "scripts/dts2/art-out/build.png",
+ "breathe": "scripts/dts2/art-out/breathe.png",
+ "fantasy": "scripts/dts2/art-out/fantasy.png",
+ "working": "scripts/dts2/art-out/working.png",
+ "future": "scripts/dts2/art-out/future.png",
+ "too": "scripts/dts2/art-out/too.png",
+ "light": "scripts/dts2/art-out/light.png",
+ "losing": "scripts/dts2/art-out/losing.png",
+ "me": "scripts/dts2/art-out/me.png"
+}

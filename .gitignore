@@ -95,3 +95,11 @@ scripts/song-art/*-out/
 # python bytecode
 __pycache__/
 *.pyc
+
+# Directed-cut working artifacts: the generated PNG plates (published as webp
+# to R2), the QA frame sheets, and the render logs. The SCRIPTS in scripts/dts2
+# are tracked — the 50MB of pixels they produce are not.
+scripts/dts2/art-out/
+scripts/dts2/*.log
+scripts/dts2/measure-*.txt
+scripts/song-analysis/profiles/*/qa-*/

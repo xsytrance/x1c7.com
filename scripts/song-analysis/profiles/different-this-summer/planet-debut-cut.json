@@ -1,0 +1,350 @@
+{
+ "assets": {
+  "alt": {
+   "/planets/different-this-summer/build.webp": "/planets/different-this-summer/build-2.webp",
+   "/planets/different-this-summer/dream.webp": "/planets/different-this-summer/dream-2.webp",
+   "/planets/different-this-summer/light.webp": "/planets/different-this-summer/light-2.webp",
+   "/planets/different-this-summer/summer.webp": "/planets/different-this-summer/summer-2.webp",
+   "/planets/different-this-summer/waiting.webp": "/planets/different-this-summer/waiting-2.webp",
+   "/planets/different-this-summer/optimism.webp": "/planets/different-this-summer/optimism-2.webp",
+   "/planets/different-this-summer/different.webp": "/planets/different-this-summer/different-2.webp",
+   "/planets/different-this-summer/confidence.webp": "/planets/different-this-summer/confidence-2.webp",
+   "/planets/different-this-summer/motivation.webp": "/planets/different-this-summer/motivation-2.webp",
+   "/planets/different-this-summer/reflection.webp": "/planets/different-this-summer/reflection-2.webp",
+   "/planets/different-this-summer/resolution.webp": "/planets/different-this-summer/resolution-2.webp",
+   "/planets/different-this-summer/celebration.webp": "/planets/different-this-summer/celebration-2.webp",
+   "/planets/different-this-summer/empowerment.webp": "/planets/different-this-summer/empowerment-2.webp",
+   "/planets/different-this-summer/imagination.webp": "/planets/different-this-summer/imagination-2.webp",
+   "/planets/different-this-summer/anticipation.webp": "/planets/different-this-summer/anticipation-2.webp",
+   "/planets/different-this-summer/determination.webp": "/planets/different-this-summer/determination-2.webp",
+   "/planets/different-this-summer/transformation.webp": "/planets/different-this-summer/transformation-2.webp"
+  },
+  "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/stems.json",
+  "stemLag": -0.023,
+  "keywords": {
+   "sleepwalking": "/planets/different-this-summer/debut/scene-sleepwalking.webp",
+   "here": "/planets/different-this-summer/debut/scene-here.webp",
+   "gear": "/planets/different-this-summer/debut/scene-gear.webp",
+   "away": "/planets/different-this-summer/debut/scene-away.webp",
+   "shoulders": "/planets/different-this-summer/debut/scene-shoulders.webp",
+   "play": "/planets/different-this-summer/debut/scene-play.webp",
+   "someday": "/planets/different-this-summer/debut/scene-someday.webp",
+   "learn": "/planets/different-this-summer/debut/scene-learn.webp",
+   "build": "/planets/different-this-summer/debut/scene-build.webp",
+   "breathe": "/planets/different-this-summer/debut/scene-breathe.webp",
+   "fantasy": "/planets/different-this-summer/debut/scene-fantasy.webp",
+   "working": "/planets/different-this-summer/debut/scene-working.webp",
+   "future": "/planets/different-this-summer/debut/scene-future.webp",
+   "too": "/planets/different-this-summer/debut/scene-too.webp",
+   "light": "/planets/different-this-summer/debut/scene-light.webp",
+   "losing": "/planets/different-this-summer/debut/scene-losing.webp",
+   "me": "/planets/different-this-summer/debut/scene-me.webp",
+   "time": "/planets/different-this-summer/debut/scene-losing.webp"
+  },
+  "sections": {
+   "determined": "/planets/different-this-summer/debut/scene-sleepwalking.webp",
+   "uplifting": "/planets/different-this-summer/debut/scene-gear.webp",
+   "hopeful": "/planets/different-this-summer/debut/scene-too.webp",
+   "reflective": "/planets/different-this-summer/debut/scene-losing.webp"
+  },
+  "stemAudio": {
+   "back": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/back.m4a",
+   "bass": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/bass.m4a",
+   "keys": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/keys.m4a",
+   "lead": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/lead.m4a",
+   "perc": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/perc.m4a",
+   "drums": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/drums.m4a",
+   "other": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/other.m4a",
+   "synth": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/different-this-summer/stems/synth.m4a"
+  }
+ },
+ "analysis": {
+  "themes": [
+   "Motivation",
+   "Transformation",
+   "Seizing Opportunities",
+   "Summer Vibes"
+  ],
+  "palette": [
+   "#FFD700",
+   "#20B2AA",
+   "#FF7F50",
+   "#8A2BE2"
+  ],
+  "summary": "A confident and motivational summer anthem that encourages listeners to seize the day and make the most of their opportunities, blending smooth rap verses with catchy female group hooks.",
+  "keywords": [
+   {
+    "word": "different",
+    "emotion": "Transformation",
+    "imageryPrompt": "A person stepping out of their comfort zone into a bright, sunny day"
+   },
+   {
+    "word": "summer",
+    "emotion": "Optimism",
+    "imageryPrompt": "Beach-goers enjoying the warm sun and cool drinks on a sandy beach"
+   },
+   {
+    "word": "build",
+    "emotion": "Determination",
+    "imageryPrompt": "A construction site with workers building a futuristic skyscraper under blue skies"
+   },
+   {
+    "word": "dream",
+    "emotion": "Hope",
+    "imageryPrompt": "Someone lying in bed, looking up at the night sky filled with stars and shooting stars"
+   },
+   {
+    "word": "light",
+    "emotion": "Inspiration",
+    "imageryPrompt": "A person holding a lantern that illuminates a dark forest path"
+   },
+   {
+    "word": "waiting",
+    "emotion": "Frustration",
+    "imageryPrompt": "Someone standing by a clock, looking impatiently at the passing seconds"
+   },
+   {
+    "word": "motivation",
+    "emotion": "Empowerment",
+    "imageryPrompt": "An athlete pushing themselves to run faster on a track"
+   }
+  ],
+  "sections": [
+   {
+    "name": "Intro",
+    "start": 0,
+    "emotion": "hopeful",
+    "colorHint": "#FFD700",
+    "intensity": 0.3
+   },
+   {
+    "name": "Opening Ooh",
+    "start": 8.8,
+    "emotion": "uplifting",
+    "colorHint": "#20B2AA",
+    "intensity": 0.48
+   },
+   {
+    "name": "Verse 1",
+    "start": 30.5,
+    "emotion": "reflective",
+    "colorHint": "#00BFFF",
+    "intensity": 0.55
+   },
+   {
+    "name": "Pre-Chorus",
+    "start": 67.5,
+    "emotion": "energetic",
+    "colorHint": "#8A2BE2",
+    "intensity": 0.62
+   },
+   {
+    "name": "Chorus",
+    "start": 81,
+    "emotion": "uplifting",
+    "colorHint": "#20B2AA",
+    "intensity": 0.7
+   },
+   {
+    "name": "Post-Chorus",
+    "start": 110.5,
+    "emotion": "playful",
+    "colorHint": "#FFD700",
+    "intensity": 0.63
+   },
+   {
+    "name": "Verse 2",
+    "start": 119,
+    "emotion": "determined",
+    "colorHint": "#00BFFF",
+    "intensity": 0.6
+   },
+   {
+    "name": "Pre-Chorus",
+    "start": 171,
+    "emotion": "energetic",
+    "colorHint": "#8A2BE2",
+    "intensity": 0.64
+   },
+   {
+    "name": "Chorus",
+    "start": 179.6,
+    "emotion": "uplifting",
+    "colorHint": "#20B2AA",
+    "intensity": 0.7
+   },
+   {
+    "name": "Dream Bridge",
+    "start": 211.5,
+    "emotion": "dreamy",
+    "colorHint": "#8A2BE2",
+    "intensity": 0.55
+   },
+   {
+    "name": "Rap Bridge - Loading",
+    "start": 224.9,
+    "emotion": "determined",
+    "colorHint": "#FFD700",
+    "intensity": 0.66
+   },
+   {
+    "name": "Final Chorus",
+    "start": 247.6,
+    "emotion": "uplifting",
+    "colorHint": "#20B2AA",
+    "intensity": 0.71
+   },
+   {
+    "name": "Outro Ooh",
+    "start": 280.2,
+    "emotion": "hopeful",
+    "colorHint": "#20B2AA",
+    "intensity": 0.55
+   },
+   {
+    "name": "Same Sun New Me",
+    "start": 295.5,
+    "emotion": "reflective",
+    "colorHint": "#FFD700",
+    "intensity": 0.4
+   }
+  ],
+  "overallMood": "Feel-good, motivational, hopeful"
+ },
+ "styleHint": "golden-hour beach sunset, cookout warmth, palm silhouettes, glossy summer house music video aesthetic, teal ocean and amber sky, laptop by a beach chair, feel-good, vibrant",
+ "dynamicPlus": {
+  "v": 2,
+  "acts": [
+   {
+    "start": 233.1,
+    "end": 243,
+    "label": "NO MORE SLEEPWALKING",
+    "why": "the thesis — the line he asked to open on"
+   },
+   {
+    "start": 259,
+    "end": 265.8,
+    "label": "BUILD OUR OWN WAY",
+    "why": "the drafting table: the plan becoming the life"
+   },
+   {
+    "start": 266,
+    "end": 272,
+    "label": "WORKING WHILE IT GLOWS",
+    "why": "the laptop on the sand — the whole argument in one shot"
+   },
+   {
+    "start": 296,
+    "end": 303.2,
+    "label": "SAME SUN · NEW ME",
+    "why": "AGENOR is his real name, carried; the crest lands here"
+   }
+  ],
+  "modes": [
+   {
+    "start": 233.1,
+    "end": 243.12,
+    "mode": "phrase"
+   },
+   {
+    "start": 243.12,
+    "end": 244.8,
+    "mode": "dynamic"
+   },
+   {
+    "start": 244.8,
+    "end": 299.7,
+    "mode": "phrase"
+   },
+   {
+    "start": 299.7,
+    "end": 303.2,
+    "mode": "dynamic"
+   }
+  ],
+  "words": {
+   "sleepwalking": "wake",
+   "sunshine": "neon",
+   "waiting": "echo",
+   "right": "slam",
+   "time": "neon",
+   "here": "slam",
+   "cold": "freeze",
+   "drink": "liquid",
+   "clear": "wake",
+   "mind": "draft",
+   "gear": "type",
+   "different": "chop",
+   "summer": "shimmer",
+   "fade": "dissolve",
+   "away": "dissolve",
+   "sun": "bloom",
+   "shoulders": "rise",
+   "brand": "draft",
+   "game": "type",
+   "play": "pulse",
+   "someday": "dissolve",
+   "learn": "type",
+   "little": "type",
+   "build": "draft",
+   "own": "draft",
+   "way": "draft",
+   "pour": "liquid",
+   "breathe": "whisper",
+   "palm": "wave",
+   "trees": "wave",
+   "fantasy": "shimmer",
+   "working": "pulse",
+   "glows": "bloom",
+   "future": "rise",
+   "easy": "drip",
+   "too": "cling",
+   "light": "neon",
+   "losing": "melt",
+   "me": "cling",
+   "official": "draft",
+   "vision": "draft",
+   "loading": "type",
+   "signal": "tremor",
+   "yeah": "neon"
+  },
+  "deck": {
+   "density": 2.3,
+   "glow": 0.55,
+   "grain": 0.34,
+   "vignette": 0.42,
+   "backdropHue": -0.06,
+   "motion": {
+    "dur": 2.4,
+    "amp": 1,
+    "swapMs": 900,
+    "fade": 0.34
+   },
+   "giant": {
+    "pile": 0,
+    "life": 2600,
+    "clearOnSwitch": true
+   }
+  }
+ },
+ "generatedAt": "2026-07-02T20:00:00Z",
+ "interactions": {
+  "moments": [
+   {
+    "t": 78.36,
+    "end": 90.36,
+    "type": "shake",
+    "layer": "",
+    "prompt": "shake the summer loose"
+   },
+   {
+    "t": 210.88,
+    "end": 223.5,
+    "type": "wipe",
+    "layer": "fog",
+    "prompt": "clear the mist"
+   }
+  ],
+  "tapEffect": "bloom"
+ }
+}

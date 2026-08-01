@@ -244,6 +244,8 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   tilt: (w, a) => <WordTilt word={w} airtime={a} />,
   squeeze: (w, a) => <WordSqueeze word={w} airtime={a} />,
   cling: (w, a) => <WordCling word={w} airtime={a} />,
+  draft: (w, a) => <WordDraft word={w} airtime={a} />,
+  wake: (w, a) => <WordWake word={w} airtime={a} />,
 };
 
 // MOTION SHOTS — the camera moves a director can put under a 1–2s scene. Each
@@ -2045,7 +2047,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               {idx >= 0 && lineIdx >= 0 && (
                 <m.div
                   key={lineIdx}
-                  className="flex max-w-[86vw] flex-wrap items-baseline justify-center gap-x-[1.4vw] gap-y-2 text-center"
+                  /* width lives in .phrase-line so the portrait ramp in
+                     globals.css can tighten it — see the note there */
+                  className="phrase-line flex flex-wrap items-baseline justify-center gap-x-[1.4vw] gap-y-2 text-center"
                   initial={{ opacity: 0, y: 26 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -18, transition: { duration: 0.25 } }}
@@ -2260,9 +2264,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         {upcoming && <p className="kinetic-hint">{upcoming}</p>}
       </div>
 
-      {/* Anchor word — a charged word looms huge and translucent OVER the show */}
+      {/* Anchor word — a charged word looms huge and translucent OVER the show.
+          Never while it IS the word on stage: the anchor is meant to be the
+          GHOST of a word we have moved past, and a directed dynamic micro-window
+          holds exactly one word for its whole length, so drawing both painted
+          the same word twice at two scales ("YEAHH" over "YEAH"). Once the next
+          word lands, idx moves on and the ghost lingers as designed. */}
       <AnimatePresence>
-        {dynamic && anchor && (
+        {dynamic && anchor && anchor.key !== idx && (
           <m.div
             key={`a${anchor.key}`}
             className="pointer-events-none fixed inset-0 z-[6] flex items-center justify-center overflow-hidden"
@@ -3465,6 +3474,83 @@ function WordCling({ word, airtime }: { word: string; airtime: number }) {
         ],
       }}
       transition={{ duration: dur, times: [0, 0.18, 0.38, 0.58, 0.78, 1], ease: "easeOut" }}
+    >
+      {word}
+    </m.span>
+  );
+}
+
+// ── TRANCHE 7: THE DRAFTING TABLE ───────────────────────────────────────────
+// Built for the AGENOR debut cut, where the art voice (BLUEPRINT DAWN) is a
+// plan resolving into a photograph. These two put the same argument on the
+// TYPE, so the words and the backdrop are telling one story.
+
+function WordDraft({ word, airtime }: { word: string; airtime: number }) {
+  // Two passes, stacked. The drafting pass strokes the word in cyan wireframe
+  // letter by letter (left to right, like a pen); the ink pass brings the
+  // solid word up underneath it and the wireframe lets go. "Build", "vision",
+  // "official" — anything that is a plan turning into a fact.
+  const dur = Math.min(1.7, Math.max(0.85, airtime * 0.85));
+  const letters = [...word];
+  const step = (dur * 0.5) / Math.max(1, letters.length);
+  return (
+    <span className="relative inline-block">
+      <m.span
+        aria-hidden
+        className="absolute inset-0 inline-block whitespace-pre"
+        style={{ color: "transparent", WebkitTextStroke: "0.022em #67e8f9", filter: "drop-shadow(0 0 0.22em #22d3ee)" }}
+        animate={{ opacity: [1, 1, 0] }}
+        transition={{ duration: dur, times: [0, 0.58, 1], ease: "easeOut" }}
+      >
+        {letters.map((ch, i) => (
+          <m.span
+            key={i}
+            className="inline-block"
+            style={{ transformOrigin: "50% 100%" }}
+            initial={{ opacity: 0, scaleY: 0.15 }}
+            animate={{ opacity: 1, scaleY: 1 }}
+            transition={{ duration: dur * 0.26, delay: i * step, ease: "easeOut" }}
+          >
+            {ch === " " ? " " : ch}
+          </m.span>
+        ))}
+      </m.span>
+      <m.span
+        className="inline-block"
+        animate={{
+          opacity: [0, 0, 1, 1],
+          filter: ["brightness(1.7)", "brightness(1.5)", "brightness(1.16)", "brightness(1)"],
+        }}
+        transition={{ duration: dur, times: [0, 0.44, 0.78, 1], ease: "easeOut" }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+function WordWake({ word, airtime }: { word: string; airtime: number }) {
+  // Out of focus and spread too wide — the word is still asleep — then it
+  // pulls together and snaps sharp with one bright blink. Written for "no
+  // more sleepwalking" and reused on the line that answers it.
+  const dur = Math.min(2.0, Math.max(0.9, airtime));
+  return (
+    <m.span
+      className="inline-block"
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: [0, 0.5, 0.82, 1, 1],
+        filter: [
+          "blur(0.4em) brightness(0.6)",
+          "blur(0.25em) brightness(0.78)",
+          "blur(0.11em) brightness(0.95)",
+          "blur(0em) brightness(1.3)",
+          "blur(0em) brightness(1)",
+        ],
+        letterSpacing: ["0.19em", "0.13em", "0.06em", "0.004em", "0em"],
+        scale: [1.11, 1.07, 1.03, 0.994, 1],
+      }}
+      transition={{ duration: dur, times: [0, 0.3, 0.56, 0.83, 1], ease: "easeOut" }}
     >
       {word}
     </m.span>

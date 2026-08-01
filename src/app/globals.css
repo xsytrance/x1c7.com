@@ -312,6 +312,35 @@ body.cinematic-on { overflow: hidden; }
   will-change: transform, opacity;
 }
 
+/* ===== PHRASE LINE — the flex row holding one whole lyric line =====
+   The word being sung is drawn at scale(1.22), and a transform is invisible to
+   flex layout: on a line that already fills its box, that 22% pushes the last
+   word straight past the frame edge. §10 pins line overrun on >7-word lines,
+   but that was measured at 1920px — a native 9:16 cut is 1080px wide, where a
+   FIVE-word line of long words ("this summer gon be different") overruns too,
+   and the last letter is what gets eaten.
+
+   Portrait therefore gets a tighter box and a shorter type ramp: the line wraps
+   to two rows instead of running off. Scoped by aspect ratio so the 16:9 master
+   keeps its existing look exactly. */
+.phrase-line {
+  max-width: 86vw;
+}
+
+@media (max-aspect-ratio: 3/4) {
+  .phrase-line {
+    max-width: 76vw;
+    /* The 1.4vw inline gap is ~15px at 1080, and the sung word's scale(1.22)
+       grows a 150px word by ~16px each side — so it closes the gap entirely and
+       the line reads "AINTLETTING". Widen it past the overlap in portrait. */
+    column-gap: 2.6vw;
+  }
+
+  .phrase-word {
+    font-size: clamp(1.5rem, 4.6vw, 3.4rem);
+  }
+}
+
 /* Ambient dust — slow emotion-tinted particles drifting up the stage. */
 .kinetic-dust {
   position: absolute;

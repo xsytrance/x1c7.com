@@ -47,7 +47,12 @@ export type TextEffect =
   | "chop" | "drip"
   // Tranche 6 (SAY IT WITH YOUR BODY): the physical vocabulary — a violent
   // shake, an off-axis swing, an embrace-pinch, and the long held note.
-  | "quake" | "tilt" | "squeeze" | "cling";
+  | "quake" | "tilt" | "squeeze" | "cling"
+  // Tranche 7 (DIFFERENT THIS SUMMER, the AGENOR debut cut): the drafting
+  // table. `draft` builds the word as cyan blueprint linework and then inks
+  // it solid — a plan becoming a fact. `wake` arrives out of focus and
+  // spread apart, then snaps sharp — sleepwalking, then not.
+  | "draft" | "wake";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -59,6 +64,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "handwrite", "tvoff",
   "chop", "drip",
   "quake", "tilt", "squeeze", "cling",
+  "draft", "wake",
 ];
 
 export interface EffectLego {
