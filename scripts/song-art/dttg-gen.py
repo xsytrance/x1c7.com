@@ -22,6 +22,12 @@ KEY = open("/home/xsyprime/.bfl_key").read().strip()
 OUT = "scripts/song-art/dttg-cloud"; os.makedirs(OUT, exist_ok=True)
 UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
       "Chrome/140.0 Safari/537.36")
+# Seedream invented a bearded stranger wherever a prompt said "a man". Any frame that
+# needs HIM is a nano-banana-pro edit off a real photo; every other frame bans men outright.
+NOMEN = (" ABSOLUTELY NO MEN in this image — no male figure, no man's face, no man's body,"
+         " no man in any photograph, screen, reflection or background. The only person who may"
+         " appear is the woman described. If no woman is described there are NO PEOPLE AT ALL,"
+         " only objects. ")
 LOOK = (" Photoreal, shot on 35mm, fine film grain, shallow depth of field, cold blue-white "
         "screen light as the only source against near-black, cinematic, vertical 9:16. "
         "No text, letters, numbers, logos, watermarks or user-interface labels anywhere.")
@@ -50,14 +56,14 @@ SHOTS = [
  ("keeping",   150.72,"T","12","seen through a smudged pane of glass at night, standing still and looking straight back at the lens, wide, whole body visible"),
  ("safe",      152.40,"S",None,f"{HER} alone in a large bed at night, turned away, phone screen glowing on the pillow beside her"),
  ("palms",     153.70,"S",None,"A woman's open palm pressed flat against a bright phone screen in the dark, light spilling between her fingers"),
- ("save",      155.20,"S",None,"A phone gallery grid of dozens of small dark photographs of the same man, one of them held under a thumb"),
- ("framed",    156.30,"S",None,"A single photograph of a man open full-screen on a phone in the dark, pinched between two fingers"),
+ ("save",       155.20,"T","01","repeated as dozens of small dark thumbnail photographs filling a phone gallery grid, a woman's thumb resting on one of them"),
+ ("framed",    156.30,"T","07","shown as a single photograph open full-screen on a phone held in the dark, two fingers pinch-zooming the image of him"),
  ("contained", 158.00,"S",None,"A switched-off phone in a hard case lying on a nightstand in a dark bedroom, screen dead black"),
  ("cracks",    158.86,"S",None,"A cracked phone screen in the dark, the fracture visibly spreading further across the glass, light bleeding out of it"),
  ("ran",       160.90,"S",None,"A phone screen in the dark mid-way through deleting a contact, the name blurred out beyond reading"),
  ("cage",      161.70,"T","03","walking away from the camera down a dark hallway at night, phone light behind him throwing his shadow forward, wide, small in frame"),
  ("trap",      163.40,"S",None,"An empty unmade bed at night with two phones on opposite nightstands, both screens dark"),
- ("exhibit",   164.18,"S",None,"A dark wall of many phone screens all showing the same blurred man, seen slightly from the side"),
+ ("exhibit",   164.18,"T","09","repeated across a dark wall of many phone screens all showing him at once, seen slightly from the side"),
  ("blamed",    166.00,"S",None,f"Close on {HER} face in the dark reading her phone, jaw set, screen light hard across her"),
  ("collapse",  167.04,"S",None,"A phone screen shattering completely, glass fragments lifting off the display, light blowing out through the break"),
  ("crowd",     169.82,"S",None,"Dozens of small glowing phone screens held up in a dark crowd, faces behind them lost in shadow"),
@@ -106,7 +112,7 @@ for name, t, kind, src, scene in SHOTS:
             r = post({"model": "google/nano-banana-pro", "prompt": p,
                       "num_images": 1, "image_url": uri})
         else:
-            r = post({"model": "bytedance/seedream-5-0-pro", "prompt": scene + "." + LOOK,
+            r = post({"model": "bytedance/seedream-5-0-pro", "prompt": scene + "." + NOMEN + LOOK,
                       "num_images": 1, "aspect_ratio": "9:16"})
         ok = grab(r, dst)
         print(f"  {name:10s} {'OK ' if ok else 'FAIL'} {kind}{' src='+src if src else ''}", flush=True)
