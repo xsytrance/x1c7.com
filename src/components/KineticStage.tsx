@@ -1789,10 +1789,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   if (dynRaw && shown) {
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
+    const portrait = typeof window !== "undefined" && window.innerHeight > window.innerWidth * 1.2;
     // 0.68 not 0.62: the estimate has to err WIDE. Under-estimating the width
     // lets a word think it fits and then clip, which is the one failure the
     // viewer actually notices.
-    const rawW = shown.length * basePx * dynRaw.size * delivery * octScale * 0.68;
+    // 0.68 is the average glyph advance as a fraction of font-size for this
+    // face. It is an AVERAGE, so it under-reads wide-letter words — ACCESS,
+    // OVERREACTION, POSSESS are nearly all wide glyphs (A C E O S) and ran off
+    // the frame even after the portrait clamp. Portrait has no margin to absorb
+    // that, so estimate with a pessimistic advance there and let short words
+    // (which never hit the clamp anyway) pay nothing for it.
+    const advance = portrait ? 0.88 : 0.68;
+    const rawW = shown.length * basePx * dynRaw.size * delivery * octScale * advance;
     // Target 78% of the frame, not 90%: entrance effects (cling, rise, slam)
     // scale the word up on the way in, and a CSS transform grows what the
     // viewer sees without changing the layout width this clamp can measure.
@@ -1806,7 +1814,6 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // tighter target so a giant word lands inside the frame instead of parking
     // on — and bleeding over — the wall. This is why §11 concluded dynamic mode
     // "clips at loud moments" and told you to ship phrase throughout in 9:16.
-    const portrait = typeof window !== "undefined" && window.innerHeight > window.innerWidth * 1.2;
     fitScale = Math.min(1, (vwPx * (portrait ? 0.56 : 0.78)) / Math.max(1, rawW));
     estH = basePx * dynRaw.size * delivery * fitScale;
     estW = Math.min(rawW * fitScale, vwPx * 0.95);
