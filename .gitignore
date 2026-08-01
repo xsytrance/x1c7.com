@@ -103,6 +103,7 @@ scripts/song-art/*-cut/
 scripts/song-art/*-real/
 scripts/song-art/*-comp/
 scripts/song-art/*-plates/
+scripts/song-art/*-cloud/
 # and never the working PNGs — only the shipped webp belongs in git
 scripts/song-art/*/*.png
 .env*
