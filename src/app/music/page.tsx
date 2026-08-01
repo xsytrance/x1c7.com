@@ -33,6 +33,9 @@ import { AgenorBand } from "@/components/AgenorBand";
 
 type View = "wall" | "spines" | "deck" | "jukebox";
 
+/** v2 retires every view preference saved before the wall existed. */
+const VIEW_KEY = "x1c7-collection-view-v2";
+
 function useDeviceMode(): "desktop" | "mobile" | null {
   const [mode, setMode] = useState<"desktop" | "mobile" | null>(null);
   useEffect(() => {
@@ -49,14 +52,19 @@ export default function Page() {
   const { tracks } = useTracks();
   const { currentTrack, isPlaying, analyser, playTrack: playFromCtx, pause } = useMusicPlayer();
   const mode = useDeviceMode();
-  // The wall is the default for everyone now; the collector views are one tap
-  // away under it and a returning visitor's choice is remembered.
+  // The wall is the default for everyone; the collector views are one tap away
+  // and a choice made SINCE the redesign is remembered.
+  //
+  // The key is deliberately v2. The old `x1c7-collection-view` holds a view
+  // picked before the wall existed, and honouring it meant every returning
+  // visitor — i.e. everyone who had ever used /music — landed on the old shelf
+  // and never saw the redesign at all. A new key retires those answers once.
   const [view, setView] = useState<View>("wall");
   useEffect(() => {
-    const saved = localStorage.getItem("x1c7-collection-view");
+    const saved = localStorage.getItem(VIEW_KEY);
     if (saved === "wall" || saved === "deck" || saved === "spines" || saved === "jukebox") setView(saved);
   }, []);
-  const pickView = (v: View) => { setView(v); localStorage.setItem("x1c7-collection-view", v); };
+  const pickView = (v: View) => { setView(v); localStorage.setItem(VIEW_KEY, v); };
 
   // Play always seeds the global queue with the full library so the persistent
   // player bar's next/prev traverse every transmission.
@@ -75,6 +83,19 @@ export default function Page() {
     ["jukebox", "◉ JUKEBOX"],
   ];
 
+  const viewSwitch = mode === null ? null : (
+    <div className="relative z-10 my-4 flex justify-center">
+      <div className="inline-flex rounded-full border border-white/12 bg-white/[0.04] p-1">
+        {views.map(([v, label]) => (
+          <button key={v} onClick={() => pickView(v)}
+            className={`rounded-full px-4 py-1.5 font-mono text-[10px] tracking-[0.18em] transition ${view === v ? "bg-plasma text-black" : "text-white/50 hover:text-white"}`}>
+            {label}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+
   return (
     // NOTE: no `overflow-hidden` here — it would make <main> a scroll container
     // and silently break the wall's sticky control bar. The wall measures its
@@ -89,6 +110,11 @@ export default function Page() {
           <Wall tracks={tracks} onPlay={playTrack} onPauseMain={pause} />
         ) : (
           <section className="mx-auto max-w-7xl px-4 pt-4 sm:px-6 lg:px-8">
+            {/* In a legacy view the switch goes ABOVE the collection — it is
+                the way back to the wall, and under a full-height shelf it was
+                a long scroll from anywhere. The wall itself needs no escape
+                hatch on top of it, so there it stays below (art leads). */}
+            {viewSwitch}
             {view === "jukebox" ? <JukeboxView tracks={tracks} />
               : view === "deck" ? <CollectionDeck tracks={tracks} onPlay={playTrack} onPauseMain={pause} />
               : <CollectionShelf tracks={tracks} onPlay={playTrack} onPauseMain={pause} />}
@@ -96,19 +122,7 @@ export default function Page() {
         )}
       </div>
 
-      {/* view switch — the collector views live on, just under the wall */}
-      {mode !== null && (
-        <div className="relative z-10 mt-4 flex justify-center">
-          <div className="inline-flex rounded-full border border-white/12 bg-white/[0.04] p-1">
-            {views.map(([v, label]) => (
-              <button key={v} onClick={() => pickView(v)}
-                className={`rounded-full px-4 py-1.5 font-mono text-[10px] tracking-[0.18em] transition ${view === v ? "bg-plasma text-black" : "text-white/50 hover:text-white"}`}>
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
-      )}
+      {view === "wall" && viewSwitch}
 
       {/* Cinematic takeover mounts here — auto-opens on play for synced tracks */}
       <CinematicLyrics />
