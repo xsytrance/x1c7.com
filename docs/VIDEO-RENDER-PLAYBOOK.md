@@ -6,10 +6,21 @@ different-this-summer, fast-enough, cocktails-and-code, drink-drink,
 say-it-with-your-body (×6 revisions — the richest lesson mine),
 maybe-was-the-answer, hajimemashite (the first cut for a song that was not
 already in the catalogue), different-this-summer-debut (the AGENOR Facebook
-debut — first PORTRAIT-ONLY cut, see §15). Every rule below was paid for.
+debut — first PORTRAIT-ONLY cut, see §15). Plus one RE-cut: hajimemashite v2
+for the Kizuna Solo Revamp, 2026-08-01 — first time an already-shipped cut had
+its audio replaced under it (see §16). Every rule below was paid for.
 
 Standing owner laws:
-- **Both aspects, always** — 16:9 master + NATIVE 9:16 re-record (never crop).
+- **ONE video: 9:16 only, master quality** *(owner law 2026-08-01 — REPLACES
+  "both aspects, always")*. Ship a single vertical master. Do not render 16:9,
+  do not produce `-share` encodes, do not hand over four files. The owner's
+  words: *"i only need 1 video; not 4. just the vertical 9:16 high quality
+  version."* Render with `--vertical`, not `--both`.
+  Consequence that is easy to miss: with no 16:9 deliverable there is no reason
+  to author landscape art ever again — see the next law.
+- **Generate art NATIVE PORTRAIT, 832×1472** *(owner law 2026-08-01)*. Never
+  author landscape plates for a vertical cut. See §17 — this is the single
+  biggest quality bug we have shipped.
 - **Illustrate the scene** — art depicts the lyric's literal narrative, not
   word-matched decoration. Re-read the lyrics before art direction.
 - **Own planet per song** — every song gets a DISTINCT art voice; resemblance
@@ -27,7 +38,7 @@ Standing owner laws:
 ```bash
 # from the repo root (cwd MATTERS — a stray `cd` into profiles/ breaks
 # relative paths and the render dies with MODULE_NOT_FOUND):
-node scripts/perf/render-cut.mjs --both \
+node scripts/perf/render-cut.mjs --vertical \
   --track <slug> --from <sec> --to <sec> \
   --base http://localhost:3218 \
   --out scripts/song-analysis/profiles/<slug>/<slug>-30.mp4
@@ -35,8 +46,13 @@ node scripts/perf/render-cut.mjs --both \
 
 | file | frame | notes |
 |---|---|---|
-| `<name>.mp4` | 1920×1080 · 60fps | master, crf 18 |
-| `<name>-vertical.mp4` | 1080×1920 · 60fps | native portrait master |
+| `<name>-vertical.mp4` | 1080×1920 · 60fps | **the deliverable**, crf 18 |
+
+`--vertical`, not `--both` — one video, 9:16, master quality (owner law
+2026-08-01, top of this file). The 16:9 pass and the `-share` encodes are
+retired; ship the vertical master itself. `--both` still works if a 16:9 is
+ever specifically asked for, but it is no longer the default and never the
+deliverable.
 
 - Headless by default (GPU via `--use-angle=vulkan`); survives a locked
   screen. `--headful` for eyeball debugging.
@@ -152,8 +168,16 @@ ffmpeg -i in.mp4 -c:v libx264 -preset medium -crf 23 \
 ```
 
 - x264 `slow` can outlive the 600s tool timeout — `medium` + background.
-- Renders re-read the DB on page load — data changes need no server restart;
-  ENGINE changes need the dev server to recompile (it does, on request).
+- ENGINE changes need the dev server to recompile (it does, on request).
+- **Data changes DO need a dev-server restart.** The old note here said
+  renders re-read the DB on page load. They do not: Next's fetch cache holds
+  the track row from the server's first read, so a `tracks` patch applied
+  while the server is up is invisible to the render. Symptom is nasty because
+  it looks like an engine bug — on the hajimemashite v2 QA sheet the giant
+  word froze on "WHAT" for 15s while the ambient line and act pill advanced
+  correctly (those come from data the page had already resolved). Restart the
+  server after ANY `_kiz-db.mjs patch`, then re-shoot. `rm -rf
+  .next/cache/fetch-cache` alone is not enough.
 
 ## 6 · The emotional treatment (engine features, all data-drivable)
 
@@ -278,6 +302,46 @@ it keeps the subject and rebuilds the world around them.
   focal point, re-roll asking for an abstract light source instead of text.
 - Ninth art voice: **OSAKA GOLD-LEAF NIGHT** — photoreal Dotonbori night graded
   to black and molten gold, her real face in all 17 scenes.
+
+### 12a · Kontext returns a BLACK PLATE, and never tells you why
+
+Three of sixteen hajimemashite v3 plates came back as solid black. The API
+returns **HTTP 200 with a real image URL**, bills you (~$0.05 each), and the
+file is simply black — no error, no moderation flag, nothing in the response
+body. `walking`, `doors` and `face` all "succeeded" and the pipeline reported
+them as done.
+
+**Detect it, because nothing else will:**
+
+- A black plate is **~2.2 KB** as webp (a real one is 70–390 KB). Size alone
+  catches it — gate on it and quarantine.
+- The refusal also comes back at the **wrong dimensions**: successful portrait
+  requests return 752×1392, black ones return **1024×768**, the model's default.
+  A landscape response to a portrait request means you got nothing.
+
+**What actually causes it** (measured, in order of how much time each wasted):
+
+1. **An over-written prompt.** This was the real cause for two of the three.
+   `doors` failed at 2,565 characters and succeeded at 540 with the same scene,
+   same source, same everything. It is not a length *limit* — `warm` succeeded
+   at 3,191 — it is elaboration: stacked clauses, meta-language about "the film",
+   heavy adjectival prose. Keep scene prompts tight and concrete; ~600–900
+   characters is a good working band.
+2. **A context-free facial close-up.** `face` failed three times — long prompt,
+   short prompt, reframed prompt — while asking for "head and shoulders only,
+   no environment". The same face in a street, waist-up, with a blurred crowd
+   behind her, generated first try. `secret` (her face in canal water) and
+   `reverl` (her laughing in an alley) never failed either. Kontext will edit a
+   real person's likeness inside a world; it will not hand you a bare portrait
+   crop of them. **Give every face shot an environment.**
+3. **NOT `safety_tolerance`.** Raising it 2 → 5 changed nothing. Note it must be
+   a **string**: `"5"` is accepted, `5` returns HTTP 400 "Validation failed".
+4. **NOT the source image, and NOT the scene content.** `They` and `walking`
+   share a source; `trap` and `doors` share one. In each pair one passed and one
+   failed. Doors thrown open with light pouring out is not unsafe content.
+
+The pipeline should verify every plate before it claims success — file size,
+dimensions, and that the decoded image is not uniformly black.
 
 ## 13 · A hidden row is invisible to the renderer (again)
 
@@ -484,3 +548,198 @@ rects came back wider than their own `max-width` — because `getBoundingClientR
 is viewport space and includes the stage's camera-push transform on an ancestor.
 That is the number you want (it is what lands in frame), but only once you know
 why it disagrees with the CSS.
+
+## 16 · Re-cutting a song whose audio got revamped (hajimemashite v2)
+
+Kizuna's debut came back as "Hajimemashite III — Kizuna Solo Revamp": same
+song, 168.16s → 191.73s, verse 1 and one bridge line rewritten. A revamp is
+NOT a new cut — most of the expensive work survives. Sort the assets first:
+
+**Survives untouched** — the whole art planet. All 17 Kontext scenes, `deck`,
+the 26-entry word-FX map, `assets.sections`, `analysis.palette`, `scene`.
+Character-consistent art is the costly part and the singer has not changed.
+
+**Must be rebuilt** — anything carrying a timestamp: `lyrics_synced`, the LRC
+stamps in `lyrics`, `dynamicPlus.acts`, `dynamicPlus.modes`, and `senses.json`.
+
+**Check by hand** — `assets.keywords`. Diff the old lyrics against the new and
+find anchors whose word no longer exists. Here exactly one died: the bridge
+lost "I wasn't discovered / I introduced myself" and gained "The doors swung
+open, lights hit and we felt it", orphaning `introduced`.
+**Open the orphaned art before you retire it.** `scene-introduced.webp` turned
+out to be her stepping through a literal open doorway into the light — a
+better illustration of the NEW line than the old one. Re-anchored
+`introduced` → `doors`, no regeneration, no cost. Word-matching would have
+thrown away a scene that already depicted the replacement.
+
+**Two stale-pointer traps**, both silent, both shipped-looking:
+
+1. `planet.assets.stems` points at R2 `planets/<slug>/stems/stems.json`.
+   That file is the OLD `senses.json` until you re-upload it — the beat, kick
+   and riser visuals will drive off the previous arrangement while everything
+   else is correct. Confirm before overwriting (`md5sum` it against the v1
+   profile's `senses.json`; here they matched exactly), back it up to
+   `pre-refix-backup/`, upload, then byte-verify the edge.
+2. The dev-server fetch cache — see §5.
+
+**Finding the new window.** Don't scale the old one; the added time is never
+evenly distributed (+23.6s here landed almost entirely in verse 1 and the
+outro). Transcribe, find the same *sections*, and let the length fall out.
+v1's window was 82.45–141.45 (59.00s); v2's equivalent is 97.60–157.55
+(59.95s) — nearly identical duration at a completely different offset.
+
+**Whisper on a breathy/processed lead vocal.** `medium` dropped all of verse 1
+(a 27s hole) and looped "But it's delicious" ×4 — the classic
+`condition_on_previous_text` hallucination. Re-run large-v3 with:
+
+```bash
+whisper "stems/0 Lead Vocals.mp3" --model large-v3 --language en \
+  --condition_on_previous_text False --no_speech_threshold 0.35 \
+  --initial_prompt "<the song's proper nouns and loanwords>" \
+  --word_timestamps True --output_format json
+```
+
+Prime `--initial_prompt` with the names it will otherwise mangle (it still
+heard "Tsuki tsuki sono sakto" for "Kizuna Sato" — fine, since official
+lyrics supply the TEXT and whisper only supplies TIMING).
+
+**Don't trust whisper word times through a mis-transcription.** It heard
+"faith" for "face" in the final chorus, so the greedy official→whisper matcher
+latched the first "Remember" onto the SECOND one and dragged the line 1.2s
+late. Hand-time any line whisper got wrong, from 50ms RMS onsets on the vocal
+stem. Then run the cheap mechanical check that catches the rest:
+
+```
+for each word: RMS(t, 0.18s) on the lead-vocal stem must be > -42 dB
+```
+
+Two words failed it here — whisper had parked "we" and "But" inside silence
+(-64 dB and -72 dB), 0.34s and 0.65s before their true onsets. That check is
+worth more than re-reading the alignment.
+
+**mp3 header durations on Suno stems are garbage.** `ffprobe` reported the
+lead vocal at 274.63s and percussion at 718.93s against a 191.73s release —
+VBR without a Xing header, so it estimates from bitrate. Every stem decoded to
+exactly 191.76s. Measure with a full decode (`ffmpeg -i x -f null -`) before
+concluding a stem is broken; this looks exactly like the 2026-07-23 truncation
+bug and is not it.
+
+## 17 · The 58% crop — why landscape art makes every shot a selfie
+
+**The worst bug in this playbook's history, and it shipped twice.** Read this
+before authoring a single plate.
+
+Scene art is drawn `object-cover` (`KineticStage.tsx`, `h-full w-full
+object-cover`). Feed a 1184×880 LANDSCAPE plate into a 1080×1920 portrait
+frame and the browser scales to cover the *height*: 1920/880 = 2.18×, so the
+image becomes 2584px wide against a 1080px viewport.
+
+```
+visible width = 1080 / 2584 = 41.8%     →  58.2% of every image is thrown away
+```
+
+It is a **centre crop**, so it keeps the middle of the frame — the face — and
+discards the world. Composition does not survive it. A carefully directed
+medium two-shot arrives on screen as a head. Sixteen of them in a row arrive
+as, in the owner's words, *"a powerpoint presentation of kizuna selfies"*.
+
+**How it hides.** Every individual plate looks great in a contact sheet, and
+the rendered video looks "fine but samey" — so the instinct is to blame the
+prompts and ask for wider framing. That treats the symptom: ask for a wide
+shot, lose 58% of it, get a medium shot. You cannot prompt your way out of a
+geometry bug.
+
+**The fix is generation-side, not prompt-side.** Generate native portrait
+832×1472 (Flux Kontext honours an explicit portrait canvas — `scripts/dts2/art.py`
+has done this since the AGENOR cut). Then `object-cover` into 1080×1920 is
+nearly a no-op and the frame you directed is the frame that ships.
+
+**Diagnose any existing planet in one line:**
+
+```bash
+for f in public/planets/<slug>/scene-*.webp; do \
+  ffprobe -v error -select_streams v:0 -show_entries stream=width,height \
+  -of csv=p=0 "$f"; done | sort -u        # anything wider than tall = this bug
+```
+
+**THREE independent causes stack, and all three must be fixed:**
+
+1. *Geometry* — landscape plates centre-cropped to portrait (above): −58.2%.
+2. *The camera* — `ART_MOVES` (KineticStage.tsx ~line 256) holds 8 Ken-Burns
+   presets and **every one of them sits at scale 1.10–1.29**. None rests at
+   1.0. That multiplies on top of the crop:
+
+   | stage | source width still on screen |
+   |---|---|
+   | landscape plate, `object-cover` into 1080×1920 | 41.8% |
+   | × gentlest preset (s 1.10) | **38.0%** |
+   | × strongest preset (s 1.29) | **32.4%** |
+
+   Roughly **two-thirds of every plate never reaches the screen.** Worse,
+   `artMoveFor(url)` picks the move by *hashing the image URL* — stable, but
+   blind to content, so a wide establishing shot can be handed "push in to
+   1.29" and stop being wide. Shot size must drive the camera: WIDE gets a
+   move that rests near 1.00–1.06 or pulls out; only CLOSE/MACRO may push.
+3. *Prompt shape* — §3's crowd-control tactic ("two figures fill the frame,
+   waist-up") is a fix for SDXL over-populating a **two-person** scene. Applied
+   to a **solo artist** it just orders a close-up every time. For a single
+   subject, direct shot size explicitly and vary it.
+
+**The lexicon has the same bug, all 15,930 of it.** `scripts/lexicon/art.mjs`
+line 41 is `const W = 1152, H = 832` — every Lexsycon painting is landscape.
+object-cover into 1080×1920 scales 832→1920 (2.31×) for 2659px of width against
+a 1080px frame: **59% lost**, same as the scene plates. So you cannot fix a
+vertical cut by swapping in lexicon art — it arrives just as cropped.
+
+Triage them instead of full-bleeding them:
+
+- `crop: "safe"` — full-field texture, grain, light, abstract wash. No subject
+  to lose, survives a hard centre crop. Full-bleed these.
+- `crop: "letterbox"` — a composed scene with a subject. Show it as a
+  1080×780 widescreen band inside the portrait frame (or blur-extend the
+  sides, or slow-pan across it). **Never object-cover.**
+
+The band is not a compromise — a widescreen inset floating in a vertical frame
+reads as deliberate film grammar, and it gives the 9:16 layout something to do
+with its height. Pair it with the stacked-panel split.
+
+Changing the lexicon's own generation to portrait is a bigger call than one
+cut: those images also feed /lexicon, /galaxy and the Sonic Dossier, where
+landscape is right. Ask before touching `art.mjs`.
+
+**The letterbox band only works over a plate with nothing to protect.** v3
+shipped a `band` roll window across the bridge, where a Lexsycon plate is drawn
+as a 1080×780 strip through the middle of the frame. Over a full-body portrait
+plate the result is a CHIMERA — her head and torso above the band, a stranger's
+jeans and trainers inside it, her bare legs and heels below, reading as one
+mangled body. Over the `doors` plate it simply cut a composed image in half with
+unrelated bokeh.
+
+Two rules from that:
+
+- A band may only sit over art with no subject that crosses it — an abstract
+  wash, a texture, an empty room. Never over a standing figure.
+- **Audit bands at full size, on a phone.** The defect was invisible in a
+  330px-wide contact sheet and obvious the instant it was played back at
+  1080×1920. Contact sheets are for coverage and shot variety; they are not
+  sufficient for compositing.
+
+`bleed` (the B plate underneath at ~0.26 screen) gives the same second-voice
+presence with nothing to slice, and is the safe default. Reach for `band` only
+deliberately, and check that specific frame.
+
+Fixing only one of the three leaves the video looking the same. The geometry
+fix alone still loses 10–29% to the camera; the prompt fix alone feeds better
+compositions into the same meat grinder.
+
+**Enforce variety structurally, not by good intentions.** Tag every asset
+WIDE/MED/CLOSE/MACRO and check the histogram before you render: at least a
+third WIDE, no more than a quarter CLOSE+MACRO, and never two identical sizes
+back to back. A shot-size histogram is a cheap QA number that would have caught
+both hajimemashite cuts.
+
+**Also check the source photos before generating.** hajimemashite v1 and v2 both
+used one tight portrait as the Kontext source when
+`assets/art/kizunasato/` held three full-body environmental shots — a rooftop
+over a night skyline, arms-up in a wet Dotonbori street, and a studio desk.
+The range was there the whole time and the pipeline never looked.

@@ -1,0 +1,402 @@
+{
+ "assets": {
+  "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/hajimemashite/stems/stems.json",
+  "stemLag": -0.023,
+  "keywords": {
+   "they": "/planets/hajimemashite/scene-they.webp",
+   "trap": "/planets/hajimemashite/scene-trap.webp",
+   "walking": "/planets/hajimemashite/scene-walking.webp",
+   "never": "/planets/hajimemashite/scene-never.webp",
+   "reverl": "/planets/hajimemashite/scene-reverl.webp",
+   "egi": "/planets/hajimemashite/scene-egi.webp",
+   "xsytrance": "/planets/hajimemashite/scene-xsytrance.webp",
+   "shine": "/planets/hajimemashite/scene-shine.webp",
+   "secret": "/planets/hajimemashite/scene-secret.webp",
+   "doors": "/planets/hajimemashite/scene-doors.webp",
+   "alone": "/planets/hajimemashite/scene-alone.webp",
+   "warm": "/planets/hajimemashite/scene-warm.webp",
+   "hajimemashite": "/planets/hajimemashite/scene-hajimemashite.webp",
+   "face": "/planets/hajimemashite/scene-face.webp",
+   "kizuna": "/planets/hajimemashite/scene-kizuna.webp"
+  },
+  "sections": {
+   "proud": "/planets/hajimemashite/scene-levelready.webp",
+   "playful": "/planets/hajimemashite/scene-cute.webp",
+   "intimate": "/planets/hajimemashite/scene-alone.webp",
+   "magnetic": "/planets/hajimemashite/scene-face.webp",
+   "confident": "/planets/hajimemashite/scene-shine.webp",
+   "seductive": "/planets/hajimemashite/scene-trap.webp",
+   "mysterious": "/planets/hajimemashite/scene-secret.webp",
+   "triumphant": "/planets/hajimemashite/scene-hajimemashite.webp"
+  },
+  "shots": {
+   "/planets/hajimemashite/scene-they.webp": "WIDE",
+   "/planets/hajimemashite/scene-trap.webp": "MACRO",
+   "/planets/hajimemashite/scene-walking.webp": "WIDE",
+   "/planets/hajimemashite/scene-never.webp": "MED",
+   "/planets/hajimemashite/scene-reverl.webp": "CLOSE",
+   "/planets/hajimemashite/scene-egi.webp": "WIDE",
+   "/planets/hajimemashite/scene-xsytrance.webp": "MED",
+   "/planets/hajimemashite/scene-shine.webp": "WIDE",
+   "/planets/hajimemashite/scene-secret.webp": "CLOSE",
+   "/planets/hajimemashite/scene-doors.webp": "WIDE",
+   "/planets/hajimemashite/scene-alone.webp": "MED",
+   "/planets/hajimemashite/scene-warm.webp": "WIDE",
+   "/planets/hajimemashite/scene-hajimemashite.webp": "MED",
+   "/planets/hajimemashite/scene-face.webp": "MED",
+   "/planets/hajimemashite/scene-kizuna.webp": "MED",
+   "/planets/hajimemashite/scene-and.webp": "WIDE"
+  },
+  "broll": [
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-6-film-still.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s3-3-anime.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s1-5-neon-night.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-6-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s6-2-photo.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-1-cinema.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s6-6-cinema.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s3-1-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-3-cinema.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-2-anime.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-6-film-still.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/star/s1-6-film-still.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/secret/s1-6-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s3-4-dark-surreal.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-4-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s27-6-anime.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s2-4-anime.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-5-anime.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s7-2-cinema.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-3-cinema.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s2-1-cinema.webp",
+    "crop": "letterbox",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-5-analog.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s3-6-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   },
+   {
+    "url": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s5-1-oil-light.webp",
+    "crop": "safe",
+    "shot": "WIDE"
+   }
+  ]
+ },
+ "analysis": {
+  "themes": [
+   "Debut and introduction",
+   "Cute as camouflage",
+   "Gold and self-worth",
+   "Bloodline and heritage",
+   "Osaka night",
+   "Effortless power"
+  ],
+  "palette": [
+   "#FFFFFF",
+   "#FFE9A8",
+   "#F6D66B",
+   "#E8A33D"
+  ],
+  "summary": "Kizuna Sato introduces herself. Cute is the cover; capable is the story. Osaka neon, gold chains and a voice that never strains.",
+  "keywords": [],
+  "sections": [
+   {
+    "name": "Intro",
+    "start": 0,
+    "emotion": "seductive",
+    "colorHint": "#E8A33D",
+    "intensity": 0.35
+   },
+   {
+    "name": "Verse 1",
+    "start": 24,
+    "emotion": "confident",
+    "colorHint": "#F6D66B",
+    "intensity": 0.55
+   },
+   {
+    "name": "Pre-Chorus",
+    "start": 46.9,
+    "emotion": "mysterious",
+    "colorHint": "#D96A3A",
+    "intensity": 0.48
+   },
+   {
+    "name": "Chorus",
+    "start": 50,
+    "emotion": "triumphant",
+    "colorHint": "#FFE9A8",
+    "intensity": 0.7
+   },
+   {
+    "name": "Chopped & Screwed",
+    "start": 70,
+    "emotion": "mysterious",
+    "colorHint": "#D96A3A",
+    "intensity": 0.45
+   },
+   {
+    "name": "Verse 2",
+    "start": 82.45,
+    "emotion": "playful",
+    "colorHint": "#F6D66B",
+    "intensity": 0.62
+   },
+   {
+    "name": "LevelReady",
+    "start": 93.6,
+    "emotion": "proud",
+    "colorHint": "#FFE9A8",
+    "intensity": 0.66
+   },
+   {
+    "name": "Bridge",
+    "start": 105.4,
+    "emotion": "intimate",
+    "colorHint": "#E8A33D",
+    "intensity": 0.48
+   },
+   {
+    "name": "Final Chorus",
+    "start": 118.3,
+    "emotion": "triumphant",
+    "colorHint": "#FFE9A8",
+    "intensity": 0.7
+   },
+   {
+    "name": "Outro",
+    "start": 135.2,
+    "emotion": "magnetic",
+    "colorHint": "#F6D66B",
+    "intensity": 0.5
+   }
+  ],
+  "overallMood": "Expensive Debut Swagger"
+ },
+ "styleHint": "Slow, thick, sultry R&B trap with swung half-time drums, deep 808 sub, trunk-knock kick and swelling cinematic strings. Confident female lead with a Japanese-American accent — breathy whispered verses opening into effortless controlled belts, playful spoken ad-libs and giggle-cuts, English laced with Japanese phrases. Chopped-and-screwed tape-slow breakdown with pitch-bent vocal chops. Debut-single statement energy: cute on the surface, dangerous underneath, expensive throughout. Gold, night-time, luxurious.",
+ "dynamicPlus": {
+  "v": 2,
+  "acts": [
+   {
+    "start": 97.6,
+    "end": 121.1,
+    "label": "CUTE IS THE COVER",
+    "why": "verse two — she repeats the insult back at you and keeps walking"
+   },
+   {
+    "start": 121.2,
+    "end": 138.9,
+    "label": "THE DOORS SWUNG OPEN",
+    "why": "the bridge drops to a whisper — the revamp rewrites the thesis: she didn't introduce herself, the room was already hers"
+   },
+   {
+    "start": 139.0,
+    "end": 157.55,
+    "label": "HAJIMEMASHITE · KIZUNA SATO",
+    "why": "final chorus into the one effortless belt — the name lands"
+   }
+  ],
+  "deck": {
+   "glow": 1.35,
+   "grain": 0.3,
+   "density": 2,
+   "vignette": 0.55
+  },
+  "modes": [
+   {
+    "start": 97.6,
+    "end": 157.55,
+    "mode": "phrase"
+   }
+  ],
+  "scene": "EMBERS",
+  "words": {
+   "up": "rise",
+   "cute": "shimmer",
+   "down": "fall",
+   "face": "pulse",
+   "name": "cling",
+   "sato": "slam",
+   "slow": "melt",
+   "trap": "squeeze",
+   "warm": "bloom",
+   "alone": "echo",
+   "shine": "bloom",
+   "sound": "echo",
+   "sweat": "freeze",
+   "tempo": "pulse",
+   "kizuna": "slam",
+   "reverl": "chop",
+   "secret": "tremor",
+   "throne": "slam",
+   "wheels": "quake",
+   "walking": "wave",
+   "aishiteru": "shimmer",
+   "bloodline": "pulse",
+   "discovered": "echo",
+   "introduced": "rise",
+   "levelready": "bloom",
+   "hajimemashite": "bloom"
+  },
+  "directed": "HAJIMEMASHITE v3 — THE CORONATION. 9:16 only, native-portrait art, Kizuna A-roll + Lexsycon B-roll, re-choreographed 2026-08-01 (window 97.60–157.55)",
+  "rolls": [
+   {
+    "start": 97.6,
+    "end": 121.1,
+    "pattern": "bleed",
+    "mix": 0.3,
+    "blend": "screen"
+   },
+   {
+    "start": 121.2,
+    "end": 138.9,
+    "pattern": "band",
+    "mix": 0.85,
+    "blend": "normal"
+   },
+   {
+    "start": 139.0,
+    "end": 157.55,
+    "pattern": "alternate",
+    "mix": 0.42,
+    "blend": "screen",
+    "period": 3
+   }
+  ],
+  "oneShots": [
+   {
+    "id": "three-names",
+    "kind": "nameCards",
+    "start": 115.5,
+    "end": 120.6,
+    "solo": true,
+    "cards": [
+     {
+      "text": "EGI",
+      "at": 115.6,
+      "art": "/planets/hajimemashite/scene-egi.webp"
+     },
+     {
+      "text": "XSYTRANCE",
+      "at": 116.62,
+      "art": "/planets/hajimemashite/scene-xsytrance.webp"
+     },
+     {
+      "text": "AGENOR",
+      "at": 117.82,
+      "art": "/planets/hajimemashite/scene-shine.webp"
+     }
+    ],
+    "collapseAt": 118.4,
+    "collapseTo": "AGENOR",
+    "collapseDur": 0.7
+   }
+  ],
+  "hits": [
+   {
+    "t": 127.48,
+    "dur": 1.35
+   }
+  ],
+  "holds": [
+   {
+    "start": 150.98,
+    "end": 157.55,
+    "art": "/planets/hajimemashite/scene-and.webp"
+   }
+  ]
+ },
+ "generatedAt": "2026-08-01T16:10:00.000Z",
+ "interactions": {
+  "moments": [],
+  "tapEffect": "sparkle"
+ }
+}

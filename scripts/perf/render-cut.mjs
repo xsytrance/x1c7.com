@@ -21,7 +21,7 @@
 //     [--track summer-drip] [--from 176.4] [--to 236.9] \
 //     [--mode dynamic] [--pass 6] [--out out.mp4] [--audio release.mp3]
 //     [--base http://localhost:7272] [--w 1920] [--h 1080] [--shots 0]
-//     [--vertical] [--both]
+//     [--vertical] [--both] [--reel]
 //
 // --shots N grabs N evenly-spaced QA stills instead of recording (fast loop).
 // --vertical = the 9:16 phone cut (1080×1920, "-vertical" filename suffix) —
@@ -118,7 +118,12 @@ await page.addInitScript(() => {
   window.Audio = W;
 });
 
-const url = `${BASE}/studio?track=${TRACK}&embed=1&autoplay=1&pass=${PASS}&mode=${MODE}&t=${FROM}`;
+// --reel turns the Curator's Lexsycon layer ON for the capture. It is off by
+// default in the stage (reel.enabled, KineticStage.tsx) and NON_LOOK, which
+// only stops a SAVED LOOK from carrying it — it never blocked rendering, so no
+// cut before hajimemashite v3 had ever baked the lexicon art in. ?reel=1 is
+// read once on mount and flips the param for the session.
+const url = `${BASE}/studio?track=${TRACK}&embed=1&autoplay=1&pass=${PASS}&mode=${MODE}&t=${FROM}${args.reel ? "&reel=1" : ""}`;
 log(`→ ${url}`);
 await page.goto(url, { waitUntil: "domcontentloaded" });
 

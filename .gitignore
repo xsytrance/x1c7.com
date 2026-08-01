@@ -89,6 +89,12 @@ scripts/song-analysis/profiles/*/*-check*.jpg
 scripts/song-analysis/profiles/*/*-60*.mp4
 scripts/song-analysis/profiles/*/.render-*/
 scripts/song-analysis/profiles/*/pre-refix-backup/
+# Suno stem splits — 22MB per song, and they are re-derivable from the zip in
+# assets/. Same policy as stems-src/ and stems_aligned/ above.
+scripts/song-analysis/profiles/*/stems/
+# whisper run logs are megabytes of progress-bar carriage returns; the JSON
+# transcripts beside them are the part worth keeping.
+scripts/song-analysis/profiles/*/whisper*/*.log
 scripts/song-art/*-out/
 .env*
 

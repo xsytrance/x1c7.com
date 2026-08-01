@@ -1,0 +1,227 @@
+{
+ "v": 1,
+ "id": "hajimemashite",
+ "generatedAt": "2026-08-01T16:12:00.000Z",
+ "method": "cloud-judged from cached vision readings (no GPU)",
+ "counts": {
+  "picks": 24
+ },
+ "reel": [
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-6-film-still.webp",
+   "key": "drink/s6-6-film-still.webp",
+   "word": "drink",
+   "t": 97.98,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s3-3-anime.webp",
+   "key": "honey/s3-3-anime.webp",
+   "word": "honey",
+   "t": 101.6,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s1-5-neon-night.webp",
+   "key": "walk/s1-5-neon-night.webp",
+   "word": "walk",
+   "t": 102.8,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-6-oil-light.webp",
+   "key": "slow/s11-6-oil-light.webp",
+   "word": "slow",
+   "t": 105.74,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s6-2-photo.webp",
+   "key": "fast/s6-2-photo.webp",
+   "word": "fast",
+   "t": 106.5,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-1-cinema.webp",
+   "key": "sweat/s3-1-cinema.webp",
+   "word": "sweat",
+   "t": 108.58,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s6-6-cinema.webp",
+   "key": "voice/s6-6-cinema.webp",
+   "word": "voice",
+   "t": 109.42,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s3-1-oil-light.webp",
+   "key": "crazy/s3-1-oil-light.webp",
+   "word": "crazy",
+   "t": 115.02,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-3-cinema.webp",
+   "key": "throne/s0-3-cinema.webp",
+   "word": "throne",
+   "t": 115.6,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-2-anime.webp",
+   "key": "gold/s18-2-anime.webp",
+   "word": "gold",
+   "t": 116.62,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-6-film-still.webp",
+   "key": "crown/s0-6-film-still.webp",
+   "word": "crown",
+   "t": 117.82,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/star/s1-6-film-still.webp",
+   "key": "star/s1-6-film-still.webp",
+   "word": "star",
+   "t": 119.94,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/secret/s1-6-oil-light.webp",
+   "key": "secret/s1-6-oil-light.webp",
+   "word": "secret",
+   "t": 121.44,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s3-4-dark-surreal.webp",
+   "key": "door/s3-4-dark-surreal.webp",
+   "word": "door",
+   "t": 125.04,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-4-oil-light.webp",
+   "key": "lights/s17-4-oil-light.webp",
+   "word": "lights",
+   "t": 126.66,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s27-6-anime.webp",
+   "key": "night/s27-6-anime.webp",
+   "word": "night",
+   "t": 131.25,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s2-4-anime.webp",
+   "key": "home/s2-4-anime.webp",
+   "word": "home",
+   "t": 133.3,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-5-anime.webp",
+   "key": "gold/s17-5-anime.webp",
+   "word": "gold",
+   "t": 139.35,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s7-2-cinema.webp",
+   "key": "bass/s7-2-cinema.webp",
+   "word": "bass",
+   "t": 143.45,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-3-cinema.webp",
+   "key": "lights/s22-3-cinema.webp",
+   "word": "lights",
+   "t": 144.1,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s2-1-cinema.webp",
+   "key": "night/s2-1-cinema.webp",
+   "word": "night",
+   "t": 146.25,
+   "score": 0.9,
+   "featured": true,
+   "crop": "letterbox"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-5-analog.webp",
+   "key": "chains/s0-5-analog.webp",
+   "word": "chains",
+   "t": 147.55,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s3-6-oil-light.webp",
+   "key": "flame/s3-6-oil-light.webp",
+   "word": "flame",
+   "t": 150.98,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  },
+  {
+   "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s5-1-oil-light.webp",
+   "key": "breath/s5-1-oil-light.webp",
+   "word": "breath",
+   "t": 153.1,
+   "score": 0.9,
+   "featured": true,
+   "crop": "safe"
+  }
+ ]
+}

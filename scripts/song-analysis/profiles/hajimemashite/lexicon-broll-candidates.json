@@ -1,0 +1,850 @@
+{
+  "v": 1,
+  "id": "hajimemashite",
+  "kind": "lexicon-broll-candidates",
+  "generatedAt": "2026-08-01T15:05:07.175867Z",
+  "window": {
+    "start": 97.6,
+    "end": 157.55,
+    "dur": 59.95
+  },
+  "method": {
+    "sources": [
+      "src/data/lexicon.json",
+      "scripts/curator/vision-index.json",
+      "profiles/hajimemashite/aligned.json",
+      "profiles/hajimemashite/official-lyrics.txt"
+    ],
+    "gpu": false,
+    "regenerated": false,
+    "note": "Judged from cached vision readings only. Hard-rejected any image whose cached caption or subjects mention a face, portrait, woman, girl, person, eyes, model, singer, dancer or figure, and any image with non-empty textInImage.",
+    "pool": {
+      "visionIndexedImages": 7931,
+      "lexiconMatched": 6707,
+      "survivedFaceAndTextFilter": 3384
+    }
+  },
+  "WARNING_ASPECT": "EVERY lexicon image is 1152x832 LANDSCAPE (scripts/lexicon/art.mjs line 41: const W = 1152, H = 832). object-cover into 1080x1920 scales 832->1920 (2.31x), giving 2659px of width against a 1080px frame: 59% of every image's width is thrown away. That is the SAME bug as the 17 existing scenes. Do NOT full-bleed these. crop:'safe' = full-field texture/abstract, survives a hard centre crop. crop:'letterbox' = composed scene, must be shown as a 1080-wide band (1080x780) inside the portrait frame, or blur-extended, or slow-panned; never object-cover.",
+  "counts": {
+    "picks": 24,
+    "cropSafe": 13,
+    "cropLetterbox": 11
+  },
+  "picks": [
+    {
+      "word": "drink",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s6-6-film-still.webp",
+      "key": "lexicon/drink/s6-6-film-still.webp",
+      "sense": 6,
+      "emotion": "Intense",
+      "line": "They said \"she's so cute\" — mmm, keep talking",
+      "t": 97.98,
+      "crop": "letterbox",
+      "why": "Opens the window in her room, not on her face: a chilled amber cocktail in a dim bar is the Osaka-gold night in one object, and it lets the cocky opening line land on a look-but-don't-touch prop.",
+      "vision": {
+        "caption": "A chilled amber cocktail with geometric ice cubes glows warmly in a dimly lit bar setting.",
+        "subjects": [
+          "glass",
+          "ice cubes",
+          "amber liquid"
+        ],
+        "mood": [
+          "relaxed",
+          "sophisticated",
+          "calm"
+        ],
+        "palette": [
+          "#e6a859",
+          "#d47c00",
+          "#3e2b1f",
+          "#8c6a4c"
+        ],
+        "style": "photorealistic with cinematic lighting",
+        "quality": 0.95,
+        "wordMatch": 0.9,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "honey",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s3-3-anime.webp",
+      "key": "lexicon/honey/s3-3-anime.webp",
+      "sense": 3,
+      "emotion": "Sweet entrapment",
+      "line": "I'm the trap and the bait, watch how I'm walking",
+      "t": 101.6,
+      "crop": "safe",
+      "why": "The sense gloss is literally 'Sweet entrapment' — a molten-gold cityscape glowing like liquid honey is the trap-and-bait line rendered as pure environment, and it is a full-field texture so it survives any crop.",
+      "vision": {
+        "caption": "A shattered cityscape bathed in molten gold, where fire and ruin glow like liquid honey.",
+        "subjects": [
+          "ruined buildings",
+          "flames",
+          "molten metal",
+          "crumbling arches"
+        ],
+        "mood": [
+          "desolation",
+          "chaos",
+          "warm devastation"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6B325",
+          "#8C5E00",
+          "#4A3100"
+        ],
+        "style": "Hyperrealistic digital painting with dramatic lighting",
+        "quality": 0.95,
+        "wordMatch": 0.7,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "walk",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s1-5-neon-night.webp",
+      "key": "lexicon/walk/s1-5-neon-night.webp",
+      "sense": 1,
+      "emotion": "Intense",
+      "line": "I'm the trap and the bait, watch how I'm walking",
+      "t": 102.8,
+      "crop": "letterbox",
+      "why": "Boots stepping through neon rain puddles — the only thing in frame is the walk itself, no face, so it illustrates 'watch how I'm walking' without competing with the Kizuna portrait layer.",
+      "vision": {
+        "caption": "A lone figure's boots step through neon-drenched rain puddles reflecting fractured city lights, embodying the song's desperate march toward oblivion.",
+        "subjects": [
+          "boots",
+          "rain puddles",
+          "neon reflections",
+          "city street"
+        ],
+        "mood": [
+          "eerie",
+          "introspective",
+          "hypnotic",
+          "desperate"
+        ],
+        "palette": [
+          "#00008B",
+          "#FF00FF",
+          "#00FFFF",
+          "#4A235A"
+        ],
+        "style": "Cyberpunk realism with cinematic lighting and shallow depth of field",
+        "quality": 0.95,
+        "wordMatch": 0.85,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "slow",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-6-oil-light.webp",
+      "key": "lexicon/slow/s11-6-oil-light.webp",
+      "sense": 11,
+      "emotion": "Energetic",
+      "line": "Any key, any tongue, any tempo — slow it down, speed it up",
+      "t": 105.74,
+      "crop": "safe",
+      "why": "A molten sunburst pouring liquid gold in 'slow-motion rays' is the tempo-drop made visual, and it is the single most on-palette gold field in the whole lexicon.",
+      "vision": {
+        "caption": "A molten sunburst floods the horizon with liquid gold, casting slow-motion rays across a hazy sky.",
+        "subjects": [
+          "sun",
+          "horizon",
+          "sky"
+        ],
+        "mood": [
+          "serene",
+          "tranquil",
+          "awe-inspiring"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6B325",
+          "#A84F00",
+          "#8C3100"
+        ],
+        "style": "abstract impressionism with soft gradients",
+        "quality": 0.9,
+        "wordMatch": 0.7,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "fast",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s6-2-photo.webp",
+      "key": "lexicon/fast/s6-2-photo.webp",
+      "sense": 6,
+      "emotion": "Urgent Thrill",
+      "line": "Any key, any tongue, any tempo — slow it down, speed it up",
+      "t": 106.5,
+      "crop": "letterbox",
+      "why": "Long-exposure car light-trails across a wet highway is the 'speed it up' half of the same bar; cutting it hard against the slow gold sunburst gives the line its own tempo flip.",
+      "vision": {
+        "caption": "A blurred cityscape at night where streaks of light from speeding cars blur into glowing trails across a wet highway.",
+        "subjects": [
+          "cars",
+          "highway",
+          "city buildings",
+          "streetlights"
+        ],
+        "mood": [
+          "dynamic",
+          "urgent",
+          "eager",
+          "surreal"
+        ],
+        "palette": [
+          "#0a192f",
+          "#d4af37",
+          "#ff6b6b",
+          "#5c6bc0"
+        ],
+        "style": "Long exposure photography with motion blur and bokeh lighting effects",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "sweat",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s3-1-cinema.webp",
+      "key": "lexicon/sweat/s3-1-cinema.webp",
+      "sense": 3,
+      "emotion": "Physical intimacy and heat.",
+      "line": "Either way I'm never breaking a sweat, what",
+      "t": 108.58,
+      "crop": "safe",
+      "why": "Gold droplets falling in a warm blur — macro, abstract, no body — says 'sweat' as luxury rather than effort, which is exactly her brag.",
+      "vision": {
+        "caption": "A golden cascade of shimmering droplets falls in a blurred, warm glow.",
+        "subjects": [
+          "droplets",
+          "light particles"
+        ],
+        "mood": [
+          "transient",
+          "warm",
+          "vulnerable"
+        ],
+        "palette": [
+          "#D4AF37",
+          "#B8860B",
+          "#A97E52"
+        ],
+        "style": "macro photography with bokeh effect",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "voice",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s6-6-cinema.webp",
+      "key": "lexicon/voice/s6-6-cinema.webp",
+      "sense": 6,
+      "emotion": "Intense",
+      "line": "Welcome to the reverl— (giggle) ...LevelReady, baby~",
+      "t": 109.42,
+      "crop": "letterbox",
+      "why": "A vintage mic alone on a dim stage in warm gold light is the label-drop shot: it says 'welcome to the room' and it is the one moment the reel should look like a venue, not a street.",
+      "vision": {
+        "caption": "A vintage microphone stands alone on a dimly lit stage, bathed in warm golden light with blurred bokeh orbs in the background.",
+        "subjects": [
+          "microphone",
+          "stage",
+          "bokeh lights"
+        ],
+        "mood": [
+          "solemn",
+          "anticipatory",
+          "intimate"
+        ],
+        "palette": [
+          "#8B4513",
+          "#D2691E",
+          "#A0522D"
+        ],
+        "style": "Moody cinematic photography with shallow depth of field",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "crazy",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s3-1-oil-light.webp",
+      "key": "lexicon/crazy/s3-1-oil-light.webp",
+      "sense": 3,
+      "emotion": "Euphoric",
+      "line": "Practiced that aaaall week for you. Crazy, ne?",
+      "t": 115.02,
+      "crop": "safe",
+      "why": "Word she actually sings; a blazing molten-gold sunburst against a void is the giggle turning into a flex, and the void background means the lyric type will read cleanly over it.",
+      "vision": {
+        "caption": "A blazing sunburst of molten gold and fiery orange radiates intense energy against a void.",
+        "subjects": [
+          "sun",
+          "fire",
+          "radiant light"
+        ],
+        "mood": [
+          "intense",
+          "energetic",
+          "overwhelming"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E68A00",
+          "#B54F00",
+          "#2C1E1E"
+        ],
+        "style": "digital painting with textured brushstrokes",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "throne",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-3-cinema.webp",
+      "key": "lexicon/throne/s0-3-cinema.webp",
+      "sense": 0,
+      "emotion": "Flirtatious Confidence",
+      "line": "Egi on the throne and xsytrance in the bloodline",
+      "t": 115.6,
+      "crop": "letterbox",
+      "why": "Literal sung word, wordMatch 0.95: a solitary ornate golden throne in a dim chiaroscuro chamber — the empty throne is better than any occupied one because the song is naming the man, not showing him.",
+      "vision": {
+        "caption": "A solitary, ornate golden throne sits in a dimly lit chamber, its intricate carvings casting long shadows on the wooden floor.",
+        "subjects": [
+          "ornate golden throne",
+          "wooden floor"
+        ],
+        "mood": [
+          "solemn",
+          "regal",
+          "abandoned"
+        ],
+        "palette": [
+          "#8B4513",
+          "#A0522D",
+          "#6B4C37",
+          "#E9D8A6"
+        ],
+        "style": "dramatic chiaroscuro with baroque details",
+        "quality": 0.9,
+        "wordMatch": 0.95,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "gold",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-2-anime.webp",
+      "key": "lexicon/gold/s18-2-anime.webp",
+      "sense": 18,
+      "emotion": "Precious transformation and value found in self",
+      "line": "Egi on the throne and xsytrance in the bloodline",
+      "t": 116.62,
+      "crop": "safe",
+      "why": "Liquid gold cascading in molten streams over a midnight cityscape is 'bloodline' as a flowing line of gold — lineage without a single human body in frame.",
+      "vision": {
+        "caption": "Liquid gold cascades in molten streams, reflecting starlight across a midnight cityscape.",
+        "subjects": [
+          "molten gold",
+          "starlight",
+          "midnight cityscape"
+        ],
+        "mood": [
+          "contemplative",
+          "hopeful",
+          "transformative"
+        ],
+        "palette": [
+          "#FFD700",
+          "#8B4513",
+          "#2E8B57",
+          "#000000"
+        ],
+        "style": "Digital painting with fluid dynamics and luminous textures",
+        "quality": 0.9,
+        "wordMatch": 0.95,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "crown",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crown/s0-6-film-still.webp",
+      "key": "lexicon/crown/s0-6-film-still.webp",
+      "sense": 0,
+      "emotion": "Victorious",
+      "line": "Same man, three names — I only need the one, shine~",
+      "t": 117.82,
+      "crop": "letterbox",
+      "why": "A gilded crown under a hard spotlight against black is the 'I only need the one' image: one object, one light, gold leaf on void, straight down the OSAKA GOLD-LEAF NIGHT palette.",
+      "vision": {
+        "caption": "A gilded crown with intricate gold filigree and gemstones rests on a wooden surface, illuminated by a bright spotlight against a dark backdrop.",
+        "subjects": [
+          "crown",
+          "wooden table",
+          "light source"
+        ],
+        "mood": [
+          "regal",
+          "solemn",
+          "majestic"
+        ],
+        "palette": [
+          "#D4AF37",
+          "#8B5A00",
+          "#2E1F0F",
+          "#FFD700"
+        ],
+        "style": "Photorealistic still life with cinematic lighting",
+        "quality": 0.9,
+        "wordMatch": 0.95,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "star",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/star/s1-6-film-still.webp",
+      "key": "lexicon/star/s1-6-film-still.webp",
+      "sense": 1,
+      "emotion": "Euphoric and Intimate",
+      "line": "Same man, three names — I only need the one, shine~",
+      "t": 119.94,
+      "crop": "safe",
+      "why": "Highest wordMatch in the shortlist (0.98): a single radiant golden star on black is the word 'shine' with nothing else in the frame, perfect for the held tail of the line.",
+      "vision": {
+        "caption": "A radiant golden star glows intensely against a dark backdrop, casting sharp shadows on a reflective surface.",
+        "subjects": [
+          "golden star",
+          "light rays",
+          "reflective surface"
+        ],
+        "mood": [
+          "awe",
+          "majestic",
+          "hopeful"
+        ],
+        "palette": [
+          "#D4AF37",
+          "#B8860B",
+          "#2E1F0A",
+          "#FFD700"
+        ],
+        "style": "digital realism with cinematic lighting",
+        "quality": 0.95,
+        "wordMatch": 0.98,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "secret",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/secret/s1-6-oil-light.webp",
+      "key": "lexicon/secret/s1-6-oil-light.webp",
+      "sense": 1,
+      "emotion": "Euphoric",
+      "line": "Ne, ne... one more secret before the lights come up...",
+      "t": 121.44,
+      "crop": "safe",
+      "why": "Literal sung word: a luminous golden vortex in a dark sky hiding a light at its core — a secret that has not opened yet, sitting right where the bridge strips down to strings.",
+      "vision": {
+        "caption": "A luminous golden vortex swirls through a dark sky, revealing a hidden light at its core.",
+        "subjects": [
+          "vortex",
+          "light",
+          "sky"
+        ],
+        "mood": [
+          "mysterious",
+          "awe-inspiring",
+          "intriguing"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6B325",
+          "#8C4F1A",
+          "#3E2723"
+        ],
+        "style": "digital painting with textured brushstrokes",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "door",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s3-4-dark-surreal.webp",
+      "key": "lexicon/door/s3-4-dark-surreal.webp",
+      "sense": 3,
+      "emotion": "Intense",
+      "line": "The doors swung open, lights hit and we felt it.",
+      "t": 125.04,
+      "crop": "letterbox",
+      "why": "A single door ajar in pitch darkness spilling warm amber light is the bridge's key image done exactly as sung, and the pitch-black surround is free letterbox.",
+      "vision": {
+        "caption": "A solitary door stands ajar in pitch darkness, spilling warm amber light onto an empty floor.",
+        "subjects": [
+          "door",
+          "light"
+        ],
+        "mood": [
+          "hopeful",
+          "mysterious",
+          "inviting"
+        ],
+        "palette": [
+          "#ff9900",
+          "#331a00",
+          "#5d2c00",
+          "#8b4513"
+        ],
+        "style": "minimalist surrealism",
+        "quality": 0.9,
+        "wordMatch": 0.9,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s17-4-oil-light.webp",
+      "key": "lexicon/lights/s17-4-oil-light.webp",
+      "sense": 17,
+      "emotion": "Defiant Celebration",
+      "line": "The doors swung open, lights hit and we felt it.",
+      "t": 126.66,
+      "crop": "safe",
+      "why": "A radiant burst of golden light exploding outward across a dark canvas is 'lights hit' as an event rather than a place — the impact frame of the whole bridge.",
+      "vision": {
+        "caption": "A radiant burst of golden light explodes outward, scattering glowing orbs like captured sunbeams across a dark canvas.",
+        "subjects": [
+          "light rays",
+          "glowing orbs"
+        ],
+        "mood": [
+          "awe",
+          "warmth",
+          "energy"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6B800",
+          "#F5A623",
+          "#D4AF37"
+        ],
+        "style": "Impressionistic abstract with bokeh effect",
+        "quality": 0.9,
+        "wordMatch": 0.9,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "night",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s27-6-anime.webp",
+      "key": "lexicon/night/s27-6-anime.webp",
+      "sense": 27,
+      "emotion": "Mysterious and Reflective",
+      "line": "But I didn't walk in alone, ne?",
+      "t": 131.25,
+      "crop": "letterbox",
+      "why": "A rain-slicked lantern alley between towering old buildings reads as Dotonbori back-street; warm lanterns down both sides say she walked in with company without showing a soul.",
+      "vision": {
+        "caption": "A rain-slicked alleyway at night glows with warm lantern light reflecting off wet cobblestones beneath towering, ancient buildings.",
+        "subjects": [
+          "lanterns",
+          "cobblestone street",
+          "ancient buildings",
+          "raindrops"
+        ],
+        "mood": [
+          "serene",
+          "mysterious",
+          "warm",
+          "nostalgic"
+        ],
+        "palette": [
+          "#FFA07A",
+          "#8B4513",
+          "#2F4F4F",
+          "#DAA520"
+        ],
+        "style": "Digital painting with atmospheric perspective and soft lighting",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "home",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s2-4-anime.webp",
+      "key": "lexicon/home/s2-4-anime.webp",
+      "sense": 2,
+      "emotion": "Flirtatious Confidence",
+      "line": "(giggle) ...the house was already warm when I got here~",
+      "t": 133.3,
+      "crop": "letterbox",
+      "why": "The word is literally 'home' and the sense emotion is 'Flirtatious Confidence': a labyrinth of weathered wooden buildings bathed in warm lantern light is 'the house was already warm', and it cuts as a continuation of the previous alley.",
+      "vision": {
+        "caption": "A labyrinthine steampunk alleyway bathed in warm lantern light, where weathered wooden buildings cling together like ancient bones.",
+        "subjects": [
+          "wooden buildings",
+          "lanterns",
+          "crumbling structures",
+          "overgrown vines"
+        ],
+        "mood": [
+          "nostalgic",
+          "forlorn",
+          "resilient",
+          "warm"
+        ],
+        "palette": [
+          "#8B4513",
+          "#A0522D",
+          "#E6C9A7",
+          "#D2B48C"
+        ],
+        "style": "Steampunk meets traditional Chinese architecture with painterly textures",
+        "quality": 0.95,
+        "wordMatch": 0.85,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "gold",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-5-anime.webp",
+      "key": "lexicon/gold/s17-5-anime.webp",
+      "sense": 17,
+      "emotion": "Wealth & Confidence",
+      "line": "Hajimemashite, ne?",
+      "t": 139.35,
+      "crop": "safe",
+      "why": "Molten gold spilling from a fractured glass cup, sense 'Wealth & Confidence' — the biggest, most expensive-looking gold in the library, saved for the first line of the final chorus.",
+      "vision": {
+        "caption": "A molten golden liquid spills from a fractured glass cup, glowing with inner light against a backdrop of shattered reflections.",
+        "subjects": [
+          "glass cup",
+          "golden liquid",
+          "shattered glass fragments"
+        ],
+        "mood": [
+          "contemplative",
+          "hopeful",
+          "transformative"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6C200",
+          "#B89500",
+          "#F0E68C"
+        ],
+        "style": "Hyperrealistic digital art with liquid light effects",
+        "quality": 0.9,
+        "wordMatch": 0.95,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "bass",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s7-2-cinema.webp",
+      "key": "lexicon/bass/s7-2-cinema.webp",
+      "sense": 7,
+      "emotion": "Euphoric",
+      "line": "Remember the face, remember the sound!",
+      "t": 143.45,
+      "crop": "letterbox",
+      "why": "'Remember the sound' cannot be a face, so it becomes one: a bass guitar neck glowing under stage light with the strings still vibrating, wordMatch 0.95, warm brown-gold and no green in the palette.",
+      "vision": {
+        "caption": "A weathered bass guitar's neck glows under stage lights, strings vibrating with unseen music.",
+        "subjects": [
+          "bass guitar",
+          "strings",
+          "fretboard"
+        ],
+        "mood": [
+          "raw",
+          "intense",
+          "nostalgic"
+        ],
+        "palette": [
+          "#3a2a1e",
+          "#5d4c3a",
+          "#8a7a6a",
+          "#b09a8a"
+        ],
+        "style": "cinematic close-up with bokeh lighting",
+        "quality": 0.9,
+        "wordMatch": 0.95,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "lights",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-3-cinema.webp",
+      "key": "lexicon/lights/s22-3-cinema.webp",
+      "sense": 22,
+      "emotion": "Feel-good, motivational, hopeful",
+      "line": "Hajimemashite, ne? (su-ki su-ki~)",
+      "t": 144.1,
+      "crop": "safe",
+      "why": "A sea of warm golden orbs over a reflective surface — quality 0.95 — is the 'su-ki su-ki' sugar moment: soft, adoring, and abstract enough to sit under big type.",
+      "vision": {
+        "caption": "A sea of warm golden orbs floats above a reflective surface, glowing softly in the dark.",
+        "subjects": [
+          "light orbs",
+          "reflective surface"
+        ],
+        "mood": [
+          "serene",
+          "dreamy",
+          "warm"
+        ],
+        "palette": [
+          "#FFD700",
+          "#E6C25A",
+          "#B8943F",
+          "#8C713D"
+        ],
+        "style": "Bokeh photography, abstract realism",
+        "quality": 0.95,
+        "wordMatch": 0.9,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "night",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s2-1-cinema.webp",
+      "key": "lexicon/night/s2-1-cinema.webp",
+      "sense": 2,
+      "emotion": "Defiant",
+      "line": "Kizuna Sato —",
+      "t": 146.25,
+      "crop": "letterbox",
+      "why": "A rain-slicked Tokyo street at midnight with gold in the palette (#d4af37), sense emotion 'Defiant' — the city itself under her name, wide and environmental, the antidote to the selfie problem.",
+      "vision": {
+        "caption": "A rain-slicked Tokyo street at midnight glows with blurred neon lights reflecting on wet asphalt, capturing the city's silent sorrow.",
+        "subjects": [
+          "wet asphalt",
+          "street lamps",
+          "blurred buildings"
+        ],
+        "mood": [
+          "melancholy",
+          "lonely",
+          "bittersweet"
+        ],
+        "palette": [
+          "#3a2c1e",
+          "#d4af37",
+          "#5d4037",
+          "#8d6e63"
+        ],
+        "style": "Moody cinematic realism with shallow depth of field",
+        "quality": 0.9,
+        "wordMatch": 0.85,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "chains",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-5-analog.webp",
+      "key": "lexicon/chains/s0-5-analog.webp",
+      "sense": 0,
+      "emotion": "melancholic and introspective",
+      "line": "LevelReady 'til the wheels fall off, aishiteru~",
+      "t": 147.55,
+      "crop": "safe",
+      "why": "Gold chains hanging in a dim room, links catching light 'like liquid amber' — this is the LevelReady chain from the chorus, shot as jewellery instead of as a necklace on a neck.",
+      "vision": {
+        "caption": "Golden chains hang suspended in a dimly lit room, their links catching light like liquid amber.",
+        "subjects": [
+          "gold chain",
+          "links"
+        ],
+        "mood": [
+          "oppressive",
+          "elegant",
+          "foreboding"
+        ],
+        "palette": [
+          "#D4AF37",
+          "#B8A09E",
+          "#5C4A42"
+        ],
+        "style": "photorealistic with shallow depth of field",
+        "quality": 0.9,
+        "wordMatch": 0.9,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "flame",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s3-6-oil-light.webp",
+      "key": "lexicon/flame/s3-6-oil-light.webp",
+      "sense": 3,
+      "emotion": "Aching Defiant Hope",
+      "line": "(BELTED) And now... you know... my naaaame~",
+      "t": 150.98,
+      "crop": "safe",
+      "why": "Quality 0.95 / wordMatch 0.98: a searing diagonal blaze of molten gold consuming the whole frame — the only image in the shortlist big enough to sit under the belt.",
+      "vision": {
+        "caption": "A searing diagonal blaze of molten gold and amber fire consumes the frame with intense, swirling heat.",
+        "subjects": [
+          "fire",
+          "flames"
+        ],
+        "mood": [
+          "intense",
+          "dangerous",
+          "passionate"
+        ],
+        "palette": [
+          "#FFD700",
+          "#FFA500",
+          "#E68A00",
+          "#B24700"
+        ],
+        "style": "Digital painting with fluid, dynamic brushstrokes",
+        "quality": 0.95,
+        "wordMatch": 0.98,
+        "textInImage": ""
+      }
+    },
+    {
+      "word": "breath",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s5-1-oil-light.webp",
+      "key": "lexicon/breath/s5-1-oil-light.webp",
+      "sense": 5,
+      "emotion": "Hopeful",
+      "line": "(BELTED) And now... you know... my naaaame~",
+      "t": 153.1,
+      "crop": "safe",
+      "why": "A tunnel of molten gold leading toward a radiant sun, reflecting on wet tracks — the exit frame: the held note resolving into pure gold light as the window ends.",
+      "vision": {
+        "caption": "A tunnel of molten gold leads toward a radiant sun, reflecting on wet tracks like liquid light.",
+        "subjects": [
+          "tunnel",
+          "tracks",
+          "sunlight"
+        ],
+        "mood": [
+          "hopeful",
+          "transcendent",
+          "awe-inspiring"
+        ],
+        "palette": [
+          "#FFD700",
+          "#B8860B",
+          "#A97C00",
+          "#4B3621"
+        ],
+        "style": "Impressionistic digital painting with textured brushstrokes",
+        "quality": 0.9,
+        "wordMatch": 0.8,
+        "textInImage": ""
+      }
+    }
+  ]
+}

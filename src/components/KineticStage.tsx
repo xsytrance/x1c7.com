@@ -263,12 +263,30 @@ const ART_MOVES: Array<{ s0: number; s1: number; x0: number; x1: number; y0: num
   { s0: 1.24, s1: 1.13, x0: 0.0, x1: 0.0, y0: -2.6, y1: 2.4 },   // crane down, releasing
   { s0: 1.13, s1: 1.13, x0: -3.0, x1: 3.0, y0: 1.2, y1: -1.2 },  // counter-track
 ];
+// ── WIDE-SAFE MOVES ────────────────────────────────────────────────────────
+// Every ART_MOVES preset sits at scale 1.10–1.29. On a 9:16 cut that zoom
+// MULTIPLIES with object-cover's crop: a landscape plate already loses 58% of
+// its width covering a portrait frame, and a 1.29 push takes the visible slice
+// down to ~32%. Two thirds of the picture never reached the screen, which is
+// most of why hajimemashite v2 read as "a powerpoint of kizuna selfies".
+// These moves rest at or below 1.02 so a WIDE establishing shot stays wide —
+// they drift and pull out rather than push in. See playbook §17.
+const WIDE_MOVES: typeof ART_MOVES = [
+  { s0: 1.02, s1: 1.00, x0: -1.2, x1: 0.8, y0: 0.4, y1: -0.6 },  // settle out
+  { s0: 1.00, s1: 1.02, x0: 1.0, x1: -1.0, y0: 0.0, y1: 0.0 },   // slow lateral drift
+  { s0: 1.04, s1: 1.00, x0: 0.0, x1: 0.0, y0: 1.4, y1: -0.4 },   // ease down into the frame
+  { s0: 1.00, s1: 1.00, x0: -1.6, x1: 1.6, y0: 0.0, y1: 0.0 },   // pure track, no zoom
+];
+export type ShotSize = "WIDE" | "MED" | "CLOSE" | "MACRO";
 // Hash the URL so a scene's move is stable across re-renders (a re-roll
 // mid-shot would visibly snap the frame) while still varying image to image.
-function artMoveFor(url: string) {
+// The move set is chosen by SHOT SIZE, not by the hash: content decides whether
+// the camera may push in at all, the hash only decides which move within that set.
+function artMoveFor(url: string, shot?: ShotSize) {
   let h = 2166136261;
   for (let i = 0; i < url.length; i++) { h = Math.imul(h ^ url.charCodeAt(i), 16777619); }
-  return ART_MOVES[Math.abs(h) % ART_MOVES.length];
+  const set = shot === "WIDE" || shot === "MED" ? WIDE_MOVES : ART_MOVES;
+  return set[Math.abs(h) % set.length];
 }
 
 export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pass = 3, mode = "phrase", forceParticle, clock, effects, deck, boost, forceBackdrop = false }: {
@@ -525,6 +543,41 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     }
     return planetUrl(url);
   }, [altArt]);
+  // ── SHOT-SIZE GRAMMAR ────────────────────────────────────────────────────
+  // assets.shots tags each plate WIDE | MED | CLOSE | MACRO, keyed by URL (not
+  // by word — twins, gallery variants and B-roll each carry their own size).
+  // Drives two things: which camera move a scene may have (artMoveFor) and,
+  // via chooseArt, a refusal to play two same-size shots back to back. Shot
+  // variety is the difference between an edit and a slideshow; leaving it to
+  // the art direction alone is what produced v2. See playbook §17.
+  // The size actually on stage, and a ref-held shotOf so helpers declared
+  // ABOVE this point (pooledArt) can consult it without a TDZ hazard.
+  const lastShotRef = useRef<ShotSize | undefined>(undefined);
+  const shotOfRef = useRef<((u: string | null) => ShotSize | undefined) | null>(null);
+  const shotMap = track.planet?.assets?.shots as Record<string, ShotSize> | undefined;
+  const shotOf = useCallback((url: string | null): ShotSize | undefined => {
+    if (!url || !shotMap) return undefined;
+    // bgArt is the RESOLVED url (PLANET_BASE + "/planets/…"); the map is keyed
+    // however the planet author wrote it, so try both directions.
+    return shotMap[url]
+      ?? (url.startsWith(PLANET_BASE) ? shotMap[url.slice(PLANET_BASE.length)] : undefined)
+      ?? shotMap[planetUrl(url)];
+  }, [shotMap]);
+  shotOfRef.current = shotOf;
+  // ── THE TWO-ROLL CONDUCTOR ───────────────────────────────────────────────
+  // dynamicPlus.rolls promotes the Lexsycon reel from a fixed 0.24 ghost to a
+  // real second voice for authored windows. Held in a ref and read at word
+  // change (not per frame) — a roll boundary is a musical boundary.
+  const rollsRef = useRef(track.planet?.dynamicPlus?.rolls);
+  rollsRef.current = track.planet?.dynamicPlus?.rolls;
+  const rollAt = useCallback((t: number) => {
+    const rs = rollsRef.current;
+    if (!rs?.length) return null;
+    // last-wins, so a later window may override an overlapping earlier one
+    let hit = null;
+    for (const r of rs) if (t >= r.start && t < r.end) hit = r;
+    return hit;
+  }, []);
   // Backdrop swaps are decode-gated and throttled: the crossfade only starts
   // once the new photo is fully decoded (no half-loaded pop-in), swaps can't
   // stack inside one crossfade (the flicker the owner saw), and a missing
@@ -581,7 +634,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const img = new Image();
     img.src = url;
     img.decode().then(
-      () => { if (swapCtl.current.token === token) setBgArt(url); },
+      () => {
+        if (swapCtl.current.token !== token) return;
+        // Record the size that actually REACHED the stage. Recording at pick
+        // time would drift: the throttle above silently drops selections inside
+        // a crossfade window, so lastShot would describe a frame nobody saw and
+        // the no-repeat rule would start rejecting the wrong things.
+        lastShotRef.current = shotOfRef.current?.(url) ?? lastShotRef.current;
+        setBgArt(url);
+      },
       () => {
         badArt.current.add(url);
         if (swapCtl.current.token !== token) return;
@@ -653,6 +714,21 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const pool = base ? [base, ...extra] : extra;
     const n = galleryTurn.current.get(w) ?? 0;
     galleryTurn.current.set(w, n + 1);
+    // SHOT GRAMMAR: never play two same-size shots back to back. Walk the pool
+    // from the natural round-robin position and take the first plate whose shot
+    // size differs from the one on stage. If the whole pool is one size (or the
+    // planet has no assets.shots at all) fall through to the natural pick —
+    // starving the stage is worse than a repeat, because requestArt simply
+    // never fires and the frame FREEZES rather than holding deliberately.
+    const last = lastShotRef.current;
+    const shot = shotOfRef.current;
+    if (last && shot) {
+      for (let k = 0; k < pool.length; k++) {
+        const cand = pool[(n + k) % pool.length];
+        const s = shot(cand);
+        if (s && s !== last) return cand;
+      }
+    }
     return pool[n % pool.length];
   }, []);
   // The weather layer — song-matched particles between backdrop and words.
@@ -1040,7 +1116,25 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Reel ghosts: word → matched painting (featured only), + the one on stage.
   const reelMap = useRef<Map<string, ReelEntry> | null>(null);
   const reelClear = useRef<number | null>(null);
-  const [reelGhost, setReelGhost] = useState<{ img: string; on: boolean } | null>(null);
+  // ── ONE-SHOTS (bespoke authored moments) ─────────────────────────────────
+  // "Egi on the throne and xsytrance in the bloodline / Same man, three names
+  // — I only need the one, shine". Three names hard-CUT (no crossfade: the cut
+  // is the point), then collapse onto each other leaving the one that survived.
+  const oneShots = track.planet?.dynamicPlus?.oneShots;
+  const [soloShot, setSoloShot] = useState<{ id: string; card: number; collapsed: boolean } | null>(null);
+  const soloKey = useRef<string>("");
+  // LIGHT HIT — a one-shot white bloom on an authored beat. Counter-bumped so
+  // a re-render cannot re-fire it; `firedHit` guards the crossing.
+  const hits = track.planet?.dynamicPlus?.hits;
+  const holds = track.planet?.dynamicPlus?.holds;
+  const [hitFlash, setHitFlash] = useState(0);
+  const firedHit = useRef<number>(-1);
+  // HOLD — while true the art block stops swapping and the frame breathes.
+  const holdRef = useRef(false);
+  const activeOneShot = soloShot ? oneShots?.find((o) => o.id === soloShot.id) ?? null : null;
+  // While a solo one-shot owns the stage, the normal word layer stands down.
+  const soloOwnsStage = !!(soloShot && activeOneShot?.solo);
+  const [reelGhost, setReelGhost] = useState<{ img: string; on: boolean; mix: number; blend: string; band: boolean } | null>(null);
   useEffect(() => {
     if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("reel") === "1")
       P.set("reel.enabled", true, "code");
@@ -1161,6 +1255,29 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     let raf = 0;
     const tick = () => {
       const t = getCurrentTime();
+      // ONE-SHOT resolver. Runs per frame but only ever calls setState when the
+      // rendered key actually changes, so a 60fps tick costs no reconciles.
+      {
+        const os = oneShots?.find((o) => t >= o.start && t < o.end) ?? null;
+        let next: { id: string; card: number; collapsed: boolean } | null = null;
+        if (os) {
+          let card = -1;
+          for (let k = 0; k < os.cards.length; k++) if (t >= os.cards[k].at) card = k;
+          next = { id: os.id, card, collapsed: t >= os.collapseAt };
+        }
+        const key = next ? `${next.id}:${next.card}:${next.collapsed}` : "";
+        if (key !== soloKey.current) { soloKey.current = key; setSoloShot(next); }
+      }
+      // LIGHT HIT / HOLD resolvers — both cheap, both per frame, neither sets
+      // state unless something actually changed.
+      if (hits?.length) {
+        for (let k = 0; k < hits.length; k++) {
+          if (k > firedHit.current && t >= hits[k].t && t - hits[k].t < 0.5) {
+            firedHit.current = k; setHitFlash((n) => n + 1); break;
+          }
+        }
+      }
+      holdRef.current = !!holds?.some((h) => t >= h.start && t < h.end);
       let i = activeWordIndex(words, t);
       // Dwell cap: during a long instrumental pause the last sung word (which
       // now owns the whole gap after re-anchoring) bows out instead of
@@ -1177,7 +1294,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           const key = clean(words[i].w).toLowerCase();
           const hit = reelMap.current.get(key);
           if (hit) {
-            setReelGhost({ img: hit.img, on: true });
+            {
+              // The roll window decides whether this is the historic faint
+              // ghost or a real second voice. `band` shows the plate as a
+              // 1080x780 letterbox strip — the lexicon's own 1.3846 aspect —
+              // so a composed painting is never centre-cropped (playbook §17).
+              const roll = rollAt(t);
+              setReelGhost({
+                img: hit.img,
+                on: true,
+                mix: roll?.mix ?? 0.24,
+                blend: roll?.blend ?? "screen",
+                band: roll?.pattern === "band",
+              });
+            }
             if (reelClear.current != null) window.clearTimeout(reelClear.current);
             reelClear.current = window.setTimeout(() => setReelGhost((g) => (g ? { ...g, on: false } : g)), 2800);
           }
@@ -1240,7 +1370,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // Planet-specific art wins; the SHARED library covers cross-song words
         // — but only at emphasis moments (charged or line-final), so common
         // words don't churn the backdrop mid-line.
-        if (i >= 0) {
+        if (i >= 0 && !holdRef.current) {
           const w = clean(words[i].w).toLowerCase();
           const own = pooledArt(w, art?.[w] ?? null);
           const isFinal = words[i + 1] ? phraseStartIdx.has(i + 1) : true;
@@ -1512,7 +1642,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns, rollAt, oneShots, hits, holds]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   // Display keeps terminal ! and ? — the lookup key never does, so "NO!!!"
@@ -1607,7 +1737,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // stock 24s creep.
   const motionShot = useMemo(() => {
     if (!motionCfg || !bgArt || lite) return null;
-    const m = artMoveFor(bgArt);
+    const m = artMoveFor(bgArt, shotOf(bgArt));
     const amp = Math.max(0, Math.min(2, motionCfg.amp ?? 1));
     return {
       s0: 1 + (m.s0 - 1) * amp, s1: 1 + (m.s1 - 1) * amp,
@@ -1615,7 +1745,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       y0: m.y0 * amp, y1: m.y1 * amp,
       dur: Math.max(0.4, motionCfg.dur ?? 2.2),
     };
-  }, [motionCfg, bgArt, lite]);
+  }, [motionCfg, bgArt, lite, shotOf]);
   // Small out-of-the-way preview of what's coming — the owner likes it.
   // (The BIG word appearing early was the mis-anchor bug, fixed above.)
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -1779,8 +1909,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           src={reelGhost.img}
           alt=""
           aria-hidden
-          className="pointer-events-none fixed inset-0 -z-[5] h-full w-full object-cover"
-          style={{ opacity: reelGhost.on ? 0.24 : 0, transition: "opacity 900ms ease", mixBlendMode: "screen" }}
+          className={`pointer-events-none fixed -z-[5] w-full object-cover${reelGhost.band ? "" : " inset-0 h-full"}`}
+          style={reelGhost.band
+            // Letterbox band: 780/1920 of the frame height, centred. 1080x780
+            // is 1.3846 — the lexicon's native 1152x832 aspect to four decimal
+            // places — so object-cover crops nothing at all.
+            ? { left: 0, right: 0, top: "50%", height: "40.625%", transform: "translateY(-50%)",
+                opacity: reelGhost.on ? reelGhost.mix : 0, transition: "opacity 900ms ease",
+                mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }
+            : { opacity: reelGhost.on ? reelGhost.mix : 0, transition: "opacity 900ms ease",
+                mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }}
         />
       )}
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words.
@@ -1943,6 +2081,55 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         )}
       </AnimatePresence>
 
+      {/* THE THREE NAMES — Egi / xsytrance / AGENOR. Same man, three names.
+          Each card HARD CUTS in (keyed remount, no AnimatePresence crossfade —
+          a fade would soften exactly the thing the lyric is doing), then at
+          collapseAt all three slide onto each other and the one he kept is the
+          one left standing. */}
+      {soloShot && activeOneShot && (
+        <div className="pointer-events-none fixed inset-0 z-[38] flex items-center justify-center" aria-hidden>
+          {soloShot.collapsed ? (
+            <div className="relative flex items-center justify-center">
+              {activeOneShot.cards.map((c, k) => (
+                <m.span
+                  key={`c${k}`}
+                  className="absolute whitespace-nowrap font-display font-black uppercase tracking-tight"
+                  style={{ color: "var(--theme-accent)", fontSize: "clamp(2rem, 11vw, 7rem)" }}
+                  initial={{ x: (k - 1) * 120, y: (k - 1) * 90, opacity: 1, scale: 1 }}
+                  animate={{ x: 0, y: 0, opacity: c.text === activeOneShot.collapseTo ? 1 : 0, scale: 1 }}
+                  transition={{ duration: activeOneShot.collapseDur ?? 0.6, ease: "easeInOut" }}
+                >
+                  {c.text}
+                </m.span>
+              ))}
+            </div>
+          ) : soloShot.card >= 0 ? (
+            <span
+              key={`n${soloShot.card}`}
+              className="whitespace-nowrap font-display font-black uppercase tracking-tight"
+              style={{ color: "var(--theme-accent)", fontSize: "clamp(2rem, 11vw, 7rem)" }}
+            >
+              {activeOneShot.cards[soloShot.card].text}
+            </span>
+          ) : null}
+        </div>
+      )}
+      {/* LIGHT HIT — "the doors swung open, LIGHTS HIT and we felt it".
+          Sits at z-[41], above the beat-cut blackout (z-[4]) it deliberately
+          fires inside: senses.json has a drum cut across this moment, so the
+          flash lands in an already-dark room. */}
+      <AnimatePresence>
+        {hitFlash > 0 && (
+          <m.div
+            key={`hit${hitFlash}`}
+            className="pointer-events-none fixed inset-0 z-[41]"
+            style={{ background: "radial-gradient(circle at 50% 42%, #fff 0%, rgba(255,255,255,0.85) 22%, transparent 68%)" }}
+            initial={{ opacity: 0, scale: 0.35 }}
+            animate={{ opacity: [0, 1, 0], scale: [0.35, 1.9, 2.4] }}
+            transition={{ duration: hits?.[firedHit.current]?.dur ?? 1.35, ease: "easeOut" }}
+          />
+        )}
+      </AnimatePresence>
       {/* SUPERNOVA — the riser detonates exactly on the drop */}
       <AnimatePresence>
         {nova > 0 && (
@@ -2041,6 +2228,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               spawnRing (CSS keyframes, self-removing on animationend) so a
               ring never costs a React reconcile. */}
           <div ref={ringLayer} className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden />
+          {/* A solo one-shot owns the stage: the words layer fades out so THE
+              THREE NAMES is not competing with the very lyric line it is
+              dramatising. Opacity rather than unmounting — the phrase-mode
+              AnimatePresence keeps its state and the line is still there,
+              intact, when the one-shot releases it. */}
+          <div style={{ opacity: soloOwnsStage ? 0 : 1, transition: "opacity 260ms ease" }}>
           {phrase ? (
             /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
             <AnimatePresence mode="wait">
@@ -2260,6 +2453,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           </AnimatePresence>
           </>
           )}
+          </div>
         </div>
         {upcoming && <p className="kinetic-hint">{upcoming}</p>}
       </div>

@@ -31,6 +31,20 @@ export interface PlanetAssets {
   /** base image URL -> its twin variant (-2.webp): the art-doubling pass.
    * The engine alternates twins each time an image returns to stage. */
   alt?: Record<string, string>;
+  /** image URL -> shot size. Keyed by URL, not by word, because twins, gallery
+   * variants and B-roll plates each frame differently. Drives the camera (a
+   * WIDE plate may not be pushed into) and the no-two-same-sizes-in-a-row rule.
+   * Without it the stage falls back to its old behaviour. See playbook §17. */
+  shots?: Record<string, "WIDE" | "MED" | "CLOSE" | "MACRO">;
+  /** B-roll pool — Lexsycon paintings matched to this song, walked round-robin
+   * by the two-roll conductor as the second visual voice.
+   * `crop` matters: every lexicon plate is 1152×832 LANDSCAPE, so
+   * object-cover into 1080×1920 throws away 59% of its width.
+   *   "safe"      — full-field texture/abstract, survives a hard centre crop.
+   *   "letterbox" — a composed scene; show it as a 1080×780 band (that is
+   *                 1.3846, the lexicon's exact native aspect — zero crop),
+   *                 never full-bleed. See playbook §17. */
+  broll?: Array<{ url: string; shot?: "WIDE" | "MED" | "CLOSE" | "MACRO"; crop?: "safe" | "letterbox" }>;
   /** URL (object URL in-browser) of the measured stems.json — the stem senses. */
   stems?: string;
   /** Per-stem audio URLs (web-transcoded Suno stems) — the live stem mixer.
@@ -118,6 +132,48 @@ export interface PlanetDynamicPlus {
   /** pin the backdrop to a named scene for this song's show (e.g. "SYRUP") —
    * a directed world instead of the AUTO hash pick. Unknown names no-op. */
   scene?: string;
+  /** THE TWO-ROLL CONDUCTOR — timed windows where the Lexsycon B-roll stops
+   * being a faint ghost and becomes a second visual voice. Without this the
+   * reel draws at a fixed 0.24 screen-blend, which over a dark plate is barely
+   * visible; a cut made of one person's photographs reads as a slideshow.
+   *   bleed     — B sits under A as texture at `mix` opacity.
+   *   alternate — B takes the frame outright every `period` art changes.
+   *   band      — B shows as a 1080×780 letterbox strip (its native aspect,
+   *               so nothing is cropped) with A filling the rest of the frame.
+   * Outside every window the historic ghost behaviour stands. */
+  /** One-frame light events. "The doors swung open, LIGHTS HIT and we felt it"
+   * should actually hit — a white bloom on the beat rather than another
+   * crossfade. Fires once when the playhead crosses `t`. */
+  hits?: Array<{ t: number; color?: string; dur?: number; peak?: number }>;
+  /** Windows where the cutting STOPS and one frame is allowed to breathe.
+   * The closing belt is the payoff of the whole cut; churning art through it
+   * throws the landing away. */
+  holds?: Array<{ start: number; end: number; art?: string }>;
+  /** Bespoke authored moments that take the whole stage for a few seconds.
+   * `nameCards` hard-cuts a series of words (no crossfade — the cut IS the
+   * point), then collapses them onto each other into a single surviving name. */
+  oneShots?: Array<{
+    id: string;
+    kind: "nameCards";
+    start: number; end: number;
+    /** suppress the normal word layer and art swaps while this runs */
+    solo?: boolean;
+    cards: Array<{ text: string; at: number; art?: string }>;
+    /** when the three become one, and what is left standing */
+    collapseAt: number;
+    collapseTo: string;
+    collapseDur?: number;
+  }>;
+  rolls?: Array<{
+    start: number; end: number;
+    pattern: "bleed" | "alternate" | "band";
+    /** B-plane opacity when it is showing. Default 0.24 (the old ghost). */
+    mix?: number;
+    /** `alternate` only: B takes every Nth art change. Default 3. */
+    period?: number;
+    /** CSS mix-blend-mode for the B plane. Default "screen". */
+    blend?: string;
+  }>;
   /** director's-deck intensity knobs applied whenever this song plays at
    * pass 6 (mirrors KineticStage's deck prop): density = particle population
    * multiplier, glow = extra word bloom 0..1, grain/vignette = overlays 0..1. */

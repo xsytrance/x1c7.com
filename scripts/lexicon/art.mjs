@@ -203,6 +203,11 @@ const RECIPES = [
   // ── Juggernaut — cinematic photoreal
   { id: "film-still", engine: "sdxl", moods: ["any"], sdxl: { ckpt: CKPT_JUGG, loras: [[LIGHTNING8, 1]], ...LIT8 },
     dress: (p) => `${p}, cinematic film still, anamorphic lens, dramatic rim lighting, photorealistic, color graded, no text` },
+  // ── OSAKA GOLD — Kizuna Sato's house look, lifted from her own artwork:
+  // Dotonbori at night, wet neon, and molten LevelReady gold as the one warm
+  // accent against the purple. Photoreal, not illustrated. "Forged above gold."
+  { id: "osaka-gold", engine: "sdxl", moods: ["dark", "bright"], sdxl: { ckpt: CKPT_JUGG, loras: [[LIGHTNING8, 1]], ...LIT8 },
+    dress: (p) => `${p}, night in Dotonbori Osaka, dense stacked neon signage and paper lanterns bathing the scene, rain-wet asphalt throwing long reflections, deep violet and indigo shadows with molten gold as the only warm accent, gold leaf highlights, cinematic anamorphic photograph, shallow depth of field, film grain, no text, no letters, no signage lettering` },
   { id: "analog", engine: "sdxl", moods: ["warm", "sad"], sdxl: { ckpt: CKPT_JUGG, loras: [[LIGHTNING8, 1], ["analog_redmond_v2.safetensors", 0.9]], ...LIT8 },
     dress: (p) => `${p}, AnalogRedmAF, analog film photograph, faded kodak colors, light leak, grain, nostalgic, no text` },
   // ── DreamShaper Turbo — the illustration stable (carries most style LoRAs)
