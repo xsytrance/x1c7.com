@@ -781,3 +781,81 @@ body.perf-lite .stage-trip { animation: none; }
 }
 body.perf-lite .wall-tile img { transition: none; }
 body.perf-lite .wall-tile:hover img { transform: none; }
+
+/* ── the tile's mini show (P1 motion layer) ──────────────────────────────────
+   The song's own planet art drifting under its own palette. Everything here is
+   CSS so ~6 simultaneous mini shows cost no main-thread JS. */
+
+@keyframes wall-motion-drift {
+  from { transform: scale(1.04) translate3d(0, 0, 0); }
+  to   { transform: scale(1.16) translate3d(-2.5%, -2%, 0); }
+}
+.wall-motion__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.1s ease;
+  animation: wall-motion-drift 13s ease-in-out infinite alternate;
+  /* PAUSED, not unset: every frame in a tile is stacked, and letting all of
+     them drift would tick 4 layers per tile when only one is visible. Pausing
+     (rather than dropping the animation) also means the OUTGOING frame freezes
+     where it was and fades out smoothly instead of snapping back to scale 1. */
+  animation-play-state: paused;
+}
+.wall-motion__frame.is-on {
+  opacity: 1;
+  animation-play-state: running;
+  will-change: transform;
+}
+
+/* the lyric word the painting was generated for, igniting as it lands */
+@keyframes wall-motion-word {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.82); filter: blur(6px); }
+  18%  { opacity: 1; transform: translate(-50%, -50%) scale(1.02); filter: blur(0); }
+  76%  { opacity: 1; transform: translate(-50%, -50%) scale(1.04); filter: blur(0); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1); filter: blur(3px); }
+}
+.wall-motion__word {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  max-width: 88%;
+  font-family: var(--font-display, inherit);
+  font-weight: 900;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  animation: wall-motion-word 2.6s ease-in-out both;
+}
+
+/* the mini show yields the moment you point at a tile — hovering is a request
+   to see THAT cover and start THAT show, not to watch it churn */
+.wall-tile:hover .wall-motion, 
+.wall-tile:focus-visible .wall-motion { opacity: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .wall-motion__frame { animation: none; transition: none; }
+  .wall-motion__word { animation: none; opacity: 0; }
+}
+
+/* Lite (phones) keeps the mini show — the drift and cross-fade are composited
+   transform/opacity, which is not what perf-lite exists to stop. What it DOES
+   stop is per-frame re-rasterization, so the word's blur is dropped here and
+   the wall scheduler hands out fewer slots. A dead wall on mobile would defeat
+   the whole redesign; most of the audience is on a phone. */
+@keyframes wall-motion-word-lite {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.86); }
+  18%  { opacity: 1; transform: translate(-50%, -50%) scale(1.02); }
+  76%  { opacity: 1; transform: translate(-50%, -50%) scale(1.04); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.1); }
+}
+body.perf-lite .wall-motion__word {
+  animation-name: wall-motion-word-lite;
+}

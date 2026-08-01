@@ -139,14 +139,53 @@ Verified in a real browser at 1600×1000 and 390×844: 61 tiles, no horizontal
 overflow, sticky bar sticks, one click on a tile opens the full Kinetic show,
 all three legacy views still render, and the view choice survives a reload.
 
-### P1 — motion + sound
+### P1 — the mini show ✅ SHIPPED 2026-08-01
 
-- `TileMotion.tsx`: crossfades 4–6 of the song's own `planet.assets.keywords`
-  images with a slow Ken-Burns drift, tinted by `planet.analysis.palette`, one
-  `analysis.keywords[].word` igniting in the engine's typography.
-- Hover wires `usePreview`; tile shows a live `envBars` waveform tick.
-- All four perf gates above.
-- Songs with no planet art (2 of 56) degrade to a palette-drift poster.
+Files: `src/components/wall/TileMotion.tsx`, `src/lib/useWallMotion.ts`,
+`motionFramesFor`/`paletteFor` in `src/lib/wall.ts`, the mini-show block in
+`globals.css`, and `WallTile` (now `memo`'d, taking stable callbacks).
+
+- `TileMotion` cross-fades up to 5 of the song's OWN `planet.assets.keywords`
+  paintings with a slow Ken-Burns drift, graded by its OWN
+  `planet.analysis.palette`, with the lyric word each painting was generated
+  FOR igniting over it. No render pipeline — 54 of 56 songs already had this
+  art in R2.
+- `useWallMotion` is the scheduler: an IntersectionObserver tracks what's on
+  screen (into a **ref**, so scrolling costs zero React renders), and a few
+  motion slots rotate through the visible tiles every 7s.
+- Hover yields the mini show (`.wall-tile:hover .wall-motion` → opacity 0) so
+  pointing at a tile brings its cover back.
+
+**Things learned building it — do not undo these:**
+
+1. **Rotate by STRIDE, not a marching cursor.** The first cut advanced a window
+   of 6 consecutive tiles through the pool; within ~3 rotations every slot had
+   marched below the fold and the visible wall was dead while six tiles danced
+   offscreen. Now it takes every (pool/slots)-th tile, so the ones breathing
+   are scattered across the screen, and the offset creeps by 1 per tick.
+2. **`rootMargin` must be 0.** A 120px margin put just-offscreen tiles in the
+   pool and the scheduler happily spent slots on them.
+3. **Do NOT gate the mini show on `detectLite()`.** It is true for *every*
+   viewport under 900px, so that gate left the wall dead on every phone — most
+   of the audience, and where the tiles are biggest. `detectLite` exists to
+   stop per-frame RE-RASTERIZATION; drift and cross-fade are composited
+   transform/opacity. Lite now means **fewer slots (3 vs 6)** plus dropping the
+   blur from the word ignite. Only `prefers-reduced-motion` stops it outright.
+4. **Frames are `animation-play-state: paused` unless active.** All frames in a
+   tile are stacked; letting them all drift ticks 4 layers per tile when one is
+   visible. Pausing (rather than removing the animation) also lets the outgoing
+   frame freeze and fade instead of snapping back to scale 1.
+5. **`WallTile` is `memo`'d and takes stable callbacks.** Inline closures per
+   tile would defeat it and re-render all ~60 tiles on every 7s rotation.
+
+Measured: exactly 6 settled motion layers on desktop and 3 on phone, sustained
+over 24s, zero page errors.
+
+### P1 remainder — still open
+
+- Tile waveform tick from `envBars` during a cue (nice-to-have, not built).
+- The 2 songs with no planet art currently just sit as static posters; a
+  palette-drift fallback would keep them consistent with the rest.
 
 ### P2 — real Kinetica loops
 

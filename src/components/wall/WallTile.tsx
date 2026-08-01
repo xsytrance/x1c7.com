@@ -9,21 +9,29 @@
 // reveal on hover. Tracks with no collector card fall back to a gradient with
 // no baked-in title, so those keep a permanent name plate.
 //
-// P0 = the still poster. The motion layer (P1) and the rendered Kinetica loop
-// (P2) mount into the same slot — see docs/WALL-REDESIGN.md.
+// When the wall's scheduler grants this tile a motion slot, <TileMotion> lays
+// the song's own planet art over the poster and breathes (P1). P2 will swap
+// that for a real rendered Kinetica loop where one exists.
 //
 // PERF: hover/focus styling is pure CSS (:hover, :focus-visible, and the
 // wall's :has() dim rule in globals.css). With ~60 tiles on screen, routing
 // those states through React would re-render the whole wall on every pointer
-// move. The only React state here is the cover fallback chain.
+// move. This component is memo'd and takes STABLE callbacks so the scheduler's
+// rotation only re-renders the handful of tiles whose slot actually changed.
 
-import { useState } from "react";
+import { memo, useMemo, useState } from "react";
+import { AnimatePresence, m } from "framer-motion";
 import type { Track } from "@/data/tracks";
 import { canPerform } from "@/components/KineticStage";
 import { cardUrl, classifyGenre } from "@/lib/collection";
-import { DIRECTED_CUTS } from "@/lib/wall";
+import { DIRECTED_CUTS, motionFramesFor, paletteFor } from "@/lib/wall";
+import { PLANET_BASE } from "@/lib/engineHost";
+import { TileMotion } from "./TileMotion";
 
 /* eslint-disable @next/next/no-img-element */
+
+/** below this a word is unreadable, so those tiles run art-only */
+const WORD_MIN_TILE = 150;
 
 export interface WallTileProps {
   track: Track;
@@ -32,13 +40,15 @@ export interface WallTileProps {
   gap: number;
   /** the song the preview audio is actually playing right now */
   previewing: boolean;
-  onEnter: () => void;
+  /** the scheduler has granted this tile a motion slot */
+  active: boolean;
+  onEnter: (t: Track) => void;
   onLeave: () => void;
-  onPlay: () => void;
+  onPlay: (t: Track) => void;
 }
 
-export function WallTile({
-  track, span, size, gap, previewing, onEnter, onLeave, onPlay,
+function WallTileBase({
+  track, span, size, gap, previewing, active, onEnter, onLeave, onPlay,
 }: WallTileProps) {
   const pal = classifyGenre(track.genre);
   const performs = canPerform(track);
@@ -50,15 +60,18 @@ export function WallTile({
   const titleInArt = src === card;
   const px = size * span + gap * (span - 1);
 
+  const frames = useMemo(() => motionFramesFor(track, PLANET_BASE), [track]);
+  const palette = useMemo(() => paletteFor(track), [track]);
+
   return (
     <button
       type="button"
       data-wall-tile={track.id}
-      onPointerEnter={(e) => { if (e.pointerType !== "touch") onEnter(); }}
+      onPointerEnter={(e) => { if (e.pointerType !== "touch") onEnter(track); }}
       onPointerLeave={(e) => { if (e.pointerType !== "touch") onLeave(); }}
-      onFocus={onEnter}
+      onFocus={() => onEnter(track)}
       onBlur={onLeave}
-      onClick={onPlay}
+      onClick={() => onPlay(track)}
       aria-label={`${track.title} — ${pal.label}${performs ? ", start the full show" : ", play"}`}
       className="wall-tile group relative overflow-hidden rounded-lg outline-none"
       style={{
@@ -78,6 +91,26 @@ export function WallTile({
         className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.07] group-focus-visible:scale-[1.07]"
         onError={() => setSrc((cur) => (cur === card ? (track.cover || track.art) : track.art))}
       />
+
+      {/* THE MINI SHOW — only while this tile holds a motion slot */}
+      <AnimatePresence>
+        {active && frames.length > 0 && (
+          <m.span
+            key="motion"
+            className="absolute inset-0"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.85, ease: "easeInOut" }}
+          >
+            <TileMotion
+              frames={frames}
+              palette={palette}
+              wordPx={px >= WORD_MIN_TILE ? Math.round(px * 0.13) : 0}
+            />
+          </m.span>
+        )}
+      </AnimatePresence>
 
       {/* genre light — the tile glows in its own colour when it leads */}
       <span className="wall-tile__glow pointer-events-none absolute inset-0" aria-hidden />
@@ -152,3 +185,5 @@ export function WallTile({
     </button>
   );
 }
+
+export const WallTile = memo(WallTileBase);

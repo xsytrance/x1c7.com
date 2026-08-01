@@ -12,6 +12,7 @@ import { canPerform } from "@/components/KineticStage";
 import { classifyGenre, GENRE_PALETTES, type GenreKey } from "@/lib/collection";
 import { usePreview } from "@/lib/usePreview";
 import { buildWall, columnsFor, cellSize } from "@/lib/wall";
+import { useWallMotion } from "@/lib/useWallMotion";
 import { WallTile } from "./WallTile";
 
 const GAP = 8;
@@ -71,6 +72,10 @@ export default function Wall({ tracks, onPlay, onPauseMain }: WallProps) {
   const columns = columnsFor(width);
   const size = cellSize(width, columns, GAP);
   const cells = useMemo(() => buildWall(list, columns), [list, columns]);
+
+  // The motion scheduler re-observes whenever the rendered tile set changes.
+  const signature = useMemo(() => `${columns}:${cells.map((c) => c.track.id).join(",")}`, [columns, cells]);
+  const moving = useWallMotion(gridRef, signature);
 
   const cue = useCallback((t: Track) => {
     if (cueTimer.current) window.clearTimeout(cueTimer.current);
@@ -197,9 +202,12 @@ export default function Wall({ tracks, onPlay, onPauseMain }: WallProps) {
               size={size}
               gap={GAP}
               previewing={preview.state.id === track.id}
-              onEnter={() => cue(track)}
+              active={moving.has(track.id)}
+              // stable identities — inline closures here would defeat the
+              // tile's memo and re-render all ~60 on every slot rotation
+              onEnter={cue}
               onLeave={uncue}
-              onPlay={() => play(track)}
+              onPlay={play}
             />
           ))}
         </div>

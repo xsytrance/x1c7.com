@@ -67,6 +67,43 @@ export function buildWall(tracks: Track[], columns: number): WallCell[] {
   return tracks.map((track) => ({ track, span: heroes.has(track.id) ? 2 : 1 }));
 }
 
+// ── P1: the motion layer ───────────────────────────────────────────────────
+// A tile's "mini show" is built from the song's OWN generated planet art and
+// its OWN palette — the same assets the full Kinetic show performs with. No
+// render pipeline needed; 54 of 56 songs already have this art sitting in R2.
+
+export interface MotionFrame {
+  /** absolute image URL (planet art is stored relative and needs PLANET_BASE) */
+  url: string;
+  /** the lyric word this painting was generated for — the word that ignites */
+  word: string;
+}
+
+/**
+ * Pick the frames a tile breathes through. Spread the picks across the song's
+ * art rather than taking the first N, so two tiles for neighbouring songs don't
+ * open on near-identical paintings. Deterministic: same song, same reel.
+ */
+export function motionFramesFor(track: Track, base: string, max = 5): MotionFrame[] {
+  const art = track.planet?.assets?.keywords;
+  if (!art) return [];
+  const entries = Object.entries(art).filter(([w, u]) => w && u);
+  if (!entries.length) return [];
+  const step = Math.max(1, Math.floor(entries.length / max));
+  const out: MotionFrame[] = [];
+  for (let i = 0; i < entries.length && out.length < max; i += step) {
+    const [word, url] = entries[i];
+    out.push({ word, url: url.startsWith("/planets/") ? base + url : url });
+  }
+  return out;
+}
+
+/** The song's own palette, for grading the motion layer. */
+export function paletteFor(track: Track): string[] {
+  const p = track.planet?.analysis?.palette;
+  return Array.isArray(p) && p.length ? p : [];
+}
+
 /** Column count for a container width. Tiles want to be ~150px on a phone and
  *  ~220px on a desktop, so the wall reads as a wall at every size. */
 export function columnsFor(width: number): number {
