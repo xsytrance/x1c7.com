@@ -16,6 +16,7 @@ Owner rules: never reuse a Tyler source photo; every image photoreal, none
 illustrated; ~85% not-him.
 """
 import json, urllib.request, base64, io, subprocess, os, sys, time
+from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 
 KEY = open("/home/xsyprime/.bfl_key").read().strip()
@@ -71,7 +72,10 @@ SHOTS = [
  ("dark",      177.80,"T","04","sitting alone on the floor of a dark room with his back against a bed, phone dark in his hand, barely lit, wide"),
 ]
 
-def post(payload, tries=3):
+def post(payload, tries=5):
+    # 8 concurrent tripped aimlapi's rate limiter — 14 of 23 came back 403.
+    # 403 here means "slow down", not "forbidden forever", so back off hard and
+    # retry rather than dropping the shot.
     for i in range(tries):
         try:
             req = urllib.request.Request(
@@ -80,9 +84,14 @@ def post(payload, tries=3):
                 headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json",
                          "User-Agent": UA})
             return json.loads(urllib.request.urlopen(req, timeout=420).read())
-        except Exception as e:
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429, 500, 502, 503) and i < tries - 1:
+                time.sleep(12 * (i + 1)); continue
             if i == tries - 1: raise
-            time.sleep(4 * (i + 1))
+            time.sleep(6 * (i + 1))
+        except Exception:
+            if i == tries - 1: raise
+            time.sleep(6 * (i + 1))
 
 def grab(r, dst):
     url = None
@@ -97,24 +106,35 @@ def grab(r, dst):
     except Exception: return False
 
 only = sys.argv[1] if len(sys.argv) > 1 else None
-for name, t, kind, src, scene in SHOTS:
-    if only and only != name: continue
+
+def one(shot):
+    name, t, kind, src, scene = shot
     dst = f"{OUT}/scene-{name}.png"
     if os.path.exists(dst) and os.path.getsize(dst) > 12000:
-        print(f"  {name:10s} cached", flush=True); continue
+        return f"  {name:10s} cached"
     try:
         if kind == "T":
             im = Image.open(f"assets/art/tylerhaze/{src}.webp").convert("RGB")
             b = io.BytesIO(); im.save(b, format="PNG")
             uri = "data:image/png;base64," + base64.b64encode(b.getvalue()).decode()
-            p = ("Keep this exact man — his exact face, tattoos, hair and chains. Do not change "
-                 f"his identity. Place him {scene}." + LOOK)
-            r = post({"model": "google/nano-banana-pro", "prompt": p,
+            pr = ("Keep this exact man - his exact face, tattoos, hair and chains. Do not change "
+                  f"his identity. Place him {scene}." + LOOK)
+            r = post({"model": "google/nano-banana-pro", "prompt": pr,
                       "num_images": 1, "image_url": uri})
         else:
-            r = post({"model": "bytedance/seedream-5-0-pro", "prompt": scene + "." + NOMEN + LOOK,
+            r = post({"model": "bytedance/seedream-5-0-pro",
+                      "prompt": scene + "." + NOMEN + LOOK,
                       "num_images": 1, "aspect_ratio": "9:16"})
         ok = grab(r, dst)
-        print(f"  {name:10s} {'OK ' if ok else 'FAIL'} {kind}{' src='+src if src else ''}", flush=True)
+        return f"  {name:10s} {'OK ' if ok else 'FAIL'} {kind}"
     except Exception as e:
-        print(f"  {name:10s} ERR {str(e)[:90]}", flush=True)
+        return f"  {name:10s} ERR {str(e)[:80]}"
+
+# 3, not 8: eight concurrent trips their rate limiter. Still ~10x sequential.
+# These calls are pure network wait. Sequentially 33 x ~2.5min = 80 minutes,
+# which is why this took hours when no previous cut ever did - art.py has
+# batched since the AGENOR cut and this generator failed to carry it over.
+todo = [x for x in SHOTS if not only or only == x[0]]
+with ThreadPoolExecutor(max_workers=3) as ex:
+    for line in ex.map(one, todo):
+        print(line, flush=True)
