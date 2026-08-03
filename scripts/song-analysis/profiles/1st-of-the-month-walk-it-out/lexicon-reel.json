@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-07-31T05:33:15.819Z",
+  "generatedAt": "2026-08-02T13:27:32.213Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 52.512,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Urban rebirth, transformation, and triumph align with song's themes of renewal and discipl",
+      "reason": "Urban neon symbolizes transformation and triumph over void",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 114.277,
       "score": 0.95,
       "cosine": 0.494,
-      "reason": "Urban neon aligns with borough pride and military precision; urgency matches triumphant di",
+      "reason": "Urban neon aligns with borough pride and military precision",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 15.4,
       "score": 0.95,
       "cosine": 0.466,
-      "reason": "Matches triumphant discipline, resilience, and solitary determination",
+      "reason": "Strong symbolism of resilience, grit, and renewal aligns with song's triumphant discipline",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.452,
-      "reason": "Urban neon aligns with borough pride and triumphant discipline",
+      "reason": "Urban neon aligns with borough pride and self-determination themes",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 113.92,
       "score": 0.95,
       "cosine": 0.436,
-      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and grit of the song",
+      "reason": "Relentless sprinting, neon lights, and vintage car align with triumph and discipline.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 50.457,
       "score": 0.95,
       "cosine": 0.431,
-      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes.",
+      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes",
       "recipe": "2-anime",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 52.048,
       "score": 0.95,
       "cosine": 0.422,
-      "reason": "Symbolizes transformation, focus, and value align with song's themes of turning void into ",
+      "reason": "Symbolizes transformation, focus, and value align with song's themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 98.79,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Urban resilience, neon lighting, and triumphant renewal fit the song's mood and themes.",
+      "reason": "Urban resilience, neon lighting, and triumphant renewal align with song's themes.",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 121.324,
       "score": 0.9,
       "cosine": 0.47,
-      "reason": "Symbolizes journey and hope aligns with triumph and renewal",
+      "reason": "Symbolizes journey and renewal; fits triumphant, disciplined mood.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 15.4,
       "score": 0.9,
       "cosine": 0.461,
-      "reason": "Resonates with triumph, unity, and pride fitting the song's themes",
+      "reason": "Resilience, unity, pride align with song's themes and mood",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 4.876,
       "score": 0.9,
       "cosine": 0.449,
-      "reason": "Motivational, disciplined, and triumphant imagery fits the song's themes",
+      "reason": "Motivational, disciplined, triumphant vibe aligns with song's themes",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -297,6 +297,18 @@
       "cosine": 0.44,
       "reason": "Symbolism of blood as resilience, fists as solidarity, urban grit aligns with song's theme",
       "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s6-6-poster.webp",
+      "key": "lexicon/dreams/s6-6-poster.webp",
+      "word": "dreams",
+      "line": "lose the game Side trends forever, that's family time Dreams look impossible, today you're robbed From",
+      "t": 154.935,
+      "score": 0.9,
+      "cosine": 0.434,
+      "reason": "Energetic, optimistic design aligns with triumphant discipline and reinvention themes.",
+      "recipe": "6-poster",
       "featured": true
     },
     {
@@ -343,7 +355,7 @@
       "t": 24.253,
       "score": 0.85,
       "cosine": 0.454,
-      "reason": "Symbolizes renewal and clarity aligning with triumphant discipline and resilience",
+      "reason": "Symbolizes renewal and clarity aligning with triumph and discipline",
       "recipe": "5-stickers",
       "featured": true
     },
@@ -367,20 +379,8 @@
       "t": 114.277,
       "score": 0.85,
       "cosine": 0.441,
-      "reason": "Fits triumphant energy, urgency, and futuristic vibe aligns with discipline and renewal th",
+      "reason": "Fits mood with urgency and energy, cyberpunk aligns with futuristic themes",
       "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s6-6-poster.webp",
-      "key": "lexicon/dreams/s6-6-poster.webp",
-      "word": "dreams",
-      "line": "lose the game Side trends forever, that's family time Dreams look impossible, today you're robbed From",
-      "t": 154.935,
-      "score": 0.85,
-      "cosine": 0.434,
-      "reason": "optimistic and modern design fits triumphant discipline and reinvention",
-      "recipe": "6-poster",
       "featured": true
     },
     {
@@ -391,7 +391,7 @@
       "t": 109.33,
       "score": 0.85,
       "cosine": 0.422,
-      "reason": "Urban grit, order vs chaos, resilience fit the song's themes",
+      "reason": "Urban grit, order vs chaos, resilience fit song's themes",
       "recipe": "5-neon-night",
       "featured": true
     }
@@ -408,7 +408,7 @@
     "fast": [
       2,
       7,
-      29
+      30
     ],
     "walk": [
       3,
@@ -422,7 +422,7 @@
     "move": [
       8,
       9,
-      25
+      26
     ],
     "veneno": [
       11
@@ -434,7 +434,7 @@
     ],
     "different": [
       13,
-      26
+      27
     ],
     "night": [
       14
@@ -445,20 +445,20 @@
     "sun": [
       20,
       21,
-      27
+      28
     ],
     "save": [
       22,
-      24
+      25
     ],
     "blood": [
       23
     ],
-    "forever": [
-      28
-    ],
     "dreams": [
-      30
+      24
+    ],
+    "forever": [
+      29
     ],
     "wall": [
       31

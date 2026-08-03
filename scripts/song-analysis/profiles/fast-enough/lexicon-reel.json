@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-07-31T05:40:14.749Z",
+  "generatedAt": "2026-08-02T13:46:47.482Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -11,6 +11,18 @@
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-1-anime.webp",
+      "key": "lexicon/lights/s21-1-anime.webp",
+      "word": "lights",
+      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
+      "t": 34.853,
+      "score": 1,
+      "cosine": 0.53,
+      "reason": "Perfect fit with city lights, energy, and retro-futurism",
+      "recipe": "1-anime",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s23-1-word-portrait.webp",
       "key": "lexicon/lights/s23-1-word-portrait.webp",
@@ -43,7 +55,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Matches neon, speed, retro-futurism, and playful energy of the song",
+      "reason": "Matches neon, speed, retro-futurism, and playful energy",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -55,20 +67,8 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Urban neon aligns with retro-futurism and speed themes; mood matches energy and urgency",
+      "reason": "Urban neon aligns with retro-futurism and speed themes; mood matches energetic and competi",
       "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-1-anime.webp",
-      "key": "lexicon/lights/s21-1-anime.webp",
-      "word": "lights",
-      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
-      "t": 34.853,
-      "score": 0.95,
-      "cosine": 0.53,
-      "reason": "Futuristic city lights match song's energy, nostalgia, and playful romance",
-      "recipe": "1-anime",
       "featured": true
     },
     {
@@ -79,7 +79,7 @@
       "t": 34.853,
       "score": 0.95,
       "cosine": 0.527,
-      "reason": "Matches city lights, nostalgia, and playful energy with retro-futurism",
+      "reason": "Matches city lights, nostalgia, and playful energy of the song",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Matches speed, urban energy, and playful romance with neon and motion",
+      "reason": "Matches speed, urban energy, and romantic pursuit themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.493,
-      "reason": "Matches neon, intimacy, and energy of the song's theme",
+      "reason": "Matches neon, intimacy, and energy of the song's vibe",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 32.264,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Matches energetic, futuristic, and romantic vibe with neon, rain, and city lights",
+      "reason": "Matches energetic, futuristic, and romantic vibe with city lights and confident walk",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 87.284,
       "score": 0.95,
       "cosine": 0.448,
-      "reason": "Matches neon, energy, romance, and retro-futurism",
+      "reason": "Matches neon, urban, retro-futurism, and playful romance",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -283,8 +283,20 @@
       "t": 40.04,
       "score": 0.9,
       "cosine": 0.564,
-      "reason": "Matches summer, optimism, and aspiration in the song's playful, fast-paced energy.",
+      "reason": "Matches summer, optimism, and aspiration in the song's playful, nostalgic energy.",
       "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s14-6-word-portrait.webp",
+      "key": "lexicon/heart/s14-6-word-portrait.webp",
+      "word": "heart",
+      "line": "Green light, go, we on a mission Heart in overdrive, no hesitation Spin through the night with",
+      "t": 22.918,
+      "score": 0.9,
+      "cosine": 0.534,
+      "reason": "Matches playful energy, passion, and motion of the song",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -343,7 +355,7 @@
       "t": 34.538,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Matches urban romance, intimacy, and city lights theme",
+      "reason": "Matches urban romance, city lights, and intimate connection in a fast-paced setting",
       "recipe": "4-photo",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 34.538,
       "score": 0.9,
       "cosine": 0.448,
-      "reason": "Celebratory urban scene matches song's energetic, playful mood and city theme",
+      "reason": "Celebratory urban scene matches song's energetic, playful mood and city lyric",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -367,7 +379,7 @@
       "t": 87.284,
       "score": 0.9,
       "cosine": 0.445,
-      "reason": "Playful, joyful, and celebratory imagery fits the song's energetic and romantic vibe.",
+      "reason": "Playful, joyful, and celebratory image fits the song's upbeat and romantic tone.",
       "recipe": "4-stickers",
       "featured": true
     },
@@ -382,47 +394,36 @@
       "reason": "Nostalgic, adventurous night scene fits the song's retro-futurism and journey themes.",
       "recipe": "6-film-still",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/touch/s1-2-dream-collage.webp",
-      "key": "lexicon/touch/s1-2-dream-collage.webp",
-      "word": "touch",
-      "line": "on springs, we rise so high Nothing can stop us, we touch the sky You’re my boost, I’m your invincible",
-      "t": 83.381,
-      "score": 0.9,
-      "cosine": 0.418,
-      "reason": "Dreamy and hopeful imagery fits the playful, romantic, and nostalgic mood of the song.",
-      "recipe": "2-dream-collage",
-      "featured": true
     }
   ],
   "byWord": {
     "lights": [
       0,
-      4,
+      1,
       5
     ],
     "glow": [
-      1,
+      2,
       9,
       12
     ],
     "fast": [
-      2,
       3,
+      4,
       8
     ],
     "heart": [
       6,
-      7
+      7,
+      23
     ],
     "rise": [
       10,
-      26
+      27
     ],
     "running": [
       11,
-      23
+      24
     ],
     "save": [
       13
@@ -432,17 +433,17 @@
     ],
     "city": [
       15,
-      27,
-      28
+      28,
+      29
     ],
     "love": [
       16,
       17,
-      29
+      30
     ],
     "night": [
       18,
-      30
+      31
     ],
     "light": [
       19
@@ -453,13 +454,10 @@
     ],
     "sky": [
       22,
-      24
-    ],
-    "run": [
       25
     ],
-    "touch": [
-      31
+    "run": [
+      26
     ]
   }
 }

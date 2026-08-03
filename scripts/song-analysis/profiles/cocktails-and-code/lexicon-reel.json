@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-07-31T05:37:26.702Z",
+  "generatedAt": "2026-08-02T13:38:41.662Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.47,
-      "reason": "Modern, focused, and inspiring image fits the tech and summer vibe",
+      "reason": "Modern, focused, and inspiring image fits the tech and summer energy of the song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 6.502,
       "score": 0.9,
       "cosine": 0.507,
-      "reason": "Matches tech and summer night themes with calm, digital glow",
+      "reason": "Matches tech, summer night, and calm energy of the song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 71.367,
       "score": 0.9,
       "cosine": 0.471,
-      "reason": "fits summer night, urban, neon, and tech themes",
+      "reason": "fits summer night, urban, neon, and motivational vibe",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 33.158,
       "score": 0.9,
       "cosine": 0.469,
-      "reason": "fits futuristic, opulent, and motivational themes",
+      "reason": "Matches futuristic, opulent, and motivational themes",
       "recipe": "1-anime",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, dream, neon, urban fantasy",
+      "reason": "fits summer night, urban, dream theme and neon glow matches energy",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 4.493,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "fits summer night, urban, digital, hopeful vibe",
+      "reason": "fits summer night, urban, digital, hopeful mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 73.208,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Urban energy, rain intensity, neon lights match song's mood and themes",
+      "reason": "Urban energy, nighttime, determination align with song's mood and themes",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Urban neon aligns with energy and progress themes",
+      "reason": "Urban neon fits energetic summer night and progress themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 131.344,
       "score": 0.9,
       "cosine": 0.395,
-      "reason": "Symbolizes connection and growth under a hopeful sky",
+      "reason": "Symbolizes connection and growth under a hopeful, starry night",
       "recipe": "6-chalkboard",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.391,
-      "reason": "Energetic, hopeful, and dynamic imagery aligns with the song's themes of growth and innova",
+      "reason": "Energetic, hopeful, and cinematic fit the song's theme of growth and innovation.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 136.753,
       "score": 0.9,
       "cosine": 0.359,
-      "reason": "fits urban energy, nighttime vibe, and electric intensity",
+      "reason": "fits urban energy, neon vibrancy, and nighttime intensity",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 20.921,
       "score": 0.85,
       "cosine": 0.378,
-      "reason": "Urban neon fits energetic vibe and tech themes",
+      "reason": "Urban neon aligns with summer night and energy of the song",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 44.385,
       "score": 0.85,
       "cosine": 0.363,
-      "reason": "Urban nightlife and neon align with summer vibes and tech themes",
+      "reason": "Urban nightlife and neon align with summer and tech themes; energetic vibe matches song mo",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 4.273,
       "score": 0.8,
       "cosine": 0.487,
-      "reason": "Matches summer vibe and whimsical imagination",
+      "reason": "Matches summer vibe and whimsy but lacks tech elements",
       "recipe": "5-dream-collage",
       "featured": true
     }

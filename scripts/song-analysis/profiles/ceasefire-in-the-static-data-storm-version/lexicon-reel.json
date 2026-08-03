@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-07-31T05:36:38.566Z",
+  "generatedAt": "2026-08-02T13:36:37.256Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -55,7 +55,7 @@
       "t": 83.244,
       "score": 0.95,
       "cosine": 0.642,
-      "reason": "matches song's melancholic mood and themes of anxiety and journey through chaos",
+      "reason": "matches melancholic mood, solitude in digital chaos",
       "recipe": "1",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.615,
-      "reason": "fits mood and themes of isolation and digital chaos",
+      "reason": "Strongly aligns with mood and themes of isolation and digital chaos",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 97.64,
       "score": 0.95,
       "cosine": 0.58,
-      "reason": "fits digital overload, anxiety, fragmented identity",
+      "reason": "fits digital overload, anxiety, and fragmented identity themes",
       "recipe": "1-anime",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 31.881,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "fits digital isolation, melancholy, artificial light symbolism",
+      "reason": "fits mood and themes of digital isolation and melancholy",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 97.64,
       "score": 0.95,
       "cosine": 0.574,
-      "reason": "matches melancholic mood, digital static symbolism, and introspective theme",
+      "reason": "fits mood, symbolism, and themes of inner conflict and digital anxiety",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 118.085,
       "score": 0.95,
       "cosine": 0.559,
-      "reason": "fits mood and themes of digital isolation and emotional fracture",
+      "reason": "matches digital isolation, melancholy, and broken connection themes",
       "recipe": "1",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 118.085,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits digital isolation, melancholic mood, and surreal symbolism",
+      "reason": "fits digital isolation, melancholy, and surreal symbolism",
       "recipe": "1-photo",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "fits mood and themes of digital anxiety and surrealism",
+      "reason": "fits mood and themes of anxiety and digital overload",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "powerful imagery matches song's themes of chaos, hope, and identity crisis",
+      "reason": "powerful symbolism of chaos and hope, fits melancholic mood and themes",
       "recipe": "3-noir",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 40.425,
       "score": 0.95,
       "cosine": 0.492,
-      "reason": "fits digital trauma, apocalyptic mood, and symbolic wound",
+      "reason": "fits digital trauma, apocalyptic mood, symbolic wound",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 40.425,
       "score": 0.95,
       "cosine": 0.487,
-      "reason": "fits mood and symbolism of injury and neglect in digital anxiety",
+      "reason": "evokes trauma, light as hope, fits digital anxiety and melancholy",
       "recipe": "4-word-portrait",
       "featured": true
     },

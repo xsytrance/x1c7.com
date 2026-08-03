@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-07-31T05:43:41.991Z",
+  "generatedAt": "2026-08-02T13:57:21.092Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 92.625,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Powerful depiction of emotional restraint and pain in a toxic relationship",
+      "reason": "Powerful depiction of emotional restraint and pain aligns with song's themes",
       "recipe": "3-photo",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 187.88,
       "score": 0.95,
       "cosine": 0.475,
-      "reason": "Powerful contrast of hate and hope fits the song's emotional conflict and cinematic mood.",
+      "reason": "Powerful contrast of hate and hope fits the song's emotional conflict and cinematic mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing",
+      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 223.62,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Symbolizes emotional confinement and longing for freedom, aligns with song's themes",
+      "reason": "Symbolizes emotional confinement and longing for freedom, aligns with song's themes of res",
       "recipe": "6-film-still",
       "featured": true
     },
@@ -180,6 +180,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-2-cinema.webp",
+      "key": "lexicon/bruise/s0-2-cinema.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.95,
+      "cosine": 0.453,
+      "reason": "Matches emotional trauma, hidden pain, and surrealism of the song",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s13-4-dream-collage.webp",
       "key": "lexicon/fire/s13-4-dream-collage.webp",
       "word": "fire",
@@ -187,7 +199,7 @@
       "t": 52.48,
       "score": 0.95,
       "cosine": 0.451,
-      "reason": "Powerful symbolism of fire and emotional fragmentation fits the song's themes",
+      "reason": "Powerful symbolism of heart and fire, matches song's emotional depth and themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -223,7 +235,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Powerful imagery matches emotional turmoil and resilience in the song",
+      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood.",
       "recipe": "2-anime",
       "featured": true
     },
@@ -331,7 +343,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.507,
-      "reason": "Symbolizes breaking free, fits themes of resilience and emotional independence",
+      "reason": "Symbolizes breaking free, fits toxic relationship theme and cinematic mood",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -382,18 +394,6 @@
       "reason": "Cinematic, melancholic, and reflective mood aligns with song's emotional depth and themes.",
       "recipe": "3-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
-      "key": "lexicon/lights/s3-4-word-portrait.webp",
-      "word": "lights",
-      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
-      "t": 78.147,
-      "score": 0.9,
-      "cosine": 0.482,
-      "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
-      "recipe": "4-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
@@ -403,7 +403,7 @@
     ],
     "cut": [
       1,
-      20
+      21
     ],
     "smoke": [
       2,
@@ -411,59 +411,59 @@
     ],
     "fire": [
       3,
-      14,
-      23
+      15,
+      24
     ],
     "storm": [
       4,
-      17
+      18
     ],
     "hate": [
       6
     ],
     "escape": [
       7,
-      19
+      20
     ],
     "break": [
       8,
-      18,
-      26
+      19,
+      27
     ],
     "cage": [
       9,
-      24,
-      28
+      25,
+      29
     ],
     "cold": [
       11,
-      15
+      16
     ],
     "heart": [
       12
     ],
     "breaking": [
       13,
-      21
+      22
     ],
     "bruise": [
-      16
+      14,
+      17
     ],
     "lights": [
-      22,
-      31
+      23
     ],
     "ghost": [
-      25
+      26
     ],
     "burn": [
-      27
+      28
     ],
     "moon": [
-      29
+      30
     ],
     "rain": [
-      30
+      31
     ]
   }
 }

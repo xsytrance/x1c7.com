@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-07-31T05:49:53.190Z",
+  "generatedAt": "2026-08-02T14:15:12.631Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 475,
-    "judged": 12,
-    "accepted": 12,
-    "kept": 12
+    "candidates": 481,
+    "judged": 15,
+    "accepted": 15,
+    "kept": 15
   },
   "reel": [
     {
@@ -31,7 +31,7 @@
       "t": 49.377,
       "score": 1,
       "cosine": 0.622,
-      "reason": "Perfectly aligns with the song's hypnotic, introspective mood and themes.",
+      "reason": "Perfectly aligns with the song's mood and themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -84,18 +84,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
-      "key": "lexicon/move/s17-3-cinema.webp",
-      "word": "move",
-      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
-      "t": 214.378,
-      "score": 0.95,
-      "cosine": 0.479,
-      "reason": "matches hypnotic, introspective mood and themes of transience",
-      "recipe": "3-cinema",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s4-2-word-portrait.webp",
       "key": "lexicon/breath/s4-2-word-portrait.webp",
       "word": "breath",
@@ -120,6 +108,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
+      "key": "lexicon/move/s17-3-cinema.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.9,
+      "cosine": 0.479,
+      "reason": "matches hypnotic, introspective mood and themes of transience",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s3-1-word-neon.webp",
       "key": "lexicon/breath/s3-1-word-neon.webp",
       "word": "breath",
@@ -127,8 +127,44 @@
       "t": 7.907,
       "score": 0.9,
       "cosine": 0.427,
-      "reason": "Urban isolation and neon symbolism align with the song's mood and themes",
+      "reason": "Urban isolation and neon glow match hypnotic, introspective mood",
       "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/detuned/s0-5-oil-light.webp",
+      "key": "lexicon/detuned/s0-5-oil-light.webp",
+      "word": "detuned",
+      "line": "detuned",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.425,
+      "reason": "nostalgic, melancholic, analog tech fit the song's mood and themes",
+      "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/detuned/s0-2-photo.webp",
+      "key": "lexicon/detuned/s0-2-photo.webp",
+      "word": "detuned",
+      "line": "detuned",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "nostalgic, abandoned, analog symbolism fits introspective mood",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/detuned/s0-4-word-portrait.webp",
+      "key": "lexicon/detuned/s0-4-word-portrait.webp",
+      "word": "detuned",
+      "line": "detuned",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.409,
+      "reason": "nostalgic, abandoned, analog fit the song's mood and themes",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -139,7 +175,7 @@
       "t": 214.378,
       "score": 0.85,
       "cosine": 0.575,
-      "reason": "fits introspective mood, aligns with theme of detachment and isolation",
+      "reason": "fits mood and theme of introspection and detachment",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -167,15 +203,20 @@
       4,
       5
     ],
-    "move": [
-      6,
-      8,
-      10
-    ],
     "breath": [
-      7,
+      6,
       9,
-      11
+      14
+    ],
+    "move": [
+      7,
+      8,
+      13
+    ],
+    "detuned": [
+      10,
+      11,
+      12
     ]
   }
 }

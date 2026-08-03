@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-07-31T05:46:33.120Z",
+  "generatedAt": "2026-08-02T14:04:52.377Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 97.032,
       "score": 1,
       "cosine": 0.644,
-      "reason": "Perfectly captures the song's mood and themes of neon melancholy and urban isolation.",
+      "reason": "Perfectly captures the song's bittersweet, melancholic mood and urban isolation themes.",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -72,6 +72,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-5-cinema.webp",
+      "key": "lexicon/light/s24-5-cinema.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.98,
+      "cosine": 0.671,
+      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-1-cinema.webp",
       "key": "lexicon/lights/s8-1-cinema.webp",
       "word": "lights",
@@ -108,18 +120,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-5-cinema.webp",
-      "key": "lexicon/light/s24-5-cinema.webp",
-      "word": "light",
-      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
-      "t": 50.829,
-      "score": 0.95,
-      "cosine": 0.671,
-      "reason": "Captures neon melancholy, loneliness, and fleeting hope in rainy Tokyo",
-      "recipe": "5-cinema",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s6-2-word-portrait.webp",
       "key": "lexicon/slow/s6-2-word-portrait.webp",
       "word": "slow",
@@ -139,7 +139,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.649,
-      "reason": "matches neon melancholy, loneliness, and emotional reflections",
+      "reason": "matches neon melancholy, loneliness, and emotional echoes",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 41.378,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "nostalgic, melancholic, urban isolation, symbolic of lost connection",
+      "reason": "nostalgic, melancholic, urban isolation, bittersweet memory",
       "recipe": "2",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 100.02,
       "score": 0.95,
       "cosine": 0.614,
-      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "reason": "matches neon melancholy, urban isolation, and emotional coldness",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 46.661,
       "score": 0.95,
       "cosine": 0.6,
-      "reason": "fits mood and themes with neon melancholy and isolation",
+      "reason": "Matches neon melancholy, isolation, and bittersweet mood",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 95.469,
       "score": 0.95,
       "cosine": 0.553,
-      "reason": "Matches neon melancholy, urban solitude, and emotional journey",
+      "reason": "Strongly aligns with urban isolation, melancholy, and emotional journey",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 77.706,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "Matches melancholy, brokenness, and urban nighttime mood",
+      "reason": "matches melancholy, brokenness, and urban nighttime mood",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Captures urban melancholy, loneliness, and nighttime symbolism",
+      "reason": "Captures urban melancholy, loneliness, and neon-lit isolation",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 64.494,
       "score": 0.9,
       "cosine": 0.524,
-      "reason": "Captures neon melancholy, loneliness, and symbolic tension between public and private self",
+      "reason": "Captures melancholy, neon, isolation, and symbolic tension",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 47.88,
       "score": 0.9,
       "cosine": 0.502,
-      "reason": "Neon melancholy, urban isolation, coldness align with song's mood and themes",
+      "reason": "Neon melancholy, urban isolation, and coldness align with the song's mood and themes.",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -355,20 +355,8 @@
       "t": 46.661,
       "score": 0.85,
       "cosine": 0.534,
-      "reason": "Captures isolation, melancholy, and urban emptiness aligning with song's mood and themes.",
+      "reason": "Captures isolation, melancholy, and urban emptiness fitting the song's mood and themes.",
       "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
-      "key": "lexicon/phone/s0-1.webp",
-      "word": "phone",
-      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
-      "t": 41.378,
-      "score": 0.85,
-      "cosine": 0.483,
-      "reason": "Captures loneliness and digital connection in a nighttime setting",
-      "recipe": "1",
       "featured": true
     },
     {
@@ -379,8 +367,20 @@
       "t": 34.424,
       "score": 0.85,
       "cosine": 0.436,
-      "reason": "nostalgic, lonely, warm solitude fits bittersweet mood",
+      "reason": "nostalgic, lonely, warm yet empty space",
       "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
+      "key": "lexicon/phone/s0-1.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.8,
+      "cosine": 0.483,
+      "reason": "Captures loneliness and digital connection in a nighttime setting",
+      "recipe": "1",
       "featured": true
     },
     {
@@ -389,9 +389,9 @@
       "word": "home",
       "line": "but 帰れ ない home 8 0 8 鳴っ てる 心 の",
       "t": 34.424,
-      "score": 0.85,
+      "score": 0.8,
       "cosine": 0.434,
-      "reason": "Nostalgic, desolate interior fits bittersweet mood and themes of loss",
+      "reason": "Nostalgic, desolate interior fits song's melancholic mood and themes of loss and solitude.",
       "recipe": "1-cinema",
       "featured": true
     }
@@ -399,7 +399,7 @@
   "byWord": {
     "lights": [
       0,
-      5,
+      6,
       11
     ],
     "party": [
@@ -416,19 +416,19 @@
       13,
       14
     ],
-    "slow": [
-      6,
-      9,
-      17
-    ],
     "light": [
-      7,
+      5,
       8,
       10
     ],
+    "slow": [
+      7,
+      9,
+      17
+    ],
     "phone": [
       12,
-      29
+      30
     ],
     "ice": [
       15,
@@ -452,7 +452,7 @@
       27
     ],
     "home": [
-      30,
+      29,
       31
     ]
   }

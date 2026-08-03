@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-07-31T05:34:57.414Z",
+  "generatedAt": "2026-08-02T13:31:53.727Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.73,
-      "reason": "Strong alignment with magical corruption and noir atmosphere",
+      "reason": "Strong alignment with magical corruption, noir atmosphere, and surreal elements",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 15.024,
       "score": 0.95,
       "cosine": 0.616,
-      "reason": "matches noir atmosphere, fractured sanity, and sinister playfulness",
+      "reason": "fits noir atmosphere, sinister playfulness, and fractured sanity",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 118.19,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "fits the grotesque, chaotic, and surreal tone of the song's magical corruption and loss of",
+      "reason": "fits the grotesque, chaotic, and menacing tone of the song",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -225,6 +225,18 @@
       "cosine": 0.606,
       "reason": "fits noir-corruption theme, gold as corruption, villain and skeletal figures align with ma",
       "recipe": "4-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-6-concept-art.webp",
+      "key": "lexicon/money/s5-6-concept-art.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.9,
+      "cosine": 0.572,
+      "reason": "fits noir atmosphere, greed symbolism, and magical chaos",
+      "recipe": "6-concept-art",
       "featured": true
     },
     {
@@ -259,7 +271,7 @@
       "t": 35.85,
       "score": 0.9,
       "cosine": 0.55,
-      "reason": "fits noir atmosphere, ominous tone, and threshold symbolism",
+      "reason": "fits noir atmosphere, ominous threshold, aligns with spell's hunger and isolation",
       "recipe": "5-noir",
       "featured": true
     },
@@ -271,7 +283,7 @@
       "t": 15.233,
       "score": 0.9,
       "cosine": 0.542,
-      "reason": "Elegant noir atmosphere matches song's mood and themes",
+      "reason": "Mysterious, noir atmosphere matches song's tone and themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -283,7 +295,7 @@
       "t": 35.85,
       "score": 0.9,
       "cosine": 0.502,
-      "reason": "fits noir atmosphere, decay, hidden secrets, and eerie mood",
+      "reason": "fits noir atmosphere, decay, hidden secrets, and threshold imagery",
       "recipe": "1-graphic-novel",
       "featured": true
     },
@@ -300,18 +312,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-6-concept-art.webp",
-      "key": "lexicon/money/s5-6-concept-art.webp",
-      "word": "money",
-      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
-      "t": 40.171,
-      "score": 0.85,
-      "cosine": 0.572,
-      "reason": "fits noir atmosphere, greed symbolism, and magical chaos",
-      "recipe": "6-concept-art",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-4-neon-night.webp",
       "key": "lexicon/gold/s14-4-neon-night.webp",
       "word": "gold",
@@ -319,7 +319,7 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "gold symbolizes villainy, noir atmosphere matches song",
+      "reason": "gold symbolizes villainy and greed, noir-cartoon style fits the mood and themes",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -417,12 +417,12 @@
     "money": [
       9,
       18,
-      24
+      19
     ],
     "night": [
       10,
       14,
-      19
+      20
     ],
     "gold": [
       11,
@@ -435,8 +435,8 @@
     ],
     "door": [
       13,
-      20,
-      22
+      21,
+      23
     ],
     "teeth": [
       15
@@ -445,10 +445,10 @@
       16
     ],
     "whisper": [
-      21
+      22
     ],
     "high": [
-      23
+      24
     ],
     "shadow": [
       26

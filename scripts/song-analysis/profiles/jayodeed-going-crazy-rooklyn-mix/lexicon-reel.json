@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-07-31T05:46:01.622Z",
+  "generatedAt": "2026-08-02T14:03:18.814Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -91,7 +91,7 @@
       "t": 158.743,
       "score": 0.95,
       "cosine": 0.59,
-      "reason": "fits chaotic, toxic, addicted mood with flickering lights and urban decay",
+      "reason": "fits chaotic, toxic, addicted mood with flickering lights",
       "recipe": "2-anime",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 24.972,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits toxic, chaotic nightlife and obsession themes",
+      "reason": "fits toxic, chaotic nightlife and addiction themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 44.815,
       "score": 0.95,
       "cosine": 0.516,
-      "reason": "fits toxic love, nightlife, danger, and allure",
+      "reason": "fits toxic love, nightlife, danger, seduction",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 30.291,
       "score": 0.95,
       "cosine": 0.5,
-      "reason": "Evokes haunting loneliness and urban decay fitting the song's toxic obsession and chaos",
+      "reason": "Evokes haunting loneliness and urban decay fitting the song's themes",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 21.709,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "chaotic storm, addiction symbols, obsessive elements align with song",
+      "reason": "chaotic storm, addictive elements, obsessive symbolism fit song's themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -240,18 +240,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
-      "key": "lexicon/dark/s9-2-word-portrait.webp",
-      "word": "dark",
-      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
-      "t": 166.174,
-      "score": 0.95,
-      "cosine": 0.48,
-      "reason": "fits toxic mood, decay, and dramatic lighting",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s6-3-word-portrait.webp",
       "key": "lexicon/dark/s6-3-word-portrait.webp",
       "word": "dark",
@@ -259,7 +247,7 @@
       "t": 166.174,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "evokes darkness and hope, fits toxic obsession and chaos",
+      "reason": "evokes darkness and hope, fits toxic love and chaos",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -271,7 +259,7 @@
       "t": 50.051,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "fits toxic love, chaos, and nightlife symbolism",
+      "reason": "fits toxic love, chaos, and nightlife themes with gritty, melancholic mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -283,7 +271,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Eyes as metaphor for obsession, urban decay, toxic love, and emotional chaos align perfect",
+      "reason": "Strong visual metaphor for toxic obsession and urban chaos",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,7 +283,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.464,
-      "reason": "Eyes as metaphor, chaotic urban setting, toxic obsession",
+      "reason": "fits toxic obsession, chaos, and nightlife themes",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -307,7 +295,7 @@
       "t": 104.246,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "matches toxic love, emotional pain, and chaotic nightlife",
+      "reason": "matches toxic emotion, chaos, and melancholic atmosphere",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,7 +307,7 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty emotion",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, emotional tension",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -331,7 +319,7 @@
       "t": 120.523,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "burning, chaos, intense emotion, transformation, cinematic",
+      "reason": "fits toxic chaos, intense emotion, symbolic fire",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -367,7 +355,7 @@
       "t": 3.773,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
+      "reason": "fits toxic obsession, chaotic visuals, noir-cartoon vibe",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -394,13 +382,25 @@
       "reason": "Skeletal hands, neon, gritty noir match toxic obsession and chaos",
       "recipe": "6-word-neon",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s1-1-word-neon.webp",
+      "key": "lexicon/high/s1-1-word-neon.webp",
+      "word": "high",
+      "line": "We dont need forever Just give me the high Round and round We",
+      "t": 115.82,
+      "score": 0.95,
+      "cosine": 0.423,
+      "reason": "Cyberpunk neon fits toxic nightlife and addiction themes",
+      "recipe": "1-word-neon",
+      "featured": true
     }
   ],
   "byWord": {
     "crazy": [
       0,
       9,
-      29
+      28
     ],
     "glass": [
       1,
@@ -436,32 +436,32 @@
     ],
     "burn": [
       18,
-      26
+      25
     ],
     "dark": [
-      19,
-      20
+      19
     ],
     "love": [
-      21
+      20
     ],
     "eyes": [
+      21,
       22,
-      23,
-      27
+      26
     ],
     "bleed": [
-      24
+      23
     ],
     "hands": [
-      25,
-      31
+      24,
+      30
     ],
     "truth": [
-      28
+      27
     ],
     "high": [
-      30
+      29,
+      31
     ]
   }
 }

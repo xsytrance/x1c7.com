@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-07-31T05:34:09.263Z",
+  "generatedAt": "2026-08-02T13:29:49.416Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 34.168,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "Image captures subway chaos, light as rhythm, aligns with song's themes and mood",
+      "reason": "Image captures subway chaos, light as rhythm, aligns with song's themes",
       "recipe": "4-manga-line",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 63.89,
       "score": 0.92,
       "cosine": 0.586,
-      "reason": "Captures urban isolation and transition central to the song's metaphor",
+      "reason": "Captures urban isolation and transition with moody realism",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 74.4,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Urban grit, neon, rain align with subway metaphor and cathartic mood",
+      "reason": "Image captures gritty urban night, neon, and emotional release matching song's themes",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 7.802,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Urban nighttime, light, escapism, warmth, and connection align with song's themes",
+      "reason": "Urban nighttime, light, escapism, sensory warmth align with song's themes",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 103.5,
       "score": 0.92,
       "cosine": 0.569,
-      "reason": "Serene urban moment aligns with respite in chaos and breath as a transient, hopeful symbol",
+      "reason": "Calm urban moment matches song's respite theme and mood",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -153,6 +153,18 @@
       "cosine": 0.559,
       "reason": "Urban isolation, resilience, and stormy cityscape align with song's themes",
       "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
+      "key": "lexicon/dream/s2-6-word-portrait.webp",
+      "word": "dream",
+      "line": "A train to Brooklyn a dream to Queens Bronx in the rhythm Manhattan in",
+      "t": 92.18,
+      "score": 0.92,
+      "cosine": 0.552,
+      "reason": "Urban mood, transient beauty, and aspiration align with song's themes",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -235,7 +247,7 @@
       "t": 30.604,
       "score": 0.92,
       "cosine": 0.528,
-      "reason": "Captures urban melancholy and transient city life fitting the song's themes",
+      "reason": "Captures urban melancholy and transient city life aligning with song's themes",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -259,7 +271,7 @@
       "t": 9.695,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Urban decay, glowing windows, resilience fit the song's gritty, cathartic subway metaphor",
+      "reason": "Urban decay, glowing windows, resilience fit song's gritty, cathartic subway theme",
       "recipe": "3-anime",
       "featured": true
     },
@@ -283,7 +295,7 @@
       "t": 92.18,
       "score": 0.92,
       "cosine": 0.482,
-      "reason": "fits urban fantasy and nighttime escapism themes",
+      "reason": "fits urban fantasy, nighttime escapism, and neon-lit surrealism",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -324,18 +336,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
-      "key": "lexicon/dream/s2-6-word-portrait.webp",
-      "word": "dream",
-      "line": "A train to Brooklyn a dream to Queens Bronx in the rhythm Manhattan in",
-      "t": 92.18,
-      "score": 0.9,
-      "cosine": 0.552,
-      "reason": "Urban setting, dream symbolism, mood aligns with song's themes",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s16-4-word-neon.webp",
       "key": "lexicon/slow/s16-4-word-neon.webp",
       "word": "slow",
@@ -343,8 +343,20 @@
       "t": 74.85,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Calm, contemplative neon fits the respite theme and nighttime urban mood",
+      "reason": "Calm, nostalgic neon fits urban respite and night slowdown theme",
       "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-2-anime.webp",
+      "key": "lexicon/lights/s22-2-anime.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.82,
+      "cosine": 0.516,
+      "reason": "fits urban decay, nostalgic lights, resilience in nightlife",
+      "recipe": "2-anime",
       "featured": true
     },
     {
@@ -360,18 +372,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
-      "key": "lexicon/night/s23-2-word-portrait.webp",
-      "word": "night",
-      "line": "Breathe in Breathe out Let the night slow down Breathe in Breathe",
-      "t": 74.4,
-      "score": 0.8,
-      "cosine": 0.588,
-      "reason": "Captures urban night, melancholy, and blurred chaos fitting the song's theme",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s12-5-word-portrait.webp",
       "key": "lexicon/slow/s12-5-word-portrait.webp",
       "word": "slow",
@@ -379,7 +379,7 @@
       "t": 74.85,
       "score": 0.8,
       "cosine": 0.538,
-      "reason": "Matches mood and urban theme, but lacks dancehall energy",
+      "reason": "fits mood and urban theme, bittersweet and nostalgic",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -400,7 +400,7 @@
     "rhythm": [
       0,
       7,
-      21
+      22
     ],
     "light": [
       1,
@@ -408,52 +408,52 @@
     ],
     "song": [
       2,
-      28,
+      29,
       31
     ],
     "rain": [
       3,
-      23,
-      24
+      24,
+      25
     ],
     "eyes": [
       4,
-      14,
-      15
+      15,
+      16
     ],
     "train": [
       5
     ],
     "night": [
       6,
-      8,
-      29
+      8
     ],
     "breath": [
       10,
-      13,
-      25
+      14,
+      26
     ],
     "lights": [
-      11
-    ],
-    "glass": [
-      12
-    ],
-    "move": [
-      16,
-      17
-    ],
-    "city": [
-      18,
-      19
-    ],
-    "window": [
-      20
+      11,
+      28
     ],
     "dream": [
-      22,
-      26
+      12,
+      23
+    ],
+    "glass": [
+      13
+    ],
+    "move": [
+      17,
+      18
+    ],
+    "city": [
+      19,
+      20
+    ],
+    "window": [
+      21
     ],
     "slow": [
       27,

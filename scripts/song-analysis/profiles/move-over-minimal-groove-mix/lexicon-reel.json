@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-07-31T05:48:51.104Z",
+  "generatedAt": "2026-08-02T14:12:06.522Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit for retro club, bass focus, summer energy, confident style",
+      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
+      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfect fit for retro club, confidence, and individuality",
+      "reason": "Matches retro club aesthetic, confidence, and individuality themes",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -192,6 +192,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.72,
+      "score": 0.95,
+      "cosine": 0.39,
+      "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
+      "recipe": "1",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s2-4-photo.webp",
       "key": "lexicon/summer/s2-4-photo.webp",
       "word": "summer",
@@ -199,7 +211,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
+      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -223,20 +235,8 @@
       "t": 12.398,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "royal imagery fits dance floor dominance and summer swagger",
+      "reason": "royalty, power, and cinematic lighting align with dance floor dominance and stylish summer",
       "recipe": "6-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
-      "key": "lexicon/somebody/s0-1.webp",
-      "word": "somebody",
-      "line": "Title Move Over Minimal Groove Mix Somebody said the",
-      "t": 0.72,
-      "score": 0.9,
-      "cosine": 0.39,
-      "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
-      "recipe": "1",
       "featured": true
     },
     {
@@ -306,18 +306,18 @@
     "slow": [
       12
     ],
+    "somebody": [
+      15
+    ],
     "summer": [
-      15,
       16,
+      17,
       20
     ],
     "king": [
-      17,
+      18,
       19,
       21
-    ],
-    "somebody": [
-      18
     ]
   }
 }

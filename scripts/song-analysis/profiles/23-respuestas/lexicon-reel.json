@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-07-31T05:33:29.153Z",
+  "generatedAt": "2026-08-02T13:28:05.776Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 98.279,
       "score": 0.95,
       "cosine": 0.412,
-      "reason": "Powerful visual matches the song's emotional depth and theatrical mood",
+      "reason": "Powerful visual aligns with song's melancholic, intimate, and theatrical mood.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 8.893,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Matches mood and themes with neon symbolism and emotional closure",
+      "reason": "Matches mood and themes with neon, cosmic, and symbolic elements",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 136.023,
       "score": 0.95,
       "cosine": 0.369,
-      "reason": "matches sensual, melancholic mood and themes of emotional closure and hidden desires",
+      "reason": "Matches sensual, melancholic mood and themes of emotional closure and hidden desires",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 98.279,
       "score": 0.8,
       "cosine": 0.372,
-      "reason": "Emotional wound aligns with lyric, fits melancholic and vulnerable mood",
+      "reason": "Emotional wound aligns with lyric, vulnerability fits melancholic mood",
       "recipe": "6-photo",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 136.023,
       "score": 0.6,
       "cosine": 0.358,
-      "reason": "Image captures emotional struggle but lacks empowerment and closure central to the song",
+      "reason": "Image reflects guilt and sorrow, aligns with melancholic mood but lacks empowerment",
       "recipe": "2-photo",
       "featured": false
     }

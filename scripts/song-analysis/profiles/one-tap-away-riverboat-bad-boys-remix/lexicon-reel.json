@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-07-31T05:50:13.169Z",
+  "generatedAt": "2026-08-02T14:16:10.113Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -53,22 +53,10 @@
       "word": "tap",
       "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
       "t": 52.88,
-      "score": 1,
+      "score": 0.98,
       "cosine": 0.633,
       "reason": "Perfectly captures digital isolation and vulnerability in a noir setting",
       "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
-      "t": 70.682,
-      "score": 1,
-      "cosine": 0.63,
-      "reason": "Perfectly aligns with digital isolation and noir melancholy",
-      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -120,6 +108,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.95,
+      "cosine": 0.63,
+      "reason": "fits noir mood, digital isolation, fragmented faces",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
       "key": "lexicon/love/s12-6-word-portrait.webp",
       "word": "love",
@@ -127,7 +127,7 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "fits noir mood, digital chaos, private vs public",
+      "reason": "fits noir mood, digital chaos, private vs public self",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 70.692,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "matches noir mood, digital isolation theme, cinematic visuals",
+      "reason": "fits noir mood, digital isolation theme, cinematic visuals",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 104.455,
       "score": 0.95,
       "cosine": 0.543,
-      "reason": "fits noir mood, symbolizes confinement and isolation",
+      "reason": "evokes isolation, melancholy, and confinement central to the song's themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 70.682,
       "score": 0.95,
       "cosine": 0.542,
-      "reason": "fits noir cyberpunk mood and themes of digital isolation and fractured connections",
+      "reason": "fits noir cyberpunk mood, digital dreams, fractured connections",
       "recipe": "2-anime",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 104.455,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Symbolizes broken bonds, decay, urban loneliness aligns with song's themes",
+      "reason": "Symbolizes broken bonds, decay, urban loneliness fits noir mood",
       "recipe": "2-cinema",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 74.153,
       "score": 0.7,
       "cosine": 0.504,
-      "reason": "melancholic and urban imagery fits the song's mood and themes",
+      "reason": "Melancholic and hopeful star reflects song's themes of loneliness and digital longing",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -257,41 +257,41 @@
       "word": "stars",
       "line": "for the strangers Save your hearts for the stars But the ones who really know",
       "t": 74.153,
-      "score": 0.6,
+      "score": 0.7,
       "cosine": 0.448,
-      "reason": "Symbolizes hope in a bleak world, fits noir melancholy and digital isolation themes",
+      "reason": "Symbolizes hope and resilience in a bleak world, fits noir melancholy and digital isolatio",
       "recipe": "2-film-still",
-      "featured": false
+      "featured": true
     }
   ],
   "byWord": {
     "heart": [
       0,
       2,
-      7
+      6
     ],
     "tap": [
       1,
       3,
       11
     ],
-    "dream": [
-      4,
-      13,
-      18
-    ],
     "light": [
-      5,
+      4,
       15,
       16
     ],
     "save": [
-      6,
+      5,
       10
     ],
     "love": [
-      8,
+      7,
       9
+    ],
+    "dream": [
+      8,
+      13,
+      18
     ],
     "chains": [
       12,

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-07-31T05:48:28.736Z",
+  "generatedAt": "2026-08-02T14:11:09.560Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 69,
+    "candidates": 87,
     "judged": 15,
     "accepted": 13,
     "kept": 13
@@ -67,8 +67,20 @@
       "t": 27.481,
       "score": 1,
       "cosine": 0.498,
-      "reason": "Perfectly captures barrio celebration and community unity in vibrant, lively scene",
+      "reason": "Perfectly captures barrio celebration and community unity in vibrant, joyful imagery",
       "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-6-word-neon.webp",
+      "key": "lexicon/fuego/s4-6-word-neon.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.95,
+      "cosine": 0.54,
+      "reason": "Symbolizes passion and unity in a vibrant, urban setting",
+      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -91,7 +103,7 @@
       "t": 26.262,
       "score": 0.95,
       "cosine": 0.427,
-      "reason": "Symbolizes 'sangre' as life force, connects to loyalty and identity themes",
+      "reason": "Symbolizes 'sangre' as life force, connects to loyalty and community power",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -115,20 +127,8 @@
       "t": 136.359,
       "score": 0.9,
       "cosine": 0.479,
-      "reason": "Symbolizes resilience, fire as purification, street imagery aligns with song's themes",
+      "reason": "Symbolizes resilience and fiery unity in a communal struggle",
       "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s1-4-stickers.webp",
-      "key": "lexicon/fuego/s1-4-stickers.webp",
-      "word": "fuego",
-      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
-      "t": 136.359,
-      "score": 0.85,
-      "cosine": 0.453,
-      "reason": "Symbolizes fire as life force and unity under the stars",
-      "recipe": "4-stickers",
       "featured": true
     },
     {
@@ -139,20 +139,8 @@
       "t": 27.481,
       "score": 0.8,
       "cosine": 0.517,
-      "reason": "Captures barrio essence with warmth and resilience",
+      "reason": "Cobblestone barrio captures community resilience and authenticity",
       "recipe": "6-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
-      "key": "lexicon/fuego/s0-4-cinema.webp",
-      "word": "fuego",
-      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
-      "t": 136.359,
-      "score": 0.7,
-      "cosine": 0.467,
-      "reason": "Symbolizes unity and warmth but lacks aggressive swagger",
-      "recipe": "4-cinema",
       "featured": true
     },
     {
@@ -166,6 +154,18 @@
       "reason": "Cobblestone street and community vibe align with 'calle' and song's themes.",
       "recipe": "1-film-still",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
+      "key": "lexicon/fuego/s0-4-cinema.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.6,
+      "cosine": 0.467,
+      "reason": "Fire symbolizes unity and resilience, but lacks street and urban elements",
+      "recipe": "4-cinema",
+      "featured": false
     }
   ],
   "byWord": {
@@ -179,18 +179,18 @@
       4,
       10
     ],
-    "calle": [
+    "fuego": [
       5,
-      7,
+      9,
       12
     ],
-    "sangre": [
-      6
-    ],
-    "fuego": [
+    "calle": [
+      6,
       8,
-      9,
       11
+    ],
+    "sangre": [
+      7
     ]
   }
 }
