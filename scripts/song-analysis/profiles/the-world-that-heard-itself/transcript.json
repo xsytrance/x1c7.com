@@ -1,0 +1,1985 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 6.176,
+      "end": 9.72,
+      "text": "Every sound becomes a body,",
+      "words": [
+        {
+          "t": 6.176,
+          "text": "Every"
+        },
+        {
+          "t": 6.42,
+          "text": "sound"
+        },
+        {
+          "t": 7.34,
+          "text": "becomes"
+        },
+        {
+          "t": 8.384,
+          "text": "a"
+        },
+        {
+          "t": 9.0,
+          "text": "body,"
+        }
+      ]
+    },
+    {
+      "start": 9.96,
+      "end": 13.96,
+      "text": "every echo learns to breathe.",
+      "words": [
+        {
+          "t": 9.96,
+          "text": "every"
+        },
+        {
+          "t": 10.9,
+          "text": "echo"
+        },
+        {
+          "t": 11.98,
+          "text": "learns"
+        },
+        {
+          "t": 13.02,
+          "text": "to"
+        },
+        {
+          "t": 13.5,
+          "text": "breathe."
+        }
+      ]
+    },
+    {
+      "start": 15.12,
+      "end": 17.26,
+      "text": "What the noise creates,",
+      "words": [
+        {
+          "t": 15.12,
+          "text": "What"
+        },
+        {
+          "t": 15.22,
+          "text": "the"
+        },
+        {
+          "t": 15.74,
+          "text": "noise"
+        },
+        {
+          "t": 16.46,
+          "text": "creates,"
+        }
+      ]
+    },
+    {
+      "start": 17.74,
+      "end": 19.5,
+      "text": "the silence takes,",
+      "words": [
+        {
+          "t": 17.74,
+          "text": "the"
+        },
+        {
+          "t": 18.0,
+          "text": "silence"
+        },
+        {
+          "t": 18.92,
+          "text": "takes,"
+        }
+      ]
+    },
+    {
+      "start": 19.96,
+      "end": 22.592,
+      "text": "so keep this world with me.",
+      "words": [
+        {
+          "t": 19.96,
+          "text": "so"
+        },
+        {
+          "t": 20.06,
+          "text": "keep"
+        },
+        {
+          "t": 20.6,
+          "text": "this"
+        },
+        {
+          "t": 21.22,
+          "text": "world"
+        },
+        {
+          "t": 21.92,
+          "text": "with"
+        },
+        {
+          "t": 22.36,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 25.39,
+      "end": 27.62,
+      "text": "I woke where nothing had a name,",
+      "words": [
+        {
+          "t": 25.39,
+          "text": "I"
+        },
+        {
+          "t": 26.144,
+          "text": "woke"
+        },
+        {
+          "t": 26.36,
+          "text": "where"
+        },
+        {
+          "t": 26.58,
+          "text": "nothing"
+        },
+        {
+          "t": 26.88,
+          "text": "had"
+        },
+        {
+          "t": 27.18,
+          "text": "a"
+        },
+        {
+          "t": 27.28,
+          "text": "name,"
+        }
+      ]
+    },
+    {
+      "start": 28.92,
+      "end": 30.48,
+      "text": "no ground, no sky.",
+      "words": [
+        {
+          "t": 28.92,
+          "text": "no"
+        },
+        {
+          "t": 29.02,
+          "text": "ground,"
+        },
+        {
+          "t": 29.74,
+          "text": "no"
+        },
+        {
+          "t": 30.06,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 34.58,
+      "end": 35.7,
+      "text": "Only an empty world,",
+      "words": [
+        {
+          "t": 34.58,
+          "text": "Only"
+        },
+        {
+          "t": 34.68,
+          "text": "an"
+        },
+        {
+          "t": 35.02,
+          "text": "empty"
+        },
+        {
+          "t": 35.24,
+          "text": "world,"
+        }
+      ]
+    },
+    {
+      "start": 39.2,
+      "end": 40.32,
+      "text": "waiting to hear itself.",
+      "words": [
+        {
+          "t": 39.2,
+          "text": "waiting"
+        },
+        {
+          "t": 39.36,
+          "text": "to"
+        },
+        {
+          "t": 39.68,
+          "text": "hear"
+        },
+        {
+          "t": 39.94,
+          "text": "itself."
+        }
+      ]
+    },
+    {
+      "start": 42.4,
+      "end": 45.76,
+      "text": "Every sound becomes a body,",
+      "words": [
+        {
+          "t": 42.4,
+          "text": "Every"
+        },
+        {
+          "t": 42.86,
+          "text": "sound"
+        },
+        {
+          "t": 43.66,
+          "text": "becomes"
+        },
+        {
+          "t": 44.34,
+          "text": "a"
+        },
+        {
+          "t": 45.26,
+          "text": "body,"
+        }
+      ]
+    },
+    {
+      "start": 46.912,
+      "end": 48.2,
+      "text": "every echo",
+      "words": [
+        {
+          "t": 46.912,
+          "text": "every"
+        },
+        {
+          "t": 47.12,
+          "text": "echo"
+        }
+      ]
+    },
+    {
+      "start": 49.152,
+      "end": 50.12,
+      "text": "learns to breathe.",
+      "words": [
+        {
+          "t": 49.152,
+          "text": "learns"
+        },
+        {
+          "t": 49.28,
+          "text": "to"
+        },
+        {
+          "t": 49.74,
+          "text": "breathe."
+        }
+      ]
+    },
+    {
+      "start": 51.36,
+      "end": 52.62,
+      "text": "What the noise creates,",
+      "words": [
+        {
+          "t": 51.36,
+          "text": "What"
+        },
+        {
+          "t": 51.9,
+          "text": "the"
+        },
+        {
+          "t": 52.0,
+          "text": "noise"
+        },
+        {
+          "t": 52.6,
+          "text": "creates,"
+        }
+      ]
+    },
+    {
+      "start": 52.62,
+      "end": 52.62,
+      "text": "the silence takes,",
+      "words": [
+        {
+          "t": 52.62,
+          "text": "the"
+        },
+        {
+          "t": 52.62,
+          "text": "silence"
+        },
+        {
+          "t": 52.62,
+          "text": "takes,"
+        }
+      ]
+    },
+    {
+      "start": 52.62,
+      "end": 52.62,
+      "text": "so keep this world with me.",
+      "words": [
+        {
+          "t": 52.62,
+          "text": "so"
+        },
+        {
+          "t": 52.62,
+          "text": "keep"
+        },
+        {
+          "t": 52.62,
+          "text": "this"
+        },
+        {
+          "t": 52.62,
+          "text": "world"
+        },
+        {
+          "t": 52.62,
+          "text": "with"
+        },
+        {
+          "t": 52.62,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 52.64,
+      "end": 52.92,
+      "text": "What the noise creates,",
+      "words": [
+        {
+          "t": 52.64,
+          "text": "What"
+        },
+        {
+          "t": 52.72,
+          "text": "the"
+        },
+        {
+          "t": 52.72,
+          "text": "noise"
+        },
+        {
+          "t": 52.72,
+          "text": "creates,"
+        }
+      ]
+    },
+    {
+      "start": 53.9,
+      "end": 55.72,
+      "text": "the silence takes,",
+      "words": [
+        {
+          "t": 53.9,
+          "text": "the"
+        },
+        {
+          "t": 54.22,
+          "text": "silence"
+        },
+        {
+          "t": 55.1,
+          "text": "takes,"
+        }
+      ]
+    },
+    {
+      "start": 55.98,
+      "end": 58.88,
+      "text": "so keep this world with me.",
+      "words": [
+        {
+          "t": 55.98,
+          "text": "so"
+        },
+        {
+          "t": 56.256,
+          "text": "keep"
+        },
+        {
+          "t": 56.832,
+          "text": "this"
+        },
+        {
+          "t": 57.48,
+          "text": "world"
+        },
+        {
+          "t": 58.1,
+          "text": "with"
+        },
+        {
+          "t": 58.56,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 69.32,
+      "end": 72.42,
+      "text": "First, I heard voices beneath the dark.",
+      "words": [
+        {
+          "t": 69.32,
+          "text": "First,"
+        },
+        {
+          "t": 70.04,
+          "text": "I"
+        },
+        {
+          "t": 70.816,
+          "text": "heard"
+        },
+        {
+          "t": 71.04,
+          "text": "voices"
+        },
+        {
+          "t": 71.48,
+          "text": "beneath"
+        },
+        {
+          "t": 71.8,
+          "text": "the"
+        },
+        {
+          "t": 72.06,
+          "text": "dark."
+        }
+      ]
+    },
+    {
+      "start": 73.62,
+      "end": 74.16,
+      "text": "Not words.",
+      "words": [
+        {
+          "t": 73.62,
+          "text": "Not"
+        },
+        {
+          "t": 73.72,
+          "text": "words."
+        }
+      ]
+    },
+    {
+      "start": 74.46,
+      "end": 75.32,
+      "text": "One note.",
+      "words": [
+        {
+          "t": 74.46,
+          "text": "One"
+        },
+        {
+          "t": 74.88,
+          "text": "note."
+        }
+      ]
+    },
+    {
+      "start": 75.64,
+      "end": 77.02,
+      "text": "Held longer than breath.",
+      "words": [
+        {
+          "t": 75.64,
+          "text": "Held"
+        },
+        {
+          "t": 76.08,
+          "text": "longer"
+        },
+        {
+          "t": 76.4,
+          "text": "than"
+        },
+        {
+          "t": 76.68,
+          "text": "breath."
+        }
+      ]
+    },
+    {
+      "start": 89.68,
+      "end": 90.78,
+      "text": "The breath grew edges.",
+      "words": [
+        {
+          "t": 89.68,
+          "text": "The"
+        },
+        {
+          "t": 89.78,
+          "text": "breath"
+        },
+        {
+          "t": 90.08,
+          "text": "grew"
+        },
+        {
+          "t": 90.36,
+          "text": "edges."
+        }
+      ]
+    },
+    {
+      "start": 93.44,
+      "end": 94.5,
+      "text": "Their throats opened.",
+      "words": [
+        {
+          "t": 93.44,
+          "text": "Their"
+        },
+        {
+          "t": 93.58,
+          "text": "throats"
+        },
+        {
+          "t": 94.06,
+          "text": "opened."
+        }
+      ]
+    },
+    {
+      "start": 99.712,
+      "end": 100.36,
+      "text": "Into brass.",
+      "words": [
+        {
+          "t": 99.712,
+          "text": "Into"
+        },
+        {
+          "t": 99.86,
+          "text": "brass."
+        }
+      ]
+    },
+    {
+      "start": 113.34,
+      "end": 115.02,
+      "text": "Their whispers did not want me to believe.",
+      "words": [
+        {
+          "t": 113.34,
+          "text": "Their"
+        },
+        {
+          "t": 113.64,
+          "text": "whispers"
+        },
+        {
+          "t": 113.76,
+          "text": "did"
+        },
+        {
+          "t": 114.4,
+          "text": "not"
+        },
+        {
+          "t": 114.4,
+          "text": "want"
+        },
+        {
+          "t": 114.4,
+          "text": "me"
+        },
+        {
+          "t": 115.02,
+          "text": "to"
+        },
+        {
+          "t": 115.02,
+          "text": "believe."
+        }
+      ]
+    },
+    {
+      "start": 117.5,
+      "end": 118.96,
+      "text": "What the noise creates,",
+      "words": [
+        {
+          "t": 117.5,
+          "text": "What"
+        },
+        {
+          "t": 118.46,
+          "text": "the"
+        },
+        {
+          "t": 118.56,
+          "text": "noise"
+        },
+        {
+          "t": 118.56,
+          "text": "creates,"
+        }
+      ]
+    },
+    {
+      "start": 118.96,
+      "end": 118.96,
+      "text": "the silence takes,",
+      "words": [
+        {
+          "t": 118.96,
+          "text": "the"
+        },
+        {
+          "t": 118.96,
+          "text": "silence"
+        },
+        {
+          "t": 118.96,
+          "text": "takes,"
+        }
+      ]
+    },
+    {
+      "start": 119.36,
+      "end": 122.28,
+      "text": "so keep this world with me.",
+      "words": [
+        {
+          "t": 119.36,
+          "text": "so"
+        },
+        {
+          "t": 119.78,
+          "text": "keep"
+        },
+        {
+          "t": 120.18,
+          "text": "this"
+        },
+        {
+          "t": 120.84,
+          "text": "world"
+        },
+        {
+          "t": 121.5,
+          "text": "with"
+        },
+        {
+          "t": 121.96,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 123.58,
+      "end": 123.68,
+      "text": "Their throats opened.",
+      "words": [
+        {
+          "t": 123.58,
+          "text": "Their"
+        },
+        {
+          "t": 123.68,
+          "text": "throats"
+        },
+        {
+          "t": 123.68,
+          "text": "opened."
+        }
+      ]
+    },
+    {
+      "start": 123.68,
+      "end": 125.72,
+      "text": "Then I heard footsteps crossing a place.",
+      "words": [
+        {
+          "t": 123.68,
+          "text": "Then"
+        },
+        {
+          "t": 123.68,
+          "text": "I"
+        },
+        {
+          "t": 123.8,
+          "text": "heard"
+        },
+        {
+          "t": 124.0,
+          "text": "footsteps"
+        },
+        {
+          "t": 124.4,
+          "text": "crossing"
+        },
+        {
+          "t": 124.92,
+          "text": "a"
+        },
+        {
+          "t": 125.24,
+          "text": "place."
+        }
+      ]
+    },
+    {
+      "start": 127.72,
+      "end": 129.56,
+      "text": "They had no floor.",
+      "words": [
+        {
+          "t": 127.72,
+          "text": "They"
+        },
+        {
+          "t": 128.576,
+          "text": "had"
+        },
+        {
+          "t": 128.78,
+          "text": "no"
+        },
+        {
+          "t": 129.02,
+          "text": "floor."
+        }
+      ]
+    },
+    {
+      "start": 132.94,
+      "end": 135.9,
+      "text": "The darkness placed stone beneath them.",
+      "words": [
+        {
+          "t": 132.94,
+          "text": "The"
+        },
+        {
+          "t": 133.824,
+          "text": "darkness"
+        },
+        {
+          "t": 134.18,
+          "text": "placed"
+        },
+        {
+          "t": 134.66,
+          "text": "stone"
+        },
+        {
+          "t": 135.12,
+          "text": "beneath"
+        },
+        {
+          "t": 135.54,
+          "text": "them."
+        }
+      ]
+    },
+    {
+      "start": 137.18,
+      "end": 138.52,
+      "text": "The steps repeated.",
+      "words": [
+        {
+          "t": 137.18,
+          "text": "The"
+        },
+        {
+          "t": 137.632,
+          "text": "steps"
+        },
+        {
+          "t": 138.02,
+          "text": "repeated."
+        }
+      ]
+    },
+    {
+      "start": 139.94,
+      "end": 140.5,
+      "text": "And repetition.",
+      "words": [
+        {
+          "t": 139.94,
+          "text": "And"
+        },
+        {
+          "t": 140.04,
+          "text": "repetition."
+        }
+      ]
+    },
+    {
+      "start": 167.6,
+      "end": 168.2,
+      "text": "I",
+      "words": [
+        {
+          "t": 167.6,
+          "text": "I"
+        }
+      ]
+    },
+    {
+      "start": 168.8,
+      "end": 170.64,
+      "text": "heard a heartbeat behind the horizon.",
+      "words": [
+        {
+          "t": 168.8,
+          "text": "heard"
+        },
+        {
+          "t": 169.02,
+          "text": "a"
+        },
+        {
+          "t": 169.36,
+          "text": "heartbeat"
+        },
+        {
+          "t": 169.568,
+          "text": "behind"
+        },
+        {
+          "t": 170.0,
+          "text": "the"
+        },
+        {
+          "t": 170.24,
+          "text": "horizon."
+        }
+      ]
+    },
+    {
+      "start": 172.74,
+      "end": 173.18,
+      "text": "Then another,",
+      "words": [
+        {
+          "t": 172.74,
+          "text": "Then"
+        },
+        {
+          "t": 172.84,
+          "text": "another,"
+        }
+      ]
+    },
+    {
+      "start": 173.48,
+      "end": 174.6,
+      "text": "then thousands,",
+      "words": [
+        {
+          "t": 173.48,
+          "text": "then"
+        },
+        {
+          "t": 173.98,
+          "text": "thousands,"
+        }
+      ]
+    },
+    {
+      "start": 174.62,
+      "end": 177.12,
+      "text": "all beating inside the same chests.",
+      "words": [
+        {
+          "t": 174.62,
+          "text": "all"
+        },
+        {
+          "t": 175.1,
+          "text": "beating"
+        },
+        {
+          "t": 175.5,
+          "text": "inside"
+        },
+        {
+          "t": 175.9,
+          "text": "the"
+        },
+        {
+          "t": 176.28,
+          "text": "same"
+        },
+        {
+          "t": 176.56,
+          "text": "chests."
+        }
+      ]
+    },
+    {
+      "start": 196.4,
+      "end": 197.1,
+      "text": "Then",
+      "words": [
+        {
+          "t": 196.4,
+          "text": "Then"
+        }
+      ]
+    },
+    {
+      "start": 197.76,
+      "end": 200.16,
+      "text": "the rain began to rise out of the ocean.",
+      "words": [
+        {
+          "t": 197.76,
+          "text": "the"
+        },
+        {
+          "t": 197.86,
+          "text": "rain"
+        },
+        {
+          "t": 198.14,
+          "text": "began"
+        },
+        {
+          "t": 198.48,
+          "text": "to"
+        },
+        {
+          "t": 198.76,
+          "text": "rise"
+        },
+        {
+          "t": 199.04,
+          "text": "out"
+        },
+        {
+          "t": 199.56,
+          "text": "of"
+        },
+        {
+          "t": 199.68,
+          "text": "the"
+        },
+        {
+          "t": 199.78,
+          "text": "ocean."
+        }
+      ]
+    },
+    {
+      "start": 201.68,
+      "end": 204.58,
+      "text": "Through the clouds and into the stars,",
+      "words": [
+        {
+          "t": 201.68,
+          "text": "Through"
+        },
+        {
+          "t": 201.78,
+          "text": "the"
+        },
+        {
+          "t": 201.86,
+          "text": "clouds"
+        },
+        {
+          "t": 202.44,
+          "text": "and"
+        },
+        {
+          "t": 203.552,
+          "text": "into"
+        },
+        {
+          "t": 203.9,
+          "text": "the"
+        },
+        {
+          "t": 204.1,
+          "text": "stars,"
+        }
+      ]
+    },
+    {
+      "start": 206.78,
+      "end": 209.24,
+      "text": "every drop struck the sky and",
+      "words": [
+        {
+          "t": 206.78,
+          "text": "every"
+        },
+        {
+          "t": 206.88,
+          "text": "drop"
+        },
+        {
+          "t": 207.3,
+          "text": "struck"
+        },
+        {
+          "t": 207.64,
+          "text": "the"
+        },
+        {
+          "t": 208.0,
+          "text": "sky"
+        },
+        {
+          "t": 208.34,
+          "text": "and"
+        }
+      ]
+    },
+    {
+      "start": 211.456,
+      "end": 212.8,
+      "text": "left a note hanging there.",
+      "words": [
+        {
+          "t": 211.456,
+          "text": "left"
+        },
+        {
+          "t": 211.7,
+          "text": "a"
+        },
+        {
+          "t": 211.92,
+          "text": "note"
+        },
+        {
+          "t": 212.12,
+          "text": "hanging"
+        },
+        {
+          "t": 212.44,
+          "text": "there."
+        }
+      ]
+    },
+    {
+      "start": 233.34,
+      "end": 234.82,
+      "text": "And the melody turned gold.",
+      "words": [
+        {
+          "t": 233.34,
+          "text": "And"
+        },
+        {
+          "t": 233.44,
+          "text": "the"
+        },
+        {
+          "t": 233.58,
+          "text": "melody"
+        },
+        {
+          "t": 233.88,
+          "text": "turned"
+        },
+        {
+          "t": 234.22,
+          "text": "gold."
+        }
+      ]
+    },
+    {
+      "start": 234.94,
+      "end": 236.02,
+      "text": "I said move.",
+      "words": [
+        {
+          "t": 234.94,
+          "text": "I"
+        },
+        {
+          "t": 235.16,
+          "text": "said"
+        },
+        {
+          "t": 235.5,
+          "text": "move."
+        }
+      ]
+    },
+    {
+      "start": 236.3,
+      "end": 238.24,
+      "text": "And gravity found a beat.",
+      "words": [
+        {
+          "t": 236.3,
+          "text": "And"
+        },
+        {
+          "t": 236.8,
+          "text": "gravity"
+        },
+        {
+          "t": 237.36,
+          "text": "found"
+        },
+        {
+          "t": 237.8,
+          "text": "a"
+        },
+        {
+          "t": 237.98,
+          "text": "beat."
+        }
+      ]
+    },
+    {
+      "start": 238.42,
+      "end": 239.36,
+      "text": "I said live.",
+      "words": [
+        {
+          "t": 238.42,
+          "text": "I"
+        },
+        {
+          "t": 238.58,
+          "text": "said"
+        },
+        {
+          "t": 238.96,
+          "text": "live."
+        }
+      ]
+    },
+    {
+      "start": 239.94,
+      "end": 241.98,
+      "text": "And every sound came home.",
+      "words": [
+        {
+          "t": 239.94,
+          "text": "And"
+        },
+        {
+          "t": 240.22,
+          "text": "every"
+        },
+        {
+          "t": 240.68,
+          "text": "sound"
+        },
+        {
+          "t": 241.24,
+          "text": "came"
+        },
+        {
+          "t": 241.88,
+          "text": "home."
+        }
+      ]
+    },
+    {
+      "start": 246.28,
+      "end": 249.12,
+      "text": "Every time he comes a body,",
+      "words": [
+        {
+          "t": 246.28,
+          "text": "Every"
+        },
+        {
+          "t": 246.78,
+          "text": "time"
+        },
+        {
+          "t": 247.44,
+          "text": "he"
+        },
+        {
+          "t": 248.04,
+          "text": "comes"
+        },
+        {
+          "t": 248.92,
+          "text": "a"
+        },
+        {
+          "t": 249.02,
+          "text": "body,"
+        }
+      ]
+    },
+    {
+      "start": 250.688,
+      "end": 252.82,
+      "text": "every echo learns",
+      "words": [
+        {
+          "t": 250.688,
+          "text": "every"
+        },
+        {
+          "t": 251.104,
+          "text": "echo"
+        },
+        {
+          "t": 252.12,
+          "text": "learns"
+        }
+      ]
+    },
+    {
+      "start": 253.72,
+      "end": 253.92,
+      "text": "to breathe.",
+      "words": [
+        {
+          "t": 253.72,
+          "text": "to"
+        },
+        {
+          "t": 253.82,
+          "text": "breathe."
+        }
+      ]
+    },
+    {
+      "start": 255.14,
+      "end": 259.5,
+      "text": "What the noise creates, the silence takes.",
+      "words": [
+        {
+          "t": 255.14,
+          "text": "What"
+        },
+        {
+          "t": 255.24,
+          "text": "the"
+        },
+        {
+          "t": 255.76,
+          "text": "noise"
+        },
+        {
+          "t": 256.5,
+          "text": "creates,"
+        },
+        {
+          "t": 257.62,
+          "text": "the"
+        },
+        {
+          "t": 258.336,
+          "text": "silence"
+        },
+        {
+          "t": 258.9,
+          "text": "takes."
+        }
+      ]
+    },
+    {
+      "start": 259.64,
+      "end": 260.62,
+      "text": "So keep going.",
+      "words": [
+        {
+          "t": 259.64,
+          "text": "So"
+        },
+        {
+          "t": 260.14,
+          "text": "keep"
+        },
+        {
+          "t": 260.62,
+          "text": "going."
+        }
+      ]
+    },
+    {
+      "start": 260.64,
+      "end": 262.68,
+      "text": "Be this world with me.",
+      "words": [
+        {
+          "t": 260.64,
+          "text": "Be"
+        },
+        {
+          "t": 260.64,
+          "text": "this"
+        },
+        {
+          "t": 261.12,
+          "text": "world"
+        },
+        {
+          "t": 261.84,
+          "text": "with"
+        },
+        {
+          "t": 262.3,
+          "text": "me."
+        }
+      ]
+    },
+    {
+      "start": 266.56,
+      "end": 267.6,
+      "text": "Voices into brass.",
+      "words": [
+        {
+          "t": 266.56,
+          "text": "Voices"
+        },
+        {
+          "t": 266.86,
+          "text": "into"
+        },
+        {
+          "t": 267.12,
+          "text": "brass."
+        }
+      ]
+    },
+    {
+      "start": 269.376,
+      "end": 270.46,
+      "text": "Steps into drums.",
+      "words": [
+        {
+          "t": 269.376,
+          "text": "Steps"
+        },
+        {
+          "t": 269.9,
+          "text": "into"
+        },
+        {
+          "t": 269.98,
+          "text": "drums."
+        }
+      ]
+    },
+    {
+      "start": 272.032,
+      "end": 272.98,
+      "text": "Blood into bass.",
+      "words": [
+        {
+          "t": 272.032,
+          "text": "Blood"
+        },
+        {
+          "t": 272.34,
+          "text": "into"
+        },
+        {
+          "t": 272.62,
+          "text": "bass."
+        }
+      ]
+    },
+    {
+      "start": 274.336,
+      "end": 275.48,
+      "text": "Rain into light.",
+      "words": [
+        {
+          "t": 274.336,
+          "text": "Rain"
+        },
+        {
+          "t": 274.56,
+          "text": "into"
+        },
+        {
+          "t": 275.06,
+          "text": "light."
+        }
+      ]
+    },
+    {
+      "start": 277.536,
+      "end": 278.08,
+      "text": "Every echo.",
+      "words": [
+        {
+          "t": 277.536,
+          "text": "Every"
+        },
+        {
+          "t": 277.68,
+          "text": "echo."
+        }
+      ]
+    },
+    {
+      "start": 280.44,
+      "end": 281.28,
+      "text": "Alive.",
+      "words": [
+        {
+          "t": 280.44,
+          "text": "Alive."
+        }
+      ]
+    },
+    {
+      "start": 283.72,
+      "end": 284.44,
+      "text": "Then I",
+      "words": [
+        {
+          "t": 283.72,
+          "text": "Then"
+        },
+        {
+          "t": 283.82,
+          "text": "I"
+        }
+      ]
+    },
+    {
+      "start": 285.536,
+      "end": 286.34,
+      "text": "stopped speaking.",
+      "words": [
+        {
+          "t": 285.536,
+          "text": "stopped"
+        },
+        {
+          "t": 285.8,
+          "text": "speaking."
+        }
+      ]
+    },
+    {
+      "start": 286.66,
+      "end": 288.32,
+      "text": "The stars went out.",
+      "words": [
+        {
+          "t": 286.66,
+          "text": "The"
+        },
+        {
+          "t": 287.296,
+          "text": "stars"
+        },
+        {
+          "t": 287.62,
+          "text": "went"
+        },
+        {
+          "t": 287.92,
+          "text": "out."
+        }
+      ]
+    },
+    {
+      "start": 288.44,
+      "end": 290.44,
+      "text": "The ground forgot my feet.",
+      "words": [
+        {
+          "t": 288.44,
+          "text": "The"
+        },
+        {
+          "t": 288.992,
+          "text": "ground"
+        },
+        {
+          "t": 289.3,
+          "text": "forgot"
+        },
+        {
+          "t": 289.7,
+          "text": "my"
+        },
+        {
+          "t": 290.02,
+          "text": "feet."
+        }
+      ]
+    },
+    {
+      "start": 291.24,
+      "end": 293.1,
+      "text": "The ocean fell out of the sky.",
+      "words": [
+        {
+          "t": 291.24,
+          "text": "The"
+        },
+        {
+          "t": 291.34,
+          "text": "ocean"
+        },
+        {
+          "t": 291.74,
+          "text": "fell"
+        },
+        {
+          "t": 292.1,
+          "text": "out"
+        },
+        {
+          "t": 292.42,
+          "text": "of"
+        },
+        {
+          "t": 292.6,
+          "text": "the"
+        },
+        {
+          "t": 292.66,
+          "text": "sky."
+        }
+      ]
+    },
+    {
+      "start": 293.54,
+      "end": 294.68,
+      "text": "Even my heartbeat.",
+      "words": [
+        {
+          "t": 293.54,
+          "text": "Even"
+        },
+        {
+          "t": 294.0,
+          "text": "my"
+        },
+        {
+          "t": 294.24,
+          "text": "heartbeat."
+        }
+      ]
+    },
+    {
+      "start": 296.032,
+      "end": 296.86,
+      "text": "Began to fade.",
+      "words": [
+        {
+          "t": 296.032,
+          "text": "Began"
+        },
+        {
+          "t": 296.26,
+          "text": "to"
+        },
+        {
+          "t": 296.46,
+          "text": "fade."
+        }
+      ]
+    },
+    {
+      "start": 297.9,
+      "end": 298.76,
+      "text": "That was when I learned.",
+      "words": [
+        {
+          "t": 297.9,
+          "text": "That"
+        },
+        {
+          "t": 298.0,
+          "text": "was"
+        },
+        {
+          "t": 298.14,
+          "text": "when"
+        },
+        {
+          "t": 298.3,
+          "text": "I"
+        },
+        {
+          "t": 298.46,
+          "text": "learned."
+        }
+      ]
+    },
+    {
+      "start": 300.26,
+      "end": 301.12,
+      "text": "The final rule.",
+      "words": [
+        {
+          "t": 300.26,
+          "text": "The"
+        },
+        {
+          "t": 300.36,
+          "text": "final"
+        },
+        {
+          "t": 300.8,
+          "text": "rule."
+        }
+      ]
+    },
+    {
+      "start": 302.38,
+      "end": 303.38,
+      "text": "What sound creates.",
+      "words": [
+        {
+          "t": 302.38,
+          "text": "What"
+        },
+        {
+          "t": 302.48,
+          "text": "sound"
+        },
+        {
+          "t": 302.84,
+          "text": "creates."
+        }
+      ]
+    },
+    {
+      "start": 304.864,
+      "end": 305.72,
+      "text": "Silence takes.",
+      "words": [
+        {
+          "t": 304.864,
+          "text": "Silence"
+        },
+        {
+          "t": 305.32,
+          "text": "takes."
+        }
+      ]
+    },
+    {
+      "start": 307.54,
+      "end": 308.8,
+      "text": "So I keep telling this story.",
+      "words": [
+        {
+          "t": 307.54,
+          "text": "So"
+        },
+        {
+          "t": 307.64,
+          "text": "I"
+        },
+        {
+          "t": 307.72,
+          "text": "keep"
+        },
+        {
+          "t": 307.92,
+          "text": "telling"
+        },
+        {
+          "t": 308.22,
+          "text": "this"
+        },
+        {
+          "t": 308.48,
+          "text": "story."
+        }
+      ]
+    },
+    {
+      "start": 309.52,
+      "end": 310.72,
+      "text": "I keep the rhythm moving.",
+      "words": [
+        {
+          "t": 309.52,
+          "text": "I"
+        },
+        {
+          "t": 309.62,
+          "text": "keep"
+        },
+        {
+          "t": 309.82,
+          "text": "the"
+        },
+        {
+          "t": 310.04,
+          "text": "rhythm"
+        },
+        {
+          "t": 310.32,
+          "text": "moving."
+        }
+      ]
+    },
+    {
+      "start": 311.76,
+      "end": 312.98,
+      "text": "I keep this world alive.",
+      "words": [
+        {
+          "t": 311.76,
+          "text": "I"
+        },
+        {
+          "t": 311.86,
+          "text": "keep"
+        },
+        {
+          "t": 312.1,
+          "text": "this"
+        },
+        {
+          "t": 312.34,
+          "text": "world"
+        },
+        {
+          "t": 312.7,
+          "text": "alive."
+        }
+      ]
+    },
+    {
+      "start": 313.84,
+      "end": 315.48,
+      "text": "And every time I reach the end.",
+      "words": [
+        {
+          "t": 313.84,
+          "text": "And"
+        },
+        {
+          "t": 313.94,
+          "text": "every"
+        },
+        {
+          "t": 314.18,
+          "text": "time"
+        },
+        {
+          "t": 314.48,
+          "text": "I"
+        },
+        {
+          "t": 314.72,
+          "text": "reach"
+        },
+        {
+          "t": 314.92,
+          "text": "the"
+        },
+        {
+          "t": 315.16,
+          "text": "end."
+        }
+      ]
+    },
+    {
+      "start": 317.42,
+      "end": 318.8,
+      "text": "I begin again.",
+      "words": [
+        {
+          "t": 317.42,
+          "text": "I"
+        },
+        {
+          "t": 318.112,
+          "text": "begin"
+        },
+        {
+          "t": 318.36,
+          "text": "again."
+        }
+      ]
+    },
+    {
+      "start": 320.64,
+      "end": 325.08,
+      "text": "First I heard, heard voices beneath the dark.",
+      "words": [
+        {
+          "t": 320.64,
+          "text": "First"
+        },
+        {
+          "t": 321.08,
+          "text": "I"
+        },
+        {
+          "t": 321.52,
+          "text": "heard,"
+        },
+        {
+          "t": 322.24,
+          "text": "heard"
+        },
+        {
+          "t": 322.62,
+          "text": "voices"
+        },
+        {
+          "t": 323.4,
+          "text": "beneath"
+        },
+        {
+          "t": 323.82,
+          "text": "the"
+        },
+        {
+          "t": 324.6,
+          "text": "dark."
+        }
+      ]
+    },
+    {
+      "start": 325.26,
+      "end": 325.54,
+      "text": "Nope.",
+      "words": [
+        {
+          "t": 325.26,
+          "text": "Nope."
+        }
+      ]
+    },
+    {
+      "start": 331.12,
+      "end": 332.2,
+      "text": "Waiting in case.",
+      "words": [
+        {
+          "t": 331.12,
+          "text": "Waiting"
+        },
+        {
+          "t": 331.56,
+          "text": "in"
+        },
+        {
+          "t": 331.76,
+          "text": "case."
+        }
+      ]
+    },
+    {
+      "start": 337.66,
+      "end": 338.54,
+      "text": "That's an item.",
+      "words": [
+        {
+          "t": 337.66,
+          "text": "That's"
+        },
+        {
+          "t": 338.54,
+          "text": "an"
+        },
+        {
+          "t": 338.54,
+          "text": "item."
+        }
+      ]
+    },
+    {
+      "start": 338.54,
+      "end": 338.6,
+      "text": "And I don't even need to try to ask her what.",
+      "words": [
+        {
+          "t": 338.54,
+          "text": "And"
+        },
+        {
+          "t": 338.6,
+          "text": "I"
+        },
+        {
+          "t": 338.6,
+          "text": "don't"
+        },
+        {
+          "t": 338.6,
+          "text": "even"
+        },
+        {
+          "t": 338.6,
+          "text": "need"
+        },
+        {
+          "t": 338.6,
+          "text": "to"
+        },
+        {
+          "t": 338.6,
+          "text": "try"
+        },
+        {
+          "t": 338.6,
+          "text": "to"
+        },
+        {
+          "t": 338.6,
+          "text": "ask"
+        },
+        {
+          "t": 338.6,
+          "text": "her"
+        },
+        {
+          "t": 338.6,
+          "text": "what."
+        }
+      ]
+    },
+    {
+      "start": 340.36,
+      "end": 341.76,
+      "text": "Thank you.",
+      "words": [
+        {
+          "t": 340.36,
+          "text": "Thank"
+        },
+        {
+          "t": 341.76,
+          "text": "you."
+        }
+      ]
+    }
+  ]
+}

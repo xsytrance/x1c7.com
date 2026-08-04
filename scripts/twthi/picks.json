@@ -1,0 +1,19 @@
+{
+  "keep":    "scripts/song-art/twthi-out/keep-jugg-21.png",
+  "light":   "scripts/song-art/twthi-out/light-dream-12.png",
+  "gold":    "scripts/song-art/twthi-out/gold-jugg-21.png",
+  "move":    "scripts/song-art/twthi-out/move-jugg-21.png",
+  "gravity": "scripts/song-art/twthi-out/gravity-jugg-21.png",
+  "live":    "scripts/song-art/twthi-out/live-jugg-21.png",
+  "home":    "scripts/song-art/twthi-out/home-jugg-21.png",
+  "ear":     "scripts/song-art/twthi-out/ear-dream-11.png",
+  "breathe": "scripts/song-art/twthi-out/breathe-jugg-21.png",
+  "silence": "scripts/song-art/twthi-out/silence-dream-11.png",
+  "world":   "scripts/song-art/twthi-out/world-jugg-22.png",
+  "brass":   "scripts/song-art/twthi-out/brass-jugg-21.png",
+  "drums":   "scripts/song-art/twthi-out/drums-jugg-22.png",
+  "bass":    "scripts/song-art/twthi-out/bass-dream-11.png",
+  "alive":   "scripts/song-art/twthi-out/alive-jugg-22.png",
+  "stopped": "scripts/song-art/twthi-out/stopped-dream-12.png",
+  "rising":  "scripts/song-art/twthi-out/rain-jugg-21.png"
+}

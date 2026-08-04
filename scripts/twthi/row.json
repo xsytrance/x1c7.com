@@ -1,0 +1,495 @@
+{
+  "id": "the-world-that-heard-itself",
+  "title": "The World That Heard Itself",
+  "artist": "AGENOR",
+  "genre": "Cinematic Orchestral Hybrid",
+  "mood": "mythic",
+  "color": "#E9B94F",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/the-world-that-heard-itself/cover.png",
+  "audio_url": "/private/the-world-that-heard-itself.mp3",
+  "sort_order": 902,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[The Build]\n[03:48.10]So keep this world with me\n[03:51.14]I said, Light\n[03:53.36]And the melody turned gold\n[03:54.94]I said, Move\n[03:56.20]And gravity found the beat\n[03:58.44]I said, Live\n[03:59.92]And every sound came home\n[The Climax]\n[04:06.00]Every sound becomes a body\n[04:09.98]Every echo learns to breathe\n[04:14.76]What the noise creates\n[04:17.66]the silence takes\n[04:19.74]So keep this world with me\n[04:26.39]Voices into brass\n[04:29.32]Steps into drums\n[04:32.00]Blood into bass\n[04:34.29]Rain into light\n[04:37.50]Every echo, alive\n[The Collapse]\n[04:43.72]Then, I stopped speaking",
+  "lyrics_synced": {
+    "source": "aligned-window-227.8-286.8-cut",
+    "refinedAt": "2026-08-04T01:52:01.791Z",
+    "words": [
+      {
+        "t": 228.1,
+        "w": "So"
+      },
+      {
+        "t": 228.42,
+        "w": "keep"
+      },
+      {
+        "t": 228.86,
+        "w": "this"
+      },
+      {
+        "t": 229.52,
+        "w": "world"
+      },
+      {
+        "t": 230.12,
+        "w": "with"
+      },
+      {
+        "t": 230.64,
+        "w": "me"
+      },
+      {
+        "t": 231.14,
+        "w": "I"
+      },
+      {
+        "t": 231.76,
+        "w": "said"
+      },
+      {
+        "t": 232.16,
+        "w": "Light"
+      },
+      {
+        "t": 233.36,
+        "w": "And"
+      },
+      {
+        "t": 233.5,
+        "w": "the"
+      },
+      {
+        "t": 233.62,
+        "w": "melody"
+      },
+      {
+        "t": 233.9,
+        "w": "turned"
+      },
+      {
+        "t": 234.24,
+        "w": "gold"
+      },
+      {
+        "t": 234.94,
+        "w": "I"
+      },
+      {
+        "t": 235.16,
+        "w": "said"
+      },
+      {
+        "t": 235.56,
+        "w": "Move"
+      },
+      {
+        "t": 236.2,
+        "w": "And"
+      },
+      {
+        "t": 236.78,
+        "w": "gravity"
+      },
+      {
+        "t": 237.36,
+        "w": "found"
+      },
+      {
+        "t": 237.78,
+        "w": "the"
+      },
+      {
+        "t": 237.98,
+        "w": "beat"
+      },
+      {
+        "t": 238.44,
+        "w": "I"
+      },
+      {
+        "t": 238.58,
+        "w": "said"
+      },
+      {
+        "t": 239.06,
+        "w": "Live"
+      },
+      {
+        "t": 239.92,
+        "w": "And"
+      },
+      {
+        "t": 240.24,
+        "w": "every"
+      },
+      {
+        "t": 240.68,
+        "w": "sound"
+      },
+      {
+        "t": 241.24,
+        "w": "came"
+      },
+      {
+        "t": 241.88,
+        "w": "home"
+      },
+      {
+        "t": 246,
+        "w": "Every"
+      },
+      {
+        "t": 246.62,
+        "w": "sound"
+      },
+      {
+        "t": 247.2,
+        "w": "becomes"
+      },
+      {
+        "t": 248.34,
+        "w": "a"
+      },
+      {
+        "t": 249.02,
+        "w": "body"
+      },
+      {
+        "t": 249.98,
+        "w": "Every"
+      },
+      {
+        "t": 251.06,
+        "w": "echo"
+      },
+      {
+        "t": 252.1,
+        "w": "learns"
+      },
+      {
+        "t": 252.84,
+        "w": "to"
+      },
+      {
+        "t": 253.78,
+        "w": "breathe"
+      },
+      {
+        "t": 254.76,
+        "w": "What"
+      },
+      {
+        "t": 255.24,
+        "w": "the"
+      },
+      {
+        "t": 255.76,
+        "w": "noise"
+      },
+      {
+        "t": 256.48,
+        "w": "creates"
+      },
+      {
+        "t": 257.66,
+        "w": "the"
+      },
+      {
+        "t": 257.98,
+        "w": "silence"
+      },
+      {
+        "t": 258.9,
+        "w": "takes"
+      },
+      {
+        "t": 259.74,
+        "w": "So"
+      },
+      {
+        "t": 260.04,
+        "w": "keep"
+      },
+      {
+        "t": 260.56,
+        "w": "this"
+      },
+      {
+        "t": 261.2,
+        "w": "world"
+      },
+      {
+        "t": 261.88,
+        "w": "with"
+      },
+      {
+        "t": 262.32,
+        "w": "me"
+      },
+      {
+        "t": 266.39,
+        "w": "Voices"
+      },
+      {
+        "t": 266.86,
+        "w": "into"
+      },
+      {
+        "t": 267.12,
+        "w": "brass"
+      },
+      {
+        "t": 269.32,
+        "w": "Steps"
+      },
+      {
+        "t": 269.78,
+        "w": "into"
+      },
+      {
+        "t": 270,
+        "w": "drums"
+      },
+      {
+        "t": 272,
+        "w": "Blood"
+      },
+      {
+        "t": 272.36,
+        "w": "into"
+      },
+      {
+        "t": 272.68,
+        "w": "bass"
+      },
+      {
+        "t": 274.29,
+        "w": "Rain"
+      },
+      {
+        "t": 274.58,
+        "w": "into"
+      },
+      {
+        "t": 275.1,
+        "w": "light"
+      },
+      {
+        "t": 277.5,
+        "w": "Every"
+      },
+      {
+        "t": 277.76,
+        "w": "echo"
+      },
+      {
+        "t": 278.4,
+        "w": "alive"
+      },
+      {
+        "t": 283.72,
+        "w": "Then"
+      },
+      {
+        "t": 285.5,
+        "w": "I"
+      },
+      {
+        "t": 285.75,
+        "w": "stopped"
+      },
+      {
+        "t": 286,
+        "w": "speaking"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-08-04T01:52:01.791Z",
+    "styleHint": "Cinematic orchestral hybrid — a spoken creation myth. THE AUDIBLE DESERT: Dalí-grade surrealist oil, vast empty plains, molten gold against deep teal, a world with no people where every sound is a body.",
+    "analysis": {
+      "themes": [
+        "creation",
+        "sound",
+        "silence",
+        "myth",
+        "metamorphosis"
+      ],
+      "palette": [
+        "#F2E9D8",
+        "#E9B94F",
+        "#7FB5A8",
+        "#C97C3F"
+      ],
+      "summary": "An empty world waits to hear itself; a voice speaks sounds into bodies, and what the noise creates, the silence takes.",
+      "keywords": [],
+      "sections": [],
+      "overallMood": "mythic awe"
+    },
+    "assets": {
+      "broll": [],
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/the-world-that-heard-itself/stems/stems.json",
+      "stemLag": 0,
+      "shots": {
+        "/planets/the-world-that-heard-itself/scene-keep.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-light.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-gold.webp": "MED",
+        "/planets/the-world-that-heard-itself/scene-move.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-gravity.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-live.webp": "MED",
+        "/planets/the-world-that-heard-itself/scene-home.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-ear.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-breathe.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-silence.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-world.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-brass.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-drums.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-bass.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-alive.webp": "WIDE",
+        "/planets/the-world-that-heard-itself/scene-stopped.webp": "WIDE"
+      },
+      "keywords": {
+        "keep": "/planets/the-world-that-heard-itself/scene-keep.webp",
+        "world": "/planets/the-world-that-heard-itself/scene-world.webp",
+        "light": "/planets/the-world-that-heard-itself/scene-light.webp",
+        "gold": "/planets/the-world-that-heard-itself/scene-gold.webp",
+        "move": "/planets/the-world-that-heard-itself/scene-move.webp",
+        "gravity": "/planets/the-world-that-heard-itself/scene-gravity.webp",
+        "live": "/planets/the-world-that-heard-itself/scene-live.webp",
+        "home": "/planets/the-world-that-heard-itself/scene-home.webp",
+        "becomes": "/planets/the-world-that-heard-itself/scene-ear.webp",
+        "echo": "/planets/the-world-that-heard-itself/scene-alive.webp",
+        "breathe": "/planets/the-world-that-heard-itself/scene-breathe.webp",
+        "silence": "/planets/the-world-that-heard-itself/scene-silence.webp",
+        "voices": "/planets/the-world-that-heard-itself/scene-brass.webp",
+        "steps": "/planets/the-world-that-heard-itself/scene-drums.webp",
+        "blood": "/planets/the-world-that-heard-itself/scene-bass.webp",
+        "rain": "/planets/the-world-that-heard-itself/scene-light.webp",
+        "then": "/planets/the-world-that-heard-itself/scene-stopped.webp"
+      },
+      "sections": {
+        "hushed": "/planets/the-world-that-heard-itself/scene-keep.webp",
+        "command": "/planets/the-world-that-heard-itself/scene-light.webp",
+        "rising": "/planets/the-world-that-heard-itself/scene-rising.webp",
+        "alive": "/planets/the-world-that-heard-itself/scene-alive.webp",
+        "collapse": "/planets/the-world-that-heard-itself/scene-stopped.webp"
+      }
+    },
+    "interactions": {
+      "moments": [],
+      "tapEffect": "bloom"
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "THE WORLD THAT HEARD ITSELF 59s cut — THE AUDIBLE DESERT voice, 17 surrealist plates, no humans anywhere. (window 227.8-286.8)",
+      "scene": "AURORA",
+      "acts": [
+        {
+          "start": 227.8,
+          "end": 243,
+          "label": "I SAID LIGHT",
+          "why": "the commands — light, move, live"
+        },
+        {
+          "start": 243,
+          "end": 281.5,
+          "label": "EVERY ECHO ALIVE",
+          "why": "the climax — the world sings at full weight"
+        },
+        {
+          "start": 281.5,
+          "end": 286.8,
+          "label": "SILENCE TAKES",
+          "why": "he stops speaking and the world goes out"
+        }
+      ],
+      "modes": [
+        {
+          "start": 227.8,
+          "end": 232.1,
+          "mode": "phrase"
+        },
+        {
+          "start": 232.1,
+          "end": 232.69,
+          "mode": "dynamic"
+        },
+        {
+          "start": 232.69,
+          "end": 235.53,
+          "mode": "phrase"
+        },
+        {
+          "start": 235.53,
+          "end": 236.14,
+          "mode": "dynamic"
+        },
+        {
+          "start": 236.14,
+          "end": 239.02,
+          "mode": "phrase"
+        },
+        {
+          "start": 239.02,
+          "end": 239.86,
+          "mode": "dynamic"
+        },
+        {
+          "start": 239.86,
+          "end": 286.8,
+          "mode": "phrase"
+        }
+      ],
+      "words": {
+        "light": "bloom",
+        "gold": "melt",
+        "move": "quake",
+        "gravity": "fall",
+        "beat": "pulse",
+        "live": "rise",
+        "home": "cling",
+        "body": "slam",
+        "echo": "echo",
+        "breathe": "fogbreath",
+        "noise": "glitch",
+        "silence": "whisper",
+        "takes": "dissolve",
+        "world": "shimmer",
+        "keep": "squeeze",
+        "alive": "cling",
+        "voices": "wave",
+        "brass": "burn",
+        "steps": "tremor",
+        "drums": "pulse",
+        "blood": "bleed",
+        "bass": "liquid",
+        "rain": "drip",
+        "stopped": "tvoff",
+        "speaking": "dissolve"
+      },
+      "deck": {
+        "glow": 1.3,
+        "grain": 0.5,
+        "density": 2.2,
+        "vignette": 0.6,
+        "giant": {
+          "life": 2200,
+          "pile": 0,
+          "clearOnSwitch": true
+        },
+        "motion": {
+          "swapMs": 900
+        }
+      },
+      "hits": [
+        {
+          "t": 245.96,
+          "dur": 1.2
+        }
+      ],
+      "holds": [],
+      "rolls": []
+    }
+  }
+}

@@ -743,3 +743,50 @@ used one tight portrait as the Kontext source when
 `assets/art/kizunasato/` held three full-body environmental shots — a rooftop
 over a night skyline, arms-up in a wet Dotonbori street, and a studio desk.
 The range was there the whole time and the pipeline never looked.
+
+## 18 · The World That Heard Itself — the no-humans cut (2026-08-03)
+
+Eleventh voice: **THE AUDIBLE DESERT** — Dalí-grade surrealist oil on one
+continuous desert stage: razor-flat horizon, cavernous twilight sky, ochre and
+deep teal with molten gold, and NOT ONE HUMAN in any plate (owner order:
+"absolutely no humans at all"). The song is a creation myth where sounds become
+bodies, so the ban costs nothing — the narrator is the unseen voice, and every
+lyric line is an object miracle: a melting gold piano for "the melody turned
+gold", planet-pendulums striking a drumhead desert for "gravity found the
+beat", a crimson river feeding a whale-sized double bass for "Blood into
+bass". Scripts in `scripts/twthi/`; art generator `scripts/song-art/twthi-art.mjs`.
+
+- **The DiT engines wedge ComfyUI on this box — cut art is SDXL-only until
+  that is fixed.** flux2-klein hung ComfyUI mid-model-load (HTTP dead, 0% GPU,
+  10.5GB held, no log line for 8+ minutes) — the same still-unfixed failure
+  mode as the PRIME freeze, triggered interactively this time. Killed the
+  process, restarted, and regenerated everything on DreamShaperXL Turbo +
+  Juggernaut/Lightning. SDXL does Dalí pastiche superbly; nothing was lost.
+  Whisper also cannot share the GPU with a generating ComfyUI (16GB box: CUDA
+  OOM) — short slices on `--device cpu` are fine.
+- **A whole vocal section can live ONLY on the backing stem.** The female hook
+  and "I said, Light." (213.5–233.4) have a silent lead stem; both whisper
+  passes on the lead simply skipped them, and the words had to be timed from
+  `1 Backing Vocals.mp3`. If a section seems missing, RMS-map BOTH vocal stems
+  before concluding Suno didn't render it.
+- **The −42 dB gate catches what slice-whisper gets wrong.** Six litany/build
+  line-start words came back parked 0.3–0.6s into silence. The build script
+  (`twthi/build.mjs`) runs the §16 RMS check over every word on its OWN stem
+  and refuses to write while any fail — make the check part of the builder,
+  not a separate step you can forget.
+- **A word that fires twice can share one plate.** "light" appears at "I said,
+  Light" (232.16) and "Rain into light" (275.10), and the retimed litany put
+  the `rain` anchor 0.81s before the second fire — an illegal cut. Fix: point
+  `rain` and `light` at the SAME url (§15: same-url hits never cut) and paint
+  one plate that serves both lines (the dark-sky orb dripping gold into a lit
+  river). Merging two scene concepts beats weakening either moment.
+- **Suno skipped the lyric sheet's dramatic silence.** The sheet promises
+  "[Several seconds of emptiness]" after "I stopped speaking"; the mix keeps
+  pads at −12 dB and the narrator walks straight on. The 59s window ends at
+  286.8, inside the 0.5s breath gap after "speaking", so the cut lands on the
+  collapse line without slicing "The stars went—".
+- **Contact-sheet the candidates at ~500px before picking: SDXL sneaks tiny
+  humans into empty worlds.** 4 of 68 candidates grew a figure (a walker
+  between monoliths, two on a canyon floor, one silhouetted at a crack, one on
+  a horizon) despite "no people" positives and negatives. All four were
+  visible at 500px and invisible at 250px.
