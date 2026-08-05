@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-08-02T13:27:32.213Z",
+  "generatedAt": "2026-08-04T05:29:23.187Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1413,
+    "candidates": 1505,
     "judged": 64,
-    "accepted": 56,
+    "accepted": 57,
     "kept": 32
   },
   "reel": [
@@ -19,8 +19,20 @@
       "t": 52.512,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Urban neon symbolizes transformation and triumph over void",
+      "reason": "Urban rebirth, transformation, and triumph align with song's themes of renewal and discipl",
       "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s6-5-word-portrait.webp",
+      "key": "lexicon/build/s6-5-word-portrait.webp",
+      "word": "build",
+      "line": "show up Word is born, what you say gotta stay If you build it brick by brick, you can change your fate It's",
+      "t": 60.128,
+      "score": 0.95,
+      "cosine": 0.503,
+      "reason": "Symbolizes growth, resilience, and renewal in urban setting",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -55,7 +67,7 @@
       "t": 15.4,
       "score": 0.95,
       "cosine": 0.466,
-      "reason": "Strong symbolism of resilience, grit, and renewal aligns with song's triumphant discipline",
+      "reason": "Matches triumphant discipline, resilience, and solitary determination",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -67,7 +79,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.455,
-      "reason": "Symbolizes transformation and determination in a gritty setting",
+      "reason": "Symbolizes transformation and determination in a gritty, industrial setting",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -151,8 +163,20 @@
       "t": 50.457,
       "score": 0.95,
       "cosine": 0.431,
-      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes",
+      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes.",
       "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s10-3-word-portrait.webp",
+      "key": "lexicon/build/s10-3-word-portrait.webp",
+      "word": "build",
+      "line": "show up Word is born, what you say gotta stay If you build it brick by brick, you can change your fate It's",
+      "t": 60.128,
+      "score": 0.95,
+      "cosine": 0.43,
+      "reason": "Aligns with themes of building and renewal, fits triumphant discipline mood",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -187,7 +211,7 @@
       "t": 98.79,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Urban resilience, neon lighting, and triumphant renewal align with song's themes.",
+      "reason": "Urban resilience, neon lighting, and triumphant renewal align with the song's themes.",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -211,7 +235,7 @@
       "t": 26.609,
       "score": 0.9,
       "cosine": 0.478,
-      "reason": "Triumphant crowd, sweat as hard work, urban setting align",
+      "reason": "Triumphant crowd, sweat as hard work, borough pride and discipline align with song's theme",
       "recipe": "6-photo",
       "featured": true
     },
@@ -223,7 +247,7 @@
       "t": 121.324,
       "score": 0.9,
       "cosine": 0.47,
-      "reason": "Symbolizes journey and renewal; fits triumphant, disciplined mood.",
+      "reason": "Symbolizes journey, hope, and direction align with triumph and renewal",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -235,7 +259,7 @@
       "t": 15.4,
       "score": 0.9,
       "cosine": 0.461,
-      "reason": "Resilience, unity, pride align with song's themes and mood",
+      "reason": "Resonates with triumph, unity, and pride fitting the song's themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +271,7 @@
       "t": 52.048,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Urban renewal, discipline, and transformation align with the song's themes.",
+      "reason": "Urban renewal, neon symbolism, and resilience align with the song's themes.",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -283,7 +307,7 @@
       "t": 4.876,
       "score": 0.9,
       "cosine": 0.449,
-      "reason": "Motivational, disciplined, triumphant vibe aligns with song's themes",
+      "reason": "Motivational, disciplined, and triumphant imagery fits the song's themes",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -297,18 +321,6 @@
       "cosine": 0.44,
       "reason": "Symbolism of blood as resilience, fists as solidarity, urban grit aligns with song's theme",
       "recipe": "3-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s6-6-poster.webp",
-      "key": "lexicon/dreams/s6-6-poster.webp",
-      "word": "dreams",
-      "line": "lose the game Side trends forever, that's family time Dreams look impossible, today you're robbed From",
-      "t": 154.935,
-      "score": 0.9,
-      "cosine": 0.434,
-      "reason": "Energetic, optimistic design aligns with triumphant discipline and reinvention themes.",
-      "recipe": "6-poster",
       "featured": true
     },
     {
@@ -331,7 +343,7 @@
       "t": 113.92,
       "score": 0.9,
       "cosine": 0.43,
-      "reason": "Urban energy aligns with borough pride and triumphant discipline",
+      "reason": "Urban energy aligns with song's borough pride and triumphant mood",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -379,89 +391,75 @@
       "t": 114.277,
       "score": 0.85,
       "cosine": 0.441,
-      "reason": "Fits mood with urgency and energy, cyberpunk aligns with futuristic themes",
+      "reason": "Fits triumphant urgency, futuristic energy aligns with renewal and discipline",
       "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s1-5-neon-night.webp",
-      "key": "lexicon/wall/s1-5-neon-night.webp",
-      "word": "wall",
-      "line": "build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all Can",
-      "t": 109.33,
-      "score": 0.85,
-      "cosine": 0.422,
-      "reason": "Urban grit, order vs chaos, resilience fit song's themes",
-      "recipe": "5-neon-night",
       "featured": true
     }
   ],
   "byWord": {
     "gold": [
       0,
-      6
+      7
+    ],
+    "build": [
+      1,
+      13
     ],
     "road": [
-      1,
-      17
-    ],
-    "fast": [
       2,
-      7,
-      30
-    ],
-    "walk": [
-      3,
-      18
-    ],
-    "code": [
-      4,
-      5,
-      10
-    ],
-    "move": [
-      8,
-      9,
-      26
-    ],
-    "veneno": [
-      11
-    ],
-    "void": [
-      12,
-      15,
       19
     ],
-    "different": [
-      13,
+    "fast": [
+      3,
+      8,
+      31
+    ],
+    "walk": [
+      4,
+      20
+    ],
+    "code": [
+      5,
+      6,
+      11
+    ],
+    "move": [
+      9,
+      10,
       27
     ],
-    "night": [
-      14
+    "veneno": [
+      12
     ],
-    "summer": [
-      16
+    "void": [
+      14,
+      17,
+      21
     ],
-    "sun": [
-      20,
-      21,
+    "different": [
+      15,
       28
     ],
-    "save": [
+    "night": [
+      16
+    ],
+    "summer": [
+      18
+    ],
+    "sun": [
       22,
-      25
-    ],
-    "blood": [
-      23
-    ],
-    "dreams": [
-      24
-    ],
-    "forever": [
+      23,
       29
     ],
-    "wall": [
-      31
+    "save": [
+      24,
+      26
+    ],
+    "blood": [
+      25
+    ],
+    "forever": [
+      30
     ]
   }
 }

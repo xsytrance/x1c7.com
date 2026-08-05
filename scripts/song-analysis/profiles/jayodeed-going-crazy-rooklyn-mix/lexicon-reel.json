@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-08-02T14:03:18.814Z",
+  "generatedAt": "2026-08-04T05:42:19.565Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2019,
+    "candidates": 2055,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -55,7 +55,7 @@
       "t": 160.624,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "Reflects toxic relationship, addiction, and urban chaos",
+      "reason": "Reflects addiction, chaos, and toxic love with glass as a symbolic barrier",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 44.815,
       "score": 0.95,
       "cosine": 0.516,
-      "reason": "fits toxic love, nightlife, danger, seduction",
+      "reason": "fits toxic love, nightlife, danger, and allure",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 30.291,
       "score": 0.95,
       "cosine": 0.5,
-      "reason": "Evokes haunting loneliness and urban decay fitting the song's themes",
+      "reason": "Evokes haunting loneliness and urban decay fitting the song's obsession and chaos",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -240,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
+      "key": "lexicon/dark/s9-2-word-portrait.webp",
+      "word": "dark",
+      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
+      "t": 166.174,
+      "score": 0.95,
+      "cosine": 0.48,
+      "reason": "matches toxic mood, decay, and dramatic lighting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s6-3-word-portrait.webp",
       "key": "lexicon/dark/s6-3-word-portrait.webp",
       "word": "dark",
@@ -259,7 +271,19 @@
       "t": 50.051,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "fits toxic love, chaos, and nightlife themes with gritty, melancholic mood",
+      "reason": "fits toxic love, chaos, and nightlife symbolism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s2-6-word-portrait.webp",
+      "key": "lexicon/chaos/s2-6-word-portrait.webp",
+      "word": "chaos",
+      "line": "Hands on my waist Like you never lied to me I hate that I miss it The chaos the kisses Your hands on my skin And the way that you listen Dont say that you",
+      "t": 107.381,
+      "score": 0.95,
+      "cosine": 0.474,
+      "reason": "fits toxic chaos, neon lights, dystopia match song's mood and themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -271,7 +295,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Strong visual metaphor for toxic obsession and urban chaos",
+      "reason": "fits toxic obsession, urban chaos, emotional intensity",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -283,7 +307,7 @@
       "t": 47.021,
       "score": 0.95,
       "cosine": 0.464,
-      "reason": "fits toxic obsession, chaos, and nightlife themes",
+      "reason": "matches toxic obsession, chaos, and nightlife themes",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -295,7 +319,7 @@
       "t": 104.246,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "matches toxic emotion, chaos, and melancholic atmosphere",
+      "reason": "Emotional pain, dim lighting, turmoil match song's mood and themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -307,7 +331,7 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, emotional tension",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty emotion",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -319,7 +343,7 @@
       "t": 120.523,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "fits toxic chaos, intense emotion, symbolic fire",
+      "reason": "Powerful imagery matches toxic obsession and chaos",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -348,6 +372,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chaos/s5-3-word-neon.webp",
+      "key": "lexicon/chaos/s5-3-word-neon.webp",
+      "word": "chaos",
+      "line": "Hands on my waist Like you never lied to me I hate that I miss it The chaos the kisses Your hands on my skin And the way that you listen Dont say that you",
+      "t": 107.381,
+      "score": 0.95,
+      "cosine": 0.439,
+      "reason": "Urban chaos, neon, and emotional tension align with the song's themes and mood.",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s5-5-word-portrait.webp",
       "key": "lexicon/crazy/s5-5-word-portrait.webp",
       "word": "crazy",
@@ -355,44 +391,8 @@
       "t": 3.773,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "fits toxic obsession, chaotic visuals, noir-cartoon vibe",
+      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s5-5-word-neon.webp",
-      "key": "lexicon/high/s5-5-word-neon.webp",
-      "word": "high",
-      "line": "We dont need forever Just give me the high Round and round We",
-      "t": 115.82,
-      "score": 0.95,
-      "cosine": 0.426,
-      "reason": "Surreal neon imagery fits toxic nightlife and addiction themes",
-      "recipe": "5-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s4-6-word-neon.webp",
-      "key": "lexicon/hands/s4-6-word-neon.webp",
-      "word": "hands",
-      "line": "this ends You know where to find me Back where the lights bleed Hands on my waist Like you never lied to me I hate that I miss it The chaos",
-      "t": 104.571,
-      "score": 0.95,
-      "cosine": 0.423,
-      "reason": "Skeletal hands, neon, gritty noir match toxic obsession and chaos",
-      "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s1-1-word-neon.webp",
-      "key": "lexicon/high/s1-1-word-neon.webp",
-      "word": "high",
-      "line": "We dont need forever Just give me the high Round and round We",
-      "t": 115.82,
-      "score": 0.95,
-      "cosine": 0.423,
-      "reason": "Cyberpunk neon fits toxic nightlife and addiction themes",
-      "recipe": "1-word-neon",
       "featured": true
     }
   ],
@@ -400,7 +400,7 @@
     "crazy": [
       0,
       9,
-      28
+      31
     ],
     "glass": [
       1,
@@ -436,32 +436,32 @@
     ],
     "burn": [
       18,
-      25
-    ],
-    "dark": [
-      19
-    ],
-    "love": [
-      20
-    ],
-    "eyes": [
-      21,
-      22,
-      26
-    ],
-    "bleed": [
-      23
-    ],
-    "hands": [
-      24,
-      30
-    ],
-    "truth": [
       27
     ],
-    "high": [
-      29,
-      31
+    "dark": [
+      19,
+      20
+    ],
+    "love": [
+      21
+    ],
+    "chaos": [
+      22,
+      30
+    ],
+    "eyes": [
+      23,
+      24,
+      28
+    ],
+    "bleed": [
+      25
+    ],
+    "hands": [
+      26
+    ],
+    "truth": [
+      29
     ]
   }
 }

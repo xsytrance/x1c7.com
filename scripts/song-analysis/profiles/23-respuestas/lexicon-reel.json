@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-08-02T13:28:05.776Z",
+  "generatedAt": "2026-08-04T05:29:36.698Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 70,
+    "candidates": 88,
     "judged": 12,
-    "accepted": 12,
-    "kept": 12
+    "accepted": 11,
+    "kept": 11
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 98.279,
       "score": 0.95,
       "cosine": 0.412,
-      "reason": "Powerful visual aligns with song's melancholic, intimate, and theatrical mood.",
+      "reason": "Powerful visual matches song's melancholic, intimate, and theatrical mood",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 8.893,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Matches mood and themes with neon, cosmic, and symbolic elements",
+      "reason": "matches mood and themes with neon symbolism and emotional closure",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -48,6 +48,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-6-word-neon.webp",
+      "key": "lexicon/fuego/s4-6-word-neon.webp",
+      "word": "fuego",
+      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
+      "t": 209.164,
+      "score": 0.9,
+      "cosine": 0.451,
+      "reason": "Sensual, moody, and symbolic of passion and urban emotion",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s2-4-film-still.webp",
+      "key": "lexicon/fuego/s2-4-film-still.webp",
+      "word": "fuego",
+      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
+      "t": 209.164,
+      "score": 0.9,
+      "cosine": 0.44,
+      "reason": "Symbolizes passion and inner turmoil, aligns with emotional closure and empowerment themes",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s0-1-word-portrait.webp",
       "key": "lexicon/sin/s0-1-word-portrait.webp",
       "word": "sin",
@@ -60,15 +84,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s1-5-neon-sign.webp",
-      "key": "lexicon/fuego/s1-5-neon-sign.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-2-photo.webp",
+      "key": "lexicon/fuego/s4-2-photo.webp",
       "word": "fuego",
       "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
       "t": 209.164,
       "score": 0.85,
-      "cosine": 0.408,
-      "reason": "Matches sensual energy and fire symbolism, fits urban mood",
-      "recipe": "5-neon-sign",
+      "cosine": 0.442,
+      "reason": "Symbolism aligns with passion and machinery, fits sensual and melancholic mood",
+      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -115,67 +139,30 @@
       "t": 98.279,
       "score": 0.8,
       "cosine": 0.372,
-      "reason": "Emotional wound aligns with lyric, vulnerability fits melancholic mood",
+      "reason": "Matches melancholic mood and emotional closure theme",
       "recipe": "6-photo",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-5-photo.webp",
-      "key": "lexicon/fuego/s0-5-photo.webp",
-      "word": "fuego",
-      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
-      "t": 209.164,
-      "score": 0.7,
-      "cosine": 0.403,
-      "reason": "Fire symbolizes emotional intensity and purification, aligns with themes of closure and re",
-      "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
-      "key": "lexicon/fuego/s0-4-cinema.webp",
-      "word": "fuego",
-      "line": "Ocho no supiste verme Nueve hubo fuego Diez hubo frío Once me perdí Doce",
-      "t": 209.164,
-      "score": 0.6,
-      "cosine": 0.408,
-      "reason": "Fire symbolizes past passion and warmth, fits melancholic and sensual mood",
-      "recipe": "4-cinema",
-      "featured": false
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sin/s2-2-photo.webp",
-      "key": "lexicon/sin/s2-2-photo.webp",
-      "word": "sin",
-      "line": "de quedarme de más Tú querías mi perdón sin cambiar la historia entera yo quería un amor grande no",
-      "t": 136.023,
-      "score": 0.6,
-      "cosine": 0.358,
-      "reason": "Image reflects guilt and sorrow, aligns with melancholic mood but lacks empowerment",
-      "recipe": "2-photo",
-      "featured": false
     }
   ],
   "byWord": {
     "herida": [
       0,
-      7,
-      8
+      9,
+      10
     ],
     "respuestas": [
       1,
-      5,
-      6
+      7,
+      8
     ],
     "sin": [
       2,
-      3,
-      11
+      5
     ],
     "fuego": [
+      3,
       4,
-      9,
-      10
+      6
     ]
   }
 }

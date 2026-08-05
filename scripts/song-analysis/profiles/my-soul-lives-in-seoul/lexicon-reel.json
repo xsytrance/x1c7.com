@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-08-02T14:14:29.573Z",
+  "generatedAt": "2026-08-04T05:46:02.749Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1437,
+    "candidates": 1494,
     "judged": 64,
-    "accepted": 58,
+    "accepted": 59,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 100.287,
       "score": 0.95,
       "cosine": 0.57,
-      "reason": "Intimate glow symbolizes connection; golden light aligns with Seoul's evening vibe and hop",
+      "reason": "Intimate glow symbolizes connection; urban setting aligns with Seoul; hopeful mood matches",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 16.185,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "Captures long-distance connection, digital resilience, and global unity",
+      "reason": "Captures long-distance connection, hope, and digital unity in a romantic setting",
       "recipe": "1",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 3.855,
       "score": 0.95,
       "cosine": 0.494,
-      "reason": "Cultural symbolism, emotional warmth, and urban setting align with song's themes and mood.",
+      "reason": "Cultural identity, emotional warmth, and urban setting align with song's themes and mood.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 29.083,
       "score": 0.95,
       "cosine": 0.491,
-      "reason": "glitchy romance, digital turbulence, neon aesthetics match song's themes",
+      "reason": "glitchy romance, digital turbulence, neon aesthetics match song's theme",
       "recipe": "4-film-still",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 3.855,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "Symbolizes Seoul's cultural identity, urban solitude, and hope in a long-distance relation",
+      "reason": "Symbolizes Seoul as a soulful, nostalgic anchor in a global relationship",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 100.287,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "Neon glow symbolizes digital connection and resilience in long-distance love",
+      "reason": "Neon glow symbolizes connection, Seoul setting matches song, hopeful mood aligns",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 19.737,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "Captures digital connection and loneliness in long-distance love",
+      "reason": "Captures late-night digital connection and loneliness in a long-distance relationship",
       "recipe": "1",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 2.496,
       "score": 0.95,
       "cosine": 0.437,
-      "reason": "Symbolizes soul connection across distances, fits cosmic and universal themes",
+      "reason": "Cosmic unity and soul theme align with song's global love and connection",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 289.482,
       "score": 0.95,
       "cosine": 0.389,
-      "reason": "Cultural harmony, musical connection, and intimate resonance align with the song's themes ",
+      "reason": "Cultural harmony, musical connection, and timeless love align with the song's themes of gl",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 14.141,
       "score": 0.95,
       "cosine": 0.388,
-      "reason": "Intimate, tender, and cinematic; aligns with digital connection and emotional closeness in",
+      "reason": "Intimate, tender, and cinematic image aligns with song's romantic resilience and digital c",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 36.781,
       "score": 0.9,
       "cosine": 0.488,
-      "reason": "romantic intimacy aligns with song's emotional core and visual storytelling",
+      "reason": "Romantic intimacy aligns with song's theme of love across distance",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 100.287,
       "score": 0.9,
       "cosine": 0.423,
-      "reason": "Romantic intimacy under neon fits Seoul's nightlife and love theme",
+      "reason": "Romantic intimacy under neon fits Seoul nightlife and glowing love",
       "recipe": "2-concept-art",
       "featured": true
     }

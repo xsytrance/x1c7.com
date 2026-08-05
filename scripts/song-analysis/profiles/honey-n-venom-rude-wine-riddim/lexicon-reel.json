@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-08-02T13:49:16.259Z",
+  "generatedAt": "2026-08-04T05:37:19.134Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2011,
+    "candidates": 2058,
     "judged": 64,
     "accepted": 59,
     "kept": 32
@@ -139,7 +139,7 @@
       "t": 35.573,
       "score": 0.95,
       "cosine": 0.588,
-      "reason": "matches seductive danger, club vibe, neon symbolism",
+      "reason": "matches club energy, seductive danger, neon symbolism",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 12.38,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Symbolism aligns with toxic romance and seductive danger.",
+      "reason": "Symbolizes sweet danger, aligns with seductive toxicity and club energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 63.878,
       "score": 0.95,
       "cosine": 0.565,
-      "reason": "matches toxic allure, club energy, neon symbolism, seductive danger",
+      "reason": "matches toxic allure, club energy, and seductive danger",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 165.953,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "matches toxic allure, urban decay, and hidden danger",
+      "reason": "matches toxic allure, urban decay, and dangerous seduction",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 56.715,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Seductive, intimate, and alluring image fits the song's aggressive seduction and club ener",
+      "reason": "Seductive, intimate, and alluring image matches the song's aggressive seduction and club e",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 55.461,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Eerie, frozen face matches cold allure and emotional paralysis in lyric",
+      "reason": "Eerie, frozen expression matches 'cold' and toxic allure of the song",
       "recipe": "1-neon-sign",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 63.878,
       "score": 0.95,
       "cosine": 0.501,
-      "reason": "Matches aggressive seduction, fire as toxic desire, club energy",
+      "reason": "Fire's aggressive, seductive energy matches song's toxic romance and club intensity",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 129.626,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "Urban nightlife, neon lights, and mysterious tension align with club energy and seductive ",
+      "reason": "Urban nightlife, mystery, and seductive tension align with song's club energy and dangerou",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 154.703,
       "score": 0.95,
       "cosine": 0.489,
-      "reason": "matches toxic allure, urban grit, and seductive danger",
+      "reason": "Matches toxic allure, urban grit, and seductive danger",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.485,
-      "reason": "matches toxic allure, urban decay, and dangerous energy of the song",
+      "reason": "Urban decay and neon danger match the song's toxic allure and club energy",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "matches seductive danger, moody lighting, and thematic fire",
+      "reason": "Matches seductive danger, moody lighting, and transformative passion",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 64.041,
       "score": 0.95,
       "cosine": 0.477,
-      "reason": "matches seductive danger, fire as passion/destruction, industrial grit",
+      "reason": "Matches seductive danger, fire as passion/destruction, industrial grit",
       "recipe": "4-word-portrait",
       "featured": true
     }

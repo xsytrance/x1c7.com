@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-08-02T13:38:41.662Z",
+  "generatedAt": "2026-08-04T05:33:35.626Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1842,
+    "candidates": 2140,
     "judged": 64,
-    "accepted": 51,
+    "accepted": 55,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,43 @@
       "t": 4.273,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "Matches summer, urban coding, neon glow, late-night productivity",
+      "reason": "fits summer night, coding, urban energy, and motivation",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s1-1-word-portrait.webp",
+      "key": "lexicon/future/s1-1-word-portrait.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.95,
+      "cosine": 0.499,
+      "reason": "Futuristic, tech-themed, hopeful and aligned with song's innovation and growth themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s2-2-word-portrait.webp",
+      "key": "lexicon/future/s2-2-word-portrait.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.95,
+      "cosine": 0.493,
+      "reason": "Futuristic, hopeful, and tech-driven imagery aligns with the song's themes of innovation a",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s2-3-word-neon.webp",
+      "key": "lexicon/future/s2-3-word-neon.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.95,
+      "cosine": 0.49,
+      "reason": "fits song's tech, future, and summer night themes",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -43,7 +79,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.47,
-      "reason": "Modern, focused, and inspiring image fits the tech and summer energy of the song",
+      "reason": "Modern, focused, and inspiring image fits the tech and summer vibe",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +103,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.46,
-      "reason": "Aligns with tech, empowerment, and summer-night energy",
+      "reason": "Aligns with tech, empowerment, and summer night energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -84,6 +120,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/grind/s2-3-stickers.webp",
+      "key": "lexicon/grind/s2-3-stickers.webp",
+      "word": "grind",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.652,
+      "score": 0.95,
+      "cosine": 0.436,
+      "reason": "Matches energy, determination, and modern vibe of the song",
+      "recipe": "3-stickers",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-5-dream-collage.webp",
       "key": "lexicon/dream/s2-5-dream-collage.webp",
       "word": "dream",
@@ -93,6 +141,42 @@
       "cosine": 0.428,
       "reason": "Surreal cityscape aligns with tech innovation and bold dreams in the song",
       "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s4-6-stickers.webp",
+      "key": "lexicon/bassline/s4-6-stickers.webp",
+      "word": "bassline",
+      "line": "When the idea hits and the beat comes back Bassline walking like it knows my name 808",
+      "t": 137.985,
+      "score": 0.95,
+      "cosine": 0.419,
+      "reason": "Energetic musician matches song's vibe; modern context aligns with tech themes",
+      "recipe": "6-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s6-6-word-neon.webp",
+      "key": "lexicon/build/s6-6-word-neon.webp",
+      "word": "build",
+      "line": "just stopped waiting on a miracle call One small build one clean plan One more skill in the palm",
+      "t": 56.193,
+      "score": 0.95,
+      "cosine": 0.414,
+      "reason": "fits tech/urban energy and motivational build theme",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s4-2-word-neon.webp",
+      "key": "lexicon/level/s4-2-word-neon.webp",
+      "word": "level",
+      "line": "sip type it up Build build level up No more waiting on the world We gon make it come to us",
+      "t": 101.646,
+      "score": 0.95,
+      "cosine": 0.404,
+      "reason": "fits tech, celebration, and growth themes with neon and pixel art",
+      "recipe": "2-word-neon",
       "featured": true
     },
     {
@@ -139,7 +223,7 @@
       "t": 71.367,
       "score": 0.9,
       "cosine": 0.471,
-      "reason": "fits summer night, urban, neon, and motivational vibe",
+      "reason": "fits summer night, urban, neon, and tech themes",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -199,20 +283,8 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, urban, dream theme and neon glow matches energy",
+      "reason": "fits summer night, dream, neon, urban fantasy",
       "recipe": "2-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
-      "key": "lexicon/night/s7-6-word-portrait.webp",
-      "word": "night",
-      "line": "Summer night laptop glow Little",
-      "t": 4.493,
-      "score": 0.9,
-      "cosine": 0.434,
-      "reason": "fits summer night, urban, digital, hopeful mood",
-      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -228,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s6-5-word-portrait.webp",
+      "key": "lexicon/build/s6-5-word-portrait.webp",
+      "word": "build",
+      "line": "just stopped waiting on a miracle call One small build one clean plan One more skill in the palm",
+      "t": 56.193,
+      "score": 0.9,
+      "cosine": 0.432,
+      "reason": "fits theme of growth and innovation with hopeful, resilient imagery",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
       "key": "lexicon/soul/s9-1-stickers.webp",
       "word": "soul",
@@ -240,6 +324,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-3-word-neon.webp",
+      "key": "lexicon/bassline/s0-3-word-neon.webp",
+      "word": "bassline",
+      "line": "When the idea hits and the beat comes back Bassline walking like it knows my name 808",
+      "t": 137.985,
+      "score": 0.9,
+      "cosine": 0.418,
+      "reason": "Urban nightlife and vibrant energy align with song's mood and themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s8-6-neon-night.webp",
       "key": "lexicon/rhythm/s8-6-neon-night.webp",
       "word": "rhythm",
@@ -247,7 +343,7 @@
       "t": 73.208,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Urban energy, nighttime, determination align with song's mood and themes",
+      "reason": "Urban energy, rain intensity, neon lights match song's mood and themes",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -271,7 +367,7 @@
       "t": 131.344,
       "score": 0.9,
       "cosine": 0.395,
-      "reason": "Symbolizes connection and growth under a hopeful, starry night",
+      "reason": "Symbolizes connection and growth under a hopeful sky",
       "recipe": "6-chalkboard",
       "featured": true
     },
@@ -288,180 +384,86 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s23-3-word-portrait.webp",
-      "key": "lexicon/move/s23-3-word-portrait.webp",
-      "word": "move",
-      "line": "Ooh we dont move like before",
-      "t": 20.921,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s1-1-word-neon.webp",
+      "key": "lexicon/level/s1-1-word-neon.webp",
+      "word": "level",
+      "line": "sip type it up Build build level up No more waiting on the world We gon make it come to us",
+      "t": 101.646,
       "score": 0.9,
-      "cosine": 0.391,
-      "reason": "Energetic, hopeful, and cinematic fit the song's theme of growth and innovation.",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s4-6-neon-night.webp",
-      "key": "lexicon/beat/s4-6-neon-night.webp",
-      "word": "beat",
-      "line": "but it feel like that When the idea hits and the beat comes back Bassline walking like it knows my",
-      "t": 136.753,
-      "score": 0.9,
-      "cosine": 0.38,
-      "reason": "Energetic triumph in a neon-lit urban setting aligns with the song's motivational and tech",
-      "recipe": "6-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s9-6-neon-sign.webp",
-      "key": "lexicon/beat/s9-6-neon-sign.webp",
-      "word": "beat",
-      "line": "but it feel like that When the idea hits and the beat comes back Bassline walking like it knows my",
-      "t": 136.753,
-      "score": 0.9,
-      "cosine": 0.359,
-      "reason": "fits urban energy, neon vibrancy, and nighttime intensity",
-      "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s6-6-anime.webp",
-      "key": "lexicon/running/s6-6-anime.webp",
-      "word": "running",
-      "line": "to scroll when the day went dead Same old worries running loops in my head Now I open up a new tab breathe",
-      "t": 44.385,
-      "score": 0.9,
-      "cosine": 0.357,
-      "reason": "Futuristic city aligns with tech themes, running reflects urgency in lyrics, temple adds t",
-      "recipe": "6-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s17-3-word-portrait.webp",
-      "key": "lexicon/rhythm/s17-3-word-portrait.webp",
-      "word": "rhythm",
-      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
-      "t": 73.208,
-      "score": 0.85,
-      "cosine": 0.406,
-      "reason": "Matches summer vibe, calm inspiration, and rhythm as a guiding force",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s2-5-word-neon.webp",
-      "key": "lexicon/ice/s2-5-word-neon.webp",
-      "word": "ice",
-      "line": "laptop glow Little ice in the glass We working different now Come on",
-      "t": 8.301,
-      "score": 0.85,
-      "cosine": 0.399,
-      "reason": "fits urban vibe, neon aligns with tech, coolness matches theme",
-      "recipe": "5-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s22-3-word-neon.webp",
-      "key": "lexicon/move/s22-3-word-neon.webp",
-      "word": "move",
-      "line": "Ooh we dont move like before",
-      "t": 20.921,
-      "score": 0.85,
-      "cosine": 0.378,
-      "reason": "Urban neon aligns with summer night and energy of the song",
-      "recipe": "3-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s2-1-word-neon.webp",
-      "key": "lexicon/running/s2-1-word-neon.webp",
-      "word": "running",
-      "line": "to scroll when the day went dead Same old worries running loops in my head Now I open up a new tab breathe",
-      "t": 44.385,
-      "score": 0.85,
-      "cosine": 0.363,
-      "reason": "Urban nightlife and neon align with summer and tech themes; energetic vibe matches song mo",
+      "cosine": 0.392,
+      "reason": "fits urban energy, neon symbolism, and motivational vibe",
       "recipe": "1-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s11-5-dream-collage.webp",
-      "key": "lexicon/summer/s11-5-dream-collage.webp",
-      "word": "summer",
-      "line": "Uh Summer night laptop glow Little",
-      "t": 4.273,
-      "score": 0.8,
-      "cosine": 0.487,
-      "reason": "Matches summer vibe and whimsy but lacks tech elements",
-      "recipe": "5-dream-collage",
       "featured": true
     }
   ],
   "byWord": {
     "sky": [
       0,
-      13
+      20
     ],
     "summer": [
-      1,
-      31
+      1
+    ],
+    "future": [
+      2,
+      3,
+      4
     ],
     "code": [
-      2,
-      4,
-      5
+      5,
+      7,
+      8
     ],
     "fire": [
-      3,
-      14
+      6,
+      21
+    ],
+    "grind": [
+      9
     ],
     "dream": [
-      6,
-      15
+      10,
+      22
+    ],
+    "bassline": [
+      11,
+      26
+    ],
+    "build": [
+      12,
+      24
+    ],
+    "level": [
+      13,
+      31
     ],
     "glow": [
-      7
+      14
     ],
     "rhythm": [
-      8,
-      19,
+      15,
       27
     ],
     "gold": [
-      9,
-      11,
-      12
+      16,
+      18,
+      19
     ],
     "moonlight": [
-      10
-    ],
-    "night": [
-      16
-    ],
-    "run": [
       17
     ],
+    "run": [
+      23
+    ],
     "soul": [
-      18,
-      22
-    ],
-    "move": [
-      20,
-      23,
-      29
-    ],
-    "bridge": [
-      21
-    ],
-    "beat": [
-      24,
-      25
-    ],
-    "running": [
-      26,
+      25,
       30
     ],
-    "ice": [
+    "move": [
       28
+    ],
+    "bridge": [
+      29
     ]
   }
 }

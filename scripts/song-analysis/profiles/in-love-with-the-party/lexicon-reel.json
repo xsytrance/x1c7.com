@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-08-02T13:58:56.629Z",
+  "generatedAt": "2026-08-04T05:40:38.946Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -24,6 +24,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s1-2-word-portrait.webp",
+      "key": "lexicon/party/s1-2-word-portrait.webp",
+      "word": "party",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "score": 1,
+      "cosine": 0.452,
+      "reason": "Matches song's nightclub, celebration, and euphoric mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-1-film-still.webp",
       "key": "lexicon/glow/s19-1-film-still.webp",
       "word": "glow",
@@ -43,7 +55,7 @@
       "t": 35.225,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Intimate, warm, and cinematic; aligns with nighttime connection and glow symbolism.",
+      "reason": "Intimate, warm, and cinematic; aligns with nighttime connection and glow symbolism",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -127,7 +139,7 @@
       "t": 43.188,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Captures nighttime intimacy and urban energy matching song's mood and themes",
+      "reason": "Captures nighttime intimacy and urban energy aligning with song's mood and themes",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -175,7 +187,7 @@
       "t": 1.38,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Euphoric, intimate, warm nighttime party scene with crowds and lights matches song's mood ",
+      "reason": "Euphoric, intimate crowd under warm lights matches song's mood and themes",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -252,18 +264,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s1-2-word-portrait.webp",
-      "key": "lexicon/party/s1-2-word-portrait.webp",
-      "word": "party",
-      "line": "Were in love with the party Party after midnight Smooth",
-      "t": 1.38,
-      "score": 0.95,
-      "cosine": 0.452,
-      "reason": "Matches nightclub vibe, joy, and party theme perfectly",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
       "key": "lexicon/heat/s1-2-word-portrait.webp",
       "word": "heat",
@@ -271,7 +271,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Matches nighttime intimacy, warmth, and escapism",
+      "reason": "Matches nighttime warmth, intimacy, and escapism",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.474,
-      "reason": "Captures nighttime urban serenity and mystery aligning with song's mood",
+      "reason": "Matches nighttime theme, urban setting, and mysterious mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 20.271,
       "score": 0.9,
       "cosine": 0.467,
-      "reason": "Ethereal crowd unity under moon matches party intimacy and collective motion",
+      "reason": "Ethereal crowd unity under moon aligns with party intimacy and collective motion",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -399,50 +399,50 @@
   "byWord": {
     "party": [
       0,
-      13,
-      20
+      1,
+      14
     ],
     "glow": [
-      1,
       2,
-      6
+      3,
+      7
     ],
     "heat": [
-      3,
-      10,
+      4,
+      11,
       21
     ],
     "love": [
-      4,
-      17,
-      18
+      5,
+      18,
+      19
     ],
     "light": [
-      5,
-      11
+      6,
+      12
     ],
     "walk": [
-      7,
+      8,
       22
     ],
     "whisper": [
-      8
+      9
     ],
     "night": [
-      9,
+      10,
       25,
       26
     ],
     "lights": [
-      12,
-      14,
-      15
-    ],
-    "midnight": [
+      13,
+      15,
       16
     ],
+    "midnight": [
+      17
+    ],
     "dawn": [
-      19,
+      20,
       31
     ],
     "city": [

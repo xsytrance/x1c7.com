@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-08-02T13:52:07.067Z",
+  "generatedAt": "2026-08-04T05:38:08.410Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,8 +19,20 @@
       "t": 58.364,
       "score": 1,
       "cosine": 0.521,
-      "reason": "image embodies grit, struggle, and determination central to the song",
+      "reason": "image embodies relentless grit and internal struggle through weight and sweat",
       "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
+      "key": "lexicon/drip/s2-3-photo.webp",
+      "word": "drip",
+      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
+      "t": 54.927,
+      "score": 0.98,
+      "cosine": 0.602,
+      "reason": "Powerful visual of endurance and grit aligns with song's themes",
+      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -31,7 +43,7 @@
       "t": 54.672,
       "score": 0.98,
       "cosine": 0.58,
-      "reason": "Powerful sweat imagery matches the song's relentless grit and physical struggle",
+      "reason": "Authentic portrayal of physical exertion and vulnerability aligns with the song's relentle",
       "recipe": "5-photo",
       "featured": true
     },
@@ -43,7 +55,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "Gritty gym setting matches song's relentless determination and solitary struggle",
+      "reason": "Gritty gym setting matches song's relentless determination and internal struggle",
       "recipe": "2-photo",
       "featured": true
     },
@@ -79,20 +91,8 @@
       "t": 54.672,
       "score": 0.95,
       "cosine": 0.605,
-      "reason": "Authentic portrayal of physical exertion and resilience aligns with song's relentless grit",
+      "reason": "authentic portrayal of physical exertion and resilience",
       "recipe": "4-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
-      "key": "lexicon/drip/s2-3-photo.webp",
-      "word": "drip",
-      "line": "the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care how bad",
-      "t": 54.927,
-      "score": 0.95,
-      "cosine": 0.602,
-      "reason": "Powerful visual of endurance and grit aligns with song's themes",
-      "recipe": "3-photo",
       "featured": true
     },
     {
@@ -103,7 +103,7 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, determination, and physical transformation in the gym.",
+      "reason": "Powerful imagery aligns with grit, determination, and gym setting",
       "recipe": "5-photo",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 22.535,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting",
+      "reason": "Cold gym atmosphere matches relentless grit and internal struggle",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 189.939,
       "score": 0.95,
       "cosine": 0.497,
-      "reason": "fits gritty determination, sweat as proof, summer as goal",
+      "reason": "fits gritty determination, sweat as proof, summer as motivation",
       "recipe": "2-photo",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 22.849,
       "score": 0.95,
       "cosine": 0.459,
-      "reason": "Matches gritty mood, solitude, physical struggle, and determination in a gym context",
+      "reason": "Matches gritty mood, solitude, physical struggle, and determination",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 52.57,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Powerful imagery matches the song's relentless grit and themes of endurance and defiance.",
+      "reason": "Powerful imagery matches the song's relentless grit and themes of struggle and determinati",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.409,
-      "reason": "Symbolizes internal struggle and passion through fire and smoke in a gritty, cinematic set",
+      "reason": "Symbolizes internal struggle, pain, and passion align with song's themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 52.57,
       "score": 0.9,
       "cosine": 0.494,
-      "reason": "Symbolizes pain and transformation through burn and drips; fits gritty, resilient mood",
+      "reason": "Symbolizes pain and transformation through burn and drips; fits gritty, resilient mood.",
       "recipe": "5-photo",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 218.326,
       "score": 0.9,
       "cosine": 0.465,
-      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit aligns with theme",
+      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -401,21 +401,21 @@
       0,
       11
     ],
+    "drip": [
+      1
+    ],
     "sweat": [
-      1,
-      5,
+      2,
+      6,
       8
     ],
     "move": [
-      2,
-      4,
+      3,
+      5,
       19
     ],
     "night": [
-      3
-    ],
-    "drip": [
-      6
+      4
     ],
     "fire": [
       7,

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-08-02T13:42:07.429Z",
+  "generatedAt": "2026-08-04T05:34:50.430Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2272,
+    "candidates": 2392,
     "judged": 64,
     "accepted": 64,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 218.709,
       "score": 1,
       "cosine": 0.461,
-      "reason": "Symbolizes growth, new beginnings, and potential aligning with the song's themes of transf",
+      "reason": "Symbolizes growth, new beginnings, and potential align with song's themes of transformatio",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 5.167,
       "score": 1,
       "cosine": 0.436,
-      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope",
+      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope.",
       "recipe": "4-oil-light",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 150.825,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Matches summer, clarity, hope, and transformation themes",
+      "reason": "Matches summer, clarity, and hope themes perfectly",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.461,
-      "reason": "Warm light, intimacy, hope align with summer transformation and empowerment",
+      "reason": "Intimate glow aligns with empowerment and hope in summer transformation",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 218.709,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes growth, hope, and potential aligning with transformation and empowerment themes",
+      "reason": "Symbolizes growth, hope, and potential aligning with summer transformation and empowerment",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolizes hope and clarity in transformation journey",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 150.825,
       "score": 0.95,
       "cosine": 0.435,
-      "reason": "Matches summer, hope, and clarity in the song's transformation theme",
+      "reason": "Matches the hopeful, open, and transformative mood of the song",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -225,6 +225,18 @@
       "cosine": 0.421,
       "reason": "Symbolizes energy, renewal, and ambition fitting the song's theme",
       "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s4-2-oil-light.webp",
+      "key": "lexicon/neon/s4-2-oil-light.webp",
+      "word": "neon",
+      "line": "in the morning rhythm at night Discipline dancing with neon lights Will in my chest hunger in my shoes This aint",
+      "t": 158.96,
+      "score": 0.95,
+      "cosine": 0.414,
+      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth themes",
+      "recipe": "2-oil-light",
       "featured": true
     },
     {
@@ -360,18 +372,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wave/s4-1-dream-collage.webp",
-      "key": "lexicon/wave/s4-1-dream-collage.webp",
-      "word": "wave",
-      "line": "doubt Heard all that AI talk thought it wasnt for me Now Im looking at the wave like wait thats a key No suitcase yet but the plan got motion",
-      "t": 54.531,
-      "score": 0.95,
-      "cosine": 0.379,
-      "reason": "Symbolizes transformation and hope; aligns with summer and empowerment themes",
-      "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s10-1-word-portrait.webp",
       "key": "lexicon/different/s10-1-word-portrait.webp",
       "word": "different",
@@ -384,15 +384,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s9-6-word-portrait.webp",
-      "key": "lexicon/dream/s9-6-word-portrait.webp",
-      "word": "dream",
-      "line": "now but I see that scene Gotta build that life before I live that dream We dont wanna waste no weather We",
-      "t": 63.308,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s4-4-storybook.webp",
+      "key": "lexicon/future/s4-4-storybook.webp",
+      "word": "future",
+      "line": "But we working while it glows So the future feels easy This summer",
+      "t": 101.12,
       "score": 0.95,
-      "cosine": 0.37,
-      "reason": "Symbolism aligns with transformation and hope; nature reflects journey and dreams",
-      "recipe": "6-word-portrait",
+      "cosine": 0.378,
+      "reason": "Futuristic city and glowing sun align with summer transformation and hope for the future",
+      "recipe": "4-storybook",
       "featured": true
     }
   ],
@@ -417,7 +417,7 @@
     ],
     "glow": [
       5,
-      24
+      25
     ],
     "summer": [
       7,
@@ -426,35 +426,37 @@
     "light": [
       11,
       15,
-      20
+      21
     ],
     "flame": [
       14,
       16,
       17
     ],
+    "neon": [
+      18
+    ],
     "motivation": [
-      18,
-      27
+      19,
+      28
     ],
     "spark": [
-      19,
-      26
+      20,
+      27
     ],
     "move": [
-      21,
       22,
-      25
+      23,
+      26
     ],
     "different": [
-      23,
+      24,
       30
     ],
     "wave": [
-      28,
       29
     ],
-    "dream": [
+    "future": [
       31
     ]
   }

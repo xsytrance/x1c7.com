@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-08-02T13:57:21.092Z",
+  "generatedAt": "2026-08-04T05:40:01.030Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2506,
+    "candidates": 2551,
     "judged": 64,
-    "accepted": 63,
+    "accepted": 64,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 92.625,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Powerful depiction of emotional restraint and pain aligns with song's themes",
+      "reason": "Powerful portrayal of emotional restraint and pain in a toxic relationship",
       "recipe": "3-photo",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.481,
-      "reason": "storm symbolizes turmoil, defiance matches self-respect theme",
+      "reason": "storm symbolizes turmoil, figure shows resilience and defiance",
       "recipe": "1-concept-art",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 187.88,
       "score": 0.95,
       "cosine": 0.475,
-      "reason": "Powerful contrast of hate and hope fits the song's emotional conflict and cinematic mood",
+      "reason": "Powerful contrast of hate and hope fits the song's emotional conflict and cinematic mood.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing.",
+      "reason": "Symbolizes brokenness and hope, aligns with themes of resilience and emotional healing",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -132,6 +132,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s0-5-cinema.webp",
+      "key": "lexicon/ghosts/s0-5-cinema.webp",
+      "word": "ghosts",
+      "line": "when the posters on your wall start looking like ghosts You say you need a reason just to feel something real",
+      "t": 71.077,
+      "score": 0.95,
+      "cosine": 0.466,
+      "reason": "haunting imagery matches song's emotional depth and themes of abandonment",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
       "key": "lexicon/dark/s9-2-word-portrait.webp",
       "word": "dark",
@@ -139,7 +151,7 @@
       "t": 153.808,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "evokes isolation, decay, and emotional weight aligning with song's themes",
+      "reason": "evokes melancholy and desolation fitting the song's mood and themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +199,7 @@
       "t": 135.009,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "Matches emotional trauma, hidden pain, and surrealism of the song",
+      "reason": "Matches bruise imagery, emotional pain, surrealism fits song's mood",
       "recipe": "2-cinema",
       "featured": true
     },
@@ -223,7 +235,7 @@
       "t": 135.009,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Emotional wound, fragile hope, fragmented memories align with song's themes",
+      "reason": "Emotional wound, fragile hope, and fragmented memories align with the song's themes of pai",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -259,32 +271,8 @@
       "t": 149.52,
       "score": 0.95,
       "cosine": 0.428,
-      "reason": "Symbolizes hope and liberation in a confined space, aligns with themes of escape and emoti",
+      "reason": "Symbolizes hope and liberation in a confined space, aligns with themes of escape and self-",
       "recipe": "3-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-5-word-portrait.webp",
-      "key": "lexicon/cut/s3-5-word-portrait.webp",
-      "word": "cut",
-      "line": "cry about the smoke I used to say the things that cut into your throat But tonight Im holding back with both hands",
-      "t": 92.625,
-      "score": 0.95,
-      "cosine": 0.426,
-      "reason": "Symbolizes emotional cutting off, cinematic mood, solitary struggle",
-      "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s3-2-photo.webp",
-      "key": "lexicon/breaking/s3-2-photo.webp",
-      "word": "breaking",
-      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking",
-      "t": 67.46,
-      "score": 0.95,
-      "cosine": 0.425,
-      "reason": "Powerful imagery of heartbreak and fragility matches song's emotional depth and themes",
-      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -319,7 +307,7 @@
       "t": 223.62,
       "score": 0.9,
       "cosine": 0.515,
-      "reason": "Symbolizes emotional confinement and isolation central to the song's theme",
+      "reason": "Symbolizes emotional confinement and isolation central to the song's themes",
       "recipe": "3-photo",
       "featured": true
     },
@@ -391,19 +379,30 @@
       "t": 22.895,
       "score": 0.9,
       "cosine": 0.483,
-      "reason": "Cinematic, melancholic, and reflective mood aligns with song's emotional depth and themes.",
+      "reason": "Cinematic, melancholic, and reflective of emotional struggle and urban solitude",
       "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
+      "key": "lexicon/lights/s3-4-word-portrait.webp",
+      "word": "lights",
+      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
+      "t": 78.147,
+      "score": 0.9,
+      "cosine": 0.482,
+      "reason": "Cinematic, melancholic, symbolic of toxic nightlife and emotional intensity",
+      "recipe": "4-word-portrait",
       "featured": true
     }
   ],
   "byWord": {
     "dark": [
       0,
-      10
+      11
     ],
     "cut": [
-      1,
-      21
+      1
     ],
     "smoke": [
       2,
@@ -411,59 +410,62 @@
     ],
     "fire": [
       3,
-      15,
-      24
+      16,
+      23
     ],
     "storm": [
       4,
-      18
+      19
     ],
     "hate": [
       6
     ],
     "escape": [
       7,
-      20
+      21
     ],
     "break": [
       8,
-      19,
-      27
+      20,
+      26
     ],
     "cage": [
       9,
-      25,
-      29
-    ],
-    "cold": [
-      11,
-      16
-    ],
-    "heart": [
-      12
-    ],
-    "breaking": [
-      13,
-      22
-    ],
-    "bruise": [
-      14,
-      17
-    ],
-    "lights": [
-      23
-    ],
-    "ghost": [
-      26
-    ],
-    "burn": [
+      24,
       28
     ],
+    "ghosts": [
+      10
+    ],
+    "cold": [
+      12,
+      17
+    ],
+    "heart": [
+      13
+    ],
+    "breaking": [
+      14
+    ],
+    "bruise": [
+      15,
+      18
+    ],
+    "lights": [
+      22,
+      31
+    ],
+    "ghost": [
+      25
+    ],
+    "burn": [
+      27
+    ],
     "moon": [
-      30
+      29
     ],
     "rain": [
-      31
+      30
     ]
   }
 }

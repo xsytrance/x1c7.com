@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-08-02T14:12:06.522Z",
+  "generatedAt": "2026-08-04T05:45:12.375Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 776,
-    "judged": 28,
-    "accepted": 22,
-    "kept": 22
+    "candidates": 816,
+    "judged": 31,
+    "accepted": 25,
+    "kept": 25
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
+      "reason": "Perfect fit with bass, retro club, summer energy, and confident style",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
+      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Matches retro club aesthetic, confidence, and individuality themes",
+      "reason": "Perfect fit for retro club, confidence, and individuality",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 25.565,
       "score": 1,
       "cosine": 0.478,
-      "reason": "Perfect fit with summer night energy, retro club aesthetic, and stylish confidence.",
+      "reason": "Perfect fit with summer night energy and retro club aesthetic",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -180,6 +180,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s4-6-stickers.webp",
+      "key": "lexicon/bassline/s4-6-stickers.webp",
+      "word": "bassline",
+      "line": "Dont talk too much Just let that bassline hit This summer different",
+      "t": 20.887,
+      "score": 0.95,
+      "cosine": 0.503,
+      "reason": "Confident, energetic, and stylish image matches the song's retro club and summer energy",
+      "recipe": "6-stickers",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s15-1-word-portrait.webp",
       "key": "lexicon/lights/s15-1-word-portrait.webp",
       "word": "lights",
@@ -192,15 +204,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
-      "key": "lexicon/somebody/s0-1.webp",
-      "word": "somebody",
-      "line": "Title Move Over Minimal Groove Mix Somebody said the",
-      "t": 0.72,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s1-2-cinema.webp",
+      "key": "lexicon/bassline/s1-2-cinema.webp",
+      "word": "bassline",
+      "line": "Dont talk too much Just let that bassline hit This summer different",
+      "t": 20.887,
       "score": 0.95,
-      "cosine": 0.39,
-      "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
-      "recipe": "1",
+      "cosine": 0.483,
+      "reason": "Captures bassline's essence with moody stage lighting and intimate focus",
+      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -211,7 +223,7 @@
       "t": 16.452,
       "score": 0.9,
       "cosine": 0.568,
-      "reason": "Confident summer imagery aligns with dance floor dominance and retro energy.",
+      "reason": "Confident beach imagery aligns with summer and dance floor dominance.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -235,8 +247,20 @@
       "t": 12.398,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "royalty, power, and cinematic lighting align with dance floor dominance and stylish summer",
+      "reason": "royal imagery fits dance floor dominance and summer swagger",
       "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-1.webp",
+      "key": "lexicon/somebody/s0-1.webp",
+      "word": "somebody",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.72,
+      "score": 0.9,
+      "cosine": 0.39,
+      "reason": "Confident silhouettes, neon glow, urban energy match song's themes",
+      "recipe": "1",
       "featured": true
     },
     {
@@ -249,6 +273,18 @@
       "cosine": 0.426,
       "reason": "Regal authority and chaotic nature align with dance floor dominance and summer energy.",
       "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s0-5-film-still.webp",
+      "key": "lexicon/bassline/s0-5-film-still.webp",
+      "word": "bassline",
+      "line": "Dont talk too much Just let that bassline hit This summer different",
+      "t": 20.887,
+      "score": 0.7,
+      "cosine": 0.481,
+      "reason": "Ocean wave evokes rhythm and power but lacks dance floor and retro club elements",
+      "recipe": "5-film-still",
       "featured": true
     },
     {
@@ -289,7 +325,7 @@
     "lights": [
       4,
       13,
-      14
+      15
     ],
     "heat": [
       5,
@@ -306,18 +342,23 @@
     "slow": [
       12
     ],
-    "somebody": [
-      15
+    "bassline": [
+      14,
+      16,
+      22
     ],
     "summer": [
-      16,
       17,
-      20
+      18,
+      23
     ],
     "king": [
-      18,
       19,
-      21
+      21,
+      24
+    ],
+    "somebody": [
+      20
     ]
   }
 }

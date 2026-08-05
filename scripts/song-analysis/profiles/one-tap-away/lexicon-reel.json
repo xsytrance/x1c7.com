@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "one-tap-away",
-  "generatedAt": "2026-08-02T14:17:18.078Z",
+  "generatedAt": "2026-08-04T05:47:21.951Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1175,
-    "judged": 39,
-    "accepted": 37,
+    "candidates": 1297,
+    "judged": 51,
+    "accepted": 48,
     "kept": 32
   },
   "reel": [
@@ -55,7 +55,7 @@
       "t": 118.468,
       "score": 0.95,
       "cosine": 0.645,
-      "reason": "Pixelated campfires symbolize digital isolation and superficial connection",
+      "reason": "pixelated campfires symbolize digital isolation and superficial connection",
       "recipe": "6-pixel",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 115.937,
       "score": 0.95,
       "cosine": 0.583,
-      "reason": "captures digital isolation, superficial identity, and melancholic mood",
+      "reason": "captures digital isolation, superficial identity, and melancholy",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 17.183,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "fits digital isolation, glow of screen, melancholic mood",
+      "reason": "matches digital isolation, glow of screen, melancholic mood",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 94.285,
       "score": 0.95,
       "cosine": 0.554,
-      "reason": "powerful symbolism of digital isolation and broken connection",
+      "reason": "Symbolizes digital isolation, broken connection, and melancholic mood",
       "recipe": "1-photo",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "Strong visual metaphor for digital isolation and emotional distance",
+      "reason": "neon sign captures cold, urban loneliness and digital isolation",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -225,6 +225,18 @@
       "cosine": 0.494,
       "reason": "mask symbolizes hidden identity and emotional void in digital isolation",
       "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scroll/s4-2-word-portrait.webp",
+      "key": "lexicon/scroll/s4-2-word-portrait.webp",
+      "word": "scroll",
+      "line": "day You can love me in private But scroll right past my name",
+      "t": 52.36,
+      "score": 0.95,
+      "cosine": 0.482,
+      "reason": "captures digital anxiety and emotional distance",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -247,8 +259,32 @@
       "t": 76.72,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "captures digital isolation, emotional neglect, and yearning",
+      "reason": "fits digital isolation, emotional neglect, and introspective mood",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s4-1-photo.webp",
+      "key": "lexicon/strangers/s4-1-photo.webp",
+      "word": "strangers",
+      "line": "you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 77.449,
+      "score": 0.95,
+      "cosine": 0.421,
+      "reason": "captures digital disconnection, repetition, and alienation",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s0-4-manga-line.webp",
+      "key": "lexicon/strangers/s0-4-manga-line.webp",
+      "word": "strangers",
+      "line": "you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 77.449,
+      "score": 0.95,
+      "cosine": 0.419,
+      "reason": "captures isolation, surrealism matches song's mood",
+      "recipe": "4-manga-line",
       "featured": true
     },
     {
@@ -283,7 +319,7 @@
       "t": 50.933,
       "score": 0.9,
       "cosine": 0.522,
-      "reason": "captures digital isolation, neon symbolizes superficial love",
+      "reason": "captures digital isolation, superficiality, and emotional distance",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -307,7 +343,7 @@
       "t": 28.259,
       "score": 0.9,
       "cosine": 0.504,
-      "reason": "reflects identity fragmentation and melancholy in digital isolation",
+      "reason": "Symbolizes emotional distance and identity fragmentation in digital isolation",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -324,6 +360,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-5-dream-collage.webp",
+      "key": "lexicon/names/s6-5-dream-collage.webp",
+      "word": "names",
+      "line": "I thought the whole world would move close old names popping up like whoa though middle school",
+      "t": 20.64,
+      "score": 0.9,
+      "cosine": 0.488,
+      "reason": "fits digital isolation, abstract names, ethereal mood",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-4-dream-collage.webp",
       "key": "lexicon/chains/s5-4-dream-collage.webp",
       "word": "chains",
@@ -336,63 +384,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
-      "t": 76.22,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/reach/s5-1-word-portrait.webp",
+      "key": "lexicon/reach/s5-1-word-portrait.webp",
+      "word": "reach",
+      "line": "everybody wants claps everybody got reach but dont reach back how we got this close and lost contact",
+      "t": 41.796,
       "score": 0.9,
-      "cosine": 0.46,
-      "reason": "embodies digital isolation, melancholic, fragmented faces",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
-      "key": "lexicon/light/s15-1-cinema.webp",
-      "word": "light",
-      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
-      "t": 115.937,
-      "score": 0.85,
-      "cosine": 0.63,
-      "reason": "Captures solitary light and isolation, aligns with digital themes",
-      "recipe": "1-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s16-3-cinema.webp",
-      "key": "lexicon/light/s16-3-cinema.webp",
-      "word": "light",
-      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
-      "t": 115.937,
-      "score": 0.85,
-      "cosine": 0.492,
-      "reason": "matches isolation, fragile connection, melancholic mood",
-      "recipe": "3-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
-      "key": "lexicon/dream/s2-6-word-portrait.webp",
-      "word": "dream",
-      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
-      "t": 76.22,
-      "score": 0.85,
-      "cosine": 0.437,
-      "reason": "Captures melancholic mood and urban isolation, aligns with themes of aspiration and superf",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s0-4-film-still.webp",
-      "key": "lexicon/dream/s0-4-film-still.webp",
-      "word": "dream",
-      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
-      "t": 76.22,
-      "score": 0.85,
-      "cosine": 0.425,
-      "reason": "Captures loneliness and longing in a digital age, aligns with theme of superficial connect",
-      "recipe": "4-film-still",
+      "cosine": 0.475,
+      "reason": "captures digital divide and longing for connection",
+      "recipe": "1-word-portrait",
       "featured": true
     }
   ],
@@ -400,12 +400,12 @@
     "tap": [
       0,
       5,
-      18
+      19
     ],
     "move": [
       1,
       14,
-      20
+      23
     ],
     "fire": [
       2,
@@ -413,13 +413,11 @@
       4
     ],
     "light": [
-      6,
-      28,
-      29
+      6
     ],
     "glow": [
       7,
-      21
+      24
     ],
     "cold": [
       8,
@@ -433,24 +431,32 @@
     ],
     "save": [
       13,
-      19,
-      23
+      20,
+      26
     ],
     "love": [
       15,
-      22
+      25
     ],
     "mask": [
       17,
-      24,
-      25
+      27,
+      28
+    ],
+    "scroll": [
+      18
+    ],
+    "strangers": [
+      21,
+      22
+    ],
+    "names": [
+      29
     ],
     "chains": [
-      26
+      30
     ],
-    "dream": [
-      27,
-      30,
+    "reach": [
       31
     ]
   }

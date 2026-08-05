@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-08-02T14:08:13.357Z",
+  "generatedAt": "2026-08-04T05:43:42.529Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 861,
+    "candidates": 878,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -29,9 +29,9 @@
       "word": "wounds",
       "line": "wounds",
       "t": null,
-      "score": 1,
+      "score": 0.98,
       "cosine": 0.444,
-      "reason": "Image embodies resilience, battle scars, and inner strength perfectly matching the song's ",
+      "reason": "Symbolizes resilience, battle scars as identity, inner strength through injury",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Defiant, transformative, and resilient imagery matches the song's themes of strength and r",
+      "reason": "Defiant, transformative, and powerful imagery aligns with the song's themes of resilience ",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolism of chains as both constraint and strength fits defiant resilience theme",
+      "reason": "Symbolism of chains as both constraint and strength aligns with defiance and resilience th",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
+      "reason": "Symbolizes transformation of destruction into power, fits defiant, resilient mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth through fire",
+      "reason": "Symbolizes resilience, destruction, and rebirth aligns with song's themes",
       "recipe": "2-anime",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.441,
-      "reason": "Symbolizes transformation through destruction, resilience, and rebirth",
+      "reason": "Symbolizes destruction and rebirth, aligns with resilience and transformation themes.",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Symbolizes resilience, defiance, and transformation through fire",
+      "reason": "Symbolizes resilience, defiance, and rebirth through fire",
       "recipe": "4-concept-art",
       "featured": true
     },
@@ -348,15 +348,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s4-1-anime.webp",
-      "key": "lexicon/chain/s4-1-anime.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s9-4-anime.webp",
+      "key": "lexicon/chain/s9-4-anime.webp",
       "word": "chain",
       "line": "Every lock every limit every chain in my way Made to break",
       "t": 73.76,
       "score": 0.95,
-      "cosine": 0.426,
-      "reason": "Symbolism aligns with defiance and transformation through destruction",
-      "recipe": "1-anime",
+      "cosine": 0.429,
+      "reason": "Symbolizes breaking chains, resilience, and transformation in a defiant, post-apocalyptic ",
+      "recipe": "4-anime",
       "featured": true
     },
     {
@@ -391,7 +391,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
+      "reason": "Symbolizes transformation through fragmentation and rebirth",
       "recipe": "3-dream-collage",
       "featured": true
     }

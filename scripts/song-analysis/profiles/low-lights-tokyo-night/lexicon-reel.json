@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-08-02T14:04:52.377Z",
+  "generatedAt": "2026-08-04T05:42:52.760Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1081,
-    "judged": 38,
-    "accepted": 35,
+    "candidates": 1111,
+    "judged": 41,
+    "accepted": 38,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 97.032,
       "score": 1,
       "cosine": 0.644,
-      "reason": "Perfectly captures the song's bittersweet, melancholic mood and urban isolation themes.",
+      "reason": "Perfectly captures the song's mood and themes with rain, neon, and loneliness.",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.695,
-      "reason": "matches bittersweet mood, urban isolation, and nostalgic Tokyo nightlife",
+      "reason": "matches bittersweet mood, Tokyo nightlife, emotional weight",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.679,
-      "reason": "matches neon melancholy, urban isolation, and bittersweet mood",
+      "reason": "matches neon melancholy, loneliness, and bittersweet mood",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 41.378,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "nostalgic, melancholic, urban isolation, bittersweet memory",
+      "reason": "nostalgic, melancholic, urban isolation, symbolic of lost connection",
       "recipe": "2",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 100.02,
       "score": 0.95,
       "cosine": 0.614,
-      "reason": "matches neon melancholy, urban isolation, and emotional coldness",
+      "reason": "Perfectly captures neon melancholy and urban isolation",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 46.661,
       "score": 0.95,
       "cosine": 0.6,
-      "reason": "Matches neon melancholy, isolation, and bittersweet mood",
+      "reason": "fits mood and themes with neon melancholy and isolation",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.595,
-      "reason": "matches melancholic mood, isolation, introspection",
+      "reason": "matches melancholic mood, isolation, and introspection",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -240,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/turning/s1-6-neon-night.webp",
+      "key": "lexicon/turning/s1-6-neon-night.webp",
+      "word": "turning",
+      "line": "youLow lights 染まる body ネオン は turning blue まだ 帰り たく ない ね",
+      "t": 70.101,
+      "score": 0.95,
+      "cosine": 0.562,
+      "reason": "Captures urban isolation, neon melancholy, and emotional tension",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-6-word-portrait.webp",
       "key": "lexicon/song/s1-6-word-portrait.webp",
       "word": "song",
@@ -247,7 +259,7 @@
       "t": 95.469,
       "score": 0.95,
       "cosine": 0.553,
-      "reason": "Strongly aligns with urban isolation, melancholy, and emotional journey",
+      "reason": "Matches neon melancholy, urban solitude, and emotional journey",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -259,7 +271,7 @@
       "t": 77.706,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "matches melancholy, brokenness, and urban nighttime mood",
+      "reason": "Matches melancholy, brokenness, and urban nighttime mood",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -288,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/turning/s2-3-word-neon.webp",
+      "key": "lexicon/turning/s2-3-word-neon.webp",
+      "word": "turning",
+      "line": "youLow lights 染まる body ネオン は turning blue まだ 帰り たく ない ね",
+      "t": 70.101,
+      "score": 0.9,
+      "cosine": 0.604,
+      "reason": "matches neon melancholy and urban isolation themes",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
       "key": "lexicon/night/s23-2-word-portrait.webp",
       "word": "night",
@@ -295,7 +319,7 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Captures urban melancholy, loneliness, and neon-lit isolation",
+      "reason": "Captures urban melancholy, loneliness, and nighttime symbolism perfectly",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -309,6 +333,18 @@
       "cosine": 0.553,
       "reason": "fragile light amid brokenness mirrors bittersweet nightlife grief",
       "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/turning/s1-2-neon-sign.webp",
+      "key": "lexicon/turning/s1-2-neon-sign.webp",
+      "word": "turning",
+      "line": "youLow lights 染まる body ネオン は turning blue まだ 帰り たく ない ね",
+      "t": 70.101,
+      "score": 0.9,
+      "cosine": 0.545,
+      "reason": "Neon glow, urban alley, transformation align with Tokyo nightlife and melancholy mood.",
+      "recipe": "2-neon-sign",
       "featured": true
     },
     {
@@ -358,42 +394,6 @@
       "reason": "Captures isolation, melancholy, and urban emptiness fitting the song's mood and themes.",
       "recipe": "1-photo",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s0-2-dark-surreal.webp",
-      "key": "lexicon/home/s0-2-dark-surreal.webp",
-      "word": "home",
-      "line": "but 帰れ ない home 8 0 8 鳴っ てる 心 の",
-      "t": 34.424,
-      "score": 0.85,
-      "cosine": 0.436,
-      "reason": "nostalgic, lonely, warm yet empty space",
-      "recipe": "2-dark-surreal",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s0-1.webp",
-      "key": "lexicon/phone/s0-1.webp",
-      "word": "phone",
-      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
-      "t": 41.378,
-      "score": 0.8,
-      "cosine": 0.483,
-      "reason": "Captures loneliness and digital connection in a nighttime setting",
-      "recipe": "1",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s6-1-cinema.webp",
-      "key": "lexicon/home/s6-1-cinema.webp",
-      "word": "home",
-      "line": "but 帰れ ない home 8 0 8 鳴っ てる 心 の",
-      "t": 34.424,
-      "score": 0.8,
-      "cosine": 0.434,
-      "reason": "Nostalgic, desolate interior fits song's melancholic mood and themes of loss and solitude.",
-      "recipe": "1-cinema",
-      "featured": true
     }
   ],
   "byWord": {
@@ -409,7 +409,7 @@
     "night": [
       2,
       3,
-      23
+      25
     ],
     "cold": [
       4,
@@ -427,33 +427,33 @@
       17
     ],
     "phone": [
-      12,
-      30
+      12
     ],
     "ice": [
       15,
-      26
+      29
     ],
     "body": [
       16,
-      28
+      31
     ],
-    "song": [
+    "turning": [
       19,
-      22
-    ],
-    "breaking": [
-      20,
-      21,
-      24
-    ],
-    "love": [
-      25,
+      24,
       27
     ],
-    "home": [
-      29,
-      31
+    "song": [
+      20,
+      23
+    ],
+    "breaking": [
+      21,
+      22,
+      26
+    ],
+    "love": [
+      28,
+      30
     ]
   }
 }

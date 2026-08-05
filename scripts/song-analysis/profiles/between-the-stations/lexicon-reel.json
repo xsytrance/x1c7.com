@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-08-02T13:29:49.416Z",
+  "generatedAt": "2026-08-04T05:30:17.577Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -79,7 +79,7 @@
       "t": 63.89,
       "score": 0.92,
       "cosine": 0.586,
-      "reason": "Captures urban isolation and transition with moody realism",
+      "reason": "Captures urban isolation and journey themes with moody lighting and stormy atmosphere",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 34.168,
       "score": 0.92,
       "cosine": 0.581,
-      "reason": "Urban setting, rhythm as theme, connection and resilience align with song's mood and theme",
+      "reason": "Image captures urban rhythm, connection, and resilience aligning with song's themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 74.4,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Image captures gritty urban night, neon, and emotional release matching song's themes",
+      "reason": "Urban grit, neon, rain align with subway metaphor and cathartic mood",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 103.5,
       "score": 0.92,
       "cosine": 0.569,
-      "reason": "Calm urban moment matches song's respite theme and mood",
+      "reason": "Serene urban moment aligns with respite in chaos and breath as a transient, hopeful symbol",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -151,20 +151,8 @@
       "t": 52.16,
       "score": 0.92,
       "cosine": 0.559,
-      "reason": "Urban isolation, resilience, and stormy cityscape align with song's themes",
+      "reason": "Urban isolation, resilience, and stormy nights align with the song's themes and mood.",
       "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
-      "key": "lexicon/dream/s2-6-word-portrait.webp",
-      "word": "dream",
-      "line": "A train to Brooklyn a dream to Queens Bronx in the rhythm Manhattan in",
-      "t": 92.18,
-      "score": 0.92,
-      "cosine": 0.552,
-      "reason": "Urban mood, transient beauty, and aspiration align with song's themes",
-      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -271,7 +259,7 @@
       "t": 9.695,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Urban decay, glowing windows, resilience fit song's gritty, cathartic subway theme",
+      "reason": "Urban decay, glowing windows, resilience fit song's gritty, cathartic theme",
       "recipe": "3-anime",
       "featured": true
     },
@@ -295,7 +283,7 @@
       "t": 92.18,
       "score": 0.92,
       "cosine": 0.482,
-      "reason": "fits urban fantasy, nighttime escapism, and neon-lit surrealism",
+      "reason": "fits urban fantasy and nighttime escapism themes",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -307,7 +295,7 @@
       "t": 97.48,
       "score": 0.9,
       "cosine": 0.581,
-      "reason": "Urban melancholy, rain as cleansing and isolating, fits song's mood and themes",
+      "reason": "Urban melancholy, rain as cleansing and isolating, fits subway metaphor and mood",
       "recipe": "2-photo",
       "featured": true
     },
@@ -319,7 +307,7 @@
       "t": 97.48,
       "score": 0.9,
       "cosine": 0.573,
-      "reason": "Captures urban melancholy and rain's symbolic role in the song's narrative",
+      "reason": "Captures urban melancholy and atmospheric mood aligns with song's themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -336,6 +324,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s2-6-word-portrait.webp",
+      "key": "lexicon/dream/s2-6-word-portrait.webp",
+      "word": "dream",
+      "line": "A train to Brooklyn a dream to Queens Bronx in the rhythm Manhattan in",
+      "t": 92.18,
+      "score": 0.9,
+      "cosine": 0.552,
+      "reason": "Urban setting, dream symbolism, mood aligns with song's themes",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s16-4-word-neon.webp",
       "key": "lexicon/slow/s16-4-word-neon.webp",
       "word": "slow",
@@ -343,7 +343,7 @@
       "t": 74.85,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Calm, nostalgic neon fits urban respite and night slowdown theme",
+      "reason": "Calm, contemplative neon fits the respite theme and urban setting",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 52.16,
       "score": 0.82,
       "cosine": 0.516,
-      "reason": "fits urban decay, nostalgic lights, resilience in nightlife",
+      "reason": "fits urban decay, nostalgic lights, resilience in gritty setting",
       "recipe": "2-anime",
       "featured": true
     },
@@ -372,6 +372,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s23-2-word-portrait.webp",
+      "key": "lexicon/night/s23-2-word-portrait.webp",
+      "word": "night",
+      "line": "Breathe in Breathe out Let the night slow down Breathe in Breathe",
+      "t": 74.4,
+      "score": 0.8,
+      "cosine": 0.588,
+      "reason": "Captures urban night, melancholy, and blurred chaos fitting the song's theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s12-5-word-portrait.webp",
       "key": "lexicon/slow/s12-5-word-portrait.webp",
       "word": "slow",
@@ -379,20 +391,8 @@
       "t": 74.85,
       "score": 0.8,
       "cosine": 0.538,
-      "reason": "fits mood and urban theme, bittersweet and nostalgic",
+      "reason": "Matches mood and urban theme, but lacks dancehall energy",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s1-3-cinema.webp",
-      "key": "lexicon/song/s1-3-cinema.webp",
-      "word": "song",
-      "line": "someone's got rain Someone's got nothing but the song for the pain I don't need answers I don't need signs",
-      "t": 99.55,
-      "score": 0.8,
-      "cosine": 0.524,
-      "reason": "Captures urban melancholy and transient beauty aligning with song's themes",
-      "recipe": "3-cinema",
       "featured": true
     }
   ],
@@ -400,7 +400,7 @@
     "rhythm": [
       0,
       7,
-      22
+      21
     ],
     "light": [
       1,
@@ -408,56 +408,56 @@
     ],
     "song": [
       2,
-      29,
-      31
+      29
     ],
     "rain": [
       3,
-      24,
-      25
+      23,
+      24
     ],
     "eyes": [
       4,
-      15,
-      16
+      14,
+      15
     ],
     "train": [
       5
     ],
     "night": [
       6,
-      8
+      8,
+      30
     ],
     "breath": [
       10,
-      14,
-      26
+      13,
+      25
     ],
     "lights": [
       11,
       28
     ],
-    "dream": [
-      12,
-      23
-    ],
     "glass": [
-      13
+      12
     ],
     "move": [
-      17,
-      18
+      16,
+      17
     ],
     "city": [
-      19,
-      20
+      18,
+      19
     ],
     "window": [
-      21
+      20
+    ],
+    "dream": [
+      22,
+      26
     ],
     "slow": [
       27,
-      30
+      31
     ]
   }
 }

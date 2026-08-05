@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-08-02T14:16:10.113Z",
+  "generatedAt": "2026-08-04T05:46:44.381Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 655,
-    "judged": 24,
-    "accepted": 21,
-    "kept": 21
+    "candidates": 777,
+    "judged": 36,
+    "accepted": 31,
+    "kept": 31
   },
   "reel": [
     {
@@ -53,10 +53,22 @@
       "word": "tap",
       "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
       "t": 52.88,
-      "score": 0.98,
+      "score": 1,
       "cosine": 0.633,
       "reason": "Perfectly captures digital isolation and vulnerability in a noir setting",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 1,
+      "cosine": 0.63,
+      "reason": "Perfectly aligns with digital isolation and noir melancholy",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -108,18 +120,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
-      "t": 70.682,
-      "score": 0.95,
-      "cosine": 0.63,
-      "reason": "fits noir mood, digital isolation, fragmented faces",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
       "key": "lexicon/love/s12-6-word-portrait.webp",
       "word": "love",
@@ -156,6 +156,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scroll/s4-2-word-portrait.webp",
+      "key": "lexicon/scroll/s4-2-word-portrait.webp",
+      "word": "scroll",
+      "line": "any day You can love me in private But scroll",
+      "t": 21.154,
+      "score": 0.95,
+      "cosine": 0.564,
+      "reason": "fits digital anxiety, vintage tech, cinematic mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-4-dream-collage.webp",
       "key": "lexicon/chains/s5-4-dream-collage.webp",
       "word": "chains",
@@ -163,7 +175,7 @@
       "t": 104.455,
       "score": 0.95,
       "cosine": 0.543,
-      "reason": "evokes isolation, melancholy, and confinement central to the song's themes",
+      "reason": "fits noir mood, symbolizes confinement and isolation",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -192,6 +204,42 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s2-6-neon-sign.webp",
+      "key": "lexicon/strangers/s2-6-neon-sign.webp",
+      "word": "strangers",
+      "line": "keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 71.657,
+      "score": 0.95,
+      "cosine": 0.521,
+      "reason": "fits noir mood, digital alienation, urban isolation",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s4-1-photo.webp",
+      "key": "lexicon/strangers/s4-1-photo.webp",
+      "word": "strangers",
+      "line": "keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 71.657,
+      "score": 0.95,
+      "cosine": 0.506,
+      "reason": "captures digital disconnection, screens as barriers, noir mood",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-2-anime.webp",
+      "key": "lexicon/names/s6-2-anime.webp",
+      "word": "names",
+      "line": "feel alone in a room full of names Tap tap but you don't reach back Heart",
+      "t": 85.413,
+      "score": 0.95,
+      "cosine": 0.498,
+      "reason": "fits noir cyberpunk mood, digital fragmentation, lonely eye",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
       "key": "lexicon/light/s15-1-cinema.webp",
       "word": "light",
@@ -201,6 +249,18 @@
       "cosine": 0.79,
       "reason": "matches noir mood, solitary light symbolizes digital isolation, dockside setting fits song",
       "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-4-photo.webp",
+      "key": "lexicon/names/s6-4-photo.webp",
+      "word": "names",
+      "line": "feel alone in a room full of names Tap tap but you don't reach back Heart",
+      "t": 85.413,
+      "score": 0.9,
+      "cosine": 0.597,
+      "reason": "fits digital anonymity, loneliness, and data overload themes",
+      "recipe": "4-photo",
       "featured": true
     },
     {
@@ -216,6 +276,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/reach/s5-1-word-portrait.webp",
+      "key": "lexicon/reach/s5-1-word-portrait.webp",
+      "word": "reach",
+      "line": "claps Everybody got reach but don't reach back How we got",
+      "t": 12.109,
+      "score": 0.9,
+      "cosine": 0.542,
+      "reason": "fits cyberpunk mood, digital divide symbolism, lonely connection",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-2-cinema.webp",
       "key": "lexicon/chains/s5-2-cinema.webp",
       "word": "chains",
@@ -225,6 +297,30 @@
       "cosine": 0.536,
       "reason": "Symbolizes broken bonds, decay, urban loneliness fits noir mood",
       "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-5-dream-collage.webp",
+      "key": "lexicon/names/s6-5-dream-collage.webp",
+      "word": "names",
+      "line": "feel alone in a room full of names Tap tap but you don't reach back Heart",
+      "t": 85.413,
+      "score": 0.9,
+      "cosine": 0.522,
+      "reason": "fits digital isolation, ethereal names, lonely cosmic vibe",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s3-5-dream-collage.webp",
+      "key": "lexicon/strangers/s3-5-dream-collage.webp",
+      "word": "strangers",
+      "line": "keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 71.657,
+      "score": 0.9,
+      "cosine": 0.513,
+      "reason": "fits dystopian mood, strangers in isolation, mechanical threats",
+      "recipe": "5-dream-collage",
       "featured": true
     },
     {
@@ -240,6 +336,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scroll/s2-1-word-neon.webp",
+      "key": "lexicon/scroll/s2-1-word-neon.webp",
+      "word": "scroll",
+      "line": "any day You can love me in private But scroll",
+      "t": 21.154,
+      "score": 0.85,
+      "cosine": 0.493,
+      "reason": "fits noir mood, digital theme, urban setting",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/reach/s3-2-word-portrait.webp",
+      "key": "lexicon/reach/s3-2-word-portrait.webp",
+      "word": "reach",
+      "line": "claps Everybody got reach but don't reach back How we got",
+      "t": 12.109,
+      "score": 0.85,
+      "cosine": 0.447,
+      "reason": "Symbolizes hope and isolation in a desolate space, aligns with digital loneliness and cine",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stars/s5-3-neon-night.webp",
       "key": "lexicon/stars/s5-3-neon-night.webp",
       "word": "stars",
@@ -247,7 +367,7 @@
       "t": 74.153,
       "score": 0.7,
       "cosine": 0.504,
-      "reason": "Melancholic and hopeful star reflects song's themes of loneliness and digital longing",
+      "reason": "Melancholic and hopeful star reflects song's themes of lost connection and digital longing",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -257,50 +377,68 @@
       "word": "stars",
       "line": "for the strangers Save your hearts for the stars But the ones who really know",
       "t": 74.153,
-      "score": 0.7,
+      "score": 0.6,
       "cosine": 0.448,
-      "reason": "Symbolizes hope and resilience in a bleak world, fits noir melancholy and digital isolatio",
+      "reason": "Symbolizes hope in a bleak world, fits noir melancholy and digital isolation themes",
       "recipe": "2-film-still",
-      "featured": true
+      "featured": false
     }
   ],
   "byWord": {
     "heart": [
       0,
       2,
-      6
+      7
     ],
     "tap": [
       1,
       3,
       11
     ],
-    "light": [
+    "dream": [
       4,
-      15,
-      16
+      14,
+      26
+    ],
+    "light": [
+      5,
+      19,
+      21
     ],
     "save": [
-      5,
+      6,
       10
     ],
     "love": [
-      7,
+      8,
       9
     ],
-    "dream": [
-      8,
-      13,
-      18
+    "scroll": [
+      12,
+      27
     ],
     "chains": [
-      12,
-      14,
-      17
+      13,
+      15,
+      23
+    ],
+    "strangers": [
+      16,
+      17,
+      25
+    ],
+    "names": [
+      18,
+      20,
+      24
+    ],
+    "reach": [
+      22,
+      28
     ],
     "stars": [
-      19,
-      20
+      29,
+      30
     ]
   }
 }

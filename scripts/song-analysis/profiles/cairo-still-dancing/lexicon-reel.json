@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-08-02T13:34:26.815Z",
+  "generatedAt": "2026-08-04T05:31:59.453Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2606,
     "judged": 64,
-    "accepted": 57,
+    "accepted": 58,
     "kept": 32
   },
   "reel": [
@@ -55,7 +55,7 @@
       "t": 215.656,
       "score": 0.95,
       "cosine": 0.64,
-      "reason": "Strong themes of unity, resilience, and pride align with song's message.",
+      "reason": "Matches Cairo's resilience, unity, and pride with cinematic realism and symbolism",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 39.381,
       "score": 0.95,
       "cosine": 0.592,
-      "reason": "Symbolism aligns with resilience, defiance, and unity in Cairo's urban landscape.",
+      "reason": "Symbolizes defiance, resilience, and unity in a cinematic Cairo setting.",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 105.86,
       "score": 0.95,
       "cosine": 0.566,
-      "reason": "Symbolizes unity, expression, and resilience through performance and typography",
+      "reason": "Symbolizes unity, resilience, and expression central to the song's themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 215.656,
       "score": 0.92,
       "cosine": 0.597,
-      "reason": "Cinematic, resonates with Cairo's resilience and movement",
+      "reason": "Cinematic, resilient, Cairo streets, unity through movement",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 57.423,
       "score": 0.92,
       "cosine": 0.514,
-      "reason": "Resilient Cairo streets, hope, unity, cinematic mood align with song",
+      "reason": "Resilient cityscape mirrors song's themes of defiance and hope.",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 36.281,
       "score": 0.92,
       "cosine": 0.486,
-      "reason": "Celebrates unity, resilience, and city pride with cinematic energy",
+      "reason": "Celebrates unity, resilience, and city pride with vibrant imagery",
       "recipe": "5-photo",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 36.281,
       "score": 0.92,
       "cosine": 0.48,
-      "reason": "Celebratory urban scene aligns with city's resilience and unity themes",
+      "reason": "Celebratory urban scene matches Cairo's resilience and unity themes",
       "recipe": "2-word-portrait",
       "featured": true
     }

@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-08-02T13:31:53.727Z",
+  "generatedAt": "2026-08-04T05:31:06.204Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1587,
+    "candidates": 1680,
     "judged": 64,
-    "accepted": 48,
+    "accepted": 52,
     "kept": 32
   },
   "reel": [
@@ -43,7 +43,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Matches magical corruption, ominous tone, and chaotic visuals",
+      "reason": "Matches magical corruption, ominous mood, and noir atmosphere",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strong noir-steampunk fit with magical corruption and ominous mood",
+      "reason": "Strong noir-steampunk fit with boiler as central symbol",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 118.19,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "fits the grotesque, chaotic, and menacing tone of the song",
+      "reason": "fits dark surrealism, teeth symbolism, chaos and decay align with themes",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -240,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spell/s2-2-film-still.webp",
+      "key": "lexicon/spell/s2-2-film-still.webp",
+      "word": "spell",
+      "line": "Brooms in the boiler room knocking at the door spell got loose and it hungry for more Blackandwhite",
+      "t": 36.456,
+      "score": 0.9,
+      "cosine": 0.567,
+      "reason": "matches magical corruption, ominous atmosphere, and spell symbolism",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s5-4-dark-surreal.webp",
       "key": "lexicon/money/s5-4-dark-surreal.webp",
       "word": "money",
@@ -247,7 +259,7 @@
       "t": 40.171,
       "score": 0.9,
       "cosine": 0.562,
-      "reason": "Symbolizes greed's destruction, fits dark surrealism and urgency",
+      "reason": "Symbolizes greed's destruction, fits dark, surreal noir atmosphere",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -288,6 +300,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tower/s0-1-anime.webp",
+      "key": "lexicon/tower/s0-1-anime.webp",
+      "word": "tower",
+      "line": "Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms in the boiler",
+      "t": 41.494,
+      "score": 0.9,
+      "cosine": 0.511,
+      "reason": "Matches dark, dramatic tower imagery with themes of destruction and corruption",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s0-1-graphic-novel.webp",
       "key": "lexicon/door/s0-1-graphic-novel.webp",
       "word": "door",
@@ -295,7 +319,7 @@
       "t": 35.85,
       "score": 0.9,
       "cosine": 0.502,
-      "reason": "fits noir atmosphere, decay, hidden secrets, and threshold imagery",
+      "reason": "fits noir atmosphere, decay, hidden secrets, and eerie mood",
       "recipe": "1-graphic-novel",
       "featured": true
     },
@@ -319,7 +343,7 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "gold symbolizes villainy and greed, noir-cartoon style fits the mood and themes",
+      "reason": "gold symbolizes villainy, noir atmosphere matches song",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -343,7 +367,7 @@
       "t": 53.023,
       "score": 0.85,
       "cosine": 0.526,
-      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with corruption t",
+      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with boiler room",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -355,7 +379,7 @@
       "t": 45.04,
       "score": 0.85,
       "cosine": 0.519,
-      "reason": "fits noir atmosphere, magical corruption, and ominous mood with surreal moon imagery",
+      "reason": "matches dark, ominous tone and surreal symbolism of corrupted magic",
       "recipe": "2-graphic-novel",
       "featured": true
     },
@@ -369,30 +393,6 @@
       "cosine": 0.518,
       "reason": "Chaotic explosion and falling debris fit the ominous, dangerous mood and magical corruptio",
       "recipe": "3-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s2-6-cinema.webp",
-      "key": "lexicon/wall/s2-6-cinema.webp",
-      "word": "wall",
-      "line": "bends when the wand goes snap shadow on the wall with a longeared cap I aint scared Im just",
-      "t": 76.405,
-      "score": 0.85,
-      "cosine": 0.495,
-      "reason": "decaying wall fits noir atmosphere and magical corruption theme",
-      "recipe": "6-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-1-dark-surreal.webp",
-      "key": "lexicon/eyes/s8-1-dark-surreal.webp",
-      "word": "eyes",
-      "line": "starts to rise little mouse grinning with the stars in his eyes Brooms in the boiler room knocking at the door",
-      "t": 33.437,
-      "score": 0.85,
-      "cosine": 0.494,
-      "reason": "Glowing eye fits noir atmosphere and hidden danger",
-      "recipe": "1-dark-surreal",
       "featured": true
     }
   ],
@@ -417,26 +417,25 @@
     "money": [
       9,
       18,
-      19
+      20
     ],
     "night": [
       10,
       14,
-      20
+      21
     ],
     "gold": [
       11,
       17,
-      25
+      27
     ],
     "eyes": [
-      12,
-      31
+      12
     ],
     "door": [
       13,
-      21,
-      23
+      22,
+      25
     ],
     "teeth": [
       15
@@ -444,26 +443,29 @@
     "move": [
       16
     ],
-    "whisper": [
-      22
+    "spell": [
+      19
     ],
-    "high": [
+    "whisper": [
+      23
+    ],
+    "tower": [
       24
     ],
-    "shadow": [
+    "high": [
       26
     ],
-    "glow": [
-      27
-    ],
-    "moon": [
+    "shadow": [
       28
     ],
-    "falling": [
+    "glow": [
       29
     ],
-    "wall": [
+    "moon": [
       30
+    ],
+    "falling": [
+      31
     ]
   }
 }

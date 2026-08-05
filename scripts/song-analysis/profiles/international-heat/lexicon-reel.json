@@ -1,28 +1,16 @@
 {
   "v": 1,
   "id": "international-heat",
-  "generatedAt": "2026-08-02T14:01:16.679Z",
+  "generatedAt": "2026-08-04T05:41:31.341Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2083,
+    "candidates": 2172,
     "judged": 64,
-    "accepted": 59,
+    "accepted": 60,
     "kept": 32
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
-      "key": "lexicon/bass/s3-3-word-portrait.webp",
-      "word": "bass",
-      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
-      "t": 41.192,
-      "score": 0.95,
-      "cosine": 0.548,
-      "reason": "Strong musical and sensual alignment with song's themes",
-      "recipe": "3-word-portrait",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
       "key": "lexicon/night/s12-6-word-portrait.webp",
@@ -55,7 +43,7 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Sensual neon sign fits seductive, intense mood and cultural fusion theme",
+      "reason": "Sensual neon fits seduction and cultural fusion themes",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -79,7 +67,7 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.529,
-      "reason": "Sensual, confident woman in a slip dress aligns with seduction and nightlife themes; bold ",
+      "reason": "Sensual, confident woman in a slip dress aligns with seduction and nightlife themes.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -115,7 +103,7 @@
       "t": 13.816,
       "score": 0.95,
       "cosine": 0.502,
-      "reason": "Sensual, cultural fusion, and intimate atmosphere align perfectly with the song's themes.",
+      "reason": "Sensual, cultural fusion, and intimate atmosphere align with song's themes",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -180,6 +168,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/desire/s0-4-word-portrait.webp",
+      "key": "lexicon/desire/s0-4-word-portrait.webp",
+      "word": "desire",
+      "line": "desire",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.479,
+      "reason": "Sensual, intimate, and symbolic of fleeting passion and longing",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whisper/s5-5-word-neon.webp",
       "key": "lexicon/whisper/s5-5-word-neon.webp",
       "word": "whisper",
@@ -189,6 +189,18 @@
       "cosine": 0.477,
       "reason": "Sensual, mysterious, and urban vibe matches song's themes",
       "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
+      "t": 141.421,
+      "score": 0.95,
+      "cosine": 0.477,
+      "reason": "Sensual, confident, urban night aligns with song's themes",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -247,7 +259,7 @@
       "t": 27.11,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "Sensual neon fits seductive urban nightlife and cultural fusion",
+      "reason": "Sensual neon fits seductive nightlife and cultural fusion",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -271,7 +283,7 @@
       "t": 39.997,
       "score": 0.95,
       "cosine": 0.45,
-      "reason": "Sensual, intimate, and cinematic portrayal aligns with song's themes of desire and cultura",
+      "reason": "Sensual, intimate, and cinematic portrayal of skin aligns with the song's themes of desire",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,8 +307,20 @@
       "t": 130.21,
       "score": 0.95,
       "cosine": 0.437,
-      "reason": "Sensual urban setting matches song's mood and themes of desire and cultural fusion",
+      "reason": "Sensual urban night, neon lights, intimate moment align with song's themes",
       "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seductive/s1-2-dream-collage.webp",
+      "key": "lexicon/seductive/s1-2-dream-collage.webp",
+      "word": "seductive",
+      "line": "seductive",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.437,
+      "reason": "Sensual nightclub scene matches seductive theme and intense mood",
+      "recipe": "2-dream-collage",
       "featured": true
     },
     {
@@ -343,8 +367,20 @@
       "t": 130.27,
       "score": 0.95,
       "cosine": 0.428,
-      "reason": "Sensual, urban, intimate, neon-lit吻 captures song's mood and themes",
+      "reason": "Sensual, urban, intimate, neon lighting fits the song's mood and themes",
       "recipe": "1-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s3-3-word-portrait.webp",
+      "key": "lexicon/bass/s3-3-word-portrait.webp",
+      "word": "bass",
+      "line": "place No clothes just skin just sweat just bass Male Oh Is that what you like",
+      "t": 41.192,
+      "score": 0.9,
+      "cosine": 0.548,
+      "reason": "Sensual energy, musical dominance, and stage performance align with song's themes of seduc",
+      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -358,107 +394,75 @@
       "reason": "Sensual energy, stage lights, cultural fusion, empowerment",
       "recipe": "5-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "little touch now your pulse go boom Tonight Im the fire you the fuel in this world wide room I see",
-      "t": 29.559,
-      "score": 0.9,
-      "cosine": 0.504,
-      "reason": "Symbolism aligns with fire's seductive, intense energy and cultural fusion",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s11-4-word-portrait.webp",
-      "key": "lexicon/burn/s11-4-word-portrait.webp",
-      "word": "burn",
-      "line": "burn",
-      "t": null,
-      "score": 0.9,
-      "cosine": 0.486,
-      "reason": "Symbolizes transformation and vulnerability through fire, fits sensual and intense mood.",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
-      "key": "lexicon/light/s9-6-word-portrait.webp",
-      "word": "light",
-      "line": "anh đến sáng mai Male We can sweat out every secret til the morning light Female One more drink",
-      "t": 141.421,
-      "score": 0.9,
-      "cosine": 0.477,
-      "reason": "Sensual, confident, urban night aligns with song's themes",
-      "recipe": "6-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
-    "bass": [
-      0,
-      28
-    ],
     "night": [
-      1,
-      9
+      0,
+      8
     ],
     "flame": [
+      1,
+      3,
+      6
+    ],
+    "body": [
       2,
       4,
       7
     ],
-    "body": [
-      3,
-      5,
-      8
-    ],
     "fire": [
-      6,
-      29
+      5
     ],
     "heat": [
-      10,
-      20,
-      26
+      9,
+      21,
+      28
     ],
     "rhythm": [
-      11,
-      17
+      10,
+      18
     ],
     "burn": [
-      12,
-      30
+      11
     ],
     "kiss": [
-      13,
-      22,
-      27
+      12,
+      23,
+      29
+    ],
+    "desire": [
+      13
     ],
     "whisper": [
       14,
-      18
-    ],
-    "drink": [
-      15,
-      16
-    ],
-    "touch": [
-      19,
-      25
-    ],
-    "skin": [
-      21
-    ],
-    "love": [
-      23
-    ],
-    "sin": [
-      24
+      19
     ],
     "light": [
+      15
+    ],
+    "drink": [
+      16,
+      17
+    ],
+    "touch": [
+      20,
+      27
+    ],
+    "skin": [
+      22
+    ],
+    "love": [
+      24
+    ],
+    "seductive": [
+      25
+    ],
+    "sin": [
+      26
+    ],
+    "bass": [
+      30,
       31
     ]
   }

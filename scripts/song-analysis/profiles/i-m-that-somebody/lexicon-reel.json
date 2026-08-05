@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-08-02T13:53:52.116Z",
+  "generatedAt": "2026-08-04T05:38:45.558Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1220,
-    "judged": 42,
-    "accepted": 35,
+    "candidates": 1289,
+    "judged": 48,
+    "accepted": 41,
     "kept": 32
   },
   "reel": [
@@ -43,7 +43,7 @@
       "t": 87.992,
       "score": 0.95,
       "cosine": 0.514,
-      "reason": "Calm, resolute posture matches self-assurance and stability themes",
+      "reason": "Matches calm confidence and stability themes with cinematic lighting",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 15.859,
       "score": 0.95,
       "cosine": 0.495,
-      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia with neon and cin",
+      "reason": "Matches playful confidence, secretive intimacy, and futuristic nostalgia",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -93,6 +93,18 @@
       "cosine": 0.469,
       "reason": "Confident stage presence aligns with self-assurance and playful intimacy",
       "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s4-6-stickers.webp",
+      "key": "lexicon/bassline/s4-6-stickers.webp",
+      "word": "bassline",
+      "line": "Like the night got spies I see how you look When the bassline drops Half a smile on your face Then you tell me",
+      "t": 18.215,
+      "score": 0.95,
+      "cosine": 0.459,
+      "reason": "Confident, energetic, and modern imagery aligns with the song's playful confidence and fut",
+      "recipe": "6-stickers",
       "featured": true
     },
     {
@@ -120,6 +132,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s1-2-word-portrait.webp",
+      "key": "lexicon/solid/s1-2-word-portrait.webp",
+      "word": "solid",
+      "line": "need a rumor You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the",
+      "t": 100.427,
+      "score": 0.95,
+      "cosine": 0.435,
+      "reason": "Strong symbolism of stability and confidence aligns with song's themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s3-6-word-portrait.webp",
       "key": "lexicon/party/s3-6-word-portrait.webp",
       "word": "party",
@@ -127,7 +151,7 @@
       "t": 174.324,
       "score": 0.95,
       "cosine": 0.433,
-      "reason": "matches playful mood, neon lights align with futuristic nostalgia",
+      "reason": "matches playful mood, nightlife, celebration, and intimacy",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -151,7 +175,7 @@
       "t": 120.145,
       "score": 0.95,
       "cosine": 0.417,
-      "reason": "Confident, stylish club scene matches playful self-assurance and retro aesthetic",
+      "reason": "Confident, stylish club scene matches playful self-assurance and futuristic nostalgia.",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -204,15 +228,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
-      "key": "lexicon/soul/s9-1-stickers.webp",
-      "word": "soul",
-      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
-      "t": 31.29,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s3-6-word-portrait.webp",
+      "key": "lexicon/solid/s3-6-word-portrait.webp",
+      "word": "solid",
+      "line": "need a rumor You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the",
+      "t": 100.427,
       "score": 0.9,
-      "cosine": 0.452,
-      "reason": "Matches playful confidence, futuristic vibe, and symbolic soul presence",
-      "recipe": "1-stickers",
+      "cosine": 0.473,
+      "reason": "Strong symbolism of stability and focus aligns with self-assurance and reliability themes.",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -223,8 +247,20 @@
       "t": 23.313,
       "score": 0.9,
       "cosine": 0.446,
-      "reason": "Matches playful confidence, lyrical bridge, and hopeful connection",
+      "reason": "Matches playful confidence, lyrical theme, and intimate mood",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s2-4-word-portrait.webp",
+      "key": "lexicon/solid/s2-4-word-portrait.webp",
+      "word": "solid",
+      "line": "need a rumor You dont need a scene You need somebody solid When the lights go green And if the world gets loud Ill turn the",
+      "t": 100.427,
+      "score": 0.9,
+      "cosine": 0.445,
+      "reason": "Matches futuristic nostalgia and stability themes with minimalist, cinematic imagery",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -235,7 +271,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.441,
-      "reason": "Playful, confident, and warm design fits the song's mood and themes.",
+      "reason": "Playful, confident, and warm visual aligns with song's mood and themes.",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -271,7 +307,7 @@
       "t": 105.581,
       "score": 0.9,
       "cosine": 0.424,
-      "reason": "Intimate, tender hands convey trust and support fitting the song's theme",
+      "reason": "Intimate, tender hands align with trust and reassurance in the song",
       "recipe": "3-photo",
       "featured": true
     },
@@ -295,7 +331,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.406,
-      "reason": "Cozy, inviting home matches song's theme of stability and comfort",
+      "reason": "Cozy, inviting atmosphere matches song's theme of stability and comfort.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -336,6 +372,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
+      "key": "lexicon/soul/s9-1-stickers.webp",
+      "word": "soul",
+      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
+      "t": 31.29,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "Matches playful confidence and futuristic nostalgia with abstract, upbeat imagery",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
       "key": "lexicon/rhythm/s1-5-word-portrait.webp",
       "word": "rhythm",
@@ -343,56 +391,8 @@
       "t": 23.313,
       "score": 0.85,
       "cosine": 0.414,
-      "reason": "Urban rhythm aligns with song's playful confidence and futuristic nostalgia",
+      "reason": "Urban rhythm connects to song's playful confidence and futuristic nostalgia",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s5-6-photo.webp",
-      "key": "lexicon/move/s5-6-photo.webp",
-      "word": "move",
-      "line": "if Im steady Girl you know I dont fold I dont move reckless I dont speak what Im told You can test my patience You",
-      "t": 90.291,
-      "score": 0.8,
-      "cosine": 0.428,
-      "reason": "Confident stance matches self-assurance; calm domestic setting aligns with stability",
-      "recipe": "6-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s7-2-word-portrait.webp",
-      "key": "lexicon/home/s7-2-word-portrait.webp",
-      "word": "home",
-      "line": "in your tone But Im not here to run it Im here to bring it home Iiii wooont let thiiis shooow",
-      "t": 27.226,
-      "score": 0.8,
-      "cosine": 0.424,
-      "reason": "Matches warmth and safety of 'home' in a stable, confident relationship",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s14-3-pixel.webp",
-      "key": "lexicon/eyes/s14-3-pixel.webp",
-      "word": "eyes",
-      "line": "You been moving cautious Like the room got eyes Like the walls might talk Like the night got spies I see",
-      "t": 13.99,
-      "score": 0.7,
-      "cosine": 0.441,
-      "reason": "Mood matches with watchful, intense eyes; retro aesthetic fits futuristic nostalgia",
-      "recipe": "3-pixel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s7-6-poster.webp",
-      "key": "lexicon/run/s7-6-poster.webp",
-      "word": "run",
-      "line": "in your rhythm Little warnings in your tone But Im not here to run it Im here to bring it home",
-      "t": 25.808,
-      "score": 0.7,
-      "cosine": 0.428,
-      "reason": "Matches energy and modernity but lacks romantic intimacy",
-      "recipe": "6-poster",
       "featured": true
     }
   ],
@@ -400,16 +400,15 @@
     "lights": [
       0,
       1,
-      15
+      17
     ],
     "steady": [
       2,
-      10,
-      12
+      12,
+      14
     ],
     "move": [
-      3,
-      28
+      3
     ],
     "night": [
       4,
@@ -417,45 +416,48 @@
     ],
     "soul": [
       6,
-      16
-    ],
-    "rhythm": [
-      7,
-      17,
-      27
-    ],
-    "different": [
-      8,
-      11,
-      25
-    ],
-    "party": [
-      9,
-      13,
-      14
-    ],
-    "love": [
-      18,
-      19,
-      22
-    ],
-    "eyes": [
-      20,
       30
     ],
+    "bassline": [
+      7
+    ],
+    "rhythm": [
+      8,
+      19,
+      31
+    ],
+    "different": [
+      9,
+      13,
+      28
+    ],
+    "solid": [
+      10,
+      18,
+      20
+    ],
+    "party": [
+      11,
+      15,
+      16
+    ],
+    "love": [
+      21,
+      22,
+      25
+    ],
+    "eyes": [
+      23
+    ],
     "hands": [
-      21
+      24
     ],
     "home": [
-      23,
-      24,
-      29
+      26,
+      27
     ],
     "somebody": [
-      26
-    ],
-    "run": [
-      31
+      29
     ]
   }
 }
