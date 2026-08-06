@@ -20,10 +20,27 @@
 //
 //   node yeah-its-ai-cover.mjs --gen            # render 6 candidates → gen/
 //   node yeah-its-ai-cover.mjs --pick 1b        # typeset → originals/
+//   node yeah-its-ai-cover.mjs --pick 1b --as " (Kontext)"   # typeset under a label
 //   node yeah-its-ai-cover.mjs --contact        # 6-up sheet to compare
+//   node yeah-its-ai-cover.mjs --kontext 1a     # slow cloud pass over one candidate
+//
+// TWO COPIES, fast and slow (owner's ask 2026-08-06):
+//   fast — the local DreamShaperXL candidates above. Free, ~10s each, but the
+//          8-step turbo band will not hold "monochrome except gold": the first
+//          --gen run came back either globally sepia or flatly grey, with no
+//          gold chain or watch anywhere. Composition is good; the rule is not met.
+//   slow — flux/kontext-pro/image-to-image on aimlapi, run OVER the chosen local
+//          candidate. Kontext is an edit model, so this is the shape that plays
+//          to it: keep the composition that already works, add only the gold.
+//
+// The edit prompt below is deliberately SHORT. Kontext returns solid black plates
+// (HTTP 200, still billed, ~2.2KB) when handed over-written prompts or context-free
+// close-ups — that failure cost a whole DTTG pass. Short + anchored to a real
+// image is the mode where it behaves. checkPlate() below catches it if it recurs.
 
 import sharp from "sharp";
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
+import { homedir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -105,6 +122,67 @@ async function generate(prompt, seed) {
   throw new Error("timeout waiting for ComfyUI");
 }
 
+// ── slow pass: Kontext ───────────────────────────────────────────────────────
+const AIML = "https://api.aimlapi.com/v1";
+const KONTEXT = "flux/kontext-pro/image-to-image";
+const UA = "Mozilla/5.0 (X11; Linux x86_64) x1c7-cover/1.0";
+
+// Short on purpose. Names the one thing the local pass got wrong and the one
+// thing that must not change. Anything longer risks the black plate.
+const EDIT = [
+  "Keep the composition, the figure and the framing exactly as they are.",
+  "Make his neck chain and wristwatch rich glowing metallic gold,",
+  "and scatter warm gold reflections across the wet dock and the black water.",
+  "Everything else stays pure black and white — no sepia, no brown, no colour tint.",
+].join(" ");
+
+const key = () => readFileSync(join(homedir(), ".bfl_key"), "utf8").trim();
+
+async function aimlPost(payload) {
+  const r = await fetch(`${AIML}/images/generations`, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${key()}`, "Content-Type": "application/json",
+               "User-Agent": UA, Accept: "application/json" },
+    body: JSON.stringify(payload),
+  });
+  const body = await r.text();
+  // Read the BODY, not just the status — a 403 here has meant "out of funds"
+  // at least once, and was misread as rate limiting for two passes.
+  if (!r.ok) throw new Error(`aimlapi HTTP ${r.status}: ${body.slice(0, 300)}`);
+  return JSON.parse(body);
+}
+
+const urlOf = (o) => (o?.images?.[0]?.url) || (o?.data?.[0]?.url) || null;
+
+async function kontext(srcPath) {
+  const uri = "data:image/png;base64," + readFileSync(srcPath).toString("base64");
+  const r = await aimlPost({ model: KONTEXT, prompt: EDIT, image_url: uri,
+                             num_images: 1, output_format: "png", safety_tolerance: "2" });
+  let url = urlOf(r);
+  const gid = r.id || r.generation_id;
+  for (let i = 0; i < 60 && !url; i++) {
+    await new Promise((res) => setTimeout(res, 5000));
+    const q = await fetch(`${AIML}/images/generations?generation_id=${gid}`, {
+      headers: { Authorization: `Bearer ${key()}`, "User-Agent": UA } });
+    if (!q.ok) continue;
+    const s = await q.json();
+    url = urlOf(s);
+    if (!url && ["failed", "error"].includes(s?.status)) throw new Error(`kontext failed: ${JSON.stringify(s).slice(0, 300)}`);
+  }
+  if (!url) throw new Error("kontext: no url after polling");
+  const img = await fetch(url, { headers: { "User-Agent": UA } });
+  return Buffer.from(await img.arrayBuffer());
+}
+
+// A Kontext black plate is ~2.2KB and near-uniform. Size alone catches it.
+async function checkPlate(buf) {
+  if (buf.length < 20000) return `suspiciously small (${buf.length}B) — likely a black plate`;
+  const { channels } = await sharp(buf).stats();
+  const spread = Math.max(...channels.map((c) => c.max)) - Math.min(...channels.map((c) => c.min));
+  if (spread < 12) return `near-uniform image (spread ${spread}) — black plate`;
+  return null;
+}
+
 const seedOf = (s) => { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
@@ -181,17 +259,31 @@ if (mode === "--gen") {
   await sharp({ create: { width: cell * sheet, height: cell * 2, channels: 3, background: "#000" } })
     .composite(comps).png().toFile(out);
   console.error(`✔ contact sheet → ${out}`);
+} else if (mode === "--kontext") {
+  const cand = process.argv[3];
+  if (!cand) { console.error("usage: --kontext <candidate e.g. 1a>"); process.exit(1); }
+  const src = join(GEN, `${SLUG}-${cand}.png`);
+  if (!existsSync(src)) { console.error(`no such candidate: ${src}`); process.exit(1); }
+  console.error(`→ kontext pass over ${cand} (this is the slow one)…`);
+  const buf = await kontext(src);
+  const bad = await checkPlate(buf);
+  if (bad) { console.error(`✗ REJECTED: ${bad}. Not written — the call was still billed.`); process.exit(1); }
+  const out = join(GEN, `${SLUG}-${cand}-kontext.png`);
+  writeFileSync(out, buf);
+  console.error(`✔ kontext → ${out} (${(buf.length / 1024 / 1024).toFixed(2)}MB)`);
 } else if (mode === "--pick") {
   const cand = process.argv[3];
-  if (!cand) { console.error("usage: --pick <candidate e.g. 1b>"); process.exit(1); }
+  if (!cand) { console.error("usage: --pick <candidate e.g. 1b> [--as <label>]"); process.exit(1); }
+  const ai = process.argv.indexOf("--as");
+  const label = ai > 0 ? (process.argv[ai + 1] || "") : "";
   const src = join(GEN, `${SLUG}-${cand}.png`);
   if (!existsSync(src)) { console.error(`no such candidate: ${src}`); process.exit(1); }
   const W = 2048;
   const art = await sharp(src).resize(W, W, { kernel: "lanczos3" }).toBuffer();
-  const outPath = join(ORIGINALS, COVER_NAME);
+  const outPath = join(ORIGINALS, label ? COVER_NAME.replace(/\.png$/, `${label}.png`) : COVER_NAME);
   await sharp(art).composite([{ input: Buffer.from(overlay(W)) }]).png({ compressionLevel: 9 }).toFile(outPath);
   console.error(`✔ original written: ${outPath}`);
 } else {
-  console.error("usage: yeah-its-ai-cover.mjs --gen | --contact | --pick <candidate>");
+  console.error("usage: yeah-its-ai-cover.mjs --gen | --contact | --kontext <cand> | --pick <cand> [--as <label>]");
   process.exit(1);
 }
