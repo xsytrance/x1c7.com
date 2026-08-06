@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "membrane-still-insane",
-  "generatedAt": "2026-08-04T05:44:33.394Z",
+  "generatedAt": "2026-08-06T06:41:50.223Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2069,
+    "candidates": 2188,
     "judged": 64,
-    "accepted": 60,
+    "accepted": 61,
     "kept": 32
   },
   "reel": [
@@ -55,7 +55,7 @@
       "t": 174.566,
       "score": 1,
       "cosine": 0.746,
-      "reason": "Perfect fit with boiler as mind, steam as chaos, noir-cartoon steampunk",
+      "reason": "Perfect fit with boiler as mind, steam as chaos, noir-cartoon atmosphere",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 80.26,
       "score": 1,
       "cosine": 0.732,
-      "reason": "Perfect fit with cartoon villain, fog, and noir-cartoon aesthetic",
+      "reason": "Perfect fit with cartoon villain, fog, noir-cartoon blend, and madness themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 8.069,
       "score": 1,
       "cosine": 0.728,
-      "reason": "Perfectly aligns with song's gritty noir-cartoon atmosphere and themes",
+      "reason": "Perfectly aligns with song's noir-cartoon, gritty, and fractured sanity themes.",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 45.047,
       "score": 1,
       "cosine": 0.705,
-      "reason": "Perfect fit with flames, riverboat, and noir-cartoon chaos",
+      "reason": "Perfectly matches song's noir-cartoon, riverboat crime, and sinister playfulness",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 174.566,
       "score": 1,
       "cosine": 0.679,
-      "reason": "Perfectly aligns with song's gritty noir-cartoon atmosphere and themes",
+      "reason": "Perfect fit with boiler, flames, smoke, and noir-cartoon atmosphere",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -180,30 +180,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
-      "key": "lexicon/eyes/s8-5-neon-sign.webp",
-      "word": "eyes",
-      "line": "whistle go in the whole dock shake cartoon eyes wide when the bad boys break brain on",
-      "t": 36.897,
-      "score": 1,
-      "cosine": 0.622,
-      "reason": "Perfectly aligns with noir-cartoon atmosphere and themes of fractured sanity and cartoonis",
-      "recipe": "5-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
-      "key": "lexicon/body/s4-3-manga-line.webp",
-      "word": "body",
-      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
-      "t": 159.858,
-      "score": 0.98,
-      "cosine": 0.591,
-      "reason": "Perfectly aligns with noir-cartoon grit, fractured sanity, and thematic elements",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flames/s1-2-dream-collage.webp",
       "key": "lexicon/flames/s1-2-dream-collage.webp",
       "word": "flames",
@@ -211,7 +187,7 @@
       "t": 45.047,
       "score": 0.95,
       "cosine": 0.739,
-      "reason": "Strong noir-cartoon visuals align with song's themes and mood",
+      "reason": "Strong noir-cartoon visuals align with song's mood and themes",
       "recipe": "2-dream-collage",
       "featured": true
     },
@@ -223,7 +199,7 @@
       "t": 53.975,
       "score": 0.95,
       "cosine": 0.696,
-      "reason": "matches noir-cartoon chaos, storm as mental breakdown, surreal violence",
+      "reason": "matches storm's surreal chaos, noir-cartoon violence, and fractured sanity",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -235,7 +211,7 @@
       "t": 178.91,
       "score": 0.95,
       "cosine": 0.689,
-      "reason": "Strong thematic and visual alignment with song's noir-cartoon world and fractured sanity",
+      "reason": "Strong noir-cartoon fit with hands, neon, riverboat, and sinister playfulness",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -259,7 +235,7 @@
       "t": 73.954,
       "score": 0.95,
       "cosine": 0.647,
-      "reason": "fits noir-cartoon tone, gold as corruption, skeletal figures align with madness theme",
+      "reason": "fits noir-cartoon tone, gold as corruption, skeletal figures match madness theme",
       "recipe": "4-graphic-novel",
       "featured": true
     },
@@ -271,7 +247,7 @@
       "t": 61.555,
       "score": 0.95,
       "cosine": 0.642,
-      "reason": "Strong noir-cartoon atmosphere, smoke, riverboat, mystery, and mood align perfectly",
+      "reason": "Strong noir-cartoon atmosphere, smoke, riverboat, mystery",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -283,7 +259,7 @@
       "t": 73.954,
       "score": 0.95,
       "cosine": 0.629,
-      "reason": "fits noir-cartoon mood, gold as villainy symbol, rain and neon match themes",
+      "reason": "fits noir-cartoon vibe, gold as villainy symbol, rain and neon match themes",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -312,6 +288,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
+      "key": "lexicon/eyes/s8-5-neon-sign.webp",
+      "word": "eyes",
+      "line": "whistle go in the whole dock shake cartoon eyes wide when the bad boys break brain on",
+      "t": 36.897,
+      "score": 0.95,
+      "cosine": 0.622,
+      "reason": "Perfectly aligns with noir-cartoon atmosphere and themes of fractured sanity and cartoonis",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s2-3-dream-collage.webp",
       "key": "lexicon/boiler/s2-3-dream-collage.webp",
       "word": "boiler",
@@ -331,8 +319,20 @@
       "t": 159.858,
       "score": 0.95,
       "cosine": 0.619,
-      "reason": "Strong visual alignment with song's noir-cartoon themes and fractured sanity",
+      "reason": "Matches noir-cartoon mood, riverboat setting, and fractured sanity themes",
       "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s4-3-manga-line.webp",
+      "key": "lexicon/body/s4-3-manga-line.webp",
+      "word": "body",
+      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
+      "t": 159.858,
+      "score": 0.95,
+      "cosine": 0.591,
+      "reason": "Strong alignment with noir-cartoon, fractured sanity, and gritty tension",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -355,7 +355,7 @@
       "t": 53.975,
       "score": 0.95,
       "cosine": 0.588,
-      "reason": "Storm fits the gritty noir atmosphere and themes of chaos and madness",
+      "reason": "Storm fits the noir-cartoon mood and themes of chaos and madness",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -372,27 +372,27 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s4-3-neon-night.webp",
-      "key": "lexicon/hands/s4-3-neon-night.webp",
-      "word": "hands",
-      "line": "Eyes wide open, but I'm stuck in the dream. Hands got ache and the gloves ain't clean. My whole dock",
-      "t": 178.91,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s1-2-word-portrait.webp",
+      "key": "lexicon/steam/s1-2-word-portrait.webp",
+      "word": "steam",
+      "line": "insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but I'm stuck in the dream.",
+      "t": 175.845,
       "score": 0.95,
-      "cosine": 0.564,
-      "reason": "Perfectly aligns with gritty noir-cartoon mood and themes",
-      "recipe": "3-neon-night",
+      "cosine": 0.576,
+      "reason": "fits noir-cartoon mood, industrial steam symbolism, ghostly menace",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s3-2-neon-night.webp",
-      "key": "lexicon/eyes/s3-2-neon-night.webp",
-      "word": "eyes",
-      "line": "whistle go in the whole dock shake cartoon eyes wide when the bad boys break brain on",
-      "t": 36.897,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s6-2-film-still.webp",
+      "key": "lexicon/steam/s6-2-film-still.webp",
+      "word": "steam",
+      "line": "insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but I'm stuck in the dream.",
+      "t": 175.845,
       "score": 0.95,
-      "cosine": 0.548,
-      "reason": "Sinister neon eyes fit noir-cartoon madness and gritty urban violence",
-      "recipe": "2-neon-night",
+      "cosine": 0.57,
+      "reason": "Eerie steam imagery fits the song's noir-cartoon madness and surreal atmosphere.",
+      "recipe": "2-film-still",
       "featured": true
     }
   ],
@@ -408,13 +408,13 @@
     ],
     "gold": [
       2,
-      20,
-      22
+      18,
+      20
     ],
     "boiler": [
       3,
       10,
-      25
+      24
     ],
     "night": [
       4
@@ -422,42 +422,44 @@
     "flames": [
       7,
       8,
-      16
+      14
     ],
     "hands": [
       9,
-      18,
-      30
+      16
     ],
     "body": [
       11,
-      15,
+      25,
       26
     ],
     "move": [
       12,
       27
     ],
-    "eyes": [
-      14,
-      31
-    ],
     "storm": [
-      17,
+      15,
       28
     ],
     "membrane": [
-      19
+      17
     ],
     "smoke": [
-      21
+      19
     ],
     "drip": [
-      23,
-      24
+      21,
+      22
+    ],
+    "eyes": [
+      23
     ],
     "teeth": [
       29
+    ],
+    "steam": [
+      30,
+      31
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-08-04T05:48:16.016Z",
+  "generatedAt": "2026-08-06T06:45:32.823Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2685,
+    "candidates": 2715,
     "judged": 64,
     "accepted": 58,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 63.588,
       "score": 1,
       "cosine": 0.583,
-      "reason": "Perfectly aligns with summer allure, confidence, and opulence.",
+      "reason": "Perfectly aligns with summer allure, confidence, and opulence in the song.",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -33,6 +33,18 @@
       "cosine": 0.567,
       "reason": "Perfectly aligns with summer seduction, confidence, and sultry mood.",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
+      "key": "lexicon/heat/s8-2-word-portrait.webp",
+      "word": "heat",
+      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
+      "t": 157.257,
+      "score": 1,
+      "cosine": 0.526,
+      "reason": "Matches summer seduction, confident energy, and vibrant club atmosphere",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -55,7 +67,7 @@
       "t": 228.04,
       "score": 0.95,
       "cosine": 0.562,
-      "reason": "Confident, sultry, and cinematic image aligns with song's themes and mood.",
+      "reason": "Confident, sultry, and cinematic imagery aligns with the song's themes and mood.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -67,7 +79,7 @@
       "t": 7.38,
       "score": 0.95,
       "cosine": 0.555,
-      "reason": "Confident, stylish, and cinematic imagery aligns with the song's themes of summer seductio",
+      "reason": "Confident, stylish, summer vibe aligns perfectly with song's themes",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -79,7 +91,7 @@
       "t": 63.588,
       "score": 0.95,
       "cosine": 0.544,
-      "reason": "Matches opulence, confidence, and summer luxury in a sultry setting.",
+      "reason": "Matches sultry, confident summer luxury and opulence",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -93,18 +105,6 @@
       "cosine": 0.527,
       "reason": "Sensual, cinematic, and aligned with summer allure and female empowerment",
       "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s8-2-word-portrait.webp",
-      "key": "lexicon/heat/s8-2-word-portrait.webp",
-      "word": "heat",
-      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
-      "t": 157.257,
-      "score": 0.95,
-      "cosine": 0.526,
-      "reason": "Matches summer energy, confidence, and dance floor allure",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -127,7 +127,7 @@
       "t": 8.86,
       "score": 0.95,
       "cosine": 0.522,
-      "reason": "Confident, sultry summer imagery aligns with song's themes and mood.",
+      "reason": "Confident, sultry summer imagery aligns with the song's themes and mood.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 63.588,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Aligns with seductive, confident, luxury themes and neon-lit urban setting",
+      "reason": "Matches sultry, confident, luxury, and allure of the song",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 107.218,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "Urban confidence, seductive mood, and nighttime setting align perfectly with the song's th",
+      "reason": "Urban confidence, seductive mystery, and nighttime allure align perfectly with the song's ",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 23.487,
       "score": 0.95,
       "cosine": 0.503,
-      "reason": "matches sultry, confident, mysterious summer night vibe",
+      "reason": "Matches sultry, confident, mysterious vibe of the song",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 39.3,
       "score": 0.95,
       "cosine": 0.447,
-      "reason": "Sultry, urban, confident, neon-lit, seductive mood matches song",
+      "reason": "Sultry, urban, confident, neon lighting, leather, rain align with song's themes",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 107.218,
       "score": 0.9,
       "cosine": 0.524,
-      "reason": "Seductive, urban, and aligned with summer night themes and female allure",
+      "reason": "Sultry, urban, seductive imagery aligns with song's themes and mood.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 38.418,
       "score": 0.9,
       "cosine": 0.515,
-      "reason": "Confident urban imagery aligns with song's themes of city seduction and female power.",
+      "reason": "Confident urban imagery aligns with song's themes and mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -379,7 +379,7 @@
       "t": 72.481,
       "score": 0.9,
       "cosine": 0.484,
-      "reason": "Confident, serene posture matches song's themes of female strength and control",
+      "reason": "Confident, serene woman aligns with theme of female power and quiet strength",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -399,27 +399,27 @@
   "byWord": {
     "gold": [
       0,
-      5,
+      6,
       10
     ],
     "heat": [
       1,
-      7,
+      2,
       15
     ],
     "walk": [
-      2
+      3
     ],
     "push": [
-      3,
+      4,
       11,
       21
     ],
     "slow": [
-      4
+      5
     ],
     "skin": [
-      6
+      7
     ],
     "light": [
       8,

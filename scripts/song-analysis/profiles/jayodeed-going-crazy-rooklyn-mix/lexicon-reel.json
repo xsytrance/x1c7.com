@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-08-04T05:42:19.565Z",
+  "generatedAt": "2026-08-06T06:39:32.804Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2055,
+    "candidates": 2102,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -55,7 +55,7 @@
       "t": 160.624,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "Reflects addiction, chaos, and toxic love with glass as a symbolic barrier",
+      "reason": "Reflects toxic relationship, addiction, and urban chaos",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -216,18 +216,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-4-dream-collage.webp",
-      "key": "lexicon/drink/s0-4-dream-collage.webp",
-      "word": "drink",
-      "line": "you baby One more drink and I might call you One",
-      "t": 21.709,
-      "score": 0.95,
-      "cosine": 0.486,
-      "reason": "chaotic storm, addictive elements, obsessive symbolism fit song's themes",
-      "recipe": "4-dream-collage",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s7-6-word-neon.webp",
       "key": "lexicon/burn/s7-6-word-neon.webp",
       "word": "burn",
@@ -319,7 +307,7 @@
       "t": 104.246,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "Emotional pain, dim lighting, turmoil match song's mood and themes",
+      "reason": "matches toxic emotion, chaos, and melancholic nightlife",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -331,7 +319,7 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty emotion",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty despair",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -367,7 +355,7 @@
       "t": 208.572,
       "score": 0.95,
       "cosine": 0.442,
-      "reason": "Powerful symbolism aligns with toxic love and emotional intensity",
+      "reason": "Powerful imagery aligns with toxic love and emotional intensity of the song",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -394,13 +382,25 @@
       "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
       "recipe": "5-word-portrait",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s5-5-word-neon.webp",
+      "key": "lexicon/high/s5-5-word-neon.webp",
+      "word": "high",
+      "line": "We dont need forever Just give me the high Round and round We",
+      "t": 115.82,
+      "score": 0.95,
+      "cosine": 0.426,
+      "reason": "Surreal neon imagery fits toxic nightlife and addiction themes",
+      "recipe": "5-word-neon",
+      "featured": true
     }
   ],
   "byWord": {
     "crazy": [
       0,
       9,
-      31
+      30
     ],
     "glass": [
       1,
@@ -420,8 +420,7 @@
     ],
     "drink": [
       8,
-      11,
-      17
+      11
     ],
     "night": [
       10,
@@ -435,33 +434,36 @@
       16
     ],
     "burn": [
-      18,
-      27
-    ],
-    "dark": [
-      19,
-      20
-    ],
-    "love": [
-      21
-    ],
-    "chaos": [
-      22,
-      30
-    ],
-    "eyes": [
-      23,
-      24,
-      28
-    ],
-    "bleed": [
-      25
-    ],
-    "hands": [
+      17,
       26
     ],
-    "truth": [
+    "dark": [
+      18,
+      19
+    ],
+    "love": [
+      20
+    ],
+    "chaos": [
+      21,
       29
+    ],
+    "eyes": [
+      22,
+      23,
+      27
+    ],
+    "bleed": [
+      24
+    ],
+    "hands": [
+      25
+    ],
+    "truth": [
+      28
+    ],
+    "high": [
+      31
     ]
   }
 }

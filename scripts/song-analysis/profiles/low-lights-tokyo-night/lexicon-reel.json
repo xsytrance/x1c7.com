@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-08-04T05:42:52.760Z",
+  "generatedAt": "2026-08-06T06:40:08.009Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1111,
-    "judged": 41,
-    "accepted": 38,
+    "candidates": 1141,
+    "judged": 44,
+    "accepted": 41,
     "kept": 32
   },
   "reel": [
@@ -103,7 +103,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.695,
-      "reason": "matches bittersweet mood, Tokyo nightlife, emotional weight",
+      "reason": "matches bittersweet mood, urban isolation, nostalgic Tokyo nightlife",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 50.829,
       "score": 0.95,
       "cosine": 0.679,
-      "reason": "matches neon melancholy, loneliness, and bittersweet mood",
+      "reason": "matches neon melancholy, urban isolation, and bittersweet mood",
       "recipe": "3-neon-night",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 1.12,
       "score": 0.95,
       "cosine": 0.646,
-      "reason": "Evokes Tokyo nightlife, melancholy, and lost love perfectly",
+      "reason": "Evokes Tokyo nightlife, melancholy, and memory fragments",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 100.02,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "matches bittersweet mood, urban isolation, hidden grief",
+      "reason": "matches melancholy, urban isolation, hidden grief",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -204,6 +204,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s4-4-word-portrait.webp",
+      "key": "lexicon/crowd/s4-4-word-portrait.webp",
+      "word": "crowd",
+      "line": "crowd",
+      "t": null,
+      "score": 0.95,
+      "cosine": 0.601,
+      "reason": "Captures urban isolation, melancholy, and emotional barriers in a rainy Tokyo setting.",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s1-6-neon-night.webp",
       "key": "lexicon/body/s1-6-neon-night.webp",
       "word": "body",
@@ -223,7 +235,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.595,
-      "reason": "matches melancholic mood, isolation, and introspection",
+      "reason": "matches melancholic mood, isolation, introspection",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -271,7 +283,7 @@
       "t": 77.706,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "Matches melancholy, brokenness, and urban nighttime mood",
+      "reason": "fits melancholy, brokenness, and urban night themes",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -319,8 +331,20 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Captures urban melancholy, loneliness, and nighttime symbolism perfectly",
+      "reason": "Matches melancholic urban night, loneliness, and symbolic use of night",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s3-4-neon-night.webp",
+      "key": "lexicon/crowd/s3-4-neon-night.webp",
+      "word": "crowd",
+      "line": "crowd",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.572,
+      "reason": "Neon-lit rain-soaked crowd fits Tokyo nightlife and bittersweet mood",
+      "recipe": "4-neon-night",
       "featured": true
     },
     {
@@ -333,18 +357,6 @@
       "cosine": 0.553,
       "reason": "fragile light amid brokenness mirrors bittersweet nightlife grief",
       "recipe": "4-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/turning/s1-2-neon-sign.webp",
-      "key": "lexicon/turning/s1-2-neon-sign.webp",
-      "word": "turning",
-      "line": "youLow lights 染まる body ネオン は turning blue まだ 帰り たく ない ね",
-      "t": 70.101,
-      "score": 0.9,
-      "cosine": 0.545,
-      "reason": "Neon glow, urban alley, transformation align with Tokyo nightlife and melancholy mood.",
-      "recipe": "2-neon-sign",
       "featured": true
     },
     {
@@ -367,7 +379,7 @@
       "t": 47.88,
       "score": 0.9,
       "cosine": 0.502,
-      "reason": "Neon melancholy, urban isolation, and coldness align with the song's mood and themes.",
+      "reason": "Neon melancholy, urban isolation, coldness align with song's mood and themes",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 64.494,
       "score": 0.9,
       "cosine": 0.499,
-      "reason": "Neon heart symbolizes hollow digital love; urban noir matches Tokyo nightlife and melancho",
+      "reason": "Neon heart symbolizes hollow digital love; urban noir matches Tokyo nightlife and isolatio",
       "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s11-1-photo.webp",
-      "key": "lexicon/body/s11-1-photo.webp",
-      "word": "body",
-      "line": "m not alright 青い ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て",
-      "t": 46.661,
-      "score": 0.85,
-      "cosine": 0.534,
-      "reason": "Captures isolation, melancholy, and urban emptiness fitting the song's mood and themes.",
-      "recipe": "1-photo",
       "featured": true
     }
   ],
@@ -404,12 +404,12 @@
     ],
     "party": [
       1,
-      18
+      19
     ],
     "night": [
       2,
       3,
-      25
+      26
     ],
     "cold": [
       4,
@@ -424,36 +424,38 @@
     "slow": [
       7,
       9,
-      17
+      18
     ],
     "phone": [
       12
     ],
     "ice": [
       15,
-      29
+      30
     ],
-    "body": [
+    "crowd": [
       16,
-      31
-    ],
-    "turning": [
-      19,
-      24,
       27
     ],
-    "song": [
+    "body": [
+      17
+    ],
+    "turning": [
       20,
-      23
+      25
+    ],
+    "song": [
+      21,
+      24
     ],
     "breaking": [
-      21,
       22,
-      26
+      23,
+      28
     ],
     "love": [
-      28,
-      30
+      29,
+      31
     ]
   }
 }

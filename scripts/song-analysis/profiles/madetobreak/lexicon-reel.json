@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-08-04T05:43:42.529Z",
+  "generatedAt": "2026-08-06T06:40:58.521Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 878,
+    "candidates": 914,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -29,10 +29,22 @@
       "word": "wounds",
       "line": "wounds",
       "t": null,
+      "score": 1,
+      "cosine": 0.444,
+      "reason": "Image embodies resilience, battle scars, and inner strength matching song's themes.",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
+      "key": "lexicon/boulder/s0-6-anime.webp",
+      "word": "boulder",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
+      "t": 27.92,
       "score": 0.98,
       "cosine": 0.444,
-      "reason": "Symbolizes resilience, battle scars as identity, inner strength through injury",
-      "recipe": "1-dream-collage",
+      "reason": "Symbolizes resilience, defiance, and transformation through adversity",
+      "recipe": "6-anime",
       "featured": true
     },
     {
@@ -91,7 +103,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.49,
-      "reason": "Symbolizes defiance and resilience through broken chains in a ruined setting",
+      "reason": "Symbolizes defiance and resilience, aligns with transformation and empowerment themes",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -115,7 +127,7 @@
       "t": 85.68,
       "score": 0.95,
       "cosine": 0.483,
-      "reason": "Defiant, transformative, and powerful imagery aligns with the song's themes of resilience ",
+      "reason": "Defiant, transformative, and resilient imagery matches the song's themes of empowerment an",
       "recipe": "3-graphic-novel",
       "featured": true
     },
@@ -151,7 +163,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "Symbolism of chains as both constraint and strength aligns with defiance and resilience th",
+      "reason": "Symbolism of chains as both constraint and strength fits defiant resilience theme",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -199,7 +211,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "Powerful imagery of resilience and defiance on a battlefield",
+      "reason": "Powerful imagery aligns with defiance, resilience, and transformation through struggle.",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -223,7 +235,7 @@
       "t": 64.56,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Symbolizes transformation of destruction into power, fits defiant, resilient mood",
+      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -247,7 +259,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth aligns with song's themes",
+      "reason": "Symbolizes resilience, destruction, and rebirth central to the song's themes.",
       "recipe": "2-anime",
       "featured": true
     },
@@ -264,30 +276,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-1-cinema.webp",
-      "key": "lexicon/wreckage/s0-1-cinema.webp",
-      "word": "wreckage",
-      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
-      "t": 64.56,
-      "score": 0.95,
-      "cosine": 0.444,
-      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
-      "recipe": "1-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
-      "key": "lexicon/boulder/s0-6-anime.webp",
-      "word": "boulder",
-      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
-      "t": 27.92,
-      "score": 0.95,
-      "cosine": 0.444,
-      "reason": "Symbolizes resilience, defiance, and transformation through adversity",
-      "recipe": "6-anime",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s9-3-dream-collage.webp",
       "key": "lexicon/break/s9-3-dream-collage.webp",
       "word": "break",
@@ -295,7 +283,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.441,
-      "reason": "Symbolizes destruction and rebirth, aligns with resilience and transformation themes.",
+      "reason": "Symbolizes destruction and rebirth, aligns with resilience and transformation themes",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -319,7 +307,7 @@
       "t": 42.96,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and themes of tr",
+      "reason": "Symbolism aligns with defiance and resilience, knife as weapon and survival tool",
       "recipe": "3-anime",
       "featured": true
     },
@@ -355,7 +343,7 @@
       "t": 73.76,
       "score": 0.95,
       "cosine": 0.429,
-      "reason": "Symbolizes breaking chains, resilience, and transformation in a defiant, post-apocalyptic ",
+      "reason": "Symbolizes breaking chains, resilience in ruins, defiant empowerment",
       "recipe": "4-anime",
       "featured": true
     },
@@ -367,7 +355,7 @@
       "t": 38.96,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "Symbolizes defiance and strength through clenched fists",
+      "reason": "Symbolizes defiance and strength through raised fists, aligns with themes of resilience an",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -391,76 +379,90 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through fragmentation and rebirth",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
       "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-2-anime.webp",
+      "key": "lexicon/throne/s0-2-anime.webp",
+      "word": "throne",
+      "line": "Tyyyleeer No longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting",
+      "t": 63.84,
+      "score": 0.95,
+      "cosine": 0.415,
+      "reason": "Symbolizes power from destruction, fits defiant resilience theme",
+      "recipe": "2-anime",
       "featured": true
     }
   ],
   "byWord": {
     "battle-made": [
       0,
-      14
+      15
     ],
     "wounds": [
       1
     ],
-    "weapon": [
+    "boulder": [
       2
     ],
+    "weapon": [
+      3
+    ],
     "chains": [
-      3,
-      6,
-      11
+      4,
+      7,
+      12
     ],
     "break": [
-      4,
-      18,
-      23
-    ],
-    "chain": [
       5,
-      28
-    ],
-    "storm": [
-      7,
-      10,
-      20
-    ],
-    "body": [
-      8,
-      27
-    ],
-    "barricade": [
-      9,
-      30
-    ],
-    "wreckage": [
-      12,
-      17,
-      21
-    ],
-    "armor": [
-      13,
-      24,
-      26
-    ],
-    "battle": [
-      15
-    ],
-    "fire": [
-      16,
-      19
-    ],
-    "boulder": [
+      19,
       22
     ],
-    "knife": [
-      25
+    "chain": [
+      6,
+      27
     ],
-    "hands": [
+    "storm": [
+      8,
+      11,
+      21
+    ],
+    "body": [
+      9,
+      26
+    ],
+    "barricade": [
+      10,
       29
     ],
+    "wreckage": [
+      13,
+      18
+    ],
+    "armor": [
+      14,
+      23,
+      25
+    ],
+    "battle": [
+      16
+    ],
+    "fire": [
+      17,
+      20
+    ],
+    "knife": [
+      24
+    ],
+    "hands": [
+      28
+    ],
     "shattered": [
+      30
+    ],
+    "throne": [
       31
     ]
   }

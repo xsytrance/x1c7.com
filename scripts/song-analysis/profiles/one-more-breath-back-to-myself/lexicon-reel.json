@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-08-04T05:46:16.663Z",
+  "generatedAt": "2026-08-06T06:43:33.804Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -127,7 +127,7 @@
       "t": 7.907,
       "score": 0.9,
       "cosine": 0.427,
-      "reason": "Urban isolation and neon symbolism align with introspection and hypnotic mood",
+      "reason": "Urban isolation and neon symbolism align with the song's mood and themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 214.378,
       "score": 0.85,
       "cosine": 0.575,
-      "reason": "fits mood and theme of introspection and detachment",
+      "reason": "fits introspective mood, aligns with theme of detachment and isolation",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 7.907,
       "score": 0.7,
       "cosine": 0.445,
-      "reason": "Urban solitude and contemplative mood align with song's introspection",
+      "reason": "Urban solitude and contemplative mood align with introspection and hypnotic atmosphere.",
       "recipe": "1-word-portrait",
       "featured": true
     }

@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "days-drift-by",
-  "generatedAt": "2026-08-04T05:34:00.478Z",
+  "generatedAt": "2026-08-06T06:31:10.829Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -11,18 +11,6 @@
     "kept": 29
   },
   "reel": [
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-2.webp",
-      "key": "lexicon/clouds/s0-2.webp",
-      "word": "clouds",
-      "line": "Clouds, clouds roll in and fade away",
-      "t": 110.4,
-      "score": 1,
-      "cosine": 0.743,
-      "reason": "Perfectly aligns with song's ethereal, melancholic, and cinematic mood",
-      "recipe": "2",
-      "featured": true
-    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s4-5-photo.webp",
       "key": "lexicon/sky/s4-5-photo.webp",
@@ -43,7 +31,7 @@
       "t": 82.385,
       "score": 1,
       "cosine": 0.649,
-      "reason": "Perfectly aligns with song's ethereal, melancholic, and cinematic mood.",
+      "reason": "Perfectly aligns with the song's ethereal, melancholic, and cinematic mood.",
       "recipe": "2-photo",
       "featured": true
     },
@@ -55,8 +43,20 @@
       "t": 68.104,
       "score": 0.98,
       "cosine": 0.49,
-      "reason": "Perfectly matches ethereal, melancholic, and cinematic themes",
+      "reason": "Perfectly aligns with ethereal, melancholic, and cinematic themes",
       "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clouds/s0-2.webp",
+      "key": "lexicon/clouds/s0-2.webp",
+      "word": "clouds",
+      "line": "Clouds, clouds roll in and fade away",
+      "t": 110.4,
+      "score": 0.95,
+      "cosine": 0.743,
+      "reason": "matches ethereal, melancholic, and transience themes",
+      "recipe": "2",
       "featured": true
     },
     {
@@ -115,7 +115,7 @@
       "t": 47.543,
       "score": 0.95,
       "cosine": 0.578,
-      "reason": "Matches ethereal, melancholic river imagery with cinematic mood",
+      "reason": "Matches ethereal, melancholic, cinematic river imagery with song's themes",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 116.08,
       "score": 0.95,
       "cosine": 0.576,
-      "reason": "matches ethereal melancholy and transience of the song",
+      "reason": "matches ethereal, melancholic, and transience themes",
       "recipe": "5-watercolor",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 116.08,
       "score": 0.95,
       "cosine": 0.542,
-      "reason": "matches melancholy, industrial decay, and ethereal lighting",
+      "reason": "Matches melancholy, industrial decay, and ethereal lighting",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 50.991,
       "score": 0.9,
       "cosine": 0.523,
-      "reason": "Ethereal lighting, intimacy, transience align with song's mood and themes",
+      "reason": "Ethereal, intimate, transience align with song's mood and themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 117.157,
       "score": 0.8,
       "cosine": 0.611,
-      "reason": "Ethereal light contrasts with melancholy, fits noir and transience themes",
+      "reason": "Ethereal light contrasts with melancholy, fits noir and escapism themes",
       "recipe": "4-photo",
       "featured": true
     },
@@ -361,19 +361,19 @@
     }
   ],
   "byWord": {
-    "clouds": [
-      0,
-      5
-    ],
     "sky": [
+      0,
       1,
-      2,
       27
     ],
     "drift": [
-      3,
+      2,
       15,
       16
+    ],
+    "clouds": [
+      3,
+      5
     ],
     "slow": [
       4,

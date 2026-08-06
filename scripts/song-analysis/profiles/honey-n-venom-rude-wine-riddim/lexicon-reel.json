@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-08-04T05:37:19.134Z",
+  "generatedAt": "2026-08-06T06:34:32.025Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2058,
+    "candidates": 2105,
     "judged": 64,
-    "accepted": 59,
+    "accepted": 60,
     "kept": 32
   },
   "reel": [
@@ -33,6 +33,18 @@
       "cosine": 0.675,
       "reason": "Perfectly aligns with toxic romance, club energy, and seductive menace",
       "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s2-2-manga-line.webp",
+      "key": "lexicon/honey/s2-2-manga-line.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 1,
+      "cosine": 0.657,
+      "reason": "Perfectly captures duality, seduction, and danger in abstract form.",
+      "recipe": "2-manga-line",
       "featured": true
     },
     {
@@ -108,18 +120,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s2-2-manga-line.webp",
-      "key": "lexicon/honey/s2-2-manga-line.webp",
-      "word": "honey",
-      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
-      "t": 12.38,
-      "score": 0.95,
-      "cosine": 0.657,
-      "reason": "captures duality, seduction, and danger perfectly",
-      "recipe": "2-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s12-6-word-portrait.webp",
       "key": "lexicon/night/s12-6-word-portrait.webp",
       "word": "night",
@@ -139,7 +139,7 @@
       "t": 35.573,
       "score": 0.95,
       "cosine": 0.588,
-      "reason": "matches club energy, seductive danger, neon symbolism",
+      "reason": "matches seductive danger, club vibe, neon symbolism",
       "recipe": "5-neon-sign",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 12.38,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Symbolizes sweet danger, aligns with seductive toxicity and club energy",
+      "reason": "Symbolism aligns with toxic romance and seductive danger.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 56.715,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Seductive, intimate, and alluring image matches the song's aggressive seduction and club e",
+      "reason": "Seductive, intimate, and alluring image fits the song's aggressive seduction and club ener",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -336,6 +336,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s4-3-word-portrait.webp",
+      "key": "lexicon/dangerous/s4-3-word-portrait.webp",
+      "word": "dangerous",
+      "line": "me misspeed it? Is it love or not right? Dangerous cat Dangerous boy Why you always",
+      "t": 139.262,
+      "score": 0.95,
+      "cosine": 0.486,
+      "reason": "Ominous text and lighting match song's dangerous allure and club intensity",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s7-6-word-neon.webp",
       "key": "lexicon/burn/s7-6-word-neon.webp",
       "word": "burn",
@@ -343,7 +355,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.485,
-      "reason": "Urban decay and neon danger match the song's toxic allure and club energy",
+      "reason": "matches toxic allure, urban decay, and dangerous energy",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -379,19 +391,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Matches seductive danger, moody lighting, and transformative passion",
-      "recipe": "4-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burning/s2-4-word-portrait.webp",
-      "key": "lexicon/burning/s2-4-word-portrait.webp",
-      "word": "burning",
-      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
-      "t": 64.041,
-      "score": 0.95,
-      "cosine": 0.477,
-      "reason": "Matches seductive danger, fire as passion/destruction, industrial grit",
+      "reason": "Matches seductive danger, moody lighting, and thematic fire",
       "recipe": "4-word-portrait",
       "featured": true
     }
@@ -399,27 +399,27 @@
   "byWord": {
     "heart": [
       0,
-      7,
+      8,
       10
     ],
     "venom": [
       1,
-      2,
-      4
-    ],
-    "rhythm": [
       3,
-      6
-    ],
-    "wine": [
-      5,
-      11,
-      15
+      5
     ],
     "honey": [
-      8,
+      2,
       12,
       13
+    ],
+    "rhythm": [
+      4,
+      7
+    ],
+    "wine": [
+      6,
+      11,
+      15
     ],
     "night": [
       9,
@@ -446,16 +446,18 @@
       22,
       26
     ],
+    "dangerous": [
+      27
+    ],
     "burn": [
-      27,
-      30
+      28,
+      31
     ],
     "high": [
-      28
+      29
     ],
     "burning": [
-      29,
-      31
+      30
     ]
   }
 }

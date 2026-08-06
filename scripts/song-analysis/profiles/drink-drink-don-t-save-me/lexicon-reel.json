@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "drink-drink-don-t-save-me",
-  "generatedAt": "2026-08-04T05:35:39.761Z",
+  "generatedAt": "2026-08-06T06:32:50.322Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 164.978,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Urban decay, neon, walking as self-destruction fit the song's mood and themes",
+      "reason": "Urban decay, neon reflections, and cyclical walking align with self-destruction and emotio",
       "recipe": "5-neon-night",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 70.67,
       "score": 0.95,
       "cosine": 0.491,
-      "reason": "Captures addiction, isolation, and urban melancholy",
+      "reason": "Strong symbolism of glass as barrier and addiction, fits mood and themes",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 69.597,
       "score": 0.95,
       "cosine": 0.487,
-      "reason": "captures loneliness, despair, and alcoholism central to the song",
+      "reason": "evokes loneliness, despair, and alcoholism central to the song",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 69.597,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Strong symbolism of addiction and self-destruction, matches song's mood and themes",
+      "reason": "Strong symbolism of addiction, chaos, and self-destruction",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 69.945,
       "score": 0.95,
       "cosine": 0.474,
-      "reason": "Matches isolation, addiction, and melancholy of the song",
+      "reason": "fits mood and themes of isolation and addiction",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 69.945,
       "score": 0.95,
       "cosine": 0.451,
-      "reason": "captures isolation, numbness, and haunting mood",
+      "reason": "evokes isolation, addiction, and melancholy central to the song",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 70.235,
       "score": 0.95,
       "cosine": 0.436,
-      "reason": "fits haunting, ghostly, melancholic mood and themes",
+      "reason": "fits haunting, ghostly, melancholic themes",
       "recipe": "6-manga-line",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 70.235,
       "score": 0.95,
       "cosine": 0.42,
-      "reason": "haunting, spectral imagery fits the song's themes of ghosts and inner turmoil",
+      "reason": "haunting, abandonment, spectral imagery align with song's themes",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 164.978,
       "score": 0.95,
       "cosine": 0.414,
-      "reason": "fits mood and themes of isolation and cyclical pain",
+      "reason": "Powerful symbolism aligns with themes of isolation and cyclical self-destruction",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.407,
-      "reason": "raw emotion, vulnerability, and intensity match the song's themes",
+      "reason": "Emotionally raw and vulnerable, fits the song's themes of inner turmoil and self-destructi",
       "recipe": "2-photo",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.543,
-      "reason": "haunting, spectral imagery fits emotional numbness and isolation",
+      "reason": "haunting, spectral imagery fits the song's themes of inner turmoil and isolation",
       "recipe": "2-photo",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 74.083,
       "score": 0.9,
       "cosine": 0.52,
-      "reason": "Smoke fits the theme of emotional numbness and introspection",
+      "reason": "Smoke fits the mood and themes of self-destruction and introspection",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.49,
-      "reason": "Symbolizes journey and transition amid decay and melancholy",
+      "reason": "Symbolizes journey and transition amid melancholy and isolation",
       "recipe": "5-word-portrait",
       "featured": true
     }

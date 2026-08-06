@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-08-04T05:39:09.224Z",
+  "generatedAt": "2026-08-06T06:36:24.012Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -67,7 +67,7 @@
       "t": 36.711,
       "score": 0.9,
       "cosine": 0.555,
-      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood",
+      "reason": "Symbolizes fire as destructive and emotional burnout; fits melancholic, resolute mood.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 47.903,
       "score": 0.9,
       "cosine": 0.456,
-      "reason": "Powerful storm imagery aligns with emotional intensity and themes of boundaries",
+      "reason": "Powerful storm imagery aligns with emotional intensity and boundaries",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 47.903,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "Storm symbolizes emotional turmoil and power of nature mirrors toxic dependency",
+      "reason": "Powerful storm imagery matches song's intense emotional themes and resolute mood.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 29.118,
       "score": 0.9,
       "cosine": 0.43,
-      "reason": "Matches melancholic mood and introspective theme",
+      "reason": "matches melancholic mood and introspective theme",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 29.118,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Melancholic mood matches song, Tokyo backdrop aligns with lyric context, text 'slow' ties ",
+      "reason": "Melancholic mood matches song, Tokyo adds emotional weight",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 259.832,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Captures melancholy, digital chaos, and self-boundaries",
+      "reason": "Captures melancholy, boundaries, and digital chaos",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -276,18 +276,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
-      "key": "lexicon/love/s11-6-neon-sign.webp",
-      "word": "love",
-      "line": "fire I won 't be your love 君 が 自 分 を 決 め る",
-      "t": 259.832,
-      "score": 0.85,
-      "cosine": 0.368,
-      "reason": "Captures digital isolation and hollow connections aligning with toxic dependency theme",
-      "recipe": "6-neon-sign",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s2-5-word-portrait.webp",
       "key": "lexicon/rain/s2-5-word-portrait.webp",
       "word": "rain",
@@ -310,6 +298,18 @@
       "reason": "Symbolizes hope and warmth amid emotional isolation and resolute self-preservation",
       "recipe": "5-dark-surreal",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
+      "key": "lexicon/love/s11-6-neon-sign.webp",
+      "word": "love",
+      "line": "fire I won 't be your love 君 が 自 分 を 決 め る",
+      "t": 259.832,
+      "score": 0.8,
+      "cosine": 0.368,
+      "reason": "Captures digital isolation and hollow connections aligning with toxic dependency theme",
+      "recipe": "6-neon-sign",
+      "featured": true
     }
   ],
   "byWord": {
@@ -321,7 +321,7 @@
     "light": [
       1,
       2,
-      24
+      23
     ],
     "silence": [
       3,
@@ -331,7 +331,7 @@
     "rain": [
       5,
       20,
-      23
+      22
     ],
     "glass": [
       6,
@@ -354,7 +354,7 @@
     ],
     "love": [
       16,
-      22
+      24
     ]
   }
 }

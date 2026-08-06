@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away",
-  "generatedAt": "2026-08-04T05:47:21.951Z",
+  "generatedAt": "2026-08-06T06:44:38.999Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 118.468,
       "score": 0.95,
       "cosine": 0.66,
-      "reason": "powerful metaphor for digital isolation and superficial connection",
+      "reason": "Strong metaphor for digital isolation and superficial connection",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.577,
-      "reason": "captures digital isolation, melancholy, and emotional distance",
+      "reason": "matches digital isolation, melancholic mood, and emotional distance",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 50.933,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "captures digital isolation, melancholy, and superficiality through visuals",
+      "reason": "captures digital isolation, melancholy, and superficiality through imagery",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 33.495,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "neon sign captures cold, urban loneliness and digital isolation",
+      "reason": "Strong visual metaphor for digital isolation and emotional distance",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 52.36,
       "score": 0.95,
       "cosine": 0.482,
-      "reason": "captures digital anxiety and emotional distance",
+      "reason": "captures digital anxiety and isolation through vintage tech and glowing text",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 50.933,
       "score": 0.9,
       "cosine": 0.522,
-      "reason": "captures digital isolation, superficiality, and emotional distance",
+      "reason": "captures digital isolation, neon symbolizes superficial love",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 28.259,
       "score": 0.9,
       "cosine": 0.504,
-      "reason": "Symbolizes emotional distance and identity fragmentation in digital isolation",
+      "reason": "reflects identity fragmentation and melancholy in digital isolation",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 20.64,
       "score": 0.9,
       "cosine": 0.488,
-      "reason": "fits digital isolation, abstract names, ethereal mood",
+      "reason": "fits digital themes, ethereal and melancholic mood",
       "recipe": "5-dream-collage",
       "featured": true
     },

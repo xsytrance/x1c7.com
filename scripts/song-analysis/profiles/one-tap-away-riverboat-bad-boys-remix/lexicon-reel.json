@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-08-04T05:46:44.381Z",
+  "generatedAt": "2026-08-06T06:44:01.706Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -115,7 +115,7 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.635,
-      "reason": "Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them",
+      "reason": "Neon heart symbolizes hollow digital love; noir setting matches song's mood and themes.",
       "recipe": "6-neon-sign",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 70.692,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "fits noir mood, digital isolation theme, cinematic visuals",
+      "reason": "matches noir mood, digital isolation theme, cinematic visuals",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 85.413,
       "score": 0.9,
       "cosine": 0.522,
-      "reason": "fits digital isolation, ethereal names, lonely cosmic vibe",
+      "reason": "fits digital isolation, ethereal names, lonely cosmic imagery",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 71.657,
       "score": 0.9,
       "cosine": 0.513,
-      "reason": "fits dystopian mood, strangers in isolation, mechanical threats",
+      "reason": "fits noir dystopia, digital isolation, survivalist strangers",
       "recipe": "5-dream-collage",
       "featured": true
     },

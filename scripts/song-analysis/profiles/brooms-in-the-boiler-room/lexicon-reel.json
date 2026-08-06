@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-08-04T05:31:06.204Z",
+  "generatedAt": "2026-08-06T06:28:16.567Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1680,
+    "candidates": 1898,
     "judged": 64,
-    "accepted": 52,
+    "accepted": 56,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.73,
-      "reason": "Strong alignment with magical corruption, noir atmosphere, and surreal elements",
+      "reason": "Strong alignment with magical corruption and noir atmosphere",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Matches magical corruption, ominous mood, and noir atmosphere",
+      "reason": "Matches magical corruption, ominous tone, and chaotic visuals",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.672,
-      "reason": "Strong noir-steampunk fit with boiler as central symbol",
+      "reason": "Strong noir-steampunk atmosphere matches song's mood and themes",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.642,
-      "reason": "Strong noir atmosphere, cauldron as magical corruption, fits the ominous and playful tone",
+      "reason": "Strong noir atmosphere, symbolic elements align with song's themes",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -180,6 +180,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chasing/s4-4-noir.webp",
+      "key": "lexicon/chasing/s4-4-noir.webp",
+      "word": "chasing",
+      "line": "enough to make the whole room swell Then the strings start chasing ceiling got eyes stars in the robe started",
+      "t": 142.849,
+      "score": 0.95,
+      "cosine": 0.532,
+      "reason": "fits noir atmosphere, pursuit, tension, and aftermath",
+      "recipe": "4-noir",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-2-dream-collage.webp",
       "key": "lexicon/night/s6-2-dream-collage.webp",
       "word": "night",
@@ -199,20 +211,8 @@
       "t": 118.19,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "fits dark surrealism, teeth symbolism, chaos and decay align with themes",
+      "reason": "fits dark surrealism, teeth symbolism, chaos and decay match song's themes",
       "recipe": "3-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s4-2-word-portrait.webp",
-      "key": "lexicon/move/s4-2-word-portrait.webp",
-      "word": "move",
-      "line": "1 Water too high Voice 2 Door wont move Voice 1 Whole tower drowning Voice 2 Still in",
-      "t": 200.145,
-      "score": 0.95,
-      "cosine": 0.504,
-      "reason": "Sinister cartoon villain fits noir-cartoon aesthetic and sinister playfulness of song",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -225,6 +225,18 @@
       "cosine": 0.606,
       "reason": "fits noir-corruption theme, gold as corruption, villain and skeletal figures align with ma",
       "recipe": "4-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s1-2-word-portrait.webp",
+      "key": "lexicon/steam/s1-2-word-portrait.webp",
+      "word": "steam",
+      "line": "gold still gleam money in the fog and the magic in steam Voice 1 Who cast that Voice 2 Not me Voice 1 Who touched the",
+      "t": 87.248,
+      "score": 0.9,
+      "cosine": 0.584,
+      "reason": "fits noir atmosphere, industrial symbolism, and mysterious tone",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -259,7 +271,7 @@
       "t": 40.171,
       "score": 0.9,
       "cosine": 0.562,
-      "reason": "Symbolizes greed's destruction, fits dark, surreal noir atmosphere",
+      "reason": "Symbolizes greed's destruction, fits dark, surreal atmosphere",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -295,7 +307,7 @@
       "t": 15.233,
       "score": 0.9,
       "cosine": 0.542,
-      "reason": "Mysterious, noir atmosphere matches song's tone and themes",
+      "reason": "Elegant noir atmosphere matches song's mood and themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -309,18 +321,6 @@
       "cosine": 0.511,
       "reason": "Matches dark, dramatic tower imagery with themes of destruction and corruption",
       "recipe": "1-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s0-1-graphic-novel.webp",
-      "key": "lexicon/door/s0-1-graphic-novel.webp",
-      "word": "door",
-      "line": "in his eyes Brooms in the boiler room knocking at the door spell got loose and it hungry for more Blackandwhite",
-      "t": 35.85,
-      "score": 0.9,
-      "cosine": 0.502,
-      "reason": "fits noir atmosphere, decay, hidden secrets, and eerie mood",
-      "recipe": "1-graphic-novel",
       "featured": true
     },
     {
@@ -343,8 +343,32 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "gold symbolizes villainy, noir atmosphere matches song",
+      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
       "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s0-5-word-portrait.webp",
+      "key": "lexicon/steam/s0-5-word-portrait.webp",
+      "word": "steam",
+      "line": "gold still gleam money in the fog and the magic in steam Voice 1 Who cast that Voice 2 Not me Voice 1 Who touched the",
+      "t": 87.248,
+      "score": 0.85,
+      "cosine": 0.565,
+      "reason": "fits noir mood, steam symbolism, urban decay aligns with magical corruption",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/control/s7-4-word-neon.webp",
+      "key": "lexicon/control/s7-4-word-neon.webp",
+      "word": "control",
+      "line": "cute when the shadows get tall especially when the mouse got control of it all",
+      "t": 155.527,
+      "score": 0.85,
+      "cosine": 0.554,
+      "reason": "fits noir-tech atmosphere, power dynamics, urban isolation",
+      "recipe": "4-word-neon",
       "featured": true
     },
     {
@@ -370,30 +394,6 @@
       "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with boiler room",
       "recipe": "3-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s0-2-graphic-novel.webp",
-      "key": "lexicon/moon/s0-2-graphic-novel.webp",
-      "word": "moon",
-      "line": "when the wild drums roll Brooms in the boiler room moon turned blue one wrong spell and the whole crew",
-      "t": 45.04,
-      "score": 0.85,
-      "cosine": 0.519,
-      "reason": "matches dark, ominous tone and surreal symbolism of corrupted magic",
-      "recipe": "2-graphic-novel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s6-3-film-still.webp",
-      "key": "lexicon/falling/s6-3-film-still.webp",
-      "word": "falling",
-      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
-      "t": 145.88,
-      "score": 0.85,
-      "cosine": 0.518,
-      "reason": "Chaotic explosion and falling debris fit the ominous, dangerous mood and magical corruptio",
-      "recipe": "3-film-still",
-      "featured": true
     }
   ],
   "byWord": {
@@ -416,13 +416,13 @@
     ],
     "money": [
       9,
-      18,
-      20
+      19,
+      21
     ],
     "night": [
       10,
-      14,
-      21
+      15,
+      22
     ],
     "gold": [
       11,
@@ -434,37 +434,37 @@
     ],
     "door": [
       13,
-      22,
-      25
-    ],
-    "teeth": [
-      15
-    ],
-    "move": [
-      16
-    ],
-    "spell": [
-      19
-    ],
-    "whisper": [
       23
     ],
-    "tower": [
+    "chasing": [
+      14
+    ],
+    "teeth": [
+      16
+    ],
+    "steam": [
+      18,
+      28
+    ],
+    "spell": [
+      20
+    ],
+    "whisper": [
       24
+    ],
+    "tower": [
+      25
     ],
     "high": [
       26
     ],
-    "shadow": [
-      28
-    ],
-    "glow": [
+    "control": [
       29
     ],
-    "moon": [
+    "shadow": [
       30
     ],
-    "falling": [
+    "glow": [
       31
     ]
   }

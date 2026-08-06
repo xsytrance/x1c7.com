@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-08-04T05:38:45.558Z",
+  "generatedAt": "2026-08-06T06:36:00.890Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1289,
-    "judged": 48,
-    "accepted": 41,
+    "candidates": 1326,
+    "judged": 51,
+    "accepted": 44,
     "kept": 32
   },
   "reel": [
@@ -43,7 +43,7 @@
       "t": 87.992,
       "score": 0.95,
       "cosine": 0.514,
-      "reason": "Matches calm confidence and stability themes with cinematic lighting",
+      "reason": "Calm, resolute posture matches self-assurance and stability themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 90.291,
       "score": 0.95,
       "cosine": 0.508,
-      "reason": "Confident pose, stage setting, neon accents align with playful confidence and futuristic n",
+      "reason": "Confident stage presence matches playful assurance and stability in the song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 15.859,
       "score": 0.95,
       "cosine": 0.504,
-      "reason": "Matches urban nightlife, secrecy, and confident mood",
+      "reason": "Matches urban nightlife, secrecy, and confidence in the song's mood and themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -96,6 +96,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trust/s0-2-word-portrait.webp",
+      "key": "lexicon/trust/s0-2-word-portrait.webp",
+      "word": "trust",
+      "line": "And if the world gets loud Ill turn the noise down low Put your trust in my hands And I wont let it go Youuu",
+      "t": 104.722,
+      "score": 0.95,
+      "cosine": 0.467,
+      "reason": "Matches trust theme, calm lighting aligns with confidence and reliability",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s4-6-stickers.webp",
       "key": "lexicon/bassline/s4-6-stickers.webp",
       "word": "bassline",
@@ -103,7 +115,7 @@
       "t": 18.215,
       "score": 0.95,
       "cosine": 0.459,
-      "reason": "Confident, energetic, and modern imagery aligns with the song's playful confidence and fut",
+      "reason": "Confident, energetic, modern music visuals align with playful confidence and futuristic no",
       "recipe": "6-stickers",
       "featured": true
     },
@@ -151,7 +163,7 @@
       "t": 174.324,
       "score": 0.95,
       "cosine": 0.433,
-      "reason": "matches playful mood, nightlife, celebration, and intimacy",
+      "reason": "matches playful mood, neon lights align with futuristic nostalgia",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -175,7 +187,7 @@
       "t": 120.145,
       "score": 0.95,
       "cosine": 0.417,
-      "reason": "Confident, stylish club scene matches playful self-assurance and futuristic nostalgia.",
+      "reason": "Confident, stylish club scene matches playful self-assurance and retro aesthetic",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -228,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trust/s5-1-word-portrait.webp",
+      "key": "lexicon/trust/s5-1-word-portrait.webp",
+      "word": "trust",
+      "line": "And if the world gets loud Ill turn the noise down low Put your trust in my hands And I wont let it go Youuu",
+      "t": 104.722,
+      "score": 0.9,
+      "cosine": 0.533,
+      "reason": "Intimate, calm, and thoughtful imagery aligns with trust and self-assurance",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solid/s3-6-word-portrait.webp",
       "key": "lexicon/solid/s3-6-word-portrait.webp",
       "word": "solid",
@@ -247,7 +271,7 @@
       "t": 23.313,
       "score": 0.9,
       "cosine": 0.446,
-      "reason": "Matches playful confidence, lyrical theme, and intimate mood",
+      "reason": "Matches playful confidence, lyrical bridge, and hopeful connection",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -259,7 +283,7 @@
       "t": 100.427,
       "score": 0.9,
       "cosine": 0.445,
-      "reason": "Matches futuristic nostalgia and stability themes with minimalist, cinematic imagery",
+      "reason": "Matches industrial mood and theme of stability and confidence",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -271,7 +295,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.441,
-      "reason": "Playful, confident, and warm visual aligns with song's mood and themes.",
+      "reason": "Playful, confident, and warm design fits the song's mood and themes.",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -343,7 +367,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.402,
-      "reason": "Matches warm, inviting theme and mood of stability and comfort",
+      "reason": "Matches warm, inviting theme and mood of comfort and stability",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -370,42 +394,18 @@
       "reason": "Confident silhouettes in neon-lit Tokyo match playful confidence and futuristic nostalgia.",
       "recipe": "1",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s9-1-stickers.webp",
-      "key": "lexicon/soul/s9-1-stickers.webp",
-      "word": "soul",
-      "line": "Iiii wooont let thiiis shooow Spoken Wont tell a soul not anybody Iiii",
-      "t": 31.29,
-      "score": 0.85,
-      "cosine": 0.452,
-      "reason": "Matches playful confidence and futuristic nostalgia with abstract, upbeat imagery",
-      "recipe": "1-stickers",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s1-5-word-portrait.webp",
-      "key": "lexicon/rhythm/s1-5-word-portrait.webp",
-      "word": "rhythm",
-      "line": "Then you tell me stop You got secrets in your rhythm Little warnings in your tone But Im not here to run it Im",
-      "t": 23.313,
-      "score": 0.85,
-      "cosine": 0.414,
-      "reason": "Urban rhythm connects to song's playful confidence and futuristic nostalgia",
-      "recipe": "5-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "lights": [
       0,
       1,
-      17
+      18
     ],
     "steady": [
       2,
-      12,
-      14
+      13,
+      15
     ],
     "move": [
       3
@@ -415,49 +415,51 @@
       5
     ],
     "soul": [
-      6,
-      30
+      6
+    ],
+    "trust": [
+      7,
+      19
     ],
     "bassline": [
-      7
+      8
     ],
     "rhythm": [
-      8,
-      19,
-      31
+      9,
+      21
     ],
     "different": [
-      9,
-      13,
-      28
+      10,
+      14,
+      30
     ],
     "solid": [
-      10,
-      18,
-      20
+      11,
+      20,
+      22
     ],
     "party": [
-      11,
-      15,
-      16
+      12,
+      16,
+      17
     ],
     "love": [
-      21,
-      22,
-      25
-    ],
-    "eyes": [
-      23
-    ],
-    "hands": [
-      24
-    ],
-    "home": [
-      26,
+      23,
+      24,
       27
     ],
-    "somebody": [
+    "eyes": [
+      25
+    ],
+    "hands": [
+      26
+    ],
+    "home": [
+      28,
       29
+    ],
+    "somebody": [
+      31
     ]
   }
 }

@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-08-04T05:40:38.946Z",
+  "generatedAt": "2026-08-06T06:37:52.912Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 1.38,
       "score": 1,
       "cosine": 0.452,
-      "reason": "Matches song's nightclub, celebration, and euphoric mood",
+      "reason": "Matches nightclub vibe, celebration, and euphoric mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 47.996,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Matches nighttime intimacy, urban seduction, and whispered promises",
+      "reason": "Matches nighttime intimacy, neon allure, and secretive connection",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 43.188,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Captures nighttime intimacy and urban energy aligning with song's mood and themes",
+      "reason": "Captures nighttime intimacy, urban energy, and sensory warmth aligning with song's mood an",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.536,
-      "reason": "Matches nighttime warmth, intimacy, and escapism",
+      "reason": "Matches nighttime intimacy, warmth, and escapism",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 100.531,
       "score": 0.9,
       "cosine": 0.514,
-      "reason": "Matches urban romance, golden hour, intimate connection",
+      "reason": "Matches urban intimacy, golden hour warmth, and city light theme",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.474,
-      "reason": "Matches nighttime theme, urban setting, and mysterious mood",
+      "reason": "Captures nighttime urban mood and mysterious atmosphere",
       "recipe": "2-word-portrait",
       "featured": true
     },

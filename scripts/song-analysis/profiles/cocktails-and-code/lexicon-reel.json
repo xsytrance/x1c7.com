@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-08-04T05:33:35.626Z",
+  "generatedAt": "2026-08-06T06:30:45.687Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2140,
+    "candidates": 2234,
     "judged": 64,
-    "accepted": 55,
+    "accepted": 53,
     "kept": 32
   },
   "reel": [
@@ -19,7 +19,7 @@
       "t": 209.839,
       "score": 0.95,
       "cosine": 0.523,
-      "reason": "matches summer vibe, ambition, and motivational themes",
+      "reason": "matches summer vibe, ambition, and motivational energy",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 4.273,
       "score": 0.95,
       "cosine": 0.515,
-      "reason": "fits summer night, coding, urban energy, and motivation",
+      "reason": "Captures summer night, coding, urban energy, and hope",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.47,
-      "reason": "Modern, focused, and inspiring image fits the tech and summer vibe",
+      "reason": "Modern, inspiring, ties to code and innovation",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.46,
-      "reason": "Aligns with tech, empowerment, and summer night energy",
+      "reason": "Aligns with tech, empowerment, and summer-night energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 6.502,
       "score": 0.9,
       "cosine": 0.507,
-      "reason": "Matches tech, summer night, and calm energy of the song",
+      "reason": "Matches tech and summer night themes with calm, digital glow",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 33.158,
       "score": 0.9,
       "cosine": 0.469,
-      "reason": "Matches futuristic, opulent, and motivational themes",
+      "reason": "fits futuristic, opulent, and motivational themes",
       "recipe": "1-anime",
       "featured": true
     },
@@ -283,8 +283,20 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, dream, neon, urban fantasy",
+      "reason": "fits summer night, urban, dream theme and neon glow",
       "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "Summer night laptop glow Little",
+      "t": 4.493,
+      "score": 0.9,
+      "cosine": 0.434,
+      "reason": "fits summer night, urban, digital, and hopeful mood",
+      "recipe": "6-word-portrait",
       "featured": true
     },
     {
@@ -355,44 +367,32 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Urban neon fits energetic summer night and progress themes",
+      "reason": "Urban neon aligns with summer night and innovation energy",
       "recipe": "1-word-neon",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bridge/s0-6-chalkboard.webp",
-      "key": "lexicon/bridge/s0-6-chalkboard.webp",
-      "word": "bridge",
-      "line": "me a page build me a flow Build me a bridge where the old me wont go It aint magic but",
-      "t": 131.344,
-      "score": 0.9,
-      "cosine": 0.395,
-      "reason": "Symbolizes connection and growth under a hopeful sky",
-      "recipe": "6-chalkboard",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s1-5-word-portrait.webp",
+      "key": "lexicon/build/s1-5-word-portrait.webp",
+      "word": "build",
+      "line": "just stopped waiting on a miracle call One small build one clean plan One more skill in the palm",
+      "t": 56.193,
+      "score": 0.85,
+      "cosine": 0.467,
+      "reason": "Aligns with growth, structure, and ambition in a modern setting",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s1-6-word-portrait.webp",
-      "key": "lexicon/soul/s1-6-word-portrait.webp",
-      "word": "soul",
-      "line": "Got a little fire in the soul Cocktails and code",
-      "t": 87.515,
-      "score": 0.9,
-      "cosine": 0.392,
-      "reason": "Confident stage presence aligns with empowerment and summer energy",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s1-1-word-neon.webp",
-      "key": "lexicon/level/s1-1-word-neon.webp",
-      "word": "level",
-      "line": "sip type it up Build build level up No more waiting on the world We gon make it come to us",
-      "t": 101.646,
-      "score": 0.9,
-      "cosine": 0.392,
-      "reason": "fits urban energy, neon symbolism, and motivational vibe",
-      "recipe": "1-word-neon",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s17-3-word-portrait.webp",
+      "key": "lexicon/rhythm/s17-3-word-portrait.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.85,
+      "cosine": 0.406,
+      "reason": "Matches summer vibe, calm inspiration, and rhythm as a guiding force",
+      "recipe": "3-word-portrait",
       "featured": true
     }
   ],
@@ -427,22 +427,23 @@
     ],
     "bassline": [
       11,
-      26
+      27
     ],
     "build": [
       12,
-      24
+      25,
+      30
     ],
     "level": [
-      13,
-      31
+      13
     ],
     "glow": [
       14
     ],
     "rhythm": [
       15,
-      27
+      28,
+      31
     ],
     "gold": [
       16,
@@ -452,17 +453,16 @@
     "moonlight": [
       17
     ],
-    "run": [
+    "night": [
       23
     ],
+    "run": [
+      24
+    ],
     "soul": [
-      25,
-      30
+      26
     ],
     "move": [
-      28
-    ],
-    "bridge": [
       29
     ]
   }

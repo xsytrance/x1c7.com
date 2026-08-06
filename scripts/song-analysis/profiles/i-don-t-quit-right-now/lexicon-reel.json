@@ -1,16 +1,40 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-08-04T05:38:08.410Z",
+  "generatedAt": "2026-08-06T06:35:21.541Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2464,
+    "candidates": 2548,
     "judged": 64,
-    "accepted": 50,
+    "accepted": 51,
     "kept": 32
   },
   "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s1-5-photo.webp",
+      "key": "lexicon/sweat/s1-5-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 1,
+      "cosine": 0.58,
+      "reason": "Perfectly captures sweat's role in endurance and grit",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+      "key": "lexicon/pressure/s0-1.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 1,
+      "cosine": 0.528,
+      "reason": "Image perfectly embodies external pressure and internal struggle in a gritty gym setting.",
+      "recipe": "1",
+      "featured": true
+    },
     {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-2.webp",
       "key": "lexicon/pressure/s0-2.webp",
@@ -19,7 +43,7 @@
       "t": 58.364,
       "score": 1,
       "cosine": 0.521,
-      "reason": "image embodies relentless grit and internal struggle through weight and sweat",
+      "reason": "Image embodies relentless grit and internal struggle through weightlifting",
       "recipe": "2",
       "featured": true
     },
@@ -33,18 +57,6 @@
       "cosine": 0.602,
       "reason": "Powerful visual of endurance and grit aligns with song's themes",
       "recipe": "3-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s1-5-photo.webp",
-      "key": "lexicon/sweat/s1-5-photo.webp",
-      "word": "sweat",
-      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
-      "t": 54.672,
-      "score": 0.98,
-      "cosine": 0.58,
-      "reason": "Authentic portrayal of physical exertion and vulnerability aligns with the song's relentle",
-      "recipe": "5-photo",
       "featured": true
     },
     {
@@ -79,7 +91,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Powerful imagery aligns with grit, determination, and internal struggle",
+      "reason": "Powerful imagery matches relentless grit and internal struggle",
       "recipe": "1-film-still",
       "featured": true
     },
@@ -103,7 +115,7 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, determination, and gym setting",
+      "reason": "Powerful imagery aligns with grit, determination, and physical transformation",
       "recipe": "5-photo",
       "featured": true
     },
@@ -144,18 +156,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
-      "key": "lexicon/pressure/s0-1.webp",
-      "word": "pressure",
-      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
-      "t": 58.364,
-      "score": 0.95,
-      "cosine": 0.528,
-      "reason": "Powerful imagery aligns with internal struggle and external pressure themes",
-      "recipe": "1",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-2-word-portrait.webp",
       "key": "lexicon/body/s7-2-word-portrait.webp",
       "word": "body",
@@ -187,7 +187,7 @@
       "t": 22.535,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Cold gym atmosphere matches relentless grit and internal struggle",
+      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -225,6 +225,30 @@
       "cosine": 0.486,
       "reason": "fits gritty gym struggle, sweat as proof of effort",
       "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s7-5-neon-night.webp",
+      "key": "lexicon/dangerous/s7-5-neon-night.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.95,
+      "cosine": 0.484,
+      "reason": "fits gritty mood, physical struggle, urban resilience aligns with themes",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s7-4-photo.webp",
+      "key": "lexicon/dangerous/s7-4-photo.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.95,
+      "cosine": 0.48,
+      "reason": "Matches gritty gym struggle, physical risk, and mental determination",
+      "recipe": "4-photo",
       "featured": true
     },
     {
@@ -283,7 +307,7 @@
       "t": 52.57,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Powerful imagery matches the song's relentless grit and themes of struggle and determinati",
+      "reason": "Powerful imagery matches the song's relentless grit and themes of endurance and defiance.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -309,30 +333,6 @@
       "cosine": 0.42,
       "reason": "Power struggle and intensity match the song's relentless grit and internal battle",
       "recipe": "6-graphic-novel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s2-1-graphic-novel.webp",
-      "key": "lexicon/cut/s2-1-graphic-novel.webp",
-      "word": "cut",
-      "line": "skip too much and the old me grows So I cut that off before it gets close I know that voice",
-      "t": 218.326,
-      "score": 0.95,
-      "cosine": 0.412,
-      "reason": "Symbolizes cutting off negative thoughts, fits gritty determination and internal struggle",
-      "recipe": "1-graphic-novel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burns/s0-1-word-portrait.webp",
-      "key": "lexicon/burns/s0-1-word-portrait.webp",
-      "word": "burns",
-      "line": "burns",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.409,
-      "reason": "Symbolizes internal struggle, pain, and passion align with song's themes",
-      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -367,8 +367,20 @@
       "t": 52.57,
       "score": 0.9,
       "cosine": 0.494,
-      "reason": "Symbolizes pain and transformation through burn and drips; fits gritty, resilient mood.",
+      "reason": "Symbolizes pain and transformation through burn and drips; fits gritty, resilient mood",
       "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s0-4-word-portrait.webp",
+      "key": "lexicon/dangerous/s0-4-word-portrait.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.9,
+      "cosine": 0.493,
+      "reason": "Gritty, tense atmosphere matches song's relentless determination and internal struggle",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -382,52 +394,40 @@
       "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit",
       "recipe": "5-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
-      "key": "lexicon/dark/s9-2-word-portrait.webp",
-      "word": "dark",
-      "line": "getting sharp Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous",
-      "t": 203.858,
-      "score": 0.9,
-      "cosine": 0.441,
-      "reason": "fits gritty mood, solitary struggle, dim lighting matches internal battle",
-      "recipe": "2-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
-    "pressure": [
+    "sweat": [
       0,
-      11
+      7,
+      9
+    ],
+    "pressure": [
+      1,
+      2
     ],
     "drip": [
-      1
-    ],
-    "sweat": [
-      2,
-      6,
-      8
+      3
     ],
     "move": [
-      3,
-      5,
-      19
+      4,
+      6,
+      21
     ],
     "night": [
-      4
+      5
     ],
     "fire": [
-      7,
+      8,
       15,
       27
     ],
     "cold": [
-      9,
+      10,
       14
     ],
     "hurt": [
-      10
+      11
     ],
     "body": [
       12,
@@ -435,36 +435,34 @@
     ],
     "walk": [
       13,
-      20,
+      22,
       28
     ],
     "summer": [
       16
     ],
+    "dangerous": [
+      18,
+      19,
+      30
+    ],
     "crown": [
-      18
+      20
     ],
     "breath": [
-      21
+      23
     ],
     "burn": [
-      22,
+      24,
       29
     ],
     "voice": [
-      23
+      25
     ],
     "hands": [
-      24
-    ],
-    "cut": [
-      25,
-      30
-    ],
-    "burns": [
       26
     ],
-    "dark": [
+    "cut": [
       31
     ]
   }

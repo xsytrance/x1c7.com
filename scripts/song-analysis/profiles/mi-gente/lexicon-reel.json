@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-08-04T05:44:47.926Z",
+  "generatedAt": "2026-08-06T06:42:04.801Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -103,7 +103,7 @@
       "t": 26.262,
       "score": 0.95,
       "cosine": 0.427,
-      "reason": "Symbolizes 'sangre' as life force and unity, fits aggressive swagger and loyalty themes",
+      "reason": "Symbolizes 'sangre' as life force, aligns with loyalty and community themes.",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 136.359,
       "score": 0.7,
       "cosine": 0.467,
-      "reason": "Symbolizes unity and warmth but lacks aggressive swagger",
+      "reason": "Fire symbolizes unity and resilience, aligns with nighttime community themes",
       "recipe": "4-cinema",
       "featured": true
     },

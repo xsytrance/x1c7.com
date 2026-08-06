@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-08-04T05:34:50.430Z",
+  "generatedAt": "2026-08-06T06:32:00.808Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2392,
+    "candidates": 2479,
     "judged": 64,
-    "accepted": 64,
+    "accepted": 63,
     "kept": 32
   },
   "reel": [
@@ -55,7 +55,7 @@
       "t": 150.825,
       "score": 0.95,
       "cosine": 0.506,
-      "reason": "Matches summer, clarity, and hope themes perfectly",
+      "reason": "Matches summer, clarity, hope, and transformation themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 136.32,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes.",
+      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 5.167,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope",
+      "reason": "Symbolizes new beginnings and warmth aligning with transformation and hope",
       "recipe": "6-oil-light",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes.",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 158.96,
       "score": 0.95,
       "cosine": 0.414,
-      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth themes",
+      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth.",
       "recipe": "2-oil-light",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.397,
-      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Symbolizes hope, transformation, and light aligning with song's themes",
+      "reason": "Symbolizes hope, warmth, and dreams aligning with transformation and empowerment.",
       "recipe": "5-dream-collage",
       "featured": true
     },

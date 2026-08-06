@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-08-04T05:29:36.698Z",
+  "generatedAt": "2026-08-06T06:26:38.042Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 98.279,
       "score": 0.95,
       "cosine": 0.412,
-      "reason": "Powerful visual matches song's melancholic, intimate, and theatrical mood",
+      "reason": "Powerful visual aligns with song's melancholic, intimate, and symbolic themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 8.893,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "matches mood and themes with neon symbolism and emotional closure",
+      "reason": "Matches mood and themes with neon symbolism and emotional closure",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 136.023,
       "score": 0.95,
       "cosine": 0.369,
-      "reason": "Matches sensual, melancholic mood and themes of emotional closure and hidden desires",
+      "reason": "Matches sensual, melancholic mood and themes of emotional closure and moral ambiguity",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 209.164,
       "score": 0.85,
       "cosine": 0.442,
-      "reason": "Symbolism aligns with passion and machinery, fits sensual and melancholic mood",
+      "reason": "Symbolism fits fire as passion, gears as mechanical past, twilight as melancholy",
       "recipe": "2-photo",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 98.279,
       "score": 0.8,
       "cosine": 0.372,
-      "reason": "Matches melancholic mood and emotional closure theme",
+      "reason": "Emotional wound aligns with lyric, fits melancholic and vulnerable mood",
       "recipe": "6-photo",
       "featured": true
     }

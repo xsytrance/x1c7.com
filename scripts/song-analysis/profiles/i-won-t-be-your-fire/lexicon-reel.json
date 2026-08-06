@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-08-04T05:40:01.030Z",
+  "generatedAt": "2026-08-06T06:37:15.215Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2551,
+    "candidates": 2647,
     "judged": 64,
     "accepted": 64,
     "kept": 32
@@ -151,7 +151,7 @@
       "t": 153.808,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "evokes melancholy and desolation fitting the song's mood and themes",
+      "reason": "evokes melancholy and desolation matching song's mood and themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,20 +187,8 @@
       "t": 67.46,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Captures inner turmoil and fragility in a cinematic, melancholic setting",
+      "reason": "Matches the song's mood and themes of inner turmoil and emotional restraint",
       "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-2-cinema.webp",
-      "key": "lexicon/bruise/s0-2-cinema.webp",
-      "word": "bruise",
-      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
-      "t": 135.009,
-      "score": 0.95,
-      "cosine": 0.453,
-      "reason": "Matches bruise imagery, emotional pain, surrealism fits song's mood",
-      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -235,7 +223,7 @@
       "t": 135.009,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Emotional wound, fragile hope, and fragmented memories align with the song's themes of pai",
+      "reason": "Emotional wound, fragile hope, fragmented memories align with song's themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -247,32 +235,8 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood.",
+      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood",
       "recipe": "2-anime",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s6-3-cinema.webp",
-      "key": "lexicon/break/s6-3-cinema.webp",
-      "word": "break",
-      "line": "break",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.428,
-      "reason": "Symbolizes fragility and brokenness in a toxic relationship",
-      "recipe": "3-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s0-3-word-portrait.webp",
-      "key": "lexicon/escape/s0-3-word-portrait.webp",
-      "word": "escape",
-      "line": "feels fake I been calling it love when its only escape Say something cold make it sound like you",
-      "t": 149.52,
-      "score": 0.95,
-      "cosine": 0.428,
-      "reason": "Symbolizes hope and liberation in a confined space, aligns with themes of escape and self-",
-      "recipe": "3-word-portrait",
       "featured": true
     },
     {
@@ -307,7 +271,7 @@
       "t": 223.62,
       "score": 0.9,
       "cosine": 0.515,
-      "reason": "Symbolizes emotional confinement and isolation central to the song's themes",
+      "reason": "Symbolizes emotional confinement and isolation central to the song's theme",
       "recipe": "3-photo",
       "featured": true
     },
@@ -319,7 +283,7 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.513,
-      "reason": "Symbolizes lingering emotional presence, fits haunting mood and themes of unresolved past",
+      "reason": "Symbolizes lingering pain and haunting past in a toxic relationship",
       "recipe": "2-photo",
       "featured": true
     },
@@ -379,7 +343,7 @@
       "t": 22.895,
       "score": 0.9,
       "cosine": 0.483,
-      "reason": "Cinematic, melancholic, and reflective of emotional struggle and urban solitude",
+      "reason": "Cinematic, melancholic, and reflective mood aligns with song's emotional depth and themes.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -391,8 +355,44 @@
       "t": 78.147,
       "score": 0.9,
       "cosine": 0.482,
-      "reason": "Cinematic, melancholic, symbolic of toxic nightlife and emotional intensity",
+      "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
       "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s7-5-chalkboard.webp",
+      "key": "lexicon/moon/s7-5-chalkboard.webp",
+      "word": "moon",
+      "line": "without becoming your moon I can hold all the good parts and still",
+      "t": 213.72,
+      "score": 0.9,
+      "cosine": 0.481,
+      "reason": "Symbolizes guidance and emotional depth fitting the song's themes",
+      "recipe": "5-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-5-word-portrait.webp",
+      "key": "lexicon/bruise/s0-5-word-portrait.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.9,
+      "cosine": 0.469,
+      "reason": "Symbolizes pain and hope, fits emotional vulnerability and resilience",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s4-6-word-portrait.webp",
+      "key": "lexicon/lights/s4-6-word-portrait.webp",
+      "word": "lights",
+      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
+      "t": 78.147,
+      "score": 0.9,
+      "cosine": 0.468,
+      "reason": "Symbolism aligns with emotional vulnerability and hope in a toxic relationship",
+      "recipe": "6-word-portrait",
       "featured": true
     }
   ],
@@ -410,36 +410,34 @@
     ],
     "fire": [
       3,
-      16,
-      23
+      15,
+      20
     ],
     "storm": [
       4,
-      19
+      18
     ],
     "hate": [
       6
     ],
     "escape": [
-      7,
-      21
+      7
     ],
     "break": [
       8,
-      20,
-      26
+      23
     ],
     "cage": [
       9,
-      24,
-      28
+      21,
+      25
     ],
     "ghosts": [
       10
     ],
     "cold": [
       12,
-      17
+      16
     ],
     "heart": [
       13
@@ -448,24 +446,26 @@
       14
     ],
     "bruise": [
-      15,
-      18
+      17,
+      30
     ],
     "lights": [
-      22,
+      19,
+      28,
       31
     ],
     "ghost": [
-      25
+      22
     ],
     "burn": [
-      27
+      24
     ],
     "moon": [
+      26,
       29
     ],
     "rain": [
-      30
+      27
     ]
   }
 }

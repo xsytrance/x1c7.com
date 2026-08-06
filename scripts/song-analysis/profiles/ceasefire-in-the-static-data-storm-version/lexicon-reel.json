@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-08-04T05:32:46.971Z",
+  "generatedAt": "2026-08-06T06:29:57.159Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1615,
+    "candidates": 1670,
     "judged": 64,
-    "accepted": 60,
+    "accepted": 61,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.733,
-      "reason": "Strong symbolism, mood matches, visual ties to themes",
+      "reason": "Strong symbolism, mood matches, themes align",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 83.244,
       "score": 0.95,
       "cosine": 0.666,
-      "reason": "fits mood and themes of isolation and digital anxiety",
+      "reason": "matches melancholic mood, isolation, digital chaos symbolism",
       "recipe": "2",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.615,
-      "reason": "Strongly aligns with mood and themes of isolation and digital chaos",
+      "reason": "fits mood and themes of isolation and digital chaos",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 113.04,
       "score": 0.95,
       "cosine": 0.603,
-      "reason": "fits digital overload, anonymity, and data themes",
+      "reason": "fits digital overload, anonymity, and clinical atmosphere",
       "recipe": "4-photo",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.592,
-      "reason": "fits mood, symbolism, and themes of peace in chaos",
+      "reason": "melancholic, desolate, hope in chaos aligns with song's themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 31.881,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "fits digital isolation, melancholy, artificial light symbolism",
+      "reason": "fits mood and themes of digital isolation and melancholy",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 81.572,
       "score": 0.95,
       "cosine": 0.568,
-      "reason": "fits digital overload theme, matches chaotic mood and visual symbolism",
+      "reason": "fits digital overload theme, matches chaotic mood and symbolism",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -259,8 +259,20 @@
       "t": 118.085,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits digital isolation, melancholic mood, and surreal symbolism",
+      "reason": "fits mood and themes of isolation and digital overload",
       "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/signal/s3-4-dark-surreal.webp",
+      "key": "lexicon/signal/s3-4-dark-surreal.webp",
+      "word": "signal",
+      "line": "comes back Another voice, another need another signal dressed in black Too many tabs, too many chains too many",
+      "t": 109.204,
+      "score": 0.95,
+      "cosine": 0.552,
+      "reason": "fits digital anxiety, glitch art, stormy atmosphere",
+      "recipe": "4-dark-surreal",
       "featured": true
     },
     {
@@ -273,6 +285,18 @@
       "cosine": 0.551,
       "reason": "fits digital overload, ghostly names, abstract cosmic theme",
       "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/signal/s3-2-word-portrait.webp",
+      "key": "lexicon/signal/s3-2-word-portrait.webp",
+      "word": "signal",
+      "line": "comes back Another voice, another need another signal dressed in black Too many tabs, too many chains too many",
+      "t": 109.204,
+      "score": 0.95,
+      "cosine": 0.546,
+      "reason": "fits digital anxiety, isolation, and urban decay themes",
+      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -295,7 +319,7 @@
       "t": 86.808,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "fits mood and themes of digital anxiety and memory",
+      "reason": "fits digital anxiety, spectral family ties to memory loss",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,7 +343,7 @@
       "t": 78.484,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "matches digital surrealism, anxiety, fragmented identity, and stormy mood",
+      "reason": "matches digital surrealism, anxiety, fragmented identity, and melancholic mood",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -355,7 +379,7 @@
       "t": 106.162,
       "score": 0.95,
       "cosine": 0.529,
-      "reason": "fits cyberpunk mood, digital overload, urban isolation",
+      "reason": "fits digital overload, urban isolation, cyberpunk melancholy",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -370,37 +394,13 @@
       "reason": "fits mood and themes of decay and digital fragmentation",
       "recipe": "2-word-neon",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s3-5-film-still.webp",
-      "key": "lexicon/ghosts/s3-5-film-still.webp",
-      "word": "ghosts",
-      "line": "down that road Ads in my dreams ghosts in my feed Every open window opens",
-      "t": 86.808,
-      "score": 0.95,
-      "cosine": 0.518,
-      "reason": "fits digital ghosting theme, melancholic mood, and eerie atmosphere",
-      "recipe": "5-film-still",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/violence/s0-5-word-portrait.webp",
-      "key": "lexicon/violence/s0-5-word-portrait.webp",
-      "word": "violence",
-      "line": "violence",
-      "t": null,
-      "score": 0.95,
-      "cosine": 0.515,
-      "reason": "fits dystopian, anxious, and urgent mood with digital elements",
-      "recipe": "5-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "code": [
       0,
       6,
-      25
+      27
     ],
     "ceasefire": [
       1,
@@ -413,7 +413,7 @@
     "static": [
       4,
       9,
-      22
+      24
     ],
     "heart": [
       5,
@@ -422,7 +422,7 @@
     ],
     "names": [
       7,
-      21
+      22
     ],
     "soul": [
       10,
@@ -436,33 +436,33 @@
     ],
     "silence": [
       13,
-      26
+      28
     ],
     "scroll": [
       15
     ],
     "storm": [
       16,
-      24
+      26
     ],
     "chaos": [
       17,
       19
     ],
+    "signal": [
+      21,
+      23
+    ],
     "ghosts": [
-      23,
-      30
+      25
     ],
     "memory": [
-      27
-    ],
-    "wave": [
-      28
-    ],
-    "broken": [
       29
     ],
-    "violence": [
+    "wave": [
+      30
+    ],
+    "broken": [
       31
     ]
   }

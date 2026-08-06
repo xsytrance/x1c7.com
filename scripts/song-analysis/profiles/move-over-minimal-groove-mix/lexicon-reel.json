@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-08-04T05:45:12.375Z",
+  "generatedAt": "2026-08-06T06:42:29.581Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit with bass, retro club, summer energy, and confident style",
+      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 13.55,
       "score": 1,
       "cosine": 0.565,
-      "reason": "Perfectly aligns with summer heat, dance floor dominance, and retro club aesthetic.",
+      "reason": "Perfectly aligns with dance floor dominance, summer heat, and retro club aesthetic.",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfect fit for retro club, confidence, and individuality",
+      "reason": "Perfect fit for retro club aesthetic and confident individuality",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.56,
-      "reason": "spotlight and club atmosphere match song's retro and stylish mood",
+      "reason": "spotlight and retro club align with song's themes and mood",
       "recipe": "2-dark-surreal",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 20.887,
       "score": 0.95,
       "cosine": 0.503,
-      "reason": "Confident, energetic, and stylish image matches the song's retro club and summer energy",
+      "reason": "Confident, energetic, and stylish image matches the song's retro club and summer energy.",
       "recipe": "6-stickers",
       "featured": true
     },
