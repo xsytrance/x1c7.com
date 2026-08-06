@@ -5,6 +5,21 @@ only **measured** them (`stems.json` — the stem senses) while playback stayed 
 mp3. This system ships the audio itself: the listener can pull the song apart,
 instrument by instrument, live._
 
+> **`stems.json` gained a second consumer on 2026-08-06.** Planet Studio (the
+> Android app at `~/planet-studio`, v0.12.0) reads it natively to drive the
+> jukebox: the turntable turns at `bpm`, the LED analyzer rides `env`, and
+> sparks come off the real `kicks` / `snares` / `hats`. It is a Kotlin port of
+> `src/lib/stemSense.ts` — `envAt`, the scrub-safe onset walker, and the
+> `v == 1 && beats.length` usability contract.
+>
+> That makes `stems.json` a **shared contract, not a site-internal file**.
+> Renaming a field, or changing `envHz` or the 0–99 loudness scale, breaks the
+> app silently — its parser ignores unknown keys by design. The app pins this
+> at site commit `32e8aa8` and carries the drift check in its own
+> `CONTRACT.md`. 52 of 56 visible tracks ship one; for the other four the app
+> falls back to a plain BPM clock and labels itself `◈ ESTIMATED` rather than
+> pretending to hear.
+
 ---
 
 ## What the listener gets
