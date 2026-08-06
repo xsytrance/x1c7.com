@@ -224,3 +224,60 @@ hit shuffle.
 | R2 cover/loop 404s | every tile already has a two-step fallback to the gradient art |
 | the Suno gratitude note loses prominence | it keeps a full-width card, immediately below the Wall — first thing after the music |
 | losing the shelf's craft | shelf/deck/jukebox stay, behind the toggle |
+
+---
+
+## 6 · The Wall on Android — Planet Studio ✅ SHIPPED 2026-08-06
+
+The companion app (`~/planet-studio`, v0.10.0) had the **same four steps** the
+web brief killed: galaxy grid → planet page → PLAY → 🪐 FULL SHOW. Its front
+door is now the Wall, read from this document at site commit `32e8aa8`.
+
+Ported files, app side:
+
+| app file | mirrors |
+|---|---|
+| `ui/wall/WallLayout.kt` | `src/lib/wall.ts` — `DIRECTED_CUTS`, `showRichness`, hero cap, `columnsFor`, `cellSize`, `motionFramesFor`, `paletteFor` |
+| `ui/theme/GenrePalettes.kt` | `src/lib/collection.ts` — `GENRE_PALETTES` + `classifyGenre` (branch order included) |
+| `ui/wall/WallMotion.kt` | `src/lib/useWallMotion.ts` — stride rotation, visible-only pool, slot counts |
+| `ui/wall/TileMotion.kt` | `src/components/wall/TileMotion.tsx` |
+| `ui/wall/WallScreen.kt` | `src/components/wall/Wall.tsx` + `WallTile.tsx` |
+| `cardUrl()` in `WallScreen.kt` | `cardUrl` in `src/lib/collection.ts` |
+
+**If you change any of those site files, the app is now downstream of you.**
+The app's `CONTRACT.md` carries a design pin at `32e8aa8` and a drift check
+covering them.
+
+### Where the app deliberately differs
+
+1. **Band packing, not `grid-auto-flow: dense`.** Compose has no lazy grid with
+   row-spanning, and composing ~60 collector cards eagerly is tens of MB of
+   bitmap. `packWall()` dense-packs into two-row *bands*, each one LazyColumn
+   item. Same result — heroes are exactly 2× in both axes and later small tiles
+   backfill the holes — with laziness kept. Order drift is bounded to one band
+   and unit-tested.
+2. **No hover, so no reveal.** The tile's whole job on a phone is the tap. Tap →
+   the show; **long-press → the planet page** (drafts, studio, the detail the
+   owner still needs). The "TAP ANY COVER, THE SHOW TAKES OVER" hint lives once
+   in the bar, not on 60 tiles.
+3. **The ignited word carries a glow, not a blur.** RenderEffect blur is a
+   per-frame re-rasterisation, which is precisely what the motion budget can't
+   afford; at tile size the glow reads the same.
+4. **No hover-cue audio.** `usePreview`'s drop-in at the hot bar has no
+   touch analogue — the tap is the commitment. `hotMoment()` stays unported.
+5. **Reduced motion** is Android's `ANIMATOR_DURATION_SCALE == 0`. A small
+   screen still means *fewer slots* (3 vs 6), never no motion — the same
+   lesson P1 learned here.
+
+### What the app gained that the web hasn't
+
+- **SHUFFLE THE SHOW** is in the app's wall bar (the web's P3 item, which
+  shipped early into P0 here as a control).
+- The **AGENOR gold + xsytrance ✕** identity (docs/BRANDING.md) now leads the
+  app's front door too, where the app previously had no artist identity at all.
+
+### Still open on the app side
+
+- P2 rendered Kinetica loops: when `covers/loops/<slug>.webm` exists, the app's
+  `TileMotion` should prefer it exactly as `TileMotion.tsx` will.
+- The 2 songs with no planet art sit as static posters in both places.
