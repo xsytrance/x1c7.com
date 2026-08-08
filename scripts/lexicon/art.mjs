@@ -365,7 +365,15 @@ for (const job of jobs) {
   try {
     const buf = await generate(job);
     const key = `lexicon/${e.word}/s${i}-${k + 1}-${recipe.id}${job.bump ? `-r${job.bump}` : ""}.webp`;
-    const tmp = join(TMP, `lex-${e.word}-${i}-${k + 1}.webp`);
+    // The word goes into the R2 KEY as-is (object storage nests on "/" and that
+    // is intended), but it must NOT go raw into a LOCAL filename. "cielo/pueblo"
+    // — the one word of 1,605 containing a separator — turned this into
+    // TMP/lex-cielo/pueblo-0-1.webp, a directory that is never created, so the
+    // very first write threw ENOENT. Because it sorts near the front by gravity,
+    // it killed the whole nightly batch: nine consecutive nights of
+    // "atelier done: 0 rendered, 87 failed". Flatten separators for the temp file.
+    const safeWord = e.word.replace(/[\/\\]/g, "_");
+    const tmp = join(TMP, `lex-${safeWord}-${i}-${k + 1}.webp`);
     await sharp(buf).webp({ quality: 82 }).toFile(tmp);
     r2put(tmp, key);
     try { unlinkSync(tmp); } catch { /* temp cleanup best-effort */ }
