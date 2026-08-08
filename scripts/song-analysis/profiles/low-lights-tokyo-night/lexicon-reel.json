@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-08-06T06:40:08.009Z",
+  "generatedAt": "2026-08-07T13:58:16.953Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1141,
-    "judged": 44,
-    "accepted": 41,
+    "candidates": 1262,
+    "judged": 48,
+    "accepted": 45,
     "kept": 32
   },
   "reel": [
@@ -91,7 +91,7 @@
       "t": 1.12,
       "score": 0.95,
       "cosine": 0.706,
-      "reason": "Perfectly captures neon melancholy and urban isolation",
+      "reason": "Matches neon melancholy, urban isolation, and bittersweet mood",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.695,
-      "reason": "matches bittersweet mood, urban isolation, nostalgic Tokyo nightlife",
+      "reason": "matches bittersweet mood, Tokyo nightlife, emotional weight",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 1.12,
       "score": 0.95,
       "cosine": 0.646,
-      "reason": "Evokes Tokyo nightlife, melancholy, and memory fragments",
+      "reason": "Evokes Tokyo nightlife, melancholy, and memory loss perfectly",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 41.378,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "nostalgic, melancholic, urban isolation, symbolic of lost connection",
+      "reason": "nostalgic, melancholic, urban isolation match song's mood and themes",
       "recipe": "2",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 100.02,
       "score": 0.95,
       "cosine": 0.627,
-      "reason": "matches melancholy, urban isolation, hidden grief",
+      "reason": "matches bittersweet mood, urban isolation, hidden grief",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 47.88,
       "score": 0.95,
       "cosine": 0.61,
-      "reason": "Matches neon melancholy, urban isolation, and cold emotional tone",
+      "reason": "matches melancholic, isolated, neon-lit Tokyo night",
       "recipe": "1-neon-night",
       "featured": true
     },
@@ -235,8 +235,20 @@
       "t": 24.938,
       "score": 0.95,
       "cosine": 0.595,
-      "reason": "matches melancholic mood, isolation, introspection",
+      "reason": "matches melancholic mood, isolation, and introspection",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s2-2-photo.webp",
+      "key": "lexicon/fade/s2-2-photo.webp",
+      "word": "fade",
+      "line": "light もし ドラム が fade out し て も ここ に い て よ please dont",
+      "t": 53.081,
+      "score": 0.95,
+      "cosine": 0.594,
+      "reason": "matches melancholy, transient emotions, and urban isolation",
+      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -247,8 +259,20 @@
       "t": 97.032,
       "score": 0.95,
       "cosine": 0.593,
-      "reason": "Matches bittersweet nightlife, melancholy, and symbolic elements",
+      "reason": "Matches bittersweet nightlife, melancholy, and symbolic imagery",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s2-1-cinema.webp",
+      "key": "lexicon/fade/s2-1-cinema.webp",
+      "word": "fade",
+      "line": "light もし ドラム が fade out し て も ここ に い て よ please dont",
+      "t": 53.081,
+      "score": 0.95,
+      "cosine": 0.586,
+      "reason": "matches melancholy, transient light, urban solitude",
+      "recipe": "1-cinema",
       "featured": true
     },
     {
@@ -283,7 +307,7 @@
       "t": 77.706,
       "score": 0.95,
       "cosine": 0.548,
-      "reason": "fits melancholy, brokenness, and urban night themes",
+      "reason": "matches melancholy, brokenness, and urban nighttime mood",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -331,8 +355,20 @@
       "t": 7.396,
       "score": 0.9,
       "cosine": 0.583,
-      "reason": "Matches melancholic urban night, loneliness, and symbolic use of night",
+      "reason": "Captures urban melancholy, loneliness, and neon-lit isolation",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s11-1-neon-sign.webp",
+      "key": "lexicon/phone/s11-1-neon-sign.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.9,
+      "cosine": 0.579,
+      "reason": "fits neon melancholy, digital isolation, hidden grief",
+      "recipe": "1-neon-sign",
       "featured": true
     },
     {
@@ -343,56 +379,20 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.572,
-      "reason": "Neon-lit rain-soaked crowd fits Tokyo nightlife and bittersweet mood",
+      "reason": "Matches neon melancholy, urban isolation, and emotional rain metaphor",
       "recipe": "4-neon-night",
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s1-4-cinema.webp",
-      "key": "lexicon/breaking/s1-4-cinema.webp",
-      "word": "breaking",
-      "line": "goodbye 踊っ てる ふりのま まで I m breaking in the night スムーズ な コード 雨",
-      "t": 77.706,
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s2-3-cinema.webp",
+      "key": "lexicon/phone/s2-3-cinema.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
       "score": 0.9,
-      "cosine": 0.553,
-      "reason": "fragile light amid brokenness mirrors bittersweet nightlife grief",
-      "recipe": "4-cinema",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
-      "key": "lexicon/love/s12-6-word-portrait.webp",
-      "word": "love",
-      "line": "ない で stay in my sightWere in love with the partybut I m still missing youLow",
-      "t": 64.494,
-      "score": 0.9,
-      "cosine": 0.524,
-      "reason": "Captures melancholy, neon, isolation, and symbolic tension",
-      "recipe": "6-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s2-5-word-neon.webp",
-      "key": "lexicon/ice/s2-5-word-neon.webp",
-      "word": "ice",
-      "line": "ライト で 踊っ てる night Every body moving で も 心 は ice 人混み の 中 探し て your light",
-      "t": 47.88,
-      "score": 0.9,
-      "cosine": 0.502,
-      "reason": "Neon melancholy, urban isolation, coldness align with song's mood and themes",
-      "recipe": "5-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
-      "key": "lexicon/love/s11-6-neon-sign.webp",
-      "word": "love",
-      "line": "ない で stay in my sightWere in love with the partybut I m still missing youLow",
-      "t": 64.494,
-      "score": 0.9,
-      "cosine": 0.499,
-      "reason": "Neon heart symbolizes hollow digital love; urban noir matches Tokyo nightlife and isolatio",
-      "recipe": "6-neon-sign",
+      "cosine": 0.567,
+      "reason": "Evokes loneliness, memory, and disconnection in a melancholic setting",
+      "recipe": "3-cinema",
       "featured": true
     }
   ],
@@ -404,12 +404,12 @@
     ],
     "party": [
       1,
-      19
+      20
     ],
     "night": [
       2,
       3,
-      26
+      28
     ],
     "cold": [
       4,
@@ -427,35 +427,35 @@
       18
     ],
     "phone": [
-      12
+      12,
+      29,
+      31
     ],
     "ice": [
-      15,
-      30
+      15
     ],
     "crowd": [
       16,
-      27
+      30
     ],
     "body": [
       17
     ],
+    "fade": [
+      19,
+      21
+    ],
     "turning": [
-      20,
-      25
+      22,
+      27
     ],
     "song": [
-      21,
-      24
+      23,
+      26
     ],
     "breaking": [
-      22,
-      23,
-      28
-    ],
-    "love": [
-      29,
-      31
+      24,
+      25
     ]
   }
 }

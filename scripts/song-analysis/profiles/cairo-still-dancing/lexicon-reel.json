@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-08-06T06:29:09.936Z",
+  "generatedAt": "2026-08-07T13:46:28.246Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2642,
+    "candidates": 2809,
     "judged": 64,
-    "accepted": 58,
+    "accepted": 59,
     "kept": 32
   },
   "reel": [
@@ -72,6 +72,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s2-3-neon-night.webp",
+      "key": "lexicon/drums/s2-3-neon-night.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.95,
+      "cosine": 0.617,
+      "reason": "Cinematic, resilient, urban energy aligns with song's themes",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-5-photo.webp",
       "key": "lexicon/move/s1-5-photo.webp",
       "word": "move",
@@ -91,7 +103,7 @@
       "t": 61.498,
       "score": 0.95,
       "cosine": 0.614,
-      "reason": "Powerful imagery of unity, resilience, and rhythm aligns perfectly with song's themes and ",
+      "reason": "Powerful imagery of unity, resilience, and rhythm aligns perfectly with the song's themes ",
       "recipe": "3-photo",
       "featured": true
     },
@@ -127,8 +139,20 @@
       "t": 105.86,
       "score": 0.95,
       "cosine": 0.59,
-      "reason": "Resonates with resilience, defiance, and cultural pride in a cinematic Cairo setting.",
+      "reason": "Resilient, defiant, cultural pride align with song's themes and mood",
       "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s4-2-neon-night.webp",
+      "key": "lexicon/drums/s4-2-neon-night.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.95,
+      "cosine": 0.59,
+      "reason": "Defiant rhythm, urban resilience, unity through music align with song's themes",
+      "recipe": "2-neon-night",
       "featured": true
     },
     {
@@ -151,8 +175,20 @@
       "t": 105.86,
       "score": 0.95,
       "cosine": 0.566,
-      "reason": "Symbolizes unity, expression, and resilience through performance and typography",
+      "reason": "Symbolizes unity, resilience, and expression central to the song's themes",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s7-1-word-portrait.webp",
+      "key": "lexicon/drums/s7-1-word-portrait.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.95,
+      "cosine": 0.555,
+      "reason": "Symbolizes cultural fusion, resilience, and celebration of music in Cairo",
+      "recipe": "1-word-portrait",
       "featured": true
     },
     {
@@ -211,7 +247,7 @@
       "t": 155.365,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes cultural heritage, resilience, and rhythm central to the song's themes.",
+      "reason": "Symbolizes resilience, cultural heritage, and rhythm central to the song's themes.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,7 +331,7 @@
       "t": 215.656,
       "score": 0.92,
       "cosine": 0.597,
-      "reason": "Cinematic, resilient, Cairo streets, unity through movement",
+      "reason": "Cinematic, resilient, hopeful, and tied to Cairo's urban life and movement",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +367,7 @@
       "t": 105.86,
       "score": 0.92,
       "cosine": 0.559,
-      "reason": "Cinematic, resilient, cultural pride, voice as resistance fit the song's themes",
+      "reason": "Cinematic, resilient, cultural pride, voice as resistance align with song's themes",
       "recipe": "2-neon-night",
       "featured": true
     },
@@ -343,7 +379,7 @@
       "t": 57.423,
       "score": 0.92,
       "cosine": 0.514,
-      "reason": "Resilient cityscape mirrors song's themes of defiance and hope.",
+      "reason": "Resilient cityscape mirrors song's themes of defiance and hope",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -358,108 +394,74 @@
       "reason": "Urban surrealism, bass symbolism, alley setting align with song's themes",
       "recipe": "1-neon-sign",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
-      "t": 39.381,
-      "score": 0.92,
-      "cosine": 0.488,
-      "reason": "Symbolizes resilience, unity, and defiance through fire and music",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-5-photo.webp",
-      "key": "lexicon/city/s5-5-photo.webp",
-      "word": "city",
-      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with",
-      "t": 36.281,
-      "score": 0.92,
-      "cosine": 0.486,
-      "reason": "Celebrates unity, resilience, and city pride with cinematic energy",
-      "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s6-2-word-portrait.webp",
-      "key": "lexicon/city/s6-2-word-portrait.webp",
-      "word": "city",
-      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with",
-      "t": 36.281,
-      "score": 0.92,
-      "cosine": 0.48,
-      "reason": "Celebratory urban scene aligns with city's resilience and unity themes",
-      "recipe": "2-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "sky": [
       0,
       4,
-      24
+      27
     ],
     "lights": [
       1
     ],
     "soul": [
       2,
-      10
+      12
     ],
     "walk": [
       3,
-      23,
-      25
+      26,
+      28
+    ],
+    "drums": [
+      5,
+      11,
+      14
     ],
     "move": [
-      5,
-      27
+      6,
+      30
     ],
     "rhythm": [
-      6
+      7
     ],
     "heart": [
-      7,
-      12
+      8,
+      15
     ],
     "fire": [
-      8,
-      29
+      9
     ],
     "voice": [
-      9,
-      11,
-      26
+      10,
+      13,
+      29
     ],
     "peace": [
-      13
+      16
     ],
     "rise": [
-      14,
-      17
-    ],
-    "city": [
-      15,
-      30,
-      31
-    ],
-    "drum": [
-      16,
-      18
-    ],
-    "night": [
-      19,
-      21,
-      22
-    ],
-    "gold": [
+      17,
       20
     ],
+    "city": [
+      18
+    ],
+    "drum": [
+      19,
+      21
+    ],
+    "night": [
+      22,
+      24,
+      25
+    ],
+    "gold": [
+      23
+    ],
     "bass": [
-      28
+      31
     ]
   }
 }

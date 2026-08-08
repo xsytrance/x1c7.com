@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-08-06T06:40:58.521Z",
+  "generatedAt": "2026-08-07T13:59:09.517Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 914,
+    "candidates": 1104,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -31,7 +31,7 @@
       "t": null,
       "score": 1,
       "cosine": 0.444,
-      "reason": "Image embodies resilience, battle scars, and inner strength matching song's themes.",
+      "reason": "Image embodies resilience, battle scars, and inner strength perfectly matching the song's ",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.526,
-      "reason": "Symbolism of broken chains aligns with themes of resilience and defiance; post-apocalyptic",
+      "reason": "Symbolism of broken chains aligns with defiance and resilience, fitting the song's themes.",
       "recipe": "1-anime",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Symbolism of break as transformation in a desolate yet hopeful setting",
+      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and empowerm",
       "recipe": "3-film-still",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.49,
-      "reason": "Symbolizes defiance and resilience, aligns with transformation and empowerment themes",
+      "reason": "Symbolizes defiance and resilience through broken chains in a ruined setting",
       "recipe": "6-concept-art",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "Powerful imagery aligns with defiance, resilience, and transformation through struggle.",
+      "reason": "Powerful imagery of resilience and defiance on a battlefield",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes resilience, destruction, and rebirth central to the song's themes.",
+      "reason": "Symbolizes resilience, destruction, and rebirth through fire",
       "recipe": "2-anime",
       "featured": true
     },
@@ -276,6 +276,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wreckage/s0-1-cinema.webp",
+      "key": "lexicon/wreckage/s0-1-cinema.webp",
+      "word": "wreckage",
+      "line": "longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting on the break now",
+      "t": 64.56,
+      "score": 0.95,
+      "cosine": 0.444,
+      "reason": "Symbolizes transformation from destruction to power, fits defiant, resilient mood",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s9-3-dream-collage.webp",
       "key": "lexicon/break/s9-3-dream-collage.webp",
       "word": "break",
@@ -283,7 +295,7 @@
       "t": 67.2,
       "score": 0.95,
       "cosine": 0.441,
-      "reason": "Symbolizes destruction and rebirth, aligns with resilience and transformation themes",
+      "reason": "Symbolizes transformation through destruction, resilience, and rebirth",
       "recipe": "3-dream-collage",
       "featured": true
     },
@@ -307,7 +319,7 @@
       "t": 42.96,
       "score": 0.95,
       "cosine": 0.439,
-      "reason": "Symbolism aligns with defiance and resilience, knife as weapon and survival tool",
+      "reason": "Symbolism aligns with defiance and resilience, fits post-apocalyptic mood and transformati",
       "recipe": "3-anime",
       "featured": true
     },
@@ -343,7 +355,7 @@
       "t": 73.76,
       "score": 0.95,
       "cosine": 0.429,
-      "reason": "Symbolizes breaking chains, resilience in ruins, defiant empowerment",
+      "reason": "Symbolizes breaking chains, resilience, and transformation in a defiant, post-apocalyptic ",
       "recipe": "4-anime",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 38.96,
       "score": 0.95,
       "cosine": 0.425,
-      "reason": "Symbolizes defiance and strength through raised fists, aligns with themes of resilience an",
+      "reason": "Symbolizes defiance and strength through clenched fists",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.415,
-      "reason": "Symbolizes transformation through destruction, aligns with defiant resilience and rebirth",
+      "reason": "Symbolizes transformation through fragmentation and rebirth",
       "recipe": "3-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-2-anime.webp",
-      "key": "lexicon/throne/s0-2-anime.webp",
-      "word": "throne",
-      "line": "Tyyyleeer No longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting",
-      "t": 63.84,
-      "score": 0.95,
-      "cosine": 0.415,
-      "reason": "Symbolizes power from destruction, fits defiant resilience theme",
-      "recipe": "2-anime",
       "featured": true
     }
   ],
@@ -418,11 +418,11 @@
     "break": [
       5,
       19,
-      22
+      23
     ],
     "chain": [
       6,
-      27
+      28
     ],
     "storm": [
       8,
@@ -431,20 +431,21 @@
     ],
     "body": [
       9,
-      26
+      27
     ],
     "barricade": [
       10,
-      29
+      30
     ],
     "wreckage": [
       13,
-      18
+      18,
+      22
     ],
     "armor": [
       14,
-      23,
-      25
+      24,
+      26
     ],
     "battle": [
       16
@@ -454,15 +455,12 @@
       20
     ],
     "knife": [
-      24
+      25
     ],
     "hands": [
-      28
+      29
     ],
     "shattered": [
-      30
-    ],
-    "throne": [
       31
     ]
   }

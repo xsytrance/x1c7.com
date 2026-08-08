@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-08-06T06:37:52.912Z",
+  "generatedAt": "2026-08-07T13:55:50.989Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1194,
-    "judged": 48,
-    "accepted": 42,
+    "candidates": 1332,
+    "judged": 57,
+    "accepted": 48,
     "kept": 32
   },
   "reel": [
@@ -31,7 +31,7 @@
       "t": 1.38,
       "score": 1,
       "cosine": 0.452,
-      "reason": "Matches nightclub vibe, celebration, and euphoric mood",
+      "reason": "Matches song's nightclub, celebration, and euphoric mood",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -48,6 +48,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s6-5-cinema.webp",
+      "key": "lexicon/drums/s6-5-cinema.webp",
+      "word": "drums",
+      "line": "deeper In the latenight haze Drums fade out But we still keep swaying",
+      "t": 30.662,
+      "score": 0.95,
+      "cosine": 0.599,
+      "reason": "Matches nighttime mood, intimacy, and rhythm of the song",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
       "key": "lexicon/glow/s7-1-word-portrait.webp",
       "word": "glow",
@@ -55,7 +67,7 @@
       "t": 35.225,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Intimate, warm, and cinematic; aligns with nighttime connection and glow symbolism",
+      "reason": "Intimate, warm, and cinematic; aligns with nighttime escapism and shared connection.",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -91,7 +103,7 @@
       "t": 101.146,
       "score": 0.95,
       "cosine": 0.559,
-      "reason": "Matches nighttime escapism, sensory warmth, and urban intimacy",
+      "reason": "Euphoric, intimate, urban, nighttime, sensory warmth align perfectly.",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -115,7 +127,7 @@
       "t": 99.823,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "Urban nightlife, intimacy, and neon glow align with song's mood and themes",
+      "reason": "Urban nightlife, intimacy, and neon align with song's mood and themes",
       "recipe": "4-word-neon",
       "featured": true
     },
@@ -127,7 +139,7 @@
       "t": 47.996,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Matches nighttime intimacy, neon allure, and secretive connection",
+      "reason": "Matches nighttime intimacy, urban seduction, and whispered promises",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -139,7 +151,7 @@
       "t": 43.188,
       "score": 0.95,
       "cosine": 0.541,
-      "reason": "Captures nighttime intimacy, urban energy, and sensory warmth aligning with song's mood an",
+      "reason": "Captures nighttime intimacy and urban energy matching song's mood and themes",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -235,7 +247,7 @@
       "t": 0.395,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Intimate kiss, stage lights, scripted 'love' align with song's theme of intimacy amidst cr",
+      "reason": "Intimate, romantic, and aligned with nighttime escapism and euphoria",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -261,6 +273,30 @@
       "cosine": 0.481,
       "reason": "Captures dawn's electric hope in urban nightlife",
       "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smooth/s0-2-word-portrait.webp",
+      "key": "lexicon/smooth/s0-2-word-portrait.webp",
+      "word": "smooth",
+      "line": "with the party Party after midnight Smooth like the chords And the low",
+      "t": 4.122,
+      "score": 0.95,
+      "cosine": 0.408,
+      "reason": "Elegant, confident woman in a vintage setting aligns with nighttime escapism and sophistic",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s2-1-cinema.webp",
+      "key": "lexicon/drums/s2-1-cinema.webp",
+      "word": "drums",
+      "line": "deeper In the latenight haze Drums fade out But we still keep swaying",
+      "t": 30.662,
+      "score": 0.9,
+      "cosine": 0.581,
+      "reason": "Matches nighttime intimacy, rhythm, and cinematic mood",
+      "recipe": "1-cinema",
       "featured": true
     },
     {
@@ -295,7 +331,7 @@
       "t": 100.531,
       "score": 0.9,
       "cosine": 0.514,
-      "reason": "Matches urban intimacy, golden hour warmth, and city light theme",
+      "reason": "Matches urban romance, golden hour, and city light imagery",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -331,7 +367,7 @@
       "t": 43.188,
       "score": 0.9,
       "cosine": 0.474,
-      "reason": "Captures nighttime urban mood and mysterious atmosphere",
+      "reason": "Captures nighttime urban mood and mysterious serenity",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -343,7 +379,7 @@
       "t": 20.271,
       "score": 0.9,
       "cosine": 0.467,
-      "reason": "Ethereal crowd unity under moon aligns with party intimacy and collective motion",
+      "reason": "Ethereal crowd unity under moon matches party intimacy and collective motion",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -355,44 +391,8 @@
       "t": 20.271,
       "score": 0.9,
       "cosine": 0.447,
-      "reason": "Surreal wave and hearts match euphoric, emotional party theme",
+      "reason": "Surreal wave and hearts match party intimacy and euphoria",
       "recipe": "1-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s4-4-photo.webp",
-      "key": "lexicon/city/s4-4-photo.webp",
-      "word": "city",
-      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
-      "t": 100.531,
-      "score": 0.85,
-      "cosine": 0.547,
-      "reason": "Urban intimacy matches song's theme of connection in crowds",
-      "recipe": "4-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/promise/s1-6-word-neon.webp",
-      "key": "lexicon/promise/s1-6-word-neon.webp",
-      "word": "promise",
-      "line": "cuts I can hear your whisper Promise that youll stay Till the dawn gets crisper",
-      "t": 48.82,
-      "score": 0.85,
-      "cosine": 0.507,
-      "reason": "Urban neon aligns with nighttime theme; hopeful/melancholic fits unkept promise lyric",
-      "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dawn/s0-1-cinema.webp",
-      "key": "lexicon/dawn/s0-1-cinema.webp",
-      "word": "dawn",
-      "line": "whisper Promise that youll stay Till the dawn gets crisper Even when its quiet",
-      "t": 50.875,
-      "score": 0.85,
-      "cosine": 0.457,
-      "reason": "Matches dawn theme, serene mood, and intimate atmosphere",
-      "recipe": "1-cinema",
       "featured": true
     }
   ],
@@ -400,62 +400,64 @@
     "party": [
       0,
       1,
-      14
+      15
     ],
     "glow": [
       2,
+      4,
+      8
+    ],
+    "drums": [
       3,
-      7
+      23
     ],
     "heat": [
-      4,
-      11,
-      21
+      5,
+      12,
+      24
     ],
     "love": [
-      5,
-      18,
-      19
+      6,
+      19,
+      20
     ],
     "light": [
-      6,
-      12
+      7,
+      13
     ],
     "walk": [
-      8,
-      22
+      9,
+      25
     ],
     "whisper": [
-      9
+      10
     ],
     "night": [
-      10,
-      25,
-      26
-    ],
-    "lights": [
-      13,
-      15,
-      16
-    ],
-    "midnight": [
-      17
-    ],
-    "dawn": [
-      20,
-      31
-    ],
-    "city": [
-      23,
-      24,
+      11,
+      28,
       29
     ],
-    "wave": [
-      27,
-      28
+    "lights": [
+      14,
+      16,
+      17
     ],
-    "promise": [
-      30
+    "midnight": [
+      18
+    ],
+    "dawn": [
+      21
+    ],
+    "smooth": [
+      22
+    ],
+    "city": [
+      26,
+      27
+    ],
+    "wave": [
+      30,
+      31
     ]
   }
 }

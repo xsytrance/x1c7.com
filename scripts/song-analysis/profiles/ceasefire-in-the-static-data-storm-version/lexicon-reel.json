@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-08-06T06:29:57.159Z",
+  "generatedAt": "2026-08-07T13:47:17.789Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.733,
-      "reason": "Strong symbolism, mood matches, themes align",
+      "reason": "Strong symbolism, mood matches, visual ties to themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 83.244,
       "score": 0.95,
       "cosine": 0.666,
-      "reason": "matches melancholic mood, isolation, digital chaos symbolism",
+      "reason": "fits mood and themes of isolation and digital anxiety",
       "recipe": "2",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.615,
-      "reason": "fits mood and themes of isolation and digital chaos",
+      "reason": "Strongly aligns with mood and themes of isolation and digital chaos",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 62.555,
       "score": 0.95,
       "cosine": 0.592,
-      "reason": "melancholic, desolate, hope in chaos aligns with song's themes",
+      "reason": "Melancholic, desolate scene with symbolic elements matching song's themes",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.587,
-      "reason": "strongly aligns with digital overload and melancholic mood",
+      "reason": "Strong symbolism of static and mental fog aligns with song's themes",
       "recipe": "5-cinema",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 31.881,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "fits mood and themes of digital isolation and melancholy",
+      "reason": "fits digital isolation, melancholy, artificial light symbolism",
       "recipe": "4-neon-sign",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 59.234,
       "score": 0.95,
       "cosine": 0.576,
-      "reason": "matches song's melancholic mood and themes of silence and emptiness",
+      "reason": "Matches song's melancholic mood and themes of silence and emptiness",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 118.085,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits mood and themes of isolation and digital overload",
+      "reason": "fits digital isolation, melancholy, and surreal symbolism",
       "recipe": "1-photo",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 113.04,
       "score": 0.95,
       "cosine": 0.551,
-      "reason": "fits digital overload, ghostly names, abstract cosmic theme",
+      "reason": "fits digital overload, ghostly names, abstract cosmic imagery",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -307,20 +307,8 @@
       "t": 63.727,
       "score": 0.95,
       "cosine": 0.545,
-      "reason": "fits mood and themes of anxiety and digital overload",
+      "reason": "fits mood and themes of digital anxiety and surrealism",
       "recipe": "5-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s3-2-word-portrait.webp",
-      "key": "lexicon/ghosts/s3-2-word-portrait.webp",
-      "word": "ghosts",
-      "line": "down that road Ads in my dreams ghosts in my feed Every open window opens",
-      "t": 86.808,
-      "score": 0.95,
-      "cosine": 0.545,
-      "reason": "fits digital anxiety, spectral family ties to memory loss",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -343,7 +331,7 @@
       "t": 78.484,
       "score": 0.95,
       "cosine": 0.538,
-      "reason": "matches digital surrealism, anxiety, fragmented identity, and melancholic mood",
+      "reason": "fits digital surrealism, anxiety, fragmented identity",
       "recipe": "1-dream-collage",
       "featured": true
     },
@@ -394,13 +382,25 @@
       "reason": "fits mood and themes of decay and digital fragmentation",
       "recipe": "2-word-neon",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s3-5-film-still.webp",
+      "key": "lexicon/ghosts/s3-5-film-still.webp",
+      "word": "ghosts",
+      "line": "down that road Ads in my dreams ghosts in my feed Every open window opens",
+      "t": 86.808,
+      "score": 0.95,
+      "cosine": 0.518,
+      "reason": "fits digital ghosting, melancholic, eerie atmosphere",
+      "recipe": "5-film-still",
+      "featured": true
     }
   ],
   "byWord": {
     "code": [
       0,
       6,
-      27
+      26
     ],
     "ceasefire": [
       1,
@@ -436,14 +436,14 @@
     ],
     "silence": [
       13,
-      28
+      27
     ],
     "scroll": [
       15
     ],
     "storm": [
       16,
-      26
+      25
     ],
     "chaos": [
       17,
@@ -453,16 +453,16 @@
       21,
       23
     ],
-    "ghosts": [
-      25
-    ],
     "memory": [
-      29
+      28
     ],
     "wave": [
-      30
+      29
     ],
     "broken": [
+      30
+    ],
+    "ghosts": [
       31
     ]
   }

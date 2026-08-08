@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-08-06T06:43:33.804Z",
+  "generatedAt": "2026-08-07T14:02:01.621Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 481,
-    "judged": 15,
-    "accepted": 15,
-    "kept": 15
+    "candidates": 543,
+    "judged": 18,
+    "accepted": 18,
+    "kept": 18
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 49.377,
       "score": 1,
       "cosine": 0.661,
-      "reason": "Perfectly matches the song's mood and themes of introspection and isolation.",
+      "reason": "Perfectly aligns with the song's mood and themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 49.377,
       "score": 1,
       "cosine": 0.622,
-      "reason": "Perfectly aligns with the song's hypnotic, introspective mood and themes.",
+      "reason": "Perfectly aligns with the song's mood and themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -84,6 +84,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s6-3-word-portrait.webp",
+      "key": "lexicon/fade/s6-3-word-portrait.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.95,
+      "cosine": 0.529,
+      "reason": "nostalgic, transient, melancholic mood matches song's introspection and fading themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s2-2-photo.webp",
+      "key": "lexicon/fade/s2-2-photo.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.95,
+      "cosine": 0.515,
+      "reason": "matches introspective mood and theme of fading emotions",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s4-2-word-portrait.webp",
       "key": "lexicon/breath/s4-2-word-portrait.webp",
       "word": "breath",
@@ -93,6 +117,18 @@
       "cosine": 0.418,
       "reason": "matches hypnotic, introspective, serene mood and themes",
       "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s2-1-cinema.webp",
+      "key": "lexicon/fade/s2-1-cinema.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.9,
+      "cosine": 0.505,
+      "reason": "matches mood and themes of fading, solitude, and introspection",
+      "recipe": "1-cinema",
       "featured": true
     },
     {
@@ -127,7 +163,7 @@
       "t": 7.907,
       "score": 0.9,
       "cosine": 0.427,
-      "reason": "Urban isolation and neon symbolism align with the song's mood and themes",
+      "reason": "Urban isolation and neon glow match hypnotic, introspective mood",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -175,7 +211,7 @@
       "t": 214.378,
       "score": 0.85,
       "cosine": 0.575,
-      "reason": "fits introspective mood, aligns with theme of detachment and isolation",
+      "reason": "fits mood and theme with introspective, melancholic imagery",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -187,7 +223,7 @@
       "t": 7.907,
       "score": 0.7,
       "cosine": 0.445,
-      "reason": "Urban solitude and contemplative mood align with introspection and hypnotic atmosphere.",
+      "reason": "Urban solitude and contemplative mood align with song's introspection",
       "recipe": "1-word-portrait",
       "featured": true
     }
@@ -203,20 +239,25 @@
       4,
       5
     ],
-    "breath": [
+    "fade": [
       6,
-      9,
-      14
+      7,
+      9
+    ],
+    "breath": [
+      8,
+      12,
+      17
     ],
     "move": [
-      7,
-      8,
-      13
-    ],
-    "detuned": [
       10,
       11,
-      12
+      16
+    ],
+    "detuned": [
+      13,
+      14,
+      15
     ]
   }
 }

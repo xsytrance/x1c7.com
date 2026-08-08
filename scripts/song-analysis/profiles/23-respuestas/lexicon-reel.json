@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "23-respuestas",
-  "generatedAt": "2026-08-06T06:26:38.042Z",
+  "generatedAt": "2026-08-07T13:43:49.554Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 98.279,
       "score": 0.95,
       "cosine": 0.412,
-      "reason": "Powerful visual aligns with song's melancholic, intimate, and symbolic themes.",
+      "reason": "Powerful symbolism aligns with emotional closure and melancholy",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 136.023,
       "score": 0.95,
       "cosine": 0.369,
-      "reason": "Matches sensual, melancholic mood and themes of emotional closure and moral ambiguity",
+      "reason": "matches sensual, melancholic mood and themes of emotional closure and hidden desires",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 98.279,
       "score": 0.8,
       "cosine": 0.372,
-      "reason": "Emotional wound aligns with lyric, fits melancholic and vulnerable mood",
+      "reason": "Emotional wound and vulnerability align with song's themes of pain and closure.",
       "recipe": "6-photo",
       "featured": true
     }

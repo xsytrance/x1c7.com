@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "drink-drink-don-t-save-me",
-  "generatedAt": "2026-08-06T06:32:50.322Z",
+  "generatedAt": "2026-08-07T13:50:23.299Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1734,
+    "candidates": 1782,
     "judged": 64,
     "accepted": 61,
     "kept": 32
@@ -21,6 +21,18 @@
       "cosine": 0.532,
       "reason": "haunting, spectral imagery fits the song's themes of inner turmoil and isolation",
       "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s1-5-word-portrait.webp",
+      "key": "lexicon/smoke/s1-5-word-portrait.webp",
+      "word": "smoke",
+      "line": "to my face City bleeding through the window Smoke caught in the bass I dont need another promise",
+      "t": 74.083,
+      "score": 0.95,
+      "cosine": 0.52,
+      "reason": "Smoke fits the mood and themes of self-destruction and introspection",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -67,7 +79,7 @@
       "t": 70.67,
       "score": 0.95,
       "cosine": 0.491,
-      "reason": "Strong symbolism of glass as barrier and addiction, fits mood and themes",
+      "reason": "fits mood and themes of addiction, isolation, and urban melancholy",
       "recipe": "4-cinema",
       "featured": true
     },
@@ -79,7 +91,7 @@
       "t": 69.597,
       "score": 0.95,
       "cosine": 0.487,
-      "reason": "evokes loneliness, despair, and alcoholism central to the song",
+      "reason": "Captures isolation, despair, and alcohol's role in emotional numbness",
       "recipe": "1-cinema",
       "featured": true
     },
@@ -103,7 +115,7 @@
       "t": 69.597,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Strong symbolism of addiction, chaos, and self-destruction",
+      "reason": "Strong symbolism of addiction, chaos, and self-destruction aligns with song's themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -115,7 +127,7 @@
       "t": 69.945,
       "score": 0.95,
       "cosine": 0.474,
-      "reason": "fits mood and themes of isolation and addiction",
+      "reason": "Matches isolation, addiction, and melancholy of the song",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -175,7 +187,7 @@
       "t": 69.865,
       "score": 0.95,
       "cosine": 0.461,
-      "reason": "Strong symbolism aligns with themes of sorrow, isolation, and escapism",
+      "reason": "Strong symbolism and mood match the song's themes of isolation and emotional numbness.",
       "recipe": "4-photo",
       "featured": true
     },
@@ -247,7 +259,7 @@
       "t": 70.235,
       "score": 0.95,
       "cosine": 0.436,
-      "reason": "fits haunting, ghostly, melancholic themes",
+      "reason": "fits haunting, ghostly, melancholic mood and themes",
       "recipe": "6-manga-line",
       "featured": true
     },
@@ -319,20 +331,8 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.407,
-      "reason": "Emotionally raw and vulnerable, fits the song's themes of inner turmoil and self-destructi",
+      "reason": "raw emotion, vulnerability, and intensity match song's themes",
       "recipe": "2-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s10-4-cinema.webp",
-      "key": "lexicon/dark/s10-4-cinema.webp",
-      "word": "dark",
-      "line": "save me Dont save me now Close your tab Fall through the ceiling Drink Drink Drink Drink Drink Drink Drink Drink Drink drink drink drink I dont wanna feel tonight Drink drink drink drink Put my sorrow in the light Drink drink drink drink Bottle glowing by my bed Drink drink drink drink Pain keeps pounding in my head Drink Drink Drink Yeah Drink Drink Dont save me I been out with the ghosts again Dark glass to my face City bleeding through",
-      "t": 70.426,
-      "score": 0.95,
-      "cosine": 0.405,
-      "reason": "fits isolation, fragility, dim hope in a hauntingly seductive mood",
-      "recipe": "4-cinema",
       "featured": true
     },
     {
@@ -355,20 +355,8 @@
       "t": null,
       "score": 0.9,
       "cosine": 0.543,
-      "reason": "haunting, spectral imagery fits the song's themes of inner turmoil and isolation",
+      "reason": "haunting, spectral imagery fits emotional numbness and isolation",
       "recipe": "2-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s1-5-word-portrait.webp",
-      "key": "lexicon/smoke/s1-5-word-portrait.webp",
-      "word": "smoke",
-      "line": "to my face City bleeding through the window Smoke caught in the bass I dont need another promise",
-      "t": 74.083,
-      "score": 0.9,
-      "cosine": 0.52,
-      "reason": "Smoke fits the mood and themes of self-destruction and introspection",
-      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -394,6 +382,18 @@
       "reason": "Symbolizes journey and transition amid melancholy and isolation",
       "recipe": "5-word-portrait",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/train/s4-4-cinema.webp",
+      "key": "lexicon/train/s4-4-cinema.webp",
+      "word": "train",
+      "line": "train",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "Symbolizes journey, isolation, and transient moments in a haunting atmosphere",
+      "recipe": "4-cinema",
+      "featured": true
     }
   ],
   "byWord": {
@@ -404,62 +404,62 @@
     ],
     "smoke": [
       1,
-      29,
-      30
+      2,
+      29
     ],
     "walk": [
-      2,
-      24
+      3,
+      25
     ],
     "train": [
-      3,
+      4,
+      30,
       31
     ],
     "glass": [
-      4,
-      12
-    ],
-    "drink": [
       5,
-      6,
-      7
-    ],
-    "bottle": [
-      8,
-      9,
-      15
-    ],
-    "window": [
-      10,
-      18
-    ],
-    "sorrow": [
-      11,
       13
     ],
-    "storm": [
-      14,
-      17
+    "drink": [
+      6,
+      7,
+      8
     ],
-    "night": [
+    "bottle": [
+      9,
+      10,
       16
     ],
+    "window": [
+      11,
+      19
+    ],
+    "sorrow": [
+      12,
+      14
+    ],
+    "storm": [
+      15,
+      18
+    ],
+    "night": [
+      17
+    ],
     "ghosts": [
-      19,
-      22
+      20,
+      23
     ],
     "heart": [
-      20
-    ],
-    "soul": [
       21
     ],
+    "soul": [
+      22
+    ],
     "dark": [
-      23,
-      26
+      24
     ],
     "voice": [
-      25
+      26
     ]
   }
 }

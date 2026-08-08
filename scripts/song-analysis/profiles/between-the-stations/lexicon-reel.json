@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-08-06T06:27:28.128Z",
+  "generatedAt": "2026-08-07T13:44:40.304Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -31,7 +31,7 @@
       "t": 7.802,
       "score": 0.95,
       "cosine": 0.611,
-      "reason": "Urban alley, neon lights, transitional space align with subway journey and cathartic relea",
+      "reason": "Image aligns with urban exhaustion, sensory overload, and transitional spaces",
       "recipe": "2-film-still",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 112.2,
       "score": 0.92,
       "cosine": 0.579,
-      "reason": "Neon sign captures urban mystery and pursuit in nighttime cityscape",
+      "reason": "Neon sign captures urban mystery and pursuit in nighttime city",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 7.802,
       "score": 0.92,
       "cosine": 0.578,
-      "reason": "Urban nighttime, light, escapism, sensory warmth align with song's themes",
+      "reason": "Urban nighttime, light, escapism, warmth, and connection align with song's themes",
       "recipe": "3-cinema",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 103.5,
       "score": 0.92,
       "cosine": 0.55,
-      "reason": "Captures urban isolation and transience aligning with song's themes",
+      "reason": "Captures urban isolation, transience, and emotional vulnerability in a gritty city setting",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 95.32,
       "score": 0.92,
       "cosine": 0.549,
-      "reason": "fits urban mood, steam as metaphor, cinematic and moody",
+      "reason": "Steam as metaphor fits urban mood and imagery",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 6.583,
       "score": 0.92,
       "cosine": 0.543,
-      "reason": "fits urban decay, neon, watchfulness, and mood",
+      "reason": "fits urban decay, neon lighting, and watchfulness theme",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 9.695,
       "score": 0.92,
       "cosine": 0.522,
-      "reason": "Urban decay, glowing windows, resilience fit the song's gritty, cathartic subway metaphor",
+      "reason": "Urban decay, glowing windows, resilience align with song's themes and mood",
       "recipe": "3-anime",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 34.168,
       "score": 0.92,
       "cosine": 0.511,
-      "reason": "Neon-lit club aligns with urban nightlife and cathartic energy of the song",
+      "reason": "Neon-lit club aligns with urban nightlife and rhythm's energy in the song",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 92.18,
       "score": 0.92,
       "cosine": 0.482,
-      "reason": "fits urban fantasy, nighttime escapism, and neon-lit surrealism",
+      "reason": "fits urban fantasy and nighttime escapism themes",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 97.48,
       "score": 0.9,
       "cosine": 0.573,
-      "reason": "Captures urban melancholy and rain's symbolic role in the song's narrative",
+      "reason": "Captures urban melancholy and mood of the song",
       "recipe": "1-word-portrait",
       "featured": true
     }

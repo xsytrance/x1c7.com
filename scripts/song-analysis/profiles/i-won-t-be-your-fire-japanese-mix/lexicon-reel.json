@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-08-06T06:36:24.012Z",
+  "generatedAt": "2026-08-07T13:54:10.623Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -91,7 +91,7 @@
       "t": 26.088,
       "score": 0.9,
       "cosine": 0.472,
-      "reason": "Symbolizes fragility, isolation, and emotional barriers",
+      "reason": "Symbolizes fragility, isolation, and emotional barriers aligning with song's themes",
       "recipe": "1-analog",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 47.903,
       "score": 0.9,
       "cosine": 0.456,
-      "reason": "Powerful storm imagery aligns with emotional intensity and boundaries",
+      "reason": "Powerful storm imagery matches song's intense emotional themes and resolute mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 47.903,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "Powerful storm imagery matches song's intense emotional themes and resolute mood.",
+      "reason": "Storm imagery matches emotional intensity and themes of turmoil and boundaries",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 29.118,
       "score": 0.9,
       "cosine": 0.43,
-      "reason": "matches melancholic mood and introspective theme",
+      "reason": "Matches melancholic mood and introspective theme",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 259.832,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Captures melancholy, boundaries, and digital chaos",
+      "reason": "Captures melancholy, digital chaos, and self-boundaries",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 36.711,
       "score": 0.85,
       "cosine": 0.497,
-      "reason": "Symbolism aligns with fire as defiance and resilience, but Cairo setting feels culturally ",
+      "reason": "Symbolizes defiance and resilience aligns with self-preservation and resolute mood",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": null,
       "score": 0.85,
       "cosine": 0.496,
-      "reason": "Melancholic and reflective, aligns with song's mood and themes of emotional distance.",
+      "reason": "Melancholic and reflective, aligns with song's mood and themes of emotional distance",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 259.832,
       "score": 0.8,
       "cosine": 0.368,
-      "reason": "Captures digital isolation and hollow connections aligning with toxic dependency theme",
+      "reason": "Matches melancholic mood and themes of hollow, toxic connections",
       "recipe": "6-neon-sign",
       "featured": true
     }

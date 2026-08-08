@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-08-06T06:26:25.277Z",
+  "generatedAt": "2026-08-07T13:43:34.246Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -19,7 +19,7 @@
       "t": 52.512,
       "score": 0.95,
       "cosine": 0.519,
-      "reason": "Urban rebirth, neon symbolism, triumphant renewal align with song's themes",
+      "reason": "Urban rebirth, transformation, and triumph align with the song's themes of renewal and dis",
       "recipe": "5-word-neon",
       "featured": true
     },
@@ -31,7 +31,7 @@
       "t": 60.128,
       "score": 0.95,
       "cosine": 0.503,
-      "reason": "Symbolizes growth, resilience, and renewal in an urban setting",
+      "reason": "Symbolizes growth, resilience, and renewal through art and light",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 15.4,
       "score": 0.95,
       "cosine": 0.466,
-      "reason": "Strong symbolism of resilience, solitude, and renewal aligns with the song's triumphant di",
+      "reason": "Strong symbolism of resilience, grit, and renewal aligns with song's triumphant discipline",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.455,
-      "reason": "Symbolizes transformation and determination in a gritty, industrial setting",
+      "reason": "Symbolizes transformation and determination in a gritty setting",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.452,
-      "reason": "Urban neon aligns with borough pride and triumphant discipline",
+      "reason": "Urban neon aligns with borough pride and self-determination themes",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -151,7 +151,7 @@
       "t": 108.854,
       "score": 0.95,
       "cosine": 0.435,
-      "reason": "Symbolism aligns with resilience, triumph, and borough pride.",
+      "reason": "Symbolism aligns with resilience, triumph, and borough pride",
       "recipe": "6-neon-night",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 50.457,
       "score": 0.95,
       "cosine": 0.431,
-      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes",
+      "reason": "Symbolizes transformation, resilience, and urban rebirth aligning with song's themes.",
       "recipe": "2-anime",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 52.048,
       "score": 0.95,
       "cosine": 0.422,
-      "reason": "Symbolizes transformation, focus, and value aligning with song's themes",
+      "reason": "Symbolizes transformation, focus, and value align with song's themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 98.79,
       "score": 0.9,
       "cosine": 0.509,
-      "reason": "Urban grit, neon symbolism, and night resilience align with song's themes.",
+      "reason": "Urban resilience, neon lighting, and triumphant renewal align with song's themes.",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 52.048,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Urban renewal, neon symbolism, and void transformation align with song's themes",
+      "reason": "Urban renewal, discipline, and transformation align with song's themes",
       "recipe": "3-word-neon",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 4.876,
       "score": 0.9,
       "cosine": 0.449,
-      "reason": "Motivational, disciplined, and triumphant imagery aligns with song's themes",
+      "reason": "Motivational, disciplined, triumphant vibe aligns with song's themes",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -321,18 +321,6 @@
       "cosine": 0.44,
       "reason": "Symbolism of blood as resilience, fists as solidarity, urban grit aligns with song's theme",
       "recipe": "3-neon-night",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s6-6-poster.webp",
-      "key": "lexicon/dreams/s6-6-poster.webp",
-      "word": "dreams",
-      "line": "lose the game Side trends forever, that's family time Dreams look impossible, today you're robbed From",
-      "t": 154.935,
-      "score": 0.9,
-      "cosine": 0.434,
-      "reason": "Energetic, optimistic design aligns with triumphant discipline and reinvention themes.",
-      "recipe": "6-poster",
       "featured": true
     },
     {
@@ -391,8 +379,20 @@
       "t": 153.356,
       "score": 0.85,
       "cosine": 0.454,
-      "reason": "Symbolizes enduring beauty and perpetual time, aligns with themes of resilience and triump",
+      "reason": "Symbolizes enduring beauty and perpetual time aligns with triumph and resilience",
       "recipe": "3-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s6-4-word-portrait.webp",
+      "key": "lexicon/fast/s6-4-word-portrait.webp",
+      "word": "fast",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "score": 0.85,
+      "cosine": 0.441,
+      "reason": "Fits triumphant urgency, futuristic energy aligns with renewal and discipline",
+      "recipe": "4-word-portrait",
       "featured": true
     }
   ],
@@ -411,7 +411,8 @@
     ],
     "fast": [
       3,
-      8
+      8,
+      31
     ],
     "walk": [
       4,
@@ -425,7 +426,7 @@
     "move": [
       9,
       10,
-      28
+      27
     ],
     "veneno": [
       12
@@ -437,7 +438,7 @@
     ],
     "different": [
       15,
-      29
+      28
     ],
     "night": [
       16
@@ -448,20 +449,17 @@
     "sun": [
       22,
       23,
-      30
+      29
     ],
     "save": [
       24,
-      27
+      26
     ],
     "blood": [
       25
     ],
-    "dreams": [
-      26
-    ],
     "forever": [
-      31
+      30
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-08-06T06:37:15.215Z",
+  "generatedAt": "2026-08-07T13:55:04.743Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2647,
+    "candidates": 2706,
     "judged": 64,
     "accepted": 64,
     "kept": 32
@@ -45,6 +45,18 @@
       "cosine": 0.495,
       "reason": "Powerful metaphor for emotional pain and introspection",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s8-1-film-still.webp",
+      "key": "lexicon/phone/s8-1-film-still.webp",
+      "word": "phone",
+      "line": "leave me alone with my head like this I keep your name in my phone like a bruise I can press black hoodie dead screen",
+      "t": 134.455,
+      "score": 0.95,
+      "cosine": 0.487,
+      "reason": "Powerfully conveys heartbreak, digital disconnection, and emotional pain",
+      "recipe": "1-film-still",
       "featured": true
     },
     {
@@ -127,7 +139,7 @@
       "t": 223.62,
       "score": 0.95,
       "cosine": 0.472,
-      "reason": "Symbolizes emotional confinement and longing for freedom, aligns with song's themes of res",
+      "reason": "Symbolizes emotional confinement and longing for freedom, aligns with song's themes",
       "recipe": "6-film-still",
       "featured": true
     },
@@ -151,7 +163,7 @@
       "t": 153.808,
       "score": 0.95,
       "cosine": 0.465,
-      "reason": "evokes melancholy and desolation matching song's mood and themes",
+      "reason": "evokes melancholy and desolation fitting the song's mood and themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +199,7 @@
       "t": 67.46,
       "score": 0.95,
       "cosine": 0.456,
-      "reason": "Matches the song's mood and themes of inner turmoil and emotional restraint",
+      "reason": "Captures inner turmoil and fragility in a cinematic, melancholic setting",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -235,7 +247,7 @@
       "t": 7.175,
       "score": 0.95,
       "cosine": 0.438,
-      "reason": "Powerful symbolism of emotional turmoil and resilience fits the song's themes and mood",
+      "reason": "Powerful imagery matches emotional turmoil and resilience in the song",
       "recipe": "2-anime",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 78.147,
       "score": 0.9,
       "cosine": 0.482,
-      "reason": "Cinematic, melancholic, and symbolic of toxic nightlife and emotional intensity",
+      "reason": "Cinematic, melancholic, symbolic of toxic nightlife and emotional intensity",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -382,90 +394,80 @@
       "reason": "Symbolizes pain and hope, fits emotional vulnerability and resilience",
       "recipe": "5-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s4-6-word-portrait.webp",
-      "key": "lexicon/lights/s4-6-word-portrait.webp",
-      "word": "lights",
-      "line": "answer I become what you cant heal I know the hallway lights I know the bathroom floor I know the kind of love that",
-      "t": 78.147,
-      "score": 0.9,
-      "cosine": 0.468,
-      "reason": "Symbolism aligns with emotional vulnerability and hope in a toxic relationship",
-      "recipe": "6-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
     "dark": [
       0,
-      11
+      12
     ],
     "cut": [
       1
     ],
     "smoke": [
       2,
-      5
-    ],
-    "fire": [
-      3,
-      15,
-      20
-    ],
-    "storm": [
-      4,
-      18
-    ],
-    "hate": [
       6
     ],
-    "escape": [
+    "phone": [
+      3
+    ],
+    "fire": [
+      4,
+      16,
+      21
+    ],
+    "storm": [
+      5,
+      19
+    ],
+    "hate": [
       7
     ],
+    "escape": [
+      8
+    ],
     "break": [
-      8,
-      23
-    ],
-    "cage": [
       9,
-      21,
-      25
-    ],
-    "ghosts": [
-      10
-    ],
-    "cold": [
-      12,
-      16
-    ],
-    "heart": [
-      13
-    ],
-    "breaking": [
-      14
-    ],
-    "bruise": [
-      17,
-      30
-    ],
-    "lights": [
-      19,
-      28,
-      31
-    ],
-    "ghost": [
-      22
-    ],
-    "burn": [
       24
     ],
-    "moon": [
-      26,
+    "cage": [
+      10,
+      22,
+      26
+    ],
+    "ghosts": [
+      11
+    ],
+    "cold": [
+      13,
+      17
+    ],
+    "heart": [
+      14
+    ],
+    "breaking": [
+      15
+    ],
+    "bruise": [
+      18,
+      31
+    ],
+    "lights": [
+      20,
       29
     ],
+    "ghost": [
+      23
+    ],
+    "burn": [
+      25
+    ],
+    "moon": [
+      27,
+      30
+    ],
     "rain": [
-      27
+      28
     ]
   }
 }

@@ -1,38 +1,26 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-08-06T06:35:21.541Z",
+  "generatedAt": "2026-08-07T13:53:02.785Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2548,
+    "candidates": 2631,
     "judged": 64,
-    "accepted": 51,
+    "accepted": 52,
     "kept": 32
   },
   "reel": [
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s1-5-photo.webp",
-      "key": "lexicon/sweat/s1-5-photo.webp",
-      "word": "sweat",
-      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
-      "t": 54.672,
-      "score": 1,
-      "cosine": 0.58,
-      "reason": "Perfectly captures sweat's role in endurance and grit",
-      "recipe": "5-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
-      "key": "lexicon/pressure/s0-1.webp",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-5-word-portrait.webp",
+      "key": "lexicon/pressure/s0-5-word-portrait.webp",
       "word": "pressure",
       "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
       "t": 58.364,
       "score": 1,
-      "cosine": 0.528,
-      "reason": "Image perfectly embodies external pressure and internal struggle in a gritty gym setting.",
-      "recipe": "1",
+      "cosine": 0.546,
+      "reason": "perfectly aligns with themes of pressure and grit in a gym setting",
+      "recipe": "5-word-portrait",
       "featured": true
     },
     {
@@ -43,7 +31,7 @@
       "t": 58.364,
       "score": 1,
       "cosine": 0.521,
-      "reason": "Image embodies relentless grit and internal struggle through weightlifting",
+      "reason": "image embodies relentless grit and internal struggle through weight and sweat",
       "recipe": "2",
       "featured": true
     },
@@ -60,6 +48,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s1-5-photo.webp",
+      "key": "lexicon/sweat/s1-5-photo.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.98,
+      "cosine": 0.58,
+      "reason": "Authentic portrayal of physical exertion and vulnerability aligns with the song's relentle",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s8-2-photo.webp",
       "key": "lexicon/move/s8-2-photo.webp",
       "word": "move",
@@ -67,7 +67,7 @@
       "t": 13.944,
       "score": 0.95,
       "cosine": 0.638,
-      "reason": "Gritty gym setting matches song's relentless determination and internal struggle",
+      "reason": "Gritty gym setting matches song's relentless determination and solitary struggle",
       "recipe": "2-photo",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 54.672,
       "score": 0.95,
       "cosine": 0.605,
-      "reason": "authentic portrayal of physical exertion and resilience",
+      "reason": "Authentic portrayal of physical exertion and resilience aligns with song's relentless grit",
       "recipe": "4-photo",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 142.385,
       "score": 0.95,
       "cosine": 0.572,
-      "reason": "Powerful imagery aligns with grit, determination, and physical transformation",
+      "reason": "Powerful imagery aligns with grit, determination, and gym setting",
       "recipe": "5-photo",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 54.672,
       "score": 0.95,
       "cosine": 0.562,
-      "reason": "Authentic portrayal of physical exertion and vulnerability aligns with the song's relentle",
+      "reason": "captures sweat's intensity and vulnerability in a gritty, physical struggle",
       "recipe": "2-photo",
       "featured": true
     },
@@ -153,6 +153,30 @@
       "cosine": 0.537,
       "reason": "authentic portrayal of physical and emotional struggle in the gym",
       "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s0-1.webp",
+      "key": "lexicon/pressure/s0-1.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.95,
+      "cosine": 0.528,
+      "reason": "Powerful imagery aligns with internal struggle and external pressure themes",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
+      "key": "lexicon/fire/s15-1-photo.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.95,
+      "cosine": 0.525,
+      "reason": "Symbolism aligns with fire as inner drive and grit",
+      "recipe": "1-photo",
       "featured": true
     },
     {
@@ -187,7 +211,7 @@
       "t": 22.535,
       "score": 0.95,
       "cosine": 0.512,
-      "reason": "Cold aligns with grit, isolation, and internal struggle in a gym setting",
+      "reason": "Cold gym atmosphere matches relentless grit and internal struggle",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -204,18 +228,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
-      "key": "lexicon/summer/s8-2-photo.webp",
-      "word": "summer",
-      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
-      "t": 189.939,
-      "score": 0.95,
-      "cosine": 0.497,
-      "reason": "fits gritty determination, sweat as proof, summer as motivation",
-      "recipe": "2-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s1-5-photo.webp",
       "key": "lexicon/body/s1-5-photo.webp",
       "word": "body",
@@ -223,7 +235,7 @@
       "t": 192.807,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "fits gritty gym struggle, sweat as proof of effort",
+      "reason": "matches gritty gym struggle and sweat as proof of effort",
       "recipe": "5-photo",
       "featured": true
     },
@@ -247,7 +259,7 @@
       "t": 206.46,
       "score": 0.95,
       "cosine": 0.48,
-      "reason": "Matches gritty gym struggle, physical risk, and mental determination",
+      "reason": "Aligns with grit, physical exertion, and internal struggle",
       "recipe": "4-photo",
       "featured": true
     },
@@ -307,7 +319,7 @@
       "t": 52.57,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "Powerful imagery matches the song's relentless grit and themes of endurance and defiance.",
+      "reason": "Powerful imagery matches the song's relentless grit and themes of struggle and determinati",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -336,18 +348,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s15-1-photo.webp",
-      "key": "lexicon/fire/s15-1-photo.webp",
-      "word": "fire",
-      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
-      "t": 142.385,
-      "score": 0.9,
-      "cosine": 0.525,
-      "reason": "Symbolizes inner drive and discipline through fire and music",
-      "recipe": "1-photo",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-4-film-still.webp",
       "key": "lexicon/walk/s3-4-film-still.webp",
       "word": "walk",
@@ -357,6 +357,18 @@
       "cosine": 0.519,
       "reason": "Matches solitary determination and internal struggle in a gritty setting",
       "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s8-2-photo.webp",
+      "key": "lexicon/summer/s8-2-photo.webp",
+      "word": "summer",
+      "line": "dont stop I dont quit right now I picture summer but I dont daydream I put that beach body",
+      "t": 189.939,
+      "score": 0.9,
+      "cosine": 0.497,
+      "reason": "Aligns with grit, physical struggle, and summer as a symbol of effort and transformation",
+      "recipe": "2-photo",
       "featured": true
     },
     {
@@ -382,88 +394,74 @@
       "reason": "Gritty, tense atmosphere matches song's relentless determination and internal struggle",
       "recipe": "4-word-portrait",
       "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s3-5-word-portrait.webp",
-      "key": "lexicon/cut/s3-5-word-portrait.webp",
-      "word": "cut",
-      "line": "skip too much and the old me grows So I cut that off before it gets close I know that voice",
-      "t": 218.326,
-      "score": 0.9,
-      "cosine": 0.465,
-      "reason": "Symbolizes cutting self-doubt, solitary struggle, cinematic grit",
-      "recipe": "5-word-portrait",
-      "featured": true
     }
   ],
   "byWord": {
-    "sweat": [
-      0,
-      7,
-      9
-    ],
     "pressure": [
+      0,
       1,
-      2
+      12
     ],
     "drip": [
-      3
+      2
+    ],
+    "sweat": [
+      3,
+      7,
+      9
     ],
     "move": [
       4,
       6,
-      21
+      22
     ],
     "night": [
       5
     ],
     "fire": [
       8,
-      15,
-      27
+      13,
+      17
     ],
     "cold": [
       10,
-      14
+      16
     ],
     "hurt": [
       11
     ],
     "body": [
-      12,
-      17
+      14,
+      18
     ],
     "walk": [
-      13,
-      22,
+      15,
+      23,
       28
     ],
-    "summer": [
-      16
-    ],
     "dangerous": [
-      18,
       19,
-      30
+      20,
+      31
     ],
     "crown": [
-      20
+      21
     ],
     "breath": [
-      23
+      24
     ],
     "burn": [
-      24,
-      29
+      25,
+      30
     ],
     "voice": [
-      25
-    ],
-    "hands": [
       26
     ],
-    "cut": [
-      31
+    "hands": [
+      27
+    ],
+    "summer": [
+      29
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-08-06T06:33:42.317Z",
+  "generatedAt": "2026-08-07T13:51:18.398Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1773,
+    "candidates": 1854,
     "judged": 64,
     "accepted": 57,
     "kept": 32
@@ -31,7 +31,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.55,
-      "reason": "Matches playful intimacy, golden light, urban setting, and connection",
+      "reason": "Matches glow, intimacy, and golden light with song's playful, romantic mood",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.532,
-      "reason": "Matches neon, speed, retro-futurism, and playful energy",
+      "reason": "Matches neon, speed, retro-futurism, and playful energy of the song",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Urban neon aligns with retro-futurism and speed themes",
+      "reason": "Urban neon aligns with retro-futurism and speed themes; mood matches energy and urgency",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -91,7 +91,7 @@
       "t": 22.918,
       "score": 0.95,
       "cosine": 0.525,
-      "reason": "Matches neon, speed, nostalgia, and playful energy of the song",
+      "reason": "Matches neon, speed, nostalgia, and playful romance",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -115,7 +115,7 @@
       "t": 15.569,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Matches speed, urban energy, and playful romance with neon and motion",
+      "reason": "Matches speed, urban energy, and romantic pursuit themes",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.493,
-      "reason": "Matches playful romance, neon lights fit retro-futurism and summer vibe",
+      "reason": "Matches neon, intimacy, and energy of the song's vibe",
       "recipe": "2-concept-art",
       "featured": true
     },
@@ -163,7 +163,7 @@
       "t": 33.867,
       "score": 0.95,
       "cosine": 0.487,
-      "reason": "Urban neon matches song's energy and motion, aligns with city lights lyric",
+      "reason": "Urban neon fits the fast, energetic, nostalgic mood and themes",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 101.715,
       "score": 0.95,
       "cosine": 0.481,
-      "reason": "Matches playful romance, intimacy, and vibrant energy of the song",
+      "reason": "Matches romantic energy, nightlife, and glowing atmosphere of the song",
       "recipe": "1-film-still",
       "featured": true
     },
@@ -211,7 +211,7 @@
       "t": 34.538,
       "score": 0.95,
       "cosine": 0.452,
-      "reason": "Matches city theme, energy, and celebratory mood of the song",
+      "reason": "Matches energetic city vibe and celebratory mood of the song",
       "recipe": "1-poster",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 40.04,
       "score": 0.9,
       "cosine": 0.564,
-      "reason": "Matches summer, optimism, and aspirational energy of the song",
+      "reason": "Matches summer, optimism, and aspiration in the song's playful, nostalgic energy.",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -336,6 +336,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shine/s6-5-word-neon.webp",
+      "key": "lexicon/shine/s6-5-word-neon.webp",
+      "word": "shine",
+      "line": "block to the boardwalk lights We shine together, everything’s right Bounce on springs,",
+      "t": 78.029,
+      "score": 0.9,
+      "cosine": 0.472,
+      "reason": "Urban neon aligns with retro-futurism and summer nightlife energy",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/level/s4-1-word-portrait.webp",
       "key": "lexicon/level/s4-1-word-portrait.webp",
       "word": "level",
@@ -345,6 +357,18 @@
       "cosine": 0.47,
       "reason": "Pixelated heart and confetti align with playful, nostalgic, and celebratory mood. Mountain",
       "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shine/s1-4-word-neon.webp",
+      "key": "lexicon/shine/s1-4-word-neon.webp",
+      "word": "shine",
+      "line": "block to the boardwalk lights We shine together, everything’s right Bounce on springs,",
+      "t": 78.029,
+      "score": 0.9,
+      "cosine": 0.466,
+      "reason": "Matches neon glow, urban vibe, and nostalgic optimism of the song",
+      "recipe": "4-word-neon",
       "featured": true
     },
     {
@@ -367,32 +391,8 @@
       "t": 34.538,
       "score": 0.9,
       "cosine": 0.459,
-      "reason": "Matches urban romance, city lights, and intimate connection in a nostalgic, energetic sett",
+      "reason": "Matches urban romance, city lights, and intimate connection in a fast-paced setting",
       "recipe": "4-photo",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s6-2-word-portrait.webp",
-      "key": "lexicon/city/s6-2-word-portrait.webp",
-      "word": "city",
-      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
-      "t": 34.538,
-      "score": 0.9,
-      "cosine": 0.448,
-      "reason": "Celebratory urban scene matches song's energetic, playful mood and city theme",
-      "recipe": "2-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s9-4-stickers.webp",
-      "key": "lexicon/love/s9-4-stickers.webp",
-      "word": "love",
-      "line": "You’re my boost, I’m your invincible Golden love, yeah, we collect it Too fast, too smooth,",
-      "t": 87.284,
-      "score": 0.9,
-      "cosine": 0.445,
-      "reason": "Playful, joyful, and celebratory image fits the song's upbeat and romantic tone.",
-      "recipe": "4-stickers",
       "featured": true
     }
   ],
@@ -418,11 +418,11 @@
     ],
     "level": [
       9,
-      27
+      28
     ],
     "rise": [
       11,
-      28
+      30
     ],
     "running": [
       12,
@@ -436,13 +436,11 @@
     ],
     "city": [
       16,
-      29,
-      30
+      31
     ],
     "love": [
       17,
-      18,
-      31
+      18
     ],
     "night": [
       19
@@ -460,6 +458,10 @@
     ],
     "run": [
       26
+    ],
+    "shine": [
+      27,
+      29
     ]
   }
 }

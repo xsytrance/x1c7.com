@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-08-06T06:39:32.804Z",
+  "generatedAt": "2026-08-07T13:57:36.150Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2102,
+    "candidates": 2158,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -91,7 +91,7 @@
       "t": 158.743,
       "score": 0.95,
       "cosine": 0.59,
-      "reason": "fits chaotic, toxic, addicted mood with flickering lights",
+      "reason": "fits chaotic, toxic, addictive mood with flickering lights",
       "recipe": "2-anime",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 24.972,
       "score": 0.95,
       "cosine": 0.556,
-      "reason": "fits toxic, chaotic nightlife and addiction themes",
+      "reason": "fits toxic, chaotic nightlife and obsession themes",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -216,6 +216,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s0-4-dream-collage.webp",
+      "key": "lexicon/drink/s0-4-dream-collage.webp",
+      "word": "drink",
+      "line": "you baby One more drink and I might call you One",
+      "t": 21.709,
+      "score": 0.95,
+      "cosine": 0.486,
+      "reason": "chaotic storm, addiction symbols, obsessive elements align with song",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s7-6-word-neon.webp",
       "key": "lexicon/burn/s7-6-word-neon.webp",
       "word": "burn",
@@ -225,18 +237,6 @@
       "cosine": 0.485,
       "reason": "fits toxic, chaotic, neon-lit urban obsession",
       "recipe": "6-word-neon",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s9-2-word-portrait.webp",
-      "key": "lexicon/dark/s9-2-word-portrait.webp",
-      "word": "dark",
-      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
-      "t": 166.174,
-      "score": 0.95,
-      "cosine": 0.48,
-      "reason": "matches toxic mood, decay, and dramatic lighting",
-      "recipe": "2-word-portrait",
       "featured": true
     },
     {
@@ -271,7 +271,7 @@
       "t": 107.381,
       "score": 0.95,
       "cosine": 0.474,
-      "reason": "fits toxic chaos, neon lights, dystopia match song's mood and themes",
+      "reason": "fits toxic chaos, neon fits nightlife, glitch art mirrors obsession",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -307,7 +307,7 @@
       "t": 104.246,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "matches toxic emotion, chaos, and melancholic nightlife",
+      "reason": "matches toxic love, emotional pain, and chaotic nightlife",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -319,8 +319,20 @@
       "t": 104.571,
       "score": 0.95,
       "cosine": 0.457,
-      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty despair",
+      "reason": "fits toxic obsession, urban chaos, neon nightlife, gritty emotion",
       "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waiting/s7-6-word-neon.webp",
+      "key": "lexicon/waiting/s7-6-word-neon.webp",
+      "word": "waiting",
+      "line": "Dont call it over if were both waiting You got me going crazy You got me",
+      "t": 180.953,
+      "score": 0.95,
+      "cosine": 0.455,
+      "reason": "fits toxic longing and urban isolation in a chaotic nightlife setting",
+      "recipe": "6-word-neon",
       "featured": true
     },
     {
@@ -331,7 +343,7 @@
       "t": 120.523,
       "score": 0.95,
       "cosine": 0.453,
-      "reason": "Powerful imagery matches toxic obsession and chaos",
+      "reason": "fits toxic chaos, intense emotion, symbolic fire",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -355,7 +367,7 @@
       "t": 208.572,
       "score": 0.95,
       "cosine": 0.442,
-      "reason": "Powerful imagery aligns with toxic love and emotional intensity of the song",
+      "reason": "Powerful imagery matches toxic love and emotional truth in chaos",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -379,20 +391,8 @@
       "t": 3.773,
       "score": 0.95,
       "cosine": 0.432,
-      "reason": "fits toxic obsession, chaotic vibe, cartoonish madness aligns with song's mood",
+      "reason": "fits toxic obsession, chaotic nightlife, gritty madness",
       "recipe": "5-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s5-5-word-neon.webp",
-      "key": "lexicon/high/s5-5-word-neon.webp",
-      "word": "high",
-      "line": "We dont need forever Just give me the high Round and round We",
-      "t": 115.82,
-      "score": 0.95,
-      "cosine": 0.426,
-      "reason": "Surreal neon imagery fits toxic nightlife and addiction themes",
-      "recipe": "5-word-neon",
       "featured": true
     }
   ],
@@ -400,7 +400,7 @@
     "crazy": [
       0,
       9,
-      30
+      31
     ],
     "glass": [
       1,
@@ -420,7 +420,8 @@
     ],
     "drink": [
       8,
-      11
+      11,
+      17
     ],
     "night": [
       10,
@@ -434,11 +435,10 @@
       16
     ],
     "burn": [
-      17,
-      26
+      18,
+      27
     ],
     "dark": [
-      18,
       19
     ],
     "love": [
@@ -446,12 +446,12 @@
     ],
     "chaos": [
       21,
-      29
+      30
     ],
     "eyes": [
       22,
       23,
-      27
+      28
     ],
     "bleed": [
       24
@@ -459,11 +459,11 @@
     "hands": [
       25
     ],
-    "truth": [
-      28
+    "waiting": [
+      26
     ],
-    "high": [
-      31
+    "truth": [
+      29
     ]
   }
 }

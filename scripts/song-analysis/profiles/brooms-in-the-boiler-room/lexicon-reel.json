@@ -1,13 +1,13 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-08-06T06:28:16.567Z",
+  "generatedAt": "2026-08-07T13:45:31.796Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 1898,
+    "candidates": 2078,
     "judged": 64,
-    "accepted": 56,
+    "accepted": 57,
     "kept": 32
   },
   "reel": [
@@ -17,7 +17,7 @@
       "word": "brooms",
       "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
       "t": 29.106,
-      "score": 1,
+      "score": 0.98,
       "cosine": 0.697,
       "reason": "Perfectly aligns with magical corruption and ominous atmosphere",
       "recipe": "1-manga-line",
@@ -43,7 +43,7 @@
       "t": 29.106,
       "score": 0.95,
       "cosine": 0.718,
-      "reason": "Matches magical corruption, ominous tone, and chaotic visuals",
+      "reason": "Matches magical corruption, ominous tone, and chaotic atmosphere of the song",
       "recipe": "6-dream-collage",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 29.136,
       "score": 0.95,
       "cosine": 0.642,
-      "reason": "Strong noir atmosphere, symbolic elements align with song's themes",
+      "reason": "Strong noir atmosphere, cauldron as magical corruption, fits the ominous and playful tone",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -156,6 +156,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fog/s2-5-word-portrait.webp",
+      "key": "lexicon/fog/s2-5-word-portrait.webp",
+      "word": "fog",
+      "line": "frame but the gold still gleam money in the fog and the magic in steam Voice 1 Who cast that",
+      "t": 86.228,
+      "score": 0.95,
+      "cosine": 0.559,
+      "reason": "matches noir atmosphere, fog, steam, decay, and mystery",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
       "key": "lexicon/eyes/s8-5-neon-sign.webp",
       "word": "eyes",
@@ -199,20 +211,8 @@
       "t": 195.617,
       "score": 0.95,
       "cosine": 0.521,
-      "reason": "Aligns with noir atmosphere, magical corruption, and chaotic tension",
+      "reason": "fits noir atmosphere, corruption, and chaotic tension",
       "recipe": "2-dream-collage",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s1-3-dream-collage.webp",
-      "key": "lexicon/teeth/s1-3-dream-collage.webp",
-      "word": "teeth",
-      "line": "wrong spell and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a",
-      "t": 118.19,
-      "score": 0.95,
-      "cosine": 0.519,
-      "reason": "fits dark surrealism, teeth symbolism, chaos and decay match song's themes",
-      "recipe": "3-dream-collage",
       "featured": true
     },
     {
@@ -235,7 +235,7 @@
       "t": 87.248,
       "score": 0.9,
       "cosine": 0.584,
-      "reason": "fits noir atmosphere, industrial symbolism, and mysterious tone",
+      "reason": "fits noir atmosphere, industrial symbolism, and ghostly menace",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 40.171,
       "score": 0.9,
       "cosine": 0.562,
-      "reason": "Symbolizes greed's destruction, fits dark, surreal atmosphere",
+      "reason": "fits noir atmosphere, greed symbolism, dark surrealism",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -312,15 +312,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tower/s0-1-anime.webp",
-      "key": "lexicon/tower/s0-1-anime.webp",
-      "word": "tower",
-      "line": "Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms in the boiler",
-      "t": 41.494,
-      "score": 0.9,
-      "cosine": 0.511,
-      "reason": "Matches dark, dramatic tower imagery with themes of destruction and corruption",
-      "recipe": "1-anime",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gloves/s3-4-concept-art.webp",
+      "key": "lexicon/gloves/s3-4-concept-art.webp",
+      "word": "gloves",
+      "line": "with the hat pulled low stars on the brim and the gloves still glow Strings go stab bassoon go",
+      "t": 52.232,
+      "score": 0.85,
+      "cosine": 0.623,
+      "reason": "Matches magical danger, tension, and cinematic fantasy elements",
+      "recipe": "4-concept-art",
       "featured": true
     },
     {
@@ -343,7 +343,7 @@
       "t": 40.774,
       "score": 0.85,
       "cosine": 0.566,
-      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and setting",
+      "reason": "Gold as villainy fits theme; noir-cartoon style matches mood and atmosphere",
       "recipe": "4-neon-night",
       "featured": true
     },
@@ -357,6 +357,18 @@
       "cosine": 0.565,
       "reason": "fits noir mood, steam symbolism, urban decay aligns with magical corruption",
       "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fog/s4-4-cinema.webp",
+      "key": "lexicon/fog/s4-4-cinema.webp",
+      "word": "fog",
+      "line": "frame but the gold still gleam money in the fog and the magic in steam Voice 1 Who cast that",
+      "t": 86.228,
+      "score": 0.85,
+      "cosine": 0.555,
+      "reason": "Fog as obstacle and beacon fit noir and magical corruption themes",
+      "recipe": "4-cinema",
       "featured": true
     },
     {
@@ -381,18 +393,6 @@
       "cosine": 0.532,
       "reason": "fits noir atmosphere and ominous tone with pixel art",
       "recipe": "2-pixel",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s12-3-word-portrait.webp",
-      "key": "lexicon/glow/s12-3-word-portrait.webp",
-      "word": "glow",
-      "line": "pulled low stars on the brim and the gloves still glow Strings go stab bassoon go low broom",
-      "t": 53.023,
-      "score": 0.85,
-      "cosine": 0.526,
-      "reason": "fits noir atmosphere, neon glow matches lyric, industrial setting aligns with boiler room",
-      "recipe": "3-word-portrait",
       "featured": true
     }
   ],
@@ -421,7 +421,7 @@
     ],
     "night": [
       10,
-      15,
+      16,
       22
     ],
     "gold": [
@@ -429,18 +429,19 @@
       17,
       27
     ],
+    "fog": [
+      12,
+      29
+    ],
     "eyes": [
-      12
+      13
     ],
     "door": [
-      13,
+      14,
       23
     ],
     "chasing": [
-      14
-    ],
-    "teeth": [
-      16
+      15
     ],
     "steam": [
       18,
@@ -452,19 +453,16 @@
     "whisper": [
       24
     ],
-    "tower": [
+    "gloves": [
       25
     ],
     "high": [
       26
     ],
     "control": [
-      29
-    ],
-    "shadow": [
       30
     ],
-    "glow": [
+    "shadow": [
       31
     ]
   }

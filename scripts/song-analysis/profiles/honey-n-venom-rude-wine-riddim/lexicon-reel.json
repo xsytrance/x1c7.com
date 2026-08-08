@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-08-06T06:34:32.025Z",
+  "generatedAt": "2026-08-07T13:52:10.333Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2105,
+    "candidates": 2147,
     "judged": 64,
     "accepted": 60,
     "kept": 32
@@ -175,7 +175,7 @@
       "t": 12.38,
       "score": 0.95,
       "cosine": 0.579,
-      "reason": "Symbolism aligns with toxic romance and seductive danger.",
+      "reason": "Symbolizes sweet danger, club energy, seductive allure",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 63.878,
       "score": 0.95,
       "cosine": 0.565,
-      "reason": "matches toxic allure, club energy, and seductive danger",
+      "reason": "matches toxic allure, club energy, neon symbolism, seductive danger",
       "recipe": "1-word-neon",
       "featured": true
     },
@@ -259,7 +259,7 @@
       "t": 56.715,
       "score": 0.95,
       "cosine": 0.531,
-      "reason": "Seductive, intimate, and alluring image fits the song's aggressive seduction and club ener",
+      "reason": "Seductive, intimate, and alluring image matches the song's aggressive seduction and club e",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 139.262,
       "score": 0.95,
       "cosine": 0.486,
-      "reason": "Ominous text and lighting match song's dangerous allure and club intensity",
+      "reason": "ominous text aligns with dangerous theme and aggressive seduction",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.485,
-      "reason": "matches toxic allure, urban decay, and dangerous energy",
+      "reason": "matches toxic allure, urban decay, and dangerous energy of the song",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -391,7 +391,7 @@
       "t": 144.742,
       "score": 0.95,
       "cosine": 0.478,
-      "reason": "Matches seductive danger, moody lighting, and thematic fire",
+      "reason": "matches seductive danger, moody lighting, and thematic fire",
       "recipe": "4-word-portrait",
       "featured": true
     }

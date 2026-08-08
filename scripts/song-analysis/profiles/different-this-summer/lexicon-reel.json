@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-08-06T06:32:00.808Z",
+  "generatedAt": "2026-08-07T13:49:31.438Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2479,
+    "candidates": 2711,
     "judged": 64,
     "accepted": 63,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 218.709,
       "score": 1,
       "cosine": 0.461,
-      "reason": "Symbolizes growth, new beginnings, and potential align with song's themes of transformatio",
+      "reason": "Symbolizes growth, new beginnings, and potential aligning with the song's themes of transf",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 136.32,
       "score": 0.95,
       "cosine": 0.488,
-      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes",
+      "reason": "Symbolizes inner drive and passion aligning with empowerment and transformation themes.",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 5.167,
       "score": 0.95,
       "cosine": 0.449,
-      "reason": "Symbolizes new beginnings and warmth aligning with transformation and hope",
+      "reason": "Symbolizes new beginnings and energy aligning with summer transformation and hope",
       "recipe": "6-oil-light",
       "featured": true
     },
@@ -235,7 +235,7 @@
       "t": 158.96,
       "score": 0.95,
       "cosine": 0.414,
-      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth.",
+      "reason": "Neon symbolizes energy and transformation, aligning with summer and personal growth themes",
       "recipe": "2-oil-light",
       "featured": true
     },
@@ -271,7 +271,7 @@
       "t": 17.646,
       "score": 0.95,
       "cosine": 0.397,
-      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes.",
+      "reason": "Symbolizes hope and clarity aligning with transformation and empowerment themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": null,
       "score": 0.95,
       "cosine": 0.392,
-      "reason": "Symbolizes hope, warmth, and dreams aligning with transformation and empowerment.",
+      "reason": "Symbolizes hope, transformation, and light aligning with song's themes",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -384,15 +384,15 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s4-4-storybook.webp",
-      "key": "lexicon/future/s4-4-storybook.webp",
-      "word": "future",
-      "line": "But we working while it glows So the future feels easy This summer",
-      "t": 101.12,
-      "score": 0.95,
-      "cosine": 0.378,
-      "reason": "Futuristic city and glowing sun align with summer transformation and hope for the future",
-      "recipe": "4-storybook",
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/motivation/s0-6-word-neon.webp",
+      "key": "lexicon/motivation/s0-6-word-neon.webp",
+      "word": "motivation",
+      "line": "lights Will in my chest hunger in my shoes This aint motivation this is something to prove We dont wanna waste",
+      "t": 162.08,
+      "score": 0.9,
+      "cosine": 0.443,
+      "reason": "Urban neon aligns with ambition and late-night inspiration",
+      "recipe": "6-word-neon",
       "featured": true
     }
   ],
@@ -438,7 +438,8 @@
     ],
     "motivation": [
       19,
-      28
+      28,
+      31
     ],
     "spark": [
       20,
@@ -455,9 +456,6 @@
     ],
     "wave": [
       29
-    ],
-    "future": [
-      31
     ]
   }
 }

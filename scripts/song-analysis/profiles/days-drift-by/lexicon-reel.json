@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "days-drift-by",
-  "generatedAt": "2026-08-06T06:31:10.829Z",
+  "generatedAt": "2026-08-07T13:48:39.031Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 659,
-    "judged": 29,
-    "accepted": 29,
-    "kept": 29
+    "candidates": 721,
+    "judged": 32,
+    "accepted": 32,
+    "kept": 32
   },
   "reel": [
     {
@@ -31,7 +31,7 @@
       "t": 82.385,
       "score": 1,
       "cosine": 0.649,
-      "reason": "Perfectly aligns with the song's ethereal, melancholic, and cinematic mood.",
+      "reason": "Perfectly aligns with song's ethereal, melancholic, cinematic mood and themes.",
       "recipe": "2-photo",
       "featured": true
     },
@@ -96,6 +96,30 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s0-3-dream-collage.webp",
+      "key": "lexicon/fade/s0-3-dream-collage.webp",
+      "word": "fade",
+      "line": "Clouds, clouds roll in and fade away Every color melts into",
+      "t": 112.86,
+      "score": 0.95,
+      "cosine": 0.604,
+      "reason": "Ethereal dissolution, transience, and melancholic beauty align with song's themes",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s2-3-dream-collage.webp",
+      "key": "lexicon/fade/s2-3-dream-collage.webp",
+      "word": "fade",
+      "line": "Clouds, clouds roll in and fade away Every color melts into",
+      "t": 112.86,
+      "score": 0.95,
+      "cosine": 0.589,
+      "reason": "Ethereal, transient, and dreamlike imagery aligns with the song's themes of time passing a",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s14-6-cinema.webp",
       "key": "lexicon/light/s14-6-cinema.webp",
       "word": "light",
@@ -127,7 +151,7 @@
       "t": 47.543,
       "score": 0.95,
       "cosine": 0.578,
-      "reason": "Matches ethereal, melancholic river imagery with song's mood and themes",
+      "reason": "Matches ethereal, melancholic, and cinematic tone with river and nature imagery",
       "recipe": "6-noir",
       "featured": true
     },
@@ -139,8 +163,20 @@
       "t": 116.08,
       "score": 0.95,
       "cosine": 0.576,
-      "reason": "matches ethereal, melancholic, and transience themes",
+      "reason": "matches ethereal melancholy and transience of the song",
       "recipe": "5-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s0-4-word-portrait.webp",
+      "key": "lexicon/fade/s0-4-word-portrait.webp",
+      "word": "fade",
+      "line": "Clouds, clouds roll in and fade away Every color melts into",
+      "t": 112.86,
+      "score": 0.95,
+      "cosine": 0.569,
+      "reason": "Matches melancholy, transience, and ethereal mood",
+      "recipe": "4-word-portrait",
       "featured": true
     },
     {
@@ -163,7 +199,7 @@
       "t": 116.08,
       "score": 0.95,
       "cosine": 0.542,
-      "reason": "Matches melancholy, industrial decay, and ethereal lighting",
+      "reason": "matches melancholy, industrial decay, and ethereal lighting",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -247,7 +283,7 @@
       "t": 50.991,
       "score": 0.9,
       "cosine": 0.523,
-      "reason": "Ethereal, intimate, transience align with song's mood and themes",
+      "reason": "Ethereal lighting, intimacy, transience align with song's mood and themes",
       "recipe": "4-dream-collage",
       "featured": true
     },
@@ -283,7 +319,7 @@
       "t": 122.683,
       "score": 0.9,
       "cosine": 0.425,
-      "reason": "Ethereal intimacy, melancholic atmosphere, urban isolation fit the song's mood and themes.",
+      "reason": "Intimate distance, moody atmosphere, and quiet tension align with the song's themes of mel",
       "recipe": "4-dark-surreal",
       "featured": true
     },
@@ -319,7 +355,7 @@
       "t": 117.157,
       "score": 0.8,
       "cosine": 0.611,
-      "reason": "Ethereal light contrasts with melancholy, fits noir and escapism themes",
+      "reason": "Ethereal light contrasts with melancholy, fits noir and transience themes",
       "recipe": "4-photo",
       "featured": true
     },
@@ -343,7 +379,7 @@
       "t": 82.385,
       "score": 0.7,
       "cosine": 0.558,
-      "reason": "Ethereal and tranquil sky fits the song's mood, but lacks noir grit.",
+      "reason": "Ethereal and tranquil sky fits the song's mood but lacks noir grit",
       "recipe": "6-analog",
       "featured": true
     },
@@ -364,12 +400,12 @@
     "sky": [
       0,
       1,
-      27
+      30
     ],
     "drift": [
       2,
-      15,
-      16
+      18,
+      19
     ],
     "clouds": [
       3,
@@ -377,38 +413,43 @@
     ],
     "slow": [
       4,
-      11,
-      13
+      14,
+      16
     ],
     "light": [
       6,
+      9,
+      21
+    ],
+    "fade": [
       7,
-      18
+      8,
+      13
     ],
     "river": [
-      8,
-      9,
-      17
+      10,
+      11,
+      20
     ],
     "gray": [
-      10,
       12,
-      14
+      15,
+      17
     ],
     "hands": [
-      19,
-      20,
-      24
+      22,
+      23,
+      27
     ],
     "closer": [
-      21,
-      22,
-      23
+      24,
+      25,
+      26
     ],
     "sun": [
-      25,
-      26,
-      28
+      28,
+      29,
+      31
     ]
   }
 }

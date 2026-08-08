@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-08-06T06:44:01.706Z",
+  "generatedAt": "2026-08-07T14:02:32.375Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -60,18 +60,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
-      "key": "lexicon/dream/s1-3-manga-line.webp",
-      "word": "dream",
-      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
-      "t": 70.682,
-      "score": 1,
-      "cosine": 0.63,
-      "reason": "Perfectly aligns with digital isolation and noir melancholy",
-      "recipe": "3-manga-line",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
       "key": "lexicon/light/s10-4-neon-sign.webp",
       "word": "light",
@@ -115,8 +103,20 @@
       "t": 19.41,
       "score": 0.95,
       "cosine": 0.635,
-      "reason": "Neon heart symbolizes hollow digital love; noir setting matches song's mood and themes.",
+      "reason": "Neon heart symbolizes hollow digital love; noir urban setting matches song's mood and them",
       "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.95,
+      "cosine": 0.63,
+      "reason": "fits noir mood, digital isolation, fragmented faces",
+      "recipe": "3-manga-line",
       "featured": true
     },
     {
@@ -139,7 +139,7 @@
       "t": 70.692,
       "score": 0.95,
       "cosine": 0.608,
-      "reason": "matches noir mood, digital isolation theme, cinematic visuals",
+      "reason": "fits noir mood, digital isolation theme, cinematic visuals",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -189,6 +189,18 @@
       "cosine": 0.542,
       "reason": "fits noir cyberpunk mood, digital dreams, fractured connections",
       "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-2-cinema.webp",
+      "key": "lexicon/chains/s5-2-cinema.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
+      "t": 104.455,
+      "score": 0.95,
+      "cosine": 0.536,
+      "reason": "Symbolizes broken bonds, decay, and urban loneliness fitting the song's themes",
+      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -283,20 +295,8 @@
       "t": 12.109,
       "score": 0.9,
       "cosine": 0.542,
-      "reason": "fits cyberpunk mood, digital divide symbolism, lonely connection",
+      "reason": "Captures digital divide and longing for connection in cyberpunk noir",
       "recipe": "1-word-portrait",
-      "featured": true
-    },
-    {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-2-cinema.webp",
-      "key": "lexicon/chains/s5-2-cinema.webp",
-      "word": "chains",
-      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
-      "t": 104.455,
-      "score": 0.9,
-      "cosine": 0.536,
-      "reason": "Symbolizes broken bonds, decay, urban loneliness fits noir mood",
-      "recipe": "2-cinema",
       "featured": true
     },
     {
@@ -307,7 +307,7 @@
       "t": 85.413,
       "score": 0.9,
       "cosine": 0.522,
-      "reason": "fits digital isolation, ethereal names, lonely cosmic imagery",
+      "reason": "fits digital isolation, abstract names, ethereal loneliness",
       "recipe": "5-dream-collage",
       "featured": true
     },
@@ -388,30 +388,30 @@
     "heart": [
       0,
       2,
-      7
+      6
     ],
     "tap": [
       1,
       3,
       11
     ],
-    "dream": [
-      4,
-      14,
-      26
-    ],
     "light": [
-      5,
-      19,
-      21
+      4,
+      20,
+      22
     ],
     "save": [
-      6,
+      5,
       10
     ],
     "love": [
-      8,
+      7,
       9
+    ],
+    "dream": [
+      8,
+      14,
+      26
     ],
     "scroll": [
       12,
@@ -420,20 +420,20 @@
     "chains": [
       13,
       15,
-      23
+      16
     ],
     "strangers": [
-      16,
       17,
+      18,
       25
     ],
     "names": [
-      18,
-      20,
+      19,
+      21,
       24
     ],
     "reach": [
-      22,
+      23,
       28
     ],
     "stars": [

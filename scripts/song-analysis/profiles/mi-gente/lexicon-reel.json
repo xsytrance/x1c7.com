@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-08-06T06:42:04.801Z",
+  "generatedAt": "2026-08-07T14:00:20.834Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 27.481,
       "score": 1,
       "cosine": 0.558,
-      "reason": "Perfectly captures barrio's nighttime celebration and community unity",
+      "reason": "Perfectly captures nighttime barrio celebration and community unity",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -103,7 +103,7 @@
       "t": 26.262,
       "score": 0.95,
       "cosine": 0.427,
-      "reason": "Symbolizes 'sangre' as life force, aligns with loyalty and community themes.",
+      "reason": "Symbolizes 'sangre' as life force, connects to loyalty and community",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -127,7 +127,7 @@
       "t": 136.359,
       "score": 0.9,
       "cosine": 0.479,
-      "reason": "Symbolizes resilience and fiery unity in a communal struggle",
+      "reason": "Symbolizes resilience, fire as purification, street imagery aligns with song's themes",
       "recipe": "5-photo",
       "featured": true
     },
@@ -144,18 +144,6 @@
       "featured": true
     },
     {
-      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
-      "key": "lexicon/fuego/s0-4-cinema.webp",
-      "word": "fuego",
-      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
-      "t": 136.359,
-      "score": 0.7,
-      "cosine": 0.467,
-      "reason": "Fire symbolizes unity and resilience, aligns with nighttime community themes",
-      "recipe": "4-cinema",
-      "featured": true
-    },
-    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s0-1-film-still.webp",
       "key": "lexicon/calle/s0-1-film-still.webp",
       "word": "calle",
@@ -166,6 +154,18 @@
       "reason": "Cobblestone street and community vibe align with 'calle' and song's themes.",
       "recipe": "1-film-still",
       "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s0-4-cinema.webp",
+      "key": "lexicon/fuego/s0-4-cinema.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.6,
+      "cosine": 0.467,
+      "reason": "Fire symbolizes unity and resilience, but lacks street and urban elements",
+      "recipe": "4-cinema",
+      "featured": false
     }
   ],
   "byWord": {
@@ -182,12 +182,12 @@
     "fuego": [
       5,
       9,
-      11
+      12
     ],
     "calle": [
       6,
       8,
-      12
+      11
     ],
     "sangre": [
       7

@@ -1,11 +1,11 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-08-06T06:30:45.687Z",
+  "generatedAt": "2026-08-07T13:48:08.877Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 2234,
+    "candidates": 2301,
     "judged": 64,
     "accepted": 53,
     "kept": 32
@@ -19,7 +19,7 @@
       "t": 209.839,
       "score": 0.95,
       "cosine": 0.523,
-      "reason": "matches summer vibe, ambition, and motivational energy",
+      "reason": "matches summer vibe, ambition, and motivational themes",
       "recipe": "3-word-portrait",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "t": 12.527,
       "score": 0.95,
       "cosine": 0.47,
-      "reason": "Modern, inspiring, ties to code and innovation",
+      "reason": "Modern, focused, and inspiring image fits the tech and summer vibe",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -175,7 +175,7 @@
       "t": 101.646,
       "score": 0.95,
       "cosine": 0.404,
-      "reason": "fits tech, celebration, and growth themes with neon and pixel art",
+      "reason": "Matches cyberpunk energy, celebration of achievement, and digital themes",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 73.208,
       "score": 0.9,
       "cosine": 0.491,
-      "reason": "fits summer night coding vibe, hopeful and focused",
+      "reason": "fits tech, late-night focus, hopeful energy",
       "recipe": "2-oil-light",
       "featured": true
     },
@@ -223,7 +223,7 @@
       "t": 71.367,
       "score": 0.9,
       "cosine": 0.471,
-      "reason": "fits summer night, urban, neon, and tech themes",
+      "reason": "fits summer night, urban, neon, and motivational vibe",
       "recipe": "6-word-neon",
       "featured": true
     },
@@ -283,7 +283,7 @@
       "t": 34.829,
       "score": 0.9,
       "cosine": 0.436,
-      "reason": "fits summer night, urban, dream theme and neon glow",
+      "reason": "fits summer night, urban, dream symbolism, neon aligns with energy",
       "recipe": "2-word-neon",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 4.493,
       "score": 0.9,
       "cosine": 0.434,
-      "reason": "fits summer night, urban, digital, and hopeful mood",
+      "reason": "fits summer night, urban, digital, hopeful mood",
       "recipe": "6-word-portrait",
       "featured": true
     },
@@ -319,7 +319,7 @@
       "t": 56.193,
       "score": 0.9,
       "cosine": 0.432,
-      "reason": "fits theme of growth and innovation with hopeful, resilient imagery",
+      "reason": "Aligns with growth, innovation, and summer energy",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -367,7 +367,7 @@
       "t": 20.921,
       "score": 0.9,
       "cosine": 0.401,
-      "reason": "Urban neon aligns with summer night and innovation energy",
+      "reason": "Urban neon aligns with energy and progress themes",
       "recipe": "1-word-neon",
       "featured": true
     },

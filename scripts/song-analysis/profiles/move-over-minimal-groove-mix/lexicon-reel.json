@@ -1,14 +1,14 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-08-06T06:42:29.581Z",
+  "generatedAt": "2026-08-07T14:00:50.045Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
-    "candidates": 816,
-    "judged": 31,
-    "accepted": 25,
-    "kept": 25
+    "candidates": 844,
+    "judged": 34,
+    "accepted": 28,
+    "kept": 28
   },
   "reel": [
     {
@@ -19,7 +19,7 @@
       "t": 88.445,
       "score": 1,
       "cosine": 0.67,
-      "reason": "Perfect fit for retro club, bass focus, summer energy, stylish confidence",
+      "reason": "Perfect fit for retro club, bass focus, summer energy, confident style",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.616,
-      "reason": "Perfect fit for dance floor dominance and retro club aesthetic",
+      "reason": "Perfect fit with dance floor dominance and stylish retro club aesthetic",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -67,7 +67,7 @@
       "t": 37.802,
       "score": 1,
       "cosine": 0.584,
-      "reason": "Perfectly aligns with retro club aesthetic and summer night energy",
+      "reason": "Perfect fit with retro club, lights, and summer energy",
       "recipe": "2-word-portrait",
       "featured": true
     },
@@ -139,7 +139,7 @@
       "t": 22.767,
       "score": 1,
       "cosine": 0.487,
-      "reason": "Perfect fit for retro club aesthetic and confident individuality",
+      "reason": "Perfect fit for retro club, confidence, and individuality",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 20.887,
       "score": 0.95,
       "cosine": 0.503,
-      "reason": "Confident, energetic, and stylish image matches the song's retro club and summer energy.",
+      "reason": "Confident, energetic, and stylish image matches the song's retro club and summer energy",
       "recipe": "6-stickers",
       "featured": true
     },
@@ -199,7 +199,7 @@
       "t": 37.802,
       "score": 0.95,
       "cosine": 0.498,
-      "reason": "retro club, spotlights, stylish mood align perfectly",
+      "reason": "retro club, spotlights, stylish mood align with song",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -240,6 +240,18 @@
       "featured": true
     },
     {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smooth/s2-6-word-portrait.webp",
+      "key": "lexicon/smooth/s2-6-word-portrait.webp",
+      "word": "smooth",
+      "line": "room Move over Summer came through smooth Dont talk too much Just let that",
+      "t": 17.81,
+      "score": 0.9,
+      "cosine": 0.42,
+      "reason": "minimalist, stylish, and evokes smoothness and calm energy",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
       "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/king/s3-6-cinema.webp",
       "key": "lexicon/king/s3-6-cinema.webp",
       "word": "king",
@@ -247,7 +259,19 @@
       "t": 12.398,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "royal imagery fits dance floor dominance and summer swagger",
+      "reason": "royal imagery fits dance floor dominance and summer night energy",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smooth/s0-6-cinema.webp",
+      "key": "lexicon/smooth/s0-6-cinema.webp",
+      "word": "smooth",
+      "line": "room Move over Summer came through smooth Dont talk too much Just let that",
+      "t": 17.81,
+      "score": 0.9,
+      "cosine": 0.405,
+      "reason": "Confident stage presence aligns with dance floor dominance and summer energy",
       "recipe": "6-cinema",
       "featured": true
     },
@@ -273,6 +297,18 @@
       "cosine": 0.426,
       "reason": "Regal authority and chaotic nature align with dance floor dominance and summer energy.",
       "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smooth/s1-4-3d-toy.webp",
+      "key": "lexicon/smooth/s1-4-3d-toy.webp",
+      "word": "smooth",
+      "line": "room Move over Summer came through smooth Dont talk too much Just let that",
+      "t": 17.81,
+      "score": 0.8,
+      "cosine": 0.399,
+      "reason": "Matches smooth surfaces and calm energy with summer and minimalist style",
+      "recipe": "4-3d-toy",
       "featured": true
     },
     {
@@ -307,7 +343,7 @@
       "t": 12.398,
       "score": 0.6,
       "cosine": 0.461,
-      "reason": "Regal imagery contrasts with dance floor swagger and summer energy",
+      "reason": "Regal imagery contrasts with song's dance-floor swagger and summer energy.",
       "recipe": "3-word-portrait",
       "featured": false
     }
@@ -345,20 +381,25 @@
     "bassline": [
       14,
       16,
-      22
+      25
     ],
     "summer": [
       17,
       18,
-      23
+      26
     ],
-    "king": [
+    "smooth": [
       19,
       21,
       24
     ],
+    "king": [
+      20,
+      23,
+      27
+    ],
     "somebody": [
-      20
+      22
     ]
   }
 }

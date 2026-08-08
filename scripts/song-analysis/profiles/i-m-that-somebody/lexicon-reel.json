@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "i-m-that-somebody",
-  "generatedAt": "2026-08-06T06:36:00.890Z",
+  "generatedAt": "2026-08-07T13:53:44.621Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
@@ -43,7 +43,7 @@
       "t": 87.992,
       "score": 0.95,
       "cosine": 0.514,
-      "reason": "Calm, resolute posture matches self-assurance and stability themes",
+      "reason": "Matches calm confidence and stability themes with cinematic lighting",
       "recipe": "5-word-portrait",
       "featured": true
     },
@@ -55,7 +55,7 @@
       "t": 90.291,
       "score": 0.95,
       "cosine": 0.508,
-      "reason": "Confident stage presence matches playful assurance and stability in the song",
+      "reason": "Confident pose, stage setting, neon accents align with playful confidence and futuristic n",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -187,7 +187,7 @@
       "t": 120.145,
       "score": 0.95,
       "cosine": 0.417,
-      "reason": "Confident, stylish club scene matches playful self-assurance and retro aesthetic",
+      "reason": "Confident, stylish club scene matches playful self-assurance and futuristic nostalgia.",
       "recipe": "4-word-portrait",
       "featured": true
     },
@@ -247,7 +247,7 @@
       "t": 104.722,
       "score": 0.9,
       "cosine": 0.533,
-      "reason": "Intimate, calm, and thoughtful imagery aligns with trust and self-assurance",
+      "reason": "Matches intimate trust theme, calm and thoughtful mood",
       "recipe": "1-word-portrait",
       "featured": true
     },
@@ -295,7 +295,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.441,
-      "reason": "Playful, confident, and warm design fits the song's mood and themes.",
+      "reason": "Playful, confident, and warm visual aligns with song's theme and mood.",
       "recipe": "2-stickers",
       "featured": true
     },
@@ -331,7 +331,7 @@
       "t": 105.581,
       "score": 0.9,
       "cosine": 0.424,
-      "reason": "Intimate, tender hands align with trust and reassurance in the song",
+      "reason": "Intimate, tender hands convey trust and support fitting the song's mood",
       "recipe": "3-photo",
       "featured": true
     },
@@ -343,7 +343,7 @@
       "t": 168.925,
       "score": 0.9,
       "cosine": 0.412,
-      "reason": "Futuristic romance and playful energy align with song's themes and mood",
+      "reason": "Futuristic romance and playful energy match song's mood and themes",
       "recipe": "3-neon-sign",
       "featured": true
     },
@@ -355,7 +355,7 @@
       "t": 27.226,
       "score": 0.9,
       "cosine": 0.406,
-      "reason": "Cozy, inviting atmosphere matches song's theme of stability and comfort.",
+      "reason": "Cozy, inviting space aligns with home's theme of comfort and stability",
       "recipe": "1-word-portrait",
       "featured": true
     },
