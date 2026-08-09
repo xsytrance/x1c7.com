@@ -107,7 +107,7 @@ export const TYLER_SECTION_LABELS: Record<TylerSectionId, string> = {
   tracks: "Songs",
   photos: "Photos",
   press: "Press & links",
-  zero: "Coming soon: zer0",
+  zero: "Coming soon: Kizuna Sato", // id predates the Kizuna teaser; stored in Supabase, so it stays
 };
 
 export const TYLER_FALLBACK_SITE: TylerSite = {

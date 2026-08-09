@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getTylerPage } from "@/lib/tyler/read";
-import { ZeroChallenger } from "@/components/ZeroChallenger";
+import { KizunaTeaser } from "@/components/KizunaTeaser";
 import { TylerHero } from "./TylerHero";
 import { Photos, Press, TrackList } from "./Sections";
 import { SignInDoor } from "./SignInDoor";
@@ -34,8 +34,11 @@ export default async function TylerPage() {
             return <Photos key={id} media={media} />;
           case "press":
             return <Press key={id} site={site} media={media} />;
+          // "zero" is the stored Supabase section id from the retired zer0
+          // teaser — kept so Juan's saved ordering still resolves. It renders
+          // the Kizuna Sato teaser now.
           case "zero":
-            return <ZeroChallenger key={id} />;
+            return <KizunaTeaser key={id} />;
           default:
             return null;
         }

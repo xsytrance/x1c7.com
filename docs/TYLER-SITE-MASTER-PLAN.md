@@ -229,6 +229,14 @@ Every panel is a phone-first card, reorderable by drag OR by up/down buttons
 
 ## 8. `Coming Soon: zer0?!?!?`
 
+> **RETIRED FROM /tyler 2026-08-09.** The owner replaced the zer0 / Pink's
+> Desire cut-in on Tyler's site with the **Kizuna Sato teaser**
+> (`KizunaTeaser.tsx`): her Dotonbori photocard, sakura-and-gold styling, and a
+> typewriter "Coming soon to LevelReady Records...". The stored Supabase
+> section id stays `"zero"` so Juan's saved layout ordering keeps resolving —
+> it just renders Kizuna now (admin label: "Coming soon: Kizuna Sato"). The
+> original zer0 cut-in below still lives on AGENOR's `/music` page, unchanged.
+
 Chris — **zer0** — the third of Ms. Dagnese's second-graders, next to be
 onboarded into the agent empire. Baker, cook, stoner, anime lifer (DBZ), gamer.
 Runs a cupcake / donut / pastry business: **Pink's Desire**.
