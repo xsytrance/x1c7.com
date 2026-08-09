@@ -234,8 +234,10 @@ Every panel is a phone-first card, reorderable by drag OR by up/down buttons
 > (`KizunaTeaser.tsx`): her Dotonbori photocard, sakura-and-gold styling, and a
 > typewriter "Coming soon to LevelReady Records...". The stored Supabase
 > section id stays `"zero"` so Juan's saved layout ordering keeps resolving —
-> it just renders Kizuna now (admin label: "Coming soon: Kizuna Sato"). The
-> original zer0 cut-in below still lives on AGENOR's `/music` page, unchanged.
+> it just renders Kizuna now (admin label: "Coming soon: Kizuna Sato"). Later
+> the same day the owner ordered the zer0 cut-in off `/music` as well —
+> `ZeroChallenger.tsx` is deleted; git history keeps it if the announcement
+> ever returns.
 
 Chris — **zer0** — the third of Ms. Dagnese's second-graders, next to be
 onboarded into the agent empire. Baker, cook, stoner, anime lifer (DBZ), gamer.

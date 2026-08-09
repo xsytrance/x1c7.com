@@ -28,7 +28,6 @@ import CollectionDeck from "@/components/CollectionDeck";
 import { JukeboxView } from "@/components/JukeboxView";
 import Wall from "@/components/wall/Wall";
 import { TylerPromo } from "@/components/TylerPromo";
-import { ZeroChallenger } from "@/components/ZeroChallenger";
 import { AgenorBand } from "@/components/AgenorBand";
 
 type View = "wall" | "spines" | "deck" | "jukebox";
@@ -246,11 +245,6 @@ export default function Page() {
            (2026-07-25). The collection leads again; this is the standing door
            to Juan's site, and the owner's message stays with it. ===== */}
       <TylerPromo />
-
-      {/* ===== the crew's next announcement ===== */}
-      <div className="relative z-10 mt-20">
-        <ZeroChallenger compact />
-      </div>
 
       {/* the way back to the hub — at the bottom now, where an exit belongs */}
       <div className="relative z-10 px-4 pb-6 pt-10 sm:px-6 lg:px-8">
