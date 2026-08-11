@@ -17,10 +17,12 @@ cd /home/xsyprime/x1c7.com || exit 1
 echo "── $(date -Iseconds) · nightly build ──"
 
 # 1) LEXICON — harvest new songs → dream new legos → publish the shelf to R2.
-if node scripts/lexicon/harvest.mjs \
-   && node scripts/curator/gravity.mjs --grade-limit 60 \
-   && node scripts/lexicon/dream.mjs --limit 999 \
-   && node scripts/lexicon/publish.mjs; then
+# Each step is bounded — a hung network/LLM/R2 call used to block ~4h until the
+# systemd TimeoutStartSec killed the whole run (fixed 2026-08-11, Writ execution).
+if timeout 900 node scripts/lexicon/harvest.mjs \
+   && timeout 600 node scripts/curator/gravity.mjs --grade-limit 60 \
+   && timeout 1800 node scripts/lexicon/dream.mjs --limit 999 \
+   && timeout 600 node scripts/lexicon/publish.mjs; then
   echo "$(date -Iseconds) · ✦ lexicon done"
 else
   echo "$(date -Iseconds) · ✗ lexicon step failed (see above)"
