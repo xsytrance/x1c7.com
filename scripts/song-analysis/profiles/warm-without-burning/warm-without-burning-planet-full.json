@@ -1,0 +1,242 @@
+{
+  "analysis": {
+    "summary": "This song redefines intimacy as a presence that offers warmth without the destructive pain of fire, suggesting a relationship where safety and connection exist beyond the need for intense passion or fear.",
+    "overallMood": "Sultry yet tender atmospheric intimacy",
+    "themes": [
+      "Safe Intimacy",
+      "Emotional Resilience",
+      "Transition from Passion to Peace",
+      "Acceptance of Vulnerability"
+    ],
+    "palette": [
+      "#051428",
+      "#FF6F3C",
+      "#D9A73B",
+      "#E6ECEF"
+    ],
+    "sections": [
+      {
+        "name": "Intro",
+        "emotion": "Anticipation and quiet reverence",
+        "intensity": 0.06,
+        "colorHint": "#1a1f2e",
+        "start": 2.08
+      },
+      {
+        "name": "Verse 1",
+        "emotion": "Playful tension resolving into comfort",
+        "intensity": 0.64,
+        "colorHint": "#3d2b18",
+        "start": 3
+      },
+      {
+        "name": "Chorus",
+        "emotion": "Confident reassurance and steady warmth",
+        "intensity": 0.9,
+        "colorHint": "#ff6f3c",
+        "start": 44.25
+      },
+      {
+        "name": "Bridge",
+        "emotion": "Sudden dissolution of tension into pure calm",
+        "intensity": 0.75,
+        "colorHint": "#eef2f4",
+        "start": 114.87
+      },
+      {
+        "name": "Drop",
+        "emotion": "Melancholic acceptance and gentle fading",
+        "intensity": 0.76,
+        "colorHint": "#8da9b6",
+        "start": 149.86
+      },
+      {
+        "name": "Outro",
+        "emotion": "Enduring peace beyond the fire's end",
+        "intensity": 0.73,
+        "colorHint": "#1e2a3f",
+        "start": 160.25
+      }
+    ],
+    "keywords": [
+      {
+        "word": "warmth",
+        "emotion": "Safe embrace without danger",
+        "imageryPrompt": "A glowing ember resting gently in a palm, emitting soft orange light against deep blue shadows, no smoke or heat distortion."
+      },
+      {
+        "word": "dragon",
+        "emotion": "Controlled power turned into protection",
+        "imageryPrompt": "A massive mythical dragon coiling protectively around a small lantern, its breath transforming from fire to warm steam."
+      },
+      {
+        "word": "rivers",
+        "emotion": "Flowing continuity and depth of feeling",
+        "imageryPrompt": "Nighttime view of the Han River reflecting city lights, water moving smoothly without turbulence or ripples breaking the surface tension."
+      },
+      {
+        "word": "silence",
+        "emotion": "Peaceful absence after intensity",
+        "imageryPrompt": "A single drop of rain hitting a still pool in an empty courtyard at night, creating perfect concentric circles in darkness."
+      },
+      {
+        "word": "fire",
+        "emotion": "Transformed into light rather than destruction",
+        "imageryPrompt": "Crackling flames that have turned golden and static, illuminating a face without casting fearful shadows or consuming surroundings."
+      },
+      {
+        "word": "home",
+        "emotion": "Sanctuary found in connection",
+        "imageryPrompt": "A window looking out onto rain-slicked streets where two silhouettes stand close together, warm interior light spilling softly outward."
+      },
+      {
+        "word": "river",
+        "emotion": "serene, grounding",
+        "imageryPrompt": "A wide, dark river reflecting city lights with gentle ripples and a soft sub-heartbeat rhythm underneath."
+      },
+      {
+        "word": "water",
+        "emotion": "cleansing, cooling presence",
+        "imageryPrompt": "Clear spray of river mist falling gently on skin, washing away soot and heat to reveal pale, unburnt skin."
+      },
+      {
+        "word": "scars",
+        "emotion": "avoided trauma",
+        "imageryPrompt": "Smooth, unblemished skin texture under soft moonlight, emphasizing the absence of burn marks or wounds."
+      },
+      {
+        "word": "matchstick",
+        "emotion": "fragile control over danger",
+        "imageryPrompt": "A wooden match held loosely between fingers with a tiny flame flickering at one end against a dark background."
+      },
+      {
+        "word": "heartbeat",
+        "emotion": "slow, steady rhythm",
+        "imageryPrompt": "A stylized visual representation of a slow pulse wave glowing faintly blue beneath skin tones."
+      },
+      {
+        "word": "light",
+        "emotion": "hopeful illumination",
+        "imageryPrompt": "A small, warm lantern floating on the river surface reflecting upward into dark clouds without burning anything nearby."
+      },
+      {
+        "word": "night",
+        "emotion": "softened darkness",
+        "imageryPrompt": "The sky turning from deep indigo to a softer violet as fire fades and water mist rises around streetlamps."
+      },
+      {
+        "word": "break",
+        "emotion": "resistance to destruction",
+        "imageryPrompt": "A ceramic cup held firmly in hands that has not cracked despite being near heat, symbolizing emotional resilience."
+      }
+    ],
+    "meaning": {
+      "story": "This song redefines intimacy as a sanctuary where safety exists without the destructive necessity of intense passion or pain, set against the atmospheric backdrop of Vietnam's Hàn River.",
+      "sections": [
+        {
+          "name": "Intro",
+          "interpretation": "The whispered warning about an approaching dragon sets the stage for a relationship that must navigate danger to find peace.",
+          "keyLine": "The dragon's about to breathe lửa."
+        },
+        {
+          "name": "Chorus",
+          "interpretation": "It declares a new standard of love where warmth is offered without demanding self-immolation or leaving scars tonight.",
+          "keyLine": "Warm without burning / No vết thương tonight."
+        },
+        {
+          "name": "Verse 1",
+          "interpretation": "The narrator challenges the old belief that silence equals loneliness and that one must break to prove they are still alive for love.",
+          "keyLine": "That love had to hurt / mới biết ai còn ở lại."
+        },
+        {
+          "name": "Bridge",
+          "interpretation": "As the fire extinguishes, the couple finds a soft night where presence is enough without needing anyone to disappear or suffer.",
+          "keyLine": "The fire is gone / Không ai đau."
+        }
+      ],
+      "keyLines": [
+        "Warm without burning / Lửa trên trời, your hand in mine",
+        "You don't ask me to burn / để chứng minh em ở đây",
+        "I just want to watch with you / con rồng sáng trên sông Hàn",
+        "But no one has to burn! (Nhưng không ai phải cháy!)"
+      ],
+      "extendedKeywords": [
+        {
+          "word": "river",
+          "emotion": "serene, grounding",
+          "imageryPrompt": "A wide, dark river reflecting city lights with gentle ripples and a soft sub-heartbeat rhythm underneath.",
+          "weight": 0.95
+        },
+        {
+          "word": "dragon",
+          "emotion": "menacing yet contained power",
+          "imageryPrompt": "A mythical dragon coiled above the water, breathing visible heat waves that do not touch the standing figures below.",
+          "weight": 0.88
+        },
+        {
+          "word": "fire",
+          "emotion": "destructive passion vs safety",
+          "imageryPrompt": "Intense orange flames rising from a matchstick held loosely in a hand, contrasting with cool blue water nearby.",
+          "weight": 0.92
+        },
+        {
+          "word": "water",
+          "emotion": "cleansing, cooling presence",
+          "imageryPrompt": "Clear spray of river mist falling gently on skin, washing away soot and heat to reveal pale, unburnt skin.",
+          "weight": 0.85
+        },
+        {
+          "word": "scars",
+          "emotion": "avoided trauma",
+          "imageryPrompt": "Smooth, unblemished skin texture under soft moonlight, emphasizing the absence of burn marks or wounds.",
+          "weight": 0.79
+        },
+        {
+          "word": "matchstick",
+          "emotion": "fragile control over danger",
+          "imageryPrompt": "A wooden match held loosely between fingers with a tiny flame flickering at one end against a dark background.",
+          "weight": 0.82
+        },
+        {
+          "word": "silence",
+          "emotion": "peaceful presence not fear",
+          "imageryPrompt": "Deep shadows in a room where two figures sit close together, illuminated only by the soft glow of distant city lights.",
+          "weight": 0.76
+        },
+        {
+          "word": "heartbeat",
+          "emotion": "slow, steady rhythm",
+          "imageryPrompt": "A stylized visual representation of a slow pulse wave glowing faintly blue beneath skin tones.",
+          "weight": 0.81
+        },
+        {
+          "word": "light",
+          "emotion": "hopeful illumination",
+          "imageryPrompt": "A small, warm lantern floating on the river surface reflecting upward into dark clouds without burning anything nearby.",
+          "weight": 0.74
+        },
+        {
+          "word": "night",
+          "emotion": "softened darkness",
+          "imageryPrompt": "The sky turning from deep indigo to a softer violet as fire fades and water mist rises around streetlamps.",
+          "weight": 0.83
+        },
+        {
+          "word": "warmth",
+          "emotion": "safe connection",
+          "imageryPrompt": "Golden ambient light wrapping around two silhouettes, creating a halo effect without any source of flame visible.",
+          "weight": 0.91
+        },
+        {
+          "word": "break",
+          "emotion": "resistance to destruction",
+          "imageryPrompt": "A ceramic cup held firmly in hands that has not cracked despite being near heat, symbolizing emotional resilience.",
+          "weight": 0.72
+        }
+      ]
+    }
+  },
+  "styleHint": "Humid, sultry alt-R&B ballad at a half-time ~99 BPM, set on the Hàn River in Da Nang. Bilingual English/Vietnamese duet: Kizuna Sato leads — breathy close-mic whispers opening into warm, unforced belts — answered by a male melodic-rap verse, the two trading lines mid-sentence between languages. Deep 808 sub as a slow heartbeat, clean reverbed guitar harmonics, night-city ambience (distant motorcycles, river water). Builds to a dragon-fire peak with widened guitars and accelerating percussion, then drops to near-silence for a water-spray bridge with only falling water and clean guitar before the full band returns warm rather than loud. Chapter IV of The Fire Cycle — the answer record to \"I Won't Be Your Fire\": the fire goes out and she stays anyway. Gold and ember against blue-black water. Tender, not tragic.",
+  "assets": {},
+  "generatedAt": "2026-08-24T08:50:14.718Z"
+}
