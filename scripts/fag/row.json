@@ -1,0 +1,589 @@
+{
+  "id": "forged-above-gold-fire-cycle",
+  "title": "Forged Above Gold",
+  "artist": "Tyler Haze × Kizuna Sato",
+  "genre": "Alternative R&B",
+  "mood": "hard-won calm",
+  "color": "#E8A33D",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/forged-above-gold-fire-cycle/cover.png",
+  "audio_url": "/private/forged-above-gold-fire-cycle.mp3",
+  "sort_order": 903,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[Final Chorus – Tyler + Kizuna]\n[03:19.38]Forged above gold\n[03:22.00]We came through the flame\n[03:25.44]Not untouched\n[03:26.60]not unchanged\n[03:27.78]not ashamed\n[03:29.34]Forged above gold\n[03:31.44]Más fuerte que ayer\n[03:33.52]No more begging for the burn\n[03:36.04]just to know somebody's there\n[03:38.30]I can stand in the quiet\n[03:40.72]Yo me puedo quedar\n[03:42.44]I can carry my own light\n[03:45.44]Sin tenerte que salvar\n[Both]\n[03:47.90]Let the old fire go\n[03:50.92]There is nothing left to prove\n[03:54.48]We weren't made to burn forever\n[03:59.20]We were forged—\n[Break – Everything Cuts]\n[04:04.36]The fire didn't make me gold.\n[04:09.00]It taught me\n[04:11.66]I was worth more.\n[04:16.92]Más que oro.\n[04:18.78]Forged above gold.",
+  "lyrics_synced": {
+    "source": "aligned-window-199.36-261.4-cut",
+    "refinedAt": "2026-09-04T02:43:22.205Z",
+    "words": [
+      {
+        "t": 199.38,
+        "w": "Forged"
+      },
+      {
+        "t": 200.9,
+        "w": "above"
+      },
+      {
+        "t": 201.12,
+        "w": "gold"
+      },
+      {
+        "t": 202,
+        "w": "We"
+      },
+      {
+        "t": 202.66,
+        "w": "came"
+      },
+      {
+        "t": 202.94,
+        "w": "through"
+      },
+      {
+        "t": 203.36,
+        "w": "the"
+      },
+      {
+        "t": 203.64,
+        "w": "flame"
+      },
+      {
+        "t": 205.44,
+        "w": "Not"
+      },
+      {
+        "t": 205.66,
+        "w": "untouched"
+      },
+      {
+        "t": 206.6,
+        "w": "not"
+      },
+      {
+        "t": 206.82,
+        "w": "unchanged"
+      },
+      {
+        "t": 207.78,
+        "w": "not"
+      },
+      {
+        "t": 207.96,
+        "w": "ashamed"
+      },
+      {
+        "t": 209.34,
+        "w": "Forged"
+      },
+      {
+        "t": 210.2,
+        "w": "above"
+      },
+      {
+        "t": 210.54,
+        "w": "gold"
+      },
+      {
+        "t": 211.44,
+        "w": "Más"
+      },
+      {
+        "t": 212.1,
+        "w": "fuerte"
+      },
+      {
+        "t": 212.56,
+        "w": "que"
+      },
+      {
+        "t": 213,
+        "w": "ayer"
+      },
+      {
+        "t": 213.52,
+        "w": "No"
+      },
+      {
+        "t": 214.14,
+        "w": "more"
+      },
+      {
+        "t": 214.44,
+        "w": "begging"
+      },
+      {
+        "t": 214.88,
+        "w": "for"
+      },
+      {
+        "t": 215.26,
+        "w": "the"
+      },
+      {
+        "t": 215.6,
+        "w": "burn"
+      },
+      {
+        "t": 216.04,
+        "w": "just"
+      },
+      {
+        "t": 216.46,
+        "w": "to"
+      },
+      {
+        "t": 216.72,
+        "w": "know"
+      },
+      {
+        "t": 217.06,
+        "w": "somebody's"
+      },
+      {
+        "t": 218.02,
+        "w": "there"
+      },
+      {
+        "t": 218.3,
+        "w": "I"
+      },
+      {
+        "t": 218.9,
+        "w": "can"
+      },
+      {
+        "t": 219.1,
+        "w": "stand"
+      },
+      {
+        "t": 219.44,
+        "w": "in"
+      },
+      {
+        "t": 219.94,
+        "w": "the"
+      },
+      {
+        "t": 220.22,
+        "w": "quiet"
+      },
+      {
+        "t": 220.72,
+        "w": "Yo"
+      },
+      {
+        "t": 221.26,
+        "w": "me"
+      },
+      {
+        "t": 221.42,
+        "w": "puedo"
+      },
+      {
+        "t": 221.92,
+        "w": "quedar"
+      },
+      {
+        "t": 222.44,
+        "w": "I"
+      },
+      {
+        "t": 223.54,
+        "w": "can"
+      },
+      {
+        "t": 223.8,
+        "w": "carry"
+      },
+      {
+        "t": 224.3,
+        "w": "my"
+      },
+      {
+        "t": 224.7,
+        "w": "own"
+      },
+      {
+        "t": 225,
+        "w": "light"
+      },
+      {
+        "t": 225.44,
+        "w": "Sin"
+      },
+      {
+        "t": 225.9,
+        "w": "tenerte"
+      },
+      {
+        "t": 226.32,
+        "w": "que"
+      },
+      {
+        "t": 226.66,
+        "w": "salvar"
+      },
+      {
+        "t": 227.9,
+        "w": "Let"
+      },
+      {
+        "t": 228.14,
+        "w": "the"
+      },
+      {
+        "t": 228.48,
+        "w": "old"
+      },
+      {
+        "t": 228.9,
+        "w": "fire"
+      },
+      {
+        "t": 229.26,
+        "w": "go"
+      },
+      {
+        "t": 230.92,
+        "w": "There"
+      },
+      {
+        "t": 231.5,
+        "w": "is"
+      },
+      {
+        "t": 232.08,
+        "w": "nothing"
+      },
+      {
+        "t": 232.54,
+        "w": "left"
+      },
+      {
+        "t": 233.24,
+        "w": "to"
+      },
+      {
+        "t": 233.84,
+        "w": "prove"
+      },
+      {
+        "t": 234.48,
+        "w": "We"
+      },
+      {
+        "t": 235.08,
+        "w": "weren't"
+      },
+      {
+        "t": 235.38,
+        "w": "made"
+      },
+      {
+        "t": 235.9,
+        "w": "to"
+      },
+      {
+        "t": 236.74,
+        "w": "burn"
+      },
+      {
+        "t": 237.24,
+        "w": "forever"
+      },
+      {
+        "t": 239.2,
+        "w": "We"
+      },
+      {
+        "t": 240,
+        "w": "were"
+      },
+      {
+        "t": 240.2,
+        "w": "forged"
+      },
+      {
+        "t": 244.36,
+        "w": "The"
+      },
+      {
+        "t": 244.66,
+        "w": "fire"
+      },
+      {
+        "t": 245.02,
+        "w": "didn't"
+      },
+      {
+        "t": 245.34,
+        "w": "make"
+      },
+      {
+        "t": 245.56,
+        "w": "me"
+      },
+      {
+        "t": 245.8,
+        "w": "gold"
+      },
+      {
+        "t": 249,
+        "w": "It"
+      },
+      {
+        "t": 249.44,
+        "w": "taught"
+      },
+      {
+        "t": 250.05,
+        "w": "me"
+      },
+      {
+        "t": 251.66,
+        "w": "I"
+      },
+      {
+        "t": 252.06,
+        "w": "was"
+      },
+      {
+        "t": 252.5,
+        "w": "worth"
+      },
+      {
+        "t": 252.95,
+        "w": "more"
+      },
+      {
+        "t": 256.92,
+        "w": "Más"
+      },
+      {
+        "t": 257.66,
+        "w": "que"
+      },
+      {
+        "t": 258.06,
+        "w": "oro"
+      },
+      {
+        "t": 258.78,
+        "w": "Forged"
+      },
+      {
+        "t": 259.24,
+        "w": "above"
+      },
+      {
+        "t": 259.62,
+        "w": "gold"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-04T02:43:22.205Z",
+    "styleHint": "THE ANVIL LIGHT — documentary photography of a real working blacksmith shop at night. The only light in any frame is hot metal, the coal fire, or the cold violet of the quench. Deep black, muted, dirty, unglamorous. No fantasy, no spark showers, no crowns.",
+    "analysis": {
+      "themes": [
+        "forging",
+        "survival",
+        "fire",
+        "worth",
+        "letting go"
+      ],
+      "palette": [
+        "#E8A33D",
+        "#F2E4CE",
+        "#D9722F",
+        "#A98BEE"
+      ],
+      "summary": "Two people who came through fire decide it did not ruin them — it made them. The fire is not the enemy and it is not the saviour; it is the process, and it gets let go of at the end.",
+      "keywords": [],
+      "sections": [
+        {
+          "at": 190,
+          "label": "final chorus",
+          "emotion": "resolve",
+          "intensity": 0.58
+        },
+        {
+          "at": 209.34,
+          "label": "both voices",
+          "emotion": "together",
+          "intensity": 0.66
+        },
+        {
+          "at": 227.9,
+          "label": "let it go",
+          "emotion": "release",
+          "intensity": 0.7
+        },
+        {
+          "at": 241.6,
+          "label": "the break",
+          "emotion": "hush",
+          "intensity": 0.48
+        },
+        {
+          "at": 249,
+          "label": "the quench",
+          "emotion": "cooling",
+          "intensity": 0.34
+        },
+        {
+          "at": 256.92,
+          "label": "más que oro",
+          "emotion": "settled",
+          "intensity": 0.22
+        }
+      ],
+      "overallMood": "hard-won calm"
+    },
+    "assets": {
+      "broll": [],
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/forged-above-gold-fire-cycle/stems/stems.json",
+      "stemLag": 0,
+      "shots": {
+        "/planets/forged-above-gold-fire-cycle/scene-flame.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-untouched.webp": "MACRO",
+        "/planets/forged-above-gold-fire-cycle/scene-unchanged.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-fuerte.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-burn.webp": "CLOSE",
+        "/planets/forged-above-gold-fire-cycle/scene-somebodys.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-stand.webp": "CLOSE",
+        "/planets/forged-above-gold-fire-cycle/scene-quiet.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-puedo.webp": "CLOSE",
+        "/planets/forged-above-gold-fire-cycle/scene-carry.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-light.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-salvar.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-fire.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-nothing.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-prove.webp": "CLOSE",
+        "/planets/forged-above-gold-fire-cycle/scene-made.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-forever.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-were.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-quench.webp": "MED",
+        "/planets/forged-above-gold-fire-cycle/scene-worth.webp": "WIDE",
+        "/planets/forged-above-gold-fire-cycle/scene-endcard.webp": "MED"
+      },
+      "keywords": {
+        "came": "/planets/forged-above-gold-fire-cycle/scene-flame.webp",
+        "flame": "/planets/forged-above-gold-fire-cycle/scene-flame.webp",
+        "untouched": "/planets/forged-above-gold-fire-cycle/scene-untouched.webp",
+        "unchanged": "/planets/forged-above-gold-fire-cycle/scene-unchanged.webp",
+        "fuerte": "/planets/forged-above-gold-fire-cycle/scene-fuerte.webp",
+        "begging": "/planets/forged-above-gold-fire-cycle/scene-burn.webp",
+        "somebody's": "/planets/forged-above-gold-fire-cycle/scene-somebodys.webp",
+        "stand": "/planets/forged-above-gold-fire-cycle/scene-stand.webp",
+        "quiet": "/planets/forged-above-gold-fire-cycle/scene-quiet.webp",
+        "puedo": "/planets/forged-above-gold-fire-cycle/scene-puedo.webp",
+        "carry": "/planets/forged-above-gold-fire-cycle/scene-carry.webp",
+        "light": "/planets/forged-above-gold-fire-cycle/scene-light.webp",
+        "salvar": "/planets/forged-above-gold-fire-cycle/scene-salvar.webp",
+        "fire": "/planets/forged-above-gold-fire-cycle/scene-fire.webp",
+        "nothing": "/planets/forged-above-gold-fire-cycle/scene-nothing.webp",
+        "prove": "/planets/forged-above-gold-fire-cycle/scene-prove.webp",
+        "made": "/planets/forged-above-gold-fire-cycle/scene-made.webp",
+        "forever": "/planets/forged-above-gold-fire-cycle/scene-forever.webp",
+        "were": "/planets/forged-above-gold-fire-cycle/scene-were.webp",
+        "taught": "/planets/forged-above-gold-fire-cycle/scene-quench.webp",
+        "worth": "/planets/forged-above-gold-fire-cycle/scene-worth.webp",
+        "oro": "/planets/forged-above-gold-fire-cycle/scene-endcard.webp"
+      },
+      "sections": {
+        "resolve": "/planets/forged-above-gold-fire-cycle/scene-flame.webp",
+        "together": "/planets/forged-above-gold-fire-cycle/scene-somebodys.webp",
+        "release": "/planets/forged-above-gold-fire-cycle/scene-fire.webp",
+        "hush": "/planets/forged-above-gold-fire-cycle/scene-nothing.webp",
+        "cooling": "/planets/forged-above-gold-fire-cycle/scene-worth.webp",
+        "settled": "/planets/forged-above-gold-fire-cycle/scene-endcard.webp"
+      }
+    },
+    "interactions": {
+      "moments": [],
+      "tapEffect": "bloom"
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "FORGED ABOVE GOLD 62s cut — THE ANVIL LIGHT voice, 22 plates, the artists matted from their own photographs rather than generated. (window 199.36-261.4)",
+      "scene": "EMBER",
+      "acts": [
+        {
+          "start": 199.36,
+          "end": 218.3,
+          "label": "FORGED ABOVE GOLD",
+          "why": "the final chorus, both voices"
+        },
+        {
+          "start": 218.3,
+          "end": 241.6,
+          "label": "THE TRADE",
+          "why": "English and Spanish alternating, then let the fire go"
+        },
+        {
+          "start": 241.6,
+          "end": 261.4,
+          "label": "MÁS QUE ORO",
+          "why": "the break, the spoken truth, the quench"
+        }
+      ],
+      "modes": [
+        {
+          "start": 199.36,
+          "end": 261.4,
+          "mode": "phrase"
+        }
+      ],
+      "words": {
+        "Forged": "cling",
+        "forged": "cling",
+        "gold": "shimmer",
+        "flame": "melt",
+        "untouched": "press",
+        "unchanged": "press",
+        "ashamed": "smudge",
+        "fuerte": "quake",
+        "burn": "melt",
+        "begging": "tremor",
+        "quiet": "fogbreath",
+        "puedo": "tilt",
+        "carry": "rise",
+        "light": "bloom",
+        "salvar": "dissolve",
+        "fire": "melt",
+        "nothing": "dissolve",
+        "prove": "press",
+        "forever": "cling",
+        "were": "slam",
+        "taught": "quake",
+        "worth": "rise",
+        "more": "cling",
+        "oro": "shimmer",
+        "Más": "shimmer"
+      },
+      "deck": {
+        "glow": 1.15,
+        "grain": 0.62,
+        "density": 1.6,
+        "vignette": 0.72,
+        "giant": {
+          "life": 2000,
+          "pile": 0,
+          "clearOnSwitch": true
+        },
+        "motion": {
+          "swapMs": 650
+        }
+      },
+      "hits": [],
+      "holds": [
+        {
+          "start": 246.4,
+          "end": 249
+        }
+      ],
+      "rolls": []
+    }
+  }
+}

@@ -790,3 +790,99 @@ bass". Scripts in `scripts/twthi/`; art generator `scripts/song-art/twthi-art.mj
   between monoliths, two on a canyon floor, one silhouetted at a crack, one on
   a horizon) despite "no people" positives and negatives. All four were
   visible at 500px and invisible at 250px.
+
+## 19 · Forged Above Gold — the ComfyUI VAE hang, and two more silent traps (2026-09-03)
+
+Twelfth voice: **THE ANVIL LIGHT** — documentary photography of a real working
+blacksmith shop at night, lit only by hot metal, the coal fire, or the cold
+violet of the quench. Deep black, muted, dirty. Built to an explicit owner brief
+— *"the visuals are secondary; i just dont want them to be cheesy"* — so the
+negative prompt (no fantasy, no sword, no crown, no spark shower, no epic, no
+god rays) did as much work as the positive one. Window 199.36 → 261.40 (62.0s):
+the whole final chorus, the break, the spoken ending and the two whispers the
+song actually ends on. Scripts in `scripts/fag/`, full write-up in its README.
+
+**Search by title and you will get the wrong song.** The catalogue already held
+`void-into-gold-forged-above-gold-mix` (a 332s gospel boom-bap record, complete
+with profile, planet, splice and analyzer entries) *and*
+`oro-de-la-presion-forged-above-gold`. Neither is the Tyler × Kizuna song. Check
+`identity.title` and the measured duration before trusting a profile directory
+whose name matches your song.
+
+**ComfyUI hangs forever in `AutoencoderKL` when the VAE is bfloat16.** This
+looked exactly like the PRIME freeze and is not it: HTTP stops answering, the
+GPU sits at 0%, ~7GB stays held, no further log line. Sampling *completes*
+normally (26s at 832×1472/28 steps); the last line is always `Requested to load
+AutoencoderKL`. Not VRAM (it hangs with 13GB free) and `VAEDecodeTiled` does not
+help — same VAE path. **`--fp32-vae` fixes it outright**: two plates in 38s.
+The service unit runs bare `main.py`, so rather than edit it, run a private
+instance for the batch and leave the service alone:
+
+```bash
+cd ~/AI/ComfyUI && .venv/bin/python main.py --listen 127.0.0.1 --port 8190 \
+  --fp32-vae --disable-smart-memory
+```
+
+Also: the service listens on **:8189**; `:8188` is a systemd socket that raises
+it on demand.
+
+**A busy ComfyUI is not a wedged ComfyUI.** It serves HTTP on the same event
+loop that runs sampling, so `/system_stats` can take **13+ seconds** to answer
+mid-generation. A `curl -m 6` health check calls it dead and sends you
+restarting a process that was working — which is exactly what happened here,
+twice, before the real bug was found. Diagnose a hang with **GPU utilisation at
+0% AND no new journal line**, never with an HTTP timeout.
+
+**`analysis.palette` is the WORD colour array, not a mood board.** Preflight
+failed the first render: `palette contains near-black entries (#2A1B12) — the
+engine draws words from this array, so roughly one word in 4 renders invisible`.
+Writing the palette as "the voice's colours" is the natural thing to do and
+completely wrong; every entry has to be legible on the darkest frame in the cut.
+
+**Whisper parks spoken-word outros inside silence.** The sung body aligned
+cleanly, but after the break whisper placed `The` at 240.84 and `fire` at
+242.72 against a lead stem sitting at −70 to −103 dB — the line actually starts
+at **244.36**, so both were 3.5s early, and `It`/`taught` landed inside the
+scripted `[Pause]`. Segment text was correct and word probabilities were 0.90+;
+only the RMS map catches it. Gate whispered sections at **−52 dB**, not −42:
+they sit ~20 dB below the sung body and a −42 gate rejects honest onsets.
+
+**A repeated anchor counts twice in the shot-size histogram.** The first
+complete pick set came in at WIDE 27% / CLOSE+MACRO 36% — both outside §17's
+targets. The fix was a single plate: `fire` is the only keyword that fires twice
+in the window, so re-rolling it from a coke macro into a wide establishing shot
+moved the whole set to **WIDE 43% / CLOSE+MACRO 22%**. When a histogram is off,
+look for a repeated anchor before re-rolling four separate plates.
+
+**Two defects that every automated check passed, and only frames caught:**
+
+- A `hits` accent on the drop (`{t: 201.70, dur: 1.0}`) rendered as a **full
+  second of blown white** in a film whose every frame is near-black. Preflight,
+  VERIFY and the histogram were all green. Deleted — the mix lands the drop.
+- The window opened on **4.3s of black**: the first keyword was at 203.64, and
+  `analysis.sections[0].at` had been set to `FROM`. A section boundary that
+  *equals* the render start is never crossed, so no section art came up either.
+  Set the opening section's `at` BEFORE the window (190.00 here) so it is
+  already active on frame one.
+
+Also `deck.motion.swapMs` 900 → 650: at 900ms consecutive plates were visibly
+cross-dissolved into a double exposure.
+
+**Do not put the artists in with u2net if their sources are album covers.**
+u2net treats large graphic TYPE as foreground (`extract-subject.py` warns about
+this in its own docstring), so matting `#MADETOBREAK` returned the *wordmark* —
+the first composite pass put a floating orange "ME" into two plates. Cropping
+the title block off exposed the real problem: on a wet-street cover the matte
+takes the reflection, and on a bust the hair fringes; he arrived as a dark blob
+with a jagged rim. **What worked was not compositing at all** — one graded
+portrait each from their real photographs, full-bleed, on their own line (hers
+at *"Más fuerte que ayer"*, his at *"I can stand in the quiet"*), warm for the
+forge and cold for the quench. Unmistakably them, zero artifacts, and two
+portraits among twenty forge plates is a deliberate beat rather than §17's
+"powerpoint of selfies".
+
+**Don't `pgrep -f <pattern>` from a shell whose own command line contains the
+pattern.** Three chained `until ! pgrep -f "scripts/fag/art.py"` waiters each
+matched themselves and never exited, so a queued re-roll never started and
+looked like another GPU hang. Match the interpreter too, or poll for the output
+file.

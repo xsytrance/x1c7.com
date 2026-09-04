@@ -118,6 +118,7 @@ __pycache__/
 scripts/dts2/art-out/
 scripts/dts2/*.log
 scripts/dts2/measure-*.txt
+scripts/fag/plates/
 scripts/song-analysis/profiles/*/qa-*/
 
 # Conformed stem exports live on R2 like every other master — no profile has

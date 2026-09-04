@@ -1,0 +1,23 @@
+{
+  "flame": "scripts/fag/plates/flame.png",
+  "untouched": "scripts/fag/plates/untouched.png",
+  "unchanged": "scripts/fag/plates/unchanged.png",
+  "fuerte": "scripts/fag/plates/fuerte.png",
+  "burn": "scripts/fag/plates/burn.png",
+  "somebodys": "scripts/fag/plates/somebodys.png",
+  "stand": "scripts/fag/plates/stand.png",
+  "quiet": "scripts/fag/plates/quiet.png",
+  "puedo": "scripts/fag/plates/puedo.png",
+  "carry": "scripts/fag/plates/carry.png",
+  "light": "scripts/fag/plates/light.png",
+  "salvar": "scripts/fag/plates/salvar.png",
+  "fire": "scripts/fag/plates/fire.png",
+  "nothing": "scripts/fag/plates/nothing.png",
+  "prove": "scripts/fag/plates/prove.png",
+  "made": "scripts/fag/plates/made.png",
+  "forever": "scripts/fag/plates/forever.png",
+  "were": "scripts/fag/plates/were.png",
+  "quench": "scripts/fag/plates/quench.png",
+  "worth": "scripts/fag/plates/worth.png",
+  "endcard": "scripts/fag/plates/endcard.png"
+}
