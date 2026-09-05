@@ -1,7 +1,6 @@
 {
   "Warm":    "burning",
-  "Ấm":      "am",
-  "cháy":    "chay",
+  "ấm":      "am",
   "for":     "fire",
   "stay":    "stay",
   "break":   "break",
@@ -13,6 +12,7 @@
   "yên":     "yen",
   "scars":   "scars",
   "run":     "run",
+  "thiêu":   "chay",
   "stayed":  "stayed",
   "đau":     "dau"
 }
