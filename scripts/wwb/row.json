@@ -384,7 +384,7 @@
    }
   ],
   "source": "wwb-lead-stem-rebuild",
-  "alignedAt": "2026-09-05T00:49:24.188Z"
+  "alignedAt": "2026-09-05T01:15:41.732Z"
  },
  "planet": {
   "analysis": {
@@ -397,10 +397,10 @@
     "Acceptance of Vulnerability"
    ],
    "palette": [
-    "#051428",
-    "#FF6F3C",
-    "#D9A73B",
-    "#E6ECEF"
+    "#08111C",
+    "#FFD98A",
+    "#FF8A4C",
+    "#FFF4E2"
    ],
    "sections": [
     {
@@ -681,7 +681,7 @@
     "/planets/warm-without-burning/scene-chay.webp": "CLOSE",
     "/planets/warm-without-burning/scene-fire.webp": "MED",
     "/planets/warm-without-burning/scene-stay.webp": "WIDE",
-    "/planets/warm-without-burning/scene-break.webp": "MACRO",
+    "/planets/warm-without-burning/scene-break.webp": "WIDE",
     "/planets/warm-without-burning/scene-quantam.webp": "MED",
     "/planets/warm-without-burning/scene-dark.webp": "WIDE",
     "/planets/warm-without-burning/scene-nuoc.webp": "MED",
@@ -691,7 +691,7 @@
     "/planets/warm-without-burning/scene-yen.webp": "WIDE",
     "/planets/warm-without-burning/scene-scars.webp": "MED",
     "/planets/warm-without-burning/scene-run.webp": "WIDE",
-    "/planets/warm-without-burning/scene-am.webp": "CLOSE",
+    "/planets/warm-without-burning/scene-am.webp": "MED",
     "/planets/warm-without-burning/scene-stayed.webp": "WIDE",
     "/planets/warm-without-burning/scene-dau.webp": "MED",
     "/planets/warm-without-burning/scene-dawn.webp": "WIDE"
@@ -703,11 +703,11 @@
    "tapEffect": "ember",
    "moments": [
     {
-     "t": 96,
-     "end": 108,
+     "t": 246.6,
+     "end": 247.6,
      "type": "wipe",
-     "layer": "ash",
-     "prompt": "let the fire go out"
+     "layer": "mist",
+     "prompt": "let the river go quiet"
     }
    ]
   },
@@ -785,9 +785,9 @@
    "deck": {
     "art": true,
     "density": 1.6,
-    "glow": 0.6,
+    "glow": 0.9,
     "grain": 0.3,
-    "vignette": 0.42,
+    "vignette": 0.56,
     "backdropHue": 28,
     "giant": {
      "life": 1500,

@@ -7,12 +7,12 @@ const SLUG = "warm-without-burning";
 const P = `scripts/song-analysis/profiles/${SLUG}`;
 const words = JSON.parse(readFileSync("scripts/wwb/words.json", "utf8"));
 const anchors = JSON.parse(readFileSync("scripts/wwb/anchors.json", "utf8"));
-const scenes = JSON.parse(readFileSync("scripts/song-art/wwb-out/scenes.json", "utf8"));
+const shots = JSON.parse(readFileSync("scripts/wwb/shots.json", "utf8"));
 const base = JSON.parse(readFileSync(`${P}/${SLUG}-planet-full.json`, "utf8"));
 const track = JSON.parse(readFileSync(`${P}/tracks.json`, "utf8"))[0];
 
 const url = (n) => `/planets/${SLUG}/scene-${n}.webp`;
-const SHOT = Object.fromEntries(scenes.map(([n, , shot]) => [url(n), shot]));
+const SHOT = Object.fromEntries(Object.entries(shots).map(([n, sh]) => [url(n), sh]));
 
 // word -> plate url
 const keywords = Object.fromEntries(Object.entries(anchors).map(([w, n]) => [w, url(n)]));
@@ -40,15 +40,24 @@ for (let i = 1; i < SECTIONS.length; i++) {
   if (SECTIONS[i].intensity > 0.71) throw new Error(`SHAKE banner risk at ${SECTIONS[i].name}`);
 }
 
+const PALETTE = ["#08111C", "#FFD98A", "#FF8A4C", "#FFF4E2"];
+
 const planet = {
   ...base,
-  analysis: { ...base.analysis, sections: SECTIONS },
+  analysis: { ...base.analysis, palette: PALETTE, sections: SECTIONS },
   assets: { keywords, sections, shots: SHOT, alt: {} },
-  // §14: an EMPTY moments array makes KineticStage invent wipe/blow banners.
-  // One real moment, entirely outside the cut, keeps synthesis switched off.
+  // §14 is too loose: synthesis is not gated on moments being EMPTY, it is
+  // gated on free(), which only refuses when a CHOREOGRAPHED moment sits within
+  // +/-8s of the synthesized one (KineticStage ~1054). A decoy parked at t=96
+  // therefore blocked nothing, and the 8.6s ambience gap before the last
+  // whisper synthesized a "WIPE THE ASH AWAY" prompt straight into the outro.
+  // Nobody taps a rendered video, so any banner here is stray UI.
+  // The blocker has to be adjacent to the synthesized window, not far from it:
+  // this one starts just AFTER the cut ends (246.43) so it is never drawn, but
+  // still lands inside free()'s 8s buffer and refuses the wipe.
   interactions: {
     tapEffect: "ember",
-    moments: [{ t: 96, end: 108, type: "wipe", layer: "ash", prompt: "let the fire go out" }],
+    moments: [{ t: 246.6, end: 247.6, type: "wipe", layer: "mist", prompt: "let the river go quiet" }],
   },
   dynamicPlus: {
     v: 2,
@@ -78,9 +87,9 @@ const planet = {
     deck: {
       art: true,
       density: 1.6,        // embers, not a blizzard
-      glow: 0.6,
+      glow: 0.9,
       grain: 0.30,         // lacquer craquelure
-      vignette: 0.42,      // polished panel falls off at the edges
+      vignette: 0.56,      // darker edges so the words carry over mid-tone water
       backdropHue: 28,
       giant: { life: 1500, pile: 0, clearOnSwitch: true },
       motion: { dur: 2.4, amp: 0.9, swapMs: 1000, fade: 0.42 },
@@ -107,5 +116,5 @@ const row = {
 writeFileSync("scripts/wwb/row.json", JSON.stringify(row, null, 1));
 console.log(`row.json: ${words.length} words, ${Object.keys(keywords).length} keywords, ${Object.keys(SHOT).length} shots`);
 const hist = {};
-for (const [, , s] of scenes) hist[s] = (hist[s] ?? 0) + 1;
+for (const s of Object.values(shots)) hist[s] = (hist[s] ?? 0) + 1;
 console.log("shot histogram:", hist);
