@@ -124,3 +124,9 @@ scripts/song-analysis/profiles/*/qa-*/
 # ever tracked audio (release.mp3 is already ignored above) and hajimemashite's
 # conformed set alone is 46MB.
 scripts/song-analysis/profiles/*/stems_aligned/
+
+# Osaka re-cut intermediates: raw candidates, graded PNGs and audit sheets.
+# Only the published webp plates under public/planets/ belong in git.
+scripts/osaka2/plates/
+scripts/osaka2/graded/
+scripts/osaka2/sheets/

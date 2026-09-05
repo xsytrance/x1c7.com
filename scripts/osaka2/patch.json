@@ -1,0 +1,977 @@
+{
+ "hidden": true,
+ "audio_url": "/private/osaka-after-dark.mp3",
+ "lyrics_synced": {
+  "words": [
+   {
+    "t": 73.58,
+    "w": "Wine"
+   },
+   {
+    "t": 73.917,
+    "w": "with"
+   },
+   {
+    "t": 74.253,
+    "w": "me,"
+   },
+   {
+    "t": 74.59,
+    "w": "wine"
+   },
+   {
+    "t": 74.927,
+    "w": "with"
+   },
+   {
+    "t": 75.263,
+    "w": "me"
+   },
+   {
+    "t": 75.74,
+    "w": "Osaka"
+   },
+   {
+    "t": 76.077,
+    "w": "after"
+   },
+   {
+    "t": 76.414,
+    "w": "dark,"
+   },
+   {
+    "t": 76.751,
+    "w": "come"
+   },
+   {
+    "t": 77.089,
+    "w": "grind"
+   },
+   {
+    "t": 77.426,
+    "w": "with"
+   },
+   {
+    "t": 77.763,
+    "w": "me"
+   },
+   {
+    "t": 78.16,
+    "w": "Neon"
+   },
+   {
+    "t": 78.415,
+    "w": "light"
+   },
+   {
+    "t": 78.67,
+    "w": "dripping,"
+   },
+   {
+    "t": 78.925,
+    "w": "gold"
+   },
+   {
+    "t": 79.18,
+    "w": "all"
+   },
+   {
+    "t": 79.435,
+    "w": "on"
+   },
+   {
+    "t": 79.69,
+    "w": "the"
+   },
+   {
+    "t": 79.945,
+    "w": "floor"
+   },
+   {
+    "t": 80.28,
+    "w": "He"
+   },
+   {
+    "t": 80.573,
+    "w": "said"
+   },
+   {
+    "t": 80.865,
+    "w": "yamenaide,"
+   },
+   {
+    "t": 81.157,
+    "w": "so"
+   },
+   {
+    "t": 81.45,
+    "w": "I"
+   },
+   {
+    "t": 81.743,
+    "w": "gave"
+   },
+   {
+    "t": 82.035,
+    "w": "him"
+   },
+   {
+    "t": 82.328,
+    "w": "more"
+   },
+   {
+    "t": 82.68,
+    "w": "Body"
+   },
+   {
+    "t": 83.011,
+    "w": "on"
+   },
+   {
+    "t": 83.343,
+    "w": "beat,"
+   },
+   {
+    "t": 83.674,
+    "w": "no"
+   },
+   {
+    "t": 84.006,
+    "w": "talking"
+   },
+   {
+    "t": 84.337,
+    "w": "too"
+   },
+   {
+    "t": 84.669,
+    "w": "much"
+   },
+   {
+    "t": 85.06,
+    "w": "Hip-hop"
+   },
+   {
+    "t": 85.45,
+    "w": "swing"
+   },
+   {
+    "t": 85.84,
+    "w": "with"
+   },
+   {
+    "t": 86.23,
+    "w": "the"
+   },
+   {
+    "t": 86.62,
+    "w": "dancehall"
+   },
+   {
+    "t": 87.01,
+    "w": "touch"
+   },
+   {
+    "t": 87.46,
+    "w": "Ne,"
+   },
+   {
+    "t": 87.729,
+    "w": "kimi,"
+   },
+   {
+    "t": 87.998,
+    "w": "come"
+   },
+   {
+    "t": 88.267,
+    "w": "close,"
+   },
+   {
+    "t": 88.536,
+    "w": "let"
+   },
+   {
+    "t": 88.804,
+    "w": "the"
+   },
+   {
+    "t": 89.073,
+    "w": "rhythm"
+   },
+   {
+    "t": 89.342,
+    "w": "get"
+   },
+   {
+    "t": 89.611,
+    "w": "rude"
+   },
+   {
+    "t": 89.94,
+    "w": "Konya"
+   },
+   {
+    "t": 90.197,
+    "w": "wa"
+   },
+   {
+    "t": 90.455,
+    "w": "nemuranai,"
+   },
+   {
+    "t": 90.713,
+    "w": "we"
+   },
+   {
+    "t": 90.97,
+    "w": "don't"
+   },
+   {
+    "t": 91.227,
+    "w": "need"
+   },
+   {
+    "t": 91.485,
+    "w": "no"
+   },
+   {
+    "t": 91.743,
+    "w": "room"
+   },
+   {
+    "t": 92.04,
+    "w": "Come"
+   },
+   {
+    "t": 92.62,
+    "w": "closer"
+   },
+   {
+    "t": 93.26,
+    "w": "Sawatte"
+   },
+   {
+    "t": 94.62,
+    "w": "So"
+   },
+   {
+    "t": 95.013,
+    "w": "hot,"
+   },
+   {
+    "t": 95.407,
+    "w": "ma"
+   },
+   {
+    "t": 95.84,
+    "w": "Yamenaide"
+   },
+   {
+    "t": 97.6,
+    "w": "Okay,"
+   },
+   {
+    "t": 97.95,
+    "w": "hips"
+   },
+   {
+    "t": 98.3,
+    "w": "got"
+   },
+   {
+    "t": 98.65,
+    "w": "grammar,"
+   },
+   {
+    "t": 99,
+    "w": "I"
+   },
+   {
+    "t": 99.35,
+    "w": "speak"
+   },
+   {
+    "t": 99.7,
+    "w": "in"
+   },
+   {
+    "t": 100.05,
+    "w": "motion"
+   },
+   {
+    "t": 100.44,
+    "w": "Plum"
+   },
+   {
+    "t": 100.799,
+    "w": "wine"
+   },
+   {
+    "t": 101.157,
+    "w": "vibe"
+   },
+   {
+    "t": 101.516,
+    "w": "with"
+   },
+   {
+    "t": 101.874,
+    "w": "a"
+   },
+   {
+    "t": 102.233,
+    "w": "neon"
+   },
+   {
+    "t": 102.591,
+    "w": "ocean"
+   },
+   {
+    "t": 103,
+    "w": "No"
+   },
+   {
+    "t": 103.307,
+    "w": "sweet"
+   },
+   {
+    "t": 103.614,
+    "w": "talk,"
+   },
+   {
+    "t": 103.921,
+    "w": "just"
+   },
+   {
+    "t": 104.229,
+    "w": "bass"
+   },
+   {
+    "t": 104.536,
+    "w": "and"
+   },
+   {
+    "t": 104.843,
+    "w": "devotion"
+   },
+   {
+    "t": 105.22,
+    "w": "I"
+   },
+   {
+    "t": 105.518,
+    "w": "bend"
+   },
+   {
+    "t": 105.816,
+    "w": "this"
+   },
+   {
+    "t": 106.113,
+    "w": "rhythm"
+   },
+   {
+    "t": 106.411,
+    "w": "'cause"
+   },
+   {
+    "t": 106.709,
+    "w": "I"
+   },
+   {
+    "t": 107.007,
+    "w": "own"
+   },
+   {
+    "t": 107.304,
+    "w": "the"
+   },
+   {
+    "t": 107.602,
+    "w": "quotient"
+   },
+   {
+    "t": 107.94,
+    "w": "Tokyo"
+   },
+   {
+    "t": 108.18,
+    "w": "in"
+   },
+   {
+    "t": 108.42,
+    "w": "my"
+   },
+   {
+    "t": 108.66,
+    "w": "blood"
+   },
+   {
+    "t": 108.9,
+    "w": "but"
+   },
+   {
+    "t": 109.14,
+    "w": "Osaka"
+   },
+   {
+    "t": 109.38,
+    "w": "in"
+   },
+   {
+    "t": 109.62,
+    "w": "the"
+   },
+   {
+    "t": 109.86,
+    "w": "heat"
+   },
+   {
+    "t": 110.16,
+    "w": "Kansai"
+   },
+   {
+    "t": 110.394,
+    "w": "on"
+   },
+   {
+    "t": 110.628,
+    "w": "my"
+   },
+   {
+    "t": 110.862,
+    "w": "tongue"
+   },
+   {
+    "t": 111.096,
+    "w": "when"
+   },
+   {
+    "t": 111.33,
+    "w": "I"
+   },
+   {
+    "t": 111.564,
+    "w": "wine"
+   },
+   {
+    "t": 111.798,
+    "w": "on"
+   },
+   {
+    "t": 112.032,
+    "w": "the"
+   },
+   {
+    "t": 112.266,
+    "w": "beat"
+   },
+   {
+    "t": 112.56,
+    "w": "She"
+   },
+   {
+    "t": 112.883,
+    "w": "got"
+   },
+   {
+    "t": 113.207,
+    "w": "that"
+   },
+   {
+    "t": 113.53,
+    "w": "midnight,"
+   },
+   {
+    "t": 113.853,
+    "w": "please-save-me"
+   },
+   {
+    "t": 114.177,
+    "w": "face"
+   },
+   {
+    "t": 114.56,
+    "w": "Gomen"
+   },
+   {
+    "t": 114.95,
+    "w": "ne,"
+   },
+   {
+    "t": 115.34,
+    "w": "I"
+   },
+   {
+    "t": 115.73,
+    "w": "don't"
+   },
+   {
+    "t": 116.12,
+    "w": "do"
+   },
+   {
+    "t": 116.51,
+    "w": "grace"
+   },
+   {
+    "t": 116.94,
+    "w": "You"
+   },
+   {
+    "t": 117.23,
+    "w": "always"
+   },
+   {
+    "t": 117.52,
+    "w": "this"
+   },
+   {
+    "t": 117.81,
+    "w": "cold?"
+   },
+   {
+    "t": 118.26,
+    "w": "Don't"
+   },
+   {
+    "t": 118.507,
+    "w": "act"
+   },
+   {
+    "t": 118.753,
+    "w": "shy"
+   },
+   {
+    "t": 119.44,
+    "w": "Look"
+   },
+   {
+    "t": 119.672,
+    "w": "me"
+   },
+   {
+    "t": 119.904,
+    "w": "in"
+   },
+   {
+    "t": 120.136,
+    "w": "the"
+   },
+   {
+    "t": 120.368,
+    "w": "dark"
+   },
+   {
+    "t": 120.74,
+    "w": "Tell"
+   },
+   {
+    "t": 120.943,
+    "w": "me"
+   },
+   {
+    "t": 121.147,
+    "w": "why"
+   },
+   {
+    "t": 121.42,
+    "w": "I"
+   },
+   {
+    "t": 121.846,
+    "w": "don't"
+   },
+   {
+    "t": 122.271,
+    "w": "ask,"
+   },
+   {
+    "t": 122.697,
+    "w": "I"
+   },
+   {
+    "t": 123.123,
+    "w": "read"
+   },
+   {
+    "t": 123.549,
+    "w": "body"
+   },
+   {
+    "t": 123.974,
+    "w": "language"
+   },
+   {
+    "t": 124.44,
+    "w": "You"
+   },
+   {
+    "t": 124.716,
+    "w": "say"
+   },
+   {
+    "t": 124.993,
+    "w": "stop,"
+   },
+   {
+    "t": 125.269,
+    "w": "then"
+   },
+   {
+    "t": 125.545,
+    "w": "I"
+   },
+   {
+    "t": 125.821,
+    "w": "stop,"
+   },
+   {
+    "t": 126.097,
+    "w": "no"
+   },
+   {
+    "t": 126.374,
+    "w": "panic"
+   },
+   {
+    "t": 126.7,
+    "w": "But"
+   },
+   {
+    "t": 127,
+    "w": "you"
+   },
+   {
+    "t": 127.3,
+    "w": "said"
+   },
+   {
+    "t": 127.6,
+    "w": "yamenaide"
+   },
+   {
+    "t": 127.9,
+    "w": "with"
+   },
+   {
+    "t": 128.2,
+    "w": "your"
+   },
+   {
+    "t": 128.5,
+    "w": "hand"
+   },
+   {
+    "t": 128.8,
+    "w": "on"
+   },
+   {
+    "t": 129.1,
+    "w": "my"
+   },
+   {
+    "t": 129.4,
+    "w": "chain"
+   },
+   {
+    "t": 129.76,
+    "w": "Now"
+   },
+   {
+    "t": 130.018,
+    "w": "the"
+   },
+   {
+    "t": 130.276,
+    "w": "bassline"
+   },
+   {
+    "t": 130.533,
+    "w": "dirty"
+   },
+   {
+    "t": 130.791,
+    "w": "and"
+   },
+   {
+    "t": 131.049,
+    "w": "the"
+   },
+   {
+    "t": 131.307,
+    "w": "room"
+   },
+   {
+    "t": 131.564,
+    "w": "feel"
+   },
+   {
+    "t": 131.822,
+    "w": "insane"
+   }
+  ],
+  "source": "osaka2-chorus-window-73.58-132.08",
+  "alignedAt": "2026-09-05T02:20:01.937Z"
+ },
+ "planet": {
+  "assets": {
+   "broll": [],
+   "shots": {
+    "/planets/osaka-after-dark/scene-body.webp": "MED",
+    "/planets/osaka-after-dark/scene-dancehall.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-kimi.webp": "MED",
+    "/planets/osaka-after-dark/scene-konya.webp": "MED",
+    "/planets/osaka-after-dark/scene-sawatte.webp": "MED",
+    "/planets/osaka-after-dark/scene-grammar.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-plum.webp": "MACRO",
+    "/planets/osaka-after-dark/scene-bass.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-tokyo.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-kansai.webp": "MED",
+    "/planets/osaka-after-dark/scene-midnight.webp": "CLOSE",
+    "/planets/osaka-after-dark/scene-chain.webp": "MACRO",
+    "/planets/osaka-after-dark/scene-insane.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-wine.webp": "MED",
+    "/planets/osaka-after-dark/scene-osaka.webp": "WIDE",
+    "/planets/osaka-after-dark/scene-dripping.webp": "MED",
+    "/planets/osaka-after-dark/scene-yamenaide.webp": "MED",
+    "/planets/osaka-after-dark/scene-closer.webp": "MACRO"
+   },
+   "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/osaka-after-dark/stems/stems.json",
+   "stemLag": 0,
+   "keywords": {
+    "Wine": "/planets/osaka-after-dark/scene-wine.webp",
+    "Osaka": "/planets/osaka-after-dark/scene-osaka.webp",
+    "dripping": "/planets/osaka-after-dark/scene-dripping.webp",
+    "yamenaide": "/planets/osaka-after-dark/scene-yamenaide.webp",
+    "Body": "/planets/osaka-after-dark/scene-body.webp",
+    "dancehall": "/planets/osaka-after-dark/scene-dancehall.webp",
+    "kimi": "/planets/osaka-after-dark/scene-kimi.webp",
+    "Konya": "/planets/osaka-after-dark/scene-konya.webp",
+    "closer": "/planets/osaka-after-dark/scene-closer.webp",
+    "grammar": "/planets/osaka-after-dark/scene-grammar.webp",
+    "ocean": "/planets/osaka-after-dark/scene-plum.webp",
+    "bass": "/planets/osaka-after-dark/scene-bass.webp",
+    "Tokyo": "/planets/osaka-after-dark/scene-tokyo.webp",
+    "Kansai": "/planets/osaka-after-dark/scene-kansai.webp",
+    "midnight": "/planets/osaka-after-dark/scene-midnight.webp",
+    "chain": "/planets/osaka-after-dark/scene-chain.webp",
+    "insane": "/planets/osaka-after-dark/scene-insane.webp"
+   },
+   "sections": {
+    "hook": "/planets/osaka-after-dark/scene-osaka.webp",
+    "swagger": "/planets/osaka-after-dark/scene-grammar.webp",
+    "intimate": "/planets/osaka-after-dark/scene-sawatte.webp",
+    "peak": "/planets/osaka-after-dark/scene-insane.webp"
+   }
+  },
+  "analysis": {
+   "themes": [
+    "night",
+    "neon",
+    "wanting",
+    "control",
+    "the city"
+   ],
+   "palette": [
+    "#E8B54A",
+    "#FF3D8B",
+    "#46D9F2",
+    "#F5E6C8"
+   ],
+   "summary": "She runs the night and knows it. The bass does the asking, she does the deciding, and the record ends on her laughing about it.",
+   "keywords": [],
+   "sections": [
+    {
+     "start": 1.46,
+     "name": "Intro",
+     "emotion": "intimate",
+     "intensity": 0.18,
+     "colorHint": "#0a0710"
+    },
+    {
+     "start": 22,
+     "name": "Verse 1",
+     "emotion": "swagger",
+     "intensity": 0.42,
+     "colorHint": "#1a0a18"
+    },
+    {
+     "start": 45,
+     "name": "Pre-Chorus",
+     "emotion": "hook",
+     "intensity": 0.58,
+     "colorHint": "#240c22"
+    },
+    {
+     "start": 73.58,
+     "name": "Chorus",
+     "emotion": "hook",
+     "intensity": 0.66,
+     "colorHint": "#2e0d28"
+    },
+    {
+     "start": 92.04,
+     "name": "Ad-libs",
+     "emotion": "intimate",
+     "intensity": 0.52,
+     "colorHint": "#190a1a"
+    },
+    {
+     "start": 97.6,
+     "name": "Verse 2",
+     "emotion": "swagger",
+     "intensity": 0.64,
+     "colorHint": "#260c20"
+    },
+    {
+     "start": 116.94,
+     "name": "Male Response",
+     "emotion": "intimate",
+     "intensity": 0.46,
+     "colorHint": "#140a18"
+    },
+    {
+     "start": 121.42,
+     "name": "Female Lead",
+     "emotion": "swagger",
+     "intensity": 0.62,
+     "colorHint": "#280d24"
+    },
+    {
+     "start": 132.08,
+     "name": "R&B Lift",
+     "emotion": "hook",
+     "intensity": 0.5,
+     "colorHint": "#1e0c20"
+    }
+   ],
+   "overallMood": "neon-lit control"
+  },
+  "styleHint": "THE WET NEON \u2014 documentary night photography of Dotonbori, Osaka after midnight. The only light in any frame is neon signage, paper lanterns or tail lights. Gold and hot magenta on deep black, cyan behind. Every surface wet and doubling the signs. No people in any frame.",
+  "dynamicPlus": {
+   "v": 2,
+   "acts": [
+    {
+     "start": 73.58,
+     "end": 78.1,
+     "label": "WINE WITH ME",
+     "why": "The hook lands \u2014 the title line of the chorus."
+    },
+    {
+     "start": 89.94,
+     "end": 92,
+     "label": "KONYA WA NEMURANAI",
+     "why": "Tonight we don't sleep \u2014 the line the whole cut turns on."
+    },
+    {
+     "start": 97.6,
+     "end": 100.4,
+     "label": "HIPS GOT GRAMMAR",
+     "why": "Verse 2 opens on the best boast in the song."
+    },
+    {
+     "start": 107.94,
+     "end": 112.5,
+     "label": "TOKYO IN MY BLOOD",
+     "why": "The Kansai/Tokyo brag, and the reason the city is the film."
+    },
+    {
+     "start": 126.7,
+     "end": 132.08,
+     "label": "HAND ON MY CHAIN",
+     "why": "The turn: she reads it, and the room goes."
+    }
+   ],
+   "deck": {
+    "glow": 1.05,
+    "giant": {
+     "life": 2000,
+     "pile": 0,
+     "clearOnSwitch": true
+    },
+    "grain": 0.34,
+    "motion": {
+     "swapMs": 650
+    },
+    "density": 1.4,
+    "vignette": 0.7
+   },
+   "hits": [],
+   "holds": [
+    {
+     "end": 211.2,
+     "start": 207.2
+    }
+   ],
+   "modes": [
+    {
+     "start": 93.21,
+     "end": 94.58,
+     "mode": "dynamic"
+    },
+    {
+     "start": 95.79,
+     "end": 97.1,
+     "mode": "dynamic"
+    },
+    {
+     "start": 118.21,
+     "end": 119.03,
+     "mode": "dynamic"
+    },
+    {
+     "start": 120.69,
+     "end": 121.38,
+     "mode": "dynamic"
+    }
+   ],
+   "rolls": [],
+   "scene": "WET NEON",
+   "words": {
+    "wine": "drip",
+    "osaka": "bloom",
+    "dark": "melt",
+    "grind": "quake",
+    "dripping": "drip",
+    "yamenaide": "cling",
+    "body": "pulse",
+    "beat": "pulse",
+    "dancehall": "quake",
+    "rude": "chop",
+    "konya": "shimmer",
+    "closer": "cling",
+    "sawatte": "tremor",
+    "grammar": "type",
+    "motion": "rise",
+    "ocean": "melt",
+    "bass": "quake",
+    "tokyo": "rise",
+    "kansai": "shimmer",
+    "midnight": "bloom",
+    "grace": "melt",
+    "cold": "freeze",
+    "shy": "tremor",
+    "why": "quake",
+    "panic": "chop",
+    "chain": "squeeze",
+    "insane": "quake"
+   },
+   "directed": true
+  },
+  "generatedAt": "2026-09-04T19:50:00.709Z",
+  "interactions": {
+   "tapEffect": "neon",
+   "moments": [
+    {
+     "t": 132.4,
+     "end": 133.4,
+     "type": "wipe",
+     "layer": "mist",
+     "prompt": "let the street go quiet"
+    }
+   ]
+  }
+ }
+}
