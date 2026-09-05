@@ -363,7 +363,16 @@ banner. KineticStage:961 *invents* moments from the song when
   `rise.at − 6 … rise.at − 0.5`. A quiet bridge (0.40) into a big chorus (0.70)
   put a "BLOW!" prompt over five seconds of this cut.
   Fix: keep every consecutive intensity delta **< 0.25**.
-- **wipe** — the longest sung-word gap ≥7s.
+- **wipe** — the longest sung-word gap ≥7s. **Careful: synthesis is NOT gated
+  on `interactions.moments` being empty.** It is gated on `free(t, end)`, which
+  only refuses when a *choreographed* moment sits within **±8s of the
+  synthesized window**. A decoy moment parked far away (we tried t=96) blocks
+  nothing. To suppress a wipe, the blocker must be **adjacent** to it — and it
+  can sit just past the cut's end so it is never drawn:
+  `moments: [{ t: <cutEnd + 0.2>, end: <cutEnd + 1.2>, type: "wipe", … }]`.
+  WWB's 8.6s ambience gap before the last whisper put a "WIPE THE ASH AWAY"
+  prompt into the outro of an otherwise finished render. Nobody taps a rendered
+  video, so any banner in a cut is stray UI.
 - **shake** — any section intensity ≥0.72 (the one preflight already catches).
 
 ## 15 · The portrait-only cut (the AGENOR Facebook debut)
@@ -790,3 +799,79 @@ bass". Scripts in `scripts/twthi/`; art generator `scripts/song-art/twthi-art.mj
   between monoliths, two on a canyon floor, one silhouetted at a crack, one on
   a horizon) despite "no people" positives and negatives. All four were
   visible at 500px and invisible at 250px.
+
+
+## 19 · Warm Without Burning — the bilingual cut (2026-09-04)
+
+Fourteenth voice: **SƠN MÀI LACQUER** — Vietnamese lacquer painting for a
+Vietnamese song. Black lacquer ground, gold and silver leaf, crushed eggshell,
+cinnabar. Chapter IV of the Fire Cycle answering Chapter I: the same river with
+cage / knife / wire put down. Scripts in `scripts/wwb/`, art in
+`scripts/song-art/wwb-art.mjs` + `reroll.mjs` + `reroll3.mjs`.
+
+**Look in `assets/` FIRST.** Every song has its own folders there — `lyrics/`,
+`mp3/`, `wav/`, `stems/<Title> Stems.zip`. This cut was half-built off a librosa
+REPET-SIM foreground of the full mix before the Sovereign pointed at it. The
+lyrics there were byte-identical to the profile's `official-lyrics.txt`, but the
+**stems** moved real numbers: retiming off the isolated lead vocal shifted line
+starts by up to 0.9s and rewrote the whole outro.
+
+- **Decode Suno stems with ffmpeg, never librosa/libsndfile.** These mp3s carry
+  bogus duration headers — `ffprobe` reported 366s and 755s for a 246.4s song —
+  and libsndfile truncates on them. Every line gate-checked as "silent" until
+  `ffmpeg -i "0 Lead Vocals.mp3" -ar 22050 -ac 1 lead.wav`. This is the old
+  stem-truncation bug wearing a new hat.
+- **Gate windows must be wider than a syllable's onset jitter.** A ±230ms probe
+  at the last whisper landed in the gap before the onset and reported the line
+  dead on both vocal stems. It was really 370ms later and ran to the song's end;
+  acting on that reading would have sliced the title line in half.
+- **A whispered outro can only be phrase-mapped, not whisper-timed.** Both ASR
+  passes hallucinated over the Hàn River ambience — inventing English lines, and
+  reproducing the "La La School subscribe" outro whenever given a `vi` language
+  hint (it survives foreground extraction). A −46dB run map over the lead stem,
+  where the whisper is the only thing playing, is the honest source.
+
+**Non-Latin text needs its font subset declared.** `layout.tsx` loaded Space
+Grotesk with `subsets: ["latin"]`. Vietnamese needs 12 characters from the
+`vietnamese` subset (U+1EA0–U+1EFF) plus đ / ơ / ư from `latin-ext`; every
+Vietnamese line would have rendered as fallback glyphs or tofu. Check this
+before any cut whose lyrics leave ASCII.
+
+**Plates MUST be uploaded to R2 — `public/planets/` is not enough.**
+`KineticStage` resolves every `/planets/…` path through `PLANET_BASE`
+(`lib/engineHost.ts`), the R2 public bucket. `next dev` serves the local copies
+happily at 200 and the engine never asks for them, so the first QA sheet came
+back as **pure black frames with only text**. `scripts/wwb/upload-r2.mjs`
+byte-verifies each plate against the edge with a cache-buster.
+
+**In this style SDXL paints landscapes and cannot paint objects.** 108
+candidates for 18 plates, over three passes:
+
+1. "dragon bridge" → literal mythological dragons. SDXL does not know Da Nang's
+   Dragon Bridge; ban the word and describe a steel arch bridge with a separate
+   fire plume.
+2. Every plate with a person failed. `here` asked for a flat featureless
+   silhouette and returned four fully rendered portrait **faces** in Chinese
+   court dress, against a negative that already said face / portrait / eyes /
+   mouth. `stay` returned three figures where the brief said two (§3 again).
+3. The real rule, only visible once the whole planet was on one sheet: object
+   and macro briefs collapse into decorative lacquerware or photoreal product
+   shots — "flawless polished lacquer" became a framed mirror, "a bowl of
+   embers" became a bowl of chillies, "sandals at the waterline" became a
+   product shot on teal. **Nine of eighteen.** Restaging every lyric as a Hàn
+   River night landscape fixed all nine at once, and is also what makes the
+   plates read as one planet.
+
+Corollaries worth keeping: where a human is not load-bearing, take the human out
+and let an object carry the lyric — an empty chair, a lit lantern, two moored
+boats. Absence reads as presence in a song about someone staying. Where bodies
+are genuinely needed, thumbnail scale in a vast landscape is the only framing
+SDXL respects. **And audit the assembled planet on one sheet, not just per
+scene** — picking blind from unviewed sheets is what shipped the nine failures
+into the first publish.
+
+**render-cut.mjs cannot run from a git worktree as-is.** It resolves `sharp`
+through `createRequire` against a hardcoded `<repo>/node_modules/sharp`, and a
+worktree has no `node_modules` at all. `next dev` works regardless because Node
+walks up to the parent checkout, which makes the failure look inconsistent.
+Symlink `sharp` and `@img` into the worktree before rendering.
