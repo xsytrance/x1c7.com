@@ -363,7 +363,16 @@ banner. KineticStage:961 *invents* moments from the song when
   `rise.at − 6 … rise.at − 0.5`. A quiet bridge (0.40) into a big chorus (0.70)
   put a "BLOW!" prompt over five seconds of this cut.
   Fix: keep every consecutive intensity delta **< 0.25**.
-- **wipe** — the longest sung-word gap ≥7s.
+- **wipe** — the longest sung-word gap ≥7s. **Careful: synthesis is NOT gated
+  on `interactions.moments` being empty.** It is gated on `free(t, end)`, which
+  only refuses when a *choreographed* moment sits within **±8s of the
+  synthesized window**. A decoy moment parked far away (we tried t=96) blocks
+  nothing. To suppress a wipe, the blocker must be **adjacent** to it — and it
+  can sit just past the cut's end so it is never drawn:
+  `moments: [{ t: <cutEnd + 0.2>, end: <cutEnd + 1.2>, type: "wipe", … }]`.
+  WWB's 8.6s ambience gap before the last whisper put a "WIPE THE ASH AWAY"
+  prompt into the outro of an otherwise finished render. Nobody taps a rendered
+  video, so any banner in a cut is stray UI.
 - **shake** — any section intensity ≥0.72 (the one preflight already catches).
 
 ## 15 · The portrait-only cut (the AGENOR Facebook debut)
@@ -818,6 +827,14 @@ help — same VAE path. **`--fp32-vae` fixes it outright**: two plates in 38s.
 The service unit runs bare `main.py`, so rather than edit it, run a private
 instance for the batch and leave the service alone:
 
+> **Correction (§21, 2026-09-04):** the bfloat16 VAE was a red herring. The
+> real cause was `MemoryHigh=8G` on the `comfyui.service` cgroup throttling it
+> into permanent reclaim; a private instance "fixed" it only because it ran
+> outside that cgroup. Fixed properly at the unit — the standard service
+> (`comfyui.socket` → `comfyui.service`, see the skill's infra check) no
+> longer needs this workaround. Keep the diagnostic technique (GPU 0% + no new
+> journal line = hung, not busy) — only the fix changes.
+
 ```bash
 cd ~/AI/ComfyUI && .venv/bin/python main.py --listen 127.0.0.1 --port 8190 \
   --fp32-vae --disable-smart-memory
@@ -886,3 +903,122 @@ pattern.** Three chained `until ! pgrep -f "scripts/fag/art.py"` waiters each
 matched themselves and never exited, so a queued re-roll never started and
 looked like another GPU hang. Match the interpreter too, or poll for the output
 file.
+
+## 20 · Warm Without Burning — the bilingual cut (2026-09-04)
+
+Fourteenth voice: **SƠN MÀI LACQUER** — Vietnamese lacquer painting for a
+Vietnamese song. Black lacquer ground, gold and silver leaf, crushed eggshell,
+cinnabar. Chapter IV of the Fire Cycle answering Chapter I: the same river with
+cage / knife / wire put down. Scripts in `scripts/wwb/`, art in
+`scripts/song-art/wwb-art.mjs` + `reroll.mjs` + `reroll3.mjs`.
+
+**Look in `assets/` FIRST.** Every song has its own folders there — `lyrics/`,
+`mp3/`, `wav/`, `stems/<Title> Stems.zip`. This cut was half-built off a librosa
+REPET-SIM foreground of the full mix before the Sovereign pointed at it. The
+lyrics there were byte-identical to the profile's `official-lyrics.txt`, but the
+**stems** moved real numbers: retiming off the isolated lead vocal shifted line
+starts by up to 0.9s and rewrote the whole outro.
+
+- **Decode Suno stems with ffmpeg, never librosa/libsndfile.** These mp3s carry
+  bogus duration headers — `ffprobe` reported 366s and 755s for a 246.4s song —
+  and libsndfile truncates on them. Every line gate-checked as "silent" until
+  `ffmpeg -i "0 Lead Vocals.mp3" -ar 22050 -ac 1 lead.wav`. This is the old
+  stem-truncation bug wearing a new hat.
+- **Gate windows must be wider than a syllable's onset jitter.** A ±230ms probe
+  at the last whisper landed in the gap before the onset and reported the line
+  dead on both vocal stems. It was really 370ms later and ran to the song's end;
+  acting on that reading would have sliced the title line in half.
+- **A whispered outro can only be phrase-mapped, not whisper-timed.** Both ASR
+  passes hallucinated over the Hàn River ambience — inventing English lines, and
+  reproducing the "La La School subscribe" outro whenever given a `vi` language
+  hint (it survives foreground extraction). A −46dB run map over the lead stem,
+  where the whisper is the only thing playing, is the honest source.
+
+**Non-Latin text needs its font subset declared.** `layout.tsx` loaded Space
+Grotesk with `subsets: ["latin"]`. Vietnamese needs 12 characters from the
+`vietnamese` subset (U+1EA0–U+1EFF) plus đ / ơ / ư from `latin-ext`; every
+Vietnamese line would have rendered as fallback glyphs or tofu. Check this
+before any cut whose lyrics leave ASCII.
+
+**Plates MUST be uploaded to R2 — `public/planets/` is not enough.**
+`KineticStage` resolves every `/planets/…` path through `PLANET_BASE`
+(`lib/engineHost.ts`), the R2 public bucket. `next dev` serves the local copies
+happily at 200 and the engine never asks for them, so the first QA sheet came
+back as **pure black frames with only text**. `scripts/wwb/upload-r2.mjs`
+byte-verifies each plate against the edge with a cache-buster.
+
+**In this style SDXL paints landscapes and cannot paint objects.** 108
+candidates for 18 plates, over three passes:
+
+1. "dragon bridge" → literal mythological dragons. SDXL does not know Da Nang's
+   Dragon Bridge; ban the word and describe a steel arch bridge with a separate
+   fire plume.
+2. Every plate with a person failed. `here` asked for a flat featureless
+   silhouette and returned four fully rendered portrait **faces** in Chinese
+   court dress, against a negative that already said face / portrait / eyes /
+   mouth. `stay` returned three figures where the brief said two (§3 again).
+3. The real rule, only visible once the whole planet was on one sheet: object
+   and macro briefs collapse into decorative lacquerware or photoreal product
+   shots — "flawless polished lacquer" became a framed mirror, "a bowl of
+   embers" became a bowl of chillies, "sandals at the waterline" became a
+   product shot on teal. **Nine of eighteen.** Restaging every lyric as a Hàn
+   River night landscape fixed all nine at once, and is also what makes the
+   plates read as one planet.
+
+Corollaries worth keeping: where a human is not load-bearing, take the human out
+and let an object carry the lyric — an empty chair, a lit lantern, two moored
+boats. Absence reads as presence in a song about someone staying. Where bodies
+are genuinely needed, thumbnail scale in a vast landscape is the only framing
+SDXL respects. **And audit the assembled planet on one sheet, not just per
+scene** — picking blind from unviewed sheets is what shipped the nine failures
+into the first publish.
+
+**render-cut.mjs cannot run from a git worktree as-is.** It resolves `sharp`
+through `createRequire` against a hardcoded `<repo>/node_modules/sharp`, and a
+worktree has no `node_modules` at all. `next dev` works regardless because Node
+walks up to the parent checkout, which makes the failure look inconsistent.
+Symlink `sharp` and `@img` into the worktree before rendering.
+
+## 21 · Osaka After Dark — the second cut, and the cgroup that was never a VAE bug (2026-09-04)
+
+A second, different cut of a song already shipped: the first chorus through the
+end of the Female Lead section, **73.58 → 132.08 (59s)**, distinct from the
+already-shipped 56s cut (155.02–211.35). Same voice, **WET NEON**, no new
+planet — `tracks.lyrics_synced` held only the first cut's window, so the word
+array for this one had to be rebuilt from scratch against the official lyrics
+(`assets/lyrics/osakaafterdark.txt`) and the existing lead-stem whisper pass.
+
+- **A re-cut of an already-shipped song needs its OWN lyrics_synced build,
+  even with a whisper pass already sitting there.** The prior cut's window is
+  all that got baked into the DB; a new window is a new alignment job, not a
+  slice of the old one.
+- **When several official lines share one ASR segment, only WORD-level
+  stamps can split them.** Four ad-libs landed in one 5-second blob and both
+  response couplets were two lines apiece; the lead stem sits at a continuous
+  -38dB across the whole window, so no energy gate could find the seams
+  between lines — only the whisper pass's own word timestamps could.
+- **Five of eighteen plates survived from the first cut** (reused verbatim);
+  the other thirteen were generated fresh with the ORIGINAL script's *exact*
+  voice clause, negative prompt, checkpoint and sampler, then put through the
+  same darken grade (gain 0.46 / contrast 1.18 / sat 1.10) — matching every
+  knob, not just the prompt text, is what let old and new plates cut together
+  without a visible seam. The grade is load-bearing, not cosmetic: phrase mode
+  draws an un-sung word at 0.26 opacity, and the base checkpoint returns
+  brighter frames than this voice wants.
+- **SDXL still puts people at food stalls no matter how the negative prompt
+  bans them.** Both `kansai` candidates (a street-food griddle) grew blurred
+  figures despite an eleven-way ban on people. The fix was compositional, not
+  lexical: crop the brief down to the griddle itself and leave no room in
+  frame for a person to stand.
+- **See the §19 correction above** — the "ComfyUI VAE hang" that drove FAG to
+  a private `:8190` instance was actually `MemoryHigh=8G` throttling the
+  `comfyui.service` cgroup into permanent reclaim; the private instance only
+  "worked" by running outside that cgroup. Fixed at the unit on this date —
+  render against the standard service now.
+- **`render-cut.mjs` resolves `release.mp3` under the repo it runs from.** An
+  untracked profile that exists only in the main checkout is invisible from a
+  worktree render. Pass `--audio` explicitly instead of copying the mp3
+  between checkouts.
+- The row stays `hidden=true` with a `/private` `audio_url` (§13); this patch
+  replaced only `lyrics_synced` and the window-specific planet wiring, leaving
+  title/cover/etc. from the first cut untouched.

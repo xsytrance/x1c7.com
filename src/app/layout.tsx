@@ -18,7 +18,7 @@ import { ThemeEngine } from "@/components/NowPlayingTheme";
 import { X1c7Chrome } from "@/components/X1c7Chrome";
 import { TylerDoor } from "@/components/TylerDoor";
 
-const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display" });
+const display = Space_Grotesk({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 // viewport-fit=cover is what makes env(safe-area-inset-*) return real values

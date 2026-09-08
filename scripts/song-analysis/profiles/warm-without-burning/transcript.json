@@ -1,0 +1,2220 @@
+{
+  "language": "english",
+  "segments": [
+    {
+      "start": 2.08,
+      "end": 2.86,
+      "text": "Patience.",
+      "words": [
+        {
+          "t": 2.08,
+          "text": "Patience."
+        }
+      ]
+    },
+    {
+      "start": 3.0,
+      "end": 3.68,
+      "text": "What?",
+      "words": [
+        {
+          "t": 3.0,
+          "text": "What?"
+        }
+      ]
+    },
+    {
+      "start": 5.38,
+      "end": 6.144,
+      "text": "Ridiculous.",
+      "words": [
+        {
+          "t": 5.38,
+          "text": "Ridiculous."
+        }
+      ]
+    },
+    {
+      "start": 6.58,
+      "end": 9.152,
+      "text": "The dragon's about to breathe the...",
+      "words": [
+        {
+          "t": 6.58,
+          "text": "The"
+        },
+        {
+          "t": 7.424,
+          "text": "dragon's"
+        },
+        {
+          "t": 7.94,
+          "text": "about"
+        },
+        {
+          "t": 8.18,
+          "text": "to"
+        },
+        {
+          "t": 8.36,
+          "text": "breathe"
+        },
+        {
+          "t": 8.62,
+          "text": "the..."
+        }
+      ]
+    },
+    {
+      "start": 9.44,
+      "end": 10.112,
+      "text": "Breathe the...",
+      "words": [
+        {
+          "t": 9.44,
+          "text": "Breathe"
+        },
+        {
+          "t": 9.8,
+          "text": "the..."
+        }
+      ]
+    },
+    {
+      "start": 10.8,
+      "end": 11.39,
+      "text": "Are you scared?",
+      "words": [
+        {
+          "t": 10.8,
+          "text": "Are"
+        },
+        {
+          "t": 10.9,
+          "text": "you"
+        },
+        {
+          "t": 11.04,
+          "text": "scared?"
+        }
+      ]
+    },
+    {
+      "start": 11.48,
+      "end": 11.78,
+      "text": "I...",
+      "words": [
+        {
+          "t": 11.48,
+          "text": "I..."
+        }
+      ]
+    },
+    {
+      "start": 11.78,
+      "end": 12.96,
+      "text": "I took the call.",
+      "words": [
+        {
+          "t": 11.78,
+          "text": "I"
+        },
+        {
+          "t": 12.16,
+          "text": "took"
+        },
+        {
+          "t": 12.38,
+          "text": "the"
+        },
+        {
+          "t": 12.62,
+          "text": "call."
+        }
+      ]
+    },
+    {
+      "start": 14.848,
+      "end": 16.46,
+      "text": "Warm without burning",
+      "words": [
+        {
+          "t": 14.848,
+          "text": "Warm"
+        },
+        {
+          "t": 14.96,
+          "text": "without"
+        },
+        {
+          "t": 15.52,
+          "text": "burning"
+        }
+      ]
+    },
+    {
+      "start": 16.46,
+      "end": 18.72,
+      "text": "Let you enjoy your hand in mine",
+      "words": [
+        {
+          "t": 16.46,
+          "text": "Let"
+        },
+        {
+          "t": 16.76,
+          "text": "you"
+        },
+        {
+          "t": 17.06,
+          "text": "enjoy"
+        },
+        {
+          "t": 17.48,
+          "text": "your"
+        },
+        {
+          "t": 17.76,
+          "text": "hand"
+        },
+        {
+          "t": 18.24,
+          "text": "in"
+        },
+        {
+          "t": 18.38,
+          "text": "mine"
+        }
+      ]
+    },
+    {
+      "start": 18.72,
+      "end": 20.78,
+      "text": "You don't need to burn",
+      "words": [
+        {
+          "t": 18.72,
+          "text": "You"
+        },
+        {
+          "t": 19.456,
+          "text": "don't"
+        },
+        {
+          "t": 19.82,
+          "text": "need"
+        },
+        {
+          "t": 19.88,
+          "text": "to"
+        },
+        {
+          "t": 20.26,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 20.78,
+      "end": 22.82,
+      "text": "Let you live inside",
+      "words": [
+        {
+          "t": 20.78,
+          "text": "Let"
+        },
+        {
+          "t": 21.26,
+          "text": "you"
+        },
+        {
+          "t": 21.54,
+          "text": "live"
+        },
+        {
+          "t": 21.98,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 23.808,
+      "end": 26.12,
+      "text": "Warm without burning",
+      "words": [
+        {
+          "t": 23.808,
+          "text": "Warm"
+        },
+        {
+          "t": 24.58,
+          "text": "without"
+        },
+        {
+          "t": 25.14,
+          "text": "burning"
+        }
+      ]
+    },
+    {
+      "start": 26.12,
+      "end": 27.808,
+      "text": "I'll let go tonight",
+      "words": [
+        {
+          "t": 26.12,
+          "text": "I'll"
+        },
+        {
+          "t": 26.52,
+          "text": "let"
+        },
+        {
+          "t": 26.74,
+          "text": "go"
+        },
+        {
+          "t": 27.1,
+          "text": "tonight"
+        }
+      ]
+    },
+    {
+      "start": 27.904,
+      "end": 29.33,
+      "text": "The dragon's raining fire",
+      "words": [
+        {
+          "t": 27.904,
+          "text": "The"
+        },
+        {
+          "t": 28.38,
+          "text": "dragon's"
+        },
+        {
+          "t": 28.7,
+          "text": "raining"
+        },
+        {
+          "t": 28.94,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 29.33,
+      "end": 30.57,
+      "text": "I'm invading in",
+      "words": [
+        {
+          "t": 29.33,
+          "text": "I'm"
+        },
+        {
+          "t": 29.75,
+          "text": "invading"
+        },
+        {
+          "t": 30.21,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 33.57,
+      "end": 35.63,
+      "text": "No need for pain",
+      "words": [
+        {
+          "t": 33.57,
+          "text": "No"
+        },
+        {
+          "t": 34.21,
+          "text": "need"
+        },
+        {
+          "t": 34.85,
+          "text": "for"
+        },
+        {
+          "t": 35.05,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 37.59,
+      "end": 40.27,
+      "text": "I'm still here",
+      "words": [
+        {
+          "t": 37.59,
+          "text": "I'm"
+        },
+        {
+          "t": 38.23,
+          "text": "still"
+        },
+        {
+          "t": 38.87,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 41.17,
+      "end": 42.79,
+      "text": "And when I die",
+      "words": [
+        {
+          "t": 41.17,
+          "text": "And"
+        },
+        {
+          "t": 41.81,
+          "text": "when"
+        },
+        {
+          "t": 42.07,
+          "text": "I"
+        },
+        {
+          "t": 42.35,
+          "text": "die"
+        }
+      ]
+    },
+    {
+      "start": 44.25,
+      "end": 47.03,
+      "text": "By the hand rivers all jump by",
+      "words": [
+        {
+          "t": 44.25,
+          "text": "By"
+        },
+        {
+          "t": 44.89,
+          "text": "the"
+        },
+        {
+          "t": 45.53,
+          "text": "hand"
+        },
+        {
+          "t": 45.71,
+          "text": "rivers"
+        },
+        {
+          "t": 46.03,
+          "text": "all"
+        },
+        {
+          "t": 46.33,
+          "text": "jump"
+        },
+        {
+          "t": 46.59,
+          "text": "by"
+        }
+      ]
+    },
+    {
+      "start": 47.03,
+      "end": 49.53,
+      "text": "And red light ripples on my backside",
+      "words": [
+        {
+          "t": 47.03,
+          "text": "And"
+        },
+        {
+          "t": 47.35,
+          "text": "red"
+        },
+        {
+          "t": 47.81,
+          "text": "light"
+        },
+        {
+          "t": 48.13,
+          "text": "ripples"
+        },
+        {
+          "t": 48.49,
+          "text": "on"
+        },
+        {
+          "t": 48.77,
+          "text": "my"
+        },
+        {
+          "t": 49.01,
+          "text": "backside"
+        }
+      ]
+    },
+    {
+      "start": 49.53,
+      "end": 51.47,
+      "text": "You watch the flames just like me",
+      "words": [
+        {
+          "t": 49.53,
+          "text": "You"
+        },
+        {
+          "t": 50.05,
+          "text": "watch"
+        },
+        {
+          "t": 50.21,
+          "text": "the"
+        },
+        {
+          "t": 50.35,
+          "text": "flames"
+        },
+        {
+          "t": 50.63,
+          "text": "just"
+        },
+        {
+          "t": 50.81,
+          "text": "like"
+        },
+        {
+          "t": 51.17,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 51.47,
+      "end": 53.93,
+      "text": "But this time you don't shite down",
+      "words": [
+        {
+          "t": 51.47,
+          "text": "But"
+        },
+        {
+          "t": 52.096,
+          "text": "this"
+        },
+        {
+          "t": 52.33,
+          "text": "time"
+        },
+        {
+          "t": 52.71,
+          "text": "you"
+        },
+        {
+          "t": 52.97,
+          "text": "don't"
+        },
+        {
+          "t": 53.31,
+          "text": "shite"
+        },
+        {
+          "t": 53.59,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 53.93,
+      "end": 56.17,
+      "text": "I know you used to think illa illa goda",
+      "words": [
+        {
+          "t": 53.93,
+          "text": "I"
+        },
+        {
+          "t": 54.23,
+          "text": "know"
+        },
+        {
+          "t": 54.41,
+          "text": "you"
+        },
+        {
+          "t": 54.57,
+          "text": "used"
+        },
+        {
+          "t": 54.77,
+          "text": "to"
+        },
+        {
+          "t": 54.87,
+          "text": "think"
+        },
+        {
+          "t": 55.09,
+          "text": "illa"
+        },
+        {
+          "t": 55.41,
+          "text": "illa"
+        },
+        {
+          "t": 55.69,
+          "text": "goda"
+        }
+      ]
+    },
+    {
+      "start": 56.17,
+      "end": 58.95,
+      "text": "But I ain't gonna lie",
+      "words": [
+        {
+          "t": 56.17,
+          "text": "But"
+        },
+        {
+          "t": 56.39,
+          "text": "I"
+        },
+        {
+          "t": 57.57,
+          "text": "ain't"
+        },
+        {
+          "t": 58.07,
+          "text": "gonna"
+        },
+        {
+          "t": 58.37,
+          "text": "lie"
+        }
+      ]
+    },
+    {
+      "start": 59.33,
+      "end": 60.21,
+      "text": "I don't need a screen",
+      "words": [
+        {
+          "t": 59.33,
+          "text": "I"
+        },
+        {
+          "t": 59.43,
+          "text": "don't"
+        },
+        {
+          "t": 59.61,
+          "text": "need"
+        },
+        {
+          "t": 59.83,
+          "text": "a"
+        },
+        {
+          "t": 59.97,
+          "text": "screen"
+        }
+      ]
+    },
+    {
+      "start": 60.21,
+      "end": 61.43,
+      "text": "You don't have to breathe",
+      "words": [
+        {
+          "t": 60.21,
+          "text": "You"
+        },
+        {
+          "t": 60.37,
+          "text": "don't"
+        },
+        {
+          "t": 60.63,
+          "text": "have"
+        },
+        {
+          "t": 60.81,
+          "text": "to"
+        },
+        {
+          "t": 61.07,
+          "text": "breathe"
+        }
+      ]
+    },
+    {
+      "start": 61.43,
+      "end": 64.11,
+      "text": "I'm right here in my head",
+      "words": [
+        {
+          "t": 61.43,
+          "text": "I'm"
+        },
+        {
+          "t": 61.69,
+          "text": "right"
+        },
+        {
+          "t": 61.95,
+          "text": "here"
+        },
+        {
+          "t": 62.73,
+          "text": "in"
+        },
+        {
+          "t": 63.25,
+          "text": "my"
+        },
+        {
+          "t": 63.77,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 64.11,
+      "end": 65.75,
+      "text": "Not because of fire",
+      "words": [
+        {
+          "t": 64.11,
+          "text": "Not"
+        },
+        {
+          "t": 64.79,
+          "text": "because"
+        },
+        {
+          "t": 65.15,
+          "text": "of"
+        },
+        {
+          "t": 65.39,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 65.75,
+      "end": 68.07,
+      "text": "Not because of pain",
+      "words": [
+        {
+          "t": 65.75,
+          "text": "Not"
+        },
+        {
+          "t": 66.07,
+          "text": "because"
+        },
+        {
+          "t": 67.43,
+          "text": "of"
+        },
+        {
+          "t": 67.79,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 68.07,
+      "end": 69.31,
+      "text": "To be in my head",
+      "words": [
+        {
+          "t": 68.07,
+          "text": "To"
+        },
+        {
+          "t": 68.33,
+          "text": "be"
+        },
+        {
+          "t": 68.35,
+          "text": "in"
+        },
+        {
+          "t": 68.53,
+          "text": "my"
+        },
+        {
+          "t": 68.85,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 71.33,
+      "end": 74.29,
+      "text": "Warm without burning",
+      "words": [
+        {
+          "t": 71.33,
+          "text": "Warm"
+        },
+        {
+          "t": 72.05,
+          "text": "without"
+        },
+        {
+          "t": 72.77,
+          "text": "burning"
+        }
+      ]
+    },
+    {
+      "start": 74.29,
+      "end": 76.39,
+      "text": "Let you enjoy your hand in mine",
+      "words": [
+        {
+          "t": 74.29,
+          "text": "Let"
+        },
+        {
+          "t": 74.57,
+          "text": "you"
+        },
+        {
+          "t": 74.91,
+          "text": "enjoy"
+        },
+        {
+          "t": 75.25,
+          "text": "your"
+        },
+        {
+          "t": 75.65,
+          "text": "hand"
+        },
+        {
+          "t": 75.93,
+          "text": "in"
+        },
+        {
+          "t": 75.93,
+          "text": "mine"
+        }
+      ]
+    },
+    {
+      "start": 76.39,
+      "end": 78.73,
+      "text": "You don't ask me to burn",
+      "words": [
+        {
+          "t": 76.39,
+          "text": "You"
+        },
+        {
+          "t": 76.73,
+          "text": "don't"
+        },
+        {
+          "t": 77.17,
+          "text": "ask"
+        },
+        {
+          "t": 77.49,
+          "text": "me"
+        },
+        {
+          "t": 77.89,
+          "text": "to"
+        },
+        {
+          "t": 78.21,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 78.73,
+      "end": 81.17,
+      "text": "Let you leave in my head",
+      "words": [
+        {
+          "t": 78.73,
+          "text": "Let"
+        },
+        {
+          "t": 79.07,
+          "text": "you"
+        },
+        {
+          "t": 79.43,
+          "text": "leave"
+        },
+        {
+          "t": 79.81,
+          "text": "in"
+        },
+        {
+          "t": 80.33,
+          "text": "my"
+        },
+        {
+          "t": 80.65,
+          "text": "head"
+        }
+      ]
+    },
+    {
+      "start": 81.17,
+      "end": 83.33,
+      "text": "Warm without burning",
+      "words": [
+        {
+          "t": 81.17,
+          "text": "Warm"
+        },
+        {
+          "t": 81.89,
+          "text": "without"
+        },
+        {
+          "t": 82.45,
+          "text": "burning"
+        }
+      ]
+    },
+    {
+      "start": 83.93,
+      "end": 86.81,
+      "text": "Let you live inside",
+      "words": [
+        {
+          "t": 83.93,
+          "text": "Let"
+        },
+        {
+          "t": 84.29,
+          "text": "you"
+        },
+        {
+          "t": 84.73,
+          "text": "live"
+        },
+        {
+          "t": 85.35,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 86.81,
+      "end": 88.39,
+      "text": "I'm invading in",
+      "words": [
+        {
+          "t": 86.81,
+          "text": "I'm"
+        },
+        {
+          "t": 87.69,
+          "text": "invading"
+        },
+        {
+          "t": 88.09,
+          "text": "in"
+        }
+      ]
+    },
+    {
+      "start": 90.03,
+      "end": 92.49,
+      "text": "No need for pain",
+      "words": [
+        {
+          "t": 90.03,
+          "text": "No"
+        },
+        {
+          "t": 90.75,
+          "text": "need"
+        },
+        {
+          "t": 90.75,
+          "text": "for"
+        },
+        {
+          "t": 92.13,
+          "text": "pain"
+        }
+      ]
+    },
+    {
+      "start": 94.67,
+      "end": 95.89,
+      "text": "I'm still here",
+      "words": [
+        {
+          "t": 94.67,
+          "text": "I'm"
+        },
+        {
+          "t": 95.39,
+          "text": "still"
+        },
+        {
+          "t": 95.51,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 95.89,
+      "end": 98.07,
+      "text": "The dragon's raining fire",
+      "words": [
+        {
+          "t": 95.89,
+          "text": "The"
+        },
+        {
+          "t": 95.89,
+          "text": "dragon's"
+        },
+        {
+          "t": 98.07,
+          "text": "raining"
+        },
+        {
+          "t": 98.07,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 98.51,
+      "end": 99.57,
+      "text": "You don't need to burn",
+      "words": [
+        {
+          "t": 98.51,
+          "text": "You"
+        },
+        {
+          "t": 98.91,
+          "text": "don't"
+        },
+        {
+          "t": 99.35,
+          "text": "need"
+        },
+        {
+          "t": 99.41,
+          "text": "to"
+        },
+        {
+          "t": 99.57,
+          "text": "burn"
+        }
+      ]
+    },
+    {
+      "start": 99.57,
+      "end": 99.71,
+      "text": "Let you live inside",
+      "words": [
+        {
+          "t": 99.57,
+          "text": "Let"
+        },
+        {
+          "t": 99.71,
+          "text": "you"
+        },
+        {
+          "t": 99.71,
+          "text": "live"
+        },
+        {
+          "t": 99.71,
+          "text": "inside"
+        }
+      ]
+    },
+    {
+      "start": 99.71,
+      "end": 100.43,
+      "text": "You don't need to scare me",
+      "words": [
+        {
+          "t": 99.71,
+          "text": "You"
+        },
+        {
+          "t": 100.37,
+          "text": "don't"
+        },
+        {
+          "t": 100.37,
+          "text": "need"
+        },
+        {
+          "t": 100.37,
+          "text": "to"
+        },
+        {
+          "t": 100.37,
+          "text": "scare"
+        },
+        {
+          "t": 100.43,
+          "text": "me"
+        }
+      ]
+    },
+    {
+      "start": 100.57,
+      "end": 102.23,
+      "text": "I know you don't believe in fire",
+      "words": [
+        {
+          "t": 100.57,
+          "text": "I"
+        },
+        {
+          "t": 100.87,
+          "text": "know"
+        },
+        {
+          "t": 100.99,
+          "text": "you"
+        },
+        {
+          "t": 101.73,
+          "text": "don't"
+        },
+        {
+          "t": 101.85,
+          "text": "believe"
+        },
+        {
+          "t": 101.87,
+          "text": "in"
+        },
+        {
+          "t": 102.17,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 102.23,
+      "end": 105.75,
+      "text": "But I gotta put you in the interrupted",
+      "words": [
+        {
+          "t": 102.23,
+          "text": "But"
+        },
+        {
+          "t": 102.71,
+          "text": "I"
+        },
+        {
+          "t": 104.11,
+          "text": "gotta"
+        },
+        {
+          "t": 104.43,
+          "text": "put"
+        },
+        {
+          "t": 104.43,
+          "text": "you"
+        },
+        {
+          "t": 104.83,
+          "text": "in"
+        },
+        {
+          "t": 105.45,
+          "text": "the"
+        },
+        {
+          "t": 105.75,
+          "text": "interrupted"
+        }
+      ]
+    },
+    {
+      "start": 105.75,
+      "end": 107.47,
+      "text": "Cause our song is going too high",
+      "words": [
+        {
+          "t": 105.75,
+          "text": "Cause"
+        },
+        {
+          "t": 105.75,
+          "text": "our"
+        },
+        {
+          "t": 106.27,
+          "text": "song"
+        },
+        {
+          "t": 106.63,
+          "text": "is"
+        },
+        {
+          "t": 106.81,
+          "text": "going"
+        },
+        {
+          "t": 107.15,
+          "text": "too"
+        },
+        {
+          "t": 107.23,
+          "text": "high"
+        }
+      ]
+    },
+    {
+      "start": 108.28,
+      "end": 109.37,
+      "text": "It doesn't matter if a civility",
+      "words": [
+        {
+          "t": 108.28,
+          "text": "It"
+        },
+        {
+          "t": 108.63,
+          "text": "doesn't"
+        },
+        {
+          "t": 109.13,
+          "text": "matter"
+        },
+        {
+          "t": 109.23,
+          "text": "if"
+        },
+        {
+          "t": 109.37,
+          "text": "a"
+        },
+        {
+          "t": 109.37,
+          "text": "civility"
+        }
+      ]
+    },
+    {
+      "start": 110.25,
+      "end": 111.31,
+      "text": "Isn't their friends",
+      "words": [
+        {
+          "t": 110.25,
+          "text": "Isn't"
+        },
+        {
+          "t": 110.976,
+          "text": "their"
+        },
+        {
+          "t": 111.31,
+          "text": "friends"
+        }
+      ]
+    },
+    {
+      "start": 111.31,
+      "end": 114.87,
+      "text": "Why don't I play a score",
+      "words": [
+        {
+          "t": 111.31,
+          "text": "Why"
+        },
+        {
+          "t": 111.31,
+          "text": "don't"
+        },
+        {
+          "t": 113.65,
+          "text": "I"
+        },
+        {
+          "t": 113.65,
+          "text": "play"
+        },
+        {
+          "t": 113.65,
+          "text": "a"
+        },
+        {
+          "t": 114.67,
+          "text": "score"
+        }
+      ]
+    },
+    {
+      "start": 114.87,
+      "end": 116.51,
+      "text": "Why don't I play a song",
+      "words": [
+        {
+          "t": 114.87,
+          "text": "Why"
+        },
+        {
+          "t": 114.99,
+          "text": "don't"
+        },
+        {
+          "t": 116.01,
+          "text": "I"
+        },
+        {
+          "t": 116.01,
+          "text": "play"
+        },
+        {
+          "t": 116.09,
+          "text": "a"
+        },
+        {
+          "t": 116.21,
+          "text": "song"
+        }
+      ]
+    },
+    {
+      "start": 120.29,
+      "end": 124.71,
+      "text": "La la la la la la la la la la la la la la la la la la la la la la.",
+      "words": [
+        {
+          "t": 120.29,
+          "text": "La"
+        },
+        {
+          "t": 120.608,
+          "text": "la"
+        },
+        {
+          "t": 120.85,
+          "text": "la"
+        },
+        {
+          "t": 121.44,
+          "text": "la"
+        },
+        {
+          "t": 121.55,
+          "text": "la"
+        },
+        {
+          "t": 122.496,
+          "text": "la"
+        },
+        {
+          "t": 123.17,
+          "text": "la"
+        },
+        {
+          "t": 123.57,
+          "text": "la"
+        },
+        {
+          "t": 123.95,
+          "text": "la"
+        },
+        {
+          "t": 124.15,
+          "text": "la"
+        },
+        {
+          "t": 124.37,
+          "text": "la"
+        },
+        {
+          "t": 124.39,
+          "text": "la"
+        },
+        {
+          "t": 124.59,
+          "text": "la"
+        },
+        {
+          "t": 124.59,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la"
+        },
+        {
+          "t": 124.71,
+          "text": "la."
+        }
+      ]
+    },
+    {
+      "start": 124.71,
+      "end": 126.75,
+      "text": "You call my name, I change.",
+      "words": [
+        {
+          "t": 124.71,
+          "text": "You"
+        },
+        {
+          "t": 125.15,
+          "text": "call"
+        },
+        {
+          "t": 125.49,
+          "text": "my"
+        },
+        {
+          "t": 125.87,
+          "text": "name,"
+        },
+        {
+          "t": 126.31,
+          "text": "I"
+        },
+        {
+          "t": 126.43,
+          "text": "change."
+        }
+      ]
+    },
+    {
+      "start": 149.856,
+      "end": 152.704,
+      "text": "I can't wait to go home",
+      "words": [
+        {
+          "t": 149.856,
+          "text": "I"
+        },
+        {
+          "t": 150.69,
+          "text": "can't"
+        },
+        {
+          "t": 151.19,
+          "text": "wait"
+        },
+        {
+          "t": 151.49,
+          "text": "to"
+        },
+        {
+          "t": 151.81,
+          "text": "go"
+        },
+        {
+          "t": 152.05,
+          "text": "home"
+        }
+      ]
+    },
+    {
+      "start": 153.568,
+      "end": 160.25,
+      "text": "The fire is gone",
+      "words": [
+        {
+          "t": 153.568,
+          "text": "The"
+        },
+        {
+          "t": 154.01,
+          "text": "fire"
+        },
+        {
+          "t": 159.03,
+          "text": "is"
+        },
+        {
+          "t": 159.79,
+          "text": "gone"
+        }
+      ]
+    },
+    {
+      "start": 160.25,
+      "end": 163.19,
+      "text": "The water falls",
+      "words": [
+        {
+          "t": 160.25,
+          "text": "The"
+        },
+        {
+          "t": 160.93,
+          "text": "water"
+        },
+        {
+          "t": 161.55,
+          "text": "falls"
+        }
+      ]
+    },
+    {
+      "start": 163.19,
+      "end": 167.77,
+      "text": "The night goes on",
+      "words": [
+        {
+          "t": 163.19,
+          "text": "The"
+        },
+        {
+          "t": 163.744,
+          "text": "night"
+        },
+        {
+          "t": 166.05,
+          "text": "goes"
+        },
+        {
+          "t": 166.87,
+          "text": "on"
+        }
+      ]
+    },
+    {
+      "start": 168.01,
+      "end": 174.07,
+      "text": "You look at me like you're waiting for me to disappear",
+      "words": [
+        {
+          "t": 168.01,
+          "text": "You"
+        },
+        {
+          "t": 169.11,
+          "text": "look"
+        },
+        {
+          "t": 169.65,
+          "text": "at"
+        },
+        {
+          "t": 170.03,
+          "text": "me"
+        },
+        {
+          "t": 170.39,
+          "text": "like"
+        },
+        {
+          "t": 171.01,
+          "text": "you're"
+        },
+        {
+          "t": 171.33,
+          "text": "waiting"
+        },
+        {
+          "t": 171.77,
+          "text": "for"
+        },
+        {
+          "t": 172.17,
+          "text": "me"
+        },
+        {
+          "t": 172.51,
+          "text": "to"
+        },
+        {
+          "t": 172.97,
+          "text": "disappear"
+        }
+      ]
+    },
+    {
+      "start": 174.88,
+      "end": 176.25,
+      "text": "But you're still here",
+      "words": [
+        {
+          "t": 174.88,
+          "text": "But"
+        },
+        {
+          "t": 175.37,
+          "text": "you're"
+        },
+        {
+          "t": 175.63,
+          "text": "still"
+        },
+        {
+          "t": 175.85,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 176.25,
+      "end": 177.83,
+      "text": "And what I eat",
+      "words": [
+        {
+          "t": 176.25,
+          "text": "And"
+        },
+        {
+          "t": 176.93,
+          "text": "what"
+        },
+        {
+          "t": 177.17,
+          "text": "I"
+        },
+        {
+          "t": 177.53,
+          "text": "eat"
+        }
+      ]
+    },
+    {
+      "start": 177.83,
+      "end": 180.73,
+      "text": "Come my good fire",
+      "words": [
+        {
+          "t": 177.83,
+          "text": "Come"
+        },
+        {
+          "t": 178.23,
+          "text": "my"
+        },
+        {
+          "t": 178.43,
+          "text": "good"
+        },
+        {
+          "t": 179.89,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 182.07,
+      "end": 184.35,
+      "text": "Won't let you down",
+      "words": [
+        {
+          "t": 182.07,
+          "text": "Won't"
+        },
+        {
+          "t": 183.09,
+          "text": "let"
+        },
+        {
+          "t": 183.41,
+          "text": "you"
+        },
+        {
+          "t": 183.69,
+          "text": "down"
+        }
+      ]
+    },
+    {
+      "start": 184.35,
+      "end": 185.11,
+      "text": "Burning",
+      "words": [
+        {
+          "t": 184.35,
+          "text": "Burning"
+        }
+      ]
+    },
+    {
+      "start": 185.11,
+      "end": 187.49,
+      "text": "No need for fire",
+      "words": [
+        {
+          "t": 185.11,
+          "text": "No"
+        },
+        {
+          "t": 185.43,
+          "text": "need"
+        },
+        {
+          "t": 186.65,
+          "text": "for"
+        },
+        {
+          "t": 186.89,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 187.49,
+      "end": 189.39,
+      "text": "To make me stay",
+      "words": [
+        {
+          "t": 187.49,
+          "text": "To"
+        },
+        {
+          "t": 187.79,
+          "text": "make"
+        },
+        {
+          "t": 188.23,
+          "text": "me"
+        },
+        {
+          "t": 188.77,
+          "text": "stay"
+        }
+      ]
+    },
+    {
+      "start": 189.39,
+      "end": 191.89,
+      "text": "You don't have to break",
+      "words": [
+        {
+          "t": 189.39,
+          "text": "You"
+        },
+        {
+          "t": 190.05,
+          "text": "don't"
+        },
+        {
+          "t": 190.41,
+          "text": "have"
+        },
+        {
+          "t": 190.91,
+          "text": "to"
+        },
+        {
+          "t": 191.47,
+          "text": "break"
+        }
+      ]
+    },
+    {
+      "start": 191.89,
+      "end": 193.61,
+      "text": "This unentwined",
+      "words": [
+        {
+          "t": 191.89,
+          "text": "This"
+        },
+        {
+          "t": 192.43,
+          "text": "unentwined"
+        }
+      ]
+    },
+    {
+      "start": 193.61,
+      "end": 196.23,
+      "text": "Home without burning",
+      "words": [
+        {
+          "t": 193.61,
+          "text": "Home"
+        },
+        {
+          "t": 194.27,
+          "text": "without"
+        },
+        {
+          "t": 195.23,
+          "text": "burning"
+        }
+      ]
+    },
+    {
+      "start": 196.23,
+      "end": 198.07,
+      "text": "Look down to the night",
+      "words": [
+        {
+          "t": 196.23,
+          "text": "Look"
+        },
+        {
+          "t": 196.93,
+          "text": "down"
+        },
+        {
+          "t": 197.25,
+          "text": "to"
+        },
+        {
+          "t": 197.47,
+          "text": "the"
+        },
+        {
+          "t": 197.59,
+          "text": "night"
+        }
+      ]
+    },
+    {
+      "start": 198.07,
+      "end": 199.27,
+      "text": "The fire is gone",
+      "words": [
+        {
+          "t": 198.07,
+          "text": "The"
+        },
+        {
+          "t": 198.49,
+          "text": "fire"
+        },
+        {
+          "t": 198.79,
+          "text": "is"
+        },
+        {
+          "t": 199.11,
+          "text": "gone"
+        }
+      ]
+    },
+    {
+      "start": 201.35,
+      "end": 202.93,
+      "text": "I'm still here",
+      "words": [
+        {
+          "t": 201.35,
+          "text": "I'm"
+        },
+        {
+          "t": 202.37,
+          "text": "still"
+        },
+        {
+          "t": 202.41,
+          "text": "here"
+        }
+      ]
+    },
+    {
+      "start": 202.93,
+      "end": 205.37,
+      "text": "When the fire is gone",
+      "words": [
+        {
+          "t": 202.93,
+          "text": "When"
+        },
+        {
+          "t": 203.77,
+          "text": "the"
+        },
+        {
+          "t": 203.93,
+          "text": "fire"
+        },
+        {
+          "t": 204.49,
+          "text": "is"
+        },
+        {
+          "t": 205.07,
+          "text": "gone"
+        }
+      ]
+    },
+    {
+      "start": 206.47,
+      "end": 207.73,
+      "text": "It's a fire",
+      "words": [
+        {
+          "t": 206.47,
+          "text": "It's"
+        },
+        {
+          "t": 207.37,
+          "text": "a"
+        },
+        {
+          "t": 207.37,
+          "text": "fire"
+        }
+      ]
+    },
+    {
+      "start": 207.83,
+      "end": 209.25,
+      "text": "No scars",
+      "words": [
+        {
+          "t": 207.83,
+          "text": "No"
+        },
+        {
+          "t": 208.81,
+          "text": "scars"
+        }
+      ]
+    },
+    {
+      "start": 209.25,
+      "end": 211.11,
+      "text": "No reason to run",
+      "words": [
+        {
+          "t": 209.25,
+          "text": "No"
+        },
+        {
+          "t": 209.69,
+          "text": "reason"
+        },
+        {
+          "t": 210.27,
+          "text": "to"
+        },
+        {
+          "t": 210.69,
+          "text": "run"
+        }
+      ]
+    },
+    {
+      "start": 211.99,
+      "end": 215.03,
+      "text": "But you know I am",
+      "words": [
+        {
+          "t": 211.99,
+          "text": "But"
+        },
+        {
+          "t": 212.99,
+          "text": "you"
+        },
+        {
+          "t": 213.99,
+          "text": "know"
+        },
+        {
+          "t": 214.37,
+          "text": "I"
+        },
+        {
+          "t": 214.77,
+          "text": "am"
+        }
+      ]
+    },
+    {
+      "start": 215.03,
+      "end": 215.91,
+      "text": "Confused",
+      "words": [
+        {
+          "t": 215.03,
+          "text": "Confused"
+        }
+      ]
+    },
+    {
+      "start": 215.91,
+      "end": 225.63,
+      "text": "I thought somebody on this day",
+      "words": [
+        {
+          "t": 215.91,
+          "text": "I"
+        },
+        {
+          "t": 216.27,
+          "text": "thought"
+        },
+        {
+          "t": 219.81,
+          "text": "somebody"
+        },
+        {
+          "t": 224.87,
+          "text": "on"
+        },
+        {
+          "t": 225.13,
+          "text": "this"
+        },
+        {
+          "t": 225.31,
+          "text": "day"
+        }
+      ]
+    },
+    {
+      "start": 225.83,
+      "end": 227.11,
+      "text": "If it hurt",
+      "words": [
+        {
+          "t": 225.83,
+          "text": "If"
+        },
+        {
+          "t": 226.63,
+          "text": "it"
+        },
+        {
+          "t": 226.79,
+          "text": "hurt"
+        }
+      ]
+    },
+    {
+      "start": 227.11,
+      "end": 229.15,
+      "text": "I'm alive",
+      "words": [
+        {
+          "t": 227.11,
+          "text": "I'm"
+        },
+        {
+          "t": 228.63,
+          "text": "alive"
+        }
+      ]
+    },
+    {
+      "start": 229.15,
+      "end": 231.09,
+      "text": "So check my door",
+      "words": [
+        {
+          "t": 229.15,
+          "text": "So"
+        },
+        {
+          "t": 229.76,
+          "text": "check"
+        },
+        {
+          "t": 230.03,
+          "text": "my"
+        },
+        {
+          "t": 230.55,
+          "text": "door"
+        }
+      ]
+    },
+    {
+      "start": 233.05,
+      "end": 234.63,
+      "text": "I'm gonna check",
+      "words": [
+        {
+          "t": 233.05,
+          "text": "I'm"
+        },
+        {
+          "t": 234.01,
+          "text": "gonna"
+        },
+        {
+          "t": 234.07,
+          "text": "check"
+        }
+      ]
+    },
+    {
+      "start": 237.83,
+      "end": 238.43,
+      "text": "Maybe each and every step",
+      "words": [
+        {
+          "t": 237.83,
+          "text": "Maybe"
+        },
+        {
+          "t": 238.01,
+          "text": "each"
+        },
+        {
+          "t": 238.01,
+          "text": "and"
+        },
+        {
+          "t": 238.13,
+          "text": "every"
+        },
+        {
+          "t": 238.13,
+          "text": "step"
+        }
+      ]
+    },
+    {
+      "start": 240.65,
+      "end": 243.51,
+      "text": "To show my love",
+      "words": [
+        {
+          "t": 240.65,
+          "text": "To"
+        },
+        {
+          "t": 240.77,
+          "text": "show"
+        },
+        {
+          "t": 243.51,
+          "text": "my"
+        },
+        {
+          "t": 243.51,
+          "text": "love"
+        }
+      ]
+    },
+    {
+      "start": 243.51,
+      "end": 244.03,
+      "text": "And may the release",
+      "words": [
+        {
+          "t": 243.51,
+          "text": "And"
+        },
+        {
+          "t": 243.51,
+          "text": "may"
+        },
+        {
+          "t": 243.71,
+          "text": "the"
+        },
+        {
+          "t": 243.91,
+          "text": "release"
+        }
+      ]
+    },
+    {
+      "start": 244.12,
+      "end": 244.19,
+      "text": "Won't wait till",
+      "words": [
+        {
+          "t": 244.12,
+          "text": "Won't"
+        },
+        {
+          "t": 244.17,
+          "text": "wait"
+        },
+        {
+          "t": 244.17,
+          "text": "till"
+        }
+      ]
+    },
+    {
+      "start": 244.19,
+      "end": 244.61,
+      "text": "I'll kill this",
+      "words": [
+        {
+          "t": 244.19,
+          "text": "I'll"
+        },
+        {
+          "t": 244.19,
+          "text": "kill"
+        },
+        {
+          "t": 244.19,
+          "text": "this"
+        }
+      ]
+    },
+    {
+      "start": 244.61,
+      "end": 245.07,
+      "text": "Fire",
+      "words": [
+        {
+          "t": 244.61,
+          "text": "Fire"
+        }
+      ]
+    },
+    {
+      "start": 245.95,
+      "end": 246.35,
+      "text": "No more",
+      "words": [
+        {
+          "t": 245.95,
+          "text": "No"
+        },
+        {
+          "t": 246.35,
+          "text": "more"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": "warm-without-burning",
+    "planet": {
+      "analysis": {
+        "summary": "This song redefines intimacy as a presence that offers warmth without the destructive pain of fire, suggesting a relationship where safety and connection exist beyond the need for intense passion or fear.",
+        "overallMood": "Sultry yet tender atmospheric intimacy",
+        "themes": [
+          "Safe Intimacy",
+          "Emotional Resilience",
+          "Transition from Passion to Peace",
+          "Acceptance of Vulnerability"
+        ],
+        "palette": [
+          "#051428",
+          "#FF6F3C",
+          "#D9A73B",
+          "#E6ECEF"
+        ],
+        "sections": [
+          {
+            "name": "Intro",
+            "emotion": "Anticipation and quiet reverence",
+            "intensity": 0.2,
+            "colorHint": "#1a1f2e",
+            "start": 2.08
+          },
+          {
+            "name": "Verse 1",
+            "emotion": "Playful tension resolving into comfort",
+            "intensity": 0.45,
+            "colorHint": "#3d2b18",
+            "start": 3
+          },
+          {
+            "name": "Chorus",
+            "emotion": "Confident reassurance and steady warmth",
+            "intensity": 0.75,
+            "colorHint": "#ff6f3c",
+            "start": 44.25
+          },
+          {
+            "name": "Bridge",
+            "emotion": "Sudden dissolution of tension into pure calm",
+            "intensity": 0.15,
+            "colorHint": "#eef2f4",
+            "start": 114.87
+          },
+          {
+            "name": "Drop",
+            "emotion": "Melancholic acceptance and gentle fading",
+            "intensity": 0.3,
+            "colorHint": "#8da9b6",
+            "start": 149.86
+          },
+          {
+            "name": "Outro",
+            "emotion": "Enduring peace beyond the fire's end",
+            "intensity": 0.25,
+            "colorHint": "#1e2a3f",
+            "start": 160.25
+          }
+        ],
+        "keywords": [
+          {
+            "word": "Warmth",
+            "emotion": "Safe embrace without danger",
+            "imageryPrompt": "A glowing ember resting gently in a palm, emitting soft orange light against deep blue shadows, no smoke or heat distortion."
+          },
+          {
+            "word": "Dragon",
+            "emotion": "Controlled power turned into protection",
+            "imageryPrompt": "A massive mythical dragon coiling protectively around a small lantern, its breath transforming from fire to warm steam."
+          },
+          {
+            "word": "Rivers",
+            "emotion": "Flowing continuity and depth of feeling",
+            "imageryPrompt": "Nighttime view of the Han River reflecting city lights, water moving smoothly without turbulence or ripples breaking the surface tension."
+          },
+          {
+            "word": "Silence",
+            "emotion": "Peaceful absence after intensity",
+            "imageryPrompt": "A single drop of rain hitting a still pool in an empty courtyard at night, creating perfect concentric circles in darkness."
+          },
+          {
+            "word": "Fire",
+            "emotion": "Transformed into light rather than destruction",
+            "imageryPrompt": "Crackling flames that have turned golden and static, illuminating a face without casting fearful shadows or consuming surroundings."
+          },
+          {
+            "word": "Home",
+            "emotion": "Sanctuary found in connection",
+            "imageryPrompt": "A window looking out onto rain-slicked streets where two silhouettes stand close together, warm interior light spilling softly outward."
+          }
+        ]
+      },
+      "generatedAt": null
+    },
+    "ok": true,
+    "error": null
+  }
+]
