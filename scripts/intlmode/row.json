@@ -1,0 +1,463 @@
+{
+  "id": "international-mode",
+  "title": "International Mode",
+  "artist": "AGENOR",
+  "genre": "Hip-Hop / Hype",
+  "mood": "joyful unity",
+  "color": "#2B6CB0",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/international-mode/scene-flags.webp",
+  "audio_url": "/private/international-mode.mp3",
+  "sort_order": 9001,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[00:25.04]International International International\n[00:29.76]Run it\n[00:31.76]International International International\n[02:02.24]Stamp it Stamp it Stamp it Stamp it\n[02:04.00]Move it Move it Move it Move it\n[02:04.88]Move it Move it Move it\n[02:08.48]International International International\n[02:13.44]International International\n[02:21.68]International International\n[02:26.64]International International\n[02:32.56]World class\n[02:34.32]Touch road\n[02:35.44]Big bass\n[02:37.20]Airplane\n[02:38.36]Whiplash\n[02:39.12]International International International\n[02:42.24]Go far\n[02:42.88]From BK to di stars\n[02:44.48]From di street to di charts",
+  "lyrics_synced": {
+    "source": "parakeet-tdt-0.6b-v3+beat-snap",
+    "refinedAt": "2026-09-08T00:00:00.000Z",
+    "words": [
+      {
+        "t": 25.04,
+        "w": "International"
+      },
+      {
+        "t": 28.32,
+        "w": "International"
+      },
+      {
+        "t": 29.76,
+        "w": "Run"
+      },
+      {
+        "t": 30.7,
+        "w": "it"
+      },
+      {
+        "t": 31.76,
+        "w": "International"
+      },
+      {
+        "t": 35.04,
+        "w": "International"
+      },
+      {
+        "t": 37.1,
+        "w": "International"
+      },
+      {
+        "t": 122.24,
+        "w": "Stamp"
+      },
+      {
+        "t": 122.48,
+        "w": "it"
+      },
+      {
+        "t": 122.64,
+        "w": "Stamp"
+      },
+      {
+        "t": 122.88,
+        "w": "it"
+      },
+      {
+        "t": 123.12,
+        "w": "Stamp"
+      },
+      {
+        "t": 123.36,
+        "w": "it"
+      },
+      {
+        "t": 123.6,
+        "w": "Stamp"
+      },
+      {
+        "t": 123.76,
+        "w": "it"
+      },
+      {
+        "t": 124.0,
+        "w": "Move"
+      },
+      {
+        "t": 124.16,
+        "w": "it"
+      },
+      {
+        "t": 124.4,
+        "w": "Move"
+      },
+      {
+        "t": 124.56,
+        "w": "it"
+      },
+      {
+        "t": 124.88,
+        "w": "Move"
+      },
+      {
+        "t": 125.04,
+        "w": "it"
+      },
+      {
+        "t": 125.28,
+        "w": "Move"
+      },
+      {
+        "t": 125.44,
+        "w": "it"
+      },
+      {
+        "t": 125.76,
+        "w": "Move"
+      },
+      {
+        "t": 125.92,
+        "w": "it"
+      },
+      {
+        "t": 126.16,
+        "w": "Move"
+      },
+      {
+        "t": 126.32,
+        "w": "it"
+      },
+      {
+        "t": 126.72,
+        "w": "Move"
+      },
+      {
+        "t": 126.96,
+        "w": "it"
+      },
+      {
+        "t": 127.36,
+        "w": "Move"
+      },
+      {
+        "t": 127.76,
+        "w": "it"
+      },
+      {
+        "t": 128.48,
+        "w": "International"
+      },
+      {
+        "t": 130.16,
+        "w": "International"
+      },
+      {
+        "t": 133.44,
+        "w": "International"
+      },
+      {
+        "t": 136.6,
+        "w": "International"
+      },
+      {
+        "t": 141.68,
+        "w": "International"
+      },
+      {
+        "t": 144.2,
+        "w": "International"
+      },
+      {
+        "t": 146.64,
+        "w": "International"
+      },
+      {
+        "t": 149.6,
+        "w": "International"
+      },
+      {
+        "t": 152.56,
+        "w": "World"
+      },
+      {
+        "t": 153.12,
+        "w": "class"
+      },
+      {
+        "t": 154.32,
+        "w": "Touch"
+      },
+      {
+        "t": 154.8,
+        "w": "road"
+      },
+      {
+        "t": 155.44,
+        "w": "Big"
+      },
+      {
+        "t": 156.0,
+        "w": "bass"
+      },
+      {
+        "t": 157.2,
+        "w": "Airplane"
+      },
+      {
+        "t": 158.36,
+        "w": "Whiplash"
+      },
+      {
+        "t": 159.12,
+        "w": "International"
+      },
+      {
+        "t": 160.16,
+        "w": "International"
+      },
+      {
+        "t": 161.28,
+        "w": "International"
+      },
+      {
+        "t": 162.24,
+        "w": "Go"
+      },
+      {
+        "t": 162.64,
+        "w": "far"
+      },
+      {
+        "t": 162.88,
+        "w": "From"
+      },
+      {
+        "t": 163.52,
+        "w": "BK"
+      },
+      {
+        "t": 163.68,
+        "w": "to"
+      },
+      {
+        "t": 163.84,
+        "w": "di"
+      },
+      {
+        "t": 164.32,
+        "w": "stars"
+      },
+      {
+        "t": 164.48,
+        "w": "From"
+      },
+      {
+        "t": 164.64,
+        "w": "di"
+      },
+      {
+        "t": 165.12,
+        "w": "street"
+      },
+      {
+        "t": 165.28,
+        "w": "to"
+      },
+      {
+        "t": 165.42,
+        "w": "di"
+      },
+      {
+        "t": 165.6,
+        "w": "charts"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-08T00:00:00.000Z",
+    "styleHint": "ONE WORLD GATE \u2014 warm dusk-to-gold festival light, dozens of real national flags raised together, diverse crowds, world landmarks. Unity, not surveillance. Percussive hit: a stamp throwing multicolor ink, not black-and-red.",
+    "analysis": {
+      "themes": [
+        "unity",
+        "travel",
+        "flags",
+        "celebration",
+        "the world"
+      ],
+      "palette": [
+        "#E8A33D",
+        "#2B6CB0",
+        "#2F855A",
+        "#C53030",
+        "#F2E4CE"
+      ],
+      "summary": "A global hype anthem \u2014 the whole world raising its flags together. Built to unite, not to gatekeep.",
+      "keywords": [],
+      "sections": [
+        {
+          "start": 0.0,
+          "name": "the hook",
+          "emotion": "chant",
+          "intensity": 0.6,
+          "colorHint": "#2B6CB0"
+        },
+        {
+          "start": 120.14,
+          "name": "the build",
+          "emotion": "build",
+          "intensity": 0.55,
+          "colorHint": "#C53030"
+        },
+        {
+          "start": 128.48,
+          "name": "the chant wall",
+          "emotion": "unity",
+          "intensity": 0.68,
+          "colorHint": "#2F855A"
+        },
+        {
+          "start": 152.56,
+          "name": "world class",
+          "emotion": "payoff",
+          "intensity": 0.7,
+          "colorHint": "#E8A33D"
+        },
+        {
+          "start": 162.24,
+          "name": "go far",
+          "emotion": "payoff",
+          "intensity": 0.68,
+          "colorHint": "#E8A33D"
+        }
+      ],
+      "overallMood": "joyful unity"
+    },
+    "assets": {
+      "broll": [],
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/international-mode/stems/stems.json",
+      "stemLag": 0,
+      "shots": {
+        "/planets/international-mode/scene-flags.webp": "WIDE",
+        "/planets/international-mode/scene-stamp.webp": "MACRO",
+        "/planets/international-mode/scene-move.webp": "WIDE",
+        "/planets/international-mode/scene-world.webp": "WIDE",
+        "/planets/international-mode/scene-road.webp": "WIDE",
+        "/planets/international-mode/scene-bass.webp": "WIDE",
+        "/planets/international-mode/scene-airplane.webp": "WIDE",
+        "/planets/international-mode/scene-whiplash.webp": "WIDE",
+        "/planets/international-mode/scene-bk.webp": "WIDE",
+        "/planets/international-mode/scene-stars.webp": "WIDE",
+        "/planets/international-mode/scene-street.webp": "WIDE",
+        "/planets/international-mode/scene-charts.webp": "WIDE",
+        "/planets/international-mode/scene-globe.webp": "MED",
+        "/planets/international-mode/scene-stadium.webp": "WIDE",
+        "/planets/international-mode/scene-hands.webp": "CLOSE",
+        "/planets/international-mode/scene-fireworks.webp": "WIDE",
+        "/planets/international-mode/scene-kids.webp": "WIDE",
+        "/planets/international-mode/scene-summit.webp": "WIDE"
+      },
+      "keywords": {
+        "international": "/planets/international-mode/scene-flags.webp",
+        "run": "/planets/international-mode/scene-flags.webp",
+        "stamp": "/planets/international-mode/scene-stamp.webp",
+        "move": "/planets/international-mode/scene-move.webp",
+        "world": "/planets/international-mode/scene-world.webp",
+        "class": "/planets/international-mode/scene-world.webp",
+        "touch": "/planets/international-mode/scene-road.webp",
+        "road": "/planets/international-mode/scene-road.webp",
+        "big": "/planets/international-mode/scene-bass.webp",
+        "bass": "/planets/international-mode/scene-bass.webp",
+        "airplane": "/planets/international-mode/scene-airplane.webp",
+        "whiplash": "/planets/international-mode/scene-whiplash.webp",
+        "go": "/planets/international-mode/scene-bk.webp",
+        "far": "/planets/international-mode/scene-bk.webp",
+        "bk": "/planets/international-mode/scene-bk.webp",
+        "stars": "/planets/international-mode/scene-stars.webp",
+        "street": "/planets/international-mode/scene-street.webp",
+        "charts": "/planets/international-mode/scene-charts.webp"
+      },
+      "sections": {
+        "chant": "/planets/international-mode/scene-flags.webp",
+        "build": "/planets/international-mode/scene-move.webp",
+        "unity": "/planets/international-mode/scene-world.webp",
+        "payoff": "/planets/international-mode/scene-charts.webp"
+      }
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "INTERNATIONAL MODE 60s spliced cut \u2014 ONE WORLD GATE voice, 12 plates. Part A 25.04-39.2 (the first hook), Part B 120.14-166.0 (Build into Final Drop), merged with a 0.6s crossfade landing in the song's own pre-Build silence.",
+      "scene": "GATE",
+      "acts": [
+        {
+          "start": 25.04,
+          "end": 39.2,
+          "label": "INTERNATIONAL",
+          "why": "the first hook"
+        },
+        {
+          "start": 120.14,
+          "end": 128.48,
+          "label": "STAMP IT / MOVE IT",
+          "why": "the build"
+        },
+        {
+          "start": 128.48,
+          "end": 152.56,
+          "label": "THE CHANT WALL",
+          "why": "wall of the hook"
+        },
+        {
+          "start": 152.56,
+          "end": 166.0,
+          "label": "WORLD CLASS",
+          "why": "the payoff lines"
+        }
+      ],
+      "modes": [
+        {
+          "start": 25.04,
+          "end": 39.2,
+          "mode": "phrase"
+        },
+        {
+          "start": 120.14,
+          "end": 166.0,
+          "mode": "phrase"
+        }
+      ],
+      "words": {
+        "international": "pulse",
+        "stamp": "chop",
+        "move": "rise",
+        "world": "bloom",
+        "class": "bloom",
+        "touch": "drip",
+        "road": "drip",
+        "big": "quake",
+        "bass": "quake",
+        "airplane": "rise",
+        "whiplash": "tremor",
+        "go": "cling",
+        "far": "cling",
+        "bk": "shimmer",
+        "stars": "shimmer",
+        "street": "bloom",
+        "charts": "shimmer",
+        "run": "slam"
+      },
+      "deck": {
+        "glow": 1.2,
+        "grain": 0.5,
+        "density": 2.0,
+        "vignette": 0.55,
+        "giant": {
+          "life": 2000,
+          "pile": 0,
+          "clearOnSwitch": true
+        },
+        "motion": {
+          "swapMs": 650
+        }
+      },
+      "hits": [],
+      "holds": [],
+      "rolls": []
+    }
+  }
+}

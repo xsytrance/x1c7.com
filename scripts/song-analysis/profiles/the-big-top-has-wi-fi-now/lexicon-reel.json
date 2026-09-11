@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "the-big-top-has-wi-fi-now",
+  "generatedAt": "2026-09-11T04:08:27.923Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 2630,
+    "judged": 64,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

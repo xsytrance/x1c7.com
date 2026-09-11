@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "veneno-y-miel",
+  "generatedAt": "2026-09-11T04:08:55.461Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 2710,
+    "judged": 64,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

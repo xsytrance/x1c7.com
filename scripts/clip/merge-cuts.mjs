@@ -37,7 +37,6 @@ execFileSync("ffmpeg", ["-y", "-v", "error", "-i", A, "-i", B,
   "-c:a", "aac", "-ar", "48000", "-b:a", "192k", "-movflags", "+faststart", OUT]);
 
 // decode check — silence on stderr = clean
-const err = execFileSync("ffmpeg", ["-v", "error", "-i", OUT, "-f", "null", "-"], { stdio: ["ignore", "ignore", "pipe"] }).toString?.() ?? "";
 let decodeErr = "";
 try { execFileSync("ffmpeg", ["-v", "error", "-i", OUT, "-f", "null", "-"]); } catch (e) { decodeErr = String(e.stderr || e.message); }
 if (decodeErr.trim()) {

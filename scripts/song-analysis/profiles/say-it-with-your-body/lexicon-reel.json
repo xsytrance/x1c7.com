@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "say-it-with-your-body",
+  "generatedAt": "2026-09-11T04:07:40.554Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 1405,
+    "judged": 64,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

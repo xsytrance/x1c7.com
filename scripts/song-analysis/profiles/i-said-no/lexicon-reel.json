@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "i-said-no",
+  "generatedAt": "2026-09-11T04:05:09.378Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 201,
+    "judged": 26,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

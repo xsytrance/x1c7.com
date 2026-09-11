@@ -1022,3 +1022,62 @@ array for this one had to be rebuilt from scratch against the official lyrics
 - The row stays `hidden=true` with a `/private` `audio_url` (§13); this patch
   replaced only `lyrics_synced` and the window-specific planet wiring, leaving
   title/cover/etc. from the first cut untouched.
+
+## 22 · International Mode — the first SPLICED cut, and two schema bugs that fake a black backdrop (2026-09-08)
+
+Sixteenth voice: **ONE WORLD GATE** — dozens of real national flags raised
+together at festival dusk, diverse crowds, a stamp thrown in mixed-flag ink
+instead of black — built to an explicit owner brief: *"use lots of flags and
+lots of imagery from different countries. i want this song to unite people."*
+First cut whose window is not one continuous span: **25.04–39.2s** (the first
+hook) **+ 120.14–166.0s** (Build into Final Drop), spliced with a 0.6s
+fadeblack/crossfade, ~60s total. Also first cut using **NVIDIA Parakeet TDT
+0.6b-v3** (via `onnx-asr`) instead of whisper for the transcript — see the
+`kinetica-video-cut` skill's §3b for the install (cuDNN, provider conflict,
+token-not-word API) and §3c for the splice technique itself.
+
+**Two data-schema bugs, both silent, both produce the identical symptom** (a
+render that completes, passes VERIFY, draws words correctly — and shows
+nothing but the particle starfield for a backdrop, because NO scene or
+section art ever paints):
+
+1. `assets.keywords` (and `dynamicPlus.words`) must be keyed **lowercase**.
+   `KineticStage.tsx`'s render loop does `clean(words[i].w).toLowerCase()`
+   before the `art?.[w]` lookup; a dict keyed with the display casing
+   (`"Stamp"`) never matches.
+2. `analysis.sections[]` entries must use `{start, name, colorHint}` — NOT
+   `{at, label}`. `activeSection()` (`src/lib/planet.ts`) reads `s.start`.
+   **§19's own row.json (Forged Above Gold) uses `{at, label}`** — meaning
+   that shipped cut's section-driven ambient art may never have painted
+   either, and nobody caught it because its keyword density was high enough
+   to cover the window without it. Worth auditing before assuming any older
+   row's `analysis.sections` actually does anything.
+
+Neither preflight nor VERIFY checks a row's field names against the
+`PlanetSection`/keyword types — both passed clean on the broken data. The
+only thing that catches this is pulling a real frame and looking at it.
+**Do this before, not after, believing a render "succeeded."**
+
+**A splice's cut point should land where the SONG is already quiet.** Chose
+120.14 for the second window's start because it's a real measured
+drum-silence gap from `analyze_stems.py`'s `cuts` array (the riser before
+Build), not a freehand pick — the crossfade never has to reconcile two live,
+unrelated drum patterns because there's real silence to fade through on one
+side already.
+
+**`merge-cuts.mjs` crashed on its own success path** — an unused, duplicate
+decode-check line returned `null` from `execFileSync` (stdout was `ignore`d)
+and then tried to read a property off it. Deleted the dead line; the real
+check two lines below (a try/catch around the same ffmpeg decode) was
+already correct and unaffected.
+
+**A spliced cut carries 1-3s of stale phrase text across the join** — the
+engine has no notion of "the song just jumped 80 seconds," so it keeps
+showing the last LRC line active before the cut until the second window's
+own first stamped line arrives. Mostly hidden inside the fadeblack dip here;
+not fixed, logged as a known cosmetic gap for the next spliced cut to close
+(stamp a blank/reset line at the second window's exact start).
+
+**Title-collision trap, same shape as FAG's §19:** "International Mode" and
+the already-catalogued "International Heat" are different songs; searching
+assets by partial title would have grabbed the wrong one.

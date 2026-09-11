@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "maybe-was-the-answer",
+  "generatedAt": "2026-09-11T04:06:01.995Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 1396,
+    "judged": 64,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

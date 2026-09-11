@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "say-it-with-your-eyes",
+  "generatedAt": "2026-09-11T04:07:44.888Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 804,
+    "judged": 58,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

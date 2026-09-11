@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "id": "under-the-elevated",
+  "generatedAt": "2026-09-11T04:08:44.314Z",
+  "model": "qwen3:14b",
+  "embModel": "qwen3-embedding:0.6b",
+  "counts": {
+    "candidates": 4087,
+    "judged": 64,
+    "accepted": 0,
+    "kept": 0
+  },
+  "reel": [],
+  "byWord": {}
+}

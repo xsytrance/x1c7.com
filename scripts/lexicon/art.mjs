@@ -21,7 +21,7 @@
 //   node scripts/lexicon/art.mjs --recipe word-portrait --limit 5
 // ═══════════════════════════════════════════════════════════════════════════
 
-import { mkdirSync, writeFileSync, readFileSync, existsSync, unlinkSync } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync, existsSync, unlinkSync, renameSync } from "node:fs";
 import { join } from "node:path";
 import { execFileSync } from "node:child_process";
 import sharp from "sharp";
@@ -300,7 +300,14 @@ const entries = Object.values(lex.entries)
   .sort((a, b) => (b.gravity?.score ?? 0.5) - (a.gravity?.score ?? 0.5) || b.freq - a.freq);
 let unpublished = 0;
 const save = (publish = false) => {
-  writeFileSync(LEX, JSON.stringify(lex, null, 2));
+  // Atomic: same-directory temp + rename. save() runs after every render and
+  // rewrites ~7.5MB; a plain writeFileSync interrupted mid-flush (night shift
+  // stood down, box rebooted) leaves a TRUNCATED lexicon.json, and the next
+  // r2put ships that truncation to every x1c7 + Kinetica install. rename(2) is
+  // atomic within a filesystem, so a reader only ever sees whole shelves.
+  const tmp = `${LEX}.tmp-${process.pid}`;
+  writeFileSync(tmp, JSON.stringify(lex, null, 2));
+  renameSync(tmp, LEX);
   if (args.dry) return;
   unpublished++;
   if (publish || unpublished >= 10) { r2put(LEX, "lexicon.json"); unpublished = 0; }

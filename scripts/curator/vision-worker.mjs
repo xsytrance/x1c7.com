@@ -137,7 +137,18 @@ async function main() {
   log(`vision-worker: ${jobs.length} unread images · reading ${todo.length} with ${MODEL}`);
 
   let done = 0, fail = 0;
-  const save = () => { index.generatedAt = new Date().toISOString(); fs.writeFileSync(INDEX, JSON.stringify(index, null, 2)); };
+  // Atomic: same-directory temp + rename. save() fires every 10 images and
+  // rewrites ~10.7MB; a plain writeFileSync interrupted mid-flush (the watch
+  // stood down, the box rebooted) leaves a TRUNCATED vision-index.json — and
+  // the run then publishes it to R2 as lexicon-vision.json. rename(2) is atomic
+  // within a filesystem, so a reader only ever sees a whole index.
+  // Same bug, same fix as art.mjs save() — 2026-09-08.
+  const save = () => {
+    index.generatedAt = new Date().toISOString();
+    const tmp = `${INDEX}.tmp-${process.pid}`;
+    fs.writeFileSync(tmp, JSON.stringify(index, null, 2));
+    fs.renameSync(tmp, INDEX);
+  };
   for (const j of todo) {
     try {
       const reading = await readImage(j.key, j.word);
