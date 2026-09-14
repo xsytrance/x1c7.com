@@ -21,12 +21,14 @@ paid for.
   `object-cover` into a 1080×1920 frame keeps only the centre 42% of a
   landscape plate, before the Ken-Burns camera eats another 10-30%.
 - **Own art voice per song.** Skim the "voices used so far" list at the top
-  of the playbook (15 as of 2026-09-04: purple-gold comic noir, coral sunrise
+  of the playbook (17 as of 2026-09-14: purple-gold comic noir, coral sunrise
   comic, 16-bit pixel+cars, '80s airbrush chrome, chiaroscuro oil, urban LED
   nightclub silhouettes, ultraviolet-noir photoreal, risograph duotone, Osaka
   gold-leaf night, blueprint dawn, THE AUDIBLE DESERT (no humans), THE ANVIL
   LIGHT (blacksmith documentary), SƠN MÀI LACQUER (Warm Without Burning),
-  Osaka WET NEON recut) — pick something none of those already own.
+  Osaka WET NEON recut, ONE WORLD GATE (flags/festival photoreal),
+  PAPER RIVER (ukiyo-e woodblock, one river valley across one day)) —
+  pick something none of those already own.
 - **Eyes on every deliverable before shipping.** Count figures, read letters,
   check the shot-size histogram (≥⅓ WIDE, ≤¼ CLOSE+MACRO). VERIFY numbers
   prove sync, never taste.
@@ -189,13 +191,24 @@ arbitrary timestamp — a drum-silence/riser gap from `analyze_stems.py`'s
 unrelated drum patterns; a crossfade over live drums on both sides does.
 0.6s duration left comfortable room either side of a ~2.3s natural gap here.
 
-**`merge-cuts.mjs` had a real bug that crashes on the SUCCESS path**: an
-unused decode-check line (`execFileSync(..., {stdio:["ignore","ignore","pipe"]}).toString?.()`)
-returns `null` when stdout is ignored (execFileSync returns stdout, not
-stderr), and `null.toString` doesn't exist even with `?.` because the crash
-is on the property access chain resolving on `null` itself, not a method
-call on undefined. It's dead code duplicating the real check two lines
-below — just delete that line, don't route around it.
+**When the song offers NO silence, use phase instead** (Days Drift By, §23):
+its `cuts` held only the head and tail of the record and its drums run
+straight through every transition. Take every window edge from `senses.json`'s
+`beats`, then choose the next window's start so the beat-index delta is a
+multiple of 4 — the crossfade then blends drum patterns that are in phase.
+Costs one line of arithmetic and is as good as silence.
+
+**THREE windows are allowed, and sometimes required.** A splice is not only
+"first N + last N"; it is also the repair for a song with no dense 60s. If
+`cut-preflight` fails a window on DEAD AIR mid-window, splicing a second time
+*inside* that instrumental — rather than moving the window — cuts the gap under
+the 6s threshold while keeping every lyric. Days Drift By needed exactly this:
+two joins, 59.2s, all three windows green.
+
+**`merge-cuts.mjs`'s success-path crash is FIXED** (the dead duplicate
+decode-check line is gone as of the Days Drift By cut, 2026-09-14). Don't go
+looking for it. The real check — a try/catch around an ffmpeg decode that
+deletes the merged file if it isn't clean — is the one that remains.
 
 **A spliced cut leaves 1-3s of stale phrase text after the cut**, because
 the engine has no concept of "we just jumped 80 seconds" — it keeps
@@ -270,6 +283,22 @@ in `assets.keywords`, the screen will freeze on section art for its every
 run. FAG never hit this because it's a ballad with almost no word repeats —
 this class of bug is specific to hook/chant-style songs, which is exactly
 the shape of track most likely to get picked for a video next.
+
+## Step 3f — three worktree traps beyond §20's `node_modules` (2026-09-14)
+
+`render-cut.mjs` needs `sharp`/`@img` symlinked in (playbook §20). Three more,
+each of which reads as a crash rather than a missing file:
+
+1. **`cut-preflight.mjs` resolves `.env` relative to ITSELF**, so it dies with
+   ENOENT in a worktree while `_kiz-db.mjs` (which hardcodes the main checkout)
+   works fine right next to it. Symlink `.env` and `.env.local` in;
+   `.gitignore`'s `.env*` already covers them, so nothing can be committed.
+2. **Preflight also wants a profile directory for the CUT's own slug** with
+   `release.mp3` and `senses.json` in it. `--audio` satisfies the renderer but
+   not the check; copy the master in and copy the senses from the source song.
+3. **`pkill -f "next dev -p 3218"` matches the shell running the pkill**, so it
+   kills your own command (exit 144) and looks like a crash. Same family as
+   §19's self-matching `pgrep`. Start the replacement in a separate call.
 
 ## Step 4 — log what you learned
 
