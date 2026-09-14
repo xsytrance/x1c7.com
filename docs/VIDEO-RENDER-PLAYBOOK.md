@@ -1207,3 +1207,92 @@ stem is digitally silent (-98 dB) — an existing LRC is a hypothesis, not a
 source. Where the official sheet and the audio disagree on a word ("the sun
 finds *its* way" vs the sung "*his*"), the ASR and the old LRC agreeing against
 the sheet is enough to go with what is sung.
+
+## 24 · Days Drift By v2 — the 70% dynamic cut, and Tranche 9 (2026-09-14)
+
+Second cut of the same song, to an explicit owner brief: open on the FIRST
+chorus; mix phrase with the giant dynamic treatment at **~70% dynamic**;
+animate key words the way `fire` is animated in *I Won't Be Your Fire*; invent
+NEW text animations — *"make the word 'days' actually drift by"*; emphasise;
+and **don't show every lyric**. Same PAPER RIVER plates, reused verbatim from
+v1 — only the typography changed. Scripts in `scripts/ddb/v2_*`.
+
+**§11 is retired. Dynamic mode no longer clips in 9:16.** Its advice ("reserve
+dynamic for quiet moments, ship phrase throughout in portrait") was written
+before the measured `fitScale` pre-scale landed in KineticStage (~line 1781).
+That code now estimates the word's width with a pessimistic 0.88 advance in
+portrait, targets **56%** of frame width, and clamps the stagecraft x-offset to
+the room actually left — and its own comment names §11 as the thing it fixes.
+A 73%-dynamic 1080×1920 cut rendered with no clipped word anywhere. Do not
+re-derive this; §11's conclusion is stale, its diagnosis was real.
+
+**Phrase mode renders words PLAIN — no WORD_FX, ever.** `KineticStage` draws a
+phrase line as `{clean(w.w)}`; the whole `WORD_FX` map is reachable only from
+the giant-word path. This is not a limitation to work around, it is the
+structure of a mixed cut: the dynamic stretches are where every animation
+lives, and the phrase lines are the readable counterpoint they cut against.
+The practical trap is that **a word FX mapped to a word that only ever occurs
+inside a phrase window is dead data** and nothing warns you. `v2_row.py` checks
+for exactly this and rejected three mappings (`alive`, `clouds`, `fade`) on the
+first build. One was worth rescuing with a §6 micro-window (see below); two
+were deleted.
+
+**Not drawing a lyric is a directing tool, and it costs nothing to implement.**
+A word absent from `lyrics_synced.words` is never rendered, and in dynamic mode
+the previous word simply holds the frame for longer. v2 draws **52 of 65**
+words: "tonight", "floating into the", "Then the sun / Finds his" reduced to
+`sun` and `way`, "Through the" dropped so `leaves` lands alone. The dropped
+connectives are what buy the kept words their airtime.
+
+**A dynamic window holding exactly ONE word is the punch, and §6's
+micro-window is how you get it.** "Everything feels alive" wanted to be a
+readable line AND wanted `alive` huge. Splitting the phrase window at 77.30 —
+phrase for "Everything feels alive", then 1.3s of dynamic containing only
+`alive` — gives both. §11's "exactly one word" rule is what keeps this safe: a
+micro-window that swallows two words draws the second giant on top of the line.
+
+**Bind an effect's duration to AIRTIME when the effect ends invisible.** The
+first `drift`/`updraft` drafts used a comfort floor (`max(1.6, …)`, `max(1.2, …)`),
+which is right for effects that end at rest and wrong for these two, which end
+at opacity 0. "DAYS DRIFT BY" gives its words 0.56–0.80s each; with a 1.6s
+duration the word was still sliding in from the left, half-transparent, when the
+next word replaced it — the probe sheet showed two of the three hook words never
+reaching centre. `Math.max(0.55, airtime * 0.98)` plus a `times` curve that
+spends 58% of the run parked at centre fixed it. **Check this on any effect
+whose last keyframe is invisible.**
+
+**`dynamicPlus.scene` is silently ignored unless it names a real scene.**
+`KineticStage:445` is `if (!P.def("backdrop.scene")?.options?.includes(dirScene)) return;`
+— the valid set is **AURORA | EMBERS | INK | SYRUP** (`lib/engine/backdrop.ts`).
+Both this song's rows were authored with `scene: "RIVER"`, a themed name with no
+engine entry, so the pin never applied and the backdrop stayed on AUTO — which
+hashes into the pool and landed a woodblock river song on **EMBERS**. It is
+invisible most of the time because a scene plate covers it, but the moment it
+*is* visible is the ~1s at the start of every window before the first plate
+decodes: v1 opens on orange fire under a Japanese river valley. v2 pins `INK`.
+Validate the name in the builder; a themed name with no Lexicon/engine entry is
+a bug, not creativity.
+
+**Tranche 9 — six new text effects**, in `registry.ts` + `WORD_FX`. Every
+earlier tranche is something DONE to a word (burned, shattered, redacted,
+tapped). This song has no antagonist, so the vocabulary is weather, water and
+light happening TO a word that just sits there:
+
+| id | what it does | the word it was built for |
+|---|---|---|
+| `drift` | crosses the frame like a leaf on a current — in from the left, a long readable hold, out past the right | **days** |
+| `updraft` | letters release from the outside in, spread apart and climb | higher · leaves · sky |
+| `inhale` | swells open on the breath, holds, releases smaller into mist, one ring out | breathe |
+| `sunwake` | light travels across the word, each letter waking cold → white → gold | sun · light · alive |
+| `greyout` | colour drains letter by letter to grey, the letterform sagging | gray |
+| `linger` | starts to leave twice, is pulled back both times, then settles — `drift`'s opposite | stay |
+
+Travel distances are **vw, not em**: the dynamic word is already frame-fitted,
+and an em-based shove on a 14rem word leaves the frame entirely at 1080 wide.
+
+**Extend the window when the closing effect needs room.** `linger` is a 1.6s
+minimum arc (leave, pull back, leave, pull back, settle). The final "Stay" had
+1.09s of airtime and the settle was cut off mid-pull. Moving W1's end four beats
+later (still bar-aligned) gave it 3.14s; W3's end gave the 2.05s back, since the
+LAST window's end needs no bar alignment. **Check the closing word's airtime
+against its effect's minimum duration before rendering.**

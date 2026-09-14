@@ -259,6 +259,13 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   mirror: (w, a) => <WordMirror word={w} airtime={a} />,
   bars: (w, a) => <WordBars word={w} airtime={a} />,
   overreact: (w, a) => <WordOverreact word={w} airtime={a} />,
+  // Tranche 9 — DAYS DRIFT BY (PAPER RIVER): weather, water and light.
+  drift: (w, a) => <WordDrift word={w} airtime={a} />,
+  updraft: (w, a) => <WordUpdraft word={w} airtime={a} />,
+  inhale: (w, a) => <WordInhale word={w} airtime={a} />,
+  sunwake: (w, a) => <WordSunwake word={w} airtime={a} />,
+  greyout: (w, a) => <WordGreyout word={w} airtime={a} />,
+  linger: (w, a) => <WordLinger word={w} airtime={a} />,
 };
 
 // MOTION SHOTS — the camera moves a director can put under a 1–2s scene. Each
@@ -4127,6 +4134,257 @@ function WordOverreact({ word, airtime }: { word: string; airtime: number }) {
     >
       {word}
     </m.span>
+  );
+}
+
+
+/* ══════════════ TRANCHE 9 — DAYS DRIFT BY (the PAPER RIVER cut) ══════════════
+   Every earlier tranche is something DONE to a word: burned, shattered, redacted,
+   tapped on. This song has no antagonist — it is about time passing with nothing
+   to chase — so the vocabulary here is weather, water and light HAPPENING to a
+   word while it sits there. These only ever render on the giant dynamic word;
+   phrase mode draws its lines plain, which is exactly the contrast the cut wants.
+
+   Travel distances are in vw, not em, because the dynamic word is already
+   frame-fitted (see fitScale) and an em-based shove on a 14rem word leaves the
+   frame entirely at 1080 wide. */
+
+/* ========== DRIFT ==========
+   The headline effect, and the one the song is named for: the word crosses the
+   frame like a leaf on a current. In from the left, a long readable hold in the
+   middle where it bobs and turns on the water, then out past the right edge —
+   so "DAYS" literally drifts by. Letters lag each other slightly, the way a row
+   of leaves strung out on a current never quite moves as one body. */
+function WordDrift({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  // Bound to AIRTIME, not to a comfortable floor. This effect ends at opacity 0
+  // (the word leaves the frame), so a duration longer than the word's airtime
+  // means it is still sliding in from the left when the next word replaces it —
+  // "DAYS DRIFT BY" has 0.56-0.80s per word and the first probe drew two of the
+  // three off-centre and half-transparent for their entire life. 0.98 so it
+  // completes just inside the handover.
+  const dur = Math.min(3.2, Math.max(0.55, airtime * 0.98));
+  const r = (i: number, m: number) => ((i * 67 + 23) % 79) / 79 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <m.span
+          key={i}
+          className="inline-block"
+          initial={{ x: "-46vw", y: "0.10em", opacity: 0, rotate: -5 }}
+          animate={{
+            // hold centre through the middle of the airtime — the word has to be
+            // READ, not just seen moving
+            x: ["-46vw", "0vw", "0vw", "46vw"],
+            y: ["0.10em", `-${(0.03 + r(i, 0.05)).toFixed(3)}em`, `${(0.04 + r(i + 2, 0.06)).toFixed(3)}em`, `-${(0.02 + r(i + 4, 0.06)).toFixed(3)}em`],
+            rotate: [-5, (i % 2 ? 1 : -1) * r(i, 1.6), (i % 2 ? -1 : 1) * r(i + 3, 1.8), 5],
+            opacity: [0, 1, 1, 0],
+            filter: ["blur(3px)", "blur(0px)", "blur(0px)", "blur(3px)"],
+          }}
+          transition={{
+            duration: dur,
+            times: [0, 0.22, 0.80, 1],   // 22% in, 58% readable at centre, 20% out
+            delay: i * (dur * 0.022),
+            ease: [0.33, 0, 0.35, 1],   // slow the middle, so the hold reads longer
+          }}
+        >
+          {ch}
+        </m.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== UPDRAFT ==========
+   "Higher", "into the sky", "through the leaves" — the word doesn't rise as a
+   block, it comes apart on a thermal. Letters release from the outside in,
+   spread apart horizontally as they climb, and blur out. */
+function WordUpdraft({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  // Same rule as `drift`: this one also ends invisible, so it has to finish
+  // inside the word's own airtime or the lift never completes on screen.
+  const dur = Math.min(2.4, Math.max(0.6, airtime * 0.98));
+  const mid = (letters.length - 1) / 2;
+  const r = (i: number, m: number) => ((i * 59 + 31) % 73) / 73 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => {
+        const away = i - mid;                       // negative left, positive right
+        const spread = (away / Math.max(1, mid)) * (0.16 + r(i, 0.1));
+        return (
+          <m.span
+            key={i}
+            className="inline-block"
+            initial={{ y: "0.18em", opacity: 0, filter: "blur(2px)" }}
+            animate={{
+              y: ["0.18em", "0em", `-${(0.5 + r(i, 0.45)).toFixed(3)}em`, `-${(1.15 + r(i + 2, 0.9)).toFixed(3)}em`],
+              x: ["0em", "0em", `${(spread * 0.5).toFixed(3)}em`, `${spread.toFixed(3)}em`],
+              rotate: [0, 0, away * 2.5, away * 6],
+              opacity: [0, 1, 1, 0],
+              filter: ["blur(2px)", "blur(0px)", "blur(0px)", "blur(4px)"],
+            }}
+            // outside letters let go first — the word peels apart from its edges
+            transition={{
+              duration: dur,
+              times: [0, 0.2, 0.72, 1],
+              delay: (mid - Math.abs(away)) * Math.min(0.05, dur * 0.06),
+              ease: "easeOut",
+            }}
+          >
+            {ch}
+          </m.span>
+        );
+      })}
+    </span>
+  );
+}
+
+/* ========== INHALE ==========
+   One breath, drawn and let go. The word swells open (scale + letter-spacing
+   together, so it reads as lungs filling rather than a zoom), holds at the top,
+   then releases smaller and softer into mist. A single slow ring goes out with
+   the exhale. */
+function WordInhale({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(3.0, Math.max(1.5, airtime));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <m.span
+        className="inline-block"
+        initial={{ scale: 0.88, opacity: 0, letterSpacing: "-0.01em", filter: "blur(2px)" }}
+        animate={{
+          scale: [0.88, 1.09, 1.06, 0.97],
+          opacity: [0, 1, 1, 0.82],
+          letterSpacing: ["-0.01em", "0.05em", "0.045em", "0.015em"],
+          filter: ["blur(2px)", "blur(0px)", "blur(0px)", "blur(1.6px)"],
+        }}
+        transition={{ duration: dur, times: [0, 0.42, 0.62, 1], ease: "easeInOut" }}
+      >
+        {word}
+      </m.span>
+      <m.span
+        className="pointer-events-none absolute rounded-full"
+        style={{ width: "1.1em", height: "1.1em", border: "0.012em solid var(--theme-accent)" }}
+        initial={{ scale: 0.5, opacity: 0 }}
+        animate={{ scale: [0.5, 1.5, 2.3], opacity: [0, 0.3, 0] }}
+        transition={{ duration: dur * 0.9, delay: dur * 0.42, ease: "easeOut" }}
+        aria-hidden
+      />
+    </span>
+  );
+}
+
+/* ========== SUNWAKE ==========
+   "Then the sun finds its way." Light arrives from one side and wakes the word
+   as it passes: each letter goes cold-dim → white-hot → settled gold, in
+   sequence, with the glow blooming and then falling back. The cascade IS the
+   sweep — no overlay bar, which never survives the letterforms cleanly. */
+function WordSunwake({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(2.6, Math.max(1.3, airtime));
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <m.span
+          key={i}
+          className="inline-block"
+          initial={{ color: "#6f7d80", opacity: 0.55, scale: 0.98 }}
+          animate={{
+            color: ["#6f7d80", "#fff6df", "#ffd98a", "#f5c86b"],
+            opacity: [0.55, 1, 1, 1],
+            scale: [0.98, 1.06, 1.0, 1.0],
+            textShadow: [
+              "0 0 0em transparent",
+              "0 0 0.5em #fff2cf, 0 0 1.1em #ffb347",
+              "0 0 0.26em #ffc76b",
+              "0 0 0.14em #f0b25a",
+            ],
+          }}
+          transition={{
+            duration: dur,
+            times: [0, 0.3, 0.6, 1],
+            delay: i * (dur * 0.055),   // the light travels across the word
+            ease: "easeOut",
+          }}
+        >
+          {ch}
+        </m.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== GREYOUT ==========
+   "Every colour melts into gray." The word arrives in full colour and loses it,
+   letter by letter, left to right — saturation drained and the letterform
+   sagging very slightly, as though the pigment ran out of it. It stays legible:
+   the point is the colour leaving, not the word. */
+function WordGreyout({ word, airtime }: { word: string; airtime: number }) {
+  const letters = [...word];
+  const dur = Math.min(2.6, Math.max(1.3, airtime));
+  const r = (i: number, m: number) => ((i * 53 + 17) % 67) / 67 * m;
+  return (
+    <span className="inline-flex">
+      {letters.map((ch, i) => (
+        <m.span
+          key={i}
+          className="inline-block"
+          initial={{ color: "var(--theme-accent)", y: "0em", opacity: 1 }}
+          animate={{
+            color: ["var(--theme-accent)", "#b9c3c4", "#96a0a2"],
+            y: ["0em", `${(0.015 + r(i, 0.02)).toFixed(3)}em`, `${(0.04 + r(i + 2, 0.03)).toFixed(3)}em`],
+            opacity: [1, 0.95, 0.88],
+            filter: ["saturate(1.05)", "saturate(0.45)", "saturate(0.08)"],
+          }}
+          transition={{ duration: dur, times: [0, 0.55, 1], delay: i * (dur * 0.05), ease: "easeInOut" }}
+        >
+          {ch}
+        </m.span>
+      ))}
+    </span>
+  );
+}
+
+/* ========== LINGER ==========
+   "Stay with me." The word tries to leave — twice — and is pulled back both
+   times before it finally settles, leaving a faint trail where it almost went.
+   The deliberate opposite of `drift`: same current, a word that won't go with
+   it. Ends at rest and fully opaque, because it stays. */
+function WordLinger({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(3.2, Math.max(1.6, airtime));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      {/* the two almost-departures, left behind as afterimages */}
+      {[0, 1].map((k) => (
+        <m.span
+          key={`g${k}`}
+          className="pointer-events-none absolute inline-block whitespace-nowrap"
+          style={{ color: "var(--theme-accent)" }}
+          initial={{ opacity: 0, x: "0vw" }}
+          animate={{
+            opacity: [0, 0.26, 0],
+            x: ["0vw", `${k ? 9 : 14}vw`, `${k ? 12 : 18}vw`],
+            filter: ["blur(0px)", "blur(1px)", "blur(4px)"],
+          }}
+          transition={{ duration: dur * 0.42, delay: dur * (k ? 0.46 : 0.12), ease: "easeOut" }}
+          aria-hidden
+        >
+          {word}
+        </m.span>
+      ))}
+      <m.span
+        className="inline-block"
+        initial={{ x: "0vw", opacity: 0, scale: 0.97 }}
+        animate={{
+          // out, pulled back, out again less far, pulled back, still
+          x: ["0vw", "7vw", "0vw", "4vw", "0vw", "0vw"],
+          opacity: [0, 1, 1, 1, 1, 1],
+          scale: [0.97, 1, 1.02, 1, 1.01, 1],
+        }}
+        transition={{ duration: dur, times: [0, 0.2, 0.42, 0.6, 0.78, 1], ease: "easeInOut" }}
+      >
+        {word}
+      </m.span>
+    </span>
   );
 }
 

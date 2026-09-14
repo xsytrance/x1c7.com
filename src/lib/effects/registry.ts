@@ -59,7 +59,12 @@ export type TextEffect =
   // greasy handprints, the fogged breath, the flashbulbs, and the moment the
   // surface finally goes. Built for Juan.
   | "tap" | "fracture" | "vitrine" | "smudge" | "refract" | "fogbreath"
-  | "flashbulb" | "press" | "placard" | "mirror" | "bars" | "overreact";
+  | "flashbulb" | "press" | "placard" | "mirror" | "bars" | "overreact"
+  // Tranche 9 (DAYS DRIFT BY — the PAPER RIVER cut). A song about time passing
+  // with nothing to chase, so the vocabulary is weather, water and light acting
+  // ON a word rather than damage done to it. `drift` is the literal one: the
+  // word crosses the frame like a leaf on a current and is gone.
+  | "drift" | "updraft" | "inhale" | "sunwake" | "greyout" | "linger";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -74,6 +79,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "draft", "wake",
   "tap", "fracture", "vitrine", "smudge", "refract", "fogbreath",
   "flashbulb", "press", "placard", "mirror", "bars", "overreact",
+  "drift", "updraft", "inhale", "sunwake", "greyout", "linger",
 ];
 
 export interface EffectLego {
@@ -197,6 +203,15 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.tvoff", class: "textbound", mode: "tvoff", blurb: "The word switches off like an old TV — line, dot, dark.", tags: ["end", "goodbye", "farewell", "dead", "death", "die", "dying"] },
   { id: "text.chop", class: "textbound", mode: "chop", blurb: "The word re-triggers in sliced stutters — a DJ's chop.", tags: ["chop", "chopped", "screwed", "stutter", "skip", "remix", "again"] },
   { id: "text.drip", class: "textbound", mode: "drip", blurb: "Glossy droplets swell off the letters and fall — the word stays, dripping.", tags: ["drip", "dripping", "wet", "gloss", "glossy", "honey", "syrup", "sauce"] },
+  // ── Tranche 9 · DAYS DRIFT BY (PAPER RIVER) ─────────────────────────────
+  // Weather, water and light happening TO a word. Every one of these is a thing
+  // you can watch a day do.
+  { id: "text.drift", class: "textbound", mode: "drift", blurb: "The word crosses the frame like a leaf on a current — in from one side, bobbing, and gone past the other.", tags: ["drift", "drifting", "days", "float", "adrift", "pass", "passing", "away", "time", "slow"] },
+  { id: "text.updraft", class: "textbound", mode: "updraft", blurb: "Letters lift off one by one on a rising current and scatter upward, spreading as they go.", tags: ["higher", "rise", "lift", "sky", "up", "above", "soar", "leaves", "wind", "climb"] },
+  { id: "text.inhale", class: "textbound", mode: "inhale", blurb: "The word takes a breath — it swells open, holds, then releases smaller into mist.", tags: ["breathe", "breath", "inhale", "exhale", "calm", "still", "quiet", "alive", "lungs"] },
+  { id: "text.sunwake", class: "textbound", mode: "sunwake", blurb: "Light finds the word: a warm sweep passes through and the letters wake gold, one after another.", tags: ["sun", "light", "alive", "gold", "golden", "warm", "dawn", "morning", "glow", "wake"] },
+  { id: "text.greyout", class: "textbound", mode: "greyout", blurb: "Colour drains out of the word letter by letter until nothing is left but grey.", tags: ["gray", "grey", "fade", "faded", "colour", "color", "melt", "drain", "dull", "washed"] },
+  { id: "text.linger", class: "textbound", mode: "linger", blurb: "The word starts to leave, is pulled back, tries again — and only then settles. It stays.", tags: ["stay", "linger", "hold", "wait", "remain", "don't go", "close", "keep"] },
 ];
 
 // ── LIGHT (grades the whole frame) ───────────────────────────────────────────

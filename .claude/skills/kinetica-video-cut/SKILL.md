@@ -29,6 +29,9 @@ paid for.
   Osaka WET NEON recut, ONE WORLD GATE (flags/festival photoreal),
   PAPER RIVER (ukiyo-e woodblock, one river valley across one day)) —
   pick something none of those already own.
+- **Dynamic mode is safe in 9:16 again** (2026-09-14). Playbook §11's "ship
+  phrase throughout in portrait" predates the measured `fitScale` pre-scale that
+  fixed the clipping; a 73%-dynamic vertical cut renders clean. See Step 3g.
 - **Eyes on every deliverable before shipping.** Count figures, read letters,
   check the shot-size histogram (≥⅓ WIDE, ≤¼ CLOSE+MACRO). VERIFY numbers
   prove sync, never taste.
@@ -299,6 +302,58 @@ each of which reads as a crash rather than a missing file:
 3. **`pkill -f "next dev -p 3218"` matches the shell running the pkill**, so it
    kills your own command (exit 144) and looks like a crash. Same family as
    §19's self-matching `pgrep`. Start the replacement in a separate call.
+
+## Step 3g — a MIXED phrase/dynamic cut, and writing new word FX (2026-09-14)
+
+§11 of the playbook says "when in doubt ship phrase throughout". **That is now
+stale** — the measured `fitScale` pre-scale in KineticStage (~line 1781) targets
+56% of frame width in portrait with a pessimistic glyph advance, and its own
+comment names §11 as the bug it fixes. A 73%-dynamic 1080x1920 cut renders with
+no clipped word. Mix freely.
+
+Facts you need before authoring a mixed cut:
+
+- **Phrase mode renders words PLAIN — WORD_FX is unreachable from it.** Every
+  animation lives in the dynamic stretches. A word FX mapped to a word that only
+  ever occurs inside a phrase window is DEAD DATA and nothing warns you; check
+  for it in the row builder (`scripts/ddb/v2_row.py` does).
+- **`dynamicPlus.modes` only rules INSIDE a declared window**; outside it the
+  render URL's `mode=` stands. Declare windows contiguously across the whole cut.
+- Put mode boundaries BETWEEN words. `cut-preflight` warns when one lands inside
+  a word ("re-renders mid-entrance") — move it into the gap.
+- A dynamic window holding **exactly one word** is the punch (§6's micro-window).
+  More than one word inside a window that overlaps a live phrase line draws the
+  giant word on top of it.
+- **Omit words to emphasise.** A word absent from `lyrics_synced.words` is never
+  drawn and the previous word holds the frame longer. v2 drew 52 of 65.
+
+Writing a new effect (three files, ~20 minutes):
+
+1. `src/lib/effects/registry.ts` — add the id to the `TextEffect` union, to
+   `ALL_TEXT_EFFECTS`, and a `TEXTBOUND` spec with a blurb + trigger tags.
+2. `src/components/KineticStage.tsx` — the component (framer-motion `m.span`,
+   per-letter, a stable `r(i, m)` pseudo-random, duration driven by `airtime`),
+   plus its entry in the `WORD_FX` map.
+3. `npx tsc --noEmit` then `npx eslint` — both are fast and both catch real
+   mistakes here.
+
+Two rules that cost a render to learn:
+
+- **Travel in `vw`, not `em`.** The dynamic word is already frame-fitted; an
+  em-based shove on a 14rem word leaves the frame entirely at 1080 wide.
+- **If the effect's last keyframe is INVISIBLE, bind its duration to `airtime`**
+  (`Math.max(floor, airtime * 0.98)`), not to a comfort floor. A hook word gets
+  0.56-0.80s; a 1.6s duration means it is still animating in when the next word
+  replaces it and it never reaches centre. Effects that end at rest are exempt.
+- **Check the closing word's airtime against its effect's minimum duration.**
+  Extending the last window a few beats (still bar-aligned) is the fix; the final
+  window's END needs no bar alignment, so take the time back there.
+
+**`dynamicPlus.scene` is silently ignored unless it is one of AURORA | EMBERS |
+INK | SYRUP** (`lib/engine/backdrop.ts`). A themed name like "RIVER" leaves the
+backdrop on AUTO, which hashes into the pool — a woodblock river song landed on
+EMBERS, visible as orange fire in the ~1s before the first plate decodes at the
+start of every window. Validate the name in the builder.
 
 ## Step 4 — log what you learned
 
