@@ -131,3 +131,7 @@ scripts/song-analysis/profiles/*/stems_aligned/
 scripts/osaka2/plates/
 scripts/osaka2/graded/
 scripts/osaka2/sheets/
+
+# Directed-cut working artifacts for the Days Drift By cut
+scripts/ddb/plates/
+scripts/ddb/webp/

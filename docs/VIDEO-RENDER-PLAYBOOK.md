@@ -28,7 +28,11 @@ Standing owner laws:
   noir, coral sunrise comic, 16-bit pixel + cars, '80s airbrush chrome,
   chiaroscuro oil, urban LED nightclub silhouettes, ultraviolet-noir photoreal,
   risograph duotone, Osaka gold-leaf night (photoreal, Kontext — see §12),
-  blueprint dawn (photoreal + cyan drafting linework, Kontext — see §15).
+  blueprint dawn (photoreal + cyan drafting linework, Kontext — see §15),
+  THE AUDIBLE DESERT (§18), THE ANVIL LIGHT (§19), SƠN MÀI LACQUER (§20),
+  Osaka WET NEON (§21), ONE WORLD GATE (§22), PAPER RIVER (ukiyo-e
+  woodblock, one river valley across one day — §23). Seventeen as of
+  2026-09-14.
 - **Eyes on output** — visually audit every deliverable (zoomed crops, count
   the figures, read the letters) BEFORE shipping. VERIFY numbers prove sync,
   never looks.
@@ -1081,3 +1085,125 @@ not fixed, logged as a known cosmetic gap for the next spliced cut to close
 **Title-collision trap, same shape as FAG's §19:** "International Mode" and
 the already-catalogued "International Heat" are different songs; searching
 assets by partial title would have grabbed the wrong one.
+
+## 23 · Days Drift By — the three-window splice, and the signature that would not die (2026-09-14)
+
+Seventeenth voice: **PAPER RIVER** — ukiyo-e woodblock illustration, flat
+layered colour, bokashi gradient skies, Prussian blue water, banded mist,
+visible woodgrain. **One forested river valley across one day**, so the weather
+IS the lyric: clouds roll in, every colour melts into gray, then the sun finds
+its way, closer, into the light, higher, through the leaves. §20's "in this
+style SDXL paints landscapes and cannot paint objects" costs nothing here,
+because this song is landscape end to end. DreamShaperXL Turbo v2.1 (8 steps,
+cfg 2.0, dpmpp_sde) at 832×1472. Scripts in `scripts/ddb/`, README beside them.
+
+**Some songs have no 60 contiguous seconds, and the answer is a THIRD window.**
+§22 introduced the splice as "the first N and the last N". Here the splice is a
+repair tool. This record is 212s of liquid DnB built out of long instrumentals —
+gaps of 24.5s, 28.8s, and a 9.1s break sitting in the middle of the final
+chorus. The natural two-window cut (Verse 2 + Bridge, then the whole final
+chorus) runs 60.8s and **cut-preflight fails it**: 9.1s of dead air, 24% of that
+window, over the 6s HOLE threshold. Splicing a second time *inside* the break
+instead of around it removed 4.09s, left 3.10s and 1.96s either side, kept every
+lyric including the ending, and landed at 59.17s. When preflight calls dead air
+mid-window, cutting the instrumental in half usually beats moving the window.
+
+**Put every splice edge on a beat, and make each JOIN bar-aligned.** §22 said
+"splice where the song is already quiet", which this track does not offer — its
+drums run continuously through both transitions (`cuts` held only [0,1.84] and
+[211.6,212.4]). The substitute is phase: take every window edge from
+`senses.json`'s `beats`, then choose the second window's start so the beat-index
+delta is a multiple of 4. Here A_end→B_from is 40 beats (10 bars) and B_end→C_from
+is 8 beats (2 bars), so `merge-cuts.mjs`'s `acrossfade` blends two drum patterns
+that are in phase rather than fighting. Costs one line of arithmetic.
+
+**The synthesised wipe keys off the gap between WINDOWS, not the gap you're
+worried about.** `allMoments` scans the whole `lyrics_synced.words` array, so on
+a spliced cut the longest "sung-word gap" is the hole between the windows —
+23.20s here (132.24 → 155.44), beating the 9.14s break that actually bothered
+me. That places the banner at 133.64–143.64, whose first 0.2s lands inside part
+A's tail. `free()` only refuses a synthesis when a choreographed moment sits
+within ±8s, so the blocker must be **adjacent**: parked at 134.50–135.50 it sits
+between two render windows, is therefore never drawn, and still suppresses the
+banner. Compute the longest gap across the joined array, not per window.
+
+**A real woodblock print is signed, and the model knows it.** A negative already
+listing kanji / calligraphy / signature / seal / cartouche did *nothing* — both
+proof plates came back with a vertical kanji column and a corner seal. Two
+changes, and the second is the one that generalises:
+
+1. **Stop naming the artefact in the positive.** "traditional Japanese woodblock
+   print" makes the model render a print as a complete OBJECT — paper margin,
+   signature block and all. "ukiyo-e woodblock **style illustration** … full
+   bleed artwork filling the entire frame, unsigned, no paper margin" does not.
+   This is the same failure shape as §19's kintsugi finding: describing the
+   *thing* gets you the thing, including the parts you didn't want.
+2. **Weight the glyph bans, and name the object rather than the writing** —
+   `(artist signature:1.8)`, `(red seal:1.8)`, `(vertical text column:1.7)`,
+   `(inscription:1.6)`, `(cartouche:1.7)`.
+
+Even then it leaked on **6 of 22** plates, always in exactly one corner. A 340px
+contact sheet does not show it and neither does a 500px one; §18's "contact-sheet
+at ~500px" is the right rule for stray humans and the wrong rule for glyphs.
+`scripts/ddb/corner_audit.sh` crops all four corners at FULL resolution and
+stacks them — a 30-second read that caught every one, including two on plates
+that had already passed the contact sheet. Any voice whose style has a
+convention of signing (woodblock, oil, engraving, poster art) needs this pass.
+
+**A gallery pool can HIDE the plate you painted for a line.** §3e says give a
+repeated word a pool so the screen stops freezing. The cost, which only frames
+reveal: `pooledArt`'s shot grammar ("never play two same-size shots back to
+back") walks past any pool entry whose `assets.shots` size matches the plate
+already on stage — including the BASE url, which sits at pool position 0. Here
+`stay` had a pool, scene-stay is WIDE, and the plate it follows (scene-floating)
+is WIDE, so turn 0 skipped straight past it to a heron and turn 1 skipped that to
+a moonlit valley. The lone figure at dusk — the only human image on the whole
+planet, painted for the one line that asks someone to stay — never reached the
+screen, and every automated check was green. **Pool the repeated words; leave a
+word whose OWN plate is the point unpooled**, because with no pool `pooledArt`
+returns the base url outright and the shot grammar never runs. Diagnose it by
+sampling frames ~1s AFTER a hit, never on it: at `swapMs` 650 a frame taken at
+the hit still shows the outgoing plate and reads as "the art didn't change".
+
+**Before grading for legibility, MEASURE the plates.** The first probe sheet
+looked washed out and the instinct was §21's darken grade. `signalstats` said
+otherwise: YAVG 79–140 across all 22 plates, i.e. mid-tone, nothing above 140.
+A global grade would have darkened 22 plates to fix a local contrast impression
+formed at 300px. `scripts/ddb/grade.py` measures first and only applies on
+`--apply`; it was never applied. **The 300px contact tile is for composition,
+not for judging text** — at 1:1 the same lyric was large, clean and clearly
+legible, and a second "defect" (a line apparently clipped at the frame edge)
+evaporated the moment the crop was contrast-boosted with the frame edges marked:
+the un-sung remainder at 0.26 opacity had simply faded into a bright sky, 190px
+inside the right edge. Verify a suspected layout bug by reading the DOM
+(`scripts/ddb/measure_line.mjs` prints each word's rect, font size and row
+count) before changing data to work around it.
+
+**Three more traps a worktree sets, beyond §20's `node_modules`:**
+
+- `cut-preflight.mjs` resolves `.env` relative to **itself**, so it dies in a
+  worktree while `_kiz-db.mjs` (which hardcodes the main checkout) works fine.
+  Symlink `.env`/`.env.local` in; `.gitignore`'s `.env*` already covers them.
+- Preflight also wants a **profile directory for the cut's own slug** —
+  `release.mp3` and `senses.json`. Copy the master in and symlink or copy the
+  senses; `--audio` alone satisfies the renderer but not the check.
+- `pkill -f "next dev -p 3218"` matches **the shell running the pkill**, killing
+  your own command (exit 144) and looking like a crash. Same family as §19's
+  self-matching `pgrep`.
+
+**A hidden row is still the right shape even when the song is public.**
+`days-drift-by` is a live catalogue row (`hidden=false`) serving
+/listen/days-drift-by. The cut went to a SEPARATE `days-drift-by-cut` row
+(hidden, `/private/…mp3`, §13) rather than patching it: window-specific acts, a
+60s-tuned deck and a rebuilt `lyrics_synced` would all have degraded the public
+page. Patch the live row only when the cut IS the song's presentation.
+
+**Local ASR notes that generalise.** A short slice recovers lines the full pass
+loses — the full-song Parakeet pass dropped the entire "Days drift by / We don't
+have to know why / … / Floating into the sky" run, and re-running it on just the
+39-second window resolved every one with usable onsets. And the repo's own
+hand-built `lyrics.lrc` invented a final "Days drift by" at 210.92 where the lead
+stem is digitally silent (-98 dB) — an existing LRC is a hypothesis, not a
+source. Where the official sheet and the audio disagree on a word ("the sun
+finds *its* way" vs the sung "*his*"), the ASR and the old LRC agreeing against
+the sheet is enough to go with what is sung.

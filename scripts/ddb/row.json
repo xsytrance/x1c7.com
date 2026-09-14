@@ -1,0 +1,528 @@
+{
+  "id": "days-drift-by-cut",
+  "title": "Days Drift By",
+  "artist": "AGENOR",
+  "genre": "Liquid Drum & Bass",
+  "mood": "weightless calm",
+  "color": "#7FB7A8",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/days-drift-by-cut/scene-days.webp",
+  "audio_url": "/private/days-drift-by-cut.mp3",
+  "sort_order": 9002,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[01:51.60]Clouds roll in\n[01:52.88]Then fade away\n[01:54.48]Every color melts into gray\n[01:56.88]Then the sun\n[01:57.84]Finds his way\n[02:00.24]Just like it always does\n[02:03.28]Closer\n[02:04.64]Closer\n[02:05.92]Into the light\n[02:08.80]Higher\n[02:10.16]Higher\n[02:11.44]Through the leaves\n[02:35.44]Days drift by\n[02:37.60]We don't have to know why\n[02:40.96]Breathe tonight\n[02:43.04]Everything feels alive\n[02:46.48]Days drift by\n[02:48.40]Floating into the sky\n[02:50.72]Stay with me\n[02:53.44]Stay with me\n[03:03.70]Days drift by\n[03:08.24]Days drift by",
+  "lyrics_synced": {
+    "source": "parakeet-tdt-0.6b-v3 on the isolated lead stem, RMS-verified",
+    "refinedAt": "2026-09-14T00:00:00.000Z",
+    "words": [
+      {
+        "t": 111.6,
+        "w": "Clouds"
+      },
+      {
+        "t": 112.24,
+        "w": "roll"
+      },
+      {
+        "t": 112.64,
+        "w": "in"
+      },
+      {
+        "t": 112.88,
+        "w": "Then"
+      },
+      {
+        "t": 113.12,
+        "w": "fade"
+      },
+      {
+        "t": 113.6,
+        "w": "away"
+      },
+      {
+        "t": 114.48,
+        "w": "Every"
+      },
+      {
+        "t": 114.88,
+        "w": "color"
+      },
+      {
+        "t": 115.28,
+        "w": "melts"
+      },
+      {
+        "t": 116.08,
+        "w": "into"
+      },
+      {
+        "t": 116.4,
+        "w": "gray"
+      },
+      {
+        "t": 116.88,
+        "w": "Then"
+      },
+      {
+        "t": 117.2,
+        "w": "the"
+      },
+      {
+        "t": 117.44,
+        "w": "sun"
+      },
+      {
+        "t": 117.84,
+        "w": "Finds"
+      },
+      {
+        "t": 118.4,
+        "w": "his"
+      },
+      {
+        "t": 118.72,
+        "w": "way"
+      },
+      {
+        "t": 120.24,
+        "w": "Just"
+      },
+      {
+        "t": 120.8,
+        "w": "like"
+      },
+      {
+        "t": 121.12,
+        "w": "it"
+      },
+      {
+        "t": 121.44,
+        "w": "always"
+      },
+      {
+        "t": 122.24,
+        "w": "does"
+      },
+      {
+        "t": 123.28,
+        "w": "Closer"
+      },
+      {
+        "t": 124.64,
+        "w": "Closer"
+      },
+      {
+        "t": 125.92,
+        "w": "Into"
+      },
+      {
+        "t": 126.48,
+        "w": "the"
+      },
+      {
+        "t": 126.8,
+        "w": "light"
+      },
+      {
+        "t": 128.8,
+        "w": "Higher"
+      },
+      {
+        "t": 130.16,
+        "w": "Higher"
+      },
+      {
+        "t": 131.44,
+        "w": "Through"
+      },
+      {
+        "t": 131.92,
+        "w": "the"
+      },
+      {
+        "t": 132.24,
+        "w": "leaves"
+      },
+      {
+        "t": 155.44,
+        "w": "Days"
+      },
+      {
+        "t": 156.24,
+        "w": "drift"
+      },
+      {
+        "t": 156.8,
+        "w": "by"
+      },
+      {
+        "t": 157.6,
+        "w": "We"
+      },
+      {
+        "t": 157.92,
+        "w": "don't"
+      },
+      {
+        "t": 158.32,
+        "w": "have"
+      },
+      {
+        "t": 158.64,
+        "w": "to"
+      },
+      {
+        "t": 158.96,
+        "w": "know"
+      },
+      {
+        "t": 159.52,
+        "w": "why"
+      },
+      {
+        "t": 160.96,
+        "w": "Breathe"
+      },
+      {
+        "t": 161.84,
+        "w": "tonight"
+      },
+      {
+        "t": 163.04,
+        "w": "Everything"
+      },
+      {
+        "t": 164.0,
+        "w": "feels"
+      },
+      {
+        "t": 164.8,
+        "w": "alive"
+      },
+      {
+        "t": 166.48,
+        "w": "Days"
+      },
+      {
+        "t": 167.2,
+        "w": "drift"
+      },
+      {
+        "t": 167.76,
+        "w": "by"
+      },
+      {
+        "t": 168.4,
+        "w": "Floating"
+      },
+      {
+        "t": 169.28,
+        "w": "into"
+      },
+      {
+        "t": 169.84,
+        "w": "the"
+      },
+      {
+        "t": 170.0,
+        "w": "sky"
+      },
+      {
+        "t": 170.72,
+        "w": "Stay"
+      },
+      {
+        "t": 171.36,
+        "w": "with"
+      },
+      {
+        "t": 171.76,
+        "w": "me"
+      },
+      {
+        "t": 173.44,
+        "w": "Stay"
+      },
+      {
+        "t": 174.08,
+        "w": "with"
+      },
+      {
+        "t": 174.56,
+        "w": "me"
+      },
+      {
+        "t": 183.7,
+        "w": "Days"
+      },
+      {
+        "t": 184.72,
+        "w": "drift"
+      },
+      {
+        "t": 185.52,
+        "w": "by"
+      },
+      {
+        "t": 188.24,
+        "w": "Days"
+      },
+      {
+        "t": 190.16,
+        "w": "drift"
+      },
+      {
+        "t": 190.8,
+        "w": "by"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-14T00:00:00.000Z",
+    "styleHint": "PAPER RIVER \u2014 ukiyo-e woodblock illustration, one forested river valley across one day. Flat layered colour, bokashi gradient skies, Prussian blue water, banded mist, visible woodgrain. Full bleed, never signed: a cartouche renders as garbage letters on screen.",
+    "analysis": {
+      "themes": [
+        "drifting",
+        "weather",
+        "light through leaves",
+        "letting time pass",
+        "staying"
+      ],
+      "palette": [
+        "#F4EAD6",
+        "#F5C86B",
+        "#9FD8C8",
+        "#F0A88C",
+        "#D9E8F2"
+      ],
+      "summary": "Liquid drum and bass that refuses to hurry. Clouds roll in, the colour drains, the sun finds its way back, and the song climbs through the leaves into its own last repeat.",
+      "keywords": [],
+      "sections": [
+        {
+          "start": 105.0,
+          "name": "the weather turns",
+          "emotion": "drifting",
+          "intensity": 0.38,
+          "colorHint": "#7FA8B8"
+        },
+        {
+          "start": 116.8,
+          "name": "the sun finds its way",
+          "emotion": "warming",
+          "intensity": 0.52,
+          "colorHint": "#E8C25A"
+        },
+        {
+          "start": 123.2,
+          "name": "the ascent",
+          "emotion": "rising",
+          "intensity": 0.66,
+          "colorHint": "#9FD8C8"
+        },
+        {
+          "start": 150.0,
+          "name": "days drift by",
+          "emotion": "floating",
+          "intensity": 0.58,
+          "colorHint": "#A8D4E8"
+        },
+        {
+          "start": 168.0,
+          "name": "stay with me",
+          "emotion": "tender",
+          "intensity": 0.68,
+          "colorHint": "#E8A88C"
+        },
+        {
+          "start": 175.5,
+          "name": "the liquid break",
+          "emotion": "breaking",
+          "intensity": 0.6,
+          "colorHint": "#8FC4D8"
+        },
+        {
+          "start": 179.5,
+          "name": "the break widens",
+          "emotion": "drifting",
+          "intensity": 0.55,
+          "colorHint": "#8FC4D8"
+        },
+        {
+          "start": 183.5,
+          "name": "drift away",
+          "emotion": "fading",
+          "intensity": 0.48,
+          "colorHint": "#C8D8E0"
+        },
+        {
+          "start": 191.0,
+          "name": "the last light",
+          "emotion": "warming",
+          "intensity": 0.42,
+          "colorHint": "#E8C25A"
+        }
+      ],
+      "overallMood": "weightless calm"
+    },
+    "assets": {
+      "broll": [],
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/days-drift-by/stems/stems.json",
+      "stemLag": -0.023,
+      "shots": {
+        "/planets/days-drift-by-cut/scene-clouds.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-fade.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-gray.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-sun.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-way.webp": "MED",
+        "/planets/days-drift-by-cut/scene-closer.webp": "MED",
+        "/planets/days-drift-by-cut/scene-light.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-higher.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-leaves.webp": "CLOSE",
+        "/planets/days-drift-by-cut/scene-days.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-drift.webp": "MED",
+        "/planets/days-drift-by-cut/scene-by.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-breathe.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-alive.webp": "MED",
+        "/planets/days-drift-by-cut/scene-floating.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-sky.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-stay.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-tonight.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-rain.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-heron.webp": "MED",
+        "/planets/days-drift-by-cut/scene-pine.webp": "WIDE",
+        "/planets/days-drift-by-cut/scene-gold.webp": "WIDE"
+      },
+      "keywords": {
+        "clouds": "/planets/days-drift-by-cut/scene-clouds.webp",
+        "fade": "/planets/days-drift-by-cut/scene-fade.webp",
+        "gray": "/planets/days-drift-by-cut/scene-gray.webp",
+        "sun": "/planets/days-drift-by-cut/scene-sun.webp",
+        "way": "/planets/days-drift-by-cut/scene-way.webp",
+        "closer": "/planets/days-drift-by-cut/scene-closer.webp",
+        "light": "/planets/days-drift-by-cut/scene-light.webp",
+        "higher": "/planets/days-drift-by-cut/scene-higher.webp",
+        "leaves": "/planets/days-drift-by-cut/scene-leaves.webp",
+        "days": "/planets/days-drift-by-cut/scene-days.webp",
+        "breathe": "/planets/days-drift-by-cut/scene-breathe.webp",
+        "alive": "/planets/days-drift-by-cut/scene-alive.webp",
+        "floating": "/planets/days-drift-by-cut/scene-floating.webp",
+        "stay": "/planets/days-drift-by-cut/scene-stay.webp"
+      },
+      "sections": {
+        "drifting": "/planets/days-drift-by-cut/scene-by.webp",
+        "warming": "/planets/days-drift-by-cut/scene-gold.webp",
+        "rising": "/planets/days-drift-by-cut/scene-pine.webp",
+        "floating": "/planets/days-drift-by-cut/scene-sky.webp",
+        "tender": "/planets/days-drift-by-cut/scene-heron.webp",
+        "breaking": "/planets/days-drift-by-cut/scene-rain.webp",
+        "fading": "/planets/days-drift-by-cut/scene-tonight.webp"
+      }
+    },
+    "interactions": {
+      "moments": [
+        {
+          "t": 134.5,
+          "end": 135.5,
+          "type": "wipe",
+          "layer": "fog",
+          "prompt": ""
+        }
+      ],
+      "tapEffect": "bloom"
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "DAYS DRIFT BY 59.2s spliced cut \u2014 PAPER RIVER voice, 22 plates. A 110.829-133.84 (Verse 2 into the Bridge ascent), B 154.111-177.656 (the final chorus), C 181.743-195.558 (the drift-away repeats), joined with two 0.6s crossfades. The B/C join splices INSIDE the 9.14s liquid break rather than around it, which keeps every lyric while cutting the dead air under preflight's 6s threshold. Every edge is on a beat and both joins are bar-aligned (10 bars, then 2), so the crossfades blend drum patterns that are in phase.",
+      "scene": "RIVER",
+      "acts": [
+        {
+          "start": 110.829,
+          "end": 123.2,
+          "label": "CLOUDS ROLL IN",
+          "why": "the weather turns and the colour drains"
+        },
+        {
+          "start": 123.2,
+          "end": 133.84,
+          "label": "THE ASCENT",
+          "why": "closer, into the light, higher, through the leaves"
+        },
+        {
+          "start": 154.111,
+          "end": 175.5,
+          "label": "DAYS DRIFT BY",
+          "why": "the final chorus"
+        },
+        {
+          "start": 175.5,
+          "end": 183.5,
+          "label": "THE LIQUID BREAK",
+          "why": "the instrumental the song was always drifting toward"
+        },
+        {
+          "start": 183.5,
+          "end": 195.558,
+          "label": "DRIFT AWAY",
+          "why": "the last two repeats"
+        }
+      ],
+      "modes": [
+        {
+          "start": 110.829,
+          "end": 133.84,
+          "mode": "phrase"
+        },
+        {
+          "start": 154.111,
+          "end": 177.656,
+          "mode": "phrase"
+        },
+        {
+          "start": 181.743,
+          "end": 195.558,
+          "mode": "phrase"
+        }
+      ],
+      "words": {
+        "clouds": "dissolve",
+        "fade": "dissolve",
+        "away": "dissolve",
+        "gray": "melt",
+        "sun": "shimmer",
+        "way": "rise",
+        "closer": "whisper",
+        "light": "bloom",
+        "higher": "rise",
+        "leaves": "wave",
+        "days": "echo",
+        "drift": "wave",
+        "by": "echo",
+        "breathe": "fogbreath",
+        "tonight": "whisper",
+        "everything": "bloom",
+        "alive": "bloom",
+        "floating": "rise",
+        "sky": "rise",
+        "stay": "cling",
+        "me": "whisper"
+      },
+      "deck": {
+        "glow": 0.9,
+        "grain": 0.35,
+        "density": 1.6,
+        "vignette": 0.45,
+        "giant": {
+          "life": 2200,
+          "pile": 0,
+          "clearOnSwitch": true
+        },
+        "motion": {
+          "swapMs": 650
+        }
+      },
+      "hits": [],
+      "holds": [],
+      "rolls": []
+    }
+  }
+}

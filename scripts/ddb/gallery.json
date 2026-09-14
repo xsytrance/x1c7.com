@@ -1,0 +1,22 @@
+{
+  "art": {
+    "days": [
+      "/planets/days-drift-by-cut/scene-drift.webp",
+      "/planets/days-drift-by-cut/scene-by.webp",
+      "/planets/days-drift-by-cut/scene-sky.webp",
+      "/planets/days-drift-by-cut/scene-gold.webp",
+      "/planets/days-drift-by-cut/scene-rain.webp",
+      "/planets/days-drift-by-cut/scene-pine.webp",
+      "/planets/days-drift-by-cut/scene-heron.webp",
+      "/planets/days-drift-by-cut/scene-tonight.webp"
+    ],
+    "closer": [
+      "/planets/days-drift-by-cut/scene-light.webp",
+      "/planets/days-drift-by-cut/scene-way.webp"
+    ],
+    "higher": [
+      "/planets/days-drift-by-cut/scene-pine.webp",
+      "/planets/days-drift-by-cut/scene-sky.webp"
+    ]
+  }
+}
