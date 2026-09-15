@@ -1,0 +1,24 @@
+{
+  "_note": "What each shipped cut SPENT, by medium. The seventeen voices were bespoke prompt work, not recipe ids, so they are recorded by category — category is what actually repeats. scripts/art/styles.mjs reads this to suggest a medium that has not been on screen lately. Append one row per cut.",
+  "_categories": "photoreal | painterly | illustrated | animated | graphic | texture | synthetic",
+  "cuts": [
+    { "slug": "summer-drip", "voice": "purple-gold comic noir", "categories": ["illustrated", "graphic"] },
+    { "slug": "different-this-summer", "voice": "coral sunrise comic", "categories": ["illustrated"] },
+    { "slug": "fast-enough", "voice": "16-bit pixel + cars", "categories": ["synthetic", "graphic"] },
+    { "slug": "cocktails-and-code", "voice": "'80s airbrush chrome", "categories": ["illustrated", "synthetic"] },
+    { "slug": "drink-drink", "voice": "chiaroscuro oil", "categories": ["painterly"] },
+    { "slug": "say-it-with-your-body", "voice": "urban LED nightclub silhouettes", "categories": ["photoreal"] },
+    { "slug": "maybe-was-the-answer", "voice": "ultraviolet-noir photoreal", "categories": ["photoreal"] },
+    { "slug": "hajimemashite", "voice": "risograph duotone", "categories": ["graphic", "texture"] },
+    { "slug": "osaka-after-dark", "voice": "Osaka gold-leaf night", "categories": ["photoreal", "painterly"] },
+    { "slug": "different-this-summer-debut", "voice": "blueprint dawn", "categories": ["photoreal", "graphic"] },
+    { "slug": "the-world-that-heard-itself", "voice": "THE AUDIBLE DESERT", "categories": ["painterly"] },
+    { "slug": "forged-above-gold", "voice": "THE ANVIL LIGHT", "categories": ["photoreal"] },
+    { "slug": "warm-without-burning", "voice": "SƠN MÀI LACQUER", "categories": ["painterly", "texture"] },
+    { "slug": "osaka-after-dark-recut", "voice": "Osaka WET NEON", "categories": ["photoreal"] },
+    { "slug": "madetobreak", "voice": "KINTSUGI RIOT", "categories": ["photoreal"] },
+    { "slug": "international-mode", "voice": "ONE WORLD GATE", "categories": ["photoreal"] },
+    { "slug": "days-drift-by", "voice": "PAPER RIVER", "categories": ["illustrated", "painterly"] },
+    { "slug": "days-drift-by-v2", "voice": "PAPER RIVER (v2 typography)", "categories": ["illustrated", "painterly"] }
+  ]
+}
