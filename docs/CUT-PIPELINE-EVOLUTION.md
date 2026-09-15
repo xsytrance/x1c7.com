@@ -209,7 +209,13 @@ there wired to LoRAs. Nine of eighteen cuts were `photoreal`.
 category. Append a row per cut.
 
 **`scripts/art/screen_plates.py`** — the local text/seal screener on
-`qwen3-vl:8b`. Three findings that generalise to any local-VLM gate:
+`qwen3-vl:8b`. **Validated against 16 hand-labelled plates (10 dirty, 6 clean)
+from the Days Drift By audit: 10/10 caught, 0 missed, 1 false alarm.** It
+transcribes what it finds — `heron-0: 龍光水`, `stay-2: 月の夜`, `by-1: "O. W. R"` —
+which makes a rejection checkable rather than a vibe. The single false alarm is
+a reed reflection in `heron-2` read as a squiggle; that costs one re-roll.
+
+Four findings that generalise to any local-VLM gate:
 
 1. **Resolution per query is the whole ballgame.** Four corners stacked into one
    strip and asked once caught 6 of 10 known-dirty plates; the strip was itself
@@ -224,6 +230,12 @@ category. Append a row per cut.
    instead, and never let empty mean clean.
 3. **A gate must fail SAFE.** Retry once with a bigger budget, then REJECT.
    A false alarm costs one re-roll; a miss ships a signed plate.
+4. **A long, careful prompt made it WORSE.** The first working version scored
+   10/10 — but 7 of those 10 catches were fail-safe rejections, i.e. the model
+   reasoned past its budget and the gate rejected out of ignorance. Replacing
+   the carefully-caveated prompt with two blunt lines kept the same 10/10 and
+   turned 9 of the 10 into real transcriptions, at roughly half the runtime.
+   With a thinking model, prompt length is a latency AND an accuracy cost.
 
 ### Ollama could not pull anything at all
 

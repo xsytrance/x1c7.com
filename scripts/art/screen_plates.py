@@ -33,15 +33,15 @@ CW, CH = 300, 230          # corner box, full-res pixels — same as corner_audi
 # 1200x230 strip and asked once — the VLM downsamples its input, so a seal that
 # is 40px tall arrived as mush and it missed 4 of 10 known-dirty plates. One
 # corner at a time, upscaled 2x, puts the glyphs at a size the model can read.
+# SHORT ON PURPOSE. The long, carefully-caveated version of this prompt made the
+# model reason for longer than its token budget on 7 of 16 plates, so the gate
+# got its zero-misses partly by rejecting whenever it was confused rather than
+# by reading anything. A blunt question ends the reasoning sooner, which turns
+# fail-safe rejections back into actual detections — and roughly halves runtime.
 PROMPT = (
-    "This is a crop from the corner of a painting.\n"
-    "Transcribe any WRITING you can see: letters, words, numbers, Chinese or "
-    "Japanese characters, a calligraphic signature, or a stamped seal (often a "
-    "small red square, sometimes with characters inside it).\n"
-    "Brush strokes, branches, leaves, grass, birds, rocks and paper texture are "
-    "NOT writing.\n"
-    "If there is no writing at all, reply with exactly: NONE\n"
-    "If there is writing, reply: FOUND followed by what and where."
+    "Is there any writing, lettering, Chinese/Japanese characters, a signature "
+    "or a stamped seal in this image?\n"
+    "Reply NONE, or FOUND plus what it says."
 )
 
 
