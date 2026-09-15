@@ -246,3 +246,53 @@ by a drop-in at
 `~/.config/systemd/user/oracle-ollama.service.d/10-user-models.conf` pointing at
 `~/.ollama/models`, which mirrors the old store (manifests copied, blobs
 symlinked — nothing duplicated). gemma3 / qwen2.5 / llama3.1 still resolve.
+
+
+---
+
+## 6 · Phase 1.3 + typography — BUILT and MEASURED (2026-09-14)
+
+### Beat-locked cutting (`deck.motion.quantize: "beat" | "bar"`)
+
+Art swaps used to land the instant a keyword fired — the LYRIC clock. They now
+hold until the next beat in the song's own grid from `stems.json`, capped at one
+beat (or bar) so a swap is nudged onto the grid and never parked off it.
+
+**Measured with `scripts/ddb/verify_beatlock.mjs`**, which samples the painted
+backdrop and the audio clock together and reports the distance from each change
+to the nearest beat:
+
+| build | median error | worst | verdict |
+|---|---|---|---|
+| gate placed BEFORE `img.decode()` | 128 ms | 239 ms | chance — decode latency is variable, so this quantised the *request*, not the *paint* |
+| gate placed AFTER decode, at `setBgArt` | **60 ms** | 114 ms | **locked** (beat period 511 ms; chance ≈ 128 ms) |
+| …plus a 45 ms "paint latency" lead | 106 ms | 139 ms | **worse — reverted** |
+
+Two things worth keeping from that table. First, **the correct place to quantise
+is the paint, not the request** — anything with variable latency between the
+gate and the pixels destroys the lock. Second, the lead compensation was a
+plausible-sounding idea that measurement rejected; the comment in the code says
+so, so nobody re-adds it on a hunch.
+
+### Typography per style (`deck.type`)
+
+All 18 shipped cuts used Space Grotesk, centred, uppercase, while words are on
+screen essentially the whole runtime. Four alternate faces are now registered
+(`Playfair_Display`, `Anton`, `Press_Start_2P`, `Caveat`) and a planet pins one
+through `deck.type = {family, case, tracking}`, resolved to CSS variables on the
+stage so both text layers inherit it. **Every variable has a stylesheet
+fallback, so every already-published cut renders byte-identically.**
+
+`scripts/art/styles.mjs` now carries `TYPE_BY_CATEGORY`, so a medium brings its
+own lettering: painterly and illustrated get the serif, graphic and animated get
+the condensed heavy, synthetic gets the pixel face, texture gets the hand.
+
+Proved on Days Drift By v2: the same cut now reads in mixed-case Playfair
+instead of all-caps Space Grotesk — a completely different register, and one
+that suits a woodblock river far better than the technical sans did.
+
+### Still open
+
+`MOTION` profiles are defined in the registry but **not yet consumed by
+`ART_MOVES`** — that is the next engine change, and the one that finishes the
+job beat-locking started. Then WAN image-to-video.

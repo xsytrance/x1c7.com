@@ -179,7 +179,7 @@ export interface PlanetDynamicPlus {
    * multiplier, glow = extra word bloom 0..1, grain/vignette = overlays 0..1. */
   deck?: {
     density?: number; glow?: number; grain?: number; vignette?: number;
-    motion?: DeckMotion; giant?: DeckGiant;
+    motion?: DeckMotion; giant?: DeckGiant; type?: DeckType;
     /** TYPOGRAPHY-ONLY when false: the stage never loads or shows scene art at
      * all — no keyword paintings, no section moods, and none of the `_shared`
      * fallback frames that common words like "night" or "love" otherwise pull
@@ -219,6 +219,20 @@ export interface DeckGiant {
  * and every image reads as a still. With this present each scene instead gets
  * its own short camera move (push in, pull out, track, crane), picked per image
  * and completed inside the shot. Absent = the stock behaviour, untouched. */
+/** TYPOGRAPHY, per song. All 18 cuts shipped in one typeface (Space Grotesk),
+ * centred, while the words are on screen for essentially the whole runtime —
+ * which made the type a bigger driver of "they all look the same" than the art
+ * was. A planet can now pin a face that belongs to its medium: a serif for a
+ * painterly cut, a pixel face for a 16-bit one. Absent = the house face. */
+export interface DeckType {
+  /** which registered face: the CSS var is resolved by the stage */
+  family?: "display" | "serif" | "heavy" | "pixel" | "hand";
+  /** override the default all-caps — some faces (hand, serif) read better mixed */
+  case?: "uppercase" | "none" | "lowercase";
+  /** letter-spacing, e.g. "-0.03em" (the house default) or "0.08em" */
+  tracking?: string;
+}
+
 export interface DeckMotion {
   /** seconds a camera move takes end to end (default 2.2) */
   dur?: number;
@@ -229,6 +243,13 @@ export interface DeckMotion {
   swapMs?: number;
   /** crossfade seconds; keep well under swapMs or fades overlap (default 0.42) */
   fade?: number;
+  /** BEAT-LOCK the backdrop. Art swaps normally land the instant a keyword
+   * fires — the LYRIC clock — which is why cuts drift instead of cutting.
+   * "beat" holds a swap until the next beat from stems.json, "bar" until the
+   * next downbeat (every 4th). The wait is capped at one beat/bar period, so a
+   * swap is nudged onto the grid, never delayed indefinitely. Absent/"off" =
+   * the old behaviour. */
+  quantize?: "off" | "beat" | "bar";
   /** psychedelic grade on the scene photo only, 0..1: a slow hue drift +
    * saturation swell. 0 / absent = no grade. */
   trip?: number;

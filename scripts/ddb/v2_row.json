@@ -516,7 +516,13 @@
           "clearOnSwitch": true
         },
         "motion": {
-          "swapMs": 650
+          "swapMs": 650,
+          "quantize": "beat"
+        },
+        "type": {
+          "family": "serif",
+          "case": "none",
+          "tracking": "0.02em"
         }
       },
       "hits": [],

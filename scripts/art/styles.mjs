@@ -47,6 +47,21 @@ export const MOTION = {
   snap:     { scale: [1.00, 1.00], pan: 0.0, cutOnBeat: true, note: "no move at all; cut on the beat — graphic, pixel, type" },
 };
 
+// ── TYPOGRAPHY per category ──────────────────────────────────────────────────
+// All 18 shipped cuts used one typeface (Space Grotesk), centred, uppercase —
+// while the words are on screen for essentially the whole runtime. One face
+// across every video was quietly a bigger driver of sameness than the art was.
+// Maps to deck.type, which the stage resolves to CSS variables.
+export const TYPE_BY_CATEGORY = {
+  photoreal:   { family: "display", case: "uppercase", tracking: "-0.03em" },
+  painterly:   { family: "serif",   case: "none",      tracking: "0.01em"  },
+  illustrated: { family: "serif",   case: "none",      tracking: "0.02em"  },
+  animated:    { family: "heavy",   case: "uppercase", tracking: "0.01em"  },
+  graphic:     { family: "heavy",   case: "uppercase", tracking: "0.04em"  },
+  texture:     { family: "hand",    case: "none",      tracking: "0.03em"  },
+  synthetic:   { family: "pixel",   case: "uppercase", tracking: "0.06em"  },
+};
+
 // ── the augmentation ─────────────────────────────────────────────────────────
 // recipe id -> [categories, motion profile]. Anything not listed falls back to
 // illustrated/drift, which is a safer default than push.
@@ -87,6 +102,8 @@ export const STYLES = RECIPES.map((r) => {
     moods: r.moods ?? ["any"],
     categories,
     motion,
+    // the first category wins the typeface — it is the dominant medium
+    type: TYPE_BY_CATEGORY[categories[0]] ?? TYPE_BY_CATEGORY.photoreal,
     loras: (r.sdxl?.loras ?? []).map(([f]) => f),
     recipe: r,
   };
@@ -137,7 +154,7 @@ if (process.argv[1] && process.argv[1].endsWith("styles.mjs")) {
     console.log(`mood "${mood}" · avoiding categories from the last 5 cuts: ${hot.join(", ") || "(none recorded)"}\n`);
     for (const s of pickStyle(mood).slice(0, 10)) {
       console.log(`  ${s.fresh ? "NEW " : "seen"}  ${s.id.padEnd(15)} ${s.engine.padEnd(7)} ` +
-        `${s.categories.join("+").padEnd(22)} motion:${s.motion.padEnd(9)} ${s.loras.join(", ")}`);
+        `${s.categories.join("+").padEnd(22)} motion:${s.motion.padEnd(9)} type:${s.type.family.padEnd(8)} ${s.loras.join(", ")}`);
     }
   } else if (argv[0] === "--unused") {
     const spent = new Set(u.cuts.flatMap((c) => c.categories ?? []));

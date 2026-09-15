@@ -152,11 +152,13 @@ body::after {
   transition: transform 0.06s linear;
 }
 .kinetic-word {
-  font-family: var(--font-display), system-ui, sans-serif;
+  /* --type-family is set per song by deck.type; unset = the house face, so
+     every already-published cut renders exactly as before. */
+  font-family: var(--type-family, var(--font-display)), system-ui, sans-serif;
   font-weight: 900;
-  letter-spacing: -0.03em;
+  letter-spacing: var(--type-tracking, -0.03em);
   line-height: 0.95;
-  text-transform: uppercase;
+  text-transform: var(--type-case, uppercase);
   font-size: clamp(3rem, 16vw, 14rem);
   color: var(--theme-primary);
   /* glow rides the beat, the emotional intensity, and (with stems) the
@@ -307,8 +309,11 @@ body.cinematic-on { overflow: hidden; }
 
 /* Phrase mode — the whole line on stage, readable, igniting word by word. */
 .phrase-word {
+  font-family: var(--type-family, var(--font-display)), system-ui, sans-serif;
   font-size: clamp(1.7rem, 5.2vw, 4.2rem);
   line-height: 1.15;
+  letter-spacing: var(--type-tracking, normal);
+  text-transform: var(--type-case, uppercase);
   will-change: transform, opacity;
 }
 

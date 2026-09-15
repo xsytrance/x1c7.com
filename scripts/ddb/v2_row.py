@@ -218,7 +218,14 @@ planet = {
             # pile 0 + clearOnSwitch: a dynamic window is a self-contained
             # statement, so the previous burst never sits under the next one.
             "giant": {"life": 2000, "pile": 0, "clearOnSwitch": True},
-            "motion": {"swapMs": 650},
+            # quantize: hold every backdrop swap until the next beat from
+            # senses.json. Art used to change on the LYRIC clock, which is why
+            # the cuts drifted instead of cutting.
+            "motion": {"swapMs": 650, "quantize": "beat"},
+            # PAPER RIVER is illustrated/painterly — a serif, mixed case, set a
+            # little open. The house face (Space Grotesk, all-caps) shipped in
+            # all 18 previous cuts.
+            "type": {"family": "serif", "case": "none", "tracking": "0.02em"},
         },
         "hits": [], "holds": [], "rolls": [],
     },

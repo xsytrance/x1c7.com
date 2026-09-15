@@ -9,7 +9,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, typ
 import { m, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
-import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant } from "@/lib/planet";
+import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant, type DeckType } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
 import { beatClock } from "@/lib/beatClock";
@@ -336,7 +336,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; type?: DeckType; art?: boolean; backdropHue?: number };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -616,6 +616,40 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   pileLifeRef.current = Math.max(400, giantCfg?.life ?? 8000);
   const swapMsRef = useRef(2000);
   swapMsRef.current = motionCfg ? Math.max(350, motionCfg.swapMs ?? 1000) : 2000;
+  // BEAT-LOCK. An art swap normally lands the instant a keyword fires, i.e. on
+  // the LYRIC clock — which is why every cut so far drifts rather than cuts.
+  // With deck.motion.quantize set, a swap is held until the next beat (or
+  // downbeat) from the song's own grid. `stems` is declared further down the
+  // component, so the grid arrives here through a ref, the same way shotOf and
+  // artOff do.
+  const beatsRef = useRef<number[] | null>(null);
+  const quantizeRef = useRef<"off" | "beat" | "bar">("off");
+  quantizeRef.current = motionCfg?.quantize ?? "off";
+  /** ms to wait so a swap lands on the grid, or 0 to land now. Capped at one
+   *  beat (or bar) so a swap is nudged onto the beat, never parked off it. */
+  // Held in a ref, not a dep: requestArt is deliberately identity-stable (it
+  // feeds the master useMemo's dep list), and getCurrentTime can change
+  // identity when the render clock swaps in.
+  const quantizeDelayRef = useRef<() => number>(() => 0);
+  quantizeDelayRef.current = (): number => {
+    const mode = quantizeRef.current;
+    const grid = beatsRef.current;
+    if (mode === "off" || !grid?.length) return 0;
+    const t = getCurrentTime();
+    if (!Number.isFinite(t)) return 0;
+    let i = 0;                                  // first beat at or after t
+    while (i < grid.length && grid[i] < t) i++;
+    if (i >= grid.length) return 0;             // past the last beat — don't stall
+    if (mode === "bar") while (i < grid.length && i % 4 !== 0) i++;
+    if (i >= grid.length) return 0;
+    const period = grid.length > 1 ? (grid[grid.length - 1] - grid[0]) / (grid.length - 1) : 0.5;
+    const cap = period * (mode === "bar" ? 4 : 1) * 1000;
+    // No lead compensation. It looked like the React commit should make the
+    // paint land late, so a 45ms lead was tried — and MEASURED WORSE (median
+    // 106ms vs 69ms). The decode-then-wait ordering already absorbs the
+    // latency; aim at the beat itself. Do not re-add this without a measurement.
+    return Math.max(0, Math.min(cap, (grid[i] - t) * 1000));
+  };
   const swapCtl = useRef<{ shown: string | null; lastAt: number; token: number; timer: number | null; pending: string | null }>(
     { shown: null, lastAt: 0, token: 0, timer: null, pending: null });
   const badArt = useRef(new Set<string>());
@@ -661,7 +695,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // a crossfade window, so lastShot would describe a frame nobody saw and
         // the no-repeat rule would start rejecting the wrong things.
         lastShotRef.current = shotOfRef.current?.(url) ?? lastShotRef.current;
-        setBgArt(url);
+        // BEAT-LOCK lands HERE, not before the decode. The image is already
+        // decoded at this point, so the only thing between us and the visible
+        // crossfade is this timer — which is what makes the cut land on the
+        // grid. Gating earlier quantised the request rather than the paint, and
+        // measured no better than chance (median 128ms off a 511ms beat).
+        const land = () => {
+          if (swapCtl.current.token !== token) return;
+          setBgArt(url);
+        };
+        const wait = quantizeDelayRef.current();
+        if (wait > 12) window.setTimeout(land, wait);
+        else land();
       },
       () => {
         badArt.current.add(url);
@@ -798,6 +843,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // world to silhouette, and risers charge a supernova that detonates on the
   // drop. Playback stays one mp3 — the stems were analyzed offline.
   const [stems, setStems] = useState<StemData | null>(null);
+  // hand the beat grid up to requestArt's beat-lock (declared above)
+  beatsRef.current = stems?.beats ?? null;
   const stemTrk = useRef<{ kick: OnsetTracker; snare: OnsetTracker; hat: OnsetTracker; beat: OnsetTracker } | null>(null);
   const kickPulse = useRef(0);
   const lastStemT = useRef(0);
@@ -1125,6 +1172,26 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [quake, setQuake] = useState(0);
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
+  // TYPOGRAPHY per song (deck.type). Resolved to CSS variables on the stage, so
+  // both text layers — the phrase line and the giant dynamic word — pick it up
+  // by inheritance. Unset leaves every variable absent and the stylesheet's
+  // fallbacks (the house face, uppercase, -0.03em) apply, so every cut already
+  // published renders byte-identically.
+  const TYPE_FACES: Record<string, string> = {
+    display: "var(--font-display)", serif: "var(--font-type-serif)",
+    heavy: "var(--font-type-heavy)", pixel: "var(--font-type-pixel)",
+    hand: "var(--font-type-hand)",
+  };
+  const typeVars = useMemo(() => {
+    const t = deck?.type;
+    if (!t) return undefined;
+    const v: Record<string, string> = {};
+    if (t.family && TYPE_FACES[t.family]) v["--type-family"] = TYPE_FACES[t.family];
+    if (t.case) v["--type-case"] = t.case;
+    if (t.tracking) v["--type-tracking"] = t.tracking;
+    return Object.keys(v).length ? v : undefined;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [deck?.type?.family, deck?.type?.case, deck?.type?.tracking]);
   const rootRef = useRef<HTMLDivElement>(null);
   // Dedup CSS-var writes: a custom-property setProperty invalidates style even
   // when the value is identical, so skipping unchanged writes drops style
@@ -2226,7 +2293,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       ) : null}
 
       <div ref={stageRef} className="kinetic-stage z-[3] flex w-full flex-col items-center justify-center gap-6 text-center"
-        style={deck?.glow && !lite ? { filter: `drop-shadow(0 0 ${(Math.min(1, deck.glow) * 0.6).toFixed(3)}em var(--theme-accent))` } : undefined}>
+        style={{
+          ...(deck?.glow && !lite ? { filter: `drop-shadow(0 0 ${(Math.min(1, deck.glow) * 0.6).toFixed(3)}em var(--theme-accent))` } : null),
+          ...(typeVars ?? null),
+        } as React.CSSProperties}>
         {section && (
           <p className="font-mono text-[11px] uppercase tracking-[0.45em] transition-colors duration-700" style={{ color: "var(--theme-accent)" }}>
             {section.emotion}

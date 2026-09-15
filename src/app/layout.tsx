@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono, Playfair_Display, Anton, Press_Start_2P, Caveat } from "next/font/google";
 import "./globals.css";
 import { ParticleField } from "@/components/ParticleField";
 import { NoiseOverlay } from "@/components/NoiseOverlay";
@@ -20,6 +20,15 @@ import { TylerDoor } from "@/components/TylerDoor";
 
 const display = Space_Grotesk({ subsets: ["latin", "latin-ext", "vietnamese"], variable: "--font-display" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
+// TYPOGRAPHY AS A STYLE AXIS. Every cut ever shipped used Space Grotesk — one
+// typeface, centred, in all 18 videos — while text is on screen essentially
+// 100% of the runtime. These are the alternates a planet can pin through
+// deck.type.family; the stage falls back to --font-display when unset, so
+// nothing already published changes.
+const typeSerif = Playfair_Display({ subsets: ["latin"], variable: "--font-type-serif" });
+const typeHeavy = Anton({ subsets: ["latin"], weight: "400", variable: "--font-type-heavy" });
+const typePixel = Press_Start_2P({ subsets: ["latin"], weight: "400", variable: "--font-type-pixel" });
+const typeHand = Caveat({ subsets: ["latin"], variable: "--font-type-hand" });
 
 // viewport-fit=cover is what makes env(safe-area-inset-*) return real values
 // on iPhone — without it every safe-area rule in the codebase evaluates to 0.
@@ -51,7 +60,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${mono.variable} overflow-x-hidden`}>
+      <body className={`${display.variable} ${mono.variable} ${typeSerif.variable} ${typeHeavy.variable} ${typePixel.variable} ${typeHand.variable} overflow-x-hidden`}>
         <MusicPlayerProvider>
           <LazyMotionProvider>
           <ThemeEngine />
