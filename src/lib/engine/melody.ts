@@ -71,17 +71,24 @@ export function hexHue(hex: string): number {
 }
 
 /** The note's hue: theme hue at the tonic, ±80° by circle-of-fifths distance. */
-export function pitchHue(baseHue: number, pc: number, tonicPc: number): number {
+/** `spread` scales how far the note is allowed to pull the hue off the theme.
+ * 1 = the historic +/-80 degrees, which is most of the colour wheel and is
+ * wonderful on a song whose art is neutral. On a MONOCHROME grade it is a
+ * legibility bug: Hajimemashite is gold-on-near-black, and a word that swung
+ * 80 degrees came out cold blue-grey and disappeared into the plate. Songs
+ * like that pass a small spread and keep the melody nuance inside their own
+ * colour. Absent = 1, so every existing cut is untouched. */
+export function pitchHue(baseHue: number, pc: number, tonicPc: number, spread = 1): number {
   const interval = ((pc - tonicPc) % 12 + 12) % 12;
   const cof = (interval * 7) % 12;               // 0..11 around the circle of fifths
   const signed = cof <= 6 ? cof : cof - 12;      // -5..6 — flat side negative
-  return ((baseHue + (signed / 6) * 80) + 360) % 360;
+  return ((baseHue + (signed / 6) * 80 * spread) + 360) % 360;
 }
 
 /** CSS color for a sung word, or null when the note isn't trustworthy. */
-export function pitchColor(baseHue: number, w: MelodyWord | undefined, tonicPc: number, minConf = 0.35): string | null {
+export function pitchColor(baseHue: number, w: MelodyWord | undefined, tonicPc: number, minConf = 0.35, spread = 1): string | null {
   if (!w || w.conf < minConf) return null;
-  return `hsl(${pitchHue(baseHue, w.pc, tonicPc).toFixed(0)} 82% 66%)`;
+  return `hsl(${pitchHue(baseHue, w.pc, tonicPc, spread).toFixed(0)} 82% 66%)`;
 }
 
 /** Median MIDI note of the pitched words — the singer's home register.

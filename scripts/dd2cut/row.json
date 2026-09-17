@@ -1,0 +1,512 @@
+{
+  "id": "drink-drink-v2",
+  "title": "Drink Drink [Don't Save Me]",
+  "artist": "AGENOR",
+  "genre": "Dark Hip-Hop / R&B",
+  "mood": "golden amber insomnia",
+  "color": "#E2A23A",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/drink-drink-v2/scene-pour7.webp",
+  "audio_url": "/private/drink-drink-v2.mp3",
+  "sort_order": 9012,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[03:10.75]Drink drink drink drink\n[03:18.78]Drink drink drink drink\n[03:26.41]Drink drink drink\n[03:30.47]I don't wanna feel tonight\n[03:38.24]Put my sorrow in the light\n[03:41.67]Drink drink drink drink\n[03:45.01]Bottle glowing by my bed\n[03:52.59]Pain keeps pounding in my head\n[03:56.03]Drink drink drink drink\n[04:04.08]Don't save me\n[04:06.00]Don't save me now\n[04:08.40]Drink drink drink",
+  "lyrics_synced": {
+    "source": "parakeet on the isolated lead stem for sung lines; onset detection on the same stem for the chant, which ASR cannot hear; 123.05 BPM grid",
+    "refinedAt": "2026-09-16T00:00:00.000Z",
+    "words": [
+      {
+        "t": 190.755,
+        "w": "Drink"
+      },
+      {
+        "t": 191.71,
+        "w": "Drink"
+      },
+      {
+        "t": 192.21,
+        "w": "Drink"
+      },
+      {
+        "t": 193.62,
+        "w": "Drink"
+      },
+      {
+        "t": 194.155,
+        "w": "Drink"
+      },
+      {
+        "t": 194.72,
+        "w": "Drink"
+      },
+      {
+        "t": 198.78,
+        "w": "Drink"
+      },
+      {
+        "t": 199.755,
+        "w": "Drink"
+      },
+      {
+        "t": 200.705,
+        "w": "Drink"
+      },
+      {
+        "t": 201.655,
+        "w": "Drink"
+      },
+      {
+        "t": 206.41,
+        "w": "Drink"
+      },
+      {
+        "t": 206.89,
+        "w": "Drink"
+      },
+      {
+        "t": 207.405,
+        "w": "Drink"
+      },
+      {
+        "t": 209.735,
+        "w": "Drink"
+      },
+      {
+        "t": 210.47,
+        "w": "I"
+      },
+      {
+        "t": 210.71,
+        "w": "don't"
+      },
+      {
+        "t": 211.19,
+        "w": "wanna"
+      },
+      {
+        "t": 211.7,
+        "w": "feel"
+      },
+      {
+        "t": 212.38,
+        "w": "tonight"
+      },
+      {
+        "t": 214.98,
+        "w": "Drink"
+      },
+      {
+        "t": 217.36,
+        "w": "Drink"
+      },
+      {
+        "t": 218.24,
+        "w": "Put"
+      },
+      {
+        "t": 218.56,
+        "w": "my"
+      },
+      {
+        "t": 218.85,
+        "w": "sorrow"
+      },
+      {
+        "t": 219.33,
+        "w": "in"
+      },
+      {
+        "t": 220.03,
+        "w": "the"
+      },
+      {
+        "t": 220.27,
+        "w": "light"
+      },
+      {
+        "t": 221.67,
+        "w": "Drink"
+      },
+      {
+        "t": 222.175,
+        "w": "Drink"
+      },
+      {
+        "t": 223.185,
+        "w": "Drink"
+      },
+      {
+        "t": 224.105,
+        "w": "Drink"
+      },
+      {
+        "t": 224.585,
+        "w": "Drink"
+      },
+      {
+        "t": 225.01,
+        "w": "Bottle"
+      },
+      {
+        "t": 225.89,
+        "w": "glowing"
+      },
+      {
+        "t": 226.42,
+        "w": "by"
+      },
+      {
+        "t": 226.93,
+        "w": "my"
+      },
+      {
+        "t": 227.91,
+        "w": "bed"
+      },
+      {
+        "t": 232.59,
+        "w": "Pain"
+      },
+      {
+        "t": 233.06,
+        "w": "keeps"
+      },
+      {
+        "t": 233.54,
+        "w": "pounding"
+      },
+      {
+        "t": 234.12,
+        "w": "in"
+      },
+      {
+        "t": 234.56,
+        "w": "my"
+      },
+      {
+        "t": 235.27,
+        "w": "head"
+      },
+      {
+        "t": 236.025,
+        "w": "Drink"
+      },
+      {
+        "t": 236.51,
+        "w": "Drink"
+      },
+      {
+        "t": 236.945,
+        "w": "Drink"
+      },
+      {
+        "t": 237.41,
+        "w": "Drink"
+      },
+      {
+        "t": 238.37,
+        "w": "Drink"
+      },
+      {
+        "t": 238.85,
+        "w": "Drink"
+      },
+      {
+        "t": 239.31,
+        "w": "Drink"
+      },
+      {
+        "t": 240.265,
+        "w": "Drink"
+      },
+      {
+        "t": 240.695,
+        "w": "Drink"
+      },
+      {
+        "t": 241.275,
+        "w": "Drink"
+      },
+      {
+        "t": 241.93,
+        "w": "Drink"
+      },
+      {
+        "t": 242.68,
+        "w": "Drink"
+      },
+      {
+        "t": 243.13,
+        "w": "Drink"
+      },
+      {
+        "t": 243.665,
+        "w": "Drink"
+      },
+      {
+        "t": 244.08,
+        "w": "Don't"
+      },
+      {
+        "t": 244.57,
+        "w": "save"
+      },
+      {
+        "t": 245.1,
+        "w": "me"
+      },
+      {
+        "t": 246.0,
+        "w": "Don't"
+      },
+      {
+        "t": 246.98,
+        "w": "save"
+      },
+      {
+        "t": 247.45,
+        "w": "me"
+      },
+      {
+        "t": 247.92,
+        "w": "now"
+      },
+      {
+        "t": 248.4,
+        "w": "Drink"
+      },
+      {
+        "t": 248.875,
+        "w": "Drink"
+      },
+      {
+        "t": 249.355,
+        "w": "Drink"
+      },
+      {
+        "t": 249.835,
+        "w": "Drink"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-16T00:00:00.000Z",
+    "styleHint": "THE LAST POUR — near-black room lit by one warm amber source, the liquid the only bright thing in frame and backlit so it glows. Eight of sixteen plates are alcohol being poured. Insomnia, not a party.",
+    "analysis": {
+      "overallMood": "golden amber insomnia",
+      "themes": [
+        "golden",
+        "amber",
+        "lanterns",
+        "midnight"
+      ],
+      "keywords": [],
+      "palette": [
+        "#E8CE45",
+        "#F0D84E",
+        "#D9B23C",
+        "#FBE3B0",
+        "#0A0705"
+      ],
+      "summary": "A man counting pours in the dark, asking not to be saved.",
+      "sections": [
+        {
+          "start": 190.0,
+          "name": "the build",
+          "emotion": "chant",
+          "intensity": 0.6,
+          "colorHint": "#E8CE45"
+        },
+        {
+          "start": 210.4,
+          "name": "final hook",
+          "emotion": "numb",
+          "intensity": 0.7,
+          "colorHint": "#F0D84E"
+        },
+        {
+          "start": 232.5,
+          "name": "the ache",
+          "emotion": "ache",
+          "intensity": 0.52,
+          "colorHint": "#D9B23C"
+        },
+        {
+          "start": 244.0,
+          "name": "fading out",
+          "emotion": "fading",
+          "intensity": 0.34,
+          "colorHint": "#B8922F"
+        }
+      ]
+    },
+    "assets": {
+      "broll": [],
+      "keywords": {
+        "drink": "/planets/drink-drink-v2/scene-pour7.webp",
+        "i": "/planets/drink-drink-v2/scene-manhead.webp",
+        "wanna": "/planets/drink-drink-v2/scene-manhead.webp",
+        "feel": "/planets/drink-drink-v2/scene-manhead.webp",
+        "tonight": "/planets/drink-drink-v2/scene-barneon.webp",
+        "put": "/planets/drink-drink-v2/scene-pour2.webp",
+        "sorrow": "/planets/drink-drink-v2/scene-spill.webp",
+        "light": "/planets/drink-drink-v2/scene-pour5.webp",
+        "bottle": "/planets/drink-drink-v2/scene-bottlebed.webp",
+        "glowing": "/planets/drink-drink-v2/scene-bottlebed.webp",
+        "bed": "/planets/drink-drink-v2/scene-bottlebed.webp",
+        "pain": "/planets/drink-drink-v2/scene-manhead.webp",
+        "keeps": "/planets/drink-drink-v2/scene-manhead.webp",
+        "pounding": "/planets/drink-drink-v2/scene-manhead.webp",
+        "head": "/planets/drink-drink-v2/scene-manhead.webp",
+        "don't": "/planets/drink-drink-v2/scene-window.webp",
+        "save": "/planets/drink-drink-v2/scene-window.webp",
+        "me": "/planets/drink-drink-v2/scene-emptyglass.webp",
+        "now": "/planets/drink-drink-v2/scene-emptyglass.webp"
+      },
+      "sections": {
+        "chant": "/planets/drink-drink-v2/scene-pour1.webp",
+        "numb": "/planets/drink-drink-v2/scene-smoke.webp",
+        "ache": "/planets/drink-drink-v2/scene-manhead.webp",
+        "fading": "/planets/drink-drink-v2/scene-emptyglass.webp"
+      },
+      "shots": {
+        "/planets/drink-drink-v2/scene-pour1.webp": "MED",
+        "/planets/drink-drink-v2/scene-pour2.webp": "MACRO",
+        "/planets/drink-drink-v2/scene-pour3.webp": "MED",
+        "/planets/drink-drink-v2/scene-pour4.webp": "CLOSE",
+        "/planets/drink-drink-v2/scene-pour5.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-pour6.webp": "MED",
+        "/planets/drink-drink-v2/scene-pour7.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-pour8.webp": "MED",
+        "/planets/drink-drink-v2/scene-manhead.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-bottlebed.webp": "MED",
+        "/planets/drink-drink-v2/scene-barneon.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-window.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-smoke.webp": "CLOSE",
+        "/planets/drink-drink-v2/scene-fan.webp": "WIDE",
+        "/planets/drink-drink-v2/scene-emptyglass.webp": "MED",
+        "/planets/drink-drink-v2/scene-spill.webp": "MED"
+      },
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/drink-drink-v2/stems/stems.json",
+      "stemLag": 0
+    },
+    "interactions": {
+      "tapEffect": "drip",
+      "moments": []
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "DRINK DRINK v2 — THE LAST POUR. 190.0-250.0 (60.0s). Pure dynamic. The repeated hook word is staged with THE POUR: chips fly from the bottle's mouth at the top of the frame and stack bottom-up like a rising level.",
+      "acts": [
+        {
+          "start": 190.0,
+          "end": 210.4,
+          "label": "THE BUILD",
+          "why": "the chant layering — the word stacks before a single line is sung"
+        },
+        {
+          "start": 210.4,
+          "end": 232.5,
+          "label": "I DON'T WANNA FEEL",
+          "why": "the final hook, full energy"
+        },
+        {
+          "start": 232.5,
+          "end": 244.0,
+          "label": "PAIN KEEPS POUNDING",
+          "why": "the line the whole song has been circling"
+        },
+        {
+          "start": 244.0,
+          "end": 250.0,
+          "label": "DON'T SAVE ME",
+          "why": "the fading chant, and the last word"
+        }
+      ],
+      "modes": [
+        {
+          "start": 190.0,
+          "end": 210.4,
+          "mode": "dynamic"
+        },
+        {
+          "start": 210.4,
+          "end": 232.5,
+          "mode": "dynamic"
+        },
+        {
+          "start": 232.5,
+          "end": 244.0,
+          "mode": "dynamic"
+        },
+        {
+          "start": 244.0,
+          "end": 250.0,
+          "mode": "dynamic"
+        }
+      ],
+      "words": {
+        "drink": "pulse",
+        "i": "whisper",
+        "don't": "redact",
+        "wanna": "whisper",
+        "feel": "fogbreath",
+        "tonight": "neon",
+        "put": "press",
+        "my": "whisper",
+        "sorrow": "bleed",
+        "in": "drip",
+        "the": "whisper",
+        "light": "flashbulb",
+        "bottle": "shimmer",
+        "glowing": "neon",
+        "by": "drip",
+        "bed": "fall",
+        "pain": "tremor",
+        "keeps": "echo",
+        "pounding": "quake",
+        "head": "fracture",
+        "save": "cling",
+        "me": "dissolve",
+        "now": "tvoff"
+      },
+      "hits": [],
+      "holds": [],
+      "rolls": [],
+      "quakes": [
+        210.47,
+        232.59,
+        244.08
+      ],
+      "deck": {
+        "weather": "dust",
+        "art": true,
+        "density": 2.0,
+        "glow": 0.9,
+        "grain": 0.32,
+        "vignette": 0.6,
+        "backdropHue": 0.05,
+        "pitchSpread": 0.3,
+        "giant": {
+          "life": 1200,
+          "pile": 0,
+          "clearOnSwitch": true,
+          "stutter": true,
+          "stutterLayout": "pour",
+          "stutterEmit": [
+            46,
+            4
+          ]
+        },
+        "choir": false,
+        "ghosts": 0,
+        "motion": {
+          "dur": 2.2,
+          "amp": 0.8,
+          "swapMs": 850,
+          "fade": 0.34
+        }
+      }
+    }
+  }
+}

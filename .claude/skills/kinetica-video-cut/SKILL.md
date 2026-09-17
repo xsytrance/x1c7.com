@@ -41,6 +41,17 @@ nvidia-smi --query-gpu=memory.used,memory.total,utilization.gpu --format=csv
 
 - Dev server on **:3218**. `:7272` is a stale prod build — never render against it.
   `npx next dev -p 3218` if it's down.
+- **CHECK WHICH CHECKOUT THAT SERVER IS SERVING BEFORE YOU EDIT ANY ENGINE CODE.**
+  A dev server on :3218 is often another session's, running out of a WORKTREE —
+  `.claude/worktrees/days-drift-by-cut` was answering on :3218 on 2026-09-15.
+  Your `src/` edits then never reach the browser, three probe renders come back
+  byte-identically wrong, and you will doubt your patch instead of your server.
+  DB row changes DO land (Supabase is shared), which is what makes it so
+  convincing. Run this, and if it is not your checkout start your own on a free
+  port and pass `--base http://localhost:<port>`:
+  ```bash
+  for pid in $(pgrep -f "next dev"); do echo "$pid $(readlink /proc/$pid/cwd)"; done
+  ```
 - ComfyUI is a **user systemd unit**, not a bare process you start by hand
   anymore: `comfyui.socket` on **:8188** is the stable contract (Conjury's
   socket-activated front door — first connection raises `comfyui.service` on
@@ -270,6 +281,172 @@ in `assets.keywords`, the screen will freeze on section art for its every
 run. FAG never hit this because it's a ballad with almost no word repeats —
 this class of bug is specific to hook/chant-style songs, which is exactly
 the shape of track most likely to get picked for a video next.
+
+## Step 3f — "pure dynamic" and the THREE other text layers (2026-09-15, §23)
+
+`render-cut.mjs` already defaults to `--mode dynamic`, but `dynamicPlus.modes`
+OUTRANKS the flag (`liveMode = schedMode ?? mode`). A cut is only pure dynamic
+if every window says `dynamic` — assert it in the builder. Windows that all say
+dynamic still earn their keep: entering one fires the tape-warp and clears the
+giant-word residue, which is exactly what Warm Without Burning was doing.
+
+`deck.giant.pile = 0` gives ONE giant word with no residue — and reaches only
+one of four text layers. The others each have their own knob (all added §23,
+all defaulting to the old behaviour):
+
+- `deck.giant.stutter: false` — the `z-[7]` PILEUP, nine scattered clipped
+  chips emitted by any ≥3-repeat run within 1.4s. Great on "push-push-push",
+  ruinous on a chant with a long hook word. **This is usually the wall you are
+  actually looking at.**
+- `deck.choir: false` — the `z-[2]` blurred 24vw word under the stage. A long
+  word runs off both edges and reads as a smear.
+- `deck.ghosts: 0` — dying lyrics dissolving into the GL backdrop. A hook word
+  repeated 15 times stacks faster than `ghostFade` clears.
+
+If you invent a deck key, **grep the engine for it before believing it worked** —
+a previous session shipped `giant.stutter: false` as a silent no-op.
+
+Two more silent clamps in the same family: `deck.backdropHue` is in **TURNS**
+(−0.5..0.5), so `36` clamps to a 180° hue rotation that turns warm art lilac;
+and `dynamicPlus.scene` is ignored unless it is one of
+`AURORA / EMBERS / INK / SYRUP` — pinning a REAL one paints the GL scene behind
+plates that render at 0.6 opacity and hazes every frame. Omit it.
+
+## Step 3g — ASR under-segments chopped runs: transcribe SLICES (2026-09-15, §23)
+
+Whole-file Parakeet collapses dense vocal chops. On International Mode it heard
+ONE token where the stem has five beat-locked hits, and labelled "Gate closed"
+as a single token at *closed*'s onset — so the pair landed 0.35s late with its
+first word missing. Re-running the SAME model on 6–9s **section slices**
+recovered every one of them. Slice first, then verify each stamp against a 20ms
+dB profile of the lead stem (gate −42 dB; the 300ms before a phrase should read
+−55 to −101 dB, which proves the gate measures onsets and not a floor).
+
+**Follow the AUDIO, not the lyric sheet** — Suno's sheet is the prompt, not a
+transcript, and will claim three hook repeats where the take sings two.
+
+End the cut where the word ENDS, not on the nearest beat: 61.277 was a clean
+beat that sliced the final "Large" in half. `senses.json`'s `cuts` array had
+already flagged the percussion gap it lives in.
+
+## Step 3h — variety, and the shake (2026-09-15, §23 addendum)
+
+**A hook word needs MORE plates than it has hits.** `pooledArt()` skips entries
+to satisfy its shot grammar (never two same-size shots back to back), and the
+section's ambient plate lands on top of the rotation, so 15 hits over 15 plates
+still visibly repeats. 24 in the pool gave 16 distinct plates on screen.
+Measure it by logging every art CHANGE over a real playthrough — a contact
+sheet lies, because it over-weights whichever plate is held longest.
+
+**`dynamicPlus.quakes: [t, ...]`** rattles the stage on the clock (CSS quake +
+particle scatter + the live word reacting in the song's own tap language). All
+of it existed already and none of it was reachable in a render — only a real
+phone `devicemotion` ever set it. Use it on the few genuine hype moments.
+Verify by measuring frame-to-frame motion, not by trusting the array; a good
+one reads 25-45x the median.
+
+**Named things beat anonymous ones.** "Two random girls on a road" got vetoed;
+a famous road with a flag on it did not. Keep generated flags to simple
+geometry (stripes, blocks) and keep `readable letters` in the negative prompt —
+an Italian tricolour came back red-and-white and had to be dropped.
+
+## Step 3i — likeness art, and why a set comes back monotonous (2026-09-16, §24)
+
+If every plate has the same person in it, look at the TOOL before the prompts.
+Flux Kontext is an instruction-EDITOR and preserves the subject of its source
+image by design — seed it from an artist photo sixteen times and you get
+sixteen of that artist however wide the prompt asks for. Split the set: plates
+WITH a person go through Kontext (paid, likeness); plates with NO person are
+ordinary text-to-image and run locally on ComfyUI for free. Fewer portraits is
+then CHEAPER, not a compromise.
+
+Kontext specifics: key is `AIMLAPI_KEY` in `~/.config/ossicle/aimlapi.env`
+(the old `~/.bfl_key` is gone); run with `~/whisper-venv/bin/python` (PIL is
+not in system python3 any more); `safety_tolerance: "5"` or fully-clothed
+street scenes come back as SOLID BLACK; and the API returns 752x1392, so
+`cover()` every result to 832x1472 yourself.
+
+**Two colour traps that make words illegible:**
+- `palette[0]` is the melody's base hue (`themeHue = hexHue(palette[0])`), not
+  decoration. Lead with the song's real colour — a near-black first entry means
+  the whole pitch-colour system bends off noise.
+- `deck.pitchSpread` (0..1, absent = 1) scales how far the sung note pulls a
+  word's hue off the theme. Full spread is +/-80 degrees; on a MONOCHROME grade
+  that turns some words cold and they vanish. 0.3 keeps them in the family.
+- `deck.glow` is per-cut, not a constant: bright plates want ~0.45 (a halo
+  bleaches them), near-black plates want ~0.95 (the word needs presence).
+
+## Step 3j — the repeated word as a FEATURE (2026-09-16, §25)
+
+§23 said to switch the stutter pileup off. That was right for a cut where it
+buried the frame — it is NOT a general rule. Art-directed, it is the best thing
+you can do with a chant hook:
+
+  `deck.giant.stutterLayout: "pour"` + `stutterEmit: [x, y]` stacks the repeats
+  bottom-up in one column at constant size, no rotation, single colour, each
+  chip flying in from the emit point. Put the emit point on the bottle / mouth /
+  source in the plate and the words look poured out of it.
+
+**Grep an effect for hex literals before wiring it to a repeated word.** The
+registry is NOT colour-neutral: `drip` hardcodes lilac/pink, `liquid` hardcodes
+blue. `pulse` uses var(--theme-accent) and wears the song's colour.
+
+**`deck.weather`** pins the particle mode. particleModeFor reads the TITLE,
+which a cut cannot change — a song called "Drink Drink" fizzes like champagne
+no matter how you word its mood.
+
+**deriveTheme puts secondary at hue+45 and accent at hue-35.** On a monochrome
+grade those are a different colour entirely; an unpitched giant word falls back
+to the accent.
+
+**A valid zip proves nothing about its contents** — a stems delivery arrived
+with all seven members intact and 1.03 seconds of silence in each. Decode
+before trusting. And when ASR cannot hear a pitched/warped chant (it will
+transcribe "drink" as "trem"), detect onsets on the isolated vocal and check
+them against the BPM grid instead.
+
+## Step 3k — prompt ORDER, and contrast in both directions (2026-09-16, §26)
+
+**Where an instruction sits in the prompt is part of the instruction.** "A
+diverse crowd" at the END of a long LOOK string produced 36 almost entirely
+white plates; the same idea as the FIRST clause, naming groups concretely, fixed
+it in one pass. Same for grade — "late golden hour" gives high-key pale resort
+photography, so state the sun's POSITION and the warmth outright.
+
+**There is no house value for `glow`.** §24 needed 0.95 on near-black plates;
+§26 needed 0.45 on bright cream ones, where more glow is mud. On bright art also
+reach for a SATURATED warm seed (deriveTheme clamps lightness to 0.5-0.62, so a
+dark seed cannot survive) and a heavier vignette.
+
+**New effects must be colour-neutral** — draw from currentColor /
+var(--theme-accent), never hex literals (§25). Two built this way: `heathaze`
+(blurred ghosts drifting behind a crisp original — readable AND shimmering) and
+`screw` (the word drags down leaving a smear). Third pile layout `trail` joins
+scatter and pour, for chopped material.
+
+**ASR supplies the clock; the official lyric sheet supplies the words.** Parakeet
+on the mix timed this song perfectly and mis-heard "Heat turned up" as "He
+turned up" and "this sundress glow" as "the sun dress glow". Never ship ASR
+spelling.
+
+## Step 3l — count the plate distribution BEFORE you render (§26 addendum)
+
+"You're reusing it a lot" is measurable without rendering: walk the word list,
+resolve each word through `assets.keywords` + the gallery pool the way
+`pooledArt()` does, and tally hits per plate. Summer Drip's first map put 81
+word-hits on 18 plates with the top four taking 35 — invisible on a contact
+sheet, which samples time evenly and cannot tell "held once for four seconds"
+from "came back four times".
+
+Rule of thumb: aim for worst-repeat <= ~6 and every plate used at least once.
+If you are over, ADD PLATES — re-mapping alone just moves the crowding.
+
+**A repeated close group portrait is the worst offender.** Faces are what the
+eye returns to; the same four people smiling is noticed at three repeats where a
+horizon passes at six. Make variety passes environmental — water, objects,
+distance, single profiles — not more group shots.
+
+And when a picture is rejected, DELETE it from R2, do not just unreference it.
 
 ## Step 4 — log what you learned
 

@@ -1,0 +1,525 @@
+{
+  "id": "international-mode-atlas",
+  "title": "International Mode",
+  "artist": "AGENOR",
+  "genre": "Dancehall / Hype",
+  "mood": "golden euphoric",
+  "color": "#F2B33D",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/international-mode-atlas/scene-globe.webp",
+  "audio_url": "/private/international-mode-atlas.mp3",
+  "sort_order": 9005,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[00:01.63]International\n[00:05.00]International\n[00:08.56]International\n[00:10.70]Yeah\n[00:11.95]Worldwide\n[00:14.98]Touch road road\n[00:18.22]Passport\n[00:21.68]Stamp that\n[00:24.88]International\n[00:28.22]International\n[00:29.74]Run it Run it Run\n[00:31.66]International\n[00:33.79]International\n[00:34.82]International\n[00:39.16]Big sound\n[00:39.98]Border\n[00:40.64]Flight mode\n[00:41.74]Gate closed\n[00:42.59]Still go\n[00:43.30]International\n[00:44.20]International\n[00:45.01]International\n[00:46.06]Move fast\n[00:52.07]Yo\n[00:52.50]From yard to foreign\n[00:54.11]Foreign to yard\n[00:55.33]Tell dem\n[00:56.60]International\n[00:57.56]International\n[00:58.48]International\n[00:59.97]International\n[01:01.18]Large",
+  "lyrics_synced": {
+    "source": "parakeet-tdt-0.6b-v3 per-section slices on the isolated lead stem, every onset RMS-verified against a 20ms profile",
+    "refinedAt": "2026-09-15T00:00:00.000Z",
+    "words": [
+      {
+        "t": 1.63,
+        "w": "International"
+      },
+      {
+        "t": 5.0,
+        "w": "International"
+      },
+      {
+        "t": 8.56,
+        "w": "International"
+      },
+      {
+        "t": 10.7,
+        "w": "Yeah"
+      },
+      {
+        "t": 11.95,
+        "w": "Worldwide"
+      },
+      {
+        "t": 14.98,
+        "w": "Touch"
+      },
+      {
+        "t": 15.4,
+        "w": "road"
+      },
+      {
+        "t": 16.29,
+        "w": "road"
+      },
+      {
+        "t": 18.22,
+        "w": "Passport"
+      },
+      {
+        "t": 21.68,
+        "w": "Stamp"
+      },
+      {
+        "t": 22.08,
+        "w": "that"
+      },
+      {
+        "t": 24.88,
+        "w": "International"
+      },
+      {
+        "t": 28.22,
+        "w": "International"
+      },
+      {
+        "t": 29.74,
+        "w": "Run"
+      },
+      {
+        "t": 30.19,
+        "w": "it"
+      },
+      {
+        "t": 30.59,
+        "w": "Run"
+      },
+      {
+        "t": 31.01,
+        "w": "it"
+      },
+      {
+        "t": 31.42,
+        "w": "Run"
+      },
+      {
+        "t": 31.66,
+        "w": "International"
+      },
+      {
+        "t": 33.79,
+        "w": "International"
+      },
+      {
+        "t": 34.82,
+        "w": "International"
+      },
+      {
+        "t": 39.16,
+        "w": "Big"
+      },
+      {
+        "t": 39.62,
+        "w": "sound"
+      },
+      {
+        "t": 39.98,
+        "w": "Border"
+      },
+      {
+        "t": 40.64,
+        "w": "Flight"
+      },
+      {
+        "t": 41.22,
+        "w": "mode"
+      },
+      {
+        "t": 41.74,
+        "w": "Gate"
+      },
+      {
+        "t": 42.05,
+        "w": "closed"
+      },
+      {
+        "t": 42.59,
+        "w": "Still"
+      },
+      {
+        "t": 42.96,
+        "w": "go"
+      },
+      {
+        "t": 43.3,
+        "w": "International"
+      },
+      {
+        "t": 44.2,
+        "w": "International"
+      },
+      {
+        "t": 45.01,
+        "w": "International"
+      },
+      {
+        "t": 46.06,
+        "w": "Move"
+      },
+      {
+        "t": 46.4,
+        "w": "fast"
+      },
+      {
+        "t": 52.07,
+        "w": "Yo"
+      },
+      {
+        "t": 52.5,
+        "w": "From"
+      },
+      {
+        "t": 52.68,
+        "w": "yard"
+      },
+      {
+        "t": 53.08,
+        "w": "to"
+      },
+      {
+        "t": 53.35,
+        "w": "foreign"
+      },
+      {
+        "t": 54.11,
+        "w": "Foreign"
+      },
+      {
+        "t": 54.62,
+        "w": "to"
+      },
+      {
+        "t": 54.94,
+        "w": "yard"
+      },
+      {
+        "t": 55.33,
+        "w": "Tell"
+      },
+      {
+        "t": 55.7,
+        "w": "dem"
+      },
+      {
+        "t": 56.6,
+        "w": "International"
+      },
+      {
+        "t": 57.56,
+        "w": "International"
+      },
+      {
+        "t": 58.48,
+        "w": "International"
+      },
+      {
+        "t": 59.97,
+        "w": "International"
+      },
+      {
+        "t": 61.18,
+        "w": "Large"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-15T00:00:00.000Z",
+    "styleHint": "THE GOLDEN ATLAS — golden-hour photoreal travel documentary. Every frame is a REAL named landmark with a real crowd celebrating in front of it. The country changes on the hook word. Monuments identify the country; flags are incidental.",
+    "analysis": {
+      "overallMood": "golden worldwide jubilation",
+      "themes": [
+        "golden",
+        "sunlit",
+        "monuments",
+        "passport",
+        "worldwide"
+      ],
+      "keywords": [],
+      "palette": [
+        "#F2B33D",
+        "#E2703A",
+        "#4FA8D8",
+        "#43C46B",
+        "#FBEBD2"
+      ],
+      "summary": "A global hype anthem — the whole world raising its monuments together.",
+      "sections": [
+        {
+          "start": 0.0,
+          "name": "the chop",
+          "emotion": "arrival",
+          "intensity": 0.58,
+          "colorHint": "#F2B33D"
+        },
+        {
+          "start": 10.7,
+          "name": "worldwide",
+          "emotion": "transit",
+          "intensity": 0.5,
+          "colorHint": "#4FA8D8"
+        },
+        {
+          "start": 24.88,
+          "name": "drop cue",
+          "emotion": "arrival",
+          "intensity": 0.62,
+          "colorHint": "#F2B33D"
+        },
+        {
+          "start": 31.66,
+          "name": "beat drop",
+          "emotion": "engine",
+          "intensity": 0.68,
+          "colorHint": "#E2703A"
+        },
+        {
+          "start": 39.16,
+          "name": "border run",
+          "emotion": "transit",
+          "intensity": 0.56,
+          "colorHint": "#4FA8D8"
+        },
+        {
+          "start": 43.3,
+          "name": "the chant wall",
+          "emotion": "engine",
+          "intensity": 0.7,
+          "colorHint": "#E2703A"
+        },
+        {
+          "start": 47.2,
+          "name": "the long haul",
+          "emotion": "flight",
+          "intensity": 0.54,
+          "colorHint": "#E2A23A"
+        },
+        {
+          "start": 52.07,
+          "name": "the dj shout",
+          "emotion": "homeland",
+          "intensity": 0.64,
+          "colorHint": "#43C46B"
+        },
+        {
+          "start": 56.6,
+          "name": "closing chant",
+          "emotion": "arrival",
+          "intensity": 0.7,
+          "colorHint": "#F2B33D"
+        }
+      ]
+    },
+    "assets": {
+      "broll": [],
+      "keywords": {
+        "international": "/planets/international-mode-atlas/scene-jp.webp",
+        "worldwide": "/planets/international-mode-atlas/scene-world.webp",
+        "touch": "/planets/international-mode-atlas/scene-route66.webp",
+        "road": "/planets/international-mode-atlas/scene-route66.webp",
+        "go": "/planets/international-mode-atlas/scene-route66.webp",
+        "passport": "/planets/international-mode-atlas/scene-passport.webp",
+        "stamp": "/planets/international-mode-atlas/scene-passport.webp",
+        "gate": "/planets/international-mode-atlas/scene-passport.webp",
+        "closed": "/planets/international-mode-atlas/scene-passport.webp",
+        "run": "/planets/international-mode-atlas/scene-cn.webp",
+        "move": "/planets/international-mode-atlas/scene-za.webp",
+        "border": "/planets/international-mode-atlas/scene-fly.webp",
+        "flight": "/planets/international-mode-atlas/scene-fly.webp",
+        "mode": "/planets/international-mode-atlas/scene-fly.webp",
+        "fast": "/planets/international-mode-atlas/scene-fly.webp",
+        "foreign": "/planets/international-mode-atlas/scene-in.webp",
+        "big": "/planets/international-mode-atlas/scene-globe.webp",
+        "large": "/planets/international-mode-atlas/scene-globe.webp",
+        "yo": "/planets/international-mode-atlas/scene-jm.webp",
+        "yard": "/planets/international-mode-atlas/scene-jm.webp",
+        "tell": "/planets/international-mode-atlas/scene-jm.webp",
+        "dem": "/planets/international-mode-atlas/scene-jm.webp"
+      },
+      "sections": {
+        "arrival": "/planets/international-mode-atlas/scene-world.webp",
+        "transit": "/planets/international-mode-atlas/scene-route66.webp",
+        "engine": "/planets/international-mode-atlas/scene-us.webp",
+        "flight": "/planets/international-mode-atlas/scene-fly.webp",
+        "homeland": "/planets/international-mode-atlas/scene-jm.webp"
+      },
+      "shots": {
+        "/planets/international-mode-atlas/scene-au.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-br.webp": "MED",
+        "/planets/international-mode-atlas/scene-cn.webp": "MED",
+        "/planets/international-mode-atlas/scene-eg.webp": "MED",
+        "/planets/international-mode-atlas/scene-fr.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-gr.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-in.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-it.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-jm.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-jo.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-jp.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-mx.webp": "MED",
+        "/planets/international-mode-atlas/scene-pe.webp": "MED",
+        "/planets/international-mode-atlas/scene-us.webp": "MED",
+        "/planets/international-mode-atlas/scene-za.webp": "MED",
+        "/planets/international-mode-atlas/scene-ph.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-ng.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-th.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-tr.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-ma.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-de.webp": "MED",
+        "/planets/international-mode-atlas/scene-es.webp": "MED",
+        "/planets/international-mode-atlas/scene-gb.webp": "MED",
+        "/planets/international-mode-atlas/scene-kr.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-sg.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-fly.webp": "MED",
+        "/planets/international-mode-atlas/scene-route66.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-globe.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-world.webp": "WIDE",
+        "/planets/international-mode-atlas/scene-passport.webp": "CLOSE"
+      },
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/international-mode-atlas/stems/stems.json",
+      "stemLag": 0
+    },
+    "interactions": {
+      "tapEffect": "bloom",
+      "moments": []
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "INTERNATIONAL MODE — THE GOLDEN ATLAS, re-cut. One continuous window 0.00-62.40 (62.40s). PURE DYNAMIC throughout — one giant word at a time, no pile, no phrase wall. 15 hook hits rotate 14 countries and a globe. Ends on LARGE hanging alone in the percussion break at 61.18-62.40.",
+      "acts": [
+        {
+          "start": 0.0,
+          "end": 10.7,
+          "label": "INTERNATIONAL",
+          "why": "the chopped cold open, three hook hits"
+        },
+        {
+          "start": 10.7,
+          "end": 24.88,
+          "label": "TOUCH ROAD",
+          "why": "worldwide, passport, stamp that"
+        },
+        {
+          "start": 24.88,
+          "end": 31.66,
+          "label": "RUN IT",
+          "why": "the drop cue and its five-hit stutter"
+        },
+        {
+          "start": 31.66,
+          "end": 43.3,
+          "label": "GATE CLOSED",
+          "why": "border, flight mode, still go"
+        },
+        {
+          "start": 43.3,
+          "end": 52.07,
+          "label": "MOVE FAST",
+          "why": "the chant wall into the long haul"
+        },
+        {
+          "start": 52.07,
+          "end": 56.6,
+          "label": "YARD TO FOREIGN",
+          "why": "the DJ shout, and Jamaica"
+        },
+        {
+          "start": 56.6,
+          "end": 62.4,
+          "label": "LARGE",
+          "why": "the closing chant and the tag line"
+        }
+      ],
+      "modes": [
+        {
+          "start": 0.0,
+          "end": 10.7,
+          "mode": "dynamic"
+        },
+        {
+          "start": 10.7,
+          "end": 24.88,
+          "mode": "dynamic"
+        },
+        {
+          "start": 24.88,
+          "end": 31.66,
+          "mode": "dynamic"
+        },
+        {
+          "start": 31.66,
+          "end": 43.3,
+          "mode": "dynamic"
+        },
+        {
+          "start": 43.3,
+          "end": 52.07,
+          "mode": "dynamic"
+        },
+        {
+          "start": 52.07,
+          "end": 56.6,
+          "mode": "dynamic"
+        },
+        {
+          "start": 56.6,
+          "end": 62.4,
+          "mode": "dynamic"
+        }
+      ],
+      "words": {
+        "international": "slam",
+        "yeah": "flashbulb",
+        "worldwide": "rise",
+        "touch": "press",
+        "road": "echo",
+        "passport": "placard",
+        "stamp": "quake",
+        "that": "chop",
+        "run": "chop",
+        "it": "chop",
+        "big": "quake",
+        "sound": "pulse",
+        "border": "bars",
+        "flight": "rise",
+        "mode": "type",
+        "gate": "bars",
+        "closed": "redact",
+        "still": "freeze",
+        "go": "slam",
+        "move": "tilt",
+        "fast": "chromatic",
+        "yo": "flashbulb",
+        "from": "echo",
+        "yard": "carve",
+        "foreign": "refract",
+        "tell": "echo",
+        "dem": "echo",
+        "large": "bloom"
+      },
+      "deck": {
+        "art": true,
+        "density": 2.1,
+        "glow": 0.45,
+        "grain": 0.26,
+        "vignette": 0.44,
+        "backdropHue": 0.04,
+        "ghosts": 0,
+        "giant": {
+          "life": 1200,
+          "pile": 0,
+          "clearOnSwitch": true,
+          "stutter": false
+        },
+        "choir": false,
+        "motion": {
+          "dur": 2.2,
+          "amp": 0.85,
+          "swapMs": 900,
+          "fade": 0.36
+        }
+      },
+      "quakes": [
+        31.66,
+        43.3,
+        56.6
+      ],
+      "hits": [],
+      "holds": [],
+      "rolls": []
+    }
+  }
+}

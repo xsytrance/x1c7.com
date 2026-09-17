@@ -28,7 +28,9 @@ Standing owner laws:
   noir, coral sunrise comic, 16-bit pixel + cars, '80s airbrush chrome,
   chiaroscuro oil, urban LED nightclub silhouettes, ultraviolet-noir photoreal,
   risograph duotone, Osaka gold-leaf night (photoreal, Kontext — see §12),
-  blueprint dawn (photoreal + cyan drafting linework, Kontext — see §15).
+  blueprint dawn (photoreal + cyan drafting linework, Kontext — see §15),
+  THE AUDIBLE DESERT (§18), THE ANVIL LIGHT (§19), SƠN MÀI LACQUER (§20),
+  Osaka WET NEON re-cut (§21), ONE WORLD GATE (§22), THE GOLDEN ATLAS (§23).
 - **Eyes on output** — visually audit every deliverable (zoomed crops, count
   the figures, read the letters) BEFORE shipping. VERIFY numbers prove sync,
   never looks.
@@ -1081,3 +1083,543 @@ not fixed, logged as a known cosmetic gap for the next spliced cut to close
 **Title-collision trap, same shape as FAG's §19:** "International Mode" and
 the already-catalogued "International Heat" are different songs; searching
 assets by partial title would have grabbed the wrong one.
+
+## 23 · International Mode, THE GOLDEN ATLAS — the re-cut where the text finally got big (2026-09-15)
+
+Sixteenth voice: **THE GOLDEN ATLAS** — golden-hour photoreal travel
+documentary, a real named landmark with a real crowd celebrating in front of
+it, the country changing on the hook word. Monuments identify the country;
+flags are incidental. 21 plates, all native portrait 832×1472. One continuous
+window **0.00 → 62.40** (62.40s), PURE DYNAMIC throughout. VERIFY median
+8.0ms / p95 15.0ms, 3580 clean frames. Shot histogram 50% WIDE / 45% MED /
+5% CLOSE — inside §17 on both ends.
+
+The owner's note on the previous pass was *"the problem is mostly the text"*,
+plus *"the timing is off on the lyrics"*, and the reference he pointed at was
+Warm Without Burning (§20). Everything below is what separated the two.
+
+### The single most expensive lesson: check WHICH CHECKOUT the dev server serves
+
+Three full probe renders in a row came back byte-identically wrong after
+engine edits that were definitely on disk and definitely typechecked. The dev
+server answering on :3218 was running from
+`.claude/worktrees/days-drift-by-cut`, another session's worktree. Every
+`src/` edit went to the main checkout and was never served; only the DB row
+changes landed, which is exactly the symptom that makes you doubt your own
+patch instead of your server.
+
+```bash
+for pid in $(pgrep -f "next dev"); do echo "$pid $(readlink /proc/$pid/cwd)"; done
+```
+
+Run that BEFORE trusting any engine change you make during a cut, and start
+your own server on a free port rather than adopting whatever is on :3218.
+The skill's Step 0 now says so.
+
+### "Pure dynamic" is a property of the modes ARRAY, not the --mode flag
+
+`render-cut.mjs` already defaults to `--mode dynamic`, and `liveMode =
+schedMode ?? mode` — so a `dynamicPlus.modes` window **outranks the flag**.
+The previous pass alternated `dynamic`/`phrase` per act, so the hook kept
+collapsing into a wrapped three-word wall. Warm Without Burning looked
+"purely dynamic" because its three windows all SAID dynamic; they exist only
+as punctuation (entering one fires the tape-warp and clears the residue).
+
+Every window here is `dynamic`, asserted in the builder:
+
+```python
+MODES = [{"start": a["start"], "end": a["end"], "mode": "dynamic"} for a in ACTS]
+assert {m["mode"] for m in MODES} == {"dynamic"}
+```
+
+### THREE text layers pile onto the frame, and `giant.pile` only reaches one
+
+This is the finding that actually answered "the problem is mostly the text".
+Killing the giant-word residue with `deck.giant.pile = 0` did nothing to the
+wall of overlapping text, because the wall was never that layer:
+
+| layer | z | driven by | knob |
+| --- | --- | --- | --- |
+| giant-word residue | — | outgoing dynamic words | `deck.giant.pile` |
+| **stutter pileup** | `z-[7]` | a ≥3-repeat run within 1.4s | **`deck.giant.stutter`** (new) |
+| **choir word** | `z-[2]` | backing-vocal loudness, 24vw, blurred | **`deck.choir`** (new) |
+| backdrop word ghosts | GL | dying lyrics dissolving into the field | **`deck.ghosts`** (new) |
+
+The stutter pileup is *wonderful* on "push-push-push" and ruinous on a chant
+whose hook is a 13-letter word: three hits in a row emit nine chips at
+`clamp(1.6rem, …, 9rem)` scattered across the whole frame, each clipped,
+burying the plate. The choir layer draws the live word at 24vw — a long word
+runs off both edges and reads as a grey smear. All three now have knobs and
+all three default to their old behaviour, so no shipped cut changes.
+
+A previous session had already guessed at this and written `"stutter": false`
+inside `giant` — it was a silent no-op, because nothing read it. **If you
+invent a deck key, grep the engine for it before believing it worked.**
+
+### `backdropHue` is in TURNS, not degrees
+
+`backdrop.hueShift` is registered `min -0.5, max 0.5` (turns). This cut
+carried `backdropHue: 36`, which clamps to 0.5 — a **180° rotation** that
+turned every golden-hour plate lilac. Warm Without Burning's `28` clamps the
+same way; it survived because a black-lacquer plate has almost no hue to
+rotate. Gold wants about `0.04`. *(Worth auditing every shipped row for a
+`backdropHue` above 0.5.)*
+
+Related, and the same shape: `dynamicPlus.scene` is silently ignored unless
+it is one of `BACKDROP_SCENES = ["AURORA","EMBERS","INK","SYRUP"]`. WWB's
+"LACQUER" and the first IM cut's "GATE" were both no-ops — which is *why*
+they looked clean. The moment this cut pinned a REAL scene (`AURORA`), the GL
+curtain painted behind plates that render at only 0.6 opacity and hazed every
+frame. **Omit `scene` unless you actively want the generative world showing
+through the photography.**
+
+### The giant word was drawn at a THIRD of the frame, and the cause was a constant
+
+`fitScale` estimated a word's width as `len × fontSize × advance` with
+`advance` hard-coded to 0.88 in portrait — deliberately pessimistic, because
+an average under-reads wide-letter words (ACCESS, OVERREACTION) and a word
+that thinks it fits and then clips is the failure viewers notice. Measured
+against a hidden span wearing the real `.kinetic-word` class, this face runs
+**0.53 to 0.70**: INTERNATIONAL is 0.533, the narrowest in the song. So the
+estimate over-read it by 65%, and a 0.56 target drew it at **0.34 of the
+frame**. Short words never noticed — they hit `fitScale = 1` either way,
+which is why WWB (WARM, FIRE, GONE, HERE, SCARS) looked enormous and this
+song looked broken.
+
+`measureAdvance(word)` now measures and caches per word — one layout the
+first time a word is ever staged, nothing after. With a true width the target
+finally means what it says, and it was set by measurement too: sampling every
+word's real `getBoundingClientRect` every frame across the whole 62s cut,
+
+| target | worst peak | overflow |
+| --- | --- | --- |
+| 0.76 | 103% vw | 95px — tore both ends off INTERNATIONAL |
+| 0.66 | 94% vw | 30px |
+| **0.58** | **91% vw** | **11px (one frame, one word)** |
+
+0.58 it is — ~1.7× the old drawn size with essentially no clipping. The
+entrance transform is what eats the headroom (`WordSlam` starts at
+`scale: 1.45`), and no arithmetic predicted the real peak as well as
+measuring it did. **Re-measure before raising it.**
+
+### A pan with no zoom walks the plate off its own edge
+
+Two frames came back with a hard black band across the bottom, looking like a
+broken render. `WIDE_MOVES` deliberately rest at scale 1.00–1.04 so an
+establishing shot stays wide (§17) — but they still translate up to 1.6% of
+the frame, and one preset is literally *"pure track, no zoom"*: scale 1.00,
+x ±1.6. At scale 1.00 a plate has **zero overhang** to pan into, so the pan
+exposes the bare stage. `motionShot` now lifts the scale just enough to cover
+the pan (±1.6% needs 1.032) rather than cancelling the pan.
+
+Detecting this is cheap and worth doing on every cut — sample the edges and
+look for dark runs, then classify each by eye, because a legitimately dark
+plate (the night-globe here) reads the same to the detector:
+
+```bash
+ffmpeg -i cut.mp4 -vf "fps=8,crop=1000:420:40:1400,scale=50:21" -f rawvideo -pix_fmt gray -
+```
+
+### Timing: transcribe SECTION SLICES, not the whole stem
+
+The previous pass ran Parakeet over the whole lead stem and mapped the
+official sheet onto its onsets 1:1. Whole-file ASR **under-segments dense
+chopped runs**, and every error was of that shape:
+
+- a five-hit stutter at 29.74/30.19/30.59/31.01/31.42 (dead on the 143.55 BPM
+  beat grid, 0.418s) came back as ONE token, so "Run it" sat alone at 29.76
+  and four real hits had nothing on screen;
+- "Gate closed" was heard as one token at 42.08, which is actually *closed* —
+  "Gate" at 41.74 was missed entirely, so the pair landed ~0.35s late with
+  its second word gone. Same for "Flight mode", "Still go", "Run it".
+
+Re-running the SAME model on 6–9s section slices recovered all of them
+("What What What What What" for the five-hit run — five tokens, right where
+the RMS profile says). Then every stamp was confirmed against a 20ms dB
+profile of the stem: all 50 words ≥ −36 dB over their first 300ms against a
+−42 gate, with the 300ms before each phrase reading −55 to −101 dB, which is
+what proves the gate measures onsets and not a constant floor.
+
+**Follow the AUDIO, not the lyric sheet.** Suno's sheet says "International
+×3" in two places where the take clearly sings two. The sheet is a prompt,
+not a transcript.
+
+Also: end the cut where the word ENDS. The previous pass ended at 61.277 — a
+clean beat boundary that sliced the final "Large" in half at its onset. The
+`cuts` array had already flagged the percussion gap at **[61.18, 62.46]**;
+ending at 62.40 lets LARGE hang alone in that silence and stops before the
+Break re-enters at 62.46.
+
+### Smaller things worth keeping
+
+- **All three synthesised banners can be designed out.** WIPE needs a sung-word
+  gap ≥7s (longest here 5.67s), BLOW needs an intensity rise ≥0.25 (max 0.16),
+  SHAKE needs a section ≥0.72 (max 0.70). Assert all three in the builder and
+  the cut needs no decoy moment at all — WWB's §14 workaround becomes
+  unnecessary rather than merely correct.
+- **`particleModeFor` reads one joined string and takes the FIRST regex hit.**
+  Genre "Dancehall / **Club**" was sending a golden-hour travel film to
+  *bubbles*; "golden" in the themes reaches *pollen* only once nothing earlier
+  matches. Beware `ice` and `rose` — they have no word boundaries, so
+  "vo**ice**", "p**rose**" and friends silently pick the weather.
+- **The section emotion covering the most time owns the ambient plate.**
+  "arrival" covers ~28 of 62 seconds here; it was pointed at the globe, which
+  is ALSO in the hook's rotation pool and mapped to "big"/"large", so the globe
+  kept reappearing. Point the busiest emotion at a plate in no other pool.
+- **`deck.glow` is a drop-shadow on top of `.kinetic-word`'s own beat-driven
+  halo.** At 1.0 under a word that is now twice the size, the bloom bleaches
+  the plate behind it. 0.45 here. Crispy is a hard edge, not a big halo.
+- **`motion.swapMs` below the crossfade duration means permanent dissolve.**
+  The first pass had `swapMs: 380` against a 0.42s fade — plates never landed.
+  900 lets a landmark be looked at.
+- **Owner art veto, 2026-09-15:** *"I don't like bare skin images like that."*
+  A close crop of bare legs on a dance floor is out; its three words moved to
+  plates carrying the same MOTION with people dressed — the Great Wall lantern
+  run and the Bo-Kaap jump. Keep this in mind at art-direction time, not after.
+
+### Publishing a finished cut to R2 (formalised 2026-09-15)
+
+The bucket already had two cuts on it under `cuts/<12 hex>/<basename>.mp4`, put
+there by hand. That shape is now a script:
+
+```bash
+node scripts/clip/publish-cut.mjs <file.mp4>            # fresh random id
+node scripts/clip/publish-cut.mjs <file.mp4> --id <hex> # REPLACE a cut in place
+node scripts/clip/publish-cut.mjs <file.mp4> --dry      # show the URL, upload nothing
+```
+
+The random id IS the access control — the public edge
+(`pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev`) serves anything under the
+bucket, so an unguessable prefix is the only thing keeping an unreleased cut
+unlisted. Pass `--id` when you have re-rendered a video whose link is already
+out; omit it for a new one.
+
+Verify at the EDGE, never on the PUT response (§20's lesson, same trap): the
+script HEADs the public URL and matches content-length before printing a link.
+Worth one extra `md5sum` against a full download for anything you are handing
+to the Sovereign — a length match is not a byte match.
+
+**Superseded cuts are not cleaned up automatically.** `cuts/845f2cf00362/` still
+holds the rejected first Golden Atlas pass. Deleting is the owner's call; a
+stale link that still plays the version he rejected is worse than an orphan
+object, so ASK rather than tidy.
+
+### §23 addendum — the v2 pass (same day)
+
+Four owner notes, and what each one cost.
+
+**"It repeats a lot."** A hook word that fires 15 times needs MORE than 15
+plates, not exactly 15. `pooledArt()` walks `[base, ...pool]` under a shot
+grammar that refuses two same-size shots back to back, so it SKIPS entries —
+and the section's ambient plate lands on top of the rotation whenever no
+keyword wins. The pool went 14 → 24 countries. Measure the result instead of
+eyeballing a contact sheet, which over-weights whatever plate is held longest:
+
+```js
+// in the page, over a full playthrough — every art CHANGE, not every Nth frame
+window.__art.push([audioTime, url.match(/scene-([a-z0-9]+)\.webp/)[1]]);
+```
+
+32 art changes, **16 distinct plates**, worst repeat ×4 (the `arrival` section
+plate, which owns ~28 of the 62 seconds). Also gave the other repeat-heavy
+words (`worldwide`, `yard`, `foreign`) small pools of their own.
+
+**"It's just 2 random girls on a road."** Generic stock-ish people are not
+scenery — the eye asks who they are and gets no answer. The brief that
+replaced it ("pick a famous road and put a flag on it") is the better rule
+generally: a NAMED thing reads instantly where an anonymous one doesn't.
+Route 66 under a full-size American flag, first seed, no re-roll. SDXL renders
+the US flag cleanly because it is stripes and a canton — keep flags to simple
+geometry and keep `readable letters` in the negative; the Amalfi alternate
+came back with an Italian flag rendered red-and-white and was dropped.
+
+**"Add a shake when the song gets hype."** Everything a shake does already
+existed — a CSS quake on the stage, a particle scatter, the live word reacting
+in the song's own tap language — and none of it was reachable in a render,
+because the only thing that ever set `quake` was a `devicemotion` event.
+`dynamicPlus.quakes: number[]` now fires the same payoff on the clock, guarded
+by the same "fire once as the playhead crosses" ref that `hits` uses. Three of
+them here (the Beat Drop, the chant wall, the closing chant) — verify they
+actually landed rather than trusting the array:
+
+```bash
+ffmpeg -i cut.mp4 -vf "fps=30,scale=48:85" -f rawvideo -pix_fmt gray -   # then diff consecutive frames
+```
+
+27×, 44× and 42× the median frame-to-frame motion, and 43.30s is the single
+biggest motion frame in the cut. A rattle you cannot measure is a rattle the
+viewer will not feel.
+
+**Republish over the SAME id when a link is already out.**
+`publish-cut.mjs --id <hex>` replaces the object in place, so the URL the
+Sovereign is holding upgrades itself instead of becoming the stale one. Only
+mint a new id for a genuinely new cut.
+
+## 24 · Hajimemashite v4 — why "too many selfies" was never an art-direction problem (2026-09-16)
+
+Third cut of this song. v2 was rejected as "a powerpoint presentation of kizuna
+selfies"; v3 fixed the geometry (§17 was born there) and was rejected for the
+same thing in different words: *"don't make every picture kizuna... just
+sprinkle her and Tyler in."* Window 97.60 -> 157.55 (59.95s), unchanged. PURE
+DYNAMIC. VERIFY median 13.0ms / p95 20.0ms. 22 plates, 6 with a person — v3 had
+12 of 17.
+
+**The cause was the TOOL, not the prompts.** Every v3 plate went through Flux
+Kontext seeded from Kizuna's photo, and Kontext is an instruction-EDITOR: it
+preserves the subject of the source image by design. Ask it for an empty street
+and you get a woman on an empty street. v3 had already tried writing wider
+prompts and it could not work.
+
+So split the set by whether a person is in the frame at all:
+
+| | tool | cost | count |
+| --- | --- | --- | --- |
+| plates WITH a person | Flux Kontext (likeness) | paid API | 6 |
+| plates with NO person | local SDXL, text-to-image | free, ~17s/pair | 16 |
+
+"Sprinkle her in" therefore costs LESS than v3 did, not more. If a set is
+coming back monotonous in its subject, check what is seeding it before
+rewriting a single prompt.
+
+**Structure the reveal and let the plate count enforce it.** v3's own header
+said the face was "earned by fifteen shots of holding back" and then mapped her
+to nearly every keyword anyway. Here she is a distant silhouette at her entrance
+(139.35), a figure at her name (146.25), and the face lands exactly once, at
+142.70 on "remember the face". Tyler owns both LevelReady calls as a PERSON —
+v3 mapped a record-label CARD to "the house was already warm", so the warmest
+line in the song played a logo.
+
+**A lone silhouette plate does the work of three portraits.** `crowd-0` (one
+anonymous figure walking away on a wet street) carries "watch how I'm walking",
+"I didn't walk in alone" AND the ambient bed, with no likeness and no API call.
+
+### Two colour traps, both of which made words illegible
+
+**`palette[0]` is not decoration — it is the melody's base hue.**
+`themeHue = hexHue(palette[0])`, and the sung note bends the word's colour off
+it. This row led with `#0A0805`, a near-black whose hue is noise, so the entire
+melody-colour system was bending off nothing. Lead the palette with the song's
+actual colour.
+
+**`pitchHue` swings +/-80 degrees, which is most of the wheel.** Lovely on
+neutral art; on a MONOCHROME grade it is a legibility bug — gold-on-near-black
+rendered some words cold blue-grey and they vanished into the plate. New knob
+`deck.pitchSpread` (0..1, absent = 1 = the historic behaviour) scales the bend;
+0.3 here keeps the melody nuance inside the song's own colour.
+
+Related: `deck.glow` is not a constant across cuts. International Mode's bright
+golden-hour plates needed 0.45 or the halo bleached them (§23); these near-black
+plates needed **0.95** or the word had nothing to sit on. Judge it against the
+art, not against the last cut.
+
+### Housekeeping this cut paid for
+
+- **`~/.bfl_key` is gone.** The Kontext credential lives at
+  `~/.config/ossicle/aimlapi.env` as `AIMLAPI_KEY`, per the security law's
+  `~/.config/<system>/env` pattern. The 2026-08 portrait scripts still point at
+  the old path and will exit on it.
+- **PIL is not in system python3** on this box any more (same disappearance as
+  the librosa/whisper venvs). `~/whisper-venv/bin/python` has it now — run the
+  Kontext scripts with that interpreter.
+- **Kontext returns 752x1392, not 832x1472.** Every script must `cover()` the
+  result to native portrait rather than trust the API; §17 is not negotiable.
+- **Don't re-align a hand-aligned word list with a rise detector.** An attempt
+  here flagged 77 of 134 words as "off", with the offsets piling up at the edge
+  of the detector's own +/-0.30s search window — the giveaway that it was
+  locking onto neighbouring syllables in continuous singing, not finding real
+  errors. Hand alignment won. Parakeet cannot arbitrate either: the ad-libs are
+  Japanese and it is English + European only.
+- A new track id (`hajimemashite-v4`) rather than overwriting the row, so the
+  v3 cut keeps playing off `planets/hajimemashite/`.
+
+## 25 · Drink Drink — THE POUR, and effects that carry their own colour (2026-09-16)
+
+Re-cut of the 2026-07-24 original (30s, both aspects, pre-dating the one-video
+law). Seventeenth voice: **THE LAST POUR** — near-black room, one warm amber
+source, the liquid the only bright thing and always backlit. 190.00 -> 250.00
+(60.0s), pure dynamic, VERIFY median 13.0ms / p95 20.0ms. 16 plates, 8 of them
+alcohol being poured.
+
+### The stutter pileup is not a bug — it was just never art-directed
+
+§23 added `deck.giant.stutter: false` to switch the z-[7] word pileup OFF,
+because on International Mode it buried the frame. That was the right call
+there and the wrong lesson to generalise: the owner asked for exactly this
+feature here — *"the song repeats the word drink a lot, come up with a visually
+pleasing technique... a way to stack the words"* — plus *"a word technique where
+it looks like words are flowing from a bottle."* Those are one idea.
+
+**THE POUR** (`deck.giant.stutterLayout: "pour"`, plus `stutterEmit: [x, y]`):
+
+| | scatter (historic) | pour |
+| --- | --- | --- |
+| position | jittered 6x5 grid, shuffled | one column, filling bottom-up |
+| rotation | random +/-17 deg | +/-1.4 deg |
+| scale | random 0.85-2.0 | constant |
+| entry | grows in place | flies in from `stutterEmit` |
+| colour | alternates primary/secondary | single (theme primary) |
+
+Point `stutterEmit` at the bottle's mouth in the plate and the repeats look
+poured out of it and stacked like a rising level. The randomness was the whole
+problem: the 2026-07 cut was 26 chips at random angles and sizes, which is
+confetti, not a hook.
+
+### Not every registry effect is colour-neutral. Check before you trust the name
+
+`drip` ("glossy droplets swell off the letters") sounds perfect for a drink
+song. It hardcodes a lilac/pink gradient — `#e9d8ff / #ffd9ec / #cfa8ff` with
+purple text-shadows — built for a syrup-purple grade. On the hook word, which
+is 39 of 68 words here, it turned an amber whiskey cut lavender. `liquid` is
+the same trap with a hardcoded BLUE gradient.
+
+`pulse` draws its glow from `var(--theme-accent)`, so it wears whatever colour
+the song is. **Grep an effect's implementation for hex literals before wiring it
+to a word that repeats.**
+
+### deriveTheme's neighbours are further away than they look
+
+`deriveTheme(seed)` returns `secondary = hue + 45` and `accent = hue - 35`. An
+amber seed (hue 38) therefore produces a yellow-GREEN secondary and a vivid PINK
+accent — and an unpitched giant word falls back to that accent. Two consequences
+worth remembering:
+  * the pour stacks single-colour deliberately, because alternating
+    primary/secondary put a yellow-green chip between every amber one;
+  * pushing the seed to hue ~58 keeps the accent in warm orange.
+
+### `particleModeFor` reads the TITLE, which a cut cannot edit
+
+"Drink Drink [Don't Save Me]" matches the champagne/bubbles rule *on its own
+name*, so a whiskey insomnia song fizzed like prosecco. No amount of careful
+mood/theme wording fixes that. New knob **`deck.weather`** pins the particle
+mode outright; `"dust"` here. Any song whose title contains fire, ice, rain,
+drink, party, rose… has the same problem.
+
+### Timing a song whose hook ASR cannot hear
+
+No Suno stems existed on disk and the stored alignment had collapsed — eleven
+words on the identical stamp 243.73. The owner supplied stems mid-session (via
+a Drive link, pulled with `curl` on the `uc?export=download&id=` form — the MCP
+Drive connector returns base64 into context and cannot carry 20MB).
+
+Even on the isolated vocal, **Parakeet hears none of the chant**: the hook is a
+pitched, warped male chant and it transcribes as "Tem, trem, trem, trem". So the
+cut is built from two sources — ASR section-slices for the sung lines, and
+ONSET DETECTION for every "Drink". The song is 123.05 BPM and the chant sits on
+the grid: 31 of 74 detected gaps in the window are exactly one beat, which is
+what makes the detection trustworthy. Rule used: an onset becomes a "Drink"
+unless a sung word already claims that moment (+/-0.34s).
+
+**A first stems delivery arrived 1.03 seconds long** — all seven members
+present, integrity clean, just empty. Decode a stem before trusting it; a valid
+zip proves nothing about what is inside.
+
+## 26 · Summer Drip v2 — the Hamptons re-cut, and two effects built for one song (2026-09-16)
+
+Eighteenth voice: **THE HAMPTONS SESSIONS** — photoreal editorial, deep golden
+hour with the sun on the water, weathered deck, white umbrellas, string lights,
+a genuinely multiracial crowd in resort wear. 0.00 -> 60.00 from the very top,
+pure dynamic, VERIFY median 11.0ms / p95 19.0ms.
+
+The Sovereign replaced the album art and asked the cut to follow it: *"a more
+realistic look... a place like the Hamptons with a diverse crowd of many races,"*
+start at 0:00 because *"the intro is epic, HEAT TURNED UP"*, and *"feel free to
+create any new effects specifically for this song."*
+
+### Diversity has to be the FIRST clause, not a clause
+
+The first 36 plates named "a diverse crowd of many ethnicities" at the END of a
+long LOOK string and came back almost entirely white. SDXL's prior for "Hamptons
+beach club" is affluent and coastal, and a trailing adjective does not move it.
+Naming the groups concretely — *"Black, Latina, South Asian and East Asian people
+together with white friends, several dark skin tones clearly visible in the
+foreground"* — as the opening clause fixed it in one pass. **Where an
+instruction sits in the prompt is part of the instruction.**
+
+Same pass, same lesson about grade: "late golden hour" alone produces high-key
+pale resort photography. The cover is a deep amber sunset with the sun ON the
+water. Stating the sun's POSITION and the warmth outright ("deep golden hour
+with the sun sitting low and orange right on the ocean horizon, rich warm
+saturated colour, deep warm shadows") got there.
+
+### Contrast is judged against the art, in BOTH directions
+
+§24 raised glow to 0.95 because Hajimemashite's plates were near-black. Summer
+Drip is the exact inverse: bright cream-and-gold plates, where gold text
+disappears and MORE glow only makes mud. What worked:
+
+  * a **saturated burnt orange** seed (#C2500F) instead of amber — `deriveTheme`
+    clamps lightness to 0.5-0.62, so a genuinely dark seed cannot survive, but a
+    saturated warm red-orange still reads on cream;
+  * glow DOWN to 0.45, vignette UP to 0.6 to pull the frame edges down and give
+    the type somewhere to sit.
+
+**There is no house glow value.** Look at the plates first.
+
+### Two new effects, and the rule they were built under
+
+Both are colour-neutral — §25's finding that `drip` hardcodes lilac and
+`liquid` hardcodes blue is now a design constraint for anything new:
+
+  * **`heathaze`** — two blurred ghosts drift in opposite directions behind a
+    CRISP original, so the glyph stays perfectly readable while its edges
+    shimmer. Air over hot boards. Draws from currentColor and
+    `var(--theme-accent)`.
+  * **`screw`** — the word drags downward leaving a short smear above it: a
+    tape slowing. For chopped-and-screwed material.
+
+And a third pile layout, **`trail`**, joining `scatter` and `pour`: the repeats
+smear diagonally, each smaller than the last, each entering from where the
+previous one landed. One chip per repeat, not three — a drag is a line, not a
+pile. Staged the nine "every"s at 1.68-5.68 and the five "mean"s at 13.28.
+
+### ASR on the mix was enough here — but it cannot be trusted on TEXT
+
+No stems exist for this song and none were needed: the lead sits forward and
+Parakeet caught every ad-lib chop on the full mix. What it could not do is the
+words. It mis-heard the two most important lines in the song —
+
+    "He turned up"              ->  "HEAT turned up"
+    "I feel the sun dress glow" ->  "I feel this SUNDRESS glow"
+
+— plus "My mouth's so sweet" for "SMILE so sweet", "high class gain" for
+"high-class GAME", "Every weapon's so proud" for "every WHISPER so proud", and
+"Long lace off hands" for "Long LEGS, SOFT hands". **ASR supplies the clock;
+official-lyrics.txt supplies the words.** Never ship ASR's spelling.
+
+### The §12a guard earned its keep
+
+`assert len(prompt + LOOK) < 900` stopped the batch on the `sundress` prompt at
+913 characters. Without it that plate returns SOLID BLACK at the wrong
+resolution with no error (§12a). Keep the assert in every art script.
+
+### §26 addendum — repetition is a DISTRIBUTION problem, so measure it
+
+The Sovereign on the first Summer Drip v2: *"I really don't like this picture
+and you're reusing it a lot."* Both halves were true and the second was
+measurable, in seconds, without rendering anything:
+
+```python
+# count word-OCCURRENCES per plate: walk the word list, resolve each through
+# assets.keywords + the gallery pool exactly as pooledArt() does, and tally.
+```
+
+18 plates carrying 81 word-hits, and the top four carried 35 of them — `queen`
+10, `sundress` 9, `lens` 8, `dancefloor` 8, the disliked `smile` 6. A contact
+sheet hides this, because it samples time evenly and a plate held once for four
+seconds looks the same as a plate that came back four times.
+
+The fix was not a re-roll of one image. It was **fourteen more plates** (18 ->
+30) and a re-spread of the keyword map: worst repeat 10 -> 6, every plate used,
+and `smile` deleted from R2 rather than replaced — a rejected picture should
+stop existing, not move.
+
+Two things worth carrying:
+
+* **Run the distribution count BEFORE rendering.** It is cheap, and it is the
+  only way to see the difference between "a plate the eye keeps meeting" and "a
+  plate that is simply on screen a while".
+* **A close group portrait is the worst thing to repeat.** Faces are what the
+  eye returns to, so the same four people smiling is noticed at 3 repeats where
+  a deck or a horizon would pass at 6. The variety pass was therefore
+  deliberately environmental — water, objects, distance, profiles — rather than
+  more group shots.

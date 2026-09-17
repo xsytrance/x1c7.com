@@ -21,7 +21,7 @@ import { customScenes } from "@/lib/engine/customScenes";
 import { looksStore } from "@/lib/engine/looks";
 import { stemMixStore } from "@/lib/stemMix";
 
-export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionIntensity = 0.35, hue }: {
+export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionIntensity = 0.35, hue, ghosts }: {
   /** Stable per-song seed (track id) — picks the AUTO scene + noise offsets. */
   seed: string;
   /** The song's palette hexes (planet analysis or track color). */
@@ -31,6 +31,12 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
   /** Pin the backdrop hue lean (-0.5..0.5 turns) instead of rolling one per
    * section. Set by a song via dynamicPlus.deck.backdropHue. */
   hue?: number;
+  /** Pin how strongly dying lyrics dissolve into the field, 0..1 (0 = off).
+   * Set by a song via dynamicPlus.deck.ghosts. The default 0.5 is lovely on a
+   * song with a varied lyric and ruinous on a CHANT: fifteen "INTERNATIONAL"s
+   * stack into the ghost buffer faster than ghostFade clears them and the
+   * frame becomes a wall of overlapping giant text. */
+  ghosts?: number;
   /** The current section's emotional intensity 0..1. */
   sectionIntensity?: number;
 }) {
@@ -142,6 +148,15 @@ export function KineticBackdrop({ seed, palette, sectionEmotion = null, sectionI
     if (hue === undefined) return;
     if (P.getStr("lfo1.target") === "backdrop.hueShift") P.set("lfo1.enabled", false, "code");
   }, [hue]);
+
+  // A pinned ghost level, and the deck's own default handed back on unmount so
+  // the next song on the stage is not stuck with this one's choice.
+  useEffect(() => {
+    if (ghosts === undefined) return;
+    const prev = P.get("backdrop.ghosts");
+    P.set("backdrop.ghosts", ghosts, "code");
+    return () => { P.set("backdrop.ghosts", prev, "code"); };
+  }, [ghosts]);
 
   useEffect(() => {
     if (!sectionEmotion) return;

@@ -145,6 +145,13 @@ export interface PlanetDynamicPlus {
    * should actually hit — a white bloom on the beat rather than another
    * crossfade. Fires once when the playhead crosses `t`. */
   hits?: Array<{ t: number; color?: string; dur?: number; peak?: number }>;
+  /** Timestamps where the STAGE RATTLES — the drop landing in the frame.
+   * Fires the same payoff a real phone shake does (a CSS quake on the stage,
+   * a particle scatter, and the live word reacting in the song's own tap
+   * language), which is otherwise unreachable in a rendered cut because only
+   * a `devicemotion` event ever triggered it. Use them on the few genuine
+   * hype moments — a beat drop, a chant wall — not on every bar. */
+  quakes?: number[];
   /** Windows where the cutting STOPS and one frame is allowed to breathe.
    * The closing belt is the payoff of the whole cut; churning art through it
    * throws the landing away. */
@@ -191,6 +198,26 @@ export interface PlanetDynamicPlus {
      * section rolls its own from hash(song, emotion), which is lovely on a
      * varied record and wrong on a song that is about ONE colour. */
     backdropHue?: number;
+    /** Pin how strongly dying lyrics dissolve into the generative backdrop,
+     * 0..1 (0 = off). Absent = the engine's own 0.5. A chant whose hook word
+     * repeats a dozen times stacks ghosts faster than they fade and the frame
+     * turns into a wall of overlapping giant text — those songs want 0. */
+    ghosts?: number;
+    /** the blurred giant word that swells under the stage with the backing
+     * vocals (the "choir" layer). Default true; false for songs whose words
+     * are too long to fit it, where it only ever reads as a smear. */
+    choir?: boolean;
+    /** how far the sung NOTE may pull a word's hue off the theme, 0..1.
+     * 1 (absent) = the historic +/-80 degrees. A song with a monochrome grade
+     * wants a small number: at full spread a gold-on-black cut renders some
+     * words cold blue-grey and they vanish into the plate. */
+    pitchSpread?: number;
+    /** PIN the weather instead of letting particleModeFor infer it from the
+     * song's own words. That inference reads the TITLE too, which a cut cannot
+     * edit — a song called "Drink Drink" matches the champagne/bubbles rule on
+     * its name alone. One of: embers rain snow dust bubbles sparks ash petals
+     * pollen fireflies confetti leaves stars. */
+    weather?: string;
   };
 }
 
@@ -211,6 +238,21 @@ export interface DeckGiant {
   /** clear the pile whenever the mode conductor switches, so each dynamic
    * window is a self-contained moment. Default true when `pile` is set. */
   clearOnSwitch?: boolean;
+  /** the SEPARATE stutter pileup — the repeated word stacking up across the
+   * whole frame on a >=3-repeat run. Nothing to do with `pile` above (that is
+   * the giant word's own residue); this is its own layer and its own feature.
+   * Default true. A chant with a long hook word wants false. */
+  stutter?: boolean;
+  /** how that pileup ARRANGES itself. "scatter" (absent) is the historic
+   * jittered grid with random tilt and scale — confetti, and on a long word it
+   * is unreadable chaos. "pour" stacks the repeats bottom-up at constant size
+   * with no rotation, a rising level rather than a mess, and flies each chip in
+   * from `stutterEmit`. A song whose hook IS the repeated word wants "pour". */
+  stutterLayout?: "scatter" | "pour" | "trail";
+  /** where poured chips fly in FROM, as [x, y] in percent of the frame. Put it
+   * on the bottle's neck in the artwork and the words look poured out of it.
+   * Default [50, 8] — top centre. */
+  stutterEmit?: [number, number];
 }
 
 /** MOTION SHOTS — turns the backdrop from a slideshow into cut footage. The

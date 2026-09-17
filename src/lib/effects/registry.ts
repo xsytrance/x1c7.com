@@ -59,7 +59,14 @@ export type TextEffect =
   // greasy handprints, the fogged breath, the flashbulbs, and the moment the
   // surface finally goes. Built for Juan.
   | "tap" | "fracture" | "vitrine" | "smudge" | "refract" | "fogbreath"
-  | "flashbulb" | "press" | "placard" | "mirror" | "bars" | "overreact";
+  | "flashbulb" | "press" | "placard" | "mirror" | "bars" | "overreact"
+  // Tranche 9 (SUMMER DRIP v2, the Hamptons re-cut). The song opens on "Heat
+  // turned up" and is chopped-and-screwed throughout, so it gets the two things
+  // that describes: air shimmering over hot boards, and a tape dragging as it
+  // slows. Both are deliberately COLOUR-NEUTRAL — §25 caught `drip` and
+  // `liquid` hardcoding their own palettes and fighting every song that is not
+  // lilac or blue — so these draw from currentColor and var(--theme-accent).
+  | "heathaze" | "screw";
 
 /** Every TextEffect id, in a stable display order — the single list the FX panel
  *  and vibe builder render (so their pickers can never drift from the union). */
@@ -74,6 +81,7 @@ export const ALL_TEXT_EFFECTS: TextEffect[] = [
   "draft", "wake",
   "tap", "fracture", "vitrine", "smudge", "refract", "fogbreath",
   "flashbulb", "press", "placard", "mirror", "bars", "overreact",
+  "heathaze", "screw",
 ];
 
 export interface EffectLego {
@@ -168,6 +176,10 @@ const TEXTBOUND: EffectLego[] = [
   { id: "text.mirror", class: "textbound", mode: "mirror", blurb: "A flipped ghost of the word rises beneath it — you, looking back at yourself.", tags: ["mirror", "reflection", "stare", "stares", "watch", "look", "eyes", "yourself"] },
   { id: "text.bars", class: "textbound", mode: "bars", blurb: "Cage-bar shadows slide across the word.", tags: ["cage", "trap", "bars", "contained", "keeping", "locked", "captive", "prison"] },
   { id: "text.overreact", class: "textbound", mode: "overreact", blurb: "Red emergency wash and a violent judder — the crowd loses it.", tags: ["react", "reaction", "overreaction", "scream", "panic", "monster", "freak", "alarm"] },
+  // Tranche 9 — built for Summer Drip (§26), and colour-neutral by design:
+  // both draw from currentColor / var(--theme-accent) so they wear the song.
+  { id: "text.heathaze", class: "textbound", mode: "heathaze", blurb: "The word ripples in rising heat like air over hot asphalt.", tags: ["heat", "hot", "sun", "summer", "burn", "flame", "shine", "glow", "blaze", "desert", "sweat"] },
+  { id: "text.screw", class: "textbound", mode: "screw", blurb: "The word drags and smears downward like a screwed tape slowing.", tags: ["slow", "screwed", "chopped", "drag", "syrup", "down", "sink", "lean", "drip"] },
   { id: "text.burn", class: "textbound", mode: "burn", blurb: "The word chars and flakes to ash.", tags: ["fire", "burn", "rage", "anger", "desire"] },
   { id: "text.shatter", class: "textbound", mode: "shatter", blurb: "The word cracks and flies apart.", tags: ["break", "shatter", "glass", "heartbreak", "goodbye", "shatter"] },
   { id: "text.dissolve", class: "textbound", mode: "dissolve", blurb: "The word blurs and fades to nothing.", tags: ["fade", "forget", "ghost", "memory", "gone"] },

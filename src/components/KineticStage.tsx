@@ -204,6 +204,43 @@ function gradeTo(section: PlanetSection) {
   root.setProperty("--theme-bg", th.bg);
 }
 
+// ── Real glyph width, once per word ─────────────────────────────────────────
+// The giant-word fit clamp needs to know how wide a word will actually be
+// BEFORE React lays it out. Measuring beats assuming: a hidden span carrying
+// the same .kinetic-word class inherits the display face, weight 900 and the
+// -0.03em tracking, so its width at a known size gives the exact advance per
+// character. Cached forever — a song has a few dozen distinct words.
+const ADVANCE_CACHE = new Map<string, number>();
+const ADVANCE_FALLBACK = 0.68;
+function measureAdvance(word: string): number {
+  const key = (word ?? "").toUpperCase();
+  if (!key.length) return ADVANCE_FALLBACK;
+  const hit = ADVANCE_CACHE.get(key);
+  if (hit !== undefined) return hit;
+  if (typeof document === "undefined") return ADVANCE_FALLBACK;
+  let adv = ADVANCE_FALLBACK;
+  try {
+    const probe = document.createElement("span");
+    probe.className = "kinetic-word";
+    probe.setAttribute("aria-hidden", "true");
+    probe.style.cssText =
+      "position:absolute;left:-99999px;top:0;visibility:hidden;white-space:nowrap;" +
+      "font-size:100px;filter:none;will-change:auto;pointer-events:none";
+    probe.textContent = key;
+    document.body.appendChild(probe);
+    const w = probe.getBoundingClientRect().width;
+    probe.remove();
+    // A zero width means the face has not loaded yet — don't poison the cache
+    // with a bad number that every later frame would then reuse.
+    if (w > 0) adv = w / 100 / key.length;
+    else return ADVANCE_FALLBACK;
+  } catch {
+    return ADVANCE_FALLBACK;
+  }
+  ADVANCE_CACHE.set(key, adv);
+  return adv;
+}
+
 // ── The single word-effect render map ───────────────────────────────────────
 // Every rendered word treatment resolves through here, keyed by its registry
 // TextEffect id. One map = one source of truth: a per-word override or a vibe/
@@ -259,6 +296,9 @@ const WORD_FX: Record<TextEffect, (word: string, airtime: number) => ReactNode> 
   mirror: (w, a) => <WordMirror word={w} airtime={a} />,
   bars: (w, a) => <WordBars word={w} airtime={a} />,
   overreact: (w, a) => <WordOverreact word={w} airtime={a} />,
+  // Tranche 9 — Summer Drip (§26).
+  heathaze: (w, a) => <WordHeatHaze word={w} airtime={a} />,
+  screw: (w, a) => <WordScrew word={w} airtime={a} />,
 };
 
 // MOTION SHOTS — the camera moves a director can put under a 1–2s scene. Each
@@ -329,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -486,8 +526,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // ("push-push-push", "me me me", "on-on-on"), the engine catches the run so
   // the stage can pile the word up until it fills the screen (swipe to clear).
   // A run = >=3 consecutive same tokens, each within 1.4s of the last.
+  // THE POUR's two knobs. Read off the deck prop directly because stutterRuns
+  // is memoised well above where giantCfg is derived.
+  const pileLayout = deck?.giant?.stutterLayout ?? "scatter";
+  const pourEmit: [number, number] = deck?.giant?.stutterEmit ?? [50, 8];
   const stutterRuns = useMemo(() => {
-    const runs: { id: number; word: string; times: number[]; start: number; end: number; spots: { x: number; y: number; rot: number; s: number }[] }[] = [];
+    const runs: { id: number; word: string; times: number[]; start: number; end: number; spots: { x: number; y: number; rot: number; s: number; ex: number; ey: number }[] }[] = [];
     let i = 0;
     while (i < words.length) {
       const w = clean(words[i].w).toLowerCase();
@@ -495,28 +539,71 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       while (j < words.length && clean(words[j].w).toLowerCase() === w && words[j].t - words[j - 1].t <= 1.4) j++;
       const times = words.slice(i, j).map((x) => x.t);
       if (w.length >= 1 && times.length >= 3) {
-        // Precompute scattered screen spots (a jittered grid, shuffled) so the
-        // pile fills evenly. Deterministic per run — no per-frame randomness.
+        // Precompute the screen spots for this run. Deterministic — no
+        // per-frame randomness — and laid out by the director's chosen shape.
         const N = Math.min(26, times.length * 3 + 4);
-        const cols = 6, spots: { x: number; y: number; rot: number; s: number }[] = [];
-        for (let k = 0; k < N; k++) {
-          const seed = ((i + 1) * 2654435761 + k * 40503) >>> 0;
-          const cell = (seed >>> 3) % (cols * 5);
-          const cx = (cell % cols) / (cols - 1); // 0..1
-          const cy = Math.floor(cell / cols) / 4; // 0..1
-          spots.push({
-            x: 8 + cx * 84 + (((seed >>> 7) % 100) / 100 - 0.5) * 12,
-            y: 14 + cy * 66 + (((seed >>> 11) % 100) / 100 - 0.5) * 12,
-            rot: (((seed >>> 13) % 34) - 17),
-            s: 0.85 + ((seed >>> 17) % 100) / 100 * 1.15,
-          });
+        const spots: { x: number; y: number; rot: number; s: number; ex: number; ey: number }[] = [];
+        if (pileLayout === "trail") {
+          // ── THE TRAIL ─────────────────────────────────────────────────
+          // Chopped and screwed: a repeated word is a TAPE DRAGGING, so the
+          // repeats smear diagonally across the frame, each one smaller and
+          // further along than the last, and each flies in from where the
+          // PREVIOUS one landed. One chip per repeat (not three — see the
+          // emit multiplier below), because a drag is a line, not a pile.
+          const n = Math.max(3, N);
+          for (let k = 0; k < N; k++) {
+            const f = k / Math.max(1, n - 1);
+            const x = 24 + f * 48;
+            const y = 32 + f * 34;
+            const prev = k === 0 ? [x - 10, y - 8] : [24 + ((k - 1) / Math.max(1, n - 1)) * 48,
+                                                      32 + ((k - 1) / Math.max(1, n - 1)) * 34];
+            spots.push({ x, y, rot: f * 7, s: 1.18 - f * 0.62, ex: prev[0], ey: prev[1] });
+          }
+        } else if (pileLayout === "pour") {
+          // ── THE POUR ──────────────────────────────────────────────────
+          // A repeated word is a LEVEL RISING, not confetti. Each hit lands
+          // one step above the last, filling from the floor of the frame
+          // upward, and every chip flies in from a single emit point — put
+          // that point on the bottle's neck in the plate and the words look
+          // poured. Constant size, no rotation: the scatter layout's random
+          // ±17° tilt and 0.85–2.0 scale is exactly what made the 2026-07
+          // drink-drink cut read as chaos.
+          const [ex, ey] = pourEmit;
+          const floorY = 86, ceilY = 20;
+          const step = (floorY - ceilY) / Math.max(7, N - 1);
+          for (let k = 0; k < N; k++) {
+            const seed = ((i + 1) * 2654435761 + k * 40503) >>> 0;
+            spots.push({
+              x: 50 + (k % 2 ? 3.2 : -3.2) + (((seed >>> 7) % 100) / 100 - 0.5) * 3,
+              y: floorY - k * step,
+              rot: (k % 2 ? 1.4 : -1.4),
+              s: 1,
+              ex, ey,
+            });
+          }
+        } else {
+          const cols = 6;
+          for (let k = 0; k < N; k++) {
+            const seed = ((i + 1) * 2654435761 + k * 40503) >>> 0;
+            const cell = (seed >>> 3) % (cols * 5);
+            const cx = (cell % cols) / (cols - 1); // 0..1
+            const cy = Math.floor(cell / cols) / 4; // 0..1
+            const x = 8 + cx * 84 + (((seed >>> 7) % 100) / 100 - 0.5) * 12;
+            const y = 14 + cy * 66 + (((seed >>> 11) % 100) / 100 - 0.5) * 12;
+            spots.push({
+              x, y,
+              rot: (((seed >>> 13) % 34) - 17),
+              s: 0.85 + ((seed >>> 17) % 100) / 100 * 1.15,
+              ex: x, ey: y,   // scatter chips grow in place, as they always did
+            });
+          }
         }
         runs.push({ id: i, word: clean(words[i].w), times, start: times[0], end: times[times.length - 1], spots });
       }
       i = j > i + 1 ? j : i + 1;
     }
     return runs;
-  }, [words]);
+  }, [words, pileLayout, pourEmit]);
 
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
@@ -603,6 +690,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // master rAF tick closes over them. 0 = SOLO: the live word is still huge, but
   // nothing is left behind, so each dynamic window is a clean single statement.
   const giantCfg = deck?.giant;
+  // Two more full-screen TEXT layers that a directed cut may not want, neither
+  // of which `giant.pile` reaches — both default ON, exactly as before.
+  //   stutter: the z-[7] word PILEUP, stacked by a >=3-repeat run. Wonderful on
+  //     "push-push-push"; on a chant whose hook is a 13-letter word it stacks
+  //     nine clipped copies over the whole frame and buries the plate.
+  //   choir:   the z-[2] blurred giant word under the stage, sized 24vw — a
+  //     long word runs off both edges and reads as a smear, not a texture.
+  const stutterPile = giantCfg?.stutter ?? true;
+  const choirWord = deck?.choir ?? true;
   const pileMaxRef = useRef(3);
   const pileLifeRef = useRef(8000);
   pileMaxRef.current = Math.max(0, Math.min(3, giantCfg?.pile ?? 3));
@@ -748,12 +844,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const particles = useRef<ParticleHandle>(null);
   const particleMode = useMemo(() => {
     if (forceParticle) return forceParticle;
+    // A song can PIN its weather. particleModeFor takes the first regex that
+    // hits across mood + themes + keywords + genre + TITLE, and the title is
+    // not something a cut can edit — "Drink Drink [Don't Save Me]" matches the
+    // champagne/bubbles rule on its own name and lands a whiskey insomnia song
+    // in fizzing party bubbles. Pinning is the only way out of that.
+    if (deck?.weather) return deck.weather as ParticleMode;
     const a = track.planet?.analysis;
     return particleModeFor([
       a?.overallMood, ...(a?.themes ?? []), ...(a?.keywords?.map((k) => k.word) ?? []),
       track.mood, track.genre, track.title,
     ].filter(Boolean).join(" "));
-  }, [track, forceParticle]);
+  }, [track, forceParticle, deck?.weather]);
   const palette = useMemo(() => {
     const pal = track.planet?.analysis?.palette;
     return Array.isArray(pal) && pal.length ? pal : [track.color];
@@ -929,7 +1031,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
   // ── WORD PILEUP ── repeated-word chips that stack up and fill the screen on
   // a stutter run, cleared by swiping a finger across them.
-  const [pile, setPile] = useState<{ id: number; word: string; x: number; y: number; rot: number; s: number; fx: number; fy: number; fr: number }[]>([]);
+  const [pile, setPile] = useState<{ id: number; word: string; x: number; y: number; rot: number; s: number; fx: number; fy: number; fr: number; ex: number; ey: number }[]>([]);
   const pileId = useRef(0);
   const pileRun = useRef(-1);   // id of the run currently piling
   const pileEmit = useRef(0);   // chips emitted so far this run
@@ -1142,6 +1244,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const holds = track.planet?.dynamicPlus?.holds;
   const [hitFlash, setHitFlash] = useState(0);
   const firedHit = useRef<number>(-1);
+  // DIRECTED QUAKES — the stage rattle, on the clock instead of on the phone.
+  // Everything a shake does already exists (CSS rattle on the stage, a particle
+  // quake, the live word reacting in the song's own tap language); it was just
+  // unreachable in a render, because the only thing that ever set `quake` was a
+  // real `devicemotion` event. dynamicPlus.quakes puts the same payoff on the
+  // timeline, so a drop can hit the frame the way it hits the room.
+  // Same crossing guard as `hits`: fire once as the playhead passes, never on
+  // a re-render, and never retroactively if we seek past one.
+  const quakes = pass >= 6 ? track.planet?.dynamicPlus?.quakes : undefined;
+  const firedQuake = useRef<number>(-1);
   // HOLD — while true the art block stops swapping and the frame breathes.
   const holdRef = useRef(false);
   const activeOneShot = soloShot ? oneShots?.find((o) => o.id === soloShot.id) ?? null : null;
@@ -1290,6 +1402,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           }
         }
       }
+      if (quakes?.length) {
+        for (let k = 0; k < quakes.length; k++) {
+          if (k > firedQuake.current && t >= quakes[k] && t - quakes[k] < 0.5) {
+            firedQuake.current = k; setQuake((q) => q + 1); break;
+          }
+        }
+      }
       holdRef.current = !!holds?.some((h) => t >= h.start && t < h.end);
       let i = activeWordIndex(words, t);
       // Dwell cap: during a long instrumental pause the last sung word (which
@@ -1421,13 +1540,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const run = stutterRuns.find((r) => t >= r.start - 0.06 && t <= r.end + 2.6);
         if (run) {
           if (pileRun.current !== run.id) { if (pileRun.current !== -1) setPile([]); pileRun.current = run.id; pileEmit.current = 0; }
-          const target = Math.min(run.spots.length, run.times.filter((tt) => tt <= t + 0.03).length * 3);
+          // scatter/pour fill FAST (three chips a repeat) because they are
+          // piles; a trail is a line of one chip per repeat, or the drag
+          // outruns the vocal.
+          const per = pileLayout === "trail" ? 1 : 3;
+          const target = Math.min(run.spots.length, run.times.filter((tt) => tt <= t + 0.03).length * per);
           if (pileEmit.current < target) {
             const add: (typeof pile) = [];
             while (pileEmit.current < target) {
               const sp = run.spots[pileEmit.current++];
               // fling vector points outward from centre, so swiped/cleared chips scatter off-screen.
-              add.push({ id: pileId.current++, word: run.word, x: sp.x, y: sp.y, rot: sp.rot, s: sp.s, fx: (sp.x - 50) * 14, fy: (sp.y - 45) * 14, fr: sp.rot * 2 });
+              // ex/ey are the chip's ENTRY offset in px from its resting spot —
+              // the vector back to the emit point, so a poured chip flies in
+              // from the bottle instead of scaling up where it lands.
+              const vw = typeof window !== "undefined" ? window.innerWidth : 1080;
+              const vh = typeof window !== "undefined" ? window.innerHeight : 1920;
+              add.push({ id: pileId.current++, word: run.word, x: sp.x, y: sp.y, rot: sp.rot, s: sp.s,
+                         fx: (sp.x - 50) * 14, fy: (sp.y - 45) * 14, fr: sp.rot * 2,
+                         ex: ((sp.ex - sp.x) / 100) * vw, ey: ((sp.ey - sp.y) / 100) * vh });
             }
             setPile((old) => (old.length >= 34 ? old : [...old, ...add].slice(-34)));
           }
@@ -1655,7 +1785,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns, rollAt, oneShots, hits, holds]);
+  }, [words, sections, art, sectionArt, getCurrentTime, pass, liveMode, phraseStartIdx, keywordEmotion, allMoments, pickArt, pooledArt, requestArt, spawnRing, stems, stutterRuns, rollAt, oneShots, hits, holds, quakes]);
 
   const word = idx >= 0 ? words[idx]?.w : undefined;
   // Display keeps terminal ! and ? — the lookup key never does, so "NO!!!"
@@ -1666,7 +1796,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // The sung note colors the word (melody sense): tonic wears the theme hue,
   // harmonic distance bends it. Charged words keep their accent identity.
   const pitchCol = melody && idx >= 0 && !charged
-    ? pitchColor(themeHue, melody.words.get(idx), melody.tonic)
+    ? pitchColor(themeHue, melody.words.get(idx), melody.tonic, 0.35, deck?.pitchSpread ?? 1)
     : null;
   const treatment: SectionMotion = section ? sectionMotion(section) : "pulse";
   // ── MELODY MOTION ── the word moves WITH the melodic line: a rising
@@ -1752,10 +1882,25 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (!motionCfg || !bgArt || lite) return null;
     const m = artMoveFor(bgArt, shotOf(bgArt));
     const amp = Math.max(0, Math.min(2, motionCfg.amp ?? 1));
+    const x0 = m.x0 * amp, x1 = m.x1 * amp, y0 = m.y0 * amp, y1 = m.y1 * amp;
+    // COVER GUARD. A plate at scale s hangs (s-1)/2 of itself outside the frame
+    // on each side, and that overhang is the only thing a pan has to move into.
+    // WIDE_MOVES deliberately rest at scale 1.00–1.04 so an establishing shot
+    // stays wide (§17) — but they still translate up to 1.6% of the frame, and
+    // "pure track, no zoom" is scale 1.00 with x ±1.6. At scale 1.00 there is
+    // no overhang at all, so the pan walks the plate off its own edge and the
+    // bare stage shows through as a hard black band across the frame. It is
+    // brief and it looks like a broken render.
+    // Lift the scale just enough to cover the pan rather than cancelling the
+    // pan: ±1.6% needs scale 1.032, which is still WIDE by any measure and
+    // keeps §17's intent intact. Both axes use the same guard — a portrait
+    // plate covering a portrait frame has almost no vertical overhang to spare.
+    const need = (t: number) => 1 + (2 * Math.abs(t)) / 100;
+    const cover = Math.max(need(x0), need(x1), need(y0), need(y1));
     return {
-      s0: 1 + (m.s0 - 1) * amp, s1: 1 + (m.s1 - 1) * amp,
-      x0: m.x0 * amp, x1: m.x1 * amp,
-      y0: m.y0 * amp, y1: m.y1 * amp,
+      s0: Math.max(1 + (m.s0 - 1) * amp, cover),
+      s1: Math.max(1 + (m.s1 - 1) * amp, cover),
+      x0, x1, y0, y1,
       dur: Math.max(0.4, motionCfg.dur ?? 2.2),
     };
   }, [motionCfg, bgArt, lite, shotOf]);
@@ -1790,16 +1935,21 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const vwPx = typeof window !== "undefined" ? window.innerWidth : 1200;
     const basePx = Math.min(Math.max(vwPx * 0.16, 48), 224); // clamp(3rem,16vw,14rem)
     const portrait = typeof window !== "undefined" && window.innerHeight > window.innerWidth * 1.2;
-    // 0.68 not 0.62: the estimate has to err WIDE. Under-estimating the width
-    // lets a word think it fits and then clip, which is the one failure the
-    // viewer actually notices.
-    // 0.68 is the average glyph advance as a fraction of font-size for this
-    // face. It is an AVERAGE, so it under-reads wide-letter words — ACCESS,
-    // OVERREACTION, POSSESS are nearly all wide glyphs (A C E O S) and ran off
-    // the frame even after the portrait clamp. Portrait has no margin to absorb
-    // that, so estimate with a pessimistic advance there and let short words
-    // (which never hit the clamp anyway) pay nothing for it.
-    const advance = portrait ? 0.88 : 0.68;
+    // MEASURED, not assumed. This used to be a constant — 0.68 landscape and a
+    // deliberately pessimistic 0.88 portrait, because an AVERAGE advance
+    // under-reads wide-letter words (ACCESS, OVERREACTION, POSSESS are nearly
+    // all A C E O S) and a word that thinks it fits and then clips is the one
+    // failure a viewer actually notices. The pessimism worked, and it cost
+    // every NARROW word the difference: this face really runs 0.53 (I/N/T-heavy
+    // words like INTERNATIONAL) to 0.70 (wide caps), so a 0.88 estimate shrank
+    // a 13-letter hook to about a THIRD of the frame and the owner's note was,
+    // fairly, "the problem is mostly the text".
+    // measureAdvance reads the real width off a hidden span wearing the same
+    // .kinetic-word class, so font, weight 900 and the -0.03em letter-spacing
+    // are all included. It is cached per word, so it costs one layout the
+    // first time a word is ever staged and nothing after that. With a true
+    // width the target below can finally mean what it says.
+    const advance = measureAdvance(shown);
     const rawW = shown.length * basePx * dynRaw.size * delivery * octScale * advance;
     // Target 78% of the frame, not 90%: entrance effects (cling, rise, slam)
     // scale the word up on the way in, and a CSS transform grows what the
@@ -1814,7 +1964,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     // tighter target so a giant word lands inside the frame instead of parking
     // on — and bleeding over — the wall. This is why §11 concluded dynamic mode
     // "clips at loud moments" and told you to ship phrase throughout in 9:16.
-    fitScale = Math.min(1, (vwPx * (portrait ? 0.56 : 0.78)) / Math.max(1, rawW));
+    // A TRUE fill fraction now, not an estimate to be discounted — so the
+    // headroom is sized against MEASUREMENT rather than arithmetic. Sampling
+    // every word's real getBoundingClientRect every frame across a whole 62s
+    // portrait cut: at a 0.66 target the three longest words peaked at 103%
+    // (INTERNATIONAL), 100% (PASSPORT) and 95% (WORLDWIDE) of the frame — the
+    // entrance transform and the per-letter spans between them eat more than
+    // WordSlam's 1.45 alone predicts. 0.60 pulls that worst case to ~94%,
+    // measured back at 0px overflow, and it still renders a
+    // 13-letter hook word about 1.7x the size the old 0.88-advance estimate
+    // did (it drew 0.34 of the frame). Re-measure before raising this.
+    // The same number serves landscape: the old 0.78-of-a-0.68-estimate drew
+    // about 0.66 of the frame in practice, so the 16:9 master is close to
+    // unchanged and has a whole extra sky of room anyway.
+    fitScale = Math.min(1, (vwPx * 0.58) / Math.max(1, rawW));
     estH = basePx * dynRaw.size * delivery * fitScale;
     estW = Math.min(rawW * fitScale, vwPx * 0.95);
     // Stagecraft offsets the word off-centre for composition — great at 1920,
@@ -1934,6 +2097,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           sectionEmotion={section?.emotion ?? null}
           sectionIntensity={section?.intensity ?? 0.35}
           hue={deck?.backdropHue}
+          ghosts={deck?.ghosts}
         />
       )}
       {/* THE REEL — the sung word's matched painting breathes into the
@@ -2030,7 +2194,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           echo materializes huge and translucent behind the stage. Opacity is
           the LIVE backing-vocal envelope (CSS var, zero re-renders). A 24vw
           blur(6px) layer recomposited every frame — skipped on phones. */}
-      {stems && shown && !phrase && !lite && (
+      {stems && choirWord && shown && !phrase && !lite && (
         <div
           className="pointer-events-none fixed inset-0 z-[2] flex items-center justify-center overflow-hidden"
           style={{ opacity: "clamp(0, calc((var(--choir, 0) - 0.28) * 1.1), 0.42)" }}
@@ -2048,7 +2212,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* Word pileup — on a stutter run the repeated word stacks up until it
           fills the screen; a finger swiped across the pile knocks the chips
           away. The full-screen catcher only exists while the pile does. */}
-      {pass >= 3 && pile.length > 0 && (
+      {pass >= 3 && stutterPile && pile.length > 0 && (
         <div
           className="fixed inset-0 z-[7] overflow-hidden"
           style={{ touchAction: "none" }}
@@ -2068,15 +2232,25 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 className="pointer-events-none absolute font-display font-black uppercase select-none"
                 style={{
                   left: `${p.x}%`, top: `${p.y}%`,
-                  color: k % 2 ? "var(--theme-secondary)" : "var(--theme-primary)",
+                  // Scatter alternates primary/secondary for variety. THE POUR
+                  // does not: deriveTheme puts secondary a full +45 degrees off
+                  // the seed, so on an amber cut every other chip came out
+                  // yellow-green — and liquid is ONE colour anyway. A pour
+                  // stacks in the song's own colour.
+                  color: pileLayout !== "scatter" || k % 2 === 0 ? "var(--theme-primary)" : "var(--theme-secondary)",
                   fontSize: `clamp(1.6rem, ${(3 + p.s * 4).toFixed(1)}vw, 9rem)`,
                   textShadow: "0 0 26px currentColor",
                   willChange: "transform, opacity",
                 }}
-                initial={{ opacity: 0, scale: 0.15, rotate: p.rot, x: "-50%", y: "-50%" }}
+                initial="from"
                 animate="in"
                 exit="out"
                 variants={{
+                  // "from" is a FUNCTION variant so each chip reads its own
+                  // entry vector off `custom` — scatter chips have ex/ey equal
+                  // to their own spot, so they still grow in place exactly as
+                  // before; poured chips fly in from the emit point.
+                  from: (c: typeof p) => ({ opacity: 0, scale: 0.15, rotate: c.rot, x: `calc(-50% + ${c.ex}px)`, y: `calc(-50% + ${c.ey}px)` }),
                   in: { opacity: 0.94, scale: p.s, rotate: p.rot, x: "-50%", y: "-50%", transition: { type: "spring", stiffness: 340, damping: 17 } },
                   out: (c: typeof p) => ({ opacity: 0, scale: p.s * 0.85, rotate: c.rot + c.fr, x: `calc(-50% + ${c.fx}px)`, y: `calc(-50% + ${c.fy}px)`, transition: { duration: 0.55, ease: "easeOut" } }),
                 }}
@@ -3572,6 +3746,80 @@ function WordChop({ word, airtime }: { word: string; airtime: number }) {
    The word STAYS — that's the difference from melt. A wet sheen sweeps the
    letterforms while glossy beads swell along the baseline, elongate, detach
    and fall, each on its own delay. Luxe-wet, not destroyed. */
+/* ========== HEAT HAZE ==========
+   "Heat turned up." Air over hot asphalt: the word sits still and the light
+   coming off it will not. Two offset ghosts drift and blur in opposite
+   directions behind a crisp original, so the glyph stays perfectly readable
+   while its edges shimmer — the legibility lesson from §23/§24 is that the
+   WORD must never be the thing you sacrifice for the effect.
+   Colour-neutral on purpose (§25: `drip` and `liquid` hardcode their own
+   palettes and fight any song that is not lilac or blue). This draws from
+   currentColor, so it wears whatever the song is wearing. */
+function WordHeatHaze({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.6, Math.max(1.1, airtime));
+  const ghost = (dir: number, delay: number) => (
+    <m.span
+      className="pointer-events-none absolute inset-0 flex items-center justify-center"
+      style={{ color: "currentColor", filter: "blur(2.5px)", opacity: 0.4 }}
+      initial={{ y: 0, scaleX: 1, skewX: 0 }}
+      animate={{
+        y: [0, -4 * dir, 2 * dir, 0],
+        scaleX: [1, 1.012, 0.992, 1],
+        skewX: [0, 0.7 * dir, -0.5 * dir, 0],
+      }}
+      transition={{ duration: dur, delay, repeat: Infinity, ease: "easeInOut" }}
+      aria-hidden
+    >
+      {word}
+    </m.span>
+  );
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      {ghost(1, 0)}
+      {ghost(-1, dur * 0.28)}
+      <m.span
+        className="relative inline-block"
+        initial={{ scaleY: 1 }}
+        animate={{ scaleY: [1, 1.015, 0.995, 1] }}
+        transition={{ duration: dur * 0.8, repeat: Infinity, ease: "easeInOut" }}
+        style={{ textShadow: "0 0 0.35em var(--theme-accent)" }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
+/* ========== SCREW ==========
+   Chopped and screwed: the tape slows and the word slides down with it,
+   leaving a short smear above where it used to be. One ghost, falling
+   slower than the word and fading — the drag, not a strobe. */
+function WordScrew({ word, airtime }: { word: string; airtime: number }) {
+  const dur = Math.min(2.2, Math.max(0.9, airtime));
+  return (
+    <span className="relative inline-flex items-center justify-center">
+      <m.span
+        className="pointer-events-none absolute inset-0 flex items-center justify-center"
+        style={{ color: "currentColor", filter: "blur(1.5px)" }}
+        initial={{ y: "-0.10em", opacity: 0.55, scaleY: 1.06 }}
+        animate={{ y: "0.06em", opacity: 0, scaleY: 1 }}
+        transition={{ duration: dur * 0.85, ease: "easeOut" }}
+        aria-hidden
+      >
+        {word}
+      </m.span>
+      <m.span
+        className="relative inline-block"
+        initial={{ y: "-0.05em", scaleY: 1.04 }}
+        animate={{ y: "0em", scaleY: 1 }}
+        transition={{ duration: dur * 0.55, ease: [0.22, 0.61, 0.36, 1] }}
+      >
+        {word}
+      </m.span>
+    </span>
+  );
+}
+
 function WordDrip({ word, airtime }: { word: string; airtime: number }) {
   const dur = Math.min(2.2, Math.max(1.0, airtime));
   const r = (i: number, m: number) => ((i * 71 + 37) % 97) / 97 * m;

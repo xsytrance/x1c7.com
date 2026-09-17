@@ -1,0 +1,838 @@
+{
+  "id": "hajimemashite-v5",
+  "title": "Hajimemashite",
+  "artist": "Kizuna Sato",
+  "genre": "R&B / Trap",
+  "mood": "golden sultry",
+  "color": "#E8A33D",
+  "cover": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/hajimemashite/scene-face.webp",
+  "audio_url": "/private/hajimemashite-v5.mp3",
+  "sort_order": 9011,
+  "featured": false,
+  "hidden": true,
+  "lyrics": "[Intro]\nMmm... you don't know me yet... (soft giggle)\nGomen ne~ ...that's about to be a problem\nPatience, papi~ Hajimemashite.\n[Verse 1]\nNew name on the roster, new heat in the booth\nJay put the pen in my hand, said \"go tell 'em the truth\"\nSo hi~ I'm the one they gon' mention\nWhisper at half speed and still... hold... the tension\nSlide in through the bass, feel the heat in the room\nEvery eye on my waist when the kick goes boom\nCity lights on my skin like a gold tattoo\nIf you dance in my flame, you get branded too\n[Pre-Chorus]\nLean in... closer... let it swing real slow\nOne name... one label... here we go—\n[Chorus]\nHajimemashite, ne?\nRemember the face... remember the sooound~\nHajimemashite, ne? (su-ki su-ki~)\nKizuna Sato...\nLevelReady on the chain, catching light like go-ru-do~\nYou'll be saying my name all night... I know~\n[Chopped & Screwed Breakdown]\nKi...zu...naaaa...\nHeheh~ you hear that? Even slowed down I sound expensive\nhaji...me...mashiteeee~\nOkay okay, bring it back—\n[Verse 2]\n[01:37.98]They said \"she's so cute\"\n[01:39.78]Mmm, keep talking\n[01:41.38]I'm the trap and the bait\n[01:42.48]Watch how I'm walking\n[01:43.84]Any key, any tongue, any tempo\n[01:45.74]Slow it down, speed it up\n[01:47.14]Either way I'm never breaking a sweat\n[01:48.94]What\n[01:49.42]Welcome to the reverl—\n[01:51.52]LevelReady, baby~\n[01:52.42]Practiced that aaaall week for you\n[01:55.02]Crazy, ne?\n[01:55.60]Egi on the throne\n[01:56.35]And xsytrance in the bloodline\n[01:57.82]Same man, three names\n[01:58.40]I only need the one, shine~\n[Bridge]\n[02:01.44]Ne, ne... one more secret\n[02:03.54]Before the lights come up...\n[02:05.04]The doors swung open,\n[02:06.66]lights hit and we felt it.\n[02:11.25]But I didn't walk in alone, ne?\n[02:12.54]The house was already warm\n[02:16.62]When I got here~\n[Final Chorus]\n[02:19.35]Hajimemashite, ne?\n[02:21.80]Remember the face,\n[02:23.15]remember the sound!\n[02:24.10]Hajimemashite, ne? (su-ki su-ki~)\n[02:26.25]Kizuna Sato —\n[02:27.55]LevelReady 'til the wheels fall off\n[02:29.92]Aishiteru~\n[02:30.98]And now... you know... my name~\n[Outro]\nyo...ro...shi...ku... ne~\nSee? Time listens to me too.\n",
+  "lyrics_synced": {
+    "source": "v3 hand-aligned window 97.60-157.55, verified on the lead stem",
+    "refinedAt": "2026-09-16T00:00:00.000Z",
+    "words": [
+      {
+        "t": 97.98,
+        "w": "They"
+      },
+      {
+        "t": 98.14,
+        "w": "said"
+      },
+      {
+        "t": 98.3,
+        "w": "she's"
+      },
+      {
+        "t": 98.68,
+        "w": "so"
+      },
+      {
+        "t": 98.88,
+        "w": "cute"
+      },
+      {
+        "t": 99.78,
+        "w": "mmm"
+      },
+      {
+        "t": 100.52,
+        "w": "keep"
+      },
+      {
+        "t": 100.76,
+        "w": "talking"
+      },
+      {
+        "t": 101.38,
+        "w": "I'm"
+      },
+      {
+        "t": 101.52,
+        "w": "the"
+      },
+      {
+        "t": 101.6,
+        "w": "trap"
+      },
+      {
+        "t": 101.88,
+        "w": "and"
+      },
+      {
+        "t": 102.16,
+        "w": "the"
+      },
+      {
+        "t": 102.32,
+        "w": "bait"
+      },
+      {
+        "t": 102.48,
+        "w": "watch"
+      },
+      {
+        "t": 102.64,
+        "w": "how"
+      },
+      {
+        "t": 102.8,
+        "w": "I'm"
+      },
+      {
+        "t": 103.52,
+        "w": "walking"
+      },
+      {
+        "t": 103.84,
+        "w": "Any"
+      },
+      {
+        "t": 104.18,
+        "w": "key"
+      },
+      {
+        "t": 104.56,
+        "w": "any"
+      },
+      {
+        "t": 104.84,
+        "w": "tongue"
+      },
+      {
+        "t": 105.22,
+        "w": "any"
+      },
+      {
+        "t": 105.46,
+        "w": "tempo"
+      },
+      {
+        "t": 105.74,
+        "w": "slow"
+      },
+      {
+        "t": 105.98,
+        "w": "it"
+      },
+      {
+        "t": 106.18,
+        "w": "down"
+      },
+      {
+        "t": 106.5,
+        "w": "speed"
+      },
+      {
+        "t": 106.6,
+        "w": "it"
+      },
+      {
+        "t": 106.84,
+        "w": "up"
+      },
+      {
+        "t": 107.14,
+        "w": "Either"
+      },
+      {
+        "t": 107.38,
+        "w": "way"
+      },
+      {
+        "t": 107.68,
+        "w": "I'm"
+      },
+      {
+        "t": 107.82,
+        "w": "never"
+      },
+      {
+        "t": 108.02,
+        "w": "breaking"
+      },
+      {
+        "t": 108.36,
+        "w": "a"
+      },
+      {
+        "t": 108.58,
+        "w": "sweat"
+      },
+      {
+        "t": 108.94,
+        "w": "what"
+      },
+      {
+        "t": 109.42,
+        "w": "Welcome"
+      },
+      {
+        "t": 109.86,
+        "w": "to"
+      },
+      {
+        "t": 110.52,
+        "w": "the"
+      },
+      {
+        "t": 111.02,
+        "w": "reverl—"
+      },
+      {
+        "t": 111.52,
+        "w": "LevelReady"
+      },
+      {
+        "t": 112.02,
+        "w": "baby"
+      },
+      {
+        "t": 112.42,
+        "w": "Practiced"
+      },
+      {
+        "t": 112.96,
+        "w": "that"
+      },
+      {
+        "t": 113.24,
+        "w": "aaaall"
+      },
+      {
+        "t": 113.52,
+        "w": "week"
+      },
+      {
+        "t": 113.88,
+        "w": "for"
+      },
+      {
+        "t": 114.14,
+        "w": "you"
+      },
+      {
+        "t": 115.02,
+        "w": "Crazy"
+      },
+      {
+        "t": 115.25,
+        "w": "ne?"
+      },
+      {
+        "t": 115.6,
+        "w": "Egi"
+      },
+      {
+        "t": 115.62,
+        "w": "on"
+      },
+      {
+        "t": 115.8,
+        "w": "the"
+      },
+      {
+        "t": 116.08,
+        "w": "throne"
+      },
+      {
+        "t": 116.35,
+        "w": "and"
+      },
+      {
+        "t": 116.62,
+        "w": "xsytrance"
+      },
+      {
+        "t": 116.9,
+        "w": "in"
+      },
+      {
+        "t": 117.06,
+        "w": "the"
+      },
+      {
+        "t": 117.16,
+        "w": "bloodline"
+      },
+      {
+        "t": 117.82,
+        "w": "Same"
+      },
+      {
+        "t": 118.04,
+        "w": "man"
+      },
+      {
+        "t": 118.16,
+        "w": "three"
+      },
+      {
+        "t": 118.28,
+        "w": "names"
+      },
+      {
+        "t": 118.4,
+        "w": "I"
+      },
+      {
+        "t": 119.08,
+        "w": "only"
+      },
+      {
+        "t": 119.38,
+        "w": "need"
+      },
+      {
+        "t": 119.66,
+        "w": "the"
+      },
+      {
+        "t": 119.76,
+        "w": "one"
+      },
+      {
+        "t": 119.94,
+        "w": "shine"
+      },
+      {
+        "t": 121.44,
+        "w": "Ne"
+      },
+      {
+        "t": 121.5,
+        "w": "ne"
+      },
+      {
+        "t": 121.56,
+        "w": "one"
+      },
+      {
+        "t": 121.92,
+        "w": "more"
+      },
+      {
+        "t": 123.14,
+        "w": "secret"
+      },
+      {
+        "t": 123.54,
+        "w": "before"
+      },
+      {
+        "t": 123.94,
+        "w": "the"
+      },
+      {
+        "t": 124.24,
+        "w": "lights"
+      },
+      {
+        "t": 124.56,
+        "w": "come"
+      },
+      {
+        "t": 124.78,
+        "w": "up"
+      },
+      {
+        "t": 125.04,
+        "w": "The"
+      },
+      {
+        "t": 125.46,
+        "w": "doors"
+      },
+      {
+        "t": 125.88,
+        "w": "swung"
+      },
+      {
+        "t": 126.32,
+        "w": "open"
+      },
+      {
+        "t": 126.66,
+        "w": "lights"
+      },
+      {
+        "t": 127.48,
+        "w": "hit"
+      },
+      {
+        "t": 127.86,
+        "w": "and"
+      },
+      {
+        "t": 128.7,
+        "w": "we"
+      },
+      {
+        "t": 129,
+        "w": "felt"
+      },
+      {
+        "t": 129.28,
+        "w": "it"
+      },
+      {
+        "t": 131.25,
+        "w": "But"
+      },
+      {
+        "t": 131.45,
+        "w": "I"
+      },
+      {
+        "t": 131.6,
+        "w": "didn't"
+      },
+      {
+        "t": 131.85,
+        "w": "walk"
+      },
+      {
+        "t": 132.05,
+        "w": "in"
+      },
+      {
+        "t": 132.25,
+        "w": "alone"
+      },
+      {
+        "t": 132.42,
+        "w": "ne?"
+      },
+      {
+        "t": 132.54,
+        "w": "the"
+      },
+      {
+        "t": 133.3,
+        "w": "house"
+      },
+      {
+        "t": 135.58,
+        "w": "was"
+      },
+      {
+        "t": 135.84,
+        "w": "already"
+      },
+      {
+        "t": 136.2,
+        "w": "warm"
+      },
+      {
+        "t": 136.62,
+        "w": "when"
+      },
+      {
+        "t": 137.42,
+        "w": "I"
+      },
+      {
+        "t": 137.58,
+        "w": "got"
+      },
+      {
+        "t": 137.82,
+        "w": "here"
+      },
+      {
+        "t": 139.35,
+        "w": "Hajimemashite"
+      },
+      {
+        "t": 141,
+        "w": "ne?"
+      },
+      {
+        "t": 141.8,
+        "w": "Remember"
+      },
+      {
+        "t": 142.15,
+        "w": "the"
+      },
+      {
+        "t": 142.7,
+        "w": "face"
+      },
+      {
+        "t": 143.15,
+        "w": "remember"
+      },
+      {
+        "t": 143.45,
+        "w": "the"
+      },
+      {
+        "t": 143.8,
+        "w": "sound"
+      },
+      {
+        "t": 144.1,
+        "w": "Hajimemashite"
+      },
+      {
+        "t": 145.65,
+        "w": "ne?"
+      },
+      {
+        "t": 145.85,
+        "w": "su-ki"
+      },
+      {
+        "t": 146.05,
+        "w": "su-ki"
+      },
+      {
+        "t": 146.25,
+        "w": "Kizuna"
+      },
+      {
+        "t": 146.9,
+        "w": "Sato"
+      },
+      {
+        "t": 147.55,
+        "w": "LevelReady"
+      },
+      {
+        "t": 148.15,
+        "w": "'til"
+      },
+      {
+        "t": 148.45,
+        "w": "the"
+      },
+      {
+        "t": 148.8,
+        "w": "wheels"
+      },
+      {
+        "t": 149.2,
+        "w": "fall"
+      },
+      {
+        "t": 149.5,
+        "w": "off"
+      },
+      {
+        "t": 149.92,
+        "w": "aishiteru"
+      },
+      {
+        "t": 150.98,
+        "w": "And"
+      },
+      {
+        "t": 152.66,
+        "w": "now"
+      },
+      {
+        "t": 153.1,
+        "w": "you"
+      },
+      {
+        "t": 153.38,
+        "w": "know"
+      },
+      {
+        "t": 153.78,
+        "w": "my"
+      },
+      {
+        "t": 154.42,
+        "w": "name"
+      }
+    ]
+  },
+  "planet": {
+    "generatedAt": "2026-09-16T00:00:00.000Z",
+    "styleHint": "OSAKA GOLD-LEAF NIGHT — photoreal Dotonbori after 2am and after rain, everything crushed to near-black except molten gold. v3's approved art set, unchanged, driven by v4's pure-dynamic text engine.",
+    "analysis": {
+      "overallMood": "golden sultry midnight swagger",
+      "themes": [
+        "golden",
+        "lanterns",
+        "rain",
+        "arrival"
+      ],
+      "keywords": [],
+      "palette": [
+        "#E8A33D",
+        "#F6D66B",
+        "#FFE9A8",
+        "#D96A3A",
+        "#0A0805"
+      ],
+      "summary": "She never introduced herself — the room was already hers.",
+      "sections": [
+        {
+          "start": 93.6,
+          "name": "LevelReady",
+          "emotion": "proud",
+          "intensity": 0.66,
+          "colorHint": "#E8A33D"
+        },
+        {
+          "start": 105.4,
+          "name": "Bridge",
+          "emotion": "intimate",
+          "intensity": 0.48,
+          "colorHint": "#E8A33D"
+        },
+        {
+          "start": 118.3,
+          "name": "Final Chorus",
+          "emotion": "triumphant",
+          "intensity": 0.7,
+          "colorHint": "#F6D66B"
+        },
+        {
+          "start": 135.2,
+          "name": "Outro",
+          "emotion": "magnetic",
+          "intensity": 0.5,
+          "colorHint": "#F6D66B"
+        }
+      ]
+    },
+    "assets": {
+      "broll": [],
+      "keywords": {
+        "egi": "/planets/hajimemashite/scene-egi.webp",
+        "face": "/planets/hajimemashite/scene-face.webp",
+        "here": "/planets/hajimemashite/scene-house.webp",
+        "they": "/planets/hajimemashite/scene-they.webp",
+        "trap": "/planets/hajimemashite/scene-trap.webp",
+        "warm": "/planets/hajimemashite/scene-house.webp",
+        "alone": "/planets/hajimemashite/scene-alone.webp",
+        "doors": "/planets/hajimemashite/scene-doors.webp",
+        "house": "/planets/hajimemashite/scene-house.webp",
+        "never": "/planets/hajimemashite/scene-never.webp",
+        "shine": "/planets/hajimemashite/scene-shine.webp",
+        "kizuna": "/planets/hajimemashite/scene-kizuna.webp",
+        "reverl": "/planets/hajimemashite/scene-reverl.webp",
+        "secret": "/planets/hajimemashite/scene-secret.webp",
+        "walking": "/planets/hajimemashite/scene-walking.webp",
+        "xsytrance": "/planets/hajimemashite/scene-xsytrance.webp",
+        "hajimemashite": "/planets/hajimemashite/scene-hajimemashite.webp",
+        "cute": "/planets/hajimemashite-v5/scene-cute.webp",
+        "she's": "/planets/hajimemashite-v5/scene-cute.webp",
+        "levelready": "/planets/hajimemashite-v5/scene-levelready.webp"
+      },
+      "sections": {
+        "proud": "/planets/hajimemashite-v5/scene-levelready.webp",
+        "playful": "/planets/hajimemashite-v5/scene-cute.webp",
+        "intimate": "/planets/hajimemashite/scene-alone.webp",
+        "magnetic": "/planets/hajimemashite/scene-face.webp",
+        "confident": "/planets/hajimemashite/scene-shine.webp",
+        "seductive": "/planets/hajimemashite/scene-trap.webp",
+        "mysterious": "/planets/hajimemashite/scene-secret.webp",
+        "triumphant": "/planets/hajimemashite/scene-hajimemashite.webp"
+      },
+      "shots": {
+        "/planets/hajimemashite/scene-and.webp": "WIDE",
+        "/planets/hajimemashite/scene-egi.webp": "WIDE",
+        "/planets/hajimemashite/scene-face.webp": "MED",
+        "/planets/hajimemashite/scene-they.webp": "WIDE",
+        "/planets/hajimemashite/scene-trap.webp": "MACRO",
+        "/planets/hajimemashite/scene-warm.webp": "WIDE",
+        "/planets/hajimemashite/scene-alone.webp": "MED",
+        "/planets/hajimemashite/scene-doors.webp": "WIDE",
+        "/planets/hajimemashite/scene-house.webp": "WIDE",
+        "/planets/hajimemashite/scene-never.webp": "MED",
+        "/planets/hajimemashite/scene-shine.webp": "WIDE",
+        "/planets/hajimemashite/scene-kizuna.webp": "MED",
+        "/planets/hajimemashite/scene-reverl.webp": "CLOSE",
+        "/planets/hajimemashite/scene-secret.webp": "CLOSE",
+        "/planets/hajimemashite/scene-walking.webp": "WIDE",
+        "/planets/hajimemashite/scene-xsytrance.webp": "MED",
+        "/planets/hajimemashite/scene-hajimemashite.webp": "MED",
+        "/planets/hajimemashite-v5/scene-cute.webp": "MED",
+        "/planets/hajimemashite-v5/scene-levelready.webp": "MED"
+      },
+      "stems": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/planets/hajimemashite/stems/stems.json",
+      "stemLag": 0
+    },
+    "interactions": {
+      "tapEffect": "shimmer",
+      "moments": []
+    },
+    "dynamicPlus": {
+      "v": 2,
+      "directed": "HAJIMEMASHITE v5 — 97.6-157.55 (59.95s). v3's art set with v4's PURE DYNAMIC text: one giant word at a time, no pile, no phrase wall. Kizuna is back where v3 had her, including on 'she's so cute'. No silhouette plates.",
+      "acts": [
+        {
+          "start": 97.6,
+          "end": 115.5,
+          "label": "THE TRAP AND THE BAIT",
+          "why": "verse two — she repeats the insult back and keeps walking"
+        },
+        {
+          "start": 115.5,
+          "end": 121.2,
+          "label": "SAME MAN, THREE NAMES",
+          "why": "the lineage, and the one name he kept"
+        },
+        {
+          "start": 121.2,
+          "end": 139.0,
+          "label": "THE DOORS SWUNG OPEN",
+          "why": "the bridge drops to a whisper — the room was already hers"
+        },
+        {
+          "start": 139.0,
+          "end": 157.55,
+          "label": "HAJIMEMASHITE",
+          "why": "final chorus into the belt — the name lands"
+        }
+      ],
+      "modes": [
+        {
+          "start": 97.6,
+          "end": 115.5,
+          "mode": "dynamic"
+        },
+        {
+          "start": 115.5,
+          "end": 121.2,
+          "mode": "dynamic"
+        },
+        {
+          "start": 121.2,
+          "end": 139.0,
+          "mode": "dynamic"
+        },
+        {
+          "start": 139.0,
+          "end": 157.55,
+          "mode": "dynamic"
+        }
+      ],
+      "words": {
+        "they": "echo",
+        "cute": "bloom",
+        "trap": "cling",
+        "bait": "cling",
+        "walking": "rise",
+        "walk": "rise",
+        "watch": "mirror",
+        "key": "press",
+        "tongue": "liquid",
+        "tempo": "pulse",
+        "slow": "drip",
+        "speed": "chromatic",
+        "never": "freeze",
+        "sweat": "drip",
+        "welcome": "bloom",
+        "levelready": "slam",
+        "practiced": "type",
+        "egi": "carve",
+        "throne": "carve",
+        "xsytrance": "shimmer",
+        "bloodline": "bleed",
+        "names": "redact",
+        "shine": "shimmer",
+        "secret": "whisper",
+        "lights": "flashbulb",
+        "hit": "slam",
+        "doors": "fracture",
+        "swung": "rise",
+        "open": "bloom",
+        "alone": "fogbreath",
+        "house": "cling",
+        "warm": "bloom",
+        "here": "press",
+        "hajimemashite": "neon",
+        "face": "vitrine",
+        "remember": "echo",
+        "sound": "pulse",
+        "kizuna": "shimmer",
+        "sato": "shimmer",
+        "wheels": "quake",
+        "off": "fall",
+        "aishiteru": "bloom",
+        "name": "neon"
+      },
+      "oneShots": [
+        {
+          "id": "three-names",
+          "kind": "nameCards",
+          "solo": true,
+          "start": 115.5,
+          "end": 120.6,
+          "cards": [
+            {
+              "text": "EGI",
+              "at": 115.6,
+              "art": "/planets/hajimemashite/scene-egi.webp"
+            },
+            {
+              "text": "XSYTRANCE",
+              "at": 116.62,
+              "art": "/planets/hajimemashite/scene-xsytrance.webp"
+            },
+            {
+              "text": "AGENOR",
+              "at": 117.82,
+              "art": "/planets/hajimemashite/scene-shine.webp"
+            }
+          ],
+          "collapseAt": 118.4,
+          "collapseTo": "AGENOR",
+          "collapseDur": 0.7
+        }
+      ],
+      "hits": [
+        {
+          "t": 127.48,
+          "dur": 1.35
+        }
+      ],
+      "quakes": [
+        126.66,
+        139.35,
+        147.55
+      ],
+      "holds": [
+        {
+          "start": 150.98,
+          "end": 157.55,
+          "art": "/planets/hajimemashite/scene-and.webp"
+        }
+      ],
+      "rolls": [],
+      "deck": {
+        "art": true,
+        "density": 2.0,
+        "glow": 0.95,
+        "grain": 0.3,
+        "vignette": 0.55,
+        "backdropHue": 0.06,
+        "pitchSpread": 0.3,
+        "giant": {
+          "life": 1300,
+          "pile": 0,
+          "clearOnSwitch": true,
+          "stutter": false
+        },
+        "choir": false,
+        "ghosts": 0,
+        "motion": {
+          "dur": 2.2,
+          "amp": 0.85,
+          "swapMs": 900,
+          "fade": 0.36
+        }
+      }
+    }
+  }
+}
