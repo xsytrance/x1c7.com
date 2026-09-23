@@ -22,7 +22,7 @@ import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData }
 import { stemMixStore } from "@/lib/stemMix";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
-import { loadMelody, melodyIndex, keyPc, hexHue, pitchColor, pitchHue, medianMidi, melodicMotion, type MelodyWord } from "@/lib/engine/melody";
+import { loadMelody, melodyIndex, keyPc, themeHueFrom, pitchColor, pitchHue, medianMidi, melodicMotion, type MelodyWord } from "@/lib/engine/melody";
 import { KineticBackdrop } from "./KineticBackdrop";
 import { usePerfLite } from "@/lib/perf";
 import { beatTarget } from "@/lib/beatTarget";
@@ -957,7 +957,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     pendingGrade.current = null;
     if (melody) featureBus.setKey(melody.tonic, melody.minor);
   }, [stems, track.id, track.planet, melody]);
-  const themeHue = useMemo(() => hexHue(palette[0] ?? track.color), [palette, track.color]);
+  const themeHue = useMemo(() => themeHueFrom(palette, track.color), [palette, track.color]);
   // Refs so the per-frame tick (ghost hand-off) reads current melody state
   // without rebuilding the rAF loop.
   const melodyRef = useRef(melody);

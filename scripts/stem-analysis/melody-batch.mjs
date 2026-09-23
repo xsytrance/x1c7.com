@@ -13,6 +13,7 @@
 //
 //   node scripts/stem-analysis/melody-batch.mjs                # analyze all
 //     [--only slug,slug] [--limit N] [--force]                 # re-analyze
+//     [--midi <dir>]     # notes from Suno's MIDI export, not pYIN
 //     [--publish]        # rclone the PASSING melody.json files to R2
 //     [--min-diatonic 0.75] [--min-words 25]
 //
@@ -31,6 +32,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const OUT = path.join(__dirname, "out");
 const PY = path.join(process.env.HOME || "/home/xsyprime", "librosa-venv", "bin", "python");
+const PY3 = "python3";
 const R2_PUBLIC = "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev";
 
 const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
@@ -41,6 +43,12 @@ const ONLY = args.only && args.only !== true ? new Set(String(args.only).split("
 const LIMIT = args.limit && args.limit !== true ? Number(args.limit) : Infinity;
 const FORCE = !!args.force;
 const PUBLISH = !!args.publish;
+// --midi <dir>: take the notes from Suno's MIDI export instead of pitch-
+// tracking the lead stem. pYIN is unsure of itself on a separated vocal —
+// across the catalog only 4-41% of words clear the engine's 0.35 gate — and
+// a MIDI note has no confidence problem. Needs no librosa. Everything else
+// (live words, the diatonic gate, publishing) is unchanged.
+const MIDI_DIR = args.midi && args.midi !== true ? String(args.midi) : null;
 const MIN_DIATONIC = args["min-diatonic"] && args["min-diatonic"] !== true ? Number(args["min-diatonic"]) : 0.75;
 const MIN_WORDS = args["min-words"] && args["min-words"] !== true ? Number(args["min-words"]) : 25;
 const log = (...a) => console.error(...a);
@@ -118,8 +126,11 @@ async function main() {
 
   const candidates = data.filter((row) => {
     const words = row.lyrics_synced?.words;
-    const lead = row.planet?.assets?.stemAudio?.lead;
-    return Array.isArray(words) && words.length >= MIN_WORDS && lead && (!ONLY || ONLY.has(row.id));
+    // MIDI mode never touches the audio, so it only needs the measured kick
+    // grid in stems.json. That matters: the songs with no PUBLISHED lead stem
+    // are exactly the ones pYIN could never reach (hajimemashite among them).
+    const source = MIDI_DIR ? row.planet?.assets?.stems : row.planet?.assets?.stemAudio?.lead;
+    return Array.isArray(words) && words.length >= MIN_WORDS && source && (!ONLY || ONLY.has(row.id));
   }).slice(0, LIMIT);
   log(`melody batch: ${candidates.length} candidate track(s)${PUBLISH ? " → PUBLISH passing" : " (analysis only)"}\n`);
 
@@ -131,19 +142,43 @@ async function main() {
     const melodyPath = path.join(dir, "melody.json");
     try {
       if (!fs.existsSync(melodyPath) || FORCE) {
-        const leadUrl = abs(row.planet.assets.stemAudio.lead);
         const stemsUrl = abs(row.planet.assets.stems);
         const stemsJson = stemsUrl ? await fetchJson(stemsUrl) : null;
         const lag = stemsJson?.align?.lag ?? 0;
-        const leadPath = path.join(dir, "lead" + (path.extname(new URL(leadUrl).pathname) || ".m4a"));
         log(`▶ ${slug} (lag ${lag})`);
-        if (!(await download(leadUrl, leadPath))) { report.push({ slug, status: "no-lead" }); continue; }
         const wordsPath = path.join(dir, "words.json");
         fs.writeFileSync(wordsPath, JSON.stringify({ words: row.lyrics_synced.words }));
-        execFileSync(PY, [
-          path.join(__dirname, "analyze_melody.py"),
-          "--lead", leadPath, "--words", wordsPath, "--lag", String(lag), "--out", melodyPath,
-        ], { stdio: ["ignore", 2, 2] });
+
+        if (MIDI_DIR) {
+          // The clock is locked on the DRUMS, so the analyzer needs the
+          // measured kick times: stems.json carries them, already on the
+          // release mp3's clock.
+          if (!stemsJson?.kicks?.length && !stemsJson?.beats?.length) {
+            report.push({ slug, status: "no-stems-json" }); continue;
+          }
+          const sensesPath = path.join(dir, "stems.json");
+          fs.writeFileSync(sensesPath, JSON.stringify(stemsJson));
+          const pick = (want) => {
+            const hit = fs.readdirSync(MIDI_DIR).filter((f) =>
+              f.toLowerCase().endsWith(".mid") && f.toLowerCase().includes(`(${want})`));
+            return hit.length ? path.join(MIDI_DIR, hit[0]) : null;
+          };
+          const voc = pick("vocals"), drm = pick("drums");
+          if (!voc || !drm) { report.push({ slug, status: "no-midi" }); continue; }
+          execFileSync(PY3, [
+            path.join(__dirname, "melody_from_midi.py"),
+            "--midi", voc, "--drums", drm, "--senses", sensesPath,
+            "--words", wordsPath, "--out", melodyPath,
+          ], { stdio: ["ignore", 2, 2] });
+        } else {
+          const leadUrl = abs(row.planet.assets.stemAudio.lead);
+          const leadPath = path.join(dir, "lead" + (path.extname(new URL(leadUrl).pathname) || ".m4a"));
+          if (!(await download(leadUrl, leadPath))) { report.push({ slug, status: "no-lead" }); continue; }
+          execFileSync(PY, [
+            path.join(__dirname, "analyze_melody.py"),
+            "--lead", leadPath, "--words", wordsPath, "--lag", String(lag), "--out", melodyPath,
+          ], { stdio: ["ignore", 2, 2] });
+        }
       } else {
         log(`▶ ${slug} (cached)`);
       }

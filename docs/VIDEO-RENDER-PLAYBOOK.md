@@ -1623,3 +1623,86 @@ Two things worth carrying:
   a deck or a horizon would pass at 6. The variety pass was therefore
   deliberately environmental — water, objects, distance, profiles — rather than
   more group shots.
+
+## 27 · Hajimemashite v6 — the melody sense was dark in every cut we ever shipped (2026-09-23)
+
+The ask was "can we generate sheet music from Suno stems." The answer turned
+into a rendering change, because measuring the melody data exposed that the
+feature built on it was barely running.
+
+**Suno exports MIDI, one file per stem** (studio download, not the public
+profile API — `suno-pull.mjs` only sees `audio_url` and `image_large_url`, so
+MIDI is a manual per-song pull). 8 of our 21 stem downloads have it.
+
+**The melody sense has been ~80% dark in every shipped cut.** `pitchColor()`
+and `melodicMotion()` gate at `conf >= 0.35`. Measured across all 50 songs with
+a `melody.json`, the share of words clearing that gate runs **4%–41%, typically
+about 1 in 5** (mi-gente 4%, fast-enough 12%, one-tap-away 15%, void-into-gold
+41% and best in class). pYIN is simply unsure of itself on a separated vocal.
+Hajimemashite had no `melody.json` at all — its `planet.assets.stemAudio` is
+undefined, so `melody-batch.mjs` never even considered it.
+
+`scripts/stem-analysis/melody_from_midi.py` takes the notes from the MIDI
+instead. Same `melody.json` v1 schema, so `melody.ts`, `KineticStage` and the
+diatonic QA gate are unchanged. **No librosa** — it parses, in under a second,
+which matters because `~/librosa-venv` is gone (§0) and the pYIN path cannot
+currently run at all. `melody-batch.mjs --midi <dir>` drives it through the
+same live-word fetch, QA gate and publish.
+
+Results: hajimemashite **131/134 words pitched, diatonic 0.98**. On one-tap-away,
+which has both, pYIN cleared 27 words past the gate and MIDI cleared **337** —
+and where both are confident they agree on pitch class **81%** of the time and
+derive the same key (A# major) independently.
+
+**Three traps, all of which look like success:**
+
+1. **"Most words got a note" cannot fail.** The first alignment check scored
+   word coverage: 133/134. The control, with the MIDI shifted 1.7s off, scored
+   129. Vocal notes are dense enough that every offset wins.
+2. **Vocal MIDI is a CONTOUR, not a syllable track.** Suno merges runs and
+   melismas: 111 vocal notes under 134 words. At the offset later proved
+   correct, word onsets match note onsets only **29%** of the time.
+3. **So take the clock from the DRUMS.** `stems.json` already carries kick
+   times measured off the isolated drum stem, on the release clock, and drum
+   onsets are sharp: hajimemashite locks at **+0.06s, 82% vs a 26% background
+   (3.1x)**. The analyzer exits non-zero if that peak doesn't clear 55% and 2x.
+   Then read vocal notes by OVERLAP with each word's window. Note the drum
+   offset maps release→MIDI directly, so `align.lag` must NOT be applied again.
+
+**Suno's MIDI key signatures are garbage — ignore them.** The 0x59 `sf` byte
+must be −7..+7; Suno writes 15 and 12. Read as a pitch class, 15 → D# would
+make this song D# minor, the *worst* of the twelve K-S fits (r=−0.318). Take
+the key from the notes instead (K-S on the duration-weighted histogram); that
+is what reproduced pYIN's key independently.
+
+**`hexHue()` returns 190 for ANY grey — and palette[0] anchors the pitch wheel.**
+§24 warned that a near-black palette[0] bends the pitch system off noise; the
+real bug is wider. Pure white does it too: hajimemashite's palette leads with
+`#FFFFFF`, so this gold song's theme hue was **cyan 190°**, and every sung note
+would have been painted in a hue the grade does not contain. Harmless until the
+day the melody sense actually has data. **6 of the 74 tracks with a planet lead
+with a grey.** Fixed with `themeHueFrom()` (`melody.ts`): use the first palette
+entry that actually carries a hue (chroma >= 8), falling back to `track.color`.
+`backdrop.ts:486` has the same `hexHue(px[0])` pattern and was left alone —
+worth an audit. Preflight passes "palette 4 colours, all legible" and does not
+catch this; a hue-anchor check belongs there.
+
+**What it cost on screen, honestly.** On dark plates the pitch colour is
+excellent. On this cut's bright act (121.2–138.9, "THE DOORS SWUNG OPEN" — a
+huge bright gold doorway with the phrase running straight across it), it is a
+**regression**: with melody off the active word is pale cream and reads; with
+melody on at `pitchSpread: 0.3` it is gold on gold and washes out. Verified by
+rendering the identical window with `planet.assets.melody` pointed at a 404.
+
+**The spread knob cannot solve this song**, and that is the general lesson:
+§24 lowered spread because a wide swing turned words cold and lost them on the
+DARK monochrome plates; a narrow spread loses them on the BRIGHT plates of the
+same grade, because the words converge on exactly the plate's own hue. Hue is
+the wrong lever — `pitchColor()` returns `hsl(H 82% 66%)`, a fixed lightness,
+and lightness is what contrast needs. **`deck.glow` does not rescue it either:
+0.6 (from 1.35) just dimmed every text layer without recovering contrast.**
+A song whose art IS its theme hue at high brightness is a poor candidate for
+pitch colour until the lightness question is solved.
+
+Shipped: `hajimemashite-v6-vertical.mp4`, 1080×1920, 59.9s, A/V |error| median
+16ms / p95 20ms.

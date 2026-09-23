@@ -70,6 +70,30 @@ export function hexHue(hex: string): number {
   return ((h * 60) + 360) % 360;
 }
 
+/** THEME HUE — the hue the tonic wears, taken from the song's palette.
+ *
+ * hexHue() returns 190 for any GREY: pure white, pure black, and anything
+ * close enough that max==min. That fallback is harmless for a backdrop but
+ * poisonous here, because palette[0] anchors the whole pitch wheel — a gold
+ * song whose palette leads with #FFFFFF (hajimemashite) would paint every
+ * sung note in the cyan family, on a grade that has no cyan in it. Six of
+ * the 74 tracks with a planet lead with a grey.
+ *
+ * So: use the first palette entry that actually CARRIES a hue, and only fall
+ * back to the track colour (then hexHue's own 190) when none of them does.
+ * A grey palette[0] is a legitimate art choice for text and lights — it
+ * simply cannot tell us what colour the music is in. */
+export function themeHueFrom(palette: (string | undefined)[], fallback?: string): number {
+  for (const hex of palette) {
+    if (!hex) continue;
+    const n = parseInt(hex.replace("#", ""), 16);
+    if (!isFinite(n)) continue;
+    const r = (n >> 16) & 255, g = (n >> 8) & 255, b = n & 255;
+    if (Math.max(r, g, b) - Math.min(r, g, b) >= 8) return hexHue(hex);
+  }
+  return hexHue(fallback ?? "");
+}
+
 /** The note's hue: theme hue at the tonic, ±80° by circle-of-fifths distance. */
 /** `spread` scales how far the note is allowed to pull the hue off the theme.
  * 1 = the historic +/-80 degrees, which is most of the colour wheel and is

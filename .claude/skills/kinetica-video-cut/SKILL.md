@@ -40,6 +40,9 @@ nvidia-smi --query-gpu=memory.used,memory.total,utilization.gpu --format=csv
 ```
 
 - Dev server on **:3218**. `:7272` is a stale prod build — never render against it.
+  On 2026-09-23 the stale build was answering on **:4020** instead (a
+  `next-server` bound to the tailnet IP), so don't match on the port number —
+  match on whether the process is a `next dev` in YOUR checkout.
   `npx next dev -p 3218` if it's down.
 - **CHECK WHICH CHECKOUT THAT SERVER IS SERVING BEFORE YOU EDIT ANY ENGINE CODE.**
   A dev server on :3218 is often another session's, running out of a WORKTREE —
@@ -98,9 +101,10 @@ Prefer a candidate that already has `senses.json` + `transcript.json` +
 `planet.json` in its profile (full analysis already done, just no cut) over a
 bare `tracks.json`-only stub — it skips playbook §1/§9 entirely. Cross-check
 `assets/stems/<Title>*.zip` and `assets/wav/<Title>.wav` exist locally so you
-don't need R2/rclone (rclone is **not installed** on this box as of
-2026-09-07 — if a profile needs `release.mp3` fetched from R2 and there's no
-local copy, that step needs a different tool or the owner's help).
+don't need R2/rclone. (**rclone IS installed again** — `/usr/bin/rclone`,
+verified 2026-09-23 publishing a melody.json to R2. The 2026-09-07 note saying
+it was missing is stale; `melody-batch.mjs` also falls back to
+`~/.local/bin/rclone`.)
 
 ## Step 2 — pick the window, verify it against real audio, not the LRC's word
 
