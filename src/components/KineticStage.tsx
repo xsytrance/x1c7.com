@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1796,7 +1796,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // The sung note colors the word (melody sense): tonic wears the theme hue,
   // harmonic distance bends it. Charged words keep their accent identity.
   const pitchCol = melody && idx >= 0 && !charged
-    ? pitchColor(themeHue, melody.words.get(idx), melody.tonic, 0.35, deck?.pitchSpread ?? 1)
+    ? pitchColor(themeHue, melody.words.get(idx), melody.tonic, 0.35, deck?.pitchSpread ?? 1,
+                 deck?.pitchSat ?? 82, deck?.pitchLight ?? 66)
     : null;
   const treatment: SectionMotion = section ? sectionMotion(section) : "pulse";
   // ── MELODY MOTION ── the word moves WITH the melodic line: a rising

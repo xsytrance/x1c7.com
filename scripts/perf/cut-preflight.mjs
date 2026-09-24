@@ -153,6 +153,50 @@ const dark = (planet.analysis?.palette ?? []).filter((c) => lum(c) < 0.25);
 if (dark.length) FAIL(`palette contains near-black entries (${dark.join(", ")}) — the engine draws words from this array, so roughly one word in ${Math.round((planet.analysis.palette.length) / dark.length)} renders invisible`);
 else OK(`palette ${(planet.analysis?.palette ?? []).length} colours, all legible`);
 
+// ── 6c. The HUE ANCHOR — palette[0] drives the whole pitch-colour wheel ─────
+// This check exists because the old one passed. Hajimemashite reported
+// "palette 4 colours, all legible" while palette[0] was #FFFFFF, and hexHue()
+// returns its 190 fallback for ANY grey — so the gold song anchored every sung
+// note to a cyan that appears nowhere in its art. Legible is not the same as
+// meaningful. themeHueFrom() now skips greys, so this is a WARN, not a FAIL:
+// the render is correct, but the song is not saying what its palette implies.
+const chroma = (hex) => {
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex || ""); if (!m) return 0;
+  const n = parseInt(m[1], 16), r = n >> 16 & 255, g = n >> 8 & 255, b = n & 255;
+  return Math.max(r, g, b) - Math.min(r, g, b);
+};
+const pal = planet.analysis?.palette ?? [];
+if (!pal.length) WARN("no palette — the pitch wheel falls back to the track colour");
+else if (chroma(pal[0]) < 8) {
+  const anchor = pal.find((c) => chroma(c) >= 8);
+  if (anchor) WARN(`palette[0] ${pal[0]} is a grey and carries no hue — the pitch wheel anchors on ${anchor} instead. Lead with the song's real colour if that is not what you meant`);
+  else FAIL(`every palette entry is a grey — the pitch wheel has no hue to anchor on and every sung note renders at the 190 cyan fallback`);
+} else OK(`hue anchor ${pal[0]} carries a hue`);
+
+// ── 6d. Does the melody sense actually have anything to say? ───────────────
+// pYIN clears only ~1 word in 5 past the engine's 0.35 gate across the
+// catalogue, so "a melody.json exists" tells you nothing. Count what will
+// actually paint.
+const R2_PUBLIC = (env.PUBLIC_URL || "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev").replace(/\/$/, "");
+const melodyUrl = planet.assets?.melody
+  ? (/^https?:/.test(planet.assets.melody) ? planet.assets.melody : R2_PUBLIC + planet.assets.melody)
+  : `${R2_PUBLIC}/planets/${TRACK}/melody.json`;
+try {
+  const mres = await fetch(melodyUrl);
+  if (!mres.ok) WARN(`no melody.json (${mres.status}) — pitch colour, octave scale and melodic motion are all off for this cut`);
+  else {
+    const mel = await mres.json();
+    const melInWin = (mel.words ?? []).filter((w) => w.t >= FROM && w.t <= TO);
+    const lit = melInWin.filter((w) => w.conf >= 0.35).length;
+    const share = words.length ? lit / words.length : 0;
+    const msg = `melody ${lit}/${words.length} words in-window clear the 0.35 gate (${Math.round(share * 100)}%), key ${mel.key?.root} ${mel.key?.mode}`;
+    if (share < 0.25) WARN(`${msg} — the melody sense is mostly dark here; Suno's MIDI export (melody-batch --midi) typically takes this past 90%`);
+    else OK(msg);
+  }
+} catch (e) {
+  WARN(`could not read melody.json (${String(e).slice(0, 60)})`);
+}
+
 // ── 7. Audio the renderer will actually use ────────────────────────────────
 const mp3 = join(REPO, "scripts/song-analysis/profiles", TRACK, "release.mp3");
 if (!existsSync(mp3)) FAIL(`no release.mp3 in the profile — render-cut.mjs will fail`);

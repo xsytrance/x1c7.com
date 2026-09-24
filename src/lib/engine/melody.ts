@@ -109,10 +109,33 @@ export function pitchHue(baseHue: number, pc: number, tonicPc: number, spread = 
   return ((baseHue + (signed / 6) * 80 * spread) + 360) % 360;
 }
 
-/** CSS color for a sung word, or null when the note isn't trustworthy. */
-export function pitchColor(baseHue: number, w: MelodyWord | undefined, tonicPc: number, minConf = 0.35, spread = 1): string | null {
+/** CSS color for a sung word, or null when the note isn't trustworthy.
+ *
+ * `light` is the knob that matters on a bright grade. The melody's job is to
+ * choose a HUE; this function used to also pin lightness at a flat 66%, which
+ * silently overwrote whatever contrast the word had. On Hajimemashite's gold
+ * doorway act that turned a legible pale-cream word into gold-on-gold and the
+ * words washed out — measured against a melody-disabled render of the same
+ * frames. Contrast is a lightness property, not a hue one, so a song whose art
+ * IS its theme hue needs to lift lightness (~88-92) and keep the nuance,
+ * rather than give up the melody or fight it with `spread` (which cannot win:
+ * narrow loses words on bright plates, wide loses them on dark ones).
+ *
+ * Defaults are the historic 82/66, so every cut rendered before this is
+ * untouched. */
+export function pitchColor(
+  baseHue: number,
+  w: MelodyWord | undefined,
+  tonicPc: number,
+  minConf = 0.35,
+  spread = 1,
+  sat = 82,
+  light = 66,
+): string | null {
   if (!w || w.conf < minConf) return null;
-  return `hsl(${pitchHue(baseHue, w.pc, tonicPc, spread).toFixed(0)} 82% 66%)`;
+  const s = Math.max(0, Math.min(100, sat));
+  const l = Math.max(0, Math.min(100, light));
+  return `hsl(${pitchHue(baseHue, w.pc, tonicPc, spread).toFixed(0)} ${s}% ${l}%)`;
 }
 
 /** Median MIDI note of the pitched words — the singer's home register.

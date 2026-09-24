@@ -29,7 +29,7 @@ import { P } from "./params";
 import { governor } from "./governor";
 import { featureBus, type EngineFeatures, type WordGhost } from "./features";
 import { stemMixStore } from "@/lib/stemMix";
-import { hexHue } from "./melody";
+import { themeHueFrom } from "./melody";
 import type { StemName } from "@/lib/stemSense";
 
 const SCENE_HEADER = `#version 300 es
@@ -483,7 +483,11 @@ export class BackdropRenderer {
       hexToRgb(px[1] ?? px[0] ?? "#ff2440"),
       hexToRgb(px[2] ?? px[px.length - 1] ?? "#ffd166"),
     ];
-    this.pal0Hue = hexHue(px[0] ?? "#43f7ff");
+    // Not hexHue(px[0]): hexHue returns its 190 fallback for ANY grey, so a
+    // palette leading with white or near-black (6 of 74 tracks) hands the GL
+    // backdrop a cyan the song does not contain. Same bug as the stage's
+    // themeHue — see melody.ts.
+    this.pal0Hue = themeHueFrom(px, "#43f7ff");
     const h = fnv1a(seedStr);
     this.seed = (h % 1000) / 1000;
     this.sceneIdx = h % AUTO_POOL; // AUTO worlds stay stable over the original trio

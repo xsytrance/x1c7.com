@@ -212,6 +212,15 @@ export interface PlanetDynamicPlus {
      * wants a small number: at full spread a gold-on-black cut renders some
      * words cold blue-grey and they vanish into the plate. */
     pitchSpread?: number;
+    /** saturation / lightness of a pitch-coloured word, 0..100.
+     * Absent = the historic 82 / 66. `spread` chooses the HUE; these choose
+     * whether it can be READ. A grade whose art sits at the theme hue needs a
+     * high pitchLight (~88-92) or the words converge on the plate's own colour
+     * and wash out — Hajimemashite's bright doorway act, measured against a
+     * melody-disabled render. Reaching for spread instead cannot win: narrow
+     * loses words on bright plates, wide loses them on dark ones. */
+    pitchSat?: number;
+    pitchLight?: number;
     /** PIN the weather instead of letting particleModeFor infer it from the
      * song's own words. That inference reads the TITLE too, which a cut cannot
      * edit — a song called "Drink Drink" matches the champagne/bubbles rule on
