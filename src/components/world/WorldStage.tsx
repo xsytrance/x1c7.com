@@ -61,6 +61,8 @@ export interface WorldLook {
   radius?: number;
   /** degrees each successive rung is rotated: the corridor screws as it runs */
   twist?: number;
+  /** false keeps the bare wireframe corridor */
+  surface?: boolean;
 }
 /** Pick a look from the song's own id when the cut does not specify one, so
  *  two songs never open on the same corridor by default. */
@@ -74,7 +76,47 @@ function lookFor(seed: string, cfg: WorldLook | undefined): Required<WorldLook> 
     gap: cfg?.gap ?? pick([2.6, 3.4, 4.2, 5.5], 17),
     radius: cfg?.radius ?? pick([3.6, 4.2, 5.0], 23),
     twist: cfg?.twist ?? pick([0, 0, 3, -5, 9], 7),
+    surface: cfg?.surface ?? true,
   };
+}
+
+// ── THE SURFACE ────────────────────────────────────────────────────────────
+// Rungs and rails are lines; lines are why it reads as a wireframe. This is an
+// actual skin for the corridor: one TubeGeometry along the whole flight path,
+// built once, drawn from the INSIDE (BackSide), wearing a gradient mixed from
+// the song's own palette. It is what W2's panels and W3's light will land on.
+function Surface({ palette, spanS, radius }: { palette: string[]; spanS: number; radius: number }) {
+  const geo = useMemo(() => {
+    const pts: THREE.Vector3[] = [];
+    for (let s = -BEHIND; s <= spanS + AHEAD; s += 4) pts.push(pathPoint(s, new THREE.Vector3()));
+    const curve = new THREE.CatmullRomCurve3(pts);
+    return new THREE.TubeGeometry(curve, Math.max(24, pts.length), radius * 1.02, 16, false);
+  }, [spanS, radius]);
+
+  const tex = useMemo(() => {
+    // a long strip of the song's colours, darkened — the corridor must stay
+    // dark enough for words to read over it (see the roadmap's contrast note)
+    const c = document.createElement("canvas");
+    c.width = 4; c.height = 512;
+    const g = c.getContext("2d")!;
+    const cols = (palette.length ? palette : ["#E8A33D"]).slice(0, 5);
+    const grad = g.createLinearGradient(0, 0, 0, 512);
+    cols.forEach((col, i) => grad.addColorStop(i / Math.max(1, cols.length - 1), col));
+    g.fillStyle = grad; g.fillRect(0, 0, 4, 512);
+    // FAR darker than looks right in isolation. At 0.72 the corridor filled
+    // the frame with pale gold and the lyric had nothing to read against —
+    // every gain in surface is a loss in text legibility, and the text wins.
+    g.fillStyle = "rgba(0,0,0,0.90)"; g.fillRect(0, 0, 4, 512);
+    const t = new THREE.CanvasTexture(c);
+    t.wrapS = t.wrapT = THREE.RepeatWrapping;
+    t.repeat.set(Math.max(2, spanS / 90), 1);
+    return t;
+  }, [palette, spanS]);
+
+  const mat = useMemo(() => new THREE.MeshBasicMaterial({
+    map: tex, side: THREE.BackSide, transparent: true, opacity: 0.7, fog: true,
+  }), [tex]);
+  return <mesh geometry={geo} material={mat} frustumCulled={false} />;
 }
 
 function Tunnel({ color, getS, look }: { color: string; getS: () => number; look: Required<WorldLook> }) {
@@ -223,13 +265,17 @@ export default function WorldStage({ getTime, words, palette, stems, lag = 0, lo
 }) {
   const a = palette[0] ?? "#E8A33D";
   const shape = useMemo(() => lookFor(seed, look), [seed, look]);
+  const spanS = useMemo(() => ((words[words.length - 1]?.t ?? 60) + 20) * SPEED, [words]);
   const getS = () => getTime() * SPEED;
   return (
     <div className="pointer-events-none fixed inset-0 -z-[9]">
       <Canvas camera={{ fov: 74, near: 0.1, far: 400 }} gl={{ antialias: true, alpha: false }}
               onCreated={({ gl }) => gl.setClearColor("#05040a", 1)}>
-        <fog attach="fog" args={["#05040a", 30, 190]} />
+        <fog attach="fog" args={["#05040a", 14, 120]} />
         <Rig getTime={getTime} />
+        {look?.surface !== false && (
+          <Surface palette={palette} spanS={spanS} radius={shape.radius} />
+        )}
         <Tunnel color={a} getS={getS} look={shape} />
         <Words words={words} getS={getS} color={a} stems={stems} lag={lag} />
       </Canvas>
