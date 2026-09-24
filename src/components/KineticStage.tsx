@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -715,6 +715,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const shownArt = useRef<string[]>([]);
   const artSyncRef = useRef(false);
   artSyncRef.current = !!deck?.artSync;
+  const guideEl = useRef<HTMLDivElement | null>(null);
+  const guideIdx = useRef(0);
+  const guideCfgRef = useRef<{ size: number } | null>(null);
+  guideCfgRef.current = deck?.guide ? { size: deck.guide.size ?? 1.7 } : null;
   const insertCfgRef = useRef<{ every: number; hold: number; minPush: number; at: string; height: number } | null>(null);
   insertCfgRef.current = deck?.inserts
     ? { every: Math.max(1, deck.inserts.every ?? 4),
@@ -1733,6 +1737,69 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           setScream(cro ? { prompt: cro.prompt, shout: screamShout(cro) } : null);
         }
       }
+      // ── THE GUIDE ── the sing-along ball, but PLAYED by the song.
+      // It lands exactly on each word's onset, its arc apex comes from the note
+      // that word is sung on, it skates instead of bouncing when the syllables
+      // are too close to arc, and it squashes by how hard the word was sung.
+      // Positions come from stagecraft(), which is pure in the word index — so
+      // the one-word lookahead the flight needs is free.
+      {
+        const gc = guideCfgRef.current;
+        const el = guideEl.current;
+        const ws = words;
+        if (gc && el && ws.length) {
+          let i = guideIdx.current;
+          if (i >= ws.length) i = ws.length - 1;
+          while (i + 1 < ws.length && ws[i + 1].t <= t) i++;
+          while (i > 0 && ws[i].t > t) i--;              // scrub-safe
+          guideIdx.current = i;
+          const posFor = (k: number) => {
+            const kk = Math.max(0, Math.min(ws.length - 1, k));
+            const lw = clean(ws[kk].w).toLowerCase();
+            const sc = stagecraft(kk, {
+              charged: lw in keywordEmotion,
+              final: kk === ws.length - 1,
+              mono: false,
+              stop: STOP_WORDS.has(lw),
+            });
+            // SIT ABOVE THE WORD, not on it. Landing on the word's own centre
+            // put the dot underneath a glyph up to 14rem tall, so it was in
+            // the DOM at the right coordinates and invisible in 7 frames out
+            // of 10. The sing-along ball has always ridden above the line;
+            // scale the lift by the word's size tier so a big word is cleared
+            // by as much as a small one.
+            return { x: sc.x, y: sc.y - (3.4 + sc.size * 4.6) };
+          };
+          const t0 = ws[i].t;
+          const t1 = i + 1 < ws.length ? ws[i + 1].t : t0 + 0.6;
+          const gap = Math.max(0.05, t1 - t0);
+          // Sit on the word briefly, then fly so as to ARRIVE on the next
+          // onset. The landing is the beat; the departure is whatever is left.
+          const hold = Math.min(0.12, gap * 0.35);
+          const fly0 = t0 + hold;
+          const u = Math.max(0, Math.min(1, (t - fly0) / Math.max(0.03, t1 - fly0)));
+          const A = posFor(i), B = posFor(i + 1);
+          // SKATE vs BOUNCE. Under ~0.25s there is no time to read an arc, so
+          // the guide stays low and slides — which is what a fast run should
+          // look like. Long gaps arc high and hang.
+          const mel = melodyRef.current;
+          const note = mel?.words.get(Math.min(i + 1, ws.length - 1));
+          const rel = note && mel ? Math.max(-1, Math.min(1, (note.midi - mel.median) / 12)) : 0;
+          const apex = gap < 0.25 ? 0.9 : (6 + rel * 5) * Math.min(1, gap / 0.6);
+          const gx = A.x + (B.x - A.x) * u;
+          const gy = A.y + (B.y - A.y) * u - apex * 4 * u * (1 - u);
+          // SQUASH on landing, scaled by the singer's measured energy there.
+          const since = t - t0;
+          const sq = since >= 0 && since < 0.12 ? 1 - since / 0.12 : 0;
+          const energy = stems ? envAt(stems, "lead", t0 + 0.18) : 0.5;
+          const amt = 0.34 * sq * (0.5 + energy);
+          const st = el.style;
+          st.setProperty("--gx", gx.toFixed(2));
+          st.setProperty("--gy", gy.toFixed(2));
+          st.setProperty("--gsx", (1 + amt).toFixed(3));
+          st.setProperty("--gsy", (1 - amt).toFixed(3));
+        }
+      }
       // ── STEM SENSES per-frame ── the measured song drives the stage live.
       if (stems && stemTrk.current) {
         const trk = stemTrk.current;
@@ -2635,6 +2702,33 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               spawnRing (CSS keyframes, self-removing on animationend) so a
               ring never costs a React reconcile. */}
           <div ref={ringLayer} className="pointer-events-none absolute inset-0 flex items-center justify-center" aria-hidden />
+          {/* THE GUIDE lives OUT here, beside the ring layer, deliberately.
+              Inside the words wrapper below it inherits that div's
+              opacity:0 whenever a solo one-shot owns the stage — which is
+              exactly where it first went, and it rendered nothing at all while
+              being present in the DOM with correct coordinates. Same
+              positioned parent as the words, so `calc(50% + Xvw/Yvh)` means
+              the same thing for both. */}
+          {deck?.guide && (
+            <div
+              ref={guideEl}
+              aria-hidden
+              className="pointer-events-none absolute"
+              style={{
+                left: "calc(50% + var(--gx, 0) * 1vw)",
+                top: "calc(50% + var(--gy, 0) * 1vh)",
+                width: `${guideCfgRef.current?.size ?? 1.7}vw`,
+                height: `${guideCfgRef.current?.size ?? 1.7}vw`,
+                borderRadius: "50%",
+                transform: "translate(-50%, -50%) scale(var(--gsx, 1), var(--gsy, 1))",
+                // colour-neutral (§25): wears the song's accent, never a hex
+                background: "radial-gradient(circle at 38% 34%, #fff 0%, var(--theme-accent) 58%, transparent 74%)",
+                filter: "drop-shadow(0 0 1.1vw var(--theme-accent))",
+                zIndex: 3,
+              }}
+            />
+          )}
+
           {/* A solo one-shot owns the stage: the words layer fades out so THE
               THREE NAMES is not competing with the very lyric line it is
               dramatising. Opacity rather than unmounting — the phrase-mode

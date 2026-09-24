@@ -245,6 +245,19 @@ export interface PlanetDynamicPlus {
      * 1.5 bars of extra wait so a plate is never held hostage to a drifted
      * grid, and needs a trustworthy downbeat (barGrid margin >= 0.15). */
     artSync?: boolean;
+    /** THE GUIDE — the sing-along ball, played by the song rather than
+     * animated over it. Absent = no guide.
+     *
+     * Lands exactly on each word's onset; the arc apex comes from the note that
+     * word is sung on (melody.json), so a melodic leap becomes a leap in the
+     * arc; it SKATES instead of bouncing when syllables are under ~0.25s apart,
+     * which is what a fast run should look like; and it squashes on landing by
+     * the singer's measured energy there. Positions come from `stagecraft()`,
+     * which is pure in the word index, so the one-word lookahead is free.
+     *
+     * Dynamic mode only for now — phrase mode lays words out in a line rather
+     * than at a computable position. */
+    guide?: { size?: number };
     /** A SECOND plate, hard-cut into a letterbox band every `every` bars and
      * held for `hold` bars. `minPush` gates it to sections above that energy.
      *
