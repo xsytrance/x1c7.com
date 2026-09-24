@@ -15,6 +15,35 @@ the Sovereign blesses. Per the Iron Rule the code says `guide`.
 
 ---
 
+## The canvas — a Kinetica cut is 30–60 seconds
+
+Owner's standing rule. In bars, at the catalogue's real tempi:
+
+| song | bpm | bar | 30 s | 60 s |
+|---|---|---|---|---|
+| hajimemashite | 92.29 | 2.60 s | 11.5 bars | 23.1 bars |
+| one-tap-away | 95.70 | 2.51 s | 12.0 bars | 23.9 bars |
+| fast-enough | 107.67 | 2.23 s | 13.5 bars | 26.9 bars |
+
+**Twelve to twenty-seven bars is the whole journey.** Everything below is
+shaped by that, and it is easy to forget while designing:
+
+- **Movements are 8 bars, and there are two or three.** Not six. At 23 bars,
+  three acts is ~8 bars each — which is a real musical phrase, so the journey's
+  movements and the song's phrases are the same unit. Design to that.
+- **The guide transforms at most twice.** One transformation per act boundary,
+  and there are only two boundaries.
+- **The guide performs ~130 landings in a full cut** (hajimemashite: 134 words
+  in 60 s). That is the number that decides whether it charms or tires — and it
+  is bounded, which is the good news for M1.
+- **Inserts every 4 bars give 5–6 per cut.** Already about right; do not go
+  denser without a reason.
+- **An M5 3D act is ~8 bars ≈ 20 s of frames**, not minutes. An offline
+  renderer handles that comfortably — the cost there is the offscreen path,
+  never the frame count.
+
+---
+
 ## Non-goals (so this cannot sprawl)
 
 - **No diffusion video generation** in this arc. Separate idea, separate budget.
@@ -99,8 +128,9 @@ already knows.
 - [ ] `camSync` **follows the guide** instead of hashed offsets, so the camera
       has a subject
 
-**Done when:** one 60 s cut contains at least three distinct grammars, with mode
-changes landing on act boundaries rather than arbitrary times.
+**Done when:** a cut contains **three distinct grammars at 60 s, two at 30 s**
+(~8 bars each), with mode changes landing on act boundaries rather than
+arbitrary times.
 
 ---
 
@@ -135,7 +165,7 @@ real cost is the offscreen path.
 
 | risk | mitigation |
 |---|---|
-| the guide is charming for 10s and tiring for 60 | M1's kill criterion; judge on a full cut, not a clip |
+| the guide is charming for 10s and tiring for 60 | M1's kill criterion; judge on a FULL cut, not a clip — ~130 landings is the real test, and 60 s is the worst case that exists |
 | dynamic placement can't be looked ahead cleanly | first task in M1; if it fights, fall back to phrase mode only |
 | word timings are wrong on some tracks | the guide makes bad alignment *visible* — treat that as a feature and a QA tool |
 | Aurex offscreen export is deep | M5 is optional and gated; nothing before it depends on it |
