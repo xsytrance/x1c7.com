@@ -2189,7 +2189,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const drainAir = drainCfg?.minAir ?? 0.28;
   const lens = drainCfg?.lens ?? 900;
   const swell = Math.max(1.2, drainCfg?.swell ?? 4.5);
-  const wmDrain = drainCfg && dyn && idx >= 0
+  // NOT gated on `dyn`: a Z flight needs no x/y at all, because the parent's
+  // perspective drifts the word outward on its own. Requiring dyn meant the
+  // whole effect silently did nothing in phrase mode, where dyn is null.
+  const wmDrain = drainCfg && idx >= 0
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= drainAir
     ? {
         ...wm,
@@ -2254,7 +2257,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // words come out of the far end, pass, and are pulled away behind.
   const rushCfg = deck?.rush;
   const rushAir = rushCfg?.minAir ?? 0.28;
-  const wmFlight = rushCfg && dyn && idx >= 0
+  const wmFlight = rushCfg && idx >= 0
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= rushAir
     ? {
         ...wmDrain,
@@ -2781,17 +2784,6 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         )}
         <div
           className="relative flex min-h-[34vh] items-center justify-center"
-          style={deck?.rush || deck?.drain
-            ? {
-                perspective: `${deck?.drain?.lens ?? deck?.rush?.lens ?? 900}px`,
-                // NOT dead centre. With the origin on the word's own resting
-                // spot everything flies straight at your face, which reads as a
-                // zoom; nudging it off makes the word sweep PAST you, which is
-                // what flight looks like.
-                perspectiveOrigin: deck?.drain?.origin ?? "50% 38%",
-                transformStyle: "preserve-3d",
-              }
-            : undefined}
         >
           {/* beat halo — the stage breathes with the music even between words */}
           <div className="kinetic-halo" aria-hidden />
@@ -2862,7 +2854,26 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               dramatising. Opacity rather than unmounting — the phrase-mode
               AnimatePresence keeps its state and the line is still there,
               intact, when the one-shot releases it. */}
-          <div style={{ opacity: soloOwnsStage ? 0 : 1, transition: "opacity 260ms ease" }}>
+          {/* PERSPECTIVE LIVES HERE, on the words' DIRECT parent. It was one
+              level up and did nothing: CSS perspective only reaches direct
+              children, and this wrapper sits between, with no preserve-3d, so
+              every translateZ was flattened. The words were being told to fly
+              and the browser was quietly projecting it all back to zero. */}
+          <div
+            style={{
+              opacity: soloOwnsStage ? 0 : 1,
+              transition: "opacity 260ms ease",
+              ...(deck?.rush || deck?.drain
+                ? {
+                    perspective: `${deck?.drain?.lens ?? deck?.rush?.lens ?? 900}px`,
+                    // NOT dead centre: with the origin on the word's own resting
+                    // spot everything flies straight at the face, which reads as
+                    // a zoom. Off-centre makes it sweep PAST you.
+                    perspectiveOrigin: deck?.drain?.origin ?? "50% 38%",
+                  }
+                : null),
+            }}
+          >
           {phrase ? (
             /* ═══ PHRASE MODE — the whole line on stage, igniting word by word ═══ */
             <AnimatePresence mode="wait">
