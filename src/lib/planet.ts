@@ -269,7 +269,7 @@ export interface PlanetDynamicPlus {
      * is DISCOVERED (it turns in from edge-on, rises, is pushed at you, swings,
      * drops or unfolds) with the treatment chosen by how hard it was sung, how
      * far its note sits from the tonic, and whether the line is climbing. */
-    study?: boolean;
+    study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean };
     world?: boolean | {
       /** corridor cross-section: square | triangle | pentagon | hex | octagon | ring.
        *  It is literally the torus's tubularSegments count — one number, a

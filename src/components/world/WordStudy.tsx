@@ -19,6 +19,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
 import { envAt, OnsetTracker, type StemData } from "@/lib/stemSense";
 
+/** what drei's <Text> actually hands back: a troika text mesh */
+type TroikaText = THREE.Object3D & {
+  text: string; fontSize: number; fillOpacity: number; outlineWidth: number; sync?: () => void;
+};
+
 export interface StudyWord { t: number; w: string; midi?: number; tension?: number }
 
 const TREATMENTS = ["turn", "rise", "push", "swing", "drop", "unfold"] as const;
@@ -33,6 +38,34 @@ function treatmentFor(i: number, loud: number, tension: number, climb: number): 
   if (climb > 0.25) return "rise";
   if (loud < 0.92) return "unfold";
   return TREATMENTS[Math.abs(Math.imul(i ^ 0x9e3779b9, 0x85ebca6b)) % 2 === 0 ? 0 : 3];
+}
+
+/** Split the lyric into PHRASES on the natural breaths — a gap longer than
+ *  `gap` starts a new one. The phrase, not the word, is the unit of staging:
+ *  one camera move every few seconds instead of three a second. */
+function phrasesOf(words: StudyWord[], gap = 0.55): number[][] {
+  const out: number[][] = []; let cur: number[] = [];
+  for (let i = 0; i < words.length; i++) {
+    if (cur.length && words[i].t - words[i - 1].t > gap) { out.push(cur); cur = []; }
+    cur.push(i);
+  }
+  if (cur.length) out.push(cur);
+  return out;
+}
+
+/** Which word in a phrase carries it. The Pillar rules, minus authoring:
+ *  the melodic peak, the longest held note, and never a stop word. */
+const STOP = new Set(["the","a","an","and","or","but","of","to","in","on","at","it","is","i","you","me","my","we","he","she","they","for","so","as","be","do","if","no","up"]);
+function keyOf(words: StudyWord[], ph: number[]): number {
+  let best = ph[0], bestScore = -1e9;
+  for (let n = 0; n < ph.length; n++) {
+    const i = ph[n];
+    const w = (words[i].w || "").toLowerCase().replace(/[^a-z0-9']/g, "");
+    const held = (n + 1 < ph.length ? words[ph[n + 1]].t : words[i].t + 0.6) - words[i].t;
+    const score = (words[i].midi ?? 0) * 1.4 + held * 1.1 + (STOP.has(w) ? -3 : 0) + w.length * 0.05;
+    if (score > bestScore) { bestScore = score; best = i; }
+  }
+  return best;
 }
 
 /** progress 0..1 across a word's own airtime, eased so it ARRIVES */
@@ -116,6 +149,64 @@ function Word({ words, getTime, color, stems, lag }: {
   );
 }
 
+// ── THE PHRASE AS A RECEDING LINE ─────────────────────────────────────────
+// One word facing the camera has NO internal perspective — every letter is the
+// same distance away, so it is a flat picture however much 3D sits behind it.
+// A line of words rotated in depth does: the far end converges, which is the
+// whole of why the Star Wars crawl reads as projected.
+//
+// So the rest of the sentence is not clutter to be hidden — it is the thing
+// PROVIDING the depth. The key word sits forward, lit and sharp; the others
+// recede behind it, dim but present.
+function PhraseLine({ words, getTime, color, cfg }: {
+  words: StudyWord[]; getTime: () => number; color: string;
+  cfg: { tilt: number; rest: number; keys: number; spread: number };
+}) {
+  const phrases = useMemo(() => phrasesOf(words), [words]);
+  const keys = useMemo(() => phrases.map((ph) => keyOf(words, ph)), [phrases, words]);
+  const group = useRef<THREE.Group>(null);
+  const SLOTS = 9;
+  // Imperative, not React state. Driving this from setState meant the phrase
+  // had not re-rendered yet when a still was captured, and five of six frames
+  // in the first look sheet came out empty — the same trap the tunnel hit.
+  const slots = useRef<(TroikaText | null)[]>(Array(SLOTS).fill(null));
+
+  useFrame(() => {
+    const t = getTime();
+    const g = group.current; if (!g) return;
+    g.rotation.set((-cfg.tilt * 0.35 * Math.PI) / 180, (cfg.tilt * Math.PI) / 180, 0);
+    let p = 0;
+    while (p + 1 < phrases.length && words[phrases[p + 1][0]].t <= t) p++;
+    const ph = phrases[p] ?? [];
+    const k = keys[p] ?? ph[0];
+    const kn = Math.max(0, ph.indexOf(k));
+    for (let n = 0; n < SLOTS; n++) {
+      const el = slots.current[n]; if (!el) continue;
+      const wi = ph[n];
+      if (wi === undefined) { el.visible = false; continue; }
+      el.visible = true;
+      const isKey = wi === k;
+      const sung = words[wi].t <= t;
+      const want = words[wi].w;
+      if (el.text !== want) { el.text = want; el.fontSize = isKey ? 1.05 : 0.6; el.sync?.(); }
+      el.position.set((n - kn) * cfg.spread, 0, isKey ? 0.6 : 0);
+      el.fillOpacity = isKey ? 1 : sung ? Math.min(1, cfg.rest * 1.5) : cfg.rest;
+      el.outlineWidth = isKey ? 0.012 : 0;
+    }
+  });
+
+  return (
+    <group ref={group}>
+      {Array.from({ length: SLOTS }, (_, n) => (
+        <Text key={n} ref={(el) => { slots.current[n] = el as unknown as TroikaText; }}
+              fontSize={0.6} color={color} anchorX="center" anchorY="middle" outlineColor="#000">
+          {" "}
+        </Text>
+      ))}
+    </group>
+  );
+}
+
 /** The camera never sits still: it arcs around the word while it is held, so
  *  the word is EXPLORED rather than presented. A new arc per word. */
 function Explore({ words, getTime }: { words: StudyWord[]; getTime: () => number }) {
@@ -141,8 +232,9 @@ function Explore({ words, getTime }: { words: StudyWord[]; getTime: () => number
   return null;
 }
 
-export default function WordStudy({ getTime, words, palette, stems, lag = 0 }: {
+export default function WordStudy({ getTime, words, palette, stems, lag = 0, look }: {
   getTime: () => number; words: StudyWord[]; palette: string[]; stems: StemData | null; lag?: number;
+  look?: { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean };
 }) {
   const color = palette[0] ?? "#E8A33D";
   const bg = useMemo(() => new THREE.Color("#050408"), []);
@@ -151,8 +243,24 @@ export default function WordStudy({ getTime, words, palette, stems, lag = 0 }: {
       <Canvas camera={{ fov: 42, near: 0.1, far: 80, position: [0, 0, 9.2] }}
               gl={{ antialias: true }}
               onCreated={({ gl, scene }) => { gl.setClearColor(bg, 1); scene.background = bg; }}>
-        <Explore words={words} getTime={getTime} />
-        <Word words={words} getTime={getTime} color={color} stems={stems} lag={lag} />
+        {look?.mode === "phrase" ? (
+          <PhraseLine
+            words={words}
+            getTime={getTime}
+            color={color}
+            cfg={{
+              tilt: look.tilt ?? 38,
+              rest: look.rest ?? 0.22,
+              keys: look.keys ?? 1,
+              spread: look.spread ?? 3.1,
+            }}
+          />
+        ) : (
+          <>
+            <Explore words={words} getTime={getTime} />
+            <Word words={words} getTime={getTime} color={color} stems={stems} lag={lag} />
+          </>
+        )}
       </Canvas>
     </div>
   );
