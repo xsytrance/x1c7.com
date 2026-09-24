@@ -258,6 +258,13 @@ export interface PlanetDynamicPlus {
      * Dynamic mode only for now — phrase mode lays words out in a line rather
      * than at a computable position. */
     guide?: { size?: number };
+    /** THE WORLD — swap the per-pixel shader corridor for a real three.js
+     * scene, with the lyric living inside it. A word sits at the distance its
+     * onset occupies (s = t * speed) and the camera flies the same path, so
+     * words arrive, twist past and recede because time IS distance — none of
+     * it is animated. One coordinate system for camera, corridor and text,
+     * which is what every 3D bug in the CSS layer came from not having. */
+    world?: boolean;
     /** DRAIN — sung words travel to the vanishing point instead of fading where
      * they stand: they shrink, blur and ACCELERATE away down the corridor.
      *
