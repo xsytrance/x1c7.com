@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number }; rush?: { dur?: number; minAir?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number }; rush?: { dur?: number; minAir?: number; far?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2169,15 +2169,34 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= drainAir
     ? {
         ...wm,
-        exit: {
-          opacity: 0,
-          scale: 0.05,
-          x: `${(-dyn.x).toFixed(2)}vw`,
-          y: `${(-dyn.y).toFixed(2)}vh`,
-          filter: "blur(2px)",
-          // accelerating, so it reads as PULLED rather than as drifting away
-          transition: { duration: drainCfg.dur ?? 0.62, ease: [0.36, 0, 0.92, 0.6] },
-        },
+        exit: drainCfg.past
+          // PAST THE CAMERA: the word keeps coming, swells past full size and
+          // leaves through the edge of the frame. An off-centre word exits
+          // sideways because the parent's perspective drifts it outward — this
+          // is the one that unmistakably reads as being pushed out at you.
+          ? {
+              // Hold it OPAQUE while it swells, and only let go once it is
+              // past the camera. Fading on the same curve as the approach made
+              // the word disappear while it was still small, which is why the
+              // fly-past read as a plain fade: you never saw the part that
+              // sells it. Perspective 900 with near 780 is a ~7.5x swell, so
+              // the last frames are the word leaving through the frame edge.
+              opacity: [1, 1, 0],
+              z: [0, (drainCfg.near ?? 780) * 0.5, drainCfg.near ?? 780],
+              filter: ["blur(0px)", "blur(2px)", "blur(7px)"],
+              transition: {
+                duration: drainCfg.dur ?? 0.5,
+                times: [0, 0.62, 1],
+                ease: [0.34, 0, 0.88, 0.72],
+              },
+            }
+          // or recede back down the corridor to the vanishing point
+          : {
+              opacity: 0,
+              z: -(drainCfg.far ?? 1500),
+              filter: "blur(3px)",
+              transition: { duration: drainCfg.dur ?? 0.62, ease: [0.36, 0, 0.92, 0.6] },
+            },
       }
     : wm;
   // ── RUSH ── the mirror of DRAIN: the word ARRIVES out of the vanishing
@@ -2198,15 +2217,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= rushAir
     ? {
         ...wmDrain,
-        initial: {
-          opacity: 0,
-          scale: 0.06,
-          x: `${(-dyn.x).toFixed(2)}vw`,
-          y: `${(-dyn.y).toFixed(2)}vh`,
-          filter: "blur(3px)",
-        },
-        animate: { opacity: 1, scale: 1, x: "0vw", y: "0vh", filter: "blur(0px)" },
-        transition: { duration: rushCfg.dur ?? 0.34, ease: [0.42, 0, 0.9, 0.7] },
+        // Real depth, not a scale fake: with perspective on the PARENT, a word
+        // far down the corridor sits near the vanishing point and drifts
+        // outward to its own place as it comes at the camera — the outward
+        // drift is what sells approach, and scaling alone cannot produce it.
+        initial: { opacity: 0, z: -(rushCfg.far ?? 1500), filter: "blur(4px)" },
+        animate: { opacity: 1, z: 0, filter: "blur(0px)" },
+        transition: { duration: rushCfg.dur ?? 0.42, ease: [0.42, 0, 0.9, 0.7] },
       }
     : wmDrain;
   // Measured delivery: the singer's REAL energy on this word (lead-vocal
@@ -2721,7 +2738,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             {section.emotion}
           </p>
         )}
-        <div className="relative flex min-h-[34vh] items-center justify-center">
+        <div
+          className="relative flex min-h-[34vh] items-center justify-center"
+          style={deck?.rush || deck?.drain
+            ? { perspective: "900px", perspectiveOrigin: "50% 50%", transformStyle: "preserve-3d" }
+            : undefined}
+        >
           {/* beat halo — the stage breathes with the music even between words */}
           <div className="kinetic-halo" aria-hidden />
           {/* ambient dust — the pass-2 satellite's CSS particles (pass 3+ has
