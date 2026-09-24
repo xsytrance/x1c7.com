@@ -349,6 +349,15 @@ float rung(float w, float soft) {
   float lw = fwidth(w) * 1.6 + soft;
   return 1.0 - smoothstep(0.0, lw, abs(fract(w) - 0.5));
 }
+// THE FLIGHT PATH — where the corridor's centreline sits at depth z. Three
+// periods that do not divide into each other, so the route never repeats the
+// same turn twice inside a cut: a long lazy sweep, a shorter counter-curve,
+// and a gentle rise and fall. Straight ahead forever is the giveaway that a
+// tunnel is a texture; a route that banks and changes its mind is travel.
+vec2 pathAt(float z) {
+  return vec2(sin(z * 0.043) * 0.26 + sin(z * 0.017) * 0.13,
+              cos(z * 0.031) * 0.12 + sin(z * 0.0091) * 0.07);
+}
 void main() {
   vec2 p = vUv - 0.5;
   p.x *= uRes.x / max(uRes.y, 1.0);
@@ -359,6 +368,17 @@ void main() {
   // in the music's own time rather than as constant drift.
   float travel = uTime * (1.5 + uBass * 2.6 + uCharge * 3.0)
                + uBeatPhase * 0.30 + uSeed * 37.0;
+
+  // BANK INTO THE TURN. Rolling the whole world is what makes a curve feel
+  // flown rather than slid through, and a riser rolls it harder.
+  float roll = sin(travel * 0.026) * 0.30 + sin(travel * 0.011) * 0.16 + uCharge * 0.22;
+  float cs = cos(roll), sn = sin(roll);
+  p = mat2(cs, -sn, sn, cs) * p;
+
+  // THE VANISHING POINT RIDES THE PATH, so the exit of the corridor swings
+  // across the frame as the route turns instead of sitting dead ahead.
+  vec2 here = pathAt(travel);
+  p -= here;
 
   vec3 col = vec3(0.0);
   vec3 near = keyColor(uPal0);           // the tonic owns what is closest
@@ -372,8 +392,12 @@ void main() {
     float u = (s < 2 ? p.x : p.y);
     if (v <= 0.006) continue;
     float d = 0.34 / v;                              // distance along the flight
-    float wu = u * d;
     float wz = d + travel;
+    // Further down the corridor means further around the bend: offset the
+    // surface by how far the path has moved BETWEEN here and there, scaled by
+    // distance, so near ground stays put and the far end swings away.
+    vec2 bend = (pathAt(wz) - here) * d * 1.7;
+    float wu = u * d + (s < 1 ? bend.x : bend.y);
     float g = max(rung(wu, 0.004), rung(wz, 0.004));
     float fog = exp(-d * 0.155);                     // the far end falls away
     vec3 tint = mix(uPal2, s < 1 ? near : uPal1, fog);
