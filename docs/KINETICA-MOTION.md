@@ -141,6 +141,31 @@ Three rules paid for in this repo:
    the data: a bar counter frozen at one value while energy never moves is
    frozen playback, not a broken feature. Verify in a real render, which plays.
 
+4. **A vision model needs a control it cannot fail, and a NEGATIVE one too.**
+   Local VLMs can check renders, but only if the question is shaped for them
+   and both controls pass:
+
+   - **Ask the easy question.** "Does the word grow across these 12 filmstrip
+     tiles?" was answered "no" by `qwen3-vl:8b` even on a strip synthesised to
+     grow 1.0x -> 2.6x. The same model, shown **two labelled panels** and asked
+     "bigger in A, bigger in B, or the same?", gets it right. The format was
+     the failure, not the model.
+   - **Bigger is not better.** `gemma3:12b` answered "B BIGGER" to all three
+     images including the negative control — a yes-bias that makes every
+     answer worthless. The 8b model that passed its control is the more useful
+     instrument.
+   - **Watch for silence.** `qwen3-vl:8b` returns an empty completion on some
+     images. An empty answer is not a "no".
+
+   Use the model to corroborate a pixel measurement, never as the only witness.
+
+5. **Compare against natural variation, not against zero.** Words already
+   differ in size (`stagecraft` size tiers x delivery x octave), so "the peak
+   word is bigger than a typical word" is true in every cut. The honest figure
+   is the ratio WITH the effect against the ratio WITHOUT it, measured the same
+   way: the fly-past scores peak/typical word area **13.3x (about 3.6x linear)**
+   against **2.9x (1.7x linear)** for the same window with the effect off.
+
 Preflight (`scripts/perf/cut-preflight.mjs`) now checks the hue anchor and
 reports how many words in the window actually clear the melody gate — both
 classes of silent failure it used to pass.
