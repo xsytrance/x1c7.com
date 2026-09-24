@@ -235,6 +235,27 @@ export interface PlanetDynamicPlus {
      * scores every phase alike and stepping on the wrong beat is worse than
      * not stepping at all. */
     camSync?: boolean;
+    /** Land a plate swap on the next DOWNBEAT, and let a drum-cut return cut
+     * the picture immediately.
+     *
+     * Without it the only gate is the swapMs throttle, so the image changes the
+     * instant its window expires — an arbitrary point in the bar. The picture
+     * then advances like a slide rather than cutting like an edit, and a change
+     * that should land ON the drop arrives a beat or two after it. Capped at
+     * 1.5 bars of extra wait so a plate is never held hostage to a drifted
+     * grid, and needs a trustworthy downbeat (barGrid margin >= 0.15). */
+    artSync?: boolean;
+    /** A SECOND plate, hard-cut into a letterbox band every `every` bars and
+     * held for `hold` bars. `minPush` gates it to sections above that energy.
+     *
+     * Every cut before this showed exactly one image at a time, full frame,
+     * with a slow move over it — the Ken Burns documentary grammar, which no
+     * quality of plate can stop reading as a slideshow. A second plane that
+     * cuts in and out on the bar is what an edit looks like. Draws only from
+     * plates already painted this cut, so it never stalls on a cold fetch, and
+     * rides the same bar counter as camSync so the two land together rather
+     * than fighting. Needs artSync's grid. */
+    inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number };
     /** PIN the weather instead of letting particleModeFor infer it from the
      * song's own words. That inference reads the TITLE too, which a cut cannot
      * edit — a song called "Drink Drink" matches the champagne/bubbles rule on

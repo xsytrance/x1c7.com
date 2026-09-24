@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -608,6 +608,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
+  const bgArtRef = useRef<string | null>(null);
+  bgArtRef.current = bgArt;
   // Art gallery: extra paintings per word, grown nightly by the top-up pipeline
   // and hosted on R2 as planets/<slug>/gallery.json. The engine cycles through
   // them so a word never shows the same backdrop twice. Absent/empty = the
@@ -706,6 +708,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   pileLifeRef.current = Math.max(400, giantCfg?.life ?? 8000);
   const swapMsRef = useRef(2000);
   swapMsRef.current = motionCfg ? Math.max(350, motionCfg.swapMs ?? 1000) : 2000;
+  // Song time, kept fresh by the per-frame tick. requestArt is a []-dep
+  // callback by design (it must not be rebuilt mid-crossfade), so anything it
+  // needs about the song has to arrive through a ref.
+  const songTimeRef = useRef(0);
+  const shownArt = useRef<string[]>([]);
+  const artSyncRef = useRef(false);
+  artSyncRef.current = !!deck?.artSync;
+  const insertCfgRef = useRef<{ every: number; hold: number; minPush: number; at: string; height: number } | null>(null);
+  insertCfgRef.current = deck?.inserts
+    ? { every: Math.max(1, deck.inserts.every ?? 4),
+        hold: Math.max(0.25, deck.inserts.hold ?? 1),
+        minPush: deck.inserts.minPush ?? 0,
+        at: deck.inserts.at ?? "center",
+        // 40.625% is the reel band's crop-free geometry; a smaller default
+        // leaves the middle of the frame to the words.
+        height: Math.max(8, Math.min(60, deck.inserts.height ?? 30)) }
+    : null;
   const swapCtl = useRef<{ shown: string | null; lastAt: number; token: number; timer: number | null; pending: string | null }>(
     { shown: null, lastAt: 0, token: 0, timer: null, pending: null });
   const badArt = useRef(new Set<string>());
@@ -725,8 +744,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (url === ctl.shown) return;
     const now = performance.now();
     const minSwap = swapMsRef.current;
-    if (now - ctl.lastAt < minSwap) {
-      // Inside the crossfade window — remember the latest ask, land it after.
+    // ── WHEN A PLATE IS ALLOWED TO LAND ──
+    // The throttle alone lands a swap the instant its window expires, which is
+    // an arbitrary moment in the bar. The picture then changes off the beat and
+    // the eye reads it as a slide advancing, not as a cut. With deck.artSync
+    // the swap additionally waits for the next DOWNBEAT — capped at 1.5 bars so
+    // a plate can never be held hostage waiting for a grid that has drifted.
+    const waitThrottle = Math.max(0, minSwap - (now - ctl.lastAt));
+    let waitMs = waitThrottle;
+    const grid = barsPhasedRef.current;
+    if (artSyncRef.current && grid) {
+      const nowT = songTimeRef.current;
+      const earliest = nowT + waitThrottle / 1000;
+      const { next } = barAt(grid, earliest);
+      const toBeat = (next - nowT) * 1000;
+      if (toBeat >= waitThrottle) waitMs = Math.min(toBeat, waitThrottle + grid.barSec * 1500);
+    }
+    if (waitMs > 0) {
+      // Remember the latest ask and land it on the chosen instant.
       ctl.pending = url;
       if (ctl.timer == null) {
         ctl.timer = window.setTimeout(() => {
@@ -734,7 +769,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           const p = ctl.pending;
           ctl.pending = null;
           if (p) req(p);
-        }, minSwap - (now - ctl.lastAt) + 20);
+        }, waitMs + 20);
       }
       return;
     }
@@ -751,6 +786,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         // a crossfade window, so lastShot would describe a frame nobody saw and
         // the no-repeat rule would start rejecting the wrong things.
         lastShotRef.current = shotOfRef.current?.(url) ?? lastShotRef.current;
+        // History of plates the stage has actually PAINTED. The insert layer
+        // draws only from here, so it is always a decoded, cached image — an
+        // insert that has to fetch would land late and defeat the whole point.
+        const hist = shownArt.current;
+        if (hist[hist.length - 1] !== url) {
+          hist.push(url);
+          if (hist.length > 24) hist.shift();
+        }
         setBgArt(url);
       },
       () => {
@@ -1285,6 +1328,26 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // While a solo one-shot owns the stage, the normal word layer stands down.
   const soloOwnsStage = !!(soloShot && activeOneShot?.solo);
   const [reelGhost, setReelGhost] = useState<{ img: string; on: boolean; mix: number; blend: string; band: boolean } | null>(null);
+  // ── THE INSERT ── a SECOND plate, hard-cut into a letterbox band for a bar.
+  // Every cut until now has shown exactly one image at a time, full frame, with
+  // a slow move over it — which is the Ken Burns documentary grammar, and no
+  // amount of good plates stops that reading as a slideshow. A second plane
+  // that cuts in and out on the bar is what an edit looks like.
+  const [insertArt, setInsertArt] = useState<{ img: string; mode: string; h: number } | null>(null);
+  const insertRef = useRef<{ until: number; bar: number }>({ until: -1, bar: -1 });
+  // The insert's POOL. History alone is not enough: a cut can hold one plate
+  // for twenty seconds (hajimemashite shows a single scene across the whole
+  // bright act), and "anything but the plate on screen" is then empty. Draw
+  // from the song's keyword art and gallery too, and warm the first few so an
+  // insert never lands as a blank band waiting on a fetch.
+  const insertPool = useRef<string[]>([]);
+  useEffect(() => {
+    const set = new Set<string>();
+    for (const v of Object.values(art ?? {})) if (typeof v === "string") set.add(planetUrl(v));
+    for (const arr of Object.values(gallery ?? {})) for (const u of arr ?? []) set.add(planetUrl(u));
+    insertPool.current = [...set];
+    insertPool.current.slice(0, 6).forEach((u) => { const im = new Image(); im.src = u; });
+  }, [art, gallery]);
   useEffect(() => {
     if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("reel") === "1")
       P.set("reel.enabled", true, "code");
@@ -1406,6 +1469,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     let raf = 0;
     const tick = () => {
       const t = getCurrentTime();
+      songTimeRef.current = t;
       // ONE-SHOT resolver. Runs per frame but only ever calls setState when the
       // rendered key actually changes, so a 60fps tick costs no reconciles.
       {
@@ -1725,6 +1789,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             setWave((w) => w + 1);
             particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 70);
             navigator.vibrate?.([20, 30, 40]);
+            // THE DROP MAY CUT THE PICTURE. Drums returning from a silence is
+            // the strongest edit point the song offers, and the swap throttle
+            // would otherwise make the picture change a beat or two late — the
+            // single most "slideshow" thing a cut can do, arriving after the
+            // moment instead of on it. Clearing lastAt lets the next request
+            // land immediately; artSync's downbeat wait is skipped too,
+            // because the drop IS the beat worth landing on.
+            if (artSyncRef.current) swapCtl.current.lastAt = 0;
           }
         }
         // Riser → implosion charge → SUPERNOVA exactly on the drop. The ramp
@@ -1830,6 +1902,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           }
           // Move over the FIRST 55% of the bar, then hold. The hold is what
           // makes the next move read as a move.
+          // ── INSERT CADENCE ── ride the same bar counter the camera steps on,
+          // so the second plane cuts in on a downbeat the camera is also
+          // landing on rather than fighting it.
+          const ic = insertCfgRef.current;
+          if (ic && push >= ic.minPush) {
+            const ins = insertRef.current;
+            if (barNo !== ins.bar && barNo % ic.every === 0) {
+              ins.bar = barNo;
+              const pool = [...new Set([...shownArt.current, ...insertPool.current])]
+                .filter((u) => u !== bgArtRef.current);
+              if (pool.length) {
+                const pick = pool[Math.abs(Math.imul(barNo ^ 0x27d4eb2f, 0x165667b1)) % pool.length];
+                ins.until = t + ic.hold * pg.barSec;
+                setInsertArt({ img: pick, mode: ic.at, h: ic.height });
+              }
+            }
+            if (ins.until > 0 && t >= ins.until) { ins.until = -1; setInsertArt(null); }
+          }
           const p = Math.max(0, Math.min(1, (t - start) / (barLen * 0.55)));
           const e = p * p * (3 - 2 * p) * 0.35 + p * p * 0.65;          // accelerating, lands at 1
           camX = st.fromX + (st.toX - st.fromX) * e;
@@ -2196,6 +2286,29 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }
             : { opacity: reelGhost.on ? reelGhost.mix : 0, transition: "opacity 900ms ease",
                 mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }}
+        />
+      )}
+      {/* THE INSERT — a second plate, HARD CUT into a letterbox band on the
+          bar and gone again. No fade: a crossfade is what a slideshow does
+          between slides, and the point of this layer is to read as an edit.
+          Sits above the backdrop and below the reel ghost. Its band is the
+          same 40.625% geometry the reel uses, which is the lexicon's native
+          aspect in a 9:16 frame, so object-cover crops nothing. */}
+      {insertArt && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={insertArt.img}
+          alt=""
+          aria-hidden
+          // -z-[9]: directly above the backdrop (-z-10) and below EVERY text
+          // layer. At -z-[7] it fought the words for the middle of the frame
+          // instead of reading as a second picture behind them.
+          className="pointer-events-none fixed -z-[9] w-full object-cover"
+          style={insertArt.mode === "top"
+            ? { left: 0, right: 0, top: 0, height: `${insertArt.h}%` }
+            : insertArt.mode === "bottom"
+              ? { left: 0, right: 0, bottom: 0, height: `${insertArt.h}%` }
+              : { left: 0, right: 0, top: "50%", height: `${insertArt.h}%`, transform: "translateY(-50%)" }}
         />
       )}
       {/* Generated song art — crossfading Ken-Burns backdrop behind the words.

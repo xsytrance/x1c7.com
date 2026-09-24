@@ -1787,3 +1787,57 @@ unfalsifiable "looks about the same" into 14% vs 54% frames-still. Note there is
 no `<audio>`/`<video>` element on the studio page to read `currentTime` from —
 sample against wall clock.
 
+
+## 29 · Two pictures at once, and cutting on the song (2026-09-24)
+
+§28 made the camera land on the bar. This makes the PICTURE do the same, and
+puts a second image on screen for the first time in this engine's life.
+
+**`deck.artSync`** — a plate swap waits for the next DOWNBEAT instead of landing
+the instant the `swapMs` throttle expires. The throttle alone releases a swap at
+an arbitrary point in the bar, so the image advances like a slide rather than
+cutting like an edit. Capped at 1.5 bars of extra wait so a plate is never held
+hostage to a drifted grid, and it needs a trustworthy downbeat (§28's
+`barGrid` margin >= 0.15).
+
+**A drum return cuts the picture immediately.** When `cuts[]` ends — drums back
+after a silence — `artSync` clears `swapCtl.lastAt`, so the next request lands on
+the hit instead of a beat or two after it. Arriving late to the song's own
+biggest moment is the most slideshow thing a cut can do.
+
+**`deck.inserts`** — a SECOND plate, hard cut into a band every `every` bars and
+held for `hold`. `{ every, hold, at: "center"|"top"|"bottom", height, minPush }`.
+It rides the same bar counter `camSync` steps on, so the two land together
+rather than fighting. No crossfade anywhere in it: a crossfade is what a
+slideshow does between slides, and the whole point of the layer is to read as
+an edit.
+
+Three things this cost, all worth knowing:
+
+1. **Draw the insert from a real pool, not from history.** The first version
+   used only plates already painted, reasoning they would be warm in cache.
+   hajimemashite holds ONE plate (`scene-shine.webp`) for the entire bright act,
+   so "anything but what's on screen" was an empty set and the insert never
+   fired once. It now unions the shown-history with `assets.keywords` and the
+   gallery, and warms the first few.
+2. **`-z-[7]` was too high.** The band landed on top of the words and fought
+   them for the middle of the frame. `-z-[9]` puts it directly above the
+   backdrop (`-z-10`) and below every text layer, where it reads as a second
+   picture behind the words instead of an overlay on them. A 40.625% centred
+   band also competes with centred lyrics — `at: "bottom", height: 34` gives
+   the two planes their own territory.
+3. **A frozen probe looks exactly like a broken feature.** Debugging this in a
+   bare playwright page showed the trigger reached but never firing. The tell
+   was in the trace: `barNo` stuck at 41 forever while `push` never moved —
+   playback was frozen, so song time never advanced past one bar. The studio
+   page has no `<audio>`/`<video>` element to check `paused` on (§28), so
+   **watch for a stalled clock in the data itself** — a bar counter that never
+   increments is a stopped clock, not a dead branch. Verify in a real render,
+   which does play.
+
+Detecting an insert in stills without eyeballing every frame: compare mean luma
+just inside each band edge against just outside, and require BOTH seams. One
+seam alone fires constantly on ordinary art.
+
+Shipped: `hajimemashite-v8-vertical.mp4`, 1080x1920, 60.0s, A/V |error| median
+8ms / p95 13ms.
