@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number }; rush?: { dur?: number; minAir?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2045,6 +2045,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       }
     : m0;
   // Shape-morph: lexicon words morph when they have air; charged words fall back
+
   // to a glyph chosen from their EMOTION, so the brain's picks always land big.
   const airtime = idx >= 0 ? (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) : 0;
   // Signature effects, by priority. Each gated on the word having enough air.
@@ -2179,6 +2180,35 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         },
       }
     : wm;
+  // ── RUSH ── the mirror of DRAIN: the word ARRIVES out of the vanishing
+  // point instead of fading up where it stands. It starts tiny and blurred at
+  // the far end of the corridor and flies at the camera, landing on its own
+  // onset at full size.
+  //
+  // The curve ACCELERATES, which is what perspective actually does: something
+  // approaching at constant speed appears to move slowly while it is far away
+  // and then rush past. Landing at speed and stopping dead is the same grammar
+  // as the camera's "arrive" ease.
+  //
+  // Together with drain, the lyric becomes a stream the viewer flies through:
+  // words come out of the far end, pass, and are pulled away behind.
+  const rushCfg = deck?.rush;
+  const rushAir = rushCfg?.minAir ?? 0.28;
+  const wmFlight = rushCfg && dyn && idx >= 0
+    && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= rushAir
+    ? {
+        ...wmDrain,
+        initial: {
+          opacity: 0,
+          scale: 0.06,
+          x: `${(-dyn.x).toFixed(2)}vw`,
+          y: `${(-dyn.y).toFixed(2)}vh`,
+          filter: "blur(3px)",
+        },
+        animate: { opacity: 1, scale: 1, x: "0vw", y: "0vh", filter: "blur(0px)" },
+        transition: { duration: rushCfg.dur ?? 0.34, ease: [0.42, 0, 0.9, 0.7] },
+      }
+    : wmDrain;
   // Measured delivery: the singer's REAL energy on this word (lead-vocal
   // envelope from the stems) scales how big it lands. Belted words tower;
   // murmured ones stay close. 1 when the planet has no stems.
@@ -2941,7 +2971,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 // already landing. `rotate`/`translate` are independent CSS
                 // properties, so the tilt and drag physics still compose with
                 // the keyframe's transform.
-                const init = (wmDrain as MotionProps).initial as unknown as Record<string, unknown> | undefined;
+                const init = (wmFlight as MotionProps).initial as unknown as Record<string, unknown> | undefined;
                 const ax = typeof init?.x === "number" ? `${init.x}px` : typeof init?.x === "string" ? init.x : "0px";
                 const ay = typeof init?.y === "number" ? `${init.y}px` : typeof init?.y === "string" ? init.y : "0px";
                 const asc = typeof init?.scale === "number" ? init.scale : 1;
@@ -2972,7 +3002,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                   onPointerDown={wordDown}
                   onPointerUp={wordUp}
                   onPointerLeave={wordLeave}
-                  {...(wmDrain as MotionProps)}
+                  {...(wmFlight as MotionProps)}
                 >
                   {wordInner}
                 </m.div>

@@ -270,6 +270,19 @@ export interface PlanetDynamicPlus {
      * Pairs with `dynamicPlus.scene = "CORRIDOR"`, where the vanishing point
      * is real. */
     drain?: { dur?: number; minAir?: number };
+    /** RUSH — the mirror of `drain`: the word ARRIVES out of the vanishing
+     * point, starting tiny and blurred at the far end of the corridor and
+     * flying at the camera to land on its own onset at full size.
+     *
+     * The curve accelerates, because that is what perspective does — a thing
+     * approaching at constant speed appears slow while far away and then rushes
+     * past. Landing at speed and stopping dead is the same grammar as the
+     * camera's "arrive" ease.
+     *
+     * With `drain`, the lyric becomes a stream the viewer flies through: words
+     * come out of the far end, pass, and are pulled away behind. Same airtime
+     * gate, so the song chooses which words make the trip. */
+    rush?: { dur?: number; minAir?: number };
     /** A SECOND plate, hard-cut into a letterbox band every `every` bars and
      * held for `hold` bars. `minPush` gates it to sections above that energy.
      *
