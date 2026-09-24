@@ -264,6 +264,12 @@ export interface PlanetDynamicPlus {
      * words arrive, twist past and recede because time IS distance — none of
      * it is animated. One coordinate system for camera, corridor and text,
      * which is what every 3D bug in the CSS layer came from not having. */
+    /** THE WORD STUDY — drop the world entirely. A near-black void, one word
+     * at a time, and a camera that arcs around it while it is held. Each word
+     * is DISCOVERED (it turns in from edge-on, rises, is pushed at you, swings,
+     * drops or unfolds) with the treatment chosen by how hard it was sung, how
+     * far its note sits from the tonic, and whether the line is climbing. */
+    study?: boolean;
     world?: boolean | {
       /** corridor cross-section: square | triangle | pentagon | hex | octagon | ring.
        *  It is literally the torus's tubularSegments count — one number, a

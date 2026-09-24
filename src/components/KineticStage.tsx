@@ -21,6 +21,7 @@ import type { Lexicon } from "@/lib/lexicon/types";
 import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData, barGrid, barAt, type BarGrid } from "@/lib/stemSense";
 import dynamicImport from "next/dynamic";
 const WorldStage = dynamicImport(() => import("@/components/world/WorldStage"), { ssr: false });
+const WordStudy = dynamicImport(() => import("@/components/world/WordStudy"), { ssr: false });
 import { stemMixStore } from "@/lib/stemMix";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
@@ -393,7 +394,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; study?: boolean; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1039,6 +1040,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const bars: BarGrid | null = useMemo(() => (stems ? barGrid(stems) : null), [stems]);
   const barsPhased = bars && bars.margin >= 0.15 ? bars : null;
 
+  // What the STUDY needs to know about each word: how far its note sits from
+  // the tonic (tension) and whether the line is climbing (climb). Both already
+  // measured; this only reshapes them.
+  const studyWords = useMemo(() => {
+    const med = melody ? medianMidi({ v: 1, key: { root: "C", mode: "major", conf: 0 }, words: [...melody.words.values()] }) : 60;
+    return words.map((w, i) => {
+      const m = melody?.words.get(i);
+      if (!m) return { t: w.t, w: w.w };
+      const interval = (((m.pc - (melody?.tonic ?? 0)) % 12) + 12) % 12;
+      const cof = (interval * 7) % 12;
+      const signed = cof <= 6 ? cof : cof - 12;
+      return {
+        t: w.t, w: w.w,
+        midi: Math.max(-1, Math.min(1, (m.midi - med) / 10)),
+        tension: Math.abs(signed) / 6,
+      };
+    });
+  }, [words, melody]);
   const barsRef = useRef<BarGrid | null>(null);
   barsRef.current = bars;
   // True once a real tilt or mouse has moved the world. Until then the
@@ -2492,6 +2511,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }}
         />
       )}
+      {/* THE WORD STUDY — no world at all. A near-black void, one word, and a
+          camera that investigates it: every word discovered and explored
+          rather than presented against a background that competes with it. */}
+      {deck?.study && (
+        <WordStudy
+          getTime={getCurrentTime}
+          words={studyWords}
+          palette={palette}
+          stems={stems}
+          lag={stems?.align?.lag ?? 0}
+        />
+      )}
       {/* THE WORLD — a real three.js corridor with the lyric living INSIDE it.
           A word is placed at the distance its onset sits at, so it arrives,
           passes and recedes because time is distance; nothing is animated.
@@ -2712,7 +2743,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           a fade would soften exactly the thing the lyric is doing), then at
           collapseAt all three slide onto each other and the one he kept is the
           one left standing. */}
-      {soloShot && activeOneShot && (
+      {/* The solo one-shot is another whole lyric layer. With the study on,
+          the word in the void IS the show — a second set of names stacked over
+          it is the same "two systems at once" mistake wearing a new hat. */}
+      {soloShot && activeOneShot && !deck?.study && (
         <div className="pointer-events-none fixed inset-0 z-[38] flex items-center justify-center" aria-hidden>
           {soloShot.collapsed ? (
             <div className="relative flex items-center justify-center">
@@ -2899,7 +2933,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               // in the corridor; leaving the CSS layer up as well put a giant
               // word and four 3D words on screen together, which is exactly
               // what "messy and out of control" looked like.
-              opacity: soloOwnsStage || deck?.world ? 0 : 1,
+              opacity: soloOwnsStage || deck?.world || deck?.study ? 0 : 1,
               transition: "opacity 260ms ease",
               ...(deck?.rush || deck?.drain
                 ? {
