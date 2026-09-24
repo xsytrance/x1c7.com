@@ -42,32 +42,98 @@ function frameAt(s: number) {
 }
 
 const SPEED = 9;            // world units per second of song
-const RING_GAP = 4;         // one ring every this many units
 const AHEAD = 190, BEHIND = 26;
 
-function Rings({ colorA, colorB, getS }: { colorA: string; colorB: string; getS: () => number }) {
-  const n = Math.ceil((AHEAD + BEHIND) / RING_GAP);
-  const mesh = useRef<THREE.InstancedMesh>(null);
+// ── THE TUNNEL'S CROSS-SECTION ────────────────────────────────────────────
+// A torus whose tubularSegments count IS the shape: 4 is a square corridor,
+// 6 a hex, 40 a ring. One number, a completely different world — which is the
+// cheapest possible answer to "not every video should look the same".
+const SHAPES: Record<string, number> = {
+  square: 4, triangle: 3, pentagon: 5, hex: 6, octagon: 8, ring: 40,
+};
+export interface WorldLook {
+  shape?: keyof typeof SHAPES | string;
+  /** longitudinal rails running the length of the corridor — this is what
+   *  turns a stack of rungs into a GRID. 0 for bare rungs. */
+  rails?: number;
+  /** units between rungs — tight reads fast, wide reads vast */
+  gap?: number;
+  radius?: number;
+  /** degrees each successive rung is rotated: the corridor screws as it runs */
+  twist?: number;
+}
+/** Pick a look from the song's own id when the cut does not specify one, so
+ *  two songs never open on the same corridor by default. */
+function lookFor(seed: string, cfg: WorldLook | undefined): Required<WorldLook> {
+  let h = 2166136261;
+  for (let i = 0; i < seed.length; i++) h = Math.imul(h ^ seed.charCodeAt(i), 16777619);
+  const pick = <T,>(a: T[], k: number) => a[Math.abs(h >> k) % a.length];
+  return {
+    shape: cfg?.shape ?? pick(["square", "hex", "triangle", "octagon", "ring", "pentagon"], 3),
+    rails: cfg?.rails ?? pick([0, 4, 6, 8], 11),
+    gap: cfg?.gap ?? pick([2.6, 3.4, 4.2, 5.5], 17),
+    radius: cfg?.radius ?? pick([3.6, 4.2, 5.0], 23),
+    twist: cfg?.twist ?? pick([0, 0, 3, -5, 9], 7),
+  };
+}
+
+function Tunnel({ color, getS, look }: { color: string; getS: () => number; look: Required<WorldLook> }) {
+  const seg = SHAPES[look.shape] ?? 40;
+  const nRung = Math.ceil((AHEAD + BEHIND) / look.gap);
+  const railStep = 2.2;
+  const nRail = look.rails * Math.ceil((AHEAD + BEHIND) / railStep);
+  const rungs = useRef<THREE.InstancedMesh>(null);
+  const rails = useRef<THREE.InstancedMesh>(null);
   const dummy = useMemo(() => new THREE.Object3D(), []);
-  const geo = useMemo(() => new THREE.TorusGeometry(4.2, 0.045, 3, 40), []);
-  const mat = useMemo(() => new THREE.MeshBasicMaterial({ color: new THREE.Color(colorA), transparent: true, opacity: 0.55 }), [colorA]);
+  const m4 = useMemo(() => new THREE.Matrix4(), []);
+  const rungGeo = useMemo(() => new THREE.TorusGeometry(look.radius, 0.05, 3, seg), [look.radius, seg]);
+  const railGeo = useMemo(() => new THREE.BoxGeometry(0.05, 0.05, railStep * 0.94), []);
+  const mat = useMemo(() => new THREE.MeshBasicMaterial({ color: new THREE.Color(color), transparent: true, opacity: 0.6 }), [color]);
+
   useFrame(() => {
-    const m = mesh.current; if (!m) return;
     const s0 = getS();
-    const first = Math.floor((s0 - BEHIND) / RING_GAP);
-    for (let i = 0; i < n; i++) {
-      const s = (first + i) * RING_GAP;
-      const f = frameAt(s);
-      dummy.position.copy(f.here);
-      dummy.quaternion.setFromRotationMatrix(new THREE.Matrix4().lookAt(new THREE.Vector3(), f.fwd, f.up));
-      const fade = 1 - Math.min(1, Math.max(0, (s - s0) / AHEAD));
-      dummy.scale.setScalar(1 + (1 - fade) * 0.12);
-      dummy.updateMatrix();
-      m.setMatrixAt(i, dummy.matrix);
+    const R = rungs.current;
+    if (R) {
+      const first = Math.floor((s0 - BEHIND) / look.gap);
+      for (let i = 0; i < nRung; i++) {
+        const s = (first + i) * look.gap;
+        const f = frameAt(s);
+        dummy.position.copy(f.here);
+        dummy.quaternion.setFromRotationMatrix(m4.lookAt(new THREE.Vector3(), f.fwd, f.up));
+        dummy.rotateZ((s / look.gap) * look.twist * Math.PI / 180);
+        dummy.scale.setScalar(1);
+        dummy.updateMatrix();
+        R.setMatrixAt(i, dummy.matrix);
+      }
+      R.instanceMatrix.needsUpdate = true;
     }
-    m.instanceMatrix.needsUpdate = true;
+    const L = rails.current;
+    if (L && look.rails > 0) {
+      const first = Math.floor((s0 - BEHIND) / railStep);
+      let n = 0;
+      for (let i = 0; i < Math.ceil((AHEAD + BEHIND) / railStep); i++) {
+        const s = (first + i) * railStep;
+        const f = frameAt(s);
+        const roll = (s / look.gap) * look.twist * Math.PI / 180;
+        for (let r = 0; r < look.rails; r++) {
+          const a = (r / look.rails) * Math.PI * 2 + roll;
+          dummy.position.copy(f.here)
+            .addScaledVector(f.right, Math.cos(a) * look.radius)
+            .addScaledVector(f.up, Math.sin(a) * look.radius);
+          dummy.quaternion.setFromRotationMatrix(m4.lookAt(new THREE.Vector3(), f.fwd, f.up));
+          dummy.updateMatrix();
+          L.setMatrixAt(n++, dummy.matrix);
+        }
+      }
+      L.instanceMatrix.needsUpdate = true;
+    }
   });
-  return <instancedMesh ref={mesh} args={[geo, mat, n]} frustumCulled={false} />;
+  return (
+    <>
+      <instancedMesh ref={rungs} args={[rungGeo, mat, nRung]} frustumCulled={false} />
+      {look.rails > 0 && <instancedMesh ref={rails} args={[railGeo, mat, nRail]} frustumCulled={false} />}
+    </>
+  );
 }
 
 function Words({ words, getS, color, stems, lag }: {
@@ -145,14 +211,18 @@ function Rig({ getTime }: { getTime: () => number }) {
   return null;
 }
 
-export default function WorldStage({ getTime, words, palette, stems, lag = 0 }: {
+export default function WorldStage({ getTime, words, palette, stems, lag = 0, look, seed = "" }: {
   getTime: () => number;
   words: WorldWord[];
   palette: string[];
   stems: StemData | null;
   lag?: number;
+  look?: WorldLook;
+  /** the song id — decides the default corridor when the cut names none */
+  seed?: string;
 }) {
-  const a = palette[0] ?? "#E8A33D", b = palette[1] ?? a;
+  const a = palette[0] ?? "#E8A33D";
+  const shape = useMemo(() => lookFor(seed, look), [seed, look]);
   const getS = () => getTime() * SPEED;
   return (
     <div className="pointer-events-none fixed inset-0 -z-[9]">
@@ -160,7 +230,7 @@ export default function WorldStage({ getTime, words, palette, stems, lag = 0 }: 
               onCreated={({ gl }) => gl.setClearColor("#05040a", 1)}>
         <fog attach="fog" args={["#05040a", 30, 190]} />
         <Rig getTime={getTime} />
-        <Rings colorA={a} colorB={b} getS={getS} />
+        <Tunnel color={a} getS={getS} look={shape} />
         <Words words={words} getS={getS} color={a} stems={stems} lag={lag} />
       </Canvas>
     </div>

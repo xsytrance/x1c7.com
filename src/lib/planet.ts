@@ -264,7 +264,20 @@ export interface PlanetDynamicPlus {
      * words arrive, twist past and recede because time IS distance — none of
      * it is animated. One coordinate system for camera, corridor and text,
      * which is what every 3D bug in the CSS layer came from not having. */
-    world?: boolean;
+    world?: boolean | {
+      /** corridor cross-section: square | triangle | pentagon | hex | octagon | ring.
+       *  It is literally the torus's tubularSegments count — one number, a
+       *  completely different world. */
+      shape?: string;
+      /** longitudinal rails down the corridor: this is what turns a stack of
+       *  rungs into a GRID. 0 for bare rungs. */
+      rails?: number;
+      /** units between rungs — tight reads fast, wide reads vast */
+      gap?: number;
+      radius?: number;
+      /** degrees each successive rung is rotated: the corridor screws as it runs */
+      twist?: number;
+    };
     /** DRAIN — sung words travel to the vanishing point instead of fading where
      * they stand: they shrink, blur and ACCELERATE away down the corridor.
      *
