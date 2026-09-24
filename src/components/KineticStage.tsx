@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2152,6 +2152,33 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
     : null;
   const dyn = dynRaw;
+  // ── DRAIN ── the word is pulled DOWN THE CORRIDOR once it is sung: it
+  // travels to the vanishing point, shrinking and accelerating, instead of
+  // fading where it stands. A word already carries its own off-centre offset
+  // (dyn.x/dyn.y in vw/vh), so the trip back to the vanishing point is exactly
+  // the negation of that — no new geometry, and charged words, which sit dead
+  // centre, simply recede on the spot.
+  //
+  // Gated on AIRTIME, so only words with room get sucked: under ~0.28s there is
+  // no time to read the travel and the word should just go, the same reasoning
+  // that makes the guide skate instead of bouncing on fast runs.
+  const drainCfg = deck?.drain;
+  const drainAir = drainCfg?.minAir ?? 0.28;
+  const wmDrain = drainCfg && dyn && idx >= 0
+    && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= drainAir
+    ? {
+        ...wm,
+        exit: {
+          opacity: 0,
+          scale: 0.05,
+          x: `${(-dyn.x).toFixed(2)}vw`,
+          y: `${(-dyn.y).toFixed(2)}vh`,
+          filter: "blur(2px)",
+          // accelerating, so it reads as PULLED rather than as drifting away
+          transition: { duration: drainCfg.dur ?? 0.62, ease: [0.36, 0, 0.92, 0.6] },
+        },
+      }
+    : wm;
   // Measured delivery: the singer's REAL energy on this word (lead-vocal
   // envelope from the stems) scales how big it lands. Belted words tower;
   // murmured ones stay close. 1 when the planet has no stems.
@@ -2914,7 +2941,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 // already landing. `rotate`/`translate` are independent CSS
                 // properties, so the tilt and drag physics still compose with
                 // the keyframe's transform.
-                const init = (wm as MotionProps).initial as unknown as Record<string, unknown> | undefined;
+                const init = (wmDrain as MotionProps).initial as unknown as Record<string, unknown> | undefined;
                 const ax = typeof init?.x === "number" ? `${init.x}px` : typeof init?.x === "string" ? init.x : "0px";
                 const ay = typeof init?.y === "number" ? `${init.y}px` : typeof init?.y === "string" ? init.y : "0px";
                 const asc = typeof init?.scale === "number" ? init.scale : 1;
@@ -2945,7 +2972,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                   onPointerDown={wordDown}
                   onPointerUp={wordUp}
                   onPointerLeave={wordLeave}
-                  {...(wm as MotionProps)}
+                  {...(wmDrain as MotionProps)}
                 >
                   {wordInner}
                 </m.div>

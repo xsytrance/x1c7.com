@@ -258,6 +258,18 @@ export interface PlanetDynamicPlus {
      * Dynamic mode only for now — phrase mode lays words out in a line rather
      * than at a computable position. */
     guide?: { size?: number };
+    /** DRAIN — sung words travel to the vanishing point instead of fading where
+     * they stand: they shrink, blur and ACCELERATE away down the corridor.
+     *
+     * A dynamic word already carries its own off-centre offset, so the trip
+     * back to the vanishing point is the exact negation of it — no new
+     * geometry. Charged words sit dead centre and simply recede on the spot.
+     * Gated on airtime (`minAir`, default 0.28s) so only words with room get
+     * pulled; under that there is no time to read the travel, the same
+     * reasoning that makes the guide skate rather than bounce on fast runs.
+     * Pairs with `dynamicPlus.scene = "CORRIDOR"`, where the vanishing point
+     * is real. */
+    drain?: { dur?: number; minAir?: number };
     /** A SECOND plate, hard-cut into a letterbox band every `every` bars and
      * held for `hold` bars. `minPush` gates it to sections above that energy.
      *
