@@ -2895,7 +2895,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               and the browser was quietly projecting it all back to zero. */}
           <div
             style={{
-              opacity: soloOwnsStage ? 0 : 1,
+              // ONE lyric system at a time. With the world on, the words live
+              // in the corridor; leaving the CSS layer up as well put a giant
+              // word and four 3D words on screen together, which is exactly
+              // what "messy and out of control" looked like.
+              opacity: soloOwnsStage || deck?.world ? 0 : 1,
               transition: "opacity 260ms ease",
               ...(deck?.rush || deck?.drain
                 ? {

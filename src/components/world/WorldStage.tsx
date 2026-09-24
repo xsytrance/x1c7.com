@@ -178,20 +178,37 @@ function Tunnel({ color, getS, look }: { color: string; getS: () => number; look
   );
 }
 
+// ── WORDS IN THE WORLD ─────────────────────────────────────────────────────
+// The window matters more than anything else here. It was AHEAD (190 units)
+// wide, which at 9 units a second is TWENTY-ONE SECONDS of lyric standing in
+// the corridor at once — fourteen words at fourteen sizes and angles, over a
+// CSS layer already showing its own. Unreadable, and correctly called messy.
+//
+// A few words on the road ahead, receding, fading in from the far end and
+// gone shortly after they pass. The CSS layer stays the one you READ; this is
+// the one that gives the lyric somewhere to be.
+const WORD_AHEAD = 34;      // units ≈ 3.8s of song
+const WORD_BEHIND = 3;      // barely past the camera before it lets go
+const SLOTS = 4;
+
 function Words({ words, getS, color, stems, lag }: {
   words: WorldWord[]; getS: () => number; color: string; stems: StemData | null; lag: number;
 }) {
   const group = useRef<THREE.Group>(null);
-  const SLOTS = 14;
   const slots = useRef<{ i: number }[]>(Array.from({ length: SLOTS }, () => ({ i: -1 })));
   const refs = useRef<(THREE.Object3D | null)[]>([]);
   useFrame(() => {
     const s0 = getS();
-    // the words whose distance places them inside the visible run
     const vis: number[] = [];
+    // Thin out fast runs: in a dense passage five words arrive inside a second
+    // and stack on top of each other. Keep only words far enough apart to be
+    // read as separate things in space.
+    let lastS = -1e9;
     for (let i = 0; i < words.length && vis.length < SLOTS; i++) {
       const s = words[i].t * SPEED;
-      if (s > s0 - BEHIND && s < s0 + AHEAD) vis.push(i);
+      if (s <= s0 - WORD_BEHIND || s >= s0 + WORD_AHEAD) continue;
+      if (s - lastS < 5.5) continue;
+      lastS = s; vis.push(i);
     }
     for (let k = 0; k < SLOTS; k++) {
       const o = refs.current[k]; if (!o) continue;
@@ -201,24 +218,23 @@ function Words({ words, getS, color, stems, lag }: {
       o.visible = true;
       const s = words[wi].t * SPEED;
       const f = frameAt(s);
-      // scatter around the tunnel wall, stable per word
       const a = wi * 2.399963;                                  // golden angle
-      // out near the tunnel WALL (radius 4.2), not hugging the camera's own
-      // path — at radius ~1 a word passes straight through the lens and eats
-      // the whole frame on its way by.
       const rad = 2.4 + ((wi * 37) % 19) / 19 * 1.5;
       o.position.copy(f.here)
         .addScaledVector(f.right, Math.cos(a) * rad)
         .addScaledVector(f.up, Math.sin(a) * rad * 0.7);
-      // face the camera's travel, then TWIST — tumble as it comes at you,
-      // strongest just before it passes
-      const d = s - s0;
-      const twist = Math.max(0, 1 - Math.abs(d) / 40);
+      const d = s - s0;                                         // + ahead, - passed
       o.quaternion.setFromRotationMatrix(new THREE.Matrix4().lookAt(new THREE.Vector3(), f.fwd, f.up));
-      o.rotateZ(Math.sin(wi * 1.7 + d * 0.05) * 0.5 * twist);
-      o.rotateX(Math.cos(wi * 2.3 + d * 0.04) * 0.35 * twist);
+      // a lean, not a tumble — fourteen tumbling words was the chaos
+      const twist = Math.max(0, 1 - Math.abs(d) / WORD_AHEAD);
+      o.rotateZ(Math.sin(wi * 1.7) * 0.22 * twist);
       const loud = stems ? envAt(stems, "lead", words[wi].t + lag + 0.18) : 0.5;
-      o.scale.setScalar(0.85 + loud * 0.5);
+      o.scale.setScalar(0.8 + loud * 0.35);
+      // fade IN from the far end, and let go quickly once it is behind you
+      const fadeIn = Math.min(1, Math.max(0, (WORD_AHEAD - d) / (WORD_AHEAD * 0.55)));
+      const fadeOut = d < 0 ? Math.max(0, 1 + d / WORD_BEHIND) : 1;
+      const mat = (o as unknown as { fillOpacity?: number });
+      mat.fillOpacity = Math.min(fadeIn, fadeOut) * 0.85;
     }
   });
   return (
@@ -227,11 +243,11 @@ function Words({ words, getS, color, stems, lag }: {
         <Text
           key={k}
           ref={(el) => { refs.current[k] = el as unknown as THREE.Object3D; }}
-          fontSize={0.92}
+          fontSize={0.78}
           color={color}
           anchorX="center"
           anchorY="middle"
-          outlineWidth={0.012}
+          outlineWidth={0.01}
           outlineColor="#000"
         >
           {words[slots.current[k].i]?.w ?? ""}
