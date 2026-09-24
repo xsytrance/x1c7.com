@@ -1,0 +1,102 @@
+<!doctype html><meta charset="utf-8">
+<style>
+:root{ --gold:#E8A33D; --pale:#F6D66B; --dim:#6b5a33; --bg:#08070b; }
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:Helvetica Neue,Helvetica,Arial,sans-serif;color:var(--gold)}
+.grid{display:grid;grid-template-columns:repeat(3,360px);grid-auto-rows:640px;gap:6px;padding:6px;background:#000}
+.tile{position:relative;background:var(--bg);overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cap{position:absolute;top:10px;left:12px;font-size:12px;letter-spacing:.14em;color:#8a7a52;text-transform:uppercase}
+.sub{position:absolute;bottom:12px;left:12px;right:12px;font-size:11px;line-height:1.5;color:#5d5struct;color:#57destroy}
+.sub{color:#5a5140}
+.w{font-weight:600;letter-spacing:-.01em}
+/* 1 — staff */
+.staff{position:relative;width:300px;height:220px}
+.line{position:absolute;left:0;right:0;height:1px;background:#2e2a22}
+.line.tonic{background:#4a3f22}
+/* 3 — weight + skew */
+.skew{display:inline-block}
+/* 4 — chord frame */
+svg{overflow:visible}
+</style>
+<div class="grid">
+
+<!-- 1 · PITCH ON A STAFF -->
+<div class="tile"><div class="cap">1 · pitch — the word sits at its note</div>
+  <div class="staff">
+    <div class="line" style="top:20px"></div><div class="line" style="top:60px"></div>
+    <div class="line tonic" style="top:100px"></div>
+    <div class="line" style="top:140px"></div><div class="line" style="top:180px"></div>
+    <div style="position:absolute;top:44px;left:0;right:0;text-align:center">
+      <span class="w" style="font-size:54px">swung</span>
+    </div>
+    <div style="position:absolute;top:96px;left:-6px;font-size:11px;color:#6b5a33">C</div>
+  </div>
+  <div class="sub">height = the sung note against the tonic line. reading the word reads the tune.</div>
+</div>
+
+<!-- 2 · DEGREE + BASS -->
+<div class="tile"><div class="cap">2 · degree above, bass below</div>
+  <div style="text-align:center">
+    <div style="font-size:20px;color:var(--pale);letter-spacing:.1em">3</div>
+    <div class="w" style="font-size:62px;line-height:1.05">swung</div>
+    <div style="font-size:19px;color:#8a7a52;letter-spacing:.08em">D</div>
+  </div>
+  <div class="sub">what it is harmonically (a major 3rd) over what it stands on (a D bass).</div>
+</div>
+
+<!-- 3 · WEIGHT = ENSEMBLE, SKEW = TENSION -->
+<div class="tile"><div class="cap">3 · weight = band · skew = tension</div>
+  <div style="text-align:center">
+    <div class="w skew" style="font-size:58px;font-weight:800;transform:skewX(-11deg)">swung</div>
+    <div style="margin-top:16px;font-size:11px;color:#5a5140">5 of 9 stems · tension .67</div>
+  </div>
+  <div class="sub">bold because the band is full. leaning because the note fights the key.</div>
+</div>
+
+<!-- 4 · CHORD AS FRAME -->
+<div class="tile"><div class="cap">4 · the chord is the frame</div>
+  <svg width="300" height="260" viewBox="0 0 300 260">
+    <polygon points="150,34 262,214 38,214" fill="none" stroke="#4a3f22" stroke-width="1.5"/>
+    <circle cx="150" cy="34" r="4" fill="#8a7a52"/><circle cx="262" cy="214" r="4" fill="#8a7a52"/>
+    <circle cx="38" cy="214" r="4" fill="#8a7a52"/>
+    <text x="150" y="150" text-anchor="middle" font-size="52" font-weight="600" fill="#E8A33D"
+          font-family="Helvetica Neue,Helvetica,Arial">swung</text>
+    <text x="150" y="26" text-anchor="middle" font-size="12" fill="#6b5a33">D</text>
+    <text x="272" y="222" font-size="12" fill="#6b5a33">A</text>
+    <text x="18" y="222" font-size="12" fill="#6b5a33">F</text>
+  </svg>
+  <div class="sub">the triad drawn around the word. major sits square, minor leans, diminished collapses.</div>
+</div>
+
+<!-- 5 · STEM SIGILS -->
+<div class="tile"><div class="cap">5 · sigils — who is playing</div>
+  <div style="position:relative;text-align:center">
+    <div style="position:absolute;top:-30px;left:0;right:0;height:3px">
+      <div style="margin:0 auto;width:120px;height:3px;background:#8a7a52;opacity:.74"></div></div>
+    <div class="w" style="font-size:56px">swung</div>
+    <div style="margin-top:10px;height:7px;background:linear-gradient(90deg,transparent,#E8A33D,transparent);opacity:.87"></div>
+    <div style="margin-top:12px;display:flex;gap:7px;justify-content:center">
+      <span style="width:7px;height:7px;background:#6b5a33;opacity:.05"></span>
+      <span style="width:7px;height:7px;background:#8a7a52;opacity:.74"></span>
+      <span style="width:7px;height:7px;background:#8a7a52;opacity:.65"></span>
+    </div>
+  </div>
+  <div class="sub">bar under = bass · halo over = synth · ticks = drums, perc, strings. the arrangement, visible.</div>
+</div>
+
+<!-- 6 · THE FULL RUNE -->
+<div class="tile"><div class="cap">6 · the rune — all of it at once</div>
+  <div class="staff" style="height:260px">
+    <div class="line" style="top:40px"></div><div class="line tonic" style="top:120px"></div>
+    <div class="line" style="top:200px"></div>
+    <div style="position:absolute;top:56px;left:0;right:0;text-align:center">
+      <div style="font-size:17px;color:var(--pale)">3</div>
+      <div class="w" style="font-size:58px;font-weight:800;transform:skewX(-11deg);line-height:1.02">swung</div>
+      <div style="margin:4px auto 0;width:128px;height:5px;background:#8a7a52;opacity:.87"></div>
+      <div style="font-size:15px;color:#8a7a52;margin-top:3px">D</div>
+    </div>
+  </div>
+  <div class="sub">pitch height · degree · skew · weight · bass bar. three channels per song, not five.</div>
+</div>
+
+</div>
