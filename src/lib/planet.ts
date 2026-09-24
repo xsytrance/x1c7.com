@@ -277,6 +277,10 @@ export interface PlanetDynamicPlus {
       radius?: number;
       /** degrees each successive rung is rotated: the corridor screws as it runs */
       twist?: number;
+      /** false keeps the bare wireframe corridor */
+      surface?: boolean;
+      /** seconds of lead time before an upcoming word becomes visible */
+      reveal?: number;
     };
     /** DRAIN — sung words travel to the vanishing point instead of fading where
      * they stand: they shrink, blur and ACCELERATE away down the corridor.

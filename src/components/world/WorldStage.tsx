@@ -63,6 +63,9 @@ export interface WorldLook {
   twist?: number;
   /** false keeps the bare wireframe corridor */
   surface?: boolean;
+  /** seconds of lead time before a word becomes visible. Small keeps the
+   *  corridor empty until the lyric needs it; large shows the road ahead. */
+  reveal?: number;
 }
 /** Pick a look from the song's own id when the cut does not specify one, so
  *  two songs never open on the same corridor by default. */
@@ -77,6 +80,7 @@ function lookFor(seed: string, cfg: WorldLook | undefined): Required<WorldLook> 
     radius: cfg?.radius ?? pick([3.6, 4.2, 5.0], 23),
     twist: cfg?.twist ?? pick([0, 0, 3, -5, 9], 7),
     surface: cfg?.surface ?? true,
+    reveal: cfg?.reveal ?? 1.5,
   };
 }
 
@@ -187,13 +191,14 @@ function Tunnel({ color, getS, look }: { color: string; getS: () => number; look
 // A few words on the road ahead, receding, fading in from the far end and
 // gone shortly after they pass. The CSS layer stays the one you READ; this is
 // the one that gives the lyric somewhere to be.
-const WORD_AHEAD = 34;      // units ≈ 3.8s of song
+const WORD_AHEAD = 34;      // units ≈ 3.8s — how far ahead a word is PLACED
 const WORD_BEHIND = 3;      // barely past the camera before it lets go
 const SLOTS = 4;
 
-function Words({ words, getS, color, stems, lag }: {
-  words: WorldWord[]; getS: () => number; color: string; stems: StemData | null; lag: number;
+function Words({ words, getS, color, stems, lag, reveal }: {
+  words: WorldWord[]; getS: () => number; color: string; stems: StemData | null; lag: number; reveal: number;
 }) {
+  const revealS = reveal * SPEED;   // seconds of lead time, in world units
   const group = useRef<THREE.Group>(null);
   const slots = useRef<{ i: number }[]>(Array.from({ length: SLOTS }, () => ({ i: -1 })));
   const refs = useRef<(THREE.Object3D | null)[]>([]);
@@ -230,11 +235,25 @@ function Words({ words, getS, color, stems, lag }: {
       o.rotateZ(Math.sin(wi * 1.7) * 0.22 * twist);
       const loud = stems ? envAt(stems, "lead", words[wi].t + lag + 0.18) : 0.5;
       o.scale.setScalar(0.8 + loud * 0.35);
-      // fade IN from the far end, and let go quickly once it is behind you
-      const fadeIn = Math.min(1, Math.max(0, (WORD_AHEAD - d) / (WORD_AHEAD * 0.55)));
+      // ── REVEAL LATE ───────────────────────────────────────────────────
+      // Placing a word far down the corridor is not the same as SHOWING it.
+      // A linear fade across the whole 3.8s run meant every upcoming word was
+      // faintly legible the moment it was placed, so the corridor always had
+      // the next few lines hanging in it. Hold each one at nothing until its
+      // moment is close, then bring it up fast: squared, so it stays dark for
+      // most of the approach and arrives rather than drifts in.
+      // Reaching full brightness at d = 0 is wrong: d = 0 is the moment the
+      // camera ARRIVES at the word, and a word behind the camera cannot be
+      // read. Its readable moment is the approach. So come up to full a third
+      // of the way in and HOLD there until it passes — appear late, but be
+      // properly lit for the whole time the word is actually worth reading.
+      const p = Math.max(0, Math.min(1, (revealS - d) / Math.max(1e-3, revealS * 0.62)));
+      const fadeIn = p * p;
       const fadeOut = d < 0 ? Math.max(0, 1 + d / WORD_BEHIND) : 1;
       const mat = (o as unknown as { fillOpacity?: number });
-      mat.fillOpacity = Math.min(fadeIn, fadeOut) * 0.85;
+      mat.fillOpacity = Math.min(fadeIn, fadeOut) * 0.9;
+      // nothing to draw yet — keep it out of the frame entirely
+      if (fadeIn <= 0.004) o.visible = false;
     }
   });
   return (
@@ -293,7 +312,7 @@ export default function WorldStage({ getTime, words, palette, stems, lag = 0, lo
           <Surface palette={palette} spanS={spanS} radius={shape.radius} />
         )}
         <Tunnel color={a} getS={getS} look={shape} />
-        <Words words={words} getS={getS} color={a} stems={stems} lag={lag} />
+        <Words words={words} getS={getS} color={a} stems={stems} lag={lag} reveal={shape.reveal} />
       </Canvas>
     </div>
   );
