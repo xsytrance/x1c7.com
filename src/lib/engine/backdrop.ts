@@ -331,8 +331,67 @@ void main() {
   fragColor = vec4(col, 1.0);
 }`;
 
-export const BACKDROP_SCENES = ["AURORA", "EMBERS", "INK", "SYRUP"] as const;
-const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS, SYRUP_FS];
+// ── SCENE 5: CORRIDOR — the one you TRAVEL DOWN (pin-only, never AUTO) ─────
+// Every other scene is weather: it moves, but the viewer does not. Panning a
+// flat plate has the same problem — sliding a postcard is not travelling. This
+// one has a vanishing point and real perspective, so the camera goes somewhere.
+//
+// Floor, ceiling and both walls are analytic planes: for a pixel at height py
+// the plane is d = k/py away, the world point is (p.x*d, d + travel), and a
+// grid on that world scrolls toward you. Forward speed surges with the bass;
+// every kick sends a bright rung flying down the corridor at you; the
+// vanishing point leans toward the word being sung, so the lyric steers the
+// flight. Distance fog does the rest.
+const CORRIDOR_FS = SCENE_HEADER + `
+// one grid line per world unit, width tracking the derivative so the far end
+// stays smooth instead of aliasing into noise
+float rung(float w, float soft) {
+  float lw = fwidth(w) * 1.6 + soft;
+  return 1.0 - smoothstep(0.0, lw, abs(fract(w) - 0.5));
+}
+void main() {
+  vec2 p = vUv - 0.5;
+  p.x *= uRes.x / max(uRes.y, 1.0);
+  // the corridor leans toward the sung word — the lyric steers the flight
+  p -= (uWord - 0.5) * vec2(0.13, 0.09) * uWordPulse;
+
+  // FORWARD MOTION. uBeatPhase adds a lurch on each beat so the travel is felt
+  // in the music's own time rather than as constant drift.
+  float travel = uTime * (1.5 + uBass * 2.6 + uCharge * 3.0)
+               + uBeatPhase * 0.30 + uSeed * 37.0;
+
+  vec3 col = vec3(0.0);
+  vec3 near = keyColor(uPal0);           // the tonic owns what is closest
+  float lit = 0.20 + uLevel * 0.55 + uBeat * 0.22;
+
+  // floor + ceiling, then the two walls: same maths on swapped axes
+  for (int s = 0; s < 4; s++) {
+    float v = (s < 2 ? p.y : p.x) * ((s == 0 || s == 2) ? 1.0 : -1.0);
+    float u = (s < 2 ? p.x : p.y);
+    if (v <= 0.006) continue;
+    float d = 0.34 / v;                              // distance along the flight
+    float wu = u * d;
+    float wz = d + travel;
+    float g = max(rung(wu, 0.004), rung(wz, 0.004));
+    float fog = exp(-d * 0.155);                     // the far end falls away
+    vec3 tint = mix(uPal2, s < 2 ? near : uPal1, fog);
+    col += tint * g * fog * lit;
+    // a KICK throws a bright rung down the corridor toward the viewer
+    float pulseZ = travel + 5.0 - uKick * 5.0;
+    col += tint * exp(-pow(wz - pulseZ, 2.0) * 1.6) * uKick * fog * 0.85;
+    col += tint * fog * 0.035 * (0.5 + uBed);        // faint surface wash
+  }
+
+  // the void straight ahead: stars, so the vanishing point is not a dead hole
+  float star = step(0.9977, hash21(floor(vUv * uRes / 2.5) + floor(uSeed * 90.0)));
+  col += vec3(star) * (0.16 + uDrums * 0.5) * smoothstep(0.35, 0.0, length(p));
+  col += near * uCharge * 0.22 * smoothstep(0.5, 0.0, length(p));   // riser glow ahead
+
+  fragColor = vec4(col * uIntensity, 1.0);
+}`;
+
+export const BACKDROP_SCENES = ["AURORA", "EMBERS", "INK", "SYRUP", "CORRIDOR"] as const;
+const SCENE_SOURCES = [AURORA_FS, EMBERS_FS, INK_FS, SYRUP_FS, CORRIDOR_FS];
 const BUILTIN_COUNT = SCENE_SOURCES.length;
 // AUTO's hash pool stays at the original three — appending a scene must NEVER
 // reshuffle the stable world every existing song already owns. New scenes are
