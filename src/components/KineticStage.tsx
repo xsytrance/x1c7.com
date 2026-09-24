@@ -181,6 +181,28 @@ function stagecraft(idx: number, f: { charged: boolean; final: boolean; mono: bo
   };
 }
 
+// A motion smear pointing back down the ray a word travels along. The word's
+// own off-centre offset gives the direction for free: it moves away from the
+// vanishing point through its own position, so the trail is the negation of
+// that, in em so it scales with the glyph as it swells.
+// z that puts a word at a given APPARENT scale under a given perspective lens.
+// scale = lens / (lens - z)  =>  z = lens * (1 - 1/scale)
+function zAt(lens: number, scale: number): number {
+  return lens * (1 - 1 / Math.max(1.001, scale));
+}
+
+function streakShadow(d: { x: number; y: number } | null, amt: number): string {
+  if (!d || amt <= 0) return "0 0 0 rgba(0,0,0,0)";
+  const len = Math.hypot(d.x, d.y) || 1;
+  const ux = -d.x / len, uy = -d.y / len;
+  const out: string[] = [];
+  for (let i = 1; i <= 4; i++) {
+    const k = (i / 4) * amt * 0.55;
+    out.push(`${(ux * k).toFixed(3)}em ${(uy * k).toFixed(3)}em 0 rgba(255,255,255,${(0.20 * (1 - i / 5) * amt).toFixed(3)})`);
+  }
+  return out.join(", ");
+}
+
 // The "director": each emotion gets its own entrance so words MOVE to the feeling.
 // A snappy exit shared by all treatments so consecutive words never overlap/smear.
 const EXIT_T = { duration: 0.22, ease: "easeIn" };
@@ -369,7 +391,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number }; rush?: { dur?: number; minAir?: number; far?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2165,6 +2187,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // that makes the guide skate instead of bouncing on fast runs.
   const drainCfg = deck?.drain;
   const drainAir = drainCfg?.minAir ?? 0.28;
+  const lens = drainCfg?.lens ?? 900;
+  const swell = Math.max(1.2, drainCfg?.swell ?? 4.5);
   const wmDrain = drainCfg && dyn && idx >= 0
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= drainAir
     ? {
@@ -2181,12 +2205,29 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               // fly-past read as a plain fade: you never saw the part that
               // sells it. Perspective 900 with near 780 is a ~7.5x swell, so
               // the last frames are the word leaving through the frame edge.
+              // KEYFRAME IN APPARENT SCALE, NOT IN Z. Perspective scale is
+              // lens/(lens - z), which is almost flat for most of the travel and
+              // then explodes in the last few percent — so stepping z evenly
+              // spends the whole visible exit at ~2x and does the spectacular
+              // part after the word has faded. Invert it instead: choose the
+              // scales you want to SEE and solve for the z that produces them.
+              // Measured before this change: peak word area 5.6x the median,
+              // about 2.4x linear, against a configured 22x.
               opacity: [1, 1, 0],
-              z: [0, (drainCfg.near ?? 780) * 0.5, drainCfg.near ?? 780],
-              filter: ["blur(0px)", "blur(2px)", "blur(7px)"],
+              z: [0, zAt(lens, 1 + (swell - 1) * 0.6), zAt(lens, swell)],
+              filter: ["blur(0px)", "blur(1.5px)", "blur(8px)"],
+              // STREAK. Isotropic blur says "out of focus"; speed is sold by a
+              // smear along the direction of travel. The word's own offset IS
+              // that direction (it travels along the ray from the vanishing
+              // point through where it sits), so trail four copies back down
+              // that ray. Offsets are in em, so the streak grows with the word
+              // as it swells instead of staying a fixed pixel size.
+              textShadow: [streakShadow(dyn, 0), streakShadow(dyn, 0.5), streakShadow(dyn, 1)],
               transition: {
-                duration: drainCfg.dur ?? 0.5,
-                times: [0, 0.62, 1],
+                duration: drainCfg.dur ?? 0.7,
+                // opaque for 78% of the flight, so the swell is watched rather
+                // than merely configured
+                times: [0, 0.78, 1],
                 ease: [0.34, 0, 0.88, 0.72],
               },
             }
@@ -2741,7 +2782,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         <div
           className="relative flex min-h-[34vh] items-center justify-center"
           style={deck?.rush || deck?.drain
-            ? { perspective: "900px", perspectiveOrigin: "50% 50%", transformStyle: "preserve-3d" }
+            ? {
+                perspective: `${deck?.drain?.lens ?? deck?.rush?.lens ?? 900}px`,
+                // NOT dead centre. With the origin on the word's own resting
+                // spot everything flies straight at your face, which reads as a
+                // zoom; nudging it off makes the word sweep PAST you, which is
+                // what flight looks like.
+                perspectiveOrigin: deck?.drain?.origin ?? "50% 38%",
+                transformStyle: "preserve-3d",
+              }
             : undefined}
         >
           {/* beat halo — the stage breathes with the music even between words */}
