@@ -452,6 +452,32 @@ distance, single profiles — not more group shots.
 
 And when a picture is rejected, DELETE it from R2, do not just unreference it.
 
+## Step 3m — the camera: drift vs steps (2026-09-24, §28)
+
+The cinematic camera runs on EVERY cut (`pass >= 5`, not gated on
+`deck.motion`) and its default is three free-running sines — `sin(t * 0.10)`
+is a **63-second period**, one slow sweep across a whole cut, unrelated to the
+tempo. It never rests and never lands, which is most of what "feels like a
+slideshow" actually is.
+
+- **`deck.camSync: true`** — hold on the downbeat, accelerate, arrive as the bar
+  ends, hold again. Measured: frames completely still go from **14% to 54%**.
+  Needs a trustworthy downbeat and falls back to the old drift without one.
+- **`deck.motion.sync: true`** — snap shot `dur` to whole bars. Works even where
+  the downbeat phase is ambiguous (bar LENGTH is reliable regardless).
+- **`deck.motion.ease: "arrive"`** — accelerate into the endpoint instead of
+  easeOut's settle.
+
+**Do not add a parallax driver.** `--par-x/--par-y` are genuinely zero in a
+render, but they share a transform with `--cam-*`, which is alive — a synthetic
+driver was built, A/B'd and measured to change nothing. Removed; see §28.
+
+**Measuring motion: sample the ENGINE, not the pixels.** A downscaled
+frame-difference cannot see a 0.35px/frame camera move and will report "no
+change" for a change that is real. Drive the page with playwright and read
+`--cam-x` off the stage root div (it is not on `documentElement`, and there is
+no media element to read `currentTime` from).
+
 ## Step 4 — log what you learned
 
 Every cut has taught the playbook something new. Add a numbered section (§20,

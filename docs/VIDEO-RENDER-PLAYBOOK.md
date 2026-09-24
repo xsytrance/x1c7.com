@@ -1706,3 +1706,84 @@ pitch colour until the lightness question is solved.
 
 Shipped: `hajimemashite-v6-vertical.mp4`, 1080×1920, 59.9s, A/V |error| median
 16ms / p95 20ms.
+
+## 28 · "They all feel like slideshows" — the camera drifts, it never arrives (2026-09-24)
+
+### Correcting §27's session, and my own diagnosis
+
+Two claims made earlier in this work were wrong and are worth killing before
+someone builds on them.
+
+**"Parallax is dead in every render" — true of the vars, false about the
+effect.** `--par-x/--par-y` really are zero in headless capture (their only
+writers are `deviceorientation` and `mousemove`). But they sit in the SAME
+transform as `--cam-x/--cam-y`, and the **cinematic camera at `pass >= 5` is
+very much alive** — renders run `pass=6`. A synthetic parallax driver was built,
+measured against an A/B, and found to change nothing, because it was adding
+±11px on top of the camera's ±46px. It was removed. Do not rebuild it.
+
+**The real cause is the shape of the camera that IS running:**
+
+```
+camX = sin(t * 0.10) * (18 + push * 28)     // period 63 SECONDS
+camY = cos(t * 0.074) * (12 + push * 18)
+rot  = sin(t * 0.055) * 0.8
+```
+
+`sin(t * 0.10)` completes one cycle every 63s, so across a 60-second cut the
+camera performs **a single slow sweep**, unrelated to the tempo. It never sits
+still and it never lands. That is the definition of drift, and it is the default
+on EVERY cut — this block needs only `pass >= 5`, not `deck.motion`, so it is
+running on all 71 directed cuts whether or not they opted into camera work.
+
+### The fix: hold, move, arrive
+
+`deck.camSync` replaces the sines with BAR STEPS — hold on the downbeat,
+accelerate to a new offset, arrive as the bar ends, hold again. Measured on
+hajimemashite over an 11s window, sampling the engine's own `--cam-x`:
+
+| | camX travel | step median | p90 | frames STILL | burst ratio |
+|---|---|---|---|---|---|
+| drift (sines) | 25px | 0.20px | 0.30px | **14%** | 1.5x |
+| stepped (camSync) | 42px | 0.00px | 2.40px | **54%** | **2400x** |
+
+Discrete is what editing is. Continuous motion, however pretty, reads as float.
+
+Also added: `deck.motion.sync` snaps a shot's `dur` to a whole number of bars
+(a move whose length is unrelated to the tempo ends wherever it happens to end),
+and `deck.motion.ease: "arrive"` accelerates into the endpoint instead of
+easeOut's decelerating settle. Both default off; every existing cut is untouched.
+
+### barGrid, and why "strength" is the wrong gate
+
+`stemSense.barGrid()` infers the downbeat by asking which phase's beats actually
+carry a kick. It reports `strength` (the winner's hit rate) AND `margin`
+(winner minus runner-up) — **and margin is the one that matters**:
+
+| song | strength | margin | |
+|---|---|---|---|
+| hajimemashite | 0.71 | **0.37** | real downbeat |
+| fast-enough | 0.91 | **0.09** | four-on-the-floor — every phase scores alike |
+| one-tap-away | 0.84 | **0.01** | no downbeat information at all |
+
+Gating on `strength` would have confidently mis-phased two of three. `camSync`
+requires `margin >= 0.15` and silently keeps the old drift otherwise — stepping
+on the wrong beat is worse than not stepping. **Bar LENGTH survives an ambiguous
+phase**, so `motion.sync` works everywhere; only alignment needs the margin.
+
+### The measurement trap (this one cost the most)
+
+The first attempt measured motion by decoding frames to 96x171 greyscale and
+taking the mean inter-frame delta. It reported **no difference at all** between
+drift and stepped. The metric was the problem: a camera moving 30px over 1.4s at
+1080 wide is ~0.35px/frame, which at 96px wide is 0.03px/frame — far under the
+noise floor. A downscaled frame-difference **cannot see camera motion of the
+magnitude this engine actually uses.**
+
+**Measure the engine, not the pixels.** Drive the page with playwright, find the
+element whose inline style carries `--cam-x` (it is the stage root div, NOT
+`documentElement`), and sample the variable directly. That turned an
+unfalsifiable "looks about the same" into 14% vs 54% frames-still. Note there is
+no `<audio>`/`<video>` element on the studio page to read `currentTime` from —
+sample against wall clock.
+

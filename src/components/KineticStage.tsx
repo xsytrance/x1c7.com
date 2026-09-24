@@ -18,7 +18,7 @@ import { SurfaceEffects } from "./SurfaceEffects";
 import { veilForWeather, surfaceFor, VEIL_SPECS, SURFACE_SPECS, type VeilKind, type SurfaceMode, type TextEffect } from "@/lib/effects/registry";
 import { loadLexicon, aggregateLegos } from "@/lib/lexicon/lookup";
 import type { Lexicon } from "@/lib/lexicon/types";
-import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData } from "@/lib/stemSense";
+import { loadStems, envAt, activeCut, activeRiser, OnsetTracker, type StemData, barGrid, barAt, type BarGrid } from "@/lib/stemSense";
 import { stemMixStore } from "@/lib/stemMix";
 import { featureBus } from "@/lib/engine/features";
 import { P } from "@/lib/engine/params";
@@ -369,7 +369,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -686,6 +686,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // directed cut running MOTION SHOTS cuts faster than that and shortens the
   // fade to match; read through a ref so requestArt's stable identity survives.
   const motionCfg = deck?.motion;
+
   // GIANT WORDS — pile depth and residue lifetime. Read through refs because the
   // master rAF tick closes over them. 0 = SOLO: the live word is still huge, but
   // nothing is left behind, so each dynamic window is a clean single statement.
@@ -957,6 +958,30 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     pendingGrade.current = null;
     if (melody) featureBus.setKey(melody.tonic, melody.minor);
   }, [stems, track.id, track.planet, melody]);
+
+  // ── THE BAR GRID ── measured beats say WHEN, not which one is ONE. barGrid
+  // infers the downbeat from kick coincidence and reports a MARGIN: on a
+  // four-on-the-floor song every phase scores high and the phase is a coin
+  // flip (fast-enough strength 0.91 / margin 0.09; one-tap-away 0.84 / 0.01),
+  // while hajimemashite reads 0.71 / 0.37 and is real. Bar LENGTH survives an
+  // ambiguous phase — only downbeat ALIGNMENT needs the margin.
+  const bars: BarGrid | null = useMemo(() => (stems ? barGrid(stems) : null), [stems]);
+  const barsPhased = bars && bars.margin >= 0.15 ? bars : null;
+
+  const barsRef = useRef<BarGrid | null>(null);
+  barsRef.current = bars;
+  // True once a real tilt or mouse has moved the world. Until then the
+  // parallax layers have no driver at all — which is every headless render
+  // ever captured, so the depth system has never appeared in a shipped video.
+  const realParallax = useRef(false);
+  // Read through refs: the per-frame tick must not re-subscribe when a knob
+  // changes (same reason melodyRef exists).
+  const camSyncRef = useRef(false);
+  camSyncRef.current = !!deck?.camSync;
+  const barsPhasedRef = useRef<BarGrid | null>(null);
+  barsPhasedRef.current = barsPhased;
+  // move state for the stepped camera
+  const camStep = useRef({ bar: -1, fromX: 0, fromY: 0, fromR: 0, toX: 0, toY: 0, toR: 0 });
   const themeHue = useMemo(() => themeHueFrom(palette, track.color), [palette, track.color]);
   // Refs so the per-frame tick (ghost hand-off) reads current melody state
   // without rebuilding the rAF loop.
@@ -1294,6 +1319,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const root = rootRef.current;
     if (!root) return;
     const set = (x: number, y: number) => {
+      realParallax.current = true;   // a human is driving; stop synthesizing
       root.style.setProperty("--par-x", `${x.toFixed(1)}px`);
       root.style.setProperty("--par-y", `${y.toFixed(1)}px`);
     };
@@ -1773,9 +1799,47 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         const push = camPush.current;                                  // 0..1 section energy
         const beat = liteRef.current ? 0 : kickPulse.current;          // live kick punch
         const scale = 1 + push * 0.13 + beat * 0.03;                   // ~1.00 .. 1.16 push-in
-        const camX = Math.sin(t * 0.10) * (18 + push * 28);            // px, big slow drift
-        const camY = Math.cos(t * 0.074) * (12 + push * 18);
-        const rot = Math.sin(t * 0.055) * 0.8;                         // deg, gentle tilt
+        // ── DRIFT vs STEPS ──
+        // The historic camera is three free-running sines. sin(t * 0.10) has a
+        // 63-SECOND period, so across a 60s cut the camera performs exactly one
+        // slow sweep, in no relation to the tempo. It never sits still and it
+        // never arrives — which is precisely what "floaty slideshow" is. It is
+        // also the default on every cut, because this block needs only pass>=5,
+        // not deck.motion.
+        //
+        // deck.camSync swaps the sines for STEPS: hold on the bar, accelerate
+        // to a new offset, arrive exactly on the next downbeat, hold again.
+        // Discrete beats editing; continuous does not. Needs a trustworthy
+        // downbeat, so it falls back to the sines when the phase is a coin flip.
+        let camX: number, camY: number, rot: number;
+        const pg = barsPhasedRef.current;
+        if (camSyncRef.current && pg) {
+          const { start, next } = barAt(pg, t);
+          const barLen = Math.max(0.2, next - start);
+          const barNo = Math.round((start - pg.downbeats[0]) / pg.barSec);
+          const st = camStep.current;
+          if (barNo !== st.bar) {
+            // hash the bar number so a re-render of the same moment is stable
+            let h = Math.imul(barNo ^ 0x9e3779b9, 0x85ebca6b) >>> 0;
+            const nx = () => ((h = Math.imul(h ^ (h >>> 15), 0x2545f491) >>> 0) / 0xffffffff);
+            st.fromX = st.toX; st.fromY = st.toY; st.fromR = st.toR;
+            st.toX = (nx() * 2 - 1) * (16 + push * 26);
+            st.toY = (nx() * 2 - 1) * (10 + push * 16);
+            st.toR = (nx() * 2 - 1) * 0.7;
+            st.bar = barNo;
+          }
+          // Move over the FIRST 55% of the bar, then hold. The hold is what
+          // makes the next move read as a move.
+          const p = Math.max(0, Math.min(1, (t - start) / (barLen * 0.55)));
+          const e = p * p * (3 - 2 * p) * 0.35 + p * p * 0.65;          // accelerating, lands at 1
+          camX = st.fromX + (st.toX - st.fromX) * e;
+          camY = st.fromY + (st.toY - st.fromY) * e;
+          rot = st.fromR + (st.toR - st.fromR) * e;
+        } else {
+          camX = Math.sin(t * 0.10) * (18 + push * 28);                // px, big slow drift
+          camY = Math.cos(t * 0.074) * (12 + push * 18);
+          rot = Math.sin(t * 0.055) * 0.8;                             // deg, gentle tilt
+        }
         camRoot.style.setProperty("--cam-scale", scale.toFixed(4));
         camRoot.style.setProperty("--cam-x", `${camX.toFixed(1)}px`);
         camRoot.style.setProperty("--cam-y", `${camY.toFixed(1)}px`);
@@ -1879,6 +1943,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // The camera move this scene gets, scaled by the director's amplitude. Null
   // unless the planet asked for motion shots, so every other song keeps the
   // stock 24s creep.
+  // ── SHOT LENGTH, IN BARS ── a move whose duration is unrelated to the tempo
+  // ends wherever it happens to end, and the eye reads that as drift. Snapping
+  // to a whole number of bars makes it end ON something. Only bar LENGTH is
+  // needed here, not the downbeat phase, so this works even on the songs whose
+  // phase is a coin flip (see barsPhased).
+  const shotDur = useMemo(() => {
+    const raw = Math.max(0.4, motionCfg?.dur ?? 2.2);
+    if (!motionCfg?.sync || !bars) return raw;
+    const n = Math.max(1, Math.round(raw / bars.barSec));
+    return n * bars.barSec;
+  }, [motionCfg?.dur, motionCfg?.sync, bars]);
+
   const motionShot = useMemo(() => {
     if (!motionCfg || !bgArt || lite) return null;
     const m = artMoveFor(bgArt, shotOf(bgArt));
@@ -1902,9 +1978,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       s0: Math.max(1 + (m.s0 - 1) * amp, cover),
       s1: Math.max(1 + (m.s1 - 1) * amp, cover),
       x0, x1, y0, y1,
-      dur: Math.max(0.4, motionCfg.dur ?? 2.2),
+      dur: shotDur,
+      arrive: motionCfg.ease === "arrive",
     };
-  }, [motionCfg, bgArt, lite, shotOf]);
+  }, [motionCfg, bgArt, lite, shotOf, shotDur]);
   // Small out-of-the-way preview of what's coming — the owner likes it.
   // (The BIG word appearing early was the mis-anchor bug, fixed above.)
   const upcoming = (idx >= 0 ? words.slice(idx + 1, idx + 5) : words.slice(0, 4))
@@ -2158,7 +2235,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                   : { filter: lift ? "brightness(1.22) saturate(1.12)" : "brightness(1)", transition: "filter 800ms ease" }}
                 initial={motionShot ? { scale: motionShot.s0, x: `${motionShot.x0}%`, y: `${motionShot.y0}%` } : { scale: 1.06 }}
                 animate={motionShot ? { scale: motionShot.s1, x: `${motionShot.x1}%`, y: `${motionShot.y1}%` } : { scale: 1.16 }}
-                transition={{ duration: motionShot ? motionShot.dur : 24, ease: motionShot ? "easeOut" : "linear" }}
+                // "arrive": the move ACCELERATES into its endpoint and stops
+                // dead, which reads as an edit. easeOut (and the 24s linear
+                // default) decelerate or never accelerate, so nothing ever
+                // lands — the single biggest reason a cut reads as a slideshow.
+                transition={{
+                  duration: motionShot ? motionShot.dur : 24,
+                  ease: motionShot ? (motionShot.arrive ? [0.4, 0, 0.85, 0.92] : "easeOut") : "linear",
+                }}
               />
               <div className="absolute inset-0" style={{ background: "radial-gradient(circle at 50% 45%, transparent 42%, rgba(5,3,11,0.72) 100%)" }} />
             </div>

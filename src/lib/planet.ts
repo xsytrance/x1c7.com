@@ -221,6 +221,20 @@ export interface PlanetDynamicPlus {
      * loses words on bright plates, wide loses them on dark ones. */
     pitchSat?: number;
     pitchLight?: number;
+    /** Swap the cinematic camera's free-running sines for BAR STEPS: hold,
+     * accelerate, arrive on the downbeat, hold again.
+     *
+     * The historic camera (pass>=5, so it is on for every cut whether or not
+     * deck.motion is set) drifts on sin(t*0.10) — a 63-SECOND period, meaning
+     * one slow sweep across a whole cut, unrelated to the tempo. It never sits
+     * still and never arrives, which is most of what reads as "floaty
+     * slideshow". Stepping is discrete, and discrete is what editing is.
+     *
+     * Needs a trustworthy downbeat (barGrid margin >= 0.15) and silently keeps
+     * the old drift when the phase is ambiguous — a four-on-the-floor song
+     * scores every phase alike and stepping on the wrong beat is worse than
+     * not stepping at all. */
+    camSync?: boolean;
     /** PIN the weather instead of letting particleModeFor infer it from the
      * song's own words. That inference reads the TITLE too, which a cut cannot
      * edit — a song called "Drink Drink" matches the champagne/bubbles rule on
@@ -273,6 +287,15 @@ export interface DeckGiant {
 export interface DeckMotion {
   /** seconds a camera move takes end to end (default 2.2) */
   dur?: number;
+  /** snap `dur` to a whole number of BARS, measured off the stems' beat grid.
+   * A move whose length is unrelated to the tempo ends wherever it happens to
+   * end and the eye reads that as drift; a move that ends on a bar line reads
+   * as an edit. Uses bar LENGTH only, so it works even where the downbeat
+   * phase is ambiguous (a four-on-the-floor song scores every phase alike). */
+  sync?: boolean;
+  /** "arrive" accelerates the move into its endpoint and stops dead, instead
+   * of easeOut's decelerating settle. Absent = the historic easeOut. */
+  ease?: "arrive";
   /** move amplitude multiplier, 0..2 (default 1) */
   amp?: number;
   /** floor between backdrop swaps in ms — the stage's default is 2000, which
