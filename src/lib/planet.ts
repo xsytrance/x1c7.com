@@ -269,7 +269,7 @@ export interface PlanetDynamicPlus {
      * reasoning that makes the guide skate rather than bounce on fast runs.
      * Pairs with `dynamicPlus.scene = "CORRIDOR"`, where the vanishing point
      * is real. */
-    drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number };
+    drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean };
     /** RUSH — the mirror of `drain`: the word ARRIVES out of the vanishing
      * point, starting tiny and blurred at the far end of the corridor and
      * flying at the camera to land on its own onset at full size.

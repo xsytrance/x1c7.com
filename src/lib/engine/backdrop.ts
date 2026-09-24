@@ -365,8 +365,10 @@ void main() {
   float lit = 0.20 + uLevel * 0.55 + uBeat * 0.22;
 
   // floor + ceiling, then the two walls: same maths on swapped axes
-  for (int s = 0; s < 4; s++) {
-    float v = (s < 2 ? p.y : p.x) * ((s == 0 || s == 2) ? 1.0 : -1.0);
+  // s=0 floor, s=1 walls, s=2 walls. NO CEILING: gridding all four planes
+  // crossed into a wireframe box rather than reading as a place.
+  for (int s = 0; s < 3; s++) {
+    float v = (s < 1 ? p.y : p.x) * (s == 2 ? -1.0 : 1.0);
     float u = (s < 2 ? p.x : p.y);
     if (v <= 0.006) continue;
     float d = 0.34 / v;                              // distance along the flight
@@ -374,7 +376,7 @@ void main() {
     float wz = d + travel;
     float g = max(rung(wu, 0.004), rung(wz, 0.004));
     float fog = exp(-d * 0.155);                     // the far end falls away
-    vec3 tint = mix(uPal2, s < 2 ? near : uPal1, fog);
+    vec3 tint = mix(uPal2, s < 1 ? near : uPal1, fog);
     col += tint * g * fog * lit;
     // a KICK throws a bright rung down the corridor toward the viewer
     float pulseZ = travel + 5.0 - uKick * 5.0;

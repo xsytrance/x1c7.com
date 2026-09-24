@@ -391,7 +391,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2175,6 +2175,31 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     ? stagecraft(idx, { charged, final, mono: glitches || types, stop: STOP_WORDS.has(lower) })
     : null;
   const dyn = dynRaw;
+  // Measured delivery: the singer's REAL energy on this word (lead-vocal
+  // envelope from the stems) scales how big it lands. Belted words tower;
+  // murmured ones stay close. 1 when the planet has no stems.
+  const delivery = stems && idx >= 0
+    ? 0.82 + envAt(stems, "lead", words[idx].t + 0.18) * 0.42
+    : 1;
+  const drainCfg = deck?.drain;
+  const drainAir = drainCfg?.minAir ?? 0.28;
+  const lens = drainCfg?.lens ?? 900;
+  const swell = Math.max(1.2, drainCfg?.swell ?? 4.5);
+  // ── HOW THIS WORD LEAVES ── every word taking the identical trip is the
+  // tell that an effect is a setting rather than a performance. The variant is
+  // picked from what the song is doing at that word:
+  //   belted  -> flies PAST the camera;  murmured -> recedes down the corridor
+  //   dissonant (far from the tonic on the circle of fifths) -> tumbles
+  //   high note -> leaves upward;        low note -> sinks
+  const mwNote = melody && idx >= 0 ? melody.words.get(idx) : undefined;
+  const cofRaw = mwNote && melody ? ((((mwNote.pc - melody.tonic) % 12) + 12) % 12 * 7) % 12 : 0;
+  const cofSigned = cofRaw <= 6 ? cofRaw : cofRaw - 12;
+  const tension = Math.abs(cofSigned) / 6;                       // 0 tonic .. 1 tritone
+  const octHi = melMotion && melody ? Math.max(-1, Math.min(1, (melMotion.midi - melody.median) / 10)) : 0;
+  const vary = !!drainCfg?.vary;
+  const goesPast = vary ? delivery > 1.02 : !!drainCfg?.past;
+  const spin = vary ? (cofSigned < 0 ? -1 : 1) * tension * 22 : 0;
+  const exitLift = vary ? -octHi * 14 : 0;
   // ── DRAIN ── the word is pulled DOWN THE CORRIDOR once it is sung: it
   // travels to the vanishing point, shrinking and accelerating, instead of
   // fading where it stands. A word already carries its own off-centre offset
@@ -2185,10 +2210,6 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Gated on AIRTIME, so only words with room get sucked: under ~0.28s there is
   // no time to read the travel and the word should just go, the same reasoning
   // that makes the guide skate instead of bouncing on fast runs.
-  const drainCfg = deck?.drain;
-  const drainAir = drainCfg?.minAir ?? 0.28;
-  const lens = drainCfg?.lens ?? 900;
-  const swell = Math.max(1.2, drainCfg?.swell ?? 4.5);
   // NOT gated on `dyn`: a Z flight needs no x/y at all, because the parent's
   // perspective drifts the word outward on its own. Requiring dyn meant the
   // whole effect silently did nothing in phrase mode, where dyn is null.
@@ -2196,7 +2217,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     && (words[idx + 1] ? words[idx + 1].t - words[idx].t : 3) >= drainAir
     ? {
         ...wm,
-        exit: drainCfg.past
+        exit: goesPast
           // PAST THE CAMERA: the word keeps coming, swells past full size and
           // leaves through the edge of the frame. An off-centre word exits
           // sideways because the parent's perspective drifts it outward — this
@@ -2218,6 +2239,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               // about 2.4x linear, against a configured 22x.
               opacity: [1, 1, 0],
               z: [0, zAt(lens, 1 + (swell - 1) * 0.6), zAt(lens, swell)],
+              rotate: [0, spin * 0.45, spin],
+              y: [0, exitLift * 0.4, exitLift],
               filter: ["blur(0px)", "blur(1.5px)", "blur(8px)"],
               // STREAK. Isotropic blur says "out of focus"; speed is sold by a
               // smear along the direction of travel. The word's own offset IS
@@ -2270,12 +2293,6 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         transition: { duration: rushCfg.dur ?? 0.42, ease: [0.42, 0, 0.9, 0.7] },
       }
     : wmDrain;
-  // Measured delivery: the singer's REAL energy on this word (lead-vocal
-  // envelope from the stems) scales how big it lands. Belted words tower;
-  // murmured ones stay close. 1 when the planet has no stems.
-  const delivery = stems && idx >= 0
-    ? 0.82 + envAt(stems, "lead", words[idx].t + 0.18) * 0.42
-    : 1;
   // FIT AT RENDER TIME, not after. The measured fit() below writes fontSize
   // imperatively, but this element's inline style re-applies the calc() on
   // every React render (and the stage re-renders on the beat), so the measured

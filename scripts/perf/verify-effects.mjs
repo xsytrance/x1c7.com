@@ -65,12 +65,19 @@ if (scene) claims.push(`scene:${scene}`);
 if (!claims.length) { console.log("deck claims no verifiable effects — nothing to check"); process.exit(0); }
 console.log(`VERIFY  ${TRACK}  ${FROM}→${TO}\n  claims: ${claims.join(", ")}\n`);
 
-async function setDeck(on) {
+// Strip exactly ONE effect and leave everything else — including the scene and
+// whether plates are drawn — untouched.
+//
+// The first version stripped them all at once, which meant the OFF render also
+// lost the CORRIDOR backdrop and drew plates instead. The background changed
+// under a measurement of the TEXT, and wordFlight read 10.1 vs 7.6: a
+// difference dominated by what was behind the words, not by the words. A
+// comparison is only worth anything when one thing differs.
+async function setDeck(drop) {
   const p = structuredClone(data[0].planet);
-  if (!on) {
-    const d = p.dynamicPlus.deck;
-    delete d.guide; delete d.inserts; delete d.drain; delete d.rush; delete d.camSync;
-    delete p.dynamicPlus.scene;
+  const d = p.dynamicPlus.deck;
+  for (const k of [].concat(drop ?? [])) {
+    if (k === "scene") delete p.dynamicPlus.scene; else delete d[k];
   }
   const { error } = await db.from("tracks").update({ planet: p }).eq("id", TRACK);
   if (error) throw new Error(error.message);
@@ -173,27 +180,28 @@ async function cameraHolds(on) {
 // ── run ────────────────────────────────────────────────────────────────────
 let failed = 0;
 try {
-  console.log("  rendering ON  …"); await setDeck(true);  const on  = render("on");
-  console.log("  rendering OFF …"); await setDeck(false); const off = render("off");
-  await setDeck(true);
+  console.log("  rendering ALL ON …"); await setDeck(null); const on = render("on");
 
   const tests = [];
-  if (deck.guide) tests.push(["guide", guideFrames, null, (a, b) => a.value - b.value > 3]);
-  if (deck.inserts) tests.push(["inserts", insertFrames, deck.inserts, (a, b) => a.value - b.value > 3]);
-  if (deck.drain || deck.rush) tests.push(["wordFlight", wordSwell, null, (a, b) => a.value > b.value * 1.6]);
+  if (deck.guide) tests.push(["guide", guideFrames, null, (a, b) => a.value - b.value > 3, ["guide"]]);
+  if (deck.inserts) tests.push(["inserts", insertFrames, deck.inserts, (a, b) => a.value - b.value > 3, ["inserts"]]);
+  if (deck.drain || deck.rush) tests.push(["wordFlight", wordSwell, null, (a, b) => a.value > b.value * 1.6, ["drain", "rush"]]);
 
 
   console.log(`\n  ${"effect".padEnd(12)}${"ON".padStart(10)}${"OFF".padStart(10)}   verdict   what was measured`);
-  for (const [name, fn, cfg, pass] of tests) {
+  for (const [name, fn, cfg, pass, keys] of tests) {
+    await setDeck(keys);                      // this effect only, everything else held
+    const off = render(`off-${name}`);
+    await setDeck(null);
     const a = fn(on, cfg), b = fn(off, cfg);
     const ok = pass(a, b);
     if (!ok) failed++;
     console.log(`  ${name.padEnd(12)}${String(a.value).padStart(10)}${String(b.value).padStart(10)}   ${ok ? "VISIBLE " : "NO DIFF "}  ${a.unit}`);
   }
   if (deck.camSync) {
-    await setDeck(true);  const camOn  = await cameraHolds(true);
-    await setDeck(false); const camOff = await cameraHolds(false);
-    await setDeck(true);
+    await setDeck(null);        const camOn  = await cameraHolds(true);
+    await setDeck(["camSync"]); const camOff = await cameraHolds(false);
+    await setDeck(null);
     const ok = camOn.value - camOff.value > 10;
     if (!ok) failed++;
     console.log(`  ${"camSync".padEnd(12)}${String(camOn.value).padStart(10)}${String(camOff.value).padStart(10)}   ${ok ? "VISIBLE " : "NO DIFF "}  ${camOn.unit}`);
