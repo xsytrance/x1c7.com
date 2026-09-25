@@ -2204,3 +2204,52 @@ on `word-*` recipes, which carry typography.
 
 Keep the illustrated originals on R2 — nothing is deleted, the planet simply
 stops pointing at them, so the old look is one DB edit away.
+
+## 36 · Pick the song for the upgrade you are shipping (2026-09-25)
+
+Three cuts in a row were chosen on asset completeness — plates, sections,
+reel, clean timestamps, never cut — and **not one of them had MIDI**, while the
+melody-from-MIDI work was the headline upgrade. The Sovereign asked why. The
+honest answer is that MIDI was never in the selection criteria, and it should
+have been first.
+
+**Only four songs have MIDI** (`assets/stems/<slug>-midi/`). The gap it makes
+is not subtle. The engine colours a word only when its note clears
+`conf >= 0.35`:
+
+| source | words usable |
+|---|---|
+| MIDI (hajimemashite) | 95% |
+| MIDI (one-tap-away) | 92% |
+| MIDI (the-world-that-heard-itself) | 79% |
+| **pYIN — median of the other 49** | **24%** |
+
+Two of those four were not using their MIDI at all:
+
+- **one-tap-away** had MIDI on disk and a melody extracted from AUDIO anyway:
+  15% usable. Re-run from MIDI, 92%, diatonic 0.91.
+- **the-world-that-heard-itself** had MIDI and no melody, because the drum-lock
+  guard rejected a flawless alignment: 99% of kicks at +0.07s, but a busy kit
+  hits something almost everywhere, so background coincidence is 56% and
+  peak/bg is 1.8x — under the 2.0x bar. **A ratio test alone cannot tell "dense
+  drums" from "wrong song."** An absolute hit rate that high at a single 10ms
+  offset is not chance; it is now accepted on its own merit, with the ratio
+  kept for the ambiguous middle. osaka-after-dark still fails and should —
+  35% over a 31% background, 1.1x, genuinely the wrong MIDI for that master.
+
+**`melody.json` records no provenance.** MIDI and pYIN write byte-identical
+shapes, so nothing in the file says which produced it, and a 15%-usable melody
+sat unnoticed next to its own unused MIDI. Worth a `src` field.
+
+### One Tap Away — and the other reason to re-shoot a plate set
+
+This song's art was already photoreal and well directed; it was simply
+**1152x832 landscape**, so §17's crop threw away ~58% of every frame. Unlike
+Still Me (drawn → photographed), this was portrait → portrait: the same voice,
+re-shot at 832x1472. **"Regenerate the art" has two quite different causes —
+wrong medium and wrong shape — and only one of them is visible in a contact
+sheet.** Check the dimensions before concluding the art direction is fine.
+
+With 92% of words carrying a measured note, `pitchSpread` can finally be opened
+up (0.7 here): the colour follows the sung line on nearly every word instead of
+on one in four. That is what the MIDI work was for.
