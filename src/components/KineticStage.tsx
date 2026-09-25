@@ -395,7 +395,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -2566,6 +2566,23 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 mixBlendMode: reelGhost.blend as React.CSSProperties["mixBlendMode"] }}
         />
       )}
+      {/* THE VEIL — the song's own plates averaged and blurred past
+          recognition (scripts/art/abstract.mjs), drifting as cloud. It is the
+          art's LIGHT without its subject, so the frame belongs to this song
+          without being a slideshow of it. Screen-blended and slow. */}
+      {deck?.abstract?.veil && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={deck.abstract.veil}
+          alt=""
+          aria-hidden
+          className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
+          style={{
+            opacity: deck.abstract.veilMix ?? 0.5,
+            mixBlendMode: "screen",
+          }}
+        />
+      )}
       {/* THE WORD STUDY — no world at all. A near-black void, one word, and a
           camera that investigates it: every word discovered and explored
           rather than presented against a background that competes with it. */}
@@ -2682,6 +2699,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           scale={phrase ? 0.55 : 1}
           lite={lite}
           density={deck?.density}
+          moteSheet={deck?.abstract?.motes ?? null}
         />
       )}
 

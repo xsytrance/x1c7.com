@@ -859,3 +859,12 @@ body.perf-lite .wall-tile:hover img { transform: none; }
 body.perf-lite .wall-motion__word {
   animation-name: wall-motion-word-lite;
 }
+
+/* THE VEIL — the song's own art, abstracted, breathing behind everything.
+   A slow drift and scale so it never reads as a still image. */
+@keyframes veil-drift {
+  0%   { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
+  50%  { transform: scale(1.16) translate3d(1.5%, 1.2%, 0); }
+  100% { transform: scale(1.08) translate3d(-1.5%, -1%, 0); }
+}
+.veil-drift { animation: veil-drift 46s ease-in-out infinite; will-change: transform; }

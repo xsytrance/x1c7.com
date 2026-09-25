@@ -61,6 +61,8 @@ type P = {
   x: number; y: number; vx: number; vy: number;
   r: number; a: number; hue: string; life: number; maxLife: number;
   wobble: number; extra?: boolean; glint?: number;
+  /** stable per-particle index into the mote sheet */
+  seed?: number;
 };
 
 const WARM = ["#ffd28a", "#ff8a3c", "#ff5400", "#ffb35c"];
@@ -93,7 +95,21 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   /** Director knob: extra population multiplier on top of intensity/scale (default 1).
    *  Driven through a ref so dragging the slider doesn't rebuild the rAF loop. */
   density?: number;
-}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false, density = 1 }, ref) {
+  /** sprite sheet (4x3) of the song's own light; absent = flat dots */
+  moteSheet?: string | null;
+}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false, density = 1, moteSheet }, ref) {
+  // MOTES — optional sprite sheet cut from the song's own plates (see
+  // scripts/art/abstract.mjs). When present a particle is a soft patch of the
+  // song's light instead of a flat dot, so every song's weather is made of
+  // that song. Absent = the historic arcs, unchanged.
+  const motes = useRef<HTMLImageElement | null>(null);
+  useEffect(() => {
+    if (!moteSheet) { motes.current = null; return; }
+    const im = new Image();
+    im.crossOrigin = "anonymous";
+    im.onload = () => { motes.current = im; };
+    im.src = moteSheet;
+  }, [moteSheet]);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pausedRef = useRef(paused);
   pausedRef.current = paused;
@@ -239,6 +255,13 @@ export const KineticParticles = forwardRef<ParticleHandle, {
           // per-particle halo fill (the biggest per-frame canvas cost).
           ctx.globalAlpha = Math.min(1, alpha);
           ctx.beginPath(); ctx.arc(p.x, p.y, p.r * 1.35, 0, 7); ctx.fill();
+        } else if (motes.current) {
+          // a patch of the song's own light, 4x3 sheet, tile chosen per particle
+          const sh = motes.current, T = sh.width / 4;
+          const ti = (p.seed ?? 0) % 12;
+          const R = p.r * 3.1;
+          ctx.globalAlpha = Math.min(1, alpha * 0.9);
+          ctx.drawImage(sh, (ti % 4) * T, Math.floor(ti / 4) * T, T, T, p.x - R, p.y - R, R * 2, R * 2);
         } else {
           // soft dot: halo + core (cheaper than shadowBlur)
           ctx.globalAlpha = Math.min(1, alpha * 0.35);
@@ -294,6 +317,7 @@ function spawn(m: ParticleMode, palette: string[] | undefined, x: number, y: num
   const base: P = {
     x, y: o.fresh ? y : y, vx: o.vx ?? 0, vy: o.vy ?? baseVy(m),
     r: 1.5, a: 0.5, hue: pick(pal), life: 0, maxLife: o.life ?? (4 + Math.random() * 6),
+    seed: (Math.random() * 12) | 0,
     wobble: Math.random() * 7, extra: o.extra,
   };
   switch (m) {

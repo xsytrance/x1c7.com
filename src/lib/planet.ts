@@ -267,6 +267,13 @@ export interface PlanetDynamicPlus {
      * melodic peak of its phrase, carrying art, meaning something, and MINUS
      * repetition — the fifteenth "ne" is not a moment however loudly it lands. */
     moments?: { floor?: number };
+    /** THE SONG'S ART, ABSTRACTED (scripts/art/abstract.mjs).
+     * `veil` is its plates averaged and blurred past recognition — the art's
+     * light without its subject, drifting as cloud instead of sitting there as
+     * a slideshow. `motes` is a 4x3 sheet of soft patches cut from the
+     * SMOOTHEST bright regions, used as particle sprites so a song's weather is
+     * made of that song. Both absent = the historic flat dots and no veil. */
+    abstract?: { veil?: string; motes?: string; veilMix?: number };
     /** THE WORLD — swap the per-pixel shader corridor for a real three.js
      * scene, with the lyric living inside it. A word sits at the distance its
      * onset occupies (s = t * speed) and the camera flies the same path, so
