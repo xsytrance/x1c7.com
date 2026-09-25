@@ -1878,8 +1878,10 @@ hide again — both in `scripts/perf/render-cut.mjs`:
   pointing into `/planets/hajimemashite-v5/`, a directory that has never
   existed, including the ambient art for a whole section (93.6–105.4s painted
   nothing). Across the catalogue 64 of 74 tracks reference plates absent from
-  `public/` — most are served from R2 in production, but check before you
-  render locally and conclude the art direction is bad.
+  `public/`, which looks alarming and is not: **188 of those URLs were probed
+  on R2 and every one resolved.** Only this track had references dead in both
+  places. So a local-disk audit alone proves nothing — probe R2 before
+  concluding a cut is broken, and probe the RENDER before concluding either.
 - **the backdrop watch** — samples the `/planets/` img in the render's own rAF
   and prints what the backdrop actually did: how many plates, how many
   transitions, how many sat below 0.15 opacity. `⚠ BACKDROP: no plate was ever
