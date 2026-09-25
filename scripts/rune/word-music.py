@@ -21,6 +21,13 @@ from melody_from_midi import read_midi
 
 NOTES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 DEG = ["1", "b2", "2", "b3", "3", "4", "#4", "5", "b6", "6", "b7", "7"]
+# How much the sung note strains AGAINST THE BASS, which is not the same as its
+# distance from the key. "suki" is sung on the tonic both times it appears, so
+# measured against C minor nothing whatever has changed — and yet the first is
+# a b7 over a D bass and restless, the second a 4 over a G and leaning home.
+# The interval that MOVES is the one to the bass. Report both.
+STRAIN = {0: 0.0, 7: 0.10, 4: 0.20, 5: 0.25, 3: 0.25, 9: 0.30, 8: 0.35,
+          2: 0.55, 10: 0.60, 11: 0.75, 1: 0.80, 6: 1.00}
 STEMS = ["Bass", "Guitar", "Synth", "Keyboard", "Strings", "Percussion", "Drums", "Backing Vocals"]
 
 
@@ -65,6 +72,8 @@ def main():
             i=i, word=words[i]["w"], t=round(t, 3),
             note=NOTES[mw["pc"]], midi=mw["midi"], degree=DEG[interval],
             bass=(NOTES[min(bass) % 12] if bass else None),
+            over_bass=(DEG[(mw["pc"] - min(bass)) % 12] if bass else None),
+            strain=(STRAIN[(mw["pc"] - min(bass)) % 12] if bass else None),
             chord=[NOTES[p] for p in chord],
             tension=round(abs(signed) / 6, 2),
             playing=sum(1 for v in env.values() if v > 0.15), env=env,
