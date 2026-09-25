@@ -2049,3 +2049,42 @@ a 17.6s stall that never happened — the probe showed plates landing every 2.3s
 straight through. **A truncated log is not a measurement.** The watch now
 collapses samples into one span per plate and prints the verdict directly:
 plate count, median hold, longest hold, and every plate over `--dwell` (3.2s).
+
+### §33 addendum — why "smoke" worked, and making it not be luck (2026-09-25)
+
+The owner singled out two reveals as the best thing in the cut — "red" and,
+especially, "smoke" — while "light" and "green" from the same render passed
+without comment. Same code, same config, same song, thirty seconds apart. The
+difference is worth writing down because it is invisible in the config and
+decides whether the effect exists at all.
+
+**The reveal only reads when the backdrop has NOT yet swapped.** The word is
+painted through the plate it is about to become. If the frame behind it is
+already showing that plate, the letters are filled with the same image, at the
+same position, at the same scale — perfect camouflage, however correctly the
+effect fires. On "smoke" the swap happened to land ~0.1s LATE, so the word
+showed the new picture while the frame still held the old one, and that
+contrast is the entire effect. On "light" the swap landed first and the word
+dissolved into its own background.
+
+So it was a coin flip decided by the swap throttle. Now it isn't: when a
+reveal fires, the art request for that plate is **deliberately held back**
+(`dur * 0.55`) so the word always leads and the backdrop always follows. The
+scoring had to be hoisted above the keyword art request to do this — the
+reveal has to decide whether the picture is allowed to arrive yet, which means
+deciding before anything asks for it. A cancellation token stops a fast run of
+keywords landing an old plate over a new word's picture.
+
+**Expect the previous plate's dwell to grow by the lead** (~0.6s); that is
+correct, not a regression — the outgoing picture is holding the frame while
+the next word opens it.
+
+### Variants, so one good idea doesn't become a tic
+
+One mechanism, six characters, taken from the word's own semantic family
+rather than authored per song: `burn` rises and thins the way smoke leaves a
+room, `bloom` barely travels and then goes all at once, `shatter` comes apart
+on the way out, `echo` and `freeze` sink away instead of opening, `slam` is
+over before you've read it. An explicit `deck.reveal` value always outranks
+the word's character. This is the answer to "you're using the same 3D effect
+over and over" — the variety is derived, so it costs nothing per song.

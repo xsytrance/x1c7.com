@@ -749,6 +749,9 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // last is the one that lands. The rotation looked random and skipped plates
   // entirely. One ask per expiry.
   const dwellAskRef = useRef(-Infinity);
+  // Cancels a pending reveal handoff when a newer reveal starts, so a fast run
+  // of keywords can't land an old plate on top of a new word's picture.
+  const revealSwapTok = useRef(0);
   const swapMsRef = useRef(2000);
   // A 2000ms floor cannot sustain a 2.6s dwell: the ask, the throttle and the
   // downbeat wait together cost ~1.5s, so the plate lands a second late every
@@ -1446,7 +1449,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // word reacts in the song's own tap language.
   const [quake, setQuake] = useState(0);
   const [curtain, setCurtain] = useState(0);
-  const [reveal, setReveal] = useState<{ w: string; img: string; n: number }>({ w: "", img: "", n: 0 });
+  const [reveal, setReveal] = useState<{ w: string; img: string; fx: string | null; n: number }>({ w: "", img: "", fx: null, n: 0 });
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -1770,8 +1773,39 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           const own = pooledArt(w, art?.[w] ?? null);
           const isFinal = words[i + 1] ? phraseStartIdx.has(i + 1) : true;
           const air = words[i + 1] ? words[i + 1].t - words[i].t : 3;
-          if (own) requestArt(pickArt(own));
-          else if (pass >= 2) {
+          // Scored HERE, before the backdrop is asked for anything, because
+          // the reveal has to decide whether the picture is allowed to arrive
+          // yet. The moments block below reuses it.
+          const sc = pass >= 3 ? impactOf({
+            airtime: air,
+            delivery: stems ? envAt(stems, "lead", words[i].t + 0.18) : 0.5,
+            onDownbeat: !!(barsPhasedRef.current
+              && Math.abs(words[i].t - barAt(barsPhasedRef.current, words[i].t).start) < 0.18),
+            melodicPeak: peakWords.current.has(i),
+            occurrences: wordCounts.current.get(w) ?? 1,
+            hasArt: !!art?.[w],
+            semantic: !!effectForWord(w),
+          }) : 0;
+          const rv = revealCfgRef.current;
+          const url = own ? pickArt(own) : null;
+          // ── THE WORD LEADS THE BACKDROP ──
+          // This is the whole reason "smoke" worked and "light" did not. A
+          // reveal paints the word through the plate it is about to become; if
+          // the backdrop has ALREADY swapped to that plate, the letters are
+          // filled with the same image that is behind them, in the same
+          // position, and the effect is invisible however well it fires. On
+          // "smoke" the swap happened to land late, so the word showed the new
+          // picture while the frame still held the old one — and that contrast
+          // is the effect. Left to the throttle it is a coin flip. So when a
+          // reveal fires, the picture is held back until the word has opened
+          // it: the word always leads, and the backdrop always follows.
+          if (url && rv && typeof art?.[w] === "string" && sc >= rv.floor) {
+            setReveal((r) => ({ w: words[i].w.toUpperCase(), img: url, fx: effectForWord(w), n: r.n + 1 }));
+            const lead = (rv.dur ?? 1.05) * 0.55 * 1000;
+            const tok = ++revealSwapTok.current;
+            window.setTimeout(() => { if (revealSwapTok.current === tok) requestArt(url); }, lead);
+          } else if (url) requestArt(url);
+          if (!own && pass >= 2) {
             const emphasis = isFinal || w in keywordEmotion;
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
             if (sh) requestArt(pickArt(sh));
@@ -1842,25 +1876,6 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           // itself answered the word. Scored, so it stays rare — a flashbulb on
           // every word is not a flashbulb, it is a strobe.
           if (pass >= 3 && bigCfgRef.current) {
-            const sc = impactOf({
-              airtime: air,
-              delivery: stems ? envAt(stems, "lead", words[i].t + 0.18) : 0.5,
-              onDownbeat: !!(barsPhasedRef.current
-                && Math.abs(words[i].t - barAt(barsPhasedRef.current, words[i].t).start) < 0.18),
-              melodicPeak: peakWords.current.has(i),
-              occurrences: wordCounts.current.get(w) ?? 1,
-              hasArt: !!art?.[w],
-              semantic: !!effectForWord(w),
-            });
-            // THE WORD OPENS INTO ITS PICTURE. Same score that gates the
-            // whole-frame events, a lower bar — this is a per-word move, not a
-            // frame-wide one — and it needs the word to actually own a plate.
-            const rv = revealCfgRef.current;
-            const ownArt = art?.[w];
-            if (rv && typeof ownArt === "string" && sc >= rv.floor) {
-              const img = pickArt(pooledArt(w, ownArt) ?? ownArt);
-              if (img) setReveal((r) => ({ w: words[i].w.toUpperCase(), img, n: r.n + 1 }));
-            }
             const big = bigMomentFor(w, sc, bigCfgRef.current.floor);
             if (big) {
               if (big === "flare") { setNova((n) => n + 1); setWave((v) => v + 1); particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 90); }
@@ -3030,6 +3045,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         fire={reveal.n}
         word={reveal.w}
         img={reveal.img}
+        variant={reveal.fx}
         cfg={typeof deck?.reveal === "object" ? deck.reveal : undefined}
       />
 

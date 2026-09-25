@@ -37,13 +37,36 @@ export interface RevealCfg {
   scrim?: number;
 }
 
+// ── HOW THE WORD OPENS ──
+// One mechanism, five characters. The same reveal on every keyword becomes a
+// tic within half a minute; taking the manner of the opening from the word's
+// own meaning means "smoke" leaves like smoke and "break" comes apart, without
+// anyone authoring either. Keyed to the semantic families in effects/impact.
+const VARIANTS: Record<string, { dur: number; grow: number; y: number; rot: number; scrim: number; ease: number[] }> = {
+  // rises and thins as it goes, the way smoke leaves a room
+  burn:    { dur: 1.30, grow: 5.2, y: -13, rot: 0,    scrim: 0.74, ease: [0.3, 0, 0.7, 1] },
+  // detonates: almost no travel, then all of it at once
+  bloom:   { dur: 0.90, grow: 7.8, y: 0,   rot: 0,    scrim: 0.66, ease: [0.7, 0, 0.9, 0.7] },
+  // comes apart on the way out
+  shatter: { dur: 0.85, grow: 6.8, y: 2,   rot: -2.4, scrim: 0.78, ease: [0.5, 0, 1, 0.8] },
+  // sinks away rather than opening — for the words that are leaving
+  echo:    { dur: 1.45, grow: 3.4, y: 7,   rot: 0,    scrim: 0.80, ease: [0.2, 0, 0.4, 1] },
+  freeze:  { dur: 1.35, grow: 3.0, y: 0,   rot: 0.8,  scrim: 0.82, ease: [0.2, 0, 0.3, 1] },
+  slam:    { dur: 0.75, grow: 7.2, y: 0,   rot: 1.6,  scrim: 0.70, ease: [0.8, 0, 1, 0.6] },
+};
+
 export function WordPlateReveal({
-  fire, word, img, cfg,
-}: { fire: number; word: string; img: string; cfg?: RevealCfg }) {
-  const dur = cfg?.dur ?? 1.05;
+  fire, word, img, variant, cfg,
+}: { fire: number; word: string; img: string; variant?: string | null; cfg?: RevealCfg }) {
+  const v = (variant && VARIANTS[variant]) || null;
+  // An explicit deck value always outranks the word's own character.
+  const dur = cfg?.dur ?? v?.dur ?? 1.05;
   const size = cfg?.size ?? 17;
-  const grow = cfg?.grow ?? 6.4;
-  const scrim = cfg?.scrim ?? 0.72;
+  const grow = cfg?.grow ?? v?.grow ?? 6.4;
+  const scrim = cfg?.scrim ?? v?.scrim ?? 0.72;
+  const driftY = v?.y ?? 0;
+  const rot = v?.rot ?? 0;
+  const ease = (v?.ease ?? [0.4, 0, 0.9, 0.85]) as [number, number, number, number];
 
   return (
     <AnimatePresence>
@@ -94,12 +117,12 @@ export function WordPlateReveal({
               WebkitTextStroke: cfg?.rim === false ? undefined : "1px rgba(255,255,255,0.28)",
               filter: "drop-shadow(0 0 18px rgba(0,0,0,0.55))",
             }}
-            initial={{ scale: 1 }}
+            initial={{ scale: 1, y: 0, rotate: 0 }}
             // Accelerates outward and never settles: the growth is still
             // speeding up when the word lets go, which is what hands the eye
             // to the full-frame plate instead of parking on a big word.
-            animate={{ scale: grow }}
-            transition={{ duration: dur, ease: [0.4, 0, 0.9, 0.85] }}
+            animate={{ scale: grow, y: `${driftY}vh`, rotate: rot }}
+            transition={{ duration: dur, ease }}
           >
             {word}
           </m.span>
