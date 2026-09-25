@@ -170,6 +170,15 @@ await page.addStyleTag({ content: `
   button.fixed.left-4.top-24 { display: none !important; }             /* beat pill */
   .fixed.bottom-4.left-4 { display: none !important; }                 /* UI sound pill */
   nextjs-portal { display: none !important; }                          /* Next dev indicator */
+  /* THE SITE'S OWN PARTICLE FIELD. Mounted in app/layout.tsx for every page on
+     the website, so it also renders on /studio — a full-screen canvas at z-[1]
+     and 0.6 opacity sitting ON TOP of the song art (which lives at -z-10) and
+     under the words. The stage already has its own weather (KineticParticles,
+     z-[2]); this is a second, unrelated particle system compositing over every
+     photograph, and it is the soft coloured haze that made backdrops read as
+     "washed out and broken". It has been in every cut this repo has ever
+     rendered. */
+  canvas.fixed.inset-0.z-\[1\] { display: none !important; }
 ` });
 
 // Mount the pixel clock: one rAF loop paints audio ms into the strip. It runs

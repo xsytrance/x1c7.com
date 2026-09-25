@@ -1945,3 +1945,52 @@ instead of a crossfade. Every other art swap in the engine has to be gentle;
 this one does not, and that contrast is most of why it reads as an event.
 Keyed on the trigger count so a second curtain inside the first replaces it
 rather than queueing — a dense passage cannot stack four sets of doors.
+
+## 32 · The website was painting on every video (2026-09-25)
+
+`src/app/layout.tsx` mounts `<ParticleField />` for every page on the site.
+`/studio` is a page on the site. So a full-screen canvas at **z-[1], opacity
+0.6** has been compositing over the song art — which lives at `-z-10` — in
+**every cut this repo has ever rendered.** The stage already has its own
+weather (`KineticParticles`, z-[2]); this was a second, unrelated particle
+system, from the marketing chrome, drawing soft coloured blobs across every
+photograph. It is the haze behind years of "the backgrounds look washed out /
+weird / broken."
+
+`render-cut.mjs` strips site furniture — the player bar, the beat pill, the
+dev indicator — and this was never on the list, because nobody was looking for
+site chrome UNDER the art instead of over it. It is on the list now.
+
+**How it was finally found, after three wrong guesses.** I blamed the surface
+layer, then the particle density, then the big-moment flares, and measured each
+one wrong-headedly by changing a knob and re-rendering. What actually settled
+it took one probe: enumerate every element covering >25% of the viewport at a
+fixed moment and print its tag, z-index, opacity and blend mode. The answer was
+one line of that dump — `CANVAS op=0.6 z=1` — and nothing in the stage's own
+code could have explained it, because the element isn't in `KineticStage` at
+all. **When a layer you cannot account for is on screen, enumerate the layers.
+Do not bisect the config.**
+
+### Two more substring false-positives in the same song
+
+`surfaceFor()` and `particleModeFor()` match unanchored substrings against a
+blob of mood + themes + keywords + title, and Red Flags hit both:
+
+- **"green light"** → `/\b(moss|forest|damp|ancient|stone|green)\b/` → the
+  engine overgrew a domestic-dispute song with **moss**.
+- **"Financial Strain"** → `/rain|storm|.../` → **rain**. St-RAIN. This one is
+  a happy accident that suits the song, and was kept.
+
+Same family as Drink Drink matching champagne bubbles on its own title (§3f).
+Override with `planet.effects.surface` (`"none"` disables) and `deck.weather`.
+**Check both against a song's actual words before blaming the art.**
+
+### And the thing to check before choosing a window
+
+`lyrics_synced` can carry Suno's structural annotations as sung words —
+`Intro`, `wChorus`, `beMale`, `timiMale`, `AlMaybe` — and, worse, **collapsed
+timestamps**: 60+ words all stamped inside one second, plus a leaked prompt
+("clean guitar fading into distorted low 808"). A window over that renders an
+unreadable flash of text. Score candidate windows by the worst count of words
+inside any 0.6s before picking one; on this song it ruled out the entire final
+chorus, title line and all.
