@@ -113,7 +113,18 @@ const SHARED_BASE = `${PLANET_BASE}/planets/_shared`;
 // the stage when their word is sung. Off by default; NON_LOOK (looks.ts) so
 // a captured look never bakes it. ?reel=1 flips it for a session.
 P.register({ id: "reel.enabled", label: "Reel Ghosts", group: "REEL", type: "bool", value: false });
-interface ReelEntry { img: string; word: string; score: number; featured?: boolean }
+interface ReelEntry { img: string; word: string; score: number; featured?: boolean; recipe?: string }
+/** A reel image fit to be the BACKDROP, not just a ghost behind the words.
+ *
+ * The Curator's "word-portrait" and "word-neon" recipes render the word itself
+ * as artwork — the picture has large typography baked into it. Drifting behind
+ * the stage that is atmosphere; full-frame under the lyrics it is a second set
+ * of words competing with the real ones, and it says whatever the recipe felt
+ * like ("ERASE THE NOISE" under a line about choosing you). `stickers` bakes in
+ * lettering the same way. The ghost layer can still have them; the backdrop
+ * cannot. */
+const reelPlate = (e: ReelEntry | undefined | null): string | null =>
+  e?.img && !/word-|stickers/.test(e.recipe ?? "") ? e.img : null;
 // Planet art asset URLs are stored relative ("/planets/<slug>/<w>.webp"); the
 // storage reorg moved the files to R2, so prefix the host's PLANET_BASE at
 // render. Already-absolute URLs (R2 shared art, Kinetica blobs) pass through.
@@ -1828,8 +1839,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             // art source it is the widest coverage available — 18 more words on
             // this song, and it costs nothing per track once the reel exists.
             else if (deck?.reelArt) {
-              const re = reelMap.current?.get(w);
-              if (re?.img) openInto(re.img);
+              const re = reelPlate(reelMap.current?.get(w));
+              if (re) openInto(re);
             }
           }
           // ── NO PLATE OUTSTAYS ITS WELCOME ──
@@ -1846,7 +1857,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           // the new plate still belongs to the lyric — rotating to an
           // unrelated picture would fix the pacing and break the meaning.
           const dw = artDwellRef.current;
-          if (dw && bgArtRef.current && t - artLandedAtRef.current >= dw.max && t - dwellAskRef.current >= 0.6) {
+          // `max` is what the OWNER sees, so it has to be measured from the
+          // moment the next plate lands — not from the moment we ask for one.
+          // Asking at `max` and then paying the throttle plus the downbeat wait
+          // put the real ceiling at 4.2s on a 2.0s setting. Ask early by exactly
+          // the throttle we know we owe, and the knob means what it says.
+          const askAt = Math.max(0.4, dw ? dw.max - swapMsRef.current / 1000 : 0);
+          if (dw && bgArtRef.current && t - artLandedAtRef.current >= askAt && t - dwellAskRef.current >= 0.6) {
             // The reprieve belongs to the word whose PICTURE is up, not to any
             // keyword that happens to be passing. Checking merely for "a
             // keyword with art" let a run of different keywords keep an
@@ -1865,8 +1882,18 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 // means "the picture belongs to this part of the song".
                 if (dt < -12) continue;
                 if (dt > 12) break;
-                const a = art?.[clean(words[k].w).toLowerCase()];
-                if (typeof a === "string" && !pool.includes(a)) pool.push(a);
+                const kw = clean(words[k].w).toLowerCase();
+                const a = art?.[kw];
+                if (typeof a === "string") { if (!pool.includes(a)) pool.push(a); continue; }
+                // THE REEL BELONGS IN THE ROTATION TOO. Without this the pool
+                // is built from the song's own keywords alone, so a track with
+                // seven of them has an EMPTY pool most of the time — the
+                // watchdog then falls back to the section plate that is already
+                // on screen, requestArt drops it as a no-op, and the picture
+                // sits there for 4-5s exactly as if there were no watchdog.
+                // Measured on Still Me: Still You (7 keywords, 19 reel words).
+                const re = deck?.reelArt ? reelPlate(reelMap.current?.get(kw)) : null;
+                if (re && !pool.includes(re)) pool.push(re);
               }
               const cur = bgArtRef.current;
               const fresh = pool.filter((u) => !cur.endsWith(u));

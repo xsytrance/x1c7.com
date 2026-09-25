@@ -2138,3 +2138,38 @@ its welcome and none of them got looked at either. The throttle derived from
 `artDwell` moved from `max * 450` to `max * 700`, which puts the median inside
 the 2-3s the ceiling aims for. **Widening coverage changes the pacing; re-check
 the dwell report after adding art.**
+
+### §34 addendum — Still Me: Still You, and three things the reel taught (2026-09-25)
+
+Chosen deliberately as the hard case: 27 sections, a full reel, and only
+**seven keywords of its own**. Before this week it could only have been a
+slideshow. 60s from 194.4s, 29 plates, median hold 2.0s, longest 2.5s.
+
+**1. `artDwell.max` was measuring the wrong end.** It triggered the ask, then
+the swap throttle and the downbeat wait added ~1.5-2s before anything landed —
+so a 2.0s setting produced a 4.2s ceiling, and lowering it did nothing because
+the latency was the whole cost. It now asks EARLY by exactly the throttle it
+knows it owes (`max - swapMs/1000`), and the knob finally means what the owner
+sees. Longest hold went 4.2s → 2.5s.
+
+**2. The dwell rotation could not see the reel.** The pool was built from
+`assets.keywords` alone, so a seven-keyword song had an EMPTY pool nearly all
+the time; the watchdog fell back to the section plate already on screen,
+`requestArt` dropped it as a no-op, and the picture sat there exactly as if no
+watchdog existed. The reel now feeds the pool too — which is the whole point of
+having one.
+
+**3. Not every reel image can be a backdrop.** The Curator's `word-portrait`,
+`word-neon` and `stickers` recipes render the WORD as artwork — typography
+baked into the picture. Drifting behind the stage as a ghost that is
+atmosphere; full-frame under the lyrics it is a second set of words competing
+with the real ones, saying whatever the recipe chose ("ERASE THE NOISE" under a
+line about choosing you). `reelPlate()` filters them for backdrop use and
+leaves the ghost layer alone. On this song that is 21 of 32 images, 14 words.
+
+**And the watcher lied again, in a new way.** The backdrop watch matched art by
+`/planets/` only — but reel images live under `/lexicon/`. Every reel plate was
+invisible to it, so the previous planet plate looked like it was still up and
+dwell came back inflated by seconds. Six plates in one 60s cut were simply not
+counted. **The report is only as honest as its selector** — the third time this
+session that a measurement, not the engine, was the thing that was wrong.

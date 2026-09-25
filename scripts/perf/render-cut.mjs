@@ -215,10 +215,14 @@ await page.evaluate(`(() => {
     // backdrop shell (.fixed.inset-0.-z-10). Picking "the biggest img on the
     // page" instead finds the veil, which sits on top at full opacity and
     // will happily report a healthy backdrop over a missing one.
-    // Match the plate by its URL, not by a layout class: /planets/ is the
-    // generated song art and nothing else on the stage uses that prefix.
+    // Match the plate by its URL, not by a layout class. TWO namespaces carry
+    // song art: /planets/ is the song's own generated plates, /lexicon/ is the
+    // Curator's reel. Matching only the first made every reel plate invisible
+    // to this watch — the previous planet plate looked like it was still up,
+    // and dwell times came back inflated by seconds. The report is only as
+    // honest as its selector.
     const all = [...document.querySelectorAll("img")];
-    const main = all.find((i) => (i.currentSrc || i.src).includes("/planets/")) || null;
+    const main = all.find((i) => { const u = i.currentSrc || i.src; return u.includes("/planets/") || u.includes("/lexicon/"); }) || null;
     // effective opacity = every ancestor's, multiplied
     let op = null;
     if (main) {
