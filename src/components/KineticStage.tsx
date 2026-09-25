@@ -395,7 +395,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[] }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1123,6 +1123,16 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     raf = requestAnimationFrame(pick);
     return () => cancelAnimationFrame(raf);
   }, [deck?.abstract, veilList, getCurrentTime]);
+  // near/far cut of the CURRENT plate, when the song has been through
+  // abstract.mjs --depth. Derived from the plate's own filename.
+  const plateLayers = useMemo(() => {
+    const base = deck?.abstract?.layers;
+    if (!base || !bgArt) return null;
+    const file = bgArt.split("/").pop()?.replace(/\.[a-z0-9]+$/i, "");
+    if (!file) return null;
+    const root = base.endsWith("/") ? base : `${base}/`;
+    return { near: `${root}${file}.near.webp`, far: `${root}${file}.far.webp` };
+  }, [deck?.abstract?.layers, bgArt]);
   const bigCfgRef = useRef<{ floor: number } | null>(null);
   bigCfgRef.current = deck?.moments ? { floor: deck.moments.floor ?? 0.62 } : null;
   const barsPhasedRef = useRef<BarGrid | null>(null);
@@ -2721,7 +2731,32 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               }}
             >
               { }
+              {/* DEPTH — when the plate has been cut into near/far layers
+                  (abstract.mjs --depth) the FAR layer is what gets the
+                  Ken-Burns move, and the NEAR layer rides on top of it moving
+                  further and faster. That difference is the whole effect: a
+                  photograph with two rates in it stops reading as a flat
+                  picture and starts reading as a place. */}
+              {plateLayers && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={plateLayers.near}
+                  alt=""
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+                  style={{
+                    transform: "translate3d(calc(var(--cam-x, 0px) * -2.1 + var(--par-x, 0px) * -1.8), calc(var(--cam-y, 0px) * -1.7), 0) scale(1.06)",
+                    zIndex: 1,
+                    willChange: "transform",
+                  }}
+                />
+              )}
               <m.img
+                // ALWAYS the real plate. Substituting the far layer here meant
+                // any plate without a generated cut vanished entirely — and
+                // the frame went soft because what remained was the veil. The
+                // near layer is ADDITIVE: it sharpens and parallaxes the
+                // subject on top, and if its file is missing nothing is lost.
                 src={bgArt}
                 alt=""
                 className="h-full w-full object-cover"

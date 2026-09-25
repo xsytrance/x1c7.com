@@ -281,6 +281,11 @@ export interface PlanetDynamicPlus {
       /** one sky per ACT (abstract.mjs --acts), crossfaded on the boundary.
        *  One veil for a whole song is one sky for a song that changes. */
       veils?: { src: string; start: number; end: number }[];
+      /** base path to near/far plate cuts (abstract.mjs --depth). With it the
+       *  FAR layer takes the Ken-Burns move and the NEAR layer rides on top
+       *  moving further — two rates in one photograph, which is what stops it
+       *  reading as flat. */
+      layers?: string;
     };
     /** THE WORLD — swap the per-pixel shader corridor for a real three.js
      * scene, with the lyric living inside it. A word sits at the distance its

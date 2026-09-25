@@ -163,6 +163,55 @@ if (actGroups) {
   fs.writeFileSync(path.join(OUT, "veils.json"), JSON.stringify(manifest, null, 1));
 }
 
+// ── DEPTH LAYERS ───────────────────────────────────────────────────────────
+// A veil over a flat photograph is still a flat photograph. To make a PLATE
+// come alive it has to have depth — so cut each one into a NEAR layer (the
+// subject) and a FAR layer (everything behind it), and let the stage move them
+// at different rates. That is parallax, and it is what makes a still picture
+// read as a place rather than a picture of one.
+//
+// No depth model is installed, and for this kind of plate none is needed: the
+// subject is the SHARP thing. A heavy blur subtracted from the original leaves
+// high-frequency detail, which is exactly where focus is; smoothing that gives
+// a usable depth proxy, biased toward the centre because that is where a
+// portrait's subject lives.
+async function depthLayers(buf, base) {
+  const meta = await sharp(buf).metadata();
+  const w = meta.width ?? 832, h = meta.height ?? 1472;
+  const SW = Math.round(w / 6), SH = Math.round(h / 6);
+
+  const grey = await sharp(buf).greyscale().resize(SW, SH, { fit: "fill" }).raw().toBuffer();
+  const soft = await sharp(buf).greyscale().resize(SW, SH, { fit: "fill" }).blur(7).raw().toBuffer();
+  const mask = Buffer.alloc(SW * SH);
+  for (let y = 0; y < SH; y++) {
+    for (let x = 0; x < SW; x++) {
+      const i = y * SW + x;
+      const detail = Math.min(255, Math.abs(grey[i] - soft[i]) * 7);      // in focus = near
+      const dx = (x / SW - 0.5) * 2, dy = (y / SH - 0.5) * 2 * 0.72;
+      const centre = Math.max(0, 1 - Math.sqrt(dx * dx + dy * dy) * 0.95); // portraits sit centre
+      mask[i] = Math.max(0, Math.min(255, detail * 0.55 + centre * 190));
+    }
+  }
+  // feather hard, or the cut-out shows its own edge
+  // a raw-input pipeline has no format to infer: say png, or sharp refuses
+  const alpha = await sharp(mask, { raw: { width: SW, height: SH, channels: 1 } })
+    // Generous, not tight. At linear(1.6,-40) the cut-out kept so little that
+    // the blurred FAR layer dominated the frame and the whole plate came out
+    // SOFTER than before — measured edge energy 4.81 down to 1.37. The near
+    // layer has to carry most of the picture; the far layer is only there to
+    // fill what moves out from behind it.
+    .blur(9).resize(w, h).linear(2.1, 10).blur(11).png().toBuffer();
+
+  await sharp(buf)
+    .composite([{ input: alpha, blend: "dest-in" }])
+    .webp({ quality: 88, alphaQuality: 92 })
+    .toFile(path.join(OUT, `${base}.near.webp`));
+  // the far layer is the whole plate, softened, so the hole behind the subject
+  // is filled with something plausible rather than a silhouette
+  await sharp(buf).blur(4).modulate({ brightness: 0.9 })
+    .webp({ quality: 84 }).toFile(path.join(OUT, `${base}.far.webp`));
+}
+
 // ── MOTES ── 12 soft patches cut from the BRIGHTEST part of each plate, where
 // the light actually is. A dot wearing the art's own texture instead of a flat
 // fill, so a song's weather is made of that song.
@@ -213,4 +262,12 @@ await sharp({ create: { width: TILE * COLS, height: TILE * ROWS, channels: 4, ba
   .webp({ quality: 88, alphaQuality: 90 })
   .toFile(path.join(OUT, "motes.webp"));
 console.log(`  ✓ motes.webp  (${COLS}x${ROWS} @ ${TILE}px)`);
+
+if (args.depth) {
+  const names = urls.map((u) => u.split("/").pop().replace(/\.[a-z]+$/i, ""));
+  for (const [i, b] of bufs.entries()) {
+    await depthLayers(b, names[i]);
+    console.log(`  ✓ ${names[i]}.near/.far`);
+  }
+}
 console.log(`\n→ ${OUT}`);
