@@ -2597,14 +2597,36 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {veilSrc && (
         // Two stacked layers so an act change CROSSFADES rather than cuts: a
         // sky that snaps is a slideshow again, in one frame.
-        <>
+        //
+        // The WRAPPER is where the song gets in. The tick already writes
+        // --bass, --kick, --voice and --charge onto the stage root every frame
+        // for the word glow and the stage bend; the sky simply was not
+        // listening. It breathes on the low end, flinches on the kick, and a
+        // riser floods it — while the img keeps its own slow drift, because a
+        // transform cannot be both animated and driven at once.
+        <div
+          className="pointer-events-none fixed inset-0 -z-[9]"
+          style={{
+            // These values are chosen by eye, NOT by the frame-luminance
+            // metric, which cannot see this layer: a 0.24-opacity veil
+            // screened over a lit plate moves mean frame luma by almost
+            // nothing, so it reported a median jump of 0.00 after a kick and I
+            // pushed the kick term to 0.85 chasing it. Probing the live DOM
+            // settled it instead — --kick reaches 1.0, fires nine times in the
+            // window, the veil inherits it, and the wrapper's computed filter
+            // is live. The mechanism was never the problem; the proxy was.
+            transform: "scale(calc(1 + var(--bass, 0) * 0.055 + var(--kick, 0) * 0.045 + var(--charge, 0) * 0.07))",
+            filter: "brightness(calc(0.82 + var(--voice, 0) * 0.26 + var(--kick, 0) * 0.35 + var(--charge, 0) * 0.6)) saturate(calc(1 + var(--charge, 0) * 0.5))",
+            willChange: "transform, filter",
+          }}
+        >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             key={veilSrc}
             src={veilSrc}
             alt=""
             aria-hidden
-            className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
+            className="pointer-events-none absolute inset-0 h-full w-full object-cover veil-drift"
             style={{ opacity: deck?.abstract?.veilMix ?? 0.5, mixBlendMode: "screen",
                      transition: "opacity 2.2s ease" }}
           />
@@ -2615,11 +2637,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               src={prevVeil}
               alt=""
               aria-hidden
-              className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
+              className="pointer-events-none absolute inset-0 h-full w-full object-cover veil-drift"
               style={{ opacity: 0, mixBlendMode: "screen", transition: "opacity 2.2s ease" }}
             />
           )}
-        </>
+        </div>
       )}
       {/* THE WORD STUDY — no world at all. A near-black void, one word, and a
           camera that investigates it: every word discovered and explored
