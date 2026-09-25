@@ -9,6 +9,7 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, typ
 import { m, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
+import { effectForWord, impact as impactOf, bigMomentFor } from "@/lib/effects/impact";
 import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
@@ -394,7 +395,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1068,6 +1069,38 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // changes (same reason melodyRef exists).
   const camSyncRef = useRef(false);
   camSyncRef.current = !!deck?.camSync;
+  // Cheap per-cut facts the moment-scorer needs: how often each word occurs,
+  // and which words are the highest note of their phrase.
+  const wordCounts = useRef<Map<string, number>>(new Map());
+  const peakWords = useRef<Set<number>>(new Set());
+  useEffect(() => {
+    const counts = new Map<string, number>();
+    for (const w of words) {
+      const k = clean(w.w).toLowerCase();
+      counts.set(k, (counts.get(k) ?? 0) + 1);
+    }
+    wordCounts.current = counts;
+    // melodic peak PER PHRASE, not per song: the highest note of a line is the
+    // one that feels like the top of it, even in a low verse.
+    const peaks = new Set<number>();
+    if (melody) {
+      let start = 0;
+      for (let i = 0; i <= words.length; i++) {
+        const isBreak = i === words.length || (i > 0 && words[i].t - words[i - 1].t > 0.55);
+        if (!isBreak) continue;
+        let best = -1, bestMidi = -1e9;
+        for (let j = start; j < i; j++) {
+          const m = melody.words.get(j);
+          if (m && m.midi > bestMidi) { bestMidi = m.midi; best = j; }
+        }
+        if (best >= 0) peaks.add(best);
+        start = i;
+      }
+    }
+    peakWords.current = peaks;
+  }, [words, melody]);
+  const bigCfgRef = useRef<{ floor: number } | null>(null);
+  bigCfgRef.current = deck?.moments ? { floor: deck.moments.floor ?? 0.62 } : null;
   const barsPhasedRef = useRef<BarGrid | null>(null);
   barsPhasedRef.current = barsPhased;
   // move state for the stepped camera
@@ -1666,6 +1699,28 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           if (pass >= 3) {
             if (w in keywordEmotion) spawnRing(true);
             else if (isFinal && air >= 0.6) spawnRing(false);
+          }
+          // ── A MOMENT ── the handful of words that earn a WHOLE-FRAME event,
+          // not a text decoration. This is what made "light" land: the frame
+          // itself answered the word. Scored, so it stays rare — a flashbulb on
+          // every word is not a flashbulb, it is a strobe.
+          if (pass >= 3 && bigCfgRef.current) {
+            const sc = impactOf({
+              airtime: air,
+              delivery: stems ? envAt(stems, "lead", words[i].t + 0.18) : 0.5,
+              onDownbeat: !!(barsPhasedRef.current
+                && Math.abs(words[i].t - barAt(barsPhasedRef.current, words[i].t).start) < 0.18),
+              melodicPeak: peakWords.current.has(i),
+              occurrences: wordCounts.current.get(w) ?? 1,
+              hasArt: !!art?.[w],
+              semantic: !!effectForWord(w),
+            });
+            const big = bigMomentFor(w, sc, bigCfgRef.current.floor);
+            if (big) {
+              if (big === "flare") { setNova((n) => n + 1); setWave((v) => v + 1); particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 90); }
+              if (big === "quake") { setQuake((q) => q + 1); spawnRing(true); }
+              if (big === "blackout") { setWave((v) => v + 1); spawnRing(false); }
+            }
           }
         }
       }
@@ -3073,7 +3128,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                     const naturalSig: TextEffect | null = burns ? "burn"
                       : glitches ? "glitch" : slams ? "slam" : wavy ? "wave"
                       : neon ? "neon" : pulses ? "pulse" : whispers ? "whisper"
-                      : fizzes ? "fizz" : types ? "type" : extraFx;
+                      : fizzes ? "fizz" : types ? "type" : extraFx
+                      // Last resort: what the word MEANS. The hand-authored map
+                      // still wins (a person's choice beats a lexicon's), but a
+                      // song nobody has authored now gets "light" blooming and
+                      // "break" shattering instead of nothing.
+                      ?? effectForWord(ek);
                     // Bias seam (pure, shared with tests): per-word override wins,
                     // else the natural pick unless the preset `allow` list rules it out.
                     const resolvedFx = resolveWordEffect(naturalSig, effectsCfg, [ek, lower]);

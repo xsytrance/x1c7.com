@@ -258,6 +258,15 @@ export interface PlanetDynamicPlus {
      * Dynamic mode only for now — phrase mode lays words out in a line rather
      * than at a computable position. */
     guide?: { size?: number };
+    /** WHOLE-FRAME MOMENTS. A handful of words per cut get the frame itself to
+     * answer them — a flare, a quake, a drop to silhouette — rather than a
+     * decoration on the glyph. `floor` is the impact score a word must clear
+     * (default 0.62); raise it to make moments rarer, lower for more.
+     *
+     * Scored from airtime, measured delivery, landing on a downbeat, being the
+     * melodic peak of its phrase, carrying art, meaning something, and MINUS
+     * repetition — the fifteenth "ne" is not a moment however loudly it lands. */
+    moments?: { floor?: number };
     /** THE WORLD — swap the per-pixel shader corridor for a real three.js
      * scene, with the lyric living inside it. A word sits at the distance its
      * onset occupies (s = t * speed) and the camera flies the same path, so
