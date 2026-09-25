@@ -1841,3 +1841,105 @@ seam alone fires constantly on ordinary art.
 
 Shipped: `hajimemashite-v8-vertical.mp4`, 1080x1920, 60.0s, A/V |error| median
 8ms / p95 13ms.
+
+## 30 · The backdrop that was never there — artSync livelocked the plate (2026-09-25)
+
+The complaint was "the background is just weird and broken", and it was worse
+than that: on hajimemashite v5 **no plate ever reached the stage at all.** Every
+frame the owner reviewed was veil, particles and text over empty space. The
+photograph was fetched, decoded and cached, and then never shown.
+
+**The mechanism.** `deck.artSync` makes an art swap wait for the next downbeat
+instead of landing whenever the throttle expires. `barAt(grid, earliest)`
+returns the downbeat *strictly after* `earliest`, and the scheduler below it
+deliberately overshoots its timer by 20ms. So the swap woke 20ms PAST the beat
+it had waited for, asked again, was told to wait for the NEXT beat, and
+deferred forever. One bar at a time, for the length of the song.
+
+The fix is three lines: treat "we are just past a downbeat" (within 150ms) as
+being *on* it, and the swap lands instead of chasing the grid.
+
+**Why it read as random.** The artSync branch only runs once `barsPhased` has
+been computed. If a plate happened to land before the grid was ready it stuck
+there, held, for the rest of the cut. So the SAME 10s window rendered bright on
+one pass and flat on the next, with nothing random involved — it was a race
+between the first art request and the bar grid. Four renders of one config went
+1.92 / 1.95 / 1.94 / 5.86, which is exactly the shape that makes you distrust
+your metric and start bisecting innocent code. I spent most of a session
+bisecting `deck.abstract.layers`, which was never involved.
+
+**The lesson that generalises: a missing asset is silent.** A plate that 404s
+paints nothing, raises no error, and encodes a perfectly valid mp4. So does a
+plate that is never requested. Two things now exist so this class of bug cannot
+hide again — both in `scripts/perf/render-cut.mjs`:
+
+- **failed-request reporting** — every 4xx/failed request during the cut is
+  listed at the end. This immediately surfaced five plate URLs on this track
+  pointing into `/planets/hajimemashite-v5/`, a directory that has never
+  existed, including the ambient art for a whole section (93.6–105.4s painted
+  nothing). Across the catalogue 64 of 74 tracks reference plates absent from
+  `public/` — most are served from R2 in production, but check before you
+  render locally and conclude the art direction is bad.
+- **the backdrop watch** — samples the `/planets/` img in the render's own rAF
+  and prints what the backdrop actually did: how many plates, how many
+  transitions, how many sat below 0.15 opacity. `⚠ BACKDROP: no plate was ever
+  on screen during this cut` is now a one-line answer to a question that cost a
+  session. **Match the plate by its URL, not by "the biggest img on the page"**
+  — the veil sits on top at full opacity and will happily report a healthy
+  backdrop over a missing one. That wrong selector cost two renders.
+
+**A second, real defect found on the way.** The art crossfade defaulted to 1.6s
+while keyword art changes every ~2.3s, so each plate was replaced while still
+mid-fade and the backdrop never once reached full strength — a genuine cause of
+the "slideshow" feel independent of the bug above. The default is now 0.5s, with
+`deck.artFade` (seconds) and `deck.artLift` (multiplier on the 0.6/0.85 target)
+to override. **This changes every track that has no `deck.motion`**, which is a
+deliberate break from the house rule that a new knob defaults to the old
+behaviour: a plate that never finishes fading is a defect, not a style.
+
+**Don't reason about the stage from outside it.** Every conclusion I drew from
+edge-energy alone was wrong or misleading, and the bare playwright probe
+disagreed with the renderer because it defaulted to `pass=4` while
+`render-cut.mjs` uses `pass=6` — and `deck` (hence artSync) only activates at
+pass ≥ 6. **A probe that doesn't match the renderer's pass is measuring a
+different program.** When a render looks wrong, instrument the render.
+
+## 31 · The curtain — a moment built to be reused (2026-09-25)
+
+Forty-two hand-authored word→effect mappings are why hajimemashite's best
+moments land, and also why the approach stops at one song. The curtain is the
+counter-example: built for "the doors swung open, light…", and deliberately
+knowing nothing about doors, gold, or that song.
+
+`src/components/StageCurtain.tsx` takes a trigger count and a config. It fires
+three ways, and a song can use any or all of them:
+
+1. **Semantically** — `CURTAIN_WORDS` in `src/lib/effects/impact.ts` (door,
+   gate, open, reveal, unveil, begin, enter, welcome…). Free for every song,
+   forever. Gated at impact >= **0.7** rather than the usual 0.62 floor,
+   because it covers the entire frame for about a second: two or three a cut,
+   never twenty. `open`/`opens` also live in the `rise` family; the curtain
+   wins, because a word meaning the world opening deserves the world opening.
+2. **On the clock** — `dynamicPlus.curtains: [t, ...]`, same shape as
+   `quakes`. For when the doors belong on a specific bar and you would rather
+   not argue with the scorer. **Add the field to `PlanetDynamicPlus`** — an
+   invented dynamicPlus key that isn't in the type is a silent no-op, which
+   this repo has shipped before (§3f).
+3. **Styled** — `deck.curtain: {dur, shut, hold, axis, color, edge, reveal}`.
+   `axis: "updown"` parts top/bottom instead of sideways.
+
+**It slams before it parts, and that is the whole effect.** Panels that are
+already closed have to arrive somehow. Fading them in throws away the best
+frame available — two halves meeting — so they sweep IN fast (0.13s), hold
+shut (0.12s), then open slowly (0.78s). **The hold is what sells it:** without
+it the eye reads one continuous wipe and the doors never existed. All three
+phases are keyframes on ONE framer timeline with `times`, not three chained
+animations — chaining through state leaves a frame of the old value at every
+handoff, and on a 0.13s slam that frame IS the slam.
+
+**It is also the only place the backdrop may hard-cut.** While the panels are
+shut the frame is covered, so a plate change underneath lands as a REVEAL
+instead of a crossfade. Every other art swap in the engine has to be gentle;
+this one does not, and that contrast is most of why it reads as an event.
+Keyed on the trigger count so a second curtain inside the first replaces it
+rather than queueing — a dense passage cannot stack four sets of doors.

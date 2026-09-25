@@ -152,6 +152,8 @@ export interface PlanetDynamicPlus {
    * a `devicemotion` event ever triggered it. Use them on the few genuine
    * hype moments — a beat drop, a chant wall — not on every bar. */
   quakes?: number[];
+  /** seconds at which the stage curtain slams shut and parts again */
+  curtains?: number[];
   /** Windows where the cutting STOPS and one frame is allowed to breathe.
    * The closing belt is the payoff of the whole cut; churning art through it
    * throws the landing away. */

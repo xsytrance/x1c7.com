@@ -106,6 +106,22 @@ const browser = await chromium.launch({
 const ctx = await browser.newContext({ viewport: { width: W, height: H + PROBE_H }, deviceScaleFactor: 1 });
 await ctx.grantPermissions(["microphone"], { origin: BASE }); // keeps the MicPrimer banner away
 const page = await ctx.newPage();
+
+// A cut is only as good as the assets that actually arrived. A plate that
+// 404s paints NOTHING and the frame still encodes happily — which is how a
+// broken backdrop ships looking merely "dark". Surface every failed request
+// and page error here, and summarise them at the end: silent asset failure
+// was invisible to every QA pass this renderer has ever run.
+const assetFails = new Map();
+page.on("requestfailed", (r) => {
+  const u = r.url();
+  assetFails.set(u, (assetFails.get(u) ?? 0) + 1);
+});
+page.on("response", (r) => {
+  if (r.status() >= 400) assetFails.set(`${r.status()} ${r.url()}`, (assetFails.get(`${r.status()} ${r.url()}`) ?? 0) + 1);
+});
+page.on("pageerror", (e) => log(`  ⚠ page error: ${e.message}`));
+globalThis.__assetFails = assetFails;
 // The player builds its element with `new Audio()` — detached, invisible to
 // querySelector. Wrap the constructor before any page script runs so every
 // instance is reachable; the "main" one is whichever is actually rolling.
@@ -176,6 +192,39 @@ await page.evaluate(`(() => {
     for (let i = 0; i < ${PROBE_BITS}; i++) cells[i].style.background = (ms >> i) & 1 ? "#fff" : "#000";
     requestAnimationFrame(tick);
   })();
+  // ── BACKDROP WATCH ── the plate is the one thing a render can lose without
+  // any error at all: the img loads, the frame encodes, and the picture is
+  // simply not there. Sample it in the same rAF as the clock and keep every
+  // transition, so a cut can be asked afterwards what its backdrop was
+  // actually doing instead of being eyeballed frame by frame.
+  window.__bg = [];
+  (function watch() {
+    // The PLATE, specifically — the generated song art living in the
+    // backdrop shell (.fixed.inset-0.-z-10). Picking "the biggest img on the
+    // page" instead finds the veil, which sits on top at full opacity and
+    // will happily report a healthy backdrop over a missing one.
+    // Match the plate by its URL, not by a layout class: /planets/ is the
+    // generated song art and nothing else on the stage uses that prefix.
+    const all = [...document.querySelectorAll("img")];
+    const main = all.find((i) => (i.currentSrc || i.src).includes("/planets/")) || null;
+    // effective opacity = every ancestor's, multiplied
+    let op = null;
+    if (main) {
+      op = 1;
+      for (let el = main; el && el !== document.body; el = el.parentElement) op *= +getComputedStyle(el).opacity;
+    }
+    const rec = {
+      t: +audio.currentTime.toFixed(2),
+      src: main ? (main.currentSrc || main.src).split("/").pop() : null,
+      w: main ? main.naturalWidth : 0,
+      op: op === null ? null : +op.toFixed(3),
+      n: all.length,
+      srcs: all.length <= 6 ? all.map((i) => (i.currentSrc || i.src).split("/").slice(-2).join("/")).join(" | ") : undefined,
+    };
+    const last = window.__bg[window.__bg.length - 1];
+    if (!last || last.src !== rec.src || Math.abs((last.op ?? 0) - (rec.op ?? 0)) > 0.12) window.__bg.push(rec);
+    requestAnimationFrame(watch);
+  })();
 })()`);
 
 if (SHOTS > 0) {
@@ -225,6 +274,7 @@ for (;;) {
 await cdp.send("Page.stopScreencast");
 const a1 = await anchor();
 await new Promise((r) => setTimeout(r, 400));
+const bgReport = await page.evaluate(() => window.__bg || []).catch(() => []);
 await browser.close();
 log(`  ${frames.length} frames over ${(a1.t - a0.t).toFixed(2)}s of song (${(frames.length / (a1.t - a0.t)).toFixed(1)} fps)`);
 
@@ -317,6 +367,24 @@ execFileSync("ffmpeg", [
   "-movflags", "+faststart",
   OUT,
 ]);
+{
+  const bg = bgReport;
+  if (!bg.length || bg.every((r) => !r.src)) {
+    log("  ⚠ BACKDROP: no plate was ever on screen during this cut.");
+    for (const r of bg.slice(0, 8)) log(`      ${String(r.t).padStart(7)}s imgs=${r.n} ${r.srcs ?? ""}`);
+  } else {
+    const dead = bg.filter((r) => r.src && (r.op ?? 0) < 0.15).length;
+    log(`  backdrop: ${new Set(bg.filter((r) => r.src).map((r) => r.src)).size} plate(s), ${bg.length} transitions` + (dead ? `, ${dead} at <0.15 opacity` : ""));
+    for (const r of bg.slice(0, 40)) log(`      ${String(r.t).padStart(7)}s op=${String(r.op).padEnd(6)} nat=${String(r.w).padEnd(5)} ${r.src ?? "(none)"}`);
+  }
+}
+if (assetFails.size) {
+  log(`  ⚠ ${assetFails.size} asset(s) FAILED to load during this cut:`);
+  for (const [u, n] of [...assetFails.entries()].sort((a, b) => b[1] - a[1]).slice(0, 12)) {
+    log(`      ${String(n).padStart(3)}x  ${u}`);
+  }
+  log("    A missing plate paints nothing — the frame still encodes. Fix before shipping.");
+}
 log(`✦ ${OUT}`);
 
 // ── CLOSED-LOOP VERIFY ── rebuild ONLY the pixel-clock strip through the

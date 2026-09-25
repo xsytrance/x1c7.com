@@ -10,6 +10,7 @@ import { m, AnimatePresence, type MotionProps } from "framer-motion";
 import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { effectForWord, impact as impactOf, bigMomentFor } from "@/lib/effects/impact";
+import { StageCurtain, type CurtainCfg } from "@/components/StageCurtain";
 import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
@@ -395,7 +396,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; artFade?: number; artLift?: number; curtain?: CurtainCfg; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -786,9 +787,20 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     if (artSyncRef.current && grid) {
       const nowT = songTimeRef.current;
       const earliest = nowT + waitThrottle / 1000;
-      const { next } = barAt(grid, earliest);
-      const toBeat = (next - nowT) * 1000;
-      if (toBeat >= waitThrottle) waitMs = Math.min(toBeat, waitThrottle + grid.barSec * 1500);
+      const { start, next } = barAt(grid, earliest);
+      // LAND ON THE BEAT WE WOKE FOR. barAt returns the downbeat strictly
+      // AFTER `earliest`, and the timer below deliberately overshoots by 20ms
+      // — so a swap that waited for a downbeat wakes just past it, asks again,
+      // is told to wait for the NEXT one, and defers forever. With artSync on
+      // and a live grid, no plate ever reached the stage: the backdrop was
+      // whatever had landed before the grid finished computing, held for the
+      // rest of the song, or nothing at all. Treat "we are just past a
+      // downbeat" as on it, and the swap lands instead of chasing the grid.
+      const sinceBeat = earliest - start;
+      if (sinceBeat > 0.15) {
+        const toBeat = (next - nowT) * 1000;
+        if (toBeat >= waitThrottle) waitMs = Math.min(toBeat, waitThrottle + grid.barSec * 1500);
+      }
     }
     if (waitMs > 0) {
       // Remember the latest ask and land it on the chosen instant.
@@ -1400,6 +1412,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Shake-to-scatter: a real phone shake rattles the stage and the current
   // word reacts in the song's own tap language.
   const [quake, setQuake] = useState(0);
+  const [curtain, setCurtain] = useState(0);
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -1435,6 +1448,11 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // Same crossing guard as `hits`: fire once as the playhead passes, never on
   // a re-render, and never retroactively if we seek past one.
   const quakes = pass >= 6 ? track.planet?.dynamicPlus?.quakes : undefined;
+  // Placed curtains: dynamicPlus.curtains: [t, ...]. The semantic route below
+  // finds the obvious ones on its own, but a director who wants the doors on a
+  // specific bar should not have to get a word past the impact scorer.
+  const curtains = pass >= 6 ? track.planet?.dynamicPlus?.curtains : undefined;
+  const firedCurtain = useRef(-1);
   const firedQuake = useRef<number>(-1);
   // HOLD — while true the art block stops swapping and the frame breathes.
   const holdRef = useRef(false);
@@ -1613,6 +1631,13 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           }
         }
       }
+      if (curtains?.length) {
+        for (let k = 0; k < curtains.length; k++) {
+          if (k > firedCurtain.current && t >= curtains[k] && t - curtains[k] < 0.5) {
+            firedCurtain.current = k; setCurtain((c) => c + 1); break;
+          }
+        }
+      }
       holdRef.current = !!holds?.some((h) => t >= h.start && t < h.end);
       let i = activeWordIndex(words, t);
       // Dwell cap: during a long instrumental pause the last sung word (which
@@ -1754,6 +1779,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               if (big === "flare") { setNova((n) => n + 1); setWave((v) => v + 1); particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 90); }
               if (big === "quake") { setQuake((q) => q + 1); spawnRing(true); }
               if (big === "blackout") { setWave((v) => v + 1); spawnRing(false); }
+              // The curtain covers the frame for ~1s, so it also gets the
+              // particle burst the flare gets — the sparks come THROUGH the
+              // parting panels, which is most of why it reads as depth.
+              if (big === "curtain") { setCurtain((c) => c + 1); particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 60); }
             }
           }
         }
@@ -2713,9 +2742,19 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             key={bgArt}
             className="pointer-events-none fixed inset-0 -z-10"
             initial={{ opacity: 0 }}
-            animate={{ opacity: lift ? 0.85 : 0.6 }}
+            animate={{ opacity: (lift ? 0.85 : 0.6) * (deck?.artLift ?? 1) }}
             exit={{ opacity: 0 }}
-            transition={{ duration: motionCfg ? (motionCfg.fade ?? 0.42) : (lift ? 0.7 : 1.6), ease: "easeInOut" }}
+            // THE FADE MUST BE SHORT RELATIVE TO THE SHOT, or the backdrop is
+            // never actually on screen. Measured on hajimemashite v5: keyword
+            // art changes every ~2.3s, while the old 1.6s fade needed ~1.4s to
+            // crawl to 0.58 of a 0.6 target — so each plate was replaced while
+            // still mid-fade and the picture never once reached full strength.
+            // It reads as a dim, smeared, "broken" background, and it is the
+            // reason the same 10s window renders bright on one pass and flat on
+            // the next: the capture either catches a plate that happened to
+            // hold, or it doesn't. Nothing random is involved. 0.5s lands the
+            // plate inside a fifth of its shot and leaves it standing.
+            transition={{ duration: motionCfg ? (motionCfg.fade ?? 0.42) : (deck?.artFade ?? (lift ? 0.7 : 0.5)), ease: "easeInOut" }}
           >
             {/* parallax shell — rides the device tilt / mouse via CSS vars, and
                 carries THE TRIP grade (a CSS animation would outrank the img's
@@ -2892,6 +2931,10 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           aria-hidden
         />
       )}
+
+      {/* THE CURTAIN — slams shut, holds, parts again. Fired by a word that
+          means opening, or placed on the clock via dynamicPlus.curtains. */}
+      <StageCurtain fire={curtain} cfg={deck?.curtain} />
 
       {/* Beat-cut blackout — the drums vanished; the world holds its breath */}
       <AnimatePresence>

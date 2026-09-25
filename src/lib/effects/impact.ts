@@ -78,11 +78,25 @@ export function impact(i: ImpactInput): number {
 }
 
 /** Whole-frame events, reserved for the few words that earn one. */
-export type BigMoment = "flare" | "quake" | "blackout";
+export type BigMoment = "flare" | "quake" | "blackout" | "curtain";
+
+/** Words that describe the frame OPENING. These get the curtain: the stage
+ * slams shut and parts again. It is the most expensive moment in the engine —
+ * it covers the whole picture for about a second — so it is gated behind a
+ * higher floor than the others and should land two or three times in a cut at
+ * most. "open" and "opens" also live in the `rise` family; the curtain wins,
+ * because a word that means the world opening deserves the world opening. */
+const CURTAIN_WORDS = new Set([
+  "door", "doors", "doorway", "gate", "gates", "curtain", "curtains",
+  "open", "opens", "opened", "opening", "unlock", "unlocked",
+  "reveal", "reveals", "revealed", "unveil", "begin", "begins", "beginning",
+  "enter", "entrance", "arrive", "arrives", "welcome", "stage", "debut",
+]);
 
 /** Only a handful of words per cut should get one of these. */
 export function bigMomentFor(word: string, score: number, floor = 0.62): BigMoment | null {
   if (score < floor) return null;
+  if (CURTAIN_WORDS.has(clean(word)) && score >= Math.max(floor, 0.7)) return "curtain";
   const fx = effectForWord(word);
   if (fx === "bloom" || fx === "neon") return "flare";
   if (fx === "slam" || fx === "shatter") return "quake";
