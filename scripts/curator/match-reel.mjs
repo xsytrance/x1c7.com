@@ -39,7 +39,7 @@ const args = Object.fromEntries(process.argv.slice(2).reduce((a, v, i, arr) => {
 }, []));
 const SONG = args.song && args.song !== true ? String(args.song) : null;
 if (!SONG) { console.error("need --song <id>"); process.exit(1); }
-const JUDGE = args.model && args.model !== true ? args.model : "qwen3:14b";
+const JUDGE = args.model && args.model !== true ? args.model : "qwen2.5:14b";
 const EMB_MODEL = "qwen3-embedding:0.6b";
 const ACCEPT = args.accept ? parseFloat(args.accept) : 0.55;
 const FEATURED = 0.7;
@@ -92,7 +92,30 @@ async function judge(song, cand) {
   return { score: Math.max(0, Math.min(1, Number(j.score ?? 0))), reason: String(j.reason ?? "").slice(0, 90) };
 }
 
+// ── PREFLIGHT ──
+// Every judge call lives inside a try/catch that logs and continues, so a
+// MISSING MODEL is indistinguishable from a picky judge: the run completes,
+// writes a valid reel file, and reports `accepted: 0`. That is exactly what
+// happened — `qwen3:14b` was not installed, and all 47 songs in the catalogue
+// wrote empty reels, every one of them judging exactly 64 candidates and
+// accepting none, for as long as nobody looked. A per-item catch must never be
+// the thing that discovers the model is gone.
+async function preflight() {
+  const r = await fetch(`${OLLAMA}/api/tags`).catch(() => null);
+  if (!r?.ok) { log(`✗ ollama unreachable at ${OLLAMA}`); process.exit(1); }
+  const have = new Set(((await r.json()).models ?? []).map((m) => m.name));
+  const missing = [JUDGE, EMB_MODEL].filter((m) => !have.has(m));
+  if (missing.length) {
+    log(`✗ model(s) not installed: ${missing.join(", ")}`);
+    log(`  installed: ${[...have].sort().join(", ")}`);
+    log(`  fix: ollama pull ${missing[0]}   (or pass --model <installed judge>)`);
+    process.exit(1);
+  }
+  log(`  judge ${JUDGE} · embeddings ${EMB_MODEL}`);
+}
+
 async function main() {
+  await preflight();
   const lex = JSON.parse(fs.readFileSync(LEX, "utf8"));
   const index = JSON.parse(fs.readFileSync(INDEX, "utf8"));
   const embs = new Map(fs.readFileSync(EMB, "utf8").split("\n").filter(Boolean).map((l) => {
@@ -181,6 +204,10 @@ async function main() {
   };
   const outPath = path.join(PROFILES, SONG, "lexicon-reel.json");
   fs.writeFileSync(outPath, JSON.stringify(out, null, 2));
+  if (!reel.length) {
+    log(`✗ the judge accepted NOTHING out of ${judged.length} candidates (accept >= ${ACCEPT}).`);
+    log(`  That is a broken run, not a strict one — check the judge's raw output before trusting it.`);
+  }
   log(`✦ reel: ${final.length} images (${final.filter((r) => r.featured).length} featured) → ${path.relative(ROOT, outPath)}`);
   for (const r of final.slice(0, 12)) log(`   ${r.featured ? "★" : "·"} ${r.word} ${r.score} ${r.recipe} — ${r.reason}`);
 

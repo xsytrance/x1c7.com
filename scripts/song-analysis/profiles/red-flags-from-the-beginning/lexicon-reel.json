@@ -1,15 +1,469 @@
 {
   "v": 1,
   "id": "red-flags-from-the-beginning",
-  "generatedAt": "2026-09-25T04:05:41.599Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:07:25.949Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2591,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 46,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s13-1-word-portrait.webp",
+      "key": "lexicon/eyes/s13-1-word-portrait.webp",
+      "word": "eyes",
+      "line": "still feeling alone Eyes bloodshot Not from the",
+      "t": 72.981,
+      "score": 0.9,
+      "cosine": 0.494,
+      "reason": "fits mood and theme, intense gaze and tear streaks emphasize emotional pain",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s9-4-manga-line.webp",
+      "key": "lexicon/alone/s9-4-manga-line.webp",
+      "word": "alone",
+      "line": "tone Two people in a house still feeling alone Eyes",
+      "t": 70.926,
+      "score": 0.9,
+      "cosine": 0.42,
+      "reason": "matches mood and theme of isolation",
+      "recipe": "4-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bloodshot/s0-2-word-portrait.webp",
+      "key": "lexicon/bloodshot/s0-2-word-portrait.webp",
+      "word": "bloodshot",
+      "line": "Eyes bloodshot Not from the rot But from reading",
+      "t": 74.652,
+      "score": 0.9,
+      "cosine": 0.366,
+      "reason": "Symbolic of pain and loss, fits song's melancholic mood.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s4-4-noir.webp",
+      "key": "lexicon/hate/s4-4-noir.webp",
+      "word": "hate",
+      "line": "the hall Let the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold",
+      "t": 252.015,
+      "score": 0.9,
+      "cosine": 0.348,
+      "reason": "aligns with toxic love and abandonment",
+      "recipe": "4-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s4-5-photo.webp",
+      "key": "lexicon/hate/s4-5-photo.webp",
+      "word": "hate",
+      "line": "the hall Let the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold",
+      "t": 252.015,
+      "score": 0.9,
+      "cosine": 0.348,
+      "reason": "symbolizes toxic love and emotional turmoil",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mirror/s4-6-anime.webp",
+      "key": "lexicon/mirror/s4-6-anime.webp",
+      "word": "mirror",
+      "line": "drinks Not from the smoke But from the mirror showing both of us the joke We",
+      "t": 160.055,
+      "score": 0.85,
+      "cosine": 0.397,
+      "reason": "fractured mirror, desolation, melancholy align",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/warnings/s1-1-cinema.webp",
+      "key": "lexicon/warnings/s1-1-cinema.webp",
+      "word": "warnings",
+      "line": "Not from the cold But from all those little warnings That we watched and",
+      "t": 256.617,
+      "score": 0.85,
+      "cosine": 0.392,
+      "reason": "symbolic of neglect and sorrow, fits mood",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bloodshot/s0-1-dream-collage.webp",
+      "key": "lexicon/bloodshot/s0-1-dream-collage.webp",
+      "word": "bloodshot",
+      "line": "Eyes bloodshot Not from the rot But from reading",
+      "t": 74.652,
+      "score": 0.85,
+      "cosine": 0.366,
+      "reason": "symbolizes emotional pain and trauma, aligns with song's mood",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s0-2-noir.webp",
+      "key": "lexicon/money/s0-2-noir.webp",
+      "word": "money",
+      "line": "like a sign I could believe in But the only green was money when the bills came screaming You left socks",
+      "t": 43.097,
+      "score": 0.85,
+      "cosine": 0.359,
+      "reason": "reflects financial chaos and neglect",
+      "recipe": "2-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-1-dream-collage.webp",
+      "key": "lexicon/cold/s14-1-dream-collage.webp",
+      "word": "cold",
+      "line": "the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold But from all those little warnings",
+      "t": 254.561,
+      "score": 0.85,
+      "cosine": 0.355,
+      "reason": "reflects isolation and decay, aligns with anxious melancholy",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-2-word-portrait.webp",
+      "key": "lexicon/cold/s14-2-word-portrait.webp",
+      "word": "cold",
+      "line": "the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold But from all those little warnings",
+      "t": 254.561,
+      "score": 0.85,
+      "cosine": 0.355,
+      "reason": "Reflects emotional isolation and coldness, aligns with song's melancholic mood.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s9-1-watercolor.webp",
+      "key": "lexicon/alone/s9-1-watercolor.webp",
+      "word": "alone",
+      "line": "tone Two people in a house still feeling alone Eyes",
+      "t": 70.926,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "reflects isolation and melancholy",
+      "recipe": "1-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mirror/s3-5-photo.webp",
+      "key": "lexicon/mirror/s3-5-photo.webp",
+      "word": "mirror",
+      "line": "drinks Not from the smoke But from the mirror showing both of us the joke We",
+      "t": 160.055,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "reflects introspection and anxiety",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s2-2-anime.webp",
+      "key": "lexicon/smoke/s2-2-anime.webp",
+      "word": "smoke",
+      "line": "Not from the drinks Not from the smoke But from the mirror showing both of",
+      "t": 158.593,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "symbolic smoke, inner turmoil, fits mood",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s2-3-cinema.webp",
+      "key": "lexicon/smoke/s2-3-cinema.webp",
+      "word": "smoke",
+      "line": "Not from the drinks Not from the smoke But from the mirror showing both of",
+      "t": 158.593,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "evokes decay and melancholy",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sink/s1-3-concept-art.webp",
+      "key": "lexicon/sink/s1-3-concept-art.webp",
+      "word": "sink",
+      "line": "like a war I couldnt win Unfinished water by the sink same fight again Laundry",
+      "t": 49.621,
+      "score": 0.8,
+      "cosine": 0.381,
+      "reason": "reflects domestic neglect and melancholy",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fading/s1-1-film-still.webp",
+      "key": "lexicon/fading/s1-1-film-still.webp",
+      "word": "fading",
+      "line": "clean guitar fading into distorted",
+      "t": 273.506,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "fits mood but lacks thematic depth",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fading/s1-4-cinema.webp",
+      "key": "lexicon/fading/s1-4-cinema.webp",
+      "word": "fading",
+      "line": "clean guitar fading into distorted",
+      "t": 273.506,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "fits mood but lacks direct toxicity",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fading/s1-5-photo.webp",
+      "key": "lexicon/fading/s1-5-photo.webp",
+      "word": "fading",
+      "line": "clean guitar fading into distorted",
+      "t": 273.506,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "aligns with mood but not specific lyric",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/war/s1-3-cinema.webp",
+      "key": "lexicon/war/s1-3-cinema.webp",
+      "word": "war",
+      "line": "came screaming You left socks on the floor like a war I couldnt win Unfinished water by the sink",
+      "t": 47.112,
+      "score": 0.8,
+      "cosine": 0.375,
+      "reason": "symbolizes conflict and desolation, aligns with toxic relationship themes",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s3-1-dream-collage.webp",
+      "key": "lexicon/hands/s3-1-dream-collage.webp",
+      "word": "hands",
+      "line": "hall Let the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold",
+      "t": 252.282,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "symbolizes struggle and grasping at broken hopes",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s3-4-dark-surreal.webp",
+      "key": "lexicon/hands/s3-4-dark-surreal.webp",
+      "word": "hands",
+      "line": "hall Let the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold",
+      "t": 252.282,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "matches mood and theme",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s6-4-word-portrait.webp",
+      "key": "lexicon/stay/s6-4-word-portrait.webp",
+      "word": "stay",
+      "line": "But from reading every silence like a warning shot Stay in your lane But",
+      "t": 79.621,
+      "score": 0.8,
+      "cosine": 0.356,
+      "reason": "fits mood and theme, but lacks chaos",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s4-3-cinema.webp",
+      "key": "lexicon/hate/s4-3-cinema.webp",
+      "word": "hate",
+      "line": "the hall Let the silence be the answer when I cant stand up at all Stop drop Watch it all dissolve wStop drop Nothing left to solve Hate to admit it But God Im terrified Tarred by my own hands Feathered by my pride I loved you wrong I stayed too long We were doomed before the song Eyes bloodshot Not from the rot Not from the mountain Not from the cold",
+      "t": 252.015,
+      "score": 0.8,
+      "cosine": 0.348,
+      "reason": "matches mood and theme of destruction and darkness",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s14-6-graphic-novel.webp",
+      "key": "lexicon/eyes/s14-6-graphic-novel.webp",
+      "word": "eyes",
+      "line": "still feeling alone Eyes bloodshot Not from the",
+      "t": 72.981,
+      "score": 0.7,
+      "cosine": 0.494,
+      "reason": "Contrasts with song's mood, but fits toxic theme",
+      "recipe": "6-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s14-5-anime.webp",
+      "key": "lexicon/fire/s14-5-anime.webp",
+      "word": "fire",
+      "line": "kept feeding the fire Then acted surprised",
+      "t": 218.268,
+      "score": 0.7,
+      "cosine": 0.453,
+      "reason": "symbolic but abstract, lacks domestic context",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s9-2-chalkboard.webp",
+      "key": "lexicon/alone/s9-2-chalkboard.webp",
+      "word": "alone",
+      "line": "tone Two people in a house still feeling alone Eyes",
+      "t": 70.926,
+      "score": 0.7,
+      "cosine": 0.42,
+      "reason": "contrasts song's mood but symbolizes isolation",
+      "recipe": "2-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-5-analog.webp",
+      "key": "lexicon/light/s23-5-analog.webp",
+      "word": "light",
+      "line": "You hid the hurt Had the green light gleaming but it never meant go Just another",
+      "t": 138.777,
+      "score": 0.7,
+      "cosine": 0.411,
+      "reason": "Contrasts hope and despair, fitting the song's melancholic tone.",
+      "recipe": "5-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-4-anime.webp",
+      "key": "lexicon/light/s24-4-anime.webp",
+      "word": "light",
+      "line": "You hid the hurt Had the green light gleaming but it never meant go Just another",
+      "t": 138.777,
+      "score": 0.7,
+      "cosine": 0.411,
+      "reason": "neon lights symbolize hope in darkness, fitting anxious melancholy mood",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s1-3-word-portrait.webp",
+      "key": "lexicon/glow/s1-3-word-portrait.webp",
+      "word": "glow",
+      "line": "Just another little lie in a pretty red glow I shouldve seen the signs when love felt like",
+      "t": 144.126,
+      "score": 0.7,
+      "cosine": 0.399,
+      "reason": "Contrasts with song's mood, but warm glow fits initial deception.",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s2-1-concept-art.webp",
+      "key": "lexicon/smoke/s2-1-concept-art.webp",
+      "word": "smoke",
+      "line": "Not from the drinks Not from the smoke But from the mirror showing both of",
+      "t": 158.593,
+      "score": 0.7,
+      "cosine": 0.387,
+      "reason": "symbolizes chaos and destruction, aligns with toxic relationship's impact",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s9-3-watercolor.webp",
+      "key": "lexicon/phone/s9-3-watercolor.webp",
+      "word": "phone",
+      "line": "You got secret with your phone I got colder with my tone Two people",
+      "t": 66.154,
+      "score": 0.7,
+      "cosine": 0.385,
+      "reason": "image evokes nostalgia and abandonment, fitting melancholic mood",
+      "recipe": "3-watercolor",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "eyes": [
+      0,
+      24
+    ],
+    "alone": [
+      1,
+      11,
+      26
+    ],
+    "bloodshot": [
+      2,
+      7
+    ],
+    "hate": [
+      3,
+      4,
+      23
+    ],
+    "mirror": [
+      5,
+      12
+    ],
+    "warnings": [
+      6
+    ],
+    "money": [
+      8
+    ],
+    "cold": [
+      9,
+      10
+    ],
+    "smoke": [
+      13,
+      14,
+      30
+    ],
+    "sink": [
+      15
+    ],
+    "fading": [
+      16,
+      17,
+      18
+    ],
+    "war": [
+      19
+    ],
+    "hands": [
+      20,
+      21
+    ],
+    "stay": [
+      22
+    ],
+    "fire": [
+      25
+    ],
+    "light": [
+      27,
+      28
+    ],
+    "glow": [
+      29
+    ],
+    "phone": [
+      31
+    ]
+  }
 }
