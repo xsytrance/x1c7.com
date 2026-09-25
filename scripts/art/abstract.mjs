@@ -51,16 +51,42 @@ const R2 = (env.PUBLIC_URL || "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.d
 const OUT = args.out ? String(args.out) : path.join(REPO, "scripts/song-analysis/profiles", SLUG, "abstract");
 fs.mkdirSync(OUT, { recursive: true });
 
+// ── WHICH PLATES ────────────────────────────────────────────────────────────
+// One veil for a whole song is one sky for a song that changes. With --acts
+// the plates are grouped by the ACT their words fall in (dynamicPlus.acts), so
+// each movement gets a sky made of its OWN pictures and the weather turns when
+// the song does.
 let urls;
+let actGroups = null;
 if (args.plates && args.plates !== true) {
   urls = String(args.plates).split(",");
 } else {
   const db = createClient("https://kxbrjmbovjiwwcnepsfh.supabase.co", env.SUPABASE_SERVICE_ROLE_KEY);
-  const { data } = await db.from("tracks").select("planet").eq("id", SLUG);
+  const { data } = await db.from("tracks").select("planet,lyrics_synced").eq("id", SLUG);
   if (!data?.length) { console.error(`no track ${SLUG}`); process.exit(2); }
-  urls = [...new Set(Object.values(data[0].planet?.assets?.keywords ?? {}))];
+  const kw = data[0].planet?.assets?.keywords ?? {};
+  urls = [...new Set(Object.values(kw))];
+  const acts = data[0].planet?.dynamicPlus?.acts ?? [];
+  const words = data[0].lyrics_synced?.words ?? [];
+  if (args.acts && acts.length) {
+    actGroups = acts.map((a) => {
+      const set = new Set();
+      for (const w of words) {
+        if (w.t < a.start || w.t > a.end) continue;
+        const k = String(w.w).toLowerCase().replace(/[^a-z0-9']/g, "");
+        if (kw[k]) set.add(kw[k]);
+      }
+      // an act with too few pictures of its own borrows from the whole song,
+      // otherwise its sky is one blurred plate and the subject survives
+      const list = [...set];
+      while (list.length < 4 && urls.length) list.push(urls[(list.length * 5) % urls.length]);
+      return { label: a.label ?? `act ${acts.indexOf(a) + 1}`, start: a.start, end: a.end, plates: list };
+    });
+  }
 }
-urls = urls.map((u) => (/^https?:/.test(u) ? u : R2 + u));
+const abs = (u) => (/^https?:/.test(u) ? u : R2 + u);
+urls = urls.map(abs);
+if (actGroups) for (const g of actGroups) g.plates = g.plates.map(abs);
 if (!urls.length) { console.error("no plates"); process.exit(2); }
 console.log(`${urls.length} plates`);
 
@@ -77,6 +103,24 @@ console.log(`  fetched ${bufs.length}`);
 // first matters: one blurred plate still reads as that plate's composition,
 // while four averaged lose the subject and keep only the light.
 const W = 768, H = 1360;
+async function buildVeil(sourceBufs, outName) {
+  const prep = await Promise.all(
+    sourceBufs.slice(0, 8).map((b, i) => {
+      let img = sharp(b).resize(W, H, { fit: "cover" });
+      if (i % 2) img = img.flop();
+      if (i % 3 === 0) img = img.flip();
+      return img.rotate((i * 37) % 23 - 11, { background: { r: 0, g: 0, b: 0 } })
+        .resize(W, H, { fit: "cover" }).removeAlpha().raw().toBuffer();
+    }),
+  );
+  const a = new Float32Array(W * H * 3);
+  for (const q of prep) for (let i = 0; i < a.length; i++) a[i] += q[i];
+  const avg2 = Buffer.alloc(W * H * 3);
+  for (let i = 0; i < a.length; i++) avg2[i] = Math.round(a[i] / prep.length);
+  await sharp(avg2, { raw: { width: W, height: H, channels: 3 } })
+    .blur(54).modulate({ saturation: 1.5 }).linear(1.25, -26).blur(9)
+    .webp({ quality: 82 }).toFile(path.join(OUT, outName));
+}
 // Averaging alone is not enough: these plates SHARE a composition (same artist
 // block, same title text in the same place), so their features line up and
 // survive the blur — the first attempt still read "TYLERHAZE" through 38px of
@@ -105,6 +149,19 @@ await sharp(avg, { raw: { width: W, height: H, channels: 3 } })
   .webp({ quality: 82 })
   .toFile(path.join(OUT, "veil.webp"));
 console.log("  ✓ veil.webp");
+
+if (actGroups) {
+  const manifest = [];
+  for (const [i, g] of actGroups.entries()) {
+    const gb = (await Promise.all(g.plates.map(grab))).filter(Boolean);
+    if (gb.length < 2) { console.log(`  – ${g.label}: too few plates, skipped`); continue; }
+    const name = `veil-${i}.webp`;
+    await buildVeil(gb, name);
+    manifest.push({ veil: name, start: g.start, end: g.end, label: g.label, plates: g.plates.length });
+    console.log(`  ✓ ${name}  ${g.label}  (${gb.length} plates)`);
+  }
+  fs.writeFileSync(path.join(OUT, "veils.json"), JSON.stringify(manifest, null, 1));
+}
 
 // ── MOTES ── 12 soft patches cut from the BRIGHTEST part of each plate, where
 // the light actually is. A dot wearing the art's own texture instead of a flat

@@ -273,7 +273,15 @@ export interface PlanetDynamicPlus {
      * a slideshow. `motes` is a 4x3 sheet of soft patches cut from the
      * SMOOTHEST bright regions, used as particle sprites so a song's weather is
      * made of that song. Both absent = the historic flat dots and no veil. */
-    abstract?: { veil?: string; motes?: string; veilMix?: number };
+    abstract?: {
+      veil?: string; motes?: string; veilMix?: number;
+      /** false keeps the motes in the art's own hue instead of washing them
+       *  with the section colour */
+      tint?: boolean;
+      /** one sky per ACT (abstract.mjs --acts), crossfaded on the boundary.
+       *  One veil for a whole song is one sky for a song that changes. */
+      veils?: { src: string; start: number; end: number }[];
+    };
     /** THE WORLD — swap the per-pixel shader corridor for a real three.js
      * scene, with the lyric living inside it. A word sits at the distance its
      * onset occupies (s = t * speed) and the camera flies the same path, so

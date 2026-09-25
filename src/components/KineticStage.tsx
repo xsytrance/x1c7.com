@@ -395,7 +395,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[] }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1099,6 +1099,30 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     }
     peakWords.current = peaks;
   }, [words, melody]);
+  // ── THE SKY TURNS WITH THE SONG ── one veil per act (abstract.mjs --acts),
+  // picked by time. One sky for a whole song is one sky for a song that
+  // changes; four means the weather turns when the music does.
+  const [veilSrc, setVeilSrc] = useState<string | null>(null);
+  const prevVeilRef = useRef<string | null>(null);
+  const [prevVeil, setPrevVeil] = useState<string | null>(null);
+  const veilList = deck?.abstract?.veils;
+  useEffect(() => {
+    if (!deck?.abstract) { setVeilSrc(null); return; }
+    if (!veilList?.length) { setVeilSrc(deck.abstract.veil ?? null); return; }
+    let raf = 0;
+    const pick = () => {
+      const t = getCurrentTime();
+      const hit = veilList.find((v) => t >= v.start && t < v.end) ?? veilList[0];
+      const src = hit?.src ?? deck.abstract?.veil ?? null;
+      setVeilSrc((cur) => {
+        if (cur !== src) { prevVeilRef.current = cur; setPrevVeil(cur); }
+        return src;
+      });
+      raf = requestAnimationFrame(pick);
+    };
+    raf = requestAnimationFrame(pick);
+    return () => cancelAnimationFrame(raf);
+  }, [deck?.abstract, veilList, getCurrentTime]);
   const bigCfgRef = useRef<{ floor: number } | null>(null);
   bigCfgRef.current = deck?.moments ? { floor: deck.moments.floor ?? 0.62 } : null;
   const barsPhasedRef = useRef<BarGrid | null>(null);
@@ -2570,18 +2594,32 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           recognition (scripts/art/abstract.mjs), drifting as cloud. It is the
           art's LIGHT without its subject, so the frame belongs to this song
           without being a slideshow of it. Screen-blended and slow. */}
-      {deck?.abstract?.veil && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          src={deck.abstract.veil}
-          alt=""
-          aria-hidden
-          className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
-          style={{
-            opacity: deck.abstract.veilMix ?? 0.5,
-            mixBlendMode: "screen",
-          }}
-        />
+      {veilSrc && (
+        // Two stacked layers so an act change CROSSFADES rather than cuts: a
+        // sky that snaps is a slideshow again, in one frame.
+        <>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            key={veilSrc}
+            src={veilSrc}
+            alt=""
+            aria-hidden
+            className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
+            style={{ opacity: deck?.abstract?.veilMix ?? 0.5, mixBlendMode: "screen",
+                     transition: "opacity 2.2s ease" }}
+          />
+          {prevVeil && prevVeil !== veilSrc && (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              key={`prev-${prevVeil}`}
+              src={prevVeil}
+              alt=""
+              aria-hidden
+              className="pointer-events-none fixed inset-0 -z-[9] h-full w-full object-cover veil-drift"
+              style={{ opacity: 0, mixBlendMode: "screen", transition: "opacity 2.2s ease" }}
+            />
+          )}
+        </>
       )}
       {/* THE WORD STUDY — no world at all. A near-black void, one word, and a
           camera that investigates it: every word discovered and explored
@@ -2700,6 +2738,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           lite={lite}
           density={deck?.density}
           moteSheet={deck?.abstract?.motes ?? null}
+          moteTint={deck?.abstract?.tint === false ? null : (section?.colorHint ?? null)}
         />
       )}
 

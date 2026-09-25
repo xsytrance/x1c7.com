@@ -1,0 +1,30 @@
+[
+ {
+  "veil": "veil-0.webp",
+  "start": 97.6,
+  "end": 115.5,
+  "label": "THE TRAP AND THE BAIT",
+  "plates": 7
+ },
+ {
+  "veil": "veil-1.webp",
+  "start": 115.5,
+  "end": 121.2,
+  "label": "SAME MAN, THREE NAMES",
+  "plates": 4
+ },
+ {
+  "veil": "veil-2.webp",
+  "start": 121.2,
+  "end": 139,
+  "label": "THE DOORS SWUNG OPEN",
+  "plates": 4
+ },
+ {
+  "veil": "veil-3.webp",
+  "start": 139,
+  "end": 157.55,
+  "label": "HAJIMEMASHITE",
+  "plates": 4
+ }
+]

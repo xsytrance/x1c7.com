@@ -97,19 +97,36 @@ export const KineticParticles = forwardRef<ParticleHandle, {
   density?: number;
   /** sprite sheet (4x3) of the song's own light; absent = flat dots */
   moteSheet?: string | null;
-}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false, density = 1, moteSheet }, ref) {
+  /** section colour to wash the motes with; null leaves the art's own hue */
+  moteTint?: string | null;
+}>(function KineticParticles({ mode, intensity, palette, scale = 1, lite = false, paused = false, density = 1, moteSheet, moteTint }, ref) {
   // MOTES — optional sprite sheet cut from the song's own plates (see
   // scripts/art/abstract.mjs). When present a particle is a soft patch of the
   // song's light instead of a flat dot, so every song's weather is made of
   // that song. Absent = the historic arcs, unchanged.
-  const motes = useRef<HTMLImageElement | null>(null);
+  const motes = useRef<HTMLImageElement | HTMLCanvasElement | null>(null);
   useEffect(() => {
     if (!moteSheet) { motes.current = null; return; }
     const im = new Image();
     im.crossOrigin = "anonymous";
-    im.onload = () => { motes.current = im; };
+    im.onload = () => {
+      if (!moteTint) { motes.current = im; return; }
+      // Tint ONCE into an offscreen sheet, not per particle: a composite per
+      // mote per frame is hundreds of extra canvas ops a second, and the sheet
+      // only changes when the section does.
+      const off = document.createElement("canvas");
+      off.width = im.width; off.height = im.height;
+      const o = off.getContext("2d");
+      if (!o) { motes.current = im; return; }
+      o.drawImage(im, 0, 0);
+      o.globalCompositeOperation = "source-atop";
+      o.globalAlpha = 0.55;
+      o.fillStyle = moteTint;
+      o.fillRect(0, 0, off.width, off.height);
+      motes.current = off;
+    };
     im.src = moteSheet;
-  }, [moteSheet]);
+  }, [moteSheet, moteTint]);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pausedRef = useRef(paused);
   pausedRef.current = paused;
