@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "in-love-with-the-party",
-  "generatedAt": "2026-09-25T04:03:21.836Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:21:47.000Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1829,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 40,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "key": "lexicon/light/s25-3-cinema.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.9,
+      "cosine": 0.561,
+      "reason": "captures city light and mood",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-6-word-portrait.webp",
+      "key": "lexicon/lights/s8-6-word-portrait.webp",
+      "word": "lights",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "score": 0.9,
+      "cosine": 0.501,
+      "reason": "matches mood and setting",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s4-6-poster.webp",
+      "key": "lexicon/party/s4-6-poster.webp",
+      "word": "party",
+      "line": "Were in love with the party Party after midnight Smooth",
+      "t": 1.38,
+      "score": 0.9,
+      "cosine": 0.419,
+      "reason": "captures party mood and connection",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s0-4-word-portrait.webp",
+      "key": "lexicon/heat/s0-4-word-portrait.webp",
+      "word": "heat",
+      "line": "heat",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.388,
+      "reason": "captures sensual tension and luxury",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
+      "key": "lexicon/night/s8-3-word-portrait.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.85,
+      "cosine": 0.461,
+      "reason": "captures urban nightlife mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s4-5-word-neon.webp",
+      "key": "lexicon/drums/s4-5-word-neon.webp",
+      "word": "drums",
+      "line": "deeper In the latenight haze Drums fade out But we still keep swaying",
+      "t": 30.662,
+      "score": 0.8,
+      "cosine": 0.525,
+      "reason": "fits nightlife mood, but not intimate connection",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s5-2-cinema.webp",
+      "key": "lexicon/drums/s5-2-cinema.webp",
+      "word": "drums",
+      "line": "deeper In the latenight haze Drums fade out But we still keep swaying",
+      "t": 30.662,
+      "score": 0.8,
+      "cosine": 0.525,
+      "reason": "fits mood but lacks intimacy",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s10-5-word-portrait.webp",
+      "key": "lexicon/heartbeat/s10-5-word-portrait.webp",
+      "word": "heartbeat",
+      "line": "low lights 808 heartbeat Keeping our souls right We dont",
+      "t": 8.975,
+      "score": 0.8,
+      "cosine": 0.505,
+      "reason": "symbolic but abstract, lacks party intimacy",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s8-3-papercut.webp",
+      "key": "lexicon/glow/s8-3-papercut.webp",
+      "word": "glow",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "score": 0.8,
+      "cosine": 0.494,
+      "reason": "matches mood and warmth, but lacks party setting",
+      "recipe": "3-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s1-6-dream-collage.webp",
+      "key": "lexicon/city/s1-6-dream-collage.webp",
+      "word": "city",
+      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
+      "t": 100.531,
+      "score": 0.8,
+      "cosine": 0.411,
+      "reason": "fits futuristic mood, but lacks party atmosphere",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s15-2-word-neon.webp",
+      "key": "lexicon/love/s15-2-word-neon.webp",
+      "word": "love",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "captures urban romance, nostalgic vibe",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s16-3-neon-sign.webp",
+      "key": "lexicon/love/s16-3-neon-sign.webp",
+      "word": "love",
+      "line": "Were in love with the party Party after",
+      "t": 0.395,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "neon heart fits party mood, keyhole adds intrigue",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s0-5-dream-collage.webp",
+      "key": "lexicon/midnight/s0-5-dream-collage.webp",
+      "word": "midnight",
+      "line": "with the party Party after midnight Smooth like the chords And the",
+      "t": 3.402,
+      "score": 0.8,
+      "cosine": 0.396,
+      "reason": "fits mood but lacks party context",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slide/s3-1-word-portrait.webp",
+      "key": "lexicon/slide/s3-1-word-portrait.webp",
+      "word": "slide",
+      "line": "Drums come back for a second Then they slide away Vinyl crackle holds the memory",
+      "t": 93.263,
+      "score": 0.8,
+      "cosine": 0.393,
+      "reason": "captures transient movement, aligns with party mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s1-6-pixel.webp",
+      "key": "lexicon/falling/s1-6-pixel.webp",
+      "word": "falling",
+      "line": "Every little moment That the DJ plays Got us falling deeper In the latenight haze",
+      "t": 27.481,
+      "score": 0.8,
+      "cosine": 0.366,
+      "reason": "Euphoric mood, but imagery too specific",
+      "recipe": "6-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s5-6-film-still.webp",
+      "key": "lexicon/drums/s5-6-film-still.webp",
+      "word": "drums",
+      "line": "deeper In the latenight haze Drums fade out But we still keep swaying",
+      "t": 30.662,
+      "score": 0.7,
+      "cosine": 0.525,
+      "reason": "image fits mood but not intimate connection",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s11-2-concept-art.webp",
+      "key": "lexicon/heartbeat/s11-2-concept-art.webp",
+      "word": "heartbeat",
+      "line": "low lights 808 heartbeat Keeping our souls right We dont",
+      "t": 8.975,
+      "score": 0.7,
+      "cosine": 0.505,
+      "reason": "Contrasts nightlife energy",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s8-4-3d-toy.webp",
+      "key": "lexicon/glow/s8-4-3d-toy.webp",
+      "word": "glow",
+      "line": "we still keep swaying Low lights glow While the guitars still playing Soft",
+      "t": 35.225,
+      "score": 0.7,
+      "cosine": 0.494,
+      "reason": "image captures party mood but lacks intimacy",
+      "recipe": "4-3d-toy",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s2-5-word-portrait.webp",
+      "key": "lexicon/walk/s2-5-word-portrait.webp",
+      "word": "walk",
+      "line": "this perfect day Last chord rings While we walk in the city light Still in love with the party",
+      "t": 99.823,
+      "score": 0.7,
+      "cosine": 0.47,
+      "reason": "Contrasts nighttime party mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s10-5-cinema.webp",
+      "key": "lexicon/fade/s10-5-cinema.webp",
+      "word": "fade",
+      "line": "In the latenight haze Drums fade out But we still keep swaying",
+      "t": 31.173,
+      "score": 0.7,
+      "cosine": 0.459,
+      "reason": "fits mood but lacks party energy",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s18-5-photo.webp",
+      "key": "lexicon/quiet/s18-5-photo.webp",
+      "word": "quiet",
+      "line": "the dawn gets crisper Even when its quiet We still feel lifted Party",
+      "t": 53.371,
+      "score": 0.7,
+      "cosine": 0.448,
+      "reason": "Contrasts party's energy, captures dawn's quiet moment.",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s1-2-word-portrait.webp",
+      "key": "lexicon/heat/s1-2-word-portrait.webp",
+      "word": "heat",
+      "line": "heat",
+      "t": null,
+      "score": 0.7,
+      "cosine": 0.439,
+      "reason": "Contrasts nightlife setting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s2-2-chalkboard.webp",
+      "key": "lexicon/city/s2-2-chalkboard.webp",
+      "word": "city",
+      "line": "Last chord rings While we walk in the city light Still in love with the party Carry it into",
+      "t": 100.531,
+      "score": 0.7,
+      "cosine": 0.411,
+      "reason": "captures whimsical night city vibe",
+      "recipe": "2-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s0-4-photo.webp",
+      "key": "lexicon/midnight/s0-4-photo.webp",
+      "word": "midnight",
+      "line": "with the party Party after midnight Smooth like the chords And the",
+      "t": 3.402,
+      "score": 0.7,
+      "cosine": 0.396,
+      "reason": "Contrasts song's vibrant party mood",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/memory/s2-6-photo.webp",
+      "key": "lexicon/memory/s2-6-photo.webp",
+      "word": "memory",
+      "line": "Then they slide away Vinyl crackle holds the memory Of this perfect day Last chord",
+      "t": 95.456,
+      "score": 0.7,
+      "cosine": 0.39,
+      "reason": "image lacks nighttime party atmosphere",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s1-5-3d-toy.webp",
+      "key": "lexicon/falling/s1-5-3d-toy.webp",
+      "word": "falling",
+      "line": "Every little moment That the DJ plays Got us falling deeper In the latenight haze",
+      "t": 27.481,
+      "score": 0.7,
+      "cosine": 0.366,
+      "reason": "Playful, dreamlike, but lacks nighttime energy",
+      "recipe": "5-3d-toy",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s7-6-word-portrait.webp",
+      "key": "lexicon/midnight/s7-6-word-portrait.webp",
+      "word": "midnight",
+      "line": "with the party Party after midnight Smooth like the chords And the",
+      "t": 3.402,
+      "score": 0.6,
+      "cosine": 0.512,
+      "reason": "Contrasts mood; lacks party energy",
+      "recipe": "6-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s17-6-neon-night.webp",
+      "key": "lexicon/light/s17-6-neon-night.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.6,
+      "cosine": 0.498,
+      "reason": "Contrasts mood, fits setting",
+      "recipe": "6-neon-night",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s18-1-cinema.webp",
+      "key": "lexicon/light/s18-1-cinema.webp",
+      "word": "light",
+      "line": "chord rings While we walk in the city light Still in love with the party Carry it into the",
+      "t": 101.146,
+      "score": 0.6,
+      "cosine": 0.498,
+      "reason": "Contrasts mood; serene, melancholic tones vs. euphoric party",
+      "recipe": "1-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s18-6-word-portrait.webp",
+      "key": "lexicon/night/s18-6-word-portrait.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.6,
+      "cosine": 0.472,
+      "reason": "Contrasts mood; lacks party atmosphere",
+      "recipe": "6-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-2-anime.webp",
+      "key": "lexicon/lights/s22-2-anime.webp",
+      "word": "lights",
+      "line": "like the chords And the low lights 808 heartbeat Keeping our souls",
+      "t": 7.44,
+      "score": 0.6,
+      "cosine": 0.469,
+      "reason": "Contrasts mood and theme",
+      "recipe": "2-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
+      "key": "lexicon/night/s1-3-word-portrait.webp",
+      "word": "night",
+      "line": "were saving Heartbeats sync With the night were craving When the snare cuts",
+      "t": 43.188,
+      "score": 0.6,
+      "cosine": 0.463,
+      "reason": "Contrasts song's vibrant party mood",
+      "recipe": "3-word-portrait",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "light": [
+      0,
+      27,
+      28
+    ],
+    "lights": [
+      1,
+      30
+    ],
+    "party": [
+      2
+    ],
+    "heat": [
+      3,
+      21
+    ],
+    "night": [
+      4,
+      29,
+      31
+    ],
+    "drums": [
+      5,
+      6,
+      15
+    ],
+    "heartbeat": [
+      7,
+      16
+    ],
+    "glow": [
+      8,
+      17
+    ],
+    "city": [
+      9,
+      22
+    ],
+    "love": [
+      10,
+      11
+    ],
+    "midnight": [
+      12,
+      23,
+      26
+    ],
+    "slide": [
+      13
+    ],
+    "falling": [
+      14,
+      25
+    ],
+    "walk": [
+      18
+    ],
+    "fade": [
+      19
+    ],
+    "quiet": [
+      20
+    ],
+    "memory": [
+      24
+    ]
+  }
 }

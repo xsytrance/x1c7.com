@@ -1,15 +1,463 @@
 {
   "v": 1,
   "id": "one-tap-away-riverboat-bad-boys-remix",
-  "generatedAt": "2026-09-25T04:05:08.544Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:27:47.820Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1480,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 47,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-4-word-portrait.webp",
+      "key": "lexicon/tap/s5-4-word-portrait.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 0.95,
+      "cosine": 0.556,
+      "reason": "fits noir setting, captures isolation and vulnerability",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "up overnight Everybody's where they saw the light Same ones quiet when you need a find",
+      "t": 109.877,
+      "score": 0.9,
+      "cosine": 0.654,
+      "reason": "matches mood and theme",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
+      "key": "lexicon/light/s15-1-cinema.webp",
+      "word": "light",
+      "line": "up overnight Everybody's where they saw the light Same ones quiet when you need a find",
+      "t": 109.877,
+      "score": 0.9,
+      "cosine": 0.654,
+      "reason": "fits noir mood, isolation theme",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-2-anime.webp",
+      "key": "lexicon/dream/s1-2-anime.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.9,
+      "cosine": 0.628,
+      "reason": "fits noir theme, digital isolation, and fractured connections",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s1-3-manga-line.webp",
+      "key": "lexicon/dream/s1-3-manga-line.webp",
+      "word": "dream",
+      "line": "I see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.682,
+      "score": 0.9,
+      "cosine": 0.628,
+      "reason": "fits noir theme, isolation, and digital symbolism",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
+      "key": "lexicon/save/s6-3-word-portrait.webp",
+      "word": "save",
+      "line": "see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.692,
+      "score": 0.9,
+      "cosine": 0.616,
+      "reason": "matches mood and theme",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "key": "lexicon/save/s8-3-neon-sign.webp",
+      "word": "save",
+      "line": "see you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts",
+      "t": 70.692,
+      "score": 0.9,
+      "cosine": 0.616,
+      "reason": "matches mood and theme",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+      "key": "lexicon/heart/s0-1.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 0.9,
+      "cosine": 0.566,
+      "reason": "aligns with digital isolation and noir melancholy",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-1-photo.webp",
+      "key": "lexicon/heart/s19-1-photo.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 0.9,
+      "cosine": 0.566,
+      "reason": "aligns with themes, mood, and symbolism",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s1-2-neon-night.webp",
+      "key": "lexicon/tap/s1-2-neon-night.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 0.9,
+      "cosine": 0.556,
+      "reason": "fits noir mood, isolation, and digital symbolism",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s11-5-concept-art.webp",
+      "key": "lexicon/alone/s11-5-concept-art.webp",
+      "word": "alone",
+      "line": "do I feel alone in a room full of names Tap tap",
+      "t": 83.952,
+      "score": 0.9,
+      "cosine": 0.549,
+      "reason": "aligns with digital isolation and lonely mood",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-5-film-still.webp",
+      "key": "lexicon/tap/s5-5-film-still.webp",
+      "word": "tap",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.88,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "Reflects digital isolation and self-reflection through tech.",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s0-3-manga-line.webp",
+      "key": "lexicon/names/s0-3-manga-line.webp",
+      "word": "names",
+      "line": "feel alone in a room full of names Tap tap but you don't reach back Heart",
+      "t": 85.413,
+      "score": 0.85,
+      "cosine": 0.36,
+      "reason": "fits mood and theme of isolation and fragmentation",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s4-5-dream-collage.webp",
+      "key": "lexicon/heart/s4-5-dream-collage.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 88.294,
+      "score": 0.8,
+      "cosine": 0.556,
+      "reason": "fits mood, symbolism, and themes",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s11-6-watercolor.webp",
+      "key": "lexicon/alone/s11-6-watercolor.webp",
+      "word": "alone",
+      "line": "do I feel alone in a room full of names Tap tap",
+      "t": 83.952,
+      "score": 0.8,
+      "cosine": 0.549,
+      "reason": "fits mood but lacks urban noir",
+      "recipe": "6-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s11-3-film-still.webp",
+      "key": "lexicon/alone/s11-3-film-still.webp",
+      "word": "alone",
+      "line": "do I feel alone in a room full of names Tap tap",
+      "t": 83.952,
+      "score": 0.8,
+      "cosine": 0.549,
+      "reason": "reflects isolation and contemplation",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s6-4-word-portrait.webp",
+      "key": "lexicon/chains/s6-4-word-portrait.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
+      "t": 104.455,
+      "score": 0.8,
+      "cosine": 0.491,
+      "reason": "fits noir theme, digital isolation symbolism",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s4-3-word-portrait.webp",
+      "key": "lexicon/strangers/s4-3-word-portrait.webp",
+      "word": "strangers",
+      "line": "keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 71.657,
+      "score": 0.8,
+      "cosine": 0.46,
+      "reason": "fits mood but lacks noir grit",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s15-2-word-neon.webp",
+      "key": "lexicon/love/s15-2-word-neon.webp",
+      "word": "love",
+      "line": "You can call me any day You can love me in private But scroll",
+      "t": 19.41,
+      "score": 0.8,
+      "cosine": 0.427,
+      "reason": "matches urban night setting, love theme",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s16-3-neon-sign.webp",
+      "key": "lexicon/love/s16-3-neon-sign.webp",
+      "word": "love",
+      "line": "You can call me any day You can love me in private But scroll",
+      "t": 19.41,
+      "score": 0.8,
+      "cosine": 0.427,
+      "reason": "neon heart fits digital isolation, keyhole hints at private love",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cracks/s0-6-film-still.webp",
+      "key": "lexicon/cracks/s0-6-film-still.webp",
+      "word": "cracks",
+      "line": "Ads in the cracks brands in the chat Everybody got stats everybody",
+      "t": 1.881,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects isolation and hope",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cracks/s0-1-noir.webp",
+      "key": "lexicon/cracks/s0-1-noir.webp",
+      "word": "cracks",
+      "line": "Ads in the cracks brands in the chat Everybody got stats everybody",
+      "t": 1.881,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects decay and isolation",
+      "recipe": "1-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cracks/s0-2-photo.webp",
+      "key": "lexicon/cracks/s0-2-photo.webp",
+      "word": "cracks",
+      "line": "Ads in the cracks brands in the chat Everybody got stats everybody",
+      "t": 1.881,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects urban decay and resilience",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s5-5-word-portrait.webp",
+      "key": "lexicon/quiet/s5-5-word-portrait.webp",
+      "word": "quiet",
+      "line": "Everybody's where they saw the light Same ones quiet when you need a find Now they in the comments like",
+      "t": 111.305,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "fits mood but lacks gritty noir",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s0-6-concept-art.webp",
+      "key": "lexicon/chains/s0-6-concept-art.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
+      "t": 104.455,
+      "score": 0.8,
+      "cosine": 0.389,
+      "reason": "fits noir mood, chains symbolize confinement",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s0-2-anime.webp",
+      "key": "lexicon/names/s0-2-anime.webp",
+      "word": "names",
+      "line": "feel alone in a room full of names Tap tap but you don't reach back Heart",
+      "t": 85.413,
+      "score": 0.8,
+      "cosine": 0.36,
+      "reason": "matches mood and themes of isolation, fragmentation, and melancholy",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s18-2-stained-glass.webp",
+      "key": "lexicon/stay/s18-2-stained-glass.webp",
+      "word": "stay",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.74,
+      "score": 0.8,
+      "cosine": 0.357,
+      "reason": "melancholy, isolation, digital divide",
+      "recipe": "2-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/scroll/s0-6-manga-line.webp",
+      "key": "lexicon/scroll/s0-6-manga-line.webp",
+      "word": "scroll",
+      "line": "any day You can love me in private But scroll",
+      "t": 21.154,
+      "score": 0.8,
+      "cosine": 0.332,
+      "reason": "fits mood and themes, but less digital isolation",
+      "recipe": "6-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/world/s0-1-manga-line.webp",
+      "key": "lexicon/world/s0-1-manga-line.webp",
+      "word": "world",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.85,
+      "score": 0.8,
+      "cosine": 0.312,
+      "reason": "symbolizes isolation and chaos",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s6-3-dream-collage.webp",
+      "key": "lexicon/chains/s6-3-dream-collage.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views That if a stranger blow up overnight",
+      "t": 104.455,
+      "score": 0.7,
+      "cosine": 0.491,
+      "reason": "Contrasts digital chains with physical, symbolizing freedom",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s16-4-anime.webp",
+      "key": "lexicon/love/s16-4-anime.webp",
+      "word": "love",
+      "line": "You can call me any day You can love me in private But scroll",
+      "t": 19.41,
+      "score": 0.7,
+      "cosine": 0.427,
+      "reason": "fits mood but shifts setting",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s18-3-anime.webp",
+      "key": "lexicon/stay/s18-3-anime.webp",
+      "word": "stay",
+      "line": "how we got connected Then forgot how to stay You're right there in my pocket But you feel a world away One tap away one tap away",
+      "t": 52.74,
+      "score": 0.7,
+      "cosine": 0.357,
+      "reason": "Apocalyptic city fits digital isolation theme, but lacks intimate connection mood.",
+      "recipe": "3-anime",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "tap": [
+      0,
+      9,
+      11
+    ],
+    "light": [
+      1,
+      2
+    ],
+    "dream": [
+      3,
+      4
+    ],
+    "save": [
+      5,
+      6
+    ],
+    "heart": [
+      7,
+      8,
+      13
+    ],
+    "alone": [
+      10,
+      14,
+      15
+    ],
+    "names": [
+      12,
+      25
+    ],
+    "chains": [
+      16,
+      24,
+      29
+    ],
+    "strangers": [
+      17
+    ],
+    "love": [
+      18,
+      19,
+      30
+    ],
+    "cracks": [
+      20,
+      21,
+      22
+    ],
+    "quiet": [
+      23
+    ],
+    "stay": [
+      26,
+      31
+    ],
+    "scroll": [
+      27
+    ],
+    "world": [
+      28
+    ]
+  }
 }

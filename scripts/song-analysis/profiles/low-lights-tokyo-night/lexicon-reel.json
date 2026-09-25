@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "low-lights-tokyo-night",
-  "generatedAt": "2026-09-25T04:04:02.074Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:23:22.962Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1562,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 53,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-1-cinema.webp",
+      "key": "lexicon/night/s7-1-cinema.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 0.9,
+      "cosine": 0.589,
+      "reason": "captures urban melancholy and nightlife intimacy",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s4-6-word-portrait.webp",
+      "key": "lexicon/lights/s4-6-word-portrait.webp",
+      "word": "lights",
+      "line": "Yeah Low lights Tokyo 君 が い",
+      "t": 1.12,
+      "score": 0.9,
+      "cosine": 0.519,
+      "reason": "fits mood and theme",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s11-3-photo.webp",
+      "key": "lexicon/night/s11-3-photo.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 0.9,
+      "cosine": 0.489,
+      "reason": "fits mood and theme of urban isolation and melancholy",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s12-5-neon-night.webp",
+      "key": "lexicon/light/s12-5-neon-night.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.9,
+      "cosine": 0.483,
+      "reason": "neon reflections, rain, loneliness fit mood",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s1-2-word-neon.webp",
+      "key": "lexicon/crowd/s1-2-word-neon.webp",
+      "word": "crowd",
+      "line": "crowd",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.456,
+      "reason": "neon glow, crowd silhouettes fit nightlife mood",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tonight/s10-1-film-still.webp",
+      "key": "lexicon/tonight/s10-1-film-still.webp",
+      "word": "tonight",
+      "line": "go もし ライト が 消え て も tonight 君 だけ は 消え ない で",
+      "t": 59.211,
+      "score": 0.9,
+      "cosine": 0.455,
+      "reason": "matches mood and theme",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "ice 人混み の 中 探し て your light もし ドラム が fade out し て も",
+      "t": 50.829,
+      "score": 0.85,
+      "cosine": 0.535,
+      "reason": "aligns with urban night, spotlight symbolizes hope",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s6-4-word-portrait.webp",
+      "key": "lexicon/stay/s6-4-word-portrait.webp",
+      "word": "stay",
+      "line": "君 だけ は 消え ない で stay in my sightWere in love with the partybut",
+      "t": 62.392,
+      "score": 0.85,
+      "cosine": 0.404,
+      "reason": "fits mood and theme, slightly off urban setting",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s1-6-chalkboard.webp",
+      "key": "lexicon/fade/s1-6-chalkboard.webp",
+      "word": "fade",
+      "line": "light もし ドラム が fade out し て も ここ に い て よ please dont",
+      "t": 53.081,
+      "score": 0.8,
+      "cosine": 0.564,
+      "reason": "fits mood but lacks urban context",
+      "recipe": "6-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s2-3-cinema.webp",
+      "key": "lexicon/phone/s2-3-cinema.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.8,
+      "cosine": 0.54,
+      "reason": "fits mood but lacks urban setting",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s11-2-cinema.webp",
+      "key": "lexicon/night/s11-2-cinema.webp",
+      "word": "night",
+      "line": "ない night ヴァイナル",
+      "t": 7.396,
+      "score": 0.8,
+      "cosine": 0.489,
+      "reason": "fits mood and theme, slightly abstract",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibe/s0-5-cinema.webp",
+      "key": "lexicon/vibe/s0-5-cinema.webp",
+      "word": "vibe",
+      "line": "の ガラス みたい 終電 過ぎ て も 消え ない vibe 待た ない でっ て 君 は 言っ た けど で も まだ",
+      "t": 83.882,
+      "score": 0.8,
+      "cosine": 0.465,
+      "reason": "evokes melancholy and transient beauty",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibe/s0-6-noir.webp",
+      "key": "lexicon/vibe/s0-6-noir.webp",
+      "word": "vibe",
+      "line": "の ガラス みたい 終電 過ぎ て も 消え ない vibe 待た ない でっ て 君 は 言っ た けど で も まだ",
+      "t": 83.882,
+      "score": 0.8,
+      "cosine": 0.465,
+      "reason": "matches mood and theme",
+      "recipe": "6-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s7-5-word-portrait.webp",
+      "key": "lexicon/lights/s7-5-word-portrait.webp",
+      "word": "lights",
+      "line": "Yeah Low lights Tokyo 君 が い",
+      "t": 1.12,
+      "score": 0.8,
+      "cosine": 0.463,
+      "reason": "captures urban night mood, text overlay fits theme",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-3-film-still.webp",
+      "key": "lexicon/love/s6-3-film-still.webp",
+      "word": "love",
+      "line": "ない で stay in my sightWere in love with the partybut I m still missing youLow",
+      "t": 64.494,
+      "score": 0.8,
+      "cosine": 0.458,
+      "reason": "fits mood but shifts focus from solo grief",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s1-3-dark-surreal.webp",
+      "key": "lexicon/crowd/s1-3-dark-surreal.webp",
+      "word": "crowd",
+      "line": "crowd",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.456,
+      "reason": "fits urban isolation and neon melancholy",
+      "recipe": "3-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s1-1-word-portrait.webp",
+      "key": "lexicon/crowd/s1-1-word-portrait.webp",
+      "word": "crowd",
+      "line": "crowd",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.456,
+      "reason": "fits urban nightlife mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-1-dream-collage.webp",
+      "key": "lexicon/cold/s14-1-dream-collage.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "reflects isolation and melancholy",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-2-word-portrait.webp",
+      "key": "lexicon/cold/s14-2-word-portrait.webp",
+      "word": "cold",
+      "line": "で party が 鳴っ て も 君 が い ない night 感じる cold ドラム 止まっ て も まだ",
+      "t": 100.02,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "fits mood but daytime contradicts night setting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s1-2-film-still.webp",
+      "key": "lexicon/blue/s1-2-film-still.webp",
+      "word": "blue",
+      "line": "lights 染まる body ネオン は turning blue まだ 帰り たく ない ね but I",
+      "t": 70.519,
+      "score": 0.8,
+      "cosine": 0.405,
+      "reason": "captures depth of emotion, blue iris ties to neon melancholy",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/party/s1-5-anime.webp",
+      "key": "lexicon/party/s1-5-anime.webp",
+      "word": "party",
+      "line": "は so loud tonight 同じ song で も 痛い inside 心 の 中 で party が 鳴っ て も 君 が い ない night 感じる cold",
+      "t": 97.032,
+      "score": 0.8,
+      "cosine": 0.391,
+      "reason": "fits mood but lacks neon melancholy",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s0-3-noir.webp",
+      "key": "lexicon/breaking/s0-3-noir.webp",
+      "word": "breaking",
+      "line": "goodbye 踊っ てる ふりのま まで I m breaking in the night スムーズ な コード 雨",
+      "t": 77.706,
+      "score": 0.8,
+      "cosine": 0.235,
+      "reason": "matches mood and theme of isolation and melancholy",
+      "recipe": "3-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slide/s4-2-neon-night.webp",
+      "key": "lexicon/slide/s4-2-neon-night.webp",
+      "word": "slide",
+      "line": "I slide through",
+      "t": 19.35,
+      "score": 0.8,
+      "cosine": 0.232,
+      "reason": "fits mood and themes, but not typical nightlife setting",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/goodbye/s1-1-anime.webp",
+      "key": "lexicon/goodbye/s1-1-anime.webp",
+      "word": "goodbye",
+      "line": "たく ない ね but I cant say goodbye 踊っ てる ふりのま まで I m breaking",
+      "t": 74.71,
+      "score": 0.8,
+      "cosine": 0.081,
+      "reason": "fits mood but abstract",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tonight/s4-2-cinema.webp",
+      "key": "lexicon/tonight/s4-2-cinema.webp",
+      "word": "tonight",
+      "line": "go もし ライト が 消え て も tonight 君 だけ は 消え ない で",
+      "t": 59.211,
+      "score": 0.8,
+      "cosine": 0.072,
+      "reason": "matches mood and theme of solitude and melancholy",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s2-1-concept-art.webp",
+      "key": "lexicon/phone/s2-1-concept-art.webp",
+      "word": "phone",
+      "line": "君 の ボイス still stuck in my phone 笑っ てる けど I m not",
+      "t": 41.378,
+      "score": 0.7,
+      "cosine": 0.54,
+      "reason": "nostalgia and technology mix, but lacks urban nightlife",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-3-neon-night.webp",
+      "key": "lexicon/love/s12-3-neon-night.webp",
+      "word": "love",
+      "line": "ない で stay in my sightWere in love with the partybut I m still missing youLow",
+      "t": 64.494,
+      "score": 0.7,
+      "cosine": 0.458,
+      "reason": "Contrasts with song's hidden grief theme",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tonight/s10-2-analog.webp",
+      "key": "lexicon/tonight/s10-2-analog.webp",
+      "word": "tonight",
+      "line": "go もし ライト が 消え て も tonight 君 だけ は 消え ない で",
+      "t": 59.211,
+      "score": 0.7,
+      "cosine": 0.455,
+      "reason": "matches mood but lacks urban setting",
+      "recipe": "2-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/song/s6-2-word-portrait.webp",
+      "key": "lexicon/song/s6-2-word-portrait.webp",
+      "word": "song",
+      "line": "の 声 は so loud tonight 同じ song で も 痛い inside 心 の 中 で party が 鳴っ て も 君",
+      "t": 95.469,
+      "score": 0.7,
+      "cosine": 0.445,
+      "reason": "relates to creative expression but lacks urban melancholy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/home/s3-4-oil-light.webp",
+      "key": "lexicon/home/s3-4-oil-light.webp",
+      "word": "home",
+      "line": "but 帰れ ない home 8 0 8 鳴っ てる 心 の",
+      "t": 34.424,
+      "score": 0.7,
+      "cosine": 0.248,
+      "reason": "Contrasts with urban setting, but captures longing",
+      "recipe": "4-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/goodbye/s0-1-film-still.webp",
+      "key": "lexicon/goodbye/s0-1-film-still.webp",
+      "word": "goodbye",
+      "line": "たく ない ね but I cant say goodbye 踊っ てる ふりのま まで I m breaking",
+      "t": 74.71,
+      "score": 0.7,
+      "cosine": 0.081,
+      "reason": "fits mood but lacks urban setting",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/turning/s1-4-cinema.webp",
+      "key": "lexicon/turning/s1-4-cinema.webp",
+      "word": "turning",
+      "line": "youLow lights 染まる body ネオン は turning blue まだ 帰り たく ない ね",
+      "t": 70.101,
+      "score": 0.7,
+      "cosine": 0.05,
+      "reason": "captures transition but lacks urban setting",
+      "recipe": "4-cinema",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "night": [
+      0,
+      2,
+      10
+    ],
+    "lights": [
+      1,
+      13
+    ],
+    "light": [
+      3,
+      6
+    ],
+    "crowd": [
+      4,
+      15,
+      16
+    ],
+    "tonight": [
+      5,
+      24,
+      27
+    ],
+    "stay": [
+      7
+    ],
+    "fade": [
+      8
+    ],
+    "phone": [
+      9,
+      25
+    ],
+    "vibe": [
+      11,
+      12
+    ],
+    "love": [
+      14,
+      26
+    ],
+    "cold": [
+      17,
+      18
+    ],
+    "blue": [
+      19
+    ],
+    "party": [
+      20
+    ],
+    "breaking": [
+      21
+    ],
+    "slide": [
+      22
+    ],
+    "goodbye": [
+      23,
+      30
+    ],
+    "song": [
+      28
+    ],
+    "home": [
+      29
+    ],
+    "turning": [
+      31
+    ]
+  }
 }

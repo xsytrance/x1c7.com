@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "cocktails-and-code",
-  "generatedAt": "2026-09-25T04:02:11.671Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:14:21.994Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 3267,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 51,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-6-neon-sign.webp",
+      "key": "lexicon/soul/s4-6-neon-sign.webp",
+      "word": "soul",
+      "line": "Got a little fire in the soul Cocktails and code",
+      "t": 87.515,
+      "score": 0.9,
+      "cosine": 0.37,
+      "reason": "Reflects urban night, digital creativity, and soulful focus.",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s3-5-chalkboard.webp",
+      "key": "lexicon/future/s3-5-chalkboard.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.9,
+      "cosine": 0.354,
+      "reason": "aligns with futuristic, hopeful theme",
+      "recipe": "5-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s3-6-stained-glass.webp",
+      "key": "lexicon/future/s3-6-stained-glass.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.9,
+      "cosine": 0.354,
+      "reason": "Reflects future and innovation themes",
+      "recipe": "6-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bold/s0-1-word-portrait.webp",
+      "key": "lexicon/bold/s0-1-word-portrait.webp",
+      "word": "bold",
+      "line": "like gold Same little room but the dream got bold Glass on the table with the ice half low Got my",
+      "t": 35.527,
+      "score": 0.9,
+      "cosine": 0.346,
+      "reason": "fits energetic, motivational theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s16-3-neon-sign.webp",
+      "key": "lexicon/rhythm/s16-3-neon-sign.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.85,
+      "cosine": 0.44,
+      "reason": "Reflects nighttime urban creativity, aligns with tech and growth themes.",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-5-film-still.webp",
+      "key": "lexicon/sky/s2-5-film-still.webp",
+      "word": "sky",
+      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
+      "t": 209.839,
+      "score": 0.8,
+      "cosine": 0.451,
+      "reason": "captures natural grandeur, aligns with hopeful mood",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-1-dream-collage.webp",
+      "key": "lexicon/sky/s2-1-dream-collage.webp",
+      "word": "sky",
+      "line": "the WiFi No more waiting for the right sky I got rhythm I got time",
+      "t": 209.839,
+      "score": 0.8,
+      "cosine": 0.451,
+      "reason": "fits mood but surreal elements exceed song's reality",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-5-film-still.webp",
+      "key": "lexicon/code/s4-5-film-still.webp",
+      "word": "code",
+      "line": "We working different now Come on Ooh cocktails and code Ooh",
+      "t": 12.527,
+      "score": 0.8,
+      "cosine": 0.446,
+      "reason": "Reflects digital and human fusion, aligns with tech theme",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-4-oil-light.webp",
+      "key": "lexicon/code/s4-4-oil-light.webp",
+      "word": "code",
+      "line": "We working different now Come on Ooh cocktails and code Ooh",
+      "t": 12.527,
+      "score": 0.8,
+      "cosine": 0.446,
+      "reason": "fits tech theme, warm light contrasts mood",
+      "recipe": "4-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s10-2-oil-light.webp",
+      "key": "lexicon/rhythm/s10-2-oil-light.webp",
+      "word": "rhythm",
+      "line": "little focus with the moonlight Add a little rhythm to the grind We dont have to run from the daylight",
+      "t": 73.208,
+      "score": 0.8,
+      "cosine": 0.44,
+      "reason": "Matches mood and themes, but lacks summer vibe",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s17-5-anime.webp",
+      "key": "lexicon/gold/s17-5-anime.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.8,
+      "cosine": 0.421,
+      "reason": "Reflects transformation and creative potential, aligns with mood.",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-2-anime.webp",
+      "key": "lexicon/gold/s18-2-anime.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.8,
+      "cosine": 0.421,
+      "reason": "aligns with themes but lacks summer vibe",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/machine/s2-2-stickers.webp",
+      "key": "lexicon/machine/s2-2-stickers.webp",
+      "word": "machine",
+      "line": "coming through the screen Feels like palm trees living in the machine Mix a little focus with the moonlight",
+      "t": 69.055,
+      "score": 0.8,
+      "cosine": 0.418,
+      "reason": "fits theme but lacks summer vibe",
+      "recipe": "2-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "Summer night laptop glow Little",
+      "t": 4.493,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "captures night mood, urban solitude fits",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bridge/s1-6-poster.webp",
+      "key": "lexicon/bridge/s1-6-poster.webp",
+      "word": "bridge",
+      "line": "me a page build me a flow Build me a bridge where the old me wont go It aint magic but",
+      "t": 131.344,
+      "score": 0.8,
+      "cosine": 0.36,
+      "reason": "Reflects modernity and connection, aligns with tech theme",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hand/s2-4-word-portrait.webp",
+      "key": "lexicon/hand/s2-4-word-portrait.webp",
+      "word": "hand",
+      "line": "clean plan One more skill in the palm of my hand AI talking Im talking back Turning",
+      "t": 59.861,
+      "score": 0.8,
+      "cosine": 0.356,
+      "reason": "aligns with themes of empowerment and growth",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hand/s2-5-word-neon.webp",
+      "key": "lexicon/hand/s2-5-word-neon.webp",
+      "word": "hand",
+      "line": "clean plan One more skill in the palm of my hand AI talking Im talking back Turning",
+      "t": 59.861,
+      "score": 0.8,
+      "cosine": 0.356,
+      "reason": "fits urban night vibe, tech theme",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s1-2-word-portrait.webp",
+      "key": "lexicon/walking/s1-2-word-portrait.webp",
+      "word": "walking",
+      "line": "idea hits and the beat comes back Bassline walking like it knows my name 808 snap like a champagne",
+      "t": 138.647,
+      "score": 0.8,
+      "cosine": 0.35,
+      "reason": "captures confidence and movement",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bold/s0-2-film-still.webp",
+      "key": "lexicon/bold/s0-2-film-still.webp",
+      "word": "bold",
+      "line": "like gold Same little room but the dream got bold Glass on the table with the ice half low Got my",
+      "t": 35.527,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "aligns with boldness and empowerment",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bold/s1-2-neon-sign.webp",
+      "key": "lexicon/bold/s1-2-neon-sign.webp",
+      "word": "bold",
+      "line": "like gold Same little room but the dream got bold Glass on the table with the ice half low Got my",
+      "t": 35.527,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "matches energetic mood, tech vibe, urban nightlife",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/load/s1-1-photo.webp",
+      "key": "lexicon/load/s1-1-photo.webp",
+      "word": "load",
+      "line": "watch the new me load Ooh we",
+      "t": 16.544,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "captures ambition and new beginnings",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/load/s1-2-dream-collage.webp",
+      "key": "lexicon/load/s1-2-dream-collage.webp",
+      "word": "load",
+      "line": "watch the new me load Ooh we",
+      "t": 16.544,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "fits tech and adventure themes",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moonlight/s1-5-anime.webp",
+      "key": "lexicon/moonlight/s1-5-anime.webp",
+      "word": "moonlight",
+      "line": "in the machine Mix a little focus with the moonlight Add a little rhythm to the grind",
+      "t": 71.367,
+      "score": 0.8,
+      "cosine": 0.342,
+      "reason": "fits mood but lacks summer vibe",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s5-2-cinema.webp",
+      "key": "lexicon/summer/s5-2-cinema.webp",
+      "word": "summer",
+      "line": "Uh Summer night laptop glow Little",
+      "t": 4.273,
+      "score": 0.7,
+      "cosine": 0.497,
+      "reason": "Nature elements fit summer mood, but lacks tech/indoor setting.",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/machine/s1-2-word-neon.webp",
+      "key": "lexicon/machine/s1-2-word-neon.webp",
+      "word": "machine",
+      "line": "coming through the screen Feels like palm trees living in the machine Mix a little focus with the moonlight",
+      "t": 69.055,
+      "score": 0.7,
+      "cosine": 0.418,
+      "reason": "neon sign fits tech theme, urban nightlife contrasts",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s18-1-concept-art.webp",
+      "key": "lexicon/gold/s18-1-concept-art.webp",
+      "word": "gold",
+      "line": "dripping through the blinds like gold Same little room but the dream got bold",
+      "t": 33.158,
+      "score": 0.7,
+      "cosine": 0.407,
+      "reason": "Desert imagery contrasts summer night vibe",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
+      "key": "lexicon/glow/s6-5-word-neon.webp",
+      "word": "glow",
+      "line": "Summer night laptop glow Little ice in the glass",
+      "t": 6.502,
+      "score": 0.7,
+      "cosine": 0.374,
+      "reason": "Matches energetic mood, but lacks summer night vibe",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "Summer night laptop glow Little ice in the glass",
+      "t": 6.502,
+      "score": 0.7,
+      "cosine": 0.374,
+      "reason": "Warm light fits mood, but lacks tech focus",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-1-word-neon.webp",
+      "key": "lexicon/soul/s4-1-word-neon.webp",
+      "word": "soul",
+      "line": "Got a little fire in the soul Cocktails and code",
+      "t": 87.515,
+      "score": 0.7,
+      "cosine": 0.37,
+      "reason": "Urban neon fits tech vibe, but lacks summer energy",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s4-3-neon-sign.webp",
+      "key": "lexicon/glow/s4-3-neon-sign.webp",
+      "word": "glow",
+      "line": "Summer night laptop glow Little ice in the glass",
+      "t": 6.502,
+      "score": 0.7,
+      "cosine": 0.359,
+      "reason": "Contrasts with song's summer vibe, but aligns with glowing theme",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/future/s3-4-papercut.webp",
+      "key": "lexicon/future/s3-4-papercut.webp",
+      "word": "future",
+      "line": "Watch the new me load I can feel that future getting closer Every time I take",
+      "t": 93.182,
+      "score": 0.7,
+      "cosine": 0.354,
+      "reason": "Nature and family fit growth, but lacks tech vibe",
+      "recipe": "4-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s2-1-papercut.webp",
+      "key": "lexicon/walking/s2-1-papercut.webp",
+      "word": "walking",
+      "line": "idea hits and the beat comes back Bassline walking like it knows my name 808 snap like a champagne",
+      "t": 138.647,
+      "score": 0.7,
+      "cosine": 0.35,
+      "reason": "Contrasts tech theme, fits growth and unity",
+      "recipe": "1-papercut",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "soul": [
+      0,
+      28
+    ],
+    "future": [
+      1,
+      2,
+      30
+    ],
+    "bold": [
+      3,
+      18,
+      19
+    ],
+    "rhythm": [
+      4,
+      9
+    ],
+    "sky": [
+      5,
+      6
+    ],
+    "code": [
+      7,
+      8
+    ],
+    "gold": [
+      10,
+      11,
+      25
+    ],
+    "machine": [
+      12,
+      24
+    ],
+    "night": [
+      13
+    ],
+    "bridge": [
+      14
+    ],
+    "hand": [
+      15,
+      16
+    ],
+    "walking": [
+      17,
+      31
+    ],
+    "load": [
+      20,
+      21
+    ],
+    "moonlight": [
+      22
+    ],
+    "summer": [
+      23
+    ],
+    "glow": [
+      26,
+      27,
+      29
+    ]
+  }
 }

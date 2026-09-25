@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "still-me-still-you",
-  "generatedAt": "2026-09-25T04:05:59.382Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:30:36.434Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 3155,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 50,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s7-2-word-portrait.webp",
+      "key": "lexicon/slow/s7-2-word-portrait.webp",
+      "word": "slow",
+      "line": "Then dont just say it Ill prove it slow Dont just promise",
+      "t": 250.542,
+      "score": 0.9,
+      "cosine": 0.442,
+      "reason": "fits mood and theme of uncertainty and intimacy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s5-1-word-portrait.webp",
+      "key": "lexicon/save/s5-1-word-portrait.webp",
+      "word": "save",
+      "line": "still me youre building for when you save a little more and more",
+      "t": 191.391,
+      "score": 0.9,
+      "cosine": 0.416,
+      "reason": "fits mood and theme, slightly off timing",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s0-4-photo.webp",
+      "key": "lexicon/midnight/s0-4-photo.webp",
+      "word": "midnight",
+      "line": "up and I see your name midnight turns into a little flame",
+      "t": 20.283,
+      "score": 0.85,
+      "cosine": 0.432,
+      "reason": "fits mood and setting but lacks direct flame symbolism",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s7-6-word-portrait.webp",
+      "key": "lexicon/midnight/s7-6-word-portrait.webp",
+      "word": "midnight",
+      "line": "up and I see your name midnight turns into a little flame",
+      "t": 20.283,
+      "score": 0.8,
+      "cosine": 0.575,
+      "reason": "captures mood, solitude, and serenity",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s10-5-word-portrait.webp",
+      "key": "lexicon/heartbeat/s10-5-word-portrait.webp",
+      "word": "heartbeat",
+      "line": "makes me wait just to feel my heartbeat",
+      "t": 110.164,
+      "score": 0.8,
+      "cosine": 0.537,
+      "reason": "Reflects digital intimacy and global connection.",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s11-2-concept-art.webp",
+      "key": "lexicon/heartbeat/s11-2-concept-art.webp",
+      "word": "heartbeat",
+      "line": "makes me wait just to feel my heartbeat",
+      "t": 110.164,
+      "score": 0.8,
+      "cosine": 0.537,
+      "reason": "fits mood but lacks urban context",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s8-3-papercut.webp",
+      "key": "lexicon/glow/s8-3-papercut.webp",
+      "word": "glow",
+      "line": "it still you In the latenight glow when the screen turns blue",
+      "t": 146.936,
+      "score": 0.8,
+      "cosine": 0.533,
+      "reason": "fits mood but abstract from lyrics",
+      "recipe": "3-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s4-5-dream-collage.webp",
+      "key": "lexicon/heart/s4-5-dream-collage.webp",
+      "word": "heart",
+      "line": "Send me your heart Ill send mine too Is it still me",
+      "t": 168.829,
+      "score": 0.8,
+      "cosine": 0.495,
+      "reason": "captures fractured love and distance",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s6-3-neon-night.webp",
+      "key": "lexicon/heart/s6-3-neon-night.webp",
+      "word": "heart",
+      "line": "Send me your heart Ill send mine too Is it still me",
+      "t": 168.829,
+      "score": 0.8,
+      "cosine": 0.495,
+      "reason": "fits mood and themes, but less intimate",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s4-4-neon-night.webp",
+      "key": "lexicon/moon/s4-4-neon-night.webp",
+      "word": "moon",
+      "line": "When the bass rolls soft and the moon comes through Send",
+      "t": 164.744,
+      "score": 0.8,
+      "cosine": 0.492,
+      "reason": "fits mood and symbolism, but lacks intimacy",
+      "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s0-2.webp",
+      "key": "lexicon/dreams/s0-2.webp",
+      "word": "dreams",
+      "line": "when the city screams still you in the center of all my dreams Yes its still you that Im running to every changed",
+      "t": 240.164,
+      "score": 0.8,
+      "cosine": 0.491,
+      "reason": "Reflects themes of digital connection and longing.",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
+      "key": "lexicon/night/s8-3-word-portrait.webp",
+      "word": "night",
+      "line": "Is it still me in your quiet room when the night gets sweet and the lights go blue Is it still me that",
+      "t": 51.084,
+      "score": 0.8,
+      "cosine": 0.485,
+      "reason": "fits mood but lacks intimacy",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
+      "key": "lexicon/night/s13-3-word-portrait.webp",
+      "word": "night",
+      "line": "Is it still me in your quiet room when the night gets sweet and the lights go blue Is it still me that",
+      "t": 51.084,
+      "score": 0.8,
+      "cosine": 0.485,
+      "reason": "captures night mood, urban setting, digital intimacy",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s11-2-word-neon.webp",
+      "key": "lexicon/dreams/s11-2-word-neon.webp",
+      "word": "dreams",
+      "line": "when the city screams still you in the center of all my dreams Yes its still you that Im running to every changed",
+      "t": 240.164,
+      "score": 0.8,
+      "cosine": 0.479,
+      "reason": "matches mood and theme of dreams and longing",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s12-3-word-neon.webp",
+      "key": "lexicon/dark/s12-3-word-neon.webp",
+      "word": "dark",
+      "line": "like little sparks landing soft in the dark I read them once then twice again like every",
+      "t": 93.797,
+      "score": 0.8,
+      "cosine": 0.457,
+      "reason": "fits mood and urban setting",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s0-5-dream-collage.webp",
+      "key": "lexicon/midnight/s0-5-dream-collage.webp",
+      "word": "midnight",
+      "line": "up and I see your name midnight turns into a little flame",
+      "t": 20.283,
+      "score": 0.8,
+      "cosine": 0.432,
+      "reason": "fits mood and surreal elements match digital intimacy theme",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s1-1-concept-art.webp",
+      "key": "lexicon/eyes/s1-1-concept-art.webp",
+      "word": "eyes",
+      "line": "in your future plans when you close your eyes and reach for my hands",
+      "t": 68.905,
+      "score": 0.8,
+      "cosine": 0.428,
+      "reason": "Eyes match mood, but specific color and hyperrealism less fitting.",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s0-5-film-still.webp",
+      "key": "lexicon/heat/s0-5-film-still.webp",
+      "word": "heat",
+      "line": "the lights go blue still feeling the heat from across the room",
+      "t": 85.715,
+      "score": 0.8,
+      "cosine": 0.427,
+      "reason": "fits mood and symbolism, but less intimate",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s16-6-film-still.webp",
+      "key": "lexicon/slow/s16-6-film-still.webp",
+      "word": "slow",
+      "line": "Then dont just say it Ill prove it slow Dont just promise",
+      "t": 250.542,
+      "score": 0.8,
+      "cosine": 0.419,
+      "reason": "symbolizes enduring warmth and slow commitment",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s7-6-stickers.webp",
+      "key": "lexicon/voice/s7-6-stickers.webp",
+      "word": "voice",
+      "line": "miss the voice I already know Yes its still you",
+      "t": 120.326,
+      "score": 0.8,
+      "cosine": 0.413,
+      "reason": "captures digital strain, voice symbolism",
+      "recipe": "6-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s0-2-cinema.webp",
+      "key": "lexicon/sweat/s0-2-cinema.webp",
+      "word": "sweat",
+      "line": "sweet and the lights go blue Is it still me that makes you sweat Is it still me",
+      "t": 54.519,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "captures physical intensity, fits sultry mood",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tired/s3-5-word-neon.webp",
+      "key": "lexicon/tired/s3-5-word-neon.webp",
+      "word": "tired",
+      "line": "Is it still me that makes you dream when youre tired of every little thing Is it still me you want",
+      "t": 181.557,
+      "score": 0.8,
+      "cosine": 0.394,
+      "reason": "matches mood and setting",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s7-2-word-neon.webp",
+      "key": "lexicon/running/s7-2-word-neon.webp",
+      "word": "running",
+      "line": "you in the center of all my dreams Yes its still you that Im running to every changed habit is a road",
+      "t": 241.766,
+      "score": 0.8,
+      "cosine": 0.392,
+      "reason": "matches urban night mood, theme of movement",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s12-5-papercut.webp",
+      "key": "lexicon/hands/s12-5-papercut.webp",
+      "word": "hands",
+      "line": "Is it still me you almost say when you miss the hands that are far away",
+      "t": 59.465,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "Nature and paper cutouts fit mood, but less intimate than lyrics suggest.",
+      "recipe": "5-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
+      "key": "lexicon/night/s1-3-word-portrait.webp",
+      "word": "night",
+      "line": "Is it still me in your quiet room when the night gets sweet and the lights go blue Is it still me that",
+      "t": 51.084,
+      "score": 0.7,
+      "cosine": 0.536,
+      "reason": "matches mood but lacks intimacy",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s5-3-photo.webp",
+      "key": "lexicon/dream/s5-3-photo.webp",
+      "word": "dream",
+      "line": "Is it still me that makes you dream when youre tired of every little thing Is it still me",
+      "t": 180.721,
+      "score": 0.7,
+      "cosine": 0.496,
+      "reason": "Mismatch in relationship context",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s5-4-dream-collage.webp",
+      "key": "lexicon/dream/s5-4-dream-collage.webp",
+      "word": "dream",
+      "line": "Is it still me that makes you dream when youre tired of every little thing Is it still me",
+      "t": 180.721,
+      "score": 0.7,
+      "cosine": 0.496,
+      "reason": "Dreamlike imagery fits mood, but lacks romantic context.",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s5-6-oil-light.webp",
+      "key": "lexicon/dream/s5-6-oil-light.webp",
+      "word": "dream",
+      "line": "Is it still me that makes you dream when youre tired of every little thing Is it still me",
+      "t": 180.721,
+      "score": 0.7,
+      "cosine": 0.496,
+      "reason": "symbolic but lacks intimacy",
+      "recipe": "6-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s4-2-noir.webp",
+      "key": "lexicon/moon/s4-2-noir.webp",
+      "word": "moon",
+      "line": "When the bass rolls soft and the moon comes through Send",
+      "t": 164.744,
+      "score": 0.7,
+      "cosine": 0.492,
+      "reason": "fits mood but lacks warmth",
+      "recipe": "2-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s4-3-photo.webp",
+      "key": "lexicon/moon/s4-3-photo.webp",
+      "word": "moon",
+      "line": "When the bass rolls soft and the moon comes through Send",
+      "t": 164.744,
+      "score": 0.7,
+      "cosine": 0.492,
+      "reason": "fits mood but lacks intimacy",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s1-3-cinema.webp",
+      "key": "lexicon/eyes/s1-3-cinema.webp",
+      "word": "eyes",
+      "line": "in your future plans when you close your eyes and reach for my hands",
+      "t": 68.905,
+      "score": 0.7,
+      "cosine": 0.428,
+      "reason": "reflects mood but lacks tenderness",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s8-5-cinema.webp",
+      "key": "lexicon/cold/s8-5-cinema.webp",
+      "word": "cold",
+      "line": "you want to hold when New York nights get loud and cold Is it still me that slows your mind when the whole",
+      "t": 199.017,
+      "score": 0.7,
+      "cosine": 0.42,
+      "reason": "melancholy fits but not New York cold",
+      "recipe": "5-cinema",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "slow": [
+      0,
+      18
+    ],
+    "save": [
+      1
+    ],
+    "midnight": [
+      2,
+      3,
+      15
+    ],
+    "heartbeat": [
+      4,
+      5
+    ],
+    "glow": [
+      6
+    ],
+    "heart": [
+      7,
+      8
+    ],
+    "moon": [
+      9,
+      28,
+      29
+    ],
+    "dreams": [
+      10,
+      13
+    ],
+    "night": [
+      11,
+      12,
+      24
+    ],
+    "dark": [
+      14
+    ],
+    "eyes": [
+      16,
+      30
+    ],
+    "heat": [
+      17
+    ],
+    "voice": [
+      19
+    ],
+    "sweat": [
+      20
+    ],
+    "tired": [
+      21
+    ],
+    "running": [
+      22
+    ],
+    "hands": [
+      23
+    ],
+    "dream": [
+      25,
+      26,
+      27
+    ],
+    "cold": [
+      31
+    ]
+  }
 }

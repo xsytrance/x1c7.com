@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "summer-drip",
-  "generatedAt": "2026-09-25T04:06:17.919Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:31:08.912Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4600,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 44,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s3-1-word-portrait.webp",
+      "key": "lexicon/walk/s3-1-word-portrait.webp",
+      "word": "walk",
+      "line": "Summer drip Hips flip, flip, walk me",
+      "t": 12.504,
+      "score": 0.95,
+      "cosine": 0.459,
+      "reason": "fits mood and themes perfectly",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/push/s2-2-anime.webp",
+      "key": "lexicon/push/s2-2-anime.webp",
+      "word": "push",
+      "line": "air but the eyes stay prayin' Mind, mind, doin' push -ups Guard, keep pace",
+      "t": 228.04,
+      "score": 0.9,
+      "cosine": 0.522,
+      "reason": "Matches mood and theme of seductive summer nights",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "brown, brown skin shine With the street lamp light Perfume thick got",
+      "t": 39.3,
+      "score": 0.9,
+      "cosine": 0.503,
+      "reason": "fits mood and theme, slight deviation in symbolism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/curves/s0-3-word-portrait.webp",
+      "key": "lexicon/curves/s0-3-word-portrait.webp",
+      "word": "curves",
+      "line": "lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist doing work oversize Gloves",
+      "t": 58.573,
+      "score": 0.9,
+      "cosine": 0.483,
+      "reason": "fits mood and theme of seductive allure",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/proud/s2-2-film-still.webp",
+      "key": "lexicon/proud/s2-2-film-still.webp",
+      "word": "proud",
+      "line": "but the glance is loud Every lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist",
+      "t": 57.063,
+      "score": 0.9,
+      "cosine": 0.478,
+      "reason": "fits mood and theme of confident seduction",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/proud/s2-1-word-portrait.webp",
+      "key": "lexicon/proud/s2-1-word-portrait.webp",
+      "word": "proud",
+      "line": "but the glance is loud Every lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist",
+      "t": 57.063,
+      "score": 0.9,
+      "cosine": 0.478,
+      "reason": "fits mood and themes, powerful imagery",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-4-photo.webp",
+      "key": "lexicon/throne/s0-4-photo.webp",
+      "word": "throne",
+      "line": "spot, hit the set on my tone Whole room staring like a queen on the throne Dance floor quiet but the glance is loud Every lens locked in,",
+      "t": 53.161,
+      "score": 0.9,
+      "cosine": 0.46,
+      "reason": "fits theme of power and allure",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-5-dream-collage.webp",
+      "key": "lexicon/throne/s0-5-dream-collage.webp",
+      "word": "throne",
+      "line": "spot, hit the set on my tone Whole room staring like a queen on the throne Dance floor quiet but the glance is loud Every lens locked in,",
+      "t": 53.161,
+      "score": 0.9,
+      "cosine": 0.46,
+      "reason": "fits theme of power and allure",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-6-word-portrait.webp",
+      "key": "lexicon/throne/s0-6-word-portrait.webp",
+      "word": "throne",
+      "line": "spot, hit the set on my tone Whole room staring like a queen on the throne Dance floor quiet but the glance is loud Every lens locked in,",
+      "t": 53.161,
+      "score": 0.9,
+      "cosine": 0.46,
+      "reason": "fits theme of power and confidence",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seductive/s1-2-dream-collage.webp",
+      "key": "lexicon/seductive/s1-2-dream-collage.webp",
+      "word": "seductive",
+      "line": "seductive",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.454,
+      "reason": "fits mood and themes",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seductive/s1-3-word-portrait.webp",
+      "key": "lexicon/seductive/s1-3-word-portrait.webp",
+      "word": "seductive",
+      "line": "seductive",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.454,
+      "reason": "fits mood and themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s4-6-analog.webp",
+      "key": "lexicon/heat/s4-6-analog.webp",
+      "word": "heat",
+      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
+      "t": 157.257,
+      "score": 0.9,
+      "cosine": 0.422,
+      "reason": "evokes sultry, intimate heat",
+      "recipe": "6-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-2.webp",
+      "key": "lexicon/heart/s2-2.webp",
+      "word": "heart",
+      "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
+      "t": 24.23,
+      "score": 0.85,
+      "cosine": 0.555,
+      "reason": "fits mood and theme but lacks urban setting",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/curves/s1-1-word-portrait.webp",
+      "key": "lexicon/curves/s1-1-word-portrait.webp",
+      "word": "curves",
+      "line": "lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist doing work oversize Gloves",
+      "t": 58.573,
+      "score": 0.8,
+      "cosine": 0.483,
+      "reason": "fits mood but lacks visual intensity",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/proud/s1-2-dream-collage.webp",
+      "key": "lexicon/proud/s1-2-dream-collage.webp",
+      "word": "proud",
+      "line": "but the glance is loud Every lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist",
+      "t": 57.063,
+      "score": 0.8,
+      "cosine": 0.478,
+      "reason": "celestial and dreamlike align with sultry mood",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/skin/s4-1-word-portrait.webp",
+      "key": "lexicon/skin/s4-1-word-portrait.webp",
+      "word": "skin",
+      "line": "the timing just right Brown, brown, brown skin shine With the street lamp light",
+      "t": 36.88,
+      "score": 0.8,
+      "cosine": 0.43,
+      "reason": "matches mood and theme, but slightly less urban and confident",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s2-4-film-still.webp",
+      "key": "lexicon/flame/s2-4-film-still.webp",
+      "word": "flame",
+      "line": "Heart stay cold But my stride got flame Every, every, every little step got",
+      "t": 27.168,
+      "score": 0.8,
+      "cosine": 0.426,
+      "reason": "fits mood and theme, but slightly too intense",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s2-1-photo.webp",
+      "key": "lexicon/flame/s2-1-photo.webp",
+      "word": "flame",
+      "line": "Heart stay cold But my stride got flame Every, every, every little step got",
+      "t": 27.168,
+      "score": 0.8,
+      "cosine": 0.426,
+      "reason": "flame symbolism, warmth, energy",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s2-2-dream-collage.webp",
+      "key": "lexicon/flame/s2-2-dream-collage.webp",
+      "word": "flame",
+      "line": "Heart stay cold But my stride got flame Every, every, every little step got",
+      "t": 27.168,
+      "score": 0.8,
+      "cosine": 0.426,
+      "reason": "aligns with themes but abstract",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s12-2-neon-night.webp",
+      "key": "lexicon/heart/s12-2-neon-night.webp",
+      "word": "heart",
+      "line": "slow Moving smooth in the midnight Heart stay cold But my stride got flame",
+      "t": 24.23,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "fits mood and symbolism but lacks seductive edge",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-3-film-still.webp",
+      "key": "lexicon/gold/s5-3-film-still.webp",
+      "word": "gold",
+      "line": "oversize Gloves gain smooth, neckline sitting real neat Gold chain resting while my land so sweet This dress fit tight,",
+      "t": 63.588,
+      "score": 0.8,
+      "cosine": 0.398,
+      "reason": "fits theme but lacks urban edge",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/curves/s1-2-film-still.webp",
+      "key": "lexicon/curves/s1-2-film-still.webp",
+      "word": "curves",
+      "line": "lens locked in, every whisper so proud Long live the queen on the throne Lace off hands, curves on the rise Tiny little waist doing work oversize Gloves",
+      "t": 58.573,
+      "score": 0.7,
+      "cosine": 0.483,
+      "reason": "Elegant curves fit theme, but lacks urban seduction",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s1-3-word-portrait.webp",
+      "key": "lexicon/glow/s1-3-word-portrait.webp",
+      "word": "glow",
+      "line": "I, I, I, I, I, I, I I feel the sun dress glow under the daylight Hip swing",
+      "t": 18.274,
+      "score": 0.7,
+      "cosine": 0.481,
+      "reason": "Warm glow fits mood, but setting contrasts urban confidence.",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/skin/s4-6-photo.webp",
+      "key": "lexicon/skin/s4-6-photo.webp",
+      "word": "skin",
+      "line": "the timing just right Brown, brown, brown skin shine With the street lamp light",
+      "t": 36.88,
+      "score": 0.7,
+      "cosine": 0.43,
+      "reason": "matches skin theme, but lacks urban edge",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s5-4-concept-art.webp",
+      "key": "lexicon/gold/s5-4-concept-art.webp",
+      "word": "gold",
+      "line": "oversize Gloves gain smooth, neckline sitting real neat Gold chain resting while my land so sweet This dress fit tight,",
+      "t": 63.588,
+      "score": 0.7,
+      "cosine": 0.398,
+      "reason": "fits theme but shifts setting",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s10-1-word-portrait.webp",
+      "key": "lexicon/cold/s10-1-word-portrait.webp",
+      "word": "cold",
+      "line": "smooth in the midnight Heart stay cold But my stride got flame Every,",
+      "t": 25.252,
+      "score": 0.7,
+      "cosine": 0.396,
+      "reason": "fits mood but lacks summer/seduction",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s6-3-pixel.webp",
+      "key": "lexicon/summer/s6-3-pixel.webp",
+      "word": "summer",
+      "line": "feel loud Slow it down Summer drip Summer drip Hips flip, flip,",
+      "t": 8.86,
+      "score": 0.7,
+      "cosine": 0.384,
+      "reason": "tropical but lacks urban confidence",
+      "recipe": "3-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-1-cinema.webp",
+      "key": "lexicon/night/s7-1-cinema.webp",
+      "word": "night",
+      "line": "the hand mean we keep that closed Tan line sharp from the beach last night Crop top sitting with the waistlines laid Denim shorts fitted,",
+      "t": 107.218,
+      "score": 0.6,
+      "cosine": 0.504,
+      "reason": "Contrasts mood, aligns with urban nightlife",
+      "recipe": "1-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/daylight/s1-1-cinema.webp",
+      "key": "lexicon/daylight/s1-1-cinema.webp",
+      "word": "daylight",
+      "line": "I, I, I I feel the sun dress glow under the daylight Hip swing slow Moving smooth",
+      "t": 19.493,
+      "score": 0.6,
+      "cosine": 0.44,
+      "reason": "Contrasts mood, leans melancholic",
+      "recipe": "1-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/daylight/s1-2-photo.webp",
+      "key": "lexicon/daylight/s1-2-photo.webp",
+      "word": "daylight",
+      "line": "I, I, I I feel the sun dress glow under the daylight Hip swing slow Moving smooth",
+      "t": 19.493,
+      "score": 0.6,
+      "cosine": 0.44,
+      "reason": "Contrasts mood; less sultry, more hopeful.",
+      "recipe": "2-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/daylight/s2-1-concept-art.webp",
+      "key": "lexicon/daylight/s2-1-concept-art.webp",
+      "word": "daylight",
+      "line": "I, I, I I feel the sun dress glow under the daylight Hip swing slow Moving smooth",
+      "t": 19.493,
+      "score": 0.6,
+      "cosine": 0.44,
+      "reason": "Contrasts urban setting and mood",
+      "recipe": "1-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s4-1-photo.webp",
+      "key": "lexicon/heat/s4-1-photo.webp",
+      "word": "heat",
+      "line": "point, lookin' too on beat Gym set tight with a steady quiet heat Brunch crew fresh with the selfies on time Club girls",
+      "t": 157.257,
+      "score": 0.6,
+      "cosine": 0.422,
+      "reason": "Intimate, but lacks urban confidence",
+      "recipe": "1-photo",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "walk": [
+      0
+    ],
+    "push": [
+      1
+    ],
+    "light": [
+      2
+    ],
+    "curves": [
+      3,
+      13,
+      21
+    ],
+    "proud": [
+      4,
+      5,
+      14
+    ],
+    "throne": [
+      6,
+      7,
+      8
+    ],
+    "seductive": [
+      9,
+      10
+    ],
+    "heat": [
+      11,
+      31
+    ],
+    "heart": [
+      12,
+      19
+    ],
+    "skin": [
+      15,
+      23
+    ],
+    "flame": [
+      16,
+      17,
+      18
+    ],
+    "gold": [
+      20,
+      24
+    ],
+    "glow": [
+      22
+    ],
+    "cold": [
+      25
+    ],
+    "summer": [
+      26
+    ],
+    "night": [
+      27
+    ],
+    "daylight": [
+      28,
+      29,
+      30
+    ]
+  }
 }

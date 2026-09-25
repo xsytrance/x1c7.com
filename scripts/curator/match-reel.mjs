@@ -215,7 +215,13 @@ async function main() {
     execFileSync(RCLONE, ["copyto", outPath, `R2:${E.BUCKET}/planets/${SONG}/lexicon-reel.json`, "--s3-disable-checksum", "--s3-no-check-bucket"], { env: rcloneEnv, stdio: "ignore" });
     log(`✦ published → planets/${SONG}/lexicon-reel.json`);
   }
-  await fetch(`${OLLAMA}/api/generate`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ model: JUDGE, keep_alive: 0 }) }).catch(() => {});
+  // Unloading the judge after every song is right for a one-off run and
+  // ruinous for a batch: a 14B model gets loaded and freed once per song, and
+  // on a 30GB box running a dev server, ComfyUI and a browser that is what
+  // pushes it over. --keep leaves it resident for the next song.
+  if (!args.keep) {
+    await fetch(`${OLLAMA}/api/generate`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ model: JUDGE, keep_alive: 0 }) }).catch(() => {});
+  }
 }
 
 await main();

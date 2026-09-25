@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "cairo-still-dancing",
-  "generatedAt": "2026-09-25T04:01:52.158Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:13:15.853Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4303,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 61,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s10-1-word-neon.webp",
+      "key": "lexicon/night/s10-1-word-neon.webp",
+      "word": "night",
+      "line": "still dance when the night gets heavy Still sing when the sky turns gray",
+      "t": 14.07,
+      "score": 0.95,
+      "cosine": 0.647,
+      "reason": "aligns with themes of resilience and defiance",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-1.webp",
+      "key": "lexicon/sky/s0-1.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.95,
+      "cosine": 0.62,
+      "reason": "aligns with themes of resilience and unity",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s4-2-word-portrait.webp",
+      "key": "lexicon/sound/s4-2-word-portrait.webp",
+      "word": "sound",
+      "line": "dark gets loud We make a brighter sound We still dance when the night",
+      "t": 66.549,
+      "score": 0.95,
+      "cosine": 0.487,
+      "reason": "aligns with themes of unity and resilience through music",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rise/s3-1-word-portrait.webp",
+      "key": "lexicon/rise/s3-1-word-portrait.webp",
+      "word": "rise",
+      "line": "Heyya heyya Yalla yalla Sawa sawa We rise we stay They only",
+      "t": 25.947,
+      "score": 0.95,
+      "cosine": 0.468,
+      "reason": "image captures resilience and unity",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s4-5-word-neon.webp",
+      "key": "lexicon/drums/s4-5-word-neon.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.95,
+      "cosine": 0.454,
+      "reason": "Neon-lit drum kit fits Cairo's vibrant nightlife and resilience.",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-2-concept-art.webp",
+      "key": "lexicon/lights/s1-2-concept-art.webp",
+      "word": "lights",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire",
+      "t": 36.48,
+      "score": 0.9,
+      "cosine": 0.664,
+      "reason": "image captures resilience and unity through symbolism",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s14-5-word-neon.webp",
+      "key": "lexicon/night/s14-5-word-neon.webp",
+      "word": "night",
+      "line": "still dance when the night gets heavy Still sing when the sky turns gray",
+      "t": 14.07,
+      "score": 0.9,
+      "cosine": 0.647,
+      "reason": "neon sign symbolizes defiance and resilience",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s0-5-concept-art.webp",
+      "key": "lexicon/sky/s0-5-concept-art.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.9,
+      "cosine": 0.62,
+      "reason": "celestial elements align with song's defiant, hopeful mood",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s11-2-word-portrait.webp",
+      "key": "lexicon/sky/s11-2-word-portrait.webp",
+      "word": "sky",
+      "line": "dance when the night gets heavy Still sing when the sky turns gray Hands up if your heart stays ready",
+      "t": 16.38,
+      "score": 0.9,
+      "cosine": 0.62,
+      "reason": "symbolic imagery aligns with themes",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s1-1-neon-night.webp",
+      "key": "lexicon/dance/s1-1-neon-night.webp",
+      "word": "dance",
+      "line": "still dance when the night gets heavy Still sing when the sky",
+      "t": 13.491,
+      "score": 0.9,
+      "cosine": 0.473,
+      "reason": "aligns with resilience, unity, and defiance",
+      "recipe": "1-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s1-5-dark-surreal.webp",
+      "key": "lexicon/dance/s1-5-dark-surreal.webp",
+      "word": "dance",
+      "line": "still dance when the night gets heavy Still sing when the sky",
+      "t": 13.491,
+      "score": 0.9,
+      "cosine": 0.473,
+      "reason": "aligns with resilience and unity themes",
+      "recipe": "5-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rise/s3-2-word-neon.webp",
+      "key": "lexicon/rise/s3-2-word-neon.webp",
+      "word": "rise",
+      "line": "Heyya heyya Yalla yalla Sawa sawa We rise we stay They only",
+      "t": 25.947,
+      "score": 0.9,
+      "cosine": 0.468,
+      "reason": "aligns with resilience and urban renewal themes",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s5-6-film-still.webp",
+      "key": "lexicon/drums/s5-6-film-still.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.9,
+      "cosine": 0.454,
+      "reason": "image captures the essence of rhythmic defiance and anticipation",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s5-2-cinema.webp",
+      "key": "lexicon/drums/s5-2-cinema.webp",
+      "word": "drums",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in the name",
+      "t": 37.082,
+      "score": 0.9,
+      "cosine": 0.454,
+      "reason": "Captures the intensity and resilience of Cairo's nightlife through music.",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s8-6-anime.webp",
+      "key": "lexicon/gold/s8-6-anime.webp",
+      "word": "gold",
+      "line": "traffic Dreams in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night",
+      "t": 105.187,
+      "score": 0.9,
+      "cosine": 0.429,
+      "reason": "image captures resilience and transformation",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s13-1-word-portrait.webp",
+      "key": "lexicon/dreams/s13-1-word-portrait.webp",
+      "word": "dreams",
+      "line": "This is bass in the alley kids in the traffic Dreams in the dust trying to stay clean This is gold in the",
+      "t": 102.853,
+      "score": 0.9,
+      "cosine": 0.429,
+      "reason": "aligns with resilience and aspirational dreams",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s18-6-word-neon.webp",
+      "key": "lexicon/glow/s18-6-word-neon.webp",
+      "word": "glow",
+      "line": "holding families together I see fathers praying under streetlight glow I see young ones building something better With a beat",
+      "t": 118.004,
+      "score": 0.9,
+      "cosine": 0.428,
+      "reason": "Neon 'glow' fits urban night, hopeful energy, and resilience.",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/screen/s8-5-photo.webp",
+      "key": "lexicon/screen/s8-5-photo.webp",
+      "word": "screen",
+      "line": "than what they show you More than war on a screen More than pain in the",
+      "t": 187.452,
+      "score": 0.9,
+      "cosine": 0.394,
+      "reason": "Contrasts war with joy, fits defiant mood.",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hearts/s5-2-poster.webp",
+      "key": "lexicon/hearts/s5-2-poster.webp",
+      "word": "hearts",
+      "line": "But we got city lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to",
+      "t": 38.789,
+      "score": 0.9,
+      "cosine": 0.391,
+      "reason": "Symbolizes unity and passion, aligns with song's themes of resilience and defiance.",
+      "recipe": "2-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s5-1-cinema.webp",
+      "key": "lexicon/sound/s5-1-cinema.webp",
+      "word": "sound",
+      "line": "dark gets loud We make a brighter sound We still dance when the night",
+      "t": 66.549,
+      "score": 0.75,
+      "cosine": 0.487,
+      "reason": "neon lights symbolize urban resilience, ear represents listening to city's sound of defian",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s5-2-photo.webp",
+      "key": "lexicon/sound/s5-2-photo.webp",
+      "word": "sound",
+      "line": "dark gets loud We make a brighter sound We still dance when the night",
+      "t": 66.549,
+      "score": 0.75,
+      "cosine": 0.487,
+      "reason": "Contrasts mood but captures auditory focus.",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s1-2-dream-collage.webp",
+      "key": "lexicon/dance/s1-2-dream-collage.webp",
+      "word": "dance",
+      "line": "still dance when the night gets heavy Still sing when the sky",
+      "t": 13.491,
+      "score": 0.75,
+      "cosine": 0.473,
+      "reason": "image captures joy and freedom but lacks night setting and urban context",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s9-4-anime.webp",
+      "key": "lexicon/gold/s9-4-anime.webp",
+      "word": "gold",
+      "line": "traffic Dreams in the dust trying to stay clean This is gold in the voice of the aunties This is tea when the night",
+      "t": 105.187,
+      "score": 0.75,
+      "cosine": 0.429,
+      "reason": "Contrasts with song's hopeful tone",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s13-2-dark-surreal.webp",
+      "key": "lexicon/dreams/s13-2-dark-surreal.webp",
+      "word": "dreams",
+      "line": "This is bass in the alley kids in the traffic Dreams in the dust trying to stay clean This is gold in the",
+      "t": 102.853,
+      "score": 0.75,
+      "cosine": 0.429,
+      "reason": "image captures mood but lacks urban grit",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s19-3-anime.webp",
+      "key": "lexicon/glow/s19-3-anime.webp",
+      "word": "glow",
+      "line": "holding families together I see fathers praying under streetlight glow I see young ones building something better With a beat",
+      "t": 118.004,
+      "score": 0.75,
+      "cosine": 0.428,
+      "reason": "image aligns with resilience but lacks celebratory mood",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s13-5-anime.webp",
+      "key": "lexicon/rhythm/s13-5-anime.webp",
+      "word": "rhythm",
+      "line": "eyes And if the whole world shakes We put rhythm in the ground If the dark gets",
+      "t": 61.498,
+      "score": 0.75,
+      "cosine": 0.428,
+      "reason": "Eye imagery fits emotional depth but lacks direct connection to dance and resilience.",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-4-photo.webp",
+      "key": "lexicon/fire/s17-4-photo.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.75,
+      "cosine": 0.423,
+      "reason": "symbolizes defiance and resilience",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-6-word-portrait.webp",
+      "key": "lexicon/fire/s17-6-word-portrait.webp",
+      "word": "fire",
+      "line": "lights street drums late nights Millions of hearts with fire in the name From Cairo rooftops to the",
+      "t": 39.381,
+      "score": 0.75,
+      "cosine": 0.423,
+      "reason": "symbolic but lacks urban context",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s1-1-word-neon.webp",
+      "key": "lexicon/peace/s1-1-word-neon.webp",
+      "word": "peace",
+      "line": "This is not just pride This is peace with a pulse This is culture",
+      "t": 204.475,
+      "score": 0.75,
+      "cosine": 0.422,
+      "reason": "Contrasts mood but symbolizes peace",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s2-1-film-still.webp",
+      "key": "lexicon/peace/s2-1-film-still.webp",
+      "word": "peace",
+      "line": "This is not just pride This is peace with a pulse This is culture",
+      "t": 204.475,
+      "score": 0.75,
+      "cosine": 0.422,
+      "reason": "symbolism aligns but lacks urban vibrancy",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/street/s1-2-word-neon.webp",
+      "key": "lexicon/street/s1-2-word-neon.webp",
+      "word": "street",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in",
+      "t": 36.804,
+      "score": 0.75,
+      "cosine": 0.42,
+      "reason": "matches urban nightlife but lacks fiery resilience",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/street/s2-4-anime.webp",
+      "key": "lexicon/street/s2-4-anime.webp",
+      "word": "street",
+      "line": "They only see the stone in the frame But we got city lights street drums late nights Millions of hearts with fire in",
+      "t": 36.804,
+      "score": 0.75,
+      "cosine": 0.42,
+      "reason": "reflects mood but lacks celebration",
+      "recipe": "4-anime",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "night": [
+      0,
+      6
+    ],
+    "sky": [
+      1,
+      7,
+      8
+    ],
+    "sound": [
+      2,
+      19,
+      20
+    ],
+    "rise": [
+      3,
+      11
+    ],
+    "drums": [
+      4,
+      12,
+      13
+    ],
+    "lights": [
+      5
+    ],
+    "dance": [
+      9,
+      10,
+      21
+    ],
+    "gold": [
+      14,
+      22
+    ],
+    "dreams": [
+      15,
+      23
+    ],
+    "glow": [
+      16,
+      24
+    ],
+    "screen": [
+      17
+    ],
+    "hearts": [
+      18
+    ],
+    "rhythm": [
+      25
+    ],
+    "fire": [
+      26,
+      27
+    ],
+    "peace": [
+      28,
+      29
+    ],
+    "street": [
+      30,
+      31
+    ]
+  }
 }

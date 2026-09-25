@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "fast-enough",
-  "generatedAt": "2026-09-25T04:02:45.201Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:18:29.170Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2419,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 48,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-3-film-still.webp",
+      "key": "lexicon/lights/s19-3-film-still.webp",
+      "word": "lights",
+      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
+      "t": 34.853,
+      "score": 0.9,
+      "cosine": 0.495,
+      "reason": "fits mood and themes, vividly captures speed and romance",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s6-6-anime.webp",
+      "key": "lexicon/running/s6-6-anime.webp",
+      "word": "running",
+      "line": "No checkpoints, we don’t save and quit Just keep running through the city lights You and me, yeah, we about",
+      "t": 33.867,
+      "score": 0.9,
+      "cosine": 0.473,
+      "reason": "fits mood and themes, vivid imagery",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s6-4-chalkboard.webp",
+      "key": "lexicon/running/s6-4-chalkboard.webp",
+      "word": "running",
+      "line": "No checkpoints, we don’t save and quit Just keep running through the city lights You and me, yeah, we about",
+      "t": 33.867,
+      "score": 0.9,
+      "cosine": 0.473,
+      "reason": "captures speed and energy, fits retro-futuristic theme",
+      "recipe": "4-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spin/s2-2-film-still.webp",
+      "key": "lexicon/spin/s2-2-film-still.webp",
+      "word": "spin",
+      "line": "mission Heart in overdrive, no hesitation Spin through the night with you Everything feels brand",
+      "t": 25.287,
+      "score": 0.9,
+      "cosine": 0.403,
+      "reason": "fits mood and themes of speed, energy, and playfulness",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s9-6-word-portrait.webp",
+      "key": "lexicon/light/s9-6-word-portrait.webp",
+      "word": "light",
+      "line": "Baby, keep up, don’t stop now Green light, go, we on a mission Heart in overdrive,",
+      "t": 20.805,
+      "score": 0.9,
+      "cosine": 0.383,
+      "reason": "fits mood and themes, slightly misses playful energy",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shine/s1-4-word-neon.webp",
+      "key": "lexicon/shine/s1-4-word-neon.webp",
+      "word": "shine",
+      "line": "block to the boardwalk lights We shine together, everything’s right Bounce on springs,",
+      "t": 78.029,
+      "score": 0.85,
+      "cosine": 0.441,
+      "reason": "captures mood and nostalgia",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s12-3-word-portrait.webp",
+      "key": "lexicon/sky/s12-3-word-portrait.webp",
+      "word": "sky",
+      "line": "win Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me,",
+      "t": 40.04,
+      "score": 0.8,
+      "cosine": 0.516,
+      "reason": "fits mood but lacks motion",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s11-4-film-still.webp",
+      "key": "lexicon/heart/s11-4-film-still.webp",
+      "word": "heart",
+      "line": "Green light, go, we on a mission Heart in overdrive, no hesitation Spin through the night with",
+      "t": 22.918,
+      "score": 0.8,
+      "cosine": 0.478,
+      "reason": "romantic, energetic, fits mood",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s6-3-papercut.webp",
+      "key": "lexicon/running/s6-3-papercut.webp",
+      "word": "running",
+      "line": "No checkpoints, we don’t save and quit Just keep running through the city lights You and me, yeah, we about",
+      "t": 33.867,
+      "score": 0.8,
+      "cosine": 0.473,
+      "reason": "captures energy and movement, but lacks urban setting",
+      "recipe": "3-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s1-3-word-portrait.webp",
+      "key": "lexicon/glow/s1-3-word-portrait.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.8,
+      "cosine": 0.456,
+      "reason": "matches mood and glow theme",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s12-2-chalkboard.webp",
+      "key": "lexicon/blue/s12-2-chalkboard.webp",
+      "word": "blue",
+      "line": "Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me, then we going",
+      "t": 40.542,
+      "score": 0.8,
+      "cosine": 0.439,
+      "reason": "captures motion and mystery, aligns with cosmic themes",
+      "recipe": "2-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/golden/s4-3-word-neon.webp",
+      "key": "lexicon/golden/s4-3-word-neon.webp",
+      "word": "golden",
+      "line": "You’re my boost, I’m your invincible Golden love, yeah, we collect it Too fast, too",
+      "t": 86.994,
+      "score": 0.8,
+      "cosine": 0.435,
+      "reason": "fits mood and themes, nostalgic and vibrant urban scene",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s10-4-word-portrait.webp",
+      "key": "lexicon/high/s10-4-word-portrait.webp",
+      "word": "high",
+      "line": "everything’s right Bounce on springs, we rise so high Nothing can stop us, we touch the sky You’re",
+      "t": 81.653,
+      "score": 0.8,
+      "cosine": 0.423,
+      "reason": "fits mood but lacks personal connection",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/high/s10-5-word-neon.webp",
+      "key": "lexicon/high/s10-5-word-neon.webp",
+      "word": "high",
+      "line": "everything’s right Bounce on springs, we rise so high Nothing can stop us, we touch the sky You’re",
+      "t": 81.653,
+      "score": 0.8,
+      "cosine": 0.423,
+      "reason": "fits mood but lacks speed and motion",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s3-5-pixel.webp",
+      "key": "lexicon/glow/s3-5-pixel.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "captures warmth and glow, fits retro-futurism",
+      "recipe": "5-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spin/s2-1-dark-surreal.webp",
+      "key": "lexicon/spin/s2-1-dark-surreal.webp",
+      "word": "spin",
+      "line": "mission Heart in overdrive, no hesitation Spin through the night with you Everything feels brand",
+      "t": 25.287,
+      "score": 0.8,
+      "cosine": 0.403,
+      "reason": "cosmic energy aligns with song's motion and transformation themes",
+      "recipe": "1-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spin/s3-1-poster.webp",
+      "key": "lexicon/spin/s3-1-poster.webp",
+      "word": "spin",
+      "line": "mission Heart in overdrive, no hesitation Spin through the night with you Everything feels brand",
+      "t": 25.287,
+      "score": 0.8,
+      "cosine": 0.403,
+      "reason": "captures energy and motion, fits retro-futurism",
+      "recipe": "1-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s15-2-anime.webp",
+      "key": "lexicon/glow/s15-2-anime.webp",
+      "word": "glow",
+      "line": "da da dum dum Baby, let the whole night glow Level up, level up We go",
+      "t": 101.715,
+      "score": 0.8,
+      "cosine": 0.398,
+      "reason": "cosmic connection, inner glow fits",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-1-dream-collage.webp",
+      "key": "lexicon/love/s6-1-dream-collage.webp",
+      "word": "love",
+      "line": "You’re my boost, I’m your invincible Golden love, yeah, we collect it Too fast, too smooth,",
+      "t": 87.284,
+      "score": 0.8,
+      "cosine": 0.389,
+      "reason": "fits mood but lacks speed and motion",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-2-word-portrait.webp",
+      "key": "lexicon/love/s6-2-word-portrait.webp",
+      "word": "love",
+      "line": "You’re my boost, I’m your invincible Golden love, yeah, we collect it Too fast, too smooth,",
+      "t": 87.284,
+      "score": 0.8,
+      "cosine": 0.389,
+      "reason": "fits mood but lacks motion",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s3-5-neon-night.webp",
+      "key": "lexicon/fast/s3-5-neon-night.webp",
+      "word": "fast",
+      "line": "I could be that somebody Fast enough, we can’t get caught now Baby, keep",
+      "t": 15.569,
+      "score": 0.8,
+      "cosine": 0.373,
+      "reason": "fits mood and speed but lacks playful romance",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s4-2-film-still.webp",
+      "key": "lexicon/fast/s4-2-film-still.webp",
+      "word": "fast",
+      "line": "I could be that somebody Fast enough, we can’t get caught now Baby, keep",
+      "t": 15.569,
+      "score": 0.8,
+      "cosine": 0.373,
+      "reason": "captures speed and focus, aligns with mood",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-4-film-still.webp",
+      "key": "lexicon/drip/s5-4-film-still.webp",
+      "word": "drip",
+      "line": "drip",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.357,
+      "reason": "fits mood and themes, but less playful romance",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/room/s4-2-neon-sign.webp",
+      "key": "lexicon/room/s4-2-neon-sign.webp",
+      "word": "room",
+      "line": "and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me, then we going all the",
+      "t": 41.04,
+      "score": 0.8,
+      "cosine": 0.328,
+      "reason": "fits retro-futurism and nightlife vibe",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-1-cinema.webp",
+      "key": "lexicon/night/s7-1-cinema.webp",
+      "word": "night",
+      "line": "Heart in overdrive, no hesitation Spin through the night with you Everything feels brand new",
+      "t": 25.647,
+      "score": 0.7,
+      "cosine": 0.454,
+      "reason": "fits mood but lacks playful energy",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s13-1-photo.webp",
+      "key": "lexicon/blue/s13-1-photo.webp",
+      "word": "blue",
+      "line": "Loops and turns, we don’t hit the brakes Sky so blue, no room for mistakes If you with me, then we going",
+      "t": 40.542,
+      "score": 0.7,
+      "cosine": 0.439,
+      "reason": "muted blue-gray backdrop aligns with mood",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s7-2-photo.webp",
+      "key": "lexicon/city/s7-2-photo.webp",
+      "word": "city",
+      "line": "we don’t save and quit Just keep running through the city lights You and me, yeah, we about to win",
+      "t": 34.538,
+      "score": 0.7,
+      "cosine": 0.417,
+      "reason": "fits urban theme but lacks playful energy",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s4-4-papercut.webp",
+      "key": "lexicon/fast/s4-4-papercut.webp",
+      "word": "fast",
+      "line": "I could be that somebody Fast enough, we can’t get caught now Baby, keep",
+      "t": 15.569,
+      "score": 0.7,
+      "cosine": 0.373,
+      "reason": "Contrasts with summer vibe, but captures speed and freedom.",
+      "recipe": "4-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s16-2-film-still.webp",
+      "key": "lexicon/time/s16-2-film-still.webp",
+      "word": "time",
+      "line": "mistakes If you with me, then we going all the way No time to waste, it’s our day Are you that somebody?",
+      "t": 44.44,
+      "score": 0.7,
+      "cosine": 0.356,
+      "reason": "time theme, urgency, but lacks playful romance",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s17-1-cinema.webp",
+      "key": "lexicon/time/s17-1-cinema.webp",
+      "word": "time",
+      "line": "mistakes If you with me, then we going all the way No time to waste, it’s our day Are you that somebody?",
+      "t": 44.44,
+      "score": 0.7,
+      "cosine": 0.356,
+      "reason": "nostalgic but lacks playful energy",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flight/s0-2-film-still.webp",
+      "key": "lexicon/flight/s0-2-film-still.webp",
+      "word": "flight",
+      "line": "all night Spring bounce, take flight You and me, we feel right",
+      "t": 70.473,
+      "score": 0.7,
+      "cosine": 0.347,
+      "reason": "Euphoria and adventure fit, but too serious for playful mood.",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flight/s0-1-oil-light.webp",
+      "key": "lexicon/flight/s0-1-oil-light.webp",
+      "word": "flight",
+      "line": "all night Spring bounce, take flight You and me, we feel right",
+      "t": 70.473,
+      "score": 0.7,
+      "cosine": 0.347,
+      "reason": "Contrasts with playful mood, fits themes of flight and ascension",
+      "recipe": "1-oil-light",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "lights": [
+      0
+    ],
+    "running": [
+      1,
+      2,
+      8
+    ],
+    "spin": [
+      3,
+      15,
+      16
+    ],
+    "light": [
+      4
+    ],
+    "shine": [
+      5
+    ],
+    "sky": [
+      6
+    ],
+    "heart": [
+      7
+    ],
+    "glow": [
+      9,
+      14,
+      17
+    ],
+    "blue": [
+      10,
+      25
+    ],
+    "golden": [
+      11
+    ],
+    "high": [
+      12,
+      13
+    ],
+    "love": [
+      18,
+      19
+    ],
+    "fast": [
+      20,
+      21,
+      27
+    ],
+    "drip": [
+      22
+    ],
+    "room": [
+      23
+    ],
+    "night": [
+      24
+    ],
+    "city": [
+      26
+    ],
+    "time": [
+      28,
+      29
+    ],
+    "flight": [
+      30,
+      31
+    ]
+  }
 }

@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-09-25T04:01:40.033Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:12:39.513Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2919,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 49,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/control/s3-2-word-portrait.webp",
+      "key": "lexicon/control/s3-2-word-portrait.webp",
+      "word": "control",
+      "line": "cute when the shadows get tall especially when the mouse got control of it all",
+      "t": 155.527,
+      "score": 0.8,
+      "cosine": 0.544,
+      "reason": "aligns with themes but lacks whimsy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-6-concept-art.webp",
+      "key": "lexicon/boiler/s0-6-concept-art.webp",
+      "word": "boiler",
+      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
+      "t": 29.136,
+      "score": 0.8,
+      "cosine": 0.54,
+      "reason": "matches industrial setting, fire, danger",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-5-film-still.webp",
+      "key": "lexicon/boiler/s0-5-film-still.webp",
+      "word": "boiler",
+      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
+      "t": 29.136,
+      "score": 0.8,
+      "cosine": 0.54,
+      "reason": "matches industrial setting and mood",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s2-1-manga-line.webp",
+      "key": "lexicon/shadow/s2-1-manga-line.webp",
+      "word": "shadow",
+      "line": "back Moonlight bends when the wand goes snap shadow on the wall with a longeared cap I aint scared",
+      "t": 75.628,
+      "score": 0.8,
+      "cosine": 0.532,
+      "reason": "fits mood but lacks brooms/shadows",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fog/s3-1-anime.webp",
+      "key": "lexicon/fog/s3-1-anime.webp",
+      "word": "fog",
+      "line": "frame but the gold still gleam money in the fog and the magic in steam Voice 1 Who cast that",
+      "t": 86.228,
+      "score": 0.8,
+      "cosine": 0.515,
+      "reason": "fits noir atmosphere, fog theme, but lacks steam and brooms",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s4-1-film-still.webp",
+      "key": "lexicon/night/s4-1-film-still.webp",
+      "word": "night",
+      "line": "too wild Voice 2 Night too long Voice 1 Water too high Voice 2",
+      "t": 195.617,
+      "score": 0.8,
+      "cosine": 0.513,
+      "reason": "fits noir atmosphere, but lacks direct connection to brooms",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/black/s3-4-word-portrait.webp",
+      "key": "lexicon/black/s3-4-word-portrait.webp",
+      "word": "black",
+      "line": "One broom two brooms three more rise black ink magic in the cartoon eyes Timpani",
+      "t": 65.806,
+      "score": 0.8,
+      "cosine": 0.496,
+      "reason": "fits mood but lacks playfulness",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s4-2-word-portrait.webp",
+      "key": "lexicon/move/s4-2-word-portrait.webp",
+      "word": "move",
+      "line": "1 Water too high Voice 2 Door wont move Voice 1 Whole tower drowning Voice 2 Still in",
+      "t": 200.145,
+      "score": 0.8,
+      "cosine": 0.483,
+      "reason": "aligns with noir atmosphere, sinister tone, but lacks brooms or boiler room context",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s0-3-cinema.webp",
+      "key": "lexicon/wall/s0-3-cinema.webp",
+      "word": "wall",
+      "line": "bends when the wand goes snap shadow on the wall with a longeared cap I aint scared Im just",
+      "t": 76.405,
+      "score": 0.8,
+      "cosine": 0.48,
+      "reason": "matches mood, noir atmosphere",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gloves/s3-5-pixel.webp",
+      "key": "lexicon/gloves/s3-5-pixel.webp",
+      "word": "gloves",
+      "line": "with the hat pulled low stars on the brim and the gloves still glow Strings go stab bassoon go",
+      "t": 52.232,
+      "score": 0.8,
+      "cosine": 0.474,
+      "reason": "fits mood and theme, abstract setting",
+      "recipe": "5-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gloves/s3-3-film-still.webp",
+      "key": "lexicon/gloves/s3-3-film-still.webp",
+      "word": "gloves",
+      "line": "with the hat pulled low stars on the brim and the gloves still glow Strings go stab bassoon go",
+      "t": 52.232,
+      "score": 0.8,
+      "cosine": 0.474,
+      "reason": "fits mood and theme, but less playful",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s12-2-chalkboard.webp",
+      "key": "lexicon/blue/s12-2-chalkboard.webp",
+      "word": "blue",
+      "line": "drums roll Brooms in the boiler room moon turned blue one wrong spell and the whole crew doomed I",
+      "t": 45.674,
+      "score": 0.8,
+      "cosine": 0.463,
+      "reason": "cosmic blue energy fits spell's ominous magic",
+      "recipe": "2-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s6-6-neon-night.webp",
+      "key": "lexicon/bassline/s6-6-neon-night.webp",
+      "word": "bassline",
+      "line": "with the woodenleg stomp tap dance terror when the bassline thump I told little homie You dont know that",
+      "t": 135.975,
+      "score": 0.8,
+      "cosine": 0.462,
+      "reason": "fits mood and noir theme, but lacks brooms and tower setting",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s4-3-concept-art.webp",
+      "key": "lexicon/money/s4-3-concept-art.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.8,
+      "cosine": 0.46,
+      "reason": "fits mood but lacks brooms",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s4-4-pixel.webp",
+      "key": "lexicon/money/s4-4-pixel.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.8,
+      "cosine": 0.46,
+      "reason": "aligns with greed theme, pixel art fits noir twist",
+      "recipe": "4-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-5-word-portrait.webp",
+      "key": "lexicon/wrong/s5-5-word-portrait.webp",
+      "word": "wrong",
+      "line": "Brooms in the boiler room moon turned blue one wrong spell and the whole crew doomed I came through small",
+      "t": 46.56,
+      "score": 0.8,
+      "cosine": 0.454,
+      "reason": "aligns with ominous mood, noir elements, but lacks playful danger",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-2-word-portrait.webp",
+      "key": "lexicon/boiler/s0-2-word-portrait.webp",
+      "word": "boiler",
+      "line": "Brooms in the boiler room Brooms in the boiler room water starts to rise little mouse",
+      "t": 29.136,
+      "score": 0.7,
+      "cosine": 0.54,
+      "reason": "matches industrial setting but lacks playfulness",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fog/s3-2-manga-line.webp",
+      "key": "lexicon/fog/s3-2-manga-line.webp",
+      "word": "fog",
+      "line": "frame but the gold still gleam money in the fog and the magic in steam Voice 1 Who cast that",
+      "t": 86.228,
+      "score": 0.7,
+      "cosine": 0.515,
+      "reason": "fits mood but lacks brooms and steam",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s4-3-anime.webp",
+      "key": "lexicon/night/s4-3-anime.webp",
+      "word": "night",
+      "line": "too wild Voice 2 Night too long Voice 1 Water too high Voice 2",
+      "t": 195.617,
+      "score": 0.7,
+      "cosine": 0.513,
+      "reason": "fits mood but lacks direct connection to brooms",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gloves/s3-6-neon-sign.webp",
+      "key": "lexicon/gloves/s3-6-neon-sign.webp",
+      "word": "gloves",
+      "line": "with the hat pulled low stars on the brim and the gloves still glow Strings go stab bassoon go",
+      "t": 52.232,
+      "score": 0.7,
+      "cosine": 0.474,
+      "reason": "neon glow fits ominous mood, urban alley connects to noir theme",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s6-1-dream-collage.webp",
+      "key": "lexicon/falling/s6-1-dream-collage.webp",
+      "word": "falling",
+      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
+      "t": 145.88,
+      "score": 0.7,
+      "cosine": 0.472,
+      "reason": "aligns with decay and chaos but lacks magical elements",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/falling/s6-2-word-portrait.webp",
+      "key": "lexicon/falling/s6-2-word-portrait.webp",
+      "word": "falling",
+      "line": "ceiling got eyes stars in the robe started falling from the sky Cauldron bubble floorboards",
+      "t": 145.88,
+      "score": 0.7,
+      "cosine": 0.472,
+      "reason": "mixes urban with autumn, captures falling theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s3-3-anime.webp",
+      "key": "lexicon/teeth/s3-3-anime.webp",
+      "word": "teeth",
+      "line": "wrong spell and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a",
+      "t": 118.19,
+      "score": 0.7,
+      "cosine": 0.47,
+      "reason": "Apocalyptic imagery fits ominous mood but lacks cleaning tool symbolism.",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s3-4-manga-line.webp",
+      "key": "lexicon/teeth/s3-4-manga-line.webp",
+      "word": "teeth",
+      "line": "wrong spell and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a",
+      "t": 118.19,
+      "score": 0.7,
+      "cosine": 0.47,
+      "reason": "Contrast with mop's teeth, but fits ominous mood",
+      "recipe": "4-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s6-1-neon-night.webp",
+      "key": "lexicon/midnight/s6-1-neon-night.webp",
+      "word": "midnight",
+      "line": "and the whole crew doomed I seen the mop grow teeth in the midnight haze seen buckets pour rivers through a hundred stairways",
+      "t": 118.852,
+      "score": 0.7,
+      "cosine": 0.467,
+      "reason": "fits noir atmosphere but lacks direct connection to the spell or tools",
+      "recipe": "1-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s4-5-neon-sign.webp",
+      "key": "lexicon/money/s4-5-neon-sign.webp",
+      "word": "money",
+      "line": "and it hungry for more Blackandwhite world but the money still gold whole tower shaking when the wild drums",
+      "t": 40.171,
+      "score": 0.7,
+      "cosine": 0.46,
+      "reason": "neon money fits urban noir, but lacks brooms",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strong/s4-2-photo.webp",
+      "key": "lexicon/strong/s4-2-photo.webp",
+      "word": "strong",
+      "line": "Voice 1 Hat too big Voice 2 Spell too strong Voice 1 Broom too wild Voice 2",
+      "t": 192.261,
+      "score": 0.7,
+      "cosine": 0.459,
+      "reason": "Contrasts with playful danger, fits noir mood",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/timpani/s0-2-cinema.webp",
+      "key": "lexicon/timpani/s0-2-cinema.webp",
+      "word": "timpani",
+      "line": "black ink magic in the cartoon eyes Timpani boom when the stairwell crack oboe line howlin",
+      "t": 68.381,
+      "score": 0.6,
+      "cosine": 0.556,
+      "reason": "Contrasts with ominous mood, fits classical elements",
+      "recipe": "2-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/control/s4-4-concept-art.webp",
+      "key": "lexicon/control/s4-4-concept-art.webp",
+      "word": "control",
+      "line": "cute when the shadows get tall especially when the mouse got control of it all",
+      "t": 155.527,
+      "score": 0.6,
+      "cosine": 0.544,
+      "reason": "castle and cloaked figures symbolize power, aligning with theme of control",
+      "recipe": "4-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s1-4-word-portrait.webp",
+      "key": "lexicon/shadow/s1-4-word-portrait.webp",
+      "word": "shadow",
+      "line": "back Moonlight bends when the wand goes snap shadow on the wall with a longeared cap I aint scared",
+      "t": 75.628,
+      "score": 0.6,
+      "cosine": 0.532,
+      "reason": "Contrasts mood, lacks whimsy",
+      "recipe": "4-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s1-5-word-neon.webp",
+      "key": "lexicon/shadow/s1-5-word-neon.webp",
+      "word": "shadow",
+      "line": "back Moonlight bends when the wand goes snap shadow on the wall with a longeared cap I aint scared",
+      "t": 75.628,
+      "score": 0.6,
+      "cosine": 0.532,
+      "reason": "Urban setting, neon, night fits mood but lacks magical elements",
+      "recipe": "5-word-neon",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s3-6-neon-night.webp",
+      "key": "lexicon/gold/s3-6-neon-night.webp",
+      "word": "gold",
+      "line": "for more Blackandwhite world but the money still gold whole tower shaking when the wild drums roll Brooms",
+      "t": 40.774,
+      "score": 0.6,
+      "cosine": 0.525,
+      "reason": "Contrasts with the song's noir atmosphere",
+      "recipe": "6-neon-night",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "control": [
+      0,
+      28
+    ],
+    "boiler": [
+      1,
+      2,
+      16
+    ],
+    "shadow": [
+      3,
+      29,
+      30
+    ],
+    "fog": [
+      4,
+      17
+    ],
+    "night": [
+      5,
+      18
+    ],
+    "black": [
+      6
+    ],
+    "move": [
+      7
+    ],
+    "wall": [
+      8
+    ],
+    "gloves": [
+      9,
+      10,
+      19
+    ],
+    "blue": [
+      11
+    ],
+    "bassline": [
+      12
+    ],
+    "money": [
+      13,
+      14,
+      25
+    ],
+    "wrong": [
+      15
+    ],
+    "falling": [
+      20,
+      21
+    ],
+    "teeth": [
+      22,
+      23
+    ],
+    "midnight": [
+      24
+    ],
+    "strong": [
+      26
+    ],
+    "timpani": [
+      27
+    ],
+    "gold": [
+      31
+    ]
+  }
 }

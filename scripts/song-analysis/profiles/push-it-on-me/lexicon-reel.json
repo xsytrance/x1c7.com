@@ -1,15 +1,280 @@
 {
   "v": 1,
   "id": "push-it-on-me",
-  "generatedAt": "2026-09-25T04:05:31.116Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:29:04.341Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 684,
     "judged": 26,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 19,
+    "kept": 19
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s15-1-word-portrait.webp",
+      "key": "lexicon/lights/s15-1-word-portrait.webp",
+      "word": "lights",
+      "line": "low lights slow move bodies in the dark",
+      "t": 31.719,
+      "score": 0.9,
+      "cosine": 0.583,
+      "reason": "fits retro nightclub atmosphere",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s4-5-word-portrait.webp",
+      "key": "lexicon/slow/s4-5-word-portrait.webp",
+      "word": "slow",
+      "line": "low lights slow move bodies in the dark",
+      "t": 32.218,
+      "score": 0.9,
+      "cosine": 0.574,
+      "reason": "fits mood and theme, slightly introspective",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s15-6-word-portrait.webp",
+      "key": "lexicon/slow/s15-6-word-portrait.webp",
+      "word": "slow",
+      "line": "low lights slow move bodies in the dark",
+      "t": 32.218,
+      "score": 0.9,
+      "cosine": 0.574,
+      "reason": "matches sultry, late-night mood",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s2-2-word-portrait.webp",
+      "key": "lexicon/move/s2-2-word-portrait.webp",
+      "word": "move",
+      "line": "low lights slow move bodies in the dark nobody's",
+      "t": 32.589,
+      "score": 0.9,
+      "cosine": 0.534,
+      "reason": "fits sultry club setting, captures mood and theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s18-2-word-portrait.webp",
+      "key": "lexicon/move/s18-2-word-portrait.webp",
+      "word": "move",
+      "line": "low lights slow move bodies in the dark nobody's",
+      "t": 32.589,
+      "score": 0.9,
+      "cosine": 0.511,
+      "reason": "fits sultry, intimate mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s1-3-word-portrait.webp",
+      "key": "lexicon/stop/s1-3-word-portrait.webp",
+      "word": "stop",
+      "line": "feelfeelfeel it on don't stop now keep it slow push",
+      "t": 55.6,
+      "score": 0.9,
+      "cosine": 0.452,
+      "reason": "fits mood and setting",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/push/s0-3-word-portrait.webp",
+      "key": "lexicon/push/s0-3-word-portrait.webp",
+      "word": "push",
+      "line": "watchin' give in to the spark push it on me pushpushpush it on me",
+      "t": 38.534,
+      "score": 0.9,
+      "cosine": 0.449,
+      "reason": "fits sultry, intimate mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/push/s1-1-word-portrait.webp",
+      "key": "lexicon/push/s1-1-word-portrait.webp",
+      "word": "push",
+      "line": "watchin' give in to the spark push it on me pushpushpush it on me",
+      "t": 38.534,
+      "score": 0.9,
+      "cosine": 0.449,
+      "reason": "fits sultry, intimate club setting",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s17-3-cinema.webp",
+      "key": "lexicon/move/s17-3-cinema.webp",
+      "word": "move",
+      "line": "low lights slow move bodies in the dark nobody's",
+      "t": 32.589,
+      "score": 0.8,
+      "cosine": 0.55,
+      "reason": "evokes late-night mood, hypnosis, and intimacy",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bodies/s0-1-photo.webp",
+      "key": "lexicon/bodies/s0-1-photo.webp",
+      "word": "bodies",
+      "line": "low lights slow move bodies in the dark nobody's watchin'",
+      "t": 33.135,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "fits mood but lacks club setting",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bodies/s1-2-film-still.webp",
+      "key": "lexicon/bodies/s1-2-film-still.webp",
+      "word": "bodies",
+      "line": "low lights slow move bodies in the dark nobody's watchin'",
+      "t": 33.135,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "fits mood but lacks club context",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spark/s0-2-dark-surreal.webp",
+      "key": "lexicon/spark/s0-2-dark-surreal.webp",
+      "word": "spark",
+      "line": "nobody's watchin' give in to the spark push it on me pushpushpush it on me",
+      "t": 37.84,
+      "score": 0.8,
+      "cosine": 0.371,
+      "reason": "cosmic imagery fits sultry mood abstractly",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bodies/s0-2-dream-collage.webp",
+      "key": "lexicon/bodies/s0-2-dream-collage.webp",
+      "word": "bodies",
+      "line": "low lights slow move bodies in the dark nobody's watchin'",
+      "t": 33.135,
+      "score": 0.7,
+      "cosine": 0.471,
+      "reason": "fits mood but lacks club setting",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s2-5-manga-line.webp",
+      "key": "lexicon/stop/s2-5-manga-line.webp",
+      "word": "stop",
+      "line": "feelfeelfeel it on don't stop now keep it slow push",
+      "t": 55.6,
+      "score": 0.7,
+      "cosine": 0.452,
+      "reason": "Eye symbolizes awareness, chaos reflects turmoil, fitting seductive tension.",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s22-4-photo.webp",
+      "key": "lexicon/lights/s22-4-photo.webp",
+      "word": "lights",
+      "line": "low lights slow move bodies in the dark",
+      "t": 31.719,
+      "score": 0.6,
+      "cosine": 0.561,
+      "reason": "setting mismatch",
+      "recipe": "4-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s11-4-word-portrait.webp",
+      "key": "lexicon/slow/s11-4-word-portrait.webp",
+      "word": "slow",
+      "line": "low lights slow move bodies in the dark",
+      "t": 32.218,
+      "score": 0.6,
+      "cosine": 0.56,
+      "reason": "Contrasts mood; lacks sultriness, darkness.",
+      "recipe": "4-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s14-6-word-portrait.webp",
+      "key": "lexicon/dark/s14-6-word-portrait.webp",
+      "word": "dark",
+      "line": "low lights slow move bodies in the dark nobody's watchin' give",
+      "t": 34.122,
+      "score": 0.6,
+      "cosine": 0.465,
+      "reason": "industrial setting lacks sultry atmosphere",
+      "recipe": "6-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s15-1-word-portrait.webp",
+      "key": "lexicon/dark/s15-1-word-portrait.webp",
+      "word": "dark",
+      "line": "low lights slow move bodies in the dark nobody's watchin' give",
+      "t": 34.122,
+      "score": 0.6,
+      "cosine": 0.465,
+      "reason": "fits mood but lacks club setting",
+      "recipe": "1-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spark/s0-3-film-still.webp",
+      "key": "lexicon/spark/s0-3-film-still.webp",
+      "word": "spark",
+      "line": "nobody's watchin' give in to the spark push it on me pushpushpush it on me",
+      "t": 37.84,
+      "score": 0.6,
+      "cosine": 0.371,
+      "reason": "industrial setting lacks sultry atmosphere",
+      "recipe": "3-film-still",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "lights": [
+      0,
+      14
+    ],
+    "slow": [
+      1,
+      2,
+      15
+    ],
+    "move": [
+      3,
+      4,
+      8
+    ],
+    "stop": [
+      5,
+      13
+    ],
+    "push": [
+      6,
+      7
+    ],
+    "bodies": [
+      9,
+      10,
+      12
+    ],
+    "spark": [
+      11,
+      18
+    ],
+    "dark": [
+      16,
+      17
+    ]
+  }
 }

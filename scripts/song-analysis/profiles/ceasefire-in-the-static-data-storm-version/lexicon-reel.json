@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "ceasefire-in-the-static-data-storm-version",
-  "generatedAt": "2026-09-25T04:02:00.199Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:13:47.793Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2487,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 58,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "skies a thousand little mouths of light They call my name, they sell me dreams",
+      "t": 31.881,
+      "score": 0.9,
+      "cosine": 0.567,
+      "reason": "matches mood and theme of digital isolation",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-6-film-still.webp",
+      "key": "lexicon/night/s6-6-film-still.webp",
+      "word": "night",
+      "line": "dreams they follow me into the night Inbox open like a wound",
+      "t": 37.698,
+      "score": 0.9,
+      "cosine": 0.514,
+      "reason": "matches mood and theme",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-1-neon-night.webp",
+      "key": "lexicon/night/s6-1-neon-night.webp",
+      "word": "night",
+      "line": "dreams they follow me into the night Inbox open like a wound",
+      "t": 37.698,
+      "score": 0.9,
+      "cosine": 0.514,
+      "reason": "fits dark, urban, night setting",
+      "recipe": "1-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-3-word-portrait.webp",
+      "key": "lexicon/save/s6-3-word-portrait.webp",
+      "word": "save",
+      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
+      "t": 189.359,
+      "score": 0.9,
+      "cosine": 0.508,
+      "reason": "matches mood and theme of digital isolation",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s8-3-neon-sign.webp",
+      "key": "lexicon/save/s8-3-neon-sign.webp",
+      "word": "save",
+      "line": "signal Maybe I learn what not to save Maybe I don’t beat the",
+      "t": 189.359,
+      "score": 0.9,
+      "cosine": 0.508,
+      "reason": "fits digital isolation theme",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-1.webp",
+      "key": "lexicon/heart/s0-1.webp",
+      "word": "heart",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
+      "t": 118.085,
+      "score": 0.9,
+      "cosine": 0.503,
+      "reason": "matches mood and themes of digital isolation and emotional strain",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/black/s3-4-word-portrait.webp",
+      "key": "lexicon/black/s3-4-word-portrait.webp",
+      "word": "black",
+      "line": "Another voice, another need another signal dressed in black Too many tabs, too many chains too many faces with borrowed names",
+      "t": 110.086,
+      "score": 0.9,
+      "cosine": 0.492,
+      "reason": "fits dark, melancholic mood",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/overloaded/s0-2-anime.webp",
+      "key": "lexicon/overloaded/s0-2-anime.webp",
+      "word": "overloaded",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the",
+      "t": 117.389,
+      "score": 0.9,
+      "cosine": 0.477,
+      "reason": "captures digital overload symbolism",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s5-3-neon-night.webp",
+      "key": "lexicon/breathe/s5-3-neon-night.webp",
+      "word": "breathe",
+      "line": "piece but nobody asks if I can breathe Scroll by scroll",
+      "t": 48.971,
+      "score": 0.9,
+      "cosine": 0.477,
+      "reason": "fits cyberpunk, rain, and melancholic mood",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s5-5-word-portrait.webp",
+      "key": "lexicon/breathe/s5-5-word-portrait.webp",
+      "word": "breathe",
+      "line": "piece but nobody asks if I can breathe Scroll by scroll",
+      "t": 48.971,
+      "score": 0.9,
+      "cosine": 0.477,
+      "reason": "fits mood and theme, minimal text overlay",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s0-3-word-portrait.webp",
+      "key": "lexicon/ceasefire/s0-3-word-portrait.webp",
+      "word": "ceasefire",
+      "line": "means I’m looking for a ceasefire in the static one quiet place",
+      "t": 62.555,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "fits mood and themes, symbolically rich",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s2-3-noir.webp",
+      "key": "lexicon/ceasefire/s2-3-noir.webp",
+      "word": "ceasefire",
+      "line": "means I’m looking for a ceasefire in the static one quiet place",
+      "t": 62.555,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "fits mood and themes, strong symbolism",
+      "recipe": "3-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ceasefire/s2-6-word-portrait.webp",
+      "key": "lexicon/ceasefire/s2-6-word-portrait.webp",
+      "word": "ceasefire",
+      "line": "means I’m looking for a ceasefire in the static one quiet place",
+      "t": 62.555,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "fits mood and themes, slightly hopeful",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s5-4-word-portrait.webp",
+      "key": "lexicon/voice/s5-4-word-portrait.webp",
+      "word": "voice",
+      "line": "panic where I can hear my real voice I’m looking for a pattern in the",
+      "t": 72.493,
+      "score": 0.9,
+      "cosine": 0.452,
+      "reason": "symbolic of vocal expression and creative struggle",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s12-5-anime.webp",
+      "key": "lexicon/pain/s12-5-anime.webp",
+      "word": "pain",
+      "line": "soul I tried to name the storm folders for the pain Tags for every memory rules for every flame",
+      "t": 100.531,
+      "score": 0.9,
+      "cosine": 0.448,
+      "reason": "Visually captures emotional pain and digital themes",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s12-3-film-still.webp",
+      "key": "lexicon/pain/s12-3-film-still.webp",
+      "word": "pain",
+      "line": "soul I tried to name the storm folders for the pain Tags for every memory rules for every flame",
+      "t": 100.531,
+      "score": 0.9,
+      "cosine": 0.448,
+      "reason": "Visually captures pain and digital anxiety.",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/static/s3-5-dream-collage.webp",
+      "key": "lexicon/static/s3-5-dream-collage.webp",
+      "word": "static",
+      "line": "I’m looking for a ceasefire in the static one quiet place inside the noise",
+      "t": 63.727,
+      "score": 0.9,
+      "cosine": 0.447,
+      "reason": "aligns with themes, mood, and imagery",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walking/s0-2.webp",
+      "key": "lexicon/walking/s0-2.webp",
+      "word": "walking",
+      "line": "somewhere in the chaos then I’m still walking down that road Ads in my",
+      "t": 83.244,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "fits mood and theme of digital detox journey",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s5-4-dream-collage.webp",
+      "key": "lexicon/breathe/s5-4-dream-collage.webp",
+      "word": "breathe",
+      "line": "piece but nobody asks if I can breathe Scroll by scroll",
+      "t": 48.971,
+      "score": 0.85,
+      "cosine": 0.477,
+      "reason": "fits mood and themes, surreal imagery",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lost/s0-2-dark-surreal.webp",
+      "key": "lexicon/lost/s0-2-dark-surreal.webp",
+      "word": "lost",
+      "line": "in the bloodstream too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe",
+      "t": 116.83,
+      "score": 0.85,
+      "cosine": 0.459,
+      "reason": "fits mood and theme of isolation and hopelessness",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s3-4-neon-sign.webp",
+      "key": "lexicon/beat/s3-4-neon-sign.webp",
+      "word": "beat",
+      "line": "save Maybe I don’t beat the ocean Maybe I just name",
+      "t": 192.192,
+      "score": 0.85,
+      "cosine": 0.445,
+      "reason": "reflects digital anxiety and urban pulse",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
+      "key": "lexicon/light/s15-1-cinema.webp",
+      "word": "light",
+      "line": "skies a thousand little mouths of light They call my name, they sell me dreams",
+      "t": 31.881,
+      "score": 0.8,
+      "cosine": 0.567,
+      "reason": "isolated light in digital isolation",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s1-3-word-portrait.webp",
+      "key": "lexicon/night/s1-3-word-portrait.webp",
+      "word": "night",
+      "line": "dreams they follow me into the night Inbox open like a wound",
+      "t": 37.698,
+      "score": 0.8,
+      "cosine": 0.539,
+      "reason": "aligns with night, calm, digital themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s6-3-neon-night.webp",
+      "key": "lexicon/heart/s6-3-neon-night.webp",
+      "word": "heart",
+      "line": "too many ghosts in the lockscreen I’m not lost, I’m overloaded heart still here, just overcoded Trying to breathe through the interface",
+      "t": 118.085,
+      "score": 0.8,
+      "cosine": 0.506,
+      "reason": "Reflects digital longing and emotional weight.",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s11-4-photo.webp",
+      "key": "lexicon/code/s11-4-photo.webp",
+      "word": "code",
+      "line": "madness a holy line through broken code If peace is somewhere in the",
+      "t": 78.484,
+      "score": 0.8,
+      "cosine": 0.492,
+      "reason": "fits theme but lacks melancholy",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s11-5-dream-collage.webp",
+      "key": "lexicon/code/s11-5-dream-collage.webp",
+      "word": "code",
+      "line": "madness a holy line through broken code If peace is somewhere in the",
+      "t": 78.484,
+      "score": 0.8,
+      "cosine": 0.492,
+      "reason": "fits cyberpunk realism and digital theme",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s11-6-word-portrait.webp",
+      "key": "lexicon/code/s11-6-word-portrait.webp",
+      "word": "code",
+      "line": "madness a holy line through broken code If peace is somewhere in the",
+      "t": 78.484,
+      "score": 0.8,
+      "cosine": 0.492,
+      "reason": "reflects digital theme, but lacks melancholic tone",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/black/s4-6-concept-art.webp",
+      "key": "lexicon/black/s4-6-concept-art.webp",
+      "word": "black",
+      "line": "Another voice, another need another signal dressed in black Too many tabs, too many chains too many faces with borrowed names",
+      "t": 110.086,
+      "score": 0.8,
+      "cosine": 0.492,
+      "reason": "symbolizes decay of faith in digital age",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s5-2-photo.webp",
+      "key": "lexicon/silence/s5-2-photo.webp",
+      "word": "silence",
+      "line": "Ping by ping I forget what silence means I’m looking for a",
+      "t": 59.234,
+      "score": 0.8,
+      "cosine": 0.488,
+      "reason": "reflects isolation and silence",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s5-4-word-portrait.webp",
+      "key": "lexicon/silence/s5-4-word-portrait.webp",
+      "word": "silence",
+      "line": "Ping by ping I forget what silence means I’m looking for a",
+      "t": 59.234,
+      "score": 0.8,
+      "cosine": 0.488,
+      "reason": "reflects silence and decay, matches mood",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s7-4-word-portrait.webp",
+      "key": "lexicon/quiet/s7-4-word-portrait.webp",
+      "word": "quiet",
+      "line": "a ceasefire in the static one quiet place inside the noise A",
+      "t": 64.981,
+      "score": 0.8,
+      "cosine": 0.472,
+      "reason": "aligns with themes, mood, but lacks digital context",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s7-5-word-neon.webp",
+      "key": "lexicon/quiet/s7-5-word-neon.webp",
+      "word": "quiet",
+      "line": "a ceasefire in the static one quiet place inside the noise A",
+      "t": 64.981,
+      "score": 0.8,
+      "cosine": 0.472,
+      "reason": "reflects urban tranquility and digital silence",
+      "recipe": "5-word-neon",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "light": [
+      0,
+      21
+    ],
+    "night": [
+      1,
+      2,
+      22
+    ],
+    "save": [
+      3,
+      4
+    ],
+    "heart": [
+      5,
+      23
+    ],
+    "black": [
+      6,
+      27
+    ],
+    "overloaded": [
+      7
+    ],
+    "breathe": [
+      8,
+      9,
+      18
+    ],
+    "ceasefire": [
+      10,
+      11,
+      12
+    ],
+    "voice": [
+      13
+    ],
+    "pain": [
+      14,
+      15
+    ],
+    "static": [
+      16
+    ],
+    "walking": [
+      17
+    ],
+    "lost": [
+      19
+    ],
+    "beat": [
+      20
+    ],
+    "code": [
+      24,
+      25,
+      26
+    ],
+    "silence": [
+      28,
+      29
+    ],
+    "quiet": [
+      30,
+      31
+    ]
+  }
 }

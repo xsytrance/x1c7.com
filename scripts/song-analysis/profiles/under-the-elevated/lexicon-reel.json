@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "under-the-elevated",
-  "generatedAt": "2026-09-25T04:06:45.364Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:32:13.160Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4087,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 58,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s1-6-photo.webp",
+      "key": "lexicon/chain/s1-6-photo.webp",
+      "word": "chain",
+      "line": "when I finally saw the chain It did feel like a prison when I called it",
+      "t": 337.56,
+      "score": 0.9,
+      "cosine": 0.53,
+      "reason": "aligns with themes of struggle and confinement",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s2-5-film-still.webp",
+      "key": "lexicon/chain/s2-5-film-still.webp",
+      "word": "chain",
+      "line": "when I finally saw the chain It did feel like a prison when I called it",
+      "t": 337.56,
+      "score": 0.9,
+      "cosine": 0.53,
+      "reason": "Reflects addiction's grip and confinement",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-4-cinema.webp",
+      "key": "lexicon/city/s5-4-cinema.webp",
+      "word": "city",
+      "line": "the only thing clear when the city gets heavy I disappear",
+      "t": 185.921,
+      "score": 0.9,
+      "cosine": 0.51,
+      "reason": "matches urban isolation and melancholic mood",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-6-neon-night.webp",
+      "key": "lexicon/city/s5-6-neon-night.webp",
+      "word": "city",
+      "line": "the only thing clear when the city gets heavy I disappear",
+      "t": 185.921,
+      "score": 0.9,
+      "cosine": 0.51,
+      "reason": "fits urban isolation and melancholy",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s3-2-manga-line.webp",
+      "key": "lexicon/chains/s3-2-manga-line.webp",
+      "word": "chains",
+      "line": "chains",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.494,
+      "reason": "evokes despair and confinement, fitting addiction theme",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s3-3-cinema.webp",
+      "key": "lexicon/chains/s3-3-cinema.webp",
+      "word": "chains",
+      "line": "chains",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.494,
+      "reason": "conveys confinement and resistance",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-5-cinema.webp",
+      "key": "lexicon/poison/s5-5-cinema.webp",
+      "word": "poison",
+      "line": "your fear You call me poison but I call you mine You call it",
+      "t": 191.797,
+      "score": 0.9,
+      "cosine": 0.469,
+      "reason": "fits mood and theme of hidden danger",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-6-photo.webp",
+      "key": "lexicon/poison/s5-6-photo.webp",
+      "word": "poison",
+      "line": "your fear You call me poison but I call you mine You call it",
+      "t": 191.797,
+      "score": 0.9,
+      "cosine": 0.469,
+      "reason": "represents hidden addiction and toxicity",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-1-word-portrait.webp",
+      "key": "lexicon/poison/s5-1-word-portrait.webp",
+      "word": "poison",
+      "line": "your fear You call me poison but I call you mine You call it",
+      "t": 191.797,
+      "score": 0.9,
+      "cosine": 0.469,
+      "reason": "aligns with song's gritty, ominous mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-2-cinema.webp",
+      "key": "lexicon/quiet/s4-2-cinema.webp",
+      "word": "quiet",
+      "line": "to me Not this time For anybody fighting quiet you are not the thing",
+      "t": 366.353,
+      "score": 0.9,
+      "cosine": 0.439,
+      "reason": "fits mood and theme of vulnerability and struggle",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-3-noir.webp",
+      "key": "lexicon/quiet/s4-3-noir.webp",
+      "word": "quiet",
+      "line": "to me Not this time For anybody fighting quiet you are not the thing",
+      "t": 366.353,
+      "score": 0.9,
+      "cosine": 0.439,
+      "reason": "matches mood and theme of isolation and contemplation",
+      "recipe": "3-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s19-2-concept-art.webp",
+      "key": "lexicon/fire/s19-2-concept-art.webp",
+      "word": "fire",
+      "line": "borrowed sorrow I wanna quit but I want that fire I want the truth but I love the liar",
+      "t": 142.513,
+      "score": 0.9,
+      "cosine": 0.43,
+      "reason": "Symbolizes destructive passion and chaos, aligns with song's gritty themes",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cry/s4-6-film-still.webp",
+      "key": "lexicon/cry/s4-6-film-still.webp",
+      "word": "cry",
+      "line": "you are not the thing youre fighting Cry out Reach out Come back",
+      "t": 370.672,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "aligns with song's mood and themes of vulnerability and emotional release",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cry/s4-3-photo.webp",
+      "key": "lexicon/cry/s4-3-photo.webp",
+      "word": "cry",
+      "line": "you are not the thing youre fighting Cry out Reach out Come back",
+      "t": 370.672,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "fits mood and theme of vulnerability and sorrow",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s2-6-concept-art.webp",
+      "key": "lexicon/chain/s2-6-concept-art.webp",
+      "word": "chain",
+      "line": "when I finally saw the chain It did feel like a prison when I called it",
+      "t": 337.56,
+      "score": 0.85,
+      "cosine": 0.53,
+      "reason": "symbolizes addiction's oppressive yet seductive nature",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-4-word-neon.webp",
+      "key": "lexicon/night/s6-4-word-neon.webp",
+      "word": "night",
+      "line": "it feels like tomorrow Feels like one more night feels like borrowed sorrow I wanna quit",
+      "t": 138.448,
+      "score": 0.85,
+      "cosine": 0.493,
+      "reason": "aligns with urban isolation and gritty mood",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-1-manga-line.webp",
+      "key": "lexicon/quiet/s4-1-manga-line.webp",
+      "word": "quiet",
+      "line": "to me Not this time For anybody fighting quiet you are not the thing",
+      "t": 366.353,
+      "score": 0.85,
+      "cosine": 0.439,
+      "reason": "Reflects urban isolation and internal struggle.",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-2-neon-night.webp",
+      "key": "lexicon/dreams/s8-2-neon-night.webp",
+      "word": "dreams",
+      "line": "craving says dont let go I got side dreams side gigs plans folded in my",
+      "t": 163.028,
+      "score": 0.85,
+      "cosine": 0.423,
+      "reason": "neon dreams, rain as tears, urban isolation",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
+      "key": "lexicon/lights/s3-4-word-portrait.webp",
+      "word": "lights",
+      "line": "coming home the same Rent paid lights on fridge full everybody",
+      "t": 62.88,
+      "score": 0.8,
+      "cosine": 0.536,
+      "reason": "fits mood and theme but lacks fridge symbolism",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s21-4-dream-collage.webp",
+      "key": "lexicon/lights/s21-4-dream-collage.webp",
+      "word": "lights",
+      "line": "coming home the same Rent paid lights on fridge full everybody",
+      "t": 62.88,
+      "score": 0.8,
+      "cosine": 0.501,
+      "reason": "reflects urban isolation and transient moments",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-2-cinema.webp",
+      "key": "lexicon/night/s5-2-cinema.webp",
+      "word": "night",
+      "line": "it feels like tomorrow Feels like one more night feels like borrowed sorrow I wanna quit",
+      "t": 138.448,
+      "score": 0.8,
+      "cosine": 0.493,
+      "reason": "fits urban night mood, abstractly",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s12-1-word-portrait.webp",
+      "key": "lexicon/alone/s12-1-word-portrait.webp",
+      "word": "alone",
+      "line": "Im ready like I could leave it alone I quit three days just to",
+      "t": 105.76,
+      "score": 0.8,
+      "cosine": 0.491,
+      "reason": "matches mood and themes of isolation and addiction",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/disappear/s0-6-neon-sign.webp",
+      "key": "lexicon/disappear/s0-6-neon-sign.webp",
+      "word": "disappear",
+      "line": "when the city gets heavy I disappear your fear You call",
+      "t": 188.442,
+      "score": 0.8,
+      "cosine": 0.489,
+      "reason": "matches urban night setting, mood, and theme of vanishing identity",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-2-cinema.webp",
+      "key": "lexicon/drink/s7-2-cinema.webp",
+      "word": "drink",
+      "line": "deep One little flame One little drink One little sleep",
+      "t": 90.326,
+      "score": 0.8,
+      "cosine": 0.485,
+      "reason": "Reflects mood but lacks grit",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drink/s7-3-photo.webp",
+      "key": "lexicon/drink/s7-3-photo.webp",
+      "word": "drink",
+      "line": "deep One little flame One little drink One little sleep",
+      "t": 90.326,
+      "score": 0.8,
+      "cosine": 0.485,
+      "reason": "reflects alcohol consumption and internal conflict",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/midnight/s4-2-cinema.webp",
+      "key": "lexicon/midnight/s4-2-cinema.webp",
+      "word": "midnight",
+      "line": "store glowing like a chapel midnight glass behind the door I tell",
+      "t": 76.974,
+      "score": 0.8,
+      "cosine": 0.463,
+      "reason": "reflects mood, but lacks urban grit",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s14-1-word-portrait.webp",
+      "key": "lexicon/smoke/s14-1-word-portrait.webp",
+      "word": "smoke",
+      "line": "right keep my money good still got smoke inside my chest Corner store",
+      "t": 71.599,
+      "score": 0.8,
+      "cosine": 0.452,
+      "reason": "evokes decay and isolation, aligns with addiction theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hit/s7-1-photo.webp",
+      "key": "lexicon/hit/s7-1-photo.webp",
+      "word": "hit",
+      "line": "taking little pieces out of me I dont need to hit bottom just to prove the bottoms real I dont need another bottle",
+      "t": 290.376,
+      "score": 0.8,
+      "cosine": 0.444,
+      "reason": "reflects vulnerability and emotional weight",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s7-2-film-still.webp",
+      "key": "lexicon/glass/s7-2-film-still.webp",
+      "word": "glass",
+      "line": "glowing like a chapel midnight glass behind the door I tell myself",
+      "t": 77.52,
+      "score": 0.8,
+      "cosine": 0.439,
+      "reason": "reflects mood, but lacks urban grit",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s7-5-cinema.webp",
+      "key": "lexicon/glass/s7-5-cinema.webp",
+      "word": "glass",
+      "line": "glowing like a chapel midnight glass behind the door I tell myself",
+      "t": 77.52,
+      "score": 0.8,
+      "cosine": 0.439,
+      "reason": "evokes isolation and fragility",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/running/s4-3-neon-sign.webp",
+      "key": "lexicon/running/s4-3-neon-sign.webp",
+      "word": "running",
+      "line": "Do I really want this Am I really free if I keep running from the honest Do I want to stop or do I",
+      "t": 271.105,
+      "score": 0.8,
+      "cosine": 0.438,
+      "reason": "captures urban urgency and escape",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s0-4-photo.webp",
+      "key": "lexicon/flame/s0-4-photo.webp",
+      "word": "flame",
+      "line": "day Dont make it deep One little flame One little drink One little sleep",
+      "t": 88.758,
+      "score": 0.8,
+      "cosine": 0.436,
+      "reason": "flame symbolism, dim setting, transformation",
+      "recipe": "4-photo",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "chain": [
+      0,
+      1,
+      14
+    ],
+    "city": [
+      2,
+      3
+    ],
+    "chains": [
+      4,
+      5
+    ],
+    "poison": [
+      6,
+      7,
+      8
+    ],
+    "quiet": [
+      9,
+      10,
+      16
+    ],
+    "fire": [
+      11
+    ],
+    "cry": [
+      12,
+      13
+    ],
+    "night": [
+      15,
+      20
+    ],
+    "dreams": [
+      17
+    ],
+    "lights": [
+      18,
+      19
+    ],
+    "alone": [
+      21
+    ],
+    "disappear": [
+      22
+    ],
+    "drink": [
+      23,
+      24
+    ],
+    "midnight": [
+      25
+    ],
+    "smoke": [
+      26
+    ],
+    "hit": [
+      27
+    ],
+    "glass": [
+      28,
+      29
+    ],
+    "running": [
+      30
+    ],
+    "flame": [
+      31
+    ]
+  }
 }

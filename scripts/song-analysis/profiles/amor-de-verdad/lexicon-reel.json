@@ -1,15 +1,306 @@
 {
   "v": 1,
   "id": "amor-de-verdad",
-  "generatedAt": "2026-09-25T04:01:20.157Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:11:30.642Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 42,
     "judged": 23,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 21,
+    "kept": 21
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/verdad/s0-4-cinema.webp",
+      "key": "lexicon/verdad/s0-4-cinema.webp",
+      "word": "verdad",
+      "line": "amor del de verdad No me des mil horas que se inventan",
+      "t": 95.28,
+      "score": 0.85,
+      "cosine": 0.316,
+      "reason": "reflects authenticity, vulnerability, urban grit",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/verdad/s0-5-photo.webp",
+      "key": "lexicon/verdad/s0-5-photo.webp",
+      "word": "verdad",
+      "line": "amor del de verdad No me des mil horas que se inventan",
+      "t": 95.28,
+      "score": 0.85,
+      "cosine": 0.316,
+      "reason": "reflects urban grit and unspoken truth",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sol/s0-2-word-neon.webp",
+      "key": "lexicon/sol/s0-2-word-neon.webp",
+      "word": "sol",
+      "line": "también cuando salga el sol No me",
+      "t": 38.56,
+      "score": 0.85,
+      "cosine": 0.313,
+      "reason": "captures urban nightlife, warmth, and authenticity",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poder/s0-2-cinema.webp",
+      "key": "lexicon/poder/s0-2-cinema.webp",
+      "word": "poder",
+      "line": "no quiero el poder quiero saber",
+      "t": 47.04,
+      "score": 0.8,
+      "cosine": 0.243,
+      "reason": "symbolizes vulnerability and resilience, aligns with bittersweet mood",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cine/s0-1-dream-collage.webp",
+      "key": "lexicon/cine/s0-1-dream-collage.webp",
+      "word": "cine",
+      "line": "Yo no quiero amor de cine quiero el que se queda",
+      "t": 71.98,
+      "score": 0.8,
+      "cosine": 0.055,
+      "reason": "Contrasts cinematic illusions with reality, fitting mood",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cine/s1-1-cinema.webp",
+      "key": "lexicon/cine/s1-1-cinema.webp",
+      "word": "cine",
+      "line": "Yo no quiero amor de cine quiero el que se queda",
+      "t": 71.98,
+      "score": 0.8,
+      "cosine": 0.043,
+      "reason": "reflects urban mood, cinematic theme, transient nature",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/agua/s0-2-cinema.webp",
+      "key": "lexicon/agua/s0-2-cinema.webp",
+      "word": "agua",
+      "line": "Eres lindo como el agua pero el agua se",
+      "t": 81.38,
+      "score": 0.8,
+      "cosine": -0.005,
+      "reason": "captures water's essence, urban backdrop, mystery aligns",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/agua/s1-1-photo.webp",
+      "key": "lexicon/agua/s1-1-photo.webp",
+      "word": "agua",
+      "line": "Eres lindo como el agua pero el agua se",
+      "t": 81.38,
+      "score": 0.8,
+      "cosine": -0.005,
+      "reason": "reflects urban decay and water's transient nature",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solo/s0-1-stained-glass.webp",
+      "key": "lexicon/solo/s0-1-stained-glass.webp",
+      "word": "solo",
+      "line": "es la receta no hay ninguna solo ven Yo",
+      "t": 66.94,
+      "score": 0.8,
+      "cosine": -0.027,
+      "reason": "symbolic of solitude and introspection",
+      "recipe": "1-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/verdad/s0-6-dream-collage.webp",
+      "key": "lexicon/verdad/s0-6-dream-collage.webp",
+      "word": "verdad",
+      "line": "amor del de verdad No me des mil horas que se inventan",
+      "t": 95.28,
+      "score": 0.7,
+      "cosine": 0.316,
+      "reason": "symbolizes truth's complexity, aligns with authenticity theme",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s0-1-film-still.webp",
+      "key": "lexicon/calle/s0-1-film-still.webp",
+      "word": "calle",
+      "line": "yo sentí lo mismo pero me callé no me hables a las tres",
+      "t": 28.56,
+      "score": 0.7,
+      "cosine": 0.295,
+      "reason": "Contrasts urban grit with idealized setting",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cine/s0-2-word-portrait.webp",
+      "key": "lexicon/cine/s0-2-word-portrait.webp",
+      "word": "cine",
+      "line": "Yo no quiero amor de cine quiero el que se queda",
+      "t": 71.98,
+      "score": 0.7,
+      "cosine": 0.043,
+      "reason": "Contrasts reality vs performance, captures mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solo/s1-2-film-still.webp",
+      "key": "lexicon/solo/s1-2-film-still.webp",
+      "word": "solo",
+      "line": "es la receta no hay ninguna solo ven Yo",
+      "t": 66.94,
+      "score": 0.7,
+      "cosine": -0.027,
+      "reason": "reflects isolation and warmth, aligns with authenticity theme",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiero/s0-1-papercut.webp",
+      "key": "lexicon/quiero/s0-1-papercut.webp",
+      "word": "quiero",
+      "line": "piel no quiero el poder quiero saber",
+      "t": 46.4,
+      "score": 0.6,
+      "cosine": 0.342,
+      "reason": "Contrasts with gritty urban reality",
+      "recipe": "1-papercut",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sol/s0-1-word-portrait.webp",
+      "key": "lexicon/sol/s0-1-word-portrait.webp",
+      "word": "sol",
+      "line": "también cuando salga el sol No me",
+      "t": 38.56,
+      "score": 0.6,
+      "cosine": 0.313,
+      "reason": "Contrasts urban grit with natural beauty, lacks city intimacy",
+      "recipe": "1-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sol/s1-1-dream-collage.webp",
+      "key": "lexicon/sol/s1-1-dream-collage.webp",
+      "word": "sol",
+      "line": "también cuando salga el sol No me",
+      "t": 38.56,
+      "score": 0.6,
+      "cosine": 0.313,
+      "reason": "Contrasts reality but fits cosmic symbolism",
+      "recipe": "1-dream-collage",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s0-2-concept-art.webp",
+      "key": "lexicon/calle/s0-2-concept-art.webp",
+      "word": "calle",
+      "line": "yo sentí lo mismo pero me callé no me hables a las tres",
+      "t": 28.56,
+      "score": 0.6,
+      "cosine": 0.295,
+      "reason": "Contrasts urban grit with idealized setting.",
+      "recipe": "2-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s0-5-pixel.webp",
+      "key": "lexicon/calle/s0-5-pixel.webp",
+      "word": "calle",
+      "line": "yo sentí lo mismo pero me callé no me hables a las tres",
+      "t": 28.56,
+      "score": 0.6,
+      "cosine": 0.295,
+      "reason": "Contrasts urban grit with idealized setting.",
+      "recipe": "5-pixel",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/solo/s0-2-anime.webp",
+      "key": "lexicon/solo/s0-2-anime.webp",
+      "word": "solo",
+      "line": "es la receta no hay ninguna solo ven Yo",
+      "t": 66.94,
+      "score": 0.6,
+      "cosine": 0.275,
+      "reason": "Contrasts with gritty urban reality",
+      "recipe": "2-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiero/s0-2-chalkboard.webp",
+      "key": "lexicon/quiero/s0-2-chalkboard.webp",
+      "word": "quiero",
+      "line": "piel no quiero el poder quiero saber",
+      "t": 46.4,
+      "score": 0.6,
+      "cosine": 0.025,
+      "reason": "Contrasts playful nostalgia with song's gritty authenticity",
+      "recipe": "2-chalkboard",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/agua/s0-1-anime.webp",
+      "key": "lexicon/agua/s0-1-anime.webp",
+      "word": "agua",
+      "line": "Eres lindo como el agua pero el agua se",
+      "t": 81.38,
+      "score": 0.6,
+      "cosine": -0.005,
+      "reason": "Contrasts gritty reality; too fantastical.",
+      "recipe": "1-anime",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "verdad": [
+      0,
+      1,
+      9
+    ],
+    "sol": [
+      2,
+      14,
+      15
+    ],
+    "poder": [
+      3
+    ],
+    "cine": [
+      4,
+      5,
+      11
+    ],
+    "agua": [
+      6,
+      7,
+      20
+    ],
+    "solo": [
+      8,
+      12,
+      18
+    ],
+    "calle": [
+      10,
+      16,
+      17
+    ],
+    "quiero": [
+      13,
+      19
+    ]
+  }
 }

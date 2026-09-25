@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire",
-  "generatedAt": "2026-09-25T04:03:49.764Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:20:52.149Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4081,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 59,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/daylight/s1-1-cinema.webp",
+      "key": "lexicon/daylight/s1-1-cinema.webp",
+      "word": "daylight",
+      "line": "room I can pray that you find daylight",
+      "t": 208.54,
+      "score": 0.9,
+      "cosine": 0.446,
+      "reason": "symbolizes hope and introspection",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s5-5-word-portrait.webp",
+      "key": "lexicon/quiet/s5-5-word-portrait.webp",
+      "word": "quiet",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start",
+      "t": 67.34,
+      "score": 0.9,
+      "cosine": 0.436,
+      "reason": "matches mood and theme",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s15-5-photo.webp",
+      "key": "lexicon/pain/s15-5-photo.webp",
+      "word": "pain",
+      "line": "I know you think the hurt means somebody stayed but pain is not proof that love was ever safe I used",
+      "t": 85.717,
+      "score": 0.9,
+      "cosine": 0.382,
+      "reason": "neon heart symbolizes emotional pain, fits song's mood",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s4-5-concept-art.webp",
+      "key": "lexicon/storm/s4-5-concept-art.webp",
+      "word": "storm",
+      "line": "time same storm and I almost answered",
+      "t": 7.175,
+      "score": 0.9,
+      "cosine": 0.381,
+      "reason": "storm imagery fits mood and theme",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-1-dream-collage.webp",
+      "key": "lexicon/cold/s14-1-dream-collage.webp",
+      "word": "cold",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
+      "score": 0.9,
+      "cosine": 0.376,
+      "reason": "reflects emotional isolation and decay",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s14-2-word-portrait.webp",
+      "key": "lexicon/cold/s14-2-word-portrait.webp",
+      "word": "cold",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking like",
+      "t": 67.93,
+      "score": 0.9,
+      "cosine": 0.376,
+      "reason": "reflects emotional isolation and coldness",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tired/s2-6-cinema.webp",
+      "key": "lexicon/tired/s2-6-cinema.webp",
+      "word": "tired",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking",
+      "t": 67.64,
+      "score": 0.9,
+      "cosine": 0.376,
+      "reason": "matches song's mood and themes",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-3-photo.webp",
+      "key": "lexicon/bruise/s0-3-photo.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "reflects injury and emotional pain",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s12-5-neon-night.webp",
+      "key": "lexicon/light/s12-5-neon-night.webp",
+      "word": "light",
+      "line": "I saw your name light up again same",
+      "t": 2,
+      "score": 0.85,
+      "cosine": 0.408,
+      "reason": "neon reflections and rain evoke emotional depth",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s16-4-anime.webp",
+      "key": "lexicon/pain/s16-4-anime.webp",
+      "word": "pain",
+      "line": "I know you think the hurt means somebody stayed but pain is not proof that love was ever safe I used",
+      "t": 85.717,
+      "score": 0.85,
+      "cosine": 0.382,
+      "reason": "Symbolizes emotional pain and resilience, aligns with song's themes.",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s4-4-film-still.webp",
+      "key": "lexicon/storm/s4-4-film-still.webp",
+      "word": "storm",
+      "line": "time same storm and I almost answered",
+      "t": 7.175,
+      "score": 0.85,
+      "cosine": 0.381,
+      "reason": "reflects storm metaphor, mood, and tension",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tired/s3-2-concept-art.webp",
+      "key": "lexicon/tired/s3-2-concept-art.webp",
+      "word": "tired",
+      "line": "words just to make the silence hurt I know you want the thunder when the quiet gets too loud but I wont be your reason to keep breaking down No no no I wont be your fire No no no I still care but Im tired You call me when the room gets cold when the posters on your wall start looking",
+      "t": 67.64,
+      "score": 0.85,
+      "cosine": 0.376,
+      "reason": "matches mood and themes of weariness and desolation",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s11-3-photo.webp",
+      "key": "lexicon/night/s11-3-photo.webp",
+      "word": "night",
+      "line": "What am I supposed to do when the night comes back Breathe till the morning",
+      "t": 169.828,
+      "score": 0.85,
+      "cosine": 0.373,
+      "reason": "matches mood and theme of solitude and contemplation",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s9-5-watercolor.webp",
+      "key": "lexicon/glass/s9-5-watercolor.webp",
+      "word": "glass",
+      "line": "Rain on glass guitar comes in slow",
+      "t": 24.265,
+      "score": 0.8,
+      "cosine": 0.477,
+      "reason": "Reflects mood and symbolism of fragility and clarity",
+      "recipe": "5-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-2-cinema.webp",
+      "key": "lexicon/bruise/s0-2-cinema.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.8,
+      "cosine": 0.452,
+      "reason": "matches emotional trauma and hidden pain",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bruise/s0-4-dream-collage.webp",
+      "key": "lexicon/bruise/s0-4-dream-collage.webp",
+      "word": "bruise",
+      "line": "this I keep your name in my phone like a bruise I can press black hoodie dead screen bad dreams",
+      "t": 135.009,
+      "score": 0.8,
+      "cosine": 0.452,
+      "reason": "symbolizes emotional pain and hope",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s1-2-word-portrait.webp",
+      "key": "lexicon/rain/s1-2-word-portrait.webp",
+      "word": "rain",
+      "line": "Rain on glass guitar",
+      "t": 22.895,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "fits mood but lacks guitar reference",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s1-3-word-neon.webp",
+      "key": "lexicon/rain/s1-3-word-neon.webp",
+      "word": "rain",
+      "line": "Rain on glass guitar",
+      "t": 22.895,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "matches mood and theme, urban isolation and cleansing",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s2-1-anime.webp",
+      "key": "lexicon/rain/s2-1-anime.webp",
+      "word": "rain",
+      "line": "Rain on glass guitar",
+      "t": 22.895,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "fits mood but lacks guitar reference",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/daylight/s2-1-concept-art.webp",
+      "key": "lexicon/daylight/s2-1-concept-art.webp",
+      "word": "daylight",
+      "line": "room I can pray that you find daylight",
+      "t": 208.54,
+      "score": 0.8,
+      "cosine": 0.446,
+      "reason": "symbolizes hope and new beginnings",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s14-5-anime.webp",
+      "key": "lexicon/fire/s14-5-anime.webp",
+      "word": "fire",
+      "line": "I wont be your fire just because you miss the",
+      "t": 52.48,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "symbolizes inner conflict and defiance",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s2-1-dark-surreal.webp",
+      "key": "lexicon/ghosts/s2-1-dark-surreal.webp",
+      "word": "ghosts",
+      "line": "when the posters on your wall start looking like ghosts You say you need a reason just to feel something real",
+      "t": 71.077,
+      "score": 0.8,
+      "cosine": 0.418,
+      "reason": "evokes mystery and haunting, aligns with emotional struggle",
+      "recipe": "1-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghosts/s3-5-film-still.webp",
+      "key": "lexicon/ghosts/s3-5-film-still.webp",
+      "word": "ghosts",
+      "line": "when the posters on your wall start looking like ghosts You say you need a reason just to feel something real",
+      "t": 71.077,
+      "score": 0.8,
+      "cosine": 0.418,
+      "reason": "evokes emotional absence and nostalgia",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s3-1-word-portrait.webp",
+      "key": "lexicon/voice/s3-1-word-portrait.webp",
+      "word": "voice",
+      "line": "blade I can remember your soft voice without entering the",
+      "t": 220.62,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "symbolic but shifts mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s4-1-noir.webp",
+      "key": "lexicon/voice/s4-1-noir.webp",
+      "word": "voice",
+      "line": "blade I can remember your soft voice without entering the",
+      "t": 220.62,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects isolation and contemplation, aligns with mood",
+      "recipe": "1-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s18-3-neon-night.webp",
+      "key": "lexicon/light/s18-3-neon-night.webp",
+      "word": "light",
+      "line": "I saw your name light up again same",
+      "t": 2,
+      "score": 0.8,
+      "cosine": 0.408,
+      "reason": "neon lights and rain evoke bittersweet hope and reflection",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-2-anime.webp",
+      "key": "lexicon/light/s25-2-anime.webp",
+      "word": "light",
+      "line": "I saw your name light up again same",
+      "t": 2,
+      "score": 0.8,
+      "cosine": 0.408,
+      "reason": "Reflects mood and themes but lacks direct connection to lyric",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s9-3-cinema.webp",
+      "key": "lexicon/smoke/s9-3-cinema.webp",
+      "word": "smoke",
+      "line": "safe I used to throw the match then cry about the smoke I used to say the things that cut into your throat",
+      "t": 90.581,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "symbolizes transient pain and decay",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s9-4-photo.webp",
+      "key": "lexicon/smoke/s9-4-photo.webp",
+      "word": "smoke",
+      "line": "safe I used to throw the match then cry about the smoke I used to say the things that cut into your throat",
+      "t": 90.581,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "symbolizes transient emotions, uncertainty",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s9-5-dream-collage.webp",
+      "key": "lexicon/smoke/s9-5-dream-collage.webp",
+      "word": "smoke",
+      "line": "safe I used to throw the match then cry about the smoke I used to say the things that cut into your throat",
+      "t": 90.581,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "symbolizes emotional pain and transience",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s3-1-dream-collage.webp",
+      "key": "lexicon/hands/s3-1-dream-collage.webp",
+      "word": "hands",
+      "line": "cut into your throat But tonight Im holding back with both hands on the wire If I love you at all I cant",
+      "t": 95.492,
+      "score": 0.8,
+      "cosine": 0.4,
+      "reason": "symbolizes struggle and reaching for hope",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s3-4-dark-surreal.webp",
+      "key": "lexicon/hands/s3-4-dark-surreal.webp",
+      "word": "hands",
+      "line": "cut into your throat But tonight Im holding back with both hands on the wire If I love you at all I cant",
+      "t": 95.492,
+      "score": 0.8,
+      "cosine": 0.4,
+      "reason": "reflects mood and theme, but less direct connection",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "daylight": [
+      0,
+      19
+    ],
+    "quiet": [
+      1
+    ],
+    "pain": [
+      2,
+      9
+    ],
+    "storm": [
+      3,
+      10
+    ],
+    "cold": [
+      4,
+      5
+    ],
+    "tired": [
+      6,
+      11
+    ],
+    "bruise": [
+      7,
+      14,
+      15
+    ],
+    "light": [
+      8,
+      25,
+      26
+    ],
+    "night": [
+      12
+    ],
+    "glass": [
+      13
+    ],
+    "rain": [
+      16,
+      17,
+      18
+    ],
+    "fire": [
+      20
+    ],
+    "ghosts": [
+      21,
+      22
+    ],
+    "voice": [
+      23,
+      24
+    ],
+    "smoke": [
+      27,
+      28,
+      29
+    ],
+    "hands": [
+      30,
+      31
+    ]
+  }
 }

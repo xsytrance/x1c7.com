@@ -1,15 +1,452 @@
 {
   "v": 1,
   "id": "mi-gente",
-  "generatedAt": "2026-09-25T04:04:37.931Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:25:21.933Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 127,
     "judged": 47,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 31,
+    "kept": 31
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-2.webp",
+      "key": "lexicon/barrio/s0-2.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 0.9,
+      "cosine": 0.288,
+      "reason": "matches urban nightlife and community spirit",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lealtad/s0-2-film-still.webp",
+      "key": "lexicon/lealtad/s0-2-film-still.webp",
+      "word": "lealtad",
+      "line": "se levanta la mesa se multiplica No me hables de lealtad si no estabas en el frío Cuando faltaba todo y",
+      "t": 51.943,
+      "score": 0.9,
+      "cosine": 0.267,
+      "reason": "fits theme of unity and resilience",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/enciende/s0-1-neon-sign.webp",
+      "key": "lexicon/enciende/s0-1-neon-sign.webp",
+      "word": "enciende",
+      "line": "se siente Si llego con los míos la calle se enciende Mi gente mi gente mi gente mi",
+      "t": 19.54,
+      "score": 0.9,
+      "cosine": 0.084,
+      "reason": "matches urban nightlife, electrifying mood",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-2.webp",
+      "key": "lexicon/vibra/s0-2.webp",
+      "word": "vibra",
+      "line": "mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi gente mi gente mi gente Llegué",
+      "t": 28.712,
+      "score": 0.85,
+      "cosine": 0.024,
+      "reason": "captures urban nightlife energy",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-3-neon-night.webp",
+      "key": "lexicon/fuego/s4-3-neon-night.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "fits mood but lacks barrio celebration",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-4-dream-collage.webp",
+      "key": "lexicon/fuego/s4-4-dream-collage.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "fits themes but surreal imagery diverges",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s4-5-word-portrait.webp",
+      "key": "lexicon/fuego/s4-5-word-portrait.webp",
+      "word": "fuego",
+      "line": "aunque no estén presentes Los que caminan con fuego en la frente Los que son familia aunque no sean parientes",
+      "t": 136.359,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "flames match fire metaphor, gears add industrial twist",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s2-1-dream-collage.webp",
+      "key": "lexicon/sangre/s2-1-dream-collage.webp",
+      "word": "sangre",
+      "line": "mi gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se",
+      "t": 26.262,
+      "score": 0.8,
+      "cosine": 0.339,
+      "reason": "evokes life force and connection",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s2-2-word-portrait.webp",
+      "key": "lexicon/sangre/s2-2-word-portrait.webp",
+      "word": "sangre",
+      "line": "mi gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se",
+      "t": 26.262,
+      "score": 0.8,
+      "cosine": 0.339,
+      "reason": "symbolizes blood and unity",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lealtad/s1-1-photo.webp",
+      "key": "lexicon/lealtad/s1-1-photo.webp",
+      "word": "lealtad",
+      "line": "se levanta la mesa se multiplica No me hables de lealtad si no estabas en el frío Cuando faltaba todo y",
+      "t": 51.943,
+      "score": 0.8,
+      "cosine": 0.267,
+      "reason": "symbolizes loyalty and resilience",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/calle/s2-5-film-still.webp",
+      "key": "lexicon/calle/s2-5-film-still.webp",
+      "word": "calle",
+      "line": "se siente se siente Si llego con los míos la calle se enciende Mi gente mi gente mi gente mi",
+      "t": 18.866,
+      "score": 0.8,
+      "cosine": 0.186,
+      "reason": "captures urban nightlife mood",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suerte/s1-1-cinema.webp",
+      "key": "lexicon/suerte/s1-1-cinema.webp",
+      "word": "suerte",
+      "line": "tu gente Los que estuvieron cuando no había suerte Los que se quedan cuando todo se pierde Los",
+      "t": 124.715,
+      "score": 0.8,
+      "cosine": 0.048,
+      "reason": "reflects struggle and hope in urban setting",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mundo/s1-2-neon-sign.webp",
+      "key": "lexicon/mundo/s1-2-neon-sign.webp",
+      "word": "mundo",
+      "line": "Mi gente Mi gente mi gente mi gente mi gente To el mundo conmigo se siente se siente Si llego con los míos la",
+      "t": 15.337,
+      "score": 0.8,
+      "cosine": 0.033,
+      "reason": "neon, urban, vibrant",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s0-1-neon-sign.webp",
+      "key": "lexicon/gente/s0-1-neon-sign.webp",
+      "word": "gente",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "score": 0.8,
+      "cosine": 0.033,
+      "reason": "captures urban nightlife and duality",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vibra/s0-1.webp",
+      "key": "lexicon/vibra/s0-1.webp",
+      "word": "vibra",
+      "line": "mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi gente mi gente mi gente Llegué",
+      "t": 28.712,
+      "score": 0.8,
+      "cosine": 0.024,
+      "reason": "fits urban energy, surreal vibe, but lacks Latin American context",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-1.webp",
+      "key": "lexicon/cicatrices/s0-1.webp",
+      "word": "cicatrices",
+      "line": "mi gente mi gente No somos perfectos pero somos reales Cicatrices brillando como medallas callejeras Hablamos",
+      "t": 93.043,
+      "score": 0.8,
+      "cosine": 0.023,
+      "reason": "symbolizes resilience and scars as medals",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tengo/s0-1-neon-sign.webp",
+      "key": "lexicon/tengo/s0-1-neon-sign.webp",
+      "word": "tengo",
+      "line": "Hasta los sueños que no nos pudieron quitar Tengo dominicanos boricuas en la fila Mexicanos",
+      "t": 41.436,
+      "score": 0.8,
+      "cosine": 0.02,
+      "reason": "captures urban nightlife, vibrant energy",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extiende/s0-1-oil-light.webp",
+      "key": "lexicon/extiende/s0-1-oil-light.webp",
+      "word": "extiende",
+      "line": "me entiende Del barrio pal mundo la vibra se extiende Mi gente mi gente mi gente mi gente Llegué con la",
+      "t": 29.35,
+      "score": 0.8,
+      "cosine": 0.009,
+      "reason": "cosmic rebirth aligns with transformative energy",
+      "recipe": "1-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-1.webp",
+      "key": "lexicon/barrio/s0-1.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 0.7,
+      "cosine": 0.288,
+      "reason": "Asian elements mismatch Latin theme",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/barrio/s0-6-film-still.webp",
+      "key": "lexicon/barrio/s0-6-film-still.webp",
+      "word": "barrio",
+      "line": "gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se extiende Mi gente mi",
+      "t": 27.481,
+      "score": 0.7,
+      "cosine": 0.288,
+      "reason": "Lacks nighttime energy, but captures barrio essence",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lealtad/s0-1-word-portrait.webp",
+      "key": "lexicon/lealtad/s0-1-word-portrait.webp",
+      "word": "lealtad",
+      "line": "se levanta la mesa se multiplica No me hables de lealtad si no estabas en el frío Cuando faltaba todo y",
+      "t": 51.943,
+      "score": 0.7,
+      "cosine": 0.267,
+      "reason": "image lacks street vibe, too serene for theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cicatrices/s0-2.webp",
+      "key": "lexicon/cicatrices/s0-2.webp",
+      "word": "cicatrices",
+      "line": "mi gente mi gente No somos perfectos pero somos reales Cicatrices brillando como medallas callejeras Hablamos",
+      "t": 93.043,
+      "score": 0.7,
+      "cosine": 0.023,
+      "reason": "reflects resilience but lacks street unity",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/siente/s0-1-stickers.webp",
+      "key": "lexicon/siente/s0-1-stickers.webp",
+      "word": "siente",
+      "line": "Mi gente mi gente mi gente mi gente To el mundo conmigo se siente se siente Si llego con los míos la calle se",
+      "t": 16.428,
+      "score": 0.7,
+      "cosine": 0.02,
+      "reason": "image lacks street unity vibe",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/nunca/s0-1-word-neon.webp",
+      "key": "lexicon/nunca/s0-1-word-neon.webp",
+      "word": "nunca",
+      "line": "prende la calle Mi gente Quién nunca se vende Mi gente Mi",
+      "t": 68.72,
+      "score": 0.6,
+      "cosine": 0.261,
+      "reason": "Contrasts song's energetic mood",
+      "recipe": "1-word-neon",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/extiende/s0-2-film-still.webp",
+      "key": "lexicon/extiende/s0-2-film-still.webp",
+      "word": "extiende",
+      "line": "me entiende Del barrio pal mundo la vibra se extiende Mi gente mi gente mi gente mi gente Llegué con la",
+      "t": 29.35,
+      "score": 0.6,
+      "cosine": 0.072,
+      "reason": "tire lens symbolizes unity and transformation",
+      "recipe": "2-film-still",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/suerte/s0-2-neon-sign.webp",
+      "key": "lexicon/suerte/s0-2-neon-sign.webp",
+      "word": "suerte",
+      "line": "tu gente Los que estuvieron cuando no había suerte Los que se quedan cuando todo se pierde Los",
+      "t": 124.715,
+      "score": 0.6,
+      "cosine": 0.048,
+      "reason": "neon glow fits nightlife, mystery contrasts song's unity",
+      "recipe": "2-neon-sign",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mundo/s0-1-papercut.webp",
+      "key": "lexicon/mundo/s0-1-papercut.webp",
+      "word": "mundo",
+      "line": "Mi gente Mi gente mi gente mi gente mi gente To el mundo conmigo se siente se siente Si llego con los míos la",
+      "t": 15.337,
+      "score": 0.6,
+      "cosine": 0.033,
+      "reason": "Contrasts song's urban, aggressive mood",
+      "recipe": "1-papercut",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gente/s0-2-anime.webp",
+      "key": "lexicon/gente/s0-2-anime.webp",
+      "word": "gente",
+      "line": "Yeah Mi gente Desde el",
+      "t": 2.263,
+      "score": 0.6,
+      "cosine": 0.033,
+      "reason": "Contrasts with song's vibrant, nighttime energy",
+      "recipe": "2-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/siente/s0-2-neon-sign.webp",
+      "key": "lexicon/siente/s0-2-neon-sign.webp",
+      "word": "siente",
+      "line": "Mi gente mi gente mi gente mi gente To el mundo conmigo se siente se siente Si llego con los míos la calle se",
+      "t": 16.428,
+      "score": 0.6,
+      "cosine": 0.02,
+      "reason": "Contrasts mood but fits urban night setting",
+      "recipe": "2-neon-sign",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/religion/s1-2-neon-sign.webp",
+      "key": "lexicon/religion/s1-2-neon-sign.webp",
+      "word": "religion",
+      "line": "es conexión Mi gente en el pecho como religión Desde Queens hasta Cali de PR hasta DR",
+      "t": 109.482,
+      "score": 0.6,
+      "cosine": 0.02,
+      "reason": "Celestial guidance fits spiritual theme, but lacks street unity.",
+      "recipe": "2-neon-sign",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sangre/s0-1.webp",
+      "key": "lexicon/sangre/s0-1.webp",
+      "word": "sangre",
+      "line": "mi gente mi gente No cambio a mi coro mi sangre me entiende Del barrio pal mundo la vibra se",
+      "t": 26.262,
+      "score": 0.6,
+      "cosine": 0.005,
+      "reason": "Contrasts mood, aligns with 'sangre' symbolically",
+      "recipe": "1",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "barrio": [
+      0,
+      18,
+      19
+    ],
+    "lealtad": [
+      1,
+      9,
+      20
+    ],
+    "enciende": [
+      2
+    ],
+    "vibra": [
+      3,
+      14
+    ],
+    "fuego": [
+      4,
+      5,
+      6
+    ],
+    "sangre": [
+      7,
+      8,
+      30
+    ],
+    "calle": [
+      10
+    ],
+    "suerte": [
+      11,
+      25
+    ],
+    "mundo": [
+      12,
+      26
+    ],
+    "gente": [
+      13,
+      27
+    ],
+    "cicatrices": [
+      15,
+      21
+    ],
+    "tengo": [
+      16
+    ],
+    "extiende": [
+      17,
+      24
+    ],
+    "siente": [
+      22,
+      28
+    ],
+    "nunca": [
+      23
+    ],
+    "religion": [
+      29
+    ]
+  }
 }

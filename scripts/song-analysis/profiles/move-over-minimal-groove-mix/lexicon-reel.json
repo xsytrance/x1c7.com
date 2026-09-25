@@ -1,15 +1,316 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-09-25T04:04:42.107Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:25:51.926Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1215,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 21,
+    "kept": 21
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/groove/s0-1-word-portrait.webp",
+      "key": "lexicon/groove/s0-1-word-portrait.webp",
+      "word": "groove",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.476,
+      "score": 0.9,
+      "cosine": 0.437,
+      "reason": "fits retro club aesthetic, spotlight and handwritten text enhance mood",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/groove/s1-2-stickers.webp",
+      "key": "lexicon/groove/s1-2-stickers.webp",
+      "word": "groove",
+      "line": "Title Move Over Minimal Groove Mix Somebody said the",
+      "t": 0.476,
+      "score": 0.9,
+      "cosine": 0.437,
+      "reason": "matches retro club aesthetic and energetic mood",
+      "recipe": "2-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s6-6-word-neon.webp",
+      "key": "lexicon/heat/s6-6-word-neon.webp",
+      "word": "heat",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "score": 0.9,
+      "cosine": 0.34,
+      "reason": "captures urban nightlife intensity",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s9-6-word-neon.webp",
+      "key": "lexicon/bass/s9-6-word-neon.webp",
+      "word": "bass",
+      "line": "steps Deep bass mmm yeah right",
+      "t": 88.445,
+      "score": 0.8,
+      "cosine": 0.57,
+      "reason": "captures urban nightlife mood",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ride/s6-2-neon-sign.webp",
+      "key": "lexicon/ride/s6-2-neon-sign.webp",
+      "word": "ride",
+      "line": "by the drip Yeah Let it ride Bassline",
+      "t": 27.78,
+      "score": 0.8,
+      "cosine": 0.447,
+      "reason": "fits retro club aesthetic, energy, but not dance floor dominance",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s3-4-neon-sign.webp",
+      "key": "lexicon/different/s3-4-neon-sign.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 0.8,
+      "cosine": 0.329,
+      "reason": "captures urban night energy, aligns with retro aesthetic",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hit/s12-2-word-portrait.webp",
+      "key": "lexicon/hit/s12-2-word-portrait.webp",
+      "word": "hit",
+      "line": "Dont talk too much Just let that bassline hit This summer different You",
+      "t": 21.316,
+      "score": 0.8,
+      "cosine": 0.271,
+      "reason": "matches minimalist aesthetic and impact theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/listen/s1-1-film-still.webp",
+      "key": "lexicon/listen/s1-1-film-still.webp",
+      "word": "listen",
+      "line": "talking shh just listen Slow steps low lights so smooth",
+      "t": 35.968,
+      "score": 0.8,
+      "cosine": 0.097,
+      "reason": "fits mood and theme of attention",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
+      "key": "lexicon/different/s8-1-word-neon.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 0.7,
+      "cosine": 0.469,
+      "reason": "captures urban nightlife, but lacks dance floor energy",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s7-4-anime.webp",
+      "key": "lexicon/bassline/s7-4-anime.webp",
+      "word": "bassline",
+      "line": "Dont talk too much Just let that bassline hit This summer different",
+      "t": 20.887,
+      "score": 0.7,
+      "cosine": 0.458,
+      "reason": "cosmic elements fit energetic mood, but diverge from retro club setting",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s6-3-pixel.webp",
+      "key": "lexicon/summer/s6-3-pixel.webp",
+      "word": "summer",
+      "line": "heat in the room Move over Summer came through smooth Dont talk too much",
+      "t": 16.452,
+      "score": 0.7,
+      "cosine": 0.428,
+      "reason": "tropical summer but lacks club vibe",
+      "recipe": "3-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s5-4-film-still.webp",
+      "key": "lexicon/drip/s5-4-film-still.webp",
+      "word": "drip",
+      "line": "different You can tell by the drip Yeah Let it ride",
+      "t": 25.565,
+      "score": 0.7,
+      "cosine": 0.351,
+      "reason": "neon lights and retro fit mood",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s4-6-analog.webp",
+      "key": "lexicon/heat/s4-6-analog.webp",
+      "word": "heat",
+      "line": "had a king Ha Move over Move over We got heat in the room Move over Summer",
+      "t": 13.55,
+      "score": 0.7,
+      "cosine": 0.318,
+      "reason": "heat and steamy setting fit mood, but lacks dance floor context",
+      "recipe": "6-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s11-2-concept-art.webp",
+      "key": "lexicon/breathe/s11-2-concept-art.webp",
+      "word": "breathe",
+      "line": "Let it breathe Move over",
+      "t": 46.392,
+      "score": 0.7,
+      "cosine": 0.313,
+      "reason": "fits mood but lacks dance floor context",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bassline/s6-5-photo.webp",
+      "key": "lexicon/bassline/s6-5-photo.webp",
+      "word": "bassline",
+      "line": "Dont talk too much Just let that bassline hit This summer different",
+      "t": 20.887,
+      "score": 0.6,
+      "cosine": 0.458,
+      "reason": "studio setting doesn't match dance floor energy",
+      "recipe": "5-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ride/s6-1-stickers.webp",
+      "key": "lexicon/ride/s6-1-stickers.webp",
+      "word": "ride",
+      "line": "by the drip Yeah Let it ride Bassline",
+      "t": 27.78,
+      "score": 0.6,
+      "cosine": 0.447,
+      "reason": "image evokes energy but lacks dance floor context",
+      "recipe": "1-stickers",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s6-4-stickers.webp",
+      "key": "lexicon/summer/s6-4-stickers.webp",
+      "word": "summer",
+      "line": "heat in the room Move over Summer came through smooth Dont talk too much",
+      "t": 16.452,
+      "score": 0.6,
+      "cosine": 0.428,
+      "reason": "tropical but lacks club vibe",
+      "recipe": "4-stickers",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s2-3-photo.webp",
+      "key": "lexicon/drip/s2-3-photo.webp",
+      "word": "drip",
+      "line": "different You can tell by the drip Yeah Let it ride",
+      "t": 25.565,
+      "score": 0.6,
+      "cosine": 0.409,
+      "reason": "Contrasts retro club aesthetic, aligns with intensity but not style",
+      "recipe": "3-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/king/s1-3-word-portrait.webp",
+      "key": "lexicon/king/s1-3-word-portrait.webp",
+      "word": "king",
+      "line": "already had a king Ha Move over Move over We got heat in the room",
+      "t": 12.398,
+      "score": 0.6,
+      "cosine": 0.388,
+      "reason": "Contrasts song's mood",
+      "recipe": "3-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s19-3-film-still.webp",
+      "key": "lexicon/lights/s19-3-film-still.webp",
+      "word": "lights",
+      "line": "just listen Slow steps low lights so smooth Keep it simple Just move",
+      "t": 37.802,
+      "score": 0.6,
+      "cosine": 0.377,
+      "reason": "neon lights fit, but theme mismatch",
+      "recipe": "3-film-still",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s6-3-word-neon.webp",
+      "key": "lexicon/different/s6-3-word-neon.webp",
+      "word": "different",
+      "line": "Just let that bassline hit This summer different You can tell by the drip",
+      "t": 22.767,
+      "score": 0.6,
+      "cosine": 0.329,
+      "reason": "nighttime urban fit but lacks summer energy",
+      "recipe": "3-word-neon",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "groove": [
+      0,
+      1
+    ],
+    "heat": [
+      2,
+      12
+    ],
+    "bass": [
+      3
+    ],
+    "ride": [
+      4,
+      15
+    ],
+    "different": [
+      5,
+      8,
+      20
+    ],
+    "hit": [
+      6
+    ],
+    "listen": [
+      7
+    ],
+    "bassline": [
+      9,
+      14
+    ],
+    "summer": [
+      10,
+      16
+    ],
+    "drip": [
+      11,
+      17
+    ],
+    "breathe": [
+      13
+    ],
+    "king": [
+      18
+    ],
+    "lights": [
+      19
+    ]
+  }
 }

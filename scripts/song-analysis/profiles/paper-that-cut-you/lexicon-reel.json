@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "paper-that-cut-you",
-  "generatedAt": "2026-09-25T04:05:28.969Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:28:51.625Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2247,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 56,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-1.webp",
+      "key": "lexicon/night/s0-1.webp",
+      "word": "night",
+      "line": "You asked why it feels like night today I was the one who dimmed the room You asked what wasnt",
+      "t": 1.034,
+      "score": 0.9,
+      "cosine": 0.481,
+      "reason": "matches mood and themes",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s0-5-cinema.webp",
+      "key": "lexicon/night/s0-5-cinema.webp",
+      "word": "night",
+      "line": "You asked why it feels like night today I was the one who dimmed the room You asked what wasnt",
+      "t": 1.034,
+      "score": 0.9,
+      "cosine": 0.481,
+      "reason": "Eerie, isolated setting fits paranoid mood",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s0-2-manga-line.webp",
+      "key": "lexicon/quiet/s0-2-manga-line.webp",
+      "word": "quiet",
+      "line": "like Because I learned how to speak low In the back of every thought Where the quiet things grow Im the face that you hold inside I wake up when your",
+      "t": 54.045,
+      "score": 0.9,
+      "cosine": 0.391,
+      "reason": "Reflects introspection and hidden emotions.",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s8-3-word-portrait.webp",
+      "key": "lexicon/pressure/s8-3-word-portrait.webp",
+      "word": "pressure",
+      "line": "didnt know what stressed you first I fed the pressure in your head You know what the voice feels",
+      "t": 47.996,
+      "score": 0.9,
+      "cosine": 0.38,
+      "reason": "matches industrial anxiety and mental stress",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s9-6-film-still.webp",
+      "key": "lexicon/pressure/s9-6-film-still.webp",
+      "word": "pressure",
+      "line": "didnt know what stressed you first I fed the pressure in your head You know what the voice feels",
+      "t": 47.996,
+      "score": 0.9,
+      "cosine": 0.38,
+      "reason": "reflects internal pressure and anxiety",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crack/s2-1-manga-line.webp",
+      "key": "lexicon/crack/s2-1-manga-line.webp",
+      "word": "crack",
+      "line": "balance goes I see everything Every crack you hide within When its time to sink",
+      "t": 62.4,
+      "score": 0.9,
+      "cosine": 0.38,
+      "reason": "represents mental distortion and urban decay",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hide/s3-2-film-still.webp",
+      "key": "lexicon/hide/s3-2-film-still.webp",
+      "word": "hide",
+      "line": "see everything Every crack you hide within When its time to sink or swim",
+      "t": 63.228,
+      "score": 0.9,
+      "cosine": 0.365,
+      "reason": "Reflects vulnerability and defiance, aligns with internal struggle.",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoid/s1-2-dark-surreal.webp",
+      "key": "lexicon/paranoid/s1-2-dark-surreal.webp",
+      "word": "paranoid",
+      "line": "them in your mind I know why youre paranoid Im the shadow at your back I know why your",
+      "t": 82.536,
+      "score": 0.9,
+      "cosine": 0.349,
+      "reason": "fits paranoid mood, surveillance theme",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-4-dream-collage.webp",
+      "key": "lexicon/voice/s14-4-dream-collage.webp",
+      "word": "voice",
+      "line": "fed the pressure in your head You know what the voice feels like Because I learned how to speak low In the back of every",
+      "t": 50.457,
+      "score": 0.9,
+      "cosine": 0.346,
+      "reason": "Visually captures internal turmoil and raw power",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fear/s2-1-anime.webp",
+      "key": "lexicon/fear/s2-1-anime.webp",
+      "word": "fear",
+      "line": "asked what felt wrong inside you I was teaching fear to lie You asked why your chest",
+      "t": 38.452,
+      "score": 0.9,
+      "cosine": 0.33,
+      "reason": "matches paranoid mood, mechanical dread",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/truth/s6-2-word-portrait.webp",
+      "key": "lexicon/truth/s6-2-word-portrait.webp",
+      "word": "truth",
+      "line": "a face inside A watcher in the wires A witness when the truth gets bent A laugh beneath the",
+      "t": 131.924,
+      "score": 0.9,
+      "cosine": 0.327,
+      "reason": "Symbolic of internal struggle and mental distortion.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-5-word-portrait.webp",
+      "key": "lexicon/wrong/s5-5-word-portrait.webp",
+      "word": "wrong",
+      "line": "You asked what felt wrong inside you I was teaching fear to lie",
+      "t": 36.699,
+      "score": 0.9,
+      "cosine": 0.322,
+      "reason": "embodies internal paranoia and distortion",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s0-1-word-portrait.webp",
+      "key": "lexicon/eyes/s0-1-word-portrait.webp",
+      "word": "eyes",
+      "line": "things grow Im the face that you hold inside I wake up when your eyes close I watch every little lie And laugh when your balance goes I",
+      "t": 57.086,
+      "score": 0.85,
+      "cosine": 0.461,
+      "reason": "reflects paranoia, urban decay, and emotional chaos",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/head/s1-1-dream-collage.webp",
+      "key": "lexicon/head/s1-1-dream-collage.webp",
+      "word": "head",
+      "line": "first I fed the pressure in your head You know what the voice feels like Because I learned how to speak",
+      "t": 49.227,
+      "score": 0.85,
+      "cosine": 0.357,
+      "reason": "Reflects internal chaos and anxiety, aligns with themes but less direct psychological warf",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s0-3-neon-night.webp",
+      "key": "lexicon/dark/s0-3-neon-night.webp",
+      "word": "dark",
+      "line": "there before the spark You asked why you cant stand it I was whispering in the dark They act like you dont measure up So I sharpen every doubt I",
+      "t": 122.358,
+      "score": 0.85,
+      "cosine": 0.349,
+      "reason": "fits mood and theme, but lacks direct connection to paranoia",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoid/s0-2-pixel.webp",
+      "key": "lexicon/paranoid/s0-2-pixel.webp",
+      "word": "paranoid",
+      "line": "them in your mind I know why youre paranoid Im the shadow at your back I know why your",
+      "t": 82.536,
+      "score": 0.85,
+      "cosine": 0.349,
+      "reason": "reflects isolation and surveillance, aligns with paranoid mood",
+      "recipe": "2-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fear/s2-2-cinema.webp",
+      "key": "lexicon/fear/s2-2-cinema.webp",
+      "word": "fear",
+      "line": "asked what felt wrong inside you I was teaching fear to lie You asked why your chest",
+      "t": 38.452,
+      "score": 0.85,
+      "cosine": 0.33,
+      "reason": "captures inner turmoil and fear",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-1-dream-collage.webp",
+      "key": "lexicon/light/s23-1-dream-collage.webp",
+      "word": "light",
+      "line": "down Im the reason light feels guilty When the sun goes down I",
+      "t": 197.2,
+      "score": 0.8,
+      "cosine": 0.512,
+      "reason": "reflects isolation and introspection",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s16-6-neon-night.webp",
+      "key": "lexicon/eyes/s16-6-neon-night.webp",
+      "word": "eyes",
+      "line": "things grow Im the face that you hold inside I wake up when your eyes close I watch every little lie And laugh when your balance goes I",
+      "t": 57.086,
+      "score": 0.8,
+      "cosine": 0.461,
+      "reason": "fits paranoid mood, chaotic urban setting",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lie/s5-2-word-portrait.webp",
+      "key": "lexicon/lie/s5-2-word-portrait.webp",
+      "word": "lie",
+      "line": "felt wrong inside you I was teaching fear to lie You asked why your chest stayed tightened I kept",
+      "t": 39.403,
+      "score": 0.8,
+      "cosine": 0.409,
+      "reason": "aligns with themes of deception and hidden truths",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crack/s2-2-cinema.webp",
+      "key": "lexicon/crack/s2-2-cinema.webp",
+      "word": "crack",
+      "line": "balance goes I see everything Every crack you hide within When its time to sink",
+      "t": 62.4,
+      "score": 0.8,
+      "cosine": 0.38,
+      "reason": "represents decay and hidden flaws",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s3-4-anime.webp",
+      "key": "lexicon/sun/s3-4-anime.webp",
+      "word": "sun",
+      "line": "skin The cut is right beneath your skin When the sun",
+      "t": 186.755,
+      "score": 0.8,
+      "cosine": 0.374,
+      "reason": "Contrasts paranoia but fits mood's desolation and hope.",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-4-photo.webp",
+      "key": "lexicon/fire/s17-4-photo.webp",
+      "word": "fire",
+      "line": "bent A laugh beneath the fire So when they sink or swim",
+      "t": 135.523,
+      "score": 0.8,
+      "cosine": 0.36,
+      "reason": "matches mood, transient warmth in harsh reality",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s17-5-dream-collage.webp",
+      "key": "lexicon/fire/s17-5-dream-collage.webp",
+      "word": "fire",
+      "line": "bent A laugh beneath the fire So when they sink or swim",
+      "t": 135.523,
+      "score": 0.8,
+      "cosine": 0.36,
+      "reason": "matches mood, symbolism, but imagery is intense",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/head/s1-2-dream-collage.webp",
+      "key": "lexicon/head/s1-2-dream-collage.webp",
+      "word": "head",
+      "line": "first I fed the pressure in your head You know what the voice feels like Because I learned how to speak",
+      "t": 49.227,
+      "score": 0.8,
+      "cosine": 0.357,
+      "reason": "Reflects internal turmoil and surreal anxiety.",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mirror/s0-1-neon-sign.webp",
+      "key": "lexicon/mirror/s0-1-neon-sign.webp",
+      "word": "mirror",
+      "line": "the sun goes down I make the mirror sing back to",
+      "t": 210.86,
+      "score": 0.8,
+      "cosine": 0.352,
+      "reason": "reflects self-reflection and urban isolation",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s0-1-noir.webp",
+      "key": "lexicon/dark/s0-1-noir.webp",
+      "word": "dark",
+      "line": "there before the spark You asked why you cant stand it I was whispering in the dark They act like you dont measure up So I sharpen every doubt I",
+      "t": 122.358,
+      "score": 0.8,
+      "cosine": 0.349,
+      "reason": "fits mood but lacks sharpness",
+      "recipe": "1-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s0-2-photo.webp",
+      "key": "lexicon/dark/s0-2-photo.webp",
+      "word": "dark",
+      "line": "there before the spark You asked why you cant stand it I was whispering in the dark They act like you dont measure up So I sharpen every doubt I",
+      "t": 122.358,
+      "score": 0.8,
+      "cosine": 0.349,
+      "reason": "reflects internal turmoil and vulnerability",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/paranoid/s0-4-stained-glass.webp",
+      "key": "lexicon/paranoid/s0-4-stained-glass.webp",
+      "word": "paranoid",
+      "line": "them in your mind I know why youre paranoid Im the shadow at your back I know why your",
+      "t": 82.536,
+      "score": 0.8,
+      "cosine": 0.349,
+      "reason": "stained-glass symbolism, tension, dark mood",
+      "recipe": "4-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spin/s2-2-film-still.webp",
+      "key": "lexicon/spin/s2-2-film-still.webp",
+      "word": "spin",
+      "line": "You keep hearing storms Because I spin them",
+      "t": 76.765,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "symbolizes distortion and manipulation",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spin/s2-1-dark-surreal.webp",
+      "key": "lexicon/spin/s2-1-dark-surreal.webp",
+      "word": "spin",
+      "line": "You keep hearing storms Because I spin them",
+      "t": 76.765,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "cosmic spin aligns with mental distortion",
+      "recipe": "1-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/truth/s6-1-dream-collage.webp",
+      "key": "lexicon/truth/s6-1-dream-collage.webp",
+      "word": "truth",
+      "line": "a face inside A watcher in the wires A witness when the truth gets bent A laugh beneath the",
+      "t": 131.924,
+      "score": 0.8,
+      "cosine": 0.327,
+      "reason": "symbolizes hidden truth and fragmentation",
+      "recipe": "1-dream-collage",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "night": [
+      0,
+      1
+    ],
+    "quiet": [
+      2
+    ],
+    "pressure": [
+      3,
+      4
+    ],
+    "crack": [
+      5,
+      20
+    ],
+    "hide": [
+      6
+    ],
+    "paranoid": [
+      7,
+      15,
+      28
+    ],
+    "voice": [
+      8
+    ],
+    "fear": [
+      9,
+      16
+    ],
+    "truth": [
+      10,
+      31
+    ],
+    "wrong": [
+      11
+    ],
+    "eyes": [
+      12,
+      18
+    ],
+    "head": [
+      13,
+      24
+    ],
+    "dark": [
+      14,
+      26,
+      27
+    ],
+    "light": [
+      17
+    ],
+    "lie": [
+      19
+    ],
+    "sun": [
+      21
+    ],
+    "fire": [
+      22,
+      23
+    ],
+    "mirror": [
+      25
+    ],
+    "spin": [
+      29,
+      30
+    ]
+  }
 }

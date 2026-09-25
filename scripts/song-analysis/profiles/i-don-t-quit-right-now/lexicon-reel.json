@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "i-don-t-quit-right-now",
-  "generatedAt": "2026-09-25T04:03:09.018Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:19:32.166Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 3943,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 39,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s8-3-word-portrait.webp",
+      "key": "lexicon/pressure/s8-3-word-portrait.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.9,
+      "cosine": 0.471,
+      "reason": "captures tension and grit",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weight/s0-1-graphic-novel.webp",
+      "key": "lexicon/weight/s0-1-graphic-novel.webp",
+      "word": "weight",
+      "line": "Bench feel heavy good let it be Thats the same weight standing between me and me Two plates talking like",
+      "t": 72.412,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "fits gritty gym theme",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s9-6-film-still.webp",
+      "key": "lexicon/pressure/s9-6-film-still.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.85,
+      "cosine": 0.471,
+      "reason": "reflects internal struggle and pressure",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s1-2-word-portrait.webp",
+      "key": "lexicon/dangerous/s1-2-word-portrait.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.85,
+      "cosine": 0.359,
+      "reason": "aligns with mood and theme, but less gym-centric",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/voice/s14-4-dream-collage.webp",
+      "key": "lexicon/voice/s14-4-dream-collage.webp",
+      "word": "voice",
+      "line": "No speech no hype no coach in my ear Just that old weak voice that I came here to kill I dont feel ready thats",
+      "t": 18.135,
+      "score": 0.85,
+      "cosine": 0.355,
+      "reason": "fits mood and themes, abstractly represents internal struggle",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pressure/s9-1-anime.webp",
+      "key": "lexicon/pressure/s9-1-anime.webp",
+      "word": "pressure",
+      "line": "and the vision blur I dont care how bad that pressure hurt Another set another plate another war",
+      "t": 58.364,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "symbolizes struggle and determination",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/war/s9-2-anime.webp",
+      "key": "lexicon/war/s9-2-anime.webp",
+      "word": "war",
+      "line": "how bad that pressure hurt Another set another plate another war Another voice in my head I ignore",
+      "t": 60.767,
+      "score": 0.8,
+      "cosine": 0.429,
+      "reason": "symbolic eye and fire align with internal struggle",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s2-3-photo.webp",
+      "key": "lexicon/walk/s2-3-photo.webp",
+      "word": "walk",
+      "line": "I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights buzzing",
+      "t": 22.849,
+      "score": 0.8,
+      "cosine": 0.407,
+      "reason": "urban solitude aligns with solitary struggle",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s1-5-anime.webp",
+      "key": "lexicon/fire/s1-5-anime.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.8,
+      "cosine": 0.402,
+      "reason": "fire's intensity matches internal struggle",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s1-6-manga-line.webp",
+      "key": "lexicon/fire/s1-6-manga-line.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.8,
+      "cosine": 0.402,
+      "reason": "fire's raw energy fits song's grit",
+      "recipe": "6-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s4-4-anime.webp",
+      "key": "lexicon/sweat/s4-4-anime.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "aligns with gritty, urban struggle and exhaustion",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s1-5-film-still.webp",
+      "key": "lexicon/dangerous/s1-5-film-still.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.8,
+      "cosine": 0.359,
+      "reason": "matches mood and theme of danger and intensity",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s1-1-dream-collage.webp",
+      "key": "lexicon/dangerous/s1-1-dream-collage.webp",
+      "word": "dangerous",
+      "line": "in the dark Not trying to be perfect trying to be dangerous Trying to walk in like pressure",
+      "t": 206.46,
+      "score": 0.8,
+      "cosine": 0.359,
+      "reason": "symbolizes struggle and danger",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trying/s1-1-photo.webp",
+      "key": "lexicon/trying/s1-1-photo.webp",
+      "word": "trying",
+      "line": "Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous Trying",
+      "t": 204.649,
+      "score": 0.8,
+      "cosine": 0.358,
+      "reason": "reflects struggle and focus, aligns with theme",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s10-5-word-portrait.webp",
+      "key": "lexicon/heartbeat/s10-5-word-portrait.webp",
+      "word": "heartbeat",
+      "line": "pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur",
+      "t": 53.333,
+      "score": 0.7,
+      "cosine": 0.461,
+      "reason": "Cyberpunk elements mismatch song's gritty realism",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/war/s8-6-photo.webp",
+      "key": "lexicon/war/s8-6-photo.webp",
+      "word": "war",
+      "line": "how bad that pressure hurt Another set another plate another war Another voice in my head I ignore",
+      "t": 60.767,
+      "score": 0.7,
+      "cosine": 0.429,
+      "reason": "military imagery aligns with internal struggle",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weight/s0-2-anime.webp",
+      "key": "lexicon/weight/s0-2-anime.webp",
+      "word": "weight",
+      "line": "Bench feel heavy good let it be Thats the same weight standing between me and me Two plates talking like",
+      "t": 72.412,
+      "score": 0.7,
+      "cosine": 0.421,
+      "reason": "cosmic weight vs. gym struggle",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s4-5-cinema.webp",
+      "key": "lexicon/sweat/s4-5-cinema.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.7,
+      "cosine": 0.397,
+      "reason": "sweat theme, intensity, dedication",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/mirror/s3-5-photo.webp",
+      "key": "lexicon/mirror/s3-5-photo.webp",
+      "word": "mirror",
+      "line": "meals in the bag Macros boring but the mirror dont cap Casein late night water all day",
+      "t": 133.062,
+      "score": 0.7,
+      "cosine": 0.397,
+      "reason": "reflects introspection but lacks gym context",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s23-1-photo.webp",
+      "key": "lexicon/move/s23-1-photo.webp",
+      "word": "move",
+      "line": "hood up door slam Still half tired but I move like a grown man No speech no hype no coach in my",
+      "t": 13.944,
+      "score": 0.7,
+      "cosine": 0.387,
+      "reason": "captures discipline and movement",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s23-3-word-portrait.webp",
+      "key": "lexicon/move/s23-3-word-portrait.webp",
+      "word": "move",
+      "line": "hood up door slam Still half tired but I move like a grown man No speech no hype no coach in my",
+      "t": 13.944,
+      "score": 0.7,
+      "cosine": 0.387,
+      "reason": "Contrasts mood but aligns with themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trying/s1-2-dream-collage.webp",
+      "key": "lexicon/trying/s1-2-dream-collage.webp",
+      "word": "trying",
+      "line": "Code on the screen after reps in the dark Not trying to be perfect trying to be dangerous Trying",
+      "t": 204.649,
+      "score": 0.7,
+      "cosine": 0.358,
+      "reason": "Contrasts with gritty realism",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s17-5-photo.webp",
+      "key": "lexicon/stop/s17-5-photo.webp",
+      "word": "stop",
+      "line": "If I came this far I aint slowing down I dont stop I dont quit right now Bench",
+      "t": 66.907,
+      "score": 0.7,
+      "cosine": 0.354,
+      "reason": "Contrasts gym theme, fits stop gesture",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s11-3-anime.webp",
+      "key": "lexicon/heartbeat/s11-3-anime.webp",
+      "word": "heartbeat",
+      "line": "pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur",
+      "t": 53.333,
+      "score": 0.6,
+      "cosine": 0.461,
+      "reason": "Contrasts mood but aligns with themes of resilience",
+      "recipe": "3-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/war/s8-1-word-portrait.webp",
+      "key": "lexicon/war/s8-1-word-portrait.webp",
+      "word": "war",
+      "line": "how bad that pressure hurt Another set another plate another war Another voice in my head I ignore",
+      "t": 60.767,
+      "score": 0.6,
+      "cosine": 0.429,
+      "reason": "military war vs internal struggle",
+      "recipe": "1-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s1-2-concept-art.webp",
+      "key": "lexicon/lights/s1-2-concept-art.webp",
+      "word": "lights",
+      "line": "cold walk same joints feeling stiff Gym lights buzzing bag on the floor Im not in the mood",
+      "t": 25.38,
+      "score": 0.6,
+      "cosine": 0.429,
+      "reason": "symbolism aligns but setting doesn't",
+      "recipe": "2-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s9-4-cinema.webp",
+      "key": "lexicon/code/s9-4-cinema.webp",
+      "word": "code",
+      "line": "go Money right mind right body getting sharp Code on the screen after reps in the dark Not trying to be",
+      "t": 202.037,
+      "score": 0.6,
+      "cosine": 0.412,
+      "reason": "late-night work fits grit but not gym theme",
+      "recipe": "4-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s2-5-word-portrait.webp",
+      "key": "lexicon/walk/s2-5-word-portrait.webp",
+      "word": "walk",
+      "line": "I dont feel ready thats the point of it Same cold walk same joints feeling stiff Gym lights buzzing",
+      "t": 22.849,
+      "score": 0.6,
+      "cosine": 0.407,
+      "reason": "Contrasts gym setting, lacks grit",
+      "recipe": "5-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s0-2-word-portrait.webp",
+      "key": "lexicon/fire/s0-2-word-portrait.webp",
+      "word": "fire",
+      "line": "crushers burn planks make me shake Crunches got fire running under my waist Pushups after just to",
+      "t": 142.385,
+      "score": 0.6,
+      "cosine": 0.402,
+      "reason": "fire symbolizes passion but lacks gym context",
+      "recipe": "2-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sweat/s4-2-film-still.webp",
+      "key": "lexicon/sweat/s4-2-film-still.webp",
+      "word": "sweat",
+      "line": "up Till the lungs burn dry and the heartbeat jump Till the sweat drip down and the vision blur I dont care",
+      "t": 54.672,
+      "score": 0.6,
+      "cosine": 0.397,
+      "reason": "Contrasts mood and setting",
+      "recipe": "2-film-still",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s10-3-cinema.webp",
+      "key": "lexicon/burn/s10-3-cinema.webp",
+      "word": "burn",
+      "line": "I keep pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down",
+      "t": 52.57,
+      "score": 0.6,
+      "cosine": 0.366,
+      "reason": "fire imagery fits intensity but lacks gym context",
+      "recipe": "3-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s10-4-photo.webp",
+      "key": "lexicon/burn/s10-4-photo.webp",
+      "word": "burn",
+      "line": "I keep pushing till the arms lock up Till the lungs burn dry and the heartbeat jump Till the sweat drip down",
+      "t": 52.57,
+      "score": 0.6,
+      "cosine": 0.366,
+      "reason": "fire imagery diverges from gym setting",
+      "recipe": "4-photo",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "pressure": [
+      0,
+      2,
+      5
+    ],
+    "weight": [
+      1,
+      16
+    ],
+    "dangerous": [
+      3,
+      11,
+      12
+    ],
+    "voice": [
+      4
+    ],
+    "war": [
+      6,
+      15,
+      24
+    ],
+    "walk": [
+      7,
+      27
+    ],
+    "fire": [
+      8,
+      9,
+      28
+    ],
+    "sweat": [
+      10,
+      17,
+      29
+    ],
+    "trying": [
+      13,
+      21
+    ],
+    "heartbeat": [
+      14,
+      23
+    ],
+    "mirror": [
+      18
+    ],
+    "move": [
+      19,
+      20
+    ],
+    "stop": [
+      22
+    ],
+    "lights": [
+      25
+    ],
+    "code": [
+      26
+    ],
+    "burn": [
+      30,
+      31
+    ]
+  }
 }

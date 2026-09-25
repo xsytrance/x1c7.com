@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "honey-n-venom-rude-wine-riddim",
-  "generatedAt": "2026-09-25T04:02:54.822Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:19:00.322Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2918,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 42,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s0-4-concept-art.webp",
+      "key": "lexicon/venom/s0-4-concept-art.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 0.9,
+      "cosine": 0.676,
+      "reason": "Captures toxic allure and club setting",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s2-4-neon-night.webp",
+      "key": "lexicon/venom/s2-4-neon-night.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 0.9,
+      "cosine": 0.676,
+      "reason": "fits toxic love, club energy, sensory overload",
+      "recipe": "4-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s0-5-neon-sign.webp",
+      "key": "lexicon/heart/s0-5-neon-sign.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 0.9,
+      "cosine": 0.672,
+      "reason": "fits toxic romance, club energy",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wine/s3-6-word-neon.webp",
+      "key": "lexicon/wine/s3-6-word-neon.webp",
+      "word": "wine",
+      "line": "aye, aye, aye Honey and venom Wine slow Don't stop",
+      "t": 112.083,
+      "score": 0.9,
+      "cosine": 0.644,
+      "reason": "fits toxic allure, club energy",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s6-4-word-neon.webp",
+      "key": "lexicon/rhythm/s6-4-word-neon.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 0.9,
+      "cosine": 0.624,
+      "reason": "captures club energy and toxic allure",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s4-2-word-portrait.webp",
+      "key": "lexicon/honey/s4-2-word-portrait.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 0.9,
+      "cosine": 0.614,
+      "reason": "fits theme of sweet danger",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s1-5-word-neon.webp",
+      "key": "lexicon/poison/s1-5-word-neon.webp",
+      "word": "poison",
+      "line": "and venom Llamo or time before dawn Sweet little poison that the whole world haunts Aye, aye, aye,",
+      "t": 165.953,
+      "score": 0.9,
+      "cosine": 0.552,
+      "reason": "fits toxic nightclub theme",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s2-1-chalkboard.webp",
+      "key": "lexicon/poison/s2-1-chalkboard.webp",
+      "word": "poison",
+      "line": "and venom Llamo or time before dawn Sweet little poison that the whole world haunts Aye, aye, aye,",
+      "t": 165.953,
+      "score": 0.9,
+      "cosine": 0.552,
+      "reason": "matches toxic theme, vibrant danger",
+      "recipe": "1-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/danger/s1-1-word-portrait.webp",
+      "key": "lexicon/danger/s1-1-word-portrait.webp",
+      "word": "danger",
+      "line": "Sweet like honey, honey, sharp like danger, honey, honey, and vanilla,",
+      "t": 180.3,
+      "score": 0.9,
+      "cosine": 0.53,
+      "reason": "fits theme of dangerous allure",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/danger/s1-2-word-neon.webp",
+      "key": "lexicon/danger/s1-2-word-neon.webp",
+      "word": "danger",
+      "line": "Sweet like honey, honey, sharp like danger, honey, honey, and vanilla,",
+      "t": 180.3,
+      "score": 0.9,
+      "cosine": 0.53,
+      "reason": "matches urban danger, suspenseful mood",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s8-3-word-portrait.webp",
+      "key": "lexicon/night/s8-3-word-portrait.webp",
+      "word": "night",
+      "line": "on my waist One more wine One more night Then we do it in the dark on the neon light Crap",
+      "t": 129.626,
+      "score": 0.9,
+      "cosine": 0.498,
+      "reason": "fits urban nightlife, mystery, and tension",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s22-5-word-portrait.webp",
+      "key": "lexicon/fire/s22-5-word-portrait.webp",
+      "word": "fire",
+      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
+      "t": 63.878,
+      "score": 0.9,
+      "cosine": 0.466,
+      "reason": "flames, passion, danger align with song themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s8-5-cinema.webp",
+      "key": "lexicon/burn/s8-5-cinema.webp",
+      "word": "burn",
+      "line": "you always playing with fire? Because the burn feels good Honey",
+      "t": 144.742,
+      "score": 0.9,
+      "cosine": 0.437,
+      "reason": "flames, hands, cityscape fit dangerous attraction",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s8-6-photo.webp",
+      "key": "lexicon/burn/s8-6-photo.webp",
+      "word": "burn",
+      "line": "you always playing with fire? Because the burn feels good Honey",
+      "t": 144.742,
+      "score": 0.9,
+      "cosine": 0.437,
+      "reason": "Flame symbolism fits toxic romance and danger.",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/venom/s0-1-word-neon.webp",
+      "key": "lexicon/venom/s0-1-word-neon.webp",
+      "word": "venom",
+      "line": "taste, taste Honey and venom, venom, venom, venom, venom, venom,",
+      "t": 13.758,
+      "score": 0.85,
+      "cosine": 0.484,
+      "reason": "captures urban nightlife and danger",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s10-1-word-neon.webp",
+      "key": "lexicon/rhythm/s10-1-word-neon.webp",
+      "word": "rhythm",
+      "line": "cold in the smile But the lips say deep But they got rhythm Skin like steel Sweet when she whining on",
+      "t": 58.422,
+      "score": 0.85,
+      "cosine": 0.436,
+      "reason": "captures urban nightlife energy",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s2-4-neon-sign.webp",
+      "key": "lexicon/neon/s2-4-neon-sign.webp",
+      "word": "neon",
+      "line": "One more night Then we do it in the dark on the neon light Crap on the bumper Grip on",
+      "t": 131.609,
+      "score": 0.85,
+      "cosine": 0.426,
+      "reason": "fits urban nightlife, neon theme, but lacks venomous edge",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s2-3-anime.webp",
+      "key": "lexicon/poison/s2-3-anime.webp",
+      "word": "poison",
+      "line": "and venom Llamo or time before dawn Sweet little poison that the whole world haunts Aye, aye, aye,",
+      "t": 165.953,
+      "score": 0.8,
+      "cosine": 0.552,
+      "reason": "matches toxic beauty and hidden danger",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-3-word-portrait.webp",
+      "key": "lexicon/night/s13-3-word-portrait.webp",
+      "word": "night",
+      "line": "on my waist One more wine One more night Then we do it in the dark on the neon light Crap",
+      "t": 129.626,
+      "score": 0.8,
+      "cosine": 0.498,
+      "reason": "captures night mood, neon lights, urban setting",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s12-3-word-neon.webp",
+      "key": "lexicon/dark/s12-3-word-neon.webp",
+      "word": "dark",
+      "line": "more wine One more night Then we do it in the dark on the neon light Crap on the bumper Grip",
+      "t": 130.994,
+      "score": 0.8,
+      "cosine": 0.496,
+      "reason": "fits dark, neon theme, urban mood",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s13-5-neon-sign.webp",
+      "key": "lexicon/dark/s13-5-neon-sign.webp",
+      "word": "dark",
+      "line": "more wine One more night Then we do it in the dark on the neon light Crap on the bumper Grip",
+      "t": 130.994,
+      "score": 0.8,
+      "cosine": 0.496,
+      "reason": "captures dark allure and urban decay",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s2-5-manga-line.webp",
+      "key": "lexicon/stop/s2-5-manga-line.webp",
+      "word": "stop",
+      "line": "Wine slow Don't stop Hands high Face drop Wine low Tick",
+      "t": 114.927,
+      "score": 0.8,
+      "cosine": 0.459,
+      "reason": "chaotic ink splatters match song's turmoil",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s8-1-word-portrait.webp",
+      "key": "lexicon/burn/s8-1-word-portrait.webp",
+      "word": "burn",
+      "line": "you always playing with fire? Because the burn feels good Honey",
+      "t": 144.742,
+      "score": 0.8,
+      "cosine": 0.437,
+      "reason": "captures intensity and danger",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s0-6-graphic-novel.webp",
+      "key": "lexicon/honey/s0-6-graphic-novel.webp",
+      "word": "honey",
+      "line": "taste, taste, taste, taste, taste Honey and venom, venom, venom, venom,",
+      "t": 12.38,
+      "score": 0.8,
+      "cosine": 0.413,
+      "reason": "fits mood but lacks venom",
+      "recipe": "6-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-5-stickers.webp",
+      "key": "lexicon/love/s11-5-stickers.webp",
+      "word": "love",
+      "line": "Why you always make me misspeed it? Is it love or not right? Dangerous cat Dangerous",
+      "t": 137.89,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "misspelled love, vibrant energy, fits theme",
+      "recipe": "5-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s6-3-neon-night.webp",
+      "key": "lexicon/heart/s6-3-neon-night.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 0.7,
+      "cosine": 0.468,
+      "reason": "Urban setting fits, but imagery is too melancholic.",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s1-5-anime.webp",
+      "key": "lexicon/fire/s1-5-anime.webp",
+      "word": "fire",
+      "line": "whining on the waistline Milk bumming, no Fire burning in the sugar Pretty little waist and a king to",
+      "t": 63.878,
+      "score": 0.7,
+      "cosine": 0.436,
+      "reason": "fire's intensity fits, but lacks club context",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/neon/s2-1-3d-toy.webp",
+      "key": "lexicon/neon/s2-1-3d-toy.webp",
+      "word": "neon",
+      "line": "One more night Then we do it in the dark on the neon light Crap on the bumper Grip on",
+      "t": 131.609,
+      "score": 0.7,
+      "cosine": 0.426,
+      "reason": "Contrasts song's gritty mood",
+      "recipe": "1-3d-toy",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s8-2-word-neon.webp",
+      "key": "lexicon/slow/s8-2-word-neon.webp",
+      "word": "slow",
+      "line": "and venom Yeah, she walk in, she walk in slow motion Whole room freeze up, cold in the smile But",
+      "t": 53.312,
+      "score": 0.7,
+      "cosine": 0.411,
+      "reason": "captures urban nightlife, contrasts urgency and calm",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-4-poster.webp",
+      "key": "lexicon/wrong/s5-4-poster.webp",
+      "word": "wrong",
+      "line": "and venom Hands up to the sky If loving you is wrong Then I still wanna try Honey and venom Rhythm",
+      "t": 156.04,
+      "score": 0.7,
+      "cosine": 0.405,
+      "reason": "abstract theme fits song's complexity",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s4-5-dream-collage.webp",
+      "key": "lexicon/heart/s4-5-dream-collage.webp",
+      "word": "heart",
+      "line": "and venom, breasts in the strobe light Heart says more while my dress riding up high Honey and venom,",
+      "t": 35.573,
+      "score": 0.6,
+      "cosine": 0.468,
+      "reason": "Contrasts with song's raw energy",
+      "recipe": "5-dream-collage",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s1-3-word-portrait.webp",
+      "key": "lexicon/stop/s1-3-word-portrait.webp",
+      "word": "stop",
+      "line": "Wine slow Don't stop Hands high Face drop Wine low Tick",
+      "t": 114.927,
+      "score": 0.6,
+      "cosine": 0.459,
+      "reason": "Contrasts mood but captures intensity",
+      "recipe": "3-word-portrait",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "venom": [
+      0,
+      1,
+      14
+    ],
+    "heart": [
+      2,
+      25,
+      30
+    ],
+    "wine": [
+      3
+    ],
+    "rhythm": [
+      4,
+      15
+    ],
+    "honey": [
+      5,
+      23
+    ],
+    "poison": [
+      6,
+      7,
+      17
+    ],
+    "danger": [
+      8,
+      9
+    ],
+    "night": [
+      10,
+      18
+    ],
+    "fire": [
+      11,
+      26
+    ],
+    "burn": [
+      12,
+      13,
+      22
+    ],
+    "neon": [
+      16,
+      27
+    ],
+    "dark": [
+      19,
+      20
+    ],
+    "stop": [
+      21,
+      31
+    ],
+    "love": [
+      24
+    ],
+    "slow": [
+      28
+    ],
+    "wrong": [
+      29
+    ]
+  }
 }

@@ -1,15 +1,461 @@
 {
   "v": 1,
   "id": "i-won-t-be-your-fire-japanese-mix",
-  "generatedAt": "2026-09-25T04:03:36.732Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:21:17.226Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 991,
     "judged": 48,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 40,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s1-3-word-neon.webp",
+      "key": "lexicon/rain/s1-3-word-neon.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.85,
+      "cosine": 0.453,
+      "reason": "matches mood and theme, urban isolation and cleansing",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/darkness/s0-1-word-neon.webp",
+      "key": "lexicon/darkness/s0-1-word-neon.webp",
+      "word": "darkness",
+      "line": "darkness",
+      "t": null,
+      "score": 0.85,
+      "cosine": 0.34,
+      "reason": "matches mood and theme, surreal imagery fits",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s3-5-photo.webp",
+      "key": "lexicon/silence/s3-5-photo.webp",
+      "word": "silence",
+      "line": "silence",
+      "t": null,
+      "score": 0.85,
+      "cosine": 0.323,
+      "reason": "reflects melancholic mood and emotional withdrawal",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s9-5-watercolor.webp",
+      "key": "lexicon/glass/s9-5-watercolor.webp",
+      "word": "glass",
+      "line": "ain on glass G uitar comes in",
+      "t": 26.088,
+      "score": 0.8,
+      "cosine": 0.497,
+      "reason": "reflects melancholic mood, clarity amidst chaos",
+      "recipe": "5-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s1-2-word-portrait.webp",
+      "key": "lexicon/rain/s1-2-word-portrait.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.453,
+      "reason": "fits mood and theme, but less direct symbolism",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s2-1-anime.webp",
+      "key": "lexicon/rain/s2-1-anime.webp",
+      "word": "rain",
+      "line": "rain",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.453,
+      "reason": "matches mood and themes, but imagery is too extreme",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-5-analog.webp",
+      "key": "lexicon/light/s23-5-analog.webp",
+      "word": "light",
+      "line": "But I 'll leave you the light",
+      "t": 294.139,
+      "score": 0.8,
+      "cosine": 0.394,
+      "reason": "symbolizes hope and resilience but lacks toxicity",
+      "recipe": "5-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s24-4-anime.webp",
+      "key": "lexicon/light/s24-4-anime.webp",
+      "word": "light",
+      "line": "But I 'll leave you the light",
+      "t": 294.139,
+      "score": 0.8,
+      "cosine": 0.394,
+      "reason": "matches melancholic mood, symbolizes hope and duality",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/miss/s1-2-anime.webp",
+      "key": "lexicon/miss/s1-2-anime.webp",
+      "word": "miss",
+      "line": "壊 した く ない I know you miss the thunder 夜 が う る さ す ぎ",
+      "t": 47.12,
+      "score": 0.8,
+      "cosine": 0.372,
+      "reason": "symbolizes emotional decay and resilience",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/death/s0-1-film-still.webp",
+      "key": "lexicon/death/s0-1-film-still.webp",
+      "word": "death",
+      "line": "そう なんだ 消 せ ない Now my death screen の 中 黒 い バ ー カ ー 眠 れない ま",
+      "t": 156.468,
+      "score": 0.8,
+      "cosine": 0.355,
+      "reason": "melancholic, decay, resolute",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/darkness/s0-4-concept-art.webp",
+      "key": "lexicon/darkness/s0-4-concept-art.webp",
+      "word": "darkness",
+      "line": "darkness",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.34,
+      "reason": "contrasts darkness with hope",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s3-6-dream-collage.webp",
+      "key": "lexicon/silence/s3-6-dream-collage.webp",
+      "word": "silence",
+      "line": "silence",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "matches mood and themes, but imagery is too specific",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/floor/s6-2-cinema.webp",
+      "key": "lexicon/floor/s6-2-cinema.webp",
+      "word": "floor",
+      "line": "He art beat under the floor I won 't be your fire",
+      "t": 34.61,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "matches melancholic mood, urban solitude",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/floor/s7-2-dream-collage.webp",
+      "key": "lexicon/floor/s7-2-dream-collage.webp",
+      "word": "floor",
+      "line": "He art beat under the floor I won 't be your fire",
+      "t": 34.61,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "symbolizes fragility and transience, aligns with emotional burnout theme",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s7-3-anime.webp",
+      "key": "lexicon/love/s7-3-anime.webp",
+      "word": "love",
+      "line": "fire I won 't be your love 君 が 自 分 を 決 め る",
+      "t": 259.832,
+      "score": 0.8,
+      "cosine": 0.312,
+      "reason": "image captures desolation and resilience, aligns with melancholic mood",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s21-3-photo.webp",
+      "key": "lexicon/slow/s21-3-photo.webp",
+      "word": "slow",
+      "line": "G uitar comes in slow 80 8",
+      "t": 29.118,
+      "score": 0.8,
+      "cosine": 0.306,
+      "reason": "reflects calm and slowness, aligns with resolute mood",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s21-4-dream-collage.webp",
+      "key": "lexicon/slow/s21-4-dream-collage.webp",
+      "word": "slow",
+      "line": "G uitar comes in slow 80 8",
+      "t": 29.118,
+      "score": 0.8,
+      "cosine": 0.306,
+      "reason": "matches mood and transient theme",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/missed/s0-2-cinema.webp",
+      "key": "lexicon/missed/s0-2-cinema.webp",
+      "word": "missed",
+      "line": "を 壊 した く ない I know you missed that thunder 夜 が う る さ す ぎ",
+      "t": 245.02,
+      "score": 0.8,
+      "cosine": 0.099,
+      "reason": "reflects melancholic mood and themes of absence and longing",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/missed/s0-3-noir.webp",
+      "key": "lexicon/missed/s0-3-noir.webp",
+      "word": "missed",
+      "line": "を 壊 した く ない I know you missed that thunder 夜 が う る さ す ぎ",
+      "t": 245.02,
+      "score": 0.8,
+      "cosine": 0.099,
+      "reason": "matches melancholic mood, abandonment theme",
+      "recipe": "3-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/thunder/s0-4-photo.webp",
+      "key": "lexicon/thunder/s0-4-photo.webp",
+      "word": "thunder",
+      "line": "く ない I know you miss the thunder 夜 が う る さ す ぎ る から",
+      "t": 47.903,
+      "score": 0.8,
+      "cosine": 0.043,
+      "reason": "symbolizes volatile passion and danger",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s9-2-film-still.webp",
+      "key": "lexicon/glass/s9-2-film-still.webp",
+      "word": "glass",
+      "line": "ain on glass G uitar comes in",
+      "t": 26.088,
+      "score": 0.7,
+      "cosine": 0.497,
+      "reason": "reflects mood but lacks thematic fit",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s9-3-analog.webp",
+      "key": "lexicon/glass/s9-3-analog.webp",
+      "word": "glass",
+      "line": "ain on glass G uitar comes in",
+      "t": 26.088,
+      "score": 0.7,
+      "cosine": 0.497,
+      "reason": "reflects calm, clarity but lacks volatility",
+      "recipe": "3-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s6-5-noir.webp",
+      "key": "lexicon/fire/s6-5-noir.webp",
+      "word": "fire",
+      "line": "the floor I won 't be your fire もう 燃 え た く ない",
+      "t": 36.711,
+      "score": 0.7,
+      "cosine": 0.459,
+      "reason": "Contrasts song's refusal of destructive fire.",
+      "recipe": "5-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s23-3-oil-light.webp",
+      "key": "lexicon/light/s23-3-oil-light.webp",
+      "word": "light",
+      "line": "But I 'll leave you the light",
+      "t": 294.139,
+      "score": 0.7,
+      "cosine": 0.394,
+      "reason": "Contrasts with song's melancholic mood",
+      "recipe": "3-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s9-4-concept-art.webp",
+      "key": "lexicon/beat/s9-4-concept-art.webp",
+      "word": "beat",
+      "line": "80 8 He art beat under the floor I won 't",
+      "t": 33.08,
+      "score": 0.7,
+      "cosine": 0.386,
+      "reason": "image aligns with melancholic mood and themes of decay, but lacks direct connection to set",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/miss/s1-1-stained-glass.webp",
+      "key": "lexicon/miss/s1-1-stained-glass.webp",
+      "word": "miss",
+      "line": "壊 した く ない I know you miss the thunder 夜 が う る さ す ぎ",
+      "t": 47.12,
+      "score": 0.7,
+      "cosine": 0.372,
+      "reason": "Symbolizes transformation and contemplation, aligns with melancholic mood.",
+      "recipe": "1-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/death/s0-2-analog.webp",
+      "key": "lexicon/death/s0-2-analog.webp",
+      "word": "death",
+      "line": "そう なんだ 消 せ ない Now my death screen の 中 黒 い バ ー カ ー 眠 れない ま",
+      "t": 156.468,
+      "score": 0.7,
+      "cosine": 0.355,
+      "reason": "image captures mortality and melancholy, aligns with song's themes",
+      "recipe": "2-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/darkness/s0-2-dark-surreal.webp",
+      "key": "lexicon/darkness/s0-2-dark-surreal.webp",
+      "word": "darkness",
+      "line": "darkness",
+      "t": null,
+      "score": 0.7,
+      "cosine": 0.34,
+      "reason": "Contrasts song's darkness but fits cosmic mood",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silence/s4-5-anime.webp",
+      "key": "lexicon/silence/s4-5-anime.webp",
+      "word": "silence",
+      "line": "silence",
+      "t": null,
+      "score": 0.7,
+      "cosine": 0.323,
+      "reason": "post-apocalyptic setting fits melancholic mood but lacks direct tie to emotional boundarie",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/floor/s7-1-photo.webp",
+      "key": "lexicon/floor/s7-1-photo.webp",
+      "word": "floor",
+      "line": "He art beat under the floor I won 't be your fire",
+      "t": 34.61,
+      "score": 0.7,
+      "cosine": 0.323,
+      "reason": "Contrasts song's mood but fits setting",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s6-2-word-portrait.webp",
+      "key": "lexicon/love/s6-2-word-portrait.webp",
+      "word": "love",
+      "line": "fire I won 't be your love 君 が 自 分 を 決 め る",
+      "t": 259.832,
+      "score": 0.7,
+      "cosine": 0.312,
+      "reason": "image captures allure but lacks toxicity",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s21-2-cinema.webp",
+      "key": "lexicon/slow/s21-2-cinema.webp",
+      "word": "slow",
+      "line": "G uitar comes in slow 80 8",
+      "t": 29.118,
+      "score": 0.7,
+      "cosine": 0.306,
+      "reason": "Contrasts song's urgency but fits melancholic mood",
+      "recipe": "2-cinema",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "rain": [
+      0,
+      4,
+      5
+    ],
+    "darkness": [
+      1,
+      10,
+      27
+    ],
+    "silence": [
+      2,
+      11,
+      28
+    ],
+    "glass": [
+      3,
+      20,
+      21
+    ],
+    "light": [
+      6,
+      7,
+      23
+    ],
+    "miss": [
+      8,
+      25
+    ],
+    "death": [
+      9,
+      26
+    ],
+    "floor": [
+      12,
+      13,
+      29
+    ],
+    "love": [
+      14,
+      30
+    ],
+    "slow": [
+      15,
+      16,
+      31
+    ],
+    "missed": [
+      17,
+      18
+    ],
+    "thunder": [
+      19
+    ],
+    "fire": [
+      22
+    ],
+    "beat": [
+      24
+    ]
+  }
 }

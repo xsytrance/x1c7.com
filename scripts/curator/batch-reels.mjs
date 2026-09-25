@@ -19,8 +19,16 @@ console.error(`${list.length} songs to re-reel`);
 let ok = 0, empty = 0, failed = 0;
 for (const [i, song] of list.entries()) {
   const tag = `[${i + 1}/${list.length}] ${song}`;
+  // Resumable: a batch this long WILL be interrupted (the first attempt was
+  // killed for memory after one song). Skip anything already re-reeled today.
   try {
-    execFileSync("node", ["scripts/curator/match-reel.mjs", "--song", song], { stdio: ["ignore", "ignore", "ignore"] });
+    const cur = JSON.parse(readFileSync(join(PROFILES, song, "lexicon-reel.json"), "utf8"));
+    if ((cur.counts?.kept ?? 0) > 0 && (cur.generatedAt ?? "").slice(0, 10) === new Date().toISOString().slice(0, 10)) {
+      ok++; console.error(`${tag}: already done today (kept ${cur.counts.kept}) — skipped`); continue;
+    }
+  } catch { /* unreadable: re-run it */ }
+  try {
+    execFileSync("node", ["scripts/curator/match-reel.mjs", "--song", song, "--keep"], { stdio: ["ignore", "ignore", "ignore"], maxBuffer: 1 << 20 });
     const p = join(PROFILES, song, "lexicon-reel.json");
     const kept = JSON.parse(readFileSync(p, "utf8")).counts?.kept ?? 0;
     if (!kept) { empty++; console.error(`${tag}: kept 0 — judge accepted nothing`); continue; }

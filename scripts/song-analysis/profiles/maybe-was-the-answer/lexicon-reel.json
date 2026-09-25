@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "maybe-was-the-answer",
-  "generatedAt": "2026-09-25T04:04:20.218Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:24:25.382Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 1396,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 46,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s1-5-anime.webp",
+      "key": "lexicon/save/s1-5-anime.webp",
+      "word": "save",
+      "line": "save",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.282,
+      "reason": "captures obsession and chaos",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chase/s4-3-film-still.webp",
+      "key": "lexicon/chase/s4-3-film-still.webp",
+      "word": "chase",
+      "line": "Car outside runnin' how you know my new Used to chase you Now you chase me For real Somebody",
+      "t": 84.96,
+      "score": 0.85,
+      "cosine": 0.319,
+      "reason": "matches mood and theme of pursuit",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/warning/s3-1-dream-collage.webp",
+      "key": "lexicon/warning/s3-1-dream-collage.webp",
+      "word": "warning",
+      "line": "went and folded up my laundry That ain't sweet that's a warning that's a warning Maybe",
+      "t": 98.64,
+      "score": 0.85,
+      "cosine": 0.253,
+      "reason": "matches eerie, ominous mood",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s5-3-neon-night.webp",
+      "key": "lexicon/crazy/s5-3-neon-night.webp",
+      "word": "crazy",
+      "line": "my lady You kept drivin' me crazy Now every time my phone lights up",
+      "t": 33.12,
+      "score": 0.85,
+      "cosine": 0.18,
+      "reason": "matches obsessive, menacing mood",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
+      "key": "lexicon/lights/s3-4-word-portrait.webp",
+      "word": "lights",
+      "line": "drivin' me crazy Now every time my phone lights up Girl it's always Baby",
+      "t": 35.36,
+      "score": 0.8,
+      "cosine": 0.376,
+      "reason": "matches mood and theme, but lacks direct phone reference",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chase/s4-2-word-portrait.webp",
+      "key": "lexicon/chase/s4-2-word-portrait.webp",
+      "word": "chase",
+      "line": "Car outside runnin' how you know my new Used to chase you Now you chase me For real Somebody",
+      "t": 84.96,
+      "score": 0.8,
+      "cosine": 0.319,
+      "reason": "fits mood but shifts focus",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chase/s4-5-anime.webp",
+      "key": "lexicon/chase/s4-5-anime.webp",
+      "word": "chase",
+      "line": "Car outside runnin' how you know my new Used to chase you Now you chase me For real Somebody",
+      "t": 84.96,
+      "score": 0.8,
+      "cosine": 0.319,
+      "reason": "captures obsession and pursuit",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s7-3-photo.webp",
+      "key": "lexicon/phone/s7-3-photo.webp",
+      "word": "phone",
+      "line": "kept drivin' me crazy Now every time my phone lights up Girl it's always",
+      "t": 35.04,
+      "score": 0.8,
+      "cosine": 0.27,
+      "reason": "reflects anxiety and urgency of receiving threatening messages",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-5-manga-line.webp",
+      "key": "lexicon/slow/s5-5-manga-line.webp",
+      "word": "slow",
+      "line": "Back then I was all in you played it cool Slow replies like I had somethin' to prove Now the vibe done",
+      "t": 42.48,
+      "score": 0.8,
+      "cosine": 0.263,
+      "reason": "Matches mood and theme of obsession",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s5-5-photo.webp",
+      "key": "lexicon/door/s5-5-photo.webp",
+      "word": "door",
+      "line": "You know my mama's number you ain't never met my mama You know the door code and I changed the door code Left a plate in my kitchen",
+      "t": 92.8,
+      "score": 0.8,
+      "cosine": 0.256,
+      "reason": "fits mood and theme, but lacks eerie persistence",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-1-poster.webp",
+      "key": "lexicon/code/s4-1-poster.webp",
+      "word": "code",
+      "line": "my mama's number you ain't never met my mama You know the door code and I changed the door code Left a plate in my kitchen went",
+      "t": 93.12,
+      "score": 0.8,
+      "cosine": 0.235,
+      "reason": "Reflects digital intrusion and chaos",
+      "recipe": "1-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drive/s1-1-cinema.webp",
+      "key": "lexicon/drive/s1-1-cinema.webp",
+      "word": "drive",
+      "line": "drive",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.23,
+      "reason": "fits mood and theme of danger and isolation",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drive/s1-2-noir.webp",
+      "key": "lexicon/drive/s1-2-noir.webp",
+      "word": "drive",
+      "line": "drive",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.23,
+      "reason": "fits mood and theme, but less direct",
+      "recipe": "2-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s10-2-neon-night.webp",
+      "key": "lexicon/time/s10-2-neon-night.webp",
+      "word": "time",
+      "line": "You kept drivin' me crazy Now every time my phone lights up Girl it's always",
+      "t": 34.72,
+      "score": 0.8,
+      "cosine": 0.221,
+      "reason": "matches mood and theme of eerie persistence",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s11-1-anime.webp",
+      "key": "lexicon/time/s11-1-anime.webp",
+      "word": "time",
+      "line": "You kept drivin' me crazy Now every time my phone lights up Girl it's always",
+      "t": 34.72,
+      "score": 0.8,
+      "cosine": 0.221,
+      "reason": "hair head fits obsession, scale conveys time's weight",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tomorrow/s1-4-cinema.webp",
+      "key": "lexicon/tomorrow/s1-4-cinema.webp",
+      "word": "tomorrow",
+      "line": "Today it's Baby Tomorrow I ain't answerin'",
+      "t": 139.2,
+      "score": 0.8,
+      "cosine": 0.214,
+      "reason": "anticipation and uncertainty align with the song's mood",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/name/s11-2-word-portrait.webp",
+      "key": "lexicon/name/s11-2-word-portrait.webp",
+      "word": "name",
+      "line": "changed Now you know my name You know my name Now you know my name",
+      "t": 115.04,
+      "score": 0.8,
+      "cosine": 0.19,
+      "reason": "Elegant cursive label fits identity theme, but lacks eerie mood.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crazy/s5-2-photo.webp",
+      "key": "lexicon/crazy/s5-2-photo.webp",
+      "word": "crazy",
+      "line": "my lady You kept drivin' me crazy Now every time my phone lights up",
+      "t": 33.12,
+      "score": 0.8,
+      "cosine": 0.18,
+      "reason": "reflects shock and disorientation",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s2-2-film-still.webp",
+      "key": "lexicon/somebody/s2-2-film-still.webp",
+      "word": "somebody",
+      "line": "chase you Now you chase me For real Somebody come and saaaave me You know my mama's number you",
+      "t": 87.92,
+      "score": 0.8,
+      "cosine": 0.17,
+      "reason": "matches mood and vulnerability",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-3-neon-night.webp",
+      "key": "lexicon/lights/s8-3-neon-night.webp",
+      "word": "lights",
+      "line": "drivin' me crazy Now every time my phone lights up Girl it's always Baby",
+      "t": 35.36,
+      "score": 0.7,
+      "cosine": 0.269,
+      "reason": "neon lights fit mood, but lacks phone context",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/past/s3-1-cinema.webp",
+      "key": "lexicon/past/s3-1-cinema.webp",
+      "word": "past",
+      "line": "up that's you Forty-seven missed and it's quarter past two Car outside runnin' how you know my new",
+      "t": 81.52,
+      "score": 0.7,
+      "cosine": 0.266,
+      "reason": "symbolizes past, decay, and transience, fitting mood",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/past/s3-2-photo.webp",
+      "key": "lexicon/past/s3-2-photo.webp",
+      "word": "past",
+      "line": "up that's you Forty-seven missed and it's quarter past two Car outside runnin' how you know my new",
+      "t": 81.52,
+      "score": 0.7,
+      "cosine": 0.266,
+      "reason": "fits mood but lacks direct connection to song's action",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s5-4-noir.webp",
+      "key": "lexicon/door/s5-4-noir.webp",
+      "word": "door",
+      "line": "You know my mama's number you ain't never met my mama You know the door code and I changed the door code Left a plate in my kitchen",
+      "t": 92.8,
+      "score": 0.7,
+      "cosine": 0.256,
+      "reason": "fits mood but lacks modern detail",
+      "recipe": "4-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/door/s5-6-neon-night.webp",
+      "key": "lexicon/door/s5-6-neon-night.webp",
+      "word": "door",
+      "line": "You know my mama's number you ain't never met my mama You know the door code and I changed the door code Left a plate in my kitchen",
+      "t": 92.8,
+      "score": 0.7,
+      "cosine": 0.256,
+      "reason": "fits mood but shifts theme",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s10-2-word-portrait.webp",
+      "key": "lexicon/save/s10-2-word-portrait.webp",
+      "word": "save",
+      "line": "save",
+      "t": null,
+      "score": 0.7,
+      "cosine": 0.255,
+      "reason": "matches mood but lacks song's urgency",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-5-film-still.webp",
+      "key": "lexicon/code/s4-5-film-still.webp",
+      "word": "code",
+      "line": "my mama's number you ain't never met my mama You know the door code and I changed the door code Left a plate in my kitchen went",
+      "t": 93.12,
+      "score": 0.7,
+      "cosine": 0.235,
+      "reason": "Eye symbolizes obsession, orange light suggests danger.",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drive/s0-2-dream-collage.webp",
+      "key": "lexicon/drive/s0-2-dream-collage.webp",
+      "word": "drive",
+      "line": "drive",
+      "t": null,
+      "score": 0.7,
+      "cosine": 0.23,
+      "reason": "fits mood but lacks eerie persistence",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s11-2-manga-line.webp",
+      "key": "lexicon/time/s11-2-manga-line.webp",
+      "word": "time",
+      "line": "You kept drivin' me crazy Now every time my phone lights up Girl it's always",
+      "t": 34.72,
+      "score": 0.7,
+      "cosine": 0.221,
+      "reason": "Eye symbolizes introspection, but lacks urgency and danger.",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/girl/s0-1-film-still.webp",
+      "key": "lexicon/girl/s0-1-film-still.webp",
+      "word": "girl",
+      "line": "Now every time my phone lights up Girl it's always Baby Back then",
+      "t": 37.2,
+      "score": 0.7,
+      "cosine": 0.192,
+      "reason": "Reflects vulnerability but lacks ominous tone",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/name/s11-1-poster.webp",
+      "key": "lexicon/name/s11-1-poster.webp",
+      "word": "name",
+      "line": "changed Now you know my name You know my name Now you know my name",
+      "t": 115.04,
+      "score": 0.7,
+      "cosine": 0.19,
+      "reason": "text as identity marker fits 'know my name'",
+      "recipe": "1-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/somebody/s0-2-photo-r1.webp",
+      "key": "lexicon/somebody/s0-2-photo-r1.webp",
+      "word": "somebody",
+      "line": "chase you Now you chase me For real Somebody come and saaaave me You know my mama's number you",
+      "t": 87.92,
+      "score": 0.7,
+      "cosine": 0.17,
+      "reason": "fits mood but lacks urgency",
+      "recipe": "2-photo-r1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s11-3-cinema.webp",
+      "key": "lexicon/different/s11-3-cinema.webp",
+      "word": "different",
+      "line": "ain't that funny Same smile different energy You see me outside livin' life lately",
+      "t": 49.12,
+      "score": 0.6,
+      "cosine": 0.28,
+      "reason": "moonlit night fits mood but lacks direct tie to song themes",
+      "recipe": "3-cinema",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "save": [
+      0,
+      24
+    ],
+    "chase": [
+      1,
+      5,
+      6
+    ],
+    "warning": [
+      2
+    ],
+    "crazy": [
+      3,
+      17
+    ],
+    "lights": [
+      4,
+      19
+    ],
+    "phone": [
+      7
+    ],
+    "slow": [
+      8
+    ],
+    "door": [
+      9,
+      22,
+      23
+    ],
+    "code": [
+      10,
+      25
+    ],
+    "drive": [
+      11,
+      12,
+      26
+    ],
+    "time": [
+      13,
+      14,
+      27
+    ],
+    "tomorrow": [
+      15
+    ],
+    "name": [
+      16,
+      29
+    ],
+    "somebody": [
+      18,
+      30
+    ],
+    "past": [
+      20,
+      21
+    ],
+    "girl": [
+      28
+    ],
+    "different": [
+      31
+    ]
+  }
 }

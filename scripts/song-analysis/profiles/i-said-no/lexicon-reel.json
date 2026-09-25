@@ -1,15 +1,241 @@
 {
   "v": 1,
   "id": "i-said-no",
-  "generatedAt": "2026-09-25T04:03:33.958Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:20:19.497Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 201,
     "judged": 26,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 16,
+    "kept": 16
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s2-5-film-still.webp",
+      "key": "lexicon/chain/s2-5-film-still.webp",
+      "word": "chain",
+      "line": "like your car And he said Oh I like your chain And he said Damn I like your shoes He said Yo",
+      "t": 22.744,
+      "score": 0.85,
+      "cosine": 0.432,
+      "reason": "fits mood and power dynamics",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s1-6-photo.webp",
+      "key": "lexicon/chain/s1-6-photo.webp",
+      "word": "chain",
+      "line": "like your car And he said Oh I like your chain And he said Damn I like your shoes He said Yo",
+      "t": 22.744,
+      "score": 0.8,
+      "cosine": 0.432,
+      "reason": "reflects tension and resistance, fits gritty mood",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s2-6-concept-art.webp",
+      "key": "lexicon/chain/s2-6-concept-art.webp",
+      "word": "chain",
+      "line": "like your car And he said Oh I like your chain And he said Damn I like your shoes He said Yo",
+      "t": 22.744,
+      "score": 0.8,
+      "cosine": 0.432,
+      "reason": "fits mood and themes, but shifts focus from male to female",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s1-2-noir.webp",
+      "key": "lexicon/ice/s1-2-noir.webp",
+      "word": "ice",
+      "line": "hundredinch TV I got the Rolly with the ice keep it on the freeze",
+      "t": 10.438,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "cold precision fits icy detachment",
+      "recipe": "2-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ride/s5-2-word-portrait.webp",
+      "key": "lexicon/ride/s5-2-word-portrait.webp",
+      "word": "ride",
+      "line": "Damn I like your shoes He said Yo Big G can I ride with you And I said No And",
+      "t": 26.645,
+      "score": 0.8,
+      "cosine": 0.401,
+      "reason": "fits mood and theme, but lacks grit",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ride/s6-2-neon-sign.webp",
+      "key": "lexicon/ride/s6-2-neon-sign.webp",
+      "word": "ride",
+      "line": "Damn I like your shoes He said Yo Big G can I ride with you And I said No And",
+      "t": 26.645,
+      "score": 0.8,
+      "cosine": 0.401,
+      "reason": "matches mood and symbolism",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/big/s0-1-graphic-novel.webp",
+      "key": "lexicon/big/s0-1-graphic-novel.webp",
+      "word": "big",
+      "line": "So they call me Big G with the capital G",
+      "t": 1.846,
+      "score": 0.8,
+      "cosine": 0.324,
+      "reason": "fits mood and themes, but too fantastical",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/step/s0-1-neon-sign.webp",
+      "key": "lexicon/step/s0-1-neon-sign.webp",
+      "word": "step",
+      "line": "with the capital G I said Step into my crib and check my hundredinch TV",
+      "t": 5.376,
+      "score": 0.8,
+      "cosine": 0.225,
+      "reason": "matches urban decay, sinister mood",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/freeze/s3-1-neon-sign.webp",
+      "key": "lexicon/freeze/s3-1-neon-sign.webp",
+      "word": "freeze",
+      "line": "with the ice keep it on the freeze And I know they ain't got it like",
+      "t": 12.957,
+      "score": 0.7,
+      "cosine": 0.293,
+      "reason": "captures urban isolation and stillness",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/freeze/s3-6-cinema.webp",
+      "key": "lexicon/freeze/s3-6-cinema.webp",
+      "word": "freeze",
+      "line": "with the ice keep it on the freeze And I know they ain't got it like",
+      "t": 12.957,
+      "score": 0.7,
+      "cosine": 0.293,
+      "reason": "symbolizes isolation and resilience, aligns with mood",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crib/s1-1-word-portrait.webp",
+      "key": "lexicon/crib/s1-1-word-portrait.webp",
+      "word": "crib",
+      "line": "with the capital G I said Step into my crib and check my hundredinch TV I",
+      "t": 6.374,
+      "score": 0.7,
+      "cosine": -0.005,
+      "reason": "Contrasts mood but fits theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ice/s1-3-photo.webp",
+      "key": "lexicon/ice/s1-3-photo.webp",
+      "word": "ice",
+      "line": "hundredinch TV I got the Rolly with the ice keep it on the freeze",
+      "t": 10.438,
+      "score": 0.6,
+      "cosine": 0.416,
+      "reason": "icy theme, cold stillness fits mood",
+      "recipe": "3-photo",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ride/s6-1-stickers.webp",
+      "key": "lexicon/ride/s6-1-stickers.webp",
+      "word": "ride",
+      "line": "Damn I like your shoes He said Yo Big G can I ride with you And I said No And",
+      "t": 26.645,
+      "score": 0.6,
+      "cosine": 0.401,
+      "reason": "Contrasts with song's mood and setting",
+      "recipe": "1-stickers",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/damn/s1-2-dark-surreal.webp",
+      "key": "lexicon/damn/s1-2-dark-surreal.webp",
+      "word": "damn",
+      "line": "And he said Oh I like your chain And he said Damn I like your shoes He said Yo Big G can I ride",
+      "t": 23.731,
+      "score": 0.6,
+      "cosine": 0.363,
+      "reason": "apocalyptic imagery contrasts with playful danger",
+      "recipe": "2-dark-surreal",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/big/s0-2-anime.webp",
+      "key": "lexicon/big/s0-2-anime.webp",
+      "word": "big",
+      "line": "So they call me Big G with the capital G",
+      "t": 1.846,
+      "score": 0.6,
+      "cosine": 0.324,
+      "reason": "image fits mood but lacks direct connection to song's themes",
+      "recipe": "2-anime",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/freeze/s3-2-stained-glass.webp",
+      "key": "lexicon/freeze/s3-2-stained-glass.webp",
+      "word": "freeze",
+      "line": "with the ice keep it on the freeze And I know they ain't got it like",
+      "t": 12.957,
+      "score": 0.6,
+      "cosine": 0.293,
+      "reason": "Contrasts mood but aligns with isolation and frozen moment.",
+      "recipe": "2-stained-glass",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "chain": [
+      0,
+      1,
+      2
+    ],
+    "ice": [
+      3,
+      11
+    ],
+    "ride": [
+      4,
+      5,
+      12
+    ],
+    "big": [
+      6,
+      14
+    ],
+    "step": [
+      7
+    ],
+    "freeze": [
+      8,
+      9,
+      15
+    ],
+    "crib": [
+      10
+    ],
+    "damn": [
+      13
+    ]
+  }
 }

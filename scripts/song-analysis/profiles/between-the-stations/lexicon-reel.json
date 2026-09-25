@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "between-the-stations",
-  "generatedAt": "2026-09-25T04:01:27.504Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:12:05.579Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2373,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 57,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tunnel/s1-4-photo.webp",
+      "key": "lexicon/tunnel/s1-4-photo.webp",
+      "word": "tunnel",
+      "line": "I let the rhythm hold me Let the tunnel pull me through Every station feels familiar",
+      "t": 35.875,
+      "score": 0.95,
+      "cosine": 0.522,
+      "reason": "fits urban exhaustion and transition themes",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tunnel/s1-5-dream-collage.webp",
+      "key": "lexicon/tunnel/s1-5-dream-collage.webp",
+      "word": "tunnel",
+      "line": "I let the rhythm hold me Let the tunnel pull me through Every station feels familiar",
+      "t": 35.875,
+      "score": 0.95,
+      "cosine": 0.522,
+      "reason": "Visually captures tunnel's mystery and hope, fitting urban transit metaphor.",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-4-cinema.webp",
+      "key": "lexicon/city/s5-4-cinema.webp",
+      "word": "city",
+      "line": "looks so tired Still the city keeps on humming So I let",
+      "t": 30.604,
+      "score": 0.9,
+      "cosine": 0.531,
+      "reason": "matches urban exhaustion and quiet moments",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/city/s5-6-neon-night.webp",
+      "key": "lexicon/city/s5-6-neon-night.webp",
+      "word": "city",
+      "line": "looks so tired Still the city keeps on humming So I let",
+      "t": 30.604,
+      "score": 0.9,
+      "cosine": 0.531,
+      "reason": "fits urban exhaustion and cathartic mood",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tunnel/s1-3-cinema.webp",
+      "key": "lexicon/tunnel/s1-3-cinema.webp",
+      "word": "tunnel",
+      "line": "I let the rhythm hold me Let the tunnel pull me through Every station feels familiar",
+      "t": 35.875,
+      "score": 0.9,
+      "cosine": 0.522,
+      "reason": "Reflects urban tunnel, cathartic journey, hopeful escape.",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s10-2-neon-night.webp",
+      "key": "lexicon/time/s10-2-neon-night.webp",
+      "word": "time",
+      "line": "need signs Just one more breath and a little more time",
+      "t": 104.85,
+      "score": 0.9,
+      "cosine": 0.51,
+      "reason": "Reflects urban mood, temporal distortion, neon symbolism.",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s5-2-cinema.webp",
+      "key": "lexicon/night/s5-2-cinema.webp",
+      "word": "night",
+      "line": "Breathe in Breathe out Let the night slow down Breathe in Breathe",
+      "t": 74.4,
+      "score": 0.9,
+      "cosine": 0.503,
+      "reason": "reflects urban night, exhaustion, and respite",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-4-word-neon.webp",
+      "key": "lexicon/night/s6-4-word-neon.webp",
+      "word": "night",
+      "line": "Breathe in Breathe out Let the night slow down Breathe in Breathe",
+      "t": 74.4,
+      "score": 0.9,
+      "cosine": 0.503,
+      "reason": "aligns with urban exhaustion and cathartic release",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s0-2-cinema.webp",
+      "key": "lexicon/steam/s0-2-cinema.webp",
+      "word": "steam",
+      "line": "to Queens Bronx in the rhythm Manhattan in the steam Someone's got roses someone's got rain Someone's",
+      "t": 95.32,
+      "score": 0.9,
+      "cosine": 0.497,
+      "reason": "captures urban steam and transformation",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s3-4-manga-line.webp",
+      "key": "lexicon/rhythm/s3-4-manga-line.webp",
+      "word": "rhythm",
+      "line": "humming So I let the rhythm hold me Let the tunnel pull me through",
+      "t": 34.168,
+      "score": 0.9,
+      "cosine": 0.492,
+      "reason": "captures urban chaos and catharsis",
+      "recipe": "4-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s1-5-photo.webp",
+      "key": "lexicon/move/s1-5-photo.webp",
+      "word": "move",
+      "line": "rush now No fear now Let it move Let it clear out I was",
+      "t": 156.431,
+      "score": 0.9,
+      "cosine": 0.491,
+      "reason": "represents defiance and movement in urban chaos",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s6-5-anime.webp",
+      "key": "lexicon/move/s6-5-anime.webp",
+      "word": "move",
+      "line": "rush now No fear now Let it move Let it clear out I was",
+      "t": 156.431,
+      "score": 0.9,
+      "cosine": 0.466,
+      "reason": "Reflects urban chaos and inner turmoil, aligns with song's mood and themes.",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "Breathe in Breathe out Let the night slow down Breathe in Breathe",
+      "t": 74.4,
+      "score": 0.9,
+      "cosine": 0.455,
+      "reason": "captures urban night mood, aligns with song themes",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s0-4-anime.webp",
+      "key": "lexicon/rain/s0-4-anime.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someone's got roses someone's got rain Someone's got nothing but the song for the pain I",
+      "t": 97.48,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "fits urban exhaustion and cathartic mood",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s0-3-concept-art.webp",
+      "key": "lexicon/rain/s0-3-concept-art.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someone's got roses someone's got rain Someone's got nothing but the song for the pain I",
+      "t": 97.48,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "reflects urban isolation and melancholy",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rain/s0-2-film-still.webp",
+      "key": "lexicon/rain/s0-2-film-still.webp",
+      "word": "rain",
+      "line": "Manhattan in the steam Someone's got roses someone's got rain Someone's got nothing but the song for the pain I",
+      "t": 97.48,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "reflects urban mood, rain symbolism",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-5-cinema.webp",
+      "key": "lexicon/breath/s0-5-cinema.webp",
+      "word": "breath",
+      "line": "don't need answers I don't need signs Just one more breath and a little more time",
+      "t": 103.5,
+      "score": 0.9,
+      "cosine": 0.422,
+      "reason": "reflects urban mood, rain symbolizes release",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fading/s0-2-cinema.webp",
+      "key": "lexicon/fading/s0-2-cinema.webp",
+      "word": "fading",
+      "line": "loud Now Im quiet In the crowd I was fading In the sound",
+      "t": 163.213,
+      "score": 0.9,
+      "cosine": 0.415,
+      "reason": "reflects fading and urban melancholy",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/roll/s4-1-word-neon.webp",
+      "key": "lexicon/roll/s4-1-word-neon.webp",
+      "word": "roll",
+      "line": "No rush now No fear now Let it roll Let it clear out No rush now",
+      "t": 151.68,
+      "score": 0.9,
+      "cosine": 0.414,
+      "reason": "neon 'roll' fits urban nightlife, cyberpunk mood",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/roses/s1-4-dream-collage.webp",
+      "key": "lexicon/roses/s1-4-dream-collage.webp",
+      "word": "roses",
+      "line": "Bronx in the rhythm Manhattan in the steam Someone's got roses someone's got rain Someone's got nothing",
+      "t": 96.2,
+      "score": 0.9,
+      "cosine": 0.401,
+      "reason": "symbolic rose amid chaos fits mood",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/roses/s1-5-word-portrait.webp",
+      "key": "lexicon/roses/s1-5-word-portrait.webp",
+      "word": "roses",
+      "line": "Bronx in the rhythm Manhattan in the steam Someone's got roses someone's got rain Someone's got nothing",
+      "t": 96.2,
+      "score": 0.9,
+      "cosine": 0.401,
+      "reason": "symbolizes respite in chaos, aligns with lyrical themes",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s4-2-word-portrait.webp",
+      "key": "lexicon/sound/s4-2-word-portrait.webp",
+      "word": "sound",
+      "line": "Downtown Uptown Under every sound I keep floating",
+      "t": 17.113,
+      "score": 0.9,
+      "cosine": 0.4,
+      "reason": "aligns with song's energetic, cathartic mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s5-1-cinema.webp",
+      "key": "lexicon/sound/s5-1-cinema.webp",
+      "word": "sound",
+      "line": "Downtown Uptown Under every sound I keep floating",
+      "t": 17.113,
+      "score": 0.9,
+      "cosine": 0.4,
+      "reason": "captures urban sound and contemplation",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sound/s5-2-photo.webp",
+      "key": "lexicon/sound/s5-2-photo.webp",
+      "word": "sound",
+      "line": "Downtown Uptown Under every sound I keep floating",
+      "t": 17.113,
+      "score": 0.9,
+      "cosine": 0.4,
+      "reason": "reflects urban solitude and inner peace",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s1-3-dark-surreal.webp",
+      "key": "lexicon/crowd/s1-3-dark-surreal.webp",
+      "word": "crowd",
+      "line": "heavy I was loud Now Im quiet In the crowd I was fading In the sound",
+      "t": 161.959,
+      "score": 0.9,
+      "cosine": 0.399,
+      "reason": "fits urban exhaustion and collective mood",
+      "recipe": "3-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/crowd/s1-2-word-neon.webp",
+      "key": "lexicon/crowd/s1-2-word-neon.webp",
+      "word": "crowd",
+      "line": "heavy I was loud Now Im quiet In the crowd I was fading In the sound",
+      "t": 161.959,
+      "score": 0.9,
+      "cosine": 0.399,
+      "reason": "neon sign, crowd silhouettes, urban nightlife",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-1-anime.webp",
+      "key": "lexicon/light/s21-1-anime.webp",
+      "word": "light",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "score": 0.75,
+      "cosine": 0.537,
+      "reason": "matches mood but shifts setting from subway to cityscape",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-3-neon-night.webp",
+      "key": "lexicon/lights/s8-3-neon-night.webp",
+      "word": "lights",
+      "line": "to me Come back to me Come back to me Lights keep flashing Hearts keep passing Still I",
+      "t": 52.16,
+      "score": 0.75,
+      "cosine": 0.536,
+      "reason": "captures urban nightlife but lacks subway context",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s30-6-anime.webp",
+      "key": "lexicon/light/s30-6-anime.webp",
+      "word": "light",
+      "line": "stops New eyes Blue light Passing by Window black Face",
+      "t": 7.802,
+      "score": 0.75,
+      "cosine": 0.536,
+      "reason": "Contrasts urban grit but aligns with hopeful transition.",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/window/s1-3-anime.webp",
+      "key": "lexicon/window/s1-3-anime.webp",
+      "word": "window",
+      "line": "Blue light Passing by Window black Face in glass I see",
+      "t": 9.695,
+      "score": 0.75,
+      "cosine": 0.522,
+      "reason": "Contrasts with song's cathartic, rhythmic mood",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s11-2-manga-line.webp",
+      "key": "lexicon/time/s11-2-manga-line.webp",
+      "word": "time",
+      "line": "need signs Just one more breath and a little more time",
+      "t": 104.85,
+      "score": 0.75,
+      "cosine": 0.51,
+      "reason": "Eye symbolizes introspection, time, but lacks urban context.",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s0-1-anime.webp",
+      "key": "lexicon/steam/s0-1-anime.webp",
+      "word": "steam",
+      "line": "to Queens Bronx in the rhythm Manhattan in the steam Someone's got roses someone's got rain Someone's",
+      "t": 95.32,
+      "score": 0.75,
+      "cosine": 0.497,
+      "reason": "fits mood but shifts from subway to alleyway",
+      "recipe": "1-anime",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "tunnel": [
+      0,
+      1,
+      4
+    ],
+    "city": [
+      2,
+      3
+    ],
+    "time": [
+      5,
+      30
+    ],
+    "night": [
+      6,
+      7,
+      12
+    ],
+    "steam": [
+      8,
+      31
+    ],
+    "rhythm": [
+      9
+    ],
+    "move": [
+      10,
+      11
+    ],
+    "rain": [
+      13,
+      14,
+      15
+    ],
+    "breath": [
+      16
+    ],
+    "fading": [
+      17
+    ],
+    "roll": [
+      18
+    ],
+    "roses": [
+      19,
+      20
+    ],
+    "sound": [
+      21,
+      22,
+      23
+    ],
+    "crowd": [
+      24,
+      25
+    ],
+    "light": [
+      26,
+      28
+    ],
+    "lights": [
+      27
+    ],
+    "window": [
+      29
+    ]
+  }
 }

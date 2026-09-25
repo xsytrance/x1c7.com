@@ -1,15 +1,473 @@
 {
   "v": 1,
   "id": "membrane-still-insane",
-  "generatedAt": "2026-09-25T04:04:35.008Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:24:58.322Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 3595,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 57,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-2-dream-collage.webp",
+      "key": "lexicon/night/s6-2-dream-collage.webp",
+      "word": "night",
+      "line": "insane smoke all in the frame black and white night but the madness got a name whistle go whoo Then",
+      "t": 104.896,
+      "score": 0.95,
+      "cosine": 0.674,
+      "reason": "aligns with noir-cartoon madness and mechanical chaos",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flames/s1-4-film-still.webp",
+      "key": "lexicon/flames/s1-4-film-still.webp",
+      "word": "flames",
+      "line": "the chain river full of fog and the deck full of flames step to the boat better know what you claim one",
+      "t": 45.047,
+      "score": 0.9,
+      "cosine": 0.685,
+      "reason": "matches song's noir-cartoon, fiery, foggy setting",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s0-4-dark-surreal.webp",
+      "key": "lexicon/boiler/s0-4-dark-surreal.webp",
+      "word": "boiler",
+      "line": "Membrane still insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but",
+      "t": 174.566,
+      "score": 0.9,
+      "cosine": 0.68,
+      "reason": "fits noir-cartoon theme, boiler metaphor works",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boiler/s2-3-dream-collage.webp",
+      "key": "lexicon/boiler/s2-3-dream-collage.webp",
+      "word": "boiler",
+      "line": "Membrane still insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but",
+      "t": 174.566,
+      "score": 0.9,
+      "cosine": 0.68,
+      "reason": "fits noir-cartoon industrial setting",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
+      "key": "lexicon/eyes/s8-5-neon-sign.webp",
+      "word": "eyes",
+      "line": "whistle go in the whole dock shake cartoon eyes wide when the bad boys break brain on",
+      "t": 36.897,
+      "score": 0.9,
+      "cosine": 0.62,
+      "reason": "fits noir-cartoon world, fractured sanity",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s14-6-word-portrait.webp",
+      "key": "lexicon/gold/s14-6-word-portrait.webp",
+      "word": "gold",
+      "line": "knees doing swings rubber hose arms with the old gold rings piano go crooked when the villain bell dings",
+      "t": 73.954,
+      "score": 0.9,
+      "cosine": 0.618,
+      "reason": "aligns with themes, mood, and imagery",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/whistle/s4-2-photo.webp",
+      "key": "lexicon/whistle/s4-2-photo.webp",
+      "word": "whistle",
+      "line": "yo you hear that whistle bending that at the boat",
+      "t": 8.069,
+      "score": 0.9,
+      "cosine": 0.59,
+      "reason": "fits gritty noir-cartoon decay and mechanical madness",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drip/s0-6-neon-sign.webp",
+      "key": "lexicon/drip/s0-6-neon-sign.webp",
+      "word": "drip",
+      "line": "Call it the gift. Cartoon boat slide with the criminal drip. Mind overboard, but the body don't quit.",
+      "t": 157.629,
+      "score": 0.9,
+      "cosine": 0.588,
+      "reason": "fits noir-cartoon vibe, captures criminal drip",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s2-5-manga-line.webp",
+      "key": "lexicon/body/s2-5-manga-line.webp",
+      "word": "body",
+      "line": "the criminal drip. Mind overboard, but the body don't quit. Still throwing up signs from the edge of",
+      "t": 159.858,
+      "score": 0.9,
+      "cosine": 0.577,
+      "reason": "fits noir-cartoon world, fractured sanity",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s1-3-dream-collage.webp",
+      "key": "lexicon/teeth/s1-3-dream-collage.webp",
+      "word": "teeth",
+      "line": "menace with the permanent stain every thought not teeth every laugh got pain every footstep echo",
+      "t": 85.717,
+      "score": 0.9,
+      "cosine": 0.543,
+      "reason": "matches chaotic, menacing, surreal theme",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s1-6-dark-surreal.webp",
+      "key": "lexicon/teeth/s1-6-dark-surreal.webp",
+      "word": "teeth",
+      "line": "menace with the permanent stain every thought not teeth every laugh got pain every footstep echo",
+      "t": 85.717,
+      "score": 0.9,
+      "cosine": 0.543,
+      "reason": "fits sinister, cartoonish menace",
+      "recipe": "6-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-4-dark-surreal.webp",
+      "key": "lexicon/storm/s2-4-dark-surreal.webp",
+      "word": "storm",
+      "line": "the real with the lean and the green ink on my gloves in the storm in my skin moon look crap when the paddle will",
+      "t": 53.975,
+      "score": 0.9,
+      "cosine": 0.537,
+      "reason": "fits dark, chaotic, ominous mood",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-1.webp",
+      "key": "lexicon/riverboat/s0-1.webp",
+      "word": "riverboat",
+      "line": "we kick in the door. Who want war with the riverboat corps? They don't want nothing. They just talk from",
+      "t": 190.52,
+      "score": 0.85,
+      "cosine": 0.498,
+      "reason": "fits noir-cartoon world, steam, smoke, mist",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s2-5-manga-line.webp",
+      "key": "lexicon/dark/s2-5-manga-line.webp",
+      "word": "dark",
+      "line": "a question mark. Piano keys bite. When the river get dark. Beauty trumpet cry from the mouth of a shark.",
+      "t": 137.346,
+      "score": 0.85,
+      "cosine": 0.485,
+      "reason": "Reflects inner turmoil and gritty atmosphere",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s0-4-graphic-novel.webp",
+      "key": "lexicon/smoke/s0-4-graphic-novel.webp",
+      "word": "smoke",
+      "line": "let him in been up three nights with smoke in my coat talking to a shadow that been steering the",
+      "t": 61.555,
+      "score": 0.85,
+      "cosine": 0.48,
+      "reason": "fits noir atmosphere, smoke, tension",
+      "recipe": "4-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s3-1-dream-collage.webp",
+      "key": "lexicon/night/s3-1-dream-collage.webp",
+      "word": "night",
+      "line": "insane smoke all in the frame black and white night but the madness got a name whistle go whoo Then",
+      "t": 104.896,
+      "score": 0.8,
+      "cosine": 0.674,
+      "reason": "matches mood and themes, but lacks riverboat setting",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/teeth/s1-2-neon-night.webp",
+      "key": "lexicon/teeth/s1-2-neon-night.webp",
+      "word": "teeth",
+      "line": "menace with the permanent stain every thought not teeth every laugh got pain every footstep echo",
+      "t": 85.717,
+      "score": 0.8,
+      "cosine": 0.543,
+      "reason": "fits surreal urban alienation, neon cityscape",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s1-3-word-neon.webp",
+      "key": "lexicon/steam/s1-3-word-neon.webp",
+      "word": "steam",
+      "line": "insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but I'm stuck in the dream.",
+      "t": 175.845,
+      "score": 0.8,
+      "cosine": 0.508,
+      "reason": "fits mood but lacks riverboat context",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/laughing/s4-2-neon-sign.webp",
+      "key": "lexicon/laughing/s4-2-neon-sign.webp",
+      "word": "laughing",
+      "line": "coat talking to a shadow that been steering the boat laughing at the fog like it told me a joke then the whistle",
+      "t": 65.097,
+      "score": 0.8,
+      "cosine": 0.508,
+      "reason": "matches playful tone, urban setting",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shadow/s0-6-pixel.webp",
+      "key": "lexicon/shadow/s0-6-pixel.webp",
+      "word": "shadow",
+      "line": "nights with smoke in my coat talking to a shadow that been steering the boat laughing at the fog",
+      "t": 63.542,
+      "score": 0.8,
+      "cosine": 0.505,
+      "reason": "matches noir atmosphere, shadow theme",
+      "recipe": "6-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s2-1-cinema.webp",
+      "key": "lexicon/drums/s2-1-cinema.webp",
+      "word": "drums",
+      "line": "through the veins. Still got drums putting dance in the brain.",
+      "t": 247.432,
+      "score": 0.8,
+      "cosine": 0.503,
+      "reason": "fits noir atmosphere, but lacks cartoon elements",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s0-2.webp",
+      "key": "lexicon/riverboat/s0-2.webp",
+      "word": "riverboat",
+      "line": "we kick in the door. Who want war with the riverboat corps? They don't want nothing. They just talk from",
+      "t": 190.52,
+      "score": 0.8,
+      "cosine": 0.498,
+      "reason": "fits setting but lacks cartoon noir edge",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/riverboat/s1-1-cinema.webp",
+      "key": "lexicon/riverboat/s1-1-cinema.webp",
+      "word": "riverboat",
+      "line": "we kick in the door. Who want war with the riverboat corps? They don't want nothing. They just talk from",
+      "t": 190.52,
+      "score": 0.8,
+      "cosine": 0.498,
+      "reason": "fits mood but lacks cartoon noir edge",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/veins/s2-2-neon-sign.webp",
+      "key": "lexicon/veins/s2-2-neon-sign.webp",
+      "word": "veins",
+      "line": "got fog running all through the veins. Still got drums putting",
+      "t": 245.32,
+      "score": 0.8,
+      "cosine": 0.496,
+      "reason": "fits urban decay, surrealism, but lacks riverboat setting",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s1-6-neon-night.webp",
+      "key": "lexicon/dark/s1-6-neon-night.webp",
+      "word": "dark",
+      "line": "a question mark. Piano keys bite. When the river get dark. Beauty trumpet cry from the mouth of a shark.",
+      "t": 137.346,
+      "score": 0.8,
+      "cosine": 0.485,
+      "reason": "fits noir atmosphere, but lacks riverboat setting",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/madness/s0-2-word-portrait.webp",
+      "key": "lexicon/madness/s0-2-word-portrait.webp",
+      "word": "madness",
+      "line": "in the frame like a white knight but the madness got a name whistle go in the whole dock",
+      "t": 32.891,
+      "score": 0.8,
+      "cosine": 0.477,
+      "reason": "fits noir atmosphere, but lacks cartoon elements",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-6-concept-art.webp",
+      "key": "lexicon/storm/s2-6-concept-art.webp",
+      "word": "storm",
+      "line": "the real with the lean and the green ink on my gloves in the storm in my skin moon look crap when the paddle will",
+      "t": 53.975,
+      "score": 0.7,
+      "cosine": 0.607,
+      "reason": "Urban storm fits noir mood but lacks cartoon elements",
+      "recipe": "6-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-5-film-still.webp",
+      "key": "lexicon/storm/s2-5-film-still.webp",
+      "word": "storm",
+      "line": "the real with the lean and the green ink on my gloves in the storm in my skin moon look crap when the paddle will",
+      "t": 53.975,
+      "score": 0.7,
+      "cosine": 0.537,
+      "reason": "fits mood but lacks cartoon noir",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s14-1-word-portrait.webp",
+      "key": "lexicon/smoke/s14-1-word-portrait.webp",
+      "word": "smoke",
+      "line": "let him in been up three nights with smoke in my coat talking to a shadow that been steering the",
+      "t": 61.555,
+      "score": 0.7,
+      "cosine": 0.524,
+      "reason": "fits mood but lacks cartoon noir",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dock/s1-2-pixel.webp",
+      "key": "lexicon/dock/s1-2-pixel.webp",
+      "word": "dock",
+      "line": "the madness got a name whistle go in the whole dock shake cartoon eyes wide when the bad boys break",
+      "t": 35.74,
+      "score": 0.7,
+      "cosine": 0.516,
+      "reason": "matches pixelated aesthetic, but lacks sinister playfulness",
+      "recipe": "2-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steam/s2-1-graphic-novel.webp",
+      "key": "lexicon/steam/s2-1-graphic-novel.webp",
+      "word": "steam",
+      "line": "insane. Brain in the boiler. Thoughts in the steam. Eyes wide open, but I'm stuck in the dream.",
+      "t": 175.845,
+      "score": 0.7,
+      "cosine": 0.508,
+      "reason": "fits mood but lacks riverboat context",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/laughing/s4-1-pixel.webp",
+      "key": "lexicon/laughing/s4-1-pixel.webp",
+      "word": "laughing",
+      "line": "coat talking to a shadow that been steering the boat laughing at the fog like it told me a joke then the whistle",
+      "t": 65.097,
+      "score": 0.7,
+      "cosine": 0.508,
+      "reason": "Eerie laughter fits, but pixel art and pajamas clash with noir-cartoon style.",
+      "recipe": "1-pixel",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "night": [
+      0,
+      15
+    ],
+    "flames": [
+      1
+    ],
+    "boiler": [
+      2,
+      3
+    ],
+    "eyes": [
+      4
+    ],
+    "gold": [
+      5
+    ],
+    "whistle": [
+      6
+    ],
+    "drip": [
+      7
+    ],
+    "body": [
+      8
+    ],
+    "teeth": [
+      9,
+      10,
+      16
+    ],
+    "storm": [
+      11,
+      26,
+      27
+    ],
+    "riverboat": [
+      12,
+      21,
+      22
+    ],
+    "dark": [
+      13,
+      24
+    ],
+    "smoke": [
+      14,
+      28
+    ],
+    "steam": [
+      17,
+      30
+    ],
+    "laughing": [
+      18,
+      31
+    ],
+    "shadow": [
+      19
+    ],
+    "drums": [
+      20
+    ],
+    "veins": [
+      23
+    ],
+    "madness": [
+      25
+    ],
+    "dock": [
+      29
+    ]
+  }
 }

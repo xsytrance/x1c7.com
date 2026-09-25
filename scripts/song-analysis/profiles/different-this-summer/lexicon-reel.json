@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "different-this-summer",
-  "generatedAt": "2026-09-25T04:02:29.210Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:15:29.822Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4275,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 53,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s2-1-photo.webp",
+      "key": "lexicon/seed/s2-1-photo.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 0.9,
+      "cosine": 0.426,
+      "reason": "symbolizes growth and new beginnings",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s2-2-dream-collage.webp",
+      "key": "lexicon/seed/s2-2-dream-collage.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 0.9,
+      "cosine": 0.426,
+      "reason": "aligns with themes of growth and renewal",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seed/s2-3-word-portrait.webp",
+      "key": "lexicon/seed/s2-3-word-portrait.webp",
+      "word": "seed",
+      "line": "and the room to breathe But first we plant the seed Imagine that view with your name on it That little",
+      "t": 218.709,
+      "score": 0.9,
+      "cosine": 0.426,
+      "reason": "symbolizes growth and new beginnings",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s13-5-oil-light.webp",
+      "key": "lexicon/flame/s13-5-oil-light.webp",
+      "word": "flame",
+      "line": "view with your name on it That little idea with flame on it Not chasing luck we make it move We",
+      "t": 222.308,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "flames symbolize energy and renewal, fitting empowerment theme",
+      "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s13-4-word-portrait.webp",
+      "key": "lexicon/flame/s13-4-word-portrait.webp",
+      "word": "flame",
+      "line": "view with your name on it That little idea with flame on it Not chasing luck we make it move We",
+      "t": 222.308,
+      "score": 0.9,
+      "cosine": 0.421,
+      "reason": "image captures energy and passion",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waves/s0-5-word-portrait.webp",
+      "key": "lexicon/waves/s0-5-word-portrait.webp",
+      "word": "waves",
+      "line": "no alarm with a panic in it No boss in your head every single minute Just waves good friends and the room to breathe But first we",
+      "t": 214.901,
+      "score": 0.9,
+      "cosine": 0.364,
+      "reason": "captures transformation and empowerment",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/vision/s5-1-oil-light.webp",
+      "key": "lexicon/vision/s5-1-oil-light.webp",
+      "word": "vision",
+      "line": "is opening Used to call it noise now I hear the signal Little by little the vision gets official No more sleepwalking through the",
+      "t": 231.978,
+      "score": 0.9,
+      "cosine": 0.35,
+      "reason": "aligns with clarity and hope",
+      "recipe": "1-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/morning/s7-1-watercolor.webp",
+      "key": "lexicon/morning/s7-1-watercolor.webp",
+      "word": "morning",
+      "line": "blue You gotta make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon",
+      "t": 156.478,
+      "score": 0.85,
+      "cosine": 0.378,
+      "reason": "captures mood and transformation",
+      "recipe": "1-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/waves/s0-3-photo.webp",
+      "key": "lexicon/waves/s0-3-photo.webp",
+      "word": "waves",
+      "line": "no alarm with a panic in it No boss in your head every single minute Just waves good friends and the room to breathe But first we",
+      "t": 214.901,
+      "score": 0.85,
+      "cosine": 0.364,
+      "reason": "captures dynamic energy and transformation",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-5-film-still.webp",
+      "key": "lexicon/sky/s2-5-film-still.webp",
+      "word": "sky",
+      "line": "rain Everybody wants the beach with no pressure Cold drink clean sky time you can measure But that kind of peace dont fall from blue",
+      "t": 150.825,
+      "score": 0.8,
+      "cosine": 0.412,
+      "reason": "reflects mood and transformation",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-1-dream-collage.webp",
+      "key": "lexicon/sky/s2-1-dream-collage.webp",
+      "word": "sky",
+      "line": "rain Everybody wants the beach with no pressure Cold drink clean sky time you can measure But that kind of peace dont fall from blue",
+      "t": 150.825,
+      "score": 0.8,
+      "cosine": 0.412,
+      "reason": "captures mood and transformation themes",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s5-6-film-still.webp",
+      "key": "lexicon/summer/s5-6-film-still.webp",
+      "word": "summer",
+      "line": "knows something This summer feel different already Come on",
+      "t": 9.172,
+      "score": 0.8,
+      "cosine": 0.407,
+      "reason": "desert solitude aligns with summer transformation",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s5-2-cinema.webp",
+      "key": "lexicon/summer/s5-2-cinema.webp",
+      "word": "summer",
+      "line": "knows something This summer feel different already Come on",
+      "t": 9.172,
+      "score": 0.8,
+      "cosine": 0.407,
+      "reason": "captures summer transformation and growth",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/morning/s6-2-cinema.webp",
+      "key": "lexicon/morning/s6-2-cinema.webp",
+      "word": "morning",
+      "line": "blue You gotta make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon",
+      "t": 156.478,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "captures dawn's tranquility and renewal",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/morning/s7-2-storybook.webp",
+      "key": "lexicon/morning/s7-2-storybook.webp",
+      "word": "morning",
+      "line": "blue You gotta make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon",
+      "t": 156.478,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "morning wonder, new beginnings align with personal growth",
+      "recipe": "2-storybook",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/flame/s7-5-stickers.webp",
+      "key": "lexicon/flame/s7-5-stickers.webp",
+      "word": "flame",
+      "line": "view with your name on it That little idea with flame on it Not chasing luck we make it move We",
+      "t": 222.308,
+      "score": 0.8,
+      "cosine": 0.378,
+      "reason": "Matches theme of empowerment and energy",
+      "recipe": "5-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s5-4-oil-light.webp",
+      "key": "lexicon/phone/s5-4-oil-light.webp",
+      "word": "phone",
+      "line": "by Like the sun was free but it wasnt mine Scrolling on the phone while the world got loud Everybody building I was sitting in doubt",
+      "t": 48.878,
+      "score": 0.8,
+      "cosine": 0.377,
+      "reason": "captures phone and sunset, aligns with contemplation",
+      "recipe": "4-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ocean/s2-3-photo.webp",
+      "key": "lexicon/ocean/s2-3-photo.webp",
+      "word": "ocean",
+      "line": "yet but the plan got motion Laptop open with a rum by the ocean Not there now but I see that scene Gotta build that",
+      "t": 59.372,
+      "score": 0.8,
+      "cosine": 0.374,
+      "reason": "ocean symbolizes peace and endless possibilities, aligning with personal growth",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/change/s5-5-word-neon.webp",
+      "key": "lexicon/change/s5-5-word-neon.webp",
+      "word": "change",
+      "line": "more step and we change the vibe This summer gon",
+      "t": 75.895,
+      "score": 0.8,
+      "cosine": 0.338,
+      "reason": "captures transformation and urban energy",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/change/s6-3-concept-art.webp",
+      "key": "lexicon/change/s6-3-concept-art.webp",
+      "word": "change",
+      "line": "more step and we change the vibe This summer gon",
+      "t": 75.895,
+      "score": 0.8,
+      "cosine": 0.338,
+      "reason": "symbolizes transformation and new beginnings",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s10-2-oil-light.webp",
+      "key": "lexicon/rhythm/s10-2-oil-light.webp",
+      "word": "rhythm",
+      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will",
+      "t": 157.106,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "aligns with focus and transformation",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s16-3-neon-sign.webp",
+      "key": "lexicon/rhythm/s16-3-neon-sign.webp",
+      "word": "rhythm",
+      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will",
+      "t": 157.106,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "captures night creativity, urban solitude",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s11-2-concept-art.webp",
+      "key": "lexicon/breathe/s11-2-concept-art.webp",
+      "word": "breathe",
+      "line": "Pour it up let it breathe Palm trees in the fantasy But we working",
+      "t": 96.932,
+      "score": 0.8,
+      "cosine": 0.336,
+      "reason": "captures intensity and effort, aligns with transformation theme",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-5-chalkboard.webp",
+      "key": "lexicon/heart/s2-5-chalkboard.webp",
+      "word": "heart",
+      "line": "no perfect start No fancy degree just a hungry heart Prompt by prompt Im learning the flow Ask better questions",
+      "t": 136.32,
+      "score": 0.8,
+      "cosine": 0.333,
+      "reason": "aligns with hopeful mood, heart symbol, but less about personal struggle",
+      "recipe": "5-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-4-papercut.webp",
+      "key": "lexicon/heart/s2-4-papercut.webp",
+      "word": "heart",
+      "line": "no perfect start No fancy degree just a hungry heart Prompt by prompt Im learning the flow Ask better questions",
+      "t": 136.32,
+      "score": 0.8,
+      "cosine": 0.333,
+      "reason": "symbolizes personal growth and transformation",
+      "recipe": "4-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "make the machine start working for you Focus in the morning rhythm at night Discipline dancing with neon lights Will in my",
+      "t": 157.279,
+      "score": 0.8,
+      "cosine": 0.332,
+      "reason": "captures night's hopeful, transformative mood",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heat/s2-1-stickers.webp",
+      "key": "lexicon/heat/s2-1-stickers.webp",
+      "word": "heat",
+      "line": "outside But the mind on overdrive Na na na feel that heat New world under my feet I aint",
+      "t": 115.84,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "captures heat and energy",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
+      "key": "lexicon/glow/s6-5-word-neon.webp",
+      "word": "glow",
+      "line": "glow",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "captures mood, but not summer transformation",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "glow",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "captures mood, but less about personal transformation",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s5-2-word-portrait.webp",
+      "key": "lexicon/phone/s5-2-word-portrait.webp",
+      "word": "phone",
+      "line": "by Like the sun was free but it wasnt mine Scrolling on the phone while the world got loud Everybody building I was sitting in doubt",
+      "t": 48.878,
+      "score": 0.75,
+      "cosine": 0.377,
+      "reason": "reflects contemplation and modern technology, but lacks summer transformation energy",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s2-2-word-portrait.webp",
+      "key": "lexicon/escape/s2-2-word-portrait.webp",
+      "word": "escape",
+      "line": "tryna be another tired face Counting down Friday like an escape I want Monday feeling like my own damn lane Not a",
+      "t": 128.37,
+      "score": 0.7,
+      "cosine": 0.392,
+      "reason": "Contrasts with song's feel-good mood",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s2-3-word-neon.webp",
+      "key": "lexicon/escape/s2-3-word-neon.webp",
+      "word": "escape",
+      "line": "tryna be another tired face Counting down Friday like an escape I want Monday feeling like my own damn lane Not a",
+      "t": 128.37,
+      "score": 0.7,
+      "cosine": 0.392,
+      "reason": "urban realism fits mood, but lacks summer vibe",
+      "recipe": "3-word-neon",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "seed": [
+      0,
+      1,
+      2
+    ],
+    "flame": [
+      3,
+      4,
+      15
+    ],
+    "waves": [
+      5,
+      8
+    ],
+    "vision": [
+      6
+    ],
+    "morning": [
+      7,
+      13,
+      14
+    ],
+    "sky": [
+      9,
+      10
+    ],
+    "summer": [
+      11,
+      12
+    ],
+    "phone": [
+      16,
+      29
+    ],
+    "ocean": [
+      17
+    ],
+    "change": [
+      18,
+      19
+    ],
+    "rhythm": [
+      20,
+      21
+    ],
+    "breathe": [
+      22
+    ],
+    "heart": [
+      23,
+      24
+    ],
+    "night": [
+      25
+    ],
+    "heat": [
+      26
+    ],
+    "glow": [
+      27,
+      28
+    ],
+    "escape": [
+      30,
+      31
+    ]
+  }
 }

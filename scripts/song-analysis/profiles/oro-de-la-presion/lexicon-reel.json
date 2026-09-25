@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "oro-de-la-presion",
-  "generatedAt": "2026-09-25T04:05:21.126Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:28:20.340Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 3701,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 61,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s2-1-photo.webp",
+      "key": "lexicon/fuego/s2-1-photo.webp",
+      "word": "fuego",
+      "line": "Esto es presión Esto es fuego Esto es cuando el vacío",
+      "t": 11.541,
+      "score": 0.9,
+      "cosine": 0.48,
+      "reason": "fire and desert fit struggle and transformation",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s2-2-dream-collage.webp",
+      "key": "lexicon/fuego/s2-2-dream-collage.webp",
+      "word": "fuego",
+      "line": "Esto es presión Esto es fuego Esto es cuando el vacío",
+      "t": 11.541,
+      "score": 0.9,
+      "cosine": 0.48,
+      "reason": "fits theme of fire and resilience",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fuego/s2-3-word-portrait.webp",
+      "key": "lexicon/fuego/s2-3-word-portrait.webp",
+      "word": "fuego",
+      "line": "Esto es presión Esto es fuego Esto es cuando el vacío",
+      "t": 11.541,
+      "score": 0.9,
+      "cosine": 0.48,
+      "reason": "fire symbolizes passion and struggle, fitting mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sparks/s2-6-cinema.webp",
+      "key": "lexicon/sparks/s2-6-cinema.webp",
+      "word": "sparks",
+      "line": "when the new wave sprout But I built with the sparks built with the scars Built with the bass and I",
+      "t": 151.278,
+      "score": 0.9,
+      "cosine": 0.478,
+      "reason": "symbolizes transformation and resilience",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-4-poster.webp",
+      "key": "lexicon/fire/s4-4-poster.webp",
+      "word": "fire",
+      "line": "miedo Llena el pecho con fire Step through the noise Climb a little higher No",
+      "t": 73.944,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "flame symbolizes fire and intensity",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-5-word-portrait.webp",
+      "key": "lexicon/fire/s4-5-word-portrait.webp",
+      "word": "fire",
+      "line": "miedo Llena el pecho con fire Step through the noise Climb a little higher No",
+      "t": 73.944,
+      "score": 0.9,
+      "cosine": 0.458,
+      "reason": "aligns with themes of transformation and resilience",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s8-1-word-portrait.webp",
+      "key": "lexicon/hands/s8-1-word-portrait.webp",
+      "word": "hands",
+      "line": "Laptop closed but the soul still loading Hands still dirty but the heart still golden I was down in the",
+      "t": 54.799,
+      "score": 0.9,
+      "cosine": 0.442,
+      "reason": "fits mood and themes, powerful imagery",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s0-6-neon-sign.webp",
+      "key": "lexicon/drums/s0-6-neon-sign.webp",
+      "word": "drums",
+      "line": "fuego in my eyes Plátano perico ripiao drums in the street 808 under my chest brass under my feet",
+      "t": 137.207,
+      "score": 0.9,
+      "cosine": 0.416,
+      "reason": "matches urban nightlife, creative energy",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steel/s0-2-concept-art.webp",
+      "key": "lexicon/steel/s0-2-concept-art.webp",
+      "word": "steel",
+      "line": "into gloria Every no got folded in steel Every scar turned proof Im real",
+      "t": 271.626,
+      "score": 0.9,
+      "cosine": 0.392,
+      "reason": "symbolizes transformation and resilience",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s8-1-neon-sign.webp",
+      "key": "lexicon/bass/s8-1-neon-sign.webp",
+      "word": "bass",
+      "line": "ya ya Let the bass roll low Del vacío hasta el oro I had too much weight sitting heavy on my shoulders Demasiadas",
+      "t": 32.206,
+      "score": 0.85,
+      "cosine": 0.471,
+      "reason": "fits urban nightlife, music, resilience theme",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-4-film-still.webp",
+      "key": "lexicon/beat/s0-4-film-still.webp",
+      "word": "beat",
+      "line": "I was down in the void where the lights dont show Now I beat on the dark till the whole thing glow Yo no estaba",
+      "t": 59.768,
+      "score": 0.85,
+      "cosine": 0.441,
+      "reason": "reflects struggle and transformation",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-6-neon-sign.webp",
+      "key": "lexicon/soul/s4-6-neon-sign.webp",
+      "word": "soul",
+      "line": "had to take it all Laptop closed but the soul still loading Hands still dirty but the heart still",
+      "t": 53.393,
+      "score": 0.85,
+      "cosine": 0.392,
+      "reason": "aligns with digital creation, urban solitude, and hopeful resilience",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/steel/s1-2-pixel.webp",
+      "key": "lexicon/steel/s1-2-pixel.webp",
+      "word": "steel",
+      "line": "into gloria Every no got folded in steel Every scar turned proof Im real",
+      "t": 271.626,
+      "score": 0.85,
+      "cosine": 0.392,
+      "reason": "fits theme but lacks golden transformation",
+      "recipe": "2-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sparks/s3-1-photo.webp",
+      "key": "lexicon/sparks/s3-1-photo.webp",
+      "word": "sparks",
+      "line": "when the new wave sprout But I built with the sparks built with the scars Built with the bass and I",
+      "t": 151.278,
+      "score": 0.8,
+      "cosine": 0.478,
+      "reason": "fits mood but lacks pain transformation",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sparks/s3-2-neon-night.webp",
+      "key": "lexicon/sparks/s3-2-neon-night.webp",
+      "word": "sparks",
+      "line": "when the new wave sprout But I built with the sparks built with the scars Built with the bass and I",
+      "t": 151.278,
+      "score": 0.8,
+      "cosine": 0.478,
+      "reason": "fits mood but lacks direct connection to song themes",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s7-6-poster.webp",
+      "key": "lexicon/bass/s7-6-poster.webp",
+      "word": "bass",
+      "line": "ya ya Let the bass roll low Del vacío hasta el oro I had too much weight sitting heavy on my shoulders Demasiadas",
+      "t": 32.206,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "fits mood and theme, abstract modern art",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s8-2-anime.webp",
+      "key": "lexicon/bass/s8-2-anime.webp",
+      "word": "bass",
+      "line": "ya ya Let the bass roll low Del vacío hasta el oro I had too much weight sitting heavy on my shoulders Demasiadas",
+      "t": 32.206,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "Eye symbolizes inner fire, passion, and transformation.",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-6-word-neon.webp",
+      "key": "lexicon/fire/s4-6-word-neon.webp",
+      "word": "fire",
+      "line": "miedo Llena el pecho con fire Step through the noise Climb a little higher No",
+      "t": 73.944,
+      "score": 0.8,
+      "cosine": 0.458,
+      "reason": "aligns with urban setting and intensity",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-5-film-still.webp",
+      "key": "lexicon/sky/s2-5-film-still.webp",
+      "word": "sky",
+      "line": "De Queens to the island de la isla to the sky Boricua y Quisqueya fuego in my",
+      "t": 132.551,
+      "score": 0.8,
+      "cosine": 0.443,
+      "reason": "symbolizes transformation and hope, aligns with golden hour's majesty",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s2-1-dream-collage.webp",
+      "key": "lexicon/sky/s2-1-dream-collage.webp",
+      "word": "sky",
+      "line": "De Queens to the island de la isla to the sky Boricua y Quisqueya fuego in my",
+      "t": 132.551,
+      "score": 0.8,
+      "cosine": 0.443,
+      "reason": "captures cosmic wonder and imagination",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s8-2-word-neon.webp",
+      "key": "lexicon/hands/s8-2-word-neon.webp",
+      "word": "hands",
+      "line": "Laptop closed but the soul still loading Hands still dirty but the heart still golden I was down in the",
+      "t": 54.799,
+      "score": 0.8,
+      "cosine": 0.442,
+      "reason": "symbolic of struggle and unity, aligns with resilience theme",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-6-anime.webp",
+      "key": "lexicon/beat/s0-6-anime.webp",
+      "word": "beat",
+      "line": "I was down in the void where the lights dont show Now I beat on the dark till the whole thing glow Yo no estaba",
+      "t": 59.768,
+      "score": 0.8,
+      "cosine": 0.441,
+      "reason": "resilience and transformation, but lacks cultural pride",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/beat/s0-5-concept-art.webp",
+      "key": "lexicon/beat/s0-5-concept-art.webp",
+      "word": "beat",
+      "line": "I was down in the void where the lights dont show Now I beat on the dark till the whole thing glow Yo no estaba",
+      "t": 59.768,
+      "score": 0.8,
+      "cosine": 0.441,
+      "reason": "symbolizes struggle and triumph",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ground/s5-2-concept-art.webp",
+      "key": "lexicon/ground/s5-2-concept-art.webp",
+      "word": "ground",
+      "line": "Ay ya ya Feet on the ground Ay ya ya Let",
+      "t": 28.849,
+      "score": 0.8,
+      "cosine": 0.438,
+      "reason": "reflects struggle and resilience in urban setting",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s5-1-dream-collage.webp",
+      "key": "lexicon/time/s5-1-dream-collage.webp",
+      "word": "time",
+      "line": "dreams getting older Same walls same clock same fight with time Same voice in the dark saying you aint gon shine Pero",
+      "t": 39.126,
+      "score": 0.8,
+      "cosine": 0.435,
+      "reason": "Reflects time's passage and transformation, aligns with dreamlike resilience",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s2-4-papercut.webp",
+      "key": "lexicon/heart/s2-4-papercut.webp",
+      "word": "heart",
+      "line": "closed but the soul still loading Hands still dirty but the heart still golden I was down in the void where the lights dont",
+      "t": 55.877,
+      "score": 0.8,
+      "cosine": 0.431,
+      "reason": "represents transformation and resilience",
+      "recipe": "4-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s6-6-film-still.webp",
+      "key": "lexicon/void/s6-6-film-still.webp",
+      "word": "void",
+      "line": "still dirty but the heart still golden I was down in the void where the lights dont show Now I beat on the dark till the",
+      "t": 57.899,
+      "score": 0.8,
+      "cosine": 0.429,
+      "reason": "matches void theme, light hope in darkness",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/void/s6-2-cinema.webp",
+      "key": "lexicon/void/s6-2-cinema.webp",
+      "word": "void",
+      "line": "still dirty but the heart still golden I was down in the void where the lights dont show Now I beat on the dark till the",
+      "t": 57.899,
+      "score": 0.8,
+      "cosine": 0.429,
+      "reason": "cosmic void aligns with darkness but lacks personal struggle",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/healing/s2-2-photo.webp",
+      "key": "lexicon/healing/s2-2-photo.webp",
+      "word": "healing",
+      "line": "te conocieron en la oscuridad Some nights are for healing Some nights are for hands in the air",
+      "t": 235.263,
+      "score": 0.8,
+      "cosine": 0.428,
+      "reason": "fits mood but lacks healing imagery",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s0-4-concept-art.webp",
+      "key": "lexicon/drums/s0-4-concept-art.webp",
+      "word": "drums",
+      "line": "fuego in my eyes Plátano perico ripiao drums in the street 808 under my chest brass under my feet",
+      "t": 137.207,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects mood but lacks triumph",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s6-3-manga-line.webp",
+      "key": "lexicon/cold/s6-3-manga-line.webp",
+      "word": "cold",
+      "line": "in the soul Built from the pressure Raised by the cold Venimos del void Now we turn it into gold Oro",
+      "t": 89.443,
+      "score": 0.8,
+      "cosine": 0.416,
+      "reason": "reflects coldness and isolation, aligns with transformation theme",
+      "recipe": "3-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s1-3-word-portrait.webp",
+      "key": "lexicon/stop/s1-3-word-portrait.webp",
+      "word": "stop",
+      "line": "One deep breath then I stood up tall Had to stop waiting had to take it all Laptop",
+      "t": 49.701,
+      "score": 0.8,
+      "cosine": 0.414,
+      "reason": "fits mood but lacks direct tie to song themes",
+      "recipe": "3-word-portrait",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "fuego": [
+      0,
+      1,
+      2
+    ],
+    "sparks": [
+      3,
+      13,
+      14
+    ],
+    "fire": [
+      4,
+      5,
+      17
+    ],
+    "hands": [
+      6,
+      20
+    ],
+    "drums": [
+      7,
+      29
+    ],
+    "steel": [
+      8,
+      12
+    ],
+    "bass": [
+      9,
+      15,
+      16
+    ],
+    "beat": [
+      10,
+      21,
+      22
+    ],
+    "soul": [
+      11
+    ],
+    "sky": [
+      18,
+      19
+    ],
+    "ground": [
+      23
+    ],
+    "time": [
+      24
+    ],
+    "heart": [
+      25
+    ],
+    "void": [
+      26,
+      27
+    ],
+    "healing": [
+      28
+    ],
+    "cold": [
+      30
+    ],
+    "stop": [
+      31
+    ]
+  }
 }

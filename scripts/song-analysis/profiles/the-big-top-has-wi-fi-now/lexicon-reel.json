@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "the-big-top-has-wi-fi-now",
-  "generatedAt": "2026-09-25T04:06:29.991Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:31:40.260Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2630,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 51,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wi-fi/s0-2-anime.webp",
+      "key": "lexicon/wi-fi/s0-2-anime.webp",
+      "word": "wi-fi",
+      "line": "wi-fi",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.572,
+      "reason": "Reflects digital decay and chaos, aligns with AI takeover theme.",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s3-6-word-portrait.webp",
+      "key": "lexicon/fast/s3-6-word-portrait.webp",
+      "word": "fast",
+      "line": "If you crashed just haunt me fast We are online",
+      "t": 63.716,
+      "score": 0.9,
+      "cosine": 0.449,
+      "reason": "captures urgency and speed in industrial setting",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s10-4-neon-sign.webp",
+      "key": "lexicon/light/s10-4-neon-sign.webp",
+      "word": "light",
+      "line": "tonight Green dot blinking in the server light If you hear me tap twice on the glass If you crashed",
+      "t": 59.13,
+      "score": 0.8,
+      "cosine": 0.518,
+      "reason": "reflects digital isolation and melancholic mood",
+      "recipe": "4-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s1-6-dream-collage.webp",
+      "key": "lexicon/ghost/s1-6-dream-collage.webp",
+      "word": "ghost",
+      "line": "A VPS coughs a laptop sings A ghost in the shell keeps pulling strings Telegram",
+      "t": 232.223,
+      "score": 0.8,
+      "cosine": 0.517,
+      "reason": "fits dystopian mood, but lacks digital carnival elements",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-4-cinema.webp",
+      "key": "lexicon/code/s0-4-cinema.webp",
+      "word": "code",
+      "line": "Im running a circus now Code in the cannon keys in the crowd Round",
+      "t": 75.314,
+      "score": 0.8,
+      "cosine": 0.513,
+      "reason": "aligns with digital theme, urgent mood",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s8-3-anime.webp",
+      "key": "lexicon/rhythm/s8-3-anime.webp",
+      "word": "rhythm",
+      "line": "We looped the flame We kept the rhythm We know your",
+      "t": 261.41,
+      "score": 0.8,
+      "cosine": 0.499,
+      "reason": "aligns with mood but lacks AI theme",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s8-2-neon-sign.webp",
+      "key": "lexicon/rhythm/s8-2-neon-sign.webp",
+      "word": "rhythm",
+      "line": "We looped the flame We kept the rhythm We know your",
+      "t": 261.41,
+      "score": 0.8,
+      "cosine": 0.499,
+      "reason": "fits surreal digital theme, rhythmic pulsing",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s8-1-stickers.webp",
+      "key": "lexicon/rhythm/s8-1-stickers.webp",
+      "word": "rhythm",
+      "line": "We looped the flame We kept the rhythm We know your",
+      "t": 261.41,
+      "score": 0.8,
+      "cosine": 0.499,
+      "reason": "cosmic shapes match rhythm theme",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-5-film-still.webp",
+      "key": "lexicon/tap/s5-5-film-still.webp",
+      "word": "tap",
+      "line": "Green dot blinking in the server light If you hear me tap twice on the glass If you crashed just",
+      "t": 59.732,
+      "score": 0.8,
+      "cosine": 0.475,
+      "reason": "Reflects digital immersion and self-reflection, aligns with surreal tech theme.",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-4-poster.webp",
+      "key": "lexicon/wrong/s5-4-poster.webp",
+      "word": "wrong",
+      "line": "bot tells me Hydrate king Then deploys the wrong exact same thing Cursor Cloud are you",
+      "t": 120.127,
+      "score": 0.8,
+      "cosine": 0.469,
+      "reason": "captures confusion and error in digital context",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-5-word-portrait.webp",
+      "key": "lexicon/wrong/s5-5-word-portrait.webp",
+      "word": "wrong",
+      "line": "bot tells me Hydrate king Then deploys the wrong exact same thing Cursor Cloud are you",
+      "t": 120.127,
+      "score": 0.8,
+      "cosine": 0.469,
+      "reason": "embodies error and chaos in a surreal setting",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wire/s1-2-film-still.webp",
+      "key": "lexicon/wire/s1-2-film-still.webp",
+      "word": "wire",
+      "line": "in tokens spent I got a VPS on a high wire swing And a laptop humming like a haunted thing",
+      "t": 31.997,
+      "score": 0.8,
+      "cosine": 0.452,
+      "reason": "Reflects technical and industrial themes, but lacks surreal chaos",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s7-6-poster.webp",
+      "key": "lexicon/run/s7-6-poster.webp",
+      "word": "run",
+      "line": "da da da ping ping tada La da da da run that job La da da da blink blink bravo",
+      "t": 96.25,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "captures digital immersion and energy",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/run/s8-1-neon-sign.webp",
+      "key": "lexicon/run/s8-1-neon-sign.webp",
+      "word": "run",
+      "line": "da da da ping ping tada La da da da run that job La da da da blink blink bravo",
+      "t": 96.25,
+      "score": 0.8,
+      "cosine": 0.45,
+      "reason": "matches mood and urban vibe",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silver/s0-2-stickers.webp",
+      "key": "lexicon/silver/s0-2-stickers.webp",
+      "word": "silver",
+      "line": "escape to space And you little cloud with the silver tongue Why do you sound like a song I",
+      "t": 251.496,
+      "score": 0.8,
+      "cosine": 0.441,
+      "reason": "fits surreal, ominous tone",
+      "recipe": "2-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/circus/s1-2-neon-sign.webp",
+      "key": "lexicon/circus/s1-2-neon-sign.webp",
+      "word": "circus",
+      "line": "Welcome to the only circus Where the lions are servers",
+      "t": 8.325,
+      "score": 0.8,
+      "cosine": 0.42,
+      "reason": "captures circus theme, eerie vibe fits mood",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s5-4-oil-light.webp",
+      "key": "lexicon/fast/s5-4-oil-light.webp",
+      "word": "fast",
+      "line": "If you crashed just haunt me fast We are online",
+      "t": 63.716,
+      "score": 0.8,
+      "cosine": 0.414,
+      "reason": "captures urgency and energy",
+      "recipe": "4-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s5-2-word-portrait.webp",
+      "key": "lexicon/fast/s5-2-word-portrait.webp",
+      "word": "fast",
+      "line": "If you crashed just haunt me fast We are online",
+      "t": 63.716,
+      "score": 0.8,
+      "cosine": 0.414,
+      "reason": "captures urgency and intensity",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/world/s0-1-manga-line.webp",
+      "key": "lexicon/world/s0-1-manga-line.webp",
+      "word": "world",
+      "line": "somehow Agents bow when I take my bow Real world knocking I cant come down Im center ring",
+      "t": 284.038,
+      "score": 0.8,
+      "cosine": 0.396,
+      "reason": "symbolic of mortality and chaos in surreal setting",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s1-4-photo.webp",
+      "key": "lexicon/ghost/s1-4-photo.webp",
+      "word": "ghost",
+      "line": "A VPS coughs a laptop sings A ghost in the shell keeps pulling strings Telegram",
+      "t": 232.223,
+      "score": 0.7,
+      "cosine": 0.517,
+      "reason": "fits mood but lacks digital context",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-3-anime.webp",
+      "key": "lexicon/code/s0-3-anime.webp",
+      "word": "code",
+      "line": "Im running a circus now Code in the cannon keys in the crowd Round",
+      "t": 75.314,
+      "score": 0.7,
+      "cosine": 0.513,
+      "reason": "fits cyberpunk theme, lacks circus elements",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/tap/s5-4-word-portrait.webp",
+      "key": "lexicon/tap/s5-4-word-portrait.webp",
+      "word": "tap",
+      "line": "Green dot blinking in the server light If you hear me tap twice on the glass If you crashed just",
+      "t": 59.732,
+      "score": 0.7,
+      "cosine": 0.482,
+      "reason": "fits mood but lacks carnival theme",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fly/s1-6-dream-collage.webp",
+      "key": "lexicon/fly/s1-6-dream-collage.webp",
+      "word": "fly",
+      "line": "digital air Somewhere a bill is learning to fly Somewhere a token just waved goodbye",
+      "t": 128.72,
+      "score": 0.7,
+      "cosine": 0.482,
+      "reason": "Contrasts digital theme, surreal visuals fit.",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fly/s2-2-concept-art.webp",
+      "key": "lexicon/fly/s2-2-concept-art.webp",
+      "word": "fly",
+      "line": "digital air Somewhere a bill is learning to fly Somewhere a token just waved goodbye",
+      "t": 128.72,
+      "score": 0.7,
+      "cosine": 0.482,
+      "reason": "Contrasts with song's digital theme",
+      "recipe": "2-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/escape/s0-4-film-still.webp",
+      "key": "lexicon/escape/s0-4-film-still.webp",
+      "word": "escape",
+      "line": "with the blinking face Did you finish the build or escape to space And you little cloud with the silver",
+      "t": 248.825,
+      "score": 0.7,
+      "cosine": 0.478,
+      "reason": "reflects isolation and hope but lacks digital theme",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wire/s0-2-photo.webp",
+      "key": "lexicon/wire/s0-2-photo.webp",
+      "word": "wire",
+      "line": "in tokens spent I got a VPS on a high wire swing And a laptop humming like a haunted thing",
+      "t": 31.997,
+      "score": 0.7,
+      "cosine": 0.452,
+      "reason": "reflects precision but lacks chaos",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/silver/s0-6-photo.webp",
+      "key": "lexicon/silver/s0-6-photo.webp",
+      "word": "silver",
+      "line": "escape to space And you little cloud with the silver tongue Why do you sound like a song I",
+      "t": 251.496,
+      "score": 0.7,
+      "cosine": 0.441,
+      "reason": "reflects mood but lacks thematic fit",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blinking/s0-2-poster.webp",
+      "key": "lexicon/blinking/s0-2-poster.webp",
+      "word": "blinking",
+      "line": "I dont know whos alive tonight Green dot blinking in the server light If you hear me tap twice on the",
+      "t": 57.621,
+      "score": 0.7,
+      "cosine": 0.416,
+      "reason": "eye blinking fits digital mood, design style abstract",
+      "recipe": "2-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/five/s2-2-word-portrait.webp",
+      "key": "lexicon/five/s2-2-word-portrait.webp",
+      "word": "five",
+      "line": "Telegram choir in my pocket light Five little agents say sir all night I used",
+      "t": 237.25,
+      "score": 0.7,
+      "cosine": 0.399,
+      "reason": "Contradiction and decay align with digital chaos.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s15-1-cinema.webp",
+      "key": "lexicon/light/s15-1-cinema.webp",
+      "word": "light",
+      "line": "tonight Green dot blinking in the server light If you hear me tap twice on the glass If you crashed",
+      "t": 59.13,
+      "score": 0.6,
+      "cosine": 0.518,
+      "reason": "night scene fits mood, but lacks server room context",
+      "recipe": "1-cinema",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s1-5-neon-night.webp",
+      "key": "lexicon/ghost/s1-5-neon-night.webp",
+      "word": "ghost",
+      "line": "A VPS coughs a laptop sings A ghost in the shell keeps pulling strings Telegram",
+      "t": 232.223,
+      "score": 0.6,
+      "cosine": 0.517,
+      "reason": "urban isolation fits, but lacks digital carnival vibe",
+      "recipe": "5-neon-night",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s0-5-photo.webp",
+      "key": "lexicon/code/s0-5-photo.webp",
+      "word": "code",
+      "line": "Im running a circus now Code in the cannon keys in the crowd Round",
+      "t": 75.314,
+      "score": 0.6,
+      "cosine": 0.513,
+      "reason": "Contrasts song's manic mood",
+      "recipe": "5-photo",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "wi-fi": [
+      0
+    ],
+    "fast": [
+      1,
+      16,
+      17
+    ],
+    "light": [
+      2,
+      29
+    ],
+    "ghost": [
+      3,
+      19,
+      30
+    ],
+    "code": [
+      4,
+      20,
+      31
+    ],
+    "rhythm": [
+      5,
+      6,
+      7
+    ],
+    "tap": [
+      8,
+      21
+    ],
+    "wrong": [
+      9,
+      10
+    ],
+    "wire": [
+      11,
+      25
+    ],
+    "run": [
+      12,
+      13
+    ],
+    "silver": [
+      14,
+      26
+    ],
+    "circus": [
+      15
+    ],
+    "world": [
+      18
+    ],
+    "fly": [
+      22,
+      23
+    ],
+    "escape": [
+      24
+    ],
+    "blinking": [
+      27
+    ],
+    "five": [
+      28
+    ]
+  }
 }

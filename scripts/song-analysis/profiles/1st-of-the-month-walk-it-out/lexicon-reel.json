@@ -1,15 +1,473 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-09-25T04:01:15.348Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:10:56.122Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2408,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 53,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s3-5-word-portrait.webp",
+      "key": "lexicon/code/s3-5-word-portrait.webp",
+      "word": "code",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "score": 0.9,
+      "cosine": 0.354,
+      "reason": "aligns with themes of renewal and self-improvement through discipline",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s0-6-photo.webp",
+      "key": "lexicon/walk/s0-6-photo.webp",
+      "word": "walk",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "score": 0.9,
+      "cosine": 0.342,
+      "reason": "fits mood and theme of renewal",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s8-2-photo.webp",
+      "key": "lexicon/move/s8-2-photo.webp",
+      "word": "move",
+      "line": "then it ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 113.92,
+      "score": 0.9,
+      "cosine": 0.306,
+      "reason": "captures gritty determination",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s6-5-word-portrait.webp",
+      "key": "lexicon/build/s6-5-word-portrait.webp",
+      "word": "build",
+      "line": "show up Word is born, what you say gotta stay If you build it brick by brick, you can change your fate It's",
+      "t": 60.128,
+      "score": 0.85,
+      "cosine": 0.504,
+      "reason": "aligns with themes of resilience and renewal",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s0-1-word-portrait.webp",
+      "key": "lexicon/walk/s0-1-word-portrait.webp",
+      "word": "walk",
+      "line": "the month It's the first of the month Walk it out, walk it out, walk it out Off of that truck",
+      "t": 15.4,
+      "score": 0.85,
+      "cosine": 0.342,
+      "reason": "aligns with resilience and urban setting",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/borough/s0-1-photo.webp",
+      "key": "lexicon/borough/s0-1-photo.webp",
+      "word": "borough",
+      "line": "look impossible, today you're robbed From the borough blocks to the digital gold We still got stories",
+      "t": 158.198,
+      "score": 0.85,
+      "cosine": 0.323,
+      "reason": "captures urban pride and community spirit",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/build/s6-6-word-neon.webp",
+      "key": "lexicon/build/s6-6-word-neon.webp",
+      "word": "build",
+      "line": "show up Word is born, what you say gotta stay If you build it brick by brick, you can change your fate It's",
+      "t": 60.128,
+      "score": 0.8,
+      "cosine": 0.504,
+      "reason": "urban setting, neon 'build', creative energy",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/enough/s3-2-word-portrait.webp",
+      "key": "lexicon/enough/s3-2-word-portrait.webp",
+      "word": "enough",
+      "line": "If you scared of the moment, move over Fast enough, better prove it then Clock still tickin', don't",
+      "t": 148.643,
+      "score": 0.8,
+      "cosine": 0.438,
+      "reason": "neon resilience, urban urgency fits",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/enough/s4-2-photo.webp",
+      "key": "lexicon/enough/s4-2-photo.webp",
+      "word": "enough",
+      "line": "If you scared of the moment, move over Fast enough, better prove it then Clock still tickin', don't",
+      "t": 148.643,
+      "score": 0.8,
+      "cosine": 0.438,
+      "reason": "fits mood but lacks urban grit",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s2-3-anime.webp",
+      "key": "lexicon/soul/s2-3-anime.webp",
+      "word": "soul",
+      "line": "the same inside Boricua blood, Dominican soul, Veneno email Turn the void into gold Everybody",
+      "t": 49.853,
+      "score": 0.8,
+      "cosine": 0.425,
+      "reason": "image captures resilience and rebirth",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wall/s0-3-cinema.webp",
+      "key": "lexicon/wall/s0-3-cinema.webp",
+      "word": "wall",
+      "line": "build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all Can",
+      "t": 109.33,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "resilience, mood match",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/different/s8-1-word-neon.webp",
+      "key": "lexicon/different/s8-1-word-neon.webp",
+      "word": "different",
+      "line": "wind slowin' down Got the whole summer lookin' different now Walk it out, walk it out, walk",
+      "t": 27.562,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "aligns with themes of individuality and rebirth",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/road/s3-3-oil-light.webp",
+      "key": "lexicon/road/s3-3-oil-light.webp",
+      "word": "road",
+      "line": "ride into the air? Or you movin' over when the road get there? Come on! It's the first of the month Walk",
+      "t": 121.324,
+      "score": 0.8,
+      "cosine": 0.374,
+      "reason": "symbolic journey aligns with theme",
+      "recipe": "3-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-6-dark-surreal.webp",
+      "key": "lexicon/gold/s12-6-dark-surreal.webp",
+      "word": "gold",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "symbolizes renewal and wealth, aligns with theme",
+      "recipe": "6-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/change/s5-5-word-neon.webp",
+      "key": "lexicon/change/s5-5-word-neon.webp",
+      "word": "change",
+      "line": "what you say gotta stay If you build it brick by brick, you can change your fate It's the first of the month Walk it",
+      "t": 61.684,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "captures urban transformation, new beginnings",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/change/s6-3-concept-art.webp",
+      "key": "lexicon/change/s6-3-concept-art.webp",
+      "word": "change",
+      "line": "what you say gotta stay If you build it brick by brick, you can change your fate It's the first of the month Walk it",
+      "t": 61.684,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "symbolic of transformation and new beginnings",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/building/s4-1-stickers.webp",
+      "key": "lexicon/building/s4-1-stickers.webp",
+      "word": "building",
+      "line": "celebrate the climb It's the first of the month, now it's building time It's the first of the month",
+      "t": 172.083,
+      "score": 0.8,
+      "cosine": 0.357,
+      "reason": "aligns with themes of progress and renewal",
+      "recipe": "1-stickers",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s3-6-word-neon.webp",
+      "key": "lexicon/code/s3-6-word-neon.webp",
+      "word": "code",
+      "line": "I'll build it again X1C7, that's the code on the wall If the dream too small, then it ain't one at all",
+      "t": 108.854,
+      "score": 0.8,
+      "cosine": 0.354,
+      "reason": "aligns with urban resilience and self-determination",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s18-4-cinema.webp",
+      "key": "lexicon/stay/s18-4-cinema.webp",
+      "word": "stay",
+      "line": "till the hurt show up Word is born, what you say gotta stay If you build it brick by brick, you can change your fate It's",
+      "t": 59.525,
+      "score": 0.8,
+      "cosine": 0.329,
+      "reason": "resilience and new beginnings align with song themes",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s0-4-anime.webp",
+      "key": "lexicon/broken/s0-4-anime.webp",
+      "word": "broken",
+      "line": "We still got stories that ain't been told No broken promises, no fake displays Death before dishonor,",
+      "t": 163.028,
+      "score": 0.8,
+      "cosine": 0.325,
+      "reason": "symbolizes resilience and renewal",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/broken/s0-2-film-still.webp",
+      "key": "lexicon/broken/s0-2-film-still.webp",
+      "word": "broken",
+      "line": "We still got stories that ain't been told No broken promises, no fake displays Death before dishonor,",
+      "t": 163.028,
+      "score": 0.8,
+      "cosine": 0.325,
+      "reason": "symbolizes despair and resilience, aligns with 'broken'",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/borough/s0-2-dream-collage.webp",
+      "key": "lexicon/borough/s0-2-dream-collage.webp",
+      "word": "borough",
+      "line": "look impossible, today you're robbed From the borough blocks to the digital gold We still got stories",
+      "t": 158.198,
+      "score": 0.8,
+      "cosine": 0.323,
+      "reason": "captures borough spirit but leans celebratory",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fast/s3-5-neon-night.webp",
+      "key": "lexicon/fast/s3-5-neon-night.webp",
+      "word": "fast",
+      "line": "ain't one at all Can you keep up? Can you move that fast? Can you keep up? Can you make it last?",
+      "t": 114.277,
+      "score": 0.8,
+      "cosine": 0.322,
+      "reason": "fits mood but lacks military precision",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s10-1-photo.webp",
+      "key": "lexicon/dreams/s10-1-photo.webp",
+      "word": "dreams",
+      "line": "lose the game Side trends forever, that's family time Dreams look impossible, today you're robbed From",
+      "t": 154.935,
+      "score": 0.8,
+      "cosine": 0.305,
+      "reason": "fits mood but lacks song's specific themes",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/gold/s12-3-dream-collage.webp",
+      "key": "lexicon/gold/s12-3-dream-collage.webp",
+      "word": "gold",
+      "line": "soul, Veneno email Turn the void into gold Everybody got a plan till the work show up Everybody",
+      "t": 52.512,
+      "score": 0.7,
+      "cosine": 0.365,
+      "reason": "Contrast of destruction and creation, aligns with turning void into gold",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/change/s6-4-anime.webp",
+      "key": "lexicon/change/s6-4-anime.webp",
+      "word": "change",
+      "line": "what you say gotta stay If you build it brick by brick, you can change your fate It's the first of the month Walk it",
+      "t": 61.684,
+      "score": 0.7,
+      "cosine": 0.365,
+      "reason": "Contrasts mood but captures resilience",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/building/s5-1-papercut.webp",
+      "key": "lexicon/building/s5-1-papercut.webp",
+      "word": "building",
+      "line": "celebrate the climb It's the first of the month, now it's building time It's the first of the month",
+      "t": 172.083,
+      "score": 0.7,
+      "cosine": 0.357,
+      "reason": "Contrasts urban theme, aligns with renewal",
+      "recipe": "1-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s18-5-dream-collage.webp",
+      "key": "lexicon/night/s18-5-dream-collage.webp",
+      "word": "night",
+      "line": "made the next one tall Nursing home systems, late night calls Now I walk through a law firm, solvin'",
+      "t": 98.79,
+      "score": 0.7,
+      "cosine": 0.351,
+      "reason": "cosmic rebirth aligns with theme",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/forever/s6-2-anime.webp",
+      "key": "lexicon/forever/s6-2-anime.webp",
+      "word": "forever",
+      "line": "still tickin', don't lose the game Side trends forever, that's family time Dreams look impossible,",
+      "t": 153.356,
+      "score": 0.7,
+      "cosine": 0.336,
+      "reason": "image evokes resilience but lacks urban pride",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/forever/s6-1-stained-glass.webp",
+      "key": "lexicon/forever/s6-1-stained-glass.webp",
+      "word": "forever",
+      "line": "still tickin', don't lose the game Side trends forever, that's family time Dreams look impossible,",
+      "t": 153.356,
+      "score": 0.7,
+      "cosine": 0.336,
+      "reason": "Eternal themes, but lacks urban grit",
+      "recipe": "1-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/forever/s6-3-cinema.webp",
+      "key": "lexicon/forever/s6-3-cinema.webp",
+      "word": "forever",
+      "line": "still tickin', don't lose the game Side trends forever, that's family time Dreams look impossible,",
+      "t": 153.356,
+      "score": 0.7,
+      "cosine": 0.336,
+      "reason": "Eternal resilience, but lacks urban grit",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s6-1-dream-collage.webp",
+      "key": "lexicon/sun/s6-1-dream-collage.webp",
+      "word": "sun",
+      "line": "it out, walk it out It's the first of the month Sun up, wind slowin' down Got the whole summer lookin'",
+      "t": 24.253,
+      "score": 0.7,
+      "cosine": 0.331,
+      "reason": "fits mood but lacks urban grit",
+      "recipe": "1-dream-collage",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "code": [
+      0,
+      17
+    ],
+    "walk": [
+      1,
+      4
+    ],
+    "move": [
+      2
+    ],
+    "build": [
+      3,
+      6
+    ],
+    "borough": [
+      5,
+      21
+    ],
+    "enough": [
+      7,
+      8
+    ],
+    "soul": [
+      9
+    ],
+    "wall": [
+      10
+    ],
+    "different": [
+      11
+    ],
+    "road": [
+      12
+    ],
+    "gold": [
+      13,
+      24
+    ],
+    "change": [
+      14,
+      15,
+      25
+    ],
+    "building": [
+      16,
+      26
+    ],
+    "stay": [
+      18
+    ],
+    "broken": [
+      19,
+      20
+    ],
+    "fast": [
+      22
+    ],
+    "dreams": [
+      23
+    ],
+    "night": [
+      27
+    ],
+    "forever": [
+      28,
+      29,
+      30
+    ],
+    "sun": [
+      31
+    ]
+  }
 }

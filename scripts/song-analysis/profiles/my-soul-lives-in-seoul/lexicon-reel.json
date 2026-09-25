@@ -1,15 +1,469 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-09-25T04:04:53.151Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:26:24.530Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2664,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 49,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s0-3-word-portrait.webp",
+      "key": "lexicon/seoul/s0-3-word-portrait.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "captures Seoul's essence and mood",
+      "recipe": "3-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s1-6-word-portrait.webp",
+      "key": "lexicon/seoul/s1-6-word-portrait.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "captures mood and symbolism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s6-5-word-neon.webp",
+      "key": "lexicon/glow/s6-5-word-neon.webp",
+      "word": "glow",
+      "line": "we glow My soul lives in Seoul Ohohoh call me",
+      "t": 100.287,
+      "score": 0.9,
+      "cosine": 0.464,
+      "reason": "captures mood and theme",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s7-1-word-portrait.webp",
+      "key": "lexicon/glow/s7-1-word-portrait.webp",
+      "word": "glow",
+      "line": "we glow My soul lives in Seoul Ohohoh call me",
+      "t": 100.287,
+      "score": 0.9,
+      "cosine": 0.464,
+      "reason": "captures mood and theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s7-6-word-portrait.webp",
+      "key": "lexicon/night/s7-6-word-portrait.webp",
+      "word": "night",
+      "line": "my good night We fight we make up Then we laugh on the phone No matter where you are You never feel",
+      "t": 76.162,
+      "score": 0.9,
+      "cosine": 0.388,
+      "reason": "captures mood and theme",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s16-4-word-portrait.webp",
+      "key": "lexicon/heart/s16-4-word-portrait.webp",
+      "word": "heart",
+      "line": "My soul lives in Seoul But my heart lives wherever you call",
+      "t": 4.386,
+      "score": 0.9,
+      "cosine": 0.387,
+      "reason": "fits romantic mood and theme",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/seoul/s2-3-chalkboard.webp",
+      "key": "lexicon/seoul/s2-3-chalkboard.webp",
+      "word": "seoul",
+      "line": "Yeah My soul lives in Seoul But my heart lives wherever you",
+      "t": 3.855,
+      "score": 0.9,
+      "cosine": 0.336,
+      "reason": "Captures Seoul's vibrancy and time theme",
+      "recipe": "3-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/laughing/s4-2-neon-sign.webp",
+      "key": "lexicon/laughing/s4-2-neon-sign.webp",
+      "word": "laughing",
+      "line": "froze Front cam back cam why am I showing the floor You laughing so hard now I love you even more Battery on red",
+      "t": 35.606,
+      "score": 0.85,
+      "cosine": 0.379,
+      "reason": "captures playful mood, urban nightlife, digital expression",
+      "recipe": "2-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/screens/s0-2-3d-toy.webp",
+      "key": "lexicon/screens/s0-2-3d-toy.webp",
+      "word": "screens",
+      "line": "now Signals weak But I feel you somehow Time zones touch screens Different skies same dreams One two",
+      "t": 14.455,
+      "score": 0.85,
+      "cosine": 0.375,
+      "reason": "Reflects digital connection and serene mood",
+      "recipe": "2-3d-toy",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s12-5-word-portrait.webp",
+      "key": "lexicon/soul/s12-5-word-portrait.webp",
+      "word": "soul",
+      "line": "Yeah My soul lives in Seoul But my heart lives",
+      "t": 2.496,
+      "score": 0.8,
+      "cosine": 0.456,
+      "reason": "cosmic unity aligns with song's spiritual connection theme",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/translation/s1-2-poster.webp",
+      "key": "lexicon/translation/s1-2-poster.webp",
+      "word": "translation",
+      "line": "Paperwork dancing like its got moves Lost in translation but I still choose you Every little problem",
+      "t": 61.777,
+      "score": 0.8,
+      "cosine": 0.402,
+      "reason": "captures translation confusion and modern digital context",
+      "recipe": "2-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/translation/s2-1-dream-collage.webp",
+      "key": "lexicon/translation/s2-1-dream-collage.webp",
+      "word": "translation",
+      "line": "Paperwork dancing like its got moves Lost in translation but I still choose you Every little problem",
+      "t": 61.777,
+      "score": 0.8,
+      "cosine": 0.402,
+      "reason": "Visually poetic, but abstract; fits theme of cultural fusion and digital connection.",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/translation/s2-2-word-portrait.webp",
+      "key": "lexicon/translation/s2-2-word-portrait.webp",
+      "word": "translation",
+      "line": "Paperwork dancing like its got moves Lost in translation but I still choose you Every little problem",
+      "t": 61.777,
+      "score": 0.8,
+      "cosine": 0.402,
+      "reason": "fits mood and theme, but lacks playfulness",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s9-6-poster.webp",
+      "key": "lexicon/love/s9-6-poster.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.8,
+      "cosine": 0.399,
+      "reason": "captures mood and theme",
+      "recipe": "6-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/screen/s6-5-word-portrait.webp",
+      "key": "lexicon/screen/s6-5-word-portrait.webp",
+      "word": "screen",
+      "line": "midnight my sunrise is your sleep But your face on my screen makes the distance feel sweet WiFi acting crazy signal dropping",
+      "t": 26.808,
+      "score": 0.8,
+      "cosine": 0.393,
+      "reason": "captures digital intimacy, but lacks suspense and screen focus",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s17-3-3d-toy.webp",
+      "key": "lexicon/heart/s17-3-3d-toy.webp",
+      "word": "heart",
+      "line": "My soul lives in Seoul But my heart lives wherever you call",
+      "t": 4.386,
+      "score": 0.8,
+      "cosine": 0.387,
+      "reason": "matches mood and theme",
+      "recipe": "3-3d-toy",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-2-photo.webp",
+      "key": "lexicon/love/s12-2-photo.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.8,
+      "cosine": 0.382,
+      "reason": "fits mood but lacks cultural exchange theme",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-4-dream-collage.webp",
+      "key": "lexicon/love/s12-4-dream-collage.webp",
+      "word": "love",
+      "line": "cam why am I showing the floor You laughing so hard now I love you even more Battery on red charger disappeared",
+      "t": 36.781,
+      "score": 0.8,
+      "cosine": 0.382,
+      "reason": "fits mood but lacks cultural and logistical context",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s6-4-film-still.webp",
+      "key": "lexicon/save/s6-4-film-still.webp",
+      "word": "save",
+      "line": "Storage full again from the photos that you send But I still save every selfie like Ill never see you again Shipping takes forever",
+      "t": 45.175,
+      "score": 0.8,
+      "cosine": 0.377,
+      "reason": "captures digital love and memory preservation",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dancing/s7-4-word-portrait.webp",
+      "key": "lexicon/dancing/s7-4-word-portrait.webp",
+      "word": "dancing",
+      "line": "mine K1 K2 CR1 too Paperwork dancing like its got moves Lost in translation but I still",
+      "t": 59.722,
+      "score": 0.8,
+      "cosine": 0.375,
+      "reason": "captures energy but lacks cultural context",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-3-dream-collage.webp",
+      "key": "lexicon/dreams/s8-3-dream-collage.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.8,
+      "cosine": 0.373,
+      "reason": "Imaginative freedom aligns with dreaming across distances.",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-4-poster.webp",
+      "key": "lexicon/dreams/s8-4-poster.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.8,
+      "cosine": 0.373,
+      "reason": "Abstract digital theme fits song's modern, multilingual mood",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/phone/s7-4-dream-collage.webp",
+      "key": "lexicon/phone/s7-4-dream-collage.webp",
+      "word": "phone",
+      "line": "One two three go I wake up grab my phone before I even breathe Thirtyseven messages waiting there",
+      "t": 19.737,
+      "score": 0.8,
+      "cosine": 0.37,
+      "reason": "Reflects digital connection and surreal romance",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-6-neon-sign.webp",
+      "key": "lexicon/soul/s4-6-neon-sign.webp",
+      "word": "soul",
+      "line": "Yeah My soul lives in Seoul But my heart lives",
+      "t": 2.496,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "captures urban night vibe, digital soul",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/soul/s4-1-word-neon.webp",
+      "key": "lexicon/soul/s4-1-word-neon.webp",
+      "word": "soul",
+      "line": "Yeah My soul lives in Seoul But my heart lives",
+      "t": 2.496,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "captures urban solitude and digital essence",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/signal/s4-1-cinema.webp",
+      "key": "lexicon/signal/s4-1-cinema.webp",
+      "word": "signal",
+      "line": "on my screen makes the distance feel sweet WiFi acting crazy signal dropping low Can you hear me baby then the camera",
+      "t": 29.339,
+      "score": 0.8,
+      "cosine": 0.342,
+      "reason": "captures digital connection struggles",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/skies/s1-1-word-portrait.webp",
+      "key": "lexicon/skies/s1-1-word-portrait.webp",
+      "word": "skies",
+      "line": "weak But I feel you somehow Time zones touch screens Different skies same dreams One two three",
+      "t": 15.058,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "captures mood and symbolism",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/skies/s1-2-word-neon.webp",
+      "key": "lexicon/skies/s1-2-word-neon.webp",
+      "word": "skies",
+      "line": "weak But I feel you somehow Time zones touch screens Different skies same dreams One two three",
+      "t": 15.058,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "captures urban nightlife, hopeful transition, and cultural vibrancy",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/rhythm/s13-2-word-portrait.webp",
+      "key": "lexicon/rhythm/s13-2-word-portrait.webp",
+      "word": "rhythm",
+      "line": "every continent Dale fuerte dale true Every rhythm brings me back to you 時 差 を 越 えてまた 君 へ 送 信 Jisa wo koete",
+      "t": 289.482,
+      "score": 0.75,
+      "cosine": 0.362,
+      "reason": "fits mood but lacks cultural elements",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s30-6-word-portrait.webp",
+      "key": "lexicon/night/s30-6-word-portrait.webp",
+      "word": "night",
+      "line": "my good night We fight we make up Then we laugh on the phone No matter where you are You never feel",
+      "t": 76.162,
+      "score": 0.7,
+      "cosine": 0.374,
+      "reason": "Night theme fits but lacks digital connection symbolism",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s8-2-neon-night.webp",
+      "key": "lexicon/dreams/s8-2-neon-night.webp",
+      "word": "dreams",
+      "line": "Time zones touch screens Different skies same dreams One two three go I wake",
+      "t": 16.185,
+      "score": 0.7,
+      "cosine": 0.373,
+      "reason": "neon dreams, rain as tears, urban isolation fit mood",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pride/s2-2-poster.webp",
+      "key": "lexicon/pride/s2-2-poster.webp",
+      "word": "pride",
+      "line": "one more call till daylight Missed calls small fights pride in the way Then one heart emoji saves the whole day",
+      "t": 146.762,
+      "score": 0.7,
+      "cosine": 0.361,
+      "reason": "Rainbow symbolizes pride, fits song's celebratory mood.",
+      "recipe": "2-poster",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "seoul": [
+      0,
+      1,
+      6
+    ],
+    "glow": [
+      2,
+      3
+    ],
+    "night": [
+      4,
+      29
+    ],
+    "heart": [
+      5,
+      15
+    ],
+    "laughing": [
+      7
+    ],
+    "screens": [
+      8
+    ],
+    "soul": [
+      9,
+      23,
+      24
+    ],
+    "translation": [
+      10,
+      11,
+      12
+    ],
+    "love": [
+      13,
+      16,
+      17
+    ],
+    "screen": [
+      14
+    ],
+    "save": [
+      18
+    ],
+    "dancing": [
+      19
+    ],
+    "dreams": [
+      20,
+      21,
+      30
+    ],
+    "phone": [
+      22
+    ],
+    "signal": [
+      25
+    ],
+    "skies": [
+      26,
+      27
+    ],
+    "rhythm": [
+      28
+    ],
+    "pride": [
+      31
+    ]
+  }
 }

@@ -1,15 +1,469 @@
 {
   "v": 1,
   "id": "madetobreak",
-  "generatedAt": "2026-09-25T04:04:14.064Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:23:54.409Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2282,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 56,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-4-poster.webp",
+      "key": "lexicon/fire/s4-4-poster.webp",
+      "word": "fire",
+      "line": "fire",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.388,
+      "reason": "symbolizes transformation and defiance",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-5-word-portrait.webp",
+      "key": "lexicon/fire/s4-5-word-portrait.webp",
+      "word": "fire",
+      "line": "fire",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.388,
+      "reason": "aligns with themes of transformation and defiance",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s14-1-anime.webp",
+      "key": "lexicon/stop/s14-1-anime.webp",
+      "word": "stop",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to",
+      "t": 26.56,
+      "score": 0.9,
+      "cosine": 0.385,
+      "reason": "fits theme of defiance and resilience",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boulder/s0-6-anime.webp",
+      "key": "lexicon/boulder/s0-6-anime.webp",
+      "word": "boulder",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to let a little scratch get mulled",
+      "t": 27.92,
+      "score": 0.9,
+      "cosine": 0.369,
+      "reason": "fits theme of defiance and resilience",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-5-film-still.webp",
+      "key": "lexicon/storm/s2-5-film-still.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.369,
+      "reason": "storm imagery fits turmoil, car symbolizes defiance",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s4-1-anime.webp",
+      "key": "lexicon/chain/s4-1-anime.webp",
+      "word": "chain",
+      "line": "Every lock every limit every chain in my way Made to break",
+      "t": 73.76,
+      "score": 0.9,
+      "cosine": 0.363,
+      "reason": "image captures defiance and resilience",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle/s0-2-anime.webp",
+      "key": "lexicon/battle/s0-2-anime.webp",
+      "word": "battle",
+      "line": "battle",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.338,
+      "reason": "fits post-apocalyptic resilience",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle/s0-1-concept-art.webp",
+      "key": "lexicon/battle/s0-1-concept-art.webp",
+      "word": "battle",
+      "line": "battle",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.338,
+      "reason": "symbolizes resilience and defiance",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/battle/s0-3-cinema.webp",
+      "key": "lexicon/battle/s0-3-cinema.webp",
+      "word": "battle",
+      "line": "battle",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.338,
+      "reason": "fits mood and theme of resilience and defiance",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-3-dream-collage.webp",
+      "key": "lexicon/shattered/s0-3-dream-collage.webp",
+      "word": "shattered",
+      "line": "shattered",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.33,
+      "reason": "symbolizes transformation and resilience",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-4-word-portrait.webp",
+      "key": "lexicon/shattered/s0-4-word-portrait.webp",
+      "word": "shattered",
+      "line": "shattered",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.33,
+      "reason": "symbolizes pain and transformation",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/split/s0-1-concept-art.webp",
+      "key": "lexicon/split/s0-1-concept-art.webp",
+      "word": "split",
+      "line": "some kind of religion Life kept swinging till its knuckles split I got bored of getting hit made a joke out of it",
+      "t": 112.48,
+      "score": 0.9,
+      "cosine": 0.326,
+      "reason": "resilience, ruins, defiance",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/impact/s0-6-film-still.webp",
+      "key": "lexicon/impact/s0-6-film-still.webp",
+      "word": "impact",
+      "line": "adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat I don't beg I don't ask",
+      "t": 179.52,
+      "score": 0.9,
+      "cosine": 0.322,
+      "reason": "visual impact, destruction aligns with weaponizing pain",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/impact/s0-2-dream-collage.webp",
+      "key": "lexicon/impact/s0-2-dream-collage.webp",
+      "word": "impact",
+      "line": "adapt Turned the pain into a weapon Turned the pressure into impact No collapse no retreat I don't beg I don't ask",
+      "t": 179.52,
+      "score": 0.9,
+      "cosine": 0.322,
+      "reason": "visualizes cosmic impact and destruction, aligning with pain turned to weapon",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/throne/s0-6-word-portrait.webp",
+      "key": "lexicon/throne/s0-6-word-portrait.webp",
+      "word": "throne",
+      "line": "Tyyyleeer No longer playing now I'm coding the game Built a throne from the wreckage let 'em study the frame They were betting",
+      "t": 63.84,
+      "score": 0.9,
+      "cosine": 0.284,
+      "reason": "fits theme of empowerment and defiance",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/body/s7-2-word-portrait.webp",
+      "key": "lexicon/body/s7-2-word-portrait.webp",
+      "word": "body",
+      "line": "me damagedI call it battlemade They were waiting on a body I became the barricade I was made to break",
+      "t": 85.68,
+      "score": 0.9,
+      "cosine": 0.283,
+      "reason": "aligns with physical transformation and resilience",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boot/s0-1-word-portrait.webp",
+      "key": "lexicon/boot/s0-1-word-portrait.webp",
+      "word": "boot",
+      "line": "name got 'em screaming my name I don't wait on luck I put a boot on fate Every loss came heavy I just added",
+      "t": 132.96,
+      "score": 0.9,
+      "cosine": 0.281,
+      "reason": "aligns with resilience and defiance",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stop/s14-2-manga-line.webp",
+      "key": "lexicon/stop/s14-2-manga-line.webp",
+      "word": "stop",
+      "line": "You can stop checking I'm still fucking here They threw stones I returned a boulder Tyler ain't the type to",
+      "t": 26.56,
+      "score": 0.85,
+      "cosine": 0.385,
+      "reason": "Eye symbolizes watchful defiance, fitting song's mood.",
+      "recipe": "2-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s17-2-dream-collage.webp",
+      "key": "lexicon/pain/s17-2-dream-collage.webp",
+      "word": "pain",
+      "line": "Bad hand dealt I made the cards look loaded Pain came back for what I owedI told it Account closed Every",
+      "t": 50.24,
+      "score": 0.85,
+      "cosine": 0.326,
+      "reason": "depicts chaos and resilience",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/trauma/s0-5-photo.webp",
+      "key": "lexicon/trauma/s0-5-photo.webp",
+      "word": "trauma",
+      "line": "was made to break Everything but me You call it trauma I call it repetition",
+      "t": 90.32,
+      "score": 0.85,
+      "cosine": 0.325,
+      "reason": "image captures trauma and vulnerability, aligning with pain and resilience themes",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/walk/s6-2-photo.webp",
+      "key": "lexicon/walk/s6-2-photo.webp",
+      "word": "walk",
+      "line": "Had a knife in my back still ate off the same plate Now I walk in like the building got my name on the gate Bad hand",
+      "t": 45.28,
+      "score": 0.85,
+      "cosine": 0.318,
+      "reason": "reflects urban grit and determination",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/boot/s1-1-concept-art.webp",
+      "key": "lexicon/boot/s1-1-concept-art.webp",
+      "word": "boot",
+      "line": "name got 'em screaming my name I don't wait on luck I put a boot on fate Every loss came heavy I just added",
+      "t": 132.96,
+      "score": 0.85,
+      "cosine": 0.281,
+      "reason": "aligns with resilience and defiance",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s5-6-film-still.webp",
+      "key": "lexicon/chains/s5-6-film-still.webp",
+      "word": "chains",
+      "line": "chains",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.398,
+      "reason": "chains symbolize oppression and struggle",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s4-6-word-neon.webp",
+      "key": "lexicon/fire/s4-6-word-neon.webp",
+      "word": "fire",
+      "line": "fire",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.388,
+      "reason": "aligns with urban resilience, defiance",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-4-dark-surreal.webp",
+      "key": "lexicon/storm/s2-4-dark-surreal.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.369,
+      "reason": "storm as chaos and danger aligns with defiance and resilience",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/storm/s2-2-word-portrait.webp",
+      "key": "lexicon/storm/s2-2-word-portrait.webp",
+      "word": "storm",
+      "line": "storm",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.369,
+      "reason": "fits mood but lacks empowerment",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s3-1-film-still.webp",
+      "key": "lexicon/chain/s3-1-film-still.webp",
+      "word": "chain",
+      "line": "Every lock every limit every chain in my way Made to break",
+      "t": 73.76,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "conveys restriction and resilience",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chain/s3-2-analog.webp",
+      "key": "lexicon/chain/s3-2-analog.webp",
+      "word": "chain",
+      "line": "Every lock every limit every chain in my way Made to break",
+      "t": 73.76,
+      "score": 0.8,
+      "cosine": 0.363,
+      "reason": "conveys restriction and defiance",
+      "recipe": "2-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/knife/s2-5-concept-art.webp",
+      "key": "lexicon/knife/s2-5-concept-art.webp",
+      "word": "knife",
+      "line": "You get what you giveI get what I take Had a knife in my back still ate off the same plate Now I walk in like the building",
+      "t": 42.96,
+      "score": 0.8,
+      "cosine": 0.342,
+      "reason": "symbolizes pain and resilience",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/shattered/s0-2-photo.webp",
+      "key": "lexicon/shattered/s0-2-photo.webp",
+      "word": "shattered",
+      "line": "shattered",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.33,
+      "reason": "reflects pain and transformation, aligns with shattered identity",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/weight/s4-1-word-portrait.webp",
+      "key": "lexicon/weight/s4-1-word-portrait.webp",
+      "word": "weight",
+      "line": "built heat meant to burstI just got colder Weight of the world It's me on my shoulders Even on",
+      "t": 34.72,
+      "score": 0.8,
+      "cosine": 0.328,
+      "reason": "symbolizes burden and strength",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s17-3-word-portrait.webp",
+      "key": "lexicon/pain/s17-3-word-portrait.webp",
+      "word": "pain",
+      "line": "Bad hand dealt I made the cards look loaded Pain came back for what I owedI told it Account closed Every",
+      "t": 50.24,
+      "score": 0.8,
+      "cosine": 0.326,
+      "reason": "reflects pain and transformation",
+      "recipe": "3-word-portrait",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "fire": [
+      0,
+      1,
+      23
+    ],
+    "stop": [
+      2,
+      17
+    ],
+    "boulder": [
+      3
+    ],
+    "storm": [
+      4,
+      24,
+      25
+    ],
+    "chain": [
+      5,
+      26,
+      27
+    ],
+    "battle": [
+      6,
+      7,
+      8
+    ],
+    "shattered": [
+      9,
+      10,
+      29
+    ],
+    "split": [
+      11
+    ],
+    "impact": [
+      12,
+      13
+    ],
+    "throne": [
+      14
+    ],
+    "body": [
+      15
+    ],
+    "boot": [
+      16,
+      21
+    ],
+    "pain": [
+      18,
+      31
+    ],
+    "trauma": [
+      19
+    ],
+    "walk": [
+      20
+    ],
+    "chains": [
+      22
+    ],
+    "knife": [
+      28
+    ],
+    "weight": [
+      30
+    ]
+  }
 }

@@ -1,15 +1,463 @@
 {
   "v": 1,
   "id": "one-more-breath-back-to-myself",
-  "generatedAt": "2026-09-25T04:04:55.946Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:26:45.681Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 929,
     "judged": 43,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 42,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-5-manga-line.webp",
+      "key": "lexicon/slow/s5-5-manga-line.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 0.9,
+      "cosine": 0.527,
+      "reason": "fits mood and themes",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s10-5-cinema.webp",
+      "key": "lexicon/fade/s10-5-cinema.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.9,
+      "cosine": 0.476,
+      "reason": "fits mood and theme of fading",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s10-6-photo.webp",
+      "key": "lexicon/fade/s10-6-photo.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.9,
+      "cosine": 0.476,
+      "reason": "fits mood and themes of introspection and fading",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s7-5-word-portrait.webp",
+      "key": "lexicon/move/s7-5-word-portrait.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.9,
+      "cosine": 0.425,
+      "reason": "matches song's introspective mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/room/s7-1-manga-line.webp",
+      "key": "lexicon/room/s7-1-manga-line.webp",
+      "word": "room",
+      "line": "move Let it fade Let it move Let it fade The room gets quiet The light gets low I hear my heartbeat",
+      "t": 217.13,
+      "score": 0.9,
+      "cosine": 0.396,
+      "reason": "fits mood and theme, isolated introspection",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/room/s7-2-cinema.webp",
+      "key": "lexicon/room/s7-2-cinema.webp",
+      "word": "room",
+      "line": "move Let it fade Let it move Let it fade The room gets quiet The light gets low I hear my heartbeat",
+      "t": 217.13,
+      "score": 0.9,
+      "cosine": 0.396,
+      "reason": "fits mood and theme of introspection",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breath/s0-5-cinema.webp",
+      "key": "lexicon/breath/s0-5-cinema.webp",
+      "word": "breath",
+      "line": "Breathe One more breath",
+      "t": 7.907,
+      "score": 0.9,
+      "cosine": 0.263,
+      "reason": "fits mood and themes",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/woozy/s0-1-concept-art.webp",
+      "key": "lexicon/woozy/s0-1-concept-art.webp",
+      "word": "woozy",
+      "line": "woozy",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.045,
+      "reason": "matches song's mood and symbolism",
+      "recipe": "1-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hazy/s0-1-anime.webp",
+      "key": "lexicon/hazy/s0-1-anime.webp",
+      "word": "hazy",
+      "line": "hazy",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.04,
+      "reason": "fits mood and theme, evokes isolation and decay",
+      "recipe": "1-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hazy/s0-2-cinema.webp",
+      "key": "lexicon/hazy/s0-2-cinema.webp",
+      "word": "hazy",
+      "line": "hazy",
+      "t": null,
+      "score": 0.9,
+      "cosine": 0.04,
+      "reason": "fits mood and symbolism",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s7-5-word-neon.webp",
+      "key": "lexicon/quiet/s7-5-word-neon.webp",
+      "word": "quiet",
+      "line": "move Let it fade Let it move Let it fade The room gets quiet The light gets low I hear my heartbeat",
+      "t": 217.357,
+      "score": 0.85,
+      "cosine": 0.476,
+      "reason": "matches mood and setting",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-5-word-portrait.webp",
+      "key": "lexicon/move/s3-5-word-portrait.webp",
+      "word": "move",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.378,
+      "score": 0.85,
+      "cosine": 0.425,
+      "reason": "fits mood and theme, but slightly superficial",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-3-graphic-novel.webp",
+      "key": "lexicon/slow/s5-3-graphic-novel.webp",
+      "word": "slow",
+      "line": "Slow",
+      "t": 49.377,
+      "score": 0.8,
+      "cosine": 0.527,
+      "reason": "fire, books, isolation fit introspection mood",
+      "recipe": "3-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s7-4-word-portrait.webp",
+      "key": "lexicon/quiet/s7-4-word-portrait.webp",
+      "word": "quiet",
+      "line": "move Let it fade Let it move Let it fade The room gets quiet The light gets low I hear my heartbeat",
+      "t": 217.357,
+      "score": 0.8,
+      "cosine": 0.476,
+      "reason": "matches mood and symbolism",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s8-5-anime.webp",
+      "key": "lexicon/quiet/s8-5-anime.webp",
+      "word": "quiet",
+      "line": "move Let it fade Let it move Let it fade The room gets quiet The light gets low I hear my heartbeat",
+      "t": 217.357,
+      "score": 0.8,
+      "cosine": 0.476,
+      "reason": "Eye reflects sunset, city solitude, matches introspection mood.",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s10-5-word-portrait.webp",
+      "key": "lexicon/heartbeat/s10-5-word-portrait.webp",
+      "word": "heartbeat",
+      "line": "room gets quiet The light gets low I hear my heartbeat I let it go One more breath Come back down One more breath Slow it down Breathe in Breathe out Breathe in Breathe out Im coming",
+      "t": 219.789,
+      "score": 0.8,
+      "cosine": 0.447,
+      "reason": "Reflects heartbeat and global connection, fits cyberpunk mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s21-3-photo.webp",
+      "key": "lexicon/light/s21-3-photo.webp",
+      "word": "light",
+      "line": "The room gets quiet The light gets low I hear my heartbeat I let it go One",
+      "t": 217.838,
+      "score": 0.8,
+      "cosine": 0.446,
+      "reason": "Contrasts with nighttime mood, but captures introspection.",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s1-5-photo.webp",
+      "key": "lexicon/breathe/s1-5-photo.webp",
+      "word": "breathe",
+      "line": "Breathe One more breath",
+      "t": 7.577,
+      "score": 0.8,
+      "cosine": 0.431,
+      "reason": "reflects introspection and tension",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s1-6-dream-collage.webp",
+      "key": "lexicon/breathe/s1-6-dream-collage.webp",
+      "word": "breathe",
+      "line": "Breathe One more breath",
+      "t": 7.577,
+      "score": 0.8,
+      "cosine": 0.431,
+      "reason": "fits surreal, introspective mood",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breathe/s2-4-anime.webp",
+      "key": "lexicon/breathe/s2-4-anime.webp",
+      "word": "breathe",
+      "line": "Breathe One more breath",
+      "t": 7.577,
+      "score": 0.8,
+      "cosine": 0.431,
+      "reason": "fits mood and theme, but too specific stylistically",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fade/s12-4-dream-collage.webp",
+      "key": "lexicon/fade/s12-4-dream-collage.webp",
+      "word": "fade",
+      "line": "Nothing else Let it move Let it fade Let it move Let it fade The room gets quiet",
+      "t": 214.408,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "Ethereal and dreamlike, aligns with introspection and isolation.",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/syrupy/s0-2-cinema.webp",
+      "key": "lexicon/syrupy/s0-2-cinema.webp",
+      "word": "syrupy",
+      "line": "syrupy",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.368,
+      "reason": "reflects syrupy texture, mood, and slowness",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/syrupy/s0-3-photo.webp",
+      "key": "lexicon/syrupy/s0-3-photo.webp",
+      "word": "syrupy",
+      "line": "syrupy",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.368,
+      "reason": "captures syrup's essence, mood fits",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/syrupy/s0-4-dream-collage.webp",
+      "key": "lexicon/syrupy/s0-4-dream-collage.webp",
+      "word": "syrupy",
+      "line": "syrupy",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.368,
+      "reason": "matches mood and symbolism",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hypnotic/s1-4-anime.webp",
+      "key": "lexicon/hypnotic/s1-4-anime.webp",
+      "word": "hypnotic",
+      "line": "hypnotic",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.071,
+      "reason": "fits mood and themes, but less introspective",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hypnotic/s1-3-concept-art.webp",
+      "key": "lexicon/hypnotic/s1-3-concept-art.webp",
+      "word": "hypnotic",
+      "line": "hypnotic",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.071,
+      "reason": "fits mood but lacks darkness",
+      "recipe": "3-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hypnotic/s1-2-film-still.webp",
+      "key": "lexicon/hypnotic/s1-2-film-still.webp",
+      "word": "hypnotic",
+      "line": "hypnotic",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.071,
+      "reason": "fits mood, surreal urban night",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chopped/s0-6-anime.webp",
+      "key": "lexicon/chopped/s0-6-anime.webp",
+      "word": "chopped",
+      "line": "chopped",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.045,
+      "reason": "fits mood and theme, abstract fragmentation",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chopped/s0-5-concept-art.webp",
+      "key": "lexicon/chopped/s0-5-concept-art.webp",
+      "word": "chopped",
+      "line": "chopped",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.045,
+      "reason": "reflects themes of brokenness and introspection",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chopped/s0-4-film-still.webp",
+      "key": "lexicon/chopped/s0-4-film-still.webp",
+      "word": "chopped",
+      "line": "chopped",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.045,
+      "reason": "reflects mood and themes of chaos and introspection",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/woozy/s0-2-anime.webp",
+      "key": "lexicon/woozy/s0-2-anime.webp",
+      "word": "woozy",
+      "line": "woozy",
+      "t": null,
+      "score": 0.8,
+      "cosine": 0.045,
+      "reason": "fits mood but lacks personal introspection",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/detuned/s0-6-film-still.webp",
+      "key": "lexicon/detuned/s0-6-film-still.webp",
+      "word": "detuned",
+      "line": "detuned",
+      "t": null,
+      "score": 0.8,
+      "cosine": -0.035,
+      "reason": "matches mood, warm distortion",
+      "recipe": "6-film-still",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "slow": [
+      0,
+      12
+    ],
+    "fade": [
+      1,
+      2,
+      20
+    ],
+    "move": [
+      3,
+      11
+    ],
+    "room": [
+      4,
+      5
+    ],
+    "breath": [
+      6
+    ],
+    "woozy": [
+      7,
+      30
+    ],
+    "hazy": [
+      8,
+      9
+    ],
+    "quiet": [
+      10,
+      13,
+      14
+    ],
+    "heartbeat": [
+      15
+    ],
+    "light": [
+      16
+    ],
+    "breathe": [
+      17,
+      18,
+      19
+    ],
+    "syrupy": [
+      21,
+      22,
+      23
+    ],
+    "hypnotic": [
+      24,
+      25,
+      26
+    ],
+    "chopped": [
+      27,
+      28,
+      29
+    ],
+    "detuned": [
+      31
+    ]
+  }
 }

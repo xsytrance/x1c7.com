@@ -1,15 +1,473 @@
 {
   "v": 1,
   "id": "jayodeed-going-crazy-rooklyn-mix",
-  "generatedAt": "2026-09-25T04:03:57.943Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:22:50.939Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2968,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 59,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s3-4-word-portrait.webp",
+      "key": "lexicon/lights/s3-4-word-portrait.webp",
+      "word": "lights",
+      "line": "Crazy I pulled up late with the lights low Still got your name in my iPhone You say Im poison",
+      "t": 41.877,
+      "score": 0.9,
+      "cosine": 0.509,
+      "reason": "fits chaotic nightlife, toxic love theme",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-3-anime.webp",
+      "key": "lexicon/glass/s0-3-anime.webp",
+      "word": "glass",
+      "line": "But we light it up when the glass high You got a way of making wrong feel right",
+      "t": 160.624,
+      "score": 0.9,
+      "cosine": 0.503,
+      "reason": "fits chaotic cyberpunk theme",
+      "recipe": "3-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-1-word-portrait.webp",
+      "key": "lexicon/poison/s5-1-word-portrait.webp",
+      "word": "poison",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "score": 0.9,
+      "cosine": 0.424,
+      "reason": "matches toxic mood and decay themes",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-5-word-portrait.webp",
+      "key": "lexicon/wrong/s5-5-word-portrait.webp",
+      "word": "wrong",
+      "line": "when the glass high You got a way of making wrong feel right You got a way",
+      "t": 162.56,
+      "score": 0.9,
+      "cosine": 0.417,
+      "reason": "embodies toxic obsession and chaos",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s4-5-film-still.webp",
+      "key": "lexicon/breaking/s4-5-film-still.webp",
+      "word": "breaking",
+      "line": "the same time Dont call it love if it keeps breaking Dont call it over if were",
+      "t": 177.308,
+      "score": 0.9,
+      "cosine": 0.405,
+      "reason": "reflects chaos and brokenness",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/save/s1-5-anime.webp",
+      "key": "lexicon/save/s1-5-anime.webp",
+      "word": "save",
+      "line": "Still somehow my favorite We break it then save it Then wake up and say this You got me",
+      "t": 66.131,
+      "score": 0.9,
+      "cosine": 0.4,
+      "reason": "aligns with song's chaotic, turbulent themes",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s3-1-dream-collage.webp",
+      "key": "lexicon/night/s3-1-dream-collage.webp",
+      "word": "night",
+      "line": "I might call you One more night and I might fall through You got me going crazy",
+      "t": 24.972,
+      "score": 0.9,
+      "cosine": 0.375,
+      "reason": "matches chaotic, toxic themes",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s8-5-neon-sign.webp",
+      "key": "lexicon/eyes/s8-5-neon-sign.webp",
+      "word": "eyes",
+      "line": "You say Im poison I know But you still sip when your eyes close We go back and forth like waves do I run from",
+      "t": 47.021,
+      "score": 0.9,
+      "cosine": 0.36,
+      "reason": "fits chaotic nightlife, toxic love",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s3-5-anime.webp",
+      "key": "lexicon/dangerous/s3-5-anime.webp",
+      "word": "dangerous",
+      "line": "still the one that you dance to Im faded youre dangerous Still somehow my favorite We break it",
+      "t": 62.88,
+      "score": 0.9,
+      "cosine": 0.354,
+      "reason": "chaotic destruction fits toxic obsession",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dangerous/s3-4-graphic-novel.webp",
+      "key": "lexicon/dangerous/s3-4-graphic-novel.webp",
+      "word": "dangerous",
+      "line": "still the one that you dance to Im faded youre dangerous Still somehow my favorite We break it",
+      "t": 62.88,
+      "score": 0.9,
+      "cosine": 0.354,
+      "reason": "fits chaotic, dangerous mood",
+      "recipe": "4-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/time/s0-2-anime.webp",
+      "key": "lexicon/time/s0-2-anime.webp",
+      "word": "time",
+      "line": "of all the places Where we said this was the last time Then we pulled up at the same time",
+      "t": 172.571,
+      "score": 0.9,
+      "cosine": 0.353,
+      "reason": "symbolizes time's fragmentation in chaos",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s0-5-concept-art.webp",
+      "key": "lexicon/burn/s0-5-concept-art.webp",
+      "word": "burn",
+      "line": "and round We never slow down We burn it up Then we fall back down You got me",
+      "t": 120.523,
+      "score": 0.85,
+      "cosine": 0.44,
+      "reason": "symbolizes intense destruction and chaos",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s0-4-film-still.webp",
+      "key": "lexicon/burn/s0-4-film-still.webp",
+      "word": "burn",
+      "line": "and round We never slow down We burn it up Then we fall back down You got me",
+      "t": 120.523,
+      "score": 0.85,
+      "cosine": 0.44,
+      "reason": "flames and destruction fit chaotic mood",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/bass/s8-1-neon-sign.webp",
+      "key": "lexicon/bass/s8-1-neon-sign.webp",
+      "word": "bass",
+      "line": "I just hate the way I crave you You hit my line when the bass drop I know your friends say Im bad news But when",
+      "t": 55.864,
+      "score": 0.85,
+      "cosine": 0.433,
+      "reason": "fits urban nightlife, music theme",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-5-cinema.webp",
+      "key": "lexicon/poison/s5-5-cinema.webp",
+      "word": "poison",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "score": 0.85,
+      "cosine": 0.424,
+      "reason": "fits mood and theme, slightly abstract",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s6-4-word-neon.webp",
+      "key": "lexicon/night/s6-4-word-neon.webp",
+      "word": "night",
+      "line": "I might call you One more night and I might fall through You got me going crazy",
+      "t": 24.972,
+      "score": 0.85,
+      "cosine": 0.415,
+      "reason": "neon sign, rain, urban isolation fit chaotic nightlife",
+      "recipe": "4-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/breaking/s4-2-photo.webp",
+      "key": "lexicon/breaking/s4-2-photo.webp",
+      "word": "breaking",
+      "line": "the same time Dont call it love if it keeps breaking Dont call it over if were",
+      "t": 177.308,
+      "score": 0.85,
+      "cosine": 0.405,
+      "reason": "symbolizes chaos and fragility, aligns with song's mood",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s1-6-neon-night.webp",
+      "key": "lexicon/dark/s1-6-neon-night.webp",
+      "word": "dark",
+      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
+      "t": 166.174,
+      "score": 0.85,
+      "cosine": 0.383,
+      "reason": "fits chaotic nightlife, dark mood",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s2-5-manga-line.webp",
+      "key": "lexicon/dark/s2-5-manga-line.webp",
+      "word": "dark",
+      "line": "right You got a way of making dark look bright Im losing sleep Im losing patience",
+      "t": 166.174,
+      "score": 0.85,
+      "cosine": 0.383,
+      "reason": "reflects inner turmoil and chaotic setting",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dancing/s0-5-cinema.webp",
+      "key": "lexicon/dancing/s0-5-cinema.webp",
+      "word": "dancing",
+      "line": "through You got me going crazy Dancing with your ghost in the room I keep saying",
+      "t": 29.246,
+      "score": 0.85,
+      "cosine": 0.368,
+      "reason": "fits nightlife energy and chaos",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/break/s8-2-word-portrait.webp",
+      "key": "lexicon/break/s8-2-word-portrait.webp",
+      "word": "break",
+      "line": "youre dangerous Still somehow my favorite We break it then save it Then wake up and say this",
+      "t": 65.422,
+      "score": 0.85,
+      "cosine": 0.36,
+      "reason": "Reflects chaos, transformation, and resilience in toxic love.",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/slow/s5-5-manga-line.webp",
+      "key": "lexicon/slow/s5-5-manga-line.webp",
+      "word": "slow",
+      "line": "Round and round We never slow down We burn it up Then we fall",
+      "t": 119.165,
+      "score": 0.85,
+      "cosine": 0.356,
+      "reason": "Reflects inner turmoil and obsession, fits chaotic mood.",
+      "recipe": "5-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s11-5-anime.webp",
+      "key": "lexicon/light/s11-5-anime.webp",
+      "word": "light",
+      "line": "leave you where the past lives But we light it up when the glass high You got a",
+      "t": 158.743,
+      "score": 0.8,
+      "cosine": 0.527,
+      "reason": "aligns with chaos and obsession",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s2-3-dream-collage.webp",
+      "key": "lexicon/hate/s2-3-dream-collage.webp",
+      "word": "hate",
+      "line": "dont know if I hate you Or if I need",
+      "t": 13.619,
+      "score": 0.8,
+      "cosine": 0.465,
+      "reason": "fits chaotic, turbulent mood",
+      "recipe": "3-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hate/s2-4-word-portrait.webp",
+      "key": "lexicon/hate/s2-4-word-portrait.webp",
+      "word": "hate",
+      "line": "dont know if I hate you Or if I need",
+      "t": 13.619,
+      "score": 0.8,
+      "cosine": 0.465,
+      "reason": "matches mood and theme, but lacks nightlife context",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/burn/s0-6-anime.webp",
+      "key": "lexicon/burn/s0-6-anime.webp",
+      "word": "burn",
+      "line": "and round We never slow down We burn it up Then we fall back down You got me",
+      "t": 120.523,
+      "score": 0.8,
+      "cosine": 0.44,
+      "reason": "matches chaotic mood, fire symbolism",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lights/s8-3-neon-night.webp",
+      "key": "lexicon/lights/s8-3-neon-night.webp",
+      "word": "lights",
+      "line": "Crazy I pulled up late with the lights low Still got your name in my iPhone You say Im poison",
+      "t": 41.877,
+      "score": 0.8,
+      "cosine": 0.433,
+      "reason": "matches chaotic nightlife, mood, and symbolism",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s5-6-photo.webp",
+      "key": "lexicon/poison/s5-6-photo.webp",
+      "word": "poison",
+      "line": "lights low Still got your name in my iPhone You say Im poison I know But you still sip when your eyes close We go",
+      "t": 44.815,
+      "score": 0.8,
+      "cosine": 0.424,
+      "reason": "toxicity and hidden danger align with song themes",
+      "recipe": "6-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/losing/s2-2-anime.webp",
+      "key": "lexicon/losing/s2-2-anime.webp",
+      "word": "losing",
+      "line": "You got a way of making dark look bright Im losing sleep Im losing patience Im losing track of all the places",
+      "t": 167.565,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "matches mood and themes of chaos and brokenness",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/losing/s2-1-graphic-novel.webp",
+      "key": "lexicon/losing/s2-1-graphic-novel.webp",
+      "word": "losing",
+      "line": "You got a way of making dark look bright Im losing sleep Im losing patience Im losing track of all the places",
+      "t": 167.565,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "chaotic mood, struggle, vulnerability",
+      "recipe": "1-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/wrong/s5-4-poster.webp",
+      "key": "lexicon/wrong/s5-4-poster.webp",
+      "word": "wrong",
+      "line": "when the glass high You got a way of making wrong feel right You got a way",
+      "t": 162.56,
+      "score": 0.8,
+      "cosine": 0.417,
+      "reason": "reflects confusion and dissonance in toxic relationship",
+      "recipe": "4-poster",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/late/s9-2-neon-sign.webp",
+      "key": "lexicon/late/s9-2-neon-sign.webp",
+      "word": "late",
+      "line": "Crazy I pulled up late with the lights low Still got your name in my iPhone You say",
+      "t": 41.494,
+      "score": 0.8,
+      "cosine": 0.4,
+      "reason": "neon sign fits nightlife, glowing in darkness",
+      "recipe": "2-neon-sign",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "lights": [
+      0,
+      26
+    ],
+    "glass": [
+      1
+    ],
+    "poison": [
+      2,
+      14,
+      27
+    ],
+    "wrong": [
+      3,
+      30
+    ],
+    "breaking": [
+      4,
+      16
+    ],
+    "save": [
+      5
+    ],
+    "night": [
+      6,
+      15
+    ],
+    "eyes": [
+      7
+    ],
+    "dangerous": [
+      8,
+      9
+    ],
+    "time": [
+      10
+    ],
+    "burn": [
+      11,
+      12,
+      25
+    ],
+    "bass": [
+      13
+    ],
+    "dark": [
+      17,
+      18
+    ],
+    "dancing": [
+      19
+    ],
+    "break": [
+      20
+    ],
+    "slow": [
+      21
+    ],
+    "light": [
+      22
+    ],
+    "hate": [
+      23,
+      24
+    ],
+    "losing": [
+      28,
+      29
+    ],
+    "late": [
+      31
+    ]
+  }
 }

@@ -1,15 +1,471 @@
 {
   "v": 1,
   "id": "void-into-gold",
-  "generatedAt": "2026-09-25T04:07:21.297Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:33:17.180Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 4430,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 61,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sun/s0-4-oil-light.webp",
+      "key": "lexicon/sun/s0-4-oil-light.webp",
+      "word": "sun",
+      "line": "now Ah ya ya Sun going down Ah ya ya",
+      "t": 22.14,
+      "score": 0.9,
+      "cosine": 0.525,
+      "reason": "aligns with sun's symbolic power and hopeful mood",
+      "recipe": "4-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s1-1-word-portrait.webp",
+      "key": "lexicon/heartbeat/s1-1-word-portrait.webp",
+      "word": "heartbeat",
+      "line": "permission No more saving joy for later Every heartbeat is a rhythm Every breath a little savior",
+      "t": 160.415,
+      "score": 0.9,
+      "cosine": 0.471,
+      "reason": "aligns with themes, mood, and imagery",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s7-4-anime.webp",
+      "key": "lexicon/drums/s7-4-anime.webp",
+      "word": "drums",
+      "line": "No judgment in the room Just the ocean drums and violins Cutting silver through the moon",
+      "t": 175.462,
+      "score": 0.9,
+      "cosine": 0.457,
+      "reason": "cosmic storm aligns with spiritual transformation",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s6-4-word-portrait.webp",
+      "key": "lexicon/dance/s6-4-word-portrait.webp",
+      "word": "dance",
+      "line": "night If the world gets loud around me Ima dance until its light Empty your",
+      "t": 100.694,
+      "score": 0.9,
+      "cosine": 0.451,
+      "reason": "aligns with nightclub energy and dance theme",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s6-5-word-neon.webp",
+      "key": "lexicon/dance/s6-5-word-neon.webp",
+      "word": "dance",
+      "line": "night If the world gets loud around me Ima dance until its light Empty your",
+      "t": 100.694,
+      "score": 0.9,
+      "cosine": 0.451,
+      "reason": "aligns with nightclub transformation, energetic healing",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dance/s7-5-concept-art.webp",
+      "key": "lexicon/dance/s7-5-concept-art.webp",
+      "word": "dance",
+      "line": "night If the world gets loud around me Ima dance until its light Empty your",
+      "t": 100.694,
+      "score": 0.9,
+      "cosine": 0.451,
+      "reason": "fits spiritual transformation, sultry ambiance",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hair/s3-2-word-portrait.webp",
+      "key": "lexicon/hair/s3-2-word-portrait.webp",
+      "word": "hair",
+      "line": "Every breath a little savior She got flowers in her hair now He got smoke up in the air",
+      "t": 164.64,
+      "score": 0.9,
+      "cosine": 0.436,
+      "reason": "aligns with themes, mood, and imagery",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s12-5-papercut.webp",
+      "key": "lexicon/hands/s12-5-papercut.webp",
+      "word": "hands",
+      "line": "for healing Some nights are made for hands in the air Some",
+      "t": 234.392,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "captures spiritual connection, transformation",
+      "recipe": "5-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hands/s12-3-watercolor.webp",
+      "key": "lexicon/hands/s12-3-watercolor.webp",
+      "word": "hands",
+      "line": "for healing Some nights are made for hands in the air Some",
+      "t": 234.392,
+      "score": 0.9,
+      "cosine": 0.427,
+      "reason": "matches healing, spiritual, comforting themes",
+      "recipe": "3-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-5-oil-light.webp",
+      "key": "lexicon/night/s13-5-oil-light.webp",
+      "word": "night",
+      "line": "in a joyful body No fear in a healing night If the world gets loud around me Ima dance until",
+      "t": 98.255,
+      "score": 0.9,
+      "cosine": 0.414,
+      "reason": "aligns with transformation, cosmic wonder",
+      "recipe": "5-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s5-5-word-portrait.webp",
+      "key": "lexicon/quiet/s5-5-word-portrait.webp",
+      "word": "quiet",
+      "line": "to beat Mind go quiet Heart go wide Bassline",
+      "t": 247.664,
+      "score": 0.9,
+      "cosine": 0.409,
+      "reason": "aligns with song's introspective, serene mood",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/smoke/s4-5-anime.webp",
+      "key": "lexicon/smoke/s4-5-anime.webp",
+      "word": "smoke",
+      "line": "Bassline moving through the smoke One deep",
+      "t": 62.344,
+      "score": 0.85,
+      "cosine": 0.447,
+      "reason": "Eye symbolizes inner transformation, smoke fits atmosphere",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s0-2-word-portrait.webp",
+      "key": "lexicon/fire/s0-2-word-portrait.webp",
+      "word": "fire",
+      "line": "Now the beach got bottles glowing Little fire by the shore",
+      "t": 74.8,
+      "score": 0.8,
+      "cosine": 0.491,
+      "reason": "aligns with transformation and warmth but lacks beach setting",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ghost/s1-4-photo.webp",
+      "key": "lexicon/ghost/s1-4-photo.webp",
+      "word": "ghost",
+      "line": "You dont have to carry every ghost Some nights are made for healing",
+      "t": 228.914,
+      "score": 0.8,
+      "cosine": 0.473,
+      "reason": "Eerie but fits spiritual transformation",
+      "recipe": "4-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heartbeat/s2-6-anime.webp",
+      "key": "lexicon/heartbeat/s2-6-anime.webp",
+      "word": "heartbeat",
+      "line": "permission No more saving joy for later Every heartbeat is a rhythm Every breath a little savior",
+      "t": 160.415,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "cosmic heartbeat aligns with spiritual transformation",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s4-3-word-neon.webp",
+      "key": "lexicon/code/s4-3-word-neon.webp",
+      "word": "code",
+      "line": "Still glowing Cocktails and code on the table Dreams in the blue screen light I",
+      "t": 149.734,
+      "score": 0.8,
+      "cosine": 0.468,
+      "reason": "aligns with transformation theme, industrial setting contrasts with spiritual journey",
+      "recipe": "3-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/moon/s4-3-photo.webp",
+      "key": "lexicon/moon/s4-3-photo.webp",
+      "word": "moon",
+      "line": "the ocean drums and violins Cutting silver through the moon Have a drink but keep your spirit Take a puff",
+      "t": 177.7,
+      "score": 0.8,
+      "cosine": 0.466,
+      "reason": "fits mood but lacks earthly context",
+      "recipe": "3-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drums/s6-5-cinema.webp",
+      "key": "lexicon/drums/s6-5-cinema.webp",
+      "word": "drums",
+      "line": "No judgment in the room Just the ocean drums and violins Cutting silver through the moon",
+      "t": 175.462,
+      "score": 0.8,
+      "cosine": 0.457,
+      "reason": "fits mood but lacks spiritual transformation",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hair/s3-1-dream-collage.webp",
+      "key": "lexicon/hair/s3-1-dream-collage.webp",
+      "word": "hair",
+      "line": "Every breath a little savior She got flowers in her hair now He got smoke up in the air",
+      "t": 164.64,
+      "score": 0.8,
+      "cosine": 0.436,
+      "reason": "symbolism aligns with transformation and turmoil",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hair/s4-1-chalkboard.webp",
+      "key": "lexicon/hair/s4-1-chalkboard.webp",
+      "word": "hair",
+      "line": "Every breath a little savior She got flowers in her hair now He got smoke up in the air",
+      "t": 164.64,
+      "score": 0.8,
+      "cosine": 0.436,
+      "reason": "aligns with transformation and self-love themes",
+      "recipe": "1-chalkboard",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/code/s11-5-dream-collage.webp",
+      "key": "lexicon/code/s11-5-dream-collage.webp",
+      "word": "code",
+      "line": "Still glowing Cocktails and code on the table Dreams in the blue screen light I",
+      "t": 149.734,
+      "score": 0.8,
+      "cosine": 0.432,
+      "reason": "aligns with tech theme but lacks sultriness",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-2.webp",
+      "key": "lexicon/summer/s1-2.webp",
+      "word": "summer",
+      "line": "Mm This summer feel different",
+      "t": 4.563,
+      "score": 0.8,
+      "cosine": 0.429,
+      "reason": "captures summer mood but lacks spiritual depth",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/summer/s1-5-film-still.webp",
+      "key": "lexicon/summer/s1-5-film-still.webp",
+      "word": "summer",
+      "line": "Mm This summer feel different",
+      "t": 4.563,
+      "score": 0.8,
+      "cosine": 0.429,
+      "reason": "captures summer mood but lacks spiritual depth",
+      "recipe": "5-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s5-4-word-portrait.webp",
+      "key": "lexicon/heart/s5-4-word-portrait.webp",
+      "word": "heart",
+      "line": "your mind Fill up your heart Move with the night Let the good",
+      "t": 105.76,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "captures mood, but daytime setting contrasts night theme",
+      "recipe": "4-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s25-3-cinema.webp",
+      "key": "lexicon/light/s25-3-cinema.webp",
+      "word": "light",
+      "line": "the world gets loud around me Ima dance until its light Empty your mind",
+      "t": 101.831,
+      "score": 0.8,
+      "cosine": 0.422,
+      "reason": "captures nighttime warmth, urban pulse",
+      "recipe": "3-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/night/s13-1-dream-collage.webp",
+      "key": "lexicon/night/s13-1-dream-collage.webp",
+      "word": "night",
+      "line": "in a joyful body No fear in a healing night If the world gets loud around me Ima dance until",
+      "t": 98.255,
+      "score": 0.8,
+      "cosine": 0.414,
+      "reason": "symbolizes transformation and healing",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s6-4-papercut.webp",
+      "key": "lexicon/quiet/s6-4-papercut.webp",
+      "word": "quiet",
+      "line": "to beat Mind go quiet Heart go wide Bassline",
+      "t": 247.664,
+      "score": 0.8,
+      "cosine": 0.409,
+      "reason": "aligns with spiritual journey, transformation, and peaceful release",
+      "recipe": "4-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s11-2-word-neon.webp",
+      "key": "lexicon/dreams/s11-2-word-neon.webp",
+      "word": "dreams",
+      "line": "glowing Cocktails and code on the table Dreams in the blue screen light I was building when I",
+      "t": 150.675,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "matches dreamy, nostalgic mood",
+      "recipe": "2-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s12-5-concept-art.webp",
+      "key": "lexicon/dreams/s12-5-concept-art.webp",
+      "word": "dreams",
+      "line": "glowing Cocktails and code on the table Dreams in the blue screen light I was building when I",
+      "t": 150.675,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "symbolic of transformation and inner light",
+      "recipe": "5-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dreams/s12-4-film-still.webp",
+      "key": "lexicon/dreams/s12-4-film-still.webp",
+      "word": "dreams",
+      "line": "glowing Cocktails and code on the table Dreams in the blue screen light I was building when I",
+      "t": 150.675,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "aligns with transformation and spiritual themes",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/sky/s9-3-oil-light.webp",
+      "key": "lexicon/sky/s9-3-oil-light.webp",
+      "word": "sky",
+      "line": "Some nights you just thank the sky That your heart",
+      "t": 239.897,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "aligns with transformation and new beginnings",
+      "recipe": "3-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/ocean/s4-4-papercut.webp",
+      "key": "lexicon/ocean/s4-4-papercut.webp",
+      "word": "ocean",
+      "line": "it tender No judgment in the room Just the ocean drums and violins Cutting silver through the moon",
+      "t": 174.986,
+      "score": 0.8,
+      "cosine": 0.406,
+      "reason": "matches ocean and serene mood",
+      "recipe": "4-papercut",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "sun": [
+      0
+    ],
+    "heartbeat": [
+      1,
+      14
+    ],
+    "drums": [
+      2,
+      17
+    ],
+    "dance": [
+      3,
+      4,
+      5
+    ],
+    "hair": [
+      6,
+      18,
+      19
+    ],
+    "hands": [
+      7,
+      8
+    ],
+    "night": [
+      9,
+      25
+    ],
+    "quiet": [
+      10,
+      26
+    ],
+    "smoke": [
+      11
+    ],
+    "fire": [
+      12
+    ],
+    "ghost": [
+      13
+    ],
+    "code": [
+      15,
+      20
+    ],
+    "moon": [
+      16
+    ],
+    "summer": [
+      21,
+      22
+    ],
+    "heart": [
+      23
+    ],
+    "light": [
+      24
+    ],
+    "dreams": [
+      27,
+      28,
+      29
+    ],
+    "sky": [
+      30
+    ],
+    "ocean": [
+      31
+    ]
+  }
 }

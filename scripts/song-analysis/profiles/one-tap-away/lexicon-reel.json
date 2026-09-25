@@ -1,15 +1,465 @@
 {
   "v": 1,
   "id": "one-tap-away",
-  "generatedAt": "2026-09-25T04:05:02.730Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:27:16.701Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2177,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 53,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s12-1-word-portrait.webp",
+      "key": "lexicon/alone/s12-1-word-portrait.webp",
+      "word": "alone",
+      "line": "So why do I feel alone in a room full of names Tap tap",
+      "t": 89.931,
+      "score": 0.9,
+      "cosine": 0.595,
+      "reason": "captures digital isolation and emotional distance",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s0-5-dream-collage.webp",
+      "key": "lexicon/cold/s0-5-dream-collage.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.9,
+      "cosine": 0.545,
+      "reason": "matches theme of digital isolation",
+      "recipe": "5-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-1-manga-line.webp",
+      "key": "lexicon/quiet/s4-1-manga-line.webp",
+      "word": "quiet",
+      "line": "Everybody swear they saw the light Same ones quiet when you need a fire Now they in the comments",
+      "t": 117.133,
+      "score": 0.9,
+      "cosine": 0.405,
+      "reason": "reflects urban isolation and digital disconnection",
+      "recipe": "1-manga-line",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-2-cinema.webp",
+      "key": "lexicon/quiet/s4-2-cinema.webp",
+      "word": "quiet",
+      "line": "Everybody swear they saw the light Same ones quiet when you need a fire Now they in the comments",
+      "t": 117.133,
+      "score": 0.9,
+      "cosine": 0.405,
+      "reason": "matches mood and theme of isolation",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s4-3-noir.webp",
+      "key": "lexicon/quiet/s4-3-noir.webp",
+      "word": "quiet",
+      "line": "Everybody swear they saw the light Same ones quiet when you need a fire Now they in the comments",
+      "t": 117.133,
+      "score": 0.9,
+      "cosine": 0.405,
+      "reason": "matches mood and theme of isolation",
+      "recipe": "3-noir",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lost/s0-2-dark-surreal.webp",
+      "key": "lexicon/lost/s0-2-dark-surreal.webp",
+      "word": "lost",
+      "line": "reach but dont reach back how we got this close and lost contact You can see me in a second",
+      "t": 44.211,
+      "score": 0.9,
+      "cosine": 0.351,
+      "reason": "evokes isolation and hopelessness",
+      "recipe": "2-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lost/s0-1-word-portrait.webp",
+      "key": "lexicon/lost/s0-1-word-portrait.webp",
+      "word": "lost",
+      "line": "reach but dont reach back how we got this close and lost contact You can see me in a second",
+      "t": 44.211,
+      "score": 0.9,
+      "cosine": 0.351,
+      "reason": "symbolizes isolation and search for connection",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-2-anime.webp",
+      "key": "lexicon/names/s6-2-anime.webp",
+      "word": "names",
+      "line": "I thought the whole world would move close old names popping up like whoa though middle school",
+      "t": 20.64,
+      "score": 0.9,
+      "cosine": 0.346,
+      "reason": "fits mood and themes, surreal visuals",
+      "recipe": "2-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s12-5-neon-night.webp",
+      "key": "lexicon/light/s12-5-neon-night.webp",
+      "word": "light",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "score": 0.85,
+      "cosine": 0.467,
+      "reason": "neon reflections and rain evoke emotional isolation",
+      "recipe": "5-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s8-3-neon-night.webp",
+      "key": "lexicon/move/s8-3-neon-night.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.85,
+      "cosine": 0.444,
+      "reason": "reflects mood and isolation",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s5-2-film-still.webp",
+      "key": "lexicon/alone/s5-2-film-still.webp",
+      "word": "alone",
+      "line": "So why do I feel alone in a room full of names Tap tap",
+      "t": 89.931,
+      "score": 0.85,
+      "cosine": 0.383,
+      "reason": "reflects isolation and melancholy",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s11-2-dream-collage.webp",
+      "key": "lexicon/heart/s11-2-dream-collage.webp",
+      "word": "heart",
+      "line": "of names Tap tap but you don't reach back Heart heart but it don't feel like that Close close",
+      "t": 94.285,
+      "score": 0.85,
+      "cosine": 0.363,
+      "reason": "aligns with themes of emotional pain and isolation",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/people/s0-1-photo.webp",
+      "key": "lexicon/people/s0-1-photo.webp",
+      "word": "people",
+      "line": "persona find your tribe find your people make the whole cold world feel",
+      "t": 32.102,
+      "score": 0.85,
+      "cosine": 0.35,
+      "reason": "reflects isolation and melancholy in a school setting",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fake/s3-1-word-neon.webp",
+      "key": "lexicon/fake/s3-1-word-neon.webp",
+      "word": "fake",
+      "line": "really get honest drop the mask no fake persona find your tribe find",
+      "t": 28.874,
+      "score": 0.85,
+      "cosine": 0.344,
+      "reason": "matches mood and theme of digital deception",
+      "recipe": "1-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/strangers/s1-1-neon-night.webp",
+      "key": "lexicon/strangers/s1-1-neon-night.webp",
+      "word": "strangers",
+      "line": "you keep going from I'm proud of your dream Save your likes for the strangers Save your hearts for the stars",
+      "t": 77.449,
+      "score": 0.85,
+      "cosine": 0.324,
+      "reason": "reflects mood and isolation",
+      "recipe": "1-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s14-2-oil-light.webp",
+      "key": "lexicon/glow/s14-2-oil-light.webp",
+      "word": "glow",
+      "line": "check it Backback when the screen made the room glow I thought the whole world would move close",
+      "t": 17.183,
+      "score": 0.8,
+      "cosine": 0.551,
+      "reason": "symbolizes digital glow and emotional distance",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s3-6-word-neon.webp",
+      "key": "lexicon/move/s3-6-word-neon.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.8,
+      "cosine": 0.549,
+      "reason": "aligns with urban, isolated mood",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/fire/s5-6-word-portrait.webp",
+      "key": "lexicon/fire/s5-6-word-portrait.webp",
+      "word": "fire",
+      "line": "saw the light Same ones quiet when you need a fire Now they in the comments like that's my guy",
+      "t": 118.468,
+      "score": 0.8,
+      "cosine": 0.542,
+      "reason": "fire metaphor fits isolation theme",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/light/s18-3-neon-night.webp",
+      "key": "lexicon/light/s18-3-neon-night.webp",
+      "word": "light",
+      "line": "overnight Everybody swear they saw the light Same ones quiet when you need a fire",
+      "t": 115.937,
+      "score": 0.8,
+      "cosine": 0.467,
+      "reason": "neon lights symbolize fleeting hope, reflecting superficial connections",
+      "recipe": "3-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glow/s3-5-pixel.webp",
+      "key": "lexicon/glow/s3-5-pixel.webp",
+      "word": "glow",
+      "line": "check it Backback when the screen made the room glow I thought the whole world would move close",
+      "t": 17.183,
+      "score": 0.8,
+      "cosine": 0.457,
+      "reason": "captures digital glow, warmth, isolation",
+      "recipe": "5-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s8-1-cinema.webp",
+      "key": "lexicon/move/s8-1-cinema.webp",
+      "word": "move",
+      "line": "the room glow I thought the whole world would move close old names popping up like whoa",
+      "t": 19.644,
+      "score": 0.8,
+      "cosine": 0.444,
+      "reason": "evokes melancholic isolation, aligns with digital disconnection",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chains/s4-1-analog.webp",
+      "key": "lexicon/chains/s4-1-analog.webp",
+      "word": "chains",
+      "line": "Save that love for the big names Blue checks big chains big views Then if a stranger blow up overnight",
+      "t": 110.458,
+      "score": 0.8,
+      "cosine": 0.404,
+      "reason": "conveys isolation and decay",
+      "recipe": "1-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s7-5-neon-sign.webp",
+      "key": "lexicon/cold/s7-5-neon-sign.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "reflects digital alienation and urban isolation",
+      "recipe": "5-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s7-1-papercut.webp",
+      "key": "lexicon/cold/s7-1-papercut.webp",
+      "word": "cold",
+      "line": "your tribe find your people make the whole cold world feel warmer Ads in the cracks",
+      "t": 33.495,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "melancholic, winter isolation, symbolic warmth",
+      "recipe": "1-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s5-6-pixel.webp",
+      "key": "lexicon/alone/s5-6-pixel.webp",
+      "word": "alone",
+      "line": "So why do I feel alone in a room full of names Tap tap",
+      "t": 89.931,
+      "score": 0.8,
+      "cosine": 0.383,
+      "reason": "captures isolation and warmth",
+      "recipe": "6-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/forget/s0-1-analog.webp",
+      "key": "lexicon/forget/s0-1-analog.webp",
+      "word": "forget",
+      "line": "don't connect One tap away and we still forget Click click click everybody got a new rule",
+      "t": 101.367,
+      "score": 0.8,
+      "cosine": 0.37,
+      "reason": "abandonment and nostalgia align with isolation theme",
+      "recipe": "1-analog",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/forget/s1-2-cinema.webp",
+      "key": "lexicon/forget/s1-2-cinema.webp",
+      "word": "forget",
+      "line": "don't connect One tap away and we still forget Click click click everybody got a new rule",
+      "t": 101.367,
+      "score": 0.8,
+      "cosine": 0.37,
+      "reason": "matches mood, symbolism of遗忘的回忆",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s3-2-pixel.webp",
+      "key": "lexicon/dream/s3-2-pixel.webp",
+      "word": "dream",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
+      "t": 76.22,
+      "score": 0.8,
+      "cosine": 0.355,
+      "reason": "symbolic of digital isolation and dreams",
+      "recipe": "2-pixel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dream/s3-4-stained-glass.webp",
+      "key": "lexicon/dream/s3-4-stained-glass.webp",
+      "word": "dream",
+      "line": "From I see you keep going from I'm proud of your dream Save your likes for the strangers Save your",
+      "t": 76.22,
+      "score": 0.8,
+      "cosine": 0.355,
+      "reason": "symbolizes broken dreams and digital isolation",
+      "recipe": "4-stained-glass",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/people/s0-2-dream-collage.webp",
+      "key": "lexicon/people/s0-2-dream-collage.webp",
+      "word": "people",
+      "line": "persona find your tribe find your people make the whole cold world feel",
+      "t": 32.102,
+      "score": 0.8,
+      "cosine": 0.35,
+      "reason": "captures isolation in a surreal, connected yet distant setting",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/people/s1-1-word-portrait.webp",
+      "key": "lexicon/people/s1-1-word-portrait.webp",
+      "word": "people",
+      "line": "persona find your tribe find your people make the whole cold world feel",
+      "t": 32.102,
+      "score": 0.8,
+      "cosine": 0.35,
+      "reason": "reflects isolation and tension in social settings",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/names/s6-4-photo.webp",
+      "key": "lexicon/names/s6-4-photo.webp",
+      "word": "names",
+      "line": "I thought the whole world would move close old names popping up like whoa though middle school",
+      "t": 20.64,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "reflects digital isolation and anonymity",
+      "recipe": "4-photo",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "alone": [
+      0,
+      10,
+      24
+    ],
+    "cold": [
+      1,
+      22,
+      23
+    ],
+    "quiet": [
+      2,
+      3,
+      4
+    ],
+    "lost": [
+      5,
+      6
+    ],
+    "names": [
+      7,
+      31
+    ],
+    "light": [
+      8,
+      18
+    ],
+    "move": [
+      9,
+      16,
+      20
+    ],
+    "heart": [
+      11
+    ],
+    "people": [
+      12,
+      29,
+      30
+    ],
+    "fake": [
+      13
+    ],
+    "strangers": [
+      14
+    ],
+    "glow": [
+      15,
+      19
+    ],
+    "fire": [
+      17
+    ],
+    "chains": [
+      21
+    ],
+    "forget": [
+      25,
+      26
+    ],
+    "dream": [
+      27,
+      28
+    ]
+  }
 }

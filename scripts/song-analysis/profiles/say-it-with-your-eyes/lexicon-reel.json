@@ -1,15 +1,467 @@
 {
   "v": 1,
   "id": "say-it-with-your-eyes",
-  "generatedAt": "2026-09-25T04:05:50.683Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:30:02.427Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 804,
     "judged": 58,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 34,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s2-5-word-portrait.webp",
+      "key": "lexicon/eyes/s2-5-word-portrait.webp",
+      "word": "eyes",
+      "line": "I I stay Say Halftime drop Say it it with with styour your aeyes y eyes Say Say it it with",
+      "t": 115.425,
+      "score": 0.95,
+      "cosine": 0.454,
+      "reason": "fits mood and theme perfectly",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/eyes/s3-1-photo.webp",
+      "key": "lexicon/eyes/s3-1-photo.webp",
+      "word": "eyes",
+      "line": "I I stay Say Halftime drop Say it it with with styour your aeyes y eyes Say Say it it with",
+      "t": 115.425,
+      "score": 0.9,
+      "cosine": 0.454,
+      "reason": "matches song's intimate, focused mood",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s1-2-film-still.webp",
+      "key": "lexicon/blue/s1-2-film-still.webp",
+      "word": "blue",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 89.908,
+      "score": 0.9,
+      "cosine": 0.372,
+      "reason": "Eyes match song's visual obsession and sultry mood.",
+      "recipe": "2-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glance/s1-1-cinema.webp",
+      "key": "lexicon/glance/s1-1-cinema.webp",
+      "word": "glance",
+      "line": "One One little little glance glance Then Then we we both both cut cut up up Look",
+      "t": 98.058,
+      "score": 0.9,
+      "cosine": 0.335,
+      "reason": "fits mood and theme of unspoken connection",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s17-2-word-portrait.webp",
+      "key": "lexicon/stay/s17-2-word-portrait.webp",
+      "word": "stay",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much",
+      "t": 89.718,
+      "score": 0.9,
+      "cosine": 0.333,
+      "reason": "matches mood and theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s5-3-film-still.webp",
+      "key": "lexicon/stay/s5-3-film-still.webp",
+      "word": "stay",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much",
+      "t": 89.718,
+      "score": 0.9,
+      "cosine": 0.314,
+      "reason": "fits mood and themes, but may be too specific",
+      "recipe": "3-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frame/s6-4-cinema.webp",
+      "key": "lexicon/frame/s6-4-cinema.webp",
+      "word": "frame",
+      "line": "your your face face For For one one clean clean frame frame Look",
+      "t": 50.864,
+      "score": 0.9,
+      "cosine": 0.299,
+      "reason": "fits mood and theme of visual obsession",
+      "recipe": "4-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s18-2-word-portrait.webp",
+      "key": "lexicon/move/s18-2-word-portrait.webp",
+      "word": "move",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You You",
+      "t": 90.108,
+      "score": 0.8,
+      "cosine": 0.487,
+      "reason": "Matches mood but lacks specific gesture of 'move'",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/room/s1-2-photo.webp",
+      "key": "lexicon/room/s1-2-photo.webp",
+      "word": "room",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much",
+      "t": 89.668,
+      "score": 0.8,
+      "cosine": 0.484,
+      "reason": "fits mood but lacks sultriness",
+      "recipe": "2-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hand/s4-1-watercolor.webp",
+      "key": "lexicon/hand/s4-1-watercolor.webp",
+      "word": "hand",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 90.068,
+      "score": 0.8,
+      "cosine": 0.468,
+      "reason": "matches mood and symbolism",
+      "recipe": "1-watercolor",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hand/s4-5-cinema.webp",
+      "key": "lexicon/hand/s4-5-cinema.webp",
+      "word": "hand",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 90.068,
+      "score": 0.8,
+      "cosine": 0.468,
+      "reason": "fits mood but lacks sultriness",
+      "recipe": "5-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s2-6-word-neon.webp",
+      "key": "lexicon/cut/s2-6-word-neon.webp",
+      "word": "cut",
+      "line": "One One little little glance glance Then Then we we both both cut cut up up Look",
+      "t": 98.534,
+      "score": 0.8,
+      "cosine": 0.389,
+      "reason": "matches mood and setting",
+      "recipe": "6-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-1.webp",
+      "key": "lexicon/cut/s0-1.webp",
+      "word": "cut",
+      "line": "One One little little glance glance Then Then we we both both cut cut up up Look",
+      "t": 98.534,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "symbolizes tension and intimacy",
+      "recipe": "1",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cut/s0-2.webp",
+      "key": "lexicon/cut/s0-2.webp",
+      "word": "cut",
+      "line": "One One little little glance glance Then Then we we both both cut cut up up Look",
+      "t": 98.534,
+      "score": 0.8,
+      "cosine": 0.365,
+      "reason": "symbolizes vulnerability and tension",
+      "recipe": "2",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s5-6-cinema.webp",
+      "key": "lexicon/stay/s5-6-cinema.webp",
+      "word": "stay",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much",
+      "t": 89.718,
+      "score": 0.8,
+      "cosine": 0.314,
+      "reason": "fits mood and setting but lacks visual obsession",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frame/s6-1-film-still.webp",
+      "key": "lexicon/frame/s6-1-film-still.webp",
+      "word": "frame",
+      "line": "your your face face For For one one clean clean frame frame Look",
+      "t": 50.864,
+      "score": 0.8,
+      "cosine": 0.299,
+      "reason": "fits mood and theme, but shifts focus from singular to dual subjects",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/chorus/s0-2-cinema.webp",
+      "key": "lexicon/chorus/s0-2-cinema.webp",
+      "word": "chorus",
+      "line": "Chorus Look my my way way Just Just",
+      "t": 54.788,
+      "score": 0.8,
+      "cosine": -0.031,
+      "reason": "fits mood but shifts focus from original romance",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/move/s19-6-neon-sign.webp",
+      "key": "lexicon/move/s19-6-neon-sign.webp",
+      "word": "move",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You You",
+      "t": 90.108,
+      "score": 0.7,
+      "cosine": 0.487,
+      "reason": "fits mood but lacks thematic intimacy",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/room/s1-1-cinema.webp",
+      "key": "lexicon/room/s1-1-cinema.webp",
+      "word": "room",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much",
+      "t": 89.668,
+      "score": 0.7,
+      "cosine": 0.484,
+      "reason": "fits mood but lacks sultriness",
+      "recipe": "1-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/blue/s1-1-dark-surreal.webp",
+      "key": "lexicon/blue/s1-1-dark-surreal.webp",
+      "word": "blue",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 89.908,
+      "score": 0.7,
+      "cosine": 0.372,
+      "reason": "symbolic but shifts mood",
+      "recipe": "1-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/step/s2-2-cinema.webp",
+      "key": "lexicon/step/s2-2-cinema.webp",
+      "word": "step",
+      "line": "Keep Keep it it ununclear clear I I take take one one step step You You look look away away Then Then I I catch catch your your face face",
+      "t": 45.465,
+      "score": 0.7,
+      "cosine": 0.3,
+      "reason": "Contrasts mood but fits visual obsession theme",
+      "recipe": "2-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/verse/s0-1-papercut.webp",
+      "key": "lexicon/verse/s0-1-papercut.webp",
+      "word": "verse",
+      "line": "You Verse 1 You over",
+      "t": 0.766,
+      "score": 0.7,
+      "cosine": 0.079,
+      "reason": "Romantic and mysterious, but too whimsical and not sultry.",
+      "recipe": "1-papercut",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/clear/s3-2-oil-light.webp",
+      "key": "lexicon/clear/s3-2-oil-light.webp",
+      "word": "clear",
+      "line": "it it on on low low Keep Keep it it ununclear clear I I take take one one step step You You look look away away Then Then I",
+      "t": 44.227,
+      "score": 0.7,
+      "cosine": 0.038,
+      "reason": "Contrasts with song's visual obsession",
+      "recipe": "2-oil-light",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/black/s3-4-word-portrait.webp",
+      "key": "lexicon/black/s3-4-word-portrait.webp",
+      "word": "black",
+      "line": "black",
+      "t": null,
+      "score": 0.6,
+      "cosine": 0.53,
+      "reason": "industrial setting lacks sultry atmosphere",
+      "recipe": "4-word-portrait",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/black/s4-5-film-still.webp",
+      "key": "lexicon/black/s4-5-film-still.webp",
+      "word": "black",
+      "line": "black",
+      "t": null,
+      "score": 0.6,
+      "cosine": 0.53,
+      "reason": "Contrast and intensity fit, but lacks intimacy",
+      "recipe": "5-film-still",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hand/s4-6-noir.webp",
+      "key": "lexicon/hand/s4-6-noir.webp",
+      "word": "hand",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 90.068,
+      "score": 0.6,
+      "cosine": 0.468,
+      "reason": "Contrasts with song's intimate, dim setting",
+      "recipe": "6-noir",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/glass/s0-1-film-still.webp",
+      "key": "lexicon/glass/s0-1-film-still.webp",
+      "word": "glass",
+      "line": "once once Across Across Across the the the room room room I I stay stay I stay Across Across Across the the the room room room I I I stay stay stay Blue Verse 2 Blue in in your your glass glass Ice Ice on on yoyour ur hand hand You You move move like like you you know know I I understand understand I I dondont t say say much much You",
+      "t": 89.988,
+      "score": 0.6,
+      "cosine": 0.406,
+      "reason": "Ambient light refraction, but industrial setting mismatches mood.",
+      "recipe": "1-film-still",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/drop/s4-1-stained-glass.webp",
+      "key": "lexicon/drop/s4-1-stained-glass.webp",
+      "word": "drop",
+      "line": "room room I I stay Say Halftime drop Say it it with with styour your aeyes y eyes Say Say it it",
+      "t": 114.846,
+      "score": 0.6,
+      "cosine": 0.308,
+      "reason": "Contrasts song's intimate mood",
+      "recipe": "1-stained-glass",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/frame/s6-2-concept-art.webp",
+      "key": "lexicon/frame/s6-2-concept-art.webp",
+      "word": "frame",
+      "line": "your your face face For For one one clean clean frame frame Look",
+      "t": 50.864,
+      "score": 0.6,
+      "cosine": 0.299,
+      "reason": "Contrasts with song's human intimacy",
+      "recipe": "2-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/swim/s0-1-concept-art.webp",
+      "key": "lexicon/swim/s0-1-concept-art.webp",
+      "word": "swim",
+      "line": "swim",
+      "t": null,
+      "score": 0.6,
+      "cosine": 0.256,
+      "reason": "nature's power, tranquility contrast mood",
+      "recipe": "1-concept-art",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/swim/s0-2-pixel.webp",
+      "key": "lexicon/swim/s0-2-pixel.webp",
+      "word": "swim",
+      "line": "swim",
+      "t": null,
+      "score": 0.6,
+      "cosine": 0.256,
+      "reason": "Contrasts mood but fits silent communication theme",
+      "recipe": "2-pixel",
+      "featured": false
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/swim/s1-2-dark-surreal.webp",
+      "key": "lexicon/swim/s1-2-dark-surreal.webp",
+      "word": "swim",
+      "line": "swim",
+      "t": null,
+      "score": 0.6,
+      "cosine": 0.256,
+      "reason": "fits mood but lacks thematic intimacy",
+      "recipe": "2-dark-surreal",
+      "featured": false
+    }
+  ],
+  "byWord": {
+    "eyes": [
+      0,
+      1
+    ],
+    "blue": [
+      2,
+      19
+    ],
+    "glance": [
+      3
+    ],
+    "stay": [
+      4,
+      5,
+      14
+    ],
+    "frame": [
+      6,
+      15,
+      28
+    ],
+    "move": [
+      7,
+      17
+    ],
+    "room": [
+      8,
+      18
+    ],
+    "hand": [
+      9,
+      10,
+      25
+    ],
+    "cut": [
+      11,
+      12,
+      13
+    ],
+    "chorus": [
+      16
+    ],
+    "step": [
+      20
+    ],
+    "verse": [
+      21
+    ],
+    "clear": [
+      22
+    ],
+    "black": [
+      23,
+      24
+    ],
+    "glass": [
+      26
+    ],
+    "drop": [
+      27
+    ],
+    "swim": [
+      29,
+      30,
+      31
+    ]
+  }
 }

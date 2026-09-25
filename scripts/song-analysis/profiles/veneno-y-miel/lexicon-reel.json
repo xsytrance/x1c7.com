@@ -1,15 +1,469 @@
 {
   "v": 1,
   "id": "veneno-y-miel",
-  "generatedAt": "2026-09-25T04:06:55.500Z",
-  "model": "qwen3:14b",
+  "generatedAt": "2026-09-25T19:32:45.591Z",
+  "model": "qwen2.5:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
     "candidates": 2710,
     "judged": 64,
-    "accepted": 0,
-    "kept": 0
+    "accepted": 56,
+    "kept": 32
   },
-  "reel": [],
-  "byWord": {}
+  "reel": [
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s1-2-dream-collage.webp",
+      "key": "lexicon/honey/s1-2-dream-collage.webp",
+      "word": "honey",
+      "line": "is which? Can you tell me? Can you tell me? Honey on the tongue Venom in the spell Veneno y fiel",
+      "t": 90.401,
+      "score": 0.9,
+      "cosine": 0.486,
+      "reason": "Visually captures honey's allure and danger.",
+      "recipe": "2-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s3-4-dream-collage.webp",
+      "key": "lexicon/poison/s3-4-dream-collage.webp",
+      "word": "poison",
+      "line": "They sell you love But they poison the well",
+      "t": 81.328,
+      "score": 0.9,
+      "cosine": 0.408,
+      "reason": "Visually matches song's dark, deceptive mood",
+      "recipe": "4-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s3-5-word-portrait.webp",
+      "key": "lexicon/poison/s3-5-word-portrait.webp",
+      "word": "poison",
+      "line": "They sell you love But they poison the well",
+      "t": 81.328,
+      "score": 0.9,
+      "cosine": 0.408,
+      "reason": "fits mood and themes, vintage elegance with hidden danger",
+      "recipe": "5-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s9-6-word-portrait.webp",
+      "key": "lexicon/cold/s9-6-word-portrait.webp",
+      "word": "cold",
+      "line": "move soft Some angels move cold Veneno Veneno",
+      "t": 106.45,
+      "score": 0.9,
+      "cosine": 0.374,
+      "reason": "fits mood and theme of hidden toxicity",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/honey/s1-4-film-still.webp",
+      "key": "lexicon/honey/s1-4-film-still.webp",
+      "word": "honey",
+      "line": "is which? Can you tell me? Can you tell me? Honey on the tongue Venom in the spell Veneno y fiel",
+      "t": 90.401,
+      "score": 0.9,
+      "cosine": 0.374,
+      "reason": "symbolizes sweetness and luxury, fits song's theme",
+      "recipe": "4-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s15-5-photo.webp",
+      "key": "lexicon/pain/s15-5-photo.webp",
+      "word": "pain",
+      "line": "learned love from the loyal I learned pain from the crowd Some people only hold you",
+      "t": 36.1,
+      "score": 0.9,
+      "cosine": 0.346,
+      "reason": "neon heart symbolizes emotional pain, fits song's introspective mood",
+      "recipe": "5-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lips/s1-1-dream-collage.webp",
+      "key": "lexicon/lips/s1-1-dream-collage.webp",
+      "word": "lips",
+      "line": "me when I sail Pretty words on pretty lips But the truth don't match the smell Some",
+      "t": 21.129,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "symbolic of deception and fragility",
+      "recipe": "1-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lips/s1-4-dark-surreal.webp",
+      "key": "lexicon/lips/s1-4-dark-surreal.webp",
+      "word": "lips",
+      "line": "me when I sail Pretty words on pretty lips But the truth don't match the smell Some",
+      "t": 21.129,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "fits mood and theme, visually contrasts sweet and dangerous",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/lips/s1-2-word-portrait.webp",
+      "key": "lexicon/lips/s1-2-word-portrait.webp",
+      "word": "lips",
+      "line": "me when I sail Pretty words on pretty lips But the truth don't match the smell Some",
+      "t": 21.129,
+      "score": 0.85,
+      "cosine": 0.452,
+      "reason": "aligns with song's theme of deception through allure",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s19-4-dark-surreal.webp",
+      "key": "lexicon/heart/s19-4-dark-surreal.webp",
+      "word": "heart",
+      "line": "face Sour soul One hug Heart cold Fake love Fake toast",
+      "t": 123.42,
+      "score": 0.85,
+      "cosine": 0.42,
+      "reason": "fits mood and theme of deception and isolation",
+      "recipe": "4-dark-surreal",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/truth/s0-1-photo.webp",
+      "key": "lexicon/truth/s0-1-photo.webp",
+      "word": "truth",
+      "line": "words on pretty lips But the truth don't match the smell Some hearts leave knives inside",
+      "t": 22.57,
+      "score": 0.85,
+      "cosine": 0.397,
+      "reason": "reflects mood and theme of hidden truths",
+      "recipe": "1-photo",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cold/s11-1-neon-sign.webp",
+      "key": "lexicon/cold/s11-1-neon-sign.webp",
+      "word": "cold",
+      "line": "move soft Some angels move cold Veneno Veneno",
+      "t": 106.45,
+      "score": 0.85,
+      "cosine": 0.374,
+      "reason": "fits toxic allure, hidden danger",
+      "recipe": "1-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/heart/s10-3-neon-sign.webp",
+      "key": "lexicon/heart/s10-3-neon-sign.webp",
+      "word": "heart",
+      "line": "face Sour soul One hug Heart cold Fake love Fake toast",
+      "t": 123.42,
+      "score": 0.85,
+      "cosine": 0.369,
+      "reason": "matches song's deceptive allure",
+      "recipe": "3-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s0-3-graphic-novel.webp",
+      "key": "lexicon/money/s0-3-graphic-novel.webp",
+      "word": "money",
+      "line": "than the ones at the table I seen family switch sides when the money got stable I seen quiet people fight when the room got fatal",
+      "t": 114.544,
+      "score": 0.85,
+      "cosine": 0.346,
+      "reason": "aligns with themes of deception and financial control",
+      "recipe": "3-graphic-novel",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/snakes/s1-2-word-portrait.webp",
+      "key": "lexicon/snakes/s1-2-word-portrait.webp",
+      "word": "snakes",
+      "line": "the bad ones go Some snakes move soft Some angels",
+      "t": 103.364,
+      "score": 0.8,
+      "cosine": 0.471,
+      "reason": "symbolizes deception and danger, fits theme",
+      "recipe": "2-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/alone/s12-1-word-portrait.webp",
+      "key": "lexicon/alone/s12-1-word-portrait.webp",
+      "word": "alone",
+      "line": "loyal close I let the Judas fade Bad fruit falls alone Real roots stay",
+      "t": 202.234,
+      "score": 0.8,
+      "cosine": 0.418,
+      "reason": "chained isolation fits song's theme",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/poison/s4-6-anime.webp",
+      "key": "lexicon/poison/s4-6-anime.webp",
+      "word": "poison",
+      "line": "They sell you love But they poison the well",
+      "t": 81.328,
+      "score": 0.8,
+      "cosine": 0.408,
+      "reason": "toxic flames, urban decay fit poison metaphor",
+      "recipe": "6-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/truth/s0-2-neon-night.webp",
+      "key": "lexicon/truth/s0-2-neon-night.webp",
+      "word": "truth",
+      "line": "words on pretty lips But the truth don't match the smell Some hearts leave knives inside",
+      "t": 22.57,
+      "score": 0.8,
+      "cosine": 0.397,
+      "reason": "reflects urban deception and distorted reality",
+      "recipe": "2-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/cry/s0-6-dream-collage.webp",
+      "key": "lexicon/cry/s0-6-dream-collage.webp",
+      "word": "cry",
+      "line": "If the fruit rot on the branch I don't cry when it falls from there",
+      "t": 49.853,
+      "score": 0.8,
+      "cosine": 0.379,
+      "reason": "reflects sorrow and brokenness, aligns with toxic relationship theme",
+      "recipe": "6-dream-collage",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/peace/s2-1-film-still.webp",
+      "key": "lexicon/peace/s2-1-film-still.webp",
+      "word": "peace",
+      "line": "chased clout? Some look like trouble but they guard your peace Some look like blessings but they drain your chi Some",
+      "t": 136.476,
+      "score": 0.8,
+      "cosine": 0.366,
+      "reason": "represents peace but lacks toxicity contrast",
+      "recipe": "1-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s7-5-word-neon.webp",
+      "key": "lexicon/quiet/s7-5-word-neon.webp",
+      "word": "quiet",
+      "line": "I seen family switch sides when the money got stable I seen quiet people fight when the room got fatal I seen loud ones fold",
+      "t": 115.775,
+      "score": 0.8,
+      "cosine": 0.361,
+      "reason": "reflects mood, contrasts appearance with reality",
+      "recipe": "5-word-neon",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/quiet/s8-5-anime.webp",
+      "key": "lexicon/quiet/s8-5-anime.webp",
+      "word": "quiet",
+      "line": "I seen family switch sides when the money got stable I seen quiet people fight when the room got fatal I seen loud ones fold",
+      "t": 115.775,
+      "score": 0.8,
+      "cosine": 0.361,
+      "reason": "reflects introspection and deception",
+      "recipe": "5-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s11-6-neon-sign.webp",
+      "key": "lexicon/love/s11-6-neon-sign.webp",
+      "word": "love",
+      "line": "clapped loud? Who came late? I learned love from the loyal I learned pain from the",
+      "t": 33.7,
+      "score": 0.8,
+      "cosine": 0.353,
+      "reason": "neon heart fits digital isolation, contrasts loyalty vs deception",
+      "recipe": "6-neon-sign",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/love/s12-6-word-portrait.webp",
+      "key": "lexicon/love/s12-6-word-portrait.webp",
+      "word": "love",
+      "line": "clapped loud? Who came late? I learned love from the loyal I learned pain from the",
+      "t": 33.7,
+      "score": 0.8,
+      "cosine": 0.353,
+      "reason": "represents deception and isolation",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s0-6-cinema.webp",
+      "key": "lexicon/money/s0-6-cinema.webp",
+      "word": "money",
+      "line": "than the ones at the table I seen family switch sides when the money got stable I seen quiet people fight when the room got fatal",
+      "t": 114.544,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "aligns with themes of deception and greed",
+      "recipe": "6-cinema",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/money/s1-6-film-still.webp",
+      "key": "lexicon/money/s1-6-film-still.webp",
+      "word": "money",
+      "line": "than the ones at the table I seen family switch sides when the money got stable I seen quiet people fight when the room got fatal",
+      "t": 114.544,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "symbolizes wealth and deception",
+      "recipe": "6-film-still",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/pain/s16-4-anime.webp",
+      "key": "lexicon/pain/s16-4-anime.webp",
+      "word": "pain",
+      "line": "learned love from the loyal I learned pain from the crowd Some people only hold you",
+      "t": 36.1,
+      "score": 0.8,
+      "cosine": 0.346,
+      "reason": "symbolizes pain and destruction, fits song's themes",
+      "recipe": "4-anime",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/stay/s10-6-neon-night.webp",
+      "key": "lexicon/stay/s10-6-neon-night.webp",
+      "word": "stay",
+      "line": "the Judas fade Bad fruit falls alone Real roots stay Ask yourself Who",
+      "t": 203.291,
+      "score": 0.8,
+      "cosine": 0.338,
+      "reason": "fits mood but lacks direct toxicity",
+      "recipe": "6-neon-night",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s14-6-word-portrait.webp",
+      "key": "lexicon/dark/s14-6-word-portrait.webp",
+      "word": "dark",
+      "line": "every soft thing heals you Not every dark thing ends you I keep the loyal close I",
+      "t": 197.02,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "Contrasts light and dark, aligns with deception theme",
+      "recipe": "6-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/dark/s15-1-word-portrait.webp",
+      "key": "lexicon/dark/s15-1-word-portrait.webp",
+      "word": "dark",
+      "line": "every soft thing heals you Not every dark thing ends you I keep the loyal close I",
+      "t": 197.02,
+      "score": 0.8,
+      "cosine": 0.337,
+      "reason": "represents deception and isolation",
+      "recipe": "1-word-portrait",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/hearts/s3-4-concept-art.webp",
+      "key": "lexicon/hearts/s3-4-concept-art.webp",
+      "word": "hearts",
+      "line": "But the truth don't match the smell Some hearts leave knives inside your chest Then",
+      "t": 24.393,
+      "score": 0.8,
+      "cosine": 0.336,
+      "reason": "Symbolizes deception and betrayal in a sophisticated setting.",
+      "recipe": "4-concept-art",
+      "featured": true
+    },
+    {
+      "img": "https://pub-d3fd6ef07c3a4fc79ec69aa81645f904.r2.dev/lexicon/spell/s3-5-anime.webp",
+      "key": "lexicon/spell/s3-5-anime.webp",
+      "word": "spell",
+      "line": "me? Can you tell me? Honey on the tongue Venom in the spell Veneno y fiel",
+      "t": 91.87,
+      "score": 0.8,
+      "cosine": 0.334,
+      "reason": "represents deception and transformation",
+      "recipe": "5-anime",
+      "featured": true
+    }
+  ],
+  "byWord": {
+    "honey": [
+      0,
+      4
+    ],
+    "poison": [
+      1,
+      2,
+      16
+    ],
+    "cold": [
+      3,
+      11
+    ],
+    "pain": [
+      5,
+      26
+    ],
+    "lips": [
+      6,
+      7,
+      8
+    ],
+    "heart": [
+      9,
+      12
+    ],
+    "truth": [
+      10,
+      17
+    ],
+    "money": [
+      13,
+      24,
+      25
+    ],
+    "snakes": [
+      14
+    ],
+    "alone": [
+      15
+    ],
+    "cry": [
+      18
+    ],
+    "peace": [
+      19
+    ],
+    "quiet": [
+      20,
+      21
+    ],
+    "love": [
+      22,
+      23
+    ],
+    "stay": [
+      27
+    ],
+    "dark": [
+      28,
+      29
+    ],
+    "hearts": [
+      30
+    ],
+    "spell": [
+      31
+    ]
+  }
 }
