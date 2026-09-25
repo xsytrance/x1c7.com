@@ -123,8 +123,17 @@ interface ReelEntry { img: string; word: string; score: number; featured?: boole
  * like ("ERASE THE NOISE" under a line about choosing you). `stickers` bakes in
  * lettering the same way. The ghost layer can still have them; the backdrop
  * cannot. */
-const reelPlate = (e: ReelEntry | undefined | null): string | null =>
-  e?.img && !/word-|stickers/.test(e.recipe ?? "") ? e.img : null;
+/** Recipes that draw rather than photograph. At full frame under the lyrics
+ * they read as low-quality clip art next to a photoreal plate set, so a song
+ * whose own art is photographic can bar them with deck.reelLook: "photo". */
+const REEL_DRAWN = /anime|manga|watercolor|papercut|concept-art|collage|sticker|oil-|comic|line/;
+const reelPlate = (e: ReelEntry | undefined | null, look?: string): string | null => {
+  if (!e?.img) return null;
+  const r = e.recipe ?? "";
+  if (/word-|stickers/.test(r)) return null;
+  if (look === "photo" && REEL_DRAWN.test(r)) return null;
+  return e.img;
+};
 // Planet art asset URLs are stored relative ("/planets/<slug>/<w>.webp"); the
 // storage reorg moved the files to R2, so prefix the host's PLANET_BASE at
 // render. Already-absolute URLs (R2 shared art, Kinetica blobs) pass through.
@@ -408,7 +417,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; artFade?: number; artLift?: number; artDwell?: { max?: number; held?: number }; reelArt?: boolean; reveal?: boolean | (RevealCfg & { floor?: number }); curtain?: CurtainCfg; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; artFade?: number; artLift?: number; artDwell?: { max?: number; held?: number }; reelArt?: boolean; reelLook?: string; reveal?: boolean | (RevealCfg & { floor?: number }); curtain?: CurtainCfg; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -1839,7 +1848,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             // art source it is the widest coverage available — 18 more words on
             // this song, and it costs nothing per track once the reel exists.
             else if (deck?.reelArt) {
-              const re = reelPlate(reelMap.current?.get(w));
+              const re = reelPlate(reelMap.current?.get(w), deck?.reelLook);
               if (re) openInto(re);
             }
           }
@@ -1892,7 +1901,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
                 // on screen, requestArt drops it as a no-op, and the picture
                 // sits there for 4-5s exactly as if there were no watchdog.
                 // Measured on Still Me: Still You (7 keywords, 19 reel words).
-                const re = deck?.reelArt ? reelPlate(reelMap.current?.get(kw)) : null;
+                const re = deck?.reelArt ? reelPlate(reelMap.current?.get(kw), deck?.reelLook) : null;
                 if (re && !pool.includes(re)) pool.push(re);
               }
               const cur = bgArtRef.current;

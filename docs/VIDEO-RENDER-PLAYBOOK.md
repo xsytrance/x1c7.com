@@ -2173,3 +2173,34 @@ invisible to it, so the previous planet plate looked like it was still up and
 dwell came back inflated by seconds. Six plates in one 60s cut were simply not
 counted. **The report is only as honest as its selector** — the third time this
 session that a measurement, not the engine, was the thing that was wrong.
+
+## 35 · Replacing an illustrated set, and where the pictures actually come from (2026-09-25)
+
+"I don't like the 2D images; they look low quality." Still Me: Still You was
+drawn, not photographed, and at full frame under the lyrics illustration reads
+cheap beside a photoreal plate. Fourteen new plates, 832x1472 portrait,
+Juggernaut XL Photo — `scripts/song-art/still-me-scenes.mjs`.
+
+**The section plates are the ones that matter.** Replacing only
+`assets.keywords` would have changed almost nothing: a song's 20 section
+emotions hold the screen far more than its handful of keywords do, and they
+were all illustrated. Both maps were repointed. **Count what is actually ON
+screen before deciding what to regenerate** — the keyword list is the
+tempting thing to fix and usually the smaller half.
+
+**Find the song's own frame.** This one is long-distance love conducted by text
+message, so nearly every plate is an interior looking OUT, or a lit screen in a
+dark room: warm where the person is, cold where they are not. That single rule
+gave fourteen plates one grade without a style token doing the work — a phone
+face-down on the sheets, earbuds on a windowsill, two mugs and one of them long
+cold, a train window going sideways with rain.
+
+**`deck.reelLook: "photo"`.** The Curator's reel mixes recipes, and anime,
+manga, watercolour, papercut, concept-art, collage and sticker plates
+reintroduce exactly the look just removed. The filter bars drawn recipes for
+backdrop use on songs whose own art is photographic (12 of 32 survive here, 10
+words), and leaves the ghost layer alone. This sits on top of the existing bar
+on `word-*` recipes, which carry typography.
+
+Keep the illustrated originals on R2 — nothing is deleted, the planet simply
+stops pointing at them, so the old look is one DB edit away.
