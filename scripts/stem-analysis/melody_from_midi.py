@@ -271,7 +271,15 @@ def main():
         bg = vals[len(vals) // 2]
         log(f"\u25b6 clock from drums: {peak:.0%} of kicks hit a MIDI drum onset "
             f"at {offset:+.2f}s  (background {bg:.0%}, {peak / max(bg, 1e-9):.1f}x)")
-        if peak < 0.55 or peak < bg * 2.0:
+        # The ratio test alone rejects a PERFECT lock when the song's drums are
+        # dense: the-world-that-heard-itself hits 99% of kicks at +0.07s, but
+        # its background coincidence is 56% because a busy kit hits something
+        # almost everywhere, so peak/bg is only 1.8x and the guard threw away a
+        # flawless alignment. An absolute hit rate that high cannot be chance at
+        # a single 10ms offset — accept it on its own merit, and keep the ratio
+        # test for the ambiguous middle (osaka-after-dark: 35% over a 31%
+        # background, 1.1x, which genuinely is the wrong MIDI).
+        if peak < 0.55 or (peak < bg * 2.0 and peak < 0.90):
             log("\u2717 no clear drum peak \u2014 wrong MIDI for this song, or a bad stem analysis")
             sys.exit(2)
         # stems.json/senses.json times are already on the release mp3's clock
