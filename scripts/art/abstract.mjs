@@ -176,6 +176,50 @@ if (actGroups) {
 // a usable depth proxy, biased toward the centre because that is where a
 // portrait's subject lives.
 async function depthLayers(buf, base) {
+  // A REAL silhouette when one exists (scripts/art/silhouette.py, rembg).
+  // The proxy below is kept only as a fallback and is known not to work:
+  // measured, it makes the frame softer than no layers at all, because a
+  // near-global mask parallaxes a sharp image over itself and that ghosts.
+  const maskPath = args.masks ? path.join(String(args.masks), `${base}.mask.png`) : null;
+  if (maskPath && fs.existsSync(maskPath)) {
+    const meta0 = await sharp(buf).metadata();
+    // JOIN the mask as an alpha CHANNEL — do not composite it.
+    //
+    // `blend: "dest-in"` keeps the destination where the INPUT'S ALPHA is
+    // opaque, and a greyscale mask png has no alpha: it is opaque everywhere,
+    // so dest-in kept the entire plate. Every near layer ever produced here
+    // was a full-frame opaque copy of the plate, offset by the parallax — a
+    // ghost double image, which is exactly what a 3x drop in edge energy looks
+    // like. It also explains why loosening the proxy mask changed nothing:
+    // the mask was never being applied at all.
+    // Interleave RGBA by hand. Two sharp APIs failed silently here and both
+    // produced a fully opaque near layer, which is the worst possible failure
+    // because it looks like a working file: `composite(dest-in)` reads the
+    // MASK'S alpha (a greyscale png has none, so it keeps everything), and
+    // joinChannel returned a 3-channel webp with hasAlpha=false. Verified by
+    // reading the output back — channels=3, opaque 100%. Doing it by hand is
+    // four lines and cannot lie.
+    const W0 = meta0.width ?? 832, H0 = meta0.height ?? 1472;
+    const rgb = await sharp(buf).removeAlpha().resize(W0, H0, { fit: "fill" }).raw().toBuffer();
+    const mk = await sharp(maskPath).greyscale().resize(W0, H0, { fit: "fill" }).raw().toBuffer();
+    const rgba = Buffer.alloc(W0 * H0 * 4);
+    for (let i = 0, j = 0, k = 0; i < W0 * H0; i++, j += 3, k += 4) {
+      rgba[k] = rgb[j]; rgba[k + 1] = rgb[j + 1]; rgba[k + 2] = rgb[j + 2]; rgba[k + 3] = mk[i];
+    }
+    await sharp(rgba, { raw: { width: W0, height: H0, channels: 4 } })
+      .webp({ quality: 90, alphaQuality: 94 })
+      .toFile(path.join(OUT, `${base}.near.webp`));
+    // the FAR layer keeps the whole plate, barely softened — it is what shows
+    // through the gap the subject leaves as it moves
+    await sharp(buf).blur(3).modulate({ brightness: 0.94 })
+      .webp({ quality: 86 }).toFile(path.join(OUT, `${base}.far.webp`));
+    return "silhouette";
+  }
+  if (args.masksOnly) return null;
+  return depthLayersProxy(buf, base);
+}
+
+async function depthLayersProxy(buf, base) {
   const meta = await sharp(buf).metadata();
   const w = meta.width ?? 832, h = meta.height ?? 1472;
   const SW = Math.round(w / 6), SH = Math.round(h / 6);
@@ -203,13 +247,16 @@ async function depthLayers(buf, base) {
     .blur(9).resize(w, h).linear(2.1, 10).blur(11).png().toBuffer();
 
   await sharp(buf)
-    .composite([{ input: alpha, blend: "dest-in" }])
+    .removeAlpha()
+    .joinChannel(await sharp(alpha).greyscale().raw().toBuffer(),
+                 { raw: { width: w, height: h, channels: 1 } })
     .webp({ quality: 88, alphaQuality: 92 })
     .toFile(path.join(OUT, `${base}.near.webp`));
   // the far layer is the whole plate, softened, so the hole behind the subject
   // is filled with something plausible rather than a silhouette
   await sharp(buf).blur(4).modulate({ brightness: 0.9 })
     .webp({ quality: 84 }).toFile(path.join(OUT, `${base}.far.webp`));
+  return "proxy";
 }
 
 // ── MOTES ── 12 soft patches cut from the BRIGHTEST part of each plate, where
@@ -266,8 +313,9 @@ console.log(`  ✓ motes.webp  (${COLS}x${ROWS} @ ${TILE}px)`);
 if (args.depth) {
   const names = urls.map((u) => u.split("/").pop().replace(/\.[a-z]+$/i, ""));
   for (const [i, b] of bufs.entries()) {
-    await depthLayers(b, names[i]);
-    console.log(`  ✓ ${names[i]}.near/.far`);
+    const how = await depthLayers(b, names[i]);
+    if (how) console.log(`  ✓ ${names[i]}.near/.far  (${how})`);
+    else console.log(`  – ${names[i]}: no silhouette, skipped`);
   }
 }
 console.log(`\n→ ${OUT}`);
