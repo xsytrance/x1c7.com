@@ -759,7 +759,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // is set, the throttle yields to it.
   swapMsRef.current = motionCfg
     ? Math.max(350, motionCfg.swapMs ?? 1000)
-    : (deck?.artDwell ? Math.max(350, (deck.artDwell.max ?? 2.6) * 450) : 2000);
+    // artDwell sets the CEILING; this is the floor. At 450x a dense keyword
+    // passage swapped every 1.3s — no plate outstayed its welcome and none of
+    // them got to be looked at either. 700x puts the median inside the 2-3s
+    // the ceiling is aiming for, while still leaving room for the watchdog to
+    // fire before the ceiling is reached.
+    : (deck?.artDwell ? Math.max(350, (deck.artDwell.max ?? 2.6) * 700) : 2000);
   // Song time, kept fresh by the per-frame tick. requestArt is a []-dep
   // callback by design (it must not be rebuilt mid-crossfade), so anything it
   // needs about the song has to arrive through a ref.
@@ -1799,16 +1804,24 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           // is the effect. Left to the throttle it is a coin flip. So when a
           // reveal fires, the picture is held back until the word has opened
           // it: the word always leads, and the backdrop always follows.
-          if (url && rv && typeof art?.[w] === "string" && sc >= rv.floor) {
-            setReveal((r) => ({ w: words[i].w.toUpperCase(), img: url, fx: effectForWord(w), n: r.n + 1 }));
-            const lead = (rv.dur ?? 1.05) * 0.55 * 1000;
-            const tok = ++revealSwapTok.current;
-            window.setTimeout(() => { if (revealSwapTok.current === tok) requestArt(url); }, lead);
-          } else if (url) requestArt(url);
+          // Open into the plate if the word earned it, else just swap to it.
+          const openInto = (plate: string) => {
+            if (rv && sc >= rv.floor) {
+              setReveal((r) => ({ w: words[i].w.toUpperCase(), img: plate, fx: effectForWord(w), n: r.n + 1 }));
+              const lead = (rv.dur ?? 1.05) * 0.55 * 1000;
+              const tok = ++revealSwapTok.current;
+              window.setTimeout(() => { if (revealSwapTok.current === tok) requestArt(plate); }, lead);
+            } else requestArt(plate);
+          };
+          if (url) openInto(url);
           if (!own && pass >= 2) {
             const emphasis = isFinal || w in keywordEmotion;
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
-            if (sh) requestArt(pickArt(sh));
+            // The SHARED library can open too. It is only 17 words, but they
+            // are the words every song has — night, love, heart, eyes, alone —
+            // so this is the one coverage win that costs no art at all and
+            // applies to the whole catalogue rather than one track.
+            if (sh) openInto(pickArt(sh));
           }
           // ── NO PLATE OUTSTAYS ITS WELCOME ──
           // Art only ever changed when a keyword landed or a section flipped,

@@ -2088,3 +2088,53 @@ on the way out, `echo` and `freeze` sink away instead of opening, `slam` is
 over before you've read it. An explicit `deck.reveal` value always outranks
 the word's character. This is the answer to "you're using the same 3D effect
 over and over" — the variety is derived, so it costs nothing per song.
+
+## 34 · Widening art coverage so more words can open (2026-09-25)
+
+The reveal only fires on a word that OWNS a plate. Red Flags had 31 keyworded
+words out of ~570, so most of the cut had nothing to open into. Three levers,
+in the order they are worth pulling:
+
+**1. The shared library is free and catalogue-wide.** `SHARED_WORDS` is 17
+words plus 21 aliases — night, love, world, heart, eyes, alone, rain, city —
+the words every song has. It was already wired as a backdrop fallback for
+emphasis words but could not drive a reveal. It can now. Costs no art and
+applies to all 74 tracks. On this song it adds only "eyes" and "love", which
+is the honest measure of how small it is.
+
+**2. The Lexsycon reel is supposed to be the big one, and it is producing
+nothing.** All **47** reels have `kept: 0`. Every song judged exactly 64
+candidates and accepted zero — 2591 candidates on this track, 4600 on Summer
+Drip, none accepted anywhere. That is a systemic judge failure, not taste, and
+it is the mechanism that was meant to give every word a picture. Until it is
+fixed, per-word art means generating plates.
+
+**3. Generate plates for the image-able words with real airtime.** Rank the
+words that have no art by airtime minus a repetition penalty, drop the
+function words and the transcript junk, and keep what a camera can actually
+photograph. Ten new plates took this window from 11 plates to 15.
+
+### `scripts/song-art/red-flags-scenes.mjs`, and the landscape bug again
+
+**This song's 39 existing plates are all 1152x832 LANDSCAPE.** §17's "58%
+crop" — `object-cover` into 1080x1920 keeps the centre ~42% — which is why
+figures in this song's cuts sit half outside the frame. **Every script in
+`scripts/song-art/` hard-codes `const W = 1152, H = 832`**, so every new set
+inherits the bug. The new generator uses **832x1472** and the plates fill the
+vertical frame properly.
+
+Checkpoint matters for this voice: `Juggernaut-XL_v9_RunDiffusionPhoto_v2` at
+30 steps / cfg 6.0 / dpmpp_2m+karras, not SDXL Turbo at 4 steps — the turbo
+graph the other scripts copy is tuned for speed and gives up the photoreal
+grade this song is built on. No people in the prompts (§24: seeding figures
+repeatedly returns the same person and the set goes monotonous) — this song's
+story is told by its rooms.
+
+### The ceiling is not the pacing
+
+`artDwell.max` is an upper bound only; the FLOOR is the swap throttle. After
+adding ten keywords the same config swapped every 1.3s — no plate outstayed
+its welcome and none of them got looked at either. The throttle derived from
+`artDwell` moved from `max * 450` to `max * 700`, which puts the median inside
+the 2-3s the ceiling aims for. **Widening coverage changes the pacing; re-check
+the dwell report after adding art.**
