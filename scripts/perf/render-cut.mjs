@@ -54,6 +54,9 @@ const FROM = Number(args.from ?? 176.4);
 const TO = Number(args.to ?? 236.9);
 const MODE = args.mode ?? "dynamic";
 const PASS = args.pass ?? "6";
+// A plate that sits longer than this is reported. The owner's rule is 2-3s
+// unless the singer is holding the word that owns the picture.
+const DWELL_MAX = Number(args.dwell ?? 3.2);
 const BASE = args.base ?? "http://localhost:7272";
 const VERT = !!args.vertical;
 const W = Number(args.w ?? (VERT ? 1080 : 1920)), H = Number(args.h ?? (VERT ? 1920 : 1080));
@@ -384,7 +387,28 @@ execFileSync("ffmpeg", [
   } else {
     const dead = bg.filter((r) => r.src && (r.op ?? 0) < 0.15).length;
     log(`  backdrop: ${new Set(bg.filter((r) => r.src).map((r) => r.src)).size} plate(s), ${bg.length} transitions` + (dead ? `, ${dead} at <0.15 opacity` : ""));
-    for (const r of bg.slice(0, 40)) log(`      ${String(r.t).padStart(7)}s op=${String(r.op).padEnd(6)} nat=${String(r.w).padEnd(5)} ${r.src ?? "(none)"}`);
+    // DWELL — how long each plate actually held. Printing raw transitions and
+    // eyeballing them is how a 40-row cap got read as a 17s stall that never
+    // happened: the 40th row looked like it ran to the end of the cut. Collapse
+    // the samples into one span per plate and state the verdict.
+    const spans = [];
+    for (const r of bg) {
+      const last = spans[spans.length - 1];
+      if (!last || last.src !== r.src) spans.push({ src: r.src, from: r.t, to: r.t });
+      else last.to = r.t;
+    }
+    for (let i = 0; i < spans.length - 1; i++) spans[i].to = spans[i + 1].from;
+    spans[spans.length - 1].to = TO;
+    const held = spans.filter((sp) => sp.src).map((sp) => ({ src: sp.src, d: sp.to - sp.from }));
+    if (held.length) {
+      const max = Math.max(...held.map((h) => h.d));
+      const over = held.filter((h) => h.d > DWELL_MAX);
+      log(`  dwell: ${held.length} plate(s), longest ${max.toFixed(1)}s, median ${held.map((h) => h.d).sort((a, b) => a - b)[held.length >> 1].toFixed(1)}s`);
+      if (over.length) {
+        log(`    ⚠ ${over.length} plate(s) held longer than ${DWELL_MAX}s:`);
+        for (const h of over.sort((a, b) => b.d - a.d).slice(0, 6)) log(`        ${h.d.toFixed(1)}s  ${h.src}`);
+      }
+    }
   }
 }
 if (assetFails.size) {

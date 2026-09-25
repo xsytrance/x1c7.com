@@ -1994,3 +1994,58 @@ timestamps**: 60+ words all stamped inside one second, plus a leaked prompt
 unreadable flash of text. Score candidate windows by the worst count of words
 inside any 0.6s before picking one; on this song it ruled out the entire final
 chorus, title line and all.
+
+## 33 · A clock on the backdrop, and the word that opens into its picture (2026-09-25)
+
+Owner's rule: **no image on screen longer than 2-3 seconds, unless the singer
+is holding the word that owns it.** Measured before the change, a 60s cut held
+one plate for 16 seconds — art only ever changed when a keyword landed or a
+section flipped, so a run of ordinary words froze the frame.
+
+### `deck.artDwell: { max, held }`
+
+A watchdog in the per-frame tick. Absent = old behaviour, so nothing existing
+moves. Four things had to be true before it worked, and three of them were
+wrong first:
+
+1. **The reprieve belongs to the word whose PICTURE is up.** Checking for "a
+   keyword with art" let a run of *different* keywords keep an unrelated plate
+   alive for 5s — the stall wearing the exemption meant for a held note. It
+   must be `bgArt.endsWith(art[currentWord])`.
+2. **Ask once per expiry.** The tick runs ~60x a second; the watchdog re-fired
+   every frame while overdue, racing the rotation counter and overwriting the
+   swap throttle's single `pending` slot, so whichever pick was written last is
+   what landed. The rotation looked random and skipped plates.
+3. **The throttle has to be able to sustain the cadence.** `swapMs` floors at
+   2000ms with no `deck.motion`; the ask, the throttle and the downbeat wait
+   together cost ~1.5s, so a 2.6s dwell landed a second late every time. When
+   `artDwell` is set the throttle now yields to it (`max * 450`).
+4. **±12s, not ±7.** The rotation pool is built from words being sung AROUND
+   this moment that carry art, so the new plate still belongs to the lyric.
+   Too tight a window returns an EMPTY pool on exactly the ordinary lines that
+   need it most ("Truth is we were both just swinging at the air").
+
+Result on Red Flags: 14 plates over 30s, median hold **2.3s**, one outlier at
+3.6s — from 2 plates over 18s.
+
+### `deck.reveal` — the word opens into its picture
+
+`background-clip:text` paints the keyword's own plate through its glyphs, then
+the word scales up until the picture it is made of becomes the picture behind
+everything. **It needs a scrim to exist at all:** by the time the word appears
+the backdrop is usually already showing the same plate, so letters filled with
+that same image, in the same position, are perfect camouflage. Measured on
+"LIGHT" over the green-blinds plate — the effect fired correctly and could not
+be seen. Darkening the rest of the frame turns the word into a lit window.
+`backgroundAttachment: fixed` keeps the image still while the letters travel
+over it, which is how a window behaves; scaling the background with the text
+slides the image and kills the illusion.
+
+### And a measurement lesson, again
+
+The backdrop watch printed raw transitions capped at 40 rows. On a cut with 82
+transitions the 40th row read as running to the end of the cut, and I reported
+a 17.6s stall that never happened — the probe showed plates landing every 2.3s
+straight through. **A truncated log is not a measurement.** The watch now
+collapses samples into one span per plate and prints the verdict directly:
+plate count, median hold, longest hold, and every plate over `--dwell` (3.2s).

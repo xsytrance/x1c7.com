@@ -11,6 +11,7 @@ import { useMusicPlayer, HAS_SHARED_ART, PLANET_BASE } from "@/lib/engineHost";
 import { activeWordIndex, parseLyrics, type SyncedWord } from "@/lib/lyrics";
 import { effectForWord, impact as impactOf, bigMomentFor } from "@/lib/effects/impact";
 import { StageCurtain, type CurtainCfg } from "@/components/StageCurtain";
+import { WordPlateReveal, type RevealCfg } from "@/components/WordPlateReveal";
 import { activeSection, sectionMotion, resolveWordEffect, type PlanetSection, type SectionMotion, type PlanetEffects, type DeckMotion, type DeckGiant } from "@/lib/planet";
 import { deriveTheme } from "@/lib/theme";
 import { glyphFor, glyphForEmotion, type Glyph } from "@/lib/shapes";
@@ -396,7 +397,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
    *   motion   — per-scene camera moves for directed cuts (see DeckMotion)
    *   giant    — how dynamic mode stages its huge words (see DeckGiant)
    *   art      — false = typography only, no scene images at all */
-  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; artFade?: number; artLift?: number; curtain?: CurtainCfg; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
+  deck?: { density?: number; glow?: number; grain?: number; vignette?: number; motion?: DeckMotion; giant?: DeckGiant; art?: boolean; backdropHue?: number; ghosts?: number; choir?: boolean; pitchSpread?: number; pitchSat?: number; pitchLight?: number; camSync?: boolean; artSync?: boolean; artFade?: number; artLift?: number; artDwell?: { max?: number; held?: number }; reveal?: boolean | (RevealCfg & { floor?: number }); curtain?: CurtainCfg; guide?: { size?: number }; moments?: { floor?: number }; abstract?: { veil?: string; motes?: string; veilMix?: number; tint?: boolean; veils?: { src: string; start: number; end: number }[]; layers?: string }; study?: boolean | { mode?: string; tilt?: number; rest?: number; keys?: number; spread?: number; surface?: boolean }; world?: boolean | { shape?: string; rails?: number; gap?: number; radius?: number; twist?: number }; drain?: { dur?: number; minAir?: number; past?: boolean; near?: number; far?: number; lens?: number; origin?: string; swell?: number; vary?: boolean }; rush?: { dur?: number; minAir?: number; far?: number; lens?: number }; inserts?: { every?: number; hold?: number; minPush?: number; at?: "center" | "top" | "bottom"; height?: number }; weather?: string };
   /** DYNAMIC+ visual moment — the backdrop holds & brightens for the act window. */
   boost?: boolean;
   /** Mount the GL backdrop even on perf-lite devices (the mobile STUDIO —
@@ -634,6 +635,8 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
 
   const [idx, setIdx] = useState(-1);
   const [section, setSection] = useState<PlanetSection | null>(null);
+  // the live section, readable from inside the per-frame tick
+  const sectionRef = useRef<PlanetSection | null>(null);
   const [bgArt, setBgArt] = useState<string | null>(null);
   const bgArtRef = useRef<string | null>(null);
   bgArtRef.current = bgArt;
@@ -733,8 +736,27 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   const pileLifeRef = useRef(8000);
   pileMaxRef.current = Math.max(0, Math.min(3, giantCfg?.pile ?? 3));
   pileLifeRef.current = Math.max(400, giantCfg?.life ?? 8000);
+  // ── ART DWELL ── song time the plate on screen landed, and the rotation
+  // counter used when it has outstayed its welcome. A backdrop that holds for
+  // sixteen seconds because no keyword happened to be sung is the single most
+  // slideshow-like thing the engine does.
+  const artLandedAtRef = useRef(-Infinity);
+  const dwellTurnRef = useRef(0);
+  // Song time of the last dwell-driven ASK. The watchdog runs in the per-frame
+  // tick, so without this it re-fires ~60x a second for as long as the plate is
+  // overdue: the rotation counter races, and each frame overwrites the swap
+  // throttle's single `pending` slot, so whichever pick happened to be written
+  // last is the one that lands. The rotation looked random and skipped plates
+  // entirely. One ask per expiry.
+  const dwellAskRef = useRef(-Infinity);
   const swapMsRef = useRef(2000);
-  swapMsRef.current = motionCfg ? Math.max(350, motionCfg.swapMs ?? 1000) : 2000;
+  // A 2000ms floor cannot sustain a 2.6s dwell: the ask, the throttle and the
+  // downbeat wait together cost ~1.5s, so the plate lands a second late every
+  // time and the cadence the director asked for never happens. When artDwell
+  // is set, the throttle yields to it.
+  swapMsRef.current = motionCfg
+    ? Math.max(350, motionCfg.swapMs ?? 1000)
+    : (deck?.artDwell ? Math.max(350, (deck.artDwell.max ?? 2.6) * 450) : 2000);
   // Song time, kept fresh by the per-frame tick. requestArt is a []-dep
   // callback by design (it must not be rebuilt mid-crossfade), so anything it
   // needs about the song has to arrive through a ref.
@@ -836,9 +858,12 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
           hist.push(url);
           if (hist.length > 24) hist.shift();
         }
+
+        artLandedAtRef.current = songTimeRef.current;
         setBgArt(url);
       },
       () => {
+
         badArt.current.add(url);
         if (swapCtl.current.token !== token) return;
         ctl.shown = null;
@@ -1145,6 +1170,14 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
     const root = base.endsWith("/") ? base : `${base}/`;
     return { near: `${root}${file}.near.webp`, far: `${root}${file}.far.webp` };
   }, [deck?.abstract?.layers, bgArt]);
+  const revealCfgRef = useRef<(RevealCfg & { floor: number }) | null>(null);
+  revealCfgRef.current = deck?.reveal
+    ? { floor: 0.55, ...(typeof deck.reveal === "object" ? deck.reveal : {}) }
+    : null;
+  const artDwellRef = useRef<{ max: number; held: number } | null>(null);
+  artDwellRef.current = deck?.artDwell
+    ? { max: deck.artDwell.max ?? 2.6, held: deck.artDwell.held ?? 1.1 }
+    : null;
   const bigCfgRef = useRef<{ floor: number } | null>(null);
   bigCfgRef.current = deck?.moments ? { floor: deck.moments.floor ?? 0.62 } : null;
   const barsPhasedRef = useRef<BarGrid | null>(null);
@@ -1413,6 +1446,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
   // word reacts in the song's own tap language.
   const [quake, setQuake] = useState(0);
   const [curtain, setCurtain] = useState(0);
+  const [reveal, setReveal] = useState<{ w: string; img: string; n: number }>({ w: "", img: "", n: 0 });
   const anchorAt = useRef(0);
   const stageRef = useRef<HTMLDivElement>(null);
   const rootRef = useRef<HTMLDivElement>(null);
@@ -1742,6 +1776,50 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
             const sh = emphasis ? sharedArtFor(effectKey(w)) : null;
             if (sh) requestArt(pickArt(sh));
           }
+          // ── NO PLATE OUTSTAYS ITS WELCOME ──
+          // Art only ever changed when a keyword landed or a section flipped,
+          // so a stretch of ordinary words froze the backdrop — measured at
+          // 16s on one plate in a 60s cut. This puts a clock on it.
+          //
+          // The exception is the whole point: if the singer is HOLDING the
+          // word that owns the picture, the picture stays. A held note is the
+          // one time a long dwell is deliberate rather than a stall.
+          //
+          // What it rotates TO matters as much as when. The pool is built from
+          // the words being sung AROUND this moment (±7s) that carry art, so
+          // the new plate still belongs to the lyric — rotating to an
+          // unrelated picture would fix the pacing and break the meaning.
+          const dw = artDwellRef.current;
+          if (dw && bgArtRef.current && t - artLandedAtRef.current >= dw.max && t - dwellAskRef.current >= 0.6) {
+            // The reprieve belongs to the word whose PICTURE is up, not to any
+            // keyword that happens to be passing. Checking merely for "a
+            // keyword with art" let a run of different keywords keep an
+            // unrelated plate alive for 5s — the exact stall this was built to
+            // kill, wearing the exemption meant for a held note.
+            const own = art?.[w];
+            const heldNow = air >= dw.held && typeof own === "string" && bgArtRef.current.endsWith(own);
+            if (!heldNow) {
+              const pool: string[] = [];
+              for (let k = 0; k < words.length; k++) {
+                const dt = words[k].t - t;
+                // +/-12s, not +/-7: an ordinary line ("Truth is we were both
+                // just swinging at the air") carries no keyword art at all, and
+                // a window that tight returns an empty pool exactly when the
+                // backdrop most needs somewhere to go. Twelve seconds still
+                // means "the picture belongs to this part of the song".
+                if (dt < -12) continue;
+                if (dt > 12) break;
+                const a = art?.[clean(words[k].w).toLowerCase()];
+                if (typeof a === "string" && !pool.includes(a)) pool.push(a);
+              }
+              const cur = bgArtRef.current;
+              const fresh = pool.filter((u) => !cur.endsWith(u));
+              const pick = fresh.length
+                ? fresh[dwellTurnRef.current++ % fresh.length]
+                : sectionArt?.[(sectionRef.current?.emotion ?? "").toLowerCase()] ?? null;
+              if (pick) { dwellAskRef.current = t; requestArt(pickArt(pooledArt(w, pick) ?? pick)); }
+            }
+          }
           // Anchor: charged words always take over the sky; line-closing words
           // with presence join them (rate-limited so anchors breathe).
           if (pass >= 3 && liveMode === "dynamic") {
@@ -1774,6 +1852,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
               hasArt: !!art?.[w],
               semantic: !!effectForWord(w),
             });
+            // THE WORD OPENS INTO ITS PICTURE. Same score that gates the
+            // whole-frame events, a lower bar — this is a per-word move, not a
+            // frame-wide one — and it needs the word to actually own a plate.
+            const rv = revealCfgRef.current;
+            const ownArt = art?.[w];
+            if (rv && typeof ownArt === "string" && sc >= rv.floor) {
+              const img = pickArt(pooledArt(w, ownArt) ?? ownArt);
+              if (img) setReveal((r) => ({ w: words[i].w.toUpperCase(), img, n: r.n + 1 }));
+            }
             const big = bigMomentFor(w, sc, bigCfgRef.current.floor);
             if (big) {
               if (big === "flare") { setNova((n) => n + 1); setWave((v) => v + 1); particles.current?.burst(window.innerWidth / 2, window.innerHeight / 2, 90); }
@@ -2068,6 +2155,7 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
         if (key !== lastSec.current) {
           lastSec.current = key;
           setSection(s);
+          sectionRef.current = s;
           if (s) {
             // Art starts decoding immediately (the swap is throttled anyway)…
             const mood = sectionArt?.[s.emotion.toLowerCase()];
@@ -2935,6 +3023,15 @@ export function KineticStage({ track, timelineBottomClass = "bottom-[86px]", pas
       {/* THE CURTAIN — slams shut, holds, parts again. Fired by a word that
           means opening, or placed on the clock via dynamicPlus.curtains. */}
       <StageCurtain fire={curtain} cfg={deck?.curtain} />
+
+      {/* The word drawn THROUGH its own photograph, growing until the picture
+          it is made of becomes the picture behind everything. */}
+      <WordPlateReveal
+        fire={reveal.n}
+        word={reveal.w}
+        img={reveal.img}
+        cfg={typeof deck?.reveal === "object" ? deck.reveal : undefined}
+      />
 
       {/* Beat-cut blackout — the drums vanished; the world holds its breath */}
       <AnimatePresence>
