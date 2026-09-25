@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "paper-that-cut-you",
-  "generatedAt": "2026-09-11T04:07:19.541Z",
+  "generatedAt": "2026-09-25T04:05:28.969Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {

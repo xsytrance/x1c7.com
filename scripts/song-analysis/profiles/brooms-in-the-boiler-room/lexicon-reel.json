@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "brooms-in-the-boiler-room",
-  "generatedAt": "2026-09-11T04:03:05.276Z",
+  "generatedAt": "2026-09-25T04:01:40.033Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {

@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "my-soul-lives-in-seoul",
-  "generatedAt": "2026-09-11T04:06:39.025Z",
+  "generatedAt": "2026-09-25T04:04:53.151Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {

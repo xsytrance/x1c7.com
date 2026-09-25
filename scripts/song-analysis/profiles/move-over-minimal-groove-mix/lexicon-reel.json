@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "move-over-minimal-groove-mix",
-  "generatedAt": "2026-09-11T04:06:26.861Z",
+  "generatedAt": "2026-09-25T04:04:42.107Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {

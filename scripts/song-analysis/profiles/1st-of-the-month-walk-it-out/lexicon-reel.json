@@ -1,7 +1,7 @@
 {
   "v": 1,
   "id": "1st-of-the-month-walk-it-out",
-  "generatedAt": "2026-09-11T04:02:38.577Z",
+  "generatedAt": "2026-09-25T04:01:15.348Z",
   "model": "qwen3:14b",
   "embModel": "qwen3-embedding:0.6b",
   "counts": {
